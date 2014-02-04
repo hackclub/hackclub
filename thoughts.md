@@ -6,7 +6,7 @@ message - they're already doing it
 
 ## The Name
 
-* The potential negative connotation is deliberate.
+* The potential negative connotation is intentional.
   * hackEDU is a movement driven by students.
   * We need to make the name informal to maintain that it's a student-driven movement.
 
