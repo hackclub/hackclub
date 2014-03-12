@@ -27,17 +27,17 @@ Tangible outcome:
 4. Right click on the folder to the left and click "New File". Go File > Save
    and name the file `index.html`.
 5. Add the following to `index.html`.
-
-```
-<!doctype html>
-<html>
-  <head>
-    <title>Hello, World!</title>
-  </head>
-  <body>
-    <p>Hello, World!</p>
-  </body>
-</html>
-```
+  
+  ```
+  <!doctype html>
+  <html>
+    <head>
+      <title>Hello, World!</title>
+    </head>
+    <body>
+      <p>Hello, World!</p>
+    </body>
+  </html>
+  ```
 
 6. Right click anywhere in the file and select "Open in Browser".
