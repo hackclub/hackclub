@@ -60,7 +60,12 @@ Tangible outcome:
    attribute. All attributes have corresponding values. In this case, `href`'s
    corresponding value is `https://google.com`. `href`'s corresponding value
    is where the link leads to.
-10. `img` tag example. Use an exciting image, like a meme or doge.
+10. Now add an image. We can display an image using an `img` element, and tell the browser the source of the image 	we want with a `src` attribute. 
+
+   ```
+   <img src="https://raw.github.com/zachlatta/snapshibe/master/public/img/doge.jpg">
+   ```
+
 11. Ordered and unordered lists.
 12. Change the background color and some other stuff with CSS.
 13. Add a button that increments a wow number on the page using Javascript.
