@@ -32,7 +32,7 @@ Tangible outcome:
   <!doctype html>
   <html>
     <head>
-      <title>Hello, World!</title>
+      <title>I'm a title</title>
     </head>
     <body>
       <p>Hello, World!</p>
