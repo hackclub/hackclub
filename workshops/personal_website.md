@@ -60,7 +60,8 @@ Tangible outcome:
    attribute. All attributes have corresponding values. In this case, `href`'s
    corresponding value is `https://google.com`. `href`'s corresponding value
    is where the link leads to.
-10. Now add an image. We can display an image using an `img` element, and tell the browser the source of the image 	we want with a `src` attribute. 
+10. Now add an image. We can display an image using an `img` element, and 
+    tell the browser the source of the image 	we want with a `src` attribute. 
 
    ```
    <img src="https://raw.github.com/zachlatta/snapshibe/master/public/img/doge.jpg">
