@@ -29,3 +29,13 @@ message - they're already doing it
     hacking the world)
 2. Meeting with certified ambassador.
 3. Training.
+
+## Types of People Learning to Program
+
+* Takes initial initiative, but doesn't go anywhere with it. "Okay, I
+  learned the basics of programming, I have a new skills, now what?"
+  * Show what's possible.
+* People who want to learn, but never take initiative. The type of person who
+  has a Codecademy account and works through it, but never goes anywhere with
+  it.
+  * Needs someone to help them take initiative and actually build things.
