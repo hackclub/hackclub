@@ -40,10 +40,14 @@ type School struct {
 	Name string `facebook:"name"`
 }
 
-var accessToken string
+var (
+	accessToken string
+	csvLocation string
+)
 
 func main() {
 	flag.StringVar(&accessToken, "token", "", "Facebook access token")
+	flag.StringVar(&csvLocation, "csv", "schools.csv", "Where to save output CSV")
 	flag.Parse()
 
 	if accessToken == "" {
@@ -85,7 +89,7 @@ func main() {
 	}
 	fmt.Println()
 
-	f, err := os.Create("schools.csv")
+	f, err := os.Create(csvLocation)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -106,5 +110,5 @@ func main() {
 	}
 	w.Flush()
 
-	fmt.Println("CSV successfully written to schools.csv.")
+	fmt.Printf("CSV successfully written to %s.\n", csvLocation)
 }
