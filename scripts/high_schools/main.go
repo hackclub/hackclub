@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/csv"
+	"flag"
 	"fmt"
 	"log"
 	"os"
@@ -39,9 +40,18 @@ type School struct {
 	Name string `facebook:"name"`
 }
 
+var accessToken string
+
 func main() {
+	flag.StringVar(&accessToken, "token", "", "Facebook access token")
+	flag.Parse()
+
+	if accessToken == "" {
+		log.Fatal("You must provide a Facebook access token.")
+	}
+
 	params := facebook.Params{
-		"access_token": os.Getenv("FACEBOOK_ACCESS_TOKEN"),
+		"access_token": accessToken,
 	}
 
 	var groupMembers []GroupMember
