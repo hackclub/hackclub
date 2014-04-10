@@ -47,9 +47,16 @@ func main() {
 	var groupMembers []GroupMember
 	var hshackers []GroupMember
 	var teendev []GroupMember
-	res, _ := facebook.Get(fmt.Sprintf("/%d/members", hsHackersId), params)
+	res, err := facebook.Get(fmt.Sprintf("/%d/members", hsHackersId), params)
+	if err != nil {
+		log.Fatal(err)
+	}
 	res.DecodeField("data", &hshackers)
-	res, _ = facebook.Get(fmt.Sprintf("/%d/members", teenDevId), params)
+
+	res, err = facebook.Get(fmt.Sprintf("/%d/members", teenDevId), params)
+	if err != nil {
+		log.Fatal(err)
+	}
 	res.DecodeField("data", &teendev)
 
 	groupMembers = append(groupMembers, hshackers...)
@@ -60,7 +67,10 @@ func main() {
 	for i, m := range groupMembers {
 		fmt.Printf("\rPulling student %d of %d...", i+1, len(groupMembers))
 
-		res, _ := facebook.Get(fmt.Sprintf("/%s", m.Id), params)
+		res, err := facebook.Get(fmt.Sprintf("/%s", m.Id), params)
+		if err != nil {
+			log.Fatal(err)
+		}
 		res.Decode(&members[i])
 	}
 	fmt.Println()
