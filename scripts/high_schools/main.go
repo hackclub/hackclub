@@ -32,7 +32,7 @@ type Member struct {
 
 type Education struct {
 	School School `facebook:"school"`
-	Type   string `facebbok:"type"`
+	Type   string `facebook:"type"`
 }
 
 type School struct {
