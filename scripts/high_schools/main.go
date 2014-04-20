@@ -10,11 +10,6 @@ import (
 	"github.com/huandu/facebook"
 )
 
-const (
-	hsHackersId = 163844093817909
-	teenDevId   = 210042749035068
-)
-
 type GroupMember struct {
 	Id     string `facebook:"id"`
 	Name   string `facebook:"name"`
@@ -39,6 +34,11 @@ type School struct {
 	Id   string `facebook:"id"`
 	Name string `facebook:"name"`
 }
+
+const (
+	hsHackersId = 163844093817909
+	teenDevId   = 210042749035068
+)
 
 var (
 	accessToken string
