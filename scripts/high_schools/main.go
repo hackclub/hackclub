@@ -89,9 +89,17 @@ func main() {
 	}
 	fmt.Println()
 
-	f, err := os.Create(csvLocation)
-	if err != nil {
+	if err := writeCSV(members, csvLocation); err != nil {
 		log.Fatal(err)
+	}
+
+	fmt.Printf("CSV successfully written to %s.\n", csvLocation)
+}
+
+func writeCSV(members []Member, path string) error {
+	f, err := os.Create(path)
+	if err != nil {
+		return err
 	}
 	defer f.Close()
 
@@ -105,10 +113,13 @@ func main() {
 			record = append(record, m.Education[0].School.Name)
 			record = append(record, m.FirstName+" "+m.LastName)
 			record = append(record, m.Link)
-			w.Write(record)
+
+			if err := w.Write(record); err != nil {
+				return err
+			}
 		}
 	}
 	w.Flush()
 
-	fmt.Printf("CSV successfully written to %s.\n", csvLocation)
+	return nil
 }
