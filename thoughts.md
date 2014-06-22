@@ -1,5 +1,7 @@
 # Various Thoughts
 
+**NOTICE**: This document is still in the works and is by no means official.
+
 There is a generation of dedicated young people changing the world through
 technology. This generation isn't going to wait for permission to spread their
 message - they're already doing it
