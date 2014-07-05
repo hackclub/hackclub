@@ -5,4 +5,4 @@ The official documentation repository for hackEDU.
 ## License
 
 In the [LICENSE](LICENSE) file
-([tl;dr](https://tldrlegal.com/license/mit-license)).
+(MIT, [tl;dr](https://tldrlegal.com/license/mit-license)).
