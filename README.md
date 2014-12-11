@@ -5,24 +5,30 @@ The official documentation repository for hackEDU.
 ## zoom0 v0
 
 ### People Funnel
+
 1. Potential Customers
 2. Members (Customers)
 3. Organizers
 
 ### Target Customer
+
 * 1st and 2nd year high school students
 * who are interested in making things
 * of or relating to Science, Technology, Engineering, Arts, and Math (STEAM)
 
 ### Members
-* Members of the hackEDU family make things outside of school classes (a proxy for things that they care about) with programming.
+
+* Members of the hackEDU family make things outside of school classes (a proxy
+  for things that they care about) with programming.
 
 ### Organizers
+
 * most likely 2nd and 3rd year high school students 
 * who are evangelists for learning to code
 * has created more than 1 project before
 
 Segmentation
+
 * who have an existing club
 * who want to start a new club
 
@@ -31,14 +37,15 @@ Segmentation
 * 4th year high school students
 
 ### Mission
-* hackEDU empower 1st and 2nd year high school students to build things they care about with code. We do this by creating, connecting, and growing closely knit student-run coding communities at high schools.
 
-### Key Mey Metrics
-* number of programming projects built and shipped outside of class (a proxy for what they care about).
+* hackEDU empower 1st and 2nd year high school students to build things they
+  care about with code. We do this by creating, connecting, and growing closely
+  knit student-run coding communities at high schools.
 
-### Values
-* we believe that by following these values, it will lead to our key metric.
-* we aspire to craft values like that of hacker school that are specific and to the point and don't add unnecessary fluff. [Link To Document](https://www.hackerschool.com/manual#sub-sec-social-rules)
+
+### Key Mey Metric
+
+* number of programming projects built outside of class.
 
 #### Causal
 
@@ -83,10 +90,15 @@ Straight from Hacker Schools Website:
 
 
 ### Sorted List Of Assumptions, Biggest and Most Important Assumption At Top
-* By first identifying which clubs have the most projects produced and then spreading their knowledge and expertise to other club organizers and then to members, we can increase the number of projects built by those clubs.
-* 1st and 2nd year high school students will more readily join clubs than 3rd and 4th years. Measurability: when spending the same amount effort, more 1st and 2nd years join than 3rd or 4th years.
-* Having 1st and 2nd year high school organizers join clubs will allow them to take on leadership positions later in the club. 
 
+* By first identifying which clubs have the most projects produced and then
+  spreading their knowledge and expertise to other club organizers and then to
+  members, we can increase the number of projects built by those clubs.
+* 1st and 2nd year high school students will more readily join clubs than 3rd
+  and 4th years. Measurability: when spending the same amount effort, more 1st
+  and 2nd years join than 3rd or 4th years.
+* Having 1st and 2nd year high school organizers join clubs will allow them to
+  take on leadership positions later in the club. 
 
 ## License
 
