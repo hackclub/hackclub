@@ -33,9 +33,54 @@ Segmentation
 ### Mission
 * hackEDU empower 1st and 2nd year high school students to build things they care about with code. We do this by creating, connecting, and growing closely knit student-run coding communities at high schools.
 
+### Key Mey Metrics
+* number of programming projects built and shipped outside of class (a proxy for what they care about).
 
-### Key Mey Metric
-* number of programming projects built outside of class.
+### Values
+* we believe that by following these values, it will lead to our key metric.
+* we aspire to craft values like that of hacker school that are specific and to the point and don't add unnecessary fluff. [Link To Document](https://www.hackerschool.com/manual#sub-sec-social-rules)
+
+#### Causal
+
+**Don't Panic**
+
+**Radical Inclusion**
+- anyone is welcome to come to the club
+- beginners are welcome
+	- no one makes anyone feel bad for saying
+	- there are no outcasts 	
+	
+**Celebrating Not Knowing**
+Straight from Hacker Schools Website:
+
+> We think this is one of the most pernicious impediments to education. In most of the world, but especially school and work, people are afraid of looking stupid. This fear frequently keeps us from asking important questions like "how does that work?" or even just "why?" Worse, it keeps us from saying "I don't understand." That means many of us muddle on with a half-baked or entirely incorrect understanding of core concepts. This is particularly bad with programming, because these misunderstandings compound, and over time become harder and more embarrassing to admit to and address.
+> 
+> This is why saying "I don't know" or "I don't understand" is a positive thing at Hacker School. It's an opportunity for you to learn something new, and for someone else to help you with it (or vise versa).
+> [Continue Reading Here](https://www.hackerschool.com/manual#sub-sec-social-rules) Including "No feigning surprise", "No well-actually's", "No back-seat driving", "No subtle-isms"
+
+
+**Radical Absurdity**
+
+**Help Others**
+
+**
+
+**Radical Openness**
+
+**Active Participation**
+
+**Active Collaboration**
+
+**Problem in HS people don't reall yknow what they're doing, let's just make things and you'll eventually figure it out**
+#### Result
+
+**Safety**
+
+**Family**
+
+
+
+
 
 ### Sorted List Of Assumptions, Biggest and Most Important Assumption At Top
 * By first identifying which clubs have the most projects produced and then spreading their knowledge and expertise to other club organizers and then to members, we can increase the number of projects built by those clubs.
