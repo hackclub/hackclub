@@ -15,10 +15,16 @@ The official documentation repository for hackEDU.
 * of or relating to Science, Technology, Engineering, Arts, and Math (STEAM)
 
 ### Members
-* Members of the hackEDU family make things outside of school classes (a proxy for things that they care about) with programming
+* Members of the hackEDU family make things outside of school classes (a proxy for things that they care about) with programming.
 
 ### Organizers
-* 2nd and 3rd year high school students 
+* most likely 2nd and 3rd year high school students 
+* who are evangelists for learning to code
+* has created more than 1 project before
+
+Segmentation
+* who have an existing club
+* who want to start a new club
 
 ### Alums
 
