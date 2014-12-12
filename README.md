@@ -40,7 +40,7 @@ Segmentation
 
 * hackEDU empower 1st and 2nd year high school students to build things they
   care about with code. We do this by creating, connecting, and growing closely
-  knit student-run coding communities at high schools.
+  knit student-run coding clubs int high schools.
 
 
 ### Key Mey Metric
