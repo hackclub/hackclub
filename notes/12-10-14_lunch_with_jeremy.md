@@ -1,7 +1,7 @@
 # Notes from Lunch with Jeremy
 
-* Primary realization: we have not been spending enough time actually doing the
-  change we care about.
+* **Primary realization:** we have not been spending enough time actually doing
+  the change we care about.
   * Instead, we have been trying to set up the right systems to enable that
     change to happen.
     * This doesn't translate because we're dumb and can't predict well.
@@ -32,9 +32,9 @@
 * Down the road
   * Is AP CS a variable deciding whether or not to work at a school
 * Major major major blocking problem
-  * Jeremy has never seen a program that successfully takes people with no
+  * **Jeremy has never seen a program that successfully takes people with no
     coding experience (and not self teachers already) to having 25% of them
-    building projects outside of class
+    building projects outside of class**
 * Have guided projects for beginners
   * Have a really fucking clear guide so they can reference it later when
     they're building their own project
