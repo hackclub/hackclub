@@ -3,8 +3,10 @@
 Read this first, it provides a very nice high level interview of what 
 Paul Graham, one of the founders of YCombinator wish he knew when he 
 was in high school.
-
 http://www.paulgraham.com/hs.html	
+
+And then also the answer to the question, "How can I learn to program?"
+http://www.paulgraham.com/pfaq.html
 
 ## Books
 
