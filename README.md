@@ -42,7 +42,7 @@ Segmentation
 
 ### Key Mey Metric
 
-* number of programming projects built outside of class.
+* number of programming projects per person built outside of class.
 
 #### Causal
 
@@ -76,6 +76,7 @@ Straight from Hacker Schools Website:
 **Active Collaboration**
 
 **Problem in HS people don't reall yknow what they're doing, let's just make things and you'll eventually figure it out**
+
 #### Result
 
 **Safety**
