@@ -8,6 +8,11 @@ http://www.paulgraham.com/hs.html
 And then also the answer to the question, "How can I learn to program?"
 http://www.paulgraham.com/pfaq.html
 
+Paul graham recommends working on a specific project. 
+Definitely learn how to properly brainstorm in order to think of a project!
+
+https://www.youtube.com/watch?v=Bwod1aZZteA
+
 ## Books
 
 * https://github.com/vhf/free-programming-books
