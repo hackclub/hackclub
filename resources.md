@@ -55,7 +55,7 @@ Programming language courses
 * Codeacademy.com for learning html/css/javascript
 * https://www.coursera.org/courses?orderby=upcoming&lngs=en&cats=cs-programming
   lots of great, free courses
-* https://www.makegameswith.us/tutorials/learn/ for an iOS game
+* https://www.makegameswith.us/tutorials/learn/ for an iOS game. Note that we have a promo code for this.
 * https://www.learnstreet.com/ free javascript, python and ruby courses
 * http://jlongster.com/Making-Sprite-based-Games-with-Canvas HTML5 game
 * http://www.vogella.com/ quite a few software engineering courses, textual.
@@ -67,6 +67,8 @@ Programming language courses
 * http://www.pluralsight.com/training/Courses costs money, tons of courses
 * https://www.udemy.com/courses/Technology has lots of courses, many courses
   cost money
+* https://dash.generalassemb.ly/ for learning how to build pretty things with HTML
+* https://onemonth.com/courses/one-month-rails for learning how to build applications in rails (and they also have iOS, Ruby on Rails, HTML & CSS, Stripe API, Javascript, and many others. Note that we have a promo code for one month. 
 
 Forums
 
