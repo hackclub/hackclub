@@ -1,9 +1,14 @@
-# Our Values [pre-alpha]
+# Our Mission & Values [pre-alpha]
 *Note that there is a long way to go on flushing out the meaining of these values and making them more our own but in the spirit of shipping, here they are:*
+
+## Mission
+
+hackEDU empowers high school students to build things they are excited about with code through building closely-knit, student-run clubs in high schools.
 
 ---
 
-## Outline
+## Values
+
 
 - Empower Others
 - Everyone's just drawing the owl- Creating safety
@@ -22,8 +27,6 @@
 - Don't beat yourself up
 - Start with why
 - Champion the Mission / You live and breathe this mission
-
----
 
 ### Empower Others
 Make heroes. Unleash the greatness of others, enable them to do things they never thought they could do, inside and outside of hackEDU. This is the core of what hackEDU is all about.
