@@ -2,6 +2,28 @@
 
 ---
 
+## Outline
+
+- Empower Others
+- Everyone's just drawing the owl- Creating safety
+- Do hard things
+- Fail Hard, Fail Often
+- Celebrate Failures & Small Wins
+- Ship It
+- Every Frame Matters
+- Create fun and amplify absurdity 
+- Be Open, Transparen
+- Contribute To The Community
+- Communicate fearlessly to build trust and take feedback in stride.
+- Be A Welcoming Host and Build Family Spirit
+- Always Learning
+- Incessantly discover and optimize for what what excites you.
+- Don't beat yourself up
+- Start with why
+- Champion the Mission / You live and breathe this mission
+
+---
+
 ### Empower Others
 Make heroes. Unleash the greatness of others, enable them to do things they never thought they could do, inside and outside of hackEDU. This is the core of what hackEDU is all about.
 
