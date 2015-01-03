@@ -1,4 +1,5 @@
-# Our Values
+# Our Values [pre-alpha]
+*Note that there is a long way to go on flushing out the meaining of these values and making them more our own but in the spirit of shipping, here they are:*
 
 ---
 
