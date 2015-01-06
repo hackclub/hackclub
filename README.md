@@ -1,25 +1,28 @@
 # docs ![Analytics](https://ga-beacon.appspot.com/UA-47724303-2/docs/readme?pixel)
 
-The official documentation repository for hackEDU.
+The documentation repository for hackEDU.
+This document outlines who we think about or organization. We being members and organizers of hackEDU.
 
-## zoom0 v0
+## People
 
-### People Funnel
+## Funnel
 
-1. Potential Customers
-2. Members (Customers)
+1. Potential Members
+2. Members
 3. Organizers
 
-### Target Customer
+
+
+### Target New Members
 
 * 1st and 2nd year high school students
-* who are interested in making things
+* who are interested in creating things
 * of or relating to Science, Technology, Engineering, Arts, and Math (STEAM)
 
 ### Members
 
 * Members of the hackEDU family make things outside of school classes (a proxy
-  for things that they care about) with programming.
+  for things that they are excited about) with programming.
 
 ### Organizers
 
