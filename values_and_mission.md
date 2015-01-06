@@ -20,7 +20,7 @@ hackEDU empowers high school students to build things they are excited about wit
 - Create fun and amplify absurdity 
 - Be Open, Transparen
 - Contribute To The Community
-- Communicate fearlessly to build trust and take feedback in stride.
+- Communicate directly to build trust and take feedback well.
 - Be A Welcoming Host and Build Family Spirit
 - Always Learning
 - Incessantly discover and optimize for what what excites you.
@@ -85,7 +85,7 @@ We believe that everything we do should be clear to others. That's why all of ou
 
 Whether it's helping other people at your club get something done, helping hackEDU, contributing to open source, etc. it's important to help out others in your own communities and larger communities as well.
 
-### Communicate fearlessly to build trust and take feedback in stride.
+### Communicate directly to build trust and take feedback well.
 
 A lot of times, and especially even when you're trying to be nice to avoid a subject of contention, the other person cannot understand the point that we're trying to convey. The longer these wounds stay festering, the worse that they get. On the other end, learn to take feedback in stride because it's really the only way to iterate and improve ourselves.
 
