@@ -48,64 +48,92 @@ Yes
 ### Primary Applicant Information
 
 **Organization Name**
+
 hackEDU
 
 **First Name**
+
 Jonathan
 
 **Last Name**
+
 Leung
 
 **Email**
-jonathan@hackedu.us
+
+jonathan at hackedu dot us [*modified to avoid scraping*]
 
 **Phone**
+
 [redacted]
 
 **Street Address (Line 1)**
+
 [redacted]
 
 **City**
+
 San Francisco
 
 **State (U.S.)**
+
 CA
 
 **State/Province (outside U.S.)**
+
 [*left blank*]
 
 **Zip or Postal Code**
+
 [redacted]
 
 **Country**
+
 US
 
 **Country of Citizenship**
+
 US
 
 **If you plan to work in the United States and are not a U.S. citizen, are you already authorized to work here? Not Applicable**
+
 [*left blank*]
 
 **Date of Birth**
+
 [redacted]
 
 **Gender**
+
 Male
 
 **What is your ethnic/racial background?**
+
 Asian (including Indian Subcontinent), Asian-American
 
 **What is your highest level of education?**
+
 Bachelor's degree
 
 **How did you hear about the Echoing Green Fellowship?**
+
 Fellow
 
 **Please list the name of the specific person who referred you to Echoing Green?**
+
 [redacted]
 
 **Have you (or your partner) applied for an Echoing Green Fellowship before?**
+
 No
+
+#### Primary Applicant Resume
+
+[link to attached resume](http://f.cl.ly/items/0L0E1P1W2D2w163D0D3S/JonathanLeung.pdf)
+
+#### References
+
+[redacted]
 
 ### Organization Information
 
@@ -169,8 +197,8 @@ Nonprofit/charitable
 
 hackEDU empowers high school students to build things they care about with code through building closely-knit, student-run clubs in high schools.
 
-**Summarize your organization's mission and activities in one paragraph. (500 characters)
-**
+**Summarize your organization's mission and activities in one paragraph. (500 characters)**
+
 hackEDU empowers high school students to build things they are excited about with code by creating and connecting closely-knit, student-run coding clubs in high school. Learning coding doesn't just mean you'll have the skills to break down and solve large problems at work after you get a job. Learning coding means that you can break down and solve problems that *you* are excited about *now*. We focus on using coding to shatter the glass ceiling on what high schoolers think is possible.
 
 **Describe the specific problem your organization is working to solve. Use statistics and references to identify the size and scope of the problem. (500 characters)**
@@ -271,7 +299,7 @@ Initially, I was traumatized. I was put a lot of effort into something I thought
 
 Step 6 is only required for applicants applying as a partnership. If you are NOT applying as a partnership, leave this page blank and proceed to the next page.
 
-*[this section was left blank because Echoing Green does not permit someone under the age of 18 from being eligible for the fellowship (Zach is currently 17)*
+*[this section was left blank because Echoing Green does not permit someone under the age of 18 from being eligible for the fellowship (Zach is currently 17)]*
 
 
 
