@@ -1,9 +1,25 @@
 # docs ![Analytics](https://ga-beacon.appspot.com/UA-47724303-2/docs/readme?pixel)
 
+<img src="https://raw.githubusercontent.com/hackedu/dinosaurs/master/smart_dinosaur_docs.png" alt="Prophet Orpheus reading docs" align="right" />
+
 The documentation repository for hackEDU.
 
 This document outlines who we think about or organization. We being members and
 organizers of hackEDU.
+
+---
+
+We need a
+
+lot of extra space here
+
+so we can fit
+
+the one and only
+
+[Prophet Orpheus](https://github.com/hackedu/dinosaurs).
+
+maybe some actual content can go here someday.
 
 ## People
 
