@@ -1,7 +1,25 @@
 # docs ![Analytics](https://ga-beacon.appspot.com/UA-47724303-2/docs/readme?pixel)
 
+<img src="https://raw.githubusercontent.com/hackedu/dinosaurs/master/smart_dinosaur_docs.png" alt="Prophet Orpheus reading docs" align="right" />
+
 The documentation repository for hackEDU.
-This document outlines who we think about or organization. We being members and organizers of hackEDU.
+
+This document outlines who we think about or organization. We being members and
+organizers of hackEDU.
+
+---
+
+We need a
+
+lot of extra space here
+
+so we can fit
+
+the one and only
+
+[Prophet Orpheus](https://github.com/hackedu/dinosaurs).
+
+maybe some actual content can go here someday.
 
 ## People
 
@@ -10,8 +28,6 @@ This document outlines who we think about or organization. We being members and 
 1. Potential Members
 2. Members
 3. Organizers
-
-
 
 ### Target New Members
 
@@ -41,7 +57,9 @@ Segmentation
 
 ### Mission
 
-* hackEDU empowers 1st and 2nd year high school students to build things they care about with code. We do this by helping to create, connect, and grow closely knit student-run coding clubs in high schools.
+* hackEDU empowers 1st and 2nd year high school students to build things they
+  care about with code. We do this by helping to create, connect, and grow
+  closely knit student-run coding clubs in high schools.
 
 ### Key Mey Metric
 
@@ -52,25 +70,35 @@ Segmentation
 **Don't Panic**
 
 **Radical Inclusion**
-- anyone is welcome to come to the club
-- beginners are welcome
-	- no one makes anyone feel bad for saying
-	- there are no outcasts 	
+* anyone is welcome to come to the club
+* beginners are welcome
+	* no one makes anyone feel bad for saying
+	* there are no outcasts 	
 	
 **Celebrating Not Knowing**
 Straight from Hacker Schools Website:
 
-> We think this is one of the most pernicious impediments to education. In most of the world, but especially school and work, people are afraid of looking stupid. This fear frequently keeps us from asking important questions like "how does that work?" or even just "why?" Worse, it keeps us from saying "I don't understand." That means many of us muddle on with a half-baked or entirely incorrect understanding of core concepts. This is particularly bad with programming, because these misunderstandings compound, and over time become harder and more embarrassing to admit to and address.
+> We think this is one of the most pernicious impediments to education. In most
+> of the world, but especially school and work, people are afraid of looking
+> stupid. This fear frequently keeps us from asking important questions like
+> "how does that work?" or even just "why?" Worse, it keeps us from saying "I
+> don't understand." That means many of us muddle on with a half-baked or
+> entirely incorrect understanding of core concepts. This is particularly bad
+> with programming, because these misunderstandings compound, and over time
+> become harder and more embarrassing to admit to and address.
 > 
-> This is why saying "I don't know" or "I don't understand" is a positive thing at Hacker School. It's an opportunity for you to learn something new, and for someone else to help you with it (or vise versa).
-> [Continue Reading Here](https://www.hackerschool.com/manual#sub-sec-social-rules) Including "No feigning surprise", "No well-actually's", "No back-seat driving", "No subtle-isms"
+> This is why saying "I don't know" or "I don't understand" is a positive thing
+> at Hacker School. It's an opportunity for you to learn something new, and for
+> someone else to help you with it (or vise versa).
+> [Continue Reading
+> Here](https://www.hackerschool.com/manual#sub-sec-social-rules) Including "No
+> feigning surprise", "No well-actually's", "No back-seat driving", "No
+> subtle-isms"
 
 
 **Radical Absurdity**
 
 **Help Others**
-
-**
 
 **Radical Openness**
 
@@ -78,17 +106,14 @@ Straight from Hacker Schools Website:
 
 **Active Collaboration**
 
-**Problem in HS people don't reall yknow what they're doing, let's just make things and you'll eventually figure it out**
+**Problem in HS people don't reall yknow what they're doing, let's just make
+things and you'll eventually figure it out**
 
 #### Result
 
 **Safety**
 
 **Family**
-
-
-
-
 
 ### Sorted List Of Assumptions, Biggest and Most Important Assumption At Top
 

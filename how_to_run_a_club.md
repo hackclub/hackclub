@@ -4,8 +4,8 @@
 
 You want to build things in your club, but no one knows how.
 
-You have them do stuff in CodeCademy (Treehouse, etc), but they still doesn't
-know how.
+You have them do stuff in CodeCademy (Treehouse, etc) or work through a
+book/course, but they still doesn't know how.
 
 Members don't feel engaged.
 
