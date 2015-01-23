@@ -27,6 +27,7 @@ hackEDU empowers high school students to build things they are excited about wit
 - Don't beat yourself up
 - Start with why
 - Champion the Mission / You live and breathe this mission
+- Don't be afraid to do anything ever
 
 ### Empower Others
 Make heroes. Unleash the greatness of others, enable them to do things they never thought they could do, inside and outside of hackEDU. This is the core of what hackEDU is all about.
@@ -97,7 +98,5 @@ So often we don't as the question, "why" are we doing this. Or even if we are, w
 ### Champion the Mission Everyday
 So we can write these manifestos or have these mission statements that no one really cares about or practices. This is not one of them. We hold ourselves to a high standards to uphold these values that matter to us a lot and live, breathe, and actively practice them each day. If we're not up to standard on it, it is our job to keep on deliberately practicing them.
 
-
-
-
-
+### Don't be Afraid to do Anything Ever
+Advice from an awesome mentor.
