@@ -1,130 +1,56 @@
-# docs ![Analytics](https://ga-beacon.appspot.com/UA-47724303-2/docs/readme?pixel)
+# hackEDU's Docs ![Analytics](https://ga-beacon.appspot.com/UA-47724303-2/docs/readme?pixel)
 
-<img src="https://raw.githubusercontent.com/hackedu/dinosaurs/master/smart_dinosaur_docs.png" alt="Prophet Orpheus reading docs" align="right" />
+The documentation repository for [hackEDU](http://hackedu.us).
 
-The documentation repository for hackEDU.
-
-This document outlines who we think about or organization. We being members and
-organizers of hackEDU.
-
----
-
-We need a
-
-lot of extra space here
-
-so we can fit
-
-the one and only
-
-[Prophet Orpheus](https://github.com/hackedu/dinosaurs).
-
-maybe some actual content can go here someday.
-
-## People
-
-## Funnel
-
-1. Potential Members
-2. Members
-3. Organizers
-
-### Target New Members
-
-* 1st and 2nd year high school students
-* who are interested in creating things
-* of or relating to Science, Technology, Engineering, Arts, and Math (STEAM)
-
-### Members
-
-* Members of the hackEDU family make things outside of school classes (a proxy
-  for things that they are excited about) with programming.
-
-### Organizers
-
-* most likely 2nd and 3rd year high school students 
-* who are evangelists for learning to code
-* has created more than 1 project before
-
-Segmentation
-
-* who have an existing club
-* who want to start a new club
-
-### Alums
-
-* 4th year high school students
-
-### Mission
-
-* hackEDU empowers 1st and 2nd year high school students to build things they
-  care about with code. We do this by helping to create, connect, and grow
-  closely knit student-run coding clubs in high schools.
-
-### Key Mey Metric
-
-* number of programming projects per person built outside of class.
-
-#### Causal
-
-**Don't Panic**
-
-**Radical Inclusion**
-* anyone is welcome to come to the club
-* beginners are welcome
-	* no one makes anyone feel bad for saying
-	* there are no outcasts 	
-	
-**Celebrating Not Knowing**
-Straight from Hacker Schools Website:
-
-> We think this is one of the most pernicious impediments to education. In most
-> of the world, but especially school and work, people are afraid of looking
-> stupid. This fear frequently keeps us from asking important questions like
-> "how does that work?" or even just "why?" Worse, it keeps us from saying "I
-> don't understand." That means many of us muddle on with a half-baked or
-> entirely incorrect understanding of core concepts. This is particularly bad
-> with programming, because these misunderstandings compound, and over time
-> become harder and more embarrassing to admit to and address.
-> 
-> This is why saying "I don't know" or "I don't understand" is a positive thing
-> at Hacker School. It's an opportunity for you to learn something new, and for
-> someone else to help you with it (or vise versa).
-> [Continue Reading
-> Here](https://www.hackerschool.com/manual#sub-sec-social-rules) Including "No
-> feigning surprise", "No well-actually's", "No back-seat driving", "No
-> subtle-isms"
+![image](http://f.cl.ly/items/433h2N2d2Y3d0W1a3T27/Image%202015-02-06%20at%2012.21.45%20PM.png)
 
 
-**Radical Absurdity**
 
-**Help Others**
+## About
 
-**Radical Openness**
+[hackEDU](http://hackedu.us) helps high school students start and lead programming clubs to create the next generation of hackers. 
 
-**Active Participation**
+A hacker is someone who creates things that they see missing in the world and isn't afraid to break the rules.
 
-**Active Collaboration**
+We think the best way to make the world awesome is to create the next generation of hackers because hackers are changemakers.
 
-**Problem in HS people don't reall yknow what they're doing, let's just make
-things and you'll eventually figure it out**
+Learn more on our  [website](http://hackedu.us).
 
-#### Result
+## Docs Outline
 
-**Safety**
 
-**Family**
+### Values and Mission
 
-### Sorted List Of Assumptions, Biggest and Most Important Assumption At Top
+At hackEDU, we live and breath the mission. [`values_and_mission.md`](values_and_mission.md) describes what we're all about.
 
-* By first identifying which clubs have the most projects produced and then
-  spreading their knowledge and expertise to other club organizers and then to
-  members, we can increase the number of projects built by those clubs.
-* 1st and 2nd year high school students will more readily join clubs than 3rd
-  and 4th years. Measurability: when spending the same amount effort, more 1st
-  and 2nd years join than 3rd or 4th years.
-* Having 1st and 2nd year high school organizers join clubs will allow them to
-  take on leadership positions later in the club. 
+### Club Playbook
+
+*[Incomplete]*
+
+We are slowly building up a "Club Playbook" which is a playbook that helps you get your club up and running and will contain best practices on how to run your club. This is merely a mere place to start and is *by no means* the definitive best way to do things. We expect you to continue Drawing The Owl and make everything your own, forking it, and making it better.
+
+[`club_playbook`](club_playbook)
+
+### Meta
+
+[`meta`](meta)
+
+This is about the internal parts of hackEDU and include:
+
+- [`organization_and_financial_faq.md`](meta/organization_and_financial_faq.md)
+- [`blurbs.md`](meta/blurbs.md), a listing of various copy about hackEDU that we use in our various documents.
+- [`applications`](meta/applications), applications that that hackEDU team has applied to that are related to hackEDU.
+
+### Team
+
+[Jonathan Leung](http://jonl.org), `jonathan@hackedu.us`
+
+[Zach latta](http://zachlatta.com), `zach@hackedu.us`
+
+[Max](https://github.com/MaxWofford), `max@hackedu.us`
+
+## Contact
+Also fee free to reach out to all three of us at `team@hackedu.us`
 
 ## License
 
