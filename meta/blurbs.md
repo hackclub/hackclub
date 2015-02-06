@@ -82,3 +82,13 @@ hackEDU hackers are not only at the center of the high school hacking scene but 
 - Hacking Generation Y (1st place): Luke Wright, 17, won 1st by creating an app that took unsuspecting Tinder users through old school text adventure games.
 - Hacking Generation Y (3rd place): Raphael Kats, 17, and our newest club leader, Amy Sorto, 17, won 3rd place by creating a virtual reality world with the Oculus navigated with a wheel chair.
 
+## Social Impact Pitch
+
+We think that the best way to solve the world's problems to to create the next generation of change makers.
+
+Talk about what changemaking people have done
+- Started an elementary school division
+- Rohith Cosmos Browser
+- Max, working for a non-profit
+- Elementary School Kids
+

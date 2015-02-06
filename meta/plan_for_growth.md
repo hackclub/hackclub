@@ -32,19 +32,36 @@ hackEDU hackers are not only at the center of the high school hacking scene but 
 
 ### Spring 2014 (January - June)
 
-We plan to create the "Club Playbook", a guide on how to create the best progrmaming club.
+We are creating the "Club Playbook", a guide on how to create and run the best progrmaming clubs. This will include:
+
+- Curriuculum for learning technical content
+- Excercises for team building
+- Providing local mentors for the club
+- Physical hardware such as Makey Makeys
+
+Complimented with the Playbook, we will be working with organizers week to week over calls.
 
 #### Onboard 50 more schools into the hackEDU network
 
-**Where From**
+All of our 24 clubs came to hackEDU through inbound interest. Many came from the facebook group HS Hackers, a Facebook group  that representing 3,000 high schoolers from 689 schools across 46 states and 87 countries which was started and is run by one of our founders, Zach latta.
 
-- Hack Generation Y Survey
-	- Number of schools
-- HS Hackers
-	- Number of schools
+Moreover, from a survey that we did at the premier Hack Generation Y hackathon, we learned that there are over 60 clubs just in the bay area alone that are not part of our network yet that expressed interest. #insert other statistics here.
 	
-##### Create Club Playbook
+##### Create And Iterate on The Club Playbook
 
-- Take what we've learned from 
--
-Takes what
+- Take what we've learned from our Fall 2014 pilot
+- Have all of our club
+
+### Summer 2015 (June - August)
+
+In the Summer of 2015, we are taking our iterated upon version of club in a box and automating it.
+
+# Fall 2015 (September - October)
+
+For September's Launch, we want 100 additional schools.
+
+- $500 per school, $20 per kid
+- We are helping lower income schools purchase
+- computers
+- hardware
+- At this rate, 2 clubs a week
