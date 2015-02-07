@@ -4,8 +4,6 @@ The documentation repository for [hackEDU](http://hackedu.us).
 
 ![image](http://f.cl.ly/items/433h2N2d2Y3d0W1a3T27/Image%202015-02-06%20at%2012.21.45%20PM.png)
 
-
-
 ## About
 
 [hackEDU](http://hackedu.us) helps high school students start and lead programming clubs to create the next generation of hackers. 
@@ -17,7 +15,6 @@ We think the best way to make the world awesome is to create the next generation
 Learn more on our  [website](http://hackedu.us).
 
 ## Docs Outline
-
 
 ### Values and Mission
 
@@ -49,8 +46,22 @@ This is about the internal parts of hackEDU and include:
 
 [Max](https://github.com/MaxWofford), `max@hackedu.us`
 
+### FAQ
+
+##### Why do we need another learn to code organization?
+
+The answer is that we don't. We need to create a community around hacking so
+the duplication doesn't happen. We're not a learn to code organization. We're
+not building another Codecademy. We're leveraging existing curriculum and
+our primary focus is building families and communities.
+
+##### How do you scale?
+
+TODO
+
 ## Contact
-Also fee free to reach out to all three of us at `team@hackedu.us`
+
+Also feel free to reach out to all three of us at `team@hackedu.us`
 
 ## License
 
