@@ -5,6 +5,19 @@ school students to start and lead programming clubs at their schools. We
 provide all the tools for starting and leading clubs including a baseline
 coding curriculum, free software tools, and community building training.
 
+Each club typically spans the school year, regularly meeting weekly or biweekly
+for between one and several hours. Clubs are led by high school hackers who
+want to bring the hackathon culture back to their schools.
+
+#### Why hackEDU?
+
+Instead of focusing on teaching a set curriculum at hack clubs, hackEDU focuses
+on building all-inclusive families where members build things together. This
+results in: (1) hack clubs engaging groups that are underrepresented in computer
+science and attracting members who might not normally sign up for computer
+science classes, and (2) building confidence, courage, and skills in members
+through integration with the broader hacking community.
+
 ## Metrics
 
 ![map of clubs](assets/map.png)
