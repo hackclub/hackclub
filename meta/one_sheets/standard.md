@@ -3,7 +3,9 @@
 ## About
 
 [hackEDU](http://hackedu.us) is a non-profit initiative that works with high
-school students to start and lead programming clubs at their school.
+school students to start and lead programming clubs at their schools. We
+provide all the tools for starting and leading clubs including a baseline
+coding curriculum, free tools, and training on community building.
 
 ## Metrics
 
