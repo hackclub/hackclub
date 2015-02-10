@@ -6,8 +6,10 @@ provide all the tools for starting and leading clubs including a baseline
 coding curriculum, free software tools, and community building training.
 
 Each club typically spans the school year, regularly meeting weekly or biweekly
-for between one and several hours. Clubs are led by high school hackers who
-want to bring the hackathon culture back to their schools.
+for between one and several hours. Clubs are led by high school
+[hackers](https://github.com/hackedu/docs/blob/master/meta/blurbs.md#what-is-a-hacker)
+who want to bring the [hackathon](https://sendgrid.com/blog/why-hackathon/)
+culture back to their schools.
 
 #### Why hackEDU?
 
