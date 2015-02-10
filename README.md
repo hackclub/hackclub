@@ -38,7 +38,7 @@ This is about the internal parts of hackEDU and include:
 - [`blurbs.md`](meta/blurbs.md), a listing of various copy about hackEDU that we use in our various documents.
 - [`applications`](meta/applications), applications that that hackEDU team has applied to that are related to hackEDU.
 
-### Team
+## Team
 
 [Jonathan Leung](http://jonl.org), `jonathan@hackedu.us`
 
@@ -46,7 +46,7 @@ This is about the internal parts of hackEDU and include:
 
 [Max](https://github.com/MaxWofford), `max@hackedu.us`
 
-### FAQ
+## FAQ
 
 ##### Why do we need another learn to code organization?
 
@@ -58,6 +58,8 @@ our primary focus is building families and communities.
 ##### How do you scale?
 
 TODO
+
+
 
 ## Contact
 
