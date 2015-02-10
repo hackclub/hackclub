@@ -1,4 +1,4 @@
-![header](http://i.imgur.com/sjLMF2t.png)
+![header](assets/header.png)
 
 ## About
 
@@ -9,7 +9,7 @@ coding curriculum, free tools, and training on community building.
 
 ## Metrics
 
-![map of clubs](https://s3.amazonaws.com/f.cl.ly/items/1w1h0K3r321N191s2W0n/Untitled%203.png)
+![map of clubs](assets/map.png)
 
 ##### Fall 2014 Pilot
 
