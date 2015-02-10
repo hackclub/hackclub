@@ -1,5 +1,4 @@
-# hackEDU's Docs
-# ![Analytics](https://ga-beacon.appspot.com/UA-47724303-2/docs/readme?pixel)
+# hackEDU's Docs ![Analytics](https://ga-beacon.appspot.com/UA-47724303-2/docs/readme?pixel)
 
 The documentation repository for [hackEDU](http://hackedu.us).
 
