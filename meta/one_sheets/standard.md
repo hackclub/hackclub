@@ -19,7 +19,7 @@ results in: (1) hack clubs engaging groups that are underrepresented in computer
 science and attracting members who might not normally sign up for computer
 science classes, and (2) building confidence, courage, and skills in members
 through integration with the broader hacking community.
-
+    
 ## Metrics
 
 ![map of clubs](assets/map.png)
@@ -29,7 +29,7 @@ through integration with the broader hacking community.
 - 24 clubs in 11 states and two countries
 - over 1000 members
   - 35% women (double the national average of 18% [[0]](http://media.collegeboard.com/digitalServices/pdf/research/2014/Program-Summary-Report-2014.xls)) 
-  - 18% minority ethnicities in technology (three times the national average 5% [[1]](http://www.usatoday.com/story/tech/2014/12/29/usa-today-analysis-finds-minorities-underrepresented-in-non-tech-tech-jobs/20868353/))
+  - 18% minority ethnicities in technology (three times the national average of 5% [[1]](http://www.usatoday.com/story/tech/2014/12/29/usa-today-analysis-finds-minorities-underrepresented-in-non-tech-tech-jobs/20868353))    
 
 ##### What our hackers have been up to
 
