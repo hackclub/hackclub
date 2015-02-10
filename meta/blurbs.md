@@ -3,23 +3,21 @@
 
 ## About
 
-[hackEDU](http://hackedu.us) helps high school students start and lead programming clubs at their school.
+[hackEDU](http://hackedu.us) works with high school students start and lead programming clubs at their school.
 
 ## What is a hacker?
 
 A hacker is someone who creates things that they see missing in the world and isn't afraid to break the rules.
 
+## About with Hackers
+
+[hackEDU](http://hackedu.us) works with high school students to start and lead programming clubs at their school. We create hackers: people who create things that they see missing in the world and aren't afraid to break the rules.
+
+
 ## Why Are We Unique
 
 Why are we unique to all the other learn to code programs?
 TODO
-
-
-## Awards Won
-
-- TODO:MAX
-- All the other prizes
-- Amy Won Make Games With US Award
 
 ## Updates To Close Friend
 
@@ -29,32 +27,25 @@ So I just recently moved to San Francisco to join [hackEDU](https://hackedu.us) 
 
 
 ## Timeline
-
-## About
-
-hackEDU helps high school students start and lead programming clubs at their school. We create hackers—people who create things that they see missing in the world and aren't afraid to break the rules.
-
+[TODO]
 
 ## Metrics
 
-In our 24 clubs accross the nation accross 11 states.
+In our Fall 2014 pilot, we had
 
-Fall 2014 Pilot
+- 24 clubs accross the nation 
+- reached schools in 11 states
+- had over 1000 members
+- 35% of our members are women
+	- *(double the national average of girls who take the AP Computer Science exam: 18%.)*
+- 18% of our club members represent minority ethnicities in the technology field
+	- *(three times the national average of minorities who are in the tech industry: 5%)*
 
-- 7 schools accress the nation
+![image](https://s3.amazonaws.com/f.cl.ly/items/0x3U3m1I060t212V1Z2l/Untitled%203.png)
 
-Fall 2014 Extended Pilot
+## Leading the Hacking Scene
 
-- 24 schools across the nation 
-- Clubs in 11 states
-- Over 1000 members
-- 35% of our members are women (about double - the national average of girls who take the - AP Computer Science exam of 18%).
-- 18% of our club members represent minority ethnicities (three times the national average of minorities who are in the tech industry, 5%)
-
-### Leading the Hacking Scene
-
-hackEDU hackers are not only at the center of the high school hacking scene but are dominating the collegiate hacking scene as well. At the top two collegiate hackathons in the world, PennApps X and MHacks V, three of the six winning teams were led by high school students. All of these winning high school teams are part of hackEDU.
-
+hackEDU hackers are not only at the center of the high school hacking scene but are dominating the collegiate hacking scene as well. At the top two collegiate hackathons in the world, [PennApps X](http://www.google.com/url?q=http%3A%2F%2Fpennappsx.challengepost.com%2Fsubmissions&sa=D&sntz=1&usg=AFQjCNH91kAtdo0bfYJ0PXbpkK_UC77hwg) and [MHacks V](http://www.google.com/url?q=http%3A%2F%2Fmhacksv.challengepost.com%2Fsubmissions&sa=D&sntz=1&usg=AFQjCNH60cikW6eoTO3CxRYDabsCla0AVQ), three of the six winning teams were led by high school students. __*All of these winning high school teams are part of hackEDU.*__
 
 
 ## Zach Runs HS Hackers
