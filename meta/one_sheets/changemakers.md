@@ -1,4 +1,4 @@
-<img src="assets/header.png" align="center" style="width: 100%;">
+<img src="https://i.imgur.com/oQgzta2.png" align="center" style="width: 100%;">
 
 [hackEDU](http://hackedu.us) is a non-profit initiative that works with high
 school students to start and lead programming clubs at their schools. We
@@ -25,7 +25,7 @@ through integration with the broader hacking community.
 
 ## Metrics
 
-<img src="assets/map.png" alt="Map of Clubs" align="right" style="margin-left: 20px;"/>
+<img src="https://i.imgur.com/40aaZII.png" alt="Map of Clubs" align="right" style="margin-left: 20px;"/>
 
 ##### Fall 2014 Pilot
 
