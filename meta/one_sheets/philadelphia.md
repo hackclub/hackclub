@@ -28,10 +28,13 @@ through integration with the broader hacking community.
 ##### Fall 2014 Pilot
 
 - 24 clubs in 11 states and two countries
-- we have 3 clubs in Philadelphia and are working very closely with organizations 
 - over 1000 members 	
 - 35% women (double the national average of 18% [[0]](http://media.collegeboard.com/digitalServices/pdf/research/2014/Program-Summary-Report-2014.xls)) 
 - 18% minority ethnicities in technology (three times the national average 5% [[1]](http://www.usatoday.com/story/tech/2014/12/29/usa-today-analysis-finds-minorities-underrepresented-in-non-tech-tech-jobs/20868353/))
+
+##### Philadelphia
+We currently have 2 clubs in Philadelphia area are starting a third one in the coming weeks. One of our club organizers, Victor Lourng, also is heavily involved in the Philadelphia coding scene and organizes CodeDay Philly, Hackadelphia, Pilot Philly and the HS Hackers meetups.
+
 
 ##### What our hackers have been up to
 
