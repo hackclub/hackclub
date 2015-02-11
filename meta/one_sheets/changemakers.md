@@ -1,4 +1,4 @@
-![header](assets/header.png)
+<img src="assets/header.png" align="center" style="width: 100%;">
 
 [hackEDU](http://hackedu.us) is a non-profit initiative that works with high
 school students to start and lead programming clubs at their schools. We
@@ -7,9 +7,8 @@ coding curriculum, free software tools, and community building training.
 
 Each club typically spans the school year, regularly meeting weekly or biweekly
 for between one and several hours. Clubs are led by high school
-hackers, people who create things that they see missing in the world and aren't 
-afraid to break the rules who want to bring the 
-[hackathon](https://sendgrid.com/blog/why-hackathon/)
+[hackers](https://github.com/hackedu/docs/blob/master/meta/blurbs.md#what-is-a-hacker)
+who want to bring the [hackathon](https://sendgrid.com/blog/why-hackathon/)
 culture back to their schools.
 
 We believe that by creating the next generation of hackers we are creating
@@ -26,14 +25,14 @@ through integration with the broader hacking community.
 
 ## Metrics
 
-![map of clubs](assets/map.png)
+<img src="assets/map.png" alt="Map of Clubs" align="right" style="margin-left: 20px;"/>
 
 ##### Fall 2014 Pilot
 
 - 24 clubs in 11 states and two countries
 - over 1000 members
-  - 35% women (double the national average of 18% [[0]](http://media.collegeboard.com/digitalServices/pdf/research/2014/Program-Summary-Report-2014.xls)) 
-  - 18% minority ethnicities in technology (three times the national average 5% [[1]](http://www.usatoday.com/story/tech/2014/12/29/usa-today-analysis-finds-minorities-underrepresented-in-non-tech-tech-jobs/20868353/))
+- 35% women (2x the national average of 18% [[0]](http://media.collegeboard.com/digitalServices/pdf/research/2014/Program-Summary-Report-2014.xls)) 
+- 18% minority ethnicities in technology (3x the national average of 5% [[1]](http://www.usatoday.com/story/tech/2014/12/29/usa-today-analysis-finds-minorities-underrepresented-in-non-tech-tech-jobs/20868353/))
 
 ##### What our hackers have been up to
 
