@@ -43,6 +43,11 @@ In our Fall 2014 pilot, we had
 
 ![image](https://s3.amazonaws.com/f.cl.ly/items/0x3U3m1I060t212V1Z2l/Untitled%203.png)
 
+## Metrics Words
+
+we reach over 1000 members in 24 schools across 11 states, 35% of whom are woman (double the national average) and 18% who represent ethnic minorities in tech (three times the national average).
+
+
 ## Leading the Hacking Scene
 
 hackEDU hackers are not only at the center of the high school hacking scene but are dominating the collegiate hacking scene as well. At the top two collegiate hackathons in the world, [PennApps X](http://www.google.com/url?q=http%3A%2F%2Fpennappsx.challengepost.com%2Fsubmissions&sa=D&sntz=1&usg=AFQjCNH91kAtdo0bfYJ0PXbpkK_UC77hwg) and [MHacks V](http://www.google.com/url?q=http%3A%2F%2Fmhacksv.challengepost.com%2Fsubmissions&sa=D&sntz=1&usg=AFQjCNH60cikW6eoTO3CxRYDabsCla0AVQ), three of the six winning teams were led by high school students. __*All of these winning high school teams are part of hackEDU.*__
