@@ -55,7 +55,7 @@ This is about the internal parts of hackEDU and include:
 
 [Zach latta](http://zachlatta.com), `zach@hackedu.us`
 
-[Max](https://github.com/MaxWofford), `max@hackedu.us`
+[Max Wofford](https://github.com/MaxWofford), `max@hackedu.us`
 
 ## FAQ
 

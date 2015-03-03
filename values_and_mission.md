@@ -28,6 +28,7 @@ hackEDU empowers high school students to build things they are excited about wit
 - Start with why
 - Champion the Mission / You live and breathe this mission
 - Don't be afraid to do anything ever
+- See both sides, debate
 
 ### Empower Others
 
@@ -115,3 +116,7 @@ So often we don't as the question, "why" are we doing this. Or even if we are, w
 So we can write these manifestos or have these mission statements that no one really cares about or practices. This is not one of them. We hold ourselves to a high standards to uphold these values that matter to us a lot and live, breathe, and actively practice them each day. If we're not up to standard on it, it is our job to keep on deliberately practicing them.
 
 ### Don't be afraid to do anything, ever
+
+### See both sides, debate
+
+See both sides of every argument and don't hesitate to debate or question the norm.
