@@ -50,7 +50,7 @@ We're currently raising $150k to bring us through the year, but my cofounder
 and I are completely new to nonprofit fundraising and are both shooting in the
 dark with more things than we'd like. Specifically, introductions to people who
 have (1) closed large corporate sponsors, (2) extensive experience writing
-grants, or (3) experience closing foundations would all be invaluable.
+grants, or (3) experience closing foundations would be particularly useful.
 
 We're also figuring out our fiscal sponsorship situation so we can accept
 donations and access to an attorney who has experience with nonprofit fiscal
