@@ -18,11 +18,25 @@ N/A
 
 **What will your organization do?**
 
+hackEDU is a non-profit initiative that works with high school students to
+start and lead coding clubs at their schools. We provide all the tools for
+starting and leading clubs including a baseline coding curriculum, free
+software tools, and community building training. Each club typically spans the
+school year, regularly meeting weekly or biweekly for between one and several
+hours. Clubs are led by high school hackers who want to bring the hackathon
+culture back to their schools.
+
 **Where do you live now, and where would the organization be based after YC?**
+
+We're currently in San Francisco and plan to remain here.
 
 **Email address we should contact you at**
 
+zach@hackedu.us
+
 **Phone number(s)**
+
+[redacted]
 
 **Please provide an email address for each founder in the organization,
 including yourself. Founders must have at least 10% equity in the company. We
