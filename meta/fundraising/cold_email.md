@@ -36,4 +36,4 @@ and faculty sponsors at the existing clubs). Our initial fundraising deadline
 is April 11 (so we have time for some iterations before the current school year
 ends).
 
-- [name]
+\- [name]
