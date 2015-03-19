@@ -155,3 +155,6 @@ No.
 N/A
 
 ### You may submit one link that helps us get to know you (a video, an article, etc)
+
+While it's not a traditional medium, I am a builder and I put most of what I
+build on my GitHub: https://github.com/zachlatta.
