@@ -4,12 +4,12 @@ I saw you had participated in [thing] and wanted to reach out.
 
 (OR POTENTIALLY LIST MUTUAL CONTACTS, SPECIFICALLY WHY YOU REACHED OUT TO THEM)
 
-We've built hackEDU, a set of programming clubs with 1,000 students at 24 high
-schools around the country. We think it's silly that students who love music
-can join band, students who love sports can join an athletic team, but students
-who want to learn to code have to go home and code alone. Our vision is that
-every high school in the country will offer programming clubs where students
-can code (and learn to code) with other like-minded students.
+We've built hackEDU, a community of programming clubs with 1,000 students at 24
+high schools around the country. We think it's silly that students who love
+music can join band, students who love sports can join an athletic team, but
+students who want to learn to code have to go home and code alone. Our vision
+is that every high school in the country will offer programming clubs where
+students can code (and learn to code) with other like-minded students.
 
 Until now we've bootstrapped this with $0 in donations. I dropped out of high
 school in LA and moved to SF to grow this starting full-time ~5 months ago, and
