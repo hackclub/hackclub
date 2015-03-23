@@ -206,37 +206,122 @@ inclusive?**
 
 **Name**
 
+Jonathan Leung
+
 **Email Address**
+
+jonathan@hackedu.us
 
 **Age**
 
+24
+
 **Gender**
+
+Male
 
 **Schools, Degrees and Years of Graduation**
 
+University of Pennsylvania, BSE in Computer Engineering, 2013
+The Haverford School, GED, 2009
+
 **Employers, Position / Titles and Dates**
+
+* All Star Code
+* Curriculum Developer And Facilitator
+* Mar - Aug 2014
+
+* General Assembly
+* Instructor for the 12-Week Ruby on Rails Course
+* Sep - Dec 2013
+
+* Learners' House (bit.ly/learnershouse)
+* Creator
+* Dec 28 - Jan 7, 2014
+
+* PennApps
+* Lead Organizer
+* 2010 - 2012
+
+* Penn Rent-A-CTO
+* Co-Founder and Consultant
+* 2011 - 2013
+
+* Perceptual Networks
+* Full Stack Intern
+* Jun - Aug 2012
+
+* Gobbler
+* Full Stack Intern
+* Jun - Aug 2011
 
 **Personal website**
 
+http://jonl.org/
+
 **Github URL**
+
+https://github.com/jonleung
 
 **Linkedin URL**
 
+www.linkedin.com/in/jonathanjleung
+
 **Facebook URL**
 
+http://fb.jonl.org
+
 **Twitter URL**
+
+https://twitter.com/jonathanjleung
 
 **Please tell us about the time you most successfully hacked some
 (non-computer) system to your advantage.**
 
+While organizing PennApps in 2011, I thought it would be compelling for
+participants for participants if we could pay for their transportation to our
+hackathon. I thought that we would be able to convince MegaBus to be our
+"official transportation sponsor" because hackathon goers fit their demographic
+of "young persons likely to want travel between large cities cheaply while
+using wi-fi". They were interested but hesitant because they didn't want to
+associate themselves with all the "hackers" and all the "hacking" that was
+happening in the news.
+
+To alleviate their concerns, I innocently sent them the link to the Wikipedia
+entry for Hackathon--after I added this: 'Although "hack" is in the root of
+hackathon, hackathons have nothing to do with malicious "hacking" done by
+hackers, rather the spirit of a hackathon is to collaboratively build programs
+and applications.'
+
+http://en.wikipedia.org/w/index.php?title=Hackathon&diff=442741932&oldid=437209790
+
+By convincing Megabus to sponsor us by "hacking" Wikipedia page, we set the
+status quo for hackathons for free transportation.
+
 **Please tell us in one or two sentences about the most impressive thing other
 than this startup that you have built or achieved.**
 
+This past summer, I designed and executed a 6-week summer immersion program
+focused on catalyzing empowerment for high school students at All Star Code
+that took students from 0 to webapps like a real-time multiplayer asteroids
+game. After the program, I was proud that students banded together on their own
+initiative to throw the Breaking Barriers Hackathon, which they got Google and
+Twilio to sponsor and and over 100 of the top high school hackers in NYC to
+attend.
+
 **Will you live in the Bay Area June through August 2015, if we fund you?**
 
+Yes.
+
 **Will you commit to working exclusively on this project for the next year?**
+
+Yes.
 
 **Do you have any other commitments between June through August 2015
 inclusive?**
 
+No.
+
 **Do you have any commitments in the future and if so what?**
+
+No.
