@@ -300,33 +300,35 @@ The Haverford School, GED, 2009
 
 **Employers, Position / Titles and Dates**
 
-* All Star Code
-* Curriculum Developer And Facilitator
-* Mar - Aug 2014
+```
+All Star Code
+Curriculum Developer And Facilitator
+Mar - Aug 2014
 
-* General Assembly
-* Instructor for the 12-Week Ruby on Rails Course
-* Sep - Dec 2013
+General Assembly
+Instructor for the 12-Week Ruby on Rails Course
+Sep - Dec 2013
 
-* Learners' House (bit.ly/learnershouse)
-* Creator
-* Dec 28 - Jan 7, 2014
+Learners' House (bit.ly/learnershouse)
+Creator
+Dec 28 - Jan 7, 2014
 
-* PennApps
-* Lead Organizer
-* 2010 - 2012
+PennApps
+Lead Organizer
+2010 - 2012
 
-* Penn Rent-A-CTO
-* Co-Founder and Consultant
-* 2011 - 2013
+Penn Rent-A-CTO
+Co-Founder and Consultant
+2011 - 2013
 
-* Perceptual Networks
-* Full Stack Intern
-* Jun - Aug 2012
+Perceptual Networks
+Full Stack Intern
+Jun - Aug 2012
 
-* Gobbler
-* Full Stack Intern
-* Jun - Aug 2011
+Gobbler
+Full Stack Intern
+Jun - Aug 2011
+```
 
 **Personal website**
 
