@@ -18,13 +18,16 @@ N/A
 
 **What will your organization do?**
 
-hackEDU is a non-profit initiative that works with high school students to
-start and lead coding clubs at their schools. We provide all the tools for
-starting and leading clubs including a baseline coding curriculum, free
-software tools, and community building training. Each club typically spans the
-school year, regularly meeting weekly or biweekly for between one and several
-hours. Clubs are led by high school hackers who want to bring the hackathon
-culture back to their schools.
+hackEDU is an international community of programming clubs. We think it's silly
+that students who love music can join band, students who love sports can join
+an athletic team, but students who want to learn to code have to go home and
+code alone. Our vision is that every high school in the country will offer
+programming clubs where students can build things (and learn to build things)
+with other like-minded students.
+
+As an organization, we do two things: (1) create and provide a club "playbook",
+a guide on building awesome programming clubs, and (2) grow, connect and manage
+our broader community.
 
 **Where do you live now, and where would the organization be based after YC?**
 
@@ -55,10 +58,24 @@ work, that two or more of you created together. Include urls if possible.**
 **How long have the founders known one another and how did you meet? Have any
 of the founders not met in person?**
 
+We've known each other since September 2014 (6 months) and met after a mutual
+friend introduced Zach, who had just won PennApps, the University of
+Pennsylvania's hackathon, to Jonathan, who was a former lead organizer of
+PennApps.
+
 **How far along are you?**
+
+We ran a pilot last semester with 25 schools and reached 1000 students, 35% of
+whom are female (2x national average) and 18% of whom are minorities in tech
+(3x national average). At MHacks V and PennApps X, the two largest collegiate
+hackathons with >1000 attendees from schools including Stanford, MIT, and
+Harvard, half of the winning teams were led by high school students, all of
+whom are part of their local hackEDU chapter.
 
 **If you've already started working on it, how long have you been working and
 how many lines of code (if applicable) have you written?**
+
+We've been working on hackEDU full-time for 5 months.
 
 **Which of the following best describes your progress?**
 
@@ -66,37 +83,57 @@ how many lines of code (if applicable) have you written?**
 * [ ] Sketches
 * [ ] Mocks / Renderings
 * [ ] Prototype
-* [ ] Private Beta
+* [x] Private Beta
 * [ ] Public Beta
 * [ ] Taking Preorders
 * [ ] Launched
 
 **Do you have revenue?**
 
-* [ ] No
+* [x] No
 * [ ] Yes
 
 **If you've applied previously with the same idea, how much progress have you
 made since the last time you applied? Anything change?**
 
+We ran our planned 25 school pilot, reaching 1,000 students, had Jonathan join
+as a co-founder, and brought on a full-time volunteer as well as two part-time
+volunteers.
+
 **If you have already participated or committed to participate in an incubator,
 "accelerator" or "pre-accelerator" program, please tell us about it.**
 
-**Why did you pick this idea to work on? Do you have domain expertise in this area? How do you know this is going to work?**
+We have not.
+
+**Why did you pick this idea to work on? Do you have domain expertise in this
+area? How do you know this is going to work?**
 
 **What's new about what you plan to do?**
 
 **Have you incorporated, or formed any legal entity (like an LLC) yet?**
 
+Yes.
+
 **What kind of entity and in what state or country was the entity formed?**
+
+hackEDU is incorporated in the state of Delaware as a non-stock non-profit
+corporation.
 
 **If you're already incorporated, when were you? If you've had funding, how
 much and from whom?**
 
+HackEDU was incorporated in January of 2014. We've secured a small amount
+($10k) of funding from various corporate sponsors.
+
 **Have you obtained your 501(c)(3) tax-exempt status yet?**
+
+We have not, but are in the final stages of closing a fiscal sponsor and are in
+the application process.
 
 **Please provide any other relevant information about the structure or
 formation of the company.**
+
+N/A
 
 **Are any of the following true?**
 
@@ -106,7 +143,7 @@ formation of the company.**
 * One or more founders will keep their current jobs.
 
 * [ ] Yes
-* [ ] No
+* [x] No
 
 **If you had any other ideas you considered applying with, please list them.
 One may be something we've been waiting for.**
@@ -114,9 +151,15 @@ One may be something we've been waiting for.**
 **Please tell us something surprising or amusing that one of you has
 discovered. (The answer need not be related to your project.)**
 
+`fortune | cowsay | lolcat` speaks volumes of truth.
+
 **What convinced you to apply to Y Combinator?**
 
+Engaging with the community on Hacker News and meeting several YC founders.
+
 **How did you hear about Y Combinator?**
+
+Hacker News.
 
 ### Founder Profiles
 
