@@ -1,0 +1,45 @@
+Fundraising Notes
+=================
+
+* We have just over two weeks to get $50k in the bank.
+* I predict the best way to do this is approach a number of private donors.
+  * How do I identify a good potential private donor?
+    * Similar contributions in the past?
+      * Of what amount should we target? (range has been $5k-$10m)
+* Make a list of potential private donors to reach out to.
+  * Create a spreadsheet of people, with links to our Pipedrive entry for them.
+    * Spreadsheet should have our connection with them, if any.
+      * Could write out our method of reaching out to them (cold email, warm
+        connection) and the strategy we're using to market to them (hackathon
+        culture continuation, empowerment/changemaker, etc)
+* Reach out to them and be very aggressive in the sales process.
+* What goes next? Should I make the ask in the first call? Should I make the
+  ask before like in Quinn's email?
+* Somehow close them and get money in the bank so we can actually do real
+  things.
+
+Questions for similar nonprofits
+--------------------------------
+
+* How much do you usually close a private donor for?
+  * How much have they contributed to other (similar?) initiatives in the past?
+* What's the process of closing a donor after that initial conversation?
+
+Reflection on past progress (or lack thereof)
+---------------------------------------------
+
+* We wasted a lot of time trying to close our first fiscal sponsor.
+  * We shouldn't have spent so much time thinking about how we best wanted to
+    accept donations. We took too long and now we can't get money from one of
+    our sponsors because we don't yet have a fiscal sponsor aligned.
+  * We should have immediately gone to another local nonprofit and approached
+    them about being our fiscal sponsor instead of looking at the application
+    process for different foundations, especially knowing that they'd take
+    weeks to process.
+* I failed to not notice this in the moment and tried to keep "making
+  progress", even thought we didn't know what "progress" was.
+  * I should do a better job separating what we tell people to what is actually
+    happening in my head. I think telling people that things were great got
+    into my head and started to convince me that they were going well and we
+    were progressing.
+    * It is paramount that I don't let this happen again.
