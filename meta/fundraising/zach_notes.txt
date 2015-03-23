@@ -48,3 +48,7 @@ Reflection on past progress (or lack thereof)
     into my head and started to convince me that they were going well and we
     were progressing.
     * It is paramount that I don't let this happen again.
+* It's interesting how I learn by observation. I learned that file extensions
+  don't actually mean anything and are just a string by using Linux and
+  realizing that instead of being told/taught. I'll eventually get better at
+  fundraising.
