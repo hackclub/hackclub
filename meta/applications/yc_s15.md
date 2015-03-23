@@ -31,7 +31,7 @@ our broader community.
 
 **Where do you live now, and where would the organization be based after YC?**
 
-We're currently in San Francisco and plan to remain here.
+SF. SF.
 
 **Email address we should contact you at**
 
@@ -108,7 +108,29 @@ We have not.
 **Why did you pick this idea to work on? Do you have domain expertise in this
 area? How do you know this is going to work?**
 
+During his first year of high school, Zach started a programming club because
+he wanted a community of other programmers at his school. By the end of the 2nd
+year, the students in his club launched games on the Android Play Store, won
+high-profile hackathons, founded a web design firm that landed real clients,
+and secured over $30,000 in investment. After meeting other high school students
+who had also started programming clubs, he decided to start hackEDU. Being 17,
+he is the age of our target demographic and has made himself a leader in the
+wider high school programming community. Zach runs HS Hackers, the largest
+online community for high school developers (Facebook shared a
+[post](https://www.facebookstories.com/stories/112524/building-a-community-for-high-schoolers-who-code)
+about it to 2.3m users).
+
 **What's new about what you plan to do?**
+
+* Instead of focusing on teaching a set curriculum at hack clubs, hackEDU
+  focuses on building all-inclusive families where members hack on things
+  together.
+* hackEDU chapters are led by high school students themselves, so starting a
+  new club is just as difficult as creating a movie or volunteer club
+  (generally a one-page form filed with the school and the commitment of a
+  teacher sponsor). This also abstracts us away from a direct service model
+  that's limited to scaling linearly (similar to how Airbnb doesn't own any real
+  estate, we don't have any chapter leaders on staff).
 
 **Have you incorporated, or formed any legal entity (like an LLC) yet?**
 
@@ -167,40 +189,91 @@ Hacker News.
 
 **Name**
 
+Zach Latta
+
 **Email Address**
+
+zach@hackedu.us
 
 **Age**
 
+17
+
 **Gender**
+
+Male
 
 **Schools, Degrees and Years of Graduation**
 
+* El Segundo High School, 2014
+* West Los Angeles College, N/A
+
 **Employers, Position / Titles and Dates**
+
+* Yo, Lead Backend Engineer, July 2014 - September 2014
+* Grasp, Technical Lead, June 2013 - January 2014
+* Run Games, Junior Programmer, February 2013 - February 2014
 
 **Personal website**
 
+http://zachlatta.com
+
 **Github URL**
+
+https://github.com/zachlatta
 
 **Linkedin URL**
 
+https://www.linkedin.com/in/zachlatta
+
 **Facebook URL**
 
+https://facebook.com/crynix
+
 **Twitter URL**
+
+https://twitter.com/zachlatta
 
 **Please tell us about the time you most successfully hacked some
 (non-computer) system to your advantage.**
 
+I hacked my high school education. I exploited a loophole in the California
+K-12 education system to get twice the credits in half the time.  College
+credits count for twice the amount of high school credits and for core classes,
+like language, count for four times the credits. By taking college level
+classes full-time, I could have graduated in two years--but I ended up testing
+out anyway in one and a half instead.
+
 **Please tell us in one or two sentences about the most impressive thing other
 than this startup that you have built or achieved.**
 
+In my freshman year of high school, I joined Run Games as the first employee
+and brought our game from an early prototype to launching in the App Store and
+getting over one million users. We reached #5 in the top free charts, #1 in
+games, #1 in sports, #1 in arcade, and were featured by Apple on the front page
+of the App Store.
+
+Other potentials:
+
+* PennApps, youngest winner
+* CTO of Yo
+
 **Will you live in the Bay Area June through August 2015, if we fund you?**
 
+Yes.
+
 **Will you commit to working exclusively on this project for the next year?**
+
+Yes.
 
 **Do you have any other commitments between June through August 2015
 inclusive?**
 
+No.
+
 **Do you have any commitments in the future and if so what?**
+
+No.
 
 #### Jonathan Leung
 
