@@ -2,7 +2,7 @@
 
 The documentation repository for [hackEDU](http://hackedu.us).
 
-![image](http://f.cl.ly/items/433h2N2d2Y3d0W1a3T27/Image%202015-02-06%20at%2012.21.45%20PM.png)
+<img src="https://raw.githubusercontent.com/hackedu/dinosaurs/7885249e012db17facd18f49f4931aa91422113d/smart_dinosaur_docs.png" width="200" align="right">
 
 ## About
 
