@@ -17,4 +17,4 @@ really helps us start more programming clubs with the best tools available.
 
 Let me know what you think, it would make a huge difference for us!
 
-- Zach
+\- [name]
