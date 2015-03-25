@@ -6,6 +6,8 @@ Fundraising Notes
   * How do I identify a good potential private donor?
     * Similar contributions in the past?
       * Of what amount should we target? (range has been $5k-$10m)
+  * I should email as many people as physically possible until I get so many
+    responses I can't send any more outbound.
 * Make a list of potential private donors to reach out to.
   * Create a spreadsheet of people, with links to our Pipedrive entry for them.
     * Spreadsheet should have our connection with them, if any.
@@ -23,12 +25,18 @@ Fundraising Notes
   Focusing on the former will likely teach us the latter when we do more
   fundraising in the future.
 
-Questions for similar nonprofits
---------------------------------
+Questions
+---------
 
 * How much do you usually close a private donor for?
-  * How much have they contributed to other (similar?) initiatives in the past?
+  * Grace
+* How much has the average private donor contributed to other (similar?)
+  initiatives in the past? Is this a number we should be cogniscient of?
+  * Grace
 * What's the process of closing a donor after that initial conversation?
+  * Grace
+  * Pierre
+  * Andrew
 
 Reflection on past progress (or lack thereof)
 ---------------------------------------------
