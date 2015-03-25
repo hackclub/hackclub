@@ -1,6 +1,6 @@
 Hi [name],
 
-I saw you had participated in [thing] and wanted to reach out.
+I saw your involvement in [thing] and wanted to reach out.
 
 (OR POTENTIALLY LIST MUTUAL CONTACTS, SPECIFICALLY WHY YOU REACHED OUT TO THEM)
 
@@ -14,9 +14,9 @@ students can code (and learn to code) with other like-minded students.
 Until now we've bootstrapped this with $0 in donations. I dropped out of high
 school in LA and moved to SF to grow this starting full-time ~5 months ago, and
 we've funded it so far by doing contract programming work. We're working on our
-501(c)3 and could start writing grant proposals, but we've heard from a number
-of folks like you that this vision really resonates with them and that grant
-writing will just slow us down.
+501(c)(3) status and could start writing grant proposals, but we've heard from
+a number of folks like you that this vision really resonates with them and that
+grant writing will just slow us down.
 
 So that's why we're reaching out directly to ask for your help scaling this up,
 to grow this to more schools and give the clubs more operational and financial
