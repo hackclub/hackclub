@@ -2,9 +2,9 @@
 
 The documentation repository for [hackEDU](http://hackedu.us).
 
-<img src="https://raw.githubusercontent.com/hackedu/dinosaurs/7885249e012db17facd18f49f4931aa91422113d/smart_dinosaur_docs.png" width="200" align="right">
-
 ## About
+
+<img src="https://raw.githubusercontent.com/hackedu/dinosaurs/7885249e012db17facd18f49f4931aa91422113d/smart_dinosaur_docs.png" width="200" align="right">
 
 [hackEDU](http://hackedu.us) helps high school students start and lead
 programming clubs to create the next generation of hackers. 
