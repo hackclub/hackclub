@@ -18,16 +18,14 @@ N/A
 
 **What will your organization do?**
 
-hackEDU is an international community of programming clubs. We think it's silly
-that students who love music can join band, students who love sports can join
-an athletic team, but students who want to learn to code have to go home and
-code alone. Our vision is that every high school in the country will offer
-programming clubs where students can build things (and learn to build things)
-with other like-minded students.
+hackEDU will create a programming club at every high school in America.
 
-As an organization, we do two things: (1) create and provide a club "playbook",
-a guide on building awesome programming clubs, and (2) grow, connect and manage
-our broader community.
+We think it's tragic that students who love music can join band, students who
+love sports can join an athletic team, but students who code (or might be
+interested in learning) have to go home and build things alone. In our clubs we
+create communities for the builders (and potential builders) in high school.
+
+[TODO add why/implications]
 
 **Where do you live now, and where would the organization be based after YC?**
 
@@ -55,22 +53,84 @@ introducing the founders.**
 **Please tell us about an interesting project, preferably outside of class or
 work, that two or more of you created together. Include urls if possible.**
 
+We wrote a script that exploits referral codes to order food and delivery for
+less than $2 per meal. We've been using it nearly every weekday since November
+to cut costs. 
+
+https://github.com/zachlatta/2-dollar-dinosaurs
+
 **How long have the founders known one another and how did you meet? Have any
 of the founders not met in person?**
 
 We've known each other since September 2014 (6 months) and met after a mutual
 friend introduced Zach, who had just won PennApps, the University of
 Pennsylvania's hackathon, to Jonathan, who was a former lead organizer of
-PennApps.
+PennApps. After neither of us replied to the initial introduction, our friend
+send another email making sure we met because he thought we were such perfect
+fitting puzzle pieces.
 
 **How far along are you?**
 
-We ran a pilot last semester with 25 schools and reached 1000 students, 35% of
-whom are female (2x national average) and 18% of whom are minorities in tech
-(3x national average). At MHacks V and PennApps X, the two largest collegiate
-hackathons with >1000 attendees from schools including Stanford, MIT, and
-Harvard, half of the winning teams were led by high school students, all of
-whom are part of their local hackEDU chapter.
+We ran a pilot last semester with 25 schools and reached 1000 students. This
+week we onboarded an additional 13 schools, expanding our reach to 1300
+students. 32% of our members are female (nearly 2x national average) and 37%
+are minorities in tech (7x national average).
+
+At MHacks V and PennApps X, the two largest collegiate hackathons with >1000
+attendees flown in from schools including Stanford, MIT, and Harvard, half of
+the winning teams were led by high school students, all of whom are part of
+their local hackEDU chapter.
+
+Running a programming club has been such an empowering experience for Amy
+Sorto, one of our club leaders from New Jersey, she decided to put together a
+summer camp to teach 24 girls in middle school how to code. She's already
+secured a blank check from Panasonic, laptop donations from Codestarter, and a
+venue in Newark.
+
+Some of the things that our club leaders have been saying:
+
+> hackEDU has given me the confidence and resources to lead my club. The
+> students in my club have learned many skills and some students have even gone
+> to hackathons and won prizes! It is an incredible feeling to know that I am
+> making a difference in my school and community.
+
+Amy Sorto
+
+Junior at Elizabeth High School
+
+Elizabeth, NJ
+
+> This is my club's first year and it's been leaps and bounds better than
+> expected. Over the course of the year our more than 80 members have made games
+> and websites, participated in hackathons, and have volunteered at a local
+> middle school for their hour of code. I started my club after talking to the
+> hackEDU guys and can say it wouldn't be a reality if they weren't around.
+
+Raphael Kats
+
+Senior at Mundelein High School
+
+Mundelein, IL
+
+> Leading a hack club in Austin allowed me to start a technology community at my
+> high school and make great friends while learning tons.
+
+Luke Wright
+
+Junior Austin High School
+
+Austin, TX
+
+> hackEDU has connected me to a network of people who have years of experience
+> in the domain that I'm in. They have connected me to people and more over
+> ideas on how best to do what I do, to inspire kids to build the next
+> generation of technology.
+
+Taylor Blau
+
+Junior at Cranbrook Schools
+
+Bloomfield Township, MI
 
 **If you've already started working on it, how long have you been working and
 how many lines of code (if applicable) have you written?**
@@ -96,6 +156,18 @@ We've been working on hackEDU full-time for 5 months.
 **If you've applied previously with the same idea, how much progress have you
 made since the last time you applied? Anything change?**
 
+TODO: Talk to Beyang about this question
+
+* Figure out what he means by age
+  * Explicitly address that last time we heard that age was a factor
+    * We're extremely committed to this and plan to work on this for a very
+      long time.
+    * We've arrived at the point of our interest with this.
+  * Perhaps adding a cofounder who's a bit older(y)
+  * Show that I'm not going to decide and go to college in a bit.
+    * Geoff is saying this because he's probably already seen this already play
+      out.
+
 We ran our planned 25 school pilot, reaching 1,000 students, had Jonathan join
 as a co-founder, and brought on a full-time volunteer as well as two part-time
 volunteers.
@@ -107,6 +179,8 @@ We have not.
 
 **Why did you pick this idea to work on? Do you have domain expertise in this
 area? How do you know this is going to work?**
+
+* Zach wanted a community
 
 During his first year of high school, Zach started a programming club because
 he wanted a community of other programmers at his school. By the end of the 2nd
@@ -252,11 +326,6 @@ and brought our game from an early prototype to launching in the App Store and
 getting over one million users. We reached #5 in the top free charts, #1 in
 games, #1 in sports, #1 in arcade, and were featured by Apple on the front page
 of the App Store.
-
-Other potentials:
-
-* PennApps, youngest winner
-* CTO of Yo
 
 **Will you live in the Bay Area June through August 2015, if we fund you?**
 
