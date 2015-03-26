@@ -94,10 +94,8 @@ Some of the things that our club leaders have been saying:
 > to hackathons and won prizes! It is an incredible feeling to know that I am
 > making a difference in my school and community.
 
-Amy Sorto
-
-Junior at Elizabeth High School
-
+Amy Sorto  
+Junior at Elizabeth High School  
 Elizabeth, NJ
 
 > This is my club's first year and it's been leaps and bounds better than
@@ -106,19 +104,15 @@ Elizabeth, NJ
 > middle school for their hour of code. I started my club after talking to the
 > hackEDU guys and can say it wouldn't be a reality if they weren't around.
 
-Raphael Kats
-
-Senior at Mundelein High School
-
+Raphael Kats  
+Senior at Mundelein High School  
 Mundelein, IL
 
 > Leading a hack club in Austin allowed me to start a technology community at my
 > high school and make great friends while learning tons.
 
-Luke Wright
-
-Junior Austin High School
-
+Luke Wright  
+Junior Austin High School  
 Austin, TX
 
 > hackEDU has connected me to a network of people who have years of experience
@@ -126,10 +120,8 @@ Austin, TX
 > ideas on how best to do what I do, to inspire kids to build the next
 > generation of technology.
 
-Taylor Blau
-
-Junior at Cranbrook Schools
-
+Taylor Blau  
+Junior at Cranbrook Schools  
 Bloomfield Township, MI
 
 **If you've already started working on it, how long have you been working and
