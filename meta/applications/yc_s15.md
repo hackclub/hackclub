@@ -191,12 +191,14 @@ requiring us to recruit volunteers or maintain partnerships with schools.
 hackEDU chapters are autonomous and led by high school students themselves.
 Starting a new chapter is just as easy as creating a chess or film club
 (generally a one-page form with the school and the commitment of a teacher
-sponsor). When we talked with a former employee of CodeNow, they said that the
-process of forming a partnership with a school and reaching its students took
-2-3 months of full-time work. Our model allows us to avoid all of that work and
-skip the red-tape and bureaucracy of partnering with schools. This is similar
-to Airbnb's model of not having hosts on staff or owning property, allowing us
-to scale in-person coding education which is something we haven't seen done
+sponsor).
+
+When we talked with a former employee of CodeNow, they said that the process of
+forming a partnership with a school and reaching its students took 2-3 months
+of full-time work. Our model allows us to avoid all of that work and skip the
+red-tape and bureaucracy of partnering with schools. This is similar to
+Airbnb's model of not having hosts on staff or owning property, allowing us to
+scale in-person coding education which is something we haven't seen done
 before.
 
 **Have you incorporated, or formed any legal entity (like an LLC) yet?**
