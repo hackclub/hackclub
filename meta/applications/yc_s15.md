@@ -25,7 +25,8 @@ love sports can join an athletic team, but students who code (or might be
 interested in learning) have to go home and build things alone. In our clubs we
 create communities for the builders (and potential builders) in high school.
 
-[TODO add why/implications]
+We want to create 2,500 Amy Sortos at schools around the country (keep reading
+to see who she is and why this would be so amazing).
 
 **Where do you live now, and where would the organization be based after YC?**
 
@@ -65,9 +66,7 @@ of the founders not met in person?**
 We've known each other since September 2014 (6 months) and met after a mutual
 friend introduced Zach, who had just won PennApps, the University of
 Pennsylvania's hackathon, to Jonathan, who was a former lead organizer of
-PennApps. After neither of us replied to the initial introduction, our friend
-send another email making sure we met because he thought we were such perfect
-fitting puzzle pieces.
+PennApps.
 
 **How far along are you?**
 
@@ -78,8 +77,8 @@ are minorities in tech (7x national average).
 
 At MHacks V and PennApps X, the two largest collegiate hackathons with >1000
 attendees flown in from schools including Stanford, MIT, and Harvard, half of
-the winning teams were led by high school students, all of whom are part of
-their local hackEDU chapter.
+the winning teams were led by high school students. All of the winning high
+school teams were led by a hackEDU hacker. 
 
 Running a programming club has been such an empowering experience for Amy
 Sorto, one of our club leaders from New Jersey, she decided to put together a
@@ -87,7 +86,7 @@ summer camp to teach 24 girls in middle school how to code. She's already
 secured a blank check from Panasonic, laptop donations from Codestarter, and a
 venue in Newark.
 
-Some of the things that our club leaders have been saying:
+Here are some of the things that our club leaders have been saying:
 
 > hackEDU has given me the confidence and resources to lead my club. The
 > students in my club have learned many skills and some students have even gone
@@ -142,27 +141,23 @@ We've been working on hackEDU full-time for 5 months.
 
 **Do you have revenue?**
 
-* [x] No
-* [ ] Yes
+* [ ] No
+* [x] Yes
 
 **If you've applied previously with the same idea, how much progress have you
 made since the last time you applied? Anything change?**
 
-TODO: Talk to Beyang about this question
+Last time we applied we got the feedback that Zach's age was a worrying factor.
+Since then, we've brought on Jonathan (24), to the team and have made
+significant progress towards our vision. Both of us are extremely committed to
+hackEDU and plan to work on this for a very long time, with or without YC. Zach
+does not plan to go to college.
 
-* Figure out what he means by age
-  * Explicitly address that last time we heard that age was a factor
-    * We're extremely committed to this and plan to work on this for a very
-      long time.
-    * We've arrived at the point of our interest with this.
-  * Perhaps adding a cofounder who's a bit older(y)
-  * Show that I'm not going to decide and go to college in a bit.
-    * Geoff is saying this because he's probably already seen this already play
-      out.
+Additionally, since last applying, we:
 
-We ran our planned 25 school pilot, reaching 1,000 students, had Jonathan join
-as a co-founder, and brought on a full-time volunteer as well as two part-time
-volunteers.
+* Ran our planned 25 school pilot (5 of the original 30 planned schools
+  dropped), onboarded 13 additional schools, and reached over 1,300 students.
+* Brought on a full-time volunteer and two part-time volunteers.
 
 **If you have already participated or committed to participate in an incubator,
 "accelerator" or "pre-accelerator" program, please tell us about it.**
@@ -172,31 +167,37 @@ We have not.
 **Why did you pick this idea to work on? Do you have domain expertise in this
 area? How do you know this is going to work?**
 
-* Zach wanted a community
+TODO
 
-During his first year of high school, Zach started a programming club because
-he wanted a community of other programmers at his school. By the end of the 2nd
-year, the students in his club launched games on the Android Play Store, won
-high-profile hackathons, founded a web design firm that landed real clients,
-and secured over $30,000 in investment. After meeting other high school students
-who had also started programming clubs, he decided to start hackEDU. Being 17,
-he is the age of our target demographic and has made himself a leader in the
-wider high school programming community. Zach runs HS Hackers, the largest
-online community for high school developers (Facebook shared a
-[post](https://www.facebookstories.com/stories/112524/building-a-community-for-high-schoolers-who-code)
-about it to 2.3m users).
+* When in high school, Zach wanted a community of other people to build things
+  with at his school.
+  * He wanted this because x, y, and z (ask Jonathan why communities are
+    important).
+* He started a programming club to create this community. By the end of its 2nd
+  year, the members of his club launched games on the Play Store, won
+  high-profile hackathons, founded a web design firm, and secured over $30,000 in
+  investment.
+* After meeting other high school students who had also started programming
+  club, he decided to start hackEDU. Being 17, he is the age of our target
+  demographic and has made himself a leader in the high school programming
+  community. Zach runs HS Hackers, the largest online community for high school
+  developers (Facebook shared a post about it to 2.3 million readers
+  https://www.facebookstories.com/stories/112524/building-a-community-for-high-schoolers-who-code).
 
 **What's new about what you plan to do?**
 
-* Instead of focusing on teaching a set curriculum at hack clubs, hackEDU
-  focuses on building all-inclusive families where members hack on things
-  together.
-* hackEDU chapters are led by high school students themselves, so starting a
-  new club is just as difficult as creating a movie or volunteer club
-  (generally a one-page form filed with the school and the commitment of a
-  teacher sponsor). This also abstracts us away from a direct service model
-  that's limited to scaling linearly (similar to how Airbnb doesn't own any real
-  estate, we don't have any chapter leaders on staff).
+We provide a framework that enables people to start their own clubs without
+requiring us to recruit volunteers or maintain partnerships with schools.
+hackEDU chapters are autonomous and led by high school students themselves.
+Starting a new chapter is just as easy as creating a chess or film club
+(generally a one-page form with the school and the commitment of a teacher
+sponsor). When we talked with a former employee of CodeNow, they said that the
+process of forming a partnership with a school and reaching its students took
+2-3 months of full-time work. Our model allows us to avoid all of that work and
+skip the red-tape and bureaucracy of partnering with schools. This is similar
+to Airbnb's model of not having hosts on staff or owning property, allowing us
+to scale in-person coding education which is something we haven't seen done
+before.
 
 **Have you incorporated, or formed any legal entity (like an LLC) yet?**
 
