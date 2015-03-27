@@ -63,10 +63,10 @@ https://github.com/zachlatta/2-dollar-dinosaurs
 **How long have the founders known one another and how did you meet? Have any
 of the founders not met in person?**
 
-We've known each other since September 2014 (6 months) and met after a mutual
-friend introduced Zach, who had just won PennApps, the University of
-Pennsylvania's hackathon, to Jonathan, who was a former lead organizer of
-PennApps.
+We've known each other since September 2014 (6 months) have been living
+together since November. We met after a mutual friend introduced Zach, who had
+just won PennApps, the University of Pennsylvania's hackathon, to Jonathan, who
+was a former lead organizer of PennApps.
 
 **How far along are you?**
 
