@@ -23,7 +23,14 @@ hackEDU will create a programming club at every high school in America.
 We think it's tragic that students who love music can join band, students who
 love sports can join an athletic team, but students who code (or might be
 interested in learning) have to go home and build things alone. In our clubs we
-create communities for the builders (and potential builders) in high school.
+create communities for the builders (and potential builders) in high school. We
+do this through providing a "club in a box"--a "plug-and-play" framework for
+high school students starting successful and autonomous clubs, which we're
+currently in the process of building. The box will include club leader
+training, sample projects, development tools, resources, and best practices for
+high school students wanting to start clubs. Moreover, we build and orchestrate
+a vibrant community between our clubs and the larger hacking community through
+online social media and in-person events.
 
 We want to create 2,500 Amy Sortos at schools around the country (keep reading
 to see who she is and why this would be so amazing).
@@ -51,6 +58,8 @@ themselves.**
 **Please enter the url of a 1 minute unlisted (not private) YouTube video
 introducing the founders.**
 
+https://youtu.be/RxdJ2zDuiV0
+
 **Please tell us about an interesting project, preferably outside of class or
 work, that two or more of you created together. Include urls if possible.**
 
@@ -63,28 +72,27 @@ https://github.com/zachlatta/2-dollar-dinosaurs
 **How long have the founders known one another and how did you meet? Have any
 of the founders not met in person?**
 
-We've known each other since September 2014 (6 months) have been living
+We've known each other since September 2014 (7 months) and have been living
 together since November. We met after a mutual friend introduced Zach, who had
 just won PennApps, the University of Pennsylvania's hackathon, to Jonathan, who
 was a former lead organizer of PennApps.
 
 **How far along are you?**
 
-We ran a pilot last semester with 25 schools and reached 1000 students. This
-week we onboarded an additional 13 schools, expanding our reach to 1300
-students. 32% of our members are female (nearly 2x national average) and 37%
-are minorities in tech (7x national average).
+We're currently running a pilot with 38 schools and have reached 1300 students.
+32% of our members are female (nearly 2x national average) and 37% are
+minorities in tech (7x national average).
 
 At MHacks V and PennApps X, the two largest collegiate hackathons with >1000
 attendees flown in from schools including Stanford, MIT, and Harvard, half of
 the winning teams were led by high school students. All of the winning high
-school teams were led by a hackEDU hacker. 
+school teams were led by a hackEDU hacker.
 
 Running a programming club has been such an empowering experience for Amy
 Sorto, one of our club leaders from New Jersey, she decided to put together a
 summer camp to teach 24 girls in middle school how to code. She's already
 secured a blank check from Panasonic, laptop donations from Codestarter, and a
-venue in Newark.
+donated venue in Newark.
 
 Here are some of the things that our club leaders have been saying:
 
@@ -149,15 +157,19 @@ made since the last time you applied? Anything change?**
 
 Last time we applied we got the feedback that Zach's age was a worrying factor.
 Since then, we've brought on Jonathan (24), to the team and have made
-significant progress towards our vision. Both of us are extremely committed to
-hackEDU and plan to work on this for a very long time, with or without YC. Zach
-does not plan to go to college.
+significant progress in shaping and working towards our vision. Both of us are
+extremely committed to hackEDU and plan to work on this for a very long time,
+with or without YC. Zach does not plan to go to college.
 
 Additionally, since last applying, we:
 
 * Ran our planned 25 school pilot (5 of the original 30 planned schools
   dropped), onboarded 13 additional schools, and reached over 1,300 students.
+  * A majority of the students from every one of our 13 additional schools are
+    on free or reduced lunch.
 * Brought on a full-time volunteer and two part-time volunteers.
+
+We have also secured a small amount of funding (~$10k).
 
 **If you have already participated or committed to participate in an incubator,
 "accelerator" or "pre-accelerator" program, please tell us about it.**
@@ -184,16 +196,18 @@ HS Hackers currently has 5,000 members from over 1000 schools, nearly every
 state, and over 90 countries.
 
 Jonathan has been teaching programming since high school and helped create the
-hacking movement at Penn through being one of the lead organizers of PennApps.
-Jonathan realized he cared deeply about empowering others to become creators.
-To develop this craft, Jonathan taught the 12 week Ruby on Rails bootcamp at at
-General Assembly and most recently designed and ran a 6 week summer immersive
-at All Star Code for high schoolers. At All Star Code, Jonathan took students
-from not knowing how to code, to building web apps, hacking hardware, and
-organizing a hackathon for the top high school hackers in NYC. Zach was the
-first person Jonathan met who was as obsessed with this as he was. hackEDU's
-model of students teaching their peers speaks to his passion for student
-empowerment. That's why he's all in.
+hacking movement at Penn, where he was one of the lead PennApps organizers and
+grew it from 80 to >1000 hackers. Jonathan realized he cared deeply about
+empowering others and began to feel how liberating the idea of "Everything
+around you that you call life, was made up by people that were no smarter than
+you." he couldn't help but share it. To pursue this, Jonathan taught the 12
+week Ruby on Rails bootcamp at at General Assembly and most recently designed
+and ran a 6 week summer immersive at All Star Code for high schoolers where he
+continued to be inspired by his students.
+
+Zach was the first person Jonathan met who was as obsessed with this as he was.
+hackEDU's model of students teaching their peers speaks to his passion for
+student empowerment. That's why he's all in.
 
 **What's new about what you plan to do?**
 
@@ -204,13 +218,13 @@ Starting a new chapter is just as easy as creating a chess or film club
 (generally a one-page form with the school and the commitment of a teacher
 sponsor).
 
-When we talked with a former employee of CodeNow, they said that the process of
-forming a partnership with a school and reaching its students took 2-3 months
-of full-time work. Our model allows us to avoid all of that work and skip the
-red-tape and bureaucracy of partnering with schools. This is similar to
-Airbnb's model of not having hosts on staff or owning property, allowing us to
-scale in-person coding education which is something we haven't seen done
-before.
+When we talked with a former employee of a comparable organization, they said
+that the process of forming a partnership with a school and reaching its
+students took 2-3 months of full-time work. Our model allows us to avoid all of
+that work and skip the red-tape and bureaucracy of partnering with schools.
+This is similar to Airbnb's model of not having hosts on staff or owning
+property, allowing us to scale in-person coding education which is something we
+haven't seen done before.
 
 **Have you incorporated, or formed any legal entity (like an LLC) yet?**
 
@@ -257,7 +271,8 @@ discovered. (The answer need not be related to your project.)**
 
 **What convinced you to apply to Y Combinator?**
 
-Engaging with the community on Hacker News and meeting several YC founders.
+Engaging with the community on Hacker News and meeting several of the partners
+and many YC founders, many of whom encouraged us and helped us apply.
 
 **How did you hear about Y Combinator?**
 
@@ -376,6 +391,10 @@ The Haverford School, GED, 2009
 **Employers, Position / Titles and Dates**
 
 ```
+PennApps
+Lead Organizer
+2010 - 2012
+
 All Star Code
 Curriculum Developer And Facilitator
 Mar - Aug 2014
@@ -384,21 +403,14 @@ General Assembly
 Instructor for the 12-Week Ruby on Rails Course
 Sep - Dec 2013
 
-Learners' House (bit.ly/learnershouse)
-Creator
-Dec 28 - Jan 7, 2014
-
-PennApps
-Lead Organizer
-2010 - 2012
-
-Penn Rent-A-CTO
-Co-Founder and Consultant
-2011 - 2013
-
 Perceptual Networks
 Full Stack Intern
 Jun - Aug 2012
+
+Learners' House
+learnershouse.org
+Creator
+Dec 28 - Jan 7, 2014
 
 Gobbler
 Full Stack Intern
@@ -428,36 +440,38 @@ https://twitter.com/jonathanjleung
 **Please tell us about the time you most successfully hacked some
 (non-computer) system to your advantage.**
 
-While organizing PennApps in 2011, I thought it would be compelling for
-participants for participants if we could pay for their transportation to our
-hackathon. I thought that we would be able to convince MegaBus to be our
-"official transportation sponsor" because hackathon goers fit their demographic
-of "young persons likely to want travel between large cities cheaply while
-using wi-fi". They were interested but hesitant because they didn't want to
-associate themselves with all the "hackers" and all the "hacking" that was
-happening in the news.
+I set the status quo for hackathons to provide transportation reimbursement by
+"hacking" MegaBus's perception of hackathons.
+
+While organizing PennApps in 2011, I wanted MegaBus to become our "official
+transportation sponsor". They were interested but afraid of associating
+themselves with the "hackers" in the news.
 
 To alleviate their concerns, I innocently sent them the link to the Wikipedia
 entry for Hackathon--after I added this: 'Although "hack" is in the root of
 hackathon, hackathons have nothing to do with malicious "hacking" done by
 hackers, rather the spirit of a hackathon is to collaboratively build programs
-and applications.'
+and applications.' [1]
 
-http://en.wikipedia.org/w/index.php?title=Hackathon&diff=442741932&oldid=437209790
+By convincing Megabus to sponsor us by "hacking" Wikipedia page, PennApps set
+the status quo for the hackathon transportation reimbursement.
 
-By convincing Megabus to sponsor us by "hacking" Wikipedia page, we set the
-status quo for hackathons for free transportation.
+[1] http://en.wikipedia.org/w/index.php?title=Hackathon&diff=442741932&oldid=437209790
 
 **Please tell us in one or two sentences about the most impressive thing other
 than this startup that you have built or achieved.**
 
-This past summer, I designed and executed a 6-week summer immersion program
-focused on catalyzing empowerment for high school students at All Star Code
-that took students from 0 to webapps like a real-time multiplayer asteroids
-game. After the program, I was proud that students banded together on their own
-initiative to throw the Breaking Barriers Hackathon, which they got Google and
-Twilio to sponsor and and over 100 of the top high school hackers in NYC to
-attend.
+This past summer I created and taught a curriculum that took 20 high school
+students, many of whom lacked confidence, technical ability, and initiative,
+and turned them into hackers. After the program, some of my students went on to
+start their own non-profit that organizes hackathons in NYC, one of which
+Jeremy Rossman, founder of Make School, called "one of the best hackathons
+[he's] been to".
+
+> Jonathan, thank you for all you've taught me. Now I feel like wherever life
+> takes me, I'll be more than okay.
+
+Austin Carvey, friend and former student
 
 **Will you live in the Bay Area June through August 2015, if we fund you?**
 
