@@ -167,22 +167,33 @@ We have not.
 **Why did you pick this idea to work on? Do you have domain expertise in this
 area? How do you know this is going to work?**
 
-TODO
+When in high school, Zach wanted a community of other people to build things
+with at his school because he didn't feel a sense of belonging. He started a
+programming club to create this community. By the end of its 2nd year, the
+members of his club launched games on the Android Play Store, won high-profile
+hackathons, founded a web design firm, and secured over $30,000 in investment.
+After meeting other high school students who had also started programming
+clubs, he decided to start hackEDU to scale the model. Being 17, he is the age
+of our target demographic and has made himself a leader in the high school
+programming community. In addition to being an avid participant in hackathons
+(over 20 this past year), Zach runs HS Hackers, the largest global online
+community for high school hackers (Facebook shared a post about it to 2.3
+million readers
+https://www.facebookstories.com/stories/112524/building-a-community-for-high-schoolers-who-code).
+HS Hackers currently has 5,000 members from over 1000 schools, nearly every
+state, and over 90 countries.
 
-* When in high school, Zach wanted a community of other people to build things
-  with at his school.
-  * He wanted this because x, y, and z (ask Jonathan why communities are
-    important).
-* He started a programming club to create this community. By the end of its 2nd
-  year, the members of his club launched games on the Play Store, won
-  high-profile hackathons, founded a web design firm, and secured over $30,000 in
-  investment.
-* After meeting other high school students who had also started programming
-  club, he decided to start hackEDU. Being 17, he is the age of our target
-  demographic and has made himself a leader in the high school programming
-  community. Zach runs HS Hackers, the largest online community for high school
-  developers (Facebook shared a post about it to 2.3 million readers
-  https://www.facebookstories.com/stories/112524/building-a-community-for-high-schoolers-who-code).
+Jonathan has been teaching programming since high school and helped create the
+hacking movement at Penn through being one of the lead organizers of PennApps.
+Jonathan realized he cared deeply about empowering others to become creators.
+To develop this craft, Jonathan taught the 12 week Ruby on Rails bootcamp at at
+General Assembly and most recently designed and ran a 6 week summer immersive
+at All Star Code for high schoolers. At All Star Code, Jonathan took students
+from not knowing how to code, to building web apps, hacking hardware, and
+organizing a hackathon for the top high school hackers in NYC. Zach was the
+first person Jonathan met who was as obsessed with this as he was. hackEDU's
+model of students teaching their peers speaks to his passion for student
+empowerment. That's why he's all in.
 
 **What's new about what you plan to do?**
 
