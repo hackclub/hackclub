@@ -28,9 +28,10 @@ do this through providing a "club in a box"--a "plug-and-play" framework for
 high school students starting successful and autonomous clubs, which we're
 currently in the process of building. The box will include club leader
 training, sample projects, development tools, resources, and best practices for
-high school students wanting to start clubs. Moreover, we build and orchestrate
-a vibrant community between our clubs and the larger hacking community through
-online social media and in-person events.
+high school students wanting to start clubs.
+
+Moreover, we build and orchestrate a vibrant community between our clubs and
+the larger hacking community through online social media and in-person events.
 
 We want to create 2,500 Amy Sortos at schools around the country (keep reading
 to see who she is and why this would be so amazing).
