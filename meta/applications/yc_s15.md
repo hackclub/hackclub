@@ -225,7 +225,7 @@ corporation.
 much and from whom?**
 
 HackEDU was incorporated in January of 2014. We've secured a small amount
-($10k) of funding from various corporate sponsors.
+($10k) of funding from various corporate sponsors and private donors.
 
 **Have you obtained your 501(c)(3) tax-exempt status yet?**
 
