@@ -36,9 +36,9 @@ https://hackedu.us
 
 ##### Where do you, or your team, need the most support right now? Be specific and we'll try to help where we can.
 
-Our primarily focus right now is fundraising so we can continue building
-hackEDU. Introductions to individuals or foundations that might be interested
-in contributing would be _amazing_. We're currently focusing on private donors,
+Our primary focus right now is fundraising so we can continue building hackEDU.
+Introductions to individuals or foundations that might be interested in
+contributing would be _amazing_. We're currently focusing on private donors,
 but starting to build relationships with foundations now would be helpful down
 the line.
 
