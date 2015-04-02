@@ -4,7 +4,7 @@ I saw your involvement in [thing] and wanted to reach out.
 
 (OR POTENTIALLY LIST MUTUAL CONTACTS, SPECIFICALLY WHY YOU REACHED OUT TO THEM)
 
-We've built hackEDU, a community of programming clubs with 1,000 students at 24
+We've built hackEDU, a community of programming clubs with 1,300 students at 38
 high schools around the country. We think it's silly that students who love
 music can join band, students who love sports can join an athletic team, but
 students who want to learn to code have to go home and code alone. Our vision
