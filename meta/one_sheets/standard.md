@@ -24,12 +24,10 @@ through integration with the broader hacking community.
 
 ![map of clubs](https://i.imgur.com/40aaZII.png)
 
-##### Fall 2014 Pilot
-
-- 24 clubs in 11 states and two countries
-- over 1000 members
-  - 35% women (double the national average of 18% [[source]](http://media.collegeboard.com/digitalServices/pdf/research/2014/Program-Summary-Report-2014.xls)) 
-  - 18% minority ethnicities in technology (three times the national average of 5% [[source]](http://www.usatoday.com/story/tech/2014/12/29/usa-today-analysis-finds-minorities-underrepresented-in-non-tech-tech-jobs/20868353))    
+- 38 clubs in 11 states and two countries
+- over 1300 members
+  - 32% women (nearly double the national average of 18% [[source]](http://media.collegeboard.com/digitalServices/pdf/research/2014/Program-Summary-Report-2014.xls)) 
+  - 37% minority ethnicities in technology (seven times the national average of 5% [[source]](http://www.usatoday.com/story/tech/2014/12/29/usa-today-analysis-finds-minorities-underrepresented-in-non-tech-tech-jobs/20868353))    
 
 ##### What our hackers have been up to
 
