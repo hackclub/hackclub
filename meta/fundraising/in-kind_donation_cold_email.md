@@ -49,4 +49,4 @@ We were wondering if we could get some pro accounts for our team to _THING_ (we 
 It would really make a huge difference for us.
 
 Thanks so much!  
-Jonatha
+Jonathan
