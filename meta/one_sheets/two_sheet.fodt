@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2015-04-02T03:08:17.032882402</meta:creation-date><dc:date>2015-04-02T04:03:45.045707994</dc:date><meta:editing-duration>PT36M55S</meta:editing-duration><meta:editing-cycles>10</meta:editing-cycles><meta:generator>LibreOffice/4.4.1.2$Linux_X86_64 LibreOffice_project/40m0$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="2" meta:object-count="0" meta:page-count="2" meta:paragraph-count="23" meta:word-count="569" meta:character-count="3598" meta:non-whitespace-character-count="3053"/></office:meta>
+ <office:meta><meta:creation-date>2015-04-02T03:08:17.032882402</meta:creation-date><dc:date>2015-04-07T10:22:37.898827638</dc:date><meta:editing-duration>PT38M11S</meta:editing-duration><meta:editing-cycles>11</meta:editing-cycles><meta:generator>LibreOffice/4.4.1.2$Linux_X86_64 LibreOffice_project/40m0$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:image-count="2" meta:object-count="0" meta:page-count="2" meta:paragraph-count="23" meta:word-count="572" meta:character-count="3628" meta:non-whitespace-character-count="3080"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">3889</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">50181</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">23726</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">22673</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">31201</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">4339</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">7999</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">12534</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">3889</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">50179</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">23724</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">26561</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -82,7 +82,7 @@
    <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
    <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
    <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
-   <config:config-item config:name="Rsid" config:type="int">2156079</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">2218480</config:config-item>
    <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
    <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
@@ -279,7 +279,7 @@
  </office:styles>
  <office:automatic-styles>
   <style:style style:name="Table1" style:family="table">
-   <style:table-properties style:width="6.925in" table:align="margins" style:shadow="none"/>
+   <style:table-properties style:width="6.925in" table:align="margins"/>
   </style:style>
   <style:style style:name="Table1.A" style:family="table-column">
    <style:table-column-properties style:column-width="6.925in" style:rel-column-width="65535*"/>
@@ -300,40 +300,58 @@
    <style:text-properties officeooo:rsid="0011a8b3" officeooo:paragraph-rsid="0011a8b3"/>
   </style:style>
   <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="00135096" officeooo:paragraph-rsid="00135096"/>
+   <style:paragraph-properties fo:line-height="100%"/>
+   <style:text-properties officeooo:rsid="0011a8b3" officeooo:paragraph-rsid="0011a8b3"/>
   </style:style>
   <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="00135096" officeooo:paragraph-rsid="001ca077"/>
+   <style:text-properties officeooo:rsid="00135096" officeooo:paragraph-rsid="00135096"/>
   </style:style>
   <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="00135096" officeooo:paragraph-rsid="001ca077"/>
+  </style:style>
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
    <style:text-properties fo:font-style="italic" officeooo:rsid="00178d98" officeooo:paragraph-rsid="00178d98" style:font-style-asian="italic" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="001ca077" officeooo:paragraph-rsid="001ca077"/>
   </style:style>
-  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Table_20_Contents">
-   <style:text-properties fo:font-weight="bold" officeooo:rsid="00135096" officeooo:paragraph-rsid="00135096" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
-   <style:paragraph-properties fo:line-height="100%"/>
-   <style:text-properties officeooo:rsid="0011a8b3" officeooo:paragraph-rsid="0011a8b3"/>
-  </style:style>
-  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:paragraph-properties fo:line-height="100%"/>
    <style:text-properties officeooo:paragraph-rsid="0011a8b3"/>
   </style:style>
-  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="0011a8b3" officeooo:paragraph-rsid="0011a8b3"/>
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+   <style:text-properties fo:font-weight="bold" officeooo:rsid="00135096" officeooo:paragraph-rsid="00135096" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="00135096" officeooo:paragraph-rsid="00135096"/>
-  </style:style>
-  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:text-properties fo:font-weight="normal" officeooo:rsid="00135096" officeooo:paragraph-rsid="00135096" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
   </style:style>
-  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Table_20_Contents">
+  <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Table_20_Contents">
    <style:text-properties fo:font-style="italic" fo:font-weight="normal" officeooo:rsid="00135096" officeooo:paragraph-rsid="00135096" style:font-style-asian="italic" style:font-weight-asian="normal" style:font-style-complex="italic" style:font-weight-complex="normal"/>
+  </style:style>
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="0011a8b3" officeooo:paragraph-rsid="0011a8b3"/>
+  </style:style>
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="00135096" officeooo:paragraph-rsid="00135096"/>
+  </style:style>
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
+   <style:paragraph-properties fo:line-height="100%"/>
+   <style:text-properties officeooo:rsid="0011a8b3" officeooo:paragraph-rsid="0011a8b3"/>
+  </style:style>
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
+   <style:paragraph-properties fo:line-height="100%"/>
+   <style:text-properties officeooo:rsid="0011a8b3" officeooo:paragraph-rsid="0021d9f0"/>
+  </style:style>
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
+   <style:paragraph-properties fo:line-height="100%"/>
+   <style:text-properties officeooo:paragraph-rsid="0021d9f0"/>
+  </style:style>
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="0011a8b3" officeooo:paragraph-rsid="0011a8b3"/>
+  </style:style>
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="00135096" officeooo:paragraph-rsid="00135096"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties officeooo:rsid="0011a8b3"/>
@@ -346,6 +364,9 @@
   </style:style>
   <style:style style:name="T4" style:family="text">
    <style:text-properties officeooo:rsid="001c184f"/>
+  </style:style>
+  <style:style style:name="T5" style:family="text">
+   <style:text-properties officeooo:rsid="0021d9f0"/>
   </style:style>
   <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Graphics">
    <style:graphic-properties fo:margin-left="0.1252in" fo:margin-right="0.1252in" fo:margin-top="0.1252in" fo:margin-bottom="0.1252in" style:vertical-pos="middle" style:vertical-rel="baseline" draw:fill-color="#ffffff" fo:padding="0in" fo:border="none" style:mirror="none" fo:clip="rect(0in, 0in, 0in, 0in)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard" style:flow-with-text="false"/>
@@ -4474,44 +4495,44 @@
      </draw:image>
     </draw:frame></text:p>
    <text:p text:style-name="P3">hackEDU (<text:a xlink:type="simple" xlink:href="https://hackedu.us/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://hackedu.us</text:a>) is a non-profit initiative that works with high school students to start and lead student-run programming clubs at their schools.</text:p>
-   <text:h text:style-name="P12" text:outline-level="1">Metrics</text:h>
-   <text:p text:style-name="P4">We’re currently running a pilot reaching 1300 members in 38 schools across 11 states.</text:p>
-   <text:list xml:id="list3864848232785883259" text:style-name="L1">
+   <text:h text:style-name="P14" text:outline-level="1">Metrics</text:h>
+   <text:p text:style-name="P4">We’re currently running a pilot <text:span text:style-name="T5">in 38 schools across 11 states </text:span>reaching 1300 <text:span text:style-name="T5">students.</text:span></text:p>
+   <text:list xml:id="list6989451032910521350" text:style-name="L1">
     <text:list-item>
-     <text:p text:style-name="P10">32% of whom are women (nearly 2x the national average)<text:note text:id="ftn1" text:note-class="footnote"><text:note-citation>1</text:note-citation><text:note-body>
+     <text:p text:style-name="P17">32% <text:span text:style-name="T5">of our constituency</text:span> are women (nearly 2x the national average)<text:note text:id="ftn1" text:note-class="footnote"><text:note-citation>1</text:note-citation><text:note-body>
         <text:p text:style-name="P1"><text:a xlink:type="simple" xlink:href="http://media.collegeboard.com/digitalServices/pdf/research/2014/Program-Summary-Report-2014.xls" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">http://media.collegeboard.com/digitalServices/pdf/research/2014/Program-Summary-Report-2014.xls</text:a></text:p></text:note-body></text:note></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P11"><text:span text:style-name="T1">37% who represent ethnic minorities in tech (7x the national average)</text:span><text:span text:style-name="T1"><text:note text:id="ftn2" text:note-class="footnote"><text:note-citation>2</text:note-citation><text:note-body>
+     <text:p text:style-name="P18"><text:span text:style-name="T1">37% of our constituency represents ethnic minorities in tech (7x the national average)</text:span><text:span text:style-name="T1"><text:note text:id="ftn2" text:note-class="footnote"><text:note-citation>2</text:note-citation><text:note-body>
          <text:p text:style-name="P1">http://www.usatoday.com/story/tech/2014/12/29/20868353/</text:p></text:note-body></text:note></text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P10">1/3 of our schools serve communities where most students are on free or reduced lunch</text:p>
+     <text:p text:style-name="P16">1/3 of our schools serve communities where most students are on free or reduced lunch</text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="P4">At the two largest, most competitive collegiate hackathons, <text:a xlink:type="simple" xlink:href="http://2014f.pennapps.com/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">PennApps X</text:a> and <text:a xlink:type="simple" xlink:href="http://mhacksv.challengepost.com/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">MHacks V</text:a> where competitors were flown in from schools including MIT, Stanford, and Harvard, three of the six winning teams were led by high school students. All of these winning high school teams are part of hackEDU.</text:p>
    <text:p text:style-name="P4">In February, one of our club leaders won Thiel Rookie of the Year for <text:a xlink:type="simple" xlink:href="http://news.mlh.io/cosmos-thiel-rookie-year-2014-mlh-fall-season-02-09-2015" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">making an Android app that can access the internet without an internet connection</text:a>. <text:a xlink:type="simple" xlink:href="https://cydrobolt.com/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Chaoyi Zha</text:a>, one of our club leaders from Philadelphia, is a contributor to the <text:a xlink:type="simple" xlink:href="https://getfedora.org/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Fedora Project</text:a>, one of the largest Linux operating systems with over 50 million users. Another leader, <text:a xlink:type="simple" xlink:href="http://challengepost.com/raphaelrk" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Raphael Kats</text:a>, <text:a xlink:type="simple" xlink:href="http://mhacksv.challengepost.com/submissions/31699-datawave" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">transmitted internet through FM radio over 10 miles</text:a> (compare that to your Wi-Fi at home) and ran a program to teach local middle school students how to code.</text:p>
    <text:p text:style-name="P4">This summer, another club leader, <text:a xlink:type="simple" xlink:href="http://challengepost.com/amysorto" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">Amy Sorto</text:a>, decided to put together a summer camp to teach 24 girls in middle school how to code. She&apos;s already secured a blank check from Panasonic, laptop donations from Codestarter, a donated venue in Newark.</text:p>
-   <text:h text:style-name="P12" text:outline-level="1">Why It Matters</text:h>
-   <text:p text:style-name="P5">Currently only 1 out 10 high schools in the US offers any CS classes, and by 2020, one million technology jobs will go unfilled<text:note text:id="ftn3" text:note-class="footnote"><text:note-citation>3</text:note-citation><text:note-body>
+   <text:h text:style-name="P14" text:outline-level="1">Why It Matters</text:h>
+   <text:p text:style-name="P6">Currently only 1 out 10 high schools in the US offers any CS classes, and by 2020, one million technology jobs will go unfilled<text:note text:id="ftn3" text:note-class="footnote"><text:note-citation>3</text:note-citation><text:note-body>
       <text:p text:style-name="P2">Code.org</text:p></text:note-body></text:note>. Companies must find ways to expand the tech talent pipeline at the point where young people are deciding on their career paths. Since 4 out of 5 STEM (Science Technology, Engineering, and Mathematics) professionals choose their career in high school or earlier, high school is the pivotal point where getting involved in STEM matters.<text:note text:id="ftn4" text:note-class="footnote"><text:note-citation>4</text:note-citation><text:note-body>
       <text:p text:style-name="P2">Harris Interactive,STEM Perceptions: Student &amp; Parent Study, Sept 2011</text:p></text:note-body></text:note></text:p>
-   <text:h text:style-name="P13" text:outline-level="1"><text:soft-page-break/>Our Vision</text:h>
-   <text:p text:style-name="P6">Our vision is to create a world where all its citizens are empowered to create what they see missing. <text:span text:style-name="T4">We believe that nobody should be afraid to tackle the world&apos;s most ambitious problems or break the rules doing so. This mindset is what we at hackEDU call the “hacker ethos”. In short, a &quot;hacker&quot; is a changemaker who challenges the status quo.</text:span></text:p>
+   <text:h text:style-name="P15" text:outline-level="1"><text:soft-page-break/>Our Vision</text:h>
+   <text:p text:style-name="P7">Our vision is to create a world where all its citizens are empowered to create what they see missing. <text:span text:style-name="T4">We believe that nobody should be afraid to tackle the world&apos;s most ambitious problems or break the rules doing so. This mindset is what we at hackEDU call the “hacker ethos”. In short, a &quot;hacker&quot; is a changemaker who challenges the status quo.</text:span></text:p>
    <table:table table:name="Table1" table:style-name="Table1">
     <table:table-column table:style-name="Table1.A"/>
     <table:table-row>
      <table:table-cell table:style-name="Table1.A1" office:value-type="string">
-      <text:p text:style-name="P9">Note on the definition of “hacker”:<text:span text:style-name="T2"> The media commonly refers to “hacking” as the “use [of] a computer to gain unauthorized access to data in a system” and a </text:span><text:span text:style-name="T3">“</text:span><text:span text:style-name="T2">hacker” as someone who performs such activities. When we refer to the term “hacker”, we are referring to the commonly used term in tech culture. Here is an excerpt from the Wikipedia article on hacker: </text:span><text:a xlink:type="simple" xlink:href="http://wki.pe/Hacker_(term" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T2">http://wki.pe/Hacker_(term</text:span></text:a><text:span text:style-name="T2">).</text:span></text:p>
-      <text:p text:style-name="P14"/>
-      <text:p text:style-name="P15">“The act of engaging in activities (such as programming or other media) in a spirit of playfulness and exploration is termed hacking. Hacking entails some form of excellence, for example exploring the limits of what is possible, thereby doing something exciting and meaningful.”</text:p>
+      <text:p text:style-name="P11">Note on the definition of “hacker”:<text:span text:style-name="T2"> The media commonly refers to “hacking” as the “use [of] a computer to gain unauthorized access to data in a system” and a </text:span><text:span text:style-name="T3">“</text:span><text:span text:style-name="T2">hacker” as someone who performs such activities. When we refer to the term “hacker”, we are referring to the commonly used term in tech culture. Here is an excerpt from the Wikipedia article on hacker: </text:span><text:a xlink:type="simple" xlink:href="http://wki.pe/Hacker_(term" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link"><text:span text:style-name="T2">http://wki.pe/Hacker_(term</text:span></text:a><text:span text:style-name="T2">).</text:span></text:p>
+      <text:p text:style-name="P12"/>
+      <text:p text:style-name="P13">“The act of engaging in activities (such as programming or other media) in a spirit of playfulness and exploration is termed hacking. Hacking entails some form of excellence, for example exploring the limits of what is possible, thereby doing something exciting and meaningful.”</text:p>
      </table:table-cell>
     </table:table-row>
    </table:table>
-   <text:p text:style-name="P5"/>
-   <text:h text:style-name="P13" text:outline-level="1">Our Mission</text:h>
-   <text:p text:style-name="P8">By engaging high school students in our community of student-run coding clubs, we create and empower the next generation of changemakers. By providing a stellar club culture, we inspire the hacker ethos, and foster qualities including self-confidence, social responsibility, inclusivity, collaboration, and agency.</text:p>
-   <text:p text:style-name="P7"><draw:frame draw:style-name="fr2" draw:name="Image2" text:anchor-type="paragraph" svg:width="6.9252in" svg:height="4.2102in" draw:z-index="1"><draw:image>
+   <text:p text:style-name="P6"/>
+   <text:h text:style-name="P15" text:outline-level="1">Our Mission</text:h>
+   <text:p text:style-name="P9">By engaging high school students in our community of student-run coding clubs, we create and empower the next generation of changemakers. By providing a stellar club culture, we inspire the hacker ethos, and foster qualities including self-confidence, social responsibility, inclusivity, collaboration, and agency.</text:p>
+   <text:p text:style-name="P8"><draw:frame draw:style-name="fr2" draw:name="Image2" text:anchor-type="paragraph" svg:width="6.9252in" svg:height="4.2102in" draw:z-index="1"><draw:image>
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAukAAAHFCAIAAADAIPCMAAAAA3NCSVQICAjb4U/gAAAgAElE
        QVR4Xuy9CYws2ZrXl3tEZOS+1H7rrn17ed1v69fMe/Bm4I0HGWwQQuy2ZQ9IeIxsY2TLNhgM
        IwvZ2Bg0IGM0XrBsLNmAxrIA26AZhjGex8y8fntvt7vvVrfq1paVe0bGkhGZ/p04mVFRuVXW
