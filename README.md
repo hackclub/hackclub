@@ -46,8 +46,8 @@ This is about the internal parts of hackEDU and include:
 - [`organization_and_financial_faq.md`](meta/organization_and_financial_faq.md)
 - [`blurbs.md`](meta/blurbs.md), a listing of various copy about hackEDU that
   we use in our various documents.
-- [`applications`](meta/applications), applications that that hackEDU team has
-  applied to that are related to hackEDU.
+- [`applications`](meta/applications), applications that the hackEDU team has
+  applied to.
 
 ## Team
 
