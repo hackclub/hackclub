@@ -49,6 +49,3 @@ There's a lot more to talk about when it comes to Github, including markdown syn
 - Fix the sixth item on the README Todo, its just a bad joke
 - Change step 3 to make it more of a conclusion
 - figure out readme capitalization properly 
-
-
-
