@@ -13,3 +13,6 @@ https://medium.com/@liezl200/college-a-new-perspective-ec866a97f13).
 Could pair this with shipped to build really great community excitement about
 shipping things. Ex. shipped projects could have stories attached with them, all
 of them are tweeted and shared on Facebook. Awesome stuff.
+
+Could have someone assigned to go back and follow up with some of our hackers
+and round out their story over time (potentially for publication).
