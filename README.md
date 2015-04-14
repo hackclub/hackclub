@@ -53,9 +53,13 @@ This is about the internal parts of hackEDU and include:
 
 [Jonathan Leung](http://jonl.org), `jonathan@hackedu.us`
 
-[Zach latta](http://zachlatta.com), `zach@hackedu.us`
+[Zach Latta](http://zachlatta.com), `zach@hackedu.us`
 
 [Max Wofford](https://github.com/MaxWofford), `max@hackedu.us`
+
+[Gemma Busoni](https://twitter.com/grbusoni), `gemma@hackedu.us`
+
+[Benjamin Zweig](https://twitter.com/tfzweig), `ben@hackedu.us`
 
 ## FAQ
 
