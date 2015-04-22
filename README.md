@@ -20,4 +20,12 @@ This needs to be moved to lesson plans repository or something
 	b) EXECUTE LESSON
 	c) Anonymous Physical Feedback Sheets
 	
-	
+**Potential Sections**
+
+- How to hustle
+- Fundraising
+- Curricula
+- The Importance of feedback
+- Q&A
+- Soft Skills
+	- Consider ways to allow for vulnerability
