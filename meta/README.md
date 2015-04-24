@@ -23,6 +23,9 @@ This needs to be moved to lesson plans repository or something
 **Potential Sections**
 
 - How to hustle
+	- Amy
+	- Bogdan
+	- Chaoyi
 - Fundraising
 - Curricula
 - The Importance of feedback
