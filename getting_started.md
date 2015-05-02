@@ -1,13 +1,7 @@
-# Hello 1
-oaiwejfoi
+# Hi
+Welcome to hackEDU
 
 
 
-# World 2
-awoefijaowej
-
-
-
-# Yo 3
-awoefijaowej
-
+# What is going on?
+Yeah!
