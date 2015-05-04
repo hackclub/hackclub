@@ -19,7 +19,10 @@ https://workflowy.com/s/I1eVoOx0UM
 
 This guide is in beta, and we need your help to write and edit it!
 
-## Main Sections
+## Guide
+
+**Getting Started** [[markdown](getting_started.md) | [presentation](http://jonl.org/reveal.js/?md=)]
+The why, who, and what of hackEDU.
 
 **The Why**
 
