@@ -21,9 +21,11 @@ This guide is in beta, and we need your help to write and edit it!
 
 ## Guide
 
-**Getting Started**—[presentation](http://jonl.org/reveal.js/?md=https://rawgit.com/hackedu/hackedu/master/getting_started.md) | [markdown](getting_started.md)
+1. **About**—[presentation](http://jonl.org/reveal.js/?md=https://rawgit.com/hackedu/hackedu/master/about.md) | [markdown](about.md)
+	- The why, who, and what of hackEDU.
 
-The why, who, and what of hackEDU.
+2. **Getting Started**—[presentation](http://jonl.org/reveal.js/?md=https://rawgit.com/hackedu/hackedu/master/getting_started.md) | [markdown](getting_started.md)
+	- Join the community
 
 **The Why**
 
