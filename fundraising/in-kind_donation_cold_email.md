@@ -53,7 +53,7 @@ Jonatha
 
 # Jonathan's Version 2 Without Reason — Founder
 
-# Joanthan's Version 2 Without Reason — Sales Team
+# Jonathan's Version 2 Without Reason — Sales Team
 
 Hey [name],
 
