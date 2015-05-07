@@ -43,7 +43,7 @@ Complimented with the Playbook, we will be working with organizers week to week 
 
 #### Onboard 50 more schools into the hackEDU network
 
-All of our 24 clubs came to hackEDU through inbound interest. Many came from the facebook group HS Hackers, a Facebook group  that representing 3,000 high schoolers from 689 schools across 46 states and 87 countries which was started and is run by one of our founders, Zach latta.
+All of our 24 clubs came to hackEDU through inbound interest. Many came from the facebook group HS Hackers, representing 6,000+ high schoolers from 689 schools across 46 states and 87 countries which was started and is run by one of our founders, Zach latta.
 
 Moreover, from a survey that we did at the premier Hack Generation Y hackathon, we learned that there are over 60 clubs just in the bay area alone that are not part of our network yet that expressed interest. #insert other statistics here.
 	
