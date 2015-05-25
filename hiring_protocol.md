@@ -7,7 +7,8 @@ learn more.
 Rules:
 
 * Both founders must be in agreement before an offer is made
-* Offers will only be presented in writing (email is acceptable)
+* Offers will only be presented in writing (email is acceptable, online messages
+  are not)
 * A contract must be signed by both parties before the hire starts. The contract
   must outline:
   * Roles and responsibilities
