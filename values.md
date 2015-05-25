@@ -6,8 +6,11 @@
 
 
 
-## We have 4 primary values: 1. Integrity 2. Curiosity 3. Authenticity 4.
-Transparency
+## We have 4 primary values:
+1. Integrity
+2. Curiosity
+3. Authenticity
+4. Transparency
 
 
 
@@ -134,6 +137,13 @@ thinking of what you're saying while the other person is talking
 asking "why several more times."
 
 
+## Celebrating Failure
+When you fail, instead of being really hard on yourself and feeling shame about something, you want to be in a space where you can be curious about it and learn from it. One way to do this is to celebrate failure! Whenever we fail at something, I would like to set the precedent where we will:
+	
+	1. Declare that "I have failed!"
+	2. Other people around you will clap for you to celebrate your failure.
+	
+	
 
 ## Taken Directly from HopeLab:
 

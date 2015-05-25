@@ -7,22 +7,22 @@ To bring the hacker ethos to high schools!
 
 
 
-## What does that mean?
+### What does that mean?
 We want to transform high schools into places where people **create what they see missing** and are **not afraid to break the rules**.
 
 
 
-## How?
+### How?
 We work with students like you to start and lead the amazing coding clubs in their school that embibe the hacker ethos.
 
 
 
-## Who are we currently?
+### Who are we currently?
 We are a non-profit organization that are made up of 38 schools across the country lead by club leaders like you!
 
 
 
-## What:
+### What:
 Our goal is to put together "a-club-in-a-box", everything that you need to start and lead amazing coding club
 
 1. We give you all the tools you need to run a club
@@ -38,14 +38,14 @@ because you are the ones that are running the clubs and sharing what you learn.
 
 
 
-## We are in Beta so we need your help!
+### We are in Beta so we need your help!
 
 1. Giving us weekly feedback 
 2. Contributing to the guide
 
 
 
-## Values
+### Values
 1. Curiosity
 2. Integrity
 3. Transparency
@@ -60,27 +60,27 @@ because you are the ones that are running the clubs and sharing what you learn.
 
 
 
-## Welcome
+### Welcome
 
 
 
-## Vision
+### Vision
 
 
 
-## How
+### How
 
 
 
-## What
+### What
 
 
 
-## We Need your Help!
+### We Need your Help!
 
 
 
-## Values
+### Values
 
 
 
