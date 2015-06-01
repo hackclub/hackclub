@@ -16,7 +16,7 @@ w1d1
 
 ## Setup
 
-# Hack Camp Chat
+# Hack Camp Chat~~~~
 
 http://shout.hackedu.us
 

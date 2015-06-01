@@ -31,11 +31,11 @@
 
 
 ## Long Introduction
-
 - [This Brief Survey](https://docs.google.com/forms/d/1OmBQ3rS6VtMH_5jc4FR01SQ_0Je5NI64q5rNEHOGtlk/viewform)
+- 
 ## What you're going to learn how to make
-- a version of agar.io
-- don't touch the white tiles
+- [a version of agar.io](agar.io)
+- [don't touch the white tiles](https://www.youtube.com/watch?v=-ckXJf5gBk0)
 - your own project
 - using phaser.js
 
@@ -43,8 +43,6 @@
 - calling everyone demo
 - basic websites
 - javascript APIs
-
-
 
 - [red pill, blue pill](https://www.youtube.com/watch?v=zQ1_IbFFbzA&feature=youtu.be&t=3m25s)
 - [Context](context.md)
@@ -54,7 +52,7 @@
 
 
 ## Hacking the Internet
-- http://imgur.com/a/Clf4W
+- f
 - objective, to make it feel like the internet is malleable
 - partner up
 - yes let's
@@ -72,7 +70,6 @@
 - hacking the internet
 	- twitter
 	- NYT
-## brainstorm values
 
 ------
 
@@ -82,6 +79,8 @@
 ## Don't Touch the White Tiles
 - switch partners
 - how might a similar set of instructions work?
+
+## brainstorm values
 
 ## Recap 
 - context
@@ -107,3 +106,4 @@ w2d2
 - top down programming
 - DT
 - start with a sprite with a png, easier, if you want exact shape you can use a graphic- go move thing through the space
+- Preface with the fact that I'm still learning phaser
