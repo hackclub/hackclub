@@ -1,29 +1,17 @@
 # Zach
 
 [hackEDU](https://hackedu.us) is building a national nonprofit that brings
-coding clubs to high schools nationwide. We think it's silly that students who
-love music can join band, students who love sports can join an athletic team,
-but students who want to learn to code have to go home and code alone. Our
-mission is to bring a coding club where students can build things (and learn to
-build things) with other like-minded students to every high school in the
-country.
+coding clubs to high schools nationwide. Students who love music can join band;
+students who love sports can join an athletic team; but students who want to
+code have had to go home and do it alone – until now.
  
-Our vision is to create a world where all citizens are empowered to create what
-they see missing. We believe that nobody should be afraid to tackle the world's
-most ambitious problems or break the rules to do so.
- 
-**Key points:**
+**Key stats:**
 
-* In 6 months we're in 38 schools across 11 states and reaching 1,300 high
+* In 7 months we're in 40 schools across 11 states and reaching 1,300 high
   school students.
   * 32% of constituency is female (nearly 2x national high school average)
   * 37% of constituency is black/Hispanic (7x industry average)
   * 12 of our 38 schools have a majority of students on free or reduced lunch
-* Half of the winning teams at MHacks V and PennApps X, the two most competitive
-  collegiate hackathons (>1300 attendees each), were led by hackEDU hackers.
-  * MHacks V and PennApps X fly out attendees from top schools including
-    Stanford, MIT, Harvard, and ETH Zurich.
-
 
 # Jonathan
 
