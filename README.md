@@ -8,13 +8,14 @@ Welcome! This is our internal repo we use for running
 These are the people who are officially part of the organization, but we want
 you involved as well!
 
-| Name           | Position         | Link                          | Email               |
-|----------------|------------------|-------------------------------|---------------------|
-| Benjamin Zweig | Designosaur      | https://twitter.com/tfzweig   | ben@hackedu.us      |
-| Gemma Busoni   |                  | https://twitter.com/grbusoni  | gemma@hackedu.us    |
-| Jonathan Leung | Founder          | http://jonl.org               | jonathan@hackedu.us |
-| Max Wofford    | Technical Fellow | https://github.com/MaxWofford | max@hackedu.us      |
-| Zach Latta     | Founder          | http://zachlatta.com          | zach@hackedu.us     |
+| Name           | Position                   | Link                          | Email               |
+|----------------|----------------------------|-------------------------------|---------------------|
+| Andrea Deng    | Summer Program Coordinator | https://andreadeng.github.io/ | andrea@hackedu.us   |
+| Benjamin Zweig | Designosaur                | https://twitter.com/tfzweig   | ben@hackedu.us      |
+| Gemma Busoni   |                            | https://twitter.com/grbusoni  | gemma@hackedu.us    |
+| Jonathan Leung | Founder                    | http://jonl.org               | jonathan@hackedu.us |
+| Max Wofford    | Technical Fellow           | https://github.com/MaxWofford | max@hackedu.us      |
+| Zach Latta     | Founder                    | http://zachlatta.com          | zach@hackedu.us     |
 
 ## Contact
 
