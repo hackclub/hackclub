@@ -11,7 +11,7 @@ code have had to go home and do it alone – until now.
   school students.
   * 32% of constituency is female (nearly 2x national high school average)
   * 37% of constituency is black/Hispanic (7x industry average)
-  * 12 of our 38 schools have a majority of students on free or reduced lunch
+  * 12 of our 40 schools have a majority of students on free or reduced lunch
 
 # Jonathan
 
