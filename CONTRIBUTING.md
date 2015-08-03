@@ -29,3 +29,11 @@ it. It's very appreciated!
 Our existing style guides:
 
 - [Markdown](https://github.com/hackedu/meta/blob/master/markdown_style_guide.md)
+
+## Getting to know git
+
+If you aren't already familiar with git, here's a couple links we recommend
+going through:
+
+- Getting started: http://rogerdudler.github.io/git-guide/
+- Understanding git (important!): https://youtu.be/1ffBJ4sVUb4
