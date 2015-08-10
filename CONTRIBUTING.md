@@ -30,6 +30,20 @@ Our existing style guides:
 
 - [Markdown](https://github.com/hackedu/meta/blob/master/markdown_style_guide.md)
 
+## Using GitHub Issues
+
+We use GitHub's built in issue tracker for nearly everything at hackEDU. We
+recommend reading through https://guides.github.com/features/issues/ to get a
+good idea of how to use GitHub Issues.
+
+In addition to using vanilla GitHub Issues, we use kanban to manage our team's
+workflow (see http://leankit.com/kanban/what-is-kanban/ for a good overview of
+what kanban is). To do that with GitHub Issues, we use a neat tool called
+[ZenHub](https://www.zenhub.io/) to organize our GitHub Issues on a kanban
+board. If you go to any of our repos with ZenHub installed, you should see a
+"Boards" button on the right sidebar, right under the "Code" button. If you
+click it, you'll see our issues organized on a real-time kanban board.
+
 ## Getting to know git
 
 If you aren't already familiar with git, here's a couple links we recommend
