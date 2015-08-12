@@ -31,4 +31,5 @@ _In attendance:_
 Meetings:
 
 - [07.13.15](meetings/15-07-13_initial_brainstorm.md)
+- [07.15.15](meetings/15-07-15_club_things.md)
 - [08.11.15](meetings/15-08-11_accepting_first_12.md)
