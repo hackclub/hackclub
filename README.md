@@ -9,7 +9,7 @@ These are the people who are officially part of the organization, but we want
 you involved as well!
 
 | Name           | Position                   | Link                          | Email               |
-|----------------|----------------------------|-------------------------------|---------------------|
+| -------------- | -------------------------- | ----------------------------- | ------------------- |
 | Andrea Deng    | Summer Program Coordinator | https://andreadeng.github.io/ | andrea@hackedu.us   |
 | Gemma Busoni   |                            | https://twitter.com/grbusoni  | gemma@hackedu.us    |
 | Jonathan Leung | Founder                    | http://jonl.org               | jonathan@hackedu.us |
