@@ -11,7 +11,6 @@ you involved as well!
 | Name           | Position                   | Link                          | Email               |
 |----------------|----------------------------|-------------------------------|---------------------|
 | Andrea Deng    | Summer Program Coordinator | https://andreadeng.github.io/ | andrea@hackedu.us   |
-| Benjamin Zweig | Designosaur                | https://twitter.com/tfzweig   | ben@hackedu.us      |
 | Gemma Busoni   |                            | https://twitter.com/grbusoni  | gemma@hackedu.us    |
 | Jonathan Leung | Founder                    | http://jonl.org               | jonathan@hackedu.us |
 | Max Wofford    | Technical Fellow           | https://github.com/MaxWofford | max@hackedu.us      |
