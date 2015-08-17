@@ -14,7 +14,7 @@ you involved as well!
 | Gemma Busoni   |                            | https://twitter.com/grbusoni  | gemma@hackedu.us    |
 | Jonathan Leung | Founder                    | http://jonl.org               | jonathan@hackedu.us |
 | Max Wofford    | Technical Fellow           | https://github.com/MaxWofford | max@hackedu.us      |
-| Zach Latta     | Founder                    | http://zachlatta.com          | zach@hackedu.us     |
+| Zach Latta     | Executive Director         | http://zachlatta.com          | zach@hackedu.us     |
 
 ## Contact
 
