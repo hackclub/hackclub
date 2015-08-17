@@ -3,6 +3,13 @@
 Welcome! This is our internal repo we use for running
 [hackEDU](http://hackedu.us), warts and all. We're excited to have you involved.
 
+## Vision and Mission
+
+**Vision:** A future where everyone is a hacker.
+
+**Mission:** To provide access to a community that embodies the hacker ethos to
+every student through coding clubs.
+
 ## Core Team
 
 These are the people who are officially part of the organization, but we want
