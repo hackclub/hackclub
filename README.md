@@ -10,6 +10,10 @@ Welcome! This is our internal repo we use for running
 **Mission:** To provide access to a community that embodies the hacker ethos to
 every student through coding clubs.
 
+## Goals
+
+See [GOALS.md](GOALS.md).
+
 ## Core Team
 
 These are the people who are officially part of the organization, but we want
