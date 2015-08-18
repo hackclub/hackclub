@@ -19,6 +19,14 @@ checklist for getting everything going:
 - [ ] All acceptance contracts signed (_Deadline: 08.28.15_,
   [#55](https://github.com/hackedu/hackedu/issues/55))
 
+### Position Information
+
+The following is the information for the position given to members of the labs
+team.
+
+- Title: Lab Director
+- Minimum weekly time commitment: 5 hours outside of clubs
+
 ## Meetings
 
 All meetings related to the labs program should be put into the `meetings`
