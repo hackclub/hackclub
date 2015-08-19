@@ -3,6 +3,11 @@
 This document will contain a brief overview of our labs program and what it'll
 entail going into the 2015 fall semester.
 
+The goal of the labs program is to bring the club playbook to the point where
+we're confident enough to start new clubs with it. We'll be doing this by
+assembling a diverse team of clubs and running the playbook in all of them while
+iterating on the content with the club leaders themselves.
+
 ## Setup
 
 We're currently in the midst of setting up our labs program. Here's our
