@@ -19,6 +19,38 @@ contributors to contribute through the _fork & pull model_.
 When contributing, please pay attention to the commit format of other commits in
 the repository.
 
+### Good Pull Requests
+
+Our workflow says that the `master` branch of all of our repositories is the
+golden branch from which all development is based off of. As a result, we try to
+keep the history of the `master` branch as simple and understandable as
+possible.
+
+In order to keep the `master` branch easy to navigate, we ask all contributors
+(including ourselves!) to squash commits down to a few, or one, discrete
+changesets before submitting a pull request. Fixing a bug will usually only need
+one commit, but a larger feature may make more sense to track through a few
+small, understandable commits.
+
+We recommend taking a look at
+https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history
+on changing your git history to create high-quality pull requests.
+
+#### Good Commit Messages
+
+We value the quality of commit messages for two primary reasons (from
+[here](https://github.com/erlang/otp/wiki/Writing-good-commit-messages)):
+
+- To speed up the reviewing process.
+- To help the future maintainers of hackEDU (it could be you!), say five years
+  into the future, find out why a particular change was made to the code or why
+  a specific feature was added.
+
+We recommend taking a look at
+https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message and
+http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html on writing
+good commit messages.
+
 ### Style Guides
 
 If a style guide exists for the language you're contributing in, please do the
