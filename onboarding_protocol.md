@@ -4,6 +4,7 @@ The things we need to do to onboard a new person onto the team.
 
 * [ ] Create Google Apps account
 * [ ] Create IRCCloud account
+  * [ ] Download IRCCloud mobile client
 * [ ] Add to GitHub organization
 * [ ] Add to `emails@hackedu.us` Google Group
 * [ ] Add to Google Drive folder
