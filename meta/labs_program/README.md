@@ -8,7 +8,7 @@ entail going into the 2015 fall semester.
 We're currently in the midst of setting up our labs program. Here's our
 checklist for getting everything going:
 
-- [ ] Select everyone we're going to interview (_Deadline: 08.17.15_,
+- [x] Select everyone we're going to interview (_Deadline: 08.17.15_,
   [#30](https://github.com/hackedu/hackedu/issues/30)).
   - We're keeping track of people in the private sheet
     https://docs.google.com/spreadsheets/d/1Q6E36NK7N_mKp_LJwMW-P3KUZXPsHQTJWyoyKvrneuc.
