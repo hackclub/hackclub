@@ -25,13 +25,13 @@ https://hackedu.us
 
 ##### What's new? Please be concise and to the point!
 
-* Onboarded an additional 14 schools, expanding our reach to 38 schools and
+- Onboarded an additional 14 schools, expanding our reach to 38 schools and
   1,300 students.
-  * 12 of the 14 additional schools have a majority of students on free or
+  - 12 of the 14 additional schools have a majority of students on free or
     reduced lunch.
-  * 37% of our constituency is now black/hispanic (7x national average).
-* [redacted] has committed to be a donor.
-* We've finally opened up a bank account and are currently signing an agreement
+  - 37% of our constituency is now black/hispanic (7x national average).
+- [redacted] has committed to be a donor.
+- We've finally opened up a bank account and are currently signing an agreement
   with our (soon to be) fiscal sponsor so we can accept donations.
 
 ##### Where do you, or your team, need the most support right now? Be specific and we'll try to help where we can.

@@ -189,10 +189,10 @@ N/A
 
 **Are any of the following true?**
 
-* You are the only founder.
-* You are a student who may return to school when the next term starts.
-* Half or more of your group can't move to the Bay Area.
-* One or more founders will keep their current jobs.
+- You are the only founder.
+- You are a student who may return to school when the next term starts.
+- Half or more of your group can't move to the Bay Area.
+- One or more founders will keep their current jobs.
 
 Yes.
 
@@ -226,14 +226,14 @@ Male
 
 **Schools, Degrees and Years of Graduation**
 
-* El Segundo High School, 2014
-* West Los Angeles College, N/A
+- El Segundo High School, 2014
+- West Los Angeles College, N/A
 
 **Employers, Position / Titles and Dates**
 
-* Yo, Lead Backend Engineer, July 2014 - September 2014
-* Grasp, Technical Lead, June 2013 - January 2014
-* Run Games, Junior Programmer, February 2013 - February 2014
+- Yo, Lead Backend Engineer, July 2014 - September 2014
+- Grasp, Technical Lead, June 2013 - January 2014
+- Run Games, Junior Programmer, February 2013 - February 2014
 
 **Personal website**
 

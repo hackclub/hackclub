@@ -53,8 +53,8 @@ including yourself. Founders must have at least 10% equity in the company. We
 will send an email to each founder to fill out additional information about
 themselves.**
 
-* zach@hackedu.us
-* jonathan@hackedu.us
+- zach@hackedu.us
+- jonathan@hackedu.us
 
 **Please enter the url of a 1 minute unlisted (not private) YouTube video
 introducing the founders.**
@@ -139,19 +139,19 @@ We've been working on hackEDU full-time for 5 months.
 
 **Which of the following best describes your progress?**
 
-* [ ] Nothing Built
-* [ ] Sketches
-* [ ] Mocks / Renderings
-* [ ] Prototype
-* [x] Private Beta
-* [ ] Public Beta
-* [ ] Taking Preorders
-* [ ] Launched
+- [ ] Nothing Built
+- [ ] Sketches
+- [ ] Mocks / Renderings
+- [ ] Prototype
+- [x] Private Beta
+- [ ] Public Beta
+- [ ] Taking Preorders
+- [ ] Launched
 
 **Do you have revenue?**
 
-* [ ] No
-* [x] Yes
+- [ ] No
+- [x] Yes
 
 **If you've applied previously with the same idea, how much progress have you
 made since the last time you applied? Anything change?**
@@ -164,11 +164,11 @@ with or without YC. Zach does not plan to go to college.
 
 Additionally, since last applying, we:
 
-* Ran our planned 25 school pilot (5 of the original 30 planned schools
+- Ran our planned 25 school pilot (5 of the original 30 planned schools
   dropped), onboarded 13 additional schools, and reached over 1,300 students.
-  * A majority of the students from every one of our 13 additional schools are
+  - A majority of the students from every one of our 13 additional schools are
     on free or reduced lunch.
-* Brought on a full-time volunteer and two part-time volunteers.
+- Brought on a full-time volunteer and two part-time volunteers.
 
 We have also secured a small amount of funding (~$10k).
 
@@ -254,13 +254,13 @@ N/A
 
 **Are any of the following true?**
 
-* You are the only founder.
-* You are a student who may return to school when the next term starts.
-* Half or more of your group can't move to the Bay Area.
-* One or more founders will keep their current jobs.
+- You are the only founder.
+- You are a student who may return to school when the next term starts.
+- Half or more of your group can't move to the Bay Area.
+- One or more founders will keep their current jobs.
 
-* [ ] Yes
-* [x] No
+- [ ] Yes
+- [x] No
 
 **If you had any other ideas you considered applying with, please list them.
 One may be something we've been waiting for.**
@@ -301,14 +301,14 @@ Male
 
 **Schools, Degrees and Years of Graduation**
 
-* El Segundo High School, 2014
-* West Los Angeles College, N/A
+- El Segundo High School, 2014
+- West Los Angeles College, N/A
 
 **Employers, Position / Titles and Dates**
 
-* Yo, Lead Backend Engineer, July 2014 - September 2014
-* Grasp, Technical Lead, June 2013 - January 2014
-* Run Games, Junior Programmer, February 2013 - February 2014
+- Yo, Lead Backend Engineer, July 2014 - September 2014
+- Grasp, Technical Lead, June 2013 - January 2014
+- Run Games, Junior Programmer, February 2013 - February 2014
 
 **Personal website**
 

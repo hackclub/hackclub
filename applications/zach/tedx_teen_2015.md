@@ -113,9 +113,9 @@ the next generation.
 
 ### Please write 3 words that best describe you, what you do, or what you care about
 
-* Hacker
-* Agency
-* Pragmatic
+- Hacker
+- Agency
+- Pragmatic
 
 ### What should we know about you that we didn't ask?
 
@@ -131,20 +131,20 @@ year alone I've been to over 20 hackathons and, since late January 2015, I've
 been at one every weekend. Through hackathons I've made nearly all of my
 friends and gotten integrated into the technology industry.
 
-* 1st Place at PennApps X, the University of Pennsylvania's hackathon, with
+- 1st Place at PennApps X, the University of Pennsylvania's hackathon, with
   [Fuji](http://youtu.be/TjizJRxnUHo?t=42m24s)
-  * Youngest winner
-* 1st Place at Hack for LA with
+  - Youngest winner
+- 1st Place at Hack for LA with
   [ShelterConnect](http://www.latimes.com/local/lanow/la-me-ln-la-hackathon-20140601-story.html)
-  * Featured in the LA Times (linked)
-* 3rd Place at LAUNCH Hackathon with [Orbit](http://youtu.be/MY01d647S9Y)
+  - Featured in the LA Times (linked)
+- 3rd Place at LAUNCH Hackathon with [Orbit](http://youtu.be/MY01d647S9Y)
   (>1300 attendees)
-* 1st Place at Hacking Generation Y with
+- 1st Place at Hacking Generation Y with
   [DownToZork.js](http://challengepost.com/software/downtozork-js)
-* Runner-up at TechCrunch Disrupt Hackathon with [Interactive
+- Runner-up at TechCrunch Disrupt Hackathon with [Interactive
   Markdown](http://techcrunch.com/video/interactive-markdown-presents-disrupt-sf-2014-hackathon/518404209/)
-* 2nd Place at Burbank Game+Hack with [Amelia](https://github.com/zachlatta/amelia)
-* 1st Place at Oink Hackathon with [Bitroad](https://github.com/zachlatta/bitroad)
+- 2nd Place at Burbank Game+Hack with [Amelia](https://github.com/zachlatta/amelia)
+- 1st Place at Oink Hackathon with [Bitroad](https://github.com/zachlatta/bitroad)
 
 ### Have you ever spoken at a TED or TEDx event before?
 

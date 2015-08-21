@@ -15,54 +15,54 @@ case of our key metric and give us ground to iterate on.
 
 #### Brainstorming
 
-* we don't
-  * have
-    * club data
-      * static
-        * name
-        * github organization
-        * website
-        * organizers
-      * dynamic
-        * attendance
-      * misc
-        * what a club looks like
-          * flow of the meeting
-    * member data
-      * static
-        * github usernames
-        * emails
-      * qualities
-        * skill level
-          * technologies they know
-            * javascript?
-            * scratch?
-            * web development?
-            * systems development?
-            * ios?
-            * android?
-        * how into building things they are
-      * dynamic
-        * are you building things with code?
-          * yes
-            * the dubdubs
-              * who are you working with
-              * what are you working on
-              * when are you working on these projects
-              * where are you working on these projects
-              * how are you build things projects (technologies, editors,
+- we don't
+  - have
+    - club data
+      - static
+        - name
+        - github organization
+        - website
+        - organizers
+      - dynamic
+        - attendance
+      - misc
+        - what a club looks like
+          - flow of the meeting
+    - member data
+      - static
+        - github usernames
+        - emails
+      - qualities
+        - skill level
+          - technologies they know
+            - javascript?
+            - scratch?
+            - web development?
+            - systems development?
+            - ios?
+            - android?
+        - how into building things they are
+      - dynamic
+        - are you building things with code?
+          - yes
+            - the dubdubs
+              - who are you working with
+              - what are you working on
+              - when are you working on these projects
+              - where are you working on these projects
+              - how are you build things projects (technologies, editors,
                 platforms)
-          * no
-            * do you want to build things with code?
-              * yes
-                * what's preventing you from building things with code?
-              * no
-                * why don't you want to build things with code?
-        * projects they have shipped
-          * who they worked with
-        * attendance
-        * when they're building things
-          * inside of class?
-          * during club meeting?
-          * class projects?
-          * outside projects?
+          - no
+            - do you want to build things with code?
+              - yes
+                - what's preventing you from building things with code?
+              - no
+                - why don't you want to build things with code?
+        - projects they have shipped
+          - who they worked with
+        - attendance
+        - when they're building things
+          - inside of class?
+          - during club meeting?
+          - class projects?
+          - outside projects?
