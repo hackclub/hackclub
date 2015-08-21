@@ -12,7 +12,7 @@ checklist for getting everything going:
   [#30](https://github.com/hackedu/hackedu/issues/30)).
   - We're keeping track of people in the private sheet
     https://docs.google.com/spreadsheets/d/1Q6E36NK7N_mKp_LJwMW-P3KUZXPsHQTJWyoyKvrneuc.
-- [ ] Schedule all interviews (_Deadline: 08.20.15_,
+- [x] Schedule all interviews (_Deadline: 08.20.15_,
   [#54](https://github.com/hackedu/hackedu/issues/31))
 - [ ] Send out all acceptances and rejections (_Deadline: 08.25.15_,
   [#48](https://github.com/hackedu/hackedu/issues/48))
