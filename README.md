@@ -26,6 +26,26 @@ you involved as well!
 | Max Wofford    | Technical Fellow           | https://github.com/MaxWofford | max@hackedu.us      |
 | Zach Latta     | Executive Director         | http://zachlatta.com          | zach@hackedu.us     |
 
+## Project Management
+
+We use ZenHub with GitHub Issues to manage our team workflow.
+
+Our board has the following columns:
+
+- **New Issues** - Issues that have not been categorized into a column yet. This
+  is the default location for new issues.
+- **Ideas** - Issues that we're not actively working on as a team, but may
+  decide to prioritize in the future.
+- **Backlog** - Issues that we're actively planning on addressing, but aren't
+  currently high priority.
+- **To Do** - Issues that are in our immediate team queue.
+- **In Progress** - Issues that are currently being worked on by a member of the
+  team. When a team member begins working on an issue, they should drag it into
+  _In Progress_.
+- **Review** - The deliverable for the task has been submitted and is currently
+  being reviewed by another member of the team. This is usually in the form of a
+  pull request.
+
 ## Contact
 
 If you'd like to reach all of us, please send an email to team@hackedu.us :-).
