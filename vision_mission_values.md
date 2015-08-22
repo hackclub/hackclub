@@ -15,6 +15,6 @@ self-confidence, social responsibility, inclusivity, collaboration, and agency.
 
 ## Values
 
-* Transparency
-* Curiosity
-* Integrity
+- Transparency
+- Curiosity
+- Integrity

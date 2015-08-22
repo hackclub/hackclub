@@ -27,22 +27,22 @@ https://hackedu.us
 
 Personally:
 
-* Grand prize with Fuji (http://youtu.be/TjizJRxnUHo?t=42m24s) at PennApps Fall 2014.
-* 1st place with DTZ.js (http://challengepost.com/software/downtozork-js) at
+- Grand prize with Fuji (http://youtu.be/TjizJRxnUHo?t=42m24s) at PennApps Fall 2014.
+- 1st place with DTZ.js (http://challengepost.com/software/downtozork-js) at
   Hacking Generation Y
-* 3rd place with Orbit (http://youtu.be/MY01d647S9Y) at the 2015 LAUNCH
+- 3rd place with Orbit (http://youtu.be/MY01d647S9Y) at the 2015 LAUNCH
   Hackathon.
 
 hackEDU:
 
-* Ran pilot with 24 schools in the Fall
-  * Reached 1000 students
-    * 35% female (double national average in high school)
-    * 18% black/hispanic (3.5x national average in industry)
-  * At the two largest collegiate hackathons, PennApps X and MHacks V (>1000
+- Ran pilot with 24 schools in the Fall
+  - Reached 1000 students
+    - 35% female (double national average in high school)
+    - 18% black/hispanic (3.5x national average in industry)
+  - At the two largest collegiate hackathons, PennApps X and MHacks V (>1000
     attendees each), half of the six winning teams were led by high school
     students, all of whom are part of hackEDU.
-* Currently in the fundraising and advisory board formation stage.
+- Currently in the fundraising and advisory board formation stage.
 
 ##### Where do you, or your team, need the most support right now? Be specific and we'll try to help where we can.
 

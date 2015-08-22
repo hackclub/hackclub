@@ -7,11 +7,11 @@ code have had to go home and do it alone – until now.
  
 **Key stats:**
 
-* In 7 months we're in 40 schools across 11 states and reaching 1,300 high
+- In 7 months we're in 40 schools across 11 states and reaching 1,300 high
   school students.
-  * 32% of constituency is female (nearly 2x national high school average)
-  * 37% of constituency is black/Hispanic (7x industry average)
-  * 12 of our 40 schools have a majority of students on free or reduced lunch
+  - 32% of constituency is female (nearly 2x national high school average)
+  - 37% of constituency is black/Hispanic (7x industry average)
+  - 12 of our 40 schools have a majority of students on free or reduced lunch
 
 # Jonathan
 
