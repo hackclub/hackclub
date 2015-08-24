@@ -1,0 +1,60 @@
+* 08.24.15 Weekly Planning Session
+** Attendees
+- Dave Fontenot
+- Jonathan Leung
+- Max Wofford
+- Zach Latta
+** Agenda
+1. Progress from last week
+2. Week objectives
+3. Revising objectives for this week
+4. Discuss what needs to happen for first club meeting
+5. Standups
+** Notes
+*** Progress Last Week
+- Hack Camp Issues
+  - 14 pull requests merged
+  - 3 pull requests submitted
+  - 12 remaining issues
+- Labs program
+  - 29 in pipeline
+  - Interview status
+    - 18 interviews done so far
+    - 4 interviews scheduled
+    - 7 need to schedule interviews
+  - Diversity
+    - 16 male leaders
+    - 13 female leaders
+    - 5 schools with mixed leadership
+    - 4 schools led by underrepresented minorities
+*** Week Objectives
+**** Finish assembling Labs Team (Dave)
+- Dates to shoot for:
+  - Monday :: Send email saying we'll actually get back to them on Thursday
+  - Tuesday :: Final selection for clubs done (all 12, no adjustments)
+  - Tuesday Evening :: Call all accepted clubs and invite them (also send a email)
+    - They need to get back to us before Thursday with a signed
+      contract and a yes, or a no
+  - Wednesday :: Fill remaining spots with clubs not originally accepted
+  - Thursday :: Send out rejection emails
+  - Friday :: Send books and handwritten letter
+- TODO: Get dates of club fairs and first meetings and write in spreadsheet
+- TODO: Accept a couple clubs on Monday so we can start building playbook now
+**** SF Schools (Max)
+- Figure out what needs to happen to get a club going at Abraham Lincoln
+**** Playbook
+- Create playbook for the first club meeting and club fair
+***** How to write it (Zach)
+- One centralized playbook
+  - Encourage people to write blog posts after every meeting
+  - Have a section at the bottom of the playbook with a list of all blog posts
+    - If a blog post is on Medium, syndicate it in the publication
+    - If the blog post related to a specific section of the playbook, link it
+      there as a case study.
+***** Club Fair (Jonathan)
+- Perhaps chat with Aaroh and Abenezer
+- Keep Zach in the loop
+***** First Club Meeting (Jonathan)
+- Everyone needs laptops
+- Keep Zach in the loop
+**** Hack Camp Issues (Max)
