@@ -5,6 +5,13 @@ The things we need to do to onboard a new person onto the team.
 - [ ] Create Google Apps account
 - [ ] Create IRCCloud account
   - [ ] Download IRCCloud mobile client
+- [ ] Add to calendars
+  - [ ] If they go to https://calendar.google.com they can add the calendar of
+    teammates by typing in their email (ex. `zaphod@hackedu.us`) into the
+    text box under "Other calendars" on the far left.
+  - [ ] Add the shared team calendar by pasting
+    `hackedu.us_l9sps0raf14hmn721076a6f9ms@group.calendar.google.com` into that
+    same text box
 - [ ] Add to GitHub organization
 - [ ] Add to `emails@hackedu.us` Google Group
 - [ ] Add to Google Drive folder
