@@ -58,3 +58,4 @@ Meetings:
 - [07.15.15](meetings/15-07-15_club_things.md)
 - [08.11.15](meetings/15-08-11_accepting_first_12.md)
 - [08.17.15](meetings/15-08-17_selecting_initial_labs_team.md)
+- [08.20.15](meetings/15-08-20_la_clubs.md)
