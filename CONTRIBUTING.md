@@ -30,6 +30,24 @@ Our existing style guides:
 
 - [Markdown](https://github.com/hackedu/meta/blob/master/markdown_style_guide.md)
 
+## Naming conventions
+
+### Branch names
+
+Branch names should adhere to the following:
+
+- All lowercase
+- `-` as space separator for branch names
+
+### File names
+
+File names should follow the following guidelines:
+
+- All lowercase
+- `_` as space separator for file names
+- `-` as a space separator for dates in file names
+- Dates in `YY-MM-DD` format
+
 ## Using GitHub Issues
 
 We use GitHub's built in issue tracker for nearly everything at hackEDU. We
