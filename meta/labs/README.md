@@ -39,6 +39,7 @@ team.
   - [Teagan Mucher](https://github.com/temucher)
 - Project Cipher
 - USC Hybrid High School
+  - [Gemma Busoni](https://github.com/gemmabusoni)
 
 ## Meetings
 
