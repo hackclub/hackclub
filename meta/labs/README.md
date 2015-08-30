@@ -38,6 +38,7 @@ team.
 - Lowell High School
   - [Teagan Mucher](https://github.com/temucher)
 - Project Cipher
+  - [Jevin Sidhu](https://github.com/JevinSidhu)
 - USC Hybrid High School
   - [Gemma Busoni](https://github.com/gemmabusoni)
 
