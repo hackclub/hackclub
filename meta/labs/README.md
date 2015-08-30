@@ -1,4 +1,4 @@
-# Labs Program
+# Labs
 
 This document will contain a brief overview of our labs program and what it'll
 entail going into the 2015 fall semester.
