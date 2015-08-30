@@ -36,6 +36,7 @@ team.
 - Glenaeon Rudolf Steiner School
 - Lowell High School
 - Project Cipher
+  - [Jevin Sidhu](https://github.com/JevinSidhu)
 - USC Hybrid High School
 
 ## Meetings
