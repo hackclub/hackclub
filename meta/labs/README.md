@@ -37,6 +37,8 @@ team.
 - Lowell High School
 - Project Cipher
 - USC Hybrid High School
+  - [Gemma Busoni](https://github.com/gemmabusoni)
+
 
 ## Meetings
 
