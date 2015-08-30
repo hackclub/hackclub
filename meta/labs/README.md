@@ -35,6 +35,7 @@ team.
 - Cherry Hill High School East
 - Glenaeon Rudolf Steiner School
 - Lowell High School
+  - [Teagan Mucher](https://github.com/temucher)
 - Project Cipher
 - USC Hybrid High School
 
