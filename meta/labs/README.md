@@ -27,6 +27,17 @@ team.
 - Title: Lab Director
 - Minimum weekly time commitment: 5 hours outside of clubs
 
+### Lab Directors
+
+#### Cohort 1
+
+- Armijo High School
+- Cherry Hill High School East
+- Glenaeon Rudolf Steiner School
+- Lowell High School
+- Project Cipher
+- USC Hybrid High School
+
 ## Meetings
 
 All meetings related to the labs program should be put into the `meetings`
