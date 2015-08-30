@@ -34,6 +34,7 @@ team.
 - Armijo High School
 - Cherry Hill High School East
 - Glenaeon Rudolf Steiner School
+  - [Harrison Shoebridge](https://github.com/paked)
 - Lowell High School
 - Project Cipher
 - USC Hybrid High School
