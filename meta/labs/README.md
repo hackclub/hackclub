@@ -40,7 +40,7 @@ team.
   - [Teagan Mucher](https://github.com/temucher)
 - Project Cipher
   - [Jevin Sidhu](https://github.com/JevinSidhu)
-  - [Brian TAN Nguyen](https://github.com/NguyenBrian)
+  - [Brian Nguyen](https://github.com/NguyenBrian)
 - USC Hybrid High School
   - [Gemma Busoni](https://github.com/gemmabusoni)
 
