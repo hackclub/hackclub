@@ -44,6 +44,7 @@ team.
   - [Brian Nguyen](https://github.com/NguyenBrian)
   - [Udit Desai](https://github.com/uditdesai)
   - [Vaibhav Yadaram](https://github.com/vaibhavyadaram)
+  - [David Guida](https://github.com/dlgweeduh)
 - USC Hybrid High School
   - [Gemma Busoni](https://github.com/gemmabusoni)
 
