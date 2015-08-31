@@ -41,6 +41,7 @@ team.
 - Project Cipher
   - [Jevin Sidhu](https://github.com/JevinSidhu)
   - [Brian Nguyen](https://github.com/darktorin)
+  - [Udit Desai](https://github.com/uditdesai)
 - USC Hybrid High School
   - [Gemma Busoni](https://github.com/gemmabusoni)
 
