@@ -43,6 +43,7 @@ team.
   - [Jevin Sidhu](https://github.com/JevinSidhu)
   - [Brian Nguyen](https://github.com/NguyenBrian)
   - [Udit Desai](https://github.com/uditdesai)
+  - [Vaibhav Yadaram](https://github.com/vaibhavyadaram)
 - USC Hybrid High School
   - [Gemma Busoni](https://github.com/gemmabusoni)
 
