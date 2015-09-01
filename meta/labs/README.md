@@ -36,6 +36,7 @@ team.
 - Glenaeon Rudolf Steiner School
   - [Harrison Shoebridge](https://github.com/paked)
   - [Sam Finch](https://github.com/samfi)
+  - [Rafe j. Skidmore](https://github.com/rafej)
 - Lowell High School
   - [Teagan Mucher](https://github.com/temucher)
 - Project Cipher
