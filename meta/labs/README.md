@@ -36,10 +36,12 @@ team.
 - Glenaeon Rudolf Steiner School
   - [Harrison Shoebridge](https://github.com/paked)
   - [Rafe Skidmore](https://github.com/rafej)
+  - [Sam Finch](https://github.com/samfi)
 - Lowell High School
   - [Teagan Mucher](https://github.com/temucher)
 - Project Cipher
   - [Jevin Sidhu](https://github.com/JevinSidhu)
+  - [Brian Nguyen](https://github.com/darktorin)
 - USC Hybrid High School
   - [Gemma Busoni](https://github.com/gemmabusoni)
 
