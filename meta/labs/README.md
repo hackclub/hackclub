@@ -35,7 +35,11 @@ team.
 - Cherry Hill High School East
 - Glenaeon Rudolf Steiner School
   - [Harrison Shoebridge](https://github.com/paked)
+<<<<<<< HEAD
   - [Rafe Skidmore](https://github.com/rafej)
+=======
+  - [Sam Finch](https://github.com/samfi)
+>>>>>>> 3fca12e... add my name to cohort 1
 - Lowell High School
   - [Teagan Mucher](https://github.com/temucher)
 - Project Cipher
