@@ -23,9 +23,6 @@ Hacker Space
 - **[Before the club fair](#before-the-club-fair)**
   - Prep the team
   - Create physical materials
-- **[During the club fair](#during-the-club-fair)**
-  -
-- **[After the club fair](after-the-club-fair)**
 
 ## Overview
 
@@ -54,12 +51,9 @@ If people don't think you're crazy, you're not being crazy enough. Every other
 
 - Get a booth in the middle of the event, not somewhere off to the
   side.
-- Having a [giant eye-catching sign](#giant-eye-catching-sign) that is easy to
-  see from far away.
-- Having
-  [desirable and unique items to give away/sell](#giveaways-or-items-to-sell)
+- Having a giant eye-catching sign that is easy to see from far away.
+- Having desirable and unique items to give away/sell.
 - Do something else that is completely crazy and eye-catching.
-
 
 ### Be extremely welcoming
 
