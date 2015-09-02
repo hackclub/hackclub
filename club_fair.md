@@ -37,10 +37,6 @@ There are two primary strategies to do this:
 - [Be extremely welcoming](#be-extremely-welcoming)
 - [Follow up](#follow-up)
 
-If you do the first two, you'll look like this:
-
-![](img/peacock_dog.jpeg)
-
 Why is this important?
 [Because first impressions make a big impact](http://startupclass.samaltman.com/courses/lec07/).
 
