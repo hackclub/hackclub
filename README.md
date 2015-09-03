@@ -21,6 +21,7 @@ you involved as well!
 
 | Name           | Position                   | Link                          | Email               |
 | -------------- | -------------------------- | ----------------------------- | ------------------- |
+| Dave Fontenot  | Director of Community      | http://davefont.com/          | dave@hackedu.us     |
 | Gemma Busoni   |                            | https://twitter.com/grbusoni  | gemma@hackedu.us    |
 | Jonathan Leung | Founder                    | http://jonl.org               | jonathan@hackedu.us |
 | Max Wofford    | Technical Fellow           | https://github.com/MaxWofford | max@hackedu.us      |
