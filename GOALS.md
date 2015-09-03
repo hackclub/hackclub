@@ -80,11 +80,11 @@ This playbook should include:
 - Suggested format and facilitation guidelines for running club meetings
 - A series of workshops to be run in clubs
 
-We're running what we're calling our
-[labs program](https://github.com/hackedu/hackedu/tree/master/meta/labs_program)
-to build a diverse team of clubs to iterate on the club playbook with. We'll be
-focusing on this set of clubs as our testing ground for nearly everything going
-into this next semester.
+We're running what we're calling
+[Labs](https://github.com/hackedu/hackedu/tree/master/meta/labs) to build a
+diverse team of clubs to iterate on the club playbook with. We'll be focusing on
+this set of clubs as our testing ground for nearly everything going into this
+next semester.
 
 ## Scale
 
