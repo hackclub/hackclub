@@ -1,4 +1,13 @@
-Agenda
+# Non-labs clubs/Community
+
+_In attendance:_
+
+- Jonathan Leung <jonathon@hackedu.us>
+- Zach Latta <zach@hackedu.us>
+- Dave Fontenot <dave@hackedu.us>
+- Max Wofford <max@hackedu.us>
+
+-------------------------------------------------------------------------------
 - What do we want to offer non-labs teams?
 - What do we do with new clubs that apply?
 - What does the on-boarding process look like? (I'm specifically thinking about Selynna's club)
