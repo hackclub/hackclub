@@ -33,6 +33,7 @@ team.
 
 - Armijo High School
 - Cherry Hill High School East
+  - [Bogdan Vitoc](https://github.com/Bogidon)
 - Glenaeon Rudolf Steiner School
   - [Harrison Shoebridge](https://github.com/paked)
   - [Sam Finch](https://github.com/samfi)
