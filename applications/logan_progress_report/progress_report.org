@@ -1,0 +1,352 @@
+#+LANGUAGE: en
+#+OPTIONS: ':t
+#+LATEX_HEADER: \usepackage[margin=1.25in]{geometry}
+#+LATEX_HEADER: \usepackage{parskip}
+#+LATEX_HEADER: \usepackage{subfig}
+#+LATEX_HEADER: \captionsetup[table]{belowskip=12pt,aboveskip=4pt}
+#+TITLE: hackEDU Progress Report
+#+LATEX: \newpage
+In our original grant proposal we outlined five goals for 2015:
+
+1. Increase the number of student-run high school coding clubs in our network
+2. Develop our "club in a box" offering
+3. Strengthen connections amongst clubs and devise pathways for members to join
+   the larger hackEDU community
+4. Leverage partnerships to continue growing our club network
+5. Measure our effectiveness and automate our feedback system
+
+The first five sections below indicate our progress on each goal. The following
+sections provide more insight into the organization as a whole.
+* Increasing the Number of Clubs We Serve
+Since submitting our proposal in April, we've expanded our reach by 11 clubs and
+two countries, bringing our total reach to 47 clubs across 11 states and 4
+countries, reaching an estimated 1,500 students.
+
+#+CAPTION: Current club locations
+[[./img/clubs.png]]
+
+We plan to onboard an additional 14 schools during the remainder of 2015. That
+brings our total expansion to 25 clubs this year, less than the original 60
+planned.
+
+Over the summer we received applicants from as far away as Zimbabwe,
+Indonesia, Australia, and Hong Kong. After talking with them, we came to the
+conclusion that if we wanted to properly build Hack Clubs in their countries, we
+had to have absolute confidence in our "club in a box". We decided to prioritize
+quality over quantity.
+
+** Press Coverage
+Over the past few months we've been mentioned in the below publications. This
+has strengthened our brand in the existing communities of potential club leaders
+and helped us reach entirely new audiences.
+
+- [[https://stories.californiasunday.com/2015-06-07/real-teenagers-silicon-valley/][California Sunday magazine]] (cover story, LA Times & SF Chronicle, 400k+ readers)
+- [[http://www.today.com/video/tech-savvy-teens-venturing-out-on-their-own-461274179877][The Today Show]]
+- [[http://www.usatoday.com/story/tech/2015/06/01/young-developers-create-apple-apps/28302657/][USA TODAY]]
+- [[https://www.edsurge.com/news/2015-06-05-raise-a-glass-it-s-now-possible-to-become-a-thiel-fellow-and-legally-drink][EdSurge]]
+* Creating Our "Club in a Box"
+<<sec:club-in-a-box>>
+We've made substantial strides since April creating our "club in a box". One of
+those strides has been renaming it to the Hack Club Playbook, which is what
+we'll be referring to it as moving forward.
+
+Our design process for creating the club playbook is below.
+
+1. Simulate a club in Hack Camp, our two-week summer program, and create a
+   curriculum for the camp that we're confident in
+2. Create a Hack Camp Playbook and have high school students lead the camp
+   from it
+3. Take what we learned from building and running the Hack Camp Playbook and
+   work with 12 clubs during the first semester of the 2015 - 2016 school year
+   to build the first iteration of the Hack Club Playbook. We're calling this
+   team of clubs [[sec:labs][Labs]].
+   - /We are currently here./ More details below in the /[[sec:labs][Labs]]/ section.
+4. We expect to begin global distribution of the Hack Club Playbook at our
+   existing clubs and to turn our attention towards expansion during the second
+   semester of the 2015 - 2016 school year.
+
+** Hack Camp
+This summer we ran Hack Camp, a two-week summer program, to create the first
+iteration of our club playbook.
+
+We brought 30 local high school students from little or no coding
+experience to publishing their first websites and games. We had two goals:
+
+1. Create an effective curriculum for running Hack Camp that approximates club
+   activities
+2. Have high school students replicate Hack Camp, similar to how they would run
+   a club
+
+We ran four sessions of Hack Camp, ranging in size from 3 to 12 hackers. The
+first three sessions we iterated on versions of our curriculum. For the final
+session, we created the "Hack Camp Playbook" and invited previous camp
+attendees, along with one of our high school volunteers from LA, to run camp
+entirely from that playbook.
+
+The Hack Camp Playbook is our first prototype of the Hack Club Playbook.
+*** Camp Applicants
+Within weeks of announcing Hack Camp, despite being targeted at local high
+school students, we received over 150 applications from 13 states and 5
+countries for the 30 spots available.
+
+#+CAPTION: Hack Camp applicants (not shown: Ireland, Jamaica, and New Zealand)
+#+NAME: fig:hack_camp_applicant_map
+[[./img/hack_camp_applicant_map.png]]
+
+To keep our summer focused, we decided to only work with local students.
+*** Curriculum
+The format we chose for Hack Camp split camp time into two parts: /workshops/
+and /project time/.
+
+- Workshops are written documents that walk hackers through the process of
+  building something (generally a type of website, like Instagram). Workshops
+  are between 1-2 hours long and are used to introduce new concepts.
+- In project time pairs of hackers work on projects together. Projects help
+  solidify the hackers' understanding of introduced concepts and help them learn
+  independent problem solving skills (like using Google to find answers to their
+  coding questions).
+
+Hack Camp days follow the format shown in tables [[tab:week-1]] and [[tab:week-2]].
+
+#+CAPTION: Week 1
+#+NAME: tab:week-1
+| Monday       | Tuesday      | Wednesday    | Thursday     | Friday       |
+|--------------+--------------+--------------+--------------+--------------|
+| Workshop     | Project time | Workshop     | Project time | Workshop     |
+| Project time | Demos        | Project time | Demos        | Project time |
+| Demos        |              | Demos        |              | Demos        |
+
+#+CAPTION: Week 2
+#+NAME: tab:week-2
+| Monday       | Tuesday      | Wednesday    | Thursday     | Friday       |
+|--------------+--------------+--------------+--------------+--------------|
+| Project time | Workshop     | Project time | Workshop     | Project time |
+| Demos        | Project time | Demos        | Project time | Demos        |
+|              | Demos        |              | Demos        |              |
+
+We created 5 workshops for Hack Camp.
+
+1. *Portfolio* - Builds a personal portfolio website and gets the hackers set up
+   with all of the tools they need for writing code. This also introduces HTML
+   and CSS, two of the three languages used to write websites.
+2. *Texting* - Builds a website that sends text messages to the hackers' phones
+   and introduces the hackers to JavaScript, the final of the three languages
+   used to write websites.
+3. *Instagram* - Builds a very rudimentary clone of the Instagram app and
+   further builds their knowledge of JavaScript.
+4. *Messenger* - Builds a real-time chat application and introduces the use of a
+   server to build more complex web applications.
+5. *To-Do List* - Builds a to-do list and further develops knowledge of using
+   servers to create complex web applications.
+*** The Hack Camp Playbook
+We wanted the final session of Hack Camp to be run by people representative of
+our club leaders, so we invited two high school students who were previously
+participants of Hack Camp and one of our high school volunteers from LA to come
+to San Francisco to run the program from the Hack Camp Playbook we created.
+
+The Hack Camp Playbook consists of three parts:
+
+1. An activity-by-activity schedule for each day
+2. Guidelines on running each activity
+3. Workshops
+
+Check out the full Hack Camp Playbook at https://hack-camp-playbook.hackedu.us.
+*** Camper Feedback
+What our participants had to say about Hack Camp:
+
+#+BEGIN_QUOTE
+"It is an understatement to say that hackEDU is one of those experiences that
+impacted my life. There's a strict, obvious contrast with high school: a place
+full of judgment, an environment that devalues creative freedom, an atmosphere
+so lonely with constant glorification of useless issues. It is such a wonderful
+thing to know a place so different from that exists."
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"I have always, in the back of my head, known that we should overcome challenges
+and push our limits, but I never lived by such thinking until this camp. I
+learned that despite the fancifulness of dogma, such as "rising up to the
+challenge and learning from mistakes," those lessons are actually extremely
+true. I was able to live by those lessons through coding because I did indeed
+face many challenges and learned from many mistakes. I definitely learned to
+lessen my fixed mindset and focus on having a growth mindset thanks to this
+camp."
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"The way Hack Camp is taught is totally opposite of what our school system is.
+This camp really opened my mind to the different ways that I can learn."
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"In the camp's mere two weeks, more than in any part of my life, not in my days
+as a fetus, an infant, a toddler, an elementary schooler, a middle schooler, a
+high school freshman, a high school sophomore, or a high school junior, have I
+made so many mistakes."
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+"The last few hours before presentations, I worked with more intensity and drive
+than I ever devoted to schoolwork, and I accomplished great things. I felt
+euphoric at the end of each day because I managed to implement a feature I
+previously thought impossible to implement. It really taught me that I could
+'distort reality' and make things HAPPEN."
+#+END_QUOTE
+
+/Some grammar errors in quotes have been corrected./
+*** Ratings
+When asked "How likely are you to recommend Hack Camp to a friend?" at the end
+of the camp, we got the responses shown in table [[tab:hack-camp-ratings]].
+
+#+CAPTION: Hack Camp ratings
+#+NAME: tab:hack-camp-ratings
+|  Cohort | Average | Median |
+|---------+---------+--------|
+|       1 | 9/10    | 9/10   |
+|       2 | 9.4/10  | 9/10   |
+|       3 | 9/10    | 9.5/10 |
+|       4 | 8.8/10  | 9/10   |
+|---------+---------+--------|
+| Overall | 9.05/10 | 9.5/10 |
+
+Overall, we are very pleased with the outcome of Hack Camp. We made great
+strides in developing the Hack Club Playbook and camper feedback tells us we hit
+the right social, emotional, and community goals. We also generated $5765.00 of
+revenue.
+** Labs
+<<sec:labs>>
+Our original goal was to spend the summer building our Hack Club Playbook and
+roll it out at the beginning of the 2015 - 2016 school year. After Hack Camp, it
+became very clear to us that the only way to get the club experience right is to
+build it iteratively as clubs are running.
+
+We've decided to take this current school semester and focus our attention on 12
+clubs, an initiative that we're calling Labs. Clubs that are a part of Labs are
+the clubs we've selected to build the Hack Club Playbook with us. If all goes
+smoothly, in the second semester we'll roll out the playbook at all of our
+remaining clubs and create new clubs.
+
+#+CAPTION: Labs club locations
+#+NAME: fig:labs-clubs-map
+[[./img/labs_clubs_map.png]]
+* Strengthening and Expanding the hackEDU Community
+In late August we hired a full-time Director of Community, Dave Fontenot, to
+strengthen our existing community and to focus on growing it when we set our
+sights on expansion.
+
+Dave previously started [[http://mhacks.org/][MHacks]], the largest hackathon in the world, and was key
+in bringing hackathons to colleges all around the globe: 50,000 people will
+attend collegiate hackathons by the end of this year compared to the estimated
+500 attendees in 2012. In addition to MHacks, he started the online community
+for collegiate hackathons, [[https://www.facebook.com/groups/hackathonhackers][Hackathon Hackers]], which now engages more than 18,000
+people and has over 300,000 posts in the past year.
+
+I cannot think of anyone in the world better equipped or more capable than Dave
+to fill this position.
+
+** Hello World Posts
+One of the ways Dave has started strengthening our community is by encouraging
+our leaders to write about their experiences. Selynna Sun, one of our leaders
+from Los Altos High School in the Bay Area, published an article about starting
+a club and got feedback from alumni encouraging her and offering advice
+(https://medium.com/hack-edu/hello-world-431d2040a277).
+
+Jevin Sidhu, a leader from Toronto, had previously written about Cipher, the
+coding community he is building in
+https://medium.com/cipher-writes/cipher-don-t-code-alone-e38005270844 and shared
+it with the club leader Facebook group where it prompted significant discussion.
+
+Harrison Shoebridge from Glenaeon Rudolf Steiner School in Sydney wrote about
+his club in https://medium.com/hack-edu/hello-world-3bacfe353bcb. He also shared
+it with the club leader Facebook group where it prompted discussion from other
+leaders around the world.
+* Strategic Partnerships
+We furthered our partnership with Hacker Fund to bring coding to underserved
+communites around the country through a bus tour. They will be renting a bus and
+touring the country giving workshops and running hackathons at high schools.
+We'll be one of the organizations providing curriculum. At each school they go
+to, they are going to make an effort to leave the school with the foundation for
+a Hack Club set up.
+
+We partnered with Galvanize, a network of co-working spaces, and Google to host
+Hack Camp over the summer. The program was hosted out of Galvanize's San
+Francisco location and a portion of the space was provided by Google for
+Entrepreneurs. We've extended this partnership with Galvanize and Google to
+secure in-kind office space during the school year.
+
+We are also currently working on a few exciting partnerships with other
+organizations in our space. As soon as we have contracts signed, we will update
+you.
+* Measuring Effectiveness and Automating Feedback Collection
+During Hack Camp we placed a very heavy emphasis on feedback and consistently
+measuring the quality of each day of camp. We experimented with aggregating all
+of the campers' feedback to give us day-to-day insight into the quality of the
+experience, as shown in figure [[fig:hack-camp-feedback]].
+
+#+CAPTION: Day-to-day feedback from the third session of Hack Camp
+#+NAME: fig:hack-camp-feedback
+[[./img/hack_camp_feedback_chart.png]]
+
+As we go into the first semester of the 2015 - 2016 school year, the collection
+of data and the automation of an efficient feedback system continues to be very
+important to us. We're thinking of the best way to go about this with Labs and
+will be working on this over the next few months -- stay tuned for our next
+report.
+* Additional Accomplishments
+** Advisors
+As we've progressed these past months, we've been very fortunate to grow and
+maintain an exceptionally talented team of advisors.
+
+- [[https://en.wikipedia.org/wiki/Tom_Gruber][Tom Gruber]] - Inventor of Siri (sold to Apple for $200M, installed on every
+  iPhone, iPod Touch, and iPad manufactured since October 2012)
+- [[https://en.wikipedia.org/wiki/Tom_Preston-Werner][Tom Preston-Werner]] - Co-founder and former CEO of GitHub (valued at $2B,
+  over 10M users)
+- [[http://www.nytimes.com/2010/01/03/jobs/03boss.html?_r=0][Cary Rosenzweig]] - Former CEO of IMVU (3M active users, brought the company
+  to $50M/year in revenue)
+- [[https://www.linkedin.com/in/quinnslack][Quinn Slack]] - Founder of Sourcegraph & Blend Labs, early employee at Palantir
+- Pierre Arys - Founder of Bookneto (acquired), early employee at Addepar
+* Financials
+** Expenses
+#+NAME: tab:expenses
+| Category  |  April |     May |    June |    July |  August |    Total |
+|-----------+--------+---------+---------+---------+---------+----------|
+| Food      |  70.16 |  189.21 |  142.49 |  163.90 |  151.73 |   717.49 |
+| Salary    |   0.00 | 4560.00 | 3840.00 | 5920.00 | 5120.00 | 19440.00 |
+| Services  |  19.65 |   49.15 |    6.00 |   41.98 |   92.88 |   209.66 |
+| Transport |  63.47 |  182.24 |  338.60 |  177.00 |  241.84 |  1003.15 |
+| Travel    |   0.00 |  126.00 |  955.65 |  167.77 |  331.45 |  1580.87 |
+| Misc      |   0.00 |  250.24 |  736.78 |   77.00 |   45.39 |  1109.41 |
+|-----------+--------+---------+---------+---------+---------+----------|
+| Total     | 153.28 | 5356.84 | 6019.52 | 6547.65 | 5983.29 | 24060.58 |
+#+TBLFM: $7=vsum($2..$6);f2::@8$2=vsum(@2..@7)::@8$3=vsum(@2..@7)::@8$4=vsum(@2..@7)::@8$5=vsum(@2..@7)::@8$6=vsum(@2..@7)::@8$7=vsum(@2..@7)
+** Summary
+These past few months one of our greatest assets has been focus. Not actively
+fundraising allowed us to dedicate the entire team to creating the Hack Club
+Playbook and gave us the focus to successfully execute on Hack Camp.
+
+As we enter the 2015 - 2016 school year I believe that mantaining that same
+level of focus will be crucial to our success. With our current monthly burn
+rate of $9,920.00 (this includes the Director of Community hire) we will run out
+of cash March 2016 (in 6 months).
+
+With an additional $50,000 cash infusion we would have until August 2016, giving
+us 5 additional months of runway at our current burn rate. This would give us
+significantly more time to focus on building and deploying the best club
+playbook possible this school year, laying the foundation for all of our impact
+in the years to come.
+
+#+CAPTION: Financial summary
+#+NAME: tab:financial-summary
+| Category            |   April |      May |     June |     July |   August |    Total |
+|---------------------+---------+----------+----------+----------+----------+----------|
+| Expenses            |  153.28 |  5356.84 |  6019.52 |  6547.65 |  5983.29 | 24060.58 |
+| Income              | 5000.00 | 60950.00 | 15000.00 |  3264.98 |  2500.02 | 86715.00 |
+| Reimbursements Owed |   52.88 |    11.00 |    39.38 |     0.00 |   183.91 |   287.17 |
+| Total Assets        |   87.46 |  4987.06 | 60591.22 | 69611.08 | 66328.41 |      N/A |
+|---------------------+---------+----------+----------+----------+----------+----------|
+| Net                 | 4846.72 | 55593.16 |  8980.48 | -3282.67 | -3483.27 | 62654.42 |
+#+TBLFM: @2$7..@4$7=vsum($2..$6);f2::@6$2..@6$7=@3-@2::@2$2=remote(tab:expenses,@8$2)::@2$3=remote(tab:expenses,@8$3)::@2$4=remote(tab:expenses,@8$4)::@2$5=remote(tab:expenses,@8$5)::@2$6=remote(tab:expenses,@8$6)
+
+Note: in table [[tab:financial-summary]], "Total Assets" refers to the total
+financial assets we own as an organization. This includes all of our bank
+accounts and other places, like PayPal, where we have money.
