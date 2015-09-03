@@ -14,7 +14,8 @@ Part of the GitHub Flow is submitting pull requests. See
 https://help.github.com/articles/using-pull-requests/ for a good overview of
 what pull requests are and how to use them. Internally, we use the _shared
 repository model_ for collaborative development, though we encourage external
-contributors to contribute through the _fork & pull model_.
+contributors to contribute through the _fork & pull model_ and assign a member
+of the core team to review the pull request.
 
 When contributing, please pay attention to the commit format of other commits in
 the repository.
