@@ -19,13 +19,10 @@ Hacker Space
 - **[Overview](#overview)**
   - [Be a fanatic peacock](#be-a-fanatic-peacock)
   - [Be extremely welcoming](#be-extremely-welcoming)
-  - [Be prepared](#be-prepared)
+  - [Follow up](#follow-up)
 - **[Before the club fair](#before-the-club-fair)**
   - Prep the team
   - Create physical materials
-- **[During the club fair](#during-the-club-fair)**
-  -
-- **[After the club fair](after-the-club-fair)**
 
 ## Overview
 
@@ -34,51 +31,82 @@ club meeting as possible.
 
 Your primary target: _freshman_.
 
-There are three primary strategies to do this:
+There are two primary strategies to do this:
 
 - [Be a fanatic peacock](#be-a-fanatic-peacock)
 - [Be extremely welcoming](#be-extremely-welcoming)
-- [Be prepared](#be-prepared)
+- [Follow up](#follow-up)
 
-If you do the first two, you'll look like this:
-
-![](img/peacock_dog.jpeg)
+Why is this important?
+[Because first impressions make a big impact](http://startupclass.samaltman.com/courses/lec07/).
 
 ### Be a fanatic peacock
 
-Get as much attention as possible, this you can:
+If people don't think you're crazy, you're not being crazy enough. Every other
+  club is giving the same boring spiel. Attract as much attention as possible:
 
-- Trying to get a booth in the middle of the event, not somewhere off to the
+- Get a booth in the middle of the event, not somewhere off to the
   side.
-- Having a [giant eye-catching sign](#giant-eye-catching-sign) that is easy to
-  see from far away.
-- Having
-  [desirable and unique items to give away/sell](#giveaways-or-items-to-sell)
-- Do something else that is completely crazy and eye-catching
+- Having a giant eye-catching sign that is easy to see from far away.
+- Having desirable and unique items to give away/sell.
+- Do something else that is completely crazy and eye-catching.
 
 ### Be extremely welcoming
 
-- Initiative conversation with everyone within a 2 meter radius around your
-  booth
-- Be as welcoming and friendly as possible
-- Look and sound excited about Hack Club
-- Meet each person where they are at
+If you're standing behind your table waiting for people to come, you're doing
+it wrong. Don't wait for people to come. Invite them:
 
-### Be prepared
+- Smile. 
+- Initiative conversation with everyone.
+- Sound excited. Bring the energy.
+- Make eye contact.
+- Stand in front of your table.
 
-- Create a list of questions that you think people will ask you and make sure
-  that every officer answers the questions in a similar way
-- Be explicit about who will be doing what ahead of time
+### Follow up
+
+Most clubs fail to follow up at all. Club fair attracts people's initial
+attention but that's not enough to get them to show up to the first meeting.
+They likely met 10 clubs at the fair so make sure they remember you:
+
+- Make sure to collect everyone's numbers or emails so that you can follow-up.
+  An easy way to do this is to have clipboards with sign up sheets for each
+  club member at the fair. Make sure you have more than enough pens.
+- As they walk away, always end with "See you at the meeting on
+  Tuesday, Sally!"
+- Mentioning their name multiple times helps make the interaction personal
+- Send everyone a text and/or email right away after the club fair. Timing is
+  important. Don't wait. Maybe send something simple like "Welcome to the
+  revolution!"
+
+<!-- TODO: Gather nicely written examples! -->
 
 ## Before the club fair
 
-- [Prep the team](#prep-the-team)
-- [Create physical materials](#create-physical-materials)
-
 ### Prep the team
 
-You will need to figure out how you're going to tell people about your club.
-Collectively come up with a short spiel that you tell people.
+- Try to have 3-5 people at the club fair
+- Create a list of questions that you think people will ask you and make sure
+  that every officer answers the questions in a similar way
+- Collectively come up with a 30 second pitch that gets people excited about
+  your club.
+
+If you want to make an amazing pitch, follow [this
+guide.](http://venturehacks.wpengine.com/wp-content/uploads/2009/12/Pitching-
+Hacks.pdf)
+
+#### Play-by-play
+
+With your officers who will be at the club fair, walk through the
+play by play of what you want someone coming up to your booth to **feel**
+and what you DON'T want someone coming up to your booth to **feel**.
+
+- Practice role playing the club fair (where someone acts as a potential new
+  club member and someone else is a club officer at the club fair)
+- Don't let people get away with being boring in practice. You practice how
+  you play. Make sure people are ridiculously high energy even in practice.
+- You shouldn't have to memorize the pitch. Make sure it feels natural.
+  Different people might have different pitches that work for them and that's
+  ok.
 
 **Easily excitable freshman:**
 
@@ -129,192 +157,6 @@ finding out what their interests are and relating them to the programming club.
 | **FRESHMAN**   | _(Slowly with surprise and slightly piqued interest)_ Whaatttt...                                                                                                                                         |
 | **OFFIER**     | Yeah, and check out this drawing app that Greg made...                                                                                                                                                    |
 
-
-Moreover, people will be asking you questions at the club fair.
-
-You and your team should be on the same page about how you answer their
-questions:
-
-- What does your club do?
-- So why should I join your club?
-- How often do you meet?
-- What's the time commitment?
-- What's programming?
-
-You could also think about other scenarios for other kind of people that you meet
-at the club fair and figure out how you would meet them where they're at.
-
-Some potential scenarios are:
-
-- Someone is more technically advanced than every other officer
-  - (have the attitude of welcoming them excited about the possibility of being
-    able to learn from them)
-- Someone who feels that they are really bad a math and therefore will be bad
-  at programming
-  - (convince them that how good or bad at math doesn't really matter)
-- Someone really wants to get into programming but think it's really hard and
-  requires you to know dark magic
-    - (convince them it's really easy perhaps by showing them how to write some
-      basic lines of code in the JavaScript console then and there.)
-
-Also, make sure that everyone on the team has a clear understanding of what they
-need to do for the club fair.
-
-You could:
-
-- have everyone read this document
-- have a meeting to discuss who is doing what by when
-- practice role playing the club fair (where someone acts as a potential new
-  club member and someone else is a club officer at the club fair)
-
-### Create physical materials
-
-**Checklist overview:**
-
-- [Giant eye-catching sign](#giant-eye-catching-sign)
-- [Flyers](#flyers)
-- [Signup materials](#sign-up-materials)
-  - Signup forms (perhaps 20 sheets of paper)
-  - Clipboards (perhaps 3-6)
-  - Pens (2x what you think you will need)
-- [Giveaways or items to sell](#giveaways-or-items-to-sell)
-- [Computers setup with demos](#computers-setup-with-demos)
-
-#### Giant eye-catching sign
-
-You want your sign to:
-
-- be big: as in 6 feet by 3 feet
-- stand out: use a unique font and color
-- be readable from across the room
-
-Other clubs have found that buying paint and painting a giant poster board
-to be an effective way to make a sign.
-
-<!-- TODO: Get examples -->
-
-#### Flyers
-
-You want your flyers to include:
-
-- where room your club meetings are: `room 311`
-- what day of the week and time you meet: `mondays at 3pm`
-- the start date of your club
-- contact email
-
-Make sure your flier is not too cluttered with other graphics.
-
-<!-- TODO: Get examples -->
-
-#### Sign-up materials
-
-Some clubs have found it helpful to just use a physical signup form that has
-the columns:
-
-- full name
-- email
-- phone number
-
-Make sure you have
-
-- pre-made forms
-- clipboards (you may want 3-6)
-- pens (have 2x the amount of pens you need because they get lost)
-
-You may want each officer to be holding a clipboard and leaving 3 clipboards on
-the table for people to signup on.
-
-<!-- TODO: Get examples -->
-
-#### Giveaways or items to sell
-
-You can attract people to the table if you have something to give away or sell.
-
-A really good example is at the hackEDU club at Mission Vista High School,
-it is their tradition to sell bags of kettle corn every club fair.
-
-As a result, a _**GIANT**_ line forms in front of their booth. The other people
-that see the line wonder what it is and wait in line as well!
-
-Because there is a line now, their officers go up and down the line to greet
-and talk to each person to convince them that programming club is awesome.
-
-Some schools don't allow you sell things or giveaway food. In this situation,
-think about what else you could provide that would make you stand out against
-all the other clubs.
-
-<!-- TODO: Get examples -->
-
-#### Computers setup with demos
-
-Have computers setup to show off several demos of what you've made at the club.
-
-<!-- TODO: Get examples -->
-
-### Prepare the team
-
-- Try to have 3-5 people at the club fair
-- Create a list of questions that you think people will ask you and make sure
-  that every officer answers the questions in a similar way
-- Be explicit about who will be doing what ahead of time
-
-## During the club fair
-
-### Setup
-
-Show up early. Sometimes tables are first come first serve so you want to get
-a table in the middle, not off to the side.
-
-#### Setting up people
-
-This section I'm less sure about:
-
-- should people stand in front of the table or behind the table?
-- how many representatives should be behind the table and how many should be
-  elsewhere doing something else? What should they be doing?
-
-#### Setting up physical materials
-
-**[Giant eye-catching sign](#giant-eye-catching-sign)**
-
-- Put it in a place where people can see it from far away.
-
-**[Flyers](#flyers)**
-
-- Leave a stack on the table
-- Give some to some officers to hand out
-
-**[Signup materials](#sign-up-materials)**
-
-- Leave 3 clipboards on the table so 3 people can signup at once
-- Have each officer not behind the table hold a clipboard
-
-**[Giveaways or items to sell](#giveaways-or-items-to-sell)**
-
-- You can leave these behind the table and give them out after someone either
-  signs up or buys it.
-
-**Computers setup with demos](#computers-setup-with-demos)**
-
-- Set 2-3 computers up on the table with the demos of your apps open in
-  multiple tabs.
-
-### Running the show:
-
-Make sure that you are:
-
-- [a fanatic peacock](#be-a-fanatic-peacock)
-- [extremely welcoming](#be-extremely-welcoming)
-
-Why is this important?
-[Because first impressions make a big impact](http://startupclass.samaltman.com/courses/lec07/).
-
-#### Role-play
-
-With your officers who will be at the club fair, walk through the
-play by play of what you want someone coming up to your booth to **feel**
-and what you DON'T want someone coming up to your booth to **feel**.
-
 **Not Ideal**
 
 _Thoughts going through someone's mind that you want to avoid_
@@ -326,11 +168,11 @@ _Thoughts going through someone's mind that you want to avoid_
 
 **Ideal**
 
-- Whoah, they have a crazy sign that's super colorful, let me go check that out!
 - Wait, why is there a giant line in front of that table? Lemme check that out!
 - Wait, wtf, why is there someone in a dinosaur suit over there?
 - Hey, Jessica, David, did you see that booth over there?! They're nice and
   selling the best kettle corn ever!
+- Whoah, they have a crazy sign that's super colorful, let me go check that out!
 
 #### When they come up to your booth
 
@@ -352,7 +194,7 @@ _Thoughts going through someone's mind that you want to avoid_
 **DO NOT INITIALLY**
 - use jargon
 - focus on the _language_ or _tools_ you used to build the project
-- focus on about _how_ the project works
+- focus on _how_ the project works
 - focus on the fact that _you_ built the project
 
 **DO**
@@ -384,10 +226,3 @@ clearly already technical, then you can start using technical terms.
   - you demo a project about dinosaurs
   - etc.
   ```
-
-
-## After the club fair
-
-- Email everyone who signed up and make them feel welcome
-
-<!-- TODO: Gather nicely written examples! -->
