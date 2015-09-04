@@ -68,7 +68,7 @@ _In attendance:_
 
 -------------------------------------------------------------------------------
 
-- Generally inclues highly advanced technology, unfortunately very unreliable
+- Generally includes highly advanced technology, unfortunately very unreliable
 - Towels
   - The most important item a hitchhiker can have.
   - "to know where one's towel is" = to be in control of one's life
@@ -81,3 +81,4 @@ Meetings:
 - [08.11.15](meetings/15-08-11_accepting_first_12.md)
 - [08.17.15](meetings/15-08-17_selecting_initial_labs_team.md)
 - [08.20.15](meetings/15-08-20_la_clubs.md)
+- [09.03.15](meetings/15-09-03_who_writes_the_initial_playbook.md)
