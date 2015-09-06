@@ -28,3 +28,4 @@ Build hackEDU with us. Here are two ways to get started:
 
 - [Create an issue](https://github.com/hackedu/hack-camp/issues)
 - [Join us on IRC](https://webchat.freenode.net/?channels=hackedu)
+- Email us at team@hackedu.us
