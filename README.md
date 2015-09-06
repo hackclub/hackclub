@@ -6,11 +6,11 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/hackedu/meta/5243af92814b6daacadd66e1342ad073e023544c/logos/hackedu_letter_opaque.png" alt="hackEDU"/></p>
 <p align="center">
-<b><a href="SCHEDULE.md">schedule</a></b>
+<b><a href="playbook/">playbook</a></b>
 |
-<b><a href="ACTIVITIES.md">activities</a></b>
+<b><a href="case_studies/">case studies</a></b>
 |
-<b><a href="workshops/">workshops</a></b>
+<b><a href="meta/labs/">labs</a></b>
 </p>
 
 -------------------------------------------------------------------------------
