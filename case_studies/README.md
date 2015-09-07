@@ -6,6 +6,10 @@ clubs and any others that choose to participate.
 Each case study consists of two parts: the planning document and the post-mortem
 document.
 
+See the case studies section in
+[`CONTRIBUTING.md`](../CONTRIBUTING.md#case-studies) for a guide on submitting
+case studies.
+
 ## Planning Document
 
 The planning document, named `planning.md`, contains an outline of what's going
