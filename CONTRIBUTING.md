@@ -73,9 +73,50 @@ going through:
 ## Labs
 
 This section will cover any contribution guidelines specific to
-[Labs](meta/labs).
+[Labs](meta/labs) and any others that choose to participate.
 
-### Case Studies
+### Contributing case studies
+
+First make sure that you've read the
+[`README.md` in the `case study` directory](/case_studies/README.md).
+
+#### Before club events
+
+1. Follow steps 1 - 5 in the
+   ["case study contribution walkthrough" section below](#case-study-contribution-walkthrough)
+2. Find your club's folder (located inside of [`case_studies`](/case_studies))
+3. Inside your club's folder, make sure that the event you are planning has its
+   own folder (create one if it does not already exist)
+4. Inside of this folder, make sure that there is a `planning.md` file (create
+   one if it doesn't exist)
+5. Within the `planning.md` file, include:
+  - An outline of what's going to happen at the event or how a process might
+    work and any associated planning done to make that event great.
+  - A list of problems that you anticipate you might run into and how you might
+    solve them
+6. Follow steps 6 - 10 in the
+   [case study contribution walkthrough](#case-study-contribution-walkthrough)
+
+#### After club events
+
+1. Follow steps 1 - 5 in the
+   [case study contribution walkthrough](#case-study-contribution-walkthrough)
+2. In the same event's folder as the `planning.md` file, make sure that there is
+   a `post-mortem.md` file (create one if it does not already exist).
+3. Inside the `post-mortem.md` file, answer the following questions:
+    - What you end up doing during the event and how did it differ from the
+      original plan?
+    - What went well?
+    - What didn't go well?
+    - What tips do you have for other organizers?
+    - _For example:_
+      - Would you recommend doing or not doing what you did activity?
+      - If you would recommend it, what might they watch out for?
+      - etc.
+4. Follow steps 6 - 10 in the
+   ["case study contribution walkthrough" section below](#case-study-contribution-walkthrough)
+
+#### Case study contribution walkthrough
 
 Below is the recommended contribution flow for submitting
 [case studies](case_studies/).
