@@ -14,9 +14,9 @@ checklist for getting everything going:
     https://docs.google.com/spreadsheets/d/1Q6E36NK7N_mKp_LJwMW-P3KUZXPsHQTJWyoyKvrneuc.
 - [x] Schedule all interviews (_Deadline: 08.20.15_,
   [#54](https://github.com/hackedu/hackedu/issues/31))
-- [ ] Send out all acceptances and rejections (_Deadline: 08.25.15_,
+- [x] Send out all acceptances and rejections (_Deadline: 08.25.15_,
   [#48](https://github.com/hackedu/hackedu/issues/48))
-- [ ] All acceptance contracts signed (_Deadline: 08.28.15_,
+- [x] All acceptance contracts signed (_Deadline: 08.28.15_,
   [#55](https://github.com/hackedu/hackedu/issues/55))
 
 ### Position Information
