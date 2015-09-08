@@ -48,8 +48,8 @@ Each event directory contains two files:
 [a post-mortem document](#post-mortem-document).
 
 See the case studies section in
-[`CONTRIBUTING.md`](../CONTRIBUTING.md#case-studies) for a guide on submitting
-case studies.
+[`CONTRIBUTING.md`](../CONTRIBUTING.md#contributing-case-studies)
+for a guide on submitting case studies.
 
 ## Planning Document
 
