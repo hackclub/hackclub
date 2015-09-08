@@ -28,6 +28,10 @@ club fair, first club meeting, etc.)
 Each event directory contains two files: [a planning document](#planning-document)
 and [a post-mortem document](#post-mortem-document).
 
+See the case studies section in
+[`CONTRIBUTING.md`](../CONTRIBUTING.md#case-studies) for a guide on submitting
+case studies.
+
 ## Planning Document
 
 The planning document, named `planning.md`, contains an outline of what's going

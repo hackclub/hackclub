@@ -69,3 +69,70 @@ going through:
 
 - Getting started: http://rogerdudler.github.io/git-guide/
 - Understanding git (important!): https://youtu.be/1ffBJ4sVUb4
+
+## Labs
+
+This section will cover any contribution guidelines specific to
+[Labs](meta/labs).
+
+### Case Studies
+
+Below is the recommended contribution flow for submitting
+[case studies](case_studies/).
+
+1. Go to [Cloud9](https://c9.io/) and open your "hackedu" workspace.
+2. If you're not already on the `master` branch, switch to it.
+
+        $ git checkout master
+
+3. Update your hackEDU fork.
+
+        $ git pull https://github.com/hackedu/hackedu.git
+
+4. Create a new branch to add the case study to. Branch names should briefly
+   describe the change being made. They should be lowercase and use dashes (`-`)
+   instead of spaces. Since I'm adding the planning for our first meeting, I'm
+   going to call this branch `add-first-meeting-planning`.
+
+        $ git checkout -b add-first-meeting-planning
+
+5. Open up the file you want to modify for the case study and make any
+   additions/modifications. In this case, I'm going to open
+   `case_studies/lowell_high_school/planning.md` and add some example planning
+   to it.
+
+    ![Adding some planning](https://i.imgur.com/HbM24cp.gif)
+
+6. Tell git to add all of your changes (make sure you've saved all of your
+   files).
+
+        $ git add --all
+
+7. Let's tell git to make a commit with our changes and attach a message to the
+   commit. Your message should reflect the change being made. In this case,
+   we're going to set the message to "Add Lowell first meeting planning." Change
+   the message appropriately.
+
+        $ git commit -m "Add Lowell first meeting planning."
+
+8. Push our branch with our changes to GitHub. Replace
+   `add-first-meeting-planning` with your branch name. Git will prompt you for
+   your GitHub username and password. When you start typing your password, it'll
+   look like nothing is happening -- don't worry, git is getting all of your
+   keystrokes and is hiding them for your privacy. Just hit enter when you're
+   done.
+
+        $ git push -u origin add-first-meeting-planning
+
+9. Go to your `hackedu` fork on GitHub (it's at
+   `https://github.com/{username}/hackedu`, mine is at
+   https://github.com/zachlatta/hackedu). You should see the following:
+
+    ![Recently pushed branches notification](https://i.imgur.com/NOeQyBe.png)
+
+10. Click the green "Compare & pull request" button to create a new pull
+    request. If appropriate, modify the title of the pull request and further
+    describe your changes in the description. Once you're ready, click "Create a
+    pull request".
+11. And you're done! Not too bad, huh? The pull request I created is over at
+    https://github.com/hackedu/hackedu/pull/163.
