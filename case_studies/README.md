@@ -32,10 +32,10 @@ Here is what the directory structure looks like:
 ├── club_1
 |   ├── 01_club_fair_event
 |   |   ├── planning.md
-|   |   └── post-mortem.md
+|   |   └── post_mortem.md
 |   ├── 02_first_meeting_event
 |   |   ├── planning.md
-|   |   └── post-mortem.md
+|   |   └── post_mortem.md
 ├── club_2
 |...
 ```
