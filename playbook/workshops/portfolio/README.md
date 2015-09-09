@@ -105,7 +105,7 @@ Hey, look, it's all big and bold!
 
 There are six different heading tags, `h1` through `h6`.
 
-The `h1` tag indicates that it's text is the the most important and `h6` the
+The `h1` tag indicates that its text is the the most important and `h6` the
 least important.
 
 If we write out all the tags (don't bother doing this):
@@ -242,7 +242,7 @@ For example, if an oven was a tag:
 Ok. The image is way too big. We need to fix it.
 
 So so far, we have only been adding content to the page and not really
-changing it's look and feel.
+changing its look and feel.
 
 HTML is used for the content. There's this other language called CSS that we use
 to change the way things look and feel.
