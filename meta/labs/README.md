@@ -1,4 +1,4 @@
-# Labs Program
+# Labs
 
 This document will contain a brief overview of our labs program and what it'll
 entail going into the 2015 fall semester.
@@ -14,9 +14,9 @@ checklist for getting everything going:
     https://docs.google.com/spreadsheets/d/1Q6E36NK7N_mKp_LJwMW-P3KUZXPsHQTJWyoyKvrneuc.
 - [x] Schedule all interviews (_Deadline: 08.20.15_,
   [#54](https://github.com/hackedu/hackedu/issues/31))
-- [ ] Send out all acceptances and rejections (_Deadline: 08.25.15_,
+- [x] Send out all acceptances and rejections (_Deadline: 08.25.15_,
   [#48](https://github.com/hackedu/hackedu/issues/48))
-- [ ] All acceptance contracts signed (_Deadline: 08.28.15_,
+- [x] All acceptance contracts signed (_Deadline: 08.28.15_,
   [#55](https://github.com/hackedu/hackedu/issues/55))
 
 ### Position Information
@@ -26,6 +26,28 @@ team.
 
 - Title: Lab Director
 - Minimum weekly time commitment: 5 hours outside of clubs
+
+### Lab Directors
+
+#### Cohort 1
+
+- Armijo High School
+- Cherry Hill High School East
+  - [Bogdan Vitoc](https://github.com/Bogidon)
+- Glenaeon Rudolf Steiner School
+  - [Harrison Shoebridge](https://github.com/paked)
+  - [Sam Finch](https://github.com/samfi)
+  - [Rafe j. Skidmore](https://github.com/rafej)
+- Lowell High School
+  - [Teagan Mucher](https://github.com/temucher)
+- Project Cipher
+  - [Jevin Sidhu](https://github.com/JevinSidhu)
+  - [Brian Nguyen](https://github.com/NguyenBrian)
+  - [Udit Desai](https://github.com/uditdesai)
+  - [Vaibhav Yadaram](https://github.com/vaibhavyadaram)
+  - [David Guida](https://github.com/dlgweeduh)
+- USC Hybrid High School
+  - [Gemma Busoni](https://github.com/gemmabusoni)
 
 ## Meetings
 
@@ -57,5 +79,6 @@ Meetings:
 - [07.13.15](meetings/15-07-13_initial_brainstorm.md)
 - [07.15.15](meetings/15-07-15_club_things.md)
 - [08.11.15](meetings/15-08-11_accepting_first_12.md)
+- [08.15.15](meetings/15-08-15_building_towards_something_larger.md)
 - [08.17.15](meetings/15-08-17_selecting_initial_labs_team.md)
 - [08.20.15](meetings/15-08-20_la_clubs.md)
