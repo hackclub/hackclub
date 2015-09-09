@@ -31,6 +31,6 @@ Build hackEDU with us. Here are two ways to get started:
 
 ## Contributing
 
-If you are ready to contribute please begin by consulting the
+If you would like to contribute please begin by consulting the
 [contribution guidelines](CONTRIBUTING.md).
 
