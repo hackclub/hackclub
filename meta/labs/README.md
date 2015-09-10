@@ -55,6 +55,7 @@ team.
   - [Vene Tiglao](https://github.com/venethefifth)
 - Columbia Secondary School
 - Elizabeth High School
+  - [Amy Sorto](https://github.com/amysorto)
 - Ravenwood High School
   - [Tejas Manohar](https://github.com/tejasmanohar) 
 - San Leandro High School
