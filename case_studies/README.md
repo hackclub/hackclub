@@ -53,7 +53,7 @@ for a guide on submitting case studies.
 
 ## Planning Document
 
-The planning document, named `planning.md`, contains three things:  
+The planning document, named `planning.md`, contains three things:
 
 - An outline of what's going to happen at the event
 - A list of problems that you anticipate you might run into and how you might
