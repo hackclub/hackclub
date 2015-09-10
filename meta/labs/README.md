@@ -56,6 +56,7 @@ team.
 - Elizabeth High School
 - Ravenwood High School
 - San Leandro High School
+  - [Matthew Gaim] (https://github.com/matthewgaim)
 - South Brunswick High School
 
 ## Meetings
