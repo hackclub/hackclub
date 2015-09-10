@@ -49,6 +49,15 @@ team.
 - USC Hybrid High School
   - [Gemma Busoni](https://github.com/gemmabusoni)
 
+#### Cohort 2
+
+- College Park High School
+- Columbia Secondary School
+- Elizabeth High School
+- Ravenwood High School
+- San Leandro High School
+- South Brunswick High School
+
 ## Meetings
 
 All meetings related to the labs program should be put into the `meetings`
