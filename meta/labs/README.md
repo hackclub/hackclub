@@ -54,6 +54,7 @@ team.
 - College Park High School
 - Columbia Secondary School
 - Elizabeth High School
+  - [Amy Sorto](https://github.com/amysorto)
 - Ravenwood High School
 - San Leandro High School
 - South Brunswick High School
