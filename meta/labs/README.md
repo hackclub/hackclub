@@ -57,6 +57,7 @@ team.
 - Ravenwood High School
   - [Tejas Manohar](https://github.com/tejasmanohar) 
 - San Leandro High School
+  - [Matthew Gaim] (https://github.com/matthewgaim)
 - South Brunswick High School
 
 ## Meetings
