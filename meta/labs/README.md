@@ -57,6 +57,7 @@ team.
 - Ravenwood High School
 - San Leandro High School
 - South Brunswick High School
+  - [Sneha Rampalli](https://github.com/sneharamapo)
 
 ## Meetings
 
