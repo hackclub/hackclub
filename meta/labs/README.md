@@ -56,6 +56,7 @@ team.
 - Elizabeth High School
 - Ravenwood High School
 - San Leandro High School
+  - [Jihao Kuang](https://github.com/xeonjake)
 - South Brunswick High School
 
 ## Meetings
