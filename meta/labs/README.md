@@ -53,6 +53,7 @@ team.
 
 - College Park High School
 - Columbia Secondary School
+-   -[Abigail Medina](https://github.com/AbigailMed)
 - Elizabeth High School
 - Ravenwood High School
 - San Leandro High School
