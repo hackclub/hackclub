@@ -1,4 +1,4 @@
-# Post-mortem
+# Recap
 
 ![CHE CS at work](http://i.imgur.com/249LPMm.jpg?1)
 
