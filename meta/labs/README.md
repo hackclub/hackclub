@@ -62,6 +62,7 @@ team.
 - San Leandro High School
   - [Matthew Gaim] (https://github.com/matthewgaim)
 - South Brunswick High School
+  - [Sneha Rampalli](https://github.com/sneharamapo)
 
 ## Meetings
 
