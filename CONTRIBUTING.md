@@ -102,8 +102,8 @@ First make sure that you've read the
 1. Follow steps 1 - 5 in the
    [case study contribution walkthrough](#case-study-contribution-walkthrough)
 2. In the same event's folder as the `planning.md` file, make sure that there is
-   a `post-mortem.md` file (create one if it does not already exist).
-3. Inside the `post-mortem.md` file, answer the following questions:
+   a `post_mortem.md` file (create one if it does not already exist).
+3. Inside the `post_mortem.md` file, answer the following questions:
     - What you end up doing during the event and how did it differ from the
       original plan?
     - What went well?
