@@ -52,6 +52,7 @@ team.
 #### Cohort 2
 
 - College Park High School
+  - [Vene Tiglao](https://github.com/venethefifth)
 - Columbia Secondary School
 - Elizabeth High School
 - Ravenwood High School
