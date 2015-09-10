@@ -55,6 +55,7 @@ team.
 - Columbia Secondary School
 - Elizabeth High School
 - Ravenwood High School
+  - [Tejas Manohar](https://github.com/tejasmanohar) 
 - San Leandro High School
 - South Brunswick High School
 
