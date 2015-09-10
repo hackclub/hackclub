@@ -6,6 +6,8 @@ Meeting went pretty well! Estimated attendance was 20 and we had 34 show up. The
 
 - **Rock, paper, scissors**: people _really_ liked it. Great starter. I gave out a pair of zip-up Bloomberg earpuds I got from PennApps X and a free iTunes song voucher I got from PennApps XII.
 
+- **Food**: brought GoGurt, Oreos, Chips, Soda and Juice packs.
+
 - **The presentation**: also a success. One of our VPs (Salman) added an explanation that "CS can help you in any career" right after the `What is CS?` slide.
 
 - **The workshop**: we used [this workshop](https://github.com/hackedu/hackedu/blob/playbook-portfolio/playbook/workshops/portfolio/README.md). I used it because I wanted to get people coding as soon as possible without the overhead of setting up C9. This was a good idea, but having gone the C9 route we wouldn't have had problem #1 ==> There were two problems: 1) some circuit breaker got tripped and 15 computers powered off causing those people to loose their work. It's unfortunate because they didn't get to the part where they can save 2) our school firewall system supplied by _Barracuda Networks_ for some reason blocked jsbin.com through the middle of the workshop. Very annoying. We transitioned those affected to jsfiddle.net. Anyway, the workshop was very well recieved. Here are some excerpts from our feedback.
@@ -20,4 +22,5 @@ Meeting went pretty well! Estimated attendance was 20 and we had 34 show up. The
 ## Problems
 
 - **Distractions**: people were doing other things on their computers, primarily they were playing agar.io (like 5 of them). This problem was SOLVED by approaching those people and asking them if anything was wrong with the lecture that they resolved to playing games. Unexpectedly, the answer was yes. _They played games because they were stuck_. I helped them get unstuck and they got back on track. Lesson learned: approach people who aren't following the workshop, chances are they're having difficulties and are too shy to ask for help.
+ 
 - **Loosing work**: ugh, circuit triped. JSFiddle might be better at this than JSBin.. or do the Github account setup for JSBin first so work is saved.
