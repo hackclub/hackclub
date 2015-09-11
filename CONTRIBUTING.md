@@ -78,7 +78,7 @@ This section will cover any contribution guidelines specific to
 ### Contributing case studies
 
 First make sure that you've read the
-[`README.md` in the `case study` directory](/case_studies/README.md).
+[`README` in the `case_studies` directory](case_studies/README.md).
 
 #### Before club events
 
