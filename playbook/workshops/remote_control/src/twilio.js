@@ -52,7 +52,6 @@ Twilio = {
             from: NUMBER, // A number you bought from Twilio and can use for outbound communication
             url: twimletUrl // A URL that produces an XML document (TwiML) which contains instructions for the call
         }, function(err, responseData) {
-            debugger
             console.log("Successfully called " + number + " with message " + message);
         });
 
@@ -67,7 +66,6 @@ Twilio = {
             from: NUMBER, // A number you bought from Twilio and can use for outbound communication
             url: twimletUrl // A URL that produces an XML document (TwiML) which contains instructions for the call
         }, function(err, responseData) {
-            debugger
             console.log("Successfully called " + number + " with music file " + message);
         });
     }
