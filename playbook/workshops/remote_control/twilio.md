@@ -1,0 +1,33 @@
+# Creating a Twilio Account
+
+- https://www.twilio.com/try-twilio
+  - Fill In
+    - First Name
+    - Last Name
+    - Email
+    - Password
+  - Follow the instructions to verify your phone number.
+    - Ask a neighbor to use their phone number if you don't have one
+  - Click "Get your Twilio number"
+  - Click "Choose this number"
+  - "Click Trial Account"
+    - Upgrade Now
+  - Upgrade Screen
+    - DO NOT "Upgrade Account until I tell you to"
+    - Credit Card Number
+      - https://github.com/jonleung/mission-impossible/blob/master/handout.md
+    - Expiration
+    - Cvv
+    - Cardholder Name
+    - Street Address
+    - Zip
+    - I have a promo code
+      - Enter Promo Code
+        - HackEDU72415
+      - Uncheck turn on automatic recharge
+    - Click "Upgrade Account"
+  - Go back to Dashboard
+  - Show API credentials
+  - Copy AccountSID & Auth Token
+    - Have Club Leaders Do This To Get ACCOUNT SID
+  - Modify the JSBin
