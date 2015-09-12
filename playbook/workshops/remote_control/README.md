@@ -441,7 +441,7 @@ First include this javascript library at the bottom of the page:
 
 > ![](img/add_wand.gif)
 
-Add then add this code in the JavaScript
+Then add this code in the JavaScript
 
 ```js
 Wand.threshold = 5;
