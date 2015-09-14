@@ -61,7 +61,6 @@ team.
   - [Tejas Manohar](https://github.com/tejasmanohar) 
 - San Leandro High School
   - [Matthew Gaim] (https://github.com/matthewgaim)
-  - [Jiahao Kuang](https://github.com/xeonjake)
 - South Brunswick High School
   - [Sneha Rampalli](https://github.com/sneharamapo)
 
