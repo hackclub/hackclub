@@ -1,4 +1,4 @@
- <a name="top"></a>
+<a name="top"></a>
 [![IRC Network](https://img.shields.io/badge/irc-freenode-blue.svg "IRC Freenode")](https://webchat.freenode.net/?channels=hackedu)
 [![Build Status](https://circleci.com/gh/hackedu/hackedu.svg?style=shield)](https://circleci.com/gh/hackedu/hackedu)
 
@@ -33,4 +33,3 @@ Build hackEDU with us. Here are two ways to get started:
 
 If you would like to contribute please begin by consulting the
 [contribution guidelines](CONTRIBUTING.md).
-

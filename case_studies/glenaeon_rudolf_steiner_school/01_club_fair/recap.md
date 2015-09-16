@@ -1,4 +1,4 @@
-# Post-mortem
+# Recap
 
 Our approach to gaining interest seems to be working reasonably well. We have
 managed to find an initial group of students about 15 people large. Our club

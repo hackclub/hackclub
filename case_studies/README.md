@@ -53,7 +53,7 @@ for a guide on submitting case studies.
 
 ## Planning Document
 
-The planning document, named `planning.md`, contains three things:  
+The planning document, named `planning.md`, contains three things:
 
 - An outline of what's going to happen at the event
 - A list of problems that you anticipate you might run into and how you might
@@ -62,8 +62,8 @@ The planning document, named `planning.md`, contains three things:
 
 ## Recap Document
 
-The recap document, named `post_mortem.md`, contains a reflection of each
-meeting. Each recap should answer the following questions:
+The recap document, named `recap.md`, contains a reflection of each meeting.
+Each recap should answer the following questions:
 
 - What you end up doing during the event and how did it differ from the original
   expectations?
