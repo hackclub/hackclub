@@ -13,4 +13,5 @@
   2. Show & Tell every other meeting for those who want to share something they've been working on (in or out of school)
   3. Ask if anyone has other ideas?
 5. Poll how long people would be willing to stay after school?
-6. Competitive programming PPT
+6. [Survey](https://docs.google.com/forms/d/12fVopxVDgoGG3NYNTsC_gYFBTJdb4cksuumB0qe3H64/viewform)
+7. Competitive programming PPT
