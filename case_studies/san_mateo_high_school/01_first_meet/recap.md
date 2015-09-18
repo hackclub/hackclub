@@ -2,8 +2,7 @@
 
 ## What happened
 
-- We had hackers coming in by groups of 2-5, filling up the room with 38
-  people.
+- We had hackers coming in by groups of 2-5, filling up the room with 38 people.
 - The sign up sheet wasn't found so we ended giving a binder paper around.
 - Everyone is welcomed, people are talking between each other.
 - Presentation started with some difficulties with the adapter and internet.
@@ -13,12 +12,12 @@
 
 ## Problems we faced
 
-- The VGA cable is "strange" with an extra piece of metal which makes it not
-  fit to the adapter.
+- The VGA cable is "strange" with an extra piece of metal which makes it not fit
+  to the adapter.
   - We ended up transferring the presentation to the teacher's computer and
     present from there.
   - The internet had gone down the second I started uploading, we needed to use
-    a usb stick.
+    a USB stick.
   - Presentation delayed 1 min.
 - A lot of hackers came in, a total of 38 people came in a room for 30. Some
   people needed to stand in the back.
