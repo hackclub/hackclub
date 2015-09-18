@@ -49,6 +49,22 @@ team.
 - USC Hybrid High School
   - [Gemma Busoni](https://github.com/gemmabusoni)
 
+#### Cohort 2
+
+- College Park High School
+  - [Vene Tiglao](https://github.com/venethefifth)
+- Columbia Secondary School
+-   -[Abigail Medina](https://github.com/AbigailMed)
+- Elizabeth High School
+  - [Amy Sorto](https://github.com/amysorto)
+- Ravenwood High School
+  - [Tejas Manohar](https://github.com/tejasmanohar) 
+- San Leandro High School
+  - [Matthew Gaim] (https://github.com/matthewgaim)
+  - [Jiahao Kuang](https://github.com/xeonjake)
+- South Brunswick High School
+  - [Sneha Rampalli](https://github.com/sneharamapo)
+
 ## Meetings
 
 All meetings related to the labs program should be put into the `meetings`
