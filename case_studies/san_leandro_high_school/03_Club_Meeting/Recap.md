@@ -1,26 +1,28 @@
 # Recap
 
-
-1. lets just say this meeting started off as a disaster, our adviser is out and there is a substitute teaher, as you many know sub like to leave as soon as possible.
-2. our entire club have to waiting outside in the sun while some members and I run around school seeing if any teacher willing to give up their lab for 2 hour.
-3. To my relief we found the bussiness academy teacher willing to give her lab to us for today. our original plan for today was to have a lecture on the basics of programming, however due to us not having access to the projectors, our plan change to doing the [portfolio worshop](https://github.com/hackedu/hack-camp/tree/master/cohort_4/playbook/workshops/portfolio). while doing the workshop I notice people are 
-4. while doing the workshop I notice that:
-  * some are on codecademy or codehs, which is totaly fine as they are allow to get off track if they want.
-    * most that are working on codecademy are helping each other out, however some time I have to jump in to help
-    * when codehs people get stuck I will usually try to explain the problem to them in my own words.
-  * some are asking for DDOS-ing tools or tips
+1. Let's just say this meeting started off as a disaster, our adviser is out, and there is a substitute teacher, as you many know sub like to leave as soon as possible.
+2. Our entire club had to wait outside in the sun while some members and I run around school seeing if any teacher willing to give up their lab for 2 hours.
+3. To my relief, we found the business academy teacher willing to give her lab to us for today. Our original plan for today was to have a lecture on the basics of programming, however due to us not having access to the projectors, our plan changed to doing the [portfolio workshop](https://github.com/hackedu/hack-camp/tree/master/cohort_4/playbook/workshops/portfolio).
+4. While doing the workshop I notice that:
+  * Some are on CodeCademy or CodeHS, which is totally fine as they are allowed to get off track if they want.
+    * Most that are working on CodeCademy are helping each other out, however, sometimes I have to jump in to help
+    * When CodeHS people get stuck I will usually try to explain the problem to them in my own words.
+  * Some are asking for DDOS-ing tools or tips
     * I will usually respond to them that DDOS-ing is illegal, and that is not what this club is about.
-      * if they really want to see DDOS-ing we can setup a controled envirment using raspberry pi.
-    * people will usually help their friends thats sitting around them
-      *maybe we can get encourage the entire club to work together by having group project instead. for example [neverforgetsam2k15.lol](neverforgetsam2k15.lol)
-  * overall I would say that we need to find better team building activity to get the entire club engaged, something like [neverforgetsam2k15.lol](neverforgetsam2k15.lol)
-5. as always we ended the Meeting with a [hack cheer](https://youtu.be/ds3w27_6i98)
+      * One idea that we can do in the future is to set up a Raspberry Pi to DDOS another Raspberry Pi.
+    * People will usually help their friends that are sitting around them
+      *Maybe we can get encourage the entire club to work together by having group project instead, for example [neverforgetsam2k15.lol](http://neverforgetsam2k15.lol)
+  * Overall I would say that we need to find better team building activity to get the entire club engaged, something like [neverforgetsam2k15.lol](http://neverforgetsam2k15.lol)
+5. As always we ended the Meeting with a [hack cheer](https://youtu.be/ds3w27_6i98).
 
-### What Didn't go well
-* we dont have a back up plan if the original class room is not accessible.
+### What Didn't Go Well
 
-### what went well
-* most of the members are willing to cooperate, which makes it really easy for me to work short handed easily
+* We don't have a backup plan if the original class room is not accessible.
 
-### tips for other organizers
-* **Have a back up plan when the original meeting location is unavaliable**
+### What Went Well
+
+* Most of the members are willing to cooperate, which makes it easy for me to work short handed easily.
+
+### Tips for Other Organizers
+
+* **Important**Have a backup plan when the original meeting location is unavailable.
