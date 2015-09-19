@@ -12,6 +12,7 @@
 6. end with Hack Cheer
 
 ## Anticipated problems
+
 * members may get bored from listening to me lecture
 * not a lot of members filling out survey at the end
   *prevent this by having a dedicated time for members to fill out survey.
