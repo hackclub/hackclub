@@ -187,4 +187,4 @@ You've finished Part 1!
 
 ![](img/celebrate.gif)
 
-# More coming soon...
+# More coming soon..
