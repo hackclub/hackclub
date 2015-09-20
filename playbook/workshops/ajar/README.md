@@ -123,7 +123,7 @@ var context = canvas.getContext("2d");
 
 Time to draw a circle! Open your `index.html` file and from the menu bar click `Preview > Live Preview File (index.html)`.
 
-![Live preview]("img/live-preview.gif")
+![](img/live_preview.gif)
 
 Now each time you save changes to your HTML or Javascript your site will refresh to reflect the changes. Remember to *save* changes by going to `File > Save`.
 
