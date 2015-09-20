@@ -46,6 +46,8 @@ To preview you file right click your *index.html* file in your workspace sidebar
 
 add gif of previewing inde.html
 
+### Adding CSS to your HTML
+
 Next lets add some style to our button. In your *style.css* file add the following code 
 
 ```
@@ -62,12 +64,28 @@ Next lets add some style to our button. In your *style.css* file add the followi
     color: white;
 }
 ```
-If you look at your preview, you will notice none of the styles were applied to your button. This is because you have to tell our html file where to get the css from. To do this we will add this code inside the *head* tag of your html. 
+If you look at your preview, you will notice none of the styles were applied to your button. This is because you have to tell your html file where to get the css from. To do this we will add this code inside the *head* tag of your html. 
 
 ```
 <link rel="stylesheet" href="style.css" type="text/css" />
 ```
 
-Basically what this does is link you html to your css. The value of your *href* attribute should be the location of your css file. Since our css file is in the same folder as our html all we have to do is set the value of *href* to the name of our css file.
+Basically what this does is link your html to your css. The value of your *href* attribute should be the location of your css file. Since our css file is in the same folder as our html all we have to do is set the value of *href* to the name of our css file.
+
+### Adding Javascript to your HTML
+
+Next lets add some Javascript. Inside your *index.js* file add the following code.
+
+```
+var button = document.getElementById("alertButton");
+
+button.onclick = function () {
+    alert("Button was pressed");
+}
+```
+
+#### Understanding the code
+
+In our javascript file we start of by creating a variable called *button* and set it equal to the element in our html that has an *id* of *alertButton*. Next we declare that when our button is clicked, a function is run that alerts the user with the message "Button was pressed".
 
 
