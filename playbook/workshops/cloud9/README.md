@@ -32,7 +32,7 @@ First we will create a new folder. To do this right click the workspace bar on t
 
 Next we will be creating a html file. To do this hit file on the top left of your screen, hover over the *New From Template* option, and select *HTML file*. Now we want to save this file in the new folder we just created. To do this go to *file* and click *save as*. Name your file *index.html* and save it inside the folder you just created.
 
-add gif of creating html file
+![](img/create-html.gif)
 
 Repeat the last step twice more, except this time create a CSS file and a Javascript file. Name your files *style.css* and *index.js*
 
@@ -44,7 +44,7 @@ Now that you have your files set up lets start building. Inside your *index.html
 
 To preview you file right click your *index.html* file in your workspace sidebar to the left and hit *Preview*. This will open up a new tab with the rendered version of your html file.
 
-add gif of previewing inde.html
+![](img/preview.gif)
 
 ### Adding CSS to your HTML
 
@@ -88,7 +88,7 @@ button.onclick = function () {
 
 In our javascript file we start of by creating a variable called *button* and set it equal to the element in our html that has an *id* of *alertButton*. Next we declare that when our button is clicked, a function is run that alerts the user with the message "Button was pressed".
 
-If we try testing our code, it wont work yet for the same reason oour css didnt work at first. We need to tell our html file where to get the javascript from. To do this, we will add the following code to the end of the *body* tag inside our html.
+If we try testing our code, it wont work yet for the same reason our css didnt work at first. We need to tell our html file where to get the javascript from. To do this, we will add the following code to the end of the *body* tag inside our html.
 
 ```
 <script type="text/javascript" src="index.js"></script>
@@ -98,7 +98,7 @@ This links our html and our javascript together. The *src* attribute should be s
 
 Go ahead and test your code now.
 
-add gif of code being tested
+![](img/test-code.gif)
 
 ## Congratulations!
 
