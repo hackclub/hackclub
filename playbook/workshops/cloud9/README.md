@@ -46,8 +46,28 @@ To preview you file right click your *index.html* file in your workspace sidebar
 
 add gif of previewing inde.html
 
-Every time you update your html file the preview will automatically update.
-
 Next lets add some style to our button. In your *style.css* file add the following code 
+
+```
+#alertButton {
+    background: none;
+    border-style: none;
+    border: 2px solid black;
+    padding: 10px;
+    color: black;
+}
+
+#alertButton:hover {
+    background-color: black;
+    color: white;
+}
+```
+If you look at your preview, you will notice none of the styles were applied to your button. This is because you have to tell our html file where to get the css from. To do this we will add this code inside the *head* tag of your html. 
+
+```
+<link rel="stylesheet" href="style.css" type="text/css" />
+```
+
+Basically what this does is link you html to your css. The value of your *href* attribute should be the location of your css file. Since our css file is in the same folder as our html all we have to do is set the value of *href* to the name of our css file.
 
 
