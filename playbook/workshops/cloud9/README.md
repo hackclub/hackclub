@@ -22,7 +22,7 @@ To create a new workspace you can either select the create a new workspace optio
 
 Next set your workspace name to *html-css-javascript-basics*, and your description to *Learning to use html css and javascript together*. Make your workspace public, skip the *Clone from Git or Mercurial URL* option and set your template to *Custom*. Finally click the *Create Workspace* button at the bottom of your page and you should be prompted to this screen.
 
-add image of screen here
+![](img/c9openscreen.gif)
 
 ## Using HTML CSS and Javascript together in Cloud9
 
