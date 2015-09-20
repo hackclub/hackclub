@@ -3,7 +3,7 @@
 ## Plans for Event
 
 1. one of our member wants to do an presentation to bring humor to the club
-2. have everyone sign in through [google forms](signin.hacklcubslhs.com), also include survey
+2. have everyone sign in through [google forms](http://signin.hacklcubslhs.com), also include survey
 3. do a lecture on the basics of programming 
   * we had a debate on wether it is better to have a lecture or workshop, I stand on the worshop side, however everyone else is standing on having a lecture.
   * attatched below is the preparation done by the ones standing on doing it lecture style. ![alt text](https://i.gyazo.com/59a2f97fb73dce96a377ead9b595e10c.png "Lecture presentation preparation")
