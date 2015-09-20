@@ -15,3 +15,9 @@ First, make sure you have a github account. If you don't have one, follow the gu
 Now that you have a GitHub account, you can login to Cloud9 with GitHub.
 
 ![](img/github-login.gif)
+
+## Create a new workspace
+
+To create a new workspace you can either select the create a new workspace option under workspaces, or click the new workspace button at the top right of your screen.
+
+Next set your workspace name to *HTML CSS and Javascript Basics*, and your description to *Learning to use HTML CSS and Javascript together*. Make your workspace public, skip the *Clone from Git or Mercurial URL* option and set your template to *Custom*. Finally click the *Create Workspace* button at the bottom of your page and you should be prompted to this screen.  
