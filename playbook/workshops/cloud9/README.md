@@ -88,4 +88,25 @@ button.onclick = function () {
 
 In our javascript file we start of by creating a variable called *button* and set it equal to the element in our html that has an *id* of *alertButton*. Next we declare that when our button is clicked, a function is run that alerts the user with the message "Button was pressed".
 
+If we try testing our code, it wont work yet for the same reason oour css didnt work at first. We need to tell our html file where to get the javascript from. To do this, we will add the following code to the end of the *body* tag inside our html.
+
+```
+<script type="text/javascript" src="index.js"></script>
+```
+
+This links our html and our javascript together. The *src* attribute should be set to the location of our javascript file. Since our javascript file is in the same folder as our html all we have to do is set the value of *src* to the name of our javascript file.
+
+Go ahead and test your code now.
+
+add gif of code being tested
+
+## Congratulations!
+
+You now know how to
+
+- Create a new workspace in Cloud9
+- Work with HTML CSS and Javascript together
+
+Be sure to experiment with HTML CSS and Javascript on your own!
+
 
