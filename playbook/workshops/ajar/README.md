@@ -4,7 +4,7 @@
 
 [Agar.io](http://agar.io) is a popular game built for the web with [HTML, CSS, and Javascript](https://www.quora.com/Difference-between-HTML-XML-PHP-CSS-and-JavaScfdffdript-in-layman-terms). The goal of this workshop is to teach you to make your own simplistic version of agar.io which we'll call ajar.io. 
 
-> ![](img/agar.png)
+![](img/agar.png)
 
 The workshop will be divided into several parts:
 
@@ -41,11 +41,12 @@ In Cloud9, create two files in a folder of your choice:
 - app.js
 
 Your folder should look like this:
+
 ![Directory](img/directory.jpg)
 
 ### Setting up the HTML
 
-Type the below code as it is written *exactly* into your `index.html` file in Cloud9:
+Type the below code as it is written *exactly* into your `index.html` file in Cloud9 (no copy-pasting :p):
 
 ```
 <!DOCTYPE html>
@@ -68,7 +69,7 @@ Next, add the below `<canvas>` element inside of the `<body>` element.
 
 > #### Understanding the code
 
-> `canvas` – the canvas element allows you to draw shapes and other visual elements on screen. Feel free to [read more](http://www.w3schools.com/html/html5_canvas.asp).
+> `canvas` – the canvas element allows you to draw shapes and other visual elements on screen. Feel free to [read more about canvas](http://www.w3schools.com/html/html5_canvas.asp).
 
 > `id` – to review, this *attribute*, which can be applied to any HTML element, allows you to use that element in your javascript.
 
@@ -104,7 +105,56 @@ var canvas = document.getElementById("canvas");
 
 > `var` – creates a variable named `canvas`. Variables are containers for storing data values. In this case `canvas` is used to reference the `<canvas>` element from your HTML.
 
-> `document.getElementById("canvas")` – this function gets an element from your HTML that has the id you provide inside the quotes, in this case "canvas".
+> `document.getElementById("canvas")` – this function gets an element from your HTML that has the id you provide inside the quotes, in this case "canvas". Feel free to [read more about functions](http://www.w3schools.com/js/js_functions.asp).
 
 > The `<canvas>` element retreived by `document.getElementById("canvas")` gets *assigned* to the variable `canvas`.
+
+Next, write this line of code:
+
+```
+var context = canvas.getContext("2d");
+```
+
+![](img/assign-context.gif)
+
+> #### Understanding the code
+
+> You create another variable, this time named `context`. Don't worry too much about *what* `context` is, just know that we will be using it to draw shapes on the canvas.
+
+Time to draw a circle! Open your `index.html` file and from the menu bar click `Preview > Live Preview File (index.html)`.
+
+![Live preview]("live-preview.gif")
+
+Now each time you save changes to your HTML or Javascript your site will refresh to reflect the changes. Remember to *save* changes by going to `File > Save`.
+
+Write the following lines at the end of your `app.js` file:
+
+```
+context.beginPath();
+context.arc(10, 10, 10, 0, 2*3.14159);
+context.fill();
+```
+
+You should have something that looks like this.
+
+![](img/first-circle.jpg)
+
+> #### Understanding the code
+
+> `context.beginPath()` – any shape on the canvas is considered a path. You need to call this function before begining to draw a new shape. In this case we are starting to draw a circle.
+
+> `context.arc(10, 10, 10, 0, 2*Math.PI)` – this function creates an arc. An arc that ends where it starts forms a circle. The function takes a lot of *arguments* (the items separated by commas) so let's look at each one. The order of the arguments goes as follows: `x, y, radius, startAngle, endAngle`. 
+
+> - The `x` and `y` (both 10 in this case) indicate where to position the center of the arc. The top left corner of the canvas is considered (0, 0). Try moving the circle to a different location by changing the `x` and `y`.
+
+> - The `radius` (also 10) determines the radius of the arc. Try making the circle a little larger by changing the `radius`.
+
+> - The `startAngle` (0) determines at what angle the arc should start. The angle is measured in [radians](https://www.mathsisfun.com/geometry/radians.html). Briefly, 0 radians = 0 degrees and 2π radians = 360 degrees.
+
+> - The `endAngle` (2*π) determins at what angle the arc should end. If the `endAngle` is 2π radians, or 360 degrees, more than the `startAngle`, the arc loops back into itself and forms a circle. Try making a semi-circle by changing the `endAngle`.
+
+> `context.fill()` fills the shape with a solid color. In this case the color is black.
+
+
+
 
