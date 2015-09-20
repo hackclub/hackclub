@@ -143,7 +143,7 @@ You should have something that looks like this.
 
 > `context.beginPath()` – any shape on the canvas is considered a path. You need to call this function before begining to draw a new shape. In this case we are starting to draw a circle.
 
-> `context.arc(10, 10, 10, 0, 2*Math.PI)` – this function creates an arc. An arc that ends where it starts forms a circle. The function takes a lot of *arguments* (the items separated by commas) so let's look at each one. The order of the arguments goes as follows: `x, y, radius, startAngle, endAngle`. 
+> `context.arc(10, 10, 10, 0, 2*3.14159)` – this function creates an arc. An arc that ends where it starts forms a circle. The function takes a lot of *arguments* (the items separated by commas) so let's look at each one. The order of the arguments goes as follows: `x, y, radius, startAngle, endAngle`. 
 
 > - The `x` and `y` (both 10 in this case) indicate where to position the center of the arc. The top left corner of the canvas is considered (0, 0). Try moving the circle to a different location by changing the `x` and `y`.
 
