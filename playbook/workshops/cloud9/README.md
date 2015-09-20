@@ -39,6 +39,7 @@ Repeat the last step twice more, except this time create a CSS file and a Javasc
 Now that you have your files set up lets start building. Inside your *index.html* file in the body tag create a button with the attribute *id* set to *alertButton*. 
 
 '''
+
 <button id="alertButton">Click Me!</button>
 '''
 
