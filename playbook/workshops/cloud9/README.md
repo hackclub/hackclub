@@ -38,10 +38,10 @@ Repeat the last step twice more, except this time create a CSS file and a Javasc
 
 Now that you have your files set up lets start building. Inside your *index.html* file in the body tag create a button with the attribute *id* set to *alertButton*. 
 
-'''
+```
 
 <button id="alertButton">Click Me!</button>
-'''
+```
 
 To preview you file right click your *index.html* file in your workspace sidebar to the left and hit *Preview*. This will open up a new tab with the rendered version of your html file.
 
