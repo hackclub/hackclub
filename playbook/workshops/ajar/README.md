@@ -2,7 +2,7 @@
 
 ---
 
-[Agar.io](http://agar.io) is a popular game built for the web with [HTML, CSS, and Javascript](https://www.quora.com/Difference-between-HTML-XML-PHP-CSS-and-JavaScfdffdript-in-layman-terms). The goal of this workshop is to teach you to make your own simplistic version of agar.io which we'll call ajar.io. 
+[Agar.io](http://agar.io) is a popular game built for the web with [HTML, CSS, and Javascript](http://qr.ae/RoCXc7). The goal of this workshop is to teach you to make your own simplistic version of agar.io which we'll call ajar.io. 
 
 ![](img/agar.png)
 
