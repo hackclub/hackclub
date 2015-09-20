@@ -123,7 +123,7 @@ var context = canvas.getContext("2d");
 
 Time to draw a circle! Open your `index.html` file and from the menu bar click `Preview > Live Preview File (index.html)`.
 
-![Live preview]("live-preview.gif")
+![Live preview]("img/live-preview.gif")
 
 Now each time you save changes to your HTML or Javascript your site will refresh to reflect the changes. Remember to *save* changes by going to `File > Save`.
 
@@ -137,7 +137,7 @@ context.fill();
 
 You should have something that looks like this.
 
-![](img/first-circle.jpg)
+![](img/first-circle.png)
 
 > #### Understanding the code
 
@@ -155,6 +155,36 @@ You should have something that looks like this.
 
 > `context.fill()` fills the shape with a solid color. In this case the color is black.
 
+Let's add some color! For this we write the following line directly above the `context.fill` function:
 
+```
+context.fillStyle = "cyan";
+```
 
+![Fill style](img/fill-style.jpg)
 
+Woah! Our circle is now cyan. 
+
+> #### Understanding the code
+
+> The fillStyle is a variable that deterimines the color that is used to fill the shape. [Many colors](http://www.w3schools.com/cssref/css_colornames.asp) are available, so try some on your own (like papayawhip).
+
+When you've finished exploring, change the arguments of the `context.arc` function to the following:
+
+- `x`: 250
+- `y`: 250
+- `radius`: 40
+- `startAngle`: 0
+- `endAngle`: 2*3.14159
+
+Your website should now look like this:
+
+![End of Part 1](img/part1-end.jpg)
+
+#### Congrats!
+
+You've finished Part 1!
+
+![](img/celebrate.gif)
+
+# More coming soon...
