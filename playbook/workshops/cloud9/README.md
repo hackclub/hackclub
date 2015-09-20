@@ -33,3 +33,7 @@ Next we will be creating a html file. To do this hit file on the top left of you
 add gif of creating html file
 
 Repeat the last step twice more, except this time creat a CSS file and a Javascript file. Name your files *style.css* and *index.js*
+
+Now that you have your files set up lets start building. Inside your *index.html* file create a button with the attribute *id* set to *alertButton*. To preview you file right click your *index.html* file in your workspace sidebar to the left and hit *Preview*. This will open up a new tab with the rendered version of your html file.
+
+Every time you update your html file the preview will automatically update.
