@@ -2,7 +2,7 @@
 
 ---
 
-[Agar.io](http://agar.io) is a popular game built for the web with [HTML, CSS, and Javascript](https://www.quora.com/Difference-between-HTML-XML-PHP-CSS-and-JavaScfdffdript-in-layman-terms). The goal of this workshop is to teach you to make yourdff own simplistic version of agar.io. 
+[Agar.io](http://agar.io) is a popular game built for the web with [HTML, CSS, and Javascript](https://www.quora.com/Difference-between-HTML-XML-PHP-CSS-and-JavaScfdffdript-in-layman-terms). The goal of this workshop is to teach you to make your own simplistic version of agar.io. 
 
 > ![](img/agar.png)
 
@@ -13,22 +13,23 @@ The workshop will be divided into several parts:
 - __Part 3__ – add randomly generated food.
 - __More coming soon...__
 
+## Part 1
 
-## Our Mission
+---
 
-Our mission:
+In this part you're going to learn to display the user's cell on-screen using the [HTML `<canvas>` element](http://www.w3schools.com/html/html5_canvas.asp).
 
-- make your personal website
-- put it on the internet for the whole world to see!
+> The HTML `<canvas>` element is used to draw graphics, on the fly, via scripting (usually JavaScript).
 
-Your final design looks like this:
+> The `<canvas>` element is only a container for graphics. You must use a script to actually draw the graphics.
 
-> ![](img/final_1.png)
+> Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
 
-Here is a link to a [live demo](http://output.jsbin.com/fugoki/2)
+> *--- from [W3C](http://www.w3schools.com/html/html5_canvas.asp)*
 
-And here is the [final code](http://jsbin.com/fugoki/2/edit) for the live demo.
+My the end of this part you'll have something that looks like this:
 
-To do this, you will be learning the basics of two languages: HTML and CSS.
+> ![End of Part 1](img/part1-end.png)
 
-Every website that you have ever seen are written in these two languages.
+Check out the demo [here](http://jsbin.com/jizoyo/edit?output) ([JS Fiddle](http://jsfiddle.net/4j6od7hv/)).
+
