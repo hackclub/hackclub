@@ -64,6 +64,36 @@ Next lets add some style to our button. In your *style.css* file add the followi
     color: white;
 }
 ```
+
+### New Concept CSS selectors
+
+In CSS, selectors are patterns used to select the element(s) you want to style. If we were to do 
+
+```
+button {
+	//css goes here
+}
+```
+Our css would still work, however if we had multiple buttons in our html, all those buttons would be styled the same because every button element in our html would have the same css applied to it. If we want different styles for each button, we can give each button a unique id attribute in html. Then when we want to reference that id attribute in our css we can do
+
+```
+#idName {
+	//css goes here
+}
+```
+
+Another css selector that we encountered is the hover selector seen here. 
+
+```
+#alertButton:hover {
+    background-color: black;
+    color: white;
+}
+```
+
+This basically says that when a mouse hovers over the html element with the id *alertButton*, apply this css to that element.
+
+
 If you look at your preview, you will notice none of the styles were applied to your button. This is because you have to tell your html file where to get the css from. To do this we will add this code inside the *head* tag of your html. 
 
 ```
