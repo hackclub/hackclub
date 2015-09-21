@@ -175,8 +175,8 @@ Below is the recommended contribution flow for submitting
         $ git push -u origin add-first-meeting-planning
 
 10. Go to your `hackedu` fork on GitHub (it's at
-   `https://github.com/{username}/hackedu`, mine is at
-   https://github.com/zachlatta/hackedu). You should see the following:
+    `https://github.com/{username}/hackedu`, mine is at
+    https://github.com/zachlatta/hackedu). You should see the following:
 
     ![Recently pushed branches notification](https://i.imgur.com/NOeQyBe.png)
 
