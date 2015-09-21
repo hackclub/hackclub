@@ -91,7 +91,7 @@ Another css selector that we encountered is the hover selector seen here.
 }
 ```
 
-This basically says that when a mouse hovers over the html element with the id *alertButton*, apply this css to that element.
+This basically says that when a mouse hovers over the html element with the id *alertButton*, apply this css to that element. You read more about css selectors [here](http://www.w3schools.com/cssref/css_selectors.asp).
 
 
 If you look at your preview, you will notice none of the styles were applied to your button. This is because you have to tell your html file where to get the css from. To do this we will add this code inside the *head* tag of your html. 
