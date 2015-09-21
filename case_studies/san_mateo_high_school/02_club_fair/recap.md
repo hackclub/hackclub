@@ -10,7 +10,6 @@ much space for them.
 ![Poster](http://i.imgur.com/uyd1Nb8.jpg)
 
 - It was very windy, so the poster kept on falling off.
-- We had some friends and a leader hold the poster.
 - One of the leaders at the end could come, so we were 3 at the table.
 - We ended up not flying the drone.
 - We had 18 people sign up.
@@ -18,6 +17,10 @@ much space for them.
 ## Problems we faced
 
 - The windy environment was a problem, as we needed to hold the papers tight.
+
+## How we managed problems and outcomes
+
+- For the poster, we had 2 people hold the poster up right.
 
 ## Tips
 
@@ -32,4 +35,7 @@ will attract people.
 talk about very exciting project people seemed interested in such as hackathons.
 - Don't expect _anybody_ to know about programming.
 - Shoutouts is a great way to advertise your club, make sure to not get
-distracted by it when they do so.
+distracted by it when they do so. In our school, we had speakers with music and
+the leadership team mentioning clubs. If you have something similar, use it to
+your advantage. If you don't have it, request it has it's very useful and sets
+up the mood.
