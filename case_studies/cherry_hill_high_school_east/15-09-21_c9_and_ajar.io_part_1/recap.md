@@ -16,11 +16,18 @@ The club officers met during the weekend to talk about the club and create conte
 
 ---
 
+## CHE Hacks
+
+Intro'd our members (again) to a hackathon we're organizing at our city's public library. Feel free to register at http://chehacks.com.
+
 ## Cloud9 intro
 
 ![c9.io](img/c9.png)
 
-We decided it was time to transition away from JSBin because 1) it was being randomly blocked by Baraccuda Networks (our schools firewall) and 2) we think it's time to expand our member's understanding web development (setting up and linking the files yourself).
+We decided it was time to transition away from JSBin because 
+
+1. it was being randomly blocked by Baraccuda Networks (our schools firewall)
+2. we think it's time to expand our member's understanding web development (setting up and linking the files yourself).
 
 See the workshop [here](https://github.com/CHE-CS/hackedu/tree/master/playbook/workshops/cloud9). Feel free to add to it, I will add a troubleshooting section there instead of hiding it in this recap.
 
@@ -42,7 +49,10 @@ If people finish early engage them with more content!
 
 - Explain the `context.arc()` function. The parameters are `x, y, radius, startAngle, endAngle`. Focus on explaining the angles, which are in radians (the `x`, `y` and `radius` are easy to understand). Explain that the `arc` function forms a circle when the `endAngle` is 2π radians (360º). Let them predict what would happen if the `endAngle` is set to π instead of 2π.
 
-- One club member wanted to draw a diamond. I walked her through googling `"how to draw a diamond on canvas with javascript"`. It led us to [this tutorial](http://www.onlywebpro.com/2011/07/02/html5-canvas-for-absolute-beginners-part-2/). Careful with this particular tutorial because 1) the javascript lives in the html as opposed to a separate file like in the tutorial, 2) `context` is abbreviated to `ctx` and 3) there is a function called `drawShape()`.
+- One club member wanted to draw a diamond. I walked her through googling `"how to draw a diamond on canvas with javascript"`. It led us to [this tutorial](http://www.onlywebpro.com/2011/07/02/html5-canvas-for-absolute-beginners-part-2/). Careful with this particular tutorial because 
+    1. the javascript lives in the html as opposed to a separate file like in the tutorial
+    2. `context` is abbreviated to `ctx`
+    3. there is a function called `drawShape()`
 
 > ## Personal notes about teaching
 
