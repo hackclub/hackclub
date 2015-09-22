@@ -6,7 +6,7 @@
 
 *Cloud9 is a website that lets you program online*. Traditionally, all programming was done locally on the computer: you would save your files on your computer and edit them on your computer (with a code editor). Cloud9 allows you to save your files online and edit your files online (Cloud9 also has a code editor). This means all you need to start programming is internet and a browser. No more installing software!
 
-__Imporatant__: if you're having trouble, checkout the [troubleshooting]("/#Troubleshooting") section at the end of the workshop.
+__Imporatant__: if you're having trouble, checkout the [troubleshooting]("#troubleshooting") section at the end of the workshop.
 
 ---
 
