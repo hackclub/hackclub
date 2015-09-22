@@ -11,14 +11,12 @@ saving their JSBin files.
 - Have everyone leave at least 2 minutes before lunch ends, make sure everything
  is clean.
 
-
 ## Problems we might face
 
 - Connection Errors
 - Not enough space for hackers
 - Hackers getting distracted
 - Hackers finishing way ahead of Time
-
 
 ## Expectations
 
