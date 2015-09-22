@@ -18,6 +18,8 @@ The club officers met during the weekend to talk about the club and create conte
 
 ## Cloud9 intro
 
+![c9.io](img/c9.png)
+
 We decided it was time to transition away from JSBin because 1) it was being randomly blocked by Baraccuda Networks (our schools firewall) and 2) we think it's time to expand our member's understanding web development (setting up and linking the files yourself).
 
 See the workshop [here](https://github.com/CHE-CS/hackedu/tree/master/playbook/workshops/cloud9). Feel free to add to it, I will add a troubleshooting section there instead of hiding it in this recap.
