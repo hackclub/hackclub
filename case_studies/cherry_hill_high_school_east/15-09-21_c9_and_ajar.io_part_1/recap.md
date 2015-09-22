@@ -91,9 +91,9 @@ If people finish early engage them with more content!
   to draw a diamond on canvas with javascript"`. It led us to
   [this tutorial](http://www.onlywebpro.com/2011/07/02/html5-canvas-for-absolute-beginners-part-2/).
   Careful with this particular tutorial because
-    1. the javascript lives in the html as opposed to a separate file like in the tutorial
-    2. `context` is abbreviated to `ctx`
-    3. there is a function called `drawShape()`
+  1. the javascript lives in the html as opposed to a separate file like in the tutorial
+  2. `context` is abbreviated to `ctx`
+  3. there is a function called `drawShape()`
 
 ## Personal notes about teaching
 
