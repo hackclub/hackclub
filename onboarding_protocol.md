@@ -17,6 +17,9 @@ The things we need to do to onboard a new person onto the team.
 - [ ] Add to Google Drive folder
 - [ ] Add to Dropbox
 - [ ] Add to README of [meta](https://github.com/hackedu/meta) repo
+- [ ] Managing GitHub Notifications
+  - [ ] Post in IRC `steward i am GITHUB_USERNAME` and `steward notify mentions`
+    will make an IRC notification when they are mentioned on GitHub
 - [ ] Have them read the following:
   - [ ] [Vision and mission](README.md#vision-and-mission)
   - [ ] [Goals](GOALS.md)
