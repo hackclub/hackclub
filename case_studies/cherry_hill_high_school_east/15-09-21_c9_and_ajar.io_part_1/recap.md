@@ -41,6 +41,12 @@ Ajar.io is a series of workshops (developed by @bogidon @Salamander1012 and @Jon
 
 This workshop was thought up because many people in our club were playing agar.io (instead of following the lesson). Ajar drew a lot of interest – in fact for much of the workshop *everyone in the room was on task*. Success!
 
+> "The idea of having us make agar.io is genius and I'm exited to go further." – a delighted participant
+
+> "this club is SOOOOOOOOOOOOOOOOOOOOOOOOO AMAZING." – an enthralled member
+
+> "It is Agar.io!!!!!!!!!!!" – a psyched student's response to the question "What is one thing we did well?"
+
 ### Suggestions
 
 If people finish early engage them with more content! 
