@@ -6,13 +6,15 @@
 
 *Cloud9 is a website that lets you program online*. Traditionally, all programming was done locally on the computer: you would save your files on your computer and edit them on your computer (with a code editor). Cloud9 allows you to save your files online and edit your files online (Cloud9 also has a code editor). This means all you need to start programming is internet and a browser. No more installing software!
 
+__Imporatant__: if you're having trouble, checkout the [troubleshooting]("/#Troubleshooting") section at the end of the workshop.
+
 ---
 
 ## Login with GitHub
 
 First, make sure you have a github account. If you don't have one, follow the guide for making one located [here](https://github.com/hackedu/hackedu/tree/master/playbook/workshops/portfolio#creating-a-github-account).
 
-Now that you have a GitHub account, you can login to Cloud9 with GitHub.
+Now that you have a GitHub account, you can login to Cloud9 with GitHub. Go to http://c9.io and click on the "octocat" icon in the top corner, as demonstrated below:
 
 ![](img/github-login.gif)
 
@@ -36,7 +38,7 @@ Next we will be creating a html file. To do this hit file on the top left of you
 
 Repeat the last step twice more, except this time create a CSS file and a Javascript file. Name your files *style.css* and *index.js*
 
-Now that you have your files set up lets start building. Inside your *index.html* file in the body tag create a button with the attribute *id* set to *alertButton*. 
+Now that you have your files set up lets start building. Inside your *index.html* file in the body element create a button with the attribute *id* set to *alertButton*. 
 
 ```
 <button id="alertButton">Click Me!</button>
@@ -94,7 +96,7 @@ Another css selector that we encountered is the hover selector seen here.
 This basically says that when a mouse hovers over the html element with the id *alertButton*, apply this css to that element. You read more about css selectors [here](http://www.w3schools.com/cssref/css_selectors.asp).
 
 
-If you look at your preview, you will notice none of the styles were applied to your button. This is because you have to tell your html file where to get the css from. To do this we will add this code inside the *head* tag of your html. 
+If you look at your preview, you will notice none of the styles were applied to your button. This is because you have to tell your html file where to get the css from. To do this we will add this code inside the *head* element of your html. 
 
 ```
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -114,11 +116,11 @@ button.onclick = function () {
 }
 ```
 
-#### Understanding the code
+> #### Understanding the code
 
-In our javascript file we start of by creating a variable called *button* and set it equal to the element in our html that has an *id* of *alertButton*. Next we declare that when our button is clicked, a function is run that alerts the user with the message "Button was pressed".
+> In our javascript file we start of by creating a variable called *button* and set it equal to the element in our html that has an *id* of *alertButton*. Next we declare that when our button is clicked, a function is run that alerts the user with the message "Button was pressed".
 
-If we try testing our code, it wont work yet for the same reason our css didnt work at first. We need to tell our html file where to get the javascript from. To do this, we will add the following code to the end of the *body* tag inside our html.
+If we try testing our code, it wont work yet for the same reason our css didn't work at first. We need to tell our html file where to get the javascript from. To do this, we will add the following code to the end of the *body* element inside our html.
 
 ```
 <script type="text/javascript" src="index.js"></script>
@@ -130,6 +132,21 @@ Go ahead and test your code now.
 
 ![](img/test-code.gif)
 
+## Troubleshooting
+
+- __Nothing shows up__
+    - Try saving the `index.html` file from `File > Save`. After that reload the preview.
+
+- __CSS not applying styles to the button__
+    - Make sure the `href` attribute of the `<link>` element in `index.html` points to a file in the same directory at as `index.html` called `style.css`. 
+    - Make sure you have a css file called `style.css`.
+    - Make sure the `id` attribute of the `<button>` in `index.html` is the same as the id being selected in your `style.css` file (minus the `#`). ID's ARE case sensitive!
+
+- __Javscript is not displaying the alert__
+    - Make sure the `src` attribute of the `<src>` element in `index.html` points to a file in the same directory at as `index.html` called `index.js`. 
+    - Make sure you have a javascript file called `index.js`.
+    - Make sure the `id` attribute of the `<button>` in `index.html` is the same as the id being selected in the `document.getElementById` function in your `index.js` file (minus the `#`). ID's ARE case sensitive!
+
 ## Congratulations!
 
 You now know how to
@@ -138,5 +155,3 @@ You now know how to
 - Work with HTML CSS and Javascript together
 
 Be sure to experiment with HTML CSS and Javascript on your own!
-
-
