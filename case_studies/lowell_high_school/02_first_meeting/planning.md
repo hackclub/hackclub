@@ -1,6 +1,6 @@
 # Planning
 
-##Tentative Agenda
+## Tentative Agenda
 
 1. Welcome, introduce ourselves, rock paper scissors tournament, break out the
    food - 5 mins
@@ -12,7 +12,6 @@
   - http://jonl.org/10-points-for-gryffindor/wand.html
 4. Open questions about anything in particular
 5. http://feedback.hackedu.us/#vallo
-
 
 ## Expected Problems
 
