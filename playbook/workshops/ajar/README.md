@@ -6,13 +6,13 @@
 
 ![](img/agar.png)
 
-The workshop will be divided into several parts:
+The workshop will be divided into several parts (check indicates workshop has been written):
 
-- __Part 1__ – display the user's cell on screen.
-- __Part 2__ – convert the code from part 1 to use functions.
-- __Part 4__ – make the user's cell follow the mouse cursor.
-- __Part 5__ – add randomly generated food.
-- __Part 6__ – add acceleration & velocity to the cell's movements. 
+- [x] __Part 1__ – display the user's cell on screen.
+- [ ] __Part 2__ – convert the code from part 1 to use functions.
+- [ ] __Part 4__ – make the user's cell follow the mouse cursor.
+- [ ] __Part 5__ – add randomly generated food.
+- [ ]__Part 6__ – add acceleration & velocity to the cell's movements. 
 - __More coming soon...__
 
 ## Part 1
