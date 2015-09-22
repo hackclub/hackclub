@@ -73,7 +73,8 @@ going through:
 ## Labs
 
 This section will cover any contribution guidelines specific to
-[Labs](meta/labs) and any others that choose to participate.
+[Labs](meta/labs) and any other club that would like to 
+contribute.
 
 ### Contributing case studies
 
