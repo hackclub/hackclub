@@ -19,11 +19,59 @@ To do this, you will be learning the basics of two languages: HTML and CSS.
 
 Every website that you have ever seen are written in these two languages.
 
+## Creating a JS Bin Account
+
+Before anything, let's create an account in [http://jsbin.com](http://jsbin.com)
+!
+
+When we click "Login or Register"
+
+> ![](img/login_or_register.gif)
+
+We see that we can "Login or Register via GitHub".
+
+Think about this like Facebook Login, except it is GitHub login.
+
+What is GitHub?
+
+It is a website used by many professional coders to collaborate on code.
+Think Dropbox, but for code.
+
+Let's make a GitHub account!
+
+## Creating a GitHub account
+
+Let's create our own GitHub account.
+
+### In a new window, open [`https://github.com`](https://github.com)
+
+> ![](img/c9_v2_setup_1.png)
+
+### Create an account with a valid email
+
+> ![](img/c9_v2_setup_2.png)
+
+### Click "Sign up for GitHub"
+
+> ![](img/c9_v2_setup_3.png)
+
+### Validating your Email Address
+
+- Check your email inbox for a confirmation email from GitHub
+- Make sure you click on the link it tells you to to confirm your account.
+
+> *Important Note*: If you don't do this now, you may run into an error in the
+> the future that may get you to rip your hair out!
+
+## Login with GitHub
+
+Now that you have a GitHub account, you can login with GitHub
+
+> ![](img/login_with_github.gif)
+
 ## Microsoft Word for Code
 
 Just like you use Microsoft to write English, you can use JS Bin to write code.
-
-Open [http://jsbin.com](http://jsbin.com).
 
 Go ahead and close the popup:
 
@@ -479,60 +527,11 @@ Let's
 
 > ![](img/delete_old_body.gif)
 
-Huzzah! We did it! We're done! Now we need to save our work!
-
-To do that, we must create a JS Bin account first.
-
-## Creating a JS Bin Account
-
-When we click "Login or Register"
-
-> ![](img/login_or_register.gif)
-
-We see that we can "Login or Register via GitHub".
-
-Think about this like Facebook Login, except it is GitHub login.
-
-What is GitHub?
-
-It is a website used by many professional coders to collaborate on code.
-Think Dropbox, but for code.
-
-Let's make a GitHub account!
-
-## Creating a GitHub account
-
-Let's create our own GitHub account.
-
-### In a new window, open [`https://github.com`](https://github.com)
-
-> ![](img/c9_v2_setup_1.png)
-
-### Create an account with a valid email
-
-> ![](img/c9_v2_setup_2.png)
-
-### Click "Sign up for GitHub"
-
-> ![](img/c9_v2_setup_3.png)
-
-### Validating your Email Address
-
-- Check your email inbox for a confirmation email from GitHub
-- Make sure you click on the link it tells you to to confirm your account.
-
-> *Important Note*: If you don't do this now, you may run into an error in the
-> the future that may get you to rip your hair out!
-
-## Login with GitHub
-
-Now that you have a GitHub account, you can login with GitHub
-
-> ![](img/login_with_github.gif)
+Huzzah! We did it! We're done!
 
 ## Get a link that everyone can see
 
-Now that you're logged in, JS Bin will not "turn off" your website.
+Since you're logged in, JS Bin will not "turn off" your website.
 
 So if you get the output URL, you can share this with everyone on the
 entire internet now and they will be able to see your website!
