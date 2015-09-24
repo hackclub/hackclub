@@ -73,7 +73,7 @@ going through:
 ## Labs
 
 This section will cover any contribution guidelines specific to
-[Labs](meta/labs) and any others that choose to participate.
+[Labs](meta/labs) and any other club that would like to contribute.
 
 ### Contributing case studies
 
@@ -175,8 +175,8 @@ Below is the recommended contribution flow for submitting
         $ git push -u origin add-first-meeting-planning
 
 10. Go to your `hackedu` fork on GitHub (it's at
-   `https://github.com/{username}/hackedu`, mine is at
-   https://github.com/zachlatta/hackedu). You should see the following:
+    `https://github.com/{username}/hackedu`, mine is at
+    https://github.com/zachlatta/hackedu). You should see the following:
 
     ![Recently pushed branches notification](https://i.imgur.com/NOeQyBe.png)
 
