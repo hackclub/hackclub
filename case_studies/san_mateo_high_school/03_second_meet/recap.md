@@ -7,7 +7,7 @@
 , we skipped hackEDU and hackingEDU slides as we didn't have time.
 - We proceeded and started the workshop.
 - 20 minutes in, we start cleaning up and having people save.
-- Hackers left on time.
+- Hackers left on time!
 
 ## Problems we faced
 
