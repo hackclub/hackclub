@@ -2,8 +2,8 @@
 
 ## Planning
 
-- Set up with 2 posters, 1 paper poster showing Programming Club Booth, 1
-  carton poster showing more about Programming Club.
+- Set up with 2 Posters, 1 paper poster showing Programming Club Booth, 1 carton
+ poster showing more about Programming Club.
 - Having 2 leaders at the booth.
 - Setting up:
   - Poster
