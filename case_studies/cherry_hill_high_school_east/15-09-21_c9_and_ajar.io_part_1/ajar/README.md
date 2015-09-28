@@ -345,7 +345,7 @@ Right now your code should look like this:
 </html>
 ```
 
-> `App.js
+> `App.js`
 > ```
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
@@ -397,8 +397,10 @@ The circle is back!
 
 #### Congrats!
 
-You've finished Part 1!
+You've finished Part 2!
 
 ![](img/celebrate.gif)
+
+## Part 3
 
 # More coming soon...
