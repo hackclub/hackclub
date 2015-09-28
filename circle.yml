@@ -1,6 +1,6 @@
 dependencies:
   pre:
-    - sudo curl -L -o /usr/local/bin/check_markdown_links https://git.io/v3aCL; sudo chmod +x /usr/local/bin/check_markdown_links
+    - sudo curl -L -o /usr/local/bin/check_markdown_links https://raw.githubusercontent.com/hackedu/markcop/markdown-styleguide-validation/bin/markcop; sudo chmod +x /usr/local/bin/check_markdown_links
 
 test:
   override:
