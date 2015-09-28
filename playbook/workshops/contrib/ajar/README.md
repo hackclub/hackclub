@@ -242,7 +242,11 @@ Welcome to part 2 of the Ajar.io workshop!
 To recap, in [part 1](#part-1) you learned about:
 
 - **JavaScript variables**: used to store data values. Declared using the `var`
-  keyword.
+  keyword. You can make variables like this:
+```
+var x = 10 * 2;
+var name = "Bogdan";
+```
 - **Drawing on the canvas**: the HTML `<canvas>` element is used to draw
   graphics, on the fly, via scripting (usually JavaScript). You obtain the 
   drawing context of the `<canvas>` element by calling the _function_ (more on
@@ -269,14 +273,14 @@ function name() {
 }
 ```
 
-A JavaScript function is defined with the `function` keyword, followed by a name,
-followed by parentheses `()`. The code to be executed by the function is
+A JavaScript function is defined with the `function` keyword, followed by a 
+name and a set of parentheses `()`. The code to be executed by the function is
 placed inside curly brackets: `{}`.
 
 You "run" a function (the code inside of it) by "invoking" the function.
 
-You use the `()` operator invokes the function. To invoke the function `name`
-from above, you would write the code:
+You use an empty set of parentheses `()` to invoke the function. To invoke the 
+function `name` from above, you would write the code:
 
 ```
 name();
@@ -359,6 +363,8 @@ Let's modify our code to use functions. Go ahead and open your `index.html`
 file and click on _preview_ in the menu bar and then _Live Preview File
 (index.html)_. Now open your `app.js` file.
 
+![Open live preview](img/open-live-preview.gif)
+
 The first thing we want to do is to wrap these lines in a function:
 
 ```
@@ -400,7 +406,5 @@ The circle is back!
 You've finished Part 2!
 
 ![](img/celebrate.gif)
-
-## Part 3
 
 # More coming soon...
