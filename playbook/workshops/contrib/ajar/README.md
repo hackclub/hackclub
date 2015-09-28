@@ -59,7 +59,7 @@ Your folder should look like this:
 Type the below code as it is written *exactly* into your `index.html` file in
 Cloud9 (no copy-pasting :p):
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,7 +72,7 @@ Cloud9 (no copy-pasting :p):
 
 Next, add the below `<canvas>` element inside of the `<body>` element.
 
-```
+```html
 <canvas id="canvas" width="500px" height="500px"></canvas>
 ```
 
@@ -97,7 +97,7 @@ Now we have to tell our HTML (`index.html`) to use our Javascript (`app.js`). In
 our `index.html` file we add the following line inside of the the `<body>`
 element (make sure it's at the end):
 
-```
+```html
 <script type="text/javascript" src="app.js"></script>
 ```
 
@@ -113,7 +113,7 @@ to your HTML (`index.html`).
 
 Let's start by writing this line:
 
-```
+```js
 var canvas = document.getElementById("canvas");
 ```
 
@@ -135,7 +135,7 @@ var canvas = document.getElementById("canvas");
 
 Next, write this line of code:
 
-```
+```js
 var context = canvas.getContext("2d");
 ```
 
@@ -157,7 +157,7 @@ to reflect the changes. Remember to *save* changes by going to `File > Save`.
 
 Write the following lines at the end of your `app.js` file:
 
-```
+```js
 context.beginPath();
 context.arc(10, 10, 10, 0, 2*3.14159);
 context.fill();
@@ -201,7 +201,7 @@ You should have something that looks like this.
 Let's add some color! For this we write the following line directly above the
 `context.fill` function:
 
-```
+```js
 context.fillStyle = "cyan";
 ```
 
@@ -243,10 +243,12 @@ To recap, in [part 1](#part-1) you learned about:
 
 - **JavaScript variables**: used to store data values. Declared using the `var`
   keyword. You can make variables like this:
-```
+
+```js
 var x = 10 * 2;
 var name = "Bogdan";
 ```
+
 - **Drawing on the canvas**: the HTML `<canvas>` element is used to draw
   graphics, on the fly, via scripting (usually JavaScript). You obtain the 
   drawing context of the `<canvas>` element by calling the _function_ (more on
@@ -267,7 +269,7 @@ task.**
 
 A function looks like this:
 
-```
+```js
 function name() {
     // code to be executed goes here <-- that is a comment
 }
@@ -282,7 +284,7 @@ You "run" a function (the code inside of it) by "invoking" the function.
 You use an empty set of parentheses `()` to invoke the function. To invoke the 
 function `name` from above, you would write the code:
 
-```
+```js
 name();
 ```
 
@@ -293,7 +295,7 @@ times**.
 
 Let's make another function.
 
-```
+```js
 function addOne(myNumber) {
     myNumber = myNumber + 1;
 }
@@ -312,21 +314,21 @@ The function proceeds to take the number (`myNumber`) and add one to it.
 
 So how do we "invoke" this function? Like this:
 
-```
+```js
 addOne(5);
 ```
 
 The function thinks of `myNumber` as a variable whose value is `5`. It then
 proceeds to run the code:
 
-```
+```js
 myNumber = myNumber +1;
 ```
 
 Because `myNumber` is 5, you can think of the computer seeing the code like
 this:
 
-```
+```js
 myNumber = 5 + 1;
 ```
 
@@ -336,7 +338,7 @@ So `myNumber` becomes `6`.
 
 Right now your code should look like this:
 > `Index.html`
-> ```
+> ```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -350,7 +352,7 @@ Right now your code should look like this:
 ```
 
 > `App.js`
-> ```
+> ```js
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 context.beginPath();
@@ -367,7 +369,7 @@ file and click on _preview_ in the menu bar and then _Live Preview File
 
 The first thing we want to do is to wrap these lines in a function:
 
-```
+```js
 context.beginPath();
 context.arc(250, 250, 40, 0, 2*3.14159);
 context.fillStyle = "cyan";
@@ -377,7 +379,7 @@ context.fill();
 We're going to make a new function called `drawUserCell` and place the lines
 from above in it:
 
-```
+```js
 function drawUserCell() {
     context.beginPath();
     context.arc(250, 250, 40, 0, 2*3.14159);
