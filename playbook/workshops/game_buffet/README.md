@@ -87,4 +87,9 @@ This looks well and good, however both `createCanvas` and `background` require p
 
 ![](imgs/add_parameters_to_background.gif)
 
-## Making a game
+At this stage you can actually see your code in action... By opening up the `output` tab you will be able to see your game!
+
+![](imgs/open_output_tab.gif)
+
+*I personally don't have enough screen space to have the `HTML`, `JavaScript` and `Output` tabs open at the same time... So I just use the latter two.*
+
