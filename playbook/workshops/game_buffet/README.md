@@ -93,3 +93,34 @@ At this stage you can actually see your code in action... By opening up the `out
 
 *I personally don't have enough screen space to have the `HTML`, `JavaScript` and `Output` tabs open at the same time... So I just use the latter two.*
 
+
+## Rendering a character
+One of the most important parts of a game is the character controlled by the player. Lets make a character.
+
+In [p5.play](http://p5play.molleindustria.org/) we represent our characters as variables. Variables are pieces of data which we can move around in our programs. They are defined like `var player;` (where player is the name of the variable).
+
+![](imgs/create_player_variable.gif)
+
+Now that we have a place to keep our player sprite (the `player` variable), we can make him appear! The way we do this is by assigning data to `player`. In order to get the player data though, we will use the `createSprite` function.
+
+`createSprite` takes 4 parameters:
+
+1. The initial `x` position
+2. The height `y` position
+3. The `width` to make the sprite
+4. The `height` to make the sprite
+
+![](imgs/create_player_sprite.gif)
+
+Have you checked your `Output` tab? Looks the same as before huh? Same. I wonder why that is...
+
+Programming is about instructing the computer to do a certain task, computers will follow their instructions exactly. At the moment we have created `player` but never actually told the computer to render it! [p5.play](http://p5play.molleindustria.org/) has a handy function called `drawSprites` which will draw all of the sprites at once (In other words, once we do this... It never has to be done again!).
+
+`drawSprites` doesn't take any parameters and as you can imagine, it is a drawing method so we put it in the `draw` function.
+
+![](imgs/call_drawSprites.gif)
+
+Can you see it?
+
+![](imgs/show_player_sprite.gif)
+***Your sprite will more than likely not be the same color as mine; p5js randomizes new sprites colors***
