@@ -22,7 +22,7 @@ In order to create our game quickly we are going to use a `library` called [p5js
 Because we want to use p5js we are going to have to include it in our project. This is done with a `<script>` tag and its respective `src` setting which links to the library.
 
 ![](imgs/add_p5js.gif)
-*The URL we are hosting p5.play at is [http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.12/p5.js](http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.12/p5.js)*
+*The URL we are hosting p5js at is [http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.12/p5.js](http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.12/p5.js)*
 
 [p5js](http://p5js.org) is fine by itself, however we are going to use another `library` to improve [p5js](http://p5js.org)'s game features called [p5.play](http://p5play.molleindustria.org/).
 
@@ -86,3 +86,5 @@ This looks well and good, however both `createCanvas` and `background` require p
 `background` requires three numbers representing a color. These numbers range from 0 (nothing) to 255 (full). The first number represents red, the second green and the third blue. This format is called RGB. I suggest using http://colorpicker.com to choose your colors.
 
 ![](imgs/add_parameters_to_background.gif)
+
+## Making a game
