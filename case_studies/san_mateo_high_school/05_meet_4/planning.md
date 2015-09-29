@@ -2,10 +2,11 @@
 
 ## Planning
 
-- Have everyone come in, set up computers and start brief [presentation](https://github.com/SMHS-Programming/club/blob/37ad74038d0eb22fa6810818d2b1f939d2d7360c/meetings/9_28_Meeting_IV.pdf).
+- Have everyone come in, set up computers and start brief [presentation](https://github.com/SMHS-Programming/club/blob/cd7ed78a778d756bbdbd6ee5e5eeb9ce24c8f776/meetings/9_28_Meeting_IV.pdf).
 - Talk about Challenge, an extra piece of challenges for the workshops.
 - Talk about hackingEDU and make sure everyone participating sends out emails
   and fill out forms.
+- Finish workshops, give out Github Stickers.
 
 ## Problems we might face
 
