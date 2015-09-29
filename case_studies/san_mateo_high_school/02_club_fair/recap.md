@@ -4,7 +4,7 @@
 
 - We setted up, chose one of the best tables.
 - We ended up sharing tables with Interactive Coding Club because there wasn't
-much space for them.
+  much space for them.
 - We had a very big poster:
 
 ![Poster](http://i.imgur.com/uyd1Nb8.jpg)
@@ -24,18 +24,19 @@ much space for them.
 
 ## Tips
 
-- Having a Big Poster I think influenced a lot of people to come by and check it
- out.
+- Having a Big Poster I think influenced a lot of people to come by and check
+  it out.
 - If you do share a table, make sure to keep organized.
 - Make sure to have in your poster the most cool stuff and familiar logos that
-will attract people.
-- Talk to people as they come by, say Hi to everyone, some of them will come and
- visit.
+  will attract people.
+- Talk to people as they come by, say Hi to everyone, some of them will come
+  and visit.
 - Talk about what you will be doing during the school year briefly, and then
-talk about very exciting project people seemed interested in such as hackathons.
+  talk about very exciting project people seemed interested in such as
+  hackathons.
 - Don't expect _anybody_ to know about programming.
 - Shoutouts is a great way to advertise your club, make sure to not get
-distracted by it when they do so. In our school, we had speakers with music and
-the leadership team mentioning clubs. If you have something similar, use it to
-your advantage. If you don't have it, request it has it's very useful and sets
-up the mood.
+  distracted by it when they do so. In our school, we had speakers with music
+  and the leadership team mentioning clubs. If you have something similar, use
+  it to your advantage. If you don't have it, request it has it's very useful
+  and sets up the mood.

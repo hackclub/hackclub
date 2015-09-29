@@ -13,13 +13,13 @@
 ## Problems we faced
 
 - The VGA cable is "strange" with an extra piece of metal which makes it not fit
- to the adapter.
+  to the adapter.
 - A lot of hackers came in, a total of 38 people came in a room for 30. Some
-people needed to stand in the back.
-- All Leaders became a little nervous but we managed it properly.
+  people needed to stand in the back.
+- All leaders became a little nervous but we managed it properly.
 - Drone not working properly, I suggest not using any not secure working tools
- for first time demo.
- - We **ended up with extra time**
+  for first time demo.
+- We **ended up with extra time**
 
 ## How we managed problems and outcomes
 
@@ -42,6 +42,6 @@ people needed to stand in the back.
 
 - Make sure the adapter works correctly.
 - Make general questions, talk about cool project in the future such as
-hackathons.
+  hackathons.
 - Make sure you talk briefly about the next meet up.
 - Over prepare your time to make sure it's completely filled.
