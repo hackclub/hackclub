@@ -1,7 +1,3 @@
-dependencies:
-  pre:
-    - sudo curl -L -o /usr/local/bin/markcop https://git.io/vswrY; sudo chmod +x /usr/local/bin/markcop
-
 test:
   override:
-    - markcop
+    - curl -sL https://git.io/vswrY | bash
