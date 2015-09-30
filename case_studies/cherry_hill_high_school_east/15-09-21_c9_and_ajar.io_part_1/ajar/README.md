@@ -169,12 +169,12 @@ You should have something that looks like this.
 
 > #### Understanding the code
 
-> `context.beginPath()` – any shape on the canvas is considered a path. You need
-> to call this function before begining to draw a new shape. In this case we are
-> starting to draw a circle.
+> `context.beginPath()` – any shape on the canvas is considered a path. You
+> need to call this function before begining to draw a new shape. In this case
+> we are starting to draw a circle.
 
-> `context.arc(10, 10, 10, 0, 2*3.14159)` – this function creates an arc. An arc
-> that ends where it starts forms a circle. The function takes a lot of
+> `context.arc(10, 10, 10, 0, 2*3.14159)` – this function creates an arc. An
+> arc that ends where it starts forms a circle. The function takes a lot of
 > *arguments* (the items separated by commas) so let's look at each one. The
 > order of the arguments goes as follows: `x, y, radius, startAngle, endAngle`.
 

@@ -16,14 +16,14 @@ The club officers met during the weekend to talk about the club and create
 content. We made:
 
 - [Google Slide presentation](https://drive.google.com/open?id=12EV5p5hZW1vRDzhjUGbSsconuaTV2mTil9-1FlEoPn8)
-  – feel free to make a copy and customize!
+  - feel free to make a copy and customize!
 
 - [Intro to Cloud9 workshop](https://github.com/CHE-CS/hackedu/tree/master/playbook/workshops/cloud9)
-  – also introduces how to use import CSS and Javascript files into HTML
+  - also introduces how to use import CSS and Javascript files into HTML
   (`<link>` and `<script>` elements).
 
 - [Ajar.io Part 1 workshop](https://github.com/CHE-CS/hackedu/tree/master/playbook/workshops/ajar)
-  – huge success. Introduces `<canvas>` element and finishes with having a dot
+  - huge success. Introduces `<canvas>` element and finishes with having a dot
   drawn on screen.
 
 -------------------------------------------------------------------------------
@@ -39,8 +39,8 @@ library. Feel free to register at http://chehacks.com.
 
 We decided it was time to transition away from JSBin because
 
-1. it was being randomly blocked by Baraccuda Networks (our schools firewall)
-2. we think it's time to expand our member's understanding web development
+1. It was being randomly blocked by Baraccuda Networks (our schools firewall).
+2. We think it's time to expand our member's understanding web development
    (setting up and linking the files yourself).
 
 See the workshop
@@ -62,11 +62,11 @@ Ajar.io is a series of workshops (developed by @bogidon @Salamander1012 and
 [agar.io](http://agar.io).
 
 This workshop was thought up because many people in our club were playing
-agar.io (instead of following the lesson). Ajar drew a lot of interest – in fact
-for much of the workshop *everyone in the room was on task*. Success!
+agar.io (instead of following the lesson). Ajar drew a lot of interest – in
+fact for much of the workshop *everyone in the room was on task*. Success!
 
-> "The idea of having us make agar.io is genius and I'm exited to go further." –
-> a delighted participant
+> "The idea of having us make agar.io is genius and I'm exited to go further."
+> - a delighted participant
 
 > "this club is SOOOOOOOOOOOOOOOOOOOOOOOOO AMAZING." – an enthralled member
 
@@ -91,7 +91,8 @@ If people finish early engage them with more content!
   to draw a diamond on canvas with javascript"`. It led us to
   [this tutorial](http://www.onlywebpro.com/2011/07/02/html5-canvas-for-absolute-beginners-part-2/).
   Careful with this particular tutorial because
-  1. the javascript lives in the html as opposed to a separate file like in the tutorial
+  1. the javascript lives in the html as opposed to a separate file like in the
+     tutorial
   2. `context` is abbreviated to `ctx`
   3. there is a function called `drawShape()`
 
