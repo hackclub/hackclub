@@ -76,9 +76,9 @@ team.
 - Elizabeth High School
   - [Amy Sorto](https://github.com/amysorto)
 - Ravenwood High School
-  - [Tejas Manohar](https://github.com/tejasmanohar) 
+  - [Tejas Manohar](https://github.com/tejasmanohar)
 - San Leandro High School
-  - [Matthew Gaim] (https://github.com/matthewgaim)
+  - [Matthew Gaim](https://github.com/matthewgaim)
   - [Jiahao Kuang](https://github.com/xeonjake)
 - South Brunswick High School
   - [Sneha Rampalli](https://github.com/sneharamapo)
