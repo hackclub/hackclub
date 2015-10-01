@@ -27,7 +27,8 @@ https://hackedu.us
 
 Personally:
 
-- Grand prize with Fuji (http://youtu.be/TjizJRxnUHo?t=42m24s) at PennApps Fall 2014.
+- Grand prize with Fuji (http://youtu.be/TjizJRxnUHo?t=42m24s) at PennApps Fall
+  2014.
 - 1st place with DTZ.js (http://challengepost.com/software/downtozork-js) at
   Hacking Generation Y
 - 3rd place with Orbit (http://youtu.be/MY01d647S9Y) at the 2015 LAUNCH
@@ -44,7 +45,10 @@ hackEDU:
     students, all of whom are part of hackEDU.
 - Currently in the fundraising and advisory board formation stage.
 
-##### Where do you, or your team, need the most support right now? Be specific and we'll try to help where we can.
+##### Where do you, or your team, need the most support right now?
+
+_Full question: **Where do you, or your team, need the most support right now?
+Be specific and we'll try to help where we can.**_
 
 We're currently raising $150k to bring us through the year, but my cofounder
 and I are completely new to nonprofit fundraising and are both shooting in the
@@ -76,7 +80,10 @@ $1k - Thiel Pitch Prize grant
 
 $0
 
-##### Have you, or your team, participated in any incubators or other programs to further your project? If so, which ones?
+##### Have you participated in any incubators or other programs?
+
+_Full question: **Have you, or your team, participated in any incubators or
+other programs to further your project? If so, which ones?**_
 
 Nope.
 

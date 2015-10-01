@@ -19,15 +19,18 @@ results in: (1) hack clubs engaging groups that are underrepresented in computer
 science and attracting members who might not normally sign up for computer
 science classes, and (2) building confidence, courage, and skills in members
 through integration with the broader hacking community.
-    
+
 ## Metrics
 
 ![map of clubs](https://i.imgur.com/40aaZII.png)
 
 - 38 clubs in 11 states and two countries
 - over 1300 members
-  - 32% women (nearly double the national average of 18% [[source]](http://media.collegeboard.com/digitalServices/pdf/research/2014/Program-Summary-Report-2014.xls)) 
-  - 37% minority ethnicities in technology (seven times the national average of 5% [[source]](http://www.usatoday.com/story/tech/2014/12/29/usa-today-analysis-finds-minorities-underrepresented-in-non-tech-tech-jobs/20868353))    
+  - 32% women (nearly double the national average of 18%
+    [[source]](http://media.collegeboard.com/digitalServices/pdf/research/2014/Program-Summary-Report-2014.xls))
+  - 37% minority ethnicities in technology (seven times the national average of
+    5%
+    [[source]](http://www.usatoday.com/story/tech/2014/12/29/usa-today-analysis-finds-minorities-underrepresented-in-non-tech-tech-jobs/20868353))
 
 ##### What our hackers have been up to
 
@@ -38,12 +41,11 @@ high school students. All of these winning high school teams are part of
 hackEDU.
 
 Most recently, [Rohith Varanasi](http://rohithvaranasi.com/), one of our club
-leaders from South Brunswick High School, and the rest of his team from [MHacks
-IV](http://mhacks-iv.challengepost.com/) were named the [Major League Hacking +
-Thiel 2014 Rookie of the
-Year](http://news.mlh.io/cosmos-thiel-rookie-year-2014-mlh-fall-season-02-09-2015)
-for creating [Cosmos
-Browser](http://www.androidauthority.com/cosmos-browser-sms-data-connection-526654/).
+leaders from South Brunswick High School, and the rest of his team from
+[MHacks IV](http://mhacks-iv.challengepost.com/) were named the
+[Major League Hacking + Thiel 2014 Rookie of the Year](http://news.mlh.io/cosmos-thiel-rookie-year-2014-mlh-fall-season-02-09-2015)
+for creating
+[Cosmos Browser](http://www.androidauthority.com/cosmos-browser-sms-data-connection-526654/).
 Another one of our leaders, [Raphael Kats](http://raphaelrk.com/), created
 [DataWave](http://challengepost.com/software/datawave), another data-less
 browser using radio waves at MHacks V and won 2nd place.

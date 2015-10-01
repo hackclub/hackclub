@@ -34,7 +34,10 @@ https://hackedu.us
 - We've finally opened up a bank account and are currently signing an agreement
   with our (soon to be) fiscal sponsor so we can accept donations.
 
-##### Where do you, or your team, need the most support right now? Be specific and we'll try to help where we can.
+##### Where do you, or your team, need the most support right now?
+
+_Full question: **Where do you, or your team, need the most support right now?
+Be specific and we'll try to help where we can.**_
 
 Our primary focus right now is fundraising so we can continue building hackEDU.
 Introductions to individuals or foundations that might be interested in
@@ -62,7 +65,10 @@ Please share if applicable.
 
 ~$10k from private donors and corporate sponsors.
 
-##### Have you, or your team, participated in any incubators or other programs to further your project? If so, which ones?
+##### Have you participated in any incubators or other programs?
+
+_Full question: **Have you, or your team, participated in any incubators or
+other programs to further your project? If so, which ones?**_
 
 Nope.
 

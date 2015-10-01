@@ -1,17 +1,18 @@
-
-
 - 4PM PST on Tuesday (12/09)
   - People it works for:
   - FB Chat: https://www.facebook.com/messages/conversation-1524265554526303
   - Notes
     - http://beta.etherpad.org/p/documentingawesome
-      - Displice and Attendance, Faithfulness - giving money, signing up that we need help with, 3/4 meetings per month. Paying the set amount of money for the club.
+      - Displice and Attendance, Faithfulness - giving money, signing up that we
+        need help with, 3/4 meetings per month. Paying the set amount of money
+        for the club.
       - - Food
       - - Signging up for competitions-- VEX kit competition
       - Untold Rules:
       - - Whenveer someone starts talking
       - - standing up to talk when you're addressing the whole crowd
-      - Staying Positive - not having a negative opinion, "whenever you signup not saying we're going to fail". Encouraging people to try things.
+      - Staying Positive - not having a negative opinion, "whenever you signup
+        not saying we're going to fail". Encouraging people to try things.
       - => Sharing
       - - sharing things that you did
       - - helping people find out how to do those
@@ -29,11 +30,13 @@
       - most of us sit together
       - in the club, everyone is in the same friend group.
       - beginners are from the CS classes
-      - => are not a place to judge from, it's usually the people outside of CS classes to be best at things.
+      - => are not a place to judge from, it's usually the people outside of CS
+        classes to be best at things.
       - - they stick to the things they know
       - - they wouldn't
       - People who have math experiance above geomery or algebra 1
-      - Everyone having participation - everyone puts in the share of money, faithful
+      - Everyone having participation - everyone puts in the share of money,
+        faithful
 - 6PM PST on Tuesday (12/09)
   - FB Chat: https://www.facebook.com/messages/conversation-338440426341512
   - Notes
@@ -65,7 +68,7 @@
     - Shriyash- Resource list in my club's group:
     - Resources for Learning:
     - Intro to Computer Science (highly recommended)-
-    - 1.https://www.edx.org/course/harvardx/harvardx-cs50x-introduction-computer-1022
+    - 1. https://www.edx.org/course/harvardx/harvardx-cs50x-introduction-computer-1022
     - Web Development -
     - 1. http://www.bentobox.io/ (VERY USEFUL)
     - 2. http://hub.teen2geek.com/
@@ -101,9 +104,12 @@
       - Core Values of a Successful Hack Club -
       - collaboration - people learn better when they work on projects together.
       - inclusion - focus on everyone through outreach, not just programmers
-      - open learning environment - assist people to pursue what they are interested in.
+      - open learning environment - assist people to pursue what they are
+        interested in.
       - Why are events like Code Day and PennApps so attractive to programmers?
-      - Code Day - tight-knit, inclusive. Get to know attendants personally and in a computer science setting.
-      - PennApps - intense and promises to give the best of the nations programmers, but not as inclusive
+      - Code Day - tight-knit, inclusive. Get to know attendants personally and
+        in a computer science setting.
+      - PennApps - intense and promises to give the best of the nations
+        programmers, but not as inclusive
       - Open learning envoriment
       - Strong base of mentors

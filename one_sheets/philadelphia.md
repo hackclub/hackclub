@@ -6,11 +6,11 @@ provide all the tools for starting and leading clubs including a baseline
 coding curriculum, free software tools, and community building training.
 
 Each club typically spans the school year, regularly meeting weekly or biweekly
-for between one and several hours. Clubs are led by high school
-hackers, people who create things that they see missing in the world and aren't 
-afraid to break the rules who want to bring the 
-[hackathon](https://sendgrid.com/blog/why-hackathon/)
-culture back to their schools.
+for between one and several hours. Clubs are led by high school hackers, people
+who create things that they see missing in the world and aren't afraid to break
+the rules who want to bring the
+[hackathon](https://sendgrid.com/blog/why-hackathon/) culture back to their
+schools.
 
 #### Why hackEDU?
 
@@ -28,29 +28,33 @@ through integration with the broader hacking community.
 ##### Fall 2014 Pilot
 
 - 24 clubs in 11 states and two countries
-- over 1000 members 	
-- 35% women (double the national average of 18% [[source]](http://media.collegeboard.com/digitalServices/pdf/research/2014/Program-Summary-Report-2014.xls)) 
-- 18% minority ethnicities in technology (three times the national average 5% [[source]](http://www.usatoday.com/story/tech/2014/12/29/usa-today-analysis-finds-minorities-underrepresented-in-non-tech-tech-jobs/20868353/))
+- over 1000 members
+- 35% women (double the national average of 18%
+  [[source]](http://media.collegeboard.com/digitalServices/pdf/research/2014/Program-Summary-Report-2014.xls))
+- 18% minority ethnicities in technology (three times the national average 5%
+  [[source]](http://www.usatoday.com/story/tech/2014/12/29/usa-today-analysis-finds-minorities-underrepresented-in-non-tech-tech-jobs/20868353/))
 
 ##### Philadelphia
-We currently have 2 clubs in Philadelphia area are starting a third one in the coming weeks. One of our club organizers, Victor Lourng, also is heavily involved in the Philadelphia coding scene and organizes CodeDay Philly, Hackadelphia, Pilot Philly and the HS Hackers meetups.
+We currently have 2 clubs in Philadelphia area are starting a third one in the
+coming weeks. One of our club organizers, Victor Lourng, also is heavily
+involved in the Philadelphia coding scene and organizes CodeDay Philly,
+Hackadelphia, Pilot Philly and the HS Hackers meetups.
 
 
 ##### What our hackers have been up to
 
-At the top two collegiate hackathons in the world, [PennApps
-X](http://2014f.pennapps.com/) and [MHacks
-V](http://mhacksv.challengepost.com/), half of the six winning teams were led
-high school students. All of these winning high school teams are part of
-hackEDU.
+At the top two collegiate hackathons in the world,
+[PennApps X](http://2014f.pennapps.com/) and
+[MHacks V](http://mhacksv.challengepost.com/), half of the six winning teams
+were led high school students. All of these winning high school teams are part
+of hackEDU.
 
 Most recently, [Rohith Varanasi](http://rohithvaranasi.com/), one of our club
-leaders from South Brunswick High School, and the rest of his team from [MHacks
-IV](http://mhacks-iv.challengepost.com/) were named the [Major League Hacking +
-Thiel 2014 Rookie of the
-Year](http://news.mlh.io/cosmos-thiel-rookie-year-2014-mlh-fall-season-02-09-2015)
-for creating [Cosmos
-Browser](http://www.androidauthority.com/cosmos-browser-sms-data-connection-526654/).
+leaders from South Brunswick High School, and the rest of his team from
+[MHacks IV](http://mhacks-iv.challengepost.com/) were named the
+[Major League Hacking + Thiel 2014 Rookie of the Year](http://news.mlh.io/cosmos-thiel-rookie-year-2014-mlh-fall-season-02-09-2015)
+for creating
+[Cosmos Browser](http://www.androidauthority.com/cosmos-browser-sms-data-connection-526654/).
 Another one of our leaders, [Raphael Kats](http://raphaelrk.com/), created
 [DataWave](http://challengepost.com/software/datawave), another data-less
 browser using radio waves at MHacks V and won 2nd place.

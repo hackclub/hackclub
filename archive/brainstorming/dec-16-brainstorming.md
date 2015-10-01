@@ -1,7 +1,8 @@
 # hackEDU Projects Brainstorm
 
 - README
-  - Have a survey in our group for which ideas people think are awesome and ask them if they want to work on the idea if they like it.
+  - Have a survey in our group for which ideas people think are awesome and ask
+    them if they want to work on the idea if they like it.
   - Perhaps Zach and I will pick a technical project to work on for funzies.
   - Strategy
     - Start off by doing every task yourself until
@@ -10,14 +11,16 @@
     - Start off "empowering" them to do much easier tasks first
 - Requirements
   - We need to ship more public
-    - Specifically targeted for all members to engage in, specifically github repos
+    - Specifically targeted for all members to engage in, specifically github
+      repos
 - Completely Internal
   - Officetrivia
     - Find a place to take calls
   - Connection with Organizers
-    - Make physical flash cards to memorize all names and schools of club organizers
+    - Make physical flash cards to memorize all names and schools of club
+      organizers
   - Choose clubs to work with #now
-  - Create cohorts #now 
+  - Create cohorts #now
     - Parse through club organizers
     - Sized 7
   - Create list of existing resources #now
@@ -36,11 +39,12 @@
 - Data
   - https://workflowy.com/#/2e696152cc1d
 - Curriculum
-  - All learning is project based but you want to make sure that you understand all the legos in the project as well.
+  - All learning is project based but you want to make sure that you understand
+    all the legos in the project as well.
   - Each project has two parts
     - How to do the project
     - And what each piece of the lego
-  - Reach out to 
+  - Reach out to
     - Flatiron
     - Hack Reactor
     - and get their curriculum
@@ -67,8 +71,8 @@
   - Individual
     - How do you create a campaign on of awesome shit
   - Org
-    - Make their website more awesome (we need to have a mockup of what it looks like)
-  - 
+    - Make their website more awesome (we need to have a mockup of what it looks
+      like)
 - Recruiting
   - Understanding Generationalness
     - Your club will only continue to be helping people
@@ -86,12 +90,14 @@
     - on hackEDU
     - general building remote hackathon
 - Social Media
-  - When someone ships a project, they should post it in the hackEDU group with a github url and a live url. Show hackEDU. And put it onto showHn, Subreddit. "Show HS Hackers". When someone makes a PullRequest that's considered shipped.
+  - When someone ships a project, they should post it in the hackEDU group with
+    a github url and a live url. Show hackEDU. And put it onto showHn,
+    Subreddit. "Show HS Hackers". When someone makes a PullRequest that's
+    considered shipped.
     - Create a way to ship really easily
     - Static generated site with github
     - Anyone who submits, they get commit access
     - Create a YML
-    - 
   - Celebrate all the wins on social media
     - Adding Their Name to the Github Repo to a Names Doc
       - Pull Request
@@ -120,12 +126,15 @@
     - Think about the experience of a new user to the group
     - Poke each individual organizer to post something in the group
     - Have them ask any questions that they have in the group
-    - Poll all of the organizers which things they think are the best idea and have people who voted on an idea if they want to work on it
+    - Poll all of the organizers which things they think are the best idea and
+      have people who voted on an idea if they want to work on it
 - Hackathons
   - Get as many people to as many hackathons as possible
-    - Help compile a massive listing of hackathons, have every club member recieve notifcations about it
+    - Help compile a massive listing of hackathons, have every club member
+      recieve notifcations about it
 - "Press"
-  - Create a webpage for your club and constantly update it with projects that everyone is working on
+  - Create a webpage for your club and constantly update it with projects that
+    everyone is working on
 - Values
   - Club Manifesto
     - Checkout what hacker school put up

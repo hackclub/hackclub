@@ -8,7 +8,8 @@ We see hackEDU being valuable in two ways:
 Having an easy way to start a coding club means very little without a community
 to back it.
 
-We are nowhere near creating a community for hackEDU. Now's the time to change that.
+We are nowhere near creating a community for hackEDU. Now's the time to change
+that.
 
 Here are some of our current problems, among many others:
 

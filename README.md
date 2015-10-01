@@ -1,4 +1,4 @@
-# hackEDU's Internals
+# hackEDU's Internals [![Circle CI](https://circleci.com/gh/hackedu/meta.svg?style=svg)](https://circleci.com/gh/hackedu/meta)
 
 Welcome! This is our internal repo we use for running
 [hackEDU](http://hackedu.us), warts and all. We're excited to have you involved.
