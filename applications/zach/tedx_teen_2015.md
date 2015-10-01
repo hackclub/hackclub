@@ -89,7 +89,7 @@ and aren't afraid to break the rules, are the people who will solve the world's
 biggest problems and I see it as my duty to give everyone the chance at
 becoming a hacker. I believe that everyone, regardless of race, gender, or
 socioeconomic status, deserves a fair chance at learning computer
-programming and becoming a hacker.   
+programming and becoming a hacker.
 
 ### What is your talk idea about?
 
@@ -111,7 +111,7 @@ fixed-wing aircraft, an unintuitive solution to the ambitious problem of flight.
 I believe that programming is the fixed-wing aircraft for inspiring agency in
 the next generation.
 
-### Please write 3 words that best describe you, what you do, or what you care about
+### Write 3 words that best describe you, what you do, or what you care about
 
 - Hacker
 - Agency
@@ -154,7 +154,7 @@ No.
 
 N/A
 
-### You may submit one link that helps us get to know you (a video, an article, etc)
+### Submit one link that helps us get to know you (a video, an article, etc)
 
 While it's not a traditional medium, I am a builder and I put most of what I
 build on my GitHub: https://github.com/zachlatta.

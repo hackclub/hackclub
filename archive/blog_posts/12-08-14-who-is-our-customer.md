@@ -24,7 +24,7 @@ everyone.
       - -
       - Radical Self Expression
       - Radical Customer Contentment
-      - Mission is built on 
+      - Mission is built on
       - -
       - Celebrate Failure
         - Vulnerability
@@ -51,7 +51,8 @@ everyone.
           don't know what the hell they are doing but do it anyway.
         - Daring Greatly
   - Notes
-    - We might want to make the "with code" part explicit initially and then expand the scope later.
+    - We might want to make the "with code" part explicit initially and then
+      expand the scope later.
 
 ## Target Customers
 
@@ -71,8 +72,10 @@ everyone.
 ### Target Members
 
 - Potential
-  - want to build or break things or are currently building or breaking things with code
-  - are interested in coding for job/college/etc possibilities and haven't seen how it's cool for other reasons yet
+  - want to build or break things or are currently building or breaking things
+    with code
+  - are interested in coding for job/college/etc possibilities and haven't seen
+    how it's cool for other reasons yet
 - Active members
   - What we don't want
     - Arrogance
@@ -91,7 +94,8 @@ everyone.
   - The Mythical Man-Month
     - The sheer joy of making things.
     - The pleasure of making things that are useful to other people.
-    - The fascination of fashioning complex puzzle-like objects of interlocking moving parts.
+    - The fascination of fashioning complex puzzle-like objects of interlocking
+      moving parts.
     - The joy of always learning.
     - The delight of working in a tractable medium.
   - Other things:
@@ -99,5 +103,6 @@ everyone.
     - Being some kind of nerdy superhero.
     - Nearly instant gratification.
     - The pride of seeing my work used by other people.
-    - The thing about it that really hooks me is taking a machine that was designed for no purpose in particular and making it do anything I want.
+    - The thing about it that really hooks me is taking a machine that was
+      designed for no purpose in particular and making it do anything I want.
     - The benefit that it brings to users in making their lives easier.

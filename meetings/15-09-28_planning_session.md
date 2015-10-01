@@ -14,15 +14,18 @@ _Attendees_:
   1. [X] Packrat dashboard is added
   2. [X] Packrat analytics page is added
   3. [X] `feedback.hackedu.us` points to Packrat
-  4. [X] Club leaders having meetings this week are reminded of the feedback form
+  4. [X] Club leaders having meetings this week are reminded of the feedback
+     form
   - _Update:_ It's finished, but not shipped to club leaders
-- [ ] _In Progress_: 2nd workshop guidelines created (@jonleung, hackedu/hackedu#171)
+- [ ] _In Progress_: 2nd workshop guidelines created (@jonleung,
+  hackedu/hackedu#171)
   - _Update:_ Half created
 - [ ] _In Progress_: 2nd workshop created (@jonleung, hackedu/hackedu#171)
   - _Update:_ Not finished, need to fix JSBin links with new code
 - [ ] _In Progress_: 3rd workshop created (@jonleung, hackedu/hackedu#271)
   - _Update:_ Code written, workshop not written
-- [X] Set up Labs directors check-ins before/after club meetings (@jonleung, hackedu/hackedu#157)
+- [X] Set up Labs directors check-ins before/after club meetings (@jonleung,
+  hackedu/hackedu#157)
   - _Update:_ Done
 - [X] Create 'Labs' calendar (@hellyeah, #156)
   - [X] Add Labs meeting times to 'Labs' calendar
@@ -80,7 +83,6 @@ _Attendees_:
 - [ ] Further work on Packrat
 
 ## Clarified Objectives for the Week
-
 
 ### Curriculum
 

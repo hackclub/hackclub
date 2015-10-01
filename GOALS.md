@@ -2,9 +2,9 @@
 **Table of Contents**
 
 - [Progress Overview](#progress-overview)
-    - [2014 - 2015 School Year](#2014---2015-school-year)
+    - [2014 to 2015 School Year](#2014-to-2015-school-year)
     - [2015 Summer](#2015-summer)
-- [2015 - 2016 School Year](#2015---2016-school-year)
+- [2015 to 2016 School Year](#2015-to-2016-school-year)
     - [Playbook](#playbook)
     - [Scale](#scale)
 
@@ -17,7 +17,7 @@ as an organization.
 
 # Progress Overview
 
-## 2014 - 2015 School Year
+## 2014 to 2015 School Year
 
 - Concluded with 40 clubs in 11 states, reaching 1300 hackers
   - 32% female (nearly 2x AP CS average)
@@ -60,7 +60,7 @@ Hack Camp overview:
   [hacker](https://github.com/hackedu/hack-camp/blob/master/cohort_3/feedback/10.md#can-you-tell-us-if-hack-camp-changed-your-mindset-or-the-way-you-thought-about-yourself-or-your-abilities)
   [feedback](https://github.com/hackedu/hack-camp/blob/master/cohort_3/feedback/09.md#can-you-tell-us-if-hack-camp-changed-your-mindset-or-the-way-you-thought-about-yourself-or-your-abilities).
 
-# 2015 - 2016 School Year
+# 2015 to 2016 School Year
 
 For the upcoming 2015 - 2016 school year, we have two objectives:
 
