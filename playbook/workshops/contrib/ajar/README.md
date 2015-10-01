@@ -243,7 +243,7 @@ To recap, in [part 1](#part-1) you learned about:
 
 - **JavaScript variables**: used to store data values. Declared using the `var`
   keyword. You can make variables like this:
-```
+```js
 var x = 10 * 2;
 var name = "Bogdan";
 ```
@@ -267,7 +267,7 @@ task.**
 
 A function looks like this:
 
-```
+```js
 function name() {
     // code to be executed goes here <-- that is a comment
 }
@@ -282,7 +282,7 @@ You "run" a function (the code inside of it) by "invoking" the function.
 You use an empty set of parentheses `()` to invoke the function. To invoke the 
 function `name` from above, you would write the code:
 
-```
+```js
 name();
 ```
 
@@ -293,7 +293,7 @@ times**.
 
 Let's make another function.
 
-```
+```js
 function addOne(myNumber) {
     myNumber = myNumber + 1;
 }
@@ -312,21 +312,21 @@ The function proceeds to take the number (`myNumber`) and add one to it.
 
 So how do we "invoke" this function? Like this:
 
-```
+```js
 addOne(5);
 ```
 
 The function thinks of `myNumber` as a variable whose value is `5`. It then
 proceeds to run the code:
 
-```
+```js
 myNumber = myNumber +1;
 ```
 
 Because `myNumber` is 5, you can think of the computer seeing the code like
 this:
 
-```
+```js
 myNumber = 5 + 1;
 ```
 
@@ -335,8 +335,9 @@ So `myNumber` becomes `6`.
 ### Using functions in Ajar.
 
 Right now your code should look like this:
-> `Index.html`
-> ```
+```html
+<!-- Your index.html file -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -349,8 +350,9 @@ Right now your code should look like this:
 </html>
 ```
 
-> `App.js`
-> ```
+```js
+// Your app.js file
+
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 context.beginPath();
