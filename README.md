@@ -1,5 +1,5 @@
 <a name="top"></a>
-[![IRC Network](https://img.shields.io/badge/irc-freenode-blue.svg "IRC Freenode")](https://webchat.freenode.net/?channels=hackedu)
+[![IRC Network](https://img.shields.io/badge/irc-freenode-blue.svg "IRC Freenode")](https://kiwiirc.com/client/irc.freenode.net/?nick=Hacker%7C?#hackedu)
 [![Build Status](https://circleci.com/gh/hackedu/hackedu.svg?style=shield)](https://circleci.com/gh/hackedu/hackedu)
 
 ------------------------------------------------------------------------------
