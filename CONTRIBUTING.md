@@ -142,7 +142,7 @@ Below is the recommended contribution flow for submitting
 5. Create a new branch to add the case study to. Branch names should briefly
    describe the change being made. They should be lowercase and use dashes (`-`)
    instead of spaces. Since I'm adding the planning for our first meeting, I'm
-   going to call this branch `add-first-meeting-planning`.
+   going to call this branch `add-first-meeting-planning`. We call this a feature branch.
 
         $ git checkout -b add-first-meeting-planning
 
