@@ -12,11 +12,11 @@ ajar.io.
 The workshop will be divided into several parts (check indicates workshop has
 been written):
 
-- [x] [__Part 1__](#part-1) – display the user's cell on screen.
-- [ ] __Part 2__ – convert the code from part 1 to use functions.
-- [ ] __Part 4__ – make the user's cell follow the mouse cursor.
-- [ ] __Part 5__ – add randomly generated food.
-- [ ] __Part 6__ – add acceleration & velocity to the cell's movements.
+- [x] [__Part 1__](#part-1) - display the user's cell on screen.
+- [x] [__Part 2__](#part-2) - convert the code from part 1 to use functions.
+- [ ] __Part 3__ - make the user's cell follow the mouse cursor.
+- [ ] __Part 4__ - add acceleration & velocity to the cell's movements.
+- [ ] __Part 5__ - add randomly generated food.
 
 __More coming soon...__
 
@@ -231,6 +231,181 @@ Your website should now look like this:
 #### Congrats!
 
 You've finished Part 1!
+
+![](img/celebrate.gif)
+
+
+## Part 2
+
+Welcome to part 2 of the Ajar.io workshop!
+
+To recap, in [part 1](#part-1) you learned about:
+
+- **JavaScript variables**: used to store data values. Declared using the `var`
+  keyword. You can make variables like this:
+```js
+var x = 10 * 2;
+var name = "Bogdan";
+```
+- **Drawing on the canvas**: the HTML `<canvas>` element is used to draw
+  graphics, on the fly, via scripting (usually JavaScript). You obtain the 
+  drawing context of the `<canvas>` element by calling the _function_ (more on
+  what that means today) `getContext("2d")` of the `<canvas>` element. You use
+  the drawing context to draw shapes on the canvas.
+
+In this part you will learn about **functions**.
+
+### What are functions?
+
+In part 1, you wrote all your code outside of any functions. This means that
+your code runs from *top to bottom*. This was okay for a simple task such as
+displaying one circle on screen. For more complex scenarios we will need 
+**functions**.
+
+**A JavaScript function is a block of code designed to perform a particular
+task.**
+
+A function looks like this:
+
+```js
+function name() {
+    // code to be executed goes here <-- that is a comment
+}
+```
+
+A JavaScript function is defined with the `function` keyword, followed by a 
+name and a set of parentheses `()`. The code to be executed by the function is
+placed inside curly brackets: `{}`.
+
+You "run" a function (the code inside of it) by "invoking" the function.
+
+You use an empty set of parentheses `()` to invoke the function. To invoke the 
+function `name` from above, you would write the code:
+
+```js
+name();
+```
+
+The code contained within the curly brackets `{}` would then be executed.
+
+Unlike the code in part 1, **code contained in functions can be run multiple
+times**.
+
+Let's make another function.
+
+```js
+function addOne(myNumber) {
+    myNumber = myNumber + 1;
+}
+```
+
+This function's name is `addOne`.
+
+But look! There's something inside of the parentheses. You can put
+**parameters** inside function parentheses. Parameters are values you can give 
+to the function that the function can then use when executing it's code block.
+
+In this function we give the function a number. The function can refer to this
+number as `myNumber`.
+
+The function proceeds to take the number (`myNumber`) and add one to it.
+
+So how do we "invoke" this function? Like this:
+
+```js
+addOne(5);
+```
+
+The function thinks of `myNumber` as a variable whose value is `5`. It then
+proceeds to run the code:
+
+```js
+myNumber = myNumber +1;
+```
+
+Because `myNumber` is 5, you can think of the computer seeing the code like
+this:
+
+```js
+myNumber = 5 + 1;
+```
+
+So `myNumber` becomes `6`.
+
+### Using functions in Ajar.
+
+Right now your code should look like this:
+```html
+<!-- Your index.html file -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajar.io</title>
+</head>
+<body>
+    <canvas id="canvas" width="500px" height="500px"></canvas>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
+```
+
+```js
+// Your app.js file
+
+var canvas = document.getElementById("canvas");
+var context = canvas.getContext("2d");
+context.beginPath();
+context.arc(x, y, 40, 0, 2*3.14159);
+context.fillStyle = "cyan";
+context.fill();
+```
+
+Let's modify our code to use functions. Go ahead and open your `index.html`
+file and click on _preview_ in the menu bar and then _Live Preview File
+(index.html)_. Now open your `app.js` file.
+
+![Open live preview](img/open-live-preview.gif)
+
+The first thing we want to do is to wrap these lines in a function:
+
+```
+context.beginPath();
+context.arc(250, 250, 40, 0, 2*3.14159);
+context.fillStyle = "cyan";
+context.fill();
+```
+
+We're going to make a new function called `drawUserCell` and place the lines
+from above in it:
+
+```
+function drawUserCell() {
+    context.beginPath();
+    context.arc(250, 250, 40, 0, 2*3.14159);
+    context.fillStyle = "cyan";
+    context.fill();
+}
+```
+
+![Wrap with drawUserCell function](img/wrap-with-draw-user-cell-function.gif)
+
+If you save the file now you'll see that there's no more circle on screen!
+
+This is because we haven't "invoked" the function `drawUserCell`. Let's invoke
+it. Type out the code below the `drawUserCell` function:
+
+```
+drawUserCell();
+```
+
+![Invoke drawUserCell function](img/invoke-draw-user-cell-function.gif)
+
+The circle is back!
+
+#### Congrats!
+
+You've finished Part 2!
 
 ![](img/celebrate.gif)
 
