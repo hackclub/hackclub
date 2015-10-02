@@ -2,7 +2,8 @@
 
 ## Planning
 
-- Start [Presentation](https://github.com/SMHS-Programming/club/blob/bdc2c3a9b15d9093296337a63e0daf9bd61d67fb/meetings/9_23_Meeting_III.pdf)
+- Start
+  [Presentation](https://github.com/SMHS-Programming/club/blob/bdc2c3a9b15d9093296337a63e0daf9bd61d67fb/meetings/9_23_Meeting_III.pdf)
 - Talk about changes in curriculum and survey form we opened after last's meet.
 - Proceed with a small talk about hackingEDU applications.
 - Resume Workshop starting with registration with Github.
