@@ -4,7 +4,8 @@
 
 - Talk very briefly about hackEDU (was not mentioned before to not confuse with
   hackingEDU) and hackingEDU hackathon.
-- Go through [workshop presentation](https://github.com/SMHS-Programming/club/blob/37ad74038d0eb22fa6810818d2b1f939d2d7360c/meetings/9_21_Meeting_II.pdf).
+- Go through
+  [workshop presentation](https://github.com/SMHS-Programming/club/blob/37ad74038d0eb22fa6810818d2b1f939d2d7360c/meetings/9_21_Meeting_II.pdf).
 - Have the hackers start the workshop.
 - 10 minutes before lunch ends, have everyone start creating github accounts and
 saving their JSBin files.

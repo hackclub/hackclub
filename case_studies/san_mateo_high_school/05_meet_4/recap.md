@@ -16,8 +16,8 @@
 
 ## How we managed problems and outcomes
 
-- We improvised and taught IF/ELSE statements using Java, we made sure that
-  the hackers were aware about the "extra" stuff that Java uses that Javascript
+- We improvised and taught IF/ELSE statements using Java, we made sure that the
+  hackers were aware about the "extra" stuff that Java uses that Javascript
   doesn't.
 - We also tried to have the hackers participate.
 - We won't have a lab this Wednesday either, so instead we will have a fun
