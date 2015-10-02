@@ -3,7 +3,8 @@
 ## What Happened
 
 - We had hackers (~25) come in, we didn't permit food in the lab.
-- We started [Presentation](https://github.com/SMHS-Programming/club/blob/bdc2c3a9b15d9093296337a63e0daf9bd61d67fb/meetings/9_21_Meeting_II.pdf)
+- We started
+  [Presentation](https://github.com/SMHS-Programming/club/blob/bdc2c3a9b15d9093296337a63e0daf9bd61d67fb/meetings/9_21_Meeting_II.pdf)
   , we skipped hackEDU and hackingEDU slides as we didn't have time.
 - We proceeded and started the workshop.
 - 20 minutes in, we start cleaning up and having people save.

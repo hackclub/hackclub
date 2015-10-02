@@ -2,7 +2,9 @@
 
 Welcome to San Mateo's Programming Club case studies! We have a
 [Github Repository](https://github.com/SMHS-Programming/club/tree/70c64404331b85369d098da277f473424a14273b)
-where we keep all of our progress and works. Similar to hackEDU's hackCamp.
+where we keep all of our progress and works. Similar to
+[hackEDU's](https://github/hackedu/hackedu)
+[Hack Camp](https://github.com/hackedu/hack-camp).
 
 ## Meetings
 
