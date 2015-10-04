@@ -1,0 +1,67 @@
+# Add Enemy Sprite
+
+We can add an enemy sprite with the following (new code highlighted in gray):
+
+> ![](img/t6_js_bin.png)
+
+[![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/46/edit?js,output)
+
+The highlighted gray lines above (reproduced below) are responsible for the
+new image:
+
+```js
+var playerImage = loadImage("http://i.imgur.com/mOkHDqN.png");
+player.addImage(playerImage);
+```
+
+## Tinkering with the code
+
+`createSprite` looks different this time:
+
+Last Time:
+
+```js
+createSprite(150, 470);
+```
+
+Now:
+
+```js
+createSprite(150, 350, 8, 64);
+```
+
+Let's try playing with the latter two numbers:
+
+> ![](img/t6_tinker_enemy_size.gif)
+
+## Understanding `createSpriteloca`
+
+It seems that the last two values represent the width and height of the
+sprite that's created:
+
+```
+createSprite(150, 350, 8, 64);
+                       ^   ^
+                       |   └ set the *height* of the new sprite
+                       |
+                       └ set the *width* of the new sprite
+```
+
+## Add It To Your Own Code
+
+> ![](img/t6_add_code.gif)
+
+![](img/checkmark.png) Go ahead and add an enemy to your own working bin.
+
+## Next Up
+
+| **[![](img/sq_7_linear_enemy_movement.gif) <br> 7.  Enemy Sprite Move] (linear_enemy_movement.md)** |
+|:----------------------------------------------------------------------------------------------------|
+
+## Table of Contents
+
+| **[![](img/sq_1_blank_canvas.png)          <br> 1.  Blank Canvas]      (blank_canvas.md)**          | **[![](img/sq_2_add_player_sprite.png)    <br> 2. Add Player Sprite]    (add_player_sprite.md)**    | **[![](img/sq_3_linear_player_movement.gif)  <br> 3. Linear Player Movement] (linear_player_movement.md)** |
+|:----------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
+| **[![](img/sq_4_arrow_key_movement.gif)    <br> 4.  Arrow Key Movement](arrow_key_movement.md)**    | **[![](img/sq_5_player_image.gif)         <br> 5. Player Image]         (player_image.md)**         | **[![](img/sq_6_add_enemy_sprite.gif)        <br> 6. Add Enemy Sprite]       (add_enemy_sprite.md)**       |
+| **[![](img/sq_7_linear_enemy_movement.gif) <br> 7.  Enemy Sprite Move] (linear_enemy_movement.md)** | **[![](img/sq_8_enemy_go_back_to_top.gif) <br> 8. Enemy Go Back to Top] (enemy_go_back_to_top.md)** | **[![](img/sq_9_random_enemy_position.gif)   <br> 9. Random Enemy Position]  (random_enemy_position.md)**  |
+| **[![](img/sq_10_game_over.gif)            <br> 10. Game Over]         (game_over.md)**             |                                                                                                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**                                            |
