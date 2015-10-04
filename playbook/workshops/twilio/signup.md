@@ -106,7 +106,7 @@ may use your own card as well (your card will not be charged if you turn off
 automatic recharging).
 
 | Field              | Value                               |
-|:-------------------|:------------------------------------|
+| -------------------| ----------------------------------- |
 | Credit Card Number | `374327384095936`                   |
 | Expires            | `10/2021`                           |
 | CVV                | `9263`                              |
@@ -130,24 +130,24 @@ Click "I have a promo code."
 
 To get the actual promo code:
 
-- ask your club leader for the Twilio promo code
-- if you are the club leader, get the promo code from  
+- Ask your club leader for the Twilio promo code
+- If you are the club leader, get the promo code from  
   [`secrets.md`](https://github.com/hackedu/private/blob/master/secrets.md#twilio-promotion-code),
- a file inside our [`private`](https://github.com/hackedu/private)
-GitHub repository.
-- if you don't have access to that repository, please email Jonathan at
-jonathanleung1337@gmail.com and ask for the Twilio promo code and he'll quickly
-respond.
+  a file inside our [`private`](https://github.com/hackedu/private) GitHub
+  repository.
+- If you don't have access to that repository, please email Jonathan at
+  jonathanleung1337@gmail.com and ask for the Twilio promo code and he'll
+  quickly respond.
 
 After obtaining the promo code:
 
-- enter the promo code
-- uncheck "Turn on automatic recharge"
+- Enter the promo code
+- Uncheck "Turn on automatic recharge"
 
 > ![](img/enter_promo_code.gif)
 
-After making sure that all the information you entered is correct,
-click the "Upgrade Account" button.
+After making sure that all the information you entered is correct, click the
+"Upgrade Account" button.
 
 > ![](img/click_upgrade_account.png)
 
@@ -175,7 +175,7 @@ and my AUTH TOKEN is `fb83ceb820510cf695cf1f45b157c12f`.
 
 We have what we need!
 
-## If you live outside of the US
+## If You Live Outside of the North America
 
 You will want to purchase a phone number from your country. It is important
 that you do this now.

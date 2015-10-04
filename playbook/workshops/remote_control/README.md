@@ -3,8 +3,6 @@
 The objective of this workshop is to learn to wield powerful
 [APIs](http://www.quora.com/What-is-an-API) with minimal code.
 
-This tutorial can be used by complete beginners or more advanced programmers.
-
 **For Beginners**
 
 You will learn how to do really cool things with really simple code. You won't
@@ -30,12 +28,12 @@ text.
 
 Ready?
 
-Open [this JS Bin](http://jsbin.com/papawo/6/edit?html,js,console). Leave this
+Open [this JS Bin](http://jsbin.com/papawo/6/edit?html,js,console)*. Leave this
 tab open for the rest of the tutorial.
 
-JS Bin is a website to easily write code for websites.
+_*JS Bin is a website to easily write code for websites._
 
-### Adding your Twilio sid and token
+### Adding Your Twilio SID and Token
 
 We are going to use a service called Twilio to do things like send text messages
 and make phone calls.
@@ -47,7 +45,7 @@ bottom of your body tag:
 <script src="//bit.ly/twilio-basic-v1"
   sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
   token="YOUR_TWILIO_AUTH_TOKEN_HERE"
-></script>  
+></script>
 ```
 
 You can see this snippet of code inside the HTML tab of the JS Bin:
@@ -55,28 +53,29 @@ You can see this snippet of code inside the HTML tab of the JS Bin:
 > ![](img/html_tab.png)
 
 Before this will work though we need to change `"YOUR_TWILIO_ACCOUNT_SID_HERE"`
-and `"YOUR_TWILIO_AUTH_TOKEN_HERE"` to your actual Twilio sid and token.
+and `"YOUR_TWILIO_AUTH_TOKEN_HERE"` to your actual Twilio SID and token.
 
-The facilitator should have given you an sid and a token. If you don't have one
+The facilitator should have given you an SID and a token. If you don't have one
 yet, ask your facilitator.
 
 If you are the facilitator (or you're just doing this workshop by yourself),
 follow the directions [here](../twilio/signup.md) to get your own Twilio
-sid and token.
+SID and token.
 
-Once we have the sid and auth token, replace
+Once we have the SID and auth token, replace
 `YOUR_TWILIO_ACCOUNT_SID_HERE` and `YOUR_TWILIO_AUTH_TOKEN_HERE` with the actual
 Account SID and Auth Token.
 
 > ![](img/enter_account_sid.gif)
 
-### Writing the one line of code to send a text message
+### Writing the One Line of Code to Send a Text Message
 
 Then type the below code into the left side of JS Bin _exactly_:
 
 ```js
 Twilio.callAndSay("555-555-5555", "You just subscribed to Gossip Girl");
 ```
+
 _**Don't forget the parentheses commas, and quotation marks.**_
 
 > ![](img/demo_1.gif)
@@ -95,12 +94,10 @@ Now go ahead and press the "Run" button.
 
 Your phone should ring shortly! Answer it!
 
-```
-If it doesn't work, ask a neighboring group to see if they can see what's wrong.
-Otherwise, raise your hand to ask a facilitator for help! We <3 questions!
-```
+_If it doesn't work, ask a neighboring group to see if they can see what's
+wrong. Otherwise, raise your hand to ask a facilitator for help!_
 
-### Having some fun
+### Having Some Fun
 
 If you want, you can now duplicate the code to call more people's phones! Ask
 your neighbors for their phone number!
@@ -111,7 +108,7 @@ Go ahead and click run!
 
 ![](img/celebrate.gif)
 
-## Outline for the rest of this tutorial
+## Outline for the Rest of This Tutorial
 
 ### Part I
 
@@ -120,12 +117,11 @@ This first section is linear and more guided.
 In this section, you will learn to build an HTML5 app that, when you press a
 a button, it will call a phone.
 
-[Here is a demo of the app we will
-make](http://jsbin.com/fawuda/86/edit?html,css,js,console,output). To make this
-work for you:
+[Here is a demo of the app we will make](http://jsbin.com/fawuda/86/edit?js,console,output).
+To make this work for you:
 
 1. make sure you change change `555-555-5555` to your phone number
-2. click the "Run with JS" button in the output and enter your Twilio sid and
+2. click the "Run with JS" button in the output and enter your Twilio SID and
    token
 
 Here is an outline of what you'll learn on the way:
@@ -136,15 +132,16 @@ Here is an outline of what you'll learn on the way:
 3. [Call a phone when a button is clicked]
    (#call-a-phone-when-a-button-is-clicked)
 
-If you're more advanced, feel free to skip this section and go to the next.
-Do make sure that you create a JS Bin account first though.
+If you're more advanced, feel free to skip this section and go to the next. Do
+make sure that you create a JS Bin account first though (you can sign in with
+GitHub).
 
 ### Part II
 
 This section is less guided. It showcases snippets of various APIs and how to
 use them.
 
-With you partner, look around to see what snippets you think are cool.
+With your partner, look around to see what snippets you think are cool.
 Pick and choose some of them to build a mini project!
 
 We can break the tools into two categories:
@@ -153,10 +150,10 @@ We can break the tools into two categories:
 
 Actions are just actions:
 
-- send a text message (addressed above)
-- call a phone and have a computer voice say something (addressed above)
-- call a phone and play music
-- play music through the web page
+- Send a text message (addressed above)
+- Call a phone and have a computer voice say something (addressed above)
+- Call a phone and play music
+- Play music through the web page
 
 **Triggers**
 
@@ -178,7 +175,7 @@ If you've closed it already, open
 [the JS Bin](http://jsbin.com/papawo/6/edit?js,console)
 back up!
 
-If you havn't added your Twilio sid and token to this JS Bin, please do that
+If you havn't added your Twilio SID and token to this JS Bin, please do that
 by [following these directions](#adding-your-twilio-sid-and-token).
 
 We've already learned how to make a phone call and say something in the
@@ -236,28 +233,29 @@ Think about this like Facebook Login, except it is GitHub login.
 
 What is GitHub?
 
-It is a website used by many professional coders to collaborate on code.
-Think Dropbox, but for code.
+It is a website used by many coders to collaborate on code. Think Dropbox, but
+for code.
 
 Let's make a GitHub account!
 
+_If you already have a GitHub account, feel free to
+[skip this step](#call-a-phone-when-a-button-is-clicked)._
+
 #### Creating a GitHub account
 
-Let's create our own GitHub account.
-
-##### In a new window, open [`https://github.com`](https://github.com)
+**In a new window, open [https://github.com](https://github.com)**
 
 > ![](img/c9_v2_setup_1.png)
 
-##### Create an account with a valid email
+**Create an account with a valid email**
 
 > ![](img/c9_v2_setup_2.png)
 
-##### Click "Sign up for GitHub"
+**Click "Sign up for GitHub"**
 
 > ![](img/c9_v2_setup_3.png)
 
-#### Login with GitHub
+**Login with GitHub**
 
 Now that you have a GitHub account, you can login with GitHub
 
@@ -268,13 +266,12 @@ Great! We now have our own JS Bin and GitHub accounts!
 **Next**
 
 We learned how to call a phone and send a text message.
-Now let's make this work when I press a real button on a website!
+Now let's make this work when I press a button on a real website!
 
-### Call a phone when a button is clicked
+### Call a Phone When a Button is Clicked
 
-**Importatant:** Go ahead and open up
-[this new JS Bin](http://jsbin.com/fawuda/68/edit?html,js,console,output) and
-go ahead and
+**Important:** Go ahead and open up
+[this new JS Bin](http://jsbin.com/fawuda/68/edit?html,js,console,output)and
 [add your Twilio credentials like before as well](#adding-your-twilio-sid-and-token).
 
 There are 4 panels in the JS Bin now:
@@ -302,10 +299,10 @@ Go ahead and click the "Emergency Excuse" button:
 
 > ![](img/button_press.gif)
 
-> If it doesn't, ask a neighboring group to see if they can see what's wrong.
-> Otherwise, raise your hand to ask a facilitator for help!
+If it doesn't, ask a neighboring group to see if they can see what's wrong.
+Otherwise, raise your hand to ask a facilitator for help!
 
-#### Trying to understand the code.
+#### Trying to Understand the Code
 
 There are two pieces of code that make this work, the code in the HTML:
 
@@ -326,17 +323,17 @@ document.getElementById("emergency-button").onclick = function() {
 };
 ```
 
-With your parter (and maybe some neighbors), spend just 1-2 minutes trying to
+With your partner (and maybe some neighbors), spend just 1-2 minutes trying to
 talk through how you think this code works. (Hint: say the JavaScript out loud
 **slowly**...)
 
-#### Understanding the code
+#### Understanding the Code
 
 Instead of explaining how the existing code works, I will explain by going
 through the process of adding another button. When I press this new button, it
 will call me and say "Time to wake up! Keep hacking! Just do it!".
 
-##### Adding the button
+##### Adding the Button
 
 In the HTML let's add another button by writing:
 
@@ -348,9 +345,9 @@ In the HTML let's add another button by writing:
 
 <!--Result-->
 
-##### Adding an id to the button
+##### Adding an Id to the Button
 
-Then we need to give this button some id so we can refer to it by its id in the
+Then we need to give this button an id so we can refer to it by its id in the
 JavaScript.
 
 ```html
@@ -359,13 +356,13 @@ JavaScript.
 
 > ![](img/motivate_partner_2.gif)
 
-##### Referencing the button from JavaScript
+##### Referencing the Button from JavaScript
 
 Now that we set the button's id, we add this to our JavaScript:
 
 ```js
 document.getElementById("motivation-button").onclick = function() {
-    [PUT ANY CODE HERE YOU WANT WHEN THE BUTTON IS CLICKED]
+  [PUT ANY CODE HERE YOU WANT WHEN THE BUTTON IS CLICKED]
 };
 ```
 _Don't include the `[PUT ANY CODE HERE YOU WANT WHEN THE BUTTON IS CLICKED]`_
@@ -385,13 +382,15 @@ about them in this workshop. If you want to read more about what's happening
 here, feel free to Google `javascript function` and `document.getElementById`
 and/or ask a facilitator!
 
-##### Adding an alert
+##### Adding an Alert
 
 Now we can add the code inside of the `function`.
 
 Let's add what's called an `alert` to the JavaScript
 
-`alert("You pressed the button");`
+```js
+alert("You pressed the button");
+```
 
 > ![](img/alert.gif)
 
@@ -404,10 +403,10 @@ Now click the `Motivate Partner`
 
 > ![](img/motivate_partner_alert.gif)
 
-> If it doesn't, ask a neighboring group to see if they can see what's wrong.
-> Otherwise, raise your hand to ask a facilitator for help!
+_If it doesn't work, ask a neighboring group to see if they can see what's
+wrong. Otherwise, raise your hand to ask a facilitator for help!_
 
-##### Adding the actual code to make the phone call:
+##### Adding the Actual Code to Make the Phone Call:
 
 Let's add the phone calling functionality.
 
@@ -424,13 +423,11 @@ document.getElementById("dead-people-btn").onclick = function() {
 
 If you try pressing the `Motivate Partner` button, you should get a phone call!
 
-> If it doesn't, ask a neighboring group to see if they can see what's wrong.
-> Otherwise, raise your hand to ask a facilitator for help!
+_If it doesn't work, ask a neighboring group to see if they can see what's
+wrong. Otherwise, raise your hand to ask a facilitator for help!_
 
 
 #### Trying it out on mobile
-
-This website is responsive so let's open it on your phone.
 
 Just click "Share" and then "Output only" to get the URL
 
@@ -445,9 +442,9 @@ Here's what [my code looks like]
 (http://jsbin.com/fawuda/120/edit?html,js,console,output)
 right now. In order for this example to work:
 
-- change the phone number to your phone number
-- set your twilio api key and token using
-  [the instructions here](#adding-your-twilio-sid-and-token)
+- Change the phone number to your phone number.
+- Set your twilio api key and token using
+  [the instructions here](#adding-your-twilio-sid-and-token).
 
 ## Part II
 
@@ -455,19 +452,19 @@ right now. In order for this example to work:
 
 **IMPORTANT:**
 
-All the examples also need to have a Twilio sid and auth token. However
-they use a different script than the above. To make the examples work for the
-rest of the tutorial follow these instructions:
+All the examples also need to have a Twilio SID and authentication token.
+However they use a different script than the above. To make the examples work
+for the rest of the tutorial follow these instructions:
 
 - Open [this JS Bin](http://jsbin.com/tetisa/1/edit?js,output).
-- Click "Run with JS"
-- When prompted, enter your Twilio sid and token
+- Click "Run with JS".
+- When prompted, enter your Twilio SID and token.
 
 > ![](img/entering_prompted_twilio_credentials.gif)
 
 ### Actions
 
-#### Call And Play Music Through Phone
+#### Call and Play Music Through Phone
 
 ```js
 Twilio.callAndPlay("555-555-5555", "http://a.tumblr.com/tumblr_lie8ewfdbO1qzbwpvo1.mp3");
@@ -475,9 +472,7 @@ Twilio.callAndPlay("555-555-5555", "http://a.tumblr.com/tumblr_lie8ewfdbO1qzbwpv
 
 [JS Bin](http://jsbin.com/fawuda/101/edit?js,console)
 
-```
-(don't forget to change the phone number and click the "run" button)
-```
+_(Don't forget to change the phone number and click the "run" button._
 
 #### Play Music Through Your Computer
 
@@ -488,10 +483,8 @@ audio.play();
 
 [JS Bin](http://jsbin.com/fawuda/101/edit?js,console)
 
-```
-Random note: if you're trying to play a sound on mobile, it must be activated
-with a button press first before it can play.
-```
+_If you're trying to play a sound on mobile, it must be activated with a button
+press first before it can play._
 
 ### Triggers
 
@@ -514,7 +507,7 @@ Then add this code in the JavaScript
 Wand.threshold = 5;
 Wand.onWave = function() {
   alert("Wand Waved");
-  // INSERT CODE HERE YOU WANT TO RUN WHEN YOU HAVE THE WAND
+  // INSERT CODE HERE YOU WANT TO RUN WHEN YOU WAVE THE WAND
 };
 ```
 
