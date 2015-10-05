@@ -42,18 +42,6 @@ function createXMLHTTPObject() {
 	return xmlhttp;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 var SID_KEY = 'twilio-sid';
 var TOKEN_KEY = 'twilio-token';
 
@@ -75,7 +63,7 @@ while (sid === null || sid.length !== 34) {
 }
 localStorage.setItem(SID_KEY, sid);
 
-if(token === null || token === "null") {
+if(token === undefined || token === null || token === "null") {
   token = prompt("Enter your Twilio AUTH TOKEN");
 }
 // else {

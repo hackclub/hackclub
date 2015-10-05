@@ -46,14 +46,14 @@ function draw() {
 
   if (frog.position.x < 0 || frog.position.x > 600) {
     gameOverSound.play();
-    // alert("Game Over!");
+    alert("Game Over!");
     frog.position.x = 300;
     frog.position.y = 350;
   }
 
   if (frog.position.y < 0) {
     winSound.play();
-    // alert("Win!");
+    alert("Win!");
     frog.position.x = 300;
     frog.position.y = 350;
     frog.velocity.y = 0;
