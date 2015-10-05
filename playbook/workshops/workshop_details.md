@@ -11,7 +11,7 @@
 - Repeatedly circle the room to answer questions. Opt for spending less time
   answering a single question in favor of being able to answer more questions.
 
----
+--------------------------------------------------------------------------------
 
 ## Portfolio
 
@@ -75,7 +75,7 @@ the JS Bin you were working in, all your changes will be there.
 
 To be added.
 
----
+--------------------------------------------------------------------------------
 
 ## Remote Control
 
@@ -100,7 +100,7 @@ make phone calls
 
 #### Administrative Setup
 
-Note: There's a fair bit os setup for this workshop.
+Note: There's a fair bit of setup for this workshop.
 
 ##### Obtaining A Twilio Account & Credentials `[20 minutes]`
 
@@ -177,17 +177,19 @@ the credentials for all the other examples (via localstorage).
 
 ##### Communicate the following to the hackers
 
-- Tell everyone to
-  - take out their cell phones and set them to vibrate and ring
-  - start composing a text message with the body "hi" to be sent to the phone
-    number that you wrote on the board but not to send it yet
-  - on the count of 3, tell everyone to send their text message at the same time
-  - all their phones should start ringing
+- Tell everyone to:
+  - Take out their cell phones and set them to vibrate and ring.
+  - Start composing a text message with the body "hi" to be sent to the phone
+    number that you wrote on the board but not to send it yet.
+  - On the count of 3, tell everyone to send their text message at the same
+    time.
+  - All their phones should start ringing.
 - Show them the JS Bin code to make it work and show that it's only 2 lines of
-  code to make this happen
+  code to make this happen.
 - Show them how easy it is to
-  [send a text from Twilio](http://jsbin.com/fawuda/114/edit?js,console)
-- Finally show them what they're [going to be building](http://jsbin.com/fawuda/35/edit?html,js)
+  [send a text from Twilio](http://jsbin.com/fawuda/114/edit?js,console).
+- Finally show them what they're
+  [going to be building](http://jsbin.com/fawuda/35/edit?html,js).
 - Tell them that they're almost definitely not going to understand exactly how
   all the code works and that's fine.
 - Tell them that the primary focus in on understanding how to make what you want
@@ -205,7 +207,7 @@ None yet.
 
 None yet.
 
----
+--------------------------------------------------------------------------------
 
 ## Frogger
 
