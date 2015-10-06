@@ -38,7 +38,7 @@ Learn to build a simple portfolio website that looks like the above.
 | Duration  | 45 mins - 1.5 hours                          |
 | Concepts  | Basics of HTML & CSS                         |
 
-[![](img/open.png)](/portfolio/README.md)
+[![](img/open.png)](portfolio/README.md)
 [![](img/facilitation_guidelines.png)](workshop_details.md#portfolio)
 
 ## Remote Control
