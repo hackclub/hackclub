@@ -24,6 +24,8 @@ Our workshops are free to be used by anyone. If you see any issues,
 yet, make a
 [pull request](https://help.github.com/articles/using-pull-requests/)!
 
+Unofficial workshops are in the [`contrib`](contrib/) directory.
+
 --------------------------------------------------------------------------------
 
 ## Portfolio
