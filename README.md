@@ -26,7 +26,7 @@ repository to hold all the knowledge from hackEDU organizers around the world.
 
 Build hackEDU with us. Here are two ways to get started:
 
-- [Create an issue](https://github.com/hackedu/hack-camp/issues)
+- [Create an issue](https://github.com/hackedu/hackedu/issues)
 - [Join us on IRC](https://webchat.freenode.net/?channels=hackedu)
 
 ## Contributing
