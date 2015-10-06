@@ -26,9 +26,9 @@ yet, make a
 
 --------------------------------------------------------------------------------
 
-![](img/portfolio.png)
+## Portfolio
 
-#### Portfolio
+![](img/portfolio.png)
 
 Learn to build a simple portfolio website that looks like the above.
 
@@ -38,20 +38,18 @@ Learn to build a simple portfolio website that looks like the above.
 | Duration  | 45 mins - 1.5 hours                          |
 | Concepts  | Basics of HTML & CSS                         |
 
-[![](img/open.png)](/portfolio/README.md)
+[![](img/open.png)](portfolio/README.md)
 [![](img/facilitation_guidelines.png)](workshop_details.md#portfolio)
 
---------------------------------------------------------------------------------
+## Remote Control
 
 ![](img/remote_control.png)
-
-#### Remote Control
 
 Learn to make a webapp that calls your friend and plays a song when you press a
 button. You will also learn to easily send text messages and make phone calls
 from the browser.
 
-##### Important Note
+### Important Note
 
 You will need to obtain and setup a Twilio account before the workshop. Luckily
 we have a promotion code that will give you $100 worth of credit. Just follow
@@ -72,9 +70,7 @@ and guided while Part II exploratory.
 [![](img/open.png)](remote_control/README.md)
 [![](img/facilitation_guidelines.png)](workshop_details.md#remote-control)
 
---------------------------------------------------------------------------------
-
-#### Frogger
+## Frogger
 
 ![](img/frogger_win.gif)
 
