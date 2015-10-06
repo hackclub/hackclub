@@ -28,7 +28,7 @@ text.
 
 Ready?
 
-Open [this JS Bin](http://jsbin.com/papawo/6/edit?html,js,console)*. Leave this
+Open [this JS Bin](http://jsbin.com/papawo/20/edit?html,js,console)*. Leave this
 tab open for the rest of the tutorial.
 
 _*JS Bin is a website to easily write code for websites._
@@ -169,10 +169,10 @@ run code:
 ### Send text messages and make phone calls
 
 Go ahead and continue using the
-[JS Bin from the Quick Demo](http://jsbin.com/papawo/6/edit?js,console).
+[JS Bin from the Quick Demo](http://jsbin.com/papawo/25/edit?html,js,console).
 
 If you've closed it already, open
-[the JS Bin](http://jsbin.com/papawo/6/edit?js,console)
+[the JS Bin](http://jsbin.com/papawo/25/edit?html,js,console)
 back up!
 
 If you havn't added your Twilio SID and token to this JS Bin, please do that
@@ -271,7 +271,7 @@ Now let's make this work when I press a button on a real website!
 ### Call a Phone When a Button is Clicked
 
 **Important:** Go ahead and open up
-[this new JS Bin](http://jsbin.com/fawuda/68/edit?html,js,console,output)and
+[this new JS Bin](http://jsbin.com/fawuda/139/edit?html,js,console,output)and
 [add your Twilio credentials like before as well](#adding-your-twilio-sid-and-token).
 
 There are 4 panels in the JS Bin now:
@@ -439,7 +439,7 @@ write a line of code to send the URL to your phone with a text message).
 ### The final code
 
 Here's what [my code looks like]
-(http://jsbin.com/fawuda/120/edit?html,js,console,output)
+(http://jsbin.com/fawuda/150/edit?html,js,console,output)
 right now. In order for this example to work:
 
 - Change the phone number to your phone number.
@@ -532,14 +532,25 @@ Wand.threshold = 20;
 You will need to open the output view of JS Bin on your phone. After you do that
 try waving your phone around.
 
-- [Here is a bare bones working example](http://jsbin.com/fawuda/121/edit?html,js)
-- [This is the output URL](http://jsbin.com/fawuda/121)
+Also note that the below JS Bins do not have the Twilio library in them. If you
+want them, you'll have to add it by added the following at the bottom of the
+body tag in the HTML
+
+```js
+<script src="//bit.ly/twilio-basic-v1"
+  sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
+  token="YOUR_TWILIO_AUTH_TOKEN_HERE"
+></script>
+```
+
+- [Here is a bare bones working example](http://jsbin.com/fawuda/145/edit?js,output
+- [This is the output URL](http://jsbin.com/fawuda/145)
 
 Here is a more complicated example
 
-- [link to the code](http://jsbin.com/fawuda/128/edit?html,js,output)
+- [link to the code](http://jsbin.com/fawuda/151/edit?html,js,output)
 - [link to the output that you should open on your phone]
-  (http://jsbin.com/fawuda/128)
+  (http://jsbin.com/fawuda/151)
 
 **Important Note** that for waving the wand to play a sound, you need to press
 the button on your phone to play the sound first before the wand will work
