@@ -72,7 +72,7 @@ team.
 - College Park High School
   - [Vene Tiglao](https://github.com/venethefifth)
 - Columbia Secondary School
--   -[Abigail Medina](https://github.com/AbigailMed)
+  - [Abigail Medina](https://github.com/AbigailMed)
 - Elizabeth High School
   - [Amy Sorto](https://github.com/amysorto)
 - Ravenwood High School
