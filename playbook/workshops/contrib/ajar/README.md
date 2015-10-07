@@ -15,7 +15,7 @@ been written):
 - [x] [__Part 1__](#part-1) – display the user's cell on screen.
 - [x] [__Part 2__](#part-2) – convert the code from part 1 to use functions.
 - [x] [__Part 3__](#part-3) – make the user's cell follow the mouse cursor.
-- [ ] __Part 4__ – add acceleration & velocity to the cell's movements.
+- [ ] [__Part 4__](#part-4) – add acceleration & velocity to the cell's movements.
 - [ ] __Part 5__ – add randomly generated food.
 
 __More coming soon...__
