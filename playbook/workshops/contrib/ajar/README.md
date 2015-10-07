@@ -15,9 +15,9 @@ been written):
 - [x] [__Part 1__](#part-1) - display the user's cell on screen.
 - [x] [__Part 2__](#part-2) - convert the code from part 1 to use functions.
 - [x] [__Part 3__](#part-3) - make the user's cell follow the mouse cursor.
-- [ ] [__Part 4__](#part-4) - add acceleration & velocity to the cell's
-  movements.
-- [ ] __Part 5__ - add randomly generated food.
+- [x] [__Part 4__](#part-4) - add velocity to the cell's movements.
+- [x] [__Part 5__](#part-5) - generate hardcoded food.
+- [ ] __Part 6__ - randomly generate food.
 
 __More coming soon...__
 
@@ -168,6 +168,7 @@ You should have something that looks like this.
 
 ![](img/first-circle.png)
 
+<a name="drawingArc"></a>
 > #### Understanding the code
 
 > `context.beginPath()` - any shape on the canvas is considered a path. You need
@@ -903,5 +904,191 @@ Save your work and preview your results!
 ![end of part 4 result](img/end-of-part-4.gif)
 
 Our cell has velocity!
+
+## Part 5
+In this lesson you will add food at hardcoded positions. You will also learn
+about javascript arrays.
+
+This is how it's going to work:
+
+1. Create an array to hold the positions of the food
+2. Modify the `drawUserCell` function to work for any circle (i.e. food and the
+   user cell).
+3. Draw the food at the positions held in the array during the `drawScreen`
+   function.
+
+### What are arrays?
+The Array object is used to store multiple values in a single variable.
+
+You can store strings:
+
+```js
+var cars = ["Saab", "Volvo", "BMW"];
+```
+
+numbers:
+
+```js
+var lotteryWinners = [23, 6, 25, 9, 15];
+```
+
+or anything else.
+
+Array indexes are zero-based: The first element in the array is 0, the second is
+1, and so on.
+
+To access the 2nd element of the `cars` array we can do this:
+
+```js
+var secondElement = cars[1]; <-- THE VALUE WILL BE "volvo"
+```
+
+### Store food positions in an array
+
+Let's create an array named `foodPositions` at the top of the `app.js` file.
+This array will contain an array of an (x, y) coordinate pair for each food
+position. Yep, that's right. *An array can contain other arrays*.
+
+This is what a coordinate pair array will look like:
+
+```js
+[30, 100]
+```
+
+This pair represents the location (30, 100) where x is `30` and y is `100`.
+
+Here's the array we're going to make:
+
+```js
+[[30, 20], [400, 90], [60, 317], [300, 268]]
+```
+
+We want to store this array in a variable named `foodPositions`:
+
+```js
+var foodPositions = [[30, 20], [400, 90], [60, 317], [300, 268]];
+```
+
+### Generalizing (abstracting) the `drawUserCell`
+
+We now want to "generalize" (more accurately *abastract*) the `drawScreen`
+function to draw any type of circle, not just the user's cell.
+
+Let's remeber how we draw a circle ([here's a link to when we did this
+earlier](#drawingArc)):
+
+```js
+context.arc(x, y, radius, startAngle, endAngle);
+```
+
+Since all circles will have the same `startAngle` and `endAngle`, the only
+parameters we will need to change are `x`, `y` and `radius`.
+
+We'll first start off by changing the name of the `drawUserCell` function to
+`drawCircle`:
+
+```js
+function drawCircle () {
+    ...
+}
+```
+
+Next we'll add some parameters:
+
+```js
+function drawCircle(circleX, circleY, radius) {
+    context.beginPath();
+    context.arc(circleX, circleY, radius, 0, 2*3.14159);
+    context.fillStyle = "cyan";
+    context.fill();
+}
+```
+
+Finally change the invokation of the old `drawUserCell` inside of `drawScreen`
+to invoke `drawCircle` instead:
+
+```js
+drawCircle(x, y, 40);
+```
+
+Lastly, below that invokation (which draws the user cell), we are going to
+draw the food:
+
+```js
+drawCircle(foodPositions[0][0], foodPositions[0][1], 10);
+drawCircle(foodPositions[1][0], foodPositions[1][1], 10);
+drawCircle(foodPositions[2][0], foodPositions[2][1], 10);
+drawCircle(foodPositions[3][0], foodPositions[3][1], 10);
+```
+
+Preview your work! We have food!
+
+Your code should look like this:
+
+```js
+var canvas = document.getElementById("canvas");
+var context = canvas.getContext("2d");
+var x = 250;
+var y = 250;
+var mouseX = 250;
+var mouseY = 250;
+var velocity = 2;
+var foodPositions = [[30, 20], [400, 90], [60, 317], [300, 268]];
+
+function drawCircle(cellX, cellY, radius) {
+    context.beginPath();
+    context.arc(cellX, cellY, radius, 0, 2*3.14159);
+    context.fillStyle = "cyan";
+    context.fill();
+}
+
+function clearCanvas() {
+    context.beginPath();
+    context.rect(0, 0, 500, 500);
+    context.fillStyle = "white";
+    context.fill();
+}
+
+function calculatePosition() {
+    // For the x-axis
+    if (mouseX > x) {
+        x = x + velocity;  // mouse is to the right of the ball
+    } else {
+        x = x - velocity;  // mouse is to the left of the ball
+    }
+
+    // For the y-axis
+    if (mouseY > y) {
+        y = y + velocity;  // mouse is under ball
+    } else {
+        y = y - velocity;  // mouse is above ball
+    }
+}
+
+function drawScreen() {
+    clearCanvas();
+    calculatePosition();
+    drawCircle(x, y, 40);
+    drawCircle(foodPositions[0][0], foodPositions[0][1], 10);
+    drawCircle(foodPositions[1][0], foodPositions[1][1], 10);
+    drawCircle(foodPositions[2][0], foodPositions[2][1], 10);
+    drawCircle(foodPositions[3][0], foodPositions[3][1], 10);
+    setTimeout(drawScreen, 1000/60);
+}
+
+function mouseMoved(e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+}
+
+canvas.addEventListener("mousemove", mouseMoved);
+drawScreen();
+```
+
+#### Congrats!
+
+You've finished Part 5!
+
+![](img/celebrate.gif)
 
 # More coming soon...
