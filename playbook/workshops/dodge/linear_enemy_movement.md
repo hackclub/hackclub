@@ -1,7 +1,7 @@
 # Linear Enemy Sprite Movement
 
 We can make the enemy sprite move in almost the same way that we made our player
-sprite move:
+sprite move (new code highlighted in gray):
 
 > ![](img/t7_js_bin.gif)
 
@@ -25,7 +25,7 @@ what you observe.
 
 This code functions very similarly to the code that made the player sprite move
 in [step 3's linear player movement](linear_player_movement.md). Open that if
-you want a reminder for how this works.
+you want a reminder of how this works.
 
 ## Add It To Your Own Code
 
@@ -35,10 +35,22 @@ enemy.position.y = enemy.position.y += 18;
 
 > ![](img/t7_add_code.gif)
 
+You should try play around with your own speed and find out what works the best!
+
+## Recap
+
+- We learned how to change the speed of a sprites movement on the `y` axis
+
 ## Next Up
 
 | **[![](img/sq_8_enemy_go_back_to_top.gif) <br> 8. Enemy Go Back to Top] (enemy_go_back_to_top.md)** |
 |:----------------------------------------------------------------------------------------------------|
+
+## Appendix
+
+_This appendix is still being built! Is there something you have a question
+about? Submit an issue requesting its addition
+[here](https://github.com/hackedu/hackedu/issues)_
 
 ## Table of Contents
 

@@ -1,7 +1,7 @@
 # Enemy - Go Back To Top
 
 We can make the enemy go back to the top of the screen when it hits the bottom
-with the following code:
+with the following code (new lines are highlighted in gray):
 
 > ![](img/t8_enemy_go_back_to_top.gif)
 
@@ -20,7 +20,7 @@ if (enemy.position.y > 500) {
 
 > ![](img/t8_tinkering.gif)
 
-![](img/checkmark.png) Try messing around with this number yourself and notice
+![](img/checkmark.png) Try messing around with this number yourself and see
 what you observe.
 
 ## Understanding the Code
@@ -42,12 +42,13 @@ if (enemy.position.y > 500) {
 }
 ```
 
-into more understandable english:
+Into more understandable english:
 
-- **`if`** the **`enemy`**'s **`y`** **`position`** is **`>`** than **`500`**
-  - then make the **`enemy`**'s **`y`** **`position`** **`=`** **`0`**
+> **`if`** the **`enemy`**'s **`y`** **`position`** is **`>`** than **`500`**  
+  then make the **`enemy`**'s **`y`** **`position`** **`=`** **`0`**
 
-In short, this code moves the enemy back to `y = 0` if it it is below the canvas.
+In short, this code moves the enemy back to `y = 0` (The top of the canvas) when
+it is below the bottom of the canvas.
 
 ## Adding Our New Code
 
@@ -55,12 +56,21 @@ Lets add our new code in:
 
 > ![](img/t8_add_code.gif)
 
+## Recap
+
+- We learned how to detect the boundaries of the game
+- We learned how to more our sprites to the top of the game
+
 ## Next Up
 
 | **[![](img/sq_9_random_enemy_position.gif)   <br> 9. Random Enemy Position]  (random_enemy_position.md)** |
 |:----------------------------------------------------------------------------------------------------------|
 
+## Appendix
 
+_This appendix is still being built! Is there something you have a question
+about? Submit an issue requesting its addition
+[here](https://github.com/hackedu/hackedu/issues)_
 
 ## Table of Contents
 

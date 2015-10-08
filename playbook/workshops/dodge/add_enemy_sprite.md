@@ -1,40 +1,41 @@
 # Add Enemy Sprite
 
-We can add an enemy sprite with the following (new code highlighted in gray):
+We can add an enemy sprite with the following code (new code highlighted in gray):
 
 > ![](img/t6_js_bin.png)
 
 [![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/46/edit?js,output)
 
 The highlighted gray lines above (reproduced below) are responsible for the
-new image:
+new sprite:
 
 ```js
-var playerImage = loadImage("http://i.imgur.com/mOkHDqN.png");
-player.addImage(playerImage);
+var enemy;
+...
+enemy = createSprite(150, 130, 8, 64);
 ```
 
 ## Tinkering with the code
 
-`createSprite` looks different this time:
+Have you noticed `createSprite` looks different this time:
 
-Last Time:
+It used to look like this:
 
 ```js
 createSprite(150, 470);
 ```
 
-Now:
+Now it looks like this:
 
 ```js
 createSprite(150, 350, 8, 64);
 ```
 
-Let's try playing with the latter two numbers:
+Let's try playing with those last two numbers:
 
 > ![](img/t6_tinker_enemy_size.gif)
 
-## Understanding `createSpriteloca`
+## Understanding `createSprite`
 
 It seems that the last two values represent the width and height of the
 sprite that's created:
@@ -53,10 +54,22 @@ createSprite(150, 350, 8, 64);
 
 ![](img/checkmark.png) Go ahead and add an enemy to your own working bin.
 
+## Recap
+
+- We learned we can have more than one sprite in a canvas
+- We learned that the last two numbers in `createSprite` set the width and
+  height
+
 ## Next Up
 
 | **[![](img/sq_7_linear_enemy_movement.gif) <br> 7.  Enemy Sprite Move] (linear_enemy_movement.md)** |
 |:----------------------------------------------------------------------------------------------------|
+
+## Appendix
+
+_This appendix is still being built! Is there something you have a question
+about? Submit an issue requesting its addition
+[here](https://github.com/hackedu/hackedu/issues)_
 
 ## Table of Contents
 

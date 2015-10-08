@@ -23,13 +23,13 @@ The entire area on which everything lives is called the "canvas":
 ## How To Use This Tutorial
 
 Use this tutorial in the most beneficial way to you! Don't feel that you have
-to follow each of the steps very carefully and rigidly before you  move
+to follow each of the steps very carefully and rigidly before you move
 on. You could do anything including:
 
-- only looking at the code examples and not reading any of the explanations
-- copy the code from final code example and only looking at each section when
+- Only looking at the code examples and not reading any of the explanations
+- Copy the code from final code example and only looking at each section when
   you don't understand the final example code
-- meticulously following the directions of each section
+- Meticulously following the directions of each section
 
 ## Steps
 
@@ -45,5 +45,5 @@ on. You could do anything including:
 
 We are using two libraries:
 
-- the p5.js library
-- the p5 play library (a library for sprites built on top of p5.js)
+- The [p5js](http://p5js.org/) library
+- The [p5.play](http://p5play.molleindustria.org/) library (a library for games built on top of p5.js)

@@ -29,7 +29,7 @@ function draw() {
 ```
 
 In this part, we won't talk about what `function setup()` and `function draw()`
-are. We'll this in more detail
+are. We'll cover this in more detail
 [later](linear_player_movement.md#understanding-the-code).
 
 ## Tinkering with the values of `createCanvas`
@@ -92,7 +92,7 @@ This code sets the background color of the canvas:
 ## Setting the Proper Dimensions
 
 Now that you've gotten a chance to experiment, we want our canvas to have a
-width of 300 and a height of 500.
+width of `300` and a height of `500`.
 
 ![](img/checkmark.png) Go ahead and make sure that your setup function looks
 like this:
@@ -122,7 +122,7 @@ function setup() {
 **Links to the official p5.js Documentation**
 
 - [`background(255, 255, 255)`](http://p5js.org/reference/#/p5/background)
-- [`createCanvas(300, 500);`](http://p5js.org/reference/#/p5/createCanvas)
+- [`createCanvas(300, 500)`](http://p5js.org/reference/#/p5/createCanvas)
 
 ## Computer Science Fundamentals ![](img/computer_science.png)
 
@@ -134,26 +134,26 @@ function setup() {
 
 Functions can have the following:
 
-- inputs
-- side effects
-- outputs
+- Inputs
+- Side effects
+- Outputs
 
 #### Lemonade Analogy
 
-Consider the lemonade making machine as a function:
+Consider this lemonade making machine as a function:
 
 ![](img/function_machine.png)
 
 In the above drawing, you can see that
 
-- the inputs are a glass, lemon, and mint
-- the output is lemonade
+- The inputs are a glass, lemon, and mint
+- The output is lemonade
 
 But what are the side effects?
 
-- well the lemonade juicing machine gets hot from use
-- you, the user, who is not an input get better at learning how to make lemonade
-- you and your friends bond over making lemonade
+- The lemonade juicing machine gets hot from use
+- The user, who is not an input got better making lemonade
+- You and your friends bond over making lemonade
 
 Sometimes, you care more about the side effects than the outputs.
 
