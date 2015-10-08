@@ -12,4 +12,3 @@ Any other associated planning done to make that event great.
   member recruitment
 - Created a presentation in order to put all intro information together in order
   to give an easy reference to club members
-  
