@@ -1,9 +1,5 @@
 #Planning
 
-An outline of what's going to happen at the event
-A list of problems that you anticipate you might run into and how you might solve them
-Any other associated planning done to make that event great.
-
 ## Outline
 
 - Go over what this club is really about, and introduce everyone
