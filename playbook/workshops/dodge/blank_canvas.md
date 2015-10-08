@@ -83,9 +83,9 @@ This code sets the background color of the canvas:
   background(255, 255, 255);
               ^    ^    ^
               |    |    └ set how much *red* there is
-              |    |    
+              |    |
               |    └ set how much *green* there is
-              |J
+              |
               └ set how much *blue* there is
 ```
 
@@ -171,7 +171,7 @@ In this case the `background` function has 3 inputs:
 background(255, 255, 255);
             ^    ^    ^
             |    |    └ input 3
-            |    |    
+            |    |
             |    └ input 2
             |
             └ inputs 1

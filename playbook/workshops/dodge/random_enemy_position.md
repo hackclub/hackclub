@@ -58,11 +58,11 @@ to be able to spawn anywhere in that region:
 ![](img/checkmark.png) Then type in `random(3);`
 your keyboard.
 
-> ![](img/t9_type_random(3).gif)
+> ![](img/t9_type_random_3_.gif)
 
  and press the `enter` key on your keyboard
 
-> ![](img/t9_type_random(3)_result.png)
+> ![](img/t9_type_random_3_result.png)
 
  -->
 
