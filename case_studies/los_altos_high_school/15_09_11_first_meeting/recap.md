@@ -15,7 +15,7 @@
 ### Events
  - 12 hour MLH hackathon on Homecoming day, called Local hack Day
  - Los Altos Hacks - January 30-31
-
+  
 
 ## Questions
 
@@ -46,4 +46,4 @@ etc.
 Make sure that you send out emails 1-2 days before.  It's important to notify
 members about the meetings going on.  Also, having prepared presentations that
 you work on with your team is incredibly helpful, so everyone on the board
-is in the loop. 
+is in the loop.
