@@ -109,7 +109,7 @@ I want to leave it in the comments because it has some work done on it
 - [`createSprite(150, 450)`]
 (http://p5play.molleindustria.org/docs/classes/p5.play.html#method-createSprite)
 
-#### Understanding the Computer Science Fundamentals ![](img/computer_science.png)
+#### Understanding the Computer Science Component  ![](img/computer_science.png)
 
 ```
 This section goes over some of the fundamental programming concepts, you can

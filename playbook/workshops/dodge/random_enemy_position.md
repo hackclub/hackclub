@@ -58,7 +58,7 @@ to be able to spawn anywhere in that region:
 ![](img/checkmark.png) Then type in `random(3);`
 your keyboard.
 
-> ![](img/t9_type_random_3_.gif)
+> ![](img/t9_type_random_3.gif)
 
  and press the `enter` key on your keyboard
 
