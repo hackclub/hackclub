@@ -52,7 +52,7 @@ Lets translate each line of code into English:
 - `player.position.x`: The sprite's current `x` position
 - `player.position.x + 1`: add one to the sprite's current `x` position
 - `player.position.x = player.position.x + 1`: set the player's `x` position
-  equal to the current `x` position + 1
+  equal to the current `x` position + `1`
 
 There's a bit of subtlety to this that's explained more
 [in the appendix below](#understanding-the-code-more-deeply).
@@ -70,7 +70,8 @@ the sprite move:
 > ![](img/t3_add_code.gif)
 
 ![](img/challenge.png) **Challenge**: Can you try
-making it move in the other direction? Once you've tried it, you can look at the
+making it move in the other direction? Once you've tried it (or if you have decided
+not to at all), you can look at the
 solution [here]
 (https://gist.githubusercontent.com/jonleung/1810b2b784d8afd87f59/raw/8181b9e9df7ec7adb7366f80e7cda316dc61a1ba/anwer.js).
 
@@ -78,9 +79,9 @@ solution [here]
 
 We learned
 
-- what the `setup` function was used for
-- what the `draw` function is used for
-- how to change the sprite's x position with `sprite.position.x`
+- What the `setup` function was used for
+- What the `draw` function is used for
+- How to change the sprite's `x` position with `sprite.position.x`
 
 ## Next Up
 
@@ -96,7 +97,7 @@ _keep_ moving towards the right?**
 
 You have discovered something important, the code inside of `draw function() {`
 is run over, and over, and over again. So the first time, if `x` is `0`, the
-next time `x` will be `1`. Then when the draw loop is called again... #TODO
+next time `x` will be `1`. Then when the draw loop is called again, so `x` will equal `2`! It will keep on going!
 
 If we look at the code currently:
 
@@ -138,8 +139,9 @@ function draw() {
 
 The difference between these is that
 
-- everything inside the `setup` function is only run _**once**_.
-- everything inside the `draw` function is run _**over, and over again**_
+- Everything inside the `setup` function is only run _**once**_. In fact it is
+  the very first thing which is ran when your game starts.
+- Everything inside the `draw` function is run _**over, and over again**_
 
 This make sense because you only want to create the canvas _**once**_ and you
 only want to create the sprite **once**. However, you want to set the player's
@@ -150,6 +152,9 @@ time.
 If you're a bit confused by this, ask a friend or your club leader to help
 explain it!
 
+*This appendix is still being built! Is there something you have a question
+about? Submit an issue requesting its addition
+[here](https://github.com/hackedu/hackedu/issues)*
 
 ## Table of Contents
 

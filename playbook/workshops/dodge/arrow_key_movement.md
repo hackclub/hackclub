@@ -1,10 +1,11 @@
 # Arrow Key Movement
 
-We don't want our sprite to move all the time like this:
+We don't want our sprite to move like this all the time:
 
 ![](img/sq_3_linear_player_movement.gif)
 
-we only want it to move when we press the arrow keys, like this:
+Like in most games, we only want it to move when one of the arrow keys are
+pressed:
 
 ![](img/sq_4_arrow_key_movement.gif)
 
@@ -31,7 +32,7 @@ if (keyDown(RIGHT_ARROW)) {
 
 ## Understanding the Code
 
-Let's just focus on the first 3 lines of code:
+Let's just focus on the first 3 lines of this code:
 
 ```js
 if (keyDown(LEFT_ARROW)) {
@@ -42,10 +43,9 @@ if (keyDown(LEFT_ARROW)) {
 You can interpret the above lines of code as follows (bolded words are) lifted
 directly from the above code:
 
-- "**`if`** the **`LEFT_ARROW`** is the **`key`** that is pressed **`Down`**
-  then"
-  - then set the **`player`**'s **`x`** **`position`** to the current
-    **`player`**'s **`x`** **`position`** **`- 8`**
+> **`if`** the **`LEFT_ARROW`** is the **`key`** that is pressed **`Down`**
+  then set the **`player`**'s **`x`** **`position`** to the current
+  **`player`**'s **`x`** **`position`** **`- 8`**
 
 ## Modifying The Code
 
@@ -67,7 +67,7 @@ And [watch me add it here](img/t4_add_right_arrow_key.gif).
 
 ## Recap
 
-We learned how to do something **`if`** a key has been pressed.
+We learned how to do something **`if`** something else has happened.
 More specifically, we learned how to make a sprite move when a key is pressed.
 
 ## Next Up
@@ -76,6 +76,10 @@ More specifically, we learned how to make a sprite move when a key is pressed.
 |:----------------------------------------------------------------------------------------------------|
 
 ## Appendix
+
+*This appendix is still being built! Is there something you have a question
+about? Submit an issue requesting its addition
+[here](https://github.com/hackedu/hackedu/issues)*
 
 ## Table of Contents
 
