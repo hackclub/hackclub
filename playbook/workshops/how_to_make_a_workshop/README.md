@@ -26,3 +26,11 @@
 - Is relatable
 - TODO
   - This guide needs to have examples of what is good vs what is not good
+
+## Tools
+- If you want to make gifs, we suggest using
+  [LICEcap](http://www.cockos.com/licecap/). It may look dated, but it does an
+  awesome job.
+- When writing your workshop locally, use
+  [grip](https://github.com/joeyespo/grip) to view the workshop exactly as it
+  will render on GitHub!
