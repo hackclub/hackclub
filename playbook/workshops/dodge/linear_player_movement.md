@@ -70,8 +70,8 @@ the sprite move:
 > ![](img/t3_add_code.gif)
 
 ![](img/challenge.png) **Challenge**: Can you try
-making it move in the other direction? Once you've tried it (or if you have decided
-not to at all), you can look at the
+making it move in the other direction? Once you've tried it (or if you have
+decided not to at all), you can look at the
 solution [here]
 (https://gist.githubusercontent.com/jonleung/1810b2b784d8afd87f59/raw/8181b9e9df7ec7adb7366f80e7cda316dc61a1ba/anwer.js).
 
@@ -97,7 +97,8 @@ _keep_ moving towards the right?**
 
 You have discovered something important, the code inside of `draw function() {`
 is run over, and over, and over again. So the first time, if `x` is `0`, the
-next time `x` will be `1`. Then when the draw loop is called again, so `x` will equal `2`! It will keep on going!
+next time `x` will be `1`. Then when the draw loop is called again, so `x`
+will equal `2`! It will keep on going!
 
 If we look at the code currently:
 
