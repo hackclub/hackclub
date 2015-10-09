@@ -1,6 +1,7 @@
 # Add Enemy Sprite
 
-We can add an enemy sprite with the following code (new code highlighted in gray):
+We can add an enemy sprite with the following code (new code highlighted in
+gray):
 
 > ![](img/t6_js_bin.png)
 
