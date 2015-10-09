@@ -47,6 +47,10 @@ Our board has the following columns:
   being reviewed by another member of the team. This is usually in the form of a
   pull request.
 
+_*Pull requests should be put next to their corresponding issue on the board. If
+there is not a corresponding issue, they should flow through the board like an
+issue._
+
 ## Contact
 
 If you'd like to reach all of us, please send an email to team@hackedu.us :-).
