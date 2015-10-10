@@ -53,9 +53,16 @@ File names should follow the following guidelines:
 In order to ensure that our git history makes sense we have certain guidelines
 which we require contributors to adhere to. These are:
 
-### Commits should be written in the imperative mood, start with a capitol letter and not end with a full stop
+### Commits should follow the commit standards
 
-This is a style used by many other Open Source projects (The Linux kernel, Rails) as well as most corporate software development shops.
+These are:
+
+- Commits should be written in the imperative mood
+- Commits should start with a capitol letter
+- Commits should not end with a full stop
+
+This is a style used by many other Open Source projects (Linux, Rails) as well
+as most corporate software development shops.
 
 [This is a great guide on writing a git commit message](http://chris.beams.io/posts/git-commit/)
 
