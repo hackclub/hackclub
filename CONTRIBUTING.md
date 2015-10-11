@@ -126,10 +126,6 @@ the change does.
 - This commit message is too long! It should be less than 50 characters!
 - It uses too many words and could be simplified
 
-If your PR does not satisfy these requirements a core member will point out your
-errors. If it is left inactive for more than 3 days, it will modified and merged
-for you.
-
 ## Using GitHub Issues
 
 We use GitHub's built in issue tracker for nearly everything at hackEDU. We
