@@ -5,19 +5,19 @@ Currently, when the player touches the enemy, nothing happens:
 > ![](img/sq_8_enemy_go_back_to_top.gif)
 
 However we want the message "Game Over" to appear when the player touches the
-enemy
+enemy:
 
 > ![](img/sq_10_game_over.gif)
 
 We can make a game over appear when the player touches the enemy with the
-following code:
+following code (new code highlighted in gray):
 
 > ![](img/t10_js_bin.gif)
 
 [![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/51/edit?js,output)
 
 The highlighted gray lines above (reproduced below) are responsible for making
-game over appear on the screen when the player touches the enemy:
+"Game Over" appear on the screen when the player touches the enemy:
 
 ```js
 if (player.overlap(enemy)) {
@@ -29,8 +29,8 @@ if (player.overlap(enemy)) {
 
 We can interpret the code as follows:
 
-- **`if`** the **`player`** **`overlap`**s the **`enemy`**
-  - then **`alert`** the message **`"Game Over`**
+> **`if`** the **`player`** **`overlap`**s the **`enemy`**  
+  then **`alert`** the message **`"Game Over"`**
 
 ## Adding the Code
 
@@ -43,7 +43,8 @@ We can interpret the code as follows:
 What is commenting out?
 
 By adding those two slashes at the beginning of the line, you're telling the
-computer to ignore anything after those slashes
+computer to ignore anything after those slashes. This results in the line not
+being ran.
 ```
 
 > ![](img/t10_adding_the_code.gif)
@@ -55,15 +56,33 @@ Everything else is minor but important.
 
 > ![](img/celebrate.gif)
 
+Congratulations on finishing the game!
+
 ## Quick Fixes
 
-You may notice that it's hard to play the game because the bullet
+You may notice that it's hard to replay the game because when the bullet hits
+the player, it gets stuck in and endless cycle of `alert`'s. One quick way we
+can fix this is to add this after the `alert` code:
 
-**Avoiding**
+```js
+player.remove();
+```
 
+This will remove the player and end the seemingly endless cycle!
 
+<!-- I did my best here. I want this to be shippable ASAP. -->
 
+## Recap
 
+- We learned how to show an alert
+- We learned how to detect if a sprite is overlapping another sprite
+- We learned how to remove a sprite
+
+## Appendix
+
+_This appendix is still being built! Is there something you have a question
+about? Submit an issue requesting its addition
+[here](https://github.com/hackedu/hackedu/issues)_
 
 ## Table of Contents
 

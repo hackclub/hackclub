@@ -4,7 +4,7 @@ Instead of having the enemy fall in the same place every time:
 
 > ![](img/sq_8_enemy_go_back_to_top.gif)
 
-we want it to to fall from different places each time:
+We want it to to fall from a different place each time:
 
 > ![](img/sq_9_random_enemy_position.gif)
 
@@ -41,8 +41,10 @@ Looking at the code:
 enemy.position.x = random(300);
 ```
 
-this sets the **`enemy`**'s **`x`** **`position`** **`=`** to a random number
-between 0 and **`300`**.
+Lets translate that!
+
+> Set the **`enemy`**'s **`x`** **`position`** to a **`random`** number
+  between **`0`** and **`300`**.
 
 Why `300`? Because the width of the canvas is `300` and we want the enemy sprite
 to be able to spawn anywhere in that region:
@@ -70,10 +72,21 @@ your keyboard.
 
 > ![](img/t9_adding_the_code.gif)
 
+## Recap
+
+- We learned how to create random numbers
+- We learned how to set the position of a sprite to a number
+
 ## Next
 
 | **[![](img/sq_10_game_over.gif)            <br> 10. Game Over]         (game_over.md)** |
 |:----------------------------------------------------------------------------------------|
+
+## Appendix
+
+_This appendix is still being built! Is there something you have a question
+about? Submit an issue requesting its addition
+[here](https://github.com/hackedu/hackedu/issues)_
 
 ## Table of Contents
 

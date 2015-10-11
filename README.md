@@ -18,7 +18,7 @@
 [hackEDU](https://hackedu.us) is the movement of student-led coding clubs. Start
 a club and be a part of the global hacker movement.
 
-hackEDU is a community driven effort and is nearly 100% open source. This means
+We are a community driven effort that is nearly 100% open source. This means
 that anyone can use our materials and/or host a club. We've created this
 repository to hold all the knowledge from hackEDU organizers around the world.
 

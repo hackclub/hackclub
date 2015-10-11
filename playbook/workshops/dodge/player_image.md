@@ -24,7 +24,7 @@ http://i.imgur.com/yA2a7x4.png
 http://i.imgur.com/7v8jXg8.png
 ```
 
-Let me try replacing the image url with some of the above:
+Let me try replacing the image URL with some of the above:
 
 > ![](img/t5_add_other_images.gif)
 
@@ -38,28 +38,30 @@ and the "Icon" size requirement:
 
 ## Understanding the Code
 
+Translations have been provided underneath each line!
 ```js
 var playerImage = loadImage("http://i.imgur.com/mOkHDqN.png");
 ```
 
-- Translation: **`load`** the **`image`** **`"http://i.imgur.com/mOkHDqN.png"`**
+> **`load`** the **`image`** at **`"http://i.imgur.com/mOkHDqN.png"`**
   into a newly created **`playerImage`** variable.
 
 ```js
 player.addImage(playerImage);
 ```
-- Translation: **`add`** the **`playerImage`** to the **`player`** sprite.
+> **`add`** the **`playerImage`** to the **`player`** sprite.
 
 ## Add It To Your Code
 
-![](img/checkmark.png) Let's add these two lines of code to ours:
+![](img/checkmark.png) Let's add these two lines of code to our game:
 
 ```js
 var playerImage = loadImage("http://i.imgur.com/mOkHDqN.png");
 player.addImage(playerImage);
 ```
 
-Feel free to use your own image.
+While you can continue with the image we have selected, it would be awesome
+practice for you to find your own!
 
 > ![](img/t5_add_code.gif)
 
@@ -73,6 +75,10 @@ Feel free to use your own image.
 |:----------------------------------------------------------------------------------------------------|
 
 ## Appendix
+
+_This appendix is still being built! Is there something you have a question
+about? Submit an issue requesting its addition
+[here](https://github.com/hackedu/hackedu/issues)_
 
 ### Follow Up Questions
 

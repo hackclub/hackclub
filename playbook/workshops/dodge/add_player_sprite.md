@@ -14,7 +14,7 @@ But for now, we'll settle with this:
 
 ## Adding the Player Sprite
 
-We can add the plyaer sprite with the following code (new code highlited in
+We can add the player sprite with the following code (new code highlighted in
 purple)
 
 > [![](img/2_js_bin_screenshot.png)](http://jsbin.com/qiyuno/14/edit?js,output)
@@ -37,9 +37,9 @@ to understand what it does:
 
 There are 3 parts to creating a sprite:
 
-1. creating a variable to store the sprite in
-2. creating the actual sprite and storing it in the above variable
-3. drawing the sprite
+* Creating a variable to store the sprite in
+* Creating the actual sprite and storing it in the above variable
+* Drawing the sprite
 
 1. First we need to create the variable `player` to store the sprite in:
 
@@ -81,11 +81,11 @@ your "_**working bin**_".
 
 We learned how to:
 
-- create a variable
-- create a new sprite with `createSprite`
-- the new sprite's starting position
-- store a sprite into a variable
-- draw the sprite
+- Create a variable
+- Create a new sprite with `createSprite`
+- The new sprite's starting position
+- Store a sprite into a variable
+- Draw the sprite
 
 ## Next Up
 
@@ -93,6 +93,13 @@ We learned how to:
 |:--------------------------------------------------------------------------------------------------------------|
 
 --------------------------------------------------------------------------------
+
+## Appendix
+
+_This appendix is still being built! Is there something you have a question
+about? Submit an issue requesting its addition
+[here](https://github.com/hackedu/hackedu/issues)_
+
 
 <!--
 
