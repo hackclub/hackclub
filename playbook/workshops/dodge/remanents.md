@@ -57,8 +57,6 @@ http://jsbin.com/qiyuno/53/edit?js
 
 ## Next up
 
-
-
 ## Blank Canvas
 
 > <a href="http://jsbin.com/kecodi/3/edit?js,output" target="_blank">

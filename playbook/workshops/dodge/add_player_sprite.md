@@ -26,7 +26,9 @@ the player sprite.
 
 ## Tinkering with the values of `createSprite`
 
-![](img/checkmark.png) Open [the above JS Bin](http://jsbin.com/qiyuno/14/edit?js,output) and try messing around with the starting position of the sprite.
+![](img/checkmark.png) Open
+ [the above JS Bin](http://jsbin.com/qiyuno/14/edit?js,output) and try messing
+ around with the starting position of the sprite.
 
 Here is an example of how I play around with the values of `createSprite` to try
 to understand what it does:
@@ -37,9 +39,9 @@ to understand what it does:
 
 There are 3 parts to creating a sprite:
 
-* Creating a variable to store the sprite in
-* Creating the actual sprite and storing it in the above variable
-* Drawing the sprite
+- Creating a variable to store the sprite in
+- Creating the actual sprite and storing it in the above variable
+- Drawing the sprite
 
 1. First we need to create the variable `player` to store the sprite in:
 
@@ -90,7 +92,7 @@ We learned how to:
 ## Next Up
 
 | **[![](img/sq_3_linear_player_movement.gif)  <br> 3. Linear Player Movement] (linear_player_movement.md)**    |
-|:--------------------------------------------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------- |
 
 --------------------------------------------------------------------------------
 
@@ -100,46 +102,10 @@ _This appendix is still being built! Is there something you have a question
 about? Submit an issue requesting its addition
 [here](https://github.com/hackedu/hackedu/issues)_
 
-
-<!--
-
-Commented this out because it's not good enough yet.
-
-I want to leave it in the comments because it has some work done on it
-
-## Appendix
-
-### Documentation ![](img/documentation.png)
-
-#### [p5.js Play Documentation](http://p5play.molleindustria.org/docs/index.html)
-
-- [`createSprite(150, 450)`]
-(http://p5play.molleindustria.org/docs/classes/p5.play.html#method-createSprite)
-
-#### Understanding the Computer Science Component  ![](img/computer_science.png)
-
-```
-This section goes over some of the fundamental programming concepts, you can
-feel free to skip this section if you like.
-```
-
-In order for a program to remember something, we must use a variable to remember
-it. And so we create the `player` variable to remember the player sprite.
-
-> ![](img/2_variable.png)
-
-`createSprite is a function` functions have 3 components
-
-- inputs
-- actions
-- output
-
-... -->
-
 ## Table of Contents
 
 | **[![](img/sq_1_blank_canvas.png)          <br> 1.  Blank Canvas]      (blank_canvas.md)**          | **[![](img/sq_2_add_player_sprite.png)    <br> 2. Add Player Sprite]    (add_player_sprite.md)**    | **[![](img/sq_3_linear_player_movement.gif)  <br> 3. Linear Player Movement] (linear_player_movement.md)** |
-|:----------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | **[![](img/sq_4_arrow_key_movement.gif)    <br> 4.  Arrow Key Movement](arrow_key_movement.md)**    | **[![](img/sq_5_player_image.gif)         <br> 5. Player Image]         (player_image.md)**         | **[![](img/sq_6_add_enemy_sprite.gif)        <br> 6. Add Enemy Sprite]       (add_enemy_sprite.md)**       |
 | **[![](img/sq_7_linear_enemy_movement.gif) <br> 7.  Enemy Sprite Move] (linear_enemy_movement.md)** | **[![](img/sq_8_enemy_go_back_to_top.gif) <br> 8. Enemy Go Back to Top] (enemy_go_back_to_top.md)** | **[![](img/sq_9_random_enemy_position.gif)   <br> 9. Random Enemy Position]  (random_enemy_position.md)**  |
 | **[![](img/sq_10_game_over.gif)            <br> 10. Game Over]         (game_over.md)**             |                                                                                                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**                                            |
