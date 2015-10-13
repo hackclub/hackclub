@@ -39,7 +39,7 @@ Our board has the following columns:
   decide to prioritize in the future.
 - **Backlog** - Issues that we're actively planning on addressing, but aren't
   currently high priority.
-- **To Do** - Issues that are in our immediate team queue.
+- **Todo** - Issues that are in our immediate team queue.
 - **In Progress** - Issues that are currently being worked on by a member of the
   team. When a team member begins working on an issue, they should drag it into
   _In Progress_.
