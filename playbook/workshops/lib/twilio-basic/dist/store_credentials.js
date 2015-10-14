@@ -12,7 +12,6 @@ function sendRequest(url,callback,postData) {
 	req.onreadystatechange = function () {
 		if (req.readyState != 4) return;
 		if (req.status != 200 && req.status != 304) {
-//			alert('HTTP error ' + req.status);
 			return;
 		}
 		callback(req);
@@ -53,10 +52,7 @@ token = localStorage.getItem(TOKEN_KEY);
 if(sid === null || sid === "null") {
   sid = prompt("Enter your Twilio ACCOUNT SID");
 }
-// else {
-//   sid = prompt("Please make sure that your Twilio ACCOUNT SID is correct. " +
-//                "If not, please re-enter it: ", sid);
-// }
+
 while (sid === null || sid.length !== 34) {
   sid = prompt("You mistyped your Twilio ACCOUNT SID. Please retype it." +
           " For help, check https://github.com/hackedu/hackedu/tree/master/playbook/workshops/twilio/README.md");
@@ -66,22 +62,22 @@ localStorage.setItem(SID_KEY, sid);
 if(token === undefined || token === null || token === "null") {
   token = prompt("Enter your Twilio AUTH TOKEN");
 }
-// else {
-//   token = prompt("Please make sure that your Twilio AUTH TOKEN is correct. " +
-//                  "If not, please re-enter it: ", token);
-// }
+
 while (token === null || token.length !== 32) {
   token = prompt("You mistyped your Twilio AUTH TOKEN. Please retype it." +
           " For help, check https://github.com/hackedu/hackedu/tree/master/playbook/workshops/twilio/README.md");
 }
 localStorage.setItem(TOKEN_KEY, token);
 
+<<<<<<< HEAD
 // var script = document.createElement('script');
 // script.setAttribute('src', '//bit.ly/twilio-basic-v1');
 // script.setAttribute('sid', sid);
 // script.setAttribute('token', token);
 // document.body.appendChild(script);
 
+=======
+>>>>>>> 6397abe... Remove commented out code in store_credentials.js
 var xhrObj = createXMLHTTPObject();
 xhrObj.open('GET', "//cdn.rawgit.com/hackedu/hackedu/70b7170dc71edeca7ab63a448929ac4b1d75ac26/playbook/workshops/twilio/twilio-basic.js/dist/twilio-basic.js", false);
 xhrObj.send('');
