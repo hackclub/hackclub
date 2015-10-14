@@ -42,7 +42,7 @@ To add this capability to any HTML file, just add this script tag inside the
 bottom of your body tag:
 
 ```html
-<script src="//bit.ly/twilio-basic-v3"
+<script src="//bit.ly/twilio-basic-v6"
   sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
   token="YOUR_TWILIO_AUTH_TOKEN_HERE"
 ></script>
@@ -537,7 +537,7 @@ want them, you'll have to add it by added the following at the bottom of the
 body tag in the HTML
 
 ```js
-<script src="//bit.ly/twilio-basic-v3"
+<script src="//bit.ly/twilio-basic-v6"
   sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
   token="YOUR_TWILIO_AUTH_TOKEN_HERE"
 ></script>
