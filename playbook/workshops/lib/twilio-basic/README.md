@@ -12,11 +12,11 @@ Pull requests here are definitely welcome.
 
 ## Building the Library
 
-Run the following command to build the modified library. The output will be in
-`dist/twilio-basic.js`.
+Install dependencies for the build:
 
-```
-$ uglifyjs src/js/loader.js src/lib/dweet.min.js src/js/string_utils.js \
-src/js/helpers.js src/js/client.js src/js/browserified_twilio.js -o \
-dist/twilio-basic.js
-```
+    $ npm install
+
+And now just run `make` command to build the modified library. The output will
+be in `dist/twilio-basic.js`.
+
+    $ make
