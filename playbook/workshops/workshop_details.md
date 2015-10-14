@@ -119,7 +119,7 @@ To add Twilio to your project, you just add the following script tag inside your
 HTML file (after filling in your sid and token of course).
 
 ```html
-<script src="//bit.ly/twilio-basic-v1"
+<script src="//bit.ly/twilio-basic-v3"
   sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
   token="YOUR_TWILIO_AUTH_TOKEN_HERE"
 ></script>  
@@ -130,7 +130,7 @@ The above script is the easiest way to add Twilio to a web project.
 The examples throughout the workshop projects use a different script:
 
 ```html
-<script type="text/javascript" src="//bit.ly/twilio-basic-with-prompt-v1">
+<script type="text/javascript" src="//bit.ly/twilio-basic-with-prompt-v2">
 </script>
 ```
 
