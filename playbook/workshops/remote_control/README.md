@@ -59,8 +59,8 @@ The facilitator should have given you an SID and a token. If you don't have one
 yet, ask your facilitator.
 
 If you are the facilitator (or you're just doing this workshop by yourself),
-follow the directions [here](../twilio/signup.md) to get your own Twilio
-SID and token.
+follow the directions [here](../lib/twilio-basic/signup.md) to get your own
+Twilio SID and token.
 
 Once we have the SID and auth token, replace
 `YOUR_TWILIO_ACCOUNT_SID_HERE` and `YOUR_TWILIO_AUTH_TOKEN_HERE` with the actual
