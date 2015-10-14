@@ -130,7 +130,7 @@ The above script is the easiest way to add Twilio to a web project.
 The examples throughout the workshop projects use a different script:
 
 ```html
-<script type="text/javascript" src="//bit.ly/twilio-basic-with-prompt-v2">
+<script type="text/javascript" src="//bit.ly/twilio-basic-with-prompt-v5">
 </script>
 ```
 
