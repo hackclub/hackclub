@@ -70,7 +70,7 @@ while (token === null || token.length !== 32) {
 localStorage.setItem(TOKEN_KEY, token);
 
 var xhrObj = createXMLHTTPObject();
-xhrObj.open('GET', "//cdn.rawgit.com/hackedu/hackedu/70b7170dc71edeca7ab63a448929ac4b1d75ac26/playbook/workshops/twilio/twilio-basic.js/dist/twilio-basic.js", false);
+xhrObj.open('GET', "//bit.ly/twilio-basic-v3", false);
 xhrObj.send('');
 
 var script = document.createElement('script');

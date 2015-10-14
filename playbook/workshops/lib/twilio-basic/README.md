@@ -17,6 +17,6 @@ Install dependencies for the build:
     $ npm install
 
 And now just run `make` command to build the modified library. The output will
-be in `dist/twilio-basic.js`.
+be in `dist/twilio-basic.min.js`.
 
     $ make
