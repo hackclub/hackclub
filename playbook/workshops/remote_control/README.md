@@ -42,7 +42,7 @@ To add this capability to any HTML file, just add this script tag inside the
 bottom of your body tag:
 
 ```html
-<script src="//bit.ly/twilio-basic-v1"
+<script src="//bit.ly/twilio-basic-v6"
   sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
   token="YOUR_TWILIO_AUTH_TOKEN_HERE"
 ></script>
@@ -59,8 +59,8 @@ The facilitator should have given you an SID and a token. If you don't have one
 yet, ask your facilitator.
 
 If you are the facilitator (or you're just doing this workshop by yourself),
-follow the directions [here](../twilio/signup.md) to get your own Twilio
-SID and token.
+follow the directions [here](../lib/twilio-basic/signup.md) to get your own
+Twilio SID and token.
 
 Once we have the SID and auth token, replace
 `YOUR_TWILIO_ACCOUNT_SID_HERE` and `YOUR_TWILIO_AUTH_TOKEN_HERE` with the actual
@@ -537,7 +537,7 @@ want them, you'll have to add it by added the following at the bottom of the
 body tag in the HTML
 
 ```js
-<script src="//bit.ly/twilio-basic-v1"
+<script src="//bit.ly/twilio-basic-v6"
   sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
   token="YOUR_TWILIO_AUTH_TOKEN_HERE"
 ></script>
