@@ -1,5 +1,8 @@
 # Enemy - Random Position
 
+_Questions, comments and critiques are welcome! Send your feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform)._
+
 Instead of having the enemy fall in the same place every time:
 
 > ![](img/sq_8_enemy_go_back_to_top.gif)

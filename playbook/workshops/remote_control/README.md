@@ -1,5 +1,8 @@
 # Remote Control
 
+_Questions, comments and critiques are welcome! Send your feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform)._
+
 The objective of this workshop is to learn to wield powerful
 [APIs](http://www.quora.com/What-is-an-API) with minimal code.
 

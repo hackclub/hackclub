@@ -1,5 +1,8 @@
 # Game Over When Touching
 
+_Questions, comments and critiques are welcome! Send your feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform)._
+
 Currently, when the player touches the enemy, nothing happens:
 
 > ![](img/sq_8_enemy_go_back_to_top.gif)

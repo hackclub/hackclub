@@ -1,5 +1,8 @@
 # Blank Canvas
 
+_Questions, comments and critiques are welcome! Send your feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform)._
+
 We'll be using JS Bin for this tutorial. Feel free to use your own editor.
 
 ![](img/checkmark.png) If you are using JS Bin, make sure you have created an

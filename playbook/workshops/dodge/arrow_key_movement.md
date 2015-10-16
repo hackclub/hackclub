@@ -1,5 +1,8 @@
 # Arrow Key Movement
 
+_Questions, comments and critiques are welcome! Send your feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform)._
+
 We don't want our sprite to move like this all the time:
 
 ![](img/sq_3_linear_player_movement.gif)

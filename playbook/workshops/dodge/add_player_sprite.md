@@ -1,5 +1,8 @@
 # Adding the Player Sprite
 
+_Questions, comments and critiques are welcome! Send your feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform)._
+
 Currently our canvas is blank like this:
 
 ![](img/sq_1_blank_canvas.png)

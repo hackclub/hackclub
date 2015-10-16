@@ -1,5 +1,8 @@
 ### A more in depth understanding of `background(255, 240, 220)`
 
+_Questions, comments and critiques are welcome! Send your feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform)._
+
 Try changing it to background(255, 0, 0);
 
 TODO: Insert screenshot of JS Bin with it being red

@@ -1,5 +1,8 @@
 # Guidelines for Making a Workshop
 
+_Questions, comments and critiques are welcome! Send your feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform)._
+
 **_Note that this is only a preliminary draft of this document:_**
 
 - Go with something working over deriving something from scratch

@@ -1,5 +1,8 @@
 # Add Enemy Sprite
 
+_Questions, comments and critiques are welcome! Send your feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform)._
+
 We can add an enemy sprite with the following code (new code highlighted in
 gray):
 
