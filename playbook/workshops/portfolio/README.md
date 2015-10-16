@@ -202,7 +202,7 @@ But before we do that, let's understand how the image tag works:
 ```html
 <img src="http://i.imgur.com/C6P1T0G.jpg">
 
-note that <img> does not have a closing tag
+Note that <img> does not have a closing tag
 ```
 
 ```html
@@ -303,7 +303,7 @@ Hmm... I don't want my image to change sizes if my page changes sizes.
 
 ## Pixels
 
-Lets change the units from a percentage to pixels.
+Let's change the units from a percentage to pixels.
 This will now set the width of the image to always be `200px` or 200 pixels
 no matter the size of the page.
 
@@ -359,11 +359,9 @@ Since I want this to apply my `img` tag, I add here:
 
 Hey! It works!
 
-```
 Note that this was just a brief introduction to using Google to figure out
 how to do something. You will be doing this **_A LOT_** more of this in the
 future.
-```
 
 ## We've made more progress!
 
