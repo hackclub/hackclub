@@ -1,7 +1,7 @@
 # Guidelines for Making a Workshop
 
 _Questions, comments and critiques are welcome! Send your feedback
-[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform)._
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform?entry.1677546962=The+guidelines+for+making+a+workshop)._
 
 **_Note that this is only a preliminary draft of this document:_**
 
