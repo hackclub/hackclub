@@ -55,7 +55,7 @@ if(sid === null || sid === "null") {
 
 while (sid === null || sid.length !== 34) {
   sid = prompt("You mistyped your Twilio ACCOUNT SID. Please retype it." +
-          " For help, check https://github.com/hackedu/hackedu/tree/master/playbook/workshops/twilio/README.md");
+          " For help, check https://github.com/hackedu/hackedu/tree/master/playbook/workshops/lib/twilio-basic/README.md");
 }
 localStorage.setItem(SID_KEY, sid);
 
@@ -65,7 +65,7 @@ if(token === undefined || token === null || token === "null") {
 
 while (token === null || token.length !== 32) {
   token = prompt("You mistyped your Twilio AUTH TOKEN. Please retype it." +
-          " For help, check https://github.com/hackedu/hackedu/tree/master/playbook/workshops/twilio/README.md");
+          " For help, check https://github.com/hackedu/hackedu/tree/master/playbook/workshops/lib/twilio-basic/README.md");
 }
 localStorage.setItem(TOKEN_KEY, token);
 
