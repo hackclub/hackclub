@@ -8,7 +8,9 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/hackedu/meta/5243af92814b6daacadd66e1342ad073e023544c/logos/hackedu_letter_opaque.png" alt="hackEDU"/></p>
 <p align="center">
-<b><a href="playbook/">playbook</a></b>
+<b><a href="playbook/workshops">workshops</a></b>
+|
+<b><a href="playbook/">full playbook</a></b>
 |
 <b><a href="case_studies/">case studies</a></b>
 |
