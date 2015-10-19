@@ -38,6 +38,7 @@ Branch names should adhere to the following:
 
 - All lowercase
 - `-` as space separator for branch names
+- If a feature branch, include the name of the feature
 
 ### File names
 
