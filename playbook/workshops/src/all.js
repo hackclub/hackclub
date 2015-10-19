@@ -3,7 +3,6 @@
 
 function setup() {
   createCanvas(800,800);
-
 }
 
 function draw() {
@@ -44,7 +43,6 @@ function draw() {
   background(255, 100, 100);
   drawSprites();
 }
-
 
 //===================================
 // 4

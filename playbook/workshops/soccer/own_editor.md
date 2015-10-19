@@ -1,28 +1,28 @@
-## A Note For Those Who Want To Use Your Own Editor
+# A Note For Those Who Want To Use Your Own Editor
 
 We'll be using [JS Bin](https://jsbin.com) to write our code in this tutorial.
 If you prefer to use your own editor, please do, but know the directions are
 made for JS Bin.
 
-### Including the p5.js and p5.play.js libraries
+**Including the p5.js and p5.play.js libraries**
 
 If you do end up using your own editor, make sure you include:
 
-- [ ] _the p5.js library] - (see below)_
+- [ ] _the p5.js library - (see below)_
 - [ ] _the p5.play.js library - (see below)_
 
-#### This script tag adds [**p5.js**](http://p5js.org/) library
+**This script tag adds [**p5.js**](http://p5js.org/) library**
 
 ```html
 <script src="http://rawgit.com/jonleung/33aa8dcb08ce87d689a6/raw/9a3acc3f39ea114aadc1ab87c75f518c553f54ca/p5.js"></script>
 ```
-#### This script tag adds the [**p5.play.js**](http://p5play.molleindustria.org) library
+**This script tag adds the [**p5.play.js**](http://p5play.molleindustria.org) library**
 
 ```html
 <script src="http://rawgit.com/jonleung/33aa8dcb08ce87d689a6/raw/9a3acc3f39ea114aadc1ab87c75f518c553f54ca/p5.play.js"></script>
 ```
 
-#### Your HTML File might look like this:
+**Your HTML File might look like this:**
 
 ```html
 <!DOCTYPE html>

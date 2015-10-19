@@ -3,12 +3,12 @@
 ## Background
 
 | From step 1: we <br> ![](http://placehold.it/300?text=1)  |  From step 1: we <br> ![](http://placehold.it/300?text=2)  | From step 1: we <br> ![](http://placehold.it/300?text=3) |
-|:-----------------------------------------------------------|:------------------------------------------------------------|:----------------------------------------------------------|
+|-----------------------------------------------------------|------------------------------------------------------------|----------------------------------------------------------|
 
 ## Outcome of This Step
 
-After you finish this step, you will learn how to **TODO**. Here is
-the code you will end up with (_the new code is highlighted in gray_):
+After you finish this step, you will learn how to **TODO**. Here is the code you
+will end up with (_the new code is highlighted in gray_):
 
 ![](http://placehold.it/300?text=TODO)
 
@@ -55,8 +55,8 @@ Also make sure you include links to computer science concepts
 ### And that's a wrap
 
 The section immediately below section is the "Give me a brief overview of this
-code". You already did the "Walk me through this code step-by-step" section
-so no need to do it.
+code". You already did the "Walk me through this code step-by-step" section so
+no need to do it.
 
 [Click here to skip to the next section.](#next-up)
 
@@ -103,15 +103,13 @@ player = createSprite(150, 100, 50, 50);
 ## Next Up
 
 | **[![](![](http://placehold.it/300?text=TODO))  <br> X. TODO](mouse_movement.md)** |
-|:-------------------------------------------------------------------|
+|------------------------------------------------------------------------------------|
 
 ## Steps
 
 | **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|:-------------------------------------------------------------------|:----------------------------------------------------------------------------|:---------------------------------------------------------------------|
+|--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
 | **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |
-
-
 
 ## Appendix
 

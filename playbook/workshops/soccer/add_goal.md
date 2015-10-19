@@ -3,7 +3,7 @@
 ## Background
 
 | From step 4: we added a ball we can dribble <br> ![](img/4_mini.gif) |  Now we need a goal to score in <br> ![](img/5_mini.gif)  |
-|:-----------------------------------------------------------:|:------------------------------------------------------------:|
+|----------------------------------------------------------------------|-----------------------------------------------------------|
 
 ## Outcome of This Step
 
@@ -67,16 +67,16 @@ function draw() {
 }
 ```
 
-- [ ] _Go ahead and add these new lines of code. If you don't quite
-       understand how they work, feel free to review the analogous code in
+- [ ] _Go ahead and add these new lines of code. If you don't quite understand
+       how they work, feel free to review the analogous code in
        [step 2](add_player_sprite.md)._
 
 > ![](img/5_write-a_create_goal.gif)
 
 Now that we have the goal to score in, we need to learn how to:
 
-- how to make a sprite disappear
-- how to detect when sprites touches another
+- Make a sprite disappear
+- Detect when sprites touches another
 
 Let's learn by using the console:
 
@@ -132,7 +132,7 @@ if (ball.overlap(goal)) {
 We can add this code as follows:
 
 - [ ] _Go ahead and add the above code. Don't forget to close the console and
-  open the JavaScript tab again first._
+      open the JavaScript tab again first._
 
 ![](img/5_write-f_if_overlap_remove.gif)
 
@@ -199,7 +199,7 @@ if (ball.overlap(goal)) {
 ```
 
 You can read the above as **`if`** the **`ball`** **`overlaps`** the **`goal`**
-  then **`remove`** the **`ball`**
+then **`remove`** the **`ball`**
 
 - [ ] Go ahead and add this to your code.
 
@@ -213,12 +213,11 @@ Now make this game yours! Go add features to it that you think would be really
 cool! Transform it into a completely different game of your own!
 
 You can checkout some cool examples in the Adding Functionality section in the
-main README
-[adding more functionality to your app]
+main README [adding more functionality to your app]
 (README.md#part-2-adding-more-functionality).
 
 ## Steps
 
 | **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|:-------------------------------------------------------------------|:----------------------------------------------------------------------------|:---------------------------------------------------------------------|
+|--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
 | **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |

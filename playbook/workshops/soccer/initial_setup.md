@@ -6,9 +6,9 @@ p5.play.js library. You can learn more about them by Googling for `JavaScript`,
 
 ## Setup
 
-- [ ] First off, make sure you've followed the [setup
-  directions](README.md/#setup) to create your working bin on the previous page.
-
+- [ ] First off, make sure you've followed the
+      [setup directions](README.md/#setup) to create your working bin on the
+      previous page.
 - [ ] Make sure two tabs open, one for your working bin, and one for these
       workshop directions.
 
@@ -24,8 +24,8 @@ The the code for the working bin has 2 parts:
 The HTML adds the p5.js and p5.play.js libraries. Learn more about what the HTML
 does [here](own_editor.md).
 
-We won't really talk about the HTML that much in
-this tutorial. Our primary focus will be the JavaScript code.
+We won't really talk about the HTML that much in this tutorial. Our primary
+focus will be the JavaScript code.
 
 # Understanding the JavaScript
 
@@ -49,6 +49,7 @@ Don't worry about this too much now, we'll touch on this more later.
 
 For the rest of this section, we're going to understand the following lines of
 code:
+
   - `createCanvas(300, 500);`
   - `background(255, 240, 220);`
   - `drawSprites();`
@@ -63,17 +64,15 @@ createCanvas(300, 500);
 
 ### Understanding through Tinkering
 
-- [ ] _In your working bin, try changing some of the values of
-      `createCanvas` to try understand what the values affect. Below is an
-      example of how I play around with the values of `createCanvas` to try
-      understand what it does:_
+- [ ] _In your working bin, try changing some of the values of `createCanvas` to
+      try understand what the values affect. Below is an example of how I play
+      around with the values of `createCanvas` to try understand what it does:_
 
 > ![](img/1_tinkering_createCanvas.gif)
 
 ### Explanation
 
-As a reminder, the area on which everything lives is called the
-**canvas**:
+As a reminder, the area on which everything lives is called the **canvas**:
 
 > ![](img/r_vocab_2.png)
 
@@ -133,7 +132,7 @@ the next section!
 ## Next
 
 | **[![](img/2_mini.png)  <br> 2. Add Player Sprite](add_player_sprite.md)** |
-|:-------------------------------------------------------------------|
+|----------------------------------------------------------------------------|
 
 # Appendix
 
@@ -171,9 +170,10 @@ In the above drawing, you can see that
 
 But what are the side effects?
 
-- well the lemonade juicing machine gets hot from use
-- you, the user, who is not an input get better at learning how to make lemonade
-- you and your friends bond over making lemonade
+- The lemonade juicing machine gets hot from use.
+- You, the user, who is not an input get better at learning how to make
+  lemonade.
+- You and your friends bond over making lemonade.
 
 Sometimes, you care more about the side effects than the outputs.
 
@@ -210,7 +210,7 @@ yet), it will make much more sense.
 ## Steps
 
 | **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|:-------------------------------------------------------------------|:----------------------------------------------------------------------------|:---------------------------------------------------------------------|
+|--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
 | **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |
 
 --------------------------------------------------------------------------------

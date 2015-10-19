@@ -3,7 +3,7 @@
 ## Background
 
 | From step 2, we added a sprite <br> that doesn't move yet: <br><br> ![](img/2_mini.png) | Now we want to make it <br> move like this: <br><br> ![](img/3_mini.gif) |
-|:-----------------------------------------------------------:|:------------------------------------------------------------:|
+|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 
 ## Outcome of This Step
 
@@ -85,8 +85,8 @@ player.position.y = mouseY;
 ### And that's a wrap
 
 The section immediately below section is the "Give me a brief overview of this
-code". You already did the "Walk me through this code step-by-step" section
-so no need to do it.
+code". You already did the "Walk me through this code step-by-step" section so
+no need to do it.
 
 [Click here to skip to the next section.](#next-up)
 
@@ -138,10 +138,10 @@ of the mouse (**`mouseX`**)"
 ## Next Up
 
 | **[![](img/4_mini.gif)  <br> 3. Dribble Ball](dribble_ball.md)** |
-|:-------------------------------------------------------------------|
+|------------------------------------------------------------------|
 
 ## Steps
 
 | **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|:-------------------------------------------------------------------|:----------------------------------------------------------------------------|:---------------------------------------------------------------------|
+|--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
 | **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |

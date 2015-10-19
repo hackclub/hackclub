@@ -3,7 +3,7 @@
 ## Background
 
 | From step 1: We made a blank canvas: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> ![](img/1_mini.png) <br> | Eventually in step 3, we want to add a player sprite that follows the mouse: <br> ![](img/3_mini.gif) | But for now (step 2) we are just adding a sprite that does not move: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> ![](img/2_mini.png) |
-|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------|
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 
 ## Outcome of This Step
 
@@ -100,8 +100,8 @@ And this is what means for our sprite to have it's coordinates set to
 
 ### Shrinking the Width
 
-I want to make the width of the sprite a bit smaller.
-The width is by default `100`. Let's make the width `50` instead.
+I want to make the width of the sprite a bit smaller. The width is by default
+`100`. Let's make the width `50` instead.
 
 ```
 createSprite(125, 250, 50);
@@ -174,8 +174,8 @@ player = createSprite(125, 250, 50, 50);
 ### And that's a wrap
 
 The section immediately below section is the "Give me a brief overview of this
-code". You already did the "Walk me through this code step-by-step" section
-so no need to do it.
+code". You already did the "Walk me through this code step-by-step" section so
+no need to do it.
 
 [Click here to skip to the next section.](#next-up)
 
@@ -231,10 +231,10 @@ player = createSprite(150, 100, 50, 50);
 ## Next Up
 
 | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|:-------------------------------------------------------------------|
+|--------------------------------------------------------------------|
 
 ## Steps
 
 | **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|:-------------------------------------------------------------------|:----------------------------------------------------------------------------|:---------------------------------------------------------------------|
+|--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
 | **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |

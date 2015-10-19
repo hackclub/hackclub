@@ -3,7 +3,7 @@
 ## Background
 
 | From step 3: the sprite follows <br> the mouse <br> ![](img/3_mini.gif) | Now we want to add a ball that we <br> can dribble around <br> ![](img/4_mini.gif) |
-|:-----------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|
+|-------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 
 ## Outcome of This Step
 
@@ -64,8 +64,8 @@ function draw() {
 
 > ![](img/4_write-a_create_ball.gif)
 
-If you look at the above animation, you will see that the player sprite
-does not move the ball around.
+If you look at the above animation, you will see that the player sprite does not
+move the ball around.
 
 ## Making the Player Sprite Be Able to Move the Ball Around
 
@@ -140,10 +140,10 @@ against the **`player`**".
 ## Next Up
 
 | **[![](img/5_mini.gif)  <br> 5. Add Goal](add_goal.md)** |
-|:-------------------------------------------------------------------|
+|--------------------------------------------------------------------|
 
 ## Steps
 
 | **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|:-------------------------------------------------------------------|:----------------------------------------------------------------------------|:---------------------------------------------------------------------|
+|--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
 | **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |

@@ -40,29 +40,28 @@ to navigate this tutorial for you. This might look like the following:
 
 **If you have programmed a _little_:**
 
-- Huzzah! Feel free to follow along step-by-step and skim through a sections
-  you understand.
+- Huzzah! Feel free to follow along step-by-step and skim through a sections you
+  understand.
 
 **If you have more experience:**
 
 - You already know the basics of coding. Your goal here is to learn how to use
   the JavaScript game frameworks [p5.js](http://p5js.org/) and
-  [p5.play.js](http://p5play.molleindustria.org) and then make your own stuff with it.
+  [p5.play.js](http://p5play.molleindustria.org) and then make your own stuff
+  with it.
 - You might spend most of your jumping around from section to section and just
   picking and choosing what you need.
 
 ## Setup
 
-1. If you're more experienced and want to use your own editor
-   follow [these instructions](own_editor.md).
-
-2. If you haven't already, make sure you have a JS Bin account first.
-   <a href="https://jsbin.com/register" target="_blank">Create one here.</a>
-
+1. If you're more experienced and want to use your own editor follow
+   [these instructions](own_editor.md).
+2. If you haven't already, make sure you have a JS Bin account first. <a
+   href="https://jsbin.com/register" target="_blank">Create one here.</a>
 3. Then open <a target="_blank"
-   href="http://jsbin.com/rekofi/120/edit?js,output"> this JS Bin</a>.
-   It has all the starter code we need for this tutorial. Write any new code in
-   this JS Bin. We'll refer to this JS Bin as your **_"working bin"_**.
+   href="http://jsbin.com/rekofi/120/edit?js,output"> this JS Bin</a>. It has
+   all the starter code we need for this tutorial. Write any new code in this JS
+   Bin. We'll refer to this JS Bin as your **_"working bin"_**.
 
 ## Some Quick Vocabulary
 
@@ -83,7 +82,7 @@ The below steps walk you through step-by-step of how to build a the single
 player soccer game.
 
 | **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|:-------------------------------------------------------------------|:----------------------------------------------------------------------------|:---------------------------------------------------------------------|
+|--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
 | **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     |                                                                      |
 
 ## Part 2, Adding More Functionality
@@ -96,19 +95,6 @@ player soccer game.
 Think of this section like the like the topping bar of an ice cream store. You
 can sprinkle as many or as little of the below features on the maze game that
 you built in [Part 1](#part-1-single-player-soccer) in any order you please!
-
-```
-TODO: Adding Functionality
-
-  Topping Ideas:
-
-  - Insert Sprite With Image
-
-
-  Independent Toppings:
-
-  - Laggy Sprite
-```
 
 ## F.A.Q
 
