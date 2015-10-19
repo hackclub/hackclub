@@ -46,3 +46,9 @@ We are using two libraries:
 
 - The [p5js](http://p5js.org/) library
 - The [p5.play](http://p5play.molleindustria.org/) library (a library for games built on top of p5.js)
+
+# Feedback!
+
+We would <3 your feedback on how we can improve this workshop! Please help
+future hackers have a better experience by leaving feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform?entry.1677546962=The+bullet+dodging+game).

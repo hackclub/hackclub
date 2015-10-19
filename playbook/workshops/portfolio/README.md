@@ -546,3 +546,9 @@ Huzzah, we did it! You can take this URL and share it with your friends now!
 Please help us improve this workshop by giving us feedback
 [here in this form](https://docs.google.com/forms/d/1fxCx04NqDPFoAN6mJkEGoum1PXGYa1dMYO57UHtOOdE/viewform)!
 We love constructive feedback so don't worry about being harsh!
+
+# Feedback!
+
+We would <3 your feedback on how we can improve this workshop! Please help
+future hackers have a better experience by leaving feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform?entry.1677546962=Building+a+portfolio+website).
