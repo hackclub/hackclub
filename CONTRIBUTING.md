@@ -48,6 +48,84 @@ File names should follow the following guidelines:
 - `-` as a space separator for dates in file names
 - Dates in `YY-MM-DD` format
 
+## Git Commits
+
+In order to ensure that our git history makes sense we have certain guidelines
+which we require contributors to adhere to. These are:
+
+### Commits should follow the commit standards
+
+These are:
+
+- Commits should be written in the imperative mood
+- Commits should start with a capitol letter
+- Commits should not end with a full stop
+
+This is a style used by many other Open Source projects (Linux, Rails) as well
+as most corporate software development shops.
+
+[This is a great guide on writing a git commit message](http://chris.beams.io/posts/git-commit/)
+
+#### Examples
+
+> fix typo in introduction.
+
+- Does **not** start with a capitol letter
+- Ends with a full stop
+
+> Added iron man gif
+
+- Does **not** use the imperative mood
+
+> Adding more pizza parlours to directory
+
+- Does **not** use the imperative mood
+
+> Fix typo in introduction to user guide
+
+This commit message is wonderful!
+
+### Commits should be one logically unit of change
+
+A logical unit of change can be thought of as completion of a single task. A
+good way to figure out if you are not adhereing to this rule is to tell
+yourself what you changed ("I added a picture of a donkey to the twilio
+workshop"). If you find yourself having multiple statements in this description
+then you have made your commit too big.
+
+#### Examples
+
+> Add an image of pizza, fix typos, rewrite `README.md`
+
+This commit message contains three units of change, they are:
+
+- An image of pizza
+- Fixed typos
+- Rewritten `README.md`
+
+These should be split into one commit each.
+
+> Add an image of pizza
+
+This commit is great as only one logical change was made.
+
+### Commits should explain the change, but not be longer than 50 chars
+
+A commit message is used for quickly summarising a change. Another contributor
+should be able to read it, along with the content and immediately understand
+the change does.
+
+#### Examples
+
+> Fix typo
+
+- This commit message does not give any context
+
+> Add the spark reactor source code into the document where we add our thoughts
+
+- This commit message is too long! It should be less than 50 characters!
+- It uses too many words and could be simplified
+
 ## Using GitHub Issues
 
 We use GitHub's built in issue tracker for nearly everything at hackEDU. We
