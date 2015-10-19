@@ -1,6 +1,8 @@
 <a name="top"></a>
 [![IRC Network](https://img.shields.io/badge/irc-freenode-blue.svg "IRC Freenode")](https://kiwiirc.com/client/irc.freenode.net/?nick=Hacker%7C?#hackedu)
 [![Build Status](https://circleci.com/gh/hackedu/hackedu.svg?style=shield)](https://circleci.com/gh/hackedu/hackedu)
+[![Pull Request Stats](http://issuestats.com/github/hackedu/hackedu/badge/pr?style=flat)](http://issuestats.com/github/hackedu/hackedu)
+[![Issue Stats](http://issuestats.com/github/hackedu/hackedu/badge/issue?style=flat)](http://issuestats.com/github/hackedu/hackedu)
 
 ------------------------------------------------------------------------------
 
