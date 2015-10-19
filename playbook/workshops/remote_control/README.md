@@ -1,8 +1,5 @@
 # Remote Control
 
-_Questions, comments and critiques are welcome! Send your feedback
-[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform)?entry.1677546962=The+remote+control+workshop._
-
 The objective of this workshop is to learn to wield powerful
 [APIs](http://www.quora.com/What-is-an-API) with minimal code.
 
@@ -620,3 +617,9 @@ Twilio.listenForMessages(function(message) {
 See the above code working in [this JS Bin](http://jsbin.com/fawuda/111/edit?js,console).
 
 You can start to do more advanced logic like implementing a chat bot.
+
+# Feedback!
+
+We would <3 your feedback on how we can improve this workshop! Please help
+future hackers have a better experience by leaving feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform)?entry.1677546962=The+remote+control+workshop.

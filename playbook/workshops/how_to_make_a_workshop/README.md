@@ -1,8 +1,5 @@
 # Guidelines for Making a Workshop
 
-_Questions, comments and critiques are welcome! Send your feedback
-[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform?entry.1677546962=The+guidelines+for+making+a+workshop)._
-
 **_Note that this is only a preliminary draft of this document:_**
 
 - Go with something working over deriving something from scratch
@@ -37,3 +34,9 @@ _Questions, comments and critiques are welcome! Send your feedback
 - When writing your workshop locally, use
   [grip](https://github.com/joeyespo/grip) to view the workshop exactly as it
   will render on GitHub!
+
+# Feedback!
+
+We would <3 your feedback on how we can improve this workshop! Please help
+future hackers have a better experience by leaving feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform?entry.1677546962=The+guidelines+for+making+a+workshop).

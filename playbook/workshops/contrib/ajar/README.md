@@ -1,8 +1,5 @@
 # Ajar.io
 
-_Questions, comments and critiques are welcome! Send your feedback
-[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform?entry.1677546962=The+Ajar+workshop)._
-
 -------------------------------------------------------------------------------
 
 [Agar.io](http://agar.io) is a popular game built for the web with
@@ -1095,3 +1092,9 @@ You've finished Part 5!
 ![](img/celebrate.gif)
 
 # More coming soon...
+
+# Feedback!
+
+We would <3 your feedback on how we can improve this workshop! Please help
+future hackers have a better experience by leaving feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform?entry.1677546962=The+Ajar+workshop).

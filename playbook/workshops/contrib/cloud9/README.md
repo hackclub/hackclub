@@ -1,8 +1,5 @@
 # Cloud9 tutorial
 
-_Questions, comments and critiques are welcome! Send your feedback
-[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform?entry.1677546962=The+Cloud9+workshop)._
-
 ![Cloud9 logo](img/cloud9.png)
 
 ## What is Cloud9?
@@ -184,3 +181,9 @@ You now know how to
 - Work with HTML CSS and Javascript together
 
 Be sure to experiment with HTML CSS and Javascript on your own!
+
+# Feedback!
+
+We would <3 your feedback on how we can improve this workshop! Please help
+future hackers have a better experience by leaving feedback
+[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform?entry.1677546962=The+Cloud9+workshop).
