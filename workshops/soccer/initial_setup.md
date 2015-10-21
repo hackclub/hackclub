@@ -7,7 +7,7 @@ p5.play.js library. You can learn more about them by Googling for `JavaScript`,
 ## Setup
 
 - [ ] First off, make sure you've followed the
-      [setup directions](README.md/#setup) to create your working bin on the
+      [setup directions](README.md#setup) to create your working bin on the
       previous page.
 - [ ] Make sure two tabs open, one for your working bin, and one for these
       workshop directions.
