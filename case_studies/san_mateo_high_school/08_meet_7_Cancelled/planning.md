@@ -3,7 +3,7 @@
 ## Planning
 
 - Go through
-  (presentation)[https://github.com/SMHS-Programming/club/blob/92f970e202e97a9a0b2c6e54d0075f15558b420a/meetings/10_14_Meeting_VII.pdf]
+  [presentation](https://github.com/SMHS-Programming/club/blob/92f970e202e97a9a0b2c6e54d0075f15558b420a/meetings/10_14_Meeting_VII.pdf)
 - Talk about Project Week.
 - Talk about Demo Week.
 - Have the hackers start programming with their partners.

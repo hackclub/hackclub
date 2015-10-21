@@ -36,7 +36,7 @@ are looking for specific things.
 | 9/28/15  | W2D1       | [Challenge to Workshop/Improvised Teaching](05_meet_4)          |
 | 9/30/15  | W2D2       | [No lab, taught basic Javascript](06_meet_5)                    |
 | 10/05/15 | W3D1       | [Project Week and Yes-And/Brainstorming Activity](07_meet_6)    |
-| 10/14/15 | W3D2       | [Project Week (Cancelled)](08_meet_7_Cancelled)                 |
+| 10/14/15 | W3D2       | [Project Week (Cancelled PSAT)](08_meet_7_Cancelled)                 |
 | 10/19/15 | W3D2       | [Project Week](08_meet_7)                                       |
 
 ## Basic templates:
