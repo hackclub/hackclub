@@ -5,7 +5,7 @@ sprite move (new code highlighted in gray):
 
 > ![](img/t7_js_bin.gif)
 
-[![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/49/edit?js,output)
+[![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/77/edit?js,output)
 
 The highlighted gray lines above (reproduced below) are responsible for making
 the enemy sprite move:

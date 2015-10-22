@@ -2,12 +2,12 @@
 
 We are going to make a bullet dodging game:
 
-[![](img/game_play.gif)](http://output.jsbin.com/dozoki/64)
+[![](img/game_play.gif)](http://output.jsbin.com/dozoki/70)
 
-![](img/checkmark.png) Go ahead and [play the game](http://output.jsbin.com/dozoki/64).
+![](img/checkmark.png) Go ahead and [play the game](http://output.jsbin.com/dozoki/70).
 
 We're going to walk through how to build this game step by step. However, feel
-free to glance at [the final code](http://jsbin.com/dozoki/63/edit?js,output).
+free to glance at [the final code](http://jsbin.com/dozoki/70/edit?js,output).
 
 ## Some Quick Vocabulary
 
