@@ -67,8 +67,8 @@ the JS Bin tab you were working in, your code will be there.
 
 #### Recaps:
 
-- [First Meeting: Cherry Hill High School](https://github.com/hackedu/hackedu/blob/master/case_studies/cherry_hill_high_school_east/02_first_meeting/recap.md)
-- [First Meeting: San Mateo High School](https://github.com/hackedu/hackedu/blob/master/case_studies/san_mateo_high_school/03_second_meet/recap.md)
+- [First Meeting: Cherry Hill High School](../case_studies/cherry_hill_high_school_east/2015-09-05_first_meeting/recap.md)
+- [First Meeting: San Mateo High School](../case_studies/san_mateo_high_school/2015-09-21_meet_2/recap.md)
 
 #### Salient Reviews:
 

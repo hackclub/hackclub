@@ -17,9 +17,9 @@ The Labs program will follow this format:
   - Each case study consists of 2 files:
     1. `planning.md`
     2. `recap.md` ex.
-       https://github.com/hackedu/hackedu/blob/e1b9dd8e6c35d5dcc799340794d46439e6e89f9b/case_studies/cherry_hill_high_school_east/02_first_meeting/recap.md
-  - Case studies can be found in the
-    (playbook)[https://github.com/hackedu/hackedu/tree/master/case_studies]
+       [click here](../../case_studies/cherry_hill_high_school_east/2015-09-05_first_meeting/recap.md)
+  - Case studies can be found in the [`case_studies`](../../case_studies) folder
+    in this repository
 
 ## Setup
 
