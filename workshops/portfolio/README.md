@@ -542,12 +542,6 @@ Huzzah, we did it! You can take this URL and share it with your friends now!
 
 > ![](img/celebrate2.gif)
 
-## Feedback
-
-Please help us improve this workshop by giving us feedback
-[here in this form](https://docs.google.com/forms/d/1fxCx04NqDPFoAN6mJkEGoum1PXGYa1dMYO57UHtOOdE/viewform)!
-We love constructive feedback so don't worry about being harsh!
-
 # Feedback!
 
 We would <3 your feedback on how we can improve this workshop! Please help
