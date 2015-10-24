@@ -21,7 +21,7 @@ Every website that you have ever seen are written in these two languages.
 
 ## Microsoft Word for Code
 
-Just like you use Microsoft to write English, you can use JS Bin to write code.
+Just like you use Microsoft Word to write English, you can use JS Bin to write code.
 
 Open [http://jsbin.com](http://jsbin.com).
 
