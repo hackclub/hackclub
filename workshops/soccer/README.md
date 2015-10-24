@@ -2,7 +2,7 @@
 
 This tutorial is broken down into two parts:
 
-In the [Part 1](#part-1-single-player-soccer), you learn to build a simple
+In [Part 1](#part-1-single-player-soccer), you learn to build a simple
 single player soccer game by following a clearly outlined set of steps:
 
 [![](img/5_mini.gif)](http://output.jsbin.com/dikevu/34)
@@ -40,7 +40,7 @@ to navigate this tutorial for you. This might look like the following:
 
 **If you have programmed a _little_:**
 
-- Huzzah! Feel free to follow along step-by-step and skim through a sections you
+- Huzzah! Feel free to follow along step-by-step and skim through sections you
   understand.
 
 **If you have more experience:**
@@ -49,7 +49,7 @@ to navigate this tutorial for you. This might look like the following:
   the JavaScript game frameworks [p5.js](http://p5js.org/) and
   [p5.play.js](http://p5play.molleindustria.org) and then make your own stuff
   with it.
-- You might spend most of your jumping around from section to section and just
+- You might spend most of your time jumping around from section to section and just
   picking and choosing what you need.
 
 ## Setup
@@ -72,13 +72,13 @@ Each interactive element in the game (the player, ball, and the goal) is called 
 
 <!-- Editable Drawing in: https://docs.google.com/drawings/d/1Px_9MVqn2qv6ASDl7vxglR2lXVpHVaNsvT9lyrqWzmM/edit -->
 
-The entire area on which everything lives is called the "canvas":
+The entire area on which everything lives is called the **_canvas_**:
 
 > ![](img/r_vocab_2.png)
 
 ## Part 1, Single Player Soccer
 
-The below steps walk you through step-by-step of how to build a the single
+The instructions below will walk you through step-by-step of how to build a single
 player soccer game.
 
 | **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
@@ -92,7 +92,7 @@ player soccer game.
 1. The code for soccer example at the top of the page
 2. The Dodge Workshop
 
-Think of this section like the like the topping bar of an ice cream store. You
+Think of this section like the topping bar of an ice cream store. You
 can sprinkle as many or as little of the below features on the maze game that
 you built in [Part 1](#part-1-single-player-soccer) in any order you please!
 
@@ -100,7 +100,7 @@ you built in [Part 1](#part-1-single-player-soccer) in any order you please!
 
 **What programming languages and libraries are we using?**
 
-- We are learning to us  JavaScript game framework [p5.js](http://p5js.org/) and
+- We are learning to use JavaScript game framework [p5.js](http://p5js.org/) and
 [p5.play.js](http://p5play.molleindustria.org).
 
 ## Listing of Computer Science Concepts
