@@ -383,20 +383,20 @@ Now we have to:
 
 We want to center everything in the entire page.
 
-1. We can add a tag called the `body` tag
-2. put everything inside of the body tag
-3. and now that everything is inside the body tag, if we tell the CSS to center
+1. We can add a tag called the `body` tag.
+2. Put everything inside of the body tag.
+3. Now that everything is inside the body tag, if we tell the CSS to center
    the body, it will center **everything** inside of the body.
 
-### 1. We can add a tag called the `body` tag
+### 1. We can add a tag called the `body` tag.
 
 > ![](img/body.gif)
 
-### 2. put everything inside of the body tag
+### 2. Put everything inside of the body tag.
 
 > ![](img/body_copy.gif)
 
-### 3. and then tell the CSS to center everything in the body tag
+### 3. Tell the CSS to center everything in the body tag.
 
 > ![](img/center.gif)
 
@@ -462,19 +462,19 @@ For now, I wont explain what all this code means, you can
 
 Let's
 
-- copy this starter code into our current project
-- move the code in our `body` tag into their `body` tag
-- delete our old `body tag`
+1. Copy this starter code into our current project.
+2. Move the code in our `body` tag into their `body` tag.
+3. Delete our old `body tag`.
 
-### 1. copy this starter code into our current project
+### 1. Copy this starter code into our current project.
 
 > ![](img/copy_template.gif)
 
-### 2. move the code in our `body` tag into their `body` tag
+### 2. Move the code in our `body` tag into their `body` tag.
 
 > ![](img/body_cut.gif)
 
-### 3. delete our old `body tag`
+### 3. Delete our old `body tag`.
 
 > ![](img/delete_old_body.gif)
 
