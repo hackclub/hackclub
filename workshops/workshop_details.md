@@ -2,14 +2,13 @@
 
 ## General Workshop Facilitation Guidelines
 
-- Make sure you've gone through the workshop thoroughly yourself first
-- Demo the final product
-- Give an overview and context of what they're going to learn
-- Pair everyone into partners so that they have a buddy to ask questions
+- Make sure you've gone through the workshop thoroughly yourself first.
+- Demo the final product.
+- Give students an overview and context of what they're going to learn.
+- Pair everyone into partners so that they have a buddy to ask questions.
 - Send them the link to the workshop over chat, don't write it on the board or
-  try to verbally communicate it
-- Repeatedly circle the room to answer questions. Opt for spending less time
-  answering a single question in favor of being able to answer more questions.
+  try to verbally communicate it.
+- Repeatedly circle the room to answer questions. Opt for answering multiple questions instead of spending a lot of time answering one.
 
 --------------------------------------------------------------------------------
 
@@ -41,18 +40,15 @@ Remember to follow the
 
 ##### Before the presentation
 
-Open these links each in new tabs
+Open these links in new tabs:
 
 - [Live Demo](http://output.jsbin.com/ragizi)
 - {Your modified version of the website}
 - [Final Code](http://jsbin.com/ragizi/edit)
 - [Workshop](/portfolio/README.md)
 
-##### Communicate the following to the hackers
-
-_You should communicate the below information in less than 1-2 minutes max:_
--
- Show the tab with the live demo and tell the hackers that that's what they'll
+##### Communicate the following to the hackers in 1-2 minutes max:_
+- Show the tab with the live demo and tell the hackers that that's what they'll
   be making
 - Show your modified version of the live demo
 
@@ -60,9 +56,9 @@ _You should communicate the below information in less than 1-2 minutes max:_
 
 **Thinking you lost all the work:**
 
-If somehow the JS Bin close before you are able to signup for JS Bin, you may
-think that you lost all of your work. However, if you just go back to the URL of
-the JS Bin you were working in, all your changes will be there.
+If somehow the JS Bin tab closes before you are able to sign up for JS Bin, you may
+think that you lost all of your work. However, if you go back to the URL of
+the JS Bin tab you were working in, your code will be there.
 
 [See a demo of this](img/jsbin_accidental_closing.gif).
 
@@ -81,7 +77,7 @@ To be added.
 
 ![](img/remote_control.png)
 
-Learn to make a webapp that calls your friend and plays a song when you press a
+Learn to make a web app that calls your friend and plays a song when you press a
 button.
 
 #### International Warning
@@ -93,9 +89,9 @@ internationally.
 #### What Is Covered
 
 - How to use [Twilio](https://twilio.com) to send and recieve text messages and
-make phone calls
+to make phone calls
 - How to play music
-- How to detect whether a button has been pressed
+- How to detect if a button has been pressed
 - How to detect if your phone was "waved" like a magic wand
 
 #### Administrative Setup
@@ -104,19 +100,19 @@ Note: There's a fair bit of setup for this workshop.
 
 ##### Obtaining A Twilio Account & Credentials `[20 minutes]`
 
-We want to signup for Twilio and obtain a Twilio Account SID. Follow [the
-directions here](twilio/signup.md) to do this. The workshop is setup so that the
+We want to sign up for Twilio and obtain a Twilio Account SID. Follow [the
+directions here](twilio/signup.md) to do this. The workshop is set up so that the
 facilitator (that's you) obtains the credentials and gives it to everyone doing
-the workshop that they don't have to spend the time obtaining credentials.
+the workshop to save time.
 
-Following the above directions will only give you $100 worth of credit. If any
+Following the above directions will give you $100 worth of credit. If any
 club members need more, they can follow the same instructions to get their own
-account but will need you to give them the hackEDU Twilio promo code.
+account. However, they will need you to give them the hackEDU Twilio promo code.
 
 ##### Understanding The API
 
-To add Twilio to your project, you just add the following script tag inside your
-HTML file (after filling in your sid and token of course).
+To add Twilio to your project, add the following script tag inside your
+HTML file (after filling in your sid and token, of course).
 
 ```html
 <script src="//bit.ly/twilio-basic-v6"
@@ -134,17 +130,17 @@ The examples throughout the workshop projects use a different script:
 </script>
 ```
 
-Instead of hard coding the SID and token in to the script tag, this script one
-prompts the user to enter their Twilio credentials in a popup and it remembers
-the credentials for all the other examples (via localstorage).
+Instead of hard coding the SID and token into the script tag, this script
+prompts the user to enter their Twilio credentials in a pop-up and remembers
+the credentials for all of the examples (via local storage).
 
 ##### Further Setup
 
-- Setup the
+- Set up the
   [press button for phone call example](http://jsbin.com/fawuda/35/edit?html,js)
   to work with your phone number.
-- Setup the
-  [send a text from Twilio](http://jsbin.com/fawuda/114/edit?js,console).
+- Set up
+  [sending texts from Twilio](http://jsbin.com/fawuda/114/edit?js,console).
   By setting up this JS Bin, it will remember your Twilio credentials for the
   other examples as well.
 
@@ -170,30 +166,30 @@ the credentials for all the other examples (via localstorage).
 ##### Before the presentation
 
 - Open the
-  [send text message to Twilio and get a call back with a song JS Bin](http://jsbin.com/fawuda/112/edit?js,console)
-  and click the "Run" button and leave the tab open
+  ["send text message to Twilio and get a call back with a song" JS Bin](http://jsbin.com/fawuda/112/edit?js,console). 
+  Click the "Run" button and leave the tab open
 - Write down the phone number that appears on the console in large letters on
   the blackboard
 
 ##### Communicate the following to the hackers
 
 - Tell everyone to:
-  - Take out their cell phones and set them to vibrate and ring.
+  - Take out their cell phones and set them to vibrate.
   - Start composing a text message with the body "hi" to be sent to the phone
-    number that you wrote on the board but not to send it yet.
+    number that you wrote on the board, but not to send it yet.
   - On the count of 3, tell everyone to send their text message at the same
     time.
   - All their phones should start ringing.
-- Show them the JS Bin code to make it work and show that it's only 2 lines of
-  code to make this happen.
+- Show them the JS Bin code to make it work and show that 2 lines of
+  code can make this happen.
 - Show them how easy it is to
   [send a text from Twilio](http://jsbin.com/fawuda/114/edit?js,console).
 - Finally show them what they're
   [going to be building](http://jsbin.com/fawuda/35/edit?html,js).
 - Tell them that they're almost definitely not going to understand exactly how
   all the code works and that's fine.
-- Tell them that the primary focus in on understanding how to make what you want
-  to happen to happen.
+- Tell them that the primary focus is understanding how to make what you want
+  to happen, happen.
 
 #### Common Mistakes
 
@@ -213,8 +209,8 @@ None yet.
 
 ![](img/frogger_win.gif)
 
-This workshop is very much still in progress. I've only written the code so far
-and no workshop yet.
+This workshop is still in progress. I've only written the code so far
+but no workshop yet.
 
 - [Frogger Code](http://jsbin.com/yumape/edit?js,output)
 - [Live Demo](http://output.jsbin.com/yumape)
