@@ -6,13 +6,8 @@ _This guide is a collection of info about feedback forms learned from
 ## Collecting Feedback
 
 When giving the feedback forms to the hackers, it is very important that the
-hackers feel that giving feedback is important. We don't want them to feel like
-they're filling out the forms to appease us. Rather, we want them filling out
-the forms because they want the club to be as good as possible and they know that
-giving valuable feedback improves the club for everyone.
-
-Making hackers feel like giving feedback is important can be broken down into
-two parts:
+hackers feel that giving feedback is important. Making hackers feel like giving
+feedback is important can be broken down into two parts:
 
 1. Telling them why we want their feedback.
 2. Actually acting on their feedback and showing that it makes a difference.
