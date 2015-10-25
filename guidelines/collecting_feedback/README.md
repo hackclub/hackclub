@@ -6,27 +6,22 @@ _This guide is a collection of info about feedback forms learned from
 ## Collecting Feedback
 
 When giving the feedback forms to the hackers, it is very important that the
-hackers feel that giving feedback is important. Making hackers feel like giving
-feedback is important can be broken down into two parts:
+hackers feel that giving their feedback is important. Making hackers feel that
+giving feedback is important can be broken down into two parts:
 
 1. Telling them why we want their feedback.
-2. Actually acting on their feedback and showing that it makes a difference.
+2. Acting on hacker feedback in a way that is visible to hackers.
 
-## Acting on Feedback
+## Getting Hackers to Submit Feedback
 
-An important part to acting on feedback is making the changes visible to the
-hackers. At Hack Camp we did this by announcing 1-2 noticeable pieces of
-feedback we received at the previous meeting and explaining what we were doing
-that meeting to act on that feedback.
+Getting feedback from a hacker is hard; they don't think that submitting
+feedback is worth their time. This can be fixed by showing the hackers what you
+do in response to their feedback.
 
-## Getting First-Time Feedback
+_It should be noted this is critically important in any meeting with a hacker
+who is not yet in the habit of submitting feedback_
 
-Getting feedback from a hacker for the first time is the hardest; they don't
-have the previous experience of submitting feedback to build up a habit. This
-can be fixed by having a focus on feedback at any meeting new hackers are
-present.
-
-For these all-important first-time meetings, the following can help:
+For increasing the submission rate of feedback in clubs, the following can help:
 
 1. Allocate a minimum of 10 minutes for feedback.
 2. A quick explanation of why feedback is so important:
