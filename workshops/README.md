@@ -11,8 +11,8 @@ Our workshops aim to:
 - work well when done in pairs or individually.
 - be tinkerable.
 
-We recommend workshops links be provided to students, with each student working
-on the workshops independently and receiving support when needed.
+We recommend workshops links be provided to club members, with each member
+working on the workshops independently and receiving support when needed.
 
 Each workshop is a markdown file and has associated facilitation guidelines.
 
