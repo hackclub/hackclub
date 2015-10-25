@@ -173,9 +173,9 @@ player = createSprite(125, 250, 50, 50);
 
 ### And that's a wrap!
 
-The section immediately below section is the "Give me a brief overview of this
+The section immediately below is the "Give me a brief overview of this
 code". You already did the "Walk me through this code step-by-step" section so
-no need to do it.
+there's no need to do it.
 
 [Click here to skip to the next section.](#next-up)
 
