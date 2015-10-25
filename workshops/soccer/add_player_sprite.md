@@ -2,7 +2,7 @@
 
 ## Background
 
-| From step 1: We made a blank canvas: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> ![](img/1_mini.png) <br> | Eventually in step 3, we want to add a player sprite that follows the mouse: <br> ![](img/3_mini.gif) | But for now (step 2) we are just adding a sprite that does not move: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> ![](img/2_mini.png) |
+| We made a blank canvas in Step 1: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> ![](img/1_mini.png) <br> | Eventually in step 3, we want to add a player sprite that follows the mouse: <br> ![](img/3_mini.gif) | But for now (step 2) we are just adding a sprite that does not move: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> ![](img/2_mini.png) |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 
 ## Outcome of This Step
@@ -22,11 +22,11 @@ the code you will end up with (_the new code is highlighted in gray_):
   (#walk-through-of-the-code-step-by-step)
     - Recommended for those who
       - are beginners
-      - who want an in depth understanding of the code
+      - want an in depth understanding of the code
 - [**Give me a brief overview of this code.**](#brief-overview-of-the-code)
     - Recommended for those who
       - have more experience
-      - want to cover more ground but have a less in depth understanding
+      - want to cover more ground but have a less in-depth understanding
       - want to recap what they did in the step-by-step section
 
 # Walk Through of the Code Step-By-Step
@@ -171,11 +171,11 @@ player = createSprite(125, 250, 50, 50);
 
 > ![](img/2_write-f_var_player_equals_createSprite.gif)
 
-### And that's a wrap
+### And that's a wrap!
 
-The section immediately below section is the "Give me a brief overview of this
+The section immediately below is the "Give me a brief overview of this
 code". You already did the "Walk me through this code step-by-step" section so
-no need to do it.
+there's no need to do it.
 
 [Click here to skip to the next section.](#next-up)
 
