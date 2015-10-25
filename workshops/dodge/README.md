@@ -9,7 +9,7 @@ We are going to make a bullet dodging game:
 We're going to walk through how to build this game step by step. However, feel
 free to glance at [the final code](http://jsbin.com/dozoki/63/edit?js,output).
 
-## Some Quick Vocabulary
+## Some Terminology
 
 > ![](img/r_vocab1.png)
 
@@ -22,8 +22,7 @@ The entire area on which everything lives is called the "canvas":
 ## How To Use This Tutorial
 
 Use this tutorial in the most beneficial way to you! Don't feel that you have
-to follow each of the steps very carefully and rigidly before you move
-on. You could do anything including:
+to follow each of the steps very carefully and rigidly. You could do anything, including:
 
 - Only looking at the code examples and not reading any of the explanations
 - Copy the code from final code example and only looking at each section when
