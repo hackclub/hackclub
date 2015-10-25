@@ -76,6 +76,6 @@ and guided while Part II is exploratory.
 
 ![](img/frogger_win.gif)
 
-Learn to build frogger.
+Learn to build Frogger.
 
 [![](img/facilitation_guidelines.png)](workshop_details.md#frogger)
