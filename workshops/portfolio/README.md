@@ -1,11 +1,11 @@
 # Building Your First Website
 
-## Our Mission
+## Goals
 
-Our mission:
+Goals for this workshop:
 
-- make your personal website
-- put it on the internet for the whole world to see!
+- Make your personal website
+- Put it on the internet for the whole world to see!
 
 Your final design looks like this:
 
@@ -39,7 +39,7 @@ what I will write:
 
 > ![](img/jonathan_leung.gif)
 
-Notice that that what you write on the left side of the screen is reflected
+Notice that what you write on the left side of the screen is reflected
 on the right.
 
 > ![](img/left.png)
