@@ -11,67 +11,68 @@ Your final design looks like this:
 
 > ![](img/final_1.png)
 
-Here is a link to a [live demo](http://output.jsbin.com/fugoki/2)
+Here is a link to a
+<a href="http://output.jsbin.com/fugoki/2" target="_blank">live demo</a>
 
-And here is the [final code](http://jsbin.com/fugoki/2/edit) for the live demo.
+And here is the
+<a href="http://jsbin.com/fugoki/2/edit" target="_blank">final code</a>
+for the live demo.
 
 To do this, you will be learning the basics of two languages: HTML and CSS.
 
 Every website that you have ever seen are written in these two languages.
 
-## Creating a JS Bin Account
-
-Before anything, let's create an account in [http://jsbin.com](http://jsbin.com)
-!
-
-When we click "Login or Register"
-
-> ![](img/login_or_register.gif)
-
-We see that we can "Login or Register via GitHub".
-
-Think about this like Facebook Login, except it is GitHub login.
-
-What is GitHub?
-
-It is a website used by many professional coders to collaborate on code.
-Think Dropbox, but for code.
-
-Let's make a GitHub account!
+We will be building this website on an online code editor called JS Bin.
 
 ## Creating a GitHub account
 
-Let's create our own GitHub account.
+Before we go to JS Bin, we want a GitHub account that we can use to signin with.
 
-### In a new window, open [`https://github.com`](https://github.com)
+GitHub is a website used by many professional coders to collaborate on code.
+Think Dropbox, but for code.
+
+GitHub also has a login feature similar to how Facebook has "Facebook login".
+Let's make a GitHub account so we can login to JS Bin and many websites in the
+programming ecosystem!
+
+### 1) In a new window, open <a href="https://github.com" target="_blank">github.com</a>
 
 > ![](img/c9_v2_setup_1.png)
 
-### Create an account with a valid email
+### 2) Create an account with a valid email
 
 > ![](img/c9_v2_setup_2.png)
 
-### Click "Sign up for GitHub"
+### 3) Click "Sign up for GitHub"
 
 > ![](img/c9_v2_setup_3.png)
 
-### Validating your Email Address
+### 4) Ignore everything on the page and click "Finish sign up"
 
-- Check your email inbox for a confirmation email from GitHub
-- Make sure you click on the link it tells you to to confirm your account.
+> ![](img/finish_signup.png)
 
-> *Important Note*: If you don't do this now, you may run into an error in the
-> the future that may get you to rip your hair out!
+And now we're done creating a GitHub account!
 
-## Login with GitHub
+## Creating a JS Bin Account
 
-Now that you have a GitHub account, you can login with GitHub
+Now that we have a GitHub account:
 
-> ![](img/login_with_github.gif)
+1. open to <a href="http://jsbin.com" target="_blank">jsbin.com</a>
+2. click "Login or Register"
 
-## Microsoft Word for Code
+> ![](img/login_or_register.gif)
 
-Just like you use Microsoft Word to write English, you can use JS Bin to write
+## 4) Login with GitHub
+
+Now click "Authorize application"
+
+> ![](img/authorize_application.png)
+
+And we're all set!
+
+## JS Bin is like Microsoft Word for Code
+
+Just like you use Microsoft Word to write English, we can use JS Bin to write
 code.
 
 Go ahead and close the popup:
@@ -530,7 +531,7 @@ Huzzah! We did it! We're done!
 
 ## Get a link that everyone can see
 
-Since you're logged in, JS Bin will not "turn off" your website.
+Now that you're logged in, JS Bin will not "turn off" your website.
 
 So if you get the output URL, you can share this with everyone on the
 entire internet now and they will be able to see your website!
