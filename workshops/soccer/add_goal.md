@@ -2,7 +2,7 @@
 
 ## Background
 
-| From step 4: we added a ball we can dribble <br> ![](img/4_mini.gif) |  Now we need a goal to score in <br> ![](img/5_mini.gif)  |
+| From step 4, we added a ball we can dribble: <br> ![](img/4_mini.gif) |  Now we need a goal to score in: <br> ![](img/5_mini.gif)  |
 |----------------------------------------------------------------------|-----------------------------------------------------------|
 
 ## Outcome of This Step
@@ -27,7 +27,7 @@ Here is the resulting code (_the new code is highlighted in gray_):
   (#walk-through-of-the-code-step-by-step)
     - Recommended for those who
       - are beginners
-      - who want an in depth understanding of the code
+      - want an in depth understanding of the code
 - [**Give me a brief overview of this code.**](#brief-overview-of-the-code)
     - Recommended for those who
       - have more experience
@@ -97,7 +97,7 @@ We can write
 ball.remove();
 ```
 
-in the console. When we press entier, it will remove the ball.
+in the console. When we press enter, it will remove the ball.
 
 - [ ] _Try doing this yourself in your own working bin_
 
@@ -136,11 +136,11 @@ We can add this code as follows:
 
 ![](img/5_write-f_if_overlap_remove.gif)
 
-### And that's a wrap
+### And that's a wrap!
 
-The section immediately below section is the "Give me a brief overview of this
+The section immediately below is the "Give me a brief overview of this
 code". You already did the "Walk me through this code step-by-step" section
-so no need to do it.
+so there's no need to do it.
 
 [Click here to skip to the next section.](#finish)
 
@@ -205,7 +205,7 @@ then **`remove`** the **`ball`**
 
 ## Finish!
 
-Yay you finished the Linear Tutorial!
+Yay, you finished the Linear Tutorial!
 
 > ![](img/celebrate.gif)
 
@@ -213,8 +213,8 @@ Now make this game yours! Go add features to it that you think would be really
 cool! Transform it into a completely different game of your own!
 
 You can checkout some cool examples in the Adding Functionality section in the
-main README [adding more functionality to your app]
-(README.md#part-2-adding-more-functionality).
+main README ([adding more functionality to your app]
+(README.md#part-2-adding-more-functionality)).
 
 ## Steps
 
