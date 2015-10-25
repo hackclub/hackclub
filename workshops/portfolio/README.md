@@ -4,7 +4,7 @@
 
 Goals for this workshop:
 
-- Wake your personal website
+- Make your personal website
 - Put it on the internet for the whole world to see!
 
 Your final design looks like this:
@@ -191,7 +191,7 @@ side, we see that our original text is still there:
 
 > ![](img/scroll_down.gif)
 
-Okay. We need to make the picture smaller
+Ok. We need to make the picture smaller
 
 But before we do that, let's understand how the image tag works:
 
