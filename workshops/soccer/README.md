@@ -54,7 +54,7 @@ to navigate this tutorial for you. This might look like the following:
 
 ## Setup
 
-1. If you're more experienced and want to use your own editor follow
+1. If you're more experienced and want to use your own editor, follow
    [these instructions](own_editor.md).
 2. If you haven't already, make sure you have a JS Bin account first. <a
    href="https://jsbin.com/register" target="_blank">Create one here.</a>

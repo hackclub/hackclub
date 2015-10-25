@@ -2,7 +2,7 @@
 
 ## Background
 
-| From step 3: the sprite follows <br> the mouse <br> ![](img/3_mini.gif) | Now we want to add a ball that we <br> can dribble around <br> ![](img/4_mini.gif) |
+| From step 3, the sprite follows <br> the mouse: <br> ![](img/3_mini.gif) | Now we want to add a ball that we <br> can dribble around: <br> ![](img/4_mini.gif) |
 |-------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 
 ## Outcome of This Step
@@ -22,7 +22,7 @@ is the code you will end up with (_the new code is highlighted in gray_):
   (#walk-through-of-the-code-step-by-step)
     - Recommended for those who
       - are beginners
-      - who want an in depth understanding of the code
+      - want an in depth understanding of the code
 - [**Give me a brief overview of this code.**](#brief-overview-of-the-code)
     - Recommended for those who
       - have more experience
@@ -33,7 +33,7 @@ is the code you will end up with (_the new code is highlighted in gray_):
 
 ## Adding the Ball Sprite
 
-Create ball sprite in a similar way that you created the player sprite in
+Create a ball sprite in a similar way that you created the player sprite in
 [step 2](add_player_sprite.md).
 
 Here's the code that contains the new code to add a ball sprite:
@@ -82,11 +82,11 @@ against the **`player`**".
 
 > ![](img/4_write-c_ball_bounce_player.gif)
 
-### And that's a wrap
+### And that's a wrap!
 
-The section immediately below section is the "Give me a brief overview of this
+The section immediately below is the "Give me a brief overview of this
 code". You already did the "Walk me through this code step-by-step" section
-so no need to do it.
+so there's no need to do it.
 
 [Click here to skip to the next section.](#next-up)
 
