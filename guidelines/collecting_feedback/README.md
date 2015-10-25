@@ -1,13 +1,3 @@
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
-**Table of Contents**
-
-- [Feedback Forms](#feedback-forms)
-    - [Collecting Feedback](#collecting-feedback)
-    - [Acting on Feedback](#acting-on-feedback)
-    - [Getting First-Time Feedback](#getting-first-time-feedback)
-
-<!-- markdown-toc end -->
-
 # Feedback Forms
 
 _This guide is a collection of info about feedback forms learned from
