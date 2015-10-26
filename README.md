@@ -1,12 +1,14 @@
 <a name="top"></a>
 [![IRC Network](https://img.shields.io/badge/irc-freenode-blue.svg "IRC Freenode")](https://kiwiirc.com/client/irc.freenode.net/?nick=Hacker%7C?#hackedu)
 [![Build Status](https://circleci.com/gh/hackedu/hackedu.svg?style=shield)](https://circleci.com/gh/hackedu/hackedu)
+[![Pull Request Stats](http://issuestats.com/github/hackedu/hackedu/badge/pr?style=flat)](http://issuestats.com/github/hackedu/hackedu)
+[![Issue Stats](http://issuestats.com/github/hackedu/hackedu/badge/issue?style=flat)](http://issuestats.com/github/hackedu/hackedu)
 
 ------------------------------------------------------------------------------
 
 <p align="center"><img src="https://raw.githubusercontent.com/hackedu/meta/5243af92814b6daacadd66e1342ad073e023544c/logos/hackedu_letter_opaque.png" alt="hackEDU"/></p>
 <p align="center">
-<b><a href="playbook/">playbook</a></b>
+<b><a href="workshops/">workshops</a></b>
 |
 <b><a href="case_studies/">case studies</a></b>
 |

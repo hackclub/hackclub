@@ -7,7 +7,7 @@ p5.play.js library. You can learn more about them by Googling for `JavaScript`,
 ## Setup
 
 - [ ] First off, make sure you've followed the
-      [setup directions](README.md/#setup) to create your working bin on the
+      [setup directions](README.md#setup) to create your working bin on the
       previous page.
 - [ ] Make sure two tabs open, one for your working bin, and one for these
       workshop directions.
@@ -65,7 +65,7 @@ createCanvas(300, 500);
 ### Understanding through Tinkering
 
 - [ ] _In your working bin, try changing some of the values of `createCanvas` to
-      try understand what the values affect. Below is an example of how I play
+      understand what the values affect. Below is an example of how I play
       around with the values of `createCanvas` to try understand what it does:_
 
 > ![](img/1_tinkering_createCanvas.gif)
@@ -96,7 +96,7 @@ Here is a diagram representing the result of the above code:
 
 ### Understanding Through Tinkering
 
-- [ ] _Try changing some of the values of `createCanvas` to try to see what it
+- [ ] _Try changing some of the values of `createCanvas` to see what it
       changes. Below is an example of how I play around with the values of
       `background` to try understand what it does:_
 
@@ -145,7 +145,7 @@ the next section!
 
 ## Computer Science Fundamentals ![](img/computer_science.png)
 
-**_This Section is Coming Soon!_**—In the mean time, here is a sneak peak:
+**_This Section is Coming Soon!_**—In the mean time, here is a sneak peek:
 
 ### Functions
 
@@ -171,7 +171,7 @@ In the above drawing, you can see that
 But what are the side effects?
 
 - The lemonade juicing machine gets hot from use.
-- You, the user, who is not an input get better at learning how to make
+- You, the user, who is not an input, get better at learning how to make
   lemonade.
 - You and your friends bond over making lemonade.
 
@@ -183,7 +183,7 @@ Let's examine the components of `background(255, 255, 255)`
 
 ##### Inputs
 
-The inputs are whatever in the parenthesis.
+The inputs are whatever in the parentheses.
 
 In this case the `background` function has 3 inputs:
 
@@ -203,7 +203,7 @@ The side effect of this function is to set the color of the canvas.
 
 ##### Outputs
 
-This function has no outputs. This may not seem like it makes sense right now
+This function has no output. This may not seem like it makes sense right now,
 but if you visit the functions section of createSprite (which doesn't exist
 yet), it will make much more sense.
 
