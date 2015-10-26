@@ -1,27 +1,74 @@
-# Curriculum F.A.Q
+# hackEDU Playbook
 
-- People in my club have different levels of programming ability, what should I do?
-- I can't help everyone that needs help?
+Then there was someone
 
-# Teaching Guidelines
+> Interesting, this thing goes off to the side
 
-Getting the group to respond
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
 
-## 2
 
-## 1. Try asking for answers that require confirmation
+```js
+var x;
+x += 3;
+Parse.add(x);
+```
 
-When you ask "Was everyone able to do X?", people don't answer because X
-Instead try asking "Raise your hand if you did (or didn't) do X".
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
+We want to add the following code
 
-| Effective | Ineffective |
-|:----------|:------------|
-| ""        |             |
-|           |             |
-|           |             |
 
-##
+```js
+var x;
+x += 3;
+Parse.add(x);
+```
 
-## 2. Try asking for a visual response that requires a response from everyone instead of an auditory one
+"From a certain point onward there is no longer any turning back. That is the point that must be reached."
+--Franz Kafka
 
-If you ask "Can I get a thumbs up if you filled out the feedback form"
+[Go to the next section >](#)
+
+## This is a section heading
+
+### Integers
+
+### Doubles
+
+### Floats
+
+## Strings
+
+### concat
+
+### merge
+
+### find

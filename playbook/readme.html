@@ -29,6 +29,23 @@
   <link  href='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/style.css' rel='stylesheet'>
   <script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/script.js'></script>
 
+  <!-- inlineDisqussions: https://github.com/tsi/inlineDisqussions/tree/919f4a18db61dfd0759882660b52cafb419c991a -->
+  <!-- <script src="https://rawgit.com/tsi/inlineDisqussions/919f4a18db61dfd0759882660b52cafb419c991a/inlineDisqussions.js"></script> -->
+  <!-- <link href="https://rawgit.com/tsi/inlineDisqussions/919f4a18db61dfd0759882660b52cafb419c991a/inlineDisqussions.css" rel="stylesheet" > -->
+  <script src="inline_discussions.js"></script>
+  <link href="disqus.css" rel="stylesheet" >
+  <script type="text/javascript">
+    $(document).on('flatdoc:ready', function() {
+      disqus_shortname = "hackedu-disqus";
+      $(document).ready(function() {
+        $("p").inlineDisqussions({
+          highlighted: true,
+        });
+      })
+    });
+  </script>
+
+
   <!-- Meta -->
   <meta content="Your Project" property="og:title">
   <meta content="Your Project description goes here." name="description">
