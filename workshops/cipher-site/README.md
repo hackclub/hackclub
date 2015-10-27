@@ -1,6 +1,5 @@
 <h1 id="personal-website">Personal Website</h1>
-<h2 id="our-goal">Our Goal</h2>
-<h3 id="create-a-personal-website">Create a personal website</h3>
+<h3 id="our-goal-create-a-personal-website">Our Goal: Create a personal website</h3>
 <ul>
 <li>It doesn’t have to be for you, this is <a href="http://nguyenbrian.github.io/john-cenas-personal-website/">John Cena’s</a></li>
 </ul>
