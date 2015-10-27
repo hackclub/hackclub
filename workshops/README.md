@@ -24,7 +24,7 @@ Our workshops are free to be used by anyone. If you see any issues,
 yet, make a
 [pull request](https://help.github.com/articles/using-pull-requests/)!
 
-If you are working on your own workshop, check out these [guidelines](https://docs.google.com/document/d/1TzJLpSV2MWVG3Y8IA1drblu_oQBYOAYcMjMsuNkucp8/edit?usp=sharing)
+If you are working on your own workshop, check out these [guidelines](https://docs.google.com/document/d/1TzJLpSV2MWVG3Y8IA1drblu_oQBYOAYcMjMsuNkucp8/edit?usp=sharing).
 
 Unofficial workshops are in the [`contrib`](contrib/) directory.
 
