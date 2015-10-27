@@ -73,7 +73,7 @@ going through:
 ## Labs
 
 This section will cover any contribution guidelines specific to
-[Labs](meta/labs) and any others that choose to participate.
+[Labs](meta/labs) and any other club that would like to contribute.
 
 ### Contributing case studies
 
@@ -142,7 +142,8 @@ Below is the recommended contribution flow for submitting
 5. Create a new branch to add the case study to. Branch names should briefly
    describe the change being made. They should be lowercase and use dashes (`-`)
    instead of spaces. Since I'm adding the planning for our first meeting, I'm
-   going to call this branch `add-first-meeting-planning`.
+   going to call this branch `add-first-meeting-planning`. We call this a
+   feature branch.
 
         $ git checkout -b add-first-meeting-planning
 
@@ -175,8 +176,8 @@ Below is the recommended contribution flow for submitting
         $ git push -u origin add-first-meeting-planning
 
 10. Go to your `hackedu` fork on GitHub (it's at
-   `https://github.com/{username}/hackedu`, mine is at
-   https://github.com/zachlatta/hackedu). You should see the following:
+    `https://github.com/{username}/hackedu`, mine is at
+    https://github.com/zachlatta/hackedu). You should see the following:
 
     ![Recently pushed branches notification](https://i.imgur.com/NOeQyBe.png)
 

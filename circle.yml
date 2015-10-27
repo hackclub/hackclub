@@ -1,7 +1,3 @@
-dependencies:
-  pre:
-    - sudo curl -L -o /usr/local/bin/check_markdown_links https://git.io/v3aCL; sudo chmod +x /usr/local/bin/check_markdown_links
-
 test:
   override:
-    - check_markdown_links
+    - curl -sL https://git.io/vswrY | bash

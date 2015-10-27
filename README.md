@@ -1,5 +1,5 @@
 <a name="top"></a>
-[![IRC Network](https://img.shields.io/badge/irc-freenode-blue.svg "IRC Freenode")](https://webchat.freenode.net/?channels=hackedu)
+[![IRC Network](https://img.shields.io/badge/irc-freenode-blue.svg "IRC Freenode")](https://kiwiirc.com/client/irc.freenode.net/?nick=Hacker%7C?#hackedu)
 [![Build Status](https://circleci.com/gh/hackedu/hackedu.svg?style=shield)](https://circleci.com/gh/hackedu/hackedu)
 
 ------------------------------------------------------------------------------
@@ -15,10 +15,10 @@
 
 -------------------------------------------------------------------------------
 
-[hackEDU](https://hackedu.us) brings coding clubs to high schools. Start a
-coding club at your school today.
+[hackEDU](https://hackedu.us) is the movement of student-led coding clubs. Start
+a club and be a part of the global hacker movement.
 
-hackEDU is a community driven effort and is nearly 100% open source. This means
+We are a community driven effort that is nearly 100% open source. This means
 that anyone can use our materials and/or host a club. We've created this
 repository to hold all the knowledge from hackEDU organizers around the world.
 
@@ -26,10 +26,10 @@ repository to hold all the knowledge from hackEDU organizers around the world.
 
 Build hackEDU with us. Here are two ways to get started:
 
-- [Create an issue](https://github.com/hackedu/hack-camp/issues)
-- [Join us on IRC](https://webchat.freenode.net/?channels=hackedu)
+- [Create an issue](https://github.com/hackedu/hackedu/issues)
+- [Join us on IRC](https://kiwiirc.com/client/irc.freenode.net/?nick=Hacker%7C?#hackedu)
 
 ## Contributing
 
-If you would like to contribute please begin by consulting the
-[contribution guidelines](CONTRIBUTING.md).
+If you'd like to contribute (which we would love for you to do), please begin by
+checking out [`CONTRIBUTING.md`](CONTRIBUTING.md).
