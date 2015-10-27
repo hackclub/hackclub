@@ -37,10 +37,10 @@ are looking for specific things.
 | 9/30/15  | W2D2       | [No lab, taught basic Javascript](2015-09-30_meet_5)                 |
 | 10/05/15 | W3D1       | [Project Week and Yes-And/Brainstorming Activity](2015-10-05_meet_6) |
 | 10/14/15 | W3D2       | [Project Week (Cancelled PSAT)](2015-10-14_meet_7_cancelled)         |
-| 10/19/15 | W3D1       | [Project Week](2015_10-19_meet_7)                                    |
-| 10/21/15 | W3D2       | [Project Week](2015_10-21_meet_8)                                    |
+| 10/19/15 | W3D1       | [Project Week](2015_10_19_meet_7)                                    |
+| 10/21/15 | W3D2       | [Project Week](2015_10_21_meet_8)                                    |
 | 10/23/15 | Hackathon  | [Hackathon](2015_10_23-25_HackingEDU)                                |
-| 10/26/15 | W4D1       | [Project Week](2015_10-26_meet_9)                                    |
+| 10/26/15 | W4D1       | [Project Week](2015_10_26_meet_9)                                    |
 
 ## Basic templates:
 
