@@ -10,7 +10,7 @@ their own direction.
    through the meeting I will bring nfc tags, stickers, and digital ocean promo
    codes for give away.
 
-## Anticipated problems
+## Anticipated Problems
 
 - not clear enought planning.
 - low number of members showing up as, there was no meeting last week.
