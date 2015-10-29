@@ -6,7 +6,7 @@
 2. Get everyone started on
    [dodge](https://github.com/hackedu/hackedu/tree/master/workshops/dodge)
 3. Hack Cheer.
-4. Have everyone fill out the [feedback](feedback.hackclubslhs.com).
+4. Have everyone fill out the [feedback](http://feedback.hackclubslhs.com).
 
 ## Anticipated Problems
 

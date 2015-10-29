@@ -5,8 +5,8 @@
    url redirects.
 3. I started people off by having them do
    [Dodge](https://github.com/hackedu/hackedu/tree/master/workshops/dodge).
-4. Some members are playing [Agario](agar.io), possible that they are getting
-   borded, maybe we should give them challenges.
+    4. Some members are playing [Agario](https://agar.io), possible that they
+   are getting borded, maybe we should give them challenges.
 5. The feedback was a disaster, we tried to get the url redirect fixed in time
    for feedback, however while we are scrambling to get that fixed, we didn't
    realize that we are redireting to the wrong URL.
