@@ -64,7 +64,9 @@ Now that you have your files set up lets start building. Inside your
 *index.html* file in the body element create a button with the attribute *id*
 set to *alertButton*.
 
-``` <button id="alertButton">Click Me!</button> ```
+```html
+<button id="alertButton">Click Me!</button>
+```
 
 To preview you file right click your *index.html* file in your workspace sidebar
 to the left and hit *Preview*. This will open up a new tab with the rendered
@@ -77,40 +79,65 @@ version of your html file.
 Next lets add some style to our button. In your *style.css* file add the
 following code
 
-``` #alertButton { background: none; border-style: none; border: 2px solid
-black; padding: 10px; color: black; }
+```css
+#alertButton {
+  background: none;
+  border-style: none;
+  border: 2px solid black;
+  padding: 10px;
+  color: black;
+}
 
-#alertButton:hover { background-color: black; color: white; } ```
+#alertButton:hover {
+  background-color: black;
+  color: white;
+}
+```
 
 ### New Concept CSS selectors
 
 In CSS, selectors are patterns used to select the element(s) you want to style.
 If we were to do
 
-``` button { //css goes here } ``` Our css would still work, however if we had
-multiple buttons in our html, all those buttons would be styled the same because
-every button element in our html would have the same css applied to it. If we
-want different styles for each button, we can give each button a unique id
-attribute in html. Then when we want to reference that id attribute in our css
-we can do
+```css
+button {
+  // css goes here
+}
+```
 
-``` #idName { //css goes here } ```
+Our css would still work, however if we had multiple buttons in our html, all
+those buttons would be styled the same because every button element in our html
+would have the same css applied to it. If we want different styles for each
+button, we can give each button a unique id attribute in html. Then when we want
+to reference that id attribute in our css we can do
+
+```css
+#idName {
+  // css goes here
+}
+```
 
 Another css selector that we encountered is the hover selector seen here.
 
-``` #alertButton:hover { background-color: black; color: white; } ```
+```css
+#alertButton:hover {
+  background-color: black;
+  color: white;
+}
+```
 
 This basically says that when a mouse hovers over the html element with the id
 *alertButton*, apply this css to that element. You read more about css selectors
 [here](http://www.w3schools.com/cssref/css_selectors.asp).
-
 
 If you look at your preview, you will notice none of the styles were applied to
 your button. This is because you have to tell your html file where to get the
 css from. To do this we will add this code inside the *head* element of your
 html.
 
-``` <link rel="stylesheet" href="style.css" type="text/css" /> ```
+```html
+<link rel="stylesheet" href="style.css" type="text/css" />
+```
 
 Basically what this does is link your html to your css. The value of your *href*
 attribute should be the location of your css file. Since our css file is in the
@@ -122,9 +149,13 @@ of our css file.
 Next lets add some Javascript. Inside your *index.js* file add the following
 code.
 
-``` var button = document.getElementById("alertButton");
+```js
+var button = document.getElementById("alertButton");
 
-button.onclick = function () { alert("Button was pressed"); } ```
+button.onclick = function () {
+  alert("Button was pressed");
+}
+```
 
 > #### Understanding the code
 
@@ -138,7 +169,9 @@ work at first. We need to tell our html file where to get the javascript from.
 To do this, we will add the following code to the end of the *body* element
 inside our html.
 
-``` <script type="text/javascript" src="index.js"></script> ```
+```html
+<script type="text/javascript" src="index.js"></script>
+```
 
 This links our html and our javascript together. The *src* attribute should be
 set to the location of our javascript file. Since our javascript file is in the
