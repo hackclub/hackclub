@@ -67,7 +67,8 @@ velit accumsan non.
 
 ## Lists
 
-- **List items** should be indented two spaces
+- **List items** should be indented two spaces (including when working with
+  ordered lists)
 - Lists must be preceded and followed by a blank line
 - Unordered list items should use `-` instead of `*` or `+`.
 
@@ -76,6 +77,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 - List item 1
 - List item 2
+  - Child list item
+
+1. Numbered list item 1
+2. Numbered list item 2
   - Child list item
 ```
 
