@@ -81,3 +81,19 @@ and guided while Part II is exploratory.
 Learn to build Frogger.
 
 [![](img/facilitation_guidelines.png)](workshop_details.md#frogger)
+
+## Dodge
+
+![](img/dodge.gif)
+
+Learn to build a bullet dodging game.
+
+[![](img/open.png)](dodge/README.md)
+
+## Soccer
+
+![](img/soccer.gif)
+
+Learn to build a soccer game and play with your friends.
+
+[![](img/open.png)](soccer/README.md)
