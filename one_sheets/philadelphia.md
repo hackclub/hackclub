@@ -35,11 +35,11 @@ through integration with the broader hacking community.
   [[source]](http://www.usatoday.com/story/tech/2014/12/29/usa-today-analysis-finds-minorities-underrepresented-in-non-tech-tech-jobs/20868353/))
 
 ##### Philadelphia
+
 We currently have 2 clubs in Philadelphia area are starting a third one in the
 coming weeks. One of our club organizers, Victor Lourng, also is heavily
 involved in the Philadelphia coding scene and organizes CodeDay Philly,
 Hackadelphia, Pilot Philly and the HS Hackers meetups.
-
 
 ##### What our hackers have been up to
 
