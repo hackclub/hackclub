@@ -28,6 +28,7 @@
   - This guide needs to have examples of what is good vs what is not good
 
 ## Tools
+
 - If you want to make gifs, we suggest using
   [LICEcap](http://www.cockos.com/licecap/). It may look dated, but it does an
   awesome job.

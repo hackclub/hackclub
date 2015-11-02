@@ -51,6 +51,7 @@ Open these links in new tabs:
 - [Workshop](/portfolio/README.md)
 
 ##### Communicate the following to the hackers in 1-2 minutes max:_
+
 - Show the tab with the live demo and tell the hackers that that's what they'll
   be making
 - Show your modified version of the live demo
