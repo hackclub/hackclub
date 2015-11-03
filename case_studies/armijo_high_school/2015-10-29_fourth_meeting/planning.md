@@ -1,5 +1,3 @@
-
-
 ## Objective
 
 Newcomers will sign up for Cloud Nine at c9.io. Members who already got up to
