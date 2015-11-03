@@ -14,7 +14,7 @@ following code (new code highlighted in gray):
 
 > ![](img/t10_js_bin.gif)
 
-[![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/51/edit?js,output)
+[![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/80/edit?js,output)
 
 The highlighted gray lines above (reproduced below) are responsible for making
 "Game Over" appear on the screen when the player touches the enemy:
@@ -69,6 +69,8 @@ player.remove();
 ```
 
 This will remove the player and end the seemingly endless cycle!
+
+[See the final product](http://output.jsbin.com/dozoki/70).
 
 <!-- I did my best here. I want this to be shippable ASAP. -->
 

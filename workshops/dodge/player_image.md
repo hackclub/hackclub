@@ -1,3 +1,17 @@
+## _Important Note_
+
+1. Try opening <a href="http://i.imgur.com/mOkHDqN.png" target="_blank">
+   this image</a>
+2. If the above image loads, you're good. Click [here](#player-image)
+   to continue to the next section
+3. If the above image does **_not_** load, for the rest of this tutorial,
+   anywhere it tells you to type `http://i.imgur.com/mOkHDqN.png`
+   type this url instead:
+
+   https://cdn.rawgit.com/hackedu/hackedu/d44ce82f4bff5d9a083b5ee18d0aae6f4acf2bed/workshops/dodge/img/cube.png
+
+-------------------------------------------------------------------------------
+
 # Player Image
 
 We can add an image to our player sprite with the following (new code
@@ -5,7 +19,7 @@ highlighted in gray):
 
 > ![](img/t5_add_image_js_bin.png)
 
-[![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/39/edit?js,output)
+[![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/75/edit?js,output)
 
 The highlighted gray lines above (reproduced below) are responsible for the new
 image:
@@ -14,6 +28,7 @@ image:
 var playerImage = loadImage("http://i.imgur.com/mOkHDqN.png");
 player.addImage(playerImage);
 ```
+
 
 ## Tinkering with The Image Code
 

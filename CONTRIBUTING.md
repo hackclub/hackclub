@@ -228,8 +228,9 @@ Below is the recommended contribution flow for submitting
 
 6. Open up the file you want to modify for the case study and make any
    additions/modifications. In this case, I'm going to open
-   `case_studies/lowell_high_school/planning.md` and add some example planning
-   to it.
+   `case_studies/lowell_high_school/2015-09-19_first_meeting/planning.md` and
+   add some example planning to it (create a folder with a corresponding format
+   if there isn't one already).
 
     ![Adding some planning](https://i.imgur.com/HbM24cp.gif)
 

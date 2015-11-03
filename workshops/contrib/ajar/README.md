@@ -906,6 +906,7 @@ Save your work and preview your results!
 Our cell has velocity!
 
 ## Part 5
+
 In this lesson you will add food at hardcoded positions. You will also learn
 about javascript arrays.
 
@@ -918,6 +919,7 @@ This is how it's going to work:
    function.
 
 ### What are arrays?
+
 The Array object is used to store multiple values in a single variable.
 
 You can store strings:
