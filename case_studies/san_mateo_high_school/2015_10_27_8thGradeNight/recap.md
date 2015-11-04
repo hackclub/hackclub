@@ -9,6 +9,8 @@
 - Drone worked perfectly and we had a lot of people excited for it!
 - We had a signup sheet (not sure how we are going to use it).
 
+![Poster](http://i.imgur.com/4KzEIv4.jpg)
+
 ## Problems we faced
 
 - People not understanding too much how programming is growing so quickly.
