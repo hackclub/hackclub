@@ -13,5 +13,5 @@ Leaders community: [https://www.facebook.com/groups/1501083703514499]
 Introduce yourself by sharing one challenge you know you'll face with your
 club this year.
 
-Looking forward to watching the coding community grow at your school
+Looking forward to watching the coding community grow at your school,   
 Dave
