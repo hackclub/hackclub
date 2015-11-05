@@ -24,6 +24,18 @@ We are a community driven effort that is nearly 100% open source. This means
 that anyone can use our materials and/or host a club. We've created this
 repository to hold all the knowledge from hackEDU organizers around the world.
 
+## Getting Started
+
+Want to start a Hack Club at your school? Apply over at
+https://hackedu.us/apply and [join our Slack](https://slack.hackedu.us) in the
+meantime. Regardless of whether you're part of hackEDU, we encourage you to
+check out and contribute to this repository.
+
+Important links:
+
+- [Workshops](workshops/) :: Workshops for use in clubs
+- https://slack.hackedu.us :: Link to join our Slack community
+
 ## Questions? Comments? Concerns?
 
 Build hackEDU with us. Here are two ways to get started:
