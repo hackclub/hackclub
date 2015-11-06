@@ -4,4 +4,4 @@ machine:
 
 test:
   override:
-    - docker run -v $(pwd):/app hackedu/markcop:latest
+    - docker run -v $(pwd):/app hackedu/markcop:latest -l error
