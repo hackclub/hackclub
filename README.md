@@ -47,3 +47,7 @@ Build hackEDU with us. Here are two ways to get started:
 
 If you'd like to contribute (which we would love for you to do), please begin by
 checking out [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+## License
+
+For this project's license, please see [`LICENSE`](LICENSE).
