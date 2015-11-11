@@ -69,6 +69,7 @@ velit accumsan non.
 
 - **List items** should be indented two spaces (including when working with
   ordered lists)
+- **List items** should begin with a capital letter
 - Lists must be preceded and followed by a blank line
 - Unordered list items should use `-` instead of `*` or `+`.
 
