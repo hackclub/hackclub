@@ -1,0 +1,20 @@
+hackEDU (c)
+
+Code in this repository (hackEDU), including embedded code in other content, is
+licensed under the MIT license. All other content is licensed under a Creative
+Commons Attribution-ShareAlike 4.0 International License.
+
+You have received a copy of the MIT and Creative Commons licenses along with
+this work in the MIT_LICENSE and CC_BY-SA_LICENSE files, respectively. An online
+version of the Creative Commons license is available at
+<http://creativecommons.org/licenses/by-sa/3.0/>.
+
+--------------------------------------------------------------------------------
+
+In addition to the above license details, hackEDU includes third party code that
+has been made available under various licenses.
+
+twilio-node:
+
+Project site - https://twilio.github.io/twilio-node/
+License - MIT License, https://github.com/twilio/twilio-node/blob/master/LICENSE
