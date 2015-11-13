@@ -17,11 +17,9 @@
 
 -------------------------------------------------------------------------------
 
-[hackEDU](https://hackedu.us) is the movement of student-led coding clubs. Start
-a club and be a part of the global hacker movement.
-
-Want to start a Hack Club at your school? Apply over at https://hackedu.us/apply
-and [join our Slack](https://slack.hackedu.us) in the meantime. Regardless of
+[hackEDU](https://hackedu.us) is the movement of student-led coding clubs. Want
+to start a Hack Club at your school? Apply over at https://hackedu.us/apply and
+[join our Slack](https://slack.hackedu.us) in the meantime. Regardless of
 whether you're part of hackEDU, we encourage you to check out and contribute to
 this repository.
 
