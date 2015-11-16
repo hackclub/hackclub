@@ -41,8 +41,8 @@ My the end of this part you'll have something that looks like this:
 
 ![End of Part 1](img/part1-end.jpg)
 
-Check out the demo [here](http://jsbin.com/jizoyo/edit?output)
-([JS Fiddle](http://jsfiddle.net/4j6od7hv/)).
+Check out the demo <a href="http://jsbin.com/jizoyo/edit?output"
+target="_blank">here</a> ([JS Fiddle](http://jsfiddle.net/4j6od7hv/)).
 
 ### Creating the files
 

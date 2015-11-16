@@ -5,12 +5,14 @@ We'll be using JS Bin for this tutorial. Feel free to use your own editor.
 ![](img/checkmark.png) If you are using JS Bin, make sure you have created an
 account first.
 
-![](img/checkmark.png) Then open [this pre-made JS Bin template]
-(http://jsbin.com/kecodi/3/edit?js,output).
+![](img/checkmark.png) Then open <a
+href="http://jsbin.com/kecodi/3/edit?js,output" target="_blank">this pre-made JS
+Bin template</a>.
 
 > ![](img/t1_js_bin.png)
 
-[![](img/open_in_js_bin.png)](http://jsbin.com/kecodi/3/edit?js,output)
+<a href="http://jsbin.com/kecodi/3/edit?js,output"
+target="_blank">![](img/open_in_js_bin.png)</a>
 
 You will be building off the above template throughout the tutorial. We'll call
 the JS Bin you're working and saving in the "_**working bin**_".

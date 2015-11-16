@@ -5,7 +5,8 @@ with the following code (new lines are highlighted in gray):
 
 > ![](img/t8_enemy_go_back_to_top.gif)
 
-[![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/78/edit?js,output)
+<a href="http://jsbin.com/qiyuno/78/edit?js,output"
+target="_blank">![](img/open_in_js_bin.png)</a>
 
 The highlighted gray lines above (reproduced below) are responsible for making
 the enemy sprite going back to the top of the screen:

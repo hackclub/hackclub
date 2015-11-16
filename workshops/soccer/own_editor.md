@@ -1,8 +1,8 @@
 # A Note For Those Who Want To Use Your Own Editor
 
-We'll be using [JS Bin](https://jsbin.com) to write our code in this tutorial.
-If you prefer to use your own editor, please do, but know the directions are
-made for JS Bin.
+We'll be using <a href="https://jsbin.com" target="_blank">JS Bin</a> to write
+our code in this tutorial. If you prefer to use your own editor, please do, but
+know the directions are made for JS Bin.
 
 **Including the p5.js and p5.play.js libraries**
 
