@@ -8,7 +8,7 @@
 - Pair everyone into partners so that they have a buddy to ask questions.
 - Send them the link to the workshop over chat, don't write it on the board or
   try to verbally communicate it.
-- Repeatedly circle the room to answer questions. Opt for answering multiple 
+- Repeatedly circle the room to answer questions. Opt for answering multiple
   questions instead of spending a lot of time answering one.
 
 --------------------------------------------------------------------------------
@@ -170,7 +170,7 @@ the credentials for all of the examples (via local storage).
 ##### Before the presentation
 
 - Open the
-  ["send text message to Twilio and get a call back with a song" JS Bin](http://jsbin.com/fawuda/112/edit?js,console). 
+  ["send text message to Twilio and get a call back with a song" JS Bin](http://jsbin.com/fawuda/112/edit?js,console).
   Click the "Run" button and leave the tab open
 - Write down the phone number that appears on the console in large letters on
   the blackboard

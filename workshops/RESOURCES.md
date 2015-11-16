@@ -1,4 +1,4 @@
-# Resources 
+# Resources
 
 ## [HTML + CSS Code Guide by @mdo](http://codeguide.co/)
 
