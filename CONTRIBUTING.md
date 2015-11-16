@@ -191,7 +191,7 @@ First make sure that you've read the
     - _For example:_
       - Would you recommend doing or not doing what you did activity?
       - If you would recommend it, what might they watch out for?
-      - etc.
+      - Etc.
 4. Follow steps 6 - 10 in the
    ["case study contribution walkthrough" section below](#case-study-contribution-walkthrough)
 

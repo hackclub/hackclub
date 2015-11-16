@@ -46,11 +46,11 @@ your own phone number you'll have to manually set the sms callback URL yourself
 
 To build the the URL for the phone number `+1-484-681-2377`,
 
-- remove all of the dashes and plusses
+- Remove all of the dashes and plusses
   - `14846812377`
-- remove the 1
+- Remove the 1
   - `4846812377`
-- take those digits and append them to "https://dweet.io/dweet/for/"
+- Take those digits and append them to "https://dweet.io/dweet/for/"
   - `https://dweet.io/dweet/for/4846812377`
 
 For the phone number `+1-415-238-0812` the url would be

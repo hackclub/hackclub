@@ -22,13 +22,13 @@ will end up with (_the new code is highlighted in gray_):
 - [**Walk me through this code step-by-step.**]
   (#walk-through-of-the-code-step-by-step)
     - Recommended for those who
-      - are beginners
-      - who want an in depth understanding of the code
+      - Are beginners
+      - Who want an in depth understanding of the code
 - [**Give me a brief overview of this code.**](#brief-overview-of-the-code)
     - Recommended for those who
-      - have more experience
-      - want to cover more ground but have a less in depth understanding
-      - want to recap what they did in the step-by-step section
+      - Have more experience
+      - Want to cover more ground but have a less in depth understanding
+      - Want to recap what they did in the step-by-step section
 
 # Walk Through of the Code Step-By-Step
 

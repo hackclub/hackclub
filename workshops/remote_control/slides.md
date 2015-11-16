@@ -26,9 +26,9 @@ Twilio.callAndPlay("610-761-0083", "http://web.archive.org/web/20150721135511/ht
 
 **Actions**
 
-- send text messages
-- call phone
-- play music
+- Send text messages
+- Call phone
+- Play music
 
 **Triggers**
 

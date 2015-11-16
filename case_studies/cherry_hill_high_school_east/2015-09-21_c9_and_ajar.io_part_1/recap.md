@@ -16,14 +16,14 @@ The club officers met during the weekend to talk about the club and create
 content. We made:
 
 - [Google Slide presentation](https://drive.google.com/open?id=12EV5p5hZW1vRDzhjUGbSsconuaTV2mTil9-1FlEoPn8)
-  - feel free to make a copy and customize!
+  - Feel free to make a copy and customize!
 
 - [Intro to Cloud9 workshop](https://github.com/CHE-CS/hackedu/tree/master/playbook/workshops/cloud9)
-  - also introduces how to use import CSS and Javascript files into HTML
+  - Also introduces how to use import CSS and Javascript files into HTML
   (`<link>` and `<script>` elements).
 
 - [Ajar.io Part 1 workshop](https://github.com/CHE-CS/hackedu/tree/master/playbook/workshops/ajar)
-  - huge success. Introduces `<canvas>` element and finishes with having a dot
+  - Huge success. Introduces `<canvas>` element and finishes with having a dot
   drawn on screen.
 
 -------------------------------------------------------------------------------
@@ -66,7 +66,7 @@ agar.io (instead of following the lesson). Ajar drew a lot of interest – in
 fact for much of the workshop *everyone in the room was on task*. Success!
 
 > "The idea of having us make agar.io is genius and I'm exited to go further."
-> - a delighted participant
+> - A delighted participant
 
 > "this club is SOOOOOOOOOOOOOOOOOOOOOOOOO AMAZING." – an enthralled member
 

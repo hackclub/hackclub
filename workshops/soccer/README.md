@@ -105,7 +105,7 @@ you built in [Part 1](#part-1-single-player-soccer) in any order you please!
 
 ## Listing of Computer Science Concepts
 
-- functions
+- Functions
   - `createSprite`, step 2
-- variable
+- Variable
   - `player`, step 2

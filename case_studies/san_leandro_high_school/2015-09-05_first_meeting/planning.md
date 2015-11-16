@@ -16,6 +16,6 @@
 
 ## Anticipated problems
 
-- lack of directors to peer ratio, as 3/5 of our directors are doing sports the
+- Lack of directors to peer ratio, as 3/5 of our directors are doing sports the
   beginning 30min
-- technical difficulty with the projector system
+- Technical difficulty with the projector system

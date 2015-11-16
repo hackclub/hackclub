@@ -425,8 +425,8 @@ We're here right now:
 
 Now we have to:
 
-- center everything
-- change the font
+- Center everything
+- Change the font
 
 ## Adding the body tag
 
@@ -451,9 +451,9 @@ We want to center everything in the entire page.
 
 To go over the vocabulary of what we just did:
 
-- we added the new tag, `body`
-- this selects all the `body` elements on the page (there's only 1)
-- and then we select the body tag and set one of it's properties, `text-align`,
+- We added the new tag, `body`
+- This selects all the `body` elements on the page (there's only 1)
+- And then we select the body tag and set one of it's properties, `text-align`,
   to `center`. This centers everything inside of the body tag
 
 This is one way to center everything on the page.
@@ -483,7 +483,7 @@ Here's what it looks like after the change:
 
 To go over the vocabulary of what we just did:
 
-- we the `font-family` attribute to the `body` selector and set the value to
+- We the `font-family` attribute to the `body` selector and set the value to
   `Arial`.
 
 This changed the font for the text in the `h1` and `p` tag because they are
@@ -506,8 +506,8 @@ Let's open up a new tab and open JS Bin.
 
 For now, I wont explain what all this code means, you can
 
-- google for what it means
-- or ask someone else that might know what it means
+- Google for what it means
+- Or ask someone else that might know what it means
 
 Let's
 
