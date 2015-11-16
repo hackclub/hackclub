@@ -104,10 +104,10 @@ Note: There's a fair bit of setup for this workshop.
 
 ##### Obtaining A Twilio Account & Credentials `[20 minutes]`
 
-We want to sign up for Twilio and obtain a Twilio Account SID. Follow [the
-directions here](twilio/signup.md) to do this. The workshop is set up so that the
-facilitator (that's you) obtains the credentials and gives it to everyone doing
-the workshop to save time.
+We want to sign up for Twilio and obtain a Twilio Account SID. Follow
+[the directions here](lib/twilio-basic/signup.md) to do this. The workshop is
+set up so that the facilitator (that's you) obtains the credentials and gives it
+to everyone doing the workshop to save time.
 
 Following the above directions will give you $100 worth of credit. If any
 club members need more, they can follow the same instructions to get their own
