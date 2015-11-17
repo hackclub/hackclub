@@ -30,7 +30,7 @@ if (player.overlap(enemy)) {
 We can interpret the code as follows:
 
 > **`if`** the **`player`** **`overlap`**s the **`enemy`**  
-  then **`alert`** the message **`"Game Over"`**
+> then **`alert`** the message **`"Game Over"`**
 
 ## Adding the Code
 
