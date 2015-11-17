@@ -3,7 +3,7 @@
 **_Note that this is only a preliminary draft of this document:_**
 
 - Go with something working over deriving something from scratch
-  - top down (i.e. ionic creator) vs to bottom up (learn the fundamentals of
+  - Top down (i.e. ionic creator) vs to bottom up (learn the fundamentals of
     javascript or HTML)
 - Accessible to beginners to the topic and & people who are newer to the topic
   - Show how to do the thing as quickly as possible
@@ -14,7 +14,7 @@
 - Modular over linear
   - Reduce the amount of linear time
   - Explicitly communicate and design things so that people can jump around
-  - is shippable in ~30ish minutes (all subsequent chunks must be also shippable
+  - Is shippable in ~30ish minutes (all subsequent chunks must be also shippable
     in 30 minutes or less as well)
 - Explain only after showing
 - Giving them something working over constructing something from scratch

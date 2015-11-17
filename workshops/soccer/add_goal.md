@@ -10,8 +10,8 @@
 When the ball touches the goal, we want the ball to disappear. There are two
 things you will learn to do this:
 
-- how to make a sprite disappear
-- how to detect when one sprite touches another
+- How to make a sprite disappear
+- How to detect when one sprite touches another
 
 Here is the resulting code (_the new code is highlighted in gray_):
 
@@ -26,13 +26,13 @@ Here is the resulting code (_the new code is highlighted in gray_):
 - [**Walk me through this code step-by-step.**]
   (#walk-through-of-the-code-step-by-step)
     - Recommended for those who
-      - are beginners
-      - who want an in depth understanding of the code
+      - Are beginners
+      - Who want an in depth understanding of the code
 - [**Give me a brief overview of this code.**](#brief-overview-of-the-code)
     - Recommended for those who
-      - have more experience
-      - want to cover more ground but have a less in depth understanding
-      - want to recap what they did in the step-by-step section
+      - Have more experience
+      - Want to cover more ground but have a less in depth understanding
+      - Want to recap what they did in the step-by-step section
 
 # Walk Through of the Code Step-By-Step
 
@@ -127,7 +127,7 @@ if (ball.overlap(goal)) {
 ```
 
 - You can read the above as **`if`** the **`ball`** **`overlaps`** the **`goal`**
-  - then **`remove`** the **`ball`**
+  - Then **`remove`** the **`ball`**
 
 We can add this code as follows:
 

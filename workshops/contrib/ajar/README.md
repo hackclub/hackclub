@@ -12,12 +12,12 @@ ajar.io.
 The workshop will be divided into several parts (check indicates workshop has
 been written):
 
-- [x] [__Part 1__](#part-1) - display the user's cell on screen.
-- [x] [__Part 2__](#part-2) - convert the code from part 1 to use functions.
-- [x] [__Part 3__](#part-3) - make the user's cell follow the mouse cursor.
-- [x] [__Part 4__](#part-4) - add velocity to the cell's movements.
-- [x] [__Part 5__](#part-5) - generate hardcoded food.
-- [ ] __Part 6__ - randomly generate food.
+- [x] [__Part 1__](#part-1) - Display the user's cell on screen.
+- [x] [__Part 2__](#part-2) - Convert the code from part 1 to use functions.
+- [x] [__Part 3__](#part-3) - Make the user's cell follow the mouse cursor.
+- [x] [__Part 4__](#part-4) - Add velocity to the cell's movements.
+- [x] [__Part 5__](#part-5) - Generate hardcoded food.
+- [ ] __Part 6__ - Randomly generate food.
 
 __More coming soon...__
 
@@ -81,16 +81,16 @@ Next, add the below `<canvas>` element inside of the `<body>` element.
 
 > #### Understanding the code
 
-> `canvas` - the canvas element allows you to draw shapes and other visual
+> `canvas` - The canvas element allows you to draw shapes and other visual
 > elements on screen. Feel free to
 > [read more about canvas](http://www.w3schools.com/html/html5_canvas.asp).
 
-> `id` - to review, this *attribute*, which can be applied to any HTML element,
+> `id` - To review, this *attribute*, which can be applied to any HTML element,
 > allows you to use that element in your javascript.
 
-> `width` - specifies the width of the `<canvas>`, this time in pixels.
+> `width` - Specifies the width of the `<canvas>`, this time in pixels.
 
->  `height` - specifies the height of the `<canvas>`, this time in pixels.
+>  `height` - Specifies the height of the `<canvas>`, this time in pixels.
 
 -------------------------------------------------------------------------------
 
@@ -122,11 +122,11 @@ var canvas = document.getElementById("canvas");
 
 > #### Understanding the code
 
-> `var` - creates a variable named `canvas`. Variables are containers for
+> `var` - Creates a variable named `canvas`. Variables are containers for
 > storing data values. In this case `canvas` is used to reference the `<canvas>`
 > element from your HTML.
 
-> `document.getElementById("canvas")` - this function gets an element from your
+> `document.getElementById("canvas")` - This function gets an element from your
 > HTML that has the id you provide inside the quotes, in this case "canvas".
 > Feel free to
 > [read more about functions](http://www.w3schools.com/js/js_functions.asp).
@@ -171,11 +171,11 @@ You should have something that looks like this.
 <a name="drawingArc"></a>
 > #### Understanding the code
 
-> `context.beginPath()` - any shape on the canvas is considered a path. You need
+> `context.beginPath()` - Any shape on the canvas is considered a path. You need
 > to call this function before begining to draw a new shape. In this case we are
 > starting to draw a circle.
 
-> `context.arc(10, 10, 10, 0, 2*3.14159)` - this function creates an arc. An arc
+> `context.arc(10, 10, 10, 0, 2*3.14159)` - This function creates an arc. An arc
 > that ends where it starts forms a circle. The function takes a lot of
 > *arguments* (the items separated by commas) so let's look at each one. The
 > order of the arguments goes as follows: `x, y, radius, startAngle, endAngle`.
@@ -273,7 +273,7 @@ A function looks like this:
 
 ```js
 function name() {
-    // code to be executed goes here <-- that is a comment
+    // code to be executed goes here <-- That is a comment
 }
 ```
 
@@ -557,10 +557,10 @@ We draw a rectangle with the `rect` function of `context`.
 
 The `rect` function accepts 4 parameters:
 
-> `x` - the x-coordinate of the upper-left corner of the rectangle
-> `y` - the y-coordinate of the upper-left corner of the rectangle
-> `width` - the width of the rectangle, in pixels
-> `height` - the height of the rectangle, in pixels
+> `x` - The x-coordinate of the upper-left corner of the rectangle
+> `y` - The y-coordinate of the upper-left corner of the rectangle
+> `width` - The width of the rectangle, in pixels
+> `height` - The height of the rectangle, in pixels
 
 Since we know the canvas is 500px by 500px, making a rectangle that covers the
 whole thing looks like this:
@@ -622,7 +622,7 @@ means that the cell won't always be where your cursor is, instead it will
 ### Let's recap
 
 In Part 3 you learned about functions. Remember that functions are
-**self-contained blocks of code**. They can recieve input - in the form of
+**self-contained blocks of code**. They can recieve input - In the form of
 **parameters**.
 
 This is how we wrapped the code used to draw the user's cell into a function
@@ -664,8 +664,8 @@ The goal of this function is to redraw the cell closer to where the mouse is.
 
 To redraw the cell we have to:
 
-- invoke the `clearCanvas` function
-- invoke the `drawUserCell` function
+- Invoke the `clearCanvas` function
+- Invoke the `drawUserCell` function
 
 Addtionally we will invoke a function called `calculatePosition` before
 `drawUserCell`. This function will calculate the new position of the cell after
@@ -685,10 +685,10 @@ function drawScreen() {
 > We create a function named `drawScreen`. This function has no parameters (the
 > parentheses are empty).
 >
-> `setTimeout(drawScreen, 1000/60)` - this is the magic sauce. The `setTimeout`
+> `setTimeout(drawScreen, 1000/60)` - This is the magic sauce. The `setTimeout`
 > function is what let's our `drawScreen` function repeat 60 times a second.
-> It works by taking a function - the first parameter - and running it after a
-> specified delay, in milliseconds - the second parameter.
+> It works by taking a function - The first parameter - And running it after a
+> specified delay, in milliseconds - The second parameter.
 >
 > It's often useful to run through your code as if you're the computer. So
 > let's do that. Pretend like the `drawScreen` function just got invoked.
@@ -832,14 +832,14 @@ function calculatePosition() {
     if (mouseX > x) {
         x = x + velocity;  // mouse is to the right of the ball
     } else {
-        x = x - velocity;  // mouse is to the left of the ball
+        x = x - Velocity;  // mouse is to the left of the ball
     }
 
     // For the y-axis
     if (mouseY > y) {
         y = y + velocity;  // mouse is under ball
     } else {
-        y = y - velocity;  // mouse is above ball
+        y = y - Velocity;  // mouse is above ball
     }
 }
 ```
@@ -848,10 +848,10 @@ function calculatePosition() {
 >
 > Although this code may look intimidating, it's not hard at all — promise.
 >
-> `function calculatePosition()` - we declare a function called
+> `function calculatePosition()` - We declare a function called
   `calculatePosition`.
 >
-> `if (mouseX > x)` - the code in the `if` statement will run if the x value of
+> `if (mouseX > x)` - The code in the `if` statement will run if the x value of
   the mouse (`mouseX`) is greater than (`>`) the x value of the circle (`x`).
   Your goal is to get `x` closer to `mouseX` so when `mouseX` is larger you must
   increase `x`. And that's exactly what you do:
@@ -859,12 +859,12 @@ function calculatePosition() {
   x = x + velocity;
   ```
 >
-> `else` - the code in the `else` statement will run if the condition is false.
+> `else` - The code in the `else` statement will run if the condition is false.
   in this case the condition is false if `mouseX` is less than (`<`) `x`. When
   `mouseX` is less than `x` we must reduce `x` to get it closer to `mouseX`.
   And that's exactly what you do:
   ```js
-  x = x - velocity;
+  x = x - Velocity;
   ```
 >
 > The same explanations apply to the y-axis code.
@@ -1056,14 +1056,14 @@ function calculatePosition() {
     if (mouseX > x) {
         x = x + velocity;  // mouse is to the right of the ball
     } else {
-        x = x - velocity;  // mouse is to the left of the ball
+        x = x - Velocity;  // mouse is to the left of the ball
     }
 
     // For the y-axis
     if (mouseY > y) {
         y = y + velocity;  // mouse is under ball
     } else {
-        y = y - velocity;  // mouse is above ball
+        y = y - Velocity;  // mouse is above ball
     }
 }
 

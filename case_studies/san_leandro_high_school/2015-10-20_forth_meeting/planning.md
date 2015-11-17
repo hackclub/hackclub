@@ -12,5 +12,5 @@ their own direction.
 
 ## Anticipated Problems
 
-- not clear enought planning.
-- low number of members showing up as, there was no meeting last week.
+- Not clear enought planning.
+- Low number of members showing up as, there was no meeting last week.

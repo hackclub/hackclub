@@ -153,9 +153,9 @@ the next section!
 
 Functions can have the following:
 
-- inputs
-- side effects
-- outputs
+- Inputs
+- Side effects
+- Outputs
 
 #### Lemonade Analogy
 
@@ -165,8 +165,8 @@ Consider the lemonade making machine as a function:
 
 In the above drawing, you can see that
 
-- the inputs are a glass, lemon, and mint
-- the output is lemonade
+- The inputs are a glass, lemon, and mint
+- The output is lemonade
 
 But what are the side effects?
 
