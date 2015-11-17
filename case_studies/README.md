@@ -1,5 +1,11 @@
 # Case Studies
 
+_**Deprecated:** On 11.17.15 we decided to deprecate case studies. While they'll
+no longer be required for Labs clubs each week, anyone interested is welcome to
+still submit them :-)._
+
+-------------------------------------------------------------------------------
+
 This directory contains case studies of events from the [Labs](../meta/labs)
 clubs and any others that choose to participate.
 
