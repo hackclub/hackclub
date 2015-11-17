@@ -106,10 +106,10 @@ may use your own card as well (your card will not be charged if you turn off
 automatic recharging).
 
 | Field              | Value                               |
-| -------------------| ----------------------------------- |
-| Credit Card Number | `374327384095936`                   |
-| Expires            | `10/2021`                           |
-| CVV                | `9263`                              |
+|--------------------|-------------------------------------|
+| Credit Card Number | `4847356897256173`                  |
+| Expires            | `09/2021`                           |
+| CVV                | `917`                               |
 | Cardholder Name    | `Jonathan Leung`                    |
 | Street Address     | `200 Haverford Road, Wynnewood, PA` |
 | Zip Code           | `19096`                             |
@@ -131,13 +131,9 @@ Click "I have a promo code."
 To get the actual promo code:
 
 - Ask your club leader for the Twilio promo code
-- If you are the club leader, get the promo code from
-  [`secrets.md`](https://github.com/hackclub/private/blob/master/secrets.md#twilio-promotion-code),
-  a file inside our [`private`](https://github.com/hackclub/private) GitHub
-  repository.
-- If you don't have access to that repository, please email Jonathan at
-  jonathanleung1337@gmail.com and ask for the Twilio promo code and he'll
-  quickly respond.
+- If you are the club leader, send an email to the email address
+  `jonathanleung1337@gmail.com` with your full name and school and ask for the
+  Twilio promo code. They will respond to you quickly.
 
 After obtaining the promo code:
 
