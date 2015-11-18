@@ -30,15 +30,16 @@ workshop. Make sure you do that workshop first.
 
     - [This HTML file](https://gist.githubusercontent.com/jonleung/11ecd13a9d957003416b/raw/625081d81cc9c941007ddfd54c9ffdeec0782d62/index.html)
     - [This JavaScript file](https://gist.githubusercontent.com/jonleung/11ecd13a9d957003416b/raw/625081d81cc9c941007ddfd54c9ffdeec0782d62/main.js)
-    - and [This CSS file](https://gist.githubusercontent.com/jonleung/11ecd13a9d957003416b/raw/625081d81cc9c941007ddfd54c9ffdeec0782d62/style.css)
+    - [This CSS file](https://gist.githubusercontent.com/jonleung/11ecd13a9d957003416b/raw/625081d81cc9c941007ddfd54c9ffdeec0782d62/style.css)
 
 2. If you haven't already, make sure you have created (and logged into) a JS Bin
    account first.
-   <a href="https://jsbin.com/register" target="_blank_">Create one here.</a>
-3. Then open <a target="_blank_"
-   href="http://jsbin.com/xivifu/12/edit?js,output"> this JS Bin</a>. It has
-   all the starter code we need for this tutorial. Write any new code in this JS
-   Bin. We'll refer to this JS Bin as your _"working bin"_.
+   <a href="https://jsbin.com/register" target="_blank_">Create one here</a>.
+3. Then open
+   <a target="_blank_"href="http://jsbin.com/xivifu/12/edit?js,output">
+   this JS Bin</a>. It has all the starter code we need for this tutorial. Write
+   any new code in this JS Bin. We'll refer to this JS Bin as your _"working
+   bin"_.
 
 ## 4. Understanding the Code
 
@@ -68,8 +69,8 @@ function draw() {
   drawSprites();                          // draw all the sprites
 ```
 
-For a refresher for how to do the following, see the corresponding
-sections from the Dodge workshop
+For a refresher for how to do the following, see the corresponding sections from
+the Dodge workshop
 
 - [Creating a blank canvas](https://github.com/hackedu/hackedu/blob/master/workshops/dodge/blank_canvas.md)
 - [Adding a sprite](https://github.com/hackedu/hackedu/blob/master/workshops/dodge/add_player_sprite.md)
@@ -91,8 +92,8 @@ Note that `mouseX` represents the current **x** coordinate of the mouse and
 `mouseY` represents the current **y** coordinate of the mouse.
 
 For a refresher of the coordinate system, you can checkout
-<a href="https://github.com/hackedu/hackedu/blob/master/workshops/soccer/add_player_sprite.md#understanding-the-coordinate-system" target="_blank">this section</a>
-of the Soccer Workshop.
+<a href="https://github.com/hackedu/hackedu/blob/master/workshops/soccer/add_player_sprite.md#understanding-the-coordinate-system" target="_blank">
+this section</a> of the Soccer Workshop.
 
 With that, you can interpret the above line of code as:
 
