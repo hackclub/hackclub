@@ -131,7 +131,7 @@ Here is an outline of what you'll learn on the way:
 3. [Call a phone when a button is clicked]
    (#call-a-phone-when-a-button-is-clicked)
 
-If you're more experienced, feel free to skip this section. Make 
+If you're more experienced, feel free to skip this section. Make
 sure that you create a JS Bin account first (you can sign in with
 GitHub).
 

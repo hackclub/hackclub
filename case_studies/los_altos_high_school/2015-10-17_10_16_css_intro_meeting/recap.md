@@ -35,4 +35,4 @@ email Friday night, which in turn didn't allow us to send out a feedback form.
 
 Be aware of time - there are many issues with getting curricula done on time,
 and time commitment is seriously a huge blocking factor that all high schoolers
-have. 
+have.
