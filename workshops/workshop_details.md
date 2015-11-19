@@ -122,7 +122,7 @@ HTML file (after filling in your sid and token, of course).
 <script src="//bit.ly/twilio-basic-v6"
   sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
   token="YOUR_TWILIO_AUTH_TOKEN_HERE"
-></script>  
+></script>
 ```
 
 The above script is the easiest way to add Twilio to a web project.
