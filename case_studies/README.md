@@ -32,6 +32,7 @@ We break case studies into two parts:
 There is a directory for each club.
 
 Here is what the directory structure looks like:
+
 ```
 .
 ├── club_1
