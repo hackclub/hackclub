@@ -1,4 +1,6 @@
-# Building Your First Website: bit.ly/portfoliohack
+# Building Your First Website
+
+Short link to this workshop: https://bit.ly/portfoliohack
 
 ## Goals
 
