@@ -33,7 +33,8 @@ to create workshops and submit them to the [`contrib`](contrib/) directory. The
 community workshops that have been created so far are listed below in
 alphabetical order.
 
-| Workshop                           | What You Build                                                 | Author                                 |
-|------------------------------------|----------------------------------------------------------------|----------------------------------------|
-| [Ajar.io](contrib/ajar/README.md)  | A clone of Agar.io                                             | [@Bogidon](https://github.com/Bogidon) |
-| [Cloud9](contrib/cloud9/README.md) | A fully configured Cloud9 account ready to use for development | [@Bogidon](https://github.com/Bogidon) |
+| Workshop                                       | What You Build                                                 | Author                                   |
+| ---------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------- |
+| [Ajar.io](contrib/ajar/README.md)              | A clone of Agar.io                                             | [@Bogidon](https://github.com/Bogidon)   |
+| [Cloud9](contrib/cloud9/README.md)             | A fully configured Cloud9 account ready to use for development | [@Bogidon](https://github.com/Bogidon)   |
+| [GitHub Pages](contrib/github-pages/README.md) | Get your website online using GitHub's free hosting service    | [@sethtrei](https://github.com/sethtrei) |
