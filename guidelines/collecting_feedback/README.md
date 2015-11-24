@@ -1,7 +1,7 @@
 # Feedback Forms
 
 _This guide is a collection of info about feedback forms learned from
-[Hack Camp](https://github.com/hackedu/hack-camp)._
+[Hack Camp](https://github.com/hackclub/hack-camp)._
 
 ## Collecting Feedback
 

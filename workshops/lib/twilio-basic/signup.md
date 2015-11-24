@@ -132,8 +132,8 @@ To get the actual promo code:
 
 - Ask your club leader for the Twilio promo code
 - If you are the club leader, get the promo code from
-  [`secrets.md`](https://github.com/hackedu/private/blob/master/secrets.md#twilio-promotion-code),
-  a file inside our [`private`](https://github.com/hackedu/private) GitHub
+  [`secrets.md`](https://github.com/hackclub/private/blob/master/secrets.md#twilio-promotion-code),
+  a file inside our [`private`](https://github.com/hackclub/private) GitHub
   repository.
 - If you don't have access to that repository, please email Jonathan at
   jonathanleung1337@gmail.com and ask for the Twilio promo code and he'll

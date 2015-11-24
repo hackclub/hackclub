@@ -20,7 +20,7 @@ __Imporatant__: if you're having trouble, checkout the
 
 First, make sure you have a github account. If you don't have one, follow the
 guide for making one located
-[here](https://github.com/hackedu/hackedu/tree/master/playbook/workshops/portfolio#creating-a-github-account).
+[here](https://github.com/hackclub/hackclub/tree/master/playbook/workshops/portfolio#creating-a-github-account).
 
 Now that you have a GitHub account, you can login to Cloud9 with GitHub. Go to
 http://c9.io and click on the "octocat" icon in the top corner, as demonstrated

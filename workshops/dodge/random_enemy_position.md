@@ -86,7 +86,7 @@ and press the `enter` key on your keyboard
 
 _This appendix is still being built! Is there something you have a question
 about? Submit an issue requesting its addition
-[here](https://github.com/hackedu/hackedu/issues)_
+[here](https://github.com/hackclub/hackclub/issues)_
 
 ## Table of Contents
 

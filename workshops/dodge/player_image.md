@@ -8,7 +8,7 @@
    anywhere it tells you to type `http://i.imgur.com/mOkHDqN.png`
    type this url instead:
 
-   https://cdn.rawgit.com/hackedu/hackedu/d44ce82f4bff5d9a083b5ee18d0aae6f4acf2bed/workshops/dodge/img/cube.png
+   https://cdn.rawgit.com/hackclub/hackclub/d44ce82f4bff5d9a083b5ee18d0aae6f4acf2bed/workshops/dodge/img/cube.png
 
 -------------------------------------------------------------------------------
 
@@ -93,7 +93,7 @@ practice for you to find your own!
 
 _This appendix is still being built! Is there something you have a question
 about? Submit an issue requesting its addition
-[here](https://github.com/hackedu/hackedu/issues)_.
+[here](https://github.com/hackclub/hackclub/issues)_.
 
 ### Follow Up Questions
 

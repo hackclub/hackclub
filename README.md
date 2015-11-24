@@ -1,12 +1,12 @@
 <a name="top"></a>
 [![Slack Status](https://slack.hackclub.io/badge.svg)](https://slack.hackclub.io)
-[![Build Status](https://circleci.com/gh/hackedu/hackedu.svg?style=shield)](https://circleci.com/gh/hackedu/hackedu)
-[![Pull Request Stats](http://issuestats.com/github/hackedu/hackedu/badge/pr?style=flat)](http://issuestats.com/github/hackedu/hackedu)
-[![Issue Stats](http://issuestats.com/github/hackedu/hackedu/badge/issue?style=flat)](http://issuestats.com/github/hackedu/hackedu)
+[![Build Status](https://circleci.com/gh/hackclub/hackclub.svg?style=shield)](https://circleci.com/gh/hackclub/hackclub)
+[![Pull Request Stats](http://issuestats.com/github/hackclub/hackclub/badge/pr?style=flat)](http://issuestats.com/github/hackclub/hackclub)
+[![Issue Stats](http://issuestats.com/github/hackclub/hackclub/badge/issue?style=flat)](http://issuestats.com/github/hackclub/hackclub)
 
 ------------------------------------------------------------------------------
 
-<p align="center"><img src="https://raw.githubusercontent.com/hackedu/meta/5243af92814b6daacadd66e1342ad073e023544c/logos/hackedu_letter_opaque.png" alt="Hack Club"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/hackclub/meta/5243af92814b6daacadd66e1342ad073e023544c/logos/hackedu_letter_opaque.png" alt="Hack Club"/></p>
 <p align="center">
 <b><a href="workshops/README.md">workshops</a></b>
 |
@@ -32,7 +32,7 @@ Important links:
 
 Build Hack Club with us. Here are two ways to get started:
 
-- [Create an issue](https://github.com/hackedu/hackedu/issues)
+- [Create an issue](https://github.com/hackclub/hackclub/issues)
 - [Join our Slack](https://slack.hackclub.io)
 
 ## Contributing
