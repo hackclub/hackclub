@@ -22,11 +22,11 @@ We extended our pilot to
 
 ### Recognition for Our Club Members
 
-hackEDU hackers are not only at the center of the high school hacking scene but
-are dominating the collegiate hacking scene as well. At the top two collegiate
-hackathons in the world, PennApps X and MHacks V, three of the six winning teams
-were led by high school students. All of these winning high school teams are
-part of hackEDU.
+Hack Club hackers are not only at the center of the high school hacking scene
+but are dominating the collegiate hacking scene as well. At the top two
+collegiate hackathons in the world, PennApps X and MHacks V, three of the six
+winning teams were led by high school students. All of these winning high school
+teams are part of Hack Club.
 
 - PennApps X (1st place): Avi Romanoff, 18, won 1st place by building a web IDE
   for developing iOS apps in the browser
@@ -57,12 +57,12 @@ progrmaming clubs. This will include:
 Complimented with the Playbook, we will be working with organizers week to week
 over calls.
 
-#### Onboard 50 More Schools into the HackEDU Network
+#### Onboard 50 More Schools into the Hack Club Network
 
-All of our 24 clubs came to hackEDU through inbound interest. Many came from the
-facebook group HS Hackers, representing 6,000+ high schoolers from 689 schools
-across 46 states and 87 countries which was started and is run by one of our
-founders, Zach latta.
+All of our 24 clubs came to Hack Club through inbound interest. Many came from
+the facebook group HS Hackers, representing 6,000+ high schoolers from 689
+schools across 46 states and 87 countries which was started and is run by one of
+our founders, Zach latta.
 
 Moreover, from a survey that we did at the premier Hack Generation Y hackathon,
 we learned that there are over 60 clubs just in the bay area alone that are not

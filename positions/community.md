@@ -1,6 +1,6 @@
 # Community
 
-We see hackEDU being valuable in two ways:
+We see Hack Club being valuable in two ways:
 
 - Providing a very easy way to start a coding club
 - Having an amazing, diverse community
@@ -8,7 +8,7 @@ We see hackEDU being valuable in two ways:
 Having an easy way to start a coding club means very little without a community
 to back it.
 
-We are nowhere near creating a community for hackEDU. Now's the time to change
+We are nowhere near creating a community for Hack Club. Now's the time to change
 that.
 
 Here are some of our current problems, among many others:

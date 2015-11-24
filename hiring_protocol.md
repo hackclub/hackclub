@@ -1,6 +1,6 @@
 # Hiring Protocol
 
-This is an initial document on how we approach hiring at hackEDU. For now it's
+This is an initial document on how we approach hiring at Hack Club. For now it's
 brief and incomplete, be we will iterate on this as we gain more experience and
 learn more.
 

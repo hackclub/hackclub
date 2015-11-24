@@ -41,12 +41,12 @@ and not reproducible.
 Before trying to bring more clubs into our network, we decided that it was
 important to take a step back and create a solid model for our clubs to use as a
 foundation. We took this summer to run
-[Hack Camp](https://github.com/hackedu/hack-camp) as our first step in doing
+[Hack Camp](https://github.com/hackclub/hack-camp) as our first step in doing
 that. We thought of Hack Camp as a compressed club during the school year with
 the following objective:
 
-> The objective of Hack Camp is build an set of materials that allows any
-> hackEDU team member to reproduce an experience that that brings people from no
+> The objective of Hack Camp is build an set of materials that allows any Hack
+> Club team member to reproduce an experience that that brings people from no
 > coding knowledge to having the ability, motivation, and confidence to create
 > coding projects and continue learning new coding concepts with others, without
 > the explicit urging or leading of a teacher.
@@ -56,14 +56,14 @@ Hack Camp overview:
 - We found a curriculum model for Hack Camp that we're very confident in and
   predict will translate well to a club context.
 - We created a
-  [Hack Camp playbook](https://github.com/hackedu/hack-camp/tree/master/cohort_4/playbook)
+  [Hack Camp playbook](https://github.com/hackclub/hack-camp/tree/master/cohort_4/playbook)
   that previous hackers in Hack Camp and
   [@gemmabusoni](https://github.com/gemmabusoni) were able to run a cohort from.
 - Ran four cohorts ranging in size from 4 to 11 hackers.
 - Got some
-  [awesome](https://github.com/hackedu/hack-camp/blob/master/cohort_1/feedback/2.md#can-you-tell-us-if-hack-camp-changed-your-mindset-or-the-way-you-thought-about-yourself-or-your-abilities)
-  [hacker](https://github.com/hackedu/hack-camp/blob/master/cohort_3/feedback/10.md#can-you-tell-us-if-hack-camp-changed-your-mindset-or-the-way-you-thought-about-yourself-or-your-abilities)
-  [feedback](https://github.com/hackedu/hack-camp/blob/master/cohort_3/feedback/09.md#can-you-tell-us-if-hack-camp-changed-your-mindset-or-the-way-you-thought-about-yourself-or-your-abilities).
+  [awesome](https://github.com/hackclub/hack-camp/blob/master/cohort_1/feedback/2.md#can-you-tell-us-if-hack-camp-changed-your-mindset-or-the-way-you-thought-about-yourself-or-your-abilities)
+  [hacker](https://github.com/hackclub/hack-camp/blob/master/cohort_3/feedback/10.md#can-you-tell-us-if-hack-camp-changed-your-mindset-or-the-way-you-thought-about-yourself-or-your-abilities)
+  [feedback](https://github.com/hackclub/hack-camp/blob/master/cohort_3/feedback/09.md#can-you-tell-us-if-hack-camp-changed-your-mindset-or-the-way-you-thought-about-yourself-or-your-abilities).
 
 # 2015 to 2016 School Year
 
@@ -82,7 +82,7 @@ _What this means:_
 
 - The playbook includes:
   - [ ] How to start a club
-  - [ ] How to onboard into hackEDU
+  - [ ] How to onboard into Hack Club
   - [ ] Workshops for 8 meetings
   - [ ] Suggested meeting format for 12 meetings
   - [ ] Facilitation guidelines for first 12 meetings
@@ -106,8 +106,8 @@ _What this means:_
 
 ##### Curriculum
 
-- mvp1 of the hackEDU portal shipped (features of this need to be defined in the
-  future)
+- mvp1 of the Hack Club portal shipped (features of this need to be defined in
+  the future)
 - 2 additional workshops shipped
 
 ##### Technical
@@ -135,14 +135,14 @@ Reduce chaos
 - Club members join slack (at least 3 labs leaders get their entire clubs to
   join)
 - Every labs leader active for the week in Slack
-- Every hackEDU club leader added to Slack (post in facebook group)
+- Every Hack Club club leader added to Slack (post in facebook group)
 - > 10 active mentors in Slack
 - #web #ios #android #hardware channels
 
 ##### Curriculum
 
-- mvp2 of the hackEDU portal shipped (features of this need to be defined in the
-  future)
+- mvp2 of the Hack Club portal shipped (features of this need to be defined in
+  the future)
 - 1 additional workshops shipped
 
 ##### Technical
@@ -174,8 +174,8 @@ Culture of experimentation.
 
 ##### Curriculum
 
-- mvp3 of the hackEDU portal shipped (features of this need to be defined in the
-  future)
+- mvp3 of the Hack Club portal shipped (features of this need to be defined in
+  the future)
 - 1 additional workshop shipped
 
 ##### Technical
@@ -202,7 +202,7 @@ Public presence and club onboarding
 
 ##### Curriculum
 
-- Ship polished version of the hackEDU portal
+- Ship polished version of the Hack Club portal
 
 ##### Technical
 
@@ -216,7 +216,7 @@ Semester 2
 - It's clear how to get onboard those clubs
   - Process to add them to the community
   - What they should do in their meetings
-  - What they need to do to remain a hackEDU club
+  - What they need to do to remain a Hack Club club
 - The expectations for our clubs are clear
 
 ## Second Semester
