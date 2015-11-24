@@ -32,18 +32,28 @@ Go into your Cloud9 workspace and choose an area to clone your repository. You
 want to find the terminal that starts with "bash". If it isnt there open a new
 terminal. (Instructions directly below)
 
-> ![](resources/openterm.gif)
+Now that we have a place to put our code, we want to set up a way to edit our
+code.
 
 1. Get the link for cloning. It is on the right side of your repository. If you
    click the little icon, the link is now on your clipboard.
 
      > ![](http://goo.gl/BCQIQP)
 
-2. In the terminal type: git clone [then the link you just copied]
+2. Go into your Cloud9 workspace and open a new terminal (Alt+T, or Window > New
+   Terminal).
 
      > ![](resources/openterm.gif)
 
-# Congrats! You can now edit and save in your repository!
+3. In the terminal type: `git clone [then the link you just copied]`
+
+     > ![](resources/clone.gif)
+
+4. Move the terminal into the repository by typing:
+
+       cd [repository name]
+
+**Congrats! You can now edit and save in your repository!**
 
 You should start creating the necessary files for a website. (`index.html`,
 `style.css`, etc)
