@@ -11,7 +11,7 @@
   - https://github.com/hackedu/hackedu/tree/jon-remote-control/playbook/workshops/remote_control
   - http://jonl.org/10-points-for-gryffindor/wand.html
 4. Open questions about anything in particular
-5. http://feedback.hackedu.us/#vallo
+5. http://feedback.hackclub.io/#vallo
 
 ## Expected Problems
 

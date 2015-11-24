@@ -155,7 +155,7 @@ explain it!
 
 *This appendix is still being built! Is there something you have a question
 about? Submit an issue requesting its addition
-[here](https://github.com/hackedu/hackedu/issues)*
+[here](https://github.com/hackclub/hackclub/issues)*
 
 ## Table of Contents
 

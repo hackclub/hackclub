@@ -19,7 +19,7 @@ scratch, we give you the code for how to make the maze game shown above and
 your mission will be to make your own version of it.
 
 This workshop also, assumes that you have done the
-[Dodge](https://github.com/hackedu/hackedu/blob/master/workshops/dodge/README.md)
+[Dodge](https://github.com/hackclub/hackclub/blob/master/workshops/dodge/README.md)
 workshop. Make sure you do that workshop first.
 
 ## 3. Setup
@@ -72,9 +72,9 @@ function draw() {
 For a refresher for how to do the following, see the corresponding sections from
 the Dodge workshop
 
-- [Creating a blank canvas](https://github.com/hackedu/hackedu/blob/master/workshops/dodge/blank_canvas.md)
-- [Adding a sprite](https://github.com/hackedu/hackedu/blob/master/workshops/dodge/add_player_sprite.md)
-- [Adding an image to your sprite](https://github.com/hackedu/hackedu/blob/master/workshops/dodge/player_image.md)
+- [Creating a blank canvas](https://github.com/hackclub/hackclub/blob/master/workshops/dodge/blank_canvas.md)
+- [Adding a sprite](https://github.com/hackclub/hackclub/blob/master/workshops/dodge/add_player_sprite.md)
+- [Adding an image to your sprite](https://github.com/hackclub/hackclub/blob/master/workshops/dodge/player_image.md)
 
 ### Game Over Condition
 
@@ -92,7 +92,7 @@ Note that `mouseX` represents the current **x** coordinate of the mouse and
 `mouseY` represents the current **y** coordinate of the mouse.
 
 For a refresher of the coordinate system, you can checkout
-<a href="https://github.com/hackedu/hackedu/blob/master/workshops/soccer/add_player_sprite.md#understanding-the-coordinate-system" target="_blank">
+<a href="https://github.com/hackclub/hackclub/blob/master/workshops/soccer/add_player_sprite.md#understanding-the-coordinate-system" target="_blank">
 this section</a> of the Soccer Workshop.
 
 With that, you can interpret the above line of code as:

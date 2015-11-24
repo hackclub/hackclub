@@ -13,7 +13,7 @@ your club, what isn't, and collaborating with the rest of the Labs Team to build
 (and document) the best club possible. The objective of the Labs Team is to
 build a playbook that makes it easy for anyone to start a great club (here's the
 playbook we used to run the last cohort of Hack Camp:
-https://github.com/hackedu/hack-camp/tree/master/cohort_4/playbook). We'll talk
+https://github.com/hackclub/hack-camp/tree/master/cohort_4/playbook). We'll talk
 more about what this collaboration process will look like once we've finished
 accepting everyone to Labs.
 

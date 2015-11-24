@@ -7,9 +7,9 @@ The Labs program will follow this format:
 1. Workshops
   - These are based on the workshops from Hack Camp
   - Labs program workshops can be found in the
-    (playbook)[https://github.com/hackedu/hackedu/tree/master/playbook/workshops]
+    (playbook)[https://github.com/hackclub/hackclub/tree/master/playbook/workshops]
 2. Case Studies
-  - To collect data from each meeting without core hackEDU team members being
+  - To collect data from each meeting without core Hack Club team members being
     there, each club meeting will have a case study
   - Each case study consists of 2 files:
     1. `planning.md`
@@ -23,15 +23,15 @@ The Labs program will follow this format:
 Here's our checklist for getting everything going with Labs:
 
 - [x] Select everyone we're going to interview (_Deadline: 08.17.15_,
-  [#30](https://github.com/hackedu/hackedu/issues/30)).
+  [#30](https://github.com/hackclub/hackclub/issues/30)).
   - We're keeping track of people in the private sheet
     https://docs.google.com/spreadsheets/d/1Q6E36NK7N_mKp_LJwMW-P3KUZXPsHQTJWyoyKvrneuc.
 - [x] Schedule all interviews (_Deadline: 08.20.15_,
-  [#54](https://github.com/hackedu/hackedu/issues/31))
+  [#54](https://github.com/hackclub/hackclub/issues/31))
 - [x] Send out all acceptances and rejections (_Deadline: 08.25.15_,
-  [#48](https://github.com/hackedu/hackedu/issues/48))
+  [#48](https://github.com/hackclub/hackclub/issues/48))
 - [x] All acceptance contracts signed (_Deadline: 08.28.15_,
-  [#55](https://github.com/hackedu/hackedu/issues/55))
+  [#55](https://github.com/hackclub/hackclub/issues/55))
 
 ### Position Information
 

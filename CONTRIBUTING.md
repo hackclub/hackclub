@@ -1,14 +1,14 @@
-# Contributing to hackEDU
+# Contributing to Hack Club
 
-Contributions to hackEDU are very welcome, and strongly encouraged (even to this
-document)!
+Contributions to Hack Club are very welcome, and strongly encouraged (even to
+this document)!
 
 ## Doing it
 
 We use a modified version of
-[GitHub Flow](https://guides.github.com/introduction/flow/) at hackEDU. The only
-difference is instead of deploying from a reviewed pull request, we merge first
-and deploy straight from master.
+[GitHub Flow](https://guides.github.com/introduction/flow/) at Hack Club. The
+only difference is instead of deploying from a reviewed pull request, we merge
+first and deploy straight from master.
 
 Part of the GitHub Flow is submitting pull requests. See
 https://help.github.com/articles/using-pull-requests/ for a good overview of
@@ -28,7 +28,7 @@ it. It's very appreciated!
 
 Our existing style guides:
 
-- [Markdown](https://github.com/hackedu/meta/blob/master/markdown_style_guide.md)
+- [Markdown](https://github.com/hackclub/meta/blob/master/markdown_style_guide.md)
 
 ## Naming conventions
 
@@ -129,7 +129,7 @@ change does.
 
 ## Using GitHub Issues
 
-We use GitHub's built in issue tracker for nearly everything at hackEDU. We
+We use GitHub's built in issue tracker for nearly everything at Hack Club. We
 recommend reading through https://guides.github.com/features/issues/ to get a
 good idea of how to use GitHub Issues.
 
@@ -200,7 +200,7 @@ First make sure that you've read the
 Below is the recommended contribution flow for submitting
 [case studies](case_studies/).
 
-1. Go to [Cloud9](https://c9.io/) and open your "hackedu" workspace.
+1. Go to [Cloud9](https://c9.io/) and open your "hackclub" workspace.
 2. Make sure that the email address associated with git is correct.
 
         $ git config user.email
@@ -214,9 +214,9 @@ Below is the recommended contribution flow for submitting
 
         $ git checkout master
 
-4. Update your hackEDU fork.
+4. Update your Hack Club fork.
 
-        $ git pull https://github.com/hackedu/hackedu.git
+        $ git pull https://github.com/hackclub/hackclub.git
 
 5. Create a new branch to add the case study to. Branch names should briefly
    describe the change being made. They should be lowercase and use dashes (`-`)
@@ -255,9 +255,9 @@ Below is the recommended contribution flow for submitting
 
         $ git push -u origin add-first-meeting-planning
 
-10. Go to your `hackedu` fork on GitHub (it's at
-    `https://github.com/{username}/hackedu`, mine is at
-    https://github.com/zachlatta/hackedu). You should see the following:
+10. Go to your `hackclub` fork on GitHub (it's at
+    `https://github.com/{username}/hackclub`, mine is at
+    https://github.com/zachlatta/hackclub). You should see the following:
 
     ![Recently pushed branches notification](https://i.imgur.com/NOeQyBe.png)
 
@@ -266,4 +266,4 @@ Below is the recommended contribution flow for submitting
     describe your changes in the description. Once you're ready, click "Create a
     pull request".
 12. And you're done! Not too bad, huh? The pull request I created is over at
-    https://github.com/hackedu/hackedu/pull/163.
+    https://github.com/hackclub/hackclub/pull/163.

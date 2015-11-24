@@ -6,7 +6,7 @@ By the end of this tutorial, you will have a Twilio Account SID and Auth Token.
 receive text messages and phone calls minimal code. It's used heavily in one of
 our workshops and it's great for projects workshops use it.
 
-Twilio is giving every hackEDU member $100 worth of Twilio credit. This guide
+Twilio is giving every Hack Club member $100 worth of Twilio credit. This guide
 will walk you through the process if signing up for a Twilio Account.
 
 ## Creating an Account
@@ -132,8 +132,8 @@ To get the actual promo code:
 
 - Ask your club leader for the Twilio promo code
 - If you are the club leader, get the promo code from
-  [`secrets.md`](https://github.com/hackedu/private/blob/master/secrets.md#twilio-promotion-code),
-  a file inside our [`private`](https://github.com/hackedu/private) GitHub
+  [`secrets.md`](https://github.com/hackclub/private/blob/master/secrets.md#twilio-promotion-code),
+  a file inside our [`private`](https://github.com/hackclub/private) GitHub
   repository.
 - If you don't have access to that repository, please email Jonathan at
   jonathanleung1337@gmail.com and ask for the Twilio promo code and he'll
