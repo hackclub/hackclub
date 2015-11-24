@@ -109,9 +109,10 @@ directions here](twilio/signup.md) to do this. The workshop is set up so that th
 facilitator (that's you) obtains the credentials and gives it to everyone doing
 the workshop to save time.
 
-Following the above directions will give you $100 worth of credit. If any
-club members need more, they can follow the same instructions to get their own
-account. However, they will need you to give them the hackEDU Twilio promo code.
+Following the above directions will give you $100 worth of credit. If any club
+members need more, they can follow the same instructions to get their own
+account. However, they will need you to give them the Hack Club Twilio promo
+code.
 
 ##### Understanding The API
 

@@ -6,7 +6,7 @@ By the end of this tutorial, you will have a Twilio Account SID and Auth Token.
 receive text messages and phone calls minimal code. It's used heavily in one of
 our workshops and it's great for projects workshops use it.
 
-Twilio is giving every hackEDU member $100 worth of Twilio credit. This guide
+Twilio is giving every Hack Club member $100 worth of Twilio credit. This guide
 will walk you through the process if signing up for a Twilio Account.
 
 ## Creating an Account

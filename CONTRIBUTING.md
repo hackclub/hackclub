@@ -1,14 +1,14 @@
-# Contributing to hackEDU
+# Contributing to Hack Club
 
-Contributions to hackEDU are very welcome, and strongly encouraged (even to this
-document)!
+Contributions to Hack Club are very welcome, and strongly encouraged (even to
+this document)!
 
 ## Doing it
 
 We use a modified version of
-[GitHub Flow](https://guides.github.com/introduction/flow/) at hackEDU. The only
-difference is instead of deploying from a reviewed pull request, we merge first
-and deploy straight from master.
+[GitHub Flow](https://guides.github.com/introduction/flow/) at Hack Club. The
+only difference is instead of deploying from a reviewed pull request, we merge
+first and deploy straight from master.
 
 Part of the GitHub Flow is submitting pull requests. See
 https://help.github.com/articles/using-pull-requests/ for a good overview of
@@ -129,7 +129,7 @@ change does.
 
 ## Using GitHub Issues
 
-We use GitHub's built in issue tracker for nearly everything at hackEDU. We
+We use GitHub's built in issue tracker for nearly everything at Hack Club. We
 recommend reading through https://guides.github.com/features/issues/ to get a
 good idea of how to use GitHub Issues.
 
@@ -214,7 +214,7 @@ Below is the recommended contribution flow for submitting
 
         $ git checkout master
 
-4. Update your hackEDU fork.
+4. Update your Hack Club fork.
 
         $ git pull https://github.com/hackedu/hackedu.git
 

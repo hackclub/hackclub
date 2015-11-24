@@ -9,7 +9,7 @@ The Labs program will follow this format:
   - Labs program workshops can be found in the
     (playbook)[https://github.com/hackedu/hackedu/tree/master/playbook/workshops]
 2. Case Studies
-  - To collect data from each meeting without core hackEDU team members being
+  - To collect data from each meeting without core Hack Club team members being
     there, each club meeting will have a case study
   - Each case study consists of 2 files:
     1. `planning.md`

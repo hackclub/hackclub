@@ -14,7 +14,7 @@ For more recommended guidelines on running workshops,
 
 ## Official Workshops
 
-These are the workshops created and maintained by the hackEDU staff. They are
+These are the workshops created and maintained by the Hack Club staff. They are
 listed in the order we suggest running them in, though we encourage you to
 experiment and improve them (we're always hungry for pull requests).
 
@@ -28,7 +28,7 @@ experiment and improve them (we're always hungry for pull requests).
 
 ## Community Workshops
 
-In addition to the workshops that the hackEDU staff make, anyone is encouraged
+In addition to the workshops that the Hack Club staff make, anyone is encouraged
 to create workshops and submit them to the [`contrib`](contrib/) directory. The
 community workshops that have been created so far are listed below in
 alphabetical order.
