@@ -13,7 +13,8 @@ of the workshop you will have a link to get you to your website.
 
 # What is a Repository?
 
-A respository is a location where code and other files can be stored.
+A respository is a location (or folder) where code and other files can be
+stored. The word `repository` is sometimes shortened to `repo`.
 
 # Create a Repository
 
