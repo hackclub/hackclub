@@ -2,9 +2,9 @@
 
 Crowd-sourced hacker stories from clubs. Hackers could submit stories of what
 they made (don't have to be long). Over time we'd have a compendium of stories,
-books of inspiration, encouragement, and proof of outcomes of
-hackEDU. Something between testimonials and "look what we came up with!". Tales
-of blood, sweat, tears, and camaraderie of the hacker ethos.
+books of inspiration, encouragement, and proof of outcomes of Hack Club.
+Something between testimonials and "look what we came up with!". Tales of blood,
+sweat, tears, and camaraderie of the hacker ethos.
 
 Perhaps we could work with Medium (or just have everyone write up blog posts on
 Medium as the stories, see

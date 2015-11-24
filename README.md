@@ -1,7 +1,8 @@
-# hackEDU's Internals [![Circle CI](https://circleci.com/gh/hackedu/meta.svg?style=svg)](https://circleci.com/gh/hackedu/meta)
+# Hack Club's Internals [![Circle CI](https://circleci.com/gh/hackclub/meta.svg?style=svg)](https://circleci.com/gh/hackclub/meta)
 
 Welcome! This is our internal repo we use for running
-[hackEDU](http://hackedu.us), warts and all. We're excited to have you involved.
+[Hack Club](https://hackclub.io), warts and all. We're excited to have you
+involved.
 
 ## Vision and Mission
 
@@ -19,13 +20,13 @@ See [GOALS.md](GOALS.md).
 These are the people who are officially part of the organization, but we want
 you involved as well!
 
-| Name           | Position                   | Link                          | Email               |
-| -------------- | -------------------------- | ----------------------------- | ------------------- |
-| Dave Fontenot  | Director of Community      | http://davefont.com/          | dave@hackedu.us     |
-| Gemma Busoni   |                            | https://twitter.com/grbusoni  | gemma@hackedu.us    |
-| Jonathan Leung | Founder                    | http://jonl.org               | jonathan@hackedu.us |
-| Max Wofford    | Technical Fellow           | https://github.com/MaxWofford | max@hackedu.us      |
-| Zach Latta     | Executive Director         | http://zachlatta.com          | zach@hackedu.us     |
+| Name           | Position                   | Link                          | Email                |
+| -------------- | -------------------------- | ----------------------------- | -------------------  |
+| Dave Fontenot  | Director of Community      | http://davefont.com/          | dave@hackclub.io     |
+| Gemma Busoni   |                            | https://twitter.com/grbusoni  | gemma@hackclub.io    |
+| Jonathan Leung | Founder                    | http://jonl.org               | jonathan@hackclub.io |
+| Max Wofford    | Technical Fellow           | https://github.com/MaxWofford | max@hackclub.io      |
+| Zach Latta     | Executive Director         | http://zachlatta.com          | zach@hackclub.io     |
 
 ## Project Management
 
@@ -53,7 +54,7 @@ issue._
 
 ## Contact
 
-If you'd like to reach all of us, please send an email to team@hackedu.us :-).
+If you'd like to reach all of us, please send an email to team@hackclub.io :-).
 
 ## License
 

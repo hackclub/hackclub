@@ -2,7 +2,7 @@
 
 ## About
 
-[hackEDU](http://hackedu.us) works with high school students start and lead
+[Hack Club](http://hackclub.io) works with high school students start and lead
 programming clubs at their school.
 
 ## What is a hacker?
@@ -12,9 +12,9 @@ isn't afraid to break the rules.
 
 ## About with Hackers
 
-[hackEDU](http://hackedu.us) works with high school students to start and lead
-programming clubs at their school. We create hackers: people who create things
-that they see missing in the world and aren't afraid to break the rules.
+[Hack Club](http://hackclub.io) works with high school students to start and
+lead programming clubs at their school. We create hackers: people who create
+things that they see missing in the world and aren't afraid to break the rules.
 
 ## Why Are We Unique
 
@@ -25,9 +25,9 @@ TODO
 
 Hi Nick, how are you doing?
 
-So I just recently moved to San Francisco to join [hackEDU](https://hackedu.us)
-as a co-founder! hackEDU is a non-profit that helps high school students start
-and lead programming clubs at their school.
+So I just recently moved to San Francisco to join
+[Hack Club](https://hackclub.io) as a co-founder! Hack Club is a non-profit that
+helps high school students start and lead programming clubs at their school.
 
 ## Timeline
 
@@ -57,18 +57,18 @@ we reach over 1000 members in 24 schools across 11 states, 35% of whom are woman
 
 ## Leading the Hacking Scene
 
-hackEDU hackers are not only at the center of the high school hacking scene but
-are dominating the collegiate hacking scene as well. At the top two collegiate
-hackathons in the world,
+Hack Club hackers are not only at the center of the high school hacking scene
+but are dominating the collegiate hacking scene as well. At the top two
+collegiate hackathons in the world,
 [PennApps X](http://pennappsx.challengepost.com/submissions) and
 [MHacks V](http://mhacksv.challengepost.com/submissions), three of the six
 winning teams were led by high school students. __*All of these winning high
-school teams are part of hackEDU.*__
+school teams are part of Hack Club.*__
 
 ## Zach Runs HS Hackers
 
-All of our 24 clubs came to hackEDU through inbound interest. Many came from the
-facebook group HS Hackers, a Facebook group that representing 3,000 high
+All of our 24 clubs came to Hack Club through inbound interest. Many came from
+the facebook group HS Hackers, a Facebook group that representing 3,000 high
 schoolers from 689 schools across 46 states and 87 countries which was started
 and is run by my co-founder Zach Latta.
 
@@ -78,19 +78,19 @@ and is run by my co-founder Zach Latta.
 
 ## Winning the Hackathons [Short]
 
-hackEDU hackers are not only at the center of the high school hacking scene but
-are dominating the collegiate hacking scene as well. At the top two collegiate
-hackathons in the world, PennApps X and MHacks V, three of the six winning teams
-were led by high school students. All of these winning high school teams are
-part of hackEDU.
+Hack Club hackers are not only at the center of the high school hacking scene
+but are dominating the collegiate hacking scene as well. At the top two
+collegiate hackathons in the world, PennApps X and MHacks V, three of the six
+winning teams were led by high school students. All of these winning high school
+teams are part of Hack Club.
 
 ## Winning the Hackathons [Long]
 
-hackEDU hackers are not only at the center of the high school hacking scene but
-are dominating the collegiate hacking scene as well. At the top two collegiate
-hackathons in the world, PennApps X and MHacks V, three of the six winning teams
-were led by high school students. All of these winning high school teams are
-part of hackEDU.
+Hack Club hackers are not only at the center of the high school hacking scene
+but are dominating the collegiate hacking scene as well. At the top two
+collegiate hackathons in the world, PennApps X and MHacks V, three of the six
+winning teams were led by high school students. All of these winning high school
+teams are part of Hack Club.
 
 - PennApps X (1st place): Avi Romanoff, 18, won 1st place by building a web IDE
   for developing iOS apps in the browser
