@@ -47,6 +47,9 @@ terminal. (Instructions directly below)
 You should start creating the necessary files for a website. (`index.html`,
 `style.css`, etc)
 
+*If you don't know how to do this, you should check out the
+[portfolio workshop](../../portfolio) to learn how to build your website!*
+
 -------------------------------------------------------------------------------
 
 # Part 2
