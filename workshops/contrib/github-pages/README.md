@@ -67,30 +67,29 @@ your GitHub Repository.
 
 # Commiting and Publishing to GitHub
 
-Once you have made changes in the files you need to put them on GitHub which
-will put it on your website.
+In this part of the workshop, you will learn how to put the code from Cloud9
+into your GitHub repository.
 
-1. **Go into the terminal and type:**
+### Commiting and Publishing to GitHub
 
-        cd [repository name]
+After you make changes to your site on Cloud9 you will need to put the changes on
+GitHub for the changes to show up on your site.
 
-    This puts you into your repository
-
-2. **Add your changes to the commit list by doing...**
+1. **Add your changes to the commit list by doing...**
 
         git add .
 
-3. **Commit your changes with the following format**
+2. **Commit your changes with the following format**
 
         git commit -m "Here you type what the commit does. Keep the quotations."
 
     This will get your changes ready to push to GitHub
 
-4. **Push your changes**
+3. **Push your changes**
 
         git push
 
-    It will ask for your username and password.  
+    It will ask for your username and password.
     Note: When you type your password it wont show up in the terminal.
 
 # Let's Explain What you Just Did
