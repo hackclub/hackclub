@@ -85,8 +85,15 @@ will put it on your website.
 
 # Let's Explain What you Just Did
 
-You just used git to push to a repository. Git is a way of organzing files, and
-GitHub adds a user interface to git.
+You just used git to push your repository on Cloud9 to your repository on
+GitHub.
+
+**GitHub and git?**
+
+Git is a tool for organizing the files in your repository, as well as moving
+your repository between Cloud9 and GitHub. Because Git is only controlled
+through the terminal, GitHub is a website that provides a user interface for git
+(buttons and pictures instead of just text).
 
 # So what is the URL?
 
