@@ -2,9 +2,9 @@
 
 Welcome! In this workshop you will set up a GitHub Pages Website!
 
-To start you need to have completed the <a
-href="https://github.com/hackedu/hackedu/tree/master/workshops/contrib/cloud9"
-target="_blank">Cloud 9 Workshop.</a>
+To start you need to have completed the
+<a href="https://github.com/hackedu/hackedu/tree/master/workshops/contrib/cloud9" target="_blank">
+Cloud 9 Workshop</a>.
 
 # What is GitHub Pages?
 
@@ -36,11 +36,11 @@ terminal. (Instructions directly below)
 1. Get the link for cloning. It is on the right side of your repository. If you
    click the little icon, the link is now on your clipboard.
 
-      > ![](http://goo.gl/BCQIQP)
+     > ![](http://goo.gl/BCQIQP)
 
 2. In the terminal type: git clone [then the link you just copied]
 
-      > ![](resources/clone.gif)
+     > ![](resources/openterm.gif)
 
 # Congrats! You can now edit and save in your repository!
 
