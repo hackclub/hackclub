@@ -12,7 +12,8 @@ We can make the enemy start at random x positions with the following code:
 
 > ![](img/t9_enemy_random_x.gif)
 
-[![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/82/edit?js,output)
+<a href="http://jsbin.com/qiyuno/82/edit?js,output"
+target="_blank">![](img/open_in_js_bin.png)</a>
 
 The highlighted gray lines above (reproduced below) are responsible for making
 the enemy spawn in a random position:

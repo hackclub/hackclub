@@ -27,8 +27,9 @@ text.
 
 Ready?
 
-Open [this JS Bin](http://jsbin.com/papawo/20/edit?html,js,console)*. Leave this
-tab open for the rest of the tutorial.
+Open <a href="http://jsbin.com/papawo/20/edit?html,js,console"
+target="_blank">this JS Bin*</a>. Leave this tab open for the rest of the
+tutorial.
 
 _*JS Bin is a website for easily writing code._
 
@@ -116,7 +117,9 @@ This first section is linear and more guided.
 In this section, you will learn to build an HTML5 app that, when you press a
 a button, calls a phone.
 
-[Here is a demo of the app we will make](http://jsbin.com/fawuda/86/edit?js,console,output).
+<a href="http://jsbin.com/fawuda/86/edit?js,console,output" target="_blank">Here
+is a demo of the app we will make</a>.
+
 To make this work for you:
 
 1. make sure you change `555-555-5555` to your phone number
@@ -167,12 +170,13 @@ run code:
 
 ### Send text messages and make phone calls
 
-Go ahead and continue using the
-[JS Bin from the Quick Demo](http://jsbin.com/papawo/25/edit?html,js,console).
+Go ahead and continue using the <a
+href="http://jsbin.com/papawo/25/edit?html,js,console" target="_blank">JS Bin
+from the Quick Demo</a>.
 
-If you've closed it already, open
-[the JS Bin](http://jsbin.com/papawo/25/edit?html,js,console)
-tab back up!
+If you've closed it already, open <a
+href="http://jsbin.com/papawo/25/edit?html,js,console" target="_blank">the JS
+Bin</a> tab back up!
 
 If you havn't added your Twilio SID and token to this JS Bin, please do so
 by [following these directions](#adding-your-twilio-sid-and-token).
@@ -269,8 +273,9 @@ Now let's make this work when I press a button on a real website!
 
 ### Call a Phone When a Button is Clicked
 
-**Important:** Go ahead and open up
-[this new JS Bin](http://jsbin.com/fawuda/139/edit?html,js,console,output) and
+**Important:** Go ahead and open up <a
+href="http://jsbin.com/fawuda/139/edit?html,js,console,output"
+target="_blank">this new JS Bin</a> and
 [add your Twilio credentials like before as well](#adding-your-twilio-sid-and-token).
 
 There are 4 panels in the JS Bin now:
@@ -455,7 +460,8 @@ All the examples also need to have a Twilio SID and authentication token.
 However, they use a different script than the above. To make the examples work
 for the rest of the tutorial, follow these instructions:
 
-- Open [this JS Bin](http://jsbin.com/tetisa/1/edit?js,output).
+- Open <a href="http://jsbin.com/tetisa/1/edit?js,output" target="_blank">this
+  JS Bin</a>.
 - Click "Run with JS".
 - When prompted, enter your Twilio SID and token.
 
@@ -469,7 +475,7 @@ for the rest of the tutorial, follow these instructions:
 Twilio.callAndPlay("555-555-5555", "http://a.tumblr.com/tumblr_lie8ewfdbO1qzbwpvo1.mp3");
 ```
 
-[JS Bin](http://jsbin.com/fawuda/101/edit?js,console)
+<a href="http://jsbin.com/fawuda/101/edit?js,console" target="_blank">JS Bin</a>
 
 _Don't forget to change the phone number and click the "run" button._
 
@@ -480,7 +486,7 @@ var audio = new Audio("http://a.tumblr.com/tumblr_lie8ewfdbO1qzbwpvo1.mp3");
 audio.play();
 ```
 
-[JS Bin](http://jsbin.com/fawuda/101/edit?js,console)
+<a href="http://jsbin.com/fawuda/101/edit?js,console" target="_blank">JS Bin</a>
 
 _If you're trying to play a sound on mobile, it must be activated with a button
 press first before it can play._
@@ -542,11 +548,14 @@ of the body tag in the HTML section.
 ></script>
 ```
 
-- [Here is a bare bones working example](http://jsbin.com/fawuda/145/edit?js,output)
-- [This is the output URL](http://jsbin.com/fawuda/145)
+- <a href="http://jsbin.com/fawuda/145/edit?js,output" target="_blank">Here is a
+  bare bones working example</a>
+- <a href="http://jsbin.com/fawuda/145" target="_blank">This is the output
+  URL</a>
 
 Here is a more complicated example:
-- [Link to the code](http://jsbin.com/fawuda/151/edit?html,js,output)
+- <a href="http://jsbin.com/fawuda/151/edit?html,js,output" target="_blank">Link
+  to the code</a>
 - [Link to the output that you should open on your phone]
   (http://jsbin.com/fawuda/151)
 
@@ -564,8 +573,8 @@ Twilio.listenForMessages(function(data) {
 });
 ```
 
-[Here is an example JS Bin](http://jsbin.com/hisavu/4/edit?html,js,console)
-with the above code.
+<a href="http://jsbin.com/hisavu/4/edit?html,js,console" target="_blank">Here is
+an example JS Bin</a> with the above code.
 
 These are all the properties that you can receive:
 
@@ -603,7 +612,9 @@ Twilio.listenForMessages(function(data) {
 });
 ```
 
-See the above code working in [this JS Bin](http://jsbin.com/hisavu/8/edit?html,js,console).
+See the above code working in <a
+href="http://jsbin.com/hisavu/8/edit?html,js,console" target="_blank">this JS
+Bin</a>.
 
 ```js
 Twilio.listenForMessages(function(message) {
@@ -611,7 +622,9 @@ Twilio.listenForMessages(function(message) {
 });
 ```
 
-See the above code working in [this JS Bin](http://jsbin.com/fawuda/111/edit?js,console).
+See the above code working in <a
+href="http://jsbin.com/fawuda/111/edit?js,console" target="_blank">this JS
+Bin</a>.
 
 You can start to do more advanced logic like implementing a chat bot.
 

@@ -5,7 +5,8 @@ gray):
 
 > ![](img/t6_js_bin.png)
 
-[![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/76/edit?js,output)
+<a href="http://jsbin.com/qiyuno/76/edit?js,output"
+target="_blank">![](img/open_in_js_bin.png)</a>
 
 The highlighted gray lines above (reproduced below) are responsible for the
 new sprite:

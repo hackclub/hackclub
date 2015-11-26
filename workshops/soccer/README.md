@@ -5,7 +5,7 @@ This tutorial is broken down into two parts:
 In [Part 1](#part-1-single-player-soccer), you learn to build a simple
 single player soccer game by following a clearly outlined set of steps:
 
-[![](img/5_mini.gif)](http://output.jsbin.com/dikevu/34)
+<a href="http://output.jsbin.com/dikevu/34" target="_blank">![](img/5_mini.gif)</a>
 
 <a href="http://output.jsbin.com/dikevu/50" target="_blank">
   ![](img/bttn_play_now.png)

@@ -17,18 +17,20 @@ But for now, we'll settle with this:
 We can add the player sprite with the following code (new code highlighted in
 purple)
 
-> [![](img/2_js_bin_screenshot.png)](http://jsbin.com/qiyuno/14/edit?js,output)
+> <a href="http://jsbin.com/qiyuno/14/edit?js,output"
+> target="_blank">![](img/2_js_bin_screenshot.png)</a>
 
-[![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/14/edit?js,output)
+<a href="http://jsbin.com/qiyuno/14/edit?js,output"
+target="_blank">![](img/open_in_js_bin.png)</a>
 
 The highlighted purple lines above (reproduced below) are responsible for adding
 the player sprite.
 
 ## Tinkering with the values of `createSprite`
 
-![](img/checkmark.png) Open
- [the above JS Bin](http://jsbin.com/qiyuno/14/edit?js,output) and try messing
- around with the starting position of the sprite.
+![](img/checkmark.png) Open <a href="http://jsbin.com/qiyuno/14/edit?js,output"
+target="_blank">the above JS Bin</a> and try messing around with the starting
+position of the sprite.
 
 Here is an example of how I play around with the values of `createSprite` to try
 to understand what it does:

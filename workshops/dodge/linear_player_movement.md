@@ -15,7 +15,8 @@ gray):
 
 > ![](img/3_js_bin.gif)
 
-[![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/15/edit?js,output)
+<a href="http://jsbin.com/qiyuno/15/edit?js,output"
+target="_blank">![](img/open_in_js_bin.png)</a>
 
 The highlighted gray lines above (reproduced below) are responsible for this
 movement:
@@ -60,8 +61,9 @@ There's a bit of subtlety to this that's explained more
 ## Adding The Code
 
 ![](img/challenge.png) **Challenge**: See if you can try making the block move
-faster in the above [example JS Bin](http://jsbin.com/qiyuno/15/edit?js,output).
-Once you've tried it, you can look at a solution
+faster in the above <a href="http://jsbin.com/qiyuno/15/edit?js,output"
+target="_blank">example JS Bin</a>. Once you've tried it, you can look at a
+solution
 [here](https://gist.githubusercontent.com/jonleung/1810b2b784d8afd87f59/raw/95b637cb89e482b975cf75721e755ca8fa4a73bd/anwer.js).
 
 ![](img/checkmark.png) Now add this new code to your **_Working Bin_** to make

@@ -16,7 +16,8 @@ following code (new code highlighted in gray):
 
 > ![](img/t4_js_bin.gif)
 
-[![](img/open_in_js_bin.png)](http://jsbin.com/qiyuno/42/edit?js,output)
+<a href="http://jsbin.com/qiyuno/42/edit?js,output"
+target="_blank">![](img/open_in_js_bin.png)</a>
 
 The highlighted gray lines above (reproduced below) are responsible for the
 arrow key movement:
