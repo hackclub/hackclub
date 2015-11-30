@@ -2,9 +2,9 @@
 
 Welcome! In this workshop you will set up a GitHub Pages Website!
 
-To start you need to have completed the <a
-href="https://github.com/hackedu/hackedu/tree/master/workshops/contrib/cloud9"
-target="_blank">Cloud 9 Workshop.</a>
+To start you need to have completed the
+<a href="https://github.com/hackedu/hackedu/tree/master/workshops/contrib/cloud9" target="_blank">
+Cloud 9 Workshop</a>.
 
 # What is GitHub Pages?
 
@@ -13,7 +13,8 @@ of the workshop you will have a link to get you to your website.
 
 # What is a Repository?
 
-A respository is a location where code and other files can be stored.
+A respository is a location (or folder) where code and other files can be
+stored. The word `repository` is sometimes shortened to `repo`.
 
 # Create a Repository
 
@@ -31,18 +32,28 @@ Go into your Cloud9 workspace and choose an area to clone your repository. You
 want to find the terminal that starts with "bash". If it isnt there open a new
 terminal. (Instructions directly below)
 
-> ![](resources/openterm.gif)
+Now that we have a place to put our code, we want to set up a way to edit our
+code.
 
 1. Get the link for cloning. It is on the right side of your repository. If you
    click the little icon, the link is now on your clipboard.
 
-      > ![](http://goo.gl/BCQIQP)
+     > ![](http://goo.gl/BCQIQP)
 
-2. In the terminal type: git clone [then the link you just copied]
+2. Go into your Cloud9 workspace and open a new terminal (Alt+T, or Window > New
+   Terminal).
 
-      > ![](resources/clone.gif)
+     > ![](resources/openterm.gif)
 
-# Congrats! You can now edit and save in your repository!
+3. In the terminal type: `git clone [then the link you just copied]`
+
+     > ![](resources/clone.gif)
+
+4. Move the terminal into the repository by typing:
+
+       cd [repository name]
+
+**Congrats! You can now edit and save in your repository!**
 
 You should start creating the necessary files for a website. (`index.html`,
 `style.css`, etc)
@@ -56,36 +67,42 @@ your GitHub Repository.
 
 # Commiting and Publishing to GitHub
 
-Once you have made changes in the files you need to put them on GitHub which
-will put it on your website.
+In this part of the workshop, you will learn how to put the code from Cloud9
+into your GitHub repository.
 
-1. **Go into the terminal and type:**
+### Commiting and Publishing to GitHub
 
-        cd [repository name]
+After you make changes to your site on Cloud9 you will need to put the changes on
+GitHub for the changes to show up on your site.
 
-    This puts you into your repository
-
-2. **Add your changes to the commit list by doing...**
+1. **Add your changes to the commit list by doing...**
 
         git add .
 
-3. **Commit your changes with the following format**
+2. **Commit your changes with the following format**
 
         git commit -m "Here you type what the commit does. Keep the quotations."
 
     This will get your changes ready to push to GitHub
 
-4. **Push your changes**
+3. **Push your changes**
 
         git push
 
-    It will ask for your username and password.  
+    It will ask for your username and password.
     Note: When you type your password it wont show up in the terminal.
 
 # Let's Explain What you Just Did
 
-You just used git to push to a repository. Git is a way of organzing files, and
-GitHub adds a user interface to git.
+You just used git to push your repository on Cloud9 to your repository on
+GitHub.
+
+**GitHub and git?**
+
+Git is a tool for organizing the files in your repository, as well as moving
+your repository between Cloud9 and GitHub. Because Git is only controlled
+through the terminal, GitHub is a website that provides a user interface for git
+(buttons and pictures instead of just text).
 
 # So what is the URL?
 
