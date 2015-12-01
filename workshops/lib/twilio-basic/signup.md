@@ -7,7 +7,7 @@ receive text messages and phone calls minimal code. It's used heavily in one of
 our workshops and it's great for projects workshops use it.
 
 Twilio is giving every Hack Club member $100 worth of Twilio credit. This guide
-will walk you through the process if signing up for a Twilio Account.
+will walk you through the process of signing up for a Twilio Account.
 
 ## Creating an Account
 
@@ -19,7 +19,7 @@ Click the `SIGN UP` button:
 
 Fill in your name, email, and password:
 
-**Important**: _Make sure you use your actual email address_
+_Make sure you use your actual email address; you will need to use it soon._
 
 > ![](img/signup_info.gif)
 
@@ -33,22 +33,27 @@ Twilio will send you a text message with a numeric verification code:
 > ![](img/phone_screenshot.png)
 
 Take that verification code (my code was `688 771`) and enter it on the website.
-You might also have a captcha to fill out as well:
+You might also have a captcha to fill out as well.
 
-## IMPORTANT NOTE
+## Setting Up The Phone Number
 
-Do **NOT** buy your own phone number or else the twilio-basic library we use
-will NOT work. The twilio-basic script will buy the phone number for you and
-will do some configuration on the phone number it buys.
+The twilio-basic script used in our workshops will buy the phone number for you
+and will configure the phone number it buys. Do **NOT** buy your own phone
+number or else the twilio-basic library will not work.
 
-If however you're dead set on choosing your own phone number and want to buy
-your own phone number you'll have to manually set the sms callback URL yourself
+If you're dead set on choosing your own phone number and want to buy your own
+phone number you'll have to manually set the sms callback URL yourself.
+
+### Set Up The Callback URL
+
+When Twilio receives a message on your Twilio phone number, it will send the
+message data to the callback URL. Here's how to make the callback URL
 
 To build the the URL for the phone number `+1-484-681-2377`,
 
-- Remove all of the dashes and plusses
+- Remove all of the dashes and pluses
   - `14846812377`
-- Remove the 1
+- Remove the country code
   - `4846812377`
 - Take those digits and append them to "https://dweet.io/dweet/for/"
   - `https://dweet.io/dweet/for/4846812377`
@@ -57,7 +62,7 @@ For the phone number `+1-415-238-0812` the url would be
 `https://dweet.io/dweet/for/4152380812`
 
 To set this as your callback URL, go to the Twilio [incoming phone numbers page]
-(https://www.twilio.com/user/account/phone-numbers/incoming)
+(https://www.twilio.com/user/account/phone-numbers/incoming).
 
 > ![](img/incoming_phone_numbers_page.png)
 
@@ -65,19 +70,20 @@ Click on your phone number
 
 > ![](img/click_on_your_phone_number.png)
 
-Scroll all the way down until you see "SMS & MMS"
-
-Then in the "Request URL", paste in the URL that you made above
+Scroll all the way down until you see "SMS & MMS", then in the "Request URL"
+paste in your callback URL.
 
 > ![](img/update_request_url.gif)
 
-Make sure that the right side is HTTP POST (it should be the default)
+Make sure that the right side is HTTP POST (it should be the default).
 
 > ![](img/http_post.png)
 
-Then click the "Save" button at the bottom
+Then click the "Save" button at the bottom.
 
 ## Upgrading Your Account
+
+_Do not click "Upgrade Account" until the directions tell you to._
 
 > ![](img/type_twilio_texted_code.gif)
 
@@ -92,9 +98,6 @@ Click the "Upgrade your account" button
 You will see this screen:
 
 > ![](img/upgrade_your_account.png)
-
-**Important:** _Do not press the button that submits the form until the
-directions tell you to_
 
 ### Credit Card Info
 
@@ -122,7 +125,7 @@ Leave the "Company/Project URL" and "Phone Number" fields blank
 
 > ![](img/leave_blank.png)
 
-**Entering The Promo Code**
+### Entering The Promo Code
 
 Click "I have a promo code."
 
@@ -148,7 +151,7 @@ After making sure that all the information you entered is correct, click the
 
 > ![](img/click_upgrade_account.png)
 
-You should be greeted a message that looks something like this:
+You should be greeted by a message that looks something like this:
 
 > ![](img/congrats.png)
 
@@ -164,21 +167,21 @@ Click on "Show API Credentials"
 
 > ![](img/show_api_credentials.gif)
 
-Write down your **ACCOUNT SID** and **AUTH TOKEN** somewhere that you
-easily locate again. Make sure you remember which one is which.
+Write down your **ACCOUNT SID** and **AUTH TOKEN** somewhere that you can easily
+retrieve them. Make sure you remember which one is which.
 
 In my case, my ACCOUNT SID is `AC6f0013735dcb2fa4db7e35baa5c7e344`
 and my AUTH TOKEN is `fb83ceb820510cf695cf1f45b157c12f`.
 
 We have what we need!
 
-## If You Live Outside of the North America
+### If You Live Outside of North America
 
-You will want to purchase a phone number from your country. It is important
-that you do this now.
+You will want to purchase a phone number from your country. It is important that
+you do this now.
 
 # Feedback
 
-_Did you find anything confusing or not working in this segment of the
-tutorial? Tell us about it
+_Did you find anything confusing or not working in this segment of the tutorial?
+Tell us about it
 [here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform?entry.1677546962=Signing+up+for+Twilio)._
