@@ -213,10 +213,23 @@ You now know how to
 - Create a new workspace in Cloud9
 - Work with HTML CSS and Javascript together
 
+One last thing. Please click a rating below to rate this workshop. It'll only
+take 3 seconds.
+
+_How likely is it that you would recommend this workshop to a friend?_
+
+| [1][r1] | [2][r2] | [3][r3] | [4][r4] | [5][r5] | [6][r6] | [7][r7] | [8][r8] | [9][r9] | [10][r10] |
+| ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
+
 Be sure to experiment with HTML CSS and Javascript on your own!
 
-# Feedback!
-
-We would <3 your feedback on how we can improve this workshop! Please help
-future hackers have a better experience by leaving feedback
-[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform?entry.1677546962=The+Cloud9+workshop).
+[r1]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=1
+[r2]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=2
+[r3]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=3
+[r4]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=4
+[r5]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=5
+[r6]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=6
+[r7]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=7
+[r8]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=8
+[r9]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=9
+[r10]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=10
