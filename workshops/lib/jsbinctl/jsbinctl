@@ -1,0 +1,79 @@
+#!/bin/bash
+
+show_help() {
+  cat <<EOF
+Usage: $0 [command]
+
+Available commands:
+
+	upload	upload a JS Bin directory to a gist
+	update	upload to a gist and update all references in .md files
+
+EOF
+
+  exit 1
+}
+
+get_dir() {
+  echo $(readlink -f $1)
+}
+
+upload() {
+  local dir=$(get_dir $1)
+  local gist_url=$(gist -ap $dir/*)
+  local gist_id=${gist_url:24} # Chomp off the https://gist.github.com/ portion
+  local jsbin_url="https://gist.jsbin.com/$gist_id"
+
+  echo $jsbin_url
+}
+
+update() {
+  for dir in "$@"; do
+    local dir=$(get_dir $1)
+    local basename=$(basename $dir)
+    local jsbin_url=$(upload $dir)
+
+    echo "I'm about to update all $basename references to the new JS Bin URL"\
+         "($jsbin_url) in $(basename $PWD). Let me continue?"
+    select yn in "Yes" "No"; do
+      case $yn in
+        Yes ) break;;
+        No ) exit;;
+      esac
+    done
+
+    # match groups:
+    #
+    # 1) [example_name]:
+    # 2) https://gist.jsbin.com/old
+    # 3: ?output,html
+    local regex="\(\[$basename\]:\) \([^\?]*\)\(.*\)"
+    local escaped_url=$(echo "$jsbin_url" | sed 's/\//\\\//g') # replace / with \/
+
+    # Do the replace!
+    find . -type f | xargs sed -i "s/$regex/\1 $escaped_url\3/"
+  done
+}
+
+handle_command_line() {
+  local cmd=$1;
+  local args="${*:2}"
+
+  case $cmd in
+    "upload")
+      upload $args
+      ;;
+    "update")
+      update $args
+      ;;
+    *)
+      show_help
+      ;;
+  esac
+}
+
+if [ $# -eq 0 ]; then
+  show_help
+fi
+
+handle_command_line "$@"
