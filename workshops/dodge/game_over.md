@@ -57,6 +57,25 @@ Everything else is minor but important.
 
 > ![](img/celebrate.gif)
 
+One last thing. Please click a rating below to rate this workshop. It'll only
+take 3 seconds.
+
+_How likely is it that you would recommend this workshop to a friend?_
+
+| [1][r1] | [2][r2] | [3][r3] | [4][r4] | [5][r5] | [6][r6] | [7][r7] | [8][r8] | [9][r9] | [10][r10] |
+| ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
+
+[r1]: https://feedback-redir.hackclub.io/1GM13ZyHJMgpIyZZY2DDDCeRmloewKIFTV0dQjgUQDB4?ip=entry.78173348&rfield=entry.559841237&r=1
+[r2]: https://feedback-redir.hackclub.io/1GM13ZyHJMgpIyZZY2DDDCeRmloewKIFTV0dQjgUQDB4?ip=entry.78173348&rfield=entry.559841237&r=2
+[r3]: https://feedback-redir.hackclub.io/1GM13ZyHJMgpIyZZY2DDDCeRmloewKIFTV0dQjgUQDB4?ip=entry.78173348&rfield=entry.559841237&r=3
+[r4]: https://feedback-redir.hackclub.io/1GM13ZyHJMgpIyZZY2DDDCeRmloewKIFTV0dQjgUQDB4?ip=entry.78173348&rfield=entry.559841237&r=4
+[r5]: https://feedback-redir.hackclub.io/1GM13ZyHJMgpIyZZY2DDDCeRmloewKIFTV0dQjgUQDB4?ip=entry.78173348&rfield=entry.559841237&r=5
+[r6]: https://feedback-redir.hackclub.io/1GM13ZyHJMgpIyZZY2DDDCeRmloewKIFTV0dQjgUQDB4?ip=entry.78173348&rfield=entry.559841237&r=6
+[r7]: https://feedback-redir.hackclub.io/1GM13ZyHJMgpIyZZY2DDDCeRmloewKIFTV0dQjgUQDB4?ip=entry.78173348&rfield=entry.559841237&r=7
+[r8]: https://feedback-redir.hackclub.io/1GM13ZyHJMgpIyZZY2DDDCeRmloewKIFTV0dQjgUQDB4?ip=entry.78173348&rfield=entry.559841237&r=8
+[r9]: https://feedback-redir.hackclub.io/1GM13ZyHJMgpIyZZY2DDDCeRmloewKIFTV0dQjgUQDB4?ip=entry.78173348&rfield=entry.559841237&r=9
+[r10]: https://feedback-redir.hackclub.io/1GM13ZyHJMgpIyZZY2DDDCeRmloewKIFTV0dQjgUQDB4?ip=entry.78173348&rfield=entry.559841237&r=10
+
 Congratulations on finishing the game!
 
 ## Quick Fixes
@@ -95,9 +114,3 @@ about? Submit an issue requesting its addition
 | **[![](img/sq_4_arrow_key_movement.gif)    <br> 4.  Arrow Key Movement](arrow_key_movement.md)**    | **[![](img/sq_5_player_image.gif)         <br> 5. Player Image]         (player_image.md)**         | **[![](img/sq_6_add_enemy_sprite.gif)        <br> 6. Add Enemy Sprite]       (add_enemy_sprite.md)**       |
 | **[![](img/sq_7_linear_enemy_movement.gif) <br> 7.  Enemy Sprite Move] (linear_enemy_movement.md)** | **[![](img/sq_8_enemy_go_back_to_top.gif) <br> 8. Enemy Go Back to Top] (enemy_go_back_to_top.md)** | **[![](img/sq_9_random_enemy_position.gif)   <br> 9. Random Enemy Position]  (random_enemy_position.md)**  |
 | **[![](img/sq_10_game_over.gif)            <br> 10. Game Over]         (game_over.md)**             |                                                                                                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**                                            |
-
-# Feedback
-
-_Did you find anything confusing or not working in this segment of the
-tutorial? Tell us about it
-[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform?entry.1677546962=Making+a+Game+Over+in+the+dodging+bullet+game)._
