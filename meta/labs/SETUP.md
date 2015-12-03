@@ -7,7 +7,7 @@ The Labs program will follow this format:
 1. Workshops
   - These are based on the workshops from Hack Camp
   - Labs program workshops can be found in the
-    (playbook)[https://github.com/hackclub/hackclub/tree/master/playbook/workshops]
+    [playbook](https://github.com/hackclub/hackclub/tree/master/playbook/workshops)
 2. Case Studies
   - To collect data from each meeting without core Hack Club team members being
     there, each club meeting will have a case study
