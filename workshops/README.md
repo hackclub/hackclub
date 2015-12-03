@@ -1,22 +1,30 @@
 # Workshops
 
-Your one stop shop for workshops. Our workshops are designed to quickly walk
-club members through the process of building something, like a website or game,
-in a single club meeting.
+Welcome to our workshops library, where you'll find all the workshops offered by
+Hack Club. Choose a track to get started!
 
-The workshops are designed for club members to follow independently (so don't
-have the club follow a workshop on the projector). We recommend sending out a
-link to the workshop(s) using Slack, tlk.io, [Remind](https://www.remind.com/),
-or a similar chat service.
+## Tracks
+
+**HTML + CSS + JS** _learn to make basic websites_
+
+1. [Portfolio](portfolio/README.md) _A simple portfolio website_
+2. [Remote Control](remote_control/README.md) _A website that makes phone
+   calls and texts_
+
+**Games** _make 2D browser games_
+
+1. [Portfolio](portfolio/README.md) _A simple portfolio website_
+2. [Soccer](soccer/README.md) _A simple soccer game_
+3. [Dodge](dodge/README.md) _A bullet dodging game_
+4. [Maze](maze/README.md) _A "Scary Maze Game" clone_
 
 For more recommended guidelines on running workshops,
 [click here](workshop_details.md#general-workshop-facilitation-guidelines).
 
 ## Official Workshops
 
-These are the workshops created and maintained by the Hack Club staff. They are
-listed in the order we suggest running them in, though we encourage you to
-experiment and improve them (we're always hungry for pull requests).
+These workshops are created and maintained by Hack Club staff. We encourage you
+to experiment and improve them (we're always hungry for pull requests).
 
 | Workshop                                   | What You Build                             |
 |--------------------------------------------|--------------------------------------------|
@@ -29,8 +37,7 @@ experiment and improve them (we're always hungry for pull requests).
 ## Community Workshops
 
 In addition to the workshops that the Hack Club staff make, anyone is encouraged
-to create workshops and submit them to this directory. The community workshops
-that have been created so far are listed below in alphabetical order.
+to create workshops and submit them to this directory.
 
 | Workshop                               | What You Build                                                 | Author                                   |
 | -------------------------------------- | -------------------------------------------------------------- | ---------------------------------------- |
