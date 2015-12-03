@@ -23,7 +23,7 @@ workshop below first).
 
 Probably a good decision. Create a beast of a website by following this workshop:
 
-{{GOOGLE DOC HERE}}
+https://drive.google.com/folderview?id=0BxDM7p7t9f-GczV3N0pZTHJmUTQ&usp=sharing
 
 Get it online using: 
 
