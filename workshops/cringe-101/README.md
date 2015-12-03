@@ -2,6 +2,8 @@
 
 ## Introduction
 
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_1FACA745E7A5A03FBF7BCC2AF4856031BAC0AF7B12042E3DC78BDA872B3C6FBC_1448601896772_avoidance.jpg" alt="Cringe.gif" align="right" style="padding: 25px;" />
+
 ### What?
 
 **Cringe 101** will give you **the tools** to create the most cringiest website
@@ -54,6 +56,7 @@ it tells the webpage some key facts that make it run without any hitches.
 
 </html>
 ```
+
 `<html> + <head> + <body>` are all called HTML Tags
 - Tags are what is used to to organize the content of a web page
 
