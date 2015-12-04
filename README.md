@@ -23,22 +23,22 @@
 
 ## About
 
-Hack Club works with high school students to start programming. We provide all
-the tools for starting and leading clubs including a baseline coding curriculum
-and a community of other club leaders.
+Hack Clubs are after-school communities at high schools where people build
+things together. This repo contains the tools for starting and leading great
+clubs.
 
 ## Contributing
 
-Regardless of whether you're part of Hack Club, we would love you to you to
-check out and contribute to this repository. You can start by checking out
-[`CONTRIBUTING.md`](CONTRIBUTING.md).
+Hack Club is built by a community of volunteers and a small team of full-time
+staff. Submit a contribution and help grow coding communities in more high
+schools. Start by checking out [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Additional Links
 
 | Resource         | Link                                               |
 |------------------|----------------------------------------------------|
-| Give us feedback | https://github.com/hackclub/hackclub/issues        |
-| Blog             | https://medium.com/hack-edu                        |
+| File an issue    | https://github.com/hackclub/hackclub/issues        |
+| Blog             | https://blog.hackclub.io/                          |
 | Facebook         | https://www.facebook.com/Hack-Club-741805665870458 |
 | Twitter          | http://twitter.com/starthackclub                   |
 
