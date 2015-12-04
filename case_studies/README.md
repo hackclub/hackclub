@@ -6,8 +6,9 @@ still submit them :-)._
 
 -------------------------------------------------------------------------------
 
-This directory contains case studies of events from the [Labs](../meta/labs)
-clubs and any others that choose to participate.
+This directory contains case studies of events from
+[Labs](https://github.com/hackclub/meta/blob/master/labs/README.md) clubs and
+any other clubs that choose to participate.
 
 A case study is written for each of a club's events. Each case study is a story
 that paints a up-close, in-depth, and context-rich picture of all the planning
