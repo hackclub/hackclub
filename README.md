@@ -26,7 +26,9 @@ check out and contribute to this repository.
 Important links:
 
 - [Workshops](workshops/README.md) :: Workshops for use in clubs
-- https://slack.hackclub.io :: Join our [Slack](https://slack.com/) community
+- https://slack.hackclub.io :: Join our [Slack](https://slack.com) community
+- Our [chat logs](http://starthackclub.slackarchive.io/) are public if you want
+  to see what we're talking about
 
 ## Questions? Comments? Concerns?
 
