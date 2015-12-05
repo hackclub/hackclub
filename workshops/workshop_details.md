@@ -77,9 +77,9 @@ To be added.
 
 --------------------------------------------------------------------------------
 
-## Remote Control
+## Intro to Twilio
 
-![](img/remote_control.png)
+![](img/twilio.png)
 
 Learn to make a web app that calls your friend and plays a song when you press a
 button.
@@ -153,7 +153,7 @@ the credentials for all of the examples (via local storage).
 
 ##### The Workshop
 
-- [Hacker Facing Workshop](remote_control/README.md)
+- [Hacker Facing Workshop](twilio/README.md)
 
 ##### Demos
 

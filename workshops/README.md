@@ -8,7 +8,7 @@ Hack Club. Choose a track to get started!
 **HTML + CSS + JS** _learn to make basic websites_
 
 1. [Portfolio](portfolio/README.md) _A simple portfolio website_
-2. [Remote Control](remote_control/README.md) _A website that makes phone
+2. [Twilio](twilio/README.md) _A website that makes phone
    calls and texts_
 
 **Games** _make 2D browser games_
@@ -26,13 +26,13 @@ For more recommended guidelines on running workshops,
 These workshops are created and maintained by Hack Club staff. We encourage you
 to experiment and improve them (we're always hungry for pull requests).
 
-| Workshop                                   | What You Build                             |
-|--------------------------------------------|--------------------------------------------|
-| [Portfolio](portfolio/README.md)           | A simple portfolio website                 |
-| [Remote Control](remote_control/README.md) | A website that makes phone calls and texts |
-| [Soccer](soccer/README.md)                 | A simple soccer game                       |
-| [Dodge](dodge/README.md)                   | A bullet dodging game                      |
-| [Maze](maze/README.md)                     | A "Scary Maze Game" clone                  |
+| Workshop                         | What You Build                             |
+|----------------------------------|--------------------------------------------|
+| [Portfolio](portfolio/README.md) | A simple portfolio website                 |
+| [Twilio](twilio/README.md)       | A website that makes phone calls and texts |
+| [Soccer](soccer/README.md)       | A simple soccer game                       |
+| [Dodge](dodge/README.md)         | A bullet dodging game                      |
+| [Maze](maze/README.md)           | A "Scary Maze Game" clone                  |
 
 ## Community Workshops
 
