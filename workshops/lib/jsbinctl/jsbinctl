@@ -20,8 +20,19 @@ get_dir() {
 
 upload() {
   local dir=$(get_dir $1)
-  local gist_url=$(gist -ap $dir/*)
-  local gist_id=${gist_url:24} # Chomp off the https://gist.github.com/ portion
+
+  # We have to split this up into multiple lines because the `local` command
+  # always returns 0 if used properly. We later want to use $? to see the exit
+  # status of the gist command.
+  local gist_output
+  gist_output=$(gist -ap $dir/*)
+  # If gist outputted an error, print its output and exit
+  if [ $? -ne 0 ]; then
+    echo $gist_output
+    exit $?
+  fi
+
+  local gist_id=${gist_output:24} # Chomp off the https://gist.github.com/ part
   local jsbin_url="https://gist.jsbin.com/$gist_id"
 
   echo $jsbin_url
