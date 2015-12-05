@@ -3,7 +3,7 @@
 ## What Happened
 
 - Meeting was cancelled due to power outage at school.
-- Cancelled Meet to Monday 9/19
+- Cancelled Meet to Monday 11/04
 
 ## Problems we faced
 
