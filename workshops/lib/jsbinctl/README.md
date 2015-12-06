@@ -7,7 +7,7 @@ Make sure you have the [`gist`](https://github.com/defunkt/gist) gem installed
 before proceeding.
 
 Here's how it works. Your workshop directory structure should look like the
-following (where `how-to-make-a-plumbus` is your workshop):
+following (where `how_to_make_a_plumbus` is your workshop):
 
 ```
 workshops/
@@ -36,11 +36,12 @@ to these in your workshop's Markdown as follows:
 Let's build a plumbus. By the end of this workshop, we're going to end up with a
 plumbus that looks like [this][plumbus_prototype].
 
-[plumbus_prototype]: https://gist.jsbin.com/<gist_id>
+[plumbus_prototype]: https://jsbin.com/gist/206702bfb42906ab3dbf?output
 ```
 
-You can get the `<gist_id>` to use in the link by running `jsbinctl upload
-examples/<directory_name>`.
+You'll want to replace the included JS Bin link with your JS Bin URL. You can
+get one by running `jsbinctl upload examples/<directory_name>` (replacing
+`<directory_name>` with the name of the directory of the example to upload.)
 
 After you make changes to the local JS Bin example and want to update the link
 in the workshop, you can run `jsbinctl update examples/plumbus_prototype` to
@@ -48,3 +49,22 @@ update all reference links to the `plumbus_prototype` example.
 
 If you want to update all of the JS Bins example links, then run `jsbinctl
 update examples/*` and it'll take care of that for you.
+
+`jsbinctl` doesn't replace the JS Bin example's query string, allowing you to
+specify options like `?output` (if you only want the JS Bin to show the rendered
+output) and `?html,css` (if you only want the HTML and CSS of the JS Bin to be
+shown). It also will replace all reference links that _start_ with the JS Bin
+example directory (so you can have mutliple reference links for the same
+directory). The following examples are all valid:
+
+```md
+Let's talk some more about the plumbus. [Click here][plumbus_prototype_output]
+to see just our final output from this tutorial.
+[Click here](plumbus_prototype_code) to see just the code (with no output). And
+[click here](plumbus_prototype_js) to see just our JavaScript and rendered
+output.
+
+[plumbus_prototype_output]: https://jsbin.com/gist/206702bfb42906ab3dbf?output
+[plumbus_prototype_code]: https://jsbin.com/gist/206702bfb42906ab3dbf?html,css,js
+[plumbus_prototype_js]: https://jsbin.com/gist/206702bfb42906ab3dbf?js
+```
