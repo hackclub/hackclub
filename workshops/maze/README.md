@@ -50,7 +50,7 @@ Let's understand the code in your working bin. There are two main parts:
 
 ### Adding the Maze Sprite
 
-Here is the top half of the code that is responsible for adding the maze sprite:
+Here is the top half of the code that is responsible for adding the maze [sprite](https://github.com/hackclub/hackclub/tree/master/workshops/dodge#some-terminology):
 
 ```js
 var maze;
