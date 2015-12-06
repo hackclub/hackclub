@@ -33,7 +33,7 @@ upload() {
   fi
 
   local gist_id=${gist_output:24} # Chomp off the https://gist.github.com/ part
-  local jsbin_url="https://gist.jsbin.com/$gist_id"
+  local jsbin_url="https://jsbin.com/gist/$gist_id"
 
   echo $jsbin_url
 }
