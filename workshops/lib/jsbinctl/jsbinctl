@@ -56,9 +56,9 @@ update() {
     # match groups:
     #
     # 1) [example_name]:
-    # 2) https://gist.jsbin.com/old
-    # 3: ?output,html
-    local regex="\(\[$basename\]:\) \([^\?]*\)\(.*\)"
+    # 2) https://gist.jsbin.com/oldgistid
+    # 3) ?output,html
+    local regex="\(\[$basename.*\]:\) \([^\?]*\)\(.*\)"
     local escaped_url=$(echo "$jsbin_url" | sed 's/\//\\\//g') # replace / with \/
 
     # Do the replace!
