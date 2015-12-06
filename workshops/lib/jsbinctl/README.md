@@ -47,8 +47,8 @@ After you make changes to the local JS Bin example and want to update the link
 in the workshop, you can run `jsbinctl update examples/plumbus_prototype` to
 update all reference links to the `plumbus_prototype` example.
 
-If you want to update all of the JS Bins example links, then run `jsbinctl
-update examples/*` and it'll take care of that for you.
+If you want to update all of the JS Bin example links, then run `jsbinctl update
+examples/*` and it'll take care of that for you.
 
 `jsbinctl` doesn't replace the JS Bin example's query string, allowing you to
 specify options like `?output` (if you only want the JS Bin to show the rendered
