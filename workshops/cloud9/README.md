@@ -16,6 +16,11 @@ __Imporatant__: if you're having trouble, checkout the
 
 -------------------------------------------------------------------------------
 
+## Tips And Tricks
+
+To open a link in another tab, right click on the link and select `Open In New
+Tab`.
+
 ## Login with GitHub
 
 First, make sure you have a github account. If you don't have one, follow the
