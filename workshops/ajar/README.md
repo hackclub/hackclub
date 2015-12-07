@@ -21,6 +21,14 @@ been written):
 
 __More coming soon...__
 
+## Tips And Tricks
+
+1. To open a link in another tab, right click on the link and select `Open In
+   New Tab`.
+2. When copying code from this workshop to your project try retyping the code
+   yourself instead of using your copy-pasting shortcuts. Forcing yourself to
+   read through the code as you retype it can help increase your understanding.
+
 ## Part 1
 
 In this part you're going to learn to display the user's cell on-screen using
