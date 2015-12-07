@@ -1031,8 +1031,7 @@ var foodPositions = [[30, 20], [400, 90], [60, 317], [300, 268]];
 We now want to "generalize" (more accurately *abastract*) the `drawScreen`
 function to draw any type of circle, not just the user's cell.
 
-Let's remeber how we draw a circle
-([here's a link to when we did this earlier](#drawingArc)):
+Let's remeber how we draw a circle.
 
 ```js
 context.arc(x, y, radius, startAngle, endAngle);
