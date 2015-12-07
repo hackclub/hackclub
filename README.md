@@ -4,6 +4,10 @@ Welcome! This is our internal repo we use for running
 [Hack Club](https://hackclub.io), warts and all. We're excited to have you
 involved.
 
+Links (more soon to be added):
+
+- [GitHub Teams](github_teams.md) - How we manage our GitHub teams
+
 ## Vision and Mission
 
 **Vision:** A future where everyone is a hacker.
