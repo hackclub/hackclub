@@ -34,6 +34,8 @@ To create a new workspace you can either select the create a new workspace
 option under workspaces, or click the new workspace button at the top right of
 your screen.
 
+![New workspace buttons](img/new-workspace.png)
+
 Next set your workspace name to *html-css-javascript-basics*, and your
 description to *Learning to use html css and javascript together*. Make your
 workspace public, skip the *Clone from Git or Mercurial URL* option and set your
