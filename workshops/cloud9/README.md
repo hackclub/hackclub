@@ -28,7 +28,7 @@ below:
 
 ![](img/github-login.gif)
 
-## Create a new workspace
+## Create a New Workspace
 
 To create a new workspace you can either select the create a new workspace
 option under workspaces, or click the new workspace button at the top right of
@@ -44,7 +44,7 @@ of your page and you should be prompted to this screen.
 
 ![](img/open-screen.gif)
 
-## Using HTML CSS and Javascript together in Cloud9
+## Using HTML CSS and Javascript Together in Cloud9
 
 First we will create a new folder. To do this right click the workspace bar on
 the left and select *New Folder*. You can name this folder whatever you like.
@@ -76,7 +76,7 @@ version of your html file.
 
 ![](img/preview.gif)
 
-### Adding CSS to your HTML
+### Adding CSS to Your HTML
 
 Next lets add some style to our button. In your *style.css* file add the
 following code
@@ -96,7 +96,7 @@ following code
 }
 ```
 
-### New Concept CSS selectors
+#### CSS Selectors
 
 In CSS, selectors are patterns used to select the element(s) you want to style.
 If we were to do
@@ -146,7 +146,7 @@ attribute should be the location of your css file. Since our css file is in the
 same folder as our html all we have to do is set the value of *href* to the name
 of our css file.
 
-### Adding Javascript to your HTML
+### Adding Javascript to Your HTML
 
 Next lets add some Javascript. Inside your *index.js* file add the following
 code.
@@ -159,7 +159,7 @@ button.onclick = function () {
 }
 ```
 
-> #### Understanding the code
+**Understanding the code**
 
 > In our javascript file we start of by creating a variable called *button* and
 > set it equal to the element in our html that has an *id* of *alertButton*.
