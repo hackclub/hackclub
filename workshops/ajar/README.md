@@ -74,11 +74,11 @@ Cloud9 (no copy-pasting :p):
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Ajar.io</title>
-</head>
-<body>
-</body>
+  <head>
+    <title>Ajar.io</title>
+  </head>
+  <body>
+  </body>
 </html>
 ```
 
@@ -257,10 +257,10 @@ To recap, in [part 1](#part-1) you learned about:
 - **JavaScript variables**: used to store data values. Declared using the `var`
   keyword. You can make variables like this:
 
-```js
-var x = 10 * 2;
-var name = "Bogdan";
-```
+  ```js
+  var x = 10 * 2;
+  var name = "Bogdan";
+  ```
 
 - **Drawing on the canvas**: the HTML `<canvas>` element is used to draw
   graphics, on the fly, via scripting (usually JavaScript). You obtain the
@@ -284,7 +284,7 @@ A function looks like this:
 
 ```js
 function name() {
-    // code to be executed goes here <-- That is a comment
+  // code to be executed goes here <-- That is a comment
 }
 ```
 
@@ -310,7 +310,7 @@ Let's make another function.
 
 ```js
 function addOne(myNumber) {
-    myNumber = myNumber + 1;
+  myNumber = myNumber + 1;
 }
 ```
 
@@ -352,17 +352,17 @@ So `myNumber` becomes `6`.
 Right now your code should look like this:
 > `Index.html`
 > ```html
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Ajar.io</title>
-</head>
-<body>
-    <canvas id="canvas" width="500px" height="500px"></canvas>
-    <script type="text/javascript" src="app.js"></script>
-</body>
-</html>
-```
+> <!DOCTYPE html>
+> <html>
+>   <head>
+>     <title>Ajar.io</title>
+>   </head>
+>   <body>
+>     <canvas id="canvas" width="500px" height="500px"></canvas>
+>     <script type="text/javascript" src="app.js"></script>
+>   </body>
+> </html>
+> ```
 
 > `App.js`
 > ```js
@@ -394,10 +394,10 @@ from above in it:
 
 ```js
 function drawUserCell() {
-    context.beginPath();
-    context.arc(250, 250, 40, 0, 2*3.14159);
-    context.fillStyle = "cyan";
-    context.fill();
+  context.beginPath();
+  context.arc(250, 250, 40, 0, 2*3.14159);
+  context.fillStyle = "cyan";
+  context.fill();
 }
 ```
 
@@ -489,8 +489,8 @@ moved. Here it is:
 
 ```js
 function mouseMoved(mouse) {
-    x = mouse.clientX;
-    y = mouse.clientY;
+  x = mouse.clientX;
+  y = mouse.clientY;
 }
 ```
 
@@ -535,9 +535,9 @@ function:
 
 ```js
 function mouseMoved(mouse) {
-    x = mouse.clientX;
-    y = mouse.clientY;
-    drawUserCell(); <== NEW
+  x = mouse.clientX;
+  y = mouse.clientY;
+  drawUserCell(); <== NEW
 }
 ```
 
@@ -589,10 +589,10 @@ Let's put all this into a function called `clearCanvas`:
 
 ```js
 function clearCanvas() {
-    context.beginPath();
-    context.rect(0, 0, 500, 500);
-    context.fillStyle = "white";
-    context.fill();
+  context.beginPath();
+  context.rect(0, 0, 500, 500);
+  context.fillStyle = "white";
+  context.fill();
 }
 ```
 
@@ -601,10 +601,10 @@ the cell:
 
 ```js
 function mouseMoved(mouse) {
-    x = mouse.clientX;
-    y = mouse.clientY;
-    clearCanvas(); <== NEW
-    drawUserCell();
+  x = mouse.clientX;
+  y = mouse.clientY;
+  clearCanvas(); <== NEW
+  drawUserCell();
 }
 ```
 
@@ -641,10 +641,10 @@ called `drawUserCell`:
 
 ```js
 function drawUserCell() {
-    context.beginPath();
-    context.arc(250, 250, 40, 0, 2*3.14159);
-    context.fillStyle = "cyan";
-    context.fill();
+  context.beginPath();
+  context.arc(250, 250, 40, 0, 2*3.14159);
+  context.fillStyle = "cyan";
+  context.fill();
 }
 ```
 
@@ -686,9 +686,9 @@ First though, let's set up the function named `drawScreen`:
 
 ```js
 function drawScreen() {
-    clearCanvas();
-    drawUserCell();
-    setTimeout(drawScreen, 1000/60);
+  clearCanvas();
+  drawUserCell();
+  setTimeout(drawScreen, 1000/60);
 }
 ```
 
@@ -788,8 +788,8 @@ updating `x` and `y` to updating `mouseX` and `mouseY`:
 
 ```js
 function mouseMoved(e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+  mouseX = e.clientX;
+  mouseY = e.clientY;
 }
 ```
 
@@ -802,9 +802,9 @@ It looks like this:
 
 ```js
 if (3 > 2) {
-    // code to run if condition is true
+  // code to run if condition is true
 } else {
-    // code to run if condition is false
+  // code to run if condition is false
 }
 ```
 
@@ -820,9 +820,9 @@ Let's try another one:
 var x = 1;
 
 if (x > 2) {
-    // code to run if condition is true
+  // code to run if condition is true
 } else {
-    // code to run if condition is false
+  // code to run if condition is false
 }
 ```
 
@@ -839,50 +839,52 @@ Here's the code:
 
 ```js
 function calculatePosition() {
-    // For the x-axis
-    if (mouseX > x) {
-        x = x + velocity;  // mouse is to the right of the ball
-    } else {
-        x = x - Velocity;  // mouse is to the left of the ball
-    }
+  // For the x-axis
+  if (mouseX > x) {
+    x = x + velocity;  // mouse is to the right of the ball
+  } else {
+    x = x - Velocity;  // mouse is to the left of the ball
+  }
 
-    // For the y-axis
-    if (mouseY > y) {
-        y = y + velocity;  // mouse is under ball
-    } else {
-        y = y - Velocity;  // mouse is above ball
-    }
+  // For the y-axis
+  if (mouseY > y) {
+    y = y + velocity;  // mouse is under ball
+  } else {
+    y = y - Velocity;  // mouse is above ball
+  }
 }
 ```
 
-> #### Understanding the code
->
+**Understanding The Code**
+
 > Although this code may look intimidating, it's not hard at all — promise.
->
+
 > `function calculatePosition()` - We declare a function called
-  `calculatePosition`.
->
+> `calculatePosition`.
+
 > `if (mouseX > x)` - The code in the `if` statement will run if the x value of
-  the mouse (`mouseX`) is greater than (`>`) the x value of the circle (`x`).
-  Your goal is to get `x` closer to `mouseX` so when `mouseX` is larger you must
-  increase `x`. And that's exactly what you do:
-  ```js
-  x = x + velocity;
-  ```
->
+> the mouse (`mouseX`) is greater than (`>`) the x value of the circle (`x`).
+> Your goal is to get `x` closer to `mouseX` so when `mouseX` is larger you must
+> increase `x`. And that's exactly what you do:
+
+> ```js
+> x = x + velocity;
+> ```
+
 > `else` - The code in the `else` statement will run if the condition is false.
-  in this case the condition is false if `mouseX` is less than (`<`) `x`. When
-  `mouseX` is less than `x` we must reduce `x` to get it closer to `mouseX`.
-  And that's exactly what you do:
-  ```js
-  x = x - Velocity;
-  ```
->
+> in this case the condition is false if `mouseX` is less than (`<`) `x`. When
+> `mouseX` is less than `x` we must reduce `x` to get it closer to `mouseX`. And
+> that's exactly what you do:
+
+> ```js
+> x = x - Velocity;
+> ```
+
 > The same explanations apply to the y-axis code.
->
+
 > *__Note__: it is not entirely accurate that the opposite of `mouseX > x` is
-  `mouseX < x`. In fact the wiggling you'll see in a minute is partly due to
-  this approximation. Use this hint for Challenge #1.*
+> `mouseX < x`. In fact the wiggling you'll see in a minute is partly due to
+> this approximation. Use this hint for Challenge #1.*
 
 ### Invoking the `calculatePosition` function
 
@@ -899,10 +901,10 @@ function:
 
 ```js
 function drawScreen() {
-    clearCanvas();
-    calculatePosition();  <-- NEW
-    drawUserCell();
-    setTimeout(drawScreen, 1000/60);
+  clearCanvas();
+  calculatePosition();  <-- NEW
+  drawUserCell();
+  setTimeout(drawScreen, 1000/60);
 }
 ```
 
@@ -1002,7 +1004,7 @@ We'll first start off by changing the name of the `drawUserCell` function to
 
 ```js
 function drawCircle () {
-    ...
+  ...
 }
 ```
 
@@ -1010,10 +1012,10 @@ Next we'll add some parameters:
 
 ```js
 function drawCircle(circleX, circleY, radius) {
-    context.beginPath();
-    context.arc(circleX, circleY, radius, 0, 2*3.14159);
-    context.fillStyle = "cyan";
-    context.fill();
+  context.beginPath();
+  context.arc(circleX, circleY, radius, 0, 2*3.14159);
+  context.fillStyle = "cyan";
+  context.fill();
 }
 ```
 
@@ -1049,49 +1051,49 @@ var velocity = 2;
 var foodPositions = [[30, 20], [400, 90], [60, 317], [300, 268]];
 
 function drawCircle(cellX, cellY, radius) {
-    context.beginPath();
-    context.arc(cellX, cellY, radius, 0, 2*3.14159);
-    context.fillStyle = "cyan";
-    context.fill();
+  context.beginPath();
+  context.arc(cellX, cellY, radius, 0, 2*3.14159);
+  context.fillStyle = "cyan";
+  context.fill();
 }
 
 function clearCanvas() {
-    context.beginPath();
-    context.rect(0, 0, 500, 500);
-    context.fillStyle = "white";
-    context.fill();
+  context.beginPath();
+  context.rect(0, 0, 500, 500);
+  context.fillStyle = "white";
+  context.fill();
 }
 
 function calculatePosition() {
-    // For the x-axis
-    if (mouseX > x) {
-        x = x + velocity;  // mouse is to the right of the ball
-    } else {
-        x = x - Velocity;  // mouse is to the left of the ball
-    }
+  // For the x-axis
+  if (mouseX > x) {
+    x = x + velocity;  // mouse is to the right of the ball
+  } else {
+    x = x - Velocity;  // mouse is to the left of the ball
+  }
 
-    // For the y-axis
-    if (mouseY > y) {
-        y = y + velocity;  // mouse is under ball
-    } else {
-        y = y - Velocity;  // mouse is above ball
-    }
+  // For the y-axis
+  if (mouseY > y) {
+    y = y + velocity;  // mouse is under ball
+  } else {
+    y = y - Velocity;  // mouse is above ball
+  }
 }
 
 function drawScreen() {
-    clearCanvas();
-    calculatePosition();
-    drawCircle(x, y, 40);
-    drawCircle(foodPositions[0][0], foodPositions[0][1], 10);
-    drawCircle(foodPositions[1][0], foodPositions[1][1], 10);
-    drawCircle(foodPositions[2][0], foodPositions[2][1], 10);
-    drawCircle(foodPositions[3][0], foodPositions[3][1], 10);
-    setTimeout(drawScreen, 1000/60);
+  clearCanvas();
+  calculatePosition();
+  drawCircle(x, y, 40);
+  drawCircle(foodPositions[0][0], foodPositions[0][1], 10);
+  drawCircle(foodPositions[1][0], foodPositions[1][1], 10);
+  drawCircle(foodPositions[2][0], foodPositions[2][1], 10);
+  drawCircle(foodPositions[3][0], foodPositions[3][1], 10);
+  setTimeout(drawScreen, 1000/60);
 }
 
 function mouseMoved(e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+  mouseX = e.clientX;
+  mouseY = e.clientY;
 }
 
 canvas.addEventListener("mousemove", mouseMoved);
