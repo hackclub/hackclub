@@ -1,4 +1,4 @@
-# Remote Control
+# Introduction to Twilio
 
 The objective of this workshop is to learn how to wield powerful
 [APIs](http://www.quora.com/What-is-an-API) with minimal code.
