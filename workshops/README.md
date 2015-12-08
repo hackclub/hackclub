@@ -43,4 +43,4 @@ to create workshops and submit them to this directory.
 | -------------------------------------- | -------------------------------------------------------------- | ---------------------------------------- |
 | [Ajar.io](ajar/README.md)              | A clone of Agar.io                                             | [@Bogidon](https://github.com/Bogidon)   |
 | [Cloud9](cloud9/README.md)             | A fully configured Cloud9 account ready to use for development | [@Bogidon](https://github.com/Bogidon)   |
-| [GitHub Pages](github-pages/README.md) | Get your website online using GitHub's free hosting service    | [@sethtrei](https://github.com/sethtrei) |
+| [GitHub Pages](github_pages/README.md) | Get your website online using GitHub's free hosting service    | [@sethtrei](https://github.com/sethtrei) |
