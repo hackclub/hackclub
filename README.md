@@ -15,11 +15,11 @@
 
 ## Where to Start:
 
-| Action                                  | Link                                        |
-|-----------------------------------------|---------------------------------------------|
-| Chat with us _(we're here almost 24/7)_ | https://slack.hackclub.io                   |
-| Start a club                            | https://hackclub.io/apply                   |
-| See our workshops                       | https://workshops.hackclub.io               |
+| Action                                  | Link                          |
+| --------------------------------------- | ----------------------------- |
+| Chat with us _(we're here almost 24/7)_ | https://slack.hackclub.io     |
+| Start a club                            | https://hackclub.io/apply     |
+| See our workshops                       | https://workshops.hackclub.io |
 
 ## About
 
@@ -35,12 +35,12 @@ schools. Start by checking out [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Additional Links
 
-| Resource         | Link                                               |
-|------------------|----------------------------------------------------|
-| File an issue    | https://github.com/hackclub/hackclub/issues        |
-| Blog             | https://blog.hackclub.io/                          |
-| Facebook         | https://www.facebook.com/Hack-Club-741805665870458 |
-| Twitter          | http://twitter.com/starthackclub                   |
+| Resource      | Link                                               |
+| ------------- | -------------------------------------------------- |
+| File an issue | https://github.com/hackclub/hackclub/issues        |
+| Blog          | https://blog.hackclub.io/                          |
+| Facebook      | https://www.facebook.com/Hack-Club-741805665870458 |
+| Twitter       | http://twitter.com/starthackclub                   |
 
 ## License
 
