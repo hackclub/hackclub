@@ -25,7 +25,7 @@ Probably a good decision. Create a beast of a website by following this workshop
 
 https://drive.google.com/folderview?id=0BxDM7p7t9f-GczV3N0pZTHJmUTQ&usp=sharing
 
-Get it online using: 
+Get it online using:
 
 https://hackpad.com/Basic-Git-and-Github-gOQpi30cvG8
 
@@ -47,42 +47,36 @@ it tells the webpage some key facts that make it run without any hitches.
 ```html
 <!DOCTYPE html>
 <html>
-  <head> 
+  <head>
     <link href="main.css" rel="stylesheet">
   </head>
-  <body> 
-  
+  <body>
   </body>
-
 </html>
 ```
 
 `<html> + <head> + <body>` are all called HTML Tags
 - Tags are what is used to to organize the content of a web page
-
 `<html>` → Called the opening tag
-`</html>` → Called the closing tag 
+`</html>` → Called the closing tag
 - The difference is the forward slash before the name ( / )
 - Almost all HTML tags have both an opening and closing tag
   - Ones that don’t we will discuss
 - This organizes the website
   - We don’t want our `<head>` section in our body section, so we close that
     before opening our `<body>` tag
-
-`<!DOCTYPE html>` 
+`<!DOCTYPE html>`
 - Placed at the top of your document
 - It is an instruction to the web browser about what version of HTML the page is
   written in.
-- It automatically defaults to the most recent release 
+- It automatically defaults to the most recent release
   - HTML5 is the most recent release of HTML
-
-`<html>` 
-- Encloses the entirety of the rest of the document. 
-  - All of your following code should go inside here. 
+`<html>`
+- Encloses the entirety of the rest of the document.
+  - All of your following code should go inside here.
 - It tells the browser that this everything inside of this tag is HTML code
-
-`<head>` 
-- Encloses the code that you don’t want to show up on the page 
+`<head>`
+- Encloses the code that you don’t want to show up on the page
   - Includes linking to the CSS file
 - HTML and CSS are dumb. They make no association unless told to do so.
 `<link href="main.css rel="stylesheet">` is linking the CSS file to the HTML
@@ -92,9 +86,8 @@ it tells the webpage some key facts that make it run without any hitches.
     - All CSS files must end with .css → All HTML files must end with .html
   - `rel=stylesheet` is telling the program that the type of file is a
     stylesheet, or CSS file
- 
- `<body>` 
-- <body> tag represents the content of an HTML document. 
+ `<body>`
+- <body> tag represents the content of an HTML document.
   - There can be only one `<body>` element in a document.
 
 ## NOTE: MAKE SURE YOU CLOSE YOUR TAGS
@@ -105,14 +98,14 @@ it tells the webpage some key facts that make it run without any hitches.
 
 ## GIFs
 
-- GIFs supports animations — so we can get a video! 
-  - GIFs stands for Graphics Interchange Format 
+- GIFs supports animations — so we can get a video!
+  - GIFs stands for Graphics Interchange Format
 
-They deliver beauties like this: 
+They deliver beauties like this:
 
 
 
-F***kin’ Fabulous. 
+F***kin’ Fabulous.
 
 
 
@@ -126,13 +119,13 @@ To add an image, use the image tag:
   - img is the tag name → This is self-closing, meaning there is no a closing
     tag like </img>
   - src is an attribute that specifies the URL of the image
-    - Think of it like a setting 
+    - Think of it like a setting
   - Add the URL (redirected to image) between the quotes
 
 http://imgur.com/ is a website where you can upload and then get a link to the
 image
 
-- HTML is used for content 
+- HTML is used for content
   - Like the skeleton (sp00ky) of a body
 - CSS is used to change the way things look and feel
   - Like the colour, width, height of your face/skin
@@ -169,11 +162,11 @@ example.
   selector right now. `h1`
   - To solve this and create **custom CSS selectors**, in HTML → This is called
     creating a class
-  
+
 - After **keyword** (`<div, <body, <h1, <head`) of **any tag** type
   **class="class-name"** to create a class
   - `<body class=class-name"> </body>`
-  - These must no capitals and spaces are replaced by dashes 
+  - These must no capitals and spaces are replaced by dashes
 
 Access this in CSS file by using a dot before your class-name and then the
 normal syntax.
@@ -186,56 +179,45 @@ the url is value
 
 https://preview.c9users.io/jevinsidhu/cringe-101/index.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io
 
-
     <!DOCTYPE html>
     <html>
-        
-      <head> 
+      <head>
         <link href="main.css" rel="stylesheet">
       </head>
-    
-    
         <body class="who">
     <a href="god.html"></a>
-    
-    
          </body>
-    
     </html>
-    
+
 --------------------------------------------------------------------------------
 
     <!DOCTYPE html>
     <html>
-        
-      <head> 
-        <link href="main.css" rel="stylesheet">
-      </head>
-    
-          <body class="god"> 
-    
-          </body>
-    
+        <head>
+          <link href="main.css" rel="stylesheet">
+        </head>
+        <body class="god">
+        </body>
     </html>
 
 --------------------------------------------------------------------------------
 
-     html, body {
-         margin: 0; 
-         padding: 0; 
-         width: 100%; 
-         height: 100%; 
-     }
-    a { 
-        display: block; 
-        width: 100%; 
-        height: 100%; 
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
     .who {
-        background:url("https://media3.giphy.com/media/9RTiWDExHW6aY/200.gif ");
+      background:url("https://media3.giphy.com/media/9RTiWDExHW6aY/200.gif ");
     }
     .god {
-        background:url("https://media.giphy.com/media/6rclMe3lUIQNi/giphy.gif ");
+      background:url("https://media.giphy.com/media/6rclMe3lUIQNi/giphy.gif ");
     }
 
 ## Fonts
@@ -264,33 +246,39 @@ on your site.
 8. Since it’s a CSS file, you know what that means! Copy the code & paste in
    your head
 
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-      </head>
-    </html>
-    
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+</html>
+```
 
 Now that we added the font, we can actually change our text to the font we like
 using CSS!
 
 In the example below, we changed all the text to the desired font by using the
-property **font-family** on the body tag. However, if you want to be really cringy,
-use different fonts for every different piece of text using more specific tags.
+property **font-family** on the body tag. However, if you want to be really
+cringy, use different fonts for every different piece of text using more
+specific tags.
 
-    body {
-        font-family: 'Open Sans';
-        color:#000;
-        font-size:10px
-        font-weight:300;
-    }
+```css
+body {
+  font-family: 'Open Sans';
+  color:#000;
+  font-size:10px
+  font-weight:300;
+}
+```
 
-Tip — Along with changing the fonts, change the colors and thickness `(font-weight)` of the different text as well to see your friends cringe even more!
+Tip — Along with changing the fonts, change the colors and thickness
+`(font-weight)` of the different text as well to see your friends cringe even
+more!
 
 ## Pseudo - Classes
 
-We worked with pseudo - classes in the 9 doors workshop 
+We worked with pseudo - classes in the 9 doors workshop
 
 You can revisit that workshop for more extensive overview of them, but here’s a
 quick recap
@@ -300,9 +288,11 @@ A **pseudo-class** is an **exception to a set of rules you created in CSS**.
   the new set_
 - Pseudo-classes are activated by adding them to a CSS selector like this
 
-    h1:hover {
-       color: red;
-    }
+```css
+h1:hover {
+  color: red;
+}
+```
 
 The **h1** is the tag from the html we are working with. The **:hover** is the
 pseudo - class or exception you have added. In this case by adding **:hover**
@@ -320,9 +310,9 @@ them.
 
 ## `<audio>` tag
 
-An audio tag is super simple to get ready! 
+An audio tag is super simple to get ready!
 
-All you need to start annoying your friends, family, dog, etc is: 
+All you need to start annoying your friends, family, dog, etc is:
 
 1. A pair of `<audio>` tags
 
@@ -331,9 +321,12 @@ All you need to start annoying your friends, family, dog, etc is:
 2. A properly configured `<source>` tag inside of those (it’s self closing!)
   - You can have multiple source files inside a pair of audio tags
     - It’ll just cycle through them like a playlist
-    <audio>
-      <source src="audiofile.mp3" type="mediatype">
-    </audio>
+
+```html
+<audio>
+  <source src="audiofile.mp3" type="mediatype">
+</audio>
+```
 
 **To upload an audio file to Cloud9**
 You’ll need to upload your sound file directly to C9 if you can’t find it hosted
@@ -349,7 +342,7 @@ Just follow the either method below to upload your file to C9.
 
 **Alternate Method**
 
-![](http://i.imgur.com/TwtpqXB.gif) 
+![](http://i.imgur.com/TwtpqXB.gif)
 
 1. Look at the top bar of your workspace and select "File"
 2. Mouse over the drop down list that pops up and hit "Upload Local Files…"
@@ -368,7 +361,7 @@ to tweak them to your needs.
 
 Attributes are basically like unique properties of a pair of tags
 
-    <div class="bestdiv"></div> 
+    <div class="bestdiv"></div>
 
 Anything inside the first `<>` that isn’t the element name (div) is called an
 **attribute** (id="", class="", etc)
@@ -425,7 +418,7 @@ Here’s a list of the unique attributes that `<audio>` tags can accept exclusiv
     </td>
   </tr>
 </table>
- 
+
 Example of an audio tag set to automatically play, and loop an audio file:
 
     <audio autoplay loop src="hotline-bling.mp3"></audio>
@@ -446,10 +439,10 @@ This tag also has its own set of attributes like `<audio>` also it’s
     <td>src="[URL]"</td>
     <td>
       Points to the location of the media file
-        - File can be hosted on another website 
-        -must end in a supported file extension 
+        - File can be hosted on another website
+        -must end in a supported file extension
         e.g src ="http://www.drake.com/hotlinebling.mp3"
-        
+
         - Alternatively, hosted directly where the website is
         -e.g thiswebsite.com/hotlinebling.mp3
         another example:
@@ -462,7 +455,7 @@ This tag also has its own set of attributes like `<audio>` also it’s
     <td>
       Specifies the type of media that will be displayed
       -e.g `<source src="blinghotline.mp3" type="audio/mpeg">`
-      
+
       This changes depending on the type of file you use. You can find more
       types here: http://www.w3schools.com/tags/att_source_type.asp
     </td>
@@ -472,9 +465,11 @@ This tag also has its own set of attributes like `<audio>` also it’s
 **Example of `<audio>` and `<source>` tags properly configured to play a locally
 hosted darude.mp3 on loop.**
 
-    <audio loop autoplay>
-      <source src="audio/darude.mp3" type="audio/mpeg">
-    </audio>
+```html
+<audio loop autoplay>
+  <source src="audio/darude.mp3" type="audio/mpeg">
+</audio>
+```
 
 Did you do this and still aren't satisfied with the level of cringe? Maybe
 instead of regular audio you need
@@ -491,11 +486,10 @@ will need to know how to specify the location of an audio file. (`src=""`)
 
 To get this to work you’ll need:
 
-1. A Javascript File linked in your HTML
-
-`<script type="text/javascript" src="script.js"></script>`
-
-2. At least one audio file hosted either remotely (another website) or locally inside of your workspace
+1. A Javascript File linked in your HTML `<script type="text/javascript"
+   src="script.js"></script>`
+2. At least one audio file hosted either remotely (another website) or locally
+   inside of your workspace
 
 ![](https://paper.imgix.net/http%3A%2F%2Fi.imgur.com%2FeX5PpXN.png?ixlib=js-0.2.1&s=dce172ed5a7f1c5864408f22b7eca26b)
 
@@ -506,7 +500,7 @@ OR
 If you already have these, awesome! If not, get those setup before continuing
 with this section.
 
-To begin, let's open your JS file! 
+To begin, let's open your JS file!
 
 The single line of code that we’ll need to tell Javascript to "listen" for an
 event is
@@ -538,13 +532,13 @@ given us a nicely arranged list of all the HTML events.
 You can find that here.
 
 **Note: You remove the prefix when you use those names inside of
-  `document.addEventListener`**
+`document.addEventListener`**
 
 So following that rule
 
     document.addEventListener("onclick", function() {});
 
-would turn into 
+would turn into
 
     document.addEventListener("click", function() {});
 
@@ -583,12 +577,15 @@ write is
 
 Don’t forget to close your curly brackets of `function() {}` and it should work!
 
-    document.addEventListener("click", function() {
-        var inmyzone = new Audio('definitelyin.mp3');
-        inmyzone.play();
-    }
+```js
+document.addEventListener("click", function() {
+  var inmyzone = new Audio('definitelyin.mp3');
+  inmyzone.play();
+}
+```
 
-The example plays `definitelyin.mp3` everytime a left click is registered on the page.
+The example plays `definitelyin.mp3` everytime a left click is registered on the
+page.
 
 ## `blink`
 
