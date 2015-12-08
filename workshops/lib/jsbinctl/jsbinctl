@@ -1,5 +1,7 @@
 #!/bin/bash
 
+PLATFORM=$(uname)
+
 show_help() {
   cat <<EOF
 Usage: $0 [command]
@@ -69,9 +71,20 @@ update() {
     # 3) ?output,html
     local regex="\(\[$basename.*\]:\) \([^\?]*\)\(.*\)"
     local escaped_url=$(echo "$jsbin_url" | sed 's/\//\\\//g') # replace / with \/
+    local sed_exp="s/$regex/\1 $escaped_url\3/"
 
     # Do the replace!
-    find . -type f | xargs sed -i "s/$regex/\1 $escaped_url\3/"
+    #
+    # We provide an empty string as an argument to the -i option if we're on
+    # Darwin because BSD's sed automatically creates backup files. An empty
+    # string tells it not to create backups.
+    #
+    # The find commands are from https://stackoverflow.com/questions/4767396/linux-command-how-to-find-only-text-files
+    if [ $PLATFORM = "Darwin" ]; then
+      find . -type f -exec grep -Il "" {} \; | xargs sed -i '' "$sed_exp"
+    else
+      find . -type f -exec grep -Iq . {} \; -and -print | xargs sed -i "$sed_exp"
+    fi
   done
 }
 
