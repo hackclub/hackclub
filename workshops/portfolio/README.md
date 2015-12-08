@@ -538,6 +538,8 @@ Now that you're logged in, JS Bin will not "turn off" your website.
 So if you get the output URL, you can share this with everyone on the
 entire internet now and they will be able to see your website!
 
+> ![](img/get_url.gif)
+
 ## Done!
 
 Huzzah, we did it! You can take this URL and share it with your friends now!
