@@ -19,7 +19,7 @@
 |-----------------------------------------|---------------------------------------------|
 | Chat with us _(we're here almost 24/7)_ | https://slack.hackclub.io                   |
 | Start a club                            | https://hackclub.io/apply                   |
-| See our workshops                       | http://workshops.hackclub.io                |
+| See our workshops                       | https://workshops.hackclub.io               |
 
 ## About
 
