@@ -1,5 +1,41 @@
 # Ajar.io
 
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [Ajar.io](#ajario)
+  - [Tips And Tricks](#tips-and-tricks)
+  - [Part 1](#part-1)
+    - [Creating the files](#creating-the-files)
+    - [Setting up the HTML](#setting-up-the-html)
+    - [Writing the Javascript](#writing-the-javascript)
+    - [Congrats!](#congrats)
+  - [Part 2](#part-2)
+    - [What are functions?](#what-are-functions)
+    - [Using functions in Ajar.](#using-functions-in-ajar)
+    - [Congrats!](#congrats)
+  - [Part 3](#part-3)
+    - [Draw Circle Based on Variable Values](#draw-circle-based-on-variable-values)
+    - [Detect Mouse Movements](#detect-mouse-movements)
+    - [Clearing the canvas](#clearing-the-canvas)
+    - [Congrats!](#congrats)
+  - [Part 4](#part-4)
+    - [Let's recap](#lets-recap)
+    - [Planning it out](#planning-it-out)
+    - [Setting up the `drawScreen` function](#setting-up-the-drawscreen-function)
+    - [Setting up the variables for the `calculatePosition` function](#setting-up-the-variables-for-the-calculateposition-function)
+    - [The `if`-`else` statement](#the-if-else-statement)
+    - [Setting up the `calculatePosition` function](#setting-up-the-calculateposition-function)
+    - [Invoking the `calculatePosition` function](#invoking-the-calculateposition-function)
+  - [Part 5](#part-5)
+    - [What are arrays?](#what-are-arrays)
+    - [Store food positions in an array](#store-food-positions-in-an-array)
+    - [Generalizing (abstracting) the `drawUserCell`](#generalizing-abstracting-the-drawusercell)
+    - [Congrats!](#congrats)
+- [More coming soon...](#more-coming-soon)
+
+<!-- markdown-toc end -->
+
 -------------------------------------------------------------------------------
 
 [Agar.io](http://agar.io) is a popular game built for the web with
@@ -21,6 +57,14 @@ been written):
 
 __More coming soon...__
 
+## Tips And Tricks
+
+1. To open a link in another tab, right click on the link and select `Open In
+   New Tab`.
+2. When copying code from this workshop to your project try retyping the code
+   yourself instead of using your copy-pasting shortcuts. Forcing yourself to
+   read through the code as you retype it can help increase your understanding.
+
 ## Part 1
 
 In this part you're going to learn to display the user's cell on-screen using
@@ -37,12 +81,12 @@ the [HTML `<canvas>` element](http://www.w3schools.com/html/html5_canvas.asp).
 
 > *--- from [W3C](http://www.w3schools.com/html/html5_canvas.asp)*
 
-My the end of this part you'll have something that looks like this:
+By the end of this part you'll have something that looks like this:
 
 ![End of Part 1](img/part1-end.jpg)
 
-Check out the demo <a href="http://jsbin.com/jizoyo/edit?output"
-target="_blank">here</a> ([JS Fiddle](http://jsfiddle.net/4j6od7hv/)).
+Check out the demo [here](http://jsbin.com/jizoyo/edit?output)
+([JS Fiddle](http://jsfiddle.net/4j6od7hv/)).
 
 ### Creating the files
 
@@ -61,16 +105,16 @@ Your folder should look like this:
 ### Setting up the HTML
 
 Type the below code as it is written *exactly* into your `index.html` file in
-Cloud9 (no copy-pasting :p):
+Cloud9 (no [copy-pasting](#tips-and-tricks) :p):
 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Ajar.io</title>
-</head>
-<body>
-</body>
+  <head>
+    <title>Ajar.io</title>
+  </head>
+  <body>
+  </body>
 </html>
 ```
 
@@ -82,7 +126,7 @@ Next, add the below `<canvas>` element inside of the `<body>` element.
 
 ![Adding the canvas element](img/adding-canvas.gif)
 
-> #### Understanding the code
+**Understanding The Code**
 
 > `canvas` - The canvas element allows you to draw shapes and other visual
 > elements on screen. Feel free to
@@ -93,7 +137,7 @@ Next, add the below `<canvas>` element inside of the `<body>` element.
 
 > `width` - Specifies the width of the `<canvas>`, this time in pixels.
 
->  `height` - Specifies the height of the `<canvas>`, this time in pixels.
+> `height` - Specifies the height of the `<canvas>`, this time in pixels.
 
 -------------------------------------------------------------------------------
 
@@ -107,7 +151,7 @@ element (make sure it's at the end):
 
 ![](img/script-element.gif)
 
-Your HTML is now configured!
+> Your HTML is now configured!
 
 ### Writing the Javascript
 
@@ -123,7 +167,7 @@ var canvas = document.getElementById("canvas");
 
 ![Get canvas element](img/get-element-canvas.gif)
 
-> #### Understanding the code
+**Understanding The Code**
 
 > `var` - Creates a variable named `canvas`. Variables are containers for
 > storing data values. In this case `canvas` is used to reference the `<canvas>`
@@ -145,7 +189,7 @@ var context = canvas.getContext("2d");
 
 ![](img/assign-context.gif)
 
-> #### Understanding the code
+**Understanding The Code**
 
 > You create another variable, this time named `context`. Don't worry too much
 > about *what* `context` is, just know that we will be using it to draw shapes
@@ -172,7 +216,8 @@ You should have something that looks like this.
 ![](img/first-circle.png)
 
 <a name="drawingArc"></a>
-> #### Understanding the code
+
+**Understanding The Code**
 
 > `context.beginPath()` - Any shape on the canvas is considered a path. You need
 > to call this function before begining to draw a new shape. In this case we are
@@ -214,7 +259,7 @@ context.fillStyle = "cyan";
 
 Woah! Our circle is now cyan.
 
-> #### Understanding the code
+**Understanding the code**
 
 > The fillStyle is a variable that deterimines the color that is used to fill
 > the shape. [Many colors](http://www.w3schools.com/cssref/css_colornames.asp)
@@ -233,7 +278,7 @@ Your website should now look like this:
 
 ![End of Part 1](img/part1-end.jpg)
 
-#### Congrats!
+### Congrats!
 
 You've finished Part 1!
 
@@ -249,10 +294,10 @@ To recap, in [part 1](#part-1) you learned about:
 - **JavaScript variables**: used to store data values. Declared using the `var`
   keyword. You can make variables like this:
 
-```js
-var x = 10 * 2;
-var name = "Bogdan";
-```
+  ```js
+  var x = 10 * 2;
+  var name = "Bogdan";
+  ```
 
 - **Drawing on the canvas**: the HTML `<canvas>` element is used to draw
   graphics, on the fly, via scripting (usually JavaScript). You obtain the
@@ -264,9 +309,9 @@ In this part you will learn about **functions**.
 
 ### What are functions?
 
-In part 1, you wrote all your code outside of any functions. This means that
-your code runs from *top to bottom*. This was okay for a simple task such as
-displaying one circle on screen. For more complex scenarios we will need
+In [part 1](#part-1), you wrote all your code outside of any functions. This
+means that your code runs from *top to bottom*. This was okay for a simple task
+such as displaying one circle on screen. For more complex scenarios we will need
 **functions**.
 
 **A JavaScript function is a block of code designed to perform a particular
@@ -276,13 +321,13 @@ A function looks like this:
 
 ```js
 function name() {
-    // code to be executed goes here <-- That is a comment
+  // code to be executed goes here <-- That is a comment
 }
 ```
 
-A JavaScript function is defined with the `function` keyword, followed by a
-name and a set of parentheses `()`. The code to be executed by the function is
-placed inside curly brackets: `{}`.
+A JavaScript function is defined with the `function` keyword, followed by a name
+and a set of parentheses `()`. The code to be executed by the function is placed
+inside curly brackets: `{}`.
 
 You "run" a function (the code inside of it) by "invoking" the function.
 
@@ -295,14 +340,14 @@ name();
 
 The code contained within the curly brackets `{}` would then be executed.
 
-Unlike the code in part 1, **code contained in functions can be run multiple
-times**.
+Unlike the code in [part 1](#part-1), **code contained in functions can be run
+multiple times**.
 
 Let's make another function.
 
 ```js
 function addOne(myNumber) {
-    myNumber = myNumber + 1;
+  myNumber = myNumber + 1;
 }
 ```
 
@@ -342,32 +387,35 @@ So `myNumber` becomes `6`.
 ### Using functions in Ajar.
 
 Right now your code should look like this:
+
 > `Index.html`
+
 > ```html
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Ajar.io</title>
-</head>
-<body>
-    <canvas id="canvas" width="500px" height="500px"></canvas>
-    <script type="text/javascript" src="app.js"></script>
-</body>
-</html>
-```
+> <!DOCTYPE html>
+> <html>
+>   <head>
+>     <title>Ajar.io</title>
+>   </head>
+>   <body>
+>     <canvas id="canvas" width="500px" height="500px"></canvas>
+>     <script type="text/javascript" src="app.js"></script>
+>   </body>
+> </html>
+> ```
 
 > `App.js`
-> ```js
-var canvas = document.getElementById("canvas");
-var context = canvas.getContext("2d");
-context.beginPath();
-context.arc(x, y, 40, 0, 2*3.14159);
-context.fillStyle = "cyan";
-context.fill();
-```
 
-Let's modify our code to use functions. Go ahead and open your `index.html`
-file and click on _preview_ in the menu bar and then _Live Preview File
+> ```js
+> var canvas = document.getElementById("canvas");
+> var context = canvas.getContext("2d");
+> context.beginPath();
+> context.arc(x, y, 40, 0, 2*3.14159);
+> context.fillStyle = "cyan";
+> context.fill();
+> ```
+
+Let's modify our code to use functions. Go ahead and open your `index.html` file
+and click on _preview_ in the menu bar and then _Live Preview File
 (index.html)_. Now open your `app.js` file.
 
 ![Open live preview](img/open-live-preview.gif)
@@ -386,10 +434,10 @@ from above in it:
 
 ```js
 function drawUserCell() {
-    context.beginPath();
-    context.arc(250, 250, 40, 0, 2*3.14159);
-    context.fillStyle = "cyan";
-    context.fill();
+  context.beginPath();
+  context.arc(250, 250, 40, 0, 2*3.14159);
+  context.fillStyle = "cyan";
+  context.fill();
 }
 ```
 
@@ -408,7 +456,7 @@ drawUserCell();
 
 The circle is back!
 
-#### Congrats!
+### Congrats!
 
 You've finished Part 2!
 
@@ -421,8 +469,8 @@ this part we will make the user's cell **move**.
 
 This is how it's going to work:
 
-1. Get the position (x and y) of the mouse cursor over the screen by adding
-   an `EventListner` for `mousemove` to the `<canvas>` element.
+1. Get the position (x and y) of the mouse cursor over the screen by adding an
+   `EventListner` for `mousemove` to the `<canvas>` element.
 2. Clear what's currently drawn on screen by overlaying a rectangle over the
    entire screen.
 3. Draw the circle again this time at the new coordinates.
@@ -430,9 +478,9 @@ This is how it's going to work:
 That's the order the computer will execute the code in, but not the order in
 which we'll write the code.
 
-### Draw circle based on variable values
+### Draw Circle Based on Variable Values
 
-In part 1 we hardcoded the `x` and `y` position of the circle:
+In [part 1](#part-1) we hardcoded the `x` and `y` position of the circle:
 
 ```js
 context.arc(250, 250, 10, 0, 2*3.14159);
@@ -443,7 +491,7 @@ Since the position of our circle will _change_ those values have to be
 variable. How do we make something variable? Oh right! Variables!
 
 So we will make variables `x` and `y` and plop them at the start of our
-javascript file, right under where we declare `context`:
+Javascript file, right under where we declare `context`:
 
 ```js
 var canvas = document.getElementById("canvas");
@@ -474,21 +522,22 @@ Save your file and open `Live Preview`. Your results should be the same.
 
 ![](img/viewing-x-and-y-diffs.gif)
 
-### Detect mouse movements
+### Detect Mouse Movements
 
 First we need to create a function that will be invoked each time the mouse is
 moved. Here it is:
 
 ```js
 function mouseMoved(mouse) {
-    x = mouse.clientX;
-    y = mouse.clientY;
+  x = mouse.clientX;
+  y = mouse.clientY;
 }
 ```
 
 ![](img/create-mouse-moved-function.gif)
 
-> #### Understanding the code
+**Understanding The Code**
+
 > - You declare a function called `mouseMoved` that takes one parameter,
 >   `mouse`.
 > - `mouse` is an object that contains two variables that we care about:
@@ -505,9 +554,10 @@ We detect mouse movements by adding an `EventListner` for `mousemove` to the
 canvas.addEventListener("mousemove", /*your function goes here*/);
 ```
 
-> #### Understanding the code
+**Understanding The Code**
+
 > This code will invoke a function that goes in place of the comment `/*your
-function goes here*/` _each time the mouse is moved_.
+> function goes here*/` _each time the mouse is moved_.
 
 Let's invoke the `mouseMoved` function each time the mouse is moved:
 
@@ -518,8 +568,8 @@ canvas.addEventListener("mousemove", mouseMoved);
 ![](img/add-mousemove-listener.gif)
 
 > Notice we **do not** invoke the `mouseMoved` function ourselves (by writing
-`mouseMoved()`). Instead we simply tell the `EventListner` to invoke the
-function for us each time it recieves a `mousemove` event.
+> `mouseMoved()`). Instead we simply tell the `EventListner` to invoke the
+> function for us each time it recieves a `mousemove` event.
 
 Finally, let's draw a new cell each time the mouse is moved. To do this, we
 simply invoke the `drawUserCell` function from within our `mouseMoved`
@@ -527,9 +577,9 @@ function:
 
 ```js
 function mouseMoved(mouse) {
-    x = mouse.clientX;
-    y = mouse.clientY;
-    drawUserCell(); <== NEW
+  x = mouse.clientX;
+  y = mouse.clientY;
+  drawUserCell(); <== NEW
 }
 ```
 
@@ -581,10 +631,10 @@ Let's put all this into a function called `clearCanvas`:
 
 ```js
 function clearCanvas() {
-    context.beginPath();
-    context.rect(0, 0, 500, 500);
-    context.fillStyle = "white";
-    context.fill();
+  context.beginPath();
+  context.rect(0, 0, 500, 500);
+  context.fillStyle = "white";
+  context.fill();
 }
 ```
 
@@ -593,10 +643,10 @@ the cell:
 
 ```js
 function mouseMoved(mouse) {
-    x = mouse.clientX;
-    y = mouse.clientY;
-    clearCanvas(); <== NEW
-    drawUserCell();
+  x = mouse.clientX;
+  y = mouse.clientY;
+  clearCanvas(); <== NEW
+  drawUserCell();
 }
 ```
 
@@ -610,7 +660,7 @@ Save your work and see the results!
 
 Wonderful, we have a moving cell!
 
-#### Congrats!
+### Congrats!
 
 You've finished Part 3!
 
@@ -618,9 +668,9 @@ You've finished Part 3!
 
 ## Part 4
 
-In this part you will learn to give your cell's movements a velocity. That
-means that the cell won't always be where your cursor is, instead it will
-*follow* your cursor.
+In this part you will learn to give your cell's movements a velocity. That means
+that the cell won't always be where your cursor is, instead it will *follow*
+your cursor.
 
 ### Let's recap
 
@@ -633,10 +683,10 @@ called `drawUserCell`:
 
 ```js
 function drawUserCell() {
-    context.beginPath();
-    context.arc(250, 250, 40, 0, 2*3.14159);
-    context.fillStyle = "cyan";
-    context.fill();
+  context.beginPath();
+  context.arc(250, 250, 40, 0, 2*3.14159);
+  context.fillStyle = "cyan";
+  context.fill();
 }
 ```
 
@@ -652,16 +702,15 @@ What we want to do: add a velocity to the cell's movements.
 
 How do we even approach that? It goes something like this:
 
-1. Create an infitie loop that calculates the postition of the cell 60 times
-   a second. If you're familiar with video games you might recognize 60 times
-   a second as 60 frames per second or _60 fps_. More in a bit.
-2. For each frame, move the cell closer to the mouse location by a given
-   amount.
+1. Create an infitie loop that calculates the postition of the cell 60 times a
+   second. If you're familiar with video games you might recognize 60 times a
+   second as 60 frames per second or _60 fps_. More in a bit.
+2. For each frame, move the cell closer to the mouse location by a given amount.
 
 ### Setting up the `drawScreen` function
 
-We're now going to create a new function called `drawScreen`. This function
-will be run 60 times every second __forever__.
+We're now going to create a new function called `drawScreen`. This function will
+be run 60 times every second __forever__.
 
 The goal of this function is to redraw the cell closer to where the mouse is.
 
@@ -670,7 +719,7 @@ To redraw the cell we have to:
 - Invoke the `clearCanvas` function
 - Invoke the `drawUserCell` function
 
-Addtionally we will invoke a function called `calculatePosition` before
+Additionally we will invoke a function called `calculatePosition` before
 `drawUserCell`. This function will calculate the new position of the cell after
 1/60th of a second (one frame).
 
@@ -678,13 +727,14 @@ First though, let's set up the function named `drawScreen`:
 
 ```js
 function drawScreen() {
-    clearCanvas();
-    drawUserCell();
-    setTimeout(drawScreen, 1000/60);
+  clearCanvas();
+  drawUserCell();
+  setTimeout(drawScreen, 1000/60);
 }
 ```
 
-> #### Understanding the code
+**Understanding The Code**
+
 > We create a function named `drawScreen`. This function has no parameters (the
 > parentheses are empty).
 >
@@ -720,34 +770,34 @@ Lastly, let's replace the invokation of `drawUserCell` at the end of the
 ![](img/invoke-draw-screen.gif)
 
 Now if we save the file and preview our work, we'll see exactly what we had
-before. Note though that we have what we had before __even though we took a
-very different approach__ to get the *same result*.
+before. Note though that we have what we had before __even though we took a very
+different approach__ to get the *same result*.
 
-> #### Running through the code
->
+**Running through the code
+
 > Let's quickly go through what the computer does when it executes our code:
 >
 > 1. Variables (`x` and `y`) and functions (`drawScreen`, `drawUserCell`,
-     `clearCanvas` and `mouseMoved`) are declared.
+>    `clearCanvas` and `mouseMoved`) are declared.
 > 2. The `mouseMoved` function is made to run each time the mouse is moved:
-    ```js
-    canvas.addEventListener("mousemove", mouseMoved);
-    ```
+>   ```js
+>   canvas.addEventListener("mousemove", mouseMoved);
+>   ```
 > 3. The `drawScreen` function is invoked and begins it's infinite loop.
 >
 > At this point our program is in a stable state. The `drawScreen` function
-  will continue looping. It will redraw the circle each frame at the same
-  position so it won't look like anything is changing. Until...
+> will continue looping. It will redraw the circle each frame at the same
+> position so it won't look like anything is changing. Until...
 >
 > \*The mouse is moved!\*
 >
 > 1. The `mouseMoved` function is invoked.
 > 2. The `x` and `y` are set to the coordinates of the mouse.
 > 3. The next time the `drawScreen` function loops (at max in 1/60th of a
-     second), it will clear the canvas (`clearCanvas`) and invoke the
-     `drawUserCell` function.
+>    second), it will clear the canvas (`clearCanvas`) and invoke the
+>    `drawUserCell` function.
 > 4. The `drawUserCell` function draws another circle cenetered at `x` and `y`.
-     (The `x` and `y` are now the coordinates of the mouse).
+>    (The `x` and `y` are now the coordinates of the mouse).
 > 5. A new circle appears where the mouse is.
 
 Great, let's now actually add velocity.
@@ -771,8 +821,8 @@ var velocity = 2;
 ```
 
 The imporatant part is that `mouseX` and `mouseY` will always be equal to the
-current position of the mouse. `velocity` will determine how fast the cell
-moves (a higher velocity will make the cell go faster).
+current position of the mouse. `velocity` will determine how fast the cell moves
+(a higher velocity will make the cell go faster).
 
 To make `mouseX` and `mouseY` instantaneously equal to the position of the
 mouse, you must update the variables in the `mouseMoved`. So let's switch from
@@ -780,8 +830,8 @@ updating `x` and `y` to updating `mouseX` and `mouseY`:
 
 ```js
 function mouseMoved(e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+  mouseX = e.clientX;
+  mouseY = e.clientY;
 }
 ```
 
@@ -794,9 +844,9 @@ It looks like this:
 
 ```js
 if (3 > 2) {
-    // code to run if condition is true
+  // code to run if condition is true
 } else {
-    // code to run if condition is false
+  // code to run if condition is false
 }
 ```
 
@@ -812,9 +862,9 @@ Let's try another one:
 var x = 1;
 
 if (x > 2) {
-    // code to run if condition is true
+  // code to run if condition is true
 } else {
-    // code to run if condition is false
+  // code to run if condition is false
 }
 ```
 
@@ -831,50 +881,52 @@ Here's the code:
 
 ```js
 function calculatePosition() {
-    // For the x-axis
-    if (mouseX > x) {
-        x = x + velocity;  // mouse is to the right of the ball
-    } else {
-        x = x - Velocity;  // mouse is to the left of the ball
-    }
+  // For the x-axis
+  if (mouseX > x) {
+    x = x + velocity;  // mouse is to the right of the ball
+  } else {
+    x = x - Velocity;  // mouse is to the left of the ball
+  }
 
-    // For the y-axis
-    if (mouseY > y) {
-        y = y + velocity;  // mouse is under ball
-    } else {
-        y = y - Velocity;  // mouse is above ball
-    }
+  // For the y-axis
+  if (mouseY > y) {
+    y = y + velocity;  // mouse is under ball
+  } else {
+    y = y - Velocity;  // mouse is above ball
+  }
 }
 ```
 
-> #### Understanding the code
->
+**Understanding The Code**
+
 > Although this code may look intimidating, it's not hard at all — promise.
->
+
 > `function calculatePosition()` - We declare a function called
-  `calculatePosition`.
->
+> `calculatePosition`.
+
 > `if (mouseX > x)` - The code in the `if` statement will run if the x value of
-  the mouse (`mouseX`) is greater than (`>`) the x value of the circle (`x`).
-  Your goal is to get `x` closer to `mouseX` so when `mouseX` is larger you must
-  increase `x`. And that's exactly what you do:
-  ```js
-  x = x + velocity;
-  ```
->
+> the mouse (`mouseX`) is greater than (`>`) the x value of the circle (`x`).
+> Your goal is to get `x` closer to `mouseX` so when `mouseX` is larger you must
+> increase `x`. And that's exactly what you do:
+
+> ```js
+> x = x + velocity;
+> ```
+
 > `else` - The code in the `else` statement will run if the condition is false.
-  in this case the condition is false if `mouseX` is less than (`<`) `x`. When
-  `mouseX` is less than `x` we must reduce `x` to get it closer to `mouseX`.
-  And that's exactly what you do:
-  ```js
-  x = x - Velocity;
-  ```
->
+> in this case the condition is false if `mouseX` is less than (`<`) `x`. When
+> `mouseX` is less than `x` we must reduce `x` to get it closer to `mouseX`. And
+> that's exactly what you do:
+
+> ```js
+> x = x - Velocity;
+> ```
+
 > The same explanations apply to the y-axis code.
->
+
 > *__Note__: it is not entirely accurate that the opposite of `mouseX > x` is
-  `mouseX < x`. In fact the wiggling you'll see in a minute is partly due to
-  this approximation. Use this hint for Challenge #1.*
+> `mouseX < x`. In fact the wiggling you'll see in a minute is partly due to
+> this approximation. Use this hint for Challenge #1.*
 
 ### Invoking the `calculatePosition` function
 
@@ -891,10 +943,10 @@ function:
 
 ```js
 function drawScreen() {
-    clearCanvas();
-    calculatePosition();  <-- NEW
-    drawUserCell();
-    setTimeout(drawScreen, 1000/60);
+  clearCanvas();
+  calculatePosition();  <-- NEW
+  drawUserCell();
+  setTimeout(drawScreen, 1000/60);
 }
 ```
 
@@ -979,8 +1031,7 @@ var foodPositions = [[30, 20], [400, 90], [60, 317], [300, 268]];
 We now want to "generalize" (more accurately *abastract*) the `drawScreen`
 function to draw any type of circle, not just the user's cell.
 
-Let's remeber how we draw a circle ([here's a link to when we did this
-earlier](#drawingArc)):
+Let's remeber how we draw a circle.
 
 ```js
 context.arc(x, y, radius, startAngle, endAngle);
@@ -994,7 +1045,7 @@ We'll first start off by changing the name of the `drawUserCell` function to
 
 ```js
 function drawCircle () {
-    ...
+  ...
 }
 ```
 
@@ -1002,10 +1053,10 @@ Next we'll add some parameters:
 
 ```js
 function drawCircle(circleX, circleY, radius) {
-    context.beginPath();
-    context.arc(circleX, circleY, radius, 0, 2*3.14159);
-    context.fillStyle = "cyan";
-    context.fill();
+  context.beginPath();
+  context.arc(circleX, circleY, radius, 0, 2*3.14159);
+  context.fillStyle = "cyan";
+  context.fill();
 }
 ```
 
@@ -1016,8 +1067,8 @@ to invoke `drawCircle` instead:
 drawCircle(x, y, 40);
 ```
 
-Lastly, below that invokation (which draws the user cell), we are going to
-draw the food:
+Lastly, below that invokation (which draws the user cell), we are going to draw
+the food:
 
 ```js
 drawCircle(foodPositions[0][0], foodPositions[0][1], 10);
@@ -1041,56 +1092,56 @@ var velocity = 2;
 var foodPositions = [[30, 20], [400, 90], [60, 317], [300, 268]];
 
 function drawCircle(cellX, cellY, radius) {
-    context.beginPath();
-    context.arc(cellX, cellY, radius, 0, 2*3.14159);
-    context.fillStyle = "cyan";
-    context.fill();
+  context.beginPath();
+  context.arc(cellX, cellY, radius, 0, 2*3.14159);
+  context.fillStyle = "cyan";
+  context.fill();
 }
 
 function clearCanvas() {
-    context.beginPath();
-    context.rect(0, 0, 500, 500);
-    context.fillStyle = "white";
-    context.fill();
+  context.beginPath();
+  context.rect(0, 0, 500, 500);
+  context.fillStyle = "white";
+  context.fill();
 }
 
 function calculatePosition() {
-    // For the x-axis
-    if (mouseX > x) {
-        x = x + velocity;  // mouse is to the right of the ball
-    } else {
-        x = x - Velocity;  // mouse is to the left of the ball
-    }
+  // For the x-axis
+  if (mouseX > x) {
+    x = x + velocity;  // mouse is to the right of the ball
+  } else {
+    x = x - Velocity;  // mouse is to the left of the ball
+  }
 
-    // For the y-axis
-    if (mouseY > y) {
-        y = y + velocity;  // mouse is under ball
-    } else {
-        y = y - Velocity;  // mouse is above ball
-    }
+  // For the y-axis
+  if (mouseY > y) {
+    y = y + velocity;  // mouse is under ball
+  } else {
+    y = y - Velocity;  // mouse is above ball
+  }
 }
 
 function drawScreen() {
-    clearCanvas();
-    calculatePosition();
-    drawCircle(x, y, 40);
-    drawCircle(foodPositions[0][0], foodPositions[0][1], 10);
-    drawCircle(foodPositions[1][0], foodPositions[1][1], 10);
-    drawCircle(foodPositions[2][0], foodPositions[2][1], 10);
-    drawCircle(foodPositions[3][0], foodPositions[3][1], 10);
-    setTimeout(drawScreen, 1000/60);
+  clearCanvas();
+  calculatePosition();
+  drawCircle(x, y, 40);
+  drawCircle(foodPositions[0][0], foodPositions[0][1], 10);
+  drawCircle(foodPositions[1][0], foodPositions[1][1], 10);
+  drawCircle(foodPositions[2][0], foodPositions[2][1], 10);
+  drawCircle(foodPositions[3][0], foodPositions[3][1], 10);
+  setTimeout(drawScreen, 1000/60);
 }
 
 function mouseMoved(e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+  mouseX = e.clientX;
+  mouseY = e.clientY;
 }
 
 canvas.addEventListener("mousemove", mouseMoved);
 drawScreen();
 ```
 
-#### Congrats!
+### Congrats!
 
 You've finished Part 5!
 
