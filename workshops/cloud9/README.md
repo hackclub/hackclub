@@ -5,34 +5,41 @@
 ## What is Cloud9?
 
 *Cloud9 is a website that lets you program online*. Traditionally, all
- programming was done locally on the computer: you would save your files on your
- computer and edit them on your computer (with a code editor). Cloud9 allows you
- to save your files online and edit your files online (Cloud9 also has a code
- editor). This means all you need to start programming is internet and a
- browser. No more installing software!
+programming was done locally on the computer: you would save your files on your
+computer and edit them on your computer (with a code editor). Cloud9 allows you
+to save your files online and edit your files online (Cloud9 also has a code
+editor). This means all you need to start programming is internet and a browser.
+No more installing software!
 
-__Imporatant__: if you're having trouble, checkout the
+**Imporatant**: if you're having trouble, checkout the
 [troubleshooting](#troubleshooting) section at the end of the workshop.
 
 -------------------------------------------------------------------------------
 
+## Tips And Tricks
+
+To open a link in another tab, right click on the link and select `Open In New
+Tab`.
+
 ## Login with GitHub
 
-First, make sure you have a github account. If you don't have one, follow the
-guide for making one located
+First, make sure you have a GitHub account. If you don't have one, follow the
+guide
 [here](https://github.com/hackclub/hackclub/tree/master/playbook/workshops/portfolio#creating-a-github-account).
 
 Now that you have a GitHub account, you can login to Cloud9 with GitHub. Go to
-http://c9.io and click on the "octocat" icon in the top corner, as demonstrated
+https://c9.io and click on the "octocat" icon in the top corner as demonstrated
 below:
 
 ![](img/github-login.gif)
 
-## Create a new workspace
+## Create a New Workspace
 
 To create a new workspace you can either select the create a new workspace
 option under workspaces, or click the new workspace button at the top right of
 your screen.
+
+![New workspace buttons](img/new-workspace.png)
 
 Next set your workspace name to *html-css-javascript-basics*, and your
 description to *Learning to use html css and javascript together*. Make your
@@ -42,7 +49,7 @@ of your page and you should be prompted to this screen.
 
 ![](img/open-screen.gif)
 
-## Using HTML CSS and Javascript together in Cloud9
+## Using HTML CSS and Javascript Together in Cloud9
 
 First we will create a new folder. To do this right click the workspace bar on
 the left and select *New Folder*. You can name this folder whatever you like.
@@ -74,7 +81,7 @@ version of your html file.
 
 ![](img/preview.gif)
 
-### Adding CSS to your HTML
+### Adding CSS to Your HTML
 
 Next lets add some style to our button. In your *style.css* file add the
 following code
@@ -94,7 +101,7 @@ following code
 }
 ```
 
-### New Concept CSS selectors
+#### CSS Selectors
 
 In CSS, selectors are patterns used to select the element(s) you want to style.
 If we were to do
@@ -109,7 +116,7 @@ Our css would still work, however if we had multiple buttons in our html, all
 those buttons would be styled the same because every button element in our html
 would have the same css applied to it. If we want different styles for each
 button, we can give each button a unique id attribute in html. Then when we want
-to reference that id attribute in our css we can do
+to reference that id attribute in our css we can do.
 
 ```css
 #idName {
@@ -144,7 +151,7 @@ attribute should be the location of your css file. Since our css file is in the
 same folder as our html all we have to do is set the value of *href* to the name
 of our css file.
 
-### Adding Javascript to your HTML
+### Adding Javascript to Your HTML
 
 Next lets add some Javascript. Inside your *index.js* file add the following
 code.
@@ -157,7 +164,7 @@ button.onclick = function () {
 }
 ```
 
-> #### Understanding the code
+**Understanding the code**
 
 > In our javascript file we start of by creating a variable called *button* and
 > set it equal to the element in our html that has an *id* of *alertButton*.
@@ -184,24 +191,21 @@ Go ahead and test your code now.
 
 ## Troubleshooting
 
-- __Nothing shows up__
+- **Nothing shows up**
   - Try saving the `index.html` file from `File > Save`. After that reload the
     preview.
-
-- __CSS not applying styles to the button__
+- **CSS not applying styles to the button**
   - Make sure the `href` attribute of the `<link>` element in `index.html`
     points to a file in the same directory at as `index.html` called
     `style.css`.
   - Make sure you have a css file called `style.css`.
   - Make sure the `id` attribute of the `<button>` in `index.html` is the same
-    as the id being selected in your `style.css` file (minus the `#`). ID's
-    ARE case sensitive!
-
-- __Javscript is not displaying the alert__
-  - Make sure the `src` attribute of the `<src>` element in `index.html`
-    points to a file in the same directory at as `index.html` called
-    `index.js`.
-  - Make sure you have a javascript file called `index.js`.
+    as the id being selected in your `style.css` file (minus the `#`). ID's ARE
+    case sensitive!
+- **Javscript is not displaying the alert**
+  - Make sure the `src` attribute of the `<src>` element in `index.html` points
+    to a file in the same directory at as `index.html` called `index.js`.
+  - Make sure you have a Javascript file called `index.js`.
   - Make sure the `id` attribute of the `<button>` in `index.html` is the same
     as the id being selected in the `document.getElementById` function in your
     `index.js` file (minus the `#`). ID's ARE case sensitive!
@@ -221,7 +225,7 @@ _How likely is it that you would recommend this workshop to a friend?_
 | [1][r1] | [2][r2] | [3][r3] | [4][r4] | [5][r5] | [6][r6] | [7][r7] | [8][r8] | [9][r9] | [10][r10] |
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
 
-Be sure to experiment with HTML CSS and Javascript on your own!
+Be sure to experiment with HTML, CSS, and Javascript on your own!
 
 [r1]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=1
 [r2]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=2
