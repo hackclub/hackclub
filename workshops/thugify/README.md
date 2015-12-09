@@ -245,6 +245,7 @@ which simply says: Find the element ‘go’ and listen for a click on this elem
 If you’ve followed along this far, awesome! You’re doing great, we’re almost done.  If you’re stuck, turn to a peer!
 
 **We a team and we the best.**
+
 ![DJ Khaled](img/dj2.gif)
 
 Now that we’ve gotten Javascript to listen for a click on the button, we need to tell it to do something when it gets a click.
@@ -371,4 +372,4 @@ You mom thinks you're special, that’s all that really matters 💯
 
 ## Thanks for completing our workshop ❤
 (Ya, we’re dysfunctional as f**k)
-![cipher-squad](img/cipher-squad)
+![cipher-squad](img/cipher-squad.jpg)
