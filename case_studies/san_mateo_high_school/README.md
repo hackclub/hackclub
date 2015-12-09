@@ -55,7 +55,7 @@ are looking for specific things.
 | 11/16/15 | W1D1       | [Twilio Workshop](2015-11-16_meet_12)                                |
 | 11/18/15 | W1D2       | [Twilio Workshop](2015-11-18_meet_13)                                |
 | 11/23/15 | W2D1       | [Twilio Workshop](2015-11-23_meet_14)                                |
-<!--| 11/30/15 | W3D1       | [Project Week (Cancelled)](2015_11_30_meet_15_cancelled)             |
+| 11/30/15 | W3D1       | [Project Week (Cancelled)](2015_11_30_meet_15_cancelled)             |
 | 12/02/15 | W3D2       | [Project Week](2015_12_02_meet_15)                                   | -->
 
 

@@ -1,9 +1,5 @@
-# [Number] Meeting
+# 15th Meeting [Cancelled]
 
 ## What Happened
 
-## Problems we faced
-
-## How we managed problems and outcomes
-
-## Tips
+Meet moved to [Wednesday](2015-12-02_meet_15).
