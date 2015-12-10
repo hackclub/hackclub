@@ -3,7 +3,7 @@
 ## What Happened
 
 - We went through the
-[slides](https://github.com/SMHS-Programming/club/blob/c83b49ce1e08f03f5999a5106f5e1540600328e5/meetings/11_18_Meeting_XIII.pdf)
+  [slides](https://github.com/SMHS-Programming/club/blob/c83b49ce1e08f03f5999a5106f5e1540600328e5/meetings/11_18_Meeting_XIII.pdf)
 - We let the hacker code and went around helping.
 
 ## Problems we faced

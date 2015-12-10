@@ -3,7 +3,7 @@
 ## What Happened
 
 - Went through these
-[slides](https://github.com/SMHS-Programming/club/blob/c83b49ce1e08f03f5999a5106f5e1540600328e5/meetings/11_23_Meeting_XIV.pdf)
+  [slides](https://github.com/SMHS-Programming/club/blob/c83b49ce1e08f03f5999a5106f5e1540600328e5/meetings/11_23_Meeting_XIV.pdf)
 - Hackers worked on workshop.
 - Talked about Los Altos Hacks.
 

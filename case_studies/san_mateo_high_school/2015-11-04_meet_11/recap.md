@@ -3,9 +3,9 @@
 ## What Happened
 
 - We went through these
-[slide](https://github.com/SMHS-Programming/club/blob/e2750cef44599c71aaf18dd443ecd46de09f82eb/meetings/11_02_Meeting_XI.pdf)
+  [slide](https://github.com/SMHS-Programming/club/blob/e2750cef44599c71aaf18dd443ecd46de09f82eb/meetings/11_02_Meeting_XI.pdf)
 - Passed Written Feedback
-[forms](https://github.com/SMHS-Programming/club/blob/c83b49ce1e08f03f5999a5106f5e1540600328e5/documents/Feedback%20Forms/Cycle%201%20(9:14-11:4).pdf)
+  [forms](https://github.com/SMHS-Programming/club/blob/c83b49ce1e08f03f5999a5106f5e1540600328e5/documents/Feedback%20Forms/Cycle%201%20(9:14-11:4).pdf)
 - Passed small sheets of paper for feedback of demos.
 - 3 hackers presented their works.
 - Talked about Los Altos Hacks.
