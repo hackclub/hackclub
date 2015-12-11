@@ -152,7 +152,8 @@ going through:
 ## Labs
 
 This section will cover any contribution guidelines specific to
-[Labs](meta/labs) and any other club that would like to contribute.
+[Labs](https://github.com/hackclub/meta/blob/master/labs/README.md) and any
+other club that would like to contribute.
 
 ### Contributing case studies
 
