@@ -1,4 +1,4 @@
-# Onboarding Protocol
+# Staff Onboarding Protocol
 
 The things we need to do to onboard a new person onto the team.
 
