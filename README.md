@@ -24,13 +24,12 @@ See [GOALS.md](GOALS.md).
 These are the people who are officially part of the organization, but we want
 you involved as well!
 
-| Name           | Position                   | Link                          | Email                |
-| -------------- | -------------------------- | ----------------------------- | -------------------  |
-| Dave Fontenot  | Director of Community      | http://davefont.com/          | dave@hackclub.io     |
-| Gemma Busoni   |                            | https://twitter.com/grbusoni  | gemma@hackclub.io    |
-| Jonathan Leung | Founder                    | http://jonl.org               | jonathan@hackclub.io |
-| Max Wofford    | Technical Fellow           | https://github.com/MaxWofford | max@hackclub.io      |
-| Zach Latta     | Executive Director         | http://zachlatta.com          | zach@hackclub.io     |
+| Name           | Position           | Link                          | Email                |
+| -------------- | ------------------ | ----------------------------- | -------------------- |
+| Gemma Busoni   |                    | https://twitter.com/grbusoni  | gemma@hackclub.io    |
+| Jonathan Leung | Founder            | http://jonl.org               | jonathan@hackclub.io |
+| Max Wofford    | Technical Fellow   | https://github.com/MaxWofford | max@hackclub.io      |
+| Zach Latta     | Executive Director | http://zachlatta.com          | zach@hackclub.io     |
 
 ## Project Management
 
