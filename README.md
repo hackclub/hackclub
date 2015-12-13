@@ -46,7 +46,7 @@ you involved as well!
 | Harrison Shoebridge | Intern             | https://harrison.tech         | harrison@hackclub.io |
 | Jonathan Leung      | Founder            | http://jonl.org               | jonathan@hackclub.io |
 | Max Wofford         | Technical Fellow   | https://github.com/MaxWofford | max@hackclub.io      |
-| Zach Latta          | Executive Director | http://zachlatta.com          | zach@hackclub.io     |
+| Zach Latta          | Executive Director | https://zachlatta.com         | zach@hackclub.io     |
 
 ## Project Management
 
