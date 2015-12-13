@@ -13,18 +13,18 @@ Your final design looks like this:
 
 > ![](img/final_1.png)
 
-Here is a link to a
-<a href="http://output.jsbin.com/fugoki/2" target="_blank">live demo</a>
+Here is a link to a [live demo][final_output] live demo.
 
-And here is the
-<a href="http://jsbin.com/fugoki/2/edit" target="_blank">final code</a>
-for the live demo.
+And here is the [final code][final_output_code] for the live demo.
 
 To do this, you will be learning the basics of two languages: HTML and CSS.
 
 Every website that you have ever seen are written in these two languages.
 
 We will be building this website on an online code editor called JS Bin.
+
+[final_output]: https://jsbin.com/gist/81d45193dab5236afbba?output
+[final_output_code]: https://jsbin.com/gist/81d45193dab5236afbba?html,css,output
 
 ## Creating a GitHub account
 
@@ -37,9 +37,11 @@ GitHub also has a login feature similar to how Facebook has "Facebook login".
 Let's make a GitHub account so we can login to JS Bin and many websites in the
 programming ecosystem!
 
-### 1) In a new window, open <a href="https://github.com" target="_blank">github.com</a>
+### 1) In a new window, open [github.com][github]
 
 > ![](img/c9_v2_setup_1.png)
+
+[github]: https://github.com
 
 ### 2) Create an account with a valid email
 
@@ -59,10 +61,12 @@ And now we're done creating a GitHub account!
 
 Now that we have a GitHub account:
 
-1. open to <a href="http://jsbin.com" target="_blank">jsbin.com</a>
+1. open to [jsbin.com][jsbin]
 2. click "Login or Register"
 
 > ![](img/login_or_register.gif)
+
+[jsbin]: https://jsbin.com
 
 ## 4) Login with GitHub
 
@@ -124,13 +128,15 @@ Let's understand why:
 ## HTML Tags
 
 The code that we are writing on the left is called "HTML". (Feel free to [Google
-what HTML stands for and learn more about it)](https://www.google.com/search?q=html)
+what HTML stands for and learn more about it][google_html])
 
 Any adding blank lines or more than one space between your words in HTML does
 will not change what your website looks like.
 
 However we can change the style of some things on the page by adding **HTML
 tags**.
+
+[google_html]: https://www.google.com/search?q=html
 
 ## The Heading HTML Tag
 
