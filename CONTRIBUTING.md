@@ -102,7 +102,7 @@ This commit message contains three units of change, they are:
 
 - An image of pizza
 - Fixed typos
-- Rewritten `README.md`
+- Rewrote `README.md`
 
 These should be split into one commit each.
 
