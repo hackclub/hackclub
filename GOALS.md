@@ -58,7 +58,7 @@ Hack Camp overview:
 - We created a
   [Hack Camp playbook](https://github.com/hackclub/hack-camp/tree/master/cohort_4/playbook)
   that previous hackers in Hack Camp and
-  [@gemmabusoni](https://github.com/gemmabusoni) were able to run a cohort from.
+  [@gemmabusoni](https://github.com/gemmabusoni) was able to run a cohort from.
 - Ran four cohorts ranging in size from 4 to 11 hackers.
 - Got some
   [awesome](https://github.com/hackclub/hack-camp/blob/master/cohort_1/feedback/2.md#can-you-tell-us-if-hack-camp-changed-your-mindset-or-the-way-you-thought-about-yourself-or-your-abilities)
