@@ -2,36 +2,36 @@
 **Table of Contents**
 
 - [Basic Git and GitHub](#basic-git-and-github)
-  - [Tips And Tricks](#tips-and-tricks)
-  - [Preparing Your Workspace](#preparing-your-workspace)
-  - [What is Git?](#what-is-git)
-  - [Git's Tools](#gits-tools)
-    - [Repository](#repository)
-    - [Branch](#branch)
-    - [Master Branch](#master-branch)
-  - [What is GitHub?](#what-is-github)
-  - [Git and GH-Pages w/ provided link](#git-and-gh-pages-w-provided-link)
-    - [Preparations](#preparations)
-    - [Using Git and GitHub](#using-git-and-github)
-  - [Git and GH-Pages w/o provided link](#git-and-gh-pages-wo-provided-link)
-  - [More Commands](#more-commands)
-    - [Clone](#clone)
-    - [Merge](#merge)
-  - [Extended GitHub Knowledge](#extended-github-knowledge)
-    - [Pull Requests](#pull-requests)
-    - [GitHub Terminology](#github-terminology)
-      - [Fork](#fork)
-      - [Pull Request](#pull-request)
-      - [Issue](#issue)
-      - [Contributor](#contributor)
-  - [Follow us on GitHub!](#follow-us-on-github)
-  - [Explore!](#explore)
+    - [Tips and Tricks While Using This Workshop](#tips-and-tricks-while-using-this-workshop)
+    - [Preparing Your Workspace](#preparing-your-workspace)
+    - [What is Git?](#what-is-git)
+    - [Git's Tools](#gits-tools)
+        - [Repository](#repository)
+        - [Branch](#branch)
+        - [Master Branch](#master-branch)
+    - [What is GitHub?](#what-is-github)
+    - [Git and GH-Pages w/ Provided Link](#git-and-gh-pages-w-provided-link)
+        - [Preparations](#preparations)
+        - [Using Git and GitHub](#using-git-and-github)
+    - [Git and GH-Pages w/o provided link](#git-and-gh-pages-wo-provided-link)
+    - [More Commands](#more-commands)
+        - [Clone](#clone)
+        - [Merge](#merge)
+    - [Extended GitHub Knowledge](#extended-github-knowledge)
+        - [Pull Requests](#pull-requests)
+        - [GitHub Terminology](#github-terminology)
+            - [Fork](#fork)
+            - [Pull Request](#pull-request)
+            - [Issue](#issue)
+            - [Contributor](#contributor)
+    - [Follow Us on GitHub!](#follow-us-on-github)
+    - [Explore!](#explore)
 
 <!-- markdown-toc end -->
 
 # Basic Git and GitHub
 
-## Tips And Tricks
+## Tips and Tricks While Using This Workshop
 
 1. To see a GIF in another tab, right click on the GIF and click _open in new
    tab_.
@@ -194,7 +194,7 @@ _Bob & John are working on one repo and the same files at the same time:_
 - Where coders (you!) **merge** their final changes.
   - Bob and John would merge their changes in the **master branch**.
 
-**Diagram of Master branch versus Another Branch**
+**Diagram of Master Branch Versus Another Branch**
 
 ![feature branch tree](img/feature_branch_tree.png)
 
@@ -210,7 +210,7 @@ GitHub (https://github.com/) is an online **Git repository hosting service**.
 - Has its own tools that makes it easier and faster to collaborate with others
   (we'll go into that later!).
 
-## Git and GH-Pages w/ provided link
+## Git and GH-Pages w/ Provided Link
 
 **GitHub Pages is a free service by GitHub** that allows you to host a website
 on their servers (https://pages.github.com/).
@@ -500,7 +500,7 @@ merge your changes to the master repo.
 Someone that contributes to the default branch through things such as commits,
 pull requests and submitting issues.
 
-## Follow us on GitHub!
+## Follow Us on GitHub!
 
 - Brian: https://github.com/nguyenbrian
 - Jevin: https://github.com/JevinSidhu
