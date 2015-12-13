@@ -39,8 +39,9 @@ to experiment and improve them (we're always hungry for pull requests).
 In addition to the workshops that the Hack Club staff make, anyone is encouraged
 to create workshops and submit them to this directory.
 
-| Workshop                               | What You Build                                                 | Author                                   |
-| -------------------------------------- | -------------------------------------------------------------- | ---------------------------------------- |
-| [Ajar.io](ajar/README.md)              | A clone of Agar.io                                             | [@Bogidon](https://github.com/Bogidon)   |
-| [Cloud9](cloud9/README.md)             | A fully configured Cloud9 account ready to use for development | [@Bogidon](https://github.com/Bogidon)   |
-| [GitHub Pages](github_pages/README.md) | Get your website online using GitHub's free hosting service    | [@sethtrei](https://github.com/sethtrei) |
+| Workshop                                   | What You Build                                                 | Author                                                                                                                                                                                             |
+| --------------------------------------     | -------------------------------------------------------------- | ----------------------------------------                                                                                                                                                           |
+| [Ajar.io](ajar/README.md)                  | A clone of Agar.io                                             | [@Bogidon](https://github.com/Bogidon)                                                                                                                                                             |
+| [Cloud9](cloud9/README.md)                 | A fully configured Cloud9 account ready to use for development | [@Bogidon](https://github.com/Bogidon)                                                                                                                                                             |
+| [Git and GitHub](git_and_github/README.md) | Introduction to Git and using it with GitHub                   | [@nguyenbrian](https://github.com/nguyenbrian), [@JevinSidhu](https://github.com/JevinSidhu), [@uditdesai](https://github.com/uditdesai), and [@vaibhavyadaram](https://github.com/vaibhavyadaram) |
+| [GitHub Pages](github_pages/README.md)     | Get your website online using GitHub's free hosting service    | [@sethtrei](https://github.com/sethtrei)                                                                                                                                                           |
