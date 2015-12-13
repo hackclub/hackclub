@@ -6,6 +6,13 @@ our workshops.
 Make sure you have the [`gist`](https://github.com/defunkt/gist) gem installed
 before proceeding.
 
+Also, every time we say `jsbinctl`, replace it with a relative path to the
+`jsbinctl` script. If you're in the `workshops` directory, you'll want to
+replace it with `lib/jsbinctl/jsbinctl`. If you're in the `workshops/portfolio`
+directory, you'll want to replace it with `../lib/jsbinctl/jsbinctl`. If you're
+modifying a workshop, make sure you're in the workshop directory (ex.
+`workshops/twilio`) and use `../lib/jsbinctl/jsbinctl`.
+
 Here's how it works. Your workshop directory structure should look like the
 following (where `how_to_make_a_plumbus` is your workshop):
 
