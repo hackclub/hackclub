@@ -53,11 +53,11 @@ will take you through setting the workspace up.
 1. Login to your Cloud9 homepage - https://c9.io/
    - Register if you haven't already.
      - We recommend signing up with your GitHub account - https://github.com/.
-   - It should look like this: 
+   - It should look like this:
 
      ![Cloud9 dashboard](img/cloud9_dashboard.png)
 
-2. Create a workspace! 
+2. Create a workspace!
    - Press the **create a new workspace** button.
 
      ![create new workspace](img/create_new_workspace.gif)
