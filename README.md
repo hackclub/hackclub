@@ -4,9 +4,26 @@ Welcome! This is our internal repo we use for running
 [Hack Club](https://hackclub.io), warts and all. We're excited to have you
 involved.
 
-Links (more soon to be added):
+Links:
 
 - [GitHub Teams](github_teams.md) - How we manage our GitHub teams
+- Protocols
+  - [Hiring](hiring_protocol.md)
+  - [Club leader onboarding](club_leader_onboarding_protocol.md)
+  - [Staff onboarding](staff_onboarding_protocol.md)
+- Style guides
+  - [Markdown](markdown_style_guide.md)
+- Other directories
+  - [Applications](applications)
+  - [Contracts](contracts)
+  - [Fundraising](fundraising)
+  - [Ideas](ideas)
+  - [Labs](labs)
+  - [Logos](logos)
+  - [Meeting notes](meetings)
+  - [Positions](positions)
+  - [Scripts](scripts)
+  - [Updates](updates)
 
 ## Vision and Mission
 
