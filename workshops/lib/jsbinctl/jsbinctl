@@ -55,8 +55,6 @@ update() {
     local basename=$(basename $dir)
     local jsbin_url=$(upload $dir)
 
-    echo $dir
-
     echo "I'm about to update all $basename references to the new JS Bin URL"\
          "($jsbin_url) in $(basename $PWD). Let me continue?"
     select yn in "Yes" "No"; do
