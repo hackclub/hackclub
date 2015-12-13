@@ -138,7 +138,6 @@ If you're more experienced, feel free to skip this section. Make
 sure that you create a JS Bin account first (you can sign in with
 GitHub).
 
-
 ### Part II
 
 This section is less guided. It showcases snippets of various APIs and how to
