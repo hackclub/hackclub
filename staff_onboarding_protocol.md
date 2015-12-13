@@ -5,6 +5,7 @@ The things we need to do to onboard a new person onto the team.
 - [ ] Create Google Apps account
 - [ ] Create Slack account
   - [ ] Download Slack mobile client
+- [ ] Add to the `@staff` group on Slack
 - [ ] Add to calendars
   - [ ] If they go to https://calendar.google.com they can add the calendar of
     teammates by typing in their email (ex. `zaphod@hackclub.io`) into the
