@@ -3,6 +3,11 @@
 Contributions to Hack Club are very welcome, and strongly encouraged (even to
 this document)!
 
+## Contributing to the Workshops
+
+For more details specific to contributing a workshop,
+[look here](workshops/CONTRIBUTING.md).
+
 ## Doing it
 
 We use a modified version of
