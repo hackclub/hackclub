@@ -51,7 +51,7 @@ upload() {
 
 update() {
   for dir in "$@"; do
-    local dir=$(get_dir $1)
+    local dir=$(get_dir $dir)
     local basename=$(basename $dir)
     local jsbin_url=$(upload $dir)
 

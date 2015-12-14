@@ -27,11 +27,12 @@ text.
 
 Ready?
 
-Open <a href="http://jsbin.com/papawo/20/edit?html,js,console"
-target="_blank">this JS Bin*</a>. Leave this tab open for the rest of the
+Open [this JS Bin*][starter]. Leave this tab open for the rest of the
 tutorial.
 
 _*JS Bin is a website for easily writing code._
+
+[starter]: https://jsbin.com/gist/8e601de52cceb2e750a9
 
 ### Adding Your Twilio SID and Token
 
@@ -117,8 +118,7 @@ This first section is linear and more guided.
 In this section, you will learn to build an HTML5 app that, when you press a
 a button, calls a phone.
 
-<a href="http://jsbin.com/fawuda/86/edit?js,console,output" target="_blank">Here
-is a demo of the app we will make</a>.
+[Here is a demo of the app we will make][demo].
 
 To make this work for you:
 
@@ -170,13 +170,9 @@ run code:
 
 ### Send text messages and make phone calls
 
-Go ahead and continue using the <a
-href="http://jsbin.com/papawo/25/edit?html,js,console" target="_blank">JS Bin
-from the Quick Demo</a>.
+Go ahead and continue using the [JS Bin from the Quick Demo][demo]
 
-If you've closed it already, open <a
-href="http://jsbin.com/papawo/25/edit?html,js,console" target="_blank">the JS
-Bin</a> tab back up!
+If you've closed it already, open [the JS Bin][demo] tab back up!
 
 If you havn't added your Twilio SID and token to this JS Bin, please do so
 by [following these directions](#adding-your-twilio-sid-and-token).
@@ -273,9 +269,7 @@ Now let's make this work when I press a button on a real website!
 
 ### Call a Phone When a Button is Clicked
 
-**Important:** Go ahead and open up <a
-href="http://jsbin.com/fawuda/139/edit?html,js,console,output"
-target="_blank">this new JS Bin</a> and
+**Important:** Go ahead and open up [this JS Bin][demo] and
 [add your Twilio credentials like before as well](#adding-your-twilio-sid-and-token).
 
 There are 4 panels in the JS Bin now:
@@ -460,8 +454,7 @@ All the examples also need to have a Twilio SID and authentication token.
 However, they use a different script than the above. To make the examples work
 for the rest of the tutorial, follow these instructions:
 
-- Open <a href="http://jsbin.com/tetisa/1/edit?js,output" target="_blank">this
-  JS Bin</a>.
+- Open [this JS Bin][demo]
 - Click "Run with JS".
 - When prompted, enter your Twilio SID and token.
 
@@ -475,9 +468,11 @@ for the rest of the tutorial, follow these instructions:
 Twilio.callAndPlay("555-555-5555", "http://a.tumblr.com/tumblr_lie8ewfdbO1qzbwpvo1.mp3");
 ```
 
-<a href="http://jsbin.com/fawuda/101/edit?js,console" target="_blank">JS Bin</a>
+[JS Bin][call_and_play]
 
 _Don't forget to change the phone number and click the "run" button._
+
+[call_and_play]: https://jsbin.com/gist/7fe2f9b7455d987ae1f1
 
 #### Play Music Through Your Computer
 
@@ -486,7 +481,9 @@ var audio = new Audio("http://a.tumblr.com/tumblr_lie8ewfdbO1qzbwpvo1.mp3");
 audio.play();
 ```
 
-<a href="http://jsbin.com/fawuda/101/edit?js,console" target="_blank">JS Bin</a>
+[JS Bin][play_music]
+
+[play_music]: https://jsbin.com/gist/7a72ce8866b0e9b8f3e5
 
 _If you're trying to play a sound on mobile, it must be activated with a button
 press first before it can play._
@@ -548,21 +545,24 @@ of the body tag in the HTML section.
 ></script>
 ```
 
-- <a href="http://jsbin.com/fawuda/145/edit?js,output" target="_blank">Here is a
-  bare bones working example</a>
-- <a href="http://jsbin.com/fawuda/145" target="_blank">This is the output
-  URL</a>
+- [Here is a bare bones working example][wand_starter]
+  bare bones working example
+- [This is the output][wand_starter_output]
 
 Here is a more complicated example:
-- <a href="http://jsbin.com/fawuda/151/edit?html,js,output" target="_blank">Link
+- [Link to the code][wand_complicated]
   to the code</a>
-- [Link to the output that you should open on your phone]
-  (http://jsbin.com/fawuda/151)
+- [Link to the output that you should open on your phone][wand_complicated_code]
 
 **Important Note:** If you want to play a sound when waving the wand, you need
 to press the button on your phone to play the sound first before the wand will
 work.  This is because of an iOS limitation (a sound won't play until it is
 played at least once from pressing or clicking something).
+
+[wand_starter]: https://jsbin.com/gist/93cdd3f54a643cf31e80
+[wand_starter_output]: https://jsbin.com/gist/93cdd3f54a643cf31e80
+[wand_complicated]: https://jsbin.com/gist/12f1c965e0714239350b
+[wand_complicated_code]: https://jsbin.com/gist/12f1c965e0714239350b
 
 #### When you receive a text message
 
@@ -573,8 +573,7 @@ Twilio.listenForMessages(function(data) {
 });
 ```
 
-<a href="http://jsbin.com/hisavu/4/edit?html,js,console" target="_blank">Here is
-an example JS Bin</a> with the above code.
+[Here is an example JS Bin][message_alert] with the above code
 
 These are all the properties that you can receive:
 
@@ -612,9 +611,7 @@ Twilio.listenForMessages(function(data) {
 });
 ```
 
-See the above code working in <a
-href="http://jsbin.com/hisavu/8/edit?html,js,console" target="_blank">this JS
-Bin</a>.
+See the above code working in [this JS Bin][reply]
 
 ```js
 Twilio.listenForMessages(function(message) {
@@ -622,11 +619,14 @@ Twilio.listenForMessages(function(message) {
 });
 ```
 
-See the above code working in <a
-href="http://jsbin.com/fawuda/111/edit?js,console" target="_blank">this JS
-Bin</a>.
+See the above code working in [this JS Bin][reply_call_and_play]
 
 You can start to do more advanced logic like implementing a chat bot.
+
+
+[message_alert]: https://jsbin.com/gist/94197e82c5c22dea588d
+[reply]: https://jsbin.com/gist/cb2b5d96d33db6b618a7
+[reply_call_and_play]: https://jsbin.com/gist/583f32fa9ec61d3e8e9d
 
 # Feedback!
 
@@ -648,3 +648,5 @@ _How likely is it that you would recommend this workshop to a friend?_
 [r8]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=8
 [r9]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=9
 [r10]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=10
+
+[demo]: https://jsbin.com/gist/dc120a080509e710985d
