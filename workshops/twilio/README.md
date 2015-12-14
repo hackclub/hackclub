@@ -32,7 +32,7 @@ tutorial.
 
 _*JS Bin is a website for easily writing code._
 
-[starter]: https://jsbin.com/gist/8e601de52cceb2e750a9
+[starter]: https://jsbin.com/gist/93d39ac822a8adfbbcf1
 
 ### Adding Your Twilio SID and Token
 
@@ -472,7 +472,7 @@ Twilio.callAndPlay("555-555-5555", "http://a.tumblr.com/tumblr_lie8ewfdbO1qzbwpv
 
 _Don't forget to change the phone number and click the "run" button._
 
-[call_and_play]: https://jsbin.com/gist/7fe2f9b7455d987ae1f1
+[call_and_play]: https://jsbin.com/gist/eb5dd90e5db800559b35
 
 #### Play Music Through Your Computer
 
@@ -483,7 +483,7 @@ audio.play();
 
 [JS Bin][play_music]
 
-[play_music]: https://jsbin.com/gist/7a72ce8866b0e9b8f3e5
+[play_music]: https://jsbin.com/gist/8586aad7e4d53984a1e7
 
 _If you're trying to play a sound on mobile, it must be activated with a button
 press first before it can play._
@@ -624,9 +624,9 @@ See the above code working in [this JS Bin][reply_call_and_play]
 You can start to do more advanced logic like implementing a chat bot.
 
 
-[message_alert]: https://jsbin.com/gist/94197e82c5c22dea588d
-[reply]: https://jsbin.com/gist/cb2b5d96d33db6b618a7
-[reply_call_and_play]: https://jsbin.com/gist/583f32fa9ec61d3e8e9d
+[message_alert]: https://jsbin.com/gist/74e51b01f3d2f53671e0
+[reply]: https://jsbin.com/gist/f057323ad4142634061b
+[reply_call_and_play]: https://jsbin.com/gist/d3a2d49e28dd7b0863ac
 
 # Feedback!
 
@@ -649,4 +649,4 @@ _How likely is it that you would recommend this workshop to a friend?_
 [r9]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=9
 [r10]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=10
 
-[demo]: https://jsbin.com/gist/dc120a080509e710985d
+[demo]: https://jsbin.com/gist/b4fe9ab47f785a80c138
