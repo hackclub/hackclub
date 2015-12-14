@@ -8,6 +8,15 @@ https://github.com/carwin/markdown-styleguide._
 This document contains formatting standards for creating readable, consistent
 files using Markdown.
 
+**Table of Contents**
+
+- [Markdown Style Guidelines](#markdown-style-guidelines)
+  - [Basic conventions](#basic-conventions)
+  - [Headings](#headings)
+  - [Lists](#lists)
+  - [Code](#code)
+  - [Horizontal rules](#horizontal-rules)
+
 ## Basic conventions
 
 - Wrap all lines at 80 characters
