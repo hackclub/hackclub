@@ -47,7 +47,7 @@ Hi _PRODUCT_!
 I am a huge fan! It is one of the only ways I've been able to _DO_THE_THING_!
 
 Now I would love to use _PRODUCT_ for _THING_ at our non-profit,
-[hackEDU](http://hackedu.us). We empower high school students to start and lead
+[hackEDU](https://hackedu.us). We empower high school students to start and lead
 student-run programming clubs at their school!
 
 We were wondering if we could get some pro accounts for our team to _THING_ (we

@@ -90,7 +90,7 @@ think it'll let us scale and reach new audiences where others haven't.
 
 [0] https://docs.google.com/document/d/1gySkItxiJn_vwb8HIIKNXqen184mRtzDX12cux0ZgZk/pub
 [1] http://www.bls.gov/opub/mlr/2012/01/art5full.pdf
-[2] http://news.microsoft.com/download/archived/presskits/citizenship/docs/stemperceptionsreport.pdf
+[2] https://news.microsoft.com/download/archived/presskits/citizenship/docs/stemperceptionsreport.pdf
 [3] https://services.google.com/fh/files/misc/searching-for-computer-science_report.pdf
 
 ### Population to be served
@@ -170,11 +170,11 @@ Challenges:
     made our iteration cycle for workshops longer than we'd like.
 
 [0] http://b.gatech.edu/1NDopUl
-[1] http://bit.ly/1Wln4Dy
-[2] http://bit.ly/1Wln6vj
+[1] https://bit.ly/1Wln4Dy
+[2] https://bit.ly/1Wln6vj
 [3] http://on.today.com/1LZXO0O
 [4] http://usat.ly/1HekFUp
-[5] http://bit.ly/1MkUtsD
+[5] https://bit.ly/1MkUtsD
 
 ### Theoretical Rationale
 

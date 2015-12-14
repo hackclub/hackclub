@@ -295,7 +295,7 @@ Male
 
 **Personal website**
 
-http://zachlatta.com
+https://zachlatta.com
 
 **Github URL**
 

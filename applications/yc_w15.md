@@ -45,7 +45,7 @@ zach@hackedu.us
 **Please enter the url of a 1 minute unlisted (not private) YouTube video
 introducing the founders.**
 
-http://youtu.be/uTyn-ljKlyw
+https://youtu.be/uTyn-ljKlyw
 
 **Please provide the Hacker News username and email address for each founder in
 the startup. We will send an email to each founder to fill out additional
@@ -63,7 +63,7 @@ costs, but my solution enables anyone to do it, even from a Chromebook. Out of
 nearly 250 submissions, my application took first place and the best user
 experience prize.
 
-Demo: http://youtu.be/TjizJRxnUHo?t=42m24s
+Demo: https://youtu.be/TjizJRxnUHo?t=42m24s
 
 **How long have the founders known one another and how did you meet? Have any
 of the founders not met in person?**

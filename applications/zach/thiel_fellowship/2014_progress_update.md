@@ -27,11 +27,11 @@ https://hackedu.us
 
 Personally:
 
-- Grand prize with Fuji (http://youtu.be/TjizJRxnUHo?t=42m24s) at PennApps Fall
+- Grand prize with Fuji (https://youtu.be/TjizJRxnUHo?t=42m24s) at PennApps Fall
   2014.
 - 1st place with DTZ.js (http://challengepost.com/software/downtozork-js) at
   Hacking Generation Y
-- 3rd place with Orbit (http://youtu.be/MY01d647S9Y) at the 2015 LAUNCH
+- 3rd place with Orbit (https://youtu.be/MY01d647S9Y) at the 2015 LAUNCH
   Hackathon.
 
 hackEDU:
@@ -90,5 +90,5 @@ Nope.
 ##### Anything else you'd like to share?
 
 I've been spending some of my (extremely limited) free time learning Rust
-(http://www.rust-lang.org/). It's really quite cool and has a very interesting
+(https://www.rust-lang.org/). It's really quite cool and has a very interesting
 way of approaching generics and memory management.
