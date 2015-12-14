@@ -3,7 +3,7 @@
 Welcome! In this workshop you will set up a GitHub Pages Website!
 
 To start you need to have completed the
-<a href="https://github.com/hackedu/hackedu/tree/master/workshops/contrib/cloud9" target="_blank">
+<a href="https://github.com/hackclub/hackclub/tree/master/workshops/cloud9" target="_blank">
 Cloud 9 Workshop</a>.
 
 # What is GitHub Pages?
