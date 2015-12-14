@@ -120,7 +120,7 @@ To add Twilio to your project, add the following script tag inside your
 HTML file (after filling in your sid and token, of course).
 
 ```html
-<script src="//bit.ly/twilio-basic-v6"
+<script src="//bit.ly/twilio-basic-v7"
   sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
   token="YOUR_TWILIO_AUTH_TOKEN_HERE"
 ></script>
