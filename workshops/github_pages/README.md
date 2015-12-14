@@ -49,10 +49,6 @@ code.
 
      > ![](resources/clone.gif)
 
-4. Move the terminal into the repository by typing:
-
-       cd [repository name]
-
 **Congrats! You can now edit and save in your repository!**
 
 You should start creating the necessary files for a website. (`index.html`,
@@ -75,17 +71,21 @@ into your GitHub repository.
 After you make changes to your site on Cloud9 you will need to put the changes on
 GitHub for the changes to show up on your site.
 
-1. **Add your changes to the commit list by doing...**
+1. **Switch into your repo in the terminal**
+ 
+        cd [repository name]
+
+2. **Add your changes to the commit list by doing...**
 
         git add .
 
-2. **Commit your changes with the following format**
+3. **Commit your changes with the following format**
 
         git commit -m "Here you type what the commit does. Keep the quotations."
 
     This will get your changes ready to push to GitHub
 
-3. **Push your changes**
+4. **Push your changes**
 
         git push
 
