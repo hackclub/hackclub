@@ -32,7 +32,7 @@ tutorial.
 
 _*JS Bin is a website for easily writing code._
 
-[starter]: https://jsbin.com/gist/93d39ac822a8adfbbcf1
+[starter]: https://jsbin.com/gist/770b112138fe94ce1b88
 
 ### Adding Your Twilio SID and Token
 
@@ -472,7 +472,7 @@ Twilio.callAndPlay("555-555-5555", "http://a.tumblr.com/tumblr_lie8ewfdbO1qzbwpv
 
 _Don't forget to change the phone number and click the "run" button._
 
-[call_and_play]: https://jsbin.com/gist/eb5dd90e5db800559b35
+[call_and_play]: https://jsbin.com/gist/11c2a490d468d912e0ba
 
 #### Play Music Through Your Computer
 
@@ -483,7 +483,7 @@ audio.play();
 
 [JS Bin][play_music]
 
-[play_music]: https://jsbin.com/gist/8586aad7e4d53984a1e7
+[play_music]: https://jsbin.com/gist/35835a7c730598e2080d
 
 _If you're trying to play a sound on mobile, it must be activated with a button
 press first before it can play._
@@ -559,10 +559,10 @@ to press the button on your phone to play the sound first before the wand will
 work.  This is because of an iOS limitation (a sound won't play until it is
 played at least once from pressing or clicking something).
 
-[wand_starter]: https://jsbin.com/gist/93cdd3f54a643cf31e80
-[wand_starter_output]: https://jsbin.com/gist/93cdd3f54a643cf31e80
-[wand_complicated]: https://jsbin.com/gist/12f1c965e0714239350b
-[wand_complicated_code]: https://jsbin.com/gist/12f1c965e0714239350b
+[wand_starter]: https://jsbin.com/gist/b53087722930d4aa8b0b
+[wand_starter_output]: https://jsbin.com/gist/b53087722930d4aa8b0b
+[wand_complicated]: https://jsbin.com/gist/b966f5dd92b538d32d67
+[wand_complicated_code]: https://jsbin.com/gist/b966f5dd92b538d32d67
 
 #### When you receive a text message
 
@@ -624,9 +624,9 @@ See the above code working in [this JS Bin][reply_call_and_play]
 You can start to do more advanced logic like implementing a chat bot.
 
 
-[message_alert]: https://jsbin.com/gist/74e51b01f3d2f53671e0
-[reply]: https://jsbin.com/gist/f057323ad4142634061b
-[reply_call_and_play]: https://jsbin.com/gist/d3a2d49e28dd7b0863ac
+[message_alert]: https://jsbin.com/gist/8f682244532c7c4666fa
+[reply]: https://jsbin.com/gist/a72c7eb777743784276c
+[reply_call_and_play]: https://jsbin.com/gist/4ebb2643f2d09735d32b
 
 # Feedback!
 
@@ -649,4 +649,4 @@ _How likely is it that you would recommend this workshop to a friend?_
 [r9]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=9
 [r10]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=10
 
-[demo]: https://jsbin.com/gist/b4fe9ab47f785a80c138
+[demo]: https://jsbin.com/gist/b16a00cc53a7827c725b
