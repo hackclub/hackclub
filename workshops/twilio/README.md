@@ -32,7 +32,7 @@ tutorial.
 
 _*JS Bin is a website for easily writing code._
 
-[starter]: https://jsbin.com/gist/8e601de52cceb2e750a9
+[starter]: https://jsbin.com/gist/93d39ac822a8adfbbcf1
 
 ### Adding Your Twilio SID and Token
 
@@ -649,4 +649,4 @@ _How likely is it that you would recommend this workshop to a friend?_
 [r9]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=9
 [r10]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=10
 
-[demo]: https://jsbin.com/gist/dc120a080509e710985d
+[demo]: https://jsbin.com/gist/b4fe9ab47f785a80c138
