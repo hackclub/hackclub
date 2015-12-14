@@ -312,7 +312,7 @@ Male
 
 **Personal website**
 
-http://zachlatta.com
+https://zachlatta.com
 
 **Github URL**
 
@@ -457,7 +457,7 @@ and applications.' [1]
 By convincing Megabus to sponsor us by "hacking" Wikipedia page, PennApps set
 the status quo for the hackathon transportation reimbursement.
 
-[1] http://en.wikipedia.org/w/index.php?title=Hackathon&diff=442741932&oldid=437209790
+[1] https://en.wikipedia.org/w/index.php?title=Hackathon&diff=442741932&oldid=437209790
 
 **Please tell us in one or two sentences about the most impressive thing other
 than this startup that you have built or achieved.**

@@ -24,7 +24,7 @@ Here are some of the things that we've learned from them:
     gatherings, say right before a hackathon when people are geographically
     proximal.
     - Could be something along the lines of a far less formal
-      [Hackcon](http://news.mlh.io/hackcon-talks-03-31-2014) or the Learner
+      [Hackcon](https://news.mlh.io/hackcon-talks-03-31-2014) or the Learner
       Hacker's Retreat.
 - There is a wide gulf between organizers who understand who learning happens
   and those who do not.

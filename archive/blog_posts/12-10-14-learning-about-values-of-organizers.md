@@ -2,7 +2,7 @@
   - People it works for:
   - FB Chat: https://www.facebook.com/messages/conversation-1524265554526303
   - Notes
-    - http://beta.etherpad.org/p/documentingawesome
+    - https://beta.etherpad.org/p/documentingawesome
       - Displice and Attendance, Faithfulness - giving money, signing up that we
         need help with, 3/4 meetings per month. Paying the set amount of money
         for the club.
@@ -40,7 +40,7 @@
 - 6PM PST on Tuesday (12/09)
   - FB Chat: https://www.facebook.com/messages/conversation-338440426341512
   - Notes
-    - http://beta.etherpad.org/p/documentingawesome
+    - https://beta.etherpad.org/p/documentingawesome
     - Values
     - * Knowledge
     - * Ex. Creating a website for diversity and awareness council
@@ -70,24 +70,24 @@
     - Intro to Computer Science (highly recommended)-
     - 1. https://www.edx.org/course/harvardx/harvardx-cs50x-introduction-computer-1022
     - Web Development -
-    - 1. http://www.bentobox.io/ (VERY USEFUL)
+    - 1. https://www.bentobox.io/ (VERY USEFUL)
     - 2. http://hub.teen2geek.com/
-    - 3. NodeJS (http://goo.gl/1Qba1)
+    - 3. NodeJS (https://goo.gl/1Qba1)
     - 4. http://www.jsdb.io/
-    - 5. http://scotch.io/ (MEAN Stack)
+    - 5. https://scotch.io/ (MEAN Stack)
     - Algorithms+Machine Learning+Cryptography -
-    - 1. http://www.metacademy.org/
+    - 1. https://www.metacademy.org/
     - 2. https://www.coursera.org/course/algo
     - 3. https://www.coursera.org/course/ml
     - 4. https://www.coursera.org/course/crypto
     - Problems/Games -
-    - 1. http://projecteuler.net/problems
+    - 1. https://projecteuler.net/problems
     - 2. http://www.matasano.com/articles/crypto-challenges/
-    - 3. http://alexnisnevich.github.io/untrusted/ (Super Fun)
+    - 3. https://alexnisnevich.github.io/untrusted/ (Super Fun)
     - Miscellaneous -
     - 1. https://manual.cs50.net/seminars/
-    - 2.http://www.youtube.com/user/mybringback/playlists
-    - 3. http://cerberus.delos.com:790/usacogate
+    - 2. https://www.youtube.com/user/mybringback/playlists
+    - 3. https://cerberus.delos.com:790/usacogate
     - 4. http://www.valleytalk.org/wp-content/uploads/2012/10/CrackCode.pdf
 - 8PM PST on Tuesday (12/09)
   - People it works for:
@@ -100,7 +100,7 @@
     - Amanda Nguyen
   - FB Chat: https://www.facebook.com/messages/conversation-361529350688430
   - Notes
-    - http://beta.etherpad.org/p/hackersofawesome
+    - https://beta.etherpad.org/p/hackersofawesome
       - Core Values of a Successful Hack Club -
       - collaboration - people learn better when they work on projects together.
       - inclusion - focus on everyone through outreach, not just programmers

@@ -123,7 +123,7 @@ I get ridiculously excited when building things.
 
 It's not uncommon to find me nerding out late at night learning a new
 programming language (Rust is what's kept me busy recently
-http://www.rust-lang.org/) or building a tool for myself.
+https://www.rust-lang.org/) or building a tool for myself.
 
 While I mentioned hackathons (12-48 hour coding competitions) in my personal
 summary, I didn't mention how much of a role they play in my life. In the past
@@ -132,12 +132,12 @@ been at one every weekend. Through hackathons I've made nearly all of my
 friends and gotten integrated into the technology industry.
 
 - 1st Place at PennApps X, the University of Pennsylvania's hackathon, with
-  [Fuji](http://youtu.be/TjizJRxnUHo?t=42m24s)
+  [Fuji](https://youtu.be/TjizJRxnUHo?t=42m24s)
   - Youngest winner
 - 1st Place at Hack for LA with
   [ShelterConnect](http://www.latimes.com/local/lanow/la-me-ln-la-hackathon-20140601-story.html)
   - Featured in the LA Times (linked)
-- 3rd Place at LAUNCH Hackathon with [Orbit](http://youtu.be/MY01d647S9Y)
+- 3rd Place at LAUNCH Hackathon with [Orbit](https://youtu.be/MY01d647S9Y)
   (>1300 attendees)
 - 1st Place at Hacking Generation Y with
   [DownToZork.js](http://challengepost.com/software/downtozork-js)

@@ -149,7 +149,7 @@ No
 
 **Organization website:**
 
-http://hackedu.us
+https://hackedu.us
 
 **Which program area best describes your organization?**
 
@@ -398,7 +398,7 @@ hackathon, hackathons have nothing to do with malicious "hacking" done by
 hackers, rather the spirit of a hackathon is to collaboratively build programs
 and applications.'
 
-http://bit.ly/17dHHzg
+https://bit.ly/17dHHzg
 
 **Provide one or two examples of your ability to overcome challenges and
 adversity. (1000 characters)**

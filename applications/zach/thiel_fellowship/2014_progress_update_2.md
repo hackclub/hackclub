@@ -75,6 +75,6 @@ Nope.
 ##### Anything else you'd like to share?
 
 As mentioned in my last update, I've been spending some of my (extremely
-limited) free time learning Rust (http://www.rust-lang.org/). It's really quite
+limited) free time learning Rust (https://www.rust-lang.org/). It's really quite
 cool and has a very interesting way of approaching generics and memory
 management.
