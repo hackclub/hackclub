@@ -1,4 +1,4 @@
-# Contributing to Hack Club
+# Contribution Guidelines
 
 This document contains a set of guidelines which any contributions to *any*
 Hack Club repository must follow.
