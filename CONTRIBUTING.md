@@ -3,14 +3,22 @@
 This document contains a set of guidelines which any contributions to *any*
 Hack Club repository must follow.
 
+[If you disagree with something here, you should open up an issue to discuss making a change!](https://github.com/hackclub/hackclub/issues/new)
+
 ## Contributing to the Workshops
 
 For more details specific to contributing a workshop,
 [look here](workshops/CONTRIBUTING.md).
 
-## Doing it
+## Table of Contents
 
-[If you disagree with something here, you should open up an issue to discuss making a change!](https://github.com/hackclub/hackclub/issues/new)
+1. [GitHub Flow](#github-flow)
+2. [Style Guides](#style-guides)
+3. [Branch Names](#branch-names)
+4. [File Names](#file-names)
+5. [Git Commits](#git-commits)
+
+## GitHub Flow
 
 We use a modified version of [GitHub Flow](https://guides.github.com/introduction/flow/)
 at Hack Club. The only difference is instead of deploying from a reviewed pull
@@ -88,10 +96,10 @@ This commit message is wonderful!
 
 A logical unit of change can be thought of as completion of a single task.
 
-A good way to figure out if you are not adhereing to this rule is to tell yourself
-what you changed ("I added a picture of a donkey to the twilio workshop"). If
-you find yourself having multiple statements in this description then you have
-made your commit too big.
+A good way to figure out if you are not adhereing to this rule is to tell
+yourself what you changed ("I added a picture of a donkey to the twilio
+workshop"). If you find yourself having multiple statements in this description
+then you have made your commit too big.
 
 #### Examples
 

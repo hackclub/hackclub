@@ -53,10 +53,6 @@ Each club's directory contains sub-directories for each of the club's events
 Each event directory contains two files: [a planning
 document](#planning-document) and [a recap document](#recap-document).
 
-See the case studies section in
-[`CONTRIBUTING.md`](../CONTRIBUTING.md#contributing-case-studies) for a guide
-on submitting case studies.
-
 ## Planning Document
 
 The planning document, named `planning.md`, contains three things:
