@@ -97,6 +97,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 1. Numbered list item 1.
 2. Numbered list item 2.
   - Child list item.
+  - [ ] Once upon a time in a Hack Club far far away, there existed a markdown
+    rule inwhich all checkbox must indent to the space after the `-`.
 ```
 
 - List item lines exceeding 80 characters should, when wrapped, align vertically
