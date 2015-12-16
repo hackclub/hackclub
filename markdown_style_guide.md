@@ -23,6 +23,8 @@ files using Markdown.
 - Denote **bold** text using the asterisk format `**bold text**`.
 - Denote _italic_ text using the underscore format: `_emphasized text_`.
 - Force a linebreak by ending a line with two spaces, no more.
+- Quote marks (`>`) should be on all quoted lines, not just the beginning of a
+  quote.
 
 ## Headings
 
