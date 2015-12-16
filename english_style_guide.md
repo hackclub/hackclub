@@ -64,6 +64,13 @@ _Incorrect: This will save to `index.html`_
 For simplicity the final comma in a list of elements (usually the one before the
 'and' or 'or') is left in the list.
 
+_Example:_
+
+_Correct: Make sure to include the HTML, CSS, and JS files._
+
+_Correct: This guide details standards for developing flexible, durable, and
+sustainable HTML and CSS._
+
 ## Other Style Guidelines
 
 **bold** Titles that are to be omitted from a table of contents should be bolded
