@@ -84,7 +84,7 @@ as most corporate software development shops.
 
 - Does **not** use the imperative mood
 
-> Adding more pizza parlours to directory
+> Adding more pizza parlors to directory
 
 - Does **not** use the imperative mood
 
@@ -96,8 +96,8 @@ This commit message is wonderful!
 
 A logical unit of change can be thought of as completion of a single task.
 
-A good way to figure out if you are not adhereing to this rule is to tell
-yourself what you changed ("I added a picture of a donkey to the twilio
+A good way to figure out if you are not adhering to this rule is to tell
+yourself what you changed ("I added a picture of a donkey to the Twilio
 workshop"). If you find yourself having multiple statements in this description
 then you have made your commit too big.
 
@@ -119,7 +119,7 @@ This commit is great as only one logical change was made.
 
 ### Commits should explain the change, but not be longer than 50 chars
 
-A commit message is used for quickly summarising a change. Another contributor
+A commit message is used for quickly summarizing a change. Another contributor
 should be able to read it, along with the content and immediately understand the
 change does.
 
