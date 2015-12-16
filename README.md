@@ -24,6 +24,7 @@ Links:
   - [Positions](positions)
   - [Scripts](scripts)
   - [Updates](updates)
+  - [The Hack Series](the_hack_series)
 
 ## Vision and Mission
 
