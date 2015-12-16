@@ -21,32 +21,39 @@ repository before) you may be interested in [checking out issues with the
 ## Talk About It On Slack
 
 Wasting time is not fun! If you are going to make a big change to a workshop
-(or even adding a new one) it is recommended that you join our Slack and talk
-about it on the `#curriculum` channel. To get an even more speedy response,
-mention `@jonl` and `@harrison`.
+(or even adding a new one) it is recommended that you
+[join our Slack](https://slack.hackclub.io) and talk
+about it on the [`#curriculum` channel](https://starthackclub.slack.com/messages/curriculum/).
+To get an even more speedy response, mention `@jonl` and `@harrison`.
 
 ## Create An Issue
 
-If you don't feel like creating the fix yourself, you should create an issue on
-the repository so that someone else can claim it. Remember to be as specific as
-possible so it is very easy to understand and implement.
+If you don't feel like completing a fix yourself, you can
+[create an issue](https://github.com/hackclub/hackclub/issues/new) on the
+repository. Remember to be as specific as possible so it is very easy for
+someone else claim and implement.
 
 ## Make A PR
 
 After you have made your changes and pushed them onto your GitHub
-hackclub/hackclub fork, you should create a Pull Request. It is best practice
-to have different Pull Requests for groups of commits which do different
-things. For example, you could be working on both a workshop and writing
-guidelines, but because those are different things they belong in different
-Pull Requests. If the Pull Request is to resolve an issue, be sure to note the
-issue number at some point in the description.
+fork, you should create a
+[Pull Request](https://help.github.com/articles/using-pull-requests/). It is
+best practice to have different Pull Requests for different groups of commits
+which have different purposes. For example, you could submit both a Pull
+Request containing a typo fix and a new workshop, because those are different
+things they belong in different Pull Requests. If the Pull Request resolves an
+issue, be sure to have the issue number in the description.
 
 ## Wait For Review
 
-Before we can get your code into the main repository you it has to be reviewed
-by one the core contributors. While it is being assessed, it will be judged on
-how well it follows the [contribution guidelines](GUIDELINES.md), and if based
-off of an issue how well it satisfies it.
+Before we can merge your code into the repository it has to be reviewed by one
+the core contributors. It will be assessed on how well it follows the
+[contribution guidelines](GUIDELINES.md) and if it is intended to solve an
+issue, how well it does so.
 
 If all goes well, your code should be merged in very quickly... If not, then a
 merge is usually just a quick fix away!
+
+## Celebrate!
+
+![img/dance.gif](img/dance.gif)
