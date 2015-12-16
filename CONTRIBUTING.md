@@ -2,28 +2,28 @@
 
 This is a guide explaining the contribution workflow we use at Hack Club!
 
-- Find something you want to change
-- If it is big, talk about it on Slack
-- Create an issue if you want to proceed
-- Write your code
-- Put into a PR
-- Wait for review
+- [Find something you want to change](#find-something-to-change)
+- [If it is big, talk about it on Slack](#talk-about-it-on-slack)
+- [Create an issue if you want to proceed](#create-an-issue)
+- [Make a PR](#make-a-pr)
+- [Wait for review](#wait-for-review)
 
 ## Find Something To Change
 
 Usually, as a contributor you know what you want to work on. Perhaps something
 along the lines of workshops, standards or implementing guidelines. However, if
-you do not know where to begin you can always search through the open GitHub
-issues to find something suitable. If you are a complete beginner (or have
-never contributed to an Open Source repository before) you may be interested in
-checking out issues with the `first-timers-only` tag.
+you do not know where to begin [you can always search through the open GitHub
+issues](https://github.com/hackclub/hackclub/issues) to find something suitable.
+If you are a complete beginner (or have never contributed to an Open Source
+repository before) you may be interested in [checking out issues with the
+`first-timers-only` tag](https://github.com/hackclub/hackclub/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Afirst-timers-only).
 
 ## Talk About It On Slack
 
-At Hack Club we really do not like wasting peoples time. If you are going to
-make a big change to a workshop (or even adding a new one) it is recommended
-that you join our Slack and talk about it on the `#curriculum` channel. To get
-an even more speedy response, mention `@jonl` and `@harrison`.
+Wasting time is not fun! If you are going to make a big change to a workshop
+(or even adding a new one) it is recommended that you join our Slack and talk
+about it on the `#curriculum` channel. To get an even more speedy response,
+mention `@jonl` and `@harrison`.
 
 ## Create An Issue
 
@@ -40,8 +40,6 @@ things. For example, you could be working on both a workshop and writing
 guidelines, but because those are different things they belong in different
 Pull Requests. If the Pull Request is to resolve an issue, be sure to note the
 issue number at some point in the description.
-
-*pull request gif*
 
 ## Wait For Review
 
