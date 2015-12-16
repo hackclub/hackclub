@@ -102,7 +102,7 @@ Anything that needs emphasis should be italicized.
 **inline code**
 
 Use the inline code style for any names directly used in code. _Don't_ use it
-for any programming concept or programming related word not used in code.
+for emphasizing regular English or programming related words not used in code.
 
 _Example:_
 
