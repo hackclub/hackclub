@@ -1,10 +1,25 @@
-# Github Pages Workshop
+# GitHub Pages Workshop
 
 Welcome! In this workshop you will set up a GitHub Pages Website!
 
-To start you need to have completed the
-<a href="https://github.com/hackedu/hackedu/tree/master/workshops/contrib/cloud9" target="_blank">
-Cloud 9 Workshop</a>.
+# Setting up Cloud 9
+
+To work on your website you first need to set up Cloud9 to link with your GitHub account.
+
+1. **Log into Cloud9 and authorize it with your GitHub account. Start by going to [Cloud9](https://c9.io).**
+
+     > ![](http://goo.gl/vYCPWm)
+
+2. **Create a workspace by clicking "Create a new workspace". Then name your workspace**
+
+     > ![](http://goo.gl/CwgsgS)
+
+3. **Close out the welcome page in Cloud9** <br>
+Cloud9 tabs basically work like normal internet browser tabs.
+
+     > ![](http://goo.gl/OT8w6l)
+
+
 
 # What is GitHub Pages?
 
@@ -35,28 +50,27 @@ terminal. (Instructions directly below)
 Now that we have a place to put our code, we want to set up a way to edit our
 code.
 
-1. Get the link for cloning. It is on the right side of your repository. If you
-   click the little icon, the link is now on your clipboard.
+1. **Get the link for cloning. It is on the right side of your repository. If you click the little icon, the link is now on your clipboard.**
 
      > ![](http://goo.gl/BCQIQP)
 
-2. Go into your Cloud9 workspace and open a new terminal (Alt+T, or Window > New
-   Terminal).
+2. **Go into your Cloud9 workspace and open a new terminal** (`Alt+T, or Window > New Terminal`).
 
      > ![](resources/openterm.gif)
 
-3. In the terminal type: `git clone [then the link you just copied]`
+3. **In the terminal type:** `git clone [then the link you just copied]`
 
      > ![](resources/clone.gif)
-
-4. Move the terminal into the repository by typing:
-
-       cd [repository name]
 
 **Congrats! You can now edit and save in your repository!**
 
 You should start creating the necessary files for a website. (`index.html`,
 `style.css`, etc)
+
+**Creating necessary website files**
+Go to `File > New From Template > file you need`. Then just save it and name it.
+
+> ![](http://goo.gl/7x9tvr)
 
 -------------------------------------------------------------------------------
 
@@ -75,17 +89,21 @@ into your GitHub repository.
 After you make changes to your site on Cloud9 you will need to put the changes on
 GitHub for the changes to show up on your site.
 
-1. **Add your changes to the commit list by doing...**
+1. **Switch into your repo in the terminal**
+ 
+        cd [repository name]
+
+2. **Add your changes to the commit list by doing...**
 
         git add .
 
-2. **Commit your changes with the following format**
+3. **Commit your changes with the following format**
 
         git commit -m "Here you type what the commit does. Keep the quotations."
 
     This will get your changes ready to push to GitHub
 
-3. **Push your changes**
+4. **Push your changes**
 
         git push
 
