@@ -23,11 +23,11 @@ workshop below first).
 
 Probably a good decision. Create a beast of a website by following this workshop:
 
-https://drive.google.com/folderview?id=0BxDM7p7t9f-GczV3N0pZTHJmUTQ&usp=sharing
+[Portfolio Workshop](../portfolio)
 
 Get it online using:
 
-https://hackpad.com/Basic-Git-and-Github-gOQpi30cvG8
+[Git and GitHub](../git_and_github)
 
 ### Beautiful Examples
 
@@ -64,8 +64,8 @@ it tells the webpage some key facts that make it run without any hitches.
   - We don’t want our `<head>` section in our body section, so we close that
     before opening our `<body>` tag.
 - `<!DOCTYPE html>` Placed at the top of your document.
-  - It is an instruction to the web browser about what version of HTML the page is
-    written in.
+  - It is an instruction to the web browser about what version of HTML the page
+    is written in.
   - It automatically defaults to the most recent release.
     - HTML5 is the most recent release of HTML.
 - `<html>` Encloses the entirety of the rest of the document.
@@ -75,8 +75,8 @@ it tells the webpage some key facts that make it run without any hitches.
   - Includes linking to the CSS file (`<link>`).
 - HTML and CSS are dumb. They make no association unless told to do so.
   `<link href="main.css rel="stylesheet">` is linking the CSS file to the HTML.
-- `<link>` is another tag and inside of it you have a `href` that explain the name
-  of the file.
+- `<link>` is another tag and inside of it you have a `href` that explain the
+  name of the file.
   - In this case, it is named `main.css`>
     - All CSS files must end with `.css` → All HTML files must end with `.html`
   - `rel=stylesheet` is telling the program that the type of file is a
@@ -93,7 +93,7 @@ it tells the webpage some key facts that make it run without any hitches.
 
 They deliver beauties like this:
 
-**TODO INSERT GIFS**
+![](img/hello.gif)
 
 Insert GIFs just like any other image format!
 
@@ -121,29 +121,29 @@ Let’s break CSS down into an English sentence:
 
 Here’s the CSS:
 
-![](https://paper.imgix.net/https%3A%2F%2Flh3.googleusercontent.com%2FzZRyAPOs8cV8El40KQ-DQcLFxNnhqixorEeSXDU1HMyMFBQefanycqYQGqRxGacSlOOxVNLK8vgrais3fB3uuJ59ZKbLcK8r1Ge0zU5D-K7tukhzunJPWn6zityGQR_7F3ZeGLXo?ixlib=js-0.2.1&s=92e00dc86f676ca6a836f878a981c237)
+![](img/img.png)
 
-![](https://paper.dropbox.com/ep/redirect/image?url=https%3A%2F%2Flh5.googleusercontent.com%2FRBrafehE2B4Pm8J1DLgNXmRIdLaPM5dQ1BCHG0Zfr6KAI7OuKBtRseTtBPMga8jlZfrFG7jjrkznhAS_42gZfnr82GxHDQVVeIY6WTXV8uOZ8Dq9n2u7MbJ8mgqIxqmJ2RszUjkD&hmac=EqmJgb1YM2Ln8rxDh%2FKtb65vNf33OOXSDlm%2B%2BhlTw1Q%3D)
+![](img/img_key.png)
 
 For every **img tag** on the web page
 
-![](https://paper.dropbox.com/ep/redirect/image?url=https%3A%2F%2Flh4.googleusercontent.com%2FCx-r9leVimGoLVvhNbYuIPwQ1ioIOnCD9CJONc-UF8X7w6VVLOlUxbm49f237JtB8mNvq1fTeTUlnwbSs5-g1I-hZv6xfsg2LhKjaxuvEbKPFKsMcU01zgBPBIVOqAvjN2qR_EcQ&hmac=FCkNRDIrcvNeTPq7UdzM3Ztyt4dJ8eHjMtH9KxVhs%2B4%3D)
+![](img/img_bracket.png)
 
 I want all the style properties inside the curly brackets to apply:
 
-![](https://paper.dropbox.com/ep/redirect/image?url=https%3A%2F%2Flh4.googleusercontent.com%2F_US09zGN4N3olmNKRZf54hcz-shTZbS7b3VU1o5RcQ8qSuZKLcDOrQDrYr-nnBSo5VROi6g05f-Vw_jTdYMtiXYKPKYazIQnngECRqUGllAlOOVTGGn3_Uu0KJcCNHFmHFUhbz9b&hmac=80thxMGuB4adwbX%2BhcaJKWVfen1Mg5wajrZtTBA8xTk%3D)
+![](img/img_width.png)
 
 specifically, I want the width
 
-![](https://paper.dropbox.com/ep/redirect/image?url=https%3A%2F%2Flh3.googleusercontent.com%2FClDO-RYn-azU0bYjXHnwW3fPSMt5suS2ybu9ZJPHZEVvZnt9bDhjgrLYWizakjXRb0jUEHt7HG6bxlfv00_Ty_zs2LjmJ_y-AXNNMerAu55W4qC26kafoeGFpGrcDEp76zbeVWyP&hmac=rtnOY4bQnyjvSr6hJ%2F7TyqEXwl%2B7hjWT%2FQa7H24KM7s%3D)
+![](img/img_value.png)
 
 to be 50% of the width of the page.
 
 In the CSS, we use **selectors to select tags**, `img` is the selector in our
 example.
 
-- What if you want to **call 1 of your 2 <h1> tags** → Both have the same
-  selector right now. `h1`
+- What if you want to **call 1 of your 2 `<h1>` tags** → Both have the same
+  selector right now.
   - To solve this and create **custom CSS selectors**, in HTML → This is called
     creating a class
 
@@ -364,7 +364,8 @@ Anything inside the first `<>` that isn’t the element name (div) is called an
 As such, `<audio>` has its own set of attributes that can be applied to them
 simply by typing them in between the `<>`
 
-Here’s a list of the unique attributes that `<audio>` tags can accept exclusively:
+Here’s a list of the unique attributes that `<audio>` tags can accept
+exclusively:
 
 <table>
   <tr>
@@ -397,8 +398,9 @@ Here’s a list of the unique attributes that `<audio>` tags can accept exclusiv
       Accepts 3 values:
       <ul>
       <li><code>auto</code>: load the audio file after the page loads.</li>
-      <li><code>metadata</code>: only load the metadata (extra info like author, etc that
-              is stored within the file) when the page loads.</li>
+      <li><code>metadata</code>: only load the metadata (extra info like
+          author, etc that
+          is stored within the file) when the page loads.</li>
       <li><code>none</code>: don’t load the audio file when the page loads.</li>
       </ul>
 
@@ -633,8 +635,8 @@ screen.
 There are a large number of
 [attributes for the `<marquee>` tag](http://www.tutorialspoint.com/html/html_marquee_tag.htm).
 
-You can change the width, the alignment, the scrolling speed, the scrolling delay, and even the
-scrolling direction (right to left or left to right).
+You can change the width, the alignment, the scrolling speed, the scrolling
+delay, and even the scrolling direction (right to left or left to right).
 
 It is a tag, so it encloses other tags:
 
@@ -643,5 +645,6 @@ It is a tag, so it encloses other tags:
 ```
 
 ## If you combine blink and marquee: ultimate cringe.
+
 
 ![No God Please Nooooooo](https://d2mxuefqeaa7sj.cloudfront.net/s_1FACA745E7A5A03FBF7BCC2AF4856031BAC0AF7B12042E3DC78BDA872B3C6FBC_1448603976992_giphy+%281%29.gif)
