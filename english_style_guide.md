@@ -48,8 +48,10 @@ according to how the company capitalizes it's name.
 
 ## Punctuation
 
-**All sentences should end with punctuation**, even if they end with
-inline-code, a URL, or a filename.
+**Sentences End With Punctuation**
+
+All sentences should end with punctuation, even if they end with inline-code, a
+URL, or a filename.
 
 _Example:_
 
@@ -75,8 +77,10 @@ sustainable HTML and CSS._
 
 ## Other Style Guidelines
 
-**bold** Titles that are to be omitted from a table of contents should be bolded
-instead of added to a header. Usually, repeated titles should be bolded.
+**bold**
+
+Titles that are to be omitted from a table of contents should be bolded instead
+of added to a header. Usually, repeated titles should be bolded.
 
 _Example:_
 
@@ -91,9 +95,12 @@ tags don't have a closing tag.
     <img href="example.com/icon.png"></img>
 ```
 
-**italicize** Anything that needs emphasis should be italicized.
+**italicize**
+
+Anything that needs emphasis should be italicized.
 
 **inline code**
+
 Use the inline code style for any names directly used in code. _Don't_ use it
 for any programming concept or programming related word not used in code.
 
