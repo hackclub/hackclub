@@ -32,6 +32,9 @@ files using Markdown.
 - Headers spanning more than 80 characters should be reevaluated
 - Headers must be preceded and followed by a blank line except at the beginning
   of a file
+- Headers must follow the
+  [titlecase capitalisation](http://www.grammar-monster.com/lessons/capital_letters_title_case.htm)
+  scheme
 
 Good:
 
@@ -47,7 +50,7 @@ Mauris vulputate justo nisi, vitae euismod mauris euismod eu. Integer vitae
 hendrerit nibh, sed porta sapien. Duis consectetur lacus id arcu consequat
 aliquet.
 
-### Header 3
+### Code on Code
 
 Sed congue iaculis dapibus. Morbi et tempor nisl, sed mattis quam. Morbi
 porttitor pharetra urna et dictum. Integer laoreet consequat velit, ac egestas
@@ -57,7 +60,7 @@ velit accumsan non.
 Less than ideal:
 
 ```
-# Header 1
+# Party of the West
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam dui vel
 posuere facilisis.
 
