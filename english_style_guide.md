@@ -57,6 +57,8 @@ _Correct: Go to https://google.com._
 
 _Correct: Make sure the css selector is set to `#username`._
 
+_Correct: Your website is now live at `example.com`!_
+
 _Incorrect: This will save to `index.html`_
 
 **Serial (Oxford) Commas**
