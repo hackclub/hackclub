@@ -21,6 +21,11 @@ Hack Club. Choose a track to get started!
 For more recommended guidelines on running workshops,
 [click here](workshop_details.md#general-workshop-facilitation-guidelines).
 
+## Errors?
+
+See any errors? Let us know by filing an
+[here](https://github.com/hackclub/hackclub/issues/new)
+
 ## Official Workshops
 
 These workshops are created and maintained by Hack Club staff. We encourage you
@@ -45,3 +50,8 @@ to create workshops and submit them to this directory.
 | [Cloud9](cloud9/README.md)                 | A fully configured Cloud9 account ready to use for development | [@Bogidon](https://github.com/Bogidon)                                                                                                                                                             |
 | [Git and GitHub](git_and_github/README.md) | Introduction to Git and using it with GitHub                   | [@nguyenbrian](https://github.com/nguyenbrian), [@JevinSidhu](https://github.com/JevinSidhu), [@uditdesai](https://github.com/uditdesai), and [@vaibhavyadaram](https://github.com/vaibhavyadaram) |
 | [GitHub Pages](github_pages/README.md)     | Get your website online using GitHub's free hosting service    | [@sethtrei](https://github.com/sethtrei)                                                                                                                                                           |
+
+## Contributing to the Workshops
+
+Interested in contributing to our workshops? [Look here](CONTRIBUTING.md).
+Beginners welcome!
