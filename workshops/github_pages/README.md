@@ -1,4 +1,4 @@
-# Github Pages Workshop
+# GitHub Pages Workshop
 
 Welcome! In this workshop you will set up a GitHub Pages Website!
 
