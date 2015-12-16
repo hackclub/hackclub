@@ -5,19 +5,19 @@ https://github.com/carwin/markdown-styleguide._
 
 # Markdown Style Guidelines
 
-This document contains formatting standards for creating readable, consistent
-files using Markdown.
+This document contains formatting standards Hack Club uses for creating
+readable, consistent files using Markdown.
 
 **Table of Contents**
 
 - [Markdown Style Guidelines](#markdown-style-guidelines)
-  - [Basic conventions](#basic-conventions)
+  - [General conventions](#general-conventions)
   - [Headings](#headings)
   - [Lists](#lists)
   - [Code](#code)
   - [Horizontal rules](#horizontal-rules)
 
-## Basic conventions
+## General Conventions
 
 - Wrap all lines at 80 characters.
 - Denote **bold** text using the asterisk format `**bold text**`.
