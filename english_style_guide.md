@@ -5,8 +5,8 @@ https://github.com/raywenderlich/english-style-guide_
 
 # English Style Guidelines
 
-This is an English style guide that Hack Club documentation should follow to
-stay consistent in how we refer to common things.
+This is an English style guide that Hack Club workshops should follow to stay
+consistent in how we refer to common things.
 
 **Table of Contents**
 
