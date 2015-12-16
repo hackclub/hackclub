@@ -23,7 +23,7 @@ For more recommended guidelines on running workshops,
 
 ## Errors?
 
-See any errors? Let us know by filing an
+See any errors? Let us know by filing it
 [here](https://github.com/hackclub/hackclub/issues/new)
 
 ## Official Workshops
