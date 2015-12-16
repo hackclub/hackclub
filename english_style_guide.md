@@ -65,8 +65,8 @@ _Incorrect: This will save to `index.html`_
 
 **Serial (Oxford) Commas**
 
-For simplicity the final comma in a list of elements (usually the one before the
-'and' or 'or') is left in the list.
+For simplicity, the final comma in a list of elements (usually the one before
+the 'and' or 'or') is left in the list.
 
 _Example:_
 
@@ -76,6 +76,11 @@ _Correct: This guide details standards for developing flexible, durable, and
 sustainable HTML and CSS._
 
 ## Other Style Guidelines
+
+**Locale**
+
+Workshops should use American English, as it is the default for most programming
+related topics.
 
 **bold**
 
