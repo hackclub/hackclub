@@ -40,7 +40,7 @@ according to how the company capitalizes it's name.
 
 **OK** Don't use _Okay_ or _Ok_.
 
-**pop-up**
+**pop-up** Don't use _popup_ or _pop up_.
 
 **right-click**
 
