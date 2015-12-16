@@ -5,14 +5,14 @@ This tutorial is broken down into two parts:
 In [Part 1](#part-1-single-player-soccer), you learn to build a simple
 single player soccer game by following a clearly outlined set of steps:
 
-<a href="http://output.jsbin.com/dikevu/34" target="_blank">![](img/5_mini.gif)</a>
+[![](img/5_mini.gif)][demo_output]
 
-<a href="http://output.jsbin.com/dikevu/50" target="_blank">
-  ![](img/bttn_play_now.png)
-</a>
-<a href="http://jsbin.com/dikevu/50/edit?js,output" target="_blank">
-  ![](img/bttn_view_code.png)
-</a>
+[![](img/bttn_play_now.png)][demo_output]
+
+[![](img/bttn_view_code.png)][demo]
+
+[demo_output]: https://jsbin.com/gist/6d634e61d71794b9878b
+[demo]: https://jsbin.com/gist/6d634e61d71794b9878b
 
 Then in [Part 2](#part-2-adding-more-functionality) (_still under
 construction_), we will show you a variety of additional functionality that you
@@ -20,14 +20,12 @@ can add to your game. You'll pick and choose what you think is cool.
 
 Here is an example of what you could make from what you learn:
 
-![](img/soccer.gif)
+[![](img/soccer.gif)][demo_advanced_output]
+[![](img/bttn_play_now.png)][demo_advanced_output]
+[![](img/bttn_view_code.png)][demo_advanced]
 
-<a href="http://output.jsbin.com/licali/11" target="_blank">
-  ![](img/bttn_play_now.png)
-</a>
-<a href="http://jsbin.com/licali/11/edit?js" target="_blank">
-  ![](img/bttn_view_code.png)
-</a>
+[demo_advanced_output]: https://jsbin.com/gist/b86701e13602fea28bd6
+[demo_advanced]: https://jsbin.com/gist/b86701e13602fea28bd6
 
 ## How to Use This Tutorial
 
@@ -58,12 +56,13 @@ to navigate this tutorial for you. This might look like the following:
    [these instructions](own_editor.md).
 2. If you haven't already, make sure you have a JS Bin account first. <a
    href="https://jsbin.com/register" target="_blank">Create one here.</a>
-3. Then open <a target="_blank"
-   href="http://jsbin.com/rekofi/120/edit?js,output"> this JS Bin</a>. It has
-   all the starter code we need for this tutorial. Write any new code in this JS
-   Bin. We'll refer to this JS Bin as your **_"working bin"_**.
+3. Then open [this JS Bin][starter]. It has all the starter code we need for
+   this tutorial. Write any new code in this JS Bin. We'll refer to this JS Bin
+as your **_"working bin"_**.
 
-## Some Quick Vocabulary
+[starter]: https://jsbin.com/gist/9b98de6863f4f314ea24
+
+# Some Quick Vocabulary
 
 Each interactive element in the game (the player, ball, and the goal) is called a
 **_sprite_**.
