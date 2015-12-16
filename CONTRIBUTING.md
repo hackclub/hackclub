@@ -2,11 +2,20 @@
 
 This is a guide explaining the contribution workflow we use at Hack Club!
 
+- [Code of Conduct](#code-of-conduct)
 - [Find something you want to change](#find-something-to-change)
 - [If it is big, talk about it on Slack](#talk-about-it-on-slack)
 - [Create an issue if you want to proceed](#create-an-issue)
 - [Make a PR](#make-a-pr)
 - [Wait for review](#wait-for-review)
+
+## Code of Conduct
+
+Hack Club's community includes people from many different backgrounds. Hack Club
+is committed to providing a friendly, safe and welcoming environment for all.
+
+If you join in or contribute to the Hack Club ecosystem, you are encouraged to
+follow our [Code of Conduct](CONDUCT.md) while doing so.
 
 ## Find Something To Change
 
