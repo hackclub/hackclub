@@ -3,7 +3,7 @@
 ## Why have a Code of Conduct?
 
 Hack Club's community includes people from many different backgrounds. The Hack
-Club contributors are committed to providing a friendly, safe and welcoming
+Club contributors are committed to providing a friendly, safe, and welcoming
 environment for all, regardless of age, disability, gender, nationality, race,
 religion, sexuality, or similar personal characteristic.
 
@@ -29,7 +29,7 @@ If you join in or contribute to the Hack Club ecosystem in any way, you are
 encouraged to follow the Code of Conduct while doing so.
 
 Explicit enforcement of the Code of Conduct applies to all official online Hack
-Club groups and in person meetings and events including:
+Club groups, in person meetings, and events including:
 
 - The [GitHub projects](https://github.com/hackclub/)
 - The [Facebook Group](https://www.facebook.com/groups/1501083703514499/)
@@ -48,8 +48,8 @@ These are the values to which people in the Hack Club community should aspire.
 - Be friendly and welcoming
 - Be patient
   - Remember that people have varying communication styles and that not everyone
-    is using their native language. (Meaning and tone can be lost in translation
-    .)
+    is using their native language (meaning and tone can be lost in
+    translation).
 - Be thoughtful
   - Productive communication requires effort. Think about how your words will be
     interpreted.
@@ -67,7 +67,7 @@ These are the values to which people in the Hack Club community should aspire.
   - Snarking (pithy, unproductive, sniping comments)
   - Discussing potentially offensive or sensitive issues; this all too often
     leads to unnecessary conflict.
-  - Microaggressions: brief and commonplace verbal, behavioral and environmental
+  - Microaggressions: brief and commonplace verbal, behavioral, and environmental
     indignities that communicate hostile, derogatory or negative slights and
     insults to a person or group.
 
