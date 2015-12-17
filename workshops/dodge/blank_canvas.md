@@ -5,14 +5,12 @@ We'll be using JS Bin for this tutorial. Feel free to use your own editor.
 ![](img/checkmark.png) If you are using JS Bin, make sure you have created an
 account first.
 
-![](img/checkmark.png) Then open <a
-href="http://jsbin.com/kecodi/3/edit?js,output" target="_blank">this pre-made JS
-Bin template</a>.
+![](img/checkmark.png) Then open [this pre-made JS
+Bin template.][blank_canvas]
 
 > ![](img/t1_js_bin.png)
 
-<a href="http://jsbin.com/kecodi/3/edit?js,output"
-target="_blank">![](img/open_in_js_bin.png)</a>
+[![](img/open_in_js_bin.png)][blank_canvas]
 
 You will be building off the above template throughout the tutorial. We'll call
 the JS Bin you're working and saving in the "_**working bin**_".
@@ -205,3 +203,5 @@ working on it!
 | **[![](img/sq_4_arrow_key_movement.gif)    <br> 4.  Arrow Key Movement](arrow_key_movement.md)**    | **[![](img/sq_5_player_image.gif)         <br> 5. Player Image]         (player_image.md)**         | **[![](img/sq_6_add_enemy_sprite.gif)        <br> 6. Add Enemy Sprite]       (add_enemy_sprite.md)**       |
 | **[![](img/sq_7_linear_enemy_movement.gif) <br> 7.  Enemy Sprite Move] (linear_enemy_movement.md)** | **[![](img/sq_8_enemy_go_back_to_top.gif) <br> 8. Enemy Go Back to Top] (enemy_go_back_to_top.md)** | **[![](img/sq_9_random_enemy_position.gif)   <br> 9. Random Enemy Position]  (random_enemy_position.md)**  |
 | **[![](img/sq_10_game_over.gif)            <br> 10. Game Over]         (game_over.md)**             |                                                                                                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**                                            |
+
+[blank_canvas]: https://jsbin.com/gist/e282814328d84c6d820d?js,output
