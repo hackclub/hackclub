@@ -48,8 +48,8 @@ These are the values to which people in the Hack Club community should aspire.
 - Be friendly and welcoming
 - Be patient
   - Remember that people have varying communication styles and that not everyone
-    is using their native language. (Meaning and tone can be lost in translation
-    .)
+    is using their native language (meaning and tone can be lost in
+    translation).
 - Be thoughtful
   - Productive communication requires effort. Think about how your words will be
     interpreted.
