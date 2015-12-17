@@ -3,7 +3,7 @@
 ## Why have a Code of Conduct?
 
 Hack Club's community includes people from many different backgrounds. The Hack
-Club contributors are committed to providing a friendly, safe and welcoming
+Club contributors are committed to providing a friendly, safe, and welcoming
 environment for all, regardless of age, disability, gender, nationality, race,
 religion, sexuality, or similar personal characteristic.
 
@@ -67,7 +67,7 @@ These are the values to which people in the Hack Club community should aspire.
   - Snarking (pithy, unproductive, sniping comments)
   - Discussing potentially offensive or sensitive issues; this all too often
     leads to unnecessary conflict.
-  - Microaggressions: brief and commonplace verbal, behavioral and environmental
+  - Microaggressions: brief and commonplace verbal, behavioral, and environmental
     indignities that communicate hostile, derogatory or negative slights and
     insults to a person or group.
 
