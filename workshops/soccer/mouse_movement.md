@@ -13,9 +13,7 @@ gray_):
 
 > ![](img/3_js_bin.gif)
 
-<a href="http://jsbin.com/dikevu/25/edit?js,output" target="_blank">
-  ![](img/bttn_open_in_js_bin.png)
-</a>
+[![](img/bttn_open_in_js_bin.png)][mouse]
 
 ## Choose Your Own Path
 
@@ -119,9 +117,7 @@ function draw() {
 
 > ![](img/3_js_bin_complete.gif)
 
-<a href="http://jsbin.com/dikevu/25/edit?js,output" target="_blank">
-  ![](img/bttn_open_in_js_bin.png)
-</a>
+[![](img/bttn_open_in_js_bin.png)][mouse]
 
 ## Understanding New Concepts
 
@@ -145,3 +141,5 @@ of the mouse (**`mouseX`**)"
 | **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
 |--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
 | **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |
+
+[mouse]: https://jsbin.com/gist/c80f8e287b5cc76dcf96

@@ -16,8 +16,8 @@ p5.play.js library. You can learn more about them by Googling for `JavaScript`,
 
 The the code for the working bin has 2 parts:
 
-1. the HTML
-2. the JavaScript
+1. The HTML
+2. The JavaScript
 
 ### HTML
 
@@ -126,8 +126,6 @@ page are called sprites.
 The code `drawSprites()` is responsible for drawing all of those sprites to the
 page once they are created. But how do you create a sprite? You'll find out in
 the next section!
-
-
 
 ## Next
 
