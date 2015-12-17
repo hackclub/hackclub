@@ -110,6 +110,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ## Code
 
 - **Inline code** must use single backticks `` `.this-is-good` ``.
+  - Contents must be either **code**, a **filename** or a **shell command**.
 - **Fenced code blocks** must be preceded and followed by a blank line.
 
         Here's an example:
