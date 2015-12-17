@@ -29,7 +29,7 @@ If you join in or contribute to the Hack Club ecosystem in any way, you are
 encouraged to follow the Code of Conduct while doing so.
 
 Explicit enforcement of the Code of Conduct applies to all official online Hack
-Club groups and in person meetings and events including:
+Club groups, in person meetings, and events including:
 
 - The [GitHub projects](https://github.com/hackclub/)
 - The [Facebook Group](https://www.facebook.com/groups/1501083703514499/)
