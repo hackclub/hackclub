@@ -72,7 +72,7 @@ After you make changes to your site on Cloud9 you will need to put the changes o
 GitHub for the changes to show up on your site.
 
 1. **Switch into your repo in the terminal**
- 
+
         cd [repository name]
 
 2. **Add your changes to the commit list by doing...**
