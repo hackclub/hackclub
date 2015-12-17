@@ -9,8 +9,11 @@ Navigate your mouse through the maze without touching the walls:
 
 ![](img/demo.gif)
 
-<a href="http://output.jsbin.com/xivifu/12" target="_blank_">![](img/bttn_play_now.png)</a>
-<a href="http://jsbin.com/xivifu/12/edit?js,output" target="_blank_">![](img/bttn_view_code.png)</a>
+[![](img/bttn_play_now.png)][demo_output]
+[![](img/bttn_view_code.png)][demo]
+
+[demo]: https://jsbin.com/gist/531320bdeccaa5a3389a
+[demo_output]: https://jsbin.com/gist/531320bdeccaa5a3389a
 
 ## 2. How to Use This Tutorial
 
@@ -28,9 +31,9 @@ workshop. Make sure you do that workshop first.
    the following files in your editor of choice. Do note however that the rest
    of this tutorial be written assuming that you are using JS Bin.
 
-    - [This HTML file](https://gist.githubusercontent.com/jonleung/11ecd13a9d957003416b/raw/625081d81cc9c941007ddfd54c9ffdeec0782d62/index.html)
-    - [This JavaScript file](https://gist.githubusercontent.com/jonleung/11ecd13a9d957003416b/raw/625081d81cc9c941007ddfd54c9ffdeec0782d62/main.js)
-    - [This CSS file](https://gist.githubusercontent.com/jonleung/11ecd13a9d957003416b/raw/625081d81cc9c941007ddfd54c9ffdeec0782d62/style.css)
+    - [This HTML file](examples/demo/index.html)
+    - [This JavaScript file](examples/demo/main.js)
+    - [This CSS file](examples/demo/style.css)
 
 2. If you haven't already, make sure you have created (and logged into) a JS Bin
    account first.
