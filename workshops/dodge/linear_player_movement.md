@@ -15,8 +15,7 @@ gray):
 
 > ![](img/3_js_bin.gif)
 
-<a href="http://jsbin.com/qiyuno/15/edit?js,output"
-target="_blank">![](img/open_in_js_bin.png)</a>
+[![](img/open_in_js_bin.png)][linear_player_movement]
 
 The highlighted gray lines above (reproduced below) are responsible for this
 movement:
@@ -61,9 +60,8 @@ There's a bit of subtlety to this that's explained more
 ## Adding The Code
 
 ![](img/challenge.png) **Challenge**: See if you can try making the block move
-faster in the above <a href="http://jsbin.com/qiyuno/15/edit?js,output"
-target="_blank">example JS Bin</a>. Once you've tried it, you can look at a
-solution
+faster in the above [example JS Bin][linear_player_movement]. Once you've tried
+it, you can look at a solution
 [here](https://gist.githubusercontent.com/jonleung/1810b2b784d8afd87f59/raw/95b637cb89e482b975cf75721e755ca8fa4a73bd/anwer.js).
 
 ![](img/checkmark.png) Now add this new code to your **_Working Bin_** to make
@@ -166,3 +164,5 @@ about? Submit an issue requesting its addition
 | **[![](img/sq_4_arrow_key_movement.gif)    <br> 4.  Arrow Key Movement](arrow_key_movement.md)**    | **[![](img/sq_5_player_image.gif)         <br> 5. Player Image]         (player_image.md)**         | **[![](img/sq_6_add_enemy_sprite.gif)        <br> 6. Add Enemy Sprite]       (add_enemy_sprite.md)**       |
 | **[![](img/sq_7_linear_enemy_movement.gif) <br> 7.  Enemy Sprite Move] (linear_enemy_movement.md)** | **[![](img/sq_8_enemy_go_back_to_top.gif) <br> 8. Enemy Go Back to Top] (enemy_go_back_to_top.md)** | **[![](img/sq_9_random_enemy_position.gif)   <br> 9. Random Enemy Position]  (random_enemy_position.md)**  |
 | **[![](img/sq_10_game_over.gif)            <br> 10. Game Over]         (game_over.md)**             |                                                                                                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**                                            |
+
+[linear_player_movement]: https://jsbin.com/gist/c3fbffffa0fbc677517e

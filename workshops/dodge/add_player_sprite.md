@@ -17,20 +17,17 @@ But for now, we'll settle with this:
 We can add the player sprite with the following code (new code highlighted in
 purple)
 
-> <a href="http://jsbin.com/qiyuno/14/edit?js,output"
-> target="_blank">![](img/2_js_bin_screenshot.png)</a>
+> [![](img/2_js_bin_screenshot.png)][add_player_sprite]
 
-<a href="http://jsbin.com/qiyuno/14/edit?js,output"
-target="_blank">![](img/open_in_js_bin.png)</a>
+[![](img/open_in_js_bin.png)][add_player_sprite]
 
 The highlighted purple lines above (reproduced below) are responsible for adding
 the player sprite.
 
 ## Tinkering with the values of `createSprite`
 
-![](img/checkmark.png) Open <a href="http://jsbin.com/qiyuno/14/edit?js,output"
-target="_blank">the above JS Bin</a> and try messing around with the starting
-position of the sprite.
+![](img/checkmark.png) Open [the above JS bin][add_player_sprite] and try messing
+around with the starting position of the sprite.
 
 Here is an example of how I play around with the values of `createSprite` to try
 to understand what it does:
@@ -111,3 +108,5 @@ about? Submit an issue requesting its addition
 | **[![](img/sq_4_arrow_key_movement.gif)    <br> 4.  Arrow Key Movement](arrow_key_movement.md)**    | **[![](img/sq_5_player_image.gif)         <br> 5. Player Image]         (player_image.md)**         | **[![](img/sq_6_add_enemy_sprite.gif)        <br> 6. Add Enemy Sprite]       (add_enemy_sprite.md)**       |
 | **[![](img/sq_7_linear_enemy_movement.gif) <br> 7.  Enemy Sprite Move] (linear_enemy_movement.md)** | **[![](img/sq_8_enemy_go_back_to_top.gif) <br> 8. Enemy Go Back to Top] (enemy_go_back_to_top.md)** | **[![](img/sq_9_random_enemy_position.gif)   <br> 9. Random Enemy Position]  (random_enemy_position.md)**  |
 | **[![](img/sq_10_game_over.gif)            <br> 10. Game Over]         (game_over.md)**             |                                                                                                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**                                            |
+
+[add_player_sprte]: http://jsbin.com/gist/1b7264205c42f968b81d?js,output

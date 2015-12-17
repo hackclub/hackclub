@@ -12,8 +12,7 @@ We can make the enemy start at random x positions with the following code:
 
 > ![](img/t9_enemy_random_x.gif)
 
-<a href="http://jsbin.com/qiyuno/82/edit?js,output"
-target="_blank">![](img/open_in_js_bin.png)</a>
+[![](img/open_in_js_bin.png)][random_enemy_position]
 
 The highlighted gray lines above (reproduced below) are responsible for making
 the enemy spawn in a random position:
@@ -96,3 +95,5 @@ about? Submit an issue requesting its addition
 | **[![](img/sq_4_arrow_key_movement.gif)    <br> 4.  Arrow Key Movement](arrow_key_movement.md)**    | **[![](img/sq_5_player_image.gif)         <br> 5. Player Image]         (player_image.md)**         | **[![](img/sq_6_add_enemy_sprite.gif)        <br> 6. Add Enemy Sprite]       (add_enemy_sprite.md)**       |
 | **[![](img/sq_7_linear_enemy_movement.gif) <br> 7.  Enemy Sprite Move] (linear_enemy_movement.md)** | **[![](img/sq_8_enemy_go_back_to_top.gif) <br> 8. Enemy Go Back to Top] (enemy_go_back_to_top.md)** | **[![](img/sq_9_random_enemy_position.gif)   <br> 9. Random Enemy Position]  (random_enemy_position.md)**  |
 | **[![](img/sq_10_game_over.gif)            <br> 10. Game Over]         (game_over.md)**             |                                                                                                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**                                            |
+
+[random_enemy_position]: https://jsbin.com/gist/b869d5c0d2b0074398f6
