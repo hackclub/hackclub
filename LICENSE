@@ -23,3 +23,10 @@ flatdoc
 
 Project site - https://github.com/rstacruz/flatdoc
 License - MIT License, http://opensource.org/licenses/mit-license.php
+
+CONDUCT.md:
+
+Adapted From - https://github.com/golang/go/blob/aa487e66f869785837275ee20441a53888a51bb2/doc/conduct.html
+License - Creative Commons Attribution 3.0, https://creativecommons.org/licenses/by/3.0/
+Changes - We took the code of conduct which was written in HTML, converted it to
+          Markdown, and made modifications to it to fit our needs.
