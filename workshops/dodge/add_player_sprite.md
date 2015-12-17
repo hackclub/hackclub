@@ -109,4 +109,4 @@ about? Submit an issue requesting its addition
 | **[![](img/sq_7_linear_enemy_movement.gif) <br> 7.  Enemy Sprite Move] (linear_enemy_movement.md)** | **[![](img/sq_8_enemy_go_back_to_top.gif) <br> 8. Enemy Go Back to Top] (enemy_go_back_to_top.md)** | **[![](img/sq_9_random_enemy_position.gif)   <br> 9. Random Enemy Position]  (random_enemy_position.md)**  |
 | **[![](img/sq_10_game_over.gif)            <br> 10. Game Over]         (game_over.md)**             |                                                                                                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**                                            |
 
-[add_player_sprte]: http://jsbin.com/gist/1b7264205c42f968b81d?js,output
+[add_player_sprite]: http://jsbin.com/gist/1b7264205c42f968b81d?js,output
