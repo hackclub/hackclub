@@ -11,7 +11,7 @@
 
 ## 2. Join the Ranks of the Developer Community
 
-| [![](img/github.png) <br> Join GitHub](github.md) |
+| [![](img/github.png) <br> Join GitHub](github/README.md) |
 |:----------------------------------------------------:|
 
 --
