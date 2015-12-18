@@ -75,6 +75,19 @@ _Correct: Make sure to include the HTML, CSS, and JS files._
 _Correct: This guide details standards for developing flexible, durable, and
 sustainable HTML and CSS._
 
+**Acronyms should be in capitals**
+
+All letters in an acronym should be in capital letters, unless they are usually
+capitalized in another way.
+
+_Example:_
+
+_Correct: HTML_
+
+_Correct: API_
+
+_Correct: iOS_
+
 ## Other Style Guidelines
 
 **Locale**
