@@ -13,7 +13,7 @@ For more details specific to contributing a workshop,
 ## Table of Contents
 
 1. [GitHub Flow](#github-flow)
-2. [Style Guides](#style-guides)
+2. [Style Guides](#styleguides)
 3. [Branch Names](#branch-names)
 4. [File Names](#file-names)
 5. [Git Commits](#git-commits)
@@ -29,14 +29,14 @@ https://help.github.com/articles/using-pull-requests/ for a good overview of
 what pull requests are and how to use them. We use the _fork & pull model_ for
 managing contributions.
 
-## Style Guides
+## Styleguides
 
-If a style guide exists for the language you're contributing in, please do the
+If a styleguide exists for the language you're contributing in, please do the
 maintainers of the repository a favor and follow it.
 
-Our existing style guides:
+Our existing styleguides:
 
-- [Markdown](https://github.com/hackclub/meta/blob/master/markdown_style_guide.md)
+- [Markdown](https://github.com/hackclub/meta/blob/master/styleguides/markdown.md)
 
 ## Branch Names
 
