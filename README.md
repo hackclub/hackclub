@@ -11,8 +11,10 @@ Links:
   - [Hiring](hiring_protocol.md)
   - [Club leader onboarding](club_leader_onboarding_protocol.md)
   - [Staff onboarding](staff_onboarding_protocol.md)
-- Style guides
+- Styleguides
   - [Markdown](styleguides/markdown.md)
+  - [English](styleguides/english.md)
+  - [CSS](styleguides/css.md)
 - Other directories
   - [Applications](applications)
   - [Contracts](contracts)
