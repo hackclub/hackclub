@@ -1,5 +1,9 @@
 # Soccer
 
+Short link to this workshop: https://workshops.hackclub.io/soccer
+
+-------------------------------------------------------------------------------
+
 This tutorial is broken down into two parts:
 
 In [Part 1](#part-1-single-player-soccer), you learn to build a simple

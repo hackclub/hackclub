@@ -1,5 +1,9 @@
 # GitHub Pages Workshop
 
+Short link to this workshop: https://workshops.hackclub.io/github_pages
+
+-------------------------------------------------------------------------------
+
 Welcome! In this workshop you will set up a GitHub Pages Website!
 
 To start you need to have completed the

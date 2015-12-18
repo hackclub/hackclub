@@ -1,5 +1,9 @@
 # Dodge
 
+Short link to this workshop: https://workshops.hackclub.io/dodge
+
+-------------------------------------------------------------------------------
+
 We are going to make a bullet dodging game:
 
 <a href="http://output.jsbin.com/dozoki/70"

@@ -1,6 +1,6 @@
 # Building Your First Website
 
-Short link to this workshop: https://bit.ly/portfoliohack
+Short link to this workshop: https://workshops.hackclub.io/portfolio
 
 ## Goals
 
