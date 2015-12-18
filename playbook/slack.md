@@ -22,4 +22,9 @@
   - Where are you located?
   - What is something you're interested in?
 
+**And then Download the mobile app**
+
+You can download the mobile app by going to
+[`http://slack.com/downloads`](http://slack.com/downloads) on your phone.
+
 [← Go Back](README.md)
