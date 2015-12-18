@@ -37,6 +37,8 @@ maintainers of the repository a favor and follow it.
 Our existing styleguides:
 
 - [Markdown](https://github.com/hackclub/meta/blob/master/styleguides/markdown.md)
+- [English](https://github.com/hackclub/meta/blob/master/styleguides/english.md)
+- [CSS](https://github.com/hackclub/meta/blob/master/styleguides/css.md)
 
 ## Branch Names
 
