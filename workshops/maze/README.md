@@ -1,5 +1,7 @@
 # Friendly Maze Game
 
+Short link to this workshop: https://workshops.hackclub.io/maze
+
 ## 1. Demo
 
 Your mission is to build your own version of

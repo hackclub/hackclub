@@ -1,3 +1,7 @@
+Short link to this workshop: https://workshops.hackclub.io/git_and_github
+
+-------------------------------------------------------------------------------
+
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
 

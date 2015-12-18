@@ -2,6 +2,8 @@
 
 ![Cloud9 logo](img/cloud9.png)
 
+Short link to this workshop: https://workshops.hackclub.io/cloud9
+
 ## What is Cloud9?
 
 *Cloud9 is a website that lets you program online*. Traditionally, all

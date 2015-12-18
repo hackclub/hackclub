@@ -1,5 +1,7 @@
 # Cringe 101
 
+Short link to this workshop: https://workshops.hackclub.io/cringe_101
+
 ## Introduction
 
 <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_1FACA745E7A5A03FBF7BCC2AF4856031BAC0AF7B12042E3DC78BDA872B3C6FBC_1448601896772_avoidance.jpg" alt="Cringe.gif" align="right" style="padding: 25px;" />
