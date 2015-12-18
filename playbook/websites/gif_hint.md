@@ -4,7 +4,7 @@ Just try to find a gif, perhaps off of [Giphy](http://giphy.com) and try to use 
 
 ## Solution
 
-<a href="http://jsbin.com/gist/814832984c3e669aef31?output,html" target="_blank">Want to peek at a solution?</a>
+<a href="http://jsbin.com/gist/814832984c3e669aef31?html,css,output" target="_blank">Want to peek at a solution?</a>
 
 --
 

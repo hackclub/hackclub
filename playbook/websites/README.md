@@ -52,17 +52,39 @@ it's out of a page of a Harry Potter book!
 
 [→ Want a hint?](gif_hint.md)
 
+--
+
 **Change the font and background colors**
 
 Try changing the color of both the text and the background color.
 
-- <a href="http://jsbin.com/gist/6a818fa5933d2483d1d5?output" target="_blank">Solution</a>
+- <a href="http://jsbin.com/gist/6a818fa5933d2483d1d5?html,css,output" target="_blank">Solution</a>
 
-**Change the font size**
+--
+
+**Embedding a YouTube Video**
+
+You could put a YouTube video you like on your website.
+
+- <a href="http://jsbin.com/gist/f8db44d5bce8862bae30?html,css,output" target="_blank">Solution</a>
+
+--
+
+**Embed a SoundCloud song**
+
+You could embed your favorite SoundCloud songs on your website.
+
+- <a href="http://jsbin.com/gist/3b7a81411bffdc5b59b5?html,css,output" target="_blank">Solution</a>
+
+--
+
+**Change the font**
 
 Try changing the font to something else other than "arial"
 
-- <a href="https://jsbin.com/gist/ddb3f602250d5b8b3cdc?output" target="_blank">Solution</a>
+- <a href="https://jsbin.com/gist/ddb3f602250d5b8b3cdc?html,css,output" target="_blank">Solution</a>
+
+--
 
 **Use a "Google Web Font"**
 
@@ -70,19 +92,7 @@ Many times you will ask someone how to do something. They will tell you to use
 "X" thing. In order to figure out how to use it, you will need to Google for
 what "X" is. In this case, try using a "Google Web Font" on your website.
 
-- <a href="http://jsbin.com/gist/c1201dd5f09d99b06c0d?output" target="_blank">Solution</a>
-
-**Embedding a YouTube Video**
-
-You could put a YouTube video you like on your website.
-
-- <a href="http://jsbin.com/gist/f8db44d5bce8862bae30?output" target="_blank">Solution</a>
-
-**Embed a SoundCloud song**
-
-You could embed your favorite SoundCloud songs on your website.
-
-- <a href="http://jsbin.com/gist/3b7a81411bffdc5b59b5?output" target="_blank">Embed SoundCloud</a>
+- <a href="http://jsbin.com/gist/c1201dd5f09d99b06c0d?html,css,output" target="_blank">Solution</a>
 
 ## Examples of other's websites
 
