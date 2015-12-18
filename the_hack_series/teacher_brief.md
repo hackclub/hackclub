@@ -50,4 +50,3 @@ experience, we'd still love to have you!) :-).
 
 Hack Club is a San Francisco-based nonprofit that brings coding clubs to high
 school around the globe. We are in 52 schools across 12 states and 5 countries.
-
