@@ -44,6 +44,8 @@ according to how the company capitalizes it's name.
 
 **right-click**
 
+**styleguide** Not _style guide_ or _Style Guide_
+
 **URL**
 
 ## Punctuation
