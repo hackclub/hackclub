@@ -8,10 +8,11 @@ most ambitious problems or break the rules to do so.
 
 ## Mission
 
-By engaging high schoolers in our community of student-run coding clubs Hack
-Club creates and empowers the next generation of changemakers. By providing a
-stellar club culture we inspire the hacker ethos, and foster qualities including
-self-confidence, social responsibility, inclusivity, collaboration, and agency.
+By engaging high school students in our community of student-run coding clubs
+Hack Club creates and empowers the next generation of change-makers. By
+providing a stellar club culture we inspire the hacker ethos, and foster
+qualities including self-confidence, social responsibility, inclusiveness,
+collaboration, and agency.
 
 ## Values
 
