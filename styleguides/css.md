@@ -3,7 +3,7 @@ https://google.github.io/styleguide/htmlcssguide.xml._
 
 -------------------------------------------------------------------------------
 
-# CSS Guidelines
+# CSS Styleguide
 
 This is a collection of CSS guidelines that Hack Club workshops should follow to
 stay consistent.

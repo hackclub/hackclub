@@ -3,7 +3,7 @@ https://github.com/carwin/markdown-styleguide._
 
 -------------------------------------------------------------------------------
 
-# Markdown Style Guidelines
+# Markdown Styleguide
 
 This document contains formatting standards Hack Club uses for creating
 readable, consistent files using Markdown.
