@@ -27,5 +27,5 @@
 
 I want to learn how to build:
 
-| [![](img/portfolio.png) <br> My Own Websites](websites.md) | [![](img/dodge.gif) <br> My Own Video Games](video_games.md) |
+| [![](img/portfolio.png) <br> My Own Websites](websites/README.md) | [![](img/dodge.gif) <br> My Own Video Games](video_games.md) |
 |---------------------------------------------------------|--------------------------------------------------------|
