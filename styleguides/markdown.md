@@ -10,7 +10,7 @@ readable, consistent files using Markdown.
 
 **Table of Contents**
 
-- [Markdown Style Guidelines](#markdown-style-guidelines)
+- [Markdown Style Guidelines](#markdown-styleguide)
   - [General conventions](#general-conventions)
   - [Headings](#headings)
   - [Lists](#lists)
