@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2.2222223in"
+   height="2.2222223in"
+   viewBox="0 0 200.00001 200.00001"
+   id="svg4870"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="hack_club_letter.svg"
+   inkscape:export-filename="/home/zrl/dev/hackclub/meta/logos/hack_club_letter.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs4872">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5424">
+      <stop
+         style="stop-color:#ff6a00;stop-opacity:1"
+         offset="0"
+         id="stop5426" />
+      <stop
+         style="stop-color:#f200d1;stop-opacity:1"
+         offset="1"
+         id="stop5428" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5424"
+       id="radialGradient6895"
+       cx="810.58075"
+       cy="282.40649"
+       fx="810.58075"
+       fy="282.40649"
+       r="354.33072"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1.2805971,0,0,-1.4601079,1266.791,1247.4076)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.64"
+     inkscape:cx="332.69197"
+     inkscape:cy="-94.799654"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:window-width="1916"
+     inkscape:window-height="1041"
+     inkscape:window-x="1920"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     units="in"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata4875">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-852.36218)">
+    <rect
+       style="fill:url(#radialGradient6895);fill-opacity:1;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect5418"
+       width="200"
+       height="200"
+       x="0"
+       y="852.36218"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="hack_club_letter.png" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40.38053894px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="50.301666"
+       y="1018.2329"
+       id="text5436"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="hack_club_letter.png"><tspan
+         sodipodi:role="line"
+         id="tspan5438"
+         x="50.301666"
+         y="1018.2329"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:181.71240234px;font-family:Amaranth;-inkscape-font-specification:'Amaranth Bold';fill:#ffffff;fill-opacity:1">h</tspan></text>
+  </g>
+</svg>
