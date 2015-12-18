@@ -10,7 +10,7 @@ consistent in how we refer to common things.
 
 **Table of Contents**
 
-- [English Style Guidelines](#english-style-guidelines)
+- [English Style Guidelines](#english-styleguide)
   - [Terminology and Capitalization](#terminology-and-capitalization)
     - [General Guides](#general-guides)
     - [List of Terminology](#list-of-terminology)

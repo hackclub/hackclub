@@ -12,7 +12,7 @@ Links:
   - [Club leader onboarding](club_leader_onboarding_protocol.md)
   - [Staff onboarding](staff_onboarding_protocol.md)
 - Style guides
-  - [Markdown](markdown_style_guide.md)
+  - [Markdown](styleguides/markdown.md)
 - Other directories
   - [Applications](applications)
   - [Contracts](contracts)
