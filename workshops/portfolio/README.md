@@ -78,6 +78,16 @@ And we're all set!
 
 ## JS Bin is like Microsoft Word for Code
 
+Go ahead and open `htts://jsbin.com`. You will be writing all of your code for
+the rest of the tutorial in here.
+
+Make sure that you are logged in. If you are successfully logged in, you will
+_**NOT**_ see the "Login or Register" button":
+
+> ![](img/login_or_register.png)
+
+If you still see this button, ask a facilitator for help.
+
 Just like you use Microsoft Word to write English, we can use JS Bin to write
 code.
 

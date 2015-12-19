@@ -36,8 +36,10 @@
 
   - Explain that Slack is a messaging app and we're using it so we can share
     links with each other.
-  - Hacker facing directions can be found on http://bit.ly/hackserieshome
+  - Tell hackers to follow directions on http://bit.ly/hackserieshome to signup
+    for Slack
   - 1 person demos how to signup for Slack on the projector
+    - When you are finished do the same thing as the person below
   - 1 person walks around the room to help people who get stuck
     - Have the hackers who successfully signed up for Slack to help the ones that
       are stuck. Why? Because you don't have enough time to help everyone
@@ -45,18 +47,24 @@
   - Tell people who have finished setting up slack to explore
     http://bit.ly/hackserieshome
 
-**Explain the Portfolio Workshop**
+**Explain how to do the portfolio workshop**
 
-## 5. Workshop Part I: Ship
-
-- You'll be making your own website
+- Show them the website they'll be making
   - <a href="http://jsbin.com/gist/81d45193dab5236afbba?output" target="_blank">Demo</a>
-- Quick Live Demo of HTML in JS Bin
-  - <a href="http://jsbin.com" target="_blank">JS Bin</a>
-- HTML Presentation
-  - <a href="https://docs.google.com/presentation/d/1tUaV0mOfqqPwizpkNmaY911ykTEHCYYs9gKRaBEJnbs/edit#slide=id.gcc67930c3_0_9" target="_blank">Amy's HTML Presentation</a>
-- HTML Workshop
-  - http://bit.ly/hackserieshome
+- Show them how to navigate to the workshops on http://bit.ly/hackserieshome
+- Tell them that
+  - The workshop is self contained and you can just follow it
+  - You will get stuck! Ask questions!
+    - To facilitators
+    - To your neighbors
+    - Most importantly to Google
+
+**Facilitate the workshop**
+
+- The first thing you should do is go around and make sure that _EVERYONE_ has
+  signup and signed into JS Bin. If they don't, they could lose all their work.
+-
+
 
 ## 6. Googling Pro Tips
 
