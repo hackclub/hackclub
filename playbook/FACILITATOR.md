@@ -69,6 +69,8 @@ Time  | Activity
 
 ## 6. Googling Pro Tips
 
+Demo
+
 - I do: demo searching for background color
 - We do: demo searching for color
 - You do your own searches
