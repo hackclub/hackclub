@@ -33,19 +33,19 @@ Time  | Activity
 6:45  | Demos!
 7:00  | Finish
 
-**Get everyone on Slack**
+**Get everyone on Tlk.io**
 
-  - Explain that Slack is a messaging app and we're using it so we can share
+  - Explain that Tlk is a messaging app and we're using it so we can share
     links with each other.
   - Tell hackers to follow directions on http://bit.ly/hackserieshome to signup
-    for Slack
-  - 1 person demos how to signup for Slack on the projector
+    for Tlk
+  - 1 person demos how to signup for Tlk on the projector
     - When you are finished do the same thing as the person below
   - 1 person walks around the room to help people who get stuck
-    - Have the hackers who successfully signed up for Slack to help the ones that
+    - Have the hackers who successfully signed up for Tlk to help the ones that
       are stuck. Why? Because you don't have enough time to help everyone
       individually.
-  - Tell people who have finished setting up slack to explore
+  - Tell people who have finished setting up Tlk to explore
     http://bit.ly/hackserieshome
 
 **Explain how to do the portfolio workshop**

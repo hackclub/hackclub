@@ -21,10 +21,12 @@ Time  | Activity
 Network: `MakeSchool`
 Password: `designcodeandship`
 
-## 1. Join the Community
+## 1. Join the Conversation
 
-|       [![](img/slack.jpg) <br> 1. Join the Slack Chat](slack.md)       |                                                                         
-|----------------------------------------------------------------------|
+Join the Tlk.io by clicking [here](https://tlk.io/hackseries)
+
+  - type in your name into the text box
+  - and press enter key on your keyboard
 
 <!-- | **[![](img/remind.jpg) <br> 2. Stay in Touch with Remind](remind.md)** | **[![](img/facebook.jpg) <br> 3. Join HS Hackers Movement](hs_hackers.md)** | -->
 
