@@ -13,7 +13,7 @@ Your final design looks like this:
 
 > ![](img/final_1.png)
 
-Here is a link to a [live demo][final_output] live demo.
+Here is a link to a [live demo][final_output].
 
 And here is the [final code][final_output_code] for the live demo.
 
@@ -21,7 +21,7 @@ To do this, you will be learning the basics of two languages: HTML and CSS.
 
 Every website that you have ever seen are written in these two languages.
 
-We will be building this website on an online code editor called JS Bin.
+We will be building this website on an online code editor called [JS Bin](http://jsbin.com/).
 
 [final_output]: https://jsbin.com/gist/81d45193dab5236afbba?output
 [final_output_code]: https://jsbin.com/gist/81d45193dab5236afbba?html,css,output
@@ -61,8 +61,8 @@ And now we're done creating a GitHub account!
 
 Now that we have a GitHub account:
 
-1. open to [jsbin.com][jsbin]
-2. click "Login or Register"
+1. Open [jsbin.com][jsbin]
+2. Click "Login or Register"
 
 > ![](img/login_or_register.gif)
 
@@ -106,7 +106,7 @@ Note that we are writing "HTML" code.
 <!-- This is a link to the original image in case any changes
      want to be made in the future: ![](img/original.png) -->
 
-Lets look at the final website to figure out what we need to do next:
+Let's look at the final website to figure out what we need to do next:
 
 > ![](img/final_1_highlight_description.png)
 
