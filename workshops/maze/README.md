@@ -1,5 +1,7 @@
 # Friendly Maze Game
 
+Short link to this workshop: https://workshops.hackclub.io/maze
+
 ## 1. Demo
 
 Your mission is to build your own version of
@@ -21,8 +23,7 @@ In this tutorial, instead of walking you through how to build everything from
 scratch, we give you the code for how to make the maze game shown above and
 your mission will be to make your own version of it.
 
-This workshop also, assumes that you have done the
-[Dodge](https://github.com/hackclub/hackclub/blob/master/workshops/dodge/README.md)
+This workshop also, assumes that you have done the [Dodge](../dodge/README.md)
 workshop. Make sure you do that workshop first.
 
 ## 3. Setup
