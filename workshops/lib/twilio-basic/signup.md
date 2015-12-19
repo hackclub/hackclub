@@ -135,9 +135,9 @@ To get the promo code:
 
   - Club members: Ask your club leader for the Twilio promo code.
 
-  - Club leaders: send an email to the email address `jonathan@hackclub.io` with
-    your full name and school and ask for the Twilio promo code. They will
-    respond to you quickly.
+  - Club leaders: send an email to the email address
+    `jonathanleung1337@gmail.com` with your full name and school and ask for the
+    Twilio promo code. They will respond to you quickly.
 
 After obtaining the promo code:
 
