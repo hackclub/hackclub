@@ -64,7 +64,8 @@ Time  | Activity
 
 - The first thing you should do is go around and make sure that _EVERYONE_ has
   signup and signed into JS Bin. If they don't, they could lose all their work.
--
+
+## 1:30
 
 
 ## 6. Googling Pro Tips
