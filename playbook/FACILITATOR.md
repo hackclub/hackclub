@@ -24,13 +24,14 @@
 
 **Show the student facing schedule**
 
-  Time  | Activity
-  ------|-----------------------------------------
-  12:20 | Introduce the workshop & setup programs
-  12:30 | Part I: Follow the step-by-step workshop
-  1:30  | Lunch!
-  2:00  | Part II: Customize your website
-  2:45  | Demos!
+Time  | Activity
+------|-----------------------------------------
+12:20 | Introduce the workshop & setup programs
+12:30 | Part I: Follow the step-by-step workshop
+1:30  | Lunch!
+2:00  | Part II: Customize your website
+2:45  | Demos!
+3:00  | Finish
 
 **Get everyone on Slack**
 

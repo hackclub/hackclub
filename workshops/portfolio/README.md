@@ -78,7 +78,7 @@ And we're all set!
 
 ## JS Bin is like Microsoft Word for Code
 
-Go ahead and open `htts://jsbin.com`. You will be writing all of your code for
+Go ahead and open htts://jsbin.com. You will be writing all of your code for
 the rest of the tutorial in here.
 
 Make sure that you are logged in. If you are successfully logged in, you will

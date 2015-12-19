@@ -32,7 +32,7 @@ In this step, you will be making your homepage.
 In this step, you will deck out your home page by choosing and adding features
 that you think are cool!
 
-[Open Step 2](./../workshops/portfolio/part_2.md)
+[Open Step 2](../../workshops/portfolio/part_2.md)
 
 --
 
