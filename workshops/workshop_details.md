@@ -207,15 +207,3 @@ None yet.
 #### Salient Reviews:
 
 None yet.
-
---------------------------------------------------------------------------------
-
-## Frogger
-
-![](img/frogger_win.gif)
-
-This workshop is still in progress. I've only written the code so far
-but no workshop yet.
-
-- [Frogger Code](http://jsbin.com/yumape/edit?js,output)
-- [Live Demo](http://output.jsbin.com/yumape)
