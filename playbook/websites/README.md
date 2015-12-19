@@ -3,11 +3,6 @@
 You will learn how to make your own website by learning the computer languages
 HTML and CSS!
 
-- In "[Step 1](#step-1-make-your-homepage)", you will make your home page.
-- Then in "[Step 2](#step-2-deck-out-your-homepage)", you will
-  deck out your home page by choosing and adding features that you think are
-  cool!
-
 <!-- ## How To Learn Programming?
 
 - What happens when you don’t have a step-by-step tutorial and you need to
