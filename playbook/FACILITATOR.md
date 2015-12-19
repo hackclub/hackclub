@@ -1,12 +1,12 @@
 # Meeting 1 Control Panel
 
-## 11:20am : Setup
+## Now : Setup
 
 1. Plug in computer to projector and get it working
 2. <a href="https://soundcloud.com/mike-bawless/sets/study-playlist-deadmau5" target="_blank_">Play Music</a>
 3. Make sure  chairs and tables are setup
 
-## 11:50am : Hackers Start Arriving
+## 3:50pm : Hackers Start Arriving
 
 1. Make sure someone is at the door to let people in
   - Greet them warmly. Make them feel _really_ welcome.
@@ -14,24 +14,24 @@
 2. Someone should call all of the registered attendees to check in and see their
    ETA
 
-## 12:10pm : Start
+## 4:10pm : Start
 
 1. Warmly welcome everyone
 2. Play the alliterative name game. [Watch this YouTube video]
    (https://www.youtube.com/watch?v=6lB_1tGn2Lk) to see how it works
 
-## 12:30 : Context & Setup
+## 4:30 : Context & Setup
 
-**Show the student facing schedule**
+**Show and go through the student facing schedule**
 
 Time  | Activity
 ------|-----------------------------------------
-12:20 | Introduce the workshop & setup programs
-12:30 | Part I: Follow the step-by-step workshop
-1:30  | Lunch!
-2:00  | Part II: Customize your website
-2:45  | Demos!
-3:00  | Finish
+4:20  | Introduce the workshop & setup programs
+4:30  | Part I: Follow the step-by-step workshop
+5:30  | Lunch!
+6:00  | Part II: Customize your website
+6:45  | Demos!
+7:00  | Finish
 
 **Get everyone on Slack**
 
@@ -65,17 +65,19 @@ Time  | Activity
 - The first thing you should do is go around and make sure that _EVERYONE_ has
   signup and signed into JS Bin. If they don't, they could lose all their work.
 
-## 1:30
+## 5:30 : Lunch
 
+## 6:00 : Part II Customize your Website
 
-## 6. Googling Pro Tips
+- Tell the hackers
+  - You will be doing part II of the website
+  - Now's your chance to customize your website
+  - You'll be making a presentation in front of all the hackers at 6:45pm
 
-Demo
+## 6:35
 
-- I do: demo searching for background color
-- We do: demo searching for color
-- You do your own searches
+- Tell hackers to post their links in Slack
 
-## 6. Facilitation Pro-tips
+## 6:45 : Demos
 
-_This section is under construction_
+- Have everyone present
