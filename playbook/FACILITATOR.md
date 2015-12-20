@@ -70,8 +70,8 @@ It is your job to be a great host!
 ### 1:10  : Hack Series Introduction & Icebreakers
 
 1. Excitedly welcome everyone to the Hack Series
-2. Play the alliterative name game icebreaker.
-3. Explain groups and have people count off into groups.
+2. Play the alliterative name game icebreaker standing up.
+3. Explain groups and have people count off into groups with a max group size of 4.
   - Emphasize that groups are meant to help each other but not for people to
     be working on the same project together.
 4. Introduce the schedule for the day (note that the schedule should already be
@@ -103,7 +103,7 @@ Facilitate conversation between hackers.
 
 - Explain that this time is for hackers to customize their website.
 - Feel free to share ideas with your partners
-- Demo [other hackers' websites](../../workshops/portfolio/part_2.md)
+- Demo [other hackers' websites](../workshops/portfolio/part_2.md)
 - Explain how demos work
 
 ### 3:05  : Part II: Customize your website

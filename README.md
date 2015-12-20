@@ -17,7 +17,7 @@
 
 | Action                                  | Link                                         |
 | --------------------------------------- | ---------------------------------------------|
-| View the Hacker Portal                  | [Hacker Portal](playbook)                    |
+| View the Hacker Portal                  | [Hacker Portal](playbook/README.md)           |
 | View the Club Leader Portal             | [Facilitator Portal](playbook/FACILITATOR.md)|
 | Chat with us _(we're here almost 24/7)_ | https://slack.hackclub.io                    |
 | Start a club                            | https://hackclub.io/apply                    |

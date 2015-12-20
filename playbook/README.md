@@ -22,7 +22,7 @@ Password: `designcodeandship`
 
 **Tlk.io**
 
-Join the Tlk.io by clicking [here](https://tlk.io/hackseries)
+Join the Tlk.io by clicking [here](https://tlk.io/hackseries).
 
   - type in your name into the text box
   - and press enter key on your keyboard
