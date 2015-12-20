@@ -81,3 +81,7 @@ Time  | Activity
 ## 6:45 : Demos
 
 - Have everyone present
+
+# Feedback
+
+have hackers submit to this form for feedback http://tinyurl.com/hackseriesfeedback
