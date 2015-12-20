@@ -21,7 +21,7 @@ To do this, you will be learning the basics of two languages: HTML and CSS.
 
 Every website that you have ever seen are written in these two languages.
 
-We will be building this website on an online code editor called [JS Bin](https://jsbin.com/).
+We will be building this website on an online code editor called JS Bin.
 
 [final_output]: https://jsbin.com/gist/81d45193dab5236afbba?output
 [final_output_code]: https://jsbin.com/gist/81d45193dab5236afbba?html,css,output
