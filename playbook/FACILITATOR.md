@@ -81,7 +81,7 @@ It is your job to be a great host!
 
 1. Introduce the Portfolio Workshop.
   1. Demo the <a href="http://jsbin.com/gist/81d45193dab5236afbba?output" target="_blank_">Final Product</a>
-  2. Show other examples of what people made in Part II
+  2. Show other [examples of what people made](websites/README.md)
   3. Introduce that they can Google for how to do something
 2. If you have more experience, feel free to work on your own projects!
 3. Set everyone up on http://tlk.io/hackseries

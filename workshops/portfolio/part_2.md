@@ -8,7 +8,6 @@ Below is just a list of some potential ideas you could try out to make your
 website more awesome! You don't have to use these ideas, feel free to think of
 your own and use Google and ask your neighbors to figure out how to do it!
 
-
 ### Ideas:
 
 **Ideas**
