@@ -56,7 +56,7 @@ issue, be sure to have the issue number in the description.
 ## Wait For Review
 
 Before we can merge your code into the repository it has to be reviewed by one
-the core contributors. It will be assessed on how well it follows the
+of the core contributors. It will be assessed on how well it follows the
 [contribution guidelines](GUIDELINES.md) and if it is intended to solve an
 issue, how well it does so.
 
