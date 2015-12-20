@@ -20,7 +20,7 @@ Network: `MakeSchool`
 
 Password: `designcodeandship`
 
-## 1. Join the Conversation
+**Tlk.io**
 
 Join the Tlk.io by clicking [here](https://tlk.io/hackseries)
 

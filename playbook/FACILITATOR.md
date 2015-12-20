@@ -1,5 +1,8 @@
 # Hack Series Facilitation
 
+Here is the schedule for Hack Series. We'd highly recommend going through
+a test run through the entire schedule.
+
 ## Schedule
 
 _Italisized_ schedule items are things that only facilitators do
