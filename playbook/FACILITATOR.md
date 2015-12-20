@@ -118,4 +118,12 @@ order.
 
 ### 4:00  : Finish
 
+<<<<<<< HEAD
 Thank everyone for coming.
+=======
+- Have everyone present
+
+# Feedback
+
+have hackers submit to this form for feedback http://tinyurl.com/hackseriesfeedback
+>>>>>>> origin/add-playbook-mvp
