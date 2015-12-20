@@ -3,22 +3,21 @@
   <img src="img/welcome_to_the_club.gif" alt="Welcome to the Club"/>
 </div>
 
-## Info
-
 **Schedule**
 
 Time  | Activity
 ------|-----------------------------------------
-4:20  | Introduce the workshop & setup programs
-4:30  | Part I: Follow the step-by-step workshop
-5:30  | Lunch!
-6:00  | Part II: Customize your website
-6:45  | Demos!
-7:00  | Finish
+1:10  | **Start**
+1:25  | **Part I: Follow the step-by-step workshop**
+2:30  | **Break & Snacks**
+3:05  | **Part II: Customize your website**
+3:45  | **Demos!**
+4:00  | **Finish**
 
 **Wifi**
 
 Network: `MakeSchool`
+
 Password: `designcodeandship`
 
 ## 1. Join the Conversation

@@ -1,83 +1,121 @@
-# Meeting 1 Control Panel
+# Hack Series Facilitation
 
-## Now : Setup
+## Schedule
 
-1. Plug in computer to projector and get it working
-2. <a href="https://soundcloud.com/mike-bawless/sets/study-playlist-deadmau5" target="_blank_">Play Music</a>
-3. Make sure  chairs and tables are setup
+_Italisized_ schedule items are things that only facilitators do
 
-## 3:50pm : Hackers Start Arriving
-
-1. Make sure someone is at the door to let people in
-  - Greet them warmly. Make them feel _really_ welcome.
-  - Tell them we'll be starting at 12:10pm
-2. Someone should call all of the registered attendees to check in and see their
-   ETA
-
-## 4:10pm : Start
-
-1. Warmly welcome everyone
-2. Play the alliterative name game. [Watch this YouTube video]
-   (https://www.youtube.com/watch?v=6lB_1tGn2Lk) to see how it works
-
-## 4:30 : Context & Setup
-
-**Show and go through the student facing schedule**
+**Bolded** schedule items are things that both hackers and facilitators do<kbd></kbd>
 
 Time  | Activity
 ------|-----------------------------------------
-4:20  | Introduce the workshop & setup programs
-4:30  | Part I: Follow the step-by-step workshop
-5:30  | Lunch!
-6:00  | Part II: Customize your website
-6:45  | Demos!
-7:00  | Finish
+11:00 | _Figure out who is doing what_
+12:00 | _Setup_
+12:45 | _Play Host & Facilitate Conversation_
+1:10  | _Hack Series Introduction & Icebreakers_
+1:20  | _Introduce Part I_
+1:25  | **Part I: Follow the step-by-step workshop**
+2:30  | **Break & Snacks**
+3:00  | _Introduce Part II_
+3:05  | **Part II: Customize your website**
+3:40  | _Collect Demo Links in tlk.io_
+3:45  | **Demos!**
+4:00  | **Finish**
 
-**Get everyone on Tlk.io**
+## 3 Key Points
 
-  - Explain that Tlk is a messaging app and we're using it so we can share
-    links with each other.
-  - Tell hackers to follow directions on http://bit.ly/hackserieshome to signup
-    for Tlk
-  - 1 person demos how to signup for Tlk on the projector
-    - When you are finished do the same thing as the person below
-  - 1 person walks around the room to help people who get stuck
-    - Have the hackers who successfully signed up for Tlk to help the ones that
-      are stuck. Why? Because you don't have enough time to help everyone
-      individually.
-  - Tell people who have finished setting up Tlk to explore
-    http://bit.ly/hackserieshome
+1. Be anal about following the schedule
+2. Be a great host
+3. Facilitate conversation
 
-**Explain how to do the portfolio workshop**
+## Schedule Details
 
-- Show them the website they'll be making
-  - <a href="http://jsbin.com/gist/81d45193dab5236afbba?output" target="_blank">Demo</a>
-- Show them how to navigate to the workshops on http://bit.ly/hackserieshome
-- Tell them that
-  - The workshop is self contained and you can just follow it
-  - You will get stuck! Ask questions!
-    - To facilitators
-    - To your neighbors
-    - Most importantly to Google
+### Setup
 
-**Facilitate the workshop**
+### 12:00 : Setup
 
-- The first thing you should do is go around and make sure that _EVERYONE_ has
-  signup and signed into JS Bin. If they don't, they could lose all their work.
+1. Setup main computer and projector and show https://bit.ly/hackserieshome on
+   the screen
+2. Play music — <a href="https://soundcloud.com/mike-bawless/sets/study-playlist-deadmau5" target="_blank_">Open SoundCloud Playlist</a>
+3. Make sure chairs and tables are setup for 16 people
 
-## 5:30 : Lunch
+### 12:45 : Play Host & Facilitate Conversation
 
-## 6:00 : Part II Customize your Website
+It is your job to be a great host!
 
-- Tell the hackers
-  - You will be doing part II of the website
-  - Now's your chance to customize your website
-  - You'll be making a presentation in front of all the hackers at 6:45pm
+- Be a good host by making every participant feel like you were welcoming them like the president!
+- It is your job to make sure that everyone talks to everyone else. People will naturally not talk to each other!
 
-## 6:35
+**Roles:**
 
-- Tell hackers to post their links in Slack
+1. **The Front Door Greeter:**
+  - Stands by the front door and warmly greets people as they come
+  - Gives everyone a sticker
+  - [Here's an example interaction.](#stationed-door-greeter)
+2. **The Guide**
+  - Walks hackers from the front door to the hacker space
+  - Offers guests water
+  - Gives them a brief tour of the Make School and explains briefly what it is
+3. **The Conversationalist**
+  - Stays in the hacker space and makes sure that there is _always_
+    conversation happening between hackers
+  - When a new hacker comes up, the conversationalist introduces them to
+    someone already there
 
-## 6:45 : Demos
+### 1:10  : Hack Series Introduction & Icebreakers
 
-- Have everyone present
+1. Excitedly welcome everyone to the Hack Series
+2. Play the alliterative name game icebreaker.
+  - [Watch the YouTube video]
+     (https://www.youtube.com/watch?v=6lB_1tGn2Lk) to see how it works
+3. Explain groups and have people count off into groups.
+  - Emphasize that groups are meant to help each other but not for people to
+    be working on the same project together.
+4. Introduce the schedule for the day (note that the schedule should already be
+   projected on the screen)
+
+### 1:20 : Introduce Part I
+
+1. Introduce the Portfolio Workshop.
+  1. Demo the <a href="http://jsbin.com/gist/81d45193dab5236afbba?output" target="_blank_">Final Product</a>
+  2. Show other examples of what people made in Part II
+2. If you have more experience, feel free to work on your own projects!
+3. Set everyone up on [`http://tlk.io/hackseries`]
+  - Send out the https://bit.ly/hackserieshome which links them to the workshop
+
+### 1:25  : Part I: Follow the step-by-step workshop
+
+1. Circle around and make sure everyone has portfolio workshop open
+2. Make sure everyone is signed in to JS Bin
+3. Instead of asking "How are you doing?" or "Do you need help?" ask "What's
+   your progress so far?" or "What do you want to do next?"
+
+### 2:30  : Break & Snacks
+
+Facilitate conversation between hackers.
+
+### 3:00  : Introduce Part II
+
+
+- Explain that this time is for hackers to customize their website.
+- Feel free to share ideas with your partners
+- Demo [other hackers' websites](../../workshops/portfolio/part_2.md)
+- Explain how demos work
+
+### 3:05  : Part II: Customize your website
+
+1. Go around and check in with people for what ideas they're working on
+2. Instead of asking "How are you doing?" or "Do you need help?" ask "What's
+   your progress so far?" or "What do you want to do next?"
+
+### 3:40 : Collect Demo Links in tlk.io
+
+Do it.
+
+### 3:45  : Demos!
+
+Open up every tab of the submitted demo links and that will be the presentation
+order.
+
+### 4:00  : Finish
+
+Thank everyone for coming.
