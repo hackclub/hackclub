@@ -9,12 +9,12 @@
 
 Time  | Activity
 ------|-----------------------------------------
-12:20 | Introduce the workshop & setup programs
-12:30 | Part I: Follow the step-by-step workshop
-1:30  | Lunch!
-2:00  | Part II: Customize your website
-2:45  | Demos!
-3:00  | Finish
+4:20  | Introduce the workshop & setup programs
+4:30  | Part I: Follow the step-by-step workshop
+5:30  | Lunch!
+6:00  | Part II: Customize your website
+6:45  | Demos!
+7:00  | Finish
 
 **Wifi**
 
