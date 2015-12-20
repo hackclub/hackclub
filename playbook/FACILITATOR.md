@@ -14,11 +14,12 @@ Time  | Activity
 1:10  | _Hack Series Introduction & Icebreakers_
 1:20  | _Introduce Part I_
 1:25  | **Part I: Follow the step-by-step workshop**
-2:30  | **Break & Snacks**
+2:30  | **Pizza Time**
 3:00  | _Introduce Part II_
 3:05  | **Part II: Customize your website**
 3:40  | _Collect Demo Links in tlk.io_
 3:45  | **Demos!**
+3:55  | _Collect Feedback_
 4:00  | **Finish**
 
 ## 3 Key Points
@@ -37,6 +38,9 @@ Time  | Activity
    the screen
 2. Play music — <a href="https://soundcloud.com/mike-bawless/sets/study-playlist-deadmau5" target="_blank_">Open SoundCloud Playlist</a>
 3. Make sure chairs and tables are setup for 16 people
+4. Watch the YouTube video for how to run the ice breaker to see how it works
+  - https://www.youtube.com/watch?v=6lB_1tGn2Lk to see how it works
+
 
 ### 12:45 : Play Host & Facilitate Conversation
 
@@ -50,7 +54,6 @@ It is your job to be a great host!
 1. **The Front Door Greeter:**
   - Stands by the front door and warmly greets people as they come
   - Gives everyone a sticker
-  - [Here's an example interaction.](#stationed-door-greeter)
 2. **The Guide**
   - Walks hackers from the front door to the hacker space
   - Offers guests water
@@ -65,8 +68,6 @@ It is your job to be a great host!
 
 1. Excitedly welcome everyone to the Hack Series
 2. Play the alliterative name game icebreaker.
-  - [Watch the YouTube video]
-     (https://www.youtube.com/watch?v=6lB_1tGn2Lk) to see how it works
 3. Explain groups and have people count off into groups.
   - Emphasize that groups are meant to help each other but not for people to
     be working on the same project together.
@@ -78,18 +79,19 @@ It is your job to be a great host!
 1. Introduce the Portfolio Workshop.
   1. Demo the <a href="http://jsbin.com/gist/81d45193dab5236afbba?output" target="_blank_">Final Product</a>
   2. Show other examples of what people made in Part II
+  3. Introduce that they can Google for how to do something
 2. If you have more experience, feel free to work on your own projects!
-3. Set everyone up on [`http://tlk.io/hackseries`]
+3. Set everyone up on http://tlk.io/hackseries
   - Send out the https://bit.ly/hackserieshome which links them to the workshop
 
-### 1:25  : Part I: Follow the step-by-step workshop
+### 1:25 : Part I: Follow the step-by-step workshop
 
 1. Circle around and make sure everyone has portfolio workshop open
 2. Make sure everyone is signed in to JS Bin
 3. Instead of asking "How are you doing?" or "Do you need help?" ask "What's
    your progress so far?" or "What do you want to do next?"
 
-### 2:30  : Break & Snacks
+### 2:30 : Pizza Time
 
 Facilitate conversation between hackers.
 
@@ -116,14 +118,15 @@ Do it.
 Open up every tab of the submitted demo links and that will be the presentation
 order.
 
-### 4:00  : Finish
+Encourage everyone to present.
 
-<<<<<<< HEAD
+### 3:55  : Finish
+
 Thank everyone for coming.
-=======
-- Have everyone present
 
 # Feedback
 
-have hackers submit to this form for feedback http://tinyurl.com/hackseriesfeedback
->>>>>>> origin/add-playbook-mvp
+- Explain and **_HEAVILY EMPHSIZE** the importance of feedback because it helps
+  us improve.
+- Have hackers submit to this form for feedback
+  http://tinyurl.com/hackseriesfeedback
