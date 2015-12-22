@@ -20,8 +20,8 @@
 
 - We tried encouraging more people to present, gave out stickers to anyone
   presenting.
-- We went to [www.getwiththe.club](www.getwiththe.club) -- it didn't work very
-  well and the website wasn't too complete.
+- We went to [www.getwiththe.club](http://www.getwiththe.club) -- it didn't work
+  very well and the website wasn't too complete.
 
 ## Tips
 

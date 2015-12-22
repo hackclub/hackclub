@@ -3,8 +3,8 @@
 Welcome to San Mateo's Programming Club case studies! We have a
 [GitHub Repository](https://github.com/SMHS-Programming/club/tree/70c64404331b85369d098da277f473424a14273b)
 where we keep all of our progress and works. Similar to
-[hackEDU's](https://github/hackedu/hackedu)
-[Hack Camp](https://github.com/hackedu/hack-camp).
+[Hack Club's](https://github/hackclub/hackclub)
+[Hack Camp](https://github.com/hackclub/hack-camp).
 
 ## Meetings
 
@@ -55,8 +55,8 @@ are looking for specific things.
 | 11/16/15 | W1D1       | [Twilio Workshop](2015-11-16_meet_12)                                |
 | 11/18/15 | W1D2       | [Twilio Workshop](2015-11-18_meet_13)                                |
 | 11/23/15 | W2D1       | [Twilio Workshop](2015-11-23_meet_14)                                |
-| 11/30/15 | W3D1       | [Project Week (Cancelled)](2015_11_30_meet_15_cancelled)             |
-| 12/02/15 | W3D2       | [Project Week](2015_12_02_meet_15)                                   | -->
+| 11/30/15 | W3D1       | [Project Week (Cancelled)](2015-11-30_meet_15_cancelled)             |
+| 12/02/15 | W3D2       | [Project Week](2015-12-02_meet_15)                                   |
 
 
 ## Basic templates:

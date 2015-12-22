@@ -9,11 +9,17 @@
   enough to fit all of us. We settled down and collected ton of swag.
   ![tons of swag](http://i.imgur.com/H8w9Cvx.jpg)
 - Speech was cancelled.
-- Hacking started! We thought of ideas, a lot of them and started programming.
-- Most of the hackers started learning through codeacademy or any learning
+- Hacking started! We thought of ideas, a lot of them, and started programming.
+- Most of the hackers started learning through Codeacademy or any learning
   websites and then we started working on our project.
 - We thought of an idea that allows you find people in a hackathon and then
   be able to contact them easily.
+- We had a github repo, hackers learned how to contribute:
+  [Github Repo](https://github.com/saescapa/hackingEDUfun/tree/4d808b84fa290e35996075e4f8b11a2e8d92688a)
+- Everyone learned a lot through Codeacademy, some workshops and mentors.
+- Most Saturday we worked on workshops, and started the project.
+- We took breaks, played games or went to some activities.
+- We also met a lot of people and other groups.
 
 ## Problems we faced
 
