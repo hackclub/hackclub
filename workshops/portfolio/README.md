@@ -555,6 +555,17 @@ Huzzah, we did it! You can take this URL and share it with your friends now!
 One last thing. Please click a rating below to rate this workshop. It'll only
 take 3 seconds.
 
+## Continuation
+
+Want to continue building? I challenge you to make your website *even more
+cool!
+
+If you are stuck and want some ideas of what to do, [check out the websites
+file](website).
+
+Remember, if you want to learn how to learn how to do something not in this
+tutorial: [Google](https://google.com) is your friend!
+
 _How likely is it that you would recommend this workshop to a friend?_
 
 | [1][r1] | [2][r2] | [3][r3] | [4][r4] | [5][r5] | [6][r6] | [7][r7] | [8][r8] | [9][r9] | [10][r10] |
