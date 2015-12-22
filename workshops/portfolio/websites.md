@@ -1,18 +1,17 @@
-# Learn to Create Your Own Websites
-
-You will learn how to make your own website by learning the computer languages
-HTML and CSS!
-
-## Step 1: Make Your Homepage
-
-In this step, you will be making your own homepage.
-
-[Open Step 1](../../workshops/portfolio)
+# Example Websites
 
 Here are some examples websites other hackers made:
 
-- <a href="https://output.jsbin.com/fetice" target="_blank">Example 1</a>
-- <a href="https://output.jsbin.com/nocotu" target="_blank">Example 2</a>
-- <a href="https://output.jsbin.com/wopikas" target="_blank">Example 3</a>
-- <a href="https://output.jsbin.com/zilola" target="_blank">Example 4</a>
-- <a href="https://output.jsbin.com/muwaha" target="_blank">Example 5</a>
+## Basic
+
+- <a href="https://output.jsbin.com/fetice" target="_blank">Doge</a>
+- <a href="https://output.jsbin.com/nocotu" target="_blank">Anti-Internet</a>
+- <a href="https://output.jsbin.com/wopikas" target="_blank">Miku</a>
+- <a href="https://output.jsbin.com/zilola" target="_blank">Leia</a>
+- <a href="https://output.jsbin.com/muwaha" target="_blank">I don't know you</a>
+- <a href="https://harrison.tech/zero-cool" target="_blank">Zero Cool</a>
+
+## Advanced
+
+- <a href="https://cydrobolt.com/" target="_blank">Chaoyi Zha</a>
+- <a href="http://jevinsidhu.github.io/" target="_blank">Jevin Sidhu</a>
