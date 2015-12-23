@@ -32,3 +32,10 @@ Adapted From - https://github.com/golang/go/blob/aa487e66f869785837275ee20441a53
 License - Creative Commons Attribution 3.0, https://creativecommons.org/licenses/by/3.0/
 Changes - We took the code of conduct which was written in HTML, converted it to
           Markdown, and made modifications to it to fit our needs.
+
+README.md:
+
+Adapted From - https://github.com/FreeCodeCamp/FreeCodeCamp/blob/staging/README.md
+License - BSD 3-Clause License (Revised), https://opensource.org/licenses/BSD-3-Clause
+Changes - We took the contribution guide and made modifications to it to fit our
+          needs.
