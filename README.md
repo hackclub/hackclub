@@ -29,17 +29,18 @@ clubs.
 
 ## Contributing
 
-Hack Club is built by a community of volunteers and a small team of full-time
-staff. Submit a contribution and help grow coding communities in more high
-schools. Start by checking out [`CONTRIBUTING.md`](CONTRIBUTING.md).
+Contributions are welcome!
+
+If you need any help, please contact us at team@hackclub.io or on our
+[slack](https://slack.hackclub.io).
 
 1. Check out our
    [public issues board](https://github.com/hackclub/hackclub/issues). If your
    issue isn't on the board,
-   [open an issue](https://github.com/hackclub/hackclub/issues/new).
+   [open a new one](https://github.com/hackclub/hackclub/issues/new).
 2. Pick an issue that nobody has claimed and start working on it. First time
    contributors should look for the
-   [first-timers-only](https://github.com/hackclub/hackclub/labels/first-timers-only)
+   "[first-timers-only](https://github.com/hackclub/hackclub/labels/first-timers-only)"
    label on issues.
 3. Fork the project
    ([Need help forking a project?](https://help.github.com/articles/fork-a-repo/)).
