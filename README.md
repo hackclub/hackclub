@@ -8,7 +8,7 @@
 
 <p align="center"><img src="https://cdn.rawgit.com/hackclub/meta/82000f7457efdfc20b9feff4da718f6839e69c05/logos/hack_club_red_text.svg" alt="Hack Club"/></p>
 <p align="center">
-  <a href="https://hackclub.io)">Hack Club</a> is the movement of student-led coding clubs.
+  <a href="https://hackclub.io">Hack Club</a> is the movement of student-led coding clubs.
 </p>
 
 -------------------------------------------------------------------------------
