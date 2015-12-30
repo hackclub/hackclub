@@ -228,7 +228,7 @@ To add an image, we use the image tag:
 
 Let's try adding a picture of me to the page (just for time's sake, let's just
 use a picture of me and after you finish the tutorial, you can change it to a
-picture of yourself).
+picture of yourself, [more information on that here](imgur.md)).
 
 This is a link to my picture:
 
@@ -546,6 +546,10 @@ So if you get the output URL, you can share this with everyone on the
 entire internet now and they will be able to see your website!
 
 > ![](img/get_url.gif)
+
+## Add your own image to the website
+
+You can see how to do that [in this guide](imgur.md)
 
 ## Done!
 
