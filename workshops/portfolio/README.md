@@ -61,7 +61,7 @@ And now we're done creating a GitHub account!
 
 Now that we have a GitHub account:
 
-1. Open [jsbin.com][jsbin]
+1. Open [jsbin.com][jsbin] in a new window
 2. Click "Login or Register"
 
 > ![](img/login_or_register.gif)
@@ -203,7 +203,7 @@ When you look at a different website, say the Wall Street Journal, we can see
 
 > ![](img/paragraph_wsj.png)
 
-We use the `h1` tag for headsings.
+We use the `h1` tag for headings.
 
 We use the `p` tag for paragraphs and the main text for a website.
 
@@ -235,9 +235,7 @@ picture of yourself).
 
 This is a link to my picture:
 
-```
-http://i.imgur.com/C6P1T0G.jpg
-```
+    http://i.imgur.com/C6P1T0G.jpg
 
 Feel free to copy and paste that into JS Bin and do the following:
 
@@ -248,7 +246,7 @@ side, we see that our original text is still there:
 
 > ![](img/scroll_down.gif)
 
-Ok. We need to make the picture smaller
+Ok. Let's make the picture smaller
 
 But before we do that, let's understand how the image tag works:
 
@@ -297,7 +295,7 @@ For example, if an oven was a tag:
 
 ## Changing the look and feel with CSS
 
-Ok. The image is way too big. We need to fix it.
+Ok. The image is way too big. Let's fix it.
 
 So so far, we have only been adding content to the page and not really
 changing its look and feel.
@@ -348,8 +346,8 @@ Read the following as one long sentence:
 
 > ![](img/css_curly_braces.png) `{` `}` are called curly braces
 
-> ![](img/css_property.png) the thing on the left side of the semicolon
-is called the `"property", in this case it is `width`
+> ![](img/css_property.png) the thing on the left side of the semicolon is
+> called the `"property", in this case it is `width`
 
 > ![](img/css_value.png) `50%` is what's known as the `"value"`
 
@@ -362,6 +360,7 @@ Hmm... I don't want my image to change sizes if my page changes sizes.
 ## Pixels
 
 Let's change the units from a percentage to pixels.
+
 This will now set the width of the image to always be `200px` or 200 pixels
 no matter the size of the page.
 
@@ -407,7 +406,7 @@ I focus on this line:
 
 It seems like I just need to add
 
-```javascript
+```css
 border-radius: 50%;
 ```
 
@@ -512,7 +511,7 @@ Let's open up a new tab and open JS Bin.
 
 > ![](img/jsbin.gif)
 
-For now, I wont explain what all this code means, you can
+For now, I won't explain what all this code means, you can
 
 - Google for what it means
 - Or ask someone else that might know what it means
