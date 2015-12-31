@@ -390,7 +390,7 @@ While we're working on the image, let's make it nice and rounded.
 We're going to use one of the most useful tools in programming to figure out how
 to do this, the great and mighty Google.
 
-To figure out how to make an image nice and rounded, I might  Google something
+To figure out how to make an image nice and rounded, I might Google something
 like, `make image circular in css`
 
 This is the first result I get
@@ -416,6 +416,11 @@ Since I want this to apply my `img` tag, I add here:
 > ![](img/border_radius.gif)
 
 Hey! It works!
+
+> If you have chosen to use an image that is not square (like the one we
+> provided), you may notice that your image is not a perfect circle.
+> Unfortunately there is not simple way to fix this with CSS, it is easier just
+> to crop your image reupload it.
 
 Note that this was just a brief introduction to using Google to figure out
 how to do something. You will be doing this **_A LOT_** more of this in the
