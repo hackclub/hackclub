@@ -1,0 +1,61 @@
+#!/bin/sh
+#
+# This script reminds attendees of The Hack Series about the event and is meant
+# to be run for each session the morning before it starts. It expects you to
+# have twilio-sms (see at the bottom of this comment) in your PATH
+#
+# The best way to run sms-remind is to do the following:
+#
+# 1. Update the variables at the beginning of this script to reflect the data
+#    you want to text attendees
+#
+# 2. Create a file with all of the session's attendees' numbers in it, one per
+#    line. Example (with placeholder numbers):
+#
+#        Contents of /tmp/example_numbers:
+#
+#        415-342-2342
+#        415-480-2891
+#        415-322-5901
+#        415-234-2342
+#
+# 3. Once you have that, run the following command, replacing $SMS_REMIND_PATH
+#    with the path to this file:
+#
+#        $ cat /tmp/example_numbers | xargs -L 1 $SMS_REMIND_PATH
+#
+#    This runs this script once with each of the numbers in /tmp/example_numbers
+#    as the first argument. If you expanded the actual commands being ran, it'd
+#    look like the following:
+#
+#        $ $SMS_REMIND_PATH 415-342-2342
+#        $ $SMS_REMIND_PATH 415-480-2891
+#        $ $SMS_REMIND_PATH 415-322-5901
+#        $ $SMS_REMIND_PATH 415-234-2342
+#
+#    And boom! All of the attendees in /tmp/example_numbers have been texted.
+#
+# [twilio-sms]: https://www.twilio.com/labs/bash/sms
+
+SESSION_TIME="1PM"
+VENUE="Make School (1547 Mission St, San Francisco, CA 94103)"
+ORGANIZER_NAME="Zach"
+ORGANIZER_PHONE_NUMBER="[redacted]"
+
+phone_number="$1"
+
+send_sms() {
+  echo $@ | twilio-sms $phone_number
+  sleep 1
+}
+
+send_sms "Hey! This is a notification from The Hack Series."
+
+send_sms "We're excited to see you at $SESSION_TIME today at $VENUE."
+
+send_sms "We'll be starting sharply at $SESSION_TIME, so please plan to" \
+         "arrive 5 minutes early. Don't forget to bring a laptop (unless" \
+         "we've already talked to you about this)!"
+
+send_sms "If you have any questions, please don't hesitate to text or call" \
+         "$ORGANIZER_NAME at $ORGANIZER_PHONE_NUMBER. See you soon!"
