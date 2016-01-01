@@ -78,6 +78,16 @@ And we're all set!
 
 ## JS Bin is like Microsoft Word for Code
 
+Go ahead and open https://jsbin.com. You will be writing all of your code for
+the rest of the tutorial in here.
+
+Make sure that you are logged in. If you are successfully logged in, you will
+_**NOT**_ see the "Login or Register" button":
+
+> ![](img/login_or_register.png)
+
+If you still see this button, ask a facilitator for help.
+
 Just like you use Microsoft Word to write English, we can use JS Bin to write
 code.
 
@@ -564,6 +574,8 @@ _How likely is it that you would recommend this workshop to a friend?_
 
 | [1][r1] | [2][r2] | [3][r3] | [4][r4] | [5][r5] | [6][r6] | [7][r7] | [8][r8] | [9][r9] | [10][r10] |
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
+
+[![](img/bttn_back.png)](https://rawgit.com/jonleung/77f8662577df9c2ff04d/raw/2c8489d490de8e37e89e6fb5b9073f904b6377e0/index.html)
 
 [r1]: https://feedback-redir.hackclub.io/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=1
 [r2]: https://feedback-redir.hackclub.io/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=2

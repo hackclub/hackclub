@@ -15,12 +15,14 @@
 
 ## Where to Start
 
-| Action                                  | Link                          |
-| --------------------------------------- | ----------------------------- |
-| Chat with us _(we're here almost 24/7)_ | https://slack.hackclub.io     |
-| Start a club                            | https://hackclub.io/apply     |
-| See our workshops                       | https://workshops.hackclub.io |
-| Read our Code of Conduct                | [`CONDUCT.md`](CONDUCT.md)    |
+| Action                                  | Link                                         |
+| --------------------------------------- | ---------------------------------------------|
+| View the Hacker Portal                  | [Hacker Portal](playbook/README.md)           |
+| View the Club Leader Portal             | [Facilitator Portal](playbook/FACILITATOR.md)|
+| Chat with us _(we're here almost 24/7)_ | https://slack.hackclub.io                    |
+| Start a club                            | https://hackclub.io/apply                    |
+| See our workshops                       | https://workshops.hackclub.io                |
+| Read our Code of Conduct                | [`CONDUCT.md`](CONDUCT.md)                   |
 
 ## About
 
