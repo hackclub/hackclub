@@ -13,10 +13,12 @@ Hack Club. Choose a track to get started!
 
 **Games** _make 2D browser games_
 
-1. [Portfolio](portfolio/README.md) _A simple portfolio website_
-2. [Soccer](soccer/README.md) _A simple soccer game_
-3. [Dodge](dodge/README.md) _A bullet dodging game_
-4. [Maze](maze/README.md) _A "Scary Maze Game" clone_
+_(We recommend going through the HTML, CSS, and JS track before the games
+track)_
+
+1. [Soccer](soccer/README.md) _A simple soccer game_
+2. [Dodge](dodge/README.md) _A bullet dodging game_
+3. [Maze](maze/README.md) _A "Scary Maze Game" clone_
 
 For more recommended guidelines on running workshops,
 [click here](workshop_details.md#general-workshop-facilitation-guidelines).
