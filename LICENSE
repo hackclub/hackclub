@@ -21,11 +21,6 @@ twilio-node:
 Project site - https://twilio.github.io/twilio-node/
 License - MIT License, https://github.com/twilio/twilio-node/blob/master/LICENSE
 
-flatdoc:
-
-Project site - https://github.com/rstacruz/flatdoc
-License - MIT License, http://opensource.org/licenses/mit-license.php
-
 CONDUCT.md:
 
 Adapted From - https://github.com/golang/go/blob/aa487e66f869785837275ee20441a53888a51bb2/doc/conduct.html
