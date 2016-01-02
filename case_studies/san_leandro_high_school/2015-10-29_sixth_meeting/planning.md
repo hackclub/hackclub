@@ -6,7 +6,7 @@
 4. If some members get bored challenge them to create a more complex game.
 5. Tell them to fill out the feedback form at
    [feedback.hackclubslhs.com](http://feedback.hackclubslhs.com).
-6. Bring out some more of the swag/goodie sent to us by our sponsor.
+6. Bring out some more of the swag/goodies sent to us by our sponsor.
 7. Hack Cheer!
 
 ## Anticipated Problem

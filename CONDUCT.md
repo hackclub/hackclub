@@ -164,11 +164,11 @@ document.
 
 - Treat everyone with respect and kindness.
 - Be thoughtful in how you communicate.
-- Don’t be destructive or inflammatory.
+- Don't be destructive or inflammatory.
 - If you encounter an issue, please mail
   conduct@hackclub.io.
 
-## Acknowledgements
+## Acknowledgments
 
 This was adapted from [Go's Code of Conduct]
 (https://github.com/golang/go/commit/aa487e66f869785837275ee20441a53888a51bb2).

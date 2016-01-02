@@ -6,8 +6,7 @@ Short link to this workshop: https://workshops.hackclub.io/dodge
 
 We are going to make a bullet dodging game:
 
-<a href="http://output.jsbin.com/dozoki/70"
-target="_blank">![](img/game_play.gif)</a>
+<a href="http://output.jsbin.com/dozoki/70" target="_blank">![](img/game_play.gif)</a>
 
 ![](img/checkmark.png) Go ahead and <a href="http://output.jsbin.com/xetogabiwu"
 target="_blank">play the game</a>.
@@ -51,5 +50,6 @@ including:
 
 We are using two libraries:
 
-- The [p5js](http://p5js.org/) library
-- The [p5.play](http://p5play.molleindustria.org/) library (a library for games built on top of p5.js)
+- The [p5.js](http://p5js.org/) library
+- The [p5.play](http://p5play.molleindustria.org/) library (a library for games
+  built on top of p5.js)

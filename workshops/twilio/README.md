@@ -67,9 +67,9 @@ If you are the facilitator (or if you're just doing this workshop by yourself),
 follow the directions [here](../lib/twilio-basic/signup.md) to get your own
 Twilio SID and token.
 
-Once we have the SID and auth token, replace
-`YOUR_TWILIO_ACCOUNT_SID_HERE` and `YOUR_TWILIO_AUTH_TOKEN_HERE` with the actual
-Account SID and Auth Token.
+Once we have the SID and authentication token, replace
+`YOUR_TWILIO_ACCOUNT_SID_HERE` and `YOUR_TWILIO_AUTH_TOKEN_HERE` with your
+actual SID and authentication token.
 
 > ![](img/enter_account_sid.gif)
 
@@ -178,8 +178,8 @@ Go ahead and continue using the [JS Bin from the Quick Demo][demo]
 
 If you've closed it already, open [the JS Bin][demo] tab back up!
 
-If you havn't added your Twilio SID and token to this JS Bin, please do so
-by [following these directions](#adding-your-twilio-sid-and-token).
+If you haven't added your Twilio SID and token to this JS Bin, please do so by
+[following these directions](#adding-your-twilio-sid-and-token).
 
 We've already learned how to make a phone call and say something in the
 [Quick Demo](#quick-demo).
@@ -226,7 +226,7 @@ After signing up for all the accounts, then you can pair up again.
 
 #### Creating a JS Bin Account
 
-When we click "Login or Register"
+When we click `Login or Register`
 
 > ![](img/login_or_register.gif)
 
@@ -294,7 +294,7 @@ Then click the checkbox for "Auto-run JS"
 > ![](img/auto_run_js.gif)
 
 When you click the button that says "Emergency Excuse", it will call your phone
-and say "Hello! Are you ready for MHacks?" (Ths feature might come in handy when
+and say "Hello! Are you ready for MHacks?" (This feature might come in handy when
 you are on an awkward date and you need your phone to ring...)
 
 Go ahead and click the "Emergency Excuse" button:

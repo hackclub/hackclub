@@ -17,17 +17,17 @@ left seeming to be excited to return next week.
   [this](https://github.com/hackedu/hack-camp/blob/master/cohort_4/playbook/ACTIVITIES.md#introduction-talk)
   (excluding Hack Camp specific information). There was a heavy emphasis on
   growth mindset, code of conduct, and what makes hackEDU different from last
-  year’s coding club.
-- **Intro to HTML/CSS/Javascript (_10 min_):** Quick intro to what
-  HTML/CSS/Javascript can do. Done by following the “Running It” section for
+  year's coding club.
+- **Intro to HTML/CSS/JavaScript (_10 min_):** Quick intro to what
+  HTML/CSS/JavaScript can do. Done by following the “Running It” section for
   “Portfolio”
   [here](https://github.com/hackedu/hack-camp/blob/master/cohort_4/playbook/ACTIVITIES.md#introduction-talk).
 - **Starting the Portfolio Workshop (_30 min_):** Hackers began doing the
   [Portfolio Workshop](https://github.com/hackedu/hack-camp/tree/master/cohort_4/playbook/workshops/portfolio).
-  This mainly consisted of hackers setting up theirdeveloper environment, and
+  This mainly consisted of hackers setting up their developer environment, and
   facilitators going around to help hackers set up accounts and the like. About
-  75% of hackers had their dev environments complete and had started the rest of
-  the workshop by the end of the 30 minutes.
+  75% of hackers had their development environments complete and had started the
+  rest of the workshop by the end of the 30 minutes.
 - **Clean-Up/Dismissal (_5 min_):** Hackers closed out of their Chromebooks and
   put them away. While some left to catch the bus, about 60% of the hackers
   stayed to see some examples of source code.
@@ -46,4 +46,4 @@ left seeming to be excited to return next week.
   art, physics, coding, etc.). Every single girl that joined STEAM joined our
   Hack Club. When I asked them why, they said it was due to the fact that the
   person leading it was female, and that the other groups would feel more like a
-  “boy’s club.”
+  “boy's club.”

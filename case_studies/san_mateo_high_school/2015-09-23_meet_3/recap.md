@@ -2,9 +2,9 @@
 
 ## What Happened
 
-- About 25 hackers came in, as we set up'd the computers and presentation.
+- About 25 hackers came in, as we set up the computers and presentation.
 - We went through the presentation with no problems.
-- We made sure people were signing up to Github first.
+- We made sure people were signing up to GitHub first.
 - We proceeded with the workshop and walked around to help students.
 - For the people eating outside, we talked to them briefly about the hackathon.
 - Everyone left on time and we all left very happy.

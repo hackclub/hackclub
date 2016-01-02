@@ -2,7 +2,7 @@
 
 ## What Happened
 
-- We setted up, chose one of the best tables.
+- We set up, chose one of the best tables.
 - We ended up sharing tables with Interactive Coding Club because there wasn't
   much space for them.
 - We had a very big poster:
@@ -35,8 +35,8 @@
   talk about very exciting project people seemed interested in such as
   hackathons.
 - Don't expect _anybody_ to know about programming.
-- Shoutouts is a great way to advertise your club, make sure to not get
+- Shout outs are a great way to advertise your club, make sure to not get
   distracted by it when they do so. In our school, we had speakers with music
   and the leadership team mentioning clubs. If you have something similar, use
-  it to your advantage. If you don't have it, request it has it's very useful
+  it to your advantage. If you don't have it, request it as it's very useful
   and sets up the mood.

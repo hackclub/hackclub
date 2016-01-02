@@ -17,7 +17,7 @@ of the workshop you will have a link to get you to your website.
 
 # What is a Repository?
 
-A respository is a location (or folder) where code and other files can be
+A repository is a location (or folder) where code and other files can be
 stored. The word `repository` is sometimes shortened to `repo`.
 
 # Create a Repository
@@ -33,7 +33,7 @@ So if your username is `supersam`, your repository would be `supersam.github.io`
 # Clone into Cloud9
 
 Go into your Cloud9 workspace and choose an area to clone your repository. You
-want to find the terminal that starts with "bash". If it isnt there open a new
+want to find the terminal that starts with "bash". If it isn't there open a new
 terminal. (Instructions directly below)
 
 Now that we have a place to put our code, we want to set up a way to edit our
@@ -65,12 +65,12 @@ You should start creating the necessary files for a website. (`index.html`,
 In this part of the workshop, you will learn how to sync your Cloud9 data into
 your GitHub Repository.
 
-# Commiting and Publishing to GitHub
+# Committing and Publishing to GitHub
 
 In this part of the workshop, you will learn how to put the code from Cloud9
 into your GitHub repository.
 
-### Commiting and Publishing to GitHub
+### Committing and Publishing to GitHub
 
 After you make changes to your site on Cloud9 you will need to put the changes on
 GitHub for the changes to show up on your site.

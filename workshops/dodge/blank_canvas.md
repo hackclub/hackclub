@@ -183,7 +183,7 @@ The side effect of this function is to set the color of the canvas.
 ##### Outputs
 
 This function has no outputs. This may not seem like it makes sense right now
-but if you visit the functions section of createSprite (which doesn't exist
+but if you visit the functions section of `createSprite` (which doesn't exist
 yet), it will make much more sense.
 
 ## Associated Modules:

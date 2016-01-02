@@ -126,7 +126,7 @@ createSprite(125, 250, 50, 50);
 
 > ![](img/2_write-d_createSprite_width_50_height_50.gif)
 
-### Recap of createSprite
+### Recap of `createSprite`
 
 ```
 createSprite(150, 100, 50, 50);
@@ -159,7 +159,7 @@ var player;
 > ![](img/2_write-e_var_player.gif)
 
 Now that the variable is created, we can assign the **_output_** of the
-createSprite **_function_** to `player`.
+`createSprite` **_function_** to `player`.
 
 ```
 player = createSprite(125, 250, 50, 50);
@@ -179,7 +179,7 @@ there's no need to do it.
 
 # Brief Overview of the Code
 
-Reproduced below is the code that addes the new sprites:
+Reproduced below is the code that adds the new sprites:
 
 New lines marked with
 `// <-- NEW LINE`.

@@ -10,7 +10,7 @@ Short link to this workshop: https://workshops.hackclub.io/ajar
   - [Part 1](#part-1)
     - [Creating the files](#creating-the-files)
     - [Setting up the HTML](#setting-up-the-html)
-    - [Writing the Javascript](#writing-the-javascript)
+    - [Writing the JavaScript](#writing-the-javascript)
     - [Congrats!](#congrats)
   - [Part 2](#part-2)
     - [What are functions?](#what-are-functions)
@@ -41,7 +41,7 @@ Short link to this workshop: https://workshops.hackclub.io/ajar
 -------------------------------------------------------------------------------
 
 [Agar.io](http://agar.io) is a popular game built for the web with
-[HTML, CSS, and Javascript](http://qr.ae/RoCXc7). The goal of this workshop is
+[HTML, CSS, and JavaScript](http://qr.ae/RoCXc7). The goal of this workshop is
 to teach you to make your own simplistic version of agar.io which we'll call
 ajar.io.
 
@@ -97,8 +97,8 @@ taken to a guide on setting it up. Once you've done that, continue over here.
 
 In Cloud9, create two files in a folder of your choice:
 
-- index.html
-- app.js
+- `index.html`
+- `app.js`
 
 Your folder should look like this:
 
@@ -135,7 +135,7 @@ Next, add the below `<canvas>` element inside of the `<body>` element.
 > [read more about canvas](http://www.w3schools.com/html/html5_canvas.asp).
 
 > `id` - To review, this *attribute*, which can be applied to any HTML element,
-> allows you to use that element in your javascript.
+> allows you to use that element in your JavaScript.
 
 > `width` - Specifies the width of the `<canvas>`, this time in pixels.
 
@@ -143,7 +143,7 @@ Next, add the below `<canvas>` element inside of the `<body>` element.
 
 -------------------------------------------------------------------------------
 
-Now we have to tell our HTML (`index.html`) to use our Javascript (`app.js`). In
+Now we have to tell our HTML (`index.html`) to use our JavaScript (`app.js`). In
 our `index.html` file we add the following line inside of the the `<body>`
 element (make sure it's at the end):
 
@@ -155,7 +155,7 @@ element (make sure it's at the end):
 
 > Your HTML is now configured!
 
-### Writing the Javascript
+### Writing the JavaScript
 
 The bulk of this workshop will take place in our the `app.js` file. If you
 completed the previous section successfully, your `app.js` file should be linked
@@ -180,7 +180,7 @@ var canvas = document.getElementById("canvas");
 > Feel free to
 > [read more about functions](http://www.w3schools.com/js/js_functions.asp).
 
-> The `<canvas>` element retreived by `document.getElementById("canvas")` gets
+> The `<canvas>` element retrieved by `document.getElementById("canvas")` gets
 > *assigned* to the variable `canvas`.
 
 Next, write this line of code:
@@ -202,7 +202,7 @@ Time to draw a circle! Open your `index.html` file and from the menu bar click
 
 ![](img/live_preview.gif)
 
-Now each time you save changes to your HTML or Javascript your site will refresh
+Now each time you save changes to your HTML or JavaScript your site will refresh
 to reflect the changes. Remember to *save* changes by going to `File > Save`.
 
 Write the following lines at the end of your `app.js` file:
@@ -222,8 +222,8 @@ You should have something that looks like this.
 **Understanding The Code**
 
 > `context.beginPath()` - Any shape on the canvas is considered a path. You need
-> to call this function before begining to draw a new shape. In this case we are
-> starting to draw a circle.
+> to call this function before beginning to draw a new shape. In this case we
+> are starting to draw a circle.
 
 > `context.arc(10, 10, 10, 0, 2*3.14159)` - This function creates an arc. An arc
 > that ends where it starts forms a circle. The function takes a lot of
@@ -242,7 +242,7 @@ You should have something that looks like this.
 >   [radians](https://www.mathsisfun.com/geometry/radians.html). Briefly, 0
 >   radians = 0 degrees and 2π radians = 360 degrees.
 
-> - The `endAngle` (2*π) determins at what angle the arc should end. If the
+> - The `endAngle` (2*π) determines at what angle the arc should end. If the
 >   `endAngle` is 2π radians, or 360 degrees, more than the `startAngle`, the
 >   arc loops back into itself and forms a circle. Try making a semi-circle by
 >   changing the `endAngle`.
@@ -263,9 +263,9 @@ Woah! Our circle is now cyan.
 
 **Understanding the code**
 
-> The fillStyle is a variable that deterimines the color that is used to fill
+> The `fillStyle` is a variable that determines the color that is used to fill
 > the shape. [Many colors](http://www.w3schools.com/cssref/css_colornames.asp)
-> are available, so try some on your own (like papayawhip).
+> are available, so try some on your own (like `papayawhip`).
 
 When you've finished exploring, change the arguments of the `context.arc`
 function to the following:
@@ -418,7 +418,7 @@ Right now your code should look like this:
 
 Let's modify our code to use functions. Go ahead and open your `index.html` file
 and click on _preview_ in the menu bar and then _Live Preview File
-(index.html)_. Now open your `app.js` file.
+(`index.html`)_. Now open your `app.js` file.
 
 ![Open live preview](img/open-live-preview.gif)
 
@@ -443,7 +443,7 @@ function drawUserCell() {
 }
 ```
 
-![Wrap with drawUserCell function](img/wrap-with-draw-user-cell-function.gif)
+![Wrap with `drawUserCell` function](img/wrap-with-draw-user-cell-function.gif)
 
 If you save the file now you'll see that there's no more circle on screen!
 
@@ -454,7 +454,7 @@ it. Type out the code below the `drawUserCell` function:
 drawUserCell();
 ```
 
-![Invoke drawUserCell function](img/invoke-draw-user-cell-function.gif)
+![Invoke `drawUserCell` function](img/invoke-draw-user-cell-function.gif)
 
 The circle is back!
 
@@ -493,7 +493,7 @@ Since the position of our circle will _change_ those values have to be
 variable. How do we make something variable? Oh right! Variables!
 
 So we will make variables `x` and `y` and plop them at the start of our
-Javascript file, right under where we declare `context`:
+JavaScript file, right under where we declare `context`:
 
 ```js
 var canvas = document.getElementById("canvas");
@@ -545,7 +545,7 @@ function mouseMoved(mouse) {
 > - `mouse` is an object that contains two variables that we care about:
 >   `clientX` and `clientY`. These represent, respectively, the x and y
 >   coordinates of the mouse cursor in relation to the canvas.
-> - You then set the varible `x` equal to the `clientX` and the variable `y`
+> - You then set the variable `x` equal to the `clientX` and the variable `y`
 >   equal to the `clientY`.
 
 
@@ -571,7 +571,7 @@ canvas.addEventListener("mousemove", mouseMoved);
 
 > Notice we **do not** invoke the `mouseMoved` function ourselves (by writing
 > `mouseMoved()`). Instead we simply tell the `EventListner` to invoke the
-> function for us each time it recieves a `mousemove` event.
+> function for us each time it receives a `mousemove` event.
 
 Finally, let's draw a new cell each time the mouse is moved. To do this, we
 simply invoke the `drawUserCell` function from within our `mouseMoved`
@@ -605,8 +605,8 @@ new circle at that location. We're forgetting to _clear the canvas_.
 Clearing the canvas is pretty easy. All we've got to do is to draw a rectangle
 over the whole canvas.
 
-You could find the solution by googling "how to draw rectangle on canvas
-javascript", but I'll save you the hassle.
+You could find the solution by googling "How to draw rectangle on canvas
+JavaScript", but I'll save you the hassle.
 
 We draw a rectangle with the `rect` function of `context`.
 
@@ -677,7 +677,7 @@ your cursor.
 ### Let's recap
 
 In Part 3 you learned about functions. Remember that functions are
-**self-contained blocks of code**. They can recieve input - In the form of
+**self-contained blocks of code**. They can receive input - In the form of
 **parameters**.
 
 This is how we wrapped the code used to draw the user's cell into a function
@@ -704,7 +704,7 @@ What we want to do: add a velocity to the cell's movements.
 
 How do we even approach that? It goes something like this:
 
-1. Create an infitie loop that calculates the postition of the cell 60 times a
+1. Create an infinite loop that calculates the position of the cell 60 times a
    second. If you're familiar with video games you might recognize 60 times a
    second as 60 frames per second or _60 fps_. More in a bit.
 2. For each frame, move the cell closer to the mouse location by a given amount.
@@ -766,8 +766,8 @@ clearCanvas();
 drawUserCell();
 ```
 
-Lastly, let's replace the invokation of `drawUserCell` at the end of the
-`app.js` file with an invokation of `drawScreen`:
+Lastly, let's replace the invocation of `drawUserCell` at the end of the
+`app.js` file with an invocation of `drawScreen`:
 
 ![](img/invoke-draw-screen.gif)
 
@@ -798,7 +798,7 @@ different approach__ to get the *same result*.
 > 3. The next time the `drawScreen` function loops (at max in 1/60th of a
 >    second), it will clear the canvas (`clearCanvas`) and invoke the
 >    `drawUserCell` function.
-> 4. The `drawUserCell` function draws another circle cenetered at `x` and `y`.
+> 4. The `drawUserCell` function draws another circle centered at `x` and `y`.
 >    (The `x` and `y` are now the coordinates of the mouse).
 > 5. A new circle appears where the mouse is.
 
@@ -822,7 +822,7 @@ var mouseY = 250;
 var velocity = 2;
 ```
 
-The imporatant part is that `mouseX` and `mouseY` will always be equal to the
+The important part is that `mouseX` and `mouseY` will always be equal to the
 current position of the mouse. `velocity` will determine how fast the cell moves
 (a higher velocity will make the cell go faster).
 
@@ -965,7 +965,7 @@ Our cell has velocity!
 ## Part 5
 
 In this lesson you will add food at hardcoded positions. You will also learn
-about javascript arrays.
+about JavaScript arrays.
 
 This is how it's going to work:
 
@@ -1030,10 +1030,10 @@ var foodPositions = [[30, 20], [400, 90], [60, 317], [300, 268]];
 
 ### Generalizing (abstracting) the `drawUserCell`
 
-We now want to "generalize" (more accurately *abastract*) the `drawScreen`
+We now want to "generalize" (more accurately *abstract*) the `drawScreen`
 function to draw any type of circle, not just the user's cell.
 
-Let's remeber how we draw a circle.
+Let's remember how we draw a circle.
 
 ```js
 context.arc(x, y, radius, startAngle, endAngle);
@@ -1062,14 +1062,14 @@ function drawCircle(circleX, circleY, radius) {
 }
 ```
 
-Finally change the invokation of the old `drawUserCell` inside of `drawScreen`
+Finally change the invocation of the old `drawUserCell` inside of `drawScreen`
 to invoke `drawCircle` instead:
 
 ```js
 drawCircle(x, y, 40);
 ```
 
-Lastly, below that invokation (which draws the user cell), we are going to draw
+Lastly, below that invocation (which draws the user cell), we are going to draw
 the food:
 
 ```js

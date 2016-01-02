@@ -1,6 +1,7 @@
 # Twilio Signup Instructions
 
-By the end of this tutorial, you will have a Twilio Account SID and Auth Token.
+By the end of this tutorial, you will have a Twilio account SID and
+authentication token.
 
 [Twilio](https://twilio.com) is the service that lets you easily send and
 receive text messages and phone calls minimal code. It's used heavily in one of
@@ -33,16 +34,16 @@ Twilio will send you a text message with a numeric verification code:
 > ![](img/phone_screenshot.png)
 
 Take that verification code (my code was `688 771`) and enter it on the website.
-You might also have a captcha to fill out as well.
+You might also have a CAPTCHA to fill out as well.
 
 ## Setting Up The Phone Number
 
-The twilio-basic script used in our workshops will buy the phone number for you
-and will configure the phone number it buys. Do **NOT** buy your own phone
-number or else the twilio-basic library will not work.
+The `twilio-basic` script used in our workshops will buy the phone number for
+you and will configure the phone number it buys. Do **NOT** buy your own phone
+number or else the `twilio-basic` library will not work.
 
 If you're dead set on choosing your own phone number and want to buy your own
-phone number you'll have to manually set the sms callback URL yourself.
+phone number you'll have to manually set the SMS callback URL yourself.
 
 ### Set Up The Callback URL
 
@@ -58,7 +59,7 @@ To build the the URL for the phone number `+1-484-681-2377`,
 - Take those digits and append them to "https://dweet.io/dweet/for/"
   - `https://dweet.io/dweet/for/4846812377`
 
-For the phone number `+1-415-238-0812` the url would be
+For the phone number `+1-415-238-0812` the URL would be
 `https://dweet.io/dweet/for/4152380812`
 
 To set this as your callback URL, go to the Twilio [incoming phone numbers page]
@@ -167,11 +168,11 @@ Click on "Show API Credentials"
 
 > ![](img/show_api_credentials.gif)
 
-Write down your **ACCOUNT SID** and **AUTH TOKEN** somewhere that you can easily
-retrieve them. Make sure you remember which one is which.
+Write down your account SID and authentication token somewhere that you can
+easily retrieve them. Make sure you remember which one is which.
 
-In my case, my ACCOUNT SID is `AC6f0013735dcb2fa4db7e35baa5c7e344`
-and my AUTH TOKEN is `fb83ceb820510cf695cf1f45b157c12f`.
+In my case, my account SID is `AC6f0013735dcb2fa4db7e35baa5c7e344` and my
+authentication token is `fb83ceb820510cf695cf1f45b157c12f`.
 
 We have what we need!
 

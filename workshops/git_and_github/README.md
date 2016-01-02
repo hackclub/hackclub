@@ -14,10 +14,10 @@ Short link to this workshop: https://workshops.hackclub.io/git_and_github
         - [Branch](#branch)
         - [Master Branch](#master-branch)
     - [What is GitHub?](#what-is-github)
-    - [Git and GH-Pages w/ Provided Link](#git-and-gh-pages-w-provided-link)
+    - [Git and GitHub Pages w/ Provided Link](#git-and-github-pages-w-provided-link)
         - [Preparations](#preparations)
         - [Using Git and GitHub](#using-git-and-github)
-    - [Git and GH-Pages w/o provided link](#git-and-gh-pages-wo-provided-link)
+    - [Git and GitHub Pages w/o provided link](#git-and-github-pages-wo-provided-link)
     - [More Commands](#more-commands)
         - [Clone](#clone)
         - [Merge](#merge)
@@ -81,18 +81,18 @@ will take you through setting the workspace up.
     ![name new workshop](img/name_new_workshop.gif)
 
 3. Get rid of the unnecessary junk.
-  - On the left sidebar: Right click on README.md and hello-world.html.
+  - On the left sidebar: Right click on `README.md` and `hello-world.html`.
     - Select **"Delete"** and **Yes** to any warnings.
       - You won't need these for your project.
-  - Close the opened README.md as well.
+  - Close the opened `README.md` as well.
 
     ![close readme](img/close_readme.gif)
 
-4. Create an index.html file.
+4. Create an `index.html` file.
   - On the left sidebar: Right click and press **"New File"**.
-  - Name the file **index.html**.
+  - Name the file `index.html`.
   - Double-click and open it.
-5. Write your name in the index.html file.
+5. Write your name in the `index.html` file.
   - If you don't know how, you may use this pre-provided code:
 
   ```html
@@ -105,8 +105,8 @@ will take you through setting the workspace up.
   </html>
   ```
 
-6. Save the index.html file.
-  - Make sure the active file is the index.html file by either clicking on it
+6. Save the `index.html` file.
+  - Make sure the active file is the `index.html` file by either clicking on it
     on the sidebar or clicking anywhere in the code.
   - You may press Ctrl+S (Windows), Command+S (Mac) or go to File --> Save.
 
@@ -133,7 +133,7 @@ will take you through setting the workspace up.
 
 **Example: If We Used Git With Word Documents**
 
-- You are using Word and have a file named mystory.docx.
+- You are using Word and have a file named `mystory.docx`.
   - You write for 5 hours and save each hour.
     - Each time you save, this overwrites your copy.
 - With Git, it would instead create another version of the file in that point of
@@ -184,9 +184,9 @@ _Bob & John are working on one repo and the same files at the same time:_
 
 **Example: Branch Merging**
 
-- Bob is working on the main.css file for the tool bar.
-- John is also working on the main.css file, but for the header.
-- We don't want them overlapping each other's code!
+- Bob is working on the `main.css` file for the tool bar.
+- John is also working on the `main.css` file, but for the header.
+- We don't want them overlapping each others code!
   - Make changes to their own **branches** and then **merge** after to bring
     both of their changes together.
   - Git has tools that allows you merge changes even if they occupy the same
@@ -216,7 +216,7 @@ GitHub (https://github.com/) is an online **Git repository hosting service**.
 - Has its own tools that makes it easier and faster to collaborate with others
   (we'll go into that later!).
 
-## Git and GH-Pages w/ Provided Link
+## Git and GitHub Pages w/ Provided Link
 
 **GitHub Pages is a free service by GitHub** that allows you to host a website
 on their servers (https://pages.github.com/).
@@ -225,7 +225,7 @@ on their servers (https://pages.github.com/).
 
 ### Preparations
 
-1. You **need** to have at least one **file named "index.html"**.
+1. You **need** to have at least one **file named `index.html`**.
   - This is the conventional name of the main HTML file and GitHub Pages
     **won't host your files without one**
 2. You **provided** a **Git link** when you **made the workspace**:
@@ -233,8 +233,8 @@ on their servers (https://pages.github.com/).
   ![clone from git into Cloud9](img/clone_from_git_in_cloud9.png)
 
   Nah, not familiar? Follow the steps in
-  **[Git and GH-Pages w/ provided link](#git-and-gh-pages-w-provided-link) in
-  heading below**
+  **[Git and GitHub Pages w/ provided link](#git-and-github-pages-w-provided-link)
+  in heading below**
 
 ### Using Git and GitHub
 
@@ -249,7 +249,7 @@ on their servers (https://pages.github.com/).
 2. Type the command: `git add [file]` OR `git add .`.
   - Adds a file to be tracked by git.
     - E.g. `git add index.html`.
-  - My only file is "index.html".
+  - My only file is `index.html`.
     - In the case you have **more than one file**, the **period [.] means add
       every file** in the workspace to the tracked files.
       - E.g. `git add .`
@@ -287,34 +287,35 @@ on their servers (https://pages.github.com/).
 
 5. Type: `git branch [branch-name]`.
   - Creates a branch.
-  - We must name this [branch name] **gh-pages**.
-    - GitHub will only host files in a branch named gh-pages.
-  - **Example command: git branch gh-pages**.
+  - We must name this [branch name] `gh-pages`.
+    - GitHub will only host files in a branch named `gh-pages`.
+  - **Example command: `git branch gh-pages`**.
   - Must be named without spaces -- **replace a space with a dash (-)**.
   - If you create a branch with the wrong name, delete it using:.
     - `git branch -d [name of branch]`.
 6. Type: `git push gh-pages`.
-  - Push your branch, **gh-pages**, online to GitHub.
-  - Afterwards your website should be up at [yourusername].github.io/[reponame].
+  - Push your branch, `gh-pages`, online to GitHub.
+  - Afterwards your website should be up at
+    `https://[yourusername].github.io/[reponame]`.
   - It might take about 30 seconds to fully get online.
 
-    ![git push to gh-pages](img/git_push_gh-pages.gif)
+    ![git push to `gh-pages`](img/git_push_gh-pages.gif)
 
-7. Go online to [username].github.io/[reponame].
+7. Go online to `https://[username].github.io/[reponame]`.
   - Your website is now online! Enter the URL using your credentials and it
     should show up (wait 30 seconds or more if it doesn't).
-    - E.g. nguyenbrian.github.io/example2.
+    - E.g. `https://nguyenbrian.github.io/example2`.
   - Note: The repo name is different from the branch name.
     - **The URL has is case sensitive - ensure the repo name is exactly the
       same one you put into your URL.**
-  - **Example: jevinsidhu.github.io/Personal-Website**
+  - **Example: `https://jevinsidhu.github.io/Personal-Website`**
 8. Celebrate!
 
   Congrats, now you're a Git (6) God!
 
   ![Git (6) God](http://i.imgur.com/LWvdiqA.gif)
 
-## Git and GH-Pages w/o provided link
+## Git and GitHub Pages w/o provided link
 
 1. Open your terminal.
   - Depending on the workspace configuration you set, it might already be
@@ -329,7 +330,7 @@ on their servers (https://pages.github.com/).
   - The .git file stores all the location data for your workspace.
   - This allows you to use git inside your folder.
 
-  ![git init](img/git_init.gif)
+  ![`git init`](img/git_init.gif)
 
 2. Type: `git remote add [remote-name] [link to repo]`.
   - Your changes need to connect your local folder to a remote one on GitHub.
@@ -361,18 +362,17 @@ on their servers (https://pages.github.com/).
     - **Don't include the square brackets** when you type, this is custom text
       you are inserting.
     - Name it something clear.
-      - i.e. github
+      - i.e. `github`
     - **[link to repo]** is where you paste the link from earlier.
       - Again, don't include the square brackets.
-    - **Example command**: `git remote add github
-      https://github.com/nguyenbrian/example.git`.
+    - **Example command**: `git remote add github https://github.com/nguyenbrian/example.git`.
 
     ![git remote add](img/git_remote_add.gif)
 
 3. Type: `git add [filename.extension]` OR `git add .`.
   - Adds a file to be tracked by git.
     - E.g. `git add index.html`.
-  - My only file is "index.html".
+  - My only file is `index.html`.
     - In the case you have **more than one**, the **period [.] means add every
       file** in the workspace to the tracked files.
       - E.g. `git add .`.
@@ -410,27 +410,28 @@ on their servers (https://pages.github.com/).
 
 5. Type: `git branch [branch-name]`.
   - Creates a branch.
-  - We must name this [branch name] **gh-pages**.
-    - GitHub will only host files in a branch named gh-pages.
-  - **Example command: git branch gh-pages**.
+  - We must name this [branch name] `gh-pages`.
+    - GitHub will only host files in a branch named `gh-pages`.
+  - **Example command: `git branch gh-pages`**.
   - Must be named without spaces -- **replace a space with a dash (-)**.
   - If you create a branch with the wrong name, delete it using:.
     - `git branch -d [name of branch]`
 6. Type: `git push gh-pages`.
-  - Push your branch, **gh-pages**, online to GitHub.
-  - Afterwards your website should be up at [yourusername].github.io/[reponame].
+  - Push your branch, `gh-pages`, online to GitHub.
+  - Afterwards your website should be up at
+    `[yourusername].github.io/[reponame]`.
   - It might take about 30 seconds to fully get online.
 
     ![git push to gh-pages](img/git_push_gh-pages.gif)
 
-7. Go online to [username].github.io/[reponame].
+7. Go online to `https://[username].github.io/[reponame]`.
   - Your website is now online! Enter the URL using your credentials and it
     should show up (wait 30 seconds or more if it doesn't).
-    - E.g. nguyenbrian.github.io/example2
+    - E.g. https://nguyenbrian.github.io/example2
   - Note: The repo name is different from the branch name.
     - **The URL has is case sensitive -- ensure the repo name is exactly the
       same one you put into your URL**.
-  - **Example: jevinsidhu.github.io/Personal-Website**.
+  - **Example: https://jevinsidhu.github.io/Personal-Website**.
 8. Celebrate!
 
   You successfully pushed your site online!
@@ -448,10 +449,10 @@ the repo onto a new computer.
 
 ![git clone](img/git_clone.png)
 
-You'll find the **[repo-url]** when you click a into a repo on GitHub and look
+You'll find the **`[repo-url]`** when you click a into a repo on GitHub and look
 for this:
 
-![clone url](img/clone_url.png)
+![clone URL](img/clone_url.png)
 
 ### Merge
 

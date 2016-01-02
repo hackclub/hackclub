@@ -2,7 +2,7 @@
 
 In Australia we don't have the "Club Culture" that exists within America. For
 us, attending a club is the exception, not the rule. Thus, it has taken a bit
-more work than orginally anticipated to get our club set up.
+more work than originally anticipated to get our club set up.
 
 ## The Proposal
 

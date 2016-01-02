@@ -6,7 +6,7 @@
    to continue to the next section
 3. If the above image does **_not_** load, for the rest of this tutorial,
    anywhere it tells you to type `http://i.imgur.com/mOkHDqN.png`
-   type this url instead:
+   type this URL instead:
 
    https://cdn.rawgit.com/hackclub/hackclub/d44ce82f4bff5d9a083b5ee18d0aae6f4acf2bed/workshops/dodge/img/cube.png
 

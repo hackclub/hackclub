@@ -1,11 +1,11 @@
 # Seventh Meeting
 
-5 Mins- Club Picture
+5 Minutes - Club Picture
 
-10 Mins- Club Announcements
+10 Minutes - Club Announcements
 
-40 Mins- Soccer(bit.ly/soccerworkshop)
+40 Minutes - Soccer(bit.ly/soccerworkshop)
          and
          Dodge(bit.ly/dodgeworkshop)
 
-5 Mins- Cleanup
+5 Minutes - Cleanup

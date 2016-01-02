@@ -9,15 +9,16 @@ Short link to this workshop: https://workshops.hackclub.io/cringe_101
 ### What?
 
 **Cringe 101** will give you **the tools** to create the most cringiest website
-ever. We want **you** to make something totally different from anything we’ve
+ever. We want **you** to make something totally different from anything we've
 seen before.
 
-Surprise me, your friends, maybe your mom idk. Just try not to kill anyone.
+Surprise me, your friends, maybe your mom, I don't know. Just try not to kill
+anyone.
 
 **Cringe 101** should be done after having some experience with making some nice
 looking things in HTML + CSS.
 
-But we can’t force you — I’m kinda scared of you to be honest. So, this will
+But we can't force you — I'm kinda scared of you to be honest. So, this will
 workshop will be self-enclosed (kinda, we still urge you to go through the
 workshop below first).
 
@@ -41,7 +42,7 @@ yo), here are some of my favorites.
 
 ### Set Up Your Document:
 
-This isn’t 100% necessary for the code to run (it will still totally do so), but
+This isn't 100% necessary for the code to run (it will still totally do so), but
 it tells the webpage some key facts that make it run without any hitches.
 
 ```html
@@ -61,9 +62,9 @@ it tells the webpage some key facts that make it run without any hitches.
   - `</html>` → Called the closing tag.
 - The difference is the forward slash before the name ( / ).
 - Almost all HTML tags have both an opening and closing tag.
-  - Ones that don’t we will discuss.
+  - Ones that don't we will discuss.
 - This organizes the website.
-  - We don’t want our `<head>` section in our body section, so we close that
+  - We don't want our `<head>` section in our body section, so we close that
     before opening our `<body>` tag.
 - `<!DOCTYPE html>` Placed at the top of your document.
   - It is an instruction to the web browser about what version of HTML the page
@@ -73,7 +74,7 @@ it tells the webpage some key facts that make it run without any hitches.
 - `<html>` Encloses the entirety of the rest of the document.
   - All of your following code should go inside here.
 - It tells the browser that this everything inside of this tag is HTML code.
-- `<head>` Encloses the code that you don’t want to show up on the page.
+- `<head>` Encloses the code that you don't want to show up on the page.
   - Includes linking to the CSS file (`<link>`).
 - HTML and CSS are dumb. They make no association unless told to do so.
   `<link href="main.css rel="stylesheet">` is linking the CSS file to the HTML.
@@ -112,22 +113,22 @@ http://imgur.com/ is a website where you can upload and then get a link to the
 image!
 
 - HTML is used for content.
-  - Like the skeleton (sp00ky) of a body.
+  - Like the skeleton (spooky) of a body.
 - CSS is used to change the way things look and feel.
-  - Like the colour, width, height of your face/skin.
+  - Like the color, width, height of your face/skin.
 
-Let’s break CSS down into an English sentence:
+Let's break CSS down into an English sentence:
 
-- English sentenced code is called pseudo-code → Code that wouldn’t run on the
-  computer, but we’re making sense of it.
+- English sentenced code is called pseudo-code → Code that wouldn't run on the
+  computer, but we're making sense of it.
 
-Here’s the CSS:
+Here's the CSS:
 
 ![](img/img.png)
 
 ![](img/img_key.png)
 
-For every **img tag** on the web page
+For every **`img` tag** on the web page
 
 ![](img/img_bracket.png)
 
@@ -158,6 +159,7 @@ Access this in CSS file by using a dot before your class-name and then the
 normal syntax.
 
 Here I am setting the back to be a Kanye GIF. Background is another property and
+<<<<<<< HEAD
 the url is value.
 
 ```css
@@ -242,8 +244,8 @@ on your site.
 5. The numbers range from 100 to 700 in hundreds for a total of 7 a. Some fonts
    only have a few weights, others have all 7.
 6. Go to the number 3 area where it says "Add this code to your website".
-7. You’ll notice it looks exactly like a CSS file -- that’s because it is!
-8. Since it’s a CSS file, you know what that means! Copy the code & paste in
+7. You'll notice it looks exactly like a CSS file -- that's because it is!
+8. Since it's a CSS file, you know what that means! Copy the code & paste in
    your head.
 
 ```html
@@ -280,7 +282,7 @@ more!
 
 We worked with pseudo - classes in the 9 doors workshop.
 
-You can revisit that workshop for more extensive overview of them, but here’s a
+You can revisit that workshop for more extensive overview of them, but here's a
 quick recap.
 
 A **pseudo-class** is an **exception to a set of rules you created in CSS**.
@@ -297,10 +299,10 @@ h1:hover {
 The `h1` is the tag from the HTML we are working with. The `:hover` is the
 pseudo - class or exception you have added. In this case by adding `:hover`
 you have created an exception to the old color the `h1` tag was in and have
-stated that whenever the mouse hovers the `h1` text, it’s color will be red
+stated that whenever the mouse hovers the `h1` text, it's color will be red
 instead.
 
-An example of `:hover` in action can be seen on Udit’s site when you go over the
+An example of `:hover` in action can be seen on Udit's site when you go over the
 words Twitter, Instagram, Medium and Cipher — http://uditdesai.github.io/me
 
 Hopefully you found that example to be really pretty and an effective use of
@@ -316,9 +318,9 @@ All you need to start annoying your friends, family, dog, etc is:
 
 1. A pair of `<audio>` tags.
    - `<audio> </audio>`.
-2. A properly configured `<source>` tag inside of those (it’s self closing!).
+2. A properly configured `<source>` tag inside of those (it's self closing!).
   - You can have multiple source files inside a pair of audio tags.
-    - It’ll just cycle through them like a playlist!
+    - It'll just cycle through them like a playlist!
 
 ```html
 <audio>
@@ -327,7 +329,7 @@ All you need to start annoying your friends, family, dog, etc is:
 ```
 
 **To upload an audio file to Cloud9**
-You’ll need to upload your sound file directly to C9 if you can’t find it hosted
+You'll need to upload your sound file directly to C9 if you can't find it hosted
 somewhere like this (https://www.anotherwebsite.com/sound.mp3)
 
 Just follow the either method below to upload your file to C9.
@@ -353,7 +355,7 @@ Just follow the either method below to upload your file to C9.
 
 Okay! Lets start by making a pair of `<audio>` tags.
 
-You have your tags in place but they’ll need a bit of configuring to get
+You have your tags in place but they'll need a bit of configuring to get
 working. Like all tags in HTML it can accept extra information called attributes
 to tweak them to your needs.
 
@@ -363,20 +365,20 @@ Attributes are basically like unique properties of a pair of tags:
 <div class="bestdiv"></div>
 ```
 
-Anything inside the first `<>` that isn’t the element name (div) is called an
+Anything inside the first `<>` that isn't the element name (div) is called an
 **attribute** (`id=""`, `class=""`, etc.)
 
 As such, `<audio>` has its own set of attributes that can be applied to them
 simply by typing them in between the `<>`
 
-Here’s a list of the unique attributes that `<audio>` tags can accept
+Here's a list of the unique attributes that `<audio>` tags can accept
 exclusively:
 
 <table>
   <tr>
     <td><code>autoplay</code></td>
     <td>
-      Tells the browser to automatically play the audio once it’s loaded.
+      Tells the browser to automatically play the audio once it's loaded.
     </td>
   </tr>
   <tr>
@@ -388,12 +390,12 @@ exclusively:
   </tr>
   <tr>
     <td><code>loop</code></td>
-    <td>Loops the audio again once it’s finished.</td>
+    <td>Loops the audio again once it's finished.</td>
   </tr>
   <tr>
     <td><code>muted</code></td>
     <td>
-      Mutes the audio output. (doesn’t stop the audio from playing, it just
+      Mutes the audio output. (doesn't stop the audio from playing, it just
       has no volume).
     </td>
   </tr>
@@ -406,7 +408,7 @@ exclusively:
       <li><code>metadata</code>: only load the metadata (extra info like
           author, etc that
           is stored within the file) when the page loads.</li>
-      <li><code>none</code>: don’t load the audio file when the page loads.</li>
+      <li><code>none</code>: don't load the audio file when the page loads.</li>
       </ul>
 
       e.g <code>preload="none"</code> would tell it to not load the file
@@ -416,8 +418,8 @@ exclusively:
   <tr>
     <td><code>src=""</code></td>
     <td>
-      Specifies where the audio file is. (This won’t work on every browser so
-      that’s why we use the <code>&lt;source&gt;</code> tags)
+      Specifies where the audio file is. (This won't work on every browser so
+      that's why we use the <code>&lt;source&gt;</code> tags)
     </td>
   </tr>
 </table>
@@ -434,9 +436,9 @@ The `<source>` tag simply serves the same purpose as putting a `src=""`
 attribute above, as in it directs the browser to where the audio file is.
 
 `<source>` can be used for all sorts of media files, (sound, video, etc) but for
-this tutorial we’ll just be using it for audio.
+this tutorial we'll just be using it for audio.
 
-This tag also has its own set of attributes like `<audio>` also it’s
+This tag also has its own set of attributes like `<audio>` also it's
 **self-closing**.
 
 <table>
@@ -468,7 +470,7 @@ This tag also has its own set of attributes like `<audio>` also it’s
 </table>
 
 **Example of `<audio>` and `<source>` tags properly configured to play a locally
-hosted darude.mp3 on loop.**
+hosted `darude.mp3` on loop.**
 
 ```html
 <audio loop autoplay>
@@ -480,19 +482,19 @@ Did you do this and still aren't satisfied with the level of cringe? Maybe
 instead of regular audio you need
 [ADVANCED AUDIO](https://www.youtube.com/watch?v=XjtkWZ1uCXo).
 
-## Advanced Audio using Javascript
+## Advanced Audio using JavaScript
 
-There's an infinite number of things you can do with Javascript but for this
-workshop we’ll show you a way to make JS "listen" for when your grandma does
+There's an infinite number of things you can do with JavaScript but for this
+workshop we'll show you a way to make JS "listen" for when your grandma does
 something specific on your website and trigger a sound to play.
 
 You do not need the HTML tags from the tutorial above to get this work. But you
 will need to know how to specify the location of an audio file. (`src=""`)
 
-To get this to work you’ll need:
+To get this to work you'll need:
 
-1. A JavaScript File linked in your HTML ```<script type="text/javascript"
-   src="script.js"></script>```
+1. A JavaScript File linked in your HTML `<script type="text/javascript"
+   src="script.js"></script>`
 2. At least one audio file hosted either remotely (another website) or locally
    inside of your workspace
 
@@ -507,7 +509,7 @@ with this section.
 
 To begin, let's open your JS file!
 
-The single line of code that we’ll need to tell Javascript to "listen" for an
+The single line of code that we'll need to tell JavaScript to "listen" for an
 event is:
 
 ```js
@@ -516,10 +518,10 @@ document.addEventListener("[event]", function() {
 });
 ```
 
-You may or may not understand what this chunk of code means so let’s break it
+You may or may not understand what this chunk of code means so let's break it
 down.
 
-`document` simply means the HTML document that the Javascript file was
+`document` simply means the HTML document that the JavaScript file was
 run/linked in (using your `<script>` tags).
 
 `.addEventListener` means to add a "listener" to trigger something when a
@@ -535,7 +537,7 @@ for, to do this we put the name of the event in the [event] section of the code.
 document.addEventListener("[event]", function() {});
 ```
 
-These events have certain names but thanks to our friends at `w3schools` they’ve
+These events have certain names but thanks to our friends at `w3schools` they've
 given us a nicely arranged list of all the HTML events.
 
 [You can find that here.](http://www.w3schools.com/tags/ref_eventattributes.asp)
@@ -554,15 +556,15 @@ Would turn into:
 document.addEventListener("click", function() {});
 ```
 
-Now that we’ve told `Listener` what to listen for, we need to tell it to run
-code when it sees what it’s looking for.
+Now that we've told `Listener` what to listen for, we need to tell it to run
+code when it sees what it's looking for.
 
 To do that, we use `function() {}`
 
-`function() {}` is basically telling Javascript to run the lines of code inside
+`function() {}` is basically telling JavaScript to run the lines of code inside
 of `{}`
 
-With that known, how do we get Javascript to play audio?
+With that known, how do we get JavaScript to play audio?
 
 We create a variable with an audio path inside of the `{}` using:
 
@@ -573,8 +575,8 @@ var variablename = new Audio('[AUDIOPATH]');
 `variablename` can be simply anything you want it to be, try to keep it
   clear and concise though!
 
-**[AUDIOPATH]** is where your audio file is, it can either be a website link to
-  the file or the path on your workspace
+**`[AUDIOPATH]`** is where your audio file is, it can either be a website link
+  to the file or the path on your workspace
 
 The path on your workspace to the file is relative to the HTML file, so if your
 audio file is in the same folder as your HTML file it would just simply be `new
@@ -582,7 +584,7 @@ Audio("example.mp3")`
 
 Now for the final step, which is to finally play your audio!
 
-To tell Javascript to play the audio file stored in the variable all we need to
+To tell JavaScript to play the audio file stored in the variable all we need to
 write is:
 
 ```js
@@ -592,7 +594,7 @@ variablename.play();
 `variablename` would be the name you set previously when you wrote `var
 variablename`
 
-Don’t forget to close your curly brackets of `function() {}` and it should work!
+Don't forget to close your curly brackets of `function() {}` and it should work!
 
 ```js
 document.addEventListener("click", function() {
@@ -601,8 +603,8 @@ document.addEventListener("click", function() {
 }
 ```
 
-The example plays `definitelyin.mp3` everytime a left click is registered on the
-page.
+The example plays `definitelyin.mp3` every time a left click is registered on
+the page.
 
 ## `blink`
 
@@ -615,7 +617,7 @@ landmines, otherwise known as **proprietary tags**.
 The Netscape-proprietary `<blink>` tag makes text blink.
 
 Microsoft never implemented this tag in Internet Explorer. One might attribute
-this decision to Microsoft’s sensibility and good taste, but given
+this decision to Microsoft's sensibility and good taste, but given
 [their response to the `<blink>` tag](http://goer.org/Journal/2003/10/html_house_of_horror_things_that_go_blink_in_the_n.html#marquee),
 this explanation seems unlikely.
 
@@ -632,7 +634,7 @@ of the CSS declaration:
 
 ## `<marquee>` Tag
 
-Microsoft’s `<marquee>` tag scrolls a selection of markup across the screen.
+Microsoft's `<marquee>` tag scrolls a selection of markup across the screen.
 
 The `<marquee>` tag creates a 100% wide div (box) with text sliding across the
 screen.

@@ -21,10 +21,10 @@ over at a later date.
 
 ## Diversity
 
-One of the thing I noticed was the under represtentation of literally every
+One of the thing I noticed was the under representation of literally every
 possible minority. I'm going to start by getting a few of girls who were 'just
 observing' interested, it is probably better to do this personally than get one
-of my coleads to act as a middleman.
+of my co-leads to act as a middleman.
 
 ## Conclusion
 

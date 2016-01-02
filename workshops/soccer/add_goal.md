@@ -96,7 +96,7 @@ We can write
 ball.remove();
 ```
 
-in the console. When we press entier, it will remove the ball.
+in the console. When we press enter, it will remove the ball.
 
 - [ ] _Try doing this yourself in your own working bin_
 

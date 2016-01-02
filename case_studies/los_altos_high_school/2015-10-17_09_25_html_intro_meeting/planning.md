@@ -12,7 +12,7 @@
 - Our workshop wasn't the most clear
 - Some members seemed confused
 - Club leader presenting wasn't loud enough and went really fast, and didn't
-  explain the concepts very throughly
+  explain the concepts very thoroughly
 - Not enough time to go over everything - we had around 15 minutes to actually
   let them work, due to all the other stuff we had to mention
 

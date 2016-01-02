@@ -5,7 +5,7 @@ the first few steps without being generally confused.
 
 ## Issues
 
-Collecting feedback didn’t really occur as meeting ended earlier than planned.
+Collecting feedback didn't really occur as meeting ended earlier than planned.
 
 ## Tips For Other Organizers
 
