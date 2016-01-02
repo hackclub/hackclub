@@ -158,10 +158,13 @@ Access this in CSS file by using a dot before your class-name and then the
 normal syntax.
 
 Here I am setting the back to be a Kanye GIF. Background is another property and
-the url is value
-    .who {
-        background:url("https://media3.giphy.com/media/9RTiWDExHW6aY/200.gif ");
-    }
+the url is value.
+
+```css
+.who {
+    background:url("https://media3.giphy.com/media/9RTiWDExHW6aY/200.gif ");
+}
+```
 
 https://preview.c9users.io/jevinsidhu/cringe-101/index.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io
 
@@ -291,7 +294,7 @@ h1:hover {
 }
 ```
 
-The `h1` is the tag from the html we are working with. The `:hover` is the
+The `h1` is the tag from the HTML we are working with. The `:hover` is the
 pseudo - class or exception you have added. In this case by adding `:hover`
 you have created an exception to the old color the `h1` tag was in and have
 stated that whenever the mouse hovers the `h1` text, it’s color will be red
@@ -301,8 +304,8 @@ An example of `:hover` in action can be seen on Udit’s site when you go over t
 words Twitter, Instagram, Medium and Cipher — http://uditdesai.github.io/me
 
 Hopefully you found that example to be really pretty and an effective use of
-pseudo - classes, however this css trick can also be used to make websites
-really cringy by making every peice of text change colors when hovering over
+pseudo - classes, however this CSS trick can also be used to make websites
+really cringy by making every piece of text change colors when hovering over
 them.
 
 ## `<audio>` Tag
@@ -488,8 +491,8 @@ will need to know how to specify the location of an audio file. (`src=""`)
 
 To get this to work you’ll need:
 
-1. A Javascript File linked in your HTML `<script type="text/javascript"
-   src="script.js"></script>`
+1. A JavaScript File linked in your HTML ```<script type="text/javascript"
+   src="script.js"></script>```
 2. At least one audio file hosted either remotely (another website) or locally
    inside of your workspace
 
@@ -567,7 +570,7 @@ We create a variable with an audio path inside of the `{}` using:
 var variablename = new Audio('[AUDIOPATH]');
 ```
 
-**variablename** can be simply anything you want it to be, try to keep it
+`variablename` can be simply anything you want it to be, try to keep it
   clear and concise though!
 
 **[AUDIOPATH]** is where your audio file is, it can either be a website link to
@@ -586,7 +589,7 @@ write is:
 variablename.play();
 ```
 
-**variablename** would be the name you set previously when you wrote `var
+`variablename` would be the name you set previously when you wrote `var
 variablename`
 
 Don’t forget to close your curly brackets of `function() {}` and it should work!
@@ -648,5 +651,4 @@ It is a tag, so it encloses other tags:
 
 ## If you combine blink and marquee: ultimate cringe.
 
-
-![No God Please Nooooooo](https://d2mxuefqeaa7sj.cloudfront.net/s_1FACA745E7A5A03FBF7BCC2AF4856031BAC0AF7B12042E3DC78BDA872B3C6FBC_1448603976992_giphy+%281%29.gif)
+![No God Please No!](https://d2mxuefqeaa7sj.cloudfront.net/s_1FACA745E7A5A03FBF7BCC2AF4856031BAC0AF7B12042E3DC78BDA872B3C6FBC_1448603976992_giphy+%281%29.gif)
