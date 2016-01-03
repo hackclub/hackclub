@@ -21,9 +21,9 @@ Meeting on Friday 2:30-3:15
 
 - MIT C++ Course
 - Euler
-- Game (AdVenture Capital, Grand Strategy, Half Life, Until Dawn, AI{Calc machine
-  learning}, Arcade Game, Flappy Ninja)
-- Website (Arcade Games, hackEDU webste)
+- Game (AdVenture Capital, Grand Strategy, Half Life, Until Dawn, AI{Calculus
+  machine learning}, Arcade Game, Flappy Ninja)
+- Website (Arcade Games, hackEDU website)
 - Steam Social Network Market
 
 ## To Do's

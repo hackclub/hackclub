@@ -18,4 +18,4 @@
    3. Ask if anyone has other ideas?
 5. Poll how long people would be willing to stay after school?
 6. Collect contact information via Google Form
-7. Competitive programming PPT
+7. Competitive programming PowerPoint

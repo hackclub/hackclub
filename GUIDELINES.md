@@ -82,7 +82,7 @@ as most corporate software development shops.
 - Does **not** start with a capital letter
 - Ends with a full stop
 
-> Added iron man gif
+> Added Iron Man GIF
 
 - Does **not** use the imperative mood
 

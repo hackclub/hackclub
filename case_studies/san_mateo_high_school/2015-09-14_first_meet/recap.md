@@ -25,9 +25,9 @@
 
 - VGA Adapter:
   - We ended up transferring the presentation to the teacher's computer and
-  present from there.
+    present from there.
   - The internet had gone down the second I started uploading, we needed to use
-  a usb stick.
+    a USB stick.
   - Presentation Delayed 1 min.
 - Drone
   - We just held it and demonstrated the LEDs, we talked about what it can do.
@@ -36,7 +36,7 @@
   - We told them to stand in the back or sit down on the floor.
 - Extra time
   - We filled the extra time talking about possible projects in the future and
-  about hackathons.
+    about hackathons.
 
 ## Tips
 

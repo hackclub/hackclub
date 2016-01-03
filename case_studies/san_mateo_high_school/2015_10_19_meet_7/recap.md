@@ -5,7 +5,7 @@
 - Started
   [presentation](https://github.com/SMHS-Programming/club/blob/ef47df64162248880e5083d2b6c83c20912fb31e/meetings/10_19_Meeting_VII.pdf)
 - Talked about Project week, talked very briefly about Demo Week.
-- Talked about hackingEDU.
+- Talked about HackingEDU.
 - Hackers started programming.
 
 ## Problems we faced

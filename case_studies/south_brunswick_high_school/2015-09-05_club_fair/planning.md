@@ -13,7 +13,7 @@
   members how to create a simple landing page on their laptops.
 - Competitions Group: Since at the last meeting we discussed potential ideas for
   entering competitions like the Samsung Solve For Tomorrow, we want the
-  students to get itno smaller groups and discuss their ideas to create rough
+  students to get into smaller groups and discuss their ideas to create rough
   project proposals.
 
 ## Problems We Might Face

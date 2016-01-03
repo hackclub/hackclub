@@ -20,7 +20,7 @@ like:
 - The club fair
 - The first club meeting
 - Club elections
-- Pre-club planning meetings
+- Club planning meetings
 - Any field trip that a club might organize
 
 We break case studies into two parts:

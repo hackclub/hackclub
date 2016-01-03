@@ -107,9 +107,9 @@ player = createSprite(150, 100, 50, 50);
 
 ## Steps
 
-| **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
-| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |
+| **[![](img/1_mini.png) <br> 1. Initial Setup](initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite](add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**   | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                   | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |
 
 ## Appendix
 
@@ -121,7 +121,7 @@ This section is still under construction! Check back in later!
 
 This section is still under construction! Check back in later!
 
-#### createSprite Function
+#### `createSprite` Function
 
 This section is still under construction! Check back in later!
 

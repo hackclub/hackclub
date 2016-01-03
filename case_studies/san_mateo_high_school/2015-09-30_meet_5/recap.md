@@ -18,7 +18,7 @@ for(var i = 0; i < 100; i++) {
 
 - A hacker asked about why we wouldn't use JavaScript as opposed to full CSS.
   - We had a hard time explaining with no real research on it.
-  - It might have confused some other hackers not very familiar with javascript
+  - It might have confused some other hackers not very familiar with JavaScript
     or browser compatibility.
 
 ## How we managed problems and outcomes

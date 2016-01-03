@@ -22,7 +22,7 @@ going to be a part of for the year.
   - *Where did you learn to code and what made you like it?*
 - **Workshop (*35 min*):** Hackers continued to work on the
   [Portfolio workshop](https://github.com/hackedu/hack-camp/tree/master/cohort_4/playbook/workshops/portfolio).
-  Most had moved on from setting up their developer environments (c9 and Github)
+  Most had moved on from setting up their developer environments (c9 and GitHub)
   , but a few were finishing that up before moving on. Leaders assisted new
   arrivals on starting the workshop from the beginning. Overall, the hackers
   worked rather independently, without much interruption from the facilitators,
@@ -30,13 +30,12 @@ going to be a part of for the year.
 - **Clean-Up/Outside of Club Activities (*5 min*):** Hackers put away their
   Chromebooks and joined the rest of STEAM club to re-cap what everybody did
   today. Some of the hackers stayed a few extra minutes and exchanged League of
-  Legends summoner names, as well as coordinated a game for that evening
-  (squee!).
+  Legends summoner names, as well as coordinated a game for that evening.
 
 ## Problems
 
 - **Dying Chromebooks:** Due to the fact that the Chromebooks are being used
-  right after having been used all day means that they’re prone to dying rather
+  right after having been used all day means that they're prone to dying rather
   quickly during a club meeting. Actionables on this are to both acquire extra
   sets of chargers and to attempt to reserve certain Chromebooks to be charged
   30 minutes before the club meets.

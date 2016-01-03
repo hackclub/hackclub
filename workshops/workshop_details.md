@@ -92,7 +92,7 @@ internationally.
 
 #### What Is Covered
 
-- How to use [Twilio](https://twilio.com) to send and recieve text messages and
+- How to use [Twilio](https://twilio.com) to send and receive text messages and
 to make phone calls
 - How to play music
 - How to detect if a button has been pressed
@@ -117,7 +117,7 @@ code.
 ##### Understanding The API
 
 To add Twilio to your project, add the following script tag inside your
-HTML file (after filling in your sid and token, of course).
+HTML file (after filling in your `sid` and `token`, of course).
 
 ```html
 <script src="//bit.ly/twilio-basic-v7"

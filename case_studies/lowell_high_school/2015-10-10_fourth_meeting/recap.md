@@ -14,7 +14,7 @@ should simply be natural freshman shyness and should wear off over time.
 The second being the lack of understanding from some of our less-experienced
 members. From what I've seen and from what some have even straight-forwardly
 told me is that they don't enjoy the lesson because all they did was copy and
-paste code into JSBin. One freshman persisted to tell me that he was starting to
+paste code into JS Bin. One freshman persisted to tell me that he was starting to
 lose his ability to find the fun in this.
 
 Getting the freshman to open up should become easier as we become closer to them

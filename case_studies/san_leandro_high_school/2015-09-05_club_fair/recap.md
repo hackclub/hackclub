@@ -21,7 +21,7 @@
 ## What Didn't Go Well
 
   - Some people misunderstood the type hacking we did; they asked if we could
-    teach them how to DDOS.
+    teach them how to DDoS.
   - There was confusion as to when and where the meetings were.
 
 ## Tips for Other Organizers

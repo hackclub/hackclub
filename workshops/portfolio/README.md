@@ -28,7 +28,8 @@ We will be building this website on an online code editor called JS Bin.
 
 ## Creating a GitHub account
 
-Before we go to JS Bin, we want a GitHub account that we can use to signin with.
+Before we go to JS Bin, we want a GitHub account that we can use to sign in
+with.
 
 GitHub is a website used by many professional coders to collaborate on code.
 Think Dropbox, but for code.
@@ -37,11 +38,9 @@ GitHub also has a login feature similar to how Facebook has "Facebook login".
 Let's make a GitHub account so we can login to JS Bin and many websites in the
 programming ecosystem!
 
-### 1) In a new window, open [github.com][github]
+### 1) In a new window, open https://github.com
 
 > ![](img/c9_v2_setup_1.png)
-
-[github]: https://github.com
 
 ### 2) Create an account with a valid email
 
@@ -61,12 +60,10 @@ And now we're done creating a GitHub account!
 
 Now that we have a GitHub account:
 
-1. Open [jsbin.com][jsbin] in a new window
+1. Open https://jsbin.com in a new window
 2. Click "Login or Register"
 
 > ![](img/login_or_register.gif)
-
-[jsbin]: https://jsbin.com
 
 ## 4) Login with GitHub
 
@@ -127,8 +124,8 @@ Let's understand why:
 
 ## HTML Tags
 
-The code that we are writing on the left is called "HTML". (Feel free to [Google
-what HTML stands for and learn more about it][google_html])
+The code that we are writing on the left is called "HTML". (Feel free to
+[Google what HTML stands for and learn more about it][google_html])
 
 Any adding blank lines or more than one space between your words in HTML does
 will not change what your website looks like.
@@ -136,7 +133,7 @@ will not change what your website looks like.
 However we can change the style of some things on the page by adding **HTML
 tags**.
 
-[google_html]: https://www.google.com/search?q=html
+[Googling for HTML]: https://www.google.com/search?q=html
 
 ## The Heading HTML Tag
 
@@ -153,7 +150,7 @@ Let's try it:
 
 > ![](img/heading.gif)
 
-And voilà! This is our result:
+And voila! This is our result:
 
 > ![](img/heading_result.png)
 
@@ -506,11 +503,11 @@ both inside of the `body` tag.
 The website already looks complete but there are some things that are missing.
 
 As an analogy, if I said the sentence "Me want apple.", you would know what I
-meant but the sentence is gramatically wrong.
+meant but the sentence is grammatically incorrect.
 
-In the same way, Chrome understands the code that we have written even though
-it is "gramatically" wrong. To make it gramatically correct we need to use the
-tags that JS Bin initially gave us.
+In the same way, Chrome understands the code that we have written even though it
+is "grammatically" incorrect. To fix it, we need to use the tags that JS Bin
+initially gave us.
 
 Let's open up a new tab and open JS Bin.
 

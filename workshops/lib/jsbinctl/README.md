@@ -61,7 +61,7 @@ examples/*` and it'll take care of that for you.
 specify options like `?output` (if you only want the JS Bin to show the rendered
 output) and `?html,css` (if you only want the HTML and CSS of the JS Bin to be
 shown). It also will replace all reference links that _start_ with the JS Bin
-example directory (so you can have mutliple reference links for the same
+example directory (so you can have multiple reference links for the same
 directory). The following examples are all valid:
 
 ```md

@@ -3,14 +3,14 @@
 ![CHE CS at work](http://i.imgur.com/249LPMm.jpg?1)
 
 > *Dear reader*, these recaps were initially requested by
-> [hackedu](https://hackclub.io/) for other club organizers to read. However if
+> [hackEDU](https://hackclub.io/) for other club organizers to read. However if
 > you're a club member you can use them to find out what happened at a meeting
 > you couldn't attend, if you just want to review some content, or for any
 > reason you want!
 
 Another successful meeting for the Cherry Hill Computer Science Club! Had around
 30 people attend, with 3 or 4 new members, even though there were no "late
-busses" (second round of busses at 4pm). Our meeting last 1.5 hours.
+buses" (second round of buses at 4pm). Our meeting last 1.5 hours.
 
 The club officers met during the weekend to talk about the club and create
 content. We made:
@@ -19,7 +19,7 @@ content. We made:
   - Feel free to make a copy and customize!
 
 - [Intro to Cloud9 workshop](https://github.com/CHE-CS/hackedu/tree/master/playbook/workshops/cloud9)
-  - Also introduces how to use import CSS and Javascript files into HTML
+  - Also introduces how to use import CSS and JavaScript files into HTML
   (`<link>` and `<script>` elements).
 
 - [Ajar.io Part 1 workshop](https://github.com/CHE-CS/hackedu/tree/master/playbook/workshops/ajar)
@@ -30,16 +30,16 @@ content. We made:
 
 ## CHE Hacks
 
-Intro'd our members (again) to a hackathon we're organizing at our city's public
-library. Feel free to register at http://chehacks.com.
+Introduced our members (again) to a hackathon we're organizing at our city's
+public library. Feel free to register at http://chehacks.com.
 
 ## Cloud9 Intro
 
 ![c9.io](img/c9.png)
 
-We decided it was time to transition away from JSBin because
+We decided it was time to transition away from JS Bin because
 
-1. It was being randomly blocked by Baraccuda Networks (our schools firewall).
+1. It was being randomly blocked by Barracuda Networks (our school's firewall).
 2. We think it's time to expand our member's understanding web development
    (setting up and linking the files yourself).
 
@@ -57,7 +57,7 @@ to the [list of CSS colors](http://www.w3schools.com/cssref/css_colors.asp).
 
 ![A jar!](img/jar.png)
 
-Ajar.io is a series of workshops (developed by @bogidon @Salamander1012 and
+Ajar.io is a series of workshops (developed by @bogidon, @Salamander1012, and
 @Jonwlee) to teach students how to make a clone of the online game
 [agar.io](http://agar.io).
 
@@ -81,17 +81,17 @@ If people finish early engage them with more content!
   [W3C's page on the `<canvas>` API](http://www.w3schools.com/html/html5_canvas.asp)
   (this like appears three times by the end of Part 1 of the workshop).
 
-- Explain the `context.arc()` function. The parameters are `x, y, radius,
-  startAngle, endAngle`. Focus on explaining the angles, which are in radians
-  (the `x`, `y` and `radius` are easy to understand). Explain that the `arc`
-  function forms a circle when the `endAngle` is 2π radians (360º). Let them
-  predict what would happen if the `endAngle` is set to π instead of 2π.
+- Explain the `context.arc()` function. The parameters are `x`, `y`, `radius`,
+  `startAngle`, and `endAngle`. Focus on explaining the angles, which are in
+  radians (the `x`, `y`, and `radius` are easy to understand). Explain that the
+  `arc` function forms a circle when the `endAngle` is 2π radians (360º). Let
+  them predict what would happen if the `endAngle` is set to π instead of 2π.
 
-- One club member wanted to draw a diamond. I walked her through googling `"how
-  to draw a diamond on canvas with javascript"`. It led us to
+- One club member wanted to draw a diamond. I walked her through googling `"How
+  to draw a diamond on canvas with JavaScript"`. It led us to
   [this tutorial](http://www.onlywebpro.com/2011/07/02/html5-canvas-for-absolute-beginners-part-2/).
   Careful with this particular tutorial because
-  1. the javascript lives in the html as opposed to a separate file like in the
+  1. the JavaScript lives in the HTML as opposed to a separate file like in the
      tutorial
   2. `context` is abbreviated to `ctx`
   3. there is a function called `drawShape()`

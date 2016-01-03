@@ -8,10 +8,10 @@
 - Setting up:
   - Poster
   - Drone
-  - Hackathon Flyer
-  - Programming Club Flyer
+  - Hackathon flyer
+  - Programming Club flyer
   - Computer Sign Up
-- Having a shoutout to Programming Club through the speakers.
+- Having a shout out to Programming Club through the speakers.
 - Talk to people around and get to sign up to hackathons and the club.
 - Fly the drone if not too windy.
 

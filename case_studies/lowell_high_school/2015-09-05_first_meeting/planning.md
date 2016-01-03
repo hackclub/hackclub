@@ -3,10 +3,10 @@
 ## Tentative Agenda
 
 1. Welcome, introduce ourselves, rock paper scissors tournament, break out the
-   food - 5 mins
-2. Short intro presentation, possible powerpoint?
+   food - 5 minutes
+2. Short intro presentation, possible PowerPoint?
   - https://docs.google.com/presentation/d/1t9k9QYx7PpkTw9O18oeqniBzg_NpvvGOSFGVL-9tRxI/pub?start=false&loop=false&delayms=10000&slide=id.p
-    (Slides 4-8) - 5 mins
+    (Slides 4-8) - 5 minutes
 3. Cool coding demonstration
   - https://github.com/hackedu/hackedu/tree/jon-remote-control/playbook/workshops/remote_control
   - http://jonl.org/10-points-for-gryffindor/wand.html

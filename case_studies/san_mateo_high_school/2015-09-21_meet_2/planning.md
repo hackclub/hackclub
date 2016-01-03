@@ -3,12 +3,12 @@
 ## Planning
 
 - Talk very briefly about hackEDU (was not mentioned before to not confuse with
-  hackingEDU) and hackingEDU hackathon.
+  HackingEDU) and HackingEDU hackathon.
 - Go through
   [workshop presentation](https://github.com/SMHS-Programming/club/blob/37ad74038d0eb22fa6810818d2b1f939d2d7360c/meetings/9_21_Meeting_II.pdf).
 - Have the hackers start the workshop.
-- 10 minutes before lunch ends, have everyone start creating github accounts and
-saving their JSBin files.
+- 10 minutes before lunch ends, have everyone start creating GitHub accounts and
+saving their JS Bin files.
 - Have everyone leave at least 2 minutes before lunch ends, make sure everything
  is clean.
 

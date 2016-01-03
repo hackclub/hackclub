@@ -65,4 +65,4 @@ merge is usually just a quick fix away!
 
 ## Celebrate!
 
-![img/dance.gif](img/dance.gif)
+![](img/dance.gif)
