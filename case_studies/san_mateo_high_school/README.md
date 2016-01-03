@@ -19,8 +19,8 @@ on workshops, project time and demos. We work on 5 week cycles:
 ## Plans for the future
 
 We plan to attend a lot of hackathons, for example HackingEDU, and we hope to
-be able to have field trips with girlsWhoCode club and organize hackathons with
-them.
+be able to have field trips with the Girls Who Code club and organize hackathons
+with them.
 
 ## Activities log
 
