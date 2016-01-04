@@ -26,7 +26,7 @@ it's out of a page of a Harry Potter book!
 
 [→ Want a hint?](gif_hint.md)
 
---
+-------------------------------------------------------------------------------
 
 **Change the font and background colors**
 
@@ -34,7 +34,7 @@ Try changing the color of both the text and the background color.
 
 - <a href="http://jsbin.com/gist/6a818fa5933d2483d1d5?html,css,output" target="_blank">Solution</a>
 
---
+-------------------------------------------------------------------------------
 
 **Embedding a YouTube Video**
 
@@ -42,7 +42,7 @@ You could put a YouTube video you like on your website.
 
 - <a href="http://jsbin.com/gist/f8db44d5bce8862bae30?html,css,output" target="_blank">Solution</a>
 
---
+-------------------------------------------------------------------------------
 
 **Embed a SoundCloud song**
 
@@ -50,7 +50,7 @@ You could embed your favorite SoundCloud songs on your website.
 
 - <a href="http://jsbin.com/gist/3b7a81411bffdc5b59b5?html,css,output" target="_blank">Solution</a>
 
---
+-------------------------------------------------------------------------------
 
 **Change the font**
 
@@ -58,7 +58,7 @@ Try changing the font to something else other than "arial"
 
 - <a href="https://jsbin.com/gist/ddb3f602250d5b8b3cdc?html,css,output" target="_blank">Solution</a>
 
---
+-------------------------------------------------------------------------------
 
 **Use a "Google Web Font"**
 
@@ -75,4 +75,3 @@ what "X" is. In this case, try using a "Google Web Font" on your website.
 - http://animanny.github.io/my_website/
 
 [![](img/bttn_back.png)](https://rawgit.com/jonleung/77f8662577df9c2ff04d/raw/2c8489d490de8e37e89e6fb5b9073f904b6377e0/index.html)
-

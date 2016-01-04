@@ -9,21 +9,21 @@ _Italisized_ schedule items are things that only facilitators do
 
 **Bolded** schedule items are things that both hackers and facilitators do<kbd></kbd>
 
-Time  | Activity
-------|-----------------------------------------
-11:00 | _Figure out who is doing what_
-12:00 | _Setup_
-12:45 | _Play Host & Facilitate Conversation_
-1:10  | _Hack Series Introduction & Icebreakers_
-1:20  | _Introduce Part I_
-1:25  | **Part I: Follow the step-by-step workshop**
-2:30  | **Pizza Time**
-3:00  | _Introduce Part II_
-3:05  | **Part II: Customize your website**
-3:40  | _Collect Demo Links in tlk.io_
-3:45  | **Demos!**
-3:55  | _Collect Feedback_
-4:00  | **Finish**
+|   Time | Activity                                     |
+| ------ | -------------------------------------------- |
+|  11:00 | _Figure out who is doing what_               |
+|  12:00 | _Setup_                                      |
+|  12:45 | _Play Host & Facilitate Conversation_        |
+|   1:10 | _Hack Series Introduction & Icebreakers_     |
+|   1:20 | _Introduce Part I_                           |
+|   1:25 | **Part I: Follow the step-by-step workshop** |
+|   2:30 | **Pizza Time**                               |
+|   3:00 | _Introduce Part II_                          |
+|   3:05 | **Part II: Customize your website**          |
+|   3:40 | _Collect Demo Links in tlk.io_               |
+|   3:45 | **Demos!**                                   |
+|   3:55 | _Collect Feedback_                           |
+|   4:00 | **Finish**                                   |
 
 ## 3 Key Points
 
@@ -128,8 +128,7 @@ Thank everyone for coming.
 
 # Feedback
 
-- Explain and **_HEAVILY EMPHSIZE** the importance of feedback because it helps
+- Explain and **_HEAVILY EMPAHSIZED_** the importance of feedback because it helps
   us improve.
 - Have hackers submit to this form for feedback
   http://tinyurl.com/hackseriesfeedback
-
