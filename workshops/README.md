@@ -3,6 +3,18 @@
 Welcome to our workshops library, where you'll find all the workshops offered by
 Hack Club. Choose a track to get started!
 
+Each workshop is around an hour long and walks you through the process of
+_building something™_ (like a website, app, or game). Our philosophy is that the
+best way to learn to code is to immediately get your feet wet and build real
+things (instead of starting out learning concepts).
+
+The best way to utilize these workshops is to choose a track and then set aside
+3-4 hours after each workshop to keep expanding on what you built (for example,
+adding multiplayer support to the [Soccer game](soccer/README.md)).
+
+If you have any questions or run into any trouble, just ask us on the Slack
+([click here](../SLACK.md) for instructions on joining the Slack) :smile:.
+
 ## Tracks
 
 **HTML + CSS + JS** _learn to make basic websites_
