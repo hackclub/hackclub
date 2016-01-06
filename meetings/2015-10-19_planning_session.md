@@ -58,7 +58,7 @@ _Attendees:_
 ### Misc
 
 - [x] YC application (includes video) (@zachlatta, hackedu/meta#184)
-- [x] Check in pairing a club leader w/ gemma (@MaxWofford, hackedu/hackedu#340)
+- [x] Check in pairing a club leader w/ Gemma (@MaxWofford, hackedu/hackedu#340)
 - [ ] ~~Plan meeting to talk about Slack and IRC and how we're going to use them
   (@zachlatta, hackedu/meta#214)~~ (do next week)
 

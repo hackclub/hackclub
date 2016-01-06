@@ -54,7 +54,7 @@ _Attendees_:
 - Launch Slack — if you have input, please share
   - also if you're in any good slacks, i'd love to learn from them
 - Build system for automating community metrics
-- ~~Try pairing a club leader w/ gemma~~
+- ~~Try pairing a club leader w/ Gemma~~
 - Add meetings from this and last week to https://clubs.hackedu.us
 
 ### Jonathan
