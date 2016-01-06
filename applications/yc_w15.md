@@ -243,7 +243,7 @@ http://zachlatta.com
 
 https://github.com/zachlatta
 
-**Linkedin URL**
+**LinkedIn URL**
 
 Don't have one.
 

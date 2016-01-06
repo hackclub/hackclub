@@ -301,7 +301,7 @@ https://zachlatta.com
 
 https://github.com/zachlatta
 
-**Linkedin URL**
+**LinkedIn URL**
 
 https://www.linkedin.com/in/zachlatta
 
@@ -407,7 +407,7 @@ http://jonl.org/
 
 https://github.com/jonleung
 
-**Linkedin URL**
+**LinkedIn URL**
 
 https://www.linkedin.com/in/jonathanjleung
 
