@@ -53,13 +53,13 @@ workshops like [Portfolio](portfolio) and [Dodge](dodge).
 1. Make sure that you've followed the directions in
    [`CONTRIBUTING.md`](../CONTRIBUTING.md) and cloned the `hackclub` repo.
 2. Create a directory with the name of the workshop in the
-   [`/workshops`](../workshops) directory. The name of your workshop should only
+   [`workshops/`](../workshops) directory. The name of your workshop should only
    be one or two words like `soccer` or `remote_control`.
 3. Inside the directory you just created, create a `README.md` file.
    You will be writing your workshop in this Markdown file. Feel free to create
    other Markdown files that you link to from your newly `README.md` (see
   [Dodge](dodge) as an example of a workshop that does this.
-4. In [`/workshops/README.md`](README.md), add your workshop to the
+4. In [`workshops/README.md`](README.md), add your workshop to the
    [Community Workshops](README.md#community-workshops) table.
 
 **Step 2: Create the workshop with the following requirements:**
