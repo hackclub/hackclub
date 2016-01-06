@@ -21,7 +21,7 @@ _Attendees_:
   hackedu/hackedu#171)
   - _Update:_ Half created
 - [ ] _In Progress_: 2nd workshop created (@jonleung, hackedu/hackedu#171)
-  - _Update:_ Not finished, need to fix JSBin links with new code
+  - _Update:_ Not finished, need to fix JS Bin links with new code
 - [ ] _In Progress_: 3rd workshop created (@jonleung, hackedu/hackedu#271)
   - _Update:_ Code written, workshop not written
 - [X] Set up Labs directors check-ins before/after club meetings (@jonleung,

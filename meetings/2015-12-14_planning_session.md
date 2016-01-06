@@ -4,7 +4,7 @@
 
 ### Curriculum
 
-- [x] Fix JSBin build system (hackclub/hackclub#521, @zachlatta)
+- [x] Fix JS Bin build system (hackclub/hackclub#521, @zachlatta)
 - [ ] Copy Project Cipher's workshops to `hackclub/hackclub` (hackclub/meta#356,
   @jonleung)
   - _Update: wasn't done_

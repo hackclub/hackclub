@@ -58,7 +58,7 @@
 - hackclub.com/hackclub.org/hack.club (hackclub/hackclub#347, @zachlatta)
 - Organize another hack night (hackclub/meta#339, @MaxWofford)
 - Make assets for the iOS track (hackclub/meta#340, @MaxWofford)
-- Fix JSBin build system (hackclub/hackclub#521, @zachlatta)
+- Fix JS Bin build system (hackclub/hackclub#521, @zachlatta)
 - Rewrite CONTRIBUTING.md (hackclub/hackclub#512, @zachlatta)
 - Respond to all applicants (hackclub/meta#311, @zachlatta)
 - Deploy `slack-stats-collector` (hackclub/meta#348, @zachlatta)
