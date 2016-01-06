@@ -93,7 +93,7 @@ What are the challenges a club runs into before the first meeting
 
 Ask about them running meetings
 
-Andrea’s last day with us tomorrow
+Andrea's last day with us tomorrow
 
 - hack t-shirt design
 

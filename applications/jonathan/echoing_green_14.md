@@ -258,9 +258,9 @@ programming clubs.
 **How is your approach boldly innovative compared to the status quo? (1000
 characters)**
 
-Other similar organizations, such as TEALS, ScriptEd, and Google’s CS First,
+Other similar organizations, such as TEALS, ScriptEd, and Google's CS First,
 generally interface with students through teachers or administration. This is a
-problem because teachers tend to be non-technical and don’t understand maker
+problem because teachers tend to be non-technical and don't understand maker
 culture. This leads to a lot of red tape, bureaucracy, and mandated fixed
 curriculum, which ultimately disconnects with students and becomes ineffective.
 
@@ -283,7 +283,7 @@ characters)**
 
 We believe that building and sharing projects is the best way to inspire
 autonomy and agency in high school students learning to program. This is
-something that AP CS and many similar organizations don’t cater to. Our primary
+something that AP CS and many similar organizations don't cater to. Our primary
 output is the number of projects finished and shared per member in clubs. We are
 also tracking tangential outputs, including hours spent programming both inside
 of the club and outside, college attendance, major chosen, and work history.
@@ -337,7 +337,7 @@ frustrated by the fact that he couldn't do what he loved in school: programming.
 Seeing the impact on it's members and meeting other who had done the same, he
 started hackEDU. Meanwhile, I had been creating and testing a CS curriculum that
 developed autonomy and agency. I teamed up with Zach on hackEDU because I
-believed it’s student centered was the best thing that could be done to inspire
+believed it's student centered was the best thing that could be done to inspire
 autonomy and agency.
 
 **Why are you, unlike the majority of people, so passionate about this issue
@@ -368,7 +368,7 @@ My mom trained me to know that if I didn't ask for something, I wouldn't' get
 it. When I was in highschool, I asked over a dozen restaurants to donate food to
 a program I started for the homeless.
 
-While in college, I was one of the lead organizers of PennApps, my school’s
+While in college, I was one of the lead organizers of PennApps, my school's
 hackathon. I was one of the five people that grew it from 90 Penn students to
 over 1000 of the best hackers in the world. I personally raised thousands of
 dollars in sponsorship per semester from companies including Amazon, Comcast,

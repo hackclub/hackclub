@@ -52,7 +52,7 @@ _Attendees_:
 ### Dave
 
 - Launch Slack — if you have input, please share
-  - also if you’re in any good slacks, i’d love to learn from them
+  - also if you're in any good slacks, i'd love to learn from them
 - Build system for automating community metrics
 - ~~Try pairing a club leader w/ gemma~~
 - Add meetings from this and last week to https://clubs.hackedu.us

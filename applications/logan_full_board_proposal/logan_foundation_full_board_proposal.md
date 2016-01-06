@@ -271,7 +271,7 @@ have hackEDU in 75 schools by the end of the 2015 - 2016 school year.
 _Tell us about the role your Board of Directors plays in your organization's
 fundraising efforts?_
 
-We don't currently have a board of directors, but we’ve been very fortunate to
+We don't currently have a board of directors, but we've been very fortunate to
 grow and maintain an exceptionally talented team of advisors.
 
 - Tom Gruber - Inventor of Siri (sold to Apple for $200M, installed on every

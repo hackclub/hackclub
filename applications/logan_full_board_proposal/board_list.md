@@ -1,6 +1,6 @@
 # Board of Directors List
 
-We don't currently have a board of directors, but we’ve been very fortunate to
+We don't currently have a board of directors, but we've been very fortunate to
 grow and maintain an exceptionally talented team of advisors.
 
 - Tom Gruber - Inventor of Siri (sold to Apple for $200M, installed on every
