@@ -442,9 +442,9 @@ https://twitter.com/jonathanjleung
 (non-computer) system to your advantage.**
 
 I set the status quo for hackathons to provide transportation reimbursement by
-"hacking" MegaBus's perception of hackathons.
+"hacking" Megabus's perception of hackathons.
 
-While organizing PennApps in 2011, I wanted MegaBus to become our "official
+While organizing PennApps in 2011, I wanted Megabus to become our "official
 transportation sponsor". They were interested but afraid of associating
 themselves with the "hackers" in the news.
 

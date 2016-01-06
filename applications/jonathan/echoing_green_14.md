@@ -387,7 +387,7 @@ Reactor.
 
 While organizing PennApps in 2011, I thought it would be compelling for
 participants if we could pay for their transportation to our hackathon. I
-thought that we would be able to convince MegaBus to be our "official
+thought that we would be able to convince Megabus to be our "official
 transportation sponsor". They were interested but hesitant because they didn't
 want to associate themselves with all the "hacking" that was happening in the
 news.
