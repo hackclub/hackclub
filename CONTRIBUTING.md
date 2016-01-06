@@ -21,37 +21,44 @@ follow our [Code of Conduct](CONDUCT.md) while doing so.
 
 Usually, as a contributor you know what you want to work on. Perhaps something
 along the lines of workshops, standards or implementing guidelines. However, if
-you do not know where to begin [you can always search through the open GitHub
-issues](https://github.com/hackclub/hackclub/issues) to find something suitable.
-If you are a complete beginner (or have never contributed to an Open Source
-repository before) you may be interested in [checking out issues with the
-`first-timers-only` tag](https://github.com/hackclub/hackclub/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Afirst-timers-only).
+you do not know where to begin you can always search through the open
+[GitHub issues][issues] to find something suitable. If you are a complete
+beginner (or have never contributed to an Open Source repository before) you may
+be interested in checking out issues with the
+[`first-timers-only` tag][first_timers].
+
+[issues]: https://github.com/hackclub/hackclub/issues
+[first_timers]: https://github.com/hackclub/hackclub/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Afirst-timers-only
 
 ## Talk About It On Slack
 
-Wasting time is not fun! If you are going to make a big change to a workshop
-(or even adding a new one) it is recommended that you
-[join our Slack](https://slack.hackclub.io) and talk
-about it on the [`#curriculum` channel](https://starthackclub.slack.com/messages/curriculum/).
-To get an even more speedy response, mention `@jonl` and `@harrison`.
+Wasting time is not fun! If you are going to make a big change to a workshop (or
+even adding a new one) it is recommended that you [join our Slack][slack] and
+talk about it on the [`#curriculum` channel][curriculum_channel]. To get an even
+more speedy response, mention `@jonl` and `@harrison`.
+
+[slack]: https://slack.starthackclub.io
+[curriculum_channel]: https://starthackclub.slack.com/messages/curriculum/
 
 ## Create An Issue
 
 If you don't feel like completing a fix yourself, you can
-[create an issue](https://github.com/hackclub/hackclub/issues/new) on the
-repository. Remember to be as specific as possible so it is very easy for
-someone else claim and implement.
+[create an issue][create_issue] on the repository. Remember to be as specific as
+possible so it is very easy for someone else claim and implement.
+
+[create_issue]: https://github.com/hackclub/hackclub/issues/new
 
 ## Make A PR
 
-After you have made your changes and pushed them onto your GitHub
-fork, you should create a
-[Pull Request](https://help.github.com/articles/using-pull-requests/). It is
-best practice to have different Pull Requests for different groups of commits
-which have different purposes. For example, you could submit both a Pull
-Request containing a typo fix and a new workshop, because those are different
-things they belong in different Pull Requests. If the Pull Request resolves an
-issue, be sure to have the issue number in the description.
+After you have made your changes and pushed them onto your GitHub fork, you
+should create a [Pull Request][pull_request]. It is best practice to have
+different Pull Requests for different groups of commits which have different
+purposes. For example, you could submit both a Pull Request containing a typo
+fix and a new workshop, because those are different things they belong in
+different Pull Requests. If the Pull Request resolves an issue, be sure to have
+the issue number in the description.
+
+[pull_request]: https://help.github.com/articles/using-pull-requests/
 
 ## Wait For Review
 
