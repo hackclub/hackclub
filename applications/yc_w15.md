@@ -239,7 +239,7 @@ Male
 
 http://zachlatta.com
 
-**Github URL**
+**GitHub URL**
 
 https://github.com/zachlatta
 

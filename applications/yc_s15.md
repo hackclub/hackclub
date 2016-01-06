@@ -314,7 +314,7 @@ Male
 
 https://zachlatta.com
 
-**Github URL**
+**GitHub URL**
 
 https://github.com/zachlatta
 
@@ -422,7 +422,7 @@ Jun - Aug 2011
 
 http://jonl.org/
 
-**Github URL**
+**GitHub URL**
 
 https://github.com/jonleung
 

@@ -32,7 +32,7 @@ working full time on my own projects
 
 TODO
 
-**Profiles (Links to LinkedIn, Github, AngelList, etc.)**
+**Profiles (Links to LinkedIn, GitHub, AngelList, etc.)**
 
 - http://jonl.org
 - https://www.linkedin.com/in/jonathanjleung

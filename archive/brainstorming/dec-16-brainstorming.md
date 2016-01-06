@@ -99,7 +99,7 @@
     - Anyone who submits, they get commit access
     - Create a YML
   - Celebrate all the wins on social media
-    - Adding Their Name to the Github Repo to a Names Doc
+    - Adding Their Name to the GitHub Repo to a Names Doc
       - Pull Request
       - Add Name
       - Utility crossposts to facebook "Blah name was just added"
@@ -138,5 +138,5 @@
 - Values
   - Club Manifesto
     - Checkout what hacker school put up
-    - Create a club manifesto in your Github Repo
+    - Create a club manifesto in your GitHub Repo
     - Manifesto.md
