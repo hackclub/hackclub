@@ -75,5 +75,6 @@ to create workshops and submit them to this directory.
 
 ## Contributing to the Workshops
 
-Interested in contributing to our workshops? [Look here](CONTRIBUTING.md).
-Beginners welcome!
+Interested in contributing to our workshops? [Look here](CONTRIBUTING.md). Our
+planned workshop progression is outlined in [`ARC.md`](ARC.md). Beginners
+welcome!
