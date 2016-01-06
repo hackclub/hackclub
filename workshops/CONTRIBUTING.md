@@ -7,13 +7,9 @@ Any contributions to our workshops are _very_ welcome, even from beginners!
 ## We Love Questions
 
 Before we get started, if you ever have any questions about anything or just
-want to talk through something, you can reach us almost 24/7 on our Slack.
-
-To ask a question on our Slack:
-
-1. Join our Slack: [https://slack.hackclub.io](https://slack.hackclub.io)
-2. Then join the `#curriculum` channel: [https://starthackclub.slack.com/messages/curriculum/](https://starthackclub.slack.com/messages/curriculum/)
-3. Ask your question!
+want to talk through something, you can reach us almost 24/7 on the
+`#curriculum` channel in our Slack ([click here](../SLACK.md) for instructions
+on joining).
 
 ## How to Contribute to the Workshops
 
