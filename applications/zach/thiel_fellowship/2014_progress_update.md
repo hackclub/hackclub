@@ -39,7 +39,7 @@ hackEDU:
 - Ran pilot with 24 schools in the Fall
   - Reached 1000 students
     - 35% female (double national average in high school)
-    - 18% black/hispanic (3.5x national average in industry)
+    - 18% black/Hispanic (3.5x national average in industry)
   - At the two largest collegiate hackathons, PennApps X and MHacks V (>1000
     attendees each), half of the six winning teams were led by high school
     students, all of whom are part of hackEDU.
