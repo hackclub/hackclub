@@ -466,7 +466,7 @@ This past summer I created and taught a curriculum that took 20 high school
 students, many of whom lacked confidence, technical ability, and initiative,
 and turned them into hackers. After the program, some of my students went on to
 start their own non-profit that organizes hackathons in NYC, one of which
-Jeremy Rossman, founder of Make School, called "one of the best hackathons
+Jeremy Rossmann, founder of Make School, called "one of the best hackathons
 [he's] been to".
 
 > Jonathan, thank you for all you've taught me. Now I feel like wherever life

@@ -258,7 +258,7 @@ founders, some of whom encouraged us and helped us apply (thank you!).
 
 **How did you hear about Y Combinator?**
 
-Alonzo Church's Ph.D thesis (just kidding, Hacker News)
+Alonzo Church's PhD thesis (just kidding, Hacker News)
 
 ### Founder Profiles
 
@@ -369,7 +369,7 @@ Male
 
 **Schools, Degrees and Years of Graduation**
 
-University of Pennsylvania, BSE in Computer Engineering, 2013  
+University of Pennsylvania, Bachelor of Science in Computer Engineering, 2013  
 The Haverford School, High School, 2009
 
 **Employers, Position / Titles and Dates**
@@ -391,7 +391,7 @@ Full Stack Intern
 Jun - Aug 2012
 
 Learners' House  
-learnershouse.org  
+http://learnershouse.org  
 Creator  
 Dec 28 - Jan 7, 2014
 
