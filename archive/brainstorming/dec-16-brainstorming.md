@@ -102,7 +102,7 @@
     - Adding Their Name to the GitHub Repo to a Names Doc
       - Pull Request
       - Add Name
-      - Utility crossposts to facebook "Blah name was just added"
+      - Utility crossposts to Facebook "Blah name was just added"
         - YEAHH!!!!
     - Posting a project
       - Easy
@@ -118,10 +118,10 @@
         - Make a Pull Request
       - Whenever they ship a project in hackEDU PEOPLE GO CRAZY
   - For Each Club
-    - Create a facebook group for your club
+    - Create a Facebook group for your club
     - Join the hackEDUers club
     - Make sure every person is in High School Hackers
-  - Organizers facebook chat.
+  - Organizers Facebook chat.
   - Organizers FB Group
     - Think about the experience of a new user to the group
     - Poke each individual organizer to post something in the group

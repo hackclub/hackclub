@@ -246,7 +246,7 @@ curriculum providers, and gathering and sharing best practices across all clubs.
 
 At the very core, hackEDU is about building community. We introduce our
 constituents to the larger programming communities through events and a
-surprisingly strong and active facebook groups, as well as create communities
+surprisingly strong and active Facebook groups, as well as create communities
 between club organizers and train them to create strong communities in their
 clubs.
 

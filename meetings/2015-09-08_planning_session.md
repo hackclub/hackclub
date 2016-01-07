@@ -70,7 +70,7 @@ Post-mortem
   - [ ] 5 Medium posts (hackedu/meta#129)
   - TODO Check-in with every Labs leader (@hellyeah, hackedu/hackedu#173)
   - "here's where I think we might go wrong: "
-  - extract out question for copy on facebook group
+  - extract out question for copy on Facebook group
   - I failed at hackEDU meetup at PennApps
 
 This week's issue has been created at

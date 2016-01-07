@@ -60,7 +60,7 @@ over calls.
 #### Onboard 50 More Schools into the Hack Club Network
 
 All of our 24 clubs came to Hack Club through inbound interest. Many came from
-the facebook group HS Hackers, representing 6,000+ high schoolers from 689
+the Facebook group HS Hackers, representing 6,000+ high schoolers from 689
 schools across 46 states and 87 countries which was started and is run by one of
 our founders, Zach Latta.
 

@@ -18,7 +18,7 @@ _In attendance:_
   - TODO: add all non-labs club leaders to leaders group
   - What you're hoping to achieve this year
   - Publish club manifesto
-- Best Practice: forward all content to facebook group
+- Best Practice: forward all content to Facebook group
 - How do we want to structure the hackEDU community?
   - Group Chat for Labs?
     - Slack, IRC, messenger
