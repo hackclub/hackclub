@@ -27,7 +27,7 @@ working he wanders around San Francisco and does yoga on his house's roof.
 ![Picture of Max](img/max_wofford.jpg)
 
 Max joined hackEDU as a technical fellow in January 2015 and has been crucial in
-developing software to mantain our clubs. Prior to hackEDU, Max did software
+developing software to maintain our clubs. Prior to hackEDU, Max did software
 consulting from Costa Rica and, before that, was in high school where he led the
 school's robotics team.
 

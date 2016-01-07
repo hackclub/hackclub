@@ -195,7 +195,7 @@ joys of coding because we think everyone deserves access agency and to the
 mindset that the world is malleable.
 
 The reason we're focused on clubs is because they're low-cost, they're easy to
-start, and you can build communities around them. For the forseeable future our
+start, and you can build communities around them. For the foreseeable future our
 goal is to focus on growing our clubs program with the aim of getting it into
 every high school in the US. As we grow, we expect to throw events,
 competitions, and do larger partnerships to make sure we're maximizing our reach
@@ -353,7 +353,7 @@ files).
 
 ### Photo
 
-_Please upload a photo illustrating your organization's work in .jpg format. A
+_Please upload a photo illustrating your organization's work in `.jpg` format. A
 color photo is preferred, if available._
 
 ![HS Hackers Meetup at HackingEDU](img/hackingedu_hs_hackers_meetup.jpg)
