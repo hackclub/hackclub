@@ -91,7 +91,7 @@
     - general building remote hackathon
 - Social Media
   - When someone ships a project, they should post it in the hackEDU group with
-    a github url and a live url. Show hackEDU. And put it onto showHn,
+    a github URL and a live URL. Show hackEDU. And put it onto showHn,
     Subreddit. "Show HS Hackers". When someone makes a PullRequest that's
     considered shipped.
     - Create a way to ship really easily

@@ -8,11 +8,11 @@ hackEDU's nonprofit YC application for W16.
 
 hackEDU
 
-**Organization url, if any**
+**Organization URL, if any**
 
 https://hackedu.us
 
-**If you have an online demo, what's the url?**
+**If you have an online demo, what's the URL?**
 
 N/A
 
@@ -52,13 +52,13 @@ themselves.**
 - zach@hackedu.us
 - jonathan@hackedu.us
 
-**Please enter the url of a 1 minute unlisted (not private) YouTube video
+**Please enter the URL of a 1 minute unlisted (not private) YouTube video
 introducing the founders.**
 
 https://youtu.be/ZM-FOOCxRoI
 
 **Please tell us about an interesting project, preferably outside of class or
-work, that two or more of you created together. Include urls if possible.**
+work, that two or more of you created together. Include URLs if possible.**
 
 We wrote a script that automatically exploits referral codes to order food with
 delivery for less than $2 per meal. We used it nearly every weekday from

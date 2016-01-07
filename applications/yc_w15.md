@@ -8,11 +8,11 @@ hackEDU's nonprofit YC application for W15.
 
 hackEDU
 
-**Organization url, if any**
+**Organization URL, if any**
 
 https://hackedu.us
 
-**If you have an online demo, what's the url?**
+**If you have an online demo, what's the URL?**
 
 N/A
 
@@ -42,7 +42,7 @@ zach@hackedu.us
 
 [redacted]
 
-**Please enter the url of a 1 minute unlisted (not private) YouTube video
+**Please enter the URL of a 1 minute unlisted (not private) YouTube video
 introducing the founders.**
 
 https://youtu.be/uTyn-ljKlyw
@@ -54,7 +54,7 @@ information about themselves.**
 zachlatta - zach@hackedu.us
 
 **Please tell us about an interesting project, preferably outside of class or
-work, that two or more of you created together. Include urls if possible.**
+work, that two or more of you created together. Include URLs if possible.**
 
 While at PennApps, the University of Pennsylvania's student hackathon, I
 created an integrated development environment for iOS apps that runs in any
