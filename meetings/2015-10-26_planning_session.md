@@ -102,7 +102,7 @@ EDIT by @MaxWofford: Cancelled hackedu/meta#221
     for club leaders is the documentation itself, or the github PR flow of
     documentation.
 - Issues carried over
-  - Refactor MarkCop (blocking)
+  - Refactor Markcop (blocking)
 
 ### Zach
 
