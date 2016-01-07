@@ -21,7 +21,7 @@ _In attendance:_
 - Best Practice: forward all content to facebook group
 - How do we want to structure the hackEDU community?
   - Group Chat for Labs?
-    - slack, irc, messenger
+    - Slack, irc, messenger
   - TODO: create new public group -- zach will create it
   - TODO: encourage club leaders to add their members to this public group
   - TODO: Code of Conduct -- adopt one

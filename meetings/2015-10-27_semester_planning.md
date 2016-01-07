@@ -37,7 +37,7 @@ _What this means:_
 - 1-1 interactions between labs leaders
 - Every labs leader in Slack
 - Every labs leader posts update in Slack
-- Slackin integration so club members can sign up for the slack
+- Slackin integration so club members can sign up for the Slack
 - Survey leaders and ask how connected they feel to other labs leader in their
   cohort
 - Pair labs leaders with the other leaders they feel least connected to
@@ -70,7 +70,7 @@ Reduce chaos
 
 #### Community
 
-- Club members join slack (at least 3 labs leaders get their entire clubs to
+- Club members join Slack (at least 3 labs leaders get their entire clubs to
   join)
 - Every labs leader active for the week in Slack
 - Every hackEDU club leader added to Slack (post in Facebook group)
@@ -108,7 +108,7 @@ Culture of experimentation.
 - Fontebot/Steward welcomes everyone who joins Slack (asks what they are
   building this semester)
 - Fontebot/Steward posts after every meeting in #general
-- If club members are in our slack we can ping them after our meetings
+- If club members are in our Slack we can ping them after our meetings
 
 #### Curriculum
 
