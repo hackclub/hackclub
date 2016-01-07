@@ -129,7 +129,7 @@ _Attendees:_
 
 - [ ] Create script to quantify hackEDU Leaders group activity #258 (@hellyeah,
   hackedu/hackedu#258)
-- [ ] Get at least 3 clubs submitting feedback to Pakrat (@hellyeah,
+- [ ] Get at least 3 clubs submitting feedback to Packrat (@hellyeah,
   hackedu/hackedu#373)
 
 ### Technical
