@@ -386,7 +386,7 @@ Male
 
 **Schools, Degrees and Years of Graduation**
 
-University of Pennsylvania, BSE in Computer Engineering, 2013
+University of Pennsylvania, Bachelor of Science in Computer Engineering, 2013
 The Haverford School, GED, 2009
 
 **Employers, Position / Titles and Dates**
