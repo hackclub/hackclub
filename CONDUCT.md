@@ -33,7 +33,7 @@ Club groups, in person meetings, and events including:
 
 - The [GitHub projects](https://github.com/hackclub/)
 - The [Facebook Group](https://www.facebook.com/groups/1501083703514499/)
-- The [Slack Channel](https://starthackclub.slack.com)
+- The [Slack](https://starthackclub.slack.com)
 - The #hack-club IRC channel on Freenode
 - Club Meetings
 
