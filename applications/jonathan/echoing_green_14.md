@@ -69,7 +69,7 @@ Leung
 
 **Email**
 
-jonathan at hackedu dot us [*modified to avoid scraping*]
+`jonathan` at `hackedu` dot `us` [*modified to avoid scraping*]
 
 **Phone**
 
@@ -166,7 +166,7 @@ multiple countries)**
 
 United States
 
-**If your intial area of focus is in five or fewer cities, states, or provinces,
+**If your initial area of focus is in five or fewer cities, states, or provinces,
 list them here.**
 
 Where will your organization have its main office?
@@ -233,7 +233,8 @@ projects that they are excited about with code. This is a problem because we
 believe the best way to learn programming is to build projects. We see that this
 is one of the reasons why the AP CS curriculum is the only STEM field that has
 actually seen a decrease in student participation over the last 20 years from
-25% of high school students to only 19% (from the NCES).
+25% of high school students to only 19% (from the National Center for Education
+Statistics).
 
 **Describe the specific products or programs of your organization. (1000
 characters)**
@@ -364,9 +365,9 @@ the world whether it's with code or not.
 **What skills or experiences demonstrate that you will be able to attract money,
 people, and other resources to your organization? (1000 characters)**
 
-My mom trained me to know that if I didn't ask for something, I wouldn't' get
-it. When I was in highschool, I asked over a dozen restaurants to donate food to
-a program I started for the homeless.
+My mom trained me to know that if I didn't ask for something, I wouldn't get it.
+When I was in high school, I asked over a dozen restaurants to donate food to a
+program I started for the homeless.
 
 While in college, I was one of the lead organizers of PennApps, my school's
 hackathon. I was one of the five people that grew it from 90 Penn students to
@@ -376,7 +377,7 @@ and Twilio. I learned how to ask someone to become a judge who were the founders
 and CEOs of companies.
 
 When I was at All Star Code, I raised an additional $19,000 of in kind software
-donations and found another co-facillitator to join us everyday by creating a
+donations and found another co-facilitator to join us everyday by creating a
 Teaching Fellowship position (see bit.ly/1xL2k1D).
 
 Currently at hackEDU, I acquired office space and free food with complimentary
