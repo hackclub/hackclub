@@ -44,8 +44,8 @@ _What this means:_
 
 #### Curriculum
 
-- mvp1 of the hackEDU portal shipped (features of this need to be defined in the
-  future)
+- 1st MVP of the hackEDU portal shipped (features of this need to be defined in
+  the future)
 - 2 additional workshops shipped
 
 #### Technical
@@ -73,20 +73,20 @@ Reduce chaos
 - Club members join slack (at least 3 labs leaders get their entire clubs to
   join)
 - Every labs leader active for the week in Slack
-- Every hackEDU club leader added to Slack (post in facebook group)
+- Every hackEDU club leader added to Slack (post in Facebook group)
 - > 10 active mentors in Slack
-- #web #ios #android #hardware channels
+- `#web`, `#ios`, `#android`, and `#hardware`channels
 
 #### Curriculum
 
-- mvp2 of the hackEDU portal shipped (features of this need to be defined in the
-  future)
+- 2nd MVP of the hackEDU portal shipped (features of this need to be defined in
+  the future)
 - 1 additional workshops shipped
 
 #### Technical
 
-- Club leaders and members can access workshops from packrat
-- Club leaders can submit case_studies through packrat
+- Club leaders and members can access workshops from Packrat
+- Club leaders can submit case_studies through Packrat
 - Case studies are submitted by all clubs each week
 
 #### Meta
@@ -112,13 +112,13 @@ Culture of experimentation.
 
 #### Curriculum
 
-- mvp3 of the hackEDU portal shipped (features of this need to be defined in the
-  future)
+- 3rd MVP of the hackEDU portal shipped (features of this need to be defined in
+  the future)
 - 1 additional workshop shipped
 
 #### Technical
 
-- Centralized website repo including Packrat (merge packrat and website)
+- Centralized website repo including Packrat (merge Packrat and website)
 
 #### Meta
 
