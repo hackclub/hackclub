@@ -4,8 +4,13 @@ Short link to this workshop: https://workshops.hackclub.io/twilio
 
 -------------------------------------------------------------------------------
 
-The objective of this workshop is to learn how to wield powerful
-[APIs](http://www.quora.com/What-is-an-API) with minimal code.
+In this workshop, you will learn how to use the a modified version of the
+Twilio API to make phone calls and send text messages that allow you to make
+group texting apps.
+
+An API is an agreed upon way for one program to interact with another. APIs
+are cool because they let even our very simple programs to interact with very
+powerful programs with minimal code.
 
 **For Beginners**
 
@@ -19,32 +24,34 @@ works.
 This tutorial will likely show you things that you didn't know you could
 do. I'd recommend skipping around in the tutorial and find what interests you.
 
-## Partners
+## Outline
 
-Before starting this workshop, find a partner! You'll be pair
-programming!
+This tutorial is made up of two parts:
 
-## Quick Demo
+1. [Part 1: Setup + Making Your First Phone Call with Twilio](#part-1-setup--making-your-first-phone-call-with-twilio)
+2. [Part 2: Exploring the Capabilities of Twilio](#part-2-exploring-the-capabilities-of-twilio)
+
+## Part 1: Setup + Making Your First Phone Call with Twilio
 
 We're going to write some code that calls your phone and speaks some
 text.
 
 Ready?
 
-Open [this JS Bin*][starter]. Leave this tab open for the rest of the
+Open [this JS Bin*][starter] in a new tab. Leave this tab open for the rest of the
 tutorial.
 
 _*JS Bin is a website for easily writing code._
 
-[starter]: https://jsbin.com/gist/770b112138fe94ce1b88
-
-### Adding Your Twilio SID and Token
+[starter]: https://jsbin.com/gist/770b112138fe94ce1b88?html,js,output
 
 We are going to use a service called Twilio to send text messages
 and make phone calls.
 
-To add this capability to any HTML file, just add this script tag inside the
-bottom of your body tag:
+### Step 1: Adding the Twilio API
+
+To add the capability to send text messages and make phone calls, copy and paste
+the below script tag to the bottom of the `body` tag.
 
 ```html
 <script src="//bit.ly/twilio-basic-v7"
@@ -53,43 +60,58 @@ bottom of your body tag:
 ></script>
 ```
 
-You can see this snippet of code inside the HTML tab of the JS Bin:
+Like so:
 
-> ![](img/html_tab.png)
+> ![](img/add_twilio_library_script.gif)
 
-Before this will work, we need to change `"YOUR_TWILIO_ACCOUNT_SID_HERE"`
-and `"YOUR_TWILIO_AUTH_TOKEN_HERE"` to your actual Twilio SID and token.
+> Note for people who happen to be using their own IDE, just copy the HTML
+> code into your own HTML file.
 
-The facilitator should have given you an SID and a token. If you don't have one
-yet, ask your facilitator.
+### Step 2: Set your `sid` and `token`
 
-If you are the facilitator (or if you're just doing this workshop by yourself),
-follow the directions [here](../lib/twilio-basic/signup.md) to get your own
-Twilio SID and token.
+Before anything will work, we need to change `"YOUR_TWILIO_ACCOUNT_SID_HERE"`
+and `"YOUR_TWILIO_AUTH_TOKEN_HERE"` to your actual `sid` and `token`
 
-Once we have the SID and authentication token, replace
+The facilitator should have given you an SID and a token. If not, you should
+ask them for one.
+
+> Note: If you are the facilitator (or if you're just doing this workshop by
+yourself), follow the directions [here](../lib/twilio-basic/signup.md) to get
+your own Twilio SID and token.
+
+Once we have the `sid` and `token`, replace
 `YOUR_TWILIO_ACCOUNT_SID_HERE` and `YOUR_TWILIO_AUTH_TOKEN_HERE` with your
 actual SID and authentication token.
 
 > ![](img/enter_account_sid.gif)
 
-### Writing One Line of Code to Send a Text Message
+### Step 3: Turn off "Auto-run JS"
 
-Then type _exactly_ the code below into the left side of JS Bin:
+In the top right hand corner, turn off "Auto-run JS" so that your code doesn't
+automatically run every time you type something:
+
+> ![](img/turn_off_autorun.gif)
+
+### Step 4: Writing One Line of Code to Make a Phone Call
+
+Then type _exactly_ the code below into the JavaScript tab of JS Bin:
 
 ```js
 Twilio.callAndSay("555-555-5555", "You just subscribed to Gossip Girl");
 ```
+
+> Note for people who happen to be using their own IDE, create and link your
+> own JavaScript file to the HTML file you created earlier.
 
 _**Don't forget the parentheses commas, and quotation marks.**_
 
 > ![](img/demo_1.gif)
 
 This code calls the phone number `555-555-5555` and says the message
-`Gossip Girl here, your one and only.` We don't want that.
+`You just subscribed to Gossip Girl.` We don't want that.
 
-Change `555-555-5555` to your own phone number. Feel free to change the
-message too.
+Instead, change `555-555-5555` to your own phone number.
+Feel free to change the message too.
 
 > ![](img/demo_2.gif)
 
@@ -99,7 +121,7 @@ Now go ahead and press the "Run" button.
 
 Your phone should ring shortly! Answer it!
 
-_If it doesn't work, ask a neighboring group to see if they can see what's
+> _If it doesn't work, ask a neighboring group to see if they can see what's
 wrong. Otherwise, raise your hand to ask a facilitator for help!_
 
 ### Having Some Fun
@@ -109,7 +131,7 @@ your neighbors for their phone number!
 
 > ![](img/demo_4.gif)
 
-Go ahead and click run!
+Now go ahead and press the "Run" button.
 
 ![](img/celebrate.gif)
 
