@@ -34,5 +34,5 @@ In conclusion, we value sleep. Good night.
 Much love,
 Jonathan & Zach
 
-P.S. This blogpost was to complete our MIT, our Most Important Task. We did it
-and now don't owe $20 each... Hurray #celebratingsmallwins
+P.S. This blog post was to complete our MIT, our Most Important Task. We did it
+and now don't owe $20 each... yeah!
