@@ -20,7 +20,7 @@ everyone.
       - People doing what they care about
       - Being true to yourself
     - _Notes_
-      - Radical Beginner Friendlyness
+      - Radical Beginner Friendliness
       - -
       - Radical Self Expression
       - Radical Customer Contentment
