@@ -1,4 +1,4 @@
-Hi {Name},
+Hi `{Name}`,
 
 Because you applied to Hack Camp, I want to invite you to a free workshop on
 building your first website that Hack Club (we changed our name from hackEDU) is
@@ -15,6 +15,6 @@ San Francisco. If you're interested, we'd love for you to register at
 https://series.hackclub.io.
 
 If you have any questions, just let me know. You can always call me directly at
-{PhoneNumber}.
+`{PhoneNumber}`.
 
 Happy Hacking!
