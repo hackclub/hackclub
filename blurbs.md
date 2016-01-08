@@ -37,7 +37,7 @@ helps high school students start and lead programming clubs at their school.
 
 In our Fall 2014 pilot, we had
 
-- 24 clubs accross the nation
+- 24 clubs across the nation
 - reached schools in 11 states
 - had over 1000 members
 - 35% of our members are women
