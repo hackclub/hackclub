@@ -26,7 +26,7 @@ Attendees:
     - Have Jiahao post about club fair happening by Wednesday
   - [ ] Cohort 2 group call this weekend (hackedu/hackedu#114)
   - End of week goals:
-      - [2] 3 organic posts with discussion in FB group
+      - [2] 3 organic posts with discussion in Facebook group
       - [21] 25 introduction posts
       - [2] 5 Medium posts
 
@@ -47,11 +47,11 @@ Post-mortem
     hackedu/hackedu#170)
 - [ ] Curriculum
   - [ ] Create workshop that enables every club member to ship a project to
-    shipit on the first day (@jonleung, hackedu/hackedu#171)
+    Shipit on the first day (@jonleung, hackedu/hackedu#171)
   - [ ] Shipit
   t
-  - [ ] Make sure that shipit.hackedu.us includes a dropdown with every high
-    school we have (@zachlatta, hackedu/hackedu#119)
+  - [ ] Make sure that https://shipit.hackedu.us includes a dropdown with every
+    high school we have (@zachlatta, hackedu/hackedu#119)
 - [ ] Meta
   - [ ] Salaries paid (@zachlatta, hackedu/meta#125)
   - [x] Mission Bit expense report for August done (@zachlatta,
@@ -65,12 +65,12 @@ Post-mortem
     https://github.com/hackedu/hackedu/blob/master/CONTRIBUTING.md#labs
     (@hellyeah)
 - [ ] Community (@hellyeah)
-  - [ ] 5 organic posts with discussion in FB group (hackedu/meta#129)
+  - [ ] 5 organic posts with discussion in Facebook group (hackedu/meta#129)
   - [ ] 10 introduction posts (hackedu/meta#129)
   - [ ] 5 Medium posts (hackedu/meta#129)
   - TODO Check-in with every Labs leader (@hellyeah, hackedu/hackedu#173)
   - "here's where I think we might go wrong: "
-  - extract out question for copy on facebook group
+  - extract out question for copy on Facebook group
   - I failed at hackEDU meetup at PennApps
 
 This week's issue has been created at

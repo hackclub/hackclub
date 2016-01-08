@@ -32,7 +32,7 @@
   - _Update: Hack Night was organized, but nobody showed up_
 - [ ] Make assets for the iOS track (hackclub/meta#340, @MaxWofford)
   - _Update: Started making assets, but not done yet_
-- [ ] Fix JSBin build system (hackclub/hackclub#521, @zachlatta)
+- [ ] Fix JS Bin build system (hackclub/hackclub#521, @zachlatta)
   - _Update: @zachlatta needs to respond to @jonleung and @paked's comments_
 - [ ] Rewrite CONTRIBUTING.md (hackclub/hackclub#512, @zachlatta)
   - _Update: Was not prioritized appropriately last week_
@@ -97,7 +97,7 @@
 
 - [ ] hackclub.com/hackclub.org/hack.club (hackclub/meta#347, @zachlatta)
   - _Moved over from last week_
-- [ ] Fix JSBin build system (hackclub/hackclub#521, @zachlatta)
+- [ ] Fix JS Bin build system (hackclub/hackclub#521, @zachlatta)
   - _Moved over from last week_
 - [ ] Rewrite CONTRIBUTING.md (hackclub/hackclub#512, @zachlatta)
   - _Moved over from last week_
@@ -113,7 +113,7 @@
 
 ### Curriculum
 
-- [ ] Fix JSBin build system (hackclub/hackclub#521, @zachlatta)
+- [ ] Fix JS Bin build system (hackclub/hackclub#521, @zachlatta)
 - [ ] Copy Project Cipher's workshops to `hackclub/hackclub` (hackclub/meta#356,
   @jonleung)
 

@@ -58,7 +58,7 @@ _Attendees:_
 ### Misc
 
 - [x] YC application (includes video) (@zachlatta, hackedu/meta#184)
-- [x] Check in pairing a club leader w/ gemma (@MaxWofford, hackedu/hackedu#340)
+- [x] Check in pairing a club leader w/ Gemma (@MaxWofford, hackedu/hackedu#340)
 - [ ] ~~Plan meeting to talk about Slack and IRC and how we're going to use them
   (@zachlatta, hackedu/meta#214)~~ (do next week)
 
@@ -129,7 +129,7 @@ _Attendees:_
 
 - [ ] Create script to quantify hackEDU Leaders group activity #258 (@hellyeah,
   hackedu/hackedu#258)
-- [ ] Get at least 3 clubs submitting feedback to Pakrat (@hellyeah,
+- [ ] Get at least 3 clubs submitting feedback to Packrat (@hellyeah,
   hackedu/hackedu#373)
 
 ### Technical

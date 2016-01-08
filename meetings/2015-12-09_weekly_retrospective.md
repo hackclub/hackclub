@@ -8,7 +8,7 @@ _In attendance:_
 
 --------------------------------------------------------------------------------
 
-- Is there any hidden work in process (WIP) that we haven’t gotten onto the
+- Is there any hidden work in process (WIP) that we haven't gotten onto the
   board yet?
   - Planning from the other day for December is not yet reflected on the board.
     - Adding the applicant review process is not reflected on the board
@@ -21,11 +21,11 @@ _In attendance:_
 - Are we tracking things at the right level of granularity?
   - Yes
 - A queue or buffer happens when work is in a holding pattern before it goes to
-  the next step. Are there queues or buffers in your workflow that aren’t
+  the next step. Are there queues or buffers in your workflow that aren't
   represented on the board?
 - Ideas
   - We're going to try to use `first-timers-only` label
-    - once applied, cannot be unapplied
+    - once applied, cannot be removed
   - Feel free to delete labels that have not been applied to any issues ever.
   - The weekly meta issue is going to sit at the top of the In Progress column.
 - Todo

@@ -29,7 +29,7 @@ https://hackedu.us
   1,300 students.
   - 12 of the 14 additional schools have a majority of students on free or
     reduced lunch.
-  - 37% of our constituency is now black/hispanic (7x national average).
+  - 37% of our constituency is now black/Hispanic (7x national average).
 - [redacted] has committed to be a donor.
 - We've finally opened up a bank account and are currently signing an agreement
   with our (soon to be) fiscal sponsor so we can accept donations.

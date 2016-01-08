@@ -8,4 +8,4 @@ feedback-session realizations:
   they are only responsible for it.
 
 Actionable items:
-- Breaking up tasks into github issues as a team activity tomorrow. (team)
+- Breaking up tasks into GitHub issues as a team activity tomorrow. (team)

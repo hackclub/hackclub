@@ -37,15 +37,15 @@ _What this means:_
 - 1-1 interactions between labs leaders
 - Every labs leader in Slack
 - Every labs leader posts update in Slack
-- Slackin integration so club members can sign up for the slack
+- Slackin integration so club members can sign up for the Slack
 - Survey leaders and ask how connected they feel to other labs leader in their
   cohort
 - Pair labs leaders with the other leaders they feel least connected to
 
 #### Curriculum
 
-- mvp1 of the hackEDU portal shipped (features of this need to be defined in the
-  future)
+- 1st MVP of the hackEDU portal shipped (features of this need to be defined in
+  the future)
 - 2 additional workshops shipped
 
 #### Technical
@@ -70,23 +70,23 @@ Reduce chaos
 
 #### Community
 
-- Club members join slack (at least 3 labs leaders get their entire clubs to
+- Club members join Slack (at least 3 labs leaders get their entire clubs to
   join)
 - Every labs leader active for the week in Slack
-- Every hackEDU club leader added to Slack (post in facebook group)
+- Every hackEDU club leader added to Slack (post in Facebook group)
 - > 10 active mentors in Slack
-- #web #ios #android #hardware channels
+- `#web`, `#ios`, `#android`, and `#hardware`channels
 
 #### Curriculum
 
-- mvp2 of the hackEDU portal shipped (features of this need to be defined in the
-  future)
+- 2nd MVP of the hackEDU portal shipped (features of this need to be defined in
+  the future)
 - 1 additional workshops shipped
 
 #### Technical
 
-- Club leaders and members can access workshops from packrat
-- Club leaders can submit case_studies through packrat
+- Club leaders and members can access workshops from Packrat
+- Club leaders can submit case_studies through Packrat
 - Case studies are submitted by all clubs each week
 
 #### Meta
@@ -108,17 +108,17 @@ Culture of experimentation.
 - Fontebot/Steward welcomes everyone who joins Slack (asks what they are
   building this semester)
 - Fontebot/Steward posts after every meeting in #general
-- If club members are in our slack we can ping them after our meetings
+- If club members are in our Slack we can ping them after our meetings
 
 #### Curriculum
 
-- mvp3 of the hackEDU portal shipped (features of this need to be defined in the
-  future)
+- 3rd MVP of the hackEDU portal shipped (features of this need to be defined in
+  the future)
 - 1 additional workshop shipped
 
 #### Technical
 
-- Centralized website repo including Packrat (merge packrat and website)
+- Centralized website repo including Packrat (merge Packrat and website)
 
 #### Meta
 

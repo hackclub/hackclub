@@ -195,7 +195,7 @@ joys of coding because we think everyone deserves access agency and to the
 mindset that the world is malleable.
 
 The reason we're focused on clubs is because they're low-cost, they're easy to
-start, and you can build communities around them. For the forseeable future our
+start, and you can build communities around them. For the foreseeable future our
 goal is to focus on growing our clubs program with the aim of getting it into
 every high school in the US. As we grow, we expect to throw events,
 competitions, and do larger partnerships to make sure we're maximizing our reach
@@ -271,7 +271,7 @@ have hackEDU in 75 schools by the end of the 2015 - 2016 school year.
 _Tell us about the role your Board of Directors plays in your organization's
 fundraising efforts?_
 
-We don't currently have a board of directors, but we’ve been very fortunate to
+We don't currently have a board of directors, but we've been very fortunate to
 grow and maintain an exceptionally talented team of advisors.
 
 - Tom Gruber - Inventor of Siri (sold to Apple for $200M, installed on every
@@ -353,7 +353,7 @@ files).
 
 ### Photo
 
-_Please upload a photo illustrating your organization's work in .jpg format. A
+_Please upload a photo illustrating your organization's work in `.jpg` format. A
 color photo is preferred, if available._
 
 ![HS Hackers Meetup at HackingEDU](img/hackingedu_hs_hackers_meetup.jpg)

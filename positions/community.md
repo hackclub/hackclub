@@ -14,5 +14,5 @@ that.
 Here are some of our current problems, among many others:
 
 - We have a Facebook group that is rarely used
-- Club leaders barely know each other and barely know of each other's existence
+- Club leaders barely know each other and barely know of each others' existence
 - Many of them know very little about the organization

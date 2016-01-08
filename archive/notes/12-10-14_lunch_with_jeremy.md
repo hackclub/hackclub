@@ -16,7 +16,7 @@
 - Externally, be very specific with the actionable what.
   - Philosophy is not one of these things
 - Parallel universe theory
-  - In a parellel universe, if I did another thing, which universe would turn
+  - In a parallel universe, if I did another thing, which universe would turn
     out better?
 - Questions to investigate
   - Why do clubs fizzle?

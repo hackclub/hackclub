@@ -8,11 +8,11 @@ hackEDU's nonprofit YC application for W16.
 
 hackEDU
 
-**Organization url, if any**
+**Organization URL, if any**
 
 https://hackedu.us
 
-**If you have an online demo, what's the url?**
+**If you have an online demo, what's the URL?**
 
 N/A
 
@@ -52,13 +52,13 @@ themselves.**
 - zach@hackedu.us
 - jonathan@hackedu.us
 
-**Please enter the url of a 1 minute unlisted (not private) YouTube video
+**Please enter the URL of a 1 minute unlisted (not private) YouTube video
 introducing the founders.**
 
 https://youtu.be/ZM-FOOCxRoI
 
 **Please tell us about an interesting project, preferably outside of class or
-work, that two or more of you created together. Include urls if possible.**
+work, that two or more of you created together. Include URLs if possible.**
 
 We wrote a script that automatically exploits referral codes to order food with
 delivery for less than $2 per meal. We used it nearly every weekday from
@@ -258,7 +258,7 @@ founders, some of whom encouraged us and helped us apply (thank you!).
 
 **How did you hear about Y Combinator?**
 
-Alonzo Church's Ph.D thesis (just kidding, Hacker News)
+Alonzo Church's PhD thesis (just kidding, Hacker News)
 
 ### Founder Profiles
 
@@ -297,11 +297,11 @@ Male
 
 https://zachlatta.com
 
-**Github URL**
+**GitHub URL**
 
 https://github.com/zachlatta
 
-**Linkedin URL**
+**LinkedIn URL**
 
 https://www.linkedin.com/in/zachlatta
 
@@ -369,7 +369,7 @@ Male
 
 **Schools, Degrees and Years of Graduation**
 
-University of Pennsylvania, BSE in Computer Engineering, 2013  
+University of Pennsylvania, Bachelor of Science in Computer Engineering, 2013  
 The Haverford School, High School, 2009
 
 **Employers, Position / Titles and Dates**
@@ -391,7 +391,7 @@ Full Stack Intern
 Jun - Aug 2012
 
 Learners' House  
-learnershouse.org  
+http://learnershouse.org  
 Creator  
 Dec 28 - Jan 7, 2014
 
@@ -403,11 +403,11 @@ Jun - Aug 2011
 
 http://jonl.org/
 
-**Github URL**
+**GitHub URL**
 
 https://github.com/jonleung
 
-**Linkedin URL**
+**LinkedIn URL**
 
 https://www.linkedin.com/in/jonathanjleung
 

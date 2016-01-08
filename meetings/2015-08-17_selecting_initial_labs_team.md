@@ -10,7 +10,7 @@ _In attendance:_
 
 ## hackEDU: Identifying women leaders in high school tech
 
-- CodeCamp
+- Code Camp
 - Girls Who Code
 - NCWIT
 - Ask freshman women for awesome high schoolers they are mentoring
@@ -39,7 +39,7 @@ Diverse co-organizers in the past have had distinct advantages
 - Posters
 - Stickers
 - Facebook Group/Event
-- Twillo phone call right away
+- Twilio phone call right away
 - Showcase what people in the club made
   - you can make this stuff too
 - Before/After Posts
@@ -84,16 +84,15 @@ What are the challenges a club runs into before the first meeting
 
 - Club leaders
 - Samuel
-- Johal
-- Lowell (tegan, student) — club we run in the city
+- Lowell (Teagan, student) — club we run in the city
   - local clubs
-  - sam ran hack camp
+  - Sam ran hack camp
 - Amy
   - new jersey
 
 Ask about them running meetings
 
-Andrea’s last day with us tomorrow
+Andrea's last day with us tomorrow
 
 - hack t-shirt design
 
@@ -101,15 +100,15 @@ Design clubs?
 
 Amy is running middle school camp
 
-- michigan girl wanted to do this too?
-- jonathan is refactoring workshop
+- Michigan girl wanted to do this too?
+- Jonathan is refactoring workshop
 
 Starting clubs of our own?
 - each member of the team running one club
 - and having option to run 1 or 2 clubs
 
 Lowell up and running again
-- hs student running it running it so we can observe
+- HS student running it running it so we can observe
 
 Another club
 - sf university high
@@ -173,4 +172,4 @@ Gender
     - she++
       - how do we fill in a pipeline
 - How do we bring up
-  - wha is the definition 
+  - what is the definition 

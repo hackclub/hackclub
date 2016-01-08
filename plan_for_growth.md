@@ -8,7 +8,7 @@ We did a very small informal pilot with 7 schools.
 
 We extended our pilot to
 
-- reach 24 schools accross the nation 
+- reach 24 schools across the nation
 - span 11 states
 - reach over 1000 members
 - 35% of our members are women
@@ -47,10 +47,10 @@ teams are part of Hack Club.
 ### Spring 2014 (January - June)
 
 We are creating the "Club Playbook", a guide on how to create and run the best
-progrmaming clubs. This will include:
+programming clubs. This will include:
 
-- Curriuculum for learning technical content
-- Excercises for team building
+- Curriculum for learning technical content
+- Exercises for team building
 - Providing local mentors for the club
 - Physical hardware such as Makey Makeys
 
@@ -60,9 +60,9 @@ over calls.
 #### Onboard 50 More Schools into the Hack Club Network
 
 All of our 24 clubs came to Hack Club through inbound interest. Many came from
-the facebook group HS Hackers, representing 6,000+ high schoolers from 689
+the Facebook group HS Hackers, representing 6,000+ high schoolers from 689
 schools across 46 states and 87 countries which was started and is run by one of
-our founders, Zach latta.
+our founders, Zach Latta.
 
 Moreover, from a survey that we did at the premier Hack Generation Y hackathon,
 we learned that there are over 60 clubs just in the bay area alone that are not

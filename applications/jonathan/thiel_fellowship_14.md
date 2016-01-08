@@ -32,7 +32,7 @@ working full time on my own projects
 
 TODO
 
-**Profiles (Links to LinkedIn, Github, AngelList, etc.)**
+**Profiles (Links to LinkedIn, GitHub, AngelList, etc.)**
 
 - http://jonl.org
 - https://www.linkedin.com/in/jonathanjleung
@@ -46,7 +46,7 @@ want to help.**
 
 **Why spend your time on this? Or what about this is important to you?**
 
-**Do you have any collaborators or cofounders? If yes, who are they?**
+**Do you have any collaborators or co-founders? If yes, who are they?**
 
 **Do you know anyone in our community? If yes, who? Have you participated in any
 incubators or other programs to further your project?**

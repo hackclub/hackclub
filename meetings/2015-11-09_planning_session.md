@@ -61,7 +61,7 @@
 ### Zach
 
 - Attendance from every single club
-- 10% slack growth
+- 10% Slack growth
 
 ## Week's Issue
 

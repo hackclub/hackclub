@@ -99,10 +99,10 @@ EDIT by @MaxWofford: Cancelled hackedu/meta#221
     and the core team member will convert to markdown and PR the study
   - This test will be to separate the variables of our case study submission
     flow. A successful run of this test will tell us if the largest pain-point
-    for club leaders is the documentation itself, or the github PR flow of
+    for club leaders is the documentation itself, or the GitHub PR flow of
     documentation.
 - Issues carried over
-  - Refactor MarkCop (blocking)
+  - Refactor Markcop (blocking)
 
 ### Zach
 

@@ -56,7 +56,7 @@ currently aren't funded yet so can only manage to afford to purchase food).
 It would really make a huge difference for us.
 
 Thanks so much!
-Jonatha
+Jonathan
 
 # Jonathan's Version 2 Without Reason — Founder
 

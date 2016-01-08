@@ -69,7 +69,7 @@ Leung
 
 **Email**
 
-jonathan at hackedu dot us [*modified to avoid scraping*]
+`jonathan` at `hackedu` dot `us` [*modified to avoid scraping*]
 
 **Phone**
 
@@ -166,7 +166,7 @@ multiple countries)**
 
 United States
 
-**If your intial area of focus is in five or fewer cities, states, or provinces,
+**If your initial area of focus is in five or fewer cities, states, or provinces,
 list them here.**
 
 Where will your organization have its main office?
@@ -233,7 +233,8 @@ projects that they are excited about with code. This is a problem because we
 believe the best way to learn programming is to build projects. We see that this
 is one of the reasons why the AP CS curriculum is the only STEM field that has
 actually seen a decrease in student participation over the last 20 years from
-25% of high school students to only 19% (from the NCES).
+25% of high school students to only 19% (from the National Center for Education
+Statistics).
 
 **Describe the specific products or programs of your organization. (1000
 characters)**
@@ -246,7 +247,7 @@ curriculum providers, and gathering and sharing best practices across all clubs.
 
 At the very core, hackEDU is about building community. We introduce our
 constituents to the larger programming communities through events and a
-surprisingly strong and active facebook groups, as well as create communities
+surprisingly strong and active Facebook groups, as well as create communities
 between club organizers and train them to create strong communities in their
 clubs.
 
@@ -258,9 +259,9 @@ programming clubs.
 **How is your approach boldly innovative compared to the status quo? (1000
 characters)**
 
-Other similar organizations, such as TEALS, ScriptEd, and Google’s CS First,
+Other similar organizations, such as TEALS, ScriptEd, and Google's CS First,
 generally interface with students through teachers or administration. This is a
-problem because teachers tend to be non-technical and don’t understand maker
+problem because teachers tend to be non-technical and don't understand maker
 culture. This leads to a lot of red tape, bureaucracy, and mandated fixed
 curriculum, which ultimately disconnects with students and becomes ineffective.
 
@@ -283,7 +284,7 @@ characters)**
 
 We believe that building and sharing projects is the best way to inspire
 autonomy and agency in high school students learning to program. This is
-something that AP CS and many similar organizations don’t cater to. Our primary
+something that AP CS and many similar organizations don't cater to. Our primary
 output is the number of projects finished and shared per member in clubs. We are
 also tracking tangential outputs, including hours spent programming both inside
 of the club and outside, college attendance, major chosen, and work history.
@@ -337,7 +338,7 @@ frustrated by the fact that he couldn't do what he loved in school: programming.
 Seeing the impact on it's members and meeting other who had done the same, he
 started hackEDU. Meanwhile, I had been creating and testing a CS curriculum that
 developed autonomy and agency. I teamed up with Zach on hackEDU because I
-believed it’s student centered was the best thing that could be done to inspire
+believed it's student centered was the best thing that could be done to inspire
 autonomy and agency.
 
 **Why are you, unlike the majority of people, so passionate about this issue
@@ -364,11 +365,11 @@ the world whether it's with code or not.
 **What skills or experiences demonstrate that you will be able to attract money,
 people, and other resources to your organization? (1000 characters)**
 
-My mom trained me to know that if I didn't ask for something, I wouldn't' get
-it. When I was in highschool, I asked over a dozen restaurants to donate food to
-a program I started for the homeless.
+My mom trained me to know that if I didn't ask for something, I wouldn't get it.
+When I was in high school, I asked over a dozen restaurants to donate food to a
+program I started for the homeless.
 
-While in college, I was one of the lead organizers of PennApps, my school’s
+While in college, I was one of the lead organizers of PennApps, my school's
 hackathon. I was one of the five people that grew it from 90 Penn students to
 over 1000 of the best hackers in the world. I personally raised thousands of
 dollars in sponsorship per semester from companies including Amazon, Comcast,
@@ -376,7 +377,7 @@ and Twilio. I learned how to ask someone to become a judge who were the founders
 and CEOs of companies.
 
 When I was at All Star Code, I raised an additional $19,000 of in kind software
-donations and found another co-facillitator to join us everyday by creating a
+donations and found another co-facilitator to join us everyday by creating a
 Teaching Fellowship position (see bit.ly/1xL2k1D).
 
 Currently at hackEDU, I acquired office space and free food with complimentary
@@ -387,7 +388,7 @@ Reactor.
 
 While organizing PennApps in 2011, I thought it would be compelling for
 participants if we could pay for their transportation to our hackathon. I
-thought that we would be able to convince MegaBus to be our "official
+thought that we would be able to convince Megabus to be our "official
 transportation sponsor". They were interested but hesitant because they didn't
 want to associate themselves with all the "hacking" that was happening in the
 news.

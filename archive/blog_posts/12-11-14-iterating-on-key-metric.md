@@ -20,7 +20,7 @@ case of our key metric and give us ground to iterate on.
     - club data
       - static
         - name
-        - github organization
+        - GitHub organization
         - website
         - organizers
       - dynamic
@@ -30,22 +30,22 @@ case of our key metric and give us ground to iterate on.
           - flow of the meeting
     - member data
       - static
-        - github usernames
+        - GitHub usernames
         - emails
       - qualities
         - skill level
           - technologies they know
-            - javascript?
+            - JavaScript?
             - scratch?
             - web development?
             - systems development?
-            - ios?
+            - iOS?
             - android?
         - how into building things they are
       - dynamic
         - are you building things with code?
           - yes
-            - the dubdubs
+            - the dub dubs
               - who are you working with
               - what are you working on
               - when are you working on these projects

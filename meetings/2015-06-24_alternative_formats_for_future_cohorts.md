@@ -7,5 +7,5 @@ Alternative Formats for Future Cohort
 	- time management
 	- clarifying objective/deliverable before lunch and before end of day
 	- clearly conveying objective/deliverable to students
-- objective at hackcamp
+- objective at Hack Camp
 	- create autonomous, collaborative community in hack camp/coding club

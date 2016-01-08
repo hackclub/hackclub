@@ -37,14 +37,14 @@ us financially support them. That said, we do plan to eventually send something
 along the lines of a "care package" (stickers, t-shirts, banners, etc) to new
 clubs when they first get started.
 
-We were also expecting to pay administative expenses to handle accounting and
+We were also expecting to pay administrative expenses to handle accounting and
 similar services to keep the organization running, but we were fortunate enough
 to get everything comped or taken care of by our fiscal sponsor.
 
 # 2016
 
 We are currently spending an estimated $10,000 each month. $8,920 is spent on
-staff salaries and $1,000 on software, transporatation, food, and other
+staff salaries and $1,000 on software, transportation, food, and other
 miscellaneous expenses for the staff.
 
 The following is our planned budget for 2016.

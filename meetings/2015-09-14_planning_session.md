@@ -21,12 +21,12 @@ _Attendees:_
       task.
 - [ ] Curriculum
   - [ ] Create workshop that enables every club member to ship a project to
-    shipit on the first day (@jonleung, hackedu/hackedu#171)
+    Shipit on the first day (@jonleung, hackedu/hackedu#171)
     - _Status:_ Sitting on a branch, no pull request submitted. Didn't complete
       this task.
 - [x] Shipit
-  - [x] Make sure that shipit.hackedu.us includes a dropdown with every high
-    school we have (@zachlatta, hackedu/hackedu#119)
+  - [x] Make sure that https://shipit.hackedu.us includes a dropdown with every
+    high school we have (@zachlatta, hackedu/hackedu#119)
     - _Status:_ Done.
 - [ ] Meta
   - [ ] Salaries paid (@zachlatta, hackedu/meta#125)
@@ -48,7 +48,7 @@ _Attendees:_
       - _Status:_ Read it, gave me some feedback. Done, but not done well. No
         feedback given.
 - [ ] Community (@hellyeah)
-  - [x] 5 organic posts with discussion in FB group (hackedu/meta#129)
+  - [x] 5 organic posts with discussion in Facebook group (hackedu/meta#129)
     - _Status:_ Done
   - [ ] 10 introduction posts (hackedu/meta#129)
     - _Status:_ Didn't hit it

@@ -59,7 +59,7 @@ _Example:_
 
 _Correct: Go to https://google.com._
 
-_Correct: Make sure the css selector is set to `#username`._
+_Correct: Make sure the CSS selector is set to `#username`._
 
 _Correct: Your website is now live at `example.com`!_
 

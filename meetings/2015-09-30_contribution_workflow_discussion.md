@@ -16,7 +16,7 @@ _This should be completed before <2015-10-07 Wed>_
 
 ### Internal Team PR workflow
 
-- [ ] Turn on PRs on zenhub
+- [ ] Turn on PRs on ZenHub
 - [ ] Message Bogidon about PRs being merged next week
 
 ### Club leader PR workflow (send to Zach Latta)

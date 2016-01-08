@@ -11,16 +11,16 @@
 - Social atmosphere feels forced
 - Waiting on curriculum
 - Everyone is sitting here doing other things
-- Checkin
+- Check-in
   - Maybe conversation could be had with co-leads
 - Energizer 
   - Worked well
   - Tiny bit awkward for last person
-  - But hey, thats what you get for being late
+  - But hey, that's what you get for being late
 
 ## Workshop Part 1
 
-- Ambigous as to what I am supposed to be doing
+- Ambiguous as to what I am supposed to be doing
 - Some people were not connected to the internet
 - Had to walk people through
 - Great introduction by Zach
@@ -40,26 +40,26 @@
     - No it hasn't... Nothing has changed
 - > If we write out all the tags (don't bother doing this):
   - This doesn't seem to be a good idea
-  - Don't tell stuff and then say it is unnesecary. I only want to know things
+  - Don't tell stuff and then say it is unnecessary. I only want to know things
     that are important and applicable!
 - Why do tags have to be closed?
 - This `<oven>` thing seems irrelevant... It doesn't effect my website. Why am
   I doing it?
 - In most cases, I want to actually have my image scale...
-- We should make the WiFI stuff highlighted
+- We should make the WiFi stuff highlighted
 - No explanation of what to do with non hosted images
-  - I had to run people through setting up imgur
+  - I had to run people through setting up Imgur
 - Veronica is frustrated
-  - Confused about html/css
-  - Wants to use someone elses code
+  - Confused about HTML/CSS
+  - Wants to use someone else's code
   - Alex doesn't seem to be letting her?
 - We should link to http://subtlepatterns.com/
 - Veronica doesn't know what to do when she has finished the tutorial
 - Rachel is struggling with her non-square image
-  - Confused "Why does this not look like Jonathans?"
+  - Confused "Why does this not look like Jonathan's?"
 - Did not _force_ people
 
 ## Demos
 
 - Some people needed to speak up - Demo links were not too
-- Wooohoo!
+- Woohoo!

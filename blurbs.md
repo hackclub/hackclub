@@ -37,7 +37,7 @@ helps high school students start and lead programming clubs at their school.
 
 In our Fall 2014 pilot, we had
 
-- 24 clubs accross the nation
+- 24 clubs across the nation
 - reached schools in 11 states
 - had over 1000 members
 - 35% of our members are women
@@ -68,7 +68,7 @@ school teams are part of Hack Club.*__
 ## Zach Runs HS Hackers
 
 All of our 24 clubs came to Hack Club through inbound interest. Many came from
-the facebook group HS Hackers, a Facebook group that representing 3,000 high
+the Facebook group HS Hackers, a Facebook group that representing 3,000 high
 schoolers from 689 schools across 46 states and 87 countries which was started
 and is run by my co-founder Zach Latta.
 

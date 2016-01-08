@@ -50,11 +50,11 @@ _In attendance_:
       - Also Jonathan thinks that it is a good idea for lab directors to take
         their meeting plans and the post-mortem blog posts and post them
         in the hackEDU leaders group as well as their cohort's chat.
-          - Instead of just linking it, they may want to provide a quick TLDR
+          - Instead of just linking it, they may want to provide a quick TL;DR
             so that other leaders can engage with the content without having
             to open the link.
 - **@zachlatta**
-  - Create a plan for how to make the Github workflow as easy as possible for
+  - Create a plan for how to make the GitHub workflow as easy as possible for
     club organizers to submit the plan for their club meetings as well as their
     post-mortem documents |
     [link to GitHub issue](https://github.com/hackedu/hackedu/issues/152)

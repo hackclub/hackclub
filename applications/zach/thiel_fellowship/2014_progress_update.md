@@ -39,7 +39,7 @@ hackEDU:
 - Ran pilot with 24 schools in the Fall
   - Reached 1000 students
     - 35% female (double national average in high school)
-    - 18% black/hispanic (3.5x national average in industry)
+    - 18% black/Hispanic (3.5x national average in industry)
   - At the two largest collegiate hackathons, PennApps X and MHacks V (>1000
     attendees each), half of the six winning teams were led by high school
     students, all of whom are part of hackEDU.
@@ -50,7 +50,7 @@ hackEDU:
 _Full question: **Where do you, or your team, need the most support right now?
 Be specific and we'll try to help where we can.**_
 
-We're currently raising $150k to bring us through the year, but my cofounder
+We're currently raising $150k to bring us through the year, but my co-founder
 and I are completely new to nonprofit fundraising and are both shooting in the
 dark with more things than we'd like. Specifically, introductions to people who
 have (1) closed large corporate sponsors, (2) extensive experience writing

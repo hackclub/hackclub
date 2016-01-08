@@ -7,28 +7,28 @@
       - Amy Sorto
       - Amanda Nguyen
       - Chaoyi
-    - Exisitng Club Organizers
+    - Existing Club Organizers
       - Neil
       - Anthony
       - David & Vivek
-      - Abeneezer
+      - Abenezer
     - Connect With Club Organizers
       - Potential Contexts
-        - HackReactor, a super legit club wants to provide mentors and
+        - Hack Reactor, a super legit club wants to provide mentors and
           potentially sponsor the clubs
         - let's catch up
-          - hey david
+          - hey David
           - hope things are going well. how's th
           - would love to have a call to catch up
           - how's x time?
       - Email 1
         - Points
-          - HackReactor
+          - Hack Reactor
             - legit coding bootcamp with large alumni network all around the
               nation
             - we want to turn their alumni network -> mentor network
         - Hi David, how are you doing?
-        - So we are talking to HackReactor (http://www.hackreactor.com/) about
+        - So we are talking to Hack Reactor (http://www.hackreactor.com/) about
           starting a partnership to get
     - How To Run A Successful Club At Your School
     - US First Notes: https://workflowy.com/#/8e2c4bc70f0b
@@ -44,9 +44,9 @@
     - Should not be like the Transformative Action Institute guide where it is
       super intimidating.
     - Should start off with the lowest hanging g first where the club organizer
-      can experiance small wins so they going.
-    - It should be broken down into manageble time chunks, i.e. only do x thing
-      provides a smal win .
+      can experience small wins so they going.
+    - It should be broken down into manageable time chunks, i.e. only do x thing
+      provides a small win.
     - Should not be a static experience
     - Should feel that they can communicate with any of the other club
       organizers very quickly

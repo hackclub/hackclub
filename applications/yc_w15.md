@@ -8,11 +8,11 @@ hackEDU's nonprofit YC application for W15.
 
 hackEDU
 
-**Organization url, if any**
+**Organization URL, if any**
 
 https://hackedu.us
 
-**If you have an online demo, what's the url?**
+**If you have an online demo, what's the URL?**
 
 N/A
 
@@ -42,7 +42,7 @@ zach@hackedu.us
 
 [redacted]
 
-**Please enter the url of a 1 minute unlisted (not private) YouTube video
+**Please enter the URL of a 1 minute unlisted (not private) YouTube video
 introducing the founders.**
 
 https://youtu.be/uTyn-ljKlyw
@@ -54,9 +54,9 @@ information about themselves.**
 zachlatta - zach@hackedu.us
 
 **Please tell us about an interesting project, preferably outside of class or
-work, that two or more of you created together. Include urls if possible.**
+work, that two or more of you created together. Include URLs if possible.**
 
-While at PennApps, the University of Pennsylvania’s student hackathon, I
+While at PennApps, the University of Pennsylvania's student hackathon, I
 created an integrated development environment for iOS apps that runs in any
 browser. iOS development has a high barrier to entry because of the associated
 costs, but my solution enables anyone to do it, even from a Chromebook. Out of
@@ -78,7 +78,7 @@ an extended pilot with 30 schools this semester.
 **If you've already started working on it, how long have you been working and
 how many lines of code (if applicable) have you written?**
 
-I’ve been working on hackEDU since February 2013 part-time and started working
+I've been working on hackEDU since February 2013 part-time and started working
 on it full-time in September. The website has 800 lines of code and the
 students in our clubs have generated over 15,000 lines of code.
 
@@ -86,7 +86,7 @@ students in our clubs have generated over 15,000 lines of code.
 made since the last time you applied? Anything change?**
 
 In the last application, I had just started our first pilot with 7 schools.
-Since then, I’ve expanded our program to 30 schools, consisting of 350 students
+Since then, I've expanded our program to 30 schools, consisting of 350 students
 weekly.
 
 **Which of the following best describes your progress?**
@@ -111,20 +111,20 @@ N/A
 
 **What is your monthly growth rate? (in users or revenue or both)**
 
-HackEDU’s user base has been growing by 46% monthly since the first club joined
+HackEDU's user base has been growing by 46% monthly since the first club joined
 in January of 2013.
 
-I’m currently focused on iterating on hackEDU’s model by working closely with
-each club and growing its community. I’ve been talking with schools for our
+I'm currently focused on iterating on hackEDU's model by working closely with
+each club and growing its community. I've been talking with schools for our
 current beta since March and onboarded 24 of the 30 schools this September. I
 onboarded the other 6 of the 30 periodically through Spring 2014.
 
 **Why did you pick this idea to work on? Do you have domain expertise in this
 area? How do you know this is going to work?**
 
-Teaching people to code is part of my DNA, I’ve been doing it since I was in
+Teaching people to code is part of my DNA, I've been doing it since I was in
 the 3rd grade.  When I entered high school, I started a programming club
-because my school didn’t offer any computer science courses. During the 1st
+because my school didn't offer any computer science courses. During the 1st
 year, I helped 15 students learn to program. By the end of the 2nd year, the
 students in my club launched games on the Android Play Store, won high-profile
 hackathons, founded a web design firm that landed real clients, and secured
@@ -139,14 +139,14 @@ culture, which stifles creativity, agency, and excitement.
 
 Being 16, I am the age of the target demographic, and this is the best time to
 do it because this is the first generation of kids that grew up with the App
-Store. We don’t need to convince people that it's cool to build and put
+Store. We don't need to convince people that it's cool to build and put
 something onto their phones.
 
 **What's new about what you plan to do?**
 
-Other similar organizations, such as TEALS, ScriptEd, and Google’s CS First,
+Other similar organizations, such as TEALS, ScriptEd, and Google's CS First,
 generally interface with students through teachers or administration. This is a
-problem because teachers tend to be non-technical and don’t understand hacker
+problem because teachers tend to be non-technical and don't understand hacker
 culture. This leads to a lot of red tape, bureaucracy, and mandated fixed
 curriculum, which ultimately disconnects with students and becomes ineffective.
 
@@ -157,7 +157,7 @@ already technical and often involved in hacker culture, it allows us to onboard
 new schools significantly easier and have students build projects they care
 about instead being forced through a fixed curriculum.
 
-We do recognize that there are drawbacks as well: students’ schedules can be
+We do recognize that there are drawbacks as well: students' schedules can be
 extremely packed, leading to fickle attendance, but we only need a single
 dedicated student to form a successful programming club. Judging from
 enrollment in student-led organizations like Key Club International, which has
@@ -239,13 +239,13 @@ Male
 
 http://zachlatta.com
 
-**Github URL**
+**GitHub URL**
 
 https://github.com/zachlatta
 
-**Linkedin URL**
+**LinkedIn URL**
 
-Don’t have one.
+Don't have one.
 
 **Facebook URL**
 

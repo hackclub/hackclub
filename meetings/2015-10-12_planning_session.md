@@ -98,7 +98,7 @@ _Attendees_:
 
 ### Things in Calendar Invite
 
-- Check in pairing a club leader w/ gemma
+- Check in pairing a club leader w/ Gemma
 - Getting people to HackingEDU
 - plan to do the transition from Teagan to Jeremy
   - [x] Get in cohort chat
@@ -146,7 +146,7 @@ _Attendees_:
 
 ### Technical
 
-- [ ] Add user analytics to Packrat (@zachlatta, hackeud/packrat#1)
+- [ ] Add user analytics to Packrat (@zachlatta, hackedu/packrat#1)
 - [ ] Refactor Markcop into individual checks (@MaxWofford, hackedu/markcop#13)
   - Headers
     - [ ] Newlines before and after (hackedu/markcop#12)
@@ -163,6 +163,6 @@ _Attendees_:
 ### Misc
 
 - [ ] YC application (includes video) (@zachlatta, hackedu/meta#184)
-- [ ] Check in pairing a club leader w/ gemma (@MaxWofford, hackedu/hackedu#340)
+- [ ] Check in pairing a club leader w/ Gemma (@MaxWofford, hackedu/hackedu#340)
 - [ ] Plan meeting to talk about Slack and IRC and how we're going to use them
   (@zachlatta, hackedu/meta#214)

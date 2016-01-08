@@ -25,7 +25,7 @@ _Attendees:_
 
 ## Additional Notes
 
-1. Who should be allowed in the slack
+1. Who should be allowed in the Slack
   1. Everyone -- Club Leaders + teams + members
   2. Club Leaders + Leadership teams
   3. Club Leaders we interface with only
@@ -48,8 +48,8 @@ My Thoughts:
   1. Manually
   2. Slackin: https://github.com/rauchg/slackin
 2. How do people navigate to the Slack
-  1. Slackin link should check if they are already authed and forward them to
-     the slack
+  1. Slackin link should check if they are already authenticated and forward
+     them to the Slack
 3. Implementation
   1. Timeline
   2. Who's doing it?
@@ -60,7 +60,7 @@ My Thoughts:
 
 Should cohorts be private or public group chats?
 
-If we break slack: Zulip: https://zulip.com/
+If we break Slack: Zulip: https://zulip.com/
 
 Welcoming people
 
@@ -68,7 +68,7 @@ Welcoming people
   - bot could save their response
 - celebration
 
-Slack-irc integration with logging
+Slack-IRC integration with logging
 
 Double down on getting people to download mobile app -can send everyone push
 notifications any time we want

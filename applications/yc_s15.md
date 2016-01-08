@@ -8,11 +8,11 @@ hackEDU's nonprofit YC application for S15.
 
 hackEDU
 
-**Organization url, if any**
+**Organization URL, if any**
 
 https://hackedu.us
 
-**If you have an online demo, what's the url?**
+**If you have an online demo, what's the URL?**
 
 N/A
 
@@ -56,13 +56,13 @@ themselves.**
 - zach@hackedu.us
 - jonathan@hackedu.us
 
-**Please enter the url of a 1 minute unlisted (not private) YouTube video
+**Please enter the URL of a 1 minute unlisted (not private) YouTube video
 introducing the founders.**
 
 https://youtu.be/RxdJ2zDuiV0
 
 **Please tell us about an interesting project, preferably outside of class or
-work, that two or more of you created together. Include urls if possible.**
+work, that two or more of you created together. Include URLs if possible.**
 
 We wrote a script that exploits referral codes to order food and delivery for
 less than $2 per meal. We've been using it nearly every weekday since November
@@ -314,11 +314,11 @@ Male
 
 https://zachlatta.com
 
-**Github URL**
+**GitHub URL**
 
 https://github.com/zachlatta
 
-**Linkedin URL**
+**LinkedIn URL**
 
 https://www.linkedin.com/in/zachlatta
 
@@ -386,7 +386,7 @@ Male
 
 **Schools, Degrees and Years of Graduation**
 
-University of Pennsylvania, BSE in Computer Engineering, 2013
+University of Pennsylvania, Bachelor of Science in Computer Engineering, 2013
 The Haverford School, GED, 2009
 
 **Employers, Position / Titles and Dates**
@@ -422,11 +422,11 @@ Jun - Aug 2011
 
 http://jonl.org/
 
-**Github URL**
+**GitHub URL**
 
 https://github.com/jonleung
 
-**Linkedin URL**
+**LinkedIn URL**
 
 www.linkedin.com/in/jonathanjleung
 
@@ -442,9 +442,9 @@ https://twitter.com/jonathanjleung
 (non-computer) system to your advantage.**
 
 I set the status quo for hackathons to provide transportation reimbursement by
-"hacking" MegaBus's perception of hackathons.
+"hacking" Megabus's perception of hackathons.
 
-While organizing PennApps in 2011, I wanted MegaBus to become our "official
+While organizing PennApps in 2011, I wanted Megabus to become our "official
 transportation sponsor". They were interested but afraid of associating
 themselves with the "hackers" in the news.
 
@@ -466,7 +466,7 @@ This past summer I created and taught a curriculum that took 20 high school
 students, many of whom lacked confidence, technical ability, and initiative,
 and turned them into hackers. After the program, some of my students went on to
 start their own non-profit that organizes hackathons in NYC, one of which
-Jeremy Rossman, founder of Make School, called "one of the best hackathons
+Jeremy Rossmann, founder of Make School, called "one of the best hackathons
 [he's] been to".
 
 > Jonathan, thank you for all you've taught me. Now I feel like wherever life

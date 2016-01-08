@@ -60,7 +60,7 @@
 ## Jonathan
 
 - Ship Maze workshop (#339)
-  - Communicate its existance
+  - Communicate its existence
 - MVP of playbook portal (just a Markdown file) (issue #88)
   - Links to each workshop
   - Links to icebreakers
@@ -81,7 +81,7 @@
 
 - Get through existing board queue
 - Think about vision
-- Move retrospective and kudos to wednesday
+- Move retrospective and kudos to Wednesday
 
 ## Synthesized Tasks for This Week
 
