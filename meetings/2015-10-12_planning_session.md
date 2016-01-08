@@ -146,7 +146,7 @@ _Attendees_:
 
 ### Technical
 
-- [ ] Add user analytics to Packrat (@zachlatta, hackeud/packrat#1)
+- [ ] Add user analytics to Packrat (@zachlatta, hackedu/packrat#1)
 - [ ] Refactor Markcop into individual checks (@MaxWofford, hackedu/markcop#13)
   - Headers
     - [ ] Newlines before and after (hackedu/markcop#12)
