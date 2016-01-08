@@ -133,12 +133,11 @@ view, don't forget to replace `YOUR_TWILIO_ACCOUNT_SID_HERE` and
 
 Below are all of the things you can do with Twilio, with examples:
 
-[group_messaging]: https://jsbin.com/gist/5c58bdf177d16b802808?html,js,console,output
-[colors]: https://jsbin.com/gist/844e43afa19b372d28ef?html,js,console,output
-[group_chat]: https://jsbin.com/gist/cdf3c027fe88a3c23573?html,js,console,output
-[gif_search]: https://jsbin.com/gist/f6d914942756ce112b3c?html,js,console,output
-[gif_background]: https://jsbin.com/gist/f6d914942756ce112b3c?html,js,console,output
-
+[group_messaging]: https://jsbin.com/gist/488f8384c28d25a4844f?html,js,console,output
+[colors]: https://jsbin.com/gist/c30c196a80adf5758870?html,js,console,output
+[group_chat]: https://jsbin.com/gist/784721ab6c6535616700?html,js,console,output
+[gif_search]: https://jsbin.com/gist/96cd1ae7856da04d9344?html,js,console,output
+[gif_background]: https://jsbin.com/gist/fbc17a8a8f43a7b9e5ea?html,js,console,output
 
 ## Twilio Documentation
 

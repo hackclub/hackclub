@@ -12,6 +12,14 @@ Twilio.listenForMessages(function (msg) {
     });
 });
 
+
+
+// The below code consists of two functions that make the above code work.
+// You're not expected to know how it works, but you're welcome to check it out
+// if you'd like!
+
+
+
 // This function searches https://giphy.com/ for a GIF that matches searchQuery.
 // This is a function that returns a special value called a Promise. We don't
 // expect you to know how this works or what Promises are. All you need to worry
@@ -42,6 +50,7 @@ function giphyURL(searchQuery) {
   var GIPHY_TOKEN="dc6zaTOxFJmzC";
   var encodedQuery = encodeURIComponent(searchQuery);
 
-  return "http://api.giphy.com/v1/gifs/search?q=" + encodedQuery +
+  return "https://surrogate.hackedu.us/api.giphy.com/v1/gifs/search" +
+    "?q=" + encodedQuery +
     "&api_key=" + GIPHY_TOKEN;
 }
