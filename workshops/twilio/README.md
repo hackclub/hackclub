@@ -24,22 +24,15 @@ works.
 This tutorial will likely show you things that you didn't know you could
 do. I'd recommend skipping around in the tutorial and find what interests you.
 
-## Outline
-
-This tutorial is made up of two parts:
-
-1. [Part 1: Setup + Making Your First Phone Call with Twilio](#part-1-setup--making-your-first-phone-call-with-twilio)
-2. [Part 2: Exploring the Capabilities of Twilio](#part-2-exploring-the-capabilities-of-twilio)
-
-## Part 1: Setup + Making Your First Phone Call with Twilio
+## Part 1: Setup And Making Your First Phone Call with Twilio
 
 We're going to write some code that calls your phone and speaks some
 text.
 
 Ready?
 
-Open [this JS Bin*][starter] in a new tab. Leave this tab open for the rest of the
-tutorial.
+Open [this JS Bin*][starter] in a new tab. Leave this tab open for the rest of
+the tutorial.
 
 _*JS Bin is a website for easily writing code._
 
@@ -147,11 +140,16 @@ Examples of things other people have built (open each example in a new tab to
 view, don't forget to replace `YOUR_TWILIO_ACCOUNT_SID_HERE` and
 `YOUR_TWILIO_AUTH_TOKEN_HERE` with your values to test the examples out):
 
-- [Group Messaging - Text a number to send a single message to multiple friends][group_messaging]
-- [Colors - Text a number a color to change the background color of a website][colors]
-- [Group Chat _(advanced)_ - Expanding on Group Messaging, a proper group chat application][group_chat]
-- [GIF Search _(advanced)_ - Text a number to search the internet for GIFs][gif_search]
-- [GIF Background _(advanced)_ - Set the background of a website to a GIF that matches what you text][gif_background]
+- [Group Messaging - Text a number to send a single message to multiple
+  friends][group_messaging]
+- [Colors - Text a number a color to change the background color of a
+  website][colors]
+- [Group Chat _(advanced)_ - Expanding on Group Messaging, a proper group
+  chat application][group_chat]
+- [GIF Search _(advanced)_ - Text a number to search the internet for
+  GIFs][gif_search]
+- [GIF Background _(advanced)_ - Set the background of a website to a GIF that
+  matches what you text][gif_background]
 
 Below are all of the things you can do with Twilio, with examples:
 
