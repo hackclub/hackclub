@@ -87,8 +87,8 @@ _In attendance:_
     - Getting the word out
       - Big Facebook groups for the school - posted in a variety of groups
       - Told people to tell their friends
-      - Tons of people don't have Facebooks. Going around with spreadsheet was a
-        great way to get people interested.
+      - Tons of people don't have Facebook accounts. Going around with
+        spreadsheet was a great way to get people interested.
       - Flashy posters
       - Told all of the teachers who teach computer classes (everything from
         word processing to programming) to spread the word to their classes
@@ -98,7 +98,7 @@ _In attendance:_
         - Had conflicts - wanted people to work on anything they wanted, but
           also wanted people to work on specific projects
       - Communication - most of it was by Facebook, but many members didn't have
-        Facebooks
+        Facebook accounts
 - Hack Camp model
   - Have to watch out for midterms and finals
 - Longer meetings
