@@ -43,7 +43,7 @@ tutorial.
 
 _*JS Bin is a website for easily writing code._
 
-[starter]: https://jsbin.com/gist/770b112138fe94ce1b88?html,js,output
+[starter]: https://jsbin.com/gist/751ca529c942eb4763c8?html,js,output
 
 We are going to use a service called Twilio to send text messages
 and make phone calls.
