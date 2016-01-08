@@ -27,7 +27,7 @@ programming clubs at these schools, and then help students open programming
 clubs at some of those 1,000 high schools when the next school year starts
 (this year).
 
-(MAYBE INCLUDE PARAGRAPH ABOUT SERVING UNDERPRIVILEGED/UNDERRPRESENTED
+(MAYBE INCLUDE PARAGRAPH ABOUT SERVING UNDERPRIVILEGED/UNDERREPRESENTED
 POPULATIONS)
 
 Is this something you're interested in contributing to? If so, I'd love to talk
