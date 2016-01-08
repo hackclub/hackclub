@@ -55,7 +55,7 @@ Segmentation
   care about with code. We do this by helping to create, connect, and grow
   closely knit student-run coding clubs in high schools.
 
-### Key Mey Metric
+### Key Metric
 
 - number of programming projects per person built outside of class.
 
@@ -100,7 +100,7 @@ Straight from Hacker Schools Website:
 
 **Active Collaboration**
 
-**Problem in HS people don't reall yknow what they're doing, let's just make
+**Problem in HS people don't really know what they're doing, let's just make
 things and you'll eventually figure it out**
 
 #### Result
@@ -115,7 +115,7 @@ things and you'll eventually figure it out**
   spreading their knowledge and expertise to other club organizers and then to
   members, we can increase the number of projects built by those clubs.
 - 1st and 2nd year high school students will more readily join clubs than 3rd
-  and 4th years. Measurability: when spending the same amount effort, more 1st
-  and 2nd years join than 3rd or 4th years.
+  and 4th years. How to test: when spending the same amount effort, more 1st and
+  2nd years join than 3rd or 4th years.
 - Having 1st and 2nd year high school organizers join clubs will allow them to
   take on leadership positions later in the club. 
