@@ -18,4 +18,4 @@ Jonathan will manually test Twilio to see if he can signup multiple times
   that club members can use. This promo code last until ~January 24th with $100
   worth of credit.
 - Club leaders will make it known to members not to abuse the credit and that if
-  they need more crediit, they can create their own twilio accounts.
+  they need more credit, they can create their own Twilio accounts.
