@@ -7,7 +7,7 @@ Need lesson plans to be specific:
 
 Curriculum doesn't need to be our focus, solidifying knowledge should be
 
-- 15 minutes of codecademy learning functions instead of building our own custom
+- 15 minutes of Codecademy learning functions instead of building our own custom
   curriculum.
 - Students who understand concepts explain it to students who don't, solidifying
   their knowledge.
