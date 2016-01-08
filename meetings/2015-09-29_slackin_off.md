@@ -48,8 +48,8 @@ My Thoughts:
   1. Manually
   2. Slackin: https://github.com/rauchg/slackin
 2. How do people navigate to the Slack
-  1. Slackin link should check if they are already authed and forward them to
-     the Slack
+  1. Slackin link should check if they are already authenticated and forward
+     them to the Slack
 3. Implementation
   1. Timeline
   2. Who's doing it?
@@ -68,7 +68,7 @@ Welcoming people
   - bot could save their response
 - celebration
 
-Slack-irc integration with logging
+Slack-IRC integration with logging
 
 Double down on getting people to download mobile app -can send everyone push
 notifications any time we want
