@@ -11,7 +11,7 @@ _Attendees:_
 
 1. Move weekly retrospectives to Wednesday
 2. Aim for moving team meetings to Wednesday
-3. Setup monthly one on ones with club leaders, 30 mins each
+3. Setup monthly one on ones with club leaders, 30 minutes each
 4. Focus on getting club member attendance next week
 
 ## Discussion topics
