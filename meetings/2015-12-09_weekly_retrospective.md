@@ -25,7 +25,7 @@ _In attendance:_
   represented on the board?
 - Ideas
   - We're going to try to use `first-timers-only` label
-    - once applied, cannot be unapplied
+    - once applied, cannot be removed
   - Feel free to delete labels that have not been applied to any issues ever.
   - The weekly meta issue is going to sit at the top of the In Progress column.
 - Todo
