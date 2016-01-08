@@ -36,7 +36,7 @@ readable, consistent files using Markdown.
 - Headers must be preceded and followed by a blank line except at the beginning
   of a file.
 - Headers must follow the
-  [titlecase capitalisation](http://www.grammar-monster.com/lessons/capital_letters_title_case.htm)
+  [titlecase capitalization](http://www.grammar-monster.com/lessons/capital_letters_title_case.htm)
   scheme.
 
 Good:
