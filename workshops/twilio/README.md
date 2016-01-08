@@ -197,7 +197,7 @@ Call the given phone number and play the given music file (in the below example,
 an MP3).
 
 ```js
-Twilio.callAndSay("1-555-555-5555", "http://mean2u.rfshq.com/downloads/music/giveyouup.mp3");
+Twilio.callAndPlay("1-555-555-5555", "http://mean2u.rfshq.com/downloads/music/giveyouup.mp3");
 ```
 
 ##### Receive Text Messages
@@ -206,7 +206,7 @@ Listen for messages and run the given function whenever one is received.
 
 ```js
 // When a text message is received...
-Twilio.listenForMessage(function (msg) {
+Twilio.listenForMessages(function (msg) {
   // log the received message to the console
   console.log(msg)
 });
