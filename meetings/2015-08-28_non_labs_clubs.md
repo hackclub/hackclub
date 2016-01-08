@@ -22,11 +22,11 @@ _In attendance:_
 - How do we want to structure the hackEDU community?
   - Group Chat for Labs?
     - Slack, IRC, messenger
-  - TODO: create new public group -- zach will create it
+  - TODO: create new public group -- Zach will create it
   - TODO: encourage club leaders to add their members to this public group
   - TODO: Code of Conduct -- adopt one
   - TODO: Zach starts Messenger Group chats -- cohort 1 chat today
-    - explicitly get everyone to intro themself
+    - explicitly get everyone to intro themselves
     - "overcommunicate. you should be messaging this chat any time you think of
       an idea or run into a problem"
 - How do we get first Labs call set up? All 12 directors or in cohorts of 6?
