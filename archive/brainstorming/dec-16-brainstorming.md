@@ -3,7 +3,7 @@
 - README
   - Have a survey in our group for which ideas people think are awesome and ask
     them if they want to work on the idea if they like it.
-  - Perhaps Zach and I will pick a technical project to work on for funzies.
+  - Perhaps Zach and I will pick a technical project to work on for fun.
   - Strategy
     - Start off by doing every task yourself until
       - You have it down
@@ -11,10 +11,10 @@
     - Start off "empowering" them to do much easier tasks first
 - Requirements
   - We need to ship more public
-    - Specifically targeted for all members to engage in, specifically github
+    - Specifically targeted for all members to engage in, specifically GitHub
       repos
 - Completely Internal
-  - Officetrivia
+  - Office trivia
     - Find a place to take calls
   - Connection with Organizers
     - Make physical flash cards to memorize all names and schools of club
@@ -40,10 +40,10 @@
   - https://workflowy.com/#/2e696152cc1d
 - Curriculum
   - All learning is project based but you want to make sure that you understand
-    all the legos in the project as well.
+    all the Legos in the project as well.
   - Each project has two parts
     - How to do the project
-    - And what each piece of the lego
+    - And what each piece of the Lego
   - Reach out to
     - Flatiron
     - Hack Reactor
@@ -58,11 +58,11 @@
   - Actively curate hackathons for our members to attend
     - Show the number of high school hackers there
     - Create hackEDUers takes down hackathon X for each hackathon
-  - Partership with MLH
+  - Partnership with MLH
     - Get our students to as many hackathons as possible
   - Partner with CodeDay
 - Getting Help and Creating Community
-  - Creating Interclub Help
+  - Creating inter-club help
     - Create a help desk for inter club communication
 - Weekend Hackathons
 - User Research
@@ -74,7 +74,7 @@
     - Make their website more awesome (we need to have a mockup of what it looks
       like)
 - Recruiting
-  - Understanding Generationalness
+  - Understanding the important of having members be across grades
     - Your club will only continue to be helping people
     - As the lead organizer you should be doing as little work as possible
   - Invite as many people to the club
@@ -91,19 +91,19 @@
     - general building remote hackathon
 - Social Media
   - When someone ships a project, they should post it in the hackEDU group with
-    a github URL and a live URL. Show hackEDU. And put it onto showHn,
-    Subreddit. "Show HS Hackers". When someone makes a PullRequest that's
+    a GitHub URL and a live URL. Show hackEDU. And put it onto Show HN,
+    subreddit. "Show HS Hackers". When someone makes a pull request that's
     considered shipped.
     - Create a way to ship really easily
-    - Static generated site with github
+    - Static generated site with GitHub
     - Anyone who submits, they get commit access
-    - Create a YML
+    - Create a YAML
   - Celebrate all the wins on social media
     - Adding Their Name to the GitHub Repo to a Names Doc
       - Pull Request
       - Add Name
       - Utility crossposts to Facebook "Blah name was just added"
-        - YEAHH!!!!
+        - YEAH!!!!
     - Posting a project
       - Easy
         - Submit to a webform that makes a pull request
@@ -112,7 +112,7 @@
             - Image
             - Description
             - Zip File
-        - We post to the fb group that BLAH just shipped a project!
+        - We post to the Facebook group that BLAH just shipped a project!
         - Everyone is trying to help everyone ship
       - Hard
         - Make a Pull Request
@@ -122,7 +122,7 @@
     - Join the hackEDUers club
     - Make sure every person is in High School Hackers
   - Organizers Facebook chat.
-  - Organizers FB Group
+  - Organizers Facebook Group
     - Think about the experience of a new user to the group
     - Poke each individual organizer to post something in the group
     - Have them ask any questions that they have in the group
@@ -131,7 +131,7 @@
 - Hackathons
   - Get as many people to as many hackathons as possible
     - Help compile a massive listing of hackathons, have every club member
-      recieve notifcations about it
+      receive notifications about it
 - "Press"
   - Create a webpage for your club and constantly update it with projects that
     everyone is working on
