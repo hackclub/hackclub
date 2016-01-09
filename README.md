@@ -15,7 +15,7 @@ Quick Hack Club links:
 
 | Action                                    | Link                          |
 | ----------------------------------------- | ----------------------------- |
-| Join the Slack _(we're here almost 24/7)_ | https://slack.hackclub.io     |
+| Join the Slack _(we're here almost 24/7)_ | [`SLACK.md`](SLACK.md)        |
 | See our workshops                         | https://workshops.hackclub.io |
 | Start a club                              | https://hackclub.io/apply     |
 | See our website                           | https://hackclub.io           |
@@ -26,7 +26,7 @@ Quick Hack Club links:
 Contributions are welcome!
 
 If you need any help, please contact us at team@hackclub.io or on our
-[Slack](https://slack.hackclub.io).
+[Slack](SLACK.md).
 
 1. Check out our [public issues board][0]. If your issue isn't on the board,
    [open a new one][1].
