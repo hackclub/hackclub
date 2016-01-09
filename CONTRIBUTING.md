@@ -32,10 +32,10 @@ interested in checking out issues with the
 
 ## Talk About It On Slack
 
-Wasting time is not fun! If you are going to make a big change to a workshop (or
-even adding a new one) it is recommended that you [join our Slack][slack] and
-talk about it on the [`#curriculum` channel][curriculum_channel]. To get an even
-more speedy response, mention `@jonl` and `@harrison`.
+If you are going to make a big change, discuss it on our Slack in the
+[`#curriculum` channel][curriculum_channel] to give us a heads up
+([Don't have a Slack account?][slack]). To get an even more speedy response,
+mention `@jonl` and `@harrison`.
 
 [slack]: https://slack.starthackclub.io
 [curriculum_channel]: https://starthackclub.slack.com/messages/curriculum/
