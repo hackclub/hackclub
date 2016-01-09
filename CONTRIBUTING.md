@@ -48,16 +48,20 @@ very easy for someone else claim and implement.
 
 [create_issue]: https://github.com/hackclub/hackclub/issues/new
 
-## Make A PR
+## Make A Change
 
-After you have made your changes and pushed them onto your GitHub fork, you
-should create a [Pull Request][pull_request]. It is best practice to have
-different Pull Requests for different groups of commits which have different
-purposes. For example, you could submit both a Pull Request containing a typo
-fix and a new workshop, because those are different things they belong in
-different Pull Requests. If the Pull Request resolves an issue, be sure to have
-the issue number in the description.
+1. All contributions should be made through your own fork
+   ([Need help forking a repository?][fork]). Once you have your own fork set up
+   you can begin making your changes on it.
+2. Check out a branch from your fork that describes the change being made. Make
+   sure you only include commits in this branch that are related to the branch's
+   feature.
+3. After you have made your changes and pushed them onto your GitHub fork, you
+   can create a Pull Request
+   ([Want help submitting a Pull Request?][pull_request]). If the Pull Request
+   resolves an issue, be sure to have the issue number in the description.
 
+[fork]: https://help.github.com/articles/fork-a-repo/
 [pull_request]: https://help.github.com/articles/using-pull-requests/
 
 ## Wait For Review
