@@ -42,9 +42,9 @@ mention `@jonl` and `@harrison`.
 
 ## Create An Issue
 
-If you don't feel like completing a fix yourself, you can
-[create an issue][create_issue] on the repository. Remember to be as specific as
-possible so it is very easy for someone else claim and implement.
+If you don't know how to fix something yourself, you can
+[create an issue][create_issue]. Remember to be as specific as possible so it is
+very easy for someone else claim and implement.
 
 [create_issue]: https://github.com/hackclub/hackclub/issues/new
 
