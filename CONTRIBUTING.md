@@ -6,8 +6,7 @@ This is a guide explaining the contribution workflow we use at Hack Club!
 - [Find something you want to change](#find-something-to-change)
 - [If it is big, talk about it on Slack](#talk-about-it-on-slack)
 - [Create an issue if you want to proceed](#create-an-issue)
-- [Make a PR](#make-a-pr)
-- [Wait for review](#wait-for-review)
+- [Make a change](#make-a-change)
 
 ## Code of Conduct
 
