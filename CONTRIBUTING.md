@@ -60,19 +60,12 @@ very easy for someone else claim and implement.
    can create a Pull Request
    ([Want help submitting a Pull Request?][pull_request]). If the Pull Request
    resolves an issue, be sure to have the issue number in the description.
+4. Wait for your PR to be reviewed by one of the core contributors. We'll assess
+   for following the [contribution guidelines](GUIDELINES.md) and if it is
+   intended to solve an issue, how well it does so.
 
 [fork]: https://help.github.com/articles/fork-a-repo/
 [pull_request]: https://help.github.com/articles/using-pull-requests/
-
-## Wait For Review
-
-Before we can merge your code into the repository it has to be reviewed by one
-of the core contributors. It will be assessed on how well it follows the
-[contribution guidelines](GUIDELINES.md) and if it is intended to solve an
-issue, how well it does so.
-
-If all goes well, your code should be merged in very quickly... If not, then a
-merge is usually just a quick fix away!
 
 ## Celebrate!
 
