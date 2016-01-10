@@ -267,14 +267,14 @@ Note that <img> does not have a closing tag
      (think of attributes like settings)
 ```
 
-For example, if an oven was a tag:
+For example, in an `<input>` tag:
 
 ```html
-<oven temperature="350">
+<input type="text">
 ```
 
-- `temperature` is the name of the attribute
-- `350` is the value of the `temperature` attribute
+- `type` is the name of the attribute
+- `"text"` is the value of the `type` attribute
 
 
 ```html
