@@ -140,24 +140,22 @@ Examples of things other people have built (open each example in a new tab to
 view, don't forget to replace `YOUR_TWILIO_ACCOUNT_SID_HERE` and
 `YOUR_TWILIO_AUTH_TOKEN_HERE` with your values to test the examples out):
 
-- [Group Messaging - Text a number to send a single message to multiple
-  friends][group_messaging]
-- [Colors - Text a number a color to change the background color of a
-  website][colors]
-- [Group Chat _(advanced)_ - Expanding on Group Messaging, a proper group
-  chat application][group_chat]
-- [GIF Search _(advanced)_ - Text a number to search the internet for
-  GIFs][gif_search]
-- [GIF Background _(advanced)_ - Set the background of a website to a GIF that
-  matches what you text][gif_background]
+- [Group Messaging][example_1] - Text a number to send a single message to
+  multiple friends.
+- [Colors][example_2] - Text a number a color to change the background color of
+  a website.
+- [Group Chat _(advanced)_][example_3] - Expanding on Group Messaging, a proper
+  group chat application.
+- [GIF Search _(advanced)_][example_4] - Text a number to search the internet
+  for GIFs.
+- [GIF Background _(advanced)_][example_5] - Set the background of a website to
+  a GIF that matches what you text.
 
-Below are all of the things you can do with Twilio, with examples:
-
-[group_messaging]: https://jsbin.com/gist/488f8384c28d25a4844f?html,js,console,output
-[colors]: https://jsbin.com/gist/c30c196a80adf5758870?html,js,console,output
-[group_chat]: https://jsbin.com/gist/784721ab6c6535616700?html,js,console,output
-[gif_search]: https://jsbin.com/gist/96cd1ae7856da04d9344?html,js,console,output
-[gif_background]: https://jsbin.com/gist/fbc17a8a8f43a7b9e5ea?html,js,console,output
+[example_1]: https://jsbin.com/gist/488f8384c28d25a4844f?html,js,console,output
+[example_2]: https://jsbin.com/gist/c30c196a80adf5758870?html,js,console,output
+[example_3]: https://jsbin.com/gist/784721ab6c6535616700?html,js,console,output
+[example_4]: https://jsbin.com/gist/96cd1ae7856da04d9344?html,js,console,output
+[example_5]: https://jsbin.com/gist/fbc17a8a8f43a7b9e5ea?html,js,console,output
 
 ## Twilio Documentation
 
