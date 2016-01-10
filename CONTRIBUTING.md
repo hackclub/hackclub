@@ -20,9 +20,7 @@ If you join in or contribute to the Hack Club ecosystem, please respect our
 
 ## Find Something To Change
 
-Usually, as a contributor you know what you want to work on. Perhaps something
-along the lines of workshops, standards or implementing guidelines. However, if
-you do not know where to begin you can always search through the open
+If you do not know where to begin you can always search through the open
 [GitHub issues][issues] to find something suitable. If you are a beginner (or
 have never contributed to an Open Source repository before) you may be
 interested in checking out issues with the
