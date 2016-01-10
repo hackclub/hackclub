@@ -13,8 +13,8 @@ This is a guide explaining the contribution workflow we use at Hack Club!
 Hack Club's community includes people from many different backgrounds. Hack Club
 is committed to providing a friendly, safe and welcoming environment for all.
 
-If you join in or contribute to the Hack Club ecosystem, you are encouraged to
-follow our [Code of Conduct](CONDUCT.md) while doing so.
+If you join in or contribute to the Hack Club ecosystem, please respect our
+[Code of Conduct](CONDUCT.md).
 
 ## Find Something To Change
 
