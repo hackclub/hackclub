@@ -44,8 +44,8 @@ mention `@jonl` and `@harrison`.
 ## Create An Issue
 
 If you don't know how to fix something yourself, you can
-[create an issue][create_issue]. Remember to be as specific as possible so it is
-very easy for someone else claim and implement.
+[create an issue][create_issue]. Be specific enough that others can easily claim
+the task and implement it.
 
 [create_issue]: https://github.com/hackclub/hackclub/issues/new
 
