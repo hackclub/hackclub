@@ -2,6 +2,8 @@
 
 This is a guide explaining the contribution workflow we use at Hack Club!
 
+**Table of Contents**
+
 - [Code of Conduct](#code-of-conduct)
 - [Find something you want to change](#find-something-to-change)
 - [If it is big, talk about it on Slack](#talk-about-it-on-slack)
