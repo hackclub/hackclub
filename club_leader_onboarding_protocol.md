@@ -7,6 +7,10 @@ The things we need to do to onboard a new club leader.
 - [ ] Add to GitHub Leaders team
 - [ ] Add to Facebook private group
   - [ ] Give them tips to introduce themselves
+- [ ] Talk about what the the [code of conduct][code-of-conduct] is and why it's
+      important
+
+[code-of-conduct]: https://github.com/hackclub/hackclub/blob/master/CONDUCT.md
 
 ## Acceptance Email
 
