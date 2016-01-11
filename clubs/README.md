@@ -177,6 +177,12 @@ will come to the front and demo what they built at the end of the meeting.
 A small, but easy way to dramatically improve your first meeting is to bring
 food. Pastries or cookies from a local supermarket are cheap and work well.
 
+Also, to set the tone and culture of your club, you should introduce the
+[code of conduct][coc] in the introduction presentation and emphasize why it's
+important.
+
+[coc]: ../CONDUCT.md
+
 We recommend the following format for your first meeting:
 
 1. Wait for hackers (club members) to arrive (5 minutes)
