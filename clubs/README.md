@@ -23,7 +23,7 @@ We think of Hack Clubs very broadly:
 
 Most Hack Clubs end up looking like never-ending hackathons, where club members
 come together twice a week (generally for ~1.5 hours) and work on projects
-together. To start out, we have a series of 1 hour workshops (in the
+together. To get members started, we have a series of 1 hour workshops (in the
 [`workshops/`](../workshops/) directory) to get members started. More on how
 workshops work in [_The First Meeting_](#the-first-meeting).
 
@@ -31,7 +31,7 @@ Throughout the school year, Hack Clubs go to (and sometimes host) hackathons,
 work on larger group projects, and---most importantly---build a thriving
 community of hackers at their high schools.
 
-In the below sections we'll walk you through the process of setting up your Hack
+In the sections below we'll walk you through the process of setting up your Hack
 Club and running your first few meetings. After you've gotten the first two
 meetings down, you should be set for the remainder of the school year :smile:.
 
@@ -46,7 +46,7 @@ start a club, but it's very important to get each of the following right.
 - [ ] Club registration
 - [ ] 50 student sign-ups for the first meeting
 
-_(each of the below sections corresponds with a bullet point)_
+_(each of the sections below corresponds with a bullet point)_
 
 ### Leadership Team
 
@@ -68,19 +68,20 @@ When putting together the leadership team, make sure to choose one leader who's
 final authority to make changes in the club.
 
 A common pitfall is to create a democratic selection process where everyone has
-an equal vote on decisions. This doesn't work because it's easy for less-active
-leaders to override decisions of the club president -- the best system is one
-where leaders get a say proportional to their investment in the club (and the
-easiest way to implement this is to have a fair leader).
+an equal vote on decisions. We've found that this tends not to work because it
+makes it too easy for less-active leaders to override decisions of the club
+president. The best system is one where leaders get a say proportional to their
+investment in the club, and the easiest way to implement this is to have a fair
+leader.
 
 ### Teacher Sponsor and Space
 
-A good teacher sponsor is your key to having access to regular space for club
+A good teacher sponsor is key to having access to regular space for club
 meetings and a good relationship with your school. Your teacher sponsor is the
-person who will regularly lend a classroom to you after-school for meetings. And
+person who will regularly lend you a classroom for after-school meetings. And
 when things go wrong with the school administration, your teacher sponsor will
-be your advocate. Choosing the wrong teacher sponsor has been the fatal to
-clubs, so be wary.
+be your advocate. Choosing the wrong teacher sponsor can be fatal to clubs, so
+give it careful thought.
 
 The best teacher sponsors are personally invested in spreading coding to
 students. This is generally the teacher most likely to start a computer science
@@ -95,9 +96,9 @@ Once you've decided on a few potential teacher sponsors, it's time to reach out
 to them and tell them about your idea to start a Hack Club. The best way to do
 this is to come to their classroom right after school ends (or during lunch) and
 talk to them in person. If you don't already know the teacher, introduce
-yourself, say that you're thinking about starting this thing called a Hack Club
-and you're looking for a teacher sponsor, then explain the club to them. Here's
-an example of what you might want to start off by saying:
+yourself, tell them that you're looking for a teacher sponsor for this thing
+called a Hack Club you're starting, and explain the club to them. Here's an
+example of what you might want to start off by saying:
 
 > Hi Ms. Byrd, I'm Zach. I'm currently a freshman and I'm starting a Hack Club
 > at the school. It's essentially a computer coding club where students meet
@@ -107,8 +108,8 @@ an example of what you might want to start off by saying:
 > the Hour of Code in your classroom in December.
 
 You'll want to get your teacher sponsor to commit to providing a space
-after-school twice a week for 1.5 hours (ideally 2 hours so there's extra time
-if members want to stay after meetings).
+after-school twice a week for at least an hour and a half (ideally two hours, so
+there's extra time for members to stay after meetings).
 
 The difficulty of getting a teacher sponsor varies widely school to school. At
 some schools you'll find a good teacher sponsor on your first try and at others
@@ -134,14 +135,14 @@ back you.
 
 ### Student Sign-Ups
 
-Alright. Now for the most important part of this whole process: actually getting
-people to come to your club.
+Now for the most important part of this whole process: actually getting people
+to come to your club.
 
 Most schools have a day for advertising clubs at the beginning of each semester.
 This commonly called the "club fair", "club day", "club rush", or "club
 showcase". It is _extremely important_ that you have a presence at this event --
-this is your opportunity to get the most important members---freshman and
-sophomores---to your first club meeting.
+this is your opportunity to get the most important members (freshman and
+sophomores) to your first club meeting.
 
 The best way to take advantage of your school's "club day" (or equivalent) is to
 bring food and be _super proactive_ about getting people to give you their name,
@@ -149,17 +150,16 @@ email, and phone numbers. It's boring, but a pencil and a clipboard with a list
 of people's info is often the best way to collect this information (though feel
 free to experiment).
 
-If you want to have 20 to 30 members come to your first meeting, you should
-shoot for at least 50 sign-ups. If you want 50 to come, shoot for at least 80.
-You should expect 25% of the members at the first meeting and second meeting to
-not come back to the third. Members who come to the third meeting tend to
-continue to come to the club throughout the year. Adjust your sign-ups target
-according to how many people you want to come to the club regularly.
+Your sign-up goals should be driven by how many people you want to attend your
+meetings -- set your goal for number of sign-ups well above the number of people
+you want to attend your meetings. If you want to have 20 to 30 members come to
+your first meeting, you should shoot for at least 50 sign-ups. If you want 50 to
+come, shoot for at least 80.
 
 ## The First Meeting
 
-The first two meetings of each semester are the most important you'll ever have
--- they determine who comes back to the club.
+The first two meetings of each semester are the most important, since they will
+largely influence who comes back.
 
 You should expect 25% of the members at the first two meetings to not come back
 to the third. The members who come to the third meeting tend to stay for the
@@ -171,10 +171,10 @@ throughout the year and have them build their _first real thing™_ (a personal
 website), using our [Portfolio](../workshops/portfolio/README.md) workshop.
 After they complete the workshop, they'll have the remainder of the meeting to
 keep building their website to make it unique. At the second meeting, you'll
-pick up where you left off and build up to demos, where everyone from the club
+pick up where you left off and work up to demos, where everyone from the club
 will come to the front and demo what they built at the end of the meeting.
 
-A small, but easy way to dramatically improve your first meeting is to bring
+A small but easy way to dramatically improve your first meeting is to bring
 food. Pastries or cookies from a local supermarket are cheap and work well.
 
 Also, to set the tone and culture of your club, you should introduce the
@@ -197,8 +197,8 @@ We recommend the following format for your first meeting:
 The second meeting will pick up where the first meeting left off. The majority
 of the meeting will be free-form time where hackers will continue expanding on
 their portfolio websites. At the end of the meeting, everyone will come up to
-the front of the space and demo their website. Like the first meeting, bringing
-food is a good idea :wink:.
+the front of the space and demo their website. As with the first meeting,
+bringing food is a good idea :wink:.
 
 Here's our suggested schedule:
 
