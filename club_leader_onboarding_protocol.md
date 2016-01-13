@@ -38,10 +38,8 @@ After talking with the rest of the team, it is my pleasure to invite you to be a
 part of Hack Club. `{personalizeEmail}`.
 
 I'd like to set up a call sometime next week to discuss next steps and to
-properly onboard you. `{coordinationDetails}`. We're so excited to have you :-)
-
-Best regards,
-`{yourFirstName}`
+properly onboard you. `{coordinationDetails}`. We're so excited to have you. And
+welcome to the community :-).
 ```
 
 ## Onboarding Checklist
