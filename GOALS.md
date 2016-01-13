@@ -19,4 +19,5 @@ next 6 months (starting in December 2016).
 - #1 focus :: weekly club member growth
     - It's important that we have a mechanism set up to measure this (maybe
       weekly calls with every club?)
-- Goal: start 50 clubs by the end of February
+- Goal: start 50 clubs and increase weekly attendance by 750 students by the end
+  of February
