@@ -17,6 +17,12 @@ Process for onboarding (and accepting) club leaders (in order):
    upload their notes as a private gist and link them in the "Applications"
    sheet in https://clubs.hackclub.io (along with updating the application's
    row's other info, like phone number).
+  - How did you first get interested in coding?
+  - Can you tell me about your school?
+    - Can you tell me about the current state of your club?
+    - If I'm a beginner and walk into a club meeting, what will I see?
+  - What other extracurriculars are you involved with?
+  - Can you list your extracurriculars, sorted by priority, including Hack Club?
 4. The team member should bring up the applicant with the team ASAP after the
    call and run them through their application and interview call. If all looks
    good, the team member should send an [acceptance email](#acceptance-email) to
