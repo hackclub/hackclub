@@ -66,3 +66,7 @@ _People in recap:_
     to demo)
   - Students expressed joy and some took time to say that they learned some
     really cool things.
+
+## Addendum from Conversation from Mr. Hesby
+
+See notes in [Talk with Mr. Hesby](2016-01-13_talk_with_mhesby.md)
