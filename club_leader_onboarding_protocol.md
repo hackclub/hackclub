@@ -52,6 +52,13 @@ Best regards,
 
 ## Onboarding Checklist
 
+### Before Call
+
+- [ ] Add them to the "Schools" and "Club Leaders" sheets in
+  https://clubs.hackclub.io if they're not already there
+
+### During Call
+
 - [ ] Add to Slack
   - [ ] Give them tips to introduce themselves
 - [ ] Add to GitHub Leaders team
@@ -60,5 +67,12 @@ Best regards,
 - [ ] Set up weekly calls
   - [ ] Talk about what the the [code of conduct][code-of-conduct] is and why
         it's important
+- [ ] Get their address and add it to their entry in the "Club Leaders" sheet in
+  https://clubs.hackclub.io
 
 [code-of-conduct]: https://github.com/hackclub/hackclub/blob/master/CONDUCT.md
+
+### After Call
+
+- [ ] Mail them a letter with a personal note and a bunch of stickers in it for
+  their first meeting
