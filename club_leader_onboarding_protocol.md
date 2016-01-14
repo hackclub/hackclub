@@ -12,17 +12,11 @@ Process for onboarding (and accepting) club leaders (in order):
    sheet in https://clubs.hackclub.io and update the application's status as the
    application progresses (ex. the interview call gets scheduled).
 3. In the interview call the team member's goal is to get a good idea of the
-   applicant's leadership skills. Below are a few good questions to ask. The
-   team member should be taking notes. After the call is over, they should
-   upload their notes as a private gist and link them in the "Applications"
-   sheet in https://clubs.hackclub.io (along with updating the application's
-   row's other info, like phone number).
-  - How did you first get interested in coding?
-  - Can you tell me about your school?
-    - Can you tell me about the current state of your club?
-    - If I'm a beginner and walk into a club meeting, what will I see?
-  - What other extracurriculars are you involved with?
-  - Can you list your extracurriculars, sorted by priority, including Hack Club?
+   applicant's leadership skills. [Click here](#interview-template) for an
+   interview questions template. The team member should be taking notes. After
+   the call is over, they should upload their notes as a private gist and link
+   them in the "Applications" sheet in https://clubs.hackclub.io (along with
+   updating the application's row's other info, like phone number).
 4. The team member should bring up the applicant with the team ASAP after the
    call and run them through their application and interview call. If all looks
    good, the team member should send an [acceptance email](#acceptance-email) to
@@ -46,6 +40,19 @@ part of Hack Club. `{personalizeEmail}`.
 I'd like to set up a call sometime next week to discuss next steps and to
 properly onboard you. `{coordinationDetails}`. We're so excited to have you. And
 welcome to the community :-).
+```
+
+### Interview Template
+
+_(ready to paste into org-mode)_
+
+```org
+** How did you first get interested in coding?
+*** Can you tell me about your school?
+**** Can you tell me about the current state of your club?
+**** If I'm a beginner and walk into a club meeting, what will I see?
+*** What other extracurriculars are you involved with?
+**** Can you list your extracurriculars, sorted by priority, including Hack Club?
 ```
 
 ## Onboarding Checklist
