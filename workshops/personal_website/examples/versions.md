@@ -102,8 +102,6 @@ body {
 }
 ```
 
---------------------------------------------------------------------------------
-
 ```css
 img {
     width: 200px;
@@ -111,35 +109,6 @@ img {
 
 body {
     text-align: center;
-    background-color: #34495e;
-}
-```
-
---------------------------------------------------------------------------------
-
-```css
-img {
-    width: 200px;
-}
-
-body {
-    text-align: center;
-    background-color: #34495e;
-    color: white;
-}
-```
-
---------------------------------------------------------------------------------
-
-```css
-img {
-    width: 200px;
-}
-
-body {
-    text-align: center;
-    background-color: #34495e;
-    color: white;
     font-family: Arial;
 }
 ```

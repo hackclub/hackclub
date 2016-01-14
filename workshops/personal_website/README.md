@@ -161,37 +161,6 @@ body {
 }
 ```
 
-### Setting the Background Color
-
-```css
-img {
-    width: 200px;
-}
-
-body {
-    text-align: center;
-    background-color: #34495e;
-}
-```
-
-Use http://colorhunt.co to choose your favorite colors.
-
-<!-- I specifically like colorhunt.co because it only displays the hex colors and the user cannot copy and paste the color values so must retype them-->
-
-### Setting the Text Color
-
-```css
-img {
-    width: 200px;
-}
-
-body {
-    text-align: center;
-    background-color: #34495e;
-    color: #ffffff;
-}
-```
-
 ### Changing the Font
 
 ```css
@@ -201,8 +170,6 @@ img {
 
 body {
     text-align: center;
-    background-color: #34495e;
-    color: #ffffff;
     font-family: Arial;
 }
 ```
