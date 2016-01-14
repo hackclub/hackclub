@@ -18,7 +18,7 @@
 </head>
 <body>
   I am Drake
-  All your hotlines belong to me.
+  Hotlines, gotta catch them all!
 </body>
 </html>
 ```
@@ -32,7 +32,7 @@
 </head>
 <body>
   <h1>I am Drake</h1>
-  All your hotlines belong to me.
+  Hotlines, gotta catch them all!
 </body>
 </html>
 ```
@@ -46,7 +46,7 @@
 </head>
 <body>
   <h1>I am Drake</h1>
-  <p>All your hotlines belong to me.</p>
+  <p>Hotlines, gotta catch them all!</p>
 </body>
 </html>
 ```
@@ -59,9 +59,9 @@
 <head>
 </head>
 <body>
-  <img src="https://media.giphy.com/media/vsyKKf1t22nmw/giphy.gif">
+  <img src="http://surrogate.hackedu.us/i.imgur.com/S06cY9j.gif">
   <h1>I am Drake</h1>
-  <p>All your hotlines belong to me.</p>
+  <p>Hotlines, gotta catch them all!</p>
 </body>
 </html>
 ```
@@ -75,9 +75,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <img src="https://media.giphy.com/media/vsyKKf1t22nmw/giphy.gif">
+  <img src="http://surrogate.hackedu.us/i.imgur.com/S06cY9j.gif">
   <h1>I am Drake</h1>
-  <p>All your hotlines belong to me.</p>
+  <p>Hotlines, gotta catch them all!</p>
 </body>
 </html>
 ```
@@ -123,9 +123,9 @@ body {
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <img src="https://media.giphy.com/media/vsyKKf1t22nmw/giphy.gif">
+  <img src="http://surrogate.hackedu.us/i.imgur.com/S06cY9j.gif">
   <h1>I am Drake</h1>
-  <p>All your hotlines belong to me.</p>
+  <p>Hotlines, gotta catch them all!</p>
 </body>
 </html>
 ```

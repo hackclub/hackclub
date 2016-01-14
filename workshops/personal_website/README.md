@@ -1,8 +1,10 @@
 # Personal Website
 
-In this workshop, you will learn how to make a website from scratch.
+In this workshop, you will learn how to make your own website from scratch.
 
-Here is the final product you will end up with:
+My name is Drake, and today we'll start by building my own personal website together. Afterwards, you'll modify it to make it your own website!
+
+Here is the final product:
 
 ![](http://placehold.it/200?text=Preview)
 
@@ -25,9 +27,9 @@ Here is the final product you will end up with:
 - What is Cloud9?
 - What are we using Cloud9 for?
 - Let's create a Cloud9 Account.
-- Let's create and setup a Cloud9 workspace.
 - Write down your email, and password somewhere you won't forget.
-  (you'll be using it for the rest of the semester).
+(you'll be using it for the rest of the semester).
+- Let's create and setup a Cloud9 workspace.
 
 ## Part II: HTML
 
@@ -36,7 +38,7 @@ Here is the final product you will end up with:
 
 ### Step 1: Create a folder for your personal website
 
-- Let's create a website
+- For every project we create in Cloud9 we create a folder
 
 ### Step 2: Creating your HTML file
 
@@ -47,13 +49,16 @@ Here is the final product you will end up with:
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
+    <head>
+    </head>
+    <body>
 
-</body>
+    </body>
 </html>
 ```
+
+- Every website has the above format
+- You put your code in the body
 
 ### Step 4: Add Content To The Body
 
@@ -63,12 +68,12 @@ Here is the final product you will end up with:
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
-  I am Drake
-  All your hotlines belong to me.
-</body>
+    <head>
+    </head>
+    <body>
+      I am Drake
+      Hotlines, gotta catch them all!
+    </body>
 </html>
 ```
 
@@ -77,26 +82,28 @@ Here is the final product you will end up with:
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
-  <h1>I am Drake</h1>
-  All your hotlines belong to me.
-</body>
+    <head>
+    </head>
+    <body>
+      <h1>I am Drake</h1>
+      Hotlines, gotta catch them all!
+    </body>
 </html>
 ```
+
+- Opening and closing tags
 
 ### Step 6: Formatting the Paragraph
 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
-  <h1>I am Drake</h1>
-  <p>All your hotlines belong to me.</p>
-</body>
+    <head>
+    </head>
+    <body>
+      <h1>I am Drake</h1>
+      <p>Hotlines, gotta catch them all!</p>
+    </body>
 </html>
 ```
 
@@ -105,13 +112,13 @@ Here is the final product you will end up with:
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
-  <img src="https://media.giphy.com/media/vsyKKf1t22nmw/giphy.gif">
-  <h1>I am Drake</h1>
-  <p>All your hotlines belong to me.</p>
-</body>
+    <head>
+    </head>
+    <body>
+      <img src="http://surrogate.hackedu.us/i.imgur.com/S06cY9j.gif">
+      <h1>I am Drake</h1>
+      <p>Hotlines, gotta catch them all!</p>
+    </body>
 </html>
 ```
 
@@ -121,7 +128,6 @@ Our image is too big. CSS to the rescue.
 
 - What is CSS?
 - What are we going to use it for?
-  - Show before and after CSS
 
 ### Creating the CSS file
 
@@ -130,14 +136,14 @@ Our image is too big. CSS to the rescue.
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <img src="https://media.giphy.com/media/vsyKKf1t22nmw/giphy.gif">
-  <h1>I am Drake</h1>
-  <p>All your hotlines belong to me.</p>
-</body>
+    <head>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <img src="http://surrogate.hackedu.us/i.imgur.com/S06cY9j.gif">
+      <h1>I am Drake</h1>
+      <p>Hotlines, gotta catch them all!</p>
+    </body>
 </html>
 ```
 
@@ -176,7 +182,7 @@ body {
 
 ## Part IV: Deployment
 
-### Getting the url of your website
+### Getting the URL of your website
 
 - Click on the green button with the arrow.
 - Copy and past the URL
@@ -186,15 +192,15 @@ body {
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>I am Drake</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <img src="https://media.giphy.com/media/vsyKKf1t22nmw/giphy.gif">
-  <h1>I am Drake</h1>
-  <p>All your hotlines belong to me.</p>
-</body>
+    <head>
+      <title>I am Drake</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <img src="http://surrogate.hackedu.us/i.imgur.com/S06cY9j.gif">
+      <h1>I am Drake</h1>
+      <p>Hotlines, gotta catch them all!</p>
+    </body>
 </html>
 ```
 
@@ -204,3 +210,7 @@ body {
 - What are we going to use it for?
 - Let's create a repository named `username.github.io`
 - Let's run these git commands to create a repository
+
+## Part VI: Make It Your Own!
+
+## HTML Documentation
