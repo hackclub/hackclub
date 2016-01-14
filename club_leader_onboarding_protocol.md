@@ -77,6 +77,7 @@ _(ready to paste into org-mode)_
   - [ ] Give them tips to introduce themselves
 - [ ] Add to Slack
   - [ ] Give them tips to introduce themselves
+  - [ ] Have them download the desktop app
 
 [code-of-conduct]: https://github.com/hackclub/hackclub/blob/master/CONDUCT.md
 
