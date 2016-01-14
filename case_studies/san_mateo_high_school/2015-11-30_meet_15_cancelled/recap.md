@@ -2,4 +2,4 @@
 
 ## What Happened
 
-Meet moved to [Wednesday](2015-12-02_meet_15).
+Meet moved to [Wednesday](../2015-12-02_meet_15).
