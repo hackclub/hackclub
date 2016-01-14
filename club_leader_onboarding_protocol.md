@@ -40,6 +40,9 @@ part of Hack Club. `{personalizeEmail}`.
 I'd like to set up a call sometime next week to discuss next steps and to
 properly onboard you. `{coordinationDetails}`. We're so excited to have you. And
 welcome to the community :-).
+
+Best regards,  
+`{yourFirstName}`
 ```
 
 ### Interview Template
