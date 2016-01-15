@@ -5,9 +5,10 @@ a test run through the entire schedule.
 
 ## Schedule
 
-_Italisized_ schedule items are things that only facilitators do
+_Italicized_ schedule items are things that only facilitators do.
 
-**Bolded** schedule items are things that both hackers and facilitators do<kbd></kbd>
+**Bolded** schedule items are things that both hackers and facilitators do
+<kbd></kbd>
 
 |   Time | Activity                                     |
 | ------ | -------------------------------------------- |
@@ -20,7 +21,7 @@ _Italisized_ schedule items are things that only facilitators do
 |   2:30 | **Pizza Time**                               |
 |   3:00 | _Introduce Part II_                          |
 |   3:05 | **Part II: Customize your website**          |
-|   3:40 | _Collect Demo Links in tlk.io_               |
+|   3:40 | _Collect Demo Links in https://tlk.io_       |
 |   3:45 | **Demos!**                                   |
 |   3:55 | _Collect Feedback_                           |
 |   4:00 | **Finish**                                   |
@@ -49,8 +50,10 @@ _Italisized_ schedule items are things that only facilitators do
 
 It is your job to be a great host!
 
-- Be a good host by making every participant feel like you were welcoming them like the president!
-- It is your job to make sure that everyone talks to everyone else. People will naturally not talk to each other!
+- Be a good host by making every participant feel like you were welcoming them
+  like the president!
+- It is your job to make sure that everyone talks to everyone else. People will
+  naturally not talk to each other!
 
 **Roles:**
 
@@ -71,7 +74,8 @@ It is your job to be a great host!
 
 1. Excitedly welcome everyone to the Hack Series
 2. Play the alliterative name game icebreaker standing up.
-3. Explain groups and have people count off into groups with a max group size of 4.
+3. Explain groups and have people count off into groups with a max group size of
+   4.
   - Emphasize that groups are meant to help each other but not for people to
     be working on the same project together.
 4. Introduce the schedule for the day (note that the schedule should already be
@@ -81,8 +85,8 @@ It is your job to be a great host!
 
 1. Introduce the Portfolio Workshop.
   1. Demo the <a href="http://jsbin.com/gist/81d45193dab5236afbba?output" target="_blank_">Final Product</a>
-  2. Show other [examples of what people made](websites/README.md)
-  3. Introduce that they can Google for how to do something
+  2. Show other examples of what people made.
+  3. Introduce that they can Google for how to do something.
 2. If you have more experience, feel free to work on your own projects!
 3. Set everyone up on http://tlk.io/hackseries
   - Send out the https://bit.ly/hackserieshome which links them to the workshop
@@ -111,7 +115,7 @@ Facilitate conversation between hackers.
 2. Instead of asking "How are you doing?" or "Do you need help?" ask "What's
    your progress so far?" or "What do you want to do next?"
 
-### 3:40 : Collect Demo Links in tlk.io
+### 3:40 : Collect Demo Links in https://tlk.io
 
 Do it.
 
@@ -128,7 +132,7 @@ Thank everyone for coming.
 
 # Feedback
 
-- Explain and **_HEAVILY EMPAHSIZED_** the importance of feedback because it helps
-  us improve.
+- Explain and **_HEAVILY EMPHASIZED_** the importance of feedback because it
+  helps us improve.
 - Have hackers submit to this form for feedback
   http://tinyurl.com/hackseriesfeedback

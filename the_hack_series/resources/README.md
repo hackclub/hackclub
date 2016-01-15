@@ -20,12 +20,11 @@ Network: `[redacted]`
 
 Password: `[redacted]`
 
-**Tlk.io**
+**https://tlk.io**
 
-Join the Tlk.io by clicking [here](https://tlk.io/hackseries).
-
-  - type in your name into the text box
-  - and press enter key on your keyboard
+Join the https://tlk.io by clicking [here](https://tlk.io/hackseries).
+  - Type in your name into the text box
+  - And press enter key on your keyboard
 
 ## 3. Choose Your ~~Code Editor~~ Weapon
 

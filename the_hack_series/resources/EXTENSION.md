@@ -24,8 +24,6 @@ Here are some examples of other websites that other hackers have built:
 Try using a GIF instead of using a normal picture! Your website can look like
 it's out of a page of a Harry Potter book!
 
-[→ Want a hint?](gif_hint.md)
-
 -------------------------------------------------------------------------------
 
 **Change the font and background colors**
@@ -54,7 +52,7 @@ You could embed your favorite SoundCloud songs on your website.
 
 **Change the font**
 
-Try changing the font to something else other than "arial"
+Try changing the font to something else other than `arial`.
 
 - <a href="https://jsbin.com/gist/ddb3f602250d5b8b3cdc?html,css,output" target="_blank">Solution</a>
 
@@ -68,10 +66,10 @@ what "X" is. In this case, try using a "Google Web Font" on your website.
 
 - <a href="http://jsbin.com/gist/c1201dd5f09d99b06c0d?html,css,output" target="_blank">Solution</a>
 
-## Examples of other's websites
+## Examples of websites other people have made
 
 - http://aidanb34.github.io/myrepository/
 - http://mnefertiti.github.io/personalwhale/
 - http://animanny.github.io/my_website/
 
-[![](img/bttn_back.png)](https://rawgit.com/jonleung/77f8662577df9c2ff04d/raw/2c8489d490de8e37e89e6fb5b9073f904b6377e0/index.html)
+[![](img/bttn_back.png)](..)
