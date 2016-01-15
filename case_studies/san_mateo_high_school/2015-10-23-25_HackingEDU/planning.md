@@ -2,8 +2,8 @@
 
 ## Things to know
 
-- [HackingEDU](hackingedu.co) is an educational hackathon (36 hours) in San
-  Mateo.
+- [HackingEDU](http://hackingedu.co) is an educational hackathon (36 hours) in
+  San Mateo.
 - Right next to us, we thought it would be a great opportunity to bring new
   members in and expand the hacker's community in San Mateo.
 - We started advertising since the very first meet.
