@@ -17,6 +17,7 @@ All right! We finally can make this a game a game! How are we going to do this??
             secondBody = contact.bodyA
         }
     }
+
     
 ### Set Up The If Statement
 
@@ -26,6 +27,7 @@ Now, let's start filling out the method. This, `if` statement checks the `Physic
    	if firstBody.categoryBitMask == PhysicsCategory.Block && secondBody.categoryBitMask == PhysicsCategory.Target {
             
     }
+
     
 ### Remove the Block From the Array
 
@@ -36,6 +38,7 @@ Let's start filling the `if` statement in. The first line that we will add, will
     
 ![](img/Step 7/3. HCRemoveObject.gif)
     
+    
 ### Create Variables for the Block and Target
 
 Now, we set up the last, final `if` statement. We create two variables of type `SKSpriteNode` for the block and the target. This will go underneath the block removal code we just wrote.
@@ -45,6 +48,7 @@ Now, we set up the last, final `if` statement. We create two variables of type `
     let target = secondBody.node as! SKSpriteNode
     
 ![](img/Step 7/4. HCAssignBlockAndTarget.gif)
+ 
  
 ### Check Collision
 
@@ -73,6 +77,7 @@ Get ready for the last bit of code we will write in the `GameScene.swift` file! 
 			self.view?.presentScene(gameOver, transition: SKTransition.revealWithDirection(.Left, duration: 0.5))
 		 })
 	}
+
 	
 ### Set Up the Game Over Screen
 
@@ -80,11 +85,13 @@ As we have with the `PlayScene.swift` and `GameScene.swift` let's prep the `Game
 
 ![](img/Step 7/6. HCSetUpGameOver.gif)
 
+
 ### Run the Project
 
 Finally, let's run the project to see what we've just done! Run it and have fun playing our nearly complete game!
 
 ![](img/Step 7/7. HCRunProjectPhysics.gif)
+
 
 ### Recap
 
