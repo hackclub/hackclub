@@ -1,7 +1,7 @@
 # Installing Xcode
---
+
 ### Setting Up Your Workplace
---
+
 Xcode is the space that you write all of your code in. It is a free Mac app that you can download from the App Store. This tutorial assumes that you have already downloaded Xcode and are prepared to create your first project with it.
 
 If you haven't downloaded Xcode yet, [here is a great guide, directly from Apple, to get you started](https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/). Just scroll down to the section titled **To download the latest version of Xcode**.
@@ -10,17 +10,13 @@ Alright, once you have Xcode installed, you are ready to create your first proje
 
 ![](img/Step 1/1. HCCreateProject.gif)
 
---
 ### Xcode Simulator
---
 
 Now, that you have the project created, you can run your project! Press the play button in the top left corner and what is called the **Xcode Simulator** will appear. The Xcode Simulator is a tool that comes with Xcode in which you can test and play with your game.
 
 ![](img/Step 1/2. HCRunProject.gif)
 
---
-##Classes
---
+### Classes
 
 Now, let's start setting up the project so we can start making the game! First we have to delete a couple of files. Right click on both `GameScene.swift` and `GameScene.sks` and click *Delete*. Select *Move to Trash* in the pop-up that appears.
 
@@ -34,9 +30,7 @@ Repeat the last step of creating a class two more times to create a file named `
 
 ![](img/Step 1/5. HCRestOfNewFiles.png)
 
---
 ### The SpriteKit Framework
---
 
 To start to code our game, we are going to begin with the title screen. To utilize the SpriteKit framework, we must modify the `PlayScene.swift` file a little.
 
@@ -84,9 +78,7 @@ To finish up part one of this tutorial, we will now navigate to the `GameViewCon
 
 You do not need to understand all of the code above. Just know that this is the file that is responsible for creating the `PlayScene` and displaying it on the screen.
 
---
 ### Recap
---
 
 You learned how to:
 
@@ -96,5 +88,6 @@ You learned how to:
 * Delete classes
 * Utilize SpriteKit
 
---
+--------------------------------------------------------------------------------
+
 You are ready to go to Part 2 where you create the `PlayScene`!

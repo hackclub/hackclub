@@ -1,7 +1,6 @@
 # Creating the Walls
---
+
 ### Setting Up Physics
---
 
 Now we will start to build out the GameScene! There are three main elements on the screen:
 
@@ -17,9 +16,7 @@ In this part of the tutorial, we will build out the walls. First though, we need
 
 Now, if you just add a method to this file you can handle collisions! But first we have to add nodes and characters to collide in the first place!
 
---
 ### Screen Dimensions and Physics Categories
---
 
 First, we need to set up the class to be responsive to each device. So, let's create the screen dimension variables like in the `PlayScene.swift` file.
 
@@ -38,9 +35,7 @@ Now, let's create the Physics Categories. These work just like the `name` proper
         static let Target    : UInt32 = 0b10      // 2
     }
     
---
 ### Set Up Code
---
 
 Now we can move to the `didMoveToView()` method. Remember that?? We will do the same as before in that we will set the screen dimensions variables and then set the background color. Now we will do more set up for the physics. The object, `physicsWorld` comes with following the `SKPhysicsContactDelegate`. The first line sets the `gravity` of the `physicsWorld` to be a vector of `(0.0, -7.0)`. Then the next line sets the delegate to self which enables the scene to start listening for collisions. 
 
@@ -64,9 +59,7 @@ The next line of code that says `setUpTheTargets()` will call the method that cr
         setUpTheTargets()
     }
     
---
 ### Create the Walls
---
 
 Now, let's create the walls! Each target will be of type `SKSpriteNode` which is just like `SKLabelNode` but it is created by setting the size and the color or the image. In this tutorial we will be setting it by the color. So first we create the `target` variable. This line sets both the color and the size. The part of the code that says `SKSpriteNode(color: UIColor.blueColor(), size: CGSizeMake(screenWidth * 0.05, screenHeight))` is a constructor for `SKSpriteNode`. This is a special type of method that creates an object. The next line sets the anchor point for the node which is where the node is anchored to, position-wise. Here's a good diagram explaining the anchor point from Apple.
 
@@ -114,17 +107,13 @@ The code underneath sets the physics body on each node. The physics body attache
         bottomTarget.physicsBody?.collisionBitMask = PhysicsCategory.None
     }
     
---
 ### Run the Project
---
 
 Finally, you can run the project and if you press play, you will see three amazing looking walls on the screen!
 
 ![](img/Step 3/6. HCRunProjectWalls.gif)
 
---
 ### Recap
---
 
 You learned how to:
 
@@ -136,5 +125,6 @@ You learned how to:
 * Create an `SKSpriteNode`
 * Set up `physicsBody`'s for each `SKSpriteNode`
 
---
+--------------------------------------------------------------------------------
+
 You are now ready to move on to Part 4 where you will be able to create the score label for the `GameScene`!
