@@ -207,7 +207,7 @@ things to accomplish this:
 1. Put the first slide of the previously mentioned presentation on the projector
 2. Put some music on in the background (not too loud, [click here][playlist] for
    a good pre-made Spotify playlist)
-3. **The most important:** make people feel welcome as they walk in. When
+3. The most important: make people feel welcome as they walk in. When
    someone walks in, do the following:
   - Introduce yourself
   - Ask a couple questions like the following to initiative conversation:
