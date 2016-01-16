@@ -177,12 +177,6 @@ will come to the front and demo what they built at the end of the meeting.
 A small but easy way to dramatically improve your first meeting is to bring
 food. Pastries or cookies from a local supermarket are cheap and work well.
 
-Also, to set the tone and culture of your club, you should introduce the
-[code of conduct][coc] in the introduction presentation and emphasize why it's
-important.
-
-[coc]: ../CONDUCT.md
-
 We recommend the following format for your first meeting:
 
 1. Wait for hackers (club members) to arrive (5 minutes)
@@ -191,6 +185,83 @@ We recommend the following format for your first meeting:
 4. Build your first website workshop (45 minutes)
 5. Free-form hacking (25 minutes)
 6. Reminder with details for second meeting
+
+We've created a slideshow presentation to help you run your first meeting.
+[Click here][presentation] to go to it. We'll be referring to this presentation
+throughout the following sections.
+
+[presentation]: https://docs.google.com/presentation/d/1QhErlJS6rnqu78guPBWuJ1SUyPJKLbxzLNuSN9qVw0c/edit
+
+#### Waiting for Hackers to Arrive
+
+When you're waiting for hackers to arrive at the first meeting, your goal is to
+make the club as welcoming as possible. We recommend doing the following four
+things to accomplish this:
+
+1. Put the first slide of the previously mentioned presentation on the projector
+2. Put some music on in the background (not too loud, [click here][playlist] for
+   a good pre-made Spotify playlist)
+3. **The most important:** make people feel welcome as they walk in. When
+   someone walks in, do the following:
+  - Introduce yourself
+  - Ask a couple questions like the following to initiative conversation:
+    - "How did you hear about Hack Club?"
+    - "What sorts of things are you interested in learning?"
+  - Your primary goal is to make people walking in feel good about their
+    decision to come to Hack Club
+4. Give people context for what will be happening next (ex. "We're going to get
+   the first meeting started in about 10 minutes after people are done trickling
+   in. In the meantime, please make yourself at home and let me know if I can be
+   helpful with anything.")
+
+[playlist]: https://open.spotify.com/user/zachlatta/playlist/16lRCHBANauZr4utynaA2B
+
+#### Introduction Presentation
+
+The purpose of the introduction presentation is to tell members what Hack Club
+is, what you're going to be doing throughout the year, when you meet, and, most
+importantly, get them excited about the club.
+
+The beginning of the previously mentioned slideshow presentation contains slides
+to run with the introduction presentation.
+
+#### Learning Names Activity
+
+The learning names game is a good way to warm up the atmosphere of the club and
+get people who don't already know each other a bit more familiar. This will be
+especially helpful to freshman, who probably don't yet know people from the
+higher grades.
+
+Have the club members gather in large circle. Start by saying your name and
+a mnemonic for it (ex. "Hey everyone, I'm Zach. Zany Zach."). Then have the
+person to your left do the same for their name and then say your name an
+mnemonic (ex. "I'm Jolly Jane. And he is Zany Zach"). Then have the person to
+their left do the same and then say the names and mnemonics for everyone that
+has gone so far, in order. Continue doing this through the whole circle until
+everyone has gone.
+
+#### First Website Workshop
+
+To get members started, you'll want to run the
+[Portfolio](../workshops/portfolio/README.md) workshop. It's going to walk club
+members through the process of building their first website. We recommended
+doing the following to run the Portfolio workshop (and we've prepared slides, in
+the previously linked slideshow presentation to help run it).
+
+1. Tell everyone that to start out, we're going to run the Portfolio workshop,
+   which will walk you through the process of building your first website
+2. Show the slide with the output of the Portfolio workshop and tell everyone
+   that this is what they'll all build by the end of the workshop
+3. Say that after the Portfolio workshop, the rest of the meeting will be
+   completely free-form for them to continue building their websites. Show the
+   slides with examples of other websites people in Hack Clubs have made to give
+   your club members ideas for directions they can take their sites. Say that at
+   the end of the next club meeting, everyone is going to come up to the front
+   and demo what they built.
+
+#### Free-Form Hacking
+
+[waiting on Fin to send me paragraph for this]
 
 ## The Second Meeting
 
