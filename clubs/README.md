@@ -179,18 +179,24 @@ food. Pastries or cookies from a local supermarket are cheap and work well.
 
 We recommend the following format for your first meeting:
 
-1. Wait for hackers (club members) to arrive (5 minutes)
-2. Introduction presentation (5 minutes)
-3. Learning names activity (10 minutes)
-4. Build your first website workshop (45 minutes)
-5. Free-form hacking (25 minutes)
-6. Reminder with details for second meeting
+1. [Wait for hackers (club members) to arrive (5 minutes)][1]
+2. [Introduction presentation (5 minutes)][2]
+3. [Learning names activity (10 minutes)][3]
+4. [Build your first website workshop (45 minutes)][4]
+5. [Free-form hacking (25 minutes)][5]
+6. [Reminder with details for second meeting][6]
 
 We've created a slideshow presentation to help you run your first meeting.
 [Click here][presentation] to go to it. We'll be referring to this presentation
 throughout the following sections.
 
 [presentation]: https://docs.google.com/presentation/d/1QhErlJS6rnqu78guPBWuJ1SUyPJKLbxzLNuSN9qVw0c/edit
+[1]: #waiting-for-hackers-to-arrive
+[2]: #introduction-presentation
+[3]: #learning-names-activity
+[4]: #first-website-workshop
+[5]: #free-form-hacking
+[6]: #second-meeting-reminder
 
 #### Waiting for Hackers to Arrive
 
