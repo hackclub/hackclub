@@ -267,7 +267,20 @@ the previously linked slideshow presentation to help run it).
 
 #### Free-Form Hacking
 
-[waiting on Fin to send me paragraph for this]
+After hackers are done with the Portfolio workshop, they're going to transition
+into free-form hacking time to continue building their websites. During this
+time, the most important thing for you to do is to create an environment that
+people are comfortable asking for help in.
+
+When people do have questions, be eager to help them out. It's also good idea to
+turn the music back on during free-form hacking (not too loud, people should
+feel comfortable talking).
+
+#### Second Meeting Reminder
+
+Five minutes before the meeting is over, get everyone's attention to remind them
+about the next meeting. Say when and where it'll be and that in it, everyone
+will be finishing the websites they started on and presenting them at the end.
 
 ## The Second Meeting
 
