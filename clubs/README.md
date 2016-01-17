@@ -18,18 +18,17 @@ _A step-by-step guide by the Hack Club community._
 We think of Hack Clubs very broadly:
 
 - Hacking is creative problem solving (it doesn't have to be about technology)
-- A Hack Club is an after-school high school club where people come together to
-  hack
+- A Hack Club is an after-school club where people come together to hack
 
 Most Hack Clubs end up looking like never-ending hackathons, where club members
 come together twice a week (generally for ~1.5 hours) and work on projects
-together. To get members started, we have a series of 1 hour workshops (in the
-[`workshops/`](../workshops/) directory) to get members started. More on how
-workshops work in [_The First Meeting_](#the-first-meeting).
+together. To get members started, we have a series of hour-long workshops in the
+[`workshops/`](../workshops/) directory to get members started. More on how
+workshops work in [The First Meeting](#the-first-meeting).
 
-Throughout the school year, Hack Clubs go to (and sometimes host) hackathons,
-work on larger group projects, and---most importantly---build a thriving
-community of hackers at their high schools.
+Throughout the year, Hack Clubs go to (and sometimes host) hackathons, work on
+large group projects, and---most importantly---build a thriving community of
+hackers at their high schools.
 
 In the sections below we'll walk you through the process of setting up your Hack
 Club and running your first few meetings. After you've gotten the first two
@@ -37,9 +36,9 @@ meetings down, you should be set for the remainder of the school year :smile:.
 
 ## Planning Your Hack Club
 
-You should plan on starting this process two to three weeks before having your
-first meeting. Fortunately there isn't an enormous amount of planning needed to
-start a club, but it's very important to get each of the following right.
+You should plan on starting this process two to three weeks before your first
+meeting. Fortunately, there isn't an enormous amount of planning to start a
+club, but it's very important to get each of the following right.
 
 - [ ] Leadership team
 - [ ] Teacher sponsor and space
@@ -50,66 +49,64 @@ _(each of the sections below corresponds with a bullet point)_
 
 ### Leadership Team
 
-You'll want 2-3 people on the primary leadership team running the club. When
-choosing your leadership team, we recommend working with close friends who you
-think have strong leadership skills. It's also a good idea to have a mix of
-genders on the leadership team. Correlation doesn't imply causation, but the
-club member demographics mirror the demographics of the leadership team in many
-clubs.
+You'll want 2-3 people on the leadership team running the club. When choosing
+your team, we recommend working with close friends who you think have strong
+leadership skills. It's a good idea to have a mix of genders on the team --
+we've noticed that club member demographics tend to reflect those of the leaders
+(ex. if the leadership is all-male, the club will be almost all-male).
 
-Also, leadership skills are _far_ more important than technical skills. A common
-pitfall many clubs run into is selecting the leaders based on their technical
-skills rather than their leadership capacity.
+When selecting the team, leadership skills are _far_ more important than
+technical abilities. A common pitfall many clubs run into is selecting the
+leaders based on their technical skills rather than their leadership capacity.
 
 **Great clubs have been started by leaders that have never coded before.**
 
-When putting together the leadership team, make sure to choose one leader who's
-"in charge" (this will generally be you). This will be the person that has the
-final authority to make changes in the club.
+When putting together the leadership team, choose one leader who's "in charge"
+(this will usually be you). This person will have the final authority to make
+changes in the club.
 
 A common pitfall is to create a democratic selection process where everyone has
 an equal vote on decisions. We've found that this tends not to work because it
 makes it too easy for less-active leaders to override decisions of the club
 president. The best system is one where leaders get a say proportional to their
-investment in the club, and the easiest way to implement this is to have a fair
-leader.
+investment in the club and the easiest way to implement this is to have a fair
+leader who delegates authority.
 
 ### Teacher Sponsor and Space
 
 A good teacher sponsor is key to having access to regular space for club
-meetings and a good relationship with your school. Your teacher sponsor is the
-person who will regularly lend you a classroom for after-school meetings. And
-when things go wrong with the school administration, your teacher sponsor will
-be your advocate. Choosing the wrong teacher sponsor can be fatal to clubs, so
-give it careful thought.
+meetings and a good relationship with your school. Your sponsor is the person
+who will lend you a classroom for after-school meetings. When things go wrong
+with the school administration, your er sponsor will be your advocate. Choosing
+the wrong sponsor can be fatal to clubs, so give it careful thought.
 
-The best teacher sponsors are personally invested in spreading coding to
-students. This is generally the teacher most likely to start a computer science
-class (or, if you already have one, the current computer science teacher). If
-you're new to your school and not very familiar with the teachers, a good place
-to start looking is the math and science teachers. If your school has a computer
-lab, start with the teachers that teach classes in it (or if your school has
+The best sponsors are personally invested in spreading coding to students. This
+is generally the teacher most likely to start a computer science class (or, if
+you already have one, the current computer science teacher). If you're new to
+your school and not very familiar with the teachers, a good place to start
+looking is the math and science department. If your school has a computer lab,
+start with the teachers that teach classes in it (or if your school has
 classrooms with computers in it, start with the teachers with computer
 classrooms).
 
-Once you've decided on a few potential teacher sponsors, it's time to reach out
-to them and tell them about your idea to start a Hack Club. The best way to do
-this is to come to their classroom right after school ends (or during lunch) and
-talk to them in person. If you don't already know the teacher, introduce
-yourself, tell them that you're looking for a teacher sponsor for this thing
-called a Hack Club you're starting, and explain the club to them. Here's an
-example of what you might want to start off by saying:
+Once you've decided on a few potential teacher sponsors, reach out to them and
+tell them about your idea to start a Hack Club. The best way to do this is to
+come to their classroom right after school ends (or during lunch) and talk to
+them in person. If you don't already know the teacher, introduce yourself, tell
+them that you're looking for a teacher sponsor for this thing called a Hack Club
+that you're starting, and explain the club to them. Here's an example of what
+you might want to say:
 
 > Hi Ms. Byrd, I'm Zach. I'm currently a freshman and I'm starting a Hack Club
 > at the school. It's essentially a computer coding club where students meet
-> regularly to build things like apps, websites, and games together (and
-> learn!). I've put together a leadership team and I'm currently looking for a
-> teacher sponsor for the club. I figured I'd reach out because I heard you ran
-> the Hour of Code in your classroom in December.
+> regularly to build things like apps, websites, and games together. I've put
+> together a leadership team and I'm currently looking for a teacher sponsor for
+> the club. I figured I'd reach out because I heard you ran the Hour of Code in
+> your classroom in December.
 
-You'll want to get your teacher sponsor to commit to providing a space
-after-school twice a week for at least an hour and a half (ideally two hours, so
-there's extra time for members to stay after meetings).
+You'll want to get your teacher sponsor to commit to providing a space twice a
+week after-school for at least an hour and a half (ideally two hours, so there's
+extra time for members to stay after meetings).
 
 The difficulty of getting a teacher sponsor varies widely school to school. At
 some schools you'll find a good teacher sponsor on your first try and at others
@@ -147,14 +144,14 @@ sophomores) to your first club meeting.
 The best way to take advantage of your school's "club day" (or equivalent) is to
 bring food and be _super proactive_ about getting people to give you their name,
 email, and phone numbers. It's boring, but a pencil and a clipboard with a list
-of people's info is often the best way to collect this information (though feel
-free to experiment).
+of people's info is often the best way to collect this information (feel free to
+experiment though).
 
-Your sign-up goals should be driven by how many people you want to attend your
-meetings -- set your goal for number of sign-ups well above the number of people
-you want to attend your meetings. If you want to have 20 to 30 members come to
-your first meeting, you should shoot for at least 50 sign-ups. If you want 50 to
-come, shoot for at least 80.
+Your sign-up goal should be driven by how many people you want to attend your
+meetings -- set your goal for a number of sign-ups well above the number of
+people you want to attend your meetings. If you want to have 20 to 30 members
+come to your first meeting, you should shoot for at least 50 sign-ups. If you
+want 50 to come, shoot for at least 80.
 
 ## The First Meeting
 
