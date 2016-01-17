@@ -9,7 +9,7 @@ _A step-by-step guide by the Hack Club community._
   - [Leadership Team](#leadership-team)
   - [Teacher Sponsor and Space](#teacher-sponsor-and-space)
   - [Club Registration](#club-registration)
-- [Student Sign-Ups](#student-sign-ups)
+  - [Student Sign-Ups](#student-sign-ups)
 - [The First Meeting](#the-first-meeting)
   - [Waiting for Hackers to Arrive](#waiting-for-hackers-to-arrive)
   - [Introduction Presentation](#introduction-presentation)
