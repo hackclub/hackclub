@@ -41,7 +41,7 @@ _*JS Bin is a website for easily writing code._
 We are going to use a service called Twilio to send text messages
 and make phone calls.
 
-### Step 1: Adding the Twilio API
+### 1: Adding the Twilio API
 
 To add the capability to send text messages and make phone calls, copy and paste
 the below script tag to the bottom of the `body` tag.
@@ -60,7 +60,7 @@ Like so:
 > Note for people who happen to be using their own IDE, just copy the HTML
 > code into your own HTML file.
 
-### Step 2: Set your `sid` and `token`
+### 2: Set your `sid` and `token`
 
 Before anything will work, we need to change `"YOUR_TWILIO_ACCOUNT_SID_HERE"`
 and `"YOUR_TWILIO_AUTH_TOKEN_HERE"` to your actual `sid` and `token`
@@ -78,14 +78,14 @@ actual SID and authentication token.
 
 > ![](img/enter_account_sid.gif)
 
-### Step 3: Turn off "Auto-run JS"
+### 3: Turn off "Auto-run JS"
 
 In the top right hand corner, turn off "Auto-run JS" so that your code doesn't
 automatically run every time you type something:
 
 > ![](img/turn_off_autorun.gif)
 
-### Step 4: Writing One Line of Code to Make a Phone Call
+### 4: Writing One Line of Code to Make a Phone Call
 
 Then type _exactly_ the code below into the JavaScript tab of JS Bin:
 

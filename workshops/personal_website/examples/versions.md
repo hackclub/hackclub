@@ -18,7 +18,7 @@
 </head>
 <body>
   I am Drake
-  Hotlines, gotta catch them all!
+  Professional hotline answerer
 </body>
 </html>
 ```
@@ -32,7 +32,7 @@
 </head>
 <body>
   <h1>I am Drake</h1>
-  Hotlines, gotta catch them all!
+  Professional hotline answerer
 </body>
 </html>
 ```
@@ -46,7 +46,7 @@
 </head>
 <body>
   <h1>I am Drake</h1>
-  <p>Hotlines, gotta catch them all!</p>
+  <p>Professional hotline answerer</p>
 </body>
 </html>
 ```
@@ -61,7 +61,7 @@
 <body>
   <img src="http://surrogate.hackedu.us/i.imgur.com/S06cY9j.gif">
   <h1>I am Drake</h1>
-  <p>Hotlines, gotta catch them all!</p>
+  <p>Professional hotline answerer</p>
 </body>
 </html>
 ```
@@ -77,7 +77,7 @@
 <body>
   <img src="http://surrogate.hackedu.us/i.imgur.com/S06cY9j.gif">
   <h1>I am Drake</h1>
-  <p>Hotlines, gotta catch them all!</p>
+  <p>Professional hotline answerer</p>
 </body>
 </html>
 ```
@@ -125,7 +125,7 @@ body {
 <body>
   <img src="http://surrogate.hackedu.us/i.imgur.com/S06cY9j.gif">
   <h1>I am Drake</h1>
-  <p>Hotlines, gotta catch them all!</p>
+  <p>Professional hotline answerer</p>
 </body>
 </html>
 ```
