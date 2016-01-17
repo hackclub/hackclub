@@ -51,11 +51,11 @@ _(ready to paste into org-mode)_
 
 ```org
 ** How did you first get interested in coding?
-*** Can you tell me about your school?
-**** Can you tell me about the current state of your club?
-**** If I'm a beginner and walk into a club meeting, what will I see?
-*** What other extracurriculars are you involved with?
-**** Can you list your extracurriculars, sorted by priority, including Hack Club?
+** Can you tell me about your school?
+*** Can you tell me about the current state of your club?
+*** If I'm a beginner and walk into a club meeting, what will I see?
+** What other extracurriculars are you involved with?
+*** Can you list your extracurriculars, sorted by priority, including Hack Club?
 ```
 
 ## Onboarding Checklist
