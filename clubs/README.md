@@ -4,14 +4,26 @@ _A step-by-step guide by the Hack Club community._
 
 **Table of Contents**
 
-- [What is a Hack Club?](#what-is-a-hack-club)
-- [Planning Your Hack Club](#planning-your-hack-club)
-  - [Leadership Team](#leadership-team)
-  - [Teacher Sponsor and Space](#teacher-sponsor-and-space)
-  - [Club Registration](#club-registration)
-- [Student Sign-Ups](#student-sign-ups)
-- [The First Meeting](#the-first-meeting)
-- [The Second Meeting](#the-second-meeting)
+- [How to Run a Successful Hack Club](#how-to-run-a-successful-hack-club)
+  - [What is a Hack Club?](#what-is-a-hack-club)
+  - [Planning Your Hack Club](#planning-your-hack-club)
+    - [Leadership Team](#leadership-team)
+    - [Teacher Sponsor and Space](#teacher-sponsor-and-space)
+    - [Club Registration](#club-registration)
+    - [Student Sign-Ups](#student-sign-ups)
+  - [The First Meeting](#the-first-meeting)
+    - [Waiting for Hackers to Arrive](#waiting-for-hackers-to-arrive)
+    - [Introduction Presentation](#introduction-presentation)
+    - [Name Game](#name-game)
+    - [First Website Workshop](#first-website-workshop)
+    - [Free-Form Hacking](#free-form-hacking)
+    - [Second Meeting Reminder](#second-meeting-reminder)
+  - [The Second Meeting](#the-second-meeting)
+    - [Waiting for Hackers to Arrive](#waiting-for-hackers-to-arrive-1)
+    - [Announcements](#announcements)
+    - [Example Demo](#example-demo)
+    - [Free-Form Hacking](#free-form-hacking)
+    - [Demos](#demos)
 
 ## What is a Hack Club?
 
