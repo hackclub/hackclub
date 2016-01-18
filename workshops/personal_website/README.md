@@ -3,9 +3,12 @@
 By the end of this workshop, you will learn to make your own personal website.
 It will look something like this:
 
-![](http://placehold.it/300x200?text=Screenshot of Final Website)
+![](img/final_screenshot.png)
 
-See the [final code](#TODO).
+Open the [live demo][final-live-demo]. See the [final code][final-code].
+
+[final-live-demo]: https://cdn.rawgit.com/anonymous/7a5a6cc614052c8c810f/raw/9419c5a5a4a871da091a49844ffbc46f434c01c8/index.html
+[final-code]: http://jsbin.com/gist/7a5a6cc614052c8c810f?html,output
 
 **On the way, you will:**
 
