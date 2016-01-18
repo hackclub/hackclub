@@ -5,7 +5,8 @@ It will look something like this:
 
 ![](img/final_screenshot.png)
 
-Open the [live demo][final-live-demo]. See the [final code][final-code].
+- Open the [live demo][final-live-demo].
+- See the [final code][final-code].
 
 [final-live-demo]: https://cdn.rawgit.com/anonymous/7a5a6cc614052c8c810f/raw/9419c5a5a4a871da091a49844ffbc46f434c01c8/index.html
 [final-code]: http://jsbin.com/gist/7a5a6cc614052c8c810f?html,output
@@ -28,6 +29,7 @@ This will let us login to our next tool and many websites in the programming
 ecosystem!
 
 Let's create your GitHub account:
+
 
 | # | Instruction                                                                                                        | Screenshot |
 |---|--------------------------------------------------------------------------------------------------------------------|------------|
