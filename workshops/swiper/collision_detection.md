@@ -17,8 +17,7 @@ All right! We finally can make this a game a game! How are we going to do this??
             secondBody = contact.bodyA
         }
     }
-
-    
+   
 ### Set Up The If Statement
 
 Now, let's start filling out the method. This, `if` statement checks the `PhysicsCategory` of the two physics bodies to check to see if the collision was indeed between a block and a target. This is just the frame of the `if` statement. Write this before the `}` of the method.
@@ -27,7 +26,6 @@ Now, let's start filling out the method. This, `if` statement checks the `Physic
    	if firstBody.categoryBitMask == PhysicsCategory.Block && secondBody.categoryBitMask == PhysicsCategory.Target {
             
     }
-
     
 ### Remove the Block From the Array
 
@@ -37,8 +35,7 @@ Let's start filling the `if` statement in. The first line that we will add, will
     arrayOfBlocks.removeObject(firstBody.node!)
     
 ![](img/Step 7/3. HCRemoveObject.gif)
-    
-    
+      
 ### Create Variables for the Block and Target
 
 Now, we set up the last, final `if` statement. We create two variables of type `SKSpriteNode` for the block and the target. This will go underneath the block removal code we just wrote.
@@ -48,8 +45,7 @@ Now, we set up the last, final `if` statement. We create two variables of type `
     let target = secondBody.node as! SKSpriteNode
     
 ![](img/Step 7/4. HCAssignBlockAndTarget.gif)
- 
- 
+
 ### Check Collision
 
 Get ready for the last bit of code we will write in the `GameScene.swift` file! This last part will be an `if` statement. Let's check to see if the block's color corresponds with the target's color. This will then increment the `score` variable, consequently update the `scoreLabel` with the updated `score` and then finally remove the block from the screen. If the color's do not respond, we stop the blocks from spawning by the line of code: `removeAllActions()`. Then we remove all blocks from the screen, and lastly we transition to the `GameOverScene`. Fill this in at the bottom of the method before the `}`.
@@ -77,7 +73,6 @@ Get ready for the last bit of code we will write in the `GameScene.swift` file! 
 			self.view?.presentScene(gameOver, transition: SKTransition.revealWithDirection(.Left, duration: 0.5))
 		 })
 	}
-
 	
 ### Set Up the Game Over Screen
 
@@ -85,13 +80,11 @@ As we have with the `PlayScene.swift` and `GameScene.swift` let's prep the `Game
 
 ![](img/Step 7/6. HCSetUpGameOver.gif)
 
-
 ### Run the Project
 
 Finally, let's run the project to see what we've just done! Run it and have fun playing our nearly complete game!
 
 ![](img/Step 7/7. HCRunProjectPhysics.gif)
-
 
 ### Recap
 

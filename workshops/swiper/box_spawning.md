@@ -30,8 +30,7 @@ After that, we create a couple of `SKAction`'s. The first is an `SKAction` that 
         let sequence = SKAction.sequence([wait, makeBlock])
         let repeatForever = SKAction.repeatActionForever(sequence)
         runAction(repeatForever)
-        
-        
+            
 ### Creating Blocks
 
 We will create the method to create the blocks we are going to be spawning in two parts. Here is the first part where we add a block to a screen. In the first part we need to select a random color to set the box. To do this we first create a variable of type `UIColor`. The default value will be blue. Then, we create an `Int` that stores a random value from 0-2. Based on this random value, we set the color to either red, green, or blue. Now that the color is created, we create the block, but you will not see it on the screen because the alpha will be set to 0 so we can have a cool fade in animation on it. We do this the same as the walls. We create an `SKSpriteNode` and then create the `physicsBody` to attach. Place this code right underneath the `createWalls()` method we created before.
@@ -79,8 +78,7 @@ Now we need to make the block fall to the ground. First to keep track of the blo
         
         // 3. increment the number of blocks
         numOfBlocks++
-        
-        
+                
 ### Run the Project
 
 Now, let's run the project! Once you press play, you should see the boxes being spawned!

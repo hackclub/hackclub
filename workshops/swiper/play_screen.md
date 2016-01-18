@@ -4,16 +4,21 @@
 
 Variables are in every program you see. They are one of the building blocks of programming. A variable is a block of memory that holds a piece of data. There are two types of variables in Swift. One is a `constant` and the other is a `variable`. A `constant` is defined by the `let` keyword and its value cannot be changed once its set. A `variable` is defined by the `var` keyword and its value can be changed at any time. Now lets make our first variables in the `PlayScene.swift` file.
 
-	// screen dimensions
-    private var screenWidth: CGFloat!
-    private var screenHeight: CGFloat!
+```
+// screen dimensions
+private var screenWidth: CGFloat!
+private var screenHeight: CGFloat!
     
-    // play label
-    private var play: SKLabelNode!
+// play label
+private var play: SKLabelNode!
+```
+	
     
 Write the above code under this line:
 
-	class PlayScene: SKScene {
+```
+class PlayScene: SKScene {
+```
 	
 In the above code we create three variables. The first two as stated by the comment above it creates two variables of type `CGFloat` meaning they can hold floating point numbers or decimals. We do not set the value for either of these yet though. The third variable is actually a special type of variable, an **object**. It is of type `SKLabelNode` meaning that it is a label that can be displayed on screen.
 
@@ -25,24 +30,26 @@ So to do a quick recap, we have learned 3 important keywords so far: `class` `ob
 
 In the code snippet below, the code is in the `method` named `didMoveToView()`. This method is the first bit of code that runs in an `SKScene`. All of your setup code will be written in this method. First you set the screen dimension `variables`. These variables will help with positioning and sizing sprites on screen based on the size of the device. Next, you set the background color of the screen to be white. If you notice you did not need to define the `backgroundColor` variable. This is because `backgroundColor` comes with the `SKScene` class. Once you state that the `PlayScene` is a `SKScene` the `backgroundColor` variable is defined. The next block of code creates the play button. An `SKLabelNode` has a bunch of `properties` that allow you to modify the object. These `properties` include the `fontName` `fontSize` `position` `fontColor` `alpha` and `name`. The `name` property helps with later code so you do not need to understand what this property is. Everything else should be pretty self explanatory, but if you need any further clarification read more [here in Apple's Documentation](https://developer.apple.com/library/ios/documentation/SpriteKit/Reference/SKLabelNode_Ref/). Now write this code below where we defined the three variables.
 
-	override func didMoveToView(view: SKView) {
-        // screen dimensions
-        screenWidth = view.frame.size.width
-        screenHeight = view.frame.size.height
+```
+override func didMoveToView(view: SKView) {
+	// screen dimensions
+   	screenWidth = view.frame.size.width
+	screenHeight = view.frame.size.height
         
-        // background color
-        backgroundColor = UIColor.whiteColor()
+	// background color
+	backgroundColor = UIColor.whiteColor()
         
-        // play button
-        play = SKLabelNode(text: "play")
-        play.fontName = "Futura"
-        play.fontSize = screenWidth * 0.1
-        play.position = CGPointMake(screenWidth / 2.0, screenHeight / 2.0)
-        play.fontColor = UIColor.grayColor()
-        play.alpha = 0.5
-        play.name = "play"
-        addChild(play)
-    }
+	// play button
+	play = SKLabelNode(text: "play")
+	play.fontName = "Futura"
+	play.fontSize = screenWidth * 0.1
+   	play.position = CGPointMake(screenWidth / 2.0, screenHeight / 2.0)
+	play.fontColor = UIColor.grayColor()
+	play.alpha = 0.5
+	play.name = "play"
+	addChild(play)
+}
+```
     
 ### Handling Touches
 
