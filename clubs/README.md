@@ -143,9 +143,9 @@ sophomores) to your first club meeting.
 
 The best way to take advantage of your school's "club day" (or equivalent) is to
 bring food and be _super proactive_ about getting people to give you their name,
-email, and phone numbers. It's boring, but a pencil and a clipboard with a list
-of people's info is often the best way to collect this information (feel free to
-experiment though).
+email, and phone numbers. Excel or Google Sheets is a good way to collect this
+info, though it's a good idea to also bring a pencil and a clipboard in case of
+technical difficulties.
 
 Your sign-up goal should be driven by how many people you want to attend your
 meetings -- set your goal for a number of sign-ups well above the number of
