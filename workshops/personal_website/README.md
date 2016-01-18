@@ -500,48 +500,123 @@ your **body** looks like this:
 >   computers have on them, you can Google
 >   ["web safe fonts"](https://www.google.com/#q=web+safe+fonts)
 
-## Part IV: Deployment
+### 6) Celebrate!
 
-### 1) Getting the URL of your website
-
-- Click on the green button with the arrow.
-- Copy and past the URL
-
-### 2) Changing the Title
-
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-      <title>Drake Graham</title>
-      <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-      <img src="https://surrogate.hackedu.us/i.imgur.com/S06cY9j.gif">
-      <h1>Drake Graham</h1>
-      <p>Professional hotline answerer</p>
-    </body>
-</html>
+```
+TODO: Insert Celebration Screenshot
 ```
 
-## Part V: GitHub Pages
+W0000t! You've successfully added the CSS to this web page!
 
-- What is GitHub pages?
-- What are we going to use it for?
-- Let's create a repository named `username.github.io`
-- Let's run these git commands to create a repository
+Now to share your creation with the world.
 
-## Examples
+## Part IV: Deployment
 
-- John Cena's Personal Website (created by [Brian Nguyen](http://nguyenbrian.github.io/john-cenas-personal-website/))
-    #music
+Right now we can only our website on our own computer. Let's get a link that we
+can share with anyone on the internet!
 
-## HTML Documentation
+### 1) Hosting on Cloud9
 
-## Learning More
+In the **live preview** of the website:
 
-## I want to know everything from the ground up explained quickly
+1. Click the button that looks like this `TODO: Arrow Image`
 
-- https://teamtreehouse.com/library/html/introduction/
+  ```
+  TODO: GIF screenshot
+  ```
+2. Then in the new window that pops up, copy the URL of the address bar
 
-## I want to learn and build step by step
+  ```
+  TODO: GIF screenshot
+  ```
+
+3. You can send this URL to whoever anyone else in the world and they will be
+   able to view your website!
+
+**But there's a problem:**
+
+This URL won't work indefinitely, it will stop working when you don't use your
+Cloud9 for a couple of days. We want something that other people will be able to
+open even if it's a year from now.
+
+We can use **GitHub Pages** to **host** our website instead!
+
+### 2) Hosting on GitHub Pages
+
+GitHub allows us to **host** our website using a service called **GitHub
+pages**. In simple terms, this means that you can put the files of your website
+on GitHub and GitHub will give you a URL that you can share with the world.
+
+#### a) Creating a GitHub repository on github.com
+
+1. Open a new tab
+2. Go to GitHub.com
+3. Click the green **"+ New repository"** button
+4. Under **"Repository name"** write your `username.github.io` except instead of
+   writing `username`, write your actual GitHub username. So if your username
+   is "alice1337", then you would write `alice1337.github.io`.
+5. Make sure that you did the previous step correctly.
+  - Is your **username** entered correctly
+  - Does the repository name end in **`.io`**
+6. After you are sure you entered in the repository name correctly, click the
+   green "Create repository" button at the bottom.
+7. Then copy the HTTPS link at the top. It should look like this:
+   `https://github.com/username/username.github.io.git`
+
+#### b) Setup in Cloud9
+
+1. Go back to the tab that you have Cloud9 open in
+2. Look for the bottom bar. If you don't see it open, click **"View"** → **"Console"**
+3. Press the **"+"** button and click **"New Terminal"**. The new box that comes up is what's called a **terminal**.
+   Type the below commands in it followed by enter after each command:
+  - `git init`
+  - `git remote add origin https://github.com/username/username.github.io.git`
+  - `git add --all`
+  - `git commit -am "Initial commit"`
+  - `git push -u origin master`
+4. GitHub will now ask you for your username and password.
+  - Go ahead and enter your username and then press the enter.
+  - Then enter your password and press enter. _Note that the characters don't
+    show up on the screen but rest assured, you are still typing._
+5. Now try to view your website by going to `username.github.io/portfolio`
+
+#### c) Celebrate!
+
+Yaaaaaass! Your website is now public on the internet and will stay!
+Feel free to share this with your friends!
+
+```
+TODO: Insert Celebratory GIF
+```
+
+## Part V: Hacktime
+
+Alright, you've been following a decently rigid tutorial. Now is your chance to
+to take this website we made together and make it your own.
+
+Below are some websites that we found to give you some inspiration!
+
+### Examples
+
+**Basic Websites Made By Hack Club Hackers**
+
+- John Cena's Personal Website (created by
+  [Brian Nguyen](http://nguyenbrian.github.io/john-cenas-personal-website/))
+
+**Advanced Websites Made by Hack Club Hackers**
+
+**Professional Websites**
+
+- [Pushkar Modi](http://pushkarmodi.com)
+- [Personal website of professional designer, Alice Lee](http://byalicelee.com)
+- [Manuel Moreale](http://manuelmoreale.com)
+- [Yaron Schoen](http://yaronschoen.com)
+### Additional Resources
+
+Here are some additional resources that you can use to learn the basics of HTML &
+CSS.
+
+| Resource                                                                | Pros                                                 | Cons                                                                            |
+|-------------------------------------------------------------------------|-----------------------------------------------------|---------------------------------------------------------------------------------|
+| [Free&nbsp;Code&nbsp;Camp](http://www.freecodecamp.com/map)                       | Interactive and very methodical.                    | Not made for you to learn to make something that you want to show your friends. |
+| [Team&nbsp;Tree&nbsp;House](https://teamtreehouse.com/library/html/introduction/) | Their videos are extremely comprehensive an through | It takes a _very_ long time to get through and are very passive.                |
