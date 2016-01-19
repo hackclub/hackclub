@@ -30,12 +30,11 @@ Hack Club.
   - Use an email that you have access to, you'll need to access it
     to verify your account
   - Make sure to remember your username and password, you'll need this at every
-    subsequent club meeting
-  - When prompted to choose a plan, make sure to choose the **"Free"** plan
+    club meeting
+  - When prompted to choose a plan, to choose the **"Free"** plan
 2. Open your email inbox in a new tab and look for an email from GitHub. Open it
    and click the button to verify your email
-3. Open https://github.com/hackclub/hackclub/ and click this button that looks
-   like this on the top right: ![](img/github_star.png)
+3. Open https://gh.hackclub.io in a new tab and star the project by clicking on the button that looks like this on the top right: ![](img/github_star.png)
 
 ### 2) Create Your First GitHub repository
 
@@ -45,8 +44,8 @@ on GitHub and GitHub will give you a URL that you can share with the world.
 
 1. Go to https://github.com
 2. Click the green **"+ New repository"** button
-3. Under **"Repository name"** write your `username.github.io` except instead of
-   writing `username`, write your actual GitHub username. So if your username
+3. Under **"Repository name"** write your `USERNAME.github.io` except instead of
+   writing `USERNAME`, write your actual GitHub username. So if your username
    is "alice1337", then you would write `alice1337.github.io`.
 4. Make sure that you did the previous step correctly.
   - Is your **username** entered correctly
@@ -57,22 +56,21 @@ on GitHub and GitHub will give you a URL that you can share with the world.
    `https://github.com/username/username.github.io.git`. You will need this link
    for the next step.
 
-### 3) Signup for Cloud9
+### 3) Sign Up for Cloud9
 
 Just like you can use Google Drive to write and organize documents written in
 English, we'll be using **Cloud9** to write, save, and organize our code.
 
-> Note:
->
-> The techy term for a place where you can write, and organize code is **"IDE"
-or "Integrated Development Environment"**
+> The techy term for a place where you can write, and organize code is **"IDE"**
+> or "Integrated Development Environment"**
 
 1. In a new tab, open https://c9.io/
 2. In the top right hand corner, click the button that looks like this: ![](img/c9_gh_icon.png)
 3. Click the green **"Authorize application"** button
 4. If there is a popup that asks for your email, go ahead and enter it
 5. Click the grey box that says **"Create a new workspace"**
-6. Set the **"Workspace name"**, to **"projects"**
+6. Set the **"Workspace name"**, to `USERNAME.github.io` where `USERNAME`
+   is your GitHub username.
 7. Under **"Clone from Git or Mercurial URL"**, paste the **HTTPS Link** that
    you copied your GitHub repository.
 
@@ -81,14 +79,14 @@ or "Integrated Development Environment"**
 8. Then without changing anything else on the screen, scroll to the bottom and
    click the green **"Create Workspace"** button.
 
-You should now see a screen that looks like it's loading something like this:
+You should now see a screen looks something like this:
 
 ![](img/c9_signup_ide_loaded.png)
 
 > Note:
 >
-> If you don't see the above screen and after 10 seconds, it looks like
-> the page is still trying to load, do the following:
+> If you're waiting for a while (more than 10 seconds) and the above screen
+> still doesn't load, try the following:
 >
 > 1. Open https://c9.io
 > 2. Click on the green **"Open"** button**
@@ -102,7 +100,7 @@ You should now see a screen that looks like it's loading something like this:
 Congratulations, you officially setup all of your coding tools for the semester!
 
 
-Now we're ready to start the project!
+Now we're ready to start the website!
 
 ## Part III: Create the Project Folder
 
@@ -111,7 +109,7 @@ folder.
 
 Let's create a folder for our personal website project:
 
-1. On the left side of the screen, right click the **`projects`**
+1. On the left side of the screen, right click the **`projects`** folder
 2. Click **"New Folder"**
 3. Then name the folder **`personal_website`**
 
@@ -122,7 +120,9 @@ Let's create a folder for our personal website project:
 Every website is written with **HTML** code. HTML code is written in **HTML
 files**.
 
-### 1) Create the HTML file for your personal website
+> HTML stands for Hypertext Markup Language.
+
+### 1) Create the HTML file for your website
 
 1. Right click the **`personal_website`** folder you just created
 2. Click **"New File"**
@@ -135,11 +135,11 @@ files**.
 >
 > - Just like Microsoft Word Documents end in **`.doc`**, HTML files end in
 **`.html**`
-> - Your main html file has to be named **`index.html`**
+> - Your main HTML file has to be named **`index.html`**
 
 ### 2) Adding standard HTML template
 
-Every HTML file essentially follows this template:
+Every HTML file follows this template:
 
 ```html
 <!DOCTYPE html>
@@ -154,21 +154,14 @@ Every HTML file essentially follows this template:
 Let's put this template inside of our HTML file:
 
 1. Double click the **`index.html`** file you just created to open it
-2. Copy and paste the above HTML code into your **`index.html`** file
+2. Retype the above HTML code into your **`index.html`** file, like so:
 
-> Note:
->
-> You generally want to retype any code that you write because you will to
-remember it better. However in this case, since there's so much there it's fine
-to copy and paste it this time.
-
-<html>
-
+> ![](img/write_html_template.gif)
 
 ### 3) Adding to the Template
 
 There's a lot going on in the below template. For now, let's just understand
-that there are two sections in this template, the **head** and the **body**:
+that there are two sections in this template, the **`head`** and the **`body`**:
 
 ```markdown
 <!DOCTYPE html>   
@@ -221,7 +214,7 @@ answerer`.
 
 > ![](img/html_add_description.gif)
 
-Notice that the blank space between my name and description isn't reflected on
+Notice that the blank line between my name and description isn't reflected on
 the web page. Adding blank lines or spaces between your words
 in HTML does will not change what your website looks like.
 
@@ -235,7 +228,7 @@ For example, if I want `Drizzy Drake` to be a heading of my webpage, I can
 put it inside of a **heading tag**, like so:
 
 ```html
-<h1>Drake Graham</h1>
+<h1>Drizzy Drake</h1>
 ```
 
 1. Make your name look like a heading by surround your name with an `h1` heading
@@ -338,8 +331,8 @@ Therefore, if we want to change the **size** of the image → we use **CSS**!
 
 ### 2) Connecting the CSS file in the HTML file
 
-Although we've created a CSS file, the HTML file will not automatically **link**
-the CSS. We have to explicitly **link** the CSS file in the HTML.
+Although we've created a CSS file, the HTML file will ignore the CSS file we
+just created. We have to explicitly **link** the CSS file in the HTML.
 
 To appropriately **link** the CSS file :
 
@@ -537,7 +530,7 @@ Feel free to share this with your friends!
 Now that you have finished building your website
 
 1. Follow these directions [here][slack] to Signup for our Slack in a new tab
-2. Join your club's channel
+2. Join your club's channel by asking your club leader.
 3. Post the link to your website
   - In your club's channel
   - In the `#personal-website` channel
