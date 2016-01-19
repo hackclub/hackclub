@@ -36,7 +36,7 @@ text.
 
    > JS Bin is a website for easily writing code
 
-[starter]: https://jsbin.com/gist/751ca529c942eb4763c8?html,js,output
+[starter]: https://jsbin.com/gist/751ca529c942eb4763c8?html,js,console
 
 2. In the top right hand corner, click **"File"** → **Clone**
 
