@@ -5,60 +5,39 @@ It will look something like this:
 
 ![](img/final_screenshot.png)
 
-- Open the [live demo][final-live-demo].
-- See the [final code][final-code].
+Open the [live demo][final-live-demo]. See the [final code][final-code].
 
 [final-live-demo]: https://cdn.rawgit.com/anonymous/7a5a6cc614052c8c810f/raw/9419c5a5a4a871da091a49844ffbc46f434c01c8/index.html
 [final-code]: http://jsbin.com/gist/7a5a6cc614052c8c810f?html,output
 
 **On the way, you will:**
 
-- Learn the programming languages **HTML** & **CSS**
+- Begin to learn the programming languages **HTML** & **CSS**
 - Setup the coding tools, **GitHub** and **Cloud9**, which  you will use
   throughout your time in Hack Club
 
 ## Part 1: Setup
 
-### 1) Signup for GitHub
+### 1) Sign Up for GitHub
 
 **GitHub** is a website used by professional coders to collaborate on code.
-Think Dropbox, but for code.
+Think Dropbox, but for code. We'll be using it to store and manage our code in
+Hack Club.
 
-GitHub also has a login feature similar to how Facebook has "Facebook login".
-This will let us login to our next tool and many websites in the programming
-ecosystem!
-
-Let's create your GitHub account:
-
-
-| # | Instruction                                                                                                        | Screenshot |
-|---|--------------------------------------------------------------------------------------------------------------------|------------|
-| 1 | In a new tab, open https://github.com/join                                                                         | `TODO`     |
-| 2 | Fill out the form with a _valid_ email                                                                             | `TODO`     |
-| 3 | _Write down_ your username, email, password so you won't forget it                                                 | `TODO`     |
-| 4 | Click the green **"Create an account"** button                                                                     | `TODO`     |
-| 5 | Without changing anything else, scroll to the bottom and click **"Finish sign up"** button                         | `TODO`     |
-| 6 | In a new tab, open the email account that you gave to GitHub                                                       | `TODO`     |
-| 7 | Look for the email with the subject **"[GitHub] Please verify your email address."**                               | `TODO`     |
-| 8 | Open that email and click the blue **"Verify email address"** button. This will redirect you to GitHub website     | `TODO`     |
-| 9 | Look to make sure you seea you should see banner at the top of the screen that says **"Your email was verified."** | `TODO`     |
-
-Alright, you now have a GitHub account, we can use it to signup for **Cloud9**.
-
-### 2) Join The Community
-
-```
-TODO: Create Google Form that collects people's
-- First Name
-- Last Name
-- School
-- GitHub
-- Email
-```
+1. Open https://github.com/join in a new tab and create a new account
+  - Choose a username you will be proud to show future employers. (ex.
+    `zachlatta` and `jonleung`)
+  - Be careful to use an email that you have access to, you'll need to access it
+    to verify your account
+  - Make sure to remember your username and password, you'll need this at every
+    subsequent club meeting
+  - When prompted to choose a plan, make sure to choose the **"Free"** plan
+2. Open your email inbox in a new tab and look for an email from GitHub. Open it
+   and click the button to verify your email
+3. Open https://github.com/hackclub/hackclub/ and click this button that looks
+   like this on the top right: ![](img/github_star.png)
 
 ### 3) Signup for Cloud9
-
-<!-- TODO: The large screenshots are fine! -->
 
 Just like you can use Google Drive to write and organize documents written in
 English, we'll be using **Cloud9** to write, save, and organize our code.
@@ -68,27 +47,22 @@ English, we'll be using **Cloud9** to write, save, and organize our code.
 > The techy term for a place where you can write, and organize code is **"IDE"
 or "Integrated Development Environment"**
 
-Let's create a Cloud9 Account:
+1. In a new tab, open https://c9.io/
+2. In the top right hand corner, click the button that looks like this: ![](img/c9_gh_icon.png)
+3. Click the green **"Authorize application"** button
+4. If there is a popup that asks for your email, go ahead and enter it
+5. Click the grey box that says **"Create a new workspace"**
+6. Set the **"Workspace name"**, to **"projects"**
+7. Then without changing anything else on the screen, scroll to the bottom and
+   click the green **"Create Workspace"** button.
 
-| # | Instruction                                                                                                               | Screenshot |
-|---|---------------------------------------------------------------------------------------------------------------------------|------------|
-| 1 | In a new tab, open https://c9.io/                                                                                         | `TODO`     |
-| 2 | In the top right hand corner, click the button that looks like this: ![](img/c9_gh_icon.png)                              | `TODO`     |
-| 3 | Click the green **"Authorize application"** button                                                                        | `TODO`     |
-| 4 | If there is a popup that asks for your email, go ahead and enter it                                                       | `TODO`     |
-| 5 | Click the grey box that says **"Create a new workspace"**                                                                 | `TODO`     |
-| 6 | Under **"Workspace name"**, type **"projects"**                                                                           | `TODO`     |
-| 7 | Then without changing anything else on the screen, scroll to the bottom and click the green **"Create Workspace"** button | `TODO`     |
+You should now see a screen that looks like it's loading something like this:
 
-You should now see a screen that looks like this:
-
-```
-TODO: Screenshot of c9 workspace
-```
+![](img/c9_signup_ide_loaded.png)
 
 > Note:
 >
-> If you don't see the above screen after 10 seconds and it looks like
+> If you don't see the above screen and after 10 seconds, it looks like
 > the page is still trying to load, do the following:
 >
 > 1. Open https://c9.io
@@ -98,9 +72,7 @@ TODO: Screenshot of c9 workspace
 
 ### 3) Celebrate!
 
-```
-TODO: Insert Celebratory GIF
-```
+> ![](img/celebrate_king_kid.gif)
 
 Congratulations, you officially setup all of your coding tools for the semester!
 
@@ -118,9 +90,7 @@ Let's create a folder for our personal website project:
 2. Click **"New Folder"**
 3. Then name the folder **`personal_website`**
 
-```
-TODO: Insert GIF screenshot following above directions
-```
+> ![](img/c9_create_personal_website_folder.gif)
 
 ## Part IV: HTML
 
@@ -134,9 +104,7 @@ files**.
 3. Then name the file **`index.html`**
 4. Double click it to open it
 
-```
-TODO: Insert GIF screenshot following above directions
-```
+> ![](img/c9_create_index_dot_html.gif)
 
 > Notes:
 >
@@ -205,9 +173,7 @@ Let's see what our website looks like so far:
 2. Preview what the website looks like by clicking **"Preview"** → **"Live
    Preview File"**
 
-```
-TODO: Insert screenshot of code showing blank page
-```
+> ![](img/c9_live_preview.gif)
 
 As you can see, page is still blank. This is because we have not yet added any
 **content** in the **`body`** section yet. Let's add some!
@@ -217,9 +183,7 @@ As you can see, page is still blank. This is because we have not yet added any
 1. Write your name in the **body** of the html page (between the **`<body>`**
    and **`</body>`**). My name is `Drizzy Drake` so that's what I will write.
 
-```
-TODO: Insert GIF screenshot following above directions
-```
+> ![](img/html_add_name.gif)
 
 Notice that that the HTML code you write is immediately updated in the preview.
 That's why it's called a **"Live Preview"**
@@ -230,12 +194,10 @@ That's why it's called a **"Live Preview"**
 job as a call center representative so I'm going to write `MVP hotline
 answerer`.
 
-```
-TODO: Insert GIF screenshot following above directions
-```
+> ![](img/html_add_description.gif)
 
 Notice that the blank space between my name and description isn't reflected on
-the web page. Any adding blank lines or more than one space between your words
+the web page. Adding blank lines or spaces between your words
 in HTML does will not change what your website looks like.
 
 To add spacing, We need **HTML tags** for tags to format the way text look.
@@ -258,13 +220,8 @@ put it inside of a **heading tag**, like so:
     eventually want a **`<h1>`** and so it just adds it for you. This is known
     as **autocomplete**.
 
-```
-TODO: Insert GIF of
-        - writing h1
-        - click right of "Drake Graham"
-        - backspacing "Drake Graham"
-        - re-adding "Drake Graham" inside the h1
-```
+
+> ![](img/html_format_name_as_h1_tag.gif)
 
 There are two parts to the `h1` tag:
 
@@ -278,8 +235,7 @@ heading, it makes the anything inside of the **`h1`** tag big and bold.
 ### 5) Formatting the Description with a Paragraph Tag
 
 Similarly to how we told the browser to treat **`Drake Graham`** as a header, I
-want to tell the browser to treat **`MVP hotline answerer.`** as the beginning
-of a paragraph.
+want to tell the browser to treat **`MVP hotline answerer.`** as a paragraph.
 
 1. Put your description inside of a **paragraph tag** like so:
 
@@ -287,9 +243,7 @@ of a paragraph.
 <p>MVP hotline answerer</p>
 ```
 
-```
-TODO: Insert GIF screenshot following above directions
-```
+> ![](img/html_format_description_as_p_tag.gif)
 
 Just like **`h1`** tag, the **`p`** tag also has an opening and closing tag.
 
@@ -310,15 +264,14 @@ https://surrogate.hackedu.us/i.imgur.com/S06cY9j.gif
 
 To add the above image to the top of the page
 
-1. Type the code for the **image tag** (written below) into the top of the body:
+1. Type the code for the **image tag** (written below) below the opening body
+   tag:
 
   ```html
   <img src="https://surrogate.hackedu.us/i.imgur.com/S06cY9j.gif">
   ```
 
-```
-TODO: Insert GIF screenshot following above directions
-```
+> ![](img/html_add_image_tag.gif)
 
 > Notes:
 >
@@ -332,10 +285,9 @@ Hmm, our image is too big. CSS to the rescue!
 
 ## Part III: CSS
 
-**HTML** is to **CSS** as your **your face** is to **makeup**.
+**HTML** is **content** of a page (things like, words, images, and structure).
 
-- **HTML** is **content** of a page (things like, words, images, and structure).
-- **CSS** is the look and feel like (things like **color**, **spacing**, and
+**CSS** is the look and feel like (things like **color**, **spacing**, and
   **size**).
 
 > Note:
@@ -357,9 +309,7 @@ Therefore, if we want to change the **size** of the image → we use **CSS**!
 > - The **`.css` extension** tells the computer to interpret this as a `css`
 >   file (just like `.doc` and `.html`)
 
-```
-TODO: Insert GIF screenshot following above directions
-```
+> ![](img/css_add_css_file.gif)
 
 ### 2) Connecting the CSS file in the HTML file
 
@@ -375,9 +325,7 @@ To appropriately **link** the CSS file :
    <link rel="stylesheet" href="styles.css">
    ```
 
-```
-TODO: Insert GIF screenshot following above directions
-```
+> ![](img/css_add_link_tag.gif)
 
 > Notes:
 >
@@ -395,7 +343,7 @@ Now that we linked our CSS file, let's write some CSS code to make the image
 smaller:
 
 1. Open **`style.css`** by double-clicking it
-2. Then add the below CSS code to make the image smaller by _typeing_ the
+2. Then add the below CSS code to make the image smaller by _typing_ the
    following code into the CSS file (don't copy and paste because you won't
    remember it as well)
 
@@ -409,9 +357,7 @@ smaller:
 
 Yay! Our image got smaller!
 
-```
-TODO: Insert GIF screenshot following above directions
-```
+> ![](img/css_img_width.gif)
 
 **Understanding The CSS More Deeply**
 
@@ -451,9 +397,7 @@ Then to center everything on the page
 3. Save the file by clicking **"File"** → **"Save"** (or use the shortcut
    **CTRL + S / Command + S**)
 
-```
-TODO: Insert GIF screenshot following above directions
-```
+> ![](img/css_text_align_center.gif)
 
 Now you can see that everything is centered on the page.
 
@@ -485,7 +429,7 @@ And because everything is in the **body** tag, everything is centered.
 
 ### 5) Changing the Font
 
-Finally let's change the font of the page **`Arial`**.
+Finally let's change the font of the page to **`Arial`**.
 
 To do this:
 
@@ -499,6 +443,8 @@ your **body** looks like this:
   }
   ```
 
+> ![](img/css_font_family_arial.gif)
+
 > Note:
 >
 > - Not all computers have the same fonts on them. To figure out what fonts most
@@ -507,9 +453,7 @@ your **body** looks like this:
 
 ### 6) Celebrate!
 
-```
-TODO: Insert Celebration Screenshot
-```
+![](img/celebrate_harry_potter.gif)
 
 W0000t! You've successfully added the CSS to this web page!
 
@@ -517,25 +461,17 @@ Now to share your creation with the world.
 
 ## Part IV: Deployment
 
-Right now we can only our website on our own computer. Let's get a link that we
-can share with anyone on the internet!
-
-### 1) Hosting on Cloud9
+Right now we can only SEE our website on our own computer. Let's get a link that
+we can share with anyone on the internet! ### 1) Hosting on Cloud9
 
 In the **live preview** of the website:
 
 1. Click the button that looks like this `TODO: Arrow Image`
 
-  ```
-  TODO: GIF screenshot
-  ```
+   > ![](img/live_preview_button.png)
+
 2. Then in the new window that pops up, copy the URL of the address bar
-
-  ```
-  TODO: GIF screenshot
-  ```
-
-3. You can send this URL to whoever anyone else in the world and they will be
+3. You can send this URL to anyone else in the world and they will be
    able to view your website!
 
 **But there's a problem:**
@@ -570,10 +506,8 @@ on GitHub and GitHub will give you a URL that you can share with the world.
 
 #### b) Setup in Cloud9
 
-1. Go back to the tab that you have Cloud9 open in
-2. Look for the bottom bar. If you don't see it open, click **"View"** → **"Console"**
-3. Press the **"+"** button and click **"New Terminal"**. The new box that comes up is what's called a **terminal**.
-   Type the below commands in it followed by enter after each command:
+1. Open the terminal by pressing `alt + t` on the keyboard at the same time
+
   - `git init`
   - `git remote add origin https://github.com/username/username.github.io.git`
   - `git add --all`
@@ -587,12 +521,22 @@ on GitHub and GitHub will give you a URL that you can share with the world.
 
 #### c) Celebrate!
 
+![](img/celebrate_rush_hour.gif)
+
 Yaaaaaass! Your website is now public on the internet and will stay!
 Feel free to share this with your friends!
 
-```
-TODO: Insert Celebratory GIF
-```
+## Part VI: Sharing with the Community
+
+Now that you have finished building your website
+
+1. Follow these directions [here][slack] to Signup for our Slack in a new tab
+2. Join your club's channel
+3. Post the link to your website
+  - In your club's channel
+  - In the `#personal-website` channel
+
+[slack]: ../../SLACK.md
 
 ## Part V: Hacktime
 
@@ -603,12 +547,13 @@ Below are some websites that we found to give you some inspiration!
 
 ### Examples
 
-**Basic Websites Made By Hack Club Hackers**
+**Websites Made By Other Hack Club Hackers**
 
 - John Cena's Personal Website (created by
   [Brian Nguyen](http://nguyenbrian.github.io/john-cenas-personal-website/))
-
-**Advanced Websites Made by Hack Club Hackers**
+- http://jevinsidhu.com/
+- https://mnefertiti.github.io/personalwhale/
+- https://cydrobolt.com/
 
 **Professional Websites**
 
@@ -616,12 +561,14 @@ Below are some websites that we found to give you some inspiration!
 - [Personal website of professional designer, Alice Lee](http://byalicelee.com)
 - [Manuel Moreale](http://manuelmoreale.com)
 - [Yaron Schoen](http://yaronschoen.com)
+
 ### Additional Resources
 
 Here are some additional resources that you can use to learn the basics of HTML &
 CSS.
 
-| Resource                                                                | Pros                                                 | Cons                                                                            |
-|-------------------------------------------------------------------------|-----------------------------------------------------|---------------------------------------------------------------------------------|
-| [Free&nbsp;Code&nbsp;Camp](http://www.freecodecamp.com/map)                       | Interactive and very methodical.                    | Not made for you to learn to make something that you want to show your friends. |
-| [Team&nbsp;Tree&nbsp;House](https://teamtreehouse.com/library/html/introduction/) | Their videos are extremely comprehensive an through | It takes a _very_ long time to get through and are very passive.                |
+| Resource                                                                          | Pros                                                                                     | Cons                                                                            |
+|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [HTML&nbsp;Dog](http://www.htmldog.com/guides/html/beginner/)                     | Very beginner focused. If you're not sure which one of these to choose, choose this one. | Isn't too rich in content.                                                      |
+| [Free&nbsp;Code&nbsp;Camp](http://www.freecodecamp.com/map)                       | Interactive and very methodical.                                                         | Not made for you to learn to make something that you want to show your friends. |
+| [Team&nbsp;Tree&nbsp;House](https://teamtreehouse.com/library/html/introduction/) | Their videos are extremely comprehensive an through                                      | It takes a _very_ long time to get through and are very passive.                |
