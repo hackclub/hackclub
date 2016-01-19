@@ -13,21 +13,21 @@ Open the [live demo][final-live-demo]. See the [final code][final-code].
 **On the way, you will:**
 
 - Begin to learn the programming languages **HTML** & **CSS**
-- Setup the coding tools, **GitHub** and **Cloud9**, which  you will use
+- Setup the coding tools, **GitHub**, **Cloud9**, **Slack** which  you will use
   throughout your time in Hack Club
 
 ## Part 1: Setup
 
 ### 1) Sign Up for GitHub
 
-**GitHub** is a website used by professional coders to collaborate on code.
+GitHub is a website used by millions of programmers to collaborate on code.
 Think Dropbox, but for code. We'll be using it to store and manage our code in
 Hack Club.
 
 1. Open https://github.com/join in a new tab and create a new account
   - Choose a username you will be proud to show future employers. (ex.
     `zachlatta` and `jonleung`)
-  - Be careful to use an email that you have access to, you'll need to access it
+  - Use an email that you have access to, you'll need to access it
     to verify your account
   - Make sure to remember your username and password, you'll need this at every
     subsequent club meeting
@@ -36,6 +36,26 @@ Hack Club.
    and click the button to verify your email
 3. Open https://github.com/hackclub/hackclub/ and click this button that looks
    like this on the top right: ![](img/github_star.png)
+
+### 2) Create Your First GitHub repository
+
+GitHub allows us to **host** our website using a service called **GitHub
+pages**. In simple terms, this means that you can put the files of your website
+on GitHub and GitHub will give you a URL that you can share with the world.
+
+1. Go to https://github.com
+2. Click the green **"+ New repository"** button
+3. Under **"Repository name"** write your `username.github.io` except instead of
+   writing `username`, write your actual GitHub username. So if your username
+   is "alice1337", then you would write `alice1337.github.io`.
+4. Make sure that you did the previous step correctly.
+  - Is your **username** entered correctly
+  - Does the repository name end in **`.io`**
+5. After you are sure you entered in the repository name correctly, click the
+   green "Create repository" button at the bottom.
+6. Then copy the **"HTTPS link"** at the top. It should look like this:
+   `https://github.com/username/username.github.io.git`. You will need this link
+   for the next step.
 
 ### 3) Signup for Cloud9
 
@@ -53,7 +73,12 @@ or "Integrated Development Environment"**
 4. If there is a popup that asks for your email, go ahead and enter it
 5. Click the grey box that says **"Create a new workspace"**
 6. Set the **"Workspace name"**, to **"projects"**
-7. Then without changing anything else on the screen, scroll to the bottom and
+7. Under **"Clone from Git or Mercurial URL"**, paste the **HTTPS Link** that
+   you copied your GitHub repository.
+
+   > ![](img/c9_add_git_url.gif)
+
+8. Then without changing anything else on the screen, scroll to the bottom and
    click the green **"Create Workspace"** button.
 
 You should now see a screen that looks like it's loading something like this:
@@ -482,42 +507,23 @@ open even if it's a year from now.
 
 We can use **GitHub Pages** to **host** our website instead!
 
-### 2) Hosting on GitHub Pages
+#### b) Pushing to GitHub Pages
 
-GitHub allows us to **host** our website using a service called **GitHub
-pages**. In simple terms, this means that you can put the files of your website
-on GitHub and GitHub will give you a URL that you can share with the world.
-
-#### a) Creating a GitHub repository on github.com
-
-1. Open a new tab
-2. Go to GitHub.com
-3. Click the green **"+ New repository"** button
-4. Under **"Repository name"** write your `username.github.io` except instead of
-   writing `username`, write your actual GitHub username. So if your username
-   is "alice1337", then you would write `alice1337.github.io`.
-5. Make sure that you did the previous step correctly.
-  - Is your **username** entered correctly
-  - Does the repository name end in **`.io`**
-6. After you are sure you entered in the repository name correctly, click the
-   green "Create repository" button at the bottom.
-7. Then copy the HTTPS link at the top. It should look like this:
-   `https://github.com/username/username.github.io.git`
-
-#### b) Setup in Cloud9
-
-1. Open the terminal by pressing `alt + t` on the keyboard at the same time
-
-  - `git init`
-  - `git remote add origin https://github.com/username/username.github.io.git`
+1. Open the terminal by pressing `alt + t` on the keyboard at the same time.
+   Then type in the following commands:
   - `git add --all`
   - `git commit -am "Initial commit"`
   - `git push -u origin master`
+
 4. GitHub will now ask you for your username and password.
   - Go ahead and enter your username and then press the enter.
   - Then enter your password and press enter. _Note that the characters don't
     show up on the screen but rest assured, you are still typing._
 5. Now try to view your website by going to `username.github.io/portfolio`
+
+   > Make sure to change `username` to yor own username
+
+
 
 #### c) Celebrate!
 
