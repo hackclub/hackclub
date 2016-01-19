@@ -24,24 +24,26 @@ works.
 This tutorial will likely show you things that you didn't know you could
 do. I'd recommend skipping around in the tutorial and find what interests you.
 
-## Part 1: Setup And Making Your First Phone Call with Twilio
+## Part 1: Setup Twilio
+
+****
 
 We're going to write some code that calls your phone and speaks some
 text.
 
-Ready?
+1. Open [this JS Bin][starter] in a new tab. Leave this tab open for the rest
+   of the tutorial.
 
-Open [this JS Bin*][starter] in a new tab. Leave this tab open for the rest of
-the tutorial.
-
-_*JS Bin is a website for easily writing code._
+   > JS Bin is a website for easily writing code
 
 [starter]: https://jsbin.com/gist/751ca529c942eb4763c8?html,js,output
+
+2. In the top right hand corner, click **"File"** → **Clone**
 
 We are going to use a service called Twilio to send text messages
 and make phone calls.
 
-### Step 1: Adding the Twilio API
+### Step 1) Adding the Twilio API
 
 To add the capability to send text messages and make phone calls, copy and paste
 the below script tag to the bottom of the `body` tag.
@@ -60,7 +62,7 @@ Like so:
 > Note for people who happen to be using their own IDE, just copy the HTML
 > code into your own HTML file.
 
-### Step 2: Set your `sid` and `token`
+### Step 2) Set your `sid` and `token`
 
 Before anything will work, we need to change `"YOUR_TWILIO_ACCOUNT_SID_HERE"`
 and `"YOUR_TWILIO_AUTH_TOKEN_HERE"` to your actual `sid` and `token`
@@ -78,14 +80,16 @@ actual SID and authentication token.
 
 > ![](img/enter_account_sid.gif)
 
-### Step 3: Turn off "Auto-run JS"
+### Step 3) Turn off "Auto-run JS"
 
 In the top right hand corner, turn off "Auto-run JS" so that your code doesn't
 automatically run every time you type something:
 
 > ![](img/turn_off_autorun.gif)
 
-### Step 4: Writing One Line of Code to Make a Phone Call
+## Part II: Making a Phone Call
+
+### Step 1) Writing One Line of Code to Make a Phone Call
 
 Then type _exactly_ the code below into the JavaScript tab of JS Bin:
 
@@ -117,7 +121,7 @@ Your phone should ring shortly! Answer it!
 > _If it doesn't work, ask a neighboring group to see if they can see what's
 wrong. Otherwise, raise your hand to ask a facilitator for help!_
 
-### Having Some Fun
+### Step 2) Having some fun
 
 If you want, you can now duplicate the code to call more people's phones! Ask
 your neighbors for their phone number!
@@ -136,9 +140,13 @@ The remainder of this workshop will be focused on free-form hacking. We'll
 provide a bunch of examples of what you can do with Twilio and you'll have until
 demos to branch off and hack on your own project.
 
-Examples of things other people have built (open each example in a new tab to
-view, don't forget to replace `YOUR_TWILIO_ACCOUNT_SID_HERE` and
-`YOUR_TWILIO_AUTH_TOKEN_HERE` with your values to test the examples out):
+Examples of things other people have built:
+
+1. Try opening and playing around with at least 1 example.
+2. When you open an example, before you do anything else, click **"File"** →
+   **Clone** before you start modifying anything
+3. Replace `YOUR_TWILIO_ACCOUNT_SID_HERE` and `YOUR_TWILIO_AUTH_TOKEN_HERE`
+   with your own `sid` and `token`
 
 - [Group Messaging][example_1] - Text a number to send a single message to
   multiple friends.
