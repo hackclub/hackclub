@@ -50,7 +50,7 @@ fundamentals of game development.
 | [GitHub Pages](github_pages/README.md)     | Git                                      | Get your website online using GitHub's free hosting service                      | [@sethtrei][sethtrei]                                                                                                  |
 | [Swiper](swiper/README.md)                 | Swift (requires OS X)                    | Make a fun and addicting iOS game using Swift and SpriteKit                      | [@zach-cmiel][zachcmiel]                                                                                               |
 | [Thugify](thugify/README.md)               | JavaScript                               | Learn to dynamically modify webpages with jQuery                                 | [@nguyenbrian][nguyenbrian], [@JevinSidhu][JevinSidhu], [@uditdesai][uditdesai], and [@vaibhavyadaram][vaibhavyadaram] |
-
+| [Find Bigfoot](find_bigfoot/README.md)     | HTML & CSS, JavaScript                      | A really simple game about finding Bigfoot                                       | [@ad510][ad510]                                                                                                        |
 [Bogidon]: https://github.com/Bogidon
 [nguyenbrian]: https://github.com/nguyenbrian
 [JevinSidhu]: https://github.com/JevinSidhu
@@ -58,6 +58,7 @@ fundamentals of game development.
 [vaibhavyadaram]: https://github.com/vaibhavyadaram
 [sethtrei]: https://github.com/sethtrei
 [zachcmiel]: https://github.com/zach-cmiel
+[ad510]: https://github.com/ad510
 
 ## Contributing to the Workshops
 
