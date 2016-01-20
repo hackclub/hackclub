@@ -12,7 +12,7 @@ Open the [live demo](TODO). See the [final code](TODO).
 
 ## Part 1: Set up the project
 
-If you've done other Hack Camp workshops before, this should be pretty straightforward.
+If you've done other Hack Club workshops before, this should be pretty straightforward.
 
 ### 1) Create a blank HTML file
 
