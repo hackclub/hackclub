@@ -4,7 +4,7 @@
 
 Variables are in every program you see. They are one of the building blocks of programming. A variable is a block of memory that holds a piece of data. There are two types of variables in Swift. One is a `constant` and the other is a `variable`. A `constant` is defined by the `let` keyword and its value cannot be changed once its set. A `variable` is defined by the `var` keyword and its value can be changed at any time. Now lets make our first variables in the `PlayScene.swift` file.
 
-```
+```swift
 // screen dimensions
 private var screenWidth: CGFloat!
 private var screenHeight: CGFloat!
@@ -16,7 +16,7 @@ private var play: SKLabelNode!
     
 Write the above code under this line:
 
-```
+```swift
 class PlayScene: SKScene {
 ```
 	
@@ -30,7 +30,7 @@ So to do a quick recap, we have learned 3 important keywords so far: `class` `ob
 
 In the code snippet below, the code is in the `method` named `didMoveToView()`. This method is the first bit of code that runs in an `SKScene`. All of your setup code will be written in this method. First you set the screen dimension `variables`. These variables will help with positioning and sizing sprites on screen based on the size of the device. Next, you set the background color of the screen to be white. If you notice you did not need to define the `backgroundColor` variable. This is because `backgroundColor` comes with the `SKScene` class. Once you state that the `PlayScene` is a `SKScene` the `backgroundColor` variable is defined. The next block of code creates the play button. An `SKLabelNode` has a bunch of `properties` that allow you to modify the object. These `properties` include the `fontName` `fontSize` `position` `fontColor` `alpha` and `name`. The `name` property helps with later code so you do not need to understand what this property is. Everything else should be pretty self explanatory, but if you need any further clarification read more [here in Apple's Documentation](https://developer.apple.com/library/ios/documentation/SpriteKit/Reference/SKLabelNode_Ref/). Now write this code below where we defined the three variables.
 
-```
+```swift
 override func didMoveToView(view: SKView) {
 	// screen dimensions
    	screenWidth = view.frame.size.width
@@ -57,19 +57,21 @@ Just like the `backgroundColor` variable, a whole bunch of methods come along wi
 
 In this method three `constants` are created storing the touch, the point at which the touch is on the screen, and the node or sprite which the touch is touching. Using the node `constant` we can see if the touch is touching the play `SKLabelNode` we created earlier. This is where the `name` property comes in handy. The name is like a unique tag that we can give nodes. We can use this tag to retrieve that specific node at any time. In this case we will use an if statement to see if the node's name is the same as the play label's name then we can transition to the GameScene. Copy this code down below the ending `}` of the `didMoveToView()` method.
 
-	override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesEnded(touches, withEvent: event)
+```swift
+override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+	super.touchesEnded(touches, withEvent: event)
         
-        let touch = touches.first as UITouch!
-        let point = touch.locationInView(self.view)
-        let node = self.nodeAtPoint(point)
+ 	let touch = touches.first as UITouch!
+	let point = touch.locationInView(self.view)
+  	let node = self.nodeAtPoint(point)
         
-        if node.name == play.name {
-            let gameScene = GameScene(size: scene!.size)
-            gameScene.scaleMode = .AspectFill
-            self.view?.presentScene(gameScene, transition: SKTransition.revealWithDirection(.Left, duration: 0.5))
-        }
-    }
+	if node.name == play.name {
+  		let gameScene = GameScene(size: scene!.size)
+ 		gameScene.scaleMode = .AspectFill
+   		self.view?.presentScene(gameScene, transition: SKTransition.revealWithDirection(.Left, duration: 0.5))
+ 	}
+}
+```
     
 Now, there should be an error icon popping up inside the if statement somewhere near this line of code `let gameScene = GameScene(size: scene!.size)`. This is because we have done nothing to the `GameScene.swift` file to make it ready to be transitioned to! In order to fix this we need to do the same thing we did to the `PlayScene` and change it to be of type `SKScene`.
 
