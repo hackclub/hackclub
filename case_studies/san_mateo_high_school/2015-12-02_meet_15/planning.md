@@ -4,11 +4,11 @@
 
 - Go through
   [slides](https://github.com/SMHS-Programming/club/blob/c83b49ce1e08f03f5999a5106f5e1540600328e5/meetings/12_02_Meeting_XV.pdf)
-- Talk About hackathons coming up, make sure to tell everyone that hackGenY is
+- Talk About hackathons coming up, make sure to tell everyone that HackGenY is
   very competitive.
 - Go into Project Week, explain what the hackers have learned and what they
   can build.
-- Talk about the Field Trip at Youtube HQ!
+- Talk about the Field Trip at YouTube HQ!
 - Talk about Twilio sponsoring some prizes and why everyone should present.
 - Do a Brainstorming activity depending on amount of people in the club.
 - Notify the hackers that next week there won't be any meet.

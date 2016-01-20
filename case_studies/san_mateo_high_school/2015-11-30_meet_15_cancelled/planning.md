@@ -5,7 +5,7 @@
 - Go through
   [slides](https://github.com/SMHS-Programming/club/blob/c83b49ce1e08f03f5999a5106f5e1540600328e5/meetings/11_30_Meeting_XV.pdf)
 - Do a Brainstorming activity depending on amount of people in the club.
-- Talk About hackathons coming up, make sure to tell everyone that hackGenY is
+- Talk About hackathons coming up, make sure to tell everyone that HackGenY is
   very competitive.
 - Go into Project Week, explain what the hackers have learned and what they
   can build.

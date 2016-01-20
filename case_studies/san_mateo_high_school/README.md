@@ -48,7 +48,7 @@ are looking for specific things.
 | 11/02/15 | W5D1       | [Demo Week (Cancelled)](2015-11-02_meet_11_cancelled)                |
 | 11/04/15 | W5D2       | [Demo Week](2015-11-04_meet_11)                                      |
 
-### 2nd Cycle Javascript
+### 2nd Cycle JavaScript
 
 | Date     | Week Cycle | Activity                                                             |
 | -------- | :--------: | -------------------------------------------------------------------- |
