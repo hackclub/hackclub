@@ -4,12 +4,14 @@
 
 Like the rest of the files, let's set up the class by making our `screenWidth` and `screenHeight` variables. But let's also declare an `SKLabelNode` variable right underneath it.
 
-	// screen dimensions
-    private var screenWidth: CGFloat!
-    private var screenHeight: CGFloat!
+```swift
+// screen dimensions
+private var screenWidth: CGFloat!
+private var screenHeight: CGFloat!
     
-    // retry button
-    private var retry: SKLabelNode!
+// retry button
+private var retry: SKLabelNode!
+```
     
 ![](img/Step 8/1. HCSetUpGameOverVariables.gif)
 
@@ -17,42 +19,46 @@ Like the rest of the files, let's set up the class by making our `screenWidth` a
 
 Now, let's create the `didMoveToView()` method and add the `SKLabelNode` to the screen. We should know how to do this, but here's the code just in case.
 
-	override func didMoveToView(view: SKView) {
-        // screen dimensions
-        screenWidth = view.frame.size.width
-        screenHeight = view.frame.size.height
+```swift
+override func didMoveToView(view: SKView) {
+	// screen dimensions
+	screenWidth = view.frame.size.width
+	screenHeight = view.frame.size.height
         
-        // background color
-        backgroundColor = UIColor.whiteColor()
+	// background color
+	backgroundColor = UIColor.whiteColor()
         
-        // retry button
-        retry = SKLabelNode(text: "retry")
-        retry.fontName = "Futura"
-        retry.fontSize = screenWidth * 0.1
-        retry.position = CGPointMake(screenWidth / 2.0, screenHeight / 2.0)
-        retry.fontColor = UIColor.grayColor()
-        retry.alpha = 0.5
-        retry.name = "retry"
-        addChild(retry)
-    }
+	// retry button
+	retry = SKLabelNode(text: "retry")
+	retry.fontName = "Futura"
+	retry.fontSize = screenWidth * 0.1
+	retry.position = CGPointMake(screenWidth / 2.0, screenHeight / 2.0)
+  	retry.fontColor = UIColor.grayColor()
+	retry.alpha = 0.5
+	retry.name = "retry"
+	addChild(retry)
+}
+```
     
 ### Interact With the Label
 
 Finally, let's implement the `touchesEnded()` method.
 
-	override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesEnded(touches, withEvent: event)
+```swift
+override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+	super.touchesEnded(touches, withEvent: event)
         
-        let touch = touches.first as UITouch!
-        let point = touch.locationInView(self.view)
-        let node = self.nodeAtPoint(point)
+	let touch = touches.first as UITouch!
+	let point = touch.locationInView(self.view)
+	let node = self.nodeAtPoint(point)
         
-        if node.name == retry.name {
-            let gameScene = GameScene(size: scene!.size)
-            gameScene.scaleMode = .AspectFill
-            self.view?.presentScene(gameScene, transition: SKTransition.revealWithDirection(.Left, duration: 0.5))
-        }
-    }
+	if node.name == retry.name {
+		let gameScene = GameScene(size: scene!.size)
+		gameScene.scaleMode = .AspectFill
+		self.view?.presentScene(gameScene, transition: SKTransition.revealWithDirection(.Left, duration: 0.5))
+	}
+}
+```
     
 No surprises here. We track the touches and then transition to the `GameScene.swift` file once the label is touched.
 

@@ -42,9 +42,11 @@ Swift files by default, when created, won't be utilizing the SpriteKit Framework
 
 Then add this code directly underneath the new `import` statement.
 
-`class PlayScene: SKScene {`
+```swift
+class PlayScene: SKScene {
 
-`}`
+}
+```
 
 This code defines the `class PlayScene` as of type `SKScene`, meaning that you can now add sprites to the `PlayScene`.
 
@@ -52,29 +54,31 @@ This code defines the `class PlayScene` as of type `SKScene`, meaning that you c
 
 To finish up part one of this tutorial, we will now navigate to the `GameViewController.swift` file. This is the file that transitions to the first scene of your game. In our case this would be the `PlayScene`. Once you are in the `GameViewController.swift` file notice how at the top of the file there are seven lines prefixed by two backslashes `//`. This indicates that the line is a **comment**. A comment is a line or lines of code that will not be registered by the compiler meaning they have no affect on the program. They are commonly used to label code and explain in plain English what the following lines of code will do. You will see more examples of this later on. Under these lines of code, delete everything, and replace it with this code.
 
-	import UIKit
-	import SpriteKit
-	import GameKit
+```swift
+import UIKit
+import SpriteKit
+import GameKit
 
-	class GameViewController: UIViewController{
+class GameViewController: UIViewController{
     
-    	override func viewDidLoad() {
-     		super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
         
-       		//Create the game scene
-        	let scene = PlayScene(size: view.bounds.size)
-        	let skView = view as! SKView
-        	skView.showsFPS = false
-        	skView.showsNodeCount = false
-        	skView.ignoresSiblingOrder = true
-        	scene.scaleMode = .ResizeFill
-        	skView.presentScene(scene)
-    	}
+		//Create the game scene
+		let scene = PlayScene(size: view.bounds.size)
+		let skView = view as! SKView
+		skView.showsFPS = false
+		skView.showsNodeCount = false
+		skView.ignoresSiblingOrder = true
+		scene.scaleMode = .ResizeFill
+		skView.presentScene(scene)
+	}
     
-   		override func prefersStatusBarHidden() -> Bool {
-        	return true
-    	}
-	} 
+	override func prefersStatusBarHidden() -> Bool {
+		return true
+	}
+}
+```
 
 You do not need to understand all of the code above. Just know that this is the file that is responsible for creating the `PlayScene` and displaying it on the screen.
 
