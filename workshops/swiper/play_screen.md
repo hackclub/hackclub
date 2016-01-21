@@ -94,4 +94,4 @@ You learned how to:
 
 --------------------------------------------------------------------------------
 
-You are ready to go to Part 3 where you start to create the `GameScene` by adding walls! 
+You are ready to go to Part 3 where you start to create the `GameScene` by adding walls!
