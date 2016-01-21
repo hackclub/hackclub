@@ -72,7 +72,7 @@ English, we'll be using **Cloud9** to write, save, and organize our code.
    ![](img/c9_gh_icon.png)
 3. Click the green **"Authorize application"** button
 4. If there is a popup that asks for your email, go ahead and enter it
-5. Click the grey box that says **"Create a new workspace"**
+5. Click the gray box that says **"Create a new workspace"**
 6. Set the **"Workspace name"**, to `projects`
    is your GitHub username.
 7. Under **"Clone from Git or Mercurial URL"**, paste the **HTTPS Link** that
@@ -201,7 +201,7 @@ As you can see, page is still blank. This is because we haven't added any
 
 ### 5) Adding My Name to the Body of the HTML
 
-1. Write your name in the **body** of the html page (between the **`<body>`**
+1. Write your name in the **body** of the HTML page (between the **`<body>`**
    and **`</body>`**). My name is `Drizzy Drake` so that's what I will write.
 
 > ![](img/html_add_name.gif)
@@ -352,7 +352,7 @@ To **link** the CSS file:
 > Notes:
 >
 > - **`link`** is the tag name
-> - **`link`** tags always belong in the **`head`** of the html document
+> - **`link`** tags always belong in the **`head`** of the HTML document
 > - **`link`** is a **self closing tag** like **`img`**
 > - **`href`** is an  **attribute** of the link tag and specifies the location
 >   of the CSS file. It stands for **hypertext reference**.
@@ -440,7 +440,7 @@ is written inside the body tag.
 
 And because everything is in the **body** tag, everything is centered.
 
-> You can Google ["css text align"]
+> You can Google ["CSS text align"]
   (https://www.google.com/?gws_rd=ssl#q=css+text+align) to see what other
   alignment options are available besides **`center`**
 
@@ -519,7 +519,7 @@ Instead we can send our updates to GitHub.
 
 ![](img/celebrate_rush_hour.gif)
 
-Yaaaaaass! Your website is now public on the internet and will stay!
+Yes! Your website is now public on the internet and will stay!
 Feel free to share this with your friends!
 
 ## Part VI: Sharing with the Community
