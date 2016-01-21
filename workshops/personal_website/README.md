@@ -497,7 +497,7 @@ open even if it's a year from now.
 
 We can use **GitHub Pages** to **host** our website instead!
 
-#### 1) Pushing to GitHub Pages
+#### 2) Pushing to GitHub Pages
 
 Instead we can send our updates to GitHub.
 
@@ -515,7 +515,7 @@ Instead we can send our updates to GitHub.
 
    > Make sure to change `username` to your own username
 
-#### 2) Celebrate!
+#### 3) Celebrate!
 
 ![](img/celebrate_rush_hour.gif)
 
