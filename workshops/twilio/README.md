@@ -8,39 +8,42 @@ In this workshop, you will learn how to use the a modified version of the
 Twilio API to make phone calls and send text messages that allow you to make
 group texting apps.
 
-An API is an agreed upon way for one program to interact with another. APIs
+> Note: An API is an agreed upon way for one program to interact with another. APIs
 are cool because they let even our very simple programs to interact with very
 powerful programs with minimal code.
 
-**For Beginners**
+You will learn how to do really cool things with really simple code. In this
+workshop, you probably won't understand how it all works and that's totally
+cool. Your objective is to learn how to make things happen.
 
-You will learn how to do really cool things with really simple code. You won't
-understand how it all works and that's totally cool. Your objective is to learn
-how to make things happen. You can come back later and figure out how it all
-works.
+## Part A: Setup
 
-**For More Experienced Folk**
+### 1) Cloud 9 Setup
 
-This tutorial will likely show you things that you didn't know you could
-do. I'd recommend skipping around in the tutorial and find what interests you.
+1. Open Cloud9.com
+2. Sign In
+3. Open the your previously created workspace (it should be called `projects`)
+4. Create a new folder called `twilio`
 
-## Part 1: Setup Twilio
 
-We're going to write some code that calls your phone and speaks some text.
+```
+TODO: GIF screenshot of the above
+```
 
-1. Open [this JS Bin][starter] in a new tab. Leave this tab open for the rest of
-   the tutorial.
+### X) Create the HTML file for your website
 
-   > JS Bin is a website for easily writing code
 
-[starter]: https://jsbin.com/gist/751ca529c942eb4763c8?html,js,console
+```
+TODO:Flush Out Outline
 
-2. In the top right hand corner, click **"File"** → **Clone**
+1. Create via "New from Template"
+```
 
-We are going to use a service called Twilio to send text messages and make phone
-calls.
+```
+TODO: GIF screenshot of the above
+```
 
-### Step 1) Adding the Twilio API
+### X) Add the Twilio Library
 
 To add the capability to send text messages and make phone calls, copy and paste
 the below script tag to the bottom of the `body` tag.
@@ -52,14 +55,11 @@ the below script tag to the bottom of the `body` tag.
 ></script>
 ```
 
-Like so:
+```
+TODO: GIF screenshot of the above
+```
 
-> ![](img/add_twilio_library_script.gif)
-
-> Note for people who happen to be using their own IDE, just copy the HTML
-> code into your own HTML file.
-
-### Step 2) Set your `sid` and `token`
+### X) Set your Twilio `sid` and `token`
 
 Before anything will work, we need to change `"YOUR_TWILIO_ACCOUNT_SID_HERE"`
 and `"YOUR_TWILIO_AUTH_TOKEN_HERE"` to your actual `sid` and `token`
@@ -75,20 +75,33 @@ Once we have the `sid` and `token`, replace
 `YOUR_TWILIO_ACCOUNT_SID_HERE` and `YOUR_TWILIO_AUTH_TOKEN_HERE` with your
 actual SID and authentication token.
 
-> ![](img/enter_account_sid.gif)
+```
+TODO: GIF screenshot of the above
+```
 
-### Step 3) Turn off "Auto-run JS"
+### X) Checking our to see if we got a phone number
 
-In the top right hand corner, turn off "Auto-run JS" so that your code doesn't
-automatically run every time you type something:
+```
+TODO:Flush Out Outline
 
-> ![](img/turn_off_autorun.gif)
+1. Open the preview
+2. Click the arrow thing
+3. optional: set your windows side by side
+```
 
-## Part 2: Making a Phone Call
+```
+TODO: GIF screenshot of the above
+```
 
-### Step 1) Writing One Line of Code to Make a Phone Call
+### X) Creating our JavaScript File
 
-Then type _exactly_ the code below into the JavaScript tab of JS Bin:
+- New from Template
+
+### X) Linking the JavaScript file
+
+### X) Writing One Line of Code to Make a Phone Call
+
+Type _exactly_ the code into the JavaScript File
 
 ```js
 Twilio.callAndSay("555-555-5555", "You just subscribed to Gossip Girl");
@@ -118,7 +131,7 @@ Your phone should ring shortly! Answer it!
 > _If it doesn't work, ask a neighboring group to see if they can see what's
 wrong. Otherwise, raise your hand to ask a facilitator for help!_
 
-### Step 2) Having some fun
+### X) Having some fun
 
 If you want, you can now duplicate the code to call more people's phones! Ask
 your neighbors for their phone number!
