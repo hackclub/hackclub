@@ -16,7 +16,7 @@ Open the [live demo][final-live-demo]. See the [final code][final-code].
 - Setup the coding tools, **GitHub**, **Cloud9**, **Slack** which  you will use
   throughout your time in Hack Club
 
-## Part 1: Setup
+## Part I: Setup
 
 ### 1) Sign Up for GitHub
 
@@ -106,7 +106,7 @@ semester!
 
 Now we're ready to start the website!
 
-## Part III: Create the Project Folder
+## Part II: Create the Project Folder
 
 We're going to create a new folder for each project in Hack Club.
 
@@ -118,7 +118,7 @@ Let's create a folder for our personal website project:
 
 > ![](img/c9_create_personal_website_folder.gif)
 
-## Part IV: HTML
+## Part III: HTML
 
 Every website is written with **HTML** code. HTML code is written in **HTML
 files**.
@@ -306,7 +306,7 @@ To add the above image to the top of the page
 Hmm, our image is too big. Luckily we have this other language called **CSS**
 that can help!
 
-## Part III: CSS
+## Part IV: CSS
 
 **HTML** is the **content** of a page (words, images, and structure).
 
@@ -395,8 +395,8 @@ img {
 - **Select** every **`img` tag** on this HTML page and set the **width** to be
   **`200px`**
 
-> **`px`** stands for **pixels**. **Pixels** are the tiny dots dots that make up
-> a computer screen. By setting the width to **200px**, we are saying we want
+> **`px`** stands for **pixels**. **Pixels** are the tiny dots that make up a
+> computer screen. By setting the width to **200px**, we are saying we want
 > every image on the page to span the length of 200 pixels (which is about 2
 > inches on a screen). If you want to learn more about pixels, you can Google
 > ["What is a pixel?"](https://www.google.com/#q=what+is+a+pixel)
@@ -472,7 +472,7 @@ W0000t! You've successfully added the CSS to this web page!
 
 Now to share your creation with the world.
 
-## Part IV: Deployment
+## Part V: Deployment
 
 Right now we can only see our website on our own computer. Let's get a link that
 we can share with anyone on the internet!
@@ -497,7 +497,7 @@ open even if it's a year from now.
 
 We can use **GitHub Pages** to **host** our website instead!
 
-#### b) Pushing to GitHub Pages
+#### 1) Pushing to GitHub Pages
 
 Instead we can send our updates to GitHub.
 
@@ -513,9 +513,9 @@ Instead we can send our updates to GitHub.
     show up on the screen but rest assured, you are still typing._
 5. Now try to view your website by going to `username.github.io/personal-website`
 
-   > Make sure to change `username` to yor own username
+   > Make sure to change `username` to your own username
 
-#### c) Celebrate!
+#### 2) Celebrate!
 
 ![](img/celebrate_rush_hour.gif)
 
@@ -532,11 +532,10 @@ Now that you have finished building your website
    channel
 3. Post the link to your website
   - In your club's channel
-  - In the `#personal-website` channel
-
+4. Post it in the [Ship It](https://shipit.hackclub.io) gallery!
 [slack]: ../../SLACK.md
 
-## Part V: Hacking
+## Part VII: Hacking
 
 Until now, you've been following a decently rigid tutorial. Now is your chance
 to to take your website and make it your own.
