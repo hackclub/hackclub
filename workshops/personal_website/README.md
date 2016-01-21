@@ -548,21 +548,21 @@ some inspiration!
 
 #### Websites Made by Other Hack Club Hackers
 
+- [Gaudy Salas](https://output.jsbin.com/zilola)
 - [Alyssa Sun](http://output.jsbin.com/fopoxe)
-- [Howard Lee](https://output.jsbin.com/nocotu)
+- [Rebecca Jourard](https://mnefertiti.github.io/personalwhale/)
 - [John Cena's](http://nguyenbrian.github.io/john-cenas-personal-website/)
   (created by, Brian Nguyen)
 - [Jevin Sidhu](http://jevinsidhu.com/)
-- [Rebecca Jourard](https://mnefertiti.github.io/personalwhale/)
-- [Chaoyi Zha](https://cydrobolt.com/)
 - [Harrison Shoebridge](https://harrison.tech/zero-cool/)
+- [Chaoyi Zha](https://cydrobolt.com/)
 
 #### Professional Websites
 
-- [Pushkar Modi](http://pushkarmodi.com)
 - [Alice Lee](http://byalicelee.com)
-- [Manuel Moreale](http://manuelmoreale.com)
 - [Yaron Schoen](http://yaronschoen.com)
+- [Pushkar Modi](http://pushkarmodi.com)
+- [Roxanne Ravago](http://www.roxanneravago.com)
 
 ### Additional Resources
 
