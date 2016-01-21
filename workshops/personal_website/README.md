@@ -548,6 +548,7 @@ some inspiration!
 
 #### Websites Made by Other Hack Club Hackers
 
+- [Alyssa Sun](http://output.jsbin.com/fopoxe)
 - [Howard Lee](https://output.jsbin.com/nocotu)
 - [John Cena's](http://nguyenbrian.github.io/john-cenas-personal-website/)
   (created by, Brian Nguyen)
@@ -555,7 +556,6 @@ some inspiration!
 - [Rebecca Jourard](https://mnefertiti.github.io/personalwhale/)
 - [Chaoyi Zha](https://cydrobolt.com/)
 - [Harrison Shoebridge](https://harrison.tech/zero-cool/)
-
 
 #### Professional Websites
 
