@@ -4,185 +4,87 @@ By the end of this tutorial, you will have a Twilio account SID and
 authentication token.
 
 [Twilio](https://twilio.com) is the service that lets you easily send and
-receive text messages and phone calls minimal code. It's used heavily in one of
-our workshops and it's great for projects workshops use it.
-
-Twilio is giving every Hack Club member $100 worth of Twilio credit. This guide
-will walk you through the process of signing up for a Twilio Account.
+receive text messages and phone calls minimal code. They gave every Hack Club
+member $100 worth of Twilio credit.
 
 ## Creating an Account
 
-Open [https://www.twilio.com/](https://www.twilio.com/)
+1. Open [https://www.twilio.com/signup](https://www.twilio.com/)
+2. Fill in your information
+  - Note that there are 3 questions like "What are you building?". Don't bother
+    answering them correctly. Just choose the first answer you see and move on.
+3. Click "Get Started" button to move to the next step
+4. Twilio then asks you to enter a phone number. Do that.
+5. Click "Text Me" and continue following remaining directions until you see
+   this screen:
 
-Click the `SIGN UP` button:
+   > ![](img/finish_verification_screen.png)
 
-> ![](img/signup.png)
+6. Then scroll all the way down:
+7.
+   > ![](img/scroll_down.gif)
 
-Fill in your name, email, and password:
+7. Click the "Upgrade your account" button
 
-_Make sure you use your actual email address; you will need to use it soon._
+   > ![](img/upgrade_account.png)
 
-> ![](img/signup_info.gif)
+8. You will see this screen:
 
-Type in a phone number that you have access to right now that can receive text
-messages
+   > ![](img/upgrade_your_account.png)
 
-> ![](img/sms_validation.gif)
+9. Fill in the below information.
+  - Leave the "Company/Project URL" and "Phone Number" fields blank
+  - For the credit card information, although Twilio is giving each member
+    $100 worth of credit, you still need a credit card to signup for Twilio.
+    For your convenience, we have provided a credit card to signup with below.
 
-Twilio will send you a text message with a numeric verification code:
+    | Field              | Value                               |
+    |--------------------|-------------------------------------|
+    | Credit Card Number | `4847356897256173`                  |
+    | Expires            | `09/2021`                           |
+    | CVV                | `917`                               |
+    | Cardholder Name    | `Jonathan Leung`                    |
+    | Street Address     | `200 Haverford Road, Wynnewood, PA` |
+    | Zip Code           | `19096`                             |
 
-> ![](img/phone_screenshot.png)
+10. Click "I have a promo code."
 
-Take that verification code (my code was `688 771`) and enter it on the website.
-You might also have a CAPTCHA to fill out as well.
+    > ![](img/i_have_a_promo_code.png)
 
-## Setting Up The Phone Number
+    > To get the promo code:
+    >  - Club members: Ask your club leader for the Twilio promo code.
+    >  - Club leaders: send an email to the email address
+    >    `jonathanleung1337@gmail.com` with your full name and school and ask
+    >    for the Twilio promo code. They will respond to you quickly.
 
-The `twilio-basic` script used in our workshops will buy the phone number for
-you and will configure the phone number it buys. Do **NOT** buy your own phone
-number or else the `twilio-basic` library will not work.
+11. After obtaining the promo code:
+    1. Enter the promo code
+    2. Uncheck "Turn on automatic recharge"
 
-If you're dead set on choosing your own phone number and want to buy your own
-phone number you'll have to manually set the SMS callback URL yourself.
+      > ![](img/enter_promo_code.gif)
 
-### Set Up The Callback URL
+12. After making sure that all the information you entered is correct, click the
+    "Upgrade Account" button.
 
-When Twilio receives a message on your Twilio phone number, it will send the
-message data to the callback URL. Here's how to make the callback URL
+13. You should be greeted by a message that looks something like this:
 
-To build the the URL for the phone number `+1-484-681-2377`,
+    > ![](img/congrats.png)
 
-- Remove all of the dashes and pluses
-  - `14846812377`
-- Remove the country code
-  - `4846812377`
-- Take those digits and append them to "https://dweet.io/dweet/for/"
-  - `https://dweet.io/dweet/for/4846812377`
+14. Click on "Go back to the Dashboard »"
 
-For the phone number `+1-415-238-0812` the URL would be
-`https://dweet.io/dweet/for/4152380812`
+    > ![](img/go_back_to_dashboard.png)
 
-To set this as your callback URL, go to the Twilio [incoming phone numbers page]
-(https://www.twilio.com/user/account/phone-numbers/incoming).
+15. You will be taken to this screen:
 
-> ![](img/incoming_phone_numbers_page.png)
+    > ![](img/dashboard.png)
 
-Click on your phone number
+16. Click on "Show API Credentials"
 
-> ![](img/click_on_your_phone_number.png)
+    > ![](img/show_api_credentials.gif)
 
-Scroll all the way down until you see "SMS & MMS", then in the "Request URL"
-paste in your callback URL.
+17. Write down your account SID and authentication token somewhere that you can
+easily retrieve them. Make sure you remember which one is which. In my case,
+  - my account SID is `AC6f0013735dcb2fa4db7e35baa5c7e344`
+  - my authentication token is `fb83ceb820510cf695cf1f45b157c12f`
 
-> ![](img/update_request_url.gif)
-
-Make sure that the right side is HTTP POST (it should be the default).
-
-> ![](img/http_post.png)
-
-Then click the "Save" button at the bottom.
-
-## Upgrading Your Account
-
-_Do not click "Upgrade Account" until the directions tell you to._
-
-> ![](img/type_twilio_texted_code.gif)
-
-Scroll all the way down:
-
-> ![](img/scroll_down.gif)
-
-Click the "Upgrade your account" button
-
-> ![](img/upgrade_account.png)
-
-You will see this screen:
-
-> ![](img/upgrade_your_account.png)
-
-### Credit Card Info
-
-Although Twilio is giving each member $100 worth of credit, you still
-need a credit card to signup for Twilio.
-
-For your convenience, we have provided a credit card to signup with below. You
-may use your own card as well (your card will not be charged if you turn off
-automatic recharging).
-
-| Field              | Value                               |
-|--------------------|-------------------------------------|
-| Credit Card Number | `4847356897256173`                  |
-| Expires            | `09/2021`                           |
-| CVV                | `917`                               |
-| Cardholder Name    | `Jonathan Leung`                    |
-| Street Address     | `200 Haverford Road, Wynnewood, PA` |
-| Zip Code           | `19096`                             |
-
-We enter this info below:
-
-> ![](img/enter_credit_card_info.gif)
-
-Leave the "Company/Project URL" and "Phone Number" fields blank
-
-> ![](img/leave_blank.png)
-
-### Entering The Promo Code
-
-Click "I have a promo code."
-
-> ![](img/i_have_a_promo_code.png)
-
-To get the promo code:
-
-  - Club members: Ask your club leader for the Twilio promo code.
-
-  - Club leaders: send an email to the email address
-    `jonathanleung1337@gmail.com` with your full name and school and ask for the
-    Twilio promo code. They will respond to you quickly.
-
-After obtaining the promo code:
-
-- Enter the promo code
-- Uncheck "Turn on automatic recharge"
-
-> ![](img/enter_promo_code.gif)
-
-After making sure that all the information you entered is correct, click the
-"Upgrade Account" button.
-
-> ![](img/click_upgrade_account.png)
-
-You should be greeted by a message that looks something like this:
-
-> ![](img/congrats.png)
-
-Click on "Go back to the Dashboard »"
-
-> ![](img/go_back_to_dashboard.png)
-
-You will be taken to this screen:
-
-> ![](img/dashboard.png)
-
-Click on "Show API Credentials"
-
-> ![](img/show_api_credentials.gif)
-
-Write down your account SID and authentication token somewhere that you can
-easily retrieve them. Make sure you remember which one is which.
-
-In my case, my account SID is `AC6f0013735dcb2fa4db7e35baa5c7e344` and my
-authentication token is `fb83ceb820510cf695cf1f45b157c12f`.
-
-We have what we need!
-
-### If You Live Outside of North America
-
-You will want to purchase a phone number from your country. It is important that
-you do this now.
-
-# Feedback
-
-_Did you find anything confusing or not working in this segment of the tutorial?
-Tell us about it
-[here](https://docs.google.com/forms/d/1IxbiDtyP-UOx3hRGu3o2I-iVll95xQ6I_pW8JS3TZ2k/viewform?entry.1677546962=Signing+up+for+Twilio)._
+18. Great! We have what we need!
