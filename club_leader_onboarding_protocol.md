@@ -37,9 +37,11 @@ Subject: `Welcome to Hack Club`
 After talking with the rest of the team, it is my pleasure to invite you to be a
 part of Hack Club. `{personalizeEmail}`.
 
-I'd like to set up a call sometime next week to discuss next steps and to
-properly onboard you. `{coordinationDetails}`. We're so excited to have you. And
-welcome to the community :-).
+I'd like to set up a call sometime next week to properly onboard you.
+`{coordinationDetails}`. You'll need to be in front of a computer for this call,
+so keep that in mind when scheduling.
+
+We're so excited to have you. And welcome to the community :-).
 
 Best regards,  
 `{yourFirstName}`
