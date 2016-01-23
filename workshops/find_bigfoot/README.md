@@ -4,17 +4,11 @@ In this workshop, you will make a game about finding Bigfoot. It will look like 
 
 ![](img/final_screenshot.png)
 
-Open the [live demo](TODO). See the [final code](TODO).
-
-**On the way, you will:**
-
-- TODO
-
-## Part 1: Set up the project
+## Set up the project
 
 If you've done other Hack Club workshops before, this should be pretty straightforward.
 
-### 1) Create a blank HTML file
+### Create a blank HTML file
 
 1. Go to https://c9.io
 2. Under the workspace called `USERNAME.github.io` where `USERNAME` is your GitHub username, click **Open** to open the workspace.
@@ -22,7 +16,7 @@ If you've done other Hack Club workshops before, this should be pretty straightf
 4. In the `find_bigfoot` folder, make a new file called `index.html`.
 5. Double-click `index.html` to open the file.
 
-### 2) Add standard HTML template
+### Add standard HTML template
 
 Type the standard HTML template into `index.html`:
 
@@ -38,7 +32,7 @@ Type the standard HTML template into `index.html`:
 </html>
 ```
 
-### 3) Open the live preview
+### Open the live preview
 
 1. Click **File > Save** to save the file.
 2. Click **Preview > Live Preview File** to open a live preview of the web page. Currently it is blank but that will change soon!
@@ -188,14 +182,3 @@ When we're done, `index.html` looks like [this](examples/index4.html). But feel 
 Hopefully you are starting to get the hang of Googling stuff.
 
 This should now be the point that the workshop explains how to make Bigfoot move, but Andrew ran out of time to make this part. But can you figure it out yourself? :)
-
-## Workshop outline
-
-- bigfoot image
-- click to win
-- camouflage (background image)
-- set position using css
-- set position using js
-- timer
-- title, instructions
-- deployment, sharing, hacktime
