@@ -179,6 +179,4 @@ When we're done, `index.html` looks like [this](examples/index4.html). But feel 
 
 ![](https://github.com/jonleung/hackclub/raw/add-personal-website-workshop/workshops/personal_website/img/celebrate_rush_hour.gif)
 
-Hopefully you are starting to get the hang of Googling stuff.
-
-This should now be the point that the workshop explains how to make Bigfoot move, but Andrew ran out of time to make this part. But can you figure it out yourself? :)
+Hopefully you are starting to get the hang of Googling stuff. Now is the chance to make the game into your own! For inspiration, you can look [here](http://andrewd.50webs.com/bigfoot) to see what's possible.
