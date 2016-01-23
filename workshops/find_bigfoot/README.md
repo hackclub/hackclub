@@ -2,7 +2,7 @@
 
 In this workshop, you will make a game about finding Bigfoot. It will look like this:
 
-TODO: screenshot
+![](img/final_screenshot.png)
 
 Open the [live demo](TODO). See the [final code](TODO).
 
@@ -59,7 +59,7 @@ So now you have to put an **image** of him into your game, like you did in the P
 
 When you are done, you should see Bigfoot in the live preview, like this:
 
-TODO: screenshot
+![](img/bigfoot_image.png)
 
 And the HTML looks like [this](examples/index1.html).
 
@@ -67,32 +67,34 @@ And the HTML looks like [this](examples/index1.html).
 
 A game needs interaction in order to be a game, so let's display a popup box whenever the player clicks on Bigfoot, like this:
 
-TODO: screenshot, preferably animated
+![](img/bigfoot_popup.png)
 
 How can you do that?
 
 One of the most important skills towards becoming an independent hacker is knowing how to Google things when stuck. So let's start by Googling "[html handle click](https://www.google.com/search?q=html+handle+click)":
 
-TODO: screenshot
+> ![](img/google_html_handle_click.png)
 
 Clicking the first link takes you [here](http://www.w3schools.com/jsref/event_onclick.asp):
 
-TODO: screenshot
+> ![](img/w3schools_onclick.png)
 
 Aha! It looks like whenever you put `onclick="myFunction()"` on a tag, it executes the [**JavaScript**](http://www.w3schools.com/js/) code you put in the quotes.
 
 We want our JavaScript code to display a popup box saying you won. So now let's Google "[javascript popup box](https://www.google.com/search?q=javascript+popup+box)":
 
-TODO: screenshot
+> ![](img/google_javascript_popup_box.png)
 
 The first link takes you [here](http://www.w3schools.com/js/js_popup.asp):
 
-TODO: screenshot
+> ![](img/w3schools_popup.png)
 
 It looks like when you run `alert("I am an alert box!");` it opens a popup box showing the text inside the quotes. So if we put 2 and 2 together, our `img` tag should look like this:
 
-    <img src="http://andrewd.50webs.com/bigfoot/1IllustriousBigfoot/src/bigfoot.png"
-         onclick="alert("Woohoo, you win! You found Bigfoot!");">
+```html
+<img src="http://andrewd.50webs.com/bigfoot/1IllustriousBigfoot/src/bigfoot.png"
+     onclick="alert("Woohoo, you win! You found Bigfoot!");">
+```
 
 Change your `img` tag to look like that too, then click Bigfoot in the live preview.
 
@@ -115,7 +117,7 @@ At this point, `index.html` looks like [this](examples/index2.html).
 
 ### Celebrate!
 
-TODO: image
+![](https://github.com/jonleung/hackclub/raw/add-personal-website-workshop/workshops/personal_website/img/celebrate_king_kid.gif)
 
 Congratulations, you have a working game now! You're all done! Now you can go to [FGL](https://fgl.com) and sell your game to sponsors and make millions of dollars!
 
@@ -131,7 +133,7 @@ That must be because we took him out of his natural habitat. You see, normally B
 
 When you are making your own projects, you won't have workshops telling the solution to every step. So this time, let's practice your Googling skills and see if you can figure out how to set that background image without being told the solution! After adding the background image, the live preview looks like this:
 
-TODO: screenshot
+![](img/bigfoot_background.png)
 
 When you are done, or if you are simply really stuck, here is a [sample solution](examples/index3.html). (But there are other ways to add the background image, so if you're solution doesn't match mine, that's OK.)
 
@@ -139,7 +141,7 @@ When you are done, or if you are simply really stuck, here is a [sample solution
 
 That's much better! But the top left corner is a pretty boring place to hide Bigfoot. Can you figure out how to set Bigfoot's **position** to somewhere else? This one is harder, and may take some trial and error, but it's really worth the effort to see if you can figure it out yourself. Afterwards, Bigfoot's position will be somewhere in the middle of the forest, rather than the top left corner, like this:
 
-TODO: screenshot
+![](img/bigfoot_position.png)
 
 .
 
@@ -159,11 +161,11 @@ Let's walk through the steps of one way of solving this.
 
 Google "[html position](https://www.google.com/search?q=html+position)".
 
-TODO: screenshot
+> ![](img/google_html_position.png)
 
 The first link takes you [here](http://www.w3schools.com/cssref/pr_class_position.asp):
 
-TODO: screenshot
+> ![](img/w3schools_position.png)
 
 It has some CSS code showing how to "position an `<h2>` element":
 
@@ -178,6 +180,14 @@ h2 {
 But we don't want to position an `<h2>` element. We want to position an `<img>` element. So we type the code above into the `<style>` section, but typing `img` instead of `h2`.
 
 When we're done, `index.html` looks like [this](examples/index4.html). But feel free to experiment with the `left` and `top` values to find a good place to hide Bigfoot.
+
+### Celebrate!
+
+![](https://github.com/jonleung/hackclub/raw/add-personal-website-workshop/workshops/personal_website/img/celebrate_rush_hour.gif)
+
+Hopefully you are starting to get the hang of Googling stuff.
+
+This should now be the point that the workshop explains how to make Bigfoot move, but Andrew ran out of time to make this part. But can you figure it out yourself? :)
 
 ## Workshop outline
 
