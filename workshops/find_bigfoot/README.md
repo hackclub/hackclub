@@ -4,6 +4,15 @@ In this workshop, you will make a game about finding Bigfoot. It will look like 
 
 ![](img/final_screenshot.png)
 
+Open the [live demo](https://ad510.github.io/workshop-test/find_bigfoot/). See the [final code](examples/index.html).
+
+**On the way, you will:**
+
+- Learn how to do event handling and popup boxes in JavaScript.
+- Set a background image for a web page.
+- Directly set the coordinates of an element.
+- Most importantly, practice Googling so you can become an independent hacker.
+
 ## Set up the project
 
 If you've done other Hack Club workshops before, this should be pretty straightforward.
@@ -173,7 +182,7 @@ h2 {
 
 But we don't want to position an `<h2>` element. We want to position an `<img>` element. So we type the code above into the `<style>` section, but typing `img` instead of `h2`.
 
-When we're done, `index.html` looks like [this](examples/index4.html). But feel free to experiment with the `left` and `top` values to find a good place to hide Bigfoot.
+When we're done, `index.html` looks like [this](examples/index.html). But feel free to experiment with the `left` and `top` values to find a good place to hide Bigfoot.
 
 ### Celebrate!
 
