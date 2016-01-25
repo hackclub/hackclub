@@ -188,4 +188,28 @@ When we're done, `index.html` looks like [this](examples/index.html). But feel f
 
 ![](https://github.com/jonleung/hackclub/raw/add-personal-website-workshop/workshops/personal_website/img/celebrate_rush_hour.gif)
 
-Hopefully you are starting to get the hang of Googling stuff. Now is the chance to make the game into your own! For inspiration, you can look [here](http://andrewd.50webs.com/bigfoot) to see what's possible.
+Now you have made a more interesting game. And more importantly, by practicing Googling stuff, you are on your way toward becoming an independent hacker.
+
+## Sharing with the community
+
+Like with previous workshops, let's set up a link that you can share with others!
+
+1. Open the terminal by pressing `alt + t` on the keyboard at the same time.
+   Then type in the following commands:
+  - `git add --all`
+  - `git commit -am "Find Bigfoot workshop"`
+  - `git push origin master`
+
+4. GitHub will now ask you for your username and password.
+  - Go ahead and enter your username and then press the enter.
+  - Then enter your password and press enter. _Note that the characters don't
+    show up on the screen but rest assured, you are still typing._
+5. Now try to view your game by going to `username.github.io/find_bigfoot`
+
+   > Make sure to change `username` to your own username
+
+6. Post the link to [Ship It](https://shipit.hackclub.io) and [Slack](https://starthackclub.slack.com)!
+
+## Hacking
+
+Now is the chance to make the game into your own! For inspiration, you can look [here](http://andrewd.50webs.com/bigfoot) to see what's possible.
