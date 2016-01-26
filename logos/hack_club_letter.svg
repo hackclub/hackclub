@@ -57,16 +57,16 @@
      inkscape:cx="332.69197"
      inkscape:cy="-94.799654"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="text5436"
      showgrid="false"
      inkscape:snap-bbox="true"
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-bbox-midpoints="true"
      inkscape:bbox-nodes="true"
      inkscape:bbox-paths="true"
-     inkscape:window-width="1916"
-     inkscape:window-height="1041"
-     inkscape:window-x="1920"
+     inkscape:window-width="1436"
+     inkscape:window-height="861"
+     inkscape:window-x="0"
      inkscape:window-y="18"
      inkscape:window-maximized="0"
      units="in"
@@ -101,20 +101,13 @@
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"
        inkscape:export-filename="hack_club_letter.png" />
-    <text
-       xml:space="preserve"
+    <g
        style="font-style:normal;font-weight:normal;font-size:40.38053894px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="50.301666"
-       y="1018.2329"
-       id="text5436"
-       sodipodi:linespacing="125%"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300"
-       inkscape:export-filename="hack_club_letter.png"><tspan
-         sodipodi:role="line"
-         id="tspan5438"
-         x="50.301666"
-         y="1018.2329"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:181.71240234px;font-family:Amaranth;-inkscape-font-specification:'Amaranth Bold';fill:#ffffff;fill-opacity:1">h</tspan></text>
+       id="text5436">
+      <path
+         d="m 89.369833,886.49142 -28.71056,4.90623 0,126.83525 28.71056,0 0,-47.97206 c 0,-14.17357 7.450208,-22.89577 13.810147,-22.89577 5.63308,0 7.26849,5.63309 7.26849,14.17357 l 0,56.69426 28.89227,0 0,-60.87364 c 0,-19.26152 -7.26849,-31.61796 -26.16658,-31.61796 -8.90391,0 -17.444393,2.54397 -23.804327,8.17706 l 0,-47.42694 z"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:181.71240234px;font-family:Amaranth;-inkscape-font-specification:'Amaranth Bold';fill:#ffffff;fill-opacity:1"
+         id="path3866" />
+    </g>
   </g>
 </svg>
