@@ -30,7 +30,7 @@ _A step-by-step guide by the Hack Club community._
     - [Workshop](#workshop)
     - [Hacking](#hacking)
     - [Next Meeting Reminder](#next-meeting-reminder)
-  - [Demo Days](#demo-days)
+  - [Hack Days](#hack-days)
 
 ## What is a Hack Club?
 
@@ -399,7 +399,7 @@ that everyone will need to keep their demos under a minute.
 As previously mentioned, Hack Club meetings alternate between running workshops
 and free-form hacking (with demos). From here on out, we'll refer to meetings
 with workshops as _workshop days_ and meetings with free-form hacking and demos
-as _demo days_. We've created the below templates for running workshop and
+as _hack days_. We've created the below templates for running workshop and
 hacking days (these will be your third and fourth meetings, respectively).
 
 ### Workshop Days
@@ -471,7 +471,7 @@ meeting.
 
 And thank them for coming!
 
-### Demo Days
+### Hack Days
 
-Guidelines for demo days are currently in progress. Expect them to be live
+Guidelines for hack days are currently in progress. Expect them to be live
 within the next two weeks :smile:.
