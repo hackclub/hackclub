@@ -23,6 +23,14 @@ _A step-by-step guide by the Hack Club community._
   - [Example Demo](#example-demo)
   - [Free-Form Hacking](#free-form-hacking)
   - [Demos](#demos)
+- [Meeting Templates](#meeting-templates)
+  - [Workshop Days](#workshop-days)
+    - [Hacker Arrival](#hacker-arrival)
+    - [Making Announcements](#making-announcements)
+    - [Workshop](#workshop)
+    - [Hacking](#hacking)
+    - [Next Meeting Reminder](#next-meeting-reminder)
+  - [Demo Days](#demo-days)
 
 ## What is a Hack Club?
 
@@ -385,3 +393,85 @@ after they finish.
 Demos easily get backlogged, so it's important to keep them moving fast. Each
 demo should be a minute long -- if they're running long, make an announcement
 that everyone will need to keep their demos under a minute.
+
+## Meeting Templates
+
+As previously mentioned, Hack Club meetings alternate between running workshops
+and free-form hacking (with demos). From here on out, we'll refer to meetings
+with workshops as _workshop days_ and meetings with free-form hacking and demos
+as _demo days_. We've created the below templates for running workshop and
+hacking days (these will be your third and fourth meetings, respectively).
+
+### Workshop Days
+
+Here's our suggested schedule:
+
+1. Wait for hackers to arrive (5 minutes)
+2. Announcements (5 minutes)
+3. Workshop (45 minutes)
+4. Free-form hacking (30 minutes)
+5. Next meeting reminder (5 minutes)
+
+And here's our template slideshow for the meeting (remember to make a copy to
+customize for your club):
+https://docs.google.com/presentation/d/1LnbH5c7K-V608jMXNk3VyoVaZLaEuet7faHZCbYhOCs
+
+#### Hacker Arrival
+
+Same as we've done previously. Put on a playlist (not too loud) and have the
+first slide from the linked presentation on the projector to let people know
+they're in the right place.
+
+#### Making Announcements
+
+Same as in the second meeting, announcements are your opportunity to share
+updates about the club, talk about upcoming events, and let your members know
+what they'll be doing in this meeting.
+
+Start with the following for this meeting's announcements:
+
+1. Say that everyone will be doing a new workshop
+2. Give a brief description of the workshop
+3. Show examples (edit these into the slideshow) of what other people have built
+   from the workshop
+4. Say that after the workshop, the club will transition into free-form hacking
+   and everyone will demo at the end of the next meeting, just like the first
+   two meetings
+
+There's a slide with a template schedule in the aforementioned presentation that
+you should show during announcements.
+
+#### Workshop
+
+This'll be just like how you ran the first website workshop, except for the
+current workshop you're on. [Click here][workshop_order] for our suggested
+workshop order (and [click here][first_workshop] for a link to the first
+workshop guidelines).
+
+[workshop_order]: ../workshops/README.md#tracks
+[first_workshop]: #first-website-workshop
+
+#### Hacking
+
+Just like previously, after hackers finish the workshop, they're going to
+transition into free-form hacking to continue building upon what they have from
+the workshop. During this time, the most important thing for you to do is create
+an environment where people are comfortable asking for help.
+
+When people do have questions, be eager to help them out. You want to set the
+example that asking for help is a good thing. It's also good idea to turn the
+music back on (not too loud, people should feel comfortable talking).
+
+#### Next Meeting Reminder
+
+Five minutes before the meeting is over, get everyone's attention to remind them
+about the next meeting. Say when and where it'll be and that everyone will be
+finishing up what they worked on today and demoing them at the end of the
+meeting.
+
+And thank them for coming!
+
+### Demo Days
+
+Guidelines for demo days are currently in progress. Expect them to be live
+within the next two weeks :smile:.
