@@ -57,6 +57,9 @@ are looking for specific things.
 | 11/23/15 | W2D1       | [Twilio Workshop](2015-11-23_meet_14)                                |
 | 11/30/15 | W3D1       | [Project Week (Cancelled)](2015-11-30_meet_15_cancelled)             |
 | 12/02/15 | W3D2       | [Project Week](2015-12-02_meet_15)                                   |
+| 01/11/16 | W4D1       | [Project Week (Cancelled)](2016-01-11_meet_16_cancelled)             |
+| 01/13/16 | W4D1       | [Project Week](2016-01-13_meet_16)                                   |
+| 01/20/16 | W5D2       | [Demo Week](2016-01-20_meet_17)                                      |
 
 
 ## Basic templates:
