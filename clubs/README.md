@@ -174,34 +174,33 @@ want 50 to come, shoot for at least 80.
 
 ## The First Meeting
 
-The first two meetings of each semester are the most important, since they will
-largely influence who comes back.
+First, an important note: attendance tends to drop by approximately 25% after
+the first two meetings. However, members who return for the third meeting tend
+to stay for the rest of the year.
 
-You should expect 25% of the members at the first two meetings to not come back
-to the third. The members who come to the third meeting tend to stay for the
-rest of the year, so your primary goal for this meeting is to get members to
-come back to the second meeting (and in the second meeting, it'll be to get
-members to come back to the third).
+Your goal is to reduce that attrition rate to 10% by making the first two
+meetings GREAT: exciting, engaging, and inspiring.
 
-Before we get into the nitty-gritty, here's one quick tip: a simple, but easy
-way to dramatically improve your first meeting is to bring food. Pastries or
-cookies from a local supermarket are cheap and work well.
+To that end, here are two quick tips for the first meeting: 1. Bring food! Full
+bellies lead to fonder memories. Pastries or cookies from a local supermarket
+are easy, inexpensive, and effective. 2. Make an effort to chat with members who
+arrive early and leave late. Talk to them about their goals and interests, and
+get them personally pumped about what they'll do in Hack Club.
 
-For the first meeting, you'll want to share what your Hack Club will be doing
-throughout the year and have them build their _first real thing™_ (a personal
-website), using our [Portfolio](../workshops/portfolio/README.md) workshop.
-After they complete the workshop, they'll have the remainder of the meeting to
-keep building their website to make it unique. At the second meeting, you'll
-pick up where you left off and work up to demos, where everyone from the club
-will come to the front and demo what they built at the end of the meeting.
+At the highest level, your plan for the first meeting should be to explain what
+your Hack Club will do over the course of the year and then have students begin
+to begin building their _first real thing™_ (a personal website), using our
+ [Portfolio](../workshops/portfolio/README.md)  workshop.
 
-We recommend the below format for your first meeting. For each item in the
-schedule, there is a corresponding (and linked) section below. We've also
-created a slideshow presentation to help you run your first meeting.
-[Click here][presentation] to go to it. You'll want to make a copy of the
-presentation to customize for your club (you can go to `File > Make a copy...`
-to do this). We'll be referring to this presentation throughout the sections
-below.
+At the second meeting, club members will complete their websites and then demo
+their work at the end of the meeting.
+
+We recommend the format below for your first meeting. For each item in the
+schedule, there is a corresponding (and linked) section. We've also created a
+slideshow presentation to help you run your first meeting.
+[Click here][presentation] to go to it. Make a copy of the presentation to
+customize it for your club (to do this, go to `File > Make a copy...`). We'll
+refer to this presentation throughout the sections below.
 
 1. [Wait for hackers (club members) to arrive (5 minutes)][1]
 2. [Introduction presentation (5 minutes)][2]
