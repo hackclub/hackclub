@@ -44,3 +44,85 @@ for hacking.
 
 [portfolio]: portfolio/README.md
 [twilio]: twilio/README.md
+
+## Concept Arc
+
+_Note: This section is still a work in progress and will be continually
+updated_
+
+The following is a listing of Hack Club's workshops. It breaks down which
+Computer Science concepts will be used in which workshops.
+
+**Workshop I: Personal Website**
+
+- Writing HTML tags
+- HTML tags go in order
+
+**Workshop II: Twilio**
+
+- Strings
+- Variables can be used to store basic types
+- String concatenation
+- Functions can be used with inputs
+- Introduce the idea that code runs in order
+
+**Workshop III: To Be Decided**
+
+- Emphasize that code runs in order
+- Emphasize that string concatenation is a form of syntactic sugar
+- Functions can be used to generate outputs
+- Variables can be used to store outputs of functions
+- Functions can have both outputs and side effects
+- Function can have no inputs
+- Functions can be used as a form of abstraction
+
+**Workshop IV: To Be Decided**
+
+- Variables can store anything (arrays, numbers, strings, etc.)
+- True / false
+- Conditionals
+- Objects have properties that can be read
+- Objects can have properties that are functions
+
+**Workshop V: To Be Decided**
+
+- Loops
+
+**Workshop VI: To Be Decided**
+
+_This workshop may be moved up_
+
+- Arrays
+- Array iteration
+
+**Workshop VII: To Be Decided**
+
+- Functions can be created
+- Functions can be created with no inputs
+- Functions can be created that take inputs
+- Functions can be created that have outputs
+- The life cycle of a function is the following
+  - Definition
+  - Calling
+  - Outputting
+- Function best practices
+  - Give each function exactly one job.
+  - Don’t repeat yourself (DRY).  Implement a process just once, but execute it
+    many times.
+  - Define functions generally.
+- Variable scope
+
+**Workshop VIII: To Be Decided**
+
+- Function callbacks
+- Objects have properties that can be modified
+- Objects can be created
+- Objects have properties that can be created
+
+**Concepts Not Yet Allocated**
+
+- Numbers
+- HTML elements can have classes and ids
+- HTML tags can be nested
+- HTML uses the box model
+- CSS Frameworks
