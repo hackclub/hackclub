@@ -34,7 +34,7 @@ Club groups, in person meetings, and events including:
 - The [GitHub projects](https://github.com/hackclub/)
 - The [Facebook Group](https://www.facebook.com/groups/1501083703514499/)
 - The [Slack](SLACK.md)
-- The #hack-club IRC channel on Freenode
+- The `#hack-club` IRC channel on Freenode
 - Club Meetings
 
 Other Hack Club groups (such as conferences, meetups, and other unofficial
