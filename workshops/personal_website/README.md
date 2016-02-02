@@ -507,7 +507,9 @@ Instead we can send our updates to GitHub.
   - Go ahead and enter your username and then press the enter.
   - Then enter your password and press enter. _Note that the characters don't
     show up on the screen but rest assured, you are still typing._
-5. Now try to view your website by going to `username.github.io/personal-website`
+5. Now try to view your website by going to
+   `USERNAME.github.io/personal_website`. So if your username is `alice1337`,
+   then you would write `alice1337.github.io/personal_website`.
 
    > Make sure to change `username` to your own username
 
@@ -537,8 +539,9 @@ Now that you have finished building your website
 Until now, you've been following a decently rigid tutorial. Now is your chance
 to to take your website and make it your own.
 
-Below are some websites from other Hack Clubs from around the world to give you
-some inspiration!
+1. Below are some websites from other Hack Clubs from around the world to give
+   you some inspiration! Checkout at least one of them.
+2. Add to and customize the website we make together to make it your own!
 
 ### Examples
 
