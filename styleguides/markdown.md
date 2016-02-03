@@ -15,6 +15,7 @@ readable, consistent files using Markdown.
   - [Headings](#headings)
   - [Lists](#lists)
   - [Code](#code)
+  - [Tables](#tables)
   - [Horizontal rules](#horizontal-rules)
 
 ## General Conventions
@@ -125,6 +126,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         ```
 
         Let's talk about a few more things.
+
+## Tables
+
+Tables should follow the following example's format:
+
+```
+| Clubs                 | Leaders   | Cities          |
+| --------------------- | --------- | --------------- |
+| Fictional High School | Jenny Doe | Los Angeles     |
+| Academy of the Arts   | Ben Doe   | San Francisco   |
+| ACME High School      | Mary Doe  | New York        |
+```
 
 ## Horizontal rules
 
