@@ -4,12 +4,12 @@ By the end of this tutorial, you will have a Twilio account SID and
 authentication token.
 
 [Twilio](https://twilio.com) is the service that lets you easily send and
-receive text messages and phone calls minimal code. They gave every Hack Club
-member $100 worth of Twilio credit.
+receive text messages and phone calls using minimal code. They gave every Hack
+Club member $100 worth of Twilio credit.
 
 ## Creating an Account
 
-1. Open [https://www.twilio.com/signup](https://www.twilio.com/)
+1. Open https://www.twilio.com/signup
 2. Fill in your information
   - Note that there are 3 questions like "What are you building?". Don't bother
     answering them correctly. Just choose the first answer you see and move on.
@@ -21,7 +21,7 @@ member $100 worth of Twilio credit.
    > ![](img/finish_verification_screen.png)
 
 6. Then scroll all the way down:
-7.
+
    > ![](img/scroll_down.gif)
 
 7. Click the "Upgrade your account" button
