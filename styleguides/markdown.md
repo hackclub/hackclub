@@ -26,7 +26,6 @@ readable, consistent files using Markdown.
 - Force a linebreak by ending a line with two spaces, no more.
 - Quote marks (`>`) should be on all quoted lines, not just the beginning of a
   quote.
-- Provide alternate access to media. Include `alt` attributes in all images.
 
 ## Headings
 
