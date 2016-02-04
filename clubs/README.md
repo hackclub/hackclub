@@ -190,7 +190,7 @@ get them personally pumped about what they'll do in Hack Club.
 At the highest level, your plan for the first meeting should be to explain what
 your Hack Club will do over the course of the year and then have students begin
 to begin building their _first real thing™_ (a personal website), using our
- [Portfolio](../workshops/portfolio/README.md)  workshop.
+ [Personal Website](../workshops/personal_website/README.md)  workshop.
 
 At the second meeting, club members will complete their websites and then demo
 their work at the end of the meeting.
@@ -268,17 +268,20 @@ completely stuck, encourage others to help them out.
 #### First Website Workshop
 
 To get members started, you'll want to run the
-[Portfolio](../workshops/portfolio/README.md) workshop. It's going to walk club
-members through the process of building their first website. We recommended
-doing the following to run the Portfolio workshop (and we've prepared slides, in
-the previously linked slideshow presentation to help run it).
+[Personal Website](../workshops/personal_website/README.md) workshop. It's going
+to walk club members through the process of building their first website and
+getting it online. It'll also get them set up with all the tools they'll use
+throughout Hack Club. We recommended doing the following to run the Personal
+Website workshop (and we've prepared slides, in the previously linked slideshow
+presentation to help run it).
 
-1. Tell everyone that to start out, we're going to run the Portfolio workshop,
-   which will walk them through the process of building their first website
-2. Show the slide with the output of the Portfolio workshop and tell everyone
-   that this is what they'll build by the end of the workshop, which will take
-   around 45 minutes
-3. Say that after the Portfolio workshop, the rest of the meeting will be
+1. Tell everyone that to start out, we're going to run the Personal Website
+   workshop, which will walk them through the process of building their first
+   website
+2. Show the slide with the output of the Personal Website workshop and tell
+   everyone that this is what they'll build by the end of the workshop, which
+   will take around 45 minutes
+3. Say that after the Personal Website workshop, the rest of the meeting will be
    completely free-form for them to continue building their websites. Show the
    slides with examples of websites other people in Hack Clubs have made to give
    your members ideas for directions they can take their sites. Say that at the
@@ -287,9 +290,9 @@ the previously linked slideshow presentation to help run it).
 
 #### Free-Form Hacking
 
-After hackers finish the Portfolio workshop, they're going to transition into
-free-form hacking to continue building their websites. During this time, the
-most important thing for you to do is create an environment where people are
+After hackers finish the Personal Website workshop, they're going to transition
+into free-form hacking to continue building their websites. During this time,
+the most important thing for you to do is create an environment where people are
 comfortable asking for help.
 
 When people do have questions, be eager to help them out. It's also good idea to
@@ -341,12 +344,12 @@ example of what a demo looks like.
 
 You'll want to give an example of what a demo looks like so your members know
 what to expect at the end of the meeting. The best way to do this is to demo a
-project that you or another person built for the Portfolio workshop.
+project that you or another person built for the Personal Website workshop.
 
 If you don't have a website that you built to demo, go ahead and pull up one of
-the Portfolio workshop examples that were shown in the first meeting and use it.
-[Click here][demo] for an example of what a project demo looks like (this demo
-was given at a conference).
+the Personal Website workshop examples that were shown in the first meeting and
+use it. [Click here][demo] for an example of what a project demo looks like
+(this demo was given at a conference).
 
 [demo]: https://www.youtube.com/watch?v=MY01d647S9Y
 
