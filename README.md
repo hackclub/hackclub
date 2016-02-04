@@ -17,9 +17,12 @@ Quick Hack Club links:
 | ----------------------------------------- | ----------------------------- |
 | Join the Slack _(we're here almost 24/7)_ | [`SLACK.md`](SLACK.md)        |
 | See our workshops                         | https://workshops.hackclub.io |
+| See the club guide                        | [`clubs/README.md`][guide]    |
 | Start a club                              | https://hackclub.io/apply     |
 | See our website                           | https://hackclub.io           |
 | Read our code of conduct                  | [`CONDUCT.md`](CONDUCT.md)    |
+
+[guide]: clubs/README.md
 
 ## Contributing
 
