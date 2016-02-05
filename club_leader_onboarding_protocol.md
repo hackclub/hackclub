@@ -5,17 +5,17 @@ Process for onboarding (and accepting) club leaders (in order):
 ## Application Process
 
 1. An applicant submits an application to Hack Club through
-   https://hackclub.io/apply. It's sent to the team as an email to
-   team@hackclub.io.
+   https://hackclub.com/apply. It's sent to the team as an email to
+   team@hackclub.com.
 2. If the application looks good, a team member responds to the applicant to set
    up an interview call. They also add the application to the "Applications"
-   sheet in https://clubs.hackclub.io and update the application's status as the
-   application progresses (ex. the interview call gets scheduled).
+   sheet in https://clubs.hackclub.com and update the application's status as
+   the application progresses (ex. the interview call gets scheduled).
 3. In the interview call the team member's goal is to get a good idea of the
    applicant's leadership skills. [Click here](#interview-template) for an
    interview questions template. The team member should be taking notes. After
    the call is over, they should upload their notes as a private gist and link
-   them in the "Applications" sheet in https://clubs.hackclub.io (along with
+   them in the "Applications" sheet in https://clubs.hackclub.com (along with
    updating the application's row's other info, like phone number).
 4. The team member should bring up the applicant with the team ASAP after the
    call and run them through their application and interview call. If all looks
@@ -65,7 +65,7 @@ _(ready to paste into org-mode)_
 ### Before Call
 
 - [ ] Add them to the "Schools" and "Club Leaders" sheets in
-  https://clubs.hackclub.io if they're not already there
+  https://clubs.hackclub.com if they're not already there
 
 ### During Call
 
@@ -79,7 +79,7 @@ _(ready to paste into org-mode)_
 - [ ] Talk about what the the [code of conduct][code-of-conduct] is and why it's
   important
 - [ ] Get their address and add it to their entry in the "Club Leaders" sheet in
-  https://clubs.hackclub.io
+  https://clubs.hackclub.com
 - [ ] Set up weekly calls
 
 [code-of-conduct]: https://github.com/hackclub/hackclub/blob/master/CONDUCT.md

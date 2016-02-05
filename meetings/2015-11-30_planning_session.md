@@ -13,8 +13,8 @@
 - Organize workshops into playlists
 - Make workshops README student facing (shorten it)
 - Create GitHub shortlinks
-  - workshops.hackclub.io -> workshops/README.md
-  - gh.hackclub.io -> README.md
+  - workshops.hackclub.com -> workshops/README.md
+  - gh.hackclub.com -> README.md
 - Add workshop feedback tables
   - Markdown table of links between 1 and 10 and the question "How likely would
     you recommend this workshop to a friend?"
@@ -49,8 +49,8 @@
   @jonleung)
   - Organize workshops into playlists
 - Create GitHub shortlinks (hackclub/hackclub#343, @zachlatta)
-  - workshops.hackclub.io -> workshops/README.md
-  - gh.hackclub.io -> README.md
+  - workshops.hackclub.com -> workshops/README.md
+  - gh.hackclub.com -> README.md
 - Add workshop feedback tables (hackclub/hackclub#520, @zachlatta)
   - Markdown table of links between 1 and 10 and the question "How likely would
     you recommend this workshop to a friend?"

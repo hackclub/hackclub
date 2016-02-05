@@ -15,9 +15,9 @@ _Never written code before? Build your first website this weekend at The Hack
 Series, a free workshop hosted in downtown San Francisco by Hack Club for
 absolute beginners._
 
-**Go here to register: https://series.hackclub.io**
+**Go here to register: https://series.hackclub.com**
 
-**Contact email: series@hackclub.io**
+**Contact email: series@hackclub.com**
 
 **Cost: Free**
 
