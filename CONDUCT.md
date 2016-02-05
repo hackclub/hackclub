@@ -108,17 +108,17 @@ Club community. They are responsible for handling conduct-related issues. Their
 purpose is to de-escalate conflicts and try to resolve issues to the
 satisfaction of all parties. They are:
 
-|Name                | Slack Handle | Email               |
-|--------------------|--------------|---------------------|
-|Harrison Shoebridge | @harrison    | harrison@hackclub.io|
-|Jonathan Leung      | @jonl        | jonathan@hackclub.io|
-|Zach Latta          | @zrl         | zach@hackclub.io    |
+| Name                | Slack Handle | Email                 |
+| ------------------- | ------------ | --------------------- |
+| Harrison Shoebridge | @harrison    | harrison@hackclub.com |
+| Jonathan Leung      | @jonl        | jonathan@hackclub.com |
+| Zach Latta          | @zrl         | zach@hackclub.com     |
 
 If you encounter a conduct-related issue, you should report it to the Working
 Group using the process described below. **Do not** post about the issue
 publicly or try to rally sentiment against a particular individual or group.
 
-- Mail conduct@hackclub.io
+- Mail conduct@hackclub.com
   - Your message will reach the Working Group.
   - Reports are confidential within the Working Group.
   - Should you choose to remain anonymous then the Working Group cannot notify
@@ -166,7 +166,7 @@ document.
 - Be thoughtful in how you communicate.
 - Don't be destructive or inflammatory.
 - If you encounter an issue, please mail
-  conduct@hackclub.io.
+  conduct@hackclub.com.
 
 ## Acknowledgments
 

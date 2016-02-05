@@ -1,6 +1,6 @@
 # Cringe 101
 
-Short link to this workshop: https://workshops.hackclub.io/cringe_101
+Short link to this workshop: https://workshops.hackclub.com/cringe_101
 
 ## Introduction
 

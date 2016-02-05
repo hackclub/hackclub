@@ -3,7 +3,7 @@
 ![CHE CS at work](http://i.imgur.com/249LPMm.jpg?1)
 
 > *Dear reader*, these recaps were initially requested by
-> [hackEDU](https://hackclub.io/) for other club organizers to read. However if
+> [hackEDU](https://hackclub.com/) for other club organizers to read. However if
 > you're a club member you can use them to find out what happened at a meeting
 > you couldn't attend, if you just want to review some content, or for any
 > reason you want!

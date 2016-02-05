@@ -14,7 +14,7 @@ a handy reference on using the Slack.
 
 # How To Join
 
-Open up https://slack.hackclub.io in a new tab and enter your email to get an
+Open up https://slack.hackclub.com in a new tab and enter your email to get an
 invite from our handy bot.
 
 ![Get a Slack invite](img/slack_setup_1_invite.gif)
