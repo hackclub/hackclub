@@ -8,13 +8,13 @@ The things we need to do to onboard a new person onto the team.
 - [ ] Add to the `@staff` group on Slack
 - [ ] Add to calendars
   - [ ] If they go to https://calendar.google.com they can add the calendar of
-    teammates by typing in their email (ex. `zaphod@hackclub.io`) into the
+    teammates by typing in their email (ex. `zaphod@hackclub.com`) into the
     text box under "Other calendars" on the far left.
   - [ ] Add the shared team calendar by pasting
     `hackedu.us_l9sps0raf14hmn721076a6f9ms@group.calendar.google.com` into that
     same text box
 - [ ] Add to GitHub organization
-- [ ] Add to `emails@hackclub.io` Google Group
+- [ ] Add to `emails@hackclub.com` Google Group
 - [ ] Add to Google Drive folder
 - [ ] Add to Dropbox
 - [ ] Add to README of [meta](https://github.com/hackclub/meta) repo

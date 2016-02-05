@@ -2,7 +2,7 @@
 
 ## About
 
-[Hack Club](https://hackclub.io) works with high school students start and lead
+[Hack Club](https://hackclub.com) works with high school students start and lead
 programming clubs at their school.
 
 ## What is a hacker?
@@ -12,7 +12,7 @@ isn't afraid to break the rules.
 
 ## About with Hackers
 
-[Hack Club](https://hackclub.io) works with high school students to start and
+[Hack Club](https://hackclub.com) works with high school students to start and
 lead programming clubs at their school. We create hackers: people who create
 things that they see missing in the world and aren't afraid to break the rules.
 
@@ -26,8 +26,9 @@ TODO
 Hi Nick, how are you doing?
 
 So I just recently moved to San Francisco to join
-[Hack Club](https://hackclub.io) as a co-founder! Hack Club is a non-profit that
-helps high school students start and lead programming clubs at their school.
+[Hack Club](https://hackclub.com) as a co-founder! Hack Club is a non-profit
+that helps high school students start and lead programming clubs at their
+school.
 
 ## Timeline
 

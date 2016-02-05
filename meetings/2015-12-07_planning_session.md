@@ -16,8 +16,8 @@
   - [x] Organize workshops into playlists (hackclub/hackclub#534, ~~@jonleung~~
     @MaxWofford)
 - [x] Create GitHub shortlinks (hackclub/hackclub#343, @zachlatta)
-  - [x] workshops.hackclub.io -> workshops/README.md
-  - [x] gh.hackclub.io -> README.md
+  - [x] workshops.hackclub.com -> workshops/README.md
+  - [x] gh.hackclub.com -> README.md
 - [x] Add workshop feedback tables (hackclub/hackclub#520, @zachlatta)
   - [x] Markdown table of links between 1 and 10 and the question "How likely
     would you recommend this workshop to a friend?"

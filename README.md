@@ -1,7 +1,7 @@
 # Hack Club's Internals [![Circle CI](https://circleci.com/gh/hackclub/meta.svg?style=svg)](https://circleci.com/gh/hackclub/meta)
 
 Welcome! This is our internal repo we use for running
-[Hack Club](https://hackclub.io), warts and all. We're excited to have you
+[Hack Club](https://hackclub.com), warts and all. We're excited to have you
 involved.
 
 Links:
@@ -44,12 +44,12 @@ See [GOALS.md](GOALS.md).
 These are the people who are officially part of the organization, but we want
 you involved as well!
 
-| Name                | Position           | Link                          | Email                |
-| ------------------- | ------------------ | ----------------------------- | -------------------- |
-| Harrison Shoebridge | Intern             | https://harrison.tech         | harrison@hackclub.io |
-| Jonathan Leung      | Founder            | http://jonl.org               | jonathan@hackclub.io |
-| Max Wofford         | Technical Fellow   | https://github.com/MaxWofford | max@hackclub.io      |
-| Zach Latta          | Executive Director | https://zachlatta.com         | zach@hackclub.io     |
+| Name                | Position           | Link                          | Email                 |
+| ------------------- | ------------------ | ----------------------------- | --------------------- |
+| Harrison Shoebridge | Intern             | https://harrison.tech         | harrison@hackclub.com |
+| Jonathan Leung      | Founder            | http://jonl.org               | jonathan@hackclub.com |
+| Max Wofford         | Technical Fellow   | https://github.com/MaxWofford | max@hackclub.com      |
+| Zach Latta          | Executive Director | https://zachlatta.com         | zach@hackclub.com     |
 
 ## Project Management
 
@@ -77,7 +77,7 @@ issue._
 
 ## Contact
 
-If you'd like to reach all of us, please send an email to team@hackclub.io :-).
+If you'd like to reach all of us, please send an email to team@hackclub.com :-).
 
 ## License
 

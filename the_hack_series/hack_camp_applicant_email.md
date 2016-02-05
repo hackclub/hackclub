@@ -12,7 +12,7 @@ it as well.
 We'll be running ten sessions this Friday, Saturday, and Sunday. Each session
 lasts two and a half hours with a 30 minute break and will be hosted in downtown
 San Francisco. If you're interested, we'd love for you to register at
-https://series.hackclub.io.
+https://series.hackclub.com.
 
 If you have any questions, just let me know. You can always call me directly at
 `{PhoneNumber}`.
