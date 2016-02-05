@@ -34,7 +34,7 @@ Hack Club.
   - When prompted to choose a plan, to choose the **"Free"** plan
 2. Open your email inbox in a new tab and look for an email from GitHub. Open it
    and click the button to verify your email
-3. Open https://gh.hackclub.io in a new tab and star the project by clicking on
+3. Open https://gh.hackclub.com in a new tab and star the project by clicking on
    the button that looks like this on the top right: ![](img/github_star.png)
 
 ### 2) Create Your First GitHub Repository
@@ -530,7 +530,7 @@ Now that you have finished building your website
    channel
 3. Post the link to your website
   - In your club's channel
-4. Post it in the [Ship It](https://shipit.hackclub.io) gallery!
+4. Post it in the [Ship It](https://shipit.hackclub.com) gallery!
 
 [slack]: ../../SLACK.md
 

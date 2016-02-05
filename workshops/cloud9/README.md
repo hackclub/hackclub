@@ -2,7 +2,7 @@
 
 ![Cloud9 logo](img/cloud9.png)
 
-Short link to this workshop: https://workshops.hackclub.io/cloud9
+Short link to this workshop: https://workshops.hackclub.com/cloud9
 
 ## What is Cloud9?
 
@@ -229,13 +229,13 @@ _How likely is it that you would recommend this workshop to a friend?_
 
 Be sure to experiment with HTML, CSS, and JavaScript on your own!
 
-[r1]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=1
-[r2]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=2
-[r3]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=3
-[r4]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=4
-[r5]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=5
-[r6]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=6
-[r7]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=7
-[r8]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=8
-[r9]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=9
-[r10]: https://feedback-redir.hackclub.io/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=10
+[r1]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=1
+[r2]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=2
+[r3]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=3
+[r4]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=4
+[r5]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=5
+[r6]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=6
+[r7]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=7
+[r8]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=8
+[r9]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=9
+[r10]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=10

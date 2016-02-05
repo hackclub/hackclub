@@ -6,21 +6,21 @@ Hack Clubs are after-school communities at high schools where people build
 things together. This repository contains the tools for starting and leading
 great clubs.
 
-[![Slack Status](https://slack.hackclub.io/badge.svg)](https://slack.hackclub.io)
+[![Slack Status](https://slack.hackclub.com/badge.svg)](https://slack.hackclub.com)
 [![Build Status](https://circleci.com/gh/hackclub/hackclub.svg?style=shield)](https://circleci.com/gh/hackclub/hackclub)
 [![Pull Request Stats](http://issuestats.com/github/hackclub/hackclub/badge/pr?style=flat)](http://issuestats.com/github/hackclub/hackclub)
 [![Issue Stats](http://issuestats.com/github/hackclub/hackclub/badge/issue?style=flat)](http://issuestats.com/github/hackclub/hackclub)
 
 Quick Hack Club links:
 
-| Action                                    | Link                          |
-| ----------------------------------------- | ----------------------------- |
-| Join the Slack _(we're here almost 24/7)_ | [`SLACK.md`](SLACK.md)        |
-| See our workshops                         | https://workshops.hackclub.io |
-| See the club guide                        | [`clubs/README.md`][guide]    |
-| Start a club                              | https://hackclub.io/apply     |
-| See our website                           | https://hackclub.io           |
-| Read our code of conduct                  | [`CONDUCT.md`](CONDUCT.md)    |
+| Action                                    | Link                           |
+| ----------------------------------------- | ------------------------------ |
+| Join the Slack _(we're here almost 24/7)_ | [`SLACK.md`](SLACK.md)         |
+| See our workshops                         | https://workshops.hackclub.com |
+| See the club guide                        | [`clubs/README.md`][guide]     |
+| Start a club                              | https://hackclub.com/apply     |
+| See our website                           | https://hackclub.com           |
+| Read our code of conduct                  | [`CONDUCT.md`](CONDUCT.md)     |
 
 [guide]: clubs/README.md
 
@@ -28,7 +28,7 @@ Quick Hack Club links:
 
 Contributions are welcome!
 
-If you need any help, please contact us at team@hackclub.io or on our
+If you need any help, please contact us at team@hackclub.com or on our
 [Slack](SLACK.md).
 
 1. Check out our [public issues board][0]. If your issue isn't on the board,
@@ -57,7 +57,7 @@ If you need any help, please contact us at team@hackclub.io or on our
 | Resource      | Link                                               |
 | ------------- | -------------------------------------------------- |
 | File an issue | https://github.com/hackclub/hackclub/issues        |
-| Blog          | https://blog.hackclub.io/                          |
+| Blog          | https://blog.hackclub.com/                         |
 | Facebook      | https://www.facebook.com/Hack-Club-741805665870458 |
 | Twitter       | https://twitter.com/starthackclub                  |
 

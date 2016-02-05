@@ -1,6 +1,6 @@
 # Soccer
 
-Short link to this workshop: https://workshops.hackclub.io/soccer
+Short link to this workshop: https://workshops.hackclub.com/soccer
 
 -------------------------------------------------------------------------------
 

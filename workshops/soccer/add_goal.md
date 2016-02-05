@@ -221,16 +221,16 @@ You can checkout some cool examples in the Adding Functionality section in the
 main README [adding more functionality to your app]
 (README.md#part-2-adding-more-functionality).
 
-[r1]: https://feedback-redir.hackclub.io/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=1
-[r2]: https://feedback-redir.hackclub.io/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=2
-[r3]: https://feedback-redir.hackclub.io/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=3
-[r4]: https://feedback-redir.hackclub.io/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=4
-[r5]: https://feedback-redir.hackclub.io/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=5
-[r6]: https://feedback-redir.hackclub.io/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=6
-[r7]: https://feedback-redir.hackclub.io/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=7
-[r8]: https://feedback-redir.hackclub.io/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=8
-[r9]: https://feedback-redir.hackclub.io/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=9
-[r10]: https://feedback-redir.hackclub.io/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=10
+[r1]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=1
+[r2]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=2
+[r3]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=3
+[r4]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=4
+[r5]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=5
+[r6]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=6
+[r7]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=7
+[r8]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=8
+[r9]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=9
+[r10]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=10
 
 ## Steps
 

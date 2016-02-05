@@ -1,4 +1,4 @@
-Short link to this workshop: https://workshops.hackclub.io/git_and_github
+Short link to this workshop: https://workshops.hackclub.com/git_and_github
 
 -------------------------------------------------------------------------------
 
