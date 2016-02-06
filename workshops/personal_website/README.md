@@ -125,7 +125,7 @@ files**.
 
 > HTML stands for Hypertext Markup Language.
 
-### 1) Create the HTML file for your website
+### 1) Create the HTML File for Your Website
 
 1. Right click the **`personal_website`** folder you just created
 2. Click **"New File"**
@@ -140,7 +140,7 @@ files**.
 **`.html`**
 > - Your main HTML file has to be named **`index.html`**
 
-### 2) Adding standard HTML template
+### 2) Adding Standard HTML Template
 
 Every HTML file follows this template:
 
@@ -267,7 +267,7 @@ want to tell the browser to treat **`MVP hotline answerer.`** as a paragraph.
 
 Just like **`h1`** tag, the **`p`** tag also has an opening and closing tag.
 
-### 6) Adding an Image with the Image Tag
+### 6) Adding An Image with the Image Tag
 
 Now let's add an image to our website.
 
@@ -315,7 +315,7 @@ that can help!
 
 Therefore, if we want to change the **size** of the image, we use **CSS**!
 
-### 1) Creating the CSS file
+### 1) Creating the CSS File
 
 1. Right click the **`personal_website`** folder you had previously created
 2. Click **"New File"**
