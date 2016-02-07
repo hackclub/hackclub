@@ -191,7 +191,7 @@ that there are two sections in this template, the **`head`** and the **`body`**:
 - Everything between the `<head>` and `</head>` tags is called the **head** of
   the page. `<head>` is considered an "opening tag" because it "opens" the head
   section. Since `</head>` starts with `</` (instead of just `<`), it is
-  considered a "closing tag" and "closes", or indicates the end of, the head
+  considered a "closing tag" and "closes", or indicates the end of the head
   section.
 - Similarly, everything between the `<body>` and `</body>` tags is called the
   **body** of the page. `<body>` is the opening tag and `</body>` is the closing
