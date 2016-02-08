@@ -523,8 +523,9 @@ Now that you have finished building your website
 Until now, you've been following a decently rigid tutorial. Now is your chance
 to to take your website and make it your own.
 
-Below are some websites from other Hack Clubs from around the world to give you
-some inspiration!
+1. Below are some websites from other Hack Clubs from around the world to give
+   you some inspiration! Check out at least one of them.
+2. Add to and customize the website we make together to make it your own!
 
 ### Examples
 
