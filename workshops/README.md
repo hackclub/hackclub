@@ -15,25 +15,21 @@ adding multiplayer support to the [Soccer game](soccer/README.md)).
 If you have any questions or run into any trouble, just ask us on the Slack
 ([click here](../SLACK.md) for instructions on joining the Slack) :smile:.
 
-## Tracks
+## Workshops at a Glance
 
-**HTML + CSS + JS** _learn to make basic websites_
-
-1. [Portfolio](portfolio/README.md) _A simple portfolio website_
-2. [Twilio](twilio/README.md) _A website that makes phone
-   calls and texts_
-
-**Games** _make 2D browser games_
-
-_(We recommend going through the HTML, CSS, and JS track before the games
-track)_
-
-1. [Soccer](soccer/README.md) _A simple soccer game_
-2. [Dodge](dodge/README.md) _A bullet dodging game_
-3. [Maze](maze/README.md) _A "Scary Maze Game" clone_
-
-For more recommended guidelines on running workshops,
-[click here](workshop_details.md#general-workshop-facilitation-guidelines).
+| Workshop                                   | Languages |
+| ------------------------------------------ | --------- |
+| [Portfolio](portfolio/README.md)           | HTML, CSS |
+| [Twilio](twilio/README.md)                 | HTML, JS  |
+| [Soccer](soccer/README.md)                 | HTML, JS  |
+| [Dodge](dodge/README.md)                   | HTML, JS  |
+| [Maze](maze/README.md)                     | HTML, JS  |
+| [Ajar.io](ajar/README.md)                  | HTML, JS  |
+| [Cloud9](cloud9/README.md)                 | HTML, JS  |
+| [Cringe 101](cringe_101/README.md)         | HTML, JS  |
+| [Git and GitHub](git_and_github/README.md) | Git       |
+| [GitHub Pages](github_pages/README.md)     | Git       |
+| [Swiper](swiper/README.md)                 | Swift     |
 
 ## Errors?
 
@@ -52,6 +48,7 @@ to experiment and improve them (we're always hungry for pull requests).
 | [Soccer](soccer/README.md)       | A simple soccer game                       |
 | [Dodge](dodge/README.md)         | A bullet dodging game                      |
 | [Maze](maze/README.md)           | A "Scary Maze Game" clone                  |
+| [Swiper](swiper/README.md)       | A simple iOS game                          |
 
 ## Community Workshops
 
