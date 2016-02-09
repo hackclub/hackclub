@@ -10,6 +10,7 @@ _A step-by-step guide by the Hack Club community._
   - [Teacher Sponsor and Space](#teacher-sponsor-and-space)
   - [Club Registration](#club-registration)
   - [Student Sign-Ups](#student-sign-ups)
+    - [Elevator Pitch](#elevator-pitch)
 - [The First Meeting](#the-first-meeting)
   - [Waiting for Hackers to Arrive](#waiting-for-hackers-to-arrive)
   - [Introduction Presentation](#introduction-presentation)
@@ -171,6 +172,25 @@ meetings -- set your goal for a number of sign-ups well above the number of
 people you want to attend your meetings. If you want to have 20 to 30 members
 come to your first meeting, you should shoot for at least 50 sign-ups. If you
 want 50 to come, shoot for at least 80.
+
+When it comes to actually pitching Hack Club, we've included an example elevator
+pitch below. Elevator pitches are brief and persuasive sales pitches to get
+people interested in something (in this case, Hack Club).
+
+#### Elevator Pitch
+
+Hack Club is a place where people come together to build things with code (like
+apps, websites, and games).
+
+- By the end of the first meeting, everyone has built their first website and
+  put it online.
+- By the end of the third meeting, everyone has build a website that can call
+  and text your phone.
+- By the fifth meeting, everyone has built their first game and has put it
+  online.
+
+Hack Club is like a never ending hackathon that happens twice a week at the
+school.
 
 ## The First Meeting
 
