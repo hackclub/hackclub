@@ -65,7 +65,6 @@ to create workshops and submit them to this directory.
 | [Cringe 101](cringe_101/README.md)         | Cringe 101 will give you the tools to create the most cringiest website ever. | [@nguyenbrian][nguyenbrian], [@JevinSidhu][JevinSidhu], [@uditdesai][uditdesai], and [@vaibhavyadaram][vaibhavyadaram] |
 | [Git and GitHub](git_and_github/README.md) | Introduction to Git and using it with GitHub                                  | [@nguyenbrian][nguyenbrian], [@JevinSidhu][JevinSidhu], [@uditdesai][uditdesai], and [@vaibhavyadaram][vaibhavyadaram] |
 | [GitHub Pages](github_pages/README.md)     | Get your website online using GitHub's free hosting service                   | [@sethtrei][sethtrei]                                                                                                  |
-| [Find Bigfoot](find_bigfoot/README.md)     | A really simple game about finding Bigfoot                                    | [@ad510][ad510]                                                                                                        |
 
 [Bogidon]: https://github.com/Bogidon
 [nguyenbrian]: https://github.com/nguyenbrian
@@ -73,7 +72,6 @@ to create workshops and submit them to this directory.
 [uditdesai]: https://github.com/uditdesai
 [vaibhavyadaram]: https://github.com/vaibhavyadaram
 [sethtrei]: https://github.com/sethtrei
-[ad510]: https://github.com/ad510
 
 ## Contributing to the Workshops
 
