@@ -333,6 +333,9 @@ websites. At the end of the meeting, everyone will come up to the front of the
 room and demo their website. Like the first meeting, bringing food is a good
 idea :wink:.
 
+[Click here][slideshow] for our slideshow template for the second meeting. Go to
+`File > Copy` to make a copy of it and customize it for your club.
+
 Here's our suggested schedule:
 
 1. Wait for hackers to arrive (5 minutes)
@@ -340,6 +343,8 @@ Here's our suggested schedule:
 3. Example demo (5 minutes)
 3. Free-form hacking (45 minutes)
 4. Demos (30 minutes)
+
+[slideshow]: https://docs.google.com/presentation/d/1WCerU9JhJY6L5kM7SrIlYcABwxpqcjmxmSRXilvWAaY/edit
 
 #### Wait for Hackers to Arrive
 
@@ -385,7 +390,7 @@ loud -- people should feel comfortable talking with one another).
 
 #### Demos
 
-Before getting to the demos themselves, give your members 45, 30, 15, and 5
+Before getting to the demos themselves, give your members 30, 15 minute, and 5
 minute warnings so the demos aren't a surprise.
 
 30 minutes before demos start, have everyone email you a link to their website.
