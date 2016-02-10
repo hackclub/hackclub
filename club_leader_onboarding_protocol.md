@@ -43,7 +43,22 @@ so keep that in mind when scheduling.
 
 We're so excited to have you. And welcome to the community :-).
 
-Best regards,  
+Best regards,
+`{yourFirstName}`
+```
+
+### Rejection Email
+
+```md
+{firstName},
+
+After careful review of your application, I regret to say that we've decided to
+not move forward with your club.
+
+That said, we'd like to encourage you to reapply in the future, especially once
+`{reapplyConditions}`.
+
+Best regards,
 `{yourFirstName}`
 ```
 
