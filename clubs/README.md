@@ -321,9 +321,22 @@ turn the music back on (not too loud, people should feel comfortable talking).
 #### Second Meeting Reminder
 
 Five minutes before the meeting is over, get everyone's attention to remind them
-about the next meeting. Say when and where it'll be and that everyone will be
-finishing the websites they started on and presenting them at the end in it. And
-thank them for coming to this meeting!
+about the next meeting. Tell them when and where it'll be and make sure that
+everyone knows they will be finishing the websites they started on and
+presenting them at the end. Most importantly, thank them for coming to this
+meeting!
+
+An effective way to remind people about club meetings is to send them a text
+message the night before. A popular service that lets you send announcements
+through text messages used by many of the clubs is called
+[Remind](https://remind.com). Just make sure to set up your Remind account the
+day before the meeting so you don't run into any issues. The end of the club
+meeting would be a really good time for everyone else to setup an account. All
+they need to do now is text  `81010` with your Club's Remind code (like
+`@ehs-hacks`) and that'll add them to your remind. You'll be able to send them
+any announcements about club meetings via text message the night before. If any
+members are concerned about privacy, you can tell them Remind does not give you
+their phone number.
 
 ## The Second Meeting
 
