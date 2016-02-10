@@ -1,148 +1,231 @@
 # Introduction to Twilio
 
-Short link to this workshop: https://workshops.hackclub.io/twilio
+Short link to this workshop: https://workshops.hackclub.com/twilio
 
 -------------------------------------------------------------------------------
 
 In this workshop, you will learn how to use the a modified version of the
 Twilio API to make phone calls and send text messages that allow you to make
-group texting apps.
+things like group texting apps.
 
-An API is an agreed upon way for one program to interact with another. APIs
-are cool because they let even our very simple programs to interact with very
-powerful programs with minimal code.
+> Note: An API is an agreed upon way for one program to interact with another.
+APIs are cool because they let even our very simple programs to interact with
+very powerful programs with minimal code.
 
-**For Beginners**
+ In this workshop, you probably won't understand how it all works and that's
+ totally cool. Your objective is to learn how to make things happen.
 
-You will learn how to do really cool things with really simple code. You won't
-understand how it all works and that's totally cool. Your objective is to learn
-how to make things happen. You can come back later and figure out how it all
-works.
+## Part A: Setup
 
-**For More Experienced Folk**
+### 1) Use Google Chrome
 
-This tutorial will likely show you things that you didn't know you could
-do. I'd recommend skipping around in the tutorial and find what interests you.
+Please use Google Chrome for this tutorial
 
-## Part 1: Setup Twilio
+1. Install Google Chrome on your computer if you haven't already
+2. Use Google Chrome for the rest of this tutorial
 
-We're going to write some code that calls your phone and speaks some text.
+### 2) Cloud 9 Setup
 
-1. Open [this JS Bin][starter] in a new tab. Leave this tab open for the rest of
-   the tutorial.
+1. Log in to https://c9.io
+2. Open your **projects** workspace (the one you created in the
+   [personal website](../personal_website/README.md) workshop)
+3. Create a new folder called `twilio` in the `projects` folder
 
-   > JS Bin is a website for easily writing code
+When you're done with it, your folder structure should look like this:
 
-[starter]: https://jsbin.com/gist/751ca529c942eb4763c8?html,js,console
+![](img/created_twilio_folder.png)
 
-2. In the top right hand corner, click **"File"** → **Clone**
+### 3) Create the HTML file for your website
 
-We are going to use a service called Twilio to send text messages and make phone
-calls.
+Create an `index.html` file inside of the `twilio` folder:
 
-### Step 1) Adding the Twilio API
+1. Right click the `twilio` folder you just created
+2. Click **"New File"**
+3. Then name the file **`index.html`**
 
-To add the capability to send text messages and make phone calls, copy and paste
-the below script tag to the bottom of the `body` tag.
+   ![](img/created_index_html_file.png)
+
+5. Open the newly created `index.html` and type the below HTML template into it:
 
 ```html
-<script src="//bit.ly/twilio-basic-v7"
-  sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
-  token="YOUR_TWILIO_AUTH_TOKEN_HERE"
-></script>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    </body>
+</html>
 ```
 
-Like so:
+### 4) Add the Twilio Library
 
-> ![](img/add_twilio_library_script.gif)
+To add the capability to send text messages and make phone calls, we need to
+add the Twilio Basic JavaScript library.
 
-> Note for people who happen to be using their own IDE, just copy the HTML
-> code into your own HTML file.
+1. Copy and paste the below `script` tag inside the `body` tag.
 
-### Step 2) Set your `sid` and `token`
+  ```html
+  <script src="//bit.ly/twilio-basic-v7"
+                  sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
+                  token="YOUR_TWILIO_AUTH_TOKEN_HERE">
+          </script>
+  ```
 
-Before anything will work, we need to change `"YOUR_TWILIO_ACCOUNT_SID_HERE"`
-and `"YOUR_TWILIO_AUTH_TOKEN_HERE"` to your actual `sid` and `token`
+  ![](img/add_twilio_basic_script.gif)
 
-The facilitator should have given you an SID and a token. If not, you should
-ask them for one.
+### 5) Set your Twilio `sid` and `token`
 
-> Note: If you are the facilitator (or if you're just doing this workshop by
-yourself), follow the directions [here](../lib/twilio-basic/signup.md) to get
-your own Twilio SID and token.
+1. Change `"YOUR_TWILIO_ACCOUNT_SID_HERE"` and `"YOUR_TWILIO_AUTH_TOKEN_HERE"`
+   to your actual `sid` and `token`. The facilitator should have given you an
+   SID and a token. If not, you should ask them for one.
 
-Once we have the `sid` and `token`, replace
-`YOUR_TWILIO_ACCOUNT_SID_HERE` and `YOUR_TWILIO_AUTH_TOKEN_HERE` with your
-actual SID and authentication token.
+   > Note: If you are the facilitator (or if you're just doing this workshop by
+     yourself), follow the directions [here](../lib/twilio-basic/signup.md) to
+     get your own Twilio SID and token.
 
-> ![](img/enter_account_sid.gif)
+  ![](img/setting_sid_and_token.gif)
 
-### Step 3) Turn off "Auto-run JS"
+### 6) Creating our JavaScript File
 
-In the top right hand corner, turn off "Auto-run JS" so that your code doesn't
-automatically run every time you type something:
+If **HTML** is for the content, and **CSS** is for the look and feel of the
+website, **JavaScript** is used for interactivity, such as sending and receiving
+phone calls and text messages.
 
-> ![](img/turn_off_autorun.gif)
+Just like we wrote **HTML** in `.html` files and **CSS** in `.css` files, we
+write JavaScript in `.js` files.
 
-## Part 2: Making a Phone Call
+Create an `main.js` file inside of the `twilio` folder:
 
-### Step 1) Writing One Line of Code to Make a Phone Call
+1. Right click the **`twilio`** folder you just created
+2. Click **"New File"**
+3. Then name the file **`main.js`**
 
-Then type _exactly_ the code below into the JavaScript tab of JS Bin:
+![](img/added_main_js.png)
 
-```js
-Twilio.callAndSay("555-555-5555", "You just subscribed to Gossip Girl");
+### 7) Linking the JavaScript file
+
+Although we've created our JavaScript file, the HTML will not run it until you
+explicitly include it with a **`script`** tag, like so:
+
+```html
+<script src="main.js"></script>
 ```
 
-> Note for people who happen to be using their own IDE, create and link your
-> own JavaScript file to the HTML file you created earlier.
+1. Add the above script tag **_underneath_** the current `script` tag
 
-_**Don't forget the parentheses commas, and quotation marks.**_
+   ![](img/add_main_js_script_tag.gif)
 
-> ![](img/demo_1.gif)
+## Part II: Writing Your First Line of Twilio Code
 
-This code calls the phone number `555-555-5555` and says the message
-`You just subscribed to Gossip Girl.` We don't want that.
+### 1) Writing the Code to Call Your Phone
 
-Instead, change `555-555-5555` to your own phone number.
-Feel free to change the message too.
+1. Type the following into your `main.js` file (don't forget the parentheses
+   commas, and quotation marks.):
 
-> ![](img/demo_2.gif)
+   ```js
+   Twilio.sendMessage("555-555-5555", "You just subscribed to Gossip Girl");
+   ```
 
-Now go ahead and press the "Run" button.
+   - This code JavaScript calls the phone number `555-555-5555` and says the
+     message `You just subscribed to Gossip Girl.` We don't want that.
 
-> ![](img/demo_3.gif)
+2. Change `555-555-5555` to your cell phone number
 
-Your phone should ring shortly! Answer it!
+![](img/twilio_send_message.gif)
 
-> _If it doesn't work, ask a neighboring group to see if they can see what's
-wrong. Otherwise, raise your hand to ask a facilitator for help!_
+### 2) Running the JavaScript code
 
-### Step 2) Having some fun
+Our the code in our `main.js` file will now run every time the `index.html` page
+is open:
 
-If you want, you can now duplicate the code to call more people's phones! Ask
-your neighbors for their phone number!
+1. Open `index.html`
+2. Click **"Preview"** → **"Live Preview File"**
+3. You should now receive a text message!
 
-> ![](img/demo_4.gif)
+   ![](img/celebrate_1.gif)
 
-Now go ahead and press the "Run" button.
+### 3) Adding Some Text
 
-![](img/celebrate.gif)
+Just to add some clarity to our currently blank webpage:
+
+1. Add the below text to the `body` of the HTML:
+
+  ```html
+  <p>Refresh the page to run the code again</p>
+  ```
+
+  ![](img/add_instructions.gif)
+
+### 3) Modifying And Running New Code
+
+Let's say we want to change the code.
+
+1. Make sure you have a preview of the `index.html` open
+2. Then open `main.js` and change `Twilio.sendMessage` to `Twilio.callAndSay`
+   ![](img/change_send_message_to_call_and_say.gif)
+3. Save your `main.js` file by clicking **"File"** → **"Save"** (or use the
+   shortcut **CTRL + S / Command + S**)
+   - Notice that when you save, the page flashes. This means that the page is
+     refreshing and each time your page refreshes, it runs your JavaScript code
+     again. In this case this sends you a text message.
+
+### 4) Have some fun
+
+Try calling a bunch of phones at once. Ask your neighbors for their phone number.
+Then you duplicate the code to call more people's phones!
+
+> ![](img/duplicating_call_and_say.gif)
+
+### 5) Peeking Under the Hood
+
+The live preview inside of Cloud9 is great for testing out HTML & CSS, but it
+is not powerful enough for us to test out our JavaScript. For that we will use
+Google Chrome's developer tools. This will let us see **console messages** and
+**JavaScript errors**.
+
+To open your website in Google Chrome
+
+1. In the live preview window, click the button that looks like this
+   ![](img/live_preview_button.png)
+2. Now open the developer console.
+    - **Mac Directions**
+      1. Click **"View"** → **"Developer"** → **"JavaScript Console"** (or use
+         the shortcut **`Command + option + j`**
+    - **PC Directions**
+      1. Use the shortcut **`CTRL + Shift + J`**
+
+
+In the console here, you can see what's happening underneath the hood:
+
+> ![](img/console.png)
+
+- You can learn that `Your Twilio phone number is +14848689421`
+- You can see when text messages are sent
+
+This is just a taste of the console, we'll be using it a lot more later.
 
 # Hack!
 
-![](http://i.giphy.com/14kdiJUblbWBXy.gif)
+The remainder of this workshop you will be focused on building your own project
+with Twilio. Below is a possible way you can pursue your project with some
+suggested time frames. If you get stuck on any of the below steps, ask your club
+leader for help!
 
-The remainder of this workshop will be focused on free-form hacking. We'll
-provide a bunch of examples of what you can do with Twilio and you'll have until
-demos to branch off and hack on your own project.
+1. _[4 minutes]_ — Try opening and playing around with at least 1 example in the
+   [examples section](#examples).
+2. _[1 minutes]_ — Read through the
+   [Twilio Documentation](#twilio-documentation) to see what else Twilio can do.
+3. _[5 minutes]_ — Then brainstorm as many possible project ideas incorporating
+   Twilio by writing down at least 10 ideas down on paper. (The secret is
+   realizing there are no bad ideas)
+4. _[Remainder of time]_ - From the list of projects, choose 1 project to start
+   trying to build.
 
-Examples of things other people have built:
+## Examples
 
-1. Try opening and playing around with at least 1 example.
-2. When you open an example, before you do anything else, click **"File"** →
+1. When you open an example, before you do anything else, click **"File"** →
 **Clone** before you start modifying anything
-3. Replace `YOUR_TWILIO_ACCOUNT_SID_HERE` and `YOUR_TWILIO_AUTH_TOKEN_HERE` with
+2. Replace `YOUR_TWILIO_ACCOUNT_SID_HERE` and `YOUR_TWILIO_AUTH_TOKEN_HERE` with
    your own `sid` and `token`
 
 - [Group Messaging][example_1] - Text a number to send a single message to
@@ -178,7 +261,7 @@ Examples of things other people have built:
 [get_latest_text]: #get-latest-text-message
 [get_all_texts]: #get-all-text-messages
 
-##### Send Text Message
+### Send Text Message
 
 Send a text message to the given phone number.
 
@@ -186,7 +269,7 @@ Send a text message to the given phone number.
 Twilio.sendMessage("1-555-555-5555", "This is a text message");
 ```
 
-##### Call and Say
+### Call and Say
 
 Call the given phone number and say the given words.
 
@@ -194,7 +277,7 @@ Call the given phone number and say the given words.
 Twilio.callAndSay("1-555-555-5555", "Words words words");
 ```
 
-##### Call and Play
+### Call and Play
 
 Call the given phone number and play the given music file (in the below example,
 an MP3).
@@ -203,7 +286,23 @@ an MP3).
 Twilio.callAndPlay("1-555-555-5555", "http://mean2u.rfshq.com/downloads/music/giveyouup.mp3");
 ```
 
-##### Receive Text Messages
+You can choose to play any of your favorite songs from YouTube by following
+these directions:
+
+#### Directions for Playing Music from YouTube Over Twilio
+
+1. Copy and paste the URL of a YouTube video you want to play
+2. Use http://www.youtube-mp3.org/ to convert the YouTube video into a
+   downloadable mp3
+3. Download the mp3 file
+4. Drag the mp3 file into the sidebar of Cloud9 to upload it
+5. In Cloud9, Right click on the mp3 file and click **"Preview"**
+6. In the preview of the mp3, click the arrow link:
+   ![](img/live_preview_button.png)
+7. Copy the URL of the mp3 file
+8. Update your `Twilio.callAndPlay` function to use this new URL.
+
+### Receive Text Messages
 
 Listen for messages and run the given function whenever one is received.
 
@@ -215,7 +314,7 @@ Twilio.listenForMessages(function (msg) {
 });
 ```
 
-##### Get Latest Text Message
+### Get Latest Text Message
 
 Get the most recently received text message.
 
@@ -227,7 +326,7 @@ Twilio.getLatestMessage(function (msg) {
 });
 ```
 
-##### Get All Text Messages
+### Get All Text Messages
 
 Retrieve all of the received text messages.
 
@@ -237,6 +336,7 @@ Twilio.getAllMessages(function (messageArray) {
   console.log(messageArray);
 });
 ```
+
 
 # Feedback!
 
@@ -248,15 +348,15 @@ _How likely is it that you would recommend this workshop to a friend?_
 | [1][r1] | [2][r2] | [3][r3] | [4][r4] | [5][r5] | [6][r6] | [7][r7] | [8][r8] | [9][r9] | [10][r10] |
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
 
-[r1]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=1
-[r2]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=2
-[r3]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=3
-[r4]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=4
-[r5]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=5
-[r6]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=6
-[r7]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=7
-[r8]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=8
-[r9]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=9
-[r10]: https://feedback-redir.hackclub.io/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=10
+[r1]: https://feedback-redir.hackclub.com/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=1
+[r2]: https://feedback-redir.hackclub.com/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=2
+[r3]: https://feedback-redir.hackclub.com/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=3
+[r4]: https://feedback-redir.hackclub.com/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=4
+[r5]: https://feedback-redir.hackclub.com/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=5
+[r6]: https://feedback-redir.hackclub.com/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=6
+[r7]: https://feedback-redir.hackclub.com/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=7
+[r8]: https://feedback-redir.hackclub.com/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=8
+[r9]: https://feedback-redir.hackclub.com/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=9
+[r10]: https://feedback-redir.hackclub.com/1H3FEaja2L1fY9JNNYbObFm9hDcFzJOphnODItaNJQBE?ip=entry.78173348&rfield=entry.559841237&r=10
 
 [demo]: https://jsbin.com/gist/b16a00cc53a7827c725b

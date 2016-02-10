@@ -10,15 +10,15 @@ One of the things I was asked to do was write a short proposal for our club.
 
 > # Club Proposal
 >
-> We would like to start a student run code club within the school. It would meet
-> every Wednesday afternoon from 3:30-4:30 in the library. Ideally we would get
-> Chris to supervise the meetings. We would roughly follow the hackEDU
-> (http://hackclub.io) curriculum, a curriculum designed to quickly introduce
+> We would like to start a student run code club within the school. It would
+> meet every Wednesday afternoon from 3:30-4:30 in the library. Ideally we would
+> get Chris to supervise the meetings. We would roughly follow the hackEDU
+> (https://hackclub.com) curriculum, a curriculum designed to quickly introduce
 > programming in a project oriented manner. I (Harrison) would manage the
-> workshops and ensure that each member is having their needs catered to. To make
-> sure each member has a workspace we would need access to the school computers.
-> However, as each of the workshops is able to be ran using online software, we
-> would not need any extra software installed on them.
+> workshops and ensure that each member is having their needs catered to. To
+> make sure each member has a workspace we would need access to the school
+> computers. However, as each of the workshops is able to be ran using online
+> software, we would not need any extra software installed on them.
 
 > The code club would be a place for students to come from all years and learn to
 > build, learn and connect with their newfound programming knowledge.

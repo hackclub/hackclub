@@ -1,6 +1,6 @@
 # Dodge
 
-Short link to this workshop: https://workshops.hackclub.io/dodge
+Short link to this workshop: https://workshops.hackclub.com/dodge
 
 -------------------------------------------------------------------------------
 

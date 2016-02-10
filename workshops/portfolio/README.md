@@ -1,6 +1,6 @@
 # Building Your First Website
 
-Short link to this workshop: https://workshops.hackclub.io/portfolio
+Short link to this workshop: https://workshops.hackclub.com/portfolio
 
 ## Goals
 
@@ -133,7 +133,7 @@ will not change what your website looks like.
 However we can change the style of some things on the page by adding **HTML
 tags**.
 
-[Googling for HTML]: https://www.google.com/search?q=html
+[google_html]: https://www.google.com/search?q=html
 
 ## The Heading HTML Tag
 
@@ -561,13 +561,13 @@ _How likely is it that you would recommend this workshop to a friend?_
 | [1][r1] | [2][r2] | [3][r3] | [4][r4] | [5][r5] | [6][r6] | [7][r7] | [8][r8] | [9][r9] | [10][r10] |
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
 
-[r1]: https://feedback-redir.hackclub.io/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=1
-[r2]: https://feedback-redir.hackclub.io/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=2
-[r3]: https://feedback-redir.hackclub.io/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=3
-[r4]: https://feedback-redir.hackclub.io/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=4
-[r5]: https://feedback-redir.hackclub.io/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=5
-[r6]: https://feedback-redir.hackclub.io/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=6
-[r7]: https://feedback-redir.hackclub.io/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=7
-[r8]: https://feedback-redir.hackclub.io/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=8
-[r9]: https://feedback-redir.hackclub.io/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=9
-[r10]: https://feedback-redir.hackclub.io/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=10
+[r1]: https://feedback-redir.hackclub.com/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=1
+[r2]: https://feedback-redir.hackclub.com/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=2
+[r3]: https://feedback-redir.hackclub.com/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=3
+[r4]: https://feedback-redir.hackclub.com/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=4
+[r5]: https://feedback-redir.hackclub.com/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=5
+[r6]: https://feedback-redir.hackclub.com/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=6
+[r7]: https://feedback-redir.hackclub.com/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=7
+[r8]: https://feedback-redir.hackclub.com/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=8
+[r9]: https://feedback-redir.hackclub.com/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=9
+[r10]: https://feedback-redir.hackclub.com/1uKf7qYDyqvQ_V5bsfv-UPx7uBhdF8qzqT8zFUIJh9eI?ip=entry.78173348&rfield=entry.559841237&r=10

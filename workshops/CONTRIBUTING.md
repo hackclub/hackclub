@@ -56,7 +56,7 @@ workshops like [Portfolio](portfolio) and [Dodge](dodge).
    other Markdown files that you link to from your newly `README.md` (see
   [Dodge](dodge) as an example of a workshop that does this.
 4. In [`workshops/README.md`](README.md), add your workshop to the
-   [Community Workshops](README.md#community-workshops) table.
+   [Workshops list](README.md#the-list).
 
 **Step 2: Create the workshop with the following requirements:**
 
