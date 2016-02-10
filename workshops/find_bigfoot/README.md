@@ -120,7 +120,7 @@ At this point, `index.html` looks like [this](examples/index2.html).
 
 ### Celebrate!
 
-![](https://github.com/jonleung/hackclub/raw/add-personal-website-workshop/workshops/personal_website/img/celebrate_king_kid.gif)
+![](img/celebrate_the_office.gif)
 
 Congratulations, you have a working game now! You're all done! Now you can go to [FGL](https://fgl.com) and sell your game to sponsors and make millions of dollars!
 
@@ -186,7 +186,7 @@ When we're done, `index.html` looks like [this](examples/index.html). But feel f
 
 ### Celebrate!
 
-![](https://github.com/jonleung/hackclub/raw/add-personal-website-workshop/workshops/personal_website/img/celebrate_rush_hour.gif)
+![](img/celebrate_charlie_brown.gif)
 
 Now you have made a more interesting game. And more importantly, by practicing Googling stuff, you are on your way toward becoming an independent hacker.
 
