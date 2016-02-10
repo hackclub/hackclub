@@ -82,7 +82,7 @@ Clicking the first link takes you [here](http://www.w3schools.com/jsref/event_on
 
 > ![](img/w3schools_onclick.png)
 
-Aha! It looks like whenever you put `onclick="myFunction()"` on a tag, it executes the [**JavaScript**](http://www.w3schools.com/js/) code you put in the quotes.
+Aha! It looks like whenever you put `onclick="myFunction()"` on a tag such as `button` or `img`, it executes the [**JavaScript**](http://www.w3schools.com/js/) code you put in the quotes whenever that tag is clicked on.
 
 We want our JavaScript code to display a popup box saying you won. So now let's Google "[javascript popup box](https://www.google.com/search?q=javascript+popup+box)":
 
@@ -138,7 +138,7 @@ When you are making your own projects, you won't have workshops telling the solu
 
 ![](img/bigfoot_background.png)
 
-When you are done, or if you are simply really stuck, here is a [sample solution](examples/index3.html). (But there are other ways to add the background image, so if you're solution doesn't match mine, that's OK.)
+When you are done, or if you are simply really stuck, here is a [sample solution](examples/index3.html). (But there are other ways to add the background image, so if your solution doesn't match mine, that's OK.)
 
 ### Setting Bigfoot's location
 
