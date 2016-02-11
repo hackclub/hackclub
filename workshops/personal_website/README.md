@@ -339,6 +339,9 @@ Therefore, if we want to change the **size** of the image, we use **CSS**!
 >
 > - The **`.css` extension** tells the computer to interpret this as a `css`
 >   file (just like `.html`)
+> - This is called an **external style sheet** because the CSS file is
+>   **external** to the HTML file (as in the stylesheet is not inside the HTML
+>   file)
 
 > ![](img/css_add_css_file.gif)
 
@@ -520,18 +523,33 @@ Now that you have finished building your website
 
 ## Part VII: Hacking
 
-Until now, you've been following a decently rigid tutorial. Now is your chance
-to to take your website and make it your own.
+In this section, your challenge is to add additional features to your website to
+make it your own!
 
-1. Below are some websites from other Hack Clubs from around the world to give
-   you some inspiration! Checkout at least one of them.
-2. Add to and customize the website we make together to make it your own!
+Here is an outline of what we're going to do:
 
-### Examples
+1. We'll choose a feature to add to your website
+2. Learn to use Google to help you add that feature
+3. Actually add the feature
+3. Update your website on GitHub Pages with the new feature
 
-#### Websites Made by Other Hack Club Hackers
+> It's easy to skip over this section but don't do it! Although you may
+> feel like you learned a bunch of stuff from above, only by playing around
+> with what you learned do you really begin to learn anything substantial.
 
-- [Gaudy Salas](https://output.jsbin.com/zilola)
+### 1) Choosing a Feature
+
+A good way to get ideas for what to add to your website is to look at other
+people's websites.
+
+1. Find a website that you like, either from the below list or from somewhere
+   else on the internet.
+2. Decide on jsut one aspect of that website that you really like from their
+   website that you want to try adding to your own website (maybe it's the fact
+   that they have a background image, or the fact that they have music).
+
+**Websites Made by Other Hack Club Hackers:**
+
 - [Alyssa Sun](http://output.jsbin.com/fopoxe)
 - [Rebecca Jourard](https://mnefertiti.github.io/personalwhale/)
 - [John Cena's](http://nguyenbrian.github.io/john-cenas-personal-website/)
@@ -540,12 +558,219 @@ to to take your website and make it your own.
 - [Harrison Shoebridge](https://harrison.tech/zero-cool/)
 - [Chaoyi Zha](https://cydrobolt.com/)
 
-#### Professional Websites
+**Websites Made by Professionals:**
 
 - [Alice Lee](http://byalicelee.com)
 - [Yaron Schoen](http://yaronschoen.com)
-- [Pushkar Modi](http://pushkarmodi.com)
 - [Roxanne Ravago](http://www.roxanneravago.com)
+- [Pushkar Modi](http://pushkarmodi.com)
+
+### Try Googling for how to do what you want to do
+
+```
+TODO: HS Hackers Post
+```
+
+1. Try using Google to figure out how to do what you want to do. If you get stuck,
+you can checkout the next section on how we use Google to figure out how to set
+the background color!
+
+TODO make sound more like instructions
+
+### 2) Using Google to Learn How To Do It
+
+Say I wanted to make the background of my website have a color but I have no
+idea how to do it. I can use Google to find the answer!
+
+**First Attempt**
+
+I first try Googling `how do I set the color of the background`.
+
+```
+TODO: Screenshot
+```
+
+However, the results I get back are about Microsoft Office and Photoshop. Not
+what I'm looking for.
+
+**Adding the Programming Language**
+
+To get more relevant results, I can include the programming language I'm using.
+Currently using both HTML & CSS—which one do I put?
+
+Well, in this case because changing the background is stylistic thing and not a
+content thing, I think changing the background color will be in the CSS.
+
+I now try Googling `how do I set the color of the background in CSS`.
+
+```
+TODO: Screenshot
+```
+
+The first result looks promising but the next few results are not quite what I'm
+looking for.
+
+**Removing Unnecessary Words**
+
+When you Google something, you don't need to include phrases like `how do I`
+and you can remove words like `a`, `the`, `of`. `in`.
+
+From the search query:
+
+> "how do I change the color of the background in CSS"
+
+we can get rid of the following:
+
+> "~~how do I~~ **set** ~~the~~ **color** ~~of the~~ **background** ~~in~~
+**CSS**"
+
+this leaves us with `set color background CSS`. Let's try it!
+
+```
+TODO: Screenshot
+```
+
+**Examining the First Result**
+
+This is the first Google result with the title "CSS background-color property -
+W3 Schools" looks promising.
+
+I open it and the first question I ask myself is "Is this relevant to me?"
+
+I read the title: "CSS background-color Property". Sounds pretty relevant.
+
+The next question I ask myself is "Can I find some code that I can try?"
+
+Yes! There's an example with a bunch of code in it and it even has a "Try it
+yourself" button!
+
+**Trying the Code**
+
+I see how the example works from clicking the "Try it yourself" button and
+I add the code to my CSS file
+
+```
+TODO: GIF Screenshot
+
+I immediately see the background colors change!
+
+This sets the body's background color to X
+```
+
+**Ending Notes**
+
+Googling is a skill in and of itself. It will take time for you to develop it.
+
+It will often take you going through many results and multiple search queries
+before you find your anwer. Don't give up!
+
+**Many Ways To Do Things**
+
+There are many, _many_ different ways to do things in HTML & CSS. In this
+tutorial we have just shown you one way.
+
+For example, our tutorial uses an **external stylesheet**, this means that we
+put our CSS in a separate file to the HTML. We called it the `stlyes.css`.
+There is actually MANY different ways to add CSS to your html but having a
+an **external stylesheet** is the best because it is the most organized.
+
+When you google for answers, you will see the many other ways of doing it
+
+for example, to set a background color to yellow, all of the following work:
+
+**The attribute method: (don't do it)**
+
+```html
+<html>
+  <head>
+  </head>
+  <body bgcolor="yellow">
+    ...
+  </body>
+</html>
+```
+
+If you ever see a solution that recommends adding an attribute to set a style,
+in this case `bgcolor`, don't do it! It's bad practice because it gets really
+messy really quickly. To learn more about why that is you can google `inline
+style vs external stylesheet best practices`.
+
+Whenever you run into solutions that try to add styles directly as attributes in
+your HTML like this, try to find a different solution that adds it as an
+external stylesheet.
+
+
+**The inline styles method (don't)**
+
+```html
+<html>
+  <head>
+    <style>
+      body {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+```
+
+This way is not as terrible because it still separates the styles from HTML.
+However, when you see solutions like these, just take the style and write it
+in your external stylsheet instead.
+
+#### Summary of Steps
+
+Here are the steps for finding how to do something with Google:
+
+1. Forming the search query
+  - It's often helpful to specify the programming language you are using
+  - It sometimes can be helpful to remove unnecessary words
+2. Then for each Google result, ask
+  - Is this page relevant to me?
+  - Can I find something on this page to try in my code as quickly as possible?
+  - Validate that it's good or bag practice
+  - Then try it! If it doesn't work, try something else!
+
+### Trying it Yourself
+
+Now that you have a sense of how to google, try following the above Googling
+procedure to finding your answer.
+
+### Publishing your changes to GitHub pages
+
+Although we have made the changes in Cloud9, they are not yet on our GitHub
+Pages website yet. To update our GitHub pages.
+
+1. Open the terminal by pressing `alt + t` on the keyboard at the same time.
+   Then type in the following commands:
+
+   1. `git add --all`
+   2. `git commit -m "YOUR COMMIT MESSAGE HERE"` Instead of writing "YOUR COMMIT
+      MESSAGE HERE", write what you changed. For example "Add a background
+      color". Commit messages usually start with the word "Add" or "Change".
+      Also note that it's best practice to have commit messages in the present
+      tense.
+  - `git push`
+2. GitHub will now ask you for your username and password.
+  - Go ahead and enter your username and then press the enter.
+  - Then enter your password and press enter. _The characters won't show up on
+    the screen, but rest assured, you are still typing._
+3. Now try to view your website by going to
+   `USERNAME.github.io/personal_website` (make sure to replace `USERNAME` with
+   your actual GitHub username)
+
+### Finish
+
+Yay! You've successfully added your changes!
+
+Now you can keep doing the following:
+
+1. Now you can pick another feature to add.
+2. Use Google to figure out how to add it
+3. Publish your changes
 
 ### Additional Resources
 
