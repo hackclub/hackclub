@@ -74,7 +74,7 @@ A game needs interaction in order to be a game, so let's display a popup box whe
 
 How can you do that?
 
-One of the most important skills towards becoming an independent hacker is knowing how to Google things when stuck. So let's start by Googling "[html handle click](https://www.google.com/search?q=html+handle+click)":
+One of the most important skills towards becoming an independent hacker is knowing how to Google things when stuck. So let's start by Googling "[HTML handle click](https://www.google.com/search?q=html+handle+click)":
 
 > ![](img/google_html_handle_click.png)
 
@@ -84,7 +84,7 @@ Clicking the first link takes you [here](http://www.w3schools.com/jsref/event_on
 
 Aha! It looks like whenever you put `onclick="myFunction()"` on a tag such as `button` or `img`, it executes the [**JavaScript**](http://www.w3schools.com/js/) code you put in the quotes whenever that tag is clicked on.
 
-We want our JavaScript code to display a popup box saying you won. So now let's Google "[javascript popup box](https://www.google.com/search?q=javascript+popup+box)":
+We want our JavaScript code to display a popup box saying you won. So now let's Google "[JavaScript popup box](https://www.google.com/search?q=javascript+popup+box)":
 
 > ![](img/google_javascript_popup_box.png)
 
@@ -162,7 +162,7 @@ OK, got it working? If you need help, try asking your neighbor or a club leader 
 
 Let's walk through the steps of one way of solving this.
 
-Google "[html position](https://www.google.com/search?q=html+position)".
+Google "[HTML position](https://www.google.com/search?q=html+position)".
 
 > ![](img/google_html_position.png)
 
