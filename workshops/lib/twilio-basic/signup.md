@@ -67,8 +67,9 @@ Club member $100 worth of Twilio credit.
     "Upgrade Account" button.
 
 13. You should be greeted by a message that looks something like the below
-    image. If you get an error, please immediately call Jonathan at 484-238-0812
-    and he will work with you to resolve the issue.
+    image. If you get an error, send a message to the `#meta` channel in
+    [the Slack](../../../SLACK.md) mentioning `@staff` and someone from the Hack
+    Club team will work with you to get it sorted out.
 
     > ![](img/congrats.png)
 
