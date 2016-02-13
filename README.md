@@ -39,7 +39,7 @@ If you need any help, please contact us at team@hackclub.com or on our
    work on your forked copy.
 4. Create a branch specific to the issue or feature you are working on. Push
    your work on that branch ([Need help with branching?][4]).
-5. Name the branch something like `fixes-xxx-issue` or `add-xx-feature` where
+5. Name the branch something like `fixes-xxx-issue` or `add-xxx-feature` where
    `xxx` is a short description of the changes or feature you are adding.
 6. Your changes should follow our [styleguides][5].
 7. Once your code is ready, submit a pull request from your branch to Hack

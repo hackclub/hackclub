@@ -40,9 +40,9 @@ Club member $100 worth of Twilio credit.
 
     | Field              | Value                               |
     |--------------------|-------------------------------------|
-    | Credit Card Number | `4847356897256173`                  |
-    | Expires            | `09/2021`                           |
-    | CVV                | `917`                               |
+    | Credit Card Number | `4847187325364622`                  |
+    | Expires            | `06/2024`                           |
+    | CVV                | `735`                               |
     | Cardholder Name    | `Jonathan Leung`                    |
     | Street Address     | `200 Haverford Road, Wynnewood, PA` |
     | Zip Code           | `19096`                             |
@@ -66,7 +66,10 @@ Club member $100 worth of Twilio credit.
 12. After making sure that all the information you entered is correct, click the
     "Upgrade Account" button.
 
-13. You should be greeted by a message that looks something like this:
+13. You should be greeted by a message that looks something like the below
+    image. If you get an error, send a message to the `#meta` channel in
+    [the Slack](../../../SLACK.md) mentioning `@staff` and someone from the Hack
+    Club team will work with you to get it sorted out.
 
     > ![](img/congrats.png)
 

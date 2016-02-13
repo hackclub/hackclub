@@ -32,6 +32,10 @@ _A step-by-step guide by the Hack Club community._
     - [Hacking](#hacking)
     - [Next Meeting Reminder](#next-meeting-reminder)
   - [Hack Days](#hack-days)
+    - [Waiting for Hackers](#waiting-for-hackers)
+    - [Hacking on Projects](#hacking-on-projects)
+    - [Running Demos](#running-demos)
+    - [Reminder for Next Meeting](#reminder-for-next-meeting)
 
 ## What is a Hack Club?
 
@@ -321,9 +325,22 @@ turn the music back on (not too loud, people should feel comfortable talking).
 #### Second Meeting Reminder
 
 Five minutes before the meeting is over, get everyone's attention to remind them
-about the next meeting. Say when and where it'll be and that everyone will be
-finishing the websites they started on and presenting them at the end in it. And
-thank them for coming to this meeting!
+about the next meeting. Tell them when and where it'll be and make sure that
+everyone knows they will be finishing the websites they started on and
+presenting them at the end. Most importantly, thank them for coming to this
+meeting!
+
+An effective way to remind people about club meetings is to send them a text
+message the night before. A popular service that lets you send announcements
+through text messages used by many of the clubs is called
+[Remind](https://remind.com). Just make sure to set up your Remind account the
+day before the meeting so you don't run into any issues. The end of the club
+meeting would be a really good time for everyone else to setup an account. All
+they need to do now is text  `81010` with your Club's Remind code (like
+`@ehs-hacks`) and that'll add them to your remind. You'll be able to send them
+any announcements about club meetings via text message the night before. If any
+members are concerned about privacy, you can tell them Remind does not give you
+their phone number.
 
 ## The Second Meeting
 
@@ -333,6 +350,9 @@ websites. At the end of the meeting, everyone will come up to the front of the
 room and demo their website. Like the first meeting, bringing food is a good
 idea :wink:.
 
+[Click here][slideshow] for our slideshow template for the second meeting. Go to
+`File > Copy` to make a copy of it and customize it for your club.
+
 Here's our suggested schedule:
 
 1. Wait for hackers to arrive (5 minutes)
@@ -340,6 +360,8 @@ Here's our suggested schedule:
 3. Example demo (5 minutes)
 3. Free-form hacking (45 minutes)
 4. Demos (30 minutes)
+
+[slideshow]: https://docs.google.com/presentation/d/1WCerU9JhJY6L5kM7SrIlYcABwxpqcjmxmSRXilvWAaY/edit
 
 #### Wait for Hackers to Arrive
 
@@ -385,7 +407,7 @@ loud -- people should feel comfortable talking with one another).
 
 #### Demos
 
-Before getting to the demos themselves, give your members 45, 30, 15, and 5
+Before getting to the demos themselves, give your members 30, 15 minute, and 5
 minute warnings so the demos aren't a surprise.
 
 30 minutes before demos start, have everyone email you a link to their website.
@@ -495,5 +517,48 @@ And thank them for coming!
 
 ### Hack Days
 
-Guidelines for hack days are currently in progress. Expect them to be live
-within the next two weeks :smile:.
+Here's our suggested schedule for Hack Days:
+
+1. Wait for hackers to arrive (5 minutes)
+2. Announcements (5 minutes)
+3. Free-form hacking (45 minutes)
+4. Demos (30 minutes)
+5. Next meeting reminder (5 minutes)
+
+[Click here][slideshow] for our slideshow template for Hack Days. Make sure to
+make a copy to customize for your club (you'll want to replace any text in
+brackets, like `[HIGH_SCHOOL]`, with the proper information for your club).
+
+[slideshow]: https://docs.google.com/presentation/d/1uIcNYRY5ZLaLgEMO_1p-ZPmdaxeh1osy-0UpDjG2Z7w/edit?usp=sharing
+
+#### Waiting For Hackers
+
+Same as we've done previously. Put on a playlist (not too loud) and have the
+first slide of the slideshow on the projector to let people know they're in the
+right place.
+
+#### Hacking on Projects
+
+This'll basically be the same as the free-form hacking section in the second
+meeting. Members will continue building on what they started in the workshop
+during the previous meeting and your role is to create an environment where
+people are comfortable for asking for help.
+
+Just like in the second meeting, when people do have questions, be eager to help
+them out. It's a good idea to put on an upbeat playlist (but again, not too loud
+-- people should feel comfortable talking with one another).
+
+#### Running Demos
+
+You'll want to do the same thing you did in the second meeting to run demos.
+[Click here](#demos) to go to second meeting's section on running demos.
+
+#### Reminder for Next Meeting
+
+Five minutes before the meeting is over, get everyone's attention to remind them
+about the next meeting (make sure to switch to the last slide in the slideshow).
+Say when and where it'll be and that you'll be getting started with a new
+workshop, which will be walking everyone through building `something` (replace
+`something` with what the next workshop actually does).
+
+And thank them for coming!
