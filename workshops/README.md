@@ -49,6 +49,7 @@ fundamentals of game development.
 | [Git and GitHub](git_and_github/README.md) | Git                                      | Introduction to Git and using it with GitHub                                     | [@nguyenbrian][nguyenbrian], [@JevinSidhu][JevinSidhu], [@uditdesai][uditdesai], and [@vaibhavyadaram][vaibhavyadaram] |
 | [GitHub Pages](github_pages/README.md)     | Git                                      | Get your website online using GitHub's free hosting service                      | [@sethtrei][sethtrei]                                                                                                  |
 | [Swiper](swiper/README.md)                 | Swift (requires OS X)                    | Make a fun and addicting iOS game using Swift and SpriteKit                      | [@zach-cmiel][zachcmiel]                                                                                               |
+| [Find Bigfoot](find_bigfoot/README.md)     | HTML & CSS                               | A really simple game about finding Bigfoot                                       | [@ad510][ad510]                                                                                                        |
 
 [Bogidon]: https://github.com/Bogidon
 [nguyenbrian]: https://github.com/nguyenbrian
@@ -57,6 +58,7 @@ fundamentals of game development.
 [vaibhavyadaram]: https://github.com/vaibhavyadaram
 [sethtrei]: https://github.com/sethtrei
 [zachcmiel]: https://github.com/zach-cmiel
+[ad510]: https://github.com/ad510
 
 ## Contributing to the Workshops
 
