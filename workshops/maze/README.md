@@ -14,8 +14,8 @@ Navigate your mouse through the maze without touching the walls:
 [![](img/bttn_play_now.png)][demo_output]
 [![](img/bttn_view_code.png)][demo]
 
-[demo]: https://jsbin.com/gist/531320bdeccaa5a3389a
-[demo_output]: https://jsbin.com/gist/531320bdeccaa5a3389a
+[demo]: https://jsbin.com/gist/219e3fb960306fba24bb
+[demo_output]: https://jsbin.com/gist/219e3fb960306fba24bb
 
 ## 2. How to Use This Tutorial
 
