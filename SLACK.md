@@ -74,6 +74,7 @@ Below is a list of the channels that all members are in by default.
 | `#introductions` | Where new members introduce themselves and are welcomed |
 | `#meta`          | Discussion about building Hack Club itself              |
 | `#random`        | Anything and everything! General spot for hanging out   |
+| `#shipit`        | Space to share your projects with the rest of Hack Club |
 
 Here are some examples of messages sent to the different default channels:
 
@@ -92,3 +93,7 @@ Here are some examples of messages sent to the different default channels:
 ##### `#random`:
 
 ![`#random` example](img/slack_example_random.png)
+
+##### `#shipit`:
+
+![`#shipit` example](img/slack_example_shipit.png)
