@@ -56,7 +56,9 @@ It is rumored that Bigfoot's natural habitat is a forest in the Pacific Northwes
 
 Luckily for you, we've done the hard part of wrangling him out of the jungle and putting him in captivity on the Internet, right here:
 
-    https://hackclub.github.io/workshop-assets/find_bigfoot/bigfoot.png
+```
+https://hackclub.github.io/workshop-assets/find_bigfoot/bigfoot.png
+```
 
 So now you have to put an **image** of him into your game, like you did in the Personal Website workshop. Remember how to do that? If you need a refresher, [look here](https://github.com/jonleung/hackclub/tree/add-personal-website-workshop/workshops/personal_website#user-content-6-adding-an-image-with-the-image-tag).
 
@@ -112,7 +114,9 @@ Here's what went wrong. We expected the quotation mark after `alert(` to indicat
 
 Here's a little trick you can use to fix that. In JavaScript, you can use either `"` or `'` around text (the technical term is a [**string**](http://www.w3schools.com/js/js_strings.asp)). So change the inner quotes to single quotes, like this:
 
-    onclick="alert('Woohoo, you win! You found Bigfoot!');"
+```
+onclick="alert('Woohoo, you win! You found Bigfoot!');"
+```
 
 And now clicking Bigfoot should display the message.
 
@@ -132,7 +136,9 @@ I guess you spotted the problem already. This game is way too easy! I mean, Bigf
 
 That must be because we took him out of his natural habitat. You see, normally Bigfoot is hiding in a dense forest, making it hard to find him. Let's fix that by adding a **background image** of a forest. I like this one:
 
-    https://hackclub.github.io/workshop-assets/find_bigfoot/trees.jpg
+```
+https://hackclub.github.io/workshop-assets/find_bigfoot/trees.jpg
+```
 
 When you are making your own projects, you won't have workshops telling the solution to every step. So this time, let's practice your Googling skills and see if you can figure out how to set that background image without being told the solution! After adding the background image, the live preview looks like this:
 
