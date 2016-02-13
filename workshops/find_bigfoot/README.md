@@ -60,7 +60,7 @@ Luckily for you, we've done the hard part of wrangling him out of the jungle and
 https://hackclub.github.io/workshop-assets/find_bigfoot/bigfoot.png
 ```
 
-So now you have to put an **image** of him into your game, like you did in the Personal Website workshop. Remember how to do that? If you need a refresher, [look here](https://github.com/jonleung/hackclub/tree/add-personal-website-workshop/workshops/personal_website#user-content-6-adding-an-image-with-the-image-tag).
+So now you have to put an **image** of him into your game, like you did in the Personal Website workshop. Remember how to do that? If you need a refresher, [look here](https://github.com/hackclub/hackclub/tree/master/workshops/personal_website#user-content-6-adding-an-image-with-the-image-tag).
 
 When you are done, you should see Bigfoot in the live preview, like this:
 
