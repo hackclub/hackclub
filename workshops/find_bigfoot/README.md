@@ -56,7 +56,7 @@ It is rumored that Bigfoot's natural habitat is a forest in the Pacific Northwes
 
 Luckily for you, we've done the hard part of wrangling him out of the jungle and putting him in captivity on the Internet, right here:
 
-    http://andrewd.50webs.com/bigfoot/1IllustriousBigfoot/src/bigfoot.png
+    https://hackclub.github.io/workshop-assets/find_bigfoot/bigfoot.png
 
 So now you have to put an **image** of him into your game, like you did in the Personal Website workshop. Remember how to do that? If you need a refresher, [look here](https://github.com/jonleung/hackclub/tree/add-personal-website-workshop/workshops/personal_website#user-content-6-adding-an-image-with-the-image-tag).
 
@@ -95,7 +95,7 @@ The first link takes you [here](http://www.w3schools.com/js/js_popup.asp):
 It looks like when you run `alert("I am an alert box!");` it opens a popup box showing the text inside the quotes. So if we put 2 and 2 together, our `img` tag should look like this:
 
 ```html
-<img src="http://andrewd.50webs.com/bigfoot/1IllustriousBigfoot/src/bigfoot.png"
+<img src="https://hackclub.github.io/workshop-assets/find_bigfoot/bigfoot.png"
      onclick="alert("Woohoo, you win! You found Bigfoot!");">
 ```
 
@@ -132,7 +132,7 @@ I guess you spotted the problem already. This game is way too easy! I mean, Bigf
 
 That must be because we took him out of his natural habitat. You see, normally Bigfoot is hiding in a dense forest, making it hard to find him. Let's fix that by adding a **background image** of a forest. I like this one:
 
-    http://img.groundspeak.com/waymarking/ed341ce5-f955-47bc-8b0b-7ed1ac5ab13a.jpg
+    https://hackclub.github.io/workshop-assets/find_bigfoot/trees.jpg
 
 When you are making your own projects, you won't have workshops telling the solution to every step. So this time, let's practice your Googling skills and see if you can figure out how to set that background image without being told the solution! After adding the background image, the live preview looks like this:
 
