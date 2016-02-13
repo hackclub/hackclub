@@ -5,7 +5,7 @@ function setup() {
   createCanvas(200,200);
 
   maze = createSprite(100, 100);
-  mazeImg = loadImage("http://i.filmot.org/7xDfW51.png");
+  mazeImg = loadImage("https://surrogate.hackedu.us/i.imgur.com/7xDfW51.png");
   maze.addImage(mazeImg);
 }
 
