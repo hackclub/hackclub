@@ -487,6 +487,8 @@ Unless you copy-pasted, then, eh. Maybe only a half-legend.
 
 Your mom thinks you're special, that's all that really matters 💯
 
+As a note, you can replace ', dawg' with any other text; give it a try!"
+
 ## Thanks for completing our workshop ❤
 
 (Ya, we're dysfunctional as f**k)
