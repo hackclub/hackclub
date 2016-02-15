@@ -555,10 +555,9 @@ You'll want to do the same thing you did in the second meeting to run demos.
 
 #### Reminder for Next Meeting
 
-Five minutes before the meeting is over, get everyone's attention to remind them
-about the next meeting (make sure to switch to the last slide in the slideshow).
-Say when and where it'll be and that you'll be getting started with a new
-workshop, which will be walking everyone through building `something` (replace
-`something` with what the next workshop actually does).
-
-And thank them for coming!
+- Five minutes before the meeting is over, make sure to hit the last slide in
+  the presentation and tell everyone the time and place for the next meeting.
+- Let everyone know they’ll be doing a new workshop next time, which will walk
+  them through building `{something}` (replace `{something}` with what the next
+  workshop will actually be about).
+- Thank them for coming!
