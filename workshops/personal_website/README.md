@@ -544,7 +544,7 @@ people's websites.
 
 1. Find a website that you like, either from the below list or from somewhere
    else on the internet.
-2. Decide on jsut one aspect of that website that you really like from their
+2. Decide on just one aspect of that website that you really like from their
    website that you want to try adding to your own website (maybe it's the fact
    that they have a background image, or the fact that they have music).
 
@@ -571,9 +571,9 @@ people's websites.
 TODO: HS Hackers Post
 ```
 
-1. Try using Google to figure out how to do what you want to do. If you get stuck,
-you can checkout the next section on how we use Google to figure out how to set
-the background color!
+1. Try using Google to figure out how to do what you want to do. If you get
+stuck, you can checkout the next section on how we use Google to figure out how
+to set the background color!
 
 TODO make sound more like instructions
 
@@ -662,7 +662,7 @@ This sets the body's background color to X
 Googling is a skill in and of itself. It will take time for you to develop it.
 
 It will often take you going through many results and multiple search queries
-before you find your anwer. Don't give up!
+before you find your answer. Don't give up!
 
 **Many Ways To Do Things**
 
@@ -670,9 +670,9 @@ There are many, _many_ different ways to do things in HTML & CSS. In this
 tutorial we have just shown you one way.
 
 For example, our tutorial uses an **external stylesheet**, this means that we
-put our CSS in a separate file to the HTML. We called it the `stlyes.css`.
-There is actually MANY different ways to add CSS to your html but having a
-an **external stylesheet** is the best because it is the most organized.
+put our CSS in a separate file to the HTML. We called it the `stlyes.css`. There
+is actually MANY different ways to add CSS to your HTML but having an **external
+stylesheet** is the best because it is the most organized.
 
 When you google for answers, you will see the many other ways of doing it
 
@@ -719,7 +719,7 @@ external stylesheet.
 
 This way is not as terrible because it still separates the styles from HTML.
 However, when you see solutions like these, just take the style and write it
-in your external stylsheet instead.
+in your external stylesheet instead.
 
 #### Summary of Steps
 
