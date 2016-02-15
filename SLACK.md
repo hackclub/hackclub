@@ -75,6 +75,7 @@ Below is a list of the channels that all members are in by default.
 | `#meta`          | Discussion about building Hack Club itself              |
 | `#random`        | Anything and everything! General spot for hanging out   |
 | `#shipit`        | Space to share your projects with the rest of Hack Club |
+| `#studycorner`   | Do schoolwork together and help those in need of help   |
 
 Here are some examples of messages sent to the different default channels:
 
@@ -97,3 +98,7 @@ Here are some examples of messages sent to the different default channels:
 ##### `#shipit`:
 
 ![`#shipit` example](img/slack_example_shipit.png)
+
+##### `#studycorner`:
+
+![`#studycorner` example](img/slack_example_studycorner.png)
