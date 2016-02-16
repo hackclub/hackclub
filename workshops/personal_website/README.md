@@ -511,10 +511,13 @@ Yes! Your website is now public on the internet!
 Now that you have finished building your website
 
 1. In a new tab, open and follow [these directions][slack] to signup for our
-   Slack
+   Slack.
 2. Join your club's channel by asking your club leader for the name of the
-   channel
-3. Post the link to your website in your club's channel
+   channel.
+3. Post the link to your website in your club's channel.
+4. Then, post the link to the
+   [`#shipit`](https://starthackclub.slack.com/messages/shipit) channel to
+   share it with everyone!
 
 [slack]: ../../SLACK.md
 
