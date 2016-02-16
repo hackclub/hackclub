@@ -23,9 +23,8 @@ _Here's a link to the [real thing][final_live_demo] and [code][final_code]._
 - [Making The Site Look Nice](#making-the-site-look-nice)
 - [Publishing](#publishing)
 - [Sharing with the Community](#sharing-with-the-community)
-- [Hacking](#hacking)
 
-## Join Hack Club
+## Setup
 
 ### Sign Up for GitHub
 
@@ -65,7 +64,7 @@ code. We'll be using Cloud9 to write all of our code in Hack Club.
 
 1. In a new tab, open https://c9.io/.
 2. In the top right hand corner, click the button that looks like this: ![](img/c9_gh_icon.png)
-3. Authorize signin with GitHub.
+3. Authorize sign in with GitHub.
 4. If there is a popup that asks for your email, go ahead and enter it.
 5. Click the gray box that says **"Create a new workspace"**.
 6. Set the **"Workspace name"** to `projects`.
@@ -377,12 +376,12 @@ Finally let's change the font of the page to `Arial`.
 Add another **CSS attribute** to the `body` **selector** so that your CSS code
 for your `body` looks like this:
 
-  ```css
-  body {
-      text-align: center;
-      font-family: "Arial";
-  }
-  ```
+```css
+body {
+    text-align: center;
+    font-family: "Arial";
+}
+```
 
 > ![](img/css_font_family_arial.gif) Not all computers have the same fonts on
 > them. To figure out what fonts most computers have on them, you can Google
