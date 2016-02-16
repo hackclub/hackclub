@@ -36,7 +36,7 @@ If you are going to make a big change, discuss it on our Slack in the
 ([Don't have a Slack account?][slack]). To get an even more speedy response,
 mention `@jonl` and `@harrison`.
 
-[slack]: https://slack.starthackclub.com
+[slack]: https://slack.hackclub.com
 [curriculum_channel]: https://starthackclub.slack.com/messages/curriculum/
 
 ## Create An Issue
