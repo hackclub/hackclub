@@ -15,12 +15,12 @@ the [final code](examples/index.html).
 - Directly set the coordinates of an element.
 - Most importantly, practice Googling so you can become an independent hacker.
 
-## Set up the project
+## Set Up the Project
 
 If you've done other Hack Club workshops before, this should be pretty
 straightforward.
 
-### Create a blank HTML file
+### Create a Blank HTML File
 
 1. Go to https://c9.io
 2. Under the workspace called `USERNAME.github.io` where `USERNAME` is your
@@ -29,7 +29,7 @@ GitHub username, click **Open** to open the workspace.
 4. In the `find_bigfoot` folder, make a new file called `index.html`.
 5. Double-click `index.html` to open the file.
 
-### Add standard HTML template
+### Add Standard HTML Template
 
 Type the standard HTML template into `index.html`:
 
@@ -45,13 +45,13 @@ Type the standard HTML template into `index.html`:
 </html>
 ```
 
-### Open the live preview
+### Open the Live Preview
 
 1. Click **File > Save** to save the file.
 2. Click **Preview > Live Preview File** to open a live preview of the web page.
    Currently it is blank but that will change soon!
 
-### Get images for the game
+### Get Images for the Game
 
 1. Go to
    https://github.com/hackclub/hackclub/tree/master/workshops/find_bigfoot/assets
@@ -62,12 +62,12 @@ Type the standard HTML template into `index.html`:
 
 Now you're all set with the images you'll need!
 
-## Creating the game
+## Creating the Game
 
 What needs to be in a game about finding Bigfoot? Well, it needs Bigfoot, and
 it needs to tell the player when Bigfoot has been found.
 
-### Taking Bigfoot out of his natural habitat
+### Taking Bigfoot Out of His Natural Habitat
 
 It is rumored that Bigfoot's natural habitat is a forest in the Pacific
 Northwest. What happens if you take him out of his natural habitat and stick
@@ -89,7 +89,7 @@ When you are done, you should see Bigfoot in the live preview, like this:
 
 And the HTML looks like [this](examples/index1.html).
 
-### Telling the player when Bigfoot has been found
+### Telling the Player When Bigfoot Has Been Found
 
 A game needs interaction in order to be a game, so let's display a pop-up box
 whenever the player clicks on Bigfoot, like this:
@@ -172,7 +172,7 @@ dollars!
 I guess you spotted the problem already. This game is way too easy! I mean,
 Bigfoot is just sitting there out in the open, begging for you to click on him.
 
-### Putting Bigfoot back in his natural habitat
+### Putting Bigfoot Back in His Natural Habitat
 
 That must be because we took him out of his natural habitat. You see, normally
 Bigfoot is hiding in a dense forest, making it hard to find him. Let's fix that
@@ -192,7 +192,7 @@ When you are done, or if you are simply really stuck, here is a
 [sample solution](examples/index3.html). (But there are other ways to add the
 background image, so if your solution doesn't match mine, that's OK.)
 
-### Setting Bigfoot's location
+### Setting Bigfoot's Location
 
 That's much better! But the top left corner is a pretty boring place to hide
 Bigfoot. Can you figure out how to set Bigfoot's **position** to somewhere else?
@@ -212,7 +212,7 @@ like this:
 OK, got it working? If you need help, try asking your neighbor or a club leader
 for hints.
 
-#### Sample solution
+#### Sample Solution
 
 Let's walk through the steps of one way of solving this.
 
@@ -250,7 +250,7 @@ Bigfoot.
 Now you have made a more interesting game. And more importantly, by practicing
 Googling stuff, you are on your way toward becoming an independent hacker.
 
-## Sharing with the community
+## Sharing with the Community
 
 Like with previous workshops, let's set up a link that you can share with
 others!
