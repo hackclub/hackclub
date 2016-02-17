@@ -15,12 +15,12 @@ the [final code](examples/index.html).
 - Directly set the coordinates of an element.
 - Most importantly, practice Googling so you can become an independent hacker.
 
-## Set up the project
+## Set Up the Project
 
 If you've done other Hack Club workshops before, this should be pretty
 straightforward.
 
-### Create a blank HTML file
+### Create a Blank HTML File
 
 1. Go to https://c9.io
 2. Under the workspace called `USERNAME.github.io` where `USERNAME` is your
@@ -29,7 +29,7 @@ GitHub username, click **Open** to open the workspace.
 4. In the `find_bigfoot` folder, make a new file called `index.html`.
 5. Double-click `index.html` to open the file.
 
-### Add standard HTML template
+### Add Standard HTML Template
 
 Type the standard HTML template into `index.html`:
 
@@ -37,37 +37,37 @@ Type the standard HTML template into `index.html`:
 <!DOCTYPE html>
 <html>
     <head>
-    
+
     </head>
     <body>
-    
+
     </body>
 </html>
 ```
 
-### Open the live preview
+### Open the Live Preview
 
 1. Click **File > Save** to save the file.
-2. Click **Preview > Live Preview File** to open a live preview of the web
-page. Currently it is blank but that will change soon!
+2. Click **Preview > Live Preview File** to open a live preview of the web page.
+   Currently it is blank but that will change soon!
 
-### Get images for the game
+### Get Images for the Game
 
 1. Go to
-https://github.com/hackclub/hackclub/tree/master/workshops/find_bigfoot/assets
+   https://github.com/hackclub/hackclub/tree/master/workshops/find_bigfoot/assets
 2. Click on each image, then right click and **Save Image As** to save it to
-your computer.
+   your computer.
 3. Make a new folder called `assets` in your workspace `find_bigfoot` folder.
 4. Drag all the images you saved into the `assets` folder.
 
 Now you're all set with the images you'll need!
 
-## Creating the game
+## Creating the Game
 
 What needs to be in a game about finding Bigfoot? Well, it needs Bigfoot, and
 it needs to tell the player when Bigfoot has been found.
 
-### Taking Bigfoot out of his natural habitat
+### Taking Bigfoot Out of His Natural Habitat
 
 It is rumored that Bigfoot's natural habitat is a forest in the Pacific
 Northwest. What happens if you take him out of his natural habitat and stick
@@ -77,14 +77,11 @@ Luckily for you, we've done the hard part of wrangling him out of the jungle
 and putting him in captivity on the Internet, and Bigfoot can be found in your
 `assets` folder:
 
-```
-assets/bigfoot.png
-```
+    assets/bigfoot.png
 
 So now you have to put an **image** of him into your game, like you did in the
 Personal Website workshop. Remember how to do that? If you need a refresher,
-[look
-here](https://github.com/hackclub/hackclub/tree/master/workshops/personal_website#user-content-6-adding-an-image-with-the-image-tag).
+[look here](https://github.com/hackclub/hackclub/tree/master/workshops/personal_website#user-content-6-adding-an-image-with-the-image-tag).
 
 When you are done, you should see Bigfoot in the live preview, like this:
 
@@ -92,7 +89,7 @@ When you are done, you should see Bigfoot in the live preview, like this:
 
 And the HTML looks like [this](examples/index1.html).
 
-### Telling the player when Bigfoot has been found
+### Telling the Player When Bigfoot Has Been Found
 
 A game needs interaction in order to be a game, so let's display a pop-up box
 whenever the player clicks on Bigfoot, like this:
@@ -118,8 +115,8 @@ Aha! It looks like whenever you put `onclick="myFunction()"` on a tag such as
 whenever that tag is clicked on.
 
 We want our JavaScript code to display a pop-up box saying you've won. So now
-let's Google "[JavaScript pop-up
-box](https://www.google.com/search?q=javascript+popup+box)":
+let's Google
+"[JavaScript pop-up box](https://www.google.com/search?q=javascript+popup+box)":
 
 > ![](img/google_javascript_popup_box.png)
 
@@ -128,8 +125,8 @@ The first link takes you [here](http://www.w3schools.com/js/js_popup.asp):
 > ![](img/w3schools_popup.png)
 
 It looks like when you run `alert("I am an alert box!");` it opens a pop-up box
-showing the text inside the quotes. So if we put 2 and 2 together, our `img`
-tag should look like this:
+showing the text inside the quotes. So if we put 2 and 2 together, our `img` tag
+should look like this:
 
 ```html
 <img src="assets/bigfoot.png"
@@ -148,17 +145,15 @@ wrong. Cloud9 gives a couple hints:
 2. The quotation mark after `alert(` has a red underline.
 
 Here's what went wrong. We expected the quotation mark after `alert(` to
-indicate the beginning of the message, but what it actually did was indicate
-the end of the `onclick` attribute.
+indicate the beginning of the message, but what it actually did was indicate the
+end of the `onclick` attribute.
 
-Here's a little trick you can use to fix that. In JavaScript, you can use
-either `"` or `'` around text (the technical term is a
+Here's a little trick you can use to fix that. In JavaScript, you can use either
+`"` or `'` around text (the technical term is a
 [**string**](http://www.w3schools.com/js/js_strings.asp)). So change the inner
 quotes to single quotes, like this:
 
-```
     onclick="alert('Woohoo, you win! You found Bigfoot!');"
-```
 
 And now clicking Bigfoot should display the message.
 
@@ -168,8 +163,8 @@ At this point, `index.html` looks like [this](examples/index2.html).
 
 ![](img/celebrate_the_office.gif)
 
-Congratulations, you have a working game now! You're all done! Now you can go
-to [FGL](https://fgl.com) and sell your game to sponsors and make millions of
+Congratulations, you have a working game now! You're all done! Now you can go to
+[FGL](https://fgl.com) and sell your game to sponsors and make millions of
 dollars!
 
 ## Hiding Bigfoot
@@ -177,15 +172,13 @@ dollars!
 I guess you spotted the problem already. This game is way too easy! I mean,
 Bigfoot is just sitting there out in the open, begging for you to click on him.
 
-### Putting Bigfoot back in his natural habitat
+### Putting Bigfoot Back in His Natural Habitat
 
 That must be because we took him out of his natural habitat. You see, normally
 Bigfoot is hiding in a dense forest, making it hard to find him. Let's fix that
 by adding a **background image** of a forest. We have one in `assets`:
 
-```
-assets/forest.jpg
-```
+    assets/forest.jpg
 
 When you are making your own projects, you won't have workshops telling the
 solution to every step. So this time, let's practice your Googling skills and
@@ -195,35 +188,31 @@ this:
 
 ![](img/bigfoot_background.png)
 
-When you are done, or if you are simply really stuck, here is a [sample
-solution](examples/index3.html). (But there are other ways to add the
+When you are done, or if you are simply really stuck, here is a
+[sample solution](examples/index3.html). (But there are other ways to add the
 background image, so if your solution doesn't match mine, that's OK.)
 
-### Setting Bigfoot's location
+### Setting Bigfoot's Location
 
 That's much better! But the top left corner is a pretty boring place to hide
-Bigfoot. Can you figure out how to set Bigfoot's **position** to somewhere
-else? This one is harder, and may take some trial and error, but it's really
-worth the effort to see if you can figure it out yourself. Afterwards,
-Bigfoot's position will be somewhere in the middle of the forest, rather than
-the top left corner, like this:
+Bigfoot. Can you figure out how to set Bigfoot's **position** to somewhere else?
+This one is harder, and may take some trial and error, but it's really worth the
+effort to see if you can figure it out yourself. Afterwards, Bigfoot's position
+will be somewhere in the middle of the forest, rather than the top left corner,
+like this:
 
 ![](img/bigfoot_position.png)
 
-.
-
-.
-
-.
-
-.
-
+.  
+.  
+.  
+.  
 .
 
 OK, got it working? If you need help, try asking your neighbor or a club leader
 for hints.
 
-#### Sample solution
+#### Sample Solution
 
 Let's walk through the steps of one way of solving this.
 
@@ -251,8 +240,8 @@ element. So we type the code above into the `<style>` section, but typing `img`
 instead of `h2`.
 
 When we're done, `index.html` looks like [this](examples/index.html). But feel
-free to experiment with the `left` and `top` values to find a good place to
-hide Bigfoot.
+free to experiment with the `left` and `top` values to find a good place to hide
+Bigfoot.
 
 ### Celebrate!
 
@@ -261,7 +250,7 @@ hide Bigfoot.
 Now you have made a more interesting game. And more importantly, by practicing
 Googling stuff, you are on your way toward becoming an independent hacker.
 
-## Sharing with the community
+## Sharing with the Community
 
 Like with previous workshops, let's set up a link that you can share with
 others!
@@ -282,10 +271,9 @@ others!
    > Make sure to change `username` to your own username
 
 4. Post the link to [Ship It](https://shipit.hackclub.io) and
-[Slack](https://starthackclub.slack.com)!
+   [Slack](https://starthackclub.slack.com)!
 
 ## Hacking
 
 Now is the chance to make the game into your own! For inspiration, you can look
 [here](http://andrewd.50webs.com/bigfoot) to see what's possible.
-
