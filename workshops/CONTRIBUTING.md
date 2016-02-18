@@ -73,6 +73,33 @@ workshops like [Portfolio](portfolio) and [Dodge](dodge).
   use a tool we created, `jsbinctl`. Here is a link to
   [`jsbinctl`'s README](lib/jsbinctl/README.md)
 
+**Step 3: Check that you've done the following:**
+
+So you've finished writing a great workshop, and you're ready to make a pull
+request. Awesome! But before you do, make sure you've covered these items:
+
+- [ ] All filenames follow the right conventions, and the files are in the
+  right place. Check [this](../GUIDELINES.md) for guidelines.
+- [ ] The workshop has been added to the list in `workshops/README.md`.
+
+Great. Now, follow [these instructions](../CONTRIBUTING.md) on how to submit a
+pull request. After you've done that, make sure the CircleCI tests are all
+passing. If there are errors, click on "View Details" and see what the errors
+are. Common errors include:
+
+- **[Line number] is over 80 chars!** Each line must be wrapped at 80
+  characters.
+- **[Line number] has trailing whitespace!** Remove all whitespace at the end
+  of a line, with the exception of the [two-char
+  linebreak](https://github.com/hackclub/meta/blob/master/styleguides/markdown.md#general-conventions).
+- **[word] is spelled incorrectly!** If it's misspelled, correct the spelling
+  (it's case sensitive!). Otherwise, write a comment listing the words that
+  need to be added to our dictionary of accepted words.
+- **Other.** There are a lot of things that can be flagged, especially if you
+  haven't completely adhered to our
+  [styleguide](https://github.com/hackclub/meta/blob/master/styleguides/markdown.md),
+  so take a look at that if you're getting a lot of errors.
+
 **Intellectual property ownership of the workshop:**
 
 Under our [license](../LICENSE), your contributions will be under the Creative
