@@ -57,16 +57,16 @@ GitHub will give us a URL that we can share with the world.
 1. Go to https://github.com
 2. Click the green **"+ New repository"** button
 3. Under **"Repository name"** write your `USERNAME.github.io` except instead of
-   writing `USERNAME`, write your actual GitHub username. So if your username
-   is `alice1337`, then you would write `alice1337.github.io`. You **have** to
-   name your repository this in order for GitHub Pages to work correctly (we'll
-   talk more about GitHub Pages later)
+   writing `USERNAME`, write your actual GitHub username. So if your username is
+   `alice1337`, write `alice1337.github.io`. You **have** to name your
+   repository this in order for GitHub Pages to work correctly (we'll talk more
+   about GitHub Pages later)
 4. Make sure that you did the previous step correctly.
   - Is your **username** entered correctly
   - The repository name should end in **`.io`**
 5. After you are sure you entered in the repository name correctly, click the
    green "Create repository" button at the bottom.
-6. Then copy the **"HTTPS link"** at the top. It should look like this:
+6. Copy the **"HTTPS link"** at the top. It should look like this:
    `https://github.com/username/username.github.io.git`. You will need this link
    for the next step.
 
@@ -90,7 +90,7 @@ code. We'll be using Cloud9 to write all of our code in Hack Club.
    > ![](img/c9_add_git_url.gif)
 
 9. Make sure that you're using the **"Custom"** template
-10. Then, without changing anything else, scroll to the bottom and click the
+10. Without changing anything else, scroll to the bottom and click the
     green **"Create Workspace"** button
 
 You should now see a screen looks something like this:
@@ -124,7 +124,7 @@ To start, let's create a folder for our personal website:
 
 1. On the left side of the screen, right click the **`projects`** folder
 2. Click **"New Folder"**
-3. Then name the folder **`personal_website`**
+3. Name the folder **`personal_website`**
 
 > ![](img/c9_create_personal_website_folder.gif)
 
@@ -139,7 +139,7 @@ files**.
 
 1. Right click the **`personal_website`** folder you just created
 2. Click **"New File"**
-3. Then name the file **`index.html`**
+3. Name the file **`index.html`**
 4. Double click it to open it
 
 > ![](img/c9_create_index_dot_html.gif)
@@ -329,7 +329,7 @@ Therefore, if we want to change the **size** of the image, we use **CSS**!
 
 1. Right click the **`personal_website`** folder we had previously created
 2. Click **"New File"**
-3. Then name the file **`styles.css`** (again, all lowercase)
+3. Name the file **`styles.css`** (again, all lowercase)
 
 > Note:
 >
@@ -374,7 +374,7 @@ Now that we linked our CSS file to our HTML file, let's write some CSS to resize
 the image.
 
 1. Double click **`styles.css`** to open it
-2. Then add the below CSS code to resize the image by typing the following code
+2. Add the below CSS code to resize the image by typing the following code
    into the CSS file. Make sure to save after doing this. If nothing changed
    after saving, try refreshing the page.
 
@@ -488,13 +488,13 @@ we can share with anyone on the internet! We'll the previously mentioned GitHub
 Pages to do this.
 
 1. Open the terminal by pressing `alt + t` on the keyboard at the same time.
-   Then type in the following commands:
+   Type in the following commands:
   - `git add --all`
   - `git commit -m "Initial commit"`
   - `git push`
 2. GitHub will now ask for our username and password.
-  - Go ahead and enter the username and then press the enter.
-  - Then enter the password and press enter. _The characters won't show up on
+  - Go ahead and enter the username and press the enter.
+  - Enter the password and press enter. _The characters won't show up on
     the screen, but rest assured, they are still being typed._
 3. Now try to view the website by going to `USERNAME.github.io/personal_website`
    (make sure to replace `USERNAME` with our actual GitHub username)
@@ -514,7 +514,7 @@ Now that we have finished building a website
 2. Join your club's channel by asking your club leader for the name of the
    channel.
 3. Post the link to your website in your club's channel.
-4. Then, post the link to the
+4. Post the link to the
    [`#shipit`](https://starthackclub.slack.com/messages/shipit) channel to
    share it with everyone!
 
