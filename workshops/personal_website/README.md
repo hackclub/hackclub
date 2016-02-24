@@ -226,6 +226,9 @@ why it's called a **"Live Preview"**
 
 ### 6) Adding a Description
 
+Underneath on a new line, we'll add a description by typing `MVP hotline
+answerer`.
+
 > ![](img/html_add_description.gif)
 
 Notice that the blank line between the name and description isn't reflected on
