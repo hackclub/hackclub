@@ -492,7 +492,7 @@ Pages to do this.
   - `git add --all`
   - `git commit -m "Initial commit"`
   - `git push`
-2. GitHub will now ask for our username and password.
+2. GitHub will now ask for your username and password.
   - Go ahead and enter the username and press the enter.
   - Enter the password and press enter. _The characters won't show up on
     the screen, but rest assured, they are still being typed._
