@@ -214,33 +214,30 @@ Let's see what our website looks like so far:
 As you can see, the page is still blank. This is because we haven't added any
 **content** in the **`body`** section yet. Let's add some!
 
-### 5) Adding My Name to the Body of the HTML
+### 5) Adding a Name to the Body of the HTML
 
 Write your name in the **body** of the HTML page (between **`<body>`** and
-**`</body>`**). My name is `Drizzy Drake` so that's what I will write.
+**`</body>`**).
 
 > ![](img/html_add_name.gif)
 
-Notice that that the HTML code you write is immediately updated in the preview.
-That's why it's called a **"Live Preview"**
+Notice that that the HTML we write is immediately updated in the preview. That's
+why it's called a **"Live Preview"**
 
 ### 6) Adding a Description
 
-Underneath on a new line, write one short sentence about yourself. I love my job
-as a call center representative so I'm going to write `MVP hotline answerer`.
-
 > ![](img/html_add_description.gif)
 
-Notice that the blank line between my name and description isn't reflected on
-the web page. Adding blank lines or spaces between your words
-in HTML does will not change what your website looks like.
+Notice that the blank line between the name and description isn't reflected on
+the web page. Adding extra blank lines or spaces between words in HTML does will
+not change what the website looks like.
 
 To add spacing and other formatting, we need to use **HTML tags**.
 
 ### 7) Formatting the Heading with the Heading Tag
 
-If I want `Drizzy Drake` to be a heading of my webpage, I can put it inside of
-what's called a **heading tag**, like so:
+If we want `Drizzy Drake` to be a heading of the website, we can put it inside
+of what's called a **heading tag**, like so:
 
 ```html
 <h1>Drizzy Drake</h1>
@@ -249,12 +246,11 @@ what's called a **heading tag**, like so:
 **HTML tags**, like `h1`, tell the web browser how to interpret the text in
 between the tags.
 
-1. Make your name look like a heading by surrounding your name with an `h1`
-   tag.
+1. We can name look like a heading by surrounding it with an `h1` tag.
 
-    > Note: In Cloud9, as soon as you write  **`<h1>`**, it knows you will
-    > eventually want a **`<h1>`**, it just adds it for you. This is known
-    > as **autocomplete**.
+    > Note: In Cloud9, as soon as we write **`<h1>`**, it knows we eventually
+    > want a **`</h1>`** and will add it for us. This is known as
+    > **autocomplete**.
 
 > ![](img/html_format_name_as_h1_tag.gif)
 
@@ -266,14 +262,14 @@ two parts to the `h1` tag:
   before the tag's name
 
 Because the browser knows to interpret anything inside of an **`h1`** tag as a
-heading, it makes your name big and bold.
+heading, it makes the name big and bold.
 
 ### 5) Formatting the Description with a Paragraph Tag
 
 Similarly to how we told the browser to treat **`Drizzy Drake`** as a header, I
 want to tell the browser to treat **`MVP hotline answerer.`** as a paragraph.
 
-1. Put your description inside of a **paragraph tag** like so:
+1. Put the description inside of a **paragraph tag** like so:
 
 ```html
 <p>MVP hotline answerer</p>
@@ -293,13 +289,13 @@ Now let's add a GIF to our website.
 
      ![](img/google_images_show_gifs.gif)
 
-4. Click on the image you'd like to use and once it loads, right click on it and
-   select `Copy image address`
+4. Click on an image once it loads, right click on it and select `Copy image
+   address`
 
      ![](img/google_images_copy_gif_link.gif)
 
 5. Insert this code for **image tag** just underneath of the **opening `body`
-   tag**. Replace `IMAGE_LINK` with the link you just copied (hit `Ctrl+v` to
+   tag**. Replace `IMAGE_LINK` with the link we just copied (hit `Ctrl+v` to
    paste, or `Command+v` if you're on a Mac)
 
   ```html
@@ -324,14 +320,14 @@ called **CSS** that can help!
 **CSS** is the look and feel (**color**, **spacing**, and **size**).
 
 > **CSS** stands for **Cascading Style Sheet** and is sometimes referred to just
-> as a **style sheet** because it's a **"sheet"** that specifies all of your
-> **"styles"**.
+> as a **style sheet** because it's a **"sheet"** that specifies all of the
+> site's **"styles"**.
 
 Therefore, if we want to change the **size** of the image, we use **CSS**!
 
 ### 1) Creating the CSS File
 
-1. Right click the **`personal_website`** folder you had previously created
+1. Right click the **`personal_website`** folder we had previously created
 2. Click **"New File"**
 3. Then name the file **`styles.css`** (again, all lowercase)
 
@@ -379,8 +375,8 @@ the image.
 
 1. Double click **`styles.css`** to open it
 2. Then add the below CSS code to resize the image by typing the following code
-   into the CSS file. Make sure to save after doing this. If you don't see
-   anything change after saving, try refreshing your page.
+   into the CSS file. Make sure to save after doing this. If nothing changed
+   after saving, try refreshing the page.
 
     ```css
     img {
@@ -410,8 +406,9 @@ img {
 > **`px`** stands for **pixels**. **Pixels** are the tiny dots that make up a
 > computer screen. By setting the width to **200px**, we are saying we want
 > every image on the page to span the length of 200 pixels (which is about 2
-> inches on a screen). If you want to learn more about pixels, you can Google
-> ["What is a pixel?"](https://www.google.com/#q=what+is+a+pixel)
+> inches on a screen). Google search
+> ["What is a pixel?"](https://www.google.com/#q=what+is+a+pixel) to find out
+> more.
 
 ### 4) Centering the Body
 
@@ -452,7 +449,7 @@ is written inside the body tag.
 
 And because everything is in the **body** tag, everything is centered.
 
-> You can Google ["CSS text align"]
+> Google search ["CSS text align"]
 > (https://www.google.com/?gws_rd=ssl#q=css+text+align) to see what other
 > alignment options are available besides **`center`**
 
@@ -460,8 +457,8 @@ And because everything is in the **body** tag, everything is centered.
 
 Finally let's change the font of the page to **`Arial`**.
 
-Add another **CSS attribute** to the **`body` selector** so that your CSS code
-for your **`body`** looks like this:
+Add another **CSS attribute** to the **`body` selector** so that the CSS for the
+**`body`** looks like this:
 
   ```css
   body {
@@ -473,16 +470,16 @@ for your **`body`** looks like this:
 > ![](img/css_font_family_arial.gif)
 >
 > Not all computers have the same fonts on them. To figure out what fonts most
-> computers have on them, you can Google
+> computers have on them, Google search
 > ["web safe fonts"](https://www.google.com/#q=web+safe+fonts).
 
 ### 6) Celebrate!
 
 ![](img/celebrate_harry_potter.gif)
 
-W0000t! You've successfully added the CSS to this web page!
+W0000t! We've successfully added the CSS to this web page!
 
-Now to share your creation with the world.
+Now to share our creation with the world.
 
 ## Part V: Publishing
 
@@ -495,23 +492,22 @@ Pages to do this.
   - `git add --all`
   - `git commit -m "Initial commit"`
   - `git push`
-2. GitHub will now ask you for your username and password.
-  - Go ahead and enter your username and then press the enter.
-  - Then enter your password and press enter. _The characters won't show up on
-    the screen, but rest assured, you are still typing._
-3. Now try to view your website by going to
-   `USERNAME.github.io/personal_website` (make sure to replace `USERNAME` with
-   your actual GitHub username)
+2. GitHub will now ask for our username and password.
+  - Go ahead and enter the username and then press the enter.
+  - Then enter the password and press enter. _The characters won't show up on
+    the screen, but rest assured, they are still being typed._
+3. Now try to view the website by going to `USERNAME.github.io/personal_website`
+   (make sure to replace `USERNAME` with our actual GitHub username)
 
 #### 3) Celebrate!
 
 ![](img/celebrate_rush_hour.gif)
 
-Yes! Your website is now public on the internet!
+Yes! Our website is now public on the internet!
 
 ## Part VI: Sharing with the Community
 
-Now that you have finished building your website
+Now that we have finished building a website
 
 1. In a new tab, open and follow [these directions][slack] to signup for our
    Slack.
