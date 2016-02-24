@@ -54,8 +54,8 @@ Club member $100 worth of Twilio credit.
     > To get the promo code:
     >  - Club members: Ask your club leader for the Twilio promo code.
     >  - Club leaders: send an email to the email address
-    >    `jonathanleung1337@gmail.com` with your full name and school and ask
-    >    for the Twilio promo code. They will respond to you quickly.
+    >    `team+twilio@hackclub.com` with your full name and school and ask for
+    >    the Twilio promo code. They will respond to you quickly.
 
 11. After obtaining the promo code:
     1. Enter the promo code
