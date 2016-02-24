@@ -560,8 +560,9 @@ people's websites.
 Here are some additional resources that you can use to learn more about HTML &
 CSS.
 
-| Resource                                                                | Pros                                                                                   | Cons                                                                            |
-| ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| [HTML Dog](http://www.htmldog.com/guides/html/beginner/)                | Very beginner focused. If you're not sure which one of these to choose, pick this one. | Isn't too rich in content.                                                      |
-| [Free Code Camp](http://www.freecodecamp.com/map)                       | Interactive and very methodical.                                                       | Not made for you to learn to make something that you want to show your friends. |
-| [Team Tree House](https://teamtreehouse.com/library/html/introduction/) | Their videos are extremely comprehensive and thorough.                                  | It takes a _very_ long time to get through and are very passive.                |
+- [HTML Dog](http://www.htmldog.com/guides/html/beginner/): _Very beginner
+focused. If you're not sure which one to choose, pick this one._
+- [Free Code Camp](http://www.freecodecamp.com/map): _Interactive and very
+methodical._
+- [Team Tree House](https://teamtreehouse.com/library/html/introduction/):
+_Their videos are extremely comprehensive and thorough._
