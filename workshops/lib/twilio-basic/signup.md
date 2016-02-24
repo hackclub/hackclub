@@ -51,13 +51,7 @@ Club member $100 worth of Twilio credit.
 
     > ![](img/i_have_a_promo_code.png)
 
-    > To get the promo code:
-    >  - Club members: Ask your club leader for the Twilio promo code.
-    >  - Club leaders: send an email to the email address
-    >    `jonathanleung1337@gmail.com` with your full name and school and ask
-    >    for the Twilio promo code. They will respond to you quickly.
-
-11. After obtaining the promo code:
+11. The promo code is `HackClubRocks`:
     1. Enter the promo code
     2. Uncheck "Turn on automatic recharge"
 
