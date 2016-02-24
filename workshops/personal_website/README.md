@@ -564,5 +564,5 @@ CSS.
 focused. If you're not sure which one to choose, pick this one._
 - [Free Code Camp](http://www.freecodecamp.com/map): _Interactive and very
 methodical._
-- [Team Tree House](https://teamtreehouse.com/library/html/introduction/):
-_Their videos are extremely comprehensive and thorough._
+- [Treehouse](https://teamtreehouse.com/library/html/introduction/): _Their
+videos are extremely comprehensive and thorough._
