@@ -458,7 +458,9 @@ And because everything is in the **body** tag, everything is centered.
 
 ### 5) Changing the Font
 
-Finally let's change the font of the page to **`Arial`**.
+Finally let's change the font of the page. We'll change our page to `"Arial"`,
+but feel free to use another (e.g., `Helvetica`, `Comic Sans`, or `"Times New
+Roman"`).
 
 Add another **CSS attribute** to the **`body` selector** so that your CSS code
 for your **`body`** looks like this:
