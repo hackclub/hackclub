@@ -544,7 +544,7 @@ people's websites.
 - [Alyssa Sun](http://output.jsbin.com/fopoxe)
 - [Rebecca Jourard](https://mnefertiti.github.io/personalwhale/)
 - [John Cena's](http://nguyenbrian.github.io/john-cenas-personal-website/)
-  (created by, Brian Nguyen)
+  (created by Brian Nguyen)
 - [Jevin Sidhu](http://jevinsidhu.com/)
 - [Harrison Shoebridge](https://harrison.tech/zero-cool/)
 - [Chaoyi Zha](https://cydrobolt.com/)
