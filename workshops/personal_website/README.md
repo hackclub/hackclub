@@ -406,12 +406,9 @@ img {
 - **Select** every **`img` tag** on this HTML page and set the **width** to be
   **`200px`**
 
-> **`px`** stands for **pixels**. **Pixels** are the tiny dots that make up a
-> computer screen. By setting the width to **200px**, we are saying we want
-> every image on the page to span the length of 200 pixels (which is about 2
-> inches on a screen). Google search
-> ["What is a pixel?"](https://www.google.com/#q=what+is+a+pixel) to find out
-> more.
+> `px` stands for **pixels**, a unit of size on the screen. If you want to learn
+> more about pixels, Google search
+> ["What is a pixel?"](https://www.google.com/#q=what+is+a+pixel)
 
 ### 4) Centering the Body
 
