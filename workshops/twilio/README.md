@@ -15,7 +15,7 @@ very powerful programs with minimal code.
  In this workshop, you probably won't understand how it all works and that's
  totally cool. Your objective is to learn how to make things happen.
 
-## Part A: Setup
+## Part 1: Setup
 
 ### 1) Use Google Chrome
 
@@ -115,7 +115,7 @@ explicitly include it with a **`script`** tag, like so:
 
    ![](img/add_main_js_script_tag.gif)
 
-## Part II: Writing Your First Line of Twilio Code
+## Part 2: Writing Your First Line of Twilio Code
 
 ### 1) Writing the Code to Call Your Phone
 
@@ -135,7 +135,7 @@ explicitly include it with a **`script`** tag, like so:
 
 ### 2) Running the JavaScript code
 
-Our the code in our `main.js` file will now run every time the `index.html` page
+The code in our `main.js` file will now run every time the `index.html` page
 is open:
 
 1. Open `index.html`
