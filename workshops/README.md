@@ -62,9 +62,9 @@ fundamentals of game development.
 
 ## Contributing to the Workshops
 
-Interested in contributing to our workshops? [Look here](CONTRIBUTING.md). Our
-planned workshop progression is outlined in [`ARC.md`](ARC.md). Beginners
-welcome!
+Interested in contributing to our workshops? Look [here](GUIDELINES.md) and
+[here](CONTRIBUTING.md). Our planned workshop progression is outlined in
+[`ARC.md`](ARC.md). Beginners welcome!
 
 [personal_website]: personal_website/README.md
 [twilio]: twilio/README.md
