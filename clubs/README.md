@@ -22,7 +22,7 @@ _A step-by-step guide by the Hack Club community._
   - [Wait for Hackers to Arrive](#wait-for-hackers-to-arrive)
   - [Announcements](#announcements)
   - [Example Demo](#example-demo)
-  - [Free-Form Hacking](#free-form-hacking)
+  - [Hacking Time](#hacking-time)
   - [Demos](#demos)
 - [Meeting Templates](#meeting-templates)
   - [Slideshow Presentations](#slideshow-presentations)
@@ -345,11 +345,17 @@ meeting. Make sure to [customize it](#slideshow-presentations).
 
 Here's our suggested schedule:
 
-1. Wait for hackers to arrive (5 minutes)
-2. Announcements (5 minutes)
-3. Example demo (5 minutes)
-3. Free-form hacking (45 minutes)
-4. Demos (30 minutes)
+1. [Wait for hackers to arrive (5 minutes)][1]
+2. [Announcements (5 minutes)][2]
+3. [Example demo (5 minutes)][3]
+4. [Hacking Time (45 minutes)][4]
+5. [Demos (30 minutes)][5]
+
+[1]: #wait-for-hackers-to-arrive
+[2]: #announcements
+[3]: #example-demo
+[4]: #hacking-time
+[5]: #demos
 
 #### Wait for Hackers to Arrive
 
@@ -386,7 +392,7 @@ use it. [Click here][demo] for an example of what a project demo looks like
 
 [demo]: https://www.youtube.com/watch?v=MY01d647S9Y
 
-#### Free-Form Hacking
+#### Hacking Time
 
 This'll basically be the same as the free-form hacking section in the first
 meeting. Members will continue building their websites. Your role is to foster
