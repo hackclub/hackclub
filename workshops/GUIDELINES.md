@@ -33,14 +33,14 @@ mentality where you just randomly decide to code up a project over the weekend
 (for fun!) and brag about it to friends.
 
 For example, when you're making your own project over the weekend, you don't
-have a workshop page in front of you telling you how to solve your problem step
-by step. So in our workshops, we try to teach people step-by-step how to Google
-things when they're stuck. (Yeah I know, most of the workshops still don't do
-this. If you want to help improve them, submit a pull request!) Likewise, if
-there's a bug in your code, you have to know how to debug it by yourself. In
-other words, we want people to reach the point where they *won't need*
-workshops to continue the learning process, and this needs a different kind of
-approach than your typical learn-how-to-code website.
+have a workshop page in front of you telling you how to solve your problem
+step-by-step. So in our workshops, we try to teach people step-by-step how to
+Google things when they're stuck. (Yeah I know, most of the workshops still
+don't do this. If you want to help improve them, submit a pull request!)
+Likewise, if there's a bug in your code, you have to know how to debug it by
+yourself. In other words, we want people to reach the point where they *won't
+need* workshops to continue the learning process, and this needs a different
+kind of approach than your typical learn-how-to-code website.
 
 Another issue unique to Hack Club is that many school computers are in a
 locked-down configuration that prevents students from installing software, such
