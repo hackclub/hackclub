@@ -52,14 +52,16 @@ the task and implement it.
 1. All contributions should be made through your own fork
    ([Need help forking a repository?][fork]). Once you have your own fork set up
    you can begin making your changes on it.
-2. Check out a branch from your fork that describes the change being made. Make
+2. If you don't want to clone the entire repo, you can do a shallow clone like
+   so : `git clone --depth 1 <repository-link>`.
+3. Check out a branch from your fork that describes the change being made. Make
    sure you only include commits in this branch that are related to the branch's
    feature.
-3. After you have made your changes and pushed them onto your GitHub fork, you
+4. After you have made your changes and pushed them onto your GitHub fork, you
    can create a Pull Request
    ([Want help submitting a Pull Request?][pull_request]). If the Pull Request
    resolves an issue, be sure to have the issue number in the description.
-4. Wait for your PR to be reviewed by one of the core contributors. We'll assess
+5. Wait for your PR to be reviewed by one of the core contributors. We'll assess
    for following the [contribution guidelines](GUIDELINES.md) and if it is
    intended to solve an issue, how well it does so.
 
