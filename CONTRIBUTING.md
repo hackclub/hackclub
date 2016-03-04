@@ -52,8 +52,12 @@ the task and implement it.
 1. All contributions should be made through your own fork
    ([Need help forking a repository?][fork]). Once you have your own fork set up
    you can begin making your changes on it.
-2. If you don't want to clone the entire repo, you can do a shallow clone like
-   so : `git clone --depth 1 <repository-link>`.
+2. If you don't want to clone the entire repo, you can do a shallow clone. A 
+   shallow clone will download only the latest changes, i.e., it will not 
+   download the entire history. You can do a shallow clone like so :
+   `git clone --depth 1 <repository-link>`. The `<repository-link>` is the 
+   link at the top of the your forked repository, it will look something 
+   like `https://github.com/<yourusername>/hackclub.git`.
 3. Check out a branch from your fork that describes the change being made. Make
    sure you only include commits in this branch that are related to the branch's
    feature.
