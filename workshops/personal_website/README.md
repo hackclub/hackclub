@@ -106,7 +106,7 @@ Now we're ready to start the website!
 ### 1) Creating the HTML file
 
 We'll start by making an `index.html` file. Right click the sidebar, select
-"New File," and name the file "`index.html`."
+"New File," and name the file `index.html`.
 
 Now we'll add the basic HTML template. Type the following into `index.html`:
 
@@ -228,7 +228,7 @@ like colors, spacing, and more.
 ### 1) Creating the CSS File
 
 We'll now make an `styles.css` file. Right click the sidebar, select "New
-File," and name the file "`styles.css`."
+File," and name the file `styles.css`.
 
 This is called an external style sheet because the CSS file is external to the
 HTML file (i.e., the stylesheet is not inside the HTML file).
