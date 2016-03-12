@@ -1,6 +1,6 @@
 # Personal Website
 
-By the end of this workshop, you will learn to make your own personal website.
+Prophet Orpheus is here to guide you to making your own personal website.
 It will look something like this:
 
 ![](img/final_screenshot.png)
@@ -8,7 +8,7 @@ It will look something like this:
 Open the [live demo][final_live_demo]. See the [final code][final_code]. This
 workshop will take around 45 minutes.
 
-[final_live_demo]: https://cdn.rawgit.com/anonymous/7a5a6cc614052c8c810f/raw/9419c5a5a4a871da091a49844ffbc46f434c01c8/index.html
+[final_live_demo]: https://prophetorpheus.github.io
 [final_code]: http://jsbin.com/gist/7a5a6cc614052c8c810f?html,output
 
 **Table of contents:**
@@ -53,12 +53,15 @@ us a URL that we can share with the world.
    `alice1337`, write `alice1337.github.io`. You have to name your repository
    this in order for GitHub Pages to work correctly (we'll talk more about
    GitHub Pages later)
+
+   > ![](img/gh_create_new_repo.png)
+
 4. After you've double checked that your repository is correctly named, click
    the green "Create repository" button at the bottom.
 5. Yay! You've created your very first repository! Now, copy the "HTTPS link"
-   at the top. It should look like this:
-   `https://github.com/USERNAME/USERNAME.github.io.git`. You will need this
-   link for the next step.
+   at the top. You will need this link for the next step.
+
+   > ![](img/gh_copy_new_repo_link.png)
 
 ### 3) Sign Up for Cloud9
 
@@ -67,16 +70,21 @@ code we'll write in Hack Club.
 
 1. In a new tab, open https://c9.io/
 2. In the top right hand corner, click the button that looks like this:
-   ![](img/c9_gh_icon.png)
+
+   > ![](img/c9_gh_icon.png)
+
 3. Click the green "Authorize application" button
 4. If there is a popup that asks for your email, go ahead and enter it
 5. Click the gray box that says "Create a new workspace"
 6. Set the "Workspace name" to `projects`
+
+   > ![](img/c9_name_workspace.png)
+
 7. Make sure your workshop is set to "Public"
 8. Under "Clone from Git or Mercurial URL", paste the HTTPS Link that
    you copied from your GitHub repository
 
-   > ![](img/c9_add_git_url.gif)
+   > ![](img/c9_clone_from_existing.png)
 
 9. Make sure that you're using the "Custom" template
 10. Without changing anything else, scroll to the bottom and click the
@@ -84,7 +92,7 @@ code we'll write in Hack Club.
 
 You should now see a screen looks something like this:
 
-![](img/c9_signup_ide_loaded.png)
+![](img/c9_ide_loaded.png)
 
 > Note:
 >
@@ -107,6 +115,8 @@ Now we're ready to start the website!
 
 We'll start by making an `index.html` file. Right click the sidebar, select
 "New File," and name the file `index.html`.
+
+![](img/c9_create_index_html.gif)
 
 Now we'll add the basic HTML template. Type the following into `index.html`:
 
@@ -143,6 +153,8 @@ Let's check out what our HTML file looks like in Live Preview! First, we'll
 save the file by clicking "File" → "Save" (or use the shortcut CTRL+s /
 Command+s). Then, preview what the website looks like by clicking "Preview" →
 "Live Preview File"
+
+![](img/c9_live_preview.gif)
 
 As you can see, the page is blank. This is because we haven't added anything to
 the `body` section yet. Let's add some content!
@@ -214,6 +226,8 @@ heading, and my code looks like this:
 </html>
 ```
 
+![](img/c9_index_html.png)
+
 Now, your image may either be too big, or too small. Fret not. CSS will allow
 you to manipulate the styling of your page in all your needs.
 
@@ -229,6 +243,8 @@ like colors, spacing, and more.
 
 We'll now make an `styles.css` file. Right click the sidebar, select "New
 File," and name the file `styles.css`.
+
+![](img/c9_create_styles_css.gif)
 
 This is called an external style sheet because the CSS file is external to the
 HTML file (i.e., the stylesheet is not inside the HTML file).
@@ -315,6 +331,14 @@ body {
     font-family: "Arial";
 }
 ```
+
+Here is the transformation that your stylesheet will have undergone at the end of your endeavors:
+
+![](img/c9_css_progression.gif)
+
+Ah, it is truly beautiful to behold.
+
+![](img/celebrate_harry_potter.gif)
 
 ## Part IV: Publishing
 
