@@ -9,7 +9,7 @@ Open the [live demo][final_live_demo]. See the [final code][final_code]. This
 workshop will take around 45 minutes.
 
 [final_live_demo]: https://prophetorpheus.github.io
-[final_code]: http://jsbin.com/gist/7a5a6cc614052c8c810f?html,output
+[final_code]: examples/
 
 **Table of contents:**
 
