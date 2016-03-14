@@ -20,7 +20,6 @@ readable, consistent files using Markdown.
 
 ## General Conventions
 
-- Wrap all lines at 80 characters.
 - Denote **bold** text using the asterisk format `**bold text**`.
 - Denote _italic_ text using the underscore format: `_emphasized text_`.
 - Force a linebreak by ending a line with two spaces, no more.
@@ -32,7 +31,6 @@ readable, consistent files using Markdown.
 - Headers must use the `atx-style` with no closing `#` character `# Big heading`.
 - Include a space between the `#` and the text of the header `# Good heading`
   `#Bad heading`.
-- Headers spanning more than 80 characters should be reevaluated.
 - Headers must be preceded and followed by a blank line except at the beginning
   of a file.
 - Headers must follow the
@@ -102,13 +100,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     rule inwhich all checkbox must indent to the space after the `-`.
 ```
 
-- List item lines exceeding 80 characters should, when wrapped, align vertically
-  with the beginning of the preceding line's text.
-
-```
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam dui vel
-  posuere facilisis.
-```
 
 ## Code
 
@@ -140,14 +131,14 @@ Tables should follow the following example's format:
 
 ## Horizontal rules
 
-Use hyphens for horizontal rules. Horizontal rules should span 80 characters and
+Use hyphens for horizontal rules. Horizontal rules should span 3 characters and
 must be preceded and followed by a blank line, unless at the beginning or end of
 a file.
 
 ```
 Lorem ipsum dolor sit amet.
 
--------------------------------------------------------------------------------
+---
 
 Sed congue iaculis.
 ```
