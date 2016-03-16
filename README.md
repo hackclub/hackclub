@@ -2,9 +2,7 @@
 
 Hack Club is the open-source movement of student-led high school coding clubs.
 
-Hack Clubs are after-school communities at high schools where people build
-things together. This repository contains the tools for starting and leading
-great clubs.
+Hack Clubs are after-school communities at high schools where people build things together. This repository contains the tools for starting and leading great clubs.
 
 [![Slack Status](https://slack.hackclub.com/badge.svg)](https://slack.hackclub.com)
 [![Build Status](https://circleci.com/gh/hackclub/hackclub.svg?style=shield)](https://circleci.com/gh/hackclub/hackclub)
@@ -28,26 +26,15 @@ Quick Hack Club links:
 
 Contributions are welcome!
 
-If you need any help, please contact us at team@hackclub.com or on our
-[Slack](SLACK.md).
+If you need any help, please contact us at team@hackclub.com or on our [Slack](SLACK.md).
 
-1. Check out our [public issues board][0]. If your issue isn't on the board,
-   [open a new one][1].
-2. Pick an issue that nobody has claimed and start working on it. First time
-   contributors should look for the "[first-timers-only][2]" label on issues.
-3. Fork the project ([Need help forking a project?][3]). You'll do all of your
-   work on your forked copy.
-4. If you don't want to clone the entire repo, you can do a shallow clone. A
-   shallow clone will download only the latest changes, i.e., it will not
-   download the entire history. You can do a shallow clone like so : `git clone
-   --depth 1 https://github.com/<yourusername>/hackclub.git`.
-5. Create a branch specific to the issue or feature you are working on. Push
-   your work on that branch ([Need help with branching?][4]).
-6. Name the branch something like `fixes-xxx-issue` or `add-xxx-feature` where
-   `xxx` is a short description of the changes or feature you are adding.
-7. Your changes should follow our [styleguides][5].
-8. Once your code is ready, submit a pull request from your branch to Hack
-   Club's `master` branch. We'll do a quick review and give you feedback.
+1. Check out our [public issues board][0]. If your issue isn't on the board, [open a new one][1].
+2. Pick an issue that nobody has claimed and start working on it. First time contributors should look for the "[first-timers-only][2]" label on issues.
+3. Fork the project ([Need help forking a project?][3]). You'll do all of your work on your forked copy.
+4. Create a branch specific to the issue or feature you are working on. Push your work on that branch ([Need help with branching?][4]).
+5. Name the branch something like `fixes-xxx-issue` or `add-xxx-feature` where `xxx` is a short description of the changes or feature you are adding.
+6. Your changes should follow our [styleguides][5].
+7. Once your code is ready, submit a pull request from your branch to Hack Club's `master` branch. We'll do a quick review and give you feedback.
 
 [0]: https://github.com/hackclub/hackclub/issues
 [1]: https://github.com/hackclub/hackclub/issues/new
@@ -58,11 +45,9 @@ If you need any help, please contact us at team@hackclub.com or on our
 
 ## Banners
 
-Now you can add a Hack Club banner to your club or personal website! Just copy
-and paste one of these snippets of code into your site's HTML.
+Now you can add a Hack Club banner to your club or personal website! Just copy and paste one of these snippets of code into your site's HTML.
 
-You can also change the size or placement of your banner by editing the CSS in
-the style attribute of the image.
+You can also change the size or placement of your banner by editing the CSS in the style attribute of the image.
 
 | Image | HTML Snippet |
 | ----- | ------------ |
@@ -81,7 +66,4 @@ the style attribute of the image.
 
 ## License
 
-TL;DR: All content is released under the
-[Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)
-license. All code is released under the [MIT License](MIT_LICENSE). For the
-license's full text and attributions, please see [`LICENSE`](LICENSE).
+TL;DR: All content is released under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license. All code is released under the [MIT License](MIT_LICENSE). For the license's full text and attributions, please see [`LICENSE`](LICENSE).
