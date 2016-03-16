@@ -102,7 +102,7 @@ Twine's macros generally return text. However, the text may be altered, such as 
 
 In our case, we made the text just plain red. However, you can try experimenting with colors. Try combining a couple different colors to see what you get.
 
-If you looked at the documentation previously, you'll also noticed it mentioned we can use a "CSS-style color" instead. We'll be talking about CSS in a later workshop, but for now, you can use a [color picker like this one](img/http://www.colorpicker.com/), pick out a color, copy the letters and numbers above the color picker next to the hashtag, and put it in the color like this: `(color: "#90C3D4")(My custom color!)` Notice that we had to add double-quotes around the letters and numbers, and also add the `#` symbol (also known as an "octothorpe") before it. Again, we'll be talking more about why this is later, but just note that you'll need to do this.
+If you looked at the documentation previously, you'll also noticed it mentioned we can use a "CSS-style color" instead. We'll be talking about CSS in a later workshop, but for now, you can use a [color picker like this one](http://www.colorpicker.com/), pick out a color, copy the letters and numbers above the color picker next to the hashtag, and put it in the color like this: `(color: "#90C3D4")(My custom color!)` Notice that we had to add double-quotes around the letters and numbers, and also add the `#` symbol (also known as an "octothorpe") before it. Again, we'll be talking more about why this is later, but just note that you'll need to do this.
 
 Before we finish up, let's test our story again, to make sure we got the syntax right. If everything loads correctly, let's also do one more thing: Press the "Debug View" button in the bottom right of your story preview.
 
@@ -118,13 +118,24 @@ To finish up, we need to do one last thing: Save our stories! Twine does automat
 
 ![Twine dashboard with options menu open on story created](img/dashboard-2.png)
 
-Twine will automatically download your story into an HTML file. You'll want to move this somewhere safe, such as your Documents on a network drive at school, onto a service like Dropbox or Google Drive, or onto a USB flash drive. You can also open this HTML file anywhere, whether you're online or offline, and you can play through your story. If you wish to edit this story again at a later date, simply go to the Twine dashboard, and click the "Import From File" button underneath the "+ Story" button. Then, find the HTML file that Twine saved for you, and upload it. Twine will recognize it, and add it back to your dashboard. You'll want to save your story to your computer whenever you're done editing it, such as at the end of a meeting. Your computer may save your progress automatically without doing this, but to err on the side of caution, always save the story to a local file.
+Twine will automatically download your story into an HTML file. You can add it to your personal website, by creating a new directory (name it `twine_workshop`) in the Cloud9 sidebar of your projects workspace, and then dragging the downloaded file into that directory. Then, go down to Cloud9's console area, and add your new directory and Twine story to your repo.
+
+If you recall, the steps to do this with git are as follows:
+
+1. `git add -A` to add all changes.
+2. `git commit -m 'Add Twine story'` to make a commit with the message 'Add Twine story.'
+3. `git push` to push that commit to your `USERNAME.github.io` repo.
+4. You may need to authenticate as well. (Remember, characters won't show up when typing your password, but rest assured, they are being typed!)
+
+Now you can view it at `USERNAME.github.io/twine_workshop/STORYNAME.html`!
+
+You can also open your downloaded file anywhere, whether you're online or offline, and be able to play through your story. If you wish to edit this story again at a later date, simply go to the Twine dashboard, and click the "Import From File" button underneath the "+ Story" button. Then, upload your downloaded file. Twine will recognize it, and add it back to your dashboard. You'll want to save your story to your computer whenever you're done editing it, such as at the end of a meeting. Your computer may save your progress automatically without doing this, but to err on the side of caution, always save the story to a local file.
 
 ## Wrap-up
 
-Great work! You've made your first computer science creation. It may not have seemed like you did a lot of programming, but through this workshop, you were introduced to some fundamental basics, such as the idea of using syntax to tell a computer to something, or using macros to return a result from an input. Here are some ideas for how you could expand your story:
+Great work! You've made your first computer science creation. It may not have seemed like you did a lot of programming, but through this workshop, you were introduced to some fundamental basics, such as the idea of using syntax to tell a computer to do something, or using macros to return a result from an input. Here are some ideas for how you could expand your story:
 
 * Try using some different macros! [There's a full list of them here](http://twine2.neocities.org/#macro_set), all with explanations and example usages. Some of the terminology may be new to you, but try researching what you don't know.
 * The documentation linked to in the last point also has some other text formatting that we didn't go over here. Try experimenting with those.
 
-Overall, by the end of this meeting, you should have a solid story written. It doesn't have to be super long or complicated, but you should be proud of it! In our next workshop, we'll be using the stories we wrote, and coding the basic functionality of Twine ourselves using HTML. Until next time!
+Overall, by the end of this meeting, you should have a solid story written. It doesn't have to be super long or complicated, but you should be proud of it! Until next time!
