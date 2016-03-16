@@ -86,29 +86,29 @@ As mentioned in the formatting documentation linked previously, Twine has macros
 
 In other words: A macro is another piece of Twine's syntax that can be used for content that is not pre-defined, or "dynamically generated." In general, macros return some sort of result. Macros are also very similar to what's known as a "function" in other programming languages. They technically have some differences, but for our purposes, they are equivalent.
 
-Twine's macros generally return text. However, the text may be altered, such as being a different colour, or or it may be dynamically generated, such as showing the current time. As you can see from [this list of macros](http://twine2.neocities.org/#macro_set), there are a lot of macros that you can use, and some of them are quite advanced. We're going to try using a pretty simple one, that changes the colour of the text. [Here's the documentation on this macro.](http://twine2.neocities.org/#macro_text-colour) It's called `text-colour`, but it's also called just `colour` for ease of use. Here's their example usage:
+Twine's macros generally return text. However, the text may be altered, such as being a different color, or or it may be dynamically generated, such as showing the current time. As you can see from [this list of macros](http://twine2.neocities.org/#macro_set), there are a lot of macros that you can use, and some of them are quite advanced. We're going to try using a pretty simple one, that changes the color of the text. [Here's the documentation on this macro.](http://twine2.neocities.org/#macro_text-colour) It's called `text-colour`, but it's also called just `color` for ease of use. Here's their example usage:
 
 ```
-(colour: red + white)[Pink]
+(color: red + white)[Pink]
 ```
 
  Let's break down this syntax into two parts:
 
- * `(colour: red + white)` - We start with a regular bracket, and then type out the word `colour`, followed the colon. This is the macro call, which tells Twine that we want to do. After the colon, we put our colour. In their case, they've highlighted that Twine will combine colours if you use a `+` symbol in between colour names, so you can have a wide range of colours. We'll experiment with that in a second. After the last colour, we put a closing bracket, to show we've finished the macro call.
+ * `(color: red + white)` - We start with a regular bracket, and then type out the word `color`, followed the colon. This is the macro call, which tells Twine that we want to do. After the colon, we put our color. In their case, they've highlighted that Twine will combine colors if you use a `+` symbol in between color names, so you can have a wide range of colors. We'll experiment with that in a second. After the last color, we put a closing bracket, to show we've finished the macro call.
 
- * `[Pink]` After that, there's a single square bracket, followed by the word "Pink," and then a closing square bracket. This is the text we want Twine to colour, which in this case is `red + white`, which makes pink. Any amount of text can go in-between the opening and closing square brackets. Let's add this to our story:
+ * `[Pink]` After that, there's a single square bracket, followed by the word "Pink," and then a closing square bracket. This is the text we want Twine to color, which in this case is `red + white`, which makes pink. Any amount of text can go in-between the opening and closing square brackets. Let's add this to our story:
 
- ![Passage editor with colour macro](img/editor-5.png)
+ ![Passage editor with color macro](img/editor-5.png)
 
-In our case, we made the text just plain red. However, you can try experimenting with colours. Try combining a couple different colours to see what you get.
+In our case, we made the text just plain red. However, you can try experimenting with colors. Try combining a couple different colors to see what you get.
 
-If you looked at the documentation previously, you'll also noticed it mentioned we can use a "CSS-style colour" instead. We'll be talking about CSS in a later workshop, but for now, you can use a [colour picker like this one](img/http://www.colorpicker.com/), pick out a colour, copy the letters and numbers above the colour picker next to the hashtag, and put it in the colour like this: `(colour: "#90C3D4")(My custom colour!)` Notice that we had to add double-quotes around the letters and numbers, and also add the `#` symbol (also known as an "octothorpe") before it. Again, we'll be talking more about why this is later, but just note that you'll need to do this.
+If you looked at the documentation previously, you'll also noticed it mentioned we can use a "CSS-style color" instead. We'll be talking about CSS in a later workshop, but for now, you can use a [color picker like this one](img/http://www.colorpicker.com/), pick out a color, copy the letters and numbers above the color picker next to the hashtag, and put it in the color like this: `(color: "#90C3D4")(My custom color!)` Notice that we had to add double-quotes around the letters and numbers, and also add the `#` symbol (also known as an "octothorpe") before it. Again, we'll be talking more about why this is later, but just note that you'll need to do this.
 
 Before we finish up, let's test our story again, to make sure we got the syntax right. If everything loads correctly, let's also do one more thing: Press the "Debug View" button in the bottom right of your story preview.
 
 ![Story preview with debug view on](img/preview-2.png)
 
-The debug view will show where you're using macros, amongst other things. You'll notice your coloured text now shows the macro next to it. However, you'll also notice your link has a macro next to it, that says `(link-goto:)`. What does this mean? Well, when you use the double square bracket syntax to define a link to another passage, you're actually using the shorthand for the `link-goto` macro!
+The debug view will show where you're using macros, among other things. You'll notice your colored text now shows the macro next to it. However, you'll also notice your link has a macro next to it, that says `(link-goto:)`. What does this mean? Well, when you use the double square bracket syntax to define a link to another passage, you're actually using the shorthand for the `link-goto` macro!
 
 You could create all of your links by typing `(link-goto: "Display text", "Passage title")`, but we used the shorthand with the double square brackets and `->` arrow because it's a lot quicker to do. The Twine passage editor also doesn't automatically create a new passage if you use the full macro syntax. In general, many things in programming have shortcuts to make them easier. These are sometimes called "abstractions", as they mask over what might take a lot of code with something much simpler.
 
@@ -118,7 +118,7 @@ To finish up, we need to do one last thing: Save our stories! Twine does automat
 
 ![Twine dashboard with options menu open on story created](img/dashboard-2.png)
 
-Twine will automatically download your story into a .html file. You'll want to move this somewhere safe, such as your Documents on a network drive at school, onto a service like Dropbox or Google Drive, or onto a USB flash drive. You can also open this .html file anywhere, whether you're online or offline, and you can play through your story. If you wish to edit this story again at a later date, simply go to the Twine dashboard, and click the "Import From File" button underneath the "+ Story" button. Then, find the .html file that Twine saved for you, and upload it. Twine will recognize it, and add it back to your dashboard. You'll want to save your story to your computer whenever you're done editing it, such as at the end of a meeting. Your computer may save your progress automatically without doing this, but to err on the side of caution, always save the story to a local file.
+Twine will automatically download your story into an HTML file. You'll want to move this somewhere safe, such as your Documents on a network drive at school, onto a service like Dropbox or Google Drive, or onto a USB flash drive. You can also open this HTML file anywhere, whether you're online or offline, and you can play through your story. If you wish to edit this story again at a later date, simply go to the Twine dashboard, and click the "Import From File" button underneath the "+ Story" button. Then, find the HTML file that Twine saved for you, and upload it. Twine will recognize it, and add it back to your dashboard. You'll want to save your story to your computer whenever you're done editing it, such as at the end of a meeting. Your computer may save your progress automatically without doing this, but to err on the side of caution, always save the story to a local file.
 
 ## Wrap-up
 
