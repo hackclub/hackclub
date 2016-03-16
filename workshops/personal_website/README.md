@@ -1,6 +1,6 @@
 # Personal Website
 
-By the end of this workshop, you will learn to make your own personal website.
+Prophet Orpheus is here to guide you to making your own personal website.
 It will look something like this:
 
 ![](img/final_screenshot.png)
@@ -8,94 +8,91 @@ It will look something like this:
 Open the [live demo][final_live_demo]. See the [final code][final_code]. This
 workshop will take around 45 minutes.
 
-[final_live_demo]: https://cdn.rawgit.com/anonymous/7a5a6cc614052c8c810f/raw/9419c5a5a4a871da091a49844ffbc46f434c01c8/index.html
-[final_code]: http://jsbin.com/gist/7a5a6cc614052c8c810f?html,output
-
-**On the way, you will:**
-
-- Begin to learn the programming languages **HTML** & **CSS**
-- Setup the coding tools **GitHub**, **Cloud9**, **Slack**, which you will use
-  throughout your time in Hack Club
+[final_live_demo]: https://prophetorpheus.github.io
+[final_code]: examples/
 
 **Table of contents:**
 
 - [Part I: Setup](#part-i-setup)
-- [Part II: Create the Project Folder](#part-ii-create-the-project-folder)
-- [Part III: HTML](#part-iii-html)
-- [Part IV: CSS](#part-iv-css)
-- [Part V: Publishing](#part-v-publishing)
-- [Part VI: Sharing with the Community](#part-vi-sharing-with-the-community)
-- [Part VII: Hacking](#part-vii-hacking)
+- [Part II: The HTML File](#part-ii-the-html-file)
+- [Part III: The CSS File](#part-iii-the-css-file)
+- [Part IV: Publishing](#part-iv-publishing)
+- [Part V: Sharing with the Community](#part-v-sharing-with-the-community)
+- [Part VI: Hacking](#part-vi-hacking)
 
 ## Part I: Setup
+
+We'll be setting up GitHub and Cloud9 in this section.
 
 ### 1) Sign Up for GitHub
 
 GitHub is a website used by millions of programmers to collaborate on code.
-Think Dropbox, but for code. We'll be using it to store and manage our code in
-Hack Club.
+We'll be using it to store and manage our code in Hack Club.
 
 1. Open https://github.com/join in a new tab and create a new account
-  - Choose a username you will be proud to show future employers (ex.
-    `zachlatta` and `jonleung`)
-  - Use an email that you have access to, you'll need to access it
+  - Choose a username you won't regret. Your actual name is a solid bet.
+  - Use an email that you have access to; you'll need to access it
     to verify your account
-  - Make sure to remember your username and password, you'll need this at every
+  - Make sure to remember your username and password; you'll need them at every
     club meeting
-  - When prompted to choose a plan, choose the **"Free"** plan
-2. Open your email inbox in a new tab and look for an email from GitHub. Open it
-   and click the button to verify your email
+  - When prompted to choose a plan, choose the "Free" plan
+2. Verify your email by checking the inbox of the email you used
 3. Open https://gh.hackclub.com in a new tab and star the project by clicking
    the button that looks like this on the top right: ![](img/github_star.png)
 
 ### 2) Create Your First GitHub Repository
 
-GitHub allows us to **host** our website using a service called **GitHub
-Pages**. This means that we can put the files of our website on GitHub and
-GitHub will give us a URL that we can share with the world.
+GitHub allows us to host our website using a service called GitHub Pages. This
+means that we can put the files of our website on GitHub and GitHub will give
+us a URL that we can share with the world.  
 
 1. Go to https://github.com
-2. Click the green **"+ New repository"** button
-3. Under **"Repository name"** write your `USERNAME.github.io` except instead of
-   writing `USERNAME`, write your actual GitHub username. So if your username is
-   `alice1337`, write `alice1337.github.io`. You **have** to name your
-   repository this in order for GitHub Pages to work correctly (we'll talk more
-   about GitHub Pages later)
-4. Make sure that you did the previous step correctly.
-  - Is your **username** entered correctly
-  - The repository name should end in **`.io`**
-5. After you are sure you entered in the repository name correctly, click the
-   green "Create repository" button at the bottom.
-6. Copy the **"HTTPS link"** at the top. It should look like this:
-   `https://github.com/username/username.github.io.git`. You will need this link
-   for the next step.
+2. Click the green "+ New repository" button
+3. Under "Repository name" write `USERNAME.github.io` except instead of writing
+   `USERNAME`, write your actual GitHub username. So if your username is
+   `alice1337`, write `alice1337.github.io`. You have to name your repository
+   this in order for GitHub Pages to work correctly (we'll talk more about
+   GitHub Pages later)
+
+   > ![](img/gh_create_new_repo.png)
+
+4. After you've double checked that your repository is correctly named, click
+   the green "Create repository" button at the bottom.
+5. Yay! You've created your very first repository! Now, copy the "HTTPS link"
+   at the top. You will need this link for the next step.
+
+   > ![](img/gh_copy_new_repo_link.png)
 
 ### 3) Sign Up for Cloud9
 
-Just like how we can use Google Drive to write and organize documents written in
-English, we can use a service called **Cloud9** to write, save, and organize our
-code. We'll be using Cloud9 to write all of our code in Hack Club.
+We'll be using a service called Cloud9 to write, save, and organize all of the
+code we'll write in Hack Club.
 
 1. In a new tab, open https://c9.io/
 2. In the top right hand corner, click the button that looks like this:
-   ![](img/c9_gh_icon.png)
-3. Click the green **"Authorize application"** button
+
+   > ![](img/c9_gh_icon.png)
+
+3. Click the green "Authorize application" button
 4. If there is a popup that asks for your email, go ahead and enter it
-5. Click the gray box that says **"Create a new workspace"**
-6. Set the **"Workspace name"** to `projects`
-7. Make sure your workshop is set to **"Public"**
-8. Under **"Clone from Git or Mercurial URL"**, paste the **HTTPS Link** that
+5. Click the gray box that says "Create a new workspace"
+6. Set the "Workspace name" to `projects`
+
+   > ![](img/c9_name_workspace.png)
+
+7. Make sure your workshop is set to "Public"
+8. Under "Clone from Git or Mercurial URL", paste the HTTPS Link that
    you copied from your GitHub repository
 
-   > ![](img/c9_add_git_url.gif)
+   > ![](img/c9_clone_from_existing.png)
 
-9. Make sure that you're using the **"Custom"** template
+9. Make sure that you're using the "Custom" template
 10. Without changing anything else, scroll to the bottom and click the
-    green **"Create Workspace"** button
+    green "Create Workspace" button
 
 You should now see a screen looks something like this:
 
-![](img/c9_signup_ide_loaded.png)
+![](img/c9_ide_loaded.png)
 
 > Note:
 >
@@ -103,56 +100,25 @@ You should now see a screen looks something like this:
 > still doesn't load, try the following:
 >
 > 1. Open https://c9.io
-> 2. Click on the green **"Open"** button
+> 2. Click on the green "Open" button
 > 3. You should now see the screen shown above. If not, ask your facilitator for
 >    help
-
-### 3) Celebrate!
-
-> ![](img/celebrate_king_kid.gif)
 
 Congratulations, you've officially set up all of your coding tools for the
 semester!
 
 Now we're ready to start the website!
 
-## Part II: Create the Project Folder
+## Part II: The HTML File
 
-We'll put each project built in Hack Club in a separate folder in Cloud9.
+### 1) Creating the HTML file
 
-To start, let's create a folder for our personal website:
+We'll start by making an `index.html` file. Right click the sidebar, select
+"New File," and name the file `index.html`.
 
-1. On the left side of the screen, right click the **`projects`** folder
-2. Click **"New Folder"**
-3. Name the folder **`personal_website`**
+![](img/c9_create_index_html.gif)
 
-> ![](img/c9_create_personal_website_folder.gif)
-
-## Part III: HTML
-
-Every website is written with **HTML** code. HTML code is written in **HTML
-files**.
-
-> HTML stands for Hypertext Markup Language.
-
-### 1) Create the HTML File for Your Website
-
-1. Right click the **`personal_website`** folder you just created
-2. Click **"New File"**
-3. Name the file **`index.html`**
-4. Double click it to open it
-
-> ![](img/c9_create_index_dot_html.gif)
-
-> Notes:
->
-> - Just like Microsoft Word Documents end in **`.doc`**, HTML files end in
->   **`.html`**
-> - Your main HTML file has to be named **`index.html`**
-
-### 2) Adding Standard HTML Template
-
-Every HTML file follows this template:
+Now we'll add the basic HTML template. Type the following into `index.html`:
 
 ```html
 <!DOCTYPE html>
@@ -164,330 +130,221 @@ Every HTML file follows this template:
 </html>
 ```
 
-Let's put this template inside of our HTML file:
+This structure is common to all HTML pages. In fact, you can take a look for
+yourself! Just right click on any web page, including this one, and click "View
+source" to see what's going on behind the scenes. You'll find each of these
+elements on every page-- the doctype, and an HTML tag wrapped around a head and
+body.
 
-1. Double click the **`index.html`** file you just created to open it
-2. Retype the above HTML code into your **`index.html`** file, like so:
+Before proceeding, we'll briefly go over what this template means. HTML works
+by storing information inside tags. `<html></html>` is an example of one such
+tag. Inside `<html></html>`, we've placed two other sets of tags:
+`<head></head>` (which wraps around the "head") and `<body></body>` (which
+wraps around the "body"). The body holds everything you would see in the actual
+tab/window when you open the page, while the head conveys information about the
+page to the browser.
+`<!DOCTYPE html>` tells the browser what version of HTML to expect. Since it is
+a language, HTML is constantly growing and updating, so there are multiple
+versions. In our case, we are going to use HTML5, the latest version.
 
-> ![](img/write_html_template.gif)
+### 2) Previewing the Page
 
-### 3) Adding to the Template
+Let's check out what our HTML file looks like in Live Preview! First, we'll
+save the file by clicking "File" → "Save" (or use the shortcut CTRL+s /
+Command+s). Then, preview what the website looks like by clicking "Preview" →
+"Live Preview File"
 
-There's a lot going on in the below template. For now, let's just understand
-that there are two sections in this template, the **`head`** and the **`body`**:
+![](img/c9_live_preview.gif)
+
+As you can see, the page is blank. This is because we haven't added anything to
+the `body` section yet. Let's add some content!
+
+### 3) Adding Text to the Body
+
+As mentioned before, all information is wrapped in tags. Tags are predefined in
+the language; think of them as the words in the language. For text, HTML
+provides a number of tags to store text. We'll be using two of the most basic
+ones: the h1 tag (`<h1>`) and the paragraph tag (`<p>`). The h1 tag is the
+first in a series of heading tags, with `h1` being the highest ranking, and
+`h6` being the lowest ranking. Just as with the other tags, you can place
+information within the these tags by surrounding your content with an opening
+and closing tag. Go ahead and add your name in a heading tag, and your
+description in a paragraph tag, like so:
+
+```html
+<h1>Prophet Orpheus</h1>
+<p>Coder Dino
+Will code for food</p>
+```
+
+If your description was a few paragraphs, or had line breaks, you may have
+noticed that one `<p></p>` doesn't quite cut it. Adding extra blank lines or
+spaces between words in HTML does not change the spacing of the content. We can
+solve this by placing each paragraph in its own `<p></p>`.
+
+```html
+<h1>Prophet Orpheus</h1>
+<p>Coder Dino</p>
+<p>Will code for food</p>
+```
+
+### 4) Adding Images to the Body
+
+First, find an image you would like to include in your page. You can find
+something on Google Images, Facebook, or Imgur. We'll need the source URL of
+the image, so right click and select "Copy Image Address."
+
+Images are included in HTML via the image tag, or `<img />`. The image tag has
+an attribute called `src`, which will hold the _source_ URL of the image you
+want to display. As an example, if I were to add this picture of Prophet
+Orpheus, I would right click it and get the source URL, which in this case is
+https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png, and
+put it in an image tag like so:
+
+```
+<img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png" />
+```
+
+You may have noticed that the image tag doesn't have a closing tag like
+`<h1></h1>` or `<body></body>`. That's because it is a self-closing tag. In
+fact, the `/` that comes right before `>` is how it does this.
+
+Go ahead and add this into your `index.html` now. I put my picture before my
+heading, and my code looks like this:
 
 ```html
 <!DOCTYPE html>
 <html>
     <head>
-            ← this section is called the "head" of the HTML document
     </head>
     <body>
-            ← this section is called the "body" of the HTML document
+        <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"/>
+        <h1>Prophet Orpheus</h1>
+        <p>Coder Dino</p>
+        <p>Will code for food</p>
     </body>
 </html>
 ```
 
-- Everything between the `<head>` and `</head>` tags is called the **head** of
-  the page. `<head>` is considered an "opening tag" because it "opens" the head
-  section. Since `</head>` starts with `</` (instead of just `<`), it is
-  considered a "closing tag" and "closes", or indicates the end of, the head
-  section.
-- Similarly, everything between the `<body>` and `</body>` tags is called the
-  **body** of the page. `<body>` is the opening tag and `</body>` is the closing
-  tag. Together, the opening tag and the closing tag compromise the `body`
-  element.
-- Note: most HTML elements have an _opening tag_ and a _closing tag_. You'll
-  want to get used to this pattern :smile:.
+![](img/c9_index_html.png)
 
-### 4) Opening the Website Preview
+Now, your image may either be too big, or too small. Fret not. CSS will allow
+you to manipulate the styling of your page in all your needs.
 
-Let's see what our website looks like so far:
+## Part III: The CSS File
 
-1. First, save the file by clicking **"File"** _(on the top right)_ → **"Save"**
-   (or use the shortcut **CTRL + S / Command + S**)
-2. Preview what the website looks like by clicking **"Preview"** → **"Live
-   Preview File"**
+So what is CSS? CSS, also known as Cascading Style Sheets, is a language used for styling the tags on a web page, otherwise known as elements.
 
-> ![](img/c9_live_preview.gif)
-
-As you can see, the page is still blank. This is because we haven't added any
-**content** in the **`body`** section yet. Let's add some!
-
-### 5) Adding a Name to the Body of the HTML
-
-Write your name in the **body** of the HTML page (between **`<body>`** and
-**`</body>`**).
-
-> ![](img/html_add_name.gif)
-
-Notice that that the HTML we write is immediately updated in the preview. That's
-why it's called a **"Live Preview"**
-
-### 6) Adding a Description
-
-Underneath on a new line, we'll add a description by typing `MVP hotline
-answerer`.
-
-> ![](img/html_add_description.gif)
-
-Notice that the blank line between the name and description isn't reflected on
-the web page. Adding extra blank lines or spaces between words in HTML does will
-not change what the website looks like.
-
-To add spacing and other formatting, we need to use **HTML tags**.
-
-### 7) Formatting the Heading with the Heading Tag
-
-If we want `Drizzy Drake` to be a heading of the website, we can put it inside
-of what's called a **heading tag**, like so:
-
-```html
-<h1>Drizzy Drake</h1>
-```
-
-**HTML tags**, like `h1`, tell the web browser how to interpret the text in
-between the tags.
-
-1. We can name look like a heading by surrounding it with an `h1` tag.
-
-    > Note: In Cloud9, as soon as we write **`<h1>`**, it knows we eventually
-    > want a **`</h1>`** and will add it for us. This is known as
-    > **autocomplete**.
-
-> ![](img/html_format_name_as_h1_tag.gif)
-
-Similar to how `body` and `head` have both opening and closing tags, there are
-two parts to the `h1` tag:
-
-- **`<h1>`** is the **opening**  tag
-- **`</h1>`** is the **closing** tag. Again, the difference is the **`/`**
-  before the tag's name
-
-Because the browser knows to interpret anything inside of an **`h1`** tag as a
-heading, it makes the name big and bold.
-
-### 5) Formatting the Description with a Paragraph Tag
-
-Similarly to how we told the browser to treat **`Drizzy Drake`** as a header, I
-want to tell the browser to treat **`MVP hotline answerer.`** as a paragraph.
-
-1. Put the description inside of a **paragraph tag** like so:
-
-```html
-<p>MVP hotline answerer</p>
-```
-
-> ![](img/html_format_description_as_p_tag.gif)
-
-Just like the **`h1`** tag, the **`p`** tag also has an opening and closing tag.
-
-### 6) Adding An Image with the Image Tag
-
-Now let's add a GIF to our website.
-
-1. Open https://images.google.com in a new tab
-2. Search for anything (ex. "kittens", "doge", "pepe")
-3. Tell Google Images to only show GIFs (`Search tools > Type > Animated`)
-
-     ![](img/google_images_show_gifs.gif)
-
-4. Click on an image once it loads, right click on it and select `Copy image
-   address`
-
-     ![](img/google_images_copy_gif_link.gif)
-
-5. Insert this code for **image tag** just underneath of the **opening `body`
-   tag**. Replace `IMAGE_LINK` with the link we just copied (hit `Ctrl+v` to
-   paste, or `Command+v` if you're on a Mac)
-
-  ```html
-  <img src="IMAGE_LINK">
-  ```
-
-> ![](img/html_add_image_tag.gif)
-
-> - **`img`** is the tag name
-> - **`img`** is a **self closing tag**, meaning that there is no
->   closing tag (like **`</img>`**)
-> - **`src`** is an  **attribute** of the image tag that specifies the URL of
->   the image. It stands for "source".
-
-Hmm, our image may be too big or too small. Luckily we have this other language
-called **CSS** that can help!
-
-## Part IV: CSS
-
-**HTML** is the **content** of a page (**words**, **images**, and **structure**).
-
-**CSS** is the look and feel (**color**, **spacing**, and **size**).
-
-> **CSS** stands for **Cascading Style Sheet** and is sometimes referred to just
-> as a **style sheet** because it's a **"sheet"** that specifies all of the
-> site's **"styles"**.
-
-Therefore, if we want to change the **size** of the image, we use **CSS**!
+While HTML oversees the content and the way it's structured, CSS is how you'll
+specify how you'd like your content to look, and with it, you can set things
+like colors, spacing, and more.
 
 ### 1) Creating the CSS File
 
-1. Right click the **`personal_website`** folder we had previously created
-2. Click **"New File"**
-3. Name the file **`styles.css`** (again, all lowercase)
+We'll now make an `styles.css` file. Right click the sidebar, select "New
+File," and name the file `styles.css`.
 
-> Note:
->
-> - The **`.css` extension** tells the computer to interpret this as a `css`
->   file (just like `.html`)
-> - This is called an **external style sheet** because the CSS file is
->   **external** to the HTML file (as in the stylesheet is not inside the HTML
->   file)
+![](img/c9_create_styles_css.gif)
 
-> ![](img/css_add_css_file.gif)
+This is called an external style sheet because the CSS file is external to the
+HTML file (i.e., the stylesheet is not inside the HTML file).
 
-### 2) Connecting the CSS to the HTML
+### 2) Linking the CSS file to the HTML file
 
-Although we've created a CSS file, until we explicitly tell the HTML file to use
-the CSS file, it will not use it. We have to explicitly **link** the CSS file in
-the HTML.
+Although we've created a CSS file, until we explicitly tell the HTML file to
+use the CSS file, it will not use it. We must explicitly link the CSS file in
+the HTML. We'll do this by typing the following into the head of `index.html`,
+because the head is where we tell information about the page to the browser.
 
-To **link** the CSS file:
+```html
+<link rel="stylesheet" href="styles.css"/>
+```
 
-1. Type the code for the **link tag** (written below), into the **`head`**
-   section of the code.
+`<link />` is the link tag, which describes relationships between the current
+file (in this case, `index.html`), and some external file (`styles.css`). In
+our example, `rel="stylesheet"` specifies what this relationship is, i.e., that
+`styles.css` is a stylesheet, and `href` (hypertext reference) specifies where
+the file can be found (in this case, it's just the filename `styles.css`). The
+link tag, similar to the image tag, is a self-closing tag, once again denoted
+by the `/` that precedes the `>`.
 
-   ```html
-   <link rel="stylesheet" href="styles.css">
-   ```
+Our HTML file now looks like so:
 
-> ![](img/css_add_link_tag.gif)
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"/>
+        <h1>Prophet Orpheus</h1>
+        <p>Coder Dino</p>
+        <p>Will code for food</p>
+    </body>
+</html>
+```
 
-> Notes:
->
-> - **`link`** is the tag name
-> - **`link`** tags always belong in the **`head`** of the HTML document
-> - **`link`** is a **self closing tag** like **`img`**
-> - **`href`** is an **attribute** of the link tag and specifies the location of
->   the CSS file. It stands for **hypertext reference**
-> - **`rel`** is an **attribute** that tells the browser to interpret the linked
->   file as a **stylesheet**
+### 3) Adding Styles to the Stylesheet
 
-### 3) Using CSS to Resize the Image
+Now that we've linked our CSS file to our HTML file, let's write some CSS to
+resize the image.
 
-Now that we linked our CSS file to our HTML file, let's write some CSS to resize
-the image.
+Open up `styles.css` and type the following:
 
-1. Double click **`styles.css`** to open it
-2. Add the below CSS code to resize the image by typing the following code
-   into the CSS file. Make sure to save after doing this. If nothing changed
-   after saving, try refreshing the page.
-
-    ```css
-    img {
-        width: 200px;
-    }
-    ```
-
-Yay! Our image got resized!
-
-> ![](img/css_img_width.gif)
-
-**Understanding the CSS More Deeply**
-
-If we were to translate the code into English, this
-
-```css
+```
 img {
     width: 200px;
 }
 ```
 
- would say
+A CSS stylesheet contains "rules," each of which consists of a selector, and
+attributes and values within brackets, known as a "declaration block."
 
-- **Select** every **`img` tag** on this HTML page and set the **width** to be
-  **`200px`**
+In our case, the selector is `img`. This merely selects all image tags (and
+thus, all images). The rule then says to set the `width` (width) of all things
+selected (in our case, all the images) to `200px`. `px` refers to pixels, which
+are a unit of measurement on the screen. When this rule is applied, all the
+images on our page will have a width of 200 pixels.
 
-> `px` stands for **pixels**, a unit of size on the screen. If you want to learn
-> more about pixels, Google search
-> ["What is a pixel?"](https://www.google.com/#q=what+is+a+pixel)
+Next, we're going to center-align the entire body section.
 
-### 4) Centering the Body
+We'll add
 
-Now to center everything on the page:
-
-1. Type the below CSS code underneath our previous CSS code. _Remember, don't
-   copy and paste._
-
-   ```css
-   body {
-       text-align: center;
-   }
-   ```
-3. Save the file by clicking **"File"** → **"Save"** (or use the shortcut
-   **CTRL + S / Command + S**)
-
-> ![](img/css_text_align_center.gif)
-
-Now everything should be centered on the page.
-
-#### Understanding More Deeply
-
-If we were to translate the code into English, this
-
-```css
+```
 body {
     text-align: center;
 }
 ```
 
-would say:
+As with resizing the image, this rule specifies that every `body` tag should
+have a `text-align` attribute of `center`. This centers everything on our page
+because all of the content in our HTML file is written inside the body tag.
 
-- **Select** every **`body` tag** on this HTML page and set the **alignment** of
-  the **text** within the body tag to be **centered**
+Now let's change the font of our text. We'll add another attribute,
+`font-family`, to the `body` rule, and set the value to `"Arial"`. Now it will
+look like this:
 
-This centers everything on our page because all of the content in our HTML file
-is written inside the body tag.
+```
+body {
+    text-align: center;
+    font-family: "Arial";
+}
+```
 
-And because everything is in the **body** tag, everything is centered.
+Here is the transformation that your stylesheet will have undergone at the end of your endeavors:
 
-> Google search ["CSS text align"]
-> (https://www.google.com/?gws_rd=ssl#q=css+text+align) to see what other
-> alignment options are available besides **`center`**
+![](img/c9_css_progression.gif)
 
-### 5) Changing the Font
-
-Finally let's change the font of the page. We'll change our page to `Arial`, but
-feel free to use another (e.g., `Helvetica`, `Comic Sans`, or `Times New
-Roman`).
-
-Add another **CSS attribute** to the **`body` selector** so that the CSS for the
-**`body`** looks like this:
-
-  ```css
-  body {
-      text-align: center;
-      font-family: "Arial";
-  }
-  ```
-
-> ![](img/css_font_family_arial.gif)
->
-> Not all computers have the same fonts on them. To figure out what fonts most
-> computers have on them, Google search
-> ["web safe fonts"](https://www.google.com/#q=web+safe+fonts).
-
-### 6) Celebrate!
+Ah, it is truly beautiful to behold.
 
 ![](img/celebrate_harry_potter.gif)
 
-W0000t! We've successfully added the CSS to this web page!
+## Part IV: Publishing
 
-Now to share our creation with the world.
-
-## Part V: Publishing
-
-Right now we can only see our website on our own computer. Let's get a link that
-we can share with anyone on the internet! We'll the previously mentioned GitHub
-Pages to do this.
+Right now we can only see our website on our own computer. Let's get a link
+that we can share with anyone on the internet! We'll use the previously
+mentioned GitHub Pages to do this.
 
 1. Open the terminal by pressing `alt + t` on the keyboard at the same time.
    Type in the following commands:
@@ -498,43 +355,43 @@ Pages to do this.
   - Go ahead and enter the username and press the enter.
   - Enter the password and press enter. _The characters won't show up on
     the screen, but rest assured, they are still being typed._
-3. Now try to view the website by going to `USERNAME.github.io/personal_website`
+3. Now try to view the website by going to `USERNAME.github.io`
    (make sure to replace `USERNAME` with our actual GitHub username)
 
-#### 3) Celebrate!
+#### Celebrate!
 
 ![](img/celebrate_rush_hour.gif)
 
 Yes! Our website is now public on the internet!
 
-## Part VI: Sharing with the Community
+## Part V: Sharing with the Community
 
 Now that we have finished building a website
 
 1. In a new tab, open and follow [these directions][slack] to signup for our
    Slack.
 2. Join your club's channel by asking your club leader for the name of the
-   channel.
-3. Post the link to your website in your club's channel.
-4. Post the link to the
+   channel, and post the link to your website in your club's channel.
+3. Then, post the link to the
    [`#shipit`](https://starthackclub.slack.com/messages/shipit) channel to
    share it with everyone!
 
 [slack]: ../../SLACK.md
 
-## Part VII: Hacking
+## Part VI: Hacking
 
-In this section, your challenge is to add additional features to your website to
-make it your own!
+In this section, your challenge is to add additional features to your website
+to make it your own!
+
+Want to use a different font? Google!  
+Want to add more pictures? Google!  
+Want to add more text? Your entire life story? Background image? Background
+music? Video? More pages? Google!
 
 A good way to get ideas for what to add to your website is to look at other
-people's websites.
-
-1. Find a website that you like, either from the below list or from somewhere
-   else on the internet.
-2. Decide on just one aspect of that website that you really like from their
-   website that you want to try adding to your own website (maybe it's the fact
-   that they have a background image, or the fact that they have music).
+people's websites. Find a website that you like, either from the below list or
+from somewhere else on the internet, pick one aspect of that website that
+you would like on your own website, and Google for ways to make it happen!
 
 **Websites Made by Other Hack Club Hackers:**
 
