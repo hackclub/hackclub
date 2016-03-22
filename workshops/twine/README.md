@@ -1,6 +1,6 @@
 # Text Adventure 1: Twine
 
-Welcome! Over the course of the next 3 workshops, you'll be creating your very own text adventure. You'll be starting here, by using a text adventure framework called [Twine](http://twinery.org). It uses an easy-to-follow interface to lay out your story, but you'll also be using some very basic functions called "macros", which we'll be discussing later. [Here's an example of what you'll have created by the end of this workshop](https://bruggie.com/twine).
+Welcome! In this workshop you'll be creating your very own text adventure using a tool called [Twine](http://twinery.org). It uses an easy-to-follow interface to lay out your story, but you'll also be using some very basic functions called "macros", which we'll be discussing later. [Here's an example of what you'll have created by the end of this workshop](https://bruggie.com/twine).
 
 A text adventure is like any sort of adventure game today, but everything is described through, as the name suggests, text. These were popular in the early days of computing, before every computer had the power to render "complex" graphics, even though many early graphics were only pixel art! Because they are simple in this way, they're a great platform for us to target when starting out. However, just because they only display text doesn't mean they can't be complex in their own rights. Here are some examples of very complex text adventures:
 
