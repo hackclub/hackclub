@@ -111,22 +111,20 @@ The debug view will show where you're using macros, among other things. You'll n
 
 You could create all of your links by typing `(link-goto: "Display text", "Passage title")`, but we used the shorthand with the double square brackets and `->` arrow because it's a lot quicker to do. The Twine passage editor also doesn't automatically create a new passage if you use the full macro syntax. In general, many things in programming have shortcuts to make them easier. These are sometimes called "abstractions", as they mask over what might take a lot of code with something much simpler.
 
-## Saving your story to your computer
+## Adding your adventure to your website
 
-To finish up, we need to do one last thing: Save our stories! Twine does automatically save your story as you go, but this is only within your browser. Some computers may not remember this data when the browser is closed, or when the computer is logged out of. Thankfully, Twine has us covered here. First, click on the Home button in the bottom left of the story overview. You should be back on your Twine dashboard. You'll see that your story now has a place on the dashboard. Click the gear icon on your story, and choose "Publish to file" in the menu that pops up.
+To finish up, we need to do one last thing: Save our stories! Twine automatically saves your story as you go, but this is only within your browser. Some computers may not remember this data when the browser is closed, or when the computer is logged out of. Thankfully, Twine has us covered here. First, click on the Home button in the bottom left of the story overview. You should be back on your Twine dashboard. You'll see that your story now has a place on the dashboard. Click the gear icon on your story, and choose "Publish to file" in the menu that pops up.
 
 ![Twine dashboard with options menu open on story created](img/dashboard-2.png)
 
-Twine will automatically download your story into an HTML file. You can add it to your personal website, by creating a new directory (name it `twine_workshop`) in the Cloud9 sidebar of your projects workspace, and then dragging the downloaded file into that directory. Then, go down to Cloud9's console area, and add your new directory and Twine story to your repo.
-
-If you recall, the steps to do this with git are as follows:
+Twine will automatically download your story into an HTML file. To add it to your website, create a new directory called `twine_workshop` in the Cloud9 sidebar of your projects' workspace. Once you have that, drag the downloaded HTML file into that directory. Then go to the console at the bottom of the screen and run the following commands to add your adventure to your GitHub repository (and therefore your website).
 
 1. `git add -A` to add all changes.
 2. `git commit -m 'Add Twine story'` to make a commit with the message 'Add Twine story.'
 3. `git push` to push that commit to your `USERNAME.github.io` repo.
 4. You may need to authenticate as well. (Remember, characters won't show up when typing your password, but rest assured, they are being typed!)
 
-Now you can view it at `USERNAME.github.io/twine_workshop/STORYNAME.html`!
+Now you can view it at `USERNAME.github.io/twine_workshop/STORYNAME.html` (make sure to replace `USERNAME` and `STORYNAME` with your GitHub username and text adventure's name, respectively)!
 
 You can also open your downloaded file anywhere, whether you're online or offline, and be able to play through your story. If you wish to edit this story again at a later date, simply go to the Twine dashboard, and click the "Import From File" button underneath the "+ Story" button. Then, upload your downloaded file. Twine will recognize it, and add it back to your dashboard. You'll want to save your story to your computer whenever you're done editing it, such as at the end of a meeting. Your computer may save your progress automatically without doing this, but to err on the side of caution, always save the story to a local file.
 
