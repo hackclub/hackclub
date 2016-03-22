@@ -130,10 +130,9 @@ You can also open your downloaded file anywhere, whether you're online or offlin
 
 ## Wrap-up
 
-Great work! You've made your first computer science creation. It may not have seemed like you did a lot of programming, but through this workshop, you were introduced to some fundamental basics, such as the idea of using syntax to tell a computer to do something, or using macros to return a result from an input. Here are some ideas for how you could expand your story:
+Great work! It may not have seemed like you did a lot of coding, but through this workshop, you were introduced to some fundamental basics, such as the idea of using syntax to tell a computer to do something, or using macros to return a result from an input. Here are some ideas for how you could expand your story:
 
 - Try using some different macros! [There's a full list of them here](http://twine2.neocities.org/#macro_set), all with explanations and example usages. Some of the terminology may be new to you, but try researching what you don't know.
 - The documentation linked to in the last point also has some other text formatting that we didn't go over here. Try experimenting with those.
-
 
 Overall, by the end of this meeting, you should have a solid story written. It doesn't have to be super long or complicated, but you should be proud of it! Until next time!
