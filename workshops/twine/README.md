@@ -65,7 +65,7 @@ Anything that comes after the `->` arrow will display as the text when going thr
 
 Equipped with these two pieces of syntax, you can start making some real progress on your text adventure. When you've written something fun, you can start on the next sections, which will talk about formatting your text with new syntax, and how to use a macro to generate content dynamically.
 
-If you're stuck on your story, feel free to work with others! Collaboration is super important in computer science, and can lead to some great results. Don't worry: there's no cheating in this club.
+If you're stuck on your story, feel free to work with others! Collaboration is super important when coding, and can lead to some great results. Don't worry: there's no cheating in Hack Club.
 
 ## Formatting your story
 
