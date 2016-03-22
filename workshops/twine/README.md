@@ -1,17 +1,17 @@
 # Text Adventure 1: Twine
 
-Welcome! Over the course of the next 3 workshops, you'll be creating your very own text adventure. You'll be starting here, by using a text adventure framework called [Twine](http://twinery.org). It uses an easy-to-follow interface to lay out your story, but you'll also be using some very basic functions called "macros," which we'll be discussing later. [Here's an example of what you'll have created by the end of this workshop.](https://bruggie.com/twine)
+Welcome! Over the course of the next 3 workshops, you'll be creating your very own text adventure. You'll be starting here, by using a text adventure framework called [Twine](http://twinery.org). It uses an easy-to-follow interface to lay out your story, but you'll also be using some very basic functions called "macros", which we'll be discussing later. [Here's an example of what you'll have created by the end of this workshop](https://bruggie.com/twine).
 
 A text adventure is like any sort of adventure game today, but everything is described through, as the name suggests, text. These were popular in the early days of computing, before every computer had the power to render "complex" graphics, even though many early graphics were only pixel art! Because they are simple in this way, they're a great platform for us to target when starting out. However, just because they only display text doesn't mean they can't be complex in their own rights. Here are some examples of very complex text adventures:
 
-* [Zork](https://en.wikipedia.org/wiki/Zork) - One of the earliest text adventures created, it was essentially the definition of the genre, as it was able to understand more complex commands, through the usage of prepositions and conjunctions.
-* [The Hitchhiker's Guide to the Galaxy](http://www.bbc.co.uk/programmes/articles/1g84m0sXpnNCv84GpN2PLZG/the-hitchhikers-guide-to-the-galaxy-game-30th-anniversary-edition) - Based on the book of the same title, this is one of the most complicated text adventures created. It's known for its extreme user-unfriendliness. If you try it... expect to die! A lot!
+- [Zork](https://en.wikipedia.org/wiki/Zork) - One of the earliest text adventures created, it was essentially the definition of the genre, as it was able to understand more complex commands, through the usage of prepositions and conjunctions.
+- [The Hitchhiker's Guide to the Galaxy](http://www.bbc.co.uk/programmes/articles/1g84m0sXpnNCv84GpN2PLZG/the-hitchhikers-guide-to-the-galaxy-game-30th-anniversary-edition) - Based on the book of the same title, this is one of the most complicated text adventures created. It's known for its extreme user-unfriendliness. If you try it... expect to die! A lot!
 
-You'll be creating something a bit less complex than those examples, but still with its own interesting functionality. [Here's an example of one made by a staff member.](https://hire.bruggie.com) This one has multiple endings, and some interactive functionality. These are somewhat advanced concepts, but nothing outside of what you can do with Twine. If you're ever stuck, you can take a look at this for an idea of the format of a text adventure. Let's get started!
+You'll be creating something a bit less complex than those examples, but still with its own interesting functionality. [Here's an example of one made by a staff member](https://hire.bruggie.com). This one has multiple endings, and some interactive functionality. These are somewhat advanced concepts, but nothing outside of what you can do with Twine. If you're ever stuck, you can take a look at this for an idea of the format of a text adventure. Let's get started!
 
 ## Creating your story
 
-We'll be using the online Twine editor to create our text adventure. [You can find it by clicking here.](http://twinery.org/2)
+We'll be using the online Twine editor to create our text adventure. [You can find it by clicking here](http://twinery.org/2).
 
 ![Empty Twine dashboard](img/dashboard-1.png)
 
@@ -19,7 +19,7 @@ This is the Twine dashboard. For now, we just want to focus on one thing: creati
 
 ![Story overview with one default passage](img/overview-1.png)
 
-After you entered the name, you'll notice that the story overview has launched. Towards the middle, you'll notice a box that says "Untitled passage." A passage can be seen like a page of a book, as you'll write your story in these passages. As well, you'll be adding links to other passages from a passage. For now, let's just change the text. Double click on the passage to open the passage editor, and enter something to start your story with. In general, a text adventure will describe the reader's current surroundings, any actions that may have just happened, and what the user can do next. Since the adventure just started, just a brief description will do.
+After you entered the name, you'll notice that the story overview has launched. Towards the middle, you'll notice a box that says "Untitled passage". A passage can be seen like a page of a book, as you'll write your story in these passages. As well, you'll be adding links to other passages from a passage. For now, let's just change the text. Double click on the passage to open the passage editor, and enter something to start your story with. In general, a text adventure will describe the reader's current surroundings, any actions that may have just happened, and what the user can do next. Since the adventure just started, just a brief description will do.
 
 ![Passage editor with initial writing](img/editor-1.png)
 
@@ -71,10 +71,10 @@ If you're stuck on your story, feel free to work with others! Collaboration is s
 
 Through things like **bolding** and *italicizing*, you can help to convey different types of tone throughout your story. You can see [a full reference of the types of text styling here](http://twine2.neocities.org/#markup_style), but here's a quick cheatsheet:
 
-* `*Italics*` -> Creates *Italics*
-* `**Bolding**` -> Creates **Bolding**
-* `***Bold italics***` -> Creates ***Bold italics***
-* `~~Crossed out~~` -> Creates ~~Crossed out~~
+- `*Italics*` -> Creates *Italics*
+- `**Bolding**` -> Creates **Bolding**
+- `***Bold italics***` -> Creates ***Bold italics***
+- `~~Crossed out~~` -> Creates ~~Crossed out~~
 
 You'll also notice on that page it mentions that macros can be used to format your text. Let's talk about what a macro is, and how you can use them.
 
@@ -86,19 +86,18 @@ As mentioned in the formatting documentation linked previously, Twine has macros
 
 In other words: A macro is another piece of Twine's syntax that can be used for content that is not pre-defined, or "dynamically generated." In general, macros return some sort of result. Macros are also very similar to what's known as a "function" in other programming languages. They technically have some differences, but for our purposes, they are equivalent.
 
-Twine's macros generally return text. However, the text may be altered, such as being a different color, or or it may be dynamically generated, such as showing the current time. As you can see from [this list of macros](http://twine2.neocities.org/#macro_set), there are a lot of macros that you can use, and some of them are quite advanced. We're going to try using a pretty simple one, that changes the color of the text. [Here's the documentation on this macro.](http://twine2.neocities.org/#macro_text-colour) It's called `text-colour`, but it's also called just `color` for ease of use. Here's their example usage:
+Twine's macros generally return text. However, the text may be altered, such as being a different color, or or it may be dynamically generated, such as showing the current time. As you can see from [this list of macros](http://twine2.neocities.org/#macro_set), there are a lot of macros that you can use, and some of them are quite advanced. We're going to try using a pretty simple one, that changes the color of the text. [Here's the documentation on this macro](http://twine2.neocities.org/#macro_text-colour). It's called `text-colour`, but it's also called just `color` for ease of use. Here's their example usage:
 
 ```
 (color: red + white)[Pink]
 ```
 
- Let's break down this syntax into two parts:
+Let's break down this syntax into two parts:
 
- * `(color: red + white)` - We start with a regular bracket, and then type out the word `color`, followed the colon. This is the macro call, which tells Twine that we want to do. After the colon, we put our color. In their case, they've highlighted that Twine will combine colors if you use a `+` symbol in between color names, so you can have a wide range of colors. We'll experiment with that in a second. After the last color, we put a closing bracket, to show we've finished the macro call.
+- `(color: red + white)` - We start with a regular bracket, and then type out the word `color`, followed the colon. This is the macro call, which tells Twine that we want to do. After the colon, we put our color. In their case, they've highlighted that Twine will combine colors if you use a `+` symbol in between color names, so you can have a wide range of colors. We'll experiment with that in a second. After the last color, we put a closing bracket, to show we've finished the macro call.
+- `[Pink]` After that, there's a single square bracket, followed by the word "Pink", and then a closing square bracket. This is the text we want Twine to color, which in this case is `red + white`, which makes pink. Any amount of text can go in-between the opening and closing square brackets. Let's add this to our story:
 
- * `[Pink]` After that, there's a single square bracket, followed by the word "Pink," and then a closing square bracket. This is the text we want Twine to color, which in this case is `red + white`, which makes pink. Any amount of text can go in-between the opening and closing square brackets. Let's add this to our story:
-
- ![Passage editor with color macro](img/editor-5.png)
+![Passage editor with color macro](img/editor-5.png)
 
 In our case, we made the text just plain red. However, you can try experimenting with colors. Try combining a couple different colors to see what you get.
 
@@ -135,7 +134,8 @@ You can also open your downloaded file anywhere, whether you're online or offlin
 
 Great work! You've made your first computer science creation. It may not have seemed like you did a lot of programming, but through this workshop, you were introduced to some fundamental basics, such as the idea of using syntax to tell a computer to do something, or using macros to return a result from an input. Here are some ideas for how you could expand your story:
 
-* Try using some different macros! [There's a full list of them here](http://twine2.neocities.org/#macro_set), all with explanations and example usages. Some of the terminology may be new to you, but try researching what you don't know.
-* The documentation linked to in the last point also has some other text formatting that we didn't go over here. Try experimenting with those.
+- Try using some different macros! [There's a full list of them here](http://twine2.neocities.org/#macro_set), all with explanations and example usages. Some of the terminology may be new to you, but try researching what you don't know.
+- The documentation linked to in the last point also has some other text formatting that we didn't go over here. Try experimenting with those.
+
 
 Overall, by the end of this meeting, you should have a solid story written. It doesn't have to be super long or complicated, but you should be proud of it! Until next time!
