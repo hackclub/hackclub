@@ -35,17 +35,19 @@ Club member $100 worth of Twilio credit.
 9. Fill in the below information.
   - Leave the "Company/Project URL" and "Phone Number" fields blank
   - For the credit card information, although Twilio is giving each member
-    $100 worth of credit, you still need a credit card to signup for Twilio.
-    For your convenience, we have provided a credit card to signup with below.
+    $100 worth of credit, you still need a credit card to signup. To make your
+    life as easy as possible, we've provided a credit card you can use for
+    signup. Don't worry -- this isn't our actual credit card, it has a $1 limit
+    on it and the address is Hack Club's business address.
 
-    | Field              | Value                               |
-    |--------------------|-------------------------------------|
-    | Credit Card Number | `4847187325364622`                  |
-    | Expires            | `06/2024`                           |
-    | CVV                | `735`                               |
-    | Cardholder Name    | `Jonathan Leung`                    |
-    | Street Address     | `200 Haverford Road, Wynnewood, PA` |
-    | Zip Code           | `19096`                             |
+    | Field              | Value                                 |
+    | ------------------ | ------------------------------------- |
+    | Credit Card Number | `4859106516337671`                    |
+    | Expires            | `03/2020`                             |
+    | CVV                | `660`                                 |
+    | Cardholder Name    | `Zach Latta`                          |
+    | Street Address     | `4080 18th Street, San Francisco, CA` |
+    | Zip Code           | `94114`                               |
 
 10. Click "I have a promo code."
 
