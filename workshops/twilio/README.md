@@ -12,8 +12,8 @@ things like group texting apps.
 APIs are cool because they let even our very simple programs to interact with
 very powerful programs with minimal code.
 
- In this workshop, you probably won't understand how it all works and that's
- totally cool. Your objective is to learn how to make things happen.
+In this workshop, you probably won't understand how it all works and that's
+totally cool. Your objective is to learn how to make things happen.
 
 ## Part 1: Setup
 
