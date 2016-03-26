@@ -84,20 +84,17 @@ _(ready to paste into org-mode)_
 
 ### During Call
 
+- [ ] Talk about what the code of conduct is and why it's important
+- [ ] Add to GitHub Leaders team
+- [ ] Add to Facebook private group
+  - [ ] Give them tips to introduce themselves
 - [ ] Add to Slack
   - [ ] Give them tips to introduce themselves
   - [ ] Have them download the desktop and mobile apps
   - [ ] Have them create a channel for their club
-- [ ] Add to GitHub Leaders team
-- [ ] Add to Facebook private group
-  - [ ] Give them tips to introduce themselves
-- [ ] Talk about what the the [code of conduct][code-of-conduct] is and why it's
-  important
 - [ ] Get their address and add it to their entry in the "Club Leaders" sheet in
   https://clubs.hackclub.com
 - [ ] Set up weekly calls
-
-[code-of-conduct]: https://github.com/hackclub/hackclub/blob/master/CONDUCT.md
 
 ### After Call
 
