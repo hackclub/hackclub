@@ -19,9 +19,6 @@ The things we need to do to onboard a new person onto the team.
 - [ ] Add to Dropbox
 - [ ] Add to README of [meta](https://github.com/hackclub/meta) repo
 - [ ] Add to the team page of our website
-- [ ] Have them install [ZenHub](https://www.zenhub.io/) and read
-  [the project management outline](README.md#project-management).
 - [ ] Have them read the following:
-  - [ ] [Vision and mission](README.md#vision-and-mission)
-  - [ ] [Goals](GOALS.md)
+  - [ ] [`README.md`](README.md)
   - [ ] [Contribution guidelines](https://github.com/hackclub/hackclub/blob/master/CONTRIBUTING.md)
