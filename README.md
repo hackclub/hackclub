@@ -6,8 +6,6 @@ Hack Clubs are after-school communities at high schools where people build thing
 
 [![Slack Status](https://slack.hackclub.com/badge.svg)](https://slack.hackclub.com)
 [![Build Status](https://circleci.com/gh/hackclub/hackclub.svg?style=shield)](https://circleci.com/gh/hackclub/hackclub)
-[![Pull Request Stats](http://issuestats.com/github/hackclub/hackclub/badge/pr?style=flat)](http://issuestats.com/github/hackclub/hackclub)
-[![Issue Stats](http://issuestats.com/github/hackclub/hackclub/badge/issue?style=flat)](http://issuestats.com/github/hackclub/hackclub)
 
 Quick Hack Club links:
 
