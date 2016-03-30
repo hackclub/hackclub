@@ -1,14 +1,12 @@
 # Contribution Guidelines
 
-This document contains a set of guidelines which any contributions to *any*
-Hack Club repository must follow.
+This document contains a set of guidelines which any contributions to *any* Hack Club repository must follow.
 
 [If you disagree with something here, you should open up an issue to discuss making a change!](https://github.com/hackclub/hackclub/issues/new)
 
 ## Contributing to the Workshops
 
-For more details specific to contributing a workshop,
-[look here](workshops/CONTRIBUTING.md).
+For more details specific to contributing a workshop, [look here](workshops/CONTRIBUTING.md).
 
 ## Table of Contents
 
@@ -20,19 +18,13 @@ For more details specific to contributing a workshop,
 
 ## GitHub Flow
 
-We use a modified version of [GitHub Flow](https://guides.github.com/introduction/flow/)
-at Hack Club. The only difference is instead of deploying from a reviewed pull
-request, we merge first and deploy straight from master.
+We use a modified version of [GitHub Flow](https://guides.github.com/introduction/flow/) at Hack Club. The only difference is instead of deploying from a reviewed pull request, we merge first and deploy straight from master.
 
-Part of the GitHub Flow is submitting pull requests. See
-https://help.github.com/articles/using-pull-requests/ for a good overview of
-what pull requests are and how to use them. We use the _fork & pull model_ for
-managing contributions.
+Part of the GitHub Flow is submitting pull requests. See https://help.github.com/articles/using-pull-requests/ for a good overview of what pull requests are and how to use them. We use the _fork & pull model_ for managing contributions.
 
 ## Styleguides
 
-If a styleguide exists for the language you're contributing in, please do the
-maintainers of the repository a favor and follow it.
+If a styleguide exists for the language you're contributing in, please do the maintainers of the repository a favor and follow it.
 
 Our existing styleguides:
 
@@ -59,8 +51,7 @@ File names should follow the following guidelines:
 
 ## Git Commits
 
-In order to ensure that our git history makes sense we have certain guidelines
-which we require contributors to adhere to. These are:
+In order to ensure that our git history makes sense we have certain guidelines which we require contributors to adhere to. These are:
 
 ### Commits should follow the commit standards
 
@@ -70,8 +61,7 @@ These are:
 - Commits should start with a capital letter
 - Commits should not end with a full stop
 
-This is a style used by many other Open Source projects (Linux, Rails) as well
-as most corporate software development shops.
+This is a style used by many other Open Source projects (Linux, Rails) as well as most corporate software development shops.
 
 [This is a great guide on writing a git commit message](http://chris.beams.io/posts/git-commit/)
 
@@ -98,10 +88,7 @@ This commit message is wonderful!
 
 A logical unit of change can be thought of as completion of a single task.
 
-A good way to figure out if you are not adhering to this rule is to tell
-yourself what you changed ("I added a picture of a donkey to the Twilio
-workshop"). If you find yourself having multiple statements in this description
-then you have made your commit too big.
+A good way to figure out if you are not adhering to this rule is to tell yourself what you changed ("I added a picture of a donkey to the Twilio workshop"). If you find yourself having multiple statements in this description then you have made your commit too big.
 
 #### Examples
 
@@ -121,9 +108,7 @@ This commit is great as only one logical change was made.
 
 ### Commits should explain the change, but not be longer than 50 chars
 
-A commit message is used for quickly summarizing a change. Another contributor
-should be able to read it, along with the content and immediately understand the
-change does.
+A commit message is used for quickly summarizing a change. Another contributor should be able to read it, along with the content and immediately understand the change does.
 
 #### Examples
 
