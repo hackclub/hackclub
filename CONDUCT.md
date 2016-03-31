@@ -70,7 +70,6 @@ The Code of Conduct Working Group is a group of people that represent the Hack C
 | Name                | Slack Handle | Email                 |
 | ------------------- | ------------ | --------------------- |
 | Harrison Shoebridge | @harrison    | harrison@hackclub.com |
-| Jonathan Leung      | @jonl        | jonathan@hackclub.com |
 | Zach Latta          | @zrl         | zach@hackclub.com     |
 
 If you encounter a conduct-related issue, you should report it to the Working Group using the process described below. **Do not** post about the issue publicly or try to rally sentiment against a particular individual or group.
