@@ -4,7 +4,7 @@ Short link to this workshop: https://workshops.hackclub.com/twilio
 
 -------------------------------------------------------------------------------
 
-In this workshop, you will learn how to use the a modified version of the
+In this workshop, you will learn how to use a modified version of the
 Twilio API to make phone calls and send text messages that allow you to make
 things like group texting apps.
 
