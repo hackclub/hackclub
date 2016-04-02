@@ -1,77 +1,122 @@
-# How To Contribute
+# Contribution Guidelines
 
-This is a guide explaining the contribution workflow we use at Hack Club!
+This document contains a set of guidelines which any contributions to *any* Hack Club repository must follow.
 
-**Table of Contents**
+[If you disagree with something here, you should open up an issue to discuss making a change!](https://github.com/hackclub/hackclub/issues/new)
 
-- [Code of Conduct](#code-of-conduct)
-- [Find something you want to change](#find-something-to-change)
-- [If it is big, talk about it on Slack](#talk-about-it-on-slack)
-- [Create an issue if you want to proceed](#create-an-issue)
-- [Make a change](#make-a-change)
+## Contributing to the Workshops
 
-## Code of Conduct
+For more details specific to contributing a workshop, [look here](workshops/CONTRIBUTING.md).
 
-Hack Club's community includes people from many different backgrounds. Hack Club
-is committed to providing a friendly, safe and welcoming environment for all.
+## Table of Contents
 
-If you join in or contribute to the Hack Club ecosystem, please respect our
-[Code of Conduct](CONDUCT.md).
+1. [GitHub Flow](#github-flow)
+2. [Style Guides](#styleguides)
+3. [Branch Names](#branch-names)
+4. [File Names](#file-names)
+5. [Git Commits](#git-commits)
 
-## Find Something To Change
+## GitHub Flow
 
-If you do not know where to begin you can always search through the open
-[GitHub issues][issues] to find something suitable. If you are a beginner (or
-have never contributed to an Open Source repository before) you may be
-interested in checking out issues with the
-[`first-timers-only` tag][first_timers].
+We use a modified version of [GitHub Flow](https://guides.github.com/introduction/flow/) at Hack Club. The only difference is instead of deploying from a reviewed pull request, we merge first and deploy straight from master.
 
-[issues]: https://github.com/hackclub/hackclub/issues
-[first_timers]: https://github.com/hackclub/hackclub/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Afirst-timers-only
+Part of the GitHub Flow is submitting pull requests. See https://help.github.com/articles/using-pull-requests/ for a good overview of what pull requests are and how to use them. We use the _fork & pull model_ for managing contributions.
 
-## Talk About It On Slack
+## Styleguides
 
-If you are going to make a big change, discuss it on our Slack in the
-[`#curriculum` channel][curriculum_channel] to give us a heads up
-([Don't have a Slack account?][slack]). To get an even more speedy response,
-mention `@jonl` and `@harrison`.
+If a styleguide exists for the language you're contributing in, please do the maintainers of the repository a favor and follow it.
 
-[slack]: https://slack.hackclub.com
-[curriculum_channel]: https://starthackclub.slack.com/messages/curriculum/
+Our existing styleguides:
 
-## Create An Issue
+- [Markdown](https://github.com/hackclub/meta/blob/master/styleguides/markdown.md)
+- [English](https://github.com/hackclub/meta/blob/master/styleguides/english.md)
+- [CSS](https://github.com/hackclub/meta/blob/master/styleguides/css.md)
 
-If you don't know how to fix something yourself, you can
-[create an issue][create_issue]. Be specific enough that others can easily claim
-the task and implement it.
+## Branch Names
 
-[create_issue]: https://github.com/hackclub/hackclub/issues/new
+Branch names should adhere to the following:
 
-## Make A Change
+- All lowercase
+- `-` as space separator for branch names
+- If a feature branch, include the name of the feature
 
-1. All contributions should be made through your own fork
-   ([Need help forking a repository?][fork]). Once you have your own fork set up
-   you can begin making your changes on it.
-2. If you don't want to clone the entire repo, you can do a shallow clone. A 
-   shallow clone will download only the latest changes, i.e., it will not 
-   download the entire history. You can do a shallow clone like so :
-   `git clone --depth 1 <repository-link>`. The `<repository-link>` is the 
-   link at the top of the your forked repository, it will look something 
-   like `https://github.com/<yourusername>/hackclub.git`.
-3. Check out a branch from your fork that describes the change being made. Make
-   sure you only include commits in this branch that are related to the branch's
-   feature.
-4. After you have made your changes and pushed them onto your GitHub fork, you
-   can create a Pull Request
-   ([Want help submitting a Pull Request?][pull_request]). If the Pull Request
-   resolves an issue, be sure to have the issue number in the description.
-5. Wait for your PR to be reviewed by one of the core contributors. We'll assess
-   for following the [contribution guidelines](GUIDELINES.md) and if it is
-   intended to solve an issue, how well it does so.
+## File Names
 
-[fork]: https://help.github.com/articles/fork-a-repo/
-[pull_request]: https://help.github.com/articles/using-pull-requests/
+File names should follow the following guidelines:
 
-## Celebrate!
+- All lowercase
+- `_` as space separator for file names
+- `-` as a space separator for dates in file names
+- Dates in `YY-MM-DD` format
 
-![](img/dance.gif)
+## Git Commits
+
+In order to ensure that our git history makes sense we have certain guidelines which we require contributors to adhere to. These are:
+
+### Commits should follow the commit standards
+
+These are:
+
+- Commits should be written in the imperative mood
+- Commits should start with a capital letter
+- Commits should not end with a full stop
+
+This is a style used by many other Open Source projects (Linux, Rails) as well as most corporate software development shops.
+
+[This is a great guide on writing a git commit message](http://chris.beams.io/posts/git-commit/)
+
+#### Examples
+
+> fix typo in introduction.
+
+- Does **not** start with a capital letter
+- Ends with a full stop
+
+> Added Iron Man GIF
+
+- Does **not** use the imperative mood
+
+> Adding more pizza parlors to directory
+
+- Does **not** use the imperative mood
+
+> Fix typo in introduction to user guide
+
+This commit message is wonderful!
+
+### Commits should be one logically unit of change
+
+A logical unit of change can be thought of as completion of a single task.
+
+A good way to figure out if you are not adhering to this rule is to tell yourself what you changed ("I added a picture of a donkey to the Twilio workshop"). If you find yourself having multiple statements in this description then you have made your commit too big.
+
+#### Examples
+
+> Add an image of pizza, fix typos, rewrite `README.md`
+
+This commit message contains three units of change, they are:
+
+- An image of pizza
+- Fixed typos
+- Rewrote `README.md`
+
+These should be split into one commit each.
+
+> Add an image of pizza
+
+This commit is great as only one logical change was made.
+
+### Commits should explain the change, but not be longer than 50 chars
+
+A commit message is used for quickly summarizing a change. Another contributor should be able to read it, along with the content and immediately understand the change does.
+
+#### Examples
+
+> Fix typo
+
+- This commit message does not give any context
+
+> Add the spark reactor source code into the document where we add our thoughts
+
+- This commit message is too long! It should be less than 50 characters!
+- It uses too many words and could be simplified

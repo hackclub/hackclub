@@ -79,7 +79,8 @@ So you've finished writing a great workshop, and you're ready to make a pull
 request. Awesome! But before you do, make sure you've covered these items:
 
 - [ ] All filenames follow the right conventions, and the files are in the
-  right place. Check [this](../GUIDELINES.md) for guidelines.
+  right place. [Click here](../CONTRIBUTING.md) for an overview of our
+  contribution guidelines.
 - [ ] The workshop has been added to the list in `workshops/README.md`.
 
 Great. Now, follow [these instructions](../CONTRIBUTING.md) on how to submit a
