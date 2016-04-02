@@ -10,7 +10,6 @@ _A step-by-step guide by the Hack Club community._
   - [Teacher Sponsor and Space](#teacher-sponsor-and-space)
   - [Club Registration](#club-registration)
   - [Student Sign-Ups](#student-sign-ups)
-    - [Elevator Pitch](#elevator-pitch)
 - [The First Meeting](#the-first-meeting)
   - [Waiting for Hackers to Arrive](#waiting-for-hackers-to-arrive)
   - [Introduction Presentation](#introduction-presentation)
@@ -156,6 +155,37 @@ https://docs.google.com/forms/d/1Tr8OkMX3IN8SWsYkWeTTW4GIyNSDdvco8uks9UE_FOE/vie
 Now for the most important part of this whole process: actually getting people
 to come to your club.
 
+There are generally two primary channels for driving sign-ups:
+
+1. Club fair
+2. Posters
+
+We'll go into depth on both of these in the sections below.
+
+Your sign-up goal should be driven by the number of people you want to attend
+your meetings -- aim for double that number. If you want to have 20 to 30
+members come to your first meeting, you should shoot for at least 50 sign-ups.
+If you want 30-40 to come, shoot for at least 70.
+
+When it comes to pitching Hack Club, keep it short and simple, like the
+following:
+
+> Hack Club is a place where people come together to build things with code
+> (like apps, websites, and games).
+>
+> - By the end of the first meeting, everyone has built their first website and
+>   put it online.
+> - By the end of the third meeting, everyone has build a website that can call
+>   and text your phone.
+> - By the fifth meeting, everyone has built their first game and has put it
+>   online.
+>
+> Hack Club is like a continuous hackathon that happens twice a week at school.
+
+Now to go into depth on the three channels for driving sign-ups.
+
+#### Club Fair
+
 Most schools have a day for advertising clubs at the beginning of each
 semester. This commonly called the "club fair", "club day", "club rush", or
 "club showcase". It is extremely important that you have a presence at this
@@ -168,27 +198,12 @@ names, emails, and phone numbers. Excel or Google Sheets is a good way to
 collect this info, though it's a good idea to also bring a pencil and a
 clipboard in case of technical difficulties.
 
-Your sign-up goal should be driven by how many people you want to attend your
-meetings -- aim for double that number. If you want to have 20 to 30 members
-come to your first meeting, you should shoot for at least 50 sign-ups. If you
-want 30-40 to come, shoot for at least 70.
+#### Posters
 
-When it comes to actually pitching Hack Club, keep it short and simple. We've
-included an example elevator pitch below.
+Having posters for your club in the hallways and in classrooms exposes new
+members to your club and reminds people where and when the club meets.
 
-#### Elevator Pitch
-
-Hack Club is a place where people come together to build things with code (like
-apps, websites, and games).
-
-- By the end of the first meeting, everyone has built their first website and
-  put it online.
-- By the end of the third meeting, everyone has build a website that can call
-  and text your phone.
-- By the fifth meeting, everyone has built their first game and has put it
-  online.
-
-Hack Club is like a continuous hackathon that happens twice a week at school.
+Check out the [`posters/`](posters/) sub-directory for example club posters.
 
 ## The First Meeting
 
