@@ -203,8 +203,6 @@ _How likely is it that you would recommend this workshop to a friend?_
 
 Now make this game yours! Go add features to it that you think would be really cool! Transform it into a completely different game of your own!
 
-You can checkout some cool examples in the Adding Functionality section in the main README [adding more functionality to your app](README.md#part-2-adding-more-functionality).
-
 [r1]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=1
 [r2]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=2
 [r3]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=3

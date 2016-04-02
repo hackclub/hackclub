@@ -4,9 +4,7 @@ Short link to this workshop: https://workshops.hackclub.com/soccer
 
 -------------------------------------------------------------------------------
 
-This tutorial is broken down into two parts:
-
-In [Part 1](#part-1-single-player-soccer), you learn to build a simple single player soccer game by following a clearly outlined set of steps:
+In this tutorial, we'll walk you through building a single-player soccer game.
 
 [![](img/5_mini.gif)][demo_output]
 
@@ -17,9 +15,7 @@ In [Part 1](#part-1-single-player-soccer), you learn to build a simple single pl
 [demo_output]: https://jsbin.com/gist/6d634e61d71794b9878b
 [demo]: https://jsbin.com/gist/6d634e61d71794b9878b
 
-Then in [Part 2](#part-2-adding-more-functionality) (_still under construction_), we will show you a variety of additional functionality that you can add to your game. You'll pick and choose what you think is cool.
-
-Here is an example of what you could make from what you learn:
+From there, the tutorial is designed to have you continue to expand on your game. Here is an example of what you could end up making:
 
 [![](img/soccer.gif)][demo_advanced_output]
 [![](img/bttn_play_now.png)][demo_advanced_output]
@@ -53,7 +49,7 @@ Don't feel that you have to follow along step-by-step. Figure out the best way t
 
 [starter]: https://jsbin.com/gist/9b98de6863f4f314ea24
 
-# Some Quick Vocabulary
+## Some Quick Vocabulary
 
 Each interactive element in the game (the player, ball, and the goal) is called a **_sprite_**.
 
@@ -65,22 +61,13 @@ The entire area on which everything lives is called the **_canvas_**:
 
 > ![](img/r_vocab_2.png)
 
-## Part 1, Single Player Soccer
+## Getting Started
 
 The instructions below will walk you through step-by-step of how to build a single player soccer game.
 
 | **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
 |--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
 | **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     |                                                                      |
-
-## Part 2, Adding More Functionality
-
-**_Note that this section is still under construction. For now, checkout:_**
-
-1. The code for soccer example at the top of the page
-2. The Dodge Workshop
-
-Think of this section like the topping bar of an ice cream store. You can sprinkle as many or as little of the below features on the maze game that you built in [Part 1](#part-1-single-player-soccer) in any order you please!
 
 ## F.A.Q
 
