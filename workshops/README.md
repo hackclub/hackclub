@@ -23,6 +23,8 @@ This is our recommended workshop flow. Through it you'll learn the fundamentals 
 
 ## The List
 
+### Curriculum Workshops
+
 | Workshop                                   | Technologies                             | What You Build                                                                   | Author                                                                                                                 |
 | ------------------------------------------ | ---------------------------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | [Personal Website][personal_website]       | HTML & CSS                               | Build your first website and get set up on _all the things_ (replaces Portfolio) | Hack Club staff                                                                                                        |
@@ -50,6 +52,10 @@ This is our recommended workshop flow. Through it you'll learn the fundamentals 
 [zachcmiel]: https://github.com/zach-cmiel
 [ad510]: https://github.com/ad510
 [remixz]: https://github.com/remixz
+
+### Sandbox Workshops
+
+There currently aren't any sandbox workshops.
 
 ## Contributing to the Workshops
 
