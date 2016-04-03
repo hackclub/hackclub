@@ -1,7 +1,6 @@
 # Workshops
 
-Welcome to our workshops library, where you'll find all the workshops offered by
-Hack Club.
+Welcome to our workshops library, where you'll find all the workshops offered by Hack Club.
 
 Each workshop is around an hour long and walks you through the process of _building something™_ (like a website, app, or game). Our philosophy is that the best way to learn to code is to immediately get your feet wet and build real things (instead of starting out solely learning concepts).
 
