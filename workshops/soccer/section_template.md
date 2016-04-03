@@ -7,8 +7,7 @@
 
 ## Outcome of This Step
 
-After you finish this step, you will learn how to **TODO**. Here is the code you
-will end up with (_the new code is highlighted in gray_):
+After you finish this step, you will learn how to **TODO**. Here is the code you will end up with (_the new code is highlighted in gray_):
 
 ![](http://placehold.it/300?text=TODO)
 
@@ -19,8 +18,7 @@ will end up with (_the new code is highlighted in gray_):
 
 ## Choose Your Own Path
 
-- [**Walk me through this code step-by-step.**]
-  (#walk-through-of-the-code-step-by-step)
+- [**Walk me through this code step-by-step.**](#walk-through-of-the-code-step-by-step)
     - Recommended for those who
       - Are beginners
       - Who want an in depth understanding of the code
@@ -54,9 +52,7 @@ Also make sure you include links to computer science concepts
 
 ### And that's a wrap
 
-The section immediately below section is the "Give me a brief overview of this
-code". You already did the "Walk me through this code step-by-step" section so
-no need to do it.
+The section immediately below section is the "Give me a brief overview of this code". You already did the "Walk me through this code step-by-step" section so no need to do it.
 
 [Click here to skip to the next section.](#next-up)
 
@@ -64,8 +60,7 @@ no need to do it.
 
 Reproduced below is the code that **TODO**:
 
-New lines marked with
-`// <-- NEW LINE`.
+New lines marked with `// <-- NEW LINE`.
 
 ```js
 TODO                                 // <-- NEW LINE

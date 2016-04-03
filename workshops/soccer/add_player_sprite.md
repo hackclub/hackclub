@@ -7,8 +7,7 @@
 
 ## Outcome of This Step
 
-After you finish this step, you will learn how to add the player sprite. Here is
-the code you will end up with (_the new code is highlighted in gray_):
+After you finish this step, you will learn how to add the player sprite. Here is the code you will end up with (_the new code is highlighted in gray_):
 
 ![](img/2_js_bin.png)
 
@@ -16,8 +15,7 @@ the code you will end up with (_the new code is highlighted in gray_):
 
 ## Choose Your Own Path
 
-- [**Walk me through this code step-by-step.**]
-  (#walk-through-of-the-code-step-by-step)
+- [**Walk me through this code step-by-step.**](#walk-through-of-the-code-step-by-step)
     - Recommended for those who
       - Are beginners
       - Want an in depth understanding of the code
@@ -37,8 +35,7 @@ We can create a sprite by writing the code:
 createSprite();
 ```
 
-Because we only want to create the sprite once, we want to write this in the
-`setup` function because the `setup` function is only run once.
+Because we only want to create the sprite once, we want to write this in the `setup` function because the `setup` function is only run once.
 
 - [ ] _Go ahead and `createSprite();` at the bottom of the `setup` function:_
 
@@ -46,16 +43,13 @@ Because we only want to create the sprite once, we want to write this in the
 
 _Do you see the sprite created above on the top left hand side of the canvas?_
 
-Over the sections below, we're going to slowly add to the `createSprite()`
-function
+Over the sections below, we're going to slowly add to the `createSprite()` function
 
 ### Centering the Sprite Horizontally
 
-Let's center the sprite horizontally. Since our canvas is `250` pixels wide, the
-center of it is `125`.
+Let's center the sprite horizontally. Since our canvas is `250` pixels wide, the center of it is `125`.
 
-To set the x coordinate of our sprite to `125` we can change our code to the
-following:
+To set the x coordinate of our sprite to `125` we can change our code to the following:
 
 ```
 createSprite(125);
@@ -69,8 +63,7 @@ createSprite(125);
 
 ### Centering the Sprite Vertically
 
-Let's center the sprite vertically too. Since the canvas is 500 pixels in
-height, the center is 250.
+Let's center the sprite vertically too. Since the canvas is 500 pixels in height, the center is 250.
 
 Let's set the center of the sprite to `250`
 
@@ -89,8 +82,7 @@ Here is how the coordinate system is laid out:
 ![](img/2_coordinate_details.png)
 
 
-And this is what means for our sprite to have it's coordinates set to
- `x = 125` and `y = 250`
+And this is what means for our sprite to have it's coordinates set to `x = 125` and `y = 250`
 
 ![](img/2_sprite_position.png)
 
@@ -98,8 +90,7 @@ And this is what means for our sprite to have it's coordinates set to
 
 ### Shrinking the Width
 
-I want to make the width of the sprite a bit smaller. The width is by default
-`100`. Let's make the width `50` instead.
+I want to make the width of the sprite a bit smaller. The width is by default `100`. Let's make the width `50` instead.
 
 ```
 createSprite(125, 250, 50);
@@ -142,11 +133,9 @@ createSprite(150, 100, 50, 50);
 
 ## Remembering the Sprite
 
-In order for a computer program to remember something exists, it needs to store
-it in a **_variable_**.
+In order for a computer program to remember something exists, it needs to store it in a **_variable_**.
 
-So although, we have already created the sprite, the program will not remember
-it unless you store it in a variable.
+So although, we have already created the sprite, the program will not remember it unless you store it in a variable.
 
 Let's create a variable named `player`:
 
@@ -158,8 +147,7 @@ var player;
 
 > ![](img/2_write-e_var_player.gif)
 
-Now that the variable is created, we can assign the **_output_** of the
-`createSprite` **_function_** to `player`.
+Now that the variable is created, we can assign the **_output_** of the `createSprite` **_function_** to `player`.
 
 ```
 player = createSprite(125, 250, 50, 50);
@@ -171,9 +159,7 @@ player = createSprite(125, 250, 50, 50);
 
 ### And that's a wrap!
 
-The section immediately below is the "Give me a brief overview of this
-code". You already did the "Walk me through this code step-by-step" section so
-there's no need to do it.
+The section immediately below is the "Give me a brief overview of this code". You already did the "Walk me through this code step-by-step" section so there's no need to do it.
 
 [Click here to skip to the next section.](#next-up)
 
@@ -181,8 +167,7 @@ there's no need to do it.
 
 Reproduced below is the code that adds the new sprites:
 
-New lines marked with
-`// <-- NEW LINE`.
+New lines marked with `// <-- NEW LINE`.
 
 ```js
 var player;                                 // <-- NEW LINE

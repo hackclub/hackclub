@@ -6,8 +6,7 @@ Short link to this workshop: https://workshops.hackclub.com/soccer
 
 This tutorial is broken down into two parts:
 
-In [Part 1](#part-1-single-player-soccer), you learn to build a simple
-single player soccer game by following a clearly outlined set of steps:
+In [Part 1](#part-1-single-player-soccer), you learn to build a simple single player soccer game by following a clearly outlined set of steps:
 
 [![](img/5_mini.gif)][demo_output]
 
@@ -18,9 +17,7 @@ single player soccer game by following a clearly outlined set of steps:
 [demo_output]: https://jsbin.com/gist/6d634e61d71794b9878b
 [demo]: https://jsbin.com/gist/6d634e61d71794b9878b
 
-Then in [Part 2](#part-2-adding-more-functionality) (_still under
-construction_), we will show you a variety of additional functionality that you
-can add to your game. You'll pick and choose what you think is cool.
+Then in [Part 2](#part-2-adding-more-functionality) (_still under construction_), we will show you a variety of additional functionality that you can add to your game. You'll pick and choose what you think is cool.
 
 Here is an example of what you could make from what you learn:
 
@@ -33,8 +30,7 @@ Here is an example of what you could make from what you learn:
 
 ## How to Use This Tutorial
 
-Don't feel that you have to follow along step-by-step. Figure out the best way
-to navigate this tutorial for you. This might look like the following:
+Don't feel that you have to follow along step-by-step. Figure out the best way to navigate this tutorial for you. This might look like the following:
 
 **If you have never programmed before:**
 
@@ -42,34 +38,24 @@ to navigate this tutorial for you. This might look like the following:
 
 **If you have programmed a _little_:**
 
-- Huzzah! Feel free to follow along step-by-step and skim through sections you
-  understand.
+- Huzzah! Feel free to follow along step-by-step and skim through sections you understand.
 
 **If you have more experience:**
 
-- You already know the basics of coding. Your goal here is to learn how to use
-  the JavaScript game frameworks [p5.js](http://p5js.org/) and
-  [p5.play.js](http://p5play.molleindustria.org) and then make your own stuff
-  with it.
-- You might spend most of your time jumping around from section to section and
-  just picking and choosing what you need.
+- You already know the basics of coding. Your goal here is to learn how to use the JavaScript game frameworks [p5.js](http://p5js.org/) and [p5.play.js](http://p5play.molleindustria.org) and then make your own stuff with it.
+- You might spend most of your time jumping around from section to section and just picking and choosing what you need.
 
 ## Setup
 
-1. If you're more experienced and want to use your own editor, follow
-   [these instructions](own_editor.md).
-2. If you haven't already, make sure you have a JS Bin account first. <a
-   href="https://jsbin.com/register" target="_blank">Create one here.</a>
-3. Then open [this JS Bin][starter]. It has all the starter code we need for
-   this tutorial. Write any new code in this JS Bin. We'll refer to this JS Bin
-as your **_"working bin"_**.
+1. If you're more experienced and want to use your own editor, follow [these instructions](own_editor.md).
+2. If you haven't already, make sure you have a JS Bin account first. <a href="https://jsbin.com/register" target="_blank">Create one here.</a>
+3. Then open [this JS Bin][starter]. It has all the starter code we need for this tutorial. Write any new code in this JS Bin. We'll refer to this JS Bin as your **_"working bin"_**.
 
 [starter]: https://jsbin.com/gist/9b98de6863f4f314ea24
 
 # Some Quick Vocabulary
 
-Each interactive element in the game (the player, ball, and the goal) is called a
-**_sprite_**.
+Each interactive element in the game (the player, ball, and the goal) is called a **_sprite_**.
 
 > ![](img/r_vocab_1.png)
 
@@ -81,8 +67,7 @@ The entire area on which everything lives is called the **_canvas_**:
 
 ## Part 1, Single Player Soccer
 
-The instructions below will walk you through step-by-step of how to build
-a single player soccer game.
+The instructions below will walk you through step-by-step of how to build a single player soccer game.
 
 | **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
 |--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
@@ -95,16 +80,13 @@ a single player soccer game.
 1. The code for soccer example at the top of the page
 2. The Dodge Workshop
 
-Think of this section like the topping bar of an ice cream store. You
-can sprinkle as many or as little of the below features on the maze game that
-you built in [Part 1](#part-1-single-player-soccer) in any order you please!
+Think of this section like the topping bar of an ice cream store. You can sprinkle as many or as little of the below features on the maze game that you built in [Part 1](#part-1-single-player-soccer) in any order you please!
 
 ## F.A.Q
 
 **What programming languages and libraries are we using?**
 
-- We are learning to use JavaScript game framework [p5.js](http://p5js.org/) and
-[p5.play.js](http://p5play.molleindustria.org).
+- We are learning to use JavaScript game framework [p5.js](http://p5js.org/) and [p5.play.js](http://p5play.molleindustria.org).
 
 ## Listing of Computer Science Concepts
 

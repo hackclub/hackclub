@@ -7,8 +7,7 @@
 
 ## Outcome of This Step
 
-After you finish this step, you will learn how to to add the goal sprite. Here
-is the code you will end up with (_the new code is highlighted in gray_):
+After you finish this step, you will learn how to to add the goal sprite. Here is the code you will end up with (_the new code is highlighted in gray_):
 
 > ![](img/4_js_bin.gif)
 
@@ -16,8 +15,7 @@ is the code you will end up with (_the new code is highlighted in gray_):
 
 ## Choose Your Own Path
 
-- [**Walk me through this code step-by-step.**]
-  (#walk-through-of-the-code-step-by-step)
+- [**Walk me through this code step-by-step.**](#walk-through-of-the-code-step-by-step)
     - Recommended for those who
       - Are beginners
       - Want an in depth understanding of the code
@@ -31,8 +29,7 @@ is the code you will end up with (_the new code is highlighted in gray_):
 
 ## Adding the Ball Sprite
 
-Create a ball sprite in a similar way that you created the player sprite in
-[step 2](add_player_sprite.md).
+Create a ball sprite in a similar way that you created the player sprite in [step 2](add_player_sprite.md).
 
 Here's the code that contains the new code to add a ball sprite:
 
@@ -56,14 +53,11 @@ function draw() {
 }
 ```
 
-- [ ] _Go ahead and add these two new lines of code. If you don't quite
-       understand how they work, feel free to review [step 2]
-       (add_player_sprite.md)._
+- [ ] _Go ahead and add these two new lines of code. If you don't quite understand how they work, feel free to review [step 2] (add_player_sprite.md)._
 
 > ![](img/4_write-a_create_ball.gif)
 
-If you look at the above animation, you will see that the player sprite does not
-move the ball around.
+If you look at the above animation, you will see that the player sprite does not move the ball around.
 
 ## Making the Player Sprite Be Able to Move the Ball Around
 
@@ -73,8 +67,7 @@ All we need to do is add this simple piece of code:
 ball.bounce(player)
 ```
 
-The above line of code can be interpreted as "make the **`ball`** **`bounce`**
-against the **`player`**".
+The above line of code can be interpreted as "make the **`ball`** **`bounce`** against the **`player`**".
 
 - [ ] _Let's add the above line of code to our code:_
 
@@ -82,16 +75,13 @@ against the **`player`**".
 
 ### And that's a wrap!
 
-The section immediately below is the "Give me a brief overview of this
-code". You already did the "Walk me through this code step-by-step" section
-so there's no need to do it.
+The section immediately below is the "Give me a brief overview of this code". You already did the "Walk me through this code step-by-step" section so there's no need to do it.
 
 [Click here to skip to the next section.](#next-up)
 
 # Brief Overview of the Code
 
-Reproduced below is the code that adds a ball and lets the player move it
-around.
+Reproduced below is the code that adds a ball and lets the player move it around.
 
 New lines marked with
 `// <-- NEW LINE`.
@@ -130,8 +120,7 @@ function draw() {
 ball.bounce(player)
 ```
 
-The above line of code can be interpreted as "make the **`ball`** **`bounce`**
-against the **`player`**".
+The above line of code can be interpreted as "make the **`ball`** **`bounce`** against the **`player`**".
 
 ## Next Up
 

@@ -7,8 +7,7 @@
 
 ## Outcome of This Step
 
-When the ball touches the goal, we want the ball to disappear. There are two
-things you will learn to do this:
+When the ball touches the goal, we want the ball to disappear. There are two things you will learn to do this:
 
 - How to make a sprite disappear
 - How to detect when one sprite touches another
@@ -22,8 +21,7 @@ Here is the resulting code (_the new code is highlighted in gray_):
 
 ## Choose Your Own Path
 
-- [**Walk me through this code step-by-step.**]
-  (#walk-through-of-the-code-step-by-step)
+- [**Walk me through this code step-by-step.**](#walk-through-of-the-code-step-by-step)
     - Recommended for those who
       - Are beginners
       - Who want an in depth understanding of the code
@@ -37,8 +35,7 @@ Here is the resulting code (_the new code is highlighted in gray_):
 
 ## Creating the Goal Sprite
 
-Create a goal sprite in a similar way that you created the player sprite in
-[step 2](add_player_sprite.md).
+Create a goal sprite in a similar way that you created the player sprite in [step 2](add_player_sprite.md).
 
 Here's the code that contains the new code to add a ball sprite:
 
@@ -66,9 +63,7 @@ function draw() {
 }
 ```
 
-- [ ] _Go ahead and add these new lines of code. If you don't quite understand
-       how they work, feel free to review the analogous code in
-       [step 2](add_player_sprite.md)._
+- [ ] _Go ahead and add these new lines of code. If you don't quite understand how they work, feel free to review the analogous code in [step 2](add_player_sprite.md)._
 
 > ![](img/5_write-a_create_goal.gif)
 
@@ -110,8 +105,7 @@ We can detect whether two sprites are touching by writing the following code:
 ball.overlap(goal)
 ```
 
-This is a function with one output, either `true` or `false`. If the ball is
-touching the goal, it will return `true`. Otherwise, it will return `true`.
+This is a function with one output, either `true` or `false`. If the ball is touching the goal, it will return `true`. Otherwise, it will return `true`.
 
 > ![](img/5_write-c_console_ball_overlap.gif)
 
@@ -130,26 +124,21 @@ if (ball.overlap(goal)) {
 
 We can add this code as follows:
 
-- [ ] _Go ahead and add the above code. Don't forget to close the console and
-      open the JavaScript tab again first._
+- [ ] _Go ahead and add the above code. Don't forget to close the console and open the JavaScript tab again first._
 
 ![](img/5_write-f_if_overlap_remove.gif)
 
 ### And that's a wrap
 
-The section immediately below section is the "Give me a brief overview of this
-code". You already did the "Walk me through this code step-by-step" section
-so no need to do it.
+The section immediately below section is the "Give me a brief overview of this code". You already did the "Walk me through this code step-by-step" section so no need to do it.
 
 [Click here to skip to the next section.](#finish)
 
 # Brief Overview of the Code
 
-Reproduced below is the code that adds a goal and makes the ball disappear if it
-touches the goal.
+Reproduced below is the code that adds a goal and makes the ball disappear if it touches the goal.
 
-New lines marked with
-`// <-- NEW LINE`.
+New lines marked with `// <-- NEW LINE`.
 
 ```js
 var player;
@@ -195,8 +184,7 @@ if (ball.overlap(goal)) {
 }
 ```
 
-You can read the above as **`if`** the **`ball`** **`overlaps`** the **`goal`**
-then **`remove`** the **`ball`**
+You can read the above as **`if`** the **`ball`** **`overlaps`** the **`goal`** then **`remove`** the **`ball`**
 
 - [ ] Go ahead and add this to your code.
 
@@ -206,20 +194,16 @@ Yay you finished the Linear Tutorial!
 
 > ![](img/celebrate.gif)
 
-One last thing. Please click a rating below to rate this workshop. It'll only
-take 3 seconds.
+One last thing. Please click a rating below to rate this workshop. It'll only take 3 seconds.
 
 _How likely is it that you would recommend this workshop to a friend?_
 
 | [1][r1] | [2][r2] | [3][r3] | [4][r4] | [5][r5] | [6][r6] | [7][r7] | [8][r8] | [9][r9] | [10][r10] |
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
 
-Now make this game yours! Go add features to it that you think would be really
-cool! Transform it into a completely different game of your own!
+Now make this game yours! Go add features to it that you think would be really cool! Transform it into a completely different game of your own!
 
-You can checkout some cool examples in the Adding Functionality section in the
-main README [adding more functionality to your app]
-(README.md#part-2-adding-more-functionality).
+You can checkout some cool examples in the Adding Functionality section in the main README [adding more functionality to your app](README.md#part-2-adding-more-functionality).
 
 [r1]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=1
 [r2]: https://feedback-redir.hackclub.com/1siArk1L3ZWI57xyFpHrz7BuSQEitL2hgmsiW2Ln4qms?ip=entry.78173348&rfield=entry.559841237&r=2
