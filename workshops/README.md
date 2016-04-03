@@ -4,7 +4,7 @@ Welcome to our workshops library, where you'll find all the workshops offered by
 
 Each workshop is around an hour long and walks you through the process of _building something™_ (like a website, app, or game). Our philosophy is that the best way to learn to code is to immediately get your feet wet and build real things (instead of starting out solely learning concepts).
 
-The best way to utilize these workshops is to choose a track, and then set aside 3-4 hours after each workshop to extend what you built (for example, adding multiplayer support to the [Soccer game](soccer/README.md)).
+The best way to utilize these workshops is to choose a track, and then set aside a few hours after each workshop to extend what you built (for example, adding multiplayer support to the [Soccer game](soccer/README.md)).
 
 There are two tiers of workshops: curriculum and sandbox. Curriculum workshops are ready to be run in club meetings. They have undergone review and testing from community and staff. Sandbox workshops are everything else-- from a half-formed idea to a workshop missing its conclusion. If you're interested in writing or contributing to a workshop, you can get started by checking out [the contribution guide](CONTRIBUTING.md) – or ask us in #meta on the Slack.
 
