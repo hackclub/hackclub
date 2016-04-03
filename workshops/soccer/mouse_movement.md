@@ -7,9 +7,7 @@
 
 ## Outcome of This Step
 
-After you finish this step, you will learn how to move a sprite to wherever the
-mouse is. Here is the code you will end up with (_the new code is highlighted in
-gray_):
+After you finish this step, you will learn how to move a sprite to wherever the mouse is. Here is the code you will end up with (_the new code is highlighted in gray_):
 
 > ![](img/3_js_bin.gif)
 
@@ -17,8 +15,7 @@ gray_):
 
 ## Choose Your Own Path
 
-- [**Walk me through this code step-by-step.**]
-  (#walk-through-of-the-code-step-by-step)
+- [**Walk me through this code step-by-step.**](#walk-through-of-the-code-step-by-step)
     - Recommended for those who
       - Are beginners
       - Who want an in depth understanding of the code
@@ -34,8 +31,7 @@ gray_):
 
 Whenever we want to set the position of the sprite to be wherever our mouse is.
 
-We don't want to do this just once, we want to do it _forever_. Because we want
-to do it forever, let's write it in `draw function`
+We don't want to do this just once, we want to do it _forever_. Because we want to do it forever, let's write it in `draw function`
 
 ## Setting the Position of the Sprite
 
@@ -55,8 +51,7 @@ You can read the above line as follows:
 
 ## Setting the `x` Position of the Sprite to the `x` location of the mouse
 
-Now instead of setting the `x` position to be `50`, let's set it to the `x`
-position of the mouse.
+Now instead of setting the `x` position to be `50`, let's set it to the `x` position of the mouse.
 
 We can do this by writing
 
@@ -82,16 +77,13 @@ player.position.y = mouseY;
 
 ### And that's a wrap
 
-The section immediately below section is the "Give me a brief overview of this
-code". You already did the "Walk me through this code step-by-step" section so
-no need to do it.
+The section immediately below section is the "Give me a brief overview of this code". You already did the "Walk me through this code step-by-step" section so no need to do it.
 
 [Click here to skip to the next section.](#next-up)
 
 # Brief Overview of the Code
 
-Reproduced below is the code that sets the player sprite's position to the
-position of the mouse
+Reproduced below is the code that sets the player sprite's position to the position of the mouse
 
 New lines marked with `// <-- NEW LINE`.
 
@@ -127,8 +119,7 @@ We can interpret the following line:
 player.position.x = mouseX;  // <-- NEW
 ```
 
-as "Set the **`player`**'s **`x`** **`position`** to be equal to the x position
-of the mouse (**`mouseX`**)"
+as "Set the **`player`**'s **`x`** **`position`** to be equal to the x position of the mouse (**`mouseX`**)"
 
 
 ## Next Up

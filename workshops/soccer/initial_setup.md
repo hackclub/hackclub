@@ -1,16 +1,11 @@
 # Step 1: Understanding the Initial Setup
 
-In this tutorial, you will be writing JavaScript code and using the p5.js and
-p5.play.js library. You can learn more about them by Googling for `JavaScript`,
-`p5.js` and `p5.play.js` respectively.
+In this tutorial, you will be writing JavaScript code and using the p5.js and p5.play.js library. You can learn more about them by Googling for `JavaScript`, `p5.js` and `p5.play.js` respectively.
 
 ## Setup
 
-- [ ] First off, make sure you've followed the
-      [setup directions](README.md#setup) to create your working bin on the
-      previous page.
-- [ ] Make sure two tabs open, one for your working bin, and one for these
-      workshop directions.
+- [ ] First off, make sure you've followed the [setup directions](README.md#setup) to create your working bin on the previous page.
+- [ ] Make sure two tabs open, one for your working bin, and one for these workshop directions.
 
 ## Understanding the Code in the Working Bin
 
@@ -21,11 +16,9 @@ The the code for the working bin has 2 parts:
 
 ### HTML
 
-The HTML adds the p5.js and p5.play.js libraries. Learn more about what the HTML
-does [here](own_editor.md).
+The HTML adds the p5.js and p5.play.js libraries. Learn more about what the HTML does [here](own_editor.md).
 
-We won't really talk about the HTML that much in this tutorial. Our primary
-focus will be the JavaScript code.
+We won't really talk about the HTML that much in this tutorial. Our primary focus will be the JavaScript code.
 
 # Understanding the JavaScript
 
@@ -47,8 +40,7 @@ Don't worry about this too much now, we'll touch on this more later.
 
 ## Overview
 
-For the rest of this section, we're going to understand the following lines of
-code:
+For the rest of this section, we're going to understand the following lines of code:
 
   - `createCanvas(300, 500);`
   - `background(255, 240, 220);`
@@ -64,9 +56,7 @@ createCanvas(300, 500);
 
 ### Understanding through Tinkering
 
-- [ ] _In your working bin, try changing some of the values of `createCanvas` to
-      understand what the values affect. Below is an example of how I play
-      around with the values of `createCanvas` to try understand what it does:_
+- [ ] _In your working bin, try changing some of the values of `createCanvas` to understand what the values affect. Below is an example of how I play around with the values of `createCanvas` to try understand what it does:_
 
 > ![](img/1_tinkering_createCanvas.gif)
 
@@ -96,9 +86,7 @@ Here is a diagram representing the result of the above code:
 
 ### Understanding Through Tinkering
 
-- [ ] _Try changing some of the values of `createCanvas` to see what it
-      changes. Below is an example of how I play around with the values of
-      `background` to try understand what it does:_
+- [ ] _Try changing some of the values of `createCanvas` to see what it changes. Below is an example of how I play around with the values of `background` to try understand what it does:_
 
 > ![](img/1_tinkering_background.gif)
 
@@ -118,14 +106,11 @@ This code sets the background color of the canvas:
 
 ## Understanding `drawSprites`
 
-Remember from the previous page that each of the interactive elements on the
-page are called sprites.
+Remember from the previous page that each of the interactive elements on the page are called sprites.
 
 > ![](img/r_vocab_1.png)
 
-The code `drawSprites()` is responsible for drawing all of those sprites to the
-page once they are created. But how do you create a sprite? You'll find out in
-the next section!
+The code `drawSprites()` is responsible for drawing all of those sprites to the page once they are created. But how do you create a sprite? You'll find out in the next section!
 
 ## Next
 
@@ -169,8 +154,7 @@ In the above drawing, you can see that
 But what are the side effects?
 
 - The lemonade juicing machine gets hot from use.
-- You, the user, who is not an input, get better at learning how to make
-  lemonade.
+- You, the user, who is not an input, get better at learning how to make lemonade.
 - You and your friends bond over making lemonade.
 
 Sometimes, you care more about the side effects than the outputs.
@@ -201,9 +185,7 @@ The side effect of this function is to set the color of the canvas.
 
 ##### Outputs
 
-This function has no output. This may not seem like it makes sense right now,
-but if you visit the functions section of `createSprite` (which doesn't exist
-yet), it will make much more sense.
+This function has no output. This may not seem like it makes sense right now, but if you visit the functions section of `createSprite` (which doesn't exist yet), it will make much more sense.
 
 ## Steps
 
