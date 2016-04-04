@@ -200,21 +200,22 @@ Introduce interfacing with an API for use in week 9 (see below)
 
 Short hack+demo as before
 
-## Meeting 11 - "Hack Week"
+## Meeting 11 - 12 - "Second Hack Day"
 
 - Hack week (no new concepts) with party
 - Try to combine everything you've learned, or build on something from before
 - Encourage larger group collaborations, either with creating 1 large project together, or creating a bunch of small things. Overall, a very abstract week, used to encourage members to build on everything they've done for the past ~8-9 weeks.
+- Do demos, like in the first Hack Day
 
 Recommend: demo day! pizza! special guests!
 
-## Meeting 12, 13, 14 - "Electives"
+## Meeting 13, 14, 15 - "Electives"
 
 Having done the hack week, the members should feel confident in creating new things. We'll be creating a bunch of more abstract resources that aren't strictly tutorials, but are more ideas of things to create, and how to go about doing them. We'll potentially introduce new languages, new concepts, just a bunch of kinda crazy stuff. These can kinda be seen as "individual studies", since people can choose from a bunch of concepts. Members can still work together though.
 
-## Post Meeting 14
+## Post Meeting 15
 
-Members have now "finished" our curriculum! This will have been after about 4 months, so members should feel pretty comfortable with coding. We'll still be creating resources for post week 12, but they'll be lots of experimental things, and stuff that assumes some knowledge, or potentially stuff we'd want feedback on. Other things these clubs could do:
+Members have now "finished" our curriculum! This will have been after about 4 months, so members should feel pretty comfortable with coding. We'll still be creating resources for post week 15, but they'll be lots of experimental things, and stuff that assumes some knowledge, or potentially stuff we'd want feedback on. Other things these clubs could do:
 
 - Organize a hackathon together, instead of having a traditional meeting for that week
 - Work together as a club to create a workshop, for whatever skill level they choose
