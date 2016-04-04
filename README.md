@@ -1,6 +1,6 @@
 # ![Hack Club logo](https://cdn.rawgit.com/hackclub/meta/82000f7457efdfc20b9feff4da718f6839e69c05/logos/hack_club_red_text.svg)
 
-Hack Club is the open-source movement of student-led high school coding clubs.
+Hack Club is the worldwide movement of student-led coding clubs.
 
 Hack Clubs are after-school communities at high schools where people build things together. This repository contains the tools for starting and leading great clubs.
 
