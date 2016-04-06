@@ -7,7 +7,7 @@ Short link to this workshop: https://workshops.hackclub.com/dodge
 In this workshop we're going to build a simple yet addictive game using JavaScript. Previously when we've done web development projects, we've used HTML elements and things of that ilk to build what we see in the browser. Today we're going to do things a little differently and use some new tools-- JavaScript, along with two great libraries called p5js and p5play, to build our game.
 
 p5js is a library for making stuff in conjunction with HTML canvas. It is a JS port of Processing, a (library? language? framework?) for making pictures and such.
-p5play is made by a really cool game company called [molleindustria](http://www.molleindustria.org/), and builds on p5js to add easy to use functionality that comes in handy in building games.
+p5play is made by a really cool game company called [Molleindustria](http://www.molleindustria.org/), and builds on p5js to add easy to use functionality that comes in handy in building games.
 
 ## Table of contents:
 
@@ -237,6 +237,8 @@ enemy.position.y = enemy.position.y + 1;
 
 Instead of modifying `position.x`, we're modifying `position.y`, because we want the enemy to move vertically. We're incrementing the value, because we want the position to move downward. Remember, in the coordinate system in p5js, the y values increase in the downward direction.
 
+I'm going to make my enemy a bit faster than my player.
+
 Now our code looks like this:
 
 ```
@@ -251,7 +253,7 @@ function draw() {
     player.position.x = player.position.x - 1;
   }
 
-  enemy.position.y = enemy.position.y + 1;
+  enemy.position.y = enemy.position.y + 3;
 
   drawSprites();
 }
@@ -292,26 +294,133 @@ if (enemy.overlap(player)) {
 }
 ```
 
-This is our lose condition. Now we'll punish the user for losing in this `gameOver()` function.
+This is our lose condition. Now we can punish the user for losing in this `gameOver()` function.
 
 ### Game Over
 
-Even though it may feel like all of our code only uses p5js to make stuff in the canvas, we musn't forget that we are still just writing JavaScript. So let's define our `gameOver()` function, the way we would any other JS function. We'll place it underneath the `draw()` function.
+Even though it may feel like we've been writing all of our code in these two special p5js functions to make stuff in the canvas, we musn't forget that we are still just writing JavaScript. So let's define our own function, `gameOver()`, the way we would any other JS function. We'll place it underneath the `draw()` function.
 
 ```
 function gameOver() {
 }
 ```
 
-And let's have an alert pop up when the game ends.
+And let's display a Game Over screen.
 
 ```
 function gameOver() {
-  alert("Game Over");
+  background(0);
+  textAlign(CENTER);
+  text("Game Over!",width/2,height/2);
 }
 ```
 
-And now it looks like our game can end! Hurray! 
+We're drawing a background for our Game Over screen, and then placing text over it. I'm sure you can guess what `textAlign(CENTER)` does, but [here's the documentation](http://p5js.org/reference/#p5/textAlign) for more detail. We've inserted the text "Game Over!" at the center of the screen using [`text()`](http://p5js.org/reference/#/p5/text).
+
+Hm, looks like the `draw()` function just keeps on drawing the game, even after the game ends.
+
+How are we going to get our `draw()` function to stop displaying our game, and instead display our game over screen for more than a fraction of a second?
+
+Well, one way is to split it into two modes: game over, and game not over, and say "if the game has ended, then show game over screen, otherwise, show the gameplay screen," and we can do this with a flag that keeps track of whether or not the game has ended.
+
+Let's add in a flag, initialize it in `setup()`, and edit our `draw()` function. We'll also be exchanging out calling `gameOver()` directly when enemy and player collide, for a switch of the flag instead.
+
+```
+var isGameOver;
+
+...
+
+function setup() {
+  ...
+  var isGameOver = false;
+  ...
+}
+
+function draw() {
+  if (isGameOver) {
+    gameOver();
+  } else {
+    ...
+    if (enemy.overlap(player)) {
+      isGameOver = true;
+    }
+    ...
+  }
+}
+```
+
+(For the sake of readability, I'm only including the changes, and not the entire code up to this point.) 
+
+We'll initialize this variable with the value `false`, because the game is not yet over at the beginning. Then we'll set up a conditional in `draw()`, to check if the game is over, in which case we'll run `gameOver()`. In the `else` block, we'll put what we've written for gameplay so far. Remember to change the body of the conditional that checks for collision. We want to update the flag, instead of calling `gameOver()` directly. By updating the flag, we're redirecting the `draw()` function to the Game Over screen, so to speak.
+
+Great! It seems to be working nicely now. But how can we allow the player to try again?
+
+### Restart Game
+
+Let's have the user be able to restart the game by clicking the canvas upon seeing the Game Over screen.
+
+First, we have to let the user know that this is available to them. We'll make use of the `text()` function, and instruct the user to click the canvas to restart the game. Let's add a line to the Game Over screen.
+
+```
+function gameOver() {
+  background(0);
+  textAlign(CENTER);
+  text("Game Over!",width/2,height/2);
+  text("Click anywhere to try again",width/2,3*height/4);
+}
+```
+
+And second, we have to detect the user's click and restart the game on detection.
+
+P5js has a handy mechanism for this! There is a built-in function that will execute when a click is registered on the canvas, called [`mouseClicked`]. We just have to define the body of this function and specify what to do when the user clicks.
+
+```
+function mouseClicked() {
+}
+```
+
+Well, we have to draw the gameplay again, which means telling the `draw()` function to switch modes. We can do this easily by setting `isGameOver` to false.
+
+```
+function mouseClicked() {
+  isGameOver = false;
+}
+```
+
+Hmm, why does the canvas display the game only for a moment before switching back to the Game Over screen?
+
+Of course, our player and enemy are still intersecting, because we never reset the positions!
+
+```
+function mouseClicked() {
+  isGameOver = false;
+  player.position.x = width/2;
+  player.position.y = height-25;
+  enemy.position.x = width/2;
+  enemy.position.y = 0;
+}
+```
+
+There, that should do it.
+
+### Error Handling
+
+What happens if we're in the middle of playing and accidentally click? The player and enemy suddenly teleport to the initial position. That's no good. We should only reset the game if the game has already ended, i.e., if `isGameOver` is true.
+
+```
+function mouseClicked() {
+  if (isGameOver) {
+    isGameOver = false;
+    player.position.x = width/2;
+    player.position.y = height-25;
+    enemy.position.x = width/2;
+    enemy.position.y = 0;
+  }
+}
+
+```
+
+Now we're in business. Mouse clicks will only reset the game if the game has ended, i.e., only on the Game Over screen.
 
 ### Spicing it up
 
@@ -358,18 +467,78 @@ What's great about storing these values in constants is that if you want to make
 We could clean up our code in a few other places as well. Always remember, simplify only after the function is correct. Get your code working, and then make it elegant.
 
 ```
-// finished code
+var PLAYER_WIDTH, PLAYER_HEIGHT, ENEMY_WIDTH, ENEMY_HEIGHT;
+var isGameOver, player, enemy;
+
+function setup() {
+    createCanvas(400,400);
+    PLAYER_WIDTH = 50;
+    PLAYER_HEIGHT = 50;
+    ENEMY_WIDTH = 10;
+    ENEMY_HEIGHT = 30;
+    isGameOver = false;
+    player = createSprite(width/2,height-(PLAYER_HEIGHT/2),PLAYER_WIDTH,PLAYER_HEIGHT);
+    var playerImage = loadImage("http://i.imgur.com/H20lRKU.png");
+    player.addImage(playerImage);
+    enemy = createSprite(width/2,0,ENEMY_WIDTH,ENEMY_HEIGHT);
+}
+
+function draw() {
+    if (isGameOver) {
+        gameOver();
+    } else {
+        background(0,0,100);
+        
+        if (keyDown(LEFT_ARROW) && player.position.x > PLAYER_WIDTH/2) {
+            player.position.x -= 1; //(player.position.x - 1)%width;
+        }
+        if (keyDown(RIGHT_ARROW) && player.position.x < (width - PLAYER_WIDTH/2)) {
+            player.position.x += 1;
+        }
+    
+        enemy.position.y += 3;
+        if (enemy.position.y > height) {
+            enemy.position.y = 0;
+            enemy.position.x = random(ENEMY_WIDTH/2,width-(ENEMY_WIDTH/2));
+        }
+        
+        if (enemy.overlap(player)) {
+            isGameOver = true;
+        }
+        
+        drawSprites();
+    }
+}
+
+function gameOver() {
+    background(0)
+    textAlign(CENTER);
+    text("Game Over!", width/2, height/2);
+    text("Click anywhere to try again",width/2,3*height/4);
+}
+
+function mouseClicked() {
+    if (isGameOver) {
+        isGameOver = false;
+        background(0,0,100);
+        player.position.x = width/2;
+        player.position.y = height-PLAYER_HEIGHT/2;
+        enemy.position.x = width/2;
+        enemy.position.y = 0;
+    }
+}
 ```
 
 ## Part IV. Publishing and Sharing
 
-Don't forget to share your beautiful creation by adding it to your website and sharing it on the Slack on the #shipit channel!
+Don't forget to share your beautiful creation by adding it to your website and sharing it on the Slack on the [`#shipit`](https://starthackclub.slack.com/messages/shipit) channel!
 
 ## Part V. Hacking
 
-Isn't it a bit sad that there's a lose condition, but no win condition? Not even [a score counter for number of enemies dodged](http://p5js.org/reference/#/p5/text)?  
-What if the objective of the game was to catch all the enemies instead of dodging them?  
-What if the enemies didn't drop straight down?  
-What if there were levels in which they got faster, and the player got faster?
+Isn't it a bit sad that there's a lose condition, but no win condition? Not even a score counter for number of enemies dodged?  
+Speaking of that, what if the objective of the game was to catch all the enemies instead of dodging them?  
+What if the enemies didn't drop straight down, but instead bounced around the screen?  
+What if there were levels in which they got faster, and the player got faster?  
+Did you find it hard to restart the game because you had to switch from clicking to frantically mashing arrow keys to dodging the first enemy? Might it be better instead to use a key to restart the game? Or, might it be better to randomize the initial position to better your chances of survival? (Hint, we've already used the relevant functions in this workshop!)
 
 Infinite possibilities await you! [P5js documentation](http://p5js.org/reference/) is a great resource, and can help you fulfill all of your wildest ambitions for this game!
