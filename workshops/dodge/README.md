@@ -4,7 +4,7 @@ Short link to this workshop: https://workshops.hackclub.com/dodge
 
 ---
 
-In this workshop we're going to build a simple yet addictive game using JavaScript. Previously when we've done web development projects, we've used HTML elements and things of that ilk to build what we see in the browser. Today we're going to do things a little differently and use some new tools-- JavaScript, along with two great libraries called p5.js and p5.play, to build our game.
+In this workshop, we're going to build a simple, yet addictive game using JavaScript. Previously when we've done web development, we've used HTML elements and things of that ilk to build what we see in the browser. Today we're going to do things a little differently and use a new coding language, JavaScript, along with two great libraries called p5.js and p5.play, to build our game.
 
 p5.js is a library for making stuff in conjunction with HTML canvas. It is a JS port of Processing, a (library? language? framework?) for making pictures and such.
 p5.play is made by a really cool game company called [Molleindustria](http://www.molleindustria.org/), and builds on p5.js to add easy to use functionality that comes in handy in building games.
@@ -43,7 +43,7 @@ Our project's code is going to be divided into two files: `index.html` (the HTML
  
 3. Create another new file and then save it as `game.js` inside of the `dodge` directory. Leave it empty for now.
  
-Great, so now we have `index.html` and `game.js` created. `index.html` is loading p5.js and p5.play, but it doesn't know about `game.js` yet. Let's change that.
+Great, so now we have `index.html` and `game.js`. `index.html` is loading p5.js and p5.play, but it doesn't know about `game.js` yet. Let's change that.
 
 Add `<script src="game.js"></script>` to the bottom of the `body` tag in `index.html`. `index.html` should now look like the following:
 
@@ -61,7 +61,7 @@ Add `<script src="game.js"></script>` to the bottom of the `body` tag in `index.
 </html>
 ```
 
-While you have `index.html` open, click `Preview > Live Preview File (index.html)` to see what the game looks like so far. Right now it's just a blank page, but we'll be changing that soon enough :wink:.
+While you have `index.html` open in Cloud9, click `Preview > Live Preview File (index.html)` to see what the game looks like so far. Right now it's just a blank page, but we'll be changing that soon enough :wink:.
 
 ## Part II. The External JS File
 
@@ -77,13 +77,13 @@ function draw() {
 }
 ```
 
-If you refresh your page, you'll notice nothing has changed. It's still blank. Well. Everything in due time, don't worry.
+If you refresh the preview in Cloud9, you'll notice nothing has changed. It's still blank. Everything in due time, don't worry.
 
 So how `setup()` and `draw()` work is that `setup()` is run once, upon page load. `draw()` on the other hand, is called repeatedly after `setup()` finishes.
 
 Let's add something for `setup()` to set up.
 
-```
+```js
 function setup() {
   createCanvas(500, 500);
 }
@@ -122,9 +122,11 @@ function setup() {
 
 [`createSprite()`](http://p5play.molleindustria.org/docs/classes/p5.play.html#method-createSprite) makes a placeholder for an image (meaning you can customize with your own!), and takes four arguments (horizontal and vertical coordinates, and width and height of sprite, respectively).
 
-Here it might make sense to mention that the coordinate system of p5.js is not like the traditional one you may have seen in your maths classes. P5js has its origin (0,0) at the upper left corner of the canvas, with the x and y values increasing rightward and downward.
+Here it might make sense to mention that the coordinate system of p5.js is not like the traditional one you may have seen in your maths classes. p5.js has its origin (0, 0) at the upper left corner of the canvas, with the x and y values increasing rightward and downward.
 
 Okay, so it looks like we've added our player-- wait. No, it doesn't. Turns out that while we've created a player, we haven't shown it on our canvas anywhere.
+
+Fortunately, the p5.play library also offers a really simple function for displaying sprites, `drawSprites`. Let's go ahead and add this to the `draw` function.
 
 ```js
 function draw() {
@@ -133,14 +135,12 @@ function draw() {
 }
 ```
 
-Fortunately, the p5.play library also offers a really simple function for displaying sprites, namely, `drawSprites()`.
-
 Et voilà. Now we can view our sprite. It looks like it's cut off, though. Guess we have to adjust the y-position. Let's modify that in our initial creation of the player, in `setup()`.
 
 ```js
 function setup() {
-  createCanvas(500,500);
-  player = createSprite(width/2,height-25,50,50);
+  createCanvas(500, 500);
+  player = createSprite(width/2, height-25, 50, 50);
 }
 ```
 
@@ -155,7 +155,7 @@ Oh yes, because we haven't added that code yet. We will do that now.
 Our sprite has a property called `position`, and we can shift the position in order to create motion. The `position` property itself has two properties: `x` and `y`, which describe placement along the x and y axes, respectively. Since we want to move the player horizontally, we'll be changing the x value. We can access it like so:
 
 ```js
-player.position.x = player.position.x + 1
+player.position.x = player.position.x + 1;
 ```
 
 So why does the block keep moving, if we are only changing the x-position by 1? Well, you'll remember that the `draw()` function is called repeatedly, so each time, the x-position is set to 1 greater than what it was when the `draw()` function was called last.
@@ -246,9 +246,9 @@ Now we add enemy sprite. This is like how we added the player sprite. First we d
 var enemy;
 
 function setup() {
-  createCanvas(500,500);
-  player = createSprite(width/2,height-25,50,50);
-  enemy = createSprite(width/2,0,10,30);
+  createCanvas(500, 500);
+  player = createSprite(width/2, height-25, 50, 50);
+  enemy = createSprite(width/2, 0, 10, 30);
 }
 ```
 
@@ -272,7 +272,7 @@ Now our code looks like this:
 
 ```js
 function draw() {
-  background(0,0,100);
+  background(0, 0, 100);
 
   if (keyDown(RIGHT_ARROW) && player.position.x < (width-25)) {
     player.position.x = player.position.x + 1;
@@ -301,7 +301,7 @@ If we add this right under the line where we increment the position, we can see 
 ```js
 if (enemy.position.y > height) {
   enemy.position.y = 0;
-  enemy.position.x = random(5,width-5);
+  enemy.position.x = random(5, width-5);
 }
 ```
 
@@ -313,7 +313,7 @@ Et voilà! Our enemy now shows up randomly across the top of the canvas! And dro
 
 ### Collision
 
-Well, if you've failed to dodge the enemy at least once, you'll realize that the player is not forced to frantically dodge after all... the enemy doesn't attack it at all.
+Well, if you've failed to dodge the enemy at least once, you'll realize that the player is not forced to frantically dodge after all... the enemy doesn't kill the player when they collide.
 
 Let's make it a real threat by recognizing when the enemy and player collide. p5.play provides the `overlap()` method on our sprites for doing just that.
 
@@ -340,7 +340,7 @@ And let's display a game over screen.
 function gameOver() {
   background(0);
   textAlign(CENTER);
-  text("Game Over!",width/2,height/2);
+  text("Game Over!", width/2, height/2);
 }
 ```
 
@@ -360,7 +360,7 @@ var isGameOver;
 
 function setup() {
   ...
-  var isGameOver = false;
+  isGameOver = false;
   ...
 }
 
@@ -393,8 +393,8 @@ First, we have to let the user know that this is available to them. We'll make u
 function gameOver() {
   background(0);
   textAlign(CENTER);
-  text("Game Over!",width/2,height/2);
-  text("Click anywhere to try again",width/2,3*height/4);
+  text("Game Over!", width/2, height/2);
+  text("Click anywhere to try again", width/2, 3*height/4);
 }
 ```
 
@@ -456,7 +456,7 @@ You'll notice that these things are all sprites, which means you can substitute 
 p5.js has a function called `loadImage()` into which you can pass the URL of an image as an argument. p5.play sprites have the method `addImage()` that you can then pass the loaded image into.
 
 ```js
-var playerImage = loadImage("http://i.imgur.com/m0kHDqN.png");
+var playerImage = loadImage("http://i.imgur.com/H20lRKU.png");
 player.addImage(playerImage);
 ```
 
@@ -484,8 +484,8 @@ function setup() {
   PLAYER_HEIGHT = 50;
   ENEMY_WIDTH = 10;
   ENEMY_HEIGHT = 30;
-  player = createSprite(width/2,height-(PLAYER_HEIGHT/2),PLAYER_WIDTH,PLAYER_HEIGHT);
-  enemy = createSprite(width/2,0,ENEMY_WIDTH,ENEMY_HEIGHT);
+  player = createSprite(width/2, height-(PLAYER_HEIGHT/2), PLAYER_WIDTH, PLAYER_HEIGHT);
+  enemy = createSprite(width/2, 0, ENEMY_WIDTH, ENEMY_HEIGHT);
 }
 ```
 
