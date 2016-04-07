@@ -4,10 +4,10 @@ Short link to this workshop: https://workshops.hackclub.com/dodge
 
 ---
 
-In this workshop, we're going to build a simple, yet addictive game using JavaScript. Previously when we've done web development, we've used HTML elements and things of that ilk to build what we see in the browser. Today we're going to do things a little differently and use a new coding language, JavaScript, along with two great libraries called p5.js and p5.play, to build our game.
+In this workshop, we're going to build a simple, yet addictive, game using JavaScript. Previously when we've done web development, we've used HTML elements and things of that ilk to build what we see in the browser. Today we're going to do things a little differently and build our game using a new coding language, JavaScript, along with two great libraries called p5.js and p5.play.
 
-p5.js is a library for making stuff in conjunction with HTML canvas. It is a JS port of Processing, a (library? language? framework?) for making pictures and such.
-p5.play is made by a really cool game company called [Molleindustria](http://www.molleindustria.org/), and builds on p5.js to add easy to use functionality that comes in handy in building games.
+[p5.js](http://p5js.org/) is a library for making stuff in conjunction with the HTML canvas element. It is nothing more than JS code written to make commonly-desired functionality much more accessible. It is a JS port of Processing, a software for making pictures and visuals with code.
+[p5.play](http://p5play.molleindustria.org/) is another library, which itself uses p5.js, and adds easy-to-use functionality specifically tailored towards building games. p5.play was made by a very cool company called [Molleindustria](http://www.molleindustria.org/).
 
 ## Table of contents:
 
@@ -67,7 +67,9 @@ While you have `index.html` open in Cloud9, click `Preview > Live Preview File (
 
 ### Set Up
 
-p5.js works by calling two special functions: `setup()` and `draw()`. Open up `game.js` and add them to the file (type them out, don't copy and paste!).
+p5.js works by automatically calling two special functions: `setup()` and `draw()` to create the visuals on your webpage. We'll be writing our own code in these functions, so that p5.js can then run our code.
+
+Open up `game.js` and add them to the file (type them out, don't copy and paste!).
 
 ```js
 function setup() {
@@ -79,7 +81,7 @@ function draw() {
 
 If you refresh the preview in Cloud9, you'll notice nothing has changed. It's still blank. Everything in due time, don't worry.
 
-So how `setup()` and `draw()` work is that `setup()` is run once, upon page load. `draw()` on the other hand, is called repeatedly after `setup()` finishes.
+How these functions work is that `setup()` is run only once, upon page load. `draw()` on the other hand, is run repeatedly after `setup()` finishes, and in this way, provides the basis for any animation or interaction you see in your project.
 
 Let's add something for `setup()` to set up.
 
@@ -89,7 +91,7 @@ function setup() {
 }
 ```
 
-`createCanvas()` is a function that takes two arguments (two numbers for width and height, respectively) and creates a canvas (i.e., the thing that will house your project) of that size.
+[`createCanvas()`](http://p5js.org/reference/#p5/createCanvas) is a function that takes two arguments (two numbers for width and height, respectively) and creates an HTML canvas element (i.e., the thing that will house your project) of that size.
 
 Now we'll add something for the `draw()` function to do as well. Let's start by having it paint the background a dark blue color every frame.
 
@@ -99,17 +101,21 @@ function draw() {
 }
 ```
 
-`background()` is a function that sets the appearance of the background. Here we're using three arguments to define the RGB values of a color, which will be the background color of our canvas. You can use `background` in some more ways, though, which are detailed in documentation [here](https://p5js.org/reference/#/p5/background).
+`background()` is a function that sets the appearance of the background. Here we're using three arguments to define the red, green, and blue (RGB) values of a color, which will be the background color of our canvas. You can use `background` in some more ways, though, which are detailed in documentation [here](https://p5js.org/reference/#/p5/background).
+
+I've chosen this dark blue, but you can experiment with the RGB values and choose your own background color.
 
 Now that we've finished setting up, it's time to add the most important thing to our game: you, the player.
  
 ### Adding the Player
 
-So where should we create the player? Well, we definitely want to have it when we load the game, so it might make sense to put player creation in setup(). Let's declare the existence of the player with:
+So where should we create the player? Well, we definitely want to have it when we load the game, so it might make sense to put player creation in `setup()`. Let's first declare the existence of the player at the top of the file with:
 
 ```js
 var player;
 ```
+
+This line creates a variable called "player". We'll be able to store something in this variable and refer to it later. Having this outside of the other functions will allow us to refer to the variable from either function, and anywhere else in the document. This is called a global variable, because it's accessible from everywhere.
 
 And now let's define it into existence. We'll need to decide where to place it, and how big it is. How about at the bottom, in the middle of the canvas, and say, a 50x50 square?
 
@@ -122,9 +128,11 @@ function setup() {
 
 [`createSprite()`](http://p5play.molleindustria.org/docs/classes/p5.play.html#method-createSprite) makes a placeholder for an image (meaning you can customize with your own!), and takes four arguments (horizontal and vertical coordinates, and width and height of sprite, respectively).
 
+We've placed our player in the horizontal center of the canvas (width/2), and at the bottom (height). `width` and `height` are variables that were automatically set for us by p5.js when we created the canvas, and they refer to the width and the height of the canvas, of course!
+
 Here it might make sense to mention that the coordinate system of p5.js is not like the traditional one you may have seen in your maths classes. p5.js has its origin (0, 0) at the upper left corner of the canvas, with the x and y values increasing rightward and downward.
 
-Okay, so it looks like we've added our player-- wait. No, it doesn't. Turns out that while we've created a player, we haven't shown it on our canvas anywhere.
+Okay, so it looks like we've added our player---wait. No, it doesn't. Turns out that while we've created a player, we haven't shown it on our canvas anywhere.
 
 Fortunately, the p5.play library also offers a really simple function for displaying sprites, `drawSprites`. Let's go ahead and add this to the `draw` function.
 
@@ -152,13 +160,13 @@ It's not very compelling having a static player just sitting there. Why doesn't 
 
 Oh yes, because we haven't added that code yet. We will do that now.
 
-Our sprite has a property called `position`, and we can shift the position in order to create motion. The `position` property itself has two properties: `x` and `y`, which describe placement along the x and y axes, respectively. Since we want to move the player horizontally, we'll be changing the x value. We can access it like so:
+Our sprite has a property called `position`, and we can shift the position in order to create motion. The `position` property itself has two properties: `x` and `y`, which describe placement along the x and y axes, respectively. Since we want to move the player horizontally, we'll be changing the x value. To do this, we can add this line to `draw()`:
 
 ```js
 player.position.x = player.position.x + 1;
 ```
 
-So why does the block keep moving, if we are only changing the x-position by 1? Well, you'll remember that the `draw()` function is called repeatedly, so each time, the x-position is set to 1 greater than what it was when the `draw()` function was called last.
+So why does the player keep moving, if we are only changing the x-position by 1? Well, you'll remember that the `draw()` function is called repeatedly, so each time, the x-position is set to 1 greater than what it was when the `draw()` function was called last.
 
 If you play around with this, you'll note that substituting `1` with a larger number will make the player move faster to the right. And what happens if you substitute `1` with a smaller number? 0.5, or -1?
 
@@ -166,9 +174,9 @@ Now that we've introduced motion into our game, it's time to put some restrictio
 
 ### Adding Controls
 
-We only want the player to move when we press the controls. p5.js gives us a way to detect when keys are being pressed, namely with the function `keyDown()`. This function takes an argument that represents a key. For our purposes, we'll be needing `LEFT_ARROW` and `RIGHT_ARROW`, which are preset to correspond to the left and right arrow keys, respectively.
+We only want the player to move when we press the controls. p5.js gives us a way to detect when keys are being pressed, namely with the function `keyDown()`. This function takes an argument that represents a key. For our purposes, we'll be needing `LEFT_ARROW` and `RIGHT_ARROW`, which are [keyCodes](http://p5js.org/reference/#p5/keyCode) preset by p5.js to correspond to the left and right arrow keys, respectively.
 
-Let's wrap the line about incrementing x-position by 1 in a conditional, so that it only happens on the condition that the right arrow key is pressed:
+Let's wrap the line we just wrote, about incrementing x-position by 1, in a conditional, so that it only happens on the condition that the right arrow key is pressed:
 
 ```js
 if (keyDown(RIGHT_ARROW)) {
@@ -186,9 +194,9 @@ if (keyDown(LEFT_ARROW)) {
 
 ### Keeping the Player within Bounds
 
-[fluff: we don't want the player to move off the canvas, because then we won't be able to see it; and also that could be used as cheating. maybe you could add this as a bonus secret unlock code to your game.]
+Though we've given our player the freedom to move, we don't want the player to move off the canvas, because then we won't be able to see it.
 
-We'll prevent the player's x-position from going past the limits of the screen, i.e., it should never dip below 0, or above width.
+We'll update our code to prevent the player's x-position from going past the limits of the screen, i.e., it should never dip below 0, or above width. We'll add this new condition to our conditional, using the "and" operator (`&&`):
 
 ```js
 if (keyDown(RIGHT_ARROW) && player.position.x < width) {
@@ -196,7 +204,7 @@ if (keyDown(RIGHT_ARROW) && player.position.x < width) {
 }
 ```
 
-There, that should keep it from moving unless there's space to move. We've added an additional condition to move. Not only must the right arrow key be pressed, but also the current x-pos must be less than a certain amount, in order for the player to move rightward. If either condition is not satisfied, the player will not move.
+There, that should keep it from moving unless there's space to move. Here, we've added an additional condition to move. Now, in order for the player to move rightward, not only must the right arrow key be pressed (`keyDown(RIGHT_ARROW)`), but also the current x-position must be less than a certain amount (`player.position.x < width`). If either condition is not satisfied, the player will not move.
 
 We'll add the corresponding one for moving leftward.
 
@@ -206,7 +214,7 @@ if (keyDown(LEFT_ARROW) && player.position.x > 0) {
 }
 ```
 
-But what's this? Looks like we're off by half the player width again. For those of you who avoided this, propz for paying attention. The foreshadowing for this was in our creation of the player. We set the initial position there, and since passing it the initial x-position of width/2 placed it directly in the center, that was a hint that the sprite's position coordinate is in its center, and the reason why we have to offset by half the player width for both boundaries.
+But what's this? Looks like we're off by half the player width again. For those of you who avoided this, props for paying attention. The foreshadowing for this was in our creation of the player. We set the initial position there, and since passing it the initial x-position of `width/2` placed it directly in the center, that was a hint that the sprite's position coordinate is in its center, and the reason why we have to offset by half the player width for both boundaries.
 
 So we'll make changes accordingly:
 
@@ -220,7 +228,7 @@ if (keyDown(LEFT_ARROW) && player.position.x > 25) {
 }
 ```
 
-So the `draw()` function looks like this now:
+And the `draw()` function should look like this now:
 
 ```js
 function draw() {
@@ -240,7 +248,7 @@ function draw() {
 
 ### Adding the Enemy
 
-Now we add enemy sprite. This is like how we added the player sprite. First we declare it, and then we use `createSprite()` to actually create it. All we have to do now is decide the size and position of our enemy.
+Now we add enemy sprite. This is like how we added the player sprite. First we declare it (again, outside of our two functions), and then we use `createSprite()` to actually create it. All we have to do now is decide the size and position of our enemy.
 
 ```js
 var enemy;
@@ -258,7 +266,7 @@ And to display it, guess what? That's already covered by our familiar friend, `d
 
 Much like how we made the player move by changing its position incrementally, we'll modifying the position of the enemy within the `draw()` function.
 
-Let's make it come towards the player, and have it drop down to the bottom of the canvas.
+Let's make it come towards the player, and have it drop down to the bottom of the canvas. Add this line after the code that makes the player move:
 
 ```js
 enemy.position.y = enemy.position.y + 1;
@@ -266,7 +274,7 @@ enemy.position.y = enemy.position.y + 1;
 
 Instead of modifying `position.x`, we're modifying `position.y`, because we want the enemy to move vertically. We're incrementing the value, because we want the position to move downward. Remember, in the coordinate system in p5.js, the y values increase in the downward direction.
 
-I'm going to make my enemy a bit faster than my player.
+I'm going to make my enemy a bit faster than my player, by incrementing by 3, instead of 1.
 
 Now our code looks like this:
 
@@ -288,7 +296,7 @@ function draw() {
 }
 ```
 
-Let's check out what we've got. Looks great, except that the enemy is a pretty minor threat if it only shows up once and then leaves the canvas forever. We're gonna have to bring it back once it passes the bottom of the canvas. We can set up a check for this, and when it happens, bring it back to the top.
+Let's check out what we've got. Looks great, except that the enemy is a pretty minor threat if it only shows up once and then leaves the canvas forever. We're gonna have to bring it back to the top once it passes the bottom of the canvas. We can set up a check for when the y-position becomes greater than the height of the canvas, and when that happens, we will set the y-position to 0, so that it reappears at the top.
 
 ```js
 if (enemy.position.y > height) {
@@ -298,6 +306,8 @@ if (enemy.position.y > height) {
 
 If we add this right under the line where we increment the position, we can see that now the enemy forms a sort of dashed barrier. This isn't very exciting, as we don't have to do  much dodging. We could just leave our player in one spot and always avoid the enemy. To make things more interesting, we'll reset the x-position of the enemy each time it moves past the bottom. And to make it even more interesting, we'll randomize this value. So now there will be no premeditated escape possible!
 
+We can make use of the function `random()`, provided for us by p5.js. `random()` is a neat function that can accept different numbers of arguments. You can check out its documentation [here](http://p5js.org/reference/#p5/random).
+
 ```js
 if (enemy.position.y > height) {
   enemy.position.y = 0;
@@ -305,11 +315,9 @@ if (enemy.position.y > height) {
 }
 ```
 
-Here we're using the function `random()`, provided for us by p5.js. `random()` is a neat function that can accept different numbers of arguments. You can check out its documentation [here](http://p5js.org/reference/#p5/random).
-
 For our purposes we are passing in two numerical arguments to `random()`, with which it will give us a random value between the two numbers. Thanks to our previous run-ins with dealing with the edges of the canvas, we've experienced enough to know that we need a 5-pixel buffer on each side.
 
-Et voilà! Our enemy now shows up randomly across the top of the canvas! And drops down like bullets onto our player who is forced to frantically dodge!! Perfect!
+Bam! Our enemy now shows up randomly across the top of the canvas! And drops down like bullets onto our player who is forced to frantically dodge!! Perfect!
 
 ### Collision
 
@@ -323,11 +331,11 @@ if (enemy.overlap(player)) {
 }
 ```
 
-This is our lose condition. Now we can punish the user for losing in this `gameOver()` function.
+This is our lose condition. Now we can punish the user for losing in this `gameOver()` function, which we will now create.
 
 ### Game Over
 
-Even though it may feel like we've been writing all of our code in these two special p5.js functions to make stuff in the canvas, we musn't forget that we are still just writing JavaScript. So let's define our own function, `gameOver()`, the way we would any other JS function. We'll place it underneath the `draw()` function.
+Even though it may feel like we've been writing all of our code in these two special p5.js functions to make stuff in the canvas, we shouldn't forget that we are still just writing JavaScript. So let's define our own function, `gameOver()`, the way we would any other JS function. We'll place it underneath the `draw()` function.
 
 ```js
 function gameOver() {
@@ -387,7 +395,7 @@ Great! It seems to be working nicely now. But how can we allow the player to try
 
 Let's have the user be able to restart the game by clicking the canvas upon seeing the game over screen.
 
-First, we have to let the user know that this is available to them. We'll make use of the `text()` function, and instruct the user to click the canvas to restart the game. Let's add a line to the game over screen.
+First, we have to let the user know that this is an available option! We'll use the `text()` function, and instruct the user to click the canvas to restart the game. Let's add a line to the game over screen.
 
 ```js
 function gameOver() {
@@ -400,7 +408,7 @@ function gameOver() {
 
 And second, we have to detect the user's click and restart the game on detection.
 
-p5.js has a handy mechanism for this! There is a built-in function that will execute when a click is registered on the canvas, called [`mouseClicked`]. We just have to define the body of this function and specify what to do when the user clicks.
+p5.js has a handy mechanism for this! There is a built-in function that will execute when a click is registered on the canvas, called [`mouseClicked`](http://p5js.org/reference/#p5/mouseClicked). We just have to define the body of this function and specify what to do when the user clicks.
 
 ```js
 function mouseClicked() {
@@ -431,7 +439,7 @@ function mouseClicked() {
 
 There, that should do it.
 
-### Error Handling
+### Covering Our Bases
 
 What happens if we're in the middle of playing and accidentally click? The player and enemy suddenly teleport to the initial position. That's no good. We should only reset the game if the game has already ended, i.e., if `isGameOver` is true.
 
@@ -453,27 +461,44 @@ Now we're in business. Mouse clicks will only reset the game if the game has end
 
 You'll notice that these things are all sprites, which means you can substitute in your own images!
 
-p5.js has a function called `loadImage()` into which you can pass the URL of an image as an argument. p5.play sprites have the method `addImage()` that you can then pass the loaded image into.
+p5.js has a function called [`loadImage()`](http://p5js.org/reference/#p5/loadImage) into which you can pass the URL of an image as an argument. p5.play sprites have the method [`addImage()`](http://p5play.molleindustria.org/docs/classes/Sprite.html#method-addImage) that you can then pass the loaded image into.
+
+According to the documentation, we must preload this image first, which allows me to introduce another p5.js function: `preload()`. This function deals with everything that should happen before `setup()`. In our case, that's grabbing the image from its URL and storing it in a variable. Like player and enemy, we want this image to be accessible in multiple places, so we'll declare it outside of all functions, at the top.
 
 ```js
-var playerImage = loadImage("http://i.imgur.com/H20lRKU.png");
+var playerImage;
+```
+
+And we'll write this `preload()` function right above `setup()`:
+
+```js
+function preload() {
+  playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/H20lRKU.png");
+}
+```
+
+Now we'll use this image on our player by placing this line after its creation, in `setup()`:
+
+```js
 player.addImage(playerImage);
 ```
 
-We can add those two lines right after the line where we create the player. And now our player has a bit more personality, and is more relatable. Try customizing the enemy as well!
+And now our player has a bit more personality, and is more relatable. Try customizing the enemy as well!
 
 ## Part III. Code Cleanup
 
 So we've used the various widths several times throughout our program, but it's almost impossible to tell by looking at the code, seeing as we never labeled them as such! What we have instead are these seemingly arbitrary numbers like "25" and "5" floating around. It's important to write code that's as clear and maintainable as possible, so that you (in the future) and others can quickly get up to speed and be able to make changes and improvements.
 
-We can get rid of these "magic numbers" by storing them as constants. First, we'll declare the existence of these constants, as we did our player and enemy:
+We can get rid of these "magic numbers" by storing them as constants. Constants are variables that don't vary; i.e, they are set once and the value stays _constant_. First, we'll declare the existence of these constants, as we did our player and enemy variables:
 
 ```js
-var PLAYER_WIDTH, PLAYER_HEIGHT;
-var ENEMY_WIDTH, ENEMY_HEIGHT;
+var PLAYER_WIDTH;
+var PLAYER_HEIGHT;
+var ENEMY_WIDTH;
+var ENEMY_HEIGHT;
 ```
 
-I've used all capitals and underscores, which is the convention for naming constants (that is, values intended to remain constant throughout the program).
+I've used all capitals and underscores, which is the convention for naming constants.
 
 Next, we'll initialize them to values of our choice in `setup()`, and replace them in our creation of player and enemy, as well as in the `draw()` function.
 
@@ -505,7 +530,7 @@ function setup() {
     ENEMY_HEIGHT = 30;
     isGameOver = false;
     player = createSprite(width/2,height-(PLAYER_HEIGHT/2),PLAYER_WIDTH,PLAYER_HEIGHT);
-    var playerImage = loadImage("http://i.imgur.com/H20lRKU.png");
+    var playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/H20lRKU.png");
     player.addImage(playerImage);
     enemy = createSprite(width/2,0,ENEMY_WIDTH,ENEMY_HEIGHT);
 }
@@ -517,7 +542,7 @@ function draw() {
         background(0,0,100);
 
         if (keyDown(LEFT_ARROW) && player.position.x > PLAYER_WIDTH/2) {
-            player.position.x -= 1; //(player.position.x - 1)%width;
+            player.position.x -= 1;
         }
         if (keyDown(RIGHT_ARROW) && player.position.x < (width - PLAYER_WIDTH/2)) {
             player.position.x += 1;
@@ -558,14 +583,30 @@ function mouseClicked() {
 
 ## Part IV. Publishing and Sharing
 
-Don't forget to share your beautiful creation by adding it to your website and sharing it on the Slack on the [`#shipit`](https://starthackclub.slack.com/messages/shipit) channel!
+You're done, yay! You just need to add it to your website so that it's live on the internet!
+
+You can follow these instructions from the Personal Website workshop (hopefully they are a little familiar to you) to add your changes to GitHub:
+
+1. Open the terminal by pressing `alt + t` on the keyboard at the same time.
+   Type in the following commands:
+  - `git add --all`
+  - `git commit -m "Create Dodge game"`
+  - `git push`
+2. GitHub will now ask for your username and password.
+  - Go ahead and enter the username and press the enter.
+  - Enter the password and press enter. _The characters won't show up on
+    the screen, but rest assured, they are still being typed._
+3. Now try to view the website by going to `USERNAME.github.io`
+   (make sure to replace `USERNAME` with our actual GitHub username)
+
+Don't forget to share your beautiful creation on the Slack on the [`#shipit`](https://starthackclub.slack.com/messages/shipit) channel!
 
 ## Part V. Hacking
 
-Isn't it a bit sad that there's a lose condition, but no win condition? Not even a score counter for number of enemies dodged?  
-Speaking of that, what if the objective of the game was to catch all the enemies instead of dodging them?  
-What if the enemies didn't drop straight down, but instead bounced around the screen?  
-What if there were levels in which they got faster, and the player got faster?  
-Did you find it hard to restart the game because you had to switch from clicking to frantically mashing arrow keys to dodging the first enemy? Might it be better instead to use a key to restart the game? Or, might it be better to randomize the initial position to better your chances of survival? (Hint, we've already used the relevant functions in this workshop!)
+- Isn't it a bit sad that there's a lose condition, but no win condition? Not even a score counter for number of enemies dodged?
+- Speaking of that, what if the objective of the game was to catch all the enemies instead of dodging them?
+- What if the enemies didn't drop straight down, but instead bounced around the screen? Hah! Good luck dodging that!
+- What if there were levels in which they got faster, and the player got faster?
+- Did you find it hard to restart the game because you had to switch from clicking to frantically mashing arrow keys to dodging the first enemy? Might it be better instead to use a key to restart the game? Or, might it be better to randomize the initial position to better your chances of survival? (Hint, we've already used the relevant functions in this workshop!)
 
 Infinite possibilities await you! [p5.js documentation](http://p5js.org/reference/) is a great resource, and can help you fulfill all of your wildest ambitions for this game!
