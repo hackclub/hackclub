@@ -109,8 +109,8 @@ function draw() {
 
 I've chosen this dark blue, but you can experiment with the RGB values and choose your own background color.
 
-Now that we've finished setting up, it's time to add the most important thing to our game: you, the player.
- 
+Now that we've finished setting up, it's time to add the most important thing to our game: the player.
+
 ### Adding the Player
 
 So where should we create the player? Well, we definitely want to have it when we load the game, so it might make sense to put player creation in `setup()`. Let's first declare the existence of the player at the top of the file with:
@@ -119,7 +119,7 @@ So where should we create the player? Well, we definitely want to have it when w
 var player;
 ```
 
-This line creates a variable called "player". We'll be able to store something in this variable and refer to it later. Having this outside of the other functions will allow us to refer to the variable from either function, and anywhere else in the document. This is called a global variable, because it's accessible from everywhere.
+This line creates a variable named "player." We'll be able to store something in this variable and refer to it later. Having this outside of the other functions will allow us to refer to the variable from either function, and anywhere else in the document. This is called a global variable, because it's accessible from everywhere.
 
 And now let's define it into existence. We'll need to decide where to place it, and how big it is. How about at the bottom, in the middle of the canvas, and say, a 50x50 square?
 
@@ -147,7 +147,7 @@ function draw() {
 }
 ```
 
-Et voilà. Now we can view our sprite. It looks like it's cut off, though. Guess we have to adjust the y-position. Let's modify that in our initial creation of the player, in `setup()`.
+And there. Now we can view our sprite. It looks like it's cut off, though. Guess we have to adjust the y-position. Let's modify that in our initial creation of the player, in `setup()`.
 
 ```js
 function setup() {
@@ -308,7 +308,7 @@ if (enemy.position.y > height) {
 }
 ```
 
-If we add this right under the line where we increment the position, we can see that now the enemy forms a sort of dashed barrier. This isn't very exciting, as we don't have to do  much dodging. We could just leave our player in one spot and always avoid the enemy. To make things more interesting, we'll reset the x-position of the enemy each time it moves past the bottom. And to make it even more interesting, we'll randomize this value. So now there will be no premeditated escape possible!
+If we add this right under the line where we increment the position, we can see that now the enemy forms a sort of dashed barrier. This isn't very exciting, as we don't have to do much dodging. We could just leave our player in one spot and always avoid the enemy. To make things more interesting, we'll reset the x-position of the enemy each time it moves past the bottom. And to make it even more interesting, we'll randomize this value. So now there will be no premeditated escape possible!
 
 We can make use of the function `random()`, provided for us by p5.js. `random()` is a neat function that can accept different numbers of arguments. You can check out its documentation [here](http://p5js.org/reference/#p5/random).
 
@@ -327,7 +327,7 @@ Bam! Our enemy now shows up randomly across the top of the canvas! And drops dow
 
 Well, if you've failed to dodge the enemy at least once, you'll realize that the player is not forced to frantically dodge after all... the enemy doesn't kill the player when they collide.
 
-Let's make it a real threat by recognizing when the enemy and player collide. p5.play provides the `overlap()` method on our sprites for doing just that.
+Let's make it a real threat, by recognizing when the enemy and player collide. p5.play provides the `overlap()` method on our sprites for doing just that.
 
 ```js
 if (enemy.overlap(player)) {
@@ -365,7 +365,7 @@ How are we going to get our `draw()` function to stop displaying our game, and i
 
 Well, one way is to split it into two modes: game over, and game not over, and say "if the game has ended, then show game over screen, otherwise, show the gameplay screen," and we can do this with a flag that keeps track of whether or not the game has ended.
 
-Let's add in a flag, initialize it in `setup()`, and edit our `draw()` function. We'll also be exchanging out calling `gameOver()` directly when enemy and player collide, for a switch of the flag instead.
+Let's add in a flag, initialize it in `setup()`, and edit our `draw()` function. We'll also be exchanging out calling `gameOver()` directly when enemy and player collide, for a line that toggles the flag instead. That is, we'll switch the flag's value from `false` (game is not over) to `true` (game is over).
 
 ```js
 var isGameOver;
@@ -421,7 +421,7 @@ function mouseClicked() {
 }
 ```
 
-Well, we have to draw the gameplay again, which means telling the `draw()` function to switch modes. We can do this easily by setting `isGameOver` to false.
+Well, we want to draw the gameplay again, which means telling the `draw()` function to switch modes. We can do this easily by setting `isGameOver` back to `false`.
 
 ```js
 function mouseClicked() {
@@ -431,7 +431,7 @@ function mouseClicked() {
 
 Hmm, why does the canvas display the game only for a moment before switching back to the game over screen?
 
-Of course, our player and enemy are still intersecting, because we never reset the positions!
+Aha! Our player and enemy are still intersecting, because we never reset the positions!
 
 ```js
 function mouseClicked() {
@@ -499,7 +499,7 @@ We're providing the following images and have already uploaded them to an image 
 
 p5.js has a function called [`loadImage()`](http://p5js.org/reference/#p5/loadImage) that takes URL of an image as an argument and gives us a loaded image ready to be used. p5.play sprites have the method [`addImage()`](http://p5play.molleindustria.org/docs/classes/Sprite.html#method-addImage) that we can give a loaded image to assign it to the sprite.
 
-In addition to `setup()` and `draw()`, p5.play has a special function called `preload()`, which is run right when the page loads before `setup()`. `preload()` is generally used to load images and other resources (like sounds) into the game. Go ahead and declare `preload()` right before the `setup()` function.
+In addition to `setup()` and `draw()`, p5.js has a special function called `preload()`, which is run right when the page loads before `setup()`. `preload()` is generally used to load images and other resources (like sounds) into the game. Go ahead and declare `preload()` right before the `setup()` function.
 
 ```js
 function preload() {
@@ -683,9 +683,9 @@ Don't forget to share a link to your beautiful creation on the Slack on the [`#s
 - Isn't it a bit sad that there's a lose condition, but no win condition? Not even a score counter for number of enemies dodged?
 - Speaking of that, what if the objective of the game was to catch all the enemies instead of dodging them?
 - What if the enemies didn't drop straight down, but instead bounced around the screen? Hah! Good luck dodging that!
-- What if there were levels in which they got faster, and the player got faster?
+- What if there were levels in which both the enemies and player got faster and faster?
 - Did you find it hard to restart the game because you had to switch from clicking to frantically mashing arrow keys to dodging the first enemy? Might it be better instead to use a key to restart the game? Or, might it be better to randomize the initial position to better your chances of survival? (Hint, we've already used the relevant functions in this workshop!)
-- Right now we have a dinosaur that's avoiding asteroids in space. What if we made the game look like an RPG, where a hero is avoiding arrows that are being shot at them? Or something completely different? Good places to find free graphics for games are http://opengameart.org/ and http://makepixelart.com/. Make sure to give attribution to the creators though!
+- Right now we have a dinosaur (our beloved mascot, Prophet Orpheus) that's avoiding asteroids in space. What if we made the game look like an RPG, where a hero is avoiding arrows that are being shot at them? Or something completely different? Good places to find free graphics for games are http://opengameart.org/ and http://makepixelart.com/. Make sure to give attribution to the creators though!
 
 Infinite possibilities await you! [p5.js documentation](http://p5js.org/reference/) is a great resource, and can help you fulfill all of your wildest ambitions for this game!
 
@@ -695,3 +695,5 @@ Thank you to the following people for making this workshop possible.
 
 - Lanea Zimmerman for the [Dirt Platformer Tiles](http://opengameart.org/content/dirt-platformer-tiles) tileset, which is used in the background image
 - The [Make Pixel Art](http://makepixelart.com) community for the [asteroid graphic](http://makepixelart.com/artists/anonymous/asteroid_33)
+- [p5.js](http://p5js.org/) community, for porting Processing to JS
+- [Molleindustria](http://www.molleindustria.org/), for the p5.play library
