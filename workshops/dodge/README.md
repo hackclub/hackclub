@@ -4,7 +4,11 @@ Short link to this workshop: https://workshops.hackclub.com/dodge
 
 ---
 
-In this workshop, we're going to build a simple, yet addictive, game using JavaScript. Previously when we've done web development, we've used HTML elements and things of that ilk to build what we see in the browser. Today we're going to do things a little differently and build our game using a new coding language, JavaScript, along with two great libraries called p5.js and p5.play.
+In this workshop, we're going to build a simple, yet addictive, game using JavaScript.
+
+![Final result](img/after_spicing_it_up.gif)
+
+Previously when we've done web development, we've used HTML elements and things of that ilk to build what we see in the browser. Today we're going to do things a little differently and build our game using a new coding language, JavaScript, along with two great libraries called p5.js and p5.play.
 
 [p5.js](http://p5js.org/) is a library for making stuff in conjunction with the HTML canvas element. It is nothing more than JS code written to make commonly-desired functionality much more accessible. It is a JS port of Processing, a software for making pictures and visuals with code.
 [p5.play](http://p5play.molleindustria.org/) is another library, which itself uses p5.js, and adds easy-to-use functionality specifically tailored towards building games. p5.play was made by a very cool company called [Molleindustria](http://www.molleindustria.org/).
@@ -13,9 +17,9 @@ In this workshop, we're going to build a simple, yet addictive, game using JavaS
 
 - [Part I: Setup](#part-i-setup)
 - [Part II: The External JS File](#part-ii-the-external-js-file)
-- [Part III: Code Cleanup](#part-iii-code-cleanup)
-- [Part IV: Publishing and Sharing](#part-iv-publishing-and-sharing)
-- [Part V: Hacking](#part-v-hacking)
+- [Part III: Publishing and Sharing](#part-iii-publishing-and-sharing)
+- [Part IV Hacking](#part-iv-hacking)
+- [Attributions](#attributions)
 
 ## Part I. Setup
 
@@ -87,7 +91,7 @@ Let's add something for `setup()` to set up.
 
 ```js
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(250, 250);
 }
 ```
 
@@ -121,7 +125,7 @@ And now let's define it into existence. We'll need to decide where to place it, 
 
 ```js
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(250, 250);
   player = createSprite(width/2, height, 50, 50);
 }
 ```
@@ -147,7 +151,7 @@ Et voilà. Now we can view our sprite. It looks like it's cut off, though. Guess
 
 ```js
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(250, 250);
   player = createSprite(width/2, height-25, 50, 50);
 }
 ```
@@ -254,7 +258,7 @@ Now we add enemy sprite. This is like how we added the player sprite. First we d
 var enemy;
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(250, 250);
   player = createSprite(width/2, height-25, 50, 50);
   enemy = createSprite(width/2, 0, 10, 30);
 }
@@ -348,11 +352,12 @@ And let's display a game over screen.
 function gameOver() {
   background(0);
   textAlign(CENTER);
+  fill("white";)
   text("Game Over!", width/2, height/2);
 }
 ```
 
-We're drawing a background for our game over screen, and then placing text over it. I'm sure you can guess what `textAlign(CENTER)` does, but [here's the documentation](http://p5js.org/reference/#p5/textAlign) for more detail. We've inserted the text "Game Over!" at the center of the screen using [`text()`](http://p5js.org/reference/#/p5/text).
+We're drawing a background for our game over screen, and then placing text over it. I'm sure you can guess what `textAlign(CENTER)` does, but [here's the documentation](http://p5js.org/reference/#p5/textAlign) for more detail. We've inserted the text "Game Over!" at the center of the screen using [`text()`](http://p5js.org/reference/#/p5/text). We run `fill("white")` before calling the `text()` function to tell p5 to draw the text as white.
 
 Hm, looks like the `draw()` function just keeps on drawing the game, even after the game ends.
 
@@ -401,6 +406,7 @@ First, we have to let the user know that this is an available option! We'll use 
 function gameOver() {
   background(0);
   textAlign(CENTER);
+  fill("white");
   text("Game Over!", width/2, height/2);
   text("Click anywhere to try again", width/2, 3*height/4);
 }
@@ -457,156 +463,235 @@ function mouseClicked() {
 
 Now we're in business. Mouse clicks will only reset the game if the game has ended, i.e., only on the game over screen.
 
-### Spicing it up
+### Spicing it Up
 
-You'll notice that these things are all sprites, which means you can substitute in your own images!
+Let's make Dodge beautiful. We're going to bring the game from looking like this:
 
-p5.js has a function called [`loadImage()`](http://p5js.org/reference/#p5/loadImage) into which you can pass the URL of an image as an argument. p5.play sprites have the method [`addImage()`](http://p5play.molleindustria.org/docs/classes/Sprite.html#method-addImage) that you can then pass the loaded image into.
+![Before spicing it up](img/before_spicing_it_up.gif)
 
-According to the documentation, we must preload this image first, which allows me to introduce another p5.js function: `preload()`. This function deals with everything that should happen before `setup()`. In our case, that's grabbing the image from its URL and storing it in a variable. Like player and enemy, we want this image to be accessible in multiple places, so we'll declare it outside of all functions, at the top.
+To looking like this:
 
-```js
-var playerImage;
-```
+![After we add images](img/after_spicing_it_up.gif)
 
-And we'll write this `preload()` function right above `setup()`:
+#### Adding Images
+
+To start, let's customize the game with images.
+
+We're providing the following images and have already uploaded them to an image host, giving us a URL to load the images from in our code.
+
+- _Player_
+
+  ![Player image](img/prophet_orpheus.png)
+
+  `https://surrogate.hackedu.us/i.imgur.com/N5uCbDu.png`
+
+- _Enemy_
+
+  ![Enemy image](img/asteroid.png)
+
+  `https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png`
+
+- _Background_
+
+  ![Background image](img/background.png)
+
+  `https://surrogate.hackedu.us/i.imgur.com/aKQOg3G.png`
+
+p5.js has a function called [`loadImage()`](http://p5js.org/reference/#p5/loadImage) that takes URL of an image as an argument and gives us a loaded image ready to be used. p5.play sprites have the method [`addImage()`](http://p5play.molleindustria.org/docs/classes/Sprite.html#method-addImage) that we can give a loaded image to assign it to the sprite.
+
+In addition to `setup()` and `draw()`, p5.play has a special function called `preload()`, which is run right when the page loads before `setup()`. `preload()` is generally used to load images and other resources (like sounds) into the game. Go ahead and declare `preload()` right before the `setup()` function.
 
 ```js
 function preload() {
-  playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/H20lRKU.png");
+}
+
+function setup() {
+  ...
 }
 ```
 
-Now we'll use this image on our player by placing this line after its creation, in `setup()`:
+##### Customizing the Player
+
+Start by making a variable to hold our player image. Create this right below where we declared our `player` variable at the top of the file.
 
 ```js
-player.addImage(playerImage);
+...
+var player;
+var playerImage;
+...
 ```
 
-And now our player has a bit more personality, and is more relatable. Try customizing the enemy as well!
-
-## Part III. Code Cleanup
-
-So we've used the various widths several times throughout our program, but it's almost impossible to tell by looking at the code, seeing as we never labeled them as such! What we have instead are these seemingly arbitrary numbers like "25" and "5" floating around. It's important to write code that's as clear and maintainable as possible, so that you (in the future) and others can quickly get up to speed and be able to make changes and improvements.
-
-We can get rid of these "magic numbers" by storing them as constants. Constants are variables that don't vary; i.e, they are set once and the value stays _constant_. First, we'll declare the existence of these constants, as we did our player and enemy variables:
+Now let's load an image into `playerImage` in `preload()`.
 
 ```js
-var PLAYER_WIDTH;
-var PLAYER_HEIGHT;
-var ENEMY_WIDTH;
-var ENEMY_HEIGHT;
+function preload() {
+  playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/N5uCbDu.png");
+}
 ```
 
-I've used all capitals and underscores, which is the convention for naming constants.
-
-Next, we'll initialize them to values of our choice in `setup()`, and replace them in our creation of player and enemy, as well as in the `draw()` function.
+Add the loaded image to the `player`, right under where we create the player's sprite in `setup()`.
 
 ```js
 function setup() {
-  createCanvas(500,500);
-  PLAYER_WIDTH = 50;
-  PLAYER_HEIGHT = 50;
-  ENEMY_WIDTH = 10;
-  ENEMY_HEIGHT = 30;
-  player = createSprite(width/2, height-(PLAYER_HEIGHT/2), PLAYER_WIDTH, PLAYER_HEIGHT);
-  enemy = createSprite(width/2, 0, ENEMY_WIDTH, ENEMY_HEIGHT);
+  ...
+  player = createSprite(width/2, height-25, 50, 50);
+  player.addImage(playerImage);
+  ...
 }
 ```
 
-What's great about storing these values in constants is that if you want to make a change,  you only need to make that change in one place.
-
-We could clean up our code in a few other places as well. Always remember, simplify only after the function is correct. Get your code working, and then make it elegant.
+When we add an image to a sprite, the sprite's width and height is changed to match the image's. Because we're loading our sprite's image right after we create the sprite, we don't need to worry about the sprite's initial width and height. Let's just go ahead and set them to zero.
 
 ```js
-var PLAYER_WIDTH, PLAYER_HEIGHT, ENEMY_WIDTH, ENEMY_HEIGHT;
-var isGameOver, player, enemy;
-
 function setup() {
-    createCanvas(400,400);
-    PLAYER_WIDTH = 50;
-    PLAYER_HEIGHT = 50;
-    ENEMY_WIDTH = 10;
-    ENEMY_HEIGHT = 30;
-    isGameOver = false;
-    player = createSprite(width/2,height-(PLAYER_HEIGHT/2),PLAYER_WIDTH,PLAYER_HEIGHT);
-    var playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/H20lRKU.png");
-    player.addImage(playerImage);
-    enemy = createSprite(width/2,0,ENEMY_WIDTH,ENEMY_HEIGHT);
+  ...
+  p̶l̶a̶y̶e̶r̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶h̶e̶i̶g̶h̶t̶-̶2̶5̶,̶ ̶5̶0̶,̶ ̶5̶0̶)̶;̶
+  player = createSprite(width/2, height-25, 0, 0);
+  ...
 }
+```
 
-function draw() {
-    if (isGameOver) {
-        gameOver();
-    } else {
-        background(0,0,100);
+We were previously setting the player sprite's initial y coordinate to half of the sprite's width away from the bottom of the screen. Now that we're using an image instead of a placeholder square, we can replace `25` with half of the player image's height.
 
-        if (keyDown(LEFT_ARROW) && player.position.x > PLAYER_WIDTH/2) {
-            player.position.x -= 1;
-        }
-        if (keyDown(RIGHT_ARROW) && player.position.x < (width - PLAYER_WIDTH/2)) {
-            player.position.x += 1;
-        }
-
-        enemy.position.y += 3;
-        if (enemy.position.y > height) {
-            enemy.position.y = 0;
-            enemy.position.x = random(ENEMY_WIDTH/2,width-(ENEMY_WIDTH/2));
-        }
-
-        if (enemy.overlap(player)) {
-            isGameOver = true;
-        }
-
-        drawSprites();
-    }
+```js
+function setup() {
+  ...
+  p̶l̶a̶y̶e̶r̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶h̶e̶i̶g̶h̶t̶-̶2̶5̶,̶ ̶0̶,̶ ̶0̶)̶;̶
+  player = createSprite(width/2, height-(playerImage.height/2), 0, 0);
+  ...
 }
+```
 
-function gameOver() {
-    background(0)
-    textAlign(CENTER);
-    text("Game Over!", width/2, height/2);
-    text("Click anywhere to try again",width/2,3*height/4);
-}
+We're also going to want to make that same change in the `mouseClicked()` function.
 
+```js
 function mouseClicked() {
-    if (isGameOver) {
-        isGameOver = false;
-        background(0,0,100);
-        player.position.x = width/2;
-        player.position.y = height-PLAYER_HEIGHT/2;
-        enemy.position.x = width/2;
-        enemy.position.y = 0;
-    }
+  ...
+  p̶l̶a̶y̶e̶r̶.̶p̶o̶s̶i̶t̶i̶o̶n̶.̶y̶ ̶=̶ ̶h̶e̶i̶g̶h̶t̶-̶2̶5̶;̶
+  player.position.y = height-(playerImage.height/2);
+  ...
+}
+```
+##### Customizing the Enemy
+
+Now do the same for the enemy:
+
+```js
+...
+var enemy;
+var enemyImage;
+
+function preload() {
+  ...
+  enemyImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
+}
+
+function setup() {
+  ...
+  enemy = createSprite(width/2, 0, 10, 30);
+  enemy.addImage(enemyImage);
 }
 ```
 
-## Part IV. Publishing and Sharing
+And remember to change references to the enemy's placeholder height with it's image's actual height.
+
+```js
+function setup() {
+  ...
+  e̶n̶e̶m̶y̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶0̶,̶ ̶1̶0̶,̶ ̶3̶0̶)̶;̶
+  enemy = createSprite(width/2, 0, enemyImage.width, enemyImage.height);
+  ...
+}
+```
+
+
+##### Customizing the Background
+
+And, finally, for the background. Go ahead and declare a new variable, `backgroundImage`, at the top of the file and load an image into it in `preload()`.
+
+```js
+...
+var enemyImage;
+var backgroundImage;
+
+function preload() {
+  ...
+  enemyImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
+  backgroundImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/aKQOg3G.png");
+}
+```
+
+Now, go ahead and replace our existing `background()` call in `draw()` with `background(backgroundImage)`, to tell p5 to use an image for the background.
+
+```js
+function draw() {
+  ...
+  b̶a̶c̶k̶g̶r̶o̶u̶n̶d̶(̶0̶,̶ ̶5̶0̶,̶ ̶1̶0̶0̶)̶;̶
+  background(backgroundImage);
+}
+```
+
+Final thing: notice that the background image is 256 by 256 pixels, but the canvas is 250 by 250 pixels. Go ahead and change this to improve the look of the background image.
+
+```js
+function setup() {
+  c̶r̶e̶a̶t̶e̶C̶a̶n̶v̶a̶s̶(̶2̶5̶0̶,̶ ̶2̶5̶0̶)̶;̶
+  createCanvas(256, 256);
+  ...
+}
+```
+
+#### Rotating the Enemy
+
+In GIF of what we're aiming for, you'll notice that the asteroid (the `enemy`) is spinning.
+
+![](img/after_spicing_it_up.gif)
+
+This is actually quite easy to implement using p5.play. The [`Sprite`](http://p5play.molleindustria.org/docs/classes/Sprite.html) class in p5.play has an attribute called [`rotationSpeed`](http://p5play.molleindustria.org/docs/classes/Sprite.html#prop-rotationSpeed), which we can set to have p5.play rotate the sprite every time `draw()` is called.
+
+```js
+function setup() {
+  ...
+  enemy.addImage(enemyImage);
+  enemy.rotationSpeed = 4.0;
+}
+```
+
+Your game should now look pretty much identical to our target GIF. Rock on :punch:.
+
+Feel free to customize the enemy's rotation speed to make it faster/slower!
+
+## Part III. Publishing and Sharing
 
 You're done, yay! You just need to add it to your website so that it's live on the internet!
 
-You can follow these instructions from the Personal Website workshop (hopefully they are a little familiar to you) to add your changes to GitHub:
+Just like we did in the Personal Website workshop, do the following steps to upload your Dodge game to your website.
 
-1. Open the terminal by pressing `alt + t` on the keyboard at the same time.
-   Type in the following commands:
+1. Open the terminal by pressing `alt + t` on the keyboard at the same time. Type in the following commands:
   - `git add --all`
   - `git commit -m "Create Dodge game"`
   - `git push`
 2. GitHub will now ask for your username and password.
   - Go ahead and enter the username and press the enter.
-  - Enter the password and press enter. _The characters won't show up on
-    the screen, but rest assured, they are still being typed._
-3. Now try to view the website by going to `USERNAME.github.io`
-   (make sure to replace `USERNAME` with our actual GitHub username)
+  - Enter the password and press enter. _The characters won't show up on the screen, but rest assured, they are still being typed._
+3. Now try to view the website by going to `USERNAME.github.io/dodge/` (make sure to replace `USERNAME` with your actual GitHub username)
 
-Don't forget to share your beautiful creation on the Slack on the [`#shipit`](https://starthackclub.slack.com/messages/shipit) channel!
+Don't forget to share a link to your beautiful creation on the Slack on the [`#shipit`](https://starthackclub.slack.com/messages/shipit) channel!
 
-## Part V. Hacking
+## Part IV. Hacking
 
 - Isn't it a bit sad that there's a lose condition, but no win condition? Not even a score counter for number of enemies dodged?
 - Speaking of that, what if the objective of the game was to catch all the enemies instead of dodging them?
 - What if the enemies didn't drop straight down, but instead bounced around the screen? Hah! Good luck dodging that!
 - What if there were levels in which they got faster, and the player got faster?
 - Did you find it hard to restart the game because you had to switch from clicking to frantically mashing arrow keys to dodging the first enemy? Might it be better instead to use a key to restart the game? Or, might it be better to randomize the initial position to better your chances of survival? (Hint, we've already used the relevant functions in this workshop!)
+- Right now we have a dinosaur that's avoiding asteroids in space. What if we made the game look like an RPG, where a hero is avoiding arrows that are being shot at them? Or something completely different? Good places to find free graphics for games are http://opengameart.org/ and http://makepixelart.com/. Make sure to give attribution to the creators though!
 
 Infinite possibilities await you! [p5.js documentation](http://p5js.org/reference/) is a great resource, and can help you fulfill all of your wildest ambitions for this game!
+
+## Attributions
+
+Thank you to the following people for making this workshop possible.
+
+- Lanea Zimmerman for the [Dirt Platformer Tiles](http://opengameart.org/content/dirt-platformer-tiles) tileset, which is used in the background image
+- The [Make Pixel Art](http://makepixelart.com) community for the [asteroid graphic](http://makepixelart.com/artists/anonymous/asteroid_33)
