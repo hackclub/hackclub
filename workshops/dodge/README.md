@@ -593,7 +593,7 @@ function setup() {
 }
 ```
 
-And remember to change references to the enemy's placeholder height with it's image's actual height.
+And remember to change references to the enemy's placeholder height with its image's actual height.
 
 ```js
 function setup() {
