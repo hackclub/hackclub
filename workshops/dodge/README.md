@@ -99,7 +99,7 @@ function setup() {
 
 Now we'll add something for the `draw()` function to do as well. Let's start by having it paint the background a dark blue color every frame.
 
-```
+```js
 function draw() {
   background(0, 0, 100);
 }
