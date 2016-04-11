@@ -178,7 +178,7 @@ Now that we've introduced motion into our game, it's time to put some restrictio
 
 ### Adding Controls
 
-We only want the player to move when we press the controls. p5.js gives us a way to detect when keys are being pressed, namely with the function `keyDown()`. This function takes an argument that represents a key. For our purposes, we'll be needing `LEFT_ARROW` and `RIGHT_ARROW`, which are [keyCodes](http://p5js.org/reference/#p5/keyCode) preset by p5.js to correspond to the left and right arrow keys, respectively.
+We only want the player to move when we press the controls. p5.js gives us a way to detect when keys are being pressed, namely with the function `keyDown()`. This function takes an argument that represents a key. For our purposes, we'll be needing `LEFT_ARROW` and `RIGHT_ARROW`, which are [`keyCodes`](http://p5js.org/reference/#p5/keyCode) preset by p5.js to correspond to the left and right arrow keys, respectively.
 
 Let's wrap the line we just wrote, about incrementing x-position by 1, in a conditional, so that it only happens on the condition that the right arrow key is pressed:
 
@@ -188,7 +188,7 @@ if (keyDown(RIGHT_ARROW)) {
 }
 ```
 
-And we'll have corresponding behavior assigned to the left arrow key, except that we'll decement the position by 1:
+And we'll have corresponding behavior assigned to the left arrow key, except that we'll decrement the position by 1:
 
 ```js
 if (keyDown(LEFT_ARROW)) {
