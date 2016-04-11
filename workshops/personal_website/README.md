@@ -1,6 +1,6 @@
 # Personal Website
 
-Prophet Orpheus is here to guide you to making your own personal website. It will look something like this:
+Prophet Orpheus is here to guide you through making your own personal website. It will look something like this:
 
 ![](img/final_screenshot.png)
 
