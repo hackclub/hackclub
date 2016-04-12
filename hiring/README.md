@@ -19,3 +19,8 @@ Here are some questions that immediately come to mind for potential candidates:
 - Are they opinionated? How do they act in arguments? Are they afraid to think against the grain? When have they done that?
 - How do they hack their life? Do they care about improving their workflow or daily systems? Do they program their tools (ex. make plugins for their editor, make lots of customizations to their computer)?
 - Why do they care about coding? Is it about building the next hit app? Is it about making a lot of money in a job? Is it about creating art?
+
+## Positions
+
+- [Director of Community](community.md)
+- [Curriculum Engineer](curriculum_engineer.md)
