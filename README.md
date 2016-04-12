@@ -23,7 +23,7 @@ Links:
   - [Labs](labs)
   - [Logos](logos)
   - [Meeting notes](meetings)
-  - [Positions](positions)
+  - [Hiring](hiring)
   - [Scripts](scripts)
   - [Updates](updates)
   - [The Hack Series](the_hack_series)
