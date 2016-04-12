@@ -1,6 +1,6 @@
 # Hiring
 
-This directory contains Hack Club's documents on hiring.
+This directory contains Hack Club's documents on hiring. Also check out the [hiring protocol](../hiring_protocol.md).
 
 ## What type of people do we want to hire?
 
