@@ -510,14 +510,16 @@ function setup() {
 }
 ```
 
-##### Customizing the Player
+##### Customizing the Player and the Enemy
 
-Start by making a variable to hold our player image. Create this right below where we declared our `player` variable at the top of the file.
+Let's start by making some variables to hold our player image and our enemy image. Create these right below where we declared our `player` and `enemy` variables at the top of the file.
 
 ```js
 ...
 var player;
 var playerImage;
+var enemy;
+var enemyImage;
 ...
 ```
 
@@ -529,24 +531,46 @@ function preload() {
 }
 ```
 
-Add the loaded image to the `player`, right under where we create the player's sprite in `setup()`.
+... and do the same with `enemyImage`.
+
+```js
+function preload(){
+  playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/N5uCbDu.png");
+  enemyImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
+}
+```
+
+Add the loaded images to the `player` and `enemy`, right under where we create the sprites in `setup()`.
 
 ```js
 function setup() {
   ...
   player = createSprite(width/2, height-25, 50, 50);
   player.addImage(playerImage);
+  enemy = createSprite(width/2, 0, 10, 30);
+  enemy.addImage(enemyImage);
   ...
 }
 ```
 
-When we add an image to a sprite, the sprite's width and height is changed to match the image's. Because we're loading our sprite's image right after we create the sprite, we don't need to worry about the sprite's initial width and height. Let's just go ahead and set them to zero.
+When we add an image to a sprite, the sprite's width and height is changed to match the image's. Because we're loading our `player` sprite's image right after we create the sprite, we don't need to worry about the sprite's initial width and height. Let's just go ahead and set them to zero.
 
 ```js
 function setup() {
   ...
   p̶l̶a̶y̶e̶r̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶h̶e̶i̶g̶h̶t̶-̶2̶5̶,̶ ̶5̶0̶,̶ ̶5̶0̶)̶;̶
   player = createSprite(width/2, height-25, 0, 0);
+  ...
+}
+```
+
+Let's change the `enemy`'s placeholder width and height to those of the actual `enemyImage` too.
+
+```js
+function setup() {
+  ...
+  e̶n̶e̶m̶y̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶0̶,̶ ̶1̶0̶,̶ ̶3̶0̶)̶;̶
+  enemy = createSprite(width/2, 0, 0, 0);
   ...
 }
 ```
@@ -572,38 +596,24 @@ function mouseClicked() {
   ...
 }
 ```
-##### Customizing the Enemy
 
-Now do the same for the enemy:
-
-```js
-...
-var enemy;
-var enemyImage;
-
-function preload() {
-  ...
-  enemyImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
-}
-
-function setup() {
-  ...
-  enemy = createSprite(width/2, 0, 10, 30);
-  enemy.addImage(enemyImage);
-}
-```
-
-And remember to change references to the enemy's placeholder height with its image's actual height.
+Let's not forget our bounds! Though our `player` sprite is just about 50 pixels wide, this will not always be the case with different images. Let's set our bounds to `(playerImage.width/2)` in the `draw()` function.
 
 ```js
-function setup() {
+function draw(){
   ...
-  e̶n̶e̶m̶y̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶0̶,̶ ̶1̶0̶,̶ ̶3̶0̶)̶;̶
-  enemy = createSprite(width/2, 0, enemyImage.width, enemyImage.height);
+    if(keyDown(RIGHT_ARROW) && player.position.x < (width - (playerImage.width/2))){
+      player.position.x += 2;
+    }
+    
+    if(keyDown(LEFT_ARROW) && player.position.x > (playerImage.width/2)){
+      player.position.x -= 2;
+    }
   ...
 }
 ```
 
+Always code defensively!
 
 ##### Customizing the Background
 
