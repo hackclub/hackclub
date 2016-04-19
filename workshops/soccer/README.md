@@ -2,6 +2,8 @@
 
 Short link to this workshop: https://workshops.hackclub.com/soccer
 
+Note to leaders running this workshop: we're replacing Soccer with [Dodge](../dodge/README.md). We recommend running this in your clubs instead.
+
 -------------------------------------------------------------------------------
 
 In this tutorial, we'll walk you through building a single-player soccer game.
