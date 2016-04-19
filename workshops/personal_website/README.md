@@ -22,7 +22,7 @@ Open the [live demo][final_live_demo]. See the [final code][final_code]. This wo
 
 We'll be setting up GitHub and Cloud9 in this section.
 
-### 1) Sign Up for GitHub
+### 1) Signing Up for GitHub
 
 GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
 
@@ -34,7 +34,7 @@ GitHub is a website used by millions of programmers to collaborate on code. We'l
 2. Verify your email by checking the inbox of the email you used
 3. Open https://gh.hackclub.com in a new tab and star the project by clicking the button that looks like this on the top right: ![](img/github_star.png)
 
-### 2) Create Your First GitHub Repository
+### 2) Creating Your First GitHub Repository
 
 GitHub allows us to host our website using a service called GitHub Pages. This means that we can put the files of our website on GitHub and GitHub will give us a URL that we can share with the world.  
 
@@ -49,14 +49,14 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 
    > ![](img/gh_copy_new_repo_link.png)
 
-### 3) Sign Up for Cloud9
+### 3) Signing Up for Cloud9
 
 We'll be using a service called Cloud9 to write, save, and organize all of the code we'll write in Hack Club.
 
 1. In a new tab, open https://c9.io/
-2. In the top right hand corner, click the button that looks like this:
+2. In the top right hand corner, click the GitHub button:
 
-   > ![](img/c9_gh_icon.png)
+   > ![](img/c9_signup_with_gh.gif)
 
 3. Click the green "Authorize application" button
 4. If there is a popup that asks for your email, go ahead and enter it
@@ -70,8 +70,7 @@ We'll be using a service called Cloud9 to write, save, and organize all of the c
 
    > ![](img/c9_clone_from_existing.png)
 
-9. Make sure that you're using the "Custom" template
-10. Without changing anything else, scroll to the bottom and click the green "Create Workspace" button
+9. Without changing anything else, scroll to the bottom and click the green "Create Workspace" button
 
 You should now see a screen looks something like this:
 
@@ -97,7 +96,7 @@ We'll start by making an `index.html` file. Right click the sidebar, select "New
 
 ![](img/c9_create_index_html.gif)
 
-Now we'll add the basic HTML template. Type the following into `index.html`:
+Now we'll add the basic HTML template. Click on `index.html` and type the following:
 
 ```html
 <!DOCTYPE html>
@@ -123,20 +122,26 @@ As you can see, the page is blank. This is because we haven't added anything to 
 
 ### 3) Adding Text to the Body
 
-As mentioned before, all information is wrapped in tags. Tags are predefined in the language; think of them as the words in the language. For text, HTML provides a number of tags to store text. We'll be using two of the most basic ones: the h1 tag (`<h1>`) and the paragraph tag (`<p>`). The h1 tag is the first in a series of heading tags, with `h1` being the highest ranking, and `h6` being the lowest ranking. Just as with the other tags, you can place information within the these tags by surrounding your content with an opening and closing tag. Go ahead and add your name in a heading tag, and your description in a paragraph tag, like so:
+As mentioned before, all information is wrapped in tags. Tags are predefined in the language; think of them as the words in the language. For text, HTML provides a number of tags to store text. We'll be using two of the most basic ones: the h1 tag (`<h1>`) and the paragraph tag (`<p>`). The h1 tag is the first in a series of heading tags, with `h1` being the highest ranking, and `h6` being the lowest ranking. Just as with the other tags, you can place information within the these tags by surrounding your content with an opening and closing tag.
+
+Go ahead and add your name in a heading tag, and your description in a paragraph tag, in between the opening (`<body>`) and closing (`</body>`) tags. Here is Prophet Orpheus's name and description:
 
 ```html
-<h1>Prophet Orpheus</h1>
-<p>Coder Dino
-Will code for food</p>
+<body>
+  <h1>Prophet Orpheus</h1>
+  <p>Coder Dino
+  Will code for food</p>
+</body>
 ```
 
 If your description was a few paragraphs, or had line breaks, you may have noticed that one `<p></p>` doesn't quite cut it. Adding extra blank lines or spaces between words in HTML does not change the spacing of the content. We can solve this by placing each paragraph in its own `<p></p>`.
 
 ```html
-<h1>Prophet Orpheus</h1>
-<p>Coder Dino</p>
-<p>Will code for food</p>
+<body>
+  <h1>Prophet Orpheus</h1>
+  <p>Coder Dino</p>
+  <p>Will code for food</p>
+</body>
 ```
 
 ### 4) Adding Images to the Body
@@ -145,7 +150,7 @@ First, find an image you would like to include in your page. You can find someth
 
 Images are included in HTML via the image tag, or `<img />`. The image tag has an attribute called `src`, which will hold the _source_ URL of the image you want to display. As an example, if I were to add this picture of Prophet Orpheus, I would right click it and get the source URL, which in this case is https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png, and put it in an image tag like so:
 
-```
+```html
 <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png" />
 ```
 
@@ -218,7 +223,7 @@ Now that we've linked our CSS file to our HTML file, let's write some CSS to res
 
 Open up `styles.css` and type the following:
 
-```
+```css
 img {
     width: 200px;
 }
@@ -232,7 +237,7 @@ Next, we're going to center-align the entire body section.
 
 We'll add
 
-```
+```css
 body {
     text-align: center;
 }
@@ -242,7 +247,7 @@ As with resizing the image, this rule specifies that every `body` tag should hav
 
 Now let's change the font of our text. We'll add another attribute, `font-family`, to the `body` rule, and set the value to `"Arial"`. Now it will look like this:
 
-```
+```css
 body {
     text-align: center;
     font-family: "Arial";
@@ -261,24 +266,24 @@ Ah, it is truly beautiful to behold.
 
 Right now we can only see our website on our own computer. Let's get a link that we can share with anyone on the internet! We'll use the previously mentioned GitHub Pages to do this.
 
-1. Open the terminal by pressing `alt + t` on the keyboard at the same time. Type in the following commands:
+1. Open the terminal by pressing `alt + t` on the keyboard at the same time. Type in the following commands and press "Enter" after each one:
   - `git add --all`
   - `git commit -m "Initial commit"`
   - `git push`
 2. GitHub will now ask for your username and password.
   - Go ahead and enter the username and press the enter.
   - Enter the password and press enter. _The characters won't show up on the screen, but rest assured, they are still being typed._
-3. Now try to view the website by going to `USERNAME.github.io` (make sure to replace `USERNAME` with our actual GitHub username)
+3. Now try to view the website by going to `USERNAME.github.io` (make sure to replace `USERNAME` with your actual GitHub username)
 
 #### Celebrate!
 
 ![](img/celebrate_rush_hour.gif)
 
-Yes! Our website is now public on the internet!
+Yes! Your website is now public on the internet!
 
 ## Part V: Sharing with the Community
 
-Now that we have finished building a website
+Now that you have finished building a website, you should share your beautiful creation.
 
 1. In a new tab, open and follow [these directions][slack] to signup for our Slack.
 2. Join your club's channel by asking your club leader for the name of the channel, and post the link to your website in your club's channel.
