@@ -25,3 +25,5 @@ A big difference between new coders and experienced coders is faith: faith that 
 There's no shortage of opinions about the "right" or "best" way to learn how to code, and there are lots of potential approaches. You can learn the concepts from a book or by completing interactive exercises or by building things on your own.
 
 Regardless of your method, if you keep putting bricks on top of each other, it might take a long time but eventually you'll have a wall. This is where that faith mentioned earlier comes in handy. If you believe that with time and patience you can figure the whole coding thing out, in time you almost certainly will.
+
+_[Click me to go back to the workshop list](README.md)_
