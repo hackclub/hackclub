@@ -14,12 +14,13 @@ Likewise, if you have any questions or run into any trouble, Slack's the place (
 
 This is our recommended workshop flow. Through it you'll learn the fundamentals of HTML, CSS, and JavaScript through building _real_ things. You'll start off by building your first website and will eventually make your way through the fundamentals of game development.
 
-1. [Personal Website][personal_website]: _Set up your development tools and build your first website_
-2. [Twilio][twilio]: _Use code to call and text your phone_
-3. [Soccer][soccer]: _Build your first browser game_
-4. [Dodge][dodge]: _Expand upon what you started in Soccer and build your second, more advanced game_
-5. [Maze][maze]: _This one's super free-form. Build your third game and thoroughly customize it to truly make it your own._
-6. [Ajar.io][ajar]: _Much more advanced and detailed than previous game workshops. Build a single-player clone of https://agar.io/_.
+1. [Preface][preface]: _Have people read this before doing any of the workshops_
+2. [Personal Website][personal_website]: _Set up your development tools and build your first website_
+3. [Twilio][twilio]: _Use code to call and text your phone_
+4. [Soccer][soccer]: _Build your first browser game_
+5. [Dodge][dodge]: _Expand upon what you started in Soccer and build your second, more advanced game_
+6. [Maze][maze]: _This one's super free-form. Build your third game and thoroughly customize it to truly make it your own._
+7. [Ajar.io][ajar]: _Much more advanced and detailed than previous game workshops. Build a single-player clone of https://agar.io/_.
 
 ## The List
 
@@ -27,6 +28,7 @@ This is our recommended workshop flow. Through it you'll learn the fundamentals 
 
 | Workshop                                   | Technologies                             | What You Build                                                                   | Author                                                                                                                 |
 | ------------------------------------------ | ---------------------------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [Preface][preface]                         | _Your mind_                              | _This isn't a workshop._ Have members read this before anything else.            | Hack Club staff                                                                                                        |
 | [Personal Website][personal_website]       | HTML & CSS                               | Build your first website and get set up on _all the things_ (replaces Portfolio) | Hack Club staff                                                                                                        |
 | [Twilio][twilio]                           | JavaScript (only works in North America) | A website that makes phone calls and texts                                       | Hack Club staff                                                                                                        |
 | [Soccer][soccer]                           | JavaScript                               | A simple  soccer game                                                            | Hack Club staff                                                                                                        |
@@ -61,6 +63,7 @@ There currently aren't any sandbox workshops.
 
 Interested in contributing to our workshops? Look [here](GUIDELINES.md) and [here](CONTRIBUTING.md). Beginners welcome!
 
+[preface]: PREFACE.md
 [personal_website]: personal_website/README.md
 [twilio]: twilio/README.md
 [soccer]: soccer/README.md
