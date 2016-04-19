@@ -10,7 +10,7 @@ If you're reading this, that means that you've decided to embark on the journey 
 
 First and foremost, coding is a skill like any other. Like learning a language, there's grammar and vocabulary to acquire. Like math, there are processes to work through specific types of problems. Like all kinds of craftsmanship and art-making, there are techniques and tools and best practices that people have developed over time, specialized to different tasks, that you're free to use or modify or discard.
 
-Someone will always tell you you're doing it wrong. There are almost always many different approaches to a particular problem with no single "right way". A lot of programmers get very good at advocating for their preferred way, but that doesn't mean it's the One Truth Path.
+Someone will always tell you you're doing it wrong. There are almost always many different approaches to a particular problem with no single "right way". A lot of programmers get very good at advocating for their preferred way, but that doesn't mean it's the One True Path.
 
 ## It Never Works the First Time
 
