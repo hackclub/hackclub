@@ -49,7 +49,7 @@ Now we must connect the two files. Since HTML file depends on JavaScript file to
 
 The script tag has an attribute called source (`src`), which is where we will fill in the URL to the JavaScript file we want to include.
 
-Let's write this line of code inside the body of the HTML file, to include our `main.js` file:
+Let's write this line of code inside the head of the HTML file, to include our `main.js` file:
 
 ```html
 <script src="main.js"></script>
@@ -75,10 +75,10 @@ Now we have successfully hooked up the JavaScript to the HTML. Our `index.html` 
 <html>
 <head>
   <title>Soundboard</title>
-</head>
-<body>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="main.js"></script>
+</head>
+<body>
 </body>
 </html>
 ```
@@ -116,14 +116,14 @@ Now `index.html` looks like this:
 <html>
 <head>
   <title>Soundboard</title>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="main.js"></script>
 </head>
 <body>
   <button>Chop3</button>
   <button>Kick4</button>
   <button>Perc1</button>
   <button>Vox9</button>
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-  <script src="main.js"></script>
 </body>
 </html>
 ```
@@ -150,14 +150,14 @@ Our HTML now looks like this:
 <html>
 <head>
   <title>Soundboard</title>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="main.js"></script>
 </head>
 <body>
   <button id="chop3">Chop3</button>
   <button id="kick4">Kick4</button>
   <button id="perc1">Perc1</button>
   <button id="vox9">Vox9</button>
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-  <script src="main.js"></script>
 </body>
 </html>
 ```
