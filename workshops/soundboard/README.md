@@ -187,7 +187,7 @@ This declares the existence of the variable `chop3Sound`. Now we can store the A
 Next, we'll make a new Audio object with the `chop3.mp3`, and assign it to our variable:
 
 ```js
---var chop3Sound;--
+// var chop3Sound;
 var chop3Sound = new Audio("chop3.mp3");
 ```
 
@@ -396,7 +396,7 @@ Now that we have set up the page to react when a key is pressed, we just need to
 We will declare this function and name it `delegateKeypress` and pass it as an argument to the method `.keypress()` like so:
 
 ```js
---$(document).keypress();--
+// $(document).keypress();
 $(document).keypress(delegateKeypress);
 
 function delegateKeypress(event) {
@@ -447,8 +447,8 @@ That said, we can now replace our repetitive code like so:
 ```js
 function delegateKeypress(event) {
   if (event.keyCode == 100) {
-    --var chop3Sound = new Audio("chop3.mp3");--
-    --chop3Sound.play();--
+    // var chop3Sound = new Audio("chop3.mp3");
+    // chop3Sound.play();
     $("#chop3").trigger("click");
   }
 }
