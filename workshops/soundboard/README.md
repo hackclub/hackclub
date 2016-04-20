@@ -32,7 +32,7 @@ Table of Contents
   ```html
     <!DOCTYPE html>
     <html>
-      <head>
+    <head>
       <title>Soundboard</title>
     </head>
     <body>
