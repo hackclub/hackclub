@@ -34,6 +34,8 @@ GitHub is a website used by millions of programmers to collaborate on code. We'l
 2. Verify your email by checking the inbox of the email you used
 3. Open https://gh.hackclub.com in a new tab and star the project by clicking the button that looks like this on the top right: ![](img/github_star.png)
 
+_Pro tip: if you want a username that's already taken, you can often get it by [contacting GitHub](https://github.com/contact) (this is actually how we got `hackclub` on GitHub). Make sure that the username isn't actively used by another user before reaching out. [Click here](https://help.github.com/articles/name-squatting-policy/) for more details._
+
 ### 2) Creating Your First GitHub Repository
 
 GitHub allows us to host our website using a service called GitHub Pages. This means that we can put the files of our website on GitHub and GitHub will give us a URL that we can share with the world.  
