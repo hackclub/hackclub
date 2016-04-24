@@ -63,24 +63,20 @@ Yay! You've created your very first repository! Now, copy the "HTTPS link" at th
 
 We'll be using a service called Cloud9 to write, save, and organize all of the code we'll write in Hack Club.
 
-1. In a new tab, open https://c9.io/
-2. In the top right hand corner, click the GitHub button:
+In a new tab, open https://c9.io/
 
-   > ![](img/c9_signup_with_gh.gif)
+Sign up by entering your email and going through the signup form.
 
-3. Click the green "Authorize application" button
-4. If there is a popup that asks for your email, go ahead and enter it
-5. Click the gray box that says "Create a new workspace"
-6. Set the "Workspace name" to `projects`
+![](img/c9_signup.gif)
 
-   > ![](img/c9_name_workspace.png)
+Once you've finished, and reached your dashboard, you should see a gray box that says "Create a new workspace." Click that and fill in the following:
 
-7. Make sure your workshop is set to "Public"
-8. Under "Clone from Git or Mercurial URL", paste the HTTPS Link that you copied from your GitHub repository
+- Set the "Workspace name" to `projects`.
+- Under "Clone from Git or Mercurial URL", paste the HTTPS Link that you copied from your GitHub repository
 
-   > ![](img/c9_clone_from_existing.png)
+Then click the green "Create Workspace" button.
 
-9. Without changing anything else, scroll to the bottom and click the green "Create Workspace" button
+![](img/c9_create_workspace.gif)
 
 You should now see a screen looks something like this:
 
