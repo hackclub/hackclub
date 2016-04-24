@@ -42,7 +42,7 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 
    > ![](img/gh_new_repo_button.gif)
 
-3. Under "Repository name" write `USERNAME.github.io` except instead of writing `USERNAME`, write your actual GitHub username. So if your username is `alice1337`, write `alice1337.github.io`. You have to name your repository this in order for GitHub Pages to work correctly (we'll talk more about GitHub Pages later)
+3. Under "Repository name" write `USERNAME.github.io` except instead of writing `USERNAME`, write your actual GitHub username. So if your username is `prophetorpheus`, write `prophetorpheus.github.io`. You have to name your repository this in order for GitHub Pages to work correctly (we'll talk more about GitHub Pages later)
 
    > ![](img/gh_create_new_repo.png)
 
