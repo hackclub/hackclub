@@ -64,7 +64,7 @@ We'll be using a service called Cloud9 to write, save, and organize all of the c
 
    > ![](img/c9_dashboard.png)
 
-3. Click the gray box that says "Create a new workspace"
+3. Click the gray box that says "Create a new workspace". **Do not click "Let's get started!".**
 
    > ![](img/c9_create_new_workspace_button.gif)
 
