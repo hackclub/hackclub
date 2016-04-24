@@ -20,19 +20,16 @@ Open the [live demo][final_live_demo]. See the [final code][final_code]. This wo
 
 ## Part I: Setup
 
-We'll be setting up GitHub and Cloud9 in this section.
-
 ### 1) Signing Up for GitHub
 
 GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
 
-1. Open https://github.com/join in a new tab and create a new account
-  - Choose a username you won't regret. Your actual name is a solid bet.
-  - Use an email that you have access to; you'll need to access it to verify your account
-  - Make sure to remember your username and password; you'll need them at every club meeting
-  - When prompted to choose a plan, choose the "Free" plan
+1. Open https://github.com/join in a new tab and fill in:
+  - your username (if you can't decide on one, your first and last name are a solid choice)
+  - email (you'll be verifying your email in the next step)
+  - password (you'll need to remember this!)
 2. Verify your email by checking the inbox of the email you used
-3. Open https://gh.hackclub.com in a new tab and star the project by clicking the button that looks like this on the top right: ![](img/github_star.png)
+3. Open https://gh.hackclub.com in a new tab and star the project by clicking the button on the top right that looks like this: ![](img/github_star.png)
 
 _Pro tip: if you want a username that's already taken, you can often get it by [contacting GitHub](https://github.com/contact) (this is actually how we got `hackclub` on GitHub). Make sure that the username isn't actively used by another user before reaching out. [Click here](https://help.github.com/articles/name-squatting-policy/) for more details._
 
@@ -41,7 +38,10 @@ _Pro tip: if you want a username that's already taken, you can often get it by [
 GitHub allows us to host our website using a service called GitHub Pages. This means that we can put the files of our website on GitHub and GitHub will give us a URL that we can share with the world.  
 
 1. Go to https://github.com
-2. Click the green "+ New repository" button
+2. Click the green "Create repository" button
+
+   > ![](img/gh_new_repo_button.gif)
+
 3. Under "Repository name" write `USERNAME.github.io` except instead of writing `USERNAME`, write your actual GitHub username. So if your username is `alice1337`, write `alice1337.github.io`. You have to name your repository this in order for GitHub Pages to work correctly (we'll talk more about GitHub Pages later)
 
    > ![](img/gh_create_new_repo.png)
@@ -49,30 +49,34 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 4. After you've double checked that your repository is correctly named, click the green "Create repository" button at the bottom.
 5. Yay! You've created your very first repository! Now, copy the "HTTPS link" at the top. You will need this link for the next step.
 
-   > ![](img/gh_copy_new_repo_link.png)
+   > ![](img/gh_copy_link.gif)
 
 ### 3) Signing Up for Cloud9
 
 We'll be using a service called Cloud9 to write, save, and organize all of the code we'll write in Hack Club.
 
 1. In a new tab, open https://c9.io/
-2. In the top right hand corner, click the GitHub button:
+2. Enter your email and go through the signup process.
 
-   > ![](img/c9_signup_with_gh.gif)
+   > ![](img/c9_start_signup.gif)
 
-3. Click the green "Authorize application" button
-4. If there is a popup that asks for your email, go ahead and enter it
-5. Click the gray box that says "Create a new workspace"
-6. Set the "Workspace name" to `projects`
+   You should end up with a screen that looks like this:
+
+   > ![](img/c9_dashboard.png)
+
+3. Click the gray box that says "Create a new workspace"
+
+   > ![](img/c9_create_new_workspace_button.gif)
+
+4. Set the "Workspace name" to `projects`
 
    > ![](img/c9_name_workspace.png)
 
-7. Make sure your workshop is set to "Public"
-8. Under "Clone from Git or Mercurial URL", paste the HTTPS Link that you copied from your GitHub repository
+5. Under "Clone from Git or Mercurial URL", paste the HTTPS Link that you copied from your GitHub repository
 
    > ![](img/c9_clone_from_existing.png)
 
-9. Without changing anything else, scroll to the bottom and click the green "Create Workspace" button
+6. Click the green "Create Workspace" button at the bottom.
 
 You should now see a screen looks something like this:
 
