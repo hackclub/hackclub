@@ -89,11 +89,11 @@ Now we're ready to start the website!
 
 ### 1) Creating the HTML file
 
-We'll start by making an `index.html` file. Right click the sidebar, select "New File," and name the file `index.html`.
+We'll start by making an `index.html` file. Right click the `projects` folder in the left sidebar, select "New File," and name the file `index.html`.
 
 ![](img/c9_create_index_html.gif)
 
-Now we'll add the basic HTML template. Click on `index.html` and type the following:
+Now we'll add the basic HTML template. Double-click on `index.html` and type the following:
 
 ```html
 <!DOCTYPE html>
@@ -151,6 +151,8 @@ If your description was a few paragraphs, or had line breaks, you may have notic
 </html>
 ```
 
+Save your `index.html` and refresh the Live Preview. Yay!
+
 ### 4) Adding Images to the Body
 
 First, find an image you would like to include in your page. You can find something on Google Images, Facebook, or Imgur. We'll need the source URL of the image, so right click and select "Copy Image Address."
@@ -191,7 +193,7 @@ While HTML oversees the content and the way it's structured, CSS is how you'll s
 
 ### 1) Creating the CSS File
 
-We'll now make an `styles.css` file. Right click the sidebar, select "New File," and name the file `styles.css`.
+We'll now make an `styles.css` file. Right click the `projects` folder, select "New File," and name the file `styles.css`.
 
 ![](img/c9_create_styles_css.gif)
 
@@ -199,7 +201,7 @@ This is called an external style sheet because the CSS file is external to the H
 
 ### 2) Linking the CSS file to the HTML file
 
-Although we've created a CSS file, until we explicitly tell the HTML file to use the CSS file, it will not use it. We must explicitly link the CSS file in the HTML. We'll do this by typing the following into the head of `index.html`, because the head is where we tell information about the page to the browser.
+Although we've created a CSS file, until we explicitly tell the HTML file to use the CSS file, it will not use it. We must explicitly link the CSS file in the HTML. We'll do this by typing the following into the head of `index.html` (between `<head>` and `</head>`), because the head is where we tell information about the page to the browser.
 
 ```html
 <link rel="stylesheet" href="styles.css" />
@@ -223,6 +225,8 @@ Our HTML file now looks like so:
     </body>
 </html>
 ```
+
+Remember to save your `index.html`.
 
 ### 3) Adding Styles to the Stylesheet
 
@@ -265,7 +269,7 @@ Here is the transformation that your stylesheet will have undergone at the end o
 
 ![](img/c9_css_progression.gif)
 
-Ah, it is truly beautiful to behold.
+Now, let's save and look at our work. Ah, it is truly beautiful to behold.
 
 ![](img/celebrate_harry_potter.gif)
 
