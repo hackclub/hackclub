@@ -46,7 +46,6 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 
    > ![](img/gh_create_new_repo.png)
 
-4. After you've double checked that your repository is correctly named, click the green "Create repository" button at the bottom.
 5. Yay! You've created your very first repository! Now, copy the "HTTPS link" at the top. You will need this link for the next step.
 
    > ![](img/gh_copy_link.gif)
@@ -64,7 +63,7 @@ We'll be using a service called Cloud9 to write, save, and organize all of the c
 
    > ![](img/c9_dashboard.png)
 
-3. Click the gray box that says "Create a new workspace". **Do not click "Let's get started!".**
+3. Click the gray box that says "Create a new workspace".
 
    > ![](img/c9_create_new_workspace_button.gif)
 
@@ -81,14 +80,6 @@ We'll be using a service called Cloud9 to write, save, and organize all of the c
 You should now see a screen looks something like this:
 
 ![](img/c9_ide_loaded.png)
-
-> Note:
->
-> If you're waiting for a while (more than 10 seconds) and the above screen still doesn't load, try the following:
->
-> 1. Open https://c9.io
-> 2. Click on the green "Open" button
-> 3. You should now see the screen shown above. If not, ask your facilitator for help
 
 Congratulations, you've officially set up all of your coding tools for the semester!
 
@@ -133,21 +124,31 @@ As mentioned before, all information is wrapped in tags. Tags are predefined in 
 Go ahead and add your name in a heading tag, and your description in a paragraph tag, in between the opening (`<body>`) and closing (`</body>`) tags. Here is Prophet Orpheus's name and description:
 
 ```html
-<body>
-  <h1>Prophet Orpheus</h1>
-  <p>Coder Dino
-  Will code for food</p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Prophet Orpheus</h1>
+    <p>Coder Dino
+    Will code for food</p>
+  </body>
+</html>
 ```
 
 If your description was a few paragraphs, or had line breaks, you may have noticed that one `<p></p>` doesn't quite cut it. Adding extra blank lines or spaces between words in HTML does not change the spacing of the content. We can solve this by placing each paragraph in its own `<p></p>`.
 
 ```html
-<body>
-  <h1>Prophet Orpheus</h1>
-  <p>Coder Dino</p>
-  <p>Will code for food</p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Prophet Orpheus</h1>
+    <p>Coder Dino</p>
+    <p>Will code for food</p>
+  </body>
+</html>
 ```
 
 ### 4) Adding Images to the Body
@@ -201,7 +202,7 @@ This is called an external style sheet because the CSS file is external to the H
 Although we've created a CSS file, until we explicitly tell the HTML file to use the CSS file, it will not use it. We must explicitly link the CSS file in the HTML. We'll do this by typing the following into the head of `index.html`, because the head is where we tell information about the page to the browser.
 
 ```html
-<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="styles.css" />
 ```
 
 `<link />` is the link tag, which describes relationships between the current file (in this case, `index.html`), and some external file (`styles.css`). In our example, `rel="stylesheet"` specifies what this relationship is, i.e., that `styles.css` is a stylesheet, and `href` (hypertext reference) specifies where the file can be found (in this case, it's just the filename `styles.css`). The link tag, similar to the image tag, is a self-closing tag, once again denoted by the `/` that precedes the `>`.
@@ -272,14 +273,13 @@ Ah, it is truly beautiful to behold.
 
 Right now we can only see our website on our own computer. Let's get a link that we can share with anyone on the internet! We'll use the previously mentioned GitHub Pages to do this.
 
-1. Open the terminal by pressing `alt + t` on the keyboard at the same time. Type in the following commands and press "Enter" after each one:
-  - `git add --all`
-  - `git commit -m "Initial commit"`
-  - `git push`
-2. GitHub will now ask for your username and password.
-  - Go ahead and enter the username and press the enter.
-  - Enter the password and press enter. _The characters won't show up on the screen, but rest assured, they are still being typed._
-3. Now try to view the website by going to `USERNAME.github.io` (make sure to replace `USERNAME` with your actual GitHub username)
+1. In Cloud9, press `Alt + t` on the keyboard. This is going to open the terminal, which will allow us to run special types of commands in Cloud9. In this case, we're going to save and upload our code to GitHub. Type in the following commands:
+  - `git add --all` (then press enter)
+  - `git commit -m "Initial commit"` (then press enter)
+  - `git push` (then press enter)
+    - Enter your GitHub username (then press enter).
+    - Enter your GitHub password (then press enter). _The characters won't show up on the screen, but rest assured, they are still being typed._
+3. Now try to view the website by going to `USERNAME.github.io` (replace `USERNAME` with your actual GitHub username)
 
 #### Celebrate!
 
