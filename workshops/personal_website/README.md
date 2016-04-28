@@ -31,7 +31,7 @@ GitHub is a website used by millions of programmers to collaborate on code. We'l
 2. Verify your email by checking the inbox of the email you used
 3. Open https://gh.hackclub.com in a new tab and star the project by clicking the button on the top right that looks like this: ![](img/github_star.png)
 
-_Pro tip: if you want a username that's already taken, you can often get it by [contacting GitHub](https://github.com/contact) (this is actually how we got `hackclub` on GitHub). Make sure that the username isn't actively used by another user before reaching out. [Click here](https://help.github.com/articles/name-squatting-policy/) for more details._
+_Pro tip: if you want a username that's already taken, you can often get it by [contacting GitHub](https://github.com/contact) (this is actually how we got the `hackclub` username on GitHub). Make sure that the username isn't actively used by another user before reaching out. [Click here](https://help.github.com/articles/name-squatting-policy/) for more details._
 
 ### 2) Creating Your First GitHub Repository
 
