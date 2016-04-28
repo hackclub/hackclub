@@ -157,13 +157,13 @@ Save your `index.html` and refresh the Live Preview. Yay!
 
 First, find an image you would like to include in your page. You can find something on Google Images, Facebook, or Imgur. We'll need the source URL of the image, so right click and select "Copy Image Address."
 
-Images are included in HTML via the image tag, or `<img />`. The image tag has an attribute called `src`, which will hold the _source_ URL of the image you want to display. As an example, if I were to add this picture of Prophet Orpheus, I would right click it and get the source URL, which in this case is https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png, and put it in an image tag like so:
+Images are included in HTML via the image tag, or `<img>`. The image tag has an attribute called `src`, which will hold the _source_ URL of the image you want to display. As an example, if I were to add this picture of Prophet Orpheus, I would right click it and get the source URL, which in this case is https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png, and put it in an image tag like so:
 
 ```html
-<img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png" />
+<img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
 ```
 
-You may have noticed that the image tag doesn't have a closing tag like `<h1></h1>` or `<body></body>`. That's because it is a self-closing tag. In fact, the `/` that comes right before `>` is how it does this.
+You may have noticed that the image tag doesn't have a closing tag like `<h1></h1>` or `<body></body>`. That's because it is a [void element](https://www.w3.org/TR/html-markup/syntax.html#syntax-elements), meaning that it doesn't have any contents.
 
 Go ahead and add this into your `index.html` now. I put my picture before my heading, and my code looks like this:
 
@@ -173,7 +173,7 @@ Go ahead and add this into your `index.html` now. I put my picture before my hea
     <head>
     </head>
     <body>
-        <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"/>
+        <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
         <h1>Prophet Orpheus</h1>
         <p>Coder Dino</p>
         <p>Will code for food</p>
@@ -218,7 +218,7 @@ Our HTML file now looks like so:
         <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
-        <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"/>
+        <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
         <h1>Prophet Orpheus</h1>
         <p>Coder Dino</p>
         <p>Will code for food</p>
