@@ -93,7 +93,7 @@ We'll start by making an `index.html` file. Right click the `projects` folder in
 
 ![](img/c9_create_index_html.gif)
 
-Now we'll add the basic HTML template. Double-click on `index.html` and type the following:
+Now we'll add the basic HTML template. Double-click on `index.html` and **type** the following. **DO NOT COPY AND PASTE.**
 
 ```html
 <!DOCTYPE html>
