@@ -23,10 +23,10 @@ Table of Contents
 
 ### Setting up Folders and Files
 
-1. We'll begin by creating a new folder in our Cloud 9 workspace. Right-click the sidebar, select "New Folder," and name it `soundboard`.
+1. We'll begin by creating a new folder in our Cloud 9 workspace. Right-click your `projects` folder, select "New Folder," and name it `soundboard`.
 2. In this folder, right-click again, select "New File," and name the new file `index.html`. This is where we will be writing our HTML to create a user interface for the soundboard.
 3. Create another file in the soundboard folder, and name this one `main.js`. This is where we will be writing our JavaScript to make the soundboard play sounds.
-4. We've provided a set of sounds, which can be found [here](sounds/). Save these to your computer by right-clicking each one and saving. Then, drag all the files into the `soundboard` directory in the Cloud 9 sidebar.
+4. We've provided a set of sounds, which can be found [here](sounds/). Save these to your computer by right-clicking the filename of each one and choose `Save Link As`. Then, drag all the files into the `soundboard` directory in the Cloud 9 sidebar.
 5. Now, open up `index.html` and type the following:
 
   ```html
