@@ -32,11 +32,11 @@ Table of Contents
   ```html
     <!DOCTYPE html>
     <html>
-    <head>
-      <title>Soundboard</title>
-    </head>
-    <body>
-    </body>
+      <head>
+        <title>Soundboard</title>
+      </head>
+      <body>
+      </body>
     </html>
   ```
 
