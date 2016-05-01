@@ -49,7 +49,7 @@ Now we must connect the two files. Since HTML file depends on JavaScript file to
 
 The script tag has an attribute called source (`src`), which is where we will fill in the URL to the JavaScript file we want to include.
 
-Let's write this line of code inside the body of the HTML file, to include our `main.js` file:
+Let's write this line of code inside the **body** of the HTML file, to include our `main.js` file:
 
 ```html
 <script src="main.js"></script>
@@ -61,11 +61,13 @@ For this workshop, we'll be using the handy library called jQuery inside our `ma
 
 We'll let the browser know that we'll be using jQuery by once again using a `<script>` tag. jQuery can be found at [this URL](https://code.jquery.com/jquery-2.2.3.min.js), so that's what we will put as the value for `src`.
 
-Since we will be using jQuery in `main.js`, `main.js` will be reliant on jQuery. Thus, we will put the script tag containing jQuery above the one containing `main.js` in order to load jQuery before loading `main.js`.
+Since we will be using jQuery in `main.js`, `main.js` will be reliant on jQuery. Thus, we will put the script tag containing jQuery above the one containing `main.js` in the **body** of `index.html` in order to load jQuery before loading `main.js`.
 
 ```html
-<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-<script src="main.js"></script>
+<body>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="main.js"></script>
+</body>
 ```
 
 Now we have successfully hooked up the JavaScript to the HTML. Our `index.html` now looks like this:
