@@ -57,7 +57,11 @@ This is our recommended workshop flow. Through it you'll learn the fundamentals 
 
 ### Sandbox Workshops
 
-There currently aren't any sandbox workshops.
+| Workshop                           | Technologies              | What You Build                                  | Author              |
+| ---------------------------------- | ------------------------- | ----------------------------------------------- | ------------------- |
+| [Soundboard](soundboard/README.md) | HTML, CSS, and JavaScript | Website with clickable buttons that make sounds | [@jkwok91][jkwok91] |
+
+[jkwok91]: https://github.com/jkwok91
 
 ## Contributing to the Workshops
 
