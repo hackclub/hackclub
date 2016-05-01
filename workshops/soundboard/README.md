@@ -87,7 +87,7 @@ Now we have successfully hooked up the JavaScript to the HTML. Our `index.html` 
 
 ## Part II: User Interface
 
-Now that we've set up our HTML file, let's add some elements to the page to form the user interface of our soundboard.
+Now that we've set up our HTML file, let's add some elements to the **body** to form the user interface of our soundboard.
 
 How should we design our user interface? This is what the user (you, or others) will be interacting with when trying to make sweet music. Since this soundboard will be on a webpage, we'll probably be clicking on things. One can click on many things, but the most intuitive is a button, which is what we will use.
 
@@ -95,7 +95,7 @@ How should we design our user interface? This is what the user (you, or others) 
 
 We can create buttons that imitate the buttons on a soundboard, by using [the button tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) (`<button>`).
 
-We use the button tag by typing the text we want on the button between the start (`<button>`) and close (`</button>`) tags.
+We use the button tag by typing the text we want on the button between the start (`<button>`) and close (`</button>`) tags. Type the following above your script tags in the **body**:
 
 ```html
 <button>Chop3</button>
