@@ -261,9 +261,9 @@ It's time to connect the buttons to our sound functions.
 
 ### Detecting the Click
 
-Before we connect the buttons and the functions, we must first identify the buttons in code. Conveniently, we've given each button an id attribute, making each of them easy to select.
+Before we connect the buttons and the functions, we must first identify the buttons in code. Conveniently, we've given each button an id attribute in our `index.html`, making each of them easy to select in `main.js`.
 
-We can thus use jQuery to find these buttons, by using special syntax:
+We can thus use jQuery to find these buttons, by using special syntax. We'll type this below our functions, in `main.js`:
 
 ```js
 $("#chop3");
@@ -271,7 +271,7 @@ $("#chop3");
 
 jQuery uses the `$` to refer to itself, and uses `#` to mean `id`. By passing in "#chop3" in the parentheses, we are creating a selector for an HTML element having the id of "chop3." A selector is how we can select specific HTML elements within our JavaScript code.
 
-Then, if we do the following, we will be creating selectors for the other buttons, using their respective IDs.
+Then, if we type the following, we will be creating selectors for the other buttons, using their respective IDs.
 
 ```js
 $("#kick4");
