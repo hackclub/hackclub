@@ -279,7 +279,7 @@ $("#perc1");
 $("#vox9");
 ```
 
-Now that we can select our buttons to be detected by the JavaScript, we can access the methods (wow once again what is a method) attached to the button.
+Now that we can select our buttons to be detected by the JavaScript, we can access the methods attached to the button.
 
 One of the methods is `.on()`. This method sets the button to execute some instructions when something happens. Things that happen on the page by way of the user doing something are referred to as "events." When we use the `.on()` function, we pair an event with a function that we want to occur when the event happens.
 
