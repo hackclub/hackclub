@@ -214,19 +214,17 @@ It's time to connect the button to our sound function.
 
 ### Detecting the Click
 
-Before we connect the button and the function, we must first identify the button in `main.js`. Conveniently, we've given the button an id attribute in our `index.html`, making it easy to select in `main.js`.
+In order to connect the button and the function, we must first identify the button in `main.js`. Conveniently, we've given the button an `id` attribute in our `index.html`, making it easy to refer to in `main.js`.
 
-We can use jQuery to find the button, by using special syntax. We'll type this below our function, in `main.js`:
+We can [use jQuery to find the button](https://learn.jquery.com/using-jquery-core/selecting-elements/), by using special syntax. We'll type this below our function, in `main.js`:
 
 ```js
 $("#chop3");
 ```
 
-jQuery uses the `$` to refer to itself, and uses `#` to mean `id`. By passing in "#chop3" in the parentheses, we are creating a selector for an HTML element having the id of "chop3." A selector is how we can select specific HTML elements within our JavaScript code.
+Now that we have selected our button in the JavaScript by its `id`, we can access the methods attached to the button.
 
-Now that we can select our buttons to be detected by the JavaScript, we can access the methods attached to the button.
-
-One of the methods is `.on()`. This method sets the button to execute some instructions when something happens. Things that happen on the page by way of the user doing something are referred to as "events." When we use the `.on()` function, we pair an event with a function that we want to occur when the event happens.
+One of the methods is `.on()`. This method sets the button to execute some instructions when something happens. Things that happen on the page by way of the user doing something are referred to as ["events."](https://learn.jquery.com/events/introduction-to-events/) When we use the [`.on()`](https://learn.jquery.com/events/handling-events/) method, we pair an event with a function that we want to occur when the event happens.
 
 Here, we will use the method to detect the "click" event, so we'll provide `"click"` as the first argument to `.on()`:
 
