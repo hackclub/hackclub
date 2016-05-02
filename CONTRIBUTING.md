@@ -15,6 +15,7 @@ For more details specific to contributing a workshop, [look here](workshops/CONT
 3. [Branch Names](#branch-names)
 4. [File Names](#file-names)
 5. [Git Commits](#git-commits)
+6. [Making a Pull Request](#making-a-pull-request)
 
 ## GitHub Flow
 
@@ -120,3 +121,15 @@ A commit message is used for quickly summarizing a change. Another contributor s
 
 - This commit message is too long! It should be less than 50 characters!
 - It uses too many words and could be simplified
+
+## Making a Pull Request
+
+Here are a series of GIFs that illustrate how to make and commit a change, and create a pull request for review, using GitHub's web interface.
+
+![](img/gh_web_find_file.gif)
+
+![](img/gh_web_edit_file.gif)
+
+![](img/gh_web_make_commit.gif)
+
+![](img/gh_web_submit_pr.gif)
