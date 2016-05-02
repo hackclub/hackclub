@@ -13,8 +13,8 @@ Navigate your mouse through the maze without touching the walls:
 [![](img/bttn_play_now.png)][demo_output]
 [![](img/bttn_view_code.png)][demo]
 
-[demo]: https://jsbin.com/gist/219e3fb960306fba24bb
-[demo_output]: https://jsbin.com/gist/219e3fb960306fba24bb
+[demo]: https://jsbin.com/gist/58278dcbe1d720678fec17561a112be7
+[demo_output]: https://jsbin.com/gist/58278dcbe1d720678fec17561a112be7
 
 ## 2. How to Use This Tutorial
 
@@ -72,7 +72,7 @@ For a refresher for how to do the following, see the corresponding sections from
 The remainder of the code is responsible for removing the maze if the the mouse touches it.
 
 ```js
-  if(maze.overlapPixel(mouseX, mouseY)){  // if the mouse touches the image
+  if (maze.overlapPixel(mouseX, mouseY)) {   // if the mouse touches the image
     maze.remove();                           // remove the maze
   }
 }
