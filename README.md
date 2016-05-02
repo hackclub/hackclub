@@ -33,9 +33,9 @@ These are the people who are officially part of the organization, but we want yo
 | Name                | Position                         | Link                          | Email                 |
 | ------------------- | -------------------------------- | ----------------------------- | --------------------- |
 | Harrison Shoebridge | Intern                           | https://harrison.tech         | harrison@hackclub.com |
-| Jessica Kwok        | Artist & Operations              | http://jessicakwok.com/       | kwok@hackclub.com     |
+| Jessica Kwok        | Artist & Operations              | http://jessicakwok.com        | kwok@hackclub.com     |
 | Max Wofford         | Technical Fellow                 | https://github.com/MaxWofford | max@hackclub.com      |
-| Selynna Sun         | Hack Camp Organizer & Instructor | http://www.selynnasun.me/     | selynna@hackclub.com  |
+| Selynna Sun         | Hack Camp Organizer & Instructor | http://www.selynnasun.me      | selynna@hackclub.com  |
 | Zach Latta          | Executive Director               | https://zachlatta.com         | zach@hackclub.com     |
 
 ## Mission
