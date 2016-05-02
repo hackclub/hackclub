@@ -52,7 +52,7 @@ function setup() {
   createCanvas(400, 400);                 // create a canvas
 
   maze = createSprite(200, 200);          // create a sprite in the center
-  mazeImg = loadImage('http://i.imgur.com/ImtI8zi.png');    // load an image
+  mazeImg = loadImage('https://surrogate.hackedu.us/i.imgur.com/ImtI8zi.png');    // load an image
   maze.addImage(mazeImg);                 // make the sprite have an image
 }
 
