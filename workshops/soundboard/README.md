@@ -13,30 +13,31 @@ Table of Contents
 - [Part I: Set-up](#part-i-set-up)
 - [Part II: User Interface](#part-ii-user-interface) 
 - [Part III: The JavaScript File](#part-iii-the-javascript-file)
-- [Part IV: Rejoicing](#part-iv-rejoicing)
-- [Part V: Refactoring](#part-v-refactoring)
-- [Part VI: Upgrading](#part-vi-upgrading)
-- [Part VII: Publishing and Sharing](#part-vii-publishing-and-sharing)
-- [Part VIII: Hacking](#part-viii-hacking)
+- [Part IV: Repetition](#part-iv-repetition)
+- [Part V: Rejoicing](#part-v-rejoicing)
+- [Part VI: Refactoring](#part-vi-refactoring)
+- [Part VII: Upgrading](#part-vii-upgrading)
+- [Part VIII: Publishing and Sharing](#part-viii-publishing-and-sharing)
+- [Part IX: Hacking](#part-ix-hacking)
 
 ## Part I: Set-up
 
 ### Setting up Folders and Files
 
-1. We'll begin by creating a new folder in our Cloud 9 workspace. Right-click the sidebar, select "New Folder," and name it `soundboard`.
+1. We'll begin by creating a new folder in our Cloud 9 workspace. Right-click your `projects` folder, select "New Folder," and name it `soundboard`.
 2. In this folder, right-click again, select "New File," and name the new file `index.html`. This is where we will be writing our HTML to create a user interface for the soundboard.
 3. Create another file in the soundboard folder, and name this one `main.js`. This is where we will be writing our JavaScript to make the soundboard play sounds.
-4. We've provided a set of sounds, which can be found [here](sounds/). Save these to your computer by right-clicking each one and saving. Then, drag all the files into the `soundboard` directory in the Cloud 9 sidebar.
+4. We've provided a set of sounds, which can be found [here](sounds/). Save these to your computer by right-clicking the filename of each one and choose `Save Link As`. Then, drag all the files into the `soundboard` directory in the Cloud 9 sidebar.
 5. Now, open up `index.html` and type the following:
 
   ```html
     <!DOCTYPE html>
     <html>
-    <head>
-      <title>Soundboard</title>
-    </head>
-    <body>
-    </body>
+      <head>
+        <title>Soundboard</title>
+      </head>
+      <body>
+      </body>
     </html>
   ```
 
@@ -49,7 +50,7 @@ Now we must connect the two files. Since HTML file depends on JavaScript file to
 
 The script tag has an attribute called source (`src`), which is where we will fill in the URL to the JavaScript file we want to include.
 
-Let's write this line of code inside the body of the HTML file, to include our `main.js` file:
+Let's write this line of code inside the **body** of the HTML file, to include our `main.js` file:
 
 ```html
 <script src="main.js"></script>
@@ -61,11 +62,13 @@ For this workshop, we'll be using the handy library called jQuery inside our `ma
 
 We'll let the browser know that we'll be using jQuery by once again using a `<script>` tag. jQuery can be found at [this URL](https://code.jquery.com/jquery-2.2.3.min.js), so that's what we will put as the value for `src`.
 
-Since we will be using jQuery in `main.js`, `main.js` will be reliant on jQuery. Thus, we will put the script tag containing jQuery above the one containing `main.js` in order to load jQuery before loading `main.js`.
+Since we will be using jQuery in `main.js`, `main.js` will be reliant on jQuery. Thus, we will put the script tag containing jQuery above the one containing `main.js` in the **body** of `index.html` in order to load jQuery before loading `main.js`.
 
 ```html
-<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-<script src="main.js"></script>
+<body>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="main.js"></script>
+</body>
 ```
 
 Now we have successfully hooked up the JavaScript to the HTML. Our `index.html` now looks like this:
@@ -85,7 +88,7 @@ Now we have successfully hooked up the JavaScript to the HTML. Our `index.html` 
 
 ## Part II: User Interface
 
-Now that we've set up our HTML file, let's add some elements to the page to form the user interface of our soundboard.
+Now that we've set up our HTML file, let's add some elements to the **body** to form the user interface of our soundboard.
 
 How should we design our user interface? This is what the user (you, or others) will be interacting with when trying to make sweet music. Since this soundboard will be on a webpage, we'll probably be clicking on things. One can click on many things, but the most intuitive is a button, which is what we will use.
 
@@ -93,19 +96,13 @@ How should we design our user interface? This is what the user (you, or others) 
 
 We can create buttons that imitate the buttons on a soundboard, by using [the button tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) (`<button>`).
 
-We use the button tag by typing the text we want on the button between the start (`<button>`) and close (`</button>`) tags.
+We use the button tag by typing the text we want on the button between the start (`<button>`) and close (`</button>`) tags. Type the following above your script tags in the **body**:
 
 ```html
 <button>Chop3</button>
 ```
 
-This button will say "Chop3" on it. Let's make a few more.
-
-```html
-<button>Kick4</button>
-<button>Perc1</button>
-<button>Vox9</button>
-```
+This button will say "Chop3" on it.
 
 You can have any text on your buttons that you desire, so long as you can still tell what sound they're going to make when you press them.
 
@@ -119,28 +116,23 @@ Now `index.html` looks like this:
 </head>
 <body>
   <button>Chop3</button>
-  <button>Kick4</button>
-  <button>Perc1</button>
-  <button>Vox9</button>
+
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
 ```
 
-Now, as a user, we can tell the difference between each of the buttons, by what text is displayed on the buttons. But how can we differentiate them in code? One easy way is to supply each with an attribute known as an "`id`."
+As a user, we can tell the difference between each of the buttons, by what text is displayed on the buttons. But how can we differentiate them in code? One easy way is to supply each with an attribute known as an "`id`."
 
 ### Adding IDs to Buttons
 
-HTML elements can have many attributes. One example is the `src` attribute that the `<script>` tag has. Many attributes are optional, but can be helpful in adding more differentiation to the elements.
+HTML elements can have many attributes. One example we've seen is the `src` attribute that the `<script>` tag has. Many attributes are optional, but can be helpful in adding more differentiation to the elements.
 
-An `id` is a unique-valued attribute we can add to our HTML elements. We'll give each button its own `id`, which will help us assign the corresponding sound to it.
+An `id` is a unique-valued attribute we can add to HTML elements. We'll give our button its own `id`, which will help us assign the corresponding sound to it.
 
 ```html
 <button id="chop3">Chop3</button>
-<button id="kick4">Kick4</button>
-<button id="perc1">Perc1</button>
-<button id="vox9">Vox9</button>
 ```
 
 Our HTML now looks like this:
@@ -153,9 +145,7 @@ Our HTML now looks like this:
 </head>
 <body>
   <button id="chop3">Chop3</button>
-  <button id="kick4">Kick4</button>
-  <button id="perc1">Perc1</button>
-  <button id="vox9">Vox9</button>
+
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="main.js"></script>
 </body>
@@ -176,54 +166,40 @@ Let's open up `main.js` and start writing JavaScript!
 
 JavaScript makes using audio easy with the Audio object. We are going to create sounds in our code by creating an Audio object for each of our mp3 files.
 
-We'll be storing each Audio object in a variable. A variable in JavaScript is something that stores a value. First, let's declare our variables, like so:
+We'll be storing each Audio object in a variable. A variable in JavaScript is something that stores a value. First, let's declare the existence of our variable by typing the following into `main.js`:
 
 ```js
 var chop3Sound;
 ```
 
-This declares the existence of the variable `chop3Sound`. Now we can store the Audio object that we will create with our `chop3.mp3` file in this variable.
-
-Next, we'll make a new Audio object with the `chop3.mp3`, and assign it to our variable:
+Next, we'll make a new Audio object with the `chop3.mp3`, and assign it to our variable, by modifying the line we just added:
 
 ```js
---var chop3Sound;--
 var chop3Sound = new Audio("chop3.mp3");
 ```
 
 Here, we've created a new `Audio` object that will have the sound `chop3.mp3`, and assigned the Audio object to a variable named `chop3Sound` which we declared in the same line.
 
-And we'll play the sound by using the built-in method (what is a method) included in the Audio object. We'll add this line beneath the creation of `chop3Sound`.
+And we'll play the sound by using a built-in method (`.play()`) included in the Audio object. We'll add this line beneath the creation of `chop3Sound`, like so:
 
 ```js
 var chop3Sound = new Audio("chop3.mp3");
 chop3Sound.play();
 ```
 
-`.play()` is a method that will play the Audio object.
+`.play()` is a function that is a part of the Audio object, that will play the sound.
 
-Now, if you save your `main.js` file, you'll note that upon auto-reloading, the `index.html` page now plays the chop3 sound. Yay! We've added audio to our webpage.
+Now, if you save your `main.js` file, you'll note that upon auto-reloading, the `index.html` page now plays the chop3 sound.
 
-We can repeat this with the other sounds:
-
-```js
-var kick4Sound = new Audio("kick4.mp3");
-kick4Sound.play();
-
-var perc1Sound = new Audio("perc1.mp3");
-perc1Sound.play();
-
-var vox9Sound = new Audio("vox9.mp3");
-vox9Sound.play();
-```
+Yay! We've added audio to our webpage.
 
 ### Creating Functions
 
-If we save our file and let `index.html` reload, we get a terrible cacophony of sounds. We don't want this! We want the sounds to play, but only at our command.
+If we save our file and let `index.html` reload, we hear the chop3 sound. But we don't want this. We want the sound to play, but only at our command.
 
-To have a little more control over the sounds, let's create functions for each one. A function in JavaScript stores a set of instructions in a variable. We can call the function to execute these instructions without having to rewrite them each time.
+To have a little more control over the sound, let's create a function that will play it only when we call the function. A function in JavaScript stores a set of instructions in a variable. We can call the function to execute these instructions whenever we want.
 
-We can create functions for each sound by wrapping the code we've already written in the following way:
+We can create functions for the chop3 sound by wrapping the code we've already written in the following way:
 
 ```js
 function makeChop3Sound() {
@@ -232,83 +208,68 @@ function makeChop3Sound() {
 }
 ```
 
-(i need a better way to show that we are wrapping the two lines we already wrote in this function syntax)
+Now, if we run our project, we'll find that there is no sound at all. Even when we press the button, there is no sound.
 
-Do the same for the other sounds.
-
-```js
-function makeKick4Sound() {
-  var kick4Sound = new Audio("kick4.mp3");
-  kick4Sound.play();
-}
-
-function makePerc1Sound() {
-  var perc1Sound = new Audio("perc1.mp3");
-  perc1Sound.play();
-}
-
-function makeVox9Sound() {
-  var vox9Sound = new Audio("vox9.mp3");
-  vox9Sound.play();
-}
-```
-
-Now, if we run our project, there is a wonderful and golden silence. Unfortunately, this silence prevails even when we click the buttons.
-
-It's time to connect the buttons to our sound functions.
+It's time to connect the button to our sound function.
 
 ### Detecting the Click
 
-Before we connect the buttons and the functions, we must first identify the buttons in code. Conveniently, we've given each button an id attribute, making each of them easy to select.
+In order to connect the button and the function, we must first identify the button in `main.js`. Conveniently, we've given the button an `id` attribute in our `index.html`, making it easy to refer to in `main.js`.
 
-We can thus use jQuery to find these buttons, by using special syntax:
+We can [use jQuery to find the button](https://learn.jquery.com/using-jquery-core/selecting-elements/), by using special syntax. We'll type this below our function, in `main.js`:
 
 ```js
 $("#chop3");
 ```
 
-jQuery uses the `$` to refer to itself, and uses `#` to mean `id`. By passing in "#chop3" in the parentheses, we are creating a selector for an HTML element having the id of "chop3." A selector is how we can select specific HTML elements within our JavaScript code.
+Now that we have selected our button in the JavaScript by its `id`, we can access the methods attached to the button.
 
-Then, if we do the following, we will be creating selectors for the other buttons, using their respective IDs.
+One of the methods is `.on()`. This method sets the button to execute some instructions when something happens. Things that happen on the page by way of the user doing something are referred to as ["events."](https://learn.jquery.com/events/introduction-to-events/) When we use the [`.on()`](https://learn.jquery.com/events/handling-events/) method, we pair an event with a function that we want to occur when the event happens.
 
-```js
-$("#kick4");
-$("#perc1");
-$("#vox9");
-```
-
-Now that we can select our buttons to be detected by the JavaScript, we can access the methods (wow once again what is a method) attached to the button.
-
-One of the methods is `.on()`. This method sets the button to execute some instructions when something happens. Things that happen on the page by way of the user doing something are referred to as "events." When we use the `.on()` function, we pair an event with a function that we want to occur when the event happens.
-
-Here, we will use the method to detect the event of our choice. We choose `"click"`, and provide it as the first argument to `.on()`:
+Here, we will use the method to detect the "click" event, so we'll provide `"click"` as the first argument to `.on()`:
 
 ```js
 $("#chop3").on("click");
 ```
 
-`.on()` takes two arguments, the second of which is what you want to happen when the event has occurred. In our case, we want the sound to play when the button is clicked, so we add the function that we have already written, as an argument.
+`.on()` takes two arguments, the second of which is what you want to happen when the event has occurred. In our case, we want the chop3 sound to play when the button is clicked, so we add the function `makeChop3Sound` which we have already written, as an argument.
 
 ```js
 $("#chop3").on("click", makeChop3Sound);
 ```
 
-To elaborate, here, we are:
+To elaborate, we are:
 
 1. Selecting the chop3 button, using jQuery and its syntax (i.e., notation) for recognizing IDs, and specifying the `chop3` id.
 2. Calling the method associated with the button called `.on()`, which is able to bind certain actions with certain events, and thus dictate that the action be called when the event occurs.
 3. Choosing to detect the "click" event.
 4. Passing as an argument the function `makeChop3Sound()`, to tell `.on()` that upon noticing a click, it should execute the function (which in turn plays a sound).
 
-Now, save your `main.js` file and try clicking on the chop3 sound button! Congratulations! Your browser now makes chop3 sounds. Let's do this for the other buttons, in a similar fashion. We'll end up with:
+Now, save your `main.js` file and try clicking on the chop3 sound button! Congratulations! Your browser now makes chop3 sounds.
 
-```js
-$("#kick4").on("click", makeKick4Sound);
-$("#perc1").on("click", makePerc1Sound);
-$("#vox9").on("click", makeVox9Sound);
+## Part IV: Repetition
+
+Let's do this for the other sounds, in a similar fashion. We'll add more buttons into the `index.html` and end up with the following. **For brevity I've only added four more sounds, but you should add all of them.**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Soundboard</title>
+  </head>
+  <body>
+    <button id="chop3">Chop3</button>
+    <button id="kick4">Kick4</button>
+    <button id="perc1">Perc1</button>
+    <button id="vox9">Vox9</button>
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
 ```
 
-The final version of your `main.js` should look like this:
+Add the corresponding functions and event handlers for the other sounds in `main.js`. The final version of your `main.js` should look like this:
 
 ```js
 function makeChop3Sound() {
@@ -337,11 +298,13 @@ $("#perc1").on("click", makePerc1Sound);
 $("#vox9").on("click", makeVox9Sound);
 ```
 
-## Part IV: Rejoicing
+Upon saving and refreshing, you should be able to play each sound by clicking the corresponding button.
+
+## Part V: Rejoicing
 
 Yay! It works! Sounds are happening! See if you can create some fresh beats of your own. Add more buttons, play music together with a friend's soundboard, change the sounds.
 
-## Part V: Refactoring
+## Part VI: Refactoring
 
 So it looks like we've written a lot of code that looks the same. If we wanted, we could trim it down to be more concise.
 
@@ -371,7 +334,7 @@ Give this a test by saving your `main.js`. Your Live Preview should reload, and 
 
 Remember, simplify only after everything works.
 
-## Part VI: Upgrading
+## Part VII: Upgrading
 
 Do you find it a bit difficult to have sounds overlay each other, because clicking from button to button is a bit difficult? We can solve this in a number of ways, all of which I encourage you to experiment with to see which works best for you. We could:
 
@@ -479,9 +442,9 @@ function delegateKeypress(event) {
 
 And that's it! Save your `main.js` and test out your improved soundboard!
 
-## Part VII: Publishing and Sharing
+## Part VIII: Publishing and Sharing
 
-Now it's time to save your work with git and publish your code to GitHub and your personal website.
+Now it's time to save your work with git and publish your code to GitHub and your personal website. Make sure you've saved all of your files on Cloud9!
 
 Open up the console in Cloud9 if you don't see it already, by going to `View > Console`. Then, making sure you are on the tab that has a prompt with your username and workspace, type the following git commands:
 
@@ -493,11 +456,12 @@ Enter your username and password, and you should be all set. This should update 
 
 Post on [`#shipit`](https://starthackclub.slack.com/messages/shipit) with the URL, so everyone can see your amazing creation and create their own music!
 
-## Part VIII: Hacking
+## Part IX: Hacking
 
 - add colors to buttons so you know when they are being used
 - customize with more sounds (just add more buttons and sounds)
+  - use sounds of someone speaking and construct silly sentences
 - `setInterval` for looping
 - set up a way to record the song (Notes: consider adding this as the final step, just as in dodge we added the dope graphics, because this might require guidance and add a compelling factor for user to customize in various ways)
 - make it look more like a soundboard using CSS
-- give your beats a music video (using canvas) (would be helpful if we did something with canvas in a previous workshop) (idea: do something with canvas in a previous workshop)
+- give your beats a music video (using canvas)
