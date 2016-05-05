@@ -227,3 +227,5 @@ If you'd like to reach all of us, please send an email to team@hackclub.com :-).
 ## License
 
 In the [LICENSE](LICENSE) file (MIT, [tl;dr](https://tldrlegal.com/license/mit-license)).
+
+Hack Club font modified from Amaranth. License in the [SIL_OPEN_FONT_LICENSE](SIL_OPEN_FONT_LICENSE) file.
