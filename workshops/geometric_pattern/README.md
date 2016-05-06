@@ -501,9 +501,13 @@ Now, save and see the gradient effect you've applied throughout the pattern! Yay
 
 ## Part V: Publishing and Sharing
 
-### Downloading Your Masterpiece (OPTIONAL SECTION IDK HOW COOL THIS WILL BE CUZ IT'S JUST GONNA BE THE SAME THING SO WHO CARES)
+### Downloading Your Masterpiece
 
-You can actually download the this cool pattern to your computer, to use as a desktop background or what have you. p5.js provides a function to download the canvas. (FACT CHECK THIS it's avail in processing but ive never done it in p5)
+You can actually download the this cool pattern to your computer, to use as a desktop background or what have you. p5.js provides a function `saveCanvas()` to download the canvas.
+
+```js
+// gotta check if adding it in setup() will be stupid cuz nothing has been drawn yet, or what
+```
 
 ### Making It Live
 
