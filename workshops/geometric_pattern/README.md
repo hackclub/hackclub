@@ -1,5 +1,7 @@
 # Geometric Pattern
 
+![](img/final.png)
+
 We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
 [p5.js](http://p5js.org/) is a library for making stuff in conjunction with the HTML canvas element. It is nothing more than JS code written to make commonly-desired functionality much more accessible. It is a JS port of Processing, a software for making pictures and visuals with code. 
 
@@ -18,7 +20,7 @@ Then, right-click the `geometric_pattern` folder again, select `New File` again,
 
 ### Priming the HTML File
 
-Just as we've done previously, we'll be typing this base structure into our HTML file:
+Double-click `index.html` to open it. Just as we've done previously, we'll add this base structure into our HTML file:
 
 ```html
 <!DOCTYPE html>
@@ -30,7 +32,7 @@ Just as we've done previously, we'll be typing this base structure into our HTML
 </html>
 ```
 
-Now, let's add our JavaScript dependencies. This time around, we'll be using a library called p5.js. Let's add that into our **body** with a `<script>` tag:
+Now, let's add our JavaScript dependencies. This time around, we'll be using a library called p5.js. Let's add that into our **body** with a `<script>` tag: **Please type everything except the URL, which you can copy and paste!**
 
 ```html
 <body>
@@ -75,7 +77,7 @@ function setup() {
 }
 ```
 
-[`createCanvas()`](http://p5js.org/reference/#p5/createCanvas) is a function that takes two arguments (two numbers for width and height, respectively) and creates an [HTML canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas) (i.e., the thing that will house your project) of that size.
+[`createCanvas()`](http://p5js.org/reference/#p5/createCanvas) is a function that takes two arguments (two numbers for width and height, respectively) and creates an [HTML canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas) (i.e., where your pattern will be contained) of that size.
 
 In this project, we'll be creating a tiling of overlapping circles.
 
@@ -92,19 +94,19 @@ function draw() {
 }
 ```
 
-We'll use this to determine the diameter of the circles we want to draw, by doing some simple math. Let's add the declaration at the top of the file, underneath `NUM_CIRCLES`, and define our variable within `setup()`:
+We'll use this to determine the diameter of the circles we want to draw, by doing some simple math. Let's declare a variable to store the value of the circle diameter; name it `circleDiameter`. Add the declaration at the top of the file, underneath `NUM_CIRCLES`, and define it within `setup()`:
 
 ```js
 var NUM_CIRCLES = 12;
-var CIRCLE_DIA;
+var circleDiameter;
 
 function setup() {
   createCanvas(480,600);
-  CIRCLE_DIA = width/NUM_CIRCLES;
+  circleDiameter = width/NUM_CIRCLES;
 }
 ```
 
-p5.js stores the width of the canvas in a constant named `width`. By dividing the width by the number of circles, we can calculate the length of the diameter, which we'll store in `CIRCLE_DIA`.
+p5.js stores the width of the canvas in a constant named `width`. By dividing the width by the number of circles, we can calculate the length of the diameter, which we'll store in `circleDiameter`.
 
 ## Part III: Drawing on the Canvas
 
@@ -116,7 +118,7 @@ Let's see the `ellipse()` function in action by drawing a circle in the middle o
 
 ```js
 function draw() {
-  ellipse(width/2,height/2,CIRCLE_DIA,CIRCLE_DIA);
+  ellipse(width/2,height/2,circleDiameter,circleDiameter);
 }
 ```
 
@@ -125,8 +127,6 @@ Save and refresh Live Preview.
 In this example, the first two arguments we pass to the ellipse function are the x and y coordinates of the center of the ellipse. We've passed in `width/2` and `height/2`, respectively, which means the center of the ellipse will also be the center of the canvas. The latter two arguments are the x-width and y-width of the ellipse. Since we want to draw a circle, we're passing the same value for both.
 
 You can play around with these values to get a better feel of how this function works.
-
-NOTE TO SELF: is this necessary. should we just be focusing on the pattern instead of exploring p5.js
 
 ### Drawing a Row of Circles
 
@@ -138,26 +138,26 @@ Let's remove our previous line and add a for-loop into our `draw()` function, li
 
 ```js
 function draw() {
-  for (var x = 0; x <= width; x = x+CIRCLE_DIA) {
+  for (var x = 0; x <= width; x = x+circleDiameter) {
   }
 }
 ```
 
-This for-loop executes the code within it over the period when the value of `x`, which we've initialized at `0`, is less than or equal to `width`. In each iteration of the loop, the value of `x` is increased by `CIRCLE_DIA`.
+This for-loop executes the code within it over the period when the value of `x`, which we've initialized at `0`, is less than or equal to `width`. In each iteration of the loop, the value of `x` is increased by `circleDiameter`.
 
 If we save and refresh, we'll see nothing. That's because we there is no code inside the for-loop. Let's add a line that draws ellipses along a row at the top of the canvas:
 
 ```js
 function draw() {
-  for (var x = 0; x <= width; x = x+CIRCLE_DIA) {
-    ellipse(x, 0, CIRCLE_DIA, CIRCLE_DIA);
+  for (var x = 0; x <= width; x = x+circleDiameter) {
+    ellipse(x, 0, circleDiameter, circleDiameter);
   }
 }
 ```
 
 We're supplying `x` as the x-coordinate (cleverly named, eh?), and 0 as the y-coordinate, of the ellipse's center.
 
-If you save and refresh, you'll see a line of cut-off circles at the top. This is the magic of the for-loop. Since the value of `x` was increased by `CIRCLE_DIA` during every repeated call of the `ellipse()` function, circles were drawn in intervals of `CIRCLE_DIA` pixels.
+If you save and refresh, you'll see a line of cut-off circles at the top. This is the magic of the for-loop. Since the value of `x` was increased by `circleDiameter` during every repeated call of the `ellipse()` function, circles were drawn in intervals of `circleDiameter` pixels.
 
 As to why the circles are cut off -- this is because we set the y-coordinate of the _center_ of every circle to 0.
 
@@ -173,15 +173,15 @@ Let's put everything so far inside another for-loop:
 
 ```js
 function draw() {
-  for (var y = 0; y <= height; y = y+CIRCLE_DIA) {
-    for (var x = 0; x <= width; x = x+CIRCLE_DIA) {
-      ellipse(x, 0, CIRCLE_DIA, CIRCLE_DIA);
+  for (var y = 0; y <= height; y = y+circleDiameter) {
+    for (var x = 0; x <= width; x = x+circleDiameter) {
+      ellipse(x, y, circleDiameter, circleDiameter);
     }
   }
 }
 ```
 
-As with the previous for-loop's `x`, we're executing code as long as the value of `y`, which starts at `0`, is less than or equal to `height`. (`height`, as you may have guessed, is the counterpart to `width`, and it is where p5.js stores the height of the canvas.) We're also incrementing `y` at each iteration by `CIRCLE_DIA`.
+As with the previous for-loop's `x`, we're executing code as long as the value of `y`, which starts at `0`, is less than or equal to `height`. (`height`, as you may have guessed, is the counterpart to `width`, and it is where p5.js stores the height of the canvas.) We're also incrementing `y` at each iteration by `circleDiameter`.
 
 Save and refresh Live Preview to check it out!
 
@@ -189,25 +189,25 @@ Save and refresh Live Preview to check it out!
 
 We want the circles to overlap, so let's change the spacing in the y-direction.
 
-We can achieve this by changing the incrementing value in the outer for-loop to be `CIRCLE_DIA/2` instead of `CIRCLE_DIA`.
+We can achieve this by changing the incrementing value in the outer for-loop to be `circleDiameter/2` instead of `circleDiameter`.
 
-We'll create a variable (call it `CIRCLE_RAD`) for this, at the top of the file, define it in `setup()`, and make the replacement in our outer for-loop, like so:
+We'll create a variable (call it `circleRadius`) for this, at the top of the file, define it in `setup()`, and make the replacement in our outer for-loop, like so:
 
 ```js
 var NUM_CIRCLES = 12;
-var CIRCLE_DIA;
-var CIRCLE_RAD;
+var circleDiameter;
+var circleRadius;
 
 function setup() {
   createCanvas(480,600);
-  CIRCLE_DIA = width/NUM_CIRCLES;
-  CIRCLE_RAD = CIRCLE_DIA/2;
+  circleDiameter = width/NUM_CIRCLES;
+  circleRadius = circleDiameter/2;
 }
 
 function draw() {
-  for (var y = 0; y <= height; y = y+CIRCLE_RAD) {
-    for (var x = 0; x <= width; x = x+CIRCLE_DIA) {
-      ellipse(x, 0, CIRCLE_DIA, CIRCLE_DIA);
+  for (var y = 0; y <= height; y = y+circleRadius) {
+    for (var x = 0; x <= width; x = x+circleDiameter) {
+      ellipse(x, y, circleDiameter, circleDiameter);
     }
   }
 }
@@ -217,7 +217,7 @@ Save and refresh Live Preview to see the change.
 
 ### Offsetting the Circles in the X-Direction
 
-It looks pretty cool right now, but our circles aren't overlapping quite right. It looks like every other row should be shifted over by `CIRCLE_RAD`.
+It looks pretty cool right now, but our circles aren't overlapping quite right. It looks like every other row should be shifted over by `circleRadius`.
 
 We can keep track of alternating rows by using a flag. A flag is just a variable that stores a `true`/`false` value.
 
@@ -226,9 +226,9 @@ Let's add one in our `draw()` function:
 ```js
 function draw() {
   var alternatingRow = false;
-  for (var y = 0; y <= height; y = y+CIRCLE_RAD) {
-    for (var x = 0; x <= width; x = x+CIRCLE_DIA) {
-      ellipse(x, 0, CIRCLE_DIA, CIRCLE_DIA);
+  for (var y = 0; y <= height; y = y+circleRadius) {
+    for (var x = 0; x <= width; x = x+circleDiameter) {
+      ellipse(x, y, circleDiameter, circleDiameter);
     }
   }
 }
@@ -241,9 +241,9 @@ We'll flip the value of the flag after each row is created, using the negation o
 ```js
 function draw() {
   var alternatingRow = false;
-  for (var y = 0; y <= height; y = y+CIRCLE_RAD) {
-    for (var x = 0; x <= width; x = x+CIRCLE_DIA) {
-      ellipse(x, 0, CIRCLE_DIA, CIRCLE_DIA);
+  for (var y = 0; y <= height; y = y+circleRadius) {
+    for (var x = 0; x <= width; x = x+circleDiameter) {
+      ellipse(x, y, circleDiameter, circleDiameter);
     }
     alternatingRow = !alternatingRow;
   }
@@ -257,14 +257,14 @@ Let's create a conditional that will use the flag's value to determine whether o
 ```js
 function draw() {
   var alternatingRow = false;
-  for (var y = 0; y <= height; y = y+CIRCLE_RAD) {
+  for (var y = 0; y <= height; y = y+circleRadius) {
     if (alternatingRow) {
 
     } else {
 
     }
-    for (var x = 0; x <= width; x = x+CIRCLE_DIA) {
-      ellipse(x, 0, CIRCLE_DIA, CIRCLE_DIA);
+    for (var x = 0; x <= width; x = x+circleDiameter) {
+      ellipse(x, y, circleDiameter, circleDiameter);
     }
     alternatingRow = !alternatingRow;
   }
@@ -273,20 +273,22 @@ function draw() {
 
 Now we just need to make this shift. We'll do this by modifying the start `x` value in our inner for-loop. Currently, the start `x` value is always 0, which results in every row starting at the x-coordinate 0.
 
-We can create a variable (`startX`) within `draw()` and use our conditional to set the value of `startX` to 0 or `CIRCLE_RAD`, depending on if it's an alternating row or not. Don't forget to modify the inner for-loop so that the value of `x` starts at `startX`.
+We can create a variable (`startX`) within `draw()` and use our conditional to set the value of `startX` to 0 or `circleRadius`, depending on if it's an alternating row or not.
+
+Don't forget to modify the inner for-loop so that the value of `x` starts at `startX`.
 
 ```js
 function draw() {
   var alternatingRow = false;
   var startX;
-  for (var y = 0; y <= height; y = y+CIRCLE_RAD) {
+  for (var y = 0; y <= height; y = y+circleRadius) {
     if (alternatingRow) {
-      startX = CIRCLE_RAD;
+      startX = circleRadius;
     } else {
       startX = 0;
     }
-    for (var x = startX; x <= width; x = x+CIRCLE_DIA) {
-      ellipse(x, 0, CIRCLE_DIA, CIRCLE_DIA);
+    for (var x = startX; x <= width; x = x+circleDiameter) {
+      ellipse(x, y, circleDiameter, circleDiameter);
     }
     alternatingRow = !alternatingRow;
   }
@@ -299,20 +301,22 @@ Save and check it out!
 
 So you may have noticed that it seems that our circles are overlapping on the wrong side. We wanted them to overlap each other on the top, but they are overlapping on the bottom. This is because they are being drawn from top to bottom, and the upper circles are being drawn over.
 
-We can fix this by swapping the start and end values of `y` in the outer for-loop and instead of incrementing the value of `y`, we'll decrement it. Don't forget to change the condition in the for-loop to be greater than or equal to 0 instead of less than or equal to.
+We can fix this by swapping the start and end values of `y` in the outer for-loop and instead of incrementing the value of `y`, we'll decrement it.
+
+Don't forget to change the condition in the for-loop to be greater than or equal to 0 instead of less than or equal to.
 
 ```js
 function draw() {
   var alternatingRow = false;
   var startX;
-  for (var y = height; y >= 0; y = y-CIRCLE_RAD) {
+  for (var y = height; y >= 0; y = y-circleRadius) {
     if (alternatingRow) {
-      startX = CIRCLE_RAD;
+      startX = circleRadius;
     } else {
       startX = 0;
     }
-    for (var x = startX; x <= width; x = x+CIRCLE_DIA) {
-      ellipse(x, 0, CIRCLE_DIA, CIRCLE_DIA);
+    for (var x = startX; x <= width; x = x+circleDiameter) {
+      ellipse(x, y, circleDiameter, circleDiameter);
     }
     alternatingRow = !alternatingRow;
   }
@@ -359,8 +363,8 @@ Let's do this by first declaring variables to store each of the R, G, and B valu
 
 ```js
 var NUM_CIRCLES = 12;
-var CIRCLE_DIA;
-var CIRCLE_RAD;
+var circleDiameter;
+var circleRadius;
 var rVal;
 var gVal;
 var bVal;
@@ -412,15 +416,15 @@ You can actually download the this cool pattern to your computer, to use as a de
 
 ### Making It Live
 
-Make sure all of your files are saved. Then, head on over to the terminal in C9 by pressing `alt+t` and type the following commands (pressing Enter after each one):
+Make sure all of your files are saved. Then, head on over to the terminal in Cloud9 by pressing `alt+t` and type the following commands (pressing Enter after each one):
 
-- git add --all
-- git commit -m "Geometric Pattern Workshop"
-- git push
+- `git add --all`
+- `git commit -m "Geometric Pattern Workshop"`
+- `git push`
 
 Then, enter your GitHub username and password (careful here, as password will not be displayed).
 
-Congratulations! Your pattern is now live on `USERNAME.github.io/geometric_pattern` (replace `USERNAME` with your own GitHub username!)
+Congratulations! Your pattern is now live on `USERNAME.github.io/geometric_pattern/` (replace `USERNAME` with your own GitHub username!)
 
 ## Part VI: Animate It
 
@@ -429,8 +433,8 @@ We can create a cool scrolling color effect by manipulating our colors to cycle.
 ```js
 function setup() {
   createCanvas(480,600);
-  CIRCLE_DIA = width/NUM_CIRCLES;
-  CIRCLE_RAD = CIRCLE_DIA/2;
+  circleDiameter = width/NUM_CIRCLES;
+  circleRadius = circleDiameter/2;
   rVal = 255;
   gVal = 0;
   bVal = 0;
@@ -472,16 +476,16 @@ Final code:
 // just put a medical warning about epilepsy
 
 var NUM_CIRCLES = 12;
-var CIRCLE_DIA;
-var CIRCLE_RAD;
+var circleDiameter;
+var circleRadius;
 var rVal;
 var gVal;
 var bVal;
 
 function setup() {
   createCanvas(480,600);
-  CIRCLE_DIA = width/NUM_CIRCLES;
-  CIRCLE_RAD = CIRCLE_DIA/2;
+  circleDiameter = width/NUM_CIRCLES;
+  circleRadius = circleDiameter/2;
   rVal = 255;
   gVal = 0;
   bVal = 0;
@@ -490,16 +494,16 @@ function setup() {
 function draw() {
   var alternatingRow = false;
   var startX;
-  for (var y = height; y >= 0; y-=CIRCLE_RAD) {
+  for (var y = height; y >= 0; y-=circleRadius) {
     if (alternatingRow) {
-      startX = CIRCLE_RAD;
+      startX = circleRadius;
     } else {
       startX = 0;
     }
-    for (var x = startX; x <= width; x+=CIRCLE_DIA) {
+    for (var x = startX; x <= width; x+=circleDiameter) {
       stroke(color(rVal, gVal, bVal));
       fill(color(rVal, gVal, bVal));
-      ellipse(x, y, CIRCLE_DIA, CIRCLE_DIA);
+      ellipse(x, y, circleDiameter, circleDiameter);
     }
     rVal = (rVal + 254)%255;
     gVal = (gVal + 5)%255;
