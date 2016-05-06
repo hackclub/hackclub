@@ -150,30 +150,40 @@ Great, now that we've drawn one row of circles in the middle, we have to draw th
 
 Just kidding! There's a construct in programming called a loop, and it repeats a set of instructions as many times as you decide.
 
-Let's remove all those repetitive lines and add a for-loop into our `draw()` function, like so:
+Let's remove all those repetitive lines and add a loop into our `draw()` function. We'll be using a type of loop called a **while-loop**, like so:
 
 ```js
 function draw() {
-  for (var x = 0; x <= width; x = x+circleDiameter) {
+  var x = 0;
+  while (x <= width) {
+
+    x = x + circleDiameter;
   }
 }
 ```
 
-This for-loop executes the code within it over the period when the value of `x`, which we've initialized at `0`, is less than or equal to `width`. In each iteration of the loop, the value of `x` is increased by `circleDiameter`.
+You'll notice there are multiple parts to this:
 
-If we save and refresh, we'll see nothing. That's because we there is no code inside the for-loop. Let's add a line that draws ellipses along a row at the top of the canvas:
+- `var x = 0;`: this is a variable that will store the value of our x-coordinate as we draw ellipses across the row.
+- `while (x <= width)`: this is the header of the while-loop, and it means that the instructions within the loop should be executed as long as `x` is less than or equal to `width`.
+- `{` and the corresponding `}` at the bottom: these braces enclose the code that should be repeated.
+- `x = x + circleDiameter;`: this is one instruction we want to be repeated. This will alter the value of `x`, incrementing it by `circleDiameter` every time we go through the loop.
+
+If we save and refresh, we'll see nothing. That's because we there is no code inside the while-loop that affects the canvas. Let's add a line to draw an ellipse at the top of the canvas:
 
 ```js
 function draw() {
-  for (var x = 0; x <= width; x = x+circleDiameter) {
+  var x = 0;
+  while (x <= width) {
     ellipse(x, 0, circleDiameter, circleDiameter);
+    x = x + circleDiameter;
   }
 }
 ```
 
 We're supplying `x` as the x-coordinate (cleverly named, eh?), and 0 as the y-coordinate, of the ellipse's center.
 
-If you save and refresh, you'll see a line of cut-off circles at the top. This is the magic of the for-loop. Since the value of `x` was increased by `circleDiameter` during every repeated call of the `ellipse()` function, circles were drawn in intervals of `circleDiameter` pixels.
+If you save and refresh, you'll see a line of cut-off circles at the top. This is the magic of the loop. Since the value of `x` was increased by `circleDiameter` after every iteration of the while-loop, circles were drawn in intervals of `circleDiameter` pixels.
 
 As to why the circles are cut off -- this is because we set the y-coordinate of the _center_ of every circle to 0.
 
@@ -181,23 +191,29 @@ As to why the circles are cut off -- this is because we set the y-coordinate of 
 
 So that's great, we've drawn one row of circles. But what we'd like is to cover the entire canvas with circles.
 
-Just like we used a for-loop to repeat circles in the horizontal direction, we can also use a for-loop to repeat them in the vertical direction.
+Just like we used a loop to repeat circles in the horizontal direction, we can also use another loop to repeat them in the vertical direction.
 
-If we wrap our existing for-loop in another for-loop, we'll be performing the action of filling an entire row with circles, multiple times. And thus covering multiple rows.
+If we wrap our existing while-loop in another while-loop, we'll be performing the action of filling an entire row with circles, multiple times. And thus covering multiple rows.
 
-Let's put everything so far inside another for-loop:
+Let's put everything so far inside another while-loop. Don't forget to update `ellipse()`:
 
 ```js
 function draw() {
-  for (var y = 0; y <= height; y = y+circleDiameter) {
-    for (var x = 0; x <= width; x = x+circleDiameter) {
+  var y = 0;
+  while (y <= height) {
+    var x = 0;
+    while (x <= width) {
       ellipse(x, y, circleDiameter, circleDiameter);
+      x = x + circleDiameter;
     }
+    y = y + circleDiameter;
   }
 }
 ```
 
-As with the previous for-loop's `x`, we're executing code as long as the value of `y`, which starts at `0`, is less than or equal to `height`. (`height`, as you may have guessed, is the counterpart to `width`, and it is where p5.js stores the height of the canvas.) We're also incrementing `y` at each iteration by `circleDiameter`.
+As with the previous while-loop's `x`, we're executing the code inside the `{` and `}` as long as the value of `y`, which we've initialized at `0`, is less than or equal to `height`. (`height`, as you may have guessed, is the counterpart to `width`, and it is where p5.js stores the height of the canvas.) We're also incrementing `y` at the end of each iteration by `circleDiameter`.
+
+Using this incrementing `y` variable as our y-coordinate is how we're able to draw rows up and down the canvas.
 
 Save and refresh Live Preview to check it out!
 
@@ -205,9 +221,9 @@ Save and refresh Live Preview to check it out!
 
 We want the circles to overlap, so let's change the spacing in the y-direction.
 
-We can achieve this by changing the incrementing value in the outer for-loop to be `circleDiameter/2` instead of `circleDiameter`.
+We can achieve this by changing the last line of the `y` while-loop to increment by `circleDiameter/2` instead of `circleDiameter`.
 
-We'll create a variable (call it `circleRadius`) for this, at the top of the file, define it in `setup()`, and make the replacement in our outer for-loop, like so:
+We'll create a variable (call it `circleRadius`) for this, at the top of the file, define it in `setup()`, and make the replacement in the last line of the `y` while-loop:
 
 ```js
 var NUM_CIRCLES = 12;
@@ -221,10 +237,14 @@ function setup() {
 }
 
 function draw() {
-  for (var y = 0; y <= height; y = y+circleRadius) {
-    for (var x = 0; x <= width; x = x+circleDiameter) {
+  var y = 0;
+  while (y <= height) {
+    var x = 0;
+    while (x <= width) {
       ellipse(x, y, circleDiameter, circleDiameter);
+      x = x + circleDiameter;
     }
+    y = y + circleRadius;
   }
 }
 ```
@@ -233,7 +253,7 @@ Save and refresh Live Preview to see the change.
 
 ### Offsetting the Circles in the X-Direction
 
-It looks pretty cool right now, but our circles aren't overlapping quite right. It looks like every other row should be shifted over by `circleRadius`.
+It looks pretty cool right now, but our circles aren't overlapping exactly right. It looks like every other row should be shifted horizontally by `circleRadius`.
 
 We can keep track of alternating rows by using a flag. A flag is just a variable that stores a `true`/`false` value.
 
@@ -242,25 +262,35 @@ Let's add one in our `draw()` function:
 ```js
 function draw() {
   var alternatingRow = false;
-  for (var y = 0; y <= height; y = y+circleRadius) {
-    for (var x = 0; x <= width; x = x+circleDiameter) {
+
+  var y = 0;
+  while (y <= height) {
+    var x = 0;
+    while (x <= width) {
       ellipse(x, y, circleDiameter, circleDiameter);
+      x = x + circleDiameter;
     }
+    y = y + circleRadius;
   }
 }
 ```
 
-To differentiate between rows, we should add our code inside the outer for-loop, but outside the inner for-loop. This is because the inner for-loop deals with the lineup of circles in the row itself.
+To differentiate between rows, we should add a line to flip the flag at the bottom of the `y` while-loop. This is because each pass through the `y` while-loop creates a new row, thus it would be appropriate after the creation of each row to flip the flag.
 
-We'll flip the value of the flag after each row is created, using the negation operator (`!`):
+We'll using the negation operator (`!`) to flip from `false` to `true` and vice versa:
 
 ```js
 function draw() {
   var alternatingRow = false;
-  for (var y = 0; y <= height; y = y+circleRadius) {
-    for (var x = 0; x <= width; x = x+circleDiameter) {
+
+  var y = 0;
+  while (y <= height) {
+    var x = 0;
+    while (x <= width) {
       ellipse(x, y, circleDiameter, circleDiameter);
+      x = x + circleDiameter;
     }
+    y = y + circleRadius;
     alternatingRow = !alternatingRow;
   }
 }
@@ -268,44 +298,83 @@ function draw() {
 
 This sets the flag `alternatingRow` to its opposite. Its initial value was `false`, and after one row, its value will be `true`. Thus, the second row will be an alternating row. After the second row is created, the flag will be flipped back to false, and so on.
 
-Let's create a conditional that will use the flag's value to determine whether or not to shift the row. We'll add this just before the inner for-loop:
+Let's create a conditional that will use the flag's value to determine whether or not to shift the row. We'll add this just after we define `x`, inside the `y` while-loop:
 
 ```js
 function draw() {
   var alternatingRow = false;
-  for (var y = 0; y <= height; y = y+circleRadius) {
+
+  var y = 0;
+  while (y <= height) {
+    var x = 0;
+
     if (alternatingRow) {
 
     } else {
 
     }
-    for (var x = 0; x <= width; x = x+circleDiameter) {
+
+    while (x <= width) {
       ellipse(x, y, circleDiameter, circleDiameter);
+      x = x + circleDiameter;
     }
+    y = y + circleRadius;
     alternatingRow = !alternatingRow;
   }
 }
 ```
 
-Now we just need to make this shift. We'll do this by modifying the start `x` value in our inner for-loop. Currently, the start `x` value is always 0, which results in every row starting at the x-coordinate 0.
+Now we just need to make this shift. We'll do this by modifying the starting `x` value. Currently, the starting `x` value is always 0, which results in every row starting at the x-coordinate 0.
 
-We can create a variable (`startX`) within `draw()` and use our conditional to set the value of `startX` to 0 or `circleRadius`, depending on if it's an alternating row or not.
+We can modify this by removing this definition:
 
-Don't forget to modify the inner for-loop so that the value of `x` starts at `startX`.
+```js
+
+  while (y <= height) {
+    var x;
+
+    if (alternatingRow) {
+
+```
+
+And setting the value _conditionally_:
+
+```js
+
+  while (y <= height) {
+    var x;
+
+    if (alternatingRow) {
+      x = circleRadius;
+    } else {
+      x = 0;
+    }
+
+    while (x <= width) {
+
+```
+
+Your `draw()` should now look like this:
 
 ```js
 function draw() {
   var alternatingRow = false;
-  var startX;
-  for (var y = 0; y <= height; y = y+circleRadius) {
+
+  var y = 0;
+  while (y <= height) {
+    var x;
+
     if (alternatingRow) {
-      startX = circleRadius;
+      x = circleRadius;
     } else {
-      startX = 0;
+      x = 0;
     }
-    for (var x = startX; x <= width; x = x+circleDiameter) {
+
+    while (x <= width) {
       ellipse(x, y, circleDiameter, circleDiameter);
+      x = x + circleDiameter;
     }
+    y = y + circleRadius;
     alternatingRow = !alternatingRow;
   }
 }
@@ -317,23 +386,27 @@ Save and check it out!
 
 So you may have noticed that it seems that our circles are overlapping on the wrong side. We wanted them to overlap each other on the top, but they are overlapping on the bottom. This is because they are being drawn from top to bottom, and the upper circles are being drawn over.
 
-We can fix this by swapping the start and end values of `y` in the outer for-loop and instead of incrementing the value of `y`, we'll decrement it.
-
-Don't forget to change the condition in the for-loop to be greater than or equal to 0 instead of less than or equal to.
+We can fix this by setting the initial value of `y` to the height, and changing the condition in the while-loop to check if `y` is greater than 0. We'll also decrement the value of `y` instead of incrementing it, at the bottom of the `y` while-loop;
 
 ```js
 function draw() {
   var alternatingRow = false;
-  var startX;
-  for (var y = height; y >= 0; y = y-circleRadius) {
+
+  var y = height;
+  while (y >= 0) {
+    var x;
+
     if (alternatingRow) {
-      startX = circleRadius;
+      x = circleRadius;
     } else {
-      startX = 0;
+      x = 0;
     }
-    for (var x = startX; x <= width; x = x+circleDiameter) {
+
+    while (x <= width) {
       ellipse(x, y, circleDiameter, circleDiameter);
+      x = x + circleDiameter;
     }
+    y = y - circleRadius;
     alternatingRow = !alternatingRow;
   }
 }
@@ -394,12 +467,14 @@ function draw() {
   gVal = 0;
   bVal = 0;
 
+  var alternatingRow = false;
+
 ...
 
 }
 ```
 
-And then increment the values at the bottom of the outer for-loop in `draw()`, by adding these lines.
+And then increment the values at the bottom of the `y` while-loop in `draw()`, by adding these lines.
 
 ```js
 ...
@@ -458,7 +533,6 @@ function setup() {
 
 function draw() {
   var alternatingRow = false;
-  var startX;
 
 ...
 ```
@@ -509,22 +583,29 @@ function setup() {
 
 function draw() {
   var alternatingRow = false;
-  var startX;
-  for (var y = height; y >= 0; y-=circleRadius) {
+
+  var y = height;
+  while (y >= 0) {
+    var x;
+
     if (alternatingRow) {
-      startX = circleRadius;
+      x = circleRadius;
     } else {
-      startX = 0;
+      x = 0;
     }
-    for (var x = startX; x <= width; x+=circleDiameter) {
+
+    while (x <= width) {
       stroke(color(rVal, gVal, bVal));
       fill(color(rVal, gVal, bVal));
       ellipse(x, y, circleDiameter, circleDiameter);
+      x = x + circleDiameter;
     }
+    y = y - circleRadius;
+    alternatingRow = !alternatingRow;
+
     rVal = (rVal + 254)%255;
     gVal = (gVal + 5)%255;
     bVal = (bVal + 2)%255;
-    alternatingRow = !alternatingRow;
   }
 }
 ```
@@ -545,14 +626,4 @@ Ideas:
 
 
 ---
-
-NOTES TO SELF:
-- debating how to do this cuz zach told me to write outside in (which is also how i naturally do things)
-  - but i think it would be more gratifying if the user could write inside out
-  - and it would be easier to debug?
-  - DEFINITELY INCLUDE SCREENSHOTS IN THIS WORKSHOP
-- not sure if reversing direction is necessary. but i guess it's a "this is good to know" and shows the flexibility of a for loop?????
-  - might add unnecessary length to the workshop
-
-
 - more notes: i also am specifically not repeating myself with code snippets because i want the user to read the english that describes what the code is doing because when you read shit, you process it. instead of just using your eyes to search for code snippets and typing that shit perfunctorily(?is this the adv of perfunctory)
