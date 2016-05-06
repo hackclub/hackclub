@@ -130,11 +130,27 @@ You can play around with these values to get a better feel of how this function 
 
 ### Drawing a Row of Circles
 
-Since we want to draw circles repeatedly, we have to write `ellipse()` as many times as we want circles.
+Let's try to draw a row of circles first. We'll want to place them `circleDiameter` away from each other. Modify your `draw()` function so it looks like this:
 
-Just kidding! There's a construct in programming called a for-loop, and it repeats a set of instructions as many times as you decide.
+```js
+function draw() {
+  ellipse(0, height/2, circleDiameter, circleDiameter);
+  ellipse(circleDiameter, height/2, circleDiameter, circleDiameter);
+  ellipse(2*circleDiameter, height/2, circleDiameter, circleDiameter);
+  ellipse(3*circleDiameter, height/2, circleDiameter, circleDiameter);
+  ellipse(4*circleDiameter, height/2, circleDiameter, circleDiameter);
+}
+```
 
-Let's remove our previous line and add a for-loop into our `draw()` function, like so:
+So here we've drawn 5 circles. We can draw more, since we've made room for 12 (when we set NUM_CIRCLES). Keep going until it looks like this:
+
+![](img/twelve_circles_middle.png)
+
+Great, now that we've drawn one row of circles in the middle, we have to draw the other rows. Guess we'll be writing a lot of `ellipse()` statements.
+
+Just kidding! There's a construct in programming called a loop, and it repeats a set of instructions as many times as you decide.
+
+Let's remove all those repetitive lines and add a for-loop into our `draw()` function, like so:
 
 ```js
 function draw() {
