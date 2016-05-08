@@ -328,7 +328,7 @@ Now that we have set up the page to react when a key is pressed, we just need to
 We will declare this function and name it `delegateKeypress` and pass it as an argument to the method `.keypress()` like so:
 
 ```js
---$(document).keypress();--
+$̶(̶d̶o̶c̶u̶m̶e̶n̶t̶)̶.̶k̶e̶y̶p̶r̶e̶s̶s̶(̶)̶;̶
 $(document).keypress(delegateKeypress);
 
 function delegateKeypress(event) {
@@ -379,8 +379,8 @@ That said, we can now replace our repetitive code like so:
 ```js
 function delegateKeypress(event) {
   if (event.keyCode == 100) {
-    --var chop3Sound = new Audio("chop3.mp3");--
-    --chop3Sound.play();--
+    v̶a̶r̶ ̶c̶h̶o̶p̶3̶S̶o̶u̶n̶d̶ ̶=̶ ̶n̶e̶w̶ ̶A̶u̶d̶i̶o̶(̶"̶c̶h̶o̶p̶3̶.̶m̶p̶3̶"̶)̶;̶
+    c̶h̶o̶p̶3̶S̶o̶u̶n̶d̶.̶p̶l̶a̶y̶(̶)̶;̶
     $("#chop3").trigger("click");
   }
 }
