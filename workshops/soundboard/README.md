@@ -15,10 +15,9 @@ Table of Contents
 - [Part III: The JavaScript File](#part-iii-the-javascript-file)
 - [Part IV: Repetition](#part-iv-repetition)
 - [Part V: Rejoicing](#part-v-rejoicing)
-- [Part VI: Refactoring](#part-vi-refactoring)
-- [Part VII: Upgrading](#part-vii-upgrading)
-- [Part VIII: Publishing and Sharing](#part-viii-publishing-and-sharing)
-- [Part IX: Hacking](#part-ix-hacking)
+- [Part VI: Upgrading](#part-vi-upgrading)
+- [Part VII: Publishing and Sharing](#part-vii-publishing-and-sharing)
+- [Part VIII: Hacking](#part-viii-hacking)
 
 ## Part I: Set-up
 
@@ -304,37 +303,7 @@ Upon saving and refreshing, you should be able to play each sound by clicking th
 
 Yay! It works! Sounds are happening! See if you can create some fresh beats of your own. Add more buttons, play music together with a friend's soundboard, change the sounds.
 
-## Part VI: Refactoring
-
-So it looks like we've written a lot of code that looks the same. If we wanted, we could trim it down to be more concise.
-
-If I told you that the following code does the same thing as what you currently have in `main.js`, would you believe me?
-
-```js
-function playSound(event) {
-  var id = $(event.target).attr("id");
-  var sound = new Audio(id+".mp3");
-  sound.play();
-}
-
-$("button").on("click",playSound);
-```
-
-We can identify the similarities and differences in our current functions, and separate the similarities, and pass the differences as arguments. In doing this, we simplify the functions we've written into one function.
-
-I've created a new function, `playSound()` that takes an argument `event`, which in our case will be the click event, and uses the event to figure out which sound it should play. It can do this by examining which HTML element felt the event, and getting the ID of that element. IDs can be pretty handy.
-
-In more detail, `event.target` refers to the HTML element that the event happened on, and `.attr()` requests an attribute on this element. Passing in the string `"id"` allows us to request the ID attribute. We then store this in a variable we declared with `var id`.
-
-Then, contingent on the fact that you named your IDs after the names of the mp3 files, we can pick the appropriate mp3 file to play, based on what ID the clicked element had.
-
-And we play the sound as usual.
-
-Give this a test by saving your `main.js`. Your Live Preview should reload, and you'll be able to verify that the refactoring worked.
-
-Remember, simplify only after everything works.
-
-## Part VII: Upgrading
+## Part VI: Upgrading
 
 Do you find it a bit difficult to have sounds overlay each other, because clicking from button to button is a bit difficult? We can solve this in a number of ways, all of which I encourage you to experiment with to see which works best for you. We could:
 
@@ -442,7 +411,7 @@ function delegateKeypress(event) {
 
 And that's it! Save your `main.js` and test out your improved soundboard!
 
-## Part VIII: Publishing and Sharing
+## Part VII: Publishing and Sharing
 
 Now it's time to save your work with git and publish your code to GitHub and your personal website. Make sure you've saved all of your files on Cloud9!
 
@@ -456,7 +425,7 @@ Enter your username and password, and you should be all set. This should update 
 
 Post on [`#shipit`](https://starthackclub.slack.com/messages/shipit) with the URL, so everyone can see your amazing creation and create their own music!
 
-## Part IX: Hacking
+## Part VIII: Hacking
 
 - add colors to buttons so you know when they are being used
 - customize with more sounds (just add more buttons and sounds)
