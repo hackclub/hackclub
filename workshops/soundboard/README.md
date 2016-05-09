@@ -128,7 +128,7 @@ As a user, we can tell the difference between each of the buttons, by what text 
 
 HTML elements can have many attributes. One example we've seen is the `src` attribute that the `<script>` tag has. Many attributes are optional, but can be helpful in adding more differentiation to the elements.
 
-An `id` is a unique-valued attribute we can add to HTML elements. We'll give our button its own `id`, which will help us assign the corresponding sound to it.
+An `id` is a unique-valued attribute we can add to HTML elements. We'll give our button its own `id` by modifying the previously added line, which will help us assign the corresponding sound to it.
 
 ```html
 <button id="chop3">Chop3</button>
