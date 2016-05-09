@@ -343,7 +343,7 @@ Much like our refactored function `playSound()`, which takes an event as an argu
 Speaking of that, we need to assign keys to our sounds, so let's:
 
 1. Choose which keys we would like to use. Perhaps you will choose based on the letter and the name of the sound. I will just use keys on the home row: `d`, `f`, `j`, and `k`.
-2. Find the `keyCode`s for your keys. We'll need this in order to write JavaScript to match up the keys with the sounds. You can find `keyCode`s using [this handy chart](). My `keyCode`s are `100`, `102`, `106`, and `107`, respectively.
+2. Find the key codes for your keys. We'll need this in order to write JavaScript to match up the keys with the sounds. You can find key codes by putting the line `console.log(event.keyCode);` in your function and looking at the console in the Inspector. My key codes are `100`, `102`, `106`, and `107`, respectively.
 
 Now that we've gotten the information for the keys, we'll pair each with a sound by writing a conditional that checks if the key pressed has a `keyCode` that corresponds to a sound. We'll add this in our `delegateKeypress()` function:
 
