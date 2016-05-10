@@ -545,7 +545,9 @@ If we move the three lines that set the initial RGB values to `setup()`, then we
 
 Since the max values of RGB are 255, 255, 255 (which makes white), any values above that will be white. The `draw()` function executes so many times per second that you can't see the color change progression.
 
-We can have color progression while keeping the values below 255 by modding each of these by 255 with the `%` operator. Let's change our incrementation code to incorporate this:
+We can have color progression while keeping the values below 255 by modding each of these by 255. "Modding a by b" means that we divide a by b, and take the remainder. For example, 5mod2 gives us 1, because 5 divided by 2 has a remainder of 1. This arithmetic operation is available to us in JavaScript with the `%` operator.
+
+Let's change our incrementation code to incorporate this:
 
 ```js
 rVal = (rVal - 1)%255;
