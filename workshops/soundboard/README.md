@@ -89,16 +89,75 @@ Now we have successfully hooked up the JavaScript to the HTML. Our `index.html` 
 
 Now that we've set up our HTML file, let's add some elements to the **body** to form the user interface of our soundboard.
 
-How should we design our user interface? This is what the user (you, or others) will be interacting with when trying to make sweet music. Since this soundboard will be on a webpage, we'll probably be clicking on things. One can click on many things, but the most intuitive is a button, which is what we will use.
+### Creating the Grid Structure
+
+First, we'll make a box to contain our soundboard, by creating a [`div`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) in our **body**, right above the script tags:
+
+```js
+<body>
+  <div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="main.js"></script>
+</body>
+```
+
+Next, let's build the structure of our soundboard, by adding in rows to make a 4x4 grid. We'll do this by adding four `div` elements inside the `div` we just created:
+
+```js
+<div>
+  <div>
+  </div>
+  <div>
+  </div>
+  <div>
+  </div>
+  <div>
+  </div>
+</div>
+```
+
+Let's give each of these an attribute called "class".
+
+HTML elements can have many attributes. One example we've seen is the `src` attribute that the `<script>` tag has. Many attributes are optional, but can be helpful in adding more differentiation to the elements.
+
+The "class" attribute helps categorize similar elements. Since each of these will be rows in our soundboard, we'll give them each a class of "row":
+
+```js
+<div>
+  <div class="row">
+  </div>
+  <div class="row">
+  </div>
+  <div class="row">
+  </div>
+  <div class="row">
+  </div>
+</div>
+```
+
+Now we're ready to add in our buttons.
 
 ### Adding Buttons
 
 We can create buttons that imitate the buttons on a soundboard, by using [the button tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) (`<button>`).
 
-We use the button tag by typing the text we want on the button between the start (`<button>`) and close (`</button>`) tags. Type the following above your script tags in the **body**:
+We use the button tag by typing the text we want on the button between the start (`<button>`) and close (`</button>`) tags. Create a button inside the first `<div class="row">`, like so:
 
 ```html
-<button>Chop3</button>
+<div>
+  <div class="row">
+    <button>Chop3</button>
+  </div>
+  <div class="row">
+  </div>
+  <div class="row">
+  </div>
+  <div class="row">
+  </div>
+</div>
 ```
 
 This button will say "Chop3" on it.
@@ -114,7 +173,17 @@ Now `index.html` looks like this:
   <title>Soundboard</title>
 </head>
 <body>
-  <button>Chop3</button>
+  <div>
+    <div class="row">
+      <button>Chop3</button>
+    </div>
+    <div class="row">
+    </div>
+    <div class="row">
+    </div>
+    <div class="row">
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="main.js"></script>
@@ -125,8 +194,6 @@ Now `index.html` looks like this:
 As a user, we can tell the difference between each of the buttons, by what text is displayed on the buttons. But how can we differentiate them in code? One easy way is to supply each with an attribute known as an "`id`."
 
 ### Adding IDs to Buttons
-
-HTML elements can have many attributes. One example we've seen is the `src` attribute that the `<script>` tag has. Many attributes are optional, but can be helpful in adding more differentiation to the elements.
 
 An `id` is a unique-valued attribute we can add to HTML elements. We'll give our button its own `id` by modifying the previously added line, which will help us assign the corresponding sound to it.
 
@@ -143,7 +210,17 @@ Our HTML now looks like this:
   <title>Soundboard</title>
 </head>
 <body>
-  <button id="chop3">Chop3</button>
+  <div>
+    <div class="row">
+      <button id="chop3">Chop3</button>
+    </div>
+    <div class="row">
+    </div>
+    <div class="row">
+    </div>
+    <div class="row">
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="main.js"></script>
@@ -248,7 +325,7 @@ Now, save your `main.js` file and try clicking on the chop3 sound button! Congra
 
 ## Part IV: Repetition
 
-Let's do this for the other sounds, in a similar fashion. We'll add more buttons into the `index.html` and end up with the following. **For brevity I've only added four more sounds, but you should add all of them.**
+Let's do this for the other sounds, in a similar fashion. We'll add more buttons into the `index.html` and end up with the following:
 
 ```html
 <!DOCTYPE html>
@@ -257,10 +334,36 @@ Let's do this for the other sounds, in a similar fashion. We'll add more buttons
     <title>Soundboard</title>
   </head>
   <body>
-    <button id="chop3">Chop3</button>
-    <button id="kick4">Kick4</button>
-    <button id="perc1">Perc1</button>
-    <button id="vox9">Vox9</button>
+
+    <div>
+      <div class="row">
+        <button id="chop3">Chop3</button>
+        <button id="kick4">Kick4</button>
+        <button id="perc1">Perc1</button>
+        <button id="vox9">Vox9</button>
+      </div>
+
+      <div class="row">
+        <button id="chop4">Chop4</button>
+        <button id="fill1">fill1</button>
+        <button id="Cs">C#</button>
+        <button id="D">D</button>
+      </div>
+
+      <div class="row">
+        <button id="E">E</button>
+        <button id="F">F</button>
+        <button id="G">G</button>
+        <button id="D">D</button>
+      </div>
+
+      <div class="row">
+        <button id="A">A</button>
+        <button id="B">B</button>
+        <button id="C">C</button>
+        <button id="D">D</button>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="main.js"></script>
