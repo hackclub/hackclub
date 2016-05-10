@@ -629,7 +629,3 @@ Ideas:
 - change placement or spacing of ellipses
 - change shapes (p5.js offers easy functions to make triangles, rectangles, and more)
 - p5.js knows [where your mouse is](TODO mouseX and mouseY link). you could have the seizurific colors only on mouseOver.
-
-
----
-- more notes: i also am specifically not repeating myself with code snippets because i want the user to read the english that describes what the code is doing because when you read shit, you process it. instead of just using your eyes to search for code snippets and typing that shit perfunctorily(?is this the adv of perfunctory)
