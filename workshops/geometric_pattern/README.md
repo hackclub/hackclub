@@ -1,6 +1,6 @@
 # Geometric Pattern
 
-![](img/final.png)
+![](img/sample1.png)
 
 We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
 [p5.js](http://p5js.org/) is a library for making stuff in conjunction with the HTML canvas element. It is nothing more than JS code written to make commonly-desired functionality much more accessible. It is a JS port of Processing, a software for making pictures and visuals with code. 
