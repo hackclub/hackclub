@@ -424,7 +424,7 @@ One way to use `color()` is to provide 3 arguments; each corresponding to [red (
 
 Let's choose our color to be red. The R, G, and B values for a bright red are 255, 0, and 0, respectively. We can create this color with `color(255, 0, 0)`.
 
-Now we'll pass this color to the `fill()` function. If we set fill before drawing the ellipse, all the ellipses we draw will be filled with that color. Let's give it a try!
+Now we'll pass this color to the `fill()` function. If we set fill before drawing the ellipse, all the ellipses we draw will be filled with that color. Let's give this a try and type the following line immediately before drawing our ellipse:
 
 ```js
 fill(color(255, 0, 0));
@@ -436,7 +436,7 @@ Save and refresh. Your canvas should now look like red dragon scales.
 
 Just like how there's a `fill()` for changing the fill color, there's a `stroke()` for changing the stroke color. Right now, the stroke is black (hence the black outlines).
 
-We can make a garish display by adding a bright green stroke, if we place the following line above the ellipse creation line:
+We can make a garish display by adding a bright green stroke, if we place the following line beneath our `fill()` function call:
 
 ```js
 stroke(color(0,255,0));
@@ -448,7 +448,7 @@ Save and refresh, and let your eyes be assaulted by this faux pas.
 
 While this looks pretty cool, let's make the rows different colors. We can get the gradient effect by setting a starting color, and incrementing the R, G, and B values each time we go through the for loop.
 
-Let's do this by first declaring variables to store each of the R, G, and B values at the top of the file, beneath our constants: 
+Let's do this by first declaring variables to store each of the R, G, and B values at the top of the file:
 
 ```js
 var NUM_CIRCLES = 12;
