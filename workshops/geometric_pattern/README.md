@@ -144,7 +144,11 @@ function draw() {
 }
 ```
 
-So here we've drawn 5 circles. We can draw more, since we've made room for 12 (when we set NUM_CIRCLES). Keep going until it looks like this:
+![](img/four_and_half_circles_middle.png)
+
+So here we've drawn 4.5 circles. Why is there a half-circle? Check out the documentation for [`ellipse()`](http://p5js.org/reference/#p5/ellipse) and see if you can figure it out.
+
+Anyway, we can draw 7.5 more, since we've made room for 12 (when we set NUM_CIRCLES). Keep going until it looks like this:
 
 ![](img/twelve_circles_middle.png)
 
