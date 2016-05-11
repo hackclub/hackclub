@@ -122,7 +122,9 @@ function draw() {
 }
 ```
 
-Save and refresh Live Preview.
+Save and refresh Live Preview. It might also be helpful to open up the external preview:
+
+![](img/c9_external_preview.gif)
 
 In this example, the first two arguments we pass to the ellipse function are the x and y coordinates of the center of the ellipse. We've passed in `width/2` and `height/2`, respectively, which means the center of the ellipse will also be the center of the canvas. The latter two arguments are the x-width and y-width of the ellipse. Since we want to draw a circle, we're passing the same value for both.
 
