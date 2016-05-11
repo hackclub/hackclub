@@ -3,7 +3,7 @@
 ![](img/sample1.png)
 
 We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
-[p5.js](http://p5js.org/) is a library for making stuff in conjunction with the HTML canvas element. It is nothing more than JS code written to make commonly-desired functionality much more accessible. It is a JS port of Processing, a software for making pictures and visuals with code. 
+[p5.js](http://p5js.org/) is a library for making stuff in conjunction with the [HTML canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas). p5.js is nothing more than JavaScript code written to make commonly-desired functionality much more accessible. It is primarily used to make visuals and graphics. A great introduction can be found [here](http://taeyoonchoi.com/signing-coders-1/).
 
 ## Part I: Set-up
 
@@ -20,7 +20,7 @@ Then, right-click the `geometric_pattern` folder again, select `New File` again,
 
 ### Priming the HTML File
 
-Double-click `index.html` to open it. Just as we've done previously, we'll add this base structure into our HTML file:
+Double-click `index.html` to open it. Just as we've done previously, we'll type this base structure into our HTML file:
 
 ```html
 <!DOCTYPE html>
@@ -32,7 +32,7 @@ Double-click `index.html` to open it. Just as we've done previously, we'll add t
 </html>
 ```
 
-Now, let's add our JavaScript dependencies. This time around, we'll be using a library called p5.js. Let's add that into our **body** with a `<script>` tag: **Please type everything except the URL, which you can copy and paste!**
+Now, let's add our JavaScript dependencies, namely, p5.js. Let's add that into our **body** with a `<script>` tag: **Please type everything except the URL, which you can copy and paste!**
 
 ```html
 <body>
@@ -106,7 +106,7 @@ function setup() {
 }
 ```
 
-p5.js stores the width of the canvas in a constant named `width`. By dividing the width by the number of circles, we can calculate the length of the diameter, which we'll store in `circleDiameter`.
+p5.js stores the width of the canvas in a variable named [`width`](http://p5js.org/reference/#/p5/width). By dividing the width by the number of circles, we can calculate the length of the diameter, which we'll store in `circleDiameter`.
 
 ## Part III: Drawing on the Canvas
 
