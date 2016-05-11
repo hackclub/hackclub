@@ -9,7 +9,7 @@ We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
 
 First, go to Cloud9 and open up your `projects` workspace by pressing Open.
 
-![](img/c9_dash.png)
+![](img/c9_dashboard.png)
 
 Once in the workspace, right-click the `projects` folder on the left and select `New Folder`. Name it `geometric_pattern`.
 
@@ -523,7 +523,9 @@ Congratulations! Your pattern is now live on `USERNAME.github.io/geometric_patte
 
 ## Part VI: Animate It
 
-We can create a cool scrolling color effect by manipulating our colors to cycle. Right now we are resetting our initial RGB values each time `draw()` runs. But if we didn't reset every time, we could have rotating colors.
+WARNING: THIS SECTION IS NOT RECOMMENDED FOR THOSE WITH A HISTORY OF EPILEPSY. Even if you have not been previously diagnosed with epilepsy, you should be careful, and immediately close the window and consult a doctor if you experience any of the following symptoms: lightheadedness, altered vision, eye or face twitching, jerking or shaking of arms or legs, disorientation, confusion, or momentary loss of awareness.
+
+That said, we can create a cool scrolling color effect by manipulating our colors to cycle. Right now we are resetting our initial RGB values each time `draw()` runs. But if we didn't reset every time, we could have rotating colors.
 
 ```js
 function setup() {
@@ -568,9 +570,6 @@ As a check, your `main.js` should look like this:
 Final code:
 
 ```js
-// ok this gives me epilepsy but whatever
-// just put a medical warning about epilepsy
-
 var NUM_CIRCLES = 12;
 var circleDiameter;
 var circleRadius;
@@ -616,6 +615,8 @@ function draw() {
 }
 ```
 
+![](img/sample2.png)
+
 ## Part VII: Hacking
 
 Ideas:
@@ -628,4 +629,6 @@ Ideas:
 - change shape of ellipses (what about horizontally fat ovals? vertically tall ovals?)
 - change placement or spacing of ellipses
 - change shapes (p5.js offers easy functions to make triangles, rectangles, and more)
-- p5.js knows [where your mouse is](TODO mouseX and mouseY link). you could have the seizurific colors only on mouseOver.
+- p5.js knows where your mouse [x](https://p5js.org/reference/#/p5/mouseX) and [y](https://p5js.org/reference/#/p5/mouseY) coordinates are. You could have the seizurific colors only on mouseOver.
+
+![](img/sample4.png)
