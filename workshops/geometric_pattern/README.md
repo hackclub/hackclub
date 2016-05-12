@@ -2,10 +2,21 @@
 
 ![](img/sample1.png)
 
+[Short link](https://workshops.hackclub.com/geometric_pattern)
 [Link to demo](http://prophetorpheus.github.io/geometric_pattern/)
 
 We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
 [p5.js](http://p5js.org/) is a library for making stuff in conjunction with the [HTML canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas). p5.js is nothing more than JavaScript code written to make commonly-desired functionality much more accessible. It is primarily used to make visuals and graphics. A great introduction can be found [here](http://taeyoonchoi.com/signing-coders-1/).
+
+**Table of Contents:**
+
+- [Part I: Set-up](#part-i-set-up)
+- [Part II: Priming the Files](#part-ii-priming-the-files)
+- [Part III: Drawing on the Canvas](#part-iii-drawing-on-the-canvas)
+- [Part IV: Adding Color](#part-iv-adding-color)
+- [Part V: Publishing and Sharing](#part-v-publishing-and-sharing)
+- [Part VI: Animate It](#part-vi-animate-it)
+- [Part VII: Hacking](#part-vii-hacking)
 
 ## Part I: Set-up
 
