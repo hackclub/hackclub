@@ -522,11 +522,20 @@ Now, save and see the gradient effect you've applied throughout the pattern! Yay
 
 ### Downloading Your Masterpiece
 
-You can actually download the this cool pattern to your computer, to use as a desktop background or what have you. p5.js provides a function `saveCanvas()` to download the canvas.
+You can actually download the this cool pattern to your computer, to use as a desktop background or what have you. p5.js provides a function [`saveCanvas()`](https://p5js.org/reference/#p5/saveCanvas) to download the canvas.
+
+We can attach this function to a key press by using p5's `keyPressed` function:
 
 ```js
-// gotta check if adding it in setup() will be stupid cuz nothing has been drawn yet, or what
+function keyPressed() {
+  if (keyCode === 115 || keyCode === 83) {
+    saveCanvas('geometricPattern', 'png');
+  }
+  return false;
+}
 ```
+
+Here I've specified that if the key pressed had a `keyCode` of 115 or 83 (that's an "s"), `saveCanvas()` should be called, and the file should be saved as `geometricPattern.png`. The statement `return false;` at the end makes sure that this key press doesn't trigger any unwanted side effects. (TODO clarify)
 
 ### Making It Live
 
