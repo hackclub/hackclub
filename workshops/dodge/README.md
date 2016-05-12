@@ -28,7 +28,7 @@ Just as we've done previously, we're going to be building this project in Cloud9
 Our project's code is going to be divided into two files: `index.html` (the HTML code) and `game.js` (the JavaScript code). The HTML file will tell the browser about the game's existence and how to display it on the page. The JavaScript file will tell the browser how to actually run the game.
 
 1. Create a new directory in your Cloud9 workspace by right-clicking your `projects` folder and selecting `New Folder`. Name this folder `dodge`.
-2. Create a file by right-clicking the `dodge` folder, selecting `New File`, and name it `index.html`. Double-click to open it, and type the following into it:
+2. Create a file by right-clicking the `dodge` folder, selecting `New File`, and naming it `index.html`. Double-click to open it, and type the following into it:
 
     ```html
     <!DOCTYPE html>
@@ -45,7 +45,7 @@ Our project's code is going to be divided into two files: `index.html` (the HTML
 
      The two `script` tags inside of `body` tell the browser to load p5.js and p5.play, which we'll need to run our game.
  
-3. Create another file by right-clicking the `dodge` folder, selecting `New File`, and name it `game.js`.
+3. Create another file by right-clicking the `dodge` folder, selecting `New File`, and naming it `game.js`.
  
 Great, so now we have `index.html` and `game.js`. `index.html` is loading p5.js and p5.play, but it doesn't know about `game.js` yet. Let's change that by adding `<script src="game.js"></script>` to the **body** in `index.html`, beneath the other `script` tags. `index.html` should now look like this:
 
