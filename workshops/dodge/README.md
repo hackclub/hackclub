@@ -27,8 +27,8 @@ Just as we've done previously, we're going to be building this project in Cloud9
 
 Our project's code is going to be divided into two files: `index.html` (the HTML code) and `game.js` (the JavaScript code). The HTML file will tell the browser about the game's existence and how to display it on the page. The JavaScript file will tell the browser how to actually run the game.
 
-1. Create a new directory in your Cloud9 workspace called `dodge`
-2. Create a file and copy and paste the following into it. Save it as `index.html` inside of the `dodge` directory.
+1. Create a new directory in your Cloud9 workspace by right-clicking your `projects` folder and selecting `New Folder`. Name this folder `dodge`.
+2. Create a file by right-clicking the `dodge` folder, selecting `New File`, and name it `index.html`. Double-click to open it, and type the following into it:
 
     ```html
     <!DOCTYPE html>
@@ -43,13 +43,11 @@ Our project's code is going to be divided into two files: `index.html` (the HTML
     </html>
     ```
 
-     The two `script` tags inside of `body` tell the browser to load p5.js and p5.play _(improve this introduction)_
+     The two `script` tags inside of `body` tell the browser to load p5.js and p5.play, which we'll need to run our game.
  
-3. Create another new file and then save it as `game.js` inside of the `dodge` directory. Leave it empty for now.
+3. Create another file by right-clicking the `dodge` folder, selecting `New File`, and name it `game.js`.
  
-Great, so now we have `index.html` and `game.js`. `index.html` is loading p5.js and p5.play, but it doesn't know about `game.js` yet. Let's change that.
-
-Add `<script src="game.js"></script>` to the bottom of the `body` tag in `index.html`. `index.html` should now look like the following:
+Great, so now we have `index.html` and `game.js`. `index.html` is loading p5.js and p5.play, but it doesn't know about `game.js` yet. Let's change that by adding `<script src="game.js"></script>` to the **body** in `index.html`, beneath the other `script` tags. `index.html` should now look like this:
 
 ```html
 <!DOCTYPE html>
@@ -65,7 +63,7 @@ Add `<script src="game.js"></script>` to the bottom of the `body` tag in `index.
 </html>
 ```
 
-While you have `index.html` open in Cloud9, click `Preview > Live Preview File (index.html)` to see what the game looks like so far. Right now it's just a blank page, but we'll be changing that soon enough :wink:.
+Now, save using the shortcut `Command+s` or `CTRL+s` and open up live preview by clicking `Preview > Live Preview`. Right now it's just a blank page, but we'll be changing that soon enough :wink:.
 
 ## Part II. The External JS File
 
@@ -73,7 +71,7 @@ While you have `index.html` open in Cloud9, click `Preview > Live Preview File (
 
 p5.js works by automatically calling two special functions: `setup()` and `draw()` to create the visuals on your webpage. We'll be writing our own code in these functions, so that p5.js can then run our code.
 
-Open up `game.js` and add them to the file (type them out, don't copy and paste!).
+Double-click `game.js` to open, and add these functions (type them out, don't copy and paste!).
 
 ```js
 function setup() {
@@ -83,7 +81,7 @@ function draw() {
 }
 ```
 
-If you refresh the preview in Cloud9, you'll notice nothing has changed. It's still blank. Everything in due time, don't worry.
+If you save and refresh the preview in Cloud9, you'll notice nothing has changed.
 
 How these functions work is that `setup()` is run only once, upon page load. `draw()` on the other hand, is run repeatedly after `setup()` finishes, and in this way, provides the basis for any animation or interaction you see in your project.
 
@@ -107,7 +105,7 @@ function draw() {
 
 `background()` is a function that sets the appearance of the background. Here we're using three arguments to define the red, green, and blue (RGB) values of a color, which will be the background color of our canvas. You can use `background` in some more ways, though, which are detailed in documentation [here](https://p5js.org/reference/#/p5/background).
 
-I've chosen this dark blue, but you can experiment with the RGB values and choose your own background color.
+If you save and refresh live preview, you'll see that I've chosen this dark blue. You can experiment with the RGB values and choose your own background color.
 
 Now that we've finished setting up, it's time to add the most important thing to our game: the player.
 
@@ -147,7 +145,9 @@ function draw() {
 }
 ```
 
-And there. Now we can view our sprite. It looks like it's cut off, though. Guess we have to adjust the y-position. Let's modify that in our initial creation of the player, in `setup()`.
+Save and refresh live preview to see your player!
+
+It looks like it's cut off, though. Guess we have to adjust the y-position. Let's modify that in our initial creation of the player, in `setup()`.
 
 ```js
 function setup() {
@@ -188,7 +188,7 @@ if (keyDown(RIGHT_ARROW)) {
 }
 ```
 
-And we'll have corresponding behavior assigned to the left arrow key, except that we'll decrement the position by 1:
+And we'll have corresponding behavior assigned to the left arrow key, except that we'll decrement the position by 1. Place this below the previous conditional:
 
 ```js
 if (keyDown(LEFT_ARROW)) {
@@ -236,7 +236,7 @@ And the `draw()` function should look like this now:
 
 ```js
 function draw() {
-  background(0,0,100);
+  background(0, 0, 100);
 
   if (keyDown(RIGHT_ARROW) && player.position.x < (width-25)) {
     player.position.x = player.position.x + 1;
@@ -264,7 +264,7 @@ function setup() {
 }
 ```
 
-And to display it, guess what? That's already covered by our familiar friend, `drawSprites()`.
+And to display it, guess what? That's already taken care of by our familiar friend, `drawSprites()`.
 
 ### Moving the Enemy
 
@@ -352,7 +352,7 @@ And let's display a game over screen.
 function gameOver() {
   background(0);
   textAlign(CENTER);
-  fill("white";)
+  fill("white");
   text("Game Over!", width/2, height/2);
 }
 ```
