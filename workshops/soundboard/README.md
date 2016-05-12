@@ -104,14 +104,10 @@ First, we'll make a box to contain our soundboard, by creating a [`div`](https:/
 </body>
 ```
 
-Next, let's build the structure of our soundboard, by adding in rows to make a 4x4 grid. We'll do this by adding four `div` elements inside the `div` we just created:
+Next, let's build the structure of our soundboard, by adding in rows to make a 2x8 grid. We'll do this by adding two `div` elements inside the `div` we just created:
 
 ```js
 <div>
-  <div>
-  </div>
-  <div>
-  </div>
   <div>
   </div>
   <div>
@@ -127,10 +123,6 @@ The "class" attribute helps categorize similar elements. Since each of these wil
 
 ```js
 <div>
-  <div class="row">
-  </div>
-  <div class="row">
-  </div>
   <div class="row">
   </div>
   <div class="row">
@@ -153,10 +145,6 @@ We use the button tag by typing the text we want on the button between the start
   </div>
   <div class="row">
   </div>
-  <div class="row">
-  </div>
-  <div class="row">
-  </div>
 </div>
 ```
 
@@ -176,10 +164,6 @@ Now `index.html` looks like this:
   <div>
     <div class="row">
       <button>Chop3</button>
-    </div>
-    <div class="row">
-    </div>
-    <div class="row">
     </div>
     <div class="row">
     </div>
@@ -213,10 +197,6 @@ Our HTML now looks like this:
   <div>
     <div class="row">
       <button id="chop3">Chop3</button>
-    </div>
-    <div class="row">
-    </div>
-    <div class="row">
     </div>
     <div class="row">
     </div>
@@ -341,9 +321,6 @@ Let's do this for the other sounds, in a similar fashion. We'll add more buttons
         <button id="kick4">Kick4</button>
         <button id="perc1">Perc1</button>
         <button id="vox9">Vox9</button>
-      </div>
-
-      <div class="row">
         <button id="chop4">Chop4</button>
         <button id="fill1">fill1</button>
         <button id="Cs">C#</button>
@@ -355,9 +332,6 @@ Let's do this for the other sounds, in a similar fashion. We'll add more buttons
         <button id="F">F</button>
         <button id="G">G</button>
         <button id="D">D</button>
-      </div>
-
-      <div class="row">
         <button id="A">A</button>
         <button id="B">B</button>
         <button id="C">C</button>
@@ -393,6 +367,8 @@ function makeVox9Sound() {
   var vox9Sound = new Audio("vox9.mp3");
   vox9Sound.play();
 }
+
+// TODO add in the rest of the sounds
 
 $("#chop3").on("click", makeChop3Sound);
 $("#kick4").on("click", makeKick4Sound);
@@ -445,8 +421,8 @@ Much like our refactored function `playSound()`, which takes an event as an argu
 
 Speaking of that, we need to assign keys to our sounds, so let's:
 
-1. Choose which keys we would like to use. Perhaps you will choose based on the letter and the name of the sound. I will just use keys on the home row: `d`, `f`, `j`, and `k`.
-2. Find the key codes for your keys. We'll need this in order to write JavaScript to match up the keys with the sounds. You can find key codes by putting the line `console.log(event.keyCode);` in your function and looking at the console in the Inspector. My key codes are `100`, `102`, `106`, and `107`, respectively.
+1. For our 2x8 grid, we'll be using the keys `q`, `w`, `e`, `r`, `a`, `s`, `d`, `f`, `u`, `i`, `o`, `p`, `j`, `k`, `l`, and `;`.
+2. Find the key codes for your keys. We'll need this in order to write JavaScript to match up the keys with the sounds. You can find key codes by putting the line `console.log(event.keyCode);` in your function and looking at the console in the Inspector.
 
 Now that we've gotten the information for the keys, we'll pair each with a sound by writing a conditional that checks if the key pressed has a `keyCode` that corresponds to a sound. We'll add this in our `delegateKeypress()` function:
 
@@ -496,6 +472,7 @@ What do you think happens next? Once the click event is triggered on the button,
 We can complete our function by creating similar conditionals for the other keys and sounds:
 
 ```js
+// TODO edit the keycodes to include all the keys i referenced above
 function delegateKeypress(event) {
   if (event.keyCode == 100) {
     $("#chop3").trigger("click");
