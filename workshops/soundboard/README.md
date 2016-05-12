@@ -93,7 +93,7 @@ Now that we've set up our HTML file, let's add some elements to the **body** to 
 
 First, we'll make a box to contain our soundboard, by creating a [`div`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) in our **body**, right above the script tags:
 
-```js
+```html
 <body>
   <div>
 
@@ -106,7 +106,7 @@ First, we'll make a box to contain our soundboard, by creating a [`div`](https:/
 
 Next, let's build the structure of our soundboard, by adding in rows to make a 2x8 grid. We'll do this by adding two `div` elements inside the `div` we just created:
 
-```js
+```html
 <div>
   <div>
   </div>
@@ -121,7 +121,7 @@ HTML elements can have many attributes. One example we've seen is the `src` attr
 
 The "class" attribute helps categorize similar elements. Since each of these will be rows in our soundboard, we'll give them each a class of "row":
 
-```js
+```html
 <div>
   <div class="row">
   </div>
