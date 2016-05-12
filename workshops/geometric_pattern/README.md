@@ -2,6 +2,8 @@
 
 ![](img/sample1.png)
 
+[Link to demo](http://prophetorpheus.github.io/geometric_pattern/)
+
 We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
 [p5.js](http://p5js.org/) is a library for making stuff in conjunction with the [HTML canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas). p5.js is nothing more than JavaScript code written to make commonly-desired functionality much more accessible. It is primarily used to make visuals and graphics. A great introduction can be found [here](http://taeyoonchoi.com/signing-coders-1/).
 
@@ -445,7 +447,7 @@ Just like how there's a `fill()` for changing the fill color, there's a `stroke(
 We can make a garish display by adding a bright green stroke, if we place the following line beneath our `fill()` function call:
 
 ```js
-stroke(color(0,255,0));
+stroke(color(0, 255, 0));
 ```
 
 Save and refresh, and let your eyes be assaulted by this faux pas.
@@ -553,20 +555,20 @@ If we move the three lines that set the initial RGB values to `setup()`, then we
 
 Since the max values of RGB are 255, 255, 255 (which makes white), any values above that will be white. The `draw()` function executes so many times per second that you can't see the color change progression.
 
-We can have color progression while keeping the values below 255 by modding each of these by 255. "Modding a by b" means that we divide a by b, and take the remainder. For example, 5mod2 gives us 1, because 5 divided by 2 has a remainder of 1. This arithmetic operation is available to us in JavaScript with the `%` operator.
+We can have color progression while keeping the values below 255 by modding each of these by 256. "Modding a by b" means that we divide a by b, and take the remainder. For example, 5mod2 gives us 1, because 5 divided by 2 has a remainder of 1. This arithmetic operation is available to us in JavaScript with the `%` operator.
 
 Let's change our incrementation code to incorporate this:
 
 ```js
-rVal = (rVal - 1)%255;
-gVal = (gVal + 5)%255;
-bVal = (bVal + 2)%255;
+rVal = (rVal - 1)%256;
+gVal = (gVal + 5)%256;
+bVal = (bVal + 2)%256;
 ```
 
-JavaScript `%` operator does something stupid, in that it mods negative numbers incorrectly. We can get around this by recognizing that subtracting 1 and modding is the same as adding 254 and modding.
+JavaScript `%` operator does something stupid, in that it mods negative numbers incorrectly. We can get around this by recognizing that subtracting 1 and modding is the same as adding 255 and modding.
 
 ```js
-rVal = (rVal + 254)%255;
+rVal = (rVal + 255)%256;
 ```
 
 Save and refresh and be warned that it might be jarring.
@@ -614,9 +616,9 @@ function draw() {
     y = y - circleRadius;
     alternatingRow = !alternatingRow;
 
-    rVal = (rVal + 254)%255;
-    gVal = (gVal + 5)%255;
-    bVal = (bVal + 2)%255;
+    rVal = (rVal + 255)%256;
+    gVal = (gVal + 5)%256;
+    bVal = (bVal + 2)%256;
   }
 }
 ```
@@ -638,3 +640,5 @@ Ideas:
 - p5.js knows where your mouse [x](https://p5js.org/reference/#/p5/mouseX) and [y](https://p5js.org/reference/#/p5/mouseY) coordinates are. You could have the seizurific colors only on mouseOver.
 
 ![](img/sample4.png)
+
+[Orpheus Remix](http://prophetorpheus.github.io/geometric_pattern/version2.html)
