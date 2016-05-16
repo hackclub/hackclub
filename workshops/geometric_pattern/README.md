@@ -117,6 +117,9 @@ function setup() {
   createCanvas(480,600);
   circleDiameter = width/NUM_CIRCLES;
 }
+
+function draw() {
+}
 ```
 
 p5.js stores the width of the canvas in a variable named [`width`](http://p5js.org/reference/#/p5/width). By dividing the width by the number of circles, we can calculate the length of the diameter, which we'll store in `circleDiameter`.
@@ -206,6 +209,8 @@ If you save and refresh, you'll see a line of cut-off circles at the top. This i
 
 As to why the circles are cut off -- this is because we set the y-coordinate of the _center_ of every circle to 0.
 
+**Remark: if your page is frozen, refresh the page and check your while-loop code. Chances are you've got an [infinite loop](https://en.wikipedia.org/wiki/Infinite_loop).**
+
 ### Drawing a Grid of Circles
 
 So that's great, we've drawn one row of circles. But what we'd like is to cover the entire canvas with circles.
@@ -294,7 +299,7 @@ function draw() {
 }
 ```
 
-To differentiate between rows, we should add a line to flip the flag at the bottom of the `y` while-loop. This is because each pass through the `y` while-loop creates a new row, thus it would be appropriate after the creation of each row to flip the flag.
+To differentiate between rows, we should add a line to flip the flag at the bottom of the `y` while-loop, underneath the line that flips `alternatingRow`. This is because each pass through the `y` while-loop creates a new row, thus it would be appropriate after the creation of each row to flip the flag.
 
 We'll using the negation operator (`!`) to flip from `false` to `true` and vice versa:
 
@@ -348,12 +353,8 @@ Now we just need to make this shift. We'll do this by modifying the starting `x`
 We can modify this by removing this definition:
 
 ```js
-
-  while (y <= height) {
-    var x;
-
-    if (alternatingRow) {
-
+v̶a̶r̶ ̶x̶ ̶=̶ ̶0̶;̶
+var x;
 ```
 
 And setting the value _conditionally_:
@@ -443,7 +444,7 @@ One way to use `color()` is to provide 3 arguments; each corresponding to [red (
 
 Let's choose our color to be red. The R, G, and B values for a bright red are 255, 0, and 0, respectively. We can create this color with `color(255, 0, 0)`.
 
-Now we'll pass this color to the `fill()` function. If we set fill before drawing the ellipse, all the ellipses we draw will be filled with that color. Let's give this a try and type the following line immediately before drawing our ellipse:
+Now we'll pass this color to the `fill()` function. If we do this before drawing the ellipse, all the ellipses we draw will be filled with that color. Let's give this a try and type the following line immediately before drawing our ellipse:
 
 ```js
 fill(color(255, 0, 0));
@@ -575,7 +576,7 @@ If we move the three lines that set the initial RGB values to `setup()`, then we
 
 Since the max values of RGB are 255, 255, 255 (which makes white), any values above that will be white. The `draw()` function executes so many times per second that you can't see the color change progression.
 
-We can have color progression while keeping the values below 255 by modding each of these by 256. "Modding a by b" means that we divide a by b, and take the remainder. For example, 5mod2 gives us 1, because 5 divided by 2 has a remainder of 1. This arithmetic operation is available to us in JavaScript with the `%` operator.
+We can have color progression while keeping the values below 255 by [modding](https://en.wikipedia.org/wiki/Modulo_operation) each of these by 256. "Modding a by b" means that we divide a by b, and take the remainder. For example, 5mod2 gives us 1, because 5 divided by 2 has a remainder of 1. This arithmetic operation is available to us in JavaScript with the modulo (`%`) operator.
 
 Let's change our incrementation code to incorporate this:
 
