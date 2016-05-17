@@ -32,14 +32,14 @@ Much like in Personal Website workshop, we'll be using HTML to create stuff visi
 5. Now, open up `index.html` and type the following:
 
   ```html
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <title>Soundboard</title>
-      </head>
-      <body>
-      </body>
-    </html>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Soundboard</title>
+    </head>
+    <body>
+    </body>
+  </html>
   ```
 
   Similar to our HTML file in the Personal Website workshop, we've created a bare template upon which we will build interactions for the user. As you can see, we've named this page "Soundboard" using the title (`<title>`) tag.
