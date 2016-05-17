@@ -161,7 +161,7 @@ We'll also be doing the Personal Website workshop, which will get members set up
 
 ## Meetings 2-3 - "Coding Is..."
 
-### Coding is...
+Coding is...
 
 1. In things you wouldn't expect
 2. Useful in everyday life
@@ -175,25 +175,21 @@ More inspirational
 
 They do workshops that walk members through the process of building something cool. They demo what they've built so far in meeting 3.
 
-## Meeting 4 - 5 - "Hack Day & Demo #1"
+## Meetings 4-5 - "Deep Dive #1"
 
-This'll be the first Hack Day. Members will be challenged to build something of their own (and given examples of stuff other people have built). Can be anything – either related to previous workshops or not.
+In depth on how to do a concept.
 
-Meeting 4 will be the first Hack Day. Meeting 5 will pick up where 4 left off and will conclude in demos. Ideally pizza or something similar will be at meeting 5.
-
-## Meetings 6-8 - "Deep Dive #1"
-
-In depth on how to do a concept
-
-Current working plan is a text adventure. Structure will look something like this:
-
-1. Write the story using Twine, with its basic syntax and macro features. Serves to let the member mostly focus on a story, and not worry about tons of computer science stuff thrown at them at the same time.
-2. Recreating their Twine story using basic HTML, by creating a bunch of pages and linking them together
-3. Recreating/adding to their story by using CSS and JS, including inlining all the story into one file, and navigable with some basic jQuery.
+Current working plan is [Dodge](https://workshops.hackclub.com/dodge).
 
 We'll recommend some hacking time as well, so users can try adding more interactivity with JS, or extra styling for specific sections or whatever. Demo too. Not a fully fledged hack week at this point though
 
-## Meetings 9-10 - "Deep Dive #2"
+## Meeting 6 - 7 - "Hack Day & Demo #1"
+
+This'll be the first Hack Day. Members will be challenged to build something of their own (and given examples of stuff other people have built). Can be anything – either related to previous workshops or not.
+
+Meeting 6 will be the first Hack Day. Meeting 7 will pick up where 4 left off and will conclude in demos. Ideally pizza or something similar will be at meeting 7.
+
+## Meetings 8-10 - "Deep Dive #2"
 
 Different, more complex topic, now covered in two weeks, since the first deep dive will have gone over a lot of basics using one concept.
 
@@ -205,7 +201,7 @@ Short hack+demo as before
 
 - Hack week (no new concepts) with party
 - Try to combine everything you've learned, or build on something from before
-- Encourage larger group collaborations, either with creating 1 large project together, or creating a bunch of small things. Overall, a very abstract week, used to encourage members to build on everything they've done for the past ~8-9 weeks.
+- Encourage larger group collaborations, either with creating 1 large project together, or creating a bunch of small things. Overall, a very abstract week, used to encourage members to build on everything they've done for the past ~9-10 weeks.
 - Do demos, like in the first Hack Day
 
 Recommend: demo day! pizza! special guests!
