@@ -2,23 +2,24 @@
 
 Short link to this workshop: [https://workshops.hackclub.com/soundboard](https://workshops.hackclub.com/soundboard)
 
+[Demo](http://prophetorpheus.github.io/soundboard/)
+
 ---
 
 Today we're going to create our very own soundboard. You may have seen musicians such as Little Dragon, [Shawn Wasabi](https://www.youtube.com/watch?v=qAeybdD5UoQ), and many other musicians, using such things to improvise fresh beats at live performances. We can simulate this very easily with basic HTML and JavaScript.
 
 Much like in Personal Website workshop, we'll be using HTML to create stuff visible on the browser. We'll also be using JavaScript, a programming language commonly used in web development, to include interactivity in our project. In addition, we will be making use of jQuery, which is a library that will make using JavaScript in the browser much simpler. This may seem like an exorbitant number of new tools, but we'll be biting off manageable pieces.
 
-Table of Contents
+**Table of Contents**
 
 - [Part I: Set-up](#part-i-set-up)
 - [Part II: User Interface](#part-ii-user-interface) 
 - [Part III: The JavaScript File](#part-iii-the-javascript-file)
 - [Part IV: Repetition](#part-iv-repetition)
 - [Part V: Rejoicing](#part-v-rejoicing)
-- [Part VI: Refactoring](#part-vi-refactoring)
-- [Part VII: Upgrading](#part-vii-upgrading)
-- [Part VIII: Publishing and Sharing](#part-viii-publishing-and-sharing)
-- [Part IX: Hacking](#part-ix-hacking)
+- [Part VI: Upgrading](#part-vi-upgrading)
+- [Part VII: Publishing and Sharing](#part-vii-publishing-and-sharing)
+- [Part VIII: Hacking](#part-viii-hacking)
 
 ## Part I: Set-up
 
@@ -90,19 +91,66 @@ Now we have successfully hooked up the JavaScript to the HTML. Our `index.html` 
 
 Now that we've set up our HTML file, let's add some elements to the **body** to form the user interface of our soundboard.
 
-How should we design our user interface? This is what the user (you, or others) will be interacting with when trying to make sweet music. Since this soundboard will be on a webpage, we'll probably be clicking on things. One can click on many things, but the most intuitive is a button, which is what we will use.
+### Creating the Grid Structure
+
+First, we'll make a box to contain our soundboard, by creating a [`div`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) in our **body**, right above the script tags:
+
+```html
+<body>
+  <div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="main.js"></script>
+</body>
+```
+
+Next, let's build the structure of our soundboard, by adding in rows to make a 2x8 grid. We'll do this by adding two `div` elements inside the `div` we just created:
+
+```html
+<div>
+  <div>
+  </div>
+  <div>
+  </div>
+</div>
+```
+
+Let's give each of these an attribute called "class".
+
+HTML elements can have many attributes. One example we've seen is the `src` attribute that the `<script>` tag has. Many attributes are optional, but can be helpful in adding more differentiation to the elements.
+
+The "class" attribute helps categorize similar elements. Since each of these will be rows in our soundboard, we'll give them each a class of "row":
+
+```html
+<div>
+  <div class="row">
+  </div>
+  <div class="row">
+  </div>
+</div>
+```
+
+Now we're ready to add in our buttons.
 
 ### Adding Buttons
 
 We can create buttons that imitate the buttons on a soundboard, by using [the button tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) (`<button>`).
 
-We use the button tag by typing the text we want on the button between the start (`<button>`) and close (`</button>`) tags. Type the following above your script tags in the **body**:
+We use the button tag by typing the text we want on the button between the start (`<button>`) and close (`</button>`) tags. Create a button inside the second `<div class="row">`, like so:
 
 ```html
-<button>Chop3</button>
+<div>
+  <div class="row">
+  </div>
+  <div class="row">
+    <button>C</button>
+  </div>
+</div>
 ```
 
-This button will say "Chop3" on it.
+This button will say "C" on it. Save and refresh live preview to see it.
 
 You can have any text on your buttons that you desire, so long as you can still tell what sound they're going to make when you press them.
 
@@ -115,7 +163,13 @@ Now `index.html` looks like this:
   <title>Soundboard</title>
 </head>
 <body>
-  <button>Chop3</button>
+  <div>
+    <div class="row">
+    </div>
+    <div class="row">
+      <button>C</button>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="main.js"></script>
@@ -127,12 +181,10 @@ As a user, we can tell the difference between each of the buttons, by what text 
 
 ### Adding IDs to Buttons
 
-HTML elements can have many attributes. One example we've seen is the `src` attribute that the `<script>` tag has. Many attributes are optional, but can be helpful in adding more differentiation to the elements.
-
-An `id` is a unique-valued attribute we can add to HTML elements. We'll give our button its own `id`, which will help us assign the corresponding sound to it.
+An `id` is a unique-valued attribute we can add to HTML elements. We'll give our button its own `id` by modifying the previously added line, which will help us assign the corresponding sound to it.
 
 ```html
-<button id="chop3">Chop3</button>
+<button id="cNote">C</button>
 ```
 
 Our HTML now looks like this:
@@ -144,7 +196,13 @@ Our HTML now looks like this:
   <title>Soundboard</title>
 </head>
 <body>
-  <button id="chop3">Chop3</button>
+  <div>
+    <div class="row">
+    </div>
+    <div class="row">
+      <button id="cNote">C</button>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="main.js"></script>
@@ -169,42 +227,43 @@ JavaScript makes using audio easy with the Audio object. We are going to create 
 We'll be storing each Audio object in a variable. A variable in JavaScript is something that stores a value. First, let's declare the existence of our variable by typing the following into `main.js`:
 
 ```js
-var chop3Sound;
+var cNote;
 ```
 
-Next, we'll make a new Audio object with the `chop3.mp3`, and assign it to our variable, by modifying the line we just added:
+Next, we'll make a new Audio object with the `c1.mp3`, and assign it to our variable, by modifying the line we just added:
 
 ```js
-var chop3Sound = new Audio("chop3.mp3");
+v̶a̶r̶ ̶c̶N̶o̶t̶e̶;̶
+var cNote = new Audio("c1.mp3");
 ```
 
-Here, we've created a new `Audio` object that will have the sound `chop3.mp3`, and assigned the Audio object to a variable named `chop3Sound` which we declared in the same line.
+Here, we've created a new `Audio` object that will have the sound `c1.mp3`, and assigned the Audio object to a variable named `cNote` which we declared in the same line.
 
-And we'll play the sound by using a built-in method (`.play()`) included in the Audio object. We'll add this line beneath the creation of `chop3Sound`, like so:
+And we'll play the sound by using a built-in method (`.play()`) included in the Audio object. We'll add this line beneath the creation of `cNote`, like so:
 
 ```js
-var chop3Sound = new Audio("chop3.mp3");
-chop3Sound.play();
+var cNote = new Audio("c1.mp3");
+cNote.play();
 ```
 
 `.play()` is a function that is a part of the Audio object, that will play the sound.
 
-Now, if you save your `main.js` file, you'll note that upon auto-reloading, the `index.html` page now plays the chop3 sound.
+Now, if you save your `main.js` file, you'll note that upon auto-reloading, the `index.html` page now plays a C note.
 
 Yay! We've added audio to our webpage.
 
 ### Creating Functions
 
-If we save our file and let `index.html` reload, we hear the chop3 sound. But we don't want this. We want the sound to play, but only at our command.
+If we save our file and let `index.html` reload, we hear a C note. But we don't want this. We want the sound to play, but only at our command.
 
 To have a little more control over the sound, let's create a function that will play it only when we call the function. A function in JavaScript stores a set of instructions in a variable. We can call the function to execute these instructions whenever we want.
 
-We can create functions for the chop3 sound by wrapping the code we've already written in the following way:
+We can create functions for the C note by **enclosing the code we've already written in the following way**:
 
 ```js
-function makeChop3Sound() {
-  var chop3Sound = new Audio("chop3.mp3");
-  chop3Sound.play();
+function makeANote() {
+  var cNote = new Audio("c1.mp3");
+  cNote.play();
 }
 ```
 
@@ -219,7 +278,7 @@ In order to connect the button and the function, we must first identify the butt
 We can [use jQuery to find the button](https://learn.jquery.com/using-jquery-core/selecting-elements/), by using special syntax. We'll type this below our function, in `main.js`:
 
 ```js
-$("#chop3");
+$("#cNote");
 ```
 
 Now that we have selected our button in the JavaScript by its `id`, we can access the methods attached to the button.
@@ -229,27 +288,29 @@ One of the methods is `.on()`. This method sets the button to execute some instr
 Here, we will use the method to detect the "click" event, so we'll provide `"click"` as the first argument to `.on()`:
 
 ```js
-$("#chop3").on("click");
+$̶(̶"̶#̶c̶N̶o̶t̶e̶"̶)̶;̶
+$("#cNote").on("click");
 ```
 
-`.on()` takes two arguments, the second of which is what you want to happen when the event has occurred. In our case, we want the chop3 sound to play when the button is clicked, so we add the function `makeChop3Sound` which we have already written, as an argument.
+`.on()` takes two arguments, the second of which is what you want to happen when the event has occurred. In our case, we want the C note to play when the button is clicked, so we add the function `makeANote` which we have already written, as an argument.
 
 ```js
-$("#chop3").on("click", makeChop3Sound);
+$̶(̶"̶#̶c̶N̶o̶t̶e̶"̶)̶.̶o̶n̶(̶"̶c̶l̶i̶c̶k̶"̶)̶;̶
+$("#cNote").on("click", makeANote);
 ```
 
 To elaborate, we are:
 
-1. Selecting the chop3 button, using jQuery and its syntax (i.e., notation) for recognizing IDs, and specifying the `chop3` id.
+1. Selecting the C note button, using jQuery and its syntax (i.e., notation) for recognizing IDs, and specifying the `cNote` id.
 2. Calling the method associated with the button called `.on()`, which is able to bind certain actions with certain events, and thus dictate that the action be called when the event occurs.
 3. Choosing to detect the "click" event.
-4. Passing as an argument the function `makeChop3Sound()`, to tell `.on()` that upon noticing a click, it should execute the function (which in turn plays a sound).
+4. Passing as an argument the function `makeANote()`, to tell `.on()` that upon noticing a click, it should execute the function (which in turn plays a sound).
 
-Now, save your `main.js` file and try clicking on the chop3 sound button! Congratulations! Your browser now makes chop3 sounds.
+Now, save your `main.js` file and try clicking on the C note button! Congratulations! Your browser now makes A note sounds.
 
 ## Part IV: Repetition
 
-Let's do this for the other sounds, in a similar fashion. We'll add more buttons into the `index.html` and end up with the following. **For brevity I've only added four more sounds, but you should add all of them.**
+Let's do this for the other sounds, in a similar fashion. We'll add more buttons into the `index.html` and end up with the following:
 
 ```html
 <!DOCTYPE html>
@@ -258,10 +319,30 @@ Let's do this for the other sounds, in a similar fashion. We'll add more buttons
     <title>Soundboard</title>
   </head>
   <body>
-    <button id="chop3">Chop3</button>
-    <button id="kick4">Kick4</button>
-    <button id="perc1">Perc1</button>
-    <button id="vox9">Vox9</button>
+
+    <div>
+      <div class="row">
+        <button id="snare3">Snare</button>
+        <button id="csNote">C#</button>
+        <button id="dsNote">D#</button>
+        <button id="fill1">fill1</button>
+        <button id="fsNote">F#</button>
+        <button id="gsNote">G#</button>
+        <button id="asNote">A#</button>
+        <button id="kick4">Kick4</button>
+      </div>
+
+      <div class="row">
+        <button id="cNote">C</button>
+        <button id="dNote">D</button>
+        <button id="eNote">E</button>
+        <button id="fNote">F</button>
+        <button id="gNote">G</button>
+        <button id="aNote">A</button>
+        <button id="bNote">B</button>
+        <button id="snare4">Snare</button>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="main.js"></script>
@@ -272,9 +353,64 @@ Let's do this for the other sounds, in a similar fashion. We'll add more buttons
 Add the corresponding functions and event handlers for the other sounds in `main.js`. The final version of your `main.js` should look like this:
 
 ```js
-function makeChop3Sound() {
-  var chop3Sound = new Audio("chop3.mp3");
-  chop3Sound.play();
+function makeCNote() {
+  var cNote = new Audio("c1.mp3");
+  cNote.play();
+}
+
+function makeDNote() {
+  var dNote = new Audio("d1.mp3");
+  dNote.play();
+}
+
+function makeENote() {
+  var eNote = new Audio("e1.mp3");
+  eNote.play();
+}
+
+function makeFNote() {
+  var fNote = new Audio("f1.mp3");
+  fNote.play();
+}
+
+function makeGNote() {
+  var gNote = new Audio("g1.mp3");
+  gNote.play();
+}
+
+function makeANote() {
+  var cNote = new Audio("a1.mp3");
+  cNote.play();
+}
+
+function makeBNote() {
+  var bNote = new Audio("b1.mp3");
+  bNote.play();
+}
+
+function makeCSharpNote() {
+  var cSharpNote = new Audio("c1s.mp3");
+  cSharpNote.play();
+}
+
+function makeDSharpNote() {
+  var dSharpNote = new Audio("d1s.mp3");
+  dSharpNote.play();
+}
+
+function makeFSharpNote() {
+  var fSharpNote = new Audio("f1s.mp3");
+  fSharpNote.play();
+}
+
+function makeGSharpNote() {
+  var gSharpNote = new Audio("g1s.mp3");
+  gSharpNote.play();
+}
+
+function makeASharpNote() {
+  var aSharpNote = new Audio("a1s.mp3");
+  aSharpNote.play();
 }
 
 function makeKick4Sound() {
@@ -282,59 +418,46 @@ function makeKick4Sound() {
   kick4Sound.play();
 }
 
-function makePerc1Sound() {
-  var perc1Sound = new Audio("perc1.mp3");
-  perc1Sound.play();
+function makeFill1Sound() {
+  var fill1Sound = new Audio("fill1.mp3");
+  fill1Sound.play();
 }
 
-function makeVox9Sound() {
-  var vox9Sound = new Audio("vox9.mp3");
-  vox9Sound.play();
+function makeSnare3Sound() {
+  var snare3Sound = new Audio("snare3.mp3");
+  snare3Sound.play();
 }
 
-$("#chop3").on("click", makeChop3Sound);
+function makeSnare4Sound() {
+  var snare4Sound = new Audio("snare4.mp3");
+  snare4Sound.play();
+}
+
+$("#cNote").on("click", makeCNote);
+$("#dNote").on("click", makeDNote);
+$("#eNote").on("click", makeENote);
+$("#fNote").on("click", makeFNote);
+$("#gNote").on("click", makeGNote);
+$("#aNote").on("click", makeANote);
+$("#bNote").on("click", makeBNote);
+$("#csNote").on("click", makeCSharpNote);
+$("#dsNote").on("click", makeDSharpNote);
+$("#fsNote").on("click", makeFSharpNote);
+$("#gsNote").on("click", makeGSharpNote);
+$("#asNote").on("click", makeASharpNote);
 $("#kick4").on("click", makeKick4Sound);
-$("#perc1").on("click", makePerc1Sound);
-$("#vox9").on("click", makeVox9Sound);
+$("#fill1").on("click", makeFill1Sound);
+$("#snare3").on("click", makeSnare3Sound);
+$("#snare4").on("click", makeSnare4Sound);
 ```
 
 Upon saving and refreshing, you should be able to play each sound by clicking the corresponding button.
 
 ## Part V: Rejoicing
 
-Yay! It works! Sounds are happening! See if you can create some fresh beats of your own. Add more buttons, play music together with a friend's soundboard, change the sounds.
+Yay! It works! Sounds are happening! See if you can create some fresh beats of your own. Add more buttons, play music together with a friend's soundboard, change the sounds, do it up!
 
-## Part VI: Refactoring
-
-So it looks like we've written a lot of code that looks the same. If we wanted, we could trim it down to be more concise.
-
-If I told you that the following code does the same thing as what you currently have in `main.js`, would you believe me?
-
-```js
-function playSound(event) {
-  var id = $(event.target).attr("id");
-  var sound = new Audio(id+".mp3");
-  sound.play();
-}
-
-$("button").on("click",playSound);
-```
-
-We can identify the similarities and differences in our current functions, and separate the similarities, and pass the differences as arguments. In doing this, we simplify the functions we've written into one function.
-
-I've created a new function, `playSound()` that takes an argument `event`, which in our case will be the click event, and uses the event to figure out which sound it should play. It can do this by examining which HTML element felt the event, and getting the ID of that element. IDs can be pretty handy.
-
-In more detail, `event.target` refers to the HTML element that the event happened on, and `.attr()` requests an attribute on this element. Passing in the string `"id"` allows us to request the ID attribute. We then store this in a variable we declared with `var id`.
-
-Then, contingent on the fact that you named your IDs after the names of the mp3 files, we can pick the appropriate mp3 file to play, based on what ID the clicked element had.
-
-And we play the sound as usual.
-
-Give this a test by saving your `main.js`. Your Live Preview should reload, and you'll be able to verify that the refactoring worked.
-
-Remember, simplify only after everything works.
-
-## Part VII: Upgrading
+## Part VI: Upgrading
 
 Do you find it a bit difficult to have sounds overlay each other, because clicking from button to button is a bit difficult? We can solve this in a number of ways, all of which I encourage you to experiment with to see which works best for you. We could:
 
@@ -342,7 +465,7 @@ Do you find it a bit difficult to have sounds overlay each other, because clicki
 - Make the buttons larger
 - Instead of clicking, use keystrokes to make sounds
 
-We'll be going over how to attach keys on the keyboard to the sounds.
+We'll be going over the last option: how to attach keys on the keyboard to the sounds.
 
 ### Detecting Keyboard Inputs on the Page
 
@@ -359,7 +482,7 @@ Now that we have set up the page to react when a key is pressed, we just need to
 We will declare this function and name it `delegateKeypress` and pass it as an argument to the method `.keypress()` like so:
 
 ```js
---$(document).keypress();--
+$̶(̶d̶o̶c̶u̶m̶e̶n̶t̶)̶.̶k̶e̶y̶p̶r̶e̶s̶s̶(̶)̶;̶
 $(document).keypress(delegateKeypress);
 
 function delegateKeypress(event) {
@@ -367,41 +490,41 @@ function delegateKeypress(event) {
 }
 ```
 
-Much like our refactored function `playSound()`, which takes an event as an argument, `delegateKeypress()` also must take an event as an argument. After all, that is where the information about the event is contained. Information that we need, such as which key was pressed.
+`delegateKeypress()` takes an event as an argument, since that is where the information about the event is contained. Information that we need, such as which key was pressed.
 
 ### Attaching Keyboard Inputs to Sounds
 
 Speaking of that, we need to assign keys to our sounds, so let's:
 
-1. Choose which keys we would like to use. Perhaps you will choose based on the letter and the name of the sound. I will just use keys on the home row: `d`, `f`, `j`, and `k`.
-2. Find the `keyCode`s for your keys. We'll need this in order to write JavaScript to match up the keys with the sounds. You can find `keyCode`s using [this handy chart](). My `keyCode`s are `100`, `102`, `106`, and `107`, respectively.
+1. For our 2x8 grid, we'll be using the keys `q`, `w`, `e`, `r`, `a`, `s`, `d`, `f`, `u`, `i`, `o`, `p`, `j`, `k`, `l`, and `;`.
+2. Find the key codes for your keys. We'll need this in order to write JavaScript to match up the keys with the sounds. You can find key codes by putting the line `console.log(event.keyCode);` in your `delegateKeypress` function and looking at the console in the Inspector.
 
 Now that we've gotten the information for the keys, we'll pair each with a sound by writing a conditional that checks if the key pressed has a `keyCode` that corresponds to a sound. We'll add this in our `delegateKeypress()` function:
 
 ```js
-if (event.keyCode == 100) {
+if (event.keyCode == 97) {
 
 }
 ```
 
-Here we are saying, if the event's `keyCode` is equal to 100, then do something (we haven't yet specified what). `event.keyCode` is an attribute of the event, and it contains the value of the `keyCode` of the key that was pressed.
+Here we are saying, if the event's `keyCode` is equal to 97 (that's the key code for the `a` key), then do something (we haven't yet specified what). `event.keyCode` is an attribute of the event, and it contains the value of the key code of the key that was pressed.
 
-So, if the `keyCode` is indeed 100, I would like the chop3 sound to be played. Fortunately, we already know how to play sounds:
+So, if the key code is indeed 97, I would like a C note to be played. Fortunately, we already know how to play sounds:
 
 ```js
 function delegateKeypress(event) {
-  if (event.keyCode == 100) {
-    var chop3Sound = new Audio("chop3.mp3");
-    chop3Sound.play();
+  if (event.keyCode == 97) {
+    var cNote = new Audio("c1.mp3");
+    cNote.play();
   }
 }
 ```
 
 Simple enough, we just reuse our code from earlier.
 
-But wait, we already have preexisting code to play the chop3 sound. It's in `playSound()`, and chop3 will be played when the chop3 button is clicked (à la `$("button").on("click",playSound);`)! If only we could somehow use that for the chop3 button.
+But wait, we already have preexisting code to play the C note. It's in `playSound()`, and the C note will be played when the C note button is clicked (à la `$("button").on("click",playSound);`)! If only we could somehow use that for the C note button.
 
-Well, we can. Everything is set up for chop3 button to play a sound once it gets clicked, so why don't we just click it...with code?
+Well, we can. Everything is set up for the C note button to play a sound once it gets clicked, so why don't we just click it...with code?
 
 What? We can click things using code? Of course. A click is just an event. We can trigger events with JavaScript by doing just that. jQuery offers a method called `.trigger()` which takes, you guessed it, a type of event.
 
@@ -409,40 +532,94 @@ That said, we can now replace our repetitive code like so:
 
 ```js
 function delegateKeypress(event) {
-  if (event.keyCode == 100) {
-    --var chop3Sound = new Audio("chop3.mp3");--
-    --chop3Sound.play();--
-    $("#chop3").trigger("click");
+  if (event.keyCode == 97) {
+    v̶a̶r̶ ̶c̶N̶o̶t̶e̶ ̶=̶ ̶n̶e̶w̶ ̶A̶u̶d̶i̶o̶(̶"̶c̶1̶.̶m̶p̶3̶"̶)̶;̶
+    c̶N̶o̶t̶e̶.̶p̶l̶a̶y̶(̶)̶;̶
+    $("#cNote").trigger("click");
   }
 }
 ```
 
-And just like that, we have leveraged jQuery to select the chop3 button (`$("#chop3")`) and trigger a click event on it (`.trigger("click")`).
+And just like that, we have leveraged jQuery to select the C note button (`$("#cNote")`) and trigger a click event on it (`.trigger("click")`).
 
 What do you think happens next? Once the click event is triggered on the button, the button detects the click and responds by calling `playSound()`, thanks to the previously added line `$("button").on("click",playSound);`.
 
 We can complete our function by creating similar conditionals for the other keys and sounds:
 
 ```js
+$(document).keypress(delegateKeypress);
+
 function delegateKeypress(event) {
-  if (event.keyCode == 100) {
-    $("#chop3").trigger("click");
-  }
-  if (event.keyCode == 102) {
-    $("#kick4").trigger("click");
-  }
-  if (event.keyCode == 106) {
-    $("#perc1").trigger("click");
-  }
-  if (event.keyCode == 107) {
-    $("#vox9").trigger("click");
-  }
+    console.log(event.keyCode);
+    if (event.keyCode == 113) {
+        $("#snare3").trigger("click");
+    }
+    
+    if (event.keyCode == 119) {
+        $("#csNote").trigger("click");
+    }
+    
+    if (event.keyCode == 101) {
+        $("#dsNote").trigger("click");
+    }
+    
+    if (event.keyCode == 114) {
+        $("#fill1").trigger("click");
+    }
+    
+    if (event.keyCode == 117) {
+        $("#fsNote").trigger("click");
+    }
+    
+    if (event.keyCode == 105) {
+        $("#gsNote").trigger("click");
+    }
+    
+    if (event.keyCode == 111) {
+        $("#asNote").trigger("click");
+    }
+    
+    if (event.keyCode == 112) {
+        $("#kick4").trigger("click");
+    }
+    
+    if (event.keyCode == 97) {
+        $("#cNote").trigger("click");
+    }
+    
+    if (event.keyCode == 115) {
+        $("#dNote").trigger("click");
+    }
+    
+    if (event.keyCode == 100) {
+        $("#eNote").trigger("click");
+    }
+
+    if (event.keyCode == 102) {
+        $("#fNote").trigger("click");
+    }
+    
+    if (event.keyCode == 106) {
+        $("#gNote").trigger("click");
+    }
+    
+    if (event.keyCode == 107) {
+        $("#aNote").trigger("click");
+    }
+    
+    if (event.keyCode == 108) {
+        $("#bNote").trigger("click");
+    }
+        
+    if (event.keyCode == 59) {
+        $("#snare4").trigger("click");
+    }
 }
 ```
 
 And that's it! Save your `main.js` and test out your improved soundboard!
 
-## Part VIII: Publishing and Sharing
+## Part VII: Publishing and Sharing
 
 Now it's time to save your work with git and publish your code to GitHub and your personal website. Make sure you've saved all of your files on Cloud9!
 
@@ -456,7 +633,7 @@ Enter your username and password, and you should be all set. This should update 
 
 Post on [`#shipit`](https://starthackclub.slack.com/messages/shipit) with the URL, so everyone can see your amazing creation and create their own music!
 
-## Part IX: Hacking
+## Part VIII: Hacking
 
 - add colors to buttons so you know when they are being used
 - customize with more sounds (just add more buttons and sounds)
