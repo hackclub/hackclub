@@ -2,6 +2,8 @@
 
 Short link to this workshop: [https://workshops.hackclub.com/soundboard](https://workshops.hackclub.com/soundboard)
 
+[Demo](http://prophetorpheus.github.io/soundboard/)
+
 ---
 
 Today we're going to create our very own soundboard. You may have seen musicians such as Little Dragon, [Shawn Wasabi](https://www.youtube.com/watch?v=qAeybdD5UoQ), and many other musicians, using such things to improvise fresh beats at live performances. We can simulate this very easily with basic HTML and JavaScript.
