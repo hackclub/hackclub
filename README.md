@@ -159,7 +159,7 @@ We'll be providing a strict structure for this, so that these first-time leaders
 
 We'll also be doing the Personal Website workshop, which will get members set up on their GitHub and Cloud9 accounts.
 
-## Meetings 2-3 - "Coding Is..."
+## Meetings 2 - 3 - "Coding Is..."
 
 Coding is...
 
@@ -175,7 +175,7 @@ More inspirational
 
 They do workshops that walk members through the process of building something cool. They demo what they've built so far in meeting 3.
 
-## Meetings 4-5 - "Deep Dive #1"
+## Meetings 4 - 5 - "Deep Dive #1"
 
 In depth on how to do a concept.
 
@@ -189,7 +189,7 @@ This'll be the first Hack Day. Members will be challenged to build something of 
 
 Meeting 6 will be the first Hack Day. Meeting 7 will pick up where 4 left off and will conclude in demos. Ideally pizza or something similar will be at meeting 7.
 
-## Meetings 8-10 - "Deep Dive #2"
+## Meetings 8 - 10 - "Deep Dive #2"
 
 Different, more complex topic, now covered in two weeks, since the first deep dive will have gone over a lot of basics using one concept.
 
