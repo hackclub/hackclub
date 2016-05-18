@@ -663,7 +663,7 @@ function draw() {
 }
 ```
 
-![](img/sample2.png)
+![](img/sample2.gif)
 
 ## Part VII: Hacking
 
@@ -676,6 +676,7 @@ Ideas:
 - change number of lines / spacing of lines
 - change shape of ellipses (what about horizontally fat ovals? vertically tall ovals?)
 - change placement or spacing of ellipses
+  > ![](img/circle_columns.png)
 - change shapes (p5.js offers easy functions to make triangles, rectangles, and more)
 - p5.js knows where your mouse [x](https://p5js.org/reference/#/p5/mouseX) and [y](https://p5js.org/reference/#/p5/mouseY) coordinates are. You could have the seizurific colors only on mouseOver.
 
