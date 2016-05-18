@@ -669,7 +669,7 @@ function draw() {
 
 Ideas:
 
-- try different colors until you find a combination you like (you can do this by changing the start values of rVal, gVal, and bVal. You can also change the incrementing value)
+- try different colors until you find a combination you like (you can do this by changing the start values of `rVal`, `gVal`, and `bVal`. You can also change the incrementing value)
 - try no fill to make cool line art with overlapping circles
   > ![](img/overlapping_circle_pattern.png)
 - change number of circles per line
@@ -678,7 +678,7 @@ Ideas:
 - change placement or spacing of ellipses
   > ![](img/circle_columns.png)
 - change shapes (p5.js offers easy functions to make triangles, rectangles, and more)
-- p5.js knows where your mouse [x](https://p5js.org/reference/#/p5/mouseX) and [y](https://p5js.org/reference/#/p5/mouseY) coordinates are. You could have the seizurific colors only on mouseOver.
+- p5.js knows where your mouse [x](https://p5js.org/reference/#/p5/mouseX) and [y](https://p5js.org/reference/#/p5/mouseY) coordinates are. You could have the seizure-inducing colors only on mouse over.
 
 ![](img/sample4.png)
 
