@@ -164,7 +164,7 @@ function draw() {
 
 So here we've drawn 4.5 circles. Why is there a half-circle? Check out the documentation for [`ellipse()`](http://p5js.org/reference/#p5/ellipse) and see if you can figure it out.
 
-Anyway, we can draw 7.5 more, since we've made room for 12 (when we set NUM_CIRCLES). Keep going until it looks like this:
+Anyway, we can draw 7.5 more, since we've made room for 12 (when we set `NUM_CIRCLES`). Keep going until it looks like this:
 
 ![](img/twelve_circles_middle.png)
 
@@ -499,14 +499,14 @@ And then increment the values at the bottom of the `y` while-loop in `draw()`, b
 ```js
 ...
 
-    rVal = rVal - 1;
-    gVal = gVal + 5;
-    bVal = bVal + 2;
+    rVal = rVal - 2;
+    gVal = gVal + 7;
+    bVal = bVal + 3;
   }
 }
 ```
 
-Here, we're decrementing the R value by 1, incrementing the G value by 5, and the B value by 2.
+Here, we're decrementing the R value by 2, incrementing the G value by 7, and the B value by 3.
 
 You can also try adding those three lines within the inner for-loop, which will modify the colors within each row.
 
@@ -554,11 +554,27 @@ Congratulations! Your pattern is now live on `USERNAME.github.io/geometric_patte
 
 WARNING: THIS SECTION IS NOT RECOMMENDED FOR THOSE WITH A HISTORY OF EPILEPSY. Even if you have not been previously diagnosed with epilepsy, you should be careful, and immediately close the window and consult a doctor if you experience any of the following symptoms: lightheadedness, altered vision, eye or face twitching, jerking or shaking of arms or legs, disorientation, confusion, or momentary loss of awareness.
 
+Let's first add the line to change the `draw()` function from running 60 times a second to 5 times a second. We can do this by using the `frameRate()` function in `setup()`:
+
+```js
+function setup() {
+  createCanvas(480,600);
+
+  frameRate(5);
+
+  circleDiameter = width/NUM_CIRCLES;
+  circleRadius = circleDiameter/2;
+}
+```
+
 That said, we can create a cool scrolling color effect by manipulating our colors to cycle. Right now we are resetting our initial RGB values each time `draw()` runs. But if we didn't reset every time, we could have rotating colors.
 
 ```js
 function setup() {
   createCanvas(480,600);
+
+  frameRate(5);
+
   circleDiameter = width/NUM_CIRCLES;
   circleRadius = circleDiameter/2;
   rVal = 255;
@@ -581,15 +597,15 @@ We can have color progression while keeping the values below 255 by [modding](ht
 Let's change our incrementation code to incorporate this:
 
 ```js
-rVal = (rVal - 1)%256;
-gVal = (gVal + 5)%256;
-bVal = (bVal + 2)%256;
+rVal = (rVal - 2)%256;
+gVal = (gVal + 7)%256;
+bVal = (bVal + 3)%256;
 ```
 
-JavaScript `%` operator does something stupid, in that it mods negative numbers incorrectly. We can get around this by recognizing that subtracting 1 and modding is the same as adding 255 and modding.
+JavaScript `%` operator does something stupid, in that it mods negative numbers incorrectly. We can get around this by recognizing that subtracting 2 and modding is the same as adding 254 and modding.
 
 ```js
-rVal = (rVal + 255)%256;
+rVal = (rVal + 254)%256;
 ```
 
 Save and refresh and be warned that it might be jarring.
@@ -608,6 +624,9 @@ var bVal;
 
 function setup() {
   createCanvas(480,600);
+
+  frameRate(5);
+
   circleDiameter = width/NUM_CIRCLES;
   circleRadius = circleDiameter/2;
   rVal = 255;
@@ -637,9 +656,9 @@ function draw() {
     y = y - circleRadius;
     alternatingRow = !alternatingRow;
 
-    rVal = (rVal + 255)%256;
-    gVal = (gVal + 5)%256;
-    bVal = (bVal + 2)%256;
+    rVal = (rVal + 254)%256;
+    gVal = (gVal + 7)%256;
+    bVal = (bVal + 3)%256;
   }
 }
 ```
@@ -651,7 +670,7 @@ function draw() {
 Ideas:
 
 - try different colors until you find a combination you like (you can do this by changing the start values of rVal, gVal, and bVal. You can also change the incrementing value)
-- try no fill to make cool lineart with overlapping circles
+- try no fill to make cool line art with overlapping circles
   > ![](img/overlapping_circle_pattern.png)
 - change number of circles per line
 - change number of lines / spacing of lines
