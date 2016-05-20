@@ -117,7 +117,7 @@ Lastly, we'll add a class to this input, so that we can reference it later in Ja
 
 #### Adding Field for Content
 
-Next, we'll do a similar thing to allow the user to input content into their note. TODO rephrase
+Next, we'll do a similar thing to allow the user to input more text in their note. Instead of using input, which as you can see is a single-line input, we'll use a textarea element, which visibly allows for multiple lines. TODO fact-check that it "visibly allows"? or does input restrict new-lines. i feel like it does
 
 Adding a textarea element inside our `div` is easy:
 
@@ -249,6 +249,8 @@ To display the notes saved in `localStorage`, we'll be using `localStorage.getIt
 Since this is our first note, we currently don't have any item in local storage. For this reason, we'll be initializing the notes object in JavaScript.
 
 TODO explanation of objects?!?!?!?
+
+Objects are like tables, in which keys point to values.
 
 Type this inside `main.js`:
 
@@ -595,6 +597,10 @@ It's a little annoying that we have to scroll all the way down to check if our n
 
 TODO can i get some eyes on how to organize this section?
 
+- we can't sort objects. let's turn our object into an array of keys
+- how do we sort an array
+- write the sort function
+
 The `.sort()` method is interesting. It orders two things at a time, using a comparison function. If the comparison function returns a 0, then `.sort()` understands that the two things are equivalent. If the comparison function returns a negative number, then `.sort()` puts the first thing before the second thing. If the comparison function returns a positive number, `.sort()` puts the second thing before the first thing.
 
 In our case, we would like to reverse-sort, so we'll output a positive number if we want the first thing placed before the second thing, and a negative number if we want the second thing placed before the first thing.
@@ -663,7 +669,23 @@ Save and refresh, and you should see all of your notes reverse-sorted!
 
 If you've tried to write paragraphs by pressing Enter in your notes, you may have noticed that they do not translate to line-breaks when displayed. However, if you look in local storage, you'll see that the line-breaks are there (they are represented by `\n`). We can replace `\n` with the HTML element [`<br>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br), which creates a line-break.
 
-TODO
+To replace something in JavaScript, we can use a method called `.replace()`. Modify the line `var noteContent = note.content;` within the for-loop in **`displayNotes()`** like so:
+
+```js
+var noteContent = note.content.replace(/\n/g,"<br>");
+```
+
+`.replace()` takes two arguments (as you would expect). The first is the text you would like to replace, and the second is the text you would like to replace it with.
+
+In this case, we are replacing any instances of `\n` with the characters `<br>`. What about the `/` and `/g`? Well, `.replace()` only replaces the first occurrence of the thing you want to replace. TODO look up a better way that doesn't involve reg exp.
+
+Let's save and refresh to see if it worked.
+
+Great, looks like we are successfully replacing new line characters with `<br>`, but not with the result we want. The issue is that we are adding `noteContent` as _text_ to the `noteContentDisplay` in the line `var noteContentDisplay = $("<p>").addClass("note-content").text(noteContent);`. What we want to do instead is add it as _HTML_, since we have the `<br>` tags that we want to turn into horizontal breaks. We'll modify the line so that it uses the jQuery method `.html()` instead of `.text()`:
+
+```js
+var noteContentDisplay = $("<p>").addClass("note-content").html(noteContent);
+```
 
 ## Part VI: Styling the Page
 
