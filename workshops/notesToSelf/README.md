@@ -218,11 +218,11 @@ Open up `styles.css` and type in the following:
 
 It's a good thing we added a class to our new note form, because now we can reference it using the selector `.new-note`! The asterisk means "everything," so here we are saying this rule applies to "everything that is within `.new-note`."
 
-The display attribute TODO
+The [display attribute](TODO) specifies how elements are laid out on the page.
 
 ## Part IV: The JavaScript File
 
-We're saving our notes in our browser's localStorage, which we can access via JavaScript. TODO what the fuck does this mean
+We're saving our notes in our browser's local storage, which is exactly what it sounds like -- storage space within your browser. We can view and change what's in our browser's local storage with JavaScript.
 
 Open up your live preview in the external view, by clicking the icon of a box with an arrow.
 
@@ -246,7 +246,7 @@ There should be an entry below that that says `https://preview.c9users.io`. This
 
 To display the notes saved in `localStorage`, we'll be using `localStorage.getItem()`. The item we'll be getting is called `notes`.
 
-Since this is our first note, we currently don't have any item in localStorage. For this reason, we'll be initializing the notes object in JavaScript.
+Since this is our first note, we currently don't have any item in local storage. For this reason, we'll be initializing the notes object in JavaScript.
 
 TODO explanation of objects?!?!?!?
 
@@ -258,7 +258,7 @@ localStorage.setItem("notes", {});
 
 If we save and look at our local storage, we see `notes` paired with something strange -- `[object object]`.
 
-The gotcha about localStorage is that it saves everything in strings, meaning that its methods only takes strings. This is a little frustrating, but easily solved, using a function called `JSON.stringify()`. We can convert things that are not strings to properly formatted JSON strings.
+The gotcha about local storage is that it saves everything in strings, meaning that its methods only takes strings. This is a little frustrating, but easily solved, using a function called `JSON.stringify()`. We can convert things that are not strings to properly formatted JSON strings.
 
 Let's change the previous statement to this:
 
