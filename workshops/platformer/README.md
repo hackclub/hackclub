@@ -1,5 +1,9 @@
 # Platformer
 
+Short link to this workshop: [https://workshops.hackclub.com/platformer/](https://workshops.hackclub.com/platformer/)
+
+---
+
 ![](img/TODO.png)
 
 In this workshop we'll continue our foray into game development in p5.js by creating a simple platformer.
@@ -26,7 +30,7 @@ In this workshop we'll continue our foray into game development in p5.js by crea
 
 ### Priming the HTML File
 
-- basic template
+- Type this basic template into the `index.html` file
 
 ```html
 <!DOCTYPE html>
@@ -84,7 +88,7 @@ background(150, 200, 250);
 
 We're going to be making a scrolling floor, so we need a series of sprites to illustrate the ground.
 
-p5.play has a nice way to keep these organized, with `Group`. We can declare the variable at the top and define a new Group like so:
+p5.play has a nice way to keep these organized, with [`Group`](TODO). We can declare the variable at the top and define a new Group like so:
 
 ```js
 var groundSprites;
@@ -125,6 +129,9 @@ function setup() {
 
 TODO WOW SO MUCH TODO break this upppp
 - And now we'll populate the empty `Group` we created, with groundSprites. TODO explain for loop
+
+  We can use a for-loop to keep track of how many times we want to add a new ground sprite to our Group.
+
   For-loop works similar to while-loop, which we've looked at previously. TODO
 
 ```js
