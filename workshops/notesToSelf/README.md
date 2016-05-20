@@ -1,6 +1,6 @@
 # Notes to Self
 
-Short Link: workshops.hackclub.com/notesToSelf/
+Short Link: [https://workshops.hackclub.com/notesToSelf/](https://workshops.hackclub.com/notesToSelf/)
 
 ---
 
@@ -21,6 +21,19 @@ They will be cleared if you clear `localStorage`. More on that later.
 - Create a new file in `notesToSelf` named `index.html`
 - Create a new file in `notesToSelf` named `main.js`
 - Create a new file in `notesToSelf` named `styles.css`
+
+In `index.htm`, add the base template, and a title "Notes to Self"
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notes to Self</title>
+  </head>
+  <body>
+  </body>
+</html>
+```
 
 ### Adding Our Dependencies
 
@@ -44,7 +57,7 @@ They will be cleared if you clear `localStorage`. More on that later.
 <script src="main.js"></script>
 ```
 
-## Part II: Constructing the HTML (TODO please change this title)
+## Part II: Setting up the HTML Structure
 
 We'll be displaying both a form to create a new note, and the previously created notes, on this page.
 
@@ -240,7 +253,7 @@ TODO explanation of objects?!?!?!?
 Type this inside `main.js`:
 
 ```js
-localStorage.setItem("notes",{});
+localStorage.setItem("notes", {});
 ```
 
 If we save and look at our local storage, we see `notes` paired with something strange -- `[object object]`.
@@ -255,23 +268,27 @@ localStorage.setItem("notes", JSON.stringify({}));
 
 Now if we look in local storage, we'll see `{}` instead of `[object Object]`. This is what we want.
 
-ok somehow i need to say this
+We'll also need to wrap the previous line in a conditional. We'd only want to set `notes` in local storage as an empty object (`{}`) if there are no existing notes (because we wouldn't want to overwrite what we currently have).
+
+So we'll say, if getting `notes` from local storage doesn't return a [truthy value](TODO), then we'll set `notes` as the string representation of an empty object.
+
+After making sure local storage has an item called `notes`, we'll reach into local storage and get that item, and store that into a variable called `myNotes`.
 
 ```js
 if (!localStorage.getItem("notes")) {
-    localStorage.setItem("notes", JSON.stringify({})); // NOTE: localStorage stores everything as strings
+    localStorage.setItem("notes", JSON.stringify({}));
 }
 
-var storedNotes = JSON.parse(localStorage.getItem("notes"));
+var myNotes = JSON.parse(localStorage.getItem("notes"));
 ```
 
-TODO this section might need to be reorganized.
+Although local storage stores data as strings, it's much easier for us to use the data if it's an object, so we use `JSON.parse()` to reverse the transformation process of `JSON.stringify()`.
 
 ### Saving a New Note
 
 Let's start populating our local storage `notes` item by creating a function to save a new note, and attaching that function to the click event of the "Post Note" button.
 
-We'll add these lines after accessing local storage.
+We'll add these lines directly after all the previous code within `main.js`:
 
 ```js
 function postNewNote() {
@@ -280,33 +297,33 @@ function postNewNote() {
 $(".post-new-note").on("click", postNewNote);
 ```
 
-Our `postNewnote()` function should:
+Our `postNewNote()` function should:
 
 - grab the note's title and body from the HTML form
 - get the current timestamp
 - store these three values in an object
-- store that object in `storedNotes`
+- store that object in `myNotes`
 - updating `notes` in local storage
 
-#### Grab Note Info from the HTML elements
+#### Grabbing Note Info from the HTML elements
 
-We can access the elements using jQuery. Type the following lines inside `postNewNote()`:
+We can access the elements using jQuery. Type the following lines inside `postNewNote()` (within the `{` and `}`):
 
 ```js
 var titleInput = $(".new-note-title");
 var contentInput = $(".new-note-content");
 ```
 
-This stores references to the input elements for title and content, respectively. Next, we'll actually get the values, and store them beneath the two lines:
+This stores references to the input elements for title and content, respectively. Next, we'll actually get the values, and store them in variables. Type this directly after the previous two lines:
 
 ```js
 var noteTitle = titleInput.val();
 var noteContent = contentInput.val();
 ```
 
-#### Get the Current Time and Date
+#### Getting the Current Time and Date
 
-Now, we'll store the date and time that we posted the note. JavaScript provides an easy way to get the current date and time, which we can use in our `postNewNote()` function. Add the following line to the bottom of the function:
+Now, we'll store the date and time that we posted the note. JavaScript provides an easy way to get the current date and time, which we can use in our `postNewNote()` function. Add this after the previous lines:
 
 ```js
 var noteDate = new Date();
@@ -326,7 +343,7 @@ We'll add this line to the bottom of `postNewNote()`:
 var note = {};
 ```
 
-And now we'll load it up with the note's title and content, with these subsequent lines:
+And now we'll store the title and content within our newly created `note` object, by typing this next:
 
 ```js
 note.title = noteTitle;
@@ -335,28 +352,28 @@ note.content = noteContent;
 
 Our `note` object now contains two properties: `title` and `content`.
 
-#### Adding the Note to `storedNotes`
+#### Adding the Note to `myNotes`
 
-We'll add the `note` object to `storedNotes`, and use our `noteDate` as a key. This means that the note will be accessible if we look up the `noteDate` in `storedNotes`.
+We'll add the `note` object to `myNotes`, and use our `noteDate` as a key. This means that the note will be accessible if we look up the `noteDate` in `myNotes`.
 
 Let's add this to the bottom of the `postNewNote()` function.
 
 ```js
-storedNotes[noteDate] = note;
+myNotes[noteDate] = note;
 ```
 
 #### Updating `localStorage`
 
-The last thing we need to do is update local storage, by using the method `.setItem()` to save the newly modified `storedNotes`.
+The last thing we need to do is update local storage, by using the method `.setItem()` to save the newly modified `myNotes`. Type this beneath the previous line:
 
 ```js
-localStorage.setItem("notes",storedNotes);
+localStorage.setItem("notes", myNotes);
 ```
 
-But wait, `storedNotes` is an object, and we've already discussed that local storage only saves strings. Let's once again use `JSON.stringify()` to help.
+But wait, `myNotes` is an object, and we've already discussed that local storage only saves strings. Let's once again use `JSON.stringify()` to help. Change the previous line to include a call to `JSON.stringify()`:
 
 ```js
-localStorage.setItem("notes",JSON.stringify(storedNotes));
+localStorage.setItem("notes", JSON.stringify(myNotes));
 ```
 
 That's the end of `postNewNote()`. Save and refresh your external live preview, and open up local storage in the Inspector.
@@ -367,7 +384,7 @@ Now we just need to display it on our page.
 
 ### Displaying the Existing Notes
 
-We can display `storedNotes` by using jQuery to create a bunch of HTML elements. Let's create a function to do this, underneath the `postNewNote()` function:
+We can display `myNotes` by using jQuery to create a bunch of HTML elements. Let's create a function to do this, underneath the `postNewNote()` function:
 
 ```js
 function displayNotes() {
@@ -382,23 +399,23 @@ What should our function accomplish?
 - Then, we must enclose these three fields into an HTML element of its own, to organize data associated with each note in its own box(?TODO)
 - Lastly, we must add this element to the `div` that we have reserved for old notes in the body of the HTML.
 
-#### Extracting Note Info from `storedNotes`
+#### Extracting Note Info from `myNotes`
 
-For each note contained in `storedNotes`, we must grab the title, content, and date associated with it. We can do this using a for-loop:
+For each note contained in `myNotes`, we must grab the title, content, and date associated with it. We can do this using a for-loop:
 
 Previously we've only used for-loops in conjunction with arrays, but it's also possible to cycle through the properties of an object. The syntax changes slightly -- instead of having three statements that count the indices of array elements, we use `in` to get to all the object properties.
 
 Within our function `displayNotes()`, type:
 
 ```js
-for (var i in storedNotes) {
+for (var i in myNotes) {
 }
 ```
 
 We know that each property (`i`) is just the date that the note was created.
 
 ```js
-for (var i in storedNotes) {
+for (var i in myNotes) {
   var noteDate = i;
 }
 ```
@@ -406,20 +423,20 @@ for (var i in storedNotes) {
 Thus, inside the for-loop, we can now access each note by looking it up by the property stored in `i`:
 
 ```js
-for (var i in storedNotes) {
+for (var i in myNotes) {
   var notedate = i;
-  var note = storedNotes[i];
+  var note = myNotes[i];
 }
 ```
 
 Now that we've stored the note in the variable `note`, we can access the title and content.
 
 ```js
-for (var i in storedNotes) {
+for (var i in myNotes) {
   var notedate = i;
-  var note = storedNotes[i];
-  noteTitle = note.title;
-  noteContent = note.content;
+  var note = myNotes[i];
+  var noteTitle = note.title;
+  var noteContent = note.content;
 }
 ```
 
@@ -432,11 +449,11 @@ Now it's time to create HTML elements to house each piece of information we've r
 First, we'll create an element to contain the whole note. Think of this as the box that contains smaller boxes.
 
 ```js
-for (var i in storedNotes) {
+for (var i in myNotes) {
   var notedate = i;
-  var note = storedNotes[i];
-  noteTitle = note.title;
-  noteContent = note.content;
+  var note = myNotes[i];
+  var noteTitle = note.title;
+  var noteContent = note.content;
 
   var thisNote = $("<div>");
 }
@@ -445,11 +462,11 @@ for (var i in storedNotes) {
 We'll add a class to it, too:
 
 ```js
-for (var i in storedNotes) {
+for (var i in myNotes) {
   var notedate = i;
-  var note = storedNotes[i];
-  noteTitle = note.title;
-  noteContent = note.content;
+  var note = myNotes[i];
+  var noteTitle = note.title;
+  var noteContent = note.content;
 
   var thisNote = $("<div>").addClass("note");
 }
@@ -458,11 +475,11 @@ for (var i in storedNotes) {
 Next, we'll create a `h2` element for the note title, a `p` element for the note date, and a `p` element for the note content. We'll also give them some appropriately named classes:
 
 ```js
-for (var i in storedNotes) {
+for (var i in myNotes) {
   var notedate = i;
-  var note = storedNotes[i];
-  noteTitle = note.title;
-  noteContent = note.content;
+  var note = myNotes[i];
+  var noteTitle = note.title;
+  var noteContent = note.content;
 
   var thisNote = $("<div>").addClass("note");
   var noteTitleDisplay = $("<h2>").addClass("note-title");
@@ -471,21 +488,29 @@ for (var i in storedNotes) {
 }
 ```
 
+Lastly, we'll fill the elements with the corresponding information. jQuery has a nice method to access and set the text within an element, namely [`.text()`](TODO). We'll add a call to `.text()` to each element, passing it the appropriate value:
+
+```js
+var noteTitleDisplay = $("<h2>").addClass("note-title").text(noteTitle);
+var noteDateDisplay = $("<p>").addClass("note-date").text(noteDate);
+var noteContentDisplay = $("<p>").addClass("note-content").text(noteContent);
+```
+
 #### Adding Elements to `index.html`
 
 Now, we'll add each of these new elements to the `thisNote` div.
 
 ```js
-for (var i in storedNotes) {
+for (var i in myNotes) {
   var notedate = i;
-  var note = storedNotes[i];
-  noteTitle = note.title;
-  noteContent = note.content;
+  var note = myNotes[i];
+  var noteTitle = note.title;
+  var noteContent = note.content;
 
   var thisNote = $("<div>").addClass("note");
-  var noteTitleDisplay = $("<h2>").addClass("note-title");
-  var noteDateDisplay = $("<p>").addClass("note-date");
-  var noteContentDisplay = $("<p>").addClass("note-content");
+  var noteTitleDisplay = $("<h2>").addClass("note-title").text(noteTitle);
+  var noteDateDisplay = $("<p>").addClass("note-date").text(noteDate);
+  var noteContentDisplay = $("<p>").addClass("note-content").text(noteContent);
 
   thisNote.append(noteTitleDisplay);
   thisNote.append(noteDateDisplay);
@@ -496,16 +521,16 @@ for (var i in storedNotes) {
 And lastly we'll add `thisNote` to the `old-notes` div that is currently in the body:
 
 ```js
-for (var i in storedNotes) {
+for (var i in myNotes) {
   var notedate = i;
-  var note = storedNotes[i];
-  noteTitle = note.title;
-  noteContent = note.content;
+  var note = myNotes[i];
+  var noteTitle = note.title;
+  var noteContent = note.content;
 
   var thisNote = $("<div>").addClass("note");
-  var noteTitleDisplay = $("<h2>").addClass("note-title");
-  var noteDateDisplay = $("<p>").addClass("note-date");
-  var noteContentDisplay = $("<p>").addClass("note-content");
+  var noteTitleDisplay = $("<h2>").addClass("note-title").text(noteTitle);
+  var noteDateDisplay = $("<p>").addClass("note-date").text(noteDate);
+  var noteContentDisplay = $("<p>").addClass("note-content").text(noteContent);
 
   thisNote.append(noteTitleDisplay);
   thisNote.append(noteDateDisplay);
@@ -513,6 +538,12 @@ for (var i in storedNotes) {
 
   $(".old-notes").append(thisNote);
 }
+```
+
+Our `displayNotes()` function is now complete! All we have to do now is actually call the function. Type this line directly beneath the line that creates `myNotes`:
+
+```js
+displayNotes();
 ```
 
 Tada! If you save and refresh you should be able to see your note on the page. TODO check this
@@ -550,7 +581,7 @@ Whoops, what's this? It seems `displayNotes()` is adding all the notes for a sec
 
 We'll clear it out by setting the HTML to an empty string (`""`), similar to how we cleared out those form fields by setting their values to the empty string.
 
-Add the following line to the beginning of `displayNotes()`, before the rest of the code:
+Add the following line to the top of `displayNotes()`, right after the line `function displayNotes() {`, before the rest of the function body:
 
 ```js
 $(".old-notes").html("");
@@ -562,12 +593,7 @@ There, that should look much better.
 
 It's a little annoying that we have to scroll all the way down to check if our newest note has been added. We should reverse-sort the notes by their date.
 
-Let's make a function to do this, at the bottom of our `main.js`:
-
-```js
-function sortObj() {
-}
-```
+TODO can i get some eyes on how to organize this section?
 
 The `.sort()` method is interesting. It orders two things at a time, using a comparison function. If the comparison function returns a 0, then `.sort()` understands that the two things are equivalent. If the comparison function returns a negative number, then `.sort()` puts the first thing before the second thing. If the comparison function returns a positive number, `.sort()` puts the second thing before the first thing.
 
@@ -589,14 +615,14 @@ function compare(a, b) {
 }
 ```
 
-Though we've written a nice comparison function, it remains that objects are unsorted. If we want to display the notes in `storedNotes` reverse-sorted by date, we'll have to extract the dates themselves and sort that.
+Though we've written a nice comparison function, it remains that objects are unsorted. If we want to display the notes in `myNotes` reverse-sorted by date, we'll have to extract the dates themselves and sort that.
 
-First, we will get the keys (i.e., the date of each post) from the `storedNotes` object and put them in an array.
+First, we will get the keys (i.e., the date of each post) from the `myNotes` object and put them in an array.
 
 At the top of the `displayNotes()` function, type the following:
 
 ```js
-var keys = Object.keys(storedNotes);
+var keys = Object.keys(myNotes);
 ```
 
 `keys` is an array containing the dates of our notes.
@@ -612,7 +638,7 @@ var sortedKeys = keys.sort(compare);
 
 You can use `console.log()` and check the Console to verify this for yourself.
 
-Now we have to modify our for-loop. Instead of cycling through the `storedNotes` object, we're going to move through the `sortedKeys`, one date at a time.
+Now we have to modify our for-loop. Instead of cycling through the `myNotes` object, we're going to move through the `sortedKeys`, one date at a time.
 
 ```js
 var keys = Object.keys(obj);
@@ -623,14 +649,10 @@ for (var index in sortedKeys) {
 
 `index` is the variable that keeps track of the index (or position) of the date we are looking at in `sortedKeys`.
 
-And we'll add the following to make the rest of our code consistent:
+And we'll add one line to make the rest of our code consistent. Type this right under the header of the for-loop (`for (var index in sortedKeys) {`):
 
 ```js
-var keys = Object.keys(obj);
-var sortedKeys = keys.sort(compare);
-
-for (var index in sortedKeys) {
-  var i = sortedKeys[index];
+var i = sortedKeys[index];
 ```
 
 `i` is the date at index `index` within the array `sortedKeys`.
@@ -679,5 +701,6 @@ Be sure to share it to [`#shipit`](https://starthackclub.slack.com/messages/ship
 ## Part VIII: Hacking
 
 - styling
+- access local storage to edit or delete your notes
 - add more fields to each note (suggestions include "what i was eating today")
 - add tags to better organize your notes
