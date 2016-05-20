@@ -2,8 +2,11 @@
 
 ![](img/sample1.png)
 
-[Short link](https://workshops.hackclub.com/geometric_pattern)
-[Link to demo](http://prophetorpheus.github.io/geometric_pattern/)
+Short link to this workshop: [https://workshops.hackclub.com/geometric_pattern](https://workshops.hackclub.com/geometric_pattern)
+
+[Demo](http://prophetorpheus.github.io/geometric_pattern/)
+
+---
 
 We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
 [p5.js](http://p5js.org/) is a library for making stuff in conjunction with the [HTML canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas). p5.js is nothing more than JavaScript code written to make commonly-desired functionality much more accessible. It is primarily used to make visuals and graphics. A great introduction can be found [here](http://taeyoonchoi.com/signing-coders-1/).
@@ -86,7 +89,7 @@ It looks like nothing, because our functions do nothing. Let's add something for
 
 ```js
 function setup() {
-  createCanvas(480,600);
+  createCanvas(480, 600);
 }
 ```
 
@@ -100,7 +103,7 @@ First, let's decide how many circles we want in each row. We can store this numb
 var NUM_CIRCLES = 12;
 
 function setup() {
-  createCanvas(480,600);
+  createCanvas(480, 600);
 }
 
 function draw() {
@@ -114,7 +117,7 @@ var NUM_CIRCLES = 12;
 var circleDiameter;
 
 function setup() {
-  createCanvas(480,600);
+  createCanvas(480, 600);
   circleDiameter = width/NUM_CIRCLES;
 }
 
@@ -225,11 +228,13 @@ Let's put everything so far inside another while-loop. Don't forget to update `e
 function draw() {
   var y = 0;
   while (y <= height) {
+
     var x = 0;
     while (x <= width) {
       ellipse(x, y, circleDiameter, circleDiameter);
       x = x + circleDiameter;
     }
+
     y = y + circleDiameter;
   }
 }
@@ -255,7 +260,7 @@ var circleDiameter;
 var circleRadius;
 
 function setup() {
-  createCanvas(480,600);
+  createCanvas(480, 600);
   circleDiameter = width/NUM_CIRCLES;
   circleRadius = circleDiameter/2;
 }
@@ -263,11 +268,13 @@ function setup() {
 function draw() {
   var y = 0;
   while (y <= height) {
+
     var x = 0;
     while (x <= width) {
       ellipse(x, y, circleDiameter, circleDiameter);
       x = x + circleDiameter;
     }
+
     y = y + circleRadius;
   }
 }
@@ -285,54 +292,59 @@ Let's add one in our `draw()` function:
 
 ```js
 function draw() {
-  var alternatingRow = false;
+  var isAlternateRow = false;
 
   var y = 0;
   while (y <= height) {
+
     var x = 0;
     while (x <= width) {
       ellipse(x, y, circleDiameter, circleDiameter);
       x = x + circleDiameter;
     }
+
     y = y + circleRadius;
   }
 }
 ```
 
-To differentiate between rows, we should add a line to flip the flag at the bottom of the `y` while-loop, underneath the line that flips `alternatingRow`. This is because each pass through the `y` while-loop creates a new row, thus it would be appropriate after the creation of each row to flip the flag.
+To differentiate between rows, we should add a line to flip the flag at the bottom of the `y` while-loop, underneath the line that flips `isAlternateRow`. This is because each pass through the `y` while-loop creates a new row, thus it would be appropriate after the creation of each row to flip the flag.
 
 We'll using the negation operator (`!`) to flip from `false` to `true` and vice versa:
 
 ```js
 function draw() {
-  var alternatingRow = false;
+  var isAlternateRow = false;
 
   var y = 0;
   while (y <= height) {
+
     var x = 0;
     while (x <= width) {
       ellipse(x, y, circleDiameter, circleDiameter);
       x = x + circleDiameter;
     }
+
     y = y + circleRadius;
-    alternatingRow = !alternatingRow;
+    isAlternateRow = !isAlternateRow;
   }
 }
 ```
 
-This sets the flag `alternatingRow` to its opposite. Its initial value was `false`, and after one row, its value will be `true`. Thus, the second row will be an alternating row. After the second row is created, the flag will be flipped back to false, and so on.
+This sets the flag `isAlternateRow` to its opposite. Its initial value was `false`, and after one row, its value will be `true`. Thus, the second row will be an alternating row. After the second row is created, the flag will be flipped back to false, and so on.
 
 Let's create a conditional that will use the flag's value to determine whether or not to shift the row. We'll add this just after we define `x`, inside the `y` while-loop:
 
 ```js
 function draw() {
-  var alternatingRow = false;
+  var isAlternateRow = false;
 
   var y = 0;
   while (y <= height) {
+
     var x = 0;
 
-    if (alternatingRow) {
+    if (isAlternateRow) {
 
     } else {
 
@@ -342,8 +354,9 @@ function draw() {
       ellipse(x, y, circleDiameter, circleDiameter);
       x = x + circleDiameter;
     }
+
     y = y + circleRadius;
-    alternatingRow = !alternatingRow;
+    isAlternateRow = !isAlternateRow;
   }
 }
 ```
@@ -364,7 +377,7 @@ And setting the value _conditionally_:
   while (y <= height) {
     var x;
 
-    if (alternatingRow) {
+    if (isAlternateRow) {
       x = circleRadius;
     } else {
       x = 0;
@@ -378,13 +391,14 @@ Your `draw()` should now look like this:
 
 ```js
 function draw() {
-  var alternatingRow = false;
+  var isAlternateRow = false;
 
   var y = 0;
   while (y <= height) {
+
     var x;
 
-    if (alternatingRow) {
+    if (isAlternateRow) {
       x = circleRadius;
     } else {
       x = 0;
@@ -394,8 +408,9 @@ function draw() {
       ellipse(x, y, circleDiameter, circleDiameter);
       x = x + circleDiameter;
     }
+
     y = y + circleRadius;
-    alternatingRow = !alternatingRow;
+    isAlternateRow = !isAlternateRow;
   }
 }
 ```
@@ -410,13 +425,14 @@ We can fix this by setting the initial value of `y` to the height, and changing 
 
 ```js
 function draw() {
-  var alternatingRow = false;
+  var isAlternateRow = false;
 
   var y = height;
   while (y >= 0) {
+
     var x;
 
-    if (alternatingRow) {
+    if (isAlternateRow) {
       x = circleRadius;
     } else {
       x = 0;
@@ -426,8 +442,9 @@ function draw() {
       ellipse(x, y, circleDiameter, circleDiameter);
       x = x + circleDiameter;
     }
+
     y = y - circleRadius;
-    alternatingRow = !alternatingRow;
+    isAlternateRow = !isAlternateRow;
   }
 }
 ```
@@ -487,7 +504,7 @@ function draw() {
   gVal = 0;
   bVal = 0;
 
-  var alternatingRow = false;
+  var isAlternateRow = false;
 
 ...
 
@@ -558,7 +575,7 @@ Let's first add the line to change the `draw()` function from running 60 times a
 
 ```js
 function setup() {
-  createCanvas(480,600);
+  createCanvas(480, 600);
 
   frameRate(5);
 
@@ -571,19 +588,20 @@ That said, we can create a cool scrolling color effect by manipulating our color
 
 ```js
 function setup() {
-  createCanvas(480,600);
+  createCanvas(480, 600);
 
   frameRate(5);
 
   circleDiameter = width/NUM_CIRCLES;
   circleRadius = circleDiameter/2;
+
   rVal = 255;
   gVal = 0;
   bVal = 0;
 }
 
 function draw() {
-  var alternatingRow = false;
+  var isAlternateRow = false;
 
 ...
 ```
@@ -597,15 +615,15 @@ We can have color progression while keeping the values below 255 by [modding](ht
 Let's change our incrementation code to incorporate this:
 
 ```js
-rVal = (rVal - 2)%256;
-gVal = (gVal + 7)%256;
-bVal = (bVal + 3)%256;
+rVal = (rVal - 2) % 256;
+gVal = (gVal + 7) % 256;
+bVal = (bVal + 3) % 256;
 ```
 
 JavaScript `%` operator does something stupid, in that it mods negative numbers incorrectly. We can get around this by recognizing that subtracting 2 and modding is the same as adding 254 and modding.
 
 ```js
-rVal = (rVal + 254)%256;
+rVal = (rVal + 254) % 256;
 ```
 
 Save and refresh and be warned that it might be jarring.
@@ -616,32 +634,36 @@ Final code:
 
 ```js
 var NUM_CIRCLES = 12;
+
 var circleDiameter;
 var circleRadius;
+
 var rVal;
 var gVal;
 var bVal;
 
 function setup() {
-  createCanvas(480,600);
+  createCanvas(480, 600);
 
   frameRate(5);
 
   circleDiameter = width/NUM_CIRCLES;
   circleRadius = circleDiameter/2;
+
   rVal = 255;
   gVal = 0;
   bVal = 0;
 }
 
 function draw() {
-  var alternatingRow = false;
+  var isAlternateRow = false;
 
   var y = height;
   while (y >= 0) {
+
     var x;
 
-    if (alternatingRow) {
+    if (isAlternateRow) {
       x = circleRadius;
     } else {
       x = 0;
@@ -653,12 +675,13 @@ function draw() {
       ellipse(x, y, circleDiameter, circleDiameter);
       x = x + circleDiameter;
     }
-    y = y - circleRadius;
-    alternatingRow = !alternatingRow;
 
-    rVal = (rVal + 254)%256;
-    gVal = (gVal + 7)%256;
-    bVal = (bVal + 3)%256;
+    y = y - circleRadius;
+    isAlternateRow = !isAlternateRow;
+
+    rVal = (rVal + 254) % 256;
+    gVal = (gVal + 7) % 256;
+    bVal = (bVal + 3) % 256;
   }
 }
 ```
