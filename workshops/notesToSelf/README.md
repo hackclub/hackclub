@@ -10,7 +10,14 @@ They will be cleared if you clear `localStorage`. More on that later.
 
 **Table of Contents**
 
-- Part I: Set-up
+- [Part I: Set-up](#part-i-set-up)
+- [Part II: The HTML File](#part-iv-the-html-file)
+- [Part III: Styling the Form](#part-iv-styling-the-form)
+- [Part IV: The JavaScript File](#part-iv-the-javascript-file)
+- [Part V: Odds and Ends](#part-v-odds-and-ends)
+- [Part VI: Styling the Page](#part-vi-styling-the-page)
+- [Part VII: Publishing and Sharing](#part-vii-publishing-and-sharing)
+- [Part VIII: Hacking](#part-viii-hacking)
 
 ## Part I: Set-up
 
@@ -57,7 +64,7 @@ In `index.htm`, add the base template, and a title "Notes to Self"
 <script src="main.js"></script>
 ```
 
-## Part II: Setting up the HTML Structure
+## Part II: The HTML File
 
 We'll be displaying both a form to create a new note, and the previously created notes, on this page.
 
@@ -244,35 +251,29 @@ There should be an entry below that that says `https://preview.c9users.io`. This
 
 ### Setting up Notes in Local Storage
 
-To display the notes saved in `localStorage`, we'll be using `localStorage.getItem()`. The item we'll be getting is called `notes`.
-
-Since this is our first note, we currently don't have any item in local storage. For this reason, we'll be initializing the notes object in JavaScript.
-
-TODO explanation of objects?!?!?!?
-
-Objects are like tables, in which keys point to values.
+To display the notes saved in `localStorage`, we'll be using `localStorage.getItem()`. Since this is our first note, we currently don't have any item in local storage. For this reason, we'll be initializing a new item in local storage, using JavaScript. We'll name it `notes`.
 
 Type this inside `main.js`:
 
 ```js
-localStorage.setItem("notes", {});
+localStorage.setItem("notes", []);
 ```
 
-If we save and look at our local storage, we see `notes` paired with something strange -- `[object object]`.
+If we save and look at our local storage, we see `notes` paired with ... nothing?
 
-The gotcha about local storage is that it saves everything in strings, meaning that its methods only takes strings. This is a little frustrating, but easily solved, using a function called `JSON.stringify()`. We can convert things that are not strings to properly formatted JSON strings.
+The gotcha about local storage is that it saves everything in strings, and its methods only take string arguments. This is a little frustrating, but easily solved, using a function called `JSON.stringify()`. We can convert things that are not strings to properly formatted JSON strings.
 
 Let's change the previous statement to this:
 
 ```js
-localStorage.setItem("notes", JSON.stringify({}));
+localStorage.setItem("notes", JSON.stringify([]));
 ```
 
-Now if we look in local storage, we'll see `{}` instead of `[object Object]`. This is what we want.
+Now if we look in local storage, we'll see `[]`. This is what we want.
 
-We'll also need to wrap the previous line in a conditional. We'd only want to set `notes` in local storage as an empty object (`{}`) if there are no existing notes (because we wouldn't want to overwrite what we currently have).
+We'll also need to wrap the previous line in a conditional. We'd only want to set `notes` in local storage as an empty array (`[]`) if there are no existing notes (because we wouldn't want to overwrite what we currently have).
 
-So we'll say, if getting `notes` from local storage doesn't return a [truthy value](TODO), then we'll set `notes` as the string representation of an empty object.
+So we'll say, if getting `notes` from local storage doesn't return a [truthy value](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=truthy%20values%20in%20javascript), then we'll set `notes` as the string representation of an empty array.
 
 After making sure local storage has an item called `notes`, we'll reach into local storage and get that item, and store that into a variable called `myNotes`.
 
@@ -284,7 +285,7 @@ if (!localStorage.getItem("notes")) {
 var myNotes = JSON.parse(localStorage.getItem("notes"));
 ```
 
-Although local storage stores data as strings, it's much easier for us to use the data if it's an object, so we use `JSON.parse()` to reverse the transformation process of `JSON.stringify()`.
+Although local storage stores data as strings, it's much easier for us to use the data if it's an array, so we use `JSON.parse()` to reverse the transformation process of `JSON.stringify()`.
 
 ### Saving a New Note
 
@@ -305,11 +306,11 @@ Our `postNewNote()` function should:
 - get the current timestamp
 - store these three values in an object
 - store that object in `myNotes`
-- updating `notes` in local storage
+- update `notes` in local storage
 
 #### Grabbing Note Info from the HTML elements
 
-We can access the elements using jQuery. Type the following lines inside `postNewNote()` (within the `{` and `}`):
+We can access the elements using jQuery. Type the following lines inside `postNewNote()` (between the `{` and `}`):
 
 ```js
 var titleInput = $(".new-note-title");
@@ -345,23 +346,24 @@ We'll add this line to the bottom of `postNewNote()`:
 var note = {};
 ```
 
-And now we'll store the title and content within our newly created `note` object, by typing this next:
+And now we'll store the title, content, and date within our newly created `note` object, by typing this next:
 
 ```js
 note.title = noteTitle;
 note.content = noteContent;
+note.date = noteDate;
 ```
 
-Our `note` object now contains two properties: `title` and `content`.
+Our `note` object now contains three properties: `title`, `content`, and `date`.
 
 #### Adding the Note to `myNotes`
 
-We'll add the `note` object to `myNotes`, and use our `noteDate` as a key. This means that the note will be accessible if we look up the `noteDate` in `myNotes`.
+We'll add the `note` object to `myNotes`, by appending it to the array, using the `.push()` method.
 
 Let's add this to the bottom of the `postNewNote()` function.
 
 ```js
-myNotes[noteDate] = note;
+myNotes.push(note);
 ```
 
 #### Updating `localStorage`
@@ -372,7 +374,7 @@ The last thing we need to do is update local storage, by using the method `.setI
 localStorage.setItem("notes", myNotes);
 ```
 
-But wait, `myNotes` is an object, and we've already discussed that local storage only saves strings. Let's once again use `JSON.stringify()` to help. Change the previous line to include a call to `JSON.stringify()`:
+But wait, `myNotes` isn't a string, and we've already discussed that local storage only saves strings. Let's once again use `JSON.stringify()` to help. Change the previous line to include a call to `JSON.stringify()`:
 
 ```js
 localStorage.setItem("notes", JSON.stringify(myNotes));
@@ -395,49 +397,37 @@ function displayNotes() {
 
 What should our function accomplish?
 
-- First, we must extract the date, which we've set as the key for each note, and store it in a variable.
-- Then, we must extract the note's title and body.
+- First, we must extract the note's title, date, and text.
 - Then, we must create HTML elements for each of these fields.
-- Then, we must enclose these three fields into an HTML element of its own, to organize data associated with each note in its own box(?TODO)
+- Then, we must enclose these three fields into an HTML element of its own, to organize this note's data.
 - Lastly, we must add this element to the `div` that we have reserved for old notes in the body of the HTML.
 
 #### Extracting Note Info from `myNotes`
 
-For each note contained in `myNotes`, we must grab the title, content, and date associated with it. We can do this using a for-loop:
-
-Previously we've only used for-loops in conjunction with arrays, but it's also possible to cycle through the properties of an object. The syntax changes slightly -- instead of having three statements that count the indices of array elements, we use `in` to get to all the object properties.
+For each note contained in `myNotes`, we must grab the title, date, and content associated with it. We can do this using our old friend, the for-loop.
 
 Within our function `displayNotes()`, type:
 
 ```js
-for (var i in myNotes) {
+for (var i = 0; i < myNotes.length; i++) {
 }
 ```
 
-We know that each property (`i`) is just the date that the note was created.
+Inside the for-loop, we can access each note by looking it up by the index `i`:
 
 ```js
-for (var i in myNotes) {
-  var noteDate = i;
-}
-```
-
-Thus, inside the for-loop, we can now access each note by looking it up by the property stored in `i`:
-
-```js
-for (var i in myNotes) {
-  var notedate = i;
+for (var i = 0; i < myNotes.length; i++) {
   var note = myNotes[i];
 }
 ```
 
-Now that we've stored the note in the variable `note`, we can access the title and content.
+Now that we've stored the note in the variable `note`, we can access the title, date, and content.
 
 ```js
-for (var i in myNotes) {
-  var notedate = i;
+for (var i = 0; i < myNotes.length; i++) {
   var note = myNotes[i];
   var noteTitle = note.title;
+  var noteDate = note.date;
   var noteContent = note.content;
 }
 ```
@@ -451,10 +441,10 @@ Now it's time to create HTML elements to house each piece of information we've r
 First, we'll create an element to contain the whole note. Think of this as the box that contains smaller boxes.
 
 ```js
-for (var i in myNotes) {
-  var notedate = i;
+for (var i = 0; i < myNotes.length; i++) {
   var note = myNotes[i];
   var noteTitle = note.title;
+  var noteDate = note.date;
   var noteContent = note.content;
 
   var thisNote = $("<div>");
@@ -464,10 +454,10 @@ for (var i in myNotes) {
 We'll add a class to it, too:
 
 ```js
-for (var i in myNotes) {
-  var notedate = i;
+for (var i = 0; i < myNotes.length; i++) {
   var note = myNotes[i];
   var noteTitle = note.title;
+  var noteDate = note.date;
   var noteContent = note.content;
 
   var thisNote = $("<div>").addClass("note");
@@ -477,10 +467,10 @@ for (var i in myNotes) {
 Next, we'll create a `h2` element for the note title, a `p` element for the note date, and a `p` element for the note content. We'll also give them some appropriately named classes:
 
 ```js
-for (var i in myNotes) {
-  var notedate = i;
+for (var i = 0; i < myNotes.length; i++) {
   var note = myNotes[i];
   var noteTitle = note.title;
+  var noteDate = note.date;
   var noteContent = note.content;
 
   var thisNote = $("<div>").addClass("note");
@@ -503,10 +493,10 @@ var noteContentDisplay = $("<p>").addClass("note-content").text(noteContent);
 Now, we'll add each of these new elements to the `thisNote` div.
 
 ```js
-for (var i in myNotes) {
-  var notedate = i;
+for (var i = 0; i < myNotes.length; i++) {
   var note = myNotes[i];
   var noteTitle = note.title;
+  var noteDate = note.date;
   var noteContent = note.content;
 
   var thisNote = $("<div>").addClass("note");
@@ -523,10 +513,10 @@ for (var i in myNotes) {
 And lastly we'll add `thisNote` to the `old-notes` div that is currently in the body:
 
 ```js
-for (var i in myNotes) {
-  var notedate = i;
+for (var i = 0; i < myNotes.length; i++) {
   var note = myNotes[i];
   var noteTitle = note.title;
+  var noteDate = note.date;
   var noteContent = note.content;
 
   var thisNote = $("<div>").addClass("note");
@@ -569,7 +559,7 @@ contentInput.val("");
 
 #### Updating the Display
 
-To go with this, I'd also like the note I just created to be displayed with the other notes.
+To go with this, I'd also like the note I just created to be displayed with the other notes, without me having to reload the page.
 
 That's simple enough, we'll just call `displayNotes()` at the end of `postNewNote()`:
 
@@ -595,73 +585,12 @@ There, that should look much better.
 
 It's a little annoying that we have to scroll all the way down to check if our newest note has been added. We should reverse-sort the notes by their date.
 
-TODO can i get some eyes on how to organize this section?
-
-- we can't sort objects. let's turn our object into an array of keys
-- how do we sort an array
-- write the sort function
-
-The `.sort()` method is interesting. It orders two things at a time, using a comparison function. If the comparison function returns a 0, then `.sort()` understands that the two things are equivalent. If the comparison function returns a negative number, then `.sort()` puts the first thing before the second thing. If the comparison function returns a positive number, `.sort()` puts the second thing before the first thing.
-
-In our case, we would like to reverse-sort, so we'll output a positive number if we want the first thing placed before the second thing, and a negative number if we want the second thing placed before the first thing.
-
-This is a bit confusing, so here is a [guide with examples](http://stackoverflow.com/questions/1494713/how-does-javascripts-sort-work). It might also behoove you to scatter some `console.log()` statements to see what's being compared, and where they end up.
-
-Another thing to note: we are sorting dates, which for some reason in JavaScript, can be compared with the `<` operator.
+Fortunately, we've appended each note to the end of the array, so they're in order by timestamp. We can just modify our for loop to go through the array backwards.
 
 ```js
-function compare(a, b) {
-  if (a == b) {
-    return 0;
-  } else if (a < b) {
-    return 1;
-  } else {
-    return -1;
-  }
-}
+~~for (var i = 0; i < myNotes.length; i++) {~~
+for (var i = myNotes.length-1; i >= 0; i--) {
 ```
-
-Though we've written a nice comparison function, it remains that objects are unsorted. If we want to display the notes in `myNotes` reverse-sorted by date, we'll have to extract the dates themselves and sort that.
-
-First, we will get the keys (i.e., the date of each post) from the `myNotes` object and put them in an array.
-
-At the top of the `displayNotes()` function, type the following:
-
-```js
-var keys = Object.keys(myNotes);
-```
-
-`keys` is an array containing the dates of our notes.
-
-Then, we will use the function we have created to sort our `keys`.
-
-```js
-var keys = Object.keys(obj);
-var sortedKeys = keys.sort(compare);
-```
-
-`sortedKeys` is an array containing the dates of our notes, sorted in reverse order.
-
-You can use `console.log()` and check the Console to verify this for yourself.
-
-Now we have to modify our for-loop. Instead of cycling through the `myNotes` object, we're going to move through the `sortedKeys`, one date at a time.
-
-```js
-var keys = Object.keys(obj);
-var sortedKeys = keys.sort(compare);
-
-for (var index in sortedKeys) {
-```
-
-`index` is the variable that keeps track of the index (or position) of the date we are looking at in `sortedKeys`.
-
-And we'll add one line to make the rest of our code consistent. Type this right under the header of the for-loop (`for (var index in sortedKeys) {`):
-
-```js
-var i = sortedKeys[index];
-```
-
-`i` is the date at index `index` within the array `sortedKeys`.
 
 Save and refresh, and you should see all of your notes reverse-sorted!
 
@@ -718,7 +647,7 @@ Huzzah, you've created an application that anyone can use, to write notes to the
 
 After entering your username and password (hidden, as always), you'll be able to write your own notes to self at `USERNAME.github.io/notesToSelf` (replace `USERNAME` with your own username)!
 
-Be sure to share it to [`#shipit`](https://starthackclub.slack.com/messages/shipit) on Slack!
+Though there won't be much to share in this project, post a link to [`#shipit`](https://starthackclub.slack.com/messages/shipit) on Slack! Maybe others will use your project to write their own notes to self.
 
 ## Part VIII: Hacking
 
