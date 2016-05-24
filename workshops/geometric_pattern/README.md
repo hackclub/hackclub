@@ -25,7 +25,7 @@ We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
 
 First, go to Cloud9 and open up your `projects` workspace by pressing Open.
 
-![](img/c9_dashboard.png)
+![](../img/c9_dashboard.png)
 
 Once in the workspace, right-click the `projects` folder on the left and select `New Folder`. Name it `geometric_pattern`.
 
