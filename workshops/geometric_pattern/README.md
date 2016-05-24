@@ -151,7 +151,7 @@ You can play around with these values to get a better feel of how this function 
 
 ### Drawing a Row of Circles
 
-Let's try to draw a row of circles first. We'll want to place them `circleDiameter` away from each other. Modify your `draw()` function so it looks like this:
+Let's try to draw a row of circles first. We'll want to place them `circleDiameter` away from each other. Modify your `draw()` function so it looks like this. Notice how we have to change the first argument (the x-coordinate) in each line.
 
 ```js
 function draw() {
@@ -208,7 +208,7 @@ function draw() {
 
 We're supplying `x` as the x-coordinate (cleverly named, eh?), and 0 as the y-coordinate, of the ellipse's center.
 
-If you save and refresh, you'll see a line of cut-off circles at the top. This is the magic of the loop. Since the value of `x` was increased by `circleDiameter` after every iteration of the while-loop, circles were drawn in intervals of `circleDiameter` pixels.
+If you save and refresh, you'll see a line of cut-off circles at the top. Since the value of `x` is increased by `circleDiameter` after every iteration of the while-loop, circles are drawn in intervals of `circleDiameter` pixels, just like how you changed the x-coordinate argument in `ellipse()` when you were manually creating each circle. This is the magic of the while-loop.
 
 As to why the circles are cut off -- this is because we set the y-coordinate of the _center_ of every circle to 0.
 
@@ -286,13 +286,13 @@ Save and refresh Live Preview to see the change.
 
 It looks pretty cool right now, but our circles aren't overlapping exactly right. It looks like every other row should be shifted horizontally by `circleRadius`.
 
-We can keep track of alternating rows by using a flag. A flag is just a variable that stores a `true`/`false` value.
+We can keep track of shifted rows by using a flag. A flag is just a variable that stores a `true`/`false` value.
 
 Let's add one in our `draw()` function:
 
 ```js
 function draw() {
-  var isAlternateRow = false;
+  var isShifted = false;
 
   var y = 0;
   while (y <= height) {
@@ -308,13 +308,13 @@ function draw() {
 }
 ```
 
-To differentiate between rows, we should add a line to flip the flag at the bottom of the `y` while-loop, underneath the line that flips `isAlternateRow`. This is because each pass through the `y` while-loop creates a new row, thus it would be appropriate after the creation of each row to flip the flag.
+To differentiate between rows, we should add a line to flip the flag at the bottom of the `y` while-loop, underneath the line that flips `isShifted`. This is because each pass through the `y` while-loop creates a new row, thus it would be appropriate after the creation of each row to flip the flag.
 
 We'll using the negation operator (`!`) to flip from `false` to `true` and vice versa:
 
 ```js
 function draw() {
-  var isAlternateRow = false;
+  var isShifted = false;
 
   var y = 0;
   while (y <= height) {
@@ -326,25 +326,25 @@ function draw() {
     }
 
     y = y + circleRadius;
-    isAlternateRow = !isAlternateRow;
+    isShifted = !isShifted;
   }
 }
 ```
 
-This sets the flag `isAlternateRow` to its opposite. Its initial value was `false`, and after one row, its value will be `true`. Thus, the second row will be an alternating row. After the second row is created, the flag will be flipped back to false, and so on.
+This sets the flag `isShifted` to its opposite. Its initial value was `false`, and after one row, its value will be `true`. Thus, the second row will be an shifted row. After the second row is created, the flag will be flipped back to false, and so on.
 
 Let's create a conditional that will use the flag's value to determine whether or not to shift the row. We'll add this just after we define `x`, inside the `y` while-loop:
 
 ```js
 function draw() {
-  var isAlternateRow = false;
+  var isShifted = false;
 
   var y = 0;
   while (y <= height) {
 
     var x = 0;
 
-    if (isAlternateRow) {
+    if (isShifted) {
 
     } else {
 
@@ -356,7 +356,7 @@ function draw() {
     }
 
     y = y + circleRadius;
-    isAlternateRow = !isAlternateRow;
+    isShifted = !isShifted;
   }
 }
 ```
@@ -377,7 +377,7 @@ And setting the value _conditionally_:
   while (y <= height) {
     var x;
 
-    if (isAlternateRow) {
+    if (isShifted) {
       x = circleRadius;
     } else {
       x = 0;
@@ -391,14 +391,14 @@ Your `draw()` should now look like this:
 
 ```js
 function draw() {
-  var isAlternateRow = false;
+  var isShifted = false;
 
   var y = 0;
   while (y <= height) {
 
     var x;
 
-    if (isAlternateRow) {
+    if (isShifted) {
       x = circleRadius;
     } else {
       x = 0;
@@ -410,7 +410,7 @@ function draw() {
     }
 
     y = y + circleRadius;
-    isAlternateRow = !isAlternateRow;
+    isShifted = !isShifted;
   }
 }
 ```
@@ -425,14 +425,14 @@ We can fix this by setting the initial value of `y` to the height, and changing 
 
 ```js
 function draw() {
-  var isAlternateRow = false;
+  var isShifted = false;
 
   var y = height;
   while (y >= 0) {
 
     var x;
 
-    if (isAlternateRow) {
+    if (isShifted) {
       x = circleRadius;
     } else {
       x = 0;
@@ -444,10 +444,12 @@ function draw() {
     }
 
     y = y - circleRadius;
-    isAlternateRow = !isAlternateRow;
+    isShifted = !isShifted;
   }
 }
 ```
+
+If your page has frozen, you've probably introduced an infinite loop. Refresh your Cloud 9 workspace and check your code!
 
 Save to see the changes!
 
@@ -461,7 +463,7 @@ One way to use `color()` is to provide 3 arguments; each corresponding to [red (
 
 Let's choose our color to be red. The R, G, and B values for a bright red are 255, 0, and 0, respectively. We can create this color with `color(255, 0, 0)`.
 
-Now we'll pass this color to the `fill()` function. If we do this before drawing the ellipse, all the ellipses we draw will be filled with that color. Let's give this a try and type the following line immediately before drawing our ellipse:
+Now we'll pass this color to the `fill()` function. If we do this before drawing the ellipse, all the ellipses we draw will be filled with that color. Let's give this a try and type the following line immediately before calling the `ellipse()` function in `draw()`:
 
 ```js
 fill(color(255, 0, 0));
@@ -504,7 +506,7 @@ function draw() {
   gVal = 0;
   bVal = 0;
 
-  var isAlternateRow = false;
+  var isShifted = false;
 
 ...
 
@@ -525,7 +527,7 @@ And then increment the values at the bottom of the `y` while-loop in `draw()`, b
 
 Here, we're decrementing the R value by 2, incrementing the G value by 7, and the B value by 3.
 
-You can also try adding those three lines within the inner for-loop, which will modify the colors within each row.
+You can also try adding those three lines within the x while-loop, which will modify the colors within each row.
 
 Finally, we'll replace the arguments in `color()` with these variables, in both the `fill()` and `stroke()` function calls:
 
@@ -542,7 +544,7 @@ Now, save and see the gradient effect you've applied throughout the pattern! Yay
 
 You can actually download the this cool pattern to your computer, to use as a desktop background or what have you. p5.js provides a function [`saveCanvas()`](https://p5js.org/reference/#p5/saveCanvas) to download the canvas.
 
-We can attach this function to a key press by using p5's `keyPressed` function:
+We can attach this function to a key press by using p5's `keyPressed` function. Add this at the bottom of your `main.js`:
 
 ```js
 function keyPressed() {
@@ -601,7 +603,7 @@ function setup() {
 }
 
 function draw() {
-  var isAlternateRow = false;
+  var isShifted = false;
 
 ...
 ```
@@ -656,14 +658,14 @@ function setup() {
 }
 
 function draw() {
-  var isAlternateRow = false;
+  var isShifted = false;
 
   var y = height;
   while (y >= 0) {
 
     var x;
 
-    if (isAlternateRow) {
+    if (isShifted) {
       x = circleRadius;
     } else {
       x = 0;
@@ -677,7 +679,7 @@ function draw() {
     }
 
     y = y - circleRadius;
-    isAlternateRow = !isAlternateRow;
+    isShifted = !isShifted;
 
     rVal = (rVal + 254) % 256;
     gVal = (gVal + 7) % 256;
