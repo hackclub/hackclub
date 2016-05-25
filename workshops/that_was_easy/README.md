@@ -35,8 +35,9 @@ Much like in Personal Website workshop, we'll be using HTML to create stuff visi
 3. In this folder, right-click again, select "New File," and name the new file `index.html`. This is where we will be writing HTML to actually create the button.
 4. Create another file in the `that_was_easy` folder, and name this one `main.js`. This is where we will be writing our JavaScript to make the button play sounds.
 5. Create another file in the `that_was_easy` folder, and name this one `styles.css`. This is where we will be making our button look pretty.
-6. We've provided an amusing sound for you [here](sounds/that_was_easy.mp3). You should be at a page with an audio player. Right-click that page and choose `Save As`. Then, drag the file you've just saved into the `that_was_easy` directory in the Cloud 9 sidebar.
-7. Now, open up `index.html` and type the following:
+6. We've provided an amusing sound for you [here](sounds/that_was_easy.mp3). You should be at a page with an audio player. Right-click that page and choose `Save As`.
+7. Then, drag the file you've just saved into the `that_was_easy` directory in the Cloud 9 sidebar.
+8. Now, open up `index.html` and type the following:
 
   ```html
   <!DOCTYPE html>
@@ -50,7 +51,7 @@ Much like in Personal Website workshop, we'll be using HTML to create stuff visi
   ```
 
   Similar to our HTML file in the Personal Website workshop, we've created a bare template upon which we will build interactions for the user. As you can see, we've named this page "That Was Easy" using the title (`<title>`) tag.
-6. Save your `index.html` and open up the Live Preview by selecting `Preview > Live Preview File` in the menu bar. You should see a blank page.
+9. Save your `index.html` and open up the Live Preview by selecting `Preview > Live Preview File` in the menu bar. You should see a blank page.
 
 ### Adding `main.js` to the HTML File
 
