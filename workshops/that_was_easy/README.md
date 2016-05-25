@@ -131,7 +131,7 @@ We use the button tag by typing the text we want on the button between the start
 
 ```html
 <body>
-  <button>That Was Easy</button>
+  <button>Easy</button>
 
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="main.js"></script>
