@@ -27,7 +27,7 @@ Much like in Personal Website workshop, we'll be using HTML to create stuff visi
 
 ### Setting up Folders and Files
 
-1. We'll begin by going to our Cloud 9 workspace by clicking "Open" in our dashboard.
+1. We'll begin by going to our Cloud9 workspace by clicking "Open" in our dashboard.
 
    ![](../img/c9_dashboard.png)
 
@@ -35,8 +35,9 @@ Much like in Personal Website workshop, we'll be using HTML to create stuff visi
 3. In this folder, right-click again, select "New File," and name the new file `index.html`. This is where we will be writing HTML to actually create the button.
 4. Create another file in the `that_was_easy` folder, and name this one `main.js`. This is where we will be writing our JavaScript to make the button play sounds.
 5. Create another file in the `that_was_easy` folder, and name this one `styles.css`. This is where we will be making our button look pretty.
-6. We've provided an amusing sound for you [here](sounds/that_was_easy.mp3). You should be at a page with an audio player. Right-click that page and choose `Save As`. Then, drag the file you've just saved into the `that_was_easy` directory in the Cloud 9 sidebar.
-7. Now, open up `index.html` and type the following:
+6. We've provided an amusing sound for you [here](sounds/that_was_easy.mp3). You should be at a page with an audio player. Right-click that page and choose `Save As`.
+7. Then, drag the file you've just saved into the `that_was_easy` directory in the Cloud9 sidebar.
+8. Now, open up `index.html` and type the following:
 
   ```html
   <!DOCTYPE html>
@@ -50,7 +51,7 @@ Much like in Personal Website workshop, we'll be using HTML to create stuff visi
   ```
 
   Similar to our HTML file in the Personal Website workshop, we've created a bare template upon which we will build interactions for the user. As you can see, we've named this page "That Was Easy" using the title (`<title>`) tag.
-6. Save your `index.html` and open up the Live Preview by selecting `Preview > Live Preview File` in the menu bar. You should see a blank page.
+9. Save your `index.html` and open up the Live Preview by selecting `Preview > Live Preview File` in the menu bar. You should see a blank page.
 
 ### Adding `main.js` to the HTML File
 
@@ -131,7 +132,7 @@ We use the button tag by typing the text we want on the button between the start
 
 ```html
 <body>
-  <button>That Was Easy</button>
+  <button>Easy</button>
 
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
   <script src="main.js"></script>
@@ -226,7 +227,7 @@ thatWasEasy.play();
 
 `.play()` is a function that is a part of the Audio object, and it plays the sound.
 
-Now, if you save your `main.js` file, you'll note that upon auto-reloading, the `index.html` page now says "That was easy!" And it was!
+Now, if you save your `main.js` file, you'll note that upon reloading live preview, the `index.html` page now says "That was easy!" And it was!
 
 Yay! We've added audio to our webpage.
 
@@ -264,7 +265,7 @@ $("#easy");
 
 Now that we have selected our button in the JavaScript by its `id`, we can access the methods attached to the button.
 
-One of the methods is `.on()`. This method sets the button to execute some instructions when something happens. Things that happen on the page by way of the user doing something are referred to as ["events."](https://learn.jquery.com/events/introduction-to-events/) When we use the [`.on()`](https://learn.jquery.com/events/handling-events/) method, we pair an event with a function that we want to occur when the event happens.
+One of the methods is `.on()`. This method sets the button to execute some instructions when something happens. Things that happen on the page by way of the user doing something are referred to as ["events."](https://learn.jquery.com/events/introduction-to-events/) When we use the [`.on()`](https://learn.jquery.com/events/handling-events/) method, we pair an event with a function that we want to be called when the event happens.
 
 Here, we will use the method to detect the "click" event, so we'll provide `"click"` as the first argument to `.on()`:
 
@@ -280,7 +281,7 @@ $̶(̶"̶#̶e̶a̶s̶y̶"̶)̶.̶o̶n̶(̶"̶c̶l̶i̶c̶k̶"̶)̶;̶
 $("#easy").on("click", sayThatWasEasy);
 ```
 
-To elaborate, we are:
+To reiterate, we are:
 
 1. Selecting the "Easy" button, using jQuery and its syntax (i.e., notation) for recognizing elements by `id`, and specifying the `easy` id.
 2. Calling the method associated with the button called `.on()`, which is able to bind a certain function with a certain event and thus dictate that the function be called when the event occurs.
@@ -302,7 +303,7 @@ $("#easy").on("click", sayThatWasEasy);
 
 ## Part IV: The CSS File
 
-Our button looks a little pathetic in its small default form. We'll spruce it up with some CSS!
+Our button looks a little pathetic in its small default form. Open up `styles.css` and let's spruce it up with some CSS!
 
 First, let's select it! Using our very handy `id`:
 
@@ -312,7 +313,7 @@ First, let's select it! Using our very handy `id`:
 }
 ```
 
-And now let's make it a bigger. A lot bigger.
+And now let's make it bigger. A lot bigger.
 
 ```css
 #easy {
@@ -375,7 +376,7 @@ First, we must set up our JavaScript so that the page can detect that we have pr
 $(document).keypress();
 ```
 
-jQuery has a method called `.keypress()`, which takes as an argument a function that you want executed in the event that a key is pressed. Much like `.on()`, `.keypress()` listens for an event; specifically, it listens for the key pressed event. Here, we are specifying that we want to listen for a key press on the entire document, hence `$(document)`. `$(document)` is how jQuery refers to the whole page.
+jQuery has a method called `.keypress()`, which takes a function as an argument. It then executes this function when a key is pressed. Much like `.on()`, `.keypress()` listens for an event; specifically, it listens for the key pressed event. Here, we are specifying that we want to listen for a key press on the entire document, hence `$(document)`. `$(document)` is how jQuery refers to the whole page.
 
 Now that we have set up the page to react when a key is pressed, we just need to tell it how to react. And we will do this by writing a function that gives instructions on what to do in the event that a key is pressed.
 
@@ -394,7 +395,7 @@ function delegateKeypress(event) {
 
 ### Attaching Keyboard Inputs to Sound
 
-Speaking of that, we need to assign keys to our sounds, so let's find the key codes for the key you want to use. You can find key codes by putting the line `console.log(event.keyCode);` in your `delegateKeypress` function and looking at the console in the Inspector.
+Speaking of that, we need to assign keys to our sounds, so let's find the key code for the key you want to use. You can find key codes by putting the line `console.log(event.keyCode);` in your `delegateKeypress` function, opening up external live preview, and looking at the console in the Inspector while you press a key.
 
 Now that we've gotten the key code, we'll use a conditional in the event of a key press event to check if the key that was pressed was the key that we designated to make the sound.
 
@@ -419,7 +420,7 @@ function delegateKeypress(event) {
 }
 ```
 
-Simple enough, we just repeat the same code we typed earlier.
+Simple enough, we just repeat the same code we typed earlier. Now if we press the space bar, we will hear "That was easy!".
 
 But wait, we already have preexisting code to play the `that_was_easy` sound. It's in `sayThatWasEasy()`, and the sound will be played when the button is clicked (à la `$("#easy").on("click", sayThatWasEasy);`)! If only we could somehow use that for this key press function.
 
