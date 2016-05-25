@@ -27,7 +27,7 @@ Much like in Personal Website workshop, we'll be using HTML to create stuff visi
 
 ### Setting up Folders and Files
 
-1. We'll begin by going to our Cloud 9 workspace by clicking "Open" in our dashboard.
+1. We'll begin by going to our Cloud9 workspace by clicking "Open" in our dashboard.
 
    ![](../img/c9_dashboard.png)
 
@@ -36,7 +36,7 @@ Much like in Personal Website workshop, we'll be using HTML to create stuff visi
 4. Create another file in the `that_was_easy` folder, and name this one `main.js`. This is where we will be writing our JavaScript to make the button play sounds.
 5. Create another file in the `that_was_easy` folder, and name this one `styles.css`. This is where we will be making our button look pretty.
 6. We've provided an amusing sound for you [here](sounds/that_was_easy.mp3). You should be at a page with an audio player. Right-click that page and choose `Save As`.
-7. Then, drag the file you've just saved into the `that_was_easy` directory in the Cloud 9 sidebar.
+7. Then, drag the file you've just saved into the `that_was_easy` directory in the Cloud9 sidebar.
 8. Now, open up `index.html` and type the following:
 
   ```html
@@ -395,7 +395,7 @@ function delegateKeypress(event) {
 
 ### Attaching Keyboard Inputs to Sound
 
-Speaking of that, we need to assign keys to our sounds, so let's find the key codes for the key you want to use. You can find key codes by putting the line `console.log(event.keyCode);` in your `delegateKeypress` function and looking at the console in the Inspector.
+Speaking of that, we need to assign keys to our sounds, so let's find the key code for the key you want to use. You can find key codes by putting the line `console.log(event.keyCode);` in your `delegateKeypress` function, opening up external live preview, and looking at the console in the Inspector while you press a key.
 
 Now that we've gotten the key code, we'll use a conditional in the event of a key press event to check if the key that was pressed was the key that we designated to make the sound.
 
@@ -420,7 +420,7 @@ function delegateKeypress(event) {
 }
 ```
 
-Simple enough, we just repeat the same code we typed earlier.
+Simple enough, we just repeat the same code we typed earlier. Now if we press the space bar, we will hear "That was easy!".
 
 But wait, we already have preexisting code to play the `that_was_easy` sound. It's in `sayThatWasEasy()`, and the sound will be played when the button is clicked (à la `$("#easy").on("click", sayThatWasEasy);`)! If only we could somehow use that for this key press function.
 
