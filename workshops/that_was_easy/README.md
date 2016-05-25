@@ -265,7 +265,7 @@ $("#easy");
 
 Now that we have selected our button in the JavaScript by its `id`, we can access the methods attached to the button.
 
-One of the methods is `.on()`. This method sets the button to execute some instructions when something happens. Things that happen on the page by way of the user doing something are referred to as ["events."](https://learn.jquery.com/events/introduction-to-events/) When we use the [`.on()`](https://learn.jquery.com/events/handling-events/) method, we pair an event with a function that we want to occur when the event happens.
+One of the methods is `.on()`. This method sets the button to execute some instructions when something happens. Things that happen on the page by way of the user doing something are referred to as ["events."](https://learn.jquery.com/events/introduction-to-events/) When we use the [`.on()`](https://learn.jquery.com/events/handling-events/) method, we pair an event with a function that we want to be called when the event happens.
 
 Here, we will use the method to detect the "click" event, so we'll provide `"click"` as the first argument to `.on()`:
 
@@ -281,7 +281,7 @@ $̶(̶"̶#̶e̶a̶s̶y̶"̶)̶.̶o̶n̶(̶"̶c̶l̶i̶c̶k̶"̶)̶;̶
 $("#easy").on("click", sayThatWasEasy);
 ```
 
-To elaborate, we are:
+To reiterate, we are:
 
 1. Selecting the "Easy" button, using jQuery and its syntax (i.e., notation) for recognizing elements by `id`, and specifying the `easy` id.
 2. Calling the method associated with the button called `.on()`, which is able to bind a certain function with a certain event and thus dictate that the function be called when the event occurs.
