@@ -303,7 +303,7 @@ $("#easy").on("click", sayThatWasEasy);
 
 ## Part IV: The CSS File
 
-Our button looks a little pathetic in its small default form. We'll spruce it up with some CSS!
+Our button looks a little pathetic in its small default form. Open up `styles.css` and let's spruce it up with some CSS!
 
 First, let's select it! Using our very handy `id`:
 
@@ -313,7 +313,7 @@ First, let's select it! Using our very handy `id`:
 }
 ```
 
-And now let's make it a bigger. A lot bigger.
+And now let's make it bigger. A lot bigger.
 
 ```css
 #easy {
