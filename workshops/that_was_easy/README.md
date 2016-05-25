@@ -227,7 +227,7 @@ thatWasEasy.play();
 
 `.play()` is a function that is a part of the Audio object, and it plays the sound.
 
-Now, if you save your `main.js` file, you'll note that upon auto-reloading, the `index.html` page now says "That was easy!" And it was!
+Now, if you save your `main.js` file, you'll note that upon reloading live preview, the `index.html` page now says "That was easy!" And it was!
 
 Yay! We've added audio to our webpage.
 
