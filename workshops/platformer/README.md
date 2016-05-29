@@ -2,9 +2,9 @@
 
 Short link to this workshop: [https://workshops.hackclub.com/platformer/](https://workshops.hackclub.com/platformer/)
 
----
+Demo: [here](http://prophetorpheus.github.io/platformer/)
 
-![](img/TODO.png)
+---
 
 In this workshop we'll continue our foray into game development in p5.js by creating a simple platformer.
 
@@ -23,14 +23,14 @@ In this workshop we'll continue our foray into game development in p5.js by crea
 
 ## Part I: Set-up
 
-- open up `projects` workshop
-- create new folder in `projects` folder, name it `platformer`
-- create new `index.html` in `platformer`
-- create new `game.js` in `platformer`
+1. Open up `projects` workshop
+2. Create new folder in `projects` folder, name it `platformer`
+3. Create new `index.html` in `platformer`
+4. Create new `game.js` in `platformer`
 
 ### Priming the HTML File
 
-- Type this basic template into the `index.html` file
+Type this basic template into the `index.html` file:
 
 ```html
 <!DOCTYPE html>
@@ -43,17 +43,17 @@ In this workshop we'll continue our foray into game development in p5.js by crea
 </html>
 ```
 
-- load in p5.js in script tag in **body**
-- load in p5.play.js in script tag
-- load in our game file (`game.js`) in script tag
+Load in p5.js in script tag in **body**. Beneath that, load in p5.play.js in another script tag. Beneath both of those, load in our game file (`game.js`) in a third script tag.
 
 ```html
+<body>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.min.js"></script>
   <script type="text/javascript" src="https://cdn.rawgit.com/molleindustria/p5.play/master/lib/p5.play.js"></script>
   <script type="text/javascript" src="game.js"></script>
+</body>
 ```
 
-- save and open live preview
+Then, save and open live preview.
 
 ### Priming the JavaScript File
 
@@ -73,22 +73,21 @@ Save and refresh live preview.
 
 ### Setting the Stage
 
-- `createCanvas()` in `setup()`
+Call `createCanvas()` in `setup()`:
 
 ```js
 createCanvas(400, 300);
 ```
 
-- `background()` to a light blue color `(150, 200, 250)`, beneath `createCanvas()`:
+Set the background to a light blue color `(150, 200, 250)`, in `setup()`, beneath `createCanvas()`:
 
 ```js
-createCanvas(400, 300);
 background(150, 200, 250);
 ```
 
 We're going to be making a scrolling floor, so we need a series of sprites to illustrate the ground.
 
-p5.play has a nice way to keep these organized, with [`Group`](TODO). We can declare the variable at the top and define a new Group like so:
+p5.play has a nice way to keep these organized, with [`Group`](http://p5play.molleindustria.org/docs/classes/Group.html). We can declare the variable at the top and define a new Group in `setup()`, like so:
 
 ```js
 var groundSprites;
@@ -100,7 +99,7 @@ function setup() {
 }
 ```
 
-- Let's set the width of a ground sprite, so we know how many to lay across the canvas to fill it. I've decided to make it 50. We can add this line right beneath our declaration of `groundSprites`:
+Let's set the width of a ground sprite, so we know how many to lay across the canvas. I've decided to make each ground sprite have a width of 50 pixels. We can add this line right beneath our declaration of `groundSprites`:
 
 ```js
 var groundSprites;
@@ -108,9 +107,9 @@ var GROUND_SPRITE_WIDTH = 50;
 var GROUND_SPRITE_HEIGHT = 50;
 ```
 
-- I've added in the ground sprite height as well.
+I've added in the ground sprite height as well.
 
-- We can now set the number of ground sprites in `setup()`:
+We can now determine and set the number of ground sprites in `setup()`:
 
 ```js
 var groundSprites;
@@ -127,12 +126,7 @@ function setup() {
 }
 ```
 
-TODO WOW SO MUCH TODO break this upppp
-- And now we'll populate the empty `Group` we created, with groundSprites. TODO explain for loop
-
-  We can use a for-loop to keep track of how many times we want to add a new ground sprite to our Group.
-
-  For-loop works similar to while-loop, which we've looked at previously. TODO
+And now we'll populate the empty `Group` we've created. The number of ground sprites we should create is `numGroundSprites`. Using a for-loop, we can keep track of how many times we'll be performing the actions of creating a new sprite and adding it to the Group.
 
 ```js
 function setup() {
@@ -156,12 +150,11 @@ function draw() {
 }
 ```
 
-- explanation of the crazy complex code above:
-  we drawin a series of ground sprites at position along the bottom of the screen (height-25). we use the for loop to set the x position of each of our 8 sprites.
+Not only are we leveraging our for-loop to perform a series of actions multiple times, we're also using it to set the x-position of each ground sprite, and having them line up along the bottom of the canvas.
 
-- Save and refresh live preview to see your beautiful ground!
+Save and refresh live preview to see your beautiful ground!
 
-- You might notice there's a blank spot at the right edge of the ground. We could shift over our starting ground sprite, but since we want our ground to be scrolling, we'll just add in an extra ground sprite. We can generate an extra one by adding 1 to `numGroundSprites`.
+You might notice there's a blank spot at the right edge of the ground. We could shift over our starting ground sprite, but since we want our ground to be scrolling, we'll just add in an extra ground sprite. We can generate an extra one by adding 1 to `numGroundSprites`. Now the for-loop will run one extra time, generating an extra ground sprite and adding it to the Group.
 
 ```js
 numGroundSprites = width/GROUND_SPRITE_WIDTH + 1;
@@ -227,7 +220,7 @@ camera.position.x = player.position.x;
 
 Save and refresh to see the player in action!
 
-### Adjusting Camera ???
+### Adjusting Camera
 
 Having the player at the center of the screen limits our visual of the obstacles.
 
@@ -239,9 +232,9 @@ camera.position.x = player.position.x + (width/4);
 
 ### Adjusting the Ground
 
-What we'd like to do is modify the position of the first ground sprite so that it immediately follows the last ground sprite
+What we'd like to do is modify the position of the first ground sprite so that it immediately follows the last ground sprite.
 
-![](img/DIAGRAM OF INDIAN SPRINTS TODO)
+![](img/reverse_indian_sprints.png)
 
 We can select the first ground sprite and store it in a variable by typing the following line in the `draw()` function. I put this logic beneath the line that sets camera x-position.
 
@@ -249,19 +242,15 @@ We can select the first ground sprite and store it in a variable by typing the f
 var firstGroundSprite = groundSprites[0];
 ```
 
-`[0]` refers to the thing in the Group at index 0.
-
-![](img/ARRAYS AND INDEXING TODO)
+`[0]` refers to the sprite in the Group at [index 0](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
 Next, we'll check if it has moved off screen, by comparing its x-position with the left edge of the camera.
 
 The x-position of the camera is `camera.position.x`. The x-position of the left edge of the camera is `camera.position.x - width/2`. Remember, the camera is at the middle of the screen.
 
-![](img/PLACEMENT RELATIVE TO CAMERA TODO)
-
 We'll set up a conditional to check if the x-position of the ground sprite is less than that of the left edge of the camera.
 
-We will put this conditional directly beneath the definition of the firstGroundSprite variable;
+We will put this conditional directly beneath the definition of the `firstGroundSprite` variable;
 
 ```js
 var firstGroundSprite = groundSprites[0];
@@ -270,9 +259,9 @@ if (firstGroundSprite.position.x <= camera.position.x - (width/2)) {
 }
 ```
 
-If it is indeed off-screen, then we must remove it from the Group, alter its x-position, and append it to the Group at the last index.
+If it is indeed off-screen, then we must remove it from its current index in Group, alter its x-position, and re-append it to the Group at the last index. It's important to note that we're removing it from the `groundSprites` Group, but not from our program.
 
-It's like we're recycling the first ground sprite to be the last ground sprite by changing its position!
+It's like we're recycling the first ground sprite to be the last ground sprite by changing its position! We have to remove and re-add it so the "first" ground sprite in the Group is also the first ground sprite we see on screen.
 
 ```js
 var firstGroundSprite = groundSprites[0];
@@ -333,12 +322,9 @@ if (keyDown(UP_ARROW)) {
 
 Save and refresh live preview, and give it a try by pressing your up arrow key!
 
-Oops, looks like we forgot to bring the player back down using gravity!
+Oops, looks like we never established gravity in our world! Place the following line within `draw()`, beneath `background(150, 200, 250)`:
 
 ```js
-if (keyDown(UP_ARROW)) {
-  player.velocity.y = JUMP;
-}
 player.velocity.y = player.velocity.y + GRAVITY;
 ```
 
@@ -346,21 +332,24 @@ That should do it. The player will definitely come back down now. Save and refre
 
 The player's going down, alright. In fact, it's going through the ground.
 
-We'll have to place a restriction on this. That is, we want to check if the player's y-position is greater than (flipped coordinate system) that of the surface of the ground. If so, we'd like to set the y-velocity back to 0, and ensure that the player rests on the ground.
+We'll have to place a restriction on this. That is, we want to check if the player intersects with the ground. If so, we'd like to set the player's y-velocity back to 0, and ensure that the player rests on the ground.
+
+Add a conditional under the previous line, but before the conditional for jumping, like this:
 
 ```js
-if (keyDown(UP_ARROW)) {
-  player.velocity.y = JUMP;
-}
 player.velocity.y = player.velocity.y + GRAVITY;
 
-if (Math.floor(player.position.y) > (height-50)-(player.height/2)) {
+if (groundSprites.overlap(player)) {
   player.velocity.y = 0;
   player.position.y = (height-50) - (player.height/2);
 }
+
+if (keyDown(UP_ARROW)) {
+  player.velocity.y = JUMP;
+}
 ```
 
-Here, we perform a check to see if the player's y-position, rounded down to the nearest whole number, is greater than (i.e., dips below) the ground level. If that's indeed the case, then we stop moving it downwards, and stabilize the player at ground-level.
+Here, we're checking if any sprites within the Group overlap with the player. If that does happen, then we stop moving the player downwards, and stabilize the player at ground-level.
 
 ## Part IV: Adding Obstacles
 
@@ -392,9 +381,11 @@ Let's type the following right above `drawSprites()`, inside `draw()`:
 var obstacle = createSprite(camera.position.x + width, (height-50) - 15, 30, 30);
 ```
 
-Gah! Too many obstacles! Remember that the `draw()` function is called repeatedly.
+Gah! Too many obstacles! Remember that the `draw()` function is called repeatedly, 60 times per second!
 
 We can have randomized generation if we wrap the above line in a conditional. We'll use the [`random()`](https://p5js.org/reference/#/p5/random) function to generate a random number between 0 and 1, and create a new obstacle only if it's above 0.95. This means there's a 5% chance a new obstacle will be generated during every call of `draw()`.
+
+Let's place the previous line into a conditional:
 
 ```js
 if (random() > 0.95) {
@@ -402,7 +393,7 @@ if (random() > 0.95) {
 }
 ```
 
-And we'll add it to our `Group`.
+We'll also add the obstacle to our Group:
 
 ```js
 if (random() > 0.95) {
@@ -411,7 +402,7 @@ if (random() > 0.95) {
 }
 ```
 
-And we'll set up some logic to remove it when it goes off-screen, similar to how we created a check for the ground sprites.
+And we'll set up some logic to remove from the program entirely when it goes off-screen, similar to how we created a check for the ground sprites.
 
 Let's add this underneath the conditional for generation, like so:
 
@@ -435,7 +426,9 @@ If you save and refresh live preview, you'll realize something seems to be wrong
 
 This is because at the very beginning of the game, no obstacles have yet been generated! Our `obstacleSprites` is empty, and there are no obstacles to check the position of! To solve this, we must add the condition `obstacleSprites.length > 0` to our conditional:
 
-Here we're saying "if obstacleSprites has more than 0 things, AND the right edge (offsetting!) of the first obstacle is less than the left-screen bound, then get rid of it."
+Here we're saying "if `obstacleSprites` has more than 0 things, AND the right edge (offsetting!) of the first obstacle is less than the left-screen bound, then get rid of it."
+
+Your modified conditional should now look like this:
 
 ```js
 if (obstacleSprites.length > 0 && firstObstacle.position.x <= camera.position.x - (width/2 + firstObstacle.width/2)) {
@@ -447,7 +440,7 @@ if (obstacleSprites.length > 0 && firstObstacle.position.x <= camera.position.x 
 
 Great, we've got a good assortment of randomly generated obstacles. Let's add collisions!
 
-p5.play has an [`overlap`]() method for Groups that makes collision detection and handling easy. We can use it on our `obstacleSprites` Group by providing two arguments, the thing to collide with, and a function to do something when there is a collision.
+We've used `.overlap()` with our `groundSprites` Group above, by providing just one argument. We also can use it on our `obstacleSprites` Group by providing two arguments, the thing to collide with, and a function to do something when there is a collision.
 
 Add this to the `draw()` function, right before the call for `drawSprites()`:
 
@@ -491,18 +484,17 @@ function setup() {
 }
 ```
 
-We'll add a line to set this flag to true within our `endGame()`:
+We'll add a line to set this flag to true within our `endGame()`, replacing the `console.log()`:
 
 ```js
 function endGame() {
   isGameOver = true;
-  console.log("Game Over!");
 }
 ```
 
 And we'll create the two modes now:
 
-- add a conditional at the top for the game over mode
+1. Add a conditional at the top for the game over mode
 
   ```js
   function draw() {
@@ -516,7 +508,7 @@ And we'll create the two modes now:
   }
   ```
 
-- wrap the game logic we've written in `draw()` so far in `else { }`.
+2. Wrap the game logic we've written in `draw()` so far in `else { }`.
 
   ```js
   function draw() {
@@ -532,7 +524,7 @@ And we'll create the two modes now:
 
 ### Allowing Restart
 
-We musn't forget to flip the flag back to false, in order to restart the game. I'll tie my restart logic to a mouse click, by creating p5's `mouseClicked()` function beneath `endGame()`:
+We mustn't forget to flip the flag back to false, in order to restart the game. I'll tie my restart logic to a mouse click, by creating p5's `mouseClicked()` function beneath `endGame()`:
 
 ```js
 function mouseClicked() {
@@ -544,22 +536,39 @@ function mouseClicked() {
 
 ### Resetting
 
-To bring the game back to its original state, we have to:
+To bring the game back to its original state, we have to perform the following actions before setting `isGameOver` back to false. Let's add all of this above `isGameOver = false` in our `mouseClicked()` function. We'll want to reset everything before we restart:
 
-- clear the `groundSprites` Group by removing the existing ground sprites
-- repopulate the `groundSprites` Group by creating some ground from the beginning positions (as we did before, in `setup()`)
+- reset the x-position of each ground sprite within `groundSprites`:
+
+  ```js
+  for (var n = 0; n < numGroundSprites; n++) {
+    var groundSprite = groundSprites[n];
+    groundSprite.position.x = n*50;
+  }
+  ```
+
 - reset the player position back to its initial x and y coordinates
+
+  ```js
+  player.position.x = 100;
+  player.position.y = height-75;
+  ```
+
 - clear the `obstacleSprites` Group by removing the existing obstacle sprites
 
-Add all of this above `isGameOver = false` in our `mouseClicked()` function. We'll want to reset everything before we restart:
+  ```js
+  obstacleSprites.removeSprites();
+  ```
+
+You should end up with a `mouseClicked()` function that looks like this:
 
 ```js
 function mouseClicked() {
   if (isGameOver) {
-    groundSprites.removeSprites();
+
     for (var n = 0; n < numGroundSprites; n++) {
-      var groundSprite = createSprite(n*50, height-25, GROUND_SPRITE_WIDTH, GROUND_SPRITE_HEIGHT);
-      groundSprites.add(groundSprite);
+      var groundSprite = groundSprites[n];
+      groundSprite.position.x = n*50;
     }
 
     player.position.x = 100;
@@ -607,8 +616,11 @@ And initialize it to 0 in `setup()`, beneath `isGameOver`:
 function setup() {
   isGameOver = false;
   score = 0;
+
   createCanvas(400, 300);
   background(150, 200, 250);
+
+  ...
 }
 ```
 
@@ -618,7 +630,7 @@ Now we'll increment the score in `draw()`. We'll just increment by 1 every time 
 score = score + 1;
 ```
 
-Lastly, we'll need to reset our score to 0 in `mouseClicked()`.
+Lastly, we'll need to reset our score to 0 in `mouseClicked()`. Place this line right before resetting `isGameOver`:
 
 ```js
 score = 0;
@@ -626,7 +638,7 @@ score = 0;
 
 ### Displaying Score
 
-Now we'll need to display the score during the game. We can use `text()` and position it relative to the camera. Type the following beneath the line that increments `score`, within `draw()`:
+Now we'll need to display the score during the game. We can use `text()` and position it relative to the camera. Type the following beneath the line that increments `score`, near the end of `draw()`, like this:
 
 ```js
 score = score + 1;
@@ -644,14 +656,12 @@ Now, let's display the score after the game ends. We can add the value of `score
 "Your score was: " + score
 ```
 
-Let's add this text to our Game Over screen by adding the following line above the "Game Over" text in `draw()`. Offset it slightly in the y-direction to avoid overlap:
+Let's add this text to our Game Over screen by adding the following line above the "Game Over" text in `draw()`, like this. We'll offset it slightly in the y-direction to avoid overlap.
 
 ```js
 text("Your score was: " + score, camera.position.x, camera.position.y - 20);
 text("Game Over! Click anywhere to restart", camera.position.x, camera.position.y);
 ```
-
-TODO no magic numz. Find out how to linebreak in text???
 
 ## Part VII: Upgrading
 
@@ -665,37 +675,9 @@ Find the line where we create obstacles and modify the argument we are passing i
 var obstacle = createSprite(camera.position.x + width, random(0, (height-50)-15), 30, 30);
 ```
 
-### Fine-Tuning Placement of Obstacles
-
-Difficulty just shot up like crazy. Let's use additional logic to make sure the obstacles are generated in a sensible, playable manner.
-
-Instead of randomly generating them TODO there must be a better way from the start. uhhhhhhhh
-
-WE CAN BAse obstacles on the position of its predecessor
-but then we need a start condition
-
-do we want to initialize the obstacles in such a convoluted manner?
-
-
-i need to discuss this
-
-steps
-
-- add obstacle creation in the conditional for "there exists sprites in obstacleSprites"
-- extract
-iddfk fdakjsldfafds
-ok we should do this from the start. create it only if there are sp
-i have no idea actually
-this is hard
-
-// TODO and i need a better randomization for height that's skewed towards the middle
-// i just went on the bottom for mad long and didn't die and didn't have to move at all
-
 ## Part VIII: Customizing
 
-It's time to add in our sprite images!
-
-// TODO
+It's time to add in our sprite images! This exercise is left to the user.
 
 ## Part IX: Publishing and Sharing
 
@@ -707,7 +689,7 @@ After making sure all files are saved, go to the terminal in Cloud9 and type the
 
 Don't forget you'll need to input your username and password (hidden). After successfully pushing, your game will be live and playable on `USERNAME.github.io/platformer/`!!
 
-Be sure to post your creation on the [`#shipit`](shipit channel URL TODO) channel on Slack!
+Be sure to post your creation on the [`#shipit`](https://starthackclub.slack.com/messages/shipit/) channel on Slack!
 
 ## Part X: Hacking
 
