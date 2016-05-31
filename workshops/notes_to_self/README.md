@@ -6,8 +6,6 @@ Short Link: [https://workshops.hackclub.com/notesToSelf/](https://workshops.hack
 
 This is a way to keep personal notes in your browser storage. Since the notes are saved to `localStorage`, these are truly notes-to-self (unless you share your computer).
 
-They will be cleared if you clear `localStorage`. More on that later.
-
 **Table of Contents**
 
 - [Part I: Set-up](#part-i-set-up)
@@ -29,7 +27,7 @@ They will be cleared if you clear `localStorage`. More on that later.
 - Create a new file in `notesToSelf` named `main.js`
 - Create a new file in `notesToSelf` named `styles.css`
 
-In `index.htm`, add the base template, and a title "Notes to Self"
+In `index.html`, add the base template, and a title "Notes to Self"
 
 ```html
 <!DOCTYPE html>
@@ -44,7 +42,7 @@ In `index.htm`, add the base template, and a title "Notes to Self"
 
 ### Adding Our Dependencies
 
-- We'll be using jQuery in `main.js` later, and we'll need to add it to our `index.html` by including this line in the **body**:
+We'll be using jQuery in `main.js` later, and we'll need to add it to our `index.html` by including this line in the **body**:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
@@ -52,13 +50,13 @@ In `index.htm`, add the base template, and a title "Notes to Self"
 
 ### Connecting Our Files
 
-- Add `styles.css` to `index.html` by including the following line in the **head**:
+Add `styles.css` to `index.html` by including the following line in the **head**:
 
 ```html
 <link href="styles.css" rel="stylesheet">
 ```
 
-- Add `main.js` to `index.html` by including the following line in the **body, beneath the inclusion of jQuery**:
+Add `main.js` to `index.html` by including the following line in the **body, beneath the inclusion of jQuery**:
 
 ```html
 <script src="main.js"></script>
@@ -66,7 +64,7 @@ In `index.htm`, add the base template, and a title "Notes to Self"
 
 ## Part II: The HTML File
 
-We'll be displaying both a form to create a new note, and the previously created notes, on this page.
+On this page, we'll be displaying a form to create a new note, as well as the previously created notes.
 
 Thus, we can subdivide the page into two sections -- new note form, and old notes.
 
@@ -102,7 +100,7 @@ Adding an input element inside our `div` is easy:
 </div>
 ```
 
-`type="text"` just specifies that this input will accept text. TODO is this semantics or wat
+`type="text"` just specifies that this input will accept text.
 
 If we save and look at live preview, our input looks a little bare. We can give it placeholder text by adding:
 
@@ -124,9 +122,9 @@ Lastly, we'll add a class to this input, so that we can reference it later in Ja
 
 #### Adding Field for Content
 
-Next, we'll do a similar thing to allow the user to input more text in their note. Instead of using input, which as you can see is a single-line input, we'll use a textarea element, which visibly allows for multiple lines. TODO fact-check that it "visibly allows"? or does input restrict new-lines. i feel like it does
+Next, we'll add a way for user to add content to their note. Instead of using `<input>`, which as you can see is a single-line input, we'll use a `<textarea>` element, which allows for multiple lines.
 
-Adding a textarea element inside our `div` is easy:
+Adding a `<textarea>` inside our `div` is easy:
 
 ```html
 <div class="new-note">
@@ -135,9 +133,7 @@ Adding a textarea element inside our `div` is easy:
 </div>
 ```
 
-Note that while input is a void tag, textarea has both opening and closing tags. I don't know why this is. TODO find out why this is.
-
-We'll give our textarea some placeholder text:
+We'll give our `<textarea>` some placeholder text:
 
 ```html
 <div class="new-note">
@@ -183,7 +179,7 @@ Save and refresh. There's our button!
 
 ### Adding a Space to Display Old Notes
 
-Now that we've sectioned off a part of the body for creating new notes, we can similarly section off a part of the body for displaying the old notes. Let's create a `div` for this, beneath our `new-note` div:
+Much like how we've sectioned off part of the body for creating new notes, we can similarly section off a part of the body for displaying the old notes. Let's create a `div` for this, beneath our `new-note` div:
 
 ```html
 <div class="new-note">
@@ -225,7 +221,7 @@ Open up `styles.css` and type in the following:
 
 It's a good thing we added a class to our new note form, because now we can reference it using the selector `.new-note`! The asterisk means "everything," so here we are saying this rule applies to "everything that is within `.new-note`."
 
-The [display attribute](TODO) specifies how elements are laid out on the page.
+The [display property](http://learnlayout.com/display.html) specifies how elements are laid out on the page.
 
 ## Part IV: The JavaScript File
 
@@ -235,9 +231,19 @@ Open up your live preview in the external view, by clicking the icon of a box wi
 
 ### Accessing Local Storage
 
-We can access localStorage by referencing the variable `localStorage`.There are two methods we'll be using to get and set data in this variable, `.getItem()` and `.setItem().
+We can access local storage by referencing the variable `localStorage`.There are two methods we'll be using to get and set data in this variable, `.getItem()` and `.setItem().
 
-Local storage works kind of like a giant table. It is an object, and objects in JavaScript are like tables. You have keys that point to values. TODO. We're going to save our entire list of notes by having a key named "notes" that points to the whole list of notes.
+Local storage is an object, and objects in JavaScript are made up of **keys** that correspond to **values**.
+
+For example:
+
+```js
+var orpheusFacts = {name: "Prophet Orpheus", numberOfEyes: 2};
+```
+
+One **key** is `name` and the **value** of `name` is `Prophet Orpheus`. Another key is `numberOfEyes`, and its value is 2. Orpheus has two eyes.
+
+We're going to save our entire list of notes by having a key named "notes" that points to the whole list of notes.
 
 ```js
 // maybe give an example of how objects do
@@ -480,7 +486,7 @@ for (var i = 0; i < myNotes.length; i++) {
 }
 ```
 
-Lastly, we'll fill the elements with the corresponding information. jQuery has a nice method to access and set the text within an element, namely [`.text()`](TODO). We'll add a call to `.text()` to each element, passing it the appropriate value:
+Lastly, we'll fill the elements with the corresponding information. jQuery has a nice method to access and set the text within an element, namely [`.text()`](http://api.jquery.com/text/). We'll add a call to `.text()` to each element, passing it the appropriate value:
 
 ```js
 var noteTitleDisplay = $("<h2>").addClass("note-title").text(noteTitle);
@@ -538,7 +544,7 @@ Our `displayNotes()` function is now complete! All we have to do now is actually
 displayNotes();
 ```
 
-Tada! If you save and refresh you should be able to see your note on the page. TODO check this
+Tada! If you save and refresh you should be able to see your note on the page.
 
 ## Part V: Odds and Ends
 
@@ -606,7 +612,7 @@ var noteContent = note.content.replace(/\n/g,"<br>");
 
 `.replace()` takes two arguments (as you would expect). The first is the text you would like to replace, and the second is the text you would like to replace it with.
 
-In this case, we are replacing any instances of `\n` with the characters `<br>`. What about the `/` and `/g`? Well, `.replace()` only replaces the first occurrence of the thing you want to replace. TODO look up a better way that doesn't involve reg exp.
+In this case, we are replacing any instances of `\n` with the characters `<br>`. What about the `/` and `/g`? The two `/` act as quotes around your text. As for the `g`, `.replace()` only replaces the first occurrence of the thing you want to replace. Adding `g` (which stands for global) tells `.replace()` to replace every occurrence.
 
 Let's save and refresh to see if it worked.
 
