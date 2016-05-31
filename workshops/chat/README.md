@@ -2,6 +2,8 @@
 
 Short link to this workshop: [https://workshops.hackclub.com/chat](https://workshops.hackclub.com/chat)
 
+Demo: [here](https://prophetorpheus.github.io/chat/)
+
 ---
 
 In this workshop we'll be implementing a real-time chat using Firebase. Firebase is a back-end having many features, one of which is a real-time database. This means that all the information within the database gets updated across everything that uses the database.
@@ -10,11 +12,11 @@ This workshop is a revival of the now-defunct tutorial made by Firebase itself.
 
 **Table of Contents**
 
-- [Part I: Set-up](part-i-set-up)
-- Part II: The HTML File
-- Part III: The JS File
-- Part IV: Publishing and Sharing and Chatting!
-- Part V: Hacking
+- [Part I: Set-up](#part-i-set-up)
+- [Part II: The HTML File](#part-ii-the-html-file)
+- [Part III: The JS File](#part-iii-the-js-file)
+- [Part IV: Publishing and Sharing and Chatting!](#part-iv-publishing-and-sharing-and-chatting)
+- [Part V: Hacking](#part-v-hacking)
 
 ## Part I: Set-up
 
@@ -89,10 +91,10 @@ So far our `main.js` looks like this:
 
 ```js
 var config = {
-    apiKey: "AIbaSxCyCLHv4X9TnygLWKoBt52ml_A4TjjNVek",
-    authDomain: "chat-test-bxcdb.firebaseapp.com",
-    databaseURL: "https://chat-test-bxcdb.firebaseio.com",
-    storageBucket: "",
+  apiKey: "AIbaSxCyCLHv4X9TnygLWKoBt52ml_A4TjjNVek",
+  authDomain: "chat-test-bxcdb.firebaseapp.com",
+  databaseURL: "https://chat-test-bxcdb.firebaseio.com",
+  storageBucket: "",
 };
 firebase.initializeApp(config);
 ```
@@ -109,7 +111,7 @@ We have to give Cloud9 access to Firebase, so we'll do this by adding the domain
 
 This will allow us to view what's happening in Firebase while building our app.
 
-Click on "Auth" in the sidebar, and then the "Sign-In Method" tab:
+Click on `Auth` in the sidebar, and then the "Sign-In Method" tab:
 
 ![](img/fb_go_to_auth.gif)
 
@@ -117,15 +119,25 @@ Once there, we'll scroll down and add `preview.c9users.io` to the list of Author
 
 ![](img/fb_add_domain.gif)
 
-Next we have to open up our database permissions. We'll do this by clicking on "Database" in the sidebar, and editing the aflksdff TODO
+Next we have to edit our database permissions. We'll do this by clicking on "Database" in the sidebar, and changing `auth != null` to `true`:
 
 ![](img/fb_set_db_perm.gif)
 
 Great. Now we are done configuring Firebase and can return to our JavaScript file.
 
-We'll be adding one more line to the bottom of the file. This creates a reference to the database in our Firebase project, so that we can access it within our JavaScript file.
+We'll be adding one more line to the bottom of `main.js`. This creates a reference to the database in our Firebase project, so that we can access it within `main.js`.
+
+We should have something like this:
 
 ```js
+var config = {
+  apiKey: "AIbaSxCyCLHv4X9TnygLWKoBt52ml_A4TjjNVek",
+  authDomain: "chat-test-bxcdb.firebaseapp.com",
+  databaseURL: "https://chat-test-bxcdb.firebaseio.com",
+  storageBucket: "",
+};
+firebase.initializeApp(config);
+
 var chatData = firebase.database().ref();
 ```
 
@@ -191,9 +203,13 @@ function pushMessage(event) {
 }
 ```
 
+Now, save and try sending a message in your live preview! Sure, nothing shows up, but check out your Firebase database (go to `Database` in the sidebar of your Firebase console)! A new entry appears as you send messages!
+
+![](img/fb_msg_to_data.gif)
+
 ### Retrieving Messages from Firebase
 
-We want the message we send to be displayed immediately after we send it, so we'll use Firebase's `.on()` method to handle the event of sending a message. In other words, in the event that a message is added to Firebase, we will call a function to display it. We will create that function now, by typing the following beneath the `pushMessage()` function:
+It's great that our messages are being sent and stored in Firebase, but We want them to be displayed on our page, too. We'll use Firebase's `.on()` method to handle the event of sending a message. In the event that a message is added to Firebase, we will call a function to display it. We will create that function now, by typing the following beneath the `pushMessage()` function:
 
 ```js
 chatData.on("child_added", showMessage);
@@ -278,12 +294,6 @@ function showMessage(msg) {
 }
 ```
 
-and then we'll do some scrolling voodoo to make the recent message show up somewhere i dont feel like thinking about what this does so im not going to. zachlatta i choose you *throw pokeball* go
-
-```js
-$('#messages')[0].scrollTop = $('#messages')[0].scrollHeight;
-```
-
 ## Part IV: Publishing and Sharing and Chatting!
 
 Congratulations. Your chat app is complete. Save all your files and commit your changes!
@@ -292,8 +302,10 @@ Congratulations. Your chat app is complete. Save all your files and commit your 
 - `git commit -m "Create chat app using Firebase"`
 - `git push`
 
-After entering your username and password, you'll need to add `USERNAME.github.io` to the list of accepted domains in Firebase. Then, you'll be able to view your app at `USERNAME.github.io/chat/`, as well as share this link with your friends, and actually communicate with them using the app! Try it out!
+**After entering your username and password, you'll need to add `USERNAME.github.io` to the list of Authorized Domains in Firebase.**
+
+Then, you'll be able to view your app at `USERNAME.github.io/chat/`, as well as share this link with your friends, and actually communicate with them using the app! Try it out!
 
 ## Part V: Hacking
 
-- ok what can you do with this realtime db stuff?? TODO
+- Make a multiplayer guessing game
