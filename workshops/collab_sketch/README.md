@@ -1,4 +1,4 @@
-Collaborative Sketch
+# Collaborative Sketch
 
 Short link to this workshop: [https://workshops.hackclub.com/collab_sketch](https://workshops.hackclub.com/collab_sketch)
 
