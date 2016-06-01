@@ -1,6 +1,6 @@
 # Notes to Self
 
-Short Link: [https://workshops.hackclub.com/notesToSelf/](https://workshops.hackclub.com/notesToSelf/)
+Short Link: [https://workshops.hackclub.com/notes_to_self/](https://workshops.hackclub.com/notes_to_self/)
 
 Demo: [here](http://prophetorpheus.github.io/notes_to_self/)
 
@@ -24,10 +24,10 @@ This is a way to keep personal notes in your browser storage. Since the notes ar
 ### Creating Our Files
 
 - Open up Cloud9 workspace.
-- Create new folder in your `projects` directory, and name it `notesToSelf`.
-- Create a new file in `notesToSelf` named `index.html`
-- Create a new file in `notesToSelf` named `main.js`
-- Create a new file in `notesToSelf` named `styles.css`
+- Create new folder in your `projects` directory, and name it `notes_to_self`.
+- Create a new file in `notes_to_self` named `index.html`
+- Create a new file in `notes_to_self` named `main.js`
+- Create a new file in `notes_to_self` named `styles.css`
 
 In `index.html`, add the base template, and a title "Notes to Self"
 
@@ -663,7 +663,7 @@ Huzzah, you've created an application that anyone can use, to write notes to the
 - `git commit -m "Add Notes to Self"`
 - `git push`
 
-After entering your username and password (hidden, as always), you'll be able to write your own notes to self at `USERNAME.github.io/notesToSelf` (replace `USERNAME` with your own username)!
+After entering your username and password (hidden, as always), you'll be able to write your own notes to self at `USERNAME.github.io/notes_to_self` (replace `USERNAME` with your own username)!
 
 Though there won't be much to share in this project, post a link to [`#shipit`](https://starthackclub.slack.com/messages/shipit) on Slack! Maybe others will use your project to write their own notes to self.
 
