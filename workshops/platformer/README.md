@@ -1,8 +1,8 @@
 # Platformer
 
-Short link to this workshop: [https://workshops.hackclub.com/platformer/](https://workshops.hackclub.com/platformer/)
+Short link to this workshop: https://workshops.hackclub.com/platformer/
 
-Demo: [here](http://prophetorpheus.github.io/platformer/)
+Demo: [here](https://prophetorpheus.github.io/platformer/)
 
 ---
 
