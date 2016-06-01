@@ -2,7 +2,7 @@
 
 Short link to this workshop: https://workshops.hackclub.com/collab_sketch
 
-Demo: [here](http://prophetorpheus.github.io/collab_sketch/)
+Demo: [here](https://prophetorpheus.github.io/collab_sketch/)
 
 ---
 
