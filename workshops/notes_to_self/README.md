@@ -2,6 +2,8 @@
 
 Short Link: [https://workshops.hackclub.com/notesToSelf/](https://workshops.hackclub.com/notesToSelf/)
 
+Demo: [here](http://prophetorpheus.github.io/notes_to_self/)
+
 ---
 
 This is a way to keep personal notes in your browser storage. Since the notes are saved to `localStorage`, these are truly notes-to-self (unless you share your computer).
@@ -9,8 +11,8 @@ This is a way to keep personal notes in your browser storage. Since the notes ar
 **Table of Contents**
 
 - [Part I: Set-up](#part-i-set-up)
-- [Part II: The HTML File](#part-iv-the-html-file)
-- [Part III: Styling the Form](#part-iv-styling-the-form)
+- [Part II: The HTML File](#part-ii-the-html-file)
+- [Part III: Styling the Form](#part-iii-styling-the-form)
 - [Part IV: The JavaScript File](#part-iv-the-javascript-file)
 - [Part V: Odds and Ends](#part-v-odds-and-ends)
 - [Part VI: Styling the Page](#part-vi-styling-the-page)
@@ -50,7 +52,7 @@ We'll be using jQuery in `main.js` later, and we'll need to add it to our `index
 
 ### Connecting Our Files
 
-Add `styles.css` to `index.html` by including the following line in the **head**:
+Add `styles.css` to `index.html` by including the following line in the **head**, after the title:
 
 ```html
 <link href="styles.css" rel="stylesheet">
@@ -225,29 +227,31 @@ The [display property](http://learnlayout.com/display.html) specifies how elemen
 
 ## Part IV: The JavaScript File
 
-We're saving our notes in our browser's local storage, which is exactly what it sounds like -- storage space within your browser. We can view and change what's in our browser's local storage with JavaScript.
+We're saving our notes in our browser's local storage, which is exactly what it sounds like -- storage space within your browser that's local, i.e., confined to your computer. We can view and change what's in our browser's local storage with JavaScript.
 
 Open up your live preview in the external view, by clicking the icon of a box with an arrow.
 
 ### Accessing Local Storage
 
-We can access local storage by referencing the variable `localStorage`.There are two methods we'll be using to get and set data in this variable, `.getItem()` and `.setItem().
+We can access local storage by referencing the variable `localStorage`. There are two methods we'll be using to get and set data in this variable, `.getItem()` and `.setItem()`.
 
 Local storage is an object, and objects in JavaScript are made up of **keys** that correspond to **values**.
 
-For example:
+**For example:**
 
 ```js
-var orpheusFacts = {name: "Prophet Orpheus", numberOfEyes: 2};
+var orpheusFacts = {
+  name: "Prophet Orpheus",
+  numberOfEyes: 2,
+  likes: [ "food", "coding", "Hack Club" ]
+};
 ```
 
 One **key** is `name` and the **value** of `name` is `Prophet Orpheus`. Another key is `numberOfEyes`, and its value is 2. Orpheus has two eyes.
 
-We're going to save our entire list of notes by having a key named "notes" that points to the whole list of notes.
+In addition to having strings and numbers as values, we can also have a value that's a list. Orpheus' `likes` has a value of a list that includes several things: food, coding, and Hack Club.
 
-```js
-// maybe give an example of how objects do
-```
+Similar to this, we're going to save our list of notes in local storage by mapping a key called "notes" to the list of notes.
 
 We can view what's in our local storage at the moment by right-clicking the external live preview and selecting `Inspect`, and going to the Resources tab. Once there, we can click the little arrow next to the item on the left sidebar that says "Local Storage." 
 
@@ -267,7 +271,7 @@ localStorage.setItem("notes", []);
 
 If we save and look at our local storage, we see `notes` paired with ... nothing?
 
-The gotcha about local storage is that it saves everything in strings, and its methods only take string arguments. This is a little frustrating, but easily solved, using a function called `JSON.stringify()`. We can convert things that are not strings to properly formatted JSON strings.
+The gotcha about local storage is that it saves everything in strings, and its methods only take string arguments. This is a little frustrating, but easily solved, using a function called `JSON.stringify()`. We can convert things that are not strings to properly formatted JavaScript Object Notation (JSON) strings.
 
 Let's change the previous statement to this:
 
@@ -277,6 +281,8 @@ localStorage.setItem("notes", JSON.stringify([]));
 
 Now if we look in local storage, we'll see `[]`. This is what we want.
 
+![](img/localStorage_empty_notes.png)
+
 We'll also need to wrap the previous line in a conditional. We'd only want to set `notes` in local storage as an empty array (`[]`) if there are no existing notes (because we wouldn't want to overwrite what we currently have).
 
 So we'll say, if getting `notes` from local storage doesn't return a [truthy value](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=truthy%20values%20in%20javascript), then we'll set `notes` as the string representation of an empty array.
@@ -285,7 +291,7 @@ After making sure local storage has an item called `notes`, we'll reach into loc
 
 ```js
 if (!localStorage.getItem("notes")) {
-    localStorage.setItem("notes", JSON.stringify({}));
+  localStorage.setItem("notes", JSON.stringify({}));
 }
 
 var myNotes = JSON.parse(localStorage.getItem("notes"));
@@ -389,6 +395,8 @@ localStorage.setItem("notes", JSON.stringify(myNotes));
 That's the end of `postNewNote()`. Save and refresh your external live preview, and open up local storage in the Inspector.
 
 If you go ahead and submit a new note, you'll see the `notes` entry in local storage updated to include your new note!
+
+![](img/localStorage_first_note.png)
 
 Now we just need to display it on our page.
 
@@ -544,7 +552,9 @@ Our `displayNotes()` function is now complete! All we have to do now is actually
 displayNotes();
 ```
 
-Tada! If you save and refresh you should be able to see your note on the page.
+If you save and refresh you should be able to see your note on the page. Yay!
+
+![](img/localStorage_first_note_shown.png)
 
 ## Part V: Odds and Ends
 
@@ -594,7 +604,7 @@ It's a little annoying that we have to scroll all the way down to check if our n
 Fortunately, we've appended each note to the end of the array, so they're in order by timestamp. We can just modify our for loop to go through the array backwards.
 
 ```js
-~~for (var i = 0; i < myNotes.length; i++) {~~
+f̶o̶r̶ ̶(̶v̶a̶r̶ ̶i̶ ̶=̶ ̶0̶;̶ ̶i̶ ̶<̶ ̶m̶y̶N̶o̶t̶e̶s̶.̶l̶e̶n̶g̶t̶h̶;̶ ̶i̶+̶+̶)̶ ̶{̶
 for (var i = myNotes.length-1; i >= 0; i--) {
 ```
 
@@ -607,18 +617,21 @@ If you've tried to write paragraphs by pressing Enter in your notes, you may hav
 To replace something in JavaScript, we can use a method called `.replace()`. Modify the line `var noteContent = note.content;` within the for-loop in **`displayNotes()`** like so:
 
 ```js
+v̶a̶r̶ ̶n̶o̶t̶e̶C̶o̶n̶t̶e̶n̶t̶ ̶=̶ ̶n̶o̶t̶e̶.̶c̶o̶n̶t̶e̶n̶t̶;̶
 var noteContent = note.content.replace(/\n/g,"<br>");
 ```
 
 `.replace()` takes two arguments (as you would expect). The first is the text you would like to replace, and the second is the text you would like to replace it with.
 
-In this case, we are replacing any instances of `\n` with the characters `<br>`. What about the `/` and `/g`? The two `/` act as quotes around your text. As for the `g`, `.replace()` only replaces the first occurrence of the thing you want to replace. Adding `g` (which stands for global) tells `.replace()` to replace every occurrence.
+In this case, we are replacing any instances of `\n` with the characters `<br>`.
+What about the `/` and `/g`? What are those? The two `/` act as quotes around your text. As for the `g`, `.replace()` only replaces the first occurrence of the thing you want to replace. Adding `g` (which stands for global) tells `.replace()` to replace every occurrence.
 
 Let's save and refresh to see if it worked.
 
 Great, looks like we are successfully replacing new line characters with `<br>`, but not with the result we want. The issue is that we are adding `noteContent` as _text_ to the `noteContentDisplay` in the line `var noteContentDisplay = $("<p>").addClass("note-content").text(noteContent);`. What we want to do instead is add it as _HTML_, since we have the `<br>` tags that we want to turn into horizontal breaks. We'll modify the line so that it uses the jQuery method `.html()` instead of `.text()`:
 
 ```js
+v̶a̶r̶ ̶n̶o̶t̶e̶C̶o̶n̶t̶e̶n̶t̶D̶i̶s̶p̶l̶a̶y̶ ̶=̶ ̶$̶(̶"̶<̶p̶>̶"̶)̶.̶a̶d̶d̶C̶l̶a̶s̶s̶(̶"̶n̶o̶t̶e̶-̶c̶o̶n̶t̶e̶n̶t̶"̶)̶.̶t̶e̶x̶t̶(̶n̶o̶t̶e̶C̶o̶n̶t̶e̶n̶t̶)̶;̶ ̶
 var noteContentDisplay = $("<p>").addClass("note-content").html(noteContent);
 ```
 
@@ -626,22 +639,21 @@ var noteContentDisplay = $("<p>").addClass("note-content").html(noteContent);
 
 Currently it's a bit hard to differentiate between note titles and note contents, since they are all in the same typeface and style.
 
-I'd like to make my note titles all bolded, and my note dates all italicized.
+I'd like to make my note dates all italicized.
 
 Good thing we put classes on them! Now they are easy to select.
 
 Open up your `styles.css` file again, and type the following:
 
 ```css
-.note-title {
-  font-weight: bold;
-}
 .note-date {
   font-style: italic;
 }
 ```
 
 You can of course do more in terms of styling, but I'll leave it to you.
+
+![](img/nts_css.gif)
 
 ## Part VII: Publishing and Sharing
 
@@ -661,3 +673,5 @@ Though there won't be much to share in this project, post a link to [`#shipit`](
 - access local storage to edit or delete your notes
 - add more fields to each note (suggestions include "what i was eating today")
 - add tags to better organize your notes
+
+What else can you do with local storage? With JSON? With objects?
