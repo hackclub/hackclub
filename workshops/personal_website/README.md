@@ -313,7 +313,6 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 **Websites Made by Other Hack Club Hackers:**
 
-- [Alyssa Sun](http://output.jsbin.com/fopoxe)
 - [Rebecca Jourard](https://mnefertiti.github.io/personalwhale/)
 - [John Cena's](http://nguyenbrian.github.io/john-cenas-personal-website/) (created by Brian Nguyen)
 - [Jevin Sidhu](http://jevinsidhu.com/)
