@@ -555,7 +555,9 @@ function keyPressed() {
 }
 ```
 
-Here I've specified that if the key pressed had a `keyCode` of 115 or 83 (that's an "s"), `saveCanvas()` should be called, and the file should be saved as `geometricPattern.png`. The statement `return false;` at the end makes sure that this key press doesn't trigger any unwanted side effects. (TODO clarify)
+This code says that if the user presses a key with the `keyCode` 115 or 83 (which both correspond to "s"), `saveCanvas()` should be called and the file should be saved as `geometricPattern.png`.
+
+The `return false;` at the end of the function tells the browser to ignore any default behavior that might be associated with the pressed key (ex. if you press enter, the browser thinks that you're trying to submit a form by default -- this prevents that).
 
 ### Making It Live
 
