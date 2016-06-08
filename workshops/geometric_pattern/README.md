@@ -573,7 +573,11 @@ Congratulations! Your pattern is now live on `USERNAME.github.io/geometric_patte
 
 ## Part VI: Animate It
 
-WARNING: THIS SECTION IS NOT RECOMMENDED FOR THOSE WITH A HISTORY OF EPILEPSY. Even if you have not been previously diagnosed with epilepsy, you should be careful, and immediately close the window and consult a doctor if you experience any of the following symptoms: lightheadedness, altered vision, eye or face twitching, jerking or shaking of arms or legs, disorientation, confusion, or momentary loss of awareness.
+_**WARNING: THIS SECTION INVOLVES FLASHING COLORS AND IS NOT RECOMMENDED FOR THOSE WITH A HISTORY OF EPILEPSY.**_
+
+_Even if you have not been previously diagnosed with epilepsy, you should be careful, and immediately close the window and consult a doctor if you experience any of the following symptoms: lightheadedness, altered vision, eye or face twitching, jerking or shaking of arms or legs, disorientation, confusion, or momentary loss of awareness._
+
+---
 
 Let's first add the line to change the `draw()` function from running 60 times a second to 5 times a second. We can do this by using the `frameRate()` function in `setup()`:
 
