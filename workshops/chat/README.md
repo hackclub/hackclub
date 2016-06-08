@@ -299,7 +299,7 @@ function showMessage(msg) {
 Congratulations. Your chat app is complete. Save all your files and commit your changes!
 
 - `git add -A`
-- `git commit -m "Create chat app using Firebase"`
+- `git commit -m "Create a chat app using Firebase"`
 - `git push`
 
 **After entering your username and password, you'll need to add `USERNAME.github.io` to the list of Authorized Domains in Firebase.**

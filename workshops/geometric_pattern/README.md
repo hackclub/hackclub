@@ -562,7 +562,7 @@ Here I've specified that if the key pressed had a `keyCode` of 115 or 83 (that's
 Make sure all of your files are saved. Then, head on over to the terminal in Cloud9 by pressing `alt+t` and type the following commands (pressing Enter after each one):
 
 - `git add --all`
-- `git commit -m "Geometric Pattern Workshop"`
+- `git commit -m "Create a geometric pattern using p5.js"`
 - `git push`
 
 Then, enter your GitHub username and password (careful here, as password will not be displayed).

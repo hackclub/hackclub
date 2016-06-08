@@ -472,7 +472,7 @@ Now it's time to save your work with git and publish your code to GitHub and you
 Open up the console in Cloud9 if you don't see it already, by going to `View > Console`. Then, making sure you are on the tab that has a prompt with your username and workspace, type the following git commands:
 
 1. `git add --all`
-2. `git commit -m "Add Easy button"`
+2. `git commit -m "Create a 'That Was Easy' button"`
 3. `git push`
 
 Enter your username and password, and you should be all set. This should update your personal website so that your "Easy" button can be found at `https://USERNAME.github.io/that_was_easy/`.
