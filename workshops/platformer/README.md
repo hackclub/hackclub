@@ -684,7 +684,7 @@ It's time to add in our sprite images! This exercise is left to the user.
 After making sure all files are saved, go to the terminal in Cloud9 and type the following git commands:
 
 - `git add -A`
-- `git commit -m "Add platformer game"`
+- `git commit -m "Create a platformer game"`
 - `git push`
 
 Don't forget you'll need to input your username and password (hidden). After successfully pushing, your game will be live and playable on `USERNAME.github.io/platformer/`!!

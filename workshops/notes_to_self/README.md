@@ -660,7 +660,7 @@ You can of course do more in terms of styling, but I'll leave it to you.
 Huzzah, you've created an application that anyone can use, to write notes to themselves! Let's make sure everything is saved, and then publish, using these familiar commands:
 
 - `git add --all`
-- `git commit -m "Add Notes to Self"`
+- `git commit -m "Complete the Notes to Self workshop"`
 - `git push`
 
 After entering your username and password (hidden, as always), you'll be able to write your own notes to self at `USERNAME.github.io/notes_to_self` (replace `USERNAME` with your own username)!
