@@ -291,7 +291,7 @@ After making sure local storage has an item called `notes`, we'll reach into loc
 
 ```js
 if (!localStorage.getItem("notes")) {
-  localStorage.setItem("notes", JSON.stringify({}));
+  localStorage.setItem("notes", JSON.stringify([]));
 }
 
 var myNotes = JSON.parse(localStorage.getItem("notes"));
