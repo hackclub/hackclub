@@ -306,6 +306,14 @@ function clearDrawing() {
 }
 ```
 
+To make other screens clear when the drawing is removed from Firebase:
+
+```js
+pointsData.on("child_removed", function () {
+  points = [];
+});
+```
+
 Congratulations! Your collaborative drawing app is now complete.
 
 ## Part IV: Publishing and Sharing
