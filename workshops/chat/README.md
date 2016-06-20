@@ -6,9 +6,7 @@ Demo: [here](https://prophetorpheus.github.io/chat/)
 
 ---
 
-In this workshop we'll be implementing a real-time chat using Firebase. Firebase is a back-end having many features, one of which is a real-time database. This means that all the information within the database gets updated across everything that uses the database.
-
-This workshop is a revival of the now-defunct tutorial made by Firebase itself.
+In this workshop we'll be implementing a real-time chat using Firebase. Firebase is a real-time database. This means that all the information we send to Firebase gets updated across everything connected to that database.
 
 **Table of Contents**
 
@@ -36,6 +34,7 @@ This workshop is a revival of the now-defunct tutorial made by Firebase itself.
     </body>
   </html>
   ```
+
 - Include Firebase, by adding this to the **body** of `index.html`:
 
   ```html
