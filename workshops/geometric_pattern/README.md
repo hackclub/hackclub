@@ -2,7 +2,7 @@
 
 ![](img/sample1.png)
 
-Short link to this workshop: [https://workshops.hackclub.com/geometric_pattern](https://workshops.hackclub.com/geometric_pattern)
+Short link to this workshop: https://workshops.hackclub.com/geometric_pattern
 
 [Demo](http://prophetorpheus.github.io/geometric_pattern/)
 

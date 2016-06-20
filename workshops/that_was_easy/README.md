@@ -2,7 +2,7 @@
 
 ![](img/easy_screenshot.png)
 
-Short link to this workshop: [https://workshops.hackclub.com/that_was_easy](https://workshops.hackclub.com/that_was_easy)
+Short link to this workshop: https://workshops.hackclub.com/that_was_easy
 
 [Demo](http://prophetorpheus.github.io/that_was_easy/)
 
