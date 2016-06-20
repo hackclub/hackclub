@@ -1,6 +1,6 @@
 # Chat
 
-Short link to this workshop: [https://workshops.hackclub.com/chat](https://workshops.hackclub.com/chat)
+Short link to this workshop: https://workshops.hackclub.com/chat
 
 Demo: [here](https://prophetorpheus.github.io/chat/)
 
