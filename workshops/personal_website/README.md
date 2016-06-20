@@ -115,6 +115,10 @@ Let's check out what our HTML file looks like in Live Preview! First, we'll save
 
 ![](img/c9_live_preview.gif)
 
+You can also open the external live preview by clicking the icon that looks like a box with an arrow. This will open live preview in a new tab, at a temporary URL.
+
+![](img/c9_external_prev.gif)
+
 As you can see, the page is blank. This is because we haven't added anything to the `body` section yet. Let's add some content!
 
 ### 3) Adding Text to the Body
