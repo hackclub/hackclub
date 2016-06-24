@@ -187,11 +187,20 @@ Go ahead and add this into your `index.html` now. I put my picture before my hea
 
 ![](img/c9_index_html.png)
 
-Now, your image may either be too big, or too small. Fret not. CSS will allow you to manipulate the styling of your page in all your needs.
+Hurray! You've created a basic HTML page! Let's save our progress with git!
+
+In Cloud9, press `Alt + t` on the keyboard. This will open the terminal, which allows us to run special types of commands in Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
+
+- `git add --all` (then press enter)
+- `git commit -m "Create personal website"` (then press enter)
+
+Now, if you type `git log`, you'll be able to see your first commit! Think of git as a way to save your project in stages, much like how a game allows you to save different versions and go back.
+
+Though we've made a commit and saved our changes, we're not done. Our webpage is fully functional, but needs a little help in the look-and-feel department. Fret not. CSS will allow you to manipulate the styling of your page in all your needs.
 
 ## Part III: The CSS File
 
-So what is CSS? CSS, also known as Cascading Style Sheets, is a language used for styling the tags on a web page, otherwise known as elements.
+So what is CSS? CSS, also known as Cascading Style Sheets, is a language used for styling the tags (or "elements") on a web page.
 
 While HTML oversees the content and the way it's structured, CSS is how you'll specify how you'd like your content to look, and with it, you can set things like colors, spacing, and more.
 
@@ -273,21 +282,23 @@ Here is the transformation that your stylesheet will have undergone at the end o
 
 ![](img/c9_css_progression.gif)
 
-Now, let's save and look at our work. Ah, it is truly beautiful to behold.
+Now, let's save and look at our work. Ah, it is truly beautiful to behold. Now let's commit the changes.
+
+We'll once again use the terminal in Cloud9 to save our changes with git.
+- `git add --all` (then press enter)
+- `git commit -m "Add styling to personal website"` (then press enter)
 
 ![](img/celebrate_harry_potter.gif)
 
 ## Part IV: Publishing
 
-Right now we can only see our website on our own computer. Let's get a link that we can share with anyone on the internet! We'll use the previously mentioned GitHub Pages to do this.
+Right now we can only see our website on our own computer. Let's get our website online!
 
-1. In Cloud9, press `Alt + t` on the keyboard. This is going to open the terminal, which will allow us to run special types of commands in Cloud9. In this case, we're going to save and upload our code to GitHub. Type in the following commands:
-  - `git add --all` (then press enter)
-  - `git commit -m "Initial commit"` (then press enter)
+1. In the Cloud9 terminal, we'll push our commits to our GitHub repository:
   - `git push` (then press enter)
     - Enter your GitHub username (then press enter).
     - Enter your GitHub password (then press enter). _The characters won't show up on the screen, but rest assured, they are still being typed._
-3. Now try to view the website by going to `USERNAME.github.io` (replace `USERNAME` with your actual GitHub username)
+2. Now try to view the website by going to `USERNAME.github.io` (replace `USERNAME` with your actual GitHub username)
 
 #### Celebrate!
 
@@ -309,14 +320,15 @@ Now that you have finished building a website, you should share your beautiful c
 
 In this section, your challenge is to add additional features to your website to make it your own!
 
-Want to use a different font? Google!  
-Want to add more pictures? Google!  
-Want to add more text? Your entire life story? Background image? Background music? Video? More pages? Google!
+Want to use a different font? Google it!  
+Want to add more pictures? Google it!  
+Want to add more text? Your entire life story? Background image? Background music? Video? More pages? Google it!
 
 A good way to get ideas for what to add to your website is to look at other people's websites. Find a website that you like, either from the below list or from somewhere else on the internet, pick one aspect of that website that you would like on your own website, and Google for ways to make it happen!
 
 **Websites Made by Other Hack Club Hackers:**
 
+- [Gabriel Lazrak](http://gabriellazrak.github.io/)
 - [Rebecca Jourard](https://mnefertiti.github.io/personalwhale/)
 - [John Cena's](http://nguyenbrian.github.io/john-cenas-personal-website/) (created by Brian Nguyen)
 - [Jevin Sidhu](http://jevinsidhu.com/)
