@@ -498,3 +498,6 @@ Now that you know how to add sounds to buttons, you can do many things, includin
 - `setInterval` for looping. Tell someone how easy it was, forever.
 - Change what this button does. Maybe it doesn't play a sound. Maybe it changes the background color! Maybe it trolls the user and closes the tab!
 - Bind more actions to keys. Surprise me.
+
+**Inspiration:**
+- [Yeezy button](https://sohuang.github.io/that_was_easy/)
