@@ -364,6 +364,13 @@ It's beautiful!
 
 Yay! It works! It was so easy! Now you can terrorize everyone by clicking this button on your phone's mobile browser whenever anyone does anything.
 
+Now, let's save all of our progress with git, by opening the terminal in Cloud9 and running these commands:
+
+- `git add --all`
+- `git commit -m "Create that was easy button"`
+
+It's important to save all relative milestones with git.
+
 ## Part VI: Upgrading
 
 Maybe you'd like to use this button mouse-free. Maybe you prefer using the keyboard to navigate your computer. Well, we can make that happen.
@@ -465,15 +472,18 @@ function delegateKeypress(event) {
 
 And that's it! Save your `main.js` and try out the key binding!
 
+Then, let's save our progress with git by running the following commands in the Cloud9 terminal (`Alt+t`). Make sure you've saved all of your files on Cloud9!
+
+- `git add --all`
+- `git commit -m "Add key binding to that was easy button`
+
 ## Part VII: Publishing and Sharing
 
-Now it's time to save your work with git and publish your code to GitHub and your personal website. Make sure you've saved all of your files on Cloud9!
+Now it's time to publish your code to GitHub and your personal website.
 
 Open up the console in Cloud9 if you don't see it already, by going to `View > Console`. Then, making sure you are on the tab that has a prompt with your username and workspace, type the following git commands:
 
-1. `git add --all`
-2. `git commit -m "Create a 'That Was Easy' button"`
-3. `git push`
+- `git push`
 
 Enter your username and password, and you should be all set. This should update your personal website so that your "Easy" button can be found at `https://USERNAME.github.io/that_was_easy/`.
 
