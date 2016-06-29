@@ -395,25 +395,25 @@ function delegateKeypress(event) {
 
 ### Attaching Keyboard Inputs to Sound
 
-Speaking of that, we need to assign keys to our sounds, so let's find the key code for the key you want to use. You can find key codes by putting the line `console.log(event.keyCode);` in your `delegateKeypress` function, opening up external live preview, and looking at the console in the Inspector while you press a key.
+Speaking of that, we need to assign keys to our sounds, so let's find the key code for the key you want to use. You can find key codes by putting the line `console.log(event.charCode);` in your `delegateKeypress` function, opening up external live preview, and looking at the console in the Inspector while you press a key.
 
 Now that we've gotten the key code, we'll use a conditional in the event of a key press event to check if the key that was pressed was the key that we designated to make the sound.
 
 We'll add this in our `delegateKeypress()` function:
 
 ```js
-if (event.keyCode == 32) {
+if (event.charCode == 32) {
 
 }
 ```
 
-Here we are saying, if the event's `keyCode` is equal to 32 (that's the key code for the space character), then do something (we haven't yet specified what). `event.keyCode` is an attribute of the event, and it contains the value of the key code of the key that was pressed.
+Here we are saying, if the event's `charCode` is equal to 32 (that's the character code for the space character), then do something (we haven't yet specified what). `event.charCode` is an attribute of the event, and it contains the value of the character code of the key that was pressed.
 
-So, if the key code is indeed 32, I would like the browser to tell me "That was easy!". No problem, we are already well-versed in playing sounds:
+So, if the character code is indeed 32, I would like the browser to tell me "That was easy!". No problem, we are already well-versed in playing sounds:
 
 ```js
 function delegateKeypress(event) {
-  if (event.keyCode == 32) {
+  if (event.charCode == 32) {
     var thatWasEasy = new Audio("that_was_easy.mp3");
     thatWasEasy.play();
   }
@@ -432,7 +432,7 @@ That said, we can now replace our repetitive code like so:
 
 ```js
 function delegateKeypress(event) {
-  if (event.keyCode == 32) {
+  if (event.charCode == 32) {
     v̶a̶r̶ ̶t̶h̶a̶t̶W̶a̶s̶E̶a̶s̶y̶ ̶=̶ ̶n̶e̶w̶ ̶A̶u̶d̶i̶o̶(̶"̶t̶h̶a̶t̶_̶w̶a̶s̶_̶e̶a̶s̶y̶.̶m̶p̶3̶"̶)̶;̶
     t̶h̶a̶t̶W̶a̶s̶E̶a̶s̶y̶.̶p̶l̶a̶y̶(̶)̶;̶
     $("#easy").trigger("click");
@@ -457,7 +457,7 @@ $("#easy").on("click", sayThatWasEasy);
 $(document).keypress(delegateKeypress);
 
 function delegateKeypress(event) {
-  if (event.keyCode == 32) {
+  if (event.charCode == 32) {
     $("#easy").trigger("click");
   }
 }
