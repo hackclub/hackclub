@@ -364,6 +364,13 @@ It's beautiful!
 
 Yay! It works! It was so easy! Now you can terrorize everyone by clicking this button on your phone's mobile browser whenever anyone does anything.
 
+Now, let's save all of our progress with git, by opening the terminal in Cloud9 and running these commands:
+
+- `git add --all`
+- `git commit -m "Create that was easy button"`
+
+It's important to save all relative milestones with git.
+
 ## Part VI: Upgrading
 
 Maybe you'd like to use this button mouse-free. Maybe you prefer using the keyboard to navigate your computer. Well, we can make that happen.
@@ -395,25 +402,25 @@ function delegateKeypress(event) {
 
 ### Attaching Keyboard Inputs to Sound
 
-Speaking of that, we need to assign keys to our sounds, so let's find the key code for the key you want to use. You can find key codes by putting the line `console.log(event.keyCode);` in your `delegateKeypress` function, opening up external live preview, and looking at the console in the Inspector while you press a key.
+Speaking of that, we need to assign keys to our sounds, so let's find the key code for the key you want to use. You can find key codes by putting the line `console.log(event.charCode);` in your `delegateKeypress` function, opening up external live preview, and looking at the console in the Inspector while you press a key.
 
 Now that we've gotten the key code, we'll use a conditional in the event of a key press event to check if the key that was pressed was the key that we designated to make the sound.
 
 We'll add this in our `delegateKeypress()` function:
 
 ```js
-if (event.keyCode == 32) {
+if (event.charCode == 32) {
 
 }
 ```
 
-Here we are saying, if the event's `keyCode` is equal to 32 (that's the key code for the space character), then do something (we haven't yet specified what). `event.keyCode` is an attribute of the event, and it contains the value of the key code of the key that was pressed.
+Here we are saying, if the event's `charCode` is equal to 32 (that's the character code for the space character), then do something (we haven't yet specified what). `event.charCode` is an attribute of the event, and it contains the value of the character code of the key that was pressed.
 
-So, if the key code is indeed 32, I would like the browser to tell me "That was easy!". No problem, we are already well-versed in playing sounds:
+So, if the character code is indeed 32, I would like the browser to tell me "That was easy!". No problem, we are already well-versed in playing sounds:
 
 ```js
 function delegateKeypress(event) {
-  if (event.keyCode == 32) {
+  if (event.charCode == 32) {
     var thatWasEasy = new Audio("that_was_easy.mp3");
     thatWasEasy.play();
   }
@@ -432,7 +439,7 @@ That said, we can now replace our repetitive code like so:
 
 ```js
 function delegateKeypress(event) {
-  if (event.keyCode == 32) {
+  if (event.charCode == 32) {
     v̶a̶r̶ ̶t̶h̶a̶t̶W̶a̶s̶E̶a̶s̶y̶ ̶=̶ ̶n̶e̶w̶ ̶A̶u̶d̶i̶o̶(̶"̶t̶h̶a̶t̶_̶w̶a̶s̶_̶e̶a̶s̶y̶.̶m̶p̶3̶"̶)̶;̶
     t̶h̶a̶t̶W̶a̶s̶E̶a̶s̶y̶.̶p̶l̶a̶y̶(̶)̶;̶
     $("#easy").trigger("click");
@@ -457,7 +464,7 @@ $("#easy").on("click", sayThatWasEasy);
 $(document).keypress(delegateKeypress);
 
 function delegateKeypress(event) {
-  if (event.keyCode == 32) {
+  if (event.charCode == 32) {
     $("#easy").trigger("click");
   }
 }
@@ -465,15 +472,18 @@ function delegateKeypress(event) {
 
 And that's it! Save your `main.js` and try out the key binding!
 
+Then, let's save our progress with git by running the following commands in the Cloud9 terminal (`Alt+t`). Make sure you've saved all of your files on Cloud9!
+
+- `git add --all`
+- `git commit -m "Add key binding to that was easy button`
+
 ## Part VII: Publishing and Sharing
 
-Now it's time to save your work with git and publish your code to GitHub and your personal website. Make sure you've saved all of your files on Cloud9!
+Now it's time to publish your code to GitHub and your personal website.
 
 Open up the console in Cloud9 if you don't see it already, by going to `View > Console`. Then, making sure you are on the tab that has a prompt with your username and workspace, type the following git commands:
 
-1. `git add --all`
-2. `git commit -m "Create a 'That Was Easy' button"`
-3. `git push`
+- `git push`
 
 Enter your username and password, and you should be all set. This should update your personal website so that your "Easy" button can be found at `https://USERNAME.github.io/that_was_easy/`.
 
@@ -488,3 +498,6 @@ Now that you know how to add sounds to buttons, you can do many things, includin
 - `setInterval` for looping. Tell someone how easy it was, forever.
 - Change what this button does. Maybe it doesn't play a sound. Maybe it changes the background color! Maybe it trolls the user and closes the tab!
 - Bind more actions to keys. Surprise me.
+
+**Inspiration:**
+- [Yeezy button](https://sohuang.github.io/that_was_easy/)
