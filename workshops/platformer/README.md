@@ -697,3 +697,8 @@ Be sure to post your creation on the [`#shipit`](https://starthackclub.slack.com
 - Add jewels to collect for bonus points. Hint, it's just like obstacles, except instead of dying when you hit one, you gain a score boost.
 - Change the terrain
 - Modify the camera motion to be independent of the player. Instead of losing when you hit an obstacle, you lose when you get stuck and end up off-screen on the left.
+
+**Examples:**
+
+- [Gabriel's Game](http://gabriellazrak.github.io/platformer/)
+- [Soul Collector](http://sohuang.github.io/platformer/)

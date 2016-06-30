@@ -327,3 +327,8 @@ Share your URL to the [`#shipit`](https://starthackclub.slack.com/messages/shipi
 ## Part V: Hacking
 
 You can create other collaboration-driven projects using Firebase, such as a story game! Or use Firebase to organize an internet scavenger hunt!
+
+**Examples:**
+
+- [Change drawing settings](http://sohuang.github.io/collab_sketch/)
+- [Draw continuous lines](http://maxwofford.com/collaborative_sketch/)

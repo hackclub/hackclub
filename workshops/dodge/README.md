@@ -699,6 +699,12 @@ Don't forget to share a link to your beautiful creation on the Slack on the [`#s
 
 Infinite possibilities await you! [p5.js documentation](http://p5js.org/reference/) is a great resource, and can help you fulfill all of your wildest ambitions for this game!
 
+**Examples:**
+
+- [Patrick Dodge](http://katielattaa.github.io/dodge/)
+- [Dodge with Levels](https://gabriellazrak.github.io/dodge/)
+- [Collect Poo](https://jocyhe.github.io/collectpoo/index.html)
+
 ## Attributions
 
 Thank you to the following people for making this workshop possible.
