@@ -713,4 +713,7 @@ Ideas:
 
 ![](img/sample4.png)
 
-[Orpheus Remix](http://prophetorpheus.github.io/geometric_pattern/version2.html)
+**Examples:**
+
+- [Orpheus Remix](http://prophetorpheus.github.io/geometric_pattern/version2.html)
+- [Sophie's Internet Party](https://sohuang.github.io/geometric_pattern.1/)
