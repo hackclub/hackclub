@@ -86,13 +86,13 @@ Let's quickly walk through what a part of this code does.
 
 ```js
 var config = {
-  (...)
+  (...) // stuff hidden here for simplicity
 }
 ```
 
-This section creates a new `object` in JavaScript named `config`, which acts like a container for different `properties`. 
+This section of code creates a new `object` in JavaScript named `config`.  You can think of `object`s like containers for things like text or numbers which we call `properties`. 
 
-`properties` can be values that we store by name in the `object` and then retrieve at a later time.
+`properties` are values that we store by name in the `object` and then retrieve at a later time.
 
 ```js
 var config = {
