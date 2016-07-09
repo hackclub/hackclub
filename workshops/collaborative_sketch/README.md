@@ -82,6 +82,41 @@ firebase.initializeApp(config);
 var pointsData = firebase.database().ref();
 ```
 
+Let's quickly walk through what a part of this code does.
+
+```js
+var config = {
+  (...)
+}
+```
+
+This section creates a new `object` in JavaScript named `config`, which acts like a container for different `properties`. 
+
+`properties` can be values that we store by name in the `object` and then retrieve at a later time.
+
+```js
+var config = {
+  apiKey: "AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM",
+  (...)
+}
+```
+
+The first thing we've added to the object is a `property` named `apiKey`, which we assigned a jumbled value of text to.  To access this value, we can write:
+
+```js
+config.apiKey
+```
+
+The `.` is a special character that allows us to look inside of an `object`.  This can be used as a shortcut to replacing code, so writing `config.apiKey` is many times equivalent to writing the full jumbled text `"AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM"`.
+
+In the same manner, `config.authDomain` would look inside to the `object` for the value of `authDomain` and become "replaced" by `"collab-draw.firebaseapp.com"`.
+
+Can anybody guess what this line replaces?
+
+```js
+config.databaseURL
+```
+
 ### Keeping Track of the Points
 
 Beneath that, we'll add our p5.js functions, `setup()` and `draw()`:
