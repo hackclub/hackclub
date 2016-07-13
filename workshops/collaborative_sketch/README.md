@@ -6,7 +6,7 @@ Demo: [here](https://prophetorpheus.github.io/collaborative_sketch/)
 
 ---
 
-Draw with one or more friends! In this project we'll be combining HTML, p5.js, Firebase, and jQuery to create a collaborativeorative sketchpad. We'll use p5.js to manipulate the drawing space, Firebase to keep track of our drawing in terms of points that we've marked in our drawing, and jQuery to easily manipulate HTML elements.
+Draw with one or more friends! In this project we'll be combining HTML, p5.js, Firebase, and jQuery to create a collaborative sketchpad. We'll use p5.js to manipulate the drawing space, Firebase to keep track of our drawing in terms of points that we've marked in our drawing, and jQuery to easily manipulate HTML elements.
 
 **Table of Contents**
 
@@ -314,7 +314,7 @@ pointsData.on("child_removed", function () {
 });
 ```
 
-Congratulations! Your collaborativeorative drawing app is now complete.
+Congratulations! Your collaborative drawing app is now complete.
 
 ## Part IV: Publishing and Sharing
 
@@ -322,13 +322,13 @@ Make sure your files are all saved, and then run the familiar git commands.
 
 Then, remember to add `USERNAME.github.io` to the list of Authorized Domains on your Firebase app. After that, your project should be live on `USERNAME.github.io/collaborative_sketch/`!
 
-Share your URL to the [`#shipit`](https://starthackclub.slack.com/messages/shipit/) channel on Slack, so that everyone can collaborativeorate together!
+Share your URL to the [`#shipit`](https://starthackclub.slack.com/messages/shipit/) channel on Slack, so that everyone can collaborate together!
 
 ## Part V: Hacking
 
-You can create other collaborativeoration-driven projects using Firebase, such as a story game! Or use Firebase to organize an internet scavenger hunt!
+You can create other collaboration-driven projects using Firebase, such as a story game! Or use Firebase to organize an internet scavenger hunt!
 
 **Examples:**
 
 - [Change drawing settings](http://sohuang.github.io/collaborative_sketch/)
-- [Draw continuous lines](http://maxwofford.com/collaborativeorative_sketch/)
+- [Draw continuous lines](http://maxwofford.com/collaborative_sketch/)

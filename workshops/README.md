@@ -63,7 +63,7 @@ This is our recommended workshop flow. Through it you'll learn the fundamentals 
 | [Geometric Pattern](geometric_pattern/README.md)       | JavaScript & p5.js                               | Super cool geometric pattern with Processing    | [@jkwok91][jkwok91] |
 | [Platformer](platformer/README.md)                     | JavaScript & p5.js                               | A simple side-scrolling platformer game         | [@jkwok91][jkwok91] |
 | [Notes to Self](notes_to_self/README.md)               | JavaScript, DOM manipulation, and `localStorage` | An online personal journal                      | [@jkwok91][jkwok91] |
-| [Collaborative Sketch](collaborative_sketch/README.md) | p5.js & Firebase                                 | A real-time collaborativeorative drawing pad    | [@jkwok91][jkwok91] |
+| [Collaborative Sketch](collaborative_sketch/README.md) | p5.js & Firebase                                 | A real-time collaborative drawing pad           | [@jkwok91][jkwok91] |
 
 [jkwok91]: https://github.com/jkwok91
 
