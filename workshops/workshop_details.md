@@ -66,11 +66,6 @@ the JS Bin tab you were working in, your code will be there.
 
 [See a demo of this](img/jsbin_accidental_closing.gif).
 
-#### Recaps:
-
-- [First Meeting: Cherry Hill High School](../case_studies/cherry_hill_high_school_east/2015-09-05_first_meeting/recap.md)
-- [First Meeting: San Mateo High School](../case_studies/san_mateo_high_school/2015-09-21_meet_2/recap.md)
-
 #### Salient Reviews:
 
 To be added.
@@ -199,10 +194,6 @@ the credentials for all of the examples (via local storage).
 #### Common Mistakes
 
 None identified yet.
-
-#### Recaps:
-
-None yet.
 
 #### Salient Reviews:
 
