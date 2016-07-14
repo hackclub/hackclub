@@ -1,8 +1,8 @@
 # Collaborative Sketch
 
-Short link to this workshop: https://workshops.hackclub.com/collab_sketch
+Short link to this workshop: https://workshops.hackclub.com/collaborative_sketch
 
-Demo: [here](https://prophetorpheus.github.io/collab_sketch/)
+Demo: [here](https://prophetorpheus.github.io/collaborative_sketch/)
 
 ---
 
@@ -20,7 +20,7 @@ Draw with one or more friends! In this project we'll be combining HTML, p5.js, F
 
 ### Setting up the Files
 
-As always, we'll open up our Cloud9 workspace, and make a new folder in `projects`. We'll name it `collab_sketch`.
+As always, we'll open up our Cloud9 workspace, and make a new folder in `projects`. We'll name it `collaborative_sketch`.
 
 Then, we'll make two files, `index.html` and `main.js`.
 
@@ -30,7 +30,7 @@ Next, we'll set up the `index.html` by typing the base template:
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Collab Sketch!</title>
+    <title>Collaborative Sketch!</title>
   </head>
   <body>
   </body>
@@ -50,7 +50,7 @@ And we'll add script tags for Firebase, p5.js, jQuery, and our own `main.js` fil
 
 Much like we did in the last workshop, we'll need to create an app within Firebase. In this project, we'll be using Firebase to store the points of what we're drawing on our canvas.
 
-Let's head over to our [Firebase dashboard](https://console.firebase.google.com/) and create a new project, which we will name `collab-sketch`.
+Let's head over to our [Firebase dashboard](https://console.firebase.google.com/) and create a new project, which we will name `collaborative-sketch`.
 
 We'll also:
 
@@ -73,8 +73,8 @@ At this point, `main.js` looks something like this:
 ```js
 var config = {
   apiKey: "AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM",
-  authDomain: "collab-draw.firebaseapp.com",
-  databaseURL: "https://collab-draw.firebaseio.com",
+  authDomain: "collaborative-draw.firebaseapp.com",
+  databaseURL: "https://collaborative-draw.firebaseio.com",
   storageBucket: "",
 };
 firebase.initializeApp(config);
@@ -138,8 +138,8 @@ Now our `main.js` should look like this:
 ```js
 var config = {
   apiKey: "AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM",
-  authDomain: "collab-draw.firebaseapp.com",
-  databaseURL: "https://collab-draw.firebaseio.com",
+  authDomain: "collaborative-draw.firebaseapp.com",
+  databaseURL: "https://collaborative-draw.firebaseio.com",
   storageBucket: "",
 };
 firebase.initializeApp(config);
@@ -320,7 +320,7 @@ Congratulations! Your collaborative drawing app is now complete.
 
 Make sure your files are all saved, and then run the familiar git commands.
 
-Then, remember to add `USERNAME.github.io` to the list of Authorized Domains on your Firebase app. After that, your project should be live on `USERNAME.github.io/collab_sketch/`!
+Then, remember to add `USERNAME.github.io` to the list of Authorized Domains on your Firebase app. After that, your project should be live on `USERNAME.github.io/collaborative_sketch/`!
 
 Share your URL to the [`#shipit`](https://starthackclub.slack.com/messages/shipit/) channel on Slack, so that everyone can collaborate together!
 
@@ -330,5 +330,5 @@ You can create other collaboration-driven projects using Firebase, such as a sto
 
 **Examples:**
 
-- [Change drawing settings](http://sohuang.github.io/collab_sketch/)
+- [Change drawing settings](http://sohuang.github.io/collaborative_sketch/)
 - [Draw continuous lines](http://maxwofford.com/collaborative_sketch/)
