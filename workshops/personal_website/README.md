@@ -59,6 +59,17 @@ We'll be using a service called Cloud9 to write, save, and organize all of the c
 
    > ![](img/c9_start_signup.gif)
 
+   If Cloud9 asks for a credit card, use the following info. This is an empty
+   prepaid debit card -- it'll be enough for verification, but you won't be able
+   to make any actual charges to it.
+
+   > ![](img/c9_credit_card.png)
+   >
+   > | Field       | Value      |
+   > | ----------- | ---------- |
+   > | Full name   | Zach Latta |
+   > | Postal code | 94114      |
+
    You should end up with a screen that looks like this:
 
    > ![](img/c9_dashboard.png)
