@@ -717,3 +717,5 @@ Ideas:
 
 - [Orpheus Remix](http://prophetorpheus.github.io/geometric_pattern/version2.html)
 - [Sophie's Internet Party](https://sohuang.github.io/geometric_pattern.1/)
+- [Anthony's Amplitude Simulation (use arrow keys)](https://99anthonylam.github.io/geo_pat/)
+- [Irene's Bouncing Ball](https://strik0za.github.io/geometric_pattern/)
