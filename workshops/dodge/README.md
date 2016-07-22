@@ -704,7 +704,7 @@ Infinite possibilities await you! [p5.js documentation](http://p5js.org/referenc
 - [Patrick Dodge](http://katielattaa.github.io/dodge/)
 - [Dodge with Levels](https://gabriellazrak.github.io/dodge/)
 - [Collect Poo](https://jocyhe.github.io/collectpoo/index.html)
-- [Example of a game online](http://www.roundgames.com/game/Ragdoll+Laser+Dodge)
+- [Ragdoll Laser Dodge](http://www.roundgames.com/game/Ragdoll+Laser+Dodge)
 
 ## Attributions
 
