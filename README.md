@@ -24,8 +24,6 @@ Links:
   - [Hiring](hiring)
   - [Scripts](scripts)
   - [Updates](updates)
-  - [The Hack Series](events/hack_series)
-  - [Demo Night](events/demo_night)
 
 ## Staff
 
