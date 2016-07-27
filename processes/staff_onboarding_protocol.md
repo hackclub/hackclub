@@ -20,5 +20,5 @@ The things we need to do to onboard a new person onto the team.
 - [ ] Add to README of [meta](https://github.com/hackclub/meta) repo
 - [ ] Add to the team page of our website
 - [ ] Have them read the following:
-  - [ ] [`README.md`](README.md)
+  - [ ] [`README.md`](../README.md)
   - [ ] [Contribution guidelines](https://github.com/hackclub/hackclub/blob/master/CONTRIBUTING.md)
