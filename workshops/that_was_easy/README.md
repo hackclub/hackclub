@@ -1,10 +1,17 @@
 # That Was Easy Workshop
 
+_**We recommend going through this workshop in Google Chrome.**_
+
 ![](img/easy_screenshot.png)
 
-Short link to this workshop: https://workshops.hackclub.com/that_was_easy
+Here's the [live demo][final_live_demo].
 
-[Demo](http://prophetorpheus.github.io/that_was_easy/)
+Also, here's the [final code][final_code].
+
+This workshop should take around 1 hour.
+
+[final_live_demo]: https://prophetorpheus.github.io/that_was_easy
+[final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/that_was_easy
 
 ---
 
@@ -27,7 +34,7 @@ Much like in Personal Website workshop, we'll be using HTML to create stuff visi
 
 ### Setting up Folders and Files
 
-1. We'll begin by going to our Cloud9 workspace by clicking "Open" in our dashboard.
+1. First log into your [Cloud9](https://c9.io) account and go to the dashboard. Open workspace by clicking "Open" in our dashboard.
 
    ![](../img/c9_dashboard.png)
 
@@ -35,22 +42,22 @@ Much like in Personal Website workshop, we'll be using HTML to create stuff visi
 3. In this folder, right-click again, select "New File," and name the new file `index.html`. This is where we will be writing HTML to actually create the button.
 4. Create another file in the `that_was_easy` folder, and name this one `main.js`. This is where we will be writing our JavaScript to make the button play sounds.
 5. Create another file in the `that_was_easy` folder, and name this one `styles.css`. This is where we will be making our button look pretty.
-6. We've provided an amusing sound for you [here](sounds/that_was_easy.mp3). If you click on the filename, and then click `View Raw`, you should be at a page with an audio player. Right-click that page and choose `Save As`.
+6. We've provided an amusing sound for you -- download the file by clicking [here](sounds/that_was_easy.mp3).
 7. Then, drag the file you've just saved into the `that_was_easy` directory in the Cloud9 sidebar.
 8. Now, open up `index.html` and type the following:
 
-  ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>That Was Easy</title>
-    </head>
-    <body>
-    </body>
-  </html>
-  ```
+   ```html
+   <!DOCTYPE html>
+   <html>
+     <head>
+       <title>That Was Easy</title>
+     </head>
+     <body>
+     </body>
+   </html>
+   ```
 
-  Similar to our HTML file in the Personal Website workshop, we've created a bare template upon which we will build interactions for the user. As you can see, we've named this page "That Was Easy" using the title (`<title>`) tag.
+   Similar to our HTML file in the Personal Website workshop, we've created a bare template upon which we will build interactions for the user. As you can see, we've named this page "That Was Easy" using the title (`<title>`) tag.
 9. Save your `index.html` and open up the Live Preview by selecting `Preview > Live Preview File` in the menu bar. You should see a blank page.
 
 ### Adding `main.js` to the HTML File
@@ -71,7 +78,7 @@ For this workshop, we'll be using the handy library called jQuery inside our `ma
 
 We'll let the browser know that we'll be using jQuery by once again using a `<script>` tag. jQuery can be found at [this URL](https://code.jquery.com/jquery-2.2.3.min.js), so that's what we will put as the value for `src`.
 
-Since we will be using jQuery in `main.js`, `main.js` will be reliant on jQuery. Thus, we will put the script tag containing jQuery **above** the one containing `main.js` in the **body** of `index.html` in order to load jQuery before loading `main.js`.
+Since we will be using jQuery in `main.js`, `main.js` will be reliant on jQuery. Thus, we will put the script tag containing jQuery **above** the one containing `main.js` in the **body** of `index.html` in order to load jQuery before loading `main.js` like so:
 
 ```html
 <body>
@@ -227,7 +234,7 @@ thatWasEasy.play();
 
 `.play()` is a function that is a part of the Audio object, and it plays the sound.
 
-Now, if you save your `main.js` file, you'll note that upon reloading live preview, the `index.html` page now says "That was easy!" And it was!
+Now, if you save your `main.js` file, you'll note that upon reloading live preview, the `index.html` page now plays "That was easy!" And it was!
 
 Yay! We've added audio to our webpage.
 
@@ -475,7 +482,7 @@ And that's it! Save your `main.js` and try out the key binding!
 Then, let's save our progress with git by running the following commands in the Cloud9 terminal (`Alt+t`). Make sure you've saved all of your files on Cloud9!
 
 - `git add --all`
-- `git commit -m "Add key binding to that was easy button`
+- `git commit -m "Add key binding to that was easy button"`
 
 ## Part VII: Publishing and Sharing
 
