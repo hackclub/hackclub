@@ -1,15 +1,24 @@
 # Geometric Pattern
 
+_**We recommend going through this workshop in Google Chrome.**_
+
 ![](img/sample1.png)
 
-Short link to this workshop: https://workshops.hackclub.com/geometric_pattern
+Here's the [live demo][final_live_demo].
 
-[Demo](http://prophetorpheus.github.io/geometric_pattern/)
+_**Warning: this demo involves flashing colors and is not recommended for those with a history of epilepsy.**_ Here's an [animated demo][animated_live_demo].
+
+Also, here's the [final code][final_code].
+
+This workshop should take around 1 hour.
+
+[final_live_demo]: https://prophetorpheus.github.io/geometric_pattern
+[animated_live_demo]: https://prophetorpheus.github.io/geometric_pattern/version2.html
+[final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/geometric_pattern
 
 ---
 
-We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
-[p5.js](http://p5js.org/) is a library for making stuff in conjunction with the [HTML canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas). p5.js is nothing more than JavaScript code written to make commonly-desired functionality much more accessible. It is primarily used to make visuals and graphics. A great introduction can be found [here](http://taeyoonchoi.com/signing-coders-1/).
+We'll be creating a cool graphic like the one above, using JavaScript and p5.js. [p5.js](http://p5js.org/) is a library for making stuff in conjunction with the [HTML canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas). p5.js is nothing more than JavaScript code written to make commonly-desired functionality much more accessible. It is primarily used to make visuals and graphics. A great introduction can be found [here](http://taeyoonchoi.com/signing-coders-1/).
 
 **Table of Contents:**
 
@@ -196,7 +205,7 @@ You'll notice there are multiple parts to this:
 - `{` and the corresponding `}` at the bottom: these braces enclose the code that should be repeated.
 - `x = x + circleDiameter;`: this is one instruction we want to be repeated. This will alter the value of `x`, incrementing it by `circleDiameter` every time we go through the loop.
 
-If we save and refresh, we'll see nothing. That's because we there is no code inside the while-loop that affects the canvas. Let's add a line to draw an ellipse at the top of the canvas:
+If we save and refresh, we'll see nothing. That's because there is no code inside the while-loop that affects the canvas. Let's add a line to draw an ellipse at the top of the canvas:
 
 ```js
 function draw() {
@@ -247,6 +256,14 @@ As with the previous while-loop's `x`, we're executing the code inside the `{` a
 Using this incrementing `y` variable as our y-coordinate is how we're able to draw rows up and down the canvas.
 
 Save and refresh Live Preview to check it out!
+
+Now that we've done some work, let's back it up by committing. This will make sure we have a record of everything we've done in case part of our code gets deleted or lost. Make sure all of your files are saved. Then, head on over to the terminal in Cloud9 by pressing `alt+t` and type the following commands (pressing Enter after each one):
+
+- `git add --all`
+- `git commit -m "Add geometric_pattern project"`
+- `git push`
+
+Then, enter your GitHub username and password (careful here, as password will not be displayed).
 
 ### Offsetting the Circles in the Y-Direction
 
@@ -368,7 +385,7 @@ Now we just need to make this shift. We'll do this by modifying the starting `x`
 We can modify this by removing this definition:
 
 ```js
-v̶a̶r̶ ̶x̶ ̶=̶ ̶0̶;̶
+̶v̶a̶r̶ ̶x̶ ̶=̶ ̶0̶;̶
 var x;
 ```
 
@@ -419,6 +436,12 @@ function draw() {
 
 Save and check it out!
 
+Because we've done another chunk of coded, let's back it up:
+
+- `git add --all`
+- `git commit -m "Offset circles in geometric_pattern"`
+- `git push`
+
 ### Reversing Direction
 
 So you may have noticed that it seems that our circles are overlapping on the wrong side. We wanted them to overlap each other on the top, but they are overlapping on the bottom. This is because they are being drawn from top to bottom, and the upper circles are being drawn over.
@@ -455,9 +478,17 @@ If your page has frozen, you've probably introduced an infinite loop. Refresh yo
 
 Save to see the changes!
 
+Now that we've done more work, let's commit again:
+
+- `git add --all`
+- `git commit -m "Reverse direction of circles in geometric_pattern"`
+- `git push`
+
 ## Part IV: Adding Color
 
-Black and white is nice, but how about some color? p5.js provides several helpful functions, including: [`color()`](http://p5js.org/reference/#p5/color), [`fill()`](http://p5js.org/reference/#p5/fill), and [`stroke()`](http://p5js.org/reference/#p5/stroke) that help modify the graphics.
+Black and white is nice, but how about some color? We've previously used CSS to change colors, but this is a special case -- CSS can't modify anything inside of a canvas.
+
+p5.js provides several helpful functions, including: [`color()`](http://p5js.org/reference/#p5/color), [`fill()`](http://p5js.org/reference/#p5/fill), and [`stroke()`](http://p5js.org/reference/#p5/stroke) that help modify graphics inside a canvas.
 
 ### Changing Fill
 
@@ -510,15 +541,15 @@ function draw() {
 
   var isShifted = false;
 
-...
-
+  // ...the rest of the draw function
 }
 ```
 
 And then increment the values at the bottom of the `y` while-loop in `draw()`, by adding these lines.
 
 ```js
-...
+    y = y - circleRadius;
+    isShifted = !isShifted;
 
     rVal = rVal - 2;
     gVal = gVal + 7;
@@ -539,6 +570,12 @@ stroke(color(rVal,gVal,bVal));
 ```
 
 Now, save and see the gradient effect you've applied throughout the pattern! Yay!
+
+We've got another feature done, so let's commit again:
+
+- `git add --all`
+- `git commit -m "Add colors to geometric_pattern."`
+- `git push`
 
 ## Part V: Publishing and Sharing
 
@@ -561,17 +598,15 @@ This code says that if the user presses a key with the `keyCode` 115 or 83 (whic
 
 The `return false;` at the end of the function tells the browser to ignore any default behavior that might be associated with the pressed key (ex. if you press enter, the browser thinks that you're trying to submit a form by default -- this prevents that).
 
-### Making It Live
-
-Make sure all of your files are saved. Then, head on over to the terminal in Cloud9 by pressing `alt+t` and type the following commands (pressing Enter after each one):
+Now let's commit these changes:
 
 - `git add --all`
-- `git commit -m "Create a geometric pattern using p5.js"`
+- `git commit -m "Add save keybinding to geometric_pattern"`
 - `git push`
 
-Then, enter your GitHub username and password (careful here, as password will not be displayed).
+### Making It Live
 
-Congratulations! Your pattern is now live on `USERNAME.github.io/geometric_pattern/` (replace `USERNAME` with your own GitHub username!)
+Congratulations! Ever since your first commit, your pattern has been online at `USERNAME.github.io/geometric_pattern/` (replace `USERNAME` with your own GitHub username!).
 
 ## Part VI: Animate It
 
@@ -613,7 +648,7 @@ function setup() {
 function draw() {
   var isShifted = false;
 
-...
+  // ...the rest of the draw function
 ```
 
 If we move the three lines that set the initial RGB values to `setup()`, then we will be increment the values indefinitely. If we save and refresh our Live Preview, we'll see that everything is white. What's the deal?
@@ -697,6 +732,12 @@ function draw() {
 ```
 
 ![](img/sample2.gif)
+
+Let's commit this new feature!
+
+- `git add --all`
+- `git commit -m "Added jarring animation to geometric_pattern"`
+- `git push`
 
 ## Part VII: Hacking
 
