@@ -46,7 +46,7 @@ Hack Club meetings are structured in pairs, so that new projects can be started
 and demoed each week. The first of the two meetings includes an hour-long
 workshop to help get members started, and the second is a session of free-form
 hacking. This emphasis on building things echoes the spirit of hackathons,
-making Hack Club feel like a continuous party.
+making Hack Club feel like a continuous hackathon.
 
 Throughout the year, Hack Clubs go to (and sometimes host) hackathons, work on
 large group projects, and, most importantly, develop into a thriving community
@@ -138,17 +138,18 @@ persistent.
 Most high schools require you to register your club with the student council or
 school administration before having your first meeting.
 
-Generally they have an application to fill out (click here for an example).
+Generally they have an application to fill out [click here for an example][lowell_club_application].
 Some schools require having a club constitution that outlines the club's
-purpose and operational procedures. See if you can get a template constitution
-from the school (most have them) -- the constitution won't have too much impact
-on your day-to-day operations.
+purpose and operational procedures. We've created a template constitution for 
+you, which you can find [here][club_constitution_template].
 
 This shouldn't take very long, especially once you have a teacher sponsor
 backing you.
 
 [lowell_club_application]:
 https://docs.google.com/forms/d/1Tr8OkMX3IN8SWsYkWeTTW4GIyNSDdvco8uks9UE_FOE/viewform
+
+[club_constitution_template]: constitution.md
 
 ### Student Sign-Ups
 
