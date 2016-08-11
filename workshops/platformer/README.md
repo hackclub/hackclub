@@ -1,8 +1,17 @@
 # Platformer
 
-Short link to this workshop: https://workshops.hackclub.com/platformer
+_**We recommend going through this workshop in Google Chrome.**_
 
-Demo: [here](https://prophetorpheus.github.io/platformer/)
+![Final result](img/final_demo.gif)
+
+Here's the [live demo][final_live_demo].
+
+Also, here's the [final code][final_code].
+
+This workshop should take around 60 minutes.
+
+[final_live_demo]: https://prophetorpheus.github.io/platformer
+[final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/platformer
 
 ---
 
@@ -157,6 +166,7 @@ Save and refresh live preview to see your beautiful ground!
 You might notice there's a blank spot at the right edge of the ground. We could shift over our starting ground sprite, but since we want our ground to be scrolling, we'll just add in an extra ground sprite. We can generate an extra one by adding 1 to `numGroundSprites`. Now the for-loop will run one extra time, generating an extra ground sprite and adding it to the Group.
 
 ```js
+̶n̶u̶m̶G̶r̶o̶u̶n̶d̶S̶p̶r̶i̶t̶e̶s̶ ̶=̶ ̶w̶i̶d̶t̶h̶/̶G̶R̶O̶U̶N̶D̶_̶S̶P̶R̶I̶T̶E̶_̶W̶I̶D̶T̶H̶;̶
 numGroundSprites = width/GROUND_SPRITE_WIDTH + 1;
 ```
 
@@ -166,6 +176,7 @@ Since our player will be jumping, we should introduce gravity to bring it back t
 
 ```js
 var GRAVITY = 0.3;
+var groundSprites;
 ```
 
 The value is up to you. More gravity will mean that your player jumps get less height. Less gravity will mean higher jumps. We'll use this later.
@@ -197,13 +208,20 @@ player = createSprite(100, height-75, 50, 50);
 Let's have the player move continuously by adding this line to `draw()`, before `drawSprites();`:
 
 ```js
-player.position.x = player.position.x + 5;
+function draw() {
+  player.position.x = player.position.x + 5;
+  drawSprites();
+}
 ```
 
 Don't forget to redraw the background so the illusion is complete. Place the following line at the top of the `draw()` function:
 
 ```js
-background(150, 200, 250);
+function draw() {
+  background(150, 200, 250);
+  player.position.x = player.position.x + 5;
+  drawSprites();
+}
 ```
 
 Save and refresh live preview. Whoops! Your player disappears right off the screen!
@@ -215,6 +233,7 @@ We can use the camera to follow the player's movement. p5.play offers the functi
 Let's try setting the position of the camera to the position of the player. This will make the camera always follow the player. Add this line directly beneath the line that modifies player movement.
 
 ```js
+player.position.x = player.position.x + 5;
 camera.position.x = player.position.x;
 ```
 
@@ -227,6 +246,7 @@ Having the player at the center of the screen limits our visual of the obstacles
 We can adjust the camera x-position by setting it slightly ahead of the player, so that we get more screen real estate. Modify the previous line by adding to the camera x-position:
 
 ```js
+̶c̶a̶m̶e̶r̶a̶.̶p̶o̶s̶i̶t̶i̶o̶n̶.̶x̶ ̶=̶ ̶p̶la̶y̶e̶r̶.̶p̶o̶s̶i̶t̶i̶o̶n̶.̶x̶;̶
 camera.position.x = player.position.x + (width/4);
 ```
 
@@ -239,6 +259,7 @@ What we'd like to do is modify the position of the first ground sprite so that i
 We can select the first ground sprite and store it in a variable by typing the following line in the `draw()` function. I put this logic beneath the line that sets camera x-position.
 
 ```js
+camera.position.x = player.position.x + (width/4);
 var firstGroundSprite = groundSprites[0];
 ```
 
@@ -283,13 +304,15 @@ if (firstGroundSprite.position.x <= camera.position.x - (width/2)) {
 }
 ```
 
-Save and refresh live preview. Hm, does something look funny to you? Specifically, how the first ground sprite is just blipping off the left edge instead of smoothly sliding off?
+Save and refresh live preview. Hm, does something look funny to you? Specifically, how the first ground sprite is just disappearing off the left edge instead of smoothly sliding off?
 
 ![](img/scrolling_sprites.gif)
 
 This is an issue of not properly offsetting the sprite. Remember that the position of a sprite is at its center, so we must edit our conditional to include this offset. It should now read:
 
 ```js
+var firstGroundSprite = groundSprites[0];
+̶i̶f̶ ̶(̶f̶i̶r̶s̶t̶G̶r̶o̶u̶n̶d̶S̶p̶r̶i̶t̶e̶.̶p̶o̶s̶i̶t̶i̶o̶n̶.̶x̶ ̶<̶=̶ ̶c̶a̶m̶e̶r̶a̶.̶p̶o̶s̶i̶t̶i̶o̶n̶.̶x̶ ̶-̶ ̶(̶w̶i̶d̶t̶h̶/̶2̶)̶)̶ ̶{̶
 if (firstGroundSprite.position.x <= camera.position.x - (width/2 + firstGroundSprite.width/2)) {
 ```
 
@@ -298,6 +321,7 @@ if (firstGroundSprite.position.x <= camera.position.x - (width/2 + firstGroundSp
 We'll define a certain strength our player can jump at the top of the file, underneath gravity:
 
 ```js
+var GRAVITY = 0.3;
 var JUMP = -5;
 ```
 
@@ -308,6 +332,7 @@ Let's have the up arrow control the jumping. Place this part in `draw()`, right 
 ```js
 if (keyDown(UP_ARROW)) {
 }
+player.position.x = player.position.x + 5;
 ```
 
 p5.play has this handy function [`keyDown()`](http://p5play.molleindustria.org/docs/classes/p5.play.html#method-keyDown) that will check if the up arrow key was pressed.
@@ -325,6 +350,7 @@ Save and refresh live preview, and give it a try by pressing your up arrow key!
 Oops, looks like we never established gravity in our world! Place the following line within `draw()`, beneath `background(150, 200, 250)`:
 
 ```js
+background(150, 200, 250);
 player.velocity.y = player.velocity.y + GRAVITY;
 ```
 
@@ -351,6 +377,14 @@ if (keyDown(UP_ARROW)) {
 
 Here, we're checking if any sprites within the Group overlap with the player. If that does happen, then we stop moving the player downwards, and stabilize the player at ground-level.
 
+Let's make sure to back up our project by committing it with git now that we've got a start to our project .
+
+- `git add -A`
+- `git commit -m "Create a platformer game"`
+- `git push`
+
+Don't forget you'll need to input your username and password (hidden).
+
 ## Part IV: Adding Obstacles
 
 ### Generating Obstacles
@@ -362,13 +396,18 @@ Let's add some obstacles to jump over.
 For this, we'll need to make another `Group`. Let's create one at the top, under our player declaration.
 
 ```js
+var player;
 var obstacleSprites;
 ```
 
 Now we'll initialize it in `setup()`, in the same way we did `groundSprites`. Do this at the end of `setup()`, right after the creation of the player sprite:
 
 ```js
-obstacleSprites = new Group();
+function setup() {
+  // ...the rest of the setup function
+  player = createSprite(100, height-75, 50, 50);
+  obstacleSprites = new Group();
+}
 ```
 
 Now that we've got somewhere to store the obstacles, we can start generating some within `draw()`.
@@ -378,7 +417,9 @@ We can set the x-coordinate as `camera.position.x + width` to ensure they're gen
 Let's type the following right above `drawSprites()`, inside `draw()`:
 
 ```js
+// inside the draw function...
 var obstacle = createSprite(camera.position.x + width, (height-50) - 15, 30, 30);
+drawSprites();
 ```
 
 Gah! Too many obstacles! Remember that the `draw()` function is called repeatedly, 60 times per second!
@@ -431,6 +472,7 @@ Here we're saying "if `obstacleSprites` has more than 0 things, AND the right ed
 Your modified conditional should now look like this:
 
 ```js
+̶i̶f̶ ̶(̶f̶i̶r̶s̶t̶O̶b̶s̶t̶a̶c̶l̶e̶.̶p̶o̶s̶i̶t̶i̶o̶n̶.̶x̶ ̶<̶=̶ ̶c̶a̶m̶e̶r̶a̶.̶p̶o̶s̶i̶t̶i̶o̶n̶.̶x̶ ̶-̶ ̶(̶w̶i̶d̶t̶h̶/̶2̶ ̶+̶ ̶f̶i̶r̶s̶t̶O̶b̶s̶t̶a̶c̶l̶e̶.̶w̶i̶d̶t̶h̶/̶2̶)̶)̶ ̶{̶
 if (obstacleSprites.length > 0 && firstObstacle.position.x <= camera.position.x - (width/2 + firstObstacle.width/2)) {
   removeSprite(firstObstacle);
 }
@@ -445,7 +487,9 @@ We've used `.overlap()` with our `groundSprites` Group above, by providing just 
 Add this to the `draw()` function, right before the call for `drawSprites()`:
 
 ```js
+// ...the rest of the draw function
 obstacleSprites.overlap(player, endGame);
+drawSprites()
 ```
 
 In this line, we are handling a collision between any of the sprites in `obstacleSprites` and our player. When a collision happens, we'll run the `endGame` function (which we'll define next).
@@ -455,6 +499,10 @@ In this line, we are handling a collision between any of the sprites in `obstacl
 At the bottom of `game.js`, below our `draw()` function, we can add our `endGame` function:
 
 ```js
+function draw() {
+  // ...the rest of the draw function
+}
+
 function endGame() {
 
 }
@@ -470,7 +518,14 @@ function endGame() {
 
 Save and view your game in the external live preview. Check your console in the Inspector.
 
+Now that we've got collisions working, let's back up our work and put it on GitHub:
+
+- `git add --all`
+- `git commit -m "Add obstacles to platformer game"`
+- `git push`
+
 Great. Now that we've made sure that collisions get handled properly by this function, we can flesh out the game-over behavior a bit more.
+
 
 ## Part V: Ending Game
 
@@ -481,6 +536,7 @@ var isGameOver;
 
 function setup() {
   isGameOver = false;
+  // ...the rest of the setup function
 }
 ```
 
@@ -488,6 +544,7 @@ We'll add a line to set this flag to true within our `endGame()`, replacing the 
 
 ```js
 function endGame() {
+  ̶c̶o̶n̶s̶o̶l̶e̶.̶l̶o̶g̶(̶"̶G̶a̶m̶e̶ ̶O̶v̶e̶r̶!̶"̶)̶;̶
   isGameOver = true;
 }
 ```
@@ -504,7 +561,7 @@ And we'll create the two modes now:
 
     background(150, 200, 250);
 
-    ...
+    // ...the rest of the draw function
   }
   ```
 
@@ -517,7 +574,7 @@ And we'll create the two modes now:
     } else {
       background(150, 200, 250);
 
-      ...
+      // ...the rest of the draw function
     }
   }
   ```
@@ -541,31 +598,40 @@ To bring the game back to its original state, we have to perform the following a
 - reset the x-position of each ground sprite within `groundSprites`:
 
   ```js
-  for (var n = 0; n < numGroundSprites; n++) {
-    var groundSprite = groundSprites[n];
-    groundSprite.position.x = n*50;
+  function mouseClicked() {
+    for (var n = 0; n < numGroundSprites; n++) {
+      var groundSprite = groundSprites[n];
+      groundSprite.position.x = n*50;
+    }
+
+    if (isGameOver) {
+      isGameOver = false;
+    }
   }
   ```
 
 - reset the player position back to its initial x and y coordinates
 
   ```js
-  player.position.x = 100;
-  player.position.y = height-75;
+  function mouseClicked() {
+    for (var n = 0; n < numGroundSprites; n++) {
+      var groundSprite = groundSprites[n];
+      groundSprite.position.x = n*50;
+    }
+
+    player.position.x = 100;
+    player.position.y = height-75;
+
+    if (isGameOver) {
+      isGameOver = false;
+    }
+  }
   ```
 
 - clear the `obstacleSprites` Group by removing the existing obstacle sprites
 
   ```js
-  obstacleSprites.removeSprites();
-  ```
-
-You should end up with a `mouseClicked()` function that looks like this:
-
-```js
-function mouseClicked() {
-  if (isGameOver) {
-
+  function mouseClicked() {
     for (var n = 0; n < numGroundSprites; n++) {
       var groundSprite = groundSprites[n];
       groundSprite.position.x = n*50;
@@ -576,10 +642,11 @@ function mouseClicked() {
 
     obstacleSprites.removeSprites();
 
-    isGameOver = false;
+    if (isGameOver) {
+      isGameOver = false;
+    }
   }
-}
-```
+  ```
 
 ### Fixing up our Game Over Screen
 
@@ -594,11 +661,17 @@ function draw() {
     text("Game Over! Click anywhere to restart", camera.position.x, camera.position.y);
   } else {
 
-    ...
+    // ...the rest of the draw function
 
   }
 }
 ```
+
+Now that we've got another "feature" -- or chunk of our game -- done, let's commit and push!
+
+- `git add --all`
+- `git commit -m "Add game-over screen to platformer"`
+- `git push`
 
 ## Part VI: Keeping Score
 
@@ -607,6 +680,7 @@ function draw() {
 Let's add the scorekeeper now. First we'll need a variable to keep track of the score. Add it to the top of the file, right under `var isGameOver;`:
 
 ```js
+var isGameOver;
 var score;
 ```
 
@@ -620,20 +694,29 @@ function setup() {
   createCanvas(400, 300);
   background(150, 200, 250);
 
-  ...
+  // ...the rest of the setup function
 }
 ```
 
 Now we'll increment the score in `draw()`. We'll just increment by 1 every time `draw()` is called. We can add this line beneath `drawSprites()`.
 
 ```js
+drawSprites();
 score = score + 1;
 ```
 
 Lastly, we'll need to reset our score to 0 in `mouseClicked()`. Place this line right before resetting `isGameOver`:
 
 ```js
-score = 0;
+function mouseClicked() {
+  // ...the rest of the mouseClicked function
+  obstacleSprites.remoteSprites();
+
+  if (isGameOver) {
+    score = 0;
+    isGameOver = false;
+  }
+}
 ```
 
 ### Displaying Score
@@ -641,6 +724,8 @@ score = 0;
 Now we'll need to display the score during the game. We can use `text()` and position it relative to the camera. Type the following beneath the line that increments `score`, near the end of `draw()`, like this:
 
 ```js
+// in the draw function...
+drawSprites();
 score = score + 1;
 textAlign(CENTER);
 text(score, camera.position.x, 10);
@@ -650,18 +735,32 @@ Save and refresh. Your score should be proudly displayed now!
 
 ### Display Score in Game Over
 
-Now, let's display the score after the game ends. We can add the value of `score` to text by **concatenating** the score onto our string with a `+`:
+Now, let's display the score after the game ends. We can add the value of `score` to text by **concatenating** the score onto our string with a `+`.
 
 ```js
+// this line is just a demonstration -- it doesn't go in your code
 "Your score was: " + score
 ```
 
 Let's add this text to our Game Over screen by adding the following line above the "Game Over" text in `draw()`, like this. We'll offset it slightly in the y-direction to avoid overlap.
 
 ```js
-text("Your score was: " + score, camera.position.x, camera.position.y - 20);
-text("Game Over! Click anywhere to restart", camera.position.x, camera.position.y);
+// ...the start of the draw function
+if (isGameOver) {
+  background(0);
+  fill(255);
+  textAlign(CENTER);
+  text("Your score was: " + score, camera.position.x, camera.position.y - 20);
+  text("Game Over! Click anywhere to restart", camera.position.x, camera.position.y);
+} else {
+// ...the rest of the draw function
 ```
+
+Another feature done? Time to commit!
+
+- `git add --all`
+- `git commit -m "Add score to platformer"`
+- `git push`
 
 ## Part VII: Upgrading
 
@@ -672,22 +771,24 @@ It's not too exciting right now since all of the obstacles are at the bottom. We
 Find the line where we create obstacles and modify the argument we are passing in for the y-coordinate, like so:
 
 ```js
+// in the draw function
+̶v̶a̶r̶ ̶o̶b̶s̶t̶a̶c̶l̶e̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶c̶a̶m̶e̶r̶a̶.̶p̶o̶s̶i̶t̶i̶o̶n̶.̶x̶ ̶+̶ ̶w̶i̶d̶t̶h̶,̶ ̶(̶h̶e̶i̶g̶h̶t̶-̶5̶0̶)̶ ̶-̶ ̶1̶5̶,̶ ̶3̶0̶,̶ ̶3̶0̶)̶;̶
 var obstacle = createSprite(camera.position.x + width, random(0, (height-50)-15), 30, 30);
 ```
 
+That was a pretty quick section, but we've got another feature done. It's _committing time!_
+
+- `git add --all`
+- `git commit -m "Obstacles in platformer start at random positions"`
+- `git push`
+
 ## Part VIII: Customizing
 
-It's time to add in our sprite images! This exercise is left to the user.
+It's time to add in our sprite images! This exercise is left to the user. If you are stuck, check out the [dodge](../dodge/) workshop.
 
 ## Part IX: Publishing and Sharing
 
-After making sure all files are saved, go to the terminal in Cloud9 and type the following git commands:
-
-- `git add -A`
-- `git commit -m "Create a platformer game"`
-- `git push`
-
-Don't forget you'll need to input your username and password (hidden). After successfully pushing, your game will be live and playable on `USERNAME.github.io/platformer/`!!
+Your project should be online at `USERNAME.github.io/platformer/`!!
 
 Be sure to post your creation on the [`#shipit`](https://starthackclub.slack.com/messages/shipit/) channel on Slack!
 
@@ -697,6 +798,8 @@ Be sure to post your creation on the [`#shipit`](https://starthackclub.slack.com
 - Add jewels to collect for bonus points. Hint, it's just like obstacles, except instead of dying when you hit one, you gain a score boost.
 - Change the terrain
 - Modify the camera motion to be independent of the player. Instead of losing when you hit an obstacle, you lose when you get stuck and end up off-screen on the left.
+
+Make sure to commit and push each new thing you code so it shows up online at `USERNAME.github.io/platformer/`.
 
 **Examples:**
 
