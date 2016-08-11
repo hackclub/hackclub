@@ -1,9 +1,17 @@
 # Collaborative Sketch
 
-Short link to this workshop: https://workshops.hackclub.com/collaborative_sketch
+_**We recommend going through this workshop in Google Chrome.**_
 
-Demo: [here](https://prophetorpheus.github.io/collaborative_sketch/)
+![](img/final_demo.gif)
 
+Here's the [live demo][final_live_demo].
+
+Also, here's the [final code][final_code].
+
+This workshop should take around 1 hour.
+
+[final_live_demo]: https://prophetorpheus.github.io/collaborative_sketch
+[final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/collaborative_sketch
 ---
 
 Draw with one or more friends! In this project we'll be combining HTML, p5.js, Firebase, and jQuery to create a collaborative sketchpad. We'll use p5.js to manipulate the drawing space, Firebase to keep track of our drawing in terms of points that we've marked in our drawing, and jQuery to easily manipulate HTML elements.
@@ -20,7 +28,7 @@ Draw with one or more friends! In this project we'll be combining HTML, p5.js, F
 
 ### Setting up the Files
 
-As always, we'll open up our Cloud9 workspace, and make a new folder in `projects`. We'll name it `collaborative_sketch`.
+As always, we'll open up our Cloud9 workspace and make a new folder in `projects`. We'll name it `collaborative_sketch`.
 
 Then, we'll make two files, `index.html` and `main.js`.
 
@@ -37,7 +45,7 @@ Next, we'll set up the `index.html` by typing the base template:
 </html>
 ```
 
-And we'll add script tags for Firebase, p5.js, jQuery, and our own `main.js` file within our **body**.
+And we'll add script tags for Firebase, p5.js, jQuery, and our own `main.js` file within our `body`.
 
 ```html
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
@@ -48,23 +56,49 @@ And we'll add script tags for Firebase, p5.js, jQuery, and our own `main.js` fil
 
 ### Setting up the Firebase App
 
-Much like we did in the last workshop, we'll need to create an app within Firebase. In this project, we'll be using Firebase to store the points of what we're drawing on our canvas.
+Firebase is a real-time database. This means that all the information we send to Firebase gets updated across everything connected to that database.
 
-Let's head over to our [Firebase dashboard](https://console.firebase.google.com/) and create a new project, which we will name `collaborative-sketch`.
+In this project, we'll be using Firebase to store the points of what we're drawing on our canvas. We'll need to create an app within Firebase.
 
-We'll also:
+Now we'll set up the Firebase side of our project. Go to [Firebase](https://firebase.google.com/) and sign up for an account.
 
-- copy and paste the configuration info into our `main.js`
-- add this line after the configuration info also into `main.js`:
+Now that we're at our dashboard, we'll create our app. Let's head over to our [Firebase dashboard](https://console.firebase.google.com/) and create a new project, which we will name `collaborative-sketch`.
 
-  ```js
-  var pointsData = firebase.database().ref();
-  ```
+Let's click on "Add Firebase to your web app." We'll copy _part_ of the code snippet and paste it into our `main.js`:
 
-- add `preview.c9users.io` to the list of Authorized Domains, within `Auth` > `Sign-in Methods`
-- set database permissions to `true` for both reading and writing, within `Database` > `Rules`
+```js
+var config = {
+  apiKey: "AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM",
+  authDomain: "collaborative-sketch.firebaseapp.com",
+  databaseURL: "https://collaborative-sketch.firebaseio.com",
+  storageBucket: "collaborative-sketch.appspot.com",
+};
+firebase.initializeApp(config);
+```
 
-And once we've done that, we're all set. Let's return to `main.js`.
+After copying the code snippet above, head back to Firebase and select the `Auth` tab on the left-hand side. Select `SET UP SIGN-IN METHOD`, and click `ADD DOMAIN`. Enter `preview.c9users.io` and click `ADD`.
+
+Next, go to the `Database` tab on the left-hand side. Within the `Database` tab, we're going to select `Rules`. Here we'll set database permissions for reading and writing to `true`.
+```json
+{
+    "rules": {
+        ".read": true,
+        ".write": true
+    }
+}
+```
+
+Click `Publish` to save your changes. You should see this warning at the top of your page -- don't worry about it:
+
+![](img/firebase_warning.png)
+
+We'll now head back to our `main.js` file. Below the Firebase configuration, we'll add a variable `pointsData` that we can use to access Firebase.
+
+```js
+firebase.initializeApp(config);
+
+var pointsData = firebase.database().ref();
+```
 
 ## Part II: The JS File
 
@@ -73,31 +107,31 @@ At this point, `main.js` looks something like this:
 ```js
 var config = {
   apiKey: "AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM",
-  authDomain: "collaborative-draw.firebaseapp.com",
-  databaseURL: "https://collaborative-draw.firebaseio.com",
-  storageBucket: "",
+  authDomain: "collaborative-sketch.firebaseapp.com",
+  databaseURL: "https://collaborative-sketch.firebaseio.com",
+  storageBucket: "collaborative-sketch.appspot.com",
 };
 firebase.initializeApp(config);
   
 var pointsData = firebase.database().ref();
 ```
 
-Let's quickly walk through what a part of this code does.
+Let's quickly walk through what a part of this code does. For example:
 
 ```js
 var config = {
-  (...) // stuff hidden here for simplicity
+  // stuff hidden here for simplicity
 }
 ```
 
-This section of code creates a new `object` in JavaScript named `config`.  You can think of `object`s like containers for things like text or numbers which we call `properties`. 
+This section of code creates a new `object` in JavaScript named `config`.  You can think of `objects` like containers for things like text or numbers which we call `properties`. 
 
 `properties` are values that we store by name in the `object` and then retrieve at a later time.
 
 ```js
 var config = {
   apiKey: "AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM",
-  (...)
+  // ...other stuff
 }
 ```
 
@@ -122,6 +156,13 @@ config.databaseURL
 Beneath that, we'll add our p5.js functions, `setup()` and `draw()`:
 
 ```js
+var config = {
+  // stuff hidden here for simplicity
+}
+firebase.initializeApp(config);
+  
+var pointsData = firebase.database().ref();
+
 function setup() {
 }
 
@@ -153,15 +194,25 @@ function setup() {
 Next, we'll create an array to store the points that have been drawn on the canvas so far. Let's put this line above the `setup()` function:
 
 ```js
+var pointsData = firebase.database().ref();
 var points = [];
+
+function setup() {
+  // ...the rest of the setup function
 ```
 
 We'll need some way to get data from Firebase and into our `points` array, so let's add a call to Firebase at the end of `setup()`:
 
 ```js
-pointsData.on("child_added", function (point) {
-  points.push(point.val());
-});
+function setup() {
+  createCanvas(400, 400);
+  background(255);
+  fill(0);
+
+  pointsData.on("child_added", function (point) {
+    points.push(point.val());
+  });
+}
 ```
 
 You'll notice that we've created a function at the same time that we're passing it as an argument. This function does not have a name, and is not stored anywhere. It exists only to be passed as an argument to `.on()`. This is called an anonymous function.
@@ -173,9 +224,9 @@ Now our `main.js` should look like this:
 ```js
 var config = {
   apiKey: "AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM",
-  authDomain: "collaborative-draw.firebaseapp.com",
-  databaseURL: "https://collaborative-draw.firebaseio.com",
-  storageBucket: "",
+  authDomain: "collaborative-sketch.firebaseapp.com",
+  databaseURL: "https://collaborative-sketch.firebaseio.com",
+  storageBucket: "collaborative-sketch.appspot.com",
 };
 firebase.initializeApp(config);
   
@@ -226,9 +277,13 @@ function draw() {
 
 Now let's add functionality to be able to click and draw, and have the points that we've drawn be updated in Firebase.
 
-We'll first create a function that takes the mouse x and y position and pushes that information to Firebase:
+We'll first create a function after the draw function that takes the mouse x and y position and pushes that information to Firebase:
 
 ```js
+function draw() {
+  // ...the rest of the draw function
+}
+
 function drawPoint() {
   pointsData.push({x: mouseX, y: mouseY});
 }
@@ -243,7 +298,7 @@ Next, we'll set up our functions to detect clicking and dragging. Normally we wo
 So instead, we'll be detecting mouse activity with one of the canvas's methods. In order to call a method of canvas, we must store our canvas in a variable. Alter the `createCanvas()` line in `setup()`:
 
 ```js
-c̶r̶e̶a̶t̶e̶C̶a̶n̶v̶a̶s̶(̶4̶0̶0̶,̶ ̶4̶0̶0̶)̶;̶
+̶c̶r̶e̶a̶t̶e̶C̶a̶n̶v̶a̶s̶(̶4̶0̶0̶,̶ ̶4̶0̶0̶)̶;̶
 var canvas = createCanvas(400, 400);
 ```
 
@@ -252,7 +307,14 @@ And then we can use the `.mousePressed()` method, and pass in our previously cre
 Type the following at the end of the `setup()` function:
 
 ```js
-canvas.mousePressed(drawPoint);
+function setup() {
+  // ...the rest of the setup function
+  pointsData.on("child_added", function(point) {
+    points.push(point.val());
+  })
+
+  canvas.mousePressed(drawPoint);
+}
 ```
 
 We also want `drawPoint()` to be called when we drag our mouse, but there is no `.mouseDragged()` method. So we'll make our own, out of the `mouseIsPressed` p5.js property, and the canvas method `.mouseMoved()`. If `mouseIsPressed` is true during `.mouseMoved()`, that means our mouse is being dragged!
@@ -260,14 +322,22 @@ We also want `drawPoint()` to be called when we drag our mouse, but there is no 
 We can start by adding this beneath `canvas.mousePressed(drawPoint);`:
 
 ```js
-canvas.mouseMoved(drawPoint);
+function setup() {
+  // ...the rest of the setup function
+  canvas.mousePressed(drawPoint);
+  canvas.mouseMoved(drawPoint);
+}
 ```
 
 That's not _quite_ right, because we want to execute `drawPoint()`, but only if `mouseIsPressed` is true.
 
-We could write a separate function:
+We could write a separate function right under `drawPoint`:
 
 ```js
+function drawPoint() {
+  // ...the rest of the drawPoint function
+}
+
 function drawPointIfMousePressed() {
   if (mouseIsPressed) {
     drawPoint();
@@ -278,24 +348,14 @@ function drawPointIfMousePressed() {
 And then use it:
 
 ```js
+̶c̶a̶n̶v̶a̶s̶.̶m̶o̶u̶s̶e̶M̶o̶v̶e̶d̶(̶d̶r̶a̶w̶P̶o̶i̶n̶t̶)̶;̶
 canvas.mouseMoved(drawPointIfMousePressed);
 ```
+<!-- Notice that the body of the function is the same! The only difference is that our anonymous function has no name, and is created right inside `.mouseMoved()`. -->
 
-**OR**
+Now, if we save and refresh live preview (opened with `preview` > `live preview`), we'll be able to draw stuff. Then, if we link the URL of our external live preview to a friend, we'll be able to see what they're drawing as well! Awesome!
 
-We can use an anonymous function:
-
-```js
-canvas.mouseMoved(function () {
-  if (mouseIsPressed) {
-    drawPoint();
-  }
-});
-```
-
-Notice that the body of the function is the same! The only difference is that our anonymous function has no name, and is created right inside `.mouseMoved()`.
-
-Now, if we save and refresh live preview, we'll be able to draw stuff. Then, if we link the URL of our external live preview to a friend, we'll be able to see what they're drawing as well! Awesome!
+Now that something kinda works, let's make it official by committing and pushing! See if you remember the commands to use.
 
 ## Part III: Odds and Ends
 
@@ -304,15 +364,28 @@ The last part of this workshop is including some nice features. We'll add two bu
 In our `index.html`, we'll create a sort of control panel, with a `div` containing our two buttons:
 
 ```html
-<div id="controls">
- <button id="saveDrawing">Save to Computer</button>
- <button id="clearDrawing">DELETE DRAWING</button>
-</div>
+<body>
+  <div id="controls">
+    <button id="saveDrawing">Save to Computer</button>
+    <button id="clearDrawing">DELETE DRAWING</button>
+  </div>
+  
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
 ```
 
-In our `main.js`, we'll create the functionality behind these two buttons, and then attach it to the HTML elements using jQuery.
+In our `main.js`, we'll create the functionality behind these two buttons, and then attach it to the HTML elements using jQuery. Add this code below everything else in your `main.js`
 
 ```js
+function drawPointIfMousePressed() {
+  if (mouseIsPressed) {
+    drawPoint();
+  }
+}
+
 $("#saveDrawing").on("click", saveDrawing);
 
 function saveDrawing() {
@@ -341,19 +414,28 @@ function clearDrawing() {
 }
 ```
 
-To make other screens clear when the drawing is removed from Firebase:
+Right now other screens won't clear when we remove the drawing from Firebase. To fix this, add the following:
 
 ```js
-pointsData.on("child_removed", function () {
-  points = [];
-});
+setup() {
+  // ...the rest of the setup function
+  pointsData.on("child_added", function (point) {
+    points.push(point.val());
+  });
+  pointsData.on("child_removed", function () {
+    points = [];
+  });
+
+  canvas.mousePressed(drawPoint);
+  canvas.mouseMoved(drawPointIfMousePressed);
+}
 ```
 
 Congratulations! Your collaborative drawing app is now complete.
 
 ## Part IV: Publishing and Sharing
 
-Make sure your files are all saved, and then run the familiar git commands.
+Make sure your files are all saved, then run the familiar git commands.
 
 Then, remember to add `USERNAME.github.io` to the list of Authorized Domains on your Firebase app. After that, your project should be live on `USERNAME.github.io/collaborative_sketch/`!
 
@@ -365,5 +447,5 @@ You can create other collaboration-driven projects using Firebase, such as a sto
 
 **Examples:**
 
-- [Change drawing settings](http://sohuang.github.io/collaborative_sketch/)
-- [Draw continuous lines](http://maxwofford.com/collaborative_sketch/)
+- [Change drawing settings](http://sohuang.github.io/collab_sketch/)
+- [Draw continuous lines](https://maxwofford.com/collaborative_sketch/)
