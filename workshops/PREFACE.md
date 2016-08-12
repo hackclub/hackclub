@@ -8,7 +8,7 @@ If you're reading this, that means that you've decided to embark on the journey 
 
 [1. Coding is Not Special](#1-coding-is-not-special)  
 [2. It Never Works the First Time](#2-it-never-works-the-first-time)  
-[3. Persistence Beats Method](#3-persistence-beats-method)
+[3. Persistence Beats Method](#3-persistence-beats-the-method)
 
 ## 1. Coding is Not Special
 
@@ -26,7 +26,7 @@ But this experience is so common for programmers of all skill levels that it say
 
 A big difference between new coders and experienced coders is faith: faith that things are going wrong for a logical and discoverable reason, faith that problems are fixable, faith that there is a way to accomplish the goal. The path from "not working" to "working" might not be obvious, but with patience you can usually find it.
 
-## 3. Persistence Beats Method
+## 3. Persistence Beats the Method
 
 There's no shortage of opinions about the "right" or "best" way to learn how to code, and there are lots of potential approaches. You can learn the concepts from a book or by completing interactive exercises or by building things on your own.
 
