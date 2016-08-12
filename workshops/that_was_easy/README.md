@@ -511,4 +511,5 @@ Now that you know how to add sounds to buttons, you can do many things, includin
 - Bind more actions to keys. Surprise me.
 
 **Inspiration:**
+
 - [Yeezy button](https://sohuang.github.io/that_was_easy/)
