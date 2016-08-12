@@ -512,4 +512,6 @@ Now that you know how to add sounds to buttons, you can do many things, includin
 
 **Inspiration:**
 
-- [Yeezy button](https://sohuang.github.io/that_was_easy/)
+| That Was Yeezy                                                         |
+| ---------------------------------------------------------------------- |
+| [![](img/example_yeezy.gif)](https://sohuang.github.io/that_was_easy/) |
