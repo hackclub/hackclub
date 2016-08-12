@@ -4,9 +4,7 @@ _**We recommend going through this workshop in Google Chrome.**_
 
 ![](img/easy_screenshot.png)
 
-Here's the [live demo][final_live_demo].
-
-Also, here's the [final code][final_code].
+Here's the [live demo][final_live_demo] and [final code][final_code].
 
 This workshop should take around 1 hour.
 
