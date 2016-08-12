@@ -1,5 +1,11 @@
 # Cloud9 tutorial
 
+**DEPRECATED**
+
+_**This workshop has been deprecated and is no longer maintained.**_
+
+---
+
 ![Cloud9 logo](img/cloud9.png)
 
 Short link to this workshop: https://workshops.hackclub.com/cloud9
