@@ -4,9 +4,7 @@ _**We recommend going through this workshop in Google Chrome.**_
 
 ![](img/easy_screenshot.png)
 
-Here's the [live demo][final_live_demo].
-
-Also, here's the [final code][final_code].
+Here's the [live demo][final_live_demo] and [final code][final_code].
 
 This workshop should take around 1 hour.
 
@@ -15,9 +13,15 @@ This workshop should take around 1 hour.
 
 ---
 
-Today we're going to create a button on a webpage that will emit a sound when clicked.
+Hey there! Today we're gonna build a replica of the Staples Easy Button that'll make sounds when clicked.
 
-Much like in Personal Website workshop, we'll be using HTML to create stuff visible on the browser. We'll also be using JavaScript, a programming language commonly used in web development, to include interactivity in our project. In addition, we will be making use of jQuery, which is a library that will make using JavaScript in the browser much simpler. This may seem like an exorbitant number of new tools, but we'll be biting off manageable pieces.
+<img src="img/clicking_button.gif" width="130" align="right">
+
+Just like in [Personal Website](../personal_website/), we'll be using HTML to build stuff for your browser.
+
+On top of that, we'll be introducing JavaScript, a new programming language that'll let us do a bunch of neat-o things on the site, like play sounds in your browser. We'll also using a piece of software with JavaScript called jQuery that makes writing JavaScript much easier.
+
+If this feels like an exorbitant amount of new tools -- you're absolutely right. But no need to fret, we'll be biting these off in manageable chunks. And remember, you're not expected to understand everything by the end of this workshop.
 
 **Table of Contents**
 
@@ -507,4 +511,7 @@ Now that you know how to add sounds to buttons, you can do many things, includin
 - Bind more actions to keys. Surprise me.
 
 **Inspiration:**
-- [Yeezy button](https://sohuang.github.io/that_was_easy/)
+
+| That Was Yeezy                                                         |
+| ---------------------------------------------------------------------- |
+| [![](img/example_yeezy.gif)](https://sohuang.github.io/that_was_easy/) |
