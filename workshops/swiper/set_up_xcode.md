@@ -53,8 +53,8 @@ Then click *Create*. This will be your new Game Scene.
 
 ![](img/Step 1/4. HCCreateClass.gif)
 
-Repeat the last step of creating a class two more times to create a file named
-`TitleScene.swift` and `GameOverScene.swift`.
+Repeat the last step of creating a class two more times to create files named
+`PlayScene.swift` (the title screen, where the user will press "Play") and `GameOverScene.swift`.
 
 ![](img/Step 1/5. HCRestOfNewFiles.png)
 
