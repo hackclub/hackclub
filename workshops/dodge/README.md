@@ -1,12 +1,19 @@
 # Dodge
 
-Short link to this workshop: https://workshops.hackclub.com/dodge
+| What you'll build       |
+| ----------------------- |
+| ![](img/final_demo.gif) |
+
+Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1 hour and 15 minutes.
+
+_**We recommend going through this workshop in Google Chrome.**_
+
+[live_demo]: https://prophetorpheus.github.io/dodge
+[final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/dodge
 
 ---
 
 In this workshop, we're going to build a simple, yet addictive, game using JavaScript.
-
-![Final result](img/after_spicing_it_up.gif)
 
 Previously when we've done web development, we've used HTML elements and things of that ilk to build what we see in the browser. Today we're going to do things a little differently and build our game using a new coding language, JavaScript, along with two great libraries called p5.js and p5.play.
 
@@ -183,16 +190,30 @@ We only want the player to move when we press the controls. p5.js gives us a way
 Let's wrap the line we just wrote, about incrementing x-position by 1, in a conditional, so that it only happens on the condition that the right arrow key is pressed:
 
 ```js
-if (keyDown(RIGHT_ARROW)) {
-  player.position.x = player.position.x + 1;
+function draw() {
+  background(0, 0, 100);
+  drawSprites();
+
+  if (keyDown(RIGHT_ARROW)) {
+    player.position.x = player.position.x + 1;
+  }
 }
 ```
 
 And we'll have corresponding behavior assigned to the left arrow key, except that we'll decrement the position by 1. Place this below the previous conditional:
 
 ```js
-if (keyDown(LEFT_ARROW)) {
-  player.position.x = player.position.x - 1;
+function draw() {
+  background(0, 0, 100);
+  drawSprites();
+
+  if (keyDown(RIGHT_ARROW)) {
+    player.position.x = player.position.x + 1;
+  }
+
+  if (keyDown(LEFT_ARROW)) {
+    player.position.x = player.position.x - 1;
+  }
 }
 ```
 
@@ -203,6 +224,8 @@ Though we've given our player the freedom to move, we don't want the player to m
 We'll update our code to prevent the player's x-position from going past the limits of the screen, i.e., it should never dip below 0, or above width. We'll add this new condition to our conditional, using the "and" operator (`&&`):
 
 ```js
+// This replaces the old keyDown(RIGHT_ARROW) code
+
 if (keyDown(RIGHT_ARROW) && player.position.x < width) {
   player.position.x = player.position.x + 1;
 }
@@ -213,6 +236,8 @@ There, that should keep it from moving unless there's space to move. Here, we've
 We'll add the corresponding one for moving leftward.
 
 ```js
+// This replaces the old keyDown(LEFT_ARROW) code
+
 if (keyDown(LEFT_ARROW) && player.position.x > 0) {
   player.position.x = player.position.x - 1;
 }
@@ -270,10 +295,16 @@ And to display it, guess what? That's already taken care of by our familiar frie
 
 Much like how we made the player move by changing its position incrementally, we'll modifying the position of the enemy within the `draw()` function.
 
-Let's make it come towards the player, and have it drop down to the bottom of the canvas. Add this line after the code that makes the player move:
+Let's make it come towards the player, and have it drop down to the bottom of the canvas:
 
 ```js
+if (keyDown(LEFT_ARROW) && player.position.x > 25) {
+  player.position.x = player.position.x - 1;
+}
+
 enemy.position.y = enemy.position.y + 1;
+
+drawSprites();
 ```
 
 Instead of modifying `position.x`, we're modifying `position.y`, because we want the enemy to move vertically. We're incrementing the value, because we want the position to move downward. Remember, in the coordinate system in p5.js, the y values increase in the downward direction.
@@ -303,9 +334,13 @@ function draw() {
 Let's check out what we've got. Looks great, except that the enemy is a pretty minor threat if it only shows up once and then leaves the canvas forever. We're gonna have to bring it back to the top once it passes the bottom of the canvas. We can set up a check for when the y-position becomes greater than the height of the canvas, and when that happens, we will set the y-position to 0, so that it reappears at the top.
 
 ```js
+enemy.position.y = enemy.position.y + 3;
+
 if (enemy.position.y > height) {
   enemy.position.y = 0;
 }
+
+drawSprites();
 ```
 
 If we add this right under the line where we increment the position, we can see that now the enemy forms a sort of dashed barrier. This isn't very exciting, as we don't have to do much dodging. We could just leave our player in one spot and always avoid the enemy. To make things more interesting, we'll reset the x-position of the enemy each time it moves past the bottom. And to make it even more interesting, we'll randomize this value. So now there will be no premeditated escape possible!
@@ -313,10 +348,14 @@ If we add this right under the line where we increment the position, we can see 
 We can make use of the function `random()`, provided for us by p5.js. `random()` is a neat function that can accept different numbers of arguments. You can check out its documentation [here](http://p5js.org/reference/#p5/random).
 
 ```js
+enemy.position.y = enemy.position.y + 3;
+
 if (enemy.position.y > height) {
   enemy.position.y = 0;
   enemy.position.x = random(5, width-5);
 }
+
+drawSprites();
 ```
 
 For our purposes we are passing in two numerical arguments to `random()`, with which it will give us a random value between the two numbers. Thanks to our previous run-ins with dealing with the edges of the canvas, we've experienced enough to know that we need a 5-pixel buffer on each side.
@@ -330,9 +369,14 @@ Well, if you've failed to dodge the enemy at least once, you'll realize that the
 Let's make it a real threat, by recognizing when the enemy and player collide. p5.play provides the `overlap()` method on our sprites for doing just that.
 
 ```js
-if (enemy.overlap(player)) {
-  gameOver();
-}
+function draw() {
+  if (enemy.overlap(player)) {
+    gameOver();
+  }
+
+  background(0, 0, 100);
+
+  // ...the rest of the draw function
 ```
 
 This is our lose condition. Now we can punish the user for losing in this `gameOver()` function, which we will now create.
@@ -342,6 +386,10 @@ This is our lose condition. Now we can punish the user for losing in this `gameO
 Even though it may feel like we've been writing all of our code in these two special p5.js functions to make stuff in the canvas, we shouldn't forget that we are still just writing JavaScript. So let's define our own function, `gameOver()`, the way we would any other JS function. We'll place it underneath the `draw()` function.
 
 ```js
+function draw() {
+  // ...the draw function
+}
+
 function gameOver() {
 }
 ```
@@ -369,28 +417,24 @@ Let's add in a flag, initialize it in `setup()`, and edit our `draw()` function.
 
 ```js
 var isGameOver;
-...
+// ...other variables
 
 function setup() {
-  ...
-  isGameOver = false;
-  ...
+    isGameOver = false;
+    // ...the rest of the setup function
 }
 
 function draw() {
-  if (isGameOver) {
-    gameOver();
-  } else {
-    ...
-    if (enemy.overlap(player)) {
-      isGameOver = true;
+    if (isGameOver) {
+        gameOver();
+    } else {
+        if (enemy.overlap(player)) {
+            isGameOver = true;
+        }
+        // ...the rest of the draw function
     }
-    ...
-  }
 }
 ```
-
-(For the sake of readability, I'm only including the changes, and not the entire code up to this point.) 
 
 We'll initialize this variable with the value `false`, because the game is not yet over at the beginning. Then we'll set up a conditional in `draw()`, to check if the game is over, in which case we'll run `gameOver()`. In the `else` block, we'll put what we've written for gameplay so far. Remember to change the body of the conditional that checks for collision. We want to update the flag, instead of calling `gameOver()` directly. By updating the flag, we're redirecting the `draw()` function to the game over screen, so to speak.
 
@@ -417,6 +461,14 @@ And second, we have to detect the user's click and restart the game on detection
 p5.js has a handy mechanism for this! There is a built-in function that will execute when a click is registered on the canvas, called [`mouseClicked`](http://p5js.org/reference/#p5/mouseClicked). We just have to define the body of this function and specify what to do when the user clicks.
 
 ```js
+function gameOver() {
+  background(0);
+  textAlign(CENTER);
+  fill("white");
+  text("Game Over!", width/2, height/2);
+  text("Click anywhere to try again", width/2, 3*height/4);
+}
+
 function mouseClicked() {
 }
 ```
@@ -471,7 +523,7 @@ Let's make Dodge beautiful. We're going to bring the game from looking like this
 
 To looking like this:
 
-![After we add images](img/after_spicing_it_up.gif)
+![After we add images](img/final_demo.gif)
 
 #### Adding Images
 
@@ -502,11 +554,14 @@ p5.js has a function called [`loadImage()`](http://p5js.org/reference/#p5/loadIm
 In addition to `setup()` and `draw()`, p5.js has a special function called `preload()`, which is run right when the page loads before `setup()`. `preload()` is generally used to load images and other resources (like sounds) into the game. Go ahead and declare `preload()` right before the `setup()` function.
 
 ```js
+// ...the rest of the variables
+var enemy;
+
 function preload() {
 }
 
 function setup() {
-  ...
+  // ...the rest of the setup function
 }
 ```
 
@@ -515,12 +570,10 @@ function setup() {
 Let's start by making some variables to hold our player image and our enemy image. Create these right below where we declared our `player` and `enemy` variables at the top of the file.
 
 ```js
-...
 var player;
 var playerImage;
 var enemy;
 var enemyImage;
-...
 ```
 
 Now let's load an image into `playerImage` in `preload()`.
@@ -531,7 +584,7 @@ function preload() {
 }
 ```
 
-... and do the same with `enemyImage`.
+...and do the same with `enemyImage`.
 
 ```js
 function preload(){
@@ -543,73 +596,55 @@ function preload(){
 Add the loaded images to the `player` and `enemy`, right under where we create the sprites in `setup()`.
 
 ```js
-function setup() {
-  ...
-  player = createSprite(width/2, height-25, 50, 50);
-  player.addImage(playerImage);
-  enemy = createSprite(width/2, 0, 10, 30);
-  enemy.addImage(enemyImage);
-  ...
-}
+// in the setup function...
+player = createSprite(width/2, height-25, 50, 50);
+player.addImage(playerImage);
+enemy = createSprite(width/2, 0, 10, 30);
+enemy.addImage(enemyImage);
 ```
 
 When we add an image to a sprite, the sprite's width and height is changed to match the image's. Because we're loading our `player` sprite's image right after we create the sprite, we don't need to worry about the sprite's initial width and height. Let's just go ahead and set them to zero.
 
 ```js
-function setup() {
-  ...
-  p̶l̶a̶y̶e̶r̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶h̶e̶i̶g̶h̶t̶-̶2̶5̶,̶ ̶5̶0̶,̶ ̶5̶0̶)̶;̶
-  player = createSprite(width/2, height-25, 0, 0);
-  ...
-}
+// in the setup function...
+̶p̶l̶a̶y̶e̶r̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶h̶e̶i̶g̶h̶t̶-̶2̶5̶,̶ ̶5̶0̶,̶ ̶5̶0̶)̶;̶
+player = createSprite(width/2, height-25, 0, 0);
 ```
 
 Let's change the `enemy`'s placeholder width and height to those of the actual `enemyImage` too.
 
 ```js
-function setup() {
-  ...
-  e̶n̶e̶m̶y̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶0̶,̶ ̶1̶0̶,̶ ̶3̶0̶)̶;̶
-  enemy = createSprite(width/2, 0, 0, 0);
-  ...
-}
+// in the setup function...
+̶e̶n̶e̶m̶y̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶0̶,̶ ̶1̶0̶,̶ ̶3̶0̶)̶;̶
+enemy = createSprite(width/2, 0, 0, 0);
 ```
 
 We were previously setting the player sprite's initial y coordinate to half of the sprite's width away from the bottom of the screen. Now that we're using an image instead of a placeholder square, we can replace `25` with half of the player image's height.
 
 ```js
-function setup() {
-  ...
-  p̶l̶a̶y̶e̶r̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶h̶e̶i̶g̶h̶t̶-̶2̶5̶,̶ ̶0̶,̶ ̶0̶)̶;̶
-  player = createSprite(width/2, height-(playerImage.height/2), 0, 0);
-  ...
-}
+// in the setup function...
+̶p̶l̶a̶y̶e̶r̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶h̶e̶i̶g̶h̶t̶-̶2̶5̶,̶ ̶0̶,̶ ̶0̶)̶;̶
+player = createSprite(width/2, height-(playerImage.height/2), 0, 0);
 ```
 
 We're also going to want to make that same change in the `mouseClicked()` function.
 
 ```js
-function mouseClicked() {
-  ...
-  p̶l̶a̶y̶e̶r̶.̶p̶o̶s̶i̶t̶i̶o̶n̶.̶y̶ ̶=̶ ̶h̶e̶i̶g̶h̶t̶-̶2̶5̶;̶
-  player.position.y = height-(playerImage.height/2);
-  ...
-}
+// in the mouseClicked function
+̶p̶l̶a̶y̶e̶r̶.̶p̶o̶s̶i̶t̶i̶o̶n̶.̶y̶ ̶=̶ ̶h̶e̶i̶g̶h̶t̶-̶2̶5̶;̶
+player.position.y = height-(playerImage.height/2);
 ```
 
 Let's not forget our bounds! Though our `player` sprite is just about 50 pixels wide, this will not always be the case with different images. Let's set our bounds to `(playerImage.width/2)` in the `draw()` function.
 
 ```js
-function draw(){
-  ...
-    if(keyDown(RIGHT_ARROW) && player.position.x < (width - (playerImage.width/2))){
-      player.position.x += 2;
-    }
-    
-    if(keyDown(LEFT_ARROW) && player.position.x > (playerImage.width/2)){
-      player.position.x -= 2;
-    }
-  ...
+// in the draw function...
+if(keyDown(RIGHT_ARROW) && player.position.x < (width - (playerImage.width/2))){
+  player.position.x += 2;
+}
+
+if(keyDown(LEFT_ARROW) && player.position.x > (playerImage.width/2)){
+  player.position.x -= 2;
 }
 ```
 
@@ -620,34 +655,31 @@ Always code defensively!
 And, finally, for the background. Go ahead and declare a new variable, `backgroundImage`, at the top of the file and load an image into it in `preload()`.
 
 ```js
-...
 var enemyImage;
 var backgroundImage;
 
 function preload() {
-  ...
   enemyImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
   backgroundImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/aKQOg3G.png");
+  // ...the rest of the preload function
 }
 ```
 
 Now, go ahead and replace our existing `background()` call in `draw()` with `background(backgroundImage)`, to tell p5 to use an image for the background.
 
 ```js
-function draw() {
-  ...
-  b̶a̶c̶k̶g̶r̶o̶u̶n̶d̶(̶0̶,̶ ̶5̶0̶,̶ ̶1̶0̶0̶)̶;̶
-  background(backgroundImage);
-}
+// in the draw function...
+̶b̶a̶c̶k̶g̶r̶o̶u̶n̶d̶(̶0̶,̶ ̶5̶0̶,̶ ̶1̶0̶0̶)̶;̶
+background(backgroundImage);
 ```
 
 Final thing: notice that the background image is 256 by 256 pixels, but the canvas is 250 by 250 pixels. Go ahead and change this to improve the look of the background image.
 
 ```js
 function setup() {
-  c̶r̶e̶a̶t̶e̶C̶a̶n̶v̶a̶s̶(̶2̶5̶0̶,̶ ̶2̶5̶0̶)̶;̶
+  ̶c̶r̶e̶a̶t̶e̶C̶a̶n̶v̶a̶s̶(̶2̶5̶0̶,̶ ̶2̶5̶0̶)̶;̶
   createCanvas(256, 256);
-  ...
+  // ...the rest of the setup function
 }
 ```
 
@@ -655,16 +687,14 @@ function setup() {
 
 In GIF of what we're aiming for, you'll notice that the asteroid (the `enemy`) is spinning.
 
-![](img/after_spicing_it_up.gif)
+![](img/final_demo.gif)
 
 This is actually quite easy to implement using p5.play. The [`Sprite`](http://p5play.molleindustria.org/docs/classes/Sprite.html) class in p5.play has an attribute called [`rotationSpeed`](http://p5play.molleindustria.org/docs/classes/Sprite.html#prop-rotationSpeed), which we can set to have p5.play rotate the sprite every time `draw()` is called.
 
 ```js
-function setup() {
-  ...
-  enemy.addImage(enemyImage);
-  enemy.rotationSpeed = 4.0;
-}
+// in the setup function...
+enemy.addImage(enemyImage);
+enemy.rotationSpeed = 4.0;
 ```
 
 Your game should now look pretty much identical to our target GIF. Rock on :punch:.
