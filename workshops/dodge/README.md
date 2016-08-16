@@ -1,16 +1,14 @@
 # Dodge
 
+| What you'll build       |
+| ----------------------- |
+| ![](img/final_demo.gif) |
+
+Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1 hour and 15 minutes.
+
 _**We recommend going through this workshop in Google Chrome.**_
 
-![Final result](img/after_spicing_it_up.gif)
-
-Here's the [live demo][final_live_demo].
-
-Also, here's the [final code][final_code].
-
-This workshop should take around 1 hour and 15 minutes.
-
-[final_live_demo]: https://prophetorpheus.github.io/dodge
+[live_demo]: https://prophetorpheus.github.io/dodge
 [final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/dodge
 
 ---
@@ -525,7 +523,7 @@ Let's make Dodge beautiful. We're going to bring the game from looking like this
 
 To looking like this:
 
-![After we add images](img/after_spicing_it_up.gif)
+![After we add images](img/final_demo.gif)
 
 #### Adding Images
 
@@ -689,7 +687,7 @@ function setup() {
 
 In GIF of what we're aiming for, you'll notice that the asteroid (the `enemy`) is spinning.
 
-![](img/after_spicing_it_up.gif)
+![](img/final_demo.gif)
 
 This is actually quite easy to implement using p5.play. The [`Sprite`](http://p5play.molleindustria.org/docs/classes/Sprite.html) class in p5.play has an attribute called [`rotationSpeed`](http://p5play.molleindustria.org/docs/classes/Sprite.html#prop-rotationSpeed), which we can set to have p5.play rotate the sprite every time `draw()` is called.
 
