@@ -22,7 +22,7 @@ Please use Google Chrome for this tutorial
 ### 2) Cloud 9 Setup
 
 1. Log in to https://c9.io
-2. Open your **projects** workspace (the one you created in the [personal website](../personal_website/README.md) workshop)
+2. Open your **projects** workspace (the one you created in the [personal website](../personal_website/) workshop)
 3. Create a new folder called `twilio` in the `projects` folder
 
 When you're done with it, your folder structure should look like this:

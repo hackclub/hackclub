@@ -91,25 +91,25 @@ _:warning: These workshops are no longer maintained. They may contain errors and
 
 Interested in contributing to our workshops? Look [here](GUIDELINES.md) and [here](CONTRIBUTING.md). Beginners welcome!
 
-[ajar]: ajar/README.md
-[chat]: chat/README.md
-[cloud9]: cloud9/README.md
-[collaborative_sketch]: collaborative_sketch/README.md
-[cringe_101]: cringe_101/README.md
-[dodge]: dodge/README.md
-[find_bigfoot]: find_bigfoot/README.md
-[geometric_pattern]: geometric_pattern/README.md
-[git_and_github]: git_and_github/README.md
-[github_pages]: github_pages/README.md
-[maze]: maze/README.md
-[notes_to_self]: notes_to_self/README.md
-[personal_website]: personal_website/README.md
-[platformer]: platformer/README.md
-[portfolio]: portfolio/README.md
+[ajar]: ajar/
+[chat]: chat/
+[cloud9]: cloud9/
+[collaborative_sketch]: collaborative_sketch/
+[cringe_101]: cringe_101/
+[dodge]: dodge/
+[find_bigfoot]: find_bigfoot/
+[geometric_pattern]: geometric_pattern/
+[git_and_github]: git_and_github/
+[github_pages]: github_pages/
+[maze]: maze/
+[notes_to_self]: notes_to_self/
+[personal_website]: personal_website/
+[platformer]: platformer/
+[portfolio]: portfolio/
 [preface]: PREFACE.md
-[soccer]: soccer/README.md
-[swiper]: swiper/README.md
-[that_was_easy]: that_was_easy/README.md
-[thugify]: thugify/README.md
-[twilio]: twilio/README.md
-[twine]: twine/README.md
+[soccer]: soccer/
+[swiper]: swiper/
+[that_was_easy]: that_was_easy/
+[thugify]: thugify/
+[twilio]: twilio/
+[twine]: twine/

@@ -92,7 +92,7 @@ Check out the demo [here](http://jsbin.com/jizoyo/edit?output)
 
 ### Creating the files
 
-If you haven't already set up Cloud9, [click here](../cloud9/README.md) to be
+If you haven't already set up Cloud9, [click here](../cloud9/) to be
 taken to a guide on setting it up. Once you've done that, continue over here.
 
 In Cloud9, create two files in a folder of your choice:

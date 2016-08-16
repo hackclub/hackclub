@@ -67,13 +67,13 @@ A few more things:
 - We strongly recommend that you have club members develop in
   [Cloud9](https://c9.io) and deploy to [GitHub
   Pages](https://pages.github.com). See the [Personal
-  Website](https://github.com/hackclub/hackclub/blob/master/workshops/personal_website/README.md)
+  Website](https://github.com/hackclub/hackclub/blob/master/workshops/personal_website/)
   workshop for what the workflow looks like. This is to be consistent with the
   existing workflow that club members learn, and to play nice with the
   restrictions that school computers have.
 - But if you're running a club where you know that isn't an issue, feel free to
   use different tools. For example, Zach Cmiel wrote an [iOS
-  workshop](https://github.com/hackclub/hackclub/blob/master/workshops/swiper/README.md)
+  workshop](https://github.com/hackclub/hackclub/blob/master/workshops/swiper/)
   for his club.
 - Try to follow the format and directory structure of [existing
   workshops](https://github.com/hackclub/hackclub/tree/master/workshops/).
