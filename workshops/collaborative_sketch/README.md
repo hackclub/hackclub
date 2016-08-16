@@ -1,16 +1,14 @@
 # Collaborative Sketch
 
+| What you'll build       |
+| ----------------------- |
+| ![](img/final_demo.gif) |
+
+Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1 hour.
+
 _**We recommend going through this workshop in Google Chrome.**_
 
-![](img/final_demo.gif)
-
-Here's the [live demo][final_live_demo].
-
-Also, here's the [final code][final_code].
-
-This workshop should take around 1 hour.
-
-[final_live_demo]: https://prophetorpheus.github.io/collaborative_sketch
+[live_demo]: https://prophetorpheus.github.io/collaborative_sketch
 [final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/collaborative_sketch
 ---
 
