@@ -6,7 +6,7 @@
 
 Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1 hour.
 
-_**Warning: this demo involves flashing colors and is not recommended for those with a history of epilepsy.**_ There's also an [animated demo][animated_live_demo].
+_**Warning: the following demo involves flashing colors and is not recommended for those with a history of epilepsy.**_ There's also an [animated demo][animated_live_demo].
 
 _**We recommend going through this workshop in Google Chrome.**_
 
@@ -16,7 +16,7 @@ _**We recommend going through this workshop in Google Chrome.**_
 
 ---
 
-We'll be creating a cool graphic like the one above, using JavaScript and p5.js. [p5.js](http://p5js.org/) is a library for making stuff in conjunction with the [HTML canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas). p5.js is nothing more than JavaScript code written to make commonly-desired functionality much more accessible. It is primarily used to make visuals and graphics. A great introduction can be found [here](http://taeyoonchoi.com/signing-coders-1/).
+We'll be creating a cool graphic like the one above, using JavaScript and p5.js. [p5.js](http://p5js.org/) is a library for making stuff in conjunction with the [HTML canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas). p5.js is nothing more than JavaScript code written to make commonly-desired functionality much more accessible. It is primarily used to make visuals and graphics for games and websites.
 
 **Table of Contents:**
 
@@ -484,7 +484,7 @@ Now that we've done more work, let's commit again:
 
 ## Part IV: Adding Color
 
-Black and white is nice, but how about some color? We've previously used CSS to change colors, but this is a special case -- CSS can't modify anything inside of a canvas.
+Black and white is nice, but how about some color? We've previously used CSS to change colors, but this is a special case -- CSS can't modify anything inside of a canvas (the container all our p5 stuff shows up in).
 
 p5.js provides several helpful functions, including: [`color()`](http://p5js.org/reference/#p5/color), [`fill()`](http://p5js.org/reference/#p5/fill), and [`stroke()`](http://p5js.org/reference/#p5/stroke) that help modify graphics inside a canvas.
 
