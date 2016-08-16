@@ -1,8 +1,15 @@
 # Platformer
 
-Short link to this workshop: https://workshops.hackclub.com/platformer
+| What you'll build       |
+| ----------------------- |
+| ![](img/final_demo.gif) |
 
-Demo: [here](https://prophetorpheus.github.io/platformer/)
+Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 60 minutes.
+
+_**We recommend going through this workshop in Google Chrome.**_
+
+[live_demo]: https://prophetorpheus.github.io/platformer
+[final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/platformer
 
 ---
 
