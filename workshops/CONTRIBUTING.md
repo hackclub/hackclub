@@ -37,7 +37,8 @@ Before continuing, browse through the directory structure of some workshops like
 1. Make sure that you've followed the directions in [`CONTRIBUTING.md`](../CONTRIBUTING.md) and cloned the `hackclub` repo.
 2. Create a directory with the name of the workshop in the [`workshops/`](../workshops) directory. The name of your workshop should only be one or two words like `soccer` or `remote_control`.
 3. Inside the directory you just created, create a `README.md` file. You will be writing your workshop in this Markdown file. Feel free to create other Markdown files that you link to from your newly `README.md` (see [Dodge](dodge) as an example of a workshop that does this.
-4. In [`workshops/README.md`](README.md), add your workshop to the [Workshops list](README.md#the-list).
+4. In addition to the `README.md`, you'll want to create a `metadata.yml` file inside your directory. This will contain a unique, random 8 character string, a name, and a description. Please look at [Personal Website](personal_website/metadata.yml) for an example.
+5. In [`workshops/README.md`](README.md), add your workshop to the [Workshops list](README.md#the-list).
 
 **Step 2: Create the workshop with the following requirements:**
 
@@ -53,6 +54,7 @@ Before continuing, browse through the directory structure of some workshops like
 So you've finished writing a great workshop, and you're ready to make a pull request. Awesome! But before you do, make sure you've covered these items:
 
 - [ ] All filenames follow the right conventions, and the files are in the right place. [Click here](../CONTRIBUTING.md) for an overview of our contribution guidelines.
+- [ ] There is a `metadata.yml` file inside your directory.
 - [ ] The workshop has been added to the list in `workshops/README.md`.
 
 Great. Now, follow [these instructions](../CONTRIBUTING.md) on how to submit a pull request. After you've done that, make sure the CircleCI tests are all passing. If there are errors, click on "View Details" and see what the errors are. Common errors include:
