@@ -1,3 +1,11 @@
+# Basic Git and GitHub
+
+**DEPRECATED**
+
+_**This workshop has been deprecated and is no longer maintained.**_
+
+---
+
 Short link to this workshop: https://workshops.hackclub.com/git_and_github
 
 -------------------------------------------------------------------------------
@@ -32,8 +40,6 @@ Short link to this workshop: https://workshops.hackclub.com/git_and_github
     - [Explore!](#explore)
 
 <!-- markdown-toc end -->
-
-# Basic Git and GitHub
 
 ## Tips and Tricks While Using This Workshop
 

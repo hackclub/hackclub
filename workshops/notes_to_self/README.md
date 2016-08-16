@@ -1,5 +1,11 @@
 # Notes to Self
 
+**DEPRECATED**
+
+_**This workshop has been deprecated and is no longer maintained.**_
+
+---
+
 Short Link: [https://workshops.hackclub.com/notes_to_self/](https://workshops.hackclub.com/notes_to_self/)
 
 Demo: [here](https://prophetorpheus.github.io/notes_to_self/)
