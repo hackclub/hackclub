@@ -20,7 +20,7 @@ Navigate your mouse through the maze without touching the walls:
 
 In this tutorial, instead of walking you through how to build everything from scratch, we give you the code for how to make the maze game shown above and your mission will be to make your own version of it.
 
-This workshop also, assumes that you have done the [Dodge](../dodge/README.md) workshop. Make sure you do that workshop first.
+This workshop also, assumes that you have done the [Dodge](../dodge/) workshop. Make sure you do that workshop first.
 
 ## 3. Setup
 
