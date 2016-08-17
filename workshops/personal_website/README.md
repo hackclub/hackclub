@@ -1,10 +1,16 @@
 # Personal Website
 
-Prophet Orpheus is here to guide you through making your own personal website. It will look something like this:
+_**We recommend going through this workshop in Google Chrome.**_
+
+Prophet Orpheus is here to guide you through making your own personal website.
+
+It will look something like this:
 
 ![](img/final_screenshot.png)
 
-Open the [live demo][final_live_demo]. See the [final code][final_code]. This workshop will take around 45 minutes.
+Here's the [live demo][final_demo] and [final code][final_code].
+
+This workshop should take around 45 minutes.
 
 [final_live_demo]: https://prophetorpheus.github.io
 [final_code]: examples/
@@ -22,6 +28,8 @@ Open the [live demo][final_live_demo]. See the [final code][final_code]. This wo
 
 ### 1) Signing Up for GitHub
 
+_If you already have a GitHub account, skip to step 3 of [Signing Up for GitHub](#1-signing-up-for-github)._
+
 GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
 
 1. Open https://github.com/join in a new tab and fill in:
@@ -37,34 +45,29 @@ _Pro tip: if you want a username that's already taken, you can often get it by [
 
 GitHub allows us to host our website using a service called GitHub Pages. This means that we can put the files of our website on GitHub and GitHub will give us a URL that we can share with the world.  
 
-1. Go to https://github.com
-2. Click the green "Create repository" button
+1. Go to https://github.com/new
 
-   > ![](img/gh_new_repo_button.gif)
-
-3. Under "Repository name" write `USERNAME.github.io` (replace `USERNAME` with your actual username). You have to name your repository this in order for GitHub Pages to work correctly (we'll talk more about GitHub Pages later)
+2. Under "Repository name" write `USERNAME.github.io` (replace `USERNAME` with your actual username). You have to name your repository this in order for GitHub Pages to work correctly (we'll talk more about GitHub Pages later)
 
    > ![](img/gh_create_new_repo.png)
 
-5. Yay! You've created your very first repository! Now, copy the "HTTPS link" at the top. You will need this link for the next step.
+3. Yay! You've created your very first repository! Now, copy the "HTTPS link" at the top. You will need this link for the next step.
 
    > ![](img/gh_copy_link.gif)
 
 ### 3) Signing Up for Cloud9
 
-We'll be using a service called Cloud9 to write, save, and organize all of the code we'll write in Hack Club.
+We'll be using a service called Cloud9 to write, save, and organize all the code we'll write in Hack Club.
 
-1. In a new tab, open https://c9.io/
+1. In a new tab, open https://c9.io/.
 2. Enter your email and go through the signup process.
 
    > ![](img/c9_start_signup.gif)
 
-   If Cloud9 asks for a credit card, use the following info. This is an empty
-   prepaid debit card -- it'll be enough for verification, but you won't be able
-   to make any actual charges to it.
+   If Cloud9 asks for a credit card, use the following info. This is an empty prepaid debit card -- it'll be enough for verification, but you won't be able to make any actual charges to it.
 
    > ![](img/c9_credit_card.png)
-   >
+
    > | Field       | Value      |
    > | ----------- | ---------- |
    > | Full name   | Zach Latta |
@@ -78,11 +81,11 @@ We'll be using a service called Cloud9 to write, save, and organize all of the c
 
    > ![](img/c9_create_new_workspace_button.gif)
 
-4. Set the "Workspace name" to `projects`
+4. Set the "Workspace name" to `projects`.
 
    > ![](img/c9_name_workspace.png)
 
-5. Under "Clone from Git or Mercurial URL", paste the HTTPS Link that you copied from your GitHub repository
+5. Under "Clone from Git or Mercurial URL", paste the HTTPS Link that you copied from your GitHub repository.
 
    > ![](img/c9_clone_from_existing.png)
 
@@ -104,7 +107,7 @@ We'll start by making an `index.html` file. Right click the `projects` folder in
 
 ![](img/c9_create_index_html.gif)
 
-Now we'll add the basic HTML template. Double-click on `index.html` and **type** the following. **DO NOT COPY AND PASTE.**
+Now we'll add the basic HTML template. Double-click on `index.html` and **type** the following. **DO NOT COPY AND PASTE**.
 
 ```html
 <!DOCTYPE html>
@@ -116,7 +119,7 @@ Now we'll add the basic HTML template. Double-click on `index.html` and **type**
 </html>
 ```
 
-This structure is common to all HTML pages. In fact, you can take a look for yourself! Just right click on any web page, including this one, and click "View source" to see what's going on behind the scenes. You'll find each of these elements on every page-- the doctype, and an HTML tag wrapped around a head and body.
+This structure is common to all HTML pages. In fact, you can take a look for yourself! Just right click on any web page, including this one, and click "View page source" to see what's going on behind the scenes. You'll find each of these elements on every page-- the doctype, and an HTML tag wrapped around a head and body.
 
 Before proceeding, we'll briefly go over what this template means. HTML works by storing information inside tags. `<html></html>` is an example of one such tag. Inside `<html></html>`, we've placed two other sets of tags: `<head></head>` (which wraps around the "head") and `<body></body>` (which wraps around the "body"). The body holds everything you would see in the actual tab/window when you open the page, while the head conveys information about the page to the browser. `<!DOCTYPE html>` tells the browser what version of HTML to expect. Since it is a language, HTML is constantly growing and updating, so there are multiple versions. In our case, we are going to use HTML5, the latest version.
 
@@ -170,7 +173,7 @@ Save your `index.html` and refresh the Live Preview. Yay!
 
 ### 4) Adding Images to the Body
 
-First, find an image you would like to include in your page. You can find something on Google Images, Facebook, or Imgur. We'll need the source URL of the image, so right click and select "Copy Image Address."
+First, find an image you would like to include in your page. You can find something on Google Images, Facebook, or Imgur. We'll need the source URL of the image, so right click and select "Copy Image Address".
 
 Images are included in HTML via the image tag, or `<img>`. The image tag has an attribute called `src`, which will hold the _source_ URL of the image you want to display. As an example, if I were to add this picture of Prophet Orpheus, I would right click it and get the source URL, which in this case is https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png, and put it in an image tag like so:
 
@@ -200,7 +203,7 @@ Go ahead and add this into your `index.html` now. I put my picture before my hea
 
 Hurray! You've created a basic HTML page! Let's save our progress with git!
 
-In Cloud9, press `Alt + t` on the keyboard. This will open the terminal, which allows us to run special types of commands in Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
+In Cloud9, press `Alt + t` (`option + t` on Mac) on the keyboard. This will open the terminal, which allows us to run special types of commands in Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
 
 - `git add --all` (then press enter)
 - `git commit -m "Create personal website"` (then press enter)
@@ -213,7 +216,7 @@ Though we've made a commit and saved our changes, we're not done. Our webpage is
 
 So what is CSS? CSS, also known as Cascading Style Sheets, is a language used for styling the tags (or "elements") on a web page.
 
-While HTML oversees the content and the way it's structured, CSS is how you'll specify how you'd like your content to look, and with it, you can set things like colors, spacing, and more.
+While HTML oversees the content and the way it's structured, CSS is how you'll specify how you'd like your content to look -- with it you can set things like colors, spacing, and more.
 
 ### 1) Creating the CSS File
 
@@ -264,7 +267,7 @@ img {
 }
 ```
 
-A CSS stylesheet contains "rules," each of which consists of a selector, and attributes and values within brackets, known as a "declaration block."
+A CSS stylesheet contains "rules," each of which consists of a selector, and attributes and values within brackets, known as a "declaration block".
 
 In our case, the selector is `img`. This merely selects all image tags (and thus, all images). The rule then says to set the `width` (width) of all things selected (in our case, all the images) to `200px`. `px` refers to pixels, which are a unit of measurement on the screen. When this rule is applied, all the images on our page will have a width of 200 pixels.
 
@@ -293,7 +296,7 @@ Here is the transformation that your stylesheet will have undergone at the end o
 
 ![](img/c9_css_progression.gif)
 
-Now, let's save and look at our work. Ah, it is truly beautiful to behold. Now let's commit the changes.
+Now let's save and look at our work. Ah, it is truly beautiful to behold. Now let's commit the changes.
 
 We'll once again use the terminal in Cloud9 to save our changes with git.
 - `git add --all` (then press enter)
