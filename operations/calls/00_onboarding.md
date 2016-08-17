@@ -53,6 +53,10 @@ How to run a Hack Club checklist:
 - [ ] Two types of meetings: workshop days and hack days
 - [ ] Demos
 - [ ] Example meeting plan
+
+Wrapping up, weekly updates:
+
+- [ ] Figure out who will manage weekly check-ins from each club and mark them as so inside Streak
 ```
 
 ## 24 Hours Before the Call
