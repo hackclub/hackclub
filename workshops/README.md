@@ -18,7 +18,7 @@ If you're interested in writing or contributing to a workshop, you can get start
 
 Likewise, if you have any questions or run into any trouble, please reach out to us in our Slack channel ([click here](../SLACK.md) for instructions on joining Slack) :smile:.
 
-## Core Workshops
+## Workshop Order
 
 We recommend you run through these workshops first. They are built with total beginners in mind, so don't worry if you haven't coded before.
 
