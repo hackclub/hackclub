@@ -27,7 +27,7 @@ The basics of HTML & CSS.
 
 - [Live Demo](http://output.jsbin.com/ragizi)
 - [Final Code](http://jsbin.com/ragizi/edit)
-- [Hacker Facing Workshop](portfolio/README.md)
+- [Hacker Facing Workshop](portfolio/)
 
 #### Administrative Setup
 
@@ -48,7 +48,7 @@ Open these links in new tabs:
 - [Live Demo](http://output.jsbin.com/ragizi)
 - {Your modified version of the website}
 - [Final Code](http://jsbin.com/ragizi/edit)
-- [Workshop](/portfolio/README.md)
+- [Workshop](/portfolio/)
 
 ##### Communicate the following to the hackers in 1-2 minutes max:_
 
@@ -148,7 +148,7 @@ the credentials for all of the examples (via local storage).
 
 ##### The Workshop
 
-- [Hacker Facing Workshop](twilio/README.md)
+- [Hacker Facing Workshop](twilio/)
 
 ##### Demos
 

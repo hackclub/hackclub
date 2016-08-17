@@ -211,7 +211,7 @@ Check out the [`posters/`](posters/) sub-directory for example club posters.
 At the first meeting, start by explaining that Hack Club allows people to learn
 and build things together over the course of the year, and then have members
 begin building their _first real thing™_ (a personal website), using our
-[Personal Website](../workshops/personal_website/README.md) workshop.
+[Personal Website](../workshops/personal_website/) workshop.
 
 At the second meeting, club members will complete their websites and demo their
 work at the end.
@@ -301,7 +301,7 @@ gone. This will get significantly more difficult (and fun!) as more people go
 #### First Website Workshop
 
 To get members started, you'll want to run the [Personal
-Website](../workshops/personal_website/README.md) workshop. It's going to walk
+Website](../workshops/personal_website/) workshop. It's going to walk
 club members through the process of building their first website and getting it
 online. It'll also get them set up with all the tools they'll use throughout
 Hack Club.

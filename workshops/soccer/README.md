@@ -2,7 +2,7 @@
 
 Short link to this workshop: https://workshops.hackclub.com/soccer
 
-Note to leaders running this workshop: we're replacing Soccer with [Dodge](../dodge/README.md). We recommend running this in your clubs instead.
+Note to leaders running this workshop: we're replacing Soccer with [Dodge](../dodge/). We recommend running this in your clubs instead.
 
 -------------------------------------------------------------------------------
 
