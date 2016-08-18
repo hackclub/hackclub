@@ -364,6 +364,8 @@ Now, if we save and refresh live preview (opened with `preview` > `live preview`
 
 Now that something kinda works, let's make it official by committing and pushing! See if you remember the commands to use.
 
+Once you have pushed, remember to add `USERNAME.github.io` to the list of Authorized Domains on your Firebase app. After that, your project should be live on `USERNAME.github.io/collaborative_sketch/`! To see how to add an authorized domain, go to [Setting up the Firebase App](#setting-up-the-firebase-app).
+
 ## Part III: Odds and Ends
 
 The last part of this workshop is including some nice features. We'll add two buttons: one to save the drawing that's been made, and one to delete the drawing.
