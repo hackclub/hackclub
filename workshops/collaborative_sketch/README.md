@@ -54,15 +54,13 @@ And we'll add script tags for Firebase, p5.js, jQuery, and our own `main.js` fil
 
 ### Setting up the Firebase App
 
-Firebase is a real-time database. This means that all the information we send to Firebase gets updated across everything connected to that database.
+Firebase is a real-time database. This means that whenever one person edits the sketch, the sketch on everyone else's computer or phone will update!
 
-In this project, we'll be using Firebase to store the points of what we're drawing on our canvas. We'll need to create an app within Firebase.
-
-Now we'll set up the Firebase side of our project. Go to [Firebase](https://firebase.google.com/) and sign up for an account.
+Before we can start coding, we need to sign up on the Firebase website. Go to [Firebase](https://firebase.google.com/) and sign up for an account.
 
 Now that we're at our dashboard, we'll create our app. Let's head over to our [Firebase dashboard](https://console.firebase.google.com/) and create a new project, which we will name `collaborative-sketch`.
 
-Let's click on "Add Firebase to your web app." We'll copy _part_ of the code snippet and paste it into our `main.js`:
+Let's click on "Add Firebase to your web app." We'll copy _part_ of the code snippet and paste it into our `main.js`. Keep in mind your URLs and variables will be different, and that's fine!
 
 ```js
 var config = {
@@ -74,7 +72,7 @@ var config = {
 firebase.initializeApp(config);
 ```
 
-After copying the code snippet above, head back to Firebase and select the `Auth` tab on the left-hand side. Select `SET UP SIGN-IN METHOD`, and click `ADD DOMAIN`. Enter `preview.c9users.io` and click `ADD`.
+After copying the code snippet above, head back to Firebase and select the `Auth` tab on the left-hand side. Select `SET UP SIGN-IN METHOD` from the top menu bar, and click `ADD DOMAIN`. Enter `preview.c9users.io` and click `ADD`.
 
 Next, go to the `Database` tab on the left-hand side. Within the `Database` tab, we're going to select `Rules`. Here we'll set database permissions for reading and writing to `true`.
 ```json
@@ -122,9 +120,21 @@ var config = {
 }
 ```
 
-This section of code creates a new `object` in JavaScript named `config`.  You can think of `objects` like containers for things like text or numbers which we call `properties`. 
+This section of code creates a new `object` in JavaScript named `config`.
 
-`properties` are values that we store by name in the `object` and then retrieve at a later time.
+**What is a Javascript Object?**
+
+Take the object closest to you right now, for most of you that might be a cell phone. A cell phone can have a lot of characteristics, or _properties_. One could be a screen.
+
+How would you describe a screen to someone who hasn't seen it before? You can tell them how big that screen is. Javascript objects are bundles of information stored in this way: a property and a value. What would a Javascript object of our phone look like?
+
+```js
+var phone = {
+  screenSize: "5.5 inches"
+}
+```
+
+See how similar it looks to the `config` object we have in our `main.js`? The `apiKey` is a unique property to _your_ config object that lets Firebase know who is accessing your app's database.
 
 ```js
 var config = {
@@ -349,7 +359,7 @@ And then use it:
 ̶c̶a̶n̶v̶a̶s̶.̶m̶o̶u̶s̶e̶M̶o̶v̶e̶d̶(̶d̶r̶a̶w̶P̶o̶i̶n̶t̶)̶;̶
 canvas.mouseMoved(drawPointIfMousePressed);
 ```
-<!-- Notice that the body of the function is the same! The only difference is that our anonymous function has no name, and is created right inside `.mouseMoved()`. -->
+Notice that the body of the function is the same! The only difference is that our anonymous function has no name, and is created right inside `.mouseMoved()`.
 
 Now, if we save and refresh live preview (opened with `preview` > `live preview`), we'll be able to draw stuff. Then, if we link the URL of our external live preview to a friend, we'll be able to see what they're drawing as well! Awesome!
 
@@ -415,7 +425,7 @@ function clearDrawing() {
 Right now other screens won't clear when we remove the drawing from Firebase. To fix this, add the following:
 
 ```js
-setup() {
+function setup() {
   // ...the rest of the setup function
   pointsData.on("child_added", function (point) {
     points.push(point.val());
