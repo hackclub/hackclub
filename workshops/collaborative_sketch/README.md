@@ -122,11 +122,11 @@ var config = {
 
 This section of code creates a new `object` in JavaScript named `config`.
 
-**What is a Javascript Object?**
+**What is a JavaScript Object?**
 
 Take the object closest to you right now, for most of you that might be a cell phone. A cell phone can have a lot of characteristics, or _properties_. One could be a screen.
 
-How would you describe a screen to someone who hasn't seen it before? You can tell them how big that screen is. Javascript objects are bundles of information stored in this way: a property and a value. What would a Javascript object of our phone look like?
+How would you describe a screen to someone who hasn't seen it before? You can tell them how big that screen is. JavaScript objects are bundles of information stored in this way: a property and a value. What would a JavaScript object of our phone look like?
 
 ```js
 var phone = {
