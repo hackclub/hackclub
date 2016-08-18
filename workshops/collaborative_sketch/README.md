@@ -359,7 +359,6 @@ And then use it:
 ̶c̶a̶n̶v̶a̶s̶.̶m̶o̶u̶s̶e̶M̶o̶v̶e̶d̶(̶d̶r̶a̶w̶P̶o̶i̶n̶t̶)̶;̶
 canvas.mouseMoved(drawPointIfMousePressed);
 ```
-Notice that the body of the function is the same! The only difference is that our anonymous function has no name, and is created right inside `.mouseMoved()`.
 
 Now, if we save and refresh live preview (opened with `preview` > `live preview`), we'll be able to draw stuff. Then, if we link the URL of our external live preview to a friend, we'll be able to see what they're drawing as well! Awesome!
 
