@@ -2,7 +2,7 @@
 
 _**We recommend going through this workshop in Google Chrome.**_
 
-Prophet Orpheus is here to guide you through making your own personal website.
+Prophet Orpheus, [our mascot](https://github.com/hackclub/dinosaurs/blob/master/README.md), is here to guide you through making your own personal website.
 
 It will look something like this:
 
