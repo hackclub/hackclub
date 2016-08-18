@@ -134,7 +134,7 @@ var phone = {
 }
 ```
 
-See how similar it looks to the `config` object we have in our `main.js`? The `apiKey` is a unique property to _your_ config object that lets Firebase know who is accessing your app's database.
+See how similar it looks to the `config` object we have in our `main.js`? The `apiKey` is a unique property to _your_ `config` object that lets Firebase know who is accessing your app's database.
 
 ```js
 var config = {
