@@ -446,8 +446,6 @@ Congratulations! Your collaborative drawing app is now complete.
 
 Make sure your files are all saved, then run the familiar git commands.
 
-Then, remember to add `USERNAME.github.io` to the list of Authorized Domains on your Firebase app. After that, your project should be live on `USERNAME.github.io/collaborative_sketch/`!
-
 Share your URL to the [`#shipit`](https://starthackclub.slack.com/messages/shipit/) channel on Slack, so that everyone can collaborate together!
 
 ## Part V: Hacking
