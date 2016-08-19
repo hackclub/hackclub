@@ -127,7 +127,7 @@ Click on `Auth` in the sidebar, and then the "Sign-In Method" tab:
 
 ![](img/fb_go_to_auth.gif)
 
-Once there, we'll scroll down and add `preview.c9users.io` and `USERNAME.github.io` (so you can later view your project on your Github Page) to the list of Authorized Domains:
+Once there, we'll scroll down and add `preview.c9users.io` and `USERNAME.github.io` (so you can later view your project on your GitHub Page) to the list of Authorized Domains:
 
 ![](img/fb_add_domain.gif)
 
