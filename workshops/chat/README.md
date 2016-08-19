@@ -127,7 +127,7 @@ Click on `Auth` in the sidebar, and then the "Sign-In Method" tab:
 
 ![](img/fb_go_to_auth.gif)
 
-Once there, we'll scroll down and add `preview.c9users.io` to the list of Authorized Domains:
+Once there, we'll scroll down and add `preview.c9users.io` and `USERNAME.github.io` (so you can later view your project on your Github Page) to the list of Authorized Domains:
 
 ![](img/fb_add_domain.gif)
 
@@ -320,9 +320,7 @@ Congratulations. Your chat app is complete. Save all your files and commit your 
 - `git commit -m "Create a chat app using Firebase"`
 - `git push`
 
-**After entering your username and password, you will need to add `USERNAME.github.io` to the list of Authorized Domains in Firebase.** You can see how we did this earlier in [Configuring Permissions](#configuring-permissions).
-
-Then, you'll be able to view your app at `USERNAME.github.io/chat/`, as well as share this link with your friends, and actually communicate with them using the app! Try it out!
+Now you'll be able to view your app at `USERNAME.github.io/chat/`, as well as share this link with your friends, and actually communicate with them using the app! Try it out!
 
 ## Part V: Hacking
 
