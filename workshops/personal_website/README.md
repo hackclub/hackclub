@@ -64,7 +64,7 @@ We'll be using a service called Cloud9 to write, save, and organize all the code
 
    > ![](img/c9_start_signup.gif)
 
-   If Cloud9 asks for a credit card, use the following info. This is an empty prepaid debit card -- it'll be enough for verification, but you won't be able to make any actual charges to it.
+   If Cloud9 asks for a credit card, use the following info. This is an empty prepaid debit card --- it'll be enough for verification, but you won't be able to make any actual charges to it.
 
    > ![](img/c9_credit_card.png)
 
@@ -119,7 +119,7 @@ Now we'll add the basic HTML template. Double-click on `index.html` and **type**
 </html>
 ```
 
-This structure is common to all HTML pages. In fact, you can take a look for yourself! Just right click on any web page, including this one, and click "View page source" to see what's going on behind the scenes. You'll find each of these elements on every page-- the doctype, and an HTML tag wrapped around a head and body.
+This structure is common to all HTML pages. In fact, you can take a look for yourself! Just right click on any web page, including this one, and click "View page source" to see what's going on behind the scenes. You'll find each of these elements on every page --- the doctype, and an HTML tag wrapped around a head and body.
 
 Before proceeding, we'll briefly go over what this template means. HTML works by storing information inside tags. `<html></html>` is an example of one such tag. Inside `<html></html>`, we've placed two other sets of tags: `<head></head>` (which wraps around the "head") and `<body></body>` (which wraps around the "body"). The body holds everything you would see in the actual tab/window when you open the page, while the head conveys information about the page to the browser. `<!DOCTYPE html>` tells the browser what version of HTML to expect. Since it is a language, HTML is constantly growing and updating, so there are multiple versions. In our case, we are going to use HTML5, the latest version.
 
@@ -216,7 +216,7 @@ Though we've made a commit and saved our changes, we're not done. Our webpage is
 
 So what is CSS? CSS, also known as Cascading Style Sheets, is a language used for styling the tags (or "elements") on a web page.
 
-While HTML oversees the content and the way it's structured, CSS is how you'll specify how you'd like your content to look -- with it you can set things like colors, spacing, and more.
+While HTML oversees the content and the way it's structured, CSS is how you'll specify how you'd like your content to look --- with it you can set things like colors, spacing, and more.
 
 ### 1) Creating the CSS File
 
