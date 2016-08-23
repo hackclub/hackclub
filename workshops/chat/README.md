@@ -2,7 +2,16 @@
 
 Short link to this workshop: https://workshops.hackclub.com/chat
 
-Demo: [here](https://prophetorpheus.github.io/chat/)
+| What you'll build       |
+| ----------------------- |
+| ![](img/final_demo.gif) |
+
+Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1 hour.
+
+_**We recommend going through this workshop in Google Chrome.**_
+
+[live_demo]: https://prophetorpheus.github.io/chat
+[final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/chat
 
 ---
 
@@ -55,7 +64,7 @@ In this workshop we'll be implementing a real-time chat using Firebase. Firebase
 
 ## Part II: The HTML File
 
-Add a div to store message history in the **body**, above the script tags
+Add a div to store message history in the **body**, above the script tags. We will later put our messages inside this div. Messages from other people to us will also go in here.
 
 ```html
 <div id="messages"></div>
@@ -67,6 +76,8 @@ Put these two inputs into the **body**, below the `div` we just created, and abo
 <input type="text" id="nameInput" placeholder="Name">
 <input type="text" id="messageInput" placeholder="Message">
 ```
+
+These two input tags allow us to set a name for the user and allow the user to send a message: whatever is typed in `messageInput`.
 
 Save and open up the external live preview.
 
@@ -86,7 +97,7 @@ Let's click on "Add Firebase to your web app." We'll copy part of the code snipp
 
 ![](img/fb_get_config.gif)
 
-So far our `main.js` looks like this:
+So far our `main.js` looks like this (your URLs and keys will be different):
 
 ```js
 var config = {
@@ -102,7 +113,9 @@ Now if we save our `main.js` and check out the external live preview, we'll see 
 
 ![](img/fb_domain_not_auth.png)
 
-Looks like we'll need to authorize some domains in our Firebase console. Let's return to our Firebase dashboard.
+Firebase will only allow authorized domains (websites) to change the database. This is so an internet stranger can't ruin your awesome messaging app.
+
+First, we'll need to authorize Cloud9 in our Firebase console. Let's return to our Firebase dashboard.
 
 ### Configuring Permissions
 
@@ -114,7 +127,7 @@ Click on `Auth` in the sidebar, and then the "Sign-In Method" tab:
 
 ![](img/fb_go_to_auth.gif)
 
-Once there, we'll scroll down and add `preview.c9users.io` to the list of Authorized Domains:
+Once there, we'll scroll down and add `preview.c9users.io` and `USERNAME.github.io` (so you can later view your project on your GitHub Page) to the list of Authorized Domains:
 
 ![](img/fb_add_domain.gif)
 
@@ -142,7 +155,7 @@ var chatData = firebase.database().ref();
 
 ### Saving Messages to Firebase
 
-Now that we've allowed our Firebase project to be accessed by our Cloud9 project, we can perform actions on our Firebase project through our `main.js`.
+Now that we've allowed our Firebase project to be accessed by our Cloud9 project, we can perform actions on our Firebase database through our `main.js`.
 
 First, we'll write a function that, when you press enter after typing a message, will push your name and message to the Firebase reference to be stored within the database.
 
@@ -155,7 +168,11 @@ function pushMessage(event) {
 $('#messageInput').keypress(pushMessage);
 ```
 
-Now we will say "if the event's key code is that of the enter key, do stuff" by adding a conditional. The key code of the enter key is 13, so that's what we will be comparing in the conditional.
+Now we will say "if the event's key code is that of the enter key, do stuff" by adding a conditional.
+
+**What's a key code?** Every key on your keyboard has a unique code, so we can tell which key a user pressed by the number that is returned.
+
+The key code of the enter key is 13, so that's what we will be comparing in the conditional.
 
 Let's add that to our function:
 
@@ -269,8 +286,8 @@ For example:
 ```js
 var hack = "Hack";
 var club = "Club";
-var hackClub = hack + club;
-var hack_club = hack + " " + club;
+var hackClub = hack + club; // "HackClub"
+var hack_club = hack + " " + club; // "Hack Club"
 ```
 
 Thus, here, we are concatenating the sender's name (`messageSender`) and the string `": "` and placing it in `senderEl`.
@@ -279,6 +296,7 @@ Now that we have filled our elements, we'll add them to the `messageEl` and in t
 
 ```js
 function showMessage(msg) {
+  // get the message object added to Firebase
   var message = msg.val();
   var messageSender = message.name;
   var messageContent = message.text;
@@ -287,6 +305,7 @@ function showMessage(msg) {
   var senderEl = $("<span/>").text(messageSender + ': ');
   var contentEl = $("<span/>").text(messageContent);
 
+  // .append adds an element to the end
   messageEl.append(senderEl);
   messageEl.append(contentEl);
   $('#messages').append(messageEl);
@@ -301,9 +320,7 @@ Congratulations. Your chat app is complete. Save all your files and commit your 
 - `git commit -m "Create a chat app using Firebase"`
 - `git push`
 
-**After entering your username and password, you'll need to add `USERNAME.github.io` to the list of Authorized Domains in Firebase.**
-
-Then, you'll be able to view your app at `USERNAME.github.io/chat/`, as well as share this link with your friends, and actually communicate with them using the app! Try it out!
+Now you'll be able to view your app at `USERNAME.github.io/chat/`, as well as share this link with your friends, and actually communicate with them using the app! Try it out!
 
 ## Part V: Hacking
 
