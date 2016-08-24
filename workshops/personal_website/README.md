@@ -8,7 +8,7 @@ It will look something like this:
 
 ![](img/final_screenshot.png)
 
-Here's the [live demo][final_demo] and [final code][final_code].
+Here's the [live demo][final_live_demo] and [final code][final_code].
 
 This workshop should take around 45 minutes.
 
