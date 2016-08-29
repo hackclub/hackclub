@@ -16,7 +16,7 @@
 2. From there you move to Blocking, to make sure that you’re not blocking anyone else from completing their work. 
 3. Next up is In Progress, here’s where you should find what you’re currently working on. If there’s any updates or change in the work, please update the board to reflect it.
 4. We then move to Todo, here’s you’ll find all the work you have queued. If you currently have nothing In Progress, move the Todo item with the highest priority over to In Progress and start working on it!
-5. Next is Backlog, check that your work here doesn’t need to be moved into To do.
+5. Next is Backlog, check that your work here does not need to be moved into To do.
 6. Last up is unsorted—review this column and make sure that the work gets properly sorted into either Backlog or Todo.
 
 ## Here is the ideal flow of a work item: 
