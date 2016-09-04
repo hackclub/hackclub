@@ -33,7 +33,7 @@ These are the people who are officially part of the organization, but we want yo
 | ------------------- | -------------------------------- | ----------------------------- | --------------------- |
 | Harrison Shoebridge | Intern                           | https://harrison.tech         | harrison@hackclub.com |
 | Matthew Kwong       | Intern                           | https://matthewkwong.me       | matt@hackclub.com     |
-| Max Wofford         | Hack Camp Director               | https://maxwofford.com        | max@hackclub.com      |
+| Max Wofford         | Volunteer                        | https://maxwofford.com        | max@hackclub.com      |
 | Selynna Sun         | Hack Camp Organizer & Instructor | http://www.selynnasun.com     | selynna@hackclub.com  |
 | Zach Latta          | Executive Director               | https://zachlatta.com         | zach@hackclub.com     |
 
