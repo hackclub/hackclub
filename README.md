@@ -1,4 +1,4 @@
-# ![Hack Club](https://cdn.rawgit.com/hackclub/meta/master/logos/hack_club_red_text.svg)
+# ![Hack Club](https://cdn.rawgit.com/hackclub/meta/fc4c0d220426eb53a176e656ae7700d9dcd0b2c5/logos/hack_club_red_text.svg)
 
 Hack Club is the worldwide movement of student-led coding clubs.
 
@@ -49,9 +49,9 @@ You can also change the size or placement of your banner by editing the CSS in t
 
 | Image                                                                                                                                   | HTML Snippet                                                                                                                                                                                                                                                                   |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ![regular_banner](https://cdn.rawgit.com/hackclub/meta/master/logos/banner_plain_flag_webVersion.svg) | `<a href="https://hackclub.com/"><img style="position: absolute; top: 10px; left: 0; border: 0; width: 230px; z-index: 999;" src="https://cdn.rawgit.com/hackclub/meta/master/logos/banner_plain_flag_webVersion.svg" alt="Hack Club"/></a>` |
-| ![Orpheus_hand1](https://cdn.rawgit.com/hackclub/meta/master/logos/banner_orpheus_hand.svg)           | `<a href="https://hackclub.com/"><img style="position: absolute; top: 0; left: 10px; border: 0; width: 230px; z-index: 999;" src="https://cdn.rawgit.com/hackclub/meta/master/logos/banner_orpheus_hand.svg" alt="Hack Club"/></a>`          |
-| ![Orpheus_hand2](https://cdn.rawgit.com/hackclub/meta/master/logos/banner_orpheus_hand_rotated.svg)   | `<a href="https://hackclub.com/"><img style="position: absolute; top: 10px; left: 0; border: 0; width: 230px; z-index: 999" src="https://cdn.rawgit.com/hackclub/meta/master/logos/banner_orpheus_hand_rotated.svg" alt="Hack Club"/></a>`   |
+| ![regular_banner](https://cdn.rawgit.com/hackclub/meta/fc4c0d220426eb53a176e656ae7700d9dcd0b2c5/logos/banner_plain_flag_webVersion.svg) | `<a href="https://hackclub.com/"><img style="position: absolute; top: 10px; left: 0; border: 0; width: 230px; z-index: 999;" src="https://cdn.rawgit.com/hackclub/meta/fc4c0d220426eb53a176e656ae7700d9dcd0b2c5/logos/banner_plain_flag_webVersion.svg" alt="Hack Club"/></a>` |
+| ![Orpheus_hand1](https://cdn.rawgit.com/hackclub/meta/fc4c0d220426eb53a176e656ae7700d9dcd0b2c5/logos/banner_orpheus_hand.svg)           | `<a href="https://hackclub.com/"><img style="position: absolute; top: 0; left: 10px; border: 0; width: 230px; z-index: 999;" src="https://cdn.rawgit.com/hackclub/meta/fc4c0d220426eb53a176e656ae7700d9dcd0b2c5/logos/banner_orpheus_hand.svg" alt="Hack Club"/></a>`          |
+| ![Orpheus_hand2](https://cdn.rawgit.com/hackclub/meta/fc4c0d220426eb53a176e656ae7700d9dcd0b2c5/logos/banner_orpheus_hand_rotated.svg)   | `<a href="https://hackclub.com/"><img style="position: absolute; top: 10px; left: 0; border: 0; width: 230px; z-index: 999" src="https://cdn.rawgit.com/hackclub/meta/fc4c0d220426eb53a176e656ae7700d9dcd0b2c5/logos/banner_orpheus_hand_rotated.svg" alt="Hack Club"/></a>`   |
 
 ## Additional Links
 
