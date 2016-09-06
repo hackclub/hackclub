@@ -1,4 +1,5 @@
-# ![Hack Club](https://cdn.rawgit.com/hackclub/meta/fc4c0d220426eb53a176e656ae7700d9dcd0b2c5/logos/hack_club_red_text.svg)
+<!-- # ![Hack Club](https://cdn.rawgit.com/hackclub/meta/fc4c0d220426eb53a176e656ae7700d9dcd0b2c5/logos/hack_club_red_text.svg) -->
+<img src="https://cdn.rawgit.com/hackclub/meta/fc4c0d220426eb53a176e656ae7700d9dcd0b2c5/logos/hack_club_red_text.svg" width="450">
 
 Hack Club is the worldwide movement of student-led coding clubs.
 
