@@ -156,7 +156,7 @@ example.
   - These must no capitals and spaces are replaced by dashes
   - There must be a . before your class-name and then the normal syntax.
 
-For example if we wanted the background of our site to be a gif of Kanye West we could do this:
+For example if we wanted the background of our site to be a GIF of Kanye West we could do this:
 
 HTML:
 `<body class="who"></body>`
