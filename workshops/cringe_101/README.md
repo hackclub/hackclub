@@ -22,7 +22,7 @@ But we can't force you — I'm kinda scared of you to be honest. So, this will
 workshop will be self-enclosed (kinda, we still urge you to go through the
 workshop below first).
 
-### I Want Out.
+### If You Haven't Already...
 
 Probably a good decision. Create a beast of a website by following this workshop:
 
@@ -152,24 +152,28 @@ example.
 
 - After **keyword** (`<div, <body, <h1, <head`) of **any tag** type
   **class="class-name"** to create a class
-  - `<body class=class-name"> </body>`
+  - `<body class="class-name"> </body>`
   - These must no capitals and spaces are replaced by dashes
+  - There must be a . before your class-name and then the normal syntax.
 
-Access this in CSS file by using a dot before your class-name and then the
-normal syntax.
+For example if we wanted the background of our site to be a GIF of Kanye West we could do this:
 
-Here I am setting the back to be a Kanye GIF. Background is another property and
-<<<<<<< HEAD
-the url is value.
+HTML:
+`<body class="who"></body>`
+
+CSS:
 
 ```css
 .who {
     background:url("https://media3.giphy.com/media/9RTiWDExHW6aY/200.gif ");
 }
 ```
+This means that for every element with the class of "example", it will have a background image of Kanye West.
 
+Here is a preview of what that does:
 https://preview.c9users.io/jevinsidhu/cringe-101/index.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io
 
+Below is the code for this site:
 ```html
 <!DOCTYPE html>
 <html>
@@ -178,7 +182,7 @@ https://preview.c9users.io/jevinsidhu/cringe-101/index.html?_c9_id=livepreview0&
     </head>
 
     <body class="who">
-        <a href="god.html"></a>
+        <a href="god.html"></a> <!--When an element with the class "who" is clicked it will lead you to a separate page-->
     </body>
 </html>
 ```
@@ -237,22 +241,17 @@ on your site.
 **Steps to add and change fonts:**
 
 1. Navigate to [google.com/fonts](https://www.google.com/fonts).
-2. Choose a font by clicking the **middle** icon (you can see more of the font
-   details by clicking the 1st button → Scroll to go click the middle icon).
-3. Fonts have different weights → Choose a few.
-4. This is just a fancy term for the thickness.
-5. The numbers range from 100 to 700 in hundreds for a total of 7 a. Some fonts
-   only have a few weights, others have all 7.
-6. Go to the number 3 area where it says "Add this code to your website".
-7. You'll notice it looks exactly like a CSS file -- that's because it is!
-8. Since it's a CSS file, you know what that means! Copy the code & paste in
-   your head.
+2. To select a font, click the + on any of the ones on the front page or by searching for one on the top right corner.
+3. Once you have selected one or more fonts, click the bottom line where it says “ Families Selected and click the preview and share button.
+4. From there, let’s copy the link below **STANDARD  @IMPORT**. This should look something like `<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans|Roboto" rel="stylesheet">`
+5. You'll notice it looks exactly like a CSS file -- that's because it is!
+6. Since it's a CSS file, you know what that means! Copy the code & paste into your `<head>`.
 
 ```html
 <!DOCTYPE html>
 <html>
     <head>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family= Open+Sans" rel="stylesheet">
     </head>
 </html>
 ```
@@ -278,9 +277,10 @@ Tip — Along with changing the fonts, change the colors (`color`) and thickness
 (`font-weight`) of the different text as well to see your friends cringe even
 more!
 
-## Pseudo - Classes
+![](http://i.imgur.com/Ahl9pXr.gif)
 
-We worked with pseudo - classes in the 9 doors workshop.
+
+## Pseudo - Classes
 
 You can revisit that workshop for more extensive overview of them, but here's a
 quick recap.
@@ -374,56 +374,30 @@ simply by typing them in between the `<>`
 Here's a list of the unique attributes that `<audio>` tags can accept
 exclusively:
 
-<table>
-  <tr>
-    <td><code>autoplay</code></td>
-    <td>
-      Tells the browser to automatically play the audio once it's loaded.
-    </td>
-  </tr>
-  <tr>
-    <td><code>controls</code></td>
-    <td>
-      Creates a play bar with a play/pause button, sliding bar, and a volume
-      control.
-    </td>
-  </tr>
-  <tr>
-    <td><code>loop</code></td>
-    <td>Loops the audio again once it's finished.</td>
-  </tr>
-  <tr>
-    <td><code>muted</code></td>
-    <td>
-      Mutes the audio output. (doesn't stop the audio from playing, it just
-      has no volume).
-    </td>
-  </tr>
-  <tr>
-    <td><code>preload=""</code></td>
-    <td>
-      Accepts 3 values:
-      <ul>
-      <li><code>auto</code>: load the audio file after the page loads.</li>
-      <li><code>metadata</code>: only load the metadata (extra info like
-          author, etc that
-          is stored within the file) when the page loads.</li>
-      <li><code>none</code>: don't load the audio file when the page loads.</li>
-      </ul>
+<p><code>autoplay:</code> Tells the browser to automatically play the audio once it's loaded.</p>
+<p><code>controls:</code> Creates a play bar with a play/pause button, sliding bar, and a volume control.</p>
+<p><code>loop:</code> Loops the audio again once it's finished.</p>
+  <p><code>muted:</code>Mutes the audio output. (doesn't stop the audio from playing, it just has no volume).</p>
+ <hr>
+  <p><code>preload="":</code> 
+ <ul>
+   <li><code>auto:</code> load the audio file after the page loads.</li>
+   <br>
+   <li><code>metadata:</code> only load the metadata (extra info like author, etc that is stored within the file) when the page loads.</li>
+  <br>
+   <li><code>none:</code> don't load the audio file when the page loads.</li>
+  </ul>
+   </p>
 
-      e.g <code>preload="none"</code> would tell it to not load the file
-      when the page loads
-    </td>
-  </tr>
-  <tr>
-    <td><code>src=""</code></td>
-    <td>
-      Specifies where the audio file is. (This won't work on every browser so
-      that's why we use the <code>&lt;source&gt;</code> tags)
-    </td>
-  </tr>
-</table>
+<hr>
 
+  <p><code>src="" :</code>
+    <ul>
+      <li>e.g preload="none" would tell it to not load the file when the page loads
+src="".</li>
+      <li>	Specifies where the audio file is. (This won't work on every browser so that's why we use the <source> tags)</li>
+  </ul>
+  
 Example of an audio tag set to automatically play, and loop an audio file:
 
 ```html
@@ -440,34 +414,30 @@ this tutorial we'll just be using it for audio.
 
 This tag also has its own set of attributes like `<audio>` also it's
 **self-closing**.
-
-<table>
-  <tr>
-    <td><code>src="[URL]"</code></td>
-    <td>
-      Points to the location of the media file
+<p><code>src="[URL]":</code> Points to the location of the media file
         - File can be hosted on another website
         -must end in a supported file extension
-        e.g <code>src="http://www.drake.com/hotlinebling.mp3"</code>
+        e.g 
+<li>Alternatively, hosted directly where the website is</li>
+<br>
+<li>e.g "thiswebsite.com/hotlinebling.mp3"
+  another example:</li>
 
-        - Alternatively, hosted directly where the website is
-        -e.g "thiswebsite.com/hotlinebling.mp3"
-        another example:
-
+  <br>
         ![](https://i.imgur.com/LUcCvwl.png)
-    </td>
-  </tr>
-  <tr>
-    <td><code>type="[media-type]"</code></td>
-    <td>
-      Specifies the type of media that will be displayed
-      -e.g <code>;source src="blinghotline.mp3" type="audio/mpeg"&gt;</code>
+</p>
 
-      This changes depending on the type of file you use. You can find more
+<p><code>type="[media-type]"</code>
+  <li> Specifies the type of media that will be displayed
+      -e.g <code>;source src="blinghotline.mp3" type="audio/mpeg"&gt;</code>
+</li>
+<br>
+ <li>      This changes depending on the type of file you use. You can find more
       types here: http://www.w3schools.com/tags/att_source_type.asp
-    </td>
-  </tr>
-</table>
+</li>
+  </p>
+
+<!--End of table-->
 
 **Example of `<audio>` and `<source>` tags properly configured to play a locally
 hosted `darude.mp3` on loop.**
@@ -484,9 +454,8 @@ instead of regular audio you need
 
 ## Advanced Audio using JavaScript
 
-There's an infinite number of things you can do with JavaScript but for this
-workshop we'll show you a way to make JS "listen" for when your grandma does
-something specific on your website and trigger a sound to play.
+There's an infinite number of things you can do with JavaScript, but for this
+workshop we'll show you a way to make JS trigger a sound when any part of your page is clicked!
 
 You do not need the HTML tags from the tutorial above to get this work. But you
 will need to know how to specify the location of an audio file. (`src=""`)
@@ -500,7 +469,7 @@ To get this to work you'll need:
 
 ![](https://paper.imgix.net/http%3A%2F%2Fi.imgur.com%2FeX5PpXN.png?ixlib=js-0.2.1&s=dce172ed5a7f1c5864408f22b7eca26b)
 
-OR
+An example of a remote audio source would be something like
 
 `"www.yeezy.com/onsight.mp3"`
 
@@ -530,17 +499,17 @@ certain event happens
 So far pretty simple right? `document.addEventListener` just means: **Start
 listening to whenever a certain event happens**
 
-Now we need to specify what type of event we want our buddy Listener to look out
+Now we need to specify what type of event we want our listener to look out
 for, to do this we put the name of the event in the [event] section of the code.
 
 ```js
 document.addEventListener("[event]", function() {});
 ```
 
-These events have certain names but thanks to our friends at `w3schools` they've
+These events have certain names, but thanks to our friends at `w3schools` they've
 given us a nicely arranged list of all the HTML events.
 
-[You can find that here.](http://www.w3schools.com/tags/ref_eventattributes.asp)
+[You can find that here](http://www.w3schools.com/tags/ref_eventattributes.asp)
 
 **Note: You remove the prefix when you use those names inside of
 `document.addEventListener`**
@@ -569,11 +538,12 @@ With that known, how do we get JavaScript to play audio?
 We create a variable with an audio path inside of the `{}` using:
 
 ```
-var variablename = new Audio('[AUDIOPATH]');
+var variableName = new Audio('[AUDIOPATH]');
 ```
 
-`variablename` can be simply anything you want it to be, try to keep it
+`variableName` can be simply anything you want it to be, try to keep it
   clear and concise though!
+  <li>Notice how the second word was capitalized? This is called camel casing.</li>
 
 **`[AUDIOPATH]`** is where your audio file is, it can either be a website link
   to the file or the path on your workspace
@@ -598,39 +568,15 @@ Don't forget to close your curly brackets of `function() {}` and it should work!
 
 ```js
 document.addEventListener("click", function() {
-  var inmyzone = new Audio('definitelyin.mp3');
-  inmyzone.play();
-}
+    var wow = new Audio("wow-.mp3");
+    wow.play();
+})
 ```
 
-The example plays `definitelyin.mp3` every time a left click is registered on
+The example plays `wow-.mp3` every time a left click is registered on
 the page.
 
-## `blink`
-
-Netscape and Internet Explorer once fought for control of HTML coders in the
-[browser wars](https://en.wikipedia.org/wiki/Browser_wars).
-
-Although the conflict ended long ago, the battlefield is still strewn with
-landmines, otherwise known as **proprietary tags**.
-
-The Netscape-proprietary `<blink>` tag makes text blink.
-
-Microsoft never implemented this tag in Internet Explorer. One might attribute
-this decision to Microsoft's sensibility and good taste, but given
-[their response to the `<blink>` tag](http://goer.org/Journal/2003/10/html_house_of_horror_things_that_go_blink_in_the_n.html#marquee),
-this explanation seems unlikely.
-
-Although the `<blink>` never made it into the HTML standard, it still works most
-of the time in Chrome.
-
-Although the tag itself is forbidden, have no fear! The CSS standard continues
-to provide the World Wide Web with critical blinking functionality, in the form
-of the CSS declaration:
-
-```css
-   text-decoration: blink
-```
+[Check it out here!](https://preview.c9users.io/matthewkwong/hack_club/Cringe%20101/cringe.html?_c9_id=livepreview1&_c9_host=https://ide.c9.io)
 
 ## `<marquee>` Tag
 
@@ -640,7 +586,7 @@ The `<marquee>` tag creates a 100% wide div (box) with text sliding across the
 screen.
 
 There are a large number of
-[attributes for the `<marquee>` tag](http://www.tutorialspoint.com/html/html_marquee_tag.htm).
+[attributes for the `<marquee>` tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee).
 
 You can change the width, the alignment, the scrolling speed, the scrolling
 delay, and even the scrolling direction (right to left or left to right).
@@ -650,7 +596,8 @@ It is a tag, so it encloses other tags:
 ```html
 <marquee><div class="cringe"></div></marquee>
 ```
+Here's an example of what you can do!
 
-## If you combine blink and marquee: ultimate cringe.
-
-![No God Please No!](https://d2mxuefqeaa7sj.cloudfront.net/s_1FACA745E7A5A03FBF7BCC2AF4856031BAC0AF7B12042E3DC78BDA872B3C6FBC_1448603976992_giphy+%281%29.gif)
+<marquee direction="up" width="100%" height="250" behavior="alternate" style="border:solid">
+<marquee behavior="alternate"><img src = "https://media.giphy.com/media/TeBpzQZRaBIC4/giphy.gif" height = "300px"></marquee>
+</marquee>
