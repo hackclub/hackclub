@@ -242,11 +242,10 @@ on your site.
 
 1. Navigate to [google.com/fonts](https://www.google.com/fonts).
 2. To select a font, click the + on any of the ones on the front page or by searching for one on the top right corner.
-3. Fonts have different styles, scroll down from the font you’ve selected and click the + button.
-4. Click the bottom line where it says “ Families Selected and click the preview and share button.
-5. From there, let’s copy the link below **STANDARD  @IMPORT**. This should look something like `<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans|Roboto" rel="stylesheet">`
-6. You'll notice it looks exactly like a CSS file -- that's because it is!
-7. Since it's a CSS file, you know what that means! Copy the code & paste into your `<head>`.
+3. Once you have selected one or more fonts, click the bottom line where it says “ Families Selected and click the preview and share button.
+4. From there, let’s copy the link below **STANDARD  @IMPORT**. This should look something like `<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans|Roboto" rel="stylesheet">`
+5. You'll notice it looks exactly like a CSS file -- that's because it is!
+6. Since it's a CSS file, you know what that means! Copy the code & paste into your `<head>`.
 
 ```html
 <!DOCTYPE html>
@@ -376,9 +375,10 @@ Here's a list of the unique attributes that `<audio>` tags can accept
 exclusively:
 
 <p><code>autoplay:</code> Tells the browser to automatically play the audio once it's loaded.</p>
-<p><code>controls:</code> Creates a play bar witha  play/pause button, sliding bar, and a volume control.</p>
+<p><code>controls:</code> Creates a play bar with a play/pause button, sliding bar, and a volume control.</p>
 <p><code>loop:</code> Loops the audio again once it's finished.</p>
   <p><code>muted:</code>Mutes the audio output. (doesn't stop the audio from playing, it just has no volume).</p>
+ <hr>
   <p><code>preload="":</code> 
  <ul>
    <li><code>auto:</code> load the audio file after the page loads.</li>
@@ -389,7 +389,9 @@ exclusively:
   </ul>
    </p>
 
-  <p><code>src="" : </code>
+<hr>
+
+  <p><code>src="" :</code>
     <ul>
       <li>e.g preload="none" would tell it to not load the file when the page loads
 src="".</li>
@@ -412,34 +414,30 @@ this tutorial we'll just be using it for audio.
 
 This tag also has its own set of attributes like `<audio>` also it's
 **self-closing**.
-
-<table>
-  <tr>
-    <td><code>src="[URL]"</code></td>
-    <td>
-      Points to the location of the media file
+<p><code>src="[URL]":</code> Points to the location of the media file
         - File can be hosted on another website
         -must end in a supported file extension
-        e.g <code>src="http://www.drake.com/hotlinebling.mp3"</code>
+        e.g 
+<li>Alternatively, hosted directly where the website is</li>
+<br>
+<li>e.g "thiswebsite.com/hotlinebling.mp3"
+  another example:</li>
 
-        - Alternatively, hosted directly where the website is
-        -e.g "thiswebsite.com/hotlinebling.mp3"
-        another example:
-
+  <br>
         ![](https://i.imgur.com/LUcCvwl.png)
-    </td>
-  </tr>
-  <tr>
-    <td><code>type="[media-type]"</code></td>
-    <td>
-      Specifies the type of media that will be displayed
-      -e.g <code>;source src="blinghotline.mp3" type="audio/mpeg"&gt;</code>
+</p>
 
-      This changes depending on the type of file you use. You can find more
+<p><code>type="[media-type]"</code>
+  <li> Specifies the type of media that will be displayed
+      -e.g <code>;source src="blinghotline.mp3" type="audio/mpeg"&gt;</code>
+</li>
+<br>
+ <li>      This changes depending on the type of file you use. You can find more
       types here: http://www.w3schools.com/tags/att_source_type.asp
-    </td>
-  </tr>
-</table>
+</li>
+  </p>
+
+<!--End of table-->
 
 **Example of `<audio>` and `<source>` tags properly configured to play a locally
 hosted `darude.mp3` on loop.**
@@ -456,9 +454,8 @@ instead of regular audio you need
 
 ## Advanced Audio using JavaScript
 
-There's an infinite number of things you can do with JavaScript but for this
-workshop we'll show you a way to make JS "listen" for when your grandma does
-something specific on your website and trigger a sound to play.
+There's an infinite number of things you can do with JavaScript, but for this
+workshop we'll show you a way to make JS trigger a sound when any part of your page is clicked!
 
 You do not need the HTML tags from the tutorial above to get this work. But you
 will need to know how to specify the location of an audio file. (`src=""`)
@@ -502,14 +499,14 @@ certain event happens
 So far pretty simple right? `document.addEventListener` just means: **Start
 listening to whenever a certain event happens**
 
-Now we need to specify what type of event we want our buddy Listener to look out
+Now we need to specify what type of event we want our listener to look out
 for, to do this we put the name of the event in the [event] section of the code.
 
 ```js
 document.addEventListener("[event]", function() {});
 ```
 
-These events have certain names but thanks to our friends at `w3schools` they've
+These events have certain names, but thanks to our friends at `w3schools` they've
 given us a nicely arranged list of all the HTML events.
 
 [You can find that here](http://www.w3schools.com/tags/ref_eventattributes.asp)
@@ -541,11 +538,12 @@ With that known, how do we get JavaScript to play audio?
 We create a variable with an audio path inside of the `{}` using:
 
 ```
-var variablename = new Audio('[AUDIOPATH]');
+var variableName = new Audio('[AUDIOPATH]');
 ```
 
-`variablename` can be simply anything you want it to be, try to keep it
+`variableName` can be simply anything you want it to be, try to keep it
   clear and concise though!
+  <li>Notice how the second word was capitalized? This is called camel casing.</li>
 
 **`[AUDIOPATH]`** is where your audio file is, it can either be a website link
   to the file or the path on your workspace
