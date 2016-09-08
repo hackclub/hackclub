@@ -10,7 +10,7 @@ the [final code](examples/index.html).
 
 **On the way, you will:**
 
-- Learn how to do event handling and pop-up boxes in JavaScript.
+- Learn how to do event handling to create pop-up boxes in JavaScript.
 - Set a background image for a web page.
 - Directly set the coordinates of an element.
 - Most importantly, practice Googling so you can become an independent hacker.
@@ -27,6 +27,7 @@ straightforward.
 GitHub username, click **Open** to open the workspace.
 3. Make a new folder called `find_bigfoot`.
 4. In the `find_bigfoot` folder, make a new file called `index.html`.
+5. Make another file in the `find_bigfoot` folder and call it `style.css`. 
 5. Double-click `index.html` to open the file.
 
 ### Add Standard HTML Template
@@ -47,9 +48,9 @@ Type the standard HTML template into `index.html`:
 
 ### Open the Live Preview
 
-1. Click **File > Save** to save the file.
+1. Click **File > Save** or **Ctrl + s** to save the file.
 2. Click **Preview > Live Preview File** to open a live preview of the web page.
-   Currently it is blank but that will change soon!
+   Currently it is blank, but that will change soon!
 
 ### Get Images for the Game
 
@@ -59,6 +60,15 @@ Type the standard HTML template into `index.html`:
    your computer.
 3. Make a new folder called `assets` in your workspace `find_bigfoot` folder.
 4. Drag all the images you saved into the `assets` folder.
+
+If you're having trouble, here's a step by step tutorial:
+
+![](img/bigfoot.gif)
+
+![](img/forest.gif)
+
+![](img/images_to_asset_folder.gif)
+
 
 Now you're all set with the images you'll need!
 
@@ -80,15 +90,26 @@ and putting him in captivity on the Internet, and Bigfoot can be found in your
     assets/bigfoot.png
 
 So now you have to put an **image** of him into your game, like you did in the
-Personal Website workshop. Remember how to do that? If you need a refresher,
-[look here](https://github.com/hackclub/hackclub/tree/master/workshops/personal_website#user-content-6-adding-an-image-with-the-image-tag).
+Personal Website workshop. Remember how to do that? If you need a refresher, no worries!
+
+To add an image we use `<img src="[URL]">`.
 
 When you are done, you should see Bigfoot in the live preview, like this:
 
 ![](img/bigfoot_image.png)
 
-And the HTML looks like [this](examples/index1.html).
+And the HTML looks like this
+```html
+<!DOCTYPE html>
+<html>
+    <head>
 
+    </head>
+    <body>
+        <img src="assets/bigfoot.png">
+    </body>
+</html>
+```
 ### Telling the Player When Bigfoot Has Been Found
 
 A game needs interaction in order to be a game, so let's display a pop-up box
@@ -157,15 +178,23 @@ quotes to single quotes, like this:
 
 And now clicking Bigfoot should display the message.
 
-At this point, `index.html` looks like [this](examples/index2.html).
+At this point, `index.html` should look like this
 
-### Celebrate!
 
-![](img/celebrate_the_office.gif)
+```html
 
-Congratulations, you have a working game now! You're all done! Now you can go to
-[FGL](https://fgl.com) and sell your game to sponsors and make millions of
-dollars!
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <img src="assets/bigfoot.png"
+             onclick="alert('Woohoo, you win! You found Bigfoot!');">
+    </body>
+</html>
+
+```
 
 ## Hiding Bigfoot
 
@@ -203,12 +232,6 @@ like this:
 
 ![](img/bigfoot_position.png)
 
-.  
-.  
-.  
-.  
-.
-
 OK, got it working? If you need help, try asking your neighbor or a club leader
 for hints.
 
@@ -239,16 +262,40 @@ But we don't want to position an `<h2>` element. We want to position an `<img>`
 element. So we type the code above into the `<style>` section, but typing `img`
 instead of `h2`.
 
-When we're done, `index.html` looks like [this](examples/index.html). But feel
-free to experiment with the `left` and `top` values to find a good place to hide
+When we're done, `index.html` looks like 
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url("assets/forest.jpg");
+            }
+            img {
+                position: absolute;
+                left: 100px;
+                top: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="assets/bigfoot.png"
+             onclick="alert('Woohoo, you win! You found Bigfoot!');">
+    </body>
+</html>
+```
+
+But feel free to experiment with the `left` and `top` values to find a good place to hide
 Bigfoot.
 
 ### Celebrate!
 
+Congratulations, you have a working game! You're all done! 
 ![](img/celebrate_charlie_brown.gif)
 
-Now you have made a more interesting game. And more importantly, by practicing
-Googling stuff, you are on your way toward becoming an independent hacker.
+Most importantly, by practicing Googling 
+ stuff, you are on your way toward becoming an independent hacker.
 
 ## Sharing with the Community
 
@@ -270,8 +317,7 @@ others!
 
    > Make sure to change `username` to your own username
 
-4. Post the link to [Ship It](https://shipit.hackclub.io) and
-   [Slack](https://starthackclub.slack.com)!
+4. Post the link to the [Shipit](https://starthackclub.slack.com/messages/shipit/) on Slack to share your awesome game!
 
 ## Hacking
 
