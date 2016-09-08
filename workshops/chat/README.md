@@ -33,34 +33,34 @@ In this workshop we'll be implementing a real-time chat using Firebase. Firebase
 - Make another new file within `chat` and name it `main.js`
 - Type the base template into `index.html`. Here's what our `index.html` should look like after doing this:
 
-  ```js
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Chat with Me!</title>
-    <head>
-    <body>
-    </body>
-  </html>
-  ```
+    ```html
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Chat with Me!</title>
+      <head>
+      <body>
+      </body>
+    </html>
+    ```
 
 - Include Firebase, by adding this to the **body** of `index.html`:
 
-  ```html
-  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-  ```
+    ```html
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    ```
 
 - Now let's also add jQuery. Type the following script tag below the one that adds Firebase:
 
-  ```html
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  ```
+    ```html
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    ```
 
 - Lastly, include the `main.js`, by adding this after the previous line:
 
-  ```html
-  <script src="main.js"></script>
-  ```
+    ```html
+    <script src="main.js"></script>
+    ```
 
 ## Part II: The HTML File
 
