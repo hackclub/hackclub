@@ -45,7 +45,8 @@ You'll start off by building your first website and will eventually make your wa
 | [Dodge][dodge]                               | JavaScript                               | A bullet dodging game                                                            | Hack Club staff                                                                                                        |
 | [Platformer][platformer]                     | JavaScript & p5.js                       | A simple side-scrolling platformer game                                          | [@jkwok91][jkwok91]                                                                                                    |
 | [Collaborative Sketch][collaborative_sketch] | p5.js & Firebase                         | A real-time collaborative drawing pad                                            | [@jkwok91][jkwok91]                                                                                                    |
-| [Swiper][swiper]                           | Swift (requires OS X)                    | Make a fun and addicting iOS game using Swift and SpriteKit                      | [@zach-cmiel][zachcmiel]                                                                                               |
+| [Swiper][swiper]                             | Swift (requires OS X)                    | Make a fun and addicting iOS game using Swift and SpriteKit                      | [@zach-cmiel][zachcmiel]                                                                                                 |
+| [Twine][twine]                               | Twine (web interface)                    | Build a text adventure game                                                      | [@remixz][remixz]                                                                                                        |
 
 ### Sandbox Workshops
 
@@ -60,7 +61,6 @@ _These workshops are either unfinished or untested._
 | [Maze][maze]                               | JavaScript                               | A "Scary Maze Game" clone                                                        | Hack Club staff                                                                                                        |
 | [Soccer][soccer]                           | JavaScript                               | A simple  soccer game                                                            | Hack Club staff                                                                                                        |
 | [Thugify][thugify]                         | JavaScript                               | Learn to dynamically modify webpages with jQuery                                 | [@nguyenbrian][nguyenbrian], [@JevinSidhu][JevinSidhu], [@uditdesai][uditdesai], and [@vaibhavyadaram][vaibhavyadaram] |
-| [Twine][twine]                             | Twine (web interface)                    | Build a text adventure game                                                      | [@remixz][remixz]                                                                                                      |
 
 ### Deprecated Workshops
 
