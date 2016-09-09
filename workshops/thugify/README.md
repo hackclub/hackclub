@@ -22,33 +22,22 @@ We are creating playlists, recommended pathways for our content -- this isn't
 the start of the content!
 
 Try this first: [Personal
-Website](https://docs.google.com/document/d/1jCkOlEbgu_mCJDYCEdBk-rUSqTicHQy8YutEJ5MM6mY/edit).
+Website](https://workshops.hackclub.com/personal_website/).
 Get it online using: [Git + GitHub
 Guide](https://hackpad.com/Basic-Git-and-GitHub-gOQpi30cvG8).
 
-Try [Cringe 101
-Workshop](https://paper.dropbox.com/doc/Cringe-101-Workshop-U1sRsQHWEWrq2JahDbj1N)
-afterwards!
-
-### Resources
-
-Code: https://ide.c9.io/jevinsidhu/thugify
-
-Final Webpage: http://jevinsidhu.github.io/thugify
-
 ## Setting Up Your Files and HTML Document
 
-1. Create a `index.html` file
-2. Create a `style.css` file
-3. Create a `script.js` file
+1. Make a new folder named, "thugify"
+    - Right click on the folder and make a file named `index.html`
+    - Repeat this step and make 2 more files named `style.css` and `script.js`  
 
-If setting up your document is not familiar, please look at [Cringe 101
-Workshop](https://paper.dropbox.com/doc/Cringe-101-Workshop-U1sRsQHWEWrq2JahDbj1N).
 
-This isn't 100% necessary for the code to run (it will still totally do so), but
-it tells the webpage some key facts that make it run without any hitches.
+## Formatting Our HTML
 
-This should be placed in your `index.html` file
+Let's get down to business and get this started!
+
+To have a proper page, we must follow this format
 
 **Please do not copy and paste!**
 
@@ -66,7 +55,10 @@ This should be placed in your `index.html` file
 </html>
 ```
 
-`<script src="script.js">` is linking the JS file to the HTML file
+Some things to note:
+- `<script src="script.js"></script>` links the JS file to the HTML file
+- `<link href="main.css" rel="stylesheet">` links the CSS file to the HTML file
+ 
 - Webpages + browsers are really dumb, humans just make them smart
 
 - `<script>` is a tag that links the the HTML file to the JavaScript file
@@ -74,12 +66,11 @@ This should be placed in your `index.html` file
     - It specifies the location — in this case it was simply the file name,
       "script.js"
 
-**NOTE: Make sure you have closing tags (`</h1>`)**
+**NOTE: Make sure you have closing tags (`</script>`)**
 
 ## Adding jQuery
 
-As mentioned in the slidedeck, jQuery is a JavaScript library.
-- It adds functionality to the language, JavaScript.
+As mentioned in the slidedeck, jQuery is a JavaScript library that adds functionality to JavaScript.
 
 JavaScript was created in 1995 — that was 20 years ago (from 2015). Libraries
 help keep the language powerful and current.
@@ -99,11 +90,10 @@ Include the linking of jQuery above your `script.js` file
 - HTML runs top-to-bottom
 - Our script file requires jQuery in order to run, so it should come after
 
-    ```
-    <script
-src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="script.js"></script>
-    ```
+  ```html
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="script.js"></script>
+  ```
 
 ## Creating the HTML Structure
 
@@ -122,10 +112,11 @@ _Please ~~don't~~ turn up that hard to our workshop_
 1. To enclose our content, we'll create a `<div>` tag
 
   This is a container to:
-  - Organize our content
-  - Apply stylings from our `style.css` file to everything enclosed
 
-    ```
+ - Organize our content
+ - Apply stylings from our `style.css` file to everything enclosed
+
+    ```html
     <div class="thuggin">
     </div>
     ```
@@ -196,16 +187,11 @@ closes itself. We'll be able to type in this box!
   <button id="go">thuggin'</button>
   ```
 
-  We're going to tell the webpage that this is of type-something
-  - In this case, it's a button!
+  We're going to tell the webpage that this is a type-of-something. In this case, it's a button!
 
-  To do this, we're also going to give this a `type` attribute
+  To do this, we're also going to give this a `type` attribute.
 
-  Another one (attribute):
-
-  [![DJ Khaled](img/dj.jpg)](https://www.youtube.com/watch?v=eKinphSXuLI)
-
-  - `type="button"` right before the id
+  - That means we should `type="button"` right before the id
     - This is to ensure that the webpage understands we want a button
       - By specifying this, the HTML adds some build-in CSS styling
 
@@ -220,22 +206,20 @@ closes itself. We'll be able to type in this box!
 
   ![Childish Gambino](img/Childish.gif)
 
-5. To create a space for our thugified content, let's create a `<p>` tag with an
-id of `output`
+5. Still inside the div, let's create a space for our thugified content, let's create a `<p>` tag with an
+id of `output`.
 
-  ```
+  ```html
   <p id="output"></p>
   ```
 
   `<p>` stands for paragraph
-  - Just like the `<h1>` tag, this another tag where we place text between the
+  - Just like the `<h1>` tag, this is another tag where we can place text between the
     opening and closing tags to display on the webpage
 
-  Whatever text we type into the input box will have ", dawg" added
-  - We will then add the text between the opening and closing `<p>` tags
-    - We'll do this using JavaScript
+Whatever text we type into the input box will have “, dawg” added - We will then add the text between the opening and closing <p> tags - We’ll do this using JavaScript.
 
-Final Code (do not copy and paste, you bum face):
+##### Our code should now look like this! (do not copy and paste!):
 
 ```
 <body>
@@ -272,17 +256,17 @@ We want you to style the page!
   - Google is also amazing! It's what all programmers turn to, especially
     professionals!
 
-If you feel completely lost, no worries! Go back to our older workshops and work
-skim through those (linked at the top of this document).
-
-[You can put the hinges in the
-hands.](https://twitter.com/SavageJihad/status/671920807166222336)
+If you feel completely lost, no worries! Go back to our older [workshops](https://workshops.hackclub.com/)  or use those awesome google search skills of yours.
 
 ## JavaScript + jQuery , dawg
 
 Remember that the variable names in the examples below can be anything you want,
 but we recommend sticking with ours in order to make the workshop easier to
 follow!
+
+### JavaScript 
+
+Let's open up our JavaScript file now!
 
 ### Adding a Listener
 
@@ -311,7 +295,7 @@ To review, so far our code looks like:
 document.getElementById('go').onclick = function() {}
 ```
 
-which simply says: Find the element "go" and listen for a click on this element.
+which simply says: Find the element with the id of "go" and listen for a click on this element.
 If there is a registered click, run this function (block of code.)
 
 If you've followed along this far, awesome! You're doing great, we're almost
@@ -326,24 +310,17 @@ tell it to do something when it gets a click.
 
 ### Creating a Variable and Assigning a Value
 
-Every line that we want to execute needs to be inside the curly brackets ( { } )
+Every line that we want to execute **needs** to be inside the curly brackets **( { } )**
 of `function()`
 
 Don't forget to indent it either! Remember, it'll make it easier to read.
 
 So let's start with first finding what we need to thugify.
 
-Reminder from Slidedeck: When creating variables (var), whatever is one the
-right side, is always being assigned to the left side.
-- I.e., The content on the right is going to be assigned to the variable `div`
-  on the left
+We'll be grabbing the value from the input box, and since the id "text-input" is
+assigned to the box...
 
-The id "text-input" is from the input box!
-
-We'll be grabbing the value from the input box, since the id "text-input" is
-assigned to the box
-- Whatever someone types into the input box will be retrieved with this line of
-  JavaScript.
+That means, whenever someone types into the input box, it will be retrieved with this line of JavaScript!
 
 To do that we need to use:
 ```
@@ -369,7 +346,7 @@ prefer that.
 ![Michael Scott](img/michael.gif)
 
 Note: It finds HTML elements exactly like a CSS Selector would:
-- ids would be: `$('#[id]')`
+- id's would be: `$('#[id]')`
 - Classes would be: `$('.[classname]')`
 - Regular tags would work too: `$('h1')`
 
@@ -405,6 +382,14 @@ So, we've debunked that mystery!
 
 ![Scooby Doo](img/scooby.gif)
 
+```js
+document.getElementById('go').onclick = function(){
+    var inputText = $('#text-input').val();
+
+  
+}
+```
+
 Let's move on to performing the actual thugifying part of the string we got in
 the last part. 🏀
 
@@ -424,16 +409,24 @@ new variable named `thugifiedText`.
 Remember: Whatever is on the right side will be assigned to the left side.
 - `inputText + ", dawg"` is being assigned to the variable `thugifiedText`
 
-Adding the two strings together is called **Concatenation**. Ya fancy, huh?
+Adding the two strings together is called **concatenation**. Ya fancy, huh?
 ![What](img/what.gif)
 
-Alright, now that we're thuggin' it's time to display our up text on the page —
+Alright, now that we're thuggin', it's time to display our up text on the page —
 fo'shizzle.
 
+Just to make sure, at this point your code should look like this:
+```js
+document.getElementById('go').onclick = function(){
+    var inputText = $('#text-input').val();
+    var thugifiedText = inputText + ", dawg";
+
+}
+```
 ### Displaying the Text
 
-We're going to use: `document.getElementById()` to find an element on the HTML
-page by its id
+Now we're going to use: `document.getElementById()` to find the element on the HTML
+page by its id.
 
 ```
 document.getElementById('output')
@@ -443,11 +436,11 @@ This will take care of that job for us
 - We're finding the element with the id `output`
 
 PS: you can use jQuery's `$('')` for this as well.
-- Try changing this line to use the jQuery syntax
+  - Try changing this line to use the jQuery syntax 
   - Syntax means the grammar, spelling, and set of rules of a language
 
-Now then, we will attach `.innerHTML = thugifiedText;` to the end of the line
-`document.getElementById('output').innerHTML`.
+Now we will attach `.innerHTML = thugifiedText;` to the end of the line
+`document.getElementById('output').innerHTML`
 
 It's just like `$('#text-input').val();` that we used before:
 - Except this time we're setting the `innerHTML` value (the text inside of the
@@ -469,9 +462,9 @@ holds our text)
 Close your curly brackets ( `}` ), slap a semicolon ( `;` ) on the end of it
 and BAM you're done!
 
-Final Code (do not copy-pasta you bum face):
+Final Code:
 
-```
+```js
 document.getElementById('go').onclick = function() {
     var inputText = $('#text-input').val();
     var thugifiedText = inputText + ", dawg";
@@ -481,6 +474,8 @@ document.getElementById('go').onclick = function() {
 
 ## You are now a JavaScript Legend.
 
+Congratulations! You made your own thugify machine!
+
 ![Mind Blown](img/mind-blown.gif)
 
 Unless you copy-pasted, then, eh. Maybe only a half-legend.
@@ -489,9 +484,35 @@ Your mom thinks you're special, that's all that really matters 💯
 
 As a note, you can replace ', dawg' with any other text; give it a try!"
 
-## Thanks for completing our workshop ❤
+## Sharing with the Community
 
-(Ya, we're dysfunctional as f**k)
+Like with previous workshops, let's set up a link that you can share with
+others!
+
+1. Open the terminal by pressing `alt + t` on the keyboard at the same time.
+   Then type in the following commands:
+  - `git add --all`
+  - `git commit -am "Thugify workshop"`
+  - `git push origin master`
+
+2. GitHub will now ask you for your username and password.
+  - Go ahead and enter your username and then press the enter.
+  - Then enter your password and press enter. _Note that the characters don't
+    show up on the screen but rest assured, you are still typing._
+
+3. Now try to view your game by going to `username.github.io/thugify`
+
+   > Make sure to change `username` to your own username
+
+4. Post the link to the [Shipit](https://starthackclub.slack.com/messages/shipit/) on Slack to share your awesome work!
+
+## Hacking
+
+Now is the chance to make this thuggin' project yours! For inspiration, you can look
+[here](http://jevinsidhu.github.io/thugify/) to see an example of what you can do.
+
+## Thanks for completing our workshop ❤
 
 ![cipher-squad](img/cipher-squad.jpg)
 
+Move on to the [Cringe 101 Workshop](https://workshops.hackclub.com/cringe_101/) afterwards!
