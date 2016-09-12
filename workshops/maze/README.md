@@ -1,5 +1,11 @@
 # Friendly Maze Game
 
+**DEPRECATED**
+
+_**This workshop has been deprecated and is no longer maintained.**_
+
+---
+
 Short link to this workshop: https://workshops.hackclub.com/maze
 
 ## 1. Demo
