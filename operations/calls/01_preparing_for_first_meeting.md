@@ -30,6 +30,13 @@ Table of contents:
   - Teacher sponsor and space
     - Ideally classroom has computers in it
     - Go for a teacher that'd care about Hack Club -- they'll be your proxy for interaction with your school's administration
+  - Tell club leaders to check websites that are used by the curriculum to make sure that they have not been blocked. These are:
+    - https://hackclub.com
+    - https://workshops.hackclub.com
+    - https://starthackclub.slack.com
+    - https://github.com
+    - https://c9.io
+    - Cloud9 workspaces. These are located on the https://ide.c9.io subdomain and should be checked by creating a new workspace
   - Club registration
     - We have a template constitution
   - Set a date for the first meeting
