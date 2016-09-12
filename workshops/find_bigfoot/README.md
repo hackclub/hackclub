@@ -5,12 +5,11 @@ this:
 
 ![](img/final_screenshot.png)
 
-Open the [live demo](https://ad510.github.io/workshop-test/find_bigfoot/). See
-the [final code](examples/index.html).
+Open the [live demo](https://ad510.github.io/workshop-test/find_bigfoot/).
 
 **On the way, you will:**
 
-- Learn how to do event handling to create pop-up boxes in JavaScript.
+- Learn how to do event handling and how to create pop-up boxes in JavaScript.
 - Set a background image for a web page.
 - Directly set the coordinates of an element.
 - Most importantly, practice Googling so you can become an independent hacker.
@@ -28,7 +27,7 @@ GitHub username, click **Open** to open the workspace.
 3. Make a new folder called `find_bigfoot`.
 4. In the `find_bigfoot` folder, make a new file called `index.html`.
 5. Make another file in the `find_bigfoot` folder and call it `style.css`. 
-5. Double-click `index.html` to open the file.
+6. Double-click `index.html` to open the file.
 
 ### Add Standard HTML Template
 
@@ -48,9 +47,8 @@ Type the standard HTML template into `index.html`:
 
 ### Open the Live Preview
 
-1. Click **File > Save** or **Ctrl + s** to save the file.
-2. Click **Preview > Live Preview File** to open a live preview of the web page.
-   Currently it is blank, but that will change soon!
+1. Click **File > Save** or **Ctrl + S** to save the file.
+2. Click **Preview > Live Preview File** to open a live preview of the web page. Currently it is blank, but that will change soon!
 
 ### Get Images for the Game
 
@@ -90,7 +88,7 @@ and putting him in captivity on the Internet, and Bigfoot can be found in your
     assets/bigfoot.png
 
 So now you have to put an **image** of him into your game, like you did in the
-Personal Website workshop. Remember how to do that? If you need a refresher, no worries!
+[Personal Website](../personal_website/) workshop.
 
 To add an image we use `<img src="[URL]">`.
 
@@ -98,7 +96,8 @@ When you are done, you should see Bigfoot in the live preview, like this:
 
 ![](img/bigfoot_image.png)
 
-And the HTML looks like this
+And the HTML looks like this:
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -110,6 +109,7 @@ And the HTML looks like this
     </body>
 </html>
 ```
+
 ### Telling the Player When Bigfoot Has Been Found
 
 A game needs interaction in order to be a game, so let's display a pop-up box
@@ -178,11 +178,9 @@ quotes to single quotes, like this:
 
 And now clicking Bigfoot should display the message.
 
-At this point, `index.html` should look like this
-
+At this point, `index.html` should look like this:
 
 ```html
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -193,8 +191,9 @@ At this point, `index.html` should look like this
              onclick="alert('Woohoo, you win! You found Bigfoot!');">
     </body>
 </html>
-
 ```
+
+Congratulations, you have a working game now! You're all done! Now you can go to [FGL](https://fgl.com) and sell your game to sponsors and make millions of dollars!
 
 ## Hiding Bigfoot
 
@@ -217,9 +216,37 @@ this:
 
 ![](img/bigfoot_background.png)
 
-When you are done, or if you are simply really stuck, here is a
-[sample solution](examples/index3.html). (But there are other ways to add the
-background image, so if your solution doesn't match mine, that's OK.)
+When you are done, or if you are simply really stuck, we've included a sample
+solution below. (But there are other ways to add the background image, so if
+your solution doesn't match mine, that's OK.)
+
+_Sample solution:_
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url("assets/forest.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <img src="assets/bigfoot.png"
+             onclick="alert('Woohoo, you win! You found Bigfoot!');">
+    </body>
+</html>
+
+<!--
+There are several ways to add the background image. Here is one way:
+
+1. Google "html background image" (without quotes).
+2. The first link brings you here: http://www.w3schools.com/cssref/pr_background-image.asp
+3. There is an example near the top. You can click "Try it yourself" to see the full HTML of the example.
+4. Add the <style> tag in the <head> like in the example, but replace the URL with the picture of the forest. You do not need the background-color rule since we are already setting a background image.
+-->
+```
 
 ### Setting Bigfoot's Location
 
@@ -231,6 +258,12 @@ will be somewhere in the middle of the forest, rather than the top left corner,
 like this:
 
 ![](img/bigfoot_position.png)
+
+.  
+.  
+.  
+.  
+.  
 
 OK, got it working? If you need help, try asking your neighbor or a club leader
 for hints.
@@ -317,7 +350,7 @@ others!
 
    > Make sure to change `username` to your own username
 
-4. Post the link to the [Shipit](https://starthackclub.slack.com/messages/shipit/) on Slack to share your awesome game!
+4. Post the link to the [`#shipit`](https://starthackclub.slack.com/messages/shipit/) on Slack to share your awesome game!
 
 ## Hacking
 
