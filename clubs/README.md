@@ -10,6 +10,7 @@ _A step-by-step guide by the Hack Club community._
   - [Teacher Sponsor and Space](#teacher-sponsor-and-space)
   - [Club Registration](#club-registration)
   - [Student Sign-Ups](#student-sign-ups)
+  - [Check If Sites Are Blocked](#check-if-sites-are-blocked)
 - [The First Meeting](#the-first-meeting)
   - [Waiting for Hackers to Arrive](#waiting-for-hackers-to-arrive)
   - [Introduction Presentation](#introduction-presentation)
@@ -205,6 +206,22 @@ Having posters for your club in the hallways and in classrooms exposes new
 members to your club and reminds people where and when the club meets.
 
 Check out the [`posters/`](posters/) sub-directory for example club posters.
+
+### Check If Sites Are Blocked
+
+Before starting your first meeting, be sure to make sure that the following 
+websites are **not** blocked by your school!
+
+- https://hackclub.com
+- https://workshops.hackclub.com
+- https://starthackclub.slack.com
+- https://github.com
+- https://c9.io
+
+It is super important that you can access these sites as you will be using them
+for the entire school year. If any of the sites are blocked by your school,
+please let a staff member know on
+the [`#meta`](https://starthackclub.slack.com/messages/meta/) Slack channel.
 
 ## The First Meeting
 
