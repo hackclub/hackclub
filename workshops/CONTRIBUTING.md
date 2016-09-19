@@ -6,7 +6,7 @@ Any contributions to our workshops are _very_ welcome, even from beginners!
 
 ## We Love Questions
 
-Before we get started, if you ever have any questions about anything or just want to talk through something, you can reach us almost 24/7 on the `#curriculum` channel in our Slack ([click here](../SLACK.md) for instructions on joining).
+Before we get started, if you ever have any questions about anything or just want to talk through something, you can reach us almost 24/7 on the `#curriculum` channel in our Slack ([click here](slack/) for instructions on joining).
 
 ## How to Contribute to the Workshops
 

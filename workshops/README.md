@@ -16,7 +16,7 @@ There are three tiers of workshops:
 
 If you're interested in writing or contributing to a workshop, you can get started by checking out [the contribution guide](CONTRIBUTING.md) -- or ask us in `#meta` on the Slack.
 
-Likewise, if you have any questions or run into any trouble, please reach out to us in our Slack channel ([click here](../SLACK.md) for instructions on joining Slack) :smile:.
+Likewise, if you have any questions or run into any trouble, please reach out to us in our Slack channel ([click here][slack] for instructions on joining Slack) :smile:.
 
 ## Workshop Order
 
@@ -40,6 +40,7 @@ You'll start off by building your first website and will eventually make your wa
 | ------------------------------------------   | ---------------------------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | _[Preface][preface]_                         | _Your mind_                              | _This isn't a workshop._ Have members read this before anything else.            | Hack Club staff                                                                                                        |
 | [Personal Website][personal_website]         | HTML & CSS                               | Build your first website and get set up on _all the things_                      | Hack Club staff                                                                                                        |
+| _[Slack][slack]_                             | _Your computer_                          | _Not a regular workshop._ Gets your members set up on Slack.                     | Hack Club staff                                                                                                        |
 | [Cringe 101][cringe_101]                     | HTML & CSS                               | Cringe 101 will give you the tools to create the most cringiest website ever.    | [@nguyenbrian][nguyenbrian], [@JevinSidhu][JevinSidhu], [@uditdesai][uditdesai], and [@vaibhavyadaram][vaibhavyadaram] |
 | [That Was Easy][that_was_easy]               | HTML, CSS, and JavaScript                | Website with clickable buttons that make sounds                                  | [@jkwok91][jkwok91]                                                                                                    |
 | [Thugify][thugify]                           | JavaScript                               | Learn to dynamically modify webpages with jQuery                                 | [@nguyenbrian][nguyenbrian], [@JevinSidhu][JevinSidhu], [@uditdesai][uditdesai], and [@vaibhavyadaram][vaibhavyadaram] |
@@ -107,6 +108,7 @@ Interested in contributing to our workshops? Look [here](GUIDELINES.md) and [her
 [platformer]: platformer/
 [portfolio]: portfolio/
 [preface]: PREFACE.md
+[slack]: slack/
 [soccer]: soccer/
 [swiper]: swiper/
 [that_was_easy]: that_was_easy/
