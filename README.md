@@ -9,14 +9,14 @@ Hack Clubs are after-school communities at high schools where people build thing
 
 Quick Hack Club links:
 
-| Action                                    | Link                           |
-| ----------------------------------------- | ------------------------------ |
-| Join the Slack _(we're here almost 24/7)_ | [`SLACK.md`](SLACK.md)         |
-| See our workshops                         | https://workshops.hackclub.com |
-| See the club guide                        | [`clubs/README.md`][guide]     |
-| Start a club                              | https://hackclub.com/apply     |
-| See our website                           | https://hackclub.com           |
-| Read our code of conduct                  | [`CONDUCT.md`](CONDUCT.md)     |
+| Action                                    | Link                                   |
+| ----------------------------------------- | -------------------------------------- |
+| Join the Slack _(we're here almost 24/7)_ | [`workshops/slack/`](workshops/slack/) |
+| See our workshops                         | https://workshops.hackclub.com         |
+| See the club guide                        | [`clubs/README.md`][guide]             |
+| Start a club                              | https://hackclub.com/apply             |
+| See our website                           | https://hackclub.com                   |
+| Read our code of conduct                  | [`CONDUCT.md`](CONDUCT.md)             |
 
 [guide]: clubs/README.md
 
@@ -24,7 +24,7 @@ Quick Hack Club links:
 
 Contributions are welcome!
 
-If you need any help, please contact us at team@hackclub.com or on our [Slack](SLACK.md).
+If you need any help, please contact us at team@hackclub.com or on our [Slack](workshops/slack/).
 
 1. Check out our [public issues board][0]. If your issue isn't on the board, [open a new one][1].
 2. Pick an issue that nobody has claimed and start working on it. First time contributors should look for the "[first-timers-only][2]" label on issues.

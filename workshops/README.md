@@ -16,7 +16,7 @@ There are three tiers of workshops:
 
 If you're interested in writing or contributing to a workshop, you can get started by checking out [the contribution guide](CONTRIBUTING.md) -- or ask us in `#meta` on the Slack.
 
-Likewise, if you have any questions or run into any trouble, please reach out to us in our Slack channel ([click here](../SLACK.md) for instructions on joining Slack) :smile:.
+Likewise, if you have any questions or run into any trouble, please reach out to us in our Slack channel ([click here][slack] for instructions on joining Slack) :smile:.
 
 ## Workshop Order
 
@@ -108,6 +108,7 @@ Interested in contributing to our workshops? Look [here](GUIDELINES.md) and [her
 [platformer]: platformer/
 [portfolio]: portfolio/
 [preface]: PREFACE.md
+[slack]: slack/
 [soccer]: soccer/
 [swiper]: swiper/
 [that_was_easy]: that_was_easy/

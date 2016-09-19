@@ -64,7 +64,7 @@ Club member $100 worth of Twilio credit.
 
 13. You should be greeted by a message that looks something like the below
     image. If you get an error, send a message to the `#meta` channel in
-    [the Slack](../../../SLACK.md) mentioning `@staff` and someone from the Hack
+    [the Slack](../../slack/) mentioning `@staff` and someone from the Hack
     Club team will work with you to get it sorted out.
 
     > ![](img/congrats.png)
