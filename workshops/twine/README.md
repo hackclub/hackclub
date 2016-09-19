@@ -57,7 +57,7 @@ Radical! At this point, you now know the basics of Twine: You create passages wi
 
 So far, when the links are shown in our story, they've just been the name of the passage. Although you could make the names of the rooms whatever you want to be shown in the story, this could lead to problems later. For example, you might want to have the same text in multiple places, but not have them link to the same passage. As well, this overall might become disorganized, since the sentences may be out of context, and it'll be confusing to go through in the story overview.
 
-Instead, we can use some syntax to specify what the links says when shown in the story. If we wanted our link to the `random` passage to say "Go to the #random channel", we would replace `[[random]]` with `[[Go to the #random channel->random]]` You'll notice we added an arrow, with `->`.
+Instead, we can use some syntax to specify what the link says when shown in the story. If we wanted our link to the `random` passage to say "Go to the #random channel", we would replace `[[random]]` with `[[Go to the #random channel->random]]` You'll notice we added an arrow, with `->`.
 
 ![Passage editor with new display text syntax](img/editor-4.png)
 
