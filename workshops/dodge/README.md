@@ -623,7 +623,7 @@ We were previously setting the player sprite's initial y coordinate to half of t
 
 ```js
 // in the setup function...
-player = createSprite(width/2, height 25, 0, 0);
+~~player = createSprite(width/2, height 25, 0, 0);~~
 player = createSprite(width/2, height-(playerImage.height/2), 0, 0);
 ```
 
@@ -631,7 +631,7 @@ We're also going to want to make that same change in the `mouseClicked()` functi
 
 ```js
 // in the mouseClicked function
-player.position.y = height-25;
+~~player.position.y = height-25;~~
 player.position.y = height-(playerImage.height/2);
 ```
 
