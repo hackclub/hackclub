@@ -59,8 +59,11 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 
 We'll be using a service called Cloud9 to write, save, and organize all the code we'll write in Hack Club.
 
-1. In a new tab, open https://new.hackclub.com/cloud9_setup.
-2. Enter your email and go through the signup process.
+1. In a new tab, open https://new.hackclub.com/cloud9_setup and enter your email to get an invite.
+
+   > ![](img/c9_setup_email.png)
+
+2. You'll get an invitation to join Hack Club on Cloud9 in your inbox. Click the link in the invite and you'll see this screen:.
 
    > ![](img/c9_start_signup.png)
 
