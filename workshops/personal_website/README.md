@@ -59,19 +59,10 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 
 We'll be using a service called Cloud9 to write, save, and organize all the code we'll write in Hack Club.
 
-1. In a new tab, open https://c9.io/.
+1. In a new tab, open https://new.hackclub.com/cloud9_setup.
 2. Enter your email and go through the signup process.
 
-   > ![](img/c9_start_signup.gif)
-
-   If Cloud9 asks for a credit card, use the following info. This is an empty prepaid debit card --- it'll be enough for verification, but you won't be able to make any actual charges to it.
-
-   > ![](img/c9_credit_card.png)
-
-   > | Field       | Value      |
-   > | ----------- | ---------- |
-   > | Full name   | Zach Latta |
-   > | Postal code | 94114      |
+   > ![](img/c9_start_signup.png)
 
    You should end up with a screen that looks like this:
 
