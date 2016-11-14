@@ -41,6 +41,11 @@ These are the people who are officially part of the organization, but we want yo
 
 Our mission is to provide every student, regardless of ethnicity, gender, or socioeconomic status, the opportunity to experience the joys of building things with code through after-school coding clubs.
 
+## Values
+
+- **Transparent By Default** :: When faced with an opportunity to create or modify something, ask whether there's a way to do your work more transparently. If it's possible without compromising your deliverable, do it transparently (ex. open source your code unless there's a very good reason not to).
+- **Make It Personal** :: Schools take away power from most students. We want Hack Club to be a diamond in the rough and to truly provide an experience most students won't find anywhere else. Prioritize the individual. Make the user feel loved.
+
 ## What Do We Actually Do?
 
 We provide everything high schoolers need to start an awesome club. In reality this comes down to three things: content, community, and partnerships. We assume leaders have some some coding experience.
