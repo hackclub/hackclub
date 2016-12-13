@@ -673,7 +673,7 @@ Huzzah, you've created an application that anyone can use, to write notes to the
 
 After entering your username and password (hidden, as always), you'll be able to write your own notes to self at `USERNAME.github.io/notes_to_self` (replace `USERNAME` with your own username)!
 
-Though there won't be much to share in this project, post a link to [`#shipit`](https://starthackclub.slack.com/messages/shipit) on Slack! Maybe others will use your project to write their own notes to self.
+Though there won't be much to share in this project, post a link to [`#shipit`](https://hackclub.slack.com/messages/shipit) on Slack! Maybe others will use your project to write their own notes to self.
 
 ## Part VIII: Hacking
 

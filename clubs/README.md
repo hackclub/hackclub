@@ -214,14 +214,14 @@ websites are **not** blocked by your school!
 
 - https://hackclub.com
 - https://workshops.hackclub.com
-- https://starthackclub.slack.com
+- https://hackclub.slack.com
 - https://github.com
 - https://c9.io
 
 It is super important that you can access these sites as you will be using them
 for the entire school year. If any of the sites are blocked by your school,
-please let a staff member know on
-the [`#meta`](https://starthackclub.slack.com/messages/meta/) Slack channel.
+please let a staff member know on the
+[`#meta`](https://hackclub.slack.com/messages/meta/) Slack channel.
 
 ## The First Meeting
 

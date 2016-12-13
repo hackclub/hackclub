@@ -696,7 +696,7 @@ After making sure all files are saved, go to the terminal in Cloud9 and type the
 
 Don't forget you'll need to input your username and password (hidden). After successfully pushing, your game will be live and playable on `USERNAME.github.io/platformer/`!!
 
-Be sure to post your creation on the [`#shipit`](https://starthackclub.slack.com/messages/shipit/) channel on Slack!
+Be sure to post your creation on the [`#shipit`](https://hackclub.slack.com/messages/shipit/) channel on Slack!
 
 ## Part X: Hacking
 

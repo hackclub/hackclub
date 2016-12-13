@@ -12,7 +12,7 @@ Open up https://slack.hackclub.com in a new tab and enter your email to get an i
 
 ![Get a Slack invite](img/slack_setup_1_invite.gif)
 
-If you head over to your email inbox, you should see an invite to join the Slack. Go ahead and click the `Join Hack Club` button in the email to create an account. It'll ask you to provide a username and password. This username is unique to Hack Club, so you can use usernames that are often taken on other sites (like `mary`). After you create an account, it'll take you to the main Slack interface (you can always get here by going to https://starthackclub.slack.com).
+If you head over to your email inbox, you should see an invite to join the Slack. Go ahead and click the `Join Hack Club` button in the email to create an account. It'll ask you to provide a username and password. This username is unique to Hack Club, so you can use usernames that are often taken on other sites (like `mary`). After you create an account, it'll take you to the main Slack interface (you can always get here by going to https://hackclub.slack.com).
 
 ![Signing up for Slack](img/slack_setup_2_create_account.gif)
 
@@ -34,7 +34,7 @@ You'll find that people are generally pretty welcoming and eager to meet you :sm
 
 ![Introduction responses](img/slack_setup_5_introduction_responses.png)
 
-Congratulations! You're now all set up on the Slack. In addition to always being accessible at https://starthackclub.slack.com, Slack has great desktop and mobile apps available at https://slack.com/downloads. The most active members have the mobile app installed and we recommend new members install it.
+Congratulations! You're now all set up on the Slack. In addition to always being accessible at https://hackclub.slack.com, Slack has great desktop and mobile apps available at https://slack.com/downloads. The most active members have the mobile app installed and we recommend new members install it.
 
 In the next section we'll go over a quick handy reference for using the Slack.
 
