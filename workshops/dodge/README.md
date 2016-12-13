@@ -716,7 +716,7 @@ Just like we did in the Personal Website workshop, do the following steps to upl
   - Enter the password and press enter. _The characters won't show up on the screen, but rest assured, they are still being typed._
 3. Now try to view the website by going to `USERNAME.github.io/dodge/` (make sure to replace `USERNAME` with your actual GitHub username)
 
-Don't forget to share a link to your beautiful creation on the Slack on the [`#shipit`](https://starthackclub.slack.com/messages/shipit) channel!
+Don't forget to share a link to your beautiful creation on the Slack on the [`#shipit`](https://hackclub.slack.com/messages/shipit) channel!
 
 ## Part IV. Hacking
 

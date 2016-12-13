@@ -49,7 +49,7 @@ across schools is one where everything can be done through a web browser. This
 is why we use [Cloud9](https://c9.io) in all of our workshops.
 
 By the way, if you do know about an existing website that meets both of these
-needs, please tell us on [Slack](https://starthackclub.slack.com/). Making new
+needs, please tell us on [Slack](https://hackclub.slack.com/). Making new
 workshops is a serious bottleneck right now, and it would be so awesome if we
 didn't have to expend all this effort!
 

@@ -446,7 +446,7 @@ Congratulations! Your collaborative drawing app is now complete.
 
 Make sure your files are all saved, then run the familiar git commands.
 
-Share your URL to the [`#shipit`](https://starthackclub.slack.com/messages/shipit/) channel on Slack, so that everyone can collaborate together!
+Share your URL to the [`#shipit`](https://hackclub.slack.com/messages/shipit/) channel on Slack, so that everyone can collaborate together!
 
 ## Part V: Hacking
 

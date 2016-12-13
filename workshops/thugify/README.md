@@ -457,7 +457,7 @@ Like with previous workshops, let's set up a link that you can share with others
 
    > Make sure to change `username` to your own username
 
-4. Post the link to the [`#shipit`](https://starthackclub.slack.com/messages/shipit/) on Slack to share your awesome work!
+4. Post the link to the [`#shipit`](https://hackclub.slack.com/messages/shipit/) on Slack to share your awesome work!
 
 ## Hacking
 

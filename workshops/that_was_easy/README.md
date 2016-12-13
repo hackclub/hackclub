@@ -498,7 +498,7 @@ Open up the console in Cloud9 if you don't see it already, by going to `View > C
 
 Enter your username and password, and you should be all set. This should update your personal website so that your "Easy" button can be found at `https://USERNAME.github.io/that_was_easy/`.
 
-Post on [`#shipit`](https://starthackclub.slack.com/messages/shipit) with the URL, so everyone can see and play with your amazing creation!
+Post on [`#shipit`](https://hackclub.slack.com/messages/shipit) with the URL, so everyone can see and play with your amazing creation!
 
 ## Part VIII: Hacking
 
