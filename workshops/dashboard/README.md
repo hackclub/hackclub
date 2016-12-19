@@ -229,7 +229,7 @@ h1, h2, #news {
 
 Feel free to change up the styles to your liking!
 
-## Part V: Publishing, Sharing, and Improving
+## Part V: Publishing, sharing, and improving
 
 To publish this project, run your familiar git commands to get it up on GitHub Pages! 
 
