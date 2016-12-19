@@ -9,9 +9,10 @@ Here's a link to the [live demo](link) and the [final code](link). This workshop
 Have you heard of an API? Basically, an API, or an application program interface, is a set of protocols or routines that can help you build a software project. Often, APIs are available to use through companies that allow anyone access to their services. For example, one can make an app to search tweets with a [Twitter API](https://dev.twitter.com/docs), or one could even use the [Spotify API](https://developer.spotify.com/showcase/) to grab the latest music data. 
 
 In this project, we'll be building a personal dashboard with a couple widgets that will display:
-- the date
-- the weather based on the user's current location
-- latest news from news.google.com
+
+- The date
+- The weather based on the user's current location
+- Latest news from https://news.google.com
 
 We'll be using the [Dark Sky API](https://darksky.net/dev/) for the weather, and the [News API](https://newsapi.org/) to fetch the latest news. 
 
@@ -39,9 +40,9 @@ Once again, keep your API key handy to use in our JavaScript functions.
 
 ## Part II: The markup
 
-We'll be keeping our markup really simple. Along with our basic tags, we'll be importing the normalize CSS library and our ```style.css``` stylesheet, adding three ```id```s for our date, weather, and news. Lastly, we'll need to link up jQuery and the ```app.js``` file where we will write our functions. 
+We'll be keeping our markup really simple. Along with our basic tags, we'll be importing the normalize CSS library and our `style.css` stylesheet, adding three `id`s for our date, weather, and news. Lastly, we'll need to link up jQuery and the `app.js` file where we will write our functions. 
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -74,10 +75,12 @@ We'll be keeping our markup really simple. Along with our basic tags, we'll be i
   </body>
 </html>
 ```
+
 ## Part III: The functions
 
 Our JavaScript is where we will actually build our app. Open the file up and and create a function. This function will grab the date, and then use something called function chaining to split the date string and splice it to print only the first four words of the string. If we didn't do this, Javascript would print out the time too. 
-```
+
+```html
 function loadDate() {
   var currentDate = new Date(); 
   var dateString = currentDate.toString()
@@ -89,9 +92,9 @@ function loadDate() {
 }
 ```
 
-Moving on, we come to the weather function. Let's start by creating a function and assigning variables to our ```weather id```, ```url```, and ```apiKey```. 
+Moving on, we come to the weather function. Let's start by creating a function and assigning variables to our `weather id`, `url`, and `apiKey`. 
 
-```
+```js
 function loadWeather() {
   var weather = $("#weather");
   var url = "https://api.forecast.io/forecast/"; // Dark Sky API url
@@ -102,7 +105,7 @@ function loadWeather() {
 
 Now that we've got that, we can use HTML5's geolocation API to obtain the latitude and longitude of the user. Then, we'll need to make a API request to the Dark Sky url. With that JSON data, we can then parse it to display the current temperature of the location with those coordinates. This is how it will work: 
 
-```
+```js
 function loadWeather() {
   var weather = $("#weather");
   var url = "https://api.forecast.io/forecast/"; // Dark Sky API url
@@ -112,7 +115,7 @@ function loadWeather() {
     var latitude = position.coords.latitude; // latitude using geolocation
     var longitude = position.coords.longitude; // longitude using geolocation
 
-	// API request:
+  // API request:
 
     $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
       weather.text("Based on your current location, it is " + data.currently.temperature + "° F right now");
@@ -131,9 +134,10 @@ function loadWeather() {
   weather.text("fetching weather...");
 }
 ```
-At last, we come to our news function. Let's set the variables up similiarly to how we did with the ```loadWeather()``` function. 
 
-```
+At last, we come to our news function. Let's set the variables up similiarly to how we did with the `loadWeather()` function. 
+
+```js
 function loadNews() {
   var news = $("#news");
   var url = "https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey="; // News API url
@@ -141,14 +145,14 @@ function loadNews() {
 }
 ```
 
-The API request will be very similar to the ```loadWeather()``` request, but this time, we have to get multiple sets of data:
+The API request will be very similar to the `loadWeather()` request, but this time, we have to get multiple sets of data:
 
-- the title of the articles
-- the url of those articles
+- The title of the articles
+- The url of those articles
 
 That's why we'll need to use a map() method to call every element in the data set. In this case, we'll need the url of the articles and the titles. 
 
-```
+```js
 function loadNews() {
   var news = $("#news");
   var url = "https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey="; // News API url
@@ -156,7 +160,7 @@ function loadNews() {
 
   $.getJSON(url + apiKey, function(data) {
 
-  	// map() method to call article urls and titles
+    // map() method to call article urls and titles
 
     var titles = data.articles.map(function(articles) {
       return "<a href='" + articles.url + "'>" + articles.title + "</a>";
@@ -171,43 +175,47 @@ function loadNews() {
   news.text("fetching news..."); 
 }
 ```
-Lastly, before we close out of our ```app.js``` file, make sure to call your functions! 
-```
+
+Lastly, before we close out of our `app.js` file, make sure to call your functions! 
+
+```js
 loadDate();
 loadWeather();
 loadNews();
 ```
+
 ## Part IV: Some styling
 
-We still have one last step: we need to make our dashboard look decent! Open up your ```style.css``` and let's get to work!
+We still have one last step: we need to make our dashboard look decent! Open up your `style.css` and let's get to work!
 
-First off, let's center the whole html app using ```margin: 0 auto;``` and ```max-width```. We'll also change up our ```font-family```. 
+First off, let's center the whole html app using `margin: 0 auto;` and `max-width`. We'll also change up our `font-family`. 
 
-```
+```css
 html {
-	max-width: 50em;
-	margin: 0 auto;
-	padding: 10px;
-	font-family: Avenir Next, Helvetica, sans-serif;
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: Avenir Next, Helvetica, sans-serif;
 }
 ```
-Then, we can adjust the ```a tags``` (or links) to have a border underneath them and making them italicize on hover like this: 
 
-```
+Then, we can adjust the `a tags` (or links) to have a border underneath them and making them italicize on hover like this: 
+
+```js
 a {
-	text-decoration: none;
-	color: #000;
-	border-bottom: 2px solid #e42d40;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid #e42d40;
 }
 
 a:hover {
-	font-style: italic;
+  font-style: italic;
 }
 ```
 
-Lastly, we can adjust elements such as ```font-weight```, ```font-size```, and ```line-height```.
+Lastly, we can adjust elements such as `font-weight`, `font-size`, and `line-height`.
 
-```
+```css
 h1, h2, #news {
   font-weight: 300;
 }
@@ -216,17 +224,14 @@ h1, h2, #news {
   font-size: 1.5em;
   line-height: 1.5em;
 }
-
 ```
+
 Feel free to change up the styles to your liking!
-
-
-
 
 ## Part V: Publishing, Sharing, and Improving
 
 To publish this project, run your familiar git commands to get it up on GitHub Pages! 
 
-Then, make sure to share your project using the ```#shipit``` channel on Slack!
+Then, make sure to share your project using the `#shipit` channel on Slack!
 
 Of course, this project is just a starting point. Try to add even more of your own widgets using the vast world of APIs!
