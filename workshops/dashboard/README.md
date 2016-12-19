@@ -79,7 +79,7 @@ We'll be keeping our markup really simple. Along with our basic tags, we'll be i
 
 ## Part III: The functions
 
-Our JavaScript is where we will actually build our app. Open the file up and and create a function. This function will grab the date, and then use something called function chaining to split the date string and splice it to print only the first four words of the string. If we didn't do this, Javascript would print out the time too. 
+Our JavaScript is where we will actually build our app. Open the file up and and create a function. This function will grab the date, and then use something called function chaining to split the date string and splice it to print only the first four words of the string. If we didn't do this, JavaScript would print out the time too. 
 
 ```html
 function loadDate() {
@@ -104,7 +104,7 @@ function loadWeather() {
 }
 ```
 
-Now that we've got that, we can use HTML5's geolocation API to obtain the latitude and longitude of the user. Then, we'll need to make a API request to the Dark Sky url. With that JSON data, we can then parse it to display the current temperature of the location with those coordinates. This is how it will work: 
+Now that we've got that, we can use HTML5's geolocation API to obtain the latitude and longitude of the user. Then, we'll need to make a API request to the Dark Sky URL. With that JSON data, we can then parse it to display the current temperature of the location with those coordinates. This is how it will work: 
 
 ```js
 function loadWeather() {
@@ -136,7 +136,7 @@ function loadWeather() {
 }
 ```
 
-At last, we come to our news function. Let's set the variables up similiarly to how we did with the `loadWeather()` function. 
+At last, we come to our news function. Let's set the variables up similarly to how we did with the `loadWeather()` function. 
 
 ```js
 function loadNews() {
@@ -149,9 +149,9 @@ function loadNews() {
 The API request will be very similar to the `loadWeather()` request, but this time, we have to get multiple sets of data:
 
 - The title of the articles
-- The url of those articles
+- The URL of those articles
 
-That's why we'll need to use a map() method to call every element in the data set. In this case, we'll need the url of the articles and the titles. 
+That's why we'll need to use a `map()` method to call every element in the data set. In this case, we'll need the URL of the articles and the titles. 
 
 ```js
 function loadNews() {
@@ -189,7 +189,7 @@ loadNews();
 
 We still have one last step: we need to make our dashboard look decent! Open up your `style.css` and let's get to work!
 
-First off, let's center the whole html app using `margin: 0 auto;` and `max-width`. We'll also change up our `font-family`. 
+First off, let's center the whole HTML app using `margin: 0 auto;` and `max-width`. We'll also change up our `font-family`. 
 
 ```css
 html {
