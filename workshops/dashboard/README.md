@@ -66,7 +66,7 @@ We'll be keeping our markup really simple. Along with our basic tags, we'll be i
     <h2>Latest news:</h2>
     <div id="news">
     </div>
-    <p>Powered by <a href="https://newsapi.org/">NewsAPI</a></p>
+    <p>Powered by <a href="https://newsapi.org/">NewsAPI</a> and <a href="https://darksky.net/poweredby/">Dark Sky</a></p>
 
     <script
         src="https://code.jquery.com/jquery-3.1.1.min.js"
