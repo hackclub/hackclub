@@ -231,7 +231,7 @@ Feel free to change up the styles to your liking!
 
 ## Part V: Publishing, sharing, and improving
 
-To publish this project, run your familiar git commands to get it up on GitHub Pages! 
+To publish this project, run your familiar git commands to get it up on GitHub Pages! Make sure you head over to 'https://[username].github.io/[repo-of-project]' to view your creation!
 
 Then, make sure to share your project using the `#shipit` channel on Slack!
 
