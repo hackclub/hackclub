@@ -104,8 +104,35 @@ function loadWeather() {
 }
 ```
 
-Now that we've got that, we can use HTML5's geolocation API to obtain the latitude and longitude of the user. Then, we'll need to make a API request to the Dark Sky URL. With that JSON data, we can then parse it to display the current temperature of the location with those coordinates. This is how it will work: 
+Now that we've got those variables, we can use HTML5's geolocation API to obtain the latitude and longitude of the user. Then, we'll need to make a API request to the Dark Sky URL. With that JSON data, we can then parse it to display the current temperature of the location with those coordinates. This is how it will work: 
 
+```js
+
+  function success(position) {
+    var latitude = position.coords.latitude; // latitude using geolocation
+    var longitude = position.coords.longitude; // longitude using geolocation
+
+  // API request:
+
+    $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
+      weather.text("Based on your current location, it is " + data.currently.temperature + "° F right now");
+    });
+  }
+
+  // This message is displayed if their is a geolocation error:
+  function error() {
+    alert("Unable to retrieve your location for weather");
+  }
+
+  // calling the geolocation API
+  navigator.geolocation.getCurrentPosition(success, error);
+
+  // the text that will be displayed while the function is making the request
+  weather.text("fetching weather...");
+}
+```
+
+Here's what the `loadWeather()` function should look like: 
 ```js
 function loadWeather() {
   var weather = $("#weather");
@@ -154,6 +181,28 @@ The API request will be very similar to the `loadWeather()` request, but this ti
 That's why we'll need to use a `map()` method to call every element in the data set. In this case, we'll need the URL of the articles and the titles. 
 
 ```js
+
+  $.getJSON(url + apiKey, function(data) {
+
+    // map() method to call article urls and titles
+
+    var titles = data.articles.map(function(articles) {
+      return "<a href='" + articles.url + "'>" + articles.title + "</a>";
+    });
+
+     // joining the titles with two line breaks
+
+    news.html(titles.join("<br><br>"));
+  });
+
+  // the text that will be displayed while the function is making the request
+  news.text("fetching news..."); 
+}
+```
+
+This is what your `loadNews()` function should look like: 
+
+```js
 function loadNews() {
   var news = $("#news");
   var url = "https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey="; // News API url
@@ -177,7 +226,7 @@ function loadNews() {
 }
 ```
 
-Lastly, before we close out of our `app.js` file, make sure to call your functions! 
+Lastly, before we close out of our `app.js` file, make sure to call all your functions! 
 
 ```js
 loadDate();
