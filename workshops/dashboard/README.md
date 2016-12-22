@@ -77,6 +77,8 @@ We'll be keeping our markup really simple. Along with our basic tags, we'll be i
 </html>
 ```
 
+Take a look at the [Personal Website](https://workshops.hackclub.com/personal_website/) workshop to learn more about basic HTML markup.
+
 ## Part III: The functions
 
 Our JavaScript is where we will actually build our app. Open the file up and and create a function. This function will grab the date, and then use something called function chaining to split the date string and splice it to print only the first four words of the string. If we didn't do this, JavaScript would print out the time too. 
@@ -92,6 +94,7 @@ function loadDate() {
   $("#date").text(dateString);
 }
 ```
+Hack Club has published several workshops in JavaScript and JQuery. The [That Was Easy](https://workshops.hackclub.com/that_was_easy/) workshop uses simple JQuery to communicate with a button element. To learn some basics of JavaScript functions and variables, take a look at the [Geometric Pattern](https://workshops.hackclub.com/geometric_pattern/) or [Dodge](https://workshops.hackclub.com/dodge/) workshops. 
 
 Moving on, we come to the weather function. Let's start by creating a function and assigning variables to our `weather id`, `url`, and `apiKey`. 
 
