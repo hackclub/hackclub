@@ -116,8 +116,7 @@ Now that we've got those variables, we can use HTML5's geolocation API to obtain
     var latitude = position.coords.latitude; // latitude using geolocation
     var longitude = position.coords.longitude; // longitude using geolocation
 
-  // API request:
-
+    // API request:
     $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
       weather.text("Based on your current location, it is " + data.currently.temperature + "° F right now");
     });
@@ -137,6 +136,7 @@ Now that we've got those variables, we can use HTML5's geolocation API to obtain
 ```
 
 Here's what the `loadWeather()` function should look like: 
+
 ```js
 function loadWeather() {
   var weather = $("#weather");
@@ -147,8 +147,7 @@ function loadWeather() {
     var latitude = position.coords.latitude; // latitude using geolocation
     var longitude = position.coords.longitude; // longitude using geolocation
 
-  // API request:
-
+    // API request:
     $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
       weather.text("Based on your current location, it is " + data.currently.temperature + "° F right now");
     });
