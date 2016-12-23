@@ -31,6 +31,7 @@ You'll start off by building your first website and will eventually make your wa
 5. [Dodge][dodge]: _Build your first browser game._
 6. [Platformer][platformer]: _Build on what you learned in Dodge to create your second, more complex game._
 7. [Collaborative Sketch][collaborative_sketch]: _Use your new database skills to create a real-time collaborative drawing app._
+8. [Dashboard][dashboard]: _Build a personal dashboard showing the local weather and latest news._
 
 ## The List
 
@@ -42,6 +43,7 @@ You'll start off by building your first website and will eventually make your wa
 | [Personal Website][personal_website]         | HTML & CSS                               | Build your first website and get set up on _all the things_                      | Hack Club staff                                                                                                        |
 | _[Slack][slack]_                             | _Your computer_                          | _Not a regular workshop._ Gets your members set up on Slack.                     | Hack Club staff                                                                                                        |
 | [Cringe 101][cringe_101]                     | HTML & CSS                               | Cringe 101 will give you the tools to create the most cringiest website ever.    | [@nguyenbrian][nguyenbrian], [@JevinSidhu][JevinSidhu], [@uditdesai][uditdesai], and [@vaibhavyadaram][vaibhavyadaram] |
+| [Dashboard][dashboard]                       | HTML, CSS, and JavaScript                | Build a personal dashboard with the weather and latest news                      | [@samayshamdasani][samayshamdasani]                                                                                      |
 | [That Was Easy][that_was_easy]               | HTML, CSS, and JavaScript                | Website with clickable buttons that make sounds                                  | [@jkwok91][jkwok91]                                                                                                    |
 | [Thugify][thugify]                           | JavaScript                               | Learn to dynamically modify webpages with jQuery                                 | [@nguyenbrian][nguyenbrian], [@JevinSidhu][JevinSidhu], [@uditdesai][uditdesai], and [@vaibhavyadaram][vaibhavyadaram] |
 | [Geometric Pattern][geometric_pattern]       | JavaScript & p5.js                       | Super cool geometric pattern with Processing                                     | [@jkwok91][jkwok91]                                                                                                    |
@@ -87,6 +89,7 @@ _:warning: These workshops are no longer maintained. They may contain errors and
 [remixz]: https://github.com/remixz
 [jkwok91]: https://github.com/jkwok91
 [jonleung]: https://github.com/jonleung
+[samayshamdasani]: https://github.com/samayshamdasani
 
 ## Contributing to the Workshops
 
@@ -97,6 +100,7 @@ Interested in contributing to our workshops? Look [here](GUIDELINES.md) and [her
 [cloud9]: cloud9/
 [collaborative_sketch]: collaborative_sketch/
 [cringe_101]: cringe_101/
+[dashboard]: dashboard/
 [dodge]: dodge/
 [find_bigfoot]: find_bigfoot/
 [geometric_pattern]: geometric_pattern/
