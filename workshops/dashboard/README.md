@@ -77,7 +77,7 @@ We'll be keeping our markup really simple. Along with our basic tags, we'll be i
 </html>
 ```
 
-Take a look at the [Personal Website](https://workshops.hackclub.com/personal_website/) workshop to learn more about basic HTML markup.
+Take a look at the [Personal Website](https://workshops.hackclub.com/personal_website/) workshop to learn more about basic HTML markup, if you haven't already.
 
 ## Part III: The functions
 
@@ -94,7 +94,8 @@ function loadDate() {
   $("#date").text(dateString);
 }
 ```
-Hack Club has published several workshops in JavaScript and JQuery. The [That Was Easy](https://workshops.hackclub.com/that_was_easy/) workshop uses simple JQuery to communicate with a button element. To learn some basics of JavaScript functions and variables, take a look at the [Geometric Pattern](https://workshops.hackclub.com/geometric_pattern/) or [Dodge](https://workshops.hackclub.com/dodge/) workshops. 
+
+Hack Club has published several workshops in JavaScript and jQuery. The [That Was Easy](../that_was_easy/) workshop uses simple jQuery to communicate with a button element. To learn some basics of JavaScript functions and variables, take a look at the [Geometric Pattern](../geometric_pattern/) or [Dodge](../dodge/) workshop. 
 
 Moving on, we come to the weather function. Let's start by creating a function and assigning variables to our `weather id`, `url`, and `apiKey`. 
 
