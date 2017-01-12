@@ -135,7 +135,7 @@ Now that we've got those variables, we can use HTML5's geolocation API to obtain
 }
 ```
 
-*Note: If you would prefer to use Celsius, change `?callback=?` in the above code to `?units=si&callback=?`*, and the `F` to a `C` on the line below.*
+_Note: If you would prefer to use Celsius, change `?callback=?` in the above code to `?units=si&callback=?`*, and the `F` to a `C` on the line below._
 
 Here's what the `loadWeather()` function should look like: 
 
