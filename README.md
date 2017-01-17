@@ -64,7 +64,7 @@ You can also change the size or placement of your banner by editing the CSS in t
 
 ## Sponsors
 
-We're lucky to have some amazing companies donating their products to make Hack Club's development faster and higher-quality. If you're interest in contributing your product to Hack Club, please email donate@hackclub.com.
+We're lucky to have some pretty amazing companies donate their products to make Hack Club's development faster and higher-quality. If you're interest in contributing your product to Hack Club, please email donate@hackclub.com.
 
 <!-- See https://github.com/isaacs/github/issues/316 for why we need to have a URL link to the logos -->
 <img src="https://cdn.rawgit.com/zachlatta/hackclub/3b4c3fbc7b7b98047d3f274d9411617f854d4cd9/img/sponsors/stripe.svg" width="200px">
