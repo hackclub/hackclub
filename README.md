@@ -62,6 +62,10 @@ You can also change the size or placement of your banner by editing the CSS in t
 | Facebook      | https://www.facebook.com/Hack-Club-741805665870458 |
 | Twitter       | https://twitter.com/starthackclub                  |
 
+## Sponsors
+
+We're lucky to have some amazing companies donating their products to make Hack Club's development faster and higher-quality. If you're interest in contributing your product to Hack Club, please email donate@hackclub.com.
+
 ## License
 
 TL;DR: All content is released under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license. All code is released under the [MIT License](MIT_LICENSE). For the license's full text and attributions, please see [`LICENSE`](LICENSE).
