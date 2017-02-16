@@ -322,7 +322,7 @@ Now that you have finished building a website, you should share your beautiful c
 2. Join your club's channel by asking your club leader for the name of the channel, and post the link to your website in your club's channel.
 3. Then, post the link to the [`#shipit`](https://hackclub.slack.com/messages/shipit) channel to share it with everyone!
 
-[slack]: ../../SLACK.md
+[slack]: https://slack.hackclub.com/
 
 ## Part VI: Hacking
 
