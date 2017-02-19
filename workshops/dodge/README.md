@@ -607,7 +607,7 @@ When we add an image to a sprite, the sprite's width and height is changed to ma
 
 ```js
 // in the setup function...
-̶p̶l̶a̶y̶e̶r̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶h̶e̶i̶g̶h̶t̶-̶2̶5̶,̶ ̶5̶0̶,̶ ̶5̶0̶)̶;̶
+~~player = createSprite(width/2, height -25, -50, 50),~~
 player = createSprite(width/2, height-25, 0, 0);
 ```
 
@@ -615,7 +615,7 @@ Let's change the `enemy`'s placeholder width and height to those of the actual `
 
 ```js
 // in the setup function...
-̶e̶n̶e̶m̶y̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶0̶,̶ ̶1̶0̶,̶ ̶3̶0̶)̶;̶
+enemy = createSprite(width/2, 0, 10, 30);
 enemy = createSprite(width/2, 0, 0, 0);
 ```
 
@@ -623,7 +623,7 @@ We were previously setting the player sprite's initial y coordinate to half of t
 
 ```js
 // in the setup function...
-̶p̶l̶a̶y̶e̶r̶ ̶=̶ ̶c̶r̶e̶a̶t̶e̶S̶p̶r̶i̶t̶e̶(̶w̶i̶d̶t̶h̶/̶2̶,̶ ̶h̶e̶i̶g̶h̶t̶-̶2̶5̶,̶ ̶0̶,̶ ̶0̶)̶;̶
+~~player = createSprite(width/2, height 25, 0, 0);~~
 player = createSprite(width/2, height-(playerImage.height/2), 0, 0);
 ```
 
@@ -631,7 +631,7 @@ We're also going to want to make that same change in the `mouseClicked()` functi
 
 ```js
 // in the mouseClicked function
-̶p̶l̶a̶y̶e̶r̶.̶p̶o̶s̶i̶t̶i̶o̶n̶.̶y̶ ̶=̶ ̶h̶e̶i̶g̶h̶t̶-̶2̶5̶;̶
+~~player.position.y = height-25;~~
 player.position.y = height-(playerImage.height/2);
 ```
 
@@ -669,7 +669,7 @@ Now, go ahead and replace our existing `background()` call in `draw()` with `bac
 
 ```js
 // in the draw function...
-̶b̶a̶c̶k̶g̶r̶o̶u̶n̶d̶(̶0̶,̶ ̶5̶0̶,̶ ̶1̶0̶0̶)̶;̶
+~~background(0, 50, 100);~~
 background(backgroundImage);
 ```
 
@@ -677,7 +677,7 @@ Final thing: notice that the background image is 256 by 256 pixels, but the canv
 
 ```js
 function setup() {
-  ̶c̶r̶e̶a̶t̶e̶C̶a̶n̶v̶a̶s̶(̶2̶5̶0̶,̶ ̶2̶5̶0̶)̶;̶
+  ~~createCanvas(250, 250);~~
   createCanvas(256, 256);
   // ...the rest of the setup function
 }
