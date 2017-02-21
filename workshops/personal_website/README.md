@@ -21,8 +21,8 @@ This workshop should take around 45 minutes.
 - [Part II: The HTML File](#part-ii-the-html-file)
 - [Part III: The CSS File](#part-iii-the-css-file)
 - [Part IV: Publishing](#part-iv-publishing)
-- [Part V: Sharing with the Community](#part-v-sharing-with-the-community)
-- [Part VI: Hacking](#part-vi-hacking)
+- [Part V: Hacking](#part-v-hacking)
+- [Part VI: Sharing with the Community](#part-vi-sharing-with-the-community)
 
 ## Part I: Setup
 
@@ -360,7 +360,7 @@ These are some additional resources that you can use to make your site even bett
 
 Now that you have finished building a website, you should share your beautiful creation --- because your site is on the internet, you can share it with anyone who is also online! Remember, it's as easy as giving them your URL: `USERNAME.github.io`!
 
-You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the world wide Hack CLub community there is no better place to do that than on Slack.
+You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the world wide Hack Club community there is no better place to do that than on Slack.
 
 1. In a new tab, open and follow [these directions][slack] to signup for our Slack.
 2. Join your club's channel by asking your club leader for the name of the channel, and post the link to your website in your club's channel.
