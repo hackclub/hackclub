@@ -119,7 +119,7 @@ Before proceeding, we'll briefly go over what this template means. HTML works by
 
 ### 2) Previewing the Page
 
-Let's check out what our HTML file looks like in Live Preview! First, we'll save the file by clicking "File" → "Save" (or use the shortcut CTRL+s / Command+s). Then, preview what the website looks like by clicking "Preview" → "Live Preview File"
+Let's check out what our HTML file looks like in Live Preview! First, we'll save the file by clicking "File" → "Save" (or use the shortcut CTRL+s / Command+s). You'll need to do this each time you want to view he preview of your project. Then, you can preview what the website looks like by clicking "Preview" → "Live Preview File"
 
 ![](img/c9_live_preview.gif)
 
@@ -195,9 +195,17 @@ Go ahead and add this into your `index.html` now. I put my picture before my hea
 
 ![](img/c9_index_html.png)
 
+Remember, you need to save your work every time you make a change --- otherwise you won't be able to see it!
+
 Hurray! You've created a basic HTML page! Let's save our progress with git!
 
-In Cloud9, press `Alt + t` (`option + t` on Mac) on the keyboard. This will open the terminal, which allows us to run special types of commands in Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
+We're going to be using a terminal to do this, but you might know it as that-thing-hackers-use-in-movie.
+
+![](img/c9_command_line.gif)
+
+Using the terminal allows us to do things on computers which you can't usually do with a standard graphical user interface. We don't expect you to be a terminal master by the end of this tutorial, but with this initial exposure hopefully you'll be able to continue learning more about it over time!
+
+In Cloud9, press `Alt + t` (`option + t` on Mac) on the keyboard. This is how we open the terminal on Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
 
 - `git add --all` (then press enter)
 - `git commit -m "Create personal website"` (then press enter)
@@ -292,7 +300,7 @@ Here is the transformation that your stylesheet will have undergone at the end o
 
 Now let's save and look at our work. Ah, it is truly beautiful to behold. Now let's commit the changes.
 
-We'll once again use the terminal in Cloud9 to save our changes with git.
+Remember to save both `index.html` and `styles.css`! We'll once again use the terminal in Cloud9 to persist our changes with git.
 - `git add --all` (then press enter)
 - `git commit -m "Add styling to personal website"` (then press enter)
 
@@ -314,17 +322,7 @@ Right now we can only see our website on our own computer. Let's get our website
 
 Yes! Your website is now public on the internet!
 
-## Part V: Sharing with the Community
-
-Now that you have finished building a website, you should share your beautiful creation.
-
-1. In a new tab, open and follow [these directions][slack] to signup for our Slack.
-2. Join your club's channel by asking your club leader for the name of the channel, and post the link to your website in your club's channel.
-3. Then, post the link to the [`#shipit`](https://hackclub.slack.com/messages/shipit) channel to share it with everyone!
-
-[slack]: https://slack.hackclub.com/
-
-## Part VI: Hacking
+## Part V: Hacking
 
 In this section, your challenge is to add additional features to your website to make it your own!
 
@@ -340,7 +338,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 - [Rebecca Jourard](https://mnefertiti.github.io/personalwhale/)
 - [John Cena's](http://nguyenbrian.github.io/john-cenas-personal-website/) (created by Brian Nguyen)
 - [Jevin Sidhu](http://jevinsidhu.com/)
-- [Harrison Shoebridge](https://harrison.tech/zero-cool/)
+- [Zero Cool](https://harrison.tech/zero-cool/)
 - [Chaoyi Zha](https://cydrobolt.com/)
 
 **Websites Made by Professionals:**
@@ -352,8 +350,20 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 ### Additional Resources
 
-Here are some additional resources that you can use to learn more about HTML & CSS.
+These are some additional resources that you can use to make your site even better!
 
 - [HTML Dog](http://www.htmldog.com/guides/html/beginner/): _Very beginner focused. If you're not sure which one to choose, pick this one._
 - [Free Code Camp](http://www.freecodecamp.com/map): _Interactive and very methodical._
 - [Treehouse](https://teamtreehouse.com/library/html/introduction/): _Their videos are extremely comprehensive and thorough._
+
+## Part VI: Sharing with the Community
+
+Now that you have finished building a website, you should share your beautiful creation --- because your site is on the internet, you can share it with anyone who is also online! Remember, it's as easy as giving them your URL: `USERNAME.github.io`!
+
+You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the world wide Hack CLub community there is no better place to do that than on Slack.
+
+1. In a new tab, open and follow [these directions][slack] to signup for our Slack.
+2. Join your club's channel by asking your club leader for the name of the channel, and post the link to your website in your club's channel.
+3. Then, post the link to the [`#shipit`](https://hackclub.slack.com/messages/shipit) channel to share it with everyone!
+
+[slack]: https://slack.hackclub.com/
