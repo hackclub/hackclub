@@ -72,7 +72,7 @@ We'll also need to attach our JavaScript file, `main.js`. Add this below the lin
 </body>
 ```
 
-Now we'll save (with shortcut: `CTRL+s` / `Command+s`) and open Live Preview (`Preview` > `Live Preview`).
+Now we'll save (with shortcut: <kbd>CTRL+s</kbd> / <kbd>Cmd+s</kbd>) and open Live Preview (`Preview` > `Live Preview`).
 
 ### Priming the JS File
 
@@ -255,7 +255,7 @@ Using this incrementing `y` variable as our y-coordinate is how we're able to dr
 
 Save and refresh Live Preview to check it out!
 
-Now that we've done some work, let's back it up by committing. This will make sure we have a record of everything we've done in case part of our code gets deleted or lost. Make sure all of your files are saved. Then, head on over to the terminal in Cloud9 by pressing `alt+t` and type the following commands (pressing Enter after each one):
+Now that we've done some work, let's back it up by committing. This will make sure we have a record of everything we've done in case part of our code gets deleted or lost. Make sure all of your files are saved. Then, head on over to the terminal in Cloud9 by pressing <kbd>alt+t</kbd> and type the following commands (pressing <kbd>enter</kbd> after each one):
 
 - `git add --all`
 - `git commit -m "Add geometric_pattern project"`
