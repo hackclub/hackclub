@@ -205,7 +205,7 @@ We're going to be using a terminal to do this, but you might know it as that-thi
 
 Using the terminal allows us to do things on computers which you can't usually do with a standard graphical user interface. We don't expect you to be a terminal master by the end of this tutorial, but with this initial exposure hopefully you'll be able to continue learning more about it over time!
 
-In Cloud9, press `Alt + t` (`option + t` on Mac) on the keyboard. This is how we open the terminal on Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
+In Cloud9, press <kbd>Alt + t</kbd> (<kbd>option + t</kbd> on Mac) on the keyboard. This is how we open the terminal on Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
 
 - `git add --all` (then press enter)
 - `git commit -m "Create personal website"` (then press enter)
