@@ -413,7 +413,7 @@ How are we going to get our `draw()` function to stop displaying our game, and i
 
 Well, one way is to split it into two modes: game over, and game not over, and say "if the game has ended, then show game over screen, otherwise, show the gameplay screen," and we can do this with a flag that keeps track of whether or not the game has ended.
 
-Let's add in a flag, initialize it in `setup()`, and edit our `draw()` function. We'll also be exchanging out calling `gameOver()` directly when enemy and player collide, for a line that toggles the flag instead. That is, we'll switch the flag's value from `false` (game is not over) to `true` (game is over).
+Let's add in a flag, initialize it in `setup()`, and edit our `draw()` function. We'll also be exchanging out calling `gameOver()` directly when the enemy and player collide for a line that toggles the flag instead. That is, we'll delete `gameOver()` from our `if` block and instead switch the flag's value from `false` (game is not over) to `true` (game is over).
 
 ```js
 var isGameOver;
