@@ -177,7 +177,7 @@ following:
 >
 > - By the end of the first meeting, everyone has built their first website and
 >   put it online.
-> - By the end of the third meeting, everyone has build a website that can call
+> - By the end of the third meeting, everyone has built a website that can call
 >   and text your phone.
 > - By the fifth meeting, everyone has built their first game and has put it
 >   online.
@@ -306,7 +306,7 @@ The name game is a simple icebreaker activity that will warm the atmosphere and
 make club members more comfortable around each other. This will be especially
 helpful to freshman, who probably don't know people from the higher grades.
 
-Have the club members gather in large circle. Start by saying your name and
+Have the club members gather in a large circle. Start by saying your name and
 creating a mnemonic for it (e.g., "Hey everyone, I'm Zach. Zany Zach."). Then
 have the person to your left do the same and then repeat what you said (e.g.,
 "I'm Jolly Jane. And he is Zany Zach"). Then have the person to their left do
@@ -429,7 +429,7 @@ use it. [Click here][demo] for an example of what a project demo looks like
 
 This'll basically be the same as the free-form hacking section in the first
 meeting. Members will continue building their websites. Your role is to foster
-an environment where people are comfortable for asking for help.
+an environment where people are comfortable asking for help.
 
 Just like in the first meeting, when people do have questions, be eager to help
 them out. It's also a good idea to put on an upbeat playlist (but again, not
@@ -496,7 +496,7 @@ Template][hack_day_template]. To use the presentations:
        or two standard examples of what the workshop will produce, and then one
        or two examples of what it would look like to expand on the
        workshop, as inspiration.
-     - Include a link at the end to the workshop on
+     - Include a link at the end of the workshop to
        `workshops.hackclub.com/[WORKSHOP]`.
    - For Hack Day:
      - Add the images corresponding to the workshop started in the previous
@@ -572,7 +572,7 @@ time, the most important thing for you to do is create an environment where
 people are comfortable asking for help.
 
 When people do have questions, be eager to help them out. You want to set the
-example that asking for help is a good thing. It's also good idea to turn the
+example that asking for help is a good thing. It's also a good idea to turn the
 music back on (not too loud, people should feel comfortable talking).
 
 #### Next Meeting Reminder
@@ -621,6 +621,6 @@ You'll want to do the same thing you did in the second meeting to run demos.
 
 - Five minutes before the meeting is over, make sure to hit the last slide in
   the presentation and tell everyone the time and place for the next meeting.
-- Let everyone know they’ll be doing a new workshop next time, and give an
+- Let everyone know they’ll be doing a new workshop next time, and give a
   brief and enticing description.
 - Thank them for coming!
