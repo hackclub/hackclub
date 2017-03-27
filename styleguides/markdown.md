@@ -123,20 +123,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Keyboard input should be denoted with the [`<kbd>` tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd). Multiple keys pressed at once should be delimited by a `+` with no spaces.
 
 ```
-Now we'll save (with shortcut: <kbd>Ctrl+s</kbd> / <kbd>Cmd+s</kbd>) and open
+Now we'll save (with shortcut: <kbd>Ctrl</kbd>+<kbd>s</kbd> / <kbd>Cmd</kbd>+<kbd>s</kbd>) and open
 Live Preview.
 ```
 
 Keys should be in title case, unless they are individual letters.
 
-| Key               | Humanized Name |
-| -----------       | -------------- |
-| <kbd>Ctrl</kdb>   | Control        |
-| <kbd>Alt</kdb>    | Alt            |
-| <kbd>Shift</kdb>  | Shift          |
-| <kbd>Enter</kdb>  | Enter          |
-| <kbd>s</kdb>      | s              |
-| <kbd>Alt+F4</kdb> | Alt F4         |
+| Key                          | Humanized Name |
+| -----------                  | -------------- |
+| <kbd>Ctrl</kdb>              | Control        |
+| <kbd>Alt</kdb>               | Alt            |
+| <kbd>Shift</kdb>             | Shift          |
+| <kbd>Enter</kdb>             | Enter          |
+| <kbd>s</kdb>                 | s              |
+| <kbd>Alt</kbd>+<kbd>F4</kdb> | Alt F4         |
 
 ## Tables
 
