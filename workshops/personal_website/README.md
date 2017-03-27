@@ -119,7 +119,7 @@ Before proceeding, we'll briefly go over what this template means. HTML works by
 
 ### 2) Previewing the Page
 
-Let's check out what our HTML file looks like in Live Preview! First, we'll save the file by clicking "File" → "Save" (or use the shortcut <kbd>CtrlCTRL+s</kbd> / <kbd>Command+s</kbd>). You'll need to do this each time you want to view he preview of your project. Then, you can preview what the website looks like by clicking "Preview" → "Live Preview File"
+Let's check out what our HTML file looks like in Live Preview! First, we'll save the file by clicking "File" → "Save" (or use the shortcut <kbd>Ctrl+s</kbd> / <kbd>Command+s</kbd>). You'll need to do this each time you want to view he preview of your project. Then, you can preview what the website looks like by clicking "Preview" → "Live Preview File"
 
 ![](img/c9_live_preview.gif)
 
