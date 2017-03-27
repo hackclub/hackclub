@@ -451,8 +451,8 @@ Like with previous workshops, let's set up a link that you can share with others
   - `git commit -am "Thugify workshop"`
   - `git push origin master`
 2. GitHub will now ask you for your username and password.
-  - Go ahead and enter your username and then press the enter.
-  - Then enter your password and press enter. _Note that the characters don't show up on the screen but rest assured, you are still typing._
+  - Go ahead and enter your username and then press the <kbd>enter</kbd> key.
+  - Then enter your password and press <kbd>enter</kbd>. _Note that the characters don't show up on the screen but rest assured, you are still typing._
 3. Now try to view your game by going to `username.github.io/thugify`
 
    > Make sure to change `username` to your own username
