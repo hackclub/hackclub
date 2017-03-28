@@ -28,7 +28,7 @@ We're looking to attend events so that we can improve the awareness of the Hack 
 - Talk during opening ceremony
 - Have a table to pass out stickers
 
-**We do not provide:**
+**We are not looking to provide:**
 
 - Financial support
 - Company contacts
