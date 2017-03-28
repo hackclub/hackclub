@@ -58,7 +58,7 @@ Here's a template response:
 ```md
 Hey NAME,
 
-Thanks for reaching out! We don't usually fiscally sponsor hackathons, but we'd love to partner with you. We can provide mentors/stickers and run a workshop for beginner/entry level coders.
+Thanks for reaching out! We don't fiscally sponsor hackathons, but we'd love to partner with you. We can provide mentors/stickers and run a workshop for beginner/entry level coders.
 
 Are you available to chat? Would love to hop on a phone call sometime over the next week to figure out the details. How about at INSERT_TIME?
 
