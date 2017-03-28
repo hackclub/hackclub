@@ -24,7 +24,7 @@ We're looking to help spread hacker ethos and technical knowledge at these event
 
 - Mentors
 - Workshops
-- Hack Club's logo on hackathon's website
+- Hack Club's logo on the hackathon's website
 - Talk during opening ceremony
 - Have a table to pass out stickers
 
