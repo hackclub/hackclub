@@ -18,7 +18,7 @@ Hackathon sponsorships should be tracked in the `Hackathons` Streak pipeline. Ju
 
 ## Goals Of Sponsorship For Hack Club
 
-We're looking to help spread hacker ethos and technical knowledge at these events.
+We're looking to attend events so that we can improve the awareness of the Hack Club brand in the Hackathon community, and by doing so attract more high quality applications.
 
 **We are looking to provide/receive:**
 
