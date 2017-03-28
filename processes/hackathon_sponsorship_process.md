@@ -53,7 +53,7 @@ Here's a list of the box fields:
 
 Streak Boxes should start in this stage. This is for tracking hackathons that have reached out to us.
 
-Here's a template response:
+Here's a template response for hackathons that are not hosted by a Hack Club:
 
 ```md
 Hey NAME,
@@ -65,6 +65,8 @@ Are you available to chat? Would love to hop on a phone call sometime over the n
 Looking forward to it,
 YOUR_NAME
 ```
+
+A template response for hackathons hosted by a Hack Club is not provided because each response will be different based on your relationship with the organizers.
 
 ### Responded
 
