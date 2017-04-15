@@ -12,7 +12,7 @@ There are three tiers of workshops:
 
 - **Core**: Workshops ready to be run in club meetings.
 - **Experimental**: Anything in progress: from a half-formed idea, to a workshop missing its conclusion.
-- **Deprecated**: Workshops no longer actively supported by Hack Club and may contain errors, bugs, and monsters.
+- **Retired**: Workshops no longer actively supported by Hack Club and may contain errors, bugs, and monsters.
 
 If you're interested in writing or contributing to a workshop, you can get started by checking out [the contribution guide](CONTRIBUTING.md) -- or ask us in `#meta` on the Slack.
 
@@ -63,7 +63,7 @@ _These workshops are either unfinished or untested._
 | [Ajar.io][ajar]                            | JavaScript                               | A clone of Agar.io                                                               | [@Bogidon][Bogidon]                                                                                                    |
 | [Chat][chat]                               | JavaScript & Firebase                    | A real-time chat application                                                     | Hack Club staff                                                                                                        |
 
-### Deprecated Workshops
+### Retired Workshops
 
 _:warning: These workshops are no longer maintained. They may contain errors and are not recommended for club use. Here be dragons._
 
