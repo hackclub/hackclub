@@ -11,7 +11,7 @@ Our workshops are a great way to get started! We recommend that you go through t
 There are three tiers of workshops:
 
 - **Core**: Workshops ready to be run in club meetings.
-- **Sandbox**: Anything in progress: from a half-formed idea, to a workshop missing its conclusion.
+- **Experimental**: Anything in progress: from a half-formed idea, to a workshop missing its conclusion.
 - **Deprecated**: Workshops no longer actively supported by Hack Club and may contain errors, bugs, and monsters.
 
 If you're interested in writing or contributing to a workshop, you can get started by checking out [the contribution guide](CONTRIBUTING.md) -- or ask us in `#meta` on the Slack.
@@ -54,7 +54,7 @@ You'll start off by building your first website and will eventually make your wa
 | [Swiper][swiper]                             | Swift (requires OS X)                    | Make a fun and addicting iOS game using Swift and SpriteKit                      | [@zach-cmiel][zachcmiel]                                                                                               |
 | [Twine][twine]                               | Twine (web interface)                    | Build a text adventure game                                                      | [@remixz][remixz]                                                                                                      |
 
-### Sandbox Workshops
+### Experimental Workshops
 
 _These workshops are either unfinished or untested._
 
