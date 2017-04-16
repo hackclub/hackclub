@@ -205,10 +205,10 @@ We're going to be using a terminal to do this, but you might know it as that-thi
 
 Using the terminal allows us to do things on computers which you can't usually do with a standard graphical user interface. We don't expect you to be a terminal master by the end of this tutorial, but with this initial exposure hopefully you'll be able to continue learning more about it over time!
 
-In Cloud9, press `Alt + t` (`option + t` on Mac) on the keyboard. This is how we open the terminal on Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
+In Cloud9, press <kbd>Alt + t</kbd> (<kbd>option + t</kbd> on Mac) on the keyboard. This is how we open the terminal on Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
 
-- `git add --all` (then press enter)
-- `git commit -m "Create personal website"` (then press enter)
+- `git add --all` (then press <kbd>enter</kbd>)
+- `git commit -m "Create personal website"` (then press <kbd>enter</kbd>)
 
 Now, if you type `git log`, you'll be able to see your first commit! Think of git as a way to save your project in stages, much like how a game allows you to save different versions and go back.
 
@@ -301,8 +301,8 @@ Here is the transformation that your stylesheet will have undergone at the end o
 Now let's save and look at our work. Ah, it is truly beautiful to behold. Now let's commit the changes.
 
 Remember to save both `index.html` and `styles.css`! We'll once again use the terminal in Cloud9 to persist our changes with git.
-- `git add --all` (then press enter)
-- `git commit -m "Add styling to personal website"` (then press enter)
+- `git add --all` (then press <kbd>enter</kbd>)
+- `git commit -m "Add styling to personal website"` (then press <kbd>enter</kbd>)
 
 ![](img/celebrate_harry_potter.gif)
 
@@ -311,9 +311,9 @@ Remember to save both `index.html` and `styles.css`! We'll once again use the te
 Right now we can only see our website on our own computer. Let's get our website online!
 
 1. In the Cloud9 terminal, we'll push our commits to our GitHub repository:
-  - `git push` (then press enter)
-    - Enter your GitHub username (then press enter).
-    - Enter your GitHub password (then press enter). _The characters won't show up on the screen, but rest assured, they are still being typed._
+  - `git push` (then press <kbd>enter</kbd>)
+    - Enter your GitHub username (then press <kbd>enter</kbd>).
+    - Enter your GitHub password (then press <kbd>enter</kbd>). _The characters won't show up on the screen, but rest assured, they are still being typed._
 2. Now try to view the website by going to `USERNAME.github.io` (replace `USERNAME` with your actual GitHub username)
 
 #### Celebrate!
