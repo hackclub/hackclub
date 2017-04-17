@@ -55,16 +55,14 @@ Streak Boxes should start in this stage. This is for tracking hackathons that ha
 
 Here's a template response for hackathons that are not hosted by a Hack Club:
 
-```md
-Hey NAME,
-
-Thanks for reaching out! We don't fiscally sponsor hackathons, but we'd love to partner with you. We can provide mentors/stickers and run a workshop for beginner/entry level coders.
-
-Are you available to chat? Would love to hop on a phone call sometime over the next week to figure out the details. How about at INSERT_TIME?
-
-Looking forward to it,
-YOUR_NAME
-```
+> Hey `NAME`,
+>
+> Thanks for reaching out! We don't fiscally sponsor hackathons, but we'd love to partner with you. We can provide mentors/stickers and run a workshop for beginner/entry level coders.
+>
+> Are you available to chat? Would love to hop on a phone call sometime over the next week to figure out the details. How about at `INSERT_TIME`?
+>
+> Looking forward to it,
+> `YOUR_NAME`
 
 A template response for hackathons hosted by a Hack Club is not provided because each response will be different based on your relationship with the organizers.
 
