@@ -31,7 +31,7 @@ We're looking to attend events so that we can improve the awareness of the Hack 
 **We are not looking to provide:**
 
 - Financial support
-- Company contacts
+- Help raising money for the hackathon (ex. introducing them to potential sponsors)
 
 ## Fields
 
