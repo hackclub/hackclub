@@ -1,8 +1,8 @@
 # Notes to Self
 
-**DEPRECATED**
+**RETIRED**
 
-_**This workshop has been deprecated and is no longer maintained.**_
+_**This workshop has been retired and is no longer maintained.**_
 
 ---
 
