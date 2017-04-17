@@ -31,10 +31,9 @@ These are the people who are officially part of the organization, but we want yo
 
 | Name                | Position                         | Link                          | Email                 |
 | ------------------- | -------------------------------- | ----------------------------- | --------------------- |
+| Kyle Emile          | Director of Operations           | http://www.kyleemile.com/     | kyle@hackclub.com     |
 | Harrison Shoebridge | Intern                           | https://harrison.tech         | harrison@hackclub.com |
-| Matthew Kwong       | Intern                           | https://matthewkwong.me       | matt@hackclub.com     |
 | Max Wofford         | Volunteer                        | https://maxwofford.com        | max@hackclub.com      |
-| Selynna Sun         | Hack Camp Organizer & Instructor | http://www.selynnasun.com     | selynna@hackclub.com  |
 | Zach Latta          | Executive Director               | https://zachlatta.com         | zach@hackclub.com     |
 
 ## Mission
