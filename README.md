@@ -6,7 +6,6 @@ Links:
 
 - [GitHub Teams](github_teams.md) - How we manage our GitHub teams
 - Protocols
-  - [Hiring](processes/hiring_protocol.md)
   - [Club leader onboarding](processes/club_leader_onboarding_protocol.md)
   - [Staff onboarding](processes/staff_onboarding_protocol.md)
 - Styleguides
