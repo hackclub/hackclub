@@ -33,7 +33,7 @@ These are the people who are officially part of the organization, but we want yo
 | ------------------- | -------------------------------- | ----------------------------- | --------------------- |
 | Kyle Emile          | Director of Operations           | http://www.kyleemile.com/     | kyle@hackclub.com     |
 | Harrison Shoebridge | Intern                           | https://harrison.tech         | harrison@hackclub.com |
-| Max Wofford         | Volunteer                        | https://maxwofford.com        | max@hackclub.com      |
+| Max Wofford         | Software Engineer                | https://maxwofford.com        | max@hackclub.com      |
 | Zach Latta          | Executive Director               | https://zachlatta.com         | zach@hackclub.com     |
 
 ## Mission
