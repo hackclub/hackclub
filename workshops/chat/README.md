@@ -157,7 +157,7 @@ var chatData = firebase.database().ref();
 
 Now that we've allowed our Firebase project to be accessed by our Cloud9 project, we can perform actions on our Firebase database through our `main.js`.
 
-First, we'll write a function that, when you press enter after typing a message, will push your name and message to the Firebase reference to be stored within the database.
+First, we'll write a function that, when you press <kbd>enter</kbd> after typing a message, will push your name and message to the Firebase reference to be stored within the database.
 
 Let's create the function, and attach it to a key press on the message input:
 
@@ -168,11 +168,11 @@ function pushMessage(event) {
 $('#messageInput').keypress(pushMessage);
 ```
 
-Now we will say "if the event's key code is that of the enter key, do stuff" by adding a conditional.
+Now we will say "if the event's key code is that of the <kbd>enter</kbd> key, do stuff" by adding a conditional.
 
 **What's a key code?** Every key on your keyboard has a unique code, so we can tell which key a user pressed by the number that is returned.
 
-The key code of the enter key is 13, so that's what we will be comparing in the conditional.
+The key code of the <kbd>enter</kbd> key is 13, so that's what we will be comparing in the conditional.
 
 Let's add that to our function:
 

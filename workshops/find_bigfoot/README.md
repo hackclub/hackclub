@@ -44,7 +44,7 @@ Type the standard HTML template into `index.html`:
 
 ### Open the Live Preview
 
-1. Click **File > Save** or **Ctrl + S** to save the file.
+1. Click **File > Save** or <kbd>Ctrl</kbd>+<kbd>s</kbd> to save the file.
 2. Click **Preview > Live Preview File** to open a live preview of the web page. Currently it is blank, but that will change soon!
 
 ### Get Images for the Game

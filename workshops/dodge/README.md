@@ -70,7 +70,7 @@ Great, so now we have `index.html` and `game.js`. `index.html` is loading p5.js 
 </html>
 ```
 
-Now, save using the shortcut `Command+s` or `CTRL+s` and open up live preview by clicking `Preview > Live Preview`. Right now it's just a blank page, but we'll be changing that soon enough :wink:.
+Now, save using the shortcut <kdb>Command</kbd>+<kbd>s</kbd> or <kbd>Ctrl</kbd>+<kbd>s</kbd> and open up live preview by clicking `Preview > Live Preview`. Right now it's just a blank page, but we'll be changing that soon enough :wink:.
 
 ## Part II. The External JS File
 
