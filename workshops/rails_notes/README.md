@@ -8,7 +8,7 @@ We’re using a programming language called [Ruby](http://ruby-lang.org), and a 
 
 A few quick terms you should know before we get started:
 
-- **Database:** a place for computers to store data with fast searching. There are many kinds of databases, such as MySQL, Redis, MongoDB, SQLite, and ElasticSearch. We’ll be using PostgresQL in this workshop.
+- **Database:** a place for computers to store data with fast searching. There are many kinds of databases, such as MySQL, Redis, MongoDB, SQLite, and ElasticSearch. We’ll be using PostgreSQL in this workshop.
 - **Backend:** the side of the website that runs on the server, saving data to the database and returning webpages.
 - **Frontend:** the side of the website written in HTML, CSS, and JS that users interact with.
 - **Request:** a visit to a specific URL.
