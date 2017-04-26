@@ -92,7 +92,7 @@ ___
 
 While our Notes app has some good functionality, it's not very fun to use. Let's customize it! Here are a few things you can easily change—it's all up to you.
 
-- **Root page.** Open `config/routes.rb` and add a root url, like this:
+- **Root page.** Open `config/routes.rb` and add a root URL, like this:
 
 ```rb
 Rails.application.routes.draw do
