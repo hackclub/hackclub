@@ -60,6 +60,7 @@ _These workshops are either unfinished or untested._
 
 | Workshop                                   | Technologies                             | What You Build                                                                   | Author                                                                                                                 |
 | ------------------------------------------ | ---------------------------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [Rails Notes][rails_notes]                 | Ruby on Rails                            | Build a simple notes app with Rails.                                             | [@lachlanjc][lachlanjc]                                                                                                |
 | [Ajar.io][ajar]                            | JavaScript                               | A clone of Agar.io                                                               | [@Bogidon][Bogidon]                                                                                                    |
 | [Chat][chat]                               | JavaScript & Firebase                    | A real-time chat application                                                     | Hack Club staff                                                                                                        |
 
@@ -90,6 +91,7 @@ _:warning: These workshops are no longer maintained. They may contain errors and
 [jkwok91]: https://github.com/jkwok91
 [jonleung]: https://github.com/jonleung
 [samayshamdasani]: https://github.com/samayshamdasani
+[lachlanjc]: https://github.com/lachlanjc
 
 ## Contributing to the Workshops
 
@@ -112,6 +114,7 @@ Interested in contributing to our workshops? Look [here](GUIDELINES.md) and [her
 [platformer]: platformer/
 [portfolio]: portfolio/
 [preface]: PREFACE.md
+[rails_notes]: rails_notes/
 [slack]: slack/
 [soccer]: soccer/
 [swiper]: swiper/
