@@ -69,7 +69,7 @@ A **View** is the content of an actual webpage, like the HTML we've been writing
 <div><%= note.content %></div>
 ```
 
-A **Controller** connects *requests* (like for the `/notes` page to your *view*, usually referencing a model. A Controller has (typically several) actions, which are different ways to interact with the `Note`. Here are the standard pages:
+A **Controller** connects *requests* (like for the `/notes` page) to your *view*, usually referencing a model. A Controller has (typically several) actions, which are different ways to interact with the `Note`. Here are the standard pages:
 
 - **index** — like your `index.html` file. This page usually lists all the items (like notes), from which you can tap to open one individually. URL: `/notes`
 - **show** – a page for an individual item (like a note), shown in full detail. URL: `/notes/1`
