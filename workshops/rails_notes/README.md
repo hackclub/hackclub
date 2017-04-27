@@ -68,7 +68,7 @@ A **View** is the content of an actual webpage, like the HTML we've been writing
 <div><%= note.content %></div>
 ```
 
-A **Controller** connects *requests* (like for the `/notes` page) to your *view*, usually referencing a model. A Controller has (typically several) actions, which are different ways to interact with the `Note`. Here are the standard pages:
+A **Controller** connects *requests* (like for the `/notes` page to your *view*, usually referencing a model. A Controller has (typically several) actions, which are different ways to interact with the `Note`. Here are the standard pages:
 
 - **index** — like your `index.html` file. This page usually lists all the items (like notes), from which you can tap to open one individually. URL: `/notes`
 - **show** – a page for an individual item (like a note), shown in full detail. URL: `/notes/1`
@@ -89,7 +89,7 @@ ___
 
 We're building an app for keeping notes. We'll need a `Note` model, the `NotesController` so we can see our notes in our browser, and views for our controller to render. That's a lot to write, but Rails can help out!
 
-Return to the first tab in your terminal (where your server is not running)and run this command: `rails generate scaffold Note name:text content:text`
+Return to the first tab in your terminal (the one in which your server is not running) and run this command: `rails generate scaffold Note name:text content:text`
 
 Wow! That's a lot of things. What did we just do?
 
