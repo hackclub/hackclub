@@ -29,18 +29,19 @@ Great. Unfortunately there's a bit of setup we have to do to get the database ru
 2. Create the database: `psql -c "create database notes_development owner=ubuntu"`
 3. Open `notes/config/database.yml` and replace the `development` section with this: (feel free to copy + paste)
 
-	```yml
-	development:
-	  adapter: postgresql
-	  encoding: SQL_ASCII
-	  database: notes_development
-	  pool: 5
-	  username: ubuntu
-	  password: password
-	```
+     ```yml
+     development:
+       adapter: postgresql
+       encoding: SQL_ASCII
+       database: notes_development
+       pool: 5
+       username: ubuntu
+       password: password
+     ```
+
 4. We're making changes to our setup, so back in our terminal, let's commit to Git:
-	1. `git add --all`
-	2. `git commit -m "Start Notes project"`
+   1. `git add --all`
+   2. `git commit -m "Start Notes project"`
 5. Connect the Rails app to its database. We'll need to run this command from inside our new application's directory (folder), so run `cd notes`. Then: `rails db:migrate`
 
 Finally, let's start our app's server. Open a new terminal tab (click the ⨁ icon and *New Terminal*). Again, this needs to be inside the Rails app, so `cd notes`. Now: `rails s -b $IP -p $PORT`
@@ -103,7 +104,7 @@ In your Preview, add `notes` to the end of the URL box, so it says `https://proj
 
 ![](img/rails-3.png)
 
-Here's your basic app! Click on "New Note", write in the boxes, and submit the form with the "Create Note" button. Your note has been saved in the database! Click "Back" and you'll see it in your note list. Pretty cool, right? 😀 You can edit your note or destroy (delete) it, and add more notes.
+Here's your basic app! Click on "New Note", write in the boxes, and submit the form with the "Create Note" button. Your note has been saved in the database! Click "Back" and you'll see it in your note list. Pretty cool, right? You can edit your note or destroy (delete) it, and add more notes.
 
 It's not required, but poke around and read some of the files Rails wrote for you. What's in your model (`app/models/note.rb`)? What about your controller (`app/controllers/notes_controller.rb`)? The views (`app/views/notes/index.html.erb`, `app/views/notes/show.html.erb`)? Read some of the code, even if you can't yet understand it all.
 
@@ -140,12 +141,12 @@ ___
 
 1. Create an account on [Heroku](https://heroku.com), a service for deploying apps.
 2. We'll need to install Heroku's tools on our command line.
-	1. `sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"`
-	2. `curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -`
-	3. `sudo apt-get update && sudo apt-get install heroku —yes`
+   1. `sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"`
+   2. `curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -`
+   3. `sudo apt-get update && sudo apt-get install heroku —yes`
 3. Log in to your Heroku account: `heroku login`
 4. Create a new Heroku app: `heroku create` (or, if you want to use a custom name, `heroku create notes-MYNAME`)
-	- Copy the URL there. When we deploy, your app will be there.
+   - Copy the URL there. When we deploy, your app will be there.
 5. Deploy! `git push heroku master`
 6. Run the database migration: `heroku run rails db:migrate`
 
