@@ -60,6 +60,7 @@ _These workshops are either unfinished or untested._
 
 | Workshop                                   | Technologies                             | What You Build                                                                   | Author                                                                                                                 |
 | ------------------------------------------ | ---------------------------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [Rails Notes][rails_notes]                 | Ruby on Rails                   | Build a simple notes app with Rails.       | [@lachlanjc][lachlanjc]                                                                                                        |
 | [Ajar.io][ajar]                            | JavaScript                               | A clone of Agar.io                                                               | [@Bogidon][Bogidon]                                                                                                    |
 | [Chat][chat]                               | JavaScript & Firebase                    | A real-time chat application                                                     | Hack Club staff                                                                                                        |
 
