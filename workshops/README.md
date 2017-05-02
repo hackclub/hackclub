@@ -45,7 +45,7 @@ You'll start off by building your first website and will eventually make your wa
 | [Cringe 101][cringe_101]                     | HTML & CSS                               | Cringe 101 will give you the tools to create the most cringiest website ever.    | [@nguyenbrian][nguyenbrian], [@JevinSidhu][JevinSidhu], [@uditdesai][uditdesai], and [@vaibhavyadaram][vaibhavyadaram] |
 | [Dashboard][dashboard]                       | HTML, CSS, and JavaScript                | Build a personal dashboard with the weather and latest news                      | [@samayshamdasani][samayshamdasani]                                                                                      |
 | [That Was Easy][that_was_easy]               | HTML, CSS, and JavaScript                | Website with clickable buttons that make sounds                                  | [@jkwok91][jkwok91]                                                                                                    |
-| [Thugify][thugify]                           | JavaScript                               | Learn to dynamically modify webpages with jQuery                                 | [@nguyenbrian][nguyenbrian], [@JevinSidhu][JevinSidhu], [@uditdesai][uditdesai], and [@vaibhavyadaram][vaibhavyadaram] |
+| [The Dawgshop][dawgshop]                     | JavaScript                               | Learn to dynamically modify webpages with jQuery, dawg                           | [@nguyenbrian][nguyenbrian], [@JevinSidhu][JevinSidhu], [@uditdesai][uditdesai], and [@vaibhavyadaram][vaibhavyadaram] |
 | [Geometric Pattern][geometric_pattern]       | JavaScript & p5.js                       | Super cool geometric pattern with Processing                                     | [@jkwok91][jkwok91]                                                                                                    |
 | [Find Bigfoot][find_bigfoot]                 | HTML & CSS, JavaScript                   | A really simple game about finding Bigfoot                                       | [@ad510][ad510]                                                                                                        |
 | [Dodge][dodge]                               | JavaScript                               | A bullet dodging game                                                            | Hack Club staff                                                                                                        |
@@ -103,6 +103,7 @@ Interested in contributing to our workshops? Look [here](GUIDELINES.md) and [her
 [collaborative_sketch]: collaborative_sketch/
 [cringe_101]: cringe_101/
 [dashboard]: dashboard/
+[dawgshop]: dawgshop/
 [dodge]: dodge/
 [find_bigfoot]: find_bigfoot/
 [geometric_pattern]: geometric_pattern/
@@ -119,6 +120,5 @@ Interested in contributing to our workshops? Look [here](GUIDELINES.md) and [her
 [soccer]: soccer/
 [swiper]: swiper/
 [that_was_easy]: that_was_easy/
-[thugify]: thugify/
 [twilio]: twilio/
 [twine]: twine/
