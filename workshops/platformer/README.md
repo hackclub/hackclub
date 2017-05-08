@@ -55,7 +55,7 @@ Load in p5.js in script tag in **body**. Beneath that, load in p5.play.js in ano
 ```html
 <body>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.min.js"></script>
-  <script type="text/javascript" src="https://cdn.rawgit.com/molleindustria/p5.play/master/lib/p5.play.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/molleindustria/p5.play/1bf3c72fe6b647617373b9b3ea3e419baaef8cfd/lib/p5.play.js"></script>
   <script type="text/javascript" src="game.js"></script>
 </body>
 ```
