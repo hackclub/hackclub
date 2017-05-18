@@ -298,9 +298,10 @@ Here is the transformation that your stylesheet will have undergone at the end o
 
 ![](img/c9_css_progression.gif)
 
-Now let's save and look at our work. Ah, it is truly beautiful to behold. Now let's commit the changes.
+Now let's save and look at our work. Ah, it is truly beautiful to behold. Now let's commit our changes.
 
 Remember to save both `index.html` and `styles.css`! We'll once again use the terminal in Cloud9 to persist our changes with git.
+
 - `git add --all` (then press <kbd>enter</kbd>)
 - `git commit -m "Add styling to personal website"` (then press <kbd>enter</kbd>)
 
