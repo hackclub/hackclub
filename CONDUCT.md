@@ -108,4 +108,4 @@ Changes to the Code of Conduct (including to the members of the Working Group) s
 
 ## Acknowledgments
 
-This was adapted from [Go's Code of Conduct] (https://github.com/golang/go/commit/aa487e66f869785837275ee20441a53888a51bb2). It is to be noted that many parts of Go's Code of Conduct is adopted from the Code of Conduct documents of the Django, FreeBSD, and Rust projects.
+This was adapted from [Go's Code of Conduct](https://github.com/golang/go/commit/aa487e66f869785837275ee20441a53888a51bb2). It is to be noted that many parts of Go's Code of Conduct is adopted from the Code of Conduct documents of the Django, FreeBSD, and Rust projects.
