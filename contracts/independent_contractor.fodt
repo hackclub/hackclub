@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
+ <office:meta><dc:date>2015-06-22T06:40:07.863712128</dc:date><meta:editing-cycles>5</meta:editing-cycles><meta:editing-duration>PT27M27S</meta:editing-duration><meta:generator>LibreOffice/4.4.2.2$Linux_X86_64 LibreOffice_project/40m0$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="4" meta:paragraph-count="45" meta:word-count="1623" meta:character-count="10536" meta:non-whitespace-character-count="8958"/></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">50181</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">22673</config:config-item>
+   <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">20068</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">36234</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">50179</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">22671</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
+     <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ZoomFactor" config:type="short">100</config:config-item>
+     <config:config-item config:name="IsSelectedFrame" config:type="boolean">false</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="PrintFaxName" config:type="string"/>
+   <config:config-item config:name="PrintAnnotationMode" config:type="short">0</config:config-item>
+   <config:config-item config:name="PrintControls" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintPageBackground" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintProspect" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintSingleJobs" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintEmptyPages" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyParagraphMarkFormatToNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverMargin" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedSystemFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PropLineSpacingShrinksFirstLine" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintDrawings" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">274829</config:config-item>
+   <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="DoNotResetParaAttrsForNumFont" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintBlackFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="TableRowKeep" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerLineSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UseOldNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddExternalLeading" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="FloattableNomargins" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SurroundTextWrapSmall" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsLabelDocument" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintReversed" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IgnoreFirstLineIndentInNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTables" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrinterIndependentLayout" config:type="string">high-resolution</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
+   <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
+   <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
+   <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
+   <config:config-item config:name="Rsid" config:type="int">420829</config:config-item>
+   <config:config-item config:name="PrintProspectRTL" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
+   <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddParaTableSpacing" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrintHiddenText" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintTextPlaceholder" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrintGraphics" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="StylesNoDefault" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AddFrameOffsets" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="MathBaselineAlignment" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string"/>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">1</config:config-item>
+   <config:config-item config:name="PrintLeftPages" config:type="boolean">true</config:config-item>
+   <config:config-item-map-indexed config:name="ForbiddenCharacters">
+    <config:config-item-map-entry>
+     <config:config-item config:name="Language" config:type="string">ja</config:config-item>
+     <config:config-item config:name="Country" config:type="string">JP</config:config-item>
+     <config:config-item config:name="Variant" config:type="string"/>
+     <config:config-item config:name="BeginLine" config:type="string">!%),.:;?]}¢°'”‰′″℃、。々〉》」』】〕゛゜ゝゞ・ヽヾ！％），．：；？］｝｡｣､･ﾞﾟ￠</config:config-item>
+     <config:config-item config:name="EndLine" config:type="string">$([\{£¥‘“〈《「『【〔＄（［｛｢￡￥</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+   <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ooo:library-embedded ooo:name="Standard"/>
+   </ooo:libraries>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="Times New Roman" svg:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman"/>
+  <style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;" style:font-family-generic="swiss"/>
+  <style:font-face style:name="DejaVu Sans1" svg:font-family="&apos;DejaVu Sans&apos;" style:font-pitch="variable"/>
+  <style:font-face style:name="Liberation Serif" svg:font-family="&apos;Liberation Serif&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
+  <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;, Arial" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="Lucida Sans Unicode" svg:font-family="&apos;Lucida Sans Unicode&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="AR PL UMing CN" svg:font-family="&apos;AR PL UMing CN&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="FreeSans" svg:font-family="FreeSans" style:font-family-generic="system" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="graphic">
+   <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.1181in" draw:shadow-offset-y="0.1181in" draw:start-line-spacing-horizontal="0.1114in" draw:start-line-spacing-vertical="0.1114in" draw:end-line-spacing-horizontal="0.1114in" draw:end-line-spacing-vertical="0.1114in" style:flow-with-text="false"/>
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:letter-kerning="true" style:font-name-asian="AR PL UMing CN" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
+  </style:default-style>
+  <style:default-style style:family="paragraph">
+   <style:paragraph-properties fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="0.5in" style:writing-mode="page"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:font-name-asian="AR PL UMing CN" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="FreeSans" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+  </style:default-style>
+  <style:default-style style:family="table">
+   <style:table-properties table:border-model="collapsing"/>
+  </style:default-style>
+  <style:default-style style:family="table-row">
+   <style:table-row-properties fo:keep-together="auto"/>
+  </style:default-style>
+  <style:style style:name="Standard" style:family="paragraph" style:class="text">
+   <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" style:writing-mode="lr-tb"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" fo:font-size="12pt" fo:language="en" fo:country="US" style:font-name-asian="Times New Roman" style:font-family-asian="&apos;Times New Roman&apos;" style:font-family-generic-asian="roman" style:font-size-asian="12pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Times New Roman" style:font-family-complex="&apos;Times New Roman&apos;" style:font-family-generic-complex="roman" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+  </style:style>
+  <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_20_body" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.0835in" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;, Arial" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="14pt" style:font-name-asian="Lucida Sans Unicode" style:font-family-asian="&apos;Lucida Sans Unicode&apos;" style:font-family-generic-asian="swiss" style:font-pitch-asian="variable" style:font-size-asian="14pt" style:font-name-complex="DejaVu Sans1" style:font-family-complex="&apos;DejaVu Sans&apos;" style:font-pitch-complex="variable" style:font-size-complex="14pt"/>
+  </style:style>
+  <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
+   <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.0972in" loext:contextual-spacing="false" fo:line-height="120%"/>
+  </style:style>
+  <style:style style:name="List" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="list">
+   <style:text-properties style:font-name-complex="DejaVu Sans" style:font-family-complex="&apos;DejaVu Sans&apos;" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Caption" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
+   <style:paragraph-properties fo:margin-top="0.0835in" fo:margin-bottom="0.0835in" loext:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="DejaVu Sans" style:font-family-complex="&apos;DejaVu Sans&apos;" style:font-family-generic-complex="swiss" style:font-size-complex="12pt" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
+   <style:paragraph-properties text:number-lines="false" text:line-number="0"/>
+   <style:text-properties style:font-name-complex="DejaVu Sans" style:font-family-complex="&apos;DejaVu Sans&apos;" style:font-family-generic-complex="swiss"/>
+  </style:style>
+  <style:style style:name="Heading_20_1" style:display-name="Heading 1" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Standard" style:default-outline-level="1" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.0417in" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" fo:font-size="24pt" fo:font-style="normal" fo:font-weight="bold" style:letter-kerning="true" style:font-name-asian="Times New Roman" style:font-family-asian="&apos;Times New Roman&apos;" style:font-family-generic-asian="roman" style:font-size-asian="24pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Times New Roman" style:font-family-complex="&apos;Times New Roman&apos;" style:font-family-generic-complex="roman" style:font-size-complex="24pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_2" style:display-name="Heading 2" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Standard" style:default-outline-level="2" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.0417in" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" fo:font-size="18pt" fo:font-style="normal" fo:font-weight="bold" style:font-name-asian="Times New Roman" style:font-family-asian="&apos;Times New Roman&apos;" style:font-family-generic-asian="roman" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Times New Roman" style:font-family-complex="&apos;Times New Roman&apos;" style:font-family-generic-complex="roman" style:font-size-complex="18pt" style:font-style-complex="italic" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_3" style:display-name="Heading 3" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Standard" style:default-outline-level="3" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.0417in" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" fo:font-size="14pt" fo:font-style="normal" fo:font-weight="bold" style:font-name-asian="Times New Roman" style:font-family-asian="&apos;Times New Roman&apos;" style:font-family-generic-asian="roman" style:font-size-asian="14pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Times New Roman" style:font-family-complex="&apos;Times New Roman&apos;" style:font-family-generic-complex="roman" style:font-size-complex="14pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_4" style:display-name="Heading 4" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Standard" style:default-outline-level="4" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.0417in" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" fo:font-size="12pt" fo:font-style="normal" fo:font-weight="bold" style:font-name-asian="Times New Roman" style:font-family-asian="&apos;Times New Roman&apos;" style:font-family-generic-asian="roman" style:font-size-asian="12pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Times New Roman" style:font-family-complex="&apos;Times New Roman&apos;" style:font-family-generic-complex="roman" style:font-size-complex="12pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_5" style:display-name="Heading 5" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Standard" style:default-outline-level="5" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.0417in" loext:contextual-spacing="false"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" fo:font-size="10pt" fo:font-style="normal" fo:font-weight="bold" style:font-name-asian="Times New Roman" style:font-family-asian="&apos;Times New Roman&apos;" style:font-family-generic-asian="roman" style:font-size-asian="10pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Times New Roman" style:font-family-complex="&apos;Times New Roman&apos;" style:font-family-generic-complex="roman" style:font-size-complex="10pt" style:font-style-complex="italic" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_6" style:display-name="Heading 6" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Standard" style:default-outline-level="6" style:class="text">
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.0417in" loext:contextual-spacing="false"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" fo:font-size="8pt" fo:font-style="normal" fo:font-weight="bold" style:font-name-asian="Times New Roman" style:font-family-asian="&apos;Times New Roman&apos;" style:font-family-generic-asian="roman" style:font-size-asian="8pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Times New Roman" style:font-family-complex="&apos;Times New Roman&apos;" style:font-family-generic-complex="roman" style:font-size-complex="8pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="WW8Num1z0" style:family="text"/>
+  <style:style style:name="WW8Num1z1" style:family="text"/>
+  <style:style style:name="WW8Num1z2" style:family="text"/>
+  <style:style style:name="WW8Num1z3" style:family="text"/>
+  <style:style style:name="WW8Num1z4" style:family="text"/>
+  <style:style style:name="WW8Num1z5" style:family="text"/>
+  <style:style style:name="WW8Num1z6" style:family="text"/>
+  <style:style style:name="WW8Num1z7" style:family="text"/>
+  <style:style style:name="WW8Num1z8" style:family="text"/>
+  <style:style style:name="Default_20_Paragraph_20_Font" style:display-name="Default Paragraph Font" style:family="text"/>
+  <style:style style:name="Internet_20_link" style:display-name="Internet link" style:family="text">
+   <style:text-properties fo:color="#000080" fo:language="zxx" fo:country="none" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+  </style:style>
+  <style:style style:name="Frame" style:family="graphic">
+   <style:graphic-properties text:anchor-type="paragraph" svg:x="0in" svg:y="0in" style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content"/>
+  </style:style>
+  <style:style style:name="Graphics" style:family="graphic">
+   <style:graphic-properties text:anchor-type="paragraph" svg:x="0in" svg:y="0in" style:wrap="dynamic" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph" style:horizontal-pos="center" style:horizontal-rel="paragraph"/>
+  </style:style>
+  <style:style style:name="OLE" style:family="graphic">
+   <style:graphic-properties text:anchor-type="paragraph" svg:x="0in" svg:y="0in" style:wrap="dynamic" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph" style:horizontal-pos="center" style:horizontal-rel="paragraph"/>
+  </style:style>
+  <text:outline-style style:name="Outline">
+   <text:outline-level-style text:level="1" text:style-name="WW8Num1z0" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-0.3in" fo:margin-left="0.3in"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="2" text:style-name="WW8Num1z1" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-0.4in" fo:margin-left="0.4in"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="3" text:style-name="WW8Num1z2" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-0.5in" fo:margin-left="0.5in"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="4" text:style-name="WW8Num1z3" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-0.6in" fo:margin-left="0.6in"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="5" text:style-name="WW8Num1z4" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-0.7in" fo:margin-left="0.7in"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="6" text:style-name="WW8Num1z5" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-0.8in" fo:margin-left="0.8in"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="7" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.9in" fo:text-indent="-0.9in" fo:margin-left="0.9in"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="8" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1in" fo:text-indent="-1in" fo:margin-left="1in"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="9" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.1in" fo:text-indent="-1.1in" fo:margin-left="1.1in"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+   <text:outline-level-style text:level="10" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.2in" fo:text-indent="-1.2in" fo:margin-left="1.2in"/>
+    </style:list-level-properties>
+   </text:outline-level-style>
+  </text:outline-style>
+  <text:list-style style:name="WW8Num1">
+   <text:list-level-style-number text:level="1" text:style-name="WW8Num1z0" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-0.3in" fo:margin-left="0.3in"/>
+    </style:list-level-properties>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="2" text:style-name="WW8Num1z1" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-0.4in" fo:margin-left="0.4in"/>
+    </style:list-level-properties>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="3" text:style-name="WW8Num1z2" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-0.5in" fo:margin-left="0.5in"/>
+    </style:list-level-properties>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="4" text:style-name="WW8Num1z3" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-0.6in" fo:margin-left="0.6in"/>
+    </style:list-level-properties>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="5" text:style-name="WW8Num1z4" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-0.7in" fo:margin-left="0.7in"/>
+    </style:list-level-properties>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="6" text:style-name="WW8Num1z5" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-0.8in" fo:margin-left="0.8in"/>
+    </style:list-level-properties>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="7" text:style-name="WW8Num1z6" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-0.9in" fo:margin-left="0.9in"/>
+    </style:list-level-properties>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="8" text:style-name="WW8Num1z7" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-1in" fo:margin-left="1in"/>
+    </style:list-level-properties>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="9" text:style-name="WW8Num1z8" style:num-format="">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="nothing" fo:text-indent="-1.1in" fo:margin-left="1.1in"/>
+    </style:list-level-properties>
+   </text:list-level-style-number>
+   <text:list-level-style-number text:level="10" style:num-suffix="." style:num-format="1">
+    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.75in" fo:text-indent="-0.25in" fo:margin-left="2.75in"/>
+    </style:list-level-properties>
+   </text:list-level-style-number>
+  </text:list-style>
+  <text:notes-configuration text:note-class="footnote" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
+  <text:notes-configuration text:note-class="endnote" style:num-format="i" text:start-value="0"/>
+  <text:linenumbering-configuration text:number-lines="false" text:offset="0.1965in" style:num-format="1" text:number-position="left" text:increment="5"/>
+  <style:default-page-layout>
+   <style:page-layout-properties style:layout-grid-standard-mode="true"/>
+  </style:default-page-layout>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Standard" style:master-page-name="Standard">
+   <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.1665in" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" style:page-number="auto"/>
+   <style:text-properties fo:language="en" fo:country="US" style:language-complex="en" style:country-complex="US"/>
+  </style:style>
+  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.1665in" loext:contextual-spacing="false"/>
+  </style:style>
+  <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.1665in" loext:contextual-spacing="false"/>
+   <style:text-properties fo:language="en" fo:country="US" style:language-complex="en" style:country-complex="US"/>
+  </style:style>
+  <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.1665in" loext:contextual-spacing="false" fo:text-align="justify" style:justify-single-word="false"/>
+   <style:text-properties fo:language="en" fo:country="US" style:language-complex="en" style:country-complex="US"/>
+  </style:style>
+  <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.1665in" loext:contextual-spacing="false"/>
+   <style:text-properties fo:language="en" fo:country="US" officeooo:rsid="0004318d" officeooo:paragraph-rsid="0004318d" style:language-complex="en" style:country-complex="US"/>
+  </style:style>
+  <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.1665in" loext:contextual-spacing="false" fo:text-align="justify" style:justify-single-word="false"/>
+  </style:style>
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0.1665in" fo:margin-bottom="0.1665in" loext:contextual-spacing="false" fo:text-align="justify" style:justify-single-word="false" fo:text-indent="0.5in" style:auto-text-indent="false"/>
+  </style:style>
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0.1665in" fo:margin-bottom="0.1665in" loext:contextual-spacing="false" fo:text-align="justify" style:justify-single-word="false" fo:text-indent="0.5in" style:auto-text-indent="false"/>
+   <style:text-properties fo:language="en" fo:country="US" style:language-complex="en" style:country-complex="US"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0.1665in" fo:margin-bottom="0.1665in" loext:contextual-spacing="false" fo:text-align="justify" style:justify-single-word="false" fo:text-indent="0.5in" style:auto-text-indent="false"/>
+   <style:text-properties fo:language="en" fo:country="US" officeooo:paragraph-rsid="0005cdf9" style:language-complex="en" style:country-complex="US"/>
+  </style:style>
+  <style:style style:name="T1" style:family="text">
+   <style:text-properties fo:language="en" fo:country="US" style:language-complex="en" style:country-complex="US"/>
+  </style:style>
+  <style:style style:name="T2" style:family="text">
+   <style:text-properties fo:language="en" fo:country="US" officeooo:rsid="0004318d" style:language-complex="en" style:country-complex="US"/>
+  </style:style>
+  <style:style style:name="T3" style:family="text">
+   <style:text-properties fo:language="en" fo:country="US" fo:font-weight="bold" style:font-weight-asian="bold" style:language-complex="en" style:country-complex="US" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="T4" style:family="text">
+   <style:text-properties officeooo:rsid="0004318d"/>
+  </style:style>
+  <style:style style:name="T5" style:family="text">
+   <style:text-properties style:text-position="super 58%" fo:language="en" fo:country="US" officeooo:rsid="0004318d" style:language-complex="en" style:country-complex="US"/>
+  </style:style>
+  <style:style style:name="T6" style:family="text">
+   <style:text-properties officeooo:rsid="0005cdf9"/>
+  </style:style>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties fo:page-width="8.5in" fo:page-height="11in" style:num-format="1" style:print-orientation="portrait" fo:margin-top="0.7874in" fo:margin-bottom="0.7874in" fo:margin-left="0.7874in" fo:margin-right="0.7874in" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="37" style:layout-grid-base-height="0.25in" style:layout-grid-ruby-height="0in" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:layout-grid-base-width="0.1665in" style:layout-grid-snap-to="true" style:footnote-max-height="0in">
+    <style:footnote-sep style:width="0.0071in" style:distance-before-sep="0.0398in" style:distance-after-sep="0.0398in" style:line-style="none" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
+   </style:page-layout-properties>
+   <style:header-style/>
+   <style:footer-style/>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Standard" style:page-layout-name="pm1"/>
+ </office:master-styles>
+ <office:body>
+  <office:text text:use-soft-page-breaks="true">
+   <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
+   <text:sequence-decls>
+    <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+   </text:sequence-decls>
+   <text:p text:style-name="P1">INDEPENDENT CONTRACTOR AGREEMENT</text:p>
+   <text:p text:style-name="P2"><text:span text:style-name="T1">This independent contractor agreement (the “</text:span><text:span text:style-name="T3">Agreement</text:span><text:span text:style-name="T1">”) is made and entered into as of _________ (the “</text:span><text:span text:style-name="T3">Effective Date</text:span><text:span text:style-name="T1">”) between Hack Club (the “</text:span><text:span text:style-name="T3">Company</text:span><text:span text:style-name="T1">”), a Delaware non-stock corporation, and ___________, a sole proprietor (the “</text:span><text:span text:style-name="T3">Contractor</text:span><text:span text:style-name="T1">”) (collectively, the “</text:span><text:span text:style-name="T3">Parties</text:span><text:span text:style-name="T1">”).</text:span></text:p>
+   <text:p text:style-name="P4">The Company requests the Contractor to perform services for it and may request the Contractor to perform other services in the future; and</text:p>
+   <text:p text:style-name="P4">The Parties therefore agree as follows:</text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">1.0.</text:span><text:span text:style-name="T3">Term and Termination</text:span><text:span text:style-name="T1">.</text:span></text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">1.1. This Agreement takes effect immediately as of the Effective Date, and remains in full force and effect until the Contractor has completed the Services (the &quot;</text:span><text:span text:style-name="T3">Term</text:span><text:span text:style-name="T1">&quot;), unless earlier terminated under this Section 1.</text:span></text:p>
+   <text:p text:style-name="P4">1.2. Either Party may terminate this Agreement for cause by providing the other Party written notice if the other Party: (i) is in material breach of this Agreement and has failed to cure such breach within five (5) days after its receipt of written notice of such breach provided by the non-breaching Party; (ii) engages in any unlawful business practice related to that Party&apos;s performance under the Agreement; or (iii) files a petition for bankruptcy, becomes insolvent, acknowledges its insolvency in any manner, ceases to do business, makes an assignment for the benefit of its creditors, or has a receiver, trustee or similar party appointed for its property.</text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">2.0.</text:span><text:span text:style-name="T3">Contractor Services.</text:span></text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">2.1. During the Term, the Company may engage the Contractor to provide the following services as needed (the &quot;</text:span><text:span text:style-name="T3">Services</text:span><text:span text:style-name="T1">&quot;), or other such services as mutually agreed upon in writing by the Parties (email is acceptable):</text:span></text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">2.2. The Contractor shall provide the necessary equipment to perform the Services. If the Contractor has obtained employees or agents (the &quot;</text:span><text:span text:style-name="T3">Contractor Personnel</text:span><text:span text:style-name="T1">&quot;), the Contractor shall be solely responsible for all costs associated with the Contractor Personnel.</text:span></text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">2.3 As a result of providing the Services, the Contractor or Contractor Personnel may create certain work product (the &quot;</text:span><text:span text:style-name="T3">Work Product</text:span><text:span text:style-name="T1">&quot;).</text:span></text:p>
+   <text:p text:style-name="P4">2.4. The Contractor shall notify the Company of any change(s) to the Contractor's schedule that could adversely affect the availability of the Contractor, whether known or unknown at the time of this Agreement, no later than 1 week prior to such change(s). If the Contractor becomes aware of such change(s) within the 1 week period, the Contractor shall promptly notify the Company of such change(s) within a reasonable amount of time.</text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">2.5. </text:span><text:span text:style-name="T2">The work performed by the Contractor shall be performed at the following rate: __________________ with a maximum of ____________________. The Contractor shall issue invoices to the Company&apos;s executive director, Zach Latta, through email to </text:span><text:a xlink:type="simple" xlink:href="mailto:zach@hackedu.us" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">zach@hackedu.us</text:a><text:span text:style-name="T2"> within 7 days of each payment period (the 14</text:span><text:span text:style-name="T5">th</text:span><text:span text:style-name="T2"> and the last day of each month), unless otherwise instructed by the Company, and provide documentation as instructed by the Company&apos;s executive director. The </text:span><text:soft-page-break/><text:span text:style-name="T2">Company shall remit payment to the Contractor within 7 days of receiving the invoice from the Contractor.</text:span></text:p>
+   <text:p text:style-name="P4">2.<text:span text:style-name="T4">6</text:span>. The Company shall not be responsible for federal, state and local taxes derived from the Contractor&apos;s net income or for the withholding and/or payment of any federal, state and local income and other payroll taxes, workers&apos; compensation, disability benefits or other legal requirements applicable to the Contractor.</text:p>
+   <text:p text:style-name="P2"><text:span text:style-name="T1">3.0.</text:span><text:span text:style-name="T3">Independent Contractor Status.</text:span></text:p>
+   <text:p text:style-name="P3">3.1. The Parties intend that the Contractor and any Contractor Personnel be engaged as independent contractors of Company. Nothing contained in this Agreement will be construed to create the relationship of employer and employee, principal and agent, partnership or joint venture, or any other fiduciary relationship.</text:p>
+   <text:p text:style-name="P3">3.2. The Contractor may not act as agent for, or on behalf of, the Company, or to represent the Company, or bind the Company in any manner.</text:p>
+   <text:p text:style-name="P3">3.3. The Contractor will not be entitled to worker&apos;s compensation, retirement, insurance or other benefits afforded to employees of the Company.</text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">4.0.</text:span><text:span text:style-name="T3">Ownership</text:span><text:span text:style-name="T1">.</text:span></text:p>
+   <text:p text:style-name="P4">4.1. The Parties intend that, to the extent the Work Product or a portion of the Work Product qualifies as a &quot;work made for hire,&quot; within the definition of Section 101 of the Copyright Act of the United States (17 U.S.C. § 101), it will be so deemed a work made for hire. If the Work Product or any portion of the Work Product does not qualify as work made for hire, and/or as otherwise necessary to ensure the Company&apos;s complete ownership of all rights, titles and interest in the Work Product, the Contractor shall transfer and assign to the Company all rights, titles and interests throughout the world in and to any and all Work Product. This transfer and assignment includes, but is not limited to, the right to publish, distribute, make derivative works of, edit, alter or otherwise use the Work Product in any way the Company sees fit.</text:p>
+   <text:p text:style-name="P4">4.2. The Company grants the Contractor, a limited, non-exclusive, non-transferable, non-assignable, royalty free, worldwide license to display the Work Product on a platform personally controlled, in whole or in part, by the Contractor. The Company may revoke this license at any time by requesting the removal of the Work Product displayed by the Contractor. Upon such request, the Contractor shall remove the Work Product from the platform, and provide written notification of such removal.</text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">5.0. </text:span><text:span text:style-name="T3">Representations.</text:span><text:span text:style-name="T1"> Both Parties represent that they are fully authorized and empowered to enter into this Agreement, and that the performance of the obligations under this Agreement will not violate or infringe upon the rights of any third-party, or violate any agreement between the Parties and any other person, firm or organization or any law or governmental regulation.</text:span></text:p>
+   <text:p text:style-name="P2"><text:span text:style-name="T1">6.0. </text:span><text:span text:style-name="T3">Indemnification. </text:span><text:span text:style-name="T1">The Contractor shall indemnify and hold harmless the Company, its affiliates, and its respective officers, directors, agents and employees from any and all claims, demands, losses, causes of action, damage, lawsuits, judgments, including attorneys' fees and costs, arising out of, or relating to, the Contractor's services under this Agreement.</text:span></text:p>
+   <text:p text:style-name="P2"><text:span text:style-name="T1">7.0.</text:span><text:span text:style-name="T3">Confidential Information.</text:span></text:p>
+   <text:p text:style-name="P7"><text:soft-page-break/><text:span text:style-name="T1">7.1 Each Party (on its behalf and on behalf of its subcontractors, employees or representatives, or agents of any kind) agrees to hold and treat all confidential information of the other Party, including, but not limited to, trade secrets, sales figures, employee and customer information and any other information that the receiving Party reasonably should know is confidential (“</text:span><text:span text:style-name="T3">Confidential Information</text:span><text:span text:style-name="T1">”) as confidential and protect the Confidential Information with the same degree of care as each Party uses to protect its own Confidential Information of like nature.</text:span></text:p>
+   <text:p text:style-name="P9">7.2 Confidential Information does not include any information that (i) at the time of the disclosure or thereafter is lawfully obtained from <text:span text:style-name="T6">publicly</text:span> available sources generally known by the public (other than as a result of a disclosure by the receiving Party or its representatives); (ii) is available to the receiving Party on a non-confidential basis from a source that is not and was not bound by a confidentiality agreement with respect to the Confidential Information; or (iii) has been independently acquired or developed by the receiving Party without violating its obligations under this Agreement or under any federal or state law.</text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">8.0. </text:span><text:span text:style-name="T3">Liability. </text:span><text:span text:style-name="T1">EXCEPT WITH RESPECT TO THE PARTIES' INDEMNIFICATION OBLIGATIONS, NEITHER PARTY SHALL BE LIABLE TO THE OTHER FOR ANY SPECIAL, INDIRECT, INCIDENTAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES ARISING FROM OR RELATED TO THIS AGREEMENT, INCLUDING BODILY INJURY, DEATH, LOSS OF REVENUE, OR PROFITS OR OTHER BENEFITS, AND CLAIMS BY ANY THIRD PARTY, EVEN IF THE PARTIES HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE FOREGOING LIMITATION APPLIES TO ALL CAUSES OF ACTION IN THE AGGREGATE, INCLUDING WITHOOUT LIMITATION TO BREACH OF CONTRACT, BREACH OF WARRANTY, NEGLIGENCE, STRICT LIABILITY, AND OTHER TORTS.</text:span></text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">9.0. </text:span><text:span text:style-name="T3">Disclaimer of Warranty. </text:span><text:span text:style-name="T1">THE WARRANTIES CONTAINED HEREIN ARE THE ONLY WARRANTIES MADE BY THE PARTIES HEREUNDER. EACH PARTY MAKES NO OTHER WARRANTY, WHETHER EXPRESS OR IMPLIED, AND EXPRESSLY EXCLUDES AND DISCLAIMS ALL OTHER WARRANTIES AND REPRESENTATIONS OF ANY KIND, INCLUDING ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. THE COMPANY DOES NOT PROVIDE ANY WARRANTY THAT OPERATION OF ANY SERVICES HEREUNDER WILL BE UNINTERRUPTED OR ERROR-FREE.</text:span></text:p>
+   <text:p text:style-name="P6"><text:span text:style-name="T1">10.0 </text:span><text:span text:style-name="T3">Miscellaneous Provisions.</text:span></text:p>
+   <text:p text:style-name="P8">10.1. This Agreement, and any accompanying appendices, duplicates, or copies, constitutes the entire agreement between the Parties with respect to the subject matter of this Agreement, and supersedes all prior negotiations, agreements, representations, and understandings of any kind, whether written or oral, between the Parties, preceding the date of this Agreement.</text:p>
+   <text:p text:style-name="P8">10.2. This Agreement may be amended only by written agreement duly executed by an authorized representative of each party (email is acceptable).</text:p>
+   <text:p text:style-name="P8">10.3. If any provision or provisions of this Agreement shall be held unenforceable for any reason, then such provision shall be modified to reflect the parties' intention. All remaining provisions of this Agreement shall remain in full force and effect for the duration of this Agreement.</text:p>
+   <text:p text:style-name="P8">10.4. This Agreement shall not be assigned by either party without the express consent of the other party.</text:p>
+   <text:p text:style-name="P8"><text:soft-page-break/>10.5. A failure or delay in exercising any right, power or privilege in respect of this Agreement will not be presumed to operate as a waiver, and a single or partial exercise of any right, power or privilege will not be presumed to preclude any subsequent or further exercise, of that right, power or privilege or the exercise of any other right, power or privilege.</text:p>
+   <text:p text:style-name="P7"><text:span text:style-name="T1">10.6. This Agreement is to be governed by and construed in accordance with the laws of the State of </text:span><text:span text:style-name="T2">Delaware</text:span><text:span text:style-name="T1"> without reference to any principles of conflicts of laws, which might cause the application of the laws of another state. Any action instituted by either party arising out of this Agreement will only be brought, tried and resolved in the applicable federal or state courts having jurisdiction in the State of Delaware. EACH PARTY HEREBY CONSENTS TO THE EXCLUSIVE PERSONAL JURISDICTION AND VENUE OF THE COURTS, STATE AND FEDERAL, HAVING JURISDICTION IN THE STATE OF </text:span><text:span text:style-name="T2">DELAWARE</text:span><text:span text:style-name="T1">.</text:span></text:p>
+   <text:p text:style-name="P4">The Parties are signing this Agreement on the date stated in the introductory clause.</text:p>
+   <text:p text:style-name="P3">Hack Club</text:p>
+   <text:p text:style-name="P3">Signature: _________________________________</text:p>
+   <text:p text:style-name="P3">Date:</text:p>
+   <text:p text:style-name="P3">Name:</text:p>
+   <text:p text:style-name="P3">Title:</text:p>
+   <text:p text:style-name="P3"/>
+   <text:p text:style-name="P5">Contractor</text:p>
+   <text:p text:style-name="P3">Signature:_________________________________</text:p>
+   <text:p text:style-name="P3">Date:</text:p>
+   <text:p text:style-name="P5">Name:</text:p>
+  </office:text>
+ </office:body>
+</office:document>
