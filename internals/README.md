@@ -8,3 +8,4 @@ Index:
 - [Logos / design assets](logos/)
 - Processes
   - [Hackathon sponsorship](processes/hackathon_sponsorship_process.md)
+- [Management](management/)
