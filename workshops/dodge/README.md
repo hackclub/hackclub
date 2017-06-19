@@ -535,19 +535,19 @@ We're providing the following images and have already uploaded them to an image 
 
   ![Player image](img/prophet_orpheus.png)
 
-  `https://surrogate.hackedu.us/i.imgur.com/N5uCbDu.png`
+  `https://proxyparty.hackclub.com/i.imgur.com/N5uCbDu.png`
 
 - _Enemy_
 
   ![Enemy image](img/asteroid.png)
 
-  `https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png`
+  `https://proxyparty.hackclub.com/i.imgur.com/OdL0XPt.png`
 
 - _Background_
 
   ![Background image](img/background.png)
 
-  `https://surrogate.hackedu.us/i.imgur.com/aKQOg3G.png`
+  `https://proxyparty.hackclub.com/i.imgur.com/aKQOg3G.png`
 
 p5.js has a function called [`loadImage()`](http://p5js.org/reference/#p5/loadImage) that takes URL of an image as an argument and gives us a loaded image ready to be used. p5.play sprites have the method [`addImage()`](http://p5play.molleindustria.org/docs/classes/Sprite.html#method-addImage) that we can give a loaded image to assign it to the sprite.
 
@@ -580,7 +580,7 @@ Now let's load an image into `playerImage` in `preload()`.
 
 ```js
 function preload() {
-  playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/N5uCbDu.png");
+  playerImage = loadImage("https://proxyparty.hackclub.com/i.imgur.com/N5uCbDu.png");
 }
 ```
 
@@ -588,8 +588,8 @@ function preload() {
 
 ```js
 function preload(){
-  playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/N5uCbDu.png");
-  enemyImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
+  playerImage = loadImage("https://proxyparty.hackclub.com/i.imgur.com/N5uCbDu.png");
+  enemyImage = loadImage("https://proxyparty.hackclub.com/i.imgur.com/OdL0XPt.png");
 }
 ```
 
@@ -659,8 +659,8 @@ var enemyImage;
 var backgroundImage;
 
 function preload() {
-  enemyImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
-  backgroundImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/aKQOg3G.png");
+  enemyImage = loadImage("https://proxyparty.hackclub.com/i.imgur.com/OdL0XPt.png");
+  backgroundImage = loadImage("https://proxyparty.hackclub.com/i.imgur.com/aKQOg3G.png");
   // ...the rest of the preload function
 }
 ```
