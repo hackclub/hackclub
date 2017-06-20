@@ -24,7 +24,7 @@ By the end of 2019, how can Hack Club become a quickly-growing, yet efficient an
 
 **Managing work:**
 
-Work is broken down into work-specific, sprint-like **projects**. Each project has a corresponding [organization-wide GitHub project](https://github.com/orgs/hackclub/projects) and an associated deadline.
+Work is broken down into work-specific, sprint-like _projects_. Each project has a corresponding [organization-wide GitHub project](https://github.com/orgs/hackclub/projects) and an associated deadline.
 
 Projects should exist for no longer than 30 days and cannot contain subprojects. Long-term projects should be broken down into more managable chunks.
 
