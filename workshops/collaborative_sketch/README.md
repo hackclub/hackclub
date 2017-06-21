@@ -4,12 +4,13 @@
 | ----------------------- |
 | ![](img/final_demo.gif) |
 
-Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1 hour.
-
 _**We recommend going through this workshop in Google Chrome.**_
 
-[live_demo]: https://prophetorpheus.github.io/collaborative_sketch
-[final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/collaborative_sketch
+Here's a link to the Live Demo and the Final Code. This workshop should take around 1 hour.
+
+## [Live Demo](https://prophetorpheus.github.io/collaborative_sketch)
+
+## [Final Code](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/collaborative_sketch)
 ---
 
 Draw with one or more friends! In this project we'll be combining HTML, p5.js, Firebase, and jQuery to create a collaborative sketchpad. We'll use p5.js to manipulate the drawing space, Firebase to keep track of our drawing in terms of points that we've marked in our drawing, and jQuery to easily manipulate HTML elements.
