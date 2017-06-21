@@ -4,12 +4,12 @@
 | ----------------------- |
 | ![](img/final_demo.gif) |
 
-Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1 hour and 15 minutes.
-
 _**We recommend going through this workshop in Google Chrome.**_
 
-[live_demo]: https://prophetorpheus.github.io/dodge
-[final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/dodge
+Here's a link to the live demo and the final code. This workshop should take around 1 hour and 15 minutes.
+
+## [Live Demo](https://prophetorpheus.github.io/dodge)
+## [Final Code](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/dodge)
 
 ---
 
