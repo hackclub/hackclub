@@ -1,15 +1,16 @@
 # That Was Easy Workshop
 
-_**We recommend going through this workshop in Google Chrome.**_
+
 
 ![](img/easy_screenshot.png)
 
-Here's the [live demo][final_live_demo] and [final code][final_code].
+_**We recommend going through this workshop in Google Chrome.**_
 
-This workshop should take around 1 hour.
+Links to a live demo and the final code below. This workshop should take around 1 hour.
 
-[final_live_demo]: https://prophetorpheus.github.io/that_was_easy
-[final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/that_was_easy
+[Live Demo](https://prophetorpheus.github.io/that_was_easy)
+
+[Final Code](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/that_was_easy)
 
 ---
 
