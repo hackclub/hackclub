@@ -743,4 +743,4 @@ Thank you to the following people for making this workshop possible.
 - Lanea Zimmerman for the [Dirt Platformer Tiles](http://opengameart.org/content/dirt-platformer-tiles) tileset, which is used in the background image
 - The [Make Pixel Art](http://makepixelart.com) community for the [asteroid graphic](http://makepixelart.com/artists/anonymous/asteroid_33)
 - [p5.js](http://p5js.org/) community, for porting Processing to JS
-- [Molleindustria](http://www.molleindustria.org/), for the p5.play library
+- Molleindustria, for the p5.play library
