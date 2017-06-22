@@ -4,7 +4,7 @@ _This file is intended to house templates for responding to common emails._
 
 ---
 
-#### Cancelling Donation
+### Cancelling Donation
 
 > Hi Mark, thanks for being a supporter – we're sorry to have you go, but totally understand how circumstances change.
 >
