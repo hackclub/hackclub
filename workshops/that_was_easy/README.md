@@ -4,13 +4,11 @@
 
 ![](img/easy_screenshot.png)
 
-_**We recommend going through this workshop in Google Chrome.**_
-
 Links to a live demo and the final code below. This workshop should take around 1 hour.
 
-[Live Demo](https://prophetorpheus.github.io/that_was_easy)
+[**Live Demo**](https://prophetorpheus.github.io/that_was_easy)
 
-[Final Code](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/that_was_easy)
+[**Final Code**](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/that_was_easy)
 
 ---
 
