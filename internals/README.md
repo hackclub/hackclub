@@ -9,3 +9,5 @@ Index:
 - Processes
   - [Hackathon sponsorship](processes/hackathon_sponsorship_process.md)
 - [Management](management/)
+- _Miscellaneous stuff_
+  - [Email copy](email_copy.md) - Template responses for repetitive emails
