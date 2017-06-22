@@ -6,10 +6,6 @@ _Adapted from [here](https://medium.freecodecamp.com/things-i-wish-someone-had-t
 
 If you're reading this, that means that you've decided to embark on the journey of learning to code. Congratulations and welcome, we're excited for you. Before you get started, there are 3 things we think you should know:
 
-[1. Coding is Not Special](#1-coding-is-not-special)  
-[2. It Never Works the First Time](#2-it-never-works-the-first-time)  
-[3. Persistence Beats Method](#3-persistence-beats-the-method)
-
 ## 1. Coding is Not Special
 
 First and foremost, coding is a skill like any other. Like learning a language, there's grammar and vocabulary to acquire. Like math, there are processes to work through specific types of problems.
