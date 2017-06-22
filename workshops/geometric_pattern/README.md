@@ -4,15 +4,18 @@
 | -------------------- |
 | ![](img/sample1.png) |
 
-Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1 hour.
+_**We recommend going through this workshop in Google Chrome.**_
+
+Links to a live demo and the final code below. This workshop should take around 1 hour.
+
+[Final Code](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/geometric_pattern)
+
+[Live Demo](https://prophetorpheus.github.io/geometric_pattern)
 
 _**Warning: the following demo involves flashing colors and is not recommended for those with a history of epilepsy.**_ There's also an [animated demo][animated_live_demo].
 
-_**We recommend going through this workshop in Google Chrome.**_
-
-[live_demo]: https://prophetorpheus.github.io/geometric_pattern
 [animated_live_demo]: https://prophetorpheus.github.io/geometric_pattern/version2.html
-[final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/geometric_pattern
+
 
 ---
 
