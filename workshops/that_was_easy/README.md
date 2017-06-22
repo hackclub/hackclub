@@ -1,6 +1,6 @@
 # That Was Easy Workshop
 
-_**We recommend going through this workshop in Google Chrome.**_
+
 
 ![](img/easy_screenshot.png)
 
