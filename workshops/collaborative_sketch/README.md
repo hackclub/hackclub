@@ -6,7 +6,7 @@
 
 _**We recommend going through this workshop in Google Chrome.**_
 
-Here's a link to the Live Demo and the Final Code. This workshop should take around 1 hour.
+Links to a live demo and the final code below. This workshop should take around 1 hour.
 
 [**Live Demo**](https://prophetorpheus.github.io/collaborative_sketch)
 
