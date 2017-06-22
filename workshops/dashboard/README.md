@@ -4,7 +4,11 @@ What you'll be building:
 
 ![](img/app.gif)
 
-Here's a link to the [live demo](https://prophetorpheus.github.io/dashboard/) and the [final code](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/dashboard). This workshop should take around an hour.
+Links to a live demo and the final code below. This workshop should take around an hour.
+
+[**Live Demo**](https://prophetorpheus.github.io/dashboard/)
+
+[**Final Code**](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/dashboard)
 
 Have you heard of an API? Basically, an API, or an application program interface, is a set of protocols or routines that can help you build a software project. Often, APIs are available to use through companies that allow anyone access to their services. For example, one can make an app to search tweets with a [Twitter API](https://dev.twitter.com/docs), or one could even use the [Spotify API](https://developer.spotify.com/showcase/) to grab the latest music data. 
 
