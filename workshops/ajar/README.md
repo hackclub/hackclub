@@ -2,7 +2,7 @@
 
 Short link to this workshop: https://workshops.hackclub.com/ajar
 
--------------------------------------------------------------------------------
+---
 
 [Agar.io](http://agar.io) is a popular game built for the web with
 [HTML, CSS, and JavaScript](http://qr.ae/RoCXc7). The goal of this workshop is
