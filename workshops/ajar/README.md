@@ -2,42 +2,6 @@
 
 Short link to this workshop: https://workshops.hackclub.com/ajar
 
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
-**Table of Contents**
-
-- [Ajar.io](#ajario)
-  - [Tips And Tricks](#tips-and-tricks)
-  - [Part 1](#part-1)
-    - [Creating the files](#creating-the-files)
-    - [Setting up the HTML](#setting-up-the-html)
-    - [Writing the JavaScript](#writing-the-javascript)
-    - [Congrats!](#congrats)
-  - [Part 2](#part-2)
-    - [What are functions?](#what-are-functions)
-    - [Using functions in Ajar.](#using-functions-in-ajar)
-    - [Congrats!](#congrats)
-  - [Part 3](#part-3)
-    - [Draw Circle Based on Variable Values](#draw-circle-based-on-variable-values)
-    - [Detect Mouse Movements](#detect-mouse-movements)
-    - [Clearing the canvas](#clearing-the-canvas)
-    - [Congrats!](#congrats)
-  - [Part 4](#part-4)
-    - [Let's recap](#lets-recap)
-    - [Planning it out](#planning-it-out)
-    - [Setting up the `drawScreen` function](#setting-up-the-drawscreen-function)
-    - [Setting up the variables for the `calculatePosition` function](#setting-up-the-variables-for-the-calculateposition-function)
-    - [The `if`-`else` statement](#the-if-else-statement)
-    - [Setting up the `calculatePosition` function](#setting-up-the-calculateposition-function)
-    - [Invoking the `calculatePosition` function](#invoking-the-calculateposition-function)
-  - [Part 5](#part-5)
-    - [What are arrays?](#what-are-arrays)
-    - [Store food positions in an array](#store-food-positions-in-an-array)
-    - [Generalizing (abstracting) the `drawUserCell`](#generalizing-abstracting-the-drawusercell)
-    - [Congrats!](#congrats)
-- [More coming soon...](#more-coming-soon)
-
-<!-- markdown-toc end -->
-
 -------------------------------------------------------------------------------
 
 [Agar.io](http://agar.io) is a popular game built for the web with
