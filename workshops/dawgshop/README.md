@@ -93,7 +93,7 @@ _Please ~~don't~~ turn up that hard to our workshop_
   - Apply stylings from our `style.css` file to everything enclosed
 
     ```html
-    <div class="thuggin">
+    <div class="dawgit">
     </div>
     ```
 
@@ -115,7 +115,7 @@ _Please ~~don't~~ turn up that hard to our workshop_
     - In this case `<h1>` is enclosed in `<div>`
 
     ```html
-    <div class="thuggin">
+    <div class="dawgit">
       <h1 id="title">Dawg It Up</h1>
     </div>
     ```
@@ -153,16 +153,16 @@ closes itself. We'll be able to type in this box!
 
   - Just like the `<h1>` tag, this another tag where we place text between the opening and closing tags to display on the webpage
 
-  Give this button the text "thuggin'"
+  Give this button the text "dawg it"
 
   ```html
-  <button>thuggin'</button>
+  <button>dawg it</button>
   ```
 
   Give this button an id of "go"
 
   ```html
-  <button id="go">thuggin'</button>
+  <button id="go">dawg it</button>
   ```
 
   We're going to tell the webpage that this is a type-of-something. In this case, it's a button!
@@ -174,9 +174,9 @@ closes itself. We'll be able to type in this box!
       - By specifying this, the HTML adds some build-in CSS styling
 
   ```html
-  <div class="thuggin">
+  <div class="dawgit">
     <h1 id="title">Dawg It Up</h1>
-    <button type="button" id="go">thuggin'</button>
+    <button type="button" id="go">dawg it</button>
   </div>
   ```
 
@@ -203,10 +203,10 @@ Whatever text we type into the input box will have “, dawg” added - We will 
 <body>
 
     <!-- Our main HTML -->
-    <div class="thuggin">
+    <div class="dawgit">
       <h1 id="title">Dawg It Up</h1>
       <input id="text-input" placeholder="insert text">
-      <button type="button" id="go">thuggin'</button>
+      <button type="button" id="go">dawg it</button>
       <p id="output"></p>
     </div>
 
@@ -373,7 +373,7 @@ Adding the two strings together is called **concatenation**. Ya fancy, huh?
 
 ![What](img/what.gif)
 
-Alright, now that we're thuggin', it's time to display our up text on the page — fo'shizzle.
+Alright, now that we're dawging it up, it's time to display our up text on the page — fo'shizzle.
 
 Just to make sure, at this point your code should look like this:
 
@@ -461,7 +461,7 @@ Like with previous workshops, let's set up a link that you can share with others
 
 ## Hacking
 
-Now is the chance to make this thuggin' project yours! For inspiration, you can look [here](http://jevinsidhu.github.io/thugify/) to see an example of what you can do.
+Now is the chance to make this project yours! For inspiration, you can look [here](http://jevinsidhu.github.io/thugify/) to see an example of what you can do.
 
 ## Thanks for completing our workshop ❤
 
