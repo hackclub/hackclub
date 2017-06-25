@@ -86,9 +86,7 @@ A few more things:
   suggestions at the end for how to take the project further!
 - Keep in mind that after-school meetings can't go on forever. Try to make your
   workshop take 1 hour or less to finish.
-- If you want to reduce work for maintainers, try to follow this [style
-  guide](https://github.com/hackclub/hackclub/blob/master/GUIDELINES.md#styleguides).
-  But don't worry about it too much, because we will fix formatting issues for
+- Don't worry about the styling too much, because we will fix formatting issues for
   you before publishing your workshop.
 
 When you're done, submit a [pull
