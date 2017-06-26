@@ -11,27 +11,16 @@ For more details specific to contributing a workshop, [look here](workshops/CONT
 ## Table of Contents
 
 1. [GitHub Flow](#github-flow)
-2. [Style Guides](#styleguides)
-3. [Branch Names](#branch-names)
-4. [File Names](#file-names)
-5. [Git Commits](#git-commits)
-6. [Making a Pull Request](#making-a-pull-request)
+2. [Branch Names](#branch-names)
+3. [File Names](#file-names)
+4. [Git Commits](#git-commits)
+5. [Making a Pull Request](#making-a-pull-request)
 
 ## GitHub Flow
 
 We use a modified version of [GitHub Flow](https://guides.github.com/introduction/flow/) at Hack Club. The only difference is instead of deploying from a reviewed pull request, we merge first and deploy straight from master.
 
 Part of the GitHub Flow is submitting pull requests. See https://help.github.com/articles/using-pull-requests/ for a good overview of what pull requests are and how to use them. We use the _fork & pull model_ for managing contributions.
-
-## Styleguides
-
-If a styleguide exists for the language you're contributing in, please do the maintainers of the repository a favor and follow it.
-
-Our existing styleguides:
-
-- [Markdown](https://github.com/hackclub/meta/blob/master/styleguides/markdown.md)
-- [English](https://github.com/hackclub/meta/blob/master/styleguides/english.md)
-- [CSS](https://github.com/hackclub/meta/blob/master/styleguides/css.md)
 
 ## Branch Names
 
