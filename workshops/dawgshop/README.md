@@ -3,6 +3,13 @@
 ![Thug Life - Tu Pac](img/tupac.gif)
 
 ## Introduction
+Links to a live demo and the final code below. This workshop should take around 1 hour.
+
+[**Live Demo**](http://seankim.tech/dawgshop/index.html)
+
+[**Final Code**](https://github.com/JSneak/jsneak.github.io/tree/master/dawgshop)
+
+---
 
 ### What is this?
 
