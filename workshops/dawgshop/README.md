@@ -184,7 +184,7 @@ closes itself. We'll be able to type in this box!
 
   ![Childish Gambino](img/Childish.gif)
 
-5. Still inside the div, let's create a space for our thugified content, let's create a `<p>` tag with an
+5. Still inside the div, let's create a space for our dawgified content, let's create a `<p>` tag with an
 id of `output`.
 
   ```html
@@ -360,14 +360,14 @@ Let's move on to performing the actual dawging part of the string we got in the 
 We need to store the variable with the words from the input box and then add the word `, "dawg"` to it
 
 ```js
-var thugifiedText = inputText + ", dawg";
+var dawgifiedText = inputText + ", dawg";
 ```
 
-This line takes the string we got in the last section (variable `inputText`) from the input box, adds `", dawg"` to the end of it, and then stores it into a new variable named `thugifiedText`.
+This line takes the string we got in the last section (variable `inputText`) from the input box, adds `", dawg"` to the end of it, and then stores it into a new variable named `dawgifiedText`.
 
 Remember: Whatever is on the right side will be assigned to the left side.
 
-- `inputText + ", dawg"` is being assigned to the variable `thugifiedText`
+- `inputText + ", dawg"` is being assigned to the variable `dawgifiedText`
 
 Adding the two strings together is called **concatenation**. Ya fancy, huh?
 
@@ -380,7 +380,7 @@ Just to make sure, at this point your code should look like this:
 ```js
 document.getElementById('go').onclick = function(){
     var inputText = $('#text-input').val();
-    var thugifiedText = inputText + ", dawg";
+    var dawgifiedText = inputText + ", dawg";
 
 }
 ```
@@ -402,21 +402,21 @@ PS: you can use jQuery's `$('')` for this as well.
 - Try changing this line to use the jQuery syntax 
 - Syntax means the grammar, spelling, and set of rules of a language
 
-Now we will attach `.innerHTML = thugifiedText;` to the end of the line `document.getElementById('output').innerHTML`
+Now we will attach `.innerHTML = dawgifiedText;` to the end of the line `document.getElementById('output').innerHTML`
 
 It's just like `$('#text-input').val();` that we used before:
 
 - Except this time we're setting the `innerHTML` value (the text inside of the pairs of `<p>` tags) of an HTML element instead of getting a value from it.
 
-We will now assign the value of `thugifiedText` to the `<p>` tag with the id `output`:
+We will now assign the value of `dawgifiedText` to the `<p>` tag with the id `output`:
 
 ```js
-document.getElementById('output').innerHTML = thugifiedText;
+document.getElementById('output').innerHTML = dawgifiedText;
 ```
 
-In plain English, `document.getElementById('output').innerHTML = thugifiedText;` means:
+In plain English, `document.getElementById('output').innerHTML = dawgifiedText;` means:
 
-- Set the `innerHTML` of HTML element with id "output" to the value of the variable, `thugifiedText` (our thugified string variable → the variable that holds our text)
+- Set the `innerHTML` of HTML element with id "output" to the value of the variable, `dawgifiedText` (our dawgified string variable → the variable that holds our text)
 
 Close your curly brackets ( `}` ), slap a semicolon ( `;` ) on the end of it and BAM you're done!
 
@@ -425,8 +425,8 @@ Final Code:
 ```js
 document.getElementById('go').onclick = function() {
     var inputText = $('#text-input').val();
-    var thugifiedText = inputText + ", dawg";
-    document.getElementById('output').innerHTML = thugifiedText;
+    var dawgifiedText = inputText + ", dawg";
+    document.getElementById('output').innerHTML = dawgifiedText;
 };
 ```
 
