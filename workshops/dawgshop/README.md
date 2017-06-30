@@ -6,9 +6,9 @@
 
 Links to a live demo and the final code below. This workshop should take around 1 hour.
 
-[**Live Demo**](http://seankim.tech/dawgshop/index.html)
+[**Live Demo**](https://prophetorpheus.github.io/dawgshop/index.html)
 
-[**Final Code**](https://github.com/JSneak/jsneak.github.io/tree/master/dawgshop)
+[**Final Code**](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/dawgshop)
 
 ---
 
