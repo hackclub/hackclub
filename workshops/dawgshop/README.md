@@ -3,6 +3,7 @@
 ![Thug Life - Tu Pac](img/tupac.gif)
 
 ## Introduction
+
 Links to a live demo and the final code below. This workshop should take around 1 hour.
 
 [**Live Demo**](http://seankim.tech/dawgshop/index.html)
@@ -11,9 +12,7 @@ Links to a live demo and the final code below. This workshop should take around 
 
 ---
 
-### What is this?
-
-The Dawgshop™ is an introduction to the basics of JavaScript + jQuery.
+What is this? The Dawgshop™ is an introduction to the basics of JavaScript + jQuery.
 
 We'll be adding ", dawg" to the end of whatever you type into an input box — simple, but sweet. You'll be able to change the word added at your own will.
 
