@@ -4,9 +4,15 @@
 
 ## Introduction
 
-### What is this?
+Links to a live demo and the final code below. This workshop should take around 1 hour.
 
-The Dawgshop™ is an introduction to the basics of JavaScript + jQuery.
+[**Live Demo**](https://prophetorpheus.github.io/dawgshop/index.html)
+
+[**Final Code**](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/dawgshop)
+
+---
+
+What is this? The Dawgshop™ is an introduction to the basics of JavaScript + jQuery.
 
 We'll be adding ", dawg" to the end of whatever you type into an input box — simple, but sweet. You'll be able to change the word added at your own will.
 
