@@ -37,6 +37,8 @@ _A step-by-step guide by the Hack Club community._
     - [Hacking on Projects](#hacking-on-projects)
     - [Running Demos](#running-demos)
     - [Reminder for Next Meeting](#reminder-for-next-meeting)
+  - [Common Questions](#common-questions)
+    - [What if I can’t call my club Hack Club?](#what-if-i-cant-call-my-club-hack-club)
 
 ## What is a Hack Club?
 
@@ -624,3 +626,14 @@ You'll want to do the same thing you did in the second meeting to run demos.
 - Let everyone know they’ll be doing a new workshop next time, and give a
   brief and enticing description.
 - Thank them for coming!
+
+## Common Questions
+
+### What if I can't call my club Hack Club?
+You should explain to your teacher or principal what the word Hack means. Here is an example of what you might want to say: 
+
+>When we say "hack", we're referring to solving problems cleverly with code – just like "life hacking", except with computers.
+
+>When members of Hack Clubs hack, they're building apps, websites, games, and anything else you can imagine.
+
+If your school still won’t let you name it Hack Club, alternate names are fine. It’s up to you as club leader to make that final call.
