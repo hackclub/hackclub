@@ -637,4 +637,4 @@ Teachers/club sponsors/school administrators will sometimes try to ban a club fr
 
 > When we call ourselves "Hack Club", it means we're building apps, websites, games, and anything else you can imagine.
 
-If that still doesn't work, just reach out to us on Slack. A bunch of club leaders have had to deal with this and we're happy to help out.
+If that still doesn't work, just reach out to us on [Slack](https://hackclub.slack.com/messages/C0J7C6YET/). A bunch of club leaders have had to deal with this and we're happy to help out.
