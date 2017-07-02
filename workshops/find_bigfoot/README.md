@@ -4,7 +4,13 @@ In this workshop, you will make a game about finding Bigfoot. It will look like 
 
 ![](img/final_screenshot.png)
 
-Open the [live demo](https://ad510.github.io/workshop-test/find_bigfoot/).
+Links to a live demo and the final code below. This workshop should take around 1 hour.
+
+[**Live Demo**](https://ad510.github.io/workshop-test/find_bigfoot/)
+
+[**Final Code**](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/find_bigfoot)
+
+---
 
 **On the way, you will:**
 
