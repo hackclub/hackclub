@@ -629,11 +629,12 @@ You'll want to do the same thing you did in the second meeting to run demos.
 
 ## Common Questions
 
-### What if I can't call my club Hack Club?
-You should explain to your teacher or principal what the word Hack means. Here is an example of what you might want to say: 
+### What if I can't call my club "Hack Club"?
 
->When we say "hack", we're referring to solving problems cleverly with code – just like "life hacking", except with computers.
+Teachers/club sponsors/school administrators will sometimes try to ban a club from calling itself "Hack Club" because it includes the word "hack". To fix this, try explaining what "hack" means:
 
->When members of Hack Clubs hack, they're building apps, websites, games, and anything else you can imagine.
+> When we say "hack", we're referring to solving problems cleverly with code – just like "life hacking", except with computers.
 
-If your school still won’t let you name it Hack Club, alternate names are fine. It’s up to you as club leader to make that final call.
+> When we call ourselves "Hack Club", it means we're building apps, websites, games, and anything else you can imagine.
+
+If that still doesn't work, just reach out to us on Slack. A bunch of club leaders have had to deal with this and we're happy to help out.
