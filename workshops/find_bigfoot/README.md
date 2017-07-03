@@ -253,6 +253,43 @@ h2 {
 
 But we don't want to position an `<h2>` element. We want to position an `<img>` element. So we type the code above into the `<style>` section, but typing `img` instead of `h2`.
 
+### Loading Bigfoot before the background
+
+Right now Big Foot loads before the background image does unless you have a fast internet connection and we don't want that! We're going to fix that by running code only after the page has loaded.
+
+Just like how we ran code when someone clicked using `onclick`, we're going to call a function once the page has loaded with `onload`. You can look this up by googlintg "on page load". Lets go ahead and make a script tag for our new function inside the page head `loadBigFoot()`.
+
+```html
+<head>
+    <!-- Other stuff in the head goes here -->
+
+    <script>
+        function loadBigFoot() {
+
+        }
+    </script>
+</head>
+```
+
+We should also go ahead and add the `onload` attribute to the body tag. There are a couple more things we have to do. First, go ahead and get rid of src tag, as we will be adding that with the function. Then, add an `id` to the img tag. This is so we can change the `src` attribute after the page loads.
+
+```html
+    <body onload="loadBigFoot()">
+        <img id="bigFoot" onclick="alert('Woohoo, you win! You found Bigfoot!');">
+    </body>
+</html>
+```
+
+Now, lets get a hold of the img tag and change its `src` to our friend Big Foot.
+
+```javascript
+    <script>
+        function loadBigFoot() {
+             document.getElementById("bigFoot").src = "assets/bigfoot.png"
+        }
+```
+Big Foot should now load after the background. We did it!
+
 When we're done, `index.html` looks like 
 
 ```html
@@ -269,10 +306,14 @@ When we're done, `index.html` looks like
                 top: 150px;
             }
         </style>
+        <script>
+            function loadBigFoot() {
+                document.getElementById("bigFoot").src = "assets/bigfoot.png"
+            }
+        </script>
     </head>
-    <body>
-        <img src="assets/bigfoot.png"
-             onclick="alert('Woohoo, you win! You found Bigfoot!');">
+    <body onload="loadBigFoot()">
+        <img id="bigFoot" onclick="alert('Woohoo, you win! You found Bigfoot!');">
     </body>
 </html>
 ```
