@@ -642,6 +642,8 @@ If that still doesn't work, just reach out to us on [Slack](https://hackclub.sla
 
 ### What if a member of my club does something inappropriate?
 
-You should warn and ask them stop. If they do not stop, we will remove them from our community spaces temporarily. Repeated, willful breaches of the Code of Conduct will result in a permanent ban.
+You should warn and ask them stop. You'll want to make sure to tell them what is inappropriate about their actions, as they themselves might not realize that are doing it.
+
+If this persists past the warning, then talk to your teacher about the proper course of action to take.
 
 Refer to our [conducts page](https://github.com/hackclub/hackclub/blob/master/CONDUCT.md) for more information. 
