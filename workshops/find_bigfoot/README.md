@@ -249,21 +249,23 @@ But we don't want to position an `<h2>` element. We want to position an `<img>` 
 
 ### Loading Bigfoot before the background
 
-As it is right now, Big Foot is loading before the background which makes it really easy to find him. Lets make sure that he loads in before the forest.
+Right now Big Foot loads before the background image does unless you have a fast internet connection and we don't want that! We're going to fix that by running code only after the page has loaded.
 
-So let's start by Googling "body onload".
+Just like how we ran code when someone clicked using `onclick`, we're going to call a function once the page has loaded with `onload`. You can look this up by googlintg "on page load". Lets go ahead and make a script tag for our new function inside the page head `loadBigFoot()`.
 
-It looks that we can call a function once the page loads with "onload". Lets go ahead and make a script tag for our new function, loadBigFoot().
+```html
+<head>
+    <!-- Other stuff in the head goes here -->
 
-```javascript
     <script>
-        function loadBigFoot(){
+        function loadBigFoot() {
 
         }
     </script>
+</head>
 ```
 
-We should also go ahead and add the onload to the body tag. There are a couple more things we should do. First, go ahead and get rid of src tag, as we will be adding that with the function. Then, add an id to the img tag. This so that we can change the src of it later.
+We should also go ahead and add the onload to the body tag. There are a couple more things we should do. First, go ahead and get rid of src tag, as we will be adding that with the function. Then, add an `id` to the img tag. This is so we can change the `src` attribute after the page loads.
 
 ```html
     <body onload="loadBigFoot()">
@@ -272,11 +274,11 @@ We should also go ahead and add the onload to the body tag. There are a couple m
 </html>
 ```
 
-Now, lets get a hold of the img tag and change the src of it to our friend Big Foot.
+Now, lets get a hold of the img tag and change its `src` to our friend Big Foot.
 
 ```javascript
     <script>
-        function loadBigFoot(){
+        function loadBigFoot() {
              document.getElementById("bigFoot").src = "assets/bigfoot.png"
         }
 ```
@@ -299,7 +301,7 @@ When we're done, `index.html` looks like
             }
         </style>
         <script>
-            function loadBigFoot(){
+            function loadBigFoot() {
                 document.getElementById("bigFoot").src = "assets/bigfoot.png"
             }
         </script>
