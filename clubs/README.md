@@ -39,6 +39,7 @@ _A step-by-step guide by the Hack Club community._
     - [Reminder for Next Meeting](#reminder-for-next-meeting)
   - [Common Questions](#common-questions)
     - [What if I can’t call my club Hack Club?](#what-if-i-cant-call-my-club-hack-club)
+    - [What if a member of my club does something inappropriate?](#what-if-a-member-of-my-club-does-something-inappropriate)
 
 ## What is a Hack Club?
 
@@ -638,3 +639,9 @@ Teachers/club sponsors/school administrators will sometimes try to ban a club fr
 > When we call ourselves "Hack Club", it means we're building apps, websites, games, and anything else you can imagine.
 
 If that still doesn't work, just reach out to us on [Slack](https://hackclub.slack.com/messages/C0J7C6YET/). A bunch of club leaders have had to deal with this and we're happy to help out.
+
+### What if a member of my club does something inappropriate?
+
+You should warn and ask them stop. If they do not stop, we will remove them from our community spaces temporarily. Repeated, willful breaches of the Code of Conduct will result in a permanent ban.
+
+Refer to our [conducts page](https://github.com/hackclub/hackclub/blob/master/CONDUCT.md) for more information. 
