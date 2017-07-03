@@ -265,7 +265,7 @@ Just like how we ran code when someone clicked using `onclick`, we're going to c
 </head>
 ```
 
-We should also go ahead and add the onload to the body tag. There are a couple more things we should do. First, go ahead and get rid of src tag, as we will be adding that with the function. Then, add an `id` to the img tag. This is so we can change the `src` attribute after the page loads.
+We should also go ahead and add the `onload` attribute to the body tag. There are a couple more things we have to do. First, go ahead and get rid of src tag, as we will be adding that with the function. Then, add an `id` to the img tag. This is so we can change the `src` attribute after the page loads.
 
 ```html
     <body onload="loadBigFoot()">
