@@ -247,6 +247,41 @@ h2 {
 
 But we don't want to position an `<h2>` element. We want to position an `<img>` element. So we type the code above into the `<style>` section, but typing `img` instead of `h2`.
 
+### Loading Bigfoot before the background
+
+As it is right now, Big Foot is loading before the background which makes it really easy to find him. Lets make sure that he loads in before the forest.
+
+So let's start by Googling "body onload".
+
+It looks that we can call a function once the page loads with "onload". Lets go ahead and make a script tag for our new function, loadBigFoot().
+
+```javascript
+    <script>
+        function loadBigFoot(){
+
+        }
+    </script>
+```
+
+We should also go ahead and add the onload to the body tag. There are a couple more things we should do. First, go ahead and get rid of src tag, as we will be adding that with the function. Then, add an id to the img tag. This so that we can change the src of it later.
+
+```html
+    <body onload="loadBigFoot()">
+        <img id="bigFoot" onclick="alert('Woohoo, you win! You found Bigfoot!');">
+    </body>
+</html>
+```
+
+Now, lets get a hold of the img tag and change the src of it to our friend Big Foot.
+
+```javascript
+    <script>
+        function loadBigFoot(){
+             document.getElementById("bigFoot").src = "assets/bigfoot.png"
+        }
+```
+Big Foot should now load after the background. We did it!
+
 When we're done, `index.html` looks like 
 
 ```html
@@ -263,10 +298,14 @@ When we're done, `index.html` looks like
                 top: 150px;
             }
         </style>
+        <script>
+            function loadBigFoot(){
+                document.getElementById("bigFoot").src = "assets/bigfoot.png"
+            }
+        </script>
     </head>
-    <body>
-        <img src="assets/bigfoot.png"
-             onclick="alert('Woohoo, you win! You found Bigfoot!');">
+    <body onload="loadBigFoot()">
+        <img id="bigFoot" onclick="alert('Woohoo, you win! You found Bigfoot!');">
     </body>
 </html>
 ```
