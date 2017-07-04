@@ -708,7 +708,7 @@ You're done, yay! You just need to add it to your website so that it's live on t
 
 Just like we did in the Personal Website workshop, do the following steps to upload your Dodge game to your website.
 
-1. Open the terminal by pressing `alt + t` on the keyboard at the same time. Type in the following commands:
+1. Open the terminal by pressing <kbd>Alt + t</kbd> on the keyboard at the same time. Type in the following commands:
   - `git add --all`
   - `git commit -m "Create Dodge game"`
   - `git push`
