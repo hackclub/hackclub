@@ -653,3 +653,5 @@ Refer to our [conducts page](https://github.com/hackclub/hackclub/blob/master/CO
 ### What if our adviser does not want to let us meet every week?
 
 ### How do I transition leadership roles to another person?
+
+Hackbot will send you a private message towards the end of your senior year informing you that you should begin thinking about the next leader. A Hack Club staff member will ask you for that person's Slack IGN later that week. 
