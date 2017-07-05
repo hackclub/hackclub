@@ -644,6 +644,6 @@ If that still doesn't work, just reach out to us on [Slack](https://hackclub.sla
 
 You should warn and ask them stop. You'll want to make sure to tell them what is inappropriate about their actions, as they themselves might not realize that are doing it.
 
-If this persists past the warning, then talk to your teacher about the proper course of action to take.
+If this persists past the warning, then talk to your teacher/club sponsor/school administrator about the proper course of action to take.
 
 Refer to our [conducts page](https://github.com/hackclub/hackclub/blob/master/CONDUCT.md) for more information. 
