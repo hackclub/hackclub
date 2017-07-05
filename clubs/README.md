@@ -37,11 +37,11 @@ _A step-by-step guide by the Hack Club community._
     - [Hacking on Projects](#hacking-on-projects)
     - [Running Demos](#running-demos)
     - [Reminder for Next Meeting](#reminder-for-next-meeting)
-  - [Common Questions](#common-questions)
-    - [What if I can’t call my club Hack Club?](#what-if-i-cant-call-my-club-hack-club)
-    - [What if a member of my club does something inappropriate?](#what-if-a-member-of-my-club-does-something-inappropriate)
-    - [What if our adviser does not want to let us meet every week?](#what-if-our-adviser-does-not-want-to-let-us-meet-every-week)
-    - [How do I transition leadership roles to another person?](#how-do-I-transition-leadership-roles-to-another-person)
+- [Common Questions](#common-questions)
+  - [What if I can’t call my club Hack Club?](#what-if-i-cant-call-my-club-hack-club)
+  - [What if a member of my club does something inappropriate?](#what-if-a-member-of-my-club-does-something-inappropriate)
+  - [What if our adviser does not want to let us meet every week?](#what-if-our-adviser-does-not-want-to-let-us-meet-every-week)
+  - [How do I transition leadership roles to another person?](#how-do-i-transition-leadership-roles-to-another-person)
 
 ## What is a Hack Club?
 
