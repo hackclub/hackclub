@@ -2,7 +2,13 @@
 
 So far we've been building one-off static webpages with HTML, CSS, and JavaScript. In this workshop, we'll be building a real notes app!
 
-See the [demo](https://notes-lachlanjc.herokuapp.com/) and the [final code](https://github.com/lachlanjc/notes-demo/tree/final).
+Links to a live demo and the final code below. This workshop should take around 1 hour.
+
+[**Live Demo**](https://notes-lachlanjc.herokuapp.com/)
+
+[**Final Code**](https://github.com/lachlanjc/notes-demo/tree/final)
+
+---
 
 We're using a programming language called [Ruby](http://ruby-lang.org), and a framework for building web apps called [Ruby on Rails](http://rubyonrails.org). (A framework makes specific tasks with a programming language easier by including code you'll need so you don't have to write it.)
 
