@@ -31,6 +31,11 @@ We set OKRs quartlerly. Here are our current OKRs for Q3 2017:
 >
 > - _Slack activity increase (pending on Max, will have this by 2017-07-16)_
 > - _NPS (pending on Max, will have this by 2017-07-16)_
+>
+> **Secure funding**
+>
+> - $750k in commitments
+> - >$250 in bank account
 
 ## Managing Work
 
