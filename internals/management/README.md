@@ -9,7 +9,6 @@ As illustrated by the amazing GIF above, this directory is for anything related 
 **Goals:**
 
 - [Long-term (5 years)](long_term.md)
-- [Short-term (summer)](short_term.md)
 
 **Managing work:**
 
