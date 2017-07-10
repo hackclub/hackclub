@@ -73,7 +73,7 @@ The entire area on which everything lives is called the **_canvas_**:
 
 The instructions below will walk you through step-by-step of how to build a single player soccer game.
 
-| **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
+| **[![](img/1_mini.png) <br> 1. Initial Setup](initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite](add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
 |--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
 | **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     |                                                                      |
 
