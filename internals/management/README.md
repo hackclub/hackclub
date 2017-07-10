@@ -35,7 +35,7 @@ We set OKRs quartlerly. Here are our current OKRs for Q3 2017:
 > **Secure funding**
 >
 > - $750k in commitments
-> - >$250 in bank account
+> - Over $250 in bank account
 
 ## Managing Work
 
