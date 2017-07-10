@@ -6,6 +6,8 @@
 
 [**Long-term, 5 year goals**](long_term.md)
 
+---
+
 We use **objectives** and **key results** to set goals at Hack Club. We operate on the regular business year:
 
 - **Q1**: January - March
