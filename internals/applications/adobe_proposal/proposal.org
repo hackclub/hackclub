@@ -1,0 +1,119 @@
+#+LANGUAGE: en
+#+OPTIONS: ':t toc:nil num:nil
+#+LATEX_HEADER: \usepackage[margin=1.25in]{geometry}
+#+LATEX_HEADER: \usepackage{parskip}
+#+TITLE: Hack Club Proposal
+
+Hack Club helps high schoolers start awesome after-school coding clubs. We
+provide everything needed to get started: curriculum, leadership training,
+community, and events.
+
+In the US alone, 3 in 4 high schools don't offer any coding classes and we're
+setting out to help students change that. We think coding is a superpower that
+anyone can learn and we want to provide every student, regardless of ethnicity,
+gender, or socioeconomic status, the opportunity.
+
+Our mission is twofold:
+
+1. To make bringing high-quality coding education to a high school as low-cost
+   and frictionless as possible.
+2. We're deeply concerned by computer science curriculum currently
+   being taught in schools. Coding changed our lives because it showed us we can
+   build anything, not because it showed us how to ace a test. Through our
+   clubs, we want to introduce coding to today and tomorrow's high schoolers as
+   the next art, not the next algebra.
+
+* Our Impact
+Since our conception in late 2014, we've grown to 84 schools in 16 states and 7
+countries, reaching over 1,500 students.
+
+In our latest poll, clubs reported 33% of members to be female (nearly 2x high
+school coding class average) and 37% of members to be black or Hispanic (7x
+industry average).
+
+[[./img/club_map.png]]
+
+* How it Works
+Hack Clubs are student-led coding clubs. They typically meet once or twice a
+week after-school and draw between 10 - 25 members each meeting.
+
+There are three ingredients needed to start a Hack Club:
+
+- Student leader
+- Host teacher
+- Hack Club's resources
+
+Students apply to start a Hack Club through our website. After going through our
+review process, we set up weekly calls and work with them one-on-one to get the
+club started.
+
+We provide pre-written workshops for each club meeting. Each workshop walks club
+members through the process of building real things using real tools -- there's
+no sandbox or magic involved. By the end of the first meeting, every member has
+their first website online and hosted on GitHub. By the end of the third,
+everyone has generated artwork using code. By the end of the fifth, every member
+has built a game similar to Super Mario Bros -- and so on.
+
+If you walk into a Hack Club, you'll see an atmosphere similar to a hackathon.
+Club members work independently on workshops/projects and they're constantly
+collaborating and helping each other. Clubs periodically host demo days, where
+members show off what they build.
+
+[[./img/club_leaders.jpg]]
+
+** Why Hack Club
+Bringing high-quality coding education to schools is time-intensive and
+expensive. By going through students instead of the administration, Hack
+Club bypasses most of the red tape and costs associated with starting a new
+program at a school.
+
+Starting a Hack Club can take as little as two weeks. Our student leaders don't
+need to find their own space (the school is their space), recruit external
+volunteers (their friends are volunteers), or hire teachers (they teach using
+our pre-written workshops). This model makes the cost of starting a new club
+virtually $0 from our end and we think it'll let us scale where others haven't.
+
+* Goals
+- 2016 :: Bring Hack Clubs to 200 schools
+- 2017 :: Bring Hack Clubs to 500 schools
+- 2020 :: Impact 100,000 students annually through our clubs
+
+* The Ask
+We need Adobe's help scaling our operations to hit 200 schools by the end
+of 2016. The hires made and processes built over the next 6 months will lay the
+groundwork for all future Hack Club growth -- we expect this to bring us through
+the "ramping up" phase of the hockey stick and into exponential growth.
+
+We're requesting $140,000 in support to make this happen. $100,000 will go to
+hiring our first operations manager and the remaining $40,000 will go to
+establishing a discretionary operations budget.
+
+The operations manager will manage club logistics and onboarding as we grow.
+They'll work directly with our executive director, Zach Latta, to build scalable
+processes that'll support us in the years to come. They'll be compensated
+$80,000 -- the remaining $20,000 will cover taxes and benefits.
+
+The discretionary budget will fund additional operational expenses through
+2016 - 2017 school year. Because of the pure volume and diversity of schools
+we'll be in, we expect to regularly travel onsite -- especially in the case of
+low-income and underfunded school districts. We also expect to experiment with
+new onboarding methods, included shipping physical materials to club leaders.
+
+** Adobe's Impact
+With Adobe's support, we'll be able to build out the operational capacity we
+need to scale Hack Club through 2016 and beyond -- the work done in the next 6
+months will be the foundation of our growth in the years to come.
+
+Per our latest poll, the average club size is 17 members. Assuming we keep that
+average number of attendees, expanding to 200 schools will bring our membership
+to 3,400 high schoolers. For the vast majority of these students, Hack Club will
+be their first exposure to coding.
+
+Assuming we continue to grow by 250% each year, 21,000 students will be in Hack
+Clubs by the end of 2018. By the end of 2019, we'll have 53,000. In 2020,
+there'll be over 100,000.
+
+Code changes lives. It shows students that they can build anything and be anyone
+-- we truly believe it's the closest thing we have to a superpower. We hope
+you'll join us at this pivotal stage to make Hack Club the entry point for high
+schoolers around the world.

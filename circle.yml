@@ -1,3 +1,10 @@
+machine:
+  services:
+    - docker
+
 test:
   override:
-    - curl -sL https://git.io/vswrY | bash
+    - docker run -v $(pwd):/app hackclub/markcop:latest:
+        parallel: true
+        files:
+          - "**.md"

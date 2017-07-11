@@ -1,0 +1,112 @@
+#!/bin/bash
+
+PLATFORM=$(uname)
+
+show_help() {
+  cat <<EOF
+Usage: $0 [command]
+
+Available commands:
+
+	upload	upload a JS Bin directory to a gist
+	update	upload to a gist and update all references in .md files
+
+EOF
+
+  exit 1
+}
+
+get_dir() {
+  OURPWD=$PWD
+  cd "$(dirname "$1")"
+  LINK=$(readlink "$(basename "$1")")
+  while [ "$LINK" ]; do
+    cd "$(dirname "$LINK")"
+    LINK=$(readlink "$(basename "$1")")
+  done
+  REALPATH="$PWD/$(basename "$1")"
+  cd "$OURPWD"
+  echo "$REALPATH"
+}
+
+upload() {
+  local dir=$(get_dir $1)
+
+  # We have to split this up into multiple lines because the `local` command
+  # always returns 0 if used properly. We later want to use $? to see the exit
+  # status of the gist command.
+  local gist_output
+  gist_output=$(gist -ap $dir/*)
+  # If gist outputted an error, print its output and exit
+  if [ $? -ne 0 ]; then
+    echo $gist_output
+    exit $?
+  fi
+
+  local gist_id=${gist_output:24} # Chomp off the https://gist.github.com/ part
+  local jsbin_url="https://jsbin.com/gist/$gist_id"
+
+  echo $jsbin_url
+}
+
+update() {
+  for dir in "$@"; do
+    local dir=$(get_dir $dir)
+    local basename=$(basename $dir)
+    local jsbin_url=$(upload $dir)
+
+    echo "I'm about to update all $basename references to the new JS Bin URL"\
+         "($jsbin_url) in $(basename $PWD). Let me continue?"
+    select yn in "Yes" "No"; do
+      case $yn in
+        Yes ) break;;
+        No ) exit;;
+      esac
+    done
+
+    # match groups:
+    #
+    # 1) [example_name]:
+    # 2) https://gist.jsbin.com/oldgistid
+    # 3) ?output,html
+    local regex="\(\[$basename.*\]:\) \([^\?]*\)\(.*\)"
+    local escaped_url=$(echo "$jsbin_url" | sed 's/\//\\\//g') # replace / with \/
+    local sed_exp="s/$regex/\1 $escaped_url\3/"
+
+    # Do the replace!
+    #
+    # We provide an empty string as an argument to the -i option if we're on
+    # Darwin because BSD's sed automatically creates backup files. An empty
+    # string tells it not to create backups.
+    #
+    # The find commands are from https://stackoverflow.com/questions/4767396/linux-command-how-to-find-only-text-files
+    if [ $PLATFORM = "Darwin" ]; then
+      find . -type f -exec grep -Il "" {} \; | xargs sed -i '' "$sed_exp"
+    else
+      find . -type f -exec grep -Iq . {} \; -and -print | xargs sed -i "$sed_exp"
+    fi
+  done
+}
+
+handle_command_line() {
+  local cmd=$1;
+  local args="${*:2}"
+
+  case $cmd in
+    "upload")
+      upload $args
+      ;;
+    "update")
+      update $args
+      ;;
+    *)
+      show_help
+      ;;
+  esac
+}
+
+if [ $# -eq 0 ]; then
+  show_help
+fi
+
+handle_command_line "$@"
