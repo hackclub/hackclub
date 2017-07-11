@@ -337,7 +337,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 - [Gabriel Lazrak](http://gabriellazrak.github.io/)
 - [Rebecca Jourard](https://mnefertiti.github.io/personalwhale/)
-- [John Cena's](http://nguyenbrian.github.io/john-cenas-personal-website/) (created by Brian Nguyen)
+- [John Cena's](http://notbrian.github.io/john-cenas-personal-website/) (created by Brian Nguyen)
 - [Jevin Sidhu](http://jevinsidhu.com/)
 - [Zero Cool](https://harrison.tech/zero-cool/)
 - [Chaoyi Zha](https://cydrobolt.com/)
