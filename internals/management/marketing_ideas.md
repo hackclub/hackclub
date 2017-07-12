@@ -6,4 +6,4 @@ Working document for holding marketing ideas for Hack Club. Results from first b
 
 Additional ideas below (include your name next to your idea):
 
-- TODO
+- Humble Bundle!
