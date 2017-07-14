@@ -308,9 +308,9 @@ Next, we'll set up our functions to detect clicking and dragging. Normally we wo
 
 So instead, we'll be detecting mouse activity with one of the canvas's methods. In order to call a method of canvas, we must store our canvas in a variable. Alter the `createCanvas()` line in `setup()`:
 
-```js
-̶c̶r̶e̶a̶t̶e̶C̶a̶n̶v̶a̶s̶(̶4̶0̶0̶,̶ ̶4̶0̶0̶)̶;̶
-var canvas = createCanvas(400, 400);
+```diff
+- createCanvas(400, 400);
++ var canvas = createCanvas(400, 400);
 ```
 
 And then we can use the `.mousePressed()` method, and pass in our previously created `drawPoint()` function as an argument. This means that `drawPoint()` will be executed when there is a mouse pressed on the canvas.
@@ -358,9 +358,9 @@ function drawPointIfMousePressed() {
 
 And then use it:
 
-```js
-̶c̶a̶n̶v̶a̶s̶.̶m̶o̶u̶s̶e̶M̶o̶v̶e̶d̶(̶d̶r̶a̶w̶P̶o̶i̶n̶t̶)̶;̶
-canvas.mouseMoved(drawPointIfMousePressed);
+```diff
+- canvas.mouseMoved(drawPoint);
++ canvas.mouseMoved(drawPointIfMousePressed);
 ```
 
 Now, if we save and refresh live preview (opened with `preview` > `live preview`), we'll be able to draw stuff. Then, if we link the URL of our external live preview to a friend, we'll be able to see what they're drawing as well! Awesome!
