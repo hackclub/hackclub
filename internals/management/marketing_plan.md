@@ -18,7 +18,7 @@ Immediate seeds to build:
 2. Dominate online discussion
 3. Storytelling of good clubs
 
-If there are clear one-off stunts to do, do them. Eyeballs = conversions.
+If there are clear one-off stunts to do, do them. Eyeballs = conversions. [Click here for working doc with one-off ideas.](marketing_ideas.md)
 
 ## High Schooler Coding Out Of Class = Hack Club
 
