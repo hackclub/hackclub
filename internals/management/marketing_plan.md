@@ -3,8 +3,9 @@
 
 Two goals:
 
-1. **Short-term:** Make Hack Club synonymous with coding clubs **(coding clubs = Hack Club)**
-2. **Long-term:** Make Hack Club synonymous with high schoolers coding out of class **(high schooler coding out of class = Hack Club)**
+**Short-term:** Make Hack Club synonymous with coding clubs _(coding clubs = Hack Club)_
+
+**Long-term:** Make Hack Club synonymous with high schoolers coding out of class _(high schooler coding out of class = Hack Club)_
 
 ## Coding Clubs = Hack Club
 
