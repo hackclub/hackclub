@@ -31,8 +31,8 @@ We set OKRs quartlerly.
 
 **Increase leader happiness**
 
-- _Slack activity increase (pending on data collection)
-- _NPS (pending on data collection)
+- _Slack activity increase (pending on data collection)_
+- _NPS (pending on data collection)_
 
 Current spec for how we're planning on accomplishing this over at https://gist.github.com/MaxWofford/763d06a29ac142bc68420f4798ed4d87.
 
