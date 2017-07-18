@@ -37,7 +37,7 @@ We set OKRs quartlerly.
 **Secure funding**
 
 - $750k in commitments
-- Over $250 in bank account
+- Over $250k in bank account
 
 ## Managing Work
 
