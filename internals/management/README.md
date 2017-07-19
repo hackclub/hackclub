@@ -39,7 +39,7 @@ Current spec for how we're planning on accomplishing this over at https://gist.g
 **Secure funding**
 
 - $750k in commitments
-- Over $250k in bank account
+- Over $250k in bank account from fundraising in bank account
 
 ## Managing Work
 
