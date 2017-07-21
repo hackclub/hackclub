@@ -1,8 +1,8 @@
 # Backstory
 
-## Pre-Founding Timeline
-
 > [Hack Club: How did it get here? Did it get here? Let's find out!](http://vignette3.wikia.nocookie.net/bojackhorseman/images/f/f2/HSACWDTK%3FDTKT%3FLFO%21%21.png/revision/latest?cb=20150720050503)
+
+## Pre-Founding Timeline
 
 - **(September 2012)** Zach started high school and was immediately frustrated. Wanted to write code with others, but there wasn't a CS class, so he started a club to build the class he wished he had (it was terrible).
 - **(~May 2012)** Zach got his first job and started helping build [Football Heroes](http://run-games.com/footballheroes/). Coding was a superpower. Slog away at school during the day, stay up late and work on real code at night. Learned a ton and realized he was a terrible programmer.
