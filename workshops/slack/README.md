@@ -1,4 +1,4 @@
-# <img src="img/slack_logo.png" alt="Slack" width="300px">
+# ![Slack](img/slack_logo.png)
 
 Slack is an awesome tool for large group chats (check out their website at https://slack.com). Hack Club's Slack is the home of our community. We use it to ask each other questions, talk about the problems we run into (as members and club leaders), and hang out with each other.
 
