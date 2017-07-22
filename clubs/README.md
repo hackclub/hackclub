@@ -647,7 +647,7 @@ You should warn and ask them stop. You'll want to make sure to tell them what is
 
 If this persists past the warning, then talk to your teacher/club sponsor/school administrator about the proper course of action to take.
 
-Refer to our [Code of Conducts](https://github.com/hackclub/hackclub/blob/master/CONDUCT.md) for more information. 
+Refer to our [Code of Conduct](https://github.com/hackclub/hackclub/blob/master/CONDUCT.md) for more information. 
 
 ### What if our adviser does not want to let us meet every week?
 
