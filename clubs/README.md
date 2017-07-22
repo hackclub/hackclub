@@ -41,7 +41,6 @@ _A step-by-step guide by the Hack Club community._
   - [What if I can’t call my club Hack Club?](#what-if-i-cant-call-my-club-hack-club)
   - [What if a member of my club does something inappropriate?](#what-if-a-member-of-my-club-does-something-inappropriate)
   - [What if our adviser does not want to let us meet every week?](#what-if-our-adviser-does-not-want-to-let-us-meet-every-week)
-  - [How do I transition leadership roles to another person?](#how-do-i-transition-leadership-roles-to-another-person)
 
 ## What is a Hack Club?
 
@@ -655,7 +654,3 @@ Refer to our [Code of Conducts](https://github.com/hackclub/hackclub/blob/master
 Sometimes, an advisor might not have the time in their schedule to meet weekly. Ask if you can get a second advisor to meet on the weeks that your current one can't.
 
 Alternatively, you could find a public space to meet in and have your club meeting there.
-
-### How do I transition leadership roles to another person?
-
-Hackbot will send you a private message towards the end of your senior year informing you that you should begin thinking about the next leader. A Hack Club staff member will ask you for that person's Slack IGN later that week. 
