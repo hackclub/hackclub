@@ -31,7 +31,7 @@ We set OKRs quartlerly.
 
 **Increase leader happiness**
 
-- On average, 1.22 Slack messages per day for club leaders created during Q3 (click [here](https://modeanalytics.com/hackclub/reports/373f0422adbf/python) for rationale)
+- Median of 1.22 Slack messages per day for club leaders created during Q3 (click [here](https://modeanalytics.com/hackclub/reports/373f0422adbf/python) for rationale)
 - _NPS (pending on data collection)_
 
 Current spec for how we're planning on accomplishing this over at https://gist.github.com/MaxWofford/763d06a29ac142bc68420f4798ed4d87.
