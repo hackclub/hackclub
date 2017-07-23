@@ -37,8 +37,10 @@ _A step-by-step guide by the Hack Club community._
     - [Hacking on Projects](#hacking-on-projects)
     - [Running Demos](#running-demos)
     - [Reminder for Next Meeting](#reminder-for-next-meeting)
-  - [Common Questions](#common-questions)
-    - [What if I can’t call my club Hack Club?](#what-if-i-cant-call-my-club-hack-club)
+- [Common Questions](#common-questions)
+  - [What if I can’t call my club Hack Club?](#what-if-i-cant-call-my-club-hack-club)
+  - [What if a member of my club does something inappropriate?](#what-if-a-member-of-my-club-does-something-inappropriate)
+  - [What if our adviser does not want to let us meet every week?](#what-if-our-adviser-does-not-want-to-let-us-meet-every-week)
 
 ## What is a Hack Club?
 
@@ -638,3 +640,17 @@ Teachers/club sponsors/school administrators will sometimes try to ban a club fr
 > When we call ourselves "Hack Club", it means we're building apps, websites, games, and anything else you can imagine.
 
 If that still doesn't work, just reach out to us on [Slack](https://hackclub.slack.com/messages/C0J7C6YET/). A bunch of club leaders have had to deal with this and we're happy to help out.
+
+### What if a member of my club does something inappropriate?
+
+You should warn and ask them stop. You'll want to make sure to tell them what is inappropriate about their actions, as they themselves may not realize that they are doing something inappropriate.
+
+If this persists past the warning, then talk to your teacher/club sponsor/school administrator about the proper course of action to take.
+
+Refer to our [Code of Conduct](https://github.com/hackclub/hackclub/blob/master/CONDUCT.md) for more information. 
+
+### What if our adviser does not want to let us meet every week?
+
+Sometimes, an advisor might not have the time in their schedule to meet weekly. Ask if you can get a second advisor to meet on the weeks that your current one can't.
+
+Alternatively, you could find a public space to meet in and have your club meeting there.
