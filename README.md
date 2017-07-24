@@ -16,6 +16,7 @@ Quick Hack Club links:
 | See the club guide                        | [`clubs/README.md`][guide]             |
 | Start a club                              | https://hackclub.com/apply             |
 | See our website                           | https://hackclub.com                   |
+| See our contribution guidelines           | [`CONTRIBUTING.md`](CONTRIBUTING.md)   |
 | Read our code of conduct                  | [`CONDUCT.md`](CONDUCT.md)             |
 
 [guide]: clubs/README.md
