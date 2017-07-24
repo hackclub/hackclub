@@ -41,6 +41,7 @@ _A step-by-step guide by the Hack Club community._
   - [What if I can’t call my club Hack Club?](#what-if-i-cant-call-my-club-hack-club)
   - [What if a member of my club does something inappropriate?](#what-if-a-member-of-my-club-does-something-inappropriate)
   - [What if our adviser does not want to let us meet every week?](#what-if-our-adviser-does-not-want-to-let-us-meet-every-week)
+  - [What if people come and do non club related activities?](#What-if-people-come-and-do-non-club-related-activities)
 
 ## What is a Hack Club?
 
@@ -654,3 +655,5 @@ Refer to our [Code of Conduct](https://github.com/hackclub/hackclub/blob/master/
 Sometimes, an advisor might not have the time in their schedule to meet weekly. Ask if you can get a second advisor to meet on the weeks that your current one can't.
 
 Alternatively, you could find a public space to meet in and have your club meeting there.
+
+### What if people come and do non club related activities?
