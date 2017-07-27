@@ -657,3 +657,4 @@ Sometimes, an advisor might not have the time in their schedule to meet weekly. 
 Alternatively, you could find a public space to meet in and have your club meeting there.
 
 ### What if people come and do non club related activities?
+Hack Clubs should be a chill, creative space, but it's not cool when people come with the intention of doing non club related activities, such as playing games or causing trouble. If this is a problem, confront them and remind them that Hack Club isn't a place for unrelated activities. 
