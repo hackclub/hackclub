@@ -41,6 +41,7 @@ _A step-by-step guide by the Hack Club community._
   - [What if I can’t call my club Hack Club?](#what-if-i-cant-call-my-club-hack-club)
   - [What if a member of my club does something inappropriate?](#what-if-a-member-of-my-club-does-something-inappropriate)
   - [What if our adviser does not want to let us meet every week?](#what-if-our-adviser-does-not-want-to-let-us-meet-every-week)
+  - [What if people come and do non club related activities?](#What-if-people-come-and-do-non-club-related-activities)
 
 ## What is a Hack Club?
 
@@ -654,3 +655,13 @@ Refer to our [Code of Conduct](https://github.com/hackclub/hackclub/blob/master/
 Sometimes, an advisor might not have the time in their schedule to meet weekly. Ask if you can get a second advisor to meet on the weeks that your current one can't.
 
 Alternatively, you could find a public space to meet in and have your club meeting there.
+
+### What if people come and do non club related activities?
+
+Hack Clubs should be a fun, chill, and creative spaces, where the focus is to create an environment where people want to learn to hack. However, it's not cool when people come with the intention of doing non club related activities, such as playing games or messing around for the fun of it. 
+
+If this happens, make them aware of their actions, as they themselves might not know what they are doing is wrong.
+
+If this persists past the warning, then talk to your teacher/club sponsor/school administrator about the proper course of action to take.
+
+Refer to our [Code of Conduct](https://github.com/hackclub/hackclub/blob/master/CONDUCT.md) for more information. 
