@@ -4,7 +4,6 @@ Hack Club is the worldwide movement of student-led coding clubs.
 
 Hack Clubs are after-school communities at high schools where people build things together. This repository contains the tools for starting and leading great clubs.
 
-[![Slack Status](https://slack.hackclub.com/badge.svg)](https://slack.hackclub.com)
 [![Build Status](https://circleci.com/gh/hackclub/hackclub.svg?style=shield)](https://circleci.com/gh/hackclub/hackclub)
 
 Quick Hack Club links:
