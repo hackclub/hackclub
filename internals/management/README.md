@@ -43,3 +43,7 @@ Work is broken down into work-specific, sprint-like _projects_ to accomplish key
 Projects should ideally exist for no longer than 30 days and cannot contain subprojects. Once a project's deadline is passed, it should be closed (not deleted). Long-term projects should be broken down into more managable chunks.
 
 [The main GitHub project](https://github.com/orgs/hackclub/projects/2) tracks the progress of projects.
+
+## Miscellaneous
+
+- [Social media plan](https://www.notion.so/mdhack/Hack-Club-Social-Media-Campaign-466b8d224f4a4b0a91a1e367e17a3b1e)
