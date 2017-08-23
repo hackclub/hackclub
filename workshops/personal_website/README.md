@@ -51,11 +51,11 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 
 2. Under "Repository name" write `USERNAME.github.io` (replace `USERNAME` with your actual username). You have to name your repository this in order for GitHub Pages to work correctly (we'll talk more about GitHub Pages later)
 
-   > ![](img/gh_create_new_repo.png)
+   ![](img/gh_create_new_repo.png)
 
 3. Yay! You've created your very first repository! Now, copy the "HTTPS link" at the top. You will need this link for the next step.
 
-   > ![](img/gh_copy_link.gif)
+   ![](img/gh_copy_link.gif)
 
 ### 3) Signing Up for Cloud9
 
@@ -63,27 +63,27 @@ We'll be using a service called Cloud9 to write, save, and organize all the code
 
 1. In a new tab, open https://hackclub.com/cloud9_setup and enter your email to get an invite.
 
-   > ![](img/c9_setup_email.png)
+   ![](img/c9_setup_email.png)
 
 2. You'll get an invitation to join Hack Club on Cloud9 in your inbox. Click the link in the invite and you'll see this screen:.
 
-   > ![](img/c9_start_signup.png)
+   ![](img/c9_start_signup.png)
 
    You should end up with a screen that looks like this:
 
-   > ![](img/c9_dashboard.png)
+   ![](img/c9_dashboard.png)
 
 3. Click the gray box that says "Create a new workspace".
 
-   > ![](img/c9_create_new_workspace_button.gif)
+   ![](img/c9_create_new_workspace_button.gif)
 
 4. Set the "Workspace name" to `projects`.
 
-   > ![](img/c9_name_workspace.png)
+   ![](img/c9_name_workspace.png)
 
 5. Under "Clone from Git or Mercurial URL", paste the HTTPS Link that you copied from your GitHub repository.
 
-   > ![](img/c9_clone_from_existing.png)
+   ![](img/c9_clone_from_existing.png)
 
 6. Click the green "Create Workspace" button at the bottom.
 
