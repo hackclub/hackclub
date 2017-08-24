@@ -16,7 +16,7 @@ Someone will always tell you you're doing it wrong. Coding problems generally ha
 
 ## 2. It Never Works the First Time
 
-When you first start learning to code, you'll very quickly run up against this particular experience: you think you've set up everything the way you're supposed to, you've checked and re-checked it, and it still. doesn't. work. You don't have a clue where to begin trying to fix it, and the error message (if you're lucky enough to have one at all) might as well say "screw you". You might be tempted to give up at this point, thinking that you'll never figure it out, that you're not cut out for this.
+When you first start learning to code, you'll very quickly run up against this particular experience: you think you've set up everything the way you're supposed to, you've checked and re-checked it, and it still. doesn't. work. You don't have a clue where to begin trying to fix it, and the error message (if you're lucky enough to have one at all) might as well say "this is impossible". You might be tempted to give up at this point, thinking that you'll never figure it out, that you're not cut out for this.
 
 But this experience is so common for programmers of all skill levels that it says absolutely nothing about your intelligence, tech-savviness, or suitability for the coding life. It will happen to you as a beginner, but it will also happen to you as an experienced programmer. The main difference will be in how you respond to it.
 
