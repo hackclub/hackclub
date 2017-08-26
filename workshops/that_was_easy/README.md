@@ -45,7 +45,7 @@ If this feels like an exorbitant amount of new tools -- you're absolutely right.
 3. In this folder, right-click again, select "New File," and name the new file `index.html`. This is where we will be writing HTML to actually create the button.
 4. Create another file in the `that_was_easy` folder, and name this one `main.js`. This is where we will be writing our JavaScript to make the button play sounds.
 5. Create another file in the `that_was_easy` folder, and name this one `styles.css`. This is where we will be making our button look pretty.
-6. We've provided an amusing sound for you -- download the file by clicking [here](sounds/that_was_easy.mp3).
+6. We've provided an amusing sound for you -- download the file by clicking [here](https://github.com/hackclub/hackclub/raw/master/workshops/that_was_easy/sounds/that_was_easy.mp3).
 7. Then, drag the file you've just saved into the `that_was_easy` directory in the Cloud9 sidebar.
 8. Now, open up `index.html` and type the following:
 
