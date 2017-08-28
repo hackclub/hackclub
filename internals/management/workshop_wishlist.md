@@ -7,3 +7,4 @@
 5. Other cool frontend stuff, especially beyond building basic websites
 6. Heroku workshop (how to deploy things using Heroku or maybe another backend)
 7. How to host a hackathon (not a traditional workshop, but would really like to have on the site)
+8. [CAD workshop?](https://hackclub.slack.com/archives/C3A6RB5SA/p1503953718000169)
