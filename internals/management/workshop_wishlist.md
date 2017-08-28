@@ -6,3 +6,4 @@
 4. Introduction to Arduino / other hardware
 5. Other cool frontend stuff, especially beyond building basic websites
 6. Heroku workshop (how to deploy things using Heroku or maybe another backend)
+7. How to host a hackathon (not a traditional workshop, but would really like to have on the site)
