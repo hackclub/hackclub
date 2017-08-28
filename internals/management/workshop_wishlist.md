@@ -5,3 +5,4 @@
 3. Ruby on Rails introduction
 4. Introduction to Arduino / other hardware
 5. Other cool frontend stuff, especially beyond building basic websites
+6. Heroku workshop (how to deploy things using Heroku or maybe another backend)
