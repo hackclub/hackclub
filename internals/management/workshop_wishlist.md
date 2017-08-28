@@ -1,3 +1,3 @@
 # Workshop Wishlist
 
-_Items pending._
+1. Build a backend using Express & Node
