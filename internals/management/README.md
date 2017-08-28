@@ -47,3 +47,4 @@ Projects should ideally exist for no longer than 30 days and cannot contain subp
 ## Miscellaneous
 
 - [Social media plan](https://www.notion.so/mdhack/Hack-Club-Social-Media-Campaign-466b8d224f4a4b0a91a1e367e17a3b1e)
+- [Workshop wishlist](workshop_wishlist.md)
