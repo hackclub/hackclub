@@ -63,6 +63,7 @@ _These workshops are either unfinished or untested._
 | [Rails Notes][rails_notes]                 | Ruby on Rails                            | Build a simple notes app with Rails.                                             | [@lachlanjc][lachlanjc]                                                                                                |
 | [Ajar.io][ajar]                            | JavaScript                               | A clone of Agar.io                                                               | [@Bogidon][Bogidon]                                                                                                    |
 | [Chat][chat]                               | JavaScript & Firebase                    | A real-time chat application                                                     | Hack Club staff                                                                                                        |
+| [Linux on a Stick][linux_on_a_stick]       | Linux                                    | USB stick with Linux installed!                                                 | [@retiform][retiform]                                                                                                  |
 
 ### Retired Workshops
 
@@ -92,6 +93,7 @@ _:warning: These workshops are no longer maintained. They may contain errors and
 [jonleung]: https://github.com/jonleung
 [samayshamdasani]: https://github.com/samayshamdasani
 [lachlanjc]: https://github.com/lachlanjc
+[retiform]: https://github.com/retiform
 
 ## Contributing to the Workshops
 
@@ -109,6 +111,7 @@ Interested in contributing to our workshops? Look [here](GUIDELINES.md) and [her
 [geometric_pattern]: geometric_pattern/
 [git_and_github]: git_and_github/
 [github_pages]: github_pages/
+[linux_on_a_stick]: linux_on_a_stick/
 [maze]: maze/
 [notes_to_self]: notes_to_self/
 [personal_website]: personal_website/
