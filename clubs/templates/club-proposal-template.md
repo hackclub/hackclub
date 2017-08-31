@@ -1,6 +1,6 @@
 # New Club Proposal
 ### Club Name: 
-Hack Club (or something else can be chosen, if the word "hack" would be a problem)
+Hack Club (in this case, "hack" means solving problems cleverly with code, just like life-hacks)
 ### Applicant:
 Akaanksh Raj
 ### Purpose:
@@ -18,7 +18,7 @@ The club is like a year-long hackathon with some teaching. At the beginning of e
 ```
 New Club Proposal
 Club Name:
-Hack Club (or something else can be chosen, if the word "hack" would be a problem)
+Hack Club (in this case, "hack" means solving problems cleverly with code, just like life-hacks)
 Applicant:
 [Your Name] [Teacher Name]
 Purpose:
