@@ -3,6 +3,7 @@
 ### Club Name:
 
 Hack Club (in this case, "hack" means solving problems cleverly with code, just like life-hacks)
+
 ### Applicant:
 
 Akaanksh Raj
