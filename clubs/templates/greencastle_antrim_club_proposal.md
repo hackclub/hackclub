@@ -1,5 +1,7 @@
 # New Club Proposal
 
+_This is the new club proposal submitted by [@akaanksh](https://github.com/akaanksh) to start a Hack Club at Greencastle Antrim High School._
+
 ### Club Name:
 
 Hack Club (in this case, "hack" means solving problems cleverly with code, just like life-hacks)
