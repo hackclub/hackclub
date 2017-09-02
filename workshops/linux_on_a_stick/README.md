@@ -1,4 +1,5 @@
 # Linux on a Stick (Portable Linux)
+
 This tutorial is in beta; you have been warned.
 
 Ever wished you could have your favorite programs on every computer you use?  Want your perfectly curated set of browser extentions no matter where you go?
