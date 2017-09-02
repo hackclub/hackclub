@@ -4,11 +4,11 @@ This tutorial is in beta; you have been warned.
 
 Ever wished you could have your favorite programs on every computer you use?  Want your perfectly curated set of browser extentions no matter where you go?
 
-Well now you can, with the power of shoving a full Linux distro onto a usb stick/external hardrive!
+Well now you can, with the power of shoving a full Linux distro onto a USB stick/external hardrive!
 
 Disclaimer: USB flash drives have a limtied number of times they can be rewritten, and depending on the number cycles your device can handle, installing a full Linux distro may cause it to fail faster if you install and uninstall stuff/get updates a lot. Basically, ** make backups! ** People using external hard drives should be fine, as they are intended to be rewritten a lot.
 
-Disclaimer 2: this will only work on computers that allow usb boot, so some chromebooks, and computers with a bios password may not allow you to boot from usb. Also, I am not responable for people freaking out when they see their computers have completey differnet OSes on them. (Live USB booting is not permenant and will not store anything on their computer unless make it).
+Disclaimer 2: this will only work on computers that allow USB boot, so some chromebooks, and computers with a bios password may not allow you to boot from USB. Also, I am not responable for people freaking out when they see their computers have completey differnet OSes on them. (Live USB booting is not permenant and will not store anything on their computer unless make it).
 
 ## New to Linux? Read here:
 
@@ -21,14 +21,14 @@ Okay, now that those are out of the way time to get started:
 
 # What even is a persistant Linux USB?
 
-A persistant Linux USB is a normal Linux distro intalled normally to your usb drive. Unlike a live Linux USB, persistant USB drives will keep any changes you make. That means you can save documents, install programs, browser extentions, etc.  This is highly useful if you want to hav
+A persistant Linux USB is a normal Linux distro intalled normally to your USB drive. Unlike a live Linux USB, persistant USB drives will keep any changes you make. That means you can save documents, install programs, browser extentions, etc.  This is highly useful if you want to hav
 
 # What you need:
 
 First off you will need three things to make a persistant Linux USB:
 
 - A computer you are the admin on, runnning Linux, Windows, etc.
-- A usb drive big enough to install a distro of choice that you dont mind wiping.
+- A USB drive big enough to install a distro of choice that you dont mind wiping.
 - ISO image of the the distro I recommend an [ubuntu flavor](https://www.ubuntu.com/download/ubuntu-flavours) if you have a small flash drive < 16 gb, choose lubuntu, as it only take 3ish gb to install and is **insanely fast**. If you need to run on really slow computers, lubuntu, xubuntu, or Ubuntu MATE should work well. Otherwise, choose whatever ubuntu you wish. [Linux mint](https://www.linuxmint.com/download.php) is really good if you like windows 7's user interface.  (Xfce version for slow computers)
 - A program to create live USBs that supports persistance (more on this later)
   
@@ -38,7 +38,7 @@ First off you will need three things to make a persistant Linux USB:
 
 ## This tutorial also covers how to install to USB from Ubuntu later on.
 
-In order to create your live usb drive install [Linux Live USB Creator (LiLi)](http://www.linuxliveusb.com) or the [Universal USB Installer](https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/)  
+In order to create your live USB drive install [Linux Live USB Creator (LiLi)](http://www.linuxliveusb.com) or the [Universal USB Installer](https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/)  
 
 If you are on Ubuntu use [Unetbootin](https://unetbootin.github.io/)
   
