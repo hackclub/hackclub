@@ -3,30 +3,30 @@ This tutorial is in beta; you have been warned.
 
 Ever wished you could have your favorite programs on every computer you use?  Want your perfectly curated set of browser extentions no matter where you go?
 
-Well now you can, with the power of shoving a full linux distro onto a usb stick/external hardrive!
+Well now you can, with the power of shoving a full Linux distro onto a usb stick/external hardrive!
 
-Disclaimer: USB flash drives have a limtied number of times they can be rewritten, and depending on the number cycles your device can handle, installing a full linux distro may cause it to fail faster if you install and uninstall stuff/get updates a lot. Basically, ** make backups! ** People using external hard drives should be fine, as they are intended to be rewritten a lot.
+Disclaimer: USB flash drives have a limtied number of times they can be rewritten, and depending on the number cycles your device can handle, installing a full Linux distro may cause it to fail faster if you install and uninstall stuff/get updates a lot. Basically, ** make backups! ** People using external hard drives should be fine, as they are intended to be rewritten a lot.
 
 Disclaimer 2: this will only work on computers that allow usb boot, so some chromebooks, and computers with a bios password may not allow you to boot from usb. Also, I am not responable for people freaking out when they see their computers have completey differnet OSes on them. (Live USB booting is not permenant and will not store anything on their computer unless make it).
 
-## New to linux? Read here:
+## New to Linux? Read here:
 
-Linux is a computery bit called the kernal which is what communcates what your software wants to do and tells it to your hardware hardware. Many operating systems based on linux have been created, and the are commonly reffered to as  Linux distros, GNU/Linux, or just Linux. If you're not already familiar, Linux is like Windows or macOS, except all of the code is developed publicly and it's completely free. Linux is loved by developers, the most common OS on servers, and it is even what Android is based on.  Linux distros are generally free and open source, very secure against malware, and run super fast. Facebook runs on Linux. Google runs on Linux. Hopefully your code will too.
+Linux is a computery bit called the kernal which is what communcates what your software wants to do and tells it to your hardware hardware. Many operating systems based on Linux have been created, and the are commonly reffered to as  Linux distros, GNU/Linux, or just Linux. If you're not already familiar, Linux is like Windows or macOS, except all of the code is developed publicly and it's completely free. Linux is loved by developers, the most common OS on servers, and it is even what Android is based on.  Linux distros are generally free and open source, very secure against malware, and run super fast. Facebook runs on Linux. Google runs on Linux. Hopefully your code will too.
 
 Also see here for a better explanation:
 http://www.techrepublic.com/article/getting-up-to-speed-with-the-linux-desktop-operating-system/
 
 Okay, now that those are out of the way time to get started:
 
-# What even is a persistant linux USB?
+# What even is a persistant Linux USB?
 
-A persistant linux USB is a normal linux distro intalled normally to your usb drive. Unlike a live linux USB, persistant USB drives will keep any changes you make. That means you can save documents, install programs, browser extentions, etc.  This is highly useful if you want to hav
+A persistant Linux USB is a normal Linux distro intalled normally to your usb drive. Unlike a live Linux USB, persistant USB drives will keep any changes you make. That means you can save documents, install programs, browser extentions, etc.  This is highly useful if you want to hav
 
 # What you need:
 
-First off you will need three things to make a persistant linux USB:
+First off you will need three things to make a persistant Linux USB:
 
-- A computer you are the admin on, runnning linux, windows, etc.
+- A computer you are the admin on, runnning Linux, Windows, etc.
 - A usb drive big enough to install a distro of choice that you dont mind wiping.
 - ISO image of the the distro I recommend an [ubuntu flavor](https://www.ubuntu.com/download/ubuntu-flavours) if you have a small flash drive < 16 gb, choose lubuntu, as it only take 3ish gb to install and is **insanely fast**. If you need to run on really slow computers, lubuntu, xubuntu, or Ubuntu MATE should work well. Otherwise, choose whatever ubuntu you wish. [Linux mint](https://www.linuxmint.com/download.php) is really good if you like windows 7's user interface.  (Xfce version for slow computers)
 - A program to create live USBs that supports persistance (more on this later)
@@ -64,9 +64,9 @@ If it is still there: [awsome](https://img.guggy.com/media/SESaPG90w2/animated/2
 # But wait there's more:
 # (Optional) Step Three: Add More Than 4 GB of Storage
 
-### You will need either a computer running linux, or a linux live USB (nonpersistant is fine) for this step. You can skip this if you used the NTFS file system ealier on.
+### You will need either a computer running Linux, or a Linux live USB (nonpersistant is fine) for this step. You can skip this if you used the NTFS file system ealier on.
 
-The first thing to do is boot into a copy of linux, other than the one on your new portable linux drive, and then plug in your persistant USB. On the USB drive, there should be a file called casper-rw; delete it. **WARNING:** that is where your stored files go on the persistant drive, so backup anything on the portable drive before hand. Next open up (and download) the program GParted (or some alternative). Once in it, select your hard drive and right click on it.  You will see the option to unmount; choose it.
+The first thing to do is boot into a copy of Linux, other than the one on your new portable Linux drive, and then plug in your persistant USB. On the USB drive, there should be a file called casper-rw; delete it. **WARNING:** that is where your stored files go on the persistant drive, so backup anything on the portable drive before hand. Next open up (and download) the program GParted (or some alternative). Once in it, select your hard drive and right click on it.  You will see the option to unmount; choose it.
 
 ![What you should see (more or less.)](https://imgur.com/a/nw4nx)
 
