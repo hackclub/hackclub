@@ -19,13 +19,13 @@ http://www.techrepublic.com/article/getting-up-to-speed-with-the-linux-desktop-o
 
 Okay, now that those are out of the way time to get started:
 
-# What even is a persistant Linux USB?
+# What even is a persistent Linux USB?
 
-A persistant Linux USB is a normal Linux distro intalled normally to your USB drive. Unlike a live Linux USB, persistant USB drives will keep any changes you make. That means you can save documents, install programs, browser extentions, etc.  This is highly useful if you want to hav
+A persistent Linux USB is a normal Linux distro intalled normally to your USB drive. Unlike a live Linux USB, persistent USB drives will keep any changes you make. That means you can save documents, install programs, browser extentions, etc.  This is highly useful if you want to hav
 
 # What you need:
 
-First off you will need three things to make a persistant Linux USB:
+First off you will need three things to make a persistent Linux USB:
 
 - A computer you are the admin on, runnning Linux, Windows, etc.
 - A USB drive big enough to install a distro of choice that you dont mind wiping.
@@ -46,7 +46,7 @@ For this part of this tutorial, I will be using Linux Live USB Creator, but the 
 
 First, download your live USB maker of choice and the ISO you plan to use, and of course, plug your USB drive into your computer, and format it to FAT32.  (You can also format it to NTFS skip the step for going over 4gb of storage, but this may cause issues with  LiLi). 
 
-Next open your program of choice, select the USB drive you intend to use **Be careful: DO NOT SELECT YOUR HARD DRIVE, that will wipe your computer** I also recomend removing all of your USB drives except for the one you are using, to avoid acidentally wiping important data. Select the iso file you downloaded ealier, and make sure to set as much persistant storage as you want.  At this moment you will only be able to set 4gb of storage, but that is normal, and is due to the FAT 32 filesystem.  We will fix this later.  Install the iso to your flash drive, and find something to do while it loads.  
+Next open your program of choice, select the USB drive you intend to use **Be careful: DO NOT SELECT YOUR HARD DRIVE, that will wipe your computer** I also recomend removing all of your USB drives except for the one you are using, to avoid acidentally wiping important data. Select the iso file you downloaded ealier, and make sure to set as much persistent storage as you want.  At this moment you will only be able to set 4gb of storage, but that is normal, and is due to the FAT 32 filesystem.  We will fix this later.  Install the iso to your flash drive, and find something to do while it loads.  
 
 Your config should look something like this:
 
@@ -65,13 +65,13 @@ If it is still there: [awsome](https://img.guggy.com/media/SESaPG90w2/animated/2
 # But wait there's more:
 # (Optional) Step Three: Add More Than 4 GB of Storage
 
-### You will need either a computer running Linux, or a Linux live USB (nonpersistant is fine) for this step. You can skip this if you used the NTFS file system ealier on.
+### You will need either a computer running Linux, or a Linux live USB (nonpersistent is fine) for this step. You can skip this if you used the NTFS file system ealier on.
 
-The first thing to do is boot into a copy of Linux, other than the one on your new portable Linux drive, and then plug in your persistant USB. On the USB drive, there should be a file called casper-rw; delete it. **WARNING:** that is where your stored files go on the persistant drive, so backup anything on the portable drive before hand. Next open up (and download) the program GParted (or some alternative). Once in it, select your hard drive and right click on it.  You will see the option to unmount; choose it.
+The first thing to do is boot into a copy of Linux, other than the one on your new portable Linux drive, and then plug in your persistent USB. On the USB drive, there should be a file called casper-rw; delete it. **WARNING:** that is where your stored files go on the persistent drive, so backup anything on the portable drive before hand. Next open up (and download) the program GParted (or some alternative). Once in it, select your hard drive and right click on it.  You will see the option to unmount; choose it.
 
 ![What you should see (more or less.)](https://i.imgur.com/ViVyqsn.png)
 
-After you unmount, right click again, and click resize. Then resize the partition on your persistant USB drive to the smallest possible size. Also make sure the partition has 0 mib preceeding it, so your new storage partiton can use all of the free space.
+After you unmount, right click again, and click resize. Then resize the partition on your persistent USB drive to the smallest possible size. Also make sure the partition has 0 mib preceeding it, so your new storage partiton can use all of the free space.
 
 ![Should look like this](https://i.imgur.com/blYp32b.png)
 
