@@ -29,7 +29,7 @@ First off you will need three things to make a persistent Linux USB:
 
 - A computer you are the admin on, runnning Linux, Windows, etc.
 - A USB drive big enough to install a distro of choice that you dont mind wiping.
-- ISO image of the the distro I recommend an [ubuntu flavor](https://www.ubuntu.com/download/ubuntu-flavours) if you have a small flash drive < 16 gb, choose lubuntu, as it only take 3ish gb to install and is **insanely fast**. If you need to run on really slow computers, lubuntu, xubuntu, or Ubuntu MATE should work well. Otherwise, choose whatever ubuntu you wish. [Linux mint](https://www.linuxmint.com/download.php) is really good if you like windows 7's user interface.  (Xfce version for slow computers)
+- ISO image of the the distro I recommend an [Ubuntu flavor](https://www.ubuntu.com/download/ubuntu-flavours) if you have a small flash drive < 16 gb, choose Lubuntu, as it only take 3ish gb to install and is **insanely fast**. If you need to run on really slow computers, Lubuntu, Xubuntu, or Ubuntu MATE should work well. Otherwise, choose whatever Ubuntu you wish. [Linux mint](https://www.linuxmint.com/download.php) is really good if you like Windows 7's user interface.  (Xfce version for slow computers)
 - A program to create live USBs that supports persistance (more on this later)
   
 ## Please note: you must get the 32 bit verison of distros to run on older 32 bit machines, but your RAM will be generally limited to under 4gb.
