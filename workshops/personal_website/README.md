@@ -343,6 +343,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 - [Jevin Sidhu](http://jevinsidhu.com/)
 - [Zero Cool](https://harrison.tech/zero-cool/)
 - [Chaoyi Zha](https://cydrobolt.com/)
+- [Osman Ahmed](http://leafbomb.com/)
 
 **Websites Made by Professionals:**
 
