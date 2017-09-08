@@ -654,6 +654,10 @@ Refer to our [Code of Conduct](https://github.com/hackclub/hackclub/blob/master/
 
 Sometimes, an advisor might not have the time in their schedule to meet weekly. Ask if you can get a second advisor to meet on the weeks that your current one can't.
 
+Try explaining to advisors why it's important to meet once per week. For example:
+
+> We want our club members to be interested and engaged during meetings so club members have the right expectation for club meetings. It's important to meet at least once per week so club members stay interested in their projects. If we can't meet each week, people might get distracted in the off-time.
+
 Alternatively, you could find a public space to meet in and have your club meeting there.
 
 ### What if people come and do non club related activities?
