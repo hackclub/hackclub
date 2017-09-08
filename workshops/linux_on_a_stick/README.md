@@ -21,7 +21,7 @@ Okay, now that those are out of the way time to get started:
 
 # What even is a persistent Linux USB?
 
-A persistent Linux USB is a normal Linux distro intalled normally to your USB drive. Unlike a live Linux USB, persistent USB drives will keep any changes you make. That means you can save documents, install programs, browser extentions, etc.  This is highly useful if you want to hav
+A persistent Linux USB is a normal Linux distro intalled normally to your USB drive. Unlike a live Linux USB, persistent USB drives will keep any changes you make. That means you can save documents, install programs, browser extentions, etc.  This is highly useful if you want to have to have some specific program or feature (VPN, terminal acess, etc) that you wouldnt normally have on a public computer, plus you wont be vunreable to many the common Windows viruses out in the wild on public computers.
 
 # What you need:
 
