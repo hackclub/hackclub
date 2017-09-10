@@ -636,6 +636,8 @@ You'll want to do the same thing you did in the second meeting to run demos.
 
 Teachers/club sponsors/school administrators will sometimes try to ban a club from calling itself "Hack Club" because it includes the word "hack". To fix this, try explaining what "hack" means:
 
+> Word "Hacker" has two meanings: the one we refer to is: a person who is skilled with computers or using tools in new ways.
+
 > When we say "hack", we're referring to solving problems cleverly with code – just like "life hacking", except with computers.
 
 > When we call ourselves "Hack Club", it means we're building apps, websites, games, and anything else you can imagine.
