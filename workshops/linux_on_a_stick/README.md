@@ -12,7 +12,7 @@ Disclaimer 2: this will only work on computers that allow USB boot, so some Chro
 
 ## New to Linux? Read here:
 
-Linux is a computery bit called the kernel, which is what bridges communication between the software you use and the hardware installed on your computer. Many operating systems based on Linux have been created, and the are commonly reffered to as  Linux distros, GNU/Linux, or just Linux. If you're not already familiar, Linux is like Windows or macOS, except all of the code is developed publicly (Open Source) and it's completely free. Linux is loved by developers, the most common OS on servers, and it is even what Android is based on.  Linux distros are generally free and Open Source, very secure against malware, and run super fast. Facebook runs on Linux. Google runs on Linux. Hopefully your code will too.
+Linux is a computery bit called the kernel, which is what bridges communication between the software you use and the hardware installed on your computer. Many operating systems based on Linux have been created, and the are commonly reffered to as Linux distros, GNU/Linux, or just Linux. If you're not already familiar, Linux is like Windows or macOS, except all of the code is developed publicly (Open Source) and it's completely free. Linux is loved by developers, the most common OS on servers, and it is even what Android is based on.  Linux distros are generally free and Open Source, very secure against malware, and run super fast. Facebook runs on Linux. Google runs on Linux. Hopefully your code will too.
 
 Also see here for a better explanation:
 http://www.techrepublic.com/article/getting-up-to-speed-with-the-linux-desktop-operating-system/
