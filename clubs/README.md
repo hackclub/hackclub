@@ -642,6 +642,8 @@ Teachers/club sponsors/school administrators will sometimes try to ban a club fr
 
 > When we call ourselves "Hack Club", it means we're building apps, websites, games, and anything else you can imagine.
 
+> When we call ourselves Hackers, we mean the dictionary definition of a person who is a computer enthusiast or has a high level of skill with programming.
+
 If that still doesn't work, just reach out to us on [Slack](https://hackclub.slack.com/messages/C0J7C6YET/). A bunch of club leaders have had to deal with this and we're happy to help out.
 
 ### What if a member of my club does something inappropriate?
