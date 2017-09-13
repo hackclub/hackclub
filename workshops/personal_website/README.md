@@ -337,6 +337,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 **Websites Made by Other Hack Club Hackers:**
 
+- [Sophie Huang](https://sohuang.github.io/)
 - [Gabriel Lazrak](http://gabriellazrak.github.io/)
 - [Rebecca Jourard](https://mnefertiti.github.io/personalwhale/)
 - [John Cena's](http://notbrian.github.io/john-cenas-personal-website/) (created by Brian Nguyen)
