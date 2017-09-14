@@ -1,22 +1,22 @@
 # Workshops
 
-Welcome to our workshops library, where you'll find all the workshops offered by Hack Club.
+Welcome to the workshops library.
 
-Workshops are essentially written lessons that help familiarize you with new tools and concepts.
+Hack Club's workshops are built by the community, for the community. If you're interested in writing a new workshop, please email us at workshops@hackclub.com and we'll work with you one-on-one to make it happen.
 
-Each workshop is around an hour long and walks you through the process of _building something™_ (like a website, app, or game). Instead of starting out solely on learning concepts, our philosophy that the best way to learn to code is to immediately get your feet wet and build real things.
+Each workshop is an hour long and walks you through the process of building something (like a website, app, or game). By the end of each workshop, you'll have a fully functional project online.
 
-Our workshops are a great way to get started! We recommend that you go through these workshops, as well as set aside a few hours after each to further improve what you build -- for example, adding multiplayer support to Soccer game.
+Our philosophy that one of the better ways to learn to code is to immediately get your feet wet and build real things. This is how self-taught programmers do it and we want to help you become a self-taught programmer.
+
+Each workshop provides a starting point for a project. For you to learn, you need to go further than just completing the tutorial. You need to tinker. You need to add features. Change features. Break things. As you do this, you'll start to build understanding. There's going to be a lot of Googling, Stack Overflow, and bug fixing.
+
+You're not going to understand many things that the workshops tell you to do. In fact, you're probably not going to understand most of what's happening at first. That's okay. Part of learning to code is learning to cope with not understanding everything that's going on. You'll build understanding over time. The most important thing is to not give up.
 
 There are three tiers of workshops:
 
 - **Core**: Workshops ready to be run in club meetings.
 - **Experimental**: Anything in progress: from a half-formed idea, to a workshop missing its conclusion.
 - **Retired**: Workshops no longer actively supported by Hack Club and may contain errors, bugs, and monsters.
-
-If you're interested in writing or contributing to a workshop, you can get started by checking out [the contribution guide](CONTRIBUTING.md) -- or ask us in `#meta` on the Slack.
-
-Likewise, if you have any questions or run into any trouble, please reach out to us in our Slack channel ([click here][slack] for instructions on joining Slack) :smile:.
 
 ## Workshop Order
 
