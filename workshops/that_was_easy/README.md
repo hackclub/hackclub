@@ -1,7 +1,5 @@
 # That Was Easy Workshop
 
-
-
 ![](img/easy_screenshot.png)
 
 Links to a live demo and the final code below. This workshop should take around 1 hour.
@@ -221,9 +219,9 @@ var thatWasEasy;
 
 Next, we'll make a new Audio object with the `that_was_easy.mp3`, and assign it to our variable, by modifying the line we just added:
 
-```js
-v̶a̶r̶ ̶t̶h̶a̶t̶W̶a̶s̶E̶a̶s̶y̶;̶
-var thatWasEasy = new Audio("that_was_easy.mp3");
+```diff
+- var thatWasEasy;
++ var thatWasEasy = new Audio("that_was_easy.mp3");
 ```
 
 Here, we've created a new `Audio` object that will have the sound `that_was_easy.mp3`, and assigned the Audio object to a variable named `thatWasEasy` which we declared in the same line.
@@ -249,14 +247,14 @@ To have a little more control over this, let's create a function that will play 
 
 We can create a function by **enclosing the code we've already written in the following way**:
 
-```js
-v̶a̶r̶ ̶t̶h̶a̶t̶W̶a̶s̶E̶a̶s̶y̶ ̶=̶ ̶n̶e̶w̶ ̶A̶u̶d̶i̶o̶(̶"̶t̶h̶a̶t̶_̶w̶a̶s̶_̶e̶a̶s̶y̶.̶m̶p̶3̶"̶)̶;̶
-t̶h̶a̶t̶W̶a̶s̶E̶a̶s̶y̶.̶p̶l̶a̶y̶(̶)̶;̶
+```diff
+- var thatWasEasy = new Audio("that_was_easy.mp3");
+- thatWasEasy.play();
 
-function sayThatWasEasy() {
-  var thatWasEasy = new Audio("that_was_easy.mp3");
-  thatWasEasy.play();
-}
++ function sayThatWasEasy() {
++   var thatWasEasy = new Audio("that_was_easy.mp3");
++   thatWasEasy.play();
++ }
 ```
 
 Now, if we run our project, we'll find that there is no sound at all. Even when we press the button, there is no sound.
@@ -279,16 +277,16 @@ One of the methods is `.on()`. This method sets the button to execute some instr
 
 Here, we will use the method to detect the "click" event, so we'll provide `"click"` as the first argument to `.on()`:
 
-```js
-$̶(̶"̶#̶e̶a̶s̶y̶"̶)̶;̶
-$("#easy").on("click");
+```diff
+- $("#easy");
++ $("#easy").on("click");
 ```
 
 `.on()` takes two arguments, the second of which is what you want to happen when the event has occurred. In our case, we want the browser to say "That was easy!", so we add the function `sayThatWasEasy` which we have already written, as an argument.
 
-```js
-$̶(̶"̶#̶e̶a̶s̶y̶"̶)̶.̶o̶n̶(̶"̶c̶l̶i̶c̶k̶"̶)̶;̶
-$("#easy").on("click", sayThatWasEasy);
+```diff
+- $("#easy").on("click");
++ $("#easy").on("click", sayThatWasEasy);
 ```
 
 To reiterate, we are:
@@ -399,13 +397,13 @@ Now that we have set up the page to react when a key is pressed, we just need to
 
 We will declare this function and name it `delegateKeypress` and pass it as an argument to the method `.keypress()` like so:
 
-```js
-$̶(̶d̶o̶c̶u̶m̶e̶n̶t̶)̶.̶k̶e̶y̶p̶r̶e̶s̶s̶(̶)̶;̶
-$(document).keypress(delegateKeypress);
-
-function delegateKeypress(event) {
-
-}
+```diff
+- $(document).keypress();
++ $(document).keypress(delegateKeypress);
++
++ function delegateKeypress(event) {
++
++ }
 ```
 
 `delegateKeypress()` takes an event as an argument, since that is where the information about the event is contained. Information that we need, such as which key was pressed.
@@ -447,12 +445,12 @@ What? We can click things using code? Of course. A click is just an event. We ca
 
 That said, we can now replace our repetitive code like so:
 
-```js
+```diff
 function delegateKeypress(event) {
   if (event.charCode == 32) {
-    v̶a̶r̶ ̶t̶h̶a̶t̶W̶a̶s̶E̶a̶s̶y̶ ̶=̶ ̶n̶e̶w̶ ̶A̶u̶d̶i̶o̶(̶"̶t̶h̶a̶t̶_̶w̶a̶s̶_̶e̶a̶s̶y̶.̶m̶p̶3̶"̶)̶;̶
-    t̶h̶a̶t̶W̶a̶s̶E̶a̶s̶y̶.̶p̶l̶a̶y̶(̶)̶;̶
-    $("#easy").trigger("click");
+    - var thatWasEasy = new Audio("that_was_easy.mp3");
+    - thatWasEasy.play();
+    + $("#easy").trigger("click");
   }
 }
 ```
