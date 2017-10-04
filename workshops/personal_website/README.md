@@ -26,38 +26,7 @@ This workshop should take around 45 minutes.
 
 ## Part I: Setup
 
-### 1) Signing Up for GitHub
-
-_If you already have a GitHub account, skip to step 3 of [Signing Up for GitHub](#1-signing-up-for-github)._
-
-GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
-
-1. Open https://github.com/join in a new tab and fill in:
-  - your username (if you can't decide on one, your first and last name are a solid choice)
-  - email (you'll be verifying your email in the next step)
-  - password (you'll need to remember this!)
-2. Verify your email by checking the inbox of the email you used
-3. Open https://gh.hackclub.com in a new tab and star the project by clicking the button on the top right that looks like this:
-
-![](img/github_star.png)
-
-_Pro tip: if you want a username that's already taken, you can often get it by [contacting GitHub](https://github.com/contact) (this is actually how we got the `hackclub` username on GitHub). Make sure that the username isn't actively used by another user before reaching out. [Click here](https://help.github.com/articles/name-squatting-policy/) for more details._
-
-### 2) Creating Your First GitHub Repository
-
-GitHub allows us to host our website using a service called GitHub Pages. This means that we can put the files of our website on GitHub and GitHub will give us a URL that we can share with the world.  
-
-1. Go to https://github.com/new
-
-2. Under "Repository name" write `USERNAME.github.io` (replace `USERNAME` with your actual username). You have to name your repository this in order for GitHub Pages to work correctly (we'll talk more about GitHub Pages later)
-
-   ![](img/gh_create_new_repo.png)
-
-3. Yay! You've created your very first repository! Now, copy the "HTTPS link" at the top. You will need this link for the next step.
-
-   ![](img/gh_copy_link.gif)
-
-### 3) Signing Up for Cloud9
+### 1) Signing Up for Cloud9
 
 We'll be using a service called Cloud9 to write, save, and organize all the code we'll write in Hack Club.
 
@@ -312,6 +281,39 @@ Remember to save both `index.html` and `styles.css`! We'll once again use the te
 ## Part IV: Publishing
 
 Right now we can only see our website on our own computer. Let's get our website online!
+
+### 1) Signing Up for GitHub
+
+_If you already have a GitHub account, skip to step 3 of [Signing Up for GitHub](#1-signing-up-for-github)._
+
+GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
+
+1. Open https://github.com/join in a new tab and fill in:
+  - your username (if you can't decide on one, your first and last name are a solid choice)
+  - email (you'll be verifying your email in the next step)
+  - password (you'll need to remember this!)
+2. Verify your email by checking the inbox of the email you used
+3. Open https://gh.hackclub.com in a new tab and star the project by clicking the button on the top right that looks like this:
+
+![](img/github_star.png)
+
+_Pro tip: if you want a username that's already taken, you can often get it by [contacting GitHub](https://github.com/contact) (this is actually how we got the `hackclub` username on GitHub). Make sure that the username isn't actively used by another user before reaching out. [Click here](https://help.github.com/articles/name-squatting-policy/) for more details._
+
+### 2) Creating Your First GitHub Repository
+
+GitHub allows us to host our website using a service called GitHub Pages. This means that we can put the files of our website on GitHub and GitHub will give us a URL that we can share with the world.  
+
+1. Go to https://github.com/new
+
+2. Under "Repository name" write `USERNAME.github.io` (replace `USERNAME` with your actual username). You have to name your repository this in order for GitHub Pages to work correctly (we'll talk more about GitHub Pages later)
+
+   ![](img/gh_create_new_repo.png)
+
+3. Yay! You've created your very first repository! Now, copy the "HTTPS link" at the top. You will need this link for the next step.
+
+   ![](img/gh_copy_link.gif)
+
+### 3) Launch!
 
 1. In the Cloud9 terminal, we'll push our commits to our GitHub repository:
   - `git push` (then press <kbd>enter</kbd>)
