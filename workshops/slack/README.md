@@ -10,7 +10,7 @@ If you're not already on Slack, let's get you into the community. Just keep read
 
 Open up https://slack.hackclub.com in a new tab and enter your email to get an invite from our handy bot.
 
-![Get a Slack invite](img/slack_setup_1_invite.gif)
+![Get a Slack invite](img/slack_setup_1_invite_updated.PNG)
 
 If you head over to your email inbox, you should see an invite to join the Slack. Go ahead and click the `Join Hack Club` button in the email to create an account. It'll ask you to provide a username and password. This username is unique to Hack Club, so you can use usernames that are often taken on other sites (like `mary`). After you create an account, it'll take you to the main Slack interface (you can always get here by going to https://hackclub.slack.com).
 
