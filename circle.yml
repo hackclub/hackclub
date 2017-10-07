@@ -1,0 +1,10 @@
+machine:
+  services:
+    - docker
+
+test:
+  override:
+    - docker run -v $(pwd):/app hackclub/markcop:latest:
+        parallel: true
+        files:
+          - "**.md"

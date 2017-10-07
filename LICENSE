@@ -1,0 +1,36 @@
+Hack Club (c)
+
+Code in this repository (Hack Club), unless specified elsewhere in this
+document, including embedded code in other content, is licensed under the MIT
+license. All other content is licensed under a Creative Commons
+Attribution-ShareAlike 4.0 International License, unless specified elsewhere in
+this document.
+
+You have received a copy of the MIT and Creative Commons licenses along with
+this work in the MIT_LICENSE and CC_BY-SA_LICENSE files, respectively. An online
+version of the Creative Commons license is available at
+<https://creativecommons.org/licenses/by-sa/4.0/>.
+
+--------------------------------------------------------------------------------
+
+In addition to the above license details, Hack Club includes third party code and
+adaptations of other files that has been made available under various licenses.
+
+twilio-node:
+
+Project site - https://twilio.github.io/twilio-node/
+License - MIT License, https://github.com/twilio/twilio-node/blob/master/LICENSE
+
+CONDUCT.md:
+
+Adapted From - https://github.com/golang/go/blob/aa487e66f869785837275ee20441a53888a51bb2/doc/conduct.html
+License - Creative Commons Attribution 3.0, https://creativecommons.org/licenses/by/3.0/
+Changes - We took the code of conduct which was written in HTML, converted it to
+          Markdown, and made modifications to it to fit our needs.
+
+README.md:
+
+Adapted From - https://github.com/FreeCodeCamp/FreeCodeCamp/blob/staging/README.md
+License - BSD 3-Clause License (Revised), https://opensource.org/licenses/BSD-3-Clause
+Changes - We took the contribution guide and made modifications to it to fit our
+          needs.
