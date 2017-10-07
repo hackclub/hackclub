@@ -4,7 +4,7 @@ This is a living document meant to record our current project management practic
 
 ---
 
-Single GitHub project board. Tasks must all follow the INVEST acronym. Don't we love our acryonyms.
+Single GitHub project board. Tasks must all follow the INVEST acronym. Don't we love our acronyms.
 
 - **I**ndependent - Should be self-contained, in a way that there is no inherent dependency on another task
 - **N**egotiable - Not an explicit contract, should leave space for discussion

@@ -257,7 +257,7 @@ But we don't want to position an `<h2>` element. We want to position an `<img>` 
 
 Right now Big Foot loads before the background image does unless you have a fast internet connection and we don't want that! We're going to fix that by running code only after the page has loaded.
 
-Just like how we ran code when someone clicked using `onclick`, we're going to call a function once the page has loaded with `onload`. You can look this up by googlintg "on page load". Lets go ahead and make a script tag for our new function inside the page head `loadBigFoot()`.
+Just like how we ran code when someone clicked using `onclick`, we're going to call a function once the page has loaded with `onload`. You can look this up by Googling "on page load". Lets go ahead and make a script tag for our new function inside the page head `loadBigFoot()`.
 
 ```html
 <head>
@@ -271,7 +271,7 @@ Just like how we ran code when someone clicked using `onclick`, we're going to c
 </head>
 ```
 
-We should also go ahead and add the `onload` attribute to the body tag. There are a couple more things we have to do. First, go ahead and get rid of src tag, as we will be adding that with the function. Then, add an `id` to the img tag. This is so we can change the `src` attribute after the page loads.
+We should also go ahead and add the `onload` attribute to the body tag. There are a couple more things we have to do. First, go ahead and get rid of `src` tag, as we will be adding that with the function. Then, add an `id` to the `img` tag. This is so we can change the `src` attribute after the page loads.
 
 ```html
     <body onload="loadBigFoot()">
@@ -280,7 +280,7 @@ We should also go ahead and add the `onload` attribute to the body tag. There ar
 </html>
 ```
 
-Now, lets get a hold of the img tag and change its `src` to our friend Big Foot.
+Now, lets get a hold of the `img` tag and change its `src` to our friend Big Foot.
 
 ```javascript
     <script>
