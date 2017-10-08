@@ -29,13 +29,11 @@ First off, you will need three things to make a persistent Linux USB:
 
 - A computer you are the admin on, running Linux, Windows, etc.
 - A USB drive big enough to install a distro of choice that you don't mind wiping.
-- An ISO image of the distro. I recommend an [Ubuntu flavor](https://www.ubuntu.com/download/ubuntu-flavours). If you have a small flash drive (< 16 GB), choose Lubuntu, as it only takes ~3 GB to install and is **insanely fast**. If you need it to run on really slow computers, Lubuntu, Xubuntu, or Ubuntu MATE should work well. Otherwise, choose whatever Ubuntu you wish. [Linux mint](https://www.linuxmint.com/download.php) is really good if you like Windows 7's user interface.  (Choose the Xfce version for slow computers)
-# H1 **Please note if you are planning on running this on a computer with an NVIDA gpu, you may experince problems unless you use an LTS version of Ubuntu (or an Ubuntu flavor). **
+- An ISO image of the distro. I recommend [Lubuntu](https://help.ubuntu.com/community/Lubuntu/GetLubuntu), as it only takes ~3 GB to install and is **insanely fast**.  [Linux mint](https://www.linuxmint.com/download.php) is really good if you like Windows 7's user interface.  (Choose the Xfce version for slow computers)
 - Some software to create live USBs that supports persistence (more on this later)
-  
+-Please note if you are planning on running this on a computer with only an Nvida GPU, you *may* experience problems unless you use an [LTS version of Lubunutu](https://help.ubuntu.com/community/Lubuntu/GetLubuntu/LTS).  
 
--You can also skip most of these steps and install the distro [Puppy Linux](http://puppylinux.org/main/Download%20Latest%20Release.htm#slacko) (use the Slacko version).  If are going to use Puppy Linux, .  follow Steps one and two, but ignore everything about persistance (Puppy makes your flash drive persistant autmatically).  I do not recomend puppy, because the distro is very limited, relatively insecure, and has a terrible UI.
-
+-Alternatively you could use a distro designed to be run on a flashdrive like [Puppy Linux](http://puppylinux.org/main/Download%20Latest%20Release.htm#slacko) (use the Slacko version).  If are going to use Puppy Linux, .  follow Steps one and two, but ignore everything about persistence (Puppy makes your flash drive persistent autmatically).  **I do not recomend puppy, because the distro is very limited, relatively insecure, and has a terrible UI.** That said, Puppy is very small, and less likely to break your flashdrive.
 
 **Please note: You must get the 32-bit version of the distros to run on older 32-bit machines, but your RAM will be generally limited to under 4 GB.**
 
@@ -53,7 +51,13 @@ First, download your live USB maker of choice and the ISO of the distro you plan
 
 Then plug your USB drive into your computer, and format it to FAT32.  (You can also format it to NTFS skip the step for going over 4 GB of storage, but this may cause issues with  LiLi). 
 
-Next open your program of choice, select the USB drive you intend to use **Be careful: DO NOT SELECT YOUR HARD DRIVE, that will wipe all the files on your main hard drive** I also recommend unplugging all of your USB drives except for the one you are using, to avoid accidentally wiping important data. Select the ISO file you downloaded earlier, and make sure to set as much persistent storage as you want under the persistent storage option.  At this moment you will only be able to set 4 GB of storage, but that is normal, and is due to the FAT32 filesystem.  We will fix this later. Install the ISO to your flash drive, and find something to do while it loads.
+Next open your program of choice, select the USB drive you intend to use **Be careful: DO NOT SELECT YOUR HARD DRIVE, that will wipe all the files on your main hard drive** I also recommend unplugging all of your USB drives except for the one you are using, to avoid accidentally wiping important data. 
+
+Select the ISO file you downloaded earlier, and make sure to set as much persistent storage as you want under the persistent storage option.  **Do not hit the download button in LiLi** pressing that try to redownload  
+
+![click here](https://i.imgur.com/nlHHvmJ.png)
+
+At this moment you will only be able to set 4 GB of storage, but that is normal, and is due to the FAT32 filesystem.  We will fix this later. Install the ISO to your flash drive, and find something to do while it loads.
 
 Your config should look something like this:
 
@@ -67,7 +71,7 @@ Insert the USB Drive into the computer you want to boot onto (you must have acce
 
 To make sure you did everything correctly, make a file somewhere, and then reboot, and see if it is still there.
 
-If it is still there: [awesome](https://img.guggy.com/media/SESaPG90w2/animated/2/h/4vTqo9tWovbQvEy27jNDubQknDTgyLgVwkjLobJZb3HGKbVxf3xnLo9R4h7JGwdj2vTBeSaw2xmUSk24rxL7BWkLVXVhoxUV2orim8UptKGExckb6H9DYLSmgf5bmxvo1-06qAy9LCM9OR9oaiitEq/guggy.mp4)
+If it is still there: awesome! ![awesome](https://img.guggy.com/media/SESaPG90w2/animated/2/h/4vTqo9tWovbQvEy27jNDubQknDTgyLgVwkjLobJZb3HGKbVxf3xnLo9R4h7JGwdj2vTBeSaw2xmUSk24rxL7BWkLVXVhoxUV2orim8UptKGExckb6H9DYLSmgf5bmxvo1-06qAy9LCM9OR9oaiitEq/guggy.mp4)
 
 # But wait there's more:
 
