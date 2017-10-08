@@ -30,9 +30,16 @@ First off, you will need three things to make a persistent Linux USB:
 - A computer you are the admin on, running Linux, Windows, etc.
 - A USB drive big enough to install a distro of choice that you don't mind wiping.
 - An ISO image of the distro. I recommend an [Ubuntu flavor](https://www.ubuntu.com/download/ubuntu-flavours). If you have a small flash drive (< 16 GB), choose Lubuntu, as it only takes ~3 GB to install and is **insanely fast**. If you need it to run on really slow computers, Lubuntu, Xubuntu, or Ubuntu MATE should work well. Otherwise, choose whatever Ubuntu you wish. [Linux mint](https://www.linuxmint.com/download.php) is really good if you like Windows 7's user interface.  (Choose the Xfce version for slow computers)
+# H1 **Please note if you are planning on running this on a computer with an NVIDA gpu, you may experince problems unless you use an LTS version of Ubuntu (or an Ubuntu flavor). **
 - Some software to create live USBs that supports persistence (more on this later)
   
+
+-You can also skip most of these steps and install the distro [Puppy Linux](http://puppylinux.org/main/Download%20Latest%20Release.htm#slacko) (use the Slacko version).  If are going to use Puppy Linux, .  follow Steps one and two, but ignore everything about persistance (Puppy makes your flash drive persistant autmatically).  I do not recomend puppy, because the distro is very limited, relatively insecure, and has a terrible UI.
+
+
 **Please note: You must get the 32-bit version of the distros to run on older 32-bit machines, but your RAM will be generally limited to under 4 GB.**
+
+
 
 # Step One: Installing Your Distro To USB
 
