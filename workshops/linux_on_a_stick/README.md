@@ -53,7 +53,7 @@ Then plug your USB drive into your computer, and format it to FAT32.  (You can a
 
 Next open your program of choice, select the USB drive you intend to use **Be careful: DO NOT SELECT YOUR HARD DRIVE, that will wipe all the files on your main hard drive** I also recommend unplugging all of your USB drives except for the one you are using, to avoid accidentally wiping important data. 
 
-Select the ISO file you downloaded earlier, and make sure to set as much persistent storage as you want under the persistent storage option.  **Do not hit the download button in LiLi** pressing that try to redownload  
+Select the ISO file you downloaded earlier, and make sure to set as much persistent storage as you want under the persistent storage option.  **Do not hit the download button in LiLi/UUI** pressing that will redownload the ISO image, and will download an outdated version of it.
 
 ![click here](https://i.imgur.com/nlHHvmJ.png)
 
