@@ -10,8 +10,8 @@ Template variables (make sure to format these as code with backticks):
 - `{LAST_NAME}`
 - `{FULL_NAME}`
 
-### Cancelling Donation
+### Canceling Donation
 
 > Hi `{FIRST_NAME}`, thanks for being a supporter – we're sorry to have you go, but totally understand how circumstances change.
 >
-> Just cancelled your donation from our end, so you should be set! Thanks again for making our work possible :-).
+> Just canceled your donation from our end, so you should be set! Thanks again for making our work possible :-).

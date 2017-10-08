@@ -15,7 +15,7 @@ We use **objectives** and **key results** to set goals at Hack Club. We operate 
 - **Q3**: July - September
 - **Q4**: October - December
 
-We set OKRs quartlerly.
+We set OKRs quarterly.
 
 ### Q3 2017 OKRs
 

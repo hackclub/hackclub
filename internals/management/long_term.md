@@ -13,7 +13,7 @@ _By the end of 2019, how can Hack Club become a quickly-growing, yet efficient a
   - Turn-key systems to run A/B tests
   - Consistent & guided design & communication language
   - World-class team from within (as in hired from within community)
-  - Have hastle-free finances
+  - Have haste-free finances
   - Have active plan for next section of school year
 - **Show people that Hack Club is a better way to learn**
   - Tons of clubs
