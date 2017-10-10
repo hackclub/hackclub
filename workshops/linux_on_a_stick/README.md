@@ -105,4 +105,4 @@ You will see something like this:
 
 Check that under the `Avail` column you see a value similar to the available space of the USB. If you still see 4 GB or similar, repeat the partitioning step.
 
-Now boot from your USB and make sure you can still save files.  If you can, you are now done and ready to conquer the world with your new linux powers!
+Now boot from your USB and make sure you can still save files.  If you can, you are now done and ready to conquer the world with your new Linux powers!
