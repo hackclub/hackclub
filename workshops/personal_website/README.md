@@ -284,7 +284,7 @@ Right now we can only see our website on our own computer. Let's get our website
 
 ### 1) Signing Up for GitHub
 
-_If you already have a GitHub account, skip to step 3 of [Signing Up for GitHub](#1-signing-up-for-github)._
+_If you already have a GitHub account, skip to step 3._
 
 GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
 
