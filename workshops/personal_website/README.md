@@ -50,11 +50,7 @@ We'll be using a service called Cloud9 to write, save, and organize all the code
 
    ![](img/c9_name_workspace.png)
 
-5. Under "Clone from Git or Mercurial URL", paste the HTTPS Link that you copied from your GitHub repository.
-
-   ![](img/c9_clone_from_existing.png)
-
-6. Click the green "Create Workspace" button at the bottom.
+5. Click the green "Create Workspace" button at the bottom.
 
 You should now see a screen looks something like this:
 
@@ -315,11 +311,15 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 
 ### 3) Launch!
 
-1. In the Cloud9 terminal, we'll push our commits to our GitHub repository:
+1. Back in Cloud9, under "Clone from Git or Mercurial URL", paste the HTTPS Link that you copied from your GitHub repository.
+
+   ![](img/c9_clone_from_existing.png)
+
+2. In the Cloud9 terminal, we'll push our commits to our GitHub repository:
   - `git push` (then press <kbd>enter</kbd>)
     - Enter your GitHub username (then press <kbd>enter</kbd>).
     - Enter your GitHub password (then press <kbd>enter</kbd>). _The characters won't show up on the screen, but rest assured, they are still being typed._
-2. Now try to view the website by going to `USERNAME.github.io` (replace `USERNAME` with your actual GitHub username)
+3. Now try to view the website by going to `USERNAME.github.io` (replace `USERNAME` with your actual GitHub username)
 
 #### Celebrate!
 
