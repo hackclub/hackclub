@@ -311,7 +311,7 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 
 ### 3) Launch!
 
-1. Back in Cloud9, under "Clone from Git or Mercurial URL", paste the HTTPS Link that you copied from your GitHub repository.
+1. Back in Cloud9, paste the HTTPS Link that you copied from your GitHub repository.
 
    ![](img/c9_clone_from_existing.png)
 
