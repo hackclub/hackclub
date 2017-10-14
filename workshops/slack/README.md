@@ -3,11 +3,11 @@ Slack is an awesome tool for large group chats (check out their website at  http
 
 When you join this is what you’ll see.
 
-![Screenshot of Slack](img/slack_screenshot.png)
+![Screenshot of Slack, How Slack looks](img/slack_screenshot.png)
 
-If you're not already on Slack, let's get you into the community.  Just keep reading for instructions on joining the community. After you’re done you can introduce yourself. If you are interested in joining other channels check  the [#channels](#￼channels) part for some channels we recommend you to join.
+If you're not already on Slack, let's get you into the community.  Just keep reading for instructions on joining the community. After you’re done you can introduce yourself. If you are interested in joining other channels check  the [#channels](##channels) part for some channels we recommend you to join.
 
-### Before Joining Please read our Code of Conduct @ [GitHub](conduct.hackclub.com)
+**Before Joining Please read our [Code of Conduct](conduct.hackclub.com)**
 
 # How To Join
 Open up https://slack.hackclub.com in a new tab and fill out the registration form to join our workspace.
@@ -41,6 +41,7 @@ When you first join the server you’ll be automatically added in #announcments 
 
 # Custom Slack Invite Strategies
 Custom Slack invites are a way for club leaders to design their own invites for their incoming members. You can set it up as to include which channels they will be joining, a custom theme, custom greeting. To get started message @orpheus.
+
 
 
 
