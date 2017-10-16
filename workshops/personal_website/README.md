@@ -166,20 +166,7 @@ Remember, you need to save your work every time you make a change --- otherwise 
 
 Hurray! You've created a basic HTML page! Let's save our progress with git!
 
-We're going to be using a terminal to do this, but you might know it as that-thing-hackers-use-in-movie.
-
-![](img/c9_command_line.gif)
-
-Using the terminal allows us to do things on computers which you can't usually do with a standard graphical user interface. We don't expect you to be a terminal master by the end of this tutorial, but with this initial exposure hopefully you'll be able to continue learning more about it over time!
-
-In Cloud9, press <kbd>Alt + t</kbd> (<kbd>option + t</kbd> on Mac) on the keyboard. This is how we open the terminal on Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
-
-- `git add --all` (then press <kbd>enter</kbd>)
-- `git commit -m "Create personal website"` (then press <kbd>enter</kbd>)
-
-Now, if you type `git log`, you'll be able to see your first commit! Think of git as a way to save your project in stages, much like how a game allows you to save different versions and go back.
-
-Though we've made a commit and saved our changes, we're not done. Our webpage is fully functional, but needs a little help in the look-and-feel department. Fret not. CSS will allow you to manipulate the styling of your page in all your needs.
+Though we've saved our changes, we're not done. Our webpage is fully functional, but needs a little help in the look-and-feel department. Fret not. CSS will allow you to manipulate the styling of your page in all your needs.
 
 ## Part III: The CSS File
 
@@ -308,6 +295,19 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 3. Yay! You've created your very first repository! Now, copy the "HTTPS link" at the top. You will need this link for the next step.
 
    ![](img/gh_copy_link.gif)
+   
+4.  We're going to be using a terminal to do this, but you might know it as that-thing-hackers-use-in-movie.
+
+![](img/c9_command_line.gif)
+
+Using the terminal allows us to do things on computers which you can't usually do with a standard graphical user interface. We don't expect you to be a terminal master by the end of this tutorial, but with this initial exposure hopefully you'll be able to continue learning more about it over time!
+
+In Cloud9, press <kbd>Alt + t</kbd> (<kbd>option + t</kbd> on Mac) on the keyboard. This is how we open the terminal on Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
+
+- `git add --all` (then press <kbd>enter</kbd>)
+- `git commit -m "Create personal website"` (then press <kbd>enter</kbd>)
+
+Now, if you type `git log`, you'll be able to see your first commit! Think of git as a way to save your project in stages, much like how a game allows you to save different versions and go back.
 
 ### 3) Launch!
 
