@@ -254,11 +254,6 @@ Here is the transformation that your stylesheet will have undergone at the end o
 
 Now let's save and look at our work. Ah, it is truly beautiful to behold. Now let's commit our changes.
 
-Remember to save both `index.html` and `styles.css`! We'll once again use the terminal in Cloud9 to persist our changes with git.
-
-- `git add --all` (then press <kbd>enter</kbd>)
-- `git commit -m "Add styling to personal website"` (then press <kbd>enter</kbd>)
-
 ![](img/celebrate_harry_potter.gif)
 
 ## Part IV: Publishing
@@ -314,6 +309,11 @@ Now, if you type `git log`, you'll be able to see your first commit! Think of gi
 1. Back in Cloud9, paste the HTTPS Link that you copied from your GitHub repository.
 
    ![](img/c9_clone_from_existing.png)
+   
+   ----------Remember to save both `index.html` and `styles.css`! We'll once again use the terminal in Cloud9 to persist our changes with git.
+
+- `git add --all` (then press <kbd>enter</kbd>)
+- `git commit -m "Add styling to personal website"` (then press <kbd>enter</kbd>)------------------
 
 2. In the Cloud9 terminal, we'll push our commits to our GitHub repository:
   - `git push` (then press <kbd>enter</kbd>)
