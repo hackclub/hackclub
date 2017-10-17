@@ -287,9 +287,7 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 
    ![](img/gh_create_new_repo.png)
 
-3. Yay! You've created your very first repository! Now, copy the "HTTPS link" at the top. You will need this link for the next step.
-
-   ![](img/gh_copy_link.gif)
+3. Yay! You've created your very first repository!
    
 4.  We're going to be using a terminal to save our website, but you might know it as that-thing-hackers-use-in-movie.
 
@@ -302,8 +300,12 @@ Using the terminal allows us to do things on computers which you can't usually d
 6.  Go back to GitHub and your settings page, then click “SSH and GPG Key”
 
 7.  Click on "New SSH Key" and enter the title “C9”, paste the SSH Key into the “Key” box, and click “Add Key”.
-From your repository’s home page, copy the SSH link. By default GitHub shows the HTTPS link, you will need to toggle it to ssh first!It will look something like:
+
+8.  From your repository’s home page, copy the SSH link. By default GitHub shows the HTTPS link, you will need to toggle it to ssh first!It will look something like:
 "git@github.com:yourname/yourrepository.git".
+
+![](img/SSH Link.PNG)
+
 Open your C9 project window, and go to the terminal.Set your git config username:
 git config --global user.name "Your Name Here"
 Set your git config email (which should match your github account email):
