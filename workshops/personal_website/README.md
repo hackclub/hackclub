@@ -301,27 +301,34 @@ Using the terminal allows us to do things on computers which you can't usually d
 
 7.  Click on "New SSH Key" and enter the title “C9”, paste the SSH Key into the “Key” box, and click “Add Key”.
 
-8.  From your repository’s home page, copy the SSH link. By default GitHub shows the HTTPS link, you will need to toggle it to ssh first!It will look something like:
+8.  From your repository’s home page, copy the SSH link. By default GitHub shows the HTTPS link, you will need to toggle it to ssh first! It will look something like:
 "git@github.com:yourname/yourrepository.git".
 
 ![](img/ssh.PNG)
 
-Open your C9 project window, and go to the terminal.Set your git config username:
+9.  In Cloud9, press <kbd>Alt + t</kbd> (<kbd>option + t</kbd> on Mac) on the keyboard. This is how we open the terminal on Cloud9. Copy and paste the following code and fill in your information:
+
 git config --global user.name "Your Name Here"
+
 Set your git config email (which should match your github account email):
+
 git config --global user.email "your_email@example.com"
-Make your current directory a git repository by running:
+
 git init
-Using the SSH link you copied in step 7, add the remote repository as the origin:
+
+
+10.  Using the SSH link you copied in step 8, add your repository as the origin for the project:
+
 git remote add origin git@github.com:yourname/yourrepository.git
-Add your files and commits, as you normally would:
+
 git add .
+
 git commit -m "First commit"
-Push your changes:
+
 git push -u origin master
 
 
-In Cloud9, press <kbd>Alt + t</kbd> (<kbd>option + t</kbd> on Mac) on the keyboard. This is how we open the terminal on Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
+11.  We're going to save the work we've done so far, using git. Type in the following commands:
 
 - `git add --all` (then press <kbd>enter</kbd>)
 - `git commit -m "Create personal website"` (then press <kbd>enter</kbd>)
