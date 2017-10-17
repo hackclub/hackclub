@@ -295,38 +295,19 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 
 Using the terminal allows us to do things on computers which you can't usually do with a standard graphical user interface. We don't expect you to be a terminal master by the end of this tutorial, but with this initial exposure hopefully you'll be able to continue learning more about it over time!
 
-5.  On the dashboard, click the gear icon on the right to access your Settings and look on the left for the link “SSH keys”. Click on it, and copy the value which appears under "Connect to your private git repository".
+5.  In Cloud9, press <kbd>Alt + t</kbd> (<kbd>option + t</kbd> on Mac) on the keyboard. This is how we open the terminal on Cloud9. Copy and paste the following code:
 
-6.  Go back to GitHub and your settings page, then click “SSH and GPG Key”
+   git init
 
-7.  Click on "New SSH Key" and enter the title “C9”, paste the SSH Key into the “Key” box, and click “Add Key”.
-
-8.  From your repository’s home page, copy the SSH link. By default GitHub shows the HTTPS link, you will need to toggle it to ssh first! It will look something like:
+8.  From your repository’s home page, copy the SSH link. By default GitHub shows the HTTPS link, you will need to toggle it to ssh first! It will look something like this:
 "git@github.com:yourname/yourrepository.git".
 
 ![](img/ssh.PNG)
 
-9.  In Cloud9, press <kbd>Alt + t</kbd> (<kbd>option + t</kbd> on Mac) on the keyboard. This is how we open the terminal on Cloud9. Copy and paste the following code and fill in your information:
-
-git config --global user.name "Your Name Here"
-
-Set your git config email (which should match your github account email):
-
-git config --global user.email "your_email@example.com"
-
-git init
-
 
 10.  Using the SSH link you copied in step 8, add your repository as the origin for the project:
 
-git remote add origin git@github.com:yourname/yourrepository.git
-
-git add .
-
-git commit -m "First commit"
-
-git push -u origin master
-
+   git remote add origin YOURURLHERE
 
 11.  We're going to save the work we've done so far, using git. Type in the following commands:
 
