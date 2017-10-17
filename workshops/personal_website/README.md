@@ -297,11 +297,11 @@ GitHub allows us to host our website using a service called GitHub Pages. This m
 
 Using the terminal allows us to do things on computers which you can't usually do with a standard graphical user interface. We don't expect you to be a terminal master by the end of this tutorial, but with this initial exposure hopefully you'll be able to continue learning more about it over time!
 
-5.  In the bottom left of your C9 dashboard is a section called “Add-on Services”. Click “activate” next to the “GitHub” icon (if you haven’t already).
-When the pop up appears, tell it to allow access to your account. This should complete the link between GitHub account and your C9 account.
-While still on the dashboard, look to the right under “Account Settings” for the link “Show your SSH key”. Click on it, and copy the value which appears.
-Go to the GitHub SSH settings page, and click “Add SSH Key”
-Enter the title “C9”, paste the SSH Key into the “Key” box, and click “Add Key”.
+5.  On the dashboard, click the gear icon on the right to access your Settings and look on the left for the link “SSH keys”. Click on it, and copy the value which appears under "Connect to your private git repository".
+
+6.  Go back to GitHub and your settings page, then click “SSH and GPG Key”
+
+7.  Enter the title “C9”, paste the SSH Key into the “Key” box, and click “Add Key”.
 Create a new, empty repository for your project.From your repository’s home page, copy the SSH link. By default GitHub shows the HTTPS link, you will need to toggle it to ssh first!It will look something like:
 "git@github.com:yourname/yourrepository.git".
 Open your C9 project window, and go to the terminal.Set your git config username:
