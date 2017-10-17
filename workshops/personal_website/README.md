@@ -304,7 +304,7 @@ Using the terminal allows us to do things on computers which you can't usually d
 8.  From your repository’s home page, copy the SSH link. By default GitHub shows the HTTPS link, you will need to toggle it to ssh first!It will look something like:
 "git@github.com:yourname/yourrepository.git".
 
-![](img/SSH Link.PNG)
+![](img/ssh.PNG)
 
 Open your C9 project window, and go to the terminal.Set your git config username:
 git config --global user.name "Your Name Here"
