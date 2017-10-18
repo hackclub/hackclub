@@ -297,17 +297,17 @@ Using the terminal allows us to do things on computers which you can't usually d
 
 5.  In Cloud9, press <kbd>Alt + t</kbd> (<kbd>option + t</kbd> on Mac) on the keyboard. This is how we open the terminal on Cloud9. Copy and paste the following code:
 
-   git init
+   `git init`
 
 8.  From your repository’s home page, copy the SSH link. By default GitHub shows the HTTPS link, you will need to toggle it to ssh first! It will look something like this:
-"git@github.com:yourname/yourrepository.git".
+"git@github.com:YOURUSERNAME/YOURREPOSITORY.git".
 
 ![](img/ssh.PNG)
 
 
 10.  Using the SSH link you copied in step 8, add your repository as the origin for the project:
 
-   git remote add origin YOURURLHERE
+   `git remote add origin YOURURLHERE`
 
 11.  We're going to save the work we've done so far, using git. Type in the following commands:
 
@@ -318,16 +318,17 @@ Now, if you type `git log`, you'll be able to see your first commit! Think of gi
 
 ### 3) Launch!
 
-1. Back in Cloud9, paste the HTTPS Link that you copied from your GitHub repository.
+1. Back in Cloud9, click on "repositories" on the sidebar and paste the link of your repository.
 
    ![](img/c9_clone_from_existing.png)
    
-   ----------Remember to save both `index.html` and `styles.css`! We'll once again use the terminal in Cloud9 to persist our changes with git.
+2. In the Cloud9 terminal, we'll push our commits to our GitHub repository:
+
+ Remember to save both `index.html` and `styles.css`!
 
 - `git add --all` (then press <kbd>enter</kbd>)
-- `git commit -m "Add styling to personal website"` (then press <kbd>enter</kbd>)------------------
+- `git commit -m "Add styling to personal website"` (then press <kbd>enter</kbd>)
 
-2. In the Cloud9 terminal, we'll push our commits to our GitHub repository:
   - `git push` (then press <kbd>enter</kbd>)
     - Enter your GitHub username (then press <kbd>enter</kbd>).
     - Enter your GitHub password (then press <kbd>enter</kbd>). _The characters won't show up on the screen, but rest assured, they are still being typed._
