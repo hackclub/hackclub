@@ -305,7 +305,6 @@ https://twitter.com/zachlatta
 
 ## Skills
 
-
 ### Please tell us about the time you, zachlatta, most successfully hacked some (non-computer) system to your advantage.
 
 I hacked high school. Through exploiting a loophole in the California K-12 course credit system, I was able to combine community college and high school classes to get twice the credits in half the time, allowing me to graduate before the end of what would have been my sophomore year.
