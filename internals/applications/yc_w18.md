@@ -6,11 +6,11 @@
 
 Hack Club
 
-### Organization url, if any:
+### Organization URL, if any:
 
 https://hackclub.com
 
-### If you have a demo, what's the url? For non-software, demo can be a video. (Please don't password protect it; just use an obscure url.)
+### If you have a demo, what's the URL? For non-software, demo can be a video. (Please don't password protect it; just use an obscure URL.)
 
 N/A
 
@@ -46,11 +46,11 @@ zach@hackclub.com
 
 ## Founders
 
-### Please enter the url of a 1 minute unlisted (not private) YouTube video introducing the founders. (Follow the [Video Guidelines](https://www.ycombinator.com/video/).)
+### Please enter the URL of a 1 minute unlisted (not private) YouTube video introducing the founders. (Follow the [Video Guidelines](https://www.ycombinator.com/video/).)
 
 [redacted]
 
-### Please tell us about an interesting project, preferably outside of class or work, that two or more of you created together. Include urls if possible.
+### Please tell us about an interesting project, preferably outside of class or work, that two or more of you created together. Include URLs if possible.
 
 When Hack Club was first getting started, we wrote a script that automatically exploited referral codes across multiple services to order food, delivery included, for less than $2 per meal to cut costs.
 
@@ -287,11 +287,11 @@ Run Games, Junior Programmer, February 2013 - February 2014
 
 https://zachlatta.com
 
-### Github URL
+### GitHub URL
 
 https://github.com/zachlatta
 
-### Linkedin URL
+### LinkedIn URL
 
 https://www.linkedin.com/in/zachlatta
 
