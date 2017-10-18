@@ -299,17 +299,17 @@ Using the terminal allows us to do things on computers which you can't usually d
 
    `git init`
 
-8.  From your repository’s home page, copy the SSH link. By default GitHub shows the HTTPS link, you will need to toggle it to ssh first! It will look something like this:
+6.  From your repository’s home page, copy the SSH link. By default GitHub shows the HTTPS link, you will need to toggle it to ssh first! It will look something like this:
 "git@github.com:YOURUSERNAME/YOURREPOSITORY.git".
 
 ![](img/ssh.PNG)
 
 
-10.  Using the SSH link you copied in step 8, add your repository as the origin for the project:
+7.  Using the SSH link you copied in step 8, add your repository as the origin for the project:
 
    `git remote add origin YOURURLHERE`
 
-11.  We're going to save the work we've done so far, using git. Type in the following commands:
+8.  We're going to save the work we've done so far, using git. Type in the following commands:
 
 - `git add --all` (then press <kbd>enter</kbd>)
 - `git commit -m "Create personal website"` (then press <kbd>enter</kbd>)
@@ -317,22 +317,15 @@ Using the terminal allows us to do things on computers which you can't usually d
 Now, if you type `git log`, you'll be able to see your first commit! Think of git as a way to save your project in stages, much like how a game allows you to save different versions and go back.
 
 ### 3) Launch!
-
-1. Back in Cloud9, click on "repositories" on the sidebar and paste the link of your repository.
-
-   ![](img/c9_clone_from_existing.png)
    
-2. In the Cloud9 terminal, we'll push our commits to our GitHub repository:
+1. In the Cloud9 terminal, we'll push our commits to our GitHub repository:
 
  Remember to save both `index.html` and `styles.css`!
-
-- `git add --all` (then press <kbd>enter</kbd>)
-- `git commit -m "Add styling to personal website"` (then press <kbd>enter</kbd>)
 
   - `git push` (then press <kbd>enter</kbd>)
     - Enter your GitHub username (then press <kbd>enter</kbd>).
     - Enter your GitHub password (then press <kbd>enter</kbd>). _The characters won't show up on the screen, but rest assured, they are still being typed._
-3. Now try to view the website by going to `USERNAME.github.io` (replace `USERNAME` with your actual GitHub username)
+2. Now try to view the website by going to `USERNAME.github.io` (replace `USERNAME` with your actual GitHub username)
 
 #### Celebrate!
 
