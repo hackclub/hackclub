@@ -4,6 +4,7 @@ This directory is for tracking Hack Club's written applications to grants, accel
 
 In order of completion:
 
+- **(2017-10-03)** [YC W18](yc_w18.md)
 - **(2016-10-13)** [YC W16](yc_w16.md)
 - **(2016-06-07)** [Adobe Proposal](adobe_proposal/)
 - **(2016-05-20)** [NEO Fiscal Sponsorship](neo_fiscal_sponsorship/)
