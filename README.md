@@ -1,24 +1,24 @@
 # <img src="https://cdn.rawgit.com/hackclub/meta/fc4c0d220426eb53a176e656ae7700d9dcd0b2c5/logos/hack_club_red_text.svg" width="450">
 
-Hack Club is the worldwide movement of student-led coding clubs.
+Hack Club is a nonprofit network of student-led coding clubs.
 
-Hack Clubs are after-school communities at high schools where people build things together. This repository contains the tools for starting and leading great clubs.
+The typical Hack Club is led by 2-3 students, has 15-20 members, and meets weekly after school for 1.5 hours. Meetings resemble mini-hackathons, where students learn to code by building self-directed projects. As clubs mature, they attend hackathons, run outreach programs at middle and elementary schools, and host their own events.
+
+Hack Club is an entirely open source organization (even [our finances](https://github.com/hackclub/ledger)!). This repository is where we store most of our written materials.
 
 [![Build Status](https://circleci.com/gh/hackclub/hackclub.svg?style=shield)](https://circleci.com/gh/hackclub/hackclub)
 
 Quick Hack Club links:
 
-| Action                                    | Link                                   |
-| ----------------------------------------- | -------------------------------------- |
-| Join the Slack _(we're here almost 24/7)_ | [`workshops/slack/`](workshops/slack/) |
-| See our workshops                         | https://workshops.hackclub.com         |
-| See the club guide                        | [`clubs/README.md`][guide]             |
-| Start a club                              | https://hackclub.com/apply             |
-| See our website                           | https://hackclub.com                   |
-| See our contribution guidelines           | [`CONTRIBUTING.md`](CONTRIBUTING.md)   |
-| Read our code of conduct                  | [`CONDUCT.md`](CONDUCT.md)             |
-
-[guide]: clubs/README.md
+| Action                          | Link                                   |
+| ------------------------------- | -------------------------------------- |
+| Join the Slack                  | [`workshops/slack/`](workshops/slack/) |
+| See our workshops               | https://workshops.hackclub.com         |
+| See the club guide              | [`clubs/README.md`](clubs/README.md)   |
+| Start a club                    | https://hackclub.com/apply             |
+| See our website                 | https://hackclub.com                   |
+| See our contribution guidelines | [`CONTRIBUTING.md`](CONTRIBUTING.md)   |
+| Read our code of conduct        | [`CONDUCT.md`](CONDUCT.md)             |
 
 ## Contributing
 
