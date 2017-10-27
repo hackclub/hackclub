@@ -15,26 +15,7 @@ We use **objectives** and **key results** to set goals at Hack Club. We operate 
 - **Q3**: July - September
 - **Q4**: October - December
 
-We set OKRs quarterly.
-
-### Q3 2017 OKRs
-
-**Increase number of clubs**
-
-- Have 200 clubs
-
-**Increase quality of clubs**
-
-- Record one project shipped per club member (averaged over all clubs)
-
-**Increase leader happiness**
-
-- Median of 1.22 Slack messages per day for club leaders created during Q3 (click [here](https://modeanalytics.com/hackclub/reports/373f0422adbf/python) for rationale)
-
-**Secure funding**
-
-- $750k in commitments
-- Over $250k in bank account from fundraising in bank account
+We set OKRs quarterly. [**See our current and historical OKRs here.**](okrs.md)
 
 ## Managing Work
 
