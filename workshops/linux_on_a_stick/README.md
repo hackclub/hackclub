@@ -71,7 +71,10 @@ Insert the USB Drive into the computer you want to boot onto (you must have acce
 
 To make sure you did everything correctly, make a file somewhere, and then reboot, and see if it is still there.
 
-If it is still there: awesome! ![awesome](https://img.guggy.com/media/SESaPG90w2/animated/2/h/4vTqo9tWovbQvEy27jNDubQknDTgyLgVwkjLobJZb3HGKbVxf3xnLo9R4h7JGwdj2vTBeSaw2xmUSk24rxL7BWkLVXVhoxUV2orim8UptKGExckb6H9DYLSmgf5bmxvo1-06qAy9LCM9OR9oaiitEq/guggy.mp4)
+If it is still there: awesome! 
+
+
+![awesome](https://media.giphy.com/media/14sy6VGAd4BdKM/giphy.gif)
 
 # But wait there's more:
 
