@@ -77,6 +77,21 @@ _Key results:_
 
 _Contributes to increasing number of clubs._
 
+##### Objective: Make Hack Club's finances public & accessible (Victor)
+
+Key results:
+
+- We should be able to go to random people, show them Hack Club, and have them tell us the following:
+- Whether Hack Club's finances are public & transparent
+- Why Hack Club's finances are public & transparent
+  - How much money we spent in the previous month
+  - How much money we've spent over all time into any given transaction category
+  - How much it costs us per student per month
+  - How much it costs us per club per month
+  - If they give us a dollar, where that money will go
+
+_Contributes to increasing quality of the club & increase outcome collection._
+
 ### Q3
 
 **Increase number of clubs**
