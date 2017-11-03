@@ -8,27 +8,27 @@
 
 _Key results:_
 
-- 250 active clubs
-- Marketing partnerships with 3 organizations
-- Publish at least one op-ed on Hack Club
-- Include Indian clubs in org stats & make sure they're on our website
+- 250 active clubs (Max)
+- Marketing partnerships with 3 organizations (Zach)
+- Publish at least one op-ed on Hack Club (Zach)
+- Include Indian clubs in org stats & make sure they're on our website (Zach)
 
 #### Objective: Increase quality of clubs (Max & Zach)
 
 _Key results:_
 
-- Release 4 new workshops, excluding E
-- Render all content from `hackclub/hackcub` on https://hackclub.com
-- Release an events portal for Hack Clubs
+- Release 4 new workshops, excluding E (Zach)
+- Render all content from `hackclub/hackcub` on https://hackclub.com (Max)
+- Release an events portal for Hack Clubs (Max)
 
 #### Objective: Increase outcome collection (Max & Zach)
 
 _Key results:_
 
-- 100% check-in completion rate
-- Create real schema for collecting projects shipped
-- Create real schema for collecting Slack activity
-- Associate members to club profiles
+- 100% check-in completion rate (Max)
+- Create real schema for collecting projects shipped (Zach)
+- Create real schema for collecting Slack activity (Zach)
+- Associate members to club profiles (Zach)
 
 ---
 
