@@ -13,11 +13,11 @@ _Key results:_
 - Publish at least one op-ed on Hack Club (Zach)
 - Include Indian clubs in org stats & make sure they're on our website (Zach)
 
-#### Objective: Increase quality of clubs (Max & Zach)
+#### Objective: Increase quality of clubs (Samay, Max)
 
 _Key results:_
 
-- Release 4 new workshops, excluding E (Zach)
+- 150 projects actively shipped by members (Samay)
 - Render all content from `hackclub/hackclub` on https://hackclub.com (Max)
 - Release an events portal for Hack Clubs (Max)
 
@@ -26,9 +26,9 @@ _Key results:_
 _Key results:_
 
 - 100% check-in completion rate (Max)
-- Create real schema for collecting projects shipped (Zach)
+- Create real schema for passive collection of projects shipped (Zach)
 - Create real schema for collecting Slack activity (Zach)
-- Associate members to club profiles (Zach)
+- Associate members to club profiles in passive projects shipped collection (Zach)
 
 ---
 
