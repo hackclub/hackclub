@@ -18,7 +18,7 @@ _Key results:_
 _Key results:_
 
 - Release 4 new workshops, excluding E (Zach)
-- Render all content from `hackclub/hackcub` on https://hackclub.com (Max)
+- Render all content from `hackclub/hackclub` on https://hackclub.com (Max)
 - Release an events portal for Hack Clubs (Max)
 
 #### Objective: Increase outcome collection (Max & Zach)
