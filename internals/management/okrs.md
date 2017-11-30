@@ -13,11 +13,11 @@ _Key results:_
 - Publish at least one op-ed on Hack Club (Zach)
 - Include Indian clubs in org stats & make sure they're on our website (Zach)
 
-#### Objective: Increase quality of clubs (Samay, Max)
+#### Objective: Increase quality of clubs (Max, Zach)
 
 _Key results:_
 
-- 150 projects actively shipped by members (Samay)
+- Release 4 new workshops (Zach)
 - Render all content from `hackclub/hackclub` on https://hackclub.com (Max)
 - Release an events portal for Hack Clubs (Max)
 
