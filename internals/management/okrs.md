@@ -82,8 +82,8 @@ _Contributes to increasing number of clubs._
 Key results:
 
 - We should be able to go to random people, show them Hack Club, and have them tell us the following:
-- Whether Hack Club's finances are public & transparent
-- Why Hack Club's finances are public & transparent
+  - Whether Hack Club's finances are public & transparent
+  - Why Hack Club's finances are public & transparent
   - How much money we spent in the previous month
   - How much money we've spent over all time into any given transaction category
   - How much it costs us per student per month
