@@ -35,7 +35,7 @@ If this feels like an exorbitant amount of new tools -- you're absolutely right.
 
 ### Setting up Folders and Files
 
-1. First log into your [Cloud9](https://c9.io) account and go to the dashboard. Open workspace by clicking "Open" in our dashboard.
+1. First log into your [Cloud9](https://c9.io/login) account and go to the dashboard. Open workspace by clicking "Open" in our dashboard.
 
    ![](../img/c9_dashboard.png)
 

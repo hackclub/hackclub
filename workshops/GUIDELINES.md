@@ -46,7 +46,7 @@ Another issue unique to Hack Club is that many school computers are in a
 locked-down configuration that prevents students from installing software, such
 as Chromebooks. We've found that the only solution that works consistently
 across schools is one where everything can be done through a web browser. This
-is why we use [Cloud9](https://c9.io) in all of our workshops.
+is why we use [Cloud9](https://c9.io/login) in all of our workshops.
 
 By the way, if you do know about an existing website that meets both of these
 needs, please tell us on [Slack](https://hackclub.slack.com/). Making new
@@ -65,7 +65,7 @@ from doing this than you would ever learn from reading detailed guidelines.
 A few more things:
 
 - We strongly recommend that you have club members develop in
-  [Cloud9](https://c9.io) and deploy to [GitHub
+  [Cloud9](https://c9.io/login) and deploy to [GitHub
   Pages](https://pages.github.com). See the [Personal
   Website](https://github.com/hackclub/hackclub/blob/master/workshops/personal_website/)
   workshop for what the workflow looks like. This is to be consistent with the
