@@ -99,7 +99,7 @@ If we go on https://c9.io on a different computer, this is what we will see:
 
 ![](img/c9_new_aws_landing_page.png)
 
-1. Click on the grey box that says "Login for existing c9.io customers"
+1. Click on the gray box that says "Login for existing c9.io customers"
 
 2. You will be redirected to https://c9.io/login a la
 
