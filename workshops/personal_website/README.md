@@ -107,8 +107,6 @@ If we go on https://c9.io on a different computer, this is what we will see:
 
 3. Login with the account you just created!
 
-**Note: all further Cloud9 links in our workshops will be https://c9.io/login to avoid confusion**
-
 Congratulations, you've officially set up all of your coding tools for the semester!
 
 Now we're ready to start the website!
