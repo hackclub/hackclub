@@ -25,7 +25,7 @@ ___
 
 ## Getting set up
 
-1. Log in to [Cloud9](https://c9.io/) and open your projects workspace.
+1. Log in to [Cloud9](https://c9.io/login/) and open your projects workspace.
 2. Install Ruby on Rails. Click on your bash terminal and run `gem install rails` (always press <kbd>return</kbd> to run terminal commands). It will take a moment.
 3. Let's make our new project. `rails new notes --database postgresql`
 

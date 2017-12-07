@@ -46,7 +46,7 @@ Before continuing, browse through the directory structure of some workshops like
 - By the end of the workshop, a learner will have finished building something that they can show their friends.
 - Workshops are written in Markdown
 - Workshops use GIFs to explain how to do things
-- Workshops are written assuming that the learner will be following along in [Cloud9](https://c9.io), an online IDE. (We do this so that anyone with a web browser and an internet connection can use our curriculum)
+- Workshops are written assuming that the learner will be following along in [Cloud9](https://c9.io/login), an online IDE. (We do this so that anyone with a web browser and an internet connection can use our curriculum)
 - The workshop will have checkpoints in it that show working code examples inside of a [JS Bin](https://jsbin.com) examples. To create these JS Bins, use a tool we created, `jsbinctl`. Here is a link to [`jsbinctl`'s README](lib/jsbinctl/README.md)
 
 **Step 3: Check that you've done the following:**

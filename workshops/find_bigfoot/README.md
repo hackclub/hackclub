@@ -25,7 +25,7 @@ If you've done other Hack Club workshops before, this should be pretty straightf
 
 ### Create a Blank HTML File
 
-1. Go to https://c9.io
+1. Go to https://c9.io/login
 2. Under the workspace called `USERNAME.github.io` where `USERNAME` is your GitHub username, click **Open** to open the workspace.
 3. Make a new folder called `find_bigfoot`.
 4. In the `find_bigfoot` folder, make a new file called `index.html`.
