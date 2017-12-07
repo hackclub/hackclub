@@ -91,6 +91,24 @@ You should now see a screen looks something like this:
 
 ![](img/c9_ide_loaded.png)
 
+### 4) Accessing c9.io
+
+Now we are properly logged in to c9.io, what are we still waiting for?
+
+If we go on https://c9.io on a different computer, this is what we will see:
+
+![](img/c9_new_aws_landing_page.png)
+
+1. Click on the grey box that says "Login for existing c9.io customers"
+
+2. You will be redirected to https://c9.io/login a la
+
+![](img/c9_login_page.png)
+
+3. Login with the account you just created!
+
+**Note: all further Cloud9 links in our workshops will be https://c9.io/login to avoid confusion**
+
 Congratulations, you've officially set up all of your coding tools for the semester!
 
 Now we're ready to start the website!
