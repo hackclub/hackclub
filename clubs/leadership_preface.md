@@ -7,7 +7,7 @@ On top of that, we have a few recommendations specifically for Hack Club co-foun
 - **Not everyone needs to be technical**
   - There will be a ton of non-technical work. One of Reddit's two co-founders didn't know how to program.
 - **Your team should be representative**
-  - Diversity in tech sucks. At nearly every Hack Club, the demographics of the members matches the demographics of the leaders – having an equal gender ratio on the leadership team is the most effective method we've found for making sure Hack Clubs are inclusive to all.
+  - Diversity in tech sucks. At nearly every Hack Club, the demographics of the members matches the demographics of the leaders – having a gender ratio on the leadership team that representative of the gender ratio at the school is the most effective method we've found for making sure Hack Clubs are inclusive to all.
 - **You want at least one super technical co-founder**
   - No explanation needed
 - **You want at least one super charismatic co-founder**
