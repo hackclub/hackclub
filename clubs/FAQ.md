@@ -41,7 +41,7 @@ Many of our applicants are from clubs that have already started running, sometim
 
 ### What is the acceptance/rejection rate?
 
-We don't publish our acceptance/rejection rate. We receive hundreds of applications from people asking us to "hack fb" and other forms of spam, so it's not a good indicator what your chances are of getting in.
+We don't publish our acceptance/rejection rate. We receive hundreds of applications from people asking us to "hack facebook" and other forms of spam, so it's not a good indicator what your chances are of getting in.
 
 To be perfectly honest, if you apply with detailed responses and show that you've started organizing your club, we'll probably accept you.
 
