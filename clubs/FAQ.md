@@ -37,21 +37,21 @@ Many of our applicants are from clubs that have already been holding meetings, s
 
 ### What should my YouTube video be about?
 
-[This](./youtube_video.md)
+[This](https://github.com/hackclub/hackclub/blob/master/clubs/youtube_video.md) goes over what you'll need to do.
 
 ### What is the acceptance/rejection rate?
 
-We don't publish our acceptance/rejection rate. We receive hundreds of applications from people asking us to "hack facebook" and other forms of spam, so it's not a good indicator what your chances are of getting in.
+We don't publish our acceptance/rejection rate. We receive hundreds of applications from people asking us to "hack Facebook" and other forms of spam, so it's not a good indicator what your chances are of getting in.
 
 To be perfectly honest, if you apply with detailed responses and show that you've started organizing your club, we'll probably accept you.
 
-The application is a tool to get you thinking about your club and for us to get an understanding of your strengths and weaknesses are.
+The application is a tool to get you thinking about your club and for us to get an understanding of what your strengths and weaknesses are.
 
 ### Once I submit my application, how long until I start the club?
 
 After submitting your application, we'll get back to you in 1-3 days to accept or reject the application.
 
-As long you follow each of the steps in the application process, and we decide to accept you into our program, you should be ready to hold your first meeting within 2 weeks.
+As long as you follow each of the steps in the application process, and we decide to accept you into our program, you should be ready to hold your first meeting within 2 weeks.
 
 ### What happens after I submit my application?
 
