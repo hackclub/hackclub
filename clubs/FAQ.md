@@ -37,7 +37,7 @@ Many of our applicants are from clubs that have already been holding meetings, s
 
 ### What should my YouTube video be about?
 
-[This link](https://github.com/hackclub/hackclub/blob/master/clubs/youtube_video.md) covers what you’ll need to do.
+[This link](https://github.com/hackclub/hackclub/blob/master/clubs/youtube_video.md) covers it.
 
 ### What is the acceptance/rejection rate?
 
