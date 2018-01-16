@@ -16,7 +16,7 @@ You may -- it's your club. That said, what if...
 - you are graduating and haven't decided who will lead next year
 - you are stressed out by the amount of work it takes to be a club leader
 
-It's tough to make a good single-leader club and you are much more likely to succeed with a co-leader or two. Nearly all our best clubs have more than one leader, so applications with co-leaders will have a slight advantage.
+It's tough to lead a good club by yourself and you are much more likely to succeed with a co-leader or two. Nearly all our best clubs have more than one leader, so applications with co-leaders will have a slight advantage.
 
 ### How much does this cost?
 
