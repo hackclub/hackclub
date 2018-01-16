@@ -33,7 +33,7 @@ Every club is different and has different needs each week. On average though, cl
 
 ### We've already organized our own club. Why should we apply?
 
-Many of our applicants are from clubs that have already started running, sometimes for years. We provide resources and a community you won't get anywhere else.
+Many of our applicants are from clubs that have already been holding meetings, sometimes for years. We provide resources and a community you won't get anywhere else.
 
 ### What should my YouTube video be about?
 
