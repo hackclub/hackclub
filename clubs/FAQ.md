@@ -4,7 +4,7 @@
 
 Filling out your application should take around 45 minutes to an hour and the leader profiles should take about 30 minutes each.
 
-### Do I need anything to fill out application?
+### Do I need anything to fill out the application?
 
 [You should already have a team](./leadership_preface.md).
 
