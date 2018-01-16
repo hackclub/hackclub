@@ -47,7 +47,7 @@ To be perfectly honest, if you apply with detailed responses and show that you'v
 
 The application is a tool to get you thinking about your club and for us to get an understanding of what your strengths and weaknesses are.
 
-### Once I submit my application, how long until I start the club?
+### Once I submit my application, how long will it be until I start the club?
 
 After submitting your application, we'll get back to you in 1-3 days to accept or reject the application.
 
