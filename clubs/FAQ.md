@@ -6,15 +6,15 @@ Filling out your application should take around 45 minutes to an hour and the le
 
 ### Do I need anything to fill out the application?
 
-[You should already have a team](./leadership_preface.md).
+[You should already have a team](https://github.com/hackclub/hackclub/blob/master/clubs/leadership_preface.md).
 
 ### Can I lead a club by myself?
 
-You may -- it's your club. That said, what if...
+You may — it's your club. That said, what if you're
 
-- you are sick / studying / traveling and can't lead meetings
-- you are graduating and haven't decided who will lead next year
-- you are stressed out by the amount of work it takes to be a club leader
+- sick / studying / traveling and can't lead meetings
+- graduating and haven't decided who will lead next year
+- stressed out by the amount of work it takes to lead your club
 
 It's tough to lead a good club by yourself and you are much more likely to succeed with a co-leader or two. Nearly all our best clubs have more than one leader, so applications with co-leaders will have a slight advantage.
 
@@ -22,14 +22,14 @@ It's tough to lead a good club by yourself and you are much more likely to succe
 
 $0. Null. Nothing. Nada.
 
-All of our program is 100% free.
+Our entire program is 100% free.
 
 ### How many hours should I expect to put into this?
 
-Every club is different and has different needs each week. On average though, clubs break down into 2 categories
+Every club is different. On average though, clubs break down into 2 categories:
 
 1. before the first meeting, most leaders commit around 7-10 hours per week marketing and planning to launch
-2. a few meetings in, once members can show up without reminders most leaders commit around 4-5 hours per week
+2. a few meetings in, once members can show up without a weekly reminder, most leaders commit around 4-5 hours per week
 
 ### We've already organized our own club. Why should we apply?
 
@@ -37,21 +37,21 @@ Many of our applicants are from clubs that have already been holding meetings, s
 
 ### What should my YouTube video be about?
 
-[This](./youtube_video.md)
+[This link](https://github.com/hackclub/hackclub/blob/master/clubs/youtube_video.md) covers it.
 
 ### What is the acceptance/rejection rate?
 
-We don't publish our acceptance/rejection rate. We receive hundreds of applications from people asking us to "hack facebook" and other forms of spam, so it's not a good indicator what your chances are of getting in.
+We don't publish our acceptance/rejection rate. We receive hundreds of applications from people asking us to "hack Facebook" and other forms of spam, so it's not a good indicator what your chances are of getting in.
 
 To be perfectly honest, if you apply with detailed responses and show that you've started organizing your club, we'll probably accept you.
 
-The application is a tool to get you thinking about your club and for us to get an understanding of your strengths and weaknesses are.
+The application is a tool to get you thinking about your club and for us to get an understanding of your strengths and weaknesses.
 
-### Once I submit my application, how long until I start the club?
+### Once I submit my application, how long will it be until I start the club?
 
 After submitting your application, we'll get back to you in 1-3 days to accept or reject the application.
 
-As long you follow each of the steps in the application process, and we decide to accept you into our program, you should be ready to hold your first meeting within 2 weeks.
+As long as you follow each of the steps in the application process, and we decide to accept you into our program, you should be ready to hold your first meeting within 2 weeks.
 
 ### What happens after I submit my application?
 
@@ -65,9 +65,7 @@ We'll schedule an onboarding call with you. During the call we'll get to know ea
 
 ### What is something surprising or interesting?
 
-We read a _ton_ of applications per day, so this question is included to keep it fun for us to review them all. Don't overthink the question, just jot down a few sentences that comes to mind.
-
-Or write an essay. I'm an FAQ page, not a cop.
+We read a _ton_ of applications per day, so this question is included to keep it fun for us to review them all. Don't overthink the question, just jot down the first few sentences that comes to mind.
 
 ### How do I ask you a question?
 
