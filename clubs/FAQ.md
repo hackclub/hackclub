@@ -71,4 +71,4 @@ Or write an essay. I'm an FAQ page, not a cop.
 
 ### How do I ask you a question?
 
-You can send us your questions at <mailto:apply@hacklub.com>.
+You can send us your questions at <apply@hacklub.com>.
