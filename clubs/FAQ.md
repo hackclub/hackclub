@@ -26,7 +26,7 @@ All of our program is 100% free.
 
 ### How many hours should I expect to put into this?
 
-Every club is different and has different needs each week. On average though, clubs break down into 2 categories
+Every club is different and has different needs each week. On average though, clubs break down into 2 categories:
 
 1. before the first meeting, most leaders commit around 7-10 hours per week marketing and planning to launch
 2. a few meetings in, once members can show up without reminders most leaders commit around 4-5 hours per week
