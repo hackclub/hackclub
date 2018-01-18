@@ -6,7 +6,7 @@ Filling out your application should take around 45 minutes to an hour and the le
 
 ### Do I need anything to fill out the application?
 
-[You should already have a team](https://github.com/hackclub/hackclub/blob/master/clubs/leadership_preface.md).
+[You should already have a team](https://github.com/hackclub/hackclub/blob/master/clubs/leadership_preface.md). While we encourage you to have a committed teacher sponsor before applying, we don't require it.
 
 ### What should my YouTube video be about?
 
