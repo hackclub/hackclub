@@ -9,7 +9,7 @@
 _Key results:_
 
 - 100 new clubs (Max)
-- No more than 25 clubs (new and old) attritioning (Max)
+- No more than 25 clubs (new and old) dying (Max)
 - Events
   - 10 recorded & fully tracked (Max)
     - Name, date, website, clubs organizing it, staff that attended it, attendance, and photos
