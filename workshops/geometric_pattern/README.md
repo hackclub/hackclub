@@ -1,3 +1,10 @@
+---
+name: Geometric Pattern
+description: Build a super cool geometric pattern with p5.js
+group: start
+order: 4
+---
+
 # Geometric Pattern
 
 | What you'll build    |

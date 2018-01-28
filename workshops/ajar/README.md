@@ -1,3 +1,10 @@
+---
+name: Ajar.io
+description: Build a clone of agar.io
+group: experimental
+order: 2
+---
+
 # Ajar.io
 
 Short link to this workshop: https://workshops.hackclub.com/ajar
