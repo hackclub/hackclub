@@ -1,80 +1,48 @@
 # ![Slack](img/slack_logo.png)
+Slack is an awesome tool for large group chats (check out their website at  https://slack.com). Hack Club's Slack is the home of our community. We use it to ask each other questions, talk about the problems we run into (as members and club leaders), and hang out with each other.
 
-Slack is an awesome tool for large group chats (check out their website at https://slack.com). Hack Club's Slack is the home of our community. We use it to ask each other questions, talk about the problems we run into (as members and club leaders), and hang out with each other.
+When you join this is what you’ll see.
 
-![Slack screenshot](img/slack_screenshot.png)
+![Screenshot of Slack, How Slack looks](img/slack_screenshot.png)
 
-If you're not already on Slack, let's get you into the community. Just keep reading for instructions on joining the community. After you've done that, you'll want to check out the Slack Field Guide ([click here](#field-guide)) for a handy reference on using the Slack.
+If you're not already on Slack, let's get you into the community.  Just keep reading for instructions on joining the community. After you’re done you can introduce yourself. If you are interested in joining other channels check  the [#channels](##channels) part for some channels we recommend you to join.
+
+**Before Joining Please read our [Code of Conduct](conduct.hackclub.com)**
 
 # How To Join
+Open up https://slack.hackclub.com in a new tab and fill out the registration form to join our workspace.
 
-Open up https://slack.hackclub.com in a new tab and enter your email to get an invite from our handy bot.
+![Registration gif](join.gif)
 
-![Get a Slack invite](img/slack_setup_1_invite.gif)
+Once you join you’ll get a  temporary email address to login that looks something like: 
+`slack+xkewma@mail.hackclub.com. `
 
-If you head over to your email inbox, you should see an invite to join the Slack. Go ahead and click the `Join Hack Club` button in the email to create an account. It'll ask you to provide a username and password. This username is unique to Hack Club, so you can use usernames that are often taken on other sites (like `mary`). After you create an account, it'll take you to the main Slack interface (you can always get here by going to https://hackclub.slack.com).
+You'll need to use the given temporary email for the first time you sign in into your account.  After that, you can use the email you signed up with.
 
-![Signing up for Slack](img/slack_setup_2_create_account.gif)
+![Email from Slack](img/exampleemail.gif)
 
-If you haven't used Slack before, go ahead and click `Explore Slack` for a quick one minute tutorial that'll show you around the interface.
+Once you join head over at #introductions and introduce yourself to us.  We'd love to know your name, high school, and hobby's
 
-Now to fill out our account details so other people in the community can get to know us better. Go ahead and go to `Hack Club > View Profile & Account > Edit Account` and fill everything out (make sure to set a profile picture!).
 
-![Fill out profile](img/slack_setup_3_edit_profile.gif)
+# Channels
+When you first join the server you’ll be automatically added in #announcments and #lobby.  To join a channel simply click on the channel name and click join. Here our some of our picks:
 
-Now for the final setup - introducing yourself! Go to the `#introductions` channel and introduce yourself with your name, where you're from, and something you're interested in.
+|Channel Name | Description |
+|---------- |--------|
+|`#introductions` | New to HackClub? Come join us and introduce yourself. | 
+| `#lobby`| A place where everyone new joins. | 
+| `#announcments`| All announcements and important stuff go here. | 
+|`#hq` | A channel where the staff do HackClub business.| 
+| `#hardware`| Arduinos, Raspberry Pi's, Microbits, :smile: | 
+| `#code` | Pesky compiler errors? That code you wrote doesn't even build? Hack Club to the rescue.| 
+| `#club-help` | A Perfect place for any HackClub questions.| 
+| `#studycorner`| Can't understand that math homework? Some part confuses you? The HackClub community here to help you solve your homework or prepare you for a test.|
+|`#college-apps`| Going to College? Don't know how to fill that entire paperwork you have. HackClub here to help.|
 
-Here's an example:
+# Custom Slack Invite Strategies
+Custom Slack invites are a way for club leaders to design their own invites for their incoming members. You can set it up as to include which channels they will be joining, a custom theme, custom greeting. To get started message @orpheus.
 
-> Hey everyone! I'm Mary from San Francisco. I'm a big fan of science fiction books and want to learn to code :-).
 
-![Introductions](img/slack_setup_4_introductions.gif)
 
-You'll find that people are generally pretty welcoming and eager to meet you :smiley:.
 
-![Introduction responses](img/slack_setup_5_introduction_responses.png)
 
-Congratulations! You're now all set up on the Slack. In addition to always being accessible at https://hackclub.slack.com, Slack has great desktop and mobile apps available at https://slack.com/downloads. The most active members have the mobile app installed and we recommend new members install it.
-
-In the next section we'll go over a quick handy reference for using the Slack.
-
-## Field Guide
-
-This field guide is intended as a quick channel reference for new and old members alike.
-
-Below is a list of the channels that all members are in by default.
-
-| Channel          | Purpose                                                 |
-|------------------|---------------------------------------------------------|
-| `#announcements` | The primary place for announcements to the community    |
-| `#introductions` | Where new members introduce themselves and are welcomed |
-| `#meta`          | Discussion about building Hack Club itself              |
-| `#random`        | Anything and everything! General spot for hanging out   |
-| `#shipit`        | Space to share your projects with the rest of Hack Club |
-| `#studycorner`   | Do schoolwork together and help those in need of help   |
-
-Here are some examples of messages sent to the different default channels:
-
-##### `#announcements`:
-
-![`#announcements` example](img/slack_example_announcements.png)
-
-##### `#introductions`:
-
-![`#introductions` example](img/slack_example_introductions.png)
-
-##### `#meta`:
-
-![`#meta` example](img/slack_example_meta.png)
-
-##### `#random`:
-
-![`#random` example](img/slack_example_random.png)
-
-##### `#shipit`:
-
-![`#shipit` example](img/slack_example_shipit.png)
-
-##### `#studycorner`:
-
-![`#studycorner` example](img/slack_example_studycorner.png)
