@@ -1,8 +1,8 @@
 ---
 name: Rails Notes
-description: Build a notes app with Rails
+description: Personal notes app using Rails
 group: experimental
-order: 1
+order: 4
 ---
 
 # Rails Notes

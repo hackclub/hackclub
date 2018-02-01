@@ -1,6 +1,6 @@
 ---
 name: Dashboard
-description: Build a personal dashboard with news and weather
+description: Personal dashboard with news and weather
 group: start
 order: 8
 ---

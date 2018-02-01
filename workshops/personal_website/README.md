@@ -1,6 +1,6 @@
 ---
 name: Personal Website
-description: Build your first website from scratch
+description: Your first website from scratch
 group: start
 order: 2
 ---

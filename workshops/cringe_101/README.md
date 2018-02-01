@@ -1,3 +1,10 @@
+---
+name: Cringe 101
+description: The most cringiest website ever
+group: experimental
+order: 1
+---
+
 # Cringe 101
 
 Short link to this workshop: https://workshops.hackclub.com/cringe_101

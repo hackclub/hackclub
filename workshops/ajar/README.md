@@ -1,6 +1,6 @@
 ---
 name: Ajar.io
-description: Build a clone of agar.io
+description: A clone of agar.io
 group: experimental
 order: 2
 ---

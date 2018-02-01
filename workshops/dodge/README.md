@@ -1,6 +1,6 @@
 ---
 name: Dodge
-description: Create a bullet-dodging game using p5.js
+description: Bullet-dodging game using p5.js
 group: start
 order: 5
 ---

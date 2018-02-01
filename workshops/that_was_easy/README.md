@@ -1,6 +1,6 @@
 ---
 name: That Was Easy
-description: Build a website with clickable buttons that make sounds
+description: Website with clickable buttons that make sounds
 group: start
 order: 3
 ---

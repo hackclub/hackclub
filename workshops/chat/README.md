@@ -1,6 +1,6 @@
 ---
 name: Chat
-description: Build a real-time chat application with Firebase
+description: Real-time chat application with Firebase
 group: experimental
 order: 3
 ---

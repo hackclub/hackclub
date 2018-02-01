@@ -1,6 +1,6 @@
 ---
 name: Geometric Pattern
-description: Build a super cool geometric pattern with p5.js
+description: Super cool geometric patterns using p5.js
 group: start
 order: 4
 ---
@@ -192,7 +192,7 @@ Great, now that we've drawn one row of circles in the middle, we have to draw th
 
 Just kidding! There's a construct in programming called a loop, and it repeats a set of instructions as many times as you decide.
 
-_**Here's a quick [example loop](./loops.md).**_
+_**Here's a quick [example loop](https://github.com/hackclub/hackclub/blob/master/workshops/geometric_pattern/loops.md).**_
 
 Let's remove all those repetitive lines and add a loop into our `draw()` function. We'll be using a type of loop called a **while-loop**, like so:
 
