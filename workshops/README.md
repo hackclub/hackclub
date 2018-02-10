@@ -64,6 +64,7 @@ _These workshops are either unfinished or untested._
 | [Ajar.io][ajar]                            | JavaScript                               | A clone of Agar.io                                                               | [@Bogidon][Bogidon]                                                                                                    |
 | [Chat][chat]                               | JavaScript & Firebase                    | A real-time chat application                                                     | Hack Club staff                                                                                                        |
 | [Linux on a Stick][linux_on_a_stick]       | Linux                                    | USB stick with Linux installed!                                                 | [@retiform][retiform]                                                                                                  |
+| [Pico-8][pico-8]                           | Pico-8, Lua                              | A simple action game                                                              | [@jetmate][jetmate]
 
 ### Retired Workshops
 
