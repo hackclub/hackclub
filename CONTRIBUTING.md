@@ -4,10 +4,6 @@ This document contains a set of guidelines which any contributions to *any* Hack
 
 [If you disagree with something here, you should open up an issue to discuss making a change!](https://github.com/hackclub/hackclub/issues/new)
 
-## Contributing to the Workshops
-
-For more details specific to contributing a workshop, [look here](workshops/CONTRIBUTING.md).
-
 ## Table of Contents
 
 1. [GitHub Flow](#github-flow)
