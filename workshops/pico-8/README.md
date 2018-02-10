@@ -52,7 +52,7 @@ function _draw()
 
 end
 ```
-Don't worry about what exactly is going on here, just understand that anything that goes in-between the `function` and `end` will be drawn onto the screen. 
+Don't worry about what exactly is going on here, just understand that anything that goes in-between the `function` and `end` will be drawn onto the screen.
 
 Side-not: in Pico, any line of code that begins with `--` is ignored, so it's useful for writing various comments about the code.
 
@@ -87,6 +87,8 @@ end
 Now every frame will start from a blank screen.
 
 The reason that the square is in the top-left corner is because coordinates actually work a little differently in Pico-8. As is drawn on the cheatshet, the y-axis  is actually flipped: this means that (0, 0) is actually the top-left corner. Remember this.
+
+![](assets/coordinate_grid.png)
 
 ## Variables
 Right now our "game" is a little boring, as the square isn't moving at all. The reason behind this is that we're always giving it the same coordinates. The solution? Variables.
@@ -151,3 +153,43 @@ end
 Now, the right side of the square will always be 10 pixels in front of the left side.
 
 ![](assets/moving_square_fix.gif)
+
+## Values
+A value is anything that you can place into a variable. The most basic type is a number. As you saw earlier, there are also several operations that result in numbers:
+```lua
+3 + 3 -- 6, addition
+3 - 3 -- 0, subtraction
+3 * 3 -- 9, multiplication
+3 / 3 -- 1, division
+3 ^ 3 -- 27, to the power of
+```
+Whenever Pico comes across one of these operations, it replaces the operation with its result, so `3 + 3` becomes `6`.
+
+The other important type is a boolean, which is just `true` or `false`. There are also operations that result in booleans:
+```lua
+4 == 4 -- true, equal to
+4 ~= 4 -- false, not equal to
+
+4 < 4 -- false, less than
+4 <= 4 -- true, less than or equal to
+4 > 4 -- false, greater than
+4 >= 4 -- true, greater than or equal to
+
+true and false -- false
+true or false -- true
+``
+We can combine these to form compl
+
+## User input
+Before coding a solution to any problem, it's always way more useful to approach it from a high level. So here's a problem: how do we give the user the ability to control the square?
+ * Well, we need to make it so that the square only moves when the user presses certain buttons.
+ * We need to increment x when the user presses 'right' and decrement x when the user presses 'left'.
+ * We need to modify the `_update` function so that it check if 'right' or 'left' were pressed and modifies x accordingly.
+But how do we run some code only sometimes? Welcome the `if` statement.
+```lua
+if true then
+ print(1)
+end
+```
+Quick tangent:
+### Values
