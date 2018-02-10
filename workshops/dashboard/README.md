@@ -2,7 +2,7 @@
 name: Dashboard
 description: Personal dashboard with news and weather
 group: start
-order: 8
+order: 7
 ---
 
 # Dashboard
