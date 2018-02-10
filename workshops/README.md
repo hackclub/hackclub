@@ -95,10 +95,6 @@ _:warning: These workshops are no longer maintained. They may contain errors and
 [lachlanjc]: https://github.com/lachlanjc
 [retiform]: https://github.com/retiform
 
-## Contributing to the Workshops
-
-Interested in contributing to our workshops? Look [here](GUIDELINES.md) and [here](CONTRIBUTING.md). Beginners welcome!
-
 [ajar]: ajar/
 [chat]: chat/
 [cloud9]: cloud9/
