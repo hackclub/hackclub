@@ -2,7 +2,7 @@
 name: Sketch Together
 description: Real-time collaborative drawing pad using p5.js
 group: start
-order: 7
+order: 6
 ---
 
 # Sketch Together
