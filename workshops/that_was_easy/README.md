@@ -2,7 +2,7 @@
 name: That Was Easy
 description: Website with clickable buttons that make sounds
 group: start
-order: 3
+order: 2
 ---
 
 # That Was Easy Workshop
