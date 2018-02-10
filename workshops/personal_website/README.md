@@ -2,7 +2,7 @@
 name: Personal Website
 description: Your first website from scratch
 group: start
-order: 2
+order: 1
 ---
 
 # Personal Website
