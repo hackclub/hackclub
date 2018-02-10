@@ -1,6 +1,13 @@
-# Dashboard 
+---
+name: Dashboard
+description: Personal dashboard with news and weather
+group: start
+order: 8
+---
 
-What you'll be building: 
+# Dashboard
+
+What you'll be building:
 
 ![](img/app.gif)
 

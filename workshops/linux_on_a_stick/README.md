@@ -1,3 +1,10 @@
+---
+name: Linux on a Stick
+description: Portable Linux system
+group: experimental
+order: 5
+---
+
 # Linux on a Stick (Portable Linux)
 
 This tutorial is in beta; you have been warned.
@@ -31,12 +38,11 @@ First off, you will need three things to make a persistent Linux USB:
 - A USB drive big enough to install a distro of choice that you don't mind wiping.
 - An ISO image of the distro. I recommend [Lubuntu](https://help.ubuntu.com/community/Lubuntu/GetLubuntu), as it only takes ~3 GB to install and is **insanely fast**.  [Linux mint](https://www.linuxmint.com/download.php) is really good if you like Windows 7's user interface.  (Choose the Xfce version for slow computers)
 - Some software to create live USBs that supports persistence (more on this later)
--Please note if you are planning on running this on a computer with only an Nvidia GPU, you *may* experience problems unless you use an [LTS version of Lubuntu](https://help.ubuntu.com/community/Lubuntu/GetLubuntu/LTS).  
+- Please note if you are planning on running this on a computer with only an Nvidia GPU, you *may* experience problems unless you use an [LTS version of Lubuntu](https://help.ubuntu.com/community/Lubuntu/GetLubuntu/LTS).  
 
 -Alternatively you could use a distro designed to be run on a flash drive like [Puppy Linux](http://puppylinux.org/main/Download%20Latest%20Release.htm#slacko) (use the Slacko version).  If are going to use Puppy Linux, .  follow Steps one and two, but ignore everything about persistence (Puppy makes your flash drive persistent automatically).  **I do not recommend puppy, because the distro is very limited, relatively insecure, and has a terrible UI.** That said, Puppy is very small, and less likely to break a cheap flash drive from rewriting the memory cells too much.
 
 **Please note: You must get the 32-bit version of the distros to run on older 32-bit machines, but your RAM will be generally limited to under 4 GB.**
-
 
 
 # Step One: Installing Your Distro To USB

@@ -1,4 +1,11 @@
-# Collaborative Sketch
+---
+name: Sketch Together
+description: Real-time collaborative drawing pad using p5.js
+group: start
+order: 7
+---
+
+# Sketch Together
 
 | What you'll build       |
 | ----------------------- |

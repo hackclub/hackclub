@@ -1,3 +1,10 @@
+---
+name: Chat
+description: Real-time chat application with Firebase
+group: experimental
+order: 3
+---
+
 # Chat
 
 Short link to this workshop: https://workshops.hackclub.com/chat

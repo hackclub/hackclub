@@ -1,3 +1,10 @@
+---
+name: Personal Website
+description: Your first website from scratch
+group: start
+order: 2
+---
+
 # Personal Website
 
 _**We recommend going through this workshop in Google Chrome.**_

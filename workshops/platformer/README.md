@@ -1,3 +1,10 @@
+---
+name: Platformer
+description: Simple side-scrolling platformer game
+group: start
+order: 6
+---
+
 # Platformer
 
 | What you'll build       |

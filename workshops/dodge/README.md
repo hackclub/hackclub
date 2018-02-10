@@ -1,3 +1,10 @@
+---
+name: Dodge
+description: Bullet-dodging game using p5.js
+group: start
+order: 5
+---
+
 # Dodge
 
 | What you'll build       |
