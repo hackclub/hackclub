@@ -2,7 +2,7 @@
 name: Geometric Pattern
 description: Super cool geometric patterns using p5.js
 group: start
-order: 4
+order: 3
 ---
 
 # Geometric Pattern
