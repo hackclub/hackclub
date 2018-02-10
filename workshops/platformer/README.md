@@ -2,7 +2,7 @@
 name: Platformer
 description: Simple side-scrolling platformer game
 group: start
-order: 6
+order: 5
 ---
 
 # Platformer
