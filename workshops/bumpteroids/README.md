@@ -1,6 +1,6 @@
 # Bumpteroids
 
-This workshop will show you how to use the P5.play libraries a bit more extensively to create a game similar to the classic game Asteroids.  This game, as it is, appears as a background for the P5.Play website at Molle Industria [here](http://p5play.molleindustria.org/).
+This workshop will show you how to use the P5.play libraries a bit more extensively to create a game similar to the classic game Asteroids.  This game, as it is, appears as a background for the P5.Play website at Molleindustria [here](http://p5play.molleindustria.org/).
 
 It will look something like this:
 
@@ -56,7 +56,7 @@ In this section of code, we have only our document type and tags for `<html>` `<
 
 Put this code into your `index.html` on Cloud 9.
 
-Now, we add the details in our header to include the document title and bind our stylesheet file to our index.html file.  Your file should now look like this:
+Now, we add the details in our header to include the document title and bind our stylesheet file to our `index.html` file.  Your file should now look like this:
 
 ```html
 <!DOCTYPE html>
@@ -216,7 +216,7 @@ Now let's map our ship image variable to be bound to the image file (the non-tru
 ```javascript
 shipImage = loadImage("images/asteroids_ship0001.png");
 ```
-...and bind the shipImage variable to the ship sprite by defining the `shipImage` as a property of the `ship` variable (aka "object"):
+...and bind the `shipImage` variable to the ship sprite by defining the `shipImage` as a property of the `ship` variable (aka "object"):
 
 ```javascript
 ship.addImage("normal", shipImage);
@@ -264,7 +264,7 @@ We'll start out with rotation of our ship left and right.
 
 Because these keyboard actions re-draw things on the screen, we'll place the code in the `draw()` function.  We'll use the `keyDown` property in an `if` condition to capture the key, then apply the `rotation` property to our ship.
 
-Place our code above the drawSprites() method:
+Place our code above the `drawSprites()` method:
 
 ```javascript
   // rotate left
@@ -283,7 +283,7 @@ Place our code above the drawSprites() method:
 
 Now, let's go somewhere.  as you remember, we use an (x,y) coordinate system.  So, we need to tell our ship to move along it very much like we told our ship how to rotate left and right.
 
-P5.play has done us the favor of including an easy library property to map all of these coordinates using the `addSpeed(speed, angle)` property that we'll add to our ship.  Set the speed parameter to .2. To determine the angle, we'll point to whatever the current rotation is of our ship.  Put this code under our "D" keyDown condition.
+P5.play has done us the favor of including an easy library property to map all of these coordinates using the `addSpeed(speed, angle)` property that we'll add to our ship.  Set the speed parameter to .2. To determine the angle, we'll point to whatever the current rotation is of our ship.  Put this code under our "D" `keyDown` condition.
 
 ```javascript
   if(keyDown("W"))
@@ -397,7 +397,7 @@ In the game world, we can fix these broken laws of physics.
 
 Let's set some limits to how fast it can go.
 
-set a maxSpeed property to ship just under where we created the ship sprite above setup:
+set a `maxSpeed` property to ship just under where we created the ship sprite above setup:
 
 ```javascript
 ship = createSprite(width/2, height/2);
@@ -426,7 +426,7 @@ Guns can make a game pretty fun.  In this game, we'll put a single gun on the fr
 
 Just like the spaceship, we need to create two variables.  One for the bullets, and one for the bullet image.  The bullets variable is actually going to be a `Group()` of bullets.
 
-At the top of your javascript file, just above your ship variable, create these variables:
+At the top of your JavaScript file, just above your ship variable, create these variables:
 
 ```javascript
 // shipImage already exists
@@ -448,11 +448,12 @@ bullets = new Group();
 ```
 
 Let's now set the image for the bullet.  It's just a small little bit with a transparent background.  You can download it here:
+
 ![Bullet Image](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroids_bullet.png)
 
-Upload it into your images folder in Cloud 9.
+Upload it into your images folder in Cloud9.
 
-Now, let's bind the image to the `bulletImage` variable and put it under the existing shipImage assignment:
+Now, let's bind the image to the `bulletImage` variable and put it under the existing `shipImage` assignment:
 
 ```javascript
 // existing shipImage assignment
@@ -462,12 +463,12 @@ shipImage = loadImage("images/asteroids_ship0001.png");
 bulletImage = loadImage("images/asteroids_bullet.png");
 ```
 
-
 #### Assign a key to shoot with and actions
 
 We're going to use the letter "k" in this game.  You can assign it to whatever you like at another time.  Space is a good alternative.  Perhaps you can add options for left and right handed gamers afterwards?
 
 We'll set up an if condition just like we did with "W", "A", and "D."  Place this underneath your other if conditions for keys and before the `drawSprites()` method call.
+
 ```javascript
 if(keyWentDown("K"))
   {
@@ -533,7 +534,7 @@ if(keyWentDown("K"))
   }
 ```
 
-Now, we have a ship hat fires its gun.  we will be using these bullets to act on asteroids and perhaps in some future game, we can affect other sprites, like other ships. To allow each bullet to act in the same way, we will add them to the bullets group we cerated earlier.  This will also be in our if statement for "K".  Your complete if condition for when "K" is pressed should now look like the following:
+Now, we have a ship hat fires its gun.  we will be using these bullets to act on asteroids and perhaps in some future game, we can affect other sprites, like other ships. To allow each bullet to act in the same way, we will add them to the bullets group we created earlier.  This will also be in our if statement for "K".  Your complete if condition for when "K" is pressed should now look like the following:
 
 ```javascript
 if(keyWentDown("K"))
@@ -558,9 +559,10 @@ Asteroids are big rocks floating in space.  They take various sizes and shapes. 
 
 When we shoot the asteroid, it isn't going to blow up completely.  It'll break into two smaller pieces, then two more before you can fully destroy the smallest asteroid. We'll use the same images for the big and small sprites.  We'll just scale the to suit our needs.  We'll specify them as 3 types: large, medium and small.
 
-First, let's get the astroids spawning in the game.
+First, let's get the asteroids spawning in the game.
 
 Like our ship and our bullet, we have to create a variable at the top to hold our asteroids.  We'll arrange this variable alphabetically with bullets that you already have in your code:
+
 ```javascript
 // your new asteroids variable
 var asteroids;
@@ -735,7 +737,7 @@ function asteroidHit(asteroid, bullet) {
 }
 ```
 
-We now take the astroid we shot from 3, or large, to 2, or medium.  Now, let's create two to replace the one, but only if it's not smaller than size 1:
+We now take the asteroid we shot from 3, or large, to 2, or medium.  Now, let's create two to replace the one, but only if it's not smaller than size 1:
 
 ```javascript
 function asteroidHit(asteroid, bullet) {
@@ -754,7 +756,7 @@ function asteroidHit(asteroid, bullet) {
 
 When we try to create the smaller asteroids with the `newType` value, our program doesn't know what to do just yet.  Let's tell it.  Since we're calling the `createAsteroid` function, we'll define it there.  
 
-When the type is 3, it's size, or scale is 100%, or 1.  When we set the type to 2, we'll scale it a bit smaller, say, 60%. If type is 1, we'll scale the asteroid a bit smaller still, say, 30%. Finally, we'll let it go to zero which will allow the final `remove()` of the littlest asteroid. We'll use a comparison operation added just underneath the rotationSpeed setting and above our adding the asteroid to the group.
+When the type is 3, it's size, or scale is 100%, or 1.  When we set the type to 2, we'll scale it a bit smaller, say, 60%. If type is 1, we'll scale the asteroid a bit smaller still, say, 30%. Finally, we'll let it go to zero which will allow the final `remove()` of the littlest asteroid. We'll use a comparison operation added just underneath the `rotationSpeed` setting and above our adding the asteroid to the group.
 
 ```javascript
 ...
@@ -813,7 +815,7 @@ for(var i=0; i<10; i++) {
   }
 ```
 
-We'll need to load the image and assign the image to the global variable particleImage.  We can put it up with the other `loadImage()` calls that we used for the ship and the bullet near the beginning of the `setup()` function:
+We'll need to load the image and assign the image to the global variable `particleImage`.  We can put it up with the other `loadImage()` calls that we used for the ship and the bullet near the beginning of the `setup()` function:
 
 ```javascript
 // your existing setup() function
@@ -862,4 +864,4 @@ Here are a few suggestions:
 
 ## Part V: Sharing
 
-Post to #shipit or Hack Club ship it site?
+Post to `#shipit` or Hack Club ship it site?
