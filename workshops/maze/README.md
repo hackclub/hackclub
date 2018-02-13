@@ -12,10 +12,6 @@ order: 5
 
 _**This workshop has been retired and is no longer maintained.**_
 
----
-
-Short link to this workshop: https://workshops.hackclub.com/maze
-
 ## 1. Demo
 
 Your mission is to build your own version of [The Scary Maze Game](http://www.playscarymazegame.net/play-scary-maze-game/).
