@@ -1,3 +1,11 @@
+---
+name: Bumpteroids
+description: Build a clone of Asteroids
+author: "@Cayce2514"
+group: experimental
+order: 10
+---
+
 # Bumpteroids
 
 This workshop will show you how to use the P5.play libraries a bit more extensively to create a game similar to the classic game Asteroids.  This game, as it is, appears as a background for the P5.Play website at Molleindustria [here](http://p5play.molleindustria.org/).
