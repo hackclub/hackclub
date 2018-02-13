@@ -1,6 +1,7 @@
 ---
 name: Cringe 101
 description: The most cringiest website ever
+author: "@nguyenbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram"
 group: experimental
 order: 1
 ---

@@ -1,6 +1,7 @@
 ---
 name: Personal Website
 description: Your first website from scratch
+author: Hack Club staff
 group: start
 order: 1
 ---

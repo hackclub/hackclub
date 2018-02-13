@@ -1,3 +1,11 @@
+---
+name: GitHub Pages
+description: Get your website online using GitHub's free hosting service
+author: "@sethtrei"
+group: retired
+order: 3
+---
+
 # GitHub Pages Workshop
 
 **RETIRED**

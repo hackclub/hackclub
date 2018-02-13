@@ -1,6 +1,7 @@
 ---
 name: Ajar.io
 description: A clone of agar.io
+author: "@Bogidon"
 group: experimental
 order: 2
 ---

@@ -1,6 +1,7 @@
 ---
 name: Dashboard
 description: Personal dashboard with news and weather
+author: "@samayshamdasani"
 group: start
 order: 7
 ---
