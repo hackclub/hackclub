@@ -29,8 +29,8 @@ This workshop should take around ?? minutes.
 ## Set up Folder and files
 
 1. Log in to your [Cloud 9](https://c9.io/) account and open your workspace.  If you haven't created your [Cloud 9](https://c9.io) account, go back to [Workshop 2](https://hackclub.com/workshops/personal_website/) and step through it.
-2. Create a new folder called "bumpteroids".
-3. Within the bumpteroids folder, create 2 new files.  `index.html` and the main file containing all of the game logic, `bumpteroids.js`.
+2. Create a new folder called `bumpteroids`.
+3. Within the Bumpteroids folder, create 2 new files.  `index.html` and the main file containing all of the game logic, `bumpteroids.js`.
 
 (place image here of final)
 
@@ -294,7 +294,7 @@ So, now, we can fly around, but there are a couple of problems.  Let's first sol
 
 To do this, we add an animation when we `addSpeed` and then when we stop going forward, we need to change the animation back to our "normal" view of our rocket.
 
-when we add an animation in our keyDown for "W", we have to wrap our if in braces {} to keep it interpreted as being part of the if statement. And, within the braces add the line to use the thrust animation, the series of images that you uploaded earlier. We'll also add an "else condition" to turn the ship image to the regular ship.
+when we add an animation in our `keyDown` for "W", we have to wrap our if in braces {} to keep it interpreted as being part of the if statement. And, within the braces add the line to use the thrust animation, the series of images that you uploaded earlier. We'll also add an "else condition" to turn the ship image to the regular ship.
 
 ```javascript
 if(keyDown("W"))
