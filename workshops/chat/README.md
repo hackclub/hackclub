@@ -1,6 +1,7 @@
 ---
 name: Chat
 description: Real-time chat application with Firebase
+author: Hack Club staff
 group: experimental
 order: 3
 ---
