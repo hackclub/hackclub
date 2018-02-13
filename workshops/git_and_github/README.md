@@ -1,3 +1,11 @@
+---
+name: Git and GitHub
+description: Introduction to using Git and GitHub
+author: "@nguyenbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram"
+group: retired
+order: 2
+---
+
 # Basic Git and GitHub
 
 **RETIRED**
