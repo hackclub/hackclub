@@ -1,7 +1,7 @@
 ---
 name: Rails Notes
 description: Personal notes app using Rails
-author: @lachlanjc
+author: "@lachlanjc"
 group: experimental
 order: 4
 ---
