@@ -16,8 +16,6 @@ _**This workshop has been retired and is no longer maintained.**_
 
 ![Cloud9 logo](img/cloud9.png)
 
-Short link to this workshop: https://workshops.hackclub.com/cloud9
-
 ## What is Cloud9?
 
 *Cloud9 is a website that lets you program online*. Traditionally, all
