@@ -14,10 +14,6 @@ _**This workshop has been retired and is no longer maintained.**_
 
 ---
 
-Short link to this workshop: https://workshops.hackclub.com/twilio
-
--------------------------------------------------------------------------------
-
 In this workshop, you will learn how to use a modified version of the Twilio API to make phone calls and send text messages that allow you to make things like group texting apps.
 
 > Note: An API is an agreed upon way for one program to interact with another. APIs are cool because they let even our very simple programs to interact with very powerful programs with minimal code.
