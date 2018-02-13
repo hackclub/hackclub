@@ -1,3 +1,11 @@
+---
+name: Preface
+description: Read this before beginning any of the workshops
+author: Hack Club staff
+group: misc
+order: 2
+---
+
 # Preface
 
 _Adapted from [here](https://medium.freecodecamp.com/things-i-wish-someone-had-told-me-when-i-was-learning-how-to-code-565fc9dcb329)_
