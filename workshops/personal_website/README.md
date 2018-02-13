@@ -34,38 +34,7 @@ This workshop should take around 45 minutes.
 
 ## Part I: Setup
 
-### 1) Signing Up for GitHub
-
-_If you already have a GitHub account, skip to step 3 of [Signing Up for GitHub](#1-signing-up-for-github)._
-
-GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
-
-1. Open https://github.com/join in a new tab and fill in:
-  - your username (if you can't decide on one, your first and last name are a solid choice)
-  - email (you'll be verifying your email in the next step)
-  - password (you'll need to remember this!)
-2. Verify your email by checking the inbox of the email you used
-3. Open https://gh.hackclub.com in a new tab and star the project by clicking the button on the top right that looks like this:
-
-![](img/github_star.png)
-
-_Pro tip: if you want a username that's already taken, you can often get it by [contacting GitHub](https://github.com/contact) (this is actually how we got the `hackclub` username on GitHub). Make sure that the username isn't actively used by another user before reaching out. [Click here](https://help.github.com/articles/name-squatting-policy/) for more details._
-
-### 2) Creating Your First GitHub Repository
-
-GitHub allows us to host our website using a service called GitHub Pages. This means that we can put the files of our website on GitHub and GitHub will give us a URL that we can share with the world.  
-
-1. Go to https://github.com/new
-
-2. Under "Repository name" write `USERNAME.github.io` (replace `USERNAME` with your actual username). You have to name your repository this in order for GitHub Pages to work correctly (we'll talk more about GitHub Pages later)
-
-   ![](img/gh_create_new_repo.png)
-
-3. Yay! You've created your very first repository! Now, copy the "HTTPS link" at the top. You will need this link for the next step.
-
-   ![](img/gh_copy_link.gif)
-
-### 3) Signing Up for Cloud9
+### 1) Signing Up for Cloud9
 
 We'll be using a service called Cloud9 to write, save, and organize all the code we'll write in Hack Club.
 
@@ -89,11 +58,7 @@ We'll be using a service called Cloud9 to write, save, and organize all the code
 
    ![](img/c9_name_workspace.png)
 
-5. Under "Clone from Git or Mercurial URL", paste the HTTPS Link that you copied from your GitHub repository.
-
-   ![](img/c9_clone_from_existing.png)
-
-6. Click the green "Create Workspace" button at the bottom.
+5. Click the green "Create Workspace" button at the bottom.
 
 You should now see a screen looks something like this:
 
@@ -225,20 +190,7 @@ Remember, you need to save your work every time you make a change --- otherwise 
 
 Hurray! You've created a basic HTML page! Let's save our progress with git!
 
-We're going to be using a terminal to do this, but you might know it as that-thing-hackers-use-in-movie.
-
-![](img/c9_command_line.gif)
-
-Using the terminal allows us to do things on computers which you can't usually do with a standard graphical user interface. We don't expect you to be a terminal master by the end of this tutorial, but with this initial exposure hopefully you'll be able to continue learning more about it over time!
-
-In Cloud9, press <kbd>Alt + t</kbd> (<kbd>option + t</kbd> on Mac) on the keyboard. This is how we open the terminal on Cloud9. In this case, we're going to save the work we've done so far, using git. Type in the following commands:
-
-- `git add --all` (then press <kbd>enter</kbd>)
-- `git commit -m "Create personal website"` (then press <kbd>enter</kbd>)
-
-Now, if you type `git log`, you'll be able to see your first commit! Think of git as a way to save your project in stages, much like how a game allows you to save different versions and go back.
-
-Though we've made a commit and saved our changes, we're not done. Our webpage is fully functional, but needs a little help in the look-and-feel department. Fret not. CSS will allow you to manipulate the styling of your page in all your needs.
+Though we've saved our changes, we're not done. Our webpage is fully functional, but needs a little help in the look-and-feel department. Fret not. CSS will allow you to manipulate the styling of your page in all your needs.
 
 ## Part III: The CSS File
 
@@ -326,18 +278,74 @@ Here is the transformation that your stylesheet will have undergone at the end o
 
 Now let's save and look at our work. Ah, it is truly beautiful to behold. Now let's commit our changes.
 
-Remember to save both `index.html` and `styles.css`! We'll once again use the terminal in Cloud9 to persist our changes with git.
-
-- `git add --all` (then press <kbd>enter</kbd>)
-- `git commit -m "Add styling to personal website"` (then press <kbd>enter</kbd>)
-
 ![](img/celebrate_harry_potter.gif)
 
 ## Part IV: Publishing
 
 Right now we can only see our website on our own computer. Let's get our website online!
 
+### 1) Signing Up for GitHub
+
+_If you already have a GitHub account, skip to step 3._
+
+GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
+
+1. Open https://github.com/join in a new tab and fill in:
+  - your username (if you can't decide on one, your first and last name are a solid choice)
+  - email (you'll be verifying your email in the next step)
+  - password (you'll need to remember this!)
+2. Verify your email by checking the inbox of the email you used
+3. Open https://gh.hackclub.com in a new tab and star the project by clicking the button on the top right that looks like this:
+
+![](img/github_star.png)
+
+_Pro tip: if you want a username that's already taken, you can often get it by [contacting GitHub](https://github.com/contact) (this is actually how we got the `hackclub` username on GitHub). Make sure that the username isn't actively used by another user before reaching out. [Click here](https://help.github.com/articles/name-squatting-policy/) for more details._
+
+### 2) Creating Your First GitHub Repository
+
+GitHub allows us to host our website using a service called GitHub Pages. This means that we can put the files of our website on GitHub and GitHub will give us a URL that we can share with the world.  
+
+1. Go to https://github.com/new
+
+2. Under "Repository name" write `USERNAME.github.io` (replace `USERNAME` with your actual username). You have to name your repository this in order for GitHub Pages to work correctly (we'll talk more about GitHub Pages later)
+
+   ![](img/gh_create_new_repo.png)
+
+3. Yay! You've created your very first repository!
+   
+4.  We're going to be using a terminal to save our website, but you might know it as that-thing-hackers-use-in-movie.
+
+![](img/c9_command_line.gif)
+
+Using the terminal allows us to do things on computers which you can't usually do with a standard graphical user interface. We don't expect you to be a terminal master by the end of this tutorial, but with this initial exposure hopefully you'll be able to continue learning more about it over time!
+
+5.  In Cloud9, press <kbd>Alt + t</kbd> (<kbd>option + t</kbd> on Mac) on the keyboard. This is how we open the terminal on Cloud9. Copy and paste the following code:
+
+   `git init`
+
+6.  From your repository’s home page, copy the SSH link. By default GitHub shows the HTTPS link, you will need to toggle it to ssh first! It will look something like this:
+"git@github.com:YOURUSERNAME/YOURREPOSITORY.git".
+
+![](img/ssh.PNG)
+
+
+7.  Using the SSH link you copied in step 8, add your repository as the origin for the project:
+
+   `git remote add origin YOURURLHERE`
+
+8.  We're going to save the work we've done so far, using git. Type in the following commands:
+
+- `git add --all` (then press <kbd>enter</kbd>)
+- `git commit -m "Create personal website"` (then press <kbd>enter</kbd>)
+
+Now, if you type `git log`, you'll be able to see your first commit! Think of git as a way to save your project in stages, much like how a game allows you to save different versions and go back.
+
+### 3) Launch!
+   
 1. In the Cloud9 terminal, we'll push our commits to our GitHub repository:
+
+ Remember to save both `index.html` and `styles.css`!
+
   - `git push` (then press <kbd>enter</kbd>)
     - Enter your GitHub username (then press <kbd>enter</kbd>).
     - Enter your GitHub password (then press <kbd>enter</kbd>). _The characters won't show up on the screen, but rest assured, they are still being typed._
