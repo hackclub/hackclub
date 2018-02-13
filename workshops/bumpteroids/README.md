@@ -859,5 +859,5 @@ Here are a few suggestions:
 3. Make a top 10 scoreboard using Firebase!
 
 ## Part V: Sharing
-	
+
 Post to `#shipit` or [the Hack Club ship it site](https://shipit.hackclub.com)!
