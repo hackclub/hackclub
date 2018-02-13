@@ -148,7 +148,7 @@ function draw() {
 }
 ```
 
-When you save your file (<kbd>ctrl+s</kbd>) you should now see a slightly off-white canvas in your preview window.
+When you save your file (<kbd>Ctrl+s</kbd>) you should now see a slightly off-white canvas in your preview window.
 
 ### Your Space Ship
 
