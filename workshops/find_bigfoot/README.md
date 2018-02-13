@@ -1,6 +1,7 @@
 ---
 name: Find Bigfoot
 description: Simple game to find Bigfoot using HTML, CSS and JS
+author: "@ad510"
 group: experimental
 order: 6
 ---
