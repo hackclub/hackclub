@@ -1,6 +1,6 @@
 ---
 name: Bumpteroids
-description: Build a clone of Asteroids
+description: Build a clone of the classic Asteroids arcade game
 author: "@Cayce2514"
 group: experimental
 order: 10
