@@ -3,10 +3,10 @@
 This workshop will show you how to use the P5.play libraries a bit more extensively to create a game similar to the classic game Asteroids.  This game, as it is, appears as a background for the P5.Play website at Molle Industria [here](http://p5play.molleindustria.org/).
 
 It will look something like this:
+
 ![Bumpteroids Example](https://cayce2514.github.io/bumpteroids/images/bumpteroids.png)
 
 Here's the [live demo](https://cayce2514.github.io/bumpteroids/) and [final code](https://github.com/Cayce2514/cayce2514.github.io/tree/master/bumpteroids).
-
 
 This workshop should take around ?? minutes.
 
@@ -35,6 +35,7 @@ This workshop should take around ?? minutes.
 (place image here of final)
 
 ## Part II: The HTML file
+
 The HTML file is the main file that will be opened when someone goes to your game link.  This file ties together all of the libraries that are used, both external and internal as well as tying together your stylesheet and JavaScript file.
 
 We'll start out with our basic `index.html` file contents:
@@ -73,7 +74,6 @@ Because we're using JavaScript for our game, and we'll use the P5.js and P5.play
 
 We will also define our main game logic for this game by pointing to our `bumpteroids.js` file.  We do this within the `<body>` tags:
 
-
 ```html
   <body>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.min.js"></script>
@@ -82,7 +82,6 @@ We will also define our main game logic for this game by pointing to our `bumpte
       <script type="text/javascript" src="bumpteroids.js"></script>
   </body>
 ```
-
 
 Your `index.html` file should now look something like this (I've added comments for a bit more clarity):
 
@@ -110,7 +109,9 @@ Test load your file by going to the live preview in Cloud 9.
 A blank screen with no errors is exactly what we're looking for.  Now, let's work on our JavaScript file.
 
 ## Part III: The JavaScript File
+
 ### Setup the file and canvas
+
 For every project with the P5 libraries, we'll start with two main JavaScript functions, `setup()` and `draw()`.
 
 In your `bumpteroids.js` file, create those functions like this:
@@ -125,6 +126,7 @@ function draw() {
 
 }
 ```
+
 Now that we have the basic structure, we can define our canvas to be the entire width and height of our browser window in the `setup()` function, and we will set our canvas color to be almost pure white in the `draw()` function:
 
 ```javascript
@@ -143,6 +145,7 @@ function draw() {
 When you save your file `ctrl+s` you should now see a slightly off white canvas in your preview window.
 
 ### Your Space Ship
+
 So now we have to decide on our ship.  Let's start with some images.  We have our basic ship image:
 
 ![Basic Ship](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroids_ship0001.png)
@@ -252,9 +255,11 @@ Congratulations!  You now have a ship!  But it just sits there.  Not doing anyth
 Let's make it fly!
 
 ### Flying
+
 We are going to use keyboard control to fly our ship.  we should use something that is common in controlling things and traveling through games.  How about we use W, A, S and D to move?
 
 #### Hard to Starboard!!
+
 We'll start out with rotation of our ship left and right.
 
 Because these keyboard actions re-draw things on the screen, we'll place the code in the `draw()` function.  We'll use the `keyDown` property in an `if` condition to capture the key, then apply the `rotation` property to our ship.
@@ -350,6 +355,7 @@ function draw() {
 ```
 
 #### Universe Wrapping
+
 Because we have a small view into the universe that is limited to our canvas size, we need to figure out how we can prevent our ship from flying outside the boundaries, or teleport to the opposite side of our canvas in a sort of "wrap around."
 
 We do this by some magical math calculations!  Since we can see that the spaceship continues on, we can expect that any sprite we put on our canvas will behave the same way.  So, we should apply this universe wrapping to all of the sprites.  Place this new code below the W, A, S, D text in the `draw()` function.
@@ -387,7 +393,6 @@ So.... uh...  well, if you haven't noticed already, our ship can get going incre
 
 In the game world, we can fix these broken laws of physics.
 
-
 #### Speed and Friction
 
 Let's set some limits to how fast it can go.
@@ -400,6 +405,7 @@ ship = createSprite(width/2, height/2);
 // set our maxSpeed to 6. 6 what? 6 speed.
 ship.maxSpeed = 6;
 ```
+
 Whew.  That's better.  Acceleration to the speed of light is fast, but terrible on your body!
 
 let's also decide what happens when we let the "W" key go. Right now, it stays in motion.  We should allow the ship to stop (by creating friction). Put the `friction` property just under the `maxSpeed` property:
@@ -412,15 +418,16 @@ let's also decide what happens when we let the "W" key go. Right now, it stays i
   ship.friction = .98;
 ```
 
-
 ### Shooting
 
 #### Create and assign the bullet image
+
 Guns can make a game pretty fun.  In this game, we'll put a single gun on the front of our spaceship and make it shoot in the direction of the spaceship.
 
 Just like the spaceship, we need to create two variables.  One for the bullets, and one for the bullet image.  The bullets variable is actually going to be a `Group()` of bullets.
 
 At the top of your javascript file, just above your ship variable, create these variables:
+
 ```javascript
 // shipImage already exists
 var shipImage;
@@ -483,6 +490,7 @@ if(keyWentDown("K"))
 ```
 
 We'll bind the sprite to the ship image next:
+
 ```javascript
 if(keyWentDown("K"))
   {
@@ -512,6 +520,7 @@ if(keyWentDown("K"))
 ```
 
 If you shoot now, you will see that your bullets last forever.  This is probably not what you want, though it is pretty cool.  Let's give the bullets a limited lifetime.  We use a property to set the life of a bullet.  we'll set our bullet to be 30.  30 what? 30 life.  Like this:
+
 ```javascript
 if(keyWentDown("K"))
   {
@@ -525,6 +534,7 @@ if(keyWentDown("K"))
 ```
 
 Now, we have a ship hat fires its gun.  we will be using these bullets to act on asteroids and perhaps in some future game, we can affect other sprites, like other ships. To allow each bullet to act in the same way, we will add them to the bullets group we cerated earlier.  This will also be in our if statement for "K".  Your complete if condition for when "K" is pressed should now look like the following:
+
 ```javascript
 if(keyWentDown("K"))
   {
@@ -559,6 +569,7 @@ var bullets;
 ```
 
 As with the bullets, the asteroids will be a `Group()` so that we can act on all of them together.  Define this group above where you already have your bullets group, _inside_ your `setup()` function:
+
 ```javascript
 // your new asteroids group
 asteroids = new Group();
@@ -567,7 +578,9 @@ bullets = new Group();
 // below is the closing brace for your setup() function. Don't put another one.
 }
 ```
+
 For starters, we're going to create 8 asteroids.  These will be full-size asteroids, or type 3.  We'll use a for loop to generate them and we'll pick a random image of the three we have to represent the asteroid that's being created.  We'll put this at the end of our `setup()` function, just after the `Group()` for the bullets, but before the brace that closes the `setup()` function:
+
 ```javascript
 ...
 // your existing bullets group
@@ -580,7 +593,9 @@ for(var i = 0; i<8; i++) {
 // brace that closes the setup() function
 }
 ```
+
 We will want to pick a random location to spawn our asteroid.  We'll use the center of the canvas as a reference point and set the (x,y) location of the asteroid somewhere along the line of the randomly chosen angle outside of the canvas to to spawn at.  We will then use the type (3, meaning large), and the (x,y) position as parameters to pass to a new asteroid creation function `createAsteroid()`:
+
 ```javascript
 // the for loop that you've already added
 for(var i = 0; i<8; i++) {
@@ -597,18 +612,23 @@ for(var i = 0; i<8; i++) {
 #### The `createAsteroids()` function
 
 Create the new function under the closing brace of the `draw()` function:
+
 ```javascript
 function createAsteroid() {
 
 }
 ```
+
 As we discussed above, we'll be passing this function 3 parameters.  The type, the x position and the y position.  We reflect these parameters in the function declaration:
+
 ```javascript
 function createAsteroid(type, x, y) {
 
 }
 ```
+
 As we did with the bullets, we'll create a local variable to contain the sprite.  We'll create another local variable to hold the image for the asteroid and finally we'll bind the sprite and the image for the sprite together with the `addImage()` method.
+
 ```javascript
 function createAsteroid(type, x, y) {
   var a = createSprite(x, y);
@@ -616,6 +636,7 @@ function createAsteroid(type, x, y) {
   a.addImage(img);
 }
 ```
+
 You will notice that we're calling `loadImage()` in an interesting way.
 
 Within the path of the image file, we're calling a `random()` method to pick a number between 0 and 3. The `random()` method in the P5.js library actually works similarly to the native JavaScript `Math.random()` method, but in this case, it picks a _floating point number_ between 0 and up to, but *_not_* including 3.
@@ -629,6 +650,7 @@ We'll now make our asteroids move so that you can see them on the canvas.  They 
 To add a little interest, we'll use the `type` or size of the asteroid to affect it's speed.  So, for now, take the value stored in `type` and assign it to the type property of the current asteroid `a.type.`
 
 Your function should now look like this:
+
 ```javascript
 function createAsteroid(type, x, y) {
   var a = createSprite(x, y);
@@ -640,9 +662,11 @@ function createAsteroid(type, x, y) {
   a.rotationSpeed = .5;
 }
 ```
+
 We'll lastly add the generated asteroids to our group and return the asteroid, with all of it's properties to the `setup()` function so that they can be drawn on the screen.
 
 Your function should now look like this:
+
 ```javascript
 function createAsteroid(type, x, y) {
   var a = createSprite(x, y);
@@ -683,7 +707,9 @@ function asteroidHit(asteroid, bullet) {
   asteroid.remove();
 }
 ```
+
 With the function now defined, we can define the `overlap()` to call the `asteroidHit()` function.  We'll add it underneath the universe wrapping blocks that controls how the sprites behave when moving past the edge of the screen and above the `keyDown()` definitions.
+
 ```JavaScript
 if(s.position.y>height+MARGIN) s.position.y = -MARGIN;
 }
@@ -694,9 +720,11 @@ asteroids.overlap(bullets, asteroidHit);
 // add above your existing key commands
 if(keyDown("A"))
 ```
+
 We've applied this method to the asteroids group object and included as the parameters the `bullets`group and the `asteroidHit()` function call.  Save and reload your live preview and you will see that you can now shoot your asteroids.  We need explosions next and we'll make it so that we can split our asteroids in two and make them progressively smaller pieces until they fully disappear....and explosions, of course, should be part of each hit.
 
 Within the `asteroidHit()` function, we will decrement the existing type (remember, we had three types, large, medium and small, or 3, 2, and 1).  and spawn two smaller asteroids of the next size down.  First, the decrement.  Add it just under the function declaration and above the `remove()` lines:
+
 ```javascript
 function asteroidHit(asteroid, bullet) {
   var newType = asteroid.type-1;
@@ -706,7 +734,9 @@ function asteroidHit(asteroid, bullet) {
   asteroid.remove();
 }
 ```
+
 We now take the astroid we shot from 3, or large, to 2, or medium.  Now, let's create two to replace the one, but only if it's not smaller than size 1:
+
 ```javascript
 function asteroidHit(asteroid, bullet) {
   var newType = asteroid.type-1;
@@ -721,9 +751,11 @@ function asteroidHit(asteroid, bullet) {
   asteroid.remove();
 }
 ```
+
 When we try to create the smaller asteroids with the `newType` value, our program doesn't know what to do just yet.  Let's tell it.  Since we're calling the `createAsteroid` function, we'll define it there.  
 
 When the type is 3, it's size, or scale is 100%, or 1.  When we set the type to 2, we'll scale it a bit smaller, say, 60%. If type is 1, we'll scale the asteroid a bit smaller still, say, 30%. Finally, we'll let it go to zero which will allow the final `remove()` of the littlest asteroid. We'll use a comparison operation added just underneath the rotationSpeed setting and above our adding the asteroid to the group.
+
 ```javascript
 ...
 ///your existing rotationSpeed
@@ -748,6 +780,7 @@ There's now only one issue with the shooting of the asteroid.  There's no explos
 Each time that we shoot and hit an asteroid, there will be a ring of, say, 10 particles expanding out from the position of the bullet we shot the asteroid with to make something like an explosion. We'll have the particles go in random directions and at a somewhat random speed.
 
 To do this, we'll set up a for loop, similar to how we spawned our asteroids.  Since we're doing it as part of the asteroid hit, we'll put this code in the `asteroidsHit()` function, just above the `remove()` methods:
+
 ```javascript
 for(var i=0; i<10; i++) {
 
@@ -760,6 +793,7 @@ asteroid.remove();
 //end brace of your asteroidHit() function
 }
 ```
+
 We'll need to add a variable for the particle image, which we'll keep at the vary top of the program.  We can combine the variable declaration with other Image variable declarations:
 
 ```javascript
@@ -769,13 +803,16 @@ var bullets;
 var ship;
 var shipImage, bulletImage, particleImage;
 ```
+
 The variable that we'll use for the sprite can be a local variable.  We declare it and at the same time, assign the value from the `createSprite()` method which includes the same position as the bullet that shot the asteroid.  We put this inside the for loop.
+
 ```javascript
 for(var i=0; i<10; i++) {
   var p = createSprite(bullet.position.x, bullet.position.y);
 
   }
 ```
+
 We'll need to load the image and assign the image to the global variable particleImage.  We can put it up with the other `loadImage()` calls that we used for the ship and the bullet near the beginning of the `setup()` function:
 
 ```javascript
@@ -798,9 +835,11 @@ for(var i=0; i<10; i++) {
 
   }
 ```
+
 Finally, we'll give the particles some behavior, to go in a direction at some speed, and last for some distance using the life property, and slow down a bit after the hit using the friction property.
 
 Your for loop should now look like this:
+
 ```javascript
 for(var i=0; i<10; i++) {
   var p = createSprite(bullet.position.x, bullet.position.y);
@@ -812,12 +851,15 @@ for(var i=0; i<10; i++) {
 ```
 
 ## Part IV: Hacking
+
 Perhaps you can think of a few ways to improve on this classic game?
 
 Here are a few suggestions:
+
 1. Change the look!  Use free pre-created images to be your spaceship and asteroids.  Add a background.
 2. Keep score!  
 3. Make a top 10 scoreboard using Firebase!
 
 ## Part V: Sharing
+
 Post to #shipit or Hack Club ship it site?
