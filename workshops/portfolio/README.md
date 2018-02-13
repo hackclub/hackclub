@@ -566,6 +566,3 @@ entire internet now and they will be able to see your website!
 Huzzah, we did it! You can take this URL and share it with your friends now!
 
 > ![](img/celebrate2.gif)
-
-One last thing. Please click a rating below to rate this workshop. It'll only
-take 3 seconds.
