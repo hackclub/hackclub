@@ -17,7 +17,10 @@ One common practice is to fullscreen it behind Pico, like so:
 ## Let's start!
 Tired of complex workflows and high-definition graphics? Well, the Pico-8 fantasy console is here to help. Through the course of this workshop you will make [this](demos/final.html) action game. Along the way you'll learn how to use the Pico console along with the basics of Lua scripting.
 
-![](assets/final.gif)
+<iframe src="demos/final.html" width="100%" height="700px">
+  <image src="assets/final.gif">
+</iframe>
+
 A couple of basic pieces of information about Pico: there are three modes.
 
  * The console mode
@@ -178,7 +181,7 @@ The other important type is a boolean, which is just `true` or `false`. There ar
 true and false -- false
 true or false -- true
 ``
-We can combine these to form compl
+We can combine these to form complex expressions, like
 
 ## User input
 Before coding a solution to any problem, it's always way more useful to approach it from a high level. So here's a problem: how do we give the user the ability to control the square?
@@ -191,5 +194,6 @@ if true then
  print(1)
 end
 ```
-Quick tangent:
-### Values
+If the boolean between the `if` and `then` is `true` then the up to `end` is run. Otherwise, Pico just skips the whole expression. This becomes very powerful when you combine it with the `btn` function, which returns a boolean depending on whether a button is pressed. We can consult the cheatsheet to find out more:
+
+![asset
