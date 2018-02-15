@@ -3,7 +3,7 @@ name: Slack
 description: Join the Hack Club community Slack
 author: Hack Club staff
 group: misc
-order: 1
+order: 2
 ---
 
 # ![Slack](img/slack_logo.png)
