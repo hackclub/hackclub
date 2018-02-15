@@ -181,8 +181,10 @@ The other important type is a boolean, which is just `true` or `false`. There ar
 true and false -- false
 true or false -- true
 ``
-We can combine these to form complex expressions, like
-
+We can combine these to form complex logic expressions, like so:
+```lua
+4 != 4 or ((4 <= 5 or 3 != 3) and 3 <= 22) -- true
+```
 ## User input
 Before coding a solution to any problem, it's always way more useful to approach it from a high level. So here's a problem: how do we give the user the ability to control the square?
  * Well, we need to make it so that the square only moves when the user presses certain buttons.
@@ -196,4 +198,3 @@ end
 ```
 If the boolean between the `if` and `then` is `true` then the up to `end` is run. Otherwise, Pico just skips the whole expression. This becomes very powerful when you combine it with the `btn` function, which returns a boolean depending on whether a button is pressed. We can consult the cheatsheet to find out more:
 
-![asset
