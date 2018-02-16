@@ -9,7 +9,7 @@ This is not a traditional workshop. Instead, it is a place to record wanted work
 
 If you'd like to see someone make a workshop on building a specific type of project or on a specific technology, please edit this workshop to include your ideas!
 
-P.S. Applications now open to join our new curriculum team. [Apply here.](https://goo.gl/forms/uJVeDz4KGaRSZgVo1)
+Also, applications now open to join our new curriculum team. [Apply here.](https://goo.gl/forms/uJVeDz4KGaRSZgVo1)
 
 # Wishlist
 
