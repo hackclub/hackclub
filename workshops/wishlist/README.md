@@ -1,6 +1,6 @@
 ---
 name: Wishlist
-description: Community wishlist for new workshops. Please contribute your ideas!
+description: Community wishlist for new workshops. Please contribute!
 group: misc
 order: 3
 ---
