@@ -16,3 +16,4 @@ P.S. Applications now open to join our new curriculum team. [Apply here.](https:
 1. Fleshed out track for game development in JavaScript ([@zachlatta](https://github.com/zachlatta))
 2. Fleshed out track for mobile development ([@zachlatta](https://github.com/zachlatta))
 3. Workshop track to introduce backend development ([@zachlatta](https://github.com/zachlatta))
+4. How to make a Discord bot ([@zachlatta](https://github.com/zachlatta))
