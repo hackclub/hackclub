@@ -14,7 +14,7 @@ One common practice is to fullscreen it behind Pico, like so:
 
 ![](assets/pico_with_cheatsheet.png)
 
-## Let's start!
+## Part 1: the early years
 Tired of complex workflows and high-definition graphics? Well, the Pico-8 fantasy console is here to help. Through the course of this workshop you will make [this](demos/final.html) action game. Along the way you'll learn how to use the Pico console along with the basics of Lua scripting.
 
 <iframe src="demos/final.html" width="100%" height="700px">
@@ -40,7 +40,7 @@ A couple of basic pieces of information about Pico: there are three modes.
 
    This is where you can test your game. **You can get to it by pressing `Ctrl-R`. To get back to the editor, press `Esc` twice.**
 
-## Code, oh my
+### Code, oh my
 Before making the actual game, a bit of theory.
 
 ![](assets/gameloop.png)
@@ -93,7 +93,7 @@ The reason that the square is in the top-left corner is because coordinates actu
 
 ![](assets/coordinate_grid.png)
 
-## Variables
+### Variables
 Right now our "game" is a little boring, as the square isn't moving at all. The reason behind this is that we're always giving it the same coordinates. The solution? Variables.
 Variables are essentially little boxes that allow you to store a value, like a number.
 ```lua
@@ -157,7 +157,7 @@ Now, the right side of the square will always be 10 pixels in front of the left 
 
 ![](assets/moving_square_fix.gif)
 
-## Values
+### Values
 A value is anything that you can place into a variable. The most basic type is a number. As you saw earlier, there are also several operations that result in numbers:
 ```lua
 3 + 3 -- 6, addition
@@ -180,10 +180,8 @@ The other important type is a boolean, which is just `true` or `false`. There ar
 
 true and false -- false
 true or false -- true
-``
-We can combine these to form complex expressions, like
-
-## User input
+```
+### User input
 Before coding a solution to any problem, it's always way more useful to approach it from a high level. So here's a problem: how do we give the user the ability to control the square?
  * Well, we need to make it so that the square only moves when the user presses certain buttons.
  * We need to increment x when the user presses 'right' and decrement x when the user presses 'left'.
@@ -194,6 +192,100 @@ if true then
  print(1)
 end
 ```
-If the boolean between the `if` and `then` is `true` then the up to `end` is run. Otherwise, Pico just skips the whole expression. This becomes very powerful when you combine it with the `btn` function, which returns a boolean depending on whether a button is pressed. We can consult the cheatsheet to find out more:
+If the boolean between the `if` and `then` is `true` then the up to `end` is run. Otherwise, Pico just skips the whole expression.
 
-![asset
+We can get that boolean with the `btn` function, which returns `true` or `false` depending on whether a button is pressed.
+
+![](assets/keyboard.png)
+
+`btn` accepts a number (0-6) that denotes a keyboard button. Knowing that, try to write an implementation. Once you're done you can check your solution against ours:
+
+
+
+```lua
+function _update()
+ if btn(1) then
+  x = x + 1
+ end
+end
+```
+
+Now, every frame, Pico checks if the right button is pressed, and if so increases the x. Here is the complete code with every direction added:
+
+```lua
+x = 0
+y = 0
+
+function _update()
+ if btn(1) then -- right
+  x = x + 1
+ end
+ if btn(0) then -- left
+  x = x - 1
+ end
+ if btn(3) then -- up
+  y = y + 1
+ end
+ if btn(2) then -- down
+  y = y - 1
+ end
+end
+
+function _draw()
+ cls()
+ rect(x, y, x + 10, y + 10)
+end
+```
+
+### Borders
+It is often important to restrict the player's movement - and again, this is best approached from a conceptual level. We need to...
+ * Stop the user from going off-screen
+ * Check if the user is offscreen and bring them back
+ * In the `_update` function check if the user has gone off screen for every direction and if so set their appropriate coordinate to be the screen's edge
+Once again, try to implement this yourself and then compare your solution with ours:
+
+```lua
+function _update()
+ if x < 0 then
+  x = 0
+ end
+ if y < 0 then
+  y = 0
+ end
+ if x >= 128 then
+  x = 128
+ end
+ if y >= 128 then
+  y = 128
+ end
+end
+```
+There is a problem with this solution, however, which is that the square can actually go off-screen. The reason that this happens has to due with how coordinates in Pico-8 work.
+
+![](square_edge.gif)
+
+Because the coordinates refer to the left hand corner checking the bottom or right edge of the screen isn't actually going to work. Instead, what you need to do is to draw an imaginary line that equals the edge minus the square size and check that instead:
+
+![](square_edge_line.png)
+
+Here is the updated code:
+
+```lua
+width = 10 -- notice the new variables
+height = 10 -- these are important so that it's easier to change the square size later on
+
+function _update()
+ if x < 0 then
+  x = 0
+ end
+ if y < 0 then
+  y = 0
+ end
+ if x >= 128 - width then
+  x = 128 - width
+ end
+ if y >= 128 - height then
+  y = 128 - height
+ end
+end
+```
