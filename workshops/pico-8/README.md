@@ -47,7 +47,7 @@ Before making the actual game, a bit of theory.
 
 Every game has something called a gameloop, which is code that is called every frame. This gameloop is split into three parts: first, the game collects user input (is the right arrow pressed?). Then, the game updates some internal variables (move the player right). Finally, the game redraws the screen to reflect the new state.
 
-In Pico-8, you can define that drawing phase by placing code in the following way:
+In Pico, you can define that drawing phase by placing code in the following way:
 ```lua
 function _draw()
 
@@ -59,21 +59,20 @@ Don't worry about what exactly is going on here, just understand that anything t
 
 Side-not: in Pico, any line of code that begins with `--` is ignored, so it's useful for writing various comments about the code.
 
-With that in mind, let's draw a rectangle.
+With that in mind, let's draw our ghosty pal.
 
 ```lua
 function _draw()
 
- rect(0, 0, 10, 10)
+ spr(1, 0, 0)
 
 end
 ```
-`rect` is what is called a function: some code that can be run at any point. We can also pass information into functions, which is what we're doing in this example. Concretely, `rect` accepts 4 pieces of information (in this order):
- * x coordinate of top-left corner
- * y coordinate of top-left corner
- * x coordinate of bottom-right corner
- * y coordinate of bottom-right corner
-This means that we're drawing a square with the top-left corner at `(0, 0)` and the bottom-right corner at `(10, 10)`.
+`spr` is what is called a function: some code that can be run at any point. We can also pass information into functions, which is what we're doing in this example. Concretely, `spr` accepts 3 pieces of information (in this order):
+ * sprite number
+ * x coordinate of the top-left corner
+ * y coordinate of the top-left corner
+`spr(1, 0, 0)` means to draw the first sprite in our spritesheet with its top left corner at `(0, 0)`.
 
   ![](assets/noclear.gif)
 
@@ -83,18 +82,18 @@ When you actually execute this (`Ctrl-R`), you may notice two things: that the s
 function _draw()
 
  cls() -- this clears the screen
- rect(0, 0, 10, 10)
+ spr(1, 0, 0)
 
 end
 ```
 Now every frame will start from a blank screen.
 
-The reason that the square is in the top-left corner is because coordinates actually work a little differently in Pico-8. As is drawn on the cheatshet, the y-axis  is actually flipped: this means that (0, 0) is actually the top-left corner. Remember this.
+The reason that the square is in the top-left corner is because coordinates actually work a little differently in Pico. As is drawn on the cheatshet, the y-axis  is actually flipped: this means that `(0, 0)` is actually the top-left corner. Remember this.
 
 ![](assets/coordinate_grid.png)
 
 ### Variables
-Right now our "game" is a little boring, as the square isn't moving at all. The reason behind this is that we're always giving it the same coordinates. The solution? Variables.
+Right now our "game" is a little boring, as the ghost isn't moving at all. The reason behind this is that we're always giving it the same coordinates. The solution? Variables.
 Variables are essentially little boxes that allow you to store a value, like a number.
 ```lua
 x = 3
@@ -127,10 +126,10 @@ x = 3
 
 function _draw()
  cls()
- rect(x, 0, 10, 10)
+ spr(1, x, 0)
 end
 ```
-Remember the game loop theory? Well, Pico provides another function for the update phase of the game-loop called `_update`. This function is run every loop before the `_draw` function, and so allows us to modify any variables we want. Let's modify the x variable so that the square moves to the right:
+Remember the game loop theory? Well, Pico provides another function for the update phase of the game-loop called `_update`. This function is run every loop before the `_draw` function, and so allows us to modify any variables we want. Let's modify the x variable so that the ghost moves to the right:
 ```lua
 x = 0
 
@@ -140,22 +139,9 @@ end
 
 function _draw()
  cls()
- rect(x, 0, 10, 10)
+ spr(1, x, 0)
 end
 ```
-![](assets/moving_square.gif)
-
-Notice that the square doesn't move as expected: the right side stays completely still! Remember that this is because the `rect` function takes in the two corners of the rectangle, so in this case we're only moving one of them. The fix for that is to move the other corner with the left one:
-
-```lua
-function _draw()
- cls()
- rect(x, 0, x + 10, 10)
-end
-```
-Now, the right side of the square will always be 10 pixels in front of the left side.
-
-![](assets/moving_square_fix.gif)
 
 ### Values
 A value is anything that you can place into a variable. The most basic type is a number. As you saw earlier, there are also several operations that result in numbers:
@@ -180,7 +166,7 @@ The other important type is a boolean, which is just `true` or `false`. There ar
 
 true and false -- false
 true or false -- true
-``
+```
 We can combine these to form complex logic expressions, like so:
 ```lua
 4 != 4 or ((4 <= 5 or 3 != 3) and 3 <= 22) -- true
@@ -188,8 +174,8 @@ We can combine these to form complex logic expressions, like so:
 
 ## User input
 Before coding a solution to any problem, it's always way more useful to approach it from a high level. So here's a problem: how do we give the user the ability to control the square?
- * Well, we need to make it so that the square only moves when the user presses certain buttons.
- * We need to increment x when the user presses 'right' and decrement x when the user presses 'left'.
+ * Well, we need to make it so that the ghost only moves when the user presses certain buttons.
+ * We need to increment `x` when the user presses 'right' and decrement `x` when the user presses 'left'.
  * We need to modify the `_update` function so that it check if 'right' or 'left' were pressed and modifies x accordingly.
 But how do we run some code only sometimes? Welcome the `if` statement.
 ```lua
@@ -238,7 +224,7 @@ end
 
 function _draw()
  cls()
- rect(x, y, x + 10, y + 10)
+ spr(1, x, y)
 end
 ```
 
@@ -265,7 +251,7 @@ function _update()
  end
 end
 ```
-There is a problem with this solution, however, which is that the square can actually go off-screen. The reason that this happens has to due with how coordinates in Pico-8 work.
+There is a problem with this solution, however, which is that the ghost can actually go off-screen. The reason that this happens has to due with how coordinates in Pico work.
 
 ![](square_edge.gif)
 
