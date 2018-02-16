@@ -180,8 +180,13 @@ The other important type is a boolean, which is just `true` or `false`. There ar
 
 true and false -- false
 true or false -- true
+``
+We can combine these to form complex logic expressions, like so:
+```lua
+4 != 4 or ((4 <= 5 or 3 != 3) and 3 <= 22) -- true
 ```
-### User input
+
+## User input
 Before coding a solution to any problem, it's always way more useful to approach it from a high level. So here's a problem: how do we give the user the ability to control the square?
  * Well, we need to make it so that the square only moves when the user presses certain buttons.
  * We need to increment x when the user presses 'right' and decrement x when the user presses 'left'.
