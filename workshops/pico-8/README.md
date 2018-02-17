@@ -604,3 +604,13 @@ function _draw()
  print(highscore, 5, 118)
 end
 ```
+## Next steps
+It's your turn now! Going from "knowing" a language to actually being able to apply it is often the hardest part of programming, but hopefully this workshop gave you the tools and examples necessary to start creating your own code. At this point you can modify this game (maybe make it so that the character can move all around the screen) or maybe even make something from scratch. If you use the cheatsheet and Google plenty of questions making an original game will seem like a breeze!
+
+Here are some topics that you may want to look in to:
+ * The map editor
+ * The SFX and music editors
+ * Strings and tables with string keys
+ * Metatables and OOP in Lua
+
+Once you feel like you've achieved Pico-8 mastery, a very worthy game framework to look into is Love2D. Love is as simple and fun to use as Pico but provides much more freedom.
