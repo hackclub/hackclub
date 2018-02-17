@@ -323,6 +323,17 @@ Here is the transformation that your stylesheet will have undergone at the end o
 
 ![](img/c9_css_progression.gif)
 
+You can take this even further by adding a bit of color to the page! The attribute `color` **(spelled without a u)** allows you to set the text color, and `background-color` allows you to set a background color. You can find a list of supported color names over at [W3Schools](https://www.w3schools.com/colors/colors_names.asp). Keep in mind that it's a good idea to pick a combination of colors will keep the text readable.
+
+```css
+body {
+    text-align: center;
+    font-family: "Arial";
+    background: azure;
+    color: purple;
+}
+```
+
 Now let's save and look at our work. Ah, it is truly beautiful to behold. Now let's commit our changes.
 
 Remember to save both `index.html` and `styles.css`! We'll once again use the terminal in Cloud9 to persist our changes with git.
