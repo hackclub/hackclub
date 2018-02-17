@@ -1,10 +1,10 @@
 # Pico-8 Action Game
 
 ## Why Pico?
-I consider Pico to be *the best* way to introduce newcomers to coding because of just how fun it is to code in it. Unlike traditional game engines, Pico manages to preserve a traditional coding feel while also streamlining the whole game development process: you still write legitimate Lua code and implement all game systems (like animation, physics, and scenes) yourself. This is good in the long run because that means that beginners get to actually code their games from scratch, rather than gluing together a bunch of pre-made elements. At the same time, however, Pico makes implement graphics, tilemaps, and even music a breeze by including all of those tools into the same package. This means that there's no more need in teaching beginners multiple pieces of software and how to make them work together, as everything is already there: for example, displaying a sprite from a spritesheet is as simple as `spr(0)`!
+I consider Pico to be *the best* way to introduce newcomers to coding because of just how fun it is to code in it. Unlike traditional game engines, Pico manages to preserve a traditional coding feel while also streamlining the whole game development process: you still write legitimate Lua code and implement all game systems (like animation, physics, and scenes) yourself. This is good in the long run because that means that beginners get to actually code their games from scratch, rather than gluing together a bunch of pre-made elements. At the same time, however, Pico makes implementing graphics, tilemaps, and even music a breeze by including all of those tools into the same package. This means that there's no more need in learning multiple pieces of software and how to make them work together, as everything is already there: for example, displaying a sprite from a spritesheet is as simple as `spr(0)`!
 
 ## Setup
-This workshop requires a copy of [Pico-8](https://www.lexaloffle.com/pico-8.php), which unfortunately costs $15. The good news is that Pico is DRM-free, which means that you can share one license with your whole club.
+This workshop requires a copy of [Pico-8](https://www.lexaloffle.com/pico-8.php), which unfortunately costs $15. The good news is that Pico is DRM-free, which means that one license can technically be shared with the whole club.
 
 It is also strongly recommended that you download this wonderful cheatsheet:
 
@@ -17,9 +17,9 @@ One common practice is to fullscreen it behind Pico, like so:
 ## Part 1: the early years
 Tired of complex workflows and high-definition graphics? Well, the Pico-8 fantasy console is here to help. Through the course of this workshop you will make [this](demos/final.html) action game. Along the way you'll learn how to use the Pico console along with the basics of Lua scripting.
 
-<iframe src="demos/final.html" width="100%" height="700px">
+<!-- <iframe src="demos/final.html" width="100%" height="700px">
   <image src="assets/final.gif">
-</iframe>
+</iframe> -->
 
 A couple of basic pieces of information about Pico: there are three modes.
 
@@ -34,14 +34,22 @@ A couple of basic pieces of information about Pico: there are three modes.
    ![](assets/editor.png)
 
    This is where you make your game. The editor has multiple tabs that give you access to various bits of functionality. **You can get to it by pressing `Esc` from the console mode.**
+
  * The game mode
 
    ![](assets/game.png)
 
    This is where you can test your game. **You can get to it by pressing `Ctrl-R`. To get back to the editor, press `Esc` twice.**
 
+### Sprites
+Before we start coding we first need to take care of drawing the characters, or sprites, of our game. Go ahead and activate the editor mode and then click on the sprite editor tab. You can then use the various tools to draw a player and an object (like a rain drop) in 2 of the boxes. Feel free to play around with the various tools!
+
+![](assets/sprite_editor.gif)
+
+Note that you want your final sprites to be as close to the top left corner as possible, similar to how they're positioned in the gif.
+
 ### Code, oh my
-Before making the actual game, a bit of theory.
+Before making the actual code, a bit of theory.
 
 ![](assets/gameloop.png)
 
@@ -57,10 +65,9 @@ end
 ```
 Don't worry about what exactly is going on here, just understand that anything that goes in-between the `function` and `end` will be drawn onto the screen.
 
-Side-not: in Pico, any line of code that begins with `--` is ignored, so it's useful for writing various comments about the code.
+Side-note: in Pico, any line of code that begins with `--` is ignored, so it's useful for writing various comments about the code.
 
-With that in mind, let's draw our ghosty pal.
-
+With that in mind, let's draw our player.
 ```lua
 function _draw()
 
@@ -72,7 +79,8 @@ end
  * sprite number
  * x coordinate of the top-left corner
  * y coordinate of the top-left corner
-`spr(1, 0, 0)` means to draw the first sprite in our spritesheet with its top left corner at `(0, 0)`.
+
+`spr(1, 0, 0)` means to draw the second sprite in our spritesheet with its top left corner at `(0, 0)`. The reason that `1` points to the second sprite is because sprites are 0-indexed.
 
   ![](assets/noclear.gif)
 
@@ -93,7 +101,7 @@ The reason that the square is in the top-left corner is because coordinates actu
 ![](assets/coordinate_grid.png)
 
 ### Variables
-Right now our "game" is a little boring, as the ghost isn't moving at all. The reason behind this is that we're always giving it the same coordinates. The solution? Variables.
+Right now our "game" is a little boring, as the player isn't moving at all. The reason behind this is that we're always giving it the same coordinates. The solution? Variables.
 Variables are essentially little boxes that allow you to store a value, like a number.
 ```lua
 x = 3
@@ -120,7 +128,8 @@ x = x + 1 -- x is now 4
 x = 3
 x = 3 + 1 -- x is now 4
 ```
-We can use this in our code by making an `x` variable and then changing it periodically.
+Let's add an `x` variable to our code.
+
 ```lua
 x = 3
 
@@ -173,11 +182,12 @@ We can combine these to form complex logic expressions, like so:
 ```
 
 ## User input
-Before coding a solution to any problem, it's always way more useful to approach it from a high level. So here's a problem: how do we give the user the ability to control the square?
- * Well, we need to make it so that the ghost only moves when the user presses certain buttons.
+Before coding a solution to any problem, it's always way more useful to approach it from a high level. So here's a problem: how do we give the user the ability to control the player?
+ * Well, we need to make it so that the player only moves when the user presses certain buttons.
  * We need to increment `x` when the user presses 'right' and decrement `x` when the user presses 'left'.
- * We need to modify the `_update` function so that it check if 'right' or 'left' were pressed and modifies x accordingly.
-But how do we run some code only sometimes? Welcome the `if` statement.
+ * We need to modify the `_update` function so that it check if 'right' or 'left' were pressed and modifies `x` accordingly.
+
+But how do we run some code (modify the `x` variable) only sometimes? Welcome the `if` statement.
 ```lua
 if true then
  print(1)
@@ -189,9 +199,7 @@ We can get that boolean with the `btn` function, which returns `true` or `false`
 
 ![](assets/keyboard.png)
 
-`btn` accepts a number (0-6) that denotes a keyboard button. Knowing that, try to write an implementation. Once you're done you can check your solution against ours:
-
-
+As shown on the cheatsheet, `btn` accepts a number (0-6) that denotes a keyboard button. Knowing that, try to write an implementation. Once you're done you can check your solution against ours:
 
 ```lua
 function _update()
@@ -201,7 +209,7 @@ function _update()
 end
 ```
 
-Now, every frame, Pico checks if the right button is pressed, and if so increases the x. Here is the complete code with every direction added:
+Now, every frame, Pico checks if the right button is pressed, and if so increases the x. Here is the complete code with the other direction added:
 
 ```lua
 x = 0
@@ -210,15 +218,8 @@ y = 0
 function _update()
  if btn(1) then -- right
   x = x + 1
- end
- if btn(0) then -- left
+ elseif btn(0) then -- left
   x = x - 1
- end
- if btn(3) then -- up
-  y = y + 1
- end
- if btn(2) then -- down
-  y = y - 1
  end
 end
 
@@ -227,12 +228,30 @@ function _draw()
  spr(1, x, y)
 end
 ```
+The code under `elseif` will only run if the first `if` statement is `false` - this makes it useful for grouping multiple conditions that you know can't all be true (eg you know that the player can't be moving right and left at the same time). If we had just made another `if` for moving left, then pressing down both right and left would have caused the player to stand still.
+
+Notice that `elseif` doesn't require a separate `end`, and is sort-of grouped with the `if`. There is one last type of `if` and that is `else` - `else` is only evaluated if the previous `if`s and `elseif`s were all `false`. Here is an example to sum this up:
+
+```lua
+if false then
+ -- this is not run
+elseif false then
+ -- this is not run
+elseif false then
+ -- this is not run
+else
+ -- this is run
+end
+```
+
+Each `if` block has to have exactly one `if` and then can also optionally have one `else` and any number of `elseif`s.
 
 ### Borders
 It is often important to restrict the player's movement - and again, this is best approached from a conceptual level. We need to...
  * Stop the user from going off-screen
  * Check if the user is off-screen and bring them back
- * In the `_update` function check if the user has gone off screen for every direction and if so set their appropriate coordinate to be the screen's edge
+ * Check if the user has gone off screen for every direction and if so set their appropriate coordinate to be the screen's edge
+
 Once again, try to implement this yourself and then compare your solution with ours:
 
 ```lua
@@ -251,13 +270,13 @@ function _update()
  end
 end
 ```
-There is a problem with this solution, however, which is that the ghost can actually go off-screen. The reason that this happens has to due with how coordinates in Pico work.
+There is a problem with this code, however, which is that the player can actually go off-screen. The reason that this happens has to due with how coordinates in Pico work.
 
-![](square_edge.gif)
+![](assets/square_edge.gif)
 
 Because the coordinates refer to the left hand corner checking the bottom or right edge of the screen isn't actually going to work. Instead, what you need to do is to draw an imaginary line that equals the edge minus the square size and check that instead:
 
-![](square_edge_line.png)
+![](assets/square_edge_line.png)
 
 Here is the updated code:
 
@@ -269,20 +288,14 @@ function _update()
  if x < 0 then
   x = 0
  end
- if y < 0 then
-  y = 0
- end
  if x >= 127 - width then
   x = 127 - width
- end
- if y >= 127 - height then
-  y = 127 - height
  end
 end
 ```
 
 ## Part 2: the invasion
-The issue with our current game is that it's still pretty boring, so let's add some danger for the player: falling raindrops. But the first issue that we'll encounter is that we currently don't have a good way to store multiple values. We could make multiple variables, like so:
+The issue with our current game is that it's still pretty boring, so let's add some danger for the player: falling raindrops (or whatever object you chose). But the first issue that we'll encounter is that we currently don't have a good way to store multiple values. We could make multiple variables, like so:
 ```lua
 raindrop1_x = 0
 raindrop2_y = 0
@@ -307,9 +320,7 @@ t1[1] -- 1
 t1[2] = 3
 t1[3] = t1[3] + 1
 ```
-
-
-
+You can think of this 'accessed table' as just another variable, and so you can do all of the standard variable things with it such as reading and writing its value.
 
 Now we're faced by another decision: how do we store coordinates? If we apply tables to our current variable setup, this is what we would get:
 ```lua
@@ -328,34 +339,26 @@ function _update()
  if coords[1] < 0 then
   coords[1] = 0
  end
- if coords[2] < 0 then
-  coords[2] = 0
- end
  if coords[1] >= 127 - size[1] then
   coords[1] = 127 - size[1]
- end
- if coords[2] >= 127 - size[2] then
-  coords[2] = 127 - size[2]
  end
 end
 ```
 Notice how `x` is indexed by `1` because it is the first element in a coordinate pair, and `y` is indexed by `2` because it is the second element.
 
-Now let's add the raindrops. For now, let's say that we'll add one raindrop every single frame. We can use the `add` function, which takes in a table and the value to add to its end.
+Now let's add the raindrops. For this we'll need to create a table of raindrops and use the `add` function to add a coordinate pair to this table every frame. `add` takes in a table and the value to add to its end.
 ```lua
-drops = {}
+rain = {}
 function _update()
-  add(drops, { 0, 0 }) -- adds a coordinate pair with an x of 0 and a y of 0
-  end
-  ```
-  If you run the program now you'll notice that nothing appears - that's because we need to actually display the drops that we add. But if you think about it, we can't just magically display the whole table, but instead need to call the `spr` function for every element in it. This is where the for loop comes in: it lets you execute a bit of code for every item in a list.
-
-![](assets/for_loop.gif)
+  add(rain, { 0, 0 }) -- adds a coordinate pair with an x of 0 and a y of 0
+end
+```
+If you run the program now you'll notice that nothing appears - that's because we need to actually display the drops that we add. But if you think about it, we can't just magically display the whole table and install must call the `spr` function for every element in it. This is where the `for` loop comes in: it lets you execute a bit of code for every item in a list.
 
 ```lua
 function _draw()
  -- for [variable name] in all([table name]) do
- for drop in all(drops) do
+ for drop in all(rain) do
   spr(2, drop[1], drop[2])
  end
 end
@@ -365,27 +368,29 @@ The for loop in this example goes through `drops` and for every value in that ta
 
 ![](assets/spritesheet_rain.png)
 
-Here is what the code would do if drops were equal to `{{0, 0}, {1, 1}, {2, 2}}`:
+Here is what the code would do if drops were equal to `{{0, 0}, {0, 0}, {0, 0}}`:
+
+![](assets/for_loop.gif)
 
 ```lua
 drop = {0, 0}
 spr(2, drop[1], drop[2])
 
-drop = {1, 1}
+drop = {0, 0}
 spr(2, drop[1], drop[2])
 
-drop = {2, 2}
+drop = {0, 0}
 spr(2, drop[1], drop[2])
 ```
 
 ### Let it rain
-Moving raindrops uses a very similar technique to displaying them - this is because, again, we can't move an entire table and need to deal with its contents individually. Go ahead and write a loop in the `_update` function that moves all the drops downwards, and then compare your solution with ours:
+Moving raindrops requires a very similar technique to displaying them - this is because, again, we can't move an entire table and need to deal with its contents individually. Go ahead and write a loop in the `_update` function that moves all the drops downwards, and then compare your solution with ours:
 
 ```lua
 rain_speed = 3
 
 function _update()
- for drop in all(drops) do
+ for drop in all(rain) do
   drop[2] = drop[2] + rain_speed
  end
 end
@@ -393,29 +398,30 @@ end
 
 It's worth setting the rain speed to a variable so that it's easier to change it later on. Unfortunately, our game still looks like this:
 
-![](imperfect_rain.gif)
+![](assets/imperfect_rain.gif)
 
-We can randomize the drops' starting location by using the `rnd` function, which returns a number from 0 up to but not including the one you give it.
+We can randomize the drops' starting x by using the `rnd` function, which returns a number from 0 up to but not including the number you give it.
 
 ```lua
 -- add(rain, { 0, 0 }) turns into
 add(rain, { rnd(128 - drop_size[1]), 0 })
 ```
 
-The reason that we subtract `drop_size` is for the same reason that we subtracted the player's width from the width of the screen when we were preventing them from going off - that helps us account for the fact that the coordinates actually refer to the top left corner of the droplet. If we allowed it to spawn at 127 pixels then it would be almost entirely off-screen.
+The reason that we subtract `drop_size` from the width of the screen is for the same reason that we subtracted the player's width from the width of the screen when we were preventing them from going off - that helps us account for the fact that the coordinates actually refer to the top left corner of the droplet. If we allowed the droplet to spawn at 127 pixels then it would be almost entirely off-screen.
 
-Another issue is that the droplets are spawning way too fast and we want a way to control that. The modulo operator (`%`) helps us out. It works by returning the remainder of dividing the two numbers passed to it.
+Another issue is that the droplets are spawning way too fast and we want a way to control that. The modulo operator (`%`) helps us out. It works by resulting in the remainder of dividing the two numbers it is called on.
 ```lua
 10 % 7 -- 3
 10 % 5 -- 0
 105 % 10 -- 5
 80 % 10 -- 0
 ```
-This is useful because it can help is figure out if a number is a multiple of some other number: if `x` is indeed a multiple of `y` then `x % y` should equal `0`, because dividing them does not produce a remainder. We can use this concept to execute code periodically, for example every 10 frames.
+This is useful because it can help us figure out if a number is a multiple of some other number: if `x` is indeed a multiple of `y` then `x % y` should equal `0`, because dividing them does not produce a remainder. We can use this concept to execute code periodically, for example every 10 frames.
 ```lua
 frame = 0
 rain_freq = 10
 rain_size = { 5, 5 }
+
 function _update()
   if frame % rain_freq == 0 then
     add(rain, { rnd(128 - rain_size[1]), 0 })
@@ -423,16 +429,16 @@ function _update()
   frame = frame + 1
 end
 ```
-Notice the new frame variable, which is important because it allows us to keep track of what the current frame is. As with rain speed, it is also a good idea to make rain frequency into a variable with `rain_freq`.
+Notice the new `frame` variable, which is important because it allows us to keep track of what the current frame is. As with rain speed, it is also a good idea to make rain frequency into a variable with `rain_freq`.
 
-There is one final thing that we need to do with the rain. The problem is that currently the list of drops will grow infinitely large, which can cause considerable lag. The solution is to remove drops from it once they reach a certain point, such as the bottom edge of the screen. We can use the `del` function, which accepts a table and item to remove. Go ahead and try to use this to automatically remove drops from our `drops` table, and then check our solution:
+There is one final thing that we need to do with the rain. The problem is that currently the list of drops will grow infinitely large, which can cause considerable lag. The solution is to remove drops from it once they reach a certain point, such as the bottom edge of the screen. We can use the `del` function, which accepts a table and item to remove. Go ahead and try to use this to automatically remove drops from our `drops` table, and then check your solution:
 
 ```lua
 function _update()
- for drop in all(drops) do
+ for drop in all(rain) do
   drop[2] += rain_speed
   if drop[2] >= 128 then
-    del(drops, drop)
+    del(rain, drop)
   end
  end
 end
@@ -453,7 +459,7 @@ end
 ```
 As you can see, parameters get assigned to variables inside of the function, so calling `btn(1)` sets `btn_number` equal to 1. This example also shows how you can pass data out of a function with the `return` statement.
 
-Keeping all of this in, mind let's define the following collision function:
+Keeping all of this in mind, let's define the following collision function:
 ```lua
 function collided(c1, s1, c2, s2)
  return
@@ -463,10 +469,10 @@ function collided(c1, s1, c2, s2)
   c2[2] < c1[2] + s1[2]
 end
 ```
-For the time being don't worry about exactly how it works, but instead how to use it. `collided` accepts 4 arguments: the coordinates on an object, the size of that object, the coordinates of another object, and the size of that other object. It then returns `true` or `false` depending on whether those two objects intersect. Here is how we would use it in our code:
+For the time being don't worry about exactly how it works, but instead get familiar with how to use it. `collided` accepts 4 arguments: the coordinates on an object, the size of that object, the coordinates of another object, and the size of that other object. It then returns `true` or `false` depending on whether those two objects intersect. Here is how we would use it in our code:
 ```lua
 function _update()
- for drop in all(drops) do
+ for drop in all(rain) do
   drop[2] += rain_speed
   if drop[2] >= 128 then
     del(drops, drop)
@@ -481,16 +487,16 @@ function _update()
  end
 end
 ```
-But how do we handle Game Over? well, in this case it would be useful to think about what internal variables we need to change in order to reset our game. Three immediately come to mind: the player's coordinates, the rain on the screen, and the frame number. You can just reset them inside of the collided if statement, but this seems like a good application for a function.
+But how do we handle Game Over? well, in this case it would be useful to think about what internal variables we need to change in order to reset our game. Three immediately come to mind: the player's coordinates, the rain on the screen, and the frame number. You can just reset them inside of the collided `if` statement, but this seems like a good application for a function.
 ```lua
 function reset()
  coords = {64, 110}
- drops = {}
+ rain = {}
  frame = 0
 end
 
 function _update()
- for drop in all(drops) do
+ for drop in all(rain) do
   if collided(
    drop, rain_size,
    coords, size
@@ -500,6 +506,19 @@ function _update()
  end
 end
 ```
+Since the player's default position seems important, let's make that into a separate variable called `dcoords` (default coords). That way we can use it in other places when we initiate the player.
+
+```lua
+function reset()
+ coords = {dcoords[1], dcoords[2]}
+ rain = {}
+ frame = 0
+end
+
+dcoords = {62, 105}
+coords = {dcoords[1], dcoords[2]}
+```
+Now we can initiate/reset `coords` by just creating a table with the appropriate values of `dcoords`.
 
 ## Score
 The last thing that our game is missing is a way to reward the player, and a great way is to keep a score. In our case we already have a score - the frame count - so all we have to do is implement a way to show and store it. Showing it is easy - Pico provides the `print` function, which accepts a value and an x and y. Don't forget to put this call in the `_draw` function, as it won't work anywhere else.
@@ -508,9 +527,9 @@ function _draw()
  print(frame, 10, 116)
 end
 ```
-Now try to add a variable that stores the highscore and display that as well. Here is our solution:
+Now try to add a variable that stores the highscore and display that as well. Here is one solution:
 ```lua
-highscore =
+highscore = 0
 function reset()
  if frame > highscore then
   highscore = frame
@@ -525,6 +544,8 @@ function _draw()
  print(highscore, 10, 123)
 end
 ```
+In this code, every time that the game is reset Pico compares your current score with the highscore. The highscore is only updated if your current score is larger.
+
 And...we're done! You can compare your final program with the one below:
 ```lua
 function collided(c1, s1, c2, s2)
@@ -605,7 +626,7 @@ function _draw()
 end
 ```
 ## Next steps
-It's your turn now! Going from "knowing" a language to actually being able to apply it is often the hardest part of programming, but hopefully this workshop gave you the tools and examples necessary to start creating your own code. At this point you can modify this game (maybe make it so that the character can move all around the screen) or maybe even make something from scratch. If you use the cheatsheet and Google plenty of questions making an original game will seem like a breeze!
+It's your turn now! Going from "knowing" a language to actually being able to apply it is often the hardest part of programming, but hopefully this workshop gave you the tools and examples necessary to start creating your own code. At this point you can modify this game (maybe make it so that the player can move all around the screen) or maybe even make something from scratch. *As long as you use the cheatsheet and Google plenty of questions making an original game will seem like a breeze!*
 
 Here are some topics that you may want to look in to:
  * The map editor
@@ -613,4 +634,4 @@ Here are some topics that you may want to look in to:
  * Strings and tables with string keys
  * Metatables and OOP in Lua
 
-Once you feel like you've achieved Pico-8 mastery, a very worthy game framework to look into is Love2D. Love is as simple and fun to use as Pico but provides much more freedom.
+Once you feel like you've achieved Pico-8 mastery, a very worthy game framework to look into is [Love2D](https://love2d.org/). Love is as simple and fun to use as Pico but provides much more freedom.
