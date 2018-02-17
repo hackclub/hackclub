@@ -120,6 +120,8 @@ Now we're ready to start the website!
 
 ### 1) Creating the HTML file
 
+HTML stands for HyperText Markup Language. Every website from the New York Times to Twitch uses HTML to display content on the web.
+
 We'll start by making an `index.html` file. Right click the `projects` folder in the left sidebar, select "New File," and name the file `index.html`.
 
 ![](img/c9_create_index_html.gif)
