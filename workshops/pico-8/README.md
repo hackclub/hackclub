@@ -415,9 +415,10 @@ This is useful because it can help is figure out if a number is a multiple of so
 ```lua
 frame = 0
 rain_freq = 10
+rain_size = { 5, 5 }
 function _update()
   if frame % rain_freq == 0 then
-    add(rain, { rnd(128 - drop_size[1]), 0 })
+    add(rain, { rnd(128 - rain_size[1]), 0 })
   end
   frame = frame + 1
 end
@@ -434,5 +435,172 @@ function _update()
     del(drops, drop)
   end
  end
+end
+```
+
+### Collisions...
+We're almost done with our game! Now we just need to add some challenge by 'poisoning' the rain. To make this happen, we need a way to know when a drop has collided with the player. This is a perfect application for a function. Remember that a function is just a bit of code that you can execute from any point in the program. You can also pass data in and out of the function, which is how we'll know whether the player collided or not. There's two steps to using functions: you need to 'define' it, and then 'call' it whenever you want to use it in your code. You call a function by adding `()` to its name, as we've been doing throughout this program. Here is how you define one:
+```lua
+function my_function(var1, var2)
+  return true
+end
+```
+`my_function`'s definition is very similar to how we defined `_draw` and `_update`, except for two things: it can accept arguments and always returns true. An argument is the data that you give the function by putting it in the function call. In order to better understand this, let's define a theoretical version of the `btn` function:
+```lua
+function btn(btn_number)
+  return is_pressed_down(btn_number)
+end
+```
+As you can see, parameters get assigned to variables inside of the function, so calling `btn(1)` sets `btn_number` equal to 1. This example also shows how you can pass data out of a function with the `return` statement.
+
+Keeping all of this in, mind let's define the following collision function:
+```lua
+function collided(c1, s1, c2, s2)
+ return
+  c1[1] < c2[1] + s2[1] and
+  c2[1] < c1[1] + s1[1] and
+  c1[2] < c2[2] + s2[2] and
+  c2[2] < c1[2] + s1[2]
+end
+```
+For the time being don't worry about exactly how it works, but instead how to use it. `collided` accepts 4 arguments: the coordinates on an object, the size of that object, the coordinates of another object, and the size of that other object. It then returns `true` or `false` depending on whether those two objects intersect. Here is how we would use it in our code:
+```lua
+function _update()
+ for drop in all(drops) do
+  drop[2] += rain_speed
+  if drop[2] >= 128 then
+    del(drops, drop)
+  end
+
+  if collided(
+   drop, rain_size,
+   coords, size
+  ) then
+    -- GAME OVER!
+  end
+ end
+end
+```
+But how do we handle Game Over? well, in this case it would be useful to think about what internal variables we need to change in order to reset our game. Three immediately come to mind: the player's coordinates, the rain on the screen, and the frame number. You can just reset them inside of the collided if statement, but this seems like a good application for a function.
+```lua
+function reset()
+ coords = {64, 110}
+ drops = {}
+ frame = 0
+end
+
+function _update()
+ for drop in all(drops) do
+  if collided(
+   drop, rain_size,
+   coords, size
+  ) then
+   reset()
+  end
+ end
+end
+```
+
+## Score
+The last thing that our game is missing is a way to reward the player, and a great way is to keep a score. In our case we already have a score - the frame count - so all we have to do is implement a way to show and store it. Showing it is easy - Pico provides the `print` function, which accepts a value and an x and y. Don't forget to put this call in the `_draw` function, as it won't work anywhere else.
+```lua
+function _draw()
+ print(frame, 10, 116)
+end
+```
+Now try to add a variable that stores the highscore and display that as well. Here is our solution:
+```lua
+highscore =
+function reset()
+ if frame > highscore then
+  highscore = frame
+ end
+ coords = {0, 0}
+ drops = {}
+ frame = 0
+end
+
+function _draw()
+ print(score, 10, 116)
+ print(highscore, 10, 123)
+end
+```
+And...we're done! You can compare your final program with the one below:
+```lua
+function collided(c1, s1, c2, s2)
+ return
+  c1[1] < c2[1] + s2[1] and
+  c2[1] < c1[1] + s1[1] and
+  c1[2] < c2[2] + s2[2] and
+  c2[2] < c1[2] + s1[2]
+end
+
+function reset()
+ if frame > highscore then
+  highscore = frame
+ end
+
+ coords = {dcoords[1], dcoords[2]}
+ rain = {}
+ frame = 0
+end
+
+dcoords = {62, 105}
+coords = {dcoords[1], dcoords[2]}
+size = {5, 6}
+speed = 3
+
+rain_size = {5, 5}
+rain_speed = 3
+rain_freq = 3
+
+frame = 0
+highscore = 0
+rain = {}
+
+function _update()
+ if (frame % rain_freq == 0) then
+  add(rain, {rnd(128 - rain_size[1]), 0})
+ end
+
+ for drop in all(rain) do
+  drop[2] += rain_speed
+
+  if drop[2] > 128 then
+   del(rain, drop)
+  elseif collided(
+   drop, rain_size,
+   coords, size
+  ) then
+   reset()
+   break
+  end
+ end
+
+ if btn(0) then
+  coords[1] = coords[1] - speed
+ elseif btn(1) then
+  coords[1] = coords[1] + speed
+ end
+
+ if coords[1] < 0 then
+  coords[1] = 0
+ elseif coords[1] > 128 - size[1] then
+  coords[1] = 128 - size[1]
+ end
+
+ frame = frame + 1
+end
+
+function _draw()
+ cls()
+ spr(1, coords[1], coords[2])
+
+ for drop in all(rain) do
+  spr(2, drop[1], drop[2])
+ end
+
+ print(frame, 5, 112)
+ print(highscore, 5, 118)
 end
 ```
