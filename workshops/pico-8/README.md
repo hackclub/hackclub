@@ -259,14 +259,8 @@ function _update()
  if x < 0 then
   x = 0
  end
- if y < 0 then
-  y = 0
- end
  if x >= 127 then
   x = 127
- end
- if y >= 127 then
-  y = 127
  end
 end
 ```
@@ -281,8 +275,8 @@ Because the coordinates refer to the left hand corner checking the bottom or rig
 Here is the updated code:
 
 ```lua
-width = 10 -- notice the new variables
-height = 10 -- these are important so that it's easier to change the square size later on
+width = 5 -- notice the new variables
+height = 6 -- these are important so that it's easier to change the square size later on
 
 function _update()
  if x < 0 then
@@ -324,8 +318,8 @@ You can think of this 'accessed table' as just another variable, and so you can 
 
 Now we're faced by another decision: how do we store coordinates? If we apply tables to our current variable setup, this is what we would get:
 ```lua
-rain_x = {0, 3, 5, 6}
-rain_y = {32, 43, 21, 32}
+rain_x = { 0, 3, 5, 6 }
+rain_y = { 32, 43, 21, 32 }
 ```
 But this is also sub-optimal because there is no way to guarantee that the two tables will always have the same amount of values, which could lead to bugs. The solution is to use a table of coordinate pairs:
 ```lua
@@ -349,6 +343,7 @@ Notice how `x` is indexed by `1` because it is the first element in a coordinate
 Now let's add the raindrops. For this we'll need to create a table of raindrops and use the `add` function to add a coordinate pair to this table every frame. `add` takes in a table and the value to add to its end.
 ```lua
 rain = {}
+
 function _update()
   add(rain, { 0, 0 }) -- adds a coordinate pair with an x of 0 and a y of 0
 end
@@ -403,8 +398,12 @@ It's worth setting the rain speed to a variable so that it's easier to change it
 We can randomize the drops' starting x by using the `rnd` function, which returns a number from 0 up to but not including the number you give it.
 
 ```lua
--- add(rain, { 0, 0 }) turns into
-add(rain, { rnd(128 - drop_size[1]), 0 })
+rain_size = { 5, 5 }
+
+function _update()
+  -- add(rain, { 0, 0 }) turns into
+  add(rain, { rnd(128 - rain_size[1]), 0 })
+end
 ```
 
 The reason that we subtract `drop_size` from the width of the screen is for the same reason that we subtracted the player's width from the width of the screen when we were preventing them from going off - that helps us account for the fact that the coordinates actually refer to the top left corner of the droplet. If we allowed the droplet to spawn at 127 pixels then it would be almost entirely off-screen.
@@ -510,13 +509,13 @@ Since the player's default position seems important, let's make that into a sepa
 
 ```lua
 function reset()
- coords = {dcoords[1], dcoords[2]}
+ coords = { dcoords[1], dcoords[2] }
  rain = {}
  frame = 0
 end
 
 dcoords = {62, 105}
-coords = {dcoords[1], dcoords[2]}
+coords = { dcoords[1], dcoords[2] }
 ```
 Now we can initiate/reset `coords` by just creating a table with the appropriate values of `dcoords`.
 
