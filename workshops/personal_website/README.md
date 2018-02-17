@@ -40,10 +40,7 @@ _If you already have a GitHub account, skip to step 3 of [Signing Up for GitHub]
 
 GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
 
-1. Open https://github.com/join in a new tab and fill in:
-   - your username (if you can't decide on one, your first and last name are a solid choice)
-   - email (you'll be verifying your email in the next step)
-   - password (you'll need to remember this!)
+1. Open https://github.com/join in a new tab and create a new account
 2. Verify your email by checking the inbox of the email you used
 3. Open https://github.com/hackclub/hackclub in a new tab and star the project by clicking the button on the top right that looks like this:
 
