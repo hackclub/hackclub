@@ -45,7 +45,7 @@ GitHub is a website used by millions of programmers to collaborate on code. We'l
   - email (you'll be verifying your email in the next step)
   - password (you'll need to remember this!)
 2. Verify your email by checking the inbox of the email you used
-3. Open https://gh.hackclub.com in a new tab and star the project by clicking the button on the top right that looks like this:
+3. Open https://github.com/hackclub/hackclub in a new tab and star the project by clicking the button on the top right that looks like this:
 
 ![](img/github_star.png)
 
