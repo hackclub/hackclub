@@ -231,7 +231,7 @@ end
 ### Borders
 It is often important to restrict the player's movement - and again, this is best approached from a conceptual level. We need to...
  * Stop the user from going off-screen
- * Check if the user is offscreen and bring them back
+ * Check if the user is off-screen and bring them back
  * In the `_update` function check if the user has gone off screen for every direction and if so set their appropriate coordinate to be the screen's edge
 Once again, try to implement this yourself and then compare your solution with ours:
 
@@ -243,11 +243,11 @@ function _update()
  if y < 0 then
   y = 0
  end
- if x >= 128 then
-  x = 128
+ if x >= 127 then
+  x = 127
  end
- if y >= 128 then
-  y = 128
+ if y >= 127 then
+  y = 127
  end
 end
 ```
@@ -272,11 +272,167 @@ function _update()
  if y < 0 then
   y = 0
  end
- if x >= 128 - width then
-  x = 128 - width
+ if x >= 127 - width then
+  x = 127 - width
  end
- if y >= 128 - height then
-  y = 128 - height
+ if y >= 127 - height then
+  y = 127 - height
+ end
+end
+```
+
+## Part 2: the invasion
+The issue with our current game is that it's still pretty boring, so let's add some danger for the player: falling raindrops. But the first issue that we'll encounter is that we currently don't have a good way to store multiple values. We could make multiple variables, like so:
+```lua
+raindrop1_x = 0
+raindrop2_y = 0
+
+raindrop1_x = 0
+raindrop2_y = 0
+
+raindrop1_x = 0
+raindrop2_y = 0
+```
+but, as you can see, that takes up a lot of space and caps the amount of drops that we can create. In order to compactly store all of the drops we need a new value type: a table.
+
+A table lets you store multiple values in one value (similar to a list or an array in other languages). While a regular variable can be thought of as a box, think of a table as a bag with a bunch of values in it. We can define a table like so:
+```lua
+t1 = {1, 2, 3}
+t2 = {3, true, false, 32, 43}
+t3 = {}
+```
+As you can see, a table can store any number of different value types. You create a table by putting them in curly brackets and separating them by commas. We can then access those variables by adding square brackets with the index of the value to the table name. Note that indices start at 1 in lua.
+```lua
+t1[1] -- 1
+t1[2] = 3
+t1[3] = t1[3] + 1
+```
+
+
+
+
+Now we're faced by another decision: how do we store coordinates? If we apply tables to our current variable setup, this is what we would get:
+```lua
+rain_x = {0, 3, 5, 6}
+rain_y = {32, 43, 21, 32}
+```
+But this is also sub-optimal because there is no way to guarantee that the two tables will always have the same amount of values, which could lead to bugs. The solution is to use a table of coordinate pairs:
+```lua
+rain_coords = { {0, 32}, {3, 43}, {5, 21}, {6, 32} }
+```
+
+This 'table of tables' approach improves our code by keeping all information in one place. But before we implement that, let's first change it so that we use the same approach in our code: that means replacing `x` and `y` with a single `coords` variable, and `width` and `height` with a `size` variable. Try that now.
+
+```lua
+function _update()
+ if coords[1] < 0 then
+  coords[1] = 0
+ end
+ if coords[2] < 0 then
+  coords[2] = 0
+ end
+ if coords[1] >= 127 - size[1] then
+  coords[1] = 127 - size[1]
+ end
+ if coords[2] >= 127 - size[2] then
+  coords[2] = 127 - size[2]
+ end
+end
+```
+Notice how `x` is indexed by `1` because it is the first element in a coordinate pair, and `y` is indexed by `2` because it is the second element.
+
+Now let's add the raindrops. For now, let's say that we'll add one raindrop every single frame. We can use the `add` function, which takes in a table and the value to add to its end.
+```lua
+drops = {}
+function _update()
+  add(drops, { 0, 0 }) -- adds a coordinate pair with an x of 0 and a y of 0
+  end
+  ```
+  If you run the program now you'll notice that nothing appears - that's because we need to actually display the drops that we add. But if you think about it, we can't just magically display the whole table, but instead need to call the `spr` function for every element in it. This is where the for loop comes in: it lets you execute a bit of code for every item in a list.
+
+![](assets/for_loop.gif)
+
+```lua
+function _draw()
+ -- for [variable name] in all([table name]) do
+ for drop in all(drops) do
+  spr(2, drop[1], drop[2])
+ end
+end
+```
+
+The for loop in this example goes through `drops` and for every value in that table sets `drop` equal to the value. Since in this case that value is a coordinate pair, we then use it to draw a raindrop sprite in that location. We call `spr` with `2` because our raindrop sprite has that value in our spritesheet.
+
+![](assets/spritesheet_rain.png)
+
+Here is what the code would do if drops were equal to `{{0, 0}, {1, 1}, {2, 2}}`:
+
+```lua
+drop = {0, 0}
+spr(2, drop[1], drop[2])
+
+drop = {1, 1}
+spr(2, drop[1], drop[2])
+
+drop = {2, 2}
+spr(2, drop[1], drop[2])
+```
+
+### Let it rain
+Moving raindrops uses a very similar technique to displaying them - this is because, again, we can't move an entire table and need to deal with its contents individually. Go ahead and write a loop in the `_update` function that moves all the drops downwards, and then compare your solution with ours:
+
+```lua
+rain_speed = 3
+
+function _update()
+ for drop in all(drops) do
+  drop[2] = drop[2] + rain_speed
+ end
+end
+```
+
+It's worth setting the rain speed to a variable so that it's easier to change it later on. Unfortunately, our game still looks like this:
+
+![](imperfect_rain.gif)
+
+We can randomize the drops' starting location by using the `rnd` function, which returns a number from 0 up to but not including the one you give it.
+
+```lua
+-- add(rain, { 0, 0 }) turns into
+add(rain, { rnd(128 - drop_size[1]), 0 })
+```
+
+The reason that we subtract `drop_size` is for the same reason that we subtracted the player's width from the width of the screen when we were preventing them from going off - that helps us account for the fact that the coordinates actually refer to the top left corner of the droplet. If we allowed it to spawn at 127 pixels then it would be almost entirely off-screen.
+
+Another issue is that the droplets are spawning way too fast and we want a way to control that. The modulo operator (`%`) helps us out. It works by returning the remainder of dividing the two numbers passed to it.
+```lua
+10 % 7 -- 3
+10 % 5 -- 0
+105 % 10 -- 5
+80 % 10 -- 0
+```
+This is useful because it can help is figure out if a number is a multiple of some other number: if `x` is indeed a multiple of `y` then `x % y` should equal `0`, because dividing them does not produce a remainder. We can use this concept to execute code periodically, for example every 10 frames.
+```lua
+frame = 0
+rain_freq = 10
+function _update()
+  if frame % rain_freq == 0 then
+    add(rain, { rnd(128 - drop_size[1]), 0 })
+  end
+  frame = frame + 1
+end
+```
+Notice the new frame variable, which is important because it allows us to keep track of what the current frame is. As with rain speed, it is also a good idea to make rain frequency into a variable with `rain_freq`.
+
+There is one final thing that we need to do with the rain. The problem is that currently the list of drops will grow infinitely large, which can cause considerable lag. The solution is to remove drops from it once they reach a certain point, such as the bottom edge of the screen. We can use the `del` function, which accepts a table and item to remove. Go ahead and try to use this to automatically remove drops from our `drops` table, and then check our solution:
+
+```lua
+function _update()
+ for drop in all(drops) do
+  drop[2] += rain_speed
+  if drop[2] >= 128 then
+    del(drops, drop)
+  end
  end
 end
 ```
