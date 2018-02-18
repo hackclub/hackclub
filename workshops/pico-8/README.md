@@ -402,11 +402,13 @@ rain_size = { 5, 5 }
 
 function _update()
   -- add(rain, { 0, 0 }) turns into
-  add(rain, { rnd(128 - rain_size[1]), 0 })
+  add(rain, { rnd(128 - rain_size[1]), -rain_size[2] })
 end
 ```
 
 The reason that we subtract `drop_size` from the width of the screen is for the same reason that we subtracted the player's width from the width of the screen when we were preventing them from going off - that helps us account for the fact that the coordinates actually refer to the top left corner of the droplet. If we allowed the droplet to spawn at 127 pixels then it would be almost entirely off-screen.
+
+The reason we now spawn the droplets at a y of the negative droplet height rather than 0 is to give the illusion that the droplets are coming down from above the screen rather than spawning in it.
 
 Another issue is that the droplets are spawning way too fast and we want a way to control that. The modulo operator (`%`) helps us out. It works by resulting in the remainder of dividing the two numbers it is called on.
 ```lua
@@ -580,7 +582,7 @@ rain = {}
 
 function _update()
  if (frame % rain_freq == 0) then
-  add(rain, {rnd(128 - rain_size[1]), 0})
+  add(rain, {rnd(128 - rain_size[1]), -rain_size[2]})
  end
 
  for drop in all(rain) do
