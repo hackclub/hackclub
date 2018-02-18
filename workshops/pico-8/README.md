@@ -1,3 +1,11 @@
+---
+name: Pico-8
+description: Build a simple action game using the Pico-8 engine
+author: "@Jetmate"
+group: experimental
+order: 11
+---
+
 # Pico-8 Action Game
 
 ## Why Pico?
