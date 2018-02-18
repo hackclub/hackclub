@@ -2,8 +2,8 @@
 name: Dashboard
 description: Personal dashboard with news and weather
 author: "@shamdasani"
-group: start
-order: 7
+group: experimental
+order: 11
 ---
 
 # Dashboard
