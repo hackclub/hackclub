@@ -1,6 +1,6 @@
 ---
 name: Pico-8
-description: Build a simple action game using the Pico-8 engine
+description: Learn game development through the Pico-8 fantasy console
 author: "@Jetmate"
 group: experimental
 order: 11
