@@ -50,7 +50,7 @@ Before we start coding we first need to take care of drawing the characters, or 
 
 ![](assets/sprite_editor.gif)
 
-Note that you want your final sprites to be as close to the top left corner as possible, similar to how they're positioned in the gif.
+Note that you want your final sprites to be as close to the top left corner as possible, similar to how they're positioned in the GIF.
 
 ### Code, oh my
 
@@ -58,7 +58,7 @@ Before making the actual code, a bit of theory.
 
 ![](assets/gameloop.png)
 
-Every game has something called a gameloop, which is code that is called every frame. This gameloop is split into three parts: first, the game collects user input (is the right arrow pressed?). Then, the game updates some internal variables (move the player right). Finally, the game redraws the screen to reflect the new state.
+Every game has something called a game loop, which is code that is called every frame. This game loop is split into three parts: first, the game collects user input (is the right arrow pressed?). Then, the game updates some internal variables (move the player right). Finally, the game redraws the screen to reflect the new state.
 
 In Pico, you can define that drawing phase by placing code in the following way:
 
@@ -106,7 +106,7 @@ end
 
 Now every frame will start from a blank screen.
 
-The reason that the square is in the top-left corner is because coordinates actually work a little differently in Pico. As is drawn on the cheatshet, the y-axis  is actually flipped: this means that `(0, 0)` is actually the top-left corner. Remember this.
+The reason that the square is in the top-left corner is because coordinates actually work a little differently in Pico. As is drawn on the cheatsheet, the y-axis  is actually flipped: this means that `(0, 0)` is actually the top-left corner. Remember this.
 
 ![](assets/coordinate_grid.png)
 
@@ -261,7 +261,7 @@ function _draw()
 end
 ```
 
-The code under `elseif` will only run if the first `if` statement is `false` - this makes it useful for grouping multiple conditions that you know can't all be true (eg you know that the player can't be moving right and left at the same time). If we had just made another `if` for moving left, then pressing down both right and left would have caused the player to stand still.
+The code under `elseif` will only run if the first `if` statement is `false` - this makes it useful for grouping multiple conditions that you know can't all be true (e.g. you know that the player can't be moving right and left at the same time). If we had just made another `if` for moving left, then pressing down both right and left would have caused the player to stand still.
 
 Notice that `elseif` doesn't require a separate `end`, and is sort-of grouped with the `if`. There is one last type of `if` and that is `else` - `else` is only evaluated if the previous `if`s and `elseif`s were all `false`. Here is an example to sum this up:
 
@@ -349,7 +349,7 @@ t2 = {3, true, false, 32, 43}
 t3 = {}
 ```
 
-As you can see, a table can store any number of different value types. You create a table by putting them in curly brackets and separating them by commas. We can then access those variables by adding square brackets with the index of the value to the table name. Note that indices start at 1 in lua.
+As you can see, a table can store any number of different value types. You create a table by putting them in curly brackets and separating them by commas. We can then access those variables by adding square brackets with the index of the value to the table name. Note that indices start at 1 in Lua.
 
 ```lua
 t1[1] -- 1
@@ -572,7 +572,7 @@ function _update()
 end
 ```
 
-Since the player's default position seems important, let's make that into a separate variable called `dcoords` (default coords). That way we can use it in other places when we initiate the player.
+Since the player's default position seems important, let's make that into a separate variable called `dcoords` (default coordinates). That way we can use it in other places when we initiate the player.
 
 ```lua
 function reset()
@@ -597,7 +597,7 @@ function _draw()
 end
 ```
 
-Now try to add a variable that stores the highscore and display that as well. Here is one solution:
+Now try to add a variable that stores the high score and display that as well. Here is one solution:
 
 ```lua
 highscore = 0
@@ -616,7 +616,7 @@ function _draw()
 end
 ```
 
-In this code, every time that the game is reset Pico compares your current score with the highscore. The highscore is only updated if your current score is larger.
+In this code, every time that the game is reset Pico compares your current score with the high score. The high score is only updated if your current score is larger.
 
 And...we're done! You can compare your final program with the one below:
 
@@ -708,6 +708,6 @@ Here are some topics that you may want to look in to:
  * The map editor
  * The SFX and music editors
  * Strings and tables with string keys
- * Metatables and OOP in Lua
+ * Metatables and object-oriented programming in Lua
 
 Once you feel like you've achieved Pico-8 mastery, a very worthy game framework to look into is [Love2D](https://love2d.org/). Love is as simple and fun to use as Pico but provides much more freedom.
