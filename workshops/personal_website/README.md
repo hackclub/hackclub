@@ -1,3 +1,11 @@
+---
+name: Personal Website
+description: Your first website from scratch
+author: Hack Club staff
+group: start
+order: 1
+---
+
 # Personal Website
 
 _**We recommend going through this workshop in Google Chrome.**_
@@ -32,12 +40,9 @@ _If you already have a GitHub account, skip to step 3 of [Signing Up for GitHub]
 
 GitHub is a website used by millions of programmers to collaborate on code. We'll be using it to store and manage our code in Hack Club.
 
-1. Open https://github.com/join in a new tab and fill in:
-  - your username (if you can't decide on one, your first and last name are a solid choice)
-  - email (you'll be verifying your email in the next step)
-  - password (you'll need to remember this!)
+1. Open https://github.com/join in a new tab and create a new account
 2. Verify your email by checking the inbox of the email you used
-3. Open https://gh.hackclub.com in a new tab and star the project by clicking the button on the top right that looks like this:
+3. Open https://github.com/hackclub/hackclub in a new tab and star the project by clicking the button on the top right that looks like this:
 
 ![](img/github_star.png)
 
@@ -91,22 +96,6 @@ You should now see a screen looks something like this:
 
 ![](img/c9_ide_loaded.png)
 
-### 4) Accessing c9.io
-
-Now we are properly logged in to c9.io, what are we still waiting for?
-
-If we go on https://c9.io on a different computer, this is what we will see:
-
-![](img/c9_new_aws_landing_page.png)
-
-1. Click on the gray box that says "Login for existing c9.io customers"
-
-2. You will be redirected a [login page](https://c9.io/login) that looks like this:
-
-![](img/c9_login_page.png)
-
-3. Login with the account you just created!
-
 Congratulations, you've officially set up all of your coding tools for the semester!
 
 Now we're ready to start the website!
@@ -114,6 +103,8 @@ Now we're ready to start the website!
 ## Part II: The HTML File
 
 ### 1) Creating the HTML file
+
+HTML stands for Hypertext Markup Language. Every website from the New York Times to Twitch uses HTML to display content on the web.
 
 We'll start by making an `index.html` file. Right click the `projects` folder in the left sidebar, select "New File," and name the file `index.html`.
 
@@ -316,6 +307,17 @@ Here is the transformation that your stylesheet will have undergone at the end o
 
 ![](img/c9_css_progression.gif)
 
+You can take this even further by adding a bit of color to the page! The attribute `color` **(spelled without a u)** allows you to set the text color, and `background-color` allows you to set a background color. You can find a list of supported color names over at [W3Schools](https://www.w3schools.com/colors/colors_names.asp). Keep in mind that it's a good idea to pick a combination of colors will keep the text readable.
+
+```css
+body {
+    text-align: center;
+    font-family: "Arial";
+    background: azure;
+    color: purple;
+}
+```
+
 Now let's save and look at our work. Ah, it is truly beautiful to behold. Now let's commit our changes.
 
 Remember to save both `index.html` and `styles.css`! We'll once again use the terminal in Cloud9 to persist our changes with git.
@@ -360,7 +362,6 @@ A good way to get ideas for what to add to your website is to look at other peop
 - [Jevin Sidhu](http://jevinsidhu.com/)
 - [Zero Cool](https://harrison.tech/zero-cool/)
 - [Chaoyi Zha](https://cydrobolt.com/)
-- [Osman Ahmed](http://leafbomb.com/)
 
 **Websites Made by Professionals:**
 

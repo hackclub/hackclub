@@ -1,6 +1,14 @@
-# Dashboard 
+---
+name: Dashboard
+description: Personal dashboard with news and weather
+author: "@shamdasani"
+group: start
+order: 7
+---
 
-What you'll be building: 
+# Dashboard
+
+What you'll be building:
 
 ![](img/app.gif)
 

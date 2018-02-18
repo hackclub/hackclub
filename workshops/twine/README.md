@@ -1,3 +1,11 @@
+---
+name: Twine
+description: Build a text adventure game
+author: "@remixz"
+group: experimental
+order: 8
+---
+
 # Text Adventure 1: Twine
 
 Welcome! In this workshop you'll be creating your very own text adventure using a tool called [Twine](http://twinery.org). It uses an easy-to-follow interface to lay out your story, but you'll also be using some very basic functions called "macros", which we'll be discussing later. [Here's an example of what you'll have created by the end of this workshop](https://bruggie.com/twine).

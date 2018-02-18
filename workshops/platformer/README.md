@@ -1,3 +1,11 @@
+---
+name: Platformer
+description: Simple side-scrolling platformer game
+author: "@jkwok91"
+group: start
+order: 5
+---
+
 # Platformer
 
 | What you'll build       |

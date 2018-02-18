@@ -1,4 +1,12 @@
-# Rails Notes Workshop
+---
+name: Rails Notes
+description: Personal notes app using Rails
+author: "@lachlanjc"
+group: experimental
+order: 4
+---
+
+# Rails Notes
 
 So far we've been building one-off static webpages with HTML, CSS, and JavaScript. In this workshop, we'll be building a real notes app!
 

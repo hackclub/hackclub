@@ -1,3 +1,11 @@
+---
+name: Preface
+description: Read this before beginning any of the workshops
+author: Hack Club staff
+group: misc
+order: 1
+---
+
 # Preface
 
 _Adapted from [here](https://medium.freecodecamp.com/things-i-wish-someone-had-told-me-when-i-was-learning-how-to-code-565fc9dcb329)_
@@ -28,4 +36,4 @@ There's no shortage of opinions about the "right" or "best" way to learn how to 
 
 Regardless of your method, if you keep putting bricks on top of each other, it might take a long time but eventually you'll have a wall. This is where that faith mentioned earlier comes in handy. If you believe that with time and patience you can figure the whole coding thing out, in time you almost certainly will.
 
-_[Click me to go back to the workshop list](README.md)_
+_[Click me to go back to the workshop list](../)_

@@ -1,3 +1,11 @@
+---
+name: Notes to Self
+description: An online personal journal
+author: "@jkwok91"
+group: retired
+order: 6
+---
+
 # Notes to Self
 
 **RETIRED**
@@ -6,11 +14,7 @@ _**This workshop has been retired and is no longer maintained.**_
 
 ---
 
-Short Link: [https://workshops.hackclub.com/notes_to_self/](https://workshops.hackclub.com/notes_to_self/)
-
 Demo: [here](https://prophetorpheus.github.io/notes_to_self/)
-
----
 
 _**This workshop is designed with Google Chrome in mind. Problems may occur if you use a different browser.**_
 

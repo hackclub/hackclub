@@ -1,3 +1,11 @@
+---
+name: The Dawgshop
+description: Learn to dynamically modify webpages with jQuery, dawg
+author: "@nguyenbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram"
+group: experimental
+order: 7
+---
+
 # The Dawgshop
 
 ![Thug Life - Tu Pac](img/tupac.gif)

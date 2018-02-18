@@ -1,3 +1,11 @@
+---
+name: Find Bigfoot
+description: Simple game to find Bigfoot using HTML, CSS and JS
+author: "@ad510"
+group: experimental
+order: 6
+---
+
 # Find Bigfoot
 
 In this workshop, you will make a game about finding Bigfoot. It will look like this:

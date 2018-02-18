@@ -1,12 +1,16 @@
+---
+name: Soccer
+description: A simple soccer game
+author: Hack Club staff
+group: retired
+order: 7
+---
+
 # Soccer
 
 **RETIRED**
 
 _**This workshop has been retired and is no longer maintained.**_
-
----
-
-Short link to this workshop: https://workshops.hackclub.com/soccer
 
 Note to leaders running this workshop: we're replacing Soccer with [Dodge](../dodge/). We recommend running this in your clubs instead.
 

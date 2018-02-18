@@ -1,3 +1,11 @@
+---
+name: Ajar.io
+description: A clone of agar.io
+author: "@Bogidon"
+group: experimental
+order: 2
+---
+
 # Ajar.io
 
 Short link to this workshop: https://workshops.hackclub.com/ajar

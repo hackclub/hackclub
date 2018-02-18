@@ -1,3 +1,11 @@
+---
+name: Cloud9
+description: Introduction to using Cloud9
+author: "@Bogidon"
+group: retired
+order: 4
+---
+
 # Cloud9 tutorial
 
 **RETIRED**
@@ -7,8 +15,6 @@ _**This workshop has been retired and is no longer maintained.**_
 ---
 
 ![Cloud9 logo](img/cloud9.png)
-
-Short link to this workshop: https://workshops.hackclub.com/cloud9
 
 ## What is Cloud9?
 
@@ -227,21 +233,3 @@ You now know how to
 
 One last thing. Please click a rating below to rate this workshop. It'll only
 take 3 seconds.
-
-_How likely is it that you would recommend this workshop to a friend?_
-
-| [1][r1] | [2][r2] | [3][r3] | [4][r4] | [5][r5] | [6][r6] | [7][r7] | [8][r8] | [9][r9] | [10][r10] |
-| ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | --------- |
-
-Be sure to experiment with HTML, CSS, and JavaScript on your own!
-
-[r1]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=1
-[r2]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=2
-[r3]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=3
-[r4]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=4
-[r5]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=5
-[r6]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=6
-[r7]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=7
-[r8]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=8
-[r9]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=9
-[r10]: https://feedback-redir.hackclub.com/1ycv4tf0X-OHOf2_KyS7bY9gJ9vJC_VSA2x205vmaZY4?ip=entry.78173348&rfield=entry.559841237&r=10
