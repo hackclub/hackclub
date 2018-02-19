@@ -83,7 +83,7 @@ We'll also need to attach our JavaScript file, `main.js`. Add this below the lin
 </body>
 ```
 
-Now we'll save (with shortcut: <kbd>Ctrl</kbd>+<kbd>s</kbd> / <kbd>Command</kbd>+<kbd>s</kbd>) and open Live Preview (`Preview` > `Live Preview`).
+Now we'll save (with shortcut: <kbd>Ctrl</kbd>+<kbd>s</kbd> / <kbd>Command</kbd>+<kbd>s</kbd>) and open Live Preview (`Preview` > `Live Preview`). You should see a blank screen. Next, we'll start adding content.
 
 ### Priming the JS File
 
