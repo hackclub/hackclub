@@ -1,14 +1,14 @@
 ---
 name: Blink
 description: Blink an LED with Arduino
-author: @Athulbless
-group: Experimental
+author: "@Athulbless"
+group: experimental
 order: 12
 ---
 
 # Blink an LED with Arduino 
 
-- Reference: [www.arduino.cc](https://www.arduino.cc)
+- Reference: [www.arduino.cc]()
 
 ## Things You Would need:
 
@@ -56,7 +56,7 @@ Select the serial device of the board from the Tools | Serial Port menu. This is
 
 > Upload the program
 
-Now, simply click the "Upload" button in the environment. Wait a few seconds - you should see the RX and TX leds on the board flashing. If the upload is successful, the message "Done uploading." will appear in the status bar.
+Now, simply click the "Upload" button in the environment. Wait a few seconds - you should see the RX and TX LEDs on the board flashing. If the upload is successful, the message "Done uploading." will appear in the status bar.
 
 ![](images/UNO_Upload.png)
 
@@ -64,7 +64,7 @@ A few seconds after the upload finishes, you should see the pin 13 (L) LED on th
 
 ## Blink !
 
-Now connect the positive terminal (Longer lead) of the LED to Pin 13 (L) on the arduino, Connect the negative terminal (Shorter lead) to GND
+Now connect the positive terminal (Longer lead) of the LED to Pin 13 (L) on the Arduino, Connect the negative terminal (Shorter lead) to GND
 
 ![](images/Title.gif)
 
