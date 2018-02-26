@@ -1,8 +1,0 @@
-machine:
-  services:
-    - docker
-
-test:
-  override:
-    - docker pull hackclub/markcop:latest > /dev/null # Suppress for sanity
-    - docker run -v $(pwd):/app hackclub/markcop:latest
