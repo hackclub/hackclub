@@ -7,5 +7,5 @@ jobs:
       - checkout
       - run:
         name: Markcop
-        command: /bin/markcop
+        command: /markcop/bin/markcop
         
