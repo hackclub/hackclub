@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  markcop:
+    docker:
+      - image: hackclub/markcop:latest
+    steps:
+      - checkout
+      - run:
+        name: Markcop
+        command: /bin/markcop
+        
