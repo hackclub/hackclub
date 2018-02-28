@@ -22,4 +22,4 @@ Also, applications now open to join our new curriculum team. [Apply here.](https
 7. Converting handwritten notes to files using Google Cloud Vision ([@ifvictr](https://github.com/ifvictr))
 8. Create a Chrome extension that returns the current price of Bitcoin ([@matejmecka](https://github.com/matejmecka))
 9. Make a Google Assistant Action that finds a Hack Club near me ([@matejmecka](https://github.com/matejmecka))
-10. Create a Menu Bar that lists Meetup event's happening soon ([@matejmecka](https://github.com/matejmecka))
+10. Create a menu bar that lists meetup events happening soon ([@matejmecka](https://github.com/matejmecka))
