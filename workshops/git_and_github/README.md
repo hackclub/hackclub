@@ -12,10 +12,6 @@ _**This workshop has been retired and is no longer maintained or recommended.**_
 
 ---
 
-Short link to this workshop: https://workshops.hackclub.com/git_and_github
-
--------------------------------------------------------------------------------
-
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
 
