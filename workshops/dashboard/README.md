@@ -268,7 +268,7 @@ html {
 
 Then, we can adjust the `a tags` (or links) to have a border underneath them and making them italicize on hover like this: 
 
-```js
+```css
 a {
   text-decoration: none;
   color: #000;
