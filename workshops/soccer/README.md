@@ -8,9 +8,9 @@ order: 7
 
 # Soccer
 
-**RETIRED**
+_**This workshop has been retired and is no longer maintained or recommended.**_
 
-_**This workshop has been retired and is no longer maintained.**_
+---
 
 Note to leaders running this workshop: we're replacing Soccer with [Dodge](../dodge/). We recommend running this in your clubs instead.
 
