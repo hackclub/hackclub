@@ -95,7 +95,7 @@ Take a look at the [Personal Website](https://workshops.hackclub.com/personal_we
 
 Our JavaScript is where we will actually build our app. Open the file up and and create a function. This function will grab the date, and then use something called function chaining to split the date string and splice it to print only the first four words of the string. If we didn't do this, JavaScript would print out the time too. 
 
-```html
+```js
 function loadDate() {
   var currentDate = new Date(); 
   var dateString = currentDate.toString()
