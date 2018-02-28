@@ -2,8 +2,8 @@
 name: Leadership Team
 description: How to form a team to lead your club
 author: Hack Club staff
-group: meta
-order: 1
+group: misc
+order: 3
 ---
 
 # Making a Leadership Team
