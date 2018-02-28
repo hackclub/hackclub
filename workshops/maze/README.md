@@ -8,9 +8,7 @@ order: 5
 
 # Friendly Maze Game
 
-**RETIRED**
-
-_**This workshop has been retired and is no longer maintained.**_
+_**This workshop has been retired and is no longer maintained or recommended.**_
 
 ## 1. Demo
 
