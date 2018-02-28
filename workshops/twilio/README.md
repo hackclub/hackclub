@@ -8,9 +8,7 @@ order: 8
 
 # Introduction to Twilio
 
-**RETIRED**
-
-_**This workshop has been retired and is no longer maintained.**_
+_**This workshop has been retired and is no longer maintained or recommended.**_
 
 ---
 
