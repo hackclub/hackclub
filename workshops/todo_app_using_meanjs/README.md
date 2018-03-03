@@ -1,13 +1,13 @@
 ---
-name: Todo MEANjs Application
-description: Build Todo Web Application using MEANjs  
+name: ToDo MEAN.JS Application
+description: Build Todo Web Application using MEAN.JS 
 author: Amit Kumar Singh (Hack Club Leader)
 username: amitsin6h
 group: experimental
 order: 15
 ---
 
-# Todo MEAN.js Application
+# ToDo MEAN.JS Application
 
 Short link to this workshop: https://workshops.hackclub.com/todo_meanjs
 
@@ -23,15 +23,16 @@ _**We recommend going through this workshop in Google Chrome or Mozilla Firefox.
 [final_code]: https://github.com/amitsin6h/todo-mean-app
 
 ---
+
 ## About the Application
 
-In this workshop we'll be creating todo app using MEAN.js. This todo app will have feature like create task and once we complete our task we can delete it. 
+In this workshop we'll be creating a ToDo app using MEAN.JS. This ToDo app will have feature like create task and once we complete our task we can delete it. 
 
 ## Let's Start:
 
 Before we start to code lets us first understand few things to get our basics clear.
 
-**So what is MEAN ?**
+**So what is MEAN **
 
 So, basically MEAN stands for:
 
@@ -53,7 +54,6 @@ So, basically MEAN stands for:
 - Cloud9 with blank Ubuntu project
 - Brain
 
-
 **Table of Contents**
 
 - [Part I: Setting up Node.js](#part-i-setting-up-nodejs)
@@ -67,35 +67,34 @@ So, basically MEAN stands for:
 - [Part X: Working with Backend](#part-x-working-with-backend)
 - [Part XI: Now let’s run our final application](#part-xi-now-lets-run-our-final-application)
 
-## Part I: Setting up Nodejs
+## Part I: Setting up Node.js
 
 
 ![](img/installing_nodejs.png)
 
 
 - Open your terminal
-- Type the below command in the terminal to install nodejs
+- Type the below command in the terminal to install Node.js
+  ```
+  $ sudo –s
+  $ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+  $ sudo apt-get install nodejs
+  $ exit
+  ```
 
+- Once the installation process is done we can check our Node.js version using the below command.
 
-    ```
-    $ sudo –s
-	$ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-	$ sudo apt-get install nodejs
-	$ exit
-    ```
+  ```
+  $ node –v (display the node version)
+  ```
 
-- Once the installation process is done we can check our nodejs version using the below command.
-```
-	$ node –v (display the node version)
-	```
+- We can also check our NPM (Node Package Manager) version using the below command.
 
-- We can also check our npm  (Node Package Manager) version using the below command.
-```
-$ npm –v (display the npm version)
-	```
+  ```
+  $ npm –v (display the NPM version)
+  ```
 
-- Node Package Manager is basically used to build projects and to download nodejs library.  
-
+- Node Package Manager is basically used to build projects and to download Node.js library.
 
 ## Part II: Installing MongoDB
 
@@ -103,42 +102,39 @@ $ npm –v (display the npm version)
 
 - To install MongoDB we need to run the below command.
 
-```
-$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv   2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+  ```
+  $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv   2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
 
-$ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
+  $ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
 
-$ sudo apt-get update
+  $ sudo apt-get update
 
-$ sudo apt-get install -y mongodb-org
-```
+  $ sudo apt-get install -y mongodb-org
+  ```
 
 - Once we install our MongoDB. Now we are ready for Part III.
-
 
 ## Part III: Building Project
 
 ![](img/building_project.png)
 
 - To build use the below command.
-- First create a separate directory for your project, in our case it is **[todo]**
-- Run ```$ npm init``` command it will ask few things related to project like version and will create pacakage.json for the project .
-
+- First create a separate directory for your project, in our case it is `/todo`
+- Run `$ npm init` command it will ask few things related to project like version and will create pacakage.json for the project.
 
 So far our `main.js` looks like this (your URLs and keys will be different):
-
 
 ## Part IV: Installing Express
 
 ![](img/installing_express.png)
 
-- We can install express using the below command.
-```
-$ npm install express –save
-```
+- We can install Express using the below command.
 
-Now this will install the express and also add the package in the `pacakage.json` folder.
+  ```
+  $ npm install express –save
+  ```
 
+Now this will install Express and also add the package in the `pacakage.json` folder.
 
 ## Our Complete Project Structure
 
@@ -147,7 +143,7 @@ Now this will install the express and also add the package in the `pacakage.json
 | ![](img/project_structure.png) |
 
 
-## Part V: Starting our Nodejs Server
+## Part V: Starting our Node.js Server
 
 Lets first create `server.js` file inside todo folder
 
@@ -178,13 +174,11 @@ $ noder server.js
 
 ![](img/running_nodejs.png)
 
-
 Now to see preview of our application we need to follow the guide shown in the below image.
 
 ![](img/preview_running_app.png)
 
 Now we will build our application frontend using Angularjs let see that it Part VI.
-
 
 ## Part VI: Creating Frontend using AngularJS
 
@@ -271,7 +265,7 @@ Now we will build our application frontend using Angularjs let see that it Part 
 
 ```
 
-**Creating app.js file to load our angularjs components.**
+**Creating app.js file to load our AngularJS components.**
 `todo/app/app.js`
 
 ```
@@ -347,7 +341,6 @@ $ mongod
 ```
 $ mongo
 $ use todo
-
 ```
 
 ![](img/use_todo.png)
@@ -380,17 +373,15 @@ We will be using Body-Parser to parse middleware.
 $ npm install body-parser --save
 ```
 
-
 ## Part X: Working with Backend
 
 Now we will work with our `server.js` file.
 
 In this file we will do the following things.
 - Connection request to mongodb
--	Create Model to store our daily task
+- Create Model to store our daily task
 - Work HTTP GET, POST and DELETE method
--	Configure our app to use stactic files and body-parser
-
+- Configure our app to use stactic files and body-parser
 
 `todo/server.js`
 
@@ -489,11 +480,11 @@ app.listen('8080', function(){
 ```
 
 
-## Part XI: Now lets run our final application
+## Part XI: Now let's run our final application
 
-Now we will run our final Todo MEANjs application.
+Now we will run our final ToDo MEAN.JS application.
 
-To run we know which command , we have to use
+To run we know which command, we have to use
 
 ```
 $ node server.js
