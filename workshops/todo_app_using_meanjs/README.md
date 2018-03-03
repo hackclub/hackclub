@@ -7,7 +7,7 @@ group: experimental
 order: 15
 ---
 
-# Todo MEANjs Application
+# Todo MEAN.js Application
 
 Short link to this workshop: https://workshops.hackclub.com/todo_meanjs
 
@@ -23,10 +23,12 @@ _**We recommend going through this workshop in Google Chrome or Mozilla Firefox.
 [final_code]: https://github.com/amitsin6h/todo-mean-app
 
 ---
-##About the Application
-In this workshop we'll be creating todo app using MEANjs. This todo app will have feature like create task and once we complete our task we can delete it. 
+## About the Application
 
-##Let's Start:
+In this workshop we'll be creating todo app using MEAN.js. This todo app will have feature like create task and once we complete our task we can delete it. 
+
+## Let's Start:
+
 Before we start to code lets us first understand few things to get our basics clear.
 
 **So what is MEAN ?**
@@ -39,10 +41,10 @@ So, basically MEAN stands for:
 
 - **MongoDB:** MongoDB is the leading NoSQL database, empowering businesses to be more agile and scalable.
 - **Express:** Express is a minimal and flexible node.js web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications.
-- **Angularjs:** AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
-- **Nodejs:** Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
+- **AngularJS:** AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
+- **Node.js:** Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
 
-**Requirments**
+**Requirements**
 
 | Cloud9 Blank Project    |
 | ----------------------- |
@@ -54,16 +56,16 @@ So, basically MEAN stands for:
 
 **Table of Contents**
 
-- [Part I: Setting up Nodejs](#part-i-setting-up-nodejs)
+- [Part I: Setting up Node.js](#part-i-setting-up-nodejs)
 - [Part II: Installing MongoDB](#part-ii-installing-mongodb)
 - [Part III: Building Project](#part-iii-building-project)
 - [Part IV: Installing Express](#Part-iv-installing-express)
-- [Part V: Starting our Nodejs Server](#part-v-starting-our-nodejs-server)
+- [Part V: Starting our Node.js Server](#part-v-starting-our-nodejs-server)
 - [Part VI: Creating Frontend using AngularJS](#part-vi-creating-frontend-using-angularjs)
 - [Part VII: Creating Our Database](#part-vii-creating-our-database)
 - [Part IX: Installing Body-Parser](#part-ix-installing-body-parser)
 - [Part X: Working with Backend](#part-x-working-with-backend)
-- [Part XI: Now let’s run our final application](#part-xi-now-let's-run-our-final-application)
+- [Part XI: Now let’s run our final application](#part-xi-now-lets-run-our-final-application)
 
 ## Part I: Setting up Nodejs
 
@@ -112,8 +114,6 @@ $ sudo apt-get install -y mongodb-org
 ```
 
 - Once we install our MongoDB. Now we are ready for Part III.
-
-![](img/html_setup.png)
 
 
 ## Part III: Building Project
@@ -175,6 +175,7 @@ $ noder server.js
 ```
 
 ## Wooo!! Server Running :) 
+
 ![](img/running_nodejs.png)
 
 
@@ -488,7 +489,7 @@ app.listen('8080', function(){
 ```
 
 
-## Part XI: Now let’s run our final application
+## Part XI: Now lets run our final application
 
 Now we will run our final Todo MEANjs application.
 
@@ -505,4 +506,4 @@ $ node server.js
 
 Now create task, check the completed task and delete.
 
-##Happy Hacking!!
+## Happy Hacking!!
