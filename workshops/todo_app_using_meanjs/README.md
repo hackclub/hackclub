@@ -190,6 +190,7 @@ Now we will build our application frontend using AngularJS let see that it Part 
 - Now  let’s start building our frontend using AngularJS and Bootstrap.
 
 `todo/app/index.html`
+
 ```
 <!doctype html>
 <html lang="en" ng-app="todoApp">
