@@ -123,7 +123,7 @@ So, basically MEAN stands for:
 
 - To build use the below command.
 - First create a separate directory for your project, in our case it is `/todo`
-- Run `$ npm init` command it will ask few things related to project like version and will create pacakage.json for the project.
+- Run `$ npm init` command it will ask few things related to project like version and will create `package.json` for the project.
 
 So far our `main.js` looks like this (your URLs and keys will be different):
 
@@ -173,7 +173,7 @@ Now let’s start our server using the below command.
 $ noder server.js
 ```
 
-## Wooo!! Server Running :) 
+## Nice!! Server Running :) 
 
 ![](img/running_nodejs.png)
 
@@ -181,13 +181,13 @@ Now to see preview of our application we need to follow the guide shown in the b
 
 ![](img/preview_running_app.png)
 
-Now we will build our application frontend using Angularjs let see that it Part VI.
+Now we will build our application frontend using AngularJS let see that it Part VI.
 
 ## Part VI: Creating Frontend using AngularJS
 
 - Before we build our front end lets create a folder named `[app]` inside todo folder where we will store our frontend files and then we will see how to connect our fronted with server. 
 
-- Now  let’s start building our frontend using Angularjs and Bootstrap.
+- Now  let’s start building our frontend using AngularJS and Bootstrap.
 
 `todo/app/index.html`
 ```
@@ -348,14 +348,14 @@ $ use todo
 
 ![](img/use_todo.png)
 
-Once we are done now we need to connect our MongoDB with our MEANjs application.
+Once we are done now we need to connect our MongoDB with our MEAN.JS application.
 
-**Note: Don’t stop the MongoDB server else It won’t get connected with our MEANjs application.**
+**Note: Don’t stop the MongoDB server else It won’t get connected with our MEAN.JS application.**
 
 
 ## Part VIII: Connecting to MongoDB
 
-- To connect first we need to call the mongodb library used by the express.
+- To connect first we need to call the MongoDB library used by the express.
 
 - So lets install the mongoose library.
 
@@ -381,10 +381,10 @@ $ npm install body-parser --save
 Now we will work with our `server.js` file.
 
 In this file we will do the following things.
-- Connection request to mongodb
+- Connection request to MongoDB
 - Create Model to store our daily task
 - Work HTTP GET, POST and DELETE method
-- Configure our app to use stactic files and body-parser
+- Configure our app to use static files and body-parser
 
 `todo/server.js`
 
