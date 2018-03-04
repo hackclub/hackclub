@@ -36,7 +36,10 @@ Before we start to code lets us first understand few things to get our basics cl
 
 So, basically MEAN stands for:
 
-**M**ongoDB  **E**xpress  **A**ngularJS  and **N**odeJS
+- MongoDB
+- Express
+- AngularJS
+- NodeJS
 
 **Now the question is what are these:**
 
