@@ -365,6 +365,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 **Websites Made by Professionals:**
 
+- [Eel Slap](http://eelslap.com)
 - [Alice Lee](http://byalicelee.com)
 - [Yaron Schoen](http://yaronschoen.com)
 - [Roxanne Ravago](http://www.roxanneravago.com)
