@@ -515,8 +515,15 @@ Now that you know how to add sounds to buttons, you can do many things, includin
 - Change what this button does. Maybe it doesn't play a sound. Maybe it changes the background color! Maybe it trolls the user and closes the tab!
 - Bind more actions to keys. Surprise me.
 
-**Inspiration:**
+**Made by Other Hack Club Hackers:**
 
 | That Was Yeezy                                                         |
 | ---------------------------------------------------------------------- |
 | [![](img/example_yeezy.gif)](https://sohuang.github.io/that_was_easy/) |
+
+**Made by Professionals:**
+
+- [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/)
+- [Buttons!](http://dhmholley.co.uk/buttons/)
+- [The Useless Web](http://www.theuselessweb.com)
+- [RGB](http://www.rrrgggbbb.com)
