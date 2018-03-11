@@ -50,9 +50,11 @@ Some of the main stream Raspberry Pi now available are the Raspberry Pi 3 and Pi
 
 **Processor:** 1.2GHz quad-core ARM processor
 
-**Memory:** 1GB Networking: Ethernet, wireless
+**Memory:** 1GB
 
-**Connectivity:** HDMI out, analogue audio/video out (3.5 mm headphone hack), Bluetooth 4.1, 4× USB 2.0 in, micro USB power, 40-pin GPIO, Camera Module port (CSI), Display Module port (DSI), micro SD card slot
+**Networking:** 10/100 Mbps Ethernet, 802.11n Wi-Fi (150 Mbps, 2.4 GHz)
+
+**Connectivity:** HDMI out, analogue audio/video out (3.5 mm headphone hack), Bluetooth 4.1 (24 Mbps), 4× USB 2.0 in, micro USB power, 40-pin GPIO, Camera Module port (CSI), Display Module port (DSI), micro SD card slot
 
 **Dimensions:** 86 × 56 × 17 mm
 
@@ -66,9 +68,9 @@ Some of the main stream Raspberry Pi now available are the Raspberry Pi 3 and Pi
 
 **Memory:** 512MB
 
-**Networking:** Wireless
+**Networking:** 802.11n Wi-Fi (150 Mbps, 2.4 GHz)
 
-**Connectivity:** Mini HDMI out, Bluetooth 4.1, micro USB in, micro USB power, 40-pin GPIO, Camera Module port (CSI), micro SD card slot
+**Connectivity:** Mini HDMI out, Bluetooth 4.1 (24 Mbps), micro USB in, micro USB power, 40-pin GPIO, Camera Module port (CSI), micro SD card slot
 
 **Dimensions:** 65 × 30 × 5 mm
 
@@ -125,7 +127,7 @@ In the end, it is your decision that matters. Decide what purpose you are gonna 
 #### **Things Needed:**
 
 1. Raspberry Pi
-1. Micro SD card 8 GB and above
+1. Micro SD card (8 GB and above)
 1. Keyboard
 1. Mouse
 1. Monitor
@@ -180,7 +182,7 @@ Make your way through the Raspbian OS. Try out different softwares available in 
 
 That’s it you have set up your Raspberry Pi. In the future updates more projects and tips will be added.
 
-Default username & password for Raspberry Pi is **pi** & **raspberry** respectively.
+Default username & password for Raspberry Pi is `pi` & `raspberry` respectively.
 
 ---
 
@@ -248,7 +250,7 @@ To find the IP address of your Pi follow the steps mentioned in this site
 
 ![](https://static.notion-static.com/828727dc-b65e-4f39-a019-74d91ca1ff81/Screenshot_2017-05-24-13-12-35-328_com.realvnc.viewer.android.png)
 
-Click connect and it will ask you whether you want to connect click continue and then type the username as **pi** and password as **raspberry** and click continue
+Click connect and it will ask you whether you want to connect click continue and then type the username as `pi` and password as `raspberry` and click continue
 
 ![](https://static.notion-static.com/714d7688-5800-495a-832b-185d1c38f62a/Screenshot_2017-05-24-13-12-53-369_com.realvnc.viewer.android.png)
 
