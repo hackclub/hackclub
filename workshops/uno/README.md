@@ -3,7 +3,7 @@ name: Uno
 description: Specs of the Arduino Uno
 author: "@Athulbless"
 group: experimental
-order: 13
+order: 12
 ---
 
 # Arduino Uno
