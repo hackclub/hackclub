@@ -1,3 +1,11 @@
+---
+name: IoT Pi
+description: Build an IoT project with Cayenne
+author: "@1061999"
+group: pi
+order: 5
+---
+
 # Simple IoT project with Raspberry Pi & Cayenne
 
 Raspberry Pi with its new models has become an integral part of IoT projects. 
