@@ -1,6 +1,6 @@
 ---
-name: VNC on Raspberry Pi
-description: Set up remove viewing with VNC
+name: Remote Viewing
+description: Set up remote viewing with VNC on Pi
 author: "@1061999"
 group: pi
 order: 4

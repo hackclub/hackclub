@@ -1,6 +1,6 @@
 ---
-name: Which Pi
-description: Choosing the right flavor of Pi
+name: Choosing your Pi
+description: Consider the ad/disadvantages of each flavor of Pi
 author: "@1061999"
 group: pi
 order: 2

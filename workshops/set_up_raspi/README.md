@@ -1,5 +1,5 @@
 ---
-name: Getting Started
+name: Set Up a Pi
 description: Installing Raspbian on your dessert of choice
 author: "@1061999"
 group: pi
