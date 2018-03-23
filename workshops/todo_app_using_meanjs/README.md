@@ -32,7 +32,7 @@ In this workshop we'll be creating a ToDo app using MEAN.JS. This ToDo app will 
 
 Before we start to code lets us first understand few things to get our basics clear.
 
-**So what is MEAN **
+**So what is MEAN**
 
 So, basically MEAN stands for:
 
@@ -151,7 +151,8 @@ Now this will install Express and also add the package in the `pacakage.json` fo
 Lets first create `server.js` file inside todo folder
 
 `todo/server.js`
-```
+
+```js
 //calling express library
 var express = require('express');
 var app = express();
@@ -191,7 +192,7 @@ Now we will build our application frontend using AngularJS let see that it Part 
 
 `todo/app/index.html`
 
-```
+```html
 <!doctype html>
 <html lang="en" ng-app="todoApp">
   <head>
@@ -266,13 +267,13 @@ Now we will build our application frontend using AngularJS let see that it Part 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
-
 ```
 
 **Creating app.js file to load our AngularJS components.**
+
 `todo/app/app.js`
 
-```
+```js
 var app = angular.module('todoApp', []);
 
 app.controller('createTodoController', function($scope,$http) {
@@ -322,7 +323,6 @@ app.controller("myCtrl", function($scope, $http) {
 
     
 });
-
 ```
 
 **You all can also uncomment console.log() to see how the data gets send or received.**
@@ -389,7 +389,7 @@ In this file we will do the following things.
 
 `todo/server.js`
 
-```
+```js
 //calling express library
 var express = require('express');
 var app = express();
