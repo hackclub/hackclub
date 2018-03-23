@@ -11,9 +11,9 @@ order: 15
 
 Short link to this workshop: https://workshops.hackclub.com/todo_meanjs
 
-| What you'll build       |
-| ----------------------- |
-| ![](img/final_2.png) |
+**What you'll build:**
+
+![](img/final_2.png)
 
 Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1-2 hour.
 
