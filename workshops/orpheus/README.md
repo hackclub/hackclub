@@ -34,18 +34,12 @@ Orpheus has become one of the most powerful members of Hack Club. If you don’t
 
 ### The Dinosaur Who Can Never Look Back
 
-		or else that means acknowledging its past and accepting the fate of the dinosaurs
-
-		right now, it is still able to exist through the engagement of modern constructions
-
-		like reading books and chasing after money
-
-		only ever living in the present
-
-		engaging with the idea that it's still alive
-
-		Much like its Greek namesake, who couldn't give up on the idea that his wife is dead
-
-		until he is finally forced to "look back"
-
-\-\- [nathanielthealligator](http://nathanielthealligator.tumblr.com/)
+> or else that means acknowledging its past and accepting the fate of the dinosaurs
+> right now, it is still able to exist through the engagement of modern constructions
+> like reading books and chasing after money
+> only ever living in the present
+> engaging with the idea that it's still alive
+> Much like its Greek namesake, who couldn't give up on the idea that his wife is dead
+> until he is finally forced to "look back"
+>
+> -- [nathanielthealligator](http://nathanielthealligator.tumblr.com/)
