@@ -48,4 +48,4 @@ Orpheus has become one of the most powerful members of Hack Club. If you don’t
 
 		until he is finally forced to "look back"
 
-\-\- [nathanielthealligator](https://www.google.com/url?q=http://nathanielthealligator.tumblr.com/&sa=D&ust=1521773313877000&usg=AFQjCNEXHROhYFHbHQUzbca7rjvCyxXMHg)
+\-\- [nathanielthealligator](http://nathanielthealligator.tumblr.com/)
