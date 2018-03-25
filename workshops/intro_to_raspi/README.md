@@ -1,50 +1,44 @@
 ---
-name: Intro
-description: An introduction to the credit card sized super cool mini PC
+name: Intro to Pi
+description: An introduction to the credit card-sized super cool mini PC
 author: "@1061999"
 group: pi
 order: 1
 ---
 
-# Introduction to Raspberry Pi
-
-> Credit card sized super cool mini PC
-
-![](img/pi.png)
+![Raspberry Pi](img/pi.png)
 
 ## What is Raspberry Pi?
 
-Raspberry Pi is an extremely sleek and tiny computer. It is about the size of a normal credit card and runs on Linux based operating system. This board can be thought of as a miniaturized version of the motherboard in your CPU. It might not offer the same powerful processing capabilities as a normal PC, but it gets the job done.
+Raspberry Pi is an extremely sleek and tiny computer. It is about the size of a normal credit card and runs on Linux based operating systems by default. This board can be considered as a minified version of the motherboard in your PC. It probably can't offer the same level of processing capability as a normal PC, but it gets the job done.
 
-The Raspberry Pi is a full computer. It has a processor, graphics processor, and memory, just like a normal computer or laptop – it’s just a lot smaller. The Raspberry Pi can be used in any situation a computer could be used. This can be as simple as being used as your desktop computer. Other people use them as mini servers in their house, as media computers for their TV, or as tiny computers to power their fun projects. It could be the brains of a robot, control a vegetable garden, or even just blink a light. The Raspberry Pi can be manipulated to control and read electronic components using its GPIO pins by using python programming. The possibilities with Raspberry Pi are limited only by your imagination.
+The Raspberry Pi is a full computer. It has a processor, graphics processor, and memory - everything you have in your PC, but a lot smaller. The Raspberry Pi can be used in situations where a full computer could be used. Some may use it to replace desktop computers, while others use them as personal mini servers, as media portals for TVs, or as cores to power fun projects. It can act as the brain of a robot, a controller a greenhouse, or even just the switch of a light bulb. The Raspberry Pi can be programmed to control and read electronic components using its GPIO pins. There are endless possibilities.
 
-Just like how you need to hook up your CPU to a monitor, keyboard, mouse, and LAN. The Raspberry Pi also offers USB ports for interfacing keyboard and mouse, an HDMI (High Definition Multimedia Interface) port to connect a monitor/TV, 3.5mm audio jack with composite video output for using with old RCA television, Camera connector, display connector and an Ethernet port to gain internet access. It also has inbuilt WiFi and Bluetooth.
+Just like how you need to hook up your CPU to a monitor, keyboard, mouse, and LAN, the Raspberry Pi also needs to be connected to external accessories. It offers USB ports for interfacing keyboard and mouse, an HDMI (High Definition Multimedia Interface) port to connect a monitor/TV, 3.5mm audio jack with composite video output for using with old RCA television, Camera connector, display connector and an Ethernet port to gain internet access. It also has inbuilt WiFi and Bluetooth. (Some specifications may differ depending on the model of your Pi - see [Choose your Pi](/workshops/choose_your_pi) for more information)
 
-The Raspberry Pi is powered by a 5v power supply. Just like you have a hard disk on normal computers, the raspberry pi uses an SD card that acts as the hard disk. The OS is loaded onto the SD card and plugged into the board. You can use various memory capacity SD cards: 8GB, 16GB, 32GB, etc.
+The Raspberry Pi is usually powered by a 5v power supply. Unlike normal computers which usually run on hard drives, the raspberry pi uses SD cards that acts as the storage device. The OS is also preloaded onto the SD card. You can use SD cards of various capacities: 8GB, 16GB, 32GB, etc.
 
-Main attraction of Raspberry Pi compared to our normal PC is the availability of 40 GPIO pins.
+What the Raspberry Pi attracts people the most is its availability of the 40 GPIO pins.
 
-## Story of Raspberry Pi
+## The Story of Raspberry Pi
 
-The Raspberry Pi came alive when the Raspberry Pi foundation based in UK thought of launching a cheap single-board computer to promote the learning of computer science in schools. But it became so popular that the Raspberry Pi was adopted by hobbyists and engineers. Raspberry Pi’s are often used to prototype IoT devices, entertainment equipment’s and robotics. One of the main reason for the growth of the Raspberry Pi, is its community support and resources.
+The Raspberry Pi came alive when the Raspberry Pi foundation based in UK thought of launching a cheap single-board computer to advocate for better computer science education in schools. But it has became so popular that the Raspberry Pi has been adopted by many hobbyists and engineers. Raspberry Pis are often used to prototype IoT devices, entertainment equipments and robots. One of the main reason for the rapid growth of the Raspberry Pi is its strong community support and resources.
 
-As of now the Raspberry Pi foundation has sold more than 11 million Pi’s. Even the International Space Station have two Raspberry Pi's :)
+The Raspberry Pi foundation has sold more than 11 million Pi’s. Even the International Space Station have two Raspberry Pi's :)
 
-![](img/astro_pi.png)
+![Astro Pi](img/astro_pi.png)
 
 # Specification and other details
 
 There are different versions of the Raspberry Pi available. Some of the are:
 
-1. Raspberry Pi 3 (Model B)
-1. Raspberry Pi Zero W
-1. Raspberry Pi 2 (Model B)
-1. Raspberry Pi model A+
-1. Raspberry Pi Model B+
+1. Raspberry Pi 3 (Model B/B+)
+2. Raspberry Pi Zero W
+3. Raspberry Pi 2 (Model B)
+4. Raspberry Pi model A+
+5. Raspberry Pi Model B+
 
-![](img/pi_family.png)
-
-Some of the main stream Raspberry Pi now available are the Raspberry Pi 3 and Pi Zero W. Raspberry Pi 3 is the powerful version of Raspberry Pi, offering a quad core processor, four USB ports, WiFi, Bluetooth and other features.
+![Pi Family](img/pi_family.png)
 
 ## Raspberry Pi 3 specs
 
@@ -92,4 +86,4 @@ Officially supported operating systems can be downloaded from [https://raspberry
 
 > Credits: [https://pinout.xyz](https://pinout.xyz)
 
-For more information visit the [official site](https://www.raspberrypi.org) of Raspberry Pi. They have lot of resources and materials to get you started 😊
+For more information, visit the [official site](https://www.raspberrypi.org) of Raspberry Pi. They have a lot of resources and materials to get you started 😊
