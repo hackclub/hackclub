@@ -2,8 +2,8 @@
 name: Blink
 description: Blink an LED with Arduino
 author: "@Athulbless"
-group: experimental
-order: 13
+group: arduino
+order: 2
 ---
 
 # Blink an LED with Arduino 

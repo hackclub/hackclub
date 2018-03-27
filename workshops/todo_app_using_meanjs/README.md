@@ -4,7 +4,7 @@ description: Build Todo Web Application using MEAN.JS
 author: Amit Kumar Singh (Hack Club Leader)
 username: amitsin6h
 group: experimental
-order: 15
+order: 12
 ---
 
 # ToDo MEAN.JS Application
