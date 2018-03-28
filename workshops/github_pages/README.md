@@ -1,6 +1,6 @@
 ---
 name: GitHub Pages
-description: Get your website online using GitHub's free hosting service
+description: Launch your website with GitHub's free hosting
 author: "@sethtrei"
 group: retired
 order: 3
