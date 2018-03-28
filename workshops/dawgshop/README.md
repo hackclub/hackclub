@@ -1,6 +1,6 @@
 ---
 name: The Dawgshop
-description: Learn to dynamically modify webpages with jQuery, dawg
+description: Dynamically modify your page with jQuery, dawg
 author: "@nguyenbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram"
 group: experimental
 order: 7
