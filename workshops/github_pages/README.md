@@ -126,6 +126,3 @@ The URL to your website is the same name as your repository so it should be
 Congrats! Now you can share the URL to anyone!
 
 > ![](resources/celebrate.gif)
-
-One last thing. Please click a rating below to rate this workshop. It'll only
-take 3 seconds.
