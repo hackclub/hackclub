@@ -224,10 +224,7 @@ Go ahead and test your code now.
 
 ## Congratulations!
 
-You now know how to
+You now know how to:
 
 - Create a new workspace in Cloud9
 - Work with HTML, CSS, and JavaScript together
-
-One last thing. Please click a rating below to rate this workshop. It'll only
-take 3 seconds.
