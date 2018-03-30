@@ -86,13 +86,13 @@ We have provided a general example of the steps performed to connect from an And
 
 1. Open the VNC app and click the **+** icon. Type in the IP address of your Pi.
 
-![Android Connect 1](img/android_connect_1.png)
+![Android Connect Step 1](img/android_connect_1.png)
 
-![Android Connect 2](img/android_connect_2.png)
+![Android Connect Step 2](img/android_connect_2.png)
 
-![Android Connect 3](img/android_connect_3.png)
+![Android Connect Step 3](img/android_connect_3.png)
 
-![Android Connect 4](img/android_connect_4.png)
+![Android Connect Step 4](img/android_connect_4.png)
 
 2. Click connect, and you will be prompted to confirm your connection. After confirming, simply enter your identity to log into your Pi.
 
