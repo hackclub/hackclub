@@ -18,7 +18,7 @@ Just like how you need to hook up your CPU to a monitor, keyboard, mouse, and LA
 
 The Raspberry Pi is usually powered by a 5v power supply. Unlike normal computers which usually run on hard drives, the raspberry pi uses SD cards that acts as the storage device. The OS is also preloaded onto the SD card. You can use SD cards of various capacities: 8GB, 16GB, 32GB, etc.
 
-What the Raspberry Pi attracts people the most is its availability of the 40 GPIO pins.
+What the Raspberry Pi attracts people to the most is its availability of the 40 GPIO pins.
 
 ## The Story of Raspberry Pi
 
