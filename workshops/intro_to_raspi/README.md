@@ -10,7 +10,7 @@ order: 1
 
 ## What is Raspberry Pi?
 
-Raspberry Pi is an extremely sleek and tiny computer. It is about the size of a normal credit card and runs on Linux based operating systems by default. This board can be considered as a minified version of the motherboard in your PC. It probably can't offer the same level of processing capability as a normal PC, but it gets the job done.
+Raspberry Pi is an extremely sleek and tiny computer. It is about the size of a normal credit card and runs on Linux based operating systems by default. This board can be considered a minified version of the motherboard in your PC. It probably can't offer the same level of processing capability as a normal PC, but it gets the job done.
 
 The Raspberry Pi is a full computer. It has a processor, graphics processor, and memory - everything you have in your PC, but a lot smaller. The Raspberry Pi can be used in situations where a full computer could be used. Some may use it to replace desktop computers, while others use them as personal mini servers, as media portals for TVs, or as cores to power fun projects. It can act as the brain of a robot, a controller a greenhouse, or even just the switch of a light bulb. The Raspberry Pi can be programmed to control and read electronic components using its GPIO pins. There are endless possibilities.
 
