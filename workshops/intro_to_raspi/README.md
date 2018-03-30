@@ -35,7 +35,7 @@ There are different versions of the Raspberry Pi available. Some of the are:
 1. Raspberry Pi 3 (Model B/B+)
 2. Raspberry Pi Zero W
 3. Raspberry Pi 2 (Model B)
-4. Raspberry Pi model A+
+4. Raspberry Pi Model A+
 5. Raspberry Pi Model B+
 
 ![Pi Family](img/pi_family.png)
