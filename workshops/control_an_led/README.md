@@ -47,7 +47,7 @@ Then download the Cayenne app from the [Google Play Store](https://play.google.c
 
 ![Looking for Devices](img/looking_for_devices.png)
 
-5. Cayenne will automatically detect your Raspberry Pi. If it did not automatically connect you, you can also manually type in the IP address of your Pi. See [this workshop](/workshops/remote_viewing_raspi#find-the-ip-address-of-your-pi) for how to find your IP address.
+5. Cayenne will automatically detect your Raspberry Pi. If it did not automatically connect you, you can also manually type in the IP address of your Pi. See [this workshop](https://hackclub.com/workshops/remote_viewing_raspi#find-the-ip-address-of-your-pi) for how to find your IP address.
 
 ![Your Raspberry Pi](img/your_raspi.png)
 
