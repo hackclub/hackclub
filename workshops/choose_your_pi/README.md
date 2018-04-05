@@ -6,13 +6,13 @@ group: pi
 order: 2
 ---
 
-# Which model of Raspberry Pi should I buy?
+# Which Model of Raspberry Pi Should I Buy?
 
-> Raspberry Pi 3 vs Pi zero W
+> Raspberry Pi 3 Model B vs Pi Zero W
 
 So you have finally settled on to use a Raspberry Pi for your next project. But which model of Raspberry Pi should a beginner buy?
 
-## Raspberry Pi 3
+## Raspberry Pi 3 Model B
 
 Raspberry Pi 3 is the top end, Raspberry Pi available now. Packs in more power and capabilities compared to its predecessors. Has 4 USB ports, enough to connect all your peripherals. Ethernet port for wired internet connection. A normal HDMI port. 3.5mm audio/video composite out for audio and analogue video signal. 
 
@@ -26,6 +26,6 @@ The small size of Pi zero W makes it ideal for use in embedded projects. It pack
 
 ## Verdict
 
-Even though the Pi zero W costs less and has a decent performance the additional requirements like Mini HDMI converter, OTG cable, Mini camera cable and the need of USB hub makes it more or less cost up to $25 to fully function. In my opinion, beginners should consider buying the Raspberry Pi 3 as it is easy to use out of the box and has plenty of ports to connect your peripherals. Most of all the model should suit your project. If you are planning to make a project that has a low profile you should definitely consider the Pi zero W. 
+Even though the Pi Zero W costs less and has a decent performance, the additional requirements like Mini HDMI converter, OTG cable, Mini camera cable and the need of USB hub makes it more or less cost up to $25 to fully function. In my opinion, beginners should consider buying the Raspberry Pi 3 Model B as it is easy to use out of the box and has plenty of ports to connect your peripherals. Most of all, the model should suit your project. If you are planning to make a project that has a low profile you should definitely consider the Pi Zero W. 
 
 In the end, it is your decision that matters. Decide what purpose you are gonna use your Raspberry Pi and arrive at a conclusion.
