@@ -62,10 +62,10 @@ Now, simply click the "Upload" button in the environment. Wait a few seconds - y
 
 A few seconds after the upload finishes, you should see the pin 13 (L) LED on the board start to blink (in orange). If it does, **congratulations!** **You've gotten Arduino or Genuino up-and-running**. If you have problems, please see the [troubleshooting suggestions](https://www.arduino.cc/en/Guide/Troubleshooting)
 
-## Blink !
+## Blink!
 
-Now connect the positive terminal (Longer lead) of the LED to Pin 13 (L) on the Arduino, Connect the negative terminal (Shorter lead) to GND
+Now connect the positive terminal (Longer lead) of the LED to Pin 13 (L) on the Arduino. Connect the negative terminal (Shorter lead) to GND. Your LED should begin to blink in unison with the built-in light.
 
 ![](images/Title.gif)
 
-**Note: Adding a 330 ohm resistor to the circuit can protect the LED from burning off.**
+**Note: Adding a 330 ohm resistor to the circuit is highly recommended to prevent the LED from burning off.**
