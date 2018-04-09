@@ -6,7 +6,7 @@ group: pi
 order: 3
 ---
 
-# Getting started with Raspberry Pi
+Setting up a Raspberry Pi is very easy. This workshop will walk you through most of the steps, however procedures may differ, depending on your specific model!
 
 ## Things Needed:
 
@@ -18,7 +18,7 @@ order: 3
 1. HDMI cable
 1. 5V smartphone charger (2A)
 
-## How to use Etcher to install operating systems onto the micro SD card video tutorial
+## Video tutorial
 
 *Credits: [Raspberry Pi Foundation](http://www.raspberrypi.org) & MagPi team*
 
@@ -30,38 +30,36 @@ You can download the latest version of Raspbian from [https://www.raspberrypi.or
 
 To burn your image onto your SD card you will need a software called Etcher by Resin.io. Download Etcher from here [https://etcher.io/](https://etcher.io/)
 
-![](img/etcher_io.png)
+![Etcher.io](img/etcher_io.png)
 
 Using an SD card adapter connect the SD card to your computer.
 
-![](img/sd_to_computer.jpg)
+![SD to Computer](img/sd_to_computer.jpg)
 
 Using Etcher burn the downloaded Raspbian image on to the SD card.
 
-![](img/burn_image.png)
+![Burn Image](img/burn_image.png)
 
-Or you could use the NOOBS (New Out Of the Box) image given on the website. It is basically an installer which includes the Raspbian image. You can also sideload other operating systems using NOOBS. 
+Or you could use the NOOBS (New Out Of the Box) OS image given on the website. It is basically an installer of multiple operating system distributions which includes the Raspbian image. You can also sideload other operating systems using NOOBS. 
 
-![](img/noobs.png)
+![NOOBS](img/noobs.png)
 
-Just download the file given and extract the contents onto the micro SD card. Pop it inside the micro SD card slot on the Raspberry Pi. Boot it up and select the operating system you want to install. Wait for the OS to install and you are good to go. 
+Just download the file given and extract the contents onto the micro SD card. Pop it inside the micro SD card slot on the Raspberry Pi. Boot it up and select the operating system you want to install. Wait for the OS to install and you are good to go!
 
 ## Booting Up
 
-![](img/plug_in.gif)
+![Plug in](img/plug_in.gif)
 
 Insert the micro SD card inside the Raspberry Pi. Connect the Raspberry Pi to a monitor using an HDMI cable. Connect a 5v adapter to the power port. 
 
-![](img/pi_underbelly.jpg)
+![Pi Underbelly](img/pi_underbelly.jpg)
 
-![](img/pi_topside.jpg)
+![Pi Topside](img/pi_topside.jpg)
 
 Power up the Pi you should see the two indicator LEDs blinking and Raspbian desktop booting into the Raspbian UI.
 
-![](img/raspbian.png)
+![Raspbian](img/raspbian.png)
 
-Make your way through the Raspbian OS. Try out the different software available in the Raspbian OS.
+Make your way through the Raspbian OS. Default username & password for Raspberry Pi is `pi` & `raspberry` respectively.
 
-That’s it you have set up your Raspberry Pi. In the future updates more projects and tips will be added.
-
-Default username & password for Raspberry Pi is **pi** & **raspberry** respectively.
+That’s it! You have set up your Raspberry Pi. Try out the different software available in the Raspbian OS.

@@ -9,7 +9,7 @@ order: 12
 
 # ToDo MEAN.JS Application
 
-Short link to this workshop: https://workshops.hackclub.com/todo_meanjs
+Short link to this workshop: https://workshops.hackclub.com/todo_app_using_meanjs/
 
 **What you'll build:**
 
