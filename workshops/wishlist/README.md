@@ -23,3 +23,4 @@ If you'd like to see someone make a workshop on building a specific type of proj
 * Create a menu bar that lists meetup events happening soon ([@matejmecka](https://github.com/matejmecka))
 * A large open source project that Hack Club leaders and attendees can contribute to ([@yevbar](https://github.com/yevbar))
 * Text editor/writing app built with React and Draft.js ([@lachlanjc](https://github.com/lachlanjc))
+* SMS bot to send you time-based reminders ([@lachlanjc](https://github.com/lachlanjc))
