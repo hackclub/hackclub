@@ -108,7 +108,7 @@ MEAN stands for:
   $ sudo apt-get install -y mongodb-org
   ```
 
-- Once we install our MongoDB. Now we are ready for Part III.
+- Once we've installed MongoDB, we're ready for Part III.
 
 ## Part III: Building Project
 
@@ -130,7 +130,7 @@ We can install Express with the following command:
   $ npm install express –-save
   ```
 
-Now, we've got Express instealled and added to our `package.json`.
+Now, we've got Express installed and added to our `package.json`.
 
 ## Our Complete Project Structure
 
@@ -148,7 +148,7 @@ Let's first create `server.js` file inside todo folder (so `todo/server.js`).
 var express = require('express')
 var app = express()
 
-//GET request
+// GET request
 app.get('/', function(req, res) {
   res.send('<h1>Welcome to Todo Web Application!!')
 })
@@ -158,7 +158,7 @@ app.listen('8080', function() {
 })
 ```
 
-Now, let’s start our server, using the following command.
+Let’s start our server—use this command:
 
 ```
 $ node server.js
@@ -176,9 +176,9 @@ Now, we will build our application frontend using AngularJS.
 
 ## Part VI: Creating Frontend using AngularJS
 
-- Before we build our frontend lets create a folder named `[app]` inside todo folder where we will store our frontend files and then we will see how to connect our fronted with server. 
+Before we build our frontend, let's create a folder named `app` inside the `todo` folder where we will store our frontend files. Later, we'll see how to connect our frontend with our server. 
 
-- Now  let’s start building our frontend using AngularJS and Bootstrap.
+Let’s start building our frontend! We're using AngularJS and Bootstrap.
 
 `todo/app/index.html`
 
@@ -306,44 +306,40 @@ app.controller('myCtrl', function($scope, $http) {
 })
 ```
 
-**You all can also uncomment console.log() to see how the data gets send or received.**
-
+(You can also uncomment `console.log()` to see how the data gets send or received.)
 
 ## Part VII: Creating Our Database
 
+Before creating the database using MongoDB, let's start the MongoDB server:
 
-- For creating data base using MongoDB first we need to run our MongoDB server using the below command
-
-```
+```sh
 $ mongod
 ```
 
-
 ![](img/mongod.png)
 
-- Once we see our server is running now we are required to create data base. So quickly move into new terminal tab and run the below command for create database  using MongoDB.
+Once we see our server is running, let's create the database. Open a new terminal tab and run the below commands:
 
-```
+```sh
 $ mongo
 $ use todo
 ```
 
 ![](img/use_todo.png)
 
-Once we are done now we need to connect our MongoDB with our MEAN.js application.
+Once it's done, we need to connect our MongoDB with our MEAN.js application.
 
-**Note: Don’t stop the MongoDB server else It won’t get connected with our MEAN.js application.**
-
+**Note: Don’t stop the MongoDB server! Otherwise, the application server will not be able to function.**
 
 ## Part VIII: Connecting to MongoDB
 
-- To connect first we need to call the MongoDB library used by the express.
+- To connect, first we need to call the MongoDB library used by Express.
 
-- So lets install the mongoose library.
+- Install the mongoose library:
 
-```
-$ npm install mongoose –-save
-```
+  ```sh
+  $ npm install mongoose –-save
+  ```
 
 This will install mongoose and will add it in the `package.json` file.
 
@@ -354,19 +350,18 @@ We will be using Body-Parser to parse middleware.
 
 - Use the below command to install.
 
-```
-$ npm install body-parser --save
-```
+  ```sh
+  $ npm install body-parser --save
+  ```
 
 ## Part X: Working with Backend
 
-Now we will work with our `server.js` file.
+Now we will work with our `server.js` file to handle:
 
-In this file we will do the following things.
 - Connection request to MongoDB
-- Create Model to store our daily task
-- Work HTTP GET, POST and DELETE method
-- Configure our app to use static files and body-parser
+- Creating Model to store our daily task
+- Working HTTP GET, POST and DELETE method
+- Configuring our app to use static files and body-parser
 
 `todo/server.js`
 
@@ -451,7 +446,6 @@ app.listen('8080', function() {
   console.log('Server Running!!')
 })
 ```
-
 
 ## Part XI: Now let's run our final application
 
