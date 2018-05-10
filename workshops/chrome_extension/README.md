@@ -123,6 +123,8 @@ To view our popup, reload the extension and click on the "H" icon in the extensi
 
 ![capture_2][capture_2]
 
+Because the `#notepad` div element has `conten editable` attribte, you'll be able to type right into the div without any extra `input` elements.  Typing on a virtual sticky note is nice, but a sticky note that erases itself every browser session is not very useful.  We can remedy this by using some useful Chrome APIs.
+
 ## Adding Functionality
 Most of the powerful Chrome APIs need to be specified in our `manifest.json` before they will be exposed to our code.  The API that we want is the "storage" api.  We can use this API to sync data to the users account, which means we can use is to keep all instances of the notebook in sync across devices.  Before using the "storage" API, we need to enable it in the `manifest`:
 ```json
@@ -154,6 +156,7 @@ chrome.storage.sync.get('notepad', res => {
   $notepad.innerText = res.notepad
 })
 ```
+Our first line creates a handle to our `#notepad` element, which we will as an `eventSource` in the next block.  Since we want to maximize convenience and minimize unnecessary UI, we'll attach our saving behavior to every keystroke.  The `keyup` event fires every time a user lifts completes a keystroke, so thats where we'll add our save logic.  `chrome.storage.sync` behaves like a simple key-value store, and manages all the device syncing behavior in the background.  Retrieving a value from storage is equally simple, we just need to pass a key and callback.
 Now our notebook is loaded whenever the extension is activated and saved on every `keyup` event.  And that's it! The core of our extension is done!
 
 ## Challenges
