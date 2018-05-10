@@ -1,8 +1,16 @@
+---
+name: Chrome Extension
+description: Chrome extension for an editable notepad
+author: "@shmishtopher"
+group: experimental
+order: 13
+---
+
 [capture_1]: https://github.com/shmishtopher/HackPad/blob/master/assets/capture_1.PNG
 [capture_2]: https://github.com/shmishtopher/HackPad/blob/master/assets/capture_2.PNG
 
 # Building a Chrome Extension
-Building Chrome extensions is super easy!  This workshop will guide you through the setup, development, and distribution of a Chrome extension.
+Building Chrome extensions is super easy! This workshop will guide you through the setup, development, and distribution of a Chrome extension.
 
 ## Creating a New Extension
 All Chrome extensions start with a `manifest`, which is simply a `.json` file that describes the applications scope, permissions, and metadata. Start by creating an empty directory, naming it whatever seems appropriate. Add you `manifest.json` file to the empty directory, adding the following information:
@@ -166,7 +174,7 @@ Now, our notebook is loaded whenever the extension is activated and saved on eve
 3. Pack and publish your extension!
 
 ## Feedback
-### Is Something Broken or Unclear?  Have a Suggestion?
+### Is Something Broken or Unclear? Have a Suggestion?
 Email me at `shmish90@gmail.com` or message me in the HackClub slack `@shmishtopher`
 ### Need to see some working code?
 1. The source for this extension [here](https://github.com/shmishtopher/HackPad)
