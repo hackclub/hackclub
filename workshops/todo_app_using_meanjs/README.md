@@ -15,7 +15,7 @@ Short link to this workshop: https://workshops.hackclub.com/todo_app_using_meanj
 
 ![](img/final_2.png)
 
-Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1-2 hour.
+Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1-2 hours.
 
 _**We recommend going through this workshop in Google Chrome or Mozilla Firefox.**_
 
