@@ -1,0 +1,11 @@
+{
+  "name": "Hack Pad",
+  "version": "1.0",
+  "description": "A Hack Club Workshop",
+  "manifest_version": 2,
+  "permissions": ["storage"],
+  "browser_action": {
+    "default_title": "Hack Pad",
+    "default_popup": "pages/popup.html"
+  }
+}
