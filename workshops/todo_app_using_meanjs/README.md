@@ -1,6 +1,6 @@
 ---
-name: To-do MEAN.js Application
-description: To-do list web app with the MEAN.js stack
+name: MEAN.js To-do List
+description: To-do list web app powered by MEAN.js
 author: Amit Kumar Singh
 username: "@amitsin6h"
 group: experimental
