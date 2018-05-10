@@ -1,13 +1,13 @@
 ---
-name: ToDo MEAN.JS Application
-description: Build Todo Web Application using MEAN.JS 
+name: To-do MEAN.js Application
+description: Build Todo Web Application using MEAN.js 
 author: Amit Kumar Singh (Hack Club Leader)
 username: amitsin6h
 group: experimental
 order: 12
 ---
 
-# ToDo MEAN.JS Application
+# To-do MEAN.js Application
 
 Short link to this workshop: https://workshops.hackclub.com/todo_app_using_meanjs/
 
@@ -26,22 +26,15 @@ _**We recommend going through this workshop in Google Chrome or Mozilla Firefox.
 
 ## About the Application
 
-In this workshop we'll be creating a ToDo app using MEAN.JS. This ToDo app will have feature like create task and once we complete our task we can delete it. 
+In this workshop we'll be creating a To-do app using MEAN.js. This To-do app will have feature like create task and once we complete our task we can delete it. 
 
-## Let's Start:
+## Let's Start
 
 Before we start to code lets us first understand few things to get our basics clear.
 
-**So what is MEAN**
+### So, what is MEAN?
 
-So, basically MEAN stands for:
-
-- MongoDB
-- Express
-- AngularJS
-- NodeJS
-
-**Now the question is what are these:**
+MEAN stands for:
 
 - **MongoDB:** MongoDB is the leading NoSQL database, empowering businesses to be more agile and scalable.
 - **Express:** Express is a minimal and flexible node.js web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications.
@@ -91,10 +84,10 @@ So, basically MEAN stands for:
   $ node –v (display the node version)
   ```
 
-- We can also check our NPM (Node Package Manager) version using the below command.
+- We can also check our npm (Node Package Manager) version using the below command.
 
   ```
-  $ npm –v (display the NPM version)
+  $ npm –v (display the npm version)
   ```
 
 - Node Package Manager is basically used to build projects and to download Node.js library.
@@ -174,7 +167,7 @@ Now let’s start our server using the below command.
 $ noder server.js
 ```
 
-## Nice!! Server Running :) 
+**Nice!! Server Running :) **
 
 ![](img/running_nodejs.png)
 
@@ -349,9 +342,9 @@ $ use todo
 
 ![](img/use_todo.png)
 
-Once we are done now we need to connect our MongoDB with our MEAN.JS application.
+Once we are done now we need to connect our MongoDB with our MEAN.js application.
 
-**Note: Don’t stop the MongoDB server else It won’t get connected with our MEAN.JS application.**
+**Note: Don’t stop the MongoDB server else It won’t get connected with our MEAN.js application.**
 
 
 ## Part VIII: Connecting to MongoDB
@@ -486,7 +479,7 @@ app.listen('8080', function(){
 
 ## Part XI: Now let's run our final application
 
-Now we will run our final ToDo MEAN.JS application.
+Now we will run our final To-do MEAN.js application.
 
 To run we know which command, we have to use
 
@@ -499,6 +492,6 @@ $ node server.js
 
 ![](img/final_2.png)
 
-Now create task, check the completed task and delete.
+Now, create a task, check the completed task, and delete.
 
-## Happy Hacking!!
+**Happy Hacking!!**
