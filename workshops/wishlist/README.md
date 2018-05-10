@@ -24,6 +24,7 @@ If you'd like to see someone make a workshop on building a specific type of proj
 * A large open source project that Hack Club leaders and attendees can contribute to ([@yevbar](https://github.com/yevbar))
 * SMS bot to send you time-based reminders ([@lachlanjc](https://github.com/lachlanjc))
 * Basic Amazon Alexa skill ([@lachlanjc](https://github.com/lachlanjc))
+* Slack slash command to save ideas ([@lachlanjc](https://github.com/lachlanjc))
 * Add payments to a website with Stripe ([@lachlanjc](https://github.com/lachlanjc))
 * Intro to React ([@lachlanjc](https://github.com/lachlanjc))
 * Text editor/writing app built with React and Draft.js ([@lachlanjc](https://github.com/lachlanjc))
