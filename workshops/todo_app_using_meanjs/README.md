@@ -55,7 +55,7 @@ MEAN stands for:
 - [Part I: Setting up Node.js](#part-i-setting-up-nodejs)
 - [Part II: Installing MongoDB](#part-ii-installing-mongodb)
 - [Part III: Building Project](#part-iii-building-project)
-- [Part IV: Installing Express](#Part-iv-installing-express)
+- [Part IV: Installing Express](#part-iv-installing-express)
 - [Part V: Starting our Node.js Server](#part-v-starting-our-nodejs-server)
 - [Part VI: Creating Frontend using AngularJS](#part-vi-creating-frontend-using-angularjs)
 - [Part VII: Creating Our Database](#part-vii-creating-our-database)
@@ -71,7 +71,8 @@ MEAN stands for:
 
 - Open your terminal
 - Type the below command in the terminal to install Node.js
-  ```
+
+  ```sh
   $ sudo –s
   $ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
   $ sudo apt-get install nodejs
@@ -80,14 +81,14 @@ MEAN stands for:
 
 - Once the installation process is done we can check our Node.js version using the below command.
 
-  ```
-  $ node –v (display the node version)
+  ```sh
+  $ node –v #(display the node version)
   ```
 
 - We can also check our npm (Node Package Manager) version using the below command.
 
-  ```
-  $ npm –v (display the npm version)
+  ```sh
+  $ npm –v #(display the npm version)
   ```
 
 - Node Package Manager is basically used to build projects and to download Node.js library.
@@ -98,7 +99,7 @@ MEAN stands for:
 
 - To install MongoDB we need to run the below command.
 
-  ```
+  ```sh
   $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv   2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
 
   $ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
@@ -126,9 +127,9 @@ So far our `main.js` looks like this (your URLs and keys will be different):
 
 We can install Express with the following command:
 
-  ```sh
-  $ npm install express –-save
-  ```
+```sh
+$ npm install express –-save
+```
 
 Now, we've got Express installed and added to our `package.json`.
 
@@ -160,7 +161,7 @@ app.listen('8080', function() {
 
 Let’s start our server—use this command:
 
-```
+```sh
 $ node server.js
 ```
 
@@ -451,7 +452,7 @@ app.listen('8080', function() {
 
 Our app is ready! Run the server again:
 
-```
+```sh
 $ node server.js
 ```
 
