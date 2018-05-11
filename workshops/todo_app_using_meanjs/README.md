@@ -1,13 +1,13 @@
 ---
-name: ToDo MEAN.JS Application
-description: Build Todo Web Application using MEAN.JS 
-author: Amit Kumar Singh (Hack Club Leader)
-username: amitsin6h
+name: MEAN.js To-do List
+description: To-do list web app powered by MEAN.js
+author: Amit Kumar Singh
+username: "@amitsin6h"
 group: experimental
 order: 12
 ---
 
-# ToDo MEAN.JS Application
+# To-do MEAN.js Application
 
 Short link to this workshop: https://workshops.hackclub.com/todo_app_using_meanjs/
 
@@ -26,22 +26,15 @@ _**We recommend going through this workshop in Google Chrome or Mozilla Firefox.
 
 ## About the Application
 
-In this workshop we'll be creating a ToDo app using MEAN.JS. This ToDo app will have feature like create task and once we complete our task we can delete it. 
+In this workshop we'll be creating a To-do app using MEAN.js. This To-do app will have feature like create task and once we complete our task we can delete it. 
 
-## Let's Start:
+## Let's Start
 
 Before we start to code lets us first understand few things to get our basics clear.
 
-**So what is MEAN**
+### So, what is MEAN?
 
-So, basically MEAN stands for:
-
-- MongoDB
-- Express
-- AngularJS
-- NodeJS
-
-**Now the question is what are these:**
+MEAN stands for:
 
 - **MongoDB:** MongoDB is the leading NoSQL database, empowering businesses to be more agile and scalable.
 - **Express:** Express is a minimal and flexible node.js web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications.
@@ -91,10 +84,10 @@ So, basically MEAN stands for:
   $ node –v (display the node version)
   ```
 
-- We can also check our NPM (Node Package Manager) version using the below command.
+- We can also check our npm (Node Package Manager) version using the below command.
 
   ```
-  $ npm –v (display the NPM version)
+  $ npm –v (display the npm version)
   ```
 
 - Node Package Manager is basically used to build projects and to download Node.js library.
@@ -115,7 +108,7 @@ So, basically MEAN stands for:
   $ sudo apt-get install -y mongodb-org
   ```
 
-- Once we install our MongoDB. Now we are ready for Part III.
+- Once we've installed MongoDB, we're ready for Part III.
 
 ## Part III: Building Project
 
@@ -131,13 +124,13 @@ So far our `main.js` looks like this (your URLs and keys will be different):
 
 ![](img/installing_express.png)
 
-- We can install Express using the below command.
+We can install Express with the following command:
 
-  ```
-  $ npm install express –save
+  ```sh
+  $ npm install express –-save
   ```
 
-Now this will install Express and also add the package in the `pacakage.json` folder.
+Now, we've got Express installed and added to our `package.json`.
 
 ## Our Complete Project Structure
 
@@ -148,47 +141,44 @@ Now this will install Express and also add the package in the `pacakage.json` fo
 
 ## Part V: Starting our Node.js Server
 
-Lets first create `server.js` file inside todo folder
-
-`todo/server.js`
+Let's first create `server.js` file inside todo folder (so `todo/server.js`).
 
 ```js
-//calling express library
-var express = require('express');
-var app = express();
+// calling express library
+var express = require('express')
+var app = express()
 
-//GET request 
-app.get('/', function(req, res){
-	res.send('<h1>Welcome to Todo Web Application!!');
-});
+// GET request
+app.get('/', function(req, res) {
+  res.send('<h1>Welcome to Todo Web Application!!')
+})
 
-app.listen('8080', function(){
-	console.log('Server Running!!');
-});
-
+app.listen('8080', function() {
+  console.log('Server Running!!')
+})
 ```
 
-Now let’s start our server using the below command.
+Let’s start our server—use this command:
 
 ```
-$ noder server.js
+$ node server.js
 ```
 
-## Nice!! Server Running :) 
+**Nice!! Server Running :) **
 
 ![](img/running_nodejs.png)
 
-Now to see preview of our application we need to follow the guide shown in the below image.
+To see a preview of our application, we need to follow the guide shown in the below image.
 
 ![](img/preview_running_app.png)
 
-Now we will build our application frontend using AngularJS let see that it Part VI.
+Now, we will build our application frontend using AngularJS.
 
 ## Part VI: Creating Frontend using AngularJS
 
-- Before we build our front end lets create a folder named `[app]` inside todo folder where we will store our frontend files and then we will see how to connect our fronted with server. 
+Before we build our frontend, let's create a folder named `app` inside the `todo` folder where we will store our frontend files. Later, we'll see how to connect our frontend with our server. 
 
-- Now  let’s start building our frontend using AngularJS and Bootstrap.
+Let’s start building our frontend! We're using AngularJS and Bootstrap.
 
 `todo/app/index.html`
 
@@ -274,95 +264,82 @@ Now we will build our application frontend using AngularJS let see that it Part 
 `todo/app/app.js`
 
 ```js
-var app = angular.module('todoApp', []);
+var app = angular.module('todoApp', [])
 
-app.controller('createTodoController', function($scope,$http) {
-   $scope.createTodo = function(){
-       //console.log($scope.todo);
-       $http.post('api/create/todo', $scope.todo)
-        .then(function(success){
-            //success callback
-            console.log($scope.todo);
-            console.log(success.status);
-        }, function(error){
-            //error callback
-            console.log(error.status);
-            
-        });
-   }
-   
+app.controller('createTodoController', function($scope, $http) {
+  $scope.createTodo = function() {
+    //console.log($scope.todo);
+    $http.post('api/create/todo', $scope.todo).then(
+      function(success) {
+        //success callback
+        console.log($scope.todo)
+        console.log(success.status)
+      },
+      function(error) {
+        //error callback
+        console.log(error.status)
+      }
+    )
+  }
+})
 
-});
+app.controller('myCtrl', function($scope, $http) {
+  $http.get('api/get/tasks').then(function(tasks) {
+    $scope.tasks = tasks
+    //console.log(tasks);
+  })
 
+  $scope.deleteTask = deleteTask
 
-
-app.controller("myCtrl", function($scope, $http) {
-    
-    $http.get("api/get/tasks")
-		.then(function (tasks) {
-			$scope.tasks = tasks;
-			//console.log(tasks);
-		});
-    
-    
-    
-    
-    $scope.deleteTask = deleteTask;
-    
-    function deleteTask(taskId) {
-	    $http.delete("/api/delete/task/"+taskId)
-		    .then(function(){
-			    //success callback
-				console.log('success');
-				
-			},function(error){
-				//error callback
-				console.log('Error');
-		});
-	}			
-
-    
-});
+  function deleteTask(taskId) {
+    $http.delete('/api/delete/task/' + taskId).then(
+      function() {
+        //success callback
+        console.log('success')
+      },
+      function(error) {
+        //error callback
+        console.log('Error')
+      }
+    )
+  }
+})
 ```
 
-**You all can also uncomment console.log() to see how the data gets send or received.**
-
+(You can also uncomment `console.log()` to see how the data gets send or received.)
 
 ## Part VII: Creating Our Database
 
+Before creating the database using MongoDB, let's start the MongoDB server:
 
-- For creating data base using MongoDB first we need to run our MongoDB server using the below command
-
-```
+```sh
 $ mongod
 ```
 
-
 ![](img/mongod.png)
 
-- Once we see our server is running now we are required to create data base. So quickly move into new terminal tab and run the below command for create database  using MongoDB.
+Once we see our server is running, let's create the database. Open a new terminal tab and run the below commands:
 
-```
+```sh
 $ mongo
 $ use todo
 ```
 
 ![](img/use_todo.png)
 
-Once we are done now we need to connect our MongoDB with our MEAN.JS application.
+Once it's done, we need to connect our MongoDB with our MEAN.js application.
 
-**Note: Don’t stop the MongoDB server else It won’t get connected with our MEAN.JS application.**
-
+**Note: Don’t stop the MongoDB server! Otherwise, the application server will not be able to function.**
 
 ## Part VIII: Connecting to MongoDB
 
-- To connect first we need to call the MongoDB library used by the express.
+- To connect, first we need to call the MongoDB library used by Express.
 
-- So lets install the mongoose library.
+- Install the mongoose library:
 
-```
-$ npm install mongoose –save
-```
+  ```sh
+  $ npm install mongoose –-save
+  ```
 
 This will install mongoose and will add it in the `package.json` file.
 
@@ -373,122 +350,106 @@ We will be using Body-Parser to parse middleware.
 
 - Use the below command to install.
 
-```
-$ npm install body-parser --save
-```
+  ```sh
+  $ npm install body-parser --save
+  ```
 
 ## Part X: Working with Backend
 
-Now we will work with our `server.js` file.
+Now we will work with our `server.js` file to handle:
 
-In this file we will do the following things.
 - Connection request to MongoDB
-- Create Model to store our daily task
-- Work HTTP GET, POST and DELETE method
-- Configure our app to use static files and body-parser
+- Creating Model to store our daily task
+- Working HTTP GET, POST and DELETE method
+- Configuring our app to use static files and body-parser
 
 `todo/server.js`
 
 ```js
-//calling express library
-var express = require('express');
-var app = express();
-var bodyparser = require('body-parser');
-var mongoose = require('mongoose');
-	
-//connecting to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/todo');
+// calling express library
+var express = require('express')
+var app = express()
+var bodyparser = require('body-parser')
+var mongoose = require('mongoose')
 
-//creating model
-var TaskSchema = mongoose.Schema({
-	task: {type:String}
-}, {collection: 'task'});
+// connecting to MongoDB
+mongoose.connect('mongodb://127.0.0.1:27017/todo')
 
-var TaskModel = mongoose.model("TaskModel", TaskSchema);
+// creating model
+var TaskSchema = mongoose.Schema(
+  {
+    task: { type: String }
+  },
+  { collection: 'task' }
+)
 
+var TaskModel = mongoose.model('TaskModel', TaskSchema)
 
+// configure app
+app.use('/app', express.static(__dirname + '/app')) //use static file
+app.use(bodyparser.json()) // for parsing application/json
+app.use(bodyparser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
-//configure app
-app.use('/app', express.static(__dirname + '/app')); //use static file
-app.use(bodyparser.json()); // for parsing application/json
-app.use(bodyparser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+// GET request
+app.get('/', function(req, res) {
+  res.sendfile('app/index.html')
+})
 
-
-//GET request 
-app.get('/', function(req, res){
-	res.sendfile('app/index.html');
-});
-
-
-//POST request to save todo task in database
-app.post("/api/create/todo", createTodo);
+// POST request to save todo task in database
+app.post('/api/create/todo', createTodo)
 function createTodo(req, res) {
-	var todoTask = req.body;
-	//console.log(todoTask);
-	
-	//save the todoTask in db
-	TaskModel
-		.create(todoTask)
-		.then(
-			function (success) {
-				console.log('Success');
-			},
-			function (error) {
-				console.log('Error');
-			}
-		)
-	
-	res.json(todoTask);
+  var todoTask = req.body
+  //console.log(todoTask);
+
+  //save the todoTask in db
+  TaskModel.create(todoTask).then(
+    function(success) {
+      console.log('Success')
+    },
+    function(error) {
+      console.log('Error')
+    }
+  )
+
+  res.json(todoTask)
 }
 
-
-
-
-//GET all task
-app.get("/api/get/tasks", getAllTasks);
+// GET all task
+app.get('/api/get/tasks', getAllTasks)
 function getAllTasks(req, res) {
-	TaskModel
-	.find()
-	.then(
-		function (tasks) {
-			res.json(tasks);
-		},
-		function (err) {
-			res.sendStatus(400);
-		});
+  TaskModel.find().then(
+    function(tasks) {
+      res.json(tasks)
+    },
+    function(err) {
+      res.sendStatus(400)
+    }
+  )
 }
 
-//DELETE task
-app.delete("/api/delete/task/:id", deleteTask);
+// DELETE task
+app.delete('/api/delete/task/:id', deleteTask)
 function deleteTask(req, res) {
-	var taskId = req.params.id;
-	//console.log(taskId);
-	TaskModel
-	.remove({_id: mongoose.Types.ObjectId(taskId)})
-		.then(function () {
-			res.sendStatus(200);
-		},
-		function () {
-			res.sendStatus(400)
-		});
+  var taskId = req.params.id
+  //console.log(taskId);
+  TaskModel.remove({ _id: mongoose.Types.ObjectId(taskId) }).then(
+    function() {
+      res.sendStatus(200)
+    },
+    function() {
+      res.sendStatus(400)
+    }
+  )
 }
 
-
-
-
-
-app.listen('8080', function(){
-	console.log('Server Running!!');
-});
-
+app.listen('8080', function() {
+  console.log('Server Running!!')
+})
 ```
-
 
 ## Part XI: Now let's run our final application
 
-Now we will run our final ToDo MEAN.JS application.
-
-To run we know which command, we have to use
+Our app is ready! Run the server again:
 
 ```
 $ node server.js
@@ -496,9 +457,8 @@ $ node server.js
 
 ![](img/final_1.png)
 
-
 ![](img/final_2.png)
 
-Now create task, check the completed task and delete.
+Create a task, check off tasks, delete tasks—everything's working!
 
-## Happy Hacking!!
+**Happy Hacking!!**
