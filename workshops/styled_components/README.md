@@ -8,7 +8,7 @@ group: experimental
 [capture_1]: https://github.com/shmishtopher/styled-components-workshop/blob/master/assets/capture_1.PNG
 
 # Styled Components
-[Styled Components](https://www.styled-components.com/) is a library that creates styled [React](https://reactjs.org/) components in a clean, idiomatic way.  In this workshop, we'll use `styled-components` to create a small weather app that pulls data from the free [dark sky](https://darksky.net/dev) API.  This workshop uses the [Parcel](https://parceljs.org/) bundler, but you can use any bundler you wish (WebPack, Rollup, etc..).  This workshop assumes that you have a recent version of node and NPM installed.
+[Styled Components](https://www.styled-components.com/) is a library that creates styled [React](https://reactjs.org/) components in a clean, idiomatic way. In this workshop, we'll use `styled-components` to create a small weather app that pulls data from the free [dark sky](https://darksky.net/dev) API. This workshop uses the [Parcel](https://parceljs.org/) bundler, but you can use any bundler you wish (WebPack, Rollup, etc..). This workshop assumes that you have a recent version of node and NPM installed.
 
 ### Contents
 1. [Setup](#Setup)
@@ -26,7 +26,7 @@ group: experimental
 
 
 ## Setup
-Navigate to wherever you keep your projects and create a new directory with `mkdir styled-weather` and `cd styled-weather`.  Run `npm init` and follow the prompts, fill out the fields with whatever you want.  Next we need to install our libraries with the following commands:
+Navigate to wherever you keep your projects and create a new directory with `mkdir styled-weather` and `cd styled-weather`. Run `npm init` and follow the prompts, fill out the fields with whatever you want. Next we need to install our libraries with the following commands:
 ```
 npm i react --save
 npm i react-dom --save
@@ -41,7 +41,7 @@ If you prefer using `yarn`, replace `npm i` with `yarn add`, omit the `--save` f
   "build": "parcel build src/index.html"
 },
 ```
-These will enable `npm start` to call the parcel bundler to package and serve our app on port 1234.  You can override the port number with `-p <number>`.
+These will enable `npm start` to call the parcel bundler to package and serve our app on port 1234. You can override the port number with `-p <number>`.
 
 Create a new subdirectory call `src` in `styled-weather`, and populate it with `index.html`, `index.css`, `index.js`, `animation.js`, and one more subdirectory named: `components`.
 
@@ -96,13 +96,13 @@ ReactDOM.render(<App />, document.getElementById('root'))
 ```
 
 ### Getting a Secret Key
-Navigate to [darksky.net/dev](https://darksky.net/dev/) and create a free developer account. This will give you access to the dark sky API for free (up to 1000 free requests per day).  You can generate or re-generate your `secret key` on the "console" page located at ([darksky.net/dev/account](https://darksky.net/dev/account)). Replace the provided key with `<YOUR_SECRET_KEY>` in `index.js`.  
+Navigate to [darksky.net/dev](https://darksky.net/dev/) and create a free developer account. This will give you access to the dark sky API for free (up to 1000 free requests per day). You can generate or re-generate your `secret key` on the "console" page located at ([darksky.net/dev/account](https://darksky.net/dev/account)). Replace the provided key with `<YOUR_SECRET_KEY>` in `index.js`. 
 
 ### Running the App
 Test the app by running `npm start` and navigating to [localhost:1234](http://localhost:1234). You should see an error, as `App` is a component that does not yet exist.
 
 ## Components
-`React` apps (and `styled-components`) are built on top of `components`, which are pieces that encapsulate their own state, and that can be composed together to create complex UIs. We'll keep all of our components in our `components` subdirectory.  There are two types of components covered in this workshop: stateful and stateless/functional.  A stateful component renders and updates based on its internal state.  A stateless component does not maintain any internal state, rather it renders based on the properties that are passed to it.
+`React` apps (and `styled-components`) are built on top of `components`, which are pieces that encapsulate their own state, and that can be composed together to create complex UIs. We'll keep all of our components in our `components` subdirectory. There are two types of components covered in this workshop: stateful and stateless/functional. A stateful component renders and updates based on its internal state. A stateless component does not maintain any internal state, rather it renders based on the properties that are passed to it.
 
 ## `components/App.js`
 ```javascript
@@ -143,7 +143,7 @@ export class App extends Component {
   }
 }
 ```
-This component serves as the "container" for our entire application.  It manages the state of the whole application.  The two pieces of state that this application uses is `isLoading` and `requested`.  `requested` stores the result of our API call, and `isLoading` tells us weather the API request has completed yet.  `componentDidMount` is a component [lifecycle hook](https://reactjs.org/docs/react-component.html#the-component-lifecycle) that triggers once, right after the component is mounted to the DOM, which makes it the perfect place to put our API request.  The dark sky API exposes a `/forecast` endpoint, which responds with a simple JSON object.  After parsing the JSON with `res => res.json()`, we filter the data and updates the components state.  Calling `setState()` will queue a re-render of the `App` component, which will switch from our `loading` state to our `weather` state.
+This component serves as the "container" for our entire application. It manages the state of the whole application. The two pieces of state that this application uses is `isLoading` and `requested`. `requested` stores the result of our API call, and `isLoading` tells us weather the API request has completed yet. `componentDidMount` is a component [lifecycle hook](https://reactjs.org/docs/react-component.html#the-component-lifecycle) that triggers once, right after the component is mounted to the DOM, which makes it the perfect place to put our API request. The dark sky API exposes a `/forecast` endpoint, which responds with a simple JSON object. After parsing the JSON with `res => res.json()`, we filter the data and updates the components state. Calling `setState()` will queue a re-render of the `App` component, which will switch from our `loading` state to our `weather` state.
 
 ## `animation.js`
 ```javascript
@@ -185,7 +185,7 @@ export const FadeUp = keyframes`
   }
 `
 ```
-This is not a true component, so it does not belong in the `/components` directory. The `styled-components` library provides a `keyframes` function, which will enable us to define CSS animation keyframes right in our application code.  Here we define three separate animations: `FadeRight`, `FadeLeft`, and `FadeUp`.  Each of these is an entrance that we will use to reveal some data in our app.
+This is not a true component, so it does not belong in the `/components` directory. The `styled-components` library provides a `keyframes` function, which will enable us to define CSS animation keyframes right in our application code. Here we define three separate animations: `FadeRight`, `FadeLeft`, and `FadeUp`. Each of these is an entrance that we will use to reveal some data in our app.
 
 ## `components/Card.js`
 ```javascript
@@ -209,7 +209,7 @@ export const Card = styled.div`
   }
 `
 ```
-The `Card` component just serves as a container for our other components, so it doesn't need to read any properties or maintain any state.  The `styled.div` function will return a new `React` component with the styles in the template literal. You can use any standard CSS properties in the template string.
+The `Card` component just serves as a container for our other components, so it doesn't need to read any properties or maintain any state. The `styled.div` function will return a new `React` component with the styles in the template literal. You can use any standard CSS properties in the template string.
 
 ## `components/Detail.js`
 ```javascript
@@ -249,7 +249,7 @@ export const Details = props => (
   </Container>
 )
 ```
-This is a stateless component, it simply renders any properties passed to it.  To position all four fields, we use two `styled-components` with the flexbox property.  We also import our `FadeUp` animation so that we can use it in the `Container` component.
+This is a stateless component, it simply renders any properties passed to it. To position all four fields, we use two `styled-components` with the flexbox property. We also import our `FadeUp` animation so that we can use it in the `Container` component.
 
 ## `components/Loading.js`
 ```javascript
@@ -276,7 +276,7 @@ const Large = styled.p`
 
 export const Summary = ({weather}) => (<Large>{weather}</Large>)
 ```
-This component could have exported a single styled component instead of exporting a functional component.  This example demonstrates how we can simplify our react code by using `styled-components`, as they have all the boilerplate abstracted away into a collection of idiomatic functions. (like, `styled.div` or `styled.p`, which create `div` and `p` elements respectively).
+This component could have exported a single styled component instead of exporting a functional component. This example demonstrates how we can simplify our react code by using `styled-components`, as they have all the boilerplate abstracted away into a collection of idiomatic functions. (like, `styled.div` or `styled.p`, which create `div` and `p` elements respectively).
 
 ## `components/Temperature.js`
 ```javascript
@@ -292,7 +292,7 @@ const Large = styled.p`
 
 export const Temperature = ({temp}) => (<Large>{temp}°F</Large>)
 ```
-This component functions nearly identically to the [`Summary`](#components/Summary.js) component.  The one advantage to passing a property instead of listing the temperature inline with a pure styled component is that it allows for cleaner code on in the `Weather` component. (It abstracts away the appending of "°F").
+This component functions nearly identically to the [`Summary`](#components/Summary.js) component. The one advantage to passing a property instead of listing the temperature inline with a pure styled component is that it allows for cleaner code on in the `Weather` component. (It abstracts away the appending of "°F").
 
 ## `components/Weather.js`
 ```javascript
@@ -332,7 +332,7 @@ export class Weather extends Component {
   }
 }
 ```
-This component renders the app after we receive data from the dark skies API. It takes data passed to it (through properties) and routs it to the proper components for rendering.  Once this component is completed, you should be able to bundle and run your app (with `npm start`) error free. The completed app should look like this:
+This component renders the app after we receive data from the dark skies API. It takes data passed to it (through properties) and routs it to the proper components for rendering. Once this component is completed, you should be able to bundle and run your app (with `npm start`) error free. The completed app should look like this:
 
 ![app][capture_1]
 
