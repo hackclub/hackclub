@@ -13,14 +13,14 @@ group: experimental
 ### Contents
 1. [Setup](#Setup)
 2. [Components](#Components)
-   - [App](#components/App.js)
-   - [Animation](#animation.js)
-   - [Card](#components/Card.js)
-   - [Detail](#components/Detail.js)
-   - [Loading](#components/Loading.js)
-   - [Summary](#components/Summary.js) 
-   - [Temperature](#components/Temperature.js)
-   - [Weather](#components/Weather.js)
+  - [App](#components/App.js)
+  - [Animation](#animation.js)
+  - [Card](#components/Card.js)
+  - [Detail](#components/Detail.js)
+  - [Loading](#components/Loading.js)
+  - [Summary](#components/Summary.js) 
+  - [Temperature](#components/Temperature.js)
+  - [Weather](#components/Weather.js)
 3. [Challenges](#Challenges)
 4. [Help](#Help)
 
@@ -45,7 +45,7 @@ These will enable `npm start` to call the parcel bundler to package and serve ou
 
 Create a new subdirectory call `src` in `styled-weather`, and populate it with `index.html`, `index.css`, `index.js`, `animation.js`, and one more subdirectory named: `components`.
 
-## `index.html`
+### `index.html`
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +62,7 @@ Create a new subdirectory call `src` in `styled-weather`, and populate it with `
   </body>
 </html>
 ```
-## `index.css`
+### `index.css`
 ```css
 html, body, #root {
   width: 100%;
@@ -82,7 +82,7 @@ html, body, #root {
   color: #333333;
 }
 ```
-## `index.js`
+### `index.js`
 ```javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -104,7 +104,7 @@ Test the app by running `npm start` and navigating to [localhost:1234](http://lo
 ## Components
 `React` apps (and `styled-components`) are built on top of `components`, which are pieces that encapsulate their own state, and that can be composed together to create complex UIs. We'll keep all of our components in our `components` subdirectory. There are two types of components covered in this workshop: stateful and stateless/functional. A stateful component renders and updates based on its internal state. A stateless component does not maintain any internal state, rather it renders based on the properties that are passed to it.
 
-## `components/App.js`
+### `components/App.js`
 ```javascript
 import React, { Component } from 'react'
 import styled from 'styled-components'
@@ -145,7 +145,7 @@ export class App extends Component {
 ```
 This component serves as the "container" for our entire application. It manages the state of the whole application. The two pieces of state that this application uses is `isLoading` and `requested`. `requested` stores the result of our API call, and `isLoading` tells us weather the API request has completed yet. `componentDidMount` is a component [lifecycle hook](https://reactjs.org/docs/react-component.html#the-component-lifecycle) that triggers once, right after the component is mounted to the DOM, which makes it the perfect place to put our API request. The dark sky API exposes a `/forecast` endpoint, which responds with a simple JSON object. After parsing the JSON with `res => res.json()`, we filter the data and updates the components state. Calling `setState()` will queue a re-render of the `App` component, which will switch from our `loading` state to our `weather` state.
 
-## `animation.js`
+### `animation.js`
 ```javascript
 import styled, { keyframes } from 'styled-components'
 
@@ -187,7 +187,7 @@ export const FadeUp = keyframes`
 ```
 This is not a true component, so it does not belong in the `/components` directory. The `styled-components` library provides a `keyframes` function, which will enable us to define CSS animation keyframes right in our application code. Here we define three separate animations: `FadeRight`, `FadeLeft`, and `FadeUp`. Each of these is an entrance that we will use to reveal some data in our app.
 
-## `components/Card.js`
+### `components/Card.js`
 ```javascript
 import styled from 'styled-components'
 
@@ -211,7 +211,7 @@ export const Card = styled.div`
 ```
 The `Card` component just serves as a container for our other components, so it doesn't need to read any properties or maintain any state. The `styled.div` function will return a new `React` component with the styles in the template literal. You can use any standard CSS properties in the template string.
 
-## `components/Detail.js`
+### `components/Detail.js`
 ```javascript
 import React from 'react'
 import styled from 'styled-components'
@@ -251,7 +251,7 @@ export const Details = props => (
 ```
 This is a stateless component, it simply renders any properties passed to it. To position all four fields, we use two `styled-components` with the flexbox property. We also import our `FadeUp` animation so that we can use it in the `Container` component.
 
-## `components/Loading.js`
+### `components/Loading.js`
 ```javascript
 import styled from "styled-components"
 
@@ -262,7 +262,7 @@ export const Loading = styled.p`
 ```
 This is likely the most basic `styled-component` you will ever encounter. Because its parent uses `display: flex`, we can use `auto` margins to vertically center the element on the card.
 
-## `components/Summary.js`
+### `components/Summary.js`
 ```javascript
 import React from 'react'
 import styled from 'styled-components'
@@ -278,7 +278,7 @@ export const Summary = ({weather}) => (<Large>{weather}</Large>)
 ```
 This component could have exported a single styled component instead of exporting a functional component. This example demonstrates how we can simplify our react code by using `styled-components`, as they have all the boilerplate abstracted away into a collection of idiomatic functions. (like, `styled.div` or `styled.p`, which create `div` and `p` elements respectively).
 
-## `components/Temperature.js`
+### `components/Temperature.js`
 ```javascript
 import React from 'react'
 import styled from 'styled-components'
@@ -294,7 +294,7 @@ export const Temperature = ({temp}) => (<Large>{temp}°F</Large>)
 ```
 This component functions nearly identically to the [`Summary`](#components/Summary.js) component. The one advantage to passing a property instead of listing the temperature inline with a pure styled component is that it allows for cleaner code on in the `Weather` component. (It abstracts away the appending of "°F").
 
-## `components/Weather.js`
+### `components/Weather.js`
 ```javascript
 import React, { Component } from 'react'
 import styled from 'styled-components'
