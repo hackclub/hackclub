@@ -13,23 +13,15 @@ const Container = styled.div`
   align-items: center;
 `
 
-export class Weather extends Component {
-  constructor (props) {
-    super(props)
-  }
-
-  render () {
-    return (
-      <Container>
-        <Temperature temp={this.props.dat.temperature} />
-        <Summary weather={this.props.dat.summary} />
-        <Details
-          wSpeed={this.props.dat.windSpeed}
-          wGust={this.props.dat.windGust}
-          humid={this.props.dat.humidity}
-          cover={this.props.dat.cloudCover}
-        />
-      </Container>
-    )
-  }
-}
+export const Weather = ({ dat }) => (
+  <Container>
+    <Temperature temp={dat.temperature} />
+    <Summary weather={dat.summary} />
+    <Details
+      wSpeed={dat.windSpeed}
+      wGust={dat.windGust}
+      humid={dat.humidity}
+      cover={dat.cloudCover}
+    />
+  </Container>
+)

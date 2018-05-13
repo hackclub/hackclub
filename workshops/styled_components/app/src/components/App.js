@@ -6,26 +6,26 @@ import { Weather } from './Weather'
 import { Card } from './Card'
 
 export class App extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {}
-    this.state.isLoading = true
-    this.state.requested = null
+  state = {
+    isLoading: true,
+    requested: null
   }
 
-  componentDidMount () {
-    getCoords(({coords}) => {
+  componentDidMount() {
+    getCoords(({ coords }) => {
       fetch(`${baseurl}${secretKey}/${coords.latitude},${coords.longitude}`)
-      .then(res => res.json())
-      .then(dat => dat.currently)
-      .then(dat => this.setState({
-        isLoading: false,
-        requested: dat,
-      }))
+        .then(res => res.json())
+        .then(dat => dat.currently)
+        .then(dat =>
+          this.setState({
+            isLoading: false,
+            requested: dat
+          })
+        )
     })
   }
 
-  render () {
+  render() {
     return (
       <Card>
         {this.state.isLoading ? <Loading>Loading...</Loading> : null}

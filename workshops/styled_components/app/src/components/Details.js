@@ -18,7 +18,7 @@ const Container = styled.div`
 
 const Row = styled.div`
   width: 100%;
-  height: 30px;
+  height: 32px;
 
   display: flex;
   flex-direction: row;
@@ -29,7 +29,13 @@ const Row = styled.div`
 
 export const Details = props => (
   <Container>
-    <Row><span>Wind Speed: {props.wSpeed}</span>Humidity: {props.humid}<span></span></Row>
-    <Row><span>Wind Gust: {props.wGust}</span>Cloud Cover: {props.cover}<span></span></Row>
+    <Row>
+      <span>Wind Speed: {props.wSpeed}</span>Humidity: {props.humid}
+      <span />
+    </Row>
+    <Row>
+      <span>Wind Gust: {props.wGust}</span>Cloud Cover: {props.cover}
+      <span />
+    </Row>
   </Container>
 )
