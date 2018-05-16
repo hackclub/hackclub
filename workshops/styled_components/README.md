@@ -6,8 +6,6 @@ group: experimental
 order: 14
 ---
 
-[capture_1]: https://github.com/shmishtopher/styled-components-workshop/blob/master/assets/capture_1.PNG
-
 # Styled Components
 
 [`styled-components`](https://www.styled-components.com/) is a library that creates styled [React](https://reactjs.org/) components in a clean, idiomatic way. In this workshop, we'll use `styled-components` to create a small weather app that pulls data from the free [Dark Sky](https://darksky.net/dev) API. This workshop uses the [Parcel](https://parceljs.org/) bundler, but you can use any bundler you wish (Webpack, Rollup, etc..). This workshop assumes that you have a recent version of node and npm installed.
@@ -365,7 +363,7 @@ export const Weather = ({ dat }) => (
 
 This component renders the app after we receive data from the Dark Sky's API. It takes data passed to it (through properties) and routs it to the proper components for rendering. Once this component is completed, you should be able to bundle and run your app (with `npm start`) error free. The completed app should look like this:
 
-![app][capture_1]
+![app](img/completed_app.png)
 
 ## Challenges
 
