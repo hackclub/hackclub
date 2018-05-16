@@ -10,7 +10,10 @@ order: 13
 [capture_2]: ./assets/capture_2.PNG
 
 # Building a Chrome Extension
-Building Chrome extensions is super easy! This workshop will guide you through the setup, development, and distribution of a Chrome extension.
+
+This workshop will guide you through the setup, development, and distribution of a Chrome extension.
+
+The full code for the extension is available [here](https://github.com/shmishtopher/HackPad).
 
 ## Creating a New Extension
 
@@ -177,18 +180,22 @@ chrome.storage.sync.get('notepad', res => {
   $notepad.innerText = res.notepad
 })
 ```
+
 Our first line creates a handle to our `#notepad` element, which we will as an `eventSource` in the next block. Since we want to maximize convenience and minimize unnecessary UI, we'll attach our saving behavior to every keystroke. The `keyup` event fires every time a user lifts completes a keystroke, so thats where we'll add our save logic. `chrome.storage.sync` behaves like a simple key-value store, and manages all the device syncing behavior in the background. Retrieving a value from storage is equally simple, we just need to pass a key and callback.
 
 Now, our notebook is loaded whenever the extension is activated and saved on every `keyup` event. And that's it! The core of our extension is done!
 
 ## Challenges
+
 1. Give your extension an icon (hint: add it to the manifest)
 2. Add the ability to save multiple notebooks
 3. Pack and publish your extension!
 
-## Feedback
-### Is Something Broken or Unclear? Have a Suggestion?
-Email me at `shmish90@gmail.com` or message me in the HackClub slack `@shmishtopher`
-### Need to see some working code?
-1. The source for this extension [here](https://github.com/shmishtopher/HackPad)
-2. The source for one of my published extensions [here](https://github.com/shmishtopher/CoinBlock)
+
+## Hacking
+
+The next step is to make it your own project. Want to add chat? Google how to! Note sharing? Google it!
+
+Here are examples made by Hack Club members you can use as inspiration:
+
+1. [**CoinBlock**](https://github.com/shmishtopher/CoinBlock) _[Source](https://chrome.google.com/webstore/detail/coinblock/cipnhlfdbhohkabpbojakjbapbiimokl)_
