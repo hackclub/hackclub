@@ -6,8 +6,8 @@ group: experimental
 order: 13
 ---
 
-[capture_1]: https://github.com/shmishtopher/HackPad/blob/master/assets/capture_1.PNG
-[capture_2]: https://github.com/shmishtopher/HackPad/blob/master/assets/capture_2.PNG
+[capture_1]: ./assets/capture_1.PNG
+[capture_2]: ./assets/capture_2.PNG
 
 # Building a Chrome Extension
 Building Chrome extensions is super easy! This workshop will guide you through the setup, development, and distribution of a Chrome extension.
