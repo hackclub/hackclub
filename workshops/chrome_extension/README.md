@@ -13,7 +13,9 @@ order: 13
 Building Chrome extensions is super easy! This workshop will guide you through the setup, development, and distribution of a Chrome extension.
 
 ## Creating a New Extension
+
 All Chrome extensions start with a `manifest`, which is simply a `.json` file that describes the applications scope, permissions, and metadata. Start by creating an empty directory, naming it whatever seems appropriate. Add you `manifest.json` file to the empty directory, adding the following information:
+
 ```json
 {
   "name": "Hack Pad",
@@ -22,12 +24,15 @@ All Chrome extensions start with a `manifest`, which is simply a `.json` file th
   "manifest_version": 2
 }
 ```
+
 To load our extension into Chrome, navigate to [chrome://extensions](chrome://extensions), toggle developer mode, and click "Load unpacked extension." Select your working directory (the one containing your manifest), and you should see a card that looks like this:
 
 ![capture][capture_1]
 
 ## Adding an Interface
+
 If we want to give our extension a GUI, we need to specify it in our `manifest.json`. Our application will launch a simple popup, which we can specify in the `browser_action` field.
+
 ```json
 {
   "name": "Hack Pad",
@@ -40,7 +45,9 @@ If we want to give our extension a GUI, we need to specify it in our `manifest.j
   }
 }
 ```
+
 Create three new directories: "pages", "scripts", and "styles" in the root of your project. Add `popup.html`, `main.js`, and `popup.css` to their respective directories.
+
 ```html
 <!-- pages/popup.html -->
 
@@ -64,6 +71,7 @@ Create three new directories: "pages", "scripts", and "styles" in the root of yo
   </body>
 </html>
 ```
+
 ```css
 /* styles/popup.css */
 
@@ -86,7 +94,7 @@ html, body {
   align-items: center;
   margin-top: auto;
   margin-bottom: 15px;
-  
+
   width: 100%;
   height: 100%;
 }
@@ -104,7 +112,7 @@ html, body {
   background-color: #F9F9F9;
   border-radius: 5px;
   overflow-y: auto;
-  
+
   box-sizing: border-box;
   outline: none;
   padding: 10px;
@@ -127,6 +135,7 @@ html, body {
   border-radius: 3px;
 }
 ```
+
 To view our popup, reload the extension and click on the "H" icon in the extensions menu (top right of the browser window). You'll see a popup that looks like this:
 
 ![capture_2][capture_2]
@@ -134,7 +143,9 @@ To view our popup, reload the extension and click on the "H" icon in the extensi
 Because the `#notepad` div element has `contenteditable` attribute, you'll be able to type right into the div without any extra `input` elements. Typing on a virtual sticky note is nice, but a sticky note that erases itself every browser session is not very useful. We can remedy this by using some useful Chrome APIs.
 
 ## Adding Functionality
+
 Most of the powerful Chrome APIs need to be specified in our `manifest.json` before they will be exposed to our code. The API that we want is the "storage" API. We can use this API to sync data to the users account, which means we can use is to keep all instances of the notebook in sync across devices. Before using the "storage" API, we need to enable it in the `manifest`, like this:
+
 ```json
 {
   "name": "Hack Pad",
@@ -148,8 +159,10 @@ Most of the powerful Chrome APIs need to be specified in our `manifest.json` bef
   }
 }
 ```
+
 With the "storage" API enabled, we can use it in `main.js`:
-```javascript
+
+```js
 // scripts/main.js
 
 const $notepad = document.getElementById('notepad')
