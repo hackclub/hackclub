@@ -328,7 +328,7 @@ const Large = styled.p`
 export const Temperature = ({ temp }) => <Large>{temp}°F</Large>
 ```
 
-This component functions nearly identically to the [`Summary`](#components/Summary.js) component. The one advantage to passing a property instead of listing the temperature inline with a pure styled component is that it allows for cleaner code on in the `Weather` component. (It abstracts away the appending of "°F").
+This component functions nearly identically to the [`Summary`](#componentssummaryjs) component. The one advantage to passing a property instead of listing the temperature inline with a pure styled component is that it allows for cleaner code on in the `Weather` component. (It abstracts away the appending of "°F").
 
 ### `components/Weather.js`
 
