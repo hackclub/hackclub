@@ -25,7 +25,6 @@ Here is a final [demo](https://shmishtopher.github.io/styled-components-workshop
   * [`Temperature`](#componentstemperaturejs)
   * [`Weather`](#componentsweatherjs)
 3. [Challenges](#challenges)
-4. [Help](#help)
 
 ## Setup
 
