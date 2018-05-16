@@ -8,6 +8,8 @@ order: 13
 
 # Building a Chrome Extension
 
+**This workshop will only work in Chrome**
+
 This workshop will guide you through the setup, development, and distribution of a Chrome extension.
 
 The full code for the extension is available [here](https://github.com/shmishtopher/HackPad).
