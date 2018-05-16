@@ -8,6 +8,8 @@ order: 14
 
 # Styled Components
 
+Here is a final [demo](https://shmishtopher.github.io/styled-components-workshop/) of this workshop, along with the [source code](https://github.com/shmishtopher/styled-components-workshop) used to make it.
+
 [`styled-components`](https://www.styled-components.com/) is a library that creates styled [React](https://reactjs.org/) components in a clean, idiomatic way. In this workshop, we'll use `styled-components` to create a small weather app that pulls data from the free [Dark Sky](https://darksky.net/dev) API. This workshop uses the [Parcel](https://parceljs.org/) bundler, but you can use any bundler you wish (Webpack, Rollup, etc..). This workshop assumes that you have a recent version of node and npm installed.
 
 ### Contents
@@ -371,8 +373,3 @@ This component renders the app after we receive data from the Dark Sky's API. It
 2. Add a "dark mode" (hint: you can pass props to `styled-components`)
 3. Toggle to Celsius on click (hint: convert `Temperature.js` into a stateful component, and add an `onClick` method that modifies state)
 4. Add a refresh button
-
-## Help
-
-1. The working source for this workshop can be found [here](https://https://github.com/shmishtopher/styled-components-workshop)
-2. Email me at `shmish90@gmail.com` or message me in the HackClub slack `@shmishtopher`
