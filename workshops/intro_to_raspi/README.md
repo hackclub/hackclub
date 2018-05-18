@@ -22,7 +22,7 @@ What the Raspberry Pi attracts people to the most is its availability of the 40 
 
 ## The Story of Raspberry Pi
 
-The Raspberry Pi came alive when the Raspberry Pi foundation based in UK thought of launching a cheap single-board computer to advocate for better computer science education in schools. But it has became so popular that the Raspberry Pi has been adopted by many hobbyists and engineers. Raspberry Pis are often used to prototype IoT devices, entertainment equipments and robots. One of the main reason for the rapid growth of the Raspberry Pi is its strong community support and resources.
+The Raspberry Pi came alive when the Raspberry Pi foundation based in UK thought of launching a cheap single-board computer to advocate for better computer science education in schools. But it has became so popular that the Raspberry Pi has been adopted by many hobbyists and engineers. Raspberry Pis are often used to prototype IoT devices, in entertainment equipment, and in robots. One of the main reason for the rapid growth of the Raspberry Pi is its strong community support and resources.
 
 The Raspberry Pi foundation has sold more than 11 million Pi’s. Even the International Space Station have two Raspberry Pi's :)
 

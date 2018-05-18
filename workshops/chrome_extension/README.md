@@ -180,7 +180,7 @@ chrome.storage.sync.get('notepad', res => {
 })
 ```
 
-Our first line creates a handle to our `#notepad` element, which we will as an `eventSource` in the next block. Since we want to maximize convenience and minimize unnecessary UI, we'll attach our saving behavior to every keystroke. The `keyup` event fires every time a user lifts completes a keystroke, so thats where we'll add our save logic. `chrome.storage.sync` behaves like a simple key-value store, and manages all the device syncing behavior in the background. Retrieving a value from storage is equally simple, we just need to pass a key and callback.
+Our first line creates a handle to our `#notepad` element, which we will as an `eventSource` in the next block. Since we want to maximize convenience and minimize unnecessary UI, we'll attach our saving behavior to every keystroke. The `keyup` event fires every time a user lifts completes a keystroke, so that's where we'll add our save logic. `chrome.storage.sync` behaves like a simple key-value store, and manages all the device syncing behavior in the background. Retrieving a value from storage is equally simple, we just need to pass a key and callback.
 
 Now, our notebook is loaded whenever the extension is activated and saved on every `keyup` event. And that's it! The core of our extension is done!
 

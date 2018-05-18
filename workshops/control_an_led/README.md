@@ -6,34 +6,34 @@ group: pi
 order: 5
 ---
 
-Raspberry Pi has become an integral part of IoT projects. 
+Raspberry Pi has become an integral part of IoT projects.
 
-The **Internet of Things** (IoT) is a system of interrelated computing devices, mechanical and digital machines, objects, animals or people that are provided with unique identifiers and the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction. 
+The **Internet of Things** (IoT) is a system of interrelated computing devices, mechanical and digital machines, objects, animals or people that are provided with unique identifiers and the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction.
 
-In this project, we are going to use a "drag and drop" IoT project builder platform called [Cayenne](http://cayenne.mydevices.com). With this platform, we can read sensor data, control actuators, etc. without having to worry about complicated code writing. 
+In this project, we are going to use a "drag and drop" IoT project builder platform called [Cayenne](http://cayenne.mydevices.com). With this platform, we can read sensor data, control actuators, etc. without having to worry about complicated code writing.
 
 First of all, we are going to control an LED bulb using the Cayenne app (Cayenne can also be accessed through a browser).
 
 ## Things Needed
 
 - A Raspberry Pi connected to the internet
-- Breadboards 
+- Breadboards
 - An LED
 - 220Ω resistor
 - Female to male jumper wires
 - An Android phone or a computer connected to the same network
 
-All equipments are available for purchase from most electronic retailers. A great place to find them may be where you purchased your Raspberry Pi.
+All equipment is available for purchase from most electronic retailers. A great place to find it may be where you purchased your Raspberry Pi.
 
 Turn on your Raspberry Pi and connect it to your network.
 
-Then download the Cayenne app from the [Google Play Store](https://play.google.com/store/apps/details?id=com.mydevices.cayenne&hl=en) or [Apple Store](https://itunes.apple.com/us/app/cayenne-iot-project-builder/id1057997711), or you can use the online version on their [website](http://cayenne.mydevices.com). 
+Then download the Cayenne app from the [Google Play Store](https://play.google.com/store/apps/details?id=com.mydevices.cayenne&hl=en) or [Apple Store](https://itunes.apple.com/us/app/cayenne-iot-project-builder/id1057997711), or you can use the online version on their [website](http://cayenne.mydevices.com).
 
 1. Create your free account.
 
 ![Cayenne Sign In](img/cayenne_sign_in.png)
 
-2. Click the **+** on the right top side to add new devices. 
+2. Click the **+** on the right top side to add new devices.
 
 ![Cayenne List](img/cayenne_list.png)
 
@@ -55,7 +55,7 @@ Then download the Cayenne app from the [Google Play Store](https://play.google.c
 
 ![Setup Button](img/setup_button.png)
 
-7. It will take 5 min or so to complete this setup. You can go enjoy a a nice afternoon snack while you wait, or you can just sit back and relax. 
+7. It will take 5 min or so to complete this setup. You can go enjoy a a nice afternoon snack while you wait, or you can just sit back and relax.
 
 ![Installing Libraries](img/installing_libraries.png)
 
@@ -75,11 +75,11 @@ Then download the Cayenne app from the [Google Play Store](https://play.google.c
 
 Positive end of the LED should be connected to  GPIO 17 of Raspberry Pi. The negative end can be connected to any of the GND available in the Raspberry Pi.
 
-Follow the Raspberry Pi GPIO specification sheet for clarification. 
+Follow the Raspberry Pi GPIO specification sheet for clarification.
 
 **⚠️ Don't forget the resistor - directly connecting the LED will sometimes damage it!**
 
-11. Click the + icon on the top right section of the first tab and select light from the actuators and then light switch. 
+11. Click the + icon on the top right section of the first tab and select light from the actuators and then light switch.
 
 ![Add Light](img/add_light_1.png)
 

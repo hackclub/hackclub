@@ -10,7 +10,7 @@ order: 4
 
 ![VNC Thumbnail](img/thumbnail.png)
 
-While building a project with Raspberry Pi, a monitor may not always be accessible for you. For this reason, we often connect to our Pi remotely from our computers. It allows you to view or control your Raspbian desktop (or other distributions that you have installed on your Pi) on a PC or smartphone that is connected to the internet. 
+While building a project with Raspberry Pi, a monitor may not always be accessible for you. For this reason, we often connect to our Pi remotely from our computers. It allows you to view or control your Raspbian desktop (or other distributions that you have installed on your Pi) on a PC or smartphone that is connected to the internet.
 
 ## Setting Up a VNC server on Raspberry Pi
 
@@ -20,7 +20,9 @@ While building a project with Raspberry Pi, a monitor may not always be accessib
 
 Open "Terminal" (usually located on the task bar of Raspbian) and enter the following command:
 
-    sudo apt-get update
+```sh
+sudo apt-get update
+```
 
 ![Terminal with apt-get update](img/terminal.png)
 
@@ -28,15 +30,19 @@ This command makes sure Raspbian and pieces of software installed are up to date
 
 After it is done, enter the command below.
 
-    sudo raspi-config
+```sh
+sudo raspi-config
+```
 
 This command opens this configuration window in the terminal.
 
-![Raspi_Config](img/raspi_config.png)
+![raspi-config](img/raspi_config.png)
 
 Next, make sure that you have the latest version of VNC Connect by running the following command:
 
-    sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
+```sh
+sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
+```
 
 This command installs the latest version of `realvnc-vnc-server` and `realvnc-vnc-viewer` on your Pi.
 
@@ -44,9 +50,9 @@ You have now installed the required software. However, VNC Server is not enabled
 
 - Navigate to Interfacing Options.
 
-![Raspi_Config Options](img/raspi_config_options.png)
+![raspi-config Options](img/raspi_config_options.png)
 
-![Raspi_Config Interfacing](img/raspi_config_interfacing.png)
+![raspi-config Interfacing](img/raspi_config_interfacing.png)
 
 - Scroll down and select VNC > Yes, and select "finish" when done.
 
@@ -66,13 +72,15 @@ Before we find the IP address, please make sure your ethernet cable is properly 
 
 To get the IP address of your Pi, fire up the terminal just as we did in the last step, and execute the following command:
 
-    ifconfig
+```sh
+ifconfig
+```
 
-Your terminal window will now look something like this: 
+Your terminal window will now look something like this:
 
 ![ifconfig](img/if-config.jpg)
 
-Next to the `eth0` entry you will see `inet addr`: `10.0.0.177` which is the IP address of the Raspberry Pi. Keep in mind that your IP address may be different. 
+Next to the `eth0` entry you will see `inet addr`: `10.0.0.177` which is the IP address of the Raspberry Pi. Keep in mind that your IP address may be different.
 
 Remember! If your IP address starts with `192.168.` or `10.0.`, it's an internal address - that means you can get OUT to the Internet but you cannot have someone outside your home or network reach your Pi via the IP address. This is important if you want to have a webserver running on a Pi that outside people can reach. In general, its much safer to keep your Pi on an internal network.
 
@@ -80,7 +88,7 @@ Remember! If your IP address starts with `192.168.` or `10.0.`, it's an internal
 
 Install the VNC app from [Google Play](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en). If you are using  If you are using your PC, go to [this website](https://www.realvnc.com/en/connect/download/viewer/) to download VNC viewer.
 
-We have provided a general example of the steps performed to connect from an Android devide using RealVNC Viewer. Steps on other softwares or operating systems may be different, but they will ask for the same set of information.
+We have provided a general example of the steps performed to connect from an Android device using RealVNC Viewer. Steps on other software or operating systems may be different, but they will ask for the same set of information.
 
 *Note: Your PC/smartphone needs to be on the same network that you Pi is connected to.*
 
