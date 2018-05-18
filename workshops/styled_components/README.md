@@ -6,9 +6,9 @@ group: experimental
 order: 14
 ---
 
-[capture_1]: https://github.com/shmishtopher/styled-components-workshop/blob/master/assets/capture_1.PNG
-
 # Styled Components
+
+Here is a final [demo](https://shmishtopher.github.io/styled-components-workshop/) of this workshop, along with the [source code](https://github.com/shmishtopher/styled-components-workshop) used to make it.
 
 [`styled-components`](https://www.styled-components.com/) is a library that creates styled [React](https://reactjs.org/) components in a clean, idiomatic way. In this workshop, we'll use `styled-components` to create a small weather app that pulls data from the free [Dark Sky](https://darksky.net/dev) API. This workshop uses the [Parcel](https://parceljs.org/) bundler, but you can use any bundler you wish (Webpack, Rollup, etc..). This workshop assumes that you have a recent version of node and npm installed.
 
@@ -16,16 +16,15 @@ order: 14
 
 1. [Setup](#setup)
 2. [Components](#components)
-  * [`App`](#components/App.js)
-  * [`Animation`](#animation.js)
-  * [`Card`](#components/Card.js)
-  * [`Detail`](#components/Detail.js)
-  * [`Loading`](#components/Loading.js)
-  * [`Summary`](#components/Summary.js)
-  * [`Temperature`](#components/Temperature.js)
-  * [`Weather`](#components/Weather.js)
+  * [`App`](#componentsappjs)
+  * [`Animation`](#animationjs)
+  * [`Card`](#componentscardjs)
+  * [`Detail`](#componentsdetailjs)
+  * [`Loading`](#componentsloadingjs)
+  * [`Summary`](#componentssummaryjs)
+  * [`Temperature`](#componentstemperaturejs)
+  * [`Weather`](#componentsweatherjs)
 3. [Challenges](#challenges)
-4. [Help](#help)
 
 ## Setup
 
@@ -329,7 +328,7 @@ const Large = styled.p`
 export const Temperature = ({ temp }) => <Large>{temp}°F</Large>
 ```
 
-This component functions nearly identically to the [`Summary`](#components/Summary.js) component. The one advantage to passing a property instead of listing the temperature inline with a pure styled component is that it allows for cleaner code on in the `Weather` component. (It abstracts away the appending of "°F").
+This component functions nearly identically to the [`Summary`](#componentssummaryjs) component. The one advantage to passing a property instead of listing the temperature inline with a pure styled component is that it allows for cleaner code on in the `Weather` component. (It abstracts away the appending of "°F").
 
 ### `components/Weather.js`
 
@@ -365,7 +364,7 @@ export const Weather = ({ dat }) => (
 
 This component renders the app after we receive data from the Dark Sky's API. It takes data passed to it (through properties) and routs it to the proper components for rendering. Once this component is completed, you should be able to bundle and run your app (with `npm start`) error free. The completed app should look like this:
 
-![app][capture_1]
+![app](img/completed_app.png)
 
 ## Challenges
 
@@ -373,8 +372,3 @@ This component renders the app after we receive data from the Dark Sky's API. It
 2. Add a "dark mode" (hint: you can pass props to `styled-components`)
 3. Toggle to Celsius on click (hint: convert `Temperature.js` into a stateful component, and add an `onClick` method that modifies state)
 4. Add a refresh button
-
-## Help
-
-1. The working source for this workshop can be found [here](https://https://github.com/shmishtopher/styled-components-workshop)
-2. Email me at `shmish90@gmail.com` or message me in the HackClub slack `@shmishtopher`

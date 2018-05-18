@@ -24,7 +24,7 @@ We said coding is a superpower. But nobody has mastered the superpower yet - exc
 
 ![Confused Dinosaur](img/confused_dinosaur.png)
 
-The dinosaur herself is always confused. Always, like most of the time, she doesn’t know what she is doing. You will almost never see her without a question mark over her head. But this is the kind of quality that motivated her to learn more. She travels through the wires and optic fibers of the internet, jumping in between our Slack channels, and from computers to computers of our student hackers. She learns every day.
+The dinosaur herself is always confused. Always, like most of the time, she doesn't know what she is doing. You will almost never see her without a question mark over her head. But this is the kind of quality that motivated her to learn more. She travels through the wires and optic fibers of the internet, jumping in between our Slack channels, and from computers to computers of our student hackers. She learns every day.
 
 ### “The Orpheus Is Watching You”
 
