@@ -30,4 +30,5 @@ If you'd like to see someone make a workshop on building a specific type of proj
 * Text editor/writing app built with React and Draft.js ([@lachlanjc](https://github.com/lachlanjc))
   * Package as Electron app for macOS ([@lachlanjc](https://github.com/lachlanjc))
 * Markdown-based blog using Gatsby ([@lachlanjc](https://github.com/lachlanjc))
-* Weather app using React + styled-components + Dark Sky API ([@lachlanjc](https://github.com/lachlanjc))
+* ~~Weather app using React + styled-components + Dark Sky API ([@lachlanjc](https://github.com/lachlanjc))~~
+* Game using [react-game-kit](https://github.com/FormidableLabs/react-game-kit) ([@lachlanjc](https://github.com/lachlanjc)) 
