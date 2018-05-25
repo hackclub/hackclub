@@ -58,6 +58,7 @@ These actions are explicitly forbidden in Hack Club spaces:
 - Discrimination based on age, disability, gender, nationality, race, religion, sexuality, or similar personal characteristic.
 - Bullying or systematic harassment.
 - Unwelcome sexual advances.
+- Mentioning, supporting, or promoting emacs in any way (instant ban)
 - Provoking any of these.
 
 ## Moderation
