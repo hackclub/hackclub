@@ -1,4 +1,4 @@
-# A Pocket Guide to Mailing Your Heroes
+# A Pocket Guide to Mailing A Mentor
 
 ## Getting Started
 
