@@ -1,3 +1,10 @@
+---
+name: Mailing A Mentor
+description: Reach out to your heroes
+group: misc
+order: 6
+---
+
 # A Pocket Guide to Mailing A Mentor
 
 ## Getting Started
