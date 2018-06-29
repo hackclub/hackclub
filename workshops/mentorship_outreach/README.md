@@ -11,6 +11,7 @@ order: 6
 ## Getting Started
 
 ### HOW TO CHOOSE A MENTOR
+
 So who do you want to contact? You usually want to choose someone whose work you look up to, and fits the following criteria:
 1. Their work has personally affected you in some way
 2. They have an open door to contact (a public twitter, they share their contact info at the end of talks they give, they give an email on the about page of their website, etc)
@@ -21,11 +22,7 @@ Still don't have someone specific in mind? No need to worry - the internet has y
 Before you email, give some thought to what you want to know from this person!
 Brainstorm a few questions you want to ask! It helps to have a clear idea of what you're getting into. I made a list on a piece of paper.
 
-
-
 ## Writing that Electronic Mail
-
-
 
 ###  WRITING THE EMAIL
 
@@ -55,8 +52,9 @@ Now let's start from the start.
     I'm a high school student in Los Angeles and completely enamored with game programming. I've been following your work for a while and - I hope this isn't weird to say - you're a bit of a personal hero to me.*
     
     This part's simple, you're just saying their name and giving an overview of your link to them!
-    
+
 ---
+
 2. **How I know you/got your email**
 *Your book, Game Engine Architecture, was huge for me...*
 
@@ -65,9 +63,10 @@ Now let's start from the start.
     Next paragraph...
 
 ---
+
 4. **How your work has affected me (why did I email you specifically?)**
 *Your book, Game Engine Architecture, was huge for me - I read it cover-to-cover when I was 15. Then there's the engine work being done at Naughty Dog, which is completely amazing and has inspired me to keep pushing my understanding of what's possible with hardware.*
-   
+
    It should be clear, but Jason has had a pretty significant impact on my programming career.
    Don't be afraid to lay on the compliments.  Programmers can be distant with praise and lavish with criticism, so avoid that trap!
 But also, be earnest about your praise. If you're making stuff up it's going to come through.
@@ -94,7 +93,7 @@ programmers tend to be terrible fraudsters
     >- PS2 is also more fun low-level game systems stuff, and Jason worked on PS2 titles in addition to writing about them in his book. 
     >
     >I wouldn't mention, say, my limited network programming experience because it's not super relevant!
-    
+
 ---
 
 5. **The Ask**
