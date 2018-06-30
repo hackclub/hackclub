@@ -50,7 +50,7 @@ Now let's start from the start.
 1. **Greeting**  
     *Hi Jason!
     I'm a high school student in Los Angeles and completely enamored with game programming. I've been following your work for a while and - I hope this isn't weird to say - you're a bit of a personal hero to me.*
-    
+
     This part's simple, you're just saying their name and giving an overview of your link to them!
 
 ---
@@ -123,6 +123,7 @@ Here are a few more tips on writing a good email from people who are *not* me!
 
 
 ---
+
 ## Yes, you can do this.
 
 "I'm not good enough to warrant meeting with this person yet. Maybe when I'm better..."
