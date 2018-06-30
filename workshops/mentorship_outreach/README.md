@@ -17,16 +17,16 @@ So who do you want to contact? You usually want to choose someone whose work you
 2. They have an open door to contact (a public twitter, they share their contact info at the end of talks they give, they give an email on the about page of their website, etc)
 3. Ideally they're in your area, or you're in theirs!
 
-Still don't have someone specific in mind? No need to worry - the internet has your back. There are plenty of public mentor lists filled with people willing to help from all fields. [Check this out to get started!](http://stephaniehurlburt.com/blog/2016/11/14/list-of-engineers-willing-to-mentor-you)
+Still don't have someone specific in mind? No need to worry - the internet has your back. There are plenty of public mentor lists filled with people willing to help from all fields. [Check this out to get started!](http://stephaniehurlburt.com/blog/2016/11/14/list-of-engineers-willing-to-mentor-you)  
 
 Before you email, give some thought to what you want to know from this person!
-Brainstorm a few questions you want to ask! It helps to have a clear idea of what you're getting into. I made a list on a piece of paper.
+Brainstorm a few questions you want to ask! It helps to have a clear idea of what you're getting into. I made a list on a piece of paper.  
 
 ## Writing that Electronic Mail
 
 ###  WRITING THE EMAIL
 
-You know who you want to talk to, and now it's time to do start reaching out. This is the scariest part of the process. But there's a logic to it!
+You know who you want to talk to, and now it's time to do start reaching out. This is the scariest part of the process. But there's a logic to it!  
 
 The basic structure goes:
 
@@ -46,8 +46,8 @@ I'm going to break down an email I wrote to Jason Gregory, the lead programmer a
 The artifact:
 ![This is an image of my email to Jason](https://cdn.discordapp.com/attachments/239737791225790464/459533405936156672/unknown.png)
 
-Now let's start from the start.
-1. **Greeting**
+Now let's start from the start.  
+1. **Greeting**  
     *Hi Jason!
     I'm a high school student in Los Angeles and completely enamored with game programming. I've been following your work for a while and - I hope this isn't weird to say - you're a bit of a personal hero to me.*
     
@@ -55,7 +55,7 @@ Now let's start from the start.
 
 ---
 
-2. **How I know you/got your email**
+2. **How I know you/got your email**  
 *Your book, Game Engine Architecture, was huge for me...*
 
    This part's important - if you're emailing them directly, you should drop in how you actually found that email! In this case, Jason posted his email on the website for his book, so mentioning that I know him through said book will cover it.
@@ -64,7 +64,7 @@ Now let's start from the start.
 
 ---
 
-4. **How your work has affected me (why did I email you specifically?)**
+3. **How your work has affected me (why did I email you specifically?)**  
 *Your book, Game Engine Architecture, was huge for me - I read it cover-to-cover when I was 15. Then there's the engine work being done at Naughty Dog, which is completely amazing and has inspired me to keep pushing my understanding of what's possible with hardware.*
 
    It should be clear, but Jason has had a pretty significant impact on my programming career.
@@ -79,7 +79,7 @@ if you feel like you're pushing the envelope of what you can honestly say, don't
 programmers tend to be terrible fraudsters
 
 ---
-5. **What you do!**
+5. **What you do!**  
 *I'm currently working on various small learning projects using Vulkan, writing a gameboy programming library, and I'm _planning_ on doing PS2 homebrew just as soon as I can figure out how to get my hands on a console (procgen could be fun with VUs, once I figure out how to work them)!*
 
 
@@ -96,13 +96,13 @@ programmers tend to be terrible fraudsters
 
 ---
 
-5. **The Ask**
+5. **The Ask**  
 *I know this is a bit of a long shot, but is there any chance you would be willing to offer an hour of your time to offer some career advice to me? It would mean the world to me to have lunch together. I'm pretty flexible schedule-wise!*
 
 	This is the scary part. Be humble, and show that you respect their time! Be clear on what you want to ask [I asked for some career advice -> an hour for lunch]. They are doing you a favor and you should be accommodating to that [be flexible schedule-wise].
 
 ---
-6. **The Closer**
+6. **The Closer**  
     *Best,
         Sam*
 
