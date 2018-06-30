@@ -80,7 +80,7 @@ programmers tend to be terrible fraudsters
 
 ---
 5. **What you do!**  
-*I'm currently working on various small learning projects using Vulkan, writing a gameboy programming library, and I'm _planning_ on doing PS2 homebrew just as soon as I can figure out how to get my hands on a console (procgen could be fun with VUs, once I figure out how to work them)!*
+*I'm currently working on various small learning projects using Vulkan, writing a Game Boy programming library, and I'm _planning_ on doing PS2 homebrew just as soon as I can figure out how to get my hands on a console (ProcGen could be fun with VUs, once I figure out how to work them)!*
 
 
     This just boils down to "I'm working on/learning A, B, C." Super simple! Don't write a novel here - you're not pitching an investor, you're just trying to give them a rapid overview of what you're about.
@@ -88,8 +88,8 @@ programmers tend to be terrible fraudsters
     1. This shows the person you're emailing that that you're motivated and putting in work to learn things on your own.
     2. Unless you're trying to make a point about how diverse you are, try and keep your list relevant to the domain of the person you're emailing, and the area of knowledge you're asking about.
     >For me, what made my list worth mentioning:
-    >- Vulkan is modern graphics progarmming
-    >- Gameboy engine programming is low-level game systems stuff. It's got 'neat' factor too.
+    >- Vulkan is modern graphics programming
+    >- Game Boy engine programming is low-level game systems stuff. It's got 'neat' factor too.
     >- PS2 is also more fun low-level game systems stuff, and Jason worked on PS2 titles in addition to writing about them in his book. 
     >
     >I wouldn't mention, say, my limited network programming experience because it's not super relevant!
