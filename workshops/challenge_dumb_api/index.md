@@ -16,10 +16,10 @@ For example, you can go to https://api.hackclub.com/v1/challenges to see all of 
 
 ## Examples
 
-* GitHub Zen: go to https://api.github.com/zen and you’ll get a piece of advice. Reload for another randomly-decided line.
-* Hypochondriapp: not an API, but same idea. Go to http://hypochondriapp.io/ and get the worst possible disease you could have from a symptom.
+* https://api.github.com/zen – You’ll get a piece of advice. Reload for another randomly-decided line. Does almost nothing.
+* http://hypochondriapp.io/ – not an API, but same idea. Get the worst possible disease you could have from a symptom.
 
-The challenge is to create the API, but you are more than welcome to create an application like Hypochrondriapp that demonstrates your API.
+The challenge is to create the API, but you are more than welcome to create an application like http://hypochondriapp.io/ that demonstrates your API.
 
 ## Getting started
 
