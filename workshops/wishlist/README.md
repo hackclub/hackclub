@@ -15,6 +15,12 @@ If you'd like to see someone make a workshop on building a specific type of proj
 * Fleshed out track for mobile development ([@zachlatta](https://github.com/zachlatta))
 * Workshop track to introduce backend development ([@zachlatta](https://github.com/zachlatta))
 * How to make a Discord bot ([@zachlatta](https://github.com/zachlatta))
+* Build a backend using Express & Node
+* More advanced game workshops (especially using Phaser)
+* Heroku workshop (how to deploy things using Heroku or maybe another backend)
+* How to host a hackathon (not a traditional workshop, but would really like to have on the site)
+* [CAD workshop?](https://hackclub.slack.com/archives/C3A6RB5SA/p1503953718000169)
+* [How to connect to Slack via IRC](https://hackclub.slack.com/archives/C0C78SG9L/p1504239822000077)
 * How to scrape a website ([@ifvictr](https://github.com/ifvictr))
 * Cryptocurrency price tracker using Twilio API ([@ifvictr](https://github.com/ifvictr))
 * Converting handwritten notes to files using Google Cloud Vision ([@ifvictr](https://github.com/ifvictr))
