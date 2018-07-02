@@ -38,6 +38,7 @@ If you'd like to see someone make a workshop on building a specific type of proj
 * Markdown-based blog using Gatsby ([@lachlanjc](https://github.com/lachlanjc))
 * ~~Weather app using React + styled-components + Dark Sky API ([@lachlanjc](https://github.com/lachlanjc))~~
 * Game using [react-game-kit](https://github.com/FormidableLabs/react-game-kit) ([@lachlanjc](https://github.com/lachlanjc))
+* Basic site builder using `contenteditable` and a bit of jQuery ([@lachlanjc](https://github.com/lachlanjc))
 * How to create your own cryptocurrency ([@yevbar](https://github.com/yevbar))
 * Chat out with a chat bot ([@yevbar](https://github.com/yevbar))
 * A simple neural network ([@yevbar](https://github.com/yevbar))
