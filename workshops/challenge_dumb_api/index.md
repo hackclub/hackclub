@@ -16,8 +16,9 @@ For example, you can go to https://api.hackclub.com/v1/challenges to see all of 
 
 ## Examples
 
-* https://api.github.com/zen – You’ll get a piece of advice. Reload for another randomly-decided line. Does almost nothing.
+* https://api.github.com/zen – get a piece of advice, reload for another randomly-decided line. Does almost nothing.
 * http://hypochondriapp.io/ – not an API, but same idea. Get the worst possible disease you could have from a symptom.
+* https://devnull-as-a-service.com/code/ – deletes whatever files you upload.
 
 The challenge is to create the API, but you are more than welcome to create an application like http://hypochondriapp.io/ that demonstrates your API.
 
