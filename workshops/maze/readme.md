@@ -1,5 +1,5 @@
 # Maze
-*Some images don't render in github, full workshop better viewed on [notion](https://www.notion.so/jajoosam/Maze-c06d7ac6968a4402abc0115430a2b6d5)*
+*Some images don't render in Github, full workshop better viewed on [notion](https://www.notion.so/jajoosam/Maze-c06d7ac6968a4402abc0115430a2b6d5)*
 
 In the next 30 minutes, you're going to become an actual game developer 🎮  - we're going to make a remake of the classic [scary maze](http://www.playscarymazegame.net/play-scary-maze-game/) game, in the amazing [PICO-8](https://www.lexaloffle.com/pico-8.php).
 
@@ -25,7 +25,7 @@ This is the PICO-8 console - but you won't need this for now, so go ahead and pr
 
 Go ahead and click on each of the icons on the top right of the screen. In order, they represent:
 
-1. **Code**: Logic that your game runs continously
+1. **Code**: Logic that your game runs continuously
 2. **Sprite**: Draw the characters in your game
 3. **Map**: Make a map for your game(background) with sprites
 4. **Sound**: Make small sound effects for your game
@@ -55,7 +55,7 @@ Let's start with something simple - drawing a small square in the middle of our 
     cls()
     pset(64,64,12)
 ```
-`cls()` clears the screen everytime your code runs, so that our screen doesn't become too messy!
+`cls()` clears the screen every time your code runs, so that our screen doesn't become too messy!
 
 Now, just press `⌘/ctrl + r` to run the game, and see a nice blue pixel in the middle of our screen 👀
 
@@ -94,7 +94,7 @@ Head onto the 😺  tab, from the top-right corner of your screen.
 
 ![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff22da680-7114-4927-a36d-1cda5e9634e4%2FUntitled.png)
 
-All you need to know for now is that you can draw 8x8 characters, from the 16 colors in the pallete to your right. Here's an example - the character I made - 
+All you need to know for now is that you can draw 8x8 characters, from the 16 colors in the palette to your right. Here's an example - the character I made - 
 
 ![](https://www.notion.so/file/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3a88eb8b-eb44-4701-8862-aac5d4cfaffc%2FUntitled.png)
 
