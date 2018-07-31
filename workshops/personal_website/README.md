@@ -12,7 +12,7 @@ Prophet Orpheus, [our mascot](https://github.com/hackclub/dinosaurs/blob/master/
 
 It will look something like this:
 
-![](img/screen.png)
+![](img/sexy.png)
 
 Here's the [live demo][final_live_demo] and [final code][final_code] (see `index.html` and `index.css`).
 
