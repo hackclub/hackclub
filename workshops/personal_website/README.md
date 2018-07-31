@@ -74,15 +74,15 @@ Before proceeding, we'll briefly go over what this template means. HTML works by
 
 ### 2) Previewing the Page
 
-Let's check out what our HTML file looks like in Live Preview! To do this, click on the **Run** button above the editor or press <kbd>Ctrl+Enter</kbd> (or <kbd>Cmd+Enter</kbd> for Mac)
+Let's check out what our HTML file looks like in Live Preview! To do this, click on the **Run** button above the editor or press <kbd>Ctrl+Enter</kbd> (or <kbd>Command+Enter</kbd> for Mac)
 
 ![](img/run.png)
 
-From there, the live preview to the right of the editor should show what your website looks like. If you want to view it in a new tab, the url above the website preview is the live url for your website
+From there, the live preview to the right of the editor should show what your website looks like. If you want to view it in a new tab, the URL above the website preview is the live URL for your website
 
 ![](img/url.png)
 
-You can also open the external live preview by clicking the icon that looks like a box with an arrow. This will open live preview in a new tab at the aforementioned url
+You can also open the external live preview by clicking the icon that looks like a box with an arrow. This will open live preview in a new tab at the aforementioned URL
 
 ![](img/preview.png)
 
@@ -249,13 +249,13 @@ body {
 }
 ```
 
-Now be sure to **Run** if you haven't already so that the url gives the most recent version of your website. Ah, it is truly beautiful to behold.
+Now be sure to **Run** if you haven't already so that the URL gives the most recent version of your website. Ah, it is truly beautiful to behold.
 
 ![](img/celebrate_harry_potter.gif)
 
 ## Part IV: Publishing
 
-This whole time, you probably had a funky url that came out of some alphabet soup but you can change that by clicking on the arrow icon next to the name of your repl
+This whole time, you probably had a funky URL that came out of some alphabet soup but you can change that by clicking on the arrow icon next to the name of your repl
 
 ![](img/edit_name.png)
 
