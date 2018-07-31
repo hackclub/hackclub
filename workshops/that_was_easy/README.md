@@ -476,11 +476,11 @@ Then, let's save our progress with git by running the following commands in the 
 - `git add --all`
 - `git commit -m "Add key binding to that was easy button"`
 
-## Part VII: Publishing and Sharing
+## Part VI: Publishing and Sharing
 
 Post on [`#shipit`](https://hackclub.slack.com/messages/shipit) with the URL, so everyone can see and play with your amazing creation!
 
-## Part VIII: Hacking
+## Part VII: Hacking
 
 Now that you know how to add sounds to buttons, you can do many things, including but not limited to:
 
