@@ -8,7 +8,7 @@ order: 2
 
 # That Was Easy Workshop
 
-INSERT PICTURE (FINAL RESULT)
+![](img/final.png)
 
 Links to a live demo and the final code below. This workshop should take around 1 hour.
 
@@ -44,7 +44,7 @@ If this feels like an exorbitant amount of new tools -- you're absolutely right.
 
 First log into your [Repl.it](https://repl.it/login) account and start a new [HTML/CSS/JS repl](https://repl.it/languages/html)
 
-INSERT PICTURE (initial creation of html repl)
+![](img/html_repl.png)
 
 From there, clear the contents of `index.html` and paste in the following
 
