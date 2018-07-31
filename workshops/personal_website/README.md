@@ -1,12 +1,12 @@
 ---
-name: First Website
+name: Personal Website
 description: Making your first website from scratch
 author: Hack Club staff + Yev
 group: start
 order: 1
 ---
 
-# First Website
+# Personal Website
 
 Prophet Orpheus, [our mascot](https://github.com/hackclub/dinosaurs/blob/master/README.md), is here to guide you through making your own personal website.
 
@@ -32,7 +32,7 @@ This workshop should take around 45 minutes.
 
 ## Part I: Setup
 
-### 1) Getting ready to repl it on Repl.it
+### Getting ready to repl it on Repl.it
 
 If you already have a Repl.it account, go ahead and spin up an [HTML repl](https://repl.it/languages/html) then move on to [Part II](#part-ii-the-html-file)
 
@@ -302,6 +302,8 @@ These are some additional resources that you can use to make your site even bett
 - [HTML Dog](http://www.htmldog.com/guides/html/beginner/): _Very beginner focused. If you're not sure which one to choose, pick this one._
 - [Free Code Camp](http://www.freecodecamp.com/map): _Interactive and very methodical._
 - [Treehouse](https://teamtreehouse.com/library/html/introduction/): _Their videos are extremely comprehensive and thorough._
+
+<!-- I'd like to thank Latta Lattes for carrying me through the rewriting of this tutorial - Yev -->
 
 ## Part VI: Sharing with the Community
 
