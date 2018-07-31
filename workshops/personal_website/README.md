@@ -14,7 +14,7 @@ It will look something like this:
 
 ![](img/screen.png)
 
-Here's the [live demo][final_live_demo] and [final code][final_code] (see `index.html` and `styles.css`).
+Here's the [live demo][final_live_demo] and [final code][final_code] (see `index.html` and `index.css`).
 
 This workshop should take around 45 minutes.
 
@@ -52,7 +52,7 @@ HTML stands for Hypertext Markup Language. Every website from the New York Times
 
 The file you're currently looking at is our `index.html` file and you can tell we're looking at HTML because of all the angle brackets.
 
-INSERT PICTURE HERE
+![](img/html_repl.png)
 
 Go ahead and delete everything in `index.html` then paste in the following code
 
@@ -74,17 +74,17 @@ Before proceeding, we'll briefly go over what this template means. HTML works by
 
 ### 2) Previewing the Page
 
-Let's check out what our HTML file looks like in Live Preview! To do this, click on the **Run** button above the editor or press <kbd>Ctrl+Enter</kbd>
+Let's check out what our HTML file looks like in Live Preview! To do this, click on the **Run** button above the editor or press <kbd>Ctrl+Enter</kbd> (or <kbd>Cmd+Enter</kbd> for Mac)
 
-INSERT PICTURE HERE
+![](img/run.png)
 
 From there, the live preview to the right of the editor should show what your website looks like. If you want to view it in a new tab, the url above the website preview is the live url for your website
 
-INSERT PICTURE HERE
+![](img/url.png)
 
 You can also open the external live preview by clicking the icon that looks like a box with an arrow. This will open live preview in a new tab at the aforementioned url
 
-INSERT PICTURE HERE
+![](img/preview.png)
 
 As you can see, the page is blank. This is because we haven't added anything to the `body` section yet. Let's add some content!
 
@@ -152,7 +152,7 @@ Go ahead and add this into your `index.html` now. I put my picture before my hea
 </html>
 ```
 
-INSERT PICTURE
+![](img/no_css.png)
 
 Remember, you need to **Run** your program every time you want to see your updated website.
 
@@ -168,15 +168,15 @@ While HTML oversees the content and the way it's structured, CSS is how you'll s
 
 We already have an `index.css` in the file tree and this is called an external style sheet because the CSS file is external to the HTML file (i.e., the stylesheet is not inside the HTML file).
 
-INSERT PICTURE
+![](img/index_css.png)
 
 Although we have a CSS file, until we explicitly tell the HTML file to use the CSS file, it will not use it. We must explicitly link the CSS file in the HTML. We'll do this by typing the following into the head of `index.html` (between `<head>` and `</head>`), because the head is where we tell information about the page to the browser.
 
 ```html
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="index.css" />
 ```
 
-`<link />` is the link tag, which describes relationships between the current file (in this case, `index.html`), and some external file (`styles.css`). In our example, `rel="stylesheet"` specifies what this relationship is, i.e., that `styles.css` is a stylesheet, and `href` (hypertext reference) specifies where the file can be found (in this case, it's just the filename `styles.css`). The link tag, similar to the image tag, is a self-closing tag, once again denoted by the `/` that precedes the `>`.
+`<link />` is the link tag, which describes relationships between the current file (in this case, `index.html`), and some external file (`index.css`). In our example, `rel="stylesheet"` specifies what this relationship is, i.e., that `index.css` is a stylesheet, and `href` (hypertext reference) specifies where the file can be found (in this case, it's just the filename `index.css`). The link tag, similar to the image tag, is a self-closing tag, once again denoted by the `/` that precedes the `>`.
 
 Our HTML file now looks like so:
 
@@ -184,7 +184,7 @@ Our HTML file now looks like so:
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="index.css"/>
     </head>
     <body>
         <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
@@ -201,7 +201,7 @@ Remember to save your `index.html`.
 
 Now that we've linked our CSS file to our HTML file, let's write some CSS to resize the image.
 
-Open up `styles.css` and type the following:
+Open up `index.css` and type the following:
 
 ```css
 img {
@@ -236,7 +236,7 @@ body {
 
 Here is the transformation that your stylesheet will have undergone at the end of your endeavors:
 
-INSERT PICTURE
+![](img/complete_css.png)
 
 You can take this even further by adding a bit of color to the page! The attribute `color` **(spelled without a u)** allows you to set the text color, and `background-color` allows you to set a background color. You can find a list of supported color names over at [W3Schools](https://www.w3schools.com/colors/colors_names.asp). Keep in mind that it's a good idea to pick a combination of colors will keep the text readable.
 
@@ -257,9 +257,9 @@ Now be sure to **Run** if you haven't already so that the url gives the most rec
 
 This whole time, you probably had a funky url that came out of some alphabet soup but you can change that by clicking on the arrow icon next to the name of your repl
 
-INSERT PICTURE
+![](img/edit_name.png)
 
-Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes (and <kbd>Escape</kbd> to cancel your name change)
+Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes (or <kbd>Escape</kbd> to cancel your name change)
 
 #### Celebrate!
 
