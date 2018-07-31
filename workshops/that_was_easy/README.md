@@ -34,9 +34,9 @@ If this feels like an exorbitant amount of new tools -- you're absolutely right.
 - [Part II: The HTML File](#part-ii-the-html-file)
 - [Part III: The JavaScript File](#part-iii-the-javascript-file)
 - [Part IV: The CSS File](#part-iv-the-css-file)
-- [Part V: Upgrading](#part-vi-upgrading)
-- [Part VI: Publishing and Sharing](#part-vii-publishing-and-sharing)
-- [Part VII: Hacking](#part-viii-hacking)
+- [Part V: Upgrading](#part-v-upgrading)
+- [Part VI: Publishing and Sharing](#part-vi-publishing-and-sharing)
+- [Part VII: Hacking](#part-vii-hacking)
 
 ## Part I: Set-up
 
