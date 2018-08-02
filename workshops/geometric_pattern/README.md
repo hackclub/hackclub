@@ -1,7 +1,7 @@
 ---
 name: Geometric Pattern
 description: Super cool geometric patterns using p5.js
-author: "@jkwok91"
+author: "@jkwok91 + Yev"
 group: start
 order: 3
 ---
@@ -12,18 +12,15 @@ order: 3
 | -------------------- |
 | ![](img/sample1.png) |
 
-_**We recommend going through this workshop in Google Chrome.**_
-
 Links to a live demo and the final code below. This workshop should take around 1 hour.
 
-[Final Code](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/geometric_pattern)
+[Final Code](https://repl.it/@prophetorpheus/geometric)
 
-[Live Demo](https://prophetorpheus.github.io/geometric_pattern)
+[Live Demo](https://geometric--prophetorpheus.repl.co)
 
 _**Warning: the following demo involves flashing colors and is not recommended for those with a history of epilepsy.**_ There's also an [animated demo][animated_live_demo].
 
 [animated_live_demo]: https://prophetorpheus.github.io/geometric_pattern/version2.html
-
 
 ---
 
@@ -41,20 +38,11 @@ We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
 
 ## Part I: Set-up
 
-First, go to Cloud9 and open up your `projects` workspace by pressing Open.
+First, go to [Repl.it](https://repl.it) and create an [HTML/CSS/JS repl](https://repl.it/languages/html)
 
-![](../img/c9_dashboard.png)
+INSERT PICTURE HERE (FRESH HTML REPL)
 
-Once in the workspace, right-click the `projects` folder on the left and select `New Folder`. Name it `geometric_pattern`.
-
-Next, right-click the `geometric_pattern` folder, select `New File`, and name it `index.html`.
-Then, right-click the `geometric_pattern` folder again, select `New File` again, and this time, name it `main.js`.
-
-## Part II: Priming the Files
-
-### Priming the HTML File
-
-Double-click `index.html` to open it. Just as we've done previously, we'll type this base structure into our HTML file:
+From here, clear the contents of `index.html` and put the following in its place
 
 ```html
 <!DOCTYPE html>
@@ -66,28 +54,28 @@ Double-click `index.html` to open it. Just as we've done previously, we'll type 
 </html>
 ```
 
-Now, let's add our JavaScript dependencies, namely, p5.js. Let's add that into our **body** with a `<script>` tag: **Please type everything except the URL, which you can copy and paste!**
+Now, let's add our JavaScript dependencies, namely, p5.js. Let's add that into our **body** with a `<script>` tag:
 
 ```html
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.12/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
 </body>
 ```
 
-We'll also need to attach our JavaScript file, `main.js`. Add this below the line that adds p5.js:
+We'll also need to attach our JavaScript file, `index.js`. Add this below the line that adds p5.js:
 
 ```html
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.12/p5.js"></script>
-  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <script src="index.js"></script>
 </body>
 ```
 
-Now we'll save (with shortcut: <kbd>Ctrl</kbd>+<kbd>s</kbd> / <kbd>Command</kbd>+<kbd>s</kbd>) and open Live Preview (`Preview` > `Live Preview`). You should see a blank screen. Next, we'll start adding content.
+Go ahead and **Run** the project (or the shortcut <kbd>Ctrl</kbd>+<kbd>Enter</kbd> / <kbd>Command</kbd>+<kbd>Enter</kbd>). All we have right now is a blank screen but we'll start adding content next.
 
 ### Priming the JS File
 
-Double-click `main.js` to open, and type the following:
+Double-click `index.js` to open, and type the following:
 
 ```js
 function setup() {
@@ -159,9 +147,9 @@ function draw() {
 }
 ```
 
-Save and refresh Live Preview. It might also be helpful to open up the external preview:
+**Run** to see the udpated website. It might also be helpful to open up the external preview:
 
-![](img/c9_external_preview.gif)
+INSERT PICTURE (PREVIEW BUTTON)
 
 In this example, the first two arguments we pass to the ellipse function are the x and y coordinates of the center of the ellipse. We've passed in `width/2` and `height/2`, respectively, which means the center of the ellipse will also be the center of the canvas. The latter two arguments are the x-width and y-width of the ellipse. Since we want to draw a circle, we're passing the same value for both.
 
@@ -181,19 +169,19 @@ function draw() {
 }
 ```
 
-![](img/four_and_half_circles_middle.png)
+INSERT PICTURE (4.5 visible circles on the screen)
 
 So here we've drawn 4.5 circles. Why is there a half-circle? Check out the documentation for [`ellipse()`](http://p5js.org/reference/#p5/ellipse) and see if you can figure it out.
 
 Anyway, we can draw 7.5 more, since we've made room for 12 (when we set `NUM_CIRCLES`). Keep going until it looks like this:
 
-![](img/twelve_circles_middle.png)
+INSERT PICTURE (12 visible circles)
 
 Great, now that we've drawn one row of circles in the middle, we have to draw the other rows. Guess we'll be writing a lot of `ellipse()` statements.
 
 Just kidding! There's a construct in programming called a loop, and it repeats a set of instructions as many times as you decide.
 
-_**Here's a quick [example loop](https://github.com/hackclub/hackclub/blob/master/workshops/geometric_pattern/loops.md).**_
+**Here's a quick [example loop](https://github.com/hackclub/hackclub/blob/master/workshops/geometric_pattern/loops.md).**
 
 Let's remove all those repetitive lines and add a loop into our `draw()` function. We'll be using a type of loop called a **while-loop**, like so:
 
@@ -264,15 +252,9 @@ As with the previous while-loop's `x`, we're executing the code inside the `{` a
 
 Using this incrementing `y` variable as our y-coordinate is how we're able to draw rows up and down the canvas.
 
-Save and refresh Live Preview to check it out!
+Go ahead and **Run** your repl to see your updated website!
 
-Now that we've done some work, let's back it up by committing. This will make sure we have a record of everything we've done in case part of our code gets deleted or lost. Make sure all of your files are saved. Then, head on over to the terminal in Cloud9 by pressing <kbd>Alt</kbd>+<kbd>t</kbd> and type the following commands (pressing <kbd>enter</kbd> after each one):
-
-- `git add --all`
-- `git commit -m "Add geometric_pattern project"`
-- `git push`
-
-Then, enter your GitHub username and password (careful here, as password will not be displayed).
+INSERT PICTURE (CURRENT STATE OF WEBSITE)
 
 ### Offsetting the Circles in the Y-Direction
 
@@ -393,9 +375,9 @@ Now we just need to make this shift. We'll do this by modifying the starting `x`
 
 We can modify this by removing this definition:
 
-```js
-̶v̶a̶r̶ ̶x̶ ̶=̶ ̶0̶;̶
-var x;
+```diff
+- var x = 0;
++ var x;
 ```
 
 And setting the value _conditionally_:
@@ -445,11 +427,7 @@ function draw() {
 
 Save and check it out!
 
-Because we've done another chunk of coded, let's back it up:
-
-- `git add --all`
-- `git commit -m "Offset circles in geometric_pattern"`
-- `git push`
+Be sure to **Run** your code to see your updated website!
 
 ### Reversing Direction
 
@@ -487,11 +465,7 @@ If your page has frozen, you've probably introduced an infinite loop. Refresh yo
 
 Save to see the changes!
 
-Now that we've done more work, let's commit again:
-
-- `git add --all`
-- `git commit -m "Reverse direction of circles in geometric_pattern"`
-- `git push`
+**Run** your repl once again now that we've done some more work.
 
 ## Part IV: Adding Color
 
@@ -580,19 +554,14 @@ stroke(color(rVal,gVal,bVal));
 
 Now, save and see the gradient effect you've applied throughout the pattern! Yay!
 
-We've got another feature done, so let's commit again:
-
-- `git add --all`
-- `git commit -m "Add colors to geometric_pattern."`
-- `git push`
-
+We've got another feature done, so let's **Run** again
 ## Part V: Publishing and Sharing
 
 ### Downloading Your Masterpiece
 
 You can actually download the this cool pattern to your computer, to use as a desktop background or what have you. p5.js provides a function [`saveCanvas()`](https://p5js.org/reference/#p5/saveCanvas) to download the canvas.
 
-We can attach this function to a key press by using p5's `keyPressed` function. Add this at the bottom of your `main.js`:
+We can attach this function to a key press by using p5's `keyPressed` function. Add this at the bottom of your `index.js`:
 
 ```js
 function keyPressed() {
@@ -607,15 +576,11 @@ This code says that if the user presses a key with the `keyCode` 115 or 83 (whic
 
 The `return false;` at the end of the function tells the browser to ignore any default behavior that might be associated with the pressed key (ex. if you press <kbd>enter</kbd>, the browser thinks that you're trying to submit a form by default -- this prevents that).
 
-Now let's commit these changes:
-
-- `git add --all`
-- `git commit -m "Add save keybinding to geometric_pattern"`
-- `git push`
+Now let's **Run** the repl once again
 
 ### Making It Live
 
-Congratulations! Ever since your first commit, your pattern has been online at `USERNAME.github.io/geometric_pattern/` (replace `USERNAME` with your own GitHub username!).
+Congratulations! Your website is live at your repl's url and is looking dang fantastic!
 
 ## Part VI: Animate It
 
@@ -682,7 +647,7 @@ rVal = (rVal + 254) % 256;
 
 Save and refresh and be warned that it might be jarring.
 
-As a check, your `main.js` should look like this:
+As a check, your `index.js` should look like this:
 
 Final code:
 
@@ -741,12 +706,6 @@ function draw() {
 ```
 
 ![](img/sample2.gif)
-
-Let's commit this new feature!
-
-- `git add --all`
-- `git commit -m "Added jarring animation to geometric_pattern"`
-- `git push`
 
 ## Part VII: Hacking
 
