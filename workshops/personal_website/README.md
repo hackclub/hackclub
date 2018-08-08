@@ -36,13 +36,15 @@ This workshop should take around 45 minutes.
 
 [Repl.it](https://repl.it) is an online [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) with support for 40+ languages as well as frameworks and we'll be using it to make our website!
 
-To create an account, all you need to do is [sign up](https://repl.it/signup) and verify your email (you should receive an email from Repl.it with a link). From there, you're ready to get going.
+To create an account, all you need to do is [sign up](https://repl.it/signup) and click on the link they send via email.
+
+INSERT PICTURE (VERIFICATION EMAIL)
 
 Since we're going to be making a website using HTML and CSS, let's create an [HTML repl](https://repl.it/languages/html).
 
 INSERT PICTURE (FRE$H HTML REPL)
 
-_**Important note: You need to be logged in order to save your website!**_
+_**Important note: You need an account in order to save your website!**_
 
 ## Part II: The HTML File
 
@@ -74,12 +76,14 @@ Before proceeding, we'll briefly go over what this template means. HTML works by
 
 ### 2) Previewing the Page
 
-Let's check out what our HTML file looks like in Live Preview! To do this, click on the **Run** button above the editor or press <kbd>Ctrl+Enter</kbd> (or <kbd>Command+Enter</kbd> for Mac)
+Let's check out what our HTML file looks like in Live Preview! To do this, click on the **Run** button above the editor or press <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>Enter</kbd>
 
+TODO: TAKE BETTER SCREENSHOT (Perhaps with only the run button and now editor visible?)
 ![](img/run.png)
 
 From there, the live preview to the right of the editor should show what your website looks like. If you want to view it in a new tab, the URL above the website preview is the live URL for your website
 
+TODO: TAKE BETTER SCREENSHOT (Perhaps with prophetorpheus account?)
 ![](img/url.png)
 
 You can also open the external live preview by clicking the icon that looks like a box with an arrow. This will open live preview in a new tab at the aforementioned URL
