@@ -38,11 +38,9 @@ This workshop should take around 45 minutes.
 
 To create an account, all you need to do is [sign up](https://repl.it/signup) and click on the link they send via email.
 
-INSERT PICTURE (VERIFICATION EMAIL)
+![](img/email.png)
 
 Since we're going to be making a website using HTML and CSS, let's create an [HTML repl](https://repl.it/languages/html).
-
-INSERT PICTURE (FRE$H HTML REPL)
 
 _**Important note: You need an account in order to save your website!**_
 
