@@ -34,15 +34,15 @@ This workshop should take around 45 minutes.
 
 ### Getting ready to repl it on Repl.it
 
-If you already have a Repl.it account, go ahead and spin up an [HTML repl](https://repl.it/languages/html) then move on to [Part II](#part-ii-the-html-file)
+[Repl.it](https://repl.it) is an online [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) with support for 40+ languages as well as frameworks and we'll be using it to make our website!
 
-[Repl.it](https://repl.it) is an online [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) with support for 40+ languages as well as frameworks and we'll be using it to host our website.
-
-To create an account, all you need to do is [sign up](https://repl.it/signup) and verify your email. From there, you're ready to get going!
+To create an account, all you need to do is [sign up](https://repl.it/signup) and verify your email (you should receive an email from Repl.it with a link). From there, you're ready to get going.
 
 Since we're going to be making a website using HTML and CSS, let's create an [HTML repl](https://repl.it/languages/html).
 
-Now we're ready to start the website!
+INSERT PICTURE (FRE$H HTML REPL)
+
+_**Important note: You need to be logged in order to save your website!**_
 
 ## Part II: The HTML File
 
