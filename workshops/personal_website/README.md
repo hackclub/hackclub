@@ -1,7 +1,7 @@
 ---
 name: Personal Website
 description: Making your first website from scratch
-author: Hack Club staff + Yev
+author: Hack Club staff + @yevbar
 group: start
 order: 1
 ---
