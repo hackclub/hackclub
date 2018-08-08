@@ -76,12 +76,10 @@ Before proceeding, we'll briefly go over what this template means. HTML works by
 
 Let's check out what our HTML file looks like in Live Preview! To do this, click on the **Run** button above the editor or press <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>Enter</kbd>
 
-TODO: TAKE BETTER SCREENSHOT (Perhaps with only the run button and now editor visible?)
 ![](img/run.png)
 
 From there, the live preview to the right of the editor should show what your website looks like. If you want to view it in a new tab, the URL above the website preview is the live URL for your website
 
-TODO: TAKE BETTER SCREENSHOT (Perhaps with prophetorpheus account?)
 ![](img/url.png)
 
 You can also open the external live preview by clicking the icon that looks like a box with an arrow. This will open live preview in a new tab at the aforementioned URL
