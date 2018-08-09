@@ -79,13 +79,13 @@ There! Now our HTML file knows that it should grab the `index.js` file.
 
 For this workshop, we'll be using the handy library called jQuery inside our `index.js`. jQuery is a collection of functions and JavaScript code written to make writing JavaScript for the browser much easier. It provides a cleaner and simpler way to make things happen, almost like shortcuts.
 
-We'll let the browser know that we'll be using jQuery by once again using a `<script>` tag. jQuery can be found at [this URL](https://code.jquery.com/jquery-2.2.3.min.js), so that's what we will put as the value for `src`.
+We'll let the browser know that we'll be using jQuery by once again using a `<script>` tag. jQuery can be found at [this URL](https://code.jquery.com/jquery-3.3.1.min.js), so that's what we will put as the value for `src`.
 
 Since we will be using jQuery in `index.js`, `index.js` will be reliant on jQuery. Thus, we will put the script tag containing jQuery **above** the one containing `index.js` in the **body** of `index.html` in order to load jQuery before loading `index.js` like so:
 
 ```html
 <body>
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="index.js"></script>
 </body>
 ```
@@ -99,7 +99,7 @@ Now we have successfully hooked up the JavaScript to the HTML. Our `index.html` 
     <title>That Was Easy</title>
   </head>
   <body>
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
@@ -126,7 +126,7 @@ Lastly, we'll add our `index.css` to the HTML file. Add it to the **head** of `i
     <link href="index.css" rel="stylesheet">
   </head>
   <body>
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
@@ -144,7 +144,7 @@ We use the button tag by typing the text we want on the button between the start
 <body>
   <button>Easy</button>
 
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="index.js"></script>
 </body>
 ```
@@ -165,7 +165,7 @@ Now `index.html` looks like this:
   <body>
     <button>Easy</button>
 
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
@@ -193,7 +193,7 @@ Our HTML now looks like this:
   <body>
     <button id="easy">Easy</button>
 
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
