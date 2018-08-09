@@ -1,7 +1,7 @@
 ---
 name: That Was Easy
 description: Website with clickable buttons that make sounds
-author: "@jkwok91 + Yev"
+author: "@jkwok91 + @yevbar"
 group: start
 order: 2
 ---
