@@ -303,8 +303,6 @@ These are some additional resources that you can use to make your site even bett
 - [Free Code Camp](http://www.freecodecamp.com/map): _Interactive and very methodical._
 - [Treehouse](https://teamtreehouse.com/library/html/introduction/): _Their videos are extremely comprehensive and thorough._
 
-<!-- I'd like to thank Latta Lattes for carrying me through the rewriting of this tutorial - Yev -->
-
 ## Part VI: Sharing with the Community
 
 Now that you have finished building a website, you should share your beautiful creation --- because your site is on the internet, you can share it with anyone who is also online! Remember, it's as easy as giving them your URL!
