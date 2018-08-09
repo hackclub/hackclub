@@ -234,10 +234,6 @@ body {
 }
 ```
 
-Here is the transformation that your stylesheet will have undergone at the end of your endeavors:
-
-![](img/complete_css.png)
-
 You can take this even further by adding a bit of color to the page! The attribute `color` **(spelled without a u)** allows you to set the text color, and `background-color` allows you to set a background color. You can find a list of supported color names over at [W3Schools](https://www.w3schools.com/colors/colors_names.asp). Keep in mind that it's a good idea to pick a combination of colors will keep the text readable.
 
 ```css
@@ -249,7 +245,7 @@ body {
 }
 ```
 
-Now be sure to **Run** if you haven't already so that the URL gives the most recent version of your website. Ah, it is truly beautiful to behold.
+Now be sure to **Run** to get the most recent version of your website. Ah, it is truly beautiful to behold.
 
 ![](img/celebrate_harry_potter.gif)
 
