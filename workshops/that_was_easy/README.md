@@ -65,7 +65,7 @@ Go ahead an **Run** your repl; you should just see a blank page in the preview.
 
 ### Adding `index.js` to the HTML File
 
-Now we must connect the two files. Since HTML file depends on JavaScript file to make our button play sounds, we must include a reference to the JavaScript file within the HTML file. We can do this by using an HTML tag called the script tag (`<script>`), which is how JavaScript files are included in HTML files.
+As you can see in the pane on the left (called a filetree) we have an `index.js` file. Since HTML depends on JavaScript to make our button play sounds, we must include a reference to the JavaScript file within the HTML file. We can do this by using an HTML tag called the script tag (`<script>`), which is how JavaScript files are included in HTML files.
 
 The script tag has an attribute called source (`src`), which is where we will fill in the URL to the JavaScript file we want to include.
 
