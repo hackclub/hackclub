@@ -59,7 +59,7 @@ From there, clear the contents of `index.html` and paste in the following
 </html>
 ```
 
-Similar to our HTML file in the [Personal Website workshop](/workshops/personal_website), we have a bare template upon which we will build interactions for the user. As you can see, we've named this page "That Was Easy" using the title (`<title>`) tag.
+Similar to our HTML file in the Personal Website workshop, we have a bare template upon which we will build interactions for the user. As you can see, we've named this page "That Was Easy" using the title (`<title>`) tag.
 
 Go ahead an **Run** your repl; you should just see a blank page in the preview.
 
