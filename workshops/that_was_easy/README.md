@@ -59,13 +59,13 @@ From there, clear the contents of `index.html` and paste in the following
 </html>
 ```
 
-Similar to our HTML file in the Personal Website workshop, we've created a bare template upon which we will build interactions for the user. As you can see, we've named this page "That Was Easy" using the title (`<title>`) tag.
+Similar to our HTML file in the [Personal Website workshop](/workshops/personal_website), we have a bare template upon which we will build interactions for the user. As you can see, we've named this page "That Was Easy" using the title (`<title>`) tag.
 
 Go ahead an **Run** your repl; you should just see a blank page in the preview.
 
 ### Adding `index.js` to the HTML File
 
-As you can see in the pane on the left (called a filetree) we have an `index.js` file. Since HTML depends on JavaScript to make our button play sounds, we must include a reference to the JavaScript file within the HTML file. We can do this by using an HTML tag called the script tag (`<script>`), which is how JavaScript files are included in HTML files.
+As you can see in the pane on the left (called a file tree) we have an `index.js` file. Since HTML depends on JavaScript to make our button play sounds, we must include a reference to the JavaScript file within the HTML file. We can do this by using an HTML tag called the script tag (`<script>`), which is how JavaScript files are included in HTML files.
 
 The script tag has an attribute called source (`src`), which is where we will fill in the URL to the JavaScript file we want to include.
 
@@ -217,6 +217,12 @@ We'll be storing the Audio object in a variable. A variable in JavaScript is som
 
 ```js
 var thatWasEasy;
+```
+
+Go ahead and download our "That was easy" audio from the link below
+
+```
+https://easy--prophetorpheus.repl.co/that_was_easy.mp3
 ```
 
 Next, we'll make a new Audio object with the `that_was_easy.mp3`, and assign it to our variable, by modifying the line we just added:
