@@ -158,7 +158,7 @@ CSS:
 }
 ```
 
-This means that for every element with the class of "example", it will have a background image of Kanye West. 
+This means that for every element with the class of "example", it will have a background image of Kanye West.
 
 Here is a preview of what that does: https://preview.c9users.io/jevinsidhu/cringe-101/index.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io
 
@@ -257,7 +257,7 @@ body {
 
 Tip — Along with changing the fonts, change the colors (`color`) and thickness (`font-weight`) of the different text as well to see your friends cringe even more!
 
-![](http://i.imgur.com/Ahl9pXr.gif)
+![](https://i.imgur.com/Ahl9pXr.gif)
 
 ## Pseudo - Classes
 
@@ -303,14 +303,14 @@ You'll need to upload your sound file directly to C9 if you can't find it hosted
 
 Just follow the either method below to upload your file to C9.
 
-![](http://i.imgur.com/TeXlg3h.gif)
+![](https://i.imgur.com/TeXlg3h.gif)
 
 1. Drag and drop your file onto the folder tree you want to upload it under
   - It should highlight the folder green when you hover over it and when you let go, it should start uploading.
 
 **Alternate Method**
 
-![](http://i.imgur.com/TwtpqXB.gif)
+![](https://i.imgur.com/TwtpqXB.gif)
 
 1. Look at the top bar of your workspace and select "File".
 2. Mouse over the drop down list that pops up and hit "Upload Local Files...".
@@ -340,7 +340,7 @@ Here's a list of the unique attributes that `<audio>` tags can accept exclusivel
 - `controls:` Creates a play bar with a play/pause button, sliding bar, and a volume control
 - `loop:` Loops the audio again once it's finished.
 - `muted:` Mutes the audio output. (doesn't stop the audio from playing, it just has no volume).
-- `preload="":` 
+- `preload="":`
   - `auto:` load the audio file after the page loads.
   - `metadata:` only load the metadata (extra info like author, etc that is stored within the file) when the page loads.
   - `none:` doesn't load the audio file when the page loads.
@@ -365,7 +365,7 @@ This tag also has its own set of attributes like `<audio>` also it's **self-clos
 
 - Points to the location of the media file
 - File can be hosted on another website
-- must end in a supported file extension 
+- must end in a supported file extension
 - Alternatively, hosted directly where the website is
 - e.g "thiswebsite.com/hotlinebling.mp3" another example:
 
