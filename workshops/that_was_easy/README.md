@@ -22,7 +22,7 @@ Hey there! Today we're gonna build a replica of the Staples Easy Button that'll 
 
 <img src="img/clicking_button.gif" width="130" align="right">
 
-Just like in [Personal Website](/workshops/personal_website/), we'll be using HTML to build stuff for your browser.
+Just like in Personal Website, we'll be using HTML to build stuff for your browser.
 
 On top of that, we'll be introducing JavaScript, a new programming language that'll let us do a bunch of neat-o things on the site, like play sounds in your browser. We'll also using a piece of software with JavaScript called jQuery that makes writing JavaScript much easier.
 
