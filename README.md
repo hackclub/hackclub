@@ -55,7 +55,7 @@ You can also change the size or placement of your banner by editing the CSS in t
 | Resource      | Link                                               |
 | ------------- | -------------------------------------------------- |
 | File an issue | https://github.com/hackclub/hackclub/issues        |
-| Blog          | https://blog.hackclub.com/                         |
+| Blog          | https://medium.com/hackclub                        |
 | Facebook      | https://www.facebook.com/Hack-Club-741805665870458 |
 | Twitter       | https://twitter.com/hackclub                       |
 
