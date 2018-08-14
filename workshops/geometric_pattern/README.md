@@ -138,7 +138,7 @@ p5.js stores the width of the canvas in a variable named [`width`](http://p5js.o
 
 p5.js makes drawing ellipses and circles easy with the function [`ellipse()`](http://p5js.org/reference/#p5/ellipse).
 
-vnLet's see the `ellipse()` function in action by drawing a circle in the middle of the screen:
+Let's see the `ellipse()` function in action by drawing a circle in the middle of the screen:
 
 ```js
 function draw() {
@@ -146,7 +146,7 @@ function draw() {
 }
 ```
 
-**Run** to see the udpated website. It might also be helpful to open up the external preview:
+**Run** to see the updated website. It might also be helpful to open up the external preview:
 
 ![](img/preview.gif)
 
@@ -579,7 +579,7 @@ Now let's **Run** the repl once again
 
 ### Making It Live
 
-Congratulations! Your website is live at your repl's url and is looking dang fantastic!
+Congratulations! Your website is live at your URL and is looking dang fantastic!
 
 ## Part V: Animate It
 
