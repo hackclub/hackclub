@@ -36,13 +36,13 @@ This workshop should take around 45 minutes.
 
 [Repl.it](https://repl.it) is an online [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) with support for 40+ languages as well as frameworks and we'll be using it to make our website!
 
-To create an account, all you need to do is [sign up](https://repl.it/signup) and click on the link they send via email.
+To get started go to [Repl.it](https://repl.it) and type in "html"
 
-![](img/email.png)
+> ![](img/html_repl.gif)
 
-Since we're going to be making a website using HTML and CSS, let's create an [HTML repl](https://repl.it/languages/html).
+Press <kbd>Enter</kbd> once you've done so and you should have your environment spin up in just a few seconds!
 
-_**Important note: You need an account in order to save your website!**_
+![](img/new_repl.png)
 
 ## Part II: The HTML File
 
@@ -50,19 +50,19 @@ _**Important note: You need an account in order to save your website!**_
 
 HTML stands for Hypertext Markup Language. Every website from the New York Times to Twitch uses HTML to display content on the web.
 
-The file you're currently looking at is our `index.html` file and you can tell we're looking at HTML because of all the angle brackets.
+You should have the `index.html` file open and you can tell we're looking at HTML because of all the angle brackets.
 
 ![](img/html_repl.png)
 
-Go ahead and delete everything in `index.html` then paste in the following code
+Go ahead and delete everything in the `index.html` file then paste in the following code
 
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-    </body>
+  <head>
+  </head>
+  <body>
+  </body>
 </html>
 ```
 
@@ -70,7 +70,11 @@ This structure is common to all HTML pages. In fact, you can take a look for you
 
 ![](img/inspect.png)
 
-Before proceeding, we'll briefly go over what this template means. HTML works by storing information inside tags. `<html></html>` is an example of one such tag. Inside `<html></html>`, we've placed two other sets of tags: `<head></head>` (which wraps around the "head") and `<body></body>` (which wraps around the "body"). The body holds everything you would see in the actual tab/window when you open the page, while the head conveys information about the page to the browser. `<!DOCTYPE html>` tells the browser what version of HTML to expect. Since it is a language, HTML is constantly growing and updating, so there are multiple versions. In our case, we are going to use HTML5, the latest version.
+Before proceeding, we'll briefly go over what this template means. 
+
+HTML works by storing information inside tags. `<html></html>` is an example of one such tag. Inside `<html></html>`, we've placed two other sets of tags: `<head></head>` (which wraps around the "head") and `<body></body>` (which wraps around the "body"). The body holds everything you would see in the actual tab/window when you open the page, while the head conveys information about the page to the browser. 
+
+`<!DOCTYPE html>` tells the browser what version of HTML to expect. Since it is a language, HTML is constantly growing and updating, so there are multiple versions. In our case, we are going to use HTML5, the latest version.
 
 ### 2) Previewing the Page
 
@@ -84,7 +88,7 @@ From there, the live preview to the right of the editor should show what your we
 
 You can also open the external live preview by clicking the icon that looks like a box with an arrow. This will open live preview in a new tab at the aforementioned URL
 
-![](img/preview.png)
+![](img/preview.gif)
 
 As you can see, the page is blank. This is because we haven't added anything to the `body` section yet. Let's add some content!
 
@@ -122,7 +126,7 @@ If your description was a few paragraphs, or had line breaks, you may have notic
 </html>
 ```
 
-Save your `index.html` and refresh the Live Preview. Yay!
+Run your `index.html` and refresh the Live Preview. Yay!
 
 ### 4) Adding Images to the Body
 
@@ -141,14 +145,14 @@ Go ahead and add this into your `index.html` now. I put my picture before my hea
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-        <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
-        <h1>Prophet Orpheus</h1>
-        <p>Coder Dino</p>
-        <p>Will code for food</p>
-    </body>
+  <head>
+  </head>
+  <body>
+    <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
+    <h1>Prophet Orpheus</h1>
+    <p>Coder Dino</p>
+    <p>Will code for food</p>
+  </body>
 </html>
 ```
 
@@ -183,15 +187,15 @@ Our HTML file now looks like so:
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css"/>
-    </head>
-    <body>
-        <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
-        <h1>Prophet Orpheus</h1>
-        <p>Coder Dino</p>
-        <p>Will code for food</p>
-    </body>
+  <head>
+    <link rel="stylesheet" href="index.css"/>
+  </head>
+  <body>
+    <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
+    <h1>Prophet Orpheus</h1>
+    <p>Coder Dino</p>
+    <p>Will code for food</p>
+  </body>
 </html>
 ```
 
@@ -205,7 +209,7 @@ Open up `index.css` and type the following:
 
 ```css
 img {
-    width: 200px;
+  width: 200px;
 }
 ```
 
@@ -219,7 +223,7 @@ We'll add
 
 ```css
 body {
-    text-align: center;
+  text-align: center;
 }
 ```
 
@@ -229,8 +233,8 @@ Now let's change the font of our text. We'll add another attribute, `font-family
 
 ```css
 body {
-    text-align: center;
-    font-family: "Arial";
+  text-align: center;
+  font-family: "Arial";
 }
 ```
 
@@ -238,10 +242,10 @@ You can take this even further by adding a bit of color to the page! The attribu
 
 ```css
 body {
-    text-align: center;
-    font-family: "Arial";
-    background: azure;
-    color: purple;
+  text-align: center;
+  font-family: "Arial";
+  background: azure;
+  color: purple;
 }
 ```
 
@@ -251,17 +255,25 @@ Now be sure to **Run** to get the most recent version of your website. Ah, it is
 
 ## Part IV: Publishing
 
-This whole time, you probably had a funky URL that came out of some alphabet soup but you can change that by clicking on the arrow icon next to the name of your repl
+To actually save your website and be able to come back to it in the future you'll need to create an account on Repl.it.
+
+To create an account, all you need to do is [sign up](https://repl.it/signup) and click on the link they send by email.
+
+![](img/email.png)
+
+Once you're logged into your account, you can now edit the name of your repl!
 
 ![](img/edit_name.png)
 
 Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes (or <kbd>Escape</kbd> to cancel your name change)
 
+Your new URL should be REPL_NAME--USERNAME.repl.co (that's two dashes before the username)
+
 #### Celebrate!
 
 ![](img/celebrate_rush_hour.gif)
 
-Yes! Your website is fantastic **AND** public on the internet!
+Yes! Your website is fantastic **AND** out on the internet!
 
 ## Part V: Hacking
 
