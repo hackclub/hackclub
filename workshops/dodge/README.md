@@ -41,7 +41,7 @@ Just as we've done previously, we're going to be building this project in Repl.i
 
 Go ahead and spin up an [HTML/CSS/JS Repl](https://repl.it/languages/html) before continuing.
 
-INSERT PICTURE HERE (FRE$H HTML REPL)
+![](img/fresh.png)
 
 Our project's code is going to be divided into two files: `index.html` (the HTML code) and `index.js` (the JavaScript code). The HTML file will tell the browser about the game's existence and how to display it on the page. The JavaScript file will tell the browser how to actually run the game.
 
@@ -578,7 +578,7 @@ function setup() {
 }
 ```
 
-##### Customizing the Player and the Enemy
+#### Customizing the Player and the Enemy
 
 Let's start by making some variables to hold our player image and our enemy image. Create these right below where we declared our `player` and `enemy` variables at the top of the file.
 
@@ -663,7 +663,7 @@ if(keyDown(LEFT_ARROW) && player.position.x > (playerImage.width/2)){
 
 Always code defensively!
 
-##### Customizing the Background
+#### Customizing the Background
 
 And, finally, for the background. Go ahead and declare a new variable, `backgroundImage`, at the top of the file and load an image into it in `preload()`.
 
@@ -718,7 +718,7 @@ Feel free to customize the enemy's rotation speed to make it faster/slower!
 
 You're done, yay! The game you made is live at the url above the preview in the editor:
 
-INSERT PICTURE (url to repl's page)
+![](img/preview.gif)
 
 Don't forget to share a link to your beautiful creation on the Slack on the [`#shipit`](https://hackclub.slack.com/messages/shipit) channel!
 
