@@ -29,12 +29,11 @@ We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
 **Table of Contents:**
 
 - [Part I: Set-up](#part-i-set-up)
-- [Part II: Priming the Files](#part-ii-priming-the-files)
-- [Part III: Drawing on the Canvas](#part-iii-drawing-on-the-canvas)
-- [Part IV: Adding Color](#part-iv-adding-color)
-- [Part V: Publishing and Sharing](#part-v-publishing-and-sharing)
-- [Part VI: Animate It](#part-vi-animate-it)
-- [Part VII: Hacking](#part-vii-hacking)
+- [Part II: Drawing on the Canvas](#part-iii-drawing-on-the-canvas)
+- [Part III: Adding Color](#part-iv-adding-color)
+- [Part IV: Publishing and Sharing](#part-v-publishing-and-sharing)
+- [Part V: Animate It](#part-vi-animate-it)
+- [Part VI: Hacking](#part-vii-hacking)
 
 ## Part I: Set-up
 
@@ -133,7 +132,7 @@ function draw() {
 
 p5.js stores the width of the canvas in a variable named [`width`](http://p5js.org/reference/#/p5/width). By dividing the width by the number of circles, we can calculate the length of the diameter, which we'll store in `circleDiameter`.
 
-## Part III: Drawing on the Canvas
+## Part II: Drawing on the Canvas
 
 ### Drawing One Circle
 
@@ -467,7 +466,7 @@ Save to see the changes!
 
 **Run** your repl once again now that we've done some more work.
 
-## Part IV: Adding Color
+## Part III: Adding Color
 
 Black and white is nice, but how about some color? We've previously used CSS to change colors, but this is a special case -- CSS can't modify anything inside of a canvas (the container all our p5 stuff shows up in).
 
@@ -555,7 +554,7 @@ stroke(color(rVal,gVal,bVal));
 Now, save and see the gradient effect you've applied throughout the pattern! Yay!
 
 We've got another feature done, so let's **Run** again
-## Part V: Publishing and Sharing
+## Part IV: Publishing and Sharing
 
 ### Downloading Your Masterpiece
 
@@ -582,7 +581,7 @@ Now let's **Run** the repl once again
 
 Congratulations! Your website is live at your repl's url and is looking dang fantastic!
 
-## Part VI: Animate It
+## Part V: Animate It
 
 _**WARNING: THIS SECTION INVOLVES FLASHING COLORS AND IS NOT RECOMMENDED FOR THOSE WITH A HISTORY OF EPILEPSY.**_
 
@@ -707,7 +706,7 @@ function draw() {
 
 ![](img/sample2.gif)
 
-## Part VII: Hacking
+## Part VI: Hacking
 
 Ideas:
 
