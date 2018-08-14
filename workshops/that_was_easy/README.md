@@ -51,11 +51,11 @@ From there, clear the contents of `index.html` and paste in the following
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>That Was Easy</title>
-	</head>
-	<body>
-	</body>
+  <head>
+    <title>That Was Easy</title>
+  </head>
+  <body>
+  </body>
 </html>
 ```
 
@@ -85,8 +85,8 @@ Since we will be using jQuery in `index.js`, `index.js` will be reliant on jQuer
 
 ```html
 <body>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="index.js"></script>
 </body>
 ```
 
@@ -95,13 +95,13 @@ Now we have successfully hooked up the JavaScript to the HTML. Our `index.html` 
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>That Was Easy</title>
-	</head>
-	<body>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script src="index.js"></script>
-	</body>
+  <head>
+    <title>That Was Easy</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
 ```
 
@@ -111,8 +111,8 @@ Lastly, we'll add our `index.css` to the HTML file. Add it to the **head** of `i
 
 ```html
 <head>
-	<title>That Was Easy</title>
-	<link href="index.css" rel="stylesheet">
+  <title>That Was Easy</title>
+  <link href="index.css" rel="stylesheet">
 </head>
 ```
 
@@ -121,14 +121,14 @@ Lastly, we'll add our `index.css` to the HTML file. Add it to the **head** of `i
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>That Was Easy</title>
-		<link href="index.css" rel="stylesheet">
-	</head>
-	<body>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script src="index.js"></script>
-	</body>
+  <head>
+    <title>That Was Easy</title>
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
 ```
 
@@ -142,10 +142,10 @@ We use the button tag by typing the text we want on the button between the start
 
 ```html
 <body>
-	<button>Easy</button>
+  <button>Easy</button>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="index.js"></script>
 </body>
 ```
 
@@ -158,16 +158,16 @@ Now `index.html` looks like this:
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>That Was Easy</title>
-		<link href="index.css" rel="stylesheet">
-	</head>
-	<body>
-		<button>Easy</button>
+  <head>
+    <title>That Was Easy</title>
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+    <button>Easy</button>
 
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script src="index.js"></script>
-	</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
 ```
 
@@ -186,16 +186,16 @@ Our HTML now looks like this:
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>That Was Easy</title>
-		<link href="index.css" rel="stylesheet">
-	</head>
-	<body>
-		<button id="easy">Easy</button>
+  <head>
+    <title>That Was Easy</title>
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+    <button id="easy">Easy</button>
 
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script src="index.js"></script>
-	</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
 ```
 
@@ -260,8 +260,8 @@ We can create a function by **enclosing the code we've already written in the fo
 - thatWasEasy.play();
 
 + function sayThatWasEasy() {
-+ 	var thatWasEasy = new Audio("that_was_easy.mp3");
-+ 	thatWasEasy.play();
++   var thatWasEasy = new Audio("that_was_easy.mp3");
++   thatWasEasy.play();
 + }
 ```
 
@@ -310,8 +310,8 @@ Your JavaScript file should now look like this:
 
 ```js
 function sayThatWasEasy() {
-	var thatWasEasy = new Audio("that_was_easy.mp3");
-	thatWasEasy.play();
+  var thatWasEasy = new Audio("that_was_easy.mp3");
+  thatWasEasy.play();
 }
 
 $("#easy").on("click", sayThatWasEasy);
@@ -333,8 +333,8 @@ And now let's make it bigger. A lot bigger.
 
 ```css
 #easy {
-	width: 300px;
-	height: 300px;
+  width: 300px;
+  height: 300px;
 }
 ```
 
@@ -342,9 +342,9 @@ Looking good so far. Let's change the shape:
 
 ```css
 #easy {
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
 }
 ```
 
@@ -352,11 +352,11 @@ Next, we'll set the border color to be black and the background color to red:
 
 ```css
 #easy {
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	border-color: black;
-	background-color: red;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  border-color: black;
+  background-color: red;
 }
 ```
 
@@ -364,13 +364,13 @@ Finally, we'll increase the text size and change the text color to white:
 
 ```css
 #easy {
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	border-color: black;
-	background-color: red;
-	font-size: 50px;
-	color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  border-color: black;
+  background-color: red;
+  font-size: 50px;
+  color: white;
 }
 ```
 
@@ -425,10 +425,10 @@ So, if the character code is indeed 32, I would like the browser to tell me "Tha
 
 ```js
 function delegateKeypress(event) {
-	if (event.charCode == 32) {
-		var thatWasEasy = new Audio("that_was_easy.mp3");
-		thatWasEasy.play();
-	}
+  if (event.charCode == 32) {
+    var thatWasEasy = new Audio("that_was_easy.mp3");
+    thatWasEasy.play();
+  }
 }
 ```
 
@@ -444,11 +444,11 @@ That said, we can now replace our repetitive code like so:
 
 ```diff
 function delegateKeypress(event) {
-	if (event.charCode == 32) {
-- 		var thatWasEasy = new Audio("that_was_easy.mp3");
--		thatWasEasy.play();
-+		$("#easy").trigger("click");
-	}
+  if (event.charCode == 32) {
+-   var thatWasEasy = new Audio("that_was_easy.mp3");
+-   thatWasEasy.play();
++   $("#easy").trigger("click");
+  }
 }
 ```
 
@@ -460,8 +460,8 @@ Our JavaScript file now looks like this:
 
 ```js
 function sayThatWasEasy() {
-	var thatWasEasy = new Audio("that_was_easy.mp3");
-	thatWasEasy.play();
+  var thatWasEasy = new Audio("that_was_easy.mp3");
+  thatWasEasy.play();
 }
 
 $("#easy").on("click", sayThatWasEasy);
@@ -469,9 +469,9 @@ $("#easy").on("click", sayThatWasEasy);
 $(document).keypress(delegateKeypress);
 
 function delegateKeypress(event) {
-	if (event.charCode == 32) {
-		$("#easy").trigger("click");
-	}
+  if (event.charCode == 32) {
+    $("#easy").trigger("click");
+  }
 }
 ```
 
