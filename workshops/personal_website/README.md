@@ -36,7 +36,7 @@ This workshop should take around 45 minutes.
 
 [Repl.it](https://repl.it) is an online [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) with support for 40+ languages as well as frameworks and we'll be using it to make our website!
 
-To get started go to [Repl.it](https://repl.it) and type in "html"
+To get started go to [Repl.it](https://repl.it) and type in "HTML"
 
 > ![](img/html_repl.gif)
 
