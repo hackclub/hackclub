@@ -149,7 +149,7 @@ function draw() {
 
 **Run** to see the udpated website. It might also be helpful to open up the external preview:
 
-![](img/preview.png)
+![](img/preview.gif)
 
 In this example, the first two arguments we pass to the ellipse function are the x and y coordinates of the center of the ellipse. We've passed in `width/2` and `height/2`, respectively, which means the center of the ellipse will also be the center of the canvas. The latter two arguments are the x-width and y-width of the ellipse. Since we want to draw a circle, we're passing the same value for both.
 
@@ -169,15 +169,13 @@ function draw() {
 }
 ```
 
-INSERT PICTURE (4.5 visible circles on the screen)
-# https://repl.it/@prophetorpheus/BlackSatisfiedAbstractions
+![](img/4_half_circles.png)
 
 So here we've drawn 4.5 circles. Why is there a half-circle? Check out the documentation for [`ellipse()`](http://p5js.org/reference/#p5/ellipse) and see if you can figure it out.
 
 Anyway, we can draw 7.5 more, since we've made room for 12 (when we set `NUM_CIRCLES`). Keep going until it looks like this:
 
-INSERT PICTURE (12 visible circles)
-# https://repl.it/@prophetorpheus/BlackSatisfiedAbstractions-1
+![](img/12_circles.png)
 
 Great, now that we've drawn one row of circles in the middle, we have to draw the other rows. Guess we'll be writing a lot of `ellipse()` statements.
 
@@ -256,8 +254,7 @@ Using this incrementing `y` variable as our y-coordinate is how we're able to dr
 
 Go ahead and **Run** your repl to see your updated website!
 
-INSERT PICTURE (CURRENT STATE OF WEBSITE)
-# https://repl.it/@prophetorpheus/BlackSatisfiedAbstractions-2
+![](img/circle_array.png)
 
 ### Offsetting the Circles in the Y-Direction
 
