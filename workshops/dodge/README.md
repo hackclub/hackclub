@@ -716,7 +716,7 @@ Feel free to customize the enemy's rotation speed to make it faster/slower!
 
 ## Part III. Publishing and Sharing
 
-You're done, yay! The game you made is live at the url above the preview in the editor:
+You're done, yay! The game you made is live at the URL above the preview in the editor:
 
 ![](img/preview.gif)
 
