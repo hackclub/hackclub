@@ -29,11 +29,11 @@ We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
 **Table of Contents:**
 
 - [Part I: Set-up](#part-i-set-up)
-- [Part II: Drawing on the Canvas](#part-iii-drawing-on-the-canvas)
-- [Part III: Adding Color](#part-iv-adding-color)
-- [Part IV: Publishing and Sharing](#part-v-publishing-and-sharing)
-- [Part V: Animate It](#part-vi-animate-it)
-- [Part VI: Hacking](#part-vii-hacking)
+- [Part II: Drawing on the Canvas](#part-ii-drawing-on-the-canvas)
+- [Part III: Adding Color](#part-iii-adding-color)
+- [Part IV: Publishing and Sharing](#part-iv-publishing-and-sharing)
+- [Part V: Animate It](#part-v-animate-it)
+- [Part VI: Hacking](#part-vi-hacking)
 
 ## Part I: Set-up
 
