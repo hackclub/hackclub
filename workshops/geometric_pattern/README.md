@@ -554,6 +554,7 @@ stroke(color(rVal,gVal,bVal));
 Now, save and see the gradient effect you've applied throughout the pattern! Yay!
 
 We've got another feature done, so let's **Run** again
+
 ## Part IV: Publishing and Sharing
 
 ### Downloading Your Masterpiece
