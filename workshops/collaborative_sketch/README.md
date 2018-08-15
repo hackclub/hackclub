@@ -16,9 +16,9 @@ _**We recommend going through this workshop in Google Chrome.**_
 
 Links to a live demo and the final code below. This workshop should take around 1 hour.
 
-[**Live Demo**](https://prophetorpheus.github.io/collaborative_sketch)
+[**Live Demo**](https://collaborative-sketch--prophetorpheus.repl.co)
 
-[**Final Code**](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/collaborative_sketch)
+[**Final Code**](https://repl.it/@prophetorpheus/collaborative-sketch)
 
 ---
 
@@ -36,11 +36,9 @@ Draw with one or more friends! In this project we'll be combining HTML, p5.js, F
 
 ### Setting up the Files
 
-As always, we'll open up our Cloud9 workspace and make a new folder in `projects`. We'll name it `collaborative_sketch`.
+As always, we'll go to Repl.it and spin up an [HTML/CSS/JS repl](https://repl.it/languages/html)
 
-Then, we'll make two files, `index.html` and `main.js`.
-
-Next, we'll set up the `index.html` by typing the base template:
+Next, clear the contents of `index.html` and put the following in its place:
 
 ```html
 <!DOCTYPE html>
@@ -53,12 +51,12 @@ Next, we'll set up the `index.html` by typing the base template:
 </html>
 ```
 
-And we'll add script tags for Firebase, p5.js, jQuery, and our own `main.js` file within our `body`.
+And we'll add script tags for Firebase, p5.js, jQuery, and our own `index.js` file within our `body`.
 
 ```html
-<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="main.js"></script>
 ```
 
@@ -70,7 +68,7 @@ Before we can start coding, we need to sign up on the Firebase website. Go to [F
 
 Now that we're at our dashboard, we'll create our app. Let's head over to our [Firebase dashboard](https://console.firebase.google.com/) and create a new project, which we will name `collaborative-sketch`.
 
-Let's click on "Add Firebase to your web app." We'll copy _part_ of the code snippet and paste it into our `main.js`. Keep in mind your URLs and variables will be different, and that's fine!
+Let's click on "Add Firebase to your web app." We'll copy _part_ of the code snippet and paste it into our `index.js`. Keep in mind your URLs and variables will be different, and that's fine!
 
 ```js
 var config = {
@@ -82,7 +80,7 @@ var config = {
 firebase.initializeApp(config);
 ```
 
-After copying the code snippet above, head back to Firebase and select the `Auth` tab on the left-hand side. Select `SET UP SIGN-IN METHOD` from the top menu bar, and click `ADD DOMAIN`. Enter `preview.c9users.io` and click `ADD`.
+After copying the code snippet above, head back to Firebase and select the `Auth` tab on the left-hand side. Select `SET UP SIGN-IN METHOD` from the top menu bar, and click `ADD DOMAIN`. Enter `repl.co` and click `ADD`.
 
 Next, go to the `Database` tab on the left-hand side. Within the `Database` tab, we're going to select `Rules`. Here we'll set database permissions for reading and writing to `true`.
 
@@ -99,7 +97,7 @@ Click `Publish` to save your changes. You should see this warning at the top of 
 
 ![](img/firebase_warning.png)
 
-We'll now head back to our `main.js` file. Below the Firebase configuration, we'll add a variable `pointsData` that we can use to access Firebase.
+We'll now head back to our `index.js` file. Below the Firebase configuration, we'll add a variable `pointsData` that we can use to access Firebase.
 
 ```js
 firebase.initializeApp(config);
@@ -390,9 +388,9 @@ In our `index.html`, we'll create a sort of control panel, with a `div` containi
     <button id="clearDrawing">DELETE DRAWING</button>
   </div>
   
-  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="main.js"></script>
 </body>
 ```
@@ -455,7 +453,7 @@ Congratulations! Your collaborative drawing app is now complete.
 
 ## Part IV: Publishing and Sharing
 
-Make sure your files are all saved, then run the familiar git commands.
+Make sure you're logged into your Repl.it account and press **Run** with the most recent code.
 
 Share your URL to the [`#shipit`](https://hackclub.slack.com/messages/shipit/) channel on Slack, so that everyone can collaborate together!
 
@@ -465,5 +463,4 @@ You can create other collaboration-driven projects using Firebase, such as a sto
 
 **Examples:**
 
-- [Change drawing settings](http://sohuang.github.io/collab_sketch/)
 - [Draw continuous lines](https://maxwofford.com/collaborative_sketch/)
