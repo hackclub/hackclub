@@ -258,23 +258,23 @@ Now be sure to **Run** to get the most recent version of your website. Ah, it is
 
 To actually save your website and be able to come back to it in the future you'll need to create an account on Repl.it.
 
-To create an account, all you need to do is [sign up](https://repl.it/signup) and click on the link they send by email.
+To create an account, click on the sign up prompt in the top right corner.
+
+![](img/signup.png)
+
+Once you've filled out the fields (or signed up with another account), go ahead and click on the link they send you by email
 
 ![](img/email.png)
 
-Once you're logged into your account, you can now edit the name of your repl!
+Now that you have your account set up, all you need to do to change the name of your repl is click on the pencil next to it.
 
 ![](img/edit_name.png)
 
 Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes (or <kbd>Escape</kbd> to cancel your name change)
 
-Your new URL should be REPL_NAME--USERNAME.repl.co (that's two dashes before the username)
-
-#### Celebrate!
+And just like that your website is now published on the internet for all your friends to see!
 
 ![](img/celebrate_rush_hour.gif)
-
-Yes! Your website is fantastic **AND** out on the internet!
 
 ## Part V: Hacking
 
