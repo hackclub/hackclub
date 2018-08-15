@@ -50,7 +50,7 @@ code.
 1. Get the link for cloning. It is on the right side of your repository. If you
    click the little icon, the link is now on your clipboard.
 
-     > ![](http://goo.gl/BCQIQP)
+     > ![](https://goo.gl/BCQIQP)
 
 2. Go into your Cloud9 workspace and open a new terminal (Alt+T, or Window > New
    Terminal).
