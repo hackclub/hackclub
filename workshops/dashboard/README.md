@@ -1,7 +1,7 @@
 ---
 name: Dashboard
 description: Personal dashboard with news and weather
-author: "@shamdasani"
+author: "@shamdasani + @yevbar"
 group: start
 order: 7
 ---
@@ -14,9 +14,9 @@ What you'll be building:
 
 Links to a live demo and the final code below. This workshop should take around an hour.
 
-[**Live Demo**](https://prophetorpheus.github.io/dashboard/)
+[**Live Demo**](https://dashboard--prophetorpheus.repl.co)
 
-[**Final Code**](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/dashboard)
+[**Final Code**](https://https://repl.it/@prophetorpheus/dashboard)
 
 Have you heard of an API? Basically, an API, or an application program interface, is a set of protocols or routines that can help you build a software project. Often, APIs are available to use through companies that allow anyone access to their services. For example, one can make an app to search tweets with a [Twitter API](https://dev.twitter.com/docs), or one could even use the [Spotify API](https://developer.spotify.com/showcase/) to grab the latest music data. 
 
@@ -24,7 +24,7 @@ In this project, we'll be building a personal dashboard with a couple widgets th
 
 - The date
 - The weather based on the user's current location
-- Latest news from https://news.google.com
+- The latest news
 
 We'll be using the [Dark Sky API](https://darksky.net/dev/) for the weather, and the [News API](https://newsapi.org/) to fetch the latest news. 
 
@@ -52,7 +52,7 @@ Once again, keep your API key handy to use in our JavaScript functions.
 
 ## Part II: The markup
 
-We'll be keeping our markup really simple. Along with our basic tags, we'll be importing the normalize CSS library and our `style.css` stylesheet, adding three `id`s for our date, weather, and news. Lastly, we'll need to link up jQuery and the `app.js` file where we will write our functions. 
+We'll be keeping our markup really simple. Along with our basic tags, we'll be importing the normalize CSS library and our `index.css` stylesheet, adding three `id`s for our date, weather, and news. Lastly, we'll need to link up jQuery and the `index.js` file where we will write our functions. 
 
 ```html
 <!DOCTYPE html>
@@ -64,7 +64,7 @@ We'll be keeping our markup really simple. Along with our basic tags, we'll be i
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
   </head>
 
   <body>
@@ -84,12 +84,12 @@ We'll be keeping our markup really simple. Along with our basic tags, we'll be i
         src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
 ```
 
-Take a look at the [Personal Website](https://workshops.hackclub.com/personal_website/) workshop to learn more about basic HTML markup, if you haven't already.
+Take a look at the [Personal Website](./personal_website/) workshop to learn more about basic HTML markup, if you haven't already.
 
 ## Part III: The functions
 
@@ -116,7 +116,6 @@ function loadWeather() {
   var weather = $("#weather");
   var url = "https://api.forecast.io/forecast/"; // Dark Sky API url
   var apiKey = "YOUR API KEY"; // API key from Dark Sky
-
 }
 ```
 
@@ -243,7 +242,7 @@ function loadNews() {
 }
 ```
 
-Lastly, before we close out of our `app.js` file, make sure to call all your functions! 
+Lastly, before we close out of our `index.js` file, make sure to call all your functions! 
 
 ```js
 loadDate();
@@ -253,7 +252,7 @@ loadNews();
 
 ## Part IV: Some styling
 
-We still have one last step: we need to make our dashboard look decent! Open up your `style.css` and let's get to work!
+We still have one last step: we need to make our dashboard look decent! Open up your `index.css` and let's get to work!
 
 First off, let's center the whole HTML app using `margin: 0 auto;` and `max-width`. We'll also change up our `font-family`. 
 
@@ -297,7 +296,7 @@ Feel free to change up the styles to your liking!
 
 ## Part V: Publishing, sharing, and improving
 
-To publish this project, run your familiar git commands to get it up on GitHub Pages! Make sure you head over to 'https://[username].github.io/[repo-of-project]' to view your creation!
+To conclude this project, be sure to press **Run** so that the URL gives the most recent website. Now you're excellent to share your dashboard at `https://REPL_NAME--USERNAME.repl.co`
 
 Then, make sure to share your project using the `#shipit` channel on Slack!
 
