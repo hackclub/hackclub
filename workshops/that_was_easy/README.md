@@ -1,20 +1,20 @@
 ---
 name: That Was Easy
 description: Website with clickable buttons that make sounds
-author: "@jkwok91"
+author: "@jkwok91 + @yevbar"
 group: start
 order: 2
 ---
 
 # That Was Easy Workshop
 
-![](img/easy_screenshot.png)
+![](img/final.png)
 
 Links to a live demo and the final code below. This workshop should take around 1 hour.
 
-[**Live Demo**](https://prophetorpheus.github.io/that_was_easy)
+[**Live Demo**](https://easy--prophetorpheus.repl.co)
 
-[**Final Code**](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/that_was_easy)
+[**Final Code**](https://repl.it/@prophetorpheus/easy)
 
 ---
 
@@ -22,7 +22,7 @@ Hey there! Today we're gonna build a replica of the Staples Easy Button that'll 
 
 <img src="img/clicking_button.gif" width="130" align="right">
 
-Just like in [Personal Website](../personal_website/), we'll be using HTML to build stuff for your browser.
+Just like in Personal Website, we'll be using HTML to build stuff for your browser.
 
 On top of that, we'll be introducing JavaScript, a new programming language that'll let us do a bunch of neat-o things on the site, like play sounds in your browser. We'll also using a piece of software with JavaScript called jQuery that makes writing JavaScript much easier.
 
@@ -34,65 +34,59 @@ If this feels like an exorbitant amount of new tools -- you're absolutely right.
 - [Part II: The HTML File](#part-ii-the-html-file)
 - [Part III: The JavaScript File](#part-iii-the-javascript-file)
 - [Part IV: The CSS File](#part-iv-the-css-file)
-- [Part V: Rejoicing](#part-v-rejoicing)
-- [Part VI: Upgrading](#part-vi-upgrading)
-- [Part VII: Publishing and Sharing](#part-vii-publishing-and-sharing)
-- [Part VIII: Hacking](#part-viii-hacking)
+- [Part V: Upgrading](#part-v-upgrading)
+- [Part VI: Publishing and Sharing](#part-vi-publishing-and-sharing)
+- [Part VII: Hacking](#part-vii-hacking)
 
 ## Part I: Set-up
 
-### Setting up Folders and Files
+### Getting ready to repl it on Repl.it
 
-1. First log into your [Cloud9](https://c9.io/login) account and go to the dashboard. Open workspace by clicking "Open" in our dashboard.
+First log into your [Repl.it](https://repl.it/login) account and start a new [HTML/CSS/JS repl](https://repl.it/languages/html)
 
-   ![](../img/c9_dashboard.png)
+![](img/html_repl.png)
 
-2. Next, we'll create a new folder for this workshop. Right-click your `projects` folder, select "New Folder," and name it `that_was_easy`.
-3. In this folder, right-click again, select "New File," and name the new file `index.html`. This is where we will be writing HTML to actually create the button.
-4. Create another file in the `that_was_easy` folder, and name this one `main.js`. This is where we will be writing our JavaScript to make the button play sounds.
-5. Create another file in the `that_was_easy` folder, and name this one `styles.css`. This is where we will be making our button look pretty.
-6. We've provided an amusing sound for you -- download the file by clicking [here](https://github.com/hackclub/hackclub/raw/master/workshops/that_was_easy/sounds/that_was_easy.mp3).
-7. Then, drag the file you've just saved into the `that_was_easy` directory in the Cloud9 sidebar.
-8. Now, open up `index.html` and type the following:
+From there, clear the contents of `index.html` and paste in the following
 
-   ```html
-   <!DOCTYPE html>
-   <html>
-     <head>
-       <title>That Was Easy</title>
-     </head>
-     <body>
-     </body>
-   </html>
-   ```
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>That Was Easy</title>
+  </head>
+  <body>
+  </body>
+</html>
+```
 
-   Similar to our HTML file in the Personal Website workshop, we've created a bare template upon which we will build interactions for the user. As you can see, we've named this page "That Was Easy" using the title (`<title>`) tag.
-9. Save your `index.html` and open up the Live Preview by selecting `Preview > Live Preview File` in the menu bar. You should see a blank page.
+Similar to our HTML file in the Personal Website workshop, we have a bare template upon which we will build interactions for the user. As you can see, we've named this page "That Was Easy" using the title (`<title>`) tag.
 
-### Adding `main.js` to the HTML File
+Go ahead an **Run** your repl; you should just see a blank page in the preview.
 
-Now we must connect the two files. Since HTML file depends on JavaScript file to make our button play sounds, we must include a reference to the JavaScript file within the HTML file. We can do this by using an HTML tag called the script tag (`<script>`), which is how JavaScript files are included in HTML files.
+### Adding `index.js` to the HTML File
+
+As you can see in the pane on the left (called a file tree) we have an `index.js` file. Since HTML depends on JavaScript to make our button play sounds, we must include a reference to the JavaScript file within the HTML file. We can do this by using an HTML tag called the script tag (`<script>`), which is how JavaScript files are included in HTML files.
 
 The script tag has an attribute called source (`src`), which is where we will fill in the URL to the JavaScript file we want to include.
 
-Let's write this line of code inside the **body** of the HTML file, to include our `main.js` file:
+Let's write this line of code inside the **body** of the HTML file, to include our `index.js` file:
 
 ```html
-<script src="main.js"></script>
+<script src="index.js"></script>
 ```
 
-There! Now our HTML file knows that it should grab the `main.js` file.
+There! Now our HTML file knows that it should grab the `index.js` file.
 
-For this workshop, we'll be using the handy library called jQuery inside our `main.js`. jQuery is a collection of functions and JavaScript code written to make writing JavaScript for the browser much easier. It provides a cleaner and simpler way to make things happen, almost like shortcuts.
+For this workshop, we'll be using the handy library called jQuery inside our `index.js`. jQuery is a collection of functions and JavaScript code written to make writing JavaScript for the browser much easier. It provides a cleaner and simpler way to make things happen, almost like shortcuts.
 
-We'll let the browser know that we'll be using jQuery by once again using a `<script>` tag. jQuery can be found at [this URL](https://code.jquery.com/jquery-2.2.3.min.js), so that's what we will put as the value for `src`.
+We'll let the browser know that we'll be using jQuery by once again using a `<script>` tag. jQuery can be found at [this URL](https://code.jquery.com/jquery-3.3.1.min.js), so that's what we will put as the value for `src`.
 
-Since we will be using jQuery in `main.js`, `main.js` will be reliant on jQuery. Thus, we will put the script tag containing jQuery **above** the one containing `main.js` in the **body** of `index.html` in order to load jQuery before loading `main.js` like so:
+Since we will be using jQuery in `index.js`, `index.js` will be reliant on jQuery. Thus, we will put the script tag containing jQuery **above** the one containing `index.js` in the **body** of `index.html` in order to load jQuery before loading `index.js` like so:
 
 ```html
 <body>
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="index.js"></script>
 </body>
 ```
 
@@ -105,20 +99,20 @@ Now we have successfully hooked up the JavaScript to the HTML. Our `index.html` 
     <title>That Was Easy</title>
   </head>
   <body>
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
 ```
 
-### Adding `styles.css` to the HTML File
+### Adding `index.css` to the HTML File
 
-Lastly, we'll add our `styles.css` to the HTML file. Add it to the **head** of `index.html` under the title, like so:
+Lastly, we'll add our `index.css` to the HTML file. Add it to the **head** of `index.html` under the title, like so:
 
 ```html
 <head>
   <title>That Was Easy</title>
-  <link href="styles.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
 </head>
 ```
 
@@ -129,11 +123,11 @@ Lastly, we'll add our `styles.css` to the HTML file. Add it to the **head** of `
 <html>
   <head>
     <title>That Was Easy</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
   </head>
   <body>
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
 ```
@@ -150,8 +144,8 @@ We use the button tag by typing the text we want on the button between the start
 <body>
   <button>Easy</button>
 
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="index.js"></script>
 </body>
 ```
 
@@ -166,13 +160,13 @@ Now `index.html` looks like this:
 <html>
   <head>
     <title>That Was Easy</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
   </head>
   <body>
     <button>Easy</button>
 
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
 ```
@@ -194,13 +188,13 @@ Our HTML now looks like this:
 <html>
   <head>
     <title>That Was Easy</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
   </head>
   <body>
     <button id="easy">Easy</button>
 
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
 ```
@@ -213,16 +207,22 @@ Now it's time to write the functionality behind our sound-playing button. We can
 - creating a function that plays the sound
 - detecting a click on the button, and executing the function when that happens
 
-Let's open up `main.js` and start writing JavaScript!
+Let's open up `index.js` and start writing JavaScript!
 
 ### Playing the Sound
 
 JavaScript makes using audio easy with the Audio object. We are going to play audio in our code by creating an Audio object for our `.mp3` file.
 
-We'll be storing the Audio object in a variable. A variable in JavaScript is something that stores a value. First, let's declare the existence of our variable by typing the following into `main.js`:
+We'll be storing the Audio object in a variable. A variable in JavaScript is something that stores a value. First, let's declare the existence of our variable by typing the following into `index.js`:
 
 ```js
 var thatWasEasy;
+```
+
+Go ahead and download our "That was easy" audio from the link below
+
+```
+https://easy--prophetorpheus.repl.co/that_was_easy.mp3
 ```
 
 Next, we'll make a new Audio object with the `that_was_easy.mp3`, and assign it to our variable, by modifying the line we just added:
@@ -243,7 +243,7 @@ thatWasEasy.play();
 
 `.play()` is a function that is a part of the Audio object, and it plays the sound.
 
-Now, if you save your `main.js` file, you'll note that upon reloading live preview, the `index.html` page now plays "That was easy!" And it was!
+Now, if you save your `index.js` file, you'll note that upon reloading live preview, the `index.html` page now plays "That was easy!" And it was!
 
 Yay! We've added audio to our webpage.
 
@@ -271,9 +271,9 @@ It's time to connect the button to our sound function.
 
 ### Detecting the Click
 
-In order to connect the button and the function, we must first identify the button in `main.js`. Conveniently, we've given the button an `id` attribute in our `index.html`, making it easy to refer to in `main.js`.
+In order to connect the button and the function, we must first identify the button in `index.js`. Conveniently, we've given the button an `id` attribute in our `index.html`, making it easy to refer to in `index.js`.
 
-We can [use jQuery to find the button](https://learn.jquery.com/using-jquery-core/selecting-elements/), by using special syntax. We'll type this below our function, in `main.js`:
+We can [use jQuery to find the button](https://learn.jquery.com/using-jquery-core/selecting-elements/), by using special syntax. We'll type this below our function, in `index.js`:
 
 ```js
 $("#easy");
@@ -304,7 +304,7 @@ To reiterate, we are:
 3. Choosing to detect the "click" event.
 4. Passing as an argument the function `sayThatWasEasy()`, to tell `.on()` that upon noticing a click, it should execute the function (which in turn plays the `that_was_easy.mp3` sound).
 
-Now, save your `main.js` file and try clicking on the "Easy" button! Congratulations!
+Now, save your `index.js` file and try clicking on the "Easy" button! Congratulations!
 
 Your JavaScript file should now look like this:
 
@@ -319,7 +319,7 @@ $("#easy").on("click", sayThatWasEasy);
 
 ## Part IV: The CSS File
 
-Our button looks a little pathetic in its small default form. Open up `styles.css` and let's spruce it up with some CSS!
+Our button looks a little pathetic in its small default form. Open up `index.css` and let's spruce it up with some CSS!
 
 First, let's select it! Using our very handy `id`:
 
@@ -376,24 +376,13 @@ Finally, we'll increase the text size and change the text color to white:
 
 It's beautiful!
 
-## Part V: Rejoicing
-
-Yay! It works! It was so easy! Now you can terrorize everyone by clicking this button on your phone's mobile browser whenever anyone does anything.
-
-Now, let's save all of our progress with git, by opening the terminal in Cloud9 and running these commands:
-
-- `git add --all`
-- `git commit -m "Create that was easy button"`
-
-It's important to save all relative milestones with git.
-
-## Part VI: Upgrading
+## Part V: Upgrading
 
 Maybe you'd like to use this button mouse-free. Maybe you prefer using the keyboard to navigate your computer. Well, we can make that happen.
 
 ### Detecting Keyboard Inputs on the Page
 
-First, we must set up our JavaScript so that the page can detect that we have pressed a key. Thanks to jQuery, we can add this feature easily, with the following line of code, which we will type at the bottom of our `main.js`:
+First, we must set up our JavaScript so that the page can detect that we have pressed a key. Thanks to jQuery, we can add this feature easily, with the following line of code, which we will type at the bottom of our `index.js`:
 
 ```js
 $(document).keypress();
@@ -456,9 +445,9 @@ That said, we can now replace our repetitive code like so:
 ```diff
 function delegateKeypress(event) {
   if (event.charCode == 32) {
-    - var thatWasEasy = new Audio("that_was_easy.mp3");
-    - thatWasEasy.play();
-    + $("#easy").trigger("click");
+-   var thatWasEasy = new Audio("that_was_easy.mp3");
+-   thatWasEasy.play();
++   $("#easy").trigger("click");
   }
 }
 ```
@@ -486,26 +475,13 @@ function delegateKeypress(event) {
 }
 ```
 
-And that's it! Save your `main.js` and try out the key binding!
+And that's it! Run the repl with your new`index.js` and try out the key binding!
 
-Then, let's save our progress with git by running the following commands in the Cloud9 terminal (`Alt+t`). Make sure you've saved all of your files on Cloud9!
-
-- `git add --all`
-- `git commit -m "Add key binding to that was easy button"`
-
-## Part VII: Publishing and Sharing
-
-Now it's time to publish your code to GitHub and your personal website.
-
-Open up the console in Cloud9 if you don't see it already, by going to `View > Console`. Then, making sure you are on the tab that has a prompt with your username and workspace, type the following git commands:
-
-- `git push`
-
-Enter your username and password, and you should be all set. This should update your personal website so that your "Easy" button can be found at `https://USERNAME.github.io/that_was_easy/`.
+## Part VI: Publishing and Sharing
 
 Post on [`#shipit`](https://hackclub.slack.com/messages/shipit) with the URL, so everyone can see and play with your amazing creation!
 
-## Part VIII: Hacking
+## Part VII: Hacking
 
 Now that you know how to add sounds to buttons, you can do many things, including but not limited to:
 
