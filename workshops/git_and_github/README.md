@@ -321,7 +321,7 @@ on their servers (https://pages.github.com/).
 
   Congrats, now you're a Git (6) God!
 
-  ![Git (6) God](http://i.imgur.com/LWvdiqA.gif)
+  ![Git (6) God](https://i.imgur.com/LWvdiqA.gif)
 
 ## Git and GitHub Pages w/o provided link
 
