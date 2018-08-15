@@ -42,7 +42,7 @@ If this feels like an exorbitant amount of new tools -- you're absolutely right.
 
 ### Getting ready to repl it on Repl.it
 
-First log into your [Repl.it](https://repl.it/login) account and start a new [HTML/CSS/JS repl](https://repl.it/languages/html)
+First let's go onto Repl.it and [start a new HTML repl](https://repl.it/languages/html)
 
 ![](img/html_repl.png)
 
@@ -59,9 +59,9 @@ From there, clear the contents of `index.html` and paste in the following
 </html>
 ```
 
-Similar to our HTML file in the Personal Website workshop, we have a bare template upon which we will build interactions for the user. As you can see, we've named this page "That Was Easy" using the title (`<title>`) tag.
+Similar to our HTML file in the [Personal Website workshop](https://hackclub.com/workshops/personal_website), we have a bare template upon which we will build interactions for the user. As you can see, we've named this page "That Was Easy" using the title (`<title>`) tag.
 
-Go ahead an **Run** your repl; you should just see a blank page in the preview.
+Go ahead and **Run** your repl; you should just see a blank page in the preview.
 
 ### Adding `index.js` to the HTML File
 
@@ -225,6 +225,10 @@ Go ahead and download our "That was easy" audio from the link below
 https://easy--prophetorpheus.repl.co/that_was_easy.mp3
 ```
 
+Once you've downloaded the audio file, click on the three dots above the file tree and select the "Upload file" option
+
+![](img/upload.png)
+
 Next, we'll make a new Audio object with the `that_was_easy.mp3`, and assign it to our variable, by modifying the line we just added:
 
 ```diff
@@ -243,13 +247,13 @@ thatWasEasy.play();
 
 `.play()` is a function that is a part of the Audio object, and it plays the sound.
 
-Now, if you save your `index.js` file, you'll note that upon reloading live preview, the `index.html` page now plays "That was easy!" And it was!
-
 Yay! We've added audio to our webpage.
+
+Now if you **Run** your repl and reload the live preview, you may get to hear your "That was easy!" audio play. If it doesn't play, no need to fret, adding the button click will make it work :)
 
 ### Creating Functions
 
-If we save our file and let the live preview reload, we hear "That was easy!". But we don't want this. We want the sound to play, but only at our command.
+Right now the Audio play function gets triggered whenever a user loads the page. But we don't want this. We want the sound to play at our command.
 
 To have a little more control over this, let's create a function that will play the sound only when we call the function. A function in JavaScript stores a set of instructions in a variable. We can call the function to execute these instructions whenever we want.
 
@@ -265,7 +269,7 @@ We can create a function by **enclosing the code we've already written in the fo
 + }
 ```
 
-Now, if we run our project, we'll find that there is no sound at all. Even when we press the button, there is no sound.
+Now, if we run our project, we'll find that nothing happens at all. Even when we press the button, no functions get called.
 
 It's time to connect the button to our sound function.
 

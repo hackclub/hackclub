@@ -39,7 +39,7 @@ Previously when we've done web development, we've used HTML elements and things 
 
 Just as we've done previously, we're going to be building this project in Repl.it.
 
-Go ahead and spin up an [HTML/CSS/JS Repl](https://repl.it/languages/html) before continuing.
+Go ahead and spin up a new [HTML repl](https://repl.it/languages/html) before continuing.
 
 ![](img/fresh.png)
 
@@ -541,21 +541,21 @@ We're providing the following images and have already uploaded them to an image 
 
 <br/>
 
-| **Player**                               |
+> | **Player**                               |
 | ---------------------------------------- |
 | ![](img/prophet_orpheus.png)             |
 | `https://i.imgur.com/N5uCbDu.png`        |
 
 <br/>
 
-| **Enemy**                                |
+> | **Enemy**                                |
 | ---------------------------------------- |
 | ![](img/asteroid.png)                    |
 | `https://i.imgur.com/OdL0XPt.png`        |
 
 <br/>
 
-| **Background**                           |
+> | **Background**                           |
 | ---------------------------------------- |
 | ![](img/background.png)                  |
 | `https://i.imgur.com/aKQOg3G.png`        |

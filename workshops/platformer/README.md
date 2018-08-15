@@ -39,7 +39,7 @@ In this workshop we'll continue our foray into game development in p5.js by crea
 
 ## Part I: Set-up
 
-Go ahead and spin up an [HTML/CSS/JS repl](https://repl.it/languages/html) and proceed once it's loaded
+Go ahead and spin up a new [HTML repl](https://repl.it/languages/html) and proceed once it's loaded
 
 ### Priming the HTML File
 
@@ -698,7 +698,7 @@ Make sure you're logged into your Repl.it account and, if you want to, go ahead 
 
 ![](img/edit_name.png)
 
-Your game is now live and playable on `REPL_NAME--USERNAME.repl.co/`!!
+Your game is now live and playable on `REPL_NAME--USERNAME.repl.co`!!
 
 Be sure to post your creation on the [`#shipit`](https://hackclub.slack.com/messages/shipit/) channel on Slack!
 

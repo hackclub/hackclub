@@ -37,9 +37,9 @@ We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
 
 ## Part I: Set-up
 
-First, go to [Repl.it](https://repl.it) and create an [HTML/CSS/JS repl](https://repl.it/languages/html)
+First, go to [Repl.it](https://repl.it) and spin up a new [HTML repl](https://repl.it/languages/html)
 
-![](img/fresh_html_repl.png)
+![](img/new_repl.png)
 
 From here, clear the contents of `index.html` and put the following in its place
 

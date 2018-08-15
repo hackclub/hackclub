@@ -36,7 +36,7 @@ Draw with one or more friends! In this project we'll be combining HTML, p5.js, F
 
 ### Setting up the Files
 
-As always, we'll go to Repl.it and spin up an [HTML/CSS/JS repl](https://repl.it/languages/html)
+As always, we'll go to Repl.it and spin up a new [HTML repl](https://repl.it/languages/html)
 
 Next, clear the contents of `index.html` and put the following in its place:
 
