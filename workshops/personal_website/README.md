@@ -12,7 +12,7 @@ Prophet Orpheus, [our mascot](https://github.com/hackclub/dinosaurs/blob/master/
 
 It will look something like this:
 
-![](img/sexy.png)
+![](img/dino_site.png)
 
 Here's the [live demo][final_live_demo] and [final code][final_code] (see `index.html` and `index.css`).
 
@@ -34,13 +34,13 @@ This workshop should take around 45 minutes.
 
 ### Getting ready to repl it on Repl.it
 
-[Repl.it](https://repl.it) is an online [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) with support for 40+ languages as well as frameworks and we'll be using it to make our website!
+[Repl.it](https://repl.it) is an online code editor. It's similar to Google Docs, but has some important features that make it much better for typing code than a regular text editor.
 
-To get started go to [Repl.it](https://repl.it) and type in "HTML"
+To get started go to [https://repl.it](https://repl.it) and type in "HTML"
 
 > ![](img/html_repl.gif)
 
-Press <kbd>Enter</kbd> once you've done so and you should have your environment spin up in just a few seconds!
+Press <kbd>Enter</kbd> and your coding environment will spin up in just a few seconds!
 
 ![](img/new_repl.png)
 
@@ -48,13 +48,13 @@ Press <kbd>Enter</kbd> once you've done so and you should have your environment 
 
 ### 1) The HTML file
 
-HTML stands for Hypertext Markup Language. Every website from the New York Times to Twitch uses HTML to display content on the web.
+HTML stands for HyperText Markup Language. Every website from the New York Times to Twitch uses HTML to display content on the web.
 
-You should have the `index.html` file open and you can tell we're looking at HTML because of all the angle brackets.
+You should have the `index.html` file open, and a bunch of text with `<` & `>` symbols. That's HTML!
 
 ![](img/html_repl.png)
 
-Go ahead and delete everything in the `index.html` file then paste in the following code
+Repl.it gives us some code to start out with, but we're going to start from scratch. Go ahead and delete everything in the `index.html` file then **type** in the following. **DO NOT COPY AND PASTE.**
 
 ```html
 <!DOCTYPE html>
@@ -66,20 +66,20 @@ Go ahead and delete everything in the `index.html` file then paste in the follow
 </html>
 ```
 
-This structure is common to all HTML pages. In fact, you can take a look for yourself! Just right click on any web page, including this one, and click "View page source" to see what's going on behind the scenes. You'll find each of these elements on every page --- the doctype, and an HTML tag wrapped around a head and body.
+This structure is common to all HTML pages. In fact, you can take a look for yourself! Just right click on any web page, including this one, and click "View page source" (sometimes called "Inspect" depending on your browser) to see what's going on behind the scenes. You'll find each of these elements on every page – the doctype, and an HTML tag wrapped around a head and body.
 
 <!-- Source https://developers.google.com/web/tools/chrome-devtools/inspect-styles/imgs/elements-panel.png -->
 ![](img/elements-panel.png)
 
-Before proceeding, we'll briefly go over what our template means. 
+Before proceeding, we'll briefly go over what our template means.
 
-HTML works by storing information inside tags. `<html></html>` is an example of one such tag. Inside `<html></html>`, we've placed two other sets of tags: `<head></head>` (which wraps around the "head") and `<body></body>` (which wraps around the "body"). The body holds everything you would see in the actual tab/window when you open the page, while the head conveys information about the page to the browser. 
+HTML works by storing information inside tags. `<html></html>` is an example of one such tag. Inside `<html></html>`, we've placed two other sets of tags: `<head></head>` (which wraps around the "head") and `<body></body>` (which wraps around the "body"). The body holds everything you would see in the actual tab/window when you open the page, while the head conveys information about the page to the browser.
 
 `<!DOCTYPE html>` tells the browser what version of HTML to expect. Since it is a language, HTML is constantly growing and updating, so there are multiple versions. In our case, we are going to use HTML5, the latest version.
 
 ### 2) Previewing the Page
 
-Let's check out what our HTML file looks like in Live Preview! To do this, click on the **Run** button above the editor or press <kbd>Ctrl</kbd> / <kbd>Command</kbd> + <kbd>Enter</kbd>
+Let's check out what our HTML file looks like in Live Preview! To do this, click on the **Run** button above the editor or press <kbd>Ctrl</kbd> + <kbd>Enter</kbd> (<kbd>Command</kbd> + <kbd>Enter</kbd> on Mac).
 
 ![](img/run.png)
 
