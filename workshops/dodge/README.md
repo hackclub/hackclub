@@ -1,7 +1,7 @@
 ---
 name: Dodge
-description: Bullet-dodging game using p5.js
-author: Hack Club staff
+description: "Bullet-dodging game using p5.js"
+author: Hack Club staff + @yevbar
 group: start
 order: 4
 ---
@@ -12,13 +12,11 @@ order: 4
 | ----------------------- |
 | ![](img/final_demo.gif) |
 
-_**We recommend going through this workshop in Google Chrome.**_
-
 Links to a live demo and the final code below. This workshop should take around 1 hour and 15 minutes.
 
-[**Live Demo**](https://prophetorpheus.github.io/dodge)
+[**Live Demo**](https://dodge--prophetorpheus.repl.co)
 
-[**Final Code**](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/dodge)
+[**Final Code**](https://repl.it/@prophetorpheus/dodge)
 
 ---
 
@@ -39,31 +37,15 @@ Previously when we've done web development, we've used HTML elements and things 
 
 ## Part I. Setup
 
-Just as we've done previously, we're going to be building this project in Cloud9.
+Just as we've done previously, we're going to be building this project in Repl.it.
 
-Our project's code is going to be divided into two files: `index.html` (the HTML code) and `game.js` (the JavaScript code). The HTML file will tell the browser about the game's existence and how to display it on the page. The JavaScript file will tell the browser how to actually run the game.
+Go ahead and spin up a new [HTML repl](https://repl.it/languages/html) before continuing.
 
-1. Create a new directory in your Cloud9 workspace by right-clicking your `projects` folder and selecting `New Folder`. Name this folder `dodge`.
-2. Create a file by right-clicking the `dodge` folder, selecting `New File`, and naming it `index.html`. Double-click to open it, and type the following into it:
+![](img/fresh.png)
 
-    ```html
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <title>Dodge</title>
-    </head>
-    <body>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.12/p5.js"></script>
-      <script src="https://cdn.rawgit.com/molleindustria/p5.play/1bf3c72fe6b647617373b9b3ea3e419baaef8cfd/lib/p5.play.js"></script>
-    </body>
-    </html>
-    ```
+Our project's code is going to be divided into two files: `index.html` (the HTML code) and `index.js` (the JavaScript code). The HTML file will tell the browser about the game's existence and how to display it on the page. The JavaScript file will tell the browser how to actually run the game.
 
-     The two `script` tags inside of `body` tell the browser to load p5.js and p5.play, which we'll need to run our game.
- 
-3. Create another file by right-clicking the `dodge` folder, selecting `New File`, and naming it `game.js`.
- 
-Great, so now we have `index.html` and `game.js`. `index.html` is loading p5.js and p5.play, but it doesn't know about `game.js` yet. Let's change that by adding `<script src="game.js"></script>` to the **body** in `index.html`, beneath the other `script` tags. `index.html` should now look like this:
+First things first, clear the contents of your `index.html` and put the following in its place
 
 ```html
 <!DOCTYPE html>
@@ -72,14 +54,31 @@ Great, so now we have `index.html` and `game.js`. `index.html` is loading p5.js 
   <title>Dodge</title>
 </head>
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.12/p5.js"></script>
-  <script src="https://cdn.rawgit.com/molleindustria/p5.play/1bf3c72fe6b647617373b9b3ea3e419baaef8cfd/lib/p5.play.js"></script>
-  <script src="game.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <script src="https://cdn.rawgit.com/molleindustria/p5.play/42cd19c3/lib/p5.play.js"></script>
 </body>
 </html>
 ```
 
-Now, save using the shortcut <kbd>Command</kbd>+<kbd>s</kbd> or <kbd>Ctrl</kbd>+<kbd>s</kbd> and open up live preview by clicking `Preview > Live Preview`. Right now it's just a blank page, but we'll be changing that soon enough :wink:.
+The two `script` tags inside of `body` tell the browser to load p5.js and p5.play, which we'll need to run our game.
+ 
+Great, so now we have `index.html` and `index.js`. `index.html` is loading p5.js and p5.play, but it doesn't know about `index.js` yet. Let's change that by adding `<script src="index.js"></script>` to the **body** in `index.html`, beneath the other `script` tags. `index.html` should now look like this:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dodge</title>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <script src="https://cdn.rawgit.com/molleindustria/p5.play/42cd19c3/lib/p5.play.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
+```
+
+Now, save using the shortcut <kbd>Command</kbd>+<kbd>s</kbd> or <kbd>Ctrl</kbd>+<kbd>s</kbd> and open up live preview by clicking `Preview > Live Preview`. Right now it's just a blank page, but we'll be changing that soon enough ;)
 
 ## Part II. The External JS File
 
@@ -87,7 +86,7 @@ Now, save using the shortcut <kbd>Command</kbd>+<kbd>s</kbd> or <kbd>Ctrl</kbd>+
 
 p5.js works by automatically calling two special functions: `setup()` and `draw()` to create the visuals on your webpage. We'll be writing our own code in these functions, so that p5.js can then run our code.
 
-Double-click `game.js` to open, and add these functions (type them out, don't copy and paste!).
+Double-click `index.js` to open, and add these functions (type them out, don't copy and paste!).
 
 ```js
 function setup() {
@@ -540,23 +539,28 @@ To start, let's customize the game with images.
 
 We're providing the following images and have already uploaded them to an image host, giving us a URL to load the images from in our code.
 
-- _Player_
+<br/>
 
-  ![Player image](img/prophet_orpheus.png)
+> | **Player**                               |
+| ---------------------------------------- |
+| ![](img/prophet_orpheus.png)             |
+| `https://i.imgur.com/N5uCbDu.png`        |
 
-  `https://surrogate.hackedu.us/i.imgur.com/N5uCbDu.png`
+<br/>
 
-- _Enemy_
+> | **Enemy**                                |
+| ---------------------------------------- |
+| ![](img/asteroid.png)                    |
+| `https://i.imgur.com/OdL0XPt.png`        |
 
-  ![Enemy image](img/asteroid.png)
+<br/>
 
-  `https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png`
+> | **Background**                           |
+| ---------------------------------------- |
+| ![](img/background.png)                  |
+| `https://i.imgur.com/aKQOg3G.png`        |
 
-- _Background_
-
-  ![Background image](img/background.png)
-
-  `https://surrogate.hackedu.us/i.imgur.com/aKQOg3G.png`
+<br/>
 
 p5.js has a function called [`loadImage()`](http://p5js.org/reference/#p5/loadImage) that takes URL of an image as an argument and gives us a loaded image ready to be used. p5.play sprites have the method [`addImage()`](http://p5play.molleindustria.org/docs/classes/Sprite.html#method-addImage) that we can give a loaded image to assign it to the sprite.
 
@@ -574,7 +578,7 @@ function setup() {
 }
 ```
 
-##### Customizing the Player and the Enemy
+#### Customizing the Player and the Enemy
 
 Let's start by making some variables to hold our player image and our enemy image. Create these right below where we declared our `player` and `enemy` variables at the top of the file.
 
@@ -589,7 +593,7 @@ Now let's load an image into `playerImage` in `preload()`.
 
 ```js
 function preload() {
-  playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/N5uCbDu.png");
+  playerImage = loadImage("https://i.imgur.com/N5uCbDu.png");
 }
 ```
 
@@ -597,8 +601,8 @@ function preload() {
 
 ```js
 function preload(){
-  playerImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/N5uCbDu.png");
-  enemyImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
+  playerImage = loadImage("https://i.imgur.com/N5uCbDu.png");
+  enemyImage = loadImage("https://i.imgur.com/OdL0XPt.png");
 }
 ```
 
@@ -659,7 +663,7 @@ if(keyDown(LEFT_ARROW) && player.position.x > (playerImage.width/2)){
 
 Always code defensively!
 
-##### Customizing the Background
+#### Customizing the Background
 
 And, finally, for the background. Go ahead and declare a new variable, `backgroundImage`, at the top of the file and load an image into it in `preload()`.
 
@@ -668,8 +672,8 @@ var enemyImage;
 var backgroundImage;
 
 function preload() {
-  enemyImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
-  backgroundImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/aKQOg3G.png");
+  enemyImage = loadImage("https://i.imgur.com/OdL0XPt.png");
+  backgroundImage = loadImage("https://i.imgur.com/aKQOg3G.png");
   // ...the rest of the preload function
 }
 ```
@@ -712,18 +716,9 @@ Feel free to customize the enemy's rotation speed to make it faster/slower!
 
 ## Part III. Publishing and Sharing
 
-You're done, yay! You just need to add it to your website so that it's live on the internet!
+You're done, yay! The game you made is live at the URL above the preview in the editor:
 
-Just like we did in the Personal Website workshop, do the following steps to upload your Dodge game to your website.
-
-1. Open the terminal by pressing <kbd>Alt + t</kbd> on the keyboard at the same time. Type in the following commands:
-  - `git add --all`
-  - `git commit -m "Create Dodge game"`
-  - `git push`
-2. GitHub will now ask for your username and password.
-  - Go ahead and enter the username and press the enter.
-  - Enter the password and press enter. _The characters won't show up on the screen, but rest assured, they are still being typed._
-3. Now try to view the website by going to `USERNAME.github.io/dodge/` (make sure to replace `USERNAME` with your actual GitHub username)
+![](img/preview.gif)
 
 Don't forget to share a link to your beautiful creation on the Slack on the [`#shipit`](https://hackclub.slack.com/messages/shipit) channel!
 

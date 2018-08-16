@@ -1,7 +1,7 @@
 ---
 name: Platformer
 description: Simple side-scrolling platformer game
-author: "@jkwok91"
+author: "@jkwok91 + @yevbar"
 group: start
 order: 5
 ---
@@ -16,9 +16,9 @@ _**We recommend going through this workshop in Google Chrome.**_
 
 Links to a live demo and the final code below. This workshop should take around 60 minutes.
 
-[**Live Demo**](https://prophetorpheus.github.io/platformer)
+[**Live Demo**](https://platformer--prophetorpheus.repl.co)
 
-[**Final Code**](https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/platformer)
+[**Final Code**](https://repl.it/@prophetorpheus/platformer)
 
 ---
 
@@ -39,14 +39,11 @@ In this workshop we'll continue our foray into game development in p5.js by crea
 
 ## Part I: Set-up
 
-1. Open up `projects` workshop
-2. Create new folder in `projects` folder, name it `platformer`
-3. Create new `index.html` in `platformer`
-4. Create new `game.js` in `platformer`
+Go ahead and spin up a new [HTML repl](https://repl.it/languages/html) and proceed once it's loaded
 
 ### Priming the HTML File
 
-Type this basic template into the `index.html` file:
+Clear the contents of `index.html` and put the following in its place
 
 ```html
 <!DOCTYPE html>
@@ -59,13 +56,13 @@ Type this basic template into the `index.html` file:
 </html>
 ```
 
-Load in p5.js in script tag in **body**. Beneath that, load in p5.play.js in another script tag. Beneath both of those, load in our game file (`game.js`) in a third script tag.
+Load in p5.js in script tag in **body**. Beneath that, load in p5.play.js in another script tag. Beneath both of those, load in our game file (`index.js`) in a third script tag.
 
 ```html
 <body>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.min.js"></script>
-  <script type="text/javascript" src="https://cdn.rawgit.com/molleindustria/p5.play/1bf3c72fe6b647617373b9b3ea3e419baaef8cfd/lib/p5.play.js"></script>
-  <script type="text/javascript" src="game.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+  <script type="text/javascript" src="https://repl.it/@prophetorpheus/platformer"></script>
+  <script type="text/javascript" src="index.js"></script>
 </body>
 ```
 
@@ -73,7 +70,7 @@ Then, save and open live preview.
 
 ### Priming the JavaScript File
 
-Double-click `game.js` and add in the functions `setup()` and `draw()`:
+Click on `index.js` and add in the functions `setup()` and `draw()`:
 
 ```js
 function setup() {
@@ -468,7 +465,7 @@ In this line, we are handling a collision between any of the sprites in `obstacl
 
 ### Handling Collisions
 
-At the bottom of `game.js`, below our `draw()` function, we can add our `endGame` function:
+At the bottom of `index.js`, below our `draw()` function, we can add our `endGame` function:
 
 ```js
 function endGame() {
@@ -697,13 +694,11 @@ It's time to add in our sprite images! This exercise is left to the user.
 
 ## Part IX: Publishing and Sharing
 
-After making sure all files are saved, go to the terminal in Cloud9 and type the following git commands:
+Make sure you're logged into your Repl.it account and, if you want to, go ahead and change the name of your repl by clicking on the pencil next to it.
 
-- `git add -A`
-- `git commit -m "Create a platformer game"`
-- `git push`
+![](img/edit_name.png)
 
-Don't forget you'll need to input your username and password (hidden). After successfully pushing, your game will be live and playable on `USERNAME.github.io/platformer/`!!
+Your game is now live and playable on `REPL_NAME--USERNAME.repl.co`!!
 
 Be sure to post your creation on the [`#shipit`](https://hackclub.slack.com/messages/shipit/) channel on Slack!
 
