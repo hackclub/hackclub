@@ -48,7 +48,7 @@ Press <kbd>Enter</kbd> and your coding environment will spin up in just a few se
 
 ### 1) The HTML file
 
-HTML stands for HyperText Markup Language. Every website from the New York Times to Twitch uses HTML to display content on the web.
+HTML stands for Hypertext Markup Language. Every website from the New York Times to Twitch uses HTML to display content on the web.
 
 You should have the `index.html` file open, and a bunch of text with `<` & `>` symbols. That's HTML!
 
