@@ -319,6 +319,6 @@ Now that you have finished building a website, you should share your beautiful c
 You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the world wide Hack Club community there is no better place to do that than on Slack.
 
 1. In a new tab, open and follow [these directions][slack] to signup for our Slack.
-2. Then, post the link to the [`#shipit`](https://hackclub.slack.com/messages/shipit) channel to share it with everyone!
+2. Then, post the link to the [`#ship`](https://hackclub.slack.com/messages/ship) channel to share it with everyone!
 
 [slack]: https://slack.hackclub.com/
