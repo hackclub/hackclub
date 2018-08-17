@@ -8,7 +8,7 @@ order: 1
 
 # Personal Website
 
-Prophet Orpheus, [our mascot](https://github.com/hackclub/dinosaurs/blob/master/README.md), is here to guide you through making your own personal website.
+Prophet Orpheus, [our mascot](https://hackclub.com/workshops/orpheus), is here to guide you through making your own personal website.
 
 It will look something like this:
 
@@ -272,7 +272,7 @@ Now that you have your account set up, all you need to do to change the name of 
 
 Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes (or <kbd>Escape</kbd> to cancel your name change)
 
-And just like that your website is now published on the internet for all your friends to see!
+And just like that your website is now published at the domain `PROJECTNAME--USERNAME.repl.co` (that's two dashes before your username) on the internet for all your friends to see!
 
 ![](img/celebrate_rush_hour.gif)
 
