@@ -1,7 +1,7 @@
 ---
 name: "Personal Website"
 description: "Making your first website from scratch"
-author: "Hack Club staff + @yevbar"
+author: "Hack Club staff"
 group: "start"
 order: 1
 ---
