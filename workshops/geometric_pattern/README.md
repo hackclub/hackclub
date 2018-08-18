@@ -1,7 +1,7 @@
 ---
 name: Geometric Pattern
 description: Super cool geometric patterns using p5.js
-author: "@jkwok91 + @yevbar"
+author: "@jkwok91"
 group: start
 order: 3
 ---
