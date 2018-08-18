@@ -1,7 +1,7 @@
 ---
 name: Dodge
 description: "Bullet-dodging game using p5.js"
-author: Hack Club staff + @yevbar
+author: Hack Club staff
 group: start
 order: 4
 ---
