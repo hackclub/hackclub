@@ -272,8 +272,13 @@ on their servers (https://pages.github.com/).
   - Think of committing as packaging something into a package and putting the
     shipping label on it.
   - Don't make bad commit messages: be concise, but clear about what you did.
-    - [Bad message example](img/bad_commit_message.png)
-    - [Good message example](img/good_commit_message.png)
+    - Bad message example:
+
+        ![](img/bad_commit_message.png)
+
+    - Good message example:
+
+        ![](img/good_commit_message.png)
 
     ![git commit](img/git_commit.gif)
 
