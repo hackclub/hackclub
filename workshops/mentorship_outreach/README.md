@@ -1,5 +1,5 @@
 ---
-name: Mailing A Mentor
+name: Emailing Mentors
 description: Reach out to your heroes
 author: "@SamNChiet"
 group: club
