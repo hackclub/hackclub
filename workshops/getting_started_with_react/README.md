@@ -136,7 +136,7 @@ I’ll use `App.js` as an example.
   ```js
   export class App extends React.Component{
   
-    //All classes must have a render() function
+    //All classes must have a render() method
     render(){
       // You can use control statements to change the return value
       // render() can only return one JSX tag, use <div> to nest tags
@@ -294,7 +294,7 @@ Every `render()` must return a single JSX tag, so use `<div>` to nest your HTML.
     });
   }
   ```
-  - Proper practice is to name the function `handleEvent`, where `Event` is what activates the function
+  - Proper practice is to name the method `handleEvent`, where `Event` is what activates the method
   - Ex: `handleClick`
   - To allow this to work, you have to add another line to your `constructor`
   ```js
