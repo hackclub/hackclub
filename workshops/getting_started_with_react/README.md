@@ -65,11 +65,11 @@ order: 1
 
 ### Open project folder using code editor
 
- - I recommend [VSCODE](https://code.visualstudio.com/download), but anything will do
+ - I recommend [vscode](https://code.visualstudio.com/download), but anything will do
  
 ### Go to the `public` directory
 
-### Edit the index.html file
+### Edit the `index.html` file
 
  - Inside `<head>` create a `<title>` for the website
  - Add new [fonts](https://fonts.google.com/) if needed
