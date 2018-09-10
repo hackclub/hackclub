@@ -1,9 +1,9 @@
 ---
 name: "Getting Started Using React"
 description: "A collection of information about React.js"
-author: "Nicholas Iten"
-group: "Unknown"
-order: "Unknown"
+author: "@itenpn"
+group: experimental
+order: 15
 ---
 
 # Getting Started Using React
