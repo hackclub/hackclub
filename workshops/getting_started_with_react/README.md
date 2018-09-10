@@ -86,7 +86,7 @@ order: 1
  
 ### Go to the `src` directory
 
-   - Delete everything in the src directory, or you can just modify the files if you would like.
+   - Delete everything in the `src` directory, or you can just modify the files if you would like.
 
 
 ## Making Your Website Appear on Screen
@@ -98,7 +98,7 @@ order: 1
   import React from ‘react’;
   import ReactDOM from ‘react-dom’;
   ```
-  - Import any relevant components from your src folder
+  - Import any relevant components from your `src` folder
   - Proper practice is to import an App.js file that has a render() for all of your components
   ```javascript
   import {App} from ‘./App.js’;
@@ -279,7 +279,7 @@ order: 1
   ```
   - Inside of the curly brackets above, create a JS object like normal
   
-### To change a state, you must use this.setState()
+### To change a state, you must use `this.setState()`
 
   ```javascript
   this.setState({stateName: data});
