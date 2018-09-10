@@ -343,7 +343,7 @@ Every `render()` must return a single JSX tag, so use `<div>` to nest your HTML.
 
 ## Finishing Your Website
 
-### Create a new repository on [github](https://github.com/)
+### Create a new repository on [GitHub](https://github.com/)
 
 ### If you are on Windows, install [git](https://git-scm.com/downloads)
 
@@ -361,7 +361,7 @@ $ cd MyWebsite\ProjectName
 $ npm run build
 ```
 
-### Enter the following commands to add your code to github
+### Enter the following commands to add your code to GitHub
 
 ```sh
 # If you haven’t used git before, it will ask you to sign in,
@@ -370,17 +370,17 @@ $ git init
 # The period is NOT a typo
 $ git add .
 $ git commit -m “First Commit”
-# Go to github and copy the repository url
+# Go to GitHub and copy the repository url
 $ git remote add origin [Repository URL]
 $ git remote -v
 $ git push origin master
 ```
 
-### Now you have your code all on github!
+### Now you have your code all on GitHub!
 
 ### Create an account at [Netlify](https://www.netlify.com/)
 
-  - Link your account with the github repository and upload the \build folder
+  - Link your account with the GitHub repository and upload the \build folder
   - Now your website should run on Netlify!
   
 ### To add a custom domain
