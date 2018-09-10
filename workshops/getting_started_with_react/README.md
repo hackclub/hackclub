@@ -1,7 +1,7 @@
 ---
-name: "Getting Started Using React"
+name: "Getting Started with React"
 description: "A collection of information about React.js"
-author: "Nicholas Iten"
+author: "@itenpn"
 group: "React"
 order: 1
 ---
@@ -23,15 +23,11 @@ order: 1
 
 ## Assumptions
 
-### 1. You already sort of know how JavaScript works
-
-### 2. You already know how to use HTML and CSS
-
-### 3. You understand how to access development tools
-
-### 4. You have a willingness to problem solve
-
-### 5. You have a willingness to start hacking
+1. You already sort of know how JavaScript works
+2. You already know how to use HTML and CSS
+3. You understand how to access development tools
+4. You have a willingness to problem solve
+5. You have a willingness to start hacking
 
 
 ## Installing React
@@ -42,21 +38,21 @@ order: 1
 
 ### Install react using npm
 
-   ```
+   ```sh
    $ npm install --save-dev react
    $ npm install --save-dev react-dom
    ```
 
 ### Navigate to a new Directory
 
-  ```
+  ```sh
   $ mkdir MyWebsite
   $ cd MyWebsite
   ```
   
 ### Create a new project
 
-  ```
+  ```sh
   $ npx create-react-app [Project Name goes here]
   $ cd [Project name]
   $ npm start
@@ -135,14 +131,15 @@ order: 1
   
 ### Create a new class
 
-  - I’ll use App.js as an example
-  ```javascript
+I’ll use `App.js` as an example.
+
+  ```js
   export class App extends React.Component{
   
     //All classes must have a render() function
     render(){
-      //You can use control statements to change the return value
-      //render() can only return one JSX tag, use <div> to nest tags
+      // You can use control statements to change the return value
+      // render() can only return one JSX tag, use <div> to nest tags
       return(
         <div></div>
       );
@@ -155,21 +152,22 @@ order: 1
 
 ### To import the component to another file
 
-  - In the new file
-  ```javascript
-  import {ComponentName} from ‘./ComponentName.js’;
+In the new file:
+
+  ```js
+  import { ComponentName } from './ComponentName'
   ```
   
 ### To use the component in another file
 
-  - In the new `render()` use `<ComponentName />` as its JSX
+In the new `render()` use `<ComponentName />` as its JSX
 
 
 ## Using JSX
 
 ### JSX is like HTML you can use inside of React Components
 
-  - Every `render()` must return a single JSX tag, so use `<div>` to nest your HTML
+Every `render()` must return a single JSX tag, so use `<div>` to nest your HTML.
   
 ### Some things are different from HTML
 
@@ -185,13 +183,12 @@ order: 1
 
   - Just use `<ComponentName />`
 
-
 ## How to use CSS
 
 ### Import the appropriate CSS file
 
-  ```javascript
-  import ‘ComponentName.css’;
+  ```js
+  import 'ComponentName.css';
   ```
   
 ### Go to the CSS file
@@ -201,26 +198,26 @@ order: 1
 ### Inline styles are DIFFERENT IN REACT
 
   - Create a JS object
-  ```javascript
-  let style = {};
+  ```js
+  const style = {};
   ```
   - Add a CSS style, but without the hyphens and using camelCase
   - Example: 
-  ```javascript
-  let style = {fontSize: "10px"};
+  ```js
+  const style = { fontSize: '24px' };
   ```
   - Add a comma at the end of the CSS style if you want to add another
-  ```javascript
-  let style = {fontSize: '10px', color: 'blue'};
+  ```js
+  const style = { fontSize: '24px', color: 'blue' };
   ```
   - To add an inline style, pass the object to the style attribute
   - Example with style variable: 
-  ```javascript
+  ```js
   <h1 style={style}>Hello World</h1>
   ```
   - Example with new object: 
-  ```javascript
-  <h1 style={{color: ‘blue’}}>Hello World</h1>
+  ```js
+  <h1 style={{ color: 'blue' }}>Hello World</h1>
   ```
 
 
@@ -238,21 +235,20 @@ order: 1
   
 ### Props are easy to use
 
-  ```javascript
-  <ComponentName prop1=[some data] prop2=[some data] />
+  ```js
+  <ComponentName prop1={data} prop2={data2} />
   ```
   - Ex: 
-  ```javascript
-  <Photo picture={JohnDoePicture} caption=’John Doe, Manager’ />
+  ```js
+  <Photo picture={JohnDoePicture} caption="John Doe, Manager" />
   ```
   
 ### To gather information from props use: `this.props.propName`
 
   - Ex: 
-  ```javascript
+  ```js
   <img src={this.props.picture} />
   ```
-
 
 ## Using State
 
@@ -263,7 +259,7 @@ order: 1
   
 ### Accessing a state is easy
 
-   ```javascript
+   ```js
    this.state.stateName
    ```
    - states can be any data type because they are also a JS object
@@ -271,28 +267,28 @@ order: 1
 
 ### To set an initial state, you must add a constructor
 
-  ```javascript
-  constructor(props){
+  ```js
+  constructor(props) {
     super(props);
-    this.state = {stateName: data};
+    this.state = { stateName: data };
   }
   ```
   - Inside of the curly brackets above, create a JS object like normal
   
 ### To change a state, you must use `this.setState()`
 
-  ```javascript
-  this.setState({stateName: data});
+  ```js
+  this.setState({ stateName: data });
   ```
   - You can pass an object that only changes one state of the component
   
 ### To change a state within JSX, you must use methods
 
   - Create a method within the class
-  ```javascript
-  methodName(e){  // you can add more data with methodName(e, data1, data2, etc...
-    e.preventDefault(); //prevents the method from running without an event
-    this.setState({ //Can accept one or more states, even if you have multiple states
+  ```js
+  methodName(e) {  // you can add more data with methodName(e, data1, data2, etc...
+    e.preventDefault(); // prevents the method from running without an event
+    this.setState({ // Can accept one or more states, even if you have multiple states
       state1: data1,
       state2: data2
     });
@@ -300,8 +296,8 @@ order: 1
   ```
   - Proper practice is to name the function `handleEvent`, where `Event` is what activates the function
   - Ex: `handleClick`
-  - To allow this to work, you have to add another line to your constructor
-  ```javascript
+  - To allow this to work, you have to add another line to your `constructor`
+  ```js
   this.methodName = this.methodName.bind(this);
   ```
 ### This method can then be attached to events
@@ -309,20 +305,19 @@ order: 1
   - Events trigger when an action occurs
   - `onClick`, `onHover`, etc
   - Ex: 
-  ```javascript
+  ```js
   <button onClick={this.handleClick}>
   ```
   
 ### To pass additional parameters with the method, you must use a function
 
   ```javascript
-  (e) => {this.methodName(e, data)}
+  (e) => { this.methodName(e, data) }
   ```
   - Ex: 
-  ```javascript
-  <button onClick={(e) => {this.handleClick(e, pageNum)}}>
+  ```js
+  <button onClick={(e) => { this.handleClick(e, pageNum) }}>
   ```
-
 
 ## General React Tips
 
@@ -346,7 +341,6 @@ order: 1
 
    - The [Hack Club Slack](https://hackclub.slack.com/messages) is a fantastic resource
 
-
 ## Finishing Your Website
 
 ### Create a new repository on [github](https://github.com/)
@@ -357,19 +351,19 @@ order: 1
 
 ### Go to your project directory
 
-```
+```sh
 $ cd MyWebsite\ProjectName
 ```
 
 ### Create a new build
 
-```
+```sh
 $ npm run build
 ```
 
 ### Enter the following commands to add your code to github
 
-```
+```sh
 # If you haven’t used git before, it will ask you to sign in,
 # so do that when it gives you prompts instead of going to the next step.
 $ git init
