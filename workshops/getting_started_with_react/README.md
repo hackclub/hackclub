@@ -298,7 +298,7 @@ order: 1
     });
   }
   ```
-  - Proper practice is to name the function handleEvent, where Event is what activates the function
+  - Proper practice is to name the function `handleEvent`, where `Event` is what activates the function
   - Ex: `handleClick`
   - To allow this to work, you have to add another line to your constructor
   ```javascript
@@ -307,7 +307,7 @@ order: 1
 ### This method can then be attached to events
 
   - Events trigger when an action occurs
-  - onClick, onHover, etc
+  - `onClick`, `onHover`, etc
   - Ex: 
   ```javascript
   <button onClick={this.handleClick}>
@@ -332,7 +332,7 @@ order: 1
   
 ### Use a singular App component that displays all of your pages depending on state
 
-  - Use if statements to return different components in your render() function
+  - Use if statements to return different components in your `render()`
   
 ### Plan out your project design BEFORE you write code
 
@@ -391,7 +391,7 @@ $ git push origin master
   
 ### To add a custom domain
 
-  - Go to a domain registrar like [GoDaddy](https://www.godaddy.com/)
+  - Go to a domain registrar like [Go Daddy](https://www.godaddy.com/)
   - Buy a domain name.
   - Insert the custom domain name in Netlify, it will give you several DNS server links
   - On your domain registrar website, go to the DNS server option and link the server links.
