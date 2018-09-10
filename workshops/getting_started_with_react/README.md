@@ -46,7 +46,7 @@ order: 1
    $ npm install --save-dev react
    $ npm install --save-dev react-dom
    ```
-   
+
 ### Navigate to a new Directory
 
   ```
@@ -71,7 +71,7 @@ order: 1
 
  - I recommend [VSCODE](https://code.visualstudio.com/download), but anything will do
  
-### Go to the public directory
+### Go to the `public` directory
 
 ### Edit the index.html file
 
@@ -80,18 +80,18 @@ order: 1
  
 ### Change the favicon
 
- - Replace the favicon.ico with your own
+ - Replace `favicon.ico` with your own
  - [X-Icon](http://www.xiconeditor.com/) can make any image a favicon!
  - This may take a little while to update on localhost
  
-### Go to the src directory
+### Go to the `src` directory
 
    - Delete everything in the src directory, or you can just modify the files if you would like.
 
 
 ## Making Your Website Appear on Screen
 
-### Create an index.js file in the src directory
+### Create an `index.js` file in the `src` directory
 
   - Import these two modules
   ```javascript
@@ -138,7 +138,7 @@ order: 1
   - I’ll use App.js as an example
   ```javascript
   export class App extends React.Component{
-    
+  
     //All classes must have a render() function
     render(){
       //You can use control statements to change the return value
@@ -147,7 +147,7 @@ order: 1
         <div></div>
       );
     }
-    
+
   }
   ```
   
@@ -268,7 +268,7 @@ order: 1
    ```
    - states can be any data type because they are also a JS object
    - refer to [How to Use CSS](#how-to-use-css) for more information on objects
-   
+
 ### To set an initial state, you must add a constructor
 
   ```javascript
