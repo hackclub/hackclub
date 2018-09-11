@@ -288,6 +288,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 **Websites Made by Other Hack Club Hackers:**
 
+- [Melody Starling](https://melody.cool/)
 - [Sophie Huang](https://sohuang.github.io/)
 - [Gabriel Lazrak](http://gabriellazrak.github.io/)
 - [Rebecca Jourard](https://mnefertiti.github.io/personalwhale/)
