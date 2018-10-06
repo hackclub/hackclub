@@ -43,3 +43,4 @@ If you'd like to see someone make a workshop on building a specific type of proj
 * Chat out with a chat bot ([@yevbar](https://github.com/yevbar))
 * A simple neural network ([@yevbar](https://github.com/yevbar))
 * Your own programming language! ([@yevbar](https://github.com/yevbar))
+* A collaborative Spotify playlist using the Spotify API ([@MatthewStanciu](https://github.com/MatthewStanciu))
