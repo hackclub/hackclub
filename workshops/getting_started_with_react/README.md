@@ -300,6 +300,7 @@ Every `render()` must return a single JSX tag, so use `<div>` to nest your HTML.
   ```js
   this.methodName = this.methodName.bind(this);
   ```
+
 ### This method can then be attached to events
 
   - Events trigger when an action occurs
