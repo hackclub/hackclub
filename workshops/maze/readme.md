@@ -1,5 +1,6 @@
 # Maze
-*Some images don't render in Github, full workshop better viewed on [notion](https://www.notion.so/jajoosam/Maze-c06d7ac6968a4402abc0115430a2b6d5)*
+
+*Some images don't render in GitHub, full workshop better viewed on [notion](https://www.notion.so/jajoosam/Maze-c06d7ac6968a4402abc0115430a2b6d5)*
 
 In the next 30 minutes, you're going to become an actual game developer 🎮  - we're going to make a remake of the classic [scary maze](http://www.playscarymazegame.net/play-scary-maze-game/) game, in the amazing [PICO-8](https://www.lexaloffle.com/pico-8.php).
 
@@ -37,7 +38,7 @@ Explore anything you want - or don't 😛  There's no need to worry about breaki
 
 Once you're done exploring, quit and restart PICO-8 - and then press the `esc` key like you did earlier. You're into the code editor once again 👨‍💻
 
-If you've ever played games before, you've probably heard of the term `FPS` - it stands for **F**rames **P**er **S**econd. PICO-8 runs at 30 FPS, meaning your game is updated 30 times every second.
+If you've ever played games before, you've probably heard of the term `FPS` - it stands for **Frames Per Second**. PICO-8 runs at 30 FPS, meaning your game is updated 30 times every second.
 
 We're going to divide our game into 3 sections, where we initialize our game, we update it, and when we draw it to the screen - the code for these sections would look like this:
 ```lua
