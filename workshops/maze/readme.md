@@ -1,3 +1,11 @@
+---
+name: Maze
+description: A "Scary Maze Game" clone
+author: "@jajoosam"
+group: experimental
+order: 15
+---
+
 # Maze
 
 *Some images don't render in GitHub, full workshop better viewed on [notion](https://www.notion.so/jajoosam/Maze-c06d7ac6968a4402abc0115430a2b6d5)*
