@@ -6,13 +6,13 @@ Here's what it looks like 👇
 
 <iframe src="https://www.lexaloffle.com/bbs/?pid=53863#p53862" style="height:500px">
 
-# Setup 🔧
+## Setup 🔧
 
 All you need for this setup is a copy of PICO-8, which you can get [here](https://www.lexaloffle.com/pico-8.php). PICO-8 is a game development suite which is delightfully simple, satisfying and quick to work with - you can write code, draw characters and maps, along with making music, all in the same software which weighs only a few megabytes ⚡
 
 PICO-8 works on Windows, Mac OS, Linux and even Raspberry Pi 🖥️  - it is totally worth the $15!
 
-# Exploring ⛰
+## Exploring ⛰
 
 Nice - you got PICO-8! When you launch it, you might see this unfamiliar screen with a blinking red cursor 👇
 
@@ -32,7 +32,7 @@ Go ahead and click on each of the icons on the top right of the screen. In order
 
 Explore anything you want - or don't 😛  There's no need to worry about breaking anything 😌
 
-# Getting Started 🏃
+## Getting started 🏃
 
 Once you're done exploring, quit and restart PICO-8 - and then press the `esc` key like you did earlier. You're into the code editor once again 👨‍💻
 
@@ -68,8 +68,6 @@ That's pretty boring though 💤  - Let's make this pixel move!
 
 But before we do that, we need a place to store these co-ordinates, so add these containers to your `_init() function`:
 
- 
-
 ```lua
 x=64
 y=64
@@ -97,7 +95,7 @@ if(btn(➡️)) x+=1
 
  Run your game(`⌘/ctrl + r`) and use your arrow keys, and you will see a moving pixel ⛸️  
 
-# Making it a game 🎮
+## Making it a game 🎮
 
 We have some movement on our screen now, but it's still just a pixel - and by no means even looks like a game. Let's change that, and add graphics, sound and a background map!
 
@@ -131,12 +129,9 @@ If you run your game now, you won't see any change - we need to draw the map to 
 map(0,0) --make sure this comes before you draw your sprite
 ```
 
- 
-
-
 Our little creation finally looks like a game now 🎮 
 
-## Enforcing rules 📖
+### Enforcing rules 📖
 
 Our game is still just a character roaming around a map though - a player has no idea of what the objective is. Let's add some logic to our game that makes an irritating sound whenever the character goes out of the river, and onto the grass 🌊 
 
@@ -156,7 +151,7 @@ What this code does is check every frame if our character is on the grass sprite
 
 `mget()` tells us the tile on the map, given the co-ordinates of a map tile. We divide `x` and `y` with `8` because a map tile is `8x8` pixels ▪️
 
-## The End 🏁
+### The end 🏁
 
 We need a game over, when our player reaches the treasure chest 💰 - and it's just another line of code, very similar to what we had to do to play the irritating sound - add this to your `_draw()` function:
 
@@ -170,7 +165,7 @@ This condition checks if the map tile our character is on is the treasure chest 
 
 You just made your own game, in under 30 minutes - how cool is that! This game can be hacked on in many ways, you should totally go ahead and make it more customized! Here are a few ideas 👇
 
-# Consolidation 🖋️
+## Consolidation 🖋️
 
 Play around with this game  - and make it your own. 
 
