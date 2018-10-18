@@ -1,6 +1,6 @@
 # Maze
 
-In the next 30 minutes, you're going to become an actual game developer 🎮  - we're going to make a remake of the classic [scary maze](http://www.playscarymazegame.net/play-scary-maze-game/) game, in the amazing [PICO-8](https://www.lexaloffle.com/pico-8.php).
+In the next 30 minutes, you're going to become an actual game developer 🎮 - we're going to make a remake of the classic [scary maze](http://www.playscarymazegame.net/play-scary-maze-game/) game, in the amazing [PICO-8](https://www.lexaloffle.com/pico-8.php).
 
 Here's what it looks like 👇
 
@@ -10,7 +10,7 @@ Here's what it looks like 👇
 
 All you need for this setup is a copy of PICO-8, which you can get [here](https://www.lexaloffle.com/pico-8.php). PICO-8 is a game development suite which is delightfully simple, satisfying and quick to work with - you can write code, draw characters and maps, along with making music, all in the same software which weighs only a few megabytes ⚡
 
-PICO-8 works on Windows, Mac OS, Linux and even Raspberry Pi 🖥️  - it is totally worth the $15!
+PICO-8 works on Windows, Mac OS, Linux and even Raspberry Pi 🖥️ - it is totally worth the $15!
 
 ## Exploring ⛰
 
@@ -18,25 +18,25 @@ Nice - you got PICO-8! When you launch it, you might see this unfamiliar screen 
 
 ![](-efdafb55-0a7e-4ae7-9007-9303c1010517Untitled)
 
-This is the PICO-8 console - but you won't need this for now, so go ahead and press `esc` on your keyboard. You'll see something like this:
+This is the PICO-8 console - but you won't need this for now, so go ahead and press <kbd>esc</kbd> on your keyboard. You'll see something like this:
 
 ![](-bad3936a-500b-4180-b620-77cbc8beb29eUntitled)
 
 Go ahead and click on each of the icons on the top right of the screen. In order, they represent:
 
-1. **Code**: Logic that your game runs continously
+1. **Code**: Logic that your game runs continuously
 2. **Sprite**: Draw the characters in your game
 3. **Map**: Make a map for your game(background) with sprites
 4. **Sound**: Make small sound effects for your game
 5. **Music**: Compose background music for your game with sounds
 
-Explore anything you want - or don't 😛  There's no need to worry about breaking anything 😌
+Explore anything you want - or don't 😛 There's no need to worry about breaking anything 😌
 
 ## Getting started 🏃
 
-Once you're done exploring, quit and restart PICO-8 - and then press the `esc` key like you did earlier. You're into the code editor once again 👨‍💻
+Once you're done exploring, quit and restart PICO-8 - and then press the <kbd>esc</kbd> like you did earlier. You're into the code editor once again 👨‍💻
 
-If you've ever played games before, you've probably heard of the term `FPS` - it stands for **F**rames **P**er **S**econd. PICO-8 runs at 30 FPS, meaning your game is updated 30 times every second.
+If you've ever played games before, you've probably heard of the term "FPS" - it stands for **F**rames **P**er **S**econd. PICO-8 runs at 30 FPS, meaning your game is updated 30 times every second.
 
 We're going to divide our game into 3 sections, where we initialize our game, we update it, and when we draw it to the screen - the code for these sections would look like this:
 
@@ -64,7 +64,7 @@ Now, just press `⌘/ctrl + r` to run the game, and see a nice blue pixel in the
 
 ![](-8e88f988-5fa4-4a97-b8cd-2f6629747b7dUntitled)
 
-That's pretty boring though 💤  - Let's make this pixel move!
+That's pretty boring though 💤 - Let's make this pixel move!
 
 But before we do that, we need a place to store these co-ordinates, so add these containers to your `_init() function`:
 
@@ -93,17 +93,17 @@ if(btn(⬅️)) x-=1
 if(btn(➡️)) x+=1
 ```
 
- Run your game(`⌘/ctrl + r`) and use your arrow keys, and you will see a moving pixel ⛸️  
+Run your game(`⌘/ctrl + r`) and use your arrow keys, and you will see a moving pixel ⛸️
 
 ## Making it a game 🎮
 
 We have some movement on our screen now, but it's still just a pixel - and by no means even looks like a game. Let's change that, and add graphics, sound and a background map!
 
-Head onto the 😺  tab, from the top-right corner of your screen.
+Head onto the 😺 tab, from the top-right corner of your screen.
 
 ![](Untitled-f22da680-7114-4927-a36d-1cda5e9634e4.png)
 
-All you need to know for now is that you can draw 8x8 characters, from the 16 colors in the pallete to your right. Here's an example - the character I made - 
+All you need to know for now is that you can draw 8x8 characters, from the 16 colors in the pallete to your right. Here's an example - the character I made -
 
 ![](Untitled-3a88eb8b-eb44-4701-8862-aac5d4cfaffc.png)
 
@@ -113,7 +113,7 @@ When you're making games, characters, and other individual art is referred to as
 spr(1, x, y) -- draws the first sprite, to our x and y co-ordinates.
 ```
 
-Nice! We have our own character roaming around on the screen - next, let's make an environment - a map for our character. Go back to the sprite editor (😺 ) - and click on the empty space next to your character - and draw a tile - paint your entire stripe blue - we'll use that to make a river in our game. 
+Nice! We have our own character roaming around on the screen - next, let's make an environment - a map for our character. Go back to the sprite editor (😺 ) - and click on the empty space next to your character - and draw a tile - paint your entire stripe blue - we'll use that to make a river in our game.
 
 ![](Untitled-ccbb28ec-1a11-40bf-83ce-1c83cb84655c.png)
 
@@ -123,23 +123,23 @@ Head over the the map tab - the one with 4 rectangles on it, and use your sprite
 
 ![](Untitled-64d4814e-370a-4b16-a432-47bbdf4107c3.png)
 
-If you run your game now, you won't see any change - we need to draw the map to our screen first 🖌️  Add this to your `_draw()` function:
+If you run your game now, you won't see any change - we need to draw the map to our screen first 🖌️ Add this to your `_draw()` function:
 
 ```lua
 map(0,0) --make sure this comes before you draw your sprite
 ```
 
-Our little creation finally looks like a game now 🎮 
+Our little creation finally looks like a game now 🎮
 
 ### Enforcing rules 📖
 
-Our game is still just a character roaming around a map though - a player has no idea of what the objective is. Let's add some logic to our game that makes an irritating sound whenever the character goes out of the river, and onto the grass 🌊 
+Our game is still just a character roaming around a map though - a player has no idea of what the objective is. Let's add some logic to our game that makes an irritating sound whenever the character goes out of the river, and onto the grass 🌊
 
 Head over to the sound tab (🔉 ) - and use your mouse to draw something like the sound below 👇
 
 ![](Untitled-c5c26939-7d80-4731-afb7-34acea10a4bc.png)
 
-It's high pitched, and pretty irritating 🤯 
+It's high pitched, and pretty irritating 🤯
 
 How do we play this sound at the right time though? We'll use conditions in our code, so that this sound only plays when our sprite is on grass. The code would look like this, add this yo your `_draw()` function:
 
@@ -167,13 +167,13 @@ You just made your own game, in under 30 minutes - how cool is that! This game c
 
 ## Consolidation 🖋️
 
-Play around with this game  - and make it your own. 
+Play around with this game - and make it your own.
 
 Here are a few ideas👇
 
 - Instead of using arrow keys to move our sprite, use the mouse
-    - Google your way in to make this happen
-    - You could even do something like change the x co-ordinate based on your arrow keys, and the y co-ordinate based on your mouse!
+  - Google your way in to make this happen
+  - You could even do something like change the x co-ordinate based on your arrow keys, and the y co-ordinate based on your mouse!
 - Add a celebration sound when you reach the treasure chest
 - Make this game more scary 👻
 - Restart the game when the sprite goes out of the river 🔁
