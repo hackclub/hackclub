@@ -1,3 +1,11 @@
+---
+name: PICO-8 Maze
+description: A "scary maze" game built on the PICO-8
+author: "@jajoosam"
+group: experimental
+order: 15
+---
+
 # Maze
 
 In the next 30 minutes, you're going to become an actual game developer 🎮—we're going to make a remake of the classic [scary maze](http://www.playscarymazegame.net/play-scary-maze-game/) game, in the amazing [PICO-8](https://www.lexaloffle.com/pico-8.php).
