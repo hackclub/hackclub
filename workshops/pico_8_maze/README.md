@@ -10,9 +10,7 @@ order: 15
 
 In the next 30 minutes, you're going to become an actual game developer 🎮—we're going to make a remake of the classic [scary maze](http://www.playscarymazegame.net/play-scary-maze-game/) game, in the amazing [PICO-8](https://www.lexaloffle.com/pico-8.php).
 
-Here's what it looks like 👇
-
-<iframe src="https://www.lexaloffle.com/bbs/?pid=53863#p53862" style="height:500px">
+You can play the finished game here: https://www.lexaloffle.com/bbs/?pid=53863#p53862
 
 ## Setup 🔧
 
