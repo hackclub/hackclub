@@ -36,7 +36,7 @@ Explore anything you want - or don't 😛 There's no need to worry about breakin
 
 Once you're done exploring, quit and restart PICO-8 - and then press the <kbd>esc</kbd> like you did earlier. You're into the code editor once again 👨‍💻
 
-If you've ever played games before, you've probably heard of the term "FPS" - it stands for **F**rames **P**er **S**econd. PICO-8 runs at 30 FPS, meaning your game is updated 30 times every second.
+If you've ever played games before, you've probably heard of the term "FPS"; it stands for _Frames Per Second_. PICO-8 runs at 30 FPS, meaning your game is updated 30 times every second.
 
 We're going to divide our game into 3 sections, where we initialize our game, we update it, and when we draw it to the screen - the code for these sections would look like this:
 
@@ -103,7 +103,7 @@ Head onto the 😺 tab, from the top-right corner of your screen.
 
 ![](Untitled-f22da680-7114-4927-a36d-1cda5e9634e4.png)
 
-All you need to know for now is that you can draw 8x8 characters, from the 16 colors in the pallete to your right. Here's an example - the character I made -
+All you need to know for now is that you can draw 8x8 characters, from the 16 colors in the palette to your right. Here's an example - the character I made -
 
 ![](Untitled-3a88eb8b-eb44-4701-8862-aac5d4cfaffc.png)
 
