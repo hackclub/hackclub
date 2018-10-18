@@ -58,7 +58,7 @@ cls()
 pset(64,64,12)
 ```
 
-`cls()` clears the screen everytime your code runs, so that our screen doesn't become too messy!
+`cls()` clears the screen every time your code runs, so that our screen doesn't become too messy!
 
 Now, just press <kbd>⌘/ctrl + r</kbd> to run the game, and see a nice blue pixel in the middle of our screen 👀
 
