@@ -16,11 +16,11 @@ PICO-8 works on Windows, macOS, Linux and even Raspberry Pi 🖥️—it is tota
 
 Nice, you got PICO-8! When you launch it, you might see this unfamiliar screen with a blinking red cursor 👇
 
-![](console.png)
+![](img/console.png)
 
 This is the PICO-8 console—but you won't need this for now, so go ahead and press <kbd>esc</kbd> on your keyboard. You'll see something like this:
 
-![](main_menu.png)
+![](img/main_menu.png)
 
 Go ahead and click on each of the icons on the top right of the screen. In order, they represent:
 
@@ -62,7 +62,7 @@ pset(64,64,12)
 
 Now, just press <kbd>⌘/ctrl + r</kbd> to run the game, and see a nice blue pixel in the middle of our screen 👀
 
-![](blue_pixel.png)
+![](img/blue_pixel.png)
 
 That's pretty boring though 💤—let's make this pixel move!
 
@@ -101,11 +101,11 @@ We have some movement on our screen now, but it's still just a pixel, and by no 
 
 Head onto the 😺 tab, from the top-right corner of your screen.
 
-![](tab.png)
+![](img/tab.png)
 
 All you need to know for now is that you can draw 8x8 characters, from the 16 colors in the palette to your right. Here's an example—the character I made:
 
-![](draw.png)
+![](img/draw.png)
 
 When you're making games, characters, and other individual art is referred to as a `sprite`. Let's go ahead and replace the blue pixel with our newly drawn character—change your `pset(x,y,12)` line to this:
 
@@ -115,13 +115,13 @@ spr(1, x, y) -- draws the first sprite, to our x and y co-ordinates.
 
 Nice! We have our own character roaming around on the screen—next, let's make an environment—a map for our character. Go back to the sprite editor (😺 )—and click on the empty space next to your character—and draw a tile—paint your entire stripe blue—we'll use that to make a river in our game.
 
-![](blank_tile.png)
+![](img/blank_tile.png)
 
 Draw other types of tiles by clicking on the empty space next to the ones you've already drawn. Draw one sprite for grass, and another one with a treasure chest on it 💰
 
 Head over the the map tab, the one with 4 rectangles on it, and use your sprites to make a map that looks something like this 👇
 
-![](map.png)
+![](img/map.png)
 
 If you run your game now, you won't see any change—we need to draw the map to our screen first 🖌️ Add this to your `_draw()` function:
 
@@ -137,7 +137,7 @@ Our game is still just a character roaming around a map though—a player has no
 
 Head over to the sound tab (🔉 )—and use your mouse to draw something like the sound below 👇
 
-![](sound.png)
+![](img/sound.png)
 
 It's high pitched, and pretty irritating 🤯
 
@@ -161,7 +161,7 @@ if(mget(x/8,y/8)==4) stop("game over!", 50, 64, 10)--50(x), 64(y), 10(color)
 
 This condition checks if the map tile our character is on is the treasure chest (sprite no.4 for me), and if it is, displays a game over message like this 👇
 
-![](game_over.png)
+![](img/game_over.png)
 
 You just made your own game, in under 30 minutes—how cool is that! This game can be hacked on in many ways, you should totally go ahead and make it more customized! Here are a few ideas 👇
 
