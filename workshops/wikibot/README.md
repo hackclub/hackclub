@@ -160,6 +160,6 @@ Here are some you can play with 👇
 - [Jokes API](https://08ad1pao69.execute-api.us-east-1.amazonaws.com/dev/random_joke) (Warning: jokes are **bad**)
 - [Chuck Norris](https://api.chucknorris.io/jokes/random) (Jokes on _American Rajinikanth_)
 - [Tonald Dump API](https://api.tronalddump.io/random/quote) (Stupid things Donald Trump has said)
-- [DataMuse API](https://www.datamuse.com/api) (A super cool API to find meaningful/rhyming words with specific criteria)
+- [Datamuse API](https://www.datamuse.com/api) (A super cool API to find meaningful/rhyming words with specific criteria)
 
 All code for my WikiBot is on [GitHub](https://github.com/jajoosam/wikibot), feel free to refer to it ✨
