@@ -12,10 +12,10 @@ Quick Hack Club links:
 
 | Action                          | Link                                   |
 | ------------------------------- | -------------------------------------- |
-| Join the Slack                  | [`workshops/slack/`](workshops/slack/) |
+| Join the Slack                  | https://slack.hackclub.com             |
 | See our workshops               | https://workshops.hackclub.com         |
 | See the club guide              | [`clubs/README.md`](clubs/README.md)   |
-| Start a club                    | https://hackclub.com/apply             |
+| Start a club                    | https://hackclub.com/start             |
 | See our website                 | https://hackclub.com                   |
 | See our contribution guidelines | [`CONTRIBUTING.md`](CONTRIBUTING.md)   |
 | Read our code of conduct        | [`CONDUCT.md`](CONDUCT.md)             |
