@@ -2,7 +2,7 @@
 name: Wishlist
 description: Community wishlist for new workshops. Please contribute!
 group: misc
-order: 3
+order: 2
 ---
 
 This is not a standard workshop—it's a place to record wanted workshops.
