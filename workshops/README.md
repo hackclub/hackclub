@@ -6,4 +6,4 @@ Anyone can contribute a workshop. All you have to do is submit a pull request th
 
 `README.md` must be written in the [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax. We recommend [this cheatsheet](http://commonmark.org/help/) for getting started with Markdown.
 
-If you have any questions, please [join us on the Slack](slack/README.md) and we'll be more than happy to give you a hand :smile:.
+If you have any questions, please [join us on the Slack](https://slack.hackclub.com) and we'll be more than happy to give you a hand :smile:.

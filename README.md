@@ -24,7 +24,7 @@ Quick Hack Club links:
 
 Contributions are welcome!
 
-If you need any help, please contact us at team@hackclub.com or on our [Slack](workshops/slack/).
+If you need any help, please contact us at team@hackclub.com or on our [Slack](https://slack.hackclub.com).
 
 1. Check out our [public issues board][0]. If your issue isn't on the board, [open a new one][1].
 2. Pick an issue that nobody has claimed and start working on it. First time contributors should look for the "[first-timers-only][2]" label on issues.

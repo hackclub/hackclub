@@ -20,7 +20,7 @@ Explicit enforcement of the Code of Conduct applies to all official online Hack 
 
 - The [GitHub projects](https://github.com/hackclub/)
 - The [Facebook Group](https://www.facebook.com/groups/1501083703514499/)
-- The [Slack](workshops/slack/)
+- The [Slack](https://slack.hackclub.com)
 - The `#hack-club` IRC channel on Freenode
 - Club Meetings
 
