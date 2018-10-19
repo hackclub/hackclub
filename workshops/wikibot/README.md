@@ -1,6 +1,12 @@
-# WikiBot 💬 🤖
+---
+name: WikiBot
+description: Build a WhatsApp bot with Twilio APIs, in 30 minutes 🕐
+author: "@jajoosam"
+group: experimental
+order: 16
+---
 
-## Build a WhatsApp bot with Twilio APIs, in 30 minutes 🕐
+# WikiBot 💬 🤖
 
 A few months ago, I'd started making chatbots on [Telegram](https://t.me)—I'd seen APIs for WhatsApp but they were unoffical and there was a chance for getting your number blocked 📱 ❌
 
