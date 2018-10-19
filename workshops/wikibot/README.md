@@ -22,7 +22,7 @@ First, Sign up for [Twilio](https://www.twilio.com/try-twilio)—it's free and y
 
 ![](twilio_signup.png)
 
-Once you're done verifying your phone number, select Procuts > Programmable SMS and then continue to name your project.
+Once you're done verifying your phone number, select Products > Programmable SMS and then continue to name your project.
 
 ![](twilio_products.png)
 
