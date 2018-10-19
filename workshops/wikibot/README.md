@@ -12,7 +12,7 @@ A few months ago, I'd started making chatbots on [Telegram](https://t.me)—I'd 
 
 A week ago, I saw that [Twilio](https://twilio.com) had an official WhatsApp API. 30 minutes later, I made a [Wikipedia bot on WhatsApp](https://wikibot.4ty2.fun) 👇
 
-![](Untitled-b9da3f92-94c0-4f97-8afb-787110d8a9d3.png)
+![](demo.png)
 
 This is a workshop to help you make a something like this, and make your own chatbots on WhatsApp, in just 30 minutes 🎓
 
@@ -20,21 +20,21 @@ This is a workshop to help you make a something like this, and make your own cha
 
 First, Sign up for [Twilio](https://www.twilio.com/try-twilio)—it's free and you won't need a credit card 💳
 
-![](screely-1535885763017-fc654067-9557-4bf7-98b5-4337911ff4ba.png)
+![](twilio_signup.png)
 
 Once you're done verifying your phone number, select Procuts > Programmable SMS and then continue to name your project.
 
-![](screely-1535885937977-c5a924ec-8cc3-4430-9345-9b5e1dc74ef3.png)
+![](twilio_products.png)
 
 Feel free to skip steps for adding teammates—you won't need that for now.
 
 You must now take note of some authentication keys you'll need for building the WhatsApp bot 👇
 
-![](screely-1535886250966-f68b6cfb-c104-4adf-80e7-4e3f9bd15b5b.png)
+![](auth_token.png)
 
 The final step—[set up your WhatsApp Sandbox](https://www.twilio.com/console/sms/whatsapp/sandbox)—choose any number, and join your sandbox following instructions on the page.
 
-![](screely-1535886798623-1dac1ba9-c362-4e49-87ab-7bbb6138e8c7.png)
+![](whatsapp_sandbox.png)
 
 …and you're done with credential setup! Don't worry, that was the toughest part of this tutorial 😛
 
@@ -53,11 +53,11 @@ You can see, this environment already has dependencies installed, and an `expres
 
 Let's go back to the [WhatsApp Sandbox](https://www.twilio.com/console/sms/whatsapp/sandbox), and put in a webhook URL for incoming messages.
 
-![](Untitled-3ed5263b-c6d8-492b-ba08-b4644ab502cf.png)
+![](sandbox_webhook_url.png)
 
 This URL must be what you see on the preview panel of your [repl.it](http://repl.it) project + `/incoming`
 
-![](Untitled-1779b21f-9100-4942-b732-320dc48c5f76.png)
+![](replit_url.png)
 
 We can now finally read messages that are sent to the bot. Add a simple `console.log()` in your webhook handler 👇
 
@@ -69,7 +69,7 @@ app.post('/incoming', (req, res) => {
 
 When you send a message to your bot, you should be able to see something like this in your repl.it console 👨‍💻
 
-![](Untitled-163eb09e-e6ab-4910-badb-d8aa0aa789f7.png)
+![](app_running.png)
 
 Building an Echo bot would look something like this, using `twiml` to write a message 👇
 
