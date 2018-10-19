@@ -8,7 +8,7 @@ order: 16
 
 # WikiBot 💬 🤖
 
-A few months ago, I'd started making chatbots on [Telegram](https://t.me)—I'd seen APIs for WhatsApp but they were unoffical and there was a chance for getting your number blocked 📱 ❌
+A few months ago, I'd started making chatbots on [Telegram](https://t.me)—I'd seen APIs for WhatsApp but they were unofficial and there was a chance for getting your number blocked 📱 ❌
 
 A week ago, I saw that [Twilio](https://twilio.com) had an official WhatsApp API. 30 minutes later, I made a [Wikipedia bot on WhatsApp](https://wikibot.4ty2.fun) 👇
 
