@@ -36,11 +36,7 @@ This workshop should take around 45 minutes.
 
 [Repl.it](https://repl.it) is an online code editor. It's similar to Google Docs, but has some important features that make it much better for typing code than a regular text editor.
 
-To get started go to [https://repl.it](https://repl.it) and type in "HTML"
-
-> ![](img/html_repl.gif)
-
-Press <kbd>Enter</kbd> and your coding environment will spin up in just a few seconds!
+To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
 
 ![](img/new_repl.png)
 
