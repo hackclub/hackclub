@@ -61,7 +61,7 @@ Now, let's add our JavaScript dependencies, namely, p5.js. Let's add that into o
 </body>
 ```
 
-We'll also need to attach our JavaScript file, `index.js`. Add this below the line that adds p5.js:
+We'll also need to attach our JavaScript file, `script.js`. Add this below the line that adds p5.js:
 
 ```html
 <body>
@@ -74,7 +74,7 @@ Go ahead and **Run** the project (or the shortcut <kbd>Ctrl</kbd>+<kbd>Enter</kb
 
 ### Priming the JS File
 
-Double-click `index.js` to open, and type the following:
+Double-click `script.js` to open, and type the following:
 
 ```js
 function setup() {
