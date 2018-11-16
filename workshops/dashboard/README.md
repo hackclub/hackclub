@@ -242,7 +242,7 @@ function loadNews() {
 }
 ```
 
-Lastly, before we close out of our `index.js` file, make sure to call all your functions! 
+Lastly, before we close out of our `script.js` file, make sure to call all your functions! 
 
 ```js
 loadDate();
