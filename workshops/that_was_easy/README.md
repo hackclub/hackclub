@@ -479,7 +479,7 @@ function delegateKeypress(event) {
 }
 ```
 
-And that's it! Run the repl with your new`script.js` and try out the key binding!
+And that's it! Run the repl with your new `script.js` and try out the key binding!
 
 ## Part VI: Publishing and Sharing
 
