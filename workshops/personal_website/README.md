@@ -14,7 +14,7 @@ It will look something like this:
 
 ![](img/dino_site.png)
 
-Here's the [live demo][final_live_demo] and [final code][final_code] (see `index.html` and `index.css`).
+Here's the [live demo][final_live_demo] and [final code][final_code] (see `index.html` and `style.css`).
 
 This workshop should take around 45 minutes.
 
@@ -38,7 +38,7 @@ This workshop should take around 45 minutes.
 
 To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
 
-![](img/new_repl.png)
+![](img/html_repl.png)
 
 ## Part II: The HTML File
 
@@ -167,17 +167,17 @@ While HTML oversees the content and the way it's structured, CSS is how you'll s
 
 ### 1) Using CSS
 
-We already have an `index.css` in the file tree and this is called an external style sheet because the CSS file is external to the HTML file (i.e., the stylesheet is not inside the HTML file).
+We already have an `style.css` in the file tree and this is called an external style sheet because the CSS file is external to the HTML file (i.e., the stylesheet is not inside the HTML file).
 
 ![](img/index_css.png)
 
 Although we have a CSS file, until we explicitly tell the HTML file to use the CSS file, it will not use it. We must explicitly link the CSS file in the HTML. We'll do this by typing the following into the head of `index.html` (between `<head>` and `</head>`), because the head is where we tell information about the page to the browser.
 
 ```html
-<link rel="stylesheet" href="index.css" />
+<link rel="stylesheet" href="style.css" />
 ```
 
-`<link />` is the link tag, which describes relationships between the current file (in this case, `index.html`), and some external file (`index.css`). In our example, `rel="stylesheet"` specifies what this relationship is, i.e., that `index.css` is a stylesheet, and `href` (hypertext reference) specifies where the file can be found (in this case, it's just the filename `index.css`). The link tag, similar to the image tag, is a self-closing tag, once again denoted by the `/` that precedes the `>`.
+`<link />` is the link tag, which describes relationships between the current file (in this case, `index.html`), and some external file (`style.css`). In our example, `rel="stylesheet"` specifies what this relationship is, i.e., that `style.css` is a stylesheet, and `href` (hypertext reference) specifies where the file can be found (in this case, it's just the filename `style.css`). The link tag, similar to the image tag, is a self-closing tag, once again denoted by the `/` that precedes the `>`.
 
 Our HTML file now looks like so:
 
@@ -185,7 +185,7 @@ Our HTML file now looks like so:
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
@@ -202,7 +202,7 @@ Remember to save your `index.html`.
 
 Now that we've linked our CSS file to our HTML file, let's write some CSS to resize the image.
 
-Open up `index.css` and type the following:
+Open up `style.css` and type the following:
 
 ```css
 img {

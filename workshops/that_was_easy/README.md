@@ -63,30 +63,30 @@ Similar to our HTML file in the [Personal Website workshop](https://hackclub.com
 
 Go ahead and **Run** your repl; you should just see a blank page in the preview.
 
-### Adding `index.js` to the HTML File
+### Adding `script.js` to the HTML File
 
-As you can see in the pane on the left (called a file tree) we have an `index.js` file. Since HTML depends on JavaScript to make our button play sounds, we must include a reference to the JavaScript file within the HTML file. We can do this by using an HTML tag called the script tag (`<script>`), which is how JavaScript files are included in HTML files.
+As you can see in the pane on the left (called a file tree) we have an `script.js` file. Since HTML depends on JavaScript to make our button play sounds, we must include a reference to the JavaScript file within the HTML file. We can do this by using an HTML tag called the script tag (`<script>`), which is how JavaScript files are included in HTML files.
 
 The script tag has an attribute called source (`src`), which is where we will fill in the URL to the JavaScript file we want to include.
 
-Let's write this line of code inside the **body** of the HTML file, to include our `index.js` file:
+Let's write this line of code inside the **body** of the HTML file, to include our `script.js` file:
 
 ```html
-<script src="index.js"></script>
+<script src="script.js"></script>
 ```
 
-There! Now our HTML file knows that it should grab the `index.js` file.
+There! Now our HTML file knows that it should grab the `script.js` file.
 
-For this workshop, we'll be using the handy library called jQuery inside our `index.js`. jQuery is a collection of functions and JavaScript code written to make writing JavaScript for the browser much easier. It provides a cleaner and simpler way to make things happen, almost like shortcuts.
+For this workshop, we'll be using the handy library called jQuery inside our `script.js`. jQuery is a collection of functions and JavaScript code written to make writing JavaScript for the browser much easier. It provides a cleaner and simpler way to make things happen, almost like shortcuts.
 
 We'll let the browser know that we'll be using jQuery by once again using a `<script>` tag. jQuery can be found at [this URL](https://code.jquery.com/jquery-3.3.1.min.js), so that's what we will put as the value for `src`.
 
-Since we will be using jQuery in `index.js`, `index.js` will be reliant on jQuery. Thus, we will put the script tag containing jQuery **above** the one containing `index.js` in the **body** of `index.html` in order to load jQuery before loading `index.js` like so:
+Since we will be using jQuery in `script.js`, `script.js` will be reliant on jQuery. Thus, we will put the script tag containing jQuery **above** the one containing `script.js` in the **body** of `index.html` in order to load jQuery before loading `script.js` like so:
 
 ```html
 <body>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 ```
 
@@ -100,19 +100,19 @@ Now we have successfully hooked up the JavaScript to the HTML. Our `index.html` 
   </head>
   <body>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
 ```
 
-### Adding `index.css` to the HTML File
+### Adding `style.css` to the HTML File
 
-Lastly, we'll add our `index.css` to the HTML file. Add it to the **head** of `index.html` under the title, like so:
+Lastly, we'll add our `style.css` to the HTML file. Add it to the **head** of `index.html` under the title, like so:
 
 ```html
 <head>
   <title>That Was Easy</title>
-  <link href="index.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 ```
 
@@ -123,11 +123,11 @@ Lastly, we'll add our `index.css` to the HTML file. Add it to the **head** of `i
 <html>
   <head>
     <title>That Was Easy</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
 ```
@@ -145,7 +145,7 @@ We use the button tag by typing the text we want on the button between the start
   <button>Easy</button>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 ```
 
@@ -160,13 +160,13 @@ Now `index.html` looks like this:
 <html>
   <head>
     <title>That Was Easy</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <button>Easy</button>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
 ```
@@ -188,13 +188,13 @@ Our HTML now looks like this:
 <html>
   <head>
     <title>That Was Easy</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <button id="easy">Easy</button>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
 ```
@@ -207,13 +207,13 @@ Now it's time to write the functionality behind our sound-playing button. We can
 - creating a function that plays the sound
 - detecting a click on the button, and executing the function when that happens
 
-Let's open up `index.js` and start writing JavaScript!
+Let's open up `script.js` and start writing JavaScript!
 
 ### Playing the Sound
 
 JavaScript makes using audio easy with the Audio object. We are going to play audio in our code by creating an Audio object for our `.mp3` file.
 
-We'll be storing the Audio object in a variable. A variable in JavaScript is something that stores a value. First, let's declare the existence of our variable by typing the following into `index.js`:
+We'll be storing the Audio object in a variable. A variable in JavaScript is something that stores a value. First, let's declare the existence of our variable by typing the following into `script.js`:
 
 ```js
 var thatWasEasy;
@@ -275,9 +275,9 @@ It's time to connect the button to our sound function.
 
 ### Detecting the Click
 
-In order to connect the button and the function, we must first identify the button in `index.js`. Conveniently, we've given the button an `id` attribute in our `index.html`, making it easy to refer to in `index.js`.
+In order to connect the button and the function, we must first identify the button in `script.js`. Conveniently, we've given the button an `id` attribute in our `index.html`, making it easy to refer to in `script.js`.
 
-We can [use jQuery to find the button](https://learn.jquery.com/using-jquery-core/selecting-elements/), by using special syntax. We'll type this below our function, in `index.js`:
+We can [use jQuery to find the button](https://learn.jquery.com/using-jquery-core/selecting-elements/), by using special syntax. We'll type this below our function, in `script.js`:
 
 ```js
 $("#easy");
@@ -308,7 +308,7 @@ To reiterate, we are:
 3. Choosing to detect the "click" event.
 4. Passing as an argument the function `sayThatWasEasy()`, to tell `.on()` that upon noticing a click, it should execute the function (which in turn plays the `that_was_easy.mp3` sound).
 
-Now, save your `index.js` file and try clicking on the "Easy" button! Congratulations!
+Now, save your `script.js` file and try clicking on the "Easy" button! Congratulations!
 
 Your JavaScript file should now look like this:
 
@@ -323,7 +323,7 @@ $("#easy").on("click", sayThatWasEasy);
 
 ## Part IV: The CSS File
 
-Our button looks a little pathetic in its small default form. Open up `index.css` and let's spruce it up with some CSS!
+Our button looks a little pathetic in its small default form. Open up `style.css` and let's spruce it up with some CSS!
 
 First, let's select it! Using our very handy `id`:
 
@@ -386,7 +386,7 @@ Maybe you'd like to use this button mouse-free. Maybe you prefer using the keybo
 
 ### Detecting Keyboard Inputs on the Page
 
-First, we must set up our JavaScript so that the page can detect that we have pressed a key. Thanks to jQuery, we can add this feature easily, with the following line of code, which we will type at the bottom of our `index.js`:
+First, we must set up our JavaScript so that the page can detect that we have pressed a key. Thanks to jQuery, we can add this feature easily, with the following line of code, which we will type at the bottom of our `script.js`:
 
 ```js
 $(document).keypress();
@@ -479,7 +479,7 @@ function delegateKeypress(event) {
 }
 ```
 
-And that's it! Run the repl with your new`index.js` and try out the key binding!
+And that's it! Run the repl with your new `script.js` and try out the key binding!
 
 ## Part VI: Publishing and Sharing
 

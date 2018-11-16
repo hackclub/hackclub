@@ -39,7 +39,7 @@ We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
 
 First, go to [Repl.it](https://repl.it) and spin up a new [HTML repl](https://repl.it/languages/html)
 
-![](img/new_repl.png)
+![](img/html_repl.png)
 
 From here, clear the contents of `index.html` and put the following in its place
 
@@ -61,12 +61,12 @@ Now, let's add our JavaScript dependencies, namely, p5.js. Let's add that into o
 </body>
 ```
 
-We'll also need to attach our JavaScript file, `index.js`. Add this below the line that adds p5.js:
+We'll also need to attach our JavaScript file, `script.js`. Add this below the line that adds p5.js:
 
 ```html
 <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 ```
 
@@ -74,7 +74,7 @@ Go ahead and **Run** the project (or the shortcut <kbd>Ctrl</kbd>+<kbd>Enter</kb
 
 ### Priming the JS File
 
-Double-click `index.js` to open, and type the following:
+Double-click `script.js` to open, and type the following:
 
 ```js
 function setup() {

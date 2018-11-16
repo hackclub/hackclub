@@ -41,9 +41,9 @@ Just as we've done previously, we're going to be building this project in Repl.i
 
 Go ahead and spin up a new [HTML repl](https://repl.it/languages/html) before continuing.
 
-![](img/fresh.png)
+![](img/html_repl.png)
 
-Our project's code is going to be divided into two files: `index.html` (the HTML code) and `index.js` (the JavaScript code). The HTML file will tell the browser about the game's existence and how to display it on the page. The JavaScript file will tell the browser how to actually run the game.
+Our project's code is going to be divided into two files: `index.html` (the HTML code) and `script.js` (the JavaScript code). The HTML file will tell the browser about the game's existence and how to display it on the page. The JavaScript file will tell the browser how to actually run the game.
 
 First things first, clear the contents of your `index.html` and put the following in its place
 
@@ -62,7 +62,7 @@ First things first, clear the contents of your `index.html` and put the followin
 
 The two `script` tags inside of `body` tell the browser to load p5.js and p5.play, which we'll need to run our game.
  
-Great, so now we have `index.html` and `index.js`. `index.html` is loading p5.js and p5.play, but it doesn't know about `index.js` yet. Let's change that by adding `<script src="index.js"></script>` to the **body** in `index.html`, beneath the other `script` tags. `index.html` should now look like this:
+Great, so now we have `index.html` and `script.js`. `index.html` is loading p5.js and p5.play, but it doesn't know about `script.js` yet. Let's change that by adding `<script src="script.js"></script>` to the **body** in `index.html`, beneath the other `script` tags. `index.html` should now look like this:
 
 ```html
 <!DOCTYPE html>
@@ -73,7 +73,7 @@ Great, so now we have `index.html` and `index.js`. `index.html` is loading p5.js
 <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
   <script src="https://cdn.rawgit.com/molleindustria/p5.play/42cd19c3/lib/p5.play.js"></script>
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
@@ -86,7 +86,7 @@ Now, save using the shortcut <kbd>Command</kbd>+<kbd>s</kbd> or <kbd>Ctrl</kbd>+
 
 p5.js works by automatically calling two special functions: `setup()` and `draw()` to create the visuals on your webpage. We'll be writing our own code in these functions, so that p5.js can then run our code.
 
-Double-click `index.js` to open, and add these functions (type them out, don't copy and paste!).
+Double-click `script.js` to open, and add these functions (type them out, don't copy and paste!).
 
 ```js
 function setup() {
