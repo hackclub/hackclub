@@ -39,7 +39,7 @@ We'll be creating a cool graphic like the one above, using JavaScript and p5.js.
 
 First, go to [Repl.it](https://repl.it) and spin up a new [HTML repl](https://repl.it/languages/html)
 
-![](img/new_repl.png)
+![](img/html_repl.png)
 
 From here, clear the contents of `index.html` and put the following in its place
 
