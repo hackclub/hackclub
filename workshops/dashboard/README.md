@@ -52,7 +52,7 @@ Once again, keep your API key handy to use in our JavaScript functions.
 
 ## Part II: The markup
 
-We'll be keeping our markup really simple. Along with our basic tags, we'll be importing the normalize CSS library and our `index.css` stylesheet, adding three `id`s for our date, weather, and news. Lastly, we'll need to link up jQuery and the `index.js` file where we will write our functions. 
+We'll be keeping our markup really simple. Along with our basic tags, we'll be importing the normalize CSS library and our `style.css` stylesheet, adding three `id`s for our date, weather, and news. Lastly, we'll need to link up jQuery and the `script.js` file where we will write our functions. 
 
 ```html
 <!DOCTYPE html>
@@ -64,7 +64,7 @@ We'll be keeping our markup really simple. Along with our basic tags, we'll be i
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -84,7 +84,7 @@ We'll be keeping our markup really simple. Along with our basic tags, we'll be i
         src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
 ```
@@ -252,7 +252,7 @@ loadNews();
 
 ## Part IV: Some styling
 
-We still have one last step: we need to make our dashboard look decent! Open up your `index.css` and let's get to work!
+We still have one last step: we need to make our dashboard look decent! Open up your `style.css` and let's get to work!
 
 First off, let's center the whole HTML app using `margin: 0 auto;` and `max-width`. We'll also change up our `font-family`. 
 
