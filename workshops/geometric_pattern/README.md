@@ -66,7 +66,7 @@ We'll also need to attach our JavaScript file, `script.js`. Add this below the l
 ```html
 <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 ```
 
