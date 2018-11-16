@@ -41,7 +41,7 @@ Just as we've done previously, we're going to be building this project in Repl.i
 
 Go ahead and spin up a new [HTML repl](https://repl.it/languages/html) before continuing.
 
-![](img/fresh.png)
+![](img/html_repl.png)
 
 Our project's code is going to be divided into two files: `index.html` (the HTML code) and `index.js` (the JavaScript code). The HTML file will tell the browser about the game's existence and how to display it on the page. The JavaScript file will tell the browser how to actually run the game.
 
