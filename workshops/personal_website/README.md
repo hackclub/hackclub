@@ -38,7 +38,7 @@ This workshop should take around 45 minutes.
 
 To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
 
-![](img/new_repl.png)
+![](img/html_repl.png)
 
 ## Part II: The HTML File
 
