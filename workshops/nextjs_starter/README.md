@@ -1,7 +1,7 @@
 ---
 name: Starting with Next.js
-description: Personal dashboard with news and weather
-author: @lachlanjc
+description: Intro to React & Next.js with a shopping list website
+author: "@lachlanjc"
 group: react
 order: 2
 ---
