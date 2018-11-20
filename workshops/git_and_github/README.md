@@ -45,14 +45,12 @@ _**This workshop has been retired and is no longer maintained or recommended.**_
 
 ## Tips and Tricks While Using This Workshop
 
-1. To see a GIF in another tab, right click on the GIF and click _open in new
-   tab_.
-2. **Don't include** the **square brackets** mentioned (`[text-here]`) when
+1. **Don't include** the **square brackets** mentioned (`[text-here]`) when
    typing.
   - Those are indicators of areas where you type custom text.
-  - `5. Type: git branch [branch-name]` would be: `git branch custom-text`.
-3. After you type a command in the terminal, hit **"enter"** on your
-   **keyboard** to complete the command.
+  - `Type: git branch [branch-name]` would be: `git branch custom-text`.
+2. After you type a command in the terminal, hit <kbd>enter</kbd> on your
+   keyboard to complete the command.
 
 ## Preparing Your Workspace
 
@@ -116,7 +114,7 @@ will take you through setting the workspace up.
 6. Save the `index.html` file.
   - Make sure the active file is the `index.html` file by either clicking on it
     on the sidebar or clicking anywhere in the code.
-  - You may press Ctrl+S (Windows), Command+S (Mac) or go to File --> Save.
+  - You may press <kbd>Ctrl+S</kbd> (Windows), <kbd>Cmd+S</kbd> (Mac) or go to File --> Save.
 
     ![save in Cloud9](img/save_in_cloud9.gif)
 
@@ -174,7 +172,7 @@ A repository is a place where your project files are stored.
   - Two people don't work on the same file at the same time.
     - Each person has their own version of the code.
 - Their own copy of the files is called a **fork** or **"forking a repo"**.
-- Must be named without spaces -- **replace a space with a dash (-)**.
+- Must be named without spaces — **replace a space with a dash (-)**.
 
 ![example branches](img/example_branches.png)
 
@@ -294,7 +292,7 @@ on their servers (https://pages.github.com/).
    ![GitHub username](img/github_username.png)
 
   - The characters for the password not show up in the terminal for security
-   reasons -- just keep typing!
+   reasons — just keep typing!
 
    ![git push password](img/git_push_password.gif)
 
@@ -303,7 +301,7 @@ on their servers (https://pages.github.com/).
   - We must name this [branch name] `gh-pages`.
     - GitHub will only host files in a branch named `gh-pages`.
   - **Example command: `git branch gh-pages`**.
-  - Must be named without spaces -- **replace a space with a dash (-)**.
+  - Must be named without spaces — **replace a space with a dash (-)**.
   - If you create a branch with the wrong name, delete it using:.
     - `git branch -d [name of branch]`.
 6. Type: `git push gh-pages`.
@@ -354,7 +352,7 @@ on their servers (https://pages.github.com/).
       - No spaces between your name --> replace a space with a dash (-).
       - Short and to the point description.
   - Click the green button that says "Create repository".
-  - Copy the .git link it provides -- that's your `link to repo`.
+  - Copy the .git link it provides — that's your `link to repo`.
   - It will be something similar looking to:
     https://github.com/nguyenbrian/example.git
 
@@ -369,7 +367,7 @@ on their servers (https://pages.github.com/).
     **controller (remote)** with your **hand (local)** and it **changes** the
     channel one upon your **TV (remote repo)**.
 
-  - Open your terminal on **Cloud 9** and type the command:
+  - Open your terminal on **Cloud9** and type the command:
     - `git remote add [remote-name] [link to repo]`
   - [remote-name] is where you name your remote.
     - **Don't include the square brackets** when you type, this is custom text
@@ -400,9 +398,8 @@ on their servers (https://pages.github.com/).
   - Think of committing as packaging something into a package and putting the
     shipping label on it.
   - Don't make bad commit messages: be concise, but clear about what you did.
-    - [Bad message example](img/bad_commit_message.png)
-    - [Good message example](img/good_commit_message.png)
-
+    ![Bad message example](img/bad_commit_message.png)
+    ![Good message example](img/good_commit_message.png)
     ![git commit](img/git_commit.gif)
 
 4. Type: `git push`.
