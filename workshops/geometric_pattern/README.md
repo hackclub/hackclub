@@ -561,7 +561,7 @@ We've got another feature done, so let's **Run** again
 
 You can actually download the this cool pattern to your computer, to use as a desktop background or what have you. p5.js provides a function [`saveCanvas()`](https://p5js.org/reference/#p5/saveCanvas) to download the canvas.
 
-We can attach this function to a key press by using p5's `keyPressed` function. Add this at the bottom of your `index.js`:
+We can attach this function to a key press by using p5's `keyPressed` function. Add this at the bottom of your `script.js`:
 
 ```js
 function keyPressed() {
@@ -647,7 +647,7 @@ rVal = (rVal + 254) % 256;
 
 Save and refresh and be warned that it might be jarring.
 
-As a check, your `index.js` should look like this:
+As a check, your `script.js` should look like this:
 
 Final code:
 
