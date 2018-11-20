@@ -2,7 +2,7 @@
 name: 'Getting Started with React'
 description: 'A collection of information about React.js'
 author: '@itenpn'
-group: 'React'
+group: 'react'
 order: 1
 ---
 
