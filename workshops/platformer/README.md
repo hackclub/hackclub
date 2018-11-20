@@ -466,7 +466,7 @@ In this line, we are handling a collision between any of the sprites in `obstacl
 
 ### Handling Collisions
 
-At the bottom of `index.js`, below our `draw()` function, we can add our `endGame` function:
+At the bottom of `script.js`, below our `draw()` function, we can add our `endGame` function:
 
 ```js
 function endGame() {
