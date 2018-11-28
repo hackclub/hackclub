@@ -11,8 +11,11 @@ order: 8
 Let's make a synth pad, using simple HTML and a fun javascript package called Tone.js.
 
 Here's my version:
+
 [Live Version](https://synth--polytrope.repl.co)
+
 [Source Code](https://repl.it/@polytrope/synth)
+
 ![](img/color_synth.gif)
 
 To get started, open up a new HTML project here: https://repl.it/languages/html
