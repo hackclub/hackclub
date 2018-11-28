@@ -10,19 +10,22 @@ order: 8
 
 Let's make a synth pad, using simple HTML and a fun javascript package called Tone.js.
 
-Here's my version:
+## My Version:
 
 [Live Version](https://synth--polytrope.repl.co)
-
 [Source Code](https://repl.it/@polytrope/synth)
 
 ![](img/color_synth.gif)
 
-To get started, open up a new HTML project here: https://repl.it/languages/html
+## Getting Started
 
-Delete _everything_. You should be left with a blank `index.html` file and that's it.
+Open up a new HTML project here: https://repl.it/languages/html
+
+Delete _everything_. You should be left with a blank `index.html` file and that's it:
 
 ![](img/new_project.png)
+
+We're going to do everything in one file, for the sake of simplicity.
 
 Set up your `index.html` like this:
 
@@ -48,6 +51,8 @@ Set up your `index.html` like this:
 </html>
 ```
 
+## HTML
+
 First let's do our HTML. Our synth pad will be one big button, so the HTML is just a single `div` named "pad":
 
 ```html
@@ -56,7 +61,11 @@ First let's do our HTML. Our synth pad will be one big button, so the HTML is ju
 </body>
 ```
 
-Now if you run the page, you get... nothing. So let's give that pad some style. We want the pad to occupy the whole page, so we're going to set it to `position: absolute;`—which gives us full control over this div's position and size, instead of placing it relative to its neighbors—and we'll set `top`, `left`, `right`, and `bottom` all to 0. This means there will be zero pixels between each side of the div and the browser window.
+Now if you run the page, you get... nothing. So let's give that pad some style.
+
+## CSS
+
+We want the pad to occupy the whole page, so we're going to set it to `position: absolute;`—which gives us full control over this div's position and size, instead of placing it relative to its neighbors—and we'll set `top`, `left`, `right`, and `bottom` all to 0. This means there will be zero pixels between each side of the div and the browser window.
 
 Finally, we'll set `background: black;` so you can actually see it.
 
@@ -79,11 +88,13 @@ Your `style` section should now look like this:
 
 Now if you run the page, you should get a big black rectangle. Which is pretty exciting.
 
+## JavaScript
+
 Let's make some noise using Tone.js. Search for "Tone" in the Packages tab and click the Plus icon. Repl.it will insert a snippet of code into your file that tells a browser to load Tone.js with this page.
 
 ![](img/import_tone.gif)
 
-Let's add some javascript to make Tone do something simple. Try putting this into your `script` section:
+Let's add some code to make Tone do something simple. Try putting this into your `script` section:
 
 ```html
 <script>
@@ -134,6 +145,8 @@ You should hear a super annoying noise. If you are not annoyed, either your soun
 
 (to make it stop, refresh the page.)
 
+## Adding Click/Touch with "Pointer Events"
+
 Ok, now we need a way to turn our tone on and off. Delete that `synth.triggerAttack(400);`. We're going to replace it with two _functions_ and two _listeners_—the functions will turn the synth on and off, and the listeners will activate those functions when a _pointer_ (mouse or finger) goes down or up on the page:
 
 ```js
@@ -150,6 +163,8 @@ pad.addEventListener("pointerup", up);
 
 Now if you run your page, the synth should respond to a click!
 
+## Adding a Range of Pitches
+
 It's kind of boring to make just _one_ pitch though. What if the left side of the page was a low pitch, and the right side was a high pitch?
 
 To do that, we need to know where the pointer is.
@@ -164,6 +179,8 @@ function down(event) {
 ```
 
 Now if you run your page, you should get a low pitch by clicking on the left and a high pitch by clicking on the right!
+
+## Adding a Pitch Label
 
 Ok, so what if we want to know exactly what pitch we're making? Let's add a label to make that clear.
 
@@ -266,6 +283,8 @@ Your whole `script` section should now look like this:
 
 When you run the page, you should now see the frequency of the pitch you're playing!
 
+## Adding Drag
+
 Now to add that drag feature. For this we need one more function like `up` and `down` called `move`:
 
 ```js
@@ -276,7 +295,7 @@ function move(event) {
 }
 ```
 
-Notice that this one looks a lot like `down`. It gets the X position of the pointer, and sets the label text to match the pitch. The only difference is that it calls `synth.setNote(x)` instead of `synth.triggerAttack(x)`, since we're just changing the pitch—not starting a new one.
+Notice that this one looks a lot like `down`. It gets the X position of the pointer, and sets the label text to match the pitch. The only difference is that it calls `synth.setNote(x)` instead of `synth.triggerAttack(x)`, since we're just _changing_ the pitch—not starting a new note.
 
 Like `up` and `down`, we also need a listener for `move`:
 
@@ -358,6 +377,8 @@ Now your script section should look something like this:
 ```
 
 Go ahead and try it out. If everything is set up right, you should have a fully-functional sliding synthesizer!
+
+## That's All Folks!
 
 For reference, here's my whole `index.html` file at the end of writing this:
 
