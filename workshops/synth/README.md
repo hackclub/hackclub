@@ -1,7 +1,7 @@
 ---
 name: "Synth"
 description: "Let's make a synth pad with Tone.js"
-author: "Hack Club staff"
+author: "cwalker"
 group: "start"
 order: 8
 ---
@@ -64,7 +64,9 @@ Now if you run the page, you get... nothing. So let's give that pad some style.
 
 ## CSS
 
-We want the pad to occupy the whole page, so we're going to set it to `position: absolute;`—which gives us full control over this div's position and size, instead of placing it relative to its neighbors—and we'll set `top`, `left`, `right`, and `bottom` all to 0. This means there will be zero pixels between each side of the div and the browser window (in other words, it fills the page).
+We want the pad to occupy the whole page, so we're going to set it to `position: absolute;`. This gives us full control over this div's position and size, instead of placing it relative to its neighbors.
+
+Then we'll set `top`, `left`, `right`, and `bottom` all to 0. This means there will be zero pixels between each side of the div and the browser window (in other words, it fills the page).
 
 Finally, we'll set `background: black;` so you can actually see it.
 
