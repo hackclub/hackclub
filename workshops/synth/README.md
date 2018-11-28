@@ -6,14 +6,13 @@ group: "start"
 order: 8
 ---
 
-# Synth
+# Synth Pad
 
 Let's make a synth pad, using simple HTML and a fun javascript package called Tone.js.
 
 ## My Version:
 
-[Live Version](https://synth--polytrope.repl.co)
-[Source Code](https://repl.it/@polytrope/synth)
+[Live Version](https://synth--polytrope.repl.co) | [Source Code](https://repl.it/@polytrope/synth)
 
 ![](img/color_synth.gif)
 
