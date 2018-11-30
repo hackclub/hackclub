@@ -304,16 +304,6 @@ Like `up` and `down`, we also need a listener for `move`:
 pad.addEventListener("pointermove", move);
 ```
 
-Finally, we'll add one more property to the `#pad` style called `touch-action`—just to make sure this works right on a phone. We set this to `none`, to make sure the browser knows to ignore the usual touchscreen behaviors like drag-to-scroll:
-
-```css
-#pad {
-  /* ...other CSS */
-
-  touch-action: none;
-}
-```
-
 Now when you run your page, you should be able to click and drag to change pitch!
 
 ![](img/drag_pitch.gif)
@@ -405,8 +395,6 @@ For reference, here's my whole `index.html` file at the end of writing this:
       display: flex;
       justify-content: center;
       align-items: center;
-
-      touch-action: none;
     }
 
     #label {
