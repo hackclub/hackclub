@@ -8,7 +8,7 @@ order: 8
 
 # Synth Pad
 
-Let's make a synth pad, using simple HTML and a fun javascript package called Tone.js.
+Let's make a synth pad, using simple HTML and a fun JavaScript package called Tone.js.
 
 ## My Version:
 
@@ -64,9 +64,9 @@ Now if you run the page, you get... nothing. So let's give that pad some style.
 
 ## CSS
 
-We want the pad to occupy the whole page, so we're going to set it to `position: absolute;`. This gives us full control over this div's position and size, instead of placing it relative to its neighbors.
+We want the pad to occupy the whole page, so we're going to set it to `position: absolute;`. This gives us full control over this `div`'s position and size, instead of placing it relative to its neighbors.
 
-Then we'll set `top`, `left`, `right`, and `bottom` all to 0. This means there will be zero pixels between each side of the div and the browser window (in other words, it fills the page).
+Then we'll set `top`, `left`, `right`, and `bottom` all to 0. This means there will be zero pixels between each side of the `div` and the browser window (in other words, it fills the page).
 
 Finally, we'll set `background: black;` so you can actually see it.
 
@@ -185,7 +185,7 @@ Now if you run your page, you should get a low pitch by clicking on the left and
 
 Ok, so what if we want to know exactly what pitch we're making? Let's add a label to make that clear.
 
-Inside your synth pad, add one more div, call it "label", and put CLICK / DRAG inside (we're going to add some dragging action later):
+Inside your synth pad, add one more `div`, call it "label", and put CLICK / DRAG inside (we're going to add some dragging action later):
 
 ```html
 <body>
@@ -206,7 +206,7 @@ Our new label needs some style. Add this to your `style` section to change the t
 
 Now if you run the page you should get a big white "CLICK / DRAG" in the upper-left corner. Let's put that in the middle of the page.
 
-To center our text, we need to add three new properties to the `#pad` div:
+To center our text, we need to add three new properties to the `#pad` `div`:
 
 - `display: flex;`, which lets `#pad` automatically resize/center things
 - `justify-content: center;`, which makes anything inside `#pad` left/right-centered
@@ -242,7 +242,7 @@ Now your text should be neatly centered—the only problem is that all it says i
 
 When we trigger `down`, we want it to change our label to show the pitch. When we trigger `up`, we want it to reset to "CLICK / DRAG".
 
-To change the text inside our label, first we need to grab that label element in javascript. Add this to the top of your `script` section:
+To change the text inside our label, first we need to grab that label element in JavaScript. Add this to the top of your `script` section:
 
 ```js
 var label = document.getElementById("label");
@@ -302,16 +302,6 @@ Like `up` and `down`, we also need a listener for `move`:
 
 ```js
 pad.addEventListener("pointermove", move);
-```
-
-Finally, we'll add one more property to the `#pad` style called `touch-action`—just to make sure this works right on a phone. We set this to `none`, to make sure the browser knows to ignore the usual touchscreen behaviors like drag-to-scroll:
-
-```css
-#pad {
-  /* ...other CSS */
-
-  touch-action: none;
-}
 ```
 
 Now when you run your page, you should be able to click and drag to change pitch!
@@ -405,8 +395,6 @@ For reference, here's my whole `index.html` file at the end of writing this:
       display: flex;
       justify-content: center;
       align-items: center;
-
-      touch-action: none;
     }
 
     #label {
