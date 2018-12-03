@@ -12,17 +12,16 @@ For your Next(.js) steps, we’re building a personal dashboard with React & Nex
 
 We’re using [Repl.it](https://repl.it) today. Create a new repl, using "Next.js" as the language. ([Here's a shortcut link.](https://repl.it/languages/nextjs))
 
-Quick review—`pages/index.js` is the most important file. Whatever is returned by `export default () => (…)`gets rendered on your homepage.
+Quick review—`pages/index.js` is the most important file. Whatever is returned by `export default () => (…)` gets rendered on your homepage.
 
 Let's get something going: (put your own name in, of course)
 
 ```js
-import React, { Component } from 'react'
+import React from 'react'
 
 export default () => (
   <div>
-    <h1>Welcome, NAME!</h1>
-    <Weather />
+    <h1>Welcome, YOURNAME!</h1>
     <p>
       Powered by <a href="https://newsapi.org/">NewsAPI</a> and{' '}
       <a href="https://darksky.net/poweredby/">Dark Sky</a>
@@ -71,6 +70,7 @@ export default () => (
   <div>
     <h1>Welcome, YOURNAME!</h1>
     <Weather />
+    …
   </div>
 )
 ```
@@ -91,14 +91,14 @@ const API_KEY = '…'
 
 class Weather extends Component {
   state = {
-    temperature: 'loading…'
+    currently: 'loading'
   }
 
   render() {
     return (
       <div>
         <h2>Weather</h2>
-        <p>The current temperature is: {this.state.temperature}</p>
+        <p>The current temperature is: {this.state.currently}</p>
       </div>
     )
   }
@@ -122,19 +122,14 @@ class Weather extends Component {
   }
 
   componentDidMount() {
-    const url =
-      'https://cors-anywhere.herokuapp.com/https://api.forecast.io/forecast/'
+    const url = 'https://cors-anywhere.herokuapp.com/https://api.forecast.io/forecast/'
 
     const success = position => {
       const { latitude, longitude } = position.coords
       axios
-        .get(
-          `${url}${
-            process.env.DARK_SKY_KEY
-          }/${latitude},${longitude}?callback=?`
-        )
+        .get(`${url}${API_KEY}/${latitude},${longitude}`)
         .then(res => res.data)
-        .then(forecast => this.setState({ forecast }))
+        .then(forecast => this.setState({ forecast, currently: 'success' }))
         .catch(() => this.setState({ currently: 'error' }))
     }
 
