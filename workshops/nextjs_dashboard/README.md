@@ -1,7 +1,7 @@
 ---
 name: Dashboard with Next.js
 description: Personal dashboard of news and weather with React
-author: "@lachlanjc"
+author: '@lachlanjc'
 group: react
 order: 3
 ---
@@ -23,10 +23,12 @@ export default () => (
   <div>
     <h1>Welcome, NAME!</h1>
     <Weather />
-    <p>Powered by <a href="https://newsapi.org/">NewsAPI</a> and <a href="https://darksky.net/poweredby/">Dark Sky</a></p>
+    <p>
+      Powered by <a href="https://newsapi.org/">NewsAPI</a> and{' '}
+      <a href="https://darksky.net/poweredby/">Dark Sky</a>
+    </p>
   </div>
 )
-
 ```
 
 ## Registering for API keys
@@ -47,13 +49,13 @@ import React, { Component } from 'react'
 const API_KEY = 'MY_DARK_SKY_KEY'
 
 class Weather extends Component {
-	render() {
-		return (
-			<div>
-			  <h2>Weather</h2>
-		  </div>
-		)
-	}
+  render() {
+    return (
+      <div>
+        <h2>Weather</h2>
+      </div>
+    )
+  }
 }
 
 export default Weather
@@ -92,14 +94,14 @@ class Weather extends Component {
     temperature: 'loading…'
   }
 
-	render() {
-		return (
-			<div>
-				<h2>Weather</h2>
-	      <p>The current temperature is: {this.state.temperature}</p>
-	    </div>
-		)
-	}
+  render() {
+    return (
+      <div>
+        <h2>Weather</h2>
+        <p>The current temperature is: {this.state.temperature}</p>
+      </div>
+    )
+  }
 }
 
 export default Weather
@@ -120,7 +122,8 @@ class Weather extends Component {
   }
 
   componentDidMount() {
-    const url = 'https://cors-anywhere.herokuapp.com/https://api.forecast.io/forecast/'
+    const url =
+      'https://cors-anywhere.herokuapp.com/https://api.forecast.io/forecast/'
 
     const success = position => {
       const { latitude, longitude } = position.coords
@@ -230,7 +233,8 @@ export default () => (
     <Weather />
     <News />
     <footer>
-      Powered by <a href="https://newsapi.org/">NewsAPI</a> and <a href="https://darksky.net/poweredby/">Dark Sky</a>
+      Powered by <a href="https://newsapi.org/">NewsAPI</a> and{' '}
+      <a href="https://darksky.net/poweredby/">Dark Sky</a>
     </footer>
   </div>
 )
@@ -333,8 +337,7 @@ export default () => (
   <div>
     <h1>Welcome, YOURNAME!</h1>
     <p>
-      Hello, it’s{' '}
-      {new Date().toLocaleDateString('en-us', { weekday: 'long' })}
+      Hello, it’s {new Date().toLocaleDateString('en-us', { weekday: 'long' })}
       {'. '}
       You’re doing great.
     </p>
