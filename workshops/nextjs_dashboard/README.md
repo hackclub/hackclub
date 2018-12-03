@@ -77,7 +77,7 @@ export default () => (
 
 Check out the preview—our components are working!
 
-We need a way to fetch the weather data from Dark Sky now. Luckily, there's a handy library called [Axios](https://github.com/axios/axios) to make it easy.
+We need a way to fetch the weather data from Dark Sky now. Luckily, there's a handy library called [`axios`](https://github.com/axios/axios) to make it easy.
 
 Click "Packages" in the sidebar, then type in `axios`. Click and install it. In the terminal in the corner, you can see repl.it installing the library for you.
 
@@ -324,7 +324,7 @@ class News extends Component {
 export default News
 ```
 
-Protip: want to explore what other data you can show about articles? This example also shows the image, but there's author, name of site, time, and lots more. Inside `render()`, before `return`, add `console.log(news)`. Now right-click & "Inspect Element" in your browser, go to the "Console" section, and you can see a list of all the articles with all their fields displayed. Try adding more of these fields to your site.
+Tip: want to explore what other data you can show about articles? This example also shows the image, but there's author, name of site, time, and lots more. Inside `render()`, before `return`, add `console.log(news)`. Now right-click & "Inspect Element" in your browser, go to the "Console" section, and you can see a list of all the articles with all their fields displayed. Try adding more of these fields to your site.
 
 ## Keep going!
 
