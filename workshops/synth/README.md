@@ -148,9 +148,41 @@ You should hear a super annoying noise. If you are not annoyed, either your soun
 
 ## Adding Click/Touch with "Pointer Events"
 
-Ok, now we need a way to turn our tone on and off. Delete that `synth.triggerAttack(400);`. We're going to replace it with two _functions_ and two _listeners_—the functions will turn the synth on and off, and the listeners will activate those functions when a _pointer_ (mouse or finger) goes down or up on the page:
+Ok, now we need a way to turn our tone on and off. Delete that `synth.triggerAttack(400);`. We're going to replace it with two _functions_ and two _listeners_—the functions will turn the synth on and off, and the listeners will activate those functions when a _pointer_ (mouse or finger) the page.
+
+First, add the `down` and `up` functions:
 
 ```js
+var synth = new Tone.Synth().toMaster();
+
+function down(event) {
+  synth.triggerAttack(400);
+}
+function up(event) {
+  synth.triggerRelease();
+}
+```
+
+Now let's listen for `pointerdown` and `pointerup` events on our pad element. First we need to find the pad using `document.getElementById`:
+
+```js
+var synth = new Tone.Synth().toMaster();
+var pad = document.getElementById("pad");
+
+function down(event) {
+  synth.triggerAttack(400);
+}
+function up(event) {
+  synth.triggerRelease();
+}
+```
+
+Then we add two listeners to the pad element:
+
+```js
+var synth = new Tone.Synth().toMaster();
+var pad = document.getElementById("pad");
+
 function down(event) {
   synth.triggerAttack(400);
 }
@@ -265,6 +297,7 @@ Your whole `script` section should now look like this:
 ```html
 <script>
   var synth = new Tone.Synth().toMaster();
+  var pad = document.getElementById("pad");
   var label = document.getElementById("label");
 
   function down(event){
@@ -339,6 +372,7 @@ Now your script section should look something like this:
 ```html
 <script>
   var synth = new Tone.Synth().toMaster();
+  var pad = document.getElementById("pad");
   var label = document.getElementById("label");
   var dragging = false;
 
@@ -413,6 +447,7 @@ For reference, here's my whole `index.html` file at the end of writing this:
 
   <script>
     var synth = new Tone.Synth().toMaster();
+    var pad = document.getElementById("pad");
     var label = document.getElementById("label");
     var dragging = false;
 
