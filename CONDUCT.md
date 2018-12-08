@@ -70,7 +70,7 @@ Please understand that speech and actions have consequences, and unacceptable be
 
 Hack Club's staff members may decide to escalate the level of penalty depending on the degree of violation respectively.
 
-Please understand that we will not restrict your ability to contact the [Code of Conduct working group](#working-group) under any circustance. If you have any questions or concerns about our decision, please reach out to us directly. If your Slack account is under suspension, you should email us directly at [conduct@hackclub.com](mailto:conduct@hackclub.com).
+Please understand that we will not restrict your ability to contact the [Code of Conduct working group](#working-group) under any circumstance. If you have any questions or concerns about our decision, please reach out to us directly. If your Slack account is under suspension, you should email us directly at conduct@hackclub.com.
 
 ## Working Group
 
