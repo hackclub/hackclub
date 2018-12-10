@@ -66,9 +66,9 @@ Please understand that speech and actions have consequences, and unacceptable be
 
 - On your first offense, you will receive a written notice from one of our community moderators. Depending on the degree of the reported behavior, you may be asked to apologize, either in public or directly to the party that you have offended.
 - On a second offense, you will be temporarily removed from the community. The period of the temporary ban may vary from 3 days to a month, decided based on the seriousness of the reported behavior. Please note that this ban **does not indicate the you are no longer welcomed in the community** - it represents an official warning for your behavior.
-- On a third offense, you may be asked to leave the community. Your account may be suspended for an indefinite amount of time.
+- On a third offense, you may be asked to leave the community. Your account may be suspended for an indefinite amount of time, and you may be publicly identified.
 
-Hack Club's staff members may decide to escalate the level of penalty depending on the degree of violation respectively.
+This procedure only serves as a general guideline for moderation & enforcement of our community conduct. Under all circumstances, the Working Group or Hack Club's staff members may take any action we deem appropriate, including an immediate removal from the community. Being banned from the Hack Club community may also prevent you from participating in our community events, including but not restricted to: local club meetings, hackathons, or challenges.
 
 Please understand that we will not restrict your ability to contact the [Code of Conduct working group](#working-group) under any circumstance. If you have any questions or concerns about our decision, please reach out to us directly. If your Slack account is under suspension, you should email us directly at conduct@hackclub.com.
 
