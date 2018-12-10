@@ -61,7 +61,7 @@ Load in p5.js in script tag in **body**. Beneath that, load in p5.play.js in ano
 ```html
 <body>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
-  <script type="text/javascript" src="https://cdn.rawgit.com/molleindustria/p5.play/42cd19c3/lib/p5.play.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/molleindustria/p5.play@42cd19c3/lib/p5.play.js"></script>
   <script type="text/javascript" src="https://repl.it/@prophetorpheus/platformer"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>

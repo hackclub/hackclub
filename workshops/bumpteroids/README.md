@@ -85,7 +85,7 @@ We will also define our main game logic for this game by pointing to our `bumpte
 ```html
   <body>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.min.js"></script>
-      <script type="text/javascript" src="https://cdn.rawgit.com/molleindustria/p5.play/1bf3c72fe6b647617373b9b3ea3e419baaef8cfd/lib/p5.play.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/molleindustria/p5.play@1bf3c72fe6b647617373b9b3ea3e419baaef8cfd/lib/p5.play.js"></script>
 
       <script type="text/javascript" src="bumpteroids.js"></script>
   </body>
@@ -104,7 +104,7 @@ Your `index.html` file should now look something like this (I've added comments 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.min.js"></script>
 
     <!-- remote p5.play library location -->
-    <script type="text/javascript" src="https://cdn.rawgit.com/molleindustria/p5.play/1bf3c72fe6b647617373b9b3ea3e419baaef8cfd/lib/p5.play.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/molleindustria/p5.play@1bf3c72fe6b647617373b9b3ea3e419baaef8cfd/lib/p5.play.js"></script>
 
     <!-- local game logic JavaScript file -->
     <script type="text/javascript" src="bumpteroids.js"></script>
