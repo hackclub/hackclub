@@ -34,9 +34,9 @@ This workshop also, assumes that you have done the [Dodge](../dodge/) workshop. 
 
 1. If you're more experienced and want to use your own editor, go ahead. Open the following files in your editor of choice. Do note however that the rest of this tutorial be written assuming that you are using JS Bin.
 
-    - [This HTML file](examples/demo/index.html)
-    - [This JavaScript file](examples/demo/main.js)
-    - [This CSS file](examples/demo/style.css)
+    - [This HTML file](https://github.com/hackclub/hackclub/blob/master/workshops/maze/examples/demo/index.html)
+    - [This JavaScript file](https://github.com/hackclub/hackclub/blob/master/workshops/maze/examples/demo/main.js)
+    - [This CSS file](https://github.com/hackclub/hackclub/blob/master/workshops/maze/examples/demo/style.css)
 
 2. If you haven't already, make sure you have created (and logged into) a JS Bin account first. <a href="https://jsbin.com/register" target="_blank_">Create one here</a>.
 3. Then open <a target="_blank_"href="http://jsbin.com/xivifu/12/edit?js,output"> this JS Bin</a>. It has all the starter code we need for this tutorial. Write any new code in this JS Bin. We'll refer to this JS Bin as your _"working bin"_.
