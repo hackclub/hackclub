@@ -60,11 +60,19 @@ These actions are explicitly forbidden in Hack Club spaces:
 - Unwelcome sexual advances.
 - Provoking any of these.
 
-## Moderation
+## Moderation & Enforcement
 
-When you participate in [areas where the code of conduct applies](#where-does-the-code-of-conduct-apply), you should act in the spirit of the "Hacker values". If you conduct yourself in a way that is explicitly forbidden by the Code of Conduct, you will be warned and asked to stop. If you do not stop, you will be removed from our community spaces temporarily. Repeated, willful breaches of the Code of Conduct will result in a permanent ban. Staff and club leaders are held to a higher standard than other community members. Complaints about staff and club leaders actions must be handled using the reporting process below.
+Please understand that speech and actions have consequences, and unacceptable behavior will not be tolerated. When you participate in [areas where the code of conduct applies](#where-does-the-code-of-conduct-apply), you should act in the spirit of the "Hacker values". If you conduct yourself in a way that is explicitly forbidden by the Code of Conduct, you will be warned and asked to stop. Repeated offenses may result in a temporary or permanent ban from the community.
 
-## Reporting issues
+- On your first offense, you will receive a written notice from one of our community moderators. Depending on the degree of the reported behavior, you may be asked to apologize, either in public or directly to the party that you have offended.
+- On a second offense, you will be temporarily removed from the community. The period of the temporary ban may vary from 3 days to a month, decided based on the seriousness of the reported behavior. Please note that this ban **does not indicate the you are no longer welcomed in the community** - it represents an official warning for your behavior.
+- On a third offense, you may be asked to leave the community. Your account may be suspended for an indefinite amount of time, and you may be publicly identified.
+
+This procedure only serves as a general guideline for moderation & enforcement of our community conduct. Under all circumstances, the Working Group or Hack Club's staff members may take any action we deem appropriate, including an immediate removal from the community. Being banned from the Hack Club community may also prevent you from participating in our community events, including but not restricted to: local club meetings, hackathons, or challenges.
+
+Please understand that we will not restrict your ability to contact the [Code of Conduct working group](#working-group) under any circumstance. If you have any questions or concerns about our decision, please reach out to us directly. If your Slack account is under suspension, you should email us directly at conduct@hackclub.com.
+
+## Working Group
 
 The Code of Conduct Working Group is a group of people that represent the Hack Club community. They are responsible for handling conduct-related issues. Their purpose is to de-escalate conflicts and try to resolve issues to the satisfaction of all parties. They are:
 
@@ -72,6 +80,8 @@ The Code of Conduct Working Group is a group of people that represent the Hack C
 | ------------------- | ------------ | --------------------- |
 | Max Wofford         | @msw         | max@hackclub.com      |
 | Zach Latta          | @zrl         | zach@hackclub.com     |
+
+## Reporting Issues
 
 If you encounter a conduct-related issue, you should report it to the Working Group using the process described below. **Do not** post about the issue publicly or try to rally sentiment against a particular individual or group.
 
