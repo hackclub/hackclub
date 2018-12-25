@@ -1,0 +1,30 @@
+/**
+ * styles/base.css
+ *
+ * @version     [YOUR_VERSION]
+ * @author      [YOUR_NAME]
+ */
+
+html, body, x-app {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+
+  padding: 0;
+  margin: 0;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background: var(--off-white);
+  color: var(--text-dark-medium);
+
+  font-size: 16px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

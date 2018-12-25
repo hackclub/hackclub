@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<!--
+  @version    [YOUR_VERSION]
+  @author     [YOUR_NAME]
+  @copyright  [YOUR_COPYRIGHT]
+-->
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    
+    <link rel="stylesheet" href="styles/color.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/contact.css">
+  </head>
+  
+  <body>
+    <x-app></x-app>
+  </body>
+  
+  <script type="module">
+    import { App } from '/scripts/app.js'
+    import { List } from '/scripts/list.js'
+    import { Contact } from '/scripts/contact.js'
+    
+    customElements.define('x-app', App)
+    customElements.define('x-list', List)
+    customElements.define('x-contact', Contact)
+  </script>
+</html>
