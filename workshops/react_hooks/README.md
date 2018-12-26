@@ -7,7 +7,7 @@ order: 9999
 
 ---
 
-# Getting Started With WebComponents
+# Getting Started With React Hooks
 
 ## Table of Contents
 
