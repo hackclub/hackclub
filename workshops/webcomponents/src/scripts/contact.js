@@ -1,26 +1,26 @@
 export class Contact extends HTMLElement {
-  constructor () {
+  constructor() {
     super()
     this.name = ''
     this.email = ''
     this.phone = ''
   }
-  
-  static get observedAttributes () {
-    return ['name', 'email', 'phone']  // list attributes here
+
+  static get observedAttributes() {
+    return ['name', 'email', 'phone'] // list attributes here
   }
-  
-  attributeChangedCallback (name, oldVal, newVal) {
+
+  attributeChangedCallback(name, oldVal, newVal) {
     this[name] = newVal
     this.innerHTML = this.render()
   }
-  
-  connectedCallback () {
+
+  connectedCallback() {
     this.innerHTML = this.render()
   }
-  
-  render () {
-    return`
+
+  render() {
+    return `
     	<div>
         <div>${this.name.slice(0, 1)}</div>
         <div>

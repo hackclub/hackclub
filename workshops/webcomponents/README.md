@@ -15,18 +15,16 @@ order: 9999
 3. [Lifecycle Hooks](#lifecycle-hooks)
 4. [Shadow DOM](#shadow-dom)
 
-
-
 ## Before You Start
 
 Before delving into the wonderful world of web components, you should be comfortable with a few important concepts.
 
-1.  Tree data structures
+1. Tree data structures
 2. CSS pseudo classes and pseudo elements
 3. ES6 style JavaScript
 4. Serving assets locally
 
-These four things are all you need to be able to start working with web components.  This workshop will guide you through the process of designing your own custom elements by teaching you how to build a dummy contacts application.  Start with this html file, remember that `type="module"` depends on `fetch`, which is not allowed when server over `file://`.  This is why you need to serve your project locally.
+These four things are all you need to be able to start working with web components. This workshop will guide you through the process of designing your own custom elements by teaching you how to build a dummy contacts application. Start with this html file, remember that `type="module"` depends on `fetch`, which is not allowed when server over `file://`. This is why you need to serve your project locally.
 
 ```html
 <!DOCTYPE html>
@@ -39,23 +37,23 @@ These four things are all you need to be able to start working with web componen
 
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    
-    <link rel="stylesheet" href="styles/color.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link rel="stylesheet" href="styles/color.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
   </head>
-  
+
   <body>
     <x-app></x-app>
   </body>
-  
+
   <script type="module">
     import { App } from '/scripts/app.js'
     import { List } from '/scripts/list.js'
     import { Contact } from '/scripts/contact.js'
-    
+
     customElements.define('x-app', App)
     customElements.define('x-list', List)
     customElements.define('x-contact', Contact)
@@ -63,7 +61,7 @@ These four things are all you need to be able to start working with web componen
 </html>
 ```
 
-If you try to serve this, you'll find that you're getting boatloads of 404's, since this file is requesting assets that we haven't created yet.  Style choice is highly subjective and largely irrelevant to the subject of learning web components.  Here are some starter stylesheets you could put in your styles directory.
+If you try to serve this, you'll find that you're getting boatloads of 404's, since this file is requesting assets that we haven't created yet. Style choice is highly subjective and largely irrelevant to the subject of learning web components. Here are some starter stylesheets you could put in your styles directory.
 
 ```css
 /**
@@ -74,24 +72,24 @@ If you try to serve this, you'll find that you're getting boatloads of 404's, si
  */
 
 :root {
-  --primary: #1BCF9A;
+  --primary: #1bcf9a;
   --primary-light: #66ffcb;
   --primary-dark: #009d6c;
 
-  --accent: #F45532;
-  --accent-light: #FF885E;
+  --accent: #f45532;
+  --accent-light: #ff885e;
   --accent-dark: #ba1c04;
 
   --text-dark-high: rgba(0, 0, 0, 0.87);
-  --text-dark-medium: rgba(0, 0, 0, 0.60);
+  --text-dark-medium: rgba(0, 0, 0, 0.6);
   --text-dark-low: rgba(0, 0, 0, 0.38);
 
-  --text-light-high: rgba(255, 255, 255, 1.0);
+  --text-light-high: rgba(255, 255, 255, 1);
   --text-light-medium: rgba(255, 255, 255, 0.87);
-  --text-light-low: rgba(255, 255, 255, 0.60);
+  --text-light-low: rgba(255, 255, 255, 0.6);
 
-  --white: #FFFFFF;
-  --off-white: #F5F5F7;
+  --white: #ffffff;
+  --off-white: #f5f5f7;
 }
 ```
 
@@ -103,7 +101,9 @@ If you try to serve this, you'll find that you're getting boatloads of 404's, si
  * @author      [YOUR_NAME]
  */
 
-html, body, x-app {
+html,
+body,
+x-app {
   width: 100%;
   height: auto;
   min-height: 100%;
@@ -118,7 +118,8 @@ html, body, x-app {
   color: var(--text-dark-medium);
 
   font-size: 16px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-weight: 300;
 
   display: flex;
@@ -151,8 +152,7 @@ x-contact > div {
   margin-bottom: 10px;
   padding: 10px;
 
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12),
-              0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
   background: var(--white);
   color: var(--text-dark-high);
@@ -182,13 +182,11 @@ x-contact > div > div:first-child {
 }
 ```
 
-
-
 ## Designing Custom Elements
 
-Custom elements can be modeled as classes that extend `HTMLElement`.  The first thing that you'll need is a constructor that calls `super`.
+Custom elements can be modeled as classes that extend `HTMLElement`. The first thing that you'll need is a constructor that calls `super`.
 
-```javascript
+```js
 /**
  * scripts/contact.js
  *
@@ -197,60 +195,60 @@ Custom elements can be modeled as classes that extend `HTMLElement`.  The first 
  */
 
 export class Contact extends HTMLElement {
-  constructor () {
+  constructor() {
     super()
   }
 }
 ```
 
-The contact component should be in charge of formatting and rendering contacts.  It should get this information through its attributes; we tell the component which attributes to react to with `observedAttributes` and how to react with `attributeChangedCallback`.
+The contact component should be in charge of formatting and rendering contacts. It should get this information through its attributes; we tell the component which attributes to react to with `observedAttributes` and how to react with `attributeChangedCallback`.
 
-```javascript
+```js
 export class Contact extends HTMLElement {
-  constructor () {
+  constructor() {
     super()
     this.name = ''
     this.email = ''
     this.phone = ''
   }
-  
-  static get observedAttributes () {
-    return ['name', 'email', 'phone']  // list attributes here
+
+  static get observedAttributes() {
+    return ['name', 'email', 'phone'] // list attributes here
   }
-  
-  attributeChangedCallback (name, oldVal, newVal) {
+
+  attributeChangedCallback(name, oldVal, newVal) {
     this[name] = newVal
     this.innerHTML = this.render()
   }
 }
 ```
 
-Now that your component knows which data to respond to, you need to tell it how to display that data to the user's browser.  This can be done in hundreds of different ways, the way you'll see here is just one of them.
+Now that your component knows which data to respond to, you need to tell it how to display that data to the user's browser. This can be done in hundreds of different ways, the way you'll see here is just one of them.
 
-```javascript
+```js
 export class Contact extends HTMLElement {
-  constructor () {
+  constructor() {
     super()
     this.name = ''
     this.email = ''
     this.phone = ''
   }
-  
-  static get observedAttributes () {
-    return ['name', 'email', 'phone']  // list attributes here
+
+  static get observedAttributes() {
+    return ['name', 'email', 'phone'] // list attributes here
   }
-  
-  attributeChangedCallback (name, oldVal, newVal) {
+
+  attributeChangedCallback(name, oldVal, newVal) {
     this[name] = newVal
     this.innerHTML = this.render()
   }
-  
-  connectedCallback () {
+
+  connectedCallback() {
     this.innerHTML = this.render()
   }
-  
-  render () {
-    return`
+
+  render() {
+    return `
     	<div>
         <div>${this.name.slice(0, 1)}</div>
         <div>
@@ -264,11 +262,11 @@ export class Contact extends HTMLElement {
 }
 ```
 
-And that's it!  That's the entire contact component done!  You will take a deeper look at the callbacks used in this component later on in this workshop.  Back in your `index.html` file, you'll notice that this component is not register as 'contact', but as 'x-contact'.  This is because all custom elements must contain the dash "-" character in its name.
+And that's it! That's the entire contact component done! You will take a deeper look at the callbacks used in this component later on in this workshop. Back in your `index.html` file, you'll notice that this component is not register as 'contact', but as 'x-contact'. This is because all custom elements must contain the dash "-" character in its name.
 
-The next component that you will explore is the list component.  This component will be slightly more complex.  Again, you will start with the constructor.
+The next component that you will explore is the list component. This component will be slightly more complex. Again, you will start with the constructor.
 
-```javascript
+```js
 /**
  * scripts/list.js
  *
@@ -277,25 +275,25 @@ The next component that you will explore is the list component.  This component 
  */
 
 export class List extends HTMLElement {
-  constructor () {
+  constructor() {
     super()
     this.url = 'https://jsonplaceholder.typicode.com/users'
   }
 }
 ```
 
-You will design this component to pull data from a dummy API endpoint and then push that data to the necessary contact components.  Since it doesn't need to react to data passed down from higher up in the component tree, you wont need `observedAttributes` or ` attributeChangedCallback`.
+You will design this component to pull data from a dummy API endpoint and then push that data to the necessary contact components. Since it doesn't need to react to data passed down from higher up in the component tree, you wont need `observedAttributes` or `attributeChangedCallback`.
 
-```javascript
+```js
 export class List extends HTMLElement {
-  constructor () {
+  constructor() {
     super()
     this.url = 'https://jsonplaceholder.typicode.com/users'
   }
-  
-  async connectedCallback () {
+
+  async connectedCallback() {
     const data = await fetch(this.url).then(r => r.json())
-    
+
     for (const contact of data) {
       const el = document.createElement('x-contact')
       el.setAttribute('name', contact.name)
@@ -307,72 +305,66 @@ export class List extends HTMLElement {
 }
 ```
 
-One more component left!  This one is very simple, it simply acts as a wrapper for our application.
+One more component left! This one is very simple, it simply acts as a wrapper for our application.
 
-```javascript
+```js
 export class App extends HTMLElement {
-  connectedCallback () {
+  connectedCallback() {
     this.innerHTML = '<x-list></x-list>'
   }
 }
 ```
 
-And that's it!  Try serving up your index page to see the end result.  Let's take a close look at the lifecycle hooks you have access to.
-
-
+And that's it! Try serving up your index page to see the end result. Let's take a close look at the lifecycle hooks you have access to.
 
 ## Lifecycle Hooks
 
-| Name                     | Called                                                       | Use                                                         |
-| ------------------------ | ------------------------------------------------------------ | ----------------------------------------------------------- |
-| constructor              | every time an instance of the element is created             | setting up initial state and event listeners                |
-| connectedCallback        | every time the element is inserted into the DOM              | running setup code, such as fetching resources or rendering |
-| disconnectedCallback     | every time the element is removed from the DOM               | running clean up code                                       |
+| Name                     | Called                                                                         | Use                                                         |
+| ------------------------ | ------------------------------------------------------------------------------ | ----------------------------------------------------------- |
+| constructor              | every time an instance of the element is created                               | setting up initial state and event listeners                |
+| connectedCallback        | every time the element is inserted into the DOM                                | running setup code, such as fetching resources or rendering |
+| disconnectedCallback     | every time the element is removed from the DOM                                 | running clean up code                                       |
 | attributeChangedCallback | every time an observed attribute has been added, removed, updated, or replaced | reacting to changes in state                                |
-| adoptedCallback          | every time an element has been moved into a new  document    | setup code for the new document                             |
+| adoptedCallback          | every time an element has been moved into a new document                       | setup code for the new document                             |
 
-A simple counter, for example, might use the `constructor` and the `connectedCallback`.  It uses the constructor to set up the initial state, and connectedCallback to render it.  Increment here does two things: it increments the internal value and renders the state.  As your components grow in size, you may want to separate these concerns.
+A simple counter, for example, might use the `constructor` and the `connectedCallback`. It uses the constructor to set up the initial state, and connectedCallback to render it. Increment here does two things: it increments the internal value and renders the state. As your components grow in size, you may want to separate these concerns.
 
-```javascript
+```js
 class ExampleCounter extends HTMLElement {
-  constructor () {
+  constructor() {
     super()
     this.value = 0
     this.addEventListener('click', this.increment)
   }
-  
-  connectedCallback () {
+
+  connectedCallback() {
     this.innerHTML = `<div>${this.value}</div>`
   }
-  
-  increment () {
+
+  increment() {
     this.innerHTML = `<div>${this.value++}</div>`
   }
 }
 ```
 
-
-
 ## Shadow DOM
 
-When working with custom elements, it's considered best practice to work with a shadow DOM instead of just injecting your markup underneath your element.  Shadow DOMs also have the benefit of providing scoped css styles to your elements.  You can add a shadow DOM to your element with `this.attachShadow({mode: 'open'})`.
+When working with custom elements, it's considered best practice to work with a shadow DOM instead of just injecting your markup underneath your element. Shadow DOMs also have the benefit of providing scoped css styles to your elements. You can add a shadow DOM to your element with `this.attachShadow({ mode: 'open' })`.
 
-```javascript
+```js
 class ExampleElement extends HTMLElement {
-  constructor () {
+  constructor() {
     super()
-    this.root = this.attachShadow({mode: 'open'})
+    this.root = this.attachShadow({ mode: 'open' })
   }
-  
-  connectedCallback () {
+
+  connectedCallback() {
     this.root.appendChild(document.createElement('div'))
   }
 }
 ```
 
-
-
-That's all you need to know to start working on some awesome projects using web components.  If you want to test your understanding of the concepts, here are some extensions to your barebones demo:
+That's all you need to know to start working on some awesome projects using web components. If you want to test your understanding of the concepts, here are some extensions to your barebones demo:
 
 1. Transition the project from DOM to shadow DOM
 2. Refine the styles to use shadow DOM selectors
