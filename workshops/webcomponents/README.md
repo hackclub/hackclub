@@ -1,12 +1,12 @@
 ---
-name: 'Intro to WebComponents'
+name: 'Intro to Web Components'
 description: 'An introduction to web components and custom elements'
-author: '@Shmish'
-group: 'expieramental'
+author: '@shmishtopher'
+group: 'experimental'
 order: 9999
 ---
 
-# Getting Started With WebComponents
+# Getting Started With Web Components
 
 ## Table of Contents
 
@@ -21,10 +21,10 @@ Before delving into the wonderful world of web components, you should be comfort
 
 1. Tree data structures
 2. CSS pseudo classes and pseudo elements
-3. ES6 style JavaScript
+3. ES6-style JavaScript
 4. Serving assets locally
 
-These four things are all you need to be able to start working with web components. This workshop will guide you through the process of designing your own custom elements by teaching you how to build a dummy contacts application. Start with this html file, remember that `type="module"` depends on `fetch`, which is not allowed when server over `file://`. This is why you need to serve your project locally.
+These four things are all you need to be able to start working with web components. This workshop will guide you through the process of designing your own custom elements by teaching you how to build a dummy contacts application. Start with this HTML file, remember that `type="module"` depends on `fetch`, which is not allowed when server over `file://`. This is why you need to serve your project locally.
 
 ```html
 <!DOCTYPE html>
@@ -61,7 +61,7 @@ These four things are all you need to be able to start working with web componen
 </html>
 ```
 
-If you try to serve this, you'll find that you're getting boatloads of 404's, since this file is requesting assets that we haven't created yet. Style choice is highly subjective and largely irrelevant to the subject of learning web components. Here are some starter stylesheets you could put in your styles directory.
+If you try to serve this, you'll find that you're getting boatloads of 404's, since this file is requesting assets that we haven't created yet. Style choice is highly subjective and largely irrelevant to the subject of learning web components. Here are some starter CSS files you could put in your styles directory.
 
 ```css
 /**
@@ -319,13 +319,13 @@ And that's it! Try serving up your index page to see the end result. Let's take 
 
 ## Lifecycle Hooks
 
-| Name                     | Called                                                                         | Use                                                         |
-| ------------------------ | ------------------------------------------------------------------------------ | ----------------------------------------------------------- |
-| constructor              | every time an instance of the element is created                               | setting up initial state and event listeners                |
-| connectedCallback        | every time the element is inserted into the DOM                                | running setup code, such as fetching resources or rendering |
-| disconnectedCallback     | every time the element is removed from the DOM                                 | running clean up code                                       |
-| attributeChangedCallback | every time an observed attribute has been added, removed, updated, or replaced | reacting to changes in state                                |
-| adoptedCallback          | every time an element has been moved into a new document                       | setup code for the new document                             |
+| Name                       | Called                                                                         | Use                                                         |
+| -------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------- |
+| `constructor`              | every time an instance of the element is created                               | setting up initial state and event listeners                |
+| `connectedCallback`        | every time the element is inserted into the DOM                                | running setup code, such as fetching resources or rendering |
+| `disconnectedCallback`     | every time the element is removed from the DOM                                 | running clean up code                                       |
+| `attributeChangedCallback` | every time an observed attribute has been added, removed, updated, or replaced | reacting to changes in state                                |
+| `adoptedCallback`          | every time an element has been moved into a new document                       | setup code for the new document                             |
 
 A simple counter, for example, might use the `constructor` and the `connectedCallback`. It uses the constructor to set up the initial state, and connectedCallback to render it. Increment here does two things: it increments the internal value and renders the state. As your components grow in size, you may want to separate these concerns.
 
@@ -349,7 +349,7 @@ class ExampleCounter extends HTMLElement {
 
 ## Shadow DOM
 
-When working with custom elements, it's considered best practice to work with a shadow DOM instead of just injecting your markup underneath your element. Shadow DOMs also have the benefit of providing scoped css styles to your elements. You can add a shadow DOM to your element with `this.attachShadow({ mode: 'open' })`.
+When working with custom elements, it's considered best practice to work with a shadow DOM instead of just injecting your markup underneath your element. Shadow DOM implementations also have the benefit of providing scoped css styles to your elements. You can add a shadow DOM to your element with `this.attachShadow({ mode: 'open' })`.
 
 ```js
 class ExampleElement extends HTMLElement {
@@ -364,7 +364,7 @@ class ExampleElement extends HTMLElement {
 }
 ```
 
-That's all you need to know to start working on some awesome projects using web components. If you want to test your understanding of the concepts, here are some extensions to your barebones demo:
+That's all you need to know to start working on some awesome projects using web components. If you want to test your understanding of the concepts, here are some extensions to your basic demo:
 
 1. Transition the project from DOM to shadow DOM
 2. Refine the styles to use shadow DOM selectors
