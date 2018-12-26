@@ -1,5 +1,5 @@
 export class App extends HTMLElement {
-  connectedCallback () {
+  connectedCallback() {
     this.innerHTML = '<x-list></x-list>'
   }
 }

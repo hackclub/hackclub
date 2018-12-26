@@ -5,7 +5,9 @@
  * @author      [YOUR_NAME]
  */
 
-html, body, x-app {
+html,
+body,
+x-app {
   width: 100%;
   height: auto;
   min-height: 100%;
@@ -20,7 +22,8 @@ html, body, x-app {
   color: var(--text-dark-medium);
 
   font-size: 16px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-weight: 300;
 
   display: flex;
