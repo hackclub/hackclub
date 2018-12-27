@@ -3,7 +3,7 @@ name: Dashboard with Next.js
 description: Personal dashboard of news and weather with React
 author: '@lachlanjc'
 group: react
-order: 3
+order: 5
 ---
 
 For your Next(.js) steps, we’re building a personal dashboard with React & Next.js that shows weather, news headlines, & whatever else you want. Let’s get going!
