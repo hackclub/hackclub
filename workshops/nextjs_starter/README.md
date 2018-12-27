@@ -3,7 +3,7 @@ name: Starting with Next.js
 description: Intro to React & Next.js with a shopping list website
 author: "@lachlanjc"
 group: react
-order: 2
+order: 4
 ---
 
 # Welcome to React with Next.js

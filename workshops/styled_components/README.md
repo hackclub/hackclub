@@ -1,12 +1,12 @@
 ---
 name: styled-weather
 description: Weather app with React + styled-components
-author: "@shmish"
-group: experimental
-order: 14
+author: "@shmishtopher"
+group: react
+order: 2
 ---
 
-# Styled Components
+# styled-components
 
 Here is a final [demo](https://shmishtopher.github.io/styled-components-workshop/) of this workshop, along with the [source code](https://github.com/shmishtopher/styled-components-workshop) used to make it.
 
