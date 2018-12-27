@@ -2,8 +2,8 @@
 name: 'React Hooks API'
 description: 'An introduction to the new React Hooks API'
 author: '@shmishtopher'
-group: 'experimental'
-order: 9999
+group: react
+order: 3
 ---
 
 # Getting Started With React Hooks
