@@ -25,14 +25,6 @@ _**We recommend going through this workshop in Google Chrome.**_
 
 In this workshop we'll be implementing a real-time chat using Firebase. Firebase is a real-time database. This means that all the information we send to Firebase gets updated across everything connected to that database.
 
-**Table of Contents**
-
-- [Part I: Set-up](#part-i-set-up)
-- [Part II: The HTML File](#part-ii-the-html-file)
-- [Part III: The JS File](#part-iii-the-js-file)
-- [Part IV: Publishing and Sharing and Chatting!](#part-iv-publishing-and-sharing-and-chatting)
-- [Part V: Hacking](#part-v-hacking)
-
 ## Part I: Set-up
 
 - Open up the Cloud9 workspace

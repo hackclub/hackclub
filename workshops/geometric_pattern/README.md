@@ -26,15 +26,6 @@ _**Warning: the following demo involves flashing colors and is not recommended f
 
 We'll be creating a cool graphic like the one above, using JavaScript and p5.js. [p5.js](http://p5js.org/) is a library for making stuff in conjunction with the [HTML canvas element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas). p5.js is nothing more than JavaScript code written to make commonly-desired functionality much more accessible. It is primarily used to make visuals and graphics for games and websites.
 
-**Table of Contents:**
-
-- [Part I: Set-up](#part-i-set-up)
-- [Part II: Drawing on the Canvas](#part-ii-drawing-on-the-canvas)
-- [Part III: Adding Color](#part-iii-adding-color)
-- [Part IV: Publishing and Sharing](#part-iv-publishing-and-sharing)
-- [Part V: Animate It](#part-v-animate-it)
-- [Part VI: Hacking](#part-vi-hacking)
-
 ## Part I: Set-up
 
 First, go to [Repl.it](https://repl.it) and spin up a new [HTML repl](https://repl.it/languages/html)

@@ -18,13 +18,10 @@ Here, we are using the DHT22 Temperature and Humidity sensor with Arduino Uno R3
 
 **Hardware Required:**
 
-1x Arduino/Genuino Uno
-
-1x DHT22 Sensor
-
-1x Bread Board
-
-3x Jumper Wires
+- 1x Arduino/Genuino Uno
+- 1x DHT22 Sensor
+- 1x Bread Board
+- 3x Jumper Wires
 
 ## DHT22 Pin Configuration
 

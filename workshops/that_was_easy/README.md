@@ -28,16 +28,6 @@ On top of that, we'll be introducing JavaScript, a new programming language that
 
 If this feels like an exorbitant amount of new tools -- you're absolutely right. But no need to fret, we'll be biting these off in manageable chunks. And remember, you're not expected to understand everything by the end of this workshop.
 
-**Table of Contents**
-
-- [Part I: Set-up](#part-i-set-up)
-- [Part II: The HTML File](#part-ii-the-html-file)
-- [Part III: The JavaScript File](#part-iii-the-javascript-file)
-- [Part IV: The CSS File](#part-iv-the-css-file)
-- [Part V: Upgrading](#part-v-upgrading)
-- [Part VI: Publishing and Sharing](#part-vi-publishing-and-sharing)
-- [Part VII: Hacking](#part-vii-hacking)
-
 ## Part I: Set-up
 
 ### Getting ready to repl it on Repl.it

@@ -16,22 +16,6 @@ It will look something like this:
 
 Here's the [live demo](https://cayce2514.github.io/bumpteroids/) and [final code](https://github.com/Cayce2514/cayce2514.github.io/tree/master/bumpteroids).
 
-This workshop should take around ?? minutes.
-
-# Table of contents
-
-- [Part I: Setup](#part-i-setup)
-- [Part II: The HTML file](#part-ii-the-html-file)
-- [Part III: The JavaScript File](#part-iii-the-javascript-file)
-  - [Set up the file and canvas](#set-up-the-file-and-canvas)
-  - [Your Space Ship](#your-space-ship)
-  - [Flying](#flying)
-  - [Shooting](#shooting)
-  - [The Asteroids](#the-asteroids)
-  - [Blowing Things Up](#blowing-things-up)
-- [Part IV: Hacking](#part-iv-hacking)
-- [Part V: Sharing](#part-v-sharing)
-
 ## Part I: Setup
 
 ### Set up folder and files

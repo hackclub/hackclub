@@ -10,21 +10,7 @@ order: 14
 
 Here is a final [demo](https://shmishtopher.github.io/styled-components-workshop/) of this workshop, along with the [source code](https://github.com/shmishtopher/styled-components-workshop) used to make it.
 
-[`styled-components`](https://www.styled-components.com/) is a library that creates styled [React](https://reactjs.org/) components in a clean, idiomatic way. In this workshop, we'll use `styled-components` to create a small weather app that pulls data from the free [Dark Sky](https://darksky.net/dev) API. This workshop uses the [Parcel](https://parceljs.org/) bundler, but you can use any bundler you wish (Webpack, Rollup, etc..). This workshop assumes that you have a recent version of node and npm installed.
-
-### Contents
-
-1. [Setup](#setup)
-2. [Components](#components)
-  * [`App`](#componentsappjs)
-  * [`Animation`](#animationjs)
-  * [`Card`](#componentscardjs)
-  * [`Detail`](#componentsdetailjs)
-  * [`Loading`](#componentsloadingjs)
-  * [`Summary`](#componentssummaryjs)
-  * [`Temperature`](#componentstemperaturejs)
-  * [`Weather`](#componentsweatherjs)
-3. [Challenges](#challenges)
+[`styled-components`](https://www.styled-components.com/) is a library that creates styled [React](https://reactjs.org/) components in a clean, idiomatic way. In this workshop, we'll use `styled-components` to create a small weather app that pulls data from the free [Dark Sky](https://darksky.net/dev) API. This workshop uses the [Parcel](https://parceljs.org/) bundler, but you can use any bundler you wish (Webpack, Rollup, etc.). This workshop assumes that you have a recent version of node and npm installed.
 
 ## Setup
 

@@ -8,20 +8,6 @@ order: 1
 
 # Getting Started Using React
 
-## Table of contents
-
-1. [Assumptions](#assumptions)
-2. [Installing React](#installing-react)
-3. [First Steps With React](#first-steps-with-react)
-4. [Making Your Website Appear on Screen](#making-your-website-appear-on-screen)
-5. [Creating React Components](#creating-react-components)
-6. [Using JSX](#using-jsx)
-7. [How to use CSS](#how-to-use-css)
-8. [Using Props](#using-props)
-9. [Using State](#using-state)
-10. [General React Tips](#general-react-tips)
-11. [Finishing Your Website](#finishing-your-website)
-
 ## Assumptions
 
 1. You already sort of know how JavaScript works
