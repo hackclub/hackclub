@@ -14,28 +14,13 @@ order: 5
 
 _**We recommend going through this workshop in Google Chrome.**_
 
-Links to a live demo and the final code below. This workshop should take around 60 minutes.
+In this workshop we'll continue our foray into game development in p5.js by creating a simple platformer. It should take around 60 minutes.
 
 [**Live Demo**](https://platformer--prophetorpheus.repl.co)
 
 [**Final Code**](https://repl.it/@prophetorpheus/platformer)
 
 ---
-
-In this workshop we'll continue our foray into game development in p5.js by creating a simple platformer.
-
-**Table of Contents**
-
-- [Part I: Set-up](#part-i-set-up)
-- [Part II: Building the World](#part-ii-building-the-world)
-- [Part III: Creating the Player](#part-iii-creating-the-player)
-- [Part IV: Adding Obstacles](#part-iv-adding-obstacles)
-- [Part V: Ending Game](#part-v-ending-game)
-- [Part VI: Keeping Score](#part-vi-keeping-score)
-- [Part VII: Upgrading](#part-vii-upgrading)
-- [Part VIII: Customizing](#part-viii-customizing)
-- [Part IX: Publishing and Sharing](#part-ix-publishing-and-sharing)
-- [Part X: Hacking](#part-x-hacking)
 
 ## Part I: Set-up
 

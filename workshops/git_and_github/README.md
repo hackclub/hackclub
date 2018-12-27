@@ -12,37 +12,6 @@ _**This workshop has been retired and is no longer maintained or recommended.**_
 
 ---
 
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
-**Table of Contents**
-
-- [Basic Git and GitHub](#basic-git-and-github)
-    - [Tips and Tricks While Using This Workshop](#tips-and-tricks-while-using-this-workshop)
-    - [Preparing Your Workspace](#preparing-your-workspace)
-    - [What is Git?](#what-is-git)
-    - [Git's Tools](#gits-tools)
-        - [Repository](#repository)
-        - [Branch](#branch)
-        - [Master Branch](#master-branch)
-    - [What is GitHub?](#what-is-github)
-    - [Git and GitHub Pages w/ Provided Link](#git-and-github-pages-w-provided-link)
-        - [Preparations](#preparations)
-        - [Using Git and GitHub](#using-git-and-github)
-    - [Git and GitHub Pages w/o provided link](#git-and-github-pages-wo-provided-link)
-    - [More Commands](#more-commands)
-        - [Clone](#clone)
-        - [Merge](#merge)
-    - [Extended GitHub Knowledge](#extended-github-knowledge)
-        - [Pull Requests](#pull-requests)
-        - [GitHub Terminology](#github-terminology)
-            - [Fork](#fork)
-            - [Pull Request](#pull-request)
-            - [Issue](#issue)
-            - [Contributor](#contributor)
-    - [Follow Us on GitHub!](#follow-us-on-github)
-    - [Explore!](#explore)
-
-<!-- markdown-toc end -->
-
 ## Tips and Tricks While Using This Workshop
 
 1. **Don't include** the **square brackets** mentioned (`[text-here]`) when

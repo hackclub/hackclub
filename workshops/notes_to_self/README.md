@@ -18,17 +18,6 @@ _**This workshop is designed with Google Chrome in mind. Problems may occur if y
 
 This is a way to keep personal notes in your browser storage. Since the notes are saved to `localStorage`, these are truly notes-to-self (unless you share your computer).
 
-**Table of Contents**
-
-- [Part I: Set-up](#part-i-set-up)
-- [Part II: The HTML File](#part-ii-the-html-file)
-- [Part III: Styling the Form](#part-iii-styling-the-form)
-- [Part IV: The JavaScript File](#part-iv-the-javascript-file)
-- [Part V: Odds and Ends](#part-v-odds-and-ends)
-- [Part VI: Styling the Page](#part-vi-styling-the-page)
-- [Part VII: Publishing and Sharing](#part-vii-publishing-and-sharing)
-- [Part VIII: Hacking](#part-viii-hacking)
-
 ## Part I: Set-up
 
 ### Creating Our Files

@@ -26,15 +26,7 @@ In this project, we'll be building a personal dashboard with a couple widgets th
 - The weather based on the user's current location
 - The latest news
 
-We'll be using the [Dark Sky API](https://darksky.net/dev/) for the weather, and the [News API](https://newsapi.org/) to fetch the latest news. 
-
-**Table of Contents**
-
-- [Part I: Registering for the APIs](#part-i-registering-for-the-APIs)
-- [Part II: The markup](#part-ii-the-markup)
-- [Part III: The functions](#part-iii-the-functions)
-- [Part IV: Some styling](#part-iv-some-styling)
-- [Part V: Publishing and Sharing](#part-v-publishing-sharing-and-improving)
+We'll be using the [Dark Sky API](https://darksky.net/dev/) for the weather, and the [News API](https://newsapi.org/) to fetch the latest news.
 
 ## Part I: Registering for the APIs
 

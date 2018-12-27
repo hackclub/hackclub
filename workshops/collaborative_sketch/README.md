@@ -24,14 +24,6 @@ Links to a live demo and the final code below. This workshop should take around 
 
 Draw with one or more friends! In this project we'll be combining HTML, p5.js, Firebase, and jQuery to create a collaborative sketchpad. We'll use p5.js to manipulate the drawing space, Firebase to keep track of our drawing in terms of points that we've marked in our drawing, and jQuery to easily manipulate HTML elements.
 
-**Table of Contents**
-
-- [Part I: Set-up](#part-i-set-up)
-- [Part II: The JS File](#part-ii-the-js-file)
-- [Part III: Odds and Ends](#part-iii-odds-and-ends)
-- [Part IV: Publishing and Sharing](#part-iv-publishing-and-sharing)
-- [Part V: Hacking](#part-v-hacking)
-
 ## Part I: Set-up
 
 ### Setting up the Files

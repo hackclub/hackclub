@@ -21,15 +21,6 @@ This workshop should take around 45 minutes.
 [final_live_demo]: https://website--prophetorpheus.repl.co
 [final_code]: https://repl.it/@prophetorpheus/website
 
-**Table of contents:**
-
-- [Part I: Setup](#part-i-setup)
-- [Part II: The HTML File](#part-ii-the-html-file)
-- [Part III: The CSS File](#part-iii-the-css-file)
-- [Part IV: Publishing](#part-iv-publishing)
-- [Part V: Hacking](#part-v-hacking)
-- [Part VI: Sharing with the Community](#part-vi-sharing-with-the-community)
-
 ## Part I: Setup
 
 ### Getting ready to repl it on Repl.it
