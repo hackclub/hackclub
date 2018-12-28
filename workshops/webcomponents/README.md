@@ -8,13 +8,6 @@ order: 16
 
 # Getting Started With Web Components
 
-## Table of Contents
-
-1. [Before You Start](#before-you-start)
-2. [Designing Custom Elements](designing-custom-elements)
-3. [Lifecycle Hooks](#lifecycle-hooks)
-4. [Shadow DOM](#shadow-dom)
-
 ## Before You Start
 
 Before delving into the wonderful world of web components, you should be comfortable with a few important concepts.
