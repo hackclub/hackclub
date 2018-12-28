@@ -8,13 +8,6 @@ order: 3
 
 # Getting Started With React Hooks
 
-## Table of Contents
-
-1. [Before You Start](#before-you-start)
-2. [The State Hook](#the-state-hook)
-3. [The Effect Hook](#the-effect-hook)
-4. [Other Hooks](#other-hooks)
-
 ## Before You Start
 
 There are a few important concepts you should be familiar with before you start working with the React Hooks API.
