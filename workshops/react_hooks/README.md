@@ -6,7 +6,7 @@ group: react
 order: 3
 ---
 
-# Getting Started With React Hooks
+# React Hooks API
 
 ## Before You Start
 
