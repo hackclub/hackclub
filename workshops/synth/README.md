@@ -11,6 +11,8 @@ launch: "https://repl.it/languages/html"
 
 Let's make a synth pad, using simple HTML and a fun JavaScript package called Tone.js.
 
+Note to club leaders: This workshop is noisy, so **remind people to bring headphones!** Bring some extra pairs if you can.
+
 ## My Version:
 
 [Live Version](https://synth--polytrope.repl.co) | [Source Code](https://repl.it/@polytrope/synth)
