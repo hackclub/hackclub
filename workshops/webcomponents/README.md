@@ -320,7 +320,7 @@ And that's it! Try serving up your index page to see the end result. Let's take 
 | `attributeChangedCallback` | every time an observed attribute has been added, removed, updated, or replaced | reacting to changes in state                                |
 | `adoptedCallback`          | every time an element has been moved into a new document                       | setup code for the new document                             |
 
-A simple counter, for example, might use the `constructor` and the `connectedCallback`. It uses the constructor to set up the initial state, and connectedCallback to render it. Increment here does two things: it increments the internal value and renders the state. As your components grow in size, you may want to separate these concerns.
+A simple counter, for example, might use the `constructor` and the `connectedCallback`. It uses the constructor to set up the initial state, and `connectedCallback` to render it. Increment here does two things: it increments the internal value and renders the state. As your components grow in size, you may want to separate these concerns.
 
 ```js
 class ExampleCounter extends HTMLElement {
