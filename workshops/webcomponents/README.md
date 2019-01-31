@@ -12,10 +12,10 @@ order: 16
 
 Before delving into the wonderful world of web components, you should be comfortable with a few important concepts.
 
-1.  Tree data structures
-2.  CSS pseudo classes and pseudo elements
-3.  ES6-style JavaScript
-4.  Serving assets locally
+1. Tree data structures
+2. CSS pseudo classes and pseudo elements
+3. ES6-style JavaScript
+4. Serving assets locally
 
 These four things are all you need to be able to start working with web components. This workshop will guide you through the process of designing your own custom elements by teaching you how to build a dummy contacts application. Start with this HTML file, remember that `type="module"` depends on `fetch`, which is not allowed when server over `file://`. This is why you need to serve your project locally.
 
@@ -111,8 +111,8 @@ x-app {
   color: var(--text-dark-medium);
 
   font-size: 16px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-weight: 300;
 
   display: flex;
@@ -189,7 +189,7 @@ Custom elements can be modeled as classes that extend `HTMLElement`. The first t
 
 export class Contact extends HTMLElement {
   constructor() {
-    super();
+    super()
   }
 }
 ```
@@ -199,19 +199,19 @@ The contact component should be in charge of formatting and rendering contacts. 
 ```js
 export class Contact extends HTMLElement {
   constructor() {
-    super();
-    this.name = "";
-    this.email = "";
-    this.phone = "";
+    super()
+    this.name = ''
+    this.email = ''
+    this.phone = ''
   }
 
   static get observedAttributes() {
-    return ["name", "email", "phone"]; // list attributes here
+    return ['name', 'email', 'phone'] // list attributes here
   }
 
   attributeChangedCallback(name, oldVal, newVal) {
-    this[name] = newVal;
-    this.innerHTML = this.render();
+    this[name] = newVal
+    this.innerHTML = this.render()
   }
 }
 ```
@@ -221,23 +221,23 @@ Now that your component knows which data to respond to, you need to tell it how 
 ```js
 export class Contact extends HTMLElement {
   constructor() {
-    super();
-    this.name = "";
-    this.email = "";
-    this.phone = "";
+    super()
+    this.name = ''
+    this.email = ''
+    this.phone = ''
   }
 
   static get observedAttributes() {
-    return ["name", "email", "phone"]; // list attributes here
+    return ['name', 'email', 'phone'] // list attributes here
   }
 
   attributeChangedCallback(name, oldVal, newVal) {
-    this[name] = newVal;
-    this.innerHTML = this.render();
+    this[name] = newVal
+    this.innerHTML = this.render()
   }
 
   connectedCallback() {
-    this.innerHTML = this.render();
+    this.innerHTML = this.render()
   }
 
   render() {
@@ -250,7 +250,7 @@ export class Contact extends HTMLElement {
           <div>${this.phone}</div>
         </div>
       </div>
-    `;
+    `
   }
 }
 ```
@@ -269,8 +269,8 @@ The next component that you will explore is the list component. This component w
 
 export class List extends HTMLElement {
   constructor() {
-    super();
-    this.url = "https://jsonplaceholder.typicode.com/users";
+    super()
+    this.url = 'https://jsonplaceholder.typicode.com/users'
   }
 }
 ```
@@ -280,19 +280,19 @@ You will design this component to pull data from a dummy API endpoint and then p
 ```js
 export class List extends HTMLElement {
   constructor() {
-    super();
-    this.url = "https://jsonplaceholder.typicode.com/users";
+    super()
+    this.url = 'https://jsonplaceholder.typicode.com/users'
   }
 
   async connectedCallback() {
-    const data = await fetch(this.url).then(r => r.json());
+    const data = await fetch(this.url).then(r => r.json())
 
     for (const contact of data) {
-      const el = document.createElement("x-contact");
-      el.setAttribute("name", contact.name);
-      el.setAttribute("email", contact.email);
-      el.setAttribute("phone", contact.phone);
-      this.appendChild(el);
+      const el = document.createElement('x-contact')
+      el.setAttribute('name', contact.name)
+      el.setAttribute('email', contact.email)
+      el.setAttribute('phone', contact.phone)
+      this.appendChild(el)
     }
   }
 }
@@ -303,7 +303,7 @@ One more component left! This one is very simple, it simply acts as a wrapper fo
 ```js
 export class App extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = "<x-list></x-list>";
+    this.innerHTML = '<x-list></x-list>'
   }
 }
 ```
@@ -325,17 +325,17 @@ A simple counter, for example, might use the `constructor` and the `connectedCal
 ```js
 class ExampleCounter extends HTMLElement {
   constructor() {
-    super();
-    this.value = 0;
-    this.addEventListener("click", this.increment);
+    super()
+    this.value = 0
+    this.addEventListener('click', this.increment)
   }
 
   connectedCallback() {
-    this.innerHTML = `<div>${this.value}</div>`;
+    this.innerHTML = `<div>${this.value}</div>`
   }
 
   increment() {
-    this.innerHTML = `<div>${this.value++}</div>`;
+    this.innerHTML = `<div>${this.value++}</div>`
   }
 }
 ```
@@ -347,18 +347,18 @@ When working with custom elements, it's considered best practice to work with a 
 ```js
 class ExampleElement extends HTMLElement {
   constructor() {
-    super();
-    this.root = this.attachShadow({ mode: "open" });
+    super()
+    this.root = this.attachShadow({ mode: 'open' })
   }
 
   connectedCallback() {
-    this.root.appendChild(document.createElement("div"));
+    this.root.appendChild(document.createElement('div'))
   }
 }
 ```
 
 That's all you need to know to start working on some awesome projects using web components. If you want to test your understanding of the concepts, here are some extensions to your basic demo:
 
-1.  Transition the project from DOM to shadow DOM
-2.  Refine the styles to use shadow DOM selectors
-3.  Add methods to list to add and remove entries
+1. Transition the project from DOM to shadow DOM
+2. Refine the styles to use shadow DOM selectors
+3. Add methods to list to add and remove entries
