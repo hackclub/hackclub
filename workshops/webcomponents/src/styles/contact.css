@@ -1,0 +1,43 @@
+x-list {
+  width: calc(100% - 20px);
+  height: auto;
+  max-width: 700px;
+}
+
+x-contact > div {
+  width: calc(100% - 20px);
+  height: 120px;
+
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  background: var(--white);
+  color: var(--text-dark-high);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+x-contact > div > div:first-child {
+  width: 50px;
+  height: 50px;
+
+  padding: 0;
+  margin: 20px;
+
+  color: var(--text-dark-high);
+  background: var(--text-dark-low);
+
+  border: none;
+  border-radius: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
