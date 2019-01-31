@@ -140,7 +140,7 @@ So now we have to decide on our ship. Let's start with some images. We have our 
 
 ![Basic Ship](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroids_ship0001.png)
 
-Fairly simple design. See [Part IV: Hacking](#part-iv-hacking) for where you can find more free to use art.
+Fairly simple design. See the final section for where you can find more free to use art.
 
 We will also use an image that shows the same body of the space ship, but a bit of rocket flare:
 
