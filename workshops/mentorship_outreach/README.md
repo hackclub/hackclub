@@ -73,7 +73,7 @@ Now let's start from the start.
    Don't be afraid to lay on the compliments. Programmers can be distant with praise and lavish with criticism, so avoid that trap!
    But also, be earnest about your praise. If you're making stuff up it's going to come through.
    In Zach's wise words via Slack…
-   
+
    >...  
    make sure to lay on the compliments  
    [the person you're emailing] doesn't know you yet, so you need to work twice as hard to communicate what you're trying to
