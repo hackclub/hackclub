@@ -1,7 +1,7 @@
 ---
 name: Control an LED!
 description: Build an IoT project with Cayenne on your Raspberry Pi
-author: "@1061999"
+author: '@1061999'
 group: pi
 order: 5
 ---
@@ -73,7 +73,7 @@ Then download the Cayenne app from the [Google Play Store](https://play.google.c
 
 ![Circuit](img/circuit.png)
 
-Positive end of the LED should be connected to  GPIO 17 of Raspberry Pi. The negative end can be connected to any of the GND available in the Raspberry Pi.
+Positive end of the LED should be connected to GPIO 17 of Raspberry Pi. The negative end can be connected to any of the GND available in the Raspberry Pi.
 
 Follow the Raspberry Pi GPIO specification sheet for clarification.
 

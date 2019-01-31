@@ -1,7 +1,7 @@
 ---
 name: Geometric Pattern
 description: Generate geometric patterns using p5.js
-author: "@jkwok91"
+author: '@jkwok91'
 group: start
 order: 3
 ---
@@ -37,10 +37,8 @@ From here, clear the contents of `index.html` and put the following in its place
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-  </body>
+  <head></head>
+  <body></body>
 </html>
 ```
 
@@ -68,11 +66,9 @@ Go ahead and **Run** the project (or the shortcut <kbd>Ctrl</kbd>+<kbd>Enter</kb
 Double-click `script.js` to open, and type the following:
 
 ```js
-function setup() {
-}
+function setup() {}
 
-function draw() {
-}
+function draw() {}
 ```
 
 p5.js works by automatically calling two special functions: [`setup()`](http://p5js.org/reference/#/p5/setup) and [`draw()`](http://p5js.org/reference/#p5/draw) to create the visuals on your webpage. We'll be writing our own code in these functions, so that p5.js can then run our code.
@@ -85,7 +81,7 @@ It looks like nothing, because our functions do nothing. Let's add something for
 
 ```js
 function setup() {
-  createCanvas(480, 600);
+  createCanvas(480, 600)
 }
 ```
 
@@ -96,29 +92,27 @@ In this project, we'll be creating a tiling of overlapping circles.
 First, let's decide how many circles we want in each row. We can store this number in a variable **at the top, above both functions**:
 
 ```js
-var NUM_CIRCLES = 12;
+var NUM_CIRCLES = 12
 
 function setup() {
-  createCanvas(480, 600);
+  createCanvas(480, 600)
 }
 
-function draw() {
-}
+function draw() {}
 ```
 
 We'll use this to determine the diameter of the circles we want to draw, by doing some simple math. Let's declare a variable to store the value of the circle diameter; name it `circleDiameter`. Add the declaration at the top of the file, underneath `NUM_CIRCLES`, and define it within `setup()`:
 
 ```js
-var NUM_CIRCLES = 12;
-var circleDiameter;
+var NUM_CIRCLES = 12
+var circleDiameter
 
 function setup() {
-  createCanvas(480, 600);
-  circleDiameter = width/NUM_CIRCLES;
+  createCanvas(480, 600)
+  circleDiameter = width / NUM_CIRCLES
 }
 
-function draw() {
-}
+function draw() {}
 ```
 
 p5.js stores the width of the canvas in a variable named [`width`](http://p5js.org/reference/#/p5/width). By dividing the width by the number of circles, we can calculate the length of the diameter, which we'll store in `circleDiameter`.
@@ -133,7 +127,7 @@ Let's see the `ellipse()` function in action by drawing a circle in the middle o
 
 ```js
 function draw() {
-  ellipse(width/2,height/2,circleDiameter,circleDiameter);
+  ellipse(width / 2, height / 2, circleDiameter, circleDiameter)
 }
 ```
 
@@ -151,11 +145,11 @@ Let's try to draw a row of circles first. We'll want to place them `circleDiamet
 
 ```js
 function draw() {
-  ellipse(0, height/2, circleDiameter, circleDiameter);
-  ellipse(circleDiameter, height/2, circleDiameter, circleDiameter);
-  ellipse(2*circleDiameter, height/2, circleDiameter, circleDiameter);
-  ellipse(3*circleDiameter, height/2, circleDiameter, circleDiameter);
-  ellipse(4*circleDiameter, height/2, circleDiameter, circleDiameter);
+  ellipse(0, height / 2, circleDiameter, circleDiameter)
+  ellipse(circleDiameter, height / 2, circleDiameter, circleDiameter)
+  ellipse(2 * circleDiameter, height / 2, circleDiameter, circleDiameter)
+  ellipse(3 * circleDiameter, height / 2, circleDiameter, circleDiameter)
+  ellipse(4 * circleDiameter, height / 2, circleDiameter, circleDiameter)
 }
 ```
 
@@ -177,10 +171,9 @@ Let's remove all those repetitive lines and add a loop into our `draw()` functio
 
 ```js
 function draw() {
-  var x = 0;
+  var x = 0
   while (x <= width) {
-
-    x = x + circleDiameter;
+    x = x + circleDiameter
   }
 }
 ```
@@ -196,10 +189,10 @@ If we save and refresh, we'll see nothing. That's because there is no code insid
 
 ```js
 function draw() {
-  var x = 0;
+  var x = 0
   while (x <= width) {
-    ellipse(x, 0, circleDiameter, circleDiameter);
-    x = x + circleDiameter;
+    ellipse(x, 0, circleDiameter, circleDiameter)
+    x = x + circleDiameter
   }
 }
 ```
@@ -224,16 +217,15 @@ Let's put everything so far inside another while-loop. Don't forget to update `e
 
 ```js
 function draw() {
-  var y = 0;
+  var y = 0
   while (y <= height) {
-
-    var x = 0;
+    var x = 0
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter);
-      x = x + circleDiameter;
+      ellipse(x, y, circleDiameter, circleDiameter)
+      x = x + circleDiameter
     }
 
-    y = y + circleDiameter;
+    y = y + circleDiameter
   }
 }
 ```
@@ -255,27 +247,26 @@ We can achieve this by changing the last line of the `y` while-loop to increment
 We'll create a variable (call it `circleRadius`) for this, at the top of the file, define it in `setup()`, and make the replacement in the last line of the `y` while-loop:
 
 ```js
-var NUM_CIRCLES = 12;
-var circleDiameter;
-var circleRadius;
+var NUM_CIRCLES = 12
+var circleDiameter
+var circleRadius
 
 function setup() {
-  createCanvas(480, 600);
-  circleDiameter = width/NUM_CIRCLES;
-  circleRadius = circleDiameter/2;
+  createCanvas(480, 600)
+  circleDiameter = width / NUM_CIRCLES
+  circleRadius = circleDiameter / 2
 }
 
 function draw() {
-  var y = 0;
+  var y = 0
   while (y <= height) {
-
-    var x = 0;
+    var x = 0
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter);
-      x = x + circleDiameter;
+      ellipse(x, y, circleDiameter, circleDiameter)
+      x = x + circleDiameter
     }
 
-    y = y + circleRadius;
+    y = y + circleRadius
   }
 }
 ```
@@ -292,18 +283,17 @@ Let's add one in our `draw()` function:
 
 ```js
 function draw() {
-  var isShifted = false;
+  var isShifted = false
 
-  var y = 0;
+  var y = 0
   while (y <= height) {
-
-    var x = 0;
+    var x = 0
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter);
-      x = x + circleDiameter;
+      ellipse(x, y, circleDiameter, circleDiameter)
+      x = x + circleDiameter
     }
 
-    y = y + circleRadius;
+    y = y + circleRadius
   }
 }
 ```
@@ -314,19 +304,18 @@ We'll using the negation operator (`!`) to flip from `false` to `true` and vice 
 
 ```js
 function draw() {
-  var isShifted = false;
+  var isShifted = false
 
-  var y = 0;
+  var y = 0
   while (y <= height) {
-
-    var x = 0;
+    var x = 0
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter);
-      x = x + circleDiameter;
+      ellipse(x, y, circleDiameter, circleDiameter)
+      x = x + circleDiameter
     }
 
-    y = y + circleRadius;
-    isShifted = !isShifted;
+    y = y + circleRadius
+    isShifted = !isShifted
   }
 }
 ```
@@ -337,26 +326,23 @@ Let's create a conditional that will use the flag's value to determine whether o
 
 ```js
 function draw() {
-  var isShifted = false;
+  var isShifted = false
 
-  var y = 0;
+  var y = 0
   while (y <= height) {
-
-    var x = 0;
+    var x = 0
 
     if (isShifted) {
-
     } else {
-
     }
 
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter);
-      x = x + circleDiameter;
+      ellipse(x, y, circleDiameter, circleDiameter)
+      x = x + circleDiameter
     }
 
-    y = y + circleRadius;
-    isShifted = !isShifted;
+    y = y + circleRadius
+    isShifted = !isShifted
   }
 }
 ```
@@ -373,44 +359,44 @@ We can modify this by removing this definition:
 And setting the value _conditionally_:
 
 ```js
+while (y <= height) {
+  var x
 
-  while (y <= height) {
-    var x;
+  if (isShifted) {
+    x = circleRadius
+  } else {
+    x = 0
+  }
 
-    if (isShifted) {
-      x = circleRadius;
-    } else {
-      x = 0;
-    }
-
-    while (x <= width) {
-
+  while (x <= width) {
+    // ...
+  }
+}
 ```
 
 Your `draw()` should now look like this:
 
 ```js
 function draw() {
-  var isShifted = false;
+  var isShifted = false
 
-  var y = 0;
+  var y = 0
   while (y <= height) {
-
-    var x;
+    var x
 
     if (isShifted) {
-      x = circleRadius;
+      x = circleRadius
     } else {
-      x = 0;
+      x = 0
     }
 
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter);
-      x = x + circleDiameter;
+      ellipse(x, y, circleDiameter, circleDiameter)
+      x = x + circleDiameter
     }
 
-    y = y + circleRadius;
-    isShifted = !isShifted;
+    y = y + circleRadius
+    isShifted = !isShifted
   }
 }
 ```
@@ -427,26 +413,25 @@ We can fix this by setting the initial value of `y` to the height, and changing 
 
 ```js
 function draw() {
-  var isShifted = false;
+  var isShifted = false
 
-  var y = height;
+  var y = height
   while (y >= 0) {
-
-    var x;
+    var x
 
     if (isShifted) {
-      x = circleRadius;
+      x = circleRadius
     } else {
-      x = 0;
+      x = 0
     }
 
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter);
-      x = x + circleDiameter;
+      ellipse(x, y, circleDiameter, circleDiameter)
+      x = x + circleDiameter
     }
 
-    y = y - circleRadius;
-    isShifted = !isShifted;
+    y = y - circleRadius
+    isShifted = !isShifted
   }
 }
 ```
@@ -472,7 +457,7 @@ Let's choose our color to be red. The R, G, and B values for a bright red are 25
 Now we'll pass this color to the `fill()` function. If we do this before drawing the ellipse, all the ellipses we draw will be filled with that color. Let's give this a try and type the following line immediately before calling the `ellipse()` function in `draw()`:
 
 ```js
-fill(color(255, 0, 0));
+fill(color(255, 0, 0))
 ```
 
 Save and refresh. Your canvas should now look like red dragon scales.
@@ -484,7 +469,7 @@ Just like how there's a `fill()` for changing the fill color, there's a `stroke(
 We can make a garish display by adding a bright green stroke, if we place the following line beneath our `fill()` function call:
 
 ```js
-stroke(color(0, 255, 0));
+stroke(color(0, 255, 0))
 ```
 
 Save and refresh, and let your eyes be assaulted by this faux pas.
@@ -496,23 +481,23 @@ While this looks pretty cool, let's make the rows different colors. We can get t
 Let's do this by first declaring variables to store each of the R, G, and B values at the top of the file:
 
 ```js
-var NUM_CIRCLES = 12;
-var circleDiameter;
-var circleRadius;
-var rVal;
-var gVal;
-var bVal;
+var NUM_CIRCLES = 12
+var circleDiameter
+var circleRadius
+var rVal
+var gVal
+var bVal
 ```
 
 Next, we'll set their initial values at the top of the `draw()` function:
 
 ```js
 function draw() {
-  rVal = 255;
-  gVal = 0;
-  bVal = 0;
+  rVal = 255
+  gVal = 0
+  bVal = 0
 
-  var isShifted = false;
+  var isShifted = false
 
   // ...the rest of the draw function
 }
@@ -521,14 +506,12 @@ function draw() {
 And then increment the values at the bottom of the `y` while-loop in `draw()`, by adding these lines.
 
 ```js
-    y = y - circleRadius;
-    isShifted = !isShifted;
+y = y - circleRadius
+isShifted = !isShifted
 
-    rVal = rVal - 2;
-    gVal = gVal + 7;
-    bVal = bVal + 3;
-  }
-}
+rVal = rVal - 2
+gVal = gVal + 7
+bVal = bVal + 3
 ```
 
 Here, we're decrementing the R value by 2, incrementing the G value by 7, and the B value by 3.
@@ -538,8 +521,8 @@ You can also try adding those three lines within the x while-loop, which will mo
 Finally, we'll replace the arguments in `color()` with these variables, in both the `fill()` and `stroke()` function calls:
 
 ```js
-fill(color(rVal,gVal,bVal));
-stroke(color(rVal,gVal,bVal));
+fill(color(rVal, gVal, bVal))
+stroke(color(rVal, gVal, bVal))
 ```
 
 Now, save and see the gradient effect you've applied throughout the pattern! Yay!
@@ -557,9 +540,9 @@ We can attach this function to a key press by using p5's `keyPressed` function. 
 ```js
 function keyPressed() {
   if (keyCode === 115 || keyCode === 83) {
-    saveCanvas('geometricPattern', 'png');
+    saveCanvas('geometricPattern', 'png')
   }
-  return false;
+  return false
 }
 ```
 
@@ -585,12 +568,12 @@ Let's first add the line to change the `draw()` function from running 60 times a
 
 ```js
 function setup() {
-  createCanvas(480, 600);
+  createCanvas(480, 600)
 
-  frameRate(5);
+  frameRate(5)
 
-  circleDiameter = width/NUM_CIRCLES;
-  circleRadius = circleDiameter/2;
+  circleDiameter = width / NUM_CIRCLES
+  circleRadius = circleDiameter / 2
 }
 ```
 
@@ -598,22 +581,23 @@ That said, we can create a cool scrolling color effect by manipulating our color
 
 ```js
 function setup() {
-  createCanvas(480, 600);
+  createCanvas(480, 600)
 
-  frameRate(5);
+  frameRate(5)
 
-  circleDiameter = width/NUM_CIRCLES;
-  circleRadius = circleDiameter/2;
+  circleDiameter = width / NUM_CIRCLES
+  circleRadius = circleDiameter / 2
 
-  rVal = 255;
-  gVal = 0;
-  bVal = 0;
+  rVal = 255
+  gVal = 0
+  bVal = 0
 }
 
 function draw() {
-  var isShifted = false;
+  var isShifted = false
 
   // ...the rest of the draw function
+}
 ```
 
 If we move the three lines that set the initial RGB values to `setup()`, then we will be increment the values indefinitely. If we save and refresh our Live Preview, we'll see that everything is white. What's the deal?
@@ -625,15 +609,15 @@ We can have color progression while keeping the values below 255 by [modding](ht
 Let's change our incrementation code to incorporate this:
 
 ```js
-rVal = (rVal - 2) % 256;
-gVal = (gVal + 7) % 256;
-bVal = (bVal + 3) % 256;
+rVal = (rVal - 2) % 256
+gVal = (gVal + 7) % 256
+bVal = (bVal + 3) % 256
 ```
 
 JavaScript `%` operator does something stupid, in that it mods negative numbers incorrectly. We can get around this by recognizing that subtracting 2 and modding is the same as adding 254 and modding.
 
 ```js
-rVal = (rVal + 254) % 256;
+rVal = (rVal + 254) % 256
 ```
 
 Save and refresh and be warned that it might be jarring.
@@ -643,55 +627,54 @@ As a check, your `script.js` should look like this:
 Final code:
 
 ```js
-var NUM_CIRCLES = 12;
+var NUM_CIRCLES = 12
 
-var circleDiameter;
-var circleRadius;
+var circleDiameter
+var circleRadius
 
-var rVal;
-var gVal;
-var bVal;
+var rVal
+var gVal
+var bVal
 
 function setup() {
-  createCanvas(480, 600);
+  createCanvas(480, 600)
 
-  frameRate(5);
+  frameRate(5)
 
-  circleDiameter = width/NUM_CIRCLES;
-  circleRadius = circleDiameter/2;
+  circleDiameter = width / NUM_CIRCLES
+  circleRadius = circleDiameter / 2
 
-  rVal = 255;
-  gVal = 0;
-  bVal = 0;
+  rVal = 255
+  gVal = 0
+  bVal = 0
 }
 
 function draw() {
-  var isShifted = false;
+  var isShifted = false
 
-  var y = height;
+  var y = height
   while (y >= 0) {
-
-    var x;
+    var x
 
     if (isShifted) {
-      x = circleRadius;
+      x = circleRadius
     } else {
-      x = 0;
+      x = 0
     }
 
     while (x <= width) {
-      stroke(color(rVal, gVal, bVal));
-      fill(color(rVal, gVal, bVal));
-      ellipse(x, y, circleDiameter, circleDiameter);
-      x = x + circleDiameter;
+      stroke(color(rVal, gVal, bVal))
+      fill(color(rVal, gVal, bVal))
+      ellipse(x, y, circleDiameter, circleDiameter)
+      x = x + circleDiameter
     }
 
-    y = y - circleRadius;
-    isShifted = !isShifted;
+    y = y - circleRadius
+    isShifted = !isShifted
 
-    rVal = (rVal + 254) % 256;
-    gVal = (gVal + 7) % 256;
-    bVal = (bVal + 3) % 256;
+    rVal = (rVal + 254) % 256
+    gVal = (gVal + 7) % 256
+    bVal = (bVal + 3) % 256
   }
 }
 ```

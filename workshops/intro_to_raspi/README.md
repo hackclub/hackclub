@@ -1,7 +1,7 @@
 ---
 name: Intro to Pi
 description: An introduction to the credit card-sized super cool mini PC
-author: "@1061999"
+author: '@1061999'
 group: pi
 order: 1
 ---

@@ -8,7 +8,7 @@ order: 2
 
 # Most Ridiculous API Challenge
 
-_This is an introduction to the July 2018 challenge we’re running. [Submit your projects here!](https://hackclub.com/challenge)_
+_This is an introduction to the [July 2018 challenge](https://hackclub.com/challenge) we ran._
 
 The prompt for this challenge is to create the most ridiculous/dumbest/silliest API possible. An API is a web project that returns a response, usually dependent on some sort of query/input.
 

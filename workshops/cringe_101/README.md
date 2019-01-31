@@ -1,7 +1,7 @@
 ---
 name: Cringe 101
 description: The most cringiest website ever
-author: "@nguyenbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram"
+author: '@nguyenbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram'
 group: experimental
 order: 1
 ---
@@ -49,10 +49,9 @@ This isn't 100% necessary for the code to run (it will still totally do so), but
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="main.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet" />
   </head>
-  <body>
-  </body>
+  <body></body>
 </html>
 ```
 
@@ -137,6 +136,7 @@ to be 50% of the width of the page.
 In the CSS, we use **selectors to select tags**, `img` is the selector in our example.
 
 - What if you want to **call 1 of your 2 `<h1>` tags** → Both have the same selector right now.
+
   - To solve this and create **custom CSS selectors**, in HTML → This is called creating a class
 
 - After **keyword** (`<div, <body, <h1, <head`) of **any tag** type **class="class-name"** to create a class
@@ -154,7 +154,7 @@ CSS:
 
 ```css
 .who {
-    background:url("https://media3.giphy.com/media/9RTiWDExHW6aY/200.gif ");
+  background: url('https://media3.giphy.com/media/9RTiWDExHW6aY/200.gif ');
 }
 ```
 
@@ -167,13 +167,14 @@ Below is the code for this site:
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="main.css" rel="stylesheet">
-    </head>
+  <head>
+    <link href="main.css" rel="stylesheet" />
+  </head>
 
-    <body class="who">
-        <a href="god.html"></a> <!--When an element with the class "who" is clicked it will lead you to a separate page-->
-    </body>
+  <body class="who">
+    <a href="god.html"></a>
+    <!--When an element with the class "who" is clicked it will lead you to a separate page-->
+  </body>
 </html>
 ```
 
@@ -182,37 +183,37 @@ Below is the code for this site:
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="main.css" rel="stylesheet">
-    </head>
+  <head>
+    <link href="main.css" rel="stylesheet" />
+  </head>
 
-    <body class="god">
-    </body>
+  <body class="god"></body>
 </html>
 ```
 
 ---
 
 ```css
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 a {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .who {
-    background:url("https://media3.giphy.com/media/9RTiWDExHW6aY/200.gif ");
+  background: url('https://media3.giphy.com/media/9RTiWDExHW6aY/200.gif ');
 }
 
 .god {
-    background:url("https://media.giphy.com/media/6rclMe3lUIQNi/giphy.gif ");
+  background: url('https://media.giphy.com/media/6rclMe3lUIQNi/giphy.gif ');
 }
 ```
 
@@ -229,16 +230,19 @@ The best part about Google Fonts is that it gives you the code you need to put o
 1. Navigate to [google.com/fonts](https://www.google.com/fonts).
 2. To select a font, click the + on any of the ones on the front page or by searching for one on the top right corner.
 3. Once you have selected one or more fonts, click the bottom line where it says “ Families Selected and click the preview and share button.
-4. From there, let’s copy the link below **STANDARD  @IMPORT**. This should look something like `<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans|Roboto" rel="stylesheet">`
+4. From there, let’s copy the link below **STANDARD @IMPORT**. This should look something like `<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans|Roboto" rel="stylesheet">`
 5. You'll notice it looks exactly like a CSS file -- that's because it is!
 6. Since it's a CSS file, you know what that means! Copy the code & paste into your `<head>`.
 
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family= Open+Sans" rel="stylesheet">
-    </head>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family= Open+Sans"
+      rel="stylesheet"
+    />
+  </head>
 </html>
 ```
 
@@ -248,10 +252,10 @@ In the example below, we changed all the text to the desired font by using the p
 
 ```css
 body {
-    font-family: 'Open Sans';
-    color:#000;
-    font-size:10px
-    font-weight:300;
+  font-family: 'Open Sans';
+  color: #000;
+  font-size: 10px;
+  font-weight: 300;
 }
 ```
 
@@ -264,12 +268,13 @@ Tip — Along with changing the fonts, change the colors (`color`) and thickness
 You can revisit that workshop for more extensive overview of them, but here's a quick recap.
 
 A **pseudo-class** is an **exception to a set of rules you created in CSS**.
+
 - _**If you do something**, the **default set of rules will be overridden** by the new set_
 - Pseudo-classes are activated by adding them to a CSS selector like this.
 
 ```css
 h1:hover {
-    color: red;
+  color: red;
 }
 ```
 
@@ -288,12 +293,13 @@ All you need to start annoying your friends, family, dog, etc is:
 1. A pair of `<audio>` tags.
    - `<audio> </audio>`.
 2. A properly configured `<source>` tag inside of those (it's self closing!).
-  - You can have multiple source files inside a pair of audio tags.
-    - It'll just cycle through them like a playlist!
+
+- You can have multiple source files inside a pair of audio tags.
+  - It'll just cycle through them like a playlist!
 
 ```html
 <audio>
-    <source src="audiofile.mp3" type="mediatype">
+  <source src="audiofile.mp3" type="mediatype" />
 </audio>
 ```
 
@@ -306,7 +312,8 @@ Just follow the either method below to upload your file to C9.
 ![](https://i.imgur.com/TeXlg3h.gif)
 
 1. Drag and drop your file onto the folder tree you want to upload it under
-  - It should highlight the folder green when you hover over it and when you let go, it should start uploading.
+
+- It should highlight the folder green when you hover over it and when you let go, it should start uploading.
 
 **Alternate Method**
 
@@ -381,7 +388,7 @@ This tag also has its own set of attributes like `<audio>` also it's **self-clos
 
 ```html
 <audio loop autoplay>
-    <source src="audio/darude.mp3" type="audio/mpeg">
+  <source src="audio/darude.mp3" type="audio/mpeg" />
 </audio>
 ```
 
@@ -411,9 +418,9 @@ To begin, let's open your JS file!
 The single line of code that we'll need to tell JavaScript to "listen" for an event is:
 
 ```js
-document.addEventListener("[event]", function() {
-    [Your code to run]
-});
+document.addEventListener('[event]', function() {
+  // [Your code to run]
+})
 ```
 
 You may or may not understand what this chunk of code means so let's break it down.
@@ -427,7 +434,7 @@ So far pretty simple right? `document.addEventListener` just means: **Start list
 Now we need to specify what type of event we want our listener to look out for, to do this we put the name of the event in the [event] section of the code.
 
 ```js
-document.addEventListener("[event]", function() {});
+document.addEventListener('[event]', function() {})
 ```
 
 These events have certain names, but thanks to our friends at `w3schools` they've given us a nicely arranged list of all the HTML events.
@@ -439,7 +446,7 @@ These events have certain names, but thanks to our friends at `w3schools` they'v
 So following that rule
 
 ```js
-document.addEventListener("onclick", function() {});
+document.addEventListener('onclick', function() {})
 ```
 
 Would turn into:
@@ -475,7 +482,7 @@ Now for the final step, which is to finally play your audio!
 To tell JavaScript to play the audio file stored in the variable all we need to write is:
 
 ```js
-variablename.play();
+variablename.play()
 ```
 
 `variablename` would be the name you set previously when you wrote `var variablename`
@@ -483,9 +490,9 @@ variablename.play();
 Don't forget to close your curly brackets of `function() {}` and it should work!
 
 ```js
-document.addEventListener("click", function() {
-    var wow = new Audio("wow-.mp3");
-    wow.play();
+document.addEventListener('click', function() {
+  var wow = new Audio('wow-.mp3')
+  wow.play()
 })
 ```
 
@@ -512,7 +519,17 @@ It is a tag, so it encloses other tags:
 Here's an example of what you can do!
 
 ```html
-<marquee direction="up" width="100%" height="250" behavior="alternate" style="border:solid">
-    <marquee behavior="alternate"><img src="https://media.giphy.com/media/TeBpzQZRaBIC4/giphy.gif" height="300px"></marquee>
+<marquee
+  direction="up"
+  width="100%"
+  height="250"
+  behavior="alternate"
+  style="border:solid"
+>
+  <marquee behavior="alternate"
+    ><img
+      src="https://media.giphy.com/media/TeBpzQZRaBIC4/giphy.gif"
+      height="300px"
+  /></marquee>
 </marquee>
 ```
