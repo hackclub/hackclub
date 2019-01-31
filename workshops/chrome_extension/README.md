@@ -1,7 +1,7 @@
 ---
 name: Chrome Extension
 description: Chrome extension for an editable notepad
-author: "@shmishtopher"
+author: '@shmishtopher'
 group: experimental
 order: 13
 ---
@@ -56,14 +56,13 @@ Create three new directories: "pages", "scripts", and "styles" in the root of yo
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../styles/popup.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../styles/popup.css" />
     <title>Hack Pad</title>
   </head>
   <body>
-
     <div class="notepad">
       <h1>Hack Notes</h1>
       <div contenteditable id="notepad"></div>
@@ -77,7 +76,8 @@ Create three new directories: "pages", "scripts", and "styles" in the root of yo
 ```css
 /* styles/popup.css */
 
-html, body {
+html,
+body {
   width: 500px;
   height: 400px;
   padding: 0;
@@ -111,7 +111,7 @@ html, body {
 .notepad > div {
   width: calc(100% - 30px);
   height: calc(100% - 15px);
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   border-radius: 5px;
   overflow-y: auto;
 
@@ -126,14 +126,14 @@ html, body {
 
 .notepad > div::-webkit-scrollbar-track {
   width: 6px;
-  background: #F9F9F9
+  background: #f9f9f9;
 }
 
 .notepad > div::-webkit-scrollbar-thumb {
   position: relative;
   right: 5px;
   width: 6px;
-  background: #E0E0E0;
+  background: #e0e0e0;
   border-radius: 3px;
 }
 ```
@@ -189,7 +189,6 @@ Now, our notebook is loaded whenever the extension is activated and saved on eve
 1. Give your extension an icon (hint: add it to the manifest)
 2. Add the ability to save multiple notebooks
 3. Pack and publish your extension!
-
 
 ## Hacking
 

@@ -90,7 +90,7 @@ import { App } from './App.js'
 ### Render your project
 
 ```js
-ReactDOM.render(<App />, document.getElementById(‘root’));
+ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 - `<App />` is a component that displays your website
@@ -285,7 +285,7 @@ this.setState({ stateName: data })
 - Create a method within the class
 
 ```js
-methodName(e) {  // you can add more data with methodName(e, data1, data2, etc...
+methodName(e) {  // you can add more data with methodName(e, data1, data2, etc…
   e.preventDefault(); // prevents the method from running without an event
   this.setState({ // Can accept one or more states, even if you have multiple states
     state1: data1,

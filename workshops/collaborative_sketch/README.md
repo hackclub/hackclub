@@ -1,7 +1,7 @@
 ---
 name: Sketch Together
 description: Real-time collaborative drawing pad using p5.js
-author: "@jkwok91"
+author: '@jkwok91'
 group: start
 order: 6
 ---
@@ -38,8 +38,7 @@ Next, clear the contents of `index.html` and put the following in its place:
   <head>
     <title>Collaborative Sketch!</title>
   </head>
-  <body>
-  </body>
+  <body></body>
 </html>
 ```
 
@@ -64,12 +63,12 @@ Let's click on "Add Firebase to your web app." We'll copy _part_ of the code sni
 
 ```js
 var config = {
-  apiKey: "AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM",
-  authDomain: "collaborative-sketch.firebaseapp.com",
-  databaseURL: "https://collaborative-sketch.firebaseio.com",
-  storageBucket: "collaborative-sketch.appspot.com",
-};
-firebase.initializeApp(config);
+  apiKey: 'AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM',
+  authDomain: 'collaborative-sketch.firebaseapp.com',
+  databaseURL: 'https://collaborative-sketch.firebaseio.com',
+  storageBucket: 'collaborative-sketch.appspot.com'
+}
+firebase.initializeApp(config)
 ```
 
 After copying the code snippet above, head back to Firebase and select the `Auth` tab on the left-hand side. Select `SET UP SIGN-IN METHOD` from the top menu bar, and click `ADD DOMAIN`. Enter `repl.co` and click `ADD`.
@@ -78,10 +77,10 @@ Next, go to the `Database` tab on the left-hand side. Within the `Database` tab,
 
 ```json
 {
-    "rules": {
-        ".read": true,
-        ".write": true
-    }
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
 }
 ```
 
@@ -92,9 +91,9 @@ Click `Publish` to save your changes. You should see this warning at the top of 
 We'll now head back to our `script.js` file. Below the Firebase configuration, we'll add a variable `pointsData` that we can use to access Firebase.
 
 ```js
-firebase.initializeApp(config);
+firebase.initializeApp(config)
 
-var pointsData = firebase.database().ref();
+var pointsData = firebase.database().ref()
 ```
 
 ## Part II: The JS File
@@ -103,14 +102,14 @@ At this point, `main.js` looks something like this:
 
 ```js
 var config = {
-  apiKey: "AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM",
-  authDomain: "collaborative-sketch.firebaseapp.com",
-  databaseURL: "https://collaborative-sketch.firebaseio.com",
-  storageBucket: "collaborative-sketch.appspot.com",
-};
-firebase.initializeApp(config);
-  
-var pointsData = firebase.database().ref();
+  apiKey: 'AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM',
+  authDomain: 'collaborative-sketch.firebaseapp.com',
+  databaseURL: 'https://collaborative-sketch.firebaseio.com',
+  storageBucket: 'collaborative-sketch.appspot.com'
+}
+firebase.initializeApp(config)
+
+var pointsData = firebase.database().ref()
 ```
 
 Let's quickly walk through what a part of this code does. For example:
@@ -131,7 +130,7 @@ How would you describe a screen to someone who hasn't seen it before? You can te
 
 ```js
 var phone = {
-  screenSize: "5.5 inches"
+  screenSize: '5.5 inches'
 }
 ```
 
@@ -139,18 +138,18 @@ See how similar it looks to the `config` object we have in our `main.js`? The `a
 
 ```js
 var config = {
-  apiKey: "AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM",
+  apiKey: 'AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM'
   // ...other stuff
 }
 ```
 
-The first thing we've added to the object is a `property` named `apiKey`, which we assigned a jumbled value of text to.  To access this value, we can write:
+The first thing we've added to the object is a `property` named `apiKey`, which we assigned a jumbled value of text to. To access this value, we can write:
 
 ```js
 config.apiKey
 ```
 
-The `.` is a special character that allows us to look inside of an `object`.  This can be used as a shortcut to replacing code, so writing `config.apiKey` is many times equivalent to writing the full jumbled text `"AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM"`.
+The `.` is a special character that allows us to look inside of an `object`. This can be used as a shortcut to replacing code, so writing `config.apiKey` is many times equivalent to writing the full jumbled text `"AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM"`.
 
 In the same manner, `config.authDomain` would look inside to the `object` for the value of `authDomain` and become "replaced" by `"collab-draw.firebaseapp.com"`.
 
@@ -168,23 +167,21 @@ Beneath that, we'll add our p5.js functions, `setup()` and `draw()`:
 var config = {
   // stuff hidden here for simplicity
 }
-firebase.initializeApp(config);
-  
-var pointsData = firebase.database().ref();
+firebase.initializeApp(config)
 
-function setup() {
-}
+var pointsData = firebase.database().ref()
 
-function draw() {
-}
+function setup() {}
+
+function draw() {}
 ```
 
 Then, within the `setup()` function, we'll create a canvas and paint the background. Here, we're creating a 400 by 400 canvas and coloring the background white:
 
 ```js
 function setup() {
-  createCanvas(400, 400);
-  background(255);
+  createCanvas(400, 400)
+  background(255)
 }
 ```
 
@@ -192,9 +189,9 @@ We'll also set the fill to black, so that the ellipses we draw will be filled in
 
 ```js
 function setup() {
-  createCanvas(400, 400);
-  background(255);
-  fill(0);
+  createCanvas(400, 400)
+  background(255)
+  fill(0)
 }
 ```
 
@@ -203,24 +200,25 @@ function setup() {
 Next, we'll create an array to store the points that have been drawn on the canvas so far. Let's put this line above the `setup()` function:
 
 ```js
-var pointsData = firebase.database().ref();
-var points = [];
+var pointsData = firebase.database().ref()
+var points = []
 
 function setup() {
   // ...the rest of the setup function
+}
 ```
 
 We'll need some way to get data from Firebase and into our `points` array, so let's add a call to Firebase at the end of `setup()`:
 
 ```js
 function setup() {
-  createCanvas(400, 400);
-  background(255);
-  fill(0);
+  createCanvas(400, 400)
+  background(255)
+  fill(0)
 
-  pointsData.on("child_added", function (point) {
-    points.push(point.val());
-  });
+  pointsData.on('child_added', function(point) {
+    points.push(point.val())
+  })
 }
 ```
 
@@ -232,28 +230,27 @@ Now our `main.js` should look like this:
 
 ```js
 var config = {
-  apiKey: "AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM",
-  authDomain: "collaborative-sketch.firebaseapp.com",
-  databaseURL: "https://collaborative-sketch.firebaseio.com",
-  storageBucket: "collaborative-sketch.appspot.com",
-};
-firebase.initializeApp(config);
-  
-var pointsData = firebase.database().ref();
+  apiKey: 'AIxaSyGsAkHke9lXEU_97a8rYpMn7gOH3eWDxrM',
+  authDomain: 'collaborative-sketch.firebaseapp.com',
+  databaseURL: 'https://collaborative-sketch.firebaseio.com',
+  storageBucket: 'collaborative-sketch.appspot.com'
+}
+firebase.initializeApp(config)
 
-var points = [];
+var pointsData = firebase.database().ref()
+
+var points = []
 
 function setup() {
-  createCanvas(400, 400);
-  background(255);
-  fill(0);
-  pointsData.on("child_added", function (point) {
-    points.push(point.val());
-  });
+  createCanvas(400, 400)
+  background(255)
+  fill(0)
+  pointsData.on('child_added', function(point) {
+    points.push(point.val())
+  })
 }
 
-function draw() {
-}
+function draw() {}
 ```
 
 ### Displaying the Points
@@ -263,8 +260,8 @@ Next, we'll want to display the points that we've requested from Firebase, by mo
 ```js
 function draw() {
   for (var i = 0; i < points.length; i++) {
-    var point = points[i];
-    ellipse(point.x, point.y, 5, 5);
+    var point = points[i]
+    ellipse(point.x, point.y, 5, 5)
   }
 }
 ```
@@ -273,11 +270,11 @@ We'll also want to repaint the background at each `draw()` function call, so let
 
 ```js
 function draw() {
-  background(255);
+  background(255)
 
   for (var i = 0; i < points.length; i++) {
-    var point = points[i];
-    ellipse(point.x, point.y, 5, 5);
+    var point = points[i]
+    ellipse(point.x, point.y, 5, 5)
   }
 }
 ```
@@ -294,7 +291,7 @@ function draw() {
 }
 
 function drawPoint() {
-  pointsData.push({x: mouseX, y: mouseY});
+  pointsData.push({ x: mouseX, y: mouseY })
 }
 ```
 
@@ -318,11 +315,11 @@ Type the following at the end of the `setup()` function:
 ```js
 function setup() {
   // ...the rest of the setup function
-  pointsData.on("child_added", function(point) {
-    points.push(point.val());
+  pointsData.on('child_added', function(point) {
+    points.push(point.val())
   })
 
-  canvas.mousePressed(drawPoint);
+  canvas.mousePressed(drawPoint)
 }
 ```
 
@@ -333,8 +330,8 @@ We can start by adding this beneath `canvas.mousePressed(drawPoint);`:
 ```js
 function setup() {
   // ...the rest of the setup function
-  canvas.mousePressed(drawPoint);
-  canvas.mouseMoved(drawPoint);
+  canvas.mousePressed(drawPoint)
+  canvas.mouseMoved(drawPoint)
 }
 ```
 
@@ -349,7 +346,7 @@ function drawPoint() {
 
 function drawPointIfMousePressed() {
   if (mouseIsPressed) {
-    drawPoint();
+    drawPoint()
   }
 }
 ```
@@ -379,7 +376,7 @@ In our `index.html`, we'll create a sort of control panel, with a `div` containi
     <button id="saveDrawing">Save to Computer</button>
     <button id="clearDrawing">DELETE DRAWING</button>
   </div>
-  
+
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -392,26 +389,24 @@ In our `main.js`, we'll create the functionality behind these two buttons, and t
 ```js
 function drawPointIfMousePressed() {
   if (mouseIsPressed) {
-    drawPoint();
+    drawPoint()
   }
 }
 
-$("#saveDrawing").on("click", saveDrawing);
+$('#saveDrawing').on('click', saveDrawing)
 
-function saveDrawing() {
-}
+function saveDrawing() {}
 
-$("#clearDrawing").on("click", clearDrawing);
+$('#clearDrawing').on('click', clearDrawing)
 
-function clearDrawing() {
-}
+function clearDrawing() {}
 ```
 
 How do we define these functions? Well, we've already seen how to save our canvas -- using the `saveCanvas()` function offered by p5.js! Let's fill in our `saveDrawing()` function:
 
 ```js
 function saveDrawing() {
-  saveCanvas();
+  saveCanvas()
 }
 ```
 
@@ -419,8 +414,8 @@ And what of our `clearDrawing()` function? Well, first, we should remove everyth
 
 ```js
 function clearDrawing() {
-  pointsData.remove();
-  points = [];
+  pointsData.remove()
+  points = []
 }
 ```
 
@@ -429,15 +424,15 @@ Right now other screens won't clear when we remove the drawing from Firebase. To
 ```js
 function setup() {
   // ...the rest of the setup function
-  pointsData.on("child_added", function (point) {
-    points.push(point.val());
-  });
-  pointsData.on("child_removed", function () {
-    points = [];
-  });
+  pointsData.on('child_added', function(point) {
+    points.push(point.val())
+  })
+  pointsData.on('child_removed', function() {
+    points = []
+  })
 
-  canvas.mousePressed(drawPoint);
-  canvas.mouseMoved(drawPointIfMousePressed);
+  canvas.mousePressed(drawPoint)
+  canvas.mouseMoved(drawPointIfMousePressed)
 }
 ```
 

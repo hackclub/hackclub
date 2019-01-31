@@ -1,16 +1,16 @@
 ---
 name: Blink
 description: Blink an LED with Arduino
-author: "@Athulbless"
+author: '@Athulbless'
 group: arduino
 order: 2
 ---
 
-# Blink an LED with Arduino 
+# Blink an LED with Arduino
 
 - Reference: [www.arduino.cc]()
 
-## Things You Would need:
+## Required Materials
 
 - Arduino Uno
 - USB A to USB B Cable
@@ -20,7 +20,7 @@ order: 2
 
 ![](images/kit.jpg)
 
-# Lets Get Started:
+# Let’s Get Started
 
 ## Step 1
 

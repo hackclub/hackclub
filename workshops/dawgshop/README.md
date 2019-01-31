@@ -1,7 +1,7 @@
 ---
 name: The Dawgshop
 description: Dynamically modify your page with jQuery, dawg
-author: "@nguyenbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram"
+author: '@nguyenbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram'
 group: experimental
 order: 7
 ---
@@ -29,8 +29,9 @@ This [slidedeck](https://docs.google.com/presentation/d/1N2l9FTYlGCocr8cqjLaHpp5
 ## Setting Up Your Files and HTML Document
 
 1. Make a new folder named, "dawgshop"
-  - Right click on the folder and make a file named `index.html`
-  - Repeat this step and make 2 more files named `style.css` and `script.js`
+
+- Right click on the folder and make a file named `index.html`
+- Repeat this step and make 2 more files named `style.css` and `script.js`
 
 ## Formatting Our HTML
 
@@ -44,7 +45,7 @@ To have a proper page, we must follow this format
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="main.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -101,113 +102,113 @@ _Please ~~don't~~ turn up that hard to our workshop_
 
 1. To enclose our content, we'll create a `<div>` tag
 
-  This is a container to:
+This is a container to:
 
-  - Organize our content
-  - Apply stylings from our `style.css` file to everything enclosed
+- Organize our content
+- Apply stylings from our `style.css` file to everything enclosed
 
-    ```html
-    <div class="dawgit">
-    </div>
-    ```
+  ```html
+  <div class="dawgit"></div>
+  ```
 
 2. To add the name of the workshop, let's create a `<h1></h1>` header tag.
 
-  Give the header tag an id of "title"
+Give the header tag an id of "title"
 
-  - Type `id="title"` before the `<h1` is closed.
+- Type `id="title"` before the `<h1` is closed.
 
-  It should look like this: `<h1 id="title">Dawg It Up</h1>`
+It should look like this: `<h1 id="title">Dawg It Up</h1>`
 
-  - An id is a way to identify single elements that use the same tag as other elements.
-  - I.e., There may be multiple `<h1>` tags in your code
-    - To select one it needs to have its custom name, hence the id.
+- An id is a way to identify single elements that use the same tag as other elements.
+- I.e., There may be multiple `<h1>` tags in your code
+  - To select one it needs to have its custom name, hence the id.
 
-  Indent your code!
+Indent your code!
 
-  - Indenting items that are enclosed within another tag is important for your own readability
-    - In this case `<h1>` is enclosed in `<div>`
+- Indenting items that are enclosed within another tag is important for your own readability
 
-    ```html
-    <div class="dawgit">
-      <h1 id="title">Dawg It Up</h1>
-    </div>
-    ```
-
-3. Let's create a place to input our text with the `<input/>` self-enclosed tag
-
-  `<input/>` is self-enclosed tag for creating an input box. The `/` is how it
-closes itself. We'll be able to type in this box!
-
-  ![Screenshot](img/screenshot.png)
-
-  Give this input box an id of "text-input"
-
-  ```html
-  <input id="text-input"/>
-  ```
-
-  We can give the box "placeholder text" as well!
-
-  - Placeholder text in the greyed out text (see the photo above, "insert text")
-
-  Add a `placeholder` attribute (like `src` is an attribute):
-
-  - `placeholder="some text"` right after the id
-
-  ```html
-  <input id="text-input" placeholder="insert text"/>
-  ```
-
-  - We've made the placeholder simply say "insert text"
-
-4. Let's make a submit button with the `<button>` tag
-
-  `<button>` is the tag for creating a button
-
-  - Just like the `<h1>` tag, this another tag where we place text between the opening and closing tags to display on the webpage
-
-  Give this button the text "dawg it"
-
-  ```html
-  <button>dawg it</button>
-  ```
-
-  Give this button an id of "go"
-
-  ```html
-  <button id="go">dawg it</button>
-  ```
-
-  We're going to tell the webpage that this is a type-of-something. In this case, it's a button!
-
-  To do this, we're also going to give this a `type` attribute.
-
-  - That means we should `type="button"` right before the id
-    - This is to ensure that the webpage understands we want a button
-      - By specifying this, the HTML adds some build-in CSS styling
+  - In this case `<h1>` is enclosed in `<div>`
 
   ```html
   <div class="dawgit">
     <h1 id="title">Dawg It Up</h1>
-    <button type="button" id="go">dawg it</button>
   </div>
   ```
 
-  **Look at that beautiful indenting. Is your code indented?**
+3. Let's create a place to input our text with the `<input/>` self-enclosed tag
 
-  ![Childish Gambino](img/Childish.gif)
+`<input/>` is self-enclosed tag for creating an input box. The `/` is how it
+closes itself. We'll be able to type in this box!
+
+![Screenshot](img/screenshot.png)
+
+Give this input box an id of "text-input"
+
+```html
+<input id="text-input" />
+```
+
+We can give the box "placeholder text" as well!
+
+- Placeholder text in the greyed out text (see the photo above, "insert text")
+
+Add a `placeholder` attribute (like `src` is an attribute):
+
+- `placeholder="some text"` right after the id
+
+```html
+<input id="text-input" placeholder="insert text" />
+```
+
+- We've made the placeholder simply say "insert text"
+
+4. Let's make a submit button with the `<button>` tag
+
+`<button>` is the tag for creating a button
+
+- Just like the `<h1>` tag, this another tag where we place text between the opening and closing tags to display on the webpage
+
+Give this button the text "dawg it"
+
+```html
+<button>dawg it</button>
+```
+
+Give this button an id of "go"
+
+```html
+<button id="go">dawg it</button>
+```
+
+We're going to tell the webpage that this is a type-of-something. In this case, it's a button!
+
+To do this, we're also going to give this a `type` attribute.
+
+- That means we should `type="button"` right before the id
+  - This is to ensure that the webpage understands we want a button
+    - By specifying this, the HTML adds some build-in CSS styling
+
+```html
+<div class="dawgit">
+  <h1 id="title">Dawg It Up</h1>
+  <button type="button" id="go">dawg it</button>
+</div>
+```
+
+**Look at that beautiful indenting. Is your code indented?**
+
+![Childish Gambino](img/Childish.gif)
 
 5. Still inside the div, let's create a space for our dawgified content, let's create a `<p>` tag with an
-id of `output`.
+   id of `output`.
 
-  ```html
-  <p id="output"></p>
-  ```
+```html
+<p id="output"></p>
+```
 
-  `<p>` stands for paragraph
+`<p>` stands for paragraph
 
-  - Just like the `<h1>` tag, this is another tag where we can place text between the opening and closing tags to display on the webpage
+- Just like the `<h1>` tag, this is another tag where we can place text between the opening and closing tags to display on the webpage
 
 Whatever text we type into the input box will have “, dawg” added - We will then add the text between the opening and closing <p> tags - We’ll do this using JavaScript.
 
@@ -215,20 +216,17 @@ Whatever text we type into the input box will have “, dawg” added - We will 
 
 ```html
 <body>
+  <!-- Our main HTML -->
+  <div class="dawgit">
+    <h1 id="title">Dawg It Up</h1>
+    <input id="text-input" placeholder="insert text" />
+    <button type="button" id="go">dawg it</button>
+    <p id="output"></p>
+  </div>
 
-    <!-- Our main HTML -->
-    <div class="dawgit">
-      <h1 id="title">Dawg It Up</h1>
-      <input id="text-input" placeholder="insert text">
-      <button type="button" id="go">dawg it</button>
-      <p id="output"></p>
-    </div>
-
-    <!-- JavaScript files, also referred to as simply "scripts" -->
-    <script
-src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="script.js"></script>
-
+  <!-- JavaScript files, also referred to as simply "scripts" -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
 ```
 
@@ -246,19 +244,19 @@ We want you to style the page!
 - Your peers are here to help you if you have any questions, all you gotta do is ask
   - Google is also amazing! It's what all programmers turn to, especially professionals!
 
-If you feel completely lost, no worries! Go back to our older [workshops](https://workshops.hackclub.com/)  or use those awesome google search skills of yours.
+If you feel completely lost, no worries! Go back to our older [workshops](https://workshops.hackclub.com/) or use those awesome google search skills of yours.
 
 ## JavaScript + jQuery , dawg
 
 Remember that the variable names in the examples below can be anything you want, but we recommend sticking with ours in order to make the workshop easier to follow!
 
-### JavaScript 
+### JavaScript
 
 Let's open up our JavaScript file now!
 
 ### Adding a Listener
 
-To begin our JavaScript journey to Thug Land we'll need to add a listener to listen for a click on our button. 
+To begin our JavaScript journey to Thug Land we'll need to add a listener to listen for a click on our button.
 
 ```js
 document.getElementById('go')
@@ -305,7 +303,7 @@ That means, whenever someone types into the input box, it will be retrieved with
 To do that we need to use:
 
 ```js
-var inputText = $('#text-input').val();
+var inputText = $('#text-input').val()
 ```
 
 WHOA HOLD UP DID YOU SEE THAT?????
@@ -360,10 +358,8 @@ So, we've debunked that mystery!
 ![Scooby Doo](img/scooby.gif)
 
 ```js
-document.getElementById('go').onclick = function(){
-    var inputText = $('#text-input').val();
-
-  
+document.getElementById('go').onclick = function() {
+  var inputText = $('#text-input').val()
 }
 ```
 
@@ -374,7 +370,7 @@ Let's move on to performing the actual dawging part of the string we got in the 
 We need to store the variable with the words from the input box and then add the word `, "dawg"` to it
 
 ```js
-var dawgifiedText = inputText + ", dawg";
+var dawgifiedText = inputText + ', dawg'
 ```
 
 This line takes the string we got in the last section (variable `inputText`) from the input box, adds `", dawg"` to the end of it, and then stores it into a new variable named `dawgifiedText`.
@@ -392,10 +388,9 @@ Alright, now that we're dawging it up, it's time to display our up text on the p
 Just to make sure, at this point your code should look like this:
 
 ```js
-document.getElementById('go').onclick = function(){
-    var inputText = $('#text-input').val();
-    var dawgifiedText = inputText + ", dawg";
-
+document.getElementById('go').onclick = function() {
+  var inputText = $('#text-input').val()
+  var dawgifiedText = inputText + ', dawg'
 }
 ```
 
@@ -413,7 +408,7 @@ This will take care of that job for us
 
 PS: you can use jQuery's `$('')` for this as well.
 
-- Try changing this line to use the jQuery syntax 
+- Try changing this line to use the jQuery syntax
 - Syntax means the grammar, spelling, and set of rules of a language
 
 Now we will attach `.innerHTML = dawgifiedText;` to the end of the line `document.getElementById('output').innerHTML`
@@ -425,7 +420,7 @@ It's just like `$('#text-input').val();` that we used before:
 We will now assign the value of `dawgifiedText` to the `<p>` tag with the id `output`:
 
 ```js
-document.getElementById('output').innerHTML = dawgifiedText;
+document.getElementById('output').innerHTML = dawgifiedText
 ```
 
 In plain English, `document.getElementById('output').innerHTML = dawgifiedText;` means:
@@ -438,10 +433,10 @@ Final Code:
 
 ```js
 document.getElementById('go').onclick = function() {
-    var inputText = $('#text-input').val();
-    var dawgifiedText = inputText + ", dawg";
-    document.getElementById('output').innerHTML = dawgifiedText;
-};
+  var inputText = $('#text-input').val()
+  var dawgifiedText = inputText + ', dawg'
+  document.getElementById('output').innerHTML = dawgifiedText
+}
 ```
 
 ## You are now a JavaScript Legend.
@@ -461,12 +456,16 @@ As a note, you can replace ', dawg' with any other text; give it a try!"
 Like with previous workshops, let's set up a link that you can share with others!
 
 1. Open the terminal by pressing `alt + t` on the keyboard at the same time. Then type in the following commands:
-  - `git add --all`
-  - `git commit -am "Dawg It Up"`
-  - `git push origin master`
+
+- `git add --all`
+- `git commit -am "Dawg It Up"`
+- `git push origin master`
+
 2. GitHub will now ask you for your username and password.
-  - Go ahead and enter your username and then press the <kbd>enter</kbd> key.
-  - Then enter your password and press <kbd>enter</kbd>. _Note that the characters don't show up on the screen but rest assured, you are still typing._
+
+- Go ahead and enter your username and then press the <kbd>enter</kbd> key.
+- Then enter your password and press <kbd>enter</kbd>. _Note that the characters don't show up on the screen but rest assured, you are still typing._
+
 3. Now try to view your game by going to `username.github.io/dawgshop`
 
    > Make sure to change `username` to your own username

@@ -1,7 +1,7 @@
 ---
 name: Choosing your Pi
 description: Learn the differences between different models of Pi
-author: "@1061999"
+author: '@1061999'
 group: pi
 order: 2
 ---
@@ -22,7 +22,7 @@ The small size of Pi zero W makes it an ideal choice for embedded projects. It c
 
 ## Verdict
 
-Even though the Pi zero W costs less and is powerful enough for smaller projects, it requires an large number of accessories like mini HDMI converters, OTG cables, mini camera cables or USB hubs to fully function. All of these combined would cost you at least $25. In my opinion, beginners should consider buying the Raspberry Pi 3, as it is easy to use out of the box and has plenty of ports to connect your peripherals.
+Even though the Pi zero W costs less and is powerful enough for smaller projects, it requires an large number of accessories like mini HDMI converters, OTG cables, mini camera cables or USB hubs to fully function. All of these combined would cost you at least \$25. In my opinion, beginners should consider buying the Raspberry Pi 3, as it is easy to use out of the box and has plenty of ports to connect your peripherals.
 
 However, if you are planning to build something that has a low profile, you should probably consider the Pi zero W.
 
