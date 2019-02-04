@@ -27,7 +27,7 @@ On top of that, we have a few recommendations specifically for Hack Club co-foun
 
 ## Can I Lead The Club Myself?
 
-You may — it's your club. That said, what if you're
+You may—it's your club. That said, what if you're
 
 - sick / studying / traveling and can't lead meetings
 - graduating and haven't decided who will lead next year

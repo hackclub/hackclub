@@ -1,10 +1,10 @@
 ---
-name: "Synth"
-description: "Let's make a synth pad with Tone.js"
-author: "@cwalker"
-group: "start"
+name: 'Synth'
+description: 'Let\'s make a synth pad with Tone.js'
+author: '@cwalker'
+group: 'start'
 order: 8
-begin: "https://repl.it/languages/html"
+begin: 'https://repl.it/languages/html'
 ---
 
 # Synth Pad
@@ -13,7 +13,7 @@ Let's make a synth pad, using simple HTML and a fun JavaScript package called To
 
 Note to club leaders: This workshop is noisy, so **remind people to bring headphones!** Bring some extra pairs if you can.
 
-## My Version:
+## My Version
 
 [Live Version](https://synth--polytrope.repl.co) | [Source Code](https://repl.it/@polytrope/synth)
 
@@ -35,7 +35,7 @@ Set up your `index.html` like this:
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>synth</title>
   </head>
 
@@ -102,9 +102,9 @@ Let's add some code to make Tone do something simple. Try putting this into your
 
 ```html
 <script>
-  var synth = new Tone.Synth().toMaster();
+  var synth = new Tone.Synth().toMaster()
 
-  synth.triggerAttack(400);
+  synth.triggerAttack(400)
 </script>
 ```
 
@@ -116,7 +116,7 @@ You should hear a super annoying noise. If you are not annoyed, either your soun
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>synth</title>
   </head>
 
@@ -140,9 +140,9 @@ You should hear a super annoying noise. If you are not annoyed, either your soun
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.3.11/Tone.min.js"></script>
 
   <script>
-    var synth = new Tone.Synth().toMaster();
+    var synth = new Tone.Synth().toMaster()
 
-    synth.triggerAttack(400);
+    synth.triggerAttack(400)
   </script>
 </html>
 ```
@@ -299,22 +299,22 @@ Your whole `script` section should now look like this:
 
 ```html
 <script>
-  var synth = new Tone.Synth().toMaster();
-  var pad = document.getElementById("pad");
-  var label = document.getElementById("label");
+  var synth = new Tone.Synth().toMaster()
+  var pad = document.getElementById('pad')
+  var label = document.getElementById('label')
 
-  function down(event){
-    var x = event.pageX;
-    synth.triggerAttack(x);
-    label.innerHTML = Math.round(x)+"Hz";
+  function down(event) {
+    var x = event.pageX
+    synth.triggerAttack(x)
+    label.innerHTML = Math.round(x) + 'Hz'
   }
-  function up(event){
-    synth.triggerRelease();
-    label.innerHTML = "CLICK / DRAG";
+  function up(event) {
+    synth.triggerRelease()
+    label.innerHTML = 'CLICK / DRAG'
   }
 
-  pad.addEventListener("pointerdown", down);
-  pad.addEventListener("pointerup", up);
+  pad.addEventListener('pointerdown', down)
+  pad.addEventListener('pointerup', up)
 </script>
 ```
 
@@ -374,33 +374,33 @@ Now your script section should look something like this:
 
 ```html
 <script>
-  var synth = new Tone.Synth().toMaster();
-  var pad = document.getElementById("pad");
-  var label = document.getElementById("label");
-  var dragging = false;
+  var synth = new Tone.Synth().toMaster()
+  var pad = document.getElementById('pad')
+  var label = document.getElementById('label')
+  var dragging = false
 
-  function down(event){
-    dragging = true;
-    var x = event.pageX;
-    synth.triggerAttack(x);
-    label.innerHTML = Math.round(x)+"Hz";
+  function down(event) {
+    dragging = true
+    var x = event.pageX
+    synth.triggerAttack(x)
+    label.innerHTML = Math.round(x) + 'Hz'
   }
-  function up(event){
-    dragging = false;
-    synth.triggerRelease();
-    label.innerHTML = "CLICK / DRAG";
+  function up(event) {
+    dragging = false
+    synth.triggerRelease()
+    label.innerHTML = 'CLICK / DRAG'
   }
-  function move(event){
+  function move(event) {
     if (dragging) {
-      var x = event.pageX;
-      synth.setNote(x);
-      label.innerHTML = Math.round(x)+"Hz";
+      var x = event.pageX
+      synth.setNote(x)
+      label.innerHTML = Math.round(x) + 'Hz'
     }
   }
 
-  pad.addEventListener("pointerdown", down);
-  pad.addEventListener("pointerup", up);
-  pad.addEventListener("pointermove", move);
+  pad.addEventListener('pointerdown', down)
+  pad.addEventListener('pointerup', up)
+  pad.addEventListener('pointermove', move)
 </script>
 ```
 
@@ -414,7 +414,7 @@ For reference, here's my whole `index.html` file at the end of writing this:
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>synth</title>
   </head>
 
@@ -449,33 +449,33 @@ For reference, here's my whole `index.html` file at the end of writing this:
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.3.11/Tone.min.js"></script>
 
   <script>
-    var synth = new Tone.Synth().toMaster();
-    var pad = document.getElementById("pad");
-    var label = document.getElementById("label");
-    var dragging = false;
+    var synth = new Tone.Synth().toMaster()
+    var pad = document.getElementById('pad')
+    var label = document.getElementById('label')
+    var dragging = false
 
-    function down(event){
-      dragging = true;
-      var x = event.pageX;
-      synth.triggerAttack(x);
-      label.innerHTML = Math.round(x)+"Hz";
+    function down(event) {
+      dragging = true
+      var x = event.pageX
+      synth.triggerAttack(x)
+      label.innerHTML = Math.round(x) + 'Hz'
     }
-    function up(event){
-      dragging = false;
-      synth.triggerRelease();
-      label.innerHTML = "CLICK / DRAG";
+    function up(event) {
+      dragging = false
+      synth.triggerRelease()
+      label.innerHTML = 'CLICK / DRAG'
     }
-    function move(event){
+    function move(event) {
       if (dragging) {
-        var x = event.pageX;
-        synth.setNote(x);
-        label.innerHTML = Math.round(x)+"Hz";
+        var x = event.pageX
+        synth.setNote(x)
+        label.innerHTML = Math.round(x) + 'Hz'
       }
     }
 
-    pad.addEventListener("pointerdown", down);
-    pad.addEventListener("pointerup", up);
-    pad.addEventListener("pointermove", move);
+    pad.addEventListener('pointerdown', down)
+    pad.addEventListener('pointerup', up)
+    pad.addEventListener('pointermove', move)
   </script>
 </html>
 ```

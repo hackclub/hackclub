@@ -1,0 +1,27 @@
+/**
+ * styles/color.css
+ *
+ * @version     [YOUR_VERSION]
+ * @author      [YOUR_NAME]
+ */
+
+:root {
+  --primary: #1bcf9a;
+  --primary-light: #66ffcb;
+  --primary-dark: #009d6c;
+
+  --accent: #f45532;
+  --accent-light: #ff885e;
+  --accent-dark: #ba1c04;
+
+  --text-dark-high: rgba(0, 0, 0, 0.87);
+  --text-dark-medium: rgba(0, 0, 0, 0.6);
+  --text-dark-low: rgba(0, 0, 0, 0.38);
+
+  --text-light-high: rgba(255, 255, 255, 1);
+  --text-light-medium: rgba(255, 255, 255, 0.87);
+  --text-light-low: rgba(255, 255, 255, 0.6);
+
+  --white: #ffffff;
+  --off-white: #f5f5f7;
+}

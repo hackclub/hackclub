@@ -5,9 +5,9 @@ group: misc
 order: 2
 ---
 
-This is not a standard workshop—it's a place to record wanted workshops.
+This is not a standard workshop—it’s a place to record wanted workshops.
 
-If you'd like to see someone make a workshop on building a specific type of project or on a specific technology, please edit this workshop to include your ideas!
+If you’d like to see someone make a workshop on building a specific type of project or on a specific technology, please edit this workshop to include your ideas!
 
 # Wishlist
 
@@ -32,13 +32,12 @@ If you'd like to see someone make a workshop on building a specific type of proj
 * Basic Amazon Alexa skill ([@lachlanjc](https://github.com/lachlanjc))
 * Slack slash command to save ideas ([@lachlanjc](https://github.com/lachlanjc))
 * Add payments to a website with Stripe ([@lachlanjc](https://github.com/lachlanjc))
-* Intro to React ([@lachlanjc](https://github.com/lachlanjc))
+* ~~Intro to React ([@lachlanjc](https://github.com/lachlanjc))~~
 * Text editor/writing app built with React and Draft.js ([@lachlanjc](https://github.com/lachlanjc))
   * Package as Electron app for macOS ([@lachlanjc](https://github.com/lachlanjc))
 * Markdown-based blog using Gatsby ([@lachlanjc](https://github.com/lachlanjc))
 * ~~Weather app using React + styled-components + Dark Sky API ([@lachlanjc](https://github.com/lachlanjc))~~
 * Game using [react-game-kit](https://github.com/FormidableLabs/react-game-kit) ([@lachlanjc](https://github.com/lachlanjc))
-* Basic site builder using `contenteditable` and a bit of jQuery ([@lachlanjc](https://github.com/lachlanjc))
 * How to create your own cryptocurrency ([@yevbar](https://github.com/yevbar))
 * Chat out with a chat bot ([@yevbar](https://github.com/yevbar))
 * A simple neural network ([@yevbar](https://github.com/yevbar))

@@ -1,7 +1,7 @@
 ---
 name: Find Bigfoot
 description: Simple game to find Bigfoot using HTML, CSS and JS
-author: "@ad510"
+author: '@ad510'
 group: experimental
 order: 6
 ---
@@ -37,7 +37,7 @@ If you've done other Hack Club workshops before, this should be pretty straightf
 2. Under the workspace called `USERNAME.github.io` where `USERNAME` is your GitHub username, click **Open** to open the workspace.
 3. Make a new folder called `find_bigfoot`.
 4. In the `find_bigfoot` folder, make a new file called `index.html`.
-5. Make another file in the `find_bigfoot` folder and call it `style.css`. 
+5. Make another file in the `find_bigfoot` folder and call it `style.css`.
 6. Double-click `index.html` to open the file.
 
 ### Add Standard HTML Template
@@ -47,12 +47,8 @@ Type the standard HTML template into `index.html`:
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-
-    </head>
-    <body>
-
-    </body>
+  <head> </head>
+  <body></body>
 </html>
 ```
 
@@ -103,12 +99,10 @@ And the HTML looks like this:
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-
-    </head>
-    <body>
-        <img src="assets/bigfoot.png">
-    </body>
+  <head> </head>
+  <body>
+    <img src="assets/bigfoot.png" />
+  </body>
 </html>
 ```
 
@@ -141,8 +135,8 @@ The first link takes you [here](http://www.w3schools.com/js/js_popup.asp):
 It looks like when you run `alert("I am an alert box!");` it opens a pop-up box showing the text inside the quotes. So if we put 2 and 2 together, our `img` tag should look like this:
 
 ```html
-<img src="assets/bigfoot.png"
-     onclick="alert("Woohoo, you win! You found Bigfoot!");">
+<img src="assets/bigfoot.png" onclick="alert("Woohoo, you win! You found
+Bigfoot!");">
 ```
 
 Change your `img` tag to look like that too, then click Bigfoot in the live preview.
@@ -167,13 +161,13 @@ At this point, `index.html` should look like this:
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-       
-    </head>
-    <body>
-        <img src="assets/bigfoot.png"
-             onclick="alert('Woohoo, you win! You found Bigfoot!');">
-    </body>
+  <head> </head>
+  <body>
+    <img
+      src="assets/bigfoot.png"
+      onclick="alert('Woohoo, you win! You found Bigfoot!');"
+    />
+  </body>
 </html>
 ```
 
@@ -200,28 +194,28 @@ _Sample solution:_
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body {
-                background-image: url("assets/forest.jpg");
-            }
-        </style>
-    </head>
-    <body>
-        <img src="assets/bigfoot.png"
-             onclick="alert('Woohoo, you win! You found Bigfoot!');">
-    </body>
+  <head>
+    <style>
+      body {
+        background-image: url('assets/forest.jpg');
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="assets/bigfoot.png"
+      onclick="alert('Woohoo, you win! You found Bigfoot!');"
+    />
+  </body>
 </html>
+```
 
-<!--
 There are several ways to add the background image. Here is one way:
 
-1. Google "html background image" (without quotes).
+1. Google `html background image`.
 2. The first link brings you here: http://www.w3schools.com/cssref/pr_background-image.asp
 3. There is an example near the top. You can click "Try it yourself" to see the full HTML of the example.
 4. Add the <style> tag in the <head> like in the example, but replace the URL with the picture of the forest. You do not need the background-color rule since we are already setting a background image.
--->
-```
 
 ### Setting Bigfoot's Location
 
@@ -233,7 +227,7 @@ That's much better! But the top left corner is a pretty boring place to hide Big
 .  
 .  
 .  
-.  
+.
 
 OK, got it working? If you need help, try asking your neighbor or a club leader for hints.
 
@@ -253,9 +247,9 @@ It has some CSS code showing how to "position an `<h2>` element":
 
 ```css
 h2 {
-    position: absolute;
-    left: 100px;
-    top: 150px;
+  position: absolute;
+  left: 100px;
+  top: 150px;
 }
 ```
 
@@ -269,60 +263,59 @@ Just like how we ran code when someone clicked using `onclick`, we're going to c
 
 ```html
 <head>
-    <!-- Other stuff in the head goes here -->
+  <!-- Other stuff in the head goes here -->
 
-    <script>
-        function loadBigFoot() {
-
-        }
-    </script>
+  <script>
+    function loadBigFoot() {}
+  </script>
 </head>
 ```
 
 We should also go ahead and add the `onload` attribute to the body tag. There are a couple more things we have to do. First, go ahead and get rid of `src` tag, as we will be adding that with the function. Then, add an `id` to the `img` tag. This is so we can change the `src` attribute after the page loads.
 
 ```html
-    <body onload="loadBigFoot()">
-        <img id="bigFoot" onclick="alert('Woohoo, you win! You found Bigfoot!');">
-    </body>
-</html>
+<body onload="loadBigFoot()">
+  <img id="bigFoot" onclick="alert('Woohoo, you win! You found Bigfoot!');" />
+</body>
 ```
 
 Now, lets get a hold of the `img` tag and change its `src` to our friend Big Foot.
 
 ```javascript
-    <script>
-        function loadBigFoot() {
-             document.getElementById("bigFoot").src = "assets/bigfoot.png"
-        }
+<script>
+  function loadBigFoot(){' '}
+  {(document.getElementById('bigFoot').src = 'assets/bigfoot.png')}
+  // ...
+</script>
 ```
+
 Big Foot should now load after the background. We did it!
 
-When we're done, `index.html` looks like 
+When we're done, `index.html` looks like
 
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body {
-                background-image: url("assets/forest.jpg");
-            }
-            img {
-                position: absolute;
-                left: 100px;
-                top: 150px;
-            }
-        </style>
-        <script>
-            function loadBigFoot() {
-                document.getElementById("bigFoot").src = "assets/bigfoot.png"
-            }
-        </script>
-    </head>
-    <body onload="loadBigFoot()">
-        <img id="bigFoot" onclick="alert('Woohoo, you win! You found Bigfoot!');">
-    </body>
+  <head>
+    <style>
+      body {
+        background-image: url('assets/forest.jpg');
+      }
+      img {
+        position: absolute;
+        left: 100px;
+        top: 150px;
+      }
+    </style>
+    <script>
+      function loadBigFoot() {
+        document.getElementById('bigFoot').src = 'assets/bigfoot.png'
+      }
+    </script>
+  </head>
+  <body onload="loadBigFoot()">
+    <img id="bigFoot" onclick="alert('Woohoo, you win! You found Bigfoot!');" />
+  </body>
 </html>
 ```
 
@@ -339,13 +332,15 @@ Most importantly, by practicing Googling stuff, you are on your way toward becom
 Like with previous workshops, let's set up a link that you can share with others!
 
 1. Open the terminal by pressing `alt + t` on the keyboard at the same time. Then type in the following commands:
-  - `git add --all`
-  - `git commit -am "Find Bigfoot workshop"`
-  - `git push origin master`
+
+- `git add --all`
+- `git commit -am "Find Bigfoot workshop"`
+- `git push origin master`
 
 2. GitHub will now ask you for your username and password.
-  - Go ahead and enter your username and then press the enter.
-  - Then enter your password and press enter. _Note that the characters don't show up on the screen but rest assured, you are still typing._
+
+- Go ahead and enter your username and then press the enter.
+- Then enter your password and press enter. _Note that the characters don't show up on the screen but rest assured, you are still typing._
 
 3. Now try to view your game by going to `username.github.io/find_bigfoot`
 
