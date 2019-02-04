@@ -23,7 +23,7 @@ Plus some simple JavaScript to flash the background and play thunder when you cl
 
 **[Click here](https://repl.it/@polytrope/thunderstorm-starter) to begin.**
 
-(Tech used: Basic HTML/CSS, `setTimeout`, Howler, `Math.random()`)
+(Tech used: Basic HTML/CSS, `setTimeout`, Howler, `Math.random`)
 
 ## Let's Make a Sky
 
