@@ -4,7 +4,7 @@ description: "Let's make a synth pad with Tone.js"
 author: "@cwalker"
 group: "start"
 order: 8
-launch: "https://repl.it/languages/html"
+begin: "https://repl.it/languages/html"
 ---
 
 # Synth Pad

@@ -4,7 +4,7 @@ description: “Build a thunderstorm in your browser“
 author: “@cwalker”
 group: "start"
 order: 9
-template: “https://repl.it/@polytrope/thunderstorm-starter”
+begin: “https://repl.it/@polytrope/thunderstorm-starter”
 ---
 
 Ever wanted your own private, portable thunderstorm?
