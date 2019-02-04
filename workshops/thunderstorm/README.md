@@ -1,4 +1,13 @@
-Big ThunderEver wanted your own private, portable thunderstorm?
+---
+name: “Thunderstorm”
+description: “Build a thunderstorm in your browser“
+author: “@cwalker”
+group: "start"
+order: 9
+template: “https://repl.it/@polytrope/thunderstorm-starter”
+---
+
+Ever wanted your own private, portable thunderstorm?
 
 Well I have, so I built one—[check it out here](https://thunderstorm--polytrope.repl.co).
 
@@ -44,7 +53,7 @@ We'll use the `body` element as our sky. Let's give it some color in our `style`
 </style>
 ```
 
-Now if you hit Play, you should see a dark blue sky.
+Now if you hit Run, you should see a dark blue sky.
 
 ## Make it Flash
 
@@ -58,9 +67,9 @@ Now let's use JavaScript to make the sky change colors.
 </script>
 ```
 
-Now if you run the site, the background should immediately turn white.
+Run the site—the background should immediately turn white.
 
-We want each click to trigger a flash, so let's create a `flashOn` function and call it whenever we click anywhere in the window.
+We want each click to trigger a flash, so let's create a `flashOn` function and “call” (trigger) it whenever we click anywhere in the window.
 
 ```html
 <script>
@@ -100,6 +109,8 @@ Of course, we also want to reset the background color. So we create a `flashOff`
 However, we want the screen to stay white for a brief moment. So we'll create a timer with `setTimeout` that calls `flashOff` 10 milliseconds after `flashOn`.
 
 ```javascript
+...
+
 function flashOn() {
   console.log("Flashing On");
   body.style.background = "white";
@@ -107,9 +118,11 @@ function flashOn() {
   // setTimeout will call flashOff after 10ms
   setTimeout(flashOff, 10);
 }
+
+...
 ```
 
-Now hit Play, click the screen, and you should get a flash!
+Now hit Run, click the sky, and you should get a flash!
 
 ## Make it rain
 
@@ -212,7 +225,7 @@ So your full script should look like…
 </script>
 ```
 
-Now if you hit Play and click, the rain should start after a single flash—make sure your sound is on!
+Now if you hit Play and click the sky, the rain should start after a single flash—just make sure your sound is on!
 
 ## Make it Storm
 
@@ -244,6 +257,8 @@ First we create a new Howl for "thunder_start.mp3", and a `playBigThunder` funct
 Then we'll trigger the opening thunderclap on the first click, using `setTimeout` again for a 1 second delay:
 
 ```javascript
+...
+
 function click() {
   console.log("Clicking");
   flashOn();
@@ -257,6 +272,8 @@ function click() {
     setTimeout(thunderStart.play, 1000);
   }
 }
+
+...
 ```
 
 ## Make it Random
@@ -309,6 +326,8 @@ We'll also create a function called `playRandomThunder`, which does exactly what
 Then we'll trigger it on everything _but_ the first click, after a 2–5s delay.
 
 ```javascript
+...
+
 function click() {
   console.log("Clicking");
   flashOn();
@@ -327,9 +346,11 @@ function click() {
     setTimeout(playRandomThunder, delay);
   }
 }
+
+...
 ```
 
-Now if you hit Play and click, you will get randomized thunder sounds!
+Now if you hit Play and click the sky, you will get randomized thunder sounds!
 
 Your full script should look like this:
 
@@ -420,6 +441,8 @@ Real lightning doesn't flash just once. At the end of each flash, there should b
 Let's add some code to our `flashOn` function to trigger another flash 75% of the time.
 
 ```javascript
+...
+
 function flashOn() {
   console.log("Flashing On");
   body.style.background = "white";
@@ -432,6 +455,8 @@ function flashOn() {
     setTimeout(flashOn, 100);
   }
 }
+
+...
 ```
 
 Let's add some time variation—it looks unnatural when each flash is exactly 100ms from the last one.
@@ -439,15 +464,19 @@ Let's add some time variation—it looks unnatural when each flash is exactly 10
 We'll change that `100` to a randomized value between 50 and 500.
 
 ```javascript
+...
+
 // There is a 75% chance that each flash will trigger another flash
 if (Math.random() < 0.75) {
   setTimeout(flashOn, 50 + Math.random() * 450);
 }
+
+...
 ```
 
 ## Finishing Touches
 
-Finally, let's set the mood a little bit. What's a storm without a landscape to see it in?
+Finally, let's set the mood a little bit. A good thunderstorm needs a good landscape.
 
 We'll add some ground to complement our sky using HTML. Add a `div` inside `body` and name it "ground":
 
@@ -458,36 +487,39 @@ We'll add some ground to complement our sky using HTML. Add a `div` inside `body
 <body>
 ```
 
-Now we need to give it some color and make sure it occupies occupies some space at the bottom of the page.
+Now we need to give it some color and make sure it fills some space at the bottom of the page.
 
 In our `style` section, we'll set this `div` to be:
 
-- `position: absolute;`, which lets us position it relative to the whole `body`
+- `position: absolute;`, which lets us set the position and size directly
 - `left: 0; right: 0; bottom: 0;`, which means the left, right, and bottom sides will touch the edges of the page
 - `height: 100px;`, which makes it 100px high
 - `background: black;` which makes it a nice black silhouette
 
 ```css
-#ground {
-  position: absolute;
+<style>
+	...
 
-  left: 0;
-  right: 0;
-  bottom: 0;
+	#ground {
+		position: absolute;
 
-  height: 100px;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+		height: 100px;
 
-  background: black;
-}
+		background: black;
+	}
+</style>
 ```
 
-Now if you hit Run, you should see a "landscape".
+Now if you hit Run, you should see a "landscape”—which is really just a black box.
 
 Let's put something _on_ the landscape now. I used a picture of a tree, which I copied out of an old xkcd comic (thanks Randall Munroe!).
 
 ![]("img/storm_tree.gif")
 
-But _you_ should use something of your own choosing! Code is creative—think about what would go well in a storm, find it on google, and use an image editor to make it into a black silhouette…
+But _you_ should use something of your own choosing! Code is creative—think about what would go well in a storm, find it on google, and maybe use an image editor to make it into a black silhouette…
 
 ![]("img/storm_poo.gif")
 
@@ -506,15 +538,19 @@ Then add an `image` to your HTML, name it "thing", and :
 Then, add another block to your `style` for "thing". This one will look similar to the one we just added for our ground, but we'll position it a little differently:
 
 ```css
-#thing {
-  position: absolute;
+<style>
+	...
 
-  left: 0;
-  bottom: 0;
+	#thing {
+		position: absolute;
 
-  height: 100px;
-  width: 100px;
-}
+		left: 0;
+		bottom: 0;
+
+  		height: 100px;
+  		width: 100px;
+	}
+</style>
 ```
 
 ## The End
