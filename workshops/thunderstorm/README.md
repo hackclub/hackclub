@@ -1,10 +1,10 @@
 ---
-name: “Thunderstorm”
-description: “Build a thunderstorm in your browser“
-author: “@cwalker”
-group: "experimental"
+name: 'Thunderstorm'
+description: 'Build a thunderstorm in your browser'
+author: '@cwalker'
+group: 'experimental'
 order: 17
-begin: “https://repl.it/@polytrope/thunderstorm-starter”
+begin: 'https://repl.it/@polytrope/thunderstorm-starter'
 ---
 
 Ever wanted your own private, portable thunderstorm?
