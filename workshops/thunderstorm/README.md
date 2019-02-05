@@ -1,17 +1,17 @@
 ---
-name: “Thunderstorm”
-description: “Build a thunderstorm in your browser“
-author: “@cwalker”
+name: "Thunderstorm"
+description: "A thunderstorm in your browser"
+author: "@cwalker"
 group: "experimental"
 order: 17
-begin: “https://repl.it/@polytrope/thunderstorm-starter”
+begin: "https://repl.it/@polytrope/thunderstorm-starter"
 ---
 
 Ever wanted your own private, portable thunderstorm?
 
 Well I have, so I built one—[check it out here](https://thunderstorm--polytrope.repl.co).
 
-![]("img/storm_tree.gif")
+![Example of this project](img/storm_tree.gif)
 
 All you need is three simple parts:
 
@@ -109,7 +109,7 @@ Of course, we also want to reset the background color. So we create a `flashOff`
 However, we want the screen to stay white for a brief moment. So we'll create a timer with `setTimeout` that calls `flashOff` 10 milliseconds after `flashOn`.
 
 ```javascript
-...
+// ...
 
 function flashOn() {
   console.log("Flashing On");
@@ -119,7 +119,7 @@ function flashOn() {
   setTimeout(flashOff, 10);
 }
 
-...
+// ...
 ```
 
 Now hit Run, click the sky, and you should get a flash!
@@ -163,7 +163,7 @@ So instead we'll create a new function called `click` which will trigger `rain.p
 
 ```html
 <script>
-  ...
+  // ...
 
   var firstClick = true;
 
