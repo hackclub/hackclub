@@ -6,8 +6,6 @@ Index:
 
 - [Applications (grants or other)](applications/)
 - [Logos / design assets](logos/)
-- Processes
-  - [Hackathon sponsorship](processes/hackathon_sponsorship_process.md)
 - [Management](management/)
-- Miscellaneous
-  - [Email copy](email_copy.md) - Template responses for repetitive emails
+
+_This is not being maintained right now, sorry. Stay tuned._
