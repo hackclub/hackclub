@@ -1,7 +1,7 @@
 ---
 name: 'Thunderstorm'
 description: 'A thunderstorm in your browser'
-author: '@cwalker'
+author: '@polytroper'
 group: 'experimental'
 order: 17
 begin: 'https://repl.it/@polytrope/thunderstorm-starter'
