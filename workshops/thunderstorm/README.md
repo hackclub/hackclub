@@ -499,11 +499,11 @@ Now if you hit Run, you should see a "landscape”—which is really just a blac
 
 Let's put something _on_ the landscape now. I used a picture of a tree, which I copied out of an old xkcd comic (thanks Randall Munroe!).
 
-![]("img/storm_tree.gif")
+![Example of this project with a Tree](img/storm_tree.gif)
 
 But _you_ should use something of your own choosing! Code is creative—think about what would go well in a storm, find it on google, and maybe use an image editor to make it into a black silhouette…
 
-![]("img/storm_poo.gif")
+![Example of this project with a Mystery Emoji](img/storm_poo.gif)
 
 Drag/drop the image into your repl.it window to upload it into your project. Name the file something like "thing.png" or "thing.jpg" (whatever the original file was—probably .png or .jpg—use that).
 
