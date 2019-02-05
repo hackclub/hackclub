@@ -2,8 +2,8 @@
 name: “Thunderstorm”
 description: “Build a thunderstorm in your browser“
 author: “@cwalker”
-group: "start"
-order: 9
+group: "experimental"
+order: 17
 begin: “https://repl.it/@polytrope/thunderstorm-starter”
 ---
 
