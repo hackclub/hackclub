@@ -539,7 +539,9 @@ Then, add another block to your `style` for "thing". This one will look similar 
 
 That’s it y’all. You got yourself a storm.
 
-_[Thanks to BlueDelta on freesound.org for the heavy thunder sound.](https://freesound.org/people/BlueDelta/sounds/446753/)_
-_[Thanks to inchadney on freesound.org for the rain sound.](https://freesound.org/people/inchadney/sounds/104390/)_
-_[Thanks to 99sounds.org for the smaller thunderclap sounds.](http://99sounds.org/rain-and-thunder/)_
-_[Thanks to Randall Munroe of xkcd for the tree image.](https://xkcd.com/1110/)_
+_Sources:_
+
+- _[Thanks to BlueDelta on freesound.org for the heavy thunder sound.](https://freesound.org/people/BlueDelta/sounds/446753/)_
+- _[Thanks to inchadney on freesound.org for the rain sound.](https://freesound.org/people/inchadney/sounds/104390/)_
+- _[Thanks to 99sounds.org for the smaller thunderclap sounds.](http://99sounds.org/rain-and-thunder/)_
+- _[Thanks to Randall Munroe of xkcd for the tree image.](https://xkcd.com/1110/)_
