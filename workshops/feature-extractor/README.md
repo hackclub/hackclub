@@ -1,10 +1,12 @@
 ---
-name: Feature Extractor
-description: Build your first ML app, with just a little JavaScript
-author: "@jajoosam"
-canonical: "https://repl.it/talk/learn/Build-an-ML-app-with-just-a-little-JavaScript/10372"
+name: 'Feature Extractor'
+descript'ion: Build your first ML app, with just a little JavaScript'
+author: '@jajoosam'
+group: 'experimental'
+order: 18
+begin: 'https://repl.it/@jajoosam/feature-extractor-start'
+canonical: 'https://repl.it/talk/learn/Build-an-ML-app-with-just-a-little-JavaScript/10372'
 ---
-
 
 ![](img/main.gif)
 
