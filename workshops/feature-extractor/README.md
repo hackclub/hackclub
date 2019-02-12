@@ -257,3 +257,5 @@ You should take a look at the many [examples on the ml5.js website](https://ml5j
 
 
 If you have any questions or need any help with a project you're building, feel free to ping @jajoosam on the hackclub slack :)
+
+> _A big thank you to repl.it for allowing us to republish this workshop!_
