@@ -2,9 +2,11 @@
 name: Chat
 description: Real-time chat application with Firebase
 author: Hack Club staff
-group: experimental
-order: 3
+group: retired
+order: 13
 ---
+
+_**Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section.**_
 
 # Chat
 

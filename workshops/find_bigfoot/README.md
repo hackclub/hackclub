@@ -2,9 +2,11 @@
 name: Find Bigfoot
 description: Simple game to find Bigfoot using HTML, CSS and JS
 author: '@ad510'
-group: experimental
-order: 6
+group: retired
+order: 11
 ---
+
+_**Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section.**_
 
 # Find Bigfoot
 
