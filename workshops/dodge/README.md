@@ -94,7 +94,7 @@ function setup() {}
 function draw() {}
 ```
 
-If you save and refresh the preview in Cloud9, you'll notice nothing has changed.
+If you save and refresh the preview page, you'll notice nothing has changed.
 
 How these functions work is that `setup()` is run only once, upon page load. `draw()` on the other hand, is run repeatedly after `setup()` finishes, and in this way, provides the basis for any animation or interaction you see in your project.
 

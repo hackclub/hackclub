@@ -2,9 +2,11 @@
 name: Cringe 101
 description: The most cringiest website ever
 author: '@nguyenbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram'
-group: experimental
-order: 1
+group: retired
+order: 12
 ---
+
+_**Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section.**_
 
 # Cringe 101
 
