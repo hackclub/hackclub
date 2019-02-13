@@ -1,6 +1,6 @@
 ---
 name: 'Feature Extractor'
-descript'ion: Build your first ML app, with just a little JavaScript'
+description: 'Build your first ML app, with just a little JavaScript'
 author: '@jajoosam'
 group: 'experimental'
 order: 18
@@ -10,17 +10,13 @@ canonical: 'https://repl.it/talk/learn/Build-an-ML-app-with-just-a-little-JavaSc
 
 ![](img/main.gif)
 
-
-
-[Demo](https://feature-extractor--jajoosam.repl.co) ⏯️   [Code](https://feature-extractor--jajoosam.repl.co/__repl) 👨‍💻 [Video Walkthrough](https://feature-extractor--jajoosam.repl.co/demo.mp4) 🎦
-
-
+[Demo](https://feature-extractor--jajoosam.repl.co) ⏯️ [Code](https://feature-extractor--jajoosam.repl.co/__repl) 👨‍💻 [Video Walkthrough](https://feature-extractor--jajoosam.repl.co/demo.mp4) 🎦
 
 Machine Learning is a super cool way to build AI apps - but I won't lie, it is a lot of math. Luckily, thanks to [ml5.js](https://ml5js.org) - we don't need to spend months understanding ML, we can apply it and develop some cool uses in our app within just a few hours 😄
 
 This is a guide to build a feature extractor - something that can get a video stream from your webcam and predict what it sees, once it is trained with a little bit of data - just like in the video above!
 
-## 🍴  Forking the frontend
+## 🍴 Forking the frontend
 
 I don't want to waste too much of your time with the frontend I used for this app - I think it'd be much better if I skipped right to the JavaScript, and logic.
 
@@ -34,12 +30,12 @@ I've commented everything (except the CSS 😛) - so you should be able to go th
 
 We're going to have quite a few variables to declare, so the first thing we're going to do is create them.
 
-Our app is going to have a lot of functions, and it's important that all of them can access the variables - which is why we shall declare right at the start of our code 
+Our app is going to have a lot of functions, and it's important that all of them can access the variables - which is why we shall declare right at the start of our code
 
 ```javascript
-var featureExtractor, classifier, video, loss, redCount, blueCount;
+var featureExtractor, classifier, video, loss, redCount, blueCount
 
-redCount = blueCount = 0;
+redCount = blueCount = 0
 ```
 
 I'll give you an overview of what these are for, but you'll understand them much better as we continue building our app.
@@ -56,67 +52,65 @@ Finally, `blueCount` and `redCount` are counters for how many images there are i
 
 ```javascript
 function setup() {
-	// Tells p5 to not automatically create a canvas element.
-  noCanvas();
+  // Tells p5 to not automatically create a canvas element.
+  noCanvas()
 
-	// Starts capturing a video feed from the webcam
-  video = createCapture(VIDEO);
+  // Starts capturing a video feed from the webcam
+  video = createCapture(VIDEO)
 
-	// Puts the video stream into the div in our html, with ID `video`
-  video.parent('video'); 
+  // Puts the video stream into the div in our html, with ID `video`
+  video.parent('video')
 
-	// Initializes a feature extractor, yet to be trained - from ml5.js
-  featureExtractor = ml5.featureExtractor('MobileNet');
-  classifier = featureExtractor.classification(video);
+  // Initializes a feature extractor, yet to be trained - from ml5.js
+  featureExtractor = ml5.featureExtractor('MobileNet')
+  classifier = featureExtractor.classification(video)
 
-	// What we're doing next - setting up buttons!
-  setupButtons();
+  // What we're doing next - setting up buttons!
+  setupButtons()
 }
 ```
 
-This code goes in your `script.js` file right after you declare variables - essentially, it gets a video stream and displays it on our page, inside a `div` with the ID `video`.  We also make some functions using the ml5.js library here, and pass the captured video as a parameter - you'll see what we do with these soon, but there's still a little more setup left!
+This code goes in your `script.js` file right after you declare variables - essentially, it gets a video stream and displays it on our page, inside a `div` with the ID `video`. We also make some functions using the ml5.js library here, and pass the captured video as a parameter - you'll see what we do with these soon, but there's still a little more setup left!
 
-As you can see, at the end of `setup()`, we call `setupButtons()` -  the function we're going to make next. Here, we're adding event listeners to buttons in our HTML - so we can run functions when they're clicked.
+As you can see, at the end of `setup()`, we call `setupButtons()` - the function we're going to make next. Here, we're adding event listeners to buttons in our HTML - so we can run functions when they're clicked.
 
 Here's all the code we write for the `setupButtons()` function 👇
 
 ```javascript
 // A function to create the buttons
 function setupButtons() {
+  buttonA = select('#red')
+  buttonB = select('#blue')
+  buttonA.mousePressed(function() {
+    redCount++
+    classifier.addImage('red')
+    select('#redCount').html(redCount)
+  })
+  buttonB.mousePressed(function() {
+    blueCount++
+    classifier.addImage('blue')
+    select('#blueCount').html(blueCount)
+  })
 
-  buttonA = select('#red');
-	buttonB = select('#blue');
-      buttonA.mousePressed(function() {
-    		redCount++;
-        classifier.addImage('red');
-        select('#redCount').html(redCount);
-      });
-      buttonB.mousePressed(function() {
-    		blueCount++;
-        classifier.addImage('blue');
-        select('#blueCount').html(blueCount);
-      });
-
-  train = select('#train');
+  train = select('#train')
   train.mousePressed(function() {
     classifier.train(function(lossValue) {
-			
-			// This is where we're actually training our model
+      // This is where we're actually training our model
 
       if (lossValue) {
-        loss = lossValue;
-        select('#info').html('Loss: ' + loss);
+        loss = lossValue
+        select('#info').html('Loss: ' + loss)
       } else {
-        select('#info').html('Done Training! Final Loss: ' + loss);
-				select('#train').style("display", "none");
-				select('#predict').style("display", "inline");
+        select('#info').html('Done Training! Final Loss: ' + loss)
+        select('#train').style('display', 'none')
+        select('#predict').style('display', 'inline')
       }
-    });
-  });
+    })
+  })
 
   // Predict Button
-  buttonPredict = select('#predict');
-  buttonPredict.mousePressed(classify);
+  buttonPredict = select('#predict')
+  buttonPredict.mousePressed(classify)
 }
 ```
 
@@ -129,27 +123,27 @@ DON'T PANIC.
 Let's start off with this block:
 
 ```javascript
-buttonA = select('#red');
-buttonB = select('#blue');    
+buttonA = select('#red')
+buttonB = select('#blue')
 
 buttonA.mousePressed(function() {
-    redCount++;
-    classifier.addImage('red');
-    select('#redCount').html(redCount);
-});
+  redCount++
+  classifier.addImage('red')
+  select('#redCount').html(redCount)
+})
 
 buttonB.mousePressed(function() {
-    blueCount++;
-    classifier.addImage('blue');
-    select('#blueCount').html(blueCount);
-});
+  blueCount++
+  classifier.addImage('blue')
+  select('#blueCount').html(blueCount)
+})
 ```
 
 `buttonA` and `buttonB` are nothing but the two different buttons we have in our app!
 
 ![](img/buttons.png)
 
-With  `.mousePressed()` we're defining what happens when any of these buttons are pressed - which is:
+With `.mousePressed()` we're defining what happens when any of these buttons are pressed - which is:
 
 - Increase the count by 1, using the `++` operator
 - Capture the current frame from the webcam videom and add it to the classifier, with `classifier.addImage()`
@@ -158,35 +152,34 @@ With  `.mousePressed()` we're defining what happens when any of these buttons ar
 Next up, we have this whole block - where we train the classifer itself:
 
 ```javascript
-train = select('#train');
-  train.mousePressed(function() {
-    classifier.train(function(lossValue) {
-			
-			// This is where we're actually training our model
+train = select('#train')
+train.mousePressed(function() {
+  classifier.train(function(lossValue) {
+    // This is where we're actually training our model
 
-      if (lossValue) {
-        loss = lossValue;
-        select('#info').html('Loss: ' + loss);
-      } else {
-        select('#info').html('Done Training! Final Loss: ' + loss);
-				select('#train').style("display", "none");
-				select('#predict').style("display", "inline");
-      }
-    });
-  });
+    if (lossValue) {
+      loss = lossValue
+      select('#info').html('Loss: ' + loss)
+    } else {
+      select('#info').html('Done Training! Final Loss: ' + loss)
+      select('#train').style('display', 'none')
+      select('#predict').style('display', 'inline')
+    }
+  })
+})
 ```
 
-When the `Train 🚋` button on our app is pressed, we call `classifier.train()` - and with each iteration, the function we supply there is called - which is why we see the *[Loss](https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html)* value keep changing.
+When the `Train 🚋` button on our app is pressed, we call `classifier.train()` - and with each iteration, the function we supply there is called - which is why we see the _[Loss](https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html)_ value keep changing.
 
 ![](img/training.gif)
 
-When the *Loss* value is `0`, then we hid the `Train 🚋` button, and show the previously hidden `Predict 🔮` button!
+When the _Loss_ value is `0`, then we hid the `Train 🚋` button, and show the previously hidden `Predict 🔮` button!
 
 The last 2 lines of the `setupButtons()` function are about the predict button:
 
 ```javascript
-buttonPredict = select('#predict');
-buttonPredict.mousePressed(classify);
+buttonPredict = select('#predict')
+buttonPredict.mousePressed(classify)
 ```
 
 It seems like we're calling this `classify` function - which is what we're going to build next!
@@ -199,7 +192,7 @@ Our `classifier()` function is pretty straightforward - this is all we do:
 
 ```javascript
 function classify() {
-  classifier.classify(gotResults);
+  classifier.classify(gotResults)
 }
 ```
 
@@ -210,10 +203,10 @@ As long as the classifier doesn't send us an error, we change the entire page's 
 ```javascript
 function gotResults(err, result) {
   if (err) {
-    console.log(err);
+    console.log(err)
   }
-	select("body").style("background", result);
-  classify();
+  select('body').style('background', result)
+  classify()
 }
 ```
 
@@ -227,7 +220,7 @@ Now go ahead, try it out! Here are some things I did to see if the feature extra
 - Make a ✌️ in 🔴, and a ✋ in 🔵
 - Wear different colored 👕s in 🔴 and 🔵
 
-Let me know other cool things it worked with 👀  
+Let me know other cool things it worked with 👀
 
 ## ✨ okay, but what do I **MAKE** with this?
 
@@ -240,21 +233,13 @@ Here are a few ideas 💡
 - Build your own **[hotdog or not](https://www.youtube.com/watch?v=pqTntG1RXSY)** app 🌭
 - Build an app which only lets you message others with gestures 💬
 
-
-
 ## 👨‍🏫 what else is there?
 
 ml5.js can do crazy things! You can integrate image classification into your own app [like I did](https://repl.it/talk/challenge/male-A-scavenger-hunt-with-image-classification/10185), find similar words which fit into a text, get a precise skeleton of human bodies and even transfer the styles in images - look at what my picture looks like, when composed with the style of a cool painting 🖌️
 
-
-
 ![mepaint](img/painted-sam.png)
 
-
-
 You should take a look at the many [examples on the ml5.js website](https://ml5js.org/docs/quick-start) - or take a look at [Dan Shiffman's videos on ml5.js](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y), he covers loads of things you can do with it - and explains everything with a ton of energy. I highly recommend watching his videos on the [Coding Train](https://www.youtube.com/user/shiffman) YouTube!
-
-
 
 If you have any questions or need any help with a project you're building, feel free to ping @jajoosam on the hackclub slack :)
 
