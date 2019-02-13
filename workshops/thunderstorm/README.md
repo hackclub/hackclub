@@ -2,8 +2,8 @@
 name: 'Thunderstorm'
 description: 'A thunderstorm in your browser'
 author: '@polytroper'
-group: 'experimental'
-order: 17
+group: 'start'
+order: 9
 begin: 'https://repl.it/@polytrope/thunderstorm-starter'
 ---
 
@@ -106,7 +106,11 @@ Of course, we also want to reset the background color. So we create a `flashOff`
 </script>
 ```
 
-However, we want the screen to stay white for a brief moment. So we’ll create a timer with `setTimeout` that calls `flashOff` 10 milliseconds after `flashOn`.
+However, we want the screen to stay white for a brief moment.
+
+We'll use a function called `setTimeout` to do this. `setTimeout` is like a timer—you give it the name of a function and a number, and your browser will wait that many milliseconds and then call that function.
+
+So if we put `setTimeout(flashOff, 10)` inside `flashOn`, the browser will call `flashOff` 10 milliseconds after `flashOn`.
 
 ```javascript
 // ...
@@ -280,7 +284,7 @@ Each sound is 8 seconds long; so 0–8s is Thunder A, 8–16s is Thunder B, and 
 
 Let's create a Howl for "thunder_sprites.mp3" with an option called `sprites`, which gives the time range for each thunder sound in milliseconds.
 
-We'll also create a function called `playRandomThunder`, which does exactly what it sounds like. This function uses `Math.random()`, which provides a random number between 0 and 1.
+We'll also create a function called `playRandomThunder`, which does exactly what it sounds like. This function uses `Math.random()`, which provides a random number between 0 and 1. It also uses `Math.floor()`, which rounds a number down.
 
 ```html
 <script>
