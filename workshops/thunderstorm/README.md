@@ -469,7 +469,6 @@ We’ll add some ground to complement our sky using HTML. Add a `div` inside `bo
 ```html
 <body>
   <div id="ground"></div>
-  <body></body>
 </body>
 ```
 
@@ -517,7 +516,6 @@ Then add an image to your HTML (`<img>`), name it "thing", and:
 <body>
   <div id="ground"></div>
   <img id="thing" src="thing.png" />
-  <body></body>
 </body>
 ```
 
