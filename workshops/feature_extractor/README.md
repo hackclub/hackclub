@@ -46,7 +46,7 @@ I'll give you an overview of what these are for, but you'll understand them much
 
 Finally, `blueCount` and `redCount` are counters for how many images there are in each category - and we initalize both of them with a value of `0`, in the next line.
 
-## 🛠️ The `setup()`
+## 🛠️ The setup function
 
 `setup()` is a function which shall fire up as soon as our code is ready to run. Because we are using [p5.js](https://p5js.org), our code is pretty readable and easy to understand here.
 
