@@ -41,7 +41,7 @@ function setup() {
 
 function draw() {
   // Draw a black background
-	background(0);
+  background(0);
 }
 </script>
 </html>
