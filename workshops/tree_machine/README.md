@@ -31,7 +31,7 @@ Your file should look like this to start:
 </head>
 
 <!-- Import p5 -->
-<script src=“https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js”></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
 
 <script>
 function setup() {
