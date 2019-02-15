@@ -1,551 +1,845 @@
 ---
-name: 'Thunderstorm'
+name: 'Tree Machine'
 description: 'A thunderstorm in your browser'
 author: '@polytroper'
-group: 'start'
-order: 9
-begin: 'https://repl.it/@polytrope/thunderstorm-starter'
+group: 'experimental'
+order: 10
+begin: 'https://repl.it/@polytrope/tree-machine-starter'
 ---
 
-Ever wanted your own private, portable thunderstorm?
+Guess what friends, today we’re making _trees_. That’s right, NATURE.
 
-Well I have, so I built one—[check it out here](https://thunderstorm--polytrope.repl.co).
+[Here’s my tree, for your perusal:](https://tree-machine-original--polytrope.repl.co)
+![A gif of my awesome tree](/img/original_tree.gif)
 
-![Example of this project](img/storm_tree.gif)
+How can a whole tree fit inside a computer, you may ask? The answer is simple: **recursion**.
 
-All you need is three simple parts:
+[**Click here to get started.**](https://repl.it/@polytrope/tree-machine-starter)
 
-- A flashing background for lightning
-- Some audio clips for rain/thunder
-- An image for the foreground
+## Drawing a line
 
-Plus some simple JavaScript to flash the background and play thunder when you click.
+First we’ll draw a line using p5. We want it to look like this:
 
-**[Click here](https://repl.it/@polytrope/thunderstorm-starter) to begin.**
+![A line from the bottom of the screen to the center](/img/line.gif)
 
-(Tech used: Basic HTML/CSS, `setTimeout`, Howler, `Math.random`)
-
-## Let’s Make a Sky
-
-To start, I’ve given you some audio clips, an image, and a basic HTML file with 3 parts:
+Your file should look like this to start:
 
 ```html
-<style>
-  /* Your CSS will go here... */
-</style>
+<html>
+<head>
+<title>Tree Machine</title>
+</head>
 
-<body>
-  <!-- Your HTML will go here... -->
-</body>
+<!-- Import p5 -->
+<script src=“https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js”></script>
 
 <script>
-  // Your JS will go here...
+function setup() {
+  // Start off by creating a canvas to draw on
+  createCanvas(400, 400);
+}
+
+function draw() {
+  // Draw a black background
+	background(0);
+}
 </script>
+</html>
 ```
 
-We’ll use the `body` element as our sky. Let’s give it some color in our `style` section
+Like almost every p5 application, we start with a `setup` and `draw` function.
 
-```html
-<style>
-  body {
-    background: MidnightBlue;
-  }
-</style>
-```
+In `setup` we create a canvas for drawing.
+In `draw` we create a black background.
 
-Now if you hit Run, you should see a dark blue sky.
-
-## Make it Flash
-
-Now let’s use js to make the sky change colors.
-
-```html
-<script>
-  var body = document.body
-
-  body.style.background = 'white'
-</script>
-```
-
-Run the site—the background should immediately turn white.
-
-We want each click to trigger a flash, so let’s create a `flashOn` function and “call” (trigger) it whenever we click anywhere in the window.
-
-```html
-<script>
-  var body = document.body
-
-  function flashOn() {
-    console.log('Flashing On')
-    body.style.background = 'white'
-  }
-
-  // This Event Listener will trigger a flash with every click
-  window.addEventListener('click', flashOn)
-</script>
-```
-
-Of course, we also want to reset the background color. So we create a `flashOff` function.
-
-```html
-<script>
-  var body = document.body
-
-  function flashOn() {
-    console.log('Flashing On')
-    body.style.background = 'white'
-  }
-
-  function flashOff() {
-    console.log('Flashing Off')
-    body.style.background = 'MidnightBlue'
-  }
-
-  // This Event Listener will trigger a flash with every click
-  window.addEventListener('click', flashOn)
-</script>
-```
-
-However, we want the screen to stay white for a brief moment.
-
-We'll use a function called `setTimeout` to do this. `setTimeout` is like a timer—you give it the name of a function and a number, and your browser will wait that many milliseconds and then call that function.
-
-So if we put `setTimeout(flashOff, 10)` inside `flashOn`, the browser will call `flashOff` 10 milliseconds after `flashOn`.
+Let’s add a line on top of that background. Add these three new lines to your `draw` function, after `background`:
 
 ```javascript
-// ...
+function draw() {
+  // Draw a black background
+  background(0)
 
-function flashOn() {
-  console.log('Flashing On')
-  body.style.background = 'white'
+  // Set line color to white
+  stroke(255)
 
-  // setTimeout will call flashOff after 10ms
-  setTimeout(flashOff, 10)
+  // Set thickness to 20
+  strokeWeight(20)
+
+  // Draw a line from (middle, bottom) to (middle, middle)
+  line(200, 400, 200, 200)
 }
 ```
 
-Now hit Run, click the sky, and you should get a flash!
+Now if you hit Run you should see a white line going from the bottom of the canvas to the center.
 
-## Make it rain
+Look at the last line of code: `line(200, 400, 200, 200)`
 
-Let’s make some sounds. We’ll use a tool called [Howler](https://github.com/goldfire/howler.js#documentation), which makes it really simple to work with sound in js.
+This is one way to draw a line—I specified where on the canvas to start, and where on the canvas to end.
 
-Copy in this `script` element, just after the `body` and just before your other `script`. This will import Howler so you can use it in your project.
+However, there is another way to think about this. A trick, if you will. A trick that makes this whole “tree” drawing process _much_ easier.
+
+Instead of specifying _where to draw on the canvas_, we can actually **translate** (move), **rotate**, and **scale** (zoom) _the canvas itself_.
+
+```javascript
+function draw() {
+  // Draw a black background
+  background(0)
+
+  // Set line color to white
+  stroke(255)
+
+  // Move to middle-bottom of canvas
+  translate(200, 400)
+
+  // Turn canvas 180°
+  rotate(Math.PI)
+
+  // Zoom way into the canvas
+  scale(200)
+
+  // Set thickness to a much smaller, zoomed-in value
+  strokeWeight(0.1)
+
+  // Draw a line from (0, 0) to (0, 1)
+  line(0, 0, 0, 1)
+}
+```
+
+Now look at that last line again.
+
+Instead of `line(200, 400, 200, 200)`
+It now says `line(0, 0, 0, 1)`
+
+This is because instead of saying exactly where on the canvas we should draw our line, we first used…
+
+`translate(200, 400)`
+`rotate(Math.PI)`
+`scale(200)`
+
+To move the canvas itself.
+
+If we didn’t translate/rotate/scale the plane first, `line(0, 0, 0, 1)` would create a line from (0, 0) to (0, 1).
+
+But instead we get a line from (200, 400) to (200, 200) because first we translated the canvas to (200, 400), rotated the canvas by pi (180°), and scaled the canvas by 200.
+
+Now if you run your page you should get a simple white line, just as before.
+
+Your whole script should look like this:
 
 ```html
-<body>
-  <!--...-->
-</body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.15/howler.min.js"></script>
-
 <script>
-  // ...
+
+function setup() {
+  // Start off by creating a canvas to draw on
+  createCanvas(400, 400);
+}
+
+function draw() {
+  // Draw a black background
+	background(0);
+
+  // Set line color to white
+  stroke(255);
+
+  // Move to middle-bottom of canvas
+  translate(width/2, height);
+
+  // Turn canvas 180°
+  rotate(Math.PI);
+
+  // Zoom way into the canvas
+  scale(200);
+
+  // Set thickness to a much smaller, zoomed-in value
+  strokeWeight(0.1);
+
+  // Draw a line from (0, 0) to (0, 1)
+  line(0, 0, 0, 1);
+}
+
 </script>
 ```
 
-Now create a new "Howl" at the top of your script for the file I called "rain.mp3". I also set the volume to 0.2 (20%).
+## Depth
+
+Now we’ll draw a line at the end of our line, like this:
+
+![A chain of smaller and smaller lines](/img/depth.gif)
+
+This is where **recursion** comes in. Recursion is when one function calls _itself_.
+
+When we draw a branch, we want to draw _another_ branch _at the end of that branch_. The number of times we repeat that process is called the **depth** of our tree.
+
+First, add a variable at the top of your script for `depth`. We’ll set it to 5 for now:
 
 ```html
 <script>
-  var rain = new Howl({
-    src: 'rain.mp3',
-    volume: 0.2
-  })
 
-  // ...
+// How many levels of branches we will draw
+var depth = 5;
+
+// ...the rest of the script
 </script>
 ```
 
-Now we just need to call `rain.play()` to start the show.
+Then, just after that, we’ll add a function called `branch` which draws each branch for us.
 
-We _could_ put that in the `flashOn` function. But we only want this sound to play the _first_ time a user clicks.
+```javascript
+var depth = 5
 
-So instead we'll create a new function called `click` which will trigger `rain.play()` once, and `flashOn` every time. We'll also create a boolean (true/false) variable called `firstClick`.
+function branch(d) {
+  // Draw a line from (0, 0) to (0, 1)
+  line(0, 0, 0, 1)
+
+  // If there are any more branch levels to be drawn...
+  if (d > 1) {
+    // Move the canvas to (0, 1), the end of our new line
+    translate(0, 1)
+
+    // Zoom twice as far into the canvas
+    scale(0.5)
+
+    // Recurse for the next branch!
+    branch(d - 1)
+  }
+}
+
+// ...the rest of the script
+```
+
+Let’s break down what `branch` is doing.
+
+1.  First it draws a line
+2.  _If_ any more lines need to be drawn…
+    1.  Translate/scale (move/zoom) do the end of that line
+    2.  Repeat for the next “depth” level (depth-1)
+
+That last step—where we call `branch` _again_—is **recursion**. The function repeats itself, one level down.
+
+If we didn’t have the `d-1` part, then the function would never know to _stop_ “recursing”. That’s why we pass in a number for “depth” (`d`), and subtract 1 for each level; once we hit level 1, we know we can stop.
+
+Finally, let’s change the last line of our `draw` function to use `branch(depth)` instead of `line(0, 0, 0, 1)`:
+
+```javascript
+function draw() {
+  // Draw a black background
+  background(0)
+
+  // Set line color to white
+  stroke(255)
+
+  // Move to middle-bottom of canvas
+  translate(200, 400)
+
+  // Turn canvas 180°
+  rotate(Math.PI)
+
+  // Zoom way into the canvas
+  scale(200)
+
+  // Set thickness to a much smaller, zoomed-in value
+  strokeWeight(0.1)
+
+  // Start drawing branches!
+  branch(depth)
+}
+```
+
+Now if you hit Run, you should get a bunch of lines stacked on each other.
+
+At this point, here’s what your whole script should be:
 
 ```html
 <script>
-  // ...
 
-  var firstClick = true
+// How many levels of branches we will draw
+var depth = 5;
 
-  function click() {
-    console.log('Clicking')
-    flashOn()
+function branch(d) {
+  // Draw a line from (0, 0) to (0, 1)
+  line(0, 0, 0, 1);
 
-    // If this is the first click, start the rain and set firstClick to false.
-    if (firstClick) {
-      rain.play()
-      firstClick = false
+  // If there are any more branch levels to be drawn...
+  if (d > 1) {
+    // Move the canvas to (0, 1), the end of our new line
+    translate(0, 1);
+
+    // Zoom twice as far into the canvas
+    scale(0.5);
+
+    // Recurse for the next branch!
+    branch(d-1);
+  }
+}
+
+function setup() {
+  // Start off by creating a canvas to draw on
+  createCanvas(400, 400);
+}
+
+function draw() {
+  // Draw a black background
+	background(0);
+
+  // Set line color to white
+  stroke(255);
+
+  // Move to middle-bottom of canvas
+  translate(200, 400);
+
+  // Turn canvas 180°
+  rotate(Math.PI);
+
+  // Zoom way into the canvas
+  scale(200);
+
+  // Set thickness to a much smaller, zoomed-in value
+  strokeWeight(0.1);
+
+  // Start drawing branches!
+  branch(depth);
+}
+
+</script>
+```
+
+## Curl
+
+Now we’ll rotate the canvas a little bit for each line. Watch what happens:
+
+![A gif of the line growing with a curl](/img/curl.gif)
+
+For each new branch, the canvas rotates by a certain angle. We’ll call this angle the “curl”. Let’s create a variable for it at the top of our script, after `depth`:
+
+```html
+<script>
+
+// How many levels of branches we will draw
+var depth = 5;
+
+// The angle each new branch level rotates by (branches spin left/right)
+var curl = Math.PI/3;
+
+// the rest of the script...
+</script>
+```
+
+Now in our `branch` function, let’s add a line to `rotate` the canvas by `curl` for each new branch.
+
+I put this new line between `translate` and `scale`:
+
+```javascript
+function branch(d) {
+  // Draw a line from (0, 0) to (0, 1)
+  line(0, 0, 0, 1)
+
+  // If there are any more branch levels to be drawn...
+  if (d > 1) {
+    // Move the canvas to (0, 1), the end of our new line
+    translate(0, 1)
+
+    // Rotate the canvas for each new branch
+    rotate(curl)
+
+    // Zoom twice as far into the canvas
+    scale(0.5)
+
+    // Recurse for the next branch!
+    branch(d - 1)
+  }
+}
+```
+
+Now if you hit Run, you should see your branches curl up!
+
+Now your entire script should look like this:
+
+```html
+<script>
+
+// How many levels of branches we will draw
+var depth = 5;
+
+// The angle each new branch level rotates by (branches spin left/right)
+var curl = Math.PI/3;
+
+function branch(d) {
+  // Draw a line from (0, 0) to (0, 1)
+  line(0, 0, 0, 1);
+
+  // If there are any more branch levels to be drawn...
+  if (d > 1) {
+    // Move the canvas to (0, 1), the end of our new line
+    translate(0, 1);
+
+    // Rotate the canvas for each new branch
+    rotate(curl);
+
+    // Zoom twice as far into the canvas
+    scale(0.5);
+
+    // Recurse for the next branch!
+    branch(d-1);
+  }
+}
+
+function setup() {
+  // Start off by creating a canvas to draw on
+  createCanvas(400, 400);
+}
+
+function draw() {
+  // Draw a black background
+	background(0);
+
+  // Set line color to white
+  stroke(255);
+
+  // Move to middle-bottom of canvas
+  translate(200, 400);
+
+  // Turn canvas 180°
+  rotate(Math.PI);
+
+  // Zoom way into the canvas
+  scale(200);
+
+  // Set thickness to a much smaller, zoomed-in value
+  strokeWeight(0.1);
+
+  // Start drawing branches!
+  branch(depth);
+}
+
+</script>
+```
+
+## Wave
+
+Now let’s make our branches dance:
+
+![A gif of the line waving back and forth](/img/wave.gif)
+
+All I am doing here is using the `mouseX` variable to change the `curl` variable.
+
+Add this line to the top of your `draw` function:
+
+```javascript
+function draw() {
+  // Set the curl angle with the mouse X position
+  curl = Math.PI * ((mouseX / width) * 2 - 1)
+
+  // the rest of the function...
+}
+```
+
+Let’s stop for a sec and break down what this line does:
+`curl = Math.PI*(mouseX/width*2-1)`
+
+- `mouseX/width` gives us the _fraction_ of the mouse X position compared to the width canvas. This will be 0 on the left side of the canvas, and 1 on the right side.
+
+- `(mouseX/width*2-1)` will be -1 on the left side of the canvas, and 1 on the right side.
+
+- `Math.PI*(mouseX/width*2-1)` will be -pi on the left side of the canvas, and +pi on the right side.
+
+This way, our tree will curl from a rotation of -pi (-180°) in one direction to +pi (180°) in the other direction.
+
+This should be your full script now:
+
+```html
+<script>
+
+// How many levels of branches we will draw
+var depth = 5;
+
+// The angle each new branch level rotates by (branches spin left/right)
+var curl = Math.PI/3;
+
+function branch(d) {
+  // Draw a line from (0, 0) to (0, 1)
+  line(0, 0, 0, 1);
+
+  // If there are any more branch levels to be drawn...
+  if (d > 1) {
+    // Move the canvas to (0, 1), the end of our new line
+    translate(0, 1);
+
+    // Rotate the canvas for each new branch
+    rotate(curl);
+
+    // Zoom twice as far into the canvas
+    scale(0.5);
+
+    // Recurse for the next branch!
+    branch(d-1);
+  }
+}
+
+function setup() {
+  // Start off by creating a canvas to draw on
+  createCanvas(400, 400);
+}
+
+function draw() {
+  // Set the curl angle with the mouse X position
+  curl = Math.PI*(mouseX/width*2-1);
+
+  // Draw a black background
+	background(0);
+
+  // Set line color to white
+  stroke(255);
+
+  // Move to middle-bottom of canvas
+  translate(200, 400);
+
+  // Turn canvas 180°
+  rotate(Math.PI);
+
+  // Zoom way into the canvas
+  scale(200);
+
+  // Set thickness to a much smaller, zoomed-in value
+  strokeWeight(0.1);
+
+  // Start drawing branches!
+  branch(depth);
+}
+
+</script>
+```
+
+## Breadth
+
+Let’s add more branches to our tree:
+
+![An image of the tree with 2 branches](/img/breadth.gif)
+
+Right now, each branch creates _1 new branch_. We need each branch to create _2 new branches_.
+
+The number of new branches each branch creates is called the **breadth** of the tree. We’ll make it 2 for now.
+
+Each branch will fan out from the last branch at a particular angle. We’ll call this angle the **spread** of the tree.
+
+Let’s create two new variables at the top of our script for `breadth` and `spread`:
+
+```html
+<script>
+
+// How many levels of branches we will draw
+var depth = 5;
+
+// The angle each new branch level rotates by (branches spin left/right)
+var curl = Math.PI/3;
+
+// How many branches each new branch will create
+var breadth = 2;
+
+// The angle between each sub-branch (branches fan out/in)
+var spread = Math.PI/3;
+
+// the rest of the script...
+</script>
+```
+
+Now we need to do a few things to our `branch` function to make multiple branches happen.
+
+Instead of one call to `branch(d-1)`, we need a loop that makes multiple calls to `branch(d-1)` and rotates the canvas by `spread` each time.
+
+Replace that `branch(d-1)` line with a `for` loop, like this:
+
+```javascript
+function branch(d) {
+  // Draw a line from (0, 0) to (0, 1)
+  line(0, 0, 0, 1)
+
+  // If there are any more branch levels to be drawn...
+  if (d > 1) {
+    // Move the canvas to (0, 1), the end of our new line
+    translate(0, 1)
+
+    // Rotate the canvas for each new branch
+    rotate(curl)
+
+    // Zoom twice as far into the canvas
+    scale(0.5)
+
+    for (var i = 0; i < breadth; i++) {
+      // Recurse for the next branch!
+      branch(d - 1)
+
+      // Rotate for the next branch!
+      rotate(spread)
     }
   }
-
-  // This Event Listener will trigger a flash with every click
-  window.addEventListener('click', click)
-</script>
+}
 ```
 
-So your full script should look like…
+Now if you hit Run… it won’t quite work. You should see multiple branches, but they’re not rotated or positioned correctly. What’s going on here?
+
+Watch that gif at the top of this chapter. Watch how the tree grows:
+
+1.  First it draws every level of _one branch_.
+2.  Then it “backs up” to draw any remaining branches, one level up.
+3.  Repeat—always drawing as many levels as possible before “backing up”
+
+This is called **depth-first** drawing—as opposed to breadth-first drawing, where each _level_ would fill in completely before starting on the next level.
+
+Because we have to “back up” each time we finish drawing a branch, we actually need to _undo_ everything we did to the canvas for that branch:
+
+- Undo the `translate`
+- Undo the `scale`
+- Undo the `rotate` (for both `curl` and `spread`)
+
+You can see this happen in the gif above. Anytime that reference grid gets _bigger_, it means the bottom level of a branch is complete and the tree has “backed up” at least one level.
+
+To make this happen, add these four new lines just after that `for` loop:
+
+```javascript
+for (var i = 0; i < breadth; i++) {
+  // Recurse for the next branch!
+  branch(d - 1)
+
+  // Rotate for the next branch!
+  rotate(spread)
+}
+
+// Undo the rotations we applied for each "child" branch
+rotate(-spread * breadth)
+
+// Undo the curl rotation we applied to this branch
+rotate(-curl)
+
+// Zoom back out from the canvas
+scale(2)
+
+// Move back to the start of the line we drew with line(0, 0, 0, 1)
+translate(0, -1)
+```
+
+Now your script should look like this:
 
 ```html
 <script>
-  var rain = new Howl({
-    src: 'rain.mp3',
-    volume: 0.2
-  })
 
-  var body = document.body
+// How many levels of branches we will draw
+var depth = 5;
 
-  function flashOn() {
-    console.log('Flashing On')
-    body.style.background = 'white'
+// The angle each new branch level rotates by (branches spin left/right)
+var curl = Math.PI/3;
 
-    // setTimeout will call flashOff after 10ms
-    setTimeout(flashOff, 10)
-  }
+// How many branches each new branch will create
+var breadth = 2;
 
-  function flashOff() {
-    console.log('Flashing Off')
-    body.style.background = 'MidnightBlue'
-  }
+// The angle between each sub-branch (branches fan out/in)
+var spread = Math.PI/3;
 
-  var firstClick = true
+function branch(d) {
+  // Draw a line from (0, 0) to (0, 1)
+  line(0, 0, 0, 1);
 
-  function click() {
-    console.log('Clicking')
-    flashOn()
+  // If there are any more branch levels to be drawn...
+  if (d > 1) {
+    // Move the canvas to (0, 1), the end of our new line
+    translate(0, 1);
 
-    // If this is the first click, start the rain and set firstClick to false.
-    if (firstClick) {
-      rain.play()
-      firstClick = false
+    // Rotate the canvas for each new branch
+    rotate(curl);
+
+    // Zoom twice as far into the canvas
+    scale(0.5);
+
+    for (var i = 0; i < breadth; i++) {
+      // Recurse for the next branch!
+      branch(d-1);
+
+      // Rotate for the next branch!
+      rotate(spread);
     }
-  }
 
-  // This Event Listener will trigger a flash with every click
-  window.addEventListener('click', click)
+    // Undo the rotations we applied for each "child" branch
+    rotate(-spread*breadth);
+
+    // Undo the curl rotation we applied to this branch
+    rotate(-curl);
+
+    // Zoom back out from the canvas
+    scale(2);
+
+    // Move back to the start of the line we drew with line(0, 0, 0, 1)
+    translate(0, -1);
+  }
+}
+
+function setup() {
+  // Start off by creating a canvas to draw on
+  createCanvas(400, 400);
+}
+
+function draw() {
+  // Set the curl angle with the mouse X position
+  curl = Math.PI*(mouseX/width*2-1);
+
+  // Draw a black background
+	background(0);
+
+  // Set line color to white
+  stroke(255);
+
+  // Move to middle-bottom of canvas
+  translate(200, 400);
+
+  // Turn canvas 180°
+  rotate(Math.PI);
+
+  // Zoom way into the canvas
+  scale(200);
+
+  // Set thickness to a much smaller, zoomed-in value
+  strokeWeight(0.1);
+
+  // Start drawing branches!
+  branch(depth);
+}
+
 </script>
 ```
 
-Now if you hit Play and click the sky, the rain should start after a single flash—just make sure your sound is on!
+## Spread
 
-## Make it Storm
+Finally, let’s control that `spread` variable with the mouse:
 
-Okay, now let's turn up the storminess with a big thunderclap at the start.
+![A gif of the tree curling/spreading as the mouse moves](/img/spread.gif)
 
-First we create a new Howl for "thunder_start.mp3", and a `playBigThunder` function that does exactly what is sounds like.
-
-```html
-<script>
-  var rain = new Howl({
-    src: 'rain.mp3',
-    volume: 0.2
-  })
-
-  var bigThunder = new Howl({
-    src: 'thunder_start.mp3',
-    volume: 0.5
-  })
-
-  function playBigThunder() {
-    console.log('Playing Big Thunder')
-    bigThunder.play()
-  }
-
-  // ...
-</script>
-```
-
-Then we'll trigger the opening thunderclap on the first click, using `setTimeout` again for a 1 second delay:
+This works just like the `curl` variable. Add another line at the top of your `draw` function, just after the line where you set `curl` with the mouse:
 
 ```javascript
-function click() {
-  console.log('Clicking')
-  flashOn()
+function draw() {
+  // Set the curl angle with the mouse X position
+  curl = Math.PI * ((mouseX / width) * 2 - 1)
 
-  // If this is the first click, start the rain and set firstClick to false.
-  if (firstClick) {
-    rain.play()
-    firstClick = false
+  // Set the spread angle with the mouse Y position
+  spread = Math.PI * ((mouseY / height) * 2 - 1)
 
-    // Play the starting thunder after a 1000ms delay
-    setTimeout(thunderStart.play, 1000)
-  }
+  // the rest of the function...
 }
 ```
 
-## Make it Random
+That’s it! If you hit Run, you should be able to make your tree dance with your mouse.
 
-For everything after the first click, let's play a randomized thunder sound.
-
-I packed four random thunder sounds into one file called "thunder_sprites.mp3". Go ahead and listen to it in the Files section on the left side of your repl.it project.
-
-Each sound is 8 seconds long; so 0–8s is Thunder A, 8–16s is Thunder B, and so on. I broke the sound up into 4 "sprites" so the computer loads one file instead of four.
-
-Let's create a Howl for "thunder_sprites.mp3" with an option called `sprites`, which gives the time range for each thunder sound in milliseconds.
-
-We'll also create a function called `playRandomThunder`, which does exactly what it sounds like. This function uses `Math.random()`, which provides a random number between 0 and 1. It also uses `Math.floor()`, which rounds a number down.
+Your final script should look like this:
 
 ```html
 <script>
-  // ...
 
-  function playBigThunder() {
-    console.log('Playing Big Thunder')
-    bigThunder.play()
-  }
+// How many levels of branches we will draw
+var depth = 5;
 
-  var thunder = new Howl({
-    src: ['thunder_sprites.mp3'],
-    // Four sprites, each 8 seconds
-    sprite: {
-      a: [0, 8000],
-      b: [8000, 16000],
-      c: [16000, 24000],
-      d: [24000, 32000]
-    },
-    volume: 0.5
-  })
+// The angle each new branch level rotates by (branches spin left/right)
+var curl = Math.PI/3;
 
-  function playRandomThunder() {
-    console.log('Playing Random Thunder')
-    // This will create a random number between 0 and 4 and round it down
-    var index = Math.floor(Math.random() * 4)
-    // This will pick 'a' for index=0, 'b' for index=1, etc.
-    var sprite = 'abcd'[index]
-    // This will play the randomly-chosen thunder sprite
-    thunder.play(sprite)
-  }
+// How many branches each new branch will create
+var breadth = 2;
 
-  // ...
-</script>
-```
+// The angle between each sub-branch (branches fan out/in)
+var spread = Math.PI/3;
 
-Then we'll trigger it on everything _but_ the first click, after a 2–5s delay.
+function branch(d) {
+  // Draw a line from (0, 0) to (0, 1)
+  line(0, 0, 0, 1);
 
-```javascript
-function click() {
-  console.log('Clicking')
-  flashOn()
+  // If there are any more branch levels to be drawn...
+  if (d > 1) {
+    // Move the canvas to (0, 1), the end of our new line
+    translate(0, 1);
 
-  // If this is the first click, start the rain and set firstClick to false.
-  if (firstClick) {
-    rain.play()
-    firstClick = false
+    // Rotate the canvas for each new branch
+    rotate(curl);
 
-    // Play the starting thunder after a 1000ms delay
-    setTimeout(thunderStart.play, 1000)
-  }
-  // Otherwise, play thunder after a random delay between 2000ms and 5000ms
-  else {
-    var delay = 2000 + Math.floor(Math.random() * 3000)
-    setTimeout(playRandomThunder, delay)
-  }
-}
-```
+    // Zoom twice as far into the canvas
+    scale(0.5);
 
-Now if you hit Play and click the sky, you will get randomized thunder sounds!
+    for (var i = 0; i < breadth; i++) {
+      // Recurse for the next branch!
+      branch(d-1);
 
-Your full script should look like this:
-
-```html
-<script>
-  var rain = new Howl({
-    src: 'rain.mp3',
-    volume: 0.2
-  })
-
-  var bigThunder = new Howl({
-    src: 'thunder_start.mp3',
-    volume: 0.5
-  })
-
-  function playBigThunder() {
-    console.log('Playing Big Thunder')
-    bigThunder.play()
-  }
-
-  var thunder = new Howl({
-    src: ['thunder_sprites.mp3'],
-    // Four sprites, each 8 seconds
-    sprite: {
-      a: [0, 8000],
-      b: [8000, 16000],
-      c: [16000, 24000],
-      d: [24000, 32000]
-    },
-    volume: 0.5
-  })
-
-  function playRandomThunder() {
-    console.log('Playing Random Thunder')
-    // This will create a random number between 0 and 4 and round it down
-    var index = Math.floor(Math.random() * 4)
-    // This will pick 'a' for index=0, 'b' for index=1, etc.
-    var sprite = 'abcd'[index]
-    // This will play the randomly-chosen thunder sprite
-    thunder.play(sprite)
-  }
-
-  var body = document.body
-
-  function flashOn() {
-    console.log('Flashing On')
-    body.style.background = 'white'
-
-    // setTimeout will call flashOff after 10ms
-    setTimeout(flashOff, 10)
-  }
-
-  function flashOff() {
-    console.log('Flashing Off')
-    body.style.background = 'MidnightBlue'
-  }
-
-  var firstClick = true
-
-  function click() {
-    console.log('Clicking')
-    flashOn()
-
-    // If this is the first click, start the rain and set firstClick to false.
-    if (firstClick) {
-      rain.play()
-      firstClick = false
-
-      // Play the starting thunder after a 1000ms delay
-      setTimeout(playBigThunder, 1000)
+      // Rotate for the next branch!
+      rotate(spread);
     }
-    // Otherwise, play thunder after a random delay between 2000ms and 5000ms
-    else {
-      var delay = 2000 + Math.floor(Math.random() * 3000)
-      setTimeout(playRandomThunder, delay)
-    }
-  }
 
-  // This Event Listener will trigger a flash with every click
-  window.addEventListener('click', click)
+    // Undo the rotations we applied for each "child" branch
+    rotate(-spread*breadth);
+
+    // Undo the curl rotation we applied to this branch
+    rotate(-curl);
+
+    // Zoom back out from the canvas
+    scale(2);
+
+    // Move back to the start of the line we drew with line(0, 0, 0, 1)
+    translate(0, -1);
+  }
+}
+
+function setup() {
+  // Start off by creating a canvas to draw on
+  createCanvas(400, 400);
+}
+
+function draw() {
+  // Set the curl angle with the mouse X position
+  curl = Math.PI*(mouseX/width*2-1);
+
+  // Set the spread angle with the mouse Y position
+  spread = Math.PI*(mouseY/height*2-1);
+
+  // Draw a black background
+	background(0);
+
+  // Set line color to white
+  stroke(255);
+
+  // Move to middle-bottom of canvas
+  translate(200, 400);
+
+  // Turn canvas 180°
+  rotate(Math.PI);
+
+  // Zoom way into the canvas
+  scale(200);
+
+  // Set thickness to a much smaller, zoomed-in value
+  strokeWeight(0.1);
+
+  // Start drawing branches!
+  branch(depth);
+}
+
 </script>
 ```
 
-## Make it Flashier
+## Epilogue
 
-Real lightning doesn't flash just once. At the end of each flash, there should be a _chance_ for one more flash; that way some strikes will flash once, but most will flash 3 or 5 or 8 times.
+Trees show up _everywhere_ in programming.
 
-Let's add some code to our `flashOn` function to trigger another flash 75% of the time.
+The memory in your computer, the pages on every website, and every HTML element on every page are _all_ arranged in trees.
 
-```javascript
-function flashOn() {
-  console.log('Flashing On')
-  body.style.background = 'white'
+It’s kind of remarkable that when you actually _draw_ a tree, it looks so much like… a tree:
 
-  // setTimeout will call flashOff after 10ms
-  setTimeout(flashOff, 10)
+![A comparison of our virtual tree with a physical tree](/img/tree_comparison.png)
 
-  // There is a 75% chance that each flash will trigger another flash
-  if (Math.random() < 0.75) {
-    setTimeout(flashOn, 100)
-  }
-}
-```
+Using a 3D version of the technique we just learned, you can generate some freakishly lifelike trees:
 
-Let's add some time variation—it looks unnatural when each flash is exactly 100ms from the last one.
+![Trees generated by a 3D L-System](/img/l_system_trees.jpg)
 
-We'll change that `100` to a randomized value between 50 and 500.
+And game developers take those techniques even further to generate realistic 3D models of trees:
 
-```javascript
-// There is a 75% chance that each flash will trigger another flash
-if (Math.random() < 0.75) {
-  setTimeout(flashOn, 50 + Math.random() * 450)
-}
-```
+![Trees generated by SpeedTree, a commercial game development tool](/img/speedtree_trees.jpg)
 
-## Finishing Touches
+Try messing with the numbers in your tree maker. You can get all kinds of cool effects:
 
-Finally, let's set the mood a little bit. A good thunderstorm needs a good landscape.
+![Swaying tree gif](/img/sway.gif)
+![Spinning tree gif](/img/spin.gif)
+![Spreading tree gif](/img/stars.gif)
 
-We’ll add some ground to complement our sky using HTML. Add a `div` inside `body` and name it "ground":
-
-```html
-<body>
-  <div id="ground"></div>
-  <body></body>
-</body>
-```
-
-Now we need to give it some color and make sure it fills some space at the bottom of the page.
-
-In our `style` section, we’ll set this `div` to be:
-
-- `position: absolute;`, which lets us set the position and size directly
-- `left: 0; right: 0; bottom: 0;`, which means the left, right, and bottom sides will touch the edges of the page
-- `height: 100px;`, which makes it 100px high
-- `background: black;` which makes it a nice black silhouette
-
-```html
-<style>
-  /* ... */
-
-  #ground {
-    position: absolute;
-
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100px;
-
-    background: black;
-  }
-</style>
-```
-
-Now if you hit Run, you should see a "landscape”—which is really just a black box.
-
-Let's put something _on_ the landscape now. I used a picture of a tree, which I copied out of an old xkcd comic (thanks Randall Munroe!).
-
-![Example of this project with a Tree](img/storm_tree.gif)
-
-But _you_ should use something of your own choosing! Code is creative—think about what would go well in a storm, find it on google, and maybe use an image editor to make it into a black silhouette…
-
-![Example of this project with a Mystery Emoji](img/storm_poo.gif)
-
-Drag/drop the image into your repl.it window to upload it into your project. Name the file something like "thing.png" or "thing.jpg" (whatever the original file was—probably .png or .jpg—use that).
-
-Then add an image to your HTML (`<img>`), name it "thing", and:
-
-```html
-<body>
-  <div id="ground"></div>
-  <img id="thing" src="thing.png" />
-  <body></body>
-</body>
-```
-
-Then, add another block to your `style` for "thing". This one will look similar to the one we just added for our ground, but we’ll position it a little differently:
-
-```html
-<style>
-  /* ... */
-
-  #thing {
-    position: absolute;
-
-    left: 0;
-    bottom: 0;
-
-    height: 100px;
-    width: 100px;
-  }
-</style>
-```
-
-## The End
-
-That’s it y’all. You got yourself a storm.
-
-_Sources:_
-
-- _[Thanks to BlueDelta on freesound.org for the heavy thunder sound.](https://freesound.org/people/BlueDelta/sounds/446753/)_
-- _[Thanks to inchadney on freesound.org for the rain sound.](https://freesound.org/people/inchadney/sounds/104390/)_
-- _[Thanks to 99sounds.org for the smaller thunderclap sounds.](http://99sounds.org/rain-and-thunder/)_
-- _[Thanks to Randall Munroe of xkcd for the tree image.](https://xkcd.com/1110/)_
+See what you can come up with!
