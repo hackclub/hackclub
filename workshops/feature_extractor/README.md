@@ -48,7 +48,7 @@ Finally, `blueCount` and `redCount` are counters for how many images there are i
 
 ## 🛠️ The `setup()`
 
-`setup()` is a function which shall fire up as soon as our code is ready to run. Bacause of using [p5.js](https://p5js.org), our code is pretty readable and easy to understand here.
+`setup()` is a function which shall fire up as soon as our code is ready to run. Because we are using [p5.js](https://p5js.org), our code is pretty readable and easy to understand here.
 
 ```javascript
 function setup() {
@@ -146,10 +146,10 @@ buttonB.mousePressed(function() {
 With `.mousePressed()` we're defining what happens when any of these buttons are pressed - which is:
 
 - Increase the count by 1, using the `++` operator
-- Capture the current frame from the webcam videom and add it to the classifier, with `classifier.addImage()`
+- Capture the current frame from the webcam video and add it to the classifier, with `classifier.addImage()`
 - Update the count on our app by changing the button's text, with `.html()`
 
-Next up, we have this whole block - where we train the classifer itself:
+Next up, we have this whole block - where we train the classifier itself:
 
 ```javascript
 train = select('#train')
