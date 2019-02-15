@@ -839,8 +839,6 @@ And game developers take those techniques even further to generate realistic 3D 
 
 Try messing with the numbers in your tree maker. You can get all kinds of cool effects:
 
-![Swaying tree gif](/img/sway.gif)
-![Spinning tree gif](/img/spin.gif)
-![Spreading tree gif](/img/stars.gif)
+![Cool tree effects](/img/effects.gif)
 
 See what you can come up with!
