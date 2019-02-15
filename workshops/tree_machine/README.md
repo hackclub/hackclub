@@ -1,6 +1,6 @@
 ---
 name: 'Tree Machine'
-description: 'A thunderstorm in your browser'
+description: 'Generate virtual trees with p5'
 author: '@polytroper'
 group: 'experimental'
 order: 10
@@ -10,7 +10,7 @@ begin: 'https://repl.it/@polytrope/tree-machine-starter'
 Guess what friends, today we’re making _trees_. That’s right, NATURE.
 
 [Here’s my tree, for your perusal:](https://tree-machine-original--polytrope.repl.co)
-![A gif of my awesome tree](/img/original_tree.gif)
+![A gif of my awesome tree](/img/original.gif)
 
 How can a whole tree fit inside a computer, you may ask? The answer is simple: **recursion**.
 
@@ -31,7 +31,7 @@ Your file should look like this to start:
 </head>
 
 <!-- Import p5 -->
-<script src=“https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js”></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
 
 <script>
 function setup() {
@@ -41,7 +41,7 @@ function setup() {
 
 function draw() {
   // Draw a black background
-	background(0);
+  background(0);
 }
 </script>
 </html>
