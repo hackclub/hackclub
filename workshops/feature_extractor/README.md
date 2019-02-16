@@ -146,7 +146,7 @@ buttonB.mousePressed(function() {
 With `.mousePressed()` we're defining what happens when any of these buttons are pressed - which is:
 
 - Increase the count by 1, using the `++` operator
-- Capture the current frame from the webcam video and add it to the classifier, with `classifier.addImage()`
+- Capture the current frame from the webcam video and add it to the classifier, with `classifier.addImage()`. These images are used to train the model to know the difference between an image that's for switching to a red background and an image that's for switching to a blue background.
 - Update the count on our app by changing the button's text, with `.html()`
 
 Next up, we have this whole block - where we train the classifier itself:
