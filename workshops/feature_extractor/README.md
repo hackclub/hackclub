@@ -169,7 +169,7 @@ train.mousePressed(function() {
 })
 ```
 
-When the `Train 🚋` button on our app is pressed, we call `classifier.train()` - and with each iteration, the function we supply there is called - which is why we see the _[Loss](https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html)_ value keep changing.
+When the `Train 🚋` button on our app is pressed, we call `classifier.train()` - and with each iteration, the function we supply there is called - which is why we see the _[Loss](https://ml-cheatsheet.readthedocs.io/en/latest/loss\_functions.html)_ value keep changing.
 
 ![](img/training.gif)
 
