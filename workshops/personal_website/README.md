@@ -275,10 +275,9 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 **Websites Made by Other Hack Club Hackers:**
 
+- [Theo Bleier](https://tmb.sh/)
+- [Megan Cui](https://megancui.com/)
 - [Sophie Huang](https://sohuang.github.io/)
-- [Gabriel Lazrak](http://gabriellazrak.github.io/)
-- [Rebecca Jourard](https://mnefertiti.github.io/personalwhale/)
-- [John Cena's](http://notbrian.github.io/john-cenas-personal-website/) (created by Brian Nguyen)
 - [Jevin Sidhu](http://jevinsidhu.com/)
 - [Zero Cool](https://harrison.tech/zero-cool/)
 - [Chaoyi Zha](https://cydrobolt.com/)
@@ -290,7 +289,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 - [Alice Lee](http://byalicelee.com)
 - [Yaron Schoen](http://yaronschoen.com)
 - [Roxanne Ravago](http://www.roxanneravago.com)
-- [Pushkar Modi](http://pushkarmodi.com)
+- [Helen Tran](http://helentran.com/)
 
 ### Additional Resources
 
