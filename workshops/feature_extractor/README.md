@@ -2,7 +2,7 @@
 name: 'Feature Extractor'
 description: 'Build your first ML app, with just a little JavaScript'
 author: '@jajoosam'
-group: 'experimental'
+group: 'misc'
 order: 18
 begin: 'https://repl.it/@jajoosam/feature-extractor-start'
 canonical: 'https://repl.it/talk/learn/Build-an-ML-app-with-just-a-little-JavaScript/10372'
