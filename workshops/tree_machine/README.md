@@ -2,7 +2,7 @@
 name: 'Tree Machine'
 description: 'Generate virtual trees with p5'
 author: '@polytroper'
-group: 'experimental'
+group: 'start'
 order: 10
 begin: 'https://repl.it/@polytrope/tree-machine-starter'
 ---
