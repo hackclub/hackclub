@@ -1,6 +1,6 @@
 ---
 name: 'Vigenere Cipher'
-description: 'Make a cryptographic cipher with python’
+description: 'Make a cryptographic cipher with python'
 author: '@polytroper'
 group: 'experimental'
 order: 11
