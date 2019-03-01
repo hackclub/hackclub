@@ -20,6 +20,7 @@ Cryptography works like this:
 Or, to put it another way:
 
 `plaintext + keytext = ciphertext` _(encryption)_
+
 `ciphertext - keytext = plaintext` _(decryption)_
 
 But messages and passwords are made of _text_—how can you add and subtract strings of characters?
@@ -428,11 +429,13 @@ To make this happen, we _could_ write some new functions called `decrypt` and `d
 There is a simpler way! Let’s take another look at these formulas from the top:
 
 `plaintext + keytext = ciphertext` _(encryption)_
+
 `ciphertext - keytext = plaintext` _(decryption)_
 
 We can rewrite that second line like this:
 
 `plaintext + keytext = ciphertext` _(encryption)_
+
 `ciphertext + (-keytext) = plaintext` _(decryption)_
 
 Now encryption and decryption are the _same_ process—decryption just means adding the _negative_ version of your key!
