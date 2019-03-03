@@ -118,12 +118,14 @@ def encrypt_character(plain, key):
 ```
 
 Take a look at this line:
+
 `cipher_code = (key_code + plain_code) % character_count`
 
 We add our two characters together with `(key_code + plain_code)`
 Then we use the _modulus_ operator, `%`, to loop back to zero when we hit `character_count` (which right now is 26).
 
 Now take a look at this line:
+
 `cipher = characters[cipher_code]`
 
 We need to turn `cipher_code` back into a character. We can look up the character at that position in our character string with `characters[cipher_code]`.
@@ -211,6 +213,7 @@ def encrypt(plain, key):
 ```
 
 Let’s quickly look at this line:
+
 `for (plain_index, plain_character) in enumerate(plain):`
 
 That `enumerate(plain)` bit takes our message—`plain`—and turns it into a list of pairs, where each pair is an _index_ and a _character_.
@@ -342,14 +345,17 @@ Look closer at these lines, where all the changes are:
 ```
 
 This line matches the position of our _plaintext_ character to a position in our _keytext_:
+
 `key_index = plain_index % len(key)`
 
 Since our plaintext is probably _longer_ than our keytext, we use the `%` (modulus) operator to loop back to zero once we go past the length of our key.
 
 This line gets the character at `key_index`:
+
 `key_character = key[key_index]`
 
 And this line has been changed to pass `key_character` along to `encrypt_character`, instead of just `key`:
+
 `cipher_character = encrypt_character(key_character, plain_character)`
 
 Finally, change your `keytext` value near the bottom of your script to `"key"` (instead of `"k"`):
@@ -475,6 +481,7 @@ def invert_character(character):
 ```
 
 Let’s take a look at this line, where we find the “opposite” character code:
+
 `inverted_code = (character_count - character_code) % character_count`
 
 All we’re doing here is taking `character_count` (26) and _subtracting_ the `character_code`. So if we’re inverting b=1, we’d get 26-1, which is z=25.
@@ -547,6 +554,7 @@ if encrypted:
 ```
 
 This line checks for that exclamation point, and stores whether it’s there in a variable called `encrypted`:
+
 `encrypted = plaintext.startswith("!")`
 
 If we find an exclamation point, we snip it off and invert our key:
@@ -713,6 +721,7 @@ characters += "\"\\"
 ### Escape Characters
 
 A quick note about that last line:
+
 `characters += "\"\\"`
 
 `"` and `\` are a little tricky to work with in code. The `"` character has a special meaning here—specifically, it means the start and end of our string! So we can’t use `"` _directly_. Instead, we have to “escape” the special meaning of `"`, by putting a `\` in front of it.
