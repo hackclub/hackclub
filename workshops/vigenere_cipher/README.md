@@ -812,12 +812,26 @@ while True:
 
 ## Epilogue
 
-The history of computing is deeply tied up with encryption.
+Computing begins with cryptography.
 
-![A photo of the cryptologic bombe]()
+I mean that literally—the first practical _computationally-universal_ computers were created for the sole purpose of breaking ciphers during World War II, by a grand team of visionaries like Alan Turing and John von Neumann.
 
-Alan Turing, Enigma Machine, blah blah blah
+In the 1920s, the German government began to secure their communications with an elaborate mechanical cipher machine called the Enigma. This machine had much in common with the Vigenere cipher you just wrote, and it was thought by many to be practically unbreakable.
 
-![]
+![A German Enigma Machine](/img/enigma_machine.jpg)
 
-Importance of computer security, but also responsibility etc.
+In the early 1930s, Poland was increasingly threatened by the rise of the Nazis in Germany. Three Polish students named Marian Rejewski, Jerzy Różycki, and Henryk Zygalski developed a way to break the Enigma cipher and read German messages, including exact wiring diagrams of the machine—using only pencil and paper, _without ever seeing the machine itself._
+
+Later in the decade, this team began to automate the message-cracking process with enormous electro-mechanical contraptions known as Cryptologic Bombas. These machines and techniques were later refined by Alan Turing to create the Cryptologic _Bombe_, a similar machine that relied on different cryptanalytical techniques.
+
+![An American Bombe, built by the US Navy](/img/american_bombe.jpg)
+
+In the 1940s, British codebreakers needed a more advanced machine to break a high-level Nazi code called the Lorenz Cipher. To meet this challenge, a British engineer named Tommy Flowers created a _programmable_ electronic machine called Colossus. This is considered by many to be the first _true_ computer (although a German machine called the Z1 may rightly hold that title).
+
+![Colossus, the first programmable electronic digital computer](/img/colossus.jpg)
+
+Effective cryptanalysis was undeniably decisive in _stopping the Nazis_. On the other hand, effective cryptography played a role in their rise.
+
+Cryptography is such a powerful tool that for a time, the US government even [classified it as a munition](https://en.wikipedia.org/wiki/Export_of_cryptography_from_the_United_States). The duality of its use for good and evil makes cryptography a difficult, hotly-debated topic even today. Every few years, the discussion begins again when the FBI needs to [break into somebody's iPhone](https://en.wikipedia.org/wiki/FBI%E2%80%93Apple_encryption_dispute) (or whatever).
+
+But of course, tools are neither good nor evil—that part is up to the user.
