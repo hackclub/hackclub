@@ -499,6 +499,8 @@ def invert(text):
 # the rest of your script...
 ```
 
+### Signaling Encrypted Messages
+
 Ok, so now we can find the inverse of a key and use it to decrypt… but how do we know when we _need_ to invert a key? Somehow, our script needs to know whether it’s encrypting or decrypting a message.
 
 There are many ways to do this, but I like this simple method: when I encrypt a message, I stick an exclamation point at the start. That way if my script gets a message like “!ciabirwiqceeo”, it can invert the key first to decrypt the message (instead of encrypting it twice).
@@ -659,7 +661,7 @@ We’re almost done. We just need a few finishing touches—like asking the user
 
 This is really simple. All we need to do is use the `input` function to set `plaintext` and `keytext`. All `input` does is ask the user to type something, and returns what they type.
 
-So all you need to do is replace `"!ciabirwiqceeo"` with `input("Message: ")`, and replace `"key"` with `input("Password: ")`:
+So all you need to do is replace `"!ciabirwiqceeo"` and `"key"` with `input`:
 
 ```python
 plaintext = input("Message: ")
@@ -707,6 +709,8 @@ characters += "1234567890"
 characters += " !@#$%^&*()-_+=`~;:'[]{}|<>,./?"
 characters += "\"\\"
 ```
+
+### Escape Characters
 
 A quick note about that last line:
 `characters += "\"\\"`
