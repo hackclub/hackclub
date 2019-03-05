@@ -27,7 +27,7 @@ But messages and passwords are made of _text_—how can you add and subtract str
 
 Simple: first you turn each character into a _number_.
 
-[Click here to get started.]([https://repl.it/@polytrope/vigenere-cipher-starter)
+[Click here to get started.](https://repl.it/@polytrope/vigenere-cipher-starter)
 
 ## The Rotation Cipher
 
