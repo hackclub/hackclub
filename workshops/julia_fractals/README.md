@@ -11,7 +11,7 @@ Fractals. You've seen them. They're beautiful:
 
 ![File:Mandelbrot sequence new.gif](https://upload.wikimedia.org/wikipedia/commons/a/a4/Mandelbrot_sequence_new.gif)
 
-What kind of crazy black magic lets computers draw these things?? You must need a PhD in math to understand it, right?
+What kind of crazy black magic lets computers draw these things?? It must be like… really complicated.
 
 WRONG. Fractal renderers are _ridiculously_ simple—and to prove it, you're going to write one.
 
@@ -512,7 +512,7 @@ Now we have a `blue` value for our color, which shows `math.abs(point)`. If you 
 
 Think about the colors you see—why _these_ colors? Why is the blue in a circle? Why is one corner white?
 
-Your script should now look like [this]:(https://repl.it/@polytrope/julia-fractals-drawing-plane):
+Your script should now look like [this](https://repl.it/@polytrope/julia-fractals-drawing-plane):
 
 ```html
 <script>
