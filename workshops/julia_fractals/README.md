@@ -636,7 +636,7 @@ We need to use this equation to generate a color for each point on the complex p
 
 You can apply this process _infinitely_ for any point. For most points, the number will just keep getting bigger and bigger and bigger. When this happens, we say the number **Escapes**.
 
-Any point with a abs (length) of at least 2 will _always_ get bigger and bigger forever. So if `math.abs(z) >= 2`, we _know_ that `z` escapes.
+Any point with an absolute value of at least 2 will _always_ get bigger and bigger forever. So if `math.abs(z) >= 2`, we _know_ that `z` escapes.
 
 But for some numbers in that little circle around the origin—where `math.abs(z) < 2`—something peculiar happens. Each time we apply this process, the point will move… but it will never _escape_. It may just bounce around _forever_, rotating and moving around the origin without ever "escaping" it.
 
@@ -1370,6 +1370,29 @@ update()
 </script>
 ```
 
+## Epilogue
+
+There are all kinds of fractals. 
+
+You can make [fractal trees](https://hackclub.com/workshops/tree_machine)
+
+![An animated fractal tree](/img/fractal_tree.gif)
+
+Or how about some [3D fractals](http://www.mandelbulb.com/):
+
+![The Mandelbulb 3D fractal](/img/mandelbulb.jpg)
+
+You can even grow [broccoli with fractals](https://en.wikipedia.org/wiki/Romanesco_broccoli) (yes this is real broccoli that you can buy at some supermarkets):
+
+![An image of romanesco broccoli](/img/fractal_broccoli.jpg)
+
+But fractals are just the beginning of what you can do with complex numbers. Complex numbers are _essential_ to everything from quantum physics to guitar amplifiers.
+
+Pretty remarkable for such a simple idea.
+
 ### Sources
 
-https://en.wikipedia.org/wiki/File:Mandelbrot_sequence_new.gif
+* Thanks to Simpsons Contributor on Wikimedia for the [fractal zoom gif](https://en.wikipedia.org/wiki/File:Mandelbrot_sequence_new.gif)
+* Thanks to Rafael Ruggiero for the [fractal tree gif](https://commons.wikimedia.org/wiki/File:Fractal_tree.gif)
+* Thanks to the mandelbulb.com team for the [mandelbulb image](http://www.mandelbulb.com/3d-fractal-art-mandelmorphs/)
+* Thanks to Jon Sullivan on Wikimedia for his [image of romanesco broccoli](https://commons.wikimedia.org/wiki/File:Fractal_Broccoli.jpg)
