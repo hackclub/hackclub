@@ -1374,7 +1374,7 @@ update()
 
 There are all kinds of fractals. 
 
-You can make [fractal trees](https://hackclub.com/workshops/tree_machine)
+You can make [fractal trees](https://hackclub.com/workshops/tree_machine):
 
 ![An animated fractal tree](/img/fractal_tree.gif)
 
@@ -1389,6 +1389,8 @@ You can even grow [broccoli with fractals](https://en.wikipedia.org/wiki/Romanes
 But fractals are just the beginning of what you can do with complex numbers. Complex numbers are _essential_ to everything from quantum physics to guitar amplifiers.
 
 Pretty remarkable for such a simple idea.
+
+Want to learn more stuff like this? I recommend checking out [3Blue1Brown](https://www.youtube.com/watch?v=QJYmyhnaaek).
 
 ### Sources
 
