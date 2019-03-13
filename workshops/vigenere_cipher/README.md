@@ -201,7 +201,7 @@ def encrypt(plain, key):
   # Loop over every character in our plaintext
   for (plain_index, plain_character) in enumerate(plain):
     # Encrypt our plain character with our key character
-    cipher_character = encrypt_character(key, plain_character)
+    cipher_character = encrypt_character(plain_character, key)
 
     # Add our new cipher character to the end of our ciphertext
     cipher += cipher_character
@@ -322,7 +322,7 @@ def encrypt(plain, key):
     key_character = key[key_index]
 
     # Encrypt our plain character with our key character
-    cipher_character = encrypt_character(key_character, plain_character)
+    cipher_character = encrypt_character(plain_character, key_character)
 
     # Add our new cipher character to the end of our ciphertext
     cipher += cipher_character
@@ -341,7 +341,7 @@ Look closer at these lines, where all the changes are:
     key_character = key[key_index]
 
     # Encrypt our plain character with our key character
-    cipher_character = encrypt_character(key_character, plain_character)
+    cipher_character = encrypt_character(plain_character, key_character)
 ```
 
 This line matches the position of our _plaintext_ character to a position in our _keytext_:
@@ -356,7 +356,7 @@ This line gets the character at `key_index`:
 
 And this line has been changed to pass `key_character` along to `encrypt_character`, instead of just `key`:
 
-`cipher_character = encrypt_character(key_character, plain_character)`
+`cipher_character = encrypt_character(plain_character, key_character)`
 
 Finally, change your `keytext` value near the bottom of your script to `"key"` (instead of `"k"`):
 
@@ -409,7 +409,7 @@ def encrypt(plain, key):
     key_character = key[key_index]
 
     # Encrypt our plain character with our key character
-    cipher_character = encrypt_character(key_character, plain_character)
+    cipher_character = encrypt_character(plain_character, key_character)
 
     # Add our new cipher character to the end of our ciphertext
     cipher += cipher_character
@@ -430,7 +430,7 @@ print("Output: " + ciphertext)
 
 Now let's subtract our `keytext` from our `ciphertext` to get our `plaintext`.
 
-To make this happen, we _could_ write some new functions called `decrypt` and `decrypt_character`. However, they would do _almost the same thing_ as `encrypt` and `decrypt_character`—the only difference is that they would _subtract_ the key instead of _adding_ it.
+To make this happen, we _could_ write some new functions called `decrypt` and `decrypt_character`. However, they would do _almost the same thing_ as `encrypt` and `encrypt_character`—the only difference is that they would _subtract_ the key instead of _adding_ it.
 
 There is a simpler way! Let’s take another look at these formulas from the top:
 
@@ -613,7 +613,7 @@ def encrypt(plain, key):
     key_character = key[key_index]
 
     # Encrypt our plain character with our key character
-    cipher_character = encrypt_character(key_character, plain_character)
+    cipher_character = encrypt_character(plain_character, key_character)
 
     # Add our new cipher character to the end of our ciphertext
     cipher += cipher_character
@@ -773,7 +773,7 @@ def encrypt(plain, key):
     key_character = key[key_index]
 
     # Encrypt our plain character with our key character
-    cipher_character = encrypt_character(key_character, plain_character)
+    cipher_character = encrypt_character(plain_character, key_character)
 
     # Add our new cipher character to the end of our ciphertext
     cipher += cipher_character
