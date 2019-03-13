@@ -430,7 +430,7 @@ print("Output: " + ciphertext)
 
 Now let's subtract our `keytext` from our `ciphertext` to get our `plaintext`.
 
-To make this happen, we _could_ write some new functions called `decrypt` and `decrypt_character`. However, they would do _almost the same thing_ as `encrypt` and `decrypt_character`—the only difference is that they would _subtract_ the key instead of _adding_ it.
+To make this happen, we _could_ write some new functions called `decrypt` and `decrypt_character`. However, they would do _almost the same thing_ as `encrypt` and `encrypt_character`—the only difference is that they would _subtract_ the key instead of _adding_ it.
 
 There is a simpler way! Let’s take another look at these formulas from the top:
 
