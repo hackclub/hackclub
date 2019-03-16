@@ -54,15 +54,17 @@ People are complicated. You should expect to be misunderstood and to misundersta
 
 These actions are explicitly forbidden in Hack Club spaces:
 
-- Insulting, demeaning, hateful, or threatening remarks.
-- Discrimination based on age, disability, gender, nationality, race, religion, sexuality, or similar personal characteristic.
-- Bullying or systematic harassment.
-- Unwelcome sexual advances.
-- Provoking any of these.
+- Expressing or provoking ...
+  - ... insulting, demeaning, hateful, or threatening remarks;
+  - ... discrimination based on age, disability, gender, nationality, race, religion, sexuality, or similar personal characteristic;
+  - ... bullying or systematic harassment;
+  - ... unwelcome sexual advances, including sexually explicit content;
+- Excessive advertisement of unnecessary or non-beneficial commercial products and services;
+- Posting spam-like content that disrupts the environment of the community.
 
 ## Moderation & Enforcement
 
-Please understand that speech and actions have consequences, and unacceptable behavior will not be tolerated. When you participate in [areas where the code of conduct applies](#where-does-the-code-of-conduct-apply), you should act in the spirit of the "Hacker values". If you conduct yourself in a way that is explicitly forbidden by the Code of Conduct, you will be warned and asked to stop. Repeated offenses may result in a temporary or permanent ban from the community.
+Please understand that speech and actions have consequences, and unacceptable behavior will not be tolerated. When you participate in [areas where the code of conduct applies](#where-does-the-code-of-conduct-apply), you should act in the spirit of the "Hacker values". If you conduct yourself in a way that is explicitly forbidden by the Code of Conduct, you will be warned and asked to stop, and your messages may be removed by community moderators. Repeated offenses may result in a temporary or permanent ban from the community.
 
 - On your first offense, you will receive a written notice from one of our community moderators. Depending on the degree of the reported behavior, you may be asked to apologize, either in public or directly to the party that you have offended.
 - On a second offense, you will be temporarily removed from the community. The period of the temporary ban may vary from 3 days to a month, decided based on the seriousness of the reported behavior. Please note that this ban **does not indicate the you are no longer welcomed in the community** - it represents an official warning for your behavior.
