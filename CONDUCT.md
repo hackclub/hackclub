@@ -24,7 +24,7 @@ Explicit enforcement of the Code of Conduct applies to all official online Hack 
 - The `#hack-club` IRC channel on Freenode
 - Club Meetings
 
-Other Hack Club groups (such as conferences, meetups, and other unofficial forums) are encouraged to adopt this Code of Conduct. Those groups must provide their own moderators and/or working group (see below).
+Other Hack Club groups (such as hackathons, conferences, meetups, and other unofficial forums) are encouraged to adopt this Code of Conduct. Those groups must provide their own moderators and/or working group (see below).
 
 ## Hacker Values
 
@@ -54,12 +54,12 @@ People are complicated. You should expect to be misunderstood and to misundersta
 
 These actions are explicitly forbidden in Hack Club spaces:
 
-- Expressing or provoking ...
-  - ... insulting, demeaning, hateful, or threatening remarks;
-  - ... discrimination based on age, disability, gender, nationality, race, religion, sexuality, or similar personal characteristic;
-  - ... bullying or systematic harassment;
-  - ... unwelcome sexual advances, including sexually explicit content;
-- Excessive advertisement of unnecessary or non-beneficial commercial products and services;
+- Expressing or provoking:
+  - insulting, demeaning, hateful, or threatening remarks;
+  - discrimination based on age, nationality, race, (dis)ability, gender (identity or expression), sexuality, religion, or similar personal characteristic;
+  - bullying or systematic harassment;
+  - unwelcome sexual advances, including sexually explicit content.
+- Excessive advertisement of unnecessary or non-beneficial commercial products and services.
 - Posting spam-like content that disrupts the environment of the community.
 
 ## Moderation & Enforcement
