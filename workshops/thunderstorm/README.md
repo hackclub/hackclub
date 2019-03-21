@@ -126,7 +126,7 @@ function flashOn() {
 
 Now hit Run, click the sky, and you should get a flash!
 
-## Make it rain
+## Make it Rain
 
 Let’s make some sounds. We’ll use a tool called [Howler](https://github.com/goldfire/howler.js#documentation), which makes it really simple to work with sound in js.
 
