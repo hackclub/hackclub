@@ -85,7 +85,7 @@ import { useState } from "react";
 export function ColorPicker() {
   const [red, setRed] = useState(0);
   const [green, setGreen] = useState(0);
-  const [blue, useBlue] = useState(0);
+  const [blue, setBlue] = useState(0);
 
   return (
     <div>
