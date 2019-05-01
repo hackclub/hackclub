@@ -284,7 +284,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 **Websites Made by Professionals:**
 
-- [Melody Starling](https://melody.cool/)
+- [Melody Starling](https://melody.dev/)
 - [Eel Slap](http://eelslap.com)
 - [Alice Lee](http://byalicelee.com)
 - [Yaron Schoen](http://yaronschoen.com)
