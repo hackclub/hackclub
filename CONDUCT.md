@@ -16,7 +16,7 @@ With that said, a healthy community must allow for disagreement and debate. The 
 
 If you join in or contribute to the Hack Club ecosystem in any way, you are encouraged to follow the Code of Conduct while doing so.
 
-Explicit enforcement of the Code of Conduct applies to all official online Hack Club groups, in person meetings, and events including:
+Explicit enforcement of the Code of Conduct applies to all official online Hack Club groups, in-person meetings, and events including:
 
 - The [GitHub projects](https://github.com/hackclub/)
 - The [Facebook Group](https://www.facebook.com/groups/1501083703514499/)
@@ -59,7 +59,7 @@ These actions are explicitly forbidden in Hack Club spaces:
   - discrimination based on age, nationality, race, (dis)ability, gender (identity or expression), sexuality, religion, or similar personal characteristic;
   - bullying or systematic harassment;
   - unwelcome sexual advances, including sexually explicit content.
-- Excessive advertisement of unnecessary or non-beneficial commercial products and services.
+- Excessive advertisement for unnecessary or non-beneficial commercial products and services.
 - Posting spam-like content that disrupts the environment of the community.
 
 ## Moderation & Enforcement
@@ -67,10 +67,10 @@ These actions are explicitly forbidden in Hack Club spaces:
 Please understand that speech and actions have consequences, and unacceptable behavior will not be tolerated. When you participate in [areas where the code of conduct applies](#where-does-the-code-of-conduct-apply), you should act in the spirit of the "Hacker values". If you conduct yourself in a way that is explicitly forbidden by the Code of Conduct, you will be warned and asked to stop, and your messages may be removed by community moderators. Repeated offenses may result in a temporary or permanent ban from the community.
 
 - On your first offense, you will receive a written notice from one of our community moderators. Depending on the degree of the reported behavior, you may be asked to apologize, either in public or directly to the party that you have offended.
-- On a second offense, you will be temporarily removed from the community. The period of the temporary ban may vary from 3 days to a month, decided based on the seriousness of the reported behavior. Please note that this ban **does not indicate the you are no longer welcomed in the community** - it represents an official warning for your behavior.
+- On a second offense, you will be temporarily removed from the community. The period of the temporary ban may vary from 3 days to a month, decided based on the seriousness of the reported behavior. Please note that this ban **does not indicate that you are no longer welcomed in the community** - it represents an official warning for your behavior.
 - On a third offense, you may be asked to leave the community. Your account may be suspended for an indefinite amount of time, and you may be publicly identified.
 
-This procedure only serves as a general guideline for moderation & enforcement of our community conduct. Under all circumstances, the Working Group or Hack Club's staff members may take any action we deem appropriate, including an immediate removal from the community. Being banned from the Hack Club community may also prevent you from participating in our community events, including but not restricted to: local club meetings, hackathons, or challenges.
+This procedure only serves as a general guideline for moderation & enforcement of our community conduct. Under all circumstances, the Working Group or Hack Club's staff members may take any action we deem appropriate, including immediate removal from the community. Being banned from the Hack Club community may also prevent you from participating in our community events, including but not restricted to: local club meetings, hackathons, or challenges.
 
 Please understand that we will not restrict your ability to contact the [Code of Conduct working group](#working-group) under any circumstance. If you have any questions or concerns about our decision, please reach out to us directly. If your Slack account is under suspension, you should email us directly at conduct@hackclub.com.
 
@@ -120,4 +120,4 @@ Changes to the Code of Conduct (including to the members of the Working Group) s
 
 ## Acknowledgments
 
-This was adapted from [Go's Code of Conduct](https://github.com/golang/go/commit/aa487e66f869785837275ee20441a53888a51bb2). It is to be noted that many parts of Go's Code of Conduct is adopted from the Code of Conduct documents of the Django, FreeBSD, and Rust projects.
+This was adapted from [Go's Code of Conduct](https://github.com/golang/go/commit/aa487e66f869785837275ee20441a53888a51bb2). It is to be noted that many parts of Go's Code of Conduct are adopted from the Code of Conduct documents of the Django, FreeBSD, and Rust projects.
