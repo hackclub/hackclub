@@ -1,3 +1,11 @@
+---
+name: 'Hot Dog or Not Hot Dog?'
+description: 'Build a basic hot dog classifier using the Clarifai API for Python'
+author: '@harrisbegca'
+group: 'misc'
+order: 5
+begin: 'https://repl.it/repls/GullibleAccomplishedCables'
+---
 
 ## Part 1: Background
 
