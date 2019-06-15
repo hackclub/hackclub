@@ -9,7 +9,7 @@ begin: 'https://repl.it/repls/GullibleAccomplishedCables'
 
 ## Part 1: Background
 
-You may or may not already be familiar with the popular TV show __Silicon Valley__, in which a character, Jian-Yang, promises to help build an app that identifies different types of food. While the idea is promising, Jian-Yang clearly misunderstands and makes, well, [this](https://www.youtube.com/watch?v=pqTntG1RXSY).
+You may or may not already be familiar with the popular TV show **Silicon Valley**, in which a character, Jian-Yang, promises to help build an app that identifies different types of food. While the idea is promising, Jian-Yang clearly misunderstands and makes, well, [this](https://www.youtube.com/watch?v=pqTntG1RXSY).
 
 So the question remains: is it possible to build a fast and reliable hot dog identification app?
 
@@ -31,19 +31,13 @@ To get started, please go to: [https://repl.it/languages/python3](https://repl.i
 
 Now that we're able to write our code, we have to determine what to use to identify the hotdogs.
 
-
-To do that, we'll be using [Clarifai](https://www.clarifai.com/), a popular API with prebuilt models including a [food model]
-(https://www.clarifai.com/models/food-image-recognition-model-bd367be194cf45149e75f01d59f77ba7?hsLang=en):
-
+To do that, we'll be using [Clarifai](https://www.clarifai.com/), a popular API with prebuilt models including a [food model](https://www.clarifai.com/models/food-image-recognition-model-bd367be194cf45149e75f01d59f77ba7?hsLang=en):
 
 ![](https://i.ibb.co/xsfSpVJ/image.png)
-
 
 In a simplified sense, Clarifai's food model has many pictures of food items that are then divided into categories, helping a complex algorithm identify patterns between food items' appearances. For the sake of this tutorial, we don't have to worry about the algorithmic details, but rather the implementation.
 
 **If you'd like to delve into custom models, I'd recommend reading the [full Clarifai documentation](https://www.clarifai.com/developer/guide/train#train).**
-
-
 
 Anyways, to use Clarifai, we'll need an API key. To get started, you'll need to sign up here:
 [https://www.clarifai.com/signup](https://www.clarifai.com/signup).
@@ -52,9 +46,7 @@ Once you've signed up, you should arrive at this page:
 
 ![](https://i.ibb.co/RzKNcNt/image.png). To continue, click on the project that Clarifai created for you named "my-first-application."
 
-
 You should now be at a "settings" page of sorts, and clicking a dropdown option called "API Keys" (highlighted below) should bring up a long string of letters and numbers. This is called your API key - make sure not to give it to anyone.
-
 
 ![](https://i.ibb.co/bmpR7Jm/image.png)
 
@@ -63,200 +55,202 @@ Copy the API key and replace "YOUR_API_KEY" in [my repl](https://repl.it/repls/G
 ## Part 3: Processing Clarifai's Predictions
 
 The "jargon," when reformatted, looks like this:
-````json
-{  
-   'status':{  
-      'code':10000,
-      'description':'Ok',
-      'req_id':'1a5319397f344267a00f7057ef212a39'
-   },
-   'outputs':[  
-      {  
-         'id':'e5d43934f74c4697b1388d4819db780b',
-         'status':{  
-            'code':10000,
-            'description':'Ok'
-         },
-         'created_at':'2019-06-09T18:24:09.106022738Z',
-         'model':{  
-            'id':'bd367be194cf45149e75f01d59f77ba7',
-            'name':'food-items-v1.0',
-            'created_at':'2016-09-17T22:18:59.955626Z',
-            'app_id':'main',
-            'output_info':{  
-               'message':'Show output_info with: GET /models/{model_id}/output_info',
-               'type':'concept',
-               'type_ext':'concept'
-            },
-            'model_version':{  
-               'id':'dfebc169854e429086aceb8368662641',
-               'created_at':'2016-09-17T22:18:59.955626Z',
-               'status':{  
-                  'code':21100,
-                  'description':'Model trained successfully'
-               }
-            },
-            'display_name':'Food'
-         },
-         'input':{  
-            'id':'a642f530e11d4188a24cf2f679842829',
-            'data':{  
-               'image':{  
-                  'url':'https://samples.clarifai.com/food.jpg'
-               }
-            }
-         },
-         'data':{  
-            'concepts':[  
-               {  
-                  'id':'ai_GC6FB0cQ',
-                  'name':'sauce',
-                  'value':0.9983333349227905,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_fBH5DFMJ',
-                  'name':'pasta',
-                  'value':0.9958708882331848,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_2KV5G1Fg',
-                  'name':'basil',
-                  'value':0.9758102893829346,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_XN1QLhwp',
-                  'name':'penne',
-                  'value':0.9758005142211914,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_KWmFf1fn',
-                  'name':'meat',
-                  'value':0.9716258645057678,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_XVpwLB09',
-                  'name':'beef',
-                  'value':0.9662393927574158,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_qmTM9wzt',
-                  'name':'spaghetti',
-                  'value':0.9625737071037292,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_CB8hsS3T',
-                  'name':'tomato',
-                  'value':0.9441984295845032,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_FnZCSVMH',
-                  'name':'cheese',
-                  'value':0.8896348476409912,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_CQT1pP96',
-                  'name':'macaroni',
-                  'value':0.8692030906677246,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_NDbbpCv1',
-                  'name':'vegetable',
-                  'value':0.8648395538330078,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_CSW3Njnd',
-                  'name':'meat sauce',
-                  'value':0.8523142337799072,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_3fJXxTPQ',
-                  'name':'sausage',
-                  'value':0.6793823838233948,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_ZBtC2kLC',
-                  'name':'spaghetti bolognese',
-                  'value':0.6277346611022949,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_Bh2xGwKk',
-                  'name':'tomato sauce',
-                  'value':0.6133120059967041,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_TRbv6FWL',
-                  'name':'pork',
-                  'value':0.5717142820358276,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_cdw5bgmc',
-                  'name':'pasta sauce',
-                  'value':0.46453768014907837,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_6s1vcbq9',
-                  'name':'garlic',
-                  'value':0.45510831475257874,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_gNpKXVhq',
-                  'name':'tagliatelle',
-                  'value':0.4506647288799286,
-                  'app_id':'main'
-               },
-               {  
-                  'id':'ai_gLHbKNPn',
-                  'name':'parmesan',
-                  'value':0.44485723972320557,
-                  'app_id':'main'
-               }
-            ]
-         }
+
+```json
+{
+  "status": {
+    "code": 10000,
+    "description": "Ok",
+    "req_id": "1a5319397f344267a00f7057ef212a39"
+  },
+  "outputs": [
+    {
+      "id": "e5d43934f74c4697b1388d4819db780b",
+      "status": {
+        "code": 10000,
+        "description": "Ok"
+      },
+      "created_at": "2019-06-09T18:24:09.106022738Z",
+      "model": {
+        "id": "bd367be194cf45149e75f01d59f77ba7",
+        "name": "food-items-v1.0",
+        "created_at": "2016-09-17T22:18:59.955626Z",
+        "app_id": "main",
+        "output_info": {
+          "message": "Show output_info with: GET /models/{model_id}/output_info",
+          "type": "concept",
+          "type_ext": "concept"
+        },
+        "model_version": {
+          "id": "dfebc169854e429086aceb8368662641",
+          "created_at": "2016-09-17T22:18:59.955626Z",
+          "status": {
+            "code": 21100,
+            "description": "Model trained successfully"
+          }
+        },
+        "display_name": "Food"
+      },
+      "input": {
+        "id": "a642f530e11d4188a24cf2f679842829",
+        "data": {
+          "image": {
+            "url": "https://samples.clarifai.com/food.jpg"
+          }
+        }
+      },
+      "data": {
+        "concepts": [
+          {
+            "id": "ai_GC6FB0cQ",
+            "name": "sauce",
+            "value": 0.9983333349227905,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_fBH5DFMJ",
+            "name": "pasta",
+            "value": 0.9958708882331848,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_2KV5G1Fg",
+            "name": "basil",
+            "value": 0.9758102893829346,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_XN1QLhwp",
+            "name": "penne",
+            "value": 0.9758005142211914,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_KWmFf1fn",
+            "name": "meat",
+            "value": 0.9716258645057678,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_XVpwLB09",
+            "name": "beef",
+            "value": 0.9662393927574158,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_qmTM9wzt",
+            "name": "spaghetti",
+            "value": 0.9625737071037292,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_CB8hsS3T",
+            "name": "tomato",
+            "value": 0.9441984295845032,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_FnZCSVMH",
+            "name": "cheese",
+            "value": 0.8896348476409912,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_CQT1pP96",
+            "name": "macaroni",
+            "value": 0.8692030906677246,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_NDbbpCv1",
+            "name": "vegetable",
+            "value": 0.8648395538330078,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_CSW3Njnd",
+            "name": "meat sauce",
+            "value": 0.8523142337799072,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_3fJXxTPQ",
+            "name": "sausage",
+            "value": 0.6793823838233948,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_ZBtC2kLC",
+            "name": "spaghetti bolognese",
+            "value": 0.6277346611022949,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_Bh2xGwKk",
+            "name": "tomato sauce",
+            "value": 0.6133120059967041,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_TRbv6FWL",
+            "name": "pork",
+            "value": 0.5717142820358276,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_cdw5bgmc",
+            "name": "pasta sauce",
+            "value": 0.46453768014907837,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_6s1vcbq9",
+            "name": "garlic",
+            "value": 0.45510831475257874,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_gNpKXVhq",
+            "name": "tagliatelle",
+            "value": 0.4506647288799286,
+            "app_id": "main"
+          },
+          {
+            "id": "ai_gLHbKNPn",
+            "name": "parmesan",
+            "value": 0.44485723972320557,
+            "app_id": "main"
+          }
+        ]
       }
-   ]
+    }
+  ]
 }
-````
+```
 
 And your code should be:
 
-````python
+```python
 from clarifai.rest import ClarifaiApp
 #YOUR_API_KEY
 app = ClarifaiApp(api_key="YOUR_API_KEY")
 model = app.models.get('food-items-v1.0')
 result = model.predict_by_url('https://samples.clarifai.com/food.jpg')
 print(result)
-````
+```
 
 By analyzing the json structure above, it can be noticed that in order to access the prediction labels and values, we have to go to:
 "outputs" -> first item -> "data" -> "concepts"
 
 You can do that by adding this line to your repl:
 
-````python
+```python
 predictions = result["outputs"][0]["data"]["concepts"]
-````
+```
 
 If we print `predictions` to the console, we'll see something like this:
-````python
+
+```python
 [
    {
       'id':'ai_GC6FB0cQ',
@@ -379,17 +373,18 @@ If we print `predictions` to the console, we'll see something like this:
       'app_id':'main'
    }
 ]
-````
+```
 
 If you're familiar with Python and acknowledge that the above item is an array (since it's surrounded by hard brackets), we can very easily iterate and access the values of prediction by adding this to your repl:
 
-````python
+```python
 for food in prediction:
   print(food['name'], food['value'])
-````
+```
 
 The console should log:
-````
+
+```
 sauce 0.9983333349227905
 pasta 0.9958708882331848
 basil 0.9758102893829346
@@ -410,7 +405,7 @@ pasta sauce 0.46453768014907837
 garlic 0.45510831475257874
 tagliatelle 0.4506647288799286
 parmesan 0.44485723972320557
-````
+```
 
 ## Part 4: Checking for Hot Dogs
 
@@ -418,28 +413,30 @@ Now that our basic project works, we have to add the "hot dog" component, or els
 
 Using a tuple would imply changing our loop to something similar to this:
 
-````python
+```python
 food_predictions = []
 for food in prediction:
   food_prediction = (food['name'], food['value'])
   food_predictions.append(food_prediction)
-````
+```
 
 Now that we've stored the data, we can check if any of the food names are "hot dog" and, if so, whether or not the prediction value is high enough such that it's a hot dog.
 
 To do this, we have to determine a "threshold" for the model's hot dog confidence. In this tutorial, we'll just say that if it's more than 95% sure that something is a hot dog, the "thing" is a hot dog.
 
 Translating this to code would look a little something like:
-````python
+
+```python
 is_hotdog = False
 for item in food_predictions:
   if item[0] == "hot dog": # The first item, which was designated to be the name in our tuple for loop
     if item[1] > 0.95: is_hotdog = True
 print(is_hotdog)
-````
+```
 
 If you've followed along thus far, your code should look like:
-````python
+
+```python
 from clarifai.rest import ClarifaiApp
 #YOUR_API_KEY
 app = ClarifaiApp(api_key="YOUR_API_KEY")
@@ -457,33 +454,28 @@ for item in food_predictions:
     if item[1] > 0.95: is_hotdog = True
 print(is_hotdog)
 
-````
+```
 
 Surprisingly, if we run the script, it works on most hot dogs. You can test this yourself by replacing
 'https://samples.clarifai.com/food.jpg' with any image URL.
 
 **Some examples include**:
 
-
 ![](https://www.awrestaurants.com/sites/default/files/hotdog_0.png)
 
 `True`
-
 
 ![](https://leitesculinaria.com/wp-content/uploads/fly-images/96169/best-hot-dog-recipe-fi-400x225-c.jpg)
 
 `True`
 
-
 ![](https://therecipecritic.com/wp-content/uploads/2018/08/zucchini_crust_pizza-1-of-1.jpg)
 
 `False`
 
-
 ![](https://images-na.ssl-images-amazon.com/images/I/81bXmvVitkL._SX466_.jpg)
 
 `True` (This one is debatable)
-
 
 # Part 5: Applications
 
