@@ -2,17 +2,15 @@
 name: Find Bigfoot
 description: Simple game to find Bigfoot using HTML, CSS and JS
 author: '@ad510'
-group: retired
+group: experimental
 order: 11
 ---
-
-_**Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section.**_
 
 # Find Bigfoot
 
 In this workshop, you will make a game about finding Bigfoot. It will look like this:
 
-![](img/final_screenshot.png)
+![Preview of final project](img/final_screenshot.png)
 
 Links to a live demo and the final code below. This workshop should take around 1 hour.
 
@@ -31,48 +29,15 @@ Links to a live demo and the final code below. This workshop should take around 
 
 ## Set Up the Project
 
-If you've done other Hack Club workshops before, this should be pretty straightforward.
-
-### Create a Blank HTML File
-
-1. Go to https://c9.io/login
-2. Under the workspace called `USERNAME.github.io` where `USERNAME` is your GitHub username, click **Open** to open the workspace.
-3. Make a new folder called `find_bigfoot`.
-4. In the `find_bigfoot` folder, make a new file called `index.html`.
-5. Make another file in the `find_bigfoot` folder and call it `style.css`.
-6. Double-click `index.html` to open the file.
-
-### Add Standard HTML Template
-
-Type the standard HTML template into `index.html`:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head> </head>
-  <body></body>
-</html>
-```
-
-### Open the Live Preview
-
-1. Click **File > Save** or <kbd>Ctrl</kbd>+<kbd>s</kbd> to save the file.
-2. Click **Preview > Live Preview File** to open a live preview of the web page. Currently it is blank, but that will change soon!
+Open a new HTML project on [**repl.it**/languages/js](https://repl.it/languages/js)
 
 ### Get Images for the Game
 
 1. Go to https://github.com/hackclub/hackclub/tree/master/workshops/find_bigfoot/assets
-2. Click on each image, then right click and **Save Image As** to save it to your computer.
-3. Make a new folder called `assets` in your workspace `find_bigfoot` folder.
-4. Drag all the images you saved into the `assets` folder.
-
-If you're having trouble, here's a step by step tutorial:
-
-![](img/bigfoot.gif)
-
-![](img/forest.gif)
-
-![](img/images_to_asset_folder.gif)
+2. Click on each image, then right click and **Save Image As** to save it to your computer
+  ![](img/bigfoot.gif)
+  ![](img/forest.gif)
+3. Drag all the images you saved into the repl.it sidebar
 
 Now you're all set with the images you'll need!
 
@@ -84,15 +49,15 @@ What needs to be in a game about finding Bigfoot? Well, it needs Bigfoot, and it
 
 It is rumored that Bigfoot's natural habitat is a forest in the Pacific Northwest. What happens if you take him out of his natural habitat and stick him on a computer screen? Would he scream? Would he rip up the computer?
 
-Luckily for you, we've done the hard part of wrangling him out of the jungle and putting him in captivity on the Internet, and Bigfoot can be found in your `assets` folder:
+Luckily for you, we've done the hard part of wrangling him out of the jungle and putting him in captivity on the Internet, and Bigfoot can be found in your repl.it project :)
 
-    assets/bigfoot.png
+So now you have to put an **image** of him into your game, like you did in the [Personal Website](../personal_website/) workshop. To add an image, we use:
 
-So now you have to put an **image** of him into your game, like you did in the [Personal Website](../personal_website/) workshop.
+```html
+<img src="[URL]" />
+```
 
-To add an image we use `<img src="[URL]">`.
-
-When you are done, you should see Bigfoot in the live preview, like this:
+When you're done, you should see Bigfoot in the live preview, like this:
 
 ![](img/bigfoot_image.png)
 
@@ -101,9 +66,9 @@ And the HTML looks like this:
 ```html
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <head></head>
   <body>
-    <img src="assets/bigfoot.png" />
+    <img src="bigfoot.png" />
   </body>
 </html>
 ```
@@ -126,6 +91,12 @@ Clicking the first link takes you [here](http://www.w3schools.com/jsref/event_on
 
 Aha! It looks like whenever you put `onclick="myFunction()"` on a tag such as `button` or `img`, it executes the [**JavaScript**](http://www.w3schools.com/js/) code you put in the quotes whenever that tag is clicked on.
 
+For one moment:
+
+- HTML controls the content of the page
+- CSS controls the styling & layout
+- JavaScript controls the functionality & interactivity
+
 We want our JavaScript code to display a pop-up box saying you've won. So now let's Google "[JavaScript pop-up box](https://www.google.com/search?q=javascript+popup+box)":
 
 > ![](img/google_javascript_popup_box.png)
@@ -137,40 +108,32 @@ The first link takes you [here](http://www.w3schools.com/js/js_popup.asp):
 It looks like when you run `alert("I am an alert box!");` it opens a pop-up box showing the text inside the quotes. So if we put 2 and 2 together, our `img` tag should look like this:
 
 ```html
-<img src="assets/bigfoot.png" onclick="alert("Woohoo, you win! You found
-Bigfoot!");">
+<img src="bigfoot.png" onclick="alert("Woohoo, you win! You found Bigfoot!");">
 ```
 
 Change your `img` tag to look like that too, then click Bigfoot in the live preview.
 
 Oops, it didn't work! Why could that be?
 
-Another important skill when hacking is knowing how to fix stuff when they go wrong. Cloud9 gives a couple hints:
-
-1. It displayed the message "Unable to update preview: unmatched tags detected"
-2. The quotation mark after `alert(` has a red underline.
+Another important skill when hacking is knowing how to fix stuff when they go wrong. repl.it gives you a hint: the quotation mark after `alert(` has a red underline.
 
 Here's what went wrong. We expected the quotation mark after `alert(` to indicate the beginning of the message, but what it actually did was indicate the end of the `onclick` attribute.
 
 Here's a little trick you can use to fix that. In JavaScript, you can use either `"` or `'` around text (the technical term is a [**string**](http://www.w3schools.com/js/js_strings.asp)). So change the inner quotes to single quotes, like this:
 
+```
     onclick="alert('Woohoo, you win! You found Bigfoot!');"
+```
 
 And now clicking Bigfoot should display the message.
 
-At this point, `index.html` should look like this:
+At this point, your `<img>` should look like this:
 
 ```html
-<!DOCTYPE html>
-<html>
-  <head> </head>
-  <body>
-    <img
-      src="assets/bigfoot.png"
-      onclick="alert('Woohoo, you win! You found Bigfoot!');"
-    />
-  </body>
-</html>
+<img
+  src="bigfoot.png"
+  onclick="alert('Woohoo, you win! You found Bigfoot!');"
+/>
 ```
 
 Congratulations, you have a working game now! You're all done! Now you can go to [FGL](https://fgl.com) and sell your game to sponsors and make millions of dollars!
@@ -181,9 +144,7 @@ I guess you spotted the problem already. This game is way too easy! I mean, Bigf
 
 ### Putting Bigfoot Back in His Natural Habitat
 
-That must be because we took him out of his natural habitat. You see, normally Bigfoot is hiding in a dense forest, making it hard to find him. Let's fix that by adding a **background image** of a forest. We have one in `assets`:
-
-    assets/forest.jpg
+That must be because we took him out of his natural habitat. You see, normally Bigfoot is hiding in a dense forest, making it hard to find him. Let's fix that by adding a **background image** of a forest. We already uploaded `forest.jpg`, the image we'll use.
 
 When you are making your own projects, you won't have workshops telling the solution to every step. So this time, let's practice your Googling skills and see if you can figure out how to set that background image without being told the solution! After adding the background image, the live preview looks like this:
 
@@ -191,25 +152,12 @@ When you are making your own projects, you won't have workshops telling the solu
 
 When you are done, or if you are simply really stuck, we've included a sample solution below. (But there are other ways to add the background image, so if your solution doesn't match mine, that's OK.)
 
-_Sample solution:_
+Sample solution, in `style.css`:
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      body {
-        background-image: url('assets/forest.jpg');
-      }
-    </style>
-  </head>
-  <body>
-    <img
-      src="assets/bigfoot.png"
-      onclick="alert('Woohoo, you win! You found Bigfoot!');"
-    />
-  </body>
-</html>
+```css
+body {
+  background-image: url('/forest.jpg');
+}
 ```
 
 There are several ways to add the background image. Here is one way:
@@ -217,7 +165,7 @@ There are several ways to add the background image. Here is one way:
 1. Google `html background image`.
 2. The first link brings you here: http://www.w3schools.com/cssref/pr_background-image.asp
 3. There is an example near the top. You can click "Try it yourself" to see the full HTML of the example.
-4. Add the <style> tag in the <head> like in the example, but replace the URL with the picture of the forest. You do not need the background-color rule since we are already setting a background image.
+4. Open the `style.css` file like in the example, but replace the URL with the picture of the forest. You do not need the background-color rule since we are already setting a background image.
 
 ### Setting Bigfoot's Location
 
@@ -225,13 +173,7 @@ That's much better! But the top left corner is a pretty boring place to hide Big
 
 ![](img/bigfoot_position.png)
 
-.  
-.  
-.  
-.  
-.
-
-OK, got it working? If you need help, try asking your neighbor or a club leader for hints.
+OK, got it working? If you need help, try asking your neighbor or workshop leader for hints.
 
 #### Sample Solution
 
@@ -255,22 +197,16 @@ h2 {
 }
 ```
 
-But we don't want to position an `<h2>` element. We want to position an `<img>` element. So we type the code above into the `<style>` section, but typing `img` instead of `h2`.
+But we don't want to position an `<h2>` element. We want to position an `<img>` element. So we type the code above into the `style.css` file, but typing `img` instead of `h2`.
 
-### Loading Bigfoot before the background
+### Loading Bigfoot Before the Background
 
 Right now Big Foot loads before the background image does unless you have a fast internet connection and we don't want that! We're going to fix that by running code only after the page has loaded.
 
-Just like how we ran code when someone clicked using `onclick`, we're going to call a function once the page has loaded with `onload`. You can look this up by Googling "on page load". Lets go ahead and make a script tag for our new function inside the page head `loadBigFoot()`.
+Just like how we ran code when someone clicked using `onclick`, we're going to call a function once the page has loaded with `onload`. You can look this up by Googling "on page load". Lets go ahead and make a script tag for our new function in the JavaScript file, `script.js`:
 
-```html
-<head>
-  <!-- Other stuff in the head goes here -->
-
-  <script>
-    function loadBigFoot() {}
-  </script>
-</head>
+```js
+function loadBigFoot() {}
 ```
 
 We should also go ahead and add the `onload` attribute to the body tag. There are a couple more things we have to do. First, go ahead and get rid of `src` tag, as we will be adding that with the function. Then, add an `id` to the `img` tag. This is so we can change the `src` attribute after the page loads.
@@ -283,72 +219,23 @@ We should also go ahead and add the `onload` attribute to the body tag. There ar
 
 Now, lets get a hold of the `img` tag and change its `src` to our friend Big Foot.
 
-```javascript
-<script>
-  function loadBigFoot(){' '}
-  {(document.getElementById('bigFoot').src = 'assets/bigfoot.png')}
-  // ...
-</script>
+```js
+function loadBigFoot() {
+  document.getElementById('bigFoot').src = 'bigfoot.png'
+}
 ```
 
 Big Foot should now load after the background. We did it!
 
-When we're done, `index.html` looks like
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      body {
-        background-image: url('assets/forest.jpg');
-      }
-      img {
-        position: absolute;
-        left: 100px;
-        top: 150px;
-      }
-    </style>
-    <script>
-      function loadBigFoot() {
-        document.getElementById('bigFoot').src = 'assets/bigfoot.png'
-      }
-    </script>
-  </head>
-  <body onload="loadBigFoot()">
-    <img id="bigFoot" onclick="alert('Woohoo, you win! You found Bigfoot!');" />
-  </body>
-</html>
-```
-
-But feel free to experiment with the `left` and `top` values to find a good place to hide Bigfoot.
+Feel free to experiment with the `left` and `top` values to find a good place to hide Bigfoot.
 
 ### Celebrate!
 
-Congratulations, you have a working game! You're all done! ![](img/celebrate_charlie_brown.gif)
+Congratulations, you have a working game! You're all done!
+
+![Charlie Brown celebrating](img/celebrate_charlie_brown.gif)
 
 Most importantly, by practicing Googling stuff, you are on your way toward becoming an independent hacker.
-
-## Sharing with the Community
-
-Like with previous workshops, let's set up a link that you can share with others!
-
-1. Open the terminal by pressing `alt + t` on the keyboard at the same time. Then type in the following commands:
-
-- `git add --all`
-- `git commit -am "Find Bigfoot workshop"`
-- `git push origin master`
-
-2. GitHub will now ask you for your username and password.
-
-- Go ahead and enter your username and then press the enter.
-- Then enter your password and press enter. _Note that the characters don't show up on the screen but rest assured, you are still typing._
-
-3. Now try to view your game by going to `username.github.io/find_bigfoot`
-
-   > Make sure to change `username` to your own username
-
-4. Post the link to the [`#shipit`](https://hackclub.slack.com/messages/shipit/) on Slack to share your awesome game!
 
 ## Hacking
 
