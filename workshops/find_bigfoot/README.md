@@ -201,7 +201,7 @@ But we don't want to position an `<h2>` element. We want to position an `<img>` 
 
 ### Loading Bigfoot Before the Background
 
-Right now Big Foot loads before the background image does unless you have a fast internet connection and we don't want that! We're going to fix that by running code only after the page has loaded.
+Right now Bigfoot loads before the background image does unless you have a fast internet connection and we don't want that! We're going to fix that by running code only after the page has loaded.
 
 Just like how we ran code when someone clicked using `onclick`, we're going to call a function once the page has loaded with `onload`. You can look this up by Googling "on page load". Lets go ahead and make a script tag for our new function in the JavaScript file, `script.js`:
 
@@ -217,7 +217,7 @@ We should also go ahead and add the `onload` attribute to the body tag. There ar
 </body>
 ```
 
-Now, lets get a hold of the `img` tag and change its `src` to our friend Big Foot.
+Now, lets get a hold of the `img` tag and change its `src` to our friend Bigfoot.
 
 ```js
 function loadBigFoot() {
@@ -225,13 +225,13 @@ function loadBigFoot() {
 }
 ```
 
-Big Foot should now load after the background. We did it!
+Bigfoot should now load after the background. We did it!
 
 Feel free to experiment with the `left` and `top` values to find a good place to hide Bigfoot.
 
 ## Making The Game Harder
 
-Now we have another problem. This game is(...) too easy. Once somebody plays it once, they’ll be able to beat it over and over again with no challenge! We need to write a function that will move bigfoot randomly around the page after you beat it.
+Now we have another problem. This game is… too easy. Once somebody plays it once, they’ll be able to beat it over and over again with no challenge! We need to write a function that will move bigfoot randomly around the page after you beat it.
 
 Open your script.js file and let’s make a new function `moveBigFoot();`
 
@@ -249,7 +249,7 @@ function moveBigFoot() {
 
 This will help us out later on.
 
-Now look at how we positioned bigfoot in the css file. We have two numbers: Big Foot's position from the top and his position from the left. Therefore, those are the two numbers that have to be random so he can move around. Try and google and figure out a way to generate a random number. 
+Now look at how we positioned bigfoot in the css file. We have two numbers: Bigfoot's position from the top and his position from the left. Therefore, those are the two numbers that have to be random so he can move around. Try and google and figure out a way to generate a random number. 
 
 There’s a couple different ways to solve this, but we googled “generate a random number in javascript” and went to the first result, which told us to use `Math.random()`
 
@@ -283,7 +283,7 @@ function moveBigFoot() {
 
 This will take any images that follow the parameters of the picture variable (which is just finding the `id` `bigFoot`) and set the top and left position to the random numbers that it generates.
 
-Next, back to our html file. We need to make it so that whenever we win the game and find Big Foot, the moveBigFoot function will be called and it’ll move him to a new location based on the two numbers we just generated.
+Next, back to our html file. We need to make it so that whenever we win the game and find Bigfoot, the moveBigFoot function will be called and it’ll move him to a new location based on the two numbers we just generated.
 
 Let’s create a new onclick method in our `<img>` tag in the html file.
 
@@ -330,7 +330,7 @@ Did the alert pop up? Yes?
 
 Nice!
 
-And now did Big Foot move?
+And now did Bigfoot move?
 
 Nice again - great work!
 
