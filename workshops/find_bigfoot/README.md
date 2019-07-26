@@ -330,7 +330,7 @@ Did the alert pop up? Yes?
 
 Nice!
 
-And now did Big Foot Move?
+And now did Big Foot move?
 
 Nice again - great work!
 
