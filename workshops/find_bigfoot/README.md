@@ -229,6 +229,106 @@ Big Foot should now load after the background. We did it!
 
 Feel free to experiment with the `left` and `top` values to find a good place to hide Bigfoot.
 
+## Making The Game Harder
+
+Now we have another problem. This game is...too easy. Once somebody plays it once, they’ll be able to beat it over and over again with no challenge! We need to write a function that will move bigfoot randomly around the page after you beat it.
+
+Open your script.js file and let’s make a new function `moveBigFoot();`
+```js
+function moveBigFoot() {
+}
+```
+
+Now remember, we’re trying to move bigfoot randomly around the screen. So the first thing we need to do is make a variable that will get our image. Like earlier, we’ll use “document.getElementbyId.”
+```js
+function moveBigFoot() {
+       var picture = document.getElementById('bigFoot')
+}
+```
+
+This will help us out later on.
+
+Now look at how we positioned bigfoot in the css file. We have two numbers: Big Foot's position from the top and his position from the left. Therefore, those are the two numbers that have to be random so he can move around. Try and google and figure out a way to generate a random number. 
+
+There’s a couple different ways to solve this, but we googled “generate a random number in javascript” and went to the first result, which told us to use `Math.random()`
+
+So since we have two numbers to generate (for `left:` and `top:`) we need to create two new variables for those values.
+
+```js
+function moveBigFoot() {
+       var picture = document.getElementById('bigFoot')
+
+       var x = Math.random()*300;
+       var y = Math.random()*300;
+}
+```
+This will generate two random numbers between 0-300 whenever the function is run.
+
+Now that we have our two numbers, we have to actually make them apply to our picture variable. Here, we’ll use the style left and style top property.
+
+```js
+function moveBigFoot() {
+       var picture = document.getElementById('bigFoot')
+
+       var x = Math.random()*300;
+       var y = Math.random()*300;
+      
+       picture.style.top = x + 'px';
+       picture.style.left = y + 'px';
+       }
+}
+```
+
+This will take any images that follow the parameters of the picture variable (which is just finding the `id` `bigFoot`) and set the top and left position to the random numbers that it generates.
+
+Next, back to our html file. We need to make it so that whenever we win the game and find Big Foot, the moveBigFoot function will be called and it’ll move him to a new location based on the two numbers we just generated.
+
+Let’s create a new onclick method in our `<img>` tag in the html file.
+
+```html
+<img id="bigFoot" onclick='alert'('Woohoo, you win! You found Bigfoot!')
+	onclick = "moveBigFoot()";
+/>
+```
+
+Now let’s try and run that and see if it works. 
+
+Did it? 
+
+No? 
+
+Okay. Let's see what we can do about that.
+
+It looks like having two onclick methods is confusing the program. It will make it a lot easier and more efficient to move the alert to the moveBigFoot() function, so that it will all happen at once. 
+Let’s take out the `alert` in the `img` tag and put it in our moveBigFoot() function
+
+So now, our new `<img>`in the html file should just look like this
+```html
+<img id="bigFoot" onclick = "moveBigFoot()"; />
+```
+
+And our `moveBigFoot()` function in scripts.js should look like this
+```js 
+function moveBigFoot() {
+       alert('Woohoo, you win! You found Bigfoot!')
+       var picture = document.getElementById('bigFoot')
+
+       var x = Math.random()*300;
+       var y = Math.random()*300;
+      
+       picture.style.top = x + 'px';picture.style.left = y + 'px';
+       }
+```
+Now let's try it. Go ahead and click on bigfoot. 
+
+Did the alert pop up? Yes?
+
+Nice!
+
+And now did Big Foot Move?
+
+Nice again - great work!
+
 ### Celebrate!
 
 Congratulations, you have a working game! You're all done!
