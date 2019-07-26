@@ -231,9 +231,10 @@ Feel free to experiment with the `left` and `top` values to find a good place to
 
 ## Making The Game Harder
 
-Now we have another problem. This game is...too easy. Once somebody plays it once, they’ll be able to beat it over and over again with no challenge! We need to write a function that will move bigfoot randomly around the page after you beat it.
+Now we have another problem. This game is(...) too easy. Once somebody plays it once, they’ll be able to beat it over and over again with no challenge! We need to write a function that will move bigfoot randomly around the page after you beat it.
 
 Open your script.js file and let’s make a new function `moveBigFoot();`
+
 ```js
 function moveBigFoot() {
 }
@@ -262,6 +263,7 @@ function moveBigFoot() {
        var y = Math.random()*300;
 }
 ```
+
 This will generate two random numbers between 0-300 whenever the function is run.
 
 Now that we have our two numbers, we have to actually make them apply to our picture variable. Here, we’ll use the style left and style top property.
@@ -303,11 +305,13 @@ It looks like having two onclick methods is confusing the program. It will make 
 Let’s take out the `alert` in the `img` tag and put it in our moveBigFoot() function
 
 So now, our new `<img>`in the html file should just look like this
+
 ```html
 <img id="bigFoot" onclick = "moveBigFoot()"; />
 ```
 
 And our `moveBigFoot()` function in scripts.js should look like this
+
 ```js 
 function moveBigFoot() {
        alert('Woohoo, you win! You found Bigfoot!')
@@ -319,6 +323,7 @@ function moveBigFoot() {
        picture.style.top = x + 'px';picture.style.left = y + 'px';
        }
 ```
+
 Now let's try it. Go ahead and click on bigfoot. 
 
 Did the alert pop up? Yes?
