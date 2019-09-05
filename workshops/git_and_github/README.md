@@ -1,7 +1,7 @@
 ---
 name: Git and GitHub
 description: Introduction to using Git and GitHub
-author: "@nguyenbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram"
+author: "@notbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram"
 group: retired
 order: 2
 ---
@@ -284,7 +284,7 @@ on their servers (https://pages.github.com/).
 7. Go online to `https://[username].github.io/[reponame]`.
   - Your website is now online! Enter the URL using your credentials and it
     should show up (wait 30 seconds or more if it doesn't).
-    - E.g. `https://nguyenbrian.github.io/example2`.
+    - E.g. `https://notbrian.github.io/example2`.
   - Note: The repo name is different from the branch name.
     - **The URL has is case sensitive - ensure the repo name is exactly the
       same one you put into your URL.**
@@ -323,7 +323,7 @@ on their servers (https://pages.github.com/).
   - Click the green button that says "Create repository".
   - Copy the .git link it provides — that's your `link to repo`.
   - It will be something similar looking to:
-    https://github.com/nguyenbrian/example.git
+    https://github.com/notbrian/example.git
 
     ![create a repo on GitHub](img/github_create_repo.gif)
 
@@ -345,7 +345,7 @@ on their servers (https://pages.github.com/).
       - i.e. `github`
     - **[link to repo]** is where you paste the link from earlier.
       - Again, don't include the square brackets.
-    - **Example command**: `git remote add github https://github.com/nguyenbrian/example.git`.
+    - **Example command**: `git remote add github https://github.com/notbrian/example.git`.
 
     ![git remote add](img/git_remote_add.gif)
 
@@ -406,7 +406,7 @@ on their servers (https://pages.github.com/).
 7. Go online to `https://[username].github.io/[reponame]`.
   - Your website is now online! Enter the URL using your credentials and it
     should show up (wait 30 seconds or more if it doesn't).
-    - E.g. https://nguyenbrian.github.io/example2
+    - E.g. https://notbrian.github.io/example2
   - Note: The repo name is different from the branch name.
     - **The URL has is case sensitive -- ensure the repo name is exactly the
       same one you put into your URL**.
@@ -487,7 +487,7 @@ pull requests and submitting issues.
 
 ## Follow Us on GitHub!
 
-- Brian: https://github.com/nguyenbrian
+- Brian: https://github.com/notbrian
 - Jevin: https://github.com/JevinSidhu
 - Udit: https://github.com/uditdesai
 - Vaibhav: https://github.com/vaibhavyadaram
