@@ -3,7 +3,7 @@ name: The Dawgshop
 description: Dynamically modify your page with jQuery, dawg
 author: '@nguyenbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram'
 group: experimental
-order: 7
+order: 2
 ---
 
 # The Dawgshop

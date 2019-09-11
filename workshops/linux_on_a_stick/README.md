@@ -3,7 +3,7 @@ name: Linux on a Stick
 description: Portable Linux system
 author: "@retiform"
 group: experimental
-order: 5
+order: 1
 ---
 
 # Linux on a Stick (Portable Linux)
@@ -56,9 +56,9 @@ If you are on Ubuntu use [Unetbootin](https://unetbootin.github.io/).
 
 First, download your live USB maker of choice and the ISO of the distro you plan to use. For this part of this tutorial, I will be using Linux Live USB Creator, but the steps should be roughly the same for all of the above programs.
 
-Then plug your USB drive into your computer, and format it to FAT32.  (You can also format it to NTFS skip the step for going over 4 GB of storage, but this may cause issues with  LiLi). 
+Then plug your USB drive into your computer, and format it to FAT32.  (You can also format it to NTFS skip the step for going over 4 GB of storage, but this may cause issues with  LiLi).
 
-Next open your program of choice, select the USB drive you intend to use **Be careful: DO NOT SELECT YOUR HARD DRIVE, that will wipe all the files on your main hard drive** I also recommend unplugging all of your USB drives except for the one you are using, to avoid accidentally wiping important data. 
+Next open your program of choice, select the USB drive you intend to use **Be careful: DO NOT SELECT YOUR HARD DRIVE, that will wipe all the files on your main hard drive** I also recommend unplugging all of your USB drives except for the one you are using, to avoid accidentally wiping important data.
 
 Select the ISO file you downloaded earlier, and make sure to set as much persistent storage as you want under the persistent storage option.  **Do not hit the download button in LiLi/UUI** pressing that will redownload the ISO image, and will download an outdated version of it.
 
@@ -78,7 +78,7 @@ Insert the USB Drive into the computer you want to boot onto (you must have acce
 
 To make sure you did everything correctly, make a file somewhere, and then reboot, and see if it is still there.
 
-If it is still there: awesome! 
+If it is still there: awesome!
 
 
 ![awesome](https://media.giphy.com/media/14sy6VGAd4BdKM/giphy.gif)

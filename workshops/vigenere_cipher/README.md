@@ -3,7 +3,7 @@ name: 'Vigenere Cipher'
 description: 'Make a cryptographic cipher with python'
 author: '@polytroper'
 group: 'experimental'
-order: 11
+order: 7
 begin: 'https://repl.it/@polytrope/vigenere-cipher-starter'
 ---
 
