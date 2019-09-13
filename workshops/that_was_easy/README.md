@@ -2,8 +2,8 @@
 name: That Was Easy
 description: Website with clickable buttons that make sounds
 author: "@jkwok91"
-group: "experimental"
-order: 5
+group: retired
+order: 16
 ---
 
 # That Was Easy Workshop
