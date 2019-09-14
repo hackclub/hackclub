@@ -3,7 +3,7 @@ name: Geometric Pattern
 description: Generate geometric patterns using p5.js
 author: '@jkwok91'
 group: start
-order: 3
+order: 6
 ---
 
 # Geometric Pattern

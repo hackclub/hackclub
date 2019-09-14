@@ -3,7 +3,7 @@ name: 'Synth'
 description: 'Let’s make a synth pad with Tone.js'
 author: '@polytroper'
 group: 'start'
-order: 8
+order: 3
 begin: 'https://repl.it/languages/html'
 ---
 
