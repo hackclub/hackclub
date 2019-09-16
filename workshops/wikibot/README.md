@@ -3,7 +3,7 @@ name: WikiBot
 description: Build a WhatsApp bot with Twilio APIs, in 30 minutes 🕐
 author: "@jajoosam"
 group: experimental
-order: 15
+order: 9
 ---
 
 # WikiBot 💬 🤖

@@ -3,7 +3,7 @@ name: Swiper
 description: Introduction to iOS game development with Swift
 author: "@zach-cmiel"
 group: experimental
-order: 9
+order: 4
 ---
 
 # Swiper

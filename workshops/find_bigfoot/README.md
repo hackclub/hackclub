@@ -1,9 +1,9 @@
 ---
 name: Find Bigfoot
 description: Simple game to find Bigfoot using HTML, CSS and JS
-author: '@ad510'
-group: experimental
-order: 11
+author: '@ad510, @qmogh'
+group: "start"
+order: 2
 ---
 
 # Find Bigfoot
@@ -249,7 +249,7 @@ function moveBigFoot() {
 
 This will help us out later on.
 
-Now look at how we positioned bigfoot in the css file. We have two numbers: Bigfoot's position from the top and his position from the left. Therefore, those are the two numbers that have to be random so he can move around. Try and google and figure out a way to generate a random number. 
+Now look at how we positioned bigfoot in the css file. We have two numbers: Bigfoot's position from the top and his position from the left. Therefore, those are the two numbers that have to be random so he can move around. Try and google and figure out a way to generate a random number.
 
 There’s a couple different ways to solve this, but we googled “generate a random number in javascript” and went to the first result, which told us to use `Math.random()`
 
@@ -274,7 +274,7 @@ function moveBigFoot() {
 
        var x = Math.random()*300;
        var y = Math.random()*300;
-      
+
        picture.style.top = x + 'px';
        picture.style.left = y + 'px';
        }
@@ -293,15 +293,15 @@ Let’s create a new onclick method in our `<img>` tag in the html file.
 />
 ```
 
-Now let’s try and run that and see if it works. 
+Now let’s try and run that and see if it works.
 
-Did it? 
+Did it?
 
-No? 
+No?
 
 Okay. Let's see what we can do about that.
 
-It looks like having two onclick methods is confusing the program. It will make it a lot easier and more efficient to move the alert to the moveBigFoot() function, so that it will all happen at once. 
+It looks like having two onclick methods is confusing the program. It will make it a lot easier and more efficient to move the alert to the moveBigFoot() function, so that it will all happen at once.
 Let’s take out the `alert` in the `img` tag and put it in our moveBigFoot() function
 
 So now, our new `<img>`in the html file should just look like this
@@ -312,19 +312,19 @@ So now, our new `<img>`in the html file should just look like this
 
 And our `moveBigFoot()` function in scripts.js should look like this
 
-```js 
+```js
 function moveBigFoot() {
        alert('Woohoo, you win! You found Bigfoot!')
        var picture = document.getElementById('bigFoot')
 
        var x = Math.random()*300;
        var y = Math.random()*300;
-      
+
        picture.style.top = x + 'px';picture.style.left = y + 'px';
        }
 ```
 
-Now let's try it. Go ahead and click on bigfoot. 
+Now let's try it. Go ahead and click on bigfoot.
 
 Did the alert pop up? Yes?
 

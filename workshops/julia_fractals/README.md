@@ -251,9 +251,9 @@ function pointToColor(point) {
 // pixelToPoint + the rest of your script...
 ```
 
-We will also need two more functions, called `drawPixel` and `draw`. 
+We will also need two more functions, called `drawPixel` and `draw`.
 
-`drawPixel` will draw a given color at a given pixel. `draw` will 
+`drawPixel` will draw a given color at a given pixel. `draw` will
 
 ```javascript
 // pixelToPoint + the rest of your script...
@@ -1372,7 +1372,7 @@ update()
 
 ## Epilogue
 
-There are all kinds of fractals. 
+There are all kinds of fractals.
 
 You can make [fractal trees](https://hackclub.com/workshops/tree_machine):
 

@@ -3,7 +3,7 @@ name: 'Thunderstorm'
 description: 'A thunderstorm in your browser'
 author: '@polytroper'
 group: 'start'
-order: 9
+order: 5
 begin: 'https://repl.it/@polytrope/thunderstorm-starter'
 ---
 

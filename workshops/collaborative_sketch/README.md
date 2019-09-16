@@ -3,7 +3,7 @@ name: Sketch Together
 description: Real-time collaborative drawing pad using p5.js
 author: '@jkwok91'
 group: start
-order: 6
+order: 9
 ---
 
 # Sketch Together
