@@ -12,26 +12,26 @@ order: 9
 A webserver is a little bit of software that lets you send websites -- and all of the files that they need -- to anyone who connects to your server.
 I'll admit, making a webserver seems a little prosaic.
 It's not even immediately evident *why* you'd want to bother making one.
-In truth, I'm making this workshop as the beginning of a tutorial series I'm running on how to make a webgame with networked multiplayer, but there really are plenty of other reasons to make your own webserver.
+In truth, I'm making this workshop as the beginning of a tutorial series I'm running on how to make a webgame with networked multiplayer, but there are plenty of other reasons to make your own webserver.
 
 First of all, I think you should do this workshop just to get more familiar with navigating through your own filesystem using the **command line**, if you aren't already.
 I introduce a few commands as I go through, and once you have these you're only a couple extra googles away from becoming fairly proficient at using the command line.
 That can make you a good bit faster when manipulating the filesystem, especially if you're already a fast typist.
 
-**Node.js** is a pretty cool technology for doing lots of things, especially developing web related software. This project is an awesome introduction to node,
+**Node.js** is a pretty cool technology for doing lots of things, especially developing web related software. This project is an awesome introduction to node
 because it walks you through configuring a brand new node project.
 Surely that could come in handy at a Hackathon some time in the future, when you want to use a library for Machine Learning or a library for some other fancy concept that uses Node.
 
 **Express** is awesome for quickly hosting files from your own computer.
 There are a bunch of other ways to host files from your computer, including some command line interfaces that don't require any code at all,
-but because Express is just Node.js code it offers a lot of opportunities for doing some fairly complex configuration and web app serving.
+but because Express is just Node.js code, it offers a lot of opportunities for doing some fairly complex configuration and web app serving.
 Perhaps it's overkill for a webgame which has fairly simple webserver needs, but I like to keep my options open in case I want to add some pages to my app for making an account or looking at your player stats and whatnot.
 
-`Repl.it`/`Glitch`/`Github Pages` do offer their own interfaces you can use to get your files hosted, but here's a few reasons why you'd want to write your own with Express:
+`Repl.it`/`Glitch`/`Github Pages` do offer their own interfaces you can use to get your files hosted, but here are a few reasons why you'd want to write your own with Express:
 - **More configuration**. Using express, you can very carefully tweak how your files are served.
 - **Control over hosting**\*, Express isn't tied to any specific platform like the built in hosting of Glitch and Repl.it. This means that you can host your app on whatever hardware you want.
 
-\* You can still get Repl.it or Glitch (but not Github Pages, it's more limited) to host your Node/Express server for you, you don't have to use their hosting solutions when you make your project on their platforms.
+\* You can still get Repl.it or Glitch (but not Github Pages, it's more limited) to host your Node/Express server for you. You don't have to use their hosting solutions when you make your project on their platforms.
 
 ### Installing Node.js
 You can get Node.js [here](https://nodejs.org/en/download/).
@@ -61,7 +61,7 @@ The client uses the frontend to communicate with the backend and understand the 
 
 ## Getting Started: Making the Matrix
 We'll start with the backend. Because the backend tells the frontend what to render, it makes sense to start at the backend and work our way out.
-I'll be doing this on my local filesystem using the command line, but if you're more comfortable in repl.it feel free to follow along there.
+I'll be doing this on my local filesystem using the command line, but if you're more comfortable in repl.it, feel free to follow along there.
 Start with a Node.js repl, if you are.
 
 ### Making the Project Folder
@@ -284,3 +284,5 @@ Along the way, you also learned some terminal commands and how to start a new No
 Check in next time,
 where we'll establish a websockets connection between the backend and the frontend,
 so that the website can be updated with new information from the backend as it's running.
+
+Many thanks to Andrew Gao, he helped me, tremendously,,, with the grammars!
