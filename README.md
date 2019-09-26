@@ -15,7 +15,7 @@ Quick Hack Club links:
 | Join the Slack                  | https://slack.hackclub.com             |
 | See our workshops               | https://workshops.hackclub.com         |
 | See the club guide              | [`clubs/README.md`](clubs/README.md)   |
-| Start a club                    | https://hackclub.com/start             |
+| Apply to start a club           | https://apply.hackclub.com             |
 | See our website                 | https://hackclub.com                   |
 | See our contribution guidelines | [`CONTRIBUTING.md`](CONTRIBUTING.md)   |
 | Read our code of conduct        | [`CONDUCT.md`](CONDUCT.md)             |
