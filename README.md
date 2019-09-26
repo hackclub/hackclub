@@ -19,6 +19,7 @@ Quick Hack Club links:
 | See our website                 | https://hackclub.com                   |
 | See our contribution guidelines | [`CONTRIBUTING.md`](CONTRIBUTING.md)   |
 | Read our code of conduct        | [`CONDUCT.md`](CONDUCT.md)             |
+| Use our logos and banners       | [`internals/logos/`](internals/logos/)|
 
 ## Contributing
 
