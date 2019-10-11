@@ -9,7 +9,7 @@ Hack Club is an entirely open source organization (even [our finances](https://g
 [![Build Status](https://circleci.com/gh/hackclub/hackclub.svg?style=shield)](https://circleci.com/gh/hackclub/hackclub)
 
 Quick Hack Club links:
-
+gjjdghnnzzgkzhsjjzyjzbz
 | Action                          | Link                                   |
 | ------------------------------- | -------------------------------------- |
 | Join the Slack                  | https://slack.hackclub.com             |
