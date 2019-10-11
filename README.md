@@ -14,7 +14,7 @@ Quick Hack Club links:
 | ------------------------------- | -------------------------------------- |
 | Join the Slack                  | https://slack.hackclub.com             |
 | See our workshops               | https://workshops.hackclub.com         |
-| See the club guide              | [`clubs/README.md`](clubs/README.md)   |
+| See the club guide     one edied         | [`clubs/README.md`](clubs/README.md)   |
 | Apply to start a club           | https://apply.hackclub.com             |
 | See our website                 | https://hackclub.com                   |
 | See our contribution guidelines | [`CONTRIBUTING.md`](CONTRIBUTING.md)   |
@@ -40,7 +40,7 @@ If you need any help, please contact us at team@hackclub.com or on our [Slack](h
 [3]: https://help.github.com/articles/fork-a-repo/
 [4]: https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
 
-## Banners
+## Banners of uackclub
 
 Now you can add a Hack Club banner to your club or personal website! Just copy and paste one of these snippets of code into your site's HTML.
 
