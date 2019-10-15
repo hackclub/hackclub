@@ -13,12 +13,14 @@ So here you are– you've got a website on repl.it with a URL that sucks. Mine i
 ![](img/old_site.png)
 
 > That domain sucks!
-> - you
+> — you
+
+This workshop will show you how to turn it into something nice, like this:
 
 ![](img/new_site.png)
 
 > ![](img/nice.gif)
-> - people you show your domain to
+> — people you show your domain to
 
 This workshop will take about 20-30 minutes spread out over a day. You'll get a free domain from the Hack Pack, but that will take 24-48 hours to be approved.
 
