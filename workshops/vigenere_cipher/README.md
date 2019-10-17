@@ -31,7 +31,7 @@ Simple: first you turn each character into a _number_.
 
 ## The Rotation Cipher
 
-The Vigenere Cipher is an advanced version of the very simple **Rotation Cipher**.
+The Vigenere Cipher is an advanced version of the very simple **Rotation Cipher**. It was created in 1508 by Johannes Trithemius, who also created a tabula recta to help decode and encode the cipher.
 
 A Rotation Cipher _rotates_ each character by _adding_ it to another character.
 
