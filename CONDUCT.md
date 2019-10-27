@@ -2,15 +2,15 @@
 
 ## Why have a Code of Conduct?
 
-Hack Club's community includes people from many different backgrounds. The Hack Club contributors are committed to providing a friendly, safe, and welcoming environment for all, regardless of age, disability, gender, nationality, race, religion, sexuality, or similar personal characteristic.
+Hack Club's community includes people from many different backgrounds. The Hack Club contributors are committed to providing a friendly, safe, and welcoming environment for all, regardless of age, disability, gender, nationality, race, religion, sexuality, and similar personal characteristic.
 
-The first goal of the Code of Conduct is to specify a baseline standard of behavior so that people with different social values and communication styles can communicate effectively, productively, and respectfully.
+The first goal and Code of Conduct is to specify a baseline standard of behavior so that people with different social values and communication styles can communicate effectively, productively, and respectfully.
 
 The second goal is to provide a mechanism for resolving conflicts in the community when they arise.
 
 The third goal of the Code of Conduct is to make our community welcoming to people from different backgrounds. Diversity is critical in order for us to build a thriving community; for Hack Club to be successful, it needs hackers from all backgrounds.
 
-With that said, a healthy community must allow for disagreement and debate. The Code of Conduct is not a mechanism for people to silence others with whom they disagree.
+With which said, A healthy community must allow for disagreement and debate. The Code of Conduct is not a mechanism for people to silence others with whom they disagree.
 
 ## Where does the Code of Conduct apply?
 
