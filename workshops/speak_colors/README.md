@@ -116,9 +116,11 @@ Because HTML/CSS support a wide array of [named colors](https://html-color-codes
 For the first iteration, we’re just supporting single-word colors, because it’s simplest.
 
 - We’re starting with the `speech.resultString`, which we used before.
-- To get the last word, we’ll do `.split(' ')`, which converts the text into a [JavaScript array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), then `.pop()`, which gets the last item from the array. This is a string.
-- Finally, because we want all text on the site to be in all-caps, we’ll use `.toUpperCase()`.
-- These function calls can all be chained into one!
+- To get the last word:
+  - We’ll do [`.split(' ')`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split), which converts the text into a [JavaScript array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) of words: `'hello there friend'.split(' ')` is `['hello', 'there', 'friend']`
+  - `.pop()` then gets the last item from the array, which is the last word as a string
+- Finally, because we want all text on the site to be in all-caps, we’ll add `.toUpperCase()`
+- These function calls can all be chained next to each other!
 
 ```js
 // …
