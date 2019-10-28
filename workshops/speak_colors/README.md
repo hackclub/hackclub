@@ -8,7 +8,7 @@ order: 11
 
 # Speak Colors
 
-_Note: this workshop requires Google Chrome or another browser supporting the [Web Speech API](https://caniuse.com/#feat=speech-recognition)._
+_Note: this workshop requires Google Chrome or another browser [supporting the Web Speech API](https://caniuse.com/#feat=speech-recognition)._
 
 We’ll be using [p5.js](https://p5js.org) & the p5.speech library to make something fun with web speech recognition! Say a color name out loud, & the screen will fill with that color.
 
@@ -61,7 +61,7 @@ function setup() {
 
 The page still looks empty, oops! Let’s add some initial instructions, even though they won’t do anything yet.
 
-(You can use only the last line, which calls `text()`, but the other lines make the text big, chunky, & more fun-looking.)
+(You only need the `text()` line here—you can omit the `textSize`, `textAlign` etc—but these other lines make the text more fun-looking. Feel free to change the size or font!)
 
 ```js
 function setup() {
@@ -81,7 +81,7 @@ Fantastic! Up next: the speech recognition we came here for.
 
 ## Running speech recognition
 
-The p5.speech library has [an example](https://github.com/IDMNYU/p5.js-speech/blob/master/examples/05continuousrecognition.html) of "continuous" speech recognition--that is, the mic stays active after you’ve said your first phrase, instead of being one-time.
+The p5.speech library has [an example](https://github.com/IDMNYU/p5.js-speech/blob/master/examples/05continuousrecognition.html) of "continuous" speech recognition—that is, the mic stays active after you’ve said your first phrase, instead of being one-time.
 
 Let’s set up continuous speech recognition, and display an alert when new speech is transcribed:
 
