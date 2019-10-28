@@ -94,7 +94,7 @@ will take you through setting the workspace up.
 ## What is Git?
 
 **Git is a version control system** - https://git-scm.com/
-
+- Made by github to help you keep your projects in line
 - Tracks and manages changes to your code.
 
   ![Git status](img/git_status.png)
@@ -500,3 +500,4 @@ thousands and thousands of contributors! Here are just a few:
 - https://github.com/rails/rails - Ruby on Rails
 - https://github.com/atom/atom - Atom: GitHub's very own open-source code
   editor
+- https://github.com/hackclub - Hackclub's own github workspace!
