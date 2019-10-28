@@ -2,8 +2,8 @@
 name: Speak Colors
 description: Color your screen with your voice via speech recognition.
 author: @lachlanjc
-group: experimental
-order: 11
+group: start
+order: 12
 ---
 
 # Speak Colors
