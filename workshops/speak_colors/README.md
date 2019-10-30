@@ -1,7 +1,7 @@
 ---
 name: Speak Colors
 description: Color your screen with your voice via speech recognition.
-author: @lachlanjc
+author: '@lachlanjc'
 group: start
 order: 12
 ---
