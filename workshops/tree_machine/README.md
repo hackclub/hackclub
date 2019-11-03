@@ -3,7 +3,7 @@ name: 'Tree Machine'
 description: 'Generate virtual trees with p5'
 author: '@polytroper'
 group: 'start'
-order: 10
+order: 11
 begin: 'https://repl.it/@polytrope/tree-machine-starter'
 ---
 
@@ -27,24 +27,24 @@ Your file should look like this to start:
 
 ```html
 <html>
-<head>
-<title>Tree Machine</title>
-</head>
+  <head>
+    <title>Tree Machine</title>
+  </head>
 
-<!-- Import p5 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+  <!-- Import p5 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
 
-<script>
-function setup() {
-  // Start off by creating a canvas to draw on
-  createCanvas(400, 400);
-}
+  <script>
+    function setup() {
+      // Start off by creating a canvas to draw on
+      createCanvas(400, 400)
+    }
 
-function draw() {
-  // Draw a black background
-  background(0);
-}
-</script>
+    function draw() {
+      // Draw a black background
+      background(0)
+    }
+  </script>
 </html>
 ```
 
@@ -129,35 +129,33 @@ Your whole script should look like this:
 
 ```html
 <script>
+  function setup() {
+    // Start off by creating a canvas to draw on
+    createCanvas(400, 400)
+  }
 
-function setup() {
-  // Start off by creating a canvas to draw on
-  createCanvas(400, 400);
-}
+  function draw() {
+    // Draw a black background
+    background(0)
 
-function draw() {
-  // Draw a black background
-	background(0);
+    // Set line color to white
+    stroke(255)
 
-  // Set line color to white
-  stroke(255);
+    // Move to middle-bottom of canvas
+    translate(width / 2, height)
 
-  // Move to middle-bottom of canvas
-  translate(width/2, height);
+    // Turn canvas 180°
+    rotate(Math.PI)
 
-  // Turn canvas 180°
-  rotate(Math.PI);
+    // Zoom way into the canvas
+    scale(200)
 
-  // Zoom way into the canvas
-  scale(200);
+    // Set thickness to a much smaller, zoomed-in value
+    strokeWeight(0.1)
 
-  // Set thickness to a much smaller, zoomed-in value
-  strokeWeight(0.1);
-
-  // Draw a line from (0, 0) to (0, 1)
-  line(0, 0, 0, 1);
-}
-
+    // Draw a line from (0, 0) to (0, 1)
+    line(0, 0, 0, 1)
+  }
 </script>
 ```
 
@@ -175,11 +173,10 @@ First, add a variable at the top of your script for `depth`. We’ll set it to 5
 
 ```html
 <script>
+  // How many levels of branches we will draw
+  var depth = 5
 
-// How many levels of branches we will draw
-var depth = 5;
-
-// ...the rest of the script
+  // ...the rest of the script
 </script>
 ```
 
@@ -252,55 +249,53 @@ At this point, here’s what your whole script should be:
 
 ```html
 <script>
+  // How many levels of branches we will draw
+  var depth = 5
 
-// How many levels of branches we will draw
-var depth = 5;
+  function branch(d) {
+    // Draw a line from (0, 0) to (0, 1)
+    line(0, 0, 0, 1)
 
-function branch(d) {
-  // Draw a line from (0, 0) to (0, 1)
-  line(0, 0, 0, 1);
+    // If there are any more branch levels to be drawn...
+    if (d > 1) {
+      // Move the canvas to (0, 1), the end of our new line
+      translate(0, 1)
 
-  // If there are any more branch levels to be drawn...
-  if (d > 1) {
-    // Move the canvas to (0, 1), the end of our new line
-    translate(0, 1);
+      // Zoom twice as far into the canvas
+      scale(0.5)
 
-    // Zoom twice as far into the canvas
-    scale(0.5);
-
-    // Recurse for the next branch!
-    branch(d-1);
+      // Recurse for the next branch!
+      branch(d - 1)
+    }
   }
-}
 
-function setup() {
-  // Start off by creating a canvas to draw on
-  createCanvas(400, 400);
-}
+  function setup() {
+    // Start off by creating a canvas to draw on
+    createCanvas(400, 400)
+  }
 
-function draw() {
-  // Draw a black background
-	background(0);
+  function draw() {
+    // Draw a black background
+    background(0)
 
-  // Set line color to white
-  stroke(255);
+    // Set line color to white
+    stroke(255)
 
-  // Move to middle-bottom of canvas
-  translate(200, 400);
+    // Move to middle-bottom of canvas
+    translate(200, 400)
 
-  // Turn canvas 180°
-  rotate(Math.PI);
+    // Turn canvas 180°
+    rotate(Math.PI)
 
-  // Zoom way into the canvas
-  scale(200);
+    // Zoom way into the canvas
+    scale(200)
 
-  // Set thickness to a much smaller, zoomed-in value
-  strokeWeight(0.1);
+    // Set thickness to a much smaller, zoomed-in value
+    strokeWeight(0.1)
 
-  // Start drawing branches!
-  branch(depth);
-}
-
+    // Start drawing branches!
+    branch(depth)
+  }
 </script>
 ```
 
@@ -314,14 +309,13 @@ For each new branch, the canvas rotates by a certain angle. We’ll call this an
 
 ```html
 <script>
+  // How many levels of branches we will draw
+  var depth = 5
 
-// How many levels of branches we will draw
-var depth = 5;
+  // The angle each new branch level rotates by (branches spin left/right)
+  var curl = Math.PI / 3
 
-// The angle each new branch level rotates by (branches spin left/right)
-var curl = Math.PI/3;
-
-// the rest of the script...
+  // the rest of the script...
 </script>
 ```
 
@@ -357,61 +351,59 @@ Now your entire script should look like this:
 
 ```html
 <script>
+  // How many levels of branches we will draw
+  var depth = 5
 
-// How many levels of branches we will draw
-var depth = 5;
+  // The angle each new branch level rotates by (branches spin left/right)
+  var curl = Math.PI / 3
 
-// The angle each new branch level rotates by (branches spin left/right)
-var curl = Math.PI/3;
+  function branch(d) {
+    // Draw a line from (0, 0) to (0, 1)
+    line(0, 0, 0, 1)
 
-function branch(d) {
-  // Draw a line from (0, 0) to (0, 1)
-  line(0, 0, 0, 1);
+    // If there are any more branch levels to be drawn...
+    if (d > 1) {
+      // Move the canvas to (0, 1), the end of our new line
+      translate(0, 1)
 
-  // If there are any more branch levels to be drawn...
-  if (d > 1) {
-    // Move the canvas to (0, 1), the end of our new line
-    translate(0, 1);
+      // Rotate the canvas for each new branch
+      rotate(curl)
 
-    // Rotate the canvas for each new branch
-    rotate(curl);
+      // Zoom twice as far into the canvas
+      scale(0.5)
 
-    // Zoom twice as far into the canvas
-    scale(0.5);
-
-    // Recurse for the next branch!
-    branch(d-1);
+      // Recurse for the next branch!
+      branch(d - 1)
+    }
   }
-}
 
-function setup() {
-  // Start off by creating a canvas to draw on
-  createCanvas(400, 400);
-}
+  function setup() {
+    // Start off by creating a canvas to draw on
+    createCanvas(400, 400)
+  }
 
-function draw() {
-  // Draw a black background
-	background(0);
+  function draw() {
+    // Draw a black background
+    background(0)
 
-  // Set line color to white
-  stroke(255);
+    // Set line color to white
+    stroke(255)
 
-  // Move to middle-bottom of canvas
-  translate(200, 400);
+    // Move to middle-bottom of canvas
+    translate(200, 400)
 
-  // Turn canvas 180°
-  rotate(Math.PI);
+    // Turn canvas 180°
+    rotate(Math.PI)
 
-  // Zoom way into the canvas
-  scale(200);
+    // Zoom way into the canvas
+    scale(200)
 
-  // Set thickness to a much smaller, zoomed-in value
-  strokeWeight(0.1);
+    // Set thickness to a much smaller, zoomed-in value
+    strokeWeight(0.1)
 
-  // Start drawing branches!
-  branch(depth);
-}
-
+    // Start drawing branches!
+    branch(depth)
+  }
 </script>
 ```
 
@@ -449,64 +441,62 @@ This should be your full script now:
 
 ```html
 <script>
+  // How many levels of branches we will draw
+  var depth = 5
 
-// How many levels of branches we will draw
-var depth = 5;
+  // The angle each new branch level rotates by (branches spin left/right)
+  var curl = Math.PI / 3
 
-// The angle each new branch level rotates by (branches spin left/right)
-var curl = Math.PI/3;
+  function branch(d) {
+    // Draw a line from (0, 0) to (0, 1)
+    line(0, 0, 0, 1)
 
-function branch(d) {
-  // Draw a line from (0, 0) to (0, 1)
-  line(0, 0, 0, 1);
+    // If there are any more branch levels to be drawn...
+    if (d > 1) {
+      // Move the canvas to (0, 1), the end of our new line
+      translate(0, 1)
 
-  // If there are any more branch levels to be drawn...
-  if (d > 1) {
-    // Move the canvas to (0, 1), the end of our new line
-    translate(0, 1);
+      // Rotate the canvas for each new branch
+      rotate(curl)
 
-    // Rotate the canvas for each new branch
-    rotate(curl);
+      // Zoom twice as far into the canvas
+      scale(0.5)
 
-    // Zoom twice as far into the canvas
-    scale(0.5);
-
-    // Recurse for the next branch!
-    branch(d-1);
+      // Recurse for the next branch!
+      branch(d - 1)
+    }
   }
-}
 
-function setup() {
-  // Start off by creating a canvas to draw on
-  createCanvas(400, 400);
-}
+  function setup() {
+    // Start off by creating a canvas to draw on
+    createCanvas(400, 400)
+  }
 
-function draw() {
-  // Set the curl angle with the mouse X position
-  curl = Math.PI*(mouseX/width*2-1);
+  function draw() {
+    // Set the curl angle with the mouse X position
+    curl = Math.PI * ((mouseX / width) * 2 - 1)
 
-  // Draw a black background
-	background(0);
+    // Draw a black background
+    background(0)
 
-  // Set line color to white
-  stroke(255);
+    // Set line color to white
+    stroke(255)
 
-  // Move to middle-bottom of canvas
-  translate(200, 400);
+    // Move to middle-bottom of canvas
+    translate(200, 400)
 
-  // Turn canvas 180°
-  rotate(Math.PI);
+    // Turn canvas 180°
+    rotate(Math.PI)
 
-  // Zoom way into the canvas
-  scale(200);
+    // Zoom way into the canvas
+    scale(200)
 
-  // Set thickness to a much smaller, zoomed-in value
-  strokeWeight(0.1);
+    // Set thickness to a much smaller, zoomed-in value
+    strokeWeight(0.1)
 
-  // Start drawing branches!
-  branch(depth);
-}
-
+    // Start drawing branches!
+    branch(depth)
+  }
 </script>
 ```
 
@@ -526,20 +516,19 @@ Let’s create two new variables at the top of our script for `breadth` and `spr
 
 ```html
 <script>
+  // How many levels of branches we will draw
+  var depth = 5
 
-// How many levels of branches we will draw
-var depth = 5;
+  // The angle each new branch level rotates by (branches spin left/right)
+  var curl = Math.PI / 3
 
-// The angle each new branch level rotates by (branches spin left/right)
-var curl = Math.PI/3;
+  // How many branches each new branch will create
+  var breadth = 2
 
-// How many branches each new branch will create
-var breadth = 2;
+  // The angle between each sub-branch (branches fan out/in)
+  var spread = Math.PI / 3
 
-// The angle between each sub-branch (branches fan out/in)
-var spread = Math.PI/3;
-
-// the rest of the script...
+  // the rest of the script...
 </script>
 ```
 
@@ -622,87 +611,85 @@ Now your script should look like this:
 
 ```html
 <script>
+  // How many levels of branches we will draw
+  var depth = 5
 
-// How many levels of branches we will draw
-var depth = 5;
+  // The angle each new branch level rotates by (branches spin left/right)
+  var curl = Math.PI / 3
 
-// The angle each new branch level rotates by (branches spin left/right)
-var curl = Math.PI/3;
+  // How many branches each new branch will create
+  var breadth = 2
 
-// How many branches each new branch will create
-var breadth = 2;
+  // The angle between each sub-branch (branches fan out/in)
+  var spread = Math.PI / 3
 
-// The angle between each sub-branch (branches fan out/in)
-var spread = Math.PI/3;
+  function branch(d) {
+    // Draw a line from (0, 0) to (0, 1)
+    line(0, 0, 0, 1)
 
-function branch(d) {
-  // Draw a line from (0, 0) to (0, 1)
-  line(0, 0, 0, 1);
+    // If there are any more branch levels to be drawn...
+    if (d > 1) {
+      // Move the canvas to (0, 1), the end of our new line
+      translate(0, 1)
 
-  // If there are any more branch levels to be drawn...
-  if (d > 1) {
-    // Move the canvas to (0, 1), the end of our new line
-    translate(0, 1);
+      // Rotate the canvas for each new branch
+      rotate(curl)
 
-    // Rotate the canvas for each new branch
-    rotate(curl);
+      // Zoom twice as far into the canvas
+      scale(0.5)
 
-    // Zoom twice as far into the canvas
-    scale(0.5);
+      for (var i = 0; i < breadth; i++) {
+        // Recurse for the next branch!
+        branch(d - 1)
 
-    for (var i = 0; i < breadth; i++) {
-      // Recurse for the next branch!
-      branch(d-1);
+        // Rotate for the next branch!
+        rotate(spread)
+      }
 
-      // Rotate for the next branch!
-      rotate(spread);
+      // Undo the rotations we applied for each "child" branch
+      rotate(-spread * breadth)
+
+      // Undo the curl rotation we applied to this branch
+      rotate(-curl)
+
+      // Zoom back out from the canvas
+      scale(2)
+
+      // Move back to the start of the line we drew with line(0, 0, 0, 1)
+      translate(0, -1)
     }
-
-    // Undo the rotations we applied for each "child" branch
-    rotate(-spread*breadth);
-
-    // Undo the curl rotation we applied to this branch
-    rotate(-curl);
-
-    // Zoom back out from the canvas
-    scale(2);
-
-    // Move back to the start of the line we drew with line(0, 0, 0, 1)
-    translate(0, -1);
   }
-}
 
-function setup() {
-  // Start off by creating a canvas to draw on
-  createCanvas(400, 400);
-}
+  function setup() {
+    // Start off by creating a canvas to draw on
+    createCanvas(400, 400)
+  }
 
-function draw() {
-  // Set the curl angle with the mouse X position
-  curl = Math.PI*(mouseX/width*2-1);
+  function draw() {
+    // Set the curl angle with the mouse X position
+    curl = Math.PI * ((mouseX / width) * 2 - 1)
 
-  // Draw a black background
-	background(0);
+    // Draw a black background
+    background(0)
 
-  // Set line color to white
-  stroke(255);
+    // Set line color to white
+    stroke(255)
 
-  // Move to middle-bottom of canvas
-  translate(200, 400);
+    // Move to middle-bottom of canvas
+    translate(200, 400)
 
-  // Turn canvas 180°
-  rotate(Math.PI);
+    // Turn canvas 180°
+    rotate(Math.PI)
 
-  // Zoom way into the canvas
-  scale(200);
+    // Zoom way into the canvas
+    scale(200)
 
-  // Set thickness to a much smaller, zoomed-in value
-  strokeWeight(0.1);
+    // Set thickness to a much smaller, zoomed-in value
+    strokeWeight(0.1)
 
-  // Start drawing branches!
-  branch(depth);
-}
-
+    // Start drawing branches!
+    branch(depth)
+  }
 </script>
 ```
 
@@ -732,90 +719,88 @@ Your final script should look like this:
 
 ```html
 <script>
+  // How many levels of branches we will draw
+  var depth = 5
 
-// How many levels of branches we will draw
-var depth = 5;
+  // The angle each new branch level rotates by (branches spin left/right)
+  var curl = Math.PI / 3
 
-// The angle each new branch level rotates by (branches spin left/right)
-var curl = Math.PI/3;
+  // How many branches each new branch will create
+  var breadth = 2
 
-// How many branches each new branch will create
-var breadth = 2;
+  // The angle between each sub-branch (branches fan out/in)
+  var spread = Math.PI / 3
 
-// The angle between each sub-branch (branches fan out/in)
-var spread = Math.PI/3;
+  function branch(d) {
+    // Draw a line from (0, 0) to (0, 1)
+    line(0, 0, 0, 1)
 
-function branch(d) {
-  // Draw a line from (0, 0) to (0, 1)
-  line(0, 0, 0, 1);
+    // If there are any more branch levels to be drawn...
+    if (d > 1) {
+      // Move the canvas to (0, 1), the end of our new line
+      translate(0, 1)
 
-  // If there are any more branch levels to be drawn...
-  if (d > 1) {
-    // Move the canvas to (0, 1), the end of our new line
-    translate(0, 1);
+      // Rotate the canvas for each new branch
+      rotate(curl)
 
-    // Rotate the canvas for each new branch
-    rotate(curl);
+      // Zoom twice as far into the canvas
+      scale(0.5)
 
-    // Zoom twice as far into the canvas
-    scale(0.5);
+      for (var i = 0; i < breadth; i++) {
+        // Recurse for the next branch!
+        branch(d - 1)
 
-    for (var i = 0; i < breadth; i++) {
-      // Recurse for the next branch!
-      branch(d-1);
+        // Rotate for the next branch!
+        rotate(spread)
+      }
 
-      // Rotate for the next branch!
-      rotate(spread);
+      // Undo the rotations we applied for each "child" branch
+      rotate(-spread * breadth)
+
+      // Undo the curl rotation we applied to this branch
+      rotate(-curl)
+
+      // Zoom back out from the canvas
+      scale(2)
+
+      // Move back to the start of the line we drew with line(0, 0, 0, 1)
+      translate(0, -1)
     }
-
-    // Undo the rotations we applied for each "child" branch
-    rotate(-spread*breadth);
-
-    // Undo the curl rotation we applied to this branch
-    rotate(-curl);
-
-    // Zoom back out from the canvas
-    scale(2);
-
-    // Move back to the start of the line we drew with line(0, 0, 0, 1)
-    translate(0, -1);
   }
-}
 
-function setup() {
-  // Start off by creating a canvas to draw on
-  createCanvas(400, 400);
-}
+  function setup() {
+    // Start off by creating a canvas to draw on
+    createCanvas(400, 400)
+  }
 
-function draw() {
-  // Set the curl angle with the mouse X position
-  curl = Math.PI*(mouseX/width*2-1);
+  function draw() {
+    // Set the curl angle with the mouse X position
+    curl = Math.PI * ((mouseX / width) * 2 - 1)
 
-  // Set the spread angle with the mouse Y position
-  spread = Math.PI*(mouseY/height*2-1);
+    // Set the spread angle with the mouse Y position
+    spread = Math.PI * ((mouseY / height) * 2 - 1)
 
-  // Draw a black background
-	background(0);
+    // Draw a black background
+    background(0)
 
-  // Set line color to white
-  stroke(255);
+    // Set line color to white
+    stroke(255)
 
-  // Move to middle-bottom of canvas
-  translate(200, 400);
+    // Move to middle-bottom of canvas
+    translate(200, 400)
 
-  // Turn canvas 180°
-  rotate(Math.PI);
+    // Turn canvas 180°
+    rotate(Math.PI)
 
-  // Zoom way into the canvas
-  scale(200);
+    // Zoom way into the canvas
+    scale(200)
 
-  // Set thickness to a much smaller, zoomed-in value
-  strokeWeight(0.1);
+    // Set thickness to a much smaller, zoomed-in value
+    strokeWeight(0.1)
 
-  // Start drawing branches!
-  branch(depth);
-}
-
+    // Start drawing branches!
+    branch(depth)
+  }
 </script>
 ```
 
