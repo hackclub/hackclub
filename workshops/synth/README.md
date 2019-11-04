@@ -3,7 +3,7 @@ name: 'Synth'
 description: 'Let’s make a synth pad with Tone.js'
 author: '@polytroper'
 group: 'start'
-order: 3
+order: 4
 begin: 'https://repl.it/languages/html'
 ---
 
@@ -156,45 +156,45 @@ Ok, now we need a way to turn our tone on and off. Delete that `synth.triggerAtt
 First, add the `down` and `up` functions:
 
 ```js
-var synth = new Tone.Synth().toMaster();
+var synth = new Tone.Synth().toMaster()
 
 function down(event) {
-  synth.triggerAttack(400);
+  synth.triggerAttack(400)
 }
 function up(event) {
-  synth.triggerRelease();
+  synth.triggerRelease()
 }
 ```
 
 Now let's listen for `pointerdown` and `pointerup` events on our pad element. First we need to find the pad using `document.getElementById`:
 
 ```js
-var synth = new Tone.Synth().toMaster();
-var pad = document.getElementById("pad");
+var synth = new Tone.Synth().toMaster()
+var pad = document.getElementById('pad')
 
 function down(event) {
-  synth.triggerAttack(400);
+  synth.triggerAttack(400)
 }
 function up(event) {
-  synth.triggerRelease();
+  synth.triggerRelease()
 }
 ```
 
 Then we add two listeners to the pad element:
 
 ```js
-var synth = new Tone.Synth().toMaster();
-var pad = document.getElementById("pad");
+var synth = new Tone.Synth().toMaster()
+var pad = document.getElementById('pad')
 
 function down(event) {
-  synth.triggerAttack(400);
+  synth.triggerAttack(400)
 }
 function up(event) {
-  synth.triggerRelease();
+  synth.triggerRelease()
 }
 
-pad.addEventListener("pointerdown", down);
-pad.addEventListener("pointerup", up);
+pad.addEventListener('pointerdown', down)
+pad.addEventListener('pointerup', up)
 ```
 
 Now if you run your page, the synth should respond to a click!
@@ -209,8 +209,8 @@ Our `down` function takes in a variable called `event`, which contains data abou
 
 ```js
 function down(event) {
-  var x = event.pageX;
-  synth.triggerAttack(x);
+  var x = event.pageX
+  synth.triggerAttack(x)
 }
 ```
 
@@ -280,19 +280,19 @@ When we trigger `down`, we want it to change our label to show the pitch. When w
 To change the text inside our label, first we need to grab that label element in JavaScript. Add this to the top of your `script` section:
 
 ```js
-var label = document.getElementById("label");
+var label = document.getElementById('label')
 ```
 
 Now add this to your `down` function to insert your pitch:
 
 ```js
-label.innerHTML = Math.round(x) + "Hz";
+label.innerHTML = Math.round(x) + 'Hz'
 ```
 
 And add this to your `up` function to reset it:
 
 ```js
-label.innerHTML = "DRAG";
+label.innerHTML = 'DRAG'
 ```
 
 Your whole `script` section should now look like this:
@@ -326,9 +326,9 @@ Now to add that drag feature. For this we need one more function like `up` and `
 
 ```js
 function move(event) {
-  var x = event.pageX;
-  synth.setNote(x);
-  label.innerHTML = Math.round(x) + "Hz";
+  var x = event.pageX
+  synth.setNote(x)
+  label.innerHTML = Math.round(x) + 'Hz'
 }
 ```
 
@@ -337,7 +337,7 @@ Notice that this one looks a lot like `down`. It gets the X position of the poin
 Like `up` and `down`, we also need a listener for `move`:
 
 ```js
-pad.addEventListener("pointermove", move);
+pad.addEventListener('pointermove', move)
 ```
 
 Now when you run your page, you should be able to click and drag to change pitch!
@@ -347,19 +347,19 @@ Now when you run your page, you should be able to click and drag to change pitch
 Ok, one last detail: When you mouse over your page it will trigger `move` and show a frequency, even if you haven't clicked yet. So we just need one more variable to know whether we are dragging. So add a variable for that at the top of your `script` section:
 
 ```js
-var dragging = false;
+var dragging = false
 ```
 
 Put this in your `down` function:
 
 ```js
-dragging = true;
+dragging = true
 ```
 
 Put this in your `up` function:
 
 ```js
-dragging = false;
+dragging = false
 ```
 
 And wrap everything in your `move` function with this:

@@ -3,7 +3,7 @@ name: Speak Colors
 description: Color your screen with your voice via speech recognition.
 author: '@lachlanjc'
 group: start
-order: 12
+order: 3
 ---
 
 # Speak Colors
