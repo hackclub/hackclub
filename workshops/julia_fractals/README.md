@@ -22,46 +22,48 @@ _You should start with this simple HTML document:_
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Julia Fractals</title>
-  </head>
+<head>
+  <title>Julia Fractals</title>
+</head>
 
-  <style>
-    body {
-      background: black;
-      color: white;
-    }
-    canvas {
-      border: 1px solid white;
-    }
-  </style>
+<style>
+  body {
+    background: black;
+    color: white;
+  }
+  canvas {
+    border: 1px solid white;
+  }
+</style>
 
-  <body>
-    <h2></h2>
-    <canvas></canvas>
-  </body>
+<body>
+  <h2></h2>
+  <canvas></canvas>
+</body>
 
-  <!-- Import math.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.6.0/math.min.js"></script>
+<!-- Import math.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.6.0/math.min.js"></script>
 
-  <script>
-    // The HTML elements we are using
-    var header = document.querySelector('h2')
-    var canvas = document.querySelector('canvas')
-    var ctx = canvas.getContext('2d')
+<script>
 
-    // The size of our canvas
-    var width = 200
-    var height = 200
+// The HTML elements we are using
+var header = document.querySelector('h2')
+var canvas = document.querySelector('canvas')
+var ctx = canvas.getContext('2d')
 
-    // Set the size of our canvas
-    canvas.width = width
-    canvas.height = height
+// The size of our canvas
+var width = 200
+var height = 200
 
-    // The XY coordinates of the mouse over the canvas
-    var mouseX = 0
-    var mouseY = 0
-  </script>
+// Set the size of our canvas
+canvas.width = width
+canvas.height = height
+
+// The XY coordinates of the mouse over the canvas
+var mouseX = 0
+var mouseY = 0
+
+</script>
 </html>
 ```
 
@@ -73,7 +75,7 @@ Complex numbers are usually written `x+y*i`. So `2+4i` is at the point (2, 4).
 
 ![Mousing around the Complex Plane](/img/complex_plane_mouse.gif)
 
-`i` is the square root of -1 (so `i*i=-1`). We can't find a value for `i` on the "real" number line, because `x*x` is _never_ negative.
+`i` is the square root of -1  (so `i*i=-1`). We can't find a value for `i` on the "real" number line, because `x*x` is _never_ negative.
 
 For a long time, mathematicians just ignored square roots of negative numbers—just like they used to ignore negative numbers. _They aren't "real" numbers, so what good are they?_
 
@@ -93,8 +95,8 @@ Add a function called `pixelToPoint` to the end of your script:
 // Turn XY pixel coordinates into a point on the complex plane
 function pixelToPoint(x, y) {
   // Map percentage of total width/height to a value from -1 to +1
-  var zx = (x / width) * 2 - 1
-  var zy = 1 - (y / height) * 2
+  var zx = (x/width)*2-1
+  var zy = 1-(y/height)*2
 
   // Create a complex number based on our new XY values
   return math.complex(zx, zy)
@@ -135,15 +137,15 @@ function update() {
 // What to do when the mouse moves over the canvas
 function move(event) {
   // Get the mouse's XY coordinates on canvas
-  mouseX = event.clientX - canvas.offsetLeft
-  mouseY = event.clientY - canvas.offsetTop
+  mouseX = event.clientX-canvas.offsetLeft
+  mouseY = event.clientY-canvas.offsetTop
 
   // Turn mouse coordinates into a point on the complex plane
   constant = pixelToPoint(mouseX, mouseY)
 
   // Round that point off to the nearest 0.01
-  constant.re = math.round(constant.re * 100) / 100
-  constant.im = math.round(constant.im * 100) / 100
+  constant.re = math.round(constant.re*100)/100
+  constant.im = math.round(constant.im*100)/100
 
   // Update everything!
   update()
@@ -154,10 +156,9 @@ canvas.addEventListener('pointermove', move)
 ```
 
 Note that we're rounding `constant` to the nearest 0.01:
-
 ```javascript
-constant.re = math.round(constant.re * 100) / 100
-constant.im = math.round(constant.im * 100) / 100
+constant.re = math.round(constant.re*100)/100
+constant.im = math.round(constant.im*100)/100
 ```
 
 This just looks a little neater. `constant.re` is the "real" part of the number—the X value. `constant.im` is the "imaginary" part—the Y value.
@@ -170,60 +171,62 @@ Your whole script should look like [this](https://repl.it/@polytrope/julia-fract
 
 ```html
 <script>
-  // The HTML elements we are using
-  var header = document.querySelector('h2')
-  var canvas = document.querySelector('canvas')
-  var ctx = canvas.getContext('2d')
 
-  // The size of our canvas
-  var width = 200
-  var height = 200
+// The HTML elements we are using
+var header = document.querySelector('h2')
+var canvas = document.querySelector('canvas')
+var ctx = canvas.getContext('2d')
 
-  // Set the size of our canvas
-  canvas.width = width
-  canvas.height = height
+// The size of our canvas
+var width = 200
+var height = 200
 
-  // The XY coordinates of the mouse over the canvas
-  var mouseX = 0
-  var mouseY = 0
+// Set the size of our canvas
+canvas.width = width
+canvas.height = height
 
-  // The point we use for C in our Julia Set equation
-  var constant = math.complex(0.28, 0.01)
+// The XY coordinates of the mouse over the canvas
+var mouseX = 0
+var mouseY = 0
 
-  // Turn XY pixel coordinates into a point on the complex plane
-  function pixelToPoint(x, y) {
-    // Map percentage of total width/height to a value from -1 to +1
-    var zx = (x / width) * 2 - 1
-    var zy = 1 - (y / height) * 2
+// The point we use for C in our Julia Set equation
+var constant = math.complex(0.28, 0.01)
 
-    // Create a complex number based on our new XY values
-    return math.complex(zx, zy)
-  }
+// Turn XY pixel coordinates into a point on the complex plane
+function pixelToPoint(x, y) {
+  // Map percentage of total width/height to a value from -1 to +1
+  var zx = (x/width)*2-1
+  var zy = 1-(y/height)*2
 
-  // Update the elements that need to change
-  function update() {
-    header.innerHTML = constant.toString()
-  }
+  // Create a complex number based on our new XY values
+  return math.complex(zx, zy)
+}
 
-  // What to do when the mouse moves over the canvas
-  function move(event) {
-    // Get the mouse's XY coordinates on canvas
-    mouseX = event.clientX - canvas.offsetLeft
-    mouseY = event.clientY - canvas.offsetTop
+// Update the elements that need to change
+function update() {
+  header.innerHTML = constant.toString()
+}
 
-    // Turn mouse coordinates into a point on the complex plane
-    constant = pixelToPoint(mouseX, mouseY)
+// What to do when the mouse moves over the canvas
+function move(event) {
+  // Get the mouse's XY coordinates on canvas
+  mouseX = event.clientX-canvas.offsetLeft
+  mouseY = event.clientY-canvas.offsetTop
 
-    // Round that point off to the nearest 0.01
-    constant.re = math.round(constant.re * 100) / 100
-    constant.im = math.round(constant.im * 100) / 100
+  // Turn mouse coordinates into a point on the complex plane
+  constant = pixelToPoint(mouseX, mouseY)
 
-    // Update everything!
-    update()
-  }
+  // Round that point off to the nearest 0.01
+  constant.re = math.round(constant.re*100)/100
+  constant.im = math.round(constant.im*100)/100
 
-  // Trigger move every time the mouse moves over canvas
-  canvas.addEventListener('pointermove', move)
+  // Update everything!
+  update()
+}
+
+// Trigger move every time the mouse moves over canvas
+canvas.addEventListener('pointermove', move)
+
 </script>
 ```
 
@@ -240,8 +243,8 @@ To do this, we need a new function called `pointToColor`. This function will tur
 
 // Turn a point on the complex plane into a color
 function pointToColor(point) {
-  var red = point.re * 255
-  var green = point.im * 255
+  var red = point.re*255
+  var green = point.im*255
   return `rgb(${red}, ${green}, 0)`
 }
 
@@ -299,83 +302,85 @@ Your script should now look like [this](https://repl.it/@polytrope/julia-fractal
 
 ```html
 <script>
-  // The HTML elements we are using
-  var header = document.querySelector('h2')
-  var canvas = document.querySelector('canvas')
-  var ctx = canvas.getContext('2d')
 
-  // The size of our canvas
-  var width = 200
-  var height = 200
+// The HTML elements we are using
+var header = document.querySelector('h2')
+var canvas = document.querySelector('canvas')
+var ctx = canvas.getContext('2d')
 
-  // Set the size of our canvas
-  canvas.width = width
-  canvas.height = height
+// The size of our canvas
+var width = 200
+var height = 200
 
-  // The XY coordinates of the mouse over the canvas
-  var mouseX = 0
-  var mouseY = 0
+// Set the size of our canvas
+canvas.width = width
+canvas.height = height
 
-  // The point we use for C in our Julia Set equation
-  var constant = math.complex(0.28, 0.01)
+// The XY coordinates of the mouse over the canvas
+var mouseX = 0
+var mouseY = 0
 
-  // Turn a point on the complex plane into a color
-  function pointToColor(point) {
-    var red = point.re * 255
-    var green = point.im * 255
-    return `rgb(${red}, ${green}, 0)`
-  }
+// The point we use for C in our Julia Set equation
+var constant = math.complex(0.28, 0.01)
 
-  // Turn XY pixel coordinates into a point on the complex plane
-  function pixelToPoint(x, y) {
-    // Map percentage of total width/height to a value from -1 to +1
-    var zx = (x / width) * 2 - 1
-    var zy = 1 - (y / height) * 2
+// Turn a point on the complex plane into a color
+function pointToColor(point) {
+  var red = point.re*255
+  var green = point.im*255
+  return `rgb(${red}, ${green}, 0)`
+}
 
-    // Create a complex number based on our new XY values
-    return math.complex(zx, zy)
-  }
+// Turn XY pixel coordinates into a point on the complex plane
+function pixelToPoint(x, y) {
+  // Map percentage of total width/height to a value from -1 to +1
+  var zx = (x/width)*2-1
+  var zy = 1-(y/height)*2
 
-  // Draw a single pixel on our canvas
-  function drawPixel(x, y, color) {
-    ctx.fillStyle = color
-    ctx.fillRect(x, y, 1, 1)
-  }
+  // Create a complex number based on our new XY values
+  return math.complex(zx, zy)
+}
 
-  // Redraw our canvas
-  function draw() {
-    // Turn the point under the mouse into a color
-    var color = pointToColor(constant)
+// Draw a single pixel on our canvas
+function drawPixel(x, y, color) {
+  ctx.fillStyle = color
+  ctx.fillRect(x, y, 1, 1)
+}
 
-    // Draw over the pixel under the mouse with that color
-    drawPixel(mouseX, mouseY, color)
-  }
+// Redraw our canvas
+function draw() {
+  // Turn the point under the mouse into a color
+  var color = pointToColor(constant)
 
-  // Update the elements that need to change
-  function update() {
-    header.innerHTML = constant.toString()
-    draw()
-  }
+  // Draw over the pixel under the mouse with that color
+  drawPixel(mouseX, mouseY, color)
+}
 
-  // What to do when the mouse moves over the canvas
-  function move(event) {
-    // Get the mouse's XY coordinates on canvas
-    mouseX = event.clientX - canvas.offsetLeft
-    mouseY = event.clientY - canvas.offsetTop
+// Update the elements that need to change
+function update() {
+  header.innerHTML = constant.toString()
+  draw()
+}
 
-    // Turn mouse coordinates into a point on the complex plane
-    constant = pixelToPoint(mouseX, mouseY)
+// What to do when the mouse moves over the canvas
+function move(event) {
+  // Get the mouse's XY coordinates on canvas
+  mouseX = event.clientX-canvas.offsetLeft
+  mouseY = event.clientY-canvas.offsetTop
 
-    // Round that point off to the nearest 0.01
-    constant.re = math.round(constant.re * 100) / 100
-    constant.im = math.round(constant.im * 100) / 100
+  // Turn mouse coordinates into a point on the complex plane
+  constant = pixelToPoint(mouseX, mouseY)
 
-    // Update everything!
-    update()
-  }
+  // Round that point off to the nearest 0.01
+  constant.re = math.round(constant.re*100)/100
+  constant.im = math.round(constant.im*100)/100
 
-  // Trigger move every time the mouse moves over canvas
-  canvas.addEventListener('pointermove', move)
+  // Update everything!
+  update()
+}
+
+// Trigger move every time the mouse moves over canvas
+canvas.addEventListener('pointermove', move)
+
 </script>
 ```
 
@@ -439,8 +444,8 @@ To the top of `pointToColor`:
 function pointToColor(point) {
   point = point.sub(constant)
 
-  var red = point.re * 255
-  var green = point.im * 255
+  var red = point.re*255
+  var green = point.im*255
 
   return `rgb(${red}, ${green}, 0)`
 }
@@ -491,9 +496,9 @@ Try changing your `pointToColor` function like so:
 function pointToColor(point) {
   point = point.div(constant)
 
-  var red = point.re * 255
-  var green = point.im * 255
-  var blue = math.abs(point) * 255
+  var red = point.re*255
+  var green = point.im*255
+  var blue = math.abs(point)*255
 
   return `rgb(${red}, ${green}, ${blue})`
 }
@@ -511,99 +516,101 @@ Your script should now look like [this](https://repl.it/@polytrope/julia-fractal
 
 ```html
 <script>
-  // The HTML elements we are using
-  var header = document.querySelector('h2')
-  var canvas = document.querySelector('canvas')
-  var ctx = canvas.getContext('2d')
 
-  // The size of our canvas
-  var width = 200
-  var height = 200
+// The HTML elements we are using
+var header = document.querySelector('h2')
+var canvas = document.querySelector('canvas')
+var ctx = canvas.getContext('2d')
 
-  // Set the size of our canvas
-  canvas.width = width
-  canvas.height = height
+// The size of our canvas
+var width = 200
+var height = 200
 
-  // The XY coordinates of the mouse over the canvas
-  var mouseX = 0
-  var mouseY = 0
+// Set the size of our canvas
+canvas.width = width
+canvas.height = height
 
-  // The point we use for C in our Julia Set equation
-  var constant = math.complex(0.28, 0.01)
+// The XY coordinates of the mouse over the canvas
+var mouseX = 0
+var mouseY = 0
 
-  // Turn a point on the complex plane into a color
-  function pointToColor(point) {
-    point = point.sub(constant)
+// The point we use for C in our Julia Set equation
+var constant = math.complex(0.28, 0.01)
 
-    var red = point.re * 255
-    var green = point.im * 255
-    var blue = math.abs(point) * 255
+// Turn a point on the complex plane into a color
+function pointToColor(point) {
+  point = point.sub(constant)
 
-    return `rgb(${red}, ${green}, ${blue})`
-  }
+  var red = point.re*255
+  var green = point.im*255
+  var blue = math.abs(point)*255
 
-  // Turn XY pixel coordinates into a point on the complex plane
-  function pixelToPoint(x, y) {
-    // Map percentage of total width/height to a value from -1 to +1
-    var zx = (x / width) * 2 - 1
-    var zy = 1 - (y / height) * 2
+  return `rgb(${red}, ${green}, ${blue})`
+}
 
-    // Create a complex number based on our new XY values
-    return math.complex(zx, zy)
-  }
+// Turn XY pixel coordinates into a point on the complex plane
+function pixelToPoint(x, y) {
+  // Map percentage of total width/height to a value from -1 to +1
+  var zx = (x/width)*2-1
+  var zy = 1-(y/height)*2
 
-  // Draw a single pixel on our canvas
-  function drawPixel(x, y, color) {
-    ctx.fillStyle = color
-    ctx.fillRect(x, y, 1, 1)
-  }
+  // Create a complex number based on our new XY values
+  return math.complex(zx, zy)
+}
 
-  // Redraw our canvas
-  function draw() {
-    // Loop over every column of pixels
-    for (var y = 0; y < height; y++) {
-      // Loop over every row of pixels
-      for (var x = 0; x < width; x++) {
-        // Turn this pixel into a point in the complex plane
-        var point = pixelToPoint(x, y)
+// Draw a single pixel on our canvas
+function drawPixel(x, y, color) {
+  ctx.fillStyle = color
+  ctx.fillRect(x, y, 1, 1)
+}
 
-        // Turn that point into a color
-        var color = pointToColor(point)
+// Redraw our canvas
+function draw() {
+  // Loop over every column of pixels
+  for (var y = 0; y < height; y++) {
+    // Loop over every row of pixels
+    for (var x = 0; x < width; x++) {
+      // Turn this pixel into a point in the complex plane
+      var point = pixelToPoint(x, y)
 
-        // Draw over this pixel with that color
-        drawPixel(x, y, color)
-      }
+      // Turn that point into a color
+      var color = pointToColor(point)
+
+      // Draw over this pixel with that color
+      drawPixel(x, y, color)
     }
   }
+}
 
-  // Update the elements that need to change
-  function update() {
-    header.innerHTML = constant.toString()
-    draw()
-  }
+// Update the elements that need to change
+function update() {
+  header.innerHTML = constant.toString()
+  draw()
+}
 
-  // What to do when the mouse moves over the canvas
-  function move(event) {
-    // Get the mouse's XY coordinates on canvas
-    mouseX = event.clientX - canvas.offsetLeft
-    mouseY = event.clientY - canvas.offsetTop
+// What to do when the mouse moves over the canvas
+function move(event) {
+  // Get the mouse's XY coordinates on canvas
+  mouseX = event.clientX-canvas.offsetLeft
+  mouseY = event.clientY-canvas.offsetTop
 
-    // Turn mouse coordinates into a point on the complex plane
-    constant = pixelToPoint(mouseX, mouseY)
+  // Turn mouse coordinates into a point on the complex plane
+  constant = pixelToPoint(mouseX, mouseY)
 
-    // Round that point off to the nearest 0.01
-    constant.re = math.round(constant.re * 100) / 100
-    constant.im = math.round(constant.im * 100) / 100
-
-    // Update everything!
-    update()
-  }
-
-  // Trigger move every time the mouse moves over canvas
-  canvas.addEventListener('pointermove', move)
+  // Round that point off to the nearest 0.01
+  constant.re = math.round(constant.re*100)/100
+  constant.im = math.round(constant.im*100)/100
 
   // Update everything!
   update()
+}
+
+// Trigger move every time the mouse moves over canvas
+canvas.addEventListener('pointermove', move)
+
+// Update everything!
+update()
+
 </script>
 ```
 
@@ -620,12 +627,12 @@ We need to use this equation to generate a color for each point on the complex p
 1. _Multiply_ that point by itself
 2. _Add_ your `constant` value C
 3. Repeat
-   1. Multiply this _new_ point by itself
-   2. Add your `constant` value C
-   3. Repeat
-      1. Multiply _this_ new point by itself
-      2. Add your `constant` value C
-      3. Repeat…
+	1. Multiply this _new_ point by itself
+	2. Add your `constant` value C
+	3. Repeat
+		1. Multiply _this_ new point by itself
+		2. Add your `constant` value C
+		3. Repeat…
 
 You can apply this process _infinitely_ for any point. For most points, the number will just keep getting bigger and bigger and bigger. When this happens, we say the number **Escapes**.
 
@@ -653,8 +660,9 @@ function julia(z, i = 0) {
   if (math.abs(z) > 2 || i == maxIterations)
     // If so, return number of iterations
     return i
-  // If not, iterate again!
-  else return julia(z, i + 1)
+  else
+    // If not, iterate again!
+    return julia(z, i+1)
 }
 
 // pointToColor + the rest of your script...
@@ -675,11 +683,11 @@ function pointToColor(point) {
   var iterations = julia(point)
 
   // What percentage of our limit is that?
-  var percentage = iterations / maxIterations
+  var percentage = iterations/maxIterations
 
-  var red = percentage * 255
-  var green = percentage * 255
-  var blue = percentage * 255
+  var red = percentage*255
+  var green = percentage*255
+  var blue = percentage*255
 
   // Create a color from that percentage
   return `rgb(${red}, ${green}, ${blue})`
@@ -696,121 +704,124 @@ Your whole script should now look like [this](https://repl.it/@polytrope/julia-f
 
 ```html
 <script>
-  // The HTML elements we are using
-  var header = document.querySelector('h2')
-  var canvas = document.querySelector('canvas')
-  var ctx = canvas.getContext('2d')
 
-  // The size of our canvas
-  var width = 200
-  var height = 200
+// The HTML elements we are using
+var header = document.querySelector('h2')
+var canvas = document.querySelector('canvas')
+var ctx = canvas.getContext('2d')
 
-  // Set the size of our canvas
-  canvas.width = width
-  canvas.height = height
+// The size of our canvas
+var width = 200
+var height = 200
 
-  // The XY coordinates of the mouse over the canvas
-  var mouseX = 0
-  var mouseY = 0
+// Set the size of our canvas
+canvas.width = width
+canvas.height = height
 
-  // The point we use for C in our Julia Set equation
-  var constant = math.complex(0.28, 0.01)
+// The XY coordinates of the mouse over the canvas
+var mouseX = 0
+var mouseY = 0
 
-  // The maximum number of times we iterate a point to see if it escapes
-  var maxIterations = 64
+// The point we use for C in our Julia Set equation
+var constant = math.complex(0.28, 0.01)
 
-  // Apply the Julia Set formula to see if point z "escapes"
-  function julia(z, i = 0) {
-    // Apply the Julia Set formula: z*z+constant
-    z = z.mul(z)
-    z = z.add(constant)
+// The maximum number of times we iterate a point to see if it escapes
+var maxIterations = 64
 
-    // Has our point escaped, or hit the iteration limit?
-    if (math.abs(z) > 2 || i == maxIterations)
-      // If so, return number of iterations
-      return i
+// Apply the Julia Set formula to see if point z "escapes"
+function julia(z, i = 0) {
+  // Apply the Julia Set formula: z*z+constant
+  z = z.mul(z)
+  z = z.add(constant)
+
+  // Has our point escaped, or hit the iteration limit?
+  if (math.abs(z) > 2 || i == maxIterations)
+    // If so, return number of iterations
+    return i
+  else
     // If not, iterate again!
-    else return julia(z, i + 1)
-  }
+    return julia(z, i+1)
+}
 
-  // Turn a point on the complex plane into a color
-  function pointToColor(point) {
-    // How many iterations on this point before it escapes?
-    var iterations = julia(point)
+// Turn a point on the complex plane into a color
+function pointToColor(point) {
+  // How many iterations on this point before it escapes?
+  var iterations = julia(point)
 
-    // What percentage of our limit is that?
-    var percentage = iterations / maxIterations
+  // What percentage of our limit is that?
+  var percentage = iterations/maxIterations
 
-    var red = percentage * 255
-    var green = percentage * 255
-    var blue = percentage * 255
+  var red = percentage*255
+  var green = percentage*255
+  var blue = percentage*255
 
-    // Create a color from that percentage
-    return `rgb(${red}, ${green}, ${blue})`
-  }
+  // Create a color from that percentage
+  return `rgb(${red}, ${green}, ${blue})`
+}
 
-  // Turn XY pixel coordinates into a point on the complex plane
-  function pixelToPoint(x, y) {
-    // Map percentage of total width/height to a value from -1 to +1
-    var zx = (x / width) * 2 - 1
-    var zy = 1 - (y / height) * 2
+// Turn XY pixel coordinates into a point on the complex plane
+function pixelToPoint(x, y) {
+  // Map percentage of total width/height to a value from -1 to +1
+  var zx = (x/width)*2-1
+  var zy = 1-(y/height)*2
 
-    // Create a complex number based on our new XY values
-    return math.complex(zx, zy)
-  }
+  // Create a complex number based on our new XY values
+  return math.complex(zx, zy)
+}
 
-  // Draw a single pixel on our canvas
-  function drawPixel(x, y, color) {
-    ctx.fillStyle = color
-    ctx.fillRect(x, y, 1, 1)
-  }
+// Draw a single pixel on our canvas
+function drawPixel(x, y, color) {
+  ctx.fillStyle = color
+  ctx.fillRect(x, y, 1, 1)
+}
 
-  // Redraw our canvas
-  function draw() {
-    // Loop over every column of pixels
-    for (var y = 0; y < height; y++) {
-      // Loop over every row of pixels
-      for (var x = 0; x < width; x++) {
-        // Turn this pixel into a point in the complex plane
-        var point = pixelToPoint(x, y)
+// Redraw our canvas
+function draw() {
+  // Loop over every column of pixels
+  for (var y = 0; y < height; y++) {
+    // Loop over every row of pixels
+    for (var x = 0; x < width; x++) {
+      // Turn this pixel into a point in the complex plane
+      var point = pixelToPoint(x, y)
 
-        // Turn that point into a color
-        var color = pointToColor(point)
+      // Turn that point into a color
+      var color = pointToColor(point)
 
-        // Draw over this pixel with that color
-        drawPixel(x, y, color)
-      }
+      // Draw over this pixel with that color
+      drawPixel(x, y, color)
     }
   }
+}
 
-  // Update the elements that need to change
-  function update() {
-    header.innerHTML = constant.toString()
-    draw()
-  }
+// Update the elements that need to change
+function update() {
+  header.innerHTML = constant.toString()
+  draw()
+}
 
-  // What to do when the mouse moves over the canvas
-  function move(event) {
-    // Get the mouse's XY coordinates on canvas
-    mouseX = event.clientX - canvas.offsetLeft
-    mouseY = event.clientY - canvas.offsetTop
+// What to do when the mouse moves over the canvas
+function move(event) {
+  // Get the mouse's XY coordinates on canvas
+  mouseX = event.clientX-canvas.offsetLeft
+  mouseY = event.clientY-canvas.offsetTop
 
-    // Turn mouse coordinates into a point on the complex plane
-    constant = pixelToPoint(mouseX, mouseY)
+  // Turn mouse coordinates into a point on the complex plane
+  constant = pixelToPoint(mouseX, mouseY)
 
-    // Round that point off to the nearest 0.01
-    constant.re = math.round(constant.re * 100) / 100
-    constant.im = math.round(constant.im * 100) / 100
-
-    // Update everything!
-    update()
-  }
-
-  // Trigger move every time the mouse moves over canvas
-  canvas.addEventListener('pointermove', move)
+  // Round that point off to the nearest 0.01
+  constant.re = math.round(constant.re*100)/100
+  constant.im = math.round(constant.im*100)/100
 
   // Update everything!
   update()
+}
+
+// Trigger move every time the mouse moves over canvas
+canvas.addEventListener('pointermove', move)
+
+// Update everything!
+update()
+
 </script>
 ```
 
@@ -849,8 +860,8 @@ function click(event) {
   }
 
   // Get the mouse's XY coordinates on canvas
-  mouseX = event.clientX - canvas.offsetLeft
-  mouseY = event.clientY - canvas.offsetTop
+  mouseX = event.clientX-canvas.offsetLeft
+  mouseY = event.clientY-canvas.offsetTop
 
   // Turn mouse coordinates into a point on the complex plane
   pan = pixelToPoint(mouseX, mouseY)
@@ -877,15 +888,15 @@ function move(event) {
   }
 
   // Get the mouse's XY coordinates on canvas
-  mouseX = event.clientX - canvas.offsetLeft
-  mouseY = event.clientY - canvas.offsetTop
+  mouseX = event.clientX-canvas.offsetLeft
+  mouseY = event.clientY-canvas.offsetTop
 
   // Turn mouse coordinates into a point on the complex plane
   constant = pixelToPoint(mouseX, mouseY)
 
   // Round that point off to the nearest 0.01
-  constant.re = math.round(constant.re * 100) / 100
-  constant.im = math.round(constant.im * 100) / 100
+  constant.re = math.round(constant.re*100)/100
+  constant.im = math.round(constant.im*100)/100
 
   // Update everything!
   update()
@@ -915,8 +926,8 @@ We want `pan` to change which pixel maps to each point—so we need to change ou
 // Turn XY pixel coordinates into a point on the complex plane
 function pixelToPoint(x, y) {
   // Map percentage of total width/height to a value from -1 to +1
-  var zx = (x / width) * 2 - 1
-  var zy = 1 - (y / height) * 2
+  var zx = (x/width)*2-1
+  var zy = 1-(y/height)*2
 
   // Create a complex number based on our new XY values
   var z = math.complex(zx, zy)
@@ -938,158 +949,161 @@ Your full script should look like [this](https://repl.it/@polytrope/julia-fracta
 
 ```html
 <script>
-  // The HTML elements we are using
-  var header = document.querySelector('h2')
-  var canvas = document.querySelector('canvas')
-  var ctx = canvas.getContext('2d')
 
-  // The size of our canvas
-  var width = 200
-  var height = 200
+// The HTML elements we are using
+var header = document.querySelector('h2')
+var canvas = document.querySelector('canvas')
+var ctx = canvas.getContext('2d')
 
-  // Set the size of our canvas
-  canvas.width = width
-  canvas.height = height
+// The size of our canvas
+var width = 200
+var height = 200
 
-  // The XY coordinates of the mouse over the canvas
-  var mouseX = 0
-  var mouseY = 0
+// Set the size of our canvas
+canvas.width = width
+canvas.height = height
 
-  // The point we use for C in our Julia Set equation
-  var constant = math.complex(0.28, 0.01)
+// The XY coordinates of the mouse over the canvas
+var mouseX = 0
+var mouseY = 0
 
-  // The maximum number of times we iterate a point to see if it escapes
-  var maxIterations = 64
+// The point we use for C in our Julia Set equation
+var constant = math.complex(0.28, 0.01)
 
-  // Whether we have clicked yet
-  var clicked = false
+// The maximum number of times we iterate a point to see if it escapes
+var maxIterations = 64
 
-  // How much we move the image
-  var pan = math.complex(0, 0)
+// Whether we have clicked yet
+var clicked = false
 
-  // Apply the Julia Set formula to see if point z "escapes"
-  function julia(z, i = 0) {
-    // Apply the Julia Set formula: z*z+constant
-    z = z.mul(z)
-    z = z.add(constant)
+// How much we move the image
+var pan = math.complex(0, 0)
 
-    // Has our point escaped, or hit the iteration limit?
-    if (math.abs(z) > 2 || i == maxIterations)
-      // If so, return number of iterations
-      return i
+// Apply the Julia Set formula to see if point z "escapes"
+function julia(z, i = 0) {
+  // Apply the Julia Set formula: z*z+constant
+  z = z.mul(z)
+  z = z.add(constant)
+
+  // Has our point escaped, or hit the iteration limit?
+  if (math.abs(z) > 2 || i == maxIterations)
+    // If so, return number of iterations
+    return i
+  else
     // If not, iterate again!
-    else return julia(z, i + 1)
-  }
+    return julia(z, i+1)
+}
 
-  // Turn a point on the complex plane into a color
-  function pointToColor(point) {
-    // How many iterations on this point before it escapes?
-    var iterations = julia(point)
+// Turn a point on the complex plane into a color
+function pointToColor(point) {
+  // How many iterations on this point before it escapes?
+  var iterations = julia(point)
 
-    // What percentage of our limit is that?
-    var percentage = iterations / maxIterations
+  // What percentage of our limit is that?
+  var percentage = iterations/maxIterations
 
-    var red = percentage * 255
-    var green = percentage * 255
-    var blue = percentage * 255
+  var red = percentage*255
+  var green = percentage*255
+  var blue = percentage*255
 
-    // Create a color from that percentage
-    return `rgb(${red}, ${green}, ${blue})`
-  }
+  // Create a color from that percentage
+  return `rgb(${red}, ${green}, ${blue})`
+}
 
-  // Turn XY pixel coordinates into a point on the complex plane
-  function pixelToPoint(x, y) {
-    // Map percentage of total width/height to a value from -1 to +1
-    var zx = (x / width) * 2 - 1
-    var zy = 1 - (y / height) * 2
+// Turn XY pixel coordinates into a point on the complex plane
+function pixelToPoint(x, y) {
+  // Map percentage of total width/height to a value from -1 to +1
+  var zx = (x/width)*2-1
+  var zy = 1-(y/height)*2
 
-    // Create a complex number based on our new XY values
-    var z = math.complex(zx, zy)
+  // Create a complex number based on our new XY values
+  var z = math.complex(zx, zy)
 
-    // Pan the camera
-    z = z.add(pan)
+  // Pan the camera
+  z = z.add(pan)
 
-    return z
-  }
+  return z
+}
 
-  // Draw a single pixel on our canvas
-  function drawPixel(x, y, color) {
-    ctx.fillStyle = color
-    ctx.fillRect(x, y, 1, 1)
-  }
+// Draw a single pixel on our canvas
+function drawPixel(x, y, color) {
+  ctx.fillStyle = color
+  ctx.fillRect(x, y, 1, 1)
+}
 
-  // Redraw our canvas
-  function draw() {
-    // Loop over every column of pixels
-    for (var y = 0; y < height; y++) {
-      // Loop over every row of pixels
-      for (var x = 0; x < width; x++) {
-        // Turn this pixel into a point in the complex plane
-        var point = pixelToPoint(x, y)
+// Redraw our canvas
+function draw() {
+  // Loop over every column of pixels
+  for (var y = 0; y < height; y++) {
+    // Loop over every row of pixels
+    for (var x = 0; x < width; x++) {
+      // Turn this pixel into a point in the complex plane
+      var point = pixelToPoint(x, y)
 
-        // Turn that point into a color
-        var color = pointToColor(point)
+      // Turn that point into a color
+      var color = pointToColor(point)
 
-        // Draw over this pixel with that color
-        drawPixel(x, y, color)
-      }
+      // Draw over this pixel with that color
+      drawPixel(x, y, color)
     }
   }
+}
 
-  // Update the elements that need to change
-  function update() {
-    header.innerHTML = constant.toString()
-    draw()
+// Update the elements that need to change
+function update() {
+  header.innerHTML = constant.toString()
+  draw()
+}
+
+function click(event) {
+  // Ignore the first click
+  if (!clicked) {
+    clicked = true
+    return
   }
 
-  function click(event) {
-    // Ignore the first click
-    if (!clicked) {
-      clicked = true
-      return
-    }
+  // Get the mouse's XY coordinates on canvas
+  mouseX = event.clientX-canvas.offsetLeft
+  mouseY = event.clientY-canvas.offsetTop
 
-    // Get the mouse's XY coordinates on canvas
-    mouseX = event.clientX - canvas.offsetLeft
-    mouseY = event.clientY - canvas.offsetTop
-
-    // Turn mouse coordinates into a point on the complex plane
-    pan = pixelToPoint(mouseX, mouseY)
-
-    // Update everything!
-    update()
-  }
-
-  // What to do when the mouse moves over the canvas
-  function move(event) {
-    // Don't move after first click
-    if (clicked) {
-      return
-    }
-
-    // Get the mouse's XY coordinates on canvas
-    mouseX = event.clientX - canvas.offsetLeft
-    mouseY = event.clientY - canvas.offsetTop
-
-    // Turn mouse coordinates into a point on the complex plane
-    constant = pixelToPoint(mouseX, mouseY)
-
-    // Round that point off to the nearest 0.01
-    constant.re = math.round(constant.re * 100) / 100
-    constant.im = math.round(constant.im * 100) / 100
-
-    // Update everything!
-    update()
-  }
-
-  // Trigger click every time the canvas is clicked
-  canvas.addEventListener('click', click)
-
-  // Trigger move every time the mouse moves over canvas
-  canvas.addEventListener('pointermove', move)
+  // Turn mouse coordinates into a point on the complex plane
+  pan = pixelToPoint(mouseX, mouseY)
 
   // Update everything!
   update()
+}
+
+// What to do when the mouse moves over the canvas
+function move(event) {
+  // Don't move after first click
+  if (clicked) {
+    return
+  }
+
+  // Get the mouse's XY coordinates on canvas
+  mouseX = event.clientX-canvas.offsetLeft
+  mouseY = event.clientY-canvas.offsetTop
+
+  // Turn mouse coordinates into a point on the complex plane
+  constant = pixelToPoint(mouseX, mouseY)
+
+  // Round that point off to the nearest 0.01
+  constant.re = math.round(constant.re*100)/100
+  constant.im = math.round(constant.im*100)/100
+
+  // Update everything!
+  update()
+}
+
+// Trigger click every time the canvas is clicked
+canvas.addEventListener('click', click)
+
+// Trigger move every time the mouse moves over canvas
+canvas.addEventListener('pointermove', move)
+
+// Update everything!
+update()
+
 </script>
 ```
 
@@ -1124,13 +1138,13 @@ function click(event) {
   }
 
   // Get the mouse's XY coordinates on canvas
-  mouseX = event.clientX - canvas.offsetLeft
-  mouseY = event.clientY - canvas.offsetTop
+  mouseX = event.clientX-canvas.offsetLeft
+  mouseY = event.clientY-canvas.offsetTop
 
   // Turn mouse coordinates into a point on the complex plane
   pan = pixelToPoint(mouseX, mouseY)
 
-  // Zoom in twice as far
+  // Zoom in twice as far  
   zoom *= 2
 
   // Update everything!
@@ -1148,8 +1162,8 @@ Now we need to change our `pixelToPoint` function to use that `zoom` value. Like
 // Turn XY pixel coordinates into a point on the complex plane
 function pixelToPoint(x, y) {
   // Map percentage of total width/height to a value from -1 to +1
-  var zx = (x / width) * 2 - 1
-  var zy = 1 - (y / height) * 2
+  var zx = (x/width)*2-1
+  var zy = 1-(y/height)*2
 
   // Create a complex number based on our new XY values
   var z = math.complex(zx, zy)
@@ -1173,7 +1187,7 @@ Finally, let's make one last change to our `update` function so that it will tel
 
 // Update the elements that need to change
 function update() {
-  header.innerHTML = constant.toString() + ' at ' + zoom + 'X'
+  header.innerHTML = constant.toString() + " at " + zoom + "X"
   draw()
 }
 
@@ -1188,168 +1202,171 @@ Your final script should look like [this](https://repl.it/@polytrope/julia-fract
 
 ```html
 <script>
-  // The HTML elements we are using
-  var header = document.querySelector('h2')
-  var canvas = document.querySelector('canvas')
-  var ctx = canvas.getContext('2d')
 
-  // The size of our canvas
-  var width = 200
-  var height = 200
+// The HTML elements we are using
+var header = document.querySelector('h2')
+var canvas = document.querySelector('canvas')
+var ctx = canvas.getContext('2d')
 
-  // Set the size of our canvas
-  canvas.width = width
-  canvas.height = height
+// The size of our canvas
+var width = 200
+var height = 200
 
-  // The XY coordinates of the mouse over the canvas
-  var mouseX = 0
-  var mouseY = 0
+// Set the size of our canvas
+canvas.width = width
+canvas.height = height
 
-  // The point we use for C in our Julia Set equation
-  var constant = math.complex(0.28, 0.01)
+// The XY coordinates of the mouse over the canvas
+var mouseX = 0
+var mouseY = 0
 
-  // The maximum number of times we iterate a point to see if it escapes
-  var maxIterations = 64
+// The point we use for C in our Julia Set equation
+var constant = math.complex(0.28, 0.01)
 
-  // Whether we have clicked yet
-  var clicked = false
+// The maximum number of times we iterate a point to see if it escapes
+var maxIterations = 64
 
-  // How much we move the image
-  var pan = math.complex(0, 0)
+// Whether we have clicked yet
+var clicked = false
 
-  // How much we zoom the image
-  var zoom = 1
+// How much we move the image
+var pan = math.complex(0, 0)
 
-  // Apply the Julia Set formula to see if point z "escapes"
-  function julia(z, i = 0) {
-    // Apply the Julia Set formula: z*z+constant
-    z = z.mul(z)
-    z = z.add(constant)
+// How much we zoom the image
+var zoom = 1
 
-    // Has our point escaped, or hit the iteration limit?
-    if (math.abs(z) > 2 || i == maxIterations)
-      // If so, return number of iterations
-      return i
+// Apply the Julia Set formula to see if point z "escapes"
+function julia(z, i = 0) {
+  // Apply the Julia Set formula: z*z+constant
+  z = z.mul(z)
+  z = z.add(constant)
+
+  // Has our point escaped, or hit the iteration limit?
+  if (math.abs(z) > 2 || i == maxIterations)
+    // If so, return number of iterations
+    return i
+  else
     // If not, iterate again!
-    else return julia(z, i + 1)
-  }
+    return julia(z, i+1)
+}
 
-  // Turn a point on the complex plane into a color
-  function pointToColor(point) {
-    // How many iterations on this point before it escapes?
-    var iterations = julia(point)
+// Turn a point on the complex plane into a color
+function pointToColor(point) {
+  // How many iterations on this point before it escapes?
+  var iterations = julia(point)
 
-    // What percentage of our limit is that?
-    var percentage = iterations / maxIterations
+  // What percentage of our limit is that?
+  var percentage = iterations/maxIterations
 
-    var red = percentage * 255
-    var green = percentage * 255
-    var blue = percentage * 255
+  var red = percentage*255
+  var green = percentage*255
+  var blue = percentage*255
 
-    // Create a color from that percentage
-    return `rgb(${red}, ${green}, ${blue})`
-  }
+  // Create a color from that percentage
+  return `rgb(${red}, ${green}, ${blue})`
+}
 
-  // Turn XY pixel coordinates into a point on the complex plane
-  function pixelToPoint(x, y) {
-    // Map percentage of total width/height to a value from -1 to +1
-    var zx = (x / width) * 2 - 1
-    var zy = 1 - (y / height) * 2
+// Turn XY pixel coordinates into a point on the complex plane
+function pixelToPoint(x, y) {
+  // Map percentage of total width/height to a value from -1 to +1
+  var zx = (x/width)*2-1
+  var zy = 1-(y/height)*2
 
-    // Create a complex number based on our new XY values
-    var z = math.complex(zx, zy)
+  // Create a complex number based on our new XY values
+  var z = math.complex(zx, zy)
 
-    // Zoom the camera
-    z = z.div(zoom)
+  // Zoom the camera
+  z = z.div(zoom)
 
-    // Pan the camera
-    z = z.add(pan)
+  // Pan the camera
+  z = z.add(pan)
 
-    return z
-  }
+  return z
+}
 
-  // Draw a single pixel on our canvas
-  function drawPixel(x, y, color) {
-    ctx.fillStyle = color
-    ctx.fillRect(x, y, 1, 1)
-  }
+// Draw a single pixel on our canvas
+function drawPixel(x, y, color) {
+  ctx.fillStyle = color
+  ctx.fillRect(x, y, 1, 1)
+}
 
-  // Redraw our canvas
-  function draw() {
-    // Loop over every column of pixels
-    for (var y = 0; y < height; y++) {
-      // Loop over every row of pixels
-      for (var x = 0; x < width; x++) {
-        // Turn this pixel into a point in the complex plane
-        var point = pixelToPoint(x, y)
+// Redraw our canvas
+function draw() {
+  // Loop over every column of pixels
+  for (var y = 0; y < height; y++) {
+    // Loop over every row of pixels
+    for (var x = 0; x < width; x++) {
+      // Turn this pixel into a point in the complex plane
+      var point = pixelToPoint(x, y)
 
-        // Turn that point into a color
-        var color = pointToColor(point)
+      // Turn that point into a color
+      var color = pointToColor(point)
 
-        // Draw over this pixel with that color
-        drawPixel(x, y, color)
-      }
+      // Draw over this pixel with that color
+      drawPixel(x, y, color)
     }
   }
+}
 
-  // Update the elements that need to change
-  function update() {
-    header.innerHTML = constant.toString() + ' at ' + zoom + 'X'
-    draw()
+// Update the elements that need to change
+function update() {
+  header.innerHTML = constant.toString() + " at " + zoom + "X"
+  draw()
+}
+
+// What to do when the mouse clicks the canvas
+function click(event) {
+  // Ignore the first click
+  if (!clicked) {
+    clicked = true
+    return
   }
 
-  // What to do when the mouse clicks the canvas
-  function click(event) {
-    // Ignore the first click
-    if (!clicked) {
-      clicked = true
-      return
-    }
+  // Get the mouse's XY coordinates on canvas
+  mouseX = event.clientX-canvas.offsetLeft
+  mouseY = event.clientY-canvas.offsetTop
 
-    // Get the mouse's XY coordinates on canvas
-    mouseX = event.clientX - canvas.offsetLeft
-    mouseY = event.clientY - canvas.offsetTop
+  // Turn mouse coordinates into a point on the complex plane
+  pan = pixelToPoint(mouseX, mouseY)
 
-    // Turn mouse coordinates into a point on the complex plane
-    pan = pixelToPoint(mouseX, mouseY)
-
-    // Zoom in twice as far
-    zoom *= 2
-
-    // Update everything!
-    update()
-  }
-
-  // What to do when the mouse moves over the canvas
-  function move(event) {
-    // Don't move after first click
-    if (clicked) {
-      return
-    }
-
-    // Get the mouse's XY coordinates on canvas
-    mouseX = event.clientX - canvas.offsetLeft
-    mouseY = event.clientY - canvas.offsetTop
-
-    // Turn mouse coordinates into a point on the complex plane
-    constant = pixelToPoint(mouseX, mouseY)
-
-    // Round that point off to the nearest 0.01
-    constant.re = math.round(constant.re * 100) / 100
-    constant.im = math.round(constant.im * 100) / 100
-
-    // Update everything!
-    update()
-  }
-
-  // Trigger click every time the canvas is clicked
-  canvas.addEventListener('click', click)
-
-  // Trigger move every time the mouse moves over canvas
-  canvas.addEventListener('pointermove', move)
+  // Zoom in twice as far  
+  zoom *= 2
 
   // Update everything!
   update()
+}
+
+// What to do when the mouse moves over the canvas
+function move(event) {
+  // Don't move after first click
+  if (clicked) {
+    return
+  }
+
+  // Get the mouse's XY coordinates on canvas
+  mouseX = event.clientX-canvas.offsetLeft
+  mouseY = event.clientY-canvas.offsetTop
+
+  // Turn mouse coordinates into a point on the complex plane
+  constant = pixelToPoint(mouseX, mouseY)
+
+  // Round that point off to the nearest 0.01
+  constant.re = math.round(constant.re*100)/100
+  constant.im = math.round(constant.im*100)/100
+
+  // Update everything!
+  update()
+}
+
+// Trigger click every time the canvas is clicked
+canvas.addEventListener('click', click)
+
+// Trigger move every time the mouse moves over canvas
+canvas.addEventListener('pointermove', move)
+
+// Update everything!
+update()
+
 </script>
 ```
 
@@ -1377,7 +1394,7 @@ Want to learn more stuff like this? I recommend checking out [3Blue1Brown](https
 
 ### Sources
 
-- Thanks to Simpsons Contributor on Wikimedia for the [fractal zoom gif](https://en.wikipedia.org/wiki/File:Mandelbrot_sequence_new.gif)
-- Thanks to Rafael Ruggiero for the [fractal tree gif](https://commons.wikimedia.org/wiki/File:Fractal_tree.gif)
-- Thanks to the mandelbulb.com team for the [mandelbulb image](http://www.mandelbulb.com/3d-fractal-art-mandelmorphs/)
-- Thanks to Jon Sullivan on Wikimedia for his [image of romanesco broccoli](https://commons.wikimedia.org/wiki/File:Fractal_Broccoli.jpg)
+* Thanks to Simpsons Contributor on Wikimedia for the [fractal zoom gif](https://en.wikipedia.org/wiki/File:Mandelbrot_sequence_new.gif)
+* Thanks to Rafael Ruggiero for the [fractal tree gif](https://commons.wikimedia.org/wiki/File:Fractal_tree.gif)
+* Thanks to the mandelbulb.com team for the [mandelbulb image](http://www.mandelbulb.com/3d-fractal-art-mandelmorphs/)
+* Thanks to Jon Sullivan on Wikimedia for his [image of romanesco broccoli](https://commons.wikimedia.org/wiki/File:Fractal_Broccoli.jpg)
