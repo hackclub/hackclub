@@ -279,8 +279,8 @@ A good way to get ideas for what to add to your website is to look at other peop
 - [Megan Cui](https://megancui.com/)
 - [Matthew Stanciu](https://matthewstanciu.me/)
 - [Sophie Huang](https://sohuang.github.io/)
+- [Andre Christoga Pramaditya](https://drepram.com)
 - [Jevin Sidhu](http://jevinsidhu.com/)
-- [Zero Cool](https://harrison.tech/zero-cool/)
 
 **Websites Made by Professionals:**
 
