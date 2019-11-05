@@ -277,10 +277,10 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 - [Theo Bleier](https://tmb.sh/)
 - [Megan Cui](https://megancui.com/)
+- [Matthew Stanciu](https://matthewstanciu.me/)
 - [Sophie Huang](https://sohuang.github.io/)
 - [Jevin Sidhu](http://jevinsidhu.com/)
 - [Zero Cool](https://harrison.tech/zero-cool/)
-- [Chaoyi Zha](https://cydrobolt.com/)
 
 **Websites Made by Professionals:**
 
@@ -288,8 +288,9 @@ A good way to get ideas for what to add to your website is to look at other peop
 - [Eel Slap](http://eelslap.com)
 - [Alice Lee](http://byalicelee.com)
 - [Yaron Schoen](http://yaronschoen.com)
-- [Roxanne Ravago](http://www.roxanneravago.com)
-- [Helen Tran](http://helentran.com/)
+- [John Hanawalt](https://www.hanawa.lt)
+- [Mina Markham](http://mina.codes/)
+- [Andy Ngo](https://andyngo.me)
 
 ### Additional Resources
 
