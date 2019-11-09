@@ -176,7 +176,7 @@ Our HTML file now looks like so:
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
@@ -186,8 +186,6 @@ Our HTML file now looks like so:
   </body>
 </html>
 ```
-
-Remember to save your `index.html`.
 
 ### 2) Adding Styles to the Stylesheet
 
