@@ -8,36 +8,16 @@ order: 11
 
 If you've ever used Discord it's very likely you've come across a bot. This workshop will help guide you on how to create you're own.
 
-# Setting Up Node
+# Setting Up Repl.it
 
-The first thing we need to do is get Node.js set up. We can do this by heading to the [Node.js website](https://nodejs.org/) It is recommended that you go with the LTS build, the current build will generally have more features but may be buggy.
-
-# Setting Up The Project Directory
-
-Now that Node is installed we want to start by creating a layout for the project. Create a folder for the project and open a command prompt or terminal there. Now run the command `npm init`. That will give you approximately the following output:
-```
-$ npm init
-This utility will walk you through creating a package.json file. It only covers the most common items, and tries to guess sensible defaults.
-
-See `npm help json` for definitive documentation on these fields and exactly what they do.
-
-Use `npm install <pkg>` afterwards to install a package and save it as a dependency in the package.json file.
-
-Press ^C at any time to quit.
-package name: (discord-bot-workshop)
-```
-
-You can enter almost any name you desire for the package, but no spaces. After pressing enter you'll be prompted for the version, for the purposes of this workshop you can leave it with the default, so just press enter. You can enter whatever you want in the description, followed by the enter key. Press enter again to leave the entry point as `index.js`. You can also leave the `test command` field as blank by pressing enter. If you have a Git repo set up for your project you may enter it now. Keywords are not important for the workshop so once again you may press enter. For the `author` field enter your name or the name you go by when publishing software and then press enter. You can either pick a license for the `license` field or leave it as the default. Either will work in this scenario. I highly recommend that you research different code licenses. When NPM asks if everything looks okay either type "yes" and press enter or just press enter. Now that the package.json has been created you should create a file called `index.js`. This is the file that will hold most of the code for your bot. # Installing the Necessary Packages For the basic bot we will be building the only package you will need is `discord.js`. However, there are a few optional dependencies that will increase the performance and efficiency of `discord.js`. Before attempting to install discord.js please ensure your terminal or command prompt is in the project directory. You can install `discord.js` with the following command:
-```
-$ npm install discord.js
-```
+Create a new Node.js Repl on [Repl.it](https://repl.it/). If you follow the next step exactly, when you click run you Repl will automatically download and install Discord.js as a dependancy.
 
 The list of optional dependencies and how to install them will be included at the bottom of this workshop. Now that `discord.js` is installed we can start to actually code our bot. # Discord.js Basics The documentation for `discord.js` can be found [here](http://discord.js.org/). First, we need to require `discord.js` so that we can use it in `index.js`. We can do that using this code:
 ```js
 const Discord = require("discord.js");
 ```
 
-Now, `discord.js` need to be initialized. We can initialize it using the following code:
+Now, `discord.js` needs to be initialized. We can initialize it using the following code:
 ```js
 const bot = new Discord.Client();
 ```
@@ -98,6 +78,8 @@ bot.on("message", (message) => {
 Go to the [Discord Developers Page](https://discordapp.com/developers/applications/) and sign in. Click "New Application", give your bot a name, and press "Create". Go to the bot tab, and click "Add Bot". Click the "Copy" button to copy the bot's token.
 
 # Additional Dependencies
+
+More dependacies can be installed on Repl.it using the packages tab on the left hand side. It looks like a box. You can search up any package you want there and press install.
 
 Here is a list of the other packages that will help to speed up `discord.js`:
 - uws
