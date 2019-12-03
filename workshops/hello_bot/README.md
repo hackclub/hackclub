@@ -10,9 +10,11 @@ If you've ever used Discord it's very likely you've come across a bot. This work
 
 # Setting Up Repl.it
 
-Create a new Node.js Repl on [Repl.it](https://repl.it/). If you follow the next step exactly, when you click run you Repl will automatically download and install Discord.js as a dependancy.
+Create a new Node.js Repl on [Repl.it](https://repl.it/). If you follow the next step exactly, when you click run you Repl will automatically download and install `discord.js` as a dependancy. `discord.js` has several optional dependancies that can be used to speed it up. NPM does not install any of these automatically. The list of optional dependencies and how to install them will be included at the bottom of this workshop.
 
-The list of optional dependencies and how to install them will be included at the bottom of this workshop. Now that `discord.js` is installed we can start to actually code our bot. # Discord.js Basics The documentation for `discord.js` can be found [here](http://discord.js.org/). First, we need to require `discord.js` so that we can use it in `index.js`. We can do that using this code:
+# Discord.js Basics
+
+The documentation for `discord.js` can be found [here](http://discord.js.org/). First, we need to require `discord.js` so that we can use it in `index.js`. We can do that using this code:
 ```js
 const Discord = require("discord.js");
 ```
