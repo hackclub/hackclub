@@ -10,7 +10,7 @@ If you've ever used Discord it's very likely you've come across a bot. This work
 
 # Setting Up Repl.it
 
-Create a new Node.js Repl on [Repl.it](https://repl.it/). If you follow the next step exactly, when you click run you Repl will automatically download and install `discord.js` as a dependancy. `discord.js` has several optional dependancies that can be used to speed it up. NPM does not install any of these automatically. The list of optional dependencies and how to install them will be included at the bottom of this workshop.
+Create a new Node.js Repl on [Repl.it](https://repl.it/). If you follow the next step exactly, when you click run you Repl will automatically download and install `discord.js` as a dependency. `discord.js` has several optional dependencies that can be used to speed it up. NPM does not install any of these automatically. The list of optional dependencies and how to install them will be included at the bottom of this workshop.
 
 # Discord.js Basics
 
@@ -79,9 +79,28 @@ bot.on("message", (message) => {
 
 Go to the [Discord Developers Page](https://discordapp.com/developers/applications/) and sign in. Click "New Application", give your bot a name, and press "Create". Go to the bot tab, and click "Add Bot". Click the "Copy" button to copy the bot's token.
 
+# Final Source Code
+
+If you followed this workshop to a t, which is wrong. Then your code should look exactly like this:
+
+```js
+const Discord = require("discord.js");
+const bot = new Discord.Client();
+
+bot.on("message", (message) => {
+  if(!message.content.startsWith(prefix)) return;
+  var command = message.content.slice(prefix.length);
+  if(command == "hello") {
+    message.reply("world");
+  }
+});
+
+bot.login("token");
+```
+
 # Additional Dependencies
 
-More dependacies can be installed on Repl.it using the packages tab on the left hand side. It looks like a box. You can search up any package you want there and press install.
+More dependencies can be installed on Repl.it using the packages tab on the left hand side. It looks like a box. You can search up any package you want there and press install.
 
 Here is a list of the other packages that will help to speed up `discord.js`:
 - uws
