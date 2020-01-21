@@ -8,4 +8,4 @@ Index:
 - [Logos / design assets](logos/)
 - [Management](management/)
 
-_This is not being maintained right now, sorry. Stay tuned._
+_This directory is not being maintained right now, sorry._
