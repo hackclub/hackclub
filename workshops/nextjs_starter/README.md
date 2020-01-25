@@ -227,7 +227,7 @@ export default () => {
   const [newItem, setNewItem] = useState('')
   const changeNewItem = e => setNewItem(e.target.value)
   const addItem = () => {
-    setItems(list => list.push(newItem))
+    setItems(list => [...list, newItem])
     setNewItem('')
   }
   return (
