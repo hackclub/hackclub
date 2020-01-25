@@ -106,6 +106,13 @@ First up, the link. We need a way to make that link, but Next.js has our back he
 ```js
 import Link from 'next/link'
 
+const Article = ({ title, author, preview }) => (
+  <div>
+    <h3>{title}</h3>
+    <p>By {author}</p>
+  </div>
+)
+
 export default () => (
   <main>
     <h1>Articles</h1>
@@ -114,7 +121,7 @@ export default () => (
     <Link href="/shopping">
       <a>Let’s go shopping</a>
     </Link>
-  </div>
+  </main>
 )
 ```
 
