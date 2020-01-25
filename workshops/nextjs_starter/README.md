@@ -265,8 +265,8 @@ One of the really interesting features of Next.js is that you can encapsulate st
 ```js
 export default () => (
   <main>
-    <h1>News</h1>
-    …
+    <h1>Articles</h1>
+    {/*the rest of your code...*/}
     <style jsx>{`
       h1 {
         color: magenta;
@@ -281,7 +281,7 @@ Open up your app: the homepage has a magenta heading, but critically, the headin
 ```js
 <main>
   <h1>Shopping List</h1>
-  <ul>…</ul>
+  {/*the rest of your code...*/}
   <style jsx>{`
     ul { list-style: none; padding: 0; }
     li { padding: 1em 0; border-top: 1px solid #eee; }
