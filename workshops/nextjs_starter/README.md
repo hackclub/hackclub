@@ -117,7 +117,8 @@ export default () => (
   <main>
     <h1>Articles</h1>
     <Article title="Hello Hack Club!" author="@zachlatta" />
-    // …
+    <Article title="Goodbye Hack Club :(" author="@lachlanjc" />
+    {/*Try adding another article!*/}
     <Link href="/shopping">
       <a>Let’s go shopping</a>
     </Link>
