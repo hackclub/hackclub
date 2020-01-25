@@ -12,11 +12,11 @@ Quick Hack Club links:
 
 | Action                          | Link                                   |
 | ------------------------------- | -------------------------------------- |
-| Join the Slack                  | https://slack.hackclub.com             |
+| See our website                 | https://hackclub.com/                  |
+| Join the Slack                  | https://hackclub.com/community/        |
 | See our workshops               | https://workshops.hackclub.com         |
 | Visit the Help Center           | https://help.hackclub.com              |
 | Apply to start a club           | https://apply.hackclub.com             |
-| See our website                 | https://hackclub.com                   |
 | See our contribution guidelines | [`CONTRIBUTING.md`](CONTRIBUTING.md)   |
 | Read our code of conduct        | https://conduct.hackclub.com           |
 | Use our logos and banners       | https://hack.af/logos                  |
@@ -25,7 +25,7 @@ Quick Hack Club links:
 
 Contributions are welcome!
 
-If you need any help, please contact us at team@hackclub.com or on our [Slack](https://slack.hackclub.com).
+If you need any help, please contact us at team@hackclub.com or on our [Slack](https://hackclub.com/community/).
 
 1. Check out our [public issues board][0]. If your issue isn't on the board, [open a new one][1].
 2. Pick an issue that nobody has claimed and start working on it. First time contributors should look for the "[first-timers-only][2]" label on issues.
