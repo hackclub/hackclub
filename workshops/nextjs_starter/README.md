@@ -8,7 +8,7 @@ order: 4
 
 # Welcome to React with Next.js
 
-Hi there! This workshop is an introduction to [React.js](https://reactjs.org) using [Next.js](https://nextjs.org). It assumes you have some familiarity with HTML and JavaScript, as well as programming functions like functions, objects, arrays, and classes, but you should be able to follow along regardless. If you're having trouble, feel free to ask in the [Hack Club Slack](https://hackclub.com/community)!
+Hi there! This workshop is an introduction to [React.js](https://reactjs.org) using [Next.js](https://nextjs.org). It assumes you have some familiarity with HTML and JavaScript, but you should be able to follow along. We’ll also assume some familiarity with programming concepts like functions, objects, arrays, and classes, but if you don’t know what those are, just try to follow along.
 
 A quick note: we’re using some features from ES6, a recent version of JavaScript. In this tutorial, we’re using [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), and [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) statements. If you’re more familiar with older versions of JavaScript, you might find the [Babel REPL](https://babeljs.io/repl/#?presets=react&code_lz=MYewdgzgLgBApgGzgWzmWBeGAeAFgRgD4AJRBEAGhgHcQAnBAEwEJsB6AwgbgChRJY_KAEMAlmDh0YWRiGABXVOgB0AczhQAokiVQAQgE8AkowAUAcjogQUcwEpeAJTjDgUACIB5ALLK6aRklTRBQ0KCohMQk6Bx4gA) useful to see what ES6 code compiles to.
 
