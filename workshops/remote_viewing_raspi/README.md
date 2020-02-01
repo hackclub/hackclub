@@ -20,7 +20,7 @@ While building a project with Raspberry Pi, a monitor may not always be accessib
 
 Open "Terminal" (usually located on the task bar of Raspbian) and enter the following command:
 
-```sh
+```bash
 sudo apt-get update
 ```
 
@@ -30,7 +30,7 @@ This command makes sure Raspbian and pieces of software installed are up to date
 
 After it is done, enter the command below.
 
-```sh
+```bash
 sudo raspi-config
 ```
 
@@ -40,7 +40,7 @@ This command opens this configuration window in the terminal.
 
 Next, make sure that you have the latest version of VNC Connect by running the following command:
 
-```sh
+```bash
 sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
 ```
 
@@ -72,7 +72,7 @@ Before we find the IP address, please make sure your ethernet cable is properly 
 
 To get the IP address of your Pi, fire up the terminal just as we did in the last step, and execute the following command:
 
-```sh
+```bash
 ifconfig
 ```
 

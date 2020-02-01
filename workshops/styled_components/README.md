@@ -18,7 +18,7 @@ In your command line, navigate to wherever you keep your projects and create a n
 
 Next, we need to install our libraries:
 
-```sh
+```bash
 npm i react react-dom styled-components --save
 npm i parcel-bundler --save-dev
 ```
@@ -43,10 +43,10 @@ Create a new subdirectory call `src` in `styled-weather`, and create the files `
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Hacker Skies</title>
   </head>
   <body>
