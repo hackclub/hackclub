@@ -2,8 +2,6 @@
 name: 'Intro to Web Components'
 description: 'An introduction to web components and custom elements'
 author: '@shmishtopher'
-group: experimental
-order: 10
 ---
 
 # Getting Started With Web Components

@@ -2,8 +2,6 @@
 name: Cloud9
 description: Introduction to using Cloud9
 author: '@Bogidon'
-group: retired
-order: 4
 ---
 
 # Cloud9 tutorial

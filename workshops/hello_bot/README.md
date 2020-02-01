@@ -2,8 +2,6 @@
 name: Hello Bot
 description: A Discord bot with a simple "Hello World!" command.
 author: '@hickorysb'
-group: experimental
-order: 11
 ---
 
 If you've ever used Discord it's very likely you've come across a bot. This workshop will help guide you on how to create you're own.

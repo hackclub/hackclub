@@ -2,8 +2,6 @@
 name: Chrome Extension
 description: Chrome extension for an editable notepad
 author: '@shmishtopher'
-group: experimental
-order: 7
 ---
 
 # Building a Chrome Extension

@@ -2,8 +2,6 @@
 name: Twilio
 description: A website that makes phone calls and texts
 author: Hack Club staff
-group: retired
-order: 8
 ---
 
 # Introduction to Twilio

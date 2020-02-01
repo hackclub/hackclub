@@ -2,8 +2,6 @@
 name: Notes to Self
 description: An online personal journal
 author: '@jkwok91'
-group: retired
-order: 6
 ---
 
 # Notes to Self

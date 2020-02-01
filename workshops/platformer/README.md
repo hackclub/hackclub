@@ -2,8 +2,6 @@
 name: Platformer
 description: Simple side-scrolling platformer game
 author: '@jkwok91'
-group: start
-order: 9
 ---
 
 # Platformer

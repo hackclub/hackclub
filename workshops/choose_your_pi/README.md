@@ -2,8 +2,6 @@
 name: Choosing your Pi
 description: Learn the differences between different models of Pi
 author: '@1061999'
-group: pi
-order: 2
 ---
 
 So you have finally settled on using a Raspberry Pi for your next project. But which model of Raspberry Pi should a beginner buy?

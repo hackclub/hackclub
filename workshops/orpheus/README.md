@@ -2,8 +2,6 @@
 name: Orpheus
 description: A brief biography of our lord and savior
 author: '@itsmingjie'
-group: misc
-order: 3
 ---
 
 “Who is Orpheus?” You may ask, “and what does she have to do with me learning to code?”

@@ -2,8 +2,6 @@
 name: Twine
 description: Build a text adventure game
 author: '@remixz'
-group: experimental
-order: 3
 ---
 
 # Text Adventure 1: Twine

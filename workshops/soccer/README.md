@@ -2,8 +2,6 @@
 name: Soccer
 description: A simple soccer game
 author: Hack Club staff
-group: retired
-order: 7
 ---
 
 # Soccer

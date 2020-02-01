@@ -2,8 +2,6 @@
 name: Control an LED!
 description: Build an IoT project with Cayenne on your Raspberry Pi
 author: '@1061999'
-group: pi
-order: 5
 ---
 
 Raspberry Pi has become an integral part of IoT projects.

@@ -2,8 +2,6 @@
 name: Maze
 description: A "Scary Maze Game" clone
 author: Hack Club staff
-group: retired
-order: 5
 ---
 
 # Friendly Maze Game

@@ -2,8 +2,6 @@
 name: Preface
 description: Read this before beginning any of the workshops
 author: Hack Club staff
-group: misc
-order: 1
 ---
 
 # Preface

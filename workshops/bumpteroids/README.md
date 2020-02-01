@@ -2,8 +2,6 @@
 name: Bumpteroids
 description: Build a clone of the classic Asteroids arcade game
 author: '@Cayce2514'
-group: retired
-order: 14
 ---
 
 _Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section._

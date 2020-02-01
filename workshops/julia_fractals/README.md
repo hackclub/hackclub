@@ -2,8 +2,6 @@
 name: 'Julia Fractals'
 description: 'Draw some fractals with math.js and HTML Canvas'
 author: '@polytroper'
-group: 'start'
-order: 12
 begin: 'https://repl.it/@polytrope/julia-fractals-starter'
 ---
 

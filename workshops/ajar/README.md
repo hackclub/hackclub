@@ -2,8 +2,6 @@
 name: Ajar.io
 description: A clone of agar.io
 author: '@Bogidon'
-group: retired
-order: 15
 ---
 
 _Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section._
