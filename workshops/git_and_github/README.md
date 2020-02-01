@@ -1,7 +1,7 @@
 ---
 name: Git and GitHub
 description: Introduction to using Git and GitHub
-author: '@notbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram'
+author: '@notbrian,@JevinSidhu,@uditdesai,@vaibhavyadaram'
 group: retired
 order: 2
 ---
