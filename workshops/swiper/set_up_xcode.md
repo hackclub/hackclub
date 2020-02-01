@@ -13,15 +13,15 @@ Xcode**.
 
 Alright, once you have Xcode installed, you are ready to create your first
 project! First, press the Xcode icon on your dock. This should create a pop-up,
-prompting you to create a project or open an existing one. First, click *Create
-a New Xcode Project* which should take you to a screen asking you what kind of
-project to make. Select *Game* and press *Next*. Now you need to fill in your
+prompting you to create a project or open an existing one. First, click _Create
+a New Xcode Project_ which should take you to a screen asking you what kind of
+project to make. Select _Game_ and press _Next_. Now you need to fill in your
 project information. The product name can be whatever you would like. We will
-call this game *Swiper*. The organization name is the same as your company name
+call this game _Swiper_. The organization name is the same as your company name
 which can be whatever you wish. The field directly below that, the organization
 identifier, will be in the format **com.organization-name**. Make sure Swift is
 set as the language, devices set to Universal, and both of the boxes below
-checked. Select *Next* and then choose a location for which you want the
+checked. Select _Next_ and then choose a location for which you want the
 project.
 
 ![](img/Step 1/1. HCCreateProject.gif)
@@ -39,7 +39,7 @@ test and play with your game.
 
 Now, let's start setting up the project so we can start making the game! First
 we have to delete a couple of files. Right click on both `GameScene.swift` and
-`GameScene.sks` and click *Delete*. Select *Move to Trash* in the pop-up that
+`GameScene.sks` and click _Delete_. Select _Move to Trash_ in the pop-up that
 appears.
 
 ![](img/Step 1/3. HCDeleteFiles.gif)
@@ -48,8 +48,8 @@ Alright! Now we can start creating. First we must create the class that the bulk
 of the code for the game will be. A class is the container in which the code
 will be in. Each class will contain the code for a screen. So we will have three
 of them. One for the Title Screen, Game Screen, and Game Over Screen. To make a
-class, click *File* -> *New* -> *File*. Then, name the file `GameScene.swift`.
-Then click *Create*. This will be your new Game Scene.
+class, click _File_ -> _New_ -> _File_. Then, name the file `GameScene.swift`.
+Then click _Create_. This will be your new Game Scene.
 
 ![](img/Step 1/4. HCCreateClass.gif)
 
@@ -139,6 +139,6 @@ You learned how to:
 - Delete classes
 - Utilize SpriteKit
 
---------------------------------------------------------------------------------
+---
 
 You are ready to go to Part 2 where you create the `PlayScene`!

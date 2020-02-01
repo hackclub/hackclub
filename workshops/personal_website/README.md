@@ -1,8 +1,8 @@
 ---
-name: "Personal Website"
-description: "Making your first website from scratch"
+name: 'Personal Website'
+description: 'Making your first website from scratch'
 author: '@MaxWofford'
-group: "start"
+group: 'start'
 order: 1
 ---
 
@@ -56,6 +56,7 @@ Repl.it gives us some code to start out with, but we're going to start from scra
 This structure is common to all HTML pages. In fact, you can take a look for yourself! Just right click on any web page, including this one, and click "View page source" (sometimes called "Inspect" depending on your browser) to see what's going on behind the scenes. You'll find each of these elements on every page – the doctype, and an HTML tag wrapped around a head and body.
 
 <!-- Source https://developers.google.com/web/tools/chrome-devtools/inspect-styles/imgs/elements-panel.png -->
+
 ![](img/elements-panel.png)
 
 Before proceeding, we'll briefly go over what our template means.
@@ -220,7 +221,7 @@ Now let's change the font of our text. We'll add another attribute, `font-family
 ```css
 body {
   text-align: center;
-  font-family: "Arial";
+  font-family: 'Arial';
 }
 ```
 
@@ -229,7 +230,7 @@ You can take this even further by adding a bit of color to the page! The attribu
 ```css
 body {
   text-align: center;
-  font-family: "Arial";
+  font-family: 'Arial';
   background: azure;
   color: purple;
 }

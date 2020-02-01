@@ -3,7 +3,8 @@
 ## Background
 
 | We made a blank canvas in Step 1: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> ![](img/1_mini.png) <br> | Eventually in step 3, we want to add a player sprite that follows the mouse: <br> ![](img/3_mini.gif) | But for now (step 2) we are just adding a sprite that does not move: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> ![](img/2_mini.png) |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
 
 ## Outcome of This Step
 
@@ -16,14 +17,14 @@ After you finish this step, you will learn how to add the player sprite. Here is
 ## Choose Your Own Path
 
 - [**Walk me through this code step-by-step.**](#walk-through-of-the-code-step-by-step)
-    - Recommended for those who
-      - Are beginners
-      - Want an in depth understanding of the code
+  - Recommended for those who
+    - Are beginners
+    - Want an in depth understanding of the code
 - [**Give me a brief overview of this code.**](#brief-overview-of-the-code)
-    - Recommended for those who
-      - Have more experience
-      - Want to cover more ground but have a less in-depth understanding
-      - Want to recap what they did in the step-by-step section
+  - Recommended for those who
+    - Have more experience
+    - Want to cover more ground but have a less in-depth understanding
+    - Want to recap what they did in the step-by-step section
 
 # Walk Through of the Code Step-By-Step
 
@@ -32,7 +33,7 @@ After you finish this step, you will learn how to add the player sprite. Here is
 We can create a sprite by writing the code:
 
 ```js
-createSprite();
+createSprite()
 ```
 
 Because we only want to create the sprite once, we want to write this in the `setup` function because the `setup` function is only run once.
@@ -81,7 +82,6 @@ Here is how the coordinate system is laid out:
 
 ![](img/2_coordinate_details.png)
 
-
 And this is what means for our sprite to have it's coordinates set to `x = 125` and `y = 250`
 
 ![](img/2_sprite_position.png)
@@ -110,7 +110,6 @@ Let's make the height 50 pixels instead of the default `100` as well.
 createSprite(125, 250, 50, 50);
                            ^
                            └ sets the *height* of the sprite to 50 pixels
-
 ```
 
 - [ ] _Modify your code so that it reflects the above:_
@@ -140,7 +139,7 @@ So although, we have already created the sprite, the program will not remember i
 Let's create a variable named `player`:
 
 ```js
-var player;
+var player
 ```
 
 - [ ] _Go ahead and add this line to the top of your code:_
@@ -170,17 +169,17 @@ Reproduced below is the code that adds the new sprites:
 New lines marked with `// <-- NEW LINE`.
 
 ```js
-var player;                                 // <-- NEW LINE
+var player // <-- NEW LINE
 
 function setup() {
-  createCanvas(250, 500);
+  createCanvas(250, 500)
 
-  player = createSprite(125, 250, 50, 50);  // <-- NEW LINE
+  player = createSprite(125, 250, 50, 50) // <-- NEW LINE
 }
 
 function draw() {
-  background(255, 240, 220);
-  drawSprites();
+  background(255, 240, 220)
+  drawSprites()
 }
 ```
 
@@ -210,13 +209,14 @@ player = createSprite(150, 100, 50, 50);
 
 ## Next Up
 
-| **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|--------------------------------------------------------------------|
+| **[![](img/3_mini.gif) <br> 3. Mouse Movement](mouse_movement.md)** |
+| ------------------------------------------------------------------- |
+
 
 ## Steps
 
-| **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
-| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |
+| **[![](img/1_mini.png) <br> 1. Initial Setup](initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite](add_player_sprite.md)** | **[![](img/3_mini.gif) <br> 3. Mouse Movement](mouse_movement.md)** |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**   | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                   | **[![](img/readme.png) <br> Back to the README.md](README.md)**     |
 
 [player]: https://jsbin.com/gist/d49b1d9db96d9e51e865

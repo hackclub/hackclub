@@ -90,7 +90,7 @@ import { App } from './App.js'
 ### Render your project
 
 ```js
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'))
 ```
 
 - `<App />` is a component that displays your website

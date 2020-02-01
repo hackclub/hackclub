@@ -47,7 +47,7 @@ addChild(scoreLabel)
 
 Finally, let's run the project to see what we just did!
 
- ![](img/Step 4/3. HCRunProjectScore.gif)
+![](img/Step 4/3. HCRunProjectScore.gif)
 
 ### Recap
 
@@ -57,7 +57,7 @@ You learned how to:
 - Create a `SKLabelNode` with a changing text value
 - Set the `zPosition` on a node
 
---------------------------------------------------------------------------------
+---
 
 This part was short and sweet! You are ready to continue on to Part 5 in which
 you set up the box spawning in the `GameScene.swift` file!

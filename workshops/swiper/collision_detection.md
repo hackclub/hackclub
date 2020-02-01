@@ -130,7 +130,7 @@ You learned how to:
 - Stopping an `SKAction`
 - Remove all nodes on the screen using an `array`
 
---------------------------------------------------------------------------------
+---
 
 One more part left! Next we will fill out the `GameOverScene.swift`, and finish
 out your first game!

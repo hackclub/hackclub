@@ -1,7 +1,7 @@
 ---
 name: Twine
 description: Build a text adventure game
-author: "@remixz"
+author: '@remixz'
 group: experimental
 order: 3
 ---
@@ -77,11 +77,11 @@ If you're stuck on your story, feel free to work with others! Collaboration is s
 
 ## Formatting your story
 
-Through things like **bolding** and *italicizing*, you can help to convey different types of tone throughout your story. You can see [a full reference of the types of text styling here](http://twine2.neocities.org/#markup_style), but here's a quick cheatsheet:
+Through things like **bolding** and _italicizing_, you can help to convey different types of tone throughout your story. You can see [a full reference of the types of text styling here](http://twine2.neocities.org/#markup_style), but here's a quick cheatsheet:
 
-- `*Italics*` -> Creates *Italics*
+- `*Italics*` -> Creates _Italics_
 - `**Bolding**` -> Creates **Bolding**
-- `***Bold italics***` -> Creates ***Bold italics***
+- `***Bold italics***` -> Creates **_Bold italics_**
 - `~~Crossed out~~` -> Creates ~~Crossed out~~
 
 You'll also notice on that page it mentions that macros can be used to format your text. Let's talk about what a macro is, and how you can use them.

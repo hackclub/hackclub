@@ -1,7 +1,7 @@
 ---
 name: Portfolio
 description: Build your first website
-author: "@jonleung"
+author: '@jonleung'
 group: retired
 order: 1
 ---
@@ -288,7 +288,6 @@ For example, in an `<input>` tag:
 - `type` is the name of the attribute
 - `"text"` is the value of the `type` attribute
 
-
 ```html
 <img src="http://i.imgur.com/C6P1T0G.jpg">
      ^^^ "src" is the name of the attribute
@@ -356,7 +355,7 @@ Read the following as one long sentence:
 > ![](img/css_curly_braces.png) `{` `}` are called curly braces
 
 > ![](img/css_property.png) the thing on the left side of the semicolon is
-> called the `"property", in this case it is `width`
+> called the `"property", in this case it is`width`
 
 > ![](img/css_value.png) `50%` is what's known as the `"value"`
 

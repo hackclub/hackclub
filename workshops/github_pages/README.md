@@ -1,7 +1,7 @@
 ---
 name: GitHub Pages
 description: Launch your website with GitHub's free hosting
-author: "@sethtrei"
+author: '@sethtrei'
 group: retired
 order: 3
 ---
@@ -50,23 +50,23 @@ code.
 1. Get the link for cloning. It is on the right side of your repository. If you
    click the little icon, the link is now on your clipboard.
 
-     > ![](https://goo.gl/BCQIQP)
+   > ![](https://goo.gl/BCQIQP)
 
 2. Go into your Cloud9 workspace and open a new terminal (Alt+T, or Window > New
    Terminal).
 
-     > ![](resources/openterm.gif)
+   > ![](resources/openterm.gif)
 
 3. In the terminal type: `git clone [then the link you just copied]`
 
-     > ![](resources/clone.gif)
+   > ![](resources/clone.gif)
 
 **Congrats! You can now edit and save in your repository!**
 
 You should start creating the necessary files for a website. (`index.html`,
 `style.css`, etc)
 
--------------------------------------------------------------------------------
+---
 
 # Part 2
 
@@ -83,21 +83,21 @@ into your GitHub repository.
 After you make changes to your site on Cloud9 you will need to put the changes on
 GitHub for the changes to show up on your site.
 
-1. **Switch into your repo in the terminal**
+1.  **Switch into your repo in the terminal**
 
         cd [repository name]
 
-2. **Add your changes to the commit list by doing...**
+2.  **Add your changes to the commit list by doing...**
 
         git add .
 
-3. **Commit your changes with the following format**
+3.  **Commit your changes with the following format**
 
         git commit -m "Here you type what the commit does. Keep the quotations."
 
     This will get your changes ready to push to GitHub
 
-4. **Push your changes**
+4.  **Push your changes**
 
         git push
 

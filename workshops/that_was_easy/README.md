@@ -1,7 +1,7 @@
 ---
 name: That Was Easy
 description: Website with clickable buttons that make sounds
-author: "@jkwok91"
+author: '@jkwok91'
 group: retired
 order: 16
 ---
@@ -206,7 +206,7 @@ JavaScript makes using audio easy with the Audio object. We are going to play au
 We'll be storing the Audio object in a variable. A variable in JavaScript is something that stores a value. First, let's declare the existence of our variable by typing the following into `script.js`:
 
 ```js
-var thatWasEasy;
+var thatWasEasy
 ```
 
 Go ahead and download our "That was easy" audio from the link below
@@ -231,8 +231,8 @@ Here, we've created a new `Audio` object that will have the sound `that_was_easy
 And we'll play the sound by using a built-in method (`.play()`) included in the Audio object. We'll add this line beneath the creation of `thatWasEasy`, like so:
 
 ```js
-var thatWasEasy = new Audio("that_was_easy.mp3");
-thatWasEasy.play();
+var thatWasEasy = new Audio('that_was_easy.mp3')
+thatWasEasy.play()
 ```
 
 `.play()` is a function that is a part of the Audio object, and it plays the sound.
@@ -270,7 +270,7 @@ In order to connect the button and the function, we must first identify the butt
 We can [use jQuery to find the button](https://learn.jquery.com/using-jquery-core/selecting-elements/), by using special syntax. We'll type this below our function, in `script.js`:
 
 ```js
-$("#easy");
+$('#easy')
 ```
 
 Now that we have selected our button in the JavaScript by its `id`, we can access the methods attached to the button.
@@ -304,11 +304,11 @@ Your JavaScript file should now look like this:
 
 ```js
 function sayThatWasEasy() {
-  var thatWasEasy = new Audio("that_was_easy.mp3");
-  thatWasEasy.play();
+  var thatWasEasy = new Audio('that_was_easy.mp3')
+  thatWasEasy.play()
 }
 
-$("#easy").on("click", sayThatWasEasy);
+$('#easy').on('click', sayThatWasEasy)
 ```
 
 ## Part IV: The CSS File
@@ -319,7 +319,6 @@ First, let's select it! Using our very handy `id`:
 
 ```css
 #easy {
-
 }
 ```
 
@@ -379,7 +378,7 @@ Maybe you'd like to use this button mouse-free. Maybe you prefer using the keybo
 First, we must set up our JavaScript so that the page can detect that we have pressed a key. Thanks to jQuery, we can add this feature easily, with the following line of code, which we will type at the bottom of our `script.js`:
 
 ```js
-$(document).keypress();
+$(document).keypress()
 ```
 
 jQuery has a method called `.keypress()`, which takes a function as an argument. It then executes this function when a key is pressed. Much like `.on()`, `.keypress()` listens for an event; specifically, it listens for the key pressed event. Here, we are specifying that we want to listen for a key press on the entire document, hence `$(document)`. `$(document)` is how jQuery refers to the whole page.
@@ -409,7 +408,6 @@ We'll add this in our `delegateKeypress()` function:
 
 ```js
 if (event.charCode == 32) {
-
 }
 ```
 
@@ -420,8 +418,8 @@ So, if the character code is indeed 32, I would like the browser to tell me "Tha
 ```js
 function delegateKeypress(event) {
   if (event.charCode == 32) {
-    var thatWasEasy = new Audio("that_was_easy.mp3");
-    thatWasEasy.play();
+    var thatWasEasy = new Audio('that_was_easy.mp3')
+    thatWasEasy.play()
   }
 }
 ```
@@ -454,17 +452,17 @@ Our JavaScript file now looks like this:
 
 ```js
 function sayThatWasEasy() {
-  var thatWasEasy = new Audio("that_was_easy.mp3");
-  thatWasEasy.play();
+  var thatWasEasy = new Audio('that_was_easy.mp3')
+  thatWasEasy.play()
 }
 
-$("#easy").on("click", sayThatWasEasy);
+$('#easy').on('click', sayThatWasEasy)
 
-$(document).keypress(delegateKeypress);
+$(document).keypress(delegateKeypress)
 
 function delegateKeypress(event) {
   if (event.charCode == 32) {
-    $("#easy").trigger("click");
+    $('#easy').trigger('click')
   }
 }
 ```

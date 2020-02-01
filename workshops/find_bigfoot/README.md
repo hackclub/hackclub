@@ -2,7 +2,7 @@
 name: Find Bigfoot
 description: Simple game to find Bigfoot using HTML, CSS and JS
 author: '@ad510, @qmogh'
-group: "start"
+group: 'start'
 order: 2
 ---
 
@@ -35,8 +35,8 @@ Open a new HTML project on [**repl.it**/languages/js](https://repl.it/languages/
 
 1. Go to https://github.com/hackclub/hackclub/tree/master/workshops/find_bigfoot/assets
 2. Click on each image, then right click and **Save Image As** to save it to your computer
-  ![](img/bigfoot.gif)
-  ![](img/forest.gif)
+   ![](img/bigfoot.gif)
+   ![](img/forest.gif)
 3. Drag all the images you saved into the repl.it sidebar
 
 Now you're all set with the images you'll need!
@@ -236,14 +236,14 @@ Now we have another problem. This game is… too easy. Once somebody plays it on
 Open your script.js file and let’s make a new function `moveBigFoot();`
 
 ```js
-function moveBigFoot() {
-}
+function moveBigFoot() {}
 ```
 
 Now remember, we’re trying to move bigfoot randomly around the screen. So the first thing we need to do is make a variable that will get our image. Like earlier, we’ll use “document.getElementbyId.”
+
 ```js
 function moveBigFoot() {
-       var picture = document.getElementById('bigFoot')
+  var picture = document.getElementById('bigFoot')
 }
 ```
 
@@ -257,10 +257,10 @@ So since we have two numbers to generate (for `left:` and `top:`) we need to cre
 
 ```js
 function moveBigFoot() {
-       var picture = document.getElementById('bigFoot')
+  var picture = document.getElementById('bigFoot')
 
-       var x = Math.random()*300;
-       var y = Math.random()*300;
+  var x = Math.random() * 300
+  var y = Math.random() * 300
 }
 ```
 
@@ -314,14 +314,15 @@ And our `moveBigFoot()` function in scripts.js should look like this
 
 ```js
 function moveBigFoot() {
-       alert('Woohoo, you win! You found Bigfoot!')
-       var picture = document.getElementById('bigFoot')
+  alert('Woohoo, you win! You found Bigfoot!')
+  var picture = document.getElementById('bigFoot')
 
-       var x = Math.random()*300;
-       var y = Math.random()*300;
+  var x = Math.random() * 300
+  var y = Math.random() * 300
 
-       picture.style.top = x + 'px';picture.style.left = y + 'px';
-       }
+  picture.style.top = x + 'px'
+  picture.style.left = y + 'px'
+}
 ```
 
 Now let's try it. Go ahead and click on bigfoot.

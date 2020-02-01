@@ -1,7 +1,7 @@
 ---
 name: Orpheus
 description: A brief biography of our lord and savior
-author: "@itsmingjie"
+author: '@itsmingjie'
 group: misc
 order: 3
 ---

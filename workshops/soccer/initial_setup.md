@@ -42,16 +42,16 @@ Don't worry about this too much now, we'll touch on this more later.
 
 For the rest of this section, we're going to understand the following lines of code:
 
-  - `createCanvas(300, 500);`
-  - `background(255, 240, 220);`
-  - `drawSprites();`
+- `createCanvas(300, 500);`
+- `background(255, 240, 220);`
+- `drawSprites();`
 
 ## Understanding `createCanvas`
 
 Let's understand what this code does:
 
 ```js
-createCanvas(300, 500);
+createCanvas(300, 500)
 ```
 
 ### Understanding through Tinkering
@@ -114,8 +114,9 @@ The code `drawSprites()` is responsible for drawing all of those sprites to the 
 
 ## Next
 
-| **[![](img/2_mini.png)  <br> 2. Add Player Sprite](add_player_sprite.md)** |
-|----------------------------------------------------------------------------|
+| **[![](img/2_mini.png) <br> 2. Add Player Sprite](add_player_sprite.md)** |
+| ------------------------------------------------------------------------- |
+
 
 # Appendix
 
@@ -189,8 +190,8 @@ This function has no output. This may not seem like it makes sense right now, bu
 
 ## Steps
 
-| **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
-| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |
+| **[![](img/1_mini.png) <br> 1. Initial Setup](initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite](add_player_sprite.md)** | **[![](img/3_mini.gif) <br> 3. Mouse Movement](mouse_movement.md)** |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**   | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                   | **[![](img/readme.png) <br> Back to the README.md](README.md)**     |
 
---------------------------------------------------------------------------------
+---

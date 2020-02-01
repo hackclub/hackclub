@@ -1,7 +1,7 @@
 ---
 name: Remote Viewing
 description: Set up remote viewing with VNC on Pi
-author: "@1061999"
+author: '@1061999'
 group: pi
 order: 4
 ---
@@ -64,7 +64,7 @@ That's it! You have enabled the VNC server on your Pi.
 
 ## Find the IP address of your Pi
 
-To connect to your Pi, you need to first find its IP address.  
+To connect to your Pi, you need to first find its IP address.
 
 An Internet Protocol, or IP, is a set of rules that govern Internet activity and facilitate completion of a variety of actions on the World Wide Web. Therefore, an Internet Protocol address, or IP address, is basically your address on the world wide web.
 
@@ -86,11 +86,11 @@ Remember! If your IP address starts with `192.168.` or `10.0.`, it's an internal
 
 ## Setting up VNC viewer on a PC/smartphone
 
-Install the VNC app from [Google Play](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en). If you are using  If you are using your PC, go to [this website](https://www.realvnc.com/en/connect/download/viewer/) to download VNC viewer.
+Install the VNC app from [Google Play](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en). If you are using If you are using your PC, go to [this website](https://www.realvnc.com/en/connect/download/viewer/) to download VNC viewer.
 
 We have provided a general example of the steps performed to connect from an Android device using RealVNC Viewer. Steps on other software or operating systems may be different, but they will ask for the same set of information.
 
-*Note: Your PC/smartphone needs to be on the same network that you Pi is connected to.*
+_Note: Your PC/smartphone needs to be on the same network that you Pi is connected to._
 
 1. Open the VNC app and click the **+** icon. Type in the IP address of your Pi.
 

@@ -47,10 +47,7 @@ Now you can use it like this:
 JSX tip: when you’re passing a string (text) value to a prop, you can use quotes, just like in HTML, but if you’re passing JavaScript, you use curly braces. If articles had multiple authors, we’d pass an array:
 
 ```js
-<Article
-  title="Hello Hack Club!"
-  author={["@lachlanjc", "@zachlatta"]}
-/>
+<Article title="Hello Hack Club!" author={['@lachlanjc', '@zachlatta']} />
 ```
 
 [(Want to read more about JSX?)](https://reactjs.org/docs/introducing-jsx.html)
@@ -69,9 +66,7 @@ Looking around the project, there are two important files:
 At its most basic, a page with Next.js (so a file like `pages/index.js`) looks like this. What gets rendered on the page goes inside the “default export” of the file.
 
 ```js
-export default () => (
-  <h1>Welcome!</h1>
-)
+export default () => <h1>Welcome!</h1>
 ```
 
 ### Making your first Next.js page
@@ -191,14 +186,16 @@ export default () => {
         <button>Add item</button>
       </div>
       <ul>
-        {items.map(item => <li key={item}>{item}</li>)}
+        {items.map(item => (
+          <li key={item}>{item}</li>
+        ))}
       </ul>
     </main>
   )
 }
 ```
 
-Next up, we need to define some state on this component. Delete the `const items` line, and set up 
+Next up, we need to define some state on this component. Delete the `const items` line, and set up
 
 ```js
 export default () => {
@@ -212,7 +209,9 @@ export default () => {
         <button>Add item</button>
       </div>
       <ul>
-        {items.map(item => <li key={item}>{item}</li>)}
+        {items.map(item => (
+          <li key={item}>{item}</li>
+        ))}
       </ul>
     </main>
   )
@@ -234,11 +233,17 @@ export default () => {
     <main>
       <h1>Shopping List</h1>
       <div>
-        <input placeholder="New item" onChange={changeNewItem} value={newItem} />
+        <input
+          placeholder="New item"
+          onChange={changeNewItem}
+          value={newItem}
+        />
         <button onClick={addItem}>Add item</button>
       </div>
       <ul>
-        {items.map(item => <li key={item}>{item}</li>)}
+        {items.map(item => (
+          <li key={item}>{item}</li>
+        ))}
       </ul>
     </main>
   )
@@ -248,8 +253,8 @@ export default () => {
 This is a little more complex, so let’s break it down:
 
 1. `items` is our array of the items on the list (which `items.map` shows further down)
-    - What we pass to `useState` is the default value, so before the user does anything, that’s the initial state.
-    - `setItems` is a function React is generating for us for changing the value of `items`. The whole page is, underneath, a function (see the `() => {}` on the first line), so if you were to do `items = […]`, the next time React ran the function to render the page, the changes to the variable would disappear. To get around this, React keeps track of our state outside the context of just the functions for each component.
+   - What we pass to `useState` is the default value, so before the user does anything, that’s the initial state.
+   - `setItems` is a function React is generating for us for changing the value of `items`. The whole page is, underneath, a function (see the `() => {}` on the first line), so if you were to do `items = […]`, the next time React ran the function to render the page, the changes to the variable would disappear. To get around this, React keeps track of our state outside the context of just the functions for each component.
 2. `newItem` & `setNewItem` work similarly, keeping track of the text the user types into the input box in a second chunk of React state.
 3. `changeNewItem` is a function we wrote so that when the user types into the input box, we get the value of the input & set it to the state. (`e` is the raw JavaScript event, `target` is the HTML element the event happened to, then `value` is the current value of the element.)
 4. `addItem` is the code that runs when the user presses the “Add item” button. It adds the `newItem` to the list of `items`, then clears the input box. (This works because we set the `value` of the state, so when we change the state, so does the element.)
@@ -283,8 +288,14 @@ Open up your app: the homepage has a magenta heading, but critically, the headin
   <h1>Shopping List</h1>
   {/*the rest of your code...*/}
   <style jsx>{`
-    ul { list-style: none; padding: 0; }
-    li { padding: 1em 0; border-top: 1px solid #eee; }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 1em 0;
+      border-top: 1px solid #eee;
+    }
   `}</style>
 </main>
 ```

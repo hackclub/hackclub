@@ -35,34 +35,34 @@ In this workshop we'll be implementing a real-time chat using Firebase. Firebase
 - Make another new file within `chat` and name it `main.js`
 - Type the base template into `index.html`. Here's what our `index.html` should look like after doing this:
 
-    ```html
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <title>Chat with Me!</title>
-      <head>
-      <body>
-      </body>
-    </html>
-    ```
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Chat with Me!</title>
+    <head>
+    <body>
+    </body>
+  </html>
+  ```
 
 - Include Firebase, by adding this to the **body** of `index.html`:
 
-    ```html
-    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-    ```
+  ```html
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  ```
 
 - Now let's also add jQuery. Type the following script tag below the one that adds Firebase:
 
-    ```html
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    ```
+  ```html
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  ```
 
 - Lastly, include the `main.js`, by adding this after the previous line:
 
-    ```html
-    <script src="main.js"></script>
-    ```
+  ```html
+  <script src="main.js"></script>
+  ```
 
 ## Part II: The HTML File
 
@@ -103,12 +103,12 @@ So far our `main.js` looks like this (your URLs and keys will be different):
 
 ```js
 var config = {
-  apiKey: "AIbaSxCyCLHv4X9TnygLWKoBt52ml_A4TjjNVek",
-  authDomain: "chat-test-bxcdb.firebaseapp.com",
-  databaseURL: "https://chat-test-bxcdb.firebaseio.com",
-  storageBucket: "",
-};
-firebase.initializeApp(config);
+  apiKey: 'AIbaSxCyCLHv4X9TnygLWKoBt52ml_A4TjjNVek',
+  authDomain: 'chat-test-bxcdb.firebaseapp.com',
+  databaseURL: 'https://chat-test-bxcdb.firebaseio.com',
+  storageBucket: ''
+}
+firebase.initializeApp(config)
 ```
 
 Now if we save our `main.js` and check out the external live preview, we'll see an error in console! Why is this?
@@ -145,14 +145,14 @@ We should have something like this:
 
 ```js
 var config = {
-  apiKey: "AIbaSxCyCLHv4X9TnygLWKoBt52ml_A4TjjNVek",
-  authDomain: "chat-test-bxcdb.firebaseapp.com",
-  databaseURL: "https://chat-test-bxcdb.firebaseio.com",
-  storageBucket: "",
-};
-firebase.initializeApp(config);
+  apiKey: 'AIbaSxCyCLHv4X9TnygLWKoBt52ml_A4TjjNVek',
+  authDomain: 'chat-test-bxcdb.firebaseapp.com',
+  databaseURL: 'https://chat-test-bxcdb.firebaseio.com',
+  storageBucket: ''
+}
+firebase.initializeApp(config)
 
-var chatData = firebase.database().ref();
+var chatData = firebase.database().ref()
 ```
 
 ### Saving Messages to Firebase
@@ -164,10 +164,9 @@ First, we'll write a function that, when you press <kbd>enter</kbd> after typing
 Let's create the function, and attach it to a key press on the message input:
 
 ```js
-function pushMessage(event) {
-}
+function pushMessage(event) {}
 
-$('#messageInput').keypress(pushMessage);
+$('#messageInput').keypress(pushMessage)
 ```
 
 Now we will say "if the event's key code is that of the <kbd>enter</kbd> key, do stuff" by adding a conditional.
@@ -190,8 +189,8 @@ We need the message's sender and text, so that we can pass them to Firebase. We'
 ```js
 function pushMessage(event) {
   if (event.keyCode == 13) {
-    var name = $('#nameInput').val();
-    var text = $('#messageInput').val();
+    var name = $('#nameInput').val()
+    var text = $('#messageInput').val()
   }
 }
 ```
@@ -201,9 +200,9 @@ Finally we'll push to Firebase by using `.push()` method on the reference we've 
 ```js
 function pushMessage(event) {
   if (event.keyCode == 13) {
-    var name = $('#nameInput').val();
-    var text = $('#messageInput').val();
-    chatData.push({name: name, text: text});
+    var name = $('#nameInput').val()
+    var text = $('#messageInput').val()
+    chatData.push({ name: name, text: text })
   }
 }
 ```
@@ -213,10 +212,10 @@ And to finish it up, we'll clear the message input:
 ```js
 function pushMessage(event) {
   if (event.keyCode == 13) {
-    var name = $('#nameInput').val();
-    var text = $('#messageInput').val();
-    chatData.push({name: name, text: text});
-    $('#messageInput').val('');
+    var name = $('#nameInput').val()
+    var text = $('#messageInput').val()
+    chatData.push({ name: name, text: text })
+    $('#messageInput').val('')
   }
 }
 ```
@@ -230,18 +229,16 @@ Now, save and try sending a message in your live preview! Sure, nothing shows up
 It's great that our messages are being sent and stored in Firebase, but We want them to be displayed on our page, too. We'll use Firebase's `.on()` method to handle the event of sending a message. In the event that a message is added to Firebase, we will call a function to display it. We will create that function now, by typing the following beneath the `pushMessage()` function:
 
 ```js
-chatData.on("child_added", showMessage);
+chatData.on('child_added', showMessage)
 
-function showMessage(msg) {
-
-}
+function showMessage(msg) {}
 ```
 
 Note that we are passing an argument called `msg` into `showMessage`. This is how Firebase returns the data for each message in the database. We can access said data by calling one of its methods (`.val()`). We'll store this data in a variable named `message`:
 
 ```js
 function showMessage(msg) {
-  var message = msg.val();
+  var message = msg.val()
 }
 ```
 
@@ -249,9 +246,9 @@ Now that we've got the message data in `message`, we'll extract the specific pie
 
 ```js
 function showMessage(msg) {
-  var message = msg.val();
-  var messageSender = message.name;
-  var messageContent = message.text;
+  var message = msg.val()
+  var messageSender = message.name
+  var messageContent = message.text
 }
 ```
 
@@ -259,11 +256,11 @@ Lastly, we'll add it to our HTML using some jQuery. Start by creating a new elem
 
 ```js
 function showMessage(msg) {
-  var message = msg.val();
-  var messageSender = message.name;
-  var messageContent = message.text;
+  var message = msg.val()
+  var messageSender = message.name
+  var messageContent = message.text
 
-  var messageEl = $("<div/>").addClass("message");
+  var messageEl = $('<div/>').addClass('message')
 }
 ```
 
@@ -271,13 +268,13 @@ Then we'll create two [`span`](https://www.google.com/search?q=what+is+a+span+ht
 
 ```js
 function showMessage(msg) {
-  var message = msg.val();
-  var messageSender = message.name;
-  var messageContent = message.text;
+  var message = msg.val()
+  var messageSender = message.name
+  var messageContent = message.text
 
-  var messageEl = $("<div/>").addClass("message");
-  var senderEl = $("<span/>").text(messageSender + ": ");
-  var contentEl = $("<span/>").text(messageContent);
+  var messageEl = $('<div/>').addClass('message')
+  var senderEl = $('<span/>').text(messageSender + ': ')
+  var contentEl = $('<span/>').text(messageContent)
 }
 ```
 
@@ -286,10 +283,10 @@ Note that we've added a `+ ": "` to our text. The `+` operator when applied to s
 For example:
 
 ```js
-var hack = "Hack";
-var club = "Club";
-var hackClub = hack + club; // "HackClub"
-var hack_club = hack + " " + club; // "Hack Club"
+var hack = 'Hack'
+var club = 'Club'
+var hackClub = hack + club // "HackClub"
+var hack_club = hack + ' ' + club // "Hack Club"
 ```
 
 Thus, here, we are concatenating the sender's name (`messageSender`) and the string `": "` and placing it in `senderEl`.
@@ -299,18 +296,18 @@ Now that we have filled our elements, we'll add them to the `messageEl` and in t
 ```js
 function showMessage(msg) {
   // get the message object added to Firebase
-  var message = msg.val();
-  var messageSender = message.name;
-  var messageContent = message.text;
+  var message = msg.val()
+  var messageSender = message.name
+  var messageContent = message.text
 
-  var messageEl = $("<div/>").addClass("message");
-  var senderEl = $("<span/>").text(messageSender + ': ');
-  var contentEl = $("<span/>").text(messageContent);
+  var messageEl = $('<div/>').addClass('message')
+  var senderEl = $('<span/>').text(messageSender + ': ')
+  var contentEl = $('<span/>').text(messageContent)
 
   // .append adds an element to the end
-  messageEl.append(senderEl);
-  messageEl.append(contentEl);
-  $('#messages').append(messageEl);
+  messageEl.append(senderEl)
+  messageEl.append(contentEl)
+  $('#messages').append(messageEl)
 }
 ```
 

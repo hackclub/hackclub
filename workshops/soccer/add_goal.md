@@ -2,8 +2,9 @@
 
 ## Background
 
-| From step 4: we added a ball we can dribble <br> ![](img/4_mini.gif) |  Now we need a goal to score in <br> ![](img/5_mini.gif)  |
-|----------------------------------------------------------------------|-----------------------------------------------------------|
+| From step 4: we added a ball we can dribble <br> ![](img/4_mini.gif) | Now we need a goal to score in <br> ![](img/5_mini.gif) |
+| -------------------------------------------------------------------- | ------------------------------------------------------- |
+
 
 ## Outcome of This Step
 
@@ -22,14 +23,14 @@ Here is the resulting code (_the new code is highlighted in gray_):
 ## Choose Your Own Path
 
 - [**Walk me through this code step-by-step.**](#walk-through-of-the-code-step-by-step)
-    - Recommended for those who
-      - Are beginners
-      - Who want an in depth understanding of the code
+  - Recommended for those who
+    - Are beginners
+    - Who want an in depth understanding of the code
 - [**Give me a brief overview of this code.**](#brief-overview-of-the-code)
-    - Recommended for those who
-      - Have more experience
-      - Want to cover more ground but have a less in depth understanding
-      - Want to recap what they did in the step-by-step section
+  - Recommended for those who
+    - Have more experience
+    - Want to cover more ground but have a less in depth understanding
+    - Want to recap what they did in the step-by-step section
 
 # Walk Through of the Code Step-By-Step
 
@@ -40,26 +41,26 @@ Create a goal sprite in a similar way that you created the player sprite in [ste
 Here's the code that contains the new code to add a ball sprite:
 
 ```js
-var player;
-var ball;
-var goal;                                   // <-- NEW
+var player
+var ball
+var goal // <-- NEW
 
 function setup() {
-  createCanvas(250, 500);
+  createCanvas(250, 500)
 
-  player = createSprite(125, 400, 50, 50);
-  ball = createSprite(125, 250, 25, 25);
-  goal = createSprite(125, 5, 100, 25);     // <-- NEW
+  player = createSprite(125, 400, 50, 50)
+  ball = createSprite(125, 250, 25, 25)
+  goal = createSprite(125, 5, 100, 25) // <-- NEW
 }
 
 function draw() {
-  background(255, 240, 220);
-  drawSprites();
+  background(255, 240, 220)
+  drawSprites()
 
-  player.position.x = mouseX;
-  player.position.y = mouseY;
+  player.position.x = mouseX
+  player.position.y = mouseY
 
-  ball.bounce(player);
+  ball.bounce(player)
 }
 ```
 
@@ -88,7 +89,7 @@ The console inside of JS Bin lets us run one line of code at a time.
 We can write
 
 ```js
-ball.remove();
+ball.remove()
 ```
 
 in the console. When we press enter, it will remove the ball.
@@ -115,7 +116,7 @@ Let's go ahead and write in the final code:
 
 ```js
 if (ball.overlap(goal)) {
-  ball.remove();
+  ball.remove()
 }
 ```
 
@@ -141,30 +142,31 @@ Reproduced below is the code that adds a goal and makes the ball disappear if it
 New lines marked with `// <-- NEW LINE`.
 
 ```js
-var player;
-var ball;
-var goal;                                   // <-- NEW
+var player
+var ball
+var goal // <-- NEW
 
 function setup() {
-  createCanvas(250, 500);
+  createCanvas(250, 500)
 
-  player = createSprite(125, 400, 50, 50);
-  ball = createSprite(125, 250, 25, 25);
-  goal = createSprite(125, 5, 100, 25);     // <-- NEW
+  player = createSprite(125, 400, 50, 50)
+  ball = createSprite(125, 250, 25, 25)
+  goal = createSprite(125, 5, 100, 25) // <-- NEW
 }
 
 function draw() {
-  background(255, 240, 220);
-  drawSprites();
+  background(255, 240, 220)
+  drawSprites()
 
-  player.position.x = mouseX;
-  player.position.y = mouseY;
+  player.position.x = mouseX
+  player.position.y = mouseY
 
-  ball.bounce(player);
+  ball.bounce(player)
 
-  if(ball.overlap(goal)) {                  // <-- NEW
-    ball.remove();                          // <-- NEW
-  }                                         // <-- NEW
+  if (ball.overlap(goal)) {
+    // <-- NEW
+    ball.remove() // <-- NEW
+  } // <-- NEW
 }
 ```
 
@@ -180,7 +182,7 @@ In addition to adding new `goal` sprite, this is the only new piece of code:
 
 ```js
 if (ball.overlap(goal)) {
-  ball.remove();
+  ball.remove()
 }
 ```
 
@@ -198,8 +200,8 @@ Now make this game yours! Go add features to it that you think would be really c
 
 ## Steps
 
-| **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
-| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |
+| **[![](img/1_mini.png) <br> 1. Initial Setup](initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite](add_player_sprite.md)** | **[![](img/3_mini.gif) <br> 3. Mouse Movement](mouse_movement.md)** |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**   | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                   | **[![](img/readme.png) <br> Back to the README.md](README.md)**     |
 
 [goal]: https://jsbin.com/gist/50b3d37bf568c7159d6c

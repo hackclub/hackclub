@@ -7,7 +7,7 @@ boxes. First we need to create an `NSMutableArray` to store all of the boxes in.
 This will enable us to keep track of all of the boxes we create. An array is a
 special type of object that can hold other objects. It is like a container of
 objects. An `NSMutableArray` is an array that can be changed, modified, and
-*mutated* overtime. The opposite is an `NSArray` which cannot be changed.
+_mutated_ overtime. The opposite is an `NSArray` which cannot be changed.
 
 Below the block of code in which we declared the `scoreLabel` and score `Int`,
 let's define our `NSMutableArray` and `Int`.
@@ -137,7 +137,7 @@ You learned how to:
 - Add an object to an `NSMutableArray`
 - Apply an `impulse` to a `physicsBody`
 
---------------------------------------------------------------------------------
+---
 
 We are getting close to a complete game! In Part 6, we are going to be able to
 swipe the blocks left and right!

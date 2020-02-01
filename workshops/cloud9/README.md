@@ -1,7 +1,7 @@
 ---
 name: Cloud9
 description: Introduction to using Cloud9
-author: "@Bogidon"
+author: '@Bogidon'
 group: retired
 order: 4
 ---
@@ -16,7 +16,7 @@ _**This workshop has been retired and is no longer maintained or recommended.**_
 
 ## What is Cloud9?
 
-*Cloud9 is a website that lets you program online*. Traditionally, all
+_Cloud9 is a website that lets you program online_. Traditionally, all
 programming was done locally on the computer: you would save your files on your
 computer and edit them on your computer (with a code editor). Cloud9 allows you
 to save your files online and edit your files online (Cloud9 also has a code
@@ -26,12 +26,11 @@ No more installing software!
 **Important**: if you're having trouble, checkout the
 [troubleshooting](#troubleshooting) section at the end of the workshop.
 
--------------------------------------------------------------------------------
+---
 
 ## Tips And Tricks
 
-To open a link in another tab, right click on the link and select `Open In New
-Tab`.
+To open a link in another tab, right click on the link and select `Open In New Tab`.
 
 ## Login with GitHub
 
@@ -64,14 +63,14 @@ of your page and you should be prompted to this screen.
 ## Using HTML CSS and JavaScript Together in Cloud9
 
 First we will create a new folder. To do this right click the workspace bar on
-the left and select *New Folder*. You can name this folder whatever you like.
+the left and select _New Folder_. You can name this folder whatever you like.
 
 ![](img/create-folder.gif)
 
 Next we will be creating an HTML file. To do this hit file on the top left of
-your screen, hover over the *New From Template* option, and select *HTML file*.
+your screen, hover over the _New From Template_ option, and select _HTML file_.
 Now we want to save this file in the new folder we just created. To do this go
-to *File* and click *Save As*. Name your file `index.html` and save it inside
+to _File_ and click _Save As_. Name your file `index.html` and save it inside
 the folder you just created.
 
 ![](img/create-html.gif)
@@ -88,7 +87,7 @@ set to `alertButton`.
 ```
 
 To preview you file right click your `index.html` file in your workspace sidebar
-to the left and hit *Preview*. This will open up a new tab with the rendered
+to the left and hit _Preview_. This will open up a new tab with the rendered
 version of your HTML file.
 
 ![](img/preview.gif)
@@ -169,10 +168,10 @@ Next lets add some JavaScript. Inside your `index.js` file add the following
 code.
 
 ```js
-var button = document.getElementById("alertButton");
+var button = document.getElementById('alertButton')
 
-button.onclick = function () {
-  alert("Button was pressed");
+button.onclick = function() {
+  alert('Button was pressed')
 }
 ```
 
