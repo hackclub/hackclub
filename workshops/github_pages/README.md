@@ -8,7 +8,7 @@ order: 3
 
 # GitHub Pages Workshop
 
-_**This workshop has been retired and is no longer maintained or recommended.**_
+_This workshop has been retired and is no longer maintained or recommended._
 
 ---
 

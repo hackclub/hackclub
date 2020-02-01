@@ -18,7 +18,7 @@ Links to a live demo and the final code below. This workshop should take around 
 
 [Live Demo](https://geometric--prophetorpheus.repl.co)
 
-_**Warning: the following demo involves flashing colors and is not recommended for those with a history of epilepsy.**_ There's also an [animated demo][animated_live_demo].
+_Warning: the following demo involves flashing colors and is not recommended for those with a history of epilepsy._ There's also an [animated demo][animated_live_demo].
 
 [animated_live_demo]: https://prophetorpheus.github.io/geometric_pattern/version2.html
 
@@ -558,7 +558,7 @@ Congratulations! Your website is live at your URL and is looking dang fantastic!
 
 ## Part V: Animate It
 
-_**WARNING: THIS SECTION INVOLVES FLASHING COLORS AND IS NOT RECOMMENDED FOR THOSE WITH A HISTORY OF EPILEPSY.**_
+_WARNING: THIS SECTION INVOLVES FLASHING COLORS AND IS NOT RECOMMENDED FOR THOSE WITH A HISTORY OF EPILEPSY._
 
 _Even if you have not been previously diagnosed with epilepsy, you should be careful, and immediately close the window and consult a doctor if you experience any of the following symptoms: lightheadedness, altered vision, eye or face twitching, jerking or shaking of arms or legs, disorientation, confusion, or momentary loss of awareness._
 

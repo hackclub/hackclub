@@ -6,7 +6,7 @@ group: retired
 order: 12
 ---
 
-_**Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section.**_
+_Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section._
 
 # Cringe 101
 
@@ -271,7 +271,7 @@ You can revisit that workshop for more extensive overview of them, but here's a 
 
 A **pseudo-class** is an **exception to a set of rules you created in CSS**.
 
-- _**If you do something**, the **default set of rules will be overridden** by the new set_
+- _If you do something**, the **default set of rules will be overridden** by the new set_
 - Pseudo-classes are activated by adding them to a CSS selector like this.
 
 ```css

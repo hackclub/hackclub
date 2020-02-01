@@ -7,7 +7,7 @@ group: retired
 order: 9
 ---
 
-_**Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section.**_
+_Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section._
 
 # To-do MEAN.js Application
 
@@ -19,7 +19,7 @@ Short link to this workshop: https://workshops.hackclub.com/todo_app_using_meanj
 
 Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1-2 hours.
 
-_**We recommend going through this workshop in Google Chrome or Mozilla Firefox.**_
+_We recommend going through this workshop in Google Chrome or Mozilla Firefox._
 
 [live_demo]: https://todo-webapp-amitsin6h.c9users.io/
 [final_code]: https://github.com/amitsin6h/todo-mean-app

@@ -8,7 +8,7 @@ order: 4
 
 # Cloud9 tutorial
 
-_**This workshop has been retired and is no longer maintained or recommended.**_
+_This workshop has been retired and is no longer maintained or recommended._
 
 ---
 

@@ -81,7 +81,7 @@ Through things like **bolding** and _italicizing_, you can help to convey differ
 
 - `*Italics*` -> Creates _Italics_
 - `**Bolding**` -> Creates **Bolding**
-- `***Bold italics***` -> Creates **_Bold italics_**
+- `***Bold italics***` -> Creates _Bold italics_
 - `~~Crossed out~~` -> Creates ~~Crossed out~~
 
 You'll also notice on that page it mentions that macros can be used to format your text. Let's talk about what a macro is, and how you can use them.

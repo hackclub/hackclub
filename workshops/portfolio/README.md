@@ -8,7 +8,7 @@ order: 1
 
 # Building Your First Website
 
-_**This workshop has been retired and is no longer maintained or recommended.**_
+_This workshop has been retired and is no longer maintained or recommended._
 
 ---
 
@@ -430,7 +430,7 @@ Hey! It works!
 > to crop your image reupload it.
 
 Note that this was just a brief introduction to using Google to figure out
-how to do something. You will be doing this **_A LOT_** more of this in the
+how to do something. You will be doing this _A LOT_ more of this in the
 future.
 
 ## We've made more progress!

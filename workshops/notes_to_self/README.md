@@ -8,13 +8,13 @@ order: 6
 
 # Notes to Self
 
-_**This workshop has been retired and is no longer maintained or recommended.**_
+_This workshop has been retired and is no longer maintained or recommended._
 
 ---
 
 Demo: [here](https://prophetorpheus.github.io/notes_to_self/)
 
-_**This workshop is designed with Google Chrome in mind. Problems may occur if you use a different browser.**_
+_This workshop is designed with Google Chrome in mind. Problems may occur if you use a different browser._
 
 This is a way to keep personal notes in your browser storage. Since the notes are saved to `localStorage`, these are truly notes-to-self (unless you share your computer).
 

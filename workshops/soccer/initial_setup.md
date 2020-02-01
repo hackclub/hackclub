@@ -129,11 +129,11 @@ The code `drawSprites()` is responsible for drawing all of those sprites to the 
 
 ## Computer Science Fundamentals ![](img/computer_science.png)
 
-**_This Section is Coming Soon!_**—In the mean time, here is a sneak peek:
+_This Section is Coming Soon!_—In the mean time, here is a sneak peek:
 
 ### Functions
 
-`createCanvas` and `background` are what we call _**functions**_.
+`createCanvas` and `background` are what we call _functions_.
 
 Functions can have the following:
 

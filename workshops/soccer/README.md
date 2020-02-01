@@ -8,7 +8,7 @@ order: 7
 
 # Soccer
 
-_**This workshop has been retired and is no longer maintained or recommended.**_
+_This workshop has been retired and is no longer maintained or recommended._
 
 ---
 
@@ -57,19 +57,19 @@ Don't feel that you have to follow along step-by-step. Figure out the best way t
 
 1. If you're more experienced and want to use your own editor, follow [these instructions](own_editor.md).
 2. If you haven't already, make sure you have a JS Bin account first. <a href="https://jsbin.com/register" target="_blank">Create one here.</a>
-3. Then open [this JS Bin][starter]. It has all the starter code we need for this tutorial. Write any new code in this JS Bin. We'll refer to this JS Bin as your **_"working bin"_**.
+3. Then open [this JS Bin][starter]. It has all the starter code we need for this tutorial. Write any new code in this JS Bin. We'll refer to this JS Bin as your _"working bin"_.
 
 [starter]: https://jsbin.com/gist/9b98de6863f4f314ea24
 
 ## Some Quick Vocabulary
 
-Each interactive element in the game (the player, ball, and the goal) is called a **_sprite_**.
+Each interactive element in the game (the player, ball, and the goal) is called a _sprite_.
 
 > ![](img/r_vocab_1.png)
 
 <!-- Editable Drawing in: https://docs.google.com/drawings/d/1Px_9MVqn2qv6ASDl7vxglR2lXVpHVaNsvT9lyrqWzmM/edit -->
 
-The entire area on which everything lives is called the **_canvas_**:
+The entire area on which everything lives is called the _canvas_:
 
 > ![](img/r_vocab_2.png)
 

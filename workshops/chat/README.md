@@ -6,7 +6,7 @@ group: retired
 order: 13
 ---
 
-_**Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section.**_
+_Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section._
 
 # Chat
 
@@ -18,7 +18,7 @@ Short link to this workshop: https://workshops.hackclub.com/chat
 
 Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1 hour.
 
-_**We recommend going through this workshop in Google Chrome.**_
+_We recommend going through this workshop in Google Chrome._
 
 [live_demo]: https://prophetorpheus.github.io/chat
 [final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io/tree/master/chat

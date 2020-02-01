@@ -132,7 +132,7 @@ createSprite(150, 100, 50, 50);
 
 ## Remembering the Sprite
 
-In order for a computer program to remember something exists, it needs to store it in a **_variable_**.
+In order for a computer program to remember something exists, it needs to store it in a _variable_.
 
 So although, we have already created the sprite, the program will not remember it unless you store it in a variable.
 
@@ -146,7 +146,7 @@ var player
 
 > ![](img/2_write-e_var_player.gif)
 
-Now that the variable is created, we can assign the **_output_** of the `createSprite` **_function_** to `player`.
+Now that the variable is created, we can assign the _output_ of the `createSprite` _function_ to `player`.
 
 ```
 player = createSprite(125, 250, 50, 50);

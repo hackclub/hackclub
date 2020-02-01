@@ -8,7 +8,7 @@ order: 8
 
 # Introduction to Twilio
 
-_**This workshop has been retired and is no longer maintained or recommended.**_
+_This workshop has been retired and is no longer maintained or recommended.\*\*_
 
 ---
 
@@ -52,10 +52,8 @@ Create an `index.html` file inside of the `twilio` folder:
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-    </body>
+  <head></head>
+  <body></body>
 </html>
 ```
 
@@ -66,10 +64,11 @@ To add the capability to send text messages and make phone calls, we need to add
 1. Copy and paste the below `script` tag inside the `body` tag.
 
 ```html
-<script src="//bit.ly/twilio-basic-v7"
-                sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
-                token="YOUR_TWILIO_AUTH_TOKEN_HERE">
-        </script>
+<script
+  src="//bit.ly/twilio-basic-v7"
+  sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
+  token="YOUR_TWILIO_AUTH_TOKEN_HERE"
+></script>
 ```
 
 ![](img/add_twilio_basic_script.gif)
@@ -104,7 +103,7 @@ Although we've created our JavaScript file, the HTML will not run it until you e
 <script src="main.js"></script>
 ```
 
-1. Add the above script tag **_underneath_** the current `script` tag
+1. Add the above script tag \*\*_underneath_ the current `script` tag
 
    ![](img/add_main_js_script_tag.gif)
 

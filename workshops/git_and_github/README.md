@@ -8,7 +8,7 @@ order: 2
 
 # Basic Git and GitHub
 
-_**This workshop has been retired and is no longer maintained or recommended.**_
+_This workshop has been retired and is no longer maintained or recommended.\*\*_
 
 ---
 
@@ -81,10 +81,10 @@ will take you through setting the workspace up.
 ```html
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body>
-        <p>Your name here</p>
-    </body>
+  <head></head>
+  <body>
+    <p>Your name here</p>
+  </body>
 </html>
 ```
 
