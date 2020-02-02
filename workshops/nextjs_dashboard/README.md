@@ -6,7 +6,7 @@ group: react
 order: 5
 ---
 
-*(Note: this workshop assumes the React/Next.js skills explained in the [Next.js Starter](/nextjs_starter) workshop.)*
+_(Note: this workshop assumes the React/Next.js skills explained in the [Next.js Starter](/nextjs_starter) workshop.)_
 
 For your Next(.js) steps, we’re building a personal dashboard with React & Next.js that shows weather, news headlines, & whatever else you want. Let’s get going!
 
@@ -75,8 +75,7 @@ import Weather from '../components/weather'
 export default () => (
   <div>
     <h1>Welcome, YOURNAME!</h1>
-    <Weather />
-    …
+    <Weather />…
   </div>
 )
 ```
@@ -130,7 +129,8 @@ class Weather extends Component {
   }
 
   componentDidMount() {
-    const url = 'https://cors-anywhere.herokuapp.com/https://api.forecast.io/forecast/'
+    const url =
+      'https://cors-anywhere.herokuapp.com/https://api.forecast.io/forecast/'
 
     const success = position => {
       const { latitude, longitude } = position.coords
@@ -364,8 +364,7 @@ export default () => (
       Hello, it’s {new Date().toLocaleDateString('en-us', { weekday: 'long' })}
       {'. '}
       You’re doing great.
-    </p>
-    …
+    </p>…
   </div>
 )
 ```

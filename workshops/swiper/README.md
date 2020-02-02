@@ -1,7 +1,7 @@
 ---
 name: Swiper
 description: Introduction to iOS game development with Swift
-author: "@zach-cmiel"
+author: '@zach-cmiel'
 group: experimental
 order: 4
 ---
@@ -43,7 +43,7 @@ the most out of this tutorial:
 
 ### Steps
 
-| **[![](img/xcode.png) <br> 1. Set Up Xcode](set_up_xcode.md)**                      | **[![](img/play.png) <br> 2. Create Play Screen](play_screen.md)**      | **[![](img/walls.png)  <br> 3. Create the Walls](walls.md)**                  |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| **[![](img/score.png) <br> 4. Create Score Label](score_label.md)**                 | **[![](img/box.gif) <br> 5. Create Box Spawning](box_spawning.md)**     | **[![](img/swipe.gif)  <br> 6. Swipe Functionality](swipe_functionality.md)** |
-| **[![](img/physics.gif) <br> 7. Add Collision Detection](collision_detection.md)**  | **[![](img/retry.png) <br> 8. Create Retry Screen](retry_screen.md)**   |                                                                               |
+| **[![](img/xcode.png) <br> 1. Set Up Xcode](set_up_xcode.md)**                     | **[![](img/play.png) <br> 2. Create Play Screen](play_screen.md)**    | **[![](img/walls.png) <br> 3. Create the Walls](walls.md)**                  |
+| ---------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **[![](img/score.png) <br> 4. Create Score Label](score_label.md)**                | **[![](img/box.gif) <br> 5. Create Box Spawning](box_spawning.md)**   | **[![](img/swipe.gif) <br> 6. Swipe Functionality](swipe_functionality.md)** |
+| **[![](img/physics.gif) <br> 7. Add Collision Detection](collision_detection.md)** | **[![](img/retry.png) <br> 8. Create Retry Screen](retry_screen.md)** |                                                                              |

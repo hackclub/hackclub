@@ -1,12 +1,12 @@
 ---
 name: Rails Notes
 description: Personal notes app using Rails
-author: "@lachlanjc"
+author: '@lachlanjc'
 group: retired
 order: 10
 ---
 
-_**Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section.**_
+_Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section._
 
 # Rails Notes
 
@@ -31,7 +31,7 @@ A few quick terms you should know before we get started:
 
 At the end, we'll **deploy** the app by uploading the code to a service called [Heroku](https://heroku.com), which runs servers for us without much configuration.
 
-___
+---
 
 ## Getting set up
 
@@ -45,30 +45,30 @@ Great. Unfortunately there's a bit of setup we have to do to get the database ru
 2. Create the database: `psql -c "create database notes_development owner=ubuntu"`
 3. Open `notes/config/database.yml` and replace the `development` section with this: (feel free to copy + paste)
 
-     ```yml
-     development:
-       adapter: postgresql
-       encoding: SQL_ASCII
-       database: notes_development
-       pool: 5
-       username: ubuntu
-       password: password
-     ```
+   ```yml
+   development:
+     adapter: postgresql
+     encoding: SQL_ASCII
+     database: notes_development
+     pool: 5
+     username: ubuntu
+     password: password
+   ```
 
 4. We're making changes to our setup, so back in our terminal, let's commit to Git:
    1. `git add --all`
    2. `git commit -m "Start Notes project"`
 5. Connect the Rails app to its database. We'll need to run this command from inside our new application's directory (folder), so run `cd notes`. Then: `rails db:migrate`
 
-Finally, let's start our app's server. Open a new terminal tab (click the ⨁ icon and *New Terminal*). Again, this needs to be inside the Rails app, so `cd notes`. Now: `rails s -b $IP -p $PORT`
+Finally, let's start our app's server. Open a new terminal tab (click the ⨁ icon and _New Terminal_). Again, this needs to be inside the Rails app, so `cd notes`. Now: `rails s -b $IP -p $PORT`
 
-Click *Preview*, then *Preview Running Application* button to see your app so far:
+Click _Preview_, then _Preview Running Application_ button to see your app so far:
 
 ![](img/rails-2.png)
 
 Yay! You're on Rails! You've installed Rails, made a new app, started and set up a database server, created a database, and started the application server. Nice job.
 
-___
+---
 
 ## How Rails works
 
@@ -78,14 +78,14 @@ Rails runs on your server, sitting between incoming requests and your code. It's
 
 A **Model** is a structured piece of data. A site like Facebook might have models for `Post` and `Comment`. In this notes app, `Note` is the model. Models have attributes (think form fields), such as `name` or `content`.
 
-A **View** is the content of an actual webpage, like the HTML we've been writing. In Rails, your view files will not end with `.html`, but `.html.erb`. This is *embedded Ruby*: you can embed Ruby code in your webpage using special HTML tags:
+A **View** is the content of an actual webpage, like the HTML we've been writing. In Rails, your view files will not end with `.html`, but `.html.erb`. This is _embedded Ruby_: you can embed Ruby code in your webpage using special HTML tags:
 
 ```erb
 <h1><%= note.name %></h1>
 <div><%= note.content %></div>
 ```
 
-A **Controller** connects *requests* (like for the `/notes` page) to your *view*, usually referencing a model. A Controller has (typically several) actions, which are different ways to interact with the `Note`. Here are the standard pages:
+A **Controller** connects _requests_ (like for the `/notes` page) to your _view_, usually referencing a model. A Controller has (typically several) actions, which are different ways to interact with the `Note`. Here are the standard pages:
 
 - **index** — like your `index.html` file. This page usually lists all the items (like notes), from which you can tap to open one individually. URL: `/notes`
 - **show** – a page for an individual item (like a note), shown in full detail. URL: `/notes/1`
@@ -100,7 +100,7 @@ Consider an incoming request for `/notes` in our app. The basic lifecycle of the
 
 That was a lot to take in! Don't worry if you don't understand it all. Let's write some code and you'll see where each of these pieces fit in.
 
-___
+---
 
 ## Start your app
 
@@ -124,7 +124,7 @@ Here's your basic app! Click on "New Note", write in the boxes, and submit the f
 
 It's not required, but poke around and read some of the files Rails wrote for you. What's in your model (`app/models/note.rb`)? What about your controller (`app/controllers/notes_controller.rb`)? The views (`app/views/notes/index.html.erb`, `app/views/notes/show.html.erb`)? Read some of the code, even if you can't yet understand it all.
 
-___
+---
 
 ## Customizing your app
 
@@ -138,8 +138,9 @@ Rails.application.routes.draw do
   resources :notes
 end
 ```
-- **The page title.** You may have noticed your views aren't complete HTML files: they're just what goes inside the `<body>…</body>` HTML. There's a template for this at `app/views/layouts/application.html.erb`. Try a new title (like *Awesome Notes*) by changing what's inside `<title>…</title>` on line 4! When your refresh the page in the Preview, you'll see the new title.
-- **The notification messages.** After creating a new note, saving changes to a note, or deleting a note, a message notifies the user they were successful. Open `app/controllers/notes_controller.rb` and change the text inside the quotes like `notice: 'Note was…'` text (see line 31), like *We've saved your awesome note!*. Next time you run a request of that type, you'll see your new message.
+
+- **The page title.** You may have noticed your views aren't complete HTML files: they're just what goes inside the `<body>…</body>` HTML. There's a template for this at `app/views/layouts/application.html.erb`. Try a new title (like _Awesome Notes_) by changing what's inside `<title>…</title>` on line 4! When your refresh the page in the Preview, you'll see the new title.
+- **The notification messages.** After creating a new note, saving changes to a note, or deleting a note, a message notifies the user they were successful. Open `app/controllers/notes_controller.rb` and change the text inside the quotes like `notice: 'Note was…'` text (see line 31), like _We've saved your awesome note!_. Next time you run a request of that type, you'll see your new message.
 - **Styling!** You already have some experience writing CSS! Open up `app/assets/stylesheets/scaffolds.scss` and make some changes. On lines 19-21 you'll find the CSS setting the color of links (HTML `<a>` tags). Change `#000` to your favorite color, like `cornflowerblue` or `tomato`.
 
 ![](img/rails-4.png)
@@ -151,7 +152,7 @@ When you're done, commit to Git.
 3. `git commit -am "Add notes"` (commits the changes)
 4. `cd notes` (returns to the application directory)
 
-___
+---
 
 ## Deploying
 

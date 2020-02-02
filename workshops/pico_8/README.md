@@ -1,7 +1,7 @@
 ---
 name: Pico-8
 description: Learn game development through the Pico-8 fantasy console
-author: "@Jetmate"
+author: '@Jetmate'
 group: experimental
 order: 5
 ---
@@ -10,7 +10,7 @@ order: 5
 
 ## Why Pico?
 
-I consider Pico to be *the best* way to introduce newcomers to coding because of just how fun it is to code in it. Unlike traditional game engines, Pico manages to preserve a traditional coding feel while also streamlining the whole game development process: you still write legitimate Lua code and implement all game systems (like animation, physics, and scenes) yourself. This is good in the long run because that means that beginners get to actually code their games from scratch, rather than gluing together a bunch of pre-made elements. At the same time, however, Pico makes implementing graphics, tilemaps, and even music a breeze by including all of those tools into the same package. This means that there's no more need in learning multiple pieces of software and how to make them work together, as everything is already there: for example, displaying a sprite from a spritesheet is as simple as `spr(0)`!
+I consider Pico to be _the best_ way to introduce newcomers to coding because of just how fun it is to code in it. Unlike traditional game engines, Pico manages to preserve a traditional coding feel while also streamlining the whole game development process: you still write legitimate Lua code and implement all game systems (like animation, physics, and scenes) yourself. This is good in the long run because that means that beginners get to actually code their games from scratch, rather than gluing together a bunch of pre-made elements. At the same time, however, Pico makes implementing graphics, tilemaps, and even music a breeze by including all of those tools into the same package. This means that there's no more need in learning multiple pieces of software and how to make them work together, as everything is already there: for example, displaying a sprite from a spritesheet is as simple as `spr(0)`!
 
 ## Setup
 
@@ -32,23 +32,23 @@ Tired of complex workflows and high-definition graphics? Well, the Pico-8 fantas
 
 A couple of basic pieces of information about Pico: there are three modes.
 
- * The console mode
+- The console mode
 
-   ![](assets/console.gif)
+  ![](assets/console.gif)
 
-   This is what you see on startup, and allows you to run a couple of basic commands. Don't worry too much about it for now.
+  This is what you see on startup, and allows you to run a couple of basic commands. Don't worry too much about it for now.
 
- * The editor mode
+- The editor mode
 
-   ![](assets/editor.png)
+  ![](assets/editor.png)
 
-   This is where you make your game. The editor has multiple tabs that give you access to various bits of functionality. **You can get to it by pressing `Esc` from the console mode.**
+  This is where you make your game. The editor has multiple tabs that give you access to various bits of functionality. **You can get to it by pressing `Esc` from the console mode.**
 
- * The game mode
+- The game mode
 
-   ![](assets/game.png)
+  ![](assets/game.png)
 
-   This is where you can test your game. **You can get to it by pressing `Ctrl-R`. To get back to the editor, press `Esc` twice.**
+  This is where you can test your game. **You can get to it by pressing `Ctrl-R`. To get back to the editor, press `Esc` twice.**
 
 ### Sprites
 
@@ -91,13 +91,14 @@ end
 ```
 
 `spr` is what is called a function: some code that can be run at any point. We can also pass information into functions, which is what we're doing in this example. Concretely, `spr` accepts 3 pieces of information (in this order):
- * sprite number
- * x coordinate of the top-left corner
- * y coordinate of the top-left corner
+
+- sprite number
+- x coordinate of the top-left corner
+- y coordinate of the top-left corner
 
 `spr(1, 0, 0)` means to draw the second sprite in our spritesheet with its top left corner at `(0, 0)`. The reason that `1` points to the second sprite is because sprites are 0-indexed.
 
-  ![](assets/noclear.gif)
+![](assets/noclear.gif)
 
 When you actually execute this (`Ctrl-R`), you may notice two things: that the square is in a weird place and that there's junk on the screen. In order to solve the screen issue, you need to clear the screen by adding a `cls()` to the top of your `_draw` function.
 
@@ -112,7 +113,7 @@ end
 
 Now every frame will start from a blank screen.
 
-The reason that the square is in the top-left corner is because coordinates actually work a little differently in Pico. As is drawn on the cheatsheet, the y-axis  is actually flipped: this means that `(0, 0)` is actually the top-left corner. Remember this.
+The reason that the square is in the top-left corner is because coordinates actually work a little differently in Pico. As is drawn on the cheatsheet, the y-axis is actually flipped: this means that `(0, 0)` is actually the top-left corner. Remember this.
 
 ![](assets/coordinate_grid.png)
 
@@ -219,9 +220,9 @@ We can combine these to form complex logic expressions, like so:
 
 Before coding a solution to any problem, it's always way more useful to approach it from a high level. So here's a problem: how do we give the user the ability to control the player?
 
- * Well, we need to make it so that the player only moves when the user presses certain buttons.
- * We need to increment `x` when the user presses 'right' and decrement `x` when the user presses 'left'.
- * We need to modify the `_update` function so that it check if 'right' or 'left' were pressed and modifies `x` accordingly.
+- Well, we need to make it so that the player only moves when the user presses certain buttons.
+- We need to increment `x` when the user presses 'right' and decrement `x` when the user presses 'left'.
+- We need to modify the `_update` function so that it check if 'right' or 'left' were pressed and modifies `x` accordingly.
 
 But how do we run some code (modify the `x` variable) only sometimes? Welcome the `if` statement.
 
@@ -289,9 +290,9 @@ Each `if` block has to have exactly one `if` and then can also optionally have o
 
 It is often important to restrict the player's movement - and again, this is best approached from a conceptual level. We need to...
 
- * Stop the user from going off-screen
- * Check if the user is off-screen and bring them back
- * Check if the user has gone off screen for every direction and if so set their appropriate coordinate to be the screen's edge
+- Stop the user from going off-screen
+- Check if the user is off-screen and bring them back
+- Check if the user has gone off screen for every direction and if so set their appropriate coordinate to be the screen's edge
 
 Once again, try to implement this yourself and then compare your solution with ours:
 
@@ -707,13 +708,13 @@ end
 
 ## Next steps
 
-It's your turn now! Going from "knowing" a language to actually being able to apply it is often the hardest part of programming, but hopefully this workshop gave you the tools and examples necessary to start creating your own code. At this point you can modify this game (maybe make it so that the player can move all around the screen) or maybe even make something from scratch. *As long as you use the cheatsheet and Google plenty of questions making an original game will seem like a breeze!*
+It's your turn now! Going from "knowing" a language to actually being able to apply it is often the hardest part of programming, but hopefully this workshop gave you the tools and examples necessary to start creating your own code. At this point you can modify this game (maybe make it so that the player can move all around the screen) or maybe even make something from scratch. _As long as you use the cheatsheet and Google plenty of questions making an original game will seem like a breeze!_
 
 Here are some topics that you may want to look in to:
 
- * The map editor
- * The SFX and music editors
- * Strings and tables with string keys
- * Metatables and object-oriented programming in Lua
+- The map editor
+- The SFX and music editors
+- Strings and tables with string keys
+- Metatables and object-oriented programming in Lua
 
 Once you feel like you've achieved Pico-8 mastery, a very worthy game framework to look into is [Love2D](https://love2d.org/). Love is as simple and fun to use as Pico but provides much more freedom.

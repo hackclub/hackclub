@@ -3,7 +3,8 @@
 ## Background
 
 | From step 2, we added a sprite <br> that doesn't move yet: <br><br> ![](img/2_mini.png) | Now we want to make it <br> move like this: <br><br> ![](img/3_mini.gif) |
-|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+
 
 ## Outcome of This Step
 
@@ -16,14 +17,14 @@ After you finish this step, you will learn how to move a sprite to wherever the 
 ## Choose Your Own Path
 
 - [**Walk me through this code step-by-step.**](#walk-through-of-the-code-step-by-step)
-    - Recommended for those who
-      - Are beginners
-      - Who want an in depth understanding of the code
+  - Recommended for those who
+    - Are beginners
+    - Who want an in depth understanding of the code
 - [**Give me a brief overview of this code.**](#brief-overview-of-the-code)
-    - Recommended for those who
-      - Have more experience
-      - Want to cover more ground but have a less in depth understanding
-      - Want to recap what they did in the step-by-step section
+  - Recommended for those who
+    - Have more experience
+    - Want to cover more ground but have a less in depth understanding
+    - Want to recap what they did in the step-by-step section
 
 # Walk Through of the Code Step-By-Step
 
@@ -38,7 +39,7 @@ We don't want to do this just once, we want to do it _forever_. Because we want 
 We can set the `x` position of the `player` sprite like this:
 
 ```js
-player.position.x = 50;
+player.position.x = 50
 ```
 
 You can read the above line as follows:
@@ -56,7 +57,7 @@ Now instead of setting the `x` position to be `50`, let's set it to the `x` posi
 We can do this by writing
 
 ```js
-player.position.x = mouseX;
+player.position.x = mouseX
 ```
 
 - [ ] Let's try adding the above code:
@@ -68,7 +69,7 @@ player.position.x = mouseX;
 The below code sets the player's `y` position to the `y` location of the mouse.
 
 ```js
-player.position.y = mouseY;
+player.position.y = mouseY
 ```
 
 - [ ] Let's try adding the above code:
@@ -88,20 +89,20 @@ Reproduced below is the code that sets the player sprite's position to the posit
 New lines marked with `// <-- NEW LINE`.
 
 ```js
-var player;
+var player
 
 function setup() {
-  createCanvas(250, 500);
+  createCanvas(250, 500)
 
-  player = createSprite(125, 400, 50, 50);
+  player = createSprite(125, 400, 50, 50)
 }
 
 function draw() {
-  background(255, 240, 220);
-  drawSprites();
+  background(255, 240, 220)
+  drawSprites()
 
-  player.position.x = mouseX;  // <-- NEW
-  player.position.y = mouseY;  // <-- NEW
+  player.position.x = mouseX // <-- NEW
+  player.position.y = mouseY // <-- NEW
 }
 ```
 
@@ -116,21 +117,21 @@ function draw() {
 We can interpret the following line:
 
 ```js
-player.position.x = mouseX;  // <-- NEW
+player.position.x = mouseX // <-- NEW
 ```
 
 as "Set the **`player`**'s **`x`** **`position`** to be equal to the x position of the mouse (**`mouseX`**)"
 
-
 ## Next Up
 
-| **[![](img/4_mini.gif)  <br> 3. Dribble Ball](dribble_ball.md)** |
-|------------------------------------------------------------------|
+| **[![](img/4_mini.gif) <br> 3. Dribble Ball](dribble_ball.md)** |
+| --------------------------------------------------------------- |
+
 
 ## Steps
 
-| **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
-| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |
+| **[![](img/1_mini.png) <br> 1. Initial Setup](initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite](add_player_sprite.md)** | **[![](img/3_mini.gif) <br> 3. Mouse Movement](mouse_movement.md)** |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**   | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                   | **[![](img/readme.png) <br> Back to the README.md](README.md)**     |
 
 [mouse]: https://jsbin.com/gist/c80f8e287b5cc76dcf96

@@ -5,7 +5,9 @@ html {
   font-family: Avenir Next, Helvetica, sans-serif;
 }
 
-h1, h2, #news {
+h1,
+h2,
+#news {
   font-weight: 300;
 }
 

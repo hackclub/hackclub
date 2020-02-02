@@ -12,7 +12,7 @@ order: 10
 | ----------------------- |
 | ![](img/final_demo.gif) |
 
-_**We recommend going through this workshop in Google Chrome.**_
+_We recommend going through this workshop in Google Chrome._
 
 Links to a live demo and the final code below. This workshop should take around 1 hour.
 

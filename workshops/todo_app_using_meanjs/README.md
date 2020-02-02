@@ -2,12 +2,12 @@
 name: MEAN.js To-do List
 description: To-do list web app powered by MEAN.js
 author: Amit Kumar Singh
-username: "@amitsin6h"
+username: '@amitsin6h'
 group: retired
 order: 9
 ---
 
-_**Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section.**_
+_Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section._
 
 # To-do MEAN.js Application
 
@@ -19,7 +19,7 @@ Short link to this workshop: https://workshops.hackclub.com/todo_app_using_meanj
 
 Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1-2 hours.
 
-_**We recommend going through this workshop in Google Chrome or Mozilla Firefox.**_
+_We recommend going through this workshop in Google Chrome or Mozilla Firefox._
 
 [live_demo]: https://todo-webapp-amitsin6h.c9users.io/
 [final_code]: https://github.com/amitsin6h/todo-mean-app
@@ -28,7 +28,7 @@ _**We recommend going through this workshop in Google Chrome or Mozilla Firefox.
 
 ## About the Application
 
-In this workshop we'll be creating a To-do app using MEAN.js. This To-do app will have feature like create task and once we complete our task we can delete it. 
+In this workshop we'll be creating a To-do app using MEAN.js. This To-do app will have feature like create task and once we complete our task we can delete it.
 
 ## Let's Start
 
@@ -45,8 +45,8 @@ MEAN stands for:
 
 **Requirements**
 
-| Cloud9 Blank Project    |
-| ----------------------- |
+| Cloud9 Blank Project              |
+| --------------------------------- |
 | ![](img/cloud9_blank_project.png) |
 
 - Cloud9 with blank Ubuntu project
@@ -67,14 +67,12 @@ MEAN stands for:
 
 ## Part I: Setting up Node.js
 
-
 ![](img/installing_nodejs.png)
-
 
 - Open your terminal
 - Type the below command in the terminal to install Node.js
 
-  ```sh
+  ```bash
   $ sudo –s
   $ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
   $ sudo apt-get install nodejs
@@ -83,13 +81,13 @@ MEAN stands for:
 
 - Once the installation process is done we can check our Node.js version using the below command.
 
-  ```sh
+  ```bash
   $ node –v #(display the node version)
   ```
 
 - We can also check our npm (Node Package Manager) version using the below command.
 
-  ```sh
+  ```bash
   $ npm –v #(display the npm version)
   ```
 
@@ -101,7 +99,7 @@ MEAN stands for:
 
 - To install MongoDB we need to run the below command.
 
-  ```sh
+  ```bash
   $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv   2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
 
   $ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
@@ -129,7 +127,7 @@ So far our `main.js` looks like this (your URLs and keys will be different):
 
 We can install Express with the following command:
 
-```sh
+```bash
 $ npm install express –-save
 ```
 
@@ -137,10 +135,9 @@ Now, we've got Express installed and added to our `package.json`.
 
 ## Our Complete Project Structure
 
-| Complete Project Structure    |
-| ----------------------- |
+| Complete Project Structure     |
+| ------------------------------ |
 | ![](img/project_structure.png) |
-
 
 ## Part V: Starting our Node.js Server
 
@@ -163,7 +160,7 @@ app.listen('8080', function() {
 
 Let’s start our server—use this command:
 
-```sh
+```bash
 $ node server.js
 ```
 
@@ -179,7 +176,7 @@ Now, we will build our application frontend using AngularJS.
 
 ## Part VI: Creating Frontend using AngularJS
 
-Before we build our frontend, let's create a folder named `app` inside the `todo` folder where we will store our frontend files. Later, we'll see how to connect our frontend with our server. 
+Before we build our frontend, let's create a folder named `app` inside the `todo` folder where we will store our frontend files. Later, we'll see how to connect our frontend with our server.
 
 Let’s start building our frontend! We're using AngularJS and Bootstrap.
 
@@ -197,7 +194,7 @@ Let’s start building our frontend! We're using AngularJS and Bootstrap.
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script type="text/javascript" src="app/app.js"></script>
-    
+
     <title>Todo App | MEANjs</title>
     <style type="text/css">
         .bg-hackclub{
@@ -214,7 +211,7 @@ Let’s start building our frontend! We're using AngularJS and Bootstrap.
         <p class="lead">This is MEANjs built in web application for Hack Club.</p>
       </div>
     </div>
-    
+
     <div class="container">
         <div class="row" ng-controller="createTodoController">
           <div class="col-md-6 offset-md-2">
@@ -222,14 +219,14 @@ Let’s start building our frontend! We're using AngularJS and Bootstrap.
               <input  type="text" ng-model="todo.task" class="form-control" placeholder="Write your daily task here....." aria-label="Large" aria-describedby="inputGroup-sizing-sm">
             </div>
           </div>
-          
+
           <div class="col-sm-3">
             <button type="button" ng-click="createTodo()" class="btn btn-outline-info btn-lg" >Add Task</button>
           </div>
         </div>
         <hr>
         <div ng-controller="myCtrl">
-           
+
             <div class="row" ng-repeat="task in tasks.data">
               <div class="col-md-7 offset-md-2">
                 <div class="input-group mb-3">
@@ -239,7 +236,7 @@ Let’s start building our frontend! We're using AngularJS and Bootstrap.
                     </div>
                   </div>
                    <h1 class="form-control">{{task.task}}</h1>
-                    
+
                   <div class="input-group-append">
                     <div class="input-group-text bg-danger" ng-click="deleteTask(task._id)">
                       <i class="fa fa-trash-o text-white"></i>
@@ -247,7 +244,7 @@ Let’s start building our frontend! We're using AngularJS and Bootstrap.
                   </div>
                 </div>
               </div>
-            </div>    
+            </div>
           </div>
       </div>
     </div>
@@ -315,7 +312,7 @@ app.controller('myCtrl', function($scope, $http) {
 
 Before creating the database using MongoDB, let's start the MongoDB server:
 
-```sh
+```bash
 $ mongod
 ```
 
@@ -323,7 +320,7 @@ $ mongod
 
 Once we see our server is running, let's create the database. Open a new terminal tab and run the below commands:
 
-```sh
+```bash
 $ mongo
 $ use todo
 ```
@@ -340,20 +337,19 @@ Once it's done, we need to connect our MongoDB with our MEAN.js application.
 
 - Install the mongoose library:
 
-  ```sh
+  ```bash
   $ npm install mongoose –-save
   ```
 
 This will install mongoose and will add it in the `package.json` file.
 
-
 ## Part IX: Installing Body-Parser
 
-We will be using Body-Parser to parse middleware. 
+We will be using Body-Parser to parse middleware.
 
 - Use the below command to install.
 
-  ```sh
+  ```bash
   $ npm install body-parser --save
   ```
 
@@ -454,7 +450,7 @@ app.listen('8080', function() {
 
 Our app is ready! Run the server again:
 
-```sh
+```bash
 $ node server.js
 ```
 

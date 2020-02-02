@@ -24,21 +24,21 @@ order: 1
 
 ### Install react using npm
 
-```sh
+```bash
 $ npm install --save-dev react
 $ npm install --save-dev react-dom
 ```
 
 ### Navigate to a new Directory
 
-```sh
+```bash
 $ mkdir MyWebsite
 $ cd MyWebsite
 ```
 
 ### Create a new project
 
-```sh
+```bash
 $ npx create-react-app [Project Name goes here]
 $ cd [Project name]
 $ npm start
@@ -90,7 +90,7 @@ import { App } from './App.js'
 ### Render your project
 
 ```js
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'))
 ```
 
 - `<App />` is a component that displays your website
@@ -358,19 +358,19 @@ e => {
 
 ### Go to your project directory
 
-```sh
+```bash
 $ cd MyWebsite\ProjectName
 ```
 
 ### Create a new build
 
-```sh
+```bash
 $ npm run build
 ```
 
 ### Enter the following commands to add your code to GitHub
 
-```sh
+```bash
 # If you haven’t used git before, it will ask you to sign in,
 # so do that when it gives you prompts instead of going to the next step.
 $ git init

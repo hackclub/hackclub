@@ -848,6 +848,7 @@ Effective cryptanalysis was undeniably decisive in _stopping the Nazis_. On the 
 Cryptography is such a powerful tool that for a time, the US government even [classified it as a munition](https://en.wikipedia.org/wiki/Export_of_cryptography_from_the_United_States). The duality of its use for good and evil makes cryptography a difficult, hotly-debated topic even today. Every few years, the discussion begins again when the FBI needs to [break into somebody's iPhone](https://en.wikipedia.org/wiki/FBI%E2%80%93Apple_encryption_dispute) (or whatever).
 
 But of course, tools are neither good nor evil—that part is up to the user.
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE3OTI1MjcwOTZdfQ==
 -->

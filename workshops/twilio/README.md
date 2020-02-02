@@ -8,7 +8,7 @@ order: 8
 
 # Introduction to Twilio
 
-_**This workshop has been retired and is no longer maintained or recommended.**_
+_This workshop has been retired and is no longer maintained or recommended.\*\*_
 
 ---
 
@@ -47,15 +47,13 @@ Create an `index.html` file inside of the `twilio` folder:
 
    ![](img/created_index_html_file.png)
 
-5. Open the newly created `index.html` and type the below HTML template into it:
+4. Open the newly created `index.html` and type the below HTML template into it:
 
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-    </body>
+  <head></head>
+  <body></body>
 </html>
 ```
 
@@ -65,14 +63,15 @@ To add the capability to send text messages and make phone calls, we need to add
 
 1. Copy and paste the below `script` tag inside the `body` tag.
 
-  ```html
-  <script src="//bit.ly/twilio-basic-v7"
-                  sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
-                  token="YOUR_TWILIO_AUTH_TOKEN_HERE">
-          </script>
-  ```
+```html
+<script
+  src="//bit.ly/twilio-basic-v7"
+  sid="YOUR_TWILIO_ACCOUNT_SID_HERE"
+  token="YOUR_TWILIO_AUTH_TOKEN_HERE"
+></script>
+```
 
-  ![](img/add_twilio_basic_script.gif)
+![](img/add_twilio_basic_script.gif)
 
 ### 5) Set your Twilio `sid` and `token`
 
@@ -80,7 +79,7 @@ To add the capability to send text messages and make phone calls, we need to add
 
    > Note: If you are the facilitator (or if you're just doing this workshop by yourself), follow the directions [here](../lib/twilio-basic/signup.md) to get your own Twilio SID and token.
 
-  ![](img/setting_sid_and_token.gif)
+![](img/setting_sid_and_token.gif)
 
 ### 6) Creating our JavaScript File
 
@@ -104,7 +103,7 @@ Although we've created our JavaScript file, the HTML will not run it until you e
 <script src="main.js"></script>
 ```
 
-1. Add the above script tag **_underneath_** the current `script` tag
+1. Add the above script tag \*\*_underneath_ the current `script` tag
 
    ![](img/add_main_js_script_tag.gif)
 
@@ -115,7 +114,7 @@ Although we've created our JavaScript file, the HTML will not run it until you e
 1. Type the following into your `main.js` file (don't forget the parentheses commas, and quotation marks.):
 
    ```js
-   Twilio.sendMessage("555-555-5555", "You just subscribed to Gossip Girl");
+   Twilio.sendMessage('555-555-5555', 'You just subscribed to Gossip Girl')
    ```
 
    - This code JavaScript calls the phone number `555-555-5555` and says the message `You just subscribed to Gossip Girl.` We don't want that.
@@ -140,11 +139,11 @@ Just to add some clarity to our currently blank webpage:
 
 1. Add the below text to the `body` of the HTML:
 
-  ```html
-  <p>Refresh the page to run the code again</p>
-  ```
+```html
+<p>Refresh the page to run the code again</p>
+```
 
-  ![](img/add_instructions.gif)
+![](img/add_instructions.gif)
 
 ### 3) Modifying And Running New Code
 
@@ -169,10 +168,10 @@ To open your website in Google Chrome
 
 1. In the live preview window, click the button that looks like this ![](img/live_preview_button.png)
 2. Now open the developer console.
-    - **Mac Directions**
-      1. Click **"View"** → **"Developer"** → **"JavaScript Console"** (or use the shortcut **`Command + option + j`**
-    - **PC Directions**
-      1. Use the shortcut **`CTRL + Shift + J`**
+   - **Mac Directions**
+     1. Click **"View"** → **"Developer"** → **"JavaScript Console"** (or use the shortcut **`Command + option + j`**
+   - **PC Directions**
+     1. Use the shortcut **`CTRL + Shift + J`**
 
 In the console here, you can see what's happening underneath the hood:
 
@@ -230,7 +229,7 @@ The remainder of this workshop you will be focused on building your own project 
 Send a text message to the given phone number.
 
 ```js
-Twilio.sendMessage("1-555-555-5555", "This is a text message");
+Twilio.sendMessage('1-555-555-5555', 'This is a text message')
 ```
 
 ### Call and Say
@@ -238,7 +237,7 @@ Twilio.sendMessage("1-555-555-5555", "This is a text message");
 Call the given phone number and say the given words.
 
 ```js
-Twilio.callAndSay("1-555-555-5555", "Words words words");
+Twilio.callAndSay('1-555-555-5555', 'Words words words')
 ```
 
 ### Call and Play
@@ -246,7 +245,10 @@ Twilio.callAndSay("1-555-555-5555", "Words words words");
 Call the given phone number and play the given music file (in the below example, an MP3).
 
 ```js
-Twilio.callAndPlay("1-555-555-5555", "http://mean2u.rfshq.com/downloads/music/giveyouup.mp3");
+Twilio.callAndPlay(
+  '1-555-555-5555',
+  'http://mean2u.rfshq.com/downloads/music/giveyouup.mp3'
+)
 ```
 
 You can choose to play any of your favorite songs from YouTube by following these directions:
@@ -268,10 +270,10 @@ Listen for messages and run the given function whenever one is received.
 
 ```js
 // When a text message is received...
-Twilio.listenForMessages(function (msg) {
+Twilio.listenForMessages(function(msg) {
   // log the received message to the console
   console.log(msg.body)
-});
+})
 ```
 
 ### Get Latest Text Message
@@ -280,10 +282,10 @@ Get the most recently received text message.
 
 ```js
 // Get the most recent text message...
-Twilio.getLatestMessage(function (msg) {
+Twilio.getLatestMessage(function(msg) {
   // And once it's retrieved, log it to the console
-  console.log(msg);
-});
+  console.log(msg)
+})
 ```
 
 ### Get All Text Messages
@@ -291,10 +293,10 @@ Twilio.getLatestMessage(function (msg) {
 Retrieve all of the received text messages.
 
 ```js
-Twilio.getAllMessages(function (messageArray) {
+Twilio.getAllMessages(function(messageArray) {
   // Print the number of received messages
-  console.log(messageArray);
-});
+  console.log(messageArray)
+})
 ```
 
 [demo]: https://jsbin.com/gist/b16a00cc53a7827c725b

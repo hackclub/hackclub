@@ -1,14 +1,14 @@
 ---
 name: Git and GitHub
 description: Introduction to using Git and GitHub
-author: "@notbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram"
+author: '@notbrian,@JevinSidhu,@uditdesai,@vaibhavyadaram'
 group: retired
 order: 2
 ---
 
 # Basic Git and GitHub
 
-_**This workshop has been retired and is no longer maintained or recommended.**_
+_This workshop has been retired and is no longer maintained or recommended.\*\*_
 
 ---
 
@@ -16,8 +16,10 @@ _**This workshop has been retired and is no longer maintained or recommended.**_
 
 1. **Don't include** the **square brackets** mentioned (`[text-here]`) when
    typing.
-  - Those are indicators of areas where you type custom text.
-  - `Type: git branch [branch-name]` would be: `git branch custom-text`.
+
+- Those are indicators of areas where you type custom text.
+- `Type: git branch [branch-name]` would be: `git branch custom-text`.
+
 2. After you type a command in the terminal, hit <kbd>enter</kbd> on your
    keyboard to complete the command.
 
@@ -30,62 +32,69 @@ Git requires at least **one** file in your workspace to be used. The steps below
 will take you through setting the workspace up.
 
 1. Login to your Cloud9 homepage - https://c9.io/
-  - Register if you haven't already.
-    - We recommend signing up with your GitHub account - https://github.com/.
-  - It should look like this:
 
-     ![Cloud9 dashboard](img/cloud9_dashboard.png)
+- Register if you haven't already.
+  - We recommend signing up with your GitHub account - https://github.com/.
+- It should look like this:
+
+  ![Cloud9 dashboard](img/cloud9_dashboard.png)
 
 2. Create a workspace!
-  - Press the **create a new workspace** button.
 
-    ![create new workspace](img/create_new_workspace.gif)
+- Press the **create a new workspace** button.
 
-  - Give the workspace a good name that conveys what the workspace is used for
-    quickly, and concisely.
-    - There are no spaces allowed in the name, use a dash (`-`) for spaces if
-      you need them.
-  - Add a short description, you'll thank yourself later!
-  - Select public for the privacy settings, it'll make it easier for people to
-    help you with your project.
-  - If you already have a GitHub project with files and you want to have it
-    ready when you create the workspace you can add its link in the box
-    provided.
-  - For the template you may choose either **Custom** or **HTML5**.
+  ![create new workspace](img/create_new_workspace.gif)
 
-    ![name new workshop](img/name_new_workshop.gif)
+- Give the workspace a good name that conveys what the workspace is used for
+  quickly, and concisely.
+  - There are no spaces allowed in the name, use a dash (`-`) for spaces if
+    you need them.
+- Add a short description, you'll thank yourself later!
+- Select public for the privacy settings, it'll make it easier for people to
+  help you with your project.
+- If you already have a GitHub project with files and you want to have it
+  ready when you create the workspace you can add its link in the box
+  provided.
+- For the template you may choose either **Custom** or **HTML5**.
+
+  ![name new workshop](img/name_new_workshop.gif)
 
 3. Get rid of the unnecessary junk.
-  - On the left sidebar: Right click on `README.md` and `hello-world.html`.
-    - Select **"Delete"** and **Yes** to any warnings.
-      - You won't need these for your project.
-  - Close the opened `README.md` as well.
 
-    ![close readme](img/close_readme.gif)
+- On the left sidebar: Right click on `README.md` and `hello-world.html`.
+  - Select **"Delete"** and **Yes** to any warnings.
+    - You won't need these for your project.
+- Close the opened `README.md` as well.
+
+  ![close readme](img/close_readme.gif)
 
 4. Create an `index.html` file.
-  - On the left sidebar: Right click and press **"New File"**.
-  - Name the file `index.html`.
-  - Double-click and open it.
-5. Write your name in the `index.html` file.
-  - If you don't know how, you may use this pre-provided code:
 
-  ```html
-  <!DOCTYPE html>
-  <html>
-      <head></head>
-      <body>
-          <p>Your name here</p>
-      </body>
-  </html>
-  ```
+- On the left sidebar: Right click and press **"New File"**.
+- Name the file `index.html`.
+- Double-click and open it.
+
+5. Write your name in the `index.html` file.
+
+- If you don't know how, you may use this pre-provided code:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <p>Your name here</p>
+  </body>
+</html>
+```
 
 6. Save the `index.html` file.
-  - Make sure the active file is the `index.html` file by either clicking on it
-    on the sidebar or clicking anywhere in the code.
-  - You may press <kbd>Ctrl+S</kbd> (Windows), <kbd>Cmd+S</kbd> (Mac) or go to File --> Save.
 
-    ![save in Cloud9](img/save_in_cloud9.gif)
+- Make sure the active file is the `index.html` file by either clicking on it
+  on the sidebar or clicking anywhere in the code.
+- You may press <kbd>Ctrl+S</kbd> (Windows), <kbd>Cmd+S</kbd> (Mac) or go to File --> Save.
+
+  ![save in Cloud9](img/save_in_cloud9.gif)
 
 7. Celebrate!
 
@@ -94,6 +103,7 @@ will take you through setting the workspace up.
 ## What is Git?
 
 **Git is a version control system** - https://git-scm.com/
+
 - Git was made in 2005 by Linus Torvalds (the original author of Linux)
 - Git tracks and manages each change you make ("You added lines A, B, C and removed line D")
 - Git enables many people to work separately on the same project
@@ -114,11 +124,13 @@ will take you through setting the workspace up.
     - Each time you save, this overwrites your copy.
 - With Git, it would instead create another version of the file in that point of
   time.
+
   - Git hides these other versions so your folder doesn't get messy, but you can
     call on the others if need be.
 
 - Git treats every version of code as a **"snapshot"** that you can look **back/
   revert** to at anytime.
+
   - Running a command called `git log` in the terminal displays every change
     you've saved:
 
@@ -202,221 +214,249 @@ on their servers (https://pages.github.com/).
 ### Preparations
 
 1. You **need** to have at least one **file named `index.html`**.
-  - This is the conventional name of the main HTML file and GitHub Pages
-    **won't host your files without one**
+
+- This is the conventional name of the main HTML file and GitHub Pages
+  **won't host your files without one**
+
 2. You **provided** a **Git link** when you **made the workspace**:
 
-  ![clone from git into Cloud9](img/clone_from_git_in_cloud9.png)
+![clone from git into Cloud9](img/clone_from_git_in_cloud9.png)
 
-  Nah, not familiar? Follow the steps in
-  **[Git and GitHub Pages w/ provided link](#git-and-github-pages-w-provided-link)
-  in heading below**
+Nah, not familiar? Follow the steps in
+**[Git and GitHub Pages w/ provided link](#git-and-github-pages-w-provided-link)
+in heading below**
 
 ### Using Git and GitHub
 
 1. Open your terminal
-  - Depending on the workspace configuration you set, it might already be
-    opened.
-  - Hit the "+" button in the bottom panel area OR on the top-bar click
-    "Window" and "New Terminal".
 
-    ![open new terminal](img/new_terminal.gif)
+- Depending on the workspace configuration you set, it might already be
+  opened.
+- Hit the "+" button in the bottom panel area OR on the top-bar click
+  "Window" and "New Terminal".
+
+  ![open new terminal](img/new_terminal.gif)
 
 2. Type the command: `git add [file]` OR `git add .`.
-  - Adds a file to be tracked by git.
-    - E.g. `git add index.html`.
-  - My only file is `index.html`.
-    - In the case you have **more than one file**, the **period [.] means add
-      every file** in the workspace to the tracked files.
-      - E.g. `git add .`
 
-    ![git add .](img/git_add.gif)
+- Adds a file to be tracked by git.
+  - E.g. `git add index.html`.
+- My only file is `index.html`.
+
+  - In the case you have **more than one file**, the **period [.] means add
+    every file** in the workspace to the tracked files.
+    - E.g. `git add .`
+
+  ![git add .](img/git_add.gif)
 
 3. Type: `git commit -m "[commit message here]"`.
-  - Commits changes to be pushed to the branch.
-    - `-m` stands for message and in quotations put a message that descriptions
-      what you did.
-      - If it is the first commit, simply put `git commit -m "first commit"`.
-  - Think of committing as packaging something into a package and putting the
-    shipping label on it.
-  - Don't make bad commit messages: be concise, but clear about what you did.
-    - Bad message example:
 
-        ![](img/bad_commit_message.png)
+- Commits changes to be pushed to the branch.
+  - `-m` stands for message and in quotations put a message that descriptions
+    what you did.
+    - If it is the first commit, simply put `git commit -m "first commit"`.
+- Think of committing as packaging something into a package and putting the
+  shipping label on it.
+- Don't make bad commit messages: be concise, but clear about what you did.
 
-    - Good message example:
+  - Bad message example:
 
-        ![](img/good_commit_message.png)
+    ![](img/bad_commit_message.png)
 
-    ![git commit](img/git_commit.gif)
+  - Good message example:
+
+    ![](img/good_commit_message.png)
+
+  ![git commit](img/git_commit.gif)
 
 4. Type: `git push`.
-  - Part two of saving, **"pushing"**.
-    - Uploading to GitHub.
-  - Think of pushing as actually shipping the container to the recipient, which
-    in this case is the repo.
-  - After hitting enter, you need to sign with your **GitHub credentials**.
-    - You can you find your username either on your profile or at these spots
-      when you login to GitHub.
 
-   ![GitHub username](img/github_username.png)
+- Part two of saving, **"pushing"**.
+  - Uploading to GitHub.
+- Think of pushing as actually shipping the container to the recipient, which
+  in this case is the repo.
+- After hitting enter, you need to sign with your **GitHub credentials**.
+  - You can you find your username either on your profile or at these spots
+    when you login to GitHub.
 
-  - The characters for the password not show up in the terminal for security
-   reasons — just keep typing!
+![GitHub username](img/github_username.png)
 
-   ![git push password](img/git_push_password.gif)
+- The characters for the password not show up in the terminal for security
+  reasons — just keep typing!
+
+![git push password](img/git_push_password.gif)
 
 5. Type: `git branch [branch-name]`.
-  - Creates a branch.
-  - We must name this [branch name] `gh-pages`.
-    - GitHub will only host files in a branch named `gh-pages`.
-  - **Example command: `git branch gh-pages`**.
-  - Must be named without spaces — **replace a space with a dash (-)**.
-  - If you create a branch with the wrong name, delete it using:.
-    - `git branch -d [name of branch]`.
-6. Type: `git push gh-pages`.
-  - Push your branch, `gh-pages`, online to GitHub.
-  - Afterwards your website should be up at
-    `https://[yourusername].github.io/[reponame]`.
-  - It might take about 30 seconds to fully get online.
 
-    ![git push to `gh-pages`](img/git_push_gh-pages.gif)
+- Creates a branch.
+- We must name this [branch name] `gh-pages`.
+  - GitHub will only host files in a branch named `gh-pages`.
+- **Example command: `git branch gh-pages`**.
+- Must be named without spaces — **replace a space with a dash (-)**.
+- If you create a branch with the wrong name, delete it using:.
+  - `git branch -d [name of branch]`.
+
+6. Type: `git push gh-pages`.
+
+- Push your branch, `gh-pages`, online to GitHub.
+- Afterwards your website should be up at
+  `https://[yourusername].github.io/[reponame]`.
+- It might take about 30 seconds to fully get online.
+
+  ![git push to `gh-pages`](img/git_push_gh-pages.gif)
 
 7. Go online to `https://[username].github.io/[reponame]`.
-  - Your website is now online! Enter the URL using your credentials and it
-    should show up (wait 30 seconds or more if it doesn't).
-    - E.g. `https://notbrian.github.io/example2`.
-  - Note: The repo name is different from the branch name.
-    - **The URL has is case sensitive - ensure the repo name is exactly the
-      same one you put into your URL.**
-  - **Example: `https://jevinsidhu.github.io/Personal-Website`**
+
+- Your website is now online! Enter the URL using your credentials and it
+  should show up (wait 30 seconds or more if it doesn't).
+  - E.g. `https://notbrian.github.io/example2`.
+- Note: The repo name is different from the branch name.
+  - **The URL has is case sensitive - ensure the repo name is exactly the
+    same one you put into your URL.**
+- **Example: `https://jevinsidhu.github.io/Personal-Website`**
+
 8. Celebrate!
 
-  Congrats, now you're a Git (6) God!
+Congrats, now you're a Git (6) God!
 
-  ![Git (6) God](https://i.imgur.com/LWvdiqA.gif)
+![Git (6) God](https://i.imgur.com/LWvdiqA.gif)
 
 ## Git and GitHub Pages w/o provided link
 
 1. Open your terminal.
-  - Depending on the workspace configuration you set, it might already be
-    opened!
-  - Hit the "+" button in the bottom panel area OR on the top-bar click
-    "Window" (8th from the right) and "New Terminal".
 
-    ![new terminal in Cloud9](img/new_terminal.gif)
+- Depending on the workspace configuration you set, it might already be
+  opened!
+- Hit the "+" button in the bottom panel area OR on the top-bar click
+  "Window" (8th from the right) and "New Terminal".
+
+  ![new terminal in Cloud9](img/new_terminal.gif)
 
 2. In the terminal, type: `git init`.
-  - This creates a .git file inside of your project folder.
-  - The .git file stores all the location data for your workspace.
-  - This allows you to use git inside your folder.
 
-  ![`git init`](img/git_init.gif)
+- This creates a .git file inside of your project folder.
+- The .git file stores all the location data for your workspace.
+- This allows you to use git inside your folder.
+
+![`git init`](img/git_init.gif)
 
 2. Type: `git remote add [remote-name] [link to repo]`.
-  - Your changes need to connect your local folder to a remote one on GitHub.
-    - You need a connection between the two --> Create a remote.
-  - On GitHub, **click the green button that says "New Repository" near the
-    middle-right area**.
-    - Name your repo (e.g hello-world) and give a short description.
-      - No spaces between your name --> replace a space with a dash (-).
-      - Short and to the point description.
-  - Click the green button that says "Create repository".
-  - Copy the .git link it provides — that's your `link to repo`.
-  - It will be something similar looking to:
-    https://github.com/notbrian/example.git
 
-    ![create a repo on GitHub](img/github_create_repo.gif)
+- Your changes need to connect your local folder to a remote one on GitHub.
+  - You need a connection between the two --> Create a remote.
+- On GitHub, **click the green button that says "New Repository" near the
+  middle-right area**.
+  - Name your repo (e.g hello-world) and give a short description.
+    - No spaces between your name --> replace a space with a dash (-).
+    - Short and to the point description.
+- Click the green button that says "Create repository".
+- Copy the .git link it provides — that's your `link to repo`.
+- It will be something similar looking to:
+  https://github.com/notbrian/example.git
 
-  - **Example: Remote is a TV Remote Controller**.
-    - Hand is your local copy.
-    - **TV** is the **remote repo on GitHub**.
-    - The **remote** is the **controller**.
+  ![create a repo on GitHub](img/github_create_repo.gif)
 
-    If you want to change the channel, you hit one channel up on the
-    **controller (remote)** with your **hand (local)** and it **changes** the
-    channel one upon your **TV (remote repo)**.
+- **Example: Remote is a TV Remote Controller**.
 
-  - Open your terminal on **Cloud9** and type the command:
-    - `git remote add [remote-name] [link to repo]`
-  - [remote-name] is where you name your remote.
-    - **Don't include the square brackets** when you type, this is custom text
-      you are inserting.
-    - Name it something clear.
-      - i.e. `github`
-    - **[link to repo]** is where you paste the link from earlier.
-      - Again, don't include the square brackets.
-    - **Example command**: `git remote add github https://github.com/notbrian/example.git`.
+  - Hand is your local copy.
+  - **TV** is the **remote repo on GitHub**.
+  - The **remote** is the **controller**.
 
-    ![git remote add](img/git_remote_add.gif)
+  If you want to change the channel, you hit one channel up on the
+  **controller (remote)** with your **hand (local)** and it **changes** the
+  channel one upon your **TV (remote repo)**.
+
+- Open your terminal on **Cloud9** and type the command:
+  - `git remote add [remote-name] [link to repo]`
+- [remote-name] is where you name your remote.
+
+  - **Don't include the square brackets** when you type, this is custom text
+    you are inserting.
+  - Name it something clear.
+    - i.e. `github`
+  - **[link to repo]** is where you paste the link from earlier.
+    - Again, don't include the square brackets.
+  - **Example command**: `git remote add github https://github.com/notbrian/example.git`.
+
+  ![git remote add](img/git_remote_add.gif)
 
 3. Type: `git add [filename.extension]` OR `git add .`.
-  - Adds a file to be tracked by git.
-    - E.g. `git add index.html`.
-  - My only file is `index.html`.
-    - In the case you have **more than one**, the **period [.] means add every
-      file** in the workspace to the tracked files.
-      - E.g. `git add .`.
 
-    ![git add](img/git_add.gif)
+- Adds a file to be tracked by git.
+  - E.g. `git add index.html`.
+- My only file is `index.html`.
+
+  - In the case you have **more than one**, the **period [.] means add every
+    file** in the workspace to the tracked files.
+    - E.g. `git add .`.
+
+  ![git add](img/git_add.gif)
 
 3. Type: `git commit -m "[commit message here]"`.
-  - Commits changes to be pushed to the branch.
-    - `-m` stands for message and in quotations put a message that descriptions
-      what you did.
-      - If it is the first commit, simply put `git commit -m "first commit"`.
-  - Think of committing as packaging something into a package and putting the
-    shipping label on it.
-  - Don't make bad commit messages: be concise, but clear about what you did.
-    ![Bad message example](img/bad_commit_message.png)
-    ![Good message example](img/good_commit_message.png)
-    ![git commit](img/git_commit.gif)
+
+- Commits changes to be pushed to the branch.
+  - `-m` stands for message and in quotations put a message that descriptions
+    what you did.
+    - If it is the first commit, simply put `git commit -m "first commit"`.
+- Think of committing as packaging something into a package and putting the
+  shipping label on it.
+- Don't make bad commit messages: be concise, but clear about what you did.
+  ![Bad message example](img/bad_commit_message.png)
+  ![Good message example](img/good_commit_message.png)
+  ![git commit](img/git_commit.gif)
 
 4. Type: `git push`.
-  - Part two of saving, **"pushing"**.
-    - Uploading to GitHub.
-  - Think of pushing as actually shipping the container to the recipient, which
-    in this case is the repo.
-- After hitting enter, you need to sign with your **GitHub credentials**.
-  - You can you find your username either on your profile or at these spots when
-   you login to GitHub.
 
-   ![GitHub username](img/github_username.png)
+- Part two of saving, **"pushing"**.
+  - Uploading to GitHub.
+- Think of pushing as actually shipping the container to the recipient, which
+  in this case is the repo.
+- After hitting enter, you need to sign with your **GitHub credentials**.
+
+  - You can you find your username either on your profile or at these spots when
+    you login to GitHub.
+
+  ![GitHub username](img/github_username.png)
 
   - The characters for the password not show up in the terminal for security
-   reasons -- just keep typing!
+    reasons -- just keep typing!
 
-   ![enter password git push](img/git_push_password.gif)
+  ![enter password git push](img/git_push_password.gif)
 
 5. Type: `git branch [branch-name]`.
-  - Creates a branch.
-  - We must name this [branch name] `gh-pages`.
-    - GitHub will only host files in a branch named `gh-pages`.
-  - **Example command: `git branch gh-pages`**.
-  - Must be named without spaces -- **replace a space with a dash (-)**.
-  - If you create a branch with the wrong name, delete it using:.
-    - `git branch -d [name of branch]`
-6. Type: `git push gh-pages`.
-  - Push your branch, `gh-pages`, online to GitHub.
-  - Afterwards your website should be up at
-    `[yourusername].github.io/[reponame]`.
-  - It might take about 30 seconds to fully get online.
 
-    ![git push to gh-pages](img/git_push_gh-pages.gif)
+- Creates a branch.
+- We must name this [branch name] `gh-pages`.
+  - GitHub will only host files in a branch named `gh-pages`.
+- **Example command: `git branch gh-pages`**.
+- Must be named without spaces -- **replace a space with a dash (-)**.
+- If you create a branch with the wrong name, delete it using:.
+  - `git branch -d [name of branch]`
+
+6. Type: `git push gh-pages`.
+
+- Push your branch, `gh-pages`, online to GitHub.
+- Afterwards your website should be up at
+  `[yourusername].github.io/[reponame]`.
+- It might take about 30 seconds to fully get online.
+
+  ![git push to gh-pages](img/git_push_gh-pages.gif)
 
 7. Go online to `https://[username].github.io/[reponame]`.
-  - Your website is now online! Enter the URL using your credentials and it
-    should show up (wait 30 seconds or more if it doesn't).
-    - E.g. https://notbrian.github.io/example2
-  - Note: The repo name is different from the branch name.
-    - **The URL has is case sensitive -- ensure the repo name is exactly the
-      same one you put into your URL**.
-  - **Example: https://jevinsidhu.github.io/Personal-Website**.
+
+- Your website is now online! Enter the URL using your credentials and it
+  should show up (wait 30 seconds or more if it doesn't).
+  - E.g. https://notbrian.github.io/example2
+- Note: The repo name is different from the branch name.
+  - **The URL has is case sensitive -- ensure the repo name is exactly the
+    same one you put into your URL**.
+- **Example: https://jevinsidhu.github.io/Personal-Website**.
+
 8. Celebrate!
 
-  You successfully pushed your site online!
+You successfully pushed your site online!
 
-  ![Drake clapping](img/drake_clapping.gif)
+![Drake clapping](img/drake_clapping.gif)
 
 ## More Commands
 

@@ -453,7 +453,6 @@ for item in food_predictions:
   if item[0] == "hot dog": # The first item, which was designated to be the name in our tuple for loop
     if item[1] > 0.95: is_hotdog = True
 print(is_hotdog)
-
 ```
 
 Surprisingly, if we run the script, it works on most hot dogs. You can test this yourself by replacing

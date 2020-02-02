@@ -12,7 +12,7 @@ order: 9
 | ----------------------- |
 | ![](img/final_demo.gif) |
 
-_**We recommend going through this workshop in Google Chrome.**_
+_We recommend going through this workshop in Google Chrome._
 
 In this workshop we'll continue our foray into game development in p5.js by creating a simple platformer. It should take around 60 minutes.
 

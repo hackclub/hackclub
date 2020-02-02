@@ -3,7 +3,8 @@
 ## Background
 
 | From step 3, the sprite follows <br> the mouse: <br> ![](img/3_mini.gif) | Now we want to add a ball that we <br> can dribble around: <br> ![](img/4_mini.gif) |
-|-------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+
 
 ## Outcome of This Step
 
@@ -16,14 +17,14 @@ After you finish this step, you will learn how to to add the goal sprite. Here i
 ## Choose Your Own Path
 
 - [**Walk me through this code step-by-step.**](#walk-through-of-the-code-step-by-step)
-    - Recommended for those who
-      - Are beginners
-      - Want an in depth understanding of the code
+  - Recommended for those who
+    - Are beginners
+    - Want an in depth understanding of the code
 - [**Give me a brief overview of this code.**](#brief-overview-of-the-code)
-    - Recommended for those who
-      - Have more experience
-      - Want to cover more ground but have a less in depth understanding
-      - Want to recap what they did in the step-by-step section
+  - Recommended for those who
+    - Have more experience
+    - Want to cover more ground but have a less in depth understanding
+    - Want to recap what they did in the step-by-step section
 
 # Walk Through of the Code Step-By-Step
 
@@ -34,26 +35,26 @@ Create a ball sprite in a similar way that you created the player sprite in [ste
 Here's the code that contains the new code to add a ball sprite:
 
 ```js
-var player;
-var ball;                                  // <-- NEW
+var player
+var ball // <-- NEW
 
 function setup() {
-  createCanvas(250, 500);
+  createCanvas(250, 500)
 
-  player = createSprite(125, 400, 50, 50);
-  ball = createSprite(125, 250, 25, 25);   // <-- NEW
+  player = createSprite(125, 400, 50, 50)
+  ball = createSprite(125, 250, 25, 25) // <-- NEW
 }
 
 function draw() {
-  background(255, 240, 220);
-  drawSprites();
+  background(255, 240, 220)
+  drawSprites()
 
-  player.position.x = mouseX;
-  player.position.y = mouseY;
+  player.position.x = mouseX
+  player.position.y = mouseY
 }
 ```
 
-- [ ] _Go ahead and add these two new lines of code. If you don't quite understand how they work, feel free to review [step 2] (add_player_sprite.md)._
+- [ ] _Go ahead and add these two new lines of code. If you don't quite understand how they work, feel free to review [step 2](add_player_sprite.md)._
 
 > ![](img/4_write-a_create_ball.gif)
 
@@ -87,24 +88,24 @@ New lines marked with
 `// <-- NEW LINE`.
 
 ```js
-var player;
-var ball;                                 // <-- NEW
+var player
+var ball // <-- NEW
 
 function setup() {
-  createCanvas(250, 500);
+  createCanvas(250, 500)
 
-  player = createSprite(125, 400, 50, 50);
-  ball = createSprite(125, 250, 25, 25);  // <-- NEW
+  player = createSprite(125, 400, 50, 50)
+  ball = createSprite(125, 250, 25, 25) // <-- NEW
 }
 
 function draw() {
-  background(255, 240, 220);
-  drawSprites();
+  background(255, 240, 220)
+  drawSprites()
 
-  player.position.x = mouseX;
-  player.position.y = mouseY;
+  player.position.x = mouseX
+  player.position.y = mouseY
 
-  ball.bounce(player);                    // <-- NEW
+  ball.bounce(player) // <-- NEW
 }
 ```
 
@@ -124,13 +125,14 @@ The above line of code can be interpreted as "make the **`ball`** **`bounce`** a
 
 ## Next Up
 
-| **[![](img/5_mini.gif)  <br> 5. Add Goal](add_goal.md)** |
-|--------------------------------------------------------------------|
+| **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)** |
+| ------------------------------------------------------- |
+
 
 ## Steps
 
-| **[![](img/1_mini.png) <br> 1. Initial Setup] (initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite]  (add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-|--------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
-| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**    | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                     | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |
+| **[![](img/1_mini.png) <br> 1. Initial Setup](initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite](add_player_sprite.md)** | **[![](img/3_mini.gif) <br> 3. Mouse Movement](mouse_movement.md)** |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**   | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                   | **[![](img/readme.png) <br> Back to the README.md](README.md)**     |
 
 [dribble]: https://jsbin.com/gist/b5d0276660447071c456

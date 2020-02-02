@@ -1,7 +1,7 @@
 ---
 name: PICO-8 Maze
 description: A "scary maze" game built on the PICO-8
-author: "@jajoosam"
+author: '@jajoosam'
 group: experimental
 order: 8
 ---

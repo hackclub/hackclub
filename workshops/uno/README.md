@@ -1,7 +1,7 @@
 ---
 name: Uno
 description: Specs of the Arduino Uno
-author: "@Athulbless"
+author: '@Athulbless'
 group: arduino
 order: 1
 ---

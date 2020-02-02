@@ -98,7 +98,7 @@ You learned how to:
 - Remove an object from an `array`
 - Access the `firstObject` of an `array`
 
---------------------------------------------------------------------------------
+---
 
 Now to complete the game, we only have two more steps: collision detection and
 the retry screen! Let's get started!

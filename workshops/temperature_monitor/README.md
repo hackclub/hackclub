@@ -1,7 +1,7 @@
 ---
 name: Temperature Monitor
 description: Build a temperature monitor with Arduino
-author: "@AthulBless"
+author: '@AthulBless'
 group: arduino
 order: 3
 ---
@@ -14,7 +14,7 @@ order: 3
 
 This is very simple project which hooks the DHT22 Temperature and Humidity sensor to the Arduino Uno & lets you measure your room Temperature & Humidity
 
-Here, we are using the DHT22 Temperature and Humidity sensor with Arduino Uno R3 and getting it's data from the Arduino Serial Monitor. The Humidity Range of the DHT22 is 0-100% and Temperature range is -40 - 125°C  (the reason why I like DHT22 over DHT11).
+Here, we are using the DHT22 Temperature and Humidity sensor with Arduino Uno R3 and getting it's data from the Arduino Serial Monitor. The Humidity Range of the DHT22 is 0-100% and Temperature range is -40 - 125°C (the reason why I like DHT22 over DHT11).
 
 **Hardware Required:**
 
@@ -31,7 +31,7 @@ Here, we are using the DHT22 Temperature and Humidity sensor with Arduino Uno R3
 
 1. Pin `1` is `VCC`, connect it to `5V`.
 1. Pin `2` is for data, connect it to digital Pin `7`.
-1. And finally connect Pin `4` to  `GND`
+1. And finally connect Pin `4` to `GND`
 
 ![](images/Arduino.jpg)
 

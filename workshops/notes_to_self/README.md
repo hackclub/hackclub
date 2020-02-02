@@ -1,20 +1,20 @@
 ---
 name: Notes to Self
 description: An online personal journal
-author: "@jkwok91"
+author: '@jkwok91'
 group: retired
 order: 6
 ---
 
 # Notes to Self
 
-_**This workshop has been retired and is no longer maintained or recommended.**_
+_This workshop has been retired and is no longer maintained or recommended._
 
 ---
 
 Demo: [here](https://prophetorpheus.github.io/notes_to_self/)
 
-_**This workshop is designed with Google Chrome in mind. Problems may occur if you use a different browser.**_
+_This workshop is designed with Google Chrome in mind. Problems may occur if you use a different browser._
 
 This is a way to keep personal notes in your browser storage. Since the notes are saved to `localStorage`, these are truly notes-to-self (unless you share your computer).
 
@@ -240,10 +240,10 @@ Local storage is an object, and objects in JavaScript are made up of **keys** th
 
 ```js
 var orpheusFacts = {
-  name: "Prophet Orpheus",
+  name: 'Prophet Orpheus',
   numberOfEyes: 2,
-  likes: [ "food", "coding", "Hack Club" ]
-};
+  likes: ['food', 'coding', 'Hack Club']
+}
 ```
 
 One **key** is `name` and the **value** of `name` is `Prophet Orpheus`. Another key is `numberOfEyes`, and its value is 2. Orpheus has two eyes.
@@ -252,7 +252,7 @@ In addition to having strings and numbers as values, we can also have a value th
 
 Similar to this, we're going to save our list of notes in local storage by mapping a key called "notes" to the list of notes.
 
-We can view what's in our local storage at the moment by right-clicking the external live preview and selecting `Inspect`, and going to the Resources tab. Once there, we can click the little arrow next to the item on the left sidebar that says "Local Storage." 
+We can view what's in our local storage at the moment by right-clicking the external live preview and selecting `Inspect`, and going to the Resources tab. Once there, we can click the little arrow next to the item on the left sidebar that says "Local Storage."
 
 ![](img/localStorage_in_inspector.png)
 
@@ -265,7 +265,7 @@ To display the notes saved in `localStorage`, we'll be using `localStorage.getIt
 Type this inside `main.js`:
 
 ```js
-localStorage.setItem("notes", []);
+localStorage.setItem('notes', [])
 ```
 
 If we save and look at our local storage, we see `notes` paired with ... nothing?
@@ -275,7 +275,7 @@ The gotcha about local storage is that it saves everything in strings, and its m
 Let's change the previous statement to this:
 
 ```js
-localStorage.setItem("notes", JSON.stringify([]));
+localStorage.setItem('notes', JSON.stringify([]))
 ```
 
 Now if we look in local storage, we'll see `[]`. This is what we want.
@@ -289,11 +289,11 @@ So we'll say, if getting `notes` from local storage doesn't return a [truthy val
 After making sure local storage has an item called `notes`, we'll reach into local storage and get that item, and store that into a variable called `myNotes`.
 
 ```js
-if (!localStorage.getItem("notes")) {
-  localStorage.setItem("notes", JSON.stringify([]));
+if (!localStorage.getItem('notes')) {
+  localStorage.setItem('notes', JSON.stringify([]))
 }
 
-var myNotes = JSON.parse(localStorage.getItem("notes"));
+var myNotes = JSON.parse(localStorage.getItem('notes'))
 ```
 
 Although local storage stores data as strings, it's much easier for us to use the data if it's an array, so we use `JSON.parse()` to reverse the transformation process of `JSON.stringify()`.
@@ -305,10 +305,9 @@ Let's start populating our local storage `notes` item by creating a function to 
 We'll add these lines directly after all the previous code within `main.js`:
 
 ```js
-function postNewNote() {
-}
+function postNewNote() {}
 
-$(".post-new-note").on("click", postNewNote);
+$('.post-new-note').on('click', postNewNote)
 ```
 
 Our `postNewNote()` function should:
@@ -324,15 +323,15 @@ Our `postNewNote()` function should:
 We can access the elements using jQuery. Type the following lines inside `postNewNote()` (between the `{` and `}`):
 
 ```js
-var titleInput = $(".new-note-title");
-var contentInput = $(".new-note-content");
+var titleInput = $('.new-note-title')
+var contentInput = $('.new-note-content')
 ```
 
 This stores references to the input elements for title and content, respectively. Next, we'll actually get the values, and store them in variables. Type this directly after the previous two lines:
 
 ```js
-var noteTitle = titleInput.val();
-var noteContent = contentInput.val();
+var noteTitle = titleInput.val()
+var noteContent = contentInput.val()
 ```
 
 #### Getting the Current Time and Date
@@ -340,7 +339,7 @@ var noteContent = contentInput.val();
 Now, we'll store the date and time that we posted the note. JavaScript provides an easy way to get the current date and time, which we can use in our `postNewNote()` function. Add this after the previous lines:
 
 ```js
-var noteDate = new Date();
+var noteDate = new Date()
 ```
 
 That was easy!
@@ -354,15 +353,15 @@ Now that we've grabbed all relevant info about the new note, let's create a vari
 We'll add this line to the bottom of `postNewNote()`:
 
 ```js
-var note = {};
+var note = {}
 ```
 
 And now we'll store the title, content, and date within our newly created `note` object, by typing this next:
 
 ```js
-note.title = noteTitle;
-note.content = noteContent;
-note.date = noteDate;
+note.title = noteTitle
+note.content = noteContent
+note.date = noteDate
 ```
 
 Our `note` object now contains three properties: `title`, `content`, and `date`.
@@ -374,7 +373,7 @@ We'll add the `note` object to `myNotes`, by appending it to the array, using th
 Let's add this to the bottom of the `postNewNote()` function.
 
 ```js
-myNotes.push(note);
+myNotes.push(note)
 ```
 
 #### Updating `localStorage`
@@ -382,13 +381,13 @@ myNotes.push(note);
 The last thing we need to do is update local storage, by using the method `.setItem()` to save the newly modified `myNotes`. Type this beneath the previous line:
 
 ```js
-localStorage.setItem("notes", myNotes);
+localStorage.setItem('notes', myNotes)
 ```
 
 But wait, `myNotes` isn't a string, and we've already discussed that local storage only saves strings. Let's once again use `JSON.stringify()` to help. Change the previous line to include a call to `JSON.stringify()`:
 
 ```js
-localStorage.setItem("notes", JSON.stringify(myNotes));
+localStorage.setItem('notes', JSON.stringify(myNotes))
 ```
 
 That's the end of `postNewNote()`. Save and refresh your external live preview, and open up local storage in the Inspector.
@@ -404,8 +403,7 @@ Now we just need to display it on our page.
 We can display `myNotes` by using jQuery to create a bunch of HTML elements. Let's create a function to do this, underneath the `postNewNote()` function:
 
 ```js
-function displayNotes() {
-}
+function displayNotes() {}
 ```
 
 What should our function accomplish?
@@ -422,15 +420,14 @@ For each note contained in `myNotes`, we must grab the title, date, and content 
 Within our function `displayNotes()`, type:
 
 ```js
-for (var i = 0; i < myNotes.length; i++) {
-}
+for (var i = 0; i < myNotes.length; i++) {}
 ```
 
 Inside the for-loop, we can access each note by looking it up by the index `i`:
 
 ```js
 for (var i = 0; i < myNotes.length; i++) {
-  var note = myNotes[i];
+  var note = myNotes[i]
 }
 ```
 
@@ -438,10 +435,10 @@ Now that we've stored the note in the variable `note`, we can access the title, 
 
 ```js
 for (var i = 0; i < myNotes.length; i++) {
-  var note = myNotes[i];
-  var noteTitle = note.title;
-  var noteDate = note.date;
-  var noteContent = note.content;
+  var note = myNotes[i]
+  var noteTitle = note.title
+  var noteDate = note.date
+  var noteContent = note.content
 }
 ```
 
@@ -455,12 +452,12 @@ First, we'll create an element to contain the whole note. Think of this as the b
 
 ```js
 for (var i = 0; i < myNotes.length; i++) {
-  var note = myNotes[i];
-  var noteTitle = note.title;
-  var noteDate = note.date;
-  var noteContent = note.content;
+  var note = myNotes[i]
+  var noteTitle = note.title
+  var noteDate = note.date
+  var noteContent = note.content
 
-  var thisNote = $("<div>");
+  var thisNote = $('<div>')
 }
 ```
 
@@ -468,12 +465,12 @@ We'll add a class to it, too:
 
 ```js
 for (var i = 0; i < myNotes.length; i++) {
-  var note = myNotes[i];
-  var noteTitle = note.title;
-  var noteDate = note.date;
-  var noteContent = note.content;
+  var note = myNotes[i]
+  var noteTitle = note.title
+  var noteDate = note.date
+  var noteContent = note.content
 
-  var thisNote = $("<div>").addClass("note");
+  var thisNote = $('<div>').addClass('note')
 }
 ```
 
@@ -481,24 +478,30 @@ Next, we'll create a `h2` element for the note title, a `p` element for the note
 
 ```js
 for (var i = 0; i < myNotes.length; i++) {
-  var note = myNotes[i];
-  var noteTitle = note.title;
-  var noteDate = note.date;
-  var noteContent = note.content;
+  var note = myNotes[i]
+  var noteTitle = note.title
+  var noteDate = note.date
+  var noteContent = note.content
 
-  var thisNote = $("<div>").addClass("note");
-  var noteTitleDisplay = $("<h2>").addClass("note-title");
-  var noteDateDisplay = $("<p>").addClass("note-date");
-  var noteContentDisplay = $("<p>").addClass("note-content");
+  var thisNote = $('<div>').addClass('note')
+  var noteTitleDisplay = $('<h2>').addClass('note-title')
+  var noteDateDisplay = $('<p>').addClass('note-date')
+  var noteContentDisplay = $('<p>').addClass('note-content')
 }
 ```
 
 Lastly, we'll fill the elements with the corresponding information. jQuery has a nice method to access and set the text within an element, namely [`.text()`](http://api.jquery.com/text/). We'll add a call to `.text()` to each element, passing it the appropriate value:
 
 ```js
-var noteTitleDisplay = $("<h2>").addClass("note-title").text(noteTitle);
-var noteDateDisplay = $("<p>").addClass("note-date").text(noteDate);
-var noteContentDisplay = $("<p>").addClass("note-content").text(noteContent);
+var noteTitleDisplay = $('<h2>')
+  .addClass('note-title')
+  .text(noteTitle)
+var noteDateDisplay = $('<p>')
+  .addClass('note-date')
+  .text(noteDate)
+var noteContentDisplay = $('<p>')
+  .addClass('note-content')
+  .text(noteContent)
 ```
 
 #### Adding Elements to `index.html`
@@ -507,19 +510,25 @@ Now, we'll add each of these new elements to the `thisNote` div.
 
 ```js
 for (var i = 0; i < myNotes.length; i++) {
-  var note = myNotes[i];
-  var noteTitle = note.title;
-  var noteDate = note.date;
-  var noteContent = note.content;
+  var note = myNotes[i]
+  var noteTitle = note.title
+  var noteDate = note.date
+  var noteContent = note.content
 
-  var thisNote = $("<div>").addClass("note");
-  var noteTitleDisplay = $("<h2>").addClass("note-title").text(noteTitle);
-  var noteDateDisplay = $("<p>").addClass("note-date").text(noteDate);
-  var noteContentDisplay = $("<p>").addClass("note-content").text(noteContent);
+  var thisNote = $('<div>').addClass('note')
+  var noteTitleDisplay = $('<h2>')
+    .addClass('note-title')
+    .text(noteTitle)
+  var noteDateDisplay = $('<p>')
+    .addClass('note-date')
+    .text(noteDate)
+  var noteContentDisplay = $('<p>')
+    .addClass('note-content')
+    .text(noteContent)
 
-  thisNote.append(noteTitleDisplay);
-  thisNote.append(noteDateDisplay);
-  thisNote.append(noteContentDisplay);
+  thisNote.append(noteTitleDisplay)
+  thisNote.append(noteDateDisplay)
+  thisNote.append(noteContentDisplay)
 }
 ```
 
@@ -527,28 +536,34 @@ And lastly we'll add `thisNote` to the `old-notes` div that is currently in the 
 
 ```js
 for (var i = 0; i < myNotes.length; i++) {
-  var note = myNotes[i];
-  var noteTitle = note.title;
-  var noteDate = note.date;
-  var noteContent = note.content;
+  var note = myNotes[i]
+  var noteTitle = note.title
+  var noteDate = note.date
+  var noteContent = note.content
 
-  var thisNote = $("<div>").addClass("note");
-  var noteTitleDisplay = $("<h2>").addClass("note-title").text(noteTitle);
-  var noteDateDisplay = $("<p>").addClass("note-date").text(noteDate);
-  var noteContentDisplay = $("<p>").addClass("note-content").text(noteContent);
+  var thisNote = $('<div>').addClass('note')
+  var noteTitleDisplay = $('<h2>')
+    .addClass('note-title')
+    .text(noteTitle)
+  var noteDateDisplay = $('<p>')
+    .addClass('note-date')
+    .text(noteDate)
+  var noteContentDisplay = $('<p>')
+    .addClass('note-content')
+    .text(noteContent)
 
-  thisNote.append(noteTitleDisplay);
-  thisNote.append(noteDateDisplay);
-  thisNote.append(noteContentDisplay);
+  thisNote.append(noteTitleDisplay)
+  thisNote.append(noteDateDisplay)
+  thisNote.append(noteContentDisplay)
 
-  $(".old-notes").append(thisNote);
+  $('.old-notes').append(thisNote)
 }
 ```
 
 Our `displayNotes()` function is now complete! All we have to do now is actually call the function. Type this line directly beneath the line that creates `myNotes`:
 
 ```js
-displayNotes();
+displayNotes()
 ```
 
 If you save and refresh you should be able to see your note on the page. Yay!
@@ -568,8 +583,8 @@ I'd like to clear out the New Note form once I've submitted the note. There's no
 We can add a few lines to the end of `postNewNote()` to have this behavior:
 
 ```js
-titleInput.val("");
-contentInput.val("");
+titleInput.val('')
+contentInput.val('')
 ```
 
 #### Updating the Display
@@ -579,7 +594,7 @@ To go with this, I'd also like the note I just created to be displayed with the 
 That's simple enough, we'll just call `displayNotes()` at the end of `postNewNote()`:
 
 ```js
-displayNotes();
+displayNotes()
 ```
 
 Save and refresh, then create a new note to try it out.
@@ -591,7 +606,7 @@ We'll clear it out by setting the HTML to an empty string (`""`), similar to how
 Add the following line to the top of `displayNotes()`, right after the line `function displayNotes() {`, before the rest of the function body:
 
 ```js
-$(".old-notes").html("");
+$('.old-notes').html('')
 ```
 
 There, that should look much better.

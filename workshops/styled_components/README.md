@@ -1,7 +1,7 @@
 ---
 name: styled-weather
 description: Weather app with React + styled-components
-author: "@shmishtopher"
+author: '@shmishtopher'
 group: react
 order: 2
 ---
@@ -18,7 +18,7 @@ In your command line, navigate to wherever you keep your projects and create a n
 
 Next, we need to install our libraries:
 
-```sh
+```bash
 npm i react react-dom styled-components --save
 npm i parcel-bundler --save-dev
 ```
@@ -43,10 +43,10 @@ Create a new subdirectory call `src` in `styled-weather`, and create the files `
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Hacker Skies</title>
   </head>
   <body>
@@ -254,11 +254,13 @@ const Row = styled.div`
 export const Details = ({ wSpeed, humid, wGust, cover }) => (
   <Container>
     <Row>
-      <span>Wind Speed: {wSpeed}</span>Humidity: {humid}
+      <span>Wind Speed: {wSpeed}</span>
+      Humidity: {humid}
       <span />
     </Row>
     <Row>
-      <span>Wind Gust: {wGust}</span>Cloud Cover: {cover}
+      <span>Wind Gust: {wGust}</span>
+      Cloud Cover: {cover}
       <span />
     </Row>
   </Container>
@@ -311,7 +313,12 @@ const Large = styled.p`
   text-align: center;
 `
 
-export const Temperature = ({ temp }) => <Large>{temp}°F</Large>
+export const Temperature = ({ temp }) => (
+  <Large>
+    {temp}
+    °F
+  </Large>
+)
 ```
 
 This component functions nearly identically to the [`Summary`](#componentssummaryjs) component. The one advantage to passing a property instead of listing the temperature inline with a pure styled component is that it allows for cleaner code on in the `Weather` component. (It abstracts away the appending of "°F").

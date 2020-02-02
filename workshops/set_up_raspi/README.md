@@ -1,7 +1,7 @@
 ---
 name: Set Up a Pi
 description: Installing Raspbian on your dessert of choice
-author: "@1061999"
+author: '@1061999'
 group: pi
 order: 3
 ---
@@ -20,7 +20,7 @@ Setting up a Raspberry Pi is very easy. This workshop will walk you through most
 
 ## Video tutorial
 
-*Credits: [Raspberry Pi Foundation](http://www.raspberrypi.org) & MagPi team*
+_Credits: [Raspberry Pi Foundation](http://www.raspberrypi.org) & MagPi team_
 
 [youtu.be/FoFruCqjDHU](https://youtu.be/FoFruCqjDHU)
 
@@ -40,7 +40,7 @@ Using Etcher burn the downloaded Raspbian image on to the SD card.
 
 ![Burn Image](img/burn_image.png)
 
-Or you could use the NOOBS (New Out Of the Box) OS image given on the website. It is basically an installer of multiple operating system distributions which includes the Raspbian image. You can also sideload other operating systems using NOOBS. 
+Or you could use the NOOBS (New Out Of the Box) OS image given on the website. It is basically an installer of multiple operating system distributions which includes the Raspbian image. You can also sideload other operating systems using NOOBS.
 
 ![NOOBS](img/noobs.png)
 
@@ -50,7 +50,7 @@ Just download the file given and extract the contents onto the micro SD card. Po
 
 ![Plug in](img/plug_in.gif)
 
-Insert the micro SD card inside the Raspberry Pi. Connect the Raspberry Pi to a monitor using an HDMI cable. Connect a 5v adapter to the power port. 
+Insert the micro SD card inside the Raspberry Pi. Connect the Raspberry Pi to a monitor using an HDMI cable. Connect a 5v adapter to the power port.
 
 ![Pi Underbelly](img/pi_underbelly.jpg)
 

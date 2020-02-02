@@ -2,8 +2,9 @@
 
 ## Background
 
-| From step 1: we <br> ![](http://placehold.it/300?text=1)  |  From step 1: we <br> ![](http://placehold.it/300?text=2)  | From step 1: we <br> ![](http://placehold.it/300?text=3) |
-|-----------------------------------------------------------|------------------------------------------------------------|----------------------------------------------------------|
+| From step 1: we <br> ![](http://placehold.it/300?text=1) | From step 1: we <br> ![](http://placehold.it/300?text=2) | From step 1: we <br> ![](http://placehold.it/300?text=3) |
+| -------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- |
+
 
 ## Outcome of This Step
 
@@ -13,20 +14,20 @@ After you finish this step, you will learn how to **TODO**. Here is the code you
 
 `TODO: Change URL`
 <a href="http://jsbin.com/dikevu/23/edit?js,output" target="_blank">
-  ![](img/bttn_open_in_js_bin.png)
+![](img/bttn_open_in_js_bin.png)
 </a>
 
 ## Choose Your Own Path
 
 - [**Walk me through this code step-by-step.**](#walk-through-of-the-code-step-by-step)
-    - Recommended for those who
-      - Are beginners
-      - Who want an in depth understanding of the code
+  - Recommended for those who
+    - Are beginners
+    - Who want an in depth understanding of the code
 - [**Give me a brief overview of this code.**](#brief-overview-of-the-code)
-    - Recommended for those who
-      - Have more experience
-      - Want to cover more ground but have a less in depth understanding
-      - Want to recap what they did in the step-by-step section
+  - Recommended for those who
+    - Have more experience
+    - Want to cover more ground but have a less in depth understanding
+    - Want to recap what they did in the step-by-step section
 
 # Walk Through of the Code Step-By-Step
 
@@ -63,12 +64,12 @@ Reproduced below is the code that **TODO**:
 New lines marked with `// <-- NEW LINE`.
 
 ```js
-TODO                                 // <-- NEW LINE
+TODO // <-- NEW LINE
 ```
 
 **TODO**
 <a href="http://jsbin.com/dikevu/23/edit?js,output" target="_blank">
-  ![](img/bttn_open_in_js_bin.png)
+![](img/bttn_open_in_js_bin.png)
 </a>
 
 - [ ] Go ahead and add the `NEW LINES` to your code:
@@ -97,14 +98,15 @@ player = createSprite(150, 100, 50, 50);
 
 ## Next Up
 
-| **[![](![](http://placehold.it/300?text=TODO))  <br> X. TODO](mouse_movement.md)** |
-|------------------------------------------------------------------------------------|
+| **[![](<![](http://placehold.it/300?text=TODO)>) <br> X. TODO](mouse_movement.md)** |
+| ----------------------------------------------------------------------------------- |
+
 
 ## Steps
 
-| **[![](img/1_mini.png) <br> 1. Initial Setup](initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite](add_player_sprite.md)** | **[![](img/3_mini.gif)  <br> 3. Mouse Movement](mouse_movement.md)** |
-| ----------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**   | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                   | **[![](img/readme.png) <br> Back to the README.md](README.md)**      |
+| **[![](img/1_mini.png) <br> 1. Initial Setup](initial_setup.md)** | **[![](img/2_mini.png) <br> 2. Add Player Sprite](add_player_sprite.md)** | **[![](img/3_mini.gif) <br> 3. Mouse Movement](mouse_movement.md)** |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| **[![](img/4_mini.gif) <br> 4. Dribble Ball](dribble_ball.md)**   | **[![](img/5_mini.gif) <br> 5. Add Goal](add_goal.md)**                   | **[![](img/readme.png) <br> Back to the README.md](README.md)**     |
 
 ## Appendix
 

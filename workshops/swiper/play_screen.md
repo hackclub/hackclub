@@ -144,7 +144,7 @@ You learned how to:
   `node` was touched
 - Transition to a different `SKScene`
 
---------------------------------------------------------------------------------
+---
 
 You are ready to go to Part 3 where you start to create the `GameScene` by
 adding walls!

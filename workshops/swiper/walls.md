@@ -97,8 +97,7 @@ Now, let's create the walls! Each target will be of type `SKSpriteNode` which is
 just like `SKLabelNode` but it is created by setting the size and the color or
 the image. In this tutorial we will be setting it by the color. So first we
 create the `target` variable. This line sets both the color and the size. The
-part of the code that says `SKSpriteNode(color: UIColor.blueColor(), size:
-CGSizeMake(screenWidth * 0.05, screenHeight))` is a constructor for
+part of the code that says `SKSpriteNode(color: UIColor.blueColor(), size: CGSizeMake(screenWidth * 0.05, screenHeight))` is a constructor for
 `SKSpriteNode`. This is a special type of method that creates an object. The
 next line sets the anchor point for the node which is where the node is anchored
 to, position-wise. Here's a good diagram explaining the anchor point from Apple.
@@ -175,7 +174,7 @@ You learned how to:
 - Create an `SKSpriteNode`
 - Set up `physicsBody`'s for each `SKSpriteNode`
 
---------------------------------------------------------------------------------
+---
 
 You are now ready to move on to Part 4 where you will be able to create the
 score label for the `GameScene`!
