@@ -1,7 +1,7 @@
 ---
 name: Starting with Next.js
 description: Intro to React & Next.js with a shopping list website
-author: @lachlanjc
+author: '@lachlanjc'
 group: react
 order: 4
 ---
