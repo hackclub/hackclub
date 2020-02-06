@@ -10,7 +10,7 @@ order: 2
 
 In this workshop, you will make a game about finding Bigfoot. It will look like this:
 
-![Preview of final project](img/final_screenshot.png)
+![Preview of final project](img/final_screenshot.gif)
 
 Links to a live demo and the final code below. This workshop should take around 1 hour.
 
@@ -29,7 +29,7 @@ Links to a live demo and the final code below. This workshop should take around 
 
 ## Set Up the Project
 
-Open a new HTML project on [**repl.it**/languages/js](https://repl.it/languages/js)
+Open a new HTML project on [**repl.it**/languages/html](https://repl.it/languages/html)
 
 ### Get Images for the Game
 
@@ -61,14 +61,14 @@ When you're done, you should see Bigfoot in the live preview, like this:
 
 ![](img/bigfoot_image.png)
 
-And the HTML looks like this:
+And the `index.html` file looks like this:
 
 ```html
 <!DOCTYPE html>
 <html>
   <head></head>
   <body>
-    <img src="bigfoot.png" />
+    <img src="bigfoot.png">
   </body>
 </html>
 ```
@@ -77,7 +77,7 @@ And the HTML looks like this:
 
 A game needs interaction in order to be a game, so let's display a pop-up box whenever the player clicks on Bigfoot, like this:
 
-![](img/bigfoot_popup.png)
+![](img/bigfoot_popup.gif)
 
 How can you do that?
 
@@ -122,7 +122,7 @@ Here's what went wrong. We expected the quotation mark after `alert(` to indicat
 Here's a little trick you can use to fix that. In JavaScript, you can use either `"` or `'` around text (the technical term is a [**string**](http://www.w3schools.com/js/js_strings.asp)). So change the inner quotes to single quotes, like this:
 
 ```
-    onclick="alert('Woohoo, you win! You found Bigfoot!');"
+  onclick="alert('Woohoo, you win! You found Bigfoot!');"
 ```
 
 And now clicking Bigfoot should display the message.
@@ -130,9 +130,7 @@ And now clicking Bigfoot should display the message.
 At this point, your `<img>` should look like this:
 
 ```html
-<img
-  src="bigfoot.png"
-  onclick="alert('Woohoo, you win! You found Bigfoot!');"
+<img src="bigfoot.png" onclick="alert('Woohoo, you win! You found Bigfoot!');"
 />
 ```
 
@@ -166,6 +164,7 @@ There are several ways to add the background image. Here is one way:
 2. The first link brings you here: http://www.w3schools.com/cssref/pr_background-image.asp
 3. There is an example near the top. You can click "Try it yourself" to see the full HTML of the example.
 4. Open the `style.css` file like in the example, but replace the URL with the picture of the forest. You do not need the background-color rule since we are already setting a background image.
+5. Remember to link your CSS file to your HTML file!
 
 ### Setting Bigfoot's Location
 
@@ -270,14 +269,14 @@ Now that we have our two numbers, we have to actually make them apply to our pic
 
 ```js
 function moveBigFoot() {
-       var picture = document.getElementById('bigFoot')
+  var picture = document.getElementById('bigFoot')
 
-       var x = Math.random()*300;
-       var y = Math.random()*300;
+  var x = Math.random()*300;
+  var y = Math.random()*300;
 
-       picture.style.top = x + 'px';
-       picture.style.left = y + 'px';
-       }
+  picture.style.top = x + 'px';
+  picture.style.left = y + 'px';
+  }
 }
 ```
 
