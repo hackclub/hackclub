@@ -269,11 +269,11 @@ Now that we have our two numbers, we have to actually make them apply to our pic
 function moveBigFoot() {
   var picture = document.getElementById('bigFoot')
 
-  var x = Math.random()*300;
-  var y = Math.random()*300;
+  var x = Math.random() * 300
+  var y = Math.random() * 300
 
-  picture.style.top = x + 'px';
-  picture.style.left = y + 'px';
+  picture.style.top = x + 'px'
+  picture.style.left = y + 'px'
   }
 }
 ```
