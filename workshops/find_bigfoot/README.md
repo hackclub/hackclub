@@ -35,8 +35,6 @@ Open a new HTML project on [**repl.it**/languages/html](https://repl.it/language
 
 1. Go to https://github.com/hackclub/hackclub/tree/master/workshops/find_bigfoot/assets
 2. Click on each image, then right click and **Save Image As** to save it to your computer
-   ![](img/bigfoot.gif)
-   ![](img/forest.gif)
 3. Drag all the images you saved into the repl.it sidebar
 
 Now you're all set with the images you'll need!
