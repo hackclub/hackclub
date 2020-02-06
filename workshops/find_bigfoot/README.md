@@ -52,7 +52,7 @@ Luckily for you, we've done the hard part of wrangling him out of the jungle and
 So now you have to put an **image** of him into your game, like you did in the [Personal Website](../personal_website/) workshop. To add an image, we use:
 
 ```html
-<img src="[URL]" />
+<img src="[URL]">
 ```
 
 When you're done, you should see Bigfoot in the live preview, like this:
