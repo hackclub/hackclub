@@ -45,6 +45,8 @@ In addition to creating a machine learning model model for you, Teachable Machin
 
 ![](img/uploadedmodel.PNG)
 
+(FYI: if you’re interested in seeing your model, copy the link to the model and paste it in your URL bar with `model.json` at the end)
+
 Scroll down and copy the code.
 
 ![](img/copycode.JPG)
