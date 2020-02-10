@@ -13,7 +13,7 @@ Before we get going, some quick & simple background info:
 
 A machine learning model is a mathematical model for the process of machine learning. Some examples of machine learning models include [artificial neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network), [decision trees](en.wikipedia.org/wiki/Decision_tree_learning), and [regression analysis](en.wikipedia.org/wiki/Regression_analysis). Don’t worry, you don’t have to know what any of these things actually are for the purpose of this workshop—Teachable Machine will magically create its own model behind the scenes.
 
-I won’t go into how machine learning models are trained because CGP Grey made [a fantastic video](https://youtu.be/R9OHn5ZF4Uo) that does it better than I ever could. I highly recommend watching it.
+Machine learning models are trained with large amounts of data that attempt to show the model the answer to a specific problem (e.g. what does a dog look like?) I won’t go too much in-depth into how machine learning models are trained because CGP Grey made [a fantastic video](https://youtu.be/R9OHn5ZF4Uo) that does it better than I ever could. I highly recommend watching it.
 
 # Training a model
 Get started by visiting [teachablemachine.withgoogle.com](https://teachablemachine.withgoogle.com) and clicking on “Get Started”. After doing that, you should be greeted with the following page, where you’re given the option to create an image, audio, or pose project. Each type of project is a lot of fun, and you should totally play with all of them when you get a chance—but for now, we’re going to be working with an image project.
