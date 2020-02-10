@@ -11,7 +11,7 @@ Teachable Machine is a website made by Google that allows you to quickly and eas
 # How Do Machines Learn?
 Before we get going, some quick & simple background info:
 
-A machine learning model is a mathematical model for the process of machine learning. Some examples of machine learning models include [artificial neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network), [decision trees](en.wikipedia.org/wiki/Decision_tree_learning), and [regression analysis](en.wikipedia.org/wiki/Regression_analysis). Don’t worry, you don’t have to know what any of these things actually are for the purpose of this workshop—Teachable Machine will create its own model using its own magic.
+A machine learning model is a mathematical model for the process of machine learning. Some examples of machine learning models include [artificial neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network), [decision trees](en.wikipedia.org/wiki/Decision_tree_learning), and [regression analysis](en.wikipedia.org/wiki/Regression_analysis). Don’t worry, you don’t have to know what any of these things actually are for the purpose of this workshop—Teachable Machine will magically create its own model behind the scenes.
 
 I won’t go into how machine learning models are trained because CGP Grey made [a fantastic video](https://youtu.be/R9OHn5ZF4Uo) that does it better than I ever could. I highly recommend watching it.
 
