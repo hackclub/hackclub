@@ -9,7 +9,7 @@ order: 11
 Teachable Machine is a website made by Google that allows you to quickly and easily create machine learning models without coding. If you’ve ever wanted to get started with machine learning, but didn’t know where to begin, this is a fantastic way to learn how machines learn and use this knowledge to build something really cool. Today, we’re building a super simple website that detects whether your camera sees you alone or you with another object (e.g. your phone).
 
 # How Do Machines Learn?
-Before we get going, some quick & simple background:
+Before we get going, some quick & simple background info:
 
 A machine learning model is a mathematical model for the process of machine learning. Some examples of machine learning models include [artificial neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network), [decision trees](en.wikipedia.org/wiki/Decision_tree_learning), and [regression analysis](en.wikipedia.org/wiki/Regression_analysis). Don’t worry, you don’t have to know what any of these things actually are for the purpose of this workshop—Teachable Machine will create its own model using its own magic.
 
