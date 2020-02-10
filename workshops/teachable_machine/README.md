@@ -24,7 +24,7 @@ After selecting “Image Project”, you should be greeted with this page.
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/imageproject.PNG)
 
-Rename “Class 1” and “Class 2” to “me” and “me with `whatever object you want`”.
+Rename “Class 1” and “Class 2” to “me” and “me with `some object`”.
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/renameclass.GIF)
 
