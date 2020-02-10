@@ -16,7 +16,7 @@ A machine learning model is a mathematical model for the process of machine lear
 I won’t go into how machine learning models are trained because CGP Grey made [a fantastic video](https://youtu.be/R9OHn5ZF4Uo) that does it better than I ever could. I highly recommend watching it.
 
 # Training a model
-Get started by visiting [teachablemachine.withgoogle.com](https://teachablemachine.withgoogle.com) and clicking on “Get Started”. When you do that, you should be greeted with the following page, where you’re given the option to create an image, audio, or pose project. Each type of project is a lot of fun, and you should totally play with all of them when you get a chance—but for now, we’re going to be working with an image project.
+Get started by visiting [teachablemachine.withgoogle.com](https://teachablemachine.withgoogle.com) and clicking on “Get Started”. After doing that, you should be greeted with the following page, where you’re given the option to create an image, audio, or pose project. Each type of project is a lot of fun, and you should totally play with all of them when you get a chance—but for now, we’re going to be working with an image project.
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/homepage.JPG)
 
@@ -28,7 +28,7 @@ Rename “Class 1” and “Class 2” to “me” and “me with `whatever obje
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/renameclass.GIF)
 
-Next, turn on your webcam for each class and click “Hold to Record” until you have a few hundred image samples recorded. You want to take as many pictures and capture as many angles, positions, etc. as you possibly can. Remember, the more data you have, the better your program will learn the difference between the two sets of data.
+Next, turn on your webcam for each class and click “Hold to Record” until you have a few hundred image samples recorded. You want to take as many pictures and capture as many angles, positions, etc. as you possibly can. The more data you have, the better your model will learn the difference between the two sets of data.
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/imagesamples.PNG)
 
@@ -41,21 +41,17 @@ Here’s what mine looks like:
 ![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/model.GIF)
 
 # Exporting Your Model
-In addition to creating a machine learning model model for you, Teachable Machine will also host your model on their servers, so you can use this model in any project you want. To upload your model to Teachable Machine’s servers, click on “Export Model” on your model, then click “Upload my model” once the window pops up. After a few seconds, you should see a link to your model available under “Your sharable link:”
+Teachable Machine will also host your model on their servers, so you can use it in any project you want. To upload your model to Teachable Machine’s servers, click on “Export Model” on your model, then click “Upload my model” once the window pops up. After a few seconds, you should see a link to your model available under “Your sharable link:”
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/uploadedmodel.PNG)
 
 (FYI: if you’re interested in seeing your model, copy the link to the model and paste it in your URL bar with `model.json` at the end)
 
-Scroll down and copy the code.
-
-![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/copycode.JPG)
-
-Now it’s time to add our Teachable Machine model to our own project! Spin up a new HTML repl at [repl.it/languages/html](https://repl.it/languages/html) and paste your code in between the `<body>` tags.
+Now it’s time to add our Teachable Machine model to our own project! Scroll down and copy the code Teachable Machine generated for you, then spin up a new HTML repl at [repl.it/languages/html](https://repl.it/languages/html) and paste the code in between the `<body>` tags.
 
 **Before you run**: make sure to read through the code you just pasted! It’s fully commented and super easy to understand. It’s important to understand what exactly you’re doing—otherwise, you’ve learned nothing!
 
-Go ahead and run the repl, then open your website in a new tab by clicking the icon at the top right. Once you click “Start” and give the repl access to your webcam, you should see your model!
+Run the repl, then open your website in a new tab by clicking the icon at the top right. Once you click “Start” and give the repl access to your webcam, you should see your model!
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/finalmodel.PNG)
 
