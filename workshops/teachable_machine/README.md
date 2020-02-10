@@ -6,7 +6,7 @@ group: 'start'
 order: 11
 ---
 
-[Teachable Machine](https://teachablemachine.withgoogle.com) is a website made by Google that allows you to quickly and easily create machine learning models without coding. It’s a fantastic way to learn the fundamental concepts of machine learning and be able to apply them to cool projects without having to understand the complex math is normally required to work with machine learning. In this workshop, we’re building a super simple website that detects whether your camera sees you alone or you with another object (e.g. your phone).
+[Teachable Machine](https://teachablemachine.withgoogle.com) is a website made by Google that allows you to quickly create machine learning models without coding. It’s a fantastic way to learn the fundamental concepts of machine learning and be able to apply them to cool projects without having to understand the complex math is normally required to work with machine learning. In this workshop, we’re building a super simple website that detects whether your camera sees you alone or you with another object (e.g. your phone).
 
 ## How do machines learn?
 Before we get going, some quick background info:
