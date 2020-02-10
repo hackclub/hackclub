@@ -18,19 +18,19 @@ I won’t go into how machine learning models are trained because CGP Grey made 
 # Training a model
 Get started by visiting [teachablemachine.withgoogle.com](https://teachablemachine.withgoogle.com) and clicking on “Get Started”. When you do that, you should be greeted with the following page, where you’re given the option to create an image, audio, or pose project. Each type of project is a lot of fun, and you should totally play with all of them when you get a chance—but for now, we’re going to be working with an image project.
 
-![](img/homepage.JPG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/homepage.JPG)
 
 After selecting “Image Project”, you should be greeted with this page.
 
-![](img/imageproject.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/imageproject.PNG)
 
 Rename “Class 1” and “Class 2” to “me” and “me with `whatever object you want`”.
 
-![](img/renameclass.GIF)
+![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/renameclass.GIF)
 
 Next, turn on your webcam for each class and click “Hold to Record” until you have a few hundred image samples recorded. You want to take as many pictures and capture as many angles, positions, etc. as you possibly can. Remember, the more data you have, the better your program will learn the difference between the two sets of data.
 
-![](img/imagesamples.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/imagesamples.PNG)
 
 Once you feel you’ve recorded enough samples, click on “Train Model”. The time it takes to train the model will vary depending on how many image samples you gave it, but it usually takes somewhere around 30 seconds.
 
@@ -38,18 +38,18 @@ Once your model is trained, a preview should appear. Try it out! If it’s shaky
 
 Here’s what mine looks like:
 
-![](img/model.GIF)
+![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/model.GIF)
 
 # Exporting Your Model
 In addition to creating a machine learning model model for you, Teachable Machine will also host your model on their servers, so you can use this model in any project you want. To upload your model to Teachable Machine’s servers, click on “Export Model” on your model, then click “Upload my model” once the window pops up. After a few seconds, you should see a link to your model available under “Your sharable link:”
 
-![](img/uploadedmodel.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/uploadedmodel.PNG)
 
 (FYI: if you’re interested in seeing your model, copy the link to the model and paste it in your URL bar with `model.json` at the end)
 
 Scroll down and copy the code.
 
-![](img/copycode.JPG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/copycode.JPG)
 
 Now it’s time to add our Teachable Machine model to our own project! Spin up a new HTML repl at [repl.it/languages/html](https://repl.it/languages/html) and paste your code in between the `<body>` tags.
 
@@ -57,12 +57,12 @@ Now it’s time to add our Teachable Machine model to our own project! Spin up a
 
 Go ahead and run the repl, then open your website in a new tab by clicking the icon at the top right. Once you click “Start” and give the repl access to your webcam, you should see your model!
 
-![](img/finalmodel.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/finalmodel.PNG)
 
 # Hacking
 Congratulations! You’ve just trained a machine learning model directly in your browser without writing any code! But your journey is far from over—there are endless ways you can take this project further. Did you notice the “Add a class” button below your two original classes?
 
-![](img/add-a-class.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/add-a-class.PNG)
 
 You can train this model with as many classes as you want! Try and see how far you can take it—you, you + phone, you + water bottle, you + phone + water bottle, etc. Go crazy.
 
