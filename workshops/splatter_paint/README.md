@@ -62,8 +62,8 @@ Time to draw our circle! Inside the function you just created, add this code sni
 
 ```js
 var path = new Path.Circle({
-	center: event.middlePoint,
-	radius: 10
+  center: event.middlePoint,
+  radius: 10
 })
 ```
 
@@ -71,9 +71,9 @@ If you run your repl now and move your mouse around, you’ll see...nothing. You
 
 ```js
 path.fillColor = {
-	hue: 0,
-	saturation: 1,
-	brightness: 1
+  hue: 0,
+  saturation: 1,
+  brightness: 1
 }
 ```
 
@@ -81,15 +81,15 @@ Right now, your entire `script.js` file should look like this:
 
 ```js
 function onMouseMove(event) {
-	var path = new Path.Circle({
-		center: event.middlePoint,
-		radius: 10
-	})
-	path.fillColor = {
-		hue: 0,
-		saturation: 1,
-		brightness: 1
-	}
+  var path = new Path.Circle({
+    center: event.middlePoint,
+    radius: 10
+  })
+  path.fillColor = {
+    hue: 0,
+    saturation: 1,
+    brightness: 1
+  }
 }
 ```
 
@@ -118,9 +118,9 @@ Almost there. The CSS you just wrote set the canvas width and height to 100% of 
 
 ```css
 html, body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 ```
 
@@ -130,13 +130,13 @@ Just to recap: your entire CSS file should now look like this:
 
 ```css
 canvas {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 html, body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 ```
 
