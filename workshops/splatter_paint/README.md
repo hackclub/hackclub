@@ -147,15 +147,15 @@ If you run your repl again, you should notice that your red circles are now fill
 ## Making it splattery
 We’re getting somewhere, but this still doesn’t feel very splattery.
 
-Part of what makes splatter paint so fun to create and look at is the chaotic randomness of everything on the canvas. So, if you want to get your website as close to splatter paint as possible, the best way to do it is to introduce some randomness.
-
 ![](https://github.com/hackclub/hackclub/raw/splatter-paint/workshops/splatter_paint/img/real-splatter-paint.JPG)
+
+Part of what makes splatter paint so fun to create and look at is the chaotic randomness of everything on the canvas. So, if you want to get your website as close to splatter paint as possible, the best way to do it is to introduce some randomness.
 
 Change the radius of your circles from `10` to `Math.floor(Math.random() * 30) + 5`. This makes the radius a random number between 5 and 30. Then run the repl again.
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/random-radius.PNG)
 
-Not bad, but it all sort of blends together, doesn’t it? Maybe we can make each circle unique by making each one a different color. Try changing the hue from `0` to `event.count * 3`. Run the repl and see what happens.
+Not bad, but it feels sort of mashed together, doesn’t it? Maybe we can make each circle unique by making it a different color than the last. Try changing the hue from `0` to `event.count * 3`. Run the repl and see what happens.
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/rainbow-colors.PNG)
 
@@ -179,4 +179,4 @@ Here are some example projects that have stemmed from this project:
 - [https://splatter-paint-crazy.techbug2012.repl.co](https://splatter-paint-crazy.techbug2012.repl.co) (**WARNING: FLASHY COLORS**)
 - [https://wlhc-paperjs-demo-custom1.glitch.me](https://wlhc-paperjs-demo-custom1.glitch.me)
 
-Your task now is to spend the rest of the meeting making this project insanely cool and totally unique.
+Now, your task is to spend the rest of the meeting making this project insanely cool and totally unique.
