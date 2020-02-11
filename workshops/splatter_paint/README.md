@@ -56,7 +56,7 @@ function onMouseMove(event) {
 }
 ```
 
-Although you can normally call functions whatever you want, it’s important that this function is called `onMouseMove` and passes in an `event`. Paper.js knows what `onMouseMove()` is—when it sees this function, it will know to run it every time the mouse moves, and that the `event` you passed in is a [Paper.js Mouse Event](https://paperjs.org/reference/mouseevent/). Cool, right?
+Although you can normally call functions whatever you want, it’s important that this function is called `onMouseMove` and passes in an `event`. Paper.js knows what `onMouseMove` is—when it sees this function, it will know to run the code you write inside it every time the mouse moves, and that the `event` you pass in is a [Paper.js Mouse Event](https://paperjs.org/reference/mouseevent/). Cool, right?
 
 Time to draw our circle! Inside the function you just created, add this code snippet, which creates a circle at the mouse cursor with a radius of 10px:
 
@@ -77,13 +77,29 @@ path.fillColor = {
 }
 ```
 
-Instead of using hexademical or RGB colors, which most people are familiar with, Paper.js uses the HSB color system, which is a system that uses angles to describe color. In the HSB color system, 0 = 0° = red, and `360*n`° is also red.
+Right now, your entire `script.js` file should look like this:
 
-(If you’re interested in learning more about the HSB color system, check out [this fantastic explanation](https://learnui.design/blog/the-hsb-color-system-practicioners-primer.html)).
+```js
+function onMouseMove(event) {
+	var path = new Path.Circle({
+		center: event.middlePoint,
+		radius: 10
+	})
+	path.fillColor = {
+		hue: 0,
+		saturation: 1,
+		brightness: 1
+	}
+}
+```
+
+Instead of using hexademical or RGB colors, which most people are familiar with, Paper.js uses the HSB color system, which uses angles on a color wheel to describe color. In the HSB color system, 0 = 0° = red, and `360*n`° is also red.
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/hsb-color-wheel.PNG)
 
-With this in mind, try running your repl now. You’ll notice that you’re now drawing red circles, but only in the top left corner of the screen. That’s because your canvas’ width and height are currently set to the defaults (300px by 150px).
+(If you’re interested in learning more about the HSB color system, check out [this fantastic explanation](https://learnui.design/blog/the-hsb-color-system-practicioners-primer.html))
+
+With this in mind, try running your repl now. You’ll notice that, because you set `hue` to 0, you’re now drawing red circles! But your circles only appear in the top left corner of the screen. That’s because your canvas’ width and height are currently set to the defaults (300px by 150px).
 
 Let’s make your canvas fill the whole screen. In your `style.css` file, add the following:
 
@@ -96,7 +112,7 @@ canvas {
 
 Run your repl again.
 
-Almost there. The CSS you just wrote set the canvas width and height to 100% of the parent element. In our case, this is the `<body>`, which is as big as the `<html>`. With this in mind, add the following to your CSS file.
+Almost there. The CSS you just wrote set the canvas width and height to 100% of the parent element. In your `index.html` file, `<body>` is parent element of the canvas because you created the canvas in between the `<body>` tags. `<body>` is currently as big as its own parent element, `<html>`, which doesn’t quite fill the whole screen. With this in mind, add the following to your CSS file.
 
 ```css
 html, body {
@@ -108,11 +124,23 @@ html, body {
 
 This sets the width and height of the body to the width and height of your screen, and removes any extra space between the edge of your screen and the body.
 
+Just to recap: your entire CSS file should now look like this:
+
+```css
+canvas {
+	width: 100%;
+	height: 100%;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+```
+
 If you run your repl again, you should notice that your red circles are now filling the entire screen. Woohoo!
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/red-circles.PNG)
-
-Now that you can finally see your circles in all their glory, you can also play with their radii. Take a look at the [Paper.js docs on mouse events](https://paperjs.org/reference/mouseevent/). How can you use the properties of the MouseEvent to play with the radius? (here’s what I came up with: try setting the radius to `event.delta.length` and see what happens)
 
 ## Making it splattery
 We’re getting somewhere, but this still doesn’t feel very splattery.
@@ -140,7 +168,8 @@ However, your journey is far from over. There are endless directions you can tak
 2. If rainbows are too predictable for you, you can set the hue to a random number between 0 and 360 (remember, this covers every color on the HSB system)
 3. Who says your canvas has to be white? Try setting the background color of your website to something custom, and/or change it every time a new circle is created.
 4. Who says you have to draw circles? Try drawing a random mix of circles, ovals of random lengths and widths, and other shapes.
-5. If you want to hurt your eyes and ears, try using the [Tone.js](https://tonejs.github.io) library to play a synth sound of a random frequency whenever a new circle is created.
+5. Randomness is fun, but controlled randomness is even more fun. Take a look at the [Paper.js docs on mouse events](https://paperjs.org/reference/mouseevent/). How can you use the properties of the MouseEvent to play with the radius? (here’s what I came up with: try setting the radius to `event.delta.length` and see what happens)
+6. If you want to hurt your eyes and ears, try using the [Tone.js](https://tonejs.github.io) library to play a synth sound of a random frequency whenever a new circle is created.
 
 Here are some example projects that have stemmed from this project:
 
