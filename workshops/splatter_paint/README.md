@@ -48,7 +48,7 @@ Now that we’ve successfully imported Paper.js and created a canvas to work on,
 
 Let’s write a function that draws a circle at the cursor’s position whenever the mouse is moved.
 
-Start by creating a function called `onMouseMove()`:
+Start by creating a function called `onMouseMove`:
 
 ```js
 function onMouseMove(event) {
@@ -56,7 +56,7 @@ function onMouseMove(event) {
 }
 ```
 
-Although normally you can call functions whatever you want, it’s important that this function is called `onMouseMove()`. Paper.js knows what `onMouseMove()` is—when it sees a function with this name, it will know to run it every time the mouse moves.
+Although you can normally call functions whatever you want, it’s important that this function is called `onMouseMove` and passes in an `event`. Paper.js knows what `onMouseMove()` is—when it sees this function, it will know to run it every time the mouse moves, and that the `event` you passed in is a [Paper.js Mouse Event](https://paperjs.org/reference/mouseevent/). Cool, right?
 
 Time to draw our circle! Inside the function you just created, add this code snippet, which creates a circle at the mouse cursor with a radius of 10px:
 
@@ -67,7 +67,7 @@ var path = new Path.Circle({
 })
 ```
 
-If you run your repl now and move your mouse around, you’ll see...nothing. You are drawing circles, but the circles are currently transparent. So, let’s give them some color. Under the previous code, still in the `onMouseMove()` function, add:
+If you run your repl now and move your mouse around, you’ll see...nothing. You are, in fact, drawing circles, but the circles are currently transparent. So, let’s give them some color. Under the previous code snippet, still in the `onMouseMove` function, add:
 
 ```js
 path.fillColor = {
@@ -119,7 +119,7 @@ We’re getting somewhere, but this still doesn’t feel very splattery.
 
 Part of what makes splatter paint so fun to create and look at is the chaotic randomness of everything on the canvas. So, if we want to get our website as close to splatter paint as possible, we should introduce some randomness.
 
-![](img/real-splatter-paint.JPG)
+![](https://github.com/hackclub/hackclub/raw/splatter-paint/workshops/splatter_paint/img/real-splatter-paint.JPG)
 
 Change the radius of your circles from `10` to `Math.floor(Math.random() * 30) + 5`. This makes the radius a random number between 5 and 30. Then run the repl again.
 
@@ -136,7 +136,7 @@ Congratulations! You’re well on your way to making splatter paint! If you have
 ## Hacking
 However, your journey is far from over. There are endless directions you can take this project in. Here are a few suggestions.
 
-1. If you want to increase the distance between each circle, you can add `tool.fixed distance = SOME_NUMBER` to the top of your `script.js` file. This will fire the event after your cursor has moved every `SOME_NUMBER`px instead of every time your mouse moves.
+1. If you want to increase the distance between each circle, you can add `tool.fixed distance = SOME_NUMBER` to the top of your `script.js` file. This will fire the event after your cursor has moved every `SOME_NUMBER`px instead of every time your mouse moves. You can set it to fixed number, or you can make it random!
 2. If rainbows are too predictable for you, you can set the hue to a random number between 0 and 360 (remember, this covers every color on the HSB system)
 3. Who says your canvas has to be white? Try setting the background color of your website to something custom, and/or change it every time a new circle is created.
 4. Who says you have to draw circles? Try drawing a random mix of circles, ovals of random lengths and widths, and other shapes.
