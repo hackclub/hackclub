@@ -2,6 +2,7 @@
 name: Splatter Paint
 description: Make some splatter paint with Paper.js
 group: starter
+author: @MatthewStanciu
 order: 2
 ---
 
