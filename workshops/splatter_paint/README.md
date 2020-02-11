@@ -2,7 +2,7 @@
 name: 'Splatter Paint'
 description: 'Make some splatter paint with Paper.js '
 author: '@MatthewStanciu'
-group: 'starter'
+group: 'start'
 order: 2
 ---
 
