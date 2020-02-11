@@ -142,7 +142,7 @@ html, body {
 
 If you run your repl again, you should notice that your red circles are now filling the entire screen. Woohoo!
 
-![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/red-circles.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/red-circles.JPG)
 
 ## Making it splattery
 We’re getting somewhere, but this still doesn’t feel very splattery.
@@ -153,11 +153,11 @@ Part of what makes splatter paint so fun to create and look at is the chaotic ra
 
 Change the radius of your circles from `10` to `Math.floor(Math.random() * 30) + 5`. This makes the radius a random number between 5 and 30. Then run the repl again.
 
-![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/random-radius.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/random-radius.JPG)
 
 Not bad, but it feels sort of mashed together, doesn’t it? Maybe we can make each circle unique by making it a different color than the last. Try changing the hue from `0` to `event.count * 3`. Run the repl and see what happens.
 
-![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/rainbow-colors.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/rainbow-colors.JPG)
 
 `event.count * 3` creates a rainbow effect by setting the hue on each circle to the total number of times a circle has been drawn multiplied by 3, which jumps around the HSB color wheel. And it looks great!
 
