@@ -8,7 +8,7 @@ order: 2
 
 **Warning: the following workshop involves flashing colors and is not recommended for those with a history of epilepsy.**
 
-One of the biggest fears that many people have when learning to code is that coding requires solving complex mathematical problems and a deep technical understanding of how computers work. You’re going to crush this myth in this workshop by making crazy, colorful splatter paint right in your browser.
+One of the most common myths about coding among people who are first learning to code is that coding mostly consists of sitting in a dark room all day writing ~Algorithms~ in a black terminal window with green text, solving complex mathematical equations, and generally being a genius. You’re going to crush this myth in this workshop by making crazy, colorful splatter paint right in your browser, in only 20 minutes.
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/demo.PNG)
 
@@ -17,7 +17,7 @@ Start by creating a new HTML project on repl.it by going to [repl.it/languages/h
 
 We’re going to be using a library called [Paper.js](http://paperjs.org), which makes it easy to create cool visuals on an [HTML canvas](https://www.w3schools.com/html/html5_canvas.asp).
 
-To import a Javascript library in HTML, we use the `<script>` tag and include a link to the library we want to import. For Paper.js, this looks like:
+To import a JavaScript library in HTML, we use the `<script>` tag and include a link to the library we want to import. For Paper.js, this looks like:
 
 ```html
 <script src="https://unpkg.com/paper@0.11.5/dist/paper-full.min.js"></script>
@@ -56,7 +56,7 @@ function onMouseMove(event) {
 }
 ```
 
-Although you can normally call functions whatever you want, it’s important that this function is called `onMouseMove` and passes in an `event`. Paper.js knows what `onMouseMove` is—when it sees this function, it will know to run the code you write inside it every time the mouse moves, and that the `event` you pass in is a [Paper.js Mouse Event](https://paperjs.org/reference/mouseevent/). Cool, right?
+Although you can normally call functions whatever you want, it’s important that this function is called `onMouseMove` and passes in an `event`. Paper.js knows what `onMouseMove` is—when it sees this function, it will know to run the code you write inside it every time your mouse moves, and that the `event` you pass in is a [Paper.js Mouse Event](https://paperjs.org/reference/mouseevent/). Cool, right?
 
 Time to draw our circle! Inside the function you just created, add this code snippet, which creates a circle at the mouse cursor with a radius of 10px:
 
@@ -112,7 +112,9 @@ canvas {
 
 Run your repl again.
 
-Almost there. The CSS you just wrote set the canvas width and height to 100% of the parent element. In your `index.html` file, `<body>` is parent element of the canvas because you created the canvas in between the `<body>` tags. `<body>` is currently as big as its own parent element, `<html>`, which doesn’t quite fill the whole screen. With this in mind, add the following to your CSS file.
+Almost there. The CSS you just wrote set the canvas width and height to 100% of the parent element. In your `index.html` file, `<body>` is parent element of the `<canvas>` because you created the canvas in between the `<body>` tags.
+
+`<body>` is currently as big as its own parent element, `<html>`, which doesn’t quite fill the whole screen. With this in mind, add the following to your CSS file:
 
 ```css
 html, body {
@@ -145,7 +147,7 @@ If you run your repl again, you should notice that your red circles are now fill
 ## Making it splattery
 We’re getting somewhere, but this still doesn’t feel very splattery.
 
-Part of what makes splatter paint so fun to create and look at is the chaotic randomness of everything on the canvas. So, if we want to get our website as close to splatter paint as possible, we should introduce some randomness.
+Part of what makes splatter paint so fun to create and look at is the chaotic randomness of everything on the canvas. So, if you want to get your website as close to splatter paint as possible, the best way to do it is to introduce some randomness.
 
 ![](https://github.com/hackclub/hackclub/raw/splatter-paint/workshops/splatter_paint/img/real-splatter-paint.JPG)
 
@@ -162,7 +164,7 @@ Not bad, but it all sort of blends together, doesn’t it? Maybe we can make eac
 Congratulations! You’re well on your way to making splatter paint! If you haven’t already, open your repl in a new tab and treat yourself to a bigger canvas to go crazy on.
 
 ## Hacking
-However, your journey is far from over. There are endless directions you can take this project in. Here are a few suggestions.
+Your journey is far from over. There are endless directions you can take this project in. Here are a few suggestions.
 
 1. If you want to increase the distance between each circle, you can add `tool.fixed distance = SOME_NUMBER` to the top of your `script.js` file. This will fire the event after your cursor has moved every `SOME_NUMBER`px instead of every time your mouse moves. You can set it to fixed number, or you can make it random!
 2. If rainbows are too predictable for you, you can set the hue to a random number between 0 and 360 (remember, this covers every color on the HSB system)
