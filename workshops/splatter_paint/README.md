@@ -44,11 +44,11 @@ Remember when we referred to a canvas called `splatterPaint` that hasn’t been 
 Amazing—we’ve got ourself a canvas!
 
 ## Drawing some circles
-Now that we’ve successfully imported Paper.js and created a canvas to work on, it’s time to write the code that will create our splatter paint.
+Now that we’ve successfully imported Paper.js and created a canvas to work on, it’s time to write the JavaScript code that will create our splatter paint.
 
 Let’s write a function that draws a circle at the cursor’s position whenever the mouse is moved.
 
-Start by creating a function called `onMouseMove`:
+Navigate to your `script.js` file and create a function called `onMouseMove`:
 
 ```js
 function onMouseMove(event) {
