@@ -10,7 +10,7 @@ order: 2
 
 One of the biggest fears that many people have when learning to code is that coding requires solving complex mathematical problems and a deep technical understanding of how computers work. We’re going to crush this myth in this workshop by making crazy, colorful splatter paint right in your browser.
 
-![](img/demo.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/demo.PNG)
 
 ## Getting started
 Create a new HTML project on repl.it by going to [repl.it/languages/html](https://repl.it/languages/html)
@@ -88,7 +88,7 @@ path.fillColor = {
 
 Instead of using hexademical or RGB colors which most people are familiar with, Paper.js uses the HSB color system, which is a system that uses angles to describe color. In the HSB color system, 0 = 0° = red, and `360*n`° is also red.
 
-![](img/hsb-color-wheel.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/hsb-color-wheel.PNG)
 
 With this in mind, try running your repl now! You’ll notice that you’re now drawing red circles, but only in the top left corner of the screen. That’s because we haven’t told the canvas to fill our entire screen. Let’s fix that.
 
@@ -119,7 +119,7 @@ Try running your repl again.
 
 Woohoo! You’re drawing red circles!
 
-![](img/red-circles.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/red-circles.PNG)
 
 Try playing with the `hue`. What happens when you change it to 50? 100? 300?
 
@@ -127,11 +127,11 @@ You can also now play with the radius of your circles. Take a look at the [Paper
 
 So far, this looks cool, but not very splattery. Let’s try changing the radius to something more fun. Change the radius from `10` to `Math.floor(Math.random() * 30) + 5`. This makes the radius a random number between 5 and 30. Run the repl again.
 
-![](img/random-radius.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/random-radius.PNG)
 
 Not bad, but it all sort of blends together, doesn’t it? Maybe we can change the color to be fun. Try changing the hue from `0` to `event.count * 3`. Run the repl and see what happens.
 
-![](img/rainbow-colors.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/rainbow-colors.PNG)
 
 Looking great!
 
