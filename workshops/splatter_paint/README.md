@@ -1,8 +1,8 @@
 ---
 name: Splatter Paint
 description: Make some splatter paint with Paper.js
-group: starter
 author: @MatthewStanciu
+group: starter
 order: 2
 ---
 
@@ -149,4 +149,4 @@ Here are some example projects that have stemmed from this project:
 - [https://splatter-paint-crazy.techbug2012.repl.co](https://splatter-paint-crazy.techbug2012.repl.co) (**WARNING: FLASHY COLORS**)
 - [https://wlhc-paperjs-demo-custom1.glitch.me](https://wlhc-paperjs-demo-custom1.glitch.me)
 
-Your task now is to spend the rest of the meeting making this project insanely cool and totally unique. Good luck!
+Your task now is to spend the rest of the meeting making this project insanely cool and totally unique.
