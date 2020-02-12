@@ -8,7 +8,7 @@ order: 2
 
 **Warning: the following workshop involves flashing colors and is not recommended for those with a history of epilepsy.**
 
-One of the most common myths about coding among people who are first learning to code is that coding mostly consists of sitting in a dark room all day writing ~Algorithms~ in a black terminal window with green text, solving complex mathematical equations, and generally being a genius. You’re going to crush this myth in this workshop by making crazy, colorful splatter paint right in your browser, in only 20 minutes.
+One of the most common myths about coding among people who are first learning to code is that coding mostly consists of sitting in a dark room all day writing ~Algorithms~ in a black terminal window with green text, solving complex mathematical equations, and generally being a genius. You’re going to crush this myth in this workshop by making crazy, colorful splatter paint right in your web browser, in only 20 minutes.
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/demo.PNG)
 
@@ -41,7 +41,7 @@ Remember when we referred to a canvas called `splatterPaint` that hasn’t been 
 <canvas id=“splatterPaint”></canvas>
 ```
 
-Amazing—we’ve got ourself a canvas!
+Amazing—we’ve got ourselves a canvas!
 
 ## Drawing some circles
 Now that we’ve successfully imported Paper.js and created a canvas to work on, it’s time to write the JavaScript code that will create our splatter paint.
@@ -93,13 +93,13 @@ function onMouseMove(event) {
 }
 ```
 
-Instead of using hexademical or RGB colors, which most people are familiar with, Paper.js uses the HSB color system, which uses angles on a color wheel to describe color. In the HSB color system, 0 = 0° = red, and `360*n`° is also red.
+Instead of using the more common hexademical or RGB color systems, Paper.js uses the HSB color system, which uses angles on a color wheel to describe color. In the HSB color system, 0 = 0° = red, and `360*n`° is also red.
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/splatter-paint/workshops/splatter_paint/img/hsb-color-wheel.PNG)
 
 (If you’re interested in learning more about the HSB color system, check out [this fantastic explanation](https://learnui.design/blog/the-hsb-color-system-practicioners-primer.html))
 
-With this in mind, try running your repl now. You’ll notice that, because you set `hue` to 0, you’re now drawing red circles! But your circles only appear in the top left corner of the screen. That’s because your canvas’ width and height are currently set to the defaults (300px by 150px).
+With this in mind, try running your repl now. Because you set `hue` to 0, you’re now drawing red circles! But your circles only appear in the top left corner of the screen. That’s because the width and height of your canvas are currently set to the Paper.js defaults (300px by 150px).
 
 Let’s make your canvas fill the whole screen. In your `style.css` file, add the following:
 
@@ -129,14 +129,14 @@ This sets the width and height of the body to the width and height of your scree
 Just to recap: your entire CSS file should now look like this:
 
 ```css
-canvas {
-  width: 100%;
-  height: 100%;
-}
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
+}
+canvas {
+  width: 100%;
+  height: 100%;
 }
 ```
 
@@ -161,14 +161,14 @@ Not bad, but it feels sort of mashed together, doesn’t it? Maybe we can make e
 
 `event.count * 3` creates a rainbow effect by setting the hue on each circle to the total number of times a circle has been drawn multiplied by 3, which jumps around the HSB color wheel. And it looks great!
 
-Congratulations! You’re well on your way to making splatter paint! If you haven’t already, open your repl in a new tab and treat yourself to a bigger canvas to go crazy on.
+Congratulations—you can now splatter colorful circles all over your screen! If you haven’t already, open your repl in a new tab and treat yourself to a bigger canvas to go crazy on.
 
 ## Hacking
 Your journey is far from over. There are endless directions you can take this project in. Here are a few suggestions.
 
-1. If you want to increase the distance between each circle, you can add `tool.fixed distance = SOME_NUMBER` to the top of your `script.js` file. This will fire the event after your cursor has moved every `SOME_NUMBER`px instead of every time your mouse moves. You can set it to fixed number, or you can make it random!
+1. If you want to increase the distance between each circle, you can add `tool.fixedDistance = SOME_NUMBER` to the top of your `script.js` file. This will fire the event after your cursor has moved every `SOME_NUMBER`px instead of every time your mouse moves. You can set it to fixed number, or you can make it random!
 2. If rainbows are too predictable for you, you can set the hue to a random number between 0 and 360 (remember, this covers every color on the HSB system)
-3. Who says your canvas has to be white? Try setting the background color of your website to something custom, and/or change it every time a new circle is created.
+3. Who says your canvas has to be white? Try setting the background color of your website to something custom—your favorite color, an image, or even a [gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)—and/or change it every time a new circle is created.
 4. Who says you have to draw circles? Try drawing a random mix of circles, ovals of random lengths and widths, and other shapes.
 5. Randomness is fun, but controlled randomness is even more fun. Take a look at the [Paper.js docs on mouse events](https://paperjs.org/reference/mouseevent/). How can you use the properties of the MouseEvent to play with the radius? (here’s what I came up with: try setting the radius to `event.delta.length` and see what happens)
 6. If you want to hurt your eyes and ears, try using the [Tone.js](https://tonejs.github.io) library to play a synth sound of a random frequency whenever a new circle is created.
