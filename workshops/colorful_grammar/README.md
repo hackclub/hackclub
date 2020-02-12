@@ -186,7 +186,7 @@ CSS offers a function called [linear-gradient](https://developer.mozilla.org/en-
 
 We’re going to be using the HSL (Hue, Saturation, Luminosity) color system. If you don’t know what that is, check out [this website](http://thenewcode.com/61/An-Easy-Guide-To-HSL-Color), which gives a good introduction. For the purposes of this demo, all you need to understand is that the HSL system is like a color wheel, and you identify colors with degrees. Also important to note is that colors start a new cycle once you pass 360 degrees. Just like a 60 degree angle looks the same as a 420 (360 + 60) degree angle, 60 on the HSL color system is the same color as 420: yellow.
 
-![](img/hsl-color-wheel.PNG)
+![](https://raw.githubusercontent.com/hackclub/hackclub/colorful-grammar/workshops/colorful_grammar/img/hsl-color-wheel.PNG)
 
 In the innermost function, create a variable for your left gradient that adds the frequency of each type of word.
 
