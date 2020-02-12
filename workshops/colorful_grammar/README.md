@@ -1,12 +1,12 @@
 ---
 name: 'Colorful Grammar'
 description: 'Let your words color the screen'
-author: '@MatthewStanciu, @beck3k'
+author: '@MatthewStanciu'
 group: 'start'
 order: 3
 ---
 
-Converting words to colors is something that’s difficult to wrap your head around, and at first glance sounds impossible—but that’s exactly what you’re going to do in this workshop. In just 20 lines of code, you’re going to build a website that allows you to type all over the screen and watch the color of your screen change based on the number of verbs, nouns, adjectives, and adverbs in the text.
+Converting words to colors is difficult to wrap your head around when you first think about it—but that’s exactly what you’re going to do in this workshop. In just 20 lines of code, you’re going to build a website that allows you to type all over the screen and watch the color of your screen change based on the number of verbs, nouns, adjectives, and adverbs in the text.
 
 [**Link to demo**](https://colorful-grammar.techbug2012.repl.co)
 
