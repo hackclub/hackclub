@@ -17,7 +17,7 @@ Create a new Repl.it project at [repl.it/languages/html](https://repl.it/languag
 
 We’re going to be using a library called jQuery to make things easier for us. If you’ve never heard of it, jQuery is a popular JavaScript library that simplifies writing certain common JavaScript tasks. You’ll get to see how jQuery can be really useful throughout this workshop.
 
-We’re also going to use [WordPos](https://github.com/moos/wordpos), a cool dictionary library that identifies the grammar type of a given word (e.g. noun, verb, etc).
+We’re also going to use [WordPOS](https://github.com/moos/wordpos), a cool dictionary library that identifies the grammar type of a given word (e.g. noun, verb, etc).
 
 Let’s start by importing these two libraries. Just before the end of the `<head>` tag of your `index.html` file, add these two lines:
 
@@ -56,7 +56,7 @@ textarea {
 
 to your `style.css` file.
 
-To remove the white background, we use `background: none;`. To remove the blue outline, we use `outline: 0;`. To remove the black border, we use `border: 0;`. Add these three [declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax) inside the `textarea` [block](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax) of your `style.css` file. After you’re done, the file should look like this:
+To remove the white background, we use `background: none;`. To remove the blue outline, we use `outline: 0;`. To remove the black border, we use `border: 0;`. Add these three [declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax) inside the `textarea` [block](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax) of your `style.css` file. When you’re done, the file should look like this:
 
 ```css
 textarea {
@@ -138,7 +138,7 @@ $(document).ready(function() {
 
 This is how jQuery is initialized. Usually when you see a dollar sign in JavaScript, it’s a shorthand for jQuery.
 
-Now, let’s write a function that updates the background our our page inside the jQuery function.
+Now, let’s write a function that updates the background of our page inside the jQuery function.
 
 ```js
 $(document).ready(function() {
@@ -180,28 +180,22 @@ $(document).ready(function() {
 })
 ```
 
-Before we move on, let’s break down what we want to do.
-
-1. Find the total number of each type of word
-2. Find the total length of the sentence
-3. Change the background color with this data
-
-The beauty of this workshop is that there are endless ways you can go about creating a color from all of this data, and each way will produce a different result. I’m going to show what I personally came up with, but as you read the next steps, be actively thinking of ways you can change it to do something different.
-
 ## Converting text to a color
-We’re going to be creating our color with the [HSL (Hue, Saturation, Luminosity) color system](http://thenewcode.com/61/An-Easy-Guide-To-HSL-Color). If you don’t know what that is, all you need to understand for the purposes of this demo is that the HSL system is like a color wheel, and you identify colors with degrees. Also important to note is that colors start a new cycle once you pass 360°. Just like a 60° angle looks the same as a 420 (360 + 60)° angle, 60° on the HSL color system is the same color as 420°: yellow.
+The beauty of this workshop is that there are endless ways you can go about creating a color from all of this data, and each will produce a different result. I’m going to show what I personally came up with, but as you read the next steps, be actively thinking of ways you can change it to do something different.
+
+We’re going to be creating our color with the [HSL (Hue, Saturation, Luminosity) color system](http://thenewcode.com/61/An-Easy-Guide-To-HSL-Color). If you don’t know what that is, all you need to understand for this demo is that the HSL system uses a color wheel, and you identify a color according to its position on the color wheel in degrees. Also important to note is that colors start a new cycle once you pass 360°. Just like a 60° angle looks the same as a 420 (360 + 60)° angle, 60° on the HSL color system is the same color as 420°: yellow.
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/colorful-grammar/workshops/colorful_grammar/img/hsl-color-wheel.PNG)
 
-Because we can identify colors according to numbers, one way we can process our data is by adding up the frequency of each type of word. Using the WordPos API, this looks like `types.[type].length`; for example, `types.verbs.length`, `types.nouns.length`, etc.
+Because we can simply identify a color with a number, one way we can process our data is by adding up the frequency of each type of word. Using the WordPOS library, getting the total number of word type is as simple as `types.[type].length`; for example, `types.verbs.length`.
 
-Create a variable that adds up every type of word.
+Create a variable that adds up the frequency of every type of word.
 
 ```js
 var color = types.verbs.length + types.adverbs.length + types.nouns.length + types.adjectives.length + types.rest.length
 ```
 
-Now that we have an HSL color, let’s change the background color. This is where jQuery becomes really useful: we’re going to change the CSS on our page from our JavaScript file!
+Now that we have a number that we can create an HSL color with, let’s create it and change the background color. This is where jQuery becomes really useful: we’re going to change the CSS on our page right from our JavaScript file!
 
 ```js
 $("body").css("background-color", `hsl(${color}, 100%, 50%)`)
@@ -262,16 +256,15 @@ $(document).ready(function() {
 })
 ```
 
-When you run your repl, you should be greeted by a blank red screen. Click on the preview and start typing a bunch of words! You should see the background color change as you type each word!
+When you run your repl, you should be greeted by a blank red screen. Click on the preview and start typing a bunch of words. You should see the background color change as you type each word!
 
 ## Hacking
 Your journey is far from over. There are endless ways you can make this your own. Here are a few suggestions:
 
-1. If you feel the background color is changing too slowly, try multiplying your color variable by a number so that the number goes around the HSL color wheel more quickly.
-2. Why make your background only one color? How about using the CSS [linear-gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient) function? [Check out what I did](https://repl.it/@TechBug2012/colorful-grammar) for an example of what this looks like. There are so many different ways you can make a gradient!
+1. If you feel like the background color is changing too slowly, try multiplying your `color` variable by a number so that it goes around the HSL color wheel more quickly.
+2. Why make your background only one color? How about using the CSS [linear-gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient) function? [Check out what I did](https://repl.it/@TechBug2012/colorful-grammar) for an example of what this looks like. There are many, many different ways you can make a gradient!
 3. I kept the saturation and luminosity of my color at 100% and 50%, but that doesn’t mean you have to! Try changing those numbers around and see how many new colors you can create.
-4. Try creating a gradient with multiple colors! Maybe one for each type of word?
-5. Change the font and size of the text in the textarea
+4. Change the font and size of the text in the textarea
 
 ...and much, much more!
 
