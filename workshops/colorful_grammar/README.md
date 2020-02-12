@@ -6,7 +6,7 @@ group: 'start'
 order: 3
 ---
 
-Converting words to colors is difficult to wrap your head around when you first think about it—but that’s exactly what you’re going to do in this workshop. In just 20 lines of code, you’re going to build a website that allows you to type all over the screen and watch the color of your screen change based on the number of verbs, nouns, adjectives, and adverbs in the text.
+Converting words to colors is a difficult concept to wrap your head around when you first think about it, but that’s exactly what you’re going to do in this workshop. In just 20 lines of code, you’re going to build a website that allows you to type all over the screen and watch the color of your screen change based on the number of verbs, nouns, adjectives, and adverbs in the text.
 
 [**Link to demo**](https://colorful-grammar.techbug2012.repl.co)
 
@@ -26,9 +26,9 @@ Let’s start by importing these two libraries. Just before the end of the `<hea
 <script src="https://cdn.jsdelivr.net/npm/wordpos-web@1.0.2/dist/wordpos.min.js"></script>
 ```
 
-Now that we’ve imported the libraries we need to make our website, it’s time to write some code.
-
 ## Typing on the screen
+Great! Now that we’ve imported the libraries we need to make our website, it’s time to write some code.
+
 In order to use our entire screen as our canvas for writing, we need to create a `<textarea>` in our HTML file and use CSS to make it fill the entire screen.
 
 In the `<body>` of your `index.html` file, under the line where `script.js` is imported, add this line:
