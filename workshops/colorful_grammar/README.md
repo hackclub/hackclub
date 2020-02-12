@@ -15,7 +15,7 @@ Converting words to colors is something that’s difficult to wrap your head aro
 ## Getting started
 Create a new Repl.it project at [repl.it/languages/html](https://repl.it/languages/html).
 
-We’re going to be using a library called jQuery to make things easier for us. If you’ve never heard of it, jQuery is a popular JavaScript library that simplifies writing certain common JavaScript tasks. You’ll get to see how jQuery can be really useful throughout this workshop.
+To make things a little easier for us, we’re going to be using [jQuery](https://jquery.com), a popular JavaScript library that simplifies writing certain common JavaScript tasks. You’ll get to see how jQuery can be really useful throughout this workshop.
 
 We’re also going to use [WordPOS](https://github.com/moos/wordpos), a cool dictionary library that identifies the grammar type of a given word (e.g. noun, verb, etc).
 
@@ -81,7 +81,7 @@ textarea {
 }
 ```
 
-Your textarea still doesn’t quite fill the whole screen, though—these two properties only made it fill 100% of its parent element. In our case, this is the `<body>`, which doesn’t fill the whole screen. We ran into the same problem in the [Splatter Paint Workshop]()—check it out for a clearer explanation of this concept if you don’t understand.
+Your textarea still doesn’t quite fill the whole screen, though—these two properties only made it fill 100% of its parent element. In our case, this is the `<body>`, which doesn’t fill the whole screen. We ran into the same problem in the [Splatter Paint Workshop]()—check it out for a clearer explanation of this concept.
 
 To make the `<body>` fill the whole screen, simply add
 
@@ -126,7 +126,7 @@ const wordpos = new WordPOS({
 })
 ```
 
-This initializes a new instance of the WordPos library with a dictionary to identify words with.
+This initializes a new instance of the WordPOS library with a dictionary to identify words with.
 
 Under this, add
 
@@ -183,7 +183,7 @@ $(document).ready(function() {
 ## Converting text to a color
 The beauty of this workshop is that there are endless ways you can go about creating a color from all of this data, and each will produce a different result. I’m going to show what I personally came up with, but as you read the next steps, be actively thinking of ways you can change it to do something different.
 
-We’re going to be creating our color with the [HSL (Hue, Saturation, Luminosity) color system](http://thenewcode.com/61/An-Easy-Guide-To-HSL-Color). If you don’t know what that is, all you need to understand for this demo is that the HSL system uses a color wheel, and you identify a color according to its position on the color wheel in degrees. Also important to note is that colors start a new cycle once you pass 360°. Just like a 60° angle looks the same as a 420 (360 + 60)° angle, 60° on the HSL color system is the same color as 420°: yellow.
+We’re going to be creating our color with the [HSL (Hue, Saturation, Luminosity) color system](http://thenewcode.com/61/An-Easy-Guide-To-HSL-Color). If you’re not familiar with it, all you need to understand for this demo is that the HSL system uses a color wheel, and you identify a color according to its position on the color wheel in degrees. Also important to note is that colors start a new cycle once you pass 360°. Just like a 60° angle looks the same as a 420 (360 + 60)° angle, 60° on the HSL color system is the same color as 420°: yellow.
 
 ![](https://raw.githubusercontent.com/hackclub/hackclub/colorful-grammar/workshops/colorful_grammar/img/hsl-color-wheel.PNG)
 
@@ -215,10 +215,9 @@ $(document).ready(function() {
     let sentence = $("#sentence").val()
 
     wordpos.getPOS(sentence).then(function(types) {
-      const color = types.verbs.length + types.adverbs.length + types.nouns.length + types.adjectives.length + types.rest.length
+      var color = types.verbs.length + types.adverbs.length + types.nouns.length + types.adjectives.length + types.rest.length
 
-      $("body").css("background-color", `hsl(${color}, 100%, 50%)`
-      )
+      $("body").css("background-color", `hsl(${color}, 100%, 50%)`)
     })
   }
 })
@@ -245,10 +244,9 @@ $(document).ready(function() {
     let sentence = $("#sentence").val()
 
     wordpos.getPOS(sentence).then(function(types) {
-      const color = types.verbs.length + types.adverbs.length + types.nouns.length + types.adjectives.length + types.rest.length
+      var color = types.verbs.length + types.adverbs.length + types.nouns.length + types.adjectives.length + types.rest.length
 
-      $("body").css("background-color", `hsl(${color}, 100%, 50%)`
-      )
+      $("body").css("background-color", `hsl(${color}, 100%, 50%)`)
     })
   }
   updateBackground()
