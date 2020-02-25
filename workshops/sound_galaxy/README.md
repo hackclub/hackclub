@@ -10,8 +10,6 @@ Sound visualization is one of the coolest things that modern-day web development
 
 In this workshop, you’re going to create a galaxy out of shimmering particles that expand and move based on the sound coming from your microphone, in less than 50 lines of code.
 
-**(FYI: this workshop assumes you’re familiar with the concept of arrays.)**
-
 Sound overwhelming? Exciting? Scary? If so, you’re ready go. Let’s get started.
 
 ## Getting started
