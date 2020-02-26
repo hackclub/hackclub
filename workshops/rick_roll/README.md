@@ -84,8 +84,8 @@ Finally, let’s pass in a link to Never Gonna Give You Up:
 ```js
 const ncco = [
   {
-    action: “stream”,
-    streamUrl: [“https://raw.githubusercontent.com/hackclub/hackclub/rick-roll/workshops/rick_roll/never-gonna-give-you-up.mp3”]
+    action: "stream",
+    streamUrl: ["https://raw.githubusercontent.com/hackclub/hackclub/rick-roll/workshops/rick_roll/never-gonna-give-you-up.mp3"]
   }
 ]
 ```
