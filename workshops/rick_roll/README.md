@@ -6,7 +6,7 @@ group: starter
 order: 5
 ---
 
-**This workshop requires advance preparation by a club leader. If you are a club leader, [click here](https://workshops.hackclub.com/preview/rick-roll/rick_roll_leader) to view the preparation steps.**
+*This workshop requires advance preparation by a club leader. If you are a club leader, [click here](https://workshops.hackclub.com/preview/rick-roll/rick_roll_leader) to view the preparation steps.*
 
 [![](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
