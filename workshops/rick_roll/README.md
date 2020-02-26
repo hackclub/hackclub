@@ -1,6 +1,7 @@
 ---
 name: Rickroll
 description: Use the Nexmo API to call your phone and rickroll you (REQUIRES LEADER PREP)
+author: '@MatthewStanciu'
 group: starter
 order: 5
 ---
