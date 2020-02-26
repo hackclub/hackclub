@@ -32,7 +32,7 @@ APP_ID=application-id-from-your-club-leader
 Now, let’s navigate back to `index.js` and set up Nexmo. The first step is to import the Nexmo npm package:
 
 ```js
-const Nexmo = require(‘nexmo’)
+const Nexmo = require('nexmo')
 ```
 
 Next, let’s authenticate with Nexmo:
@@ -60,8 +60,8 @@ For now, all we want is a single `stream` NCCO to play a stream of audio from an
 ```json
 [
   {
-    "action": "stream",
-    "streamUrl": ["https://acme.com/streams/music.mp3"]
+    action: "stream",
+    streamUrl: ["https://acme.com/streams/music.mp3"]
   }
 ]
 ```
