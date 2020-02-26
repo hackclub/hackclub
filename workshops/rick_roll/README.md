@@ -52,3 +52,88 @@ Instead of offering a private key in plain text, Nexmo saves generated private k
 Once your `private.key` file is uploaded, you’re all set to start making calls!
 
 ## Making a call
+Interaction with the Nexmo Voice API happens via Nexmo Call Control Objects (NCCOs). NCCOs exist as [JSON arrays](https://www.w3schools.com/js/js_json_arrays.asp), so you can include one action, or you can chain actions together to create an interactive flow in your call. Check out the [full list of NCCOs in Nexmo’s documentation](https://developer.nexmo.com/voice/voice-api/ncco-reference).
+
+For now, all we want is a single `stream` NCCO to play a stream of audio from an mp3 file. In Nexmo, this looks like:
+
+```json
+[
+  {
+    "action": "stream",
+    "streamUrl": ["https://acme.com/streams/music.mp3"]
+  }
+]
+```
+
+The `streamUrl` is also stored as an array, which means you can either pass in one URL, or you can chain URLs together to play synchronously. Note that you must pass in a link to an mp3 file online; you can’t upload your own mp3 file and link to the local file.
+
+Let’s create a NCCO in our project. At the end of the `index.js` file, add:
+
+```js
+const ncco = [
+  {
+    action: "stream",
+    streamUrl: [""]
+  }
+]
+```
+
+Finally, let’s pass in a link to Never Gonna Give You Up:
+
+```js
+const ncco = [
+  {
+    action: “stream”,
+    streamUrl: [“https://raw.githubusercontent.com/hackclub/hackclub/rick-roll/workshops/rick_roll/never-gonna-give-you-up.mp3”]
+  }
+]
+```
+
+Awesome! Now that we’ve given Nexmo instructions for a call, it’s time to place a call.
+
+Nexmo calls are created via `nexmo.calls.create`. Here’s what creating a call with Nexmo looks like:
+
+```js
+nexmo.calls.create(
+  {
+    to: [{ type: 'phone', number: 'PHONE_NUMBER' }],
+    from: { type: 'phone', number: 'NEXMO_PHONE_NUMBER' },
+    ncco,
+  }
+)
+```
+
+We’re ready to rickroll! Add the above code block at the bottom of your `index.js` file. Replace `PHONE_NUMBER` with your phone number and `NEXMO_PHONE_NUMBER` with the number your club leader provides you with.
+
+Your entire `script.js` file should now look like this:
+
+```js
+const Nexmo = require('nexmo')
+
+const nexmo = new Nexmo({
+  apiKey: process.env.API_KEY,
+  apiSecret: process.env.API_SECRET,
+  applicationId: process.env.APP_ID,
+  privateKey: 'private.key',
+})
+
+const ncco = [
+  {
+    action: "stream",
+    streamUrl: ["https://raw.githubusercontent.com/hackclub/hackclub/rick-roll/workshops/rick_roll/never-gonna-give-you-up.mp3"]
+  }
+]
+
+nexmo.calls.create(
+  {
+    to: [{ type: 'phone', number: '17654093260' }],
+    from: { type: 'phone', number: '17654093260' },
+    ncco,
+  }
+)
+```
+
+When you run your repl, you should receive a call from Nexmo, and Never Gonna Give You Up should start playing!
+
+## Hacking
+Rickrolling yourself is just the beginning. Take a look at [Nexmo’s documentation](https://developer.nexmo.com/documentation) to see all of the different APIs they offer. You can chain multiple audio streams together, program an entire conversation, chain multiple events together based on user input, and the list goes on. Now is your time to get wild and push the limits of interacting with phones.
