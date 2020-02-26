@@ -127,8 +127,8 @@ const ncco = [
 
 nexmo.calls.create(
   {
-    to: [{ type: 'phone', number: '17654093260' }],
-    from: { type: 'phone', number: '17654093260' },
+    to: [{ type: 'phone', number: 'PHONE_NUMBER' }],
+    from: { type: 'phone', number: 'NEXMO_PHONE_NUMBER' },
     ncco,
   }
 )
