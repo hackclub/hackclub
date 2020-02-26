@@ -6,7 +6,7 @@ group: starter
 order: 5
 ---
 
-ljksdfjaklThe Rickroll workshop uses an API service called Nexmo. If you've heard of Twilio, it's a lot like that. We're using Nexmo for this workshop instead of Twilio because Nexmo doesn't require a credit card to sign up (unlike Twilio), authenticating an entire club with Nexmo is easier than with Twilio, and Nexmo's API is easier to use than Twilio's (at least for the purposes of this workshop).
+The Rickroll workshop uses an API service called Nexmo. If you've heard of Twilio, it's a lot like that. We're using Nexmo for this workshop instead of Twilio because Nexmo doesn't require a credit card to sign up (unlike Twilio), authenticating an entire club with Nexmo is easier than with Twilio, and Nexmo's API is easier to use than Twilio's (at least for the purposes of this workshop).
 
 The Rickroll workshop assumes club members have API credentials handy so that the workshop stays focused on building and playing around with the API instead of signing up for Nexmo and getting their own API credentials. Your job is to sign up for Nexmo and generate API credentials that you can provide to your club members when you run the workshop. **This takes a bit of time, so make sure you're doing this the night before your meeting at the very latest.**
 
