@@ -18,17 +18,17 @@ Machine learning models are trained with large amounts of data that attempt to �
 ## Training a model
 Get started by visiting [teachablemachine.withgoogle.com](https://teachablemachine.withgoogle.com) and clicking on “Get Started”. You should be greeted with the option to create an image, audio, or pose project. For now, pick “Image Project”.
 
-![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/homepage.JPG)
+![](img/homepage.JPG)
 
-![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/imageproject.PNG)
+![](img/imageproject.PNG)
 
 Rename “Class 1” and “Class 2” to “me” and “me with [some object]”.
 
-![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/renameclass.GIF)
+![](img/renameclass.GIF)
 
 Next, turn on your webcam for each class and click “Hold to Record” until you have a few hundred image samples recorded. You want to take as many pictures and capture as many angles, positions, etc. as you possibly can. The more data you have, the better your model will learn the difference between the two sets of data.
 
-![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/imagesamples.PNG)
+![](img/imagesamples.PNG)
 
 Once you feel you’ve recorded enough samples, click on “Train Model”. The time it takes to train the model will vary depending on how many image samples you gave it, but it usually takes somewhere around 30 seconds.
 
@@ -36,12 +36,12 @@ Once your model is trained, a preview should appear. Try it out! If it’s shaky
 
 Here’s what mine looks like:
 
-![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/model.GIF)
+![](img/model.GIF)
 
 ## Exporting your model
 Teachable Machine will host your model on their servers, so you can use it in any project you want. To upload your model to Teachable Machine’s servers, click on “Export Model”, then click “Upload my model” once the window pops up. After a few seconds, you should see a link to your model available under “Your sharable link:”
 
-![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/uploadedmodel.PNG)
+![](img/uploadedmodel.PNG)
 
 (FYI: if you’re interested in seeing the raw data of your model, copy the link to the model and paste it in your URL bar with `model.json` at the end)
 
@@ -56,12 +56,12 @@ Now it’s time to add your Teachable Machine model to your own project!
 
 Run the repl, then open your website in a new tab by clicking the icon at the top right. Once you click “Start” and give the site access to your webcam, you should see your model!
 
-![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/finalmodel.PNG)
+![](img/finalmodel.PNG)
 
 # Hacking
 Congratulations! You’ve just trained a machine learning model directly in your browser without writing any code. But your journey is far from over—there are endless ways you can take this project further. Did you notice the “Add a class” button below your two original classes?
 
-![](https://raw.githubusercontent.com/hackclub/hackclub/teachable-machine/workshops/teachable_machine/img/add-a-class.PNG)
+![](img/add-a-class.PNG)
 
 You can train this model with as many classes as you want! Try and see how far you can take it—you, you + phone, you + water bottle, you + phone + water bottle, etc. Go crazy.
 
