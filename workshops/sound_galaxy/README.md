@@ -4,7 +4,7 @@ description: 'Visualize sound by making particles move in a galaxy with p5.js'
 author: '@MatthewStanciu'
 ---
 
-Sound visualization is one of the coolest things that modern-day web development tools have made accessible. There’s something indescribably satisfying about the surreal feeling of *seeing* the sounds around you on your screen and somehow understanding what you’re seeing.
+Sound visualization is one of the coolest things that modern-day web development tools have made accessible. There’s something surreal and indescribably satisfying about *seeing* the sounds around you on your screen and somehow understanding what you’re seeing.
 
 ![](img/final-demo.GIF)
 
@@ -24,7 +24,7 @@ Get started from the starter project by [clicking here](https://repl.it/@TechBug
 
 Great! Now that we’ve imported p5, we’re ready to start writing JavaScript.
 
-## About the Fast Fourier Transform
+## About the Fourier Transform
 At the center of everything we’re building in this workshop is something called a Fourier Transform: a mathematical operation that takes a frequency (e.g. the sound frequency picked up by your computer’s microphone) and decomposes it into the individual wavelengths that make it up. You don’t need to understand how the Fourier Transform works—it’s built into p5 and super easy to use—but if you’re interested, 3Blue1Brown made [a great video](https://youtu.be/spUNpyF58BY) explaining it.
 
 ## Setting up p5
@@ -93,7 +93,7 @@ let Particle = function(position) {
 }
 ```
 
-This is how [objects](https://www.w3schools.com/js/js_objects.asp) are created in JavaScript. If we want to create a new Particle, we would use `let particle = new Particle()` (check out `galaxyManager.js` to see this in action!)
+This is how [objects](https://www.w3schools.com/js/js_objects.asp) are created in JavaScript. If we want to create a new Particle, we would use `let particle = new Particle()`.
 
 We want to give the Particle object a standard set of properties that can be changed for each instance of a Particle. For now, let’s start with `position`, `speed`, and `color`—but think of some other properties that your particles can have!
 
@@ -105,9 +105,13 @@ let Particle = function(position) {
 }
 ```
 
-Here, we’re setting `position` to the value given to the Particle when it’s created, `speed` to 1 in the y direction, and `color` to a random [RGB](https://www.w3schools.com/colors/colors_rgb.asp) color.
+Here, we’re setting:
 
-Cool! We now have our very own Particle object! Now, let’s create a bunch of particles and randomly distribute them across our screen. Luckily, the starter project you started with comes with a handy `galaxyManager`, which gives you a few functions to easily manage your galaxy with. The `positionParticles()` function lets you easily create an array of 1024 particles and randomly place them on your screen.
+- `position` to a position given to the Particle when it’s created
+- `speed` to 0 in the x direction and 1 in the y direction
+- `color` to a random [RGB](https://www.w3schools.com/colors/colors_rgb.asp) color.
+
+Now that we've created our Particle object, let’s create a bunch of particles and randomly distribute them across our screen. The starter project you started with comes with a handy `galaxyManager`, which gives you a few functions to easily manage your galaxy with. The `positionParticles()` function creates an array of 1024 particles at random places on your screen. Let's add this function to the bottom of `setup()`.
 
 ```js
 function setup() {
@@ -124,7 +128,10 @@ function setup() {
 }
 ```
 
-Before we can draw our particles, we need to think about what “drawing” a particle even means. As of now, a “particle” is an abstract idea. It has certain properties, but these properties aren’t currently used anywhere. Let’s go back to our `Particle` object and write a [method](https://www.w3schools.com/js/js_object_methods.asp) to add instructions for drawing a particle.
+## Drawing particles
+Before we can draw our particles, we need to think about what “drawing” a particle even means. As of now, a “particle” is just an abstract idea that we made up. We've given it certain properties, but we haven't used these properties anywhere.
+
+Let’s go back to our `Particle` object and write a [method](https://www.w3schools.com/js/js_object_methods.asp) that gives instructions for drawing a particle.
 
 ```js
 let Particle = function(position) {
@@ -142,9 +149,11 @@ let Particle = function(position) {
 }
 ```
 
-The `draw` method that we just added simply gives instructions to create an ellipse at the `x` and `y` coordinates of the particle of equal diameter (so, a circle) and fill it with the random color assigned to it. Now, instead of being an abstract idea in our heads, a `Particle` is a randomly-colored circle. Now, for example, if we wanted to draw a `Particle` called `awesomeParticle`, we could simply write `awesomeParticle.draw()`.
+The `draw` method that we just added creates an ellipse at the `x` and `y` coordinates of the particle of equal diameter (so, a circle) and fills it with the color assigned to it. Now, instead of being an abstract idea, a Particle is a randomly-colored circle.
 
-Now that our particles are real objects, we can actually draw them on our canvas! In the p5 `draw()` function (the one under `setup()`, not the one you just created), add:
+Now, if we wanted to draw a Particle called `awesomeParticle` at the top left corner of the screen, we could do it with `awesomeParticle.draw()`.
+
+Now that our particles are real objects, we can finally draw them on our canvas! In the p5 `draw()` function (the function under `setup()`, not the method you just created), add:
 
 ```js
 function draw() {
@@ -152,11 +161,13 @@ function draw() {
 }
 ```
 
-`drawParticles()` is another function offered by the galaxy manager that calls the particle `draw` function on every instantiated particle. If you run your repl now, you should see this:
+`drawParticles()` is another function offered by the galaxy manager that calls the `draw` method on every instantiated particle.
+
+If you run your repl now, you should see this:
 
 ![](img/draw.png)
 
-If you want to make your canvas look more like space, you can add
+Nice! We've just given life to our particles! If you want to make your canvas look more like space, you can add
 
 ```js
 background(0, 0, 0)
@@ -184,7 +195,7 @@ this.update = function(energy) {
 
 We’re passing in an `energy`, which is the intensity of sound at each part of the FFT spectrum. In our case, this means the intensity of each particle.
 
-Here’s what I personally came up with:
+There are endless ways to update a particle based on intensity of sound, but here’s what I personally came up with:
 
 ```js
 this.update = function(energy) {
@@ -196,9 +207,9 @@ this.update = function(energy) {
 }
 ```
 
-This makes the particles shimmer (like stars in a galaxy), updates the diameter and speed based on sound intensity, and resets each particle to the top of the screen once they reach the bottom of the screen.
+This makes the particles shimmer (like stars in a galaxy), updates the diameter and speed based on sound intensity, and resets each particle to the top of the screen once they reach the bottom of the screen to make it look like a continuous stream of particles.
 
-This is where you shine! There are endless ways to update a particle based on intensity of sound. Play around with these numbers, think of other ways to update the particles—don’t walk out of this meeting with this block of code unchanged!
+This is where you shine! Play around with these numbers, think of other ways to update the particles—don’t walk out of this meeting with this block of code unchanged!
 
 Now that we’ve given instructions for updating a particle, we can finally put the Fast Fourier Transform to use and continuously draw updated particles! In the `draw()` function, remove `drawParticles()` and replace it with these two lines:
 
