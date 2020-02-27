@@ -185,7 +185,7 @@ The beauty of this workshop is that there are endless ways you can go about crea
 
 We’re going to be creating our color with the [HSL (Hue, Saturation, Luminosity) color system](http://thenewcode.com/61/An-Easy-Guide-To-HSL-Color). If you’re not familiar with it, all you need to understand for this demo is that the HSL system uses a color wheel, and you identify a color according to its position on the color wheel in degrees. Also important to note is that colors start a new cycle once you pass 360°. Just like a 60° angle looks the same as a 420 (360 + 60)° angle, 60° on the HSL color system is the same color as 420°: yellow.
 
-![](https://raw.githubusercontent.com/hackclub/hackclub/colorful-grammar/workshops/colorful_grammar/img/hsl-color-wheel.PNG)
+![](img/hsl-color-wheel.PNG)
 
 Because we can simply identify a color with a number, one way we can process our data is by adding up the frequency of each type of word. Using the WordPOS library, getting the total number of word type is as simple as `types.[type].length`; for example, `types.verbs.length`.
 
