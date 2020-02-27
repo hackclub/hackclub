@@ -272,6 +272,6 @@ There are endless ways to make this project completely your own! Go back through
 
 Here are some examples of projects that stem from this project but take it even further:
 
-- **Raining particles**: [Demo](https://observant-wild-sunspot.glitch.me) [Code](https://glitch.com/edit/#!/observant-wild-sunspot?path=sketch.js:1:0)
-- **Raining particles 2**: [Demo](https://icy-married-crabapple.glitch.me) [Code](https://glitch.com/edit/#!/icy-married-crabapple?path=sketch.js:1:0)
+- **Raining particles**: [Demo](https://observant-wild-sunspot.glitch.me) [Code](https://glitch.com/edit/#!/observant-wild-sunspot)
+- **Raining particles 2**: [Demo](https://icy-married-crabapple.glitch.me) [Code](https://glitch.com/edit/#!/icy-married-crabapple)
 - **Using mp3 files as input**: [Demo](https://sound-viz-song-2--techbug2012.repl.co) [Code](https://repl.it/@TechBug2012/sound-viz-song-2)
