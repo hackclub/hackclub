@@ -10,18 +10,20 @@ order: 5
 
 [![](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-Rickrolling has been around since the early days of the Internet. But have you ever wanted to take rickrolling to the next level, into the real world? That’s what you’re going to do today. In this workshop, you’re going to build a Node.js web app.js that calls your phone and rickrolls you.
+Rickrolling has been around since the early days of the Internet. But have you ever wanted to take rickrolling to the next level, into the realm of phones? That’s what you’re going to do today. In this workshop, you’re going to build a Node.js web app that calls your phone and rickrolls you.
 
 ## Getting started
-Nexmo is a service that provides easy-to-use phone APIs—SMS, voice, etc. If you’ve ever heard of Twilio, it’s a lot like that. We’re going to use the Nexmo Voice API to place a call and play an audio stream.
+Nexmo is a service that provides easy-to-use phone APIs—SMS, voice, etc. If you’ve ever heard of Twilio, it’s a lot like that. We’re going to use the Nexmo Voice API to place a call and play an audio stream of Never Gonna Give You Up.
 
-Start a new Node.js project on repl.it by vising [repl.it/languages/nodejs](https://repl.it/languages/nodejs).
+Start a new Node.js project on repl.it by visiting [repl.it/languages/nodejs](https://repl.it/languages/nodejs).
  
 The first thing we need to do is authenticate with the Nexmo API. Your club leader should have created an account for your club and generated an API key, API secret, Application ID, and a private key stored as a file.
 
-In order to make sensitive details private, we use environment variables. Environment variables are essentially “secret” variables: the server knows what they are, but they’re not in the code for anyone to see. Environment variables are stored in a `.env` file. If you create a `.env` file on repl.it, that file will only be visible to you. When you want to refer to an environment variable in your code, you use `process.env.ENV_VARIABLE_NAME`.
+We use environment variables to make sensitive details in our code private. Environment variables are essentially “secret” variables: the server knows what they are, but they’re not in the code for anyone to see.
 
-Let’s create a `.env` file and storing the keys we need to authenticate with Nexmo. Once you’ve created a new `.env.` file, get the API key, API secret, and Application ID from your club leader and add them to the file:
+Environment variables are stored in a `.env` file. In order to keep the contents of the file private, `.env` files on repl.it are only visible to you, and are hidden from anyone else who sees your code. We use `process.env.ENV_VARIABLE_NAME` to refer to environment variables in code.
+
+Let’s create a `.env` file and store the credentials we need for authenticating with Nexmo. Once you’ve created a new `.env.` file, get the API key, API secret, and Application ID from your club leader and add them to the file:
 
 ```
 API_KEY=aPIkEyFrOmYouRcLuBLeaDEr
@@ -29,15 +31,18 @@ API_SECRET=aPisECReTfROmyOURcluBLeAdER
 APP_ID=application-id-from-your-club-leader
 ```
 
-Now, let’s navigate back to `index.js` and set up Nexmo. The first step is to import the Nexmo npm package:
+## Setting up Nexmo
+Navigate back to the `index.js` file and import the Nexmo npm package:
 
 ```js
 const Nexmo = require('nexmo')
 ```
 
-Next, let’s authenticate with Nexmo:
+Next, let’s create a new instance of Nexmo and pass in the API credentials we stored in the `.env` file.
 
 ```js
+const Nexmo = require('nexmo')
+
 const nexmo = new Nexmo({
   apiKey: process.env.API_KEY,
   apiSecret: process.env.API_SECRET,
@@ -46,14 +51,18 @@ const nexmo = new Nexmo({
 })
 ```
 
-Instead of offering a private key in plain text, Nexmo saves generated private keys in a file called `private.key` that you have to upload manually to the server your app is being hosted on. Obtain the `private.key` file from your club leader and download it to your computer. Then, upload the file to repl.it by clicking on the three dots at the top left of your screen and clicking “Upload file”.
+We're almost done. The final step before we can start using Nexmo is to upload the private key.
+
+Instead of offering a private key in plain text, Nexmo saves private keys in a file called `private.key` that you have to upload to the server your app is being hosted on.
+
+Obtain the `private.key` file from your club leader and download it to your computer. Then, upload the file to repl.it by clicking on the three dots at the top left of your screen and clicking “Upload file”.
 
 ![](img/upload-file.jpg)
 
 Once your `private.key` file is uploaded, you’re all set to start making calls!
 
 ## Making a call
-Interaction with the Nexmo Voice API happens via Nexmo Call Control Objects (NCCOs). NCCOs exist as [JSON arrays](https://www.w3schools.com/js/js_json_arrays.asp), so you can include one action, or you can chain actions together to create an interactive flow in your call. Check out the [full list of NCCOs in Nexmo’s documentation](https://developer.nexmo.com/voice/voice-api/ncco-reference).
+Interaction with the Nexmo Voice API happens via Nexmo Call Control Objects (NCCOs). NCCOs exist as [JSON arrays](https://www.w3schools.com/js/js_json_arrays.asp), so you can include one action, or you can chain actions together to create an interactive flow in your call. Check out the [full list of NCCOs in Nexmo’s documentation](https://developer.nexmo.com/voice/voice-api/ncco-reference) to see what you can do with Nexmo's Voice API.
 
 For now, all we want is a single `stream` NCCO to play a stream of audio from an mp3 file. In Nexmo, this looks like:
 
@@ -92,7 +101,7 @@ const ncco = [
 
 Awesome! Now that we’ve given Nexmo instructions for a call, it’s time to place a call.
 
-Nexmo calls are created via `nexmo.calls.create`. Here’s what creating a call with Nexmo looks like:
+Nexmo calls are created with `nexmo.calls.create`. Here’s what creating a call with Nexmo looks like:
 
 ```js
 nexmo.calls.create(
