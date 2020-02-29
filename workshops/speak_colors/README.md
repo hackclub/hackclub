@@ -48,12 +48,12 @@ The rest of the code samples in this workshop will all be for `script.js`, where
 
 First, we need to set up a canvas with p5.
 
-- We want the canvas to fill the screen, so JavaScript’s `window.innerWidth` & `window.innerHeight` come in handy.
+- We want the canvas to fill the screen, so p5's `windowWidth` & `windowHeight` come in handy.
 - Let’s go ahead & fill the background with white, and make the text color dark grey.
 
 ```js
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight)
+  createCanvas(windowWidth, windowHeight)
   background(255)
   fill(25)
 }
@@ -65,7 +65,7 @@ The page still looks empty, oops! Let’s add some initial instructions, even th
 
 ```js
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight)
+  createCanvas(windowWidth, windowWidth)
   background(255)
   fill(25)
 
@@ -168,7 +168,7 @@ speech.continuous = true
 speech.interimResults = false
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight)
+  createCanvas(windowWidth, windowHeight)
   background(255)
   fill(25)
 
