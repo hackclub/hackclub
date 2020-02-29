@@ -46,7 +46,7 @@ Now, let's add our JavaScript dependencies, namely, p5.js. Let's add that into o
 
 ```html
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
 </body>
 ```
 
@@ -54,7 +54,7 @@ We'll also need to attach our JavaScript file, `script.js`. Add this below the l
 
 ```html
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
   <script src="script.js"></script>
 </body>
 ```
@@ -121,13 +121,13 @@ p5.js stores the width of the canvas in a variable named [`width`](http://p5js.o
 
 ### Drawing One Circle
 
-p5.js makes drawing ellipses and circles easy with the function [`ellipse()`](http://p5js.org/reference/#p5/ellipse).
+p5.js makes drawing circles easy with the function [`circle()`](https://p5js.org/reference/#/p5/circle).
 
 Let's see the `ellipse()` function in action by drawing a circle in the middle of the screen:
 
 ```js
 function draw() {
-  ellipse(width / 2, height / 2, circleDiameter, circleDiameter)
+  circle(width / 2, height / 2, circleDiameter)
 }
 ```
 
@@ -145,17 +145,17 @@ Let's try to draw a row of circles first. We'll want to place them `circleDiamet
 
 ```js
 function draw() {
-  ellipse(0, height / 2, circleDiameter, circleDiameter)
-  ellipse(circleDiameter, height / 2, circleDiameter, circleDiameter)
-  ellipse(2 * circleDiameter, height / 2, circleDiameter, circleDiameter)
-  ellipse(3 * circleDiameter, height / 2, circleDiameter, circleDiameter)
-  ellipse(4 * circleDiameter, height / 2, circleDiameter, circleDiameter)
+  circle(0, height / 2, circleDiameter)
+  circle(circleDiameter, height / 2, circleDiameter)
+  circle(2 * circleDiameter, height / 2, circleDiameter)
+  circle(3 * circleDiameter, height / 2, circleDiameter)
+  circle(4 * circleDiameter, height / 2, circleDiameter)
 }
 ```
 
 ![](img/4_half_circles.png)
 
-So here we've drawn 4.5 circles. Why is there a half-circle? Check out the documentation for [`ellipse()`](http://p5js.org/reference/#p5/ellipse) and see if you can figure it out.
+So here we've drawn 4.5 circles. Why is there a half-circle? Check out the documentation for [`circle()`](https://p5js.org/reference/#/p5/circle) and see if you can figure it out.
 
 Anyway, we can draw 7.5 more, since we've made room for 12 (when we set `NUM_CIRCLES`). Keep going until it looks like this:
 
@@ -221,7 +221,7 @@ function draw() {
   while (y <= height) {
     var x = 0
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter)
+      circle(x, y, circleDiameter)
       x = x + circleDiameter
     }
 
@@ -262,7 +262,7 @@ function draw() {
   while (y <= height) {
     var x = 0
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter)
+      circle(x, y, circleDiameter)
       x = x + circleDiameter
     }
 
@@ -289,7 +289,7 @@ function draw() {
   while (y <= height) {
     var x = 0
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter)
+      circle(x, y, circleDiameter)
       x = x + circleDiameter
     }
 
@@ -310,7 +310,7 @@ function draw() {
   while (y <= height) {
     var x = 0
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter)
+      circle(x, y, circleDiameter)
       x = x + circleDiameter
     }
 
@@ -337,7 +337,7 @@ function draw() {
     }
 
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter)
+      circle(x, y, circleDiameter)
       x = x + circleDiameter
     }
 
@@ -391,7 +391,7 @@ function draw() {
     }
 
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter)
+      circle(x, y, circleDiameter)
       x = x + circleDiameter
     }
 
@@ -426,7 +426,7 @@ function draw() {
     }
 
     while (x <= width) {
-      ellipse(x, y, circleDiameter, circleDiameter)
+      circle(x, y, circleDiameter)
       x = x + circleDiameter
     }
 
@@ -665,7 +665,7 @@ function draw() {
     while (x <= width) {
       stroke(color(rVal, gVal, bVal))
       fill(color(rVal, gVal, bVal))
-      ellipse(x, y, circleDiameter, circleDiameter)
+      circle(x, y, circleDiameter)
       x = x + circleDiameter
     }
 
