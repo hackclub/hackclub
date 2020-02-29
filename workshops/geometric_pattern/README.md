@@ -54,7 +54,7 @@ We'll also need to attach our JavaScript file, `script.js`. Add this below the l
 
 ```html
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
   <script src="script.js"></script>
 </body>
 ```
