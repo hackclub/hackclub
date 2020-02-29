@@ -18,8 +18,8 @@ We’re going to be using [p5.js](https://p5js.org), a JavaScript library for cr
 Get started from the starter project by [clicking here](https://repl.it/@TechBug2012/sound-galaxy-starter). Once your project spins up, navigate to the `index.html` file. Then, just before the end of your `<head>` tag, import these two libraries:
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.js"></script>
 ```
 
 Great! Now that we’ve imported p5, we’re ready to start writing JavaScript.
@@ -140,16 +140,16 @@ let Particle = function(position) {
   this.color = [random(0, 255), random(0,255), random(0,255)]
   
   this.draw = function() {
-    ellipse(
+    circle(
       this.position.x, this.position.y,
-      this.diameter, this.diameter
+      this.diameter
     )
     fill(this.color)
   }
 }
 ```
 
-The `draw` method that we just added creates an ellipse at the `x` and `y` coordinates of the particle of equal diameter (so, a circle) and fills it with the color assigned to it. Now, instead of being an abstract idea, a Particle is a randomly-colored circle.
+The `draw` method that we just added creates a circle at the `x` and `y` coordinates of the particle and fills it with the color assigned to it. Now, instead of being an abstract idea, a Particle is a randomly-colored circle.
 
 Now, if we wanted to draw a Particle called `awesomeParticle` at the top left corner of the screen, we could do it with `awesomeParticle.draw()`.
 
@@ -230,9 +230,9 @@ let Particle = function(position) {
   this.speed = createVector(0, 1)
   this.color = [random(0, 255), random(0,255), random(0,255)]
   this.draw = function() {
-    ellipse(
+    circle(
       this.position.x, this.position.y,
-      this.diameter, this.diameter
+      this.diameter
     )
     fill(this.color)
   }
