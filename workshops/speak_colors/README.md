@@ -26,7 +26,7 @@ Next, we need to import the p5 & p5.speech libraries. Because these are long URL
   <head>
     <meta charset="utf-8" />
     <title>Speak a Color</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
     <script src="https://rawcdn.githack.com/IDMNYU/p5.js-speech/e7ae007d61f048fc2379971b0de7d5db8abb7eee/lib/p5.speech.js"></script>
   </head>
   <body>
@@ -48,12 +48,12 @@ The rest of the code samples in this workshop will all be for `script.js`, where
 
 First, we need to set up a canvas with p5.
 
-- We want the canvas to fill the screen, so JavaScript’s `window.innerWidth` & `window.innerHeight` come in handy.
+- We want the canvas to fill the screen, so p5's `windowWidth` & `windowHeight` come in handy.
 - Let’s go ahead & fill the background with white, and make the text color dark grey.
 
 ```js
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight)
+  createCanvas(windowWidth, windowHeight)
   background(255)
   fill(25)
 }
@@ -65,7 +65,7 @@ The page still looks empty, oops! Let’s add some initial instructions, even th
 
 ```js
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight)
+  createCanvas(windowWidth, windowWidth)
   background(255)
   fill(25)
 
@@ -168,7 +168,7 @@ speech.continuous = true
 speech.interimResults = false
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight)
+  createCanvas(windowWidth, windowHeight)
   background(255)
   fill(25)
 
