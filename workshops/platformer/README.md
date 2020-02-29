@@ -46,7 +46,7 @@ Load in p5.js in script tag in **body**. Beneath that, load in p5.play.js in ano
 <body>
   <script
     type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"
+    src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"
   ></script>
   <script
     type="text/javascript"
@@ -729,7 +729,7 @@ Make sure you're logged into your Repl.it account and, if you want to, go ahead 
 
 Your game is now live and playable on `REPL_NAME--USERNAME.repl.co`!!
 
-Be sure to post your creation on the [`#ship`](https://hackclub.slack.com/messages/ship/) channel on [Slack](https://slack.hackclub.com)!
+Be sure to post your creation in the [`#ship`](https://hackclub.slack.com/messages/ship/) channel on [Slack](https://slack.hackclub.com)!
 
 ## Part X: Hacking
 
