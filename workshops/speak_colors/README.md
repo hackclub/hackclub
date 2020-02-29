@@ -26,7 +26,7 @@ Next, we need to import the p5 & p5.speech libraries. Because these are long URL
   <head>
     <meta charset="utf-8" />
     <title>Speak a Color</title>
-    <script src="https://cdn.jsdelivr.net/npm/p5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
     <script src="https://rawcdn.githack.com/IDMNYU/p5.js-speech/e7ae007d61f048fc2379971b0de7d5db8abb7eee/lib/p5.speech.js"></script>
   </head>
   <body>
