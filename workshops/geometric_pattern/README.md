@@ -123,7 +123,7 @@ p5.js stores the width of the canvas in a variable named [`width`](http://p5js.o
 
 p5.js makes drawing circles easy with the function [`circle()`](https://p5js.org/reference/#/p5/circle).
 
-Let's see the `ellipse()` function in action by drawing a circle in the middle of the screen:
+Let's see the `circle()` function in action by drawing a circle in the middle of the screen:
 
 ```js
 function draw() {
@@ -135,7 +135,7 @@ function draw() {
 
 ![](img/preview.gif)
 
-In this example, the first two arguments we pass to the ellipse function are the x and y coordinates of the center of the ellipse. We've passed in `width/2` and `height/2`, respectively, which means the center of the ellipse will also be the center of the canvas. The latter two arguments are the x-width and y-width of the ellipse. Since we want to draw a circle, we're passing the same value for both.
+In this example, the first two arguments we pass to the circle function are the x and y coordinates of the center of the circle. We've passed in `width/2` and `height/2`, respectively, which means the center of the circle will also be the center of the canvas. The last argument is the diameter of the circle. Since we want to draw a circle, we're passing the same value for both.
 
 You can play around with these values to get a better feel of how this function works.
 
@@ -161,7 +161,7 @@ Anyway, we can draw 7.5 more, since we've made room for 12 (when we set `NUM_CIR
 
 ![](img/12_circles.png)
 
-Great, now that we've drawn one row of circles in the middle, we have to draw the other rows. Guess we'll be writing a lot of `ellipse()` statements.
+Great, now that we've drawn one row of circles in the middle, we have to draw the other rows. Guess we'll be writing a lot of `circle()` statements.
 
 Just kidding! There's a construct in programming called a loop, and it repeats a set of instructions as many times as you decide.
 
@@ -180,26 +180,26 @@ function draw() {
 
 You'll notice there are multiple parts to this:
 
-- `var x = 0;`: this is a variable that will store the value of our x-coordinate as we draw ellipses across the row.
+- `var x = 0;`: this is a variable that will store the value of our x-coordinate as we draw circles across the row.
 - `while (x <= width)`: this is the header of the while-loop, and it means that the instructions within the loop should be executed as long as `x` is less than or equal to `width`.
 - `{` and the corresponding `}` at the bottom: these braces enclose the code that should be repeated.
 - `x = x + circleDiameter;`: this is one instruction we want to be repeated. This will alter the value of `x`, incrementing it by `circleDiameter` every time we go through the loop.
 
-If we save and refresh, we'll see nothing. That's because there is no code inside the while-loop that affects the canvas. Let's add a line to draw an ellipse at the top of the canvas:
+If we save and refresh, we'll see nothing. That's because there is no code inside the while-loop that affects the canvas. Let's add a line to draw a circle at the top of the canvas:
 
 ```js
 function draw() {
   var x = 0
   while (x <= width) {
-    ellipse(x, 0, circleDiameter, circleDiameter)
+    circle(x, 0, circleDiameter)
     x = x + circleDiameter
   }
 }
 ```
 
-We're supplying `x` as the x-coordinate (cleverly named, eh?), and 0 as the y-coordinate, of the ellipse's center.
+We're supplying `x` as the x-coordinate (cleverly named, eh?), and 0 as the y-coordinate, of the circle's center.
 
-If you save and refresh, you'll see a line of cut-off circles at the top. Since the value of `x` is increased by `circleDiameter` after every iteration of the while-loop, circles are drawn in intervals of `circleDiameter` pixels, just like how you changed the x-coordinate argument in `ellipse()` when you were manually creating each circle. This is the magic of the while-loop.
+If you save and refresh, you'll see a line of cut-off circles at the top. Since the value of `x` is increased by `circleDiameter` after every iteration of the while-loop, circles are drawn in intervals of `circleDiameter` pixels, just like how you changed the x-coordinate argument in `circle()` when you were manually creating each circle. This is the magic of the while-loop.
 
 As to why the circles are cut off -- this is because we set the y-coordinate of the _center_ of every circle to 0.
 
@@ -213,7 +213,7 @@ Just like we used a loop to repeat circles in the horizontal direction, we can a
 
 If we wrap our existing while-loop in another while-loop, we'll be performing the action of filling an entire row with circles, multiple times. And thus covering multiple rows.
 
-Let's put everything so far inside another while-loop. Don't forget to update `ellipse()`:
+Let's put everything so far inside another while-loop. Don't forget to update `circle()`:
 
 ```js
 function draw() {
@@ -454,7 +454,7 @@ One way to use `color()` is to provide 3 arguments; each corresponding to [red (
 
 Let's choose our color to be red. The R, G, and B values for a bright red are 255, 0, and 0, respectively. We can create this color with `color(255, 0, 0)`.
 
-Now we'll pass this color to the `fill()` function. If we do this before drawing the ellipse, all the ellipses we draw will be filled with that color. Let's give this a try and type the following line immediately before calling the `ellipse()` function in `draw()`:
+Now we'll pass this color to the `fill()` function. If we do this before drawing the circle, all the circles we draw will be filled with that color. Let's give this a try and type the following line immediately before calling the `circle()` function in `draw()`:
 
 ```js
 fill(color(255, 0, 0))
@@ -690,8 +690,8 @@ Ideas:
   > ![](img/overlapping_circle_pattern.png)
 - change number of circles per line
 - change number of lines / spacing of lines
-- change shape of ellipses (what about horizontally fat ovals? vertically tall ovals?)
-- change placement or spacing of ellipses
+- change shape of circles (what about horizontally fat ovals? vertically tall ovals?)
+- change placement or spacing of circles
   > ![](img/circle_columns.png)
 - change shapes (p5.js offers easy functions to make triangles, rectangles, and more)
 - p5.js knows where your mouse [x](https://p5js.org/reference/#/p5/mouseX) and [y](https://p5js.org/reference/#/p5/mouseY) coordinates are. You could have the seizure-inducing colors only on mouse over.
