@@ -54,7 +54,7 @@ First things first, clear the contents of your `index.html` and put the followin
     <title>Dodge</title>
   </head>
   <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/molleindustria/p5.play@42cd19c3/lib/p5.play.js"></script>
   </body>
 </html>
@@ -71,7 +71,7 @@ Great, so now we have `index.html` and `script.js`. `index.html` is loading p5.j
     <title>Dodge</title>
   </head>
   <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/molleindustria/p5.play@42cd19c3/lib/p5.play.js"></script>
     <script src="script.js"></script>
   </body>
