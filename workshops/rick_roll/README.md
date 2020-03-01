@@ -94,7 +94,7 @@ Finally, let’s pass in a link to Never Gonna Give You Up:
 const ncco = [
   {
     action: "stream",
-    streamUrl: ["https://raw.githubusercontent.com/hackclub/hackclub/rick-roll/workshops/rick_roll/never-gonna-give-you-up.mp3"]
+    streamUrl: ["https://raw.githubusercontent.com/hackclub/hackclub/master/workshops/rick_roll/never-gonna-give-you-up.mp3"]
   }
 ]
 ```
@@ -130,7 +130,7 @@ const nexmo = new Nexmo({
 const ncco = [
   {
     action: "stream",
-    streamUrl: ["https://raw.githubusercontent.com/hackclub/hackclub/rick-roll/workshops/rick_roll/never-gonna-give-you-up.mp3"]
+    streamUrl: ["https://raw.githubusercontent.com/hackclub/hackclub/master/workshops/rick_roll/never-gonna-give-you-up.mp3"]
   }
 ]
 
