@@ -1,9 +1,8 @@
 ---
 name: Rickroll
-description: Use the Nexmo API to call your phone and rickroll you (REQUIRES LEADER PREP)
+description: Use the Nexmo API to call your phone and rickroll you
 author: '@MatthewStanciu'
 group: starter
-order: 5
 ---
 
 *This workshop requires advance preparation by a club leader. If you are a club leader, [click here](https://workshops.hackclub.com/preview/master/rick_roll_leader) to view the preparation steps.*
