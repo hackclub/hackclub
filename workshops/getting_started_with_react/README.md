@@ -2,8 +2,6 @@
 name: 'Getting Started with React'
 description: 'A collection of information about React.js'
 author: '@itenpn'
-group: 'react'
-order: 1
 ---
 
 # Getting Started Using React

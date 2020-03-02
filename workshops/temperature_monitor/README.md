@@ -2,8 +2,6 @@
 name: Temperature Monitor
 description: Build a temperature monitor with Arduino
 author: '@AthulBless'
-group: arduino
-order: 3
 ---
 
 # Temperature Monitoring With DHT22 & Arduino

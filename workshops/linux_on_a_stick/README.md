@@ -2,8 +2,6 @@
 name: Linux on a Stick
 description: Portable Linux system
 author: '@retiform'
-group: experimental
-order: 1
 ---
 
 # Linux on a Stick (Portable Linux)

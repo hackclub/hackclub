@@ -2,8 +2,6 @@
 name: Rails Notes
 description: Personal notes app using Rails
 author: '@lachlanjc'
-group: retired
-order: 10
 ---
 
 _Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section._

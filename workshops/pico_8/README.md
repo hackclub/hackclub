@@ -2,8 +2,6 @@
 name: Pico-8
 description: Learn game development through the Pico-8 fantasy console
 author: '@Jetmate'
-group: experimental
-order: 5
 ---
 
 # Pico-8 Action Game

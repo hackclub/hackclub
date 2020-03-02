@@ -2,8 +2,6 @@
 name: p5.js
 description: Build the coolest website with p5.js
 author: Hack Club staff
-group: challenge
-order: 1
 ---
 
 # p5.js Challenge

@@ -2,8 +2,6 @@
 name: GitHub Pages
 description: Launch your website with GitHub's free hosting
 author: '@sethtrei'
-group: retired
-order: 3
 ---
 
 # GitHub Pages Workshop

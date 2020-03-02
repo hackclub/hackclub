@@ -2,8 +2,6 @@
 name: styled-weather
 description: Weather app with React + styled-components
 author: '@shmishtopher'
-group: react
-order: 2
 ---
 
 # styled-components

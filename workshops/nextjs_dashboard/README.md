@@ -2,8 +2,6 @@
 name: Dashboard with Next.js
 description: News/weather personal dashboard built with React & Next.js
 author: '@lachlanjc'
-group: react
-order: 5
 ---
 
 _(Note: this workshop assumes the React/Next.js skills explained in the [Next.js Starter](/nextjs_starter) workshop.)_

@@ -2,8 +2,6 @@
 name: 'Personal Website'
 description: 'Making your first website from scratch'
 author: '@MaxWofford'
-group: 'start'
-order: 1
 ---
 
 # Personal Website

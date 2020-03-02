@@ -2,8 +2,6 @@
 name: Dodge
 description: 'Bullet-dodging game using p5.js'
 author: '@MaxWofford'
-group: start
-order: 8
 ---
 
 # Dodge

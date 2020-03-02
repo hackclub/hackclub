@@ -2,8 +2,6 @@
 name: Find Bigfoot
 description: Simple game to find Bigfoot using HTML, CSS and JS
 author: '@ad510, @qmogh'
-group: 'start'
-order: 2
 ---
 
 # Find Bigfoot

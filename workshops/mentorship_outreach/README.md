@@ -2,8 +2,6 @@
 name: Emailing Mentors
 description: Reach out to your heroes
 author: '@SamNChiet'
-group: club
-order: 2
 ---
 
 # A Pocket Guide to Mailing A Mentor

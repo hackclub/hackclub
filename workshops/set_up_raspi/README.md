@@ -2,8 +2,6 @@
 name: Set Up a Pi
 description: Installing Raspbian on your dessert of choice
 author: '@1061999'
-group: pi
-order: 3
 ---
 
 Setting up a Raspberry Pi is very easy. This workshop will walk you through most of the steps, however procedures may differ, depending on your specific model!

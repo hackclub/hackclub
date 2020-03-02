@@ -2,8 +2,6 @@
 name: The most ridiculous API
 description: July 2018
 author: Hack Club staff
-group: challenge
-order: 2
 ---
 
 # Most Ridiculous API Challenge
