@@ -10,7 +10,7 @@ order: 2
 
 One of the most common myths about coding among people who are first learning to code is that coding mostly consists of sitting in a dark room all day writing ~Algorithms~ in a black terminal window with green text, solving complex mathematical equations, and generally being a genius. You’re going to crush this myth in this workshop by making crazy, colorful splatter paint right in your web browser, in only 20 minutes.
 
-![](img/demo.PNG)
+![](img/final-demo.png)
 
 ## Getting started
 Start by creating a new HTML project on repl.it by going to [repl.it/languages/html](https://repl.it/languages/html).
