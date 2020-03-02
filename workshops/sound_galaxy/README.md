@@ -1,6 +1,6 @@
 ---
 name: 'Sound Galaxy'
-description: 'Visualize sound by making particles move in a galaxy with p5.js'
+description: 'Visualize sound by making particles move in a galaxy'
 author: '@MatthewStanciu'
 ---
 

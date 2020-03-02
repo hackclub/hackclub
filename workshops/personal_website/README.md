@@ -1,6 +1,6 @@
 ---
 name: 'Personal Website'
-description: 'Making your first website from scratch'
+description: 'Make your first website from scratch'
 author: '@MaxWofford'
 ---
 
