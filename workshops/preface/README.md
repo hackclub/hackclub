@@ -36,4 +36,4 @@ There's no shortage of opinions about the "right" or "best" way to learn how to 
 
 Regardless of your method, if you keep putting bricks on top of each other, it might take a long time but eventually you'll have a wall. This is where that faith mentioned earlier comes in handy. If you believe that with time and patience you can figure the whole coding thing out, in time you almost certainly will.
 
-[Return to the workshop list](https://hackclub.com/workshops)
+[Return to the workshop list](https://workshops.hackclub.com/)
