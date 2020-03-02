@@ -153,7 +153,7 @@ Though our website has some text on it and exists on the _internet_, we're not d
 
 So what is CSS? CSS, also known as Cascading Style Sheets, is a language used for styling the tags (or "elements") on a web page.
 
-While HTML oversees the content and the way it's structured, CSS is how you'll specify how you'd like your content to look --- with it you can set things like colors, spacing, and more.
+While HTML oversees the content and the way it's structured, CSS is how you'll specify how you'd like your content to look—with it you can set things like colors, spacing, and more.
 
 ### 1) Using CSS
 
@@ -272,22 +272,23 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 **Websites Made by Other Hack Club Hackers:**
 
+- [Kat Huang](https://katmh.com)
 - [Theo Bleier](https://tmb.sh/)
 - [Megan Cui](https://megancui.com/)
 - [Matthew Stanciu](https://matthewstanciu.me/)
 - [Sophie Huang](https://sohuang.github.io/)
-- [Andre Christoga Pramaditya](https://drepram.com)
 - [Jevin Sidhu](http://jevinsidhu.com/)
 
 **Websites Made by Professionals:**
 
 - [Melody Starling](https://melody.dev/)
 - [Eel Slap](http://eelslap.com)
+- [Lynn Fisher](https://lynnandtonic.com)
+- [Tatiana Mac](https://tatianamac.com)
+- [Mina Markham](http://mina.codes/)
+- [Robb Owen](https://robbowen.digital)
 - [Alice Lee](http://byalicelee.com)
 - [Yaron Schoen](http://yaronschoen.com)
-- [John Hanawalt](https://www.hanawa.lt)
-- [Mina Markham](http://mina.codes/)
-- [Andy Ngo](https://andyngo.me)
 
 ### Additional Resources
 
@@ -299,7 +300,7 @@ These are some additional resources that you can use to make your site even bett
 
 ## Part VI: Sharing with the Community
 
-Now that you have finished building a website, you should share your beautiful creation --- because your site is on the internet, you can share it with anyone who is also online! Remember, it's as easy as giving them your URL!
+Now that you have finished building a website, you should share your beautiful creation—because your site is on the internet, you can share it with anyone who is also online! Remember, it's as easy as giving them your URL!
 
 You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the world wide Hack Club community there is no better place to do that than on Slack.
 

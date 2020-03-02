@@ -37,7 +37,7 @@ Here, we are using the DHT22 Temperature and Humidity sensor with Arduino Uno R3
 
 [Click here](https://halckemy.s3.amazonaws.com/uploads/document/file/143452/DHT-22.ino) to download the sketch in `.ino` format
 
-```C++
+```cpp
 /* How to use the DHT-22 sensor with Arduino uno
    Temperature and humidity sensor
 */

@@ -83,7 +83,7 @@ export default () => (
   <main>
     <h1>Articles</h1>
     <Article title="Hello Hack Club!" author="@zachlatta" />
-    <Article title="Goodbye Hack Club :(" author="@lachalnjc" />
+    <Article title="Workshops are cool" author="@lachlanjc" />
   </main>
 )
 ```
@@ -173,7 +173,7 @@ import React, { useState } from 'react'
 Now we need to make our component. We’ll need a text input, a button to add the item, and the same list of items. Notice that we now have a `return` call after the `export` but before the JSX for the page—you’ll need this for the next step.
 
 ```js
-// const items = …
+const items = ['…']
 
 export default () => {
   return (
@@ -269,7 +269,7 @@ One of the really interesting features of Next.js is that you can encapsulate st
 export default () => (
   <main>
     <h1>Articles</h1>
-    {/*the rest of your code...*/}
+    {/* the rest of your code... */}
     <style jsx>{`
       h1 {
         color: magenta;
@@ -284,7 +284,7 @@ Open up your app: the homepage has a magenta heading, but critically, the headin
 ```js
 <main>
   <h1>Shopping List</h1>
-  {/*the rest of your code...*/}
+  {/* the rest of your code... */}
   <style jsx>{`
     ul {
       list-style: none;
