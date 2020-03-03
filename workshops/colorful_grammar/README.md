@@ -34,7 +34,7 @@ In order to use our entire screen as our canvas for writing, we need to create a
 In the `<body>` of your `index.html` file, under the line where `script.js` is imported, add this line:
 
 ```html
-<textarea id=“sentence” autofocus></textarea>
+<textarea id="sentence" autofocus></textarea>
 ```
 
 This creates a [textarea](https://www.w3schools.com/tags/tag_textarea.asp) element with the id “sentence”, and automatically focuses on it so that you don’t have to click on it to start typing. If you run your repl, you’ll see this textarea in the top left corner.
@@ -122,7 +122,7 @@ Navigate to your `script.js` file and add the following:
 
 ```js
 const wordpos = new WordPOS({
-  dictPath: “https://cdn.jsdelivr.net/npm/wordpos-web@1.0.2/dict”
+  dictPath: "https://cdn.jsdelivr.net/npm/wordpos-web@1.0.2/dict"
 })
 ```
 
@@ -151,7 +151,7 @@ $(document).ready(function() {
 Inside the `updateBackground` function, add the line:
 
 ```js
-let sentence = $(“#sentence”).val()
+let sentence = $("#sentence").val()
 ```
 
 This uses jQuery to get the value of our textarea, which if you recall, we gave the id “sentence”. You could replace `$(“#sentence”)` with `document.getElementById(“sentence”)`, but the jQuery syntax makes it a little bit easier.
@@ -168,7 +168,7 @@ As of now, this is what your `script.js` file should look like:
 
 ```js
 const wordpos = new WordPOS({
-  dictPath: “https://cdn.jsdelivr.net/npm/wordpos-web@1.0.2/dict”
+  dictPath: "https://cdn.jsdelivr.net/npm/wordpos-web@1.0.2/dict"
 })
 
 $(document).ready(function() {

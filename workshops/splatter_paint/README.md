@@ -38,7 +38,7 @@ Let’s go over what each attribute of this tag does:
 Remember when we referred to a canvas called `splatterPaint` that hasn’t been created yet? Let’s create that canvas. In the `<body>`, remove the line that imports `script.js` and replace it with
 
 ```html
-<canvas id=“splatterPaint”></canvas>
+<canvas id="splatterPaint"></canvas>
 ```
 
 Amazing—we’ve got ourselves a canvas!
