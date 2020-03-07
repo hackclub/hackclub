@@ -1,9 +1,7 @@
 ---
 name: 'Splatter Paint'
-description: 'Make some splatter paint with Paper.js '
+description: 'Make splatter paint in your browser with Paper.js'
 author: '@MatthewStanciu'
-group: 'start'
-order: 2
 ---
 
 **Warning: the following workshop involves flashing colors and is not recommended for those with a history of epilepsy.**
@@ -13,6 +11,7 @@ One of the most common myths about coding among people who are first learning to
 ![](img/final-demo.png)
 
 ## Getting started
+
 Start by creating a new HTML project on repl.it by going to [repl.it/languages/html](https://repl.it/languages/html).
 
 We’re going to be using a library called [Paper.js](http://paperjs.org), which makes it easy to create cool visuals on an [HTML canvas](https://www.w3schools.com/html/html5_canvas.asp).
@@ -26,14 +25,18 @@ To import a JavaScript library in HTML, we use the `<script>` tag and include a 
 Add a script tag that imports Paper.js somewhere in the `<head>`. Then, directly under it, add the following:
 
 ```html
-<script type=“text/paperscript” canvas=“splatterPaint” src=“/script.js”></script>
+<script
+  type="text/paperscript"
+  canvas="splatterPaint"
+  src="/script.js"
+></script>
 ```
 
 Let’s go over what each attribute of this tag does:
 
-1. `type=“text/paperscript”` tells Paper.js that the code in the script is Paper.js code
-2. `canvas=“splatterPaint”` refers to the ID of the HTML canvas that Paper.js will operate on (we haven’t created this canvas yet, but we will in a second)
-3. `src=“script.js”` means that the content of this script is located in your `script.js` file
+1. `type="text/paperscript"` tells Paper.js that the code in the script is Paper.js code
+2. `canvas="splatterPaint"` refers to the ID of the HTML canvas that Paper.js will operate on (we haven’t created this canvas yet, but we will in a second)
+3. `src="script.js"` means that the content of this script is located in your `script.js` file
 
 Remember when we referred to a canvas called `splatterPaint` that hasn’t been created yet? Let’s create that canvas. In the `<body>`, remove the line that imports `script.js` and replace it with
 
@@ -44,6 +47,7 @@ Remember when we referred to a canvas called `splatterPaint` that hasn’t been 
 Amazing—we’ve got ourselves a canvas!
 
 ## Drawing some circles
+
 Now that we’ve successfully imported Paper.js and created a canvas to work on, it’s time to write the JavaScript code that will create our splatter paint.
 
 Let’s write a function that draws a circle at the cursor’s position whenever the mouse is moved.
@@ -117,7 +121,8 @@ Almost there. The CSS you just wrote set the canvas width and height to 100% of 
 `<body>` is currently as big as its own parent element, `<html>`, which doesn’t quite fill the whole screen. With this in mind, add the following to your CSS file:
 
 ```css
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -129,7 +134,8 @@ This sets the width and height of the body to the width and height of your scree
 Just to recap: your entire CSS file should now look like this:
 
 ```css
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -145,6 +151,7 @@ If you run your repl again, you should notice that your red circles are now fill
 ![](img/red-circles.JPG)
 
 ## Making it splattery
+
 We’re getting somewhere, but this still doesn’t feel very splattery.
 
 ![](img/real-splatter-paint.JPG)
@@ -164,10 +171,11 @@ Not bad, but it feels sort of mashed together, doesn’t it? Maybe we can make e
 Congratulations—you can now splatter colorful circles all over your screen! If you haven’t already, open your repl in a new tab and treat yourself to a bigger canvas to go crazy on.
 
 ## Hacking
+
 Your journey is far from over. There are endless directions you can take this project in. Here are a few suggestions.
 
 1. If you want to increase the distance between each circle, you can add `tool.fixedDistance = SOME_NUMBER` to the top of your `script.js` file. This will fire the event after your cursor has moved every `SOME_NUMBER`px instead of every time your mouse moves. You can set it to fixed number, or you can make it random!
-2. If rainbows are too predictable for you, you can set the hue to a random number between 0 and 360 (remember, this covers every color on the HSB system)
+2. If you find the rainbows too predictable, you can set the hue to a random number between 0 and 360 (remember, this covers every color on the HSB system).
 3. Who says your canvas has to be white? Try setting the background color of your website to something custom—your favorite color, an image, or even a [gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)—and/or change it every time a new circle is created.
 4. Who says you have to draw circles? Try drawing a random mix of circles, ovals of random lengths and widths, and other shapes.
 5. Randomness is fun, but controlled randomness is even more fun. Take a look at the [Paper.js docs on mouse events](https://paperjs.org/reference/mouseevent/). How can you use the properties of the MouseEvent to play with the radius? (here’s what I came up with: try setting the radius to `event.delta.length` and see what happens)
