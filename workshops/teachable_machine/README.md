@@ -1,14 +1,13 @@
 ---
 name: 'Teachable Machine'
-description: 'Easily get started with machine learning—no coding required.'
+description: 'Easily get started with machine learning—no coding required'
 author: '@MatthewStanciu'
-group: 'start'
-order: 11
 ---
 
 [Teachable Machine](https://teachablemachine.withgoogle.com) is a website made by Google that allows you to quickly create machine learning models without coding. It’s a fantastic way to learn the fundamental concepts of machine learning and be able to apply them to cool projects without having to understand the complex math is normally required to work with machine learning. In this workshop, we’re building a super simple website that detects whether your camera sees you alone or you with another object (e.g. your phone).
 
 ## How do machines learn?
+
 Before we get going, some quick background info:
 
 A machine learning model is a mathematical model for the process of machine learning. Some examples of machine learning models include [artificial neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network), [decision trees](en.wikipedia.org/wiki/Decision_tree_learning), and [regression analysis](en.wikipedia.org/wiki/Regression_analysis). Don’t worry, you don’t have to know what any of these things actually are—Teachable Machine will magically create its own model behind the scenes.
@@ -16,6 +15,7 @@ A machine learning model is a mathematical model for the process of machine lear
 Machine learning models are trained with large amounts of data that attempt to “teach” the model how to correctly solve a specific problem (e.g. what a hot dog looks like). If you want to learn more about how machine learning models are trained, CGP Grey made [a fantastic video](https://youtu.be/R9OHn5ZF4Uo) about it.
 
 ## Training a model
+
 Get started by visiting [teachablemachine.withgoogle.com](https://teachablemachine.withgoogle.com) and clicking on “Get Started”. You should be greeted with the option to create an image, audio, or pose project. For now, pick “Image Project”.
 
 ![](img/homepage.JPG)
@@ -39,6 +39,7 @@ Here’s what mine looks like:
 ![](img/model.GIF)
 
 ## Exporting your model
+
 Teachable Machine will host your model on their servers, so you can use it in any project you want. To upload your model to Teachable Machine’s servers, click on “Export Model”, then click “Upload my model” once the window pops up. After a few seconds, you should see a link to your model available under “Your sharable link:”
 
 ![](img/uploadedmodel.PNG)
@@ -46,6 +47,7 @@ Teachable Machine will host your model on their servers, so you can use it in an
 (FYI: if you’re interested in seeing the raw data of your model, copy the link to the model and paste it in your URL bar with `model.json` at the end)
 
 ## Making a website
+
 Now it’s time to add your Teachable Machine model to your own project!
 
 1. Scroll down and copy the code Teachable Machine generated for you
@@ -58,7 +60,8 @@ Run the repl, then open your website in a new tab by clicking the icon at the to
 
 ![](img/finalmodel.PNG)
 
-# Hacking
+## Hacking
+
 Congratulations! You’ve just trained a machine learning model directly in your browser without writing any code. But your journey is far from over—there are endless ways you can take this project further. Did you notice the “Add a class” button below your two original classes?
 
 ![](img/add-a-class.PNG)
