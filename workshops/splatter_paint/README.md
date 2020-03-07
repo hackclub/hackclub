@@ -1,6 +1,6 @@
 ---
 name: 'Splatter Paint'
-description: 'Make splatter paint in your browser with Paper.js'
+description: 'Crazy colorful splatter paint in your browser with Paper.js'
 author: '@MatthewStanciu'
 ---
 
