@@ -57,7 +57,7 @@ Before we can start coding, we need to sign up on the Firebase website. Go to [F
 
 Now that we're at our dashboard, we'll create our app. Let's head over to our [Firebase dashboard](https://console.firebase.google.com/) and create a new project, which we will name `collaborative-sketch`.
 
-Let's click on "Add Firebase to your web app." We'll copy _part_ of the code snippet and paste it into our `script.js`. Keep in mind your URLs and variables will be different, and that's fine!
+Let's click on "Add a webapp." We'll copy _part_ of the code snippet and paste it into our `script.js`. Keep in mind your URLs and variables will be different, and that's fine!
 
 ```js
 var config = {
