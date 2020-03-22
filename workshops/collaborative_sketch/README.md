@@ -71,7 +71,7 @@ firebase.initializeApp(config)
 
 After copying the code snippet above, head back to Firebase and select the `Auth` tab on the left-hand side. Select `SET UP SIGN-IN METHOD` from the top menu bar, and click `ADD DOMAIN`. Enter `repl.co` and click `ADD`.
 
-Next, go to the `Database` tab on the left-hand side. Within the `Database` tab, we're going to select `Rules`. Here we'll set database permissions for reading and writing to `true`.
+Next, go to the `Database` tab on the left-hand side. Change the Database type by selecting Drop-Down after the word Database to say "Real-time Database".  Within the `Database` tab, we're going to select `Rules`. Here we'll set database permissions for reading and writing to `true`.
 
 ```json
 {
