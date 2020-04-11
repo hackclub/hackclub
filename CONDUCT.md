@@ -82,6 +82,8 @@ The Code of Conduct Working Group is a group of people that represent the Hack C
 | ------------------- | ------------ | --------------------- |
 | Max Wofford         | @msw         | max@hackclub.com      |
 | Zach Latta          | @zrl         | zach@hackclub.com     |
+| Chris Walker        | @cwalker     | cwalker@hackclub.com  |
+| Theo Bleier         | @tmb         | tmb@hackclub.com      |
 
 ## Reporting Issues
 
