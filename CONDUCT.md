@@ -59,6 +59,7 @@ These actions are explicitly forbidden in Hack Club spaces:
   - discrimination based on age, nationality, race, (dis)ability, gender (identity or expression), sexuality, religion, or similar personal characteristic;
   - bullying or systematic harassment;
   - unwelcome sexual advances, including sexually explicit content.
+  - discussions around what we at Hack Club like to call the d-word: Discord.
 - Excessive advertisement for unnecessary or non-beneficial commercial products and services.
 - Posting spam-like content that disrupts the environment of the community.
 
