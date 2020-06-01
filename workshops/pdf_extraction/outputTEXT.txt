@@ -1,0 +1,36 @@
+ 
+ 
+ 
+  
+ 
+  
+ 
+Just a PDF file to replicate
+ 
+ 
+ 
+ 
+ 
+ 
+This is a pdf to scan and extract images and text into separate files.
+ 
+There are two images in this example file.
+ 
+The python language logo:
+ 
+
+ 
+let it be.
+ 
+ 
+ 
+ 
+ 
+The other image is just a random image of shapes of different colors.
+ 
+ 
+____________________________________________________
+                                                    
+Authour: Yash Karthik                                         
+Application Used: Microsoft Word                                
+____________________________________________________ 
