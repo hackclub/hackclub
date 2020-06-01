@@ -59,3 +59,5 @@ ____________________________________________________ """.format(info['/Author'],
 Thats it...like seriously you created a python program that can read pdfs and extract images and text from it.🎉
 
 But don't stop here keep trying out new stuff and improve 🎉🎉🎉
+
+###### I have added the complete code to a file named "pdf_img_ext.py", I have also provided a pdf file to work on "EXAMPLE.pdf", also I have added what the output should look like if you use the same pdf file.
