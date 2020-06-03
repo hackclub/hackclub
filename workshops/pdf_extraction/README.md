@@ -46,7 +46,7 @@ def txt_extract():
     info_format = (""" 
 ____________________________________________________
                                                     
-Authour: {}                                         
+Author: {}
 Application Used: {}                                
 ____________________________________________________ """.format(info['/Author'], info["/Creator"]))
 
