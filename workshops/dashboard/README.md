@@ -12,9 +12,9 @@ What you'll be building:
 
 Links to a live demo and the final code below. This workshop should take around an hour.
 
-[**Live Demo**](https://dashboard--prophetorpheus.repl.co)
+[**Live Demo**](https://Dashboard-Workshop--thompsg20.repl.co)
 
-[**Final Code**](https://repl.it/@prophetorpheus/dashboard)
+[**Final Code**](https://repl.it/@thompsg20/Dashboard-Workshop)
 
 Have you heard of an API? Basically, an API, or an application program interface, is a set of protocols or routines that can help you build a software project. Often, APIs are available to use through companies that allow anyone access to their services. For example, one can make an app to search tweets with a [Twitter API](https://dev.twitter.com/docs), or one could even use the [Spotify API](https://developer.spotify.com/showcase/) to grab the latest music data.
 
@@ -110,7 +110,7 @@ Moving on, we come to the weather function. Let's start by creating a function a
 ```js
 function loadWeather() {
   var weather = $('#weather')
-  var url = 'api.openweathermap.org/data/2.5/weather?' // OpenWeather API url
+  var url = 'api.openweathermap.org/data/2.5/weather' // OpenWeather API url
   var apiKey = 'YOUR API KEY' // API key from OpenWeather
 }
 ```
@@ -124,12 +124,12 @@ function success(position) {
 
   // API request:
   $.getJSON(
-    `${url}units=imperial&lat=${latitude}&lon=${longitude}&appid=${apiKey}`
+    url + '?units=imperial&lat=' + latitude + '&lon=' + longitude + '&appid=' + apiKey,
     function(data) {
       weather.text(
         'Based on your current location, it is ' +
           main.temp +
-          '° F right now'
+          '°F right now'
       )
     }
   )
@@ -154,7 +154,7 @@ Here's what the `loadWeather()` function should look like:
 ```js
 function loadWeather() {
   var weather = $('#weather')
-  var url = 'api.openweathermap.org/data/2.5/weather?' // OpenWeather API url
+  var url = 'api.openweathermap.org/data/2.5/weather' // OpenWeather API url
   var apiKey = 'YOUR API KEY' // API key from OpenWeather
 
   function success(position) {
@@ -163,7 +163,7 @@ function loadWeather() {
 
     // API request:
     $.getJSON(
-    `${url}units=imperial&lat=${latitude}&lon=${longitude}&appid=${apiKey}`
+    url + '?units=imperial&lat=' + latitude + '&lon=' + longitude + '&appid=' + apiKey,
     function(data) {
       weather.text(
         'Based on your current location, it is ' +
@@ -193,7 +193,7 @@ At last, we come to our news function. Let's set the variables up similarly to h
 function loadNews() {
   var news = $('#news')
   var url =
-    'https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey=' // News API url
+    'https://newsapi.org/v2/top-headlines?sources=the-next-web&apiKey=' // News API url
   var apiKey = 'YOUR API KEY' // API key from News API
 }
 ```
@@ -228,7 +228,7 @@ This is what your `loadNews()` function should look like:
 function loadNews() {
   var news = $('#news')
   var url =
-    'https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey=' // News API url
+    'https://newsapi.org/v2/top-headlines?sources=the-next-web&apiKey=' // News API url
   var apiKey = 'YOUR API KEY' // API key from News API
 
   $.getJSON(url + apiKey, function(data) {
