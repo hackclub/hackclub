@@ -8,7 +8,7 @@ author: '@shamdasani'
 
 What you'll be building:
 
-![](img/app.gif)
+![Screenshot of dashboard with news & weather](img/app.gif)
 
 Links to a live demo and the final code below. This workshop should take around an hour.
 
@@ -30,13 +30,13 @@ We'll be using the [OpenWeather API](https://openweathermap.org/) for the weathe
 
 Before we begin, you'll have to sign up for a [OpenWeather API key](https://home.openweathermap.org/users/sign_up). Go ahead and visit the site and sign up. Once you're logged in, go to the API keys tab, under the successful sign-in notice. It should look like this when you get there:
 
-![](img/owm-api.PNG)
+![Screenshot of OpenWeather dashboard](img/owm-api.PNG)
 
 Take note of your API key (it'll be different for you).
 
 Next, go ahead and sign up for an [News API key](https://newsapi.org/). Once you sign up, you'll get to a page like this:
 
-![](img/news-api.jpg)
+![Screenshot of News API dashboard](img/news-api.jpg)
 
 Once again, keep your API key handy to use in our JavaScript functions.
 
@@ -67,7 +67,7 @@ We'll be keeping our markup really simple. Along with our basic tags, we'll be i
     <h2><span id="weather"></span></h2>
     <hr />
 
-    <h2>Latest news:</h2>
+    <h2>Latest news</h2>
     <div id="news"></div>
     <p>
       Powered by <a href="https://newsapi.org/">NewsAPI</a> and
@@ -124,12 +124,13 @@ function success(position) {
 
   // API request:
   $.getJSON(
-    url + '?units=imperial&lat=' + latitude + '&lon=' + longitude + '&appid=' + apiKey,
-    function(data) {
+    url +
+      '?units=imperial&lat=' + latitude +
+      '&lon=' + longitude +
+      '&appid=' + apiKey,
+    function (data) {
       weather.text(
-        'Based on your current location, it is ' +
-          main.temp +
-          '°F right now'
+        'Based on your current location, it is ' + main.temp + '°F right now'
       )
     }
   )
@@ -144,7 +145,7 @@ function error() {
 navigator.geolocation.getCurrentPosition(success, error)
 
 // the text that will be displayed while the function is making the request
-weather.text('fetching weather...')
+weather.text('fetching weather…')
 ```
 
 _Note: If you would prefer to use Celsius, change `units=imperial` in the above code to `units=metric`\, and the `F` to a `C` on the line below._
@@ -163,15 +164,16 @@ function loadWeather() {
 
     // API request:
     $.getJSON(
-    url + '?units=imperial&lat=' + latitude + '&lon=' + longitude + '&appid=' + apiKey,
-    function(data) {
-      weather.text(
-        'Based on your current location, it is ' +
-          main.temp +
-          '° F right now'
-      )
-    }
-  )
+      url +
+        '?units=imperial&lat=' + latitude +
+        '&lon=' + longitude +
+        '&appid=' + apiKey,
+      function (data) {
+        weather.text(
+          'Based on your current location, it is ' + main.temp + '° F right now'
+        )
+      }
+    )
   }
 
   // This message is displayed if their is a geolocation error:
@@ -183,7 +185,7 @@ function loadWeather() {
   navigator.geolocation.getCurrentPosition(success, error)
 
   // the text that will be displayed while the function is making the request
-  weather.text('fetching weather...')
+  weather.text('fetching weather…')
 }
 ```
 
@@ -192,8 +194,7 @@ At last, we come to our news function. Let's set the variables up similarly to h
 ```js
 function loadNews() {
   var news = $('#news')
-  var url =
-    'https://newsapi.org/v2/top-headlines?sources=the-next-web&apiKey=' // News API url
+  var url = 'https://newsapi.org/v2/top-headlines?sources=the-next-web&apiKey=' // News API url
   var apiKey = 'YOUR API KEY' // API key from News API
 }
 ```
@@ -206,10 +207,10 @@ The API request will be very similar to the `loadWeather()` request, but this ti
 That's why we'll need to use a `map()` method to call every element in the data set. In this case, we'll need the URL of the articles and the titles.
 
 ```js
-$.getJSON(url + apiKey, function(data) {
+$.getJSON(url + apiKey, function (data) {
   // map() method to call article urls and titles
 
-  var titles = data.articles.map(function(articles) {
+  var titles = data.articles.map(function (articles) {
     return "<a href='" + articles.url + "'>" + articles.title + '</a>'
   })
 
@@ -219,7 +220,7 @@ $.getJSON(url + apiKey, function(data) {
 })
 
 // the text that will be displayed while the function is making the request
-news.text('fetching news...')
+news.text('fetching news…')
 ```
 
 This is what your `loadNews()` function should look like:
@@ -227,14 +228,13 @@ This is what your `loadNews()` function should look like:
 ```js
 function loadNews() {
   var news = $('#news')
-  var url =
-    'https://newsapi.org/v2/top-headlines?sources=the-next-web&apiKey=' // News API url
+  var url = 'https://newsapi.org/v2/top-headlines?sources=the-next-web&apiKey=' // News API url
   var apiKey = 'YOUR API KEY' // API key from News API
 
-  $.getJSON(url + apiKey, function(data) {
+  $.getJSON(url + apiKey, function (data) {
     // map() method to call article urls and titles
 
-    var titles = data.articles.map(function(articles) {
+    var titles = data.articles.map(function (articles) {
       return "<a href='" + articles.url + "'>" + articles.title + '</a>'
     })
 
@@ -244,7 +244,7 @@ function loadNews() {
   })
 
   // the text that will be displayed while the function is making the request
-  news.text('fetching news...')
+  news.text('fetching news…')
 }
 ```
 
