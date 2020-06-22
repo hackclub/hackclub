@@ -38,7 +38,7 @@ I will be explaining about some of the parts in later steps
 ### Check out the Build Video:
 I made a video summarizing the build and working mechanism, so that you can get an image of the whole process. Pardon my newbie video making skills. Click the image below to watch it.
 
-[![The Build Video - YouTube](https://i.imgur.com/psB2ALT.png)](http://www.youtube.com/watch?v=kM0dcchr15E "Line Following Robot Build")
+[![The Build Video - YouTube](images/youtube_thumbnail.png)](http://www.youtube.com/watch?v=kM0dcchr15E "Line Following Robot Build")
 
 ### Choosing the battery:
 Choosing the right battery is fairly important for your robot to work properly. Lithium batteries would be the best option to get a decent amount of run time out of a single charge. In terms of voltage, if you decide to power your robot directly from the battery, you should choose one with a voltage of *at least  7V*, in order to make sure the Arduino and everything else is powered properly. 
@@ -53,13 +53,13 @@ I added a a voltage booster module to increase or *boost* the battery voltage up
 
 The chassis is something that you can either make yourself, or buy for pretty cheap. I went with the make option because I had some motor with gearbox and wheels lying around. And of course, making is more fun.
 
-![enter image description here](https://i.imgur.com/ggzutEH.jpg)
+![](images/3d-models.jpg)
 
 I made a 3D model in Fusion 360 to help me make sure everything would fit in the way I want. It also helped me to cut the woods to the exact shape that I would need for everything to fit nicely. Note that I did update the design as I built the robot. I didn't plan the whole design all at once before starting the build. Feel free to take a look or download the 3D design file [here.](https://a360.co/3dcqOXr)
 
 The robot consists of two round wooden plates held together with bolts and nuts. The bottom and top plates are 180mm diameter round shapes cut out of 4mm plywoods.
 
-I copied the bottom plate drawing from Fusion 360 onto a sheet of plywood and cut out the round shape. Your design may vary depending on the motor and wheels that you use.![The Bottom Board Design](https://i.imgur.com/bjFeshx.png)
+I copied the bottom plate drawing from Fusion 360 onto a sheet of plywood and cut out the round shape. Your design may vary depending on the motor and wheels that you use.![The Bottom Board Design](images/fusion.png)
 
 The cut doesn't have to be exactly round since we will next use a bolt and nut to connect it to a drill, in order to sand it down to a nice and round shape. 
 
@@ -72,29 +72,29 @@ These plates will be held together later on using bolts and nuts. So I taped the
 Next we will start populating the bottom plate. The *bottom plate holds the gearbox, ball caster, IR sensor array, battery and the optional XL6009 voltage booster module*.
 The assembly is hopefully pretty easy to understand from the video. But I will just go over it adding some notes.
 First, start by mounting the gearbox and wheel set. I just used some M3 bolts and nuts to mount everything. You can then start mounting the infrared sensor array, the ball caster and the XL6009 voltage booster board (optional). 
-![Mounting the ball caster and QTR sensor](https://i.imgur.com/lDzXlM9.png)
+![Mounting the ball caster and QTR sensor](images/bottom.png)
 
 *Note that the array of sensors should be mounted low so that they are really close to the ground.* 
 
 So lastly we'll mount the battery right above where the ball caster is. This shifts the center of gravity of the robot backwards and therefore, the robot always stays on it's wheels and ball caster. Mounting the battery will depend on the type of battery you used. But generally it's never a good idea to hot glue batteries, since heat can damage them or even cause fire hazard. So I prefer using double sided tapes to mount the battery. You may want to use some velcros if you think you might need to take the battery out later to charge it.
 
 ### Populating the top plate:
-The *top plate holds the Arduino on a breaboard, motor driver, the on/off switch and the optional M5StickC Module.*
-Mark where the holes need to be and drill all the holes, in order to connect the parts with nuts and bolts. Using a powered hand drill makes the whole process really fast and clean.  The breadboard can simply be mount using the double sided tapes that it comes with.
+The *top plate holds the Arduino on a breadboard, motor driver, the on/off switch and the optional M5StickC Module.*
+Mark where the holes need to be and drill all the holes, in order to connect the parts with nuts and bolts. Using a powered hand drill makes the whole process really fast and clean. The breadboard can be mounted using the double sided tape that it comes with.
 
-I had to cut a hole on the plywood for the sliding switch. You can use any switch that you like or have lying around. Just make sure that it's rated to handle at least 2A of current or more. Once you are done with these, we can move on putting the two plates together.
+I had to cut a hole on the plywood for the sliding switch. You can use any switch that you like or have lying around. Just make sure that it's rated to handle at least 2A of current or more. Once you are done with these, we can start putting the two plates together.
 
 ### Connecting the two plates together:
 I simply used four M5 bolts and three nuts for each of them to hold the two plates together. It's a really simple process but makes a really strong structure. You could also use some standoffs instead. I just used what I had lying around.
 
 ### Wiring everything together:
 This part should be done with care. Doing something wrong will result in the release of magic smoke when you power the robot. I made a wiring diagram to make things easier.
-![Circuit Diagram](https://i.imgur.com/arH6NOh.png)
+![Circuit Diagram](fritzing.png)
 
 You can just use jumper wires to connect the digital circuitries. For wiring the battery, boost converter module and the motors, you will have to solder some wires yourself. You can connect your battery directly to the motor driver through a switch if you don't want to use the voltager booster board.
 
 ## Part 2: How it works
-![enter image description here](https://media.giphy.com/media/W30lCe5ryOMOqJrnS2/giphy.gif)
+![](https://media.giphy.com/media/W30lCe5ryOMOqJrnS2/giphy.gif)
 The way this robot works is actually pretty simple. It is based on a PID controller, which is a mathematical equation in the code that takes an input value and spits out an output value. It then has a feedback which basically tells it how much the input value is off from what we set it to be, it's called the *error*. The PID controller will do whatever it can with the output to make sure the error stays at, or as close as possible, to 0.
 
 If we look at our robot, the input is coming from the 8 line sensors underneath the robot. The sensors gives us a value between 0 and 7000, 0 meaning the line is all way to the left of the robot and 7000 meaning it's on the right of the robot. The PID controllers work is to keep the value at 3500 while the robot is moving, which would mean the line is right in the middle of the robot. If it's not, the PID controllers output changes, which then changes the speed of the motors, turning the robot and bringing the line back to the middle of the robot.
