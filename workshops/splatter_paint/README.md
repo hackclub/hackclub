@@ -36,7 +36,7 @@ Let’s go over what each attribute of this tag does:
 
 1. `type="text/paperscript"` tells Paper.js that the code in the script is Paper.js code
 2. `canvas="splatterPaint"` refers to the ID of the HTML canvas that Paper.js will operate on (we haven’t created this canvas yet, but we will in a second)
-3. `src="script.js"` means that the content of this script is located in your `script.js` file
+3. `src="/script.js"` means that the content of this script is located in your `script.js` file
 
 Remember when we referred to a canvas called `splatterPaint` that hasn’t been created yet? Let’s create that canvas. In the `<body>`, remove the line that imports `script.js` and replace it with
 
