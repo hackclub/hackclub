@@ -5,7 +5,7 @@ author: '@MatthewStanciu'
 group: starter
 ---
 
-*This workshop requires advance preparation by a club leader. If you are a club leader, [click here](https://workshops.hackclub.com/preview/master/rick_roll_leader) to view the preparation steps.*
+*This workshop requires advance preparation by a club leader. If you are a club leader, [click here](https://workshops.hackclub.com/preview/main/rick_roll_leader) to view the preparation steps.*
 
 [![](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
