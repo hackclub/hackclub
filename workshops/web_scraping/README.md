@@ -87,7 +87,7 @@ npm i -D @types/axios @types/cheerio
 ## Setup the folder structure
 Create a new folder `src` in your root directory, and a file called `index.ts` in the `src` folder. Your folder structure should now look like this:
 
-```text
+```
 scraper
 │   package.json
 │   tsconfig.json    
