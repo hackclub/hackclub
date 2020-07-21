@@ -100,7 +100,7 @@ scraper
 Lets make sure everything was setup properly.
 
 Open `index.ts` and add the following.
-```typescript\
+```typescript
 // index.ts
 
 console.log('Project setup correctly!')
