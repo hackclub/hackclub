@@ -1,6 +1,6 @@
 ---
-name: 'Building a Web Scraper in TypeScript with Axios and Cheerio'
-description: 'Creating a simple web scraping application with Typescript, Axios, and Cheerio'
+name: 'Web Scraper'
+description: 'Build a simple web scraping application with Typescript, Axios, and Cheerio'
 author: '@CaelinSutch'
 ---
 
