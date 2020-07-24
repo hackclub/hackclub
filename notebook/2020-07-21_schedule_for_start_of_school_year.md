@@ -8,6 +8,40 @@ _in attendance: Chris, Christina, Dina (remote), Lachlan, Matthew, Max, Melody, 
 
 ## Projects timeline
 
+### Zach convo with opeople on 07/23
+
+lachlan convo - what's on their plate?
+
+- Bank 2.0 starts next week
+  - Redesigning cards flow (unknowns, large)
+    - Receipts (email & SMS), human flow for Michael
+    - Building new inbox for transactions (I should be in the design discussions for this)
+  - Unify transactions list (should add audit tool here too)
+  - New sidebar (medium / large)
+  - Categories
+  - New Bank homepage
+  - The whole rebrand question. New logos? Icons? Update everywhere. Figure out redirects on website, proxy redirects, etc.
+  - Update Sean's manual
+- Main website stuff
+  - Fix up Hack Night stuff. Maybe someone in art channel can make cool illustration
+
+Max convo - what's on his plate?
+
+- Bank 2.0
+  - Stripe Issuing - Unblock Lachlan
+    - Get cards working
+    - Receipt flow backend
+- Slack as a Tool
+- Sunsetting Summer of Making
+
+Zach - what's on my plate?
+
+- Get team housing in Bloomington
+  - Help Melody figure out their situation
+  - Theo / dina time off
+
+### Max's transcribed schedule:
+
 - july 20
   - kickstart mailteam
     - Chris, Zach
