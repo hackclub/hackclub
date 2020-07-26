@@ -19,9 +19,8 @@ If you join in or contribute to the Hack Club ecosystem in any way, you are enco
 Explicit enforcement of the Code of Conduct applies to all official online Hack Club groups, in-person meetings, and events including:
 
 - The [GitHub projects](https://github.com/hackclub/)
-- The [Facebook Group](https://www.facebook.com/groups/1501083703514499/)
-- The [Slack](https://slack.hackclub.com)
-- The `#hack-club` IRC channel on Freenode
+- The [Slack](https://hackclub.com/slack/)
+- The [Events](https://events.hackclub.com/), including [AMAs](https://hackclub.com/amas/), [Hack Night](https://hackclub.com/night/), & Zoom calls on Slack
 - Club Meetings
 
 Other Hack Club groups (such as hackathons, conferences, meetups, and other unofficial forums) are encouraged to adopt this Code of Conduct. Those groups must provide their own moderators and/or working group (see below).
@@ -61,6 +60,10 @@ These actions are explicitly forbidden in Hack Club spaces:
   - unwelcome sexual advances, including sexually explicit content.
 - Excessive advertisement for unnecessary or non-beneficial commercial products and services.
 - Posting spam-like content that disrupts the environment of the community.
+
+## Political Behavior
+
+To create an environment where members of the Hack Club community can coexist regardless of political background/views, the political activity must remain within the designated channels. In addition to this, Hack Club will never actively work to silence any single political group's voice unless deemed necessary by an individual's actions against the Code of Conduct.
 
 ## Moderation & Enforcement
 
