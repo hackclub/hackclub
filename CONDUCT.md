@@ -20,7 +20,7 @@ Explicit enforcement of the Code of Conduct applies to all official online Hack 
 
 - The [Slack](https://hackclub.com/slack/)
 - The [Events](https://events.hackclub.com/), including [AMAs](https://hackclub.com/amas/), [Hack Night](https://hackclub.com/night/), & Zoom calls on Slack
-- The [GitHub projects](https://github.com/hackclub/)
+- The [GitHub projects](https://github.com/hackclub)
 - Club Meetings
 
 Other Hack Club groups (such as hackathons, conferences, meetups, and other unofficial forums) are encouraged to adopt this Code of Conduct. Those groups must provide their own moderators and/or working group (see below).
@@ -71,24 +71,17 @@ Please understand that speech and actions have consequences, and unacceptable be
 
 This procedure only serves as a general guideline for moderation & enforcement of our community conduct. Under all circumstances, the Working Group or Hack Club's staff members may take any action we deem appropriate, including immediate removal from the community. Being banned from the Hack Club community may also prevent you from participating in our community events, including but not restricted to: local club meetings, hackathons, or challenges.
 
-Please understand that we will not restrict your ability to contact the [Code of Conduct working group](#working-group) under any circumstance. If you have any questions or concerns about our decision, please reach out to us directly. If your Slack account is under suspension, you should email us directly at conduct@hackclub.com.
+Please understand that we will not restrict your ability to contact the [Code of Conduct working group](#working-group) under any circumstance. If you have any questions or concerns about our decision, please reach out to us directly. If your Slack account is under suspension, email us directly at <conduct@hackclub.com>.
 
 ## Working Group
 
-The Code of Conduct Working Group is a group of people that represent the Hack Club community. They are responsible for handling conduct-related issues. Their purpose is to de-escalate conflicts and try to resolve issues to the satisfaction of all parties. They are:
-
-| Name                | Slack Handle | Email                 |
-| ------------------- | ------------ | --------------------- |
-| Max Wofford         | @msw         | max@hackclub.com      |
-| Zach Latta          | @zrl         | zach@hackclub.com     |
-| Chris Walker        | @cwalker     | cwalker@hackclub.com  |
-| Theo Bleier         | @tmb         | tmb@hackclub.com      |
+The Working Group is responsible for handling conduct-related issues. Their mission is to de-escalate conflicts and try to resolve issues to the satisfaction of all parties. For all [projects related to and/or maintained by Hack Club HQ](#where-does-the-code-of-conduct-apply), the Working Group is made up of the [Hack Club staff team](https://hackclub.com/team/). The specific team member(s) handling each violation depend on the location and nature of the issue.
 
 ## Reporting Issues
 
 If you encounter a conduct-related issue, you should report it to the Working Group using the process described below. **Do not** post about the issue publicly or try to rally sentiment against a particular individual or group.
 
-- Mail conduct@hackclub.com
+- Mail <conduct@hackclub.com>
   - Your message will reach the Working Group.
   - Reports are confidential within the Working Group.
   - Should you choose to remain anonymous then the Working Group cannot notify you of the outcome of your report.
@@ -102,22 +95,21 @@ If you encounter a conduct-related issue, you should report it to the Working Gr
     - Nothing.
     - A request for a private or public apology.
     - A private or public warning.
-    - An imposed vacation (for instance, asking someone to abstain for a week
-      from the Facebook Group or Slack).
+    - An imposed vacation (for instance, asking someone to abstain for a week from the Slack or a GitHub project).
     - A permanent or temporary ban from some or all Hack Club spaces.
 - The Working Group will reach out to the original reporter to let them know the decision.
 - Appeals to the decision may be made to the Working Group, or to any of its members directly.
 
 **Note that the goal of the Code of Conduct and the Working Group is to resolve conflicts in the most harmonious way possible.** We hope that in most cases issues may be resolved through polite discussion and mutual agreement. Bannings and other forceful measures are to be employed only as a last resort.
 
-Changes to the Code of Conduct (including to the members of the Working Group) should be proposed by creating an issue [here](https://github.com/hackclub/hackclub/issues/new) or making a pull request to this document.
+Changes to the Code of Conduct should be proposed by [creating an issue](https://github.com/hackclub/hackclub/issues/new) or making a pull request to this document.
 
 ## Summary
 
 - Treat everyone with respect and kindness.
 - Be thoughtful in how you communicate.
 - Don't be destructive or inflammatory.
-- If you encounter an issue, please mail conduct@hackclub.com.
+- If you encounter an issue, please mail <conduct@hackclub.com>.
 
 ## Acknowledgments
 
