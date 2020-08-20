@@ -276,6 +276,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 - [Theo Bleier](https://tmb.sh/)
 - [Megan Cui](https://megancui.com/)
 - [Matthew Stanciu](https://matthewstanciu.me/)
+- [Winston Iskandar](https://winstoniskandar.com)
 - [Sophie Huang](https://sohuang.github.io/)
 - [Jevin Sidhu](http://jevinsidhu.com/)
 
