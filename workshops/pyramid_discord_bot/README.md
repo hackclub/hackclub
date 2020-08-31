@@ -18,7 +18,7 @@ I'll be assuming you're already familiar with some of the basics of Discord and 
 
 The first thing you'll want to do is create a new directory for your project. Here's some commands you'll want to run:
 
-```sh
+```bash
 # Clone a boilerplate for Node.JS
 git clone https://github.com/safinsingh/node-ts.git pyramid
 
@@ -52,7 +52,7 @@ Let's take a closer look at the directory structure of this boilerplate:
 
 Perfect! Now that we know all the files and directories are for, let's install some of the dependencies we need:
 
-```sh
+```bash
 {pnpm/[yarn]/npm} install discord.js dotenv
 ```
 
@@ -76,7 +76,7 @@ TOKEN=YOUR-SUPER-SECURE-TOKEN-HERE
 
 However, in the boilerplate, the `.env` file isn't ignored by default. We can fix this by editing the `.gitignore` file and adding `.env` like so:
 
-```sh
+```bash
 echo ".env" >> .gitignore
 ```
 
