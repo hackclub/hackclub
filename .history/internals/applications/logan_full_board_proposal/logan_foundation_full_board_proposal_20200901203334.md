@@ -2,7 +2,7 @@
 
 ## General Information
 
-### Have you been invited by one or more of our directors to submit this
+### Have you been invited by one or more of our directors to submit this?
 
 _Full question: Have you been invited by one or more of our directors to submit
 this proposal? If so, who?_
@@ -20,7 +20,7 @@ club leaders with a club playbook that outlines running a club and with a
 supportive community of leaders around the globe.
 
 Our club playbook consists of a series of workshops that focus on building and
-publishing cool projects in under 60 minutes (ex. <https://git.io/vCsTC>) and of
+publishing cool projects in under 60 minutes (ex. https://git.io/vCsTC) and of
 suggested guidelines for how to run the day-to-day components of a club.
 
 Our goal is to provide every student, regardless of ethnicity, gender, or
@@ -56,7 +56,7 @@ _N/A_
 
 International.
 
-### If you answered "Other" in the question above, please state the area served
+### If you answered "Other" in the question above, please state the area served.
 
 _N/A_
 
@@ -88,10 +88,10 @@ friends are volunteers), or hire teachers (they teach using our pre-written
 workshops). This model makes the cost of starting a new club virtually $0 and we
 think it'll let us scale and reach new audiences where others haven't.
 
-0. <https://docs.google.com/document/d/1gySkItxiJn_vwb8HIIKNXqen184mRtzDX12cux0ZgZk/pub>
-1. <http://www.bls.gov/opub/mlr/2012/01/art5full.pdf>
-2. <https://news.microsoft.com/download/archived/presskits/citizenship/docs/stemperceptionsreport.pdf>
-3. <https://services.google.com/fh/files/misc/searching-for-computer-science_report.pdf>
+[0] https://docs.google.com/document/d/1gySkItxiJn_vwb8HIIKNXqen184mRtzDX12cux0ZgZk/pub
+[1] http://www.bls.gov/opub/mlr/2012/01/art5full.pdf
+[2] https://news.microsoft.com/download/archived/presskits/citizenship/docs/stemperceptionsreport.pdf
+[3] https://services.google.com/fh/files/misc/searching-for-computer-science_report.pdf
 
 ### Population to be served
 
@@ -169,12 +169,12 @@ Challenges:
     playbook without weekly metrics to back up our work has proven difficult and
     made our iteration cycle for workshops longer than we'd like.
 
-0. <http://b.gatech.edu/1NDopUl>
-1. <https://bit.ly/1Wln4Dy>
-2. <https://bit.ly/1Wln6vj>
-3. <http://on.today.com/1LZXO0O>
-4. <http://usat.ly/1HekFUp>
-5. <https://bit.ly/1MkUtsD>
+[0] http://b.gatech.edu/1NDopUl
+[1] https://bit.ly/1Wln4Dy
+[2] https://bit.ly/1Wln6vj
+[3] http://on.today.com/1LZXO0O
+[4] http://usat.ly/1HekFUp
+[5] https://bit.ly/1MkUtsD
 
 ### Theoretical Rationale
 
@@ -236,15 +236,15 @@ made this past year in the group.
 _Studies/metrics that support your work._
 
 Computing jobs are growing at twice the national rate of other types of jobs.
-<https://docs.google.com/document/d/1gySkItxiJn_vwb8HIIKNXqen184mRtzDX12cux0ZgZk/pub>
+https://docs.google.com/document/d/1gySkItxiJn_vwb8HIIKNXqen184mRtzDX12cux0ZgZk/pub
 
 By 2020 there will be 1 mill more computing jobs than graduates to fill them.
-<http://www.bls.gov/opub/mlr/2012/01/art5full.pdf>
+http://www.bls.gov/opub/mlr/2012/01/art5full.pdf
 
 3 in 5 STEM college students decide to study STEM in high school. 4 in 5 decide
 to study STEM before college, making high school the most important time to
 capture interest.
-<https://news.microsoft.com/download/archived/presskits/citizenship/docs/stemperceptionsreport.pdf>
+https://news.microsoft.com/download/archived/presskits/citizenship/docs/stemperceptionsreport.pdf
 
 Google did a survey in August 2015 to measure interest in computer science by
 district. Three in four of the schools surveyed didn't have any computer
@@ -252,7 +252,7 @@ science courses and over half of the principals and superintendents surveyed
 said that their school boards didn't think computer science was important. They
 also found that black, Hispanic, and lower-income communities had the least
 access to computer science, but wanted it the most.
-<https://services.google.com/fh/files/misc/searching-for-computer-science_report.pdf>
+https://services.google.com/fh/files/misc/searching-for-computer-science_report.pdf
 
 ### Outcomes and Goals
 
