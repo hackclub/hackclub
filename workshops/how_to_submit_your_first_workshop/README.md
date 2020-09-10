@@ -11,7 +11,7 @@ This guide includes step-by-step instructions, so that you have a comfortable ex
 
 ## A Complete Roadmap
 
-### Step 1: So, I have my workshop ready. What should I do now to submit it
+### Step 1: So, I have my workshop ready. What should I do now to submit it?
 
 Apart from all of the traditional ways of doing things, we're always seeking simpler and more efficient methods to do the same work with increased productivity. Technology aiding another technology has been one of the important features of the modern era. On similar lines, we'll be using following tools to ease the process:
 
