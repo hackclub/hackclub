@@ -204,4 +204,4 @@ We're only getting started!!! The Circuit Playground Express is feature rich boa
 2. Add sound effects, look into [this article](https://learn.adafruit.com/circuitpython-made-easy-on-circuit-playground-express/play-tone) ;)
 3. Our little project has a flaw, what if the rare event of all 5 Neopixels each have the same randomized colour. How can we solve that?
 
-I'm leaving the project into your hands now, have fun with it!
+I'm leaving the project into your hands now, have fun with it! (p.s I think adding multiplayer support to this would be super fun!)
