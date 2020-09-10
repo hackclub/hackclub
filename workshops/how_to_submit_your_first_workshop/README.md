@@ -53,9 +53,9 @@ Once you're done with editing and updating your files, now you're all set to cre
 ### Step 5: Verification & Final Submit
 After clicking the **Create Pull Request** button, you'll be automatically directed to the GitHub repo page where you can first verify that all of the details are correct, or make edits if needed. Finally, click **Create Pull Request** ... and Voila! You're done!
 
-![Create PR GitHub Image](img/createPRfinalgithub.png)<br>
+![Create PR GitHub Image](img/9.png)<br>
 
 ### Mission Completed!
 You have successfully submitted your workshop with your own unique PR number! Now, you need to wait for review and final approval by theHack Club team. Meanwhile, do checkout all of the other interesting workshops from contributors on [Hack Club Library](https://github.com/hackclub/hackclub).
 
-![Done Image](img/done.png)
+![10 Image](img/10.png)
