@@ -5,8 +5,11 @@ author: '@sampoder'
 ---
 
 # Building a Reaction Time Calculator with a Circuit Playground
-
 **This workshop requires a Circuit Playground Microcontroller, or the use of a simulator**
+
+![](https://cloud-9jybt8qho.vercel.app/ezgif.com-gif-maker.gif)
+
+_Meet the Circuit Playground Express Board_
 
 This workshop will guide you through creating your first project with CircuitPython. We're make a program that uses the built in Neopixels and buttons to find the user's reaction speed.
 
@@ -52,6 +55,8 @@ cp.pixels[0] = (25, 0, 0)
 ```
 
 What colour does your first Neopixel turn? That's right: RED! These colours are being inputted as RGB codes, this means that the value is `(RED_VALUE, GREEN_VALUE, BLUE_VALUE)`. Using this information, try turning the Neopixel blue.
+
+![Image of a singular Neopixel lit up in red](https://cloud-58zrl3sh6.vercel.app/screenshot_2020-09-10_at_11.58.40_pm.png)
 
 You may also be wondering why our first Neopixel is set using `cp.pixels[0]` and not `cp.pixels[1]`. That's because computers count from 0 and not 1.
 
@@ -166,6 +171,8 @@ while True:
 
 Now you should be seeing more colours and more Neopixels lighting up!
 
+![Image of 5 Neopixels lit up in random colours](https://cloud-av6xy9ome.vercel.app/screenshot_2020-09-11_at_12.03.33_am.png)
+
 ## Calculating reaction speed
 
 Now for the moment you've all been waiting for.... calculating the reaction speed!
@@ -194,14 +201,18 @@ Now we need to display the data, we can do this by printing just like in normal 
 print("Your reaction speed was " + str(timePassed) + " seconds.")
 ```
 
+![Terminal log saying 'Your reaction speed was 0.06500000000000004 seconds.'](https://cloud-lbewgjm9s.vercel.app/screenshot_2020-09-11_at_12.16.46_am.png)
+
+Here's what I got how about you? Maybe share you could share this on your #scrapbook!
+
 We've done it! Epic work!
 
 ## Challenges
 
 We're only getting started!!! The Circuit Playground Express is feature rich board and there are endless possibilities. Here are some challenges for you:
 
-1. Allow the device to be turned on and off, look into using the switch on your board. Plugging things in and out isn't a fun way to power off.
-2. Add sound effects, look into [this article](https://learn.adafruit.com/circuitpython-made-easy-on-circuit-playground-express/play-tone) ;)
-3. Our little project has a flaw, what if the rare event of all 5 Neopixels each have the same randomized colour. How can we solve that?
+1. Allow the device to be turned on and off, look into using the switch on your board. Plugging things in and out isn't a fun way to power off. ([Sample code](https://github.com/hackclub/hackclub/blob/main/workshops/cpx_reaction_time/src/switch.py))
+2. Add sound effects, look into [this article](https://learn.adafruit.com/circuitpython-made-easy-on-circuit-playground-express/play-tone)! ([Sample code](https://github.com/hackclub/hackclub/blob/main/workshops/cpx_reaction_time/src/sound.py))
+3. Our little project has a flaw, what if the rare event of all 5 Neopixels each have the same randomized colour. How can we solve that? ([Sample code](https://github.com/hackclub/hackclub/blob/main/workshops/cpx_reaction_time/src/edge-case.py))
 
 I'm leaving the project into your hands now, have fun with it! (p.s I think adding multiplayer support to this would be super fun!)
