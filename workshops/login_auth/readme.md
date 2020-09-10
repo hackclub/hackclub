@@ -8,14 +8,15 @@ author: '@tanishq-soni'
 
 In this workshop you'll build a web login page using firebase. In which only those peoples who are added to database can login.
 
-this is a workshop to help you make something like this 👇
+This is a workshop to help you make something like this 👇
 
 <img src="https://cloud-mketa8pxq.vercel.app/1.png">
 
 ### Getting Started :rocket:
 #### setting up firebse project
-At first you'll need to sign-in to firebase consol. if you have google account then you can directly sign-in to firebase, otherwise create one.
-after sign-in you will see something like this.
+At first you'll need to sign-in to firebase console. if you have google account then you can directly sign-in to firebase, otherwise create one.
+
+After sign-in you will see something like this.
 
 <img src="https://cloud-mketa8pxq.vercel.app/1.png">
 
