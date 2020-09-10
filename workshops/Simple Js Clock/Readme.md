@@ -291,7 +291,9 @@ const hourHand = document.querySelector(".hour-hand");
 We declare the variables 'secondHand', 'minsHand', 'hourHand' using 'const' and set its value to the first element that matches a specified CSS selector(s) in the document. In our case, that CSS selectors are `".second-hand"` , `".min-hand"` , `".hour-hand"` respectively.  
 
 **What is querySelector()?**
-The querySelector() method returns the first element that matches a specified CSS selector(s) in the document.  
+The querySelector() method returns the first element that matches a specified CSS selector(s) in the document.
+
+Learn more about query selector [here](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
 
 Now its time to implement a function which will help us in the proper functioning of the clock.  
 Create a function 'setDate' in your file. (You can name it anything you want)  
@@ -307,6 +309,9 @@ function setDate() {
 }
 ```
 This object also contains specific methods through which you can get the current Hour / Minute / Second etc.  
+
+Learn more on [Javascript Dates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
+
 let's start by getting the current seconds, Add this code to the setDate function:  
 ```
 const seconds = currentTime.getSeconds();
@@ -393,6 +398,8 @@ function setDate() {
 requestAnimationFrame(setDate);
 ```
 
+Learn more on [requestAnimationFrame()](https://css-tricks.com/using-requestanimationframe/).
+
 Let us now try to run our code. And Voila! Our clock is ready!  
 But wait, if we notice something closely, when we refresh our website, something weird happens for a milisecond.  
 The quick fix for this is to call our main function before we call `requestAnimationFrame(setDate)`.  
@@ -430,8 +437,11 @@ What a beauty of Time!
 
 ## Part V: The End
 If you haven't created an account on repl.it, make sure you do so to save this wonderful piece of creation!  
-Consider changing the colors and adding more features!  
-Here's another challenge for you: Try to make the clock circular!  
+
+Here are somethings which you can do:  
+1. Consider changing the colors and adding more features!  
+2. Try to make the clock circular!  
+3. Try to make it dark theme!
 
 Now that you have finished building this wonderful clock, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!  
 
