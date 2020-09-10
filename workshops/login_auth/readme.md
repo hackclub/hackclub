@@ -10,4 +10,4 @@ In this workshop you'll build a web login page using firebase. In which only tho
 
 this is a workshop to help you make something like this 👇
 
-![Firebase login](https://cloud-mketa8pxq.vercel.app/1.png 500x750)
+![Firebase login](https://cloud-mketa8pxq.vercel.app/1.png =500x700)
