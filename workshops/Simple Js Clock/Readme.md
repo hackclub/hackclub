@@ -442,7 +442,7 @@ Here are somethings which you can do:
 1. Consider changing the colors and adding more features!  
 2. Try to make the clock circular!  
 3. Try to make it dark theme!
-4. Try to think on more unique ideas on how you can add more features (displaying the date etc)
+4. Try to think of more unique ideas on how you can add more features (displaying the date etc).
 
 Now that you have finished building this wonderful clock, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!  
 
