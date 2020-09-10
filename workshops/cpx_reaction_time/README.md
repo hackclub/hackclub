@@ -7,7 +7,7 @@ author: '@sampoder'
 # Building a Reaction Time Calculator with a Circuit Playground
 **This workshop requires a Circuit Playground Microcontroller, or the use of a simulator**
 
-![](https://cloud-9jybt8qho.vercel.app/ezgif.com-gif-maker.gif)
+![Animated image of the Circuit Playground Express Board and it's Neopixels](https://cloud-9jybt8qho.vercel.app/ezgif.com-gif-maker.gif)
 
 _Meet the Circuit Playground Express Board_
 
@@ -56,8 +56,11 @@ cp.pixels[0] = (25, 0, 0)
 
 What colour does your first Neopixel turn? That's right: RED! These colours are being inputted as RGB codes, this means that the value is `(RED_VALUE, GREEN_VALUE, BLUE_VALUE)`. Using this information, try turning the Neopixel blue.
 
+<br />
+
 ![Image of a singular Neopixel lit up in red](https://cloud-58zrl3sh6.vercel.app/screenshot_2020-09-10_at_11.58.40_pm.png)
 
+<br />
 You may also be wondering why our first Neopixel is set using `cp.pixels[0]` and not `cp.pixels[1]`. That's because computers count from 0 and not 1.
 
 ## Adding a bit of randomness!
@@ -171,7 +174,11 @@ while True:
 
 Now you should be seeing more colours and more Neopixels lighting up!
 
+<br />
+
 ![Image of 5 Neopixels lit up in random colours](https://cloud-av6xy9ome.vercel.app/screenshot_2020-09-11_at_12.03.33_am.png)
+
+<br />
 
 ## Calculating reaction speed
 
