@@ -38,3 +38,4 @@ Here is an optional step, If you need Google Analytics for your projects to can 
 
 <img src="https://cloud-3swaas1pn.vercel.app/5.png">
 
+So here you'll see `Your new project is ready`. Hooorayyy you just created your new firebase project, click on continue to proceed to project console.
