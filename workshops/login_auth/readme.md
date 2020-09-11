@@ -1,6 +1,6 @@
 ---
 name: 'Login Authentication'
-description: 'Build a login page for your website using firebase'
+description: 'Build a secure web login page using firebase'
 author: '@tanishq-soni'
 ---
 
