@@ -10,7 +10,7 @@ In this workshop you'll build a web login page using firebase. In which only tho
 
 This is a workshop to help you make something like this 👇
 
-<img src="https://cloud-mketa8pxq.vercel.app/1.png">
+<img src="https://cloud-8d96q79da.vercel.app/login_page.png">
 
 ## Getting Started :rocket:
 ### Creating a firebase project -
