@@ -18,11 +18,9 @@ At first you'll need to sign-in to firebase console. if you have google account 
 
 After sign-in you will see an interface like image below.
 
-At the top right corner you'll see `Go to console` tab, so click on that and you will be redirected to console section.
-
 <img src="https://cloud-mketa8pxq.vercel.app/1.png">
 
-So here is the console section.
+In the above image you'll see `Go to console` tab at top right corner, so click on that and you will be redirected to console section.
 
 <img src="https://cloud-kfr44a6da.vercel.app/2.png">
 
