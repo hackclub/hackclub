@@ -67,7 +67,7 @@ HTML code is not complex here, I have created two divisons `main-div` & `loggedi
   - It is the logged in divison which consists:
     - Logout button with onclick function `logout()`.
     
-You can edit [HTML](https://repl.it/@tanishqsoni/Loginauth#index.html) file here.
+You can see [HTML](https://repl.it/@tanishqsoni/Loginauth#index.html) file here.
 
 don't forgot to link HTML file with the CSS and JavaScript file using:
 
@@ -84,7 +84,7 @@ _JavaScript_
 ##### CSS
 The style of webpage is completely of your own choice like whether you need blue colour or black, you need rectangle buttons or circle! its completely yours. 
 
-You can edit [CSS](https://repl.it/@tanishqsoni/Loginauth#style.css) file here.
+You can see [CSS](https://repl.it/@tanishqsoni/Loginauth#style.css) file here.
 
 ##### JAVASCRIPT
 
@@ -175,6 +175,8 @@ function logout(){
   firebase.auth().signOut();
 }
 ```
+You can see [JavaScript](https://repl.it/@tanishqsoni/Loginauth#index.js) here.
+
 Hooray!🎉 you just finished with the coding part!
 
 ### Connecting firebase to your webpage
