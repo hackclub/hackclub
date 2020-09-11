@@ -168,7 +168,8 @@ window.alert("Error : " + errorMessage);
 ```
 ##### Function logout()
 
-In order to logout the user we need to create `logout()` function. so add below code after the `login()` function.
+In order to logout the user we need to create `logout()` and inside that function we need to call firebase `signOut` function.
+
 ```javascript
 function logout(){
   firebase.auth().signOut();
