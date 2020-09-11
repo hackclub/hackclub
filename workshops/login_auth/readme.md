@@ -234,6 +234,29 @@ For hosting your app in firebase you need to go to `Hosting` in the `Develop` se
 
 <img src="https://cloud-ph3x9zqi5.vercel.app/15.png">
 
-In Hostings click on `Get Started`.
+In Hostings click on `Get Started` and follow all screen instructions or follow below steps.
 
 <img src="https://cloud-764le5mp9.vercel.app/16.png">
+
+Now you need to install firebase CLI and for that you should have node installed.
+
+Run the following command to install firebase CLI
+`npm install -g firebase-tools`
+
+After installing CLI go to the directory where your project is stored and open terminal and run following commands.
+
+`firebase login` for login into firebase.
+
+After successfull login run
+
+`firebase init` for setting up project directory.
+
+Follow the onscreen instructions.
+
+<img src="https://cloud-47uau0rvc.vercel.app/c1.png">
+
+Using `space` move to hosting and press `enter`.
+
+<img src="https://cloud-okanfrh18.vercel.app/c2.png">
+
+
