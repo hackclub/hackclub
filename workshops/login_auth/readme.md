@@ -196,5 +196,9 @@ Then you will see some sort of JavaScript code. you need to copy this code and p
 
 <img src="https://cloud-nsps2klza.vercel.app/9.png">
 
+Now you have successfully integrated the firebase to your webpage. 
 
+After that you need to add users to database so that they can login, so for that you need to enable email/password authentication in your project's Authentication section, for that you need to click on `Authentication` on the top left `Develope` section.
+
+<img src="https://cloud-pnq6xn3gp.vercel.app/10.png">
 
