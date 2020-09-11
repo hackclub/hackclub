@@ -192,6 +192,9 @@ After clicking on that new page will pops up and ask you for a nickname of your 
 
 <img src="https://cloud-8tdv8wfuj.vercel.app/8.png">
 
+Then you will see some sort of JavaScript code. you need to copy this code and paste it into HTML code before `</body>` tag.
+
+<img src="https://cloud-nsps2klza.vercel.app/9.png">
 
 
 
