@@ -66,3 +66,8 @@ HTML code is not complex here, I have created two divisons `main-div` & `loggedi
 - `loggedin-div`
   - It is the logged in divison which consists:
     - Logout button with onclick function `logout()`.
+
+##### CSS
+The design of webpage is completely your own choice whether you need blue colour or black. 
+
+You can edit [CSS](https://repl.it/@tanishqsoni/Loginauth#style.css) file with your own design.
