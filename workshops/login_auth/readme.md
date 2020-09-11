@@ -58,7 +58,7 @@ I have already created a code template so you can check it out and i will explai
 #### Explaination of code </>
 
 ##### HTML
-HTML code is not complex here, I have created two divisons `main-div` & `loggedin-div`.
+HTML code is not complex here, I have created two divisons `main-div` & `loggedin-div`. 
 - `main-div`
   - It is the main division which consists:
     - Input fields like `email-field` and `password-field`.
@@ -67,7 +67,25 @@ HTML code is not complex here, I have created two divisons `main-div` & `loggedi
   - It is the logged in divison which consists:
     - Logout button with onclick function `logout()`.
 
-##### CSS
-The design of webpage is completely your own choice whether you need blue colour or black. 
+Link HTML with the CSS and JavaScript file using:
 
-You can edit [CSS](https://repl.it/@tanishqsoni/Loginauth#style.css) file with your own design.
+_CSS_
+```html
+<link rel="stylesheet" href="style.css" />
+```
+
+_JavaScript_
+```html
+<script src="index.js"></script>
+```
+You can edit [HTML](https://repl.it/@tanishqsoni/Loginauth#index.html) file here.
+
+
+##### CSS
+The style of webpage is completely of your own choice like whether you need blue colour or black, you need rectangle buttons or circle! its completely yours. 
+
+You can edit [CSS](https://repl.it/@tanishqsoni/Loginauth#style.css) file here.
+
+##### JavaScript
+
+The main part of webpage comes here, not to complex but somewhat.
