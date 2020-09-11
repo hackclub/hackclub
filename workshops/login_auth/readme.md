@@ -13,7 +13,7 @@ This is a workshop to help you make something like this 👇
 <img src="https://cloud-mketa8pxq.vercel.app/1.png">
 
 ## Getting Started :rocket:
-### Setting up firebase project -
+### Creating a firebase project -
 At first you'll need to sign-in to firebase console. if you have google account then you can directly sign-in to firebase, otherwise create one.
 
 After sign-in you will see an interface like image below.
@@ -40,11 +40,7 @@ Here is an optional step, If you need Google Analytics for your projects to can 
 
 So here you'll see `Your new project is ready`. Hooray!🎉 you just created your new firebase project.
 
-Click on continue to proceed to project console.
+So now before moving to project console, we need to setup our webpage in which we can login so lets proceed further.
 
-<img src="https://cloud-l7pn8f9e9.vercel.app/6.png">
+### Creating a webpage :laptop: - 
 
-So in your project console you'll see `Get started by adding firebase to your app` and below that you will see mainly 3 options:
-- iOS
-- Android
-- </> (this option is for web and you need to click on that so you can setup firebase to your web app).
