@@ -60,7 +60,8 @@ This is the `script.js` file in your directory. Its empty for now, but we will f
 Also, this is the most important file for our today's workshop. The code written here will be responsible for the functioning of our Clock.  
 Make sure you have linked this file too in your HTML.  
 If you take a look in the `<body>` tag, you'll find:
-```
+
+```html
 <script src="script.js"></script>
 ```
 This means that your Javascript file is linked to your HTML.
@@ -74,7 +75,8 @@ Inside of our `<body>` tag, add a `<div>` tag with "Hello World!" in it.
 Let's see if we wrote our code correctly. On the top of your website, you'll see a **RUN** Button. Click on it and see the Magic Happen! If you see "Hello World!" printed on your screen, you are going the right way!  
 
 This is your code so far.
-```
+
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -99,7 +101,8 @@ Give a class of "hand hour-hand", "hand min-hand", "hand second-hand" to each of
 Note: Make sure the `<script>` tag, which is in your body, is below the `<div>` tags or else it will throw you errors.  
 
 This is your code so far:
-```
+
+```html
 <!DOCTYPE html>
 <html>
 
@@ -136,7 +139,8 @@ Let's now add some stylings to our `<div>` tags!
 Go to `style.css` in your repl.it directory. Let's start by adding some styles to our body! uhh... I meant `<body>`!  
 
 Add the following code to your CSS:
-```
+
+```css
       body {
         background: #01ed7f;
         margin: 0;
@@ -167,8 +171,9 @@ Following the 3 main steps given above, let's accomplish this task!
 
 ![Image](https://cloud-b7yg1ciea.vercel.app/image.png)
 
-3. Add the following styles to this class.  
-```
+3. Add the following styles to this class. 
+
+```css
 .clock {
     width: 25rem;
     height: 25rem;
@@ -195,7 +200,7 @@ Next, give a position of relative and a 100% width & 100% height to the class `.
 
 Your CSS code so far:
 
-```
+```css
       body {
         background: #01ed7f;
         margin: 0;
@@ -229,7 +234,7 @@ Your CSS code so far:
 
 Similarly, add more stylings to your CSS code:
 
-```
+```css
       .hand {
         background: black;
         height: 6px;
@@ -281,7 +286,8 @@ Before Panicking, let me ensure you that there's really only 20 lines of Javascr
 Go to your `script.js` file.  
 First let us link the `<div>` tags in our HTML to javascript:  
 Type the following code:  
-```
+
+```js
 const secondHand = document.querySelector(".second-hand");
 const minsHand = document.querySelector(".min-hand");
 const hourHand = document.querySelector(".hour-hand");
@@ -296,14 +302,16 @@ The querySelector() method returns the first element that matches a specified CS
 Learn more about query selector [here](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
 
 Now its time to implement a function which will help us in the proper functioning of the clock.  
-Create a function 'setDate' in your file. (You can name it anything you want)  
-```
+Create a function 'setDate' in your file. (You can name it anything you want)
+
+```js
 function setDate() {
 }
 ```
 
 We can get the current date using the `Javascript Date Object`. Let's store it in a variable:
-```
+
+```js
 function setDate() {
  	const currentTime = new Date();
 }
@@ -323,7 +331,8 @@ Maths Time!!
 ![Image](https://media.giphy.com/media/26gR0YFZxWbnUPtMA/giphy.gif)
 
 Code:
-```
+
+```js
 function setDate() {
     const currentTime = new Date();
     const seconds = currentTime.getSeconds();
@@ -344,7 +353,8 @@ then: secondHand.style.transform = 'rotate(110deg)';
 **Hint:** Use the methods `getMinutes()` and `getHours()`
 
 The code so far:
-```
+
+```js
 function setDate() {
  	const currentTime = new Date();
 	const seconds = currentTime.getSeconds();
@@ -362,8 +372,9 @@ function setDate() {
 ```
 
 Our clock is almost finished! We now just need to call that function every second.  
-For this, first we will call a `requestAnimationFrame()` function inside of our main function (`setDate()`) and pass `setDate` to `requestAnimationFrame(//pass value here)`. This will make sure our function keeps running and never stops.  
-```
+For this, first we will call a `requestAnimationFrame()` function inside of our main function (`setDate()`) and pass `setDate` to `requestAnimationFrame(//pass value here)`. This will make sure our function keeps running and never stops.
+
+```js
 requestAnimationFrame(setDate)
 ```
 Let us now try to run our code.  
@@ -374,7 +385,8 @@ Copy the `requestAnimationFrame(setDate)` function which we called it inside of 
 **Note:** Don't remove the previous `requestAnimationFrame(setDate)`. We need to add the same line once again, but outside of the function.  
 
 Our Javascript Code so far:
-```
+
+```js
 const secondHand = document.querySelector(".second-hand");
 const minsHand = document.querySelector(".min-hand");
 const hourHand = document.querySelector(".hour-hand");
@@ -405,7 +417,8 @@ But wait, if we notice something closely, when we refresh our website, something
 The quick fix for this is to call our main function before we call `requestAnimationFrame(setDate)`.  
 
 The Final Code:
-```
+
+```js
 const secondHand = document.querySelector(".second-hand");
 const minsHand = document.querySelector(".min-hand");
 const hourHand = document.querySelector(".hour-hand");
