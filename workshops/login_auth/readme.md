@@ -132,7 +132,7 @@ document.getElementById("login_div").style.display = "block";
 ```
 Now after completing this we need to work on both the functions we assigned in HTML `login()` and `logout()`.
 
-###### Function login()
+##### Function login()
 As we only need `Sign-in for existing users` or users form database so for that firebase has a property called `signInWithEmailAndPassword`.
 
 So before we work on it we need to assign some IDs to input fields in HTML as we need to work with input field here.
@@ -141,7 +141,7 @@ ID `email_field` to `email` input field.
 
 ID `password_field` to `password` input field.
 
-After assigning IDs we will create two variables in login() function `userEmail` and `userPass` which get email and password from assigned IDs.
+After assigning IDs we will create two variables in `login()` function `userEmail` and `userPass` which get email and password from assigned IDs.
 
 ```javascript
 function login(){
@@ -162,9 +162,17 @@ firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error
 ```
 In the above code replace `email` with `userEmail` and `password` with `userPass`.
 
-Also we need to display error when error occurs like _wrong email or password_ so add below code in above function,
+Also we need to display error when error occurs like _wrong email or password_ so add below code in above function.
 ```javascript
 window.alert("Error : " + errorMessage);
+```
+##### Function logout()
+
+In order to logout the user we need to create `logout()` function. so add below code after the `login()` function.
+```javascript
+function logout(){
+  firebase.auth().signOut();
+}
 ```
 
 
