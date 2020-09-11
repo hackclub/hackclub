@@ -86,10 +86,11 @@ The style of webpage is completely of your own choice like whether you need blue
 
 You can edit [CSS](https://repl.it/@tanishqsoni/Loginauth#style.css) file here.
 
-##### JavaScript
+##### JAVASCRIPT
 
-The main part of webpage comes here, not to complex but somewhat and you can also read [firebase auth documentation](https://firebase.google.com/docs/auth/web/start?authuser=0).
-In the JavaScript file first you need to add a `AuthState` property which will determine the steps before user is logged-in and after logged-in
+The main part of webpage comes here, not to complex but somewhat and you can also read [firebase Auth documentation](https://firebase.google.com/docs/auth/web/start?authuser=0).
+
+In the JavaScript file first you need to add a `AuthState` property which will determine the next steps using conditions `user is signed-in` & `no user is signed-in`.
 
 ```javascript
 firebase.auth().onAuthStateChanged(function(user) {
@@ -99,4 +100,24 @@ firebase.auth().onAuthStateChanged(function(user) {
     // No user is signed in.
   }
 });
+```
+As you now we created two divisions in HTML and we need `loggedin-div` division to be displayed only when the user is signed-in so in above code we need to do some changes,
+but before we make changes we need to assign `IDs` to both divisions:
+ID `user_div` to division `loggedin-div`
+ID `login_div` to division `main-div`
+After assigning IDs add this code in the `if` statement of `AuthState` property.
+```javascript
+
+document.getElementById("user_div").style.display = "block";
+document.getElementById("login_div").style.display = "none";
+
+```
+In the above code `block` will display that division and `none` will hide that division.
+As we added this for signed-in user so we also need `else` part _while user is not signed-in_ so the code will same as above code but we need to swap `block` and `none` as we need to show only `main-div` so add below code to `else` statement of `AuthState` property.
+
+```javascript
+
+document.getElementById("user_div").style.display = "none";
+document.getElementById("login_div").style.display = "block";
+
 ```
