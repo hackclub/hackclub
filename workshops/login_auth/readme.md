@@ -177,6 +177,9 @@ function logout(){
 ```
 Hooray!🎉 you just finished with the coding part!
 
+### Connecting firebase to your webpage
+
+So again moving to firebase, After successfully creating firebase project you will see your project console
 
 
 
