@@ -50,4 +50,8 @@ Yea! it is the important part for this workshop, you need to create a webpage an
 - JavaScript
 
 I have already created a code template so you can check it out and i will explain some parts if code which is important.
-Code : [Repl.it](https://repl.it/@tanishqsoni/Loginauth)
+
+<img src="https://cloud-9e1ogteoo.vercel.app/7.png">
+
+**Code** : [Repl.it](https://repl.it/@tanishqsoni/Loginauth)
+
