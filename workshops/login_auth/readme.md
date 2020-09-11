@@ -286,9 +286,19 @@ Run `firebase deploy` and your project will be hosted online.
 
 In above image you will see `Hosting URL`[https://loginauth-12.web.app/](https://loginauth-12.web.app/) so that is the URL for your project.
 
-Hooray!🎉 you finished the Login Authentication Workshop by completing all tasks:
+### Hooray!🎉 
+You finished the Login Authentication Workshop by completing all tasks:
 - [x] Creating firebase project.
 - [x] Designing a webpage.
 - [x] Connecting firebase to your webpage
 - [x] Hosting app in firebase
 
+### ⚡ What's Next?
+Now you know how to build a Login Authentication webpage using firebase.
+
+Now how you can expand it? Try adding some other features to it with the help of [Firebase Guide](https://firebase.google.com/docs/auth/web/start?authuser=0)
+
+Here are some examples 👇
+- Adding `create account` feature so as user can create a new account.
+- Adding `Email verification` feature.
+- Adding a `visit page` button after login as to protect that page from username and password.
