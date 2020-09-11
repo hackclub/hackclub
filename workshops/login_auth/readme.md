@@ -61,7 +61,7 @@ I have already created a code template so you can check it out and i will explai
 HTML code is not complex here, I have created two divisons `main-div` & `loggedin-div`. 
 - `main-div`
   - It is the main division which consists:
-    - Input fields like `email-field` and `password-field`.
+    - Input fields `email` and `password`.
     - Login button with onclick function `login()`.
 - `loggedin-div`
   - It is the logged in divison which consists:
@@ -130,4 +130,46 @@ document.getElementById("user_div").style.display = "none";
 document.getElementById("login_div").style.display = "block";
 
 ```
+Now after completing this we need to work on both the functions we assigned in HTML `login()` and `logout()`.
+
+###### Function login()
+As we only need `Sign-in for existing users` or users form database so for that firebase has a property called `signInWithEmailAndPassword`.
+
+So before we work on it we need to assign some IDs to input fields in HTML as we need to work with input field here.
+
+ID `email_field` to `email` input field.
+
+ID `password_field` to `password` input field.
+
+After assigning IDs we will create two variables in login() function `userEmail` and `userPass` which get email and password from assigned IDs.
+
+```javascript
+function login(){
+
+  var userEmail = document.getElementById("email_field").value;
+  var userPass = document.getElementById("password_field").value;
+}
+```
+So in the above function we need to add the `signInWithEmailAndPassword` which we discussed above.
+
+```javascript
+firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
+```
+In the above code replace `email` with `userEmail` and `password` with `userPass`.
+
+Also we need to display error when error occurs like _wrong email or password_ so add below code in above function,
+```javascript
+window.alert("Error : " + errorMessage);
+```
+
+
+
+
+
+
 
