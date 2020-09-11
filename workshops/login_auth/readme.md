@@ -179,8 +179,18 @@ Hooray!🎉 you just finished with the coding part!
 
 ### Connecting firebase to your webpage
 
-So again moving to firebase, After successfully creating firebase project you will see your project console
+So again moving to firebase, After successfully creating firebase project you will see your project console.
 
+At project console's landing page you will see `Get started by adding Firebase to your app` and below that you will se three options of integrations:
+1. iOS
+2. Android
+3. </> (this option is for web on which we are working so click on that).
+
+<img src="https://cloud-l7pn8f9e9.vercel.app/6.png">
+
+After clicking on that new page will pops up and ask you for a nickname of your project so give one as i am giving it `login-auth` and click on register app.
+
+<img src="https://cloud-8tdv8wfuj.vercel.app/8.png">
 
 
 
