@@ -44,3 +44,10 @@ So now before moving to project console, we need to setup our webpage in which w
 
 ### Creating a webpage 💻 - 
 
+Yea! it is the important part for this workshop, you need to create a webpage and design a login page card using:
+- HTML
+- CSS
+- JavaScript
+
+I have already created a code template so you can check it out and i will explain some parts if code which is important.
+Code : [Repl.it](https://repl.it/@tanishqsoni/Loginauth)
