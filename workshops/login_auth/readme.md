@@ -55,3 +55,10 @@ I have already created a code template so you can check it out and i will explai
 
 **Code** : [Repl.it](https://repl.it/@tanishqsoni/Loginauth)
 
+#### Explaination of code </>
+
+##### HTML
+HTML code is not complex here, I have created two divisons `main-div` & `loggedin-div`.
+- `main-div`Consists of
+  - Input fields like `email-field` and `password-field`.
+  - Login button with onclick function `login()`.
