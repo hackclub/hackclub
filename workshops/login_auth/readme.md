@@ -42,5 +42,5 @@ So here you'll see `Your new project is ready`. Hooray!🎉 you just created you
 
 So now before moving to project console, we need to setup our webpage in which we can login so lets proceed further.
 
-### Creating a webpage :laptop: - 
+### Creating a webpage 💻 - 
 
