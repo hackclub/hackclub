@@ -42,9 +42,9 @@ So here you'll see `Your new project is ready`. Hooray!🎉 you just created you
 
 So now before moving to project console, we need to setup our webpage in which we can login so lets proceed further.
 
-### Creating a webpage 💻 - 
+### Designing a webpage 💻 - 
 
-Yea! it is the important part for this workshop, you need to create a webpage and design a login page card using:
+Yea! it is the important part for this workshop, you need to design a webpage with login page card using:
 - HTML
 - CSS
 - JavaScript
@@ -286,5 +286,9 @@ Run `firebase deploy` and your project will be hosted online.
 
 In above image you will see `Hosting URL`[https://loginauth-12.web.app/](https://loginauth-12.web.app/) so that is the URL for your project.
 
-
+Hooray!🎉 you finished the Login Authentication Workshop by completing all tasks:
+- [x] Creating firebase project.
+- [x] Designing a webpage.
+- [x] Connecting firebase to your webpage
+- [x] Hosting app in firebase
 
