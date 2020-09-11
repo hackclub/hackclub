@@ -44,7 +44,7 @@ Click on continue to proceed to project console.
 
 <img src="https://cloud-l7pn8f9e9.vercel.app/6.png">
 
-So in your project console you'll see `Get started by adding firebase to your app` and below that you will se 3 options:
+So in your project console you'll see `Get started by adding firebase to your app` and below that you will see mainly 3 options:
 - iOS
 - Android
 - </> (this option is for web and you need to click on that so you can setup firebase to your web app).
