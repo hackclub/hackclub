@@ -214,7 +214,7 @@ Click on Sign-in method.
 
 So first we need to enable Email/Password in `sign-in providers` section, so click on (Email/Password) and enable it and save it.
 
-<img src="https://cloud-nvyxode6r.vercel.app/11.png">
+<img src="https://cloud-2vpwetbvx.vercel.app/12.png">
 
 After enabling that we need to add users to database, for that click on `Users` tab.
 
