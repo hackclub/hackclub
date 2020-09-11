@@ -66,8 +66,10 @@ HTML code is not complex here, I have created two divisons `main-div` & `loggedi
 - `loggedin-div`
   - It is the logged in divison which consists:
     - Logout button with onclick function `logout()`.
+    
+You can edit [HTML](https://repl.it/@tanishqsoni/Loginauth#index.html) file here.
 
-Link HTML with the CSS and JavaScript file using:
+don't forgot to link HTML file with the CSS and JavaScript file using:
 
 _CSS_
 ```html
@@ -78,8 +80,6 @@ _JavaScript_
 ```html
 <script src="index.js"></script>
 ```
-You can edit [HTML](https://repl.it/@tanishqsoni/Loginauth#index.html) file here.
-
 
 ##### CSS
 The style of webpage is completely of your own choice like whether you need blue colour or black, you need rectangle buttons or circle! its completely yours. 
@@ -88,4 +88,15 @@ You can edit [CSS](https://repl.it/@tanishqsoni/Loginauth#style.css) file here.
 
 ##### JavaScript
 
-The main part of webpage comes here, not to complex but somewhat.
+The main part of webpage comes here, not to complex but somewhat and you can also read [firebase auth documentation](https://firebase.google.com/docs/auth/web/start?authuser=0).
+In the JavaScript file first you need to add a `AuthState` property which will determine the steps before user is logged-in and after logged-in
+
+```javascript
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+  } else {
+    // No user is signed in.
+  }
+});
+```
