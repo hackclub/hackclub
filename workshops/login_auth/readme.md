@@ -38,4 +38,13 @@ Here is an optional step, If you need Google Analytics for your projects to can 
 
 <img src="https://cloud-3swaas1pn.vercel.app/5.png">
 
-So here you'll see `Your new project is ready`. Hooorayyy you just created your new firebase project, click on continue to proceed to project console.
+So here you'll see `Your new project is ready`. Hooray!🎉 you just created your new firebase project.
+
+Click on continue to proceed to project console.
+
+<img src="https://cloud-l7pn8f9e9.vercel.app/6.png">
+
+So in your project console you'll see `Get started by adding firebase to your app` and below that you will se 3 options:
+1. iOS
+2. Android
+3. </> (which is for web and we need to click on that to setup firebase to our web app).
