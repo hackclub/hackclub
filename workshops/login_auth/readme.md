@@ -233,3 +233,7 @@ Now at last if you need hosting for your app, you can choose firebase hosting.
 For hosting your app in firebase you need to go to `Hosting` in the `Develop` section.
 
 <img src="https://cloud-ph3x9zqi5.vercel.app/15.png">
+
+In Hostings click on `Get Started`.
+
+<img src="https://cloud-764le5mp9.vercel.app/16.png">
