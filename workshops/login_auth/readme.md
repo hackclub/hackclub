@@ -103,7 +103,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 ```
-As you now we created two divisions in HTML and we need `loggedin-div` division to be displayed only when the user is signed-in so in above code we need to do some changes,
+As you know we created two divisions in HTML and we need `loggedin-div` division to be displayed only when the user is signed-in so in above code we need to do some changes,
 but before we make changes we need to assign `IDs` to both divisions:
 
 ID `user_div` to division `loggedin-div`
