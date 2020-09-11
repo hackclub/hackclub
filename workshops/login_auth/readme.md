@@ -198,7 +198,38 @@ Then you will see some sort of JavaScript code. you need to copy this code and p
 
 Now you have successfully integrated the firebase to your webpage. 
 
-After that you need to add users to database so that they can login, so for that you need to enable email/password authentication in your project's Authentication section, for that you need to click on `Authentication` on the top left `Develope` section.
+After that you need to add users to database so that they can login, so for that you need to enable email/password authentication in your project's Authentication section, for that you need to click on `Authentication` on the top left `Develop` section.
 
 <img src="https://cloud-pnq6xn3gp.vercel.app/10.png">
 
+So here in Authentication page you'll see options:
+- Users
+- Sign-in method
+- Templates
+- Usage
+
+Click on Sign-in method.
+
+<img src="https://cloud-nvyxode6r.vercel.app/11.png">
+
+So first we need to enable Email/Password in `sign-in providers` section, so click on (Email/Password) and enable it and save it.
+
+<img src="https://cloud-nvyxode6r.vercel.app/11.png">
+
+After enabling that we need to add users to database, for that click on `Users` tab.
+
+<img src="https://cloud-kbxm635o2.vercel.app/13.png">
+
+Then click on `Add user` and add `email` and `password` for the user and click `Add user`.
+
+<img src="https://cloud-l38zbxdt7.vercel.app/14.png">
+
+So, this is the database in which you can record users for restricted login 🔒.
+
+Now at last if you need hosting for your app, you can choose firebase hosting.
+
+### Hosting app in firebase
+
+For hosting your app in firebase you need to go to `Hosting` in the `Develop` section.
+
+<img src="https://cloud-ph3x9zqi5.vercel.app/15.png">
