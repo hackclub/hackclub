@@ -245,11 +245,10 @@ Run the following command to install firebase CLI
 
 After installing CLI go to the directory where your project is stored and open terminal and run following commands.
 
-`firebase login` for login into firebase.
+Run `firebase login` for login into firebase, after login proceed with below commands.
 
-After successfull login run
 
-`firebase init` for setting up project directory.
+Run `firebase init` for setting up project directory.
 
 Follow the onscreen instructions.
 
@@ -258,5 +257,32 @@ Follow the onscreen instructions.
 Using `space` move to hosting and press `enter`.
 
 <img src="https://cloud-okanfrh18.vercel.app/c2.png">
+
+After selecting hosting option you will be ask to select firebase project, so select a valid existing project and press `enter`.
+
+<img src="https://cloud-g6kdkqkyv.vercel.app/c3.png">
+<img src="https://cloud-itpmqub7h.vercel.app/c4.png">
+
+Now you need to setup hosting so for that `public` is the default folder which will contain your project i.e. (HTML + CSS + JavaScript files).
+So you need to create a folder named `public` and transfer all project files to it.
+
+<img src="https://cloud-j3w043jzq.vercel.app/c5.png">
+
+here it will ask you to auto create a new `index.html` in the public folder so you can select `no` as we already have `index.html`.
+
+<img src="https://cloud-gfaewro6r.vercel.app/c6.png">
+
+So after that initialization will complete.
+
+<img src="https://cloud-eixkmi8ft.vercel.app/c7.png">
+
+Now at last step we need to deploy our project, so for that
+
+Run `firebase deploy` and your project will be hosted online.
+
+<img src="https://cloud-aii6uvk91.vercel.app/c8.png">
+
+In above image you will see `Hosting URL`[https://loginauth-12.web.app/](https://loginauth-12.web.app/) so that is the URL for your project.
+
 
 
