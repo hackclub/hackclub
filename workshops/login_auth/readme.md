@@ -59,6 +59,8 @@ I have already created a code template so you can check it out and i will explai
 
 ##### HTML
 HTML code is not complex here, I have created two divisons `main-div` & `loggedin-div`.
-- `main-div`Consists of
-  - Input fields like `email-field` and `password-field`.
-  - Login button with onclick function `login()`.
+- `main-div`
+  - It is the main division which will trigger first and it consists of
+     - Input fields like `email-field` and `password-field`.
+     - Login button with onclick function `login()`.
+- `loggedin-div`
