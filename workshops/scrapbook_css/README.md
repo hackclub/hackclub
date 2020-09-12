@@ -86,7 +86,6 @@ Replace ` ‘Font name’` with the name of your font, just keep the quotes! We�
 I went techno style, with the [Audiowide](https://fonts.google.com/specimen/Audiowide?category=Display&sidebar.open=true&selection.family=Audiowide) font.
 
 <img src="https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt="Green and purple themed Scrapbook">
-https://cloud-mf6bhpnlh.vercel.app/screenshot_2020-09-12_at_8.11.09_pm.png
 
 #### **Crazy CSS Animations - Part 1 ✌︎**
 
