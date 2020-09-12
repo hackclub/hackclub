@@ -301,4 +301,4 @@ Now how you can expand it? Try adding some other features to it with the help of
 Here are some examples 👇
 - Adding `create account` feature so as user can create a new account.
 - Adding `Email verification` feature.
-- Adding a `visit page` button after login as to protect that page from username and password.
+- Adding `Anonymous Login` feature so as user can visit the page without login.
