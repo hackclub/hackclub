@@ -26,7 +26,7 @@ To make setting colours easier, Scrapbook uses CSS variables. These allow you to
 
 For Scrapbook there are 3 colours, we’re going to want to play around with. The background colour, the colour of our text and the colour of the posts (referred to as colors-elevated below).
 
-To tell the web browser the exact colour we want, we can use either HEX codes, or RGB values. For this workshop we’re going to use HEX codes. To help us get those, we can google “colour picker”. From here, you can play around with the slides and choose your preferred colour. Choose 3 colours to be used for the profile.
+To tell the web browser the exact colour we want, we can use either HEX codes, or RGB values. For this workshop we’re going to use HEX codes. To help us get those, we can google “colour picker” or click this [link](https://www.google.com/search?q=color+picker). From here, you can play around with the slides and choose your preferred colour. Choose 3 colours to be used for the profile.
 
 Then in the right column, type:
 
