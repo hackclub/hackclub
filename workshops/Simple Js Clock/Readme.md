@@ -44,7 +44,10 @@ This is what it looks like:
 Let us first take a look at the HTML file (`index.html`) present in your repl.
 
 At line 1 we have `<!DOCTYPE html>` This declares that this file is a HTML file.  
-If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. Make sure that all the code you write is included between the opening and closing body tags. (`<body></body>`)
+If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. Make sure that all the code you write is included between the opening and closing body tags. (`<body></body>`)  
+
+**Note:** Make sure you remove line 6 (`<meta name="viewport" content="width=device-width">`) :  
+![Image](https://cloud-9zj6930c6.vercel.app/gif_maker.gif)
 
 ### 2) The CSS file
 
