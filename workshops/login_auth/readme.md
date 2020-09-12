@@ -12,7 +12,7 @@ This is a workshop to help you make something like this 👇
 
 <img src="https://cloud-8d96q79da.vercel.app/login_page.png">
 
-Live example : [Login Authentication](loginauth-12.web.app)
+Live example : [Login Authentication](https://loginauth-12.web.app)
 
 ## Getting Started :rocket:
 ### Creating a firebase project -
