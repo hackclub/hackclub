@@ -6,9 +6,15 @@ author: '@sampoder'
 
 ### **Creating a jaw-dropping Scrapbook**
 
+![Jaw dropping GIF](https://media2.giphy.com/media/MuTenSRsJ7TQQ/200.gif)
+
+_^ what's going to happen when people see your Scrapbook_
+
 One of the amazing things about building projects for the web is just how easy it is to make it beautiful! To style web projects, we use a language called CSS. It lets us do everything from changing to background colour to animating text!
 
-Today, we’re going to be learning about CSS by customizing a [Scrapbook](https://scrapbook.hackclub.com/) profile. Scrapbook is a platform where hackers can share photos of what they make or just of their daily life. If you don’t have a profile, log in to the Hack Club Slack, visit the [#scrapbook](https://hackclub.slack.com/archives/C01504DCLVD/) channel, take a photo (or use an old one) and post it! 
+<img src="https://cloud-5j06exp7f.vercel.app/screenshot_2020-09-12_at_7.29.11_pm.png" width="380" alt="Sam Poder's Scrapbook Profile">
+
+Today, we’re going to be learning about CSS by customizing a [Scrapbook](https://scrapbook.hackclub.com/) profile (^ like mine above). Scrapbook is a platform where hackers can share photos of what they make or just of their daily life. If you don’t have a profile, log in to the Hack Club Slack, visit the [#scrapbook](https://hackclub.slack.com/archives/C01504DCLVD/) channel, take a photo (or use an old one) and post it! 
 
 Next up, you are going to want to open up the [Scrapbook Customizer](https://scrapbook.hackclub.com/customizer/). Type in your username at the top, and delete any code in the right column. Click **‘Go’**.
 
@@ -37,6 +43,10 @@ Then in the right column, type:
 ```
 
 Replace `YOURCOLOUR` with the HEX codes you found, make sure to include the hash (hashtag) symbol at the start.
+
+I choose these colours:
+
+<img src="https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt="Green and purple themed Scrapbook">
 
 #### **Fancy fonts ❡**
 
@@ -72,6 +82,11 @@ Add the following code snippet just below the --colors-elevated line.
 
 
 Replace ` ‘Font name’` with the name of your font, just keep the quotes! We’ve left the other fonts there as a backup for if the font we want won’t load.
+
+I went techno style, with the [Audiowide](https://fonts.google.com/specimen/Audiowide?category=Display&sidebar.open=true&selection.family=Audiowide) font.
+
+<img src="https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt="Green and purple themed Scrapbook">
+https://cloud-mf6bhpnlh.vercel.app/screenshot_2020-09-12_at_8.11.09_pm.png
 
 #### **Crazy CSS Animations - Part 1 ✌︎**
 
@@ -124,14 +139,20 @@ animation: rainbow 5s infinite;
 
 We want to add this inside the curly braces. What this does is apply the rainbow animation and run it for an infinite amount of times for 5 seconds each.
 
+Here's what I got:
+
+<img src="https://cloud-1fmtzoja5.vercel.app/ezgif-5-db525cfe2a47.gif" width="380" alt="Rainbow animated text">
+
 I’ve got a challenge for you. Let’s make that profile picture spin! 
 
 Here are a few things you’ll need to know:
 
 - The class for the profile picture is `header-title-avatar`
-- To rotate a image use: transform: `rotate(20deg)`
+- To rotate a image use: `transform: rotate(20deg)`
 
-So can you do it? The solution is
+So can you do it? The solution is [here](#spinner-solution).
+
+<img src="https://cloud-ojh0xf17r.vercel.app/ezgif-5-5540a1713ebc.gif" width="380" alt="Spinning profile picture">
 
 #### **Crazy CSS Animations - Part 2** **✌︎**
 
@@ -212,3 +233,23 @@ To finish off, I'd like to leave you with some amazing customized Scrapbook prof
 - I also have my own customized Scrapbook profile! The theme is always changing, at the time of writing it's Soviet themed.
 
 I truly hope you enjoyed this workshop, happy hacking!
+
+#### Spinner Solution
+
+```
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(180deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.header-title-avatar {
+  animation: rotate 5s infinite;
+}
+```
