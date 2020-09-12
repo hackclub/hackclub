@@ -181,7 +181,7 @@ What this does is that it means that the change will transformation will ease in
 
 It's time for you to control, there are so many epic things you can do with CSS! So go forward and make your Scrapbook unique to you!! Here a few guiders:
 
-- Make a gradient background. You won't be able to do this with the CSS variables but you can by applying the background to the body tag. I'm saying too much, learn more about CSS gradients [here](https://css-tricks.com/css3-gradients/)!
+- Make a gradient background. You won't be able to do this with the CSS variables but you can by applying the background to the body tag instead. I'm saying too much, learn more about CSS gradients [here](https://css-tricks.com/css3-gradients/)!
 - You can change the text of the UI. Check out this [article](https://css-tricks.com/swapping-out-text-five-different-ways/#css-only-way) for get a sense of what I'm talking about! That's what I call a hack ;)
 - Animate everything! You've seen how we can animate elements in CSS but we've really only changed the colour and made something bigger. There are so many more properties that are animatable, check out this [extensive list](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties). Also change out my classes reference just below so you know how to change each element on the page.
 
