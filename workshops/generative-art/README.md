@@ -1,5 +1,5 @@
 # Generative Art!
-*a workshop by Claire Wang [@clairebookworm](twitter.com/clairebookworm1)*
+*a workshop by Claire Wang [@clairebookworm](https://twitter.com/clairebookworm1)*
 
 A workshop for those who are too lazy to draw 'em lines themselves. Uses `p5.js` and works with an online browser compiler (no downloading required).
 
