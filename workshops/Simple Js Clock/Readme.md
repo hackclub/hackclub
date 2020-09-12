@@ -460,6 +460,12 @@ Here are somethings which you can do:
 3. Try to make it dark theme!
 4. Try to think of more unique ideas on how you can add more features (displaying the date etc).
 
+**Examples on how people have customized it:**  
+- [HumanChalk](https://closelawfulbinarysearchtree--five-nine.repl.co/)  
+- [Adrian](https://js-clock.loboadrian.repl.co/)  
+- [Tanishq](http://darlingnoxiousfolder--five-nine.repl.co/)
+- [Aaryan Porwal](http://illclumsyattributes-1.aaryanporwal.repl.co/)
+
 Now that you have finished building this wonderful clock, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!  
 
 You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the world wide Hack Club community there is no better place to do that than on Slack.  
