@@ -22,7 +22,7 @@ We’re now ready to get started!
 
 #### Magical Colours!
 
-To make setting colours easier, Scrapbook uses CSS variables. CSS variables work like variables do in any other programming language. You define the variable and then instead of pasting the value in everywhere you add `var(variable_name)`. This makes it so that if you want to change a theme colour (like we're doing today!) you can do it with one line.
+To make setting colours easier, Scrapbook uses CSS variables. CSS variables work like variables do in any other programming language. You define the variable and then instead of pasting the value in everywhere you add `var(--variable-name)`. This makes it so that if you want to change a theme colour (like we're doing today!) you can do it with one line.
 
 For Scrapbook there are 3 key colour variables that we’re going to want to play around with today. These are the background colour, the colour of text and the colour of the posts (referred to as colors-elevated below). 
 
