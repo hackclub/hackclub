@@ -4,7 +4,7 @@ description: A simple introduction to CSS and its wonderful quirks!
 author: '@sampoder'
 ---
 
-### **Creating a jaw-dropping Scrapbook**
+# Creating a jaw-dropping Scrapbook
 
 ![Jaw dropping GIF](https://media2.giphy.com/media/MuTenSRsJ7TQQ/200.gif)
 
