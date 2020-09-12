@@ -177,6 +177,8 @@ To fix this we want to add this to our CSS:
 
 What this does is that it means that the change will transformation will ease in and out, making it buttery smooth!
 
+<img src="https://cloud-af3nqoqwq.vercel.app/ezgif-4-effdbb2d1794.gif" width="380" alt="Grow on hover animation for each post">
+
 #### Hacking
 
 It's time for you to control, there are so many epic things you can do with CSS! So go forward and make your Scrapbook unique to you!! Here a few guiders:
