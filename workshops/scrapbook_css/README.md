@@ -185,6 +185,10 @@ It's time for you to control, there are so many epic things you can do with CSS!
 - You can change the text of the UI. Check out this [article](https://css-tricks.com/swapping-out-text-five-different-ways/#css-only-way) for get a sense of what I'm talking about! That's what I call a hack ;)
 - Animate everything! You've seen how we can animate elements in CSS but we've really only changed the colour and made something bigger. There are so many more properties that are animatable, check out this [extensive list](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties). Also change out my classes reference just below so you know how to change each element on the page.
 
+### Publishing
+
+To publish click `Add to Gist`. Copy the link. Now hop over to the #scrapbook-css channel in Slack and paste the link into a new message to apply it to your scrapbook!
+
 Once you're done making your profile pretty, how about sharing it in #scrapbook? Tag me (@sampoder), I'd love to see it!
 
 #### Reference Guide
