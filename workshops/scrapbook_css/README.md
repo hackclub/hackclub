@@ -20,7 +20,7 @@ Next up, you are going to want to open up the [Scrapbook Customizer](https://scr
 
 We’re now ready to get started!
 
-#### Magical Colours!
+## Magical Colours!
 
 To make setting colours easier, Scrapbook uses CSS variables. CSS variables work like variables do in any other programming language. You define the variable and then instead of pasting the value in everywhere you add `var(--variable-name)`. This makes it so that if you want to change a theme colour (like we're doing today!) you can do it with one line.
 
@@ -50,7 +50,7 @@ I choose these colours:
 
 <img src="https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt="Green and purple themed Scrapbook">
 
-#### Fancy fonts ❡
+## Fancy fonts ❡
 
 What if your Scrapbook was in cursive? Or in a crazy techno font! Fonts can give your page a lot more character, so let’s switch them up.
 
@@ -89,7 +89,7 @@ I went techno style, with the [Audiowide](https://fonts.google.com/specimen/Audi
 
 <img src="https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt="Green and purple themed Scrapbook">
 
-#### **Crazy CSS Animations - Part 1 ✌︎**
+## **Crazy CSS Animations - Part 1 ✌︎**
 
 We’ve got a fancy font and some magical colours but this site still needs some jazzing up! Looks animate it!
 First off, we’re going to make our text rainbow animated.
@@ -157,7 +157,7 @@ So can you do it? The solution is [here](#spinner-solution).
 
 <img src="https://cloud-ojh0xf17r.vercel.app/ezgif-5-5540a1713ebc.gif" width="380" alt="Spinning profile picture">
 
-#### **Crazy CSS Animations - Part 2** **✌︎**
+## **Crazy CSS Animations - Part 2** **✌︎**
 
 Animations can also happen when you hover over an element as well. This is through pseudo-classes, a word that you can add to your selector to specify a specific state. For example, `.header-title-avatar:hover` applies when the avatar is being hovered over.
 
@@ -183,7 +183,7 @@ What this does is that it means that the change will transformation will ease in
 
 <img src="https://cloud-af3nqoqwq.vercel.app/ezgif-4-effdbb2d1794.gif" width="380" alt="Grow on hover animation for each post">
 
-#### Hacking
+## Hacking
 
 It's time for you to control, there are so many epic things you can do with CSS! So go forward and make your Scrapbook unique to you!! Here a few guiders:
 
@@ -191,13 +191,13 @@ It's time for you to control, there are so many epic things you can do with CSS!
 - You can change the text of the UI. Check out this [article](https://css-tricks.com/swapping-out-text-five-different-ways/#css-only-way) for to get a better sense of what I'm talking about! That's what I call a hack ;)
 - Animate everything! You've seen how we can animate elements in CSS but we've really only changed the colour and made something bigger. There are so many more properties that are animatable, check out this [extensive list](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties). Also, check out my classes reference just below so you know how to change each element on the page.
 
-### Publishing
+## Publishing
 
 To publish click `Add to Gist`. Copy the link. Now hop over to the #scrapbook-css channel in Slack and paste the link into a new message to apply it to your scrapbook!
 
 Once you're done making your profile pretty, how about sharing it in #scrapbook? Tag me (@sampoder), I'd love to see it!
 
-#### Reference Guide
+## Reference Guide
 
 Here are all the classes you'll need to know to make a splendid Scrapbook:
 
@@ -231,7 +231,7 @@ Here are all the classes you'll need to know to make a splendid Scrapbook:
 
 `post-attachments` is the section with each image, video or audio file you've attached to your Scrapbook post.
 
-#### Inspiration
+## Inspiration
 
 To finish off, I'd like to leave you with some amazing customized Scrapbook profiles.
 
@@ -242,7 +242,7 @@ To finish off, I'd like to leave you with some amazing customized Scrapbook prof
 
 I truly hope you enjoyed this workshop, happy hacking!
 
-#### Spinner Solution
+## Spinner Solution
 
 ```css
 @keyframes rotate {
