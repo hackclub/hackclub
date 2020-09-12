@@ -244,7 +244,7 @@ I truly hope you enjoyed this workshop, happy hacking!
 
 #### Spinner Solution
 
-```
+```css
 @keyframes rotate {
   0% {
     transform: rotate(0deg)
