@@ -11,7 +11,7 @@ Well today I'm going to show you how to build one and you know what? Its very si
 
 ![Image](https://media.giphy.com/media/xT1XGLSb5E1VjIUw4E/giphy.gif)
 
-It will look something like this:  
+It will look something like this (But make sure you do add some custom CSS!) :  
 ![Image](https://cloud-azpvjrywa.vercel.app/image.png)
 
 Here's the [live demo][final_live_demo] and [final code][final_code]
