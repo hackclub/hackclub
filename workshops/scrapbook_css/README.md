@@ -73,7 +73,7 @@ Add the following code snippet just below the --colors-elevated line.
 
   --colors-elevated: YOURCOLOUR;
   
-  // Add this code below
+  */ Add this code below /*
   
   --fonts-body: 'Font name', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
 
