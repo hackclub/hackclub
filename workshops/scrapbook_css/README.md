@@ -50,7 +50,7 @@ I choose these colours:
 
 <img src="https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt="Green and purple themed Scrapbook">
 
-#### **Fancy fonts ❡**
+#### Fancy fonts ❡
 
 What if your Scrapbook was in cursive? Or in a crazy techno font! Fonts can give your page a lot more character, so let’s switch them up.
 
