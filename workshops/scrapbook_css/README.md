@@ -187,7 +187,7 @@ What this does is that it means that the change will transformation will ease in
 
 It's time for you to control, there are so many epic things you can do with CSS! So go forward and make your Scrapbook unique to you!! Here a few guiders:
 
-- Make a gradient background. You won't be able to do this with the CSS variables but you can by applying the background to the body tag instead. I'm saying too much, learn more about CSS gradients [here](https://css-tricks.com/css3-gradients/)!
+- Make a gradient background. You won't be able to do this with the CSS variables but you can by applying the background to the body tag instead. I'm saying too much, [this article explains CSS gradients](https://css-tricks.com/css3-gradients/)!
 - You can change the text of the UI. Check out this [article](https://css-tricks.com/swapping-out-text-five-different-ways/#css-only-way) for to get a better sense of what I'm talking about! That's what I call a hack ;)
 - Animate everything! You've seen how we can animate elements in CSS but we've really only changed the colour and made something bigger. There are so many more properties that are animatable, check out this [extensive list](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties). Also, check out my classes reference just below so you know how to change each element on the page.
 
@@ -201,35 +201,21 @@ Once you're done making your profile pretty, how about sharing it in #scrapbook?
 
 Here are all the classes you'll need to know to make a splendid Scrapbook:
 
-`header` is the entire section above your posts.
-
-`header-col-1` is the section with your avatar, name, streak (if set to display), social links and profile audio (if set). 
-
-`header-title-avatar` is your Avatar, it is a `<img>`.
-
-`header-title-name` is the heading with your name.
-
-`header-content` contains all of your social links and your streak (if set to display).
-
-`header-streak` is the indicator of your streak.
-
-`header-links` are your social links.
-
-`header-link` is a social link, there are likely multiple in the links section.
-
-`header-webring` is a section that contains each person in your webring if you've created one.
-
-`header-webring-mention` is a mention of a person in your webring, there are likely multiple in the webring section.
-
-`header-chart` is the chart that shows how often you post.
-
-`posts` is the section with all your posts.
-
-`post` is a post.
-
-`post-header` is the part of the post with the date / time.
-
-`post-attachments` is the section with each image, video or audio file you've attached to your Scrapbook post.
+- `header` is the entire section above your posts.
+- `header-col-1` is the section with your avatar, name, streak (if set to display), social links and profile audio (if set). 
+- `header-title-avatar` is your Avatar, it is a `<img>`.
+- `header-title-name` is the heading with your name.
+- `header-content` contains all of your social links and your streak (if set to display).
+- `header-streak` is the indicator of your streak.
+- `header-links` are your social links.
+- `header-link` is a social link, there are likely multiple in the links section.
+- `header-webring` is a section that contains each person in your webring if you've created one.
+- `header-webring-mention` is a mention of a person in your webring, there are likely multiple in the webring section.
+- `header-chart` is the chart that shows how often you post.
+- `posts` is the section with all your posts.
+- `post` is a post.
+- `post-header` is the part of the post with the date / time.
+- `post-attachments` is the section with each image, video or audio file you've attached to your Scrapbook post.
 
 ## Inspiration
 
