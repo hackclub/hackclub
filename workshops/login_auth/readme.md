@@ -12,6 +12,8 @@ This is a workshop to help you make something like this 👇
 
 <img src="https://cloud-8d96q79da.vercel.app/login_page.png">
 
+Live example : [Login Authentication](loginauth-12.web.app)
+
 ## Getting Started :rocket:
 ### Creating a firebase project -
 At first you'll need to sign-in to firebase console. if you have google account then you can directly sign-in to firebase, otherwise create one.
@@ -53,7 +55,8 @@ I have already created a code template so you can check it out and i will explai
 
 <img src="https://cloud-9e1ogteoo.vercel.app/7.png">
 
-**Code** : [Repl.it](https://repl.it/@tanishqsoni/Loginauth)
+
+### CODE : [Repl.it](https://repl.it/@tanishqsoni/Loginauth)
 
 #### Explaination of code </>
 
@@ -302,3 +305,25 @@ Here are some examples 👇
 - Adding `create account` feature so as user can create a new account.
 - Adding `Email verification` feature.
 - Adding `Anonymous Login` feature so as user can visit the page without login.
+
+#### ⭐ Live examples with code -
+
+##### Create Account
+In this feature you can type your email and password of your own choice and click on `create account`.
+
+- [Live example](https://loginauthcreateaccount.tanishqsoni.repl.co/)
+- [Code](https://repl.it/@tanishqsoni/loginauthcreateaccount)
+
+##### Email verification
+In this feature you can send verification mail to verify your account after login.
+
+- [Live example](https://loginauthemailverification.tanishqsoni.repl.co/)
+- [Code](https://repl.it/@tanishqsoni/Loginauthemailverification)
+
+##### Anonymous Login
+In this feature you can login anonymously with entering email or password.
+
+- [Live example](https://loginauthanonymous.tanishqsoni.repl.co/)
+- [Code](https://repl.it/@tanishqsoni/Loginauthanonymous)
+
+
