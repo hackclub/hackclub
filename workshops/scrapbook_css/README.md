@@ -1,6 +1,6 @@
 ---
 name: Creating a jaw-dropping Scrapbook
-description: A simple introduction to CSS and it’s wonderful quirks!
+description: A simple introduction to CSS and its wonderful quirks!
 author: '@sampoder'
 ---
 
