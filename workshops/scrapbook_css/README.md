@@ -22,9 +22,9 @@ We’re now ready to get started!
 
 #### Magical Colours!
 
-To make setting colours easier, Scrapbook uses CSS variables. These allow you to assign a variable a value and then whenever you want to use that value you type `var(variable_name)`.
+To make setting colours easier, Scrapbook uses CSS variables. CSS variables work like variables do in any other programming language. You define the variable and then instead of pasting the value in everywhere you add `var(variable_name)`. This makes it so that if you want to change a theme colour (like we're doing today!) you can do it with one line.
 
-For Scrapbook there are 3 colours, we’re going to want to play around with. The background colour, the colour of our text and the colour of the posts (referred to as colors-elevated below).
+For Scrapbook there are 3 key colour variables that we’re going to want to play around with today. These are the background colour, the colour of text and the colour of the posts (referred to as colors-elevated below). 
 
 To tell the web browser the exact colour we want, we can use either HEX codes, or RGB values. For this workshop, we’re going to use HEX codes. To help us get those, we can google “colour picker” or click this [link](https://www.google.com/search?q=color+picker). From here, you can play around with the slides and choose your preferred colour. Choose 3 colours to be used for the profile.
 
@@ -43,6 +43,8 @@ Then in the right column, type:
 ```
 
 Replace `YOURCOLOUR` with the HEX codes you found, make sure to include the hash (hashtag) symbol at the start.
+
+You may still see some grey, these are elements that use the `--colors-muted` variable, can you work out how to change them based on what we learnt above?
 
 I choose these colours:
 
@@ -91,6 +93,8 @@ I went techno style, with the [Audiowide](https://fonts.google.com/specimen/Audi
 
 We’ve got a fancy font and some magical colours but this site still needs some jazzing up! Looks animate it!
 First off, we’re going to make our text rainbow animated.
+
+Animations are made with keyframes, where you set the state of the object (in CSS properties) at different stages of the animation. If you've got any experience with video animation keyframing works very similarly here!
 
 Let’s define that animation:
 
