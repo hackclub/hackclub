@@ -14,7 +14,10 @@ This is a workshop to help you make something like this 👇
 
 Live example : [Login Authentication](https://loginauth-12.web.app)
 
+Try live example using Email-`login@authentication.com` and Password-`password`.
+
 ## Getting Started :rocket:
+
 ### Creating a firebase project -
 At first you'll need to sign-in to firebase console. if you have google account then you can directly sign-in to firebase, otherwise create one.
 
