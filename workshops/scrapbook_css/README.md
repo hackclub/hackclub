@@ -26,7 +26,7 @@ To make setting colours easier, Scrapbook uses CSS variables. These allow you to
 
 For Scrapbook there are 3 colours, we’re going to want to play around with. The background colour, the colour of our text and the colour of the posts (referred to as colors-elevated below).
 
-To tell the web browser the exact colour we want, we can use either HEX codes, or RGB values. For this workshop we’re going to use HEX codes. To help us get those, we can google “colour picker” or click this [link](https://www.google.com/search?q=color+picker). From here, you can play around with the slides and choose your preferred colour. Choose 3 colours to be used for the profile.
+To tell the web browser the exact colour we want, we can use either HEX codes, or RGB values. For this workshop, we’re going to use HEX codes. To help us get those, we can google “colour picker” or click this [link](https://www.google.com/search?q=color+picker). From here, you can play around with the slides and choose your preferred colour. Choose 3 colours to be used for the profile.
 
 Then in the right column, type:
 
@@ -52,7 +52,7 @@ I choose these colours:
 
 What if your Scrapbook was in cursive? Or in a crazy techno font! Fonts can give your page a lot more character, so let’s switch them up.
 
- is a great place to get started, scroll through all their fonts and find one you like! Click it and then for each of it’s styles click “Select this Style”. Then in the bar that has popped up on the right, click `Embed` and choose `@import`. Copy the first text box without the `<style>` tags. You should have something like:
+ is a great place to get started, scroll through all their fonts and find one you like! Click it and then for each of its styles click “Select this Style”. Then in the bar that has popped up on the right, click `Embed` and choose `@import`. Copy the first text box without the `<style>` tags. You should have something like:
 
 ```
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
@@ -130,7 +130,7 @@ Now, we need to tell the web browser which element should have the animation app
 }
 ```
 
-In between the two curly braces we can type stuff that changes what all the elements with the class: header-title-name have. Inside of this, let’s ask the web browser to add our animation to the element. We can do this by adding this:
+In between the two curly braces, we can type stuff that changes what all the elements with the class: header-title-name have. Inside of this, let’s ask the web browser to add our animation to the element. We can do this by adding this:
 
 ```css
 animation: rainbow 5s infinite;
@@ -155,7 +155,7 @@ So can you do it? The solution is [here](#spinner-solution).
 
 #### **Crazy CSS Animations - Part 2** **✌︎**
 
-Animations can also happen when you hover over an element as well. This is through pseudo-classes, a word that you can add to your selctor to specify a specfic state. For example, `.header-title-avatar:hover` applies when the avatar is being hovered over.
+Animations can also happen when you hover over an element as well. This is through pseudo-classes, a word that you can add to your selector to specify a specific state. For example, `.header-title-avatar:hover` applies when the avatar is being hovered over.
 
 What we're going to do in this section is to have it so that when we hover over a post it gets bigger. As each post has a class of `post` we can do this with the following:
 
@@ -165,7 +165,7 @@ What we're going to do in this section is to have it so that when we hover over 
 }
 ```
 
-However, when we do this it's a sharp and not at all smooth.
+However, when we do this it's very abrupt and not at all smooth.
 
 To fix this we want to add this to our CSS:
 
@@ -184,8 +184,8 @@ What this does is that it means that the change will transformation will ease in
 It's time for you to control, there are so many epic things you can do with CSS! So go forward and make your Scrapbook unique to you!! Here a few guiders:
 
 - Make a gradient background. You won't be able to do this with the CSS variables but you can by applying the background to the body tag instead. I'm saying too much, learn more about CSS gradients [here](https://css-tricks.com/css3-gradients/)!
-- You can change the text of the UI. Check out this [article](https://css-tricks.com/swapping-out-text-five-different-ways/#css-only-way) for get a sense of what I'm talking about! That's what I call a hack ;)
-- Animate everything! You've seen how we can animate elements in CSS but we've really only changed the colour and made something bigger. There are so many more properties that are animatable, check out this [extensive list](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties). Also change out my classes reference just below so you know how to change each element on the page.
+- You can change the text of the UI. Check out this [article](https://css-tricks.com/swapping-out-text-five-different-ways/#css-only-way) for to get a better sense of what I'm talking about! That's what I call a hack ;)
+- Animate everything! You've seen how we can animate elements in CSS but we've really only changed the colour and made something bigger. There are so many more properties that are animatable, check out this [extensive list](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties). Also, check out my classes reference just below so you know how to change each element on the page.
 
 ### Publishing
 
@@ -232,7 +232,7 @@ Here are all the classes you'll need to know to make a splendid Scrapbook:
 To finish off, I'd like to leave you with some amazing customized Scrapbook profiles.
 
 - The god of Scrapbook profiles: Caleb's scrapbook is too amazing for me to describe. Honestly, just [check it out](https://scrapbook.hackclub.com/caleb/).
-- @Ghoshwolf has made a retro themed Scrapbook, view it [here](https://scrapbook.hackclub.com/pauliukas.gec).
+- Ghoshwolf has made a retro-themed Scrapbook, view it [here](https://scrapbook.hackclub.com/pauliukas.gec).
 - Yash Karthik has made a purple Scrapbook, with a few hidden gems. Here's a [link](https://scrapbook.hackclub.com/yashkarthik95/).
 - I also have [my own](https://scrapbook.hackclub.com/sampoder) customized Scrapbook profile! The theme is always changing, at the time of writing it's Soviet themed.
 
