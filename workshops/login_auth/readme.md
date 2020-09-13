@@ -50,7 +50,7 @@ So before moving to project console first we need to design our login webpage.
 
 ### Designing a webpage 💻 - 
 
-Yea! it is the important part for this workshop, you need to design a webpage with login page card using:
+Yea! it is the important part for this workshop, you need to design a login webpage using:
 - HTML
 - CSS
 - JavaScript
