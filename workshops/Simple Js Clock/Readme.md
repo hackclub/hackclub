@@ -464,7 +464,7 @@ Here are somethings which you can do:
 - [HumanChalk](https://closelawfulbinarysearchtree--five-nine.repl.co/)  
 - [Adrian](https://js-clock.loboadrian.repl.co/)  
 - [Tanishq](http://darlingnoxiousfolder--five-nine.repl.co/)
-- [Aaryan Porwal](http://illclumsyattributes-1.aaryanporwal.repl.co/)
+- [Aaryan Porwal](https://myjsclock.aaryanporwal.repl.co/)
 
 Now that you have finished building this wonderful clock, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!  
 
