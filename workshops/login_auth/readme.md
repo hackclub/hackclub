@@ -76,7 +76,7 @@ HTML code is not complex here, i created two divisons `main-div` & `loggedin-div
     
 lookout [HTML](https://repl.it/@tanishqsoni/Loginauth#index.html) code.
 
-Tip: don't forgot to link HTML file with the CSS and JavaScript file using:
+don't forgot to link HTML file with the CSS and JavaScript file using:
 
 _CSS_
 ```html
@@ -184,7 +184,7 @@ Lookout complete [JavaScript](https://repl.it/@tanishqsoni/Loginauth#index.js) c
 
 Hooray!🎉 you just finished with the coding part!
 
-### Connecting firebase to your webpage
+### Connecting firebase to your webpage 🔗 -
 
 So again moving to firebase, After successfully creating firebase project you will see your project console.
 
@@ -200,6 +200,13 @@ After clicking on that new page will pops up and ask you for a nickname of your 
 <img src="https://cloud-8tdv8wfuj.vercel.app/8.png">
 
 Then you will see some sort of JavaScript code so don't worry about that, it is the code which contains some keys like API Key, Domain key which helps your firebase project to connect to your webpage and for that you need to copy this code and paste it into HTML code before `</body>` tag.
+
+Also include firebase JS SDK before that code.
+
+```javascript
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+```
 
 <img src="https://cloud-nsps2klza.vercel.app/9.png">
 
@@ -237,7 +244,7 @@ Now at last if you need hosting for your app you can choose any hosting provider
 
 Here i am going with Firebase.
 
-### Hosting webpage in firebase
+### Hosting webpage in firebase 🌐 - 
 
 For hosting your webpage in firebase you need to go to `Hosting` tab in the `Develop` section.
 
