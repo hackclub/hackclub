@@ -6,7 +6,7 @@ author: '@tanishq-soni'
 
 # Web Login Authentication 🔒
 
-In this workshop you'll build a secure web login page with the help of [firebase](https://firebase.google.com/).
+In this workshop you'll build a secure web login page with the help of [Firebase](https://firebase.google.com/).
 
 This is a workshop to help you make something like this 👇
 
@@ -199,7 +199,7 @@ After clicking on that new page will pops up and ask you for a nickname of your 
 
 <img src="https://cloud-8tdv8wfuj.vercel.app/8.png">
 
-Then you will see some sort of JavaScript code so don't woory about that, it is the code which contains some keys like API Key, Project key which helps your firebase project to connect to your webpage and for that you need to copy this code and paste it into HTML code before `</body>` tag.
+Then you will see some sort of JavaScript code so don't worry about that, it is the code which contains some keys like API Key, Domain key which helps your firebase project to connect to your webpage and for that you need to copy this code and paste it into HTML code before `</body>` tag.
 
 <img src="https://cloud-nsps2klza.vercel.app/9.png">
 
@@ -233,7 +233,9 @@ Then click on `Add user` and add `Email` and `Password` for that user and click 
 
 So, this is the database in which you can record users for restricted login 🔒.
 
-Now at last if you need hosting for your app you can choose any hosting providers like [Github](https://github.com/), [Vercel](https://vercel.com/) and even [Firebase](https://firebase.google.com/) so i am going with firebase hosting here.
+Now at last if you need hosting for your app you can choose any hosting providers like [Github](https://github.com/), [Vercel](https://vercel.com/), [Firebase](https://firebase.google.com/) and [Repl.it](https://repl.it) This online IDE provides you to host your webpage directly while writing code.
+
+Here i am going with Firebase.
 
 ### Hosting webpage in firebase
 
@@ -257,61 +259,63 @@ Run `firebase login` for login into firebase and after successfully login procee
 
 Run `firebase init` for setting up project directory.
 
-Follow the onscreen instructions.
+Follow the instructions on your terminal.
 
 <img src="https://cloud-47uau0rvc.vercel.app/c1.png">
 
-Using `space` move to hosting and press `enter`.
+Using `space` move to hostings option and press `enter`.
 
 <img src="https://cloud-okanfrh18.vercel.app/c2.png">
 
-After selecting hosting option you will be ask to select firebase project, so select a valid existing project and press `enter`.
+After selecting hosting option you will be ask to select firebase project, so select a project you just create and press `enter`.
 
 <img src="https://cloud-g6kdkqkyv.vercel.app/c3.png">
 <img src="https://cloud-itpmqub7h.vercel.app/c4.png">
 
-Now you need to setup hosting so for that `public` is the default folder which will contain your project i.e. (HTML + CSS + JavaScript files).
-So you need to create a folder named `public` and transfer all project files to it.
+Now you need to setup hosting so for that `public` is the default folder which will contain your webpage files i.e. (HTML + CSS + JavaScript).
+So you need to create a folder named `public` in your webpage directory and transfer all project files to it.
 
 <img src="https://cloud-j3w043jzq.vercel.app/c5.png">
 
-here it will ask you to auto create a new `index.html` in the public folder so you can select `no` as we already have `index.html`.
+Here it will ask you to auto create a new `index.html` in the public folder so you can select `N (for no)` as we already have `index.html`.
 
 <img src="https://cloud-gfaewro6r.vercel.app/c6.png">
 
-So after that initialization will complete.
+So after that initialization process will complete.
 
 <img src="https://cloud-eixkmi8ft.vercel.app/c7.png">
 
-Now at last step we need to deploy our project, so for that
+Now at last step you need to deploy you webpage and for that
 
-Run `firebase deploy` and your project will be hosted online.
+Run `firebase deploy` command and your webpage will be hosted online.
 
 <img src="https://cloud-aii6uvk91.vercel.app/c8.png">
 
-In above image you will see `Hosting URL`[https://loginauth-12.web.app/](https://loginauth-12.web.app/) so that is the URL for your project.
+In above image you will see `Hosting URL`[https://loginauth-12.web.app/](https://loginauth-12.web.app/) so that is the URL for your webpage.
+
+You can also use custom domain for your webpage by wising domain section in firebase.
 
 ### Hooray!🎉 
-You finished the Login Authentication Workshop by completing all tasks:
-- [x] Creating firebase project.
+You finished the Web Login Authentication Workshop by completing all tasks:
+- [x] Creating a firebase project.
 - [x] Designing a webpage.
 - [x] Connecting firebase to your webpage
 - [x] Hosting app in firebase
 
 ### ⚡ What's Next?
-Now you know how to build a Login Authentication webpage using firebase.
+Now you know how to build a web page with login authentication using firebase.
 
 Now how you can expand it? Try adding some other features to it with the help of [Firebase Guide](https://firebase.google.com/docs/auth/web/start?authuser=0)
 
 Here are some examples 👇
-- Adding `create account` feature so as user can create a new account.
+- Adding `create account` feature so user can create a new account.
 - Adding `Email verification` feature.
-- Adding `Anonymous Login` feature so as user can visit the page without login.
+- Adding `Anonymous Login` feature so user can visit the page without login.
 
 #### ⭐ Live examples with code -
 
 ##### Create Account
-In this feature you can type your email and password of your own choice and click on `create account`.
+In this feature you can type email and password of your own choice and click on `create account`.
 
 - [Live example](https://loginauthcreateaccount.tanishqsoni.repl.co/)
 - [Code](https://repl.it/@tanishqsoni/loginauthcreateaccount)
@@ -323,7 +327,7 @@ In this feature you can send verification mail to verify your account after logi
 - [Code](https://repl.it/@tanishqsoni/Loginauthemailverification)
 
 ##### Anonymous Login
-In this feature you can login anonymously with entering email or password.
+In this feature you can login anonymously without entering email or password.
 
 - [Live example](https://loginauthanonymous.tanishqsoni.repl.co/)
 - [Code](https://repl.it/@tanishqsoni/Loginauthanonymous)
