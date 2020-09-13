@@ -91,6 +91,6 @@ After you've done that press this icon as shown in the image below to upload the
 
 ![](images/animation.gif)
 You should also be getting this in your serial monitor which can access by going to Tools > Serial Monitor or Ctrl+Shift+M
-![](images/hw1.png)
+![](images/hw1.PNG)
 
 
