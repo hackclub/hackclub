@@ -19,7 +19,7 @@ Try live example using Email-`login@authentication.com` and Password-`password`.
 ## Getting Started :rocket:
 
 
-### Creating a firebase project -
+### Creating a firebase project 💻 -
 At first you will need to sign-in to firebase, if you have google account then you can directly sign-in to firebase otherwise create one.
 
 After sign-in you will see an interface like image below.
@@ -48,7 +48,7 @@ Now here you'll see `Your new project is ready`. Hooray!🎉 you just created yo
 
 So before moving to project console first we need to design our login webpage.
 
-### Designing a webpage 💻 - 
+### Designing a webpage 🖊️ - 
 
 Yea! it is the important part for this workshop, you need to design a login webpage using:
 - HTML
