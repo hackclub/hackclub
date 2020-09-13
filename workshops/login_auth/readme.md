@@ -6,9 +6,9 @@ author: '@tanishq-soni'
 
 # Web Login Authentication 🔒
 
-In this workshop you'll build a secure web login page with the help of [Firebase](https://firebase.google.com/).
+In this workshop you'll build a secure web login page using [Firebase](https://firebase.google.com/).
 
-This is a workshop to help you make something like this 👇
+You will make something like this 👇
 
 ![login](https://cloud-7782l8k04.vercel.app/loginv2.gif)
 
