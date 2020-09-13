@@ -34,7 +34,7 @@ In the console section you'll see all your firebase projects and here you will s
 
 <img src="https://cloud-nfiwmg8kh.vercel.app/3.png">
 
-Here you will need to give a name to your firebase project as i am giving `Login-auth`.
+Here you have to give a name to your firebase project as i am giving `Login-auth`.
 
 After giving a wonderful name to your project just click on continue to proceed further.
 
