@@ -1,25 +1,26 @@
 ---
-name: 'Login Authentication'
+name: 'Web Login Authentication'
 description: 'Build a secure web login page using firebase'
 author: '@tanishq-soni'
 ---
 
-# Login Authentication 🔒
+# Web Login Authentication 🔒
 
-In this workshop you'll build a web login page using firebase. In which only those peoples who are added to database can login.
+In this workshop you'll build a secure web login page with the help of [firebase](https://firebase.google.com/).
 
 This is a workshop to help you make something like this 👇
 
 <img src="https://cloud-8d96q79da.vercel.app/login_page.png">
 
-Live example : [Login Authentication](https://loginauth-12.web.app)
+[Live Example](https://loginauth-12.web.app)
 
 Try live example using Email-`login@authentication.com` and Password-`password`.
 
 ## Getting Started :rocket:
 
+
 ### Creating a firebase project -
-At first you'll need to sign-in to firebase console. if you have google account then you can directly sign-in to firebase, otherwise create one.
+At first you will need to sign-in to firebase, if you have google account then you can directly sign-in to firebase otherwise create one.
 
 After sign-in you will see an interface like image below.
 
@@ -29,7 +30,7 @@ In the above image you'll see `Go to console` tab at top right corner, so click 
 
 <img src="https://cloud-kfr44a6da.vercel.app/2.png">
 
-In the console section you'll see all your firebase projects and here you'll see `Add Project Card` so click on that to create a new project.
+In the console section you'll see all your firebase projects and here you will see `Add Project` card so click on that to create a new project.
 
 <img src="https://cloud-nfiwmg8kh.vercel.app/3.png">
 
@@ -43,9 +44,9 @@ Here is an optional step, If you need Google Analytics for your projects to can 
 
 <img src="https://cloud-3swaas1pn.vercel.app/5.png">
 
-So here you'll see `Your new project is ready`. Hooray!🎉 you just created your new firebase project.
+Now here you'll see `Your new project is ready`. Hooray!🎉 you just created your new firebase project.
 
-So now before moving to project console, we need to setup our webpage in which we can login so lets proceed further.
+So before moving to project console first we need to design our login webpage.
 
 ### Designing a webpage 💻 - 
 
@@ -54,28 +55,28 @@ Yea! it is the important part for this workshop, you need to design a webpage wi
 - CSS
 - JavaScript
 
-I have already created a code template so you can check it out and i will explain some parts of code which is important.
+I have already created a code template so you can check it out and i will explain some important parts of code which will help you for your workshop.
 
 <img src="https://cloud-9e1ogteoo.vercel.app/7.png">
 
 
-### CODE : [Repl.it](https://repl.it/@tanishqsoni/Loginauth)
+## CODE : [Repl.it](https://repl.it/@tanishqsoni/Loginauth)
 
 #### Explaination of code </>
 
 ##### HTML
-HTML code is not complex here, I have created two divisons `main-div` & `loggedin-div`. 
+HTML code is not complex here, i created two divisons `main-div` & `loggedin-div`. 
 - `main-div`
   - It is the main division which consists:
-    - Input fields `email` and `password`.
+    - Input fields like `email` and `password`.
     - Login button with onclick function `login()`.
 - `loggedin-div`
   - It is the logged in divison which consists:
     - Logout button with onclick function `logout()`.
     
-You can see [HTML](https://repl.it/@tanishqsoni/Loginauth#index.html) file here.
+lookout [HTML](https://repl.it/@tanishqsoni/Loginauth#index.html) code.
 
-don't forgot to link HTML file with the CSS and JavaScript file using:
+Tip: don't forgot to link HTML file with the CSS and JavaScript file using:
 
 _CSS_
 ```html
@@ -88,17 +89,15 @@ _JavaScript_
 ```
 
 ##### CSS
-The style of webpage is completely of your own choice like whether you need blue colour or black, you need rectangle buttons or circle! its completely yours. 
+The style of webpage is completely of your own choice like whether you need blue colour or black, you need rectangle buttons or circle! its completely yours choice.
 
-You can see [CSS](https://repl.it/@tanishqsoni/Loginauth#style.css) file here.
+lookout [CSS](https://repl.it/@tanishqsoni/Loginauth#style.css) code.
 
 ##### JAVASCRIPT
 
-The main part of webpage comes here, not to complex but somewhat and you can also read [firebase Auth documentation](https://firebase.google.com/docs/auth/web/start?authuser=0).
+The main part of webpage comes here and you can also go through [firebase Auth documentation](https://firebase.google.com/docs/auth/web/start?authuser=0).
 
-In the JavaScript file first you need to add a `AuthState` property which will determine the next steps using conditions
-
-`user is signed-in` and `no user is signed-in`.
+In the JavaScript code first you need to add a [`AuthState`](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user) property which is used to get currently `signed-in` user
 
 ```javascript
 firebase.auth().onAuthStateChanged(function(user) {
@@ -109,14 +108,14 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 ```
-As you know we created two divisions in HTML and we need `loggedin-div` division to be displayed only when the user is signed-in so in above code we need to do some changes,
-but before we make changes we need to assign `IDs` to both divisions:
+As you created two divisions in HTML so you have to do something like that `loggedin-div` division to be displayed only when the user is signed-in. So in above code you need to do some changes
+but before you make some changes you need to assign IDs to both divisions:
 
-ID `user_div` to division `loggedin-div`
+- ID `user_div` to division `loggedin-div`.
 
-ID `login_div` to division `main-div`
+- ID `login_div` to division `main-div`.
 
-After assigning IDs add this code in the `if` statement of `AuthState` property.
+After assigning IDs add this code in the `if` statement of [`AuthState`](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user) property.
 
 ```javascript
 
@@ -126,9 +125,9 @@ document.getElementById("login_div").style.display = "none";
 ```
 In the above code `block` will display the division and `none` will hide the division.
 
-As we added this for signed-in user so we also need `else` part _while user is not signed-in_ so the code will same as above code but we need to swap `block` and `none` as we need to show only `main-div`. 
+As you added this for signed-in user so you also need `else` part _while user is not signed-in_ so the code will same as above code but you need to swap `block` and `none` as you need to show only `main-div`. 
 
-Add below code to `else` statement of `AuthState` property.
+Add below code to `else` statement of [`AuthState`](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user) property.
 
 ```javascript
 
@@ -136,18 +135,18 @@ document.getElementById("user_div").style.display = "none";
 document.getElementById("login_div").style.display = "block";
 
 ```
-Now after completing this we need to work on both the functions we assigned in HTML `login()` and `logout()`.
+Now after completing this you need to work on both the functions you assigned in HTML `login()` and `logout()`.
 
 ##### Function login()
-As we only need `Sign-in for existing users` or users form database so for that firebase has a property called `signInWithEmailAndPassword`.
+As in this login page user can sign-in only if they are existing user so for that firebase has a property called [`signInWithEmailAndPassword`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users).
 
-So before we work on it we need to assign some IDs to input fields in HTML as we need to work with input field here.
+So before you work on it you need to assign some IDs to input fields in HTML as you need to work with input field here.
 
-ID `email_field` to `email` input field.
+- ID `email_field` to `email` input field.
 
-ID `password_field` to `password` input field.
+- ID `password_field` to `password` input field.
 
-After assigning IDs we will create two variables in `login()` function `userEmail` and `userPass` which get email and password from assigned IDs.
+After assigning IDs you will create two variables in `login()` function `userEmail` and `userPass` which get email and password values from assigned IDs.
 
 ```javascript
 function login(){
@@ -156,7 +155,7 @@ function login(){
   var userPass = document.getElementById("password_field").value;
 }
 ```
-So in the above function we need to add the `signInWithEmailAndPassword` which we discussed above.
+So in the above function you need to add the [`signInWithEmailAndPassword`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) property which we discussed above.
 
 ```javascript
 firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
@@ -166,22 +165,22 @@ firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error
   // ...
 });
 ```
-In the above code replace `email` with `userEmail` and `password` with `userPass`.
+In the above code replace `email` with `userEmail` and `password` with `userPass` as you declared that variables.
 
-Also we need to display error when error occurs like _wrong email or password_ so add below code in above function.
+Also you need to display error message when error occurs like _wrong email or password_ so add below code in above function.
 ```javascript
 window.alert("Error : " + errorMessage);
 ```
 ##### Function logout()
 
-In order to logout the user we need to create `logout()` and inside that function we need to call firebase `signOut` function.
+In order to logout the user you need to create `logout()` and inside that function we need to call firebase `signOut` function:
 
 ```javascript
 function logout(){
   firebase.auth().signOut();
 }
 ```
-You can see [JavaScript](https://repl.it/@tanishqsoni/Loginauth#index.js) here.
+Lookout complete [JavaScript](https://repl.it/@tanishqsoni/Loginauth#index.js) code.
 
 Hooray!🎉 you just finished with the coding part!
 
@@ -189,10 +188,10 @@ Hooray!🎉 you just finished with the coding part!
 
 So again moving to firebase, After successfully creating firebase project you will see your project console.
 
-At project console's landing page you will see `Get started by adding Firebase to your app` and below that you will se three options of integrations:
+At project console's landing page you will see `Get started by adding Firebase to your app` and below that you will see three options of integrations:
 1. iOS
 2. Android
-3. </> (this option is for web on which we are working so click on that).
+3. </> (this option is for web on which you are working so click on that).
 
 <img src="https://cloud-l7pn8f9e9.vercel.app/6.png">
 
@@ -200,17 +199,17 @@ After clicking on that new page will pops up and ask you for a nickname of your 
 
 <img src="https://cloud-8tdv8wfuj.vercel.app/8.png">
 
-Then you will see some sort of JavaScript code. you need to copy this code and paste it into HTML code before `</body>` tag.
+Then you will see some sort of JavaScript code so don't woory about that, it is the code which contains some keys like API Key, Project key which helps your firebase project to connect to your webpage and for that you need to copy this code and paste it into HTML code before `</body>` tag.
 
 <img src="https://cloud-nsps2klza.vercel.app/9.png">
 
-Now you have successfully integrated the firebase to your webpage. 
+Now you have successfully integrated the firebase project to your webpage. 
 
-After that you need to add users to database so that they can login, so for that you need to enable email/password authentication in your project's Authentication section, for that you need to click on `Authentication` on the top left `Develop` section.
+After that you need to add existing users so that they can login and for that you need to enable **Email/Password** authentication in your project's Authentication section, for that you need to click on tab `Authentication` on the top left `Develop` section.
 
 <img src="https://cloud-pnq6xn3gp.vercel.app/10.png">
 
-So here in Authentication page you'll see options:
+So here in Authentication page you'll see different tabs:
 - Users
 - Sign-in method
 - Templates
@@ -220,29 +219,29 @@ Click on Sign-in method.
 
 <img src="https://cloud-nvyxode6r.vercel.app/11.png">
 
-So first we need to enable Email/Password in `sign-in providers` section, so click on (Email/Password) and enable it and save it.
+So here you need to enable **Email/Password** in `sign-in providers` section, so click on **Email/Password** and enable it and save it.
 
 <img src="https://cloud-2vpwetbvx.vercel.app/12.png">
 
-After enabling that we need to add users to database, for that click on `Users` tab.
+After enabling that you need to add users to database, for that click on `Users` tab.
 
 <img src="https://cloud-kbxm635o2.vercel.app/13.png">
 
-Then click on `Add user` and add `email` and `password` for the user and click `Add user`.
+Then click on `Add user` and add `Email` and `Password` for that user and click `Add user`.
 
 <img src="https://cloud-l38zbxdt7.vercel.app/14.png">
 
 So, this is the database in which you can record users for restricted login 🔒.
 
-Now at last if you need hosting for your app, you can choose firebase hosting.
+Now at last if you need hosting for your app you can choose any hosting providers like [Github](https://github.com/), [Vercel](https://vercel.com/) and even [Firebase](https://firebase.google.com/) so i am going with firebase hosting here.
 
-### Hosting app in firebase
+### Hosting webpage in firebase
 
-For hosting your app in firebase you need to go to `Hosting` in the `Develop` section.
+For hosting your webpage in firebase you need to go to `Hosting` tab in the `Develop` section.
 
 <img src="https://cloud-ph3x9zqi5.vercel.app/15.png">
 
-In Hostings click on `Get Started` and follow all screen instructions or follow below steps.
+In Hostings click on `Get Started` and follow all on-screen instructions or follow below steps:
 
 <img src="https://cloud-764le5mp9.vercel.app/16.png">
 
@@ -251,9 +250,9 @@ Now you need to install firebase CLI and for that you should have node installed
 Run the following command to install firebase CLI
 `npm install -g firebase-tools`
 
-After installing CLI go to the directory where your project is stored and open terminal and run following commands.
+After installing CLI, headover your terminal to the directory where your webpage files is stored and run following commands:
 
-Run `firebase login` for login into firebase, after login proceed with below commands.
+Run `firebase login` for login into firebase and after successfully login proceed with below commands.
 
 
 Run `firebase init` for setting up project directory.
