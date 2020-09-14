@@ -10,7 +10,7 @@ In this workshop you'll build a secure web login page using [Firebase](https://f
 
 You will make something like this 👇
 
-![login](https://cloud-7782l8k04.vercel.app/loginv2.gif)
+<img src="https://cloud-7782l8k04.vercel.app/loginv2.gif">
 
 [Live Example](https://loginauth-12.web.app)
 
