@@ -240,7 +240,7 @@ Then click on `Add user` and add `Email` and `Password` for that user and click 
 
 So in this way you can record users for restricted login 🔒.
 
-Now at last if you need hosting for your app you can choose any hosting providers like [Github](https://github.com/), [Vercel](https://vercel.com/) and even [Firebase](https://firebase.google.com/).
+Now at last if you need hosting for your app you can choose any hosting providers like [Github](https://github.com/), [Vercel](https://vercel.com/), [Repl.it](https://repl.it) and even [Firebase](https://firebase.google.com/).
 
 Here i am going with Firebase.
 
