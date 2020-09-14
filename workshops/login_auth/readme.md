@@ -230,7 +230,7 @@ So here you need to enable **Email/Password** in `sign-in providers` section, so
 
 <img src="https://cloud-2vpwetbvx.vercel.app/12.png">
 
-After enabling that you need to add users to database, for that click on `Users` tab.
+After enabling that you need to add existing users, so for that click on `Users` tab.
 
 <img src="https://cloud-kbxm635o2.vercel.app/13.png">
 
@@ -238,7 +238,7 @@ Then click on `Add user` and add `Email` and `Password` for that user and click 
 
 <img src="https://cloud-l38zbxdt7.vercel.app/14.png">
 
-So, this is the database in which you can record users for restricted login 🔒.
+So in this way you can record users for restricted login 🔒.
 
 Now at last if you need hosting for your app you can choose any hosting providers like [Github](https://github.com/), [Vercel](https://vercel.com/) and even [Firebase](https://firebase.google.com/).
 
