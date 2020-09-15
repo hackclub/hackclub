@@ -19,7 +19,7 @@ author: '@Chromico'
 - An HC-SR501 Motion sensor module
 
 ## Wiring diagram of the HC-SR501 sensor
-![](images/wiring-sensor.jpg)
+![](https://cloud-dg5ajyg2z.vercel.app/wiring-sensor.jpg)
 
 Note: If motion is detected then the digital output of the sensor will be a `HIGH` state. If no motion is detected then the digital output will be in a `LOW` state.
 
@@ -36,7 +36,7 @@ For some Arduino compatible boards that use the CH340G/C download these [drivers
 
 Follow this wiring diagram below to see how the components should be connected
 
-![](images/wiring-diagram.png)
+![](https://cloud-dg5ajyg2z.vercel.app/wiring-diagram.png)
 
 
 ## 3. Create new a sketch and paste this code 
@@ -84,7 +84,7 @@ void loop() {
 First select your board in Tools > Board ( in this case Arduino Uno ) and then select your board's COM port in Tools > Port
 After you've done that press this icon as shown in the image below to upload the program to the board
 
-![](images/hw2.png)
+![](https://cloud-dg5ajyg2z.vercel.app/hw2.png)
 
 
 ## 5. See it in action
@@ -92,6 +92,6 @@ After you've done that press this icon as shown in the image below to upload the
 https://vimeo.com/457533338
 
 You should also be getting this in your serial monitor which can access by going to Tools > Serial Monitor or Ctrl+Shift+M
-![](images/hw1.PNG)
+![](https://cloud-dg5ajyg2z.vercel.app/hw1.png)
 
 
