@@ -38,6 +38,10 @@ Follow this wiring diagram below to see how the components should be connected
 
 ![](https://cloud-dg5ajyg2z.vercel.app/wiring-diagram.png)
 
+Arduino UNO I/O connections:
+`13` -> `Anode of LED ( the longer leg of the LED )`
+`11` -> `Positive side of buzzer`
+`12` -> `Output of HR-SR501 sensor`
 
 ## 3. Create new a sketch and paste this code 
 
@@ -93,5 +97,4 @@ https://vimeo.com/457533338
 
 You should also be getting this in your serial monitor which can access by going to Tools > Serial Monitor or Ctrl+Shift+M
 ![](https://cloud-dg5ajyg2z.vercel.app/hw1.png)
-
 
