@@ -75,7 +75,7 @@ b'{"c":112,"h":115.23,"l":110.03,"o":114.57,"pc":113.49,"t":1600032334}'
 This is a string of a JSON value that we'll need to parse in order to use.
 
 
-## Parsing th JSON
+## Parsing the JSON
 
 While this value is useful, we can't do much with it in our code. In order to use it, we'll need to use `json.loads()` to parse this string into a JSON. Let's add this line to our code:
 ```python
@@ -123,3 +123,5 @@ Here are some things to read to learn more about what we did here:
 * https://docs.python.org/3/library/json.html
 * https://www.howtogeek.com/343877/what-is-an-api/
 
+
+[See this in action](https://cloud-k8zl09ofw.vercel.app/zoom_1.mp4)
