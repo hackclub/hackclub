@@ -42,18 +42,13 @@ This is what it looks like:
 Let us first take a look at the HTML file (`index.html`) present in your repl.
 
 At line 1 we have `<!DOCTYPE html>` This declares that this file is a HTML file.  
-If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. Make sure that all the code you write is included between the opening and closing body tags. (`<body></body>`).  
+If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. Make sure that all the code you write is included between the opening and closing body tags. (`<body></body>`). Make sure to remove line 5 (`<meta name="viewport" content="width=device-width">`) which may cause some weird responsiveness issues for our workshop.  
 
-**Note:** Make sure you remove line 6 (`<meta name="viewport" content="width=device-width">`) :  
 ![Image](https://cloud-9zj6930c6.vercel.app/gif_maker.gif)
 
 ### 2) The CSS file
 
-This is the `style.css` file in your directory. Whatever styles we give to our website is written in this file.  
-Make sure you have imported this file in your main HTML file (`index.html`).  
-If you take a look in the `<head>` tag in your html, you will find a line of code similar to this.  
-`<link href="style.css" rel="stylesheet" type="text/css" />`
-This means that your CSS file is properly linked to your HTML file!
+This is the `style.css` file in your directory. Whatever styles we give to our website is written in this file. If you take a look in the `<head>` tag in your html, you will find a line of code (`<link href="style.css" rel="stylesheet" type="text/css" />`). This means that your CSS file is properly linked to your HTML file!
 
 ### 3) The JavaScript file
 
