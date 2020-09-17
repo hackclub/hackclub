@@ -25,7 +25,7 @@ Use the `+` icon on the top left corner on the figma window to create a new figm
 
 You can rename your file from the top bar which will initially named 'untitled'.
 
-![rename](https://cloud-fe3klq46d.vercel.app/untitled.png)
+![rename](https://cloud-4evcx7nry.vercel.app/rename_file.gif)
 
 Renaming
 
