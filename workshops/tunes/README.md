@@ -188,6 +188,8 @@ setTimeout(() => {document.getElementById(note).style.background = 'white';}, 20
 
 This will return the background to white after 200 milliseconds.
 
+<img src="https://cloud-emjvvdec0.vercel.app/ezgif-6-d255a4b6f60b.gif" width="380" alt="Colour changing keys">
+
 AND we've done it! Well done my friend, now let's make this a amazing project!
 
 ## Going beyond!
