@@ -101,25 +101,25 @@ Let’s define that animation:
 ```css
 @keyframes rainbow {
   14% {
-    color: #ff0000;
+    color: red;
   }
   28% {
-    color: #ffa500;
+    color: orange;
   }
   42% {
-    color: #ffff00;
+    color: yellow;
   }
   56% {
-    color: #008000;
+    color: green;
   }
   70% {
-    color: #0000ff;
+    color: cyan;
   }
   84% {
-    color: #4b0082;
+    color: blue;
   }
   100% {
-    color: #ee82ee;
+    color: purple;
   }
 }
 ```
