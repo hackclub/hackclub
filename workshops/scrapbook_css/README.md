@@ -174,12 +174,12 @@ So can you do it? The solution is [here](#spinner-solution).
 
 ## **Crazy CSS Animations - Part 2** **✌︎**
 
-Animations can also happen when you hover over an element as well. This is through pseudo-classes, a word that you can add to your selector to specify a specific state. For example, `.header-title-avatar:hover` applies when the avatar is being hovered over.
+Animations can also happen when you hover over an element as well. This is through pseudo-classes, a word that you can add to your selector to specify a specific state. For example, `.header-title-avatar :hover` applies when the avatar is being hovered over.
 
 What we're going to do in this section is to have it so that when we hover over a post it gets bigger. As each post has a class of `post` we can do this with the following:
 
 ```css
-.post:hover {
+.post :hover {
   transform: scale(1.02);
 }
 ```
@@ -203,7 +203,7 @@ What this does is that it means that the change will transformation will ease in
 It's time for you to control, there are so many epic things you can do with CSS! So go forward and make your Scrapbook unique to you!! Here a few guiders:
 
 - Make a gradient background. You won't be able to do this with the CSS variables but you can by applying the background to the body tag instead. I'm saying too much, [this article explains CSS gradients](https://css-tricks.com/css3-gradients/)!
-- You can change the text of the UI. Check out this [article on the subject](https://css-tricks.com/swapping-out-text-five-different-ways/#css-only-way) for to get a better sense of what I'm talking about! That's what I call a hack ;)
+- Swap out text on site with CSS. Check out this [article on the subject](https://css-tricks.com/swapping-out-text-five-different-ways/#css-only-way) to get a better sense of what I'm talking about! That's what I call a hack ;)
 - Animate everything! You've seen how we can animate elements in CSS but we've really only changed the colour and made something bigger. There are so many more properties that are animatable, check out this [extensive list](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties). Also, check out my classes reference just below so you know how to change each element on the page.
 
 ## Publishing
@@ -218,7 +218,7 @@ Here are all the classes you'll need to know to make a splendid Scrapbook:
 
 - `header` is the entire section above your posts.
 - `header-col-1` is the section with your avatar, name, streak (if set to display), social links and profile audio (if set). 
-- `header-title-avatar` is your Avatar, it is a `<img>`.
+- `header-title-avatar` is your avatar, it is a `<img>`.
 - `header-title-name` is the heading with your name.
 - `header-content` contains all of your social links and your streak (if set to display).
 - `header-streak` is the indicator of your streak.
@@ -236,10 +236,10 @@ Here are all the classes you'll need to know to make a splendid Scrapbook:
 
 To finish off, I'd like to leave you with some amazing customized Scrapbook profiles.
 
-- The god of Scrapbook profiles: Caleb's scrapbook is too amazing for me to describe. Honestly, just [check it out](https://scrapbook.hackclub.com/caleb/).
-- Ghoshwolf has made a [retro-themed Scrapbook](https://scrapbook.hackclub.com/pauliukas.gec).
-- Yash Karthik has made a [purple Scrapbook, with a few hidden gems](https://scrapbook.hackclub.com/yashkarthik95/).
-- I also have [my own](https://scrapbook.hackclub.com/sampoder) customized Scrapbook profile! The theme is always changing, at the time of writing it's Soviet themed.
+- The god of Scrapbook profiles: Caleb's scrapbook is too amazing for me to describe. Honestly, just [check it out](https://scrapbook.hackclub.com/caleb/). [Source code](https://gist.github.com/cjdenio/05d70b36875472a87d665ddb6c25aa1b)
+- Ghoshwolf has made a [retro-themed Scrapbook](https://scrapbook.hackclub.com/pauliukas.gec). [Source code](https://gist.github.com/TheOnlyGhostwolf/56614e8d810a9599e87551bc327f410e)
+- Yash Karthik has made a [purple Scrapbook, with a few hidden gems](https://scrapbook.hackclub.com/yashkarthik95/). [Source code](https://gist.github.com/YashKarthik/7ed6509dfd736fabb1a2b2503e2ee5ab)
+- I also have [my own](https://scrapbook.hackclub.com/sampoder) customized Scrapbook profile! The theme is always changing, at the time of writing it's Soviet themed. [Source code](https://scrapbook.hackclub.com/api/css/?url=https%3A%2F%2Fdeadspryintelligence.sampoder.repl.co%2Fstyle.css)
 
 I truly hope you enjoyed this workshop, happy hacking!
 
