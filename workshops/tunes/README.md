@@ -15,6 +15,8 @@ Let me just quickly explain the starter code. In there you will find three files
 
 At the top of `index.html` we reference our stylesheets and metadata. To make stylinging super easy I've also added a [Github Markdown CSS file](https://github.com/sindresorhus/github-markdown-css).
 
+<img src="https://cloud-f8397euam.vercel.app/screenshot_2020-09-17_at_7.06.42_pm.png" width="380" alt="Our starter site">
+
 ```html
 <body class="markdown-body">
   <div>
@@ -93,6 +95,8 @@ document.onkeydown = function(e){
 ```
 
 You'll see that when running this, our key is a number!? That's because each key has it's own code. [keycode.info](https://keycode.info/) is a super handy tool to help you identify the codes for each key.
+
+<img src="https://cloud-7ownn8t7c.vercel.app/screenshot_2020-09-17_at_7.14.26_pm.png" width="380" alt="keycode.info's UI">
 
 Now that we know how to identify the key, let's only log the event if it is the `s` key. It's keycode is `83` We'll use an if/else statement for this.
 
