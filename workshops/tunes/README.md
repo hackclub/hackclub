@@ -200,4 +200,4 @@ We've built a basic project, now let's make it EPIC! I'm handing over control to
 - [A piano that goes crazy.](https://optimistic-bhaskara-1870c3.netlify.app) This piano doesn't care, what ever you click it won't care about! Plays random sounds with random colours and some very kind messages!
 - [A global piano, a piano where every can go play and others can hear!](https://global-piano.herokuapp.com) Built with Socket.io, I've adpated this project to power this. Try opening up the website in multiple tabs to play around :) 
 
-Make something cool? Awesomeeee!!!! Share it on `#ship` in the Slack and tag me with `@sampoder`!
+Make something cool? Awesomeeee!!!! Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6/) in the Slack and tag me with [@sampoder](https://hackclub.slack.com/archives/DT08DHJKF/)!
