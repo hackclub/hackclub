@@ -189,10 +189,10 @@ body {
 	width: 25rem;
 	height: 25rem;
 	border: 20px solid whitesmoke;
+	border-radius: 50px;
 	background: blanchedalmond;
 	background-image: url(https://bit.ly/2RcERUw);
 	background-size: cover;
-	border-radius: 50px;
 	box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
 		inset 0 0 0 3px #efefef,
 		inset 0 0 10px black,
@@ -203,7 +203,8 @@ body {
 	position: relative;
 	width: 100%;
 	height: 100%;
-}```
+}
+```
 
 Similarly, add more stylings to your CSS code:
 
@@ -236,11 +237,13 @@ Similarly, add more stylings to your CSS code:
 ```
 
 **Explanation:** 
-We give the clock hands, a black color. (Once again, totally upto you. Give any color of your choice).  
+We give the clock hands, a black color.  
 We specify It's height and position. Next, we give it a property of `top` to `50%`, basically it aligns our clock hands in the very center of our clock. To ensure that our clock rotates properly, we give it a  `transform-origin: 100%;`.  
 (Try testing by removing the transform origin property once we add JavaScript later). Next we have more transition properties to animate our hands so as to give us that real clock effect!  
 
-Note: The `.hand` class was given to 3 `<div>` tags which means this styling will affect all the 3 `<div>` tags. To give some extra classes to the Hour Hand, Minute Hand and the Second Hand specifically, we also gave those 3 `<div>` tags, a unique classname.  
+Learn more about [transform-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)
+
+Note: The `.hand` class was given to 3 `<div>` tags which means this styling will affect all the 3 `<div>` tags. To give some extra classes to the Hour hand, Minute hand and the Second hand specifically, we also gave those 3 `<div>` tags, a unique classname.  
 
 To align each hand properly, we also give them a property of `right: 50%;`  
 
@@ -254,7 +257,7 @@ And that's it for the CSS. Now let's move on to the JavaScript Part!
 
 ## 3) JavaScript
 
-Before Panicking, let me ensure you that there's really only 20 lines of JavaScript code!
+Before panicking, let me ensure you that there's really only 20 lines of JavaScript code!
 
 Go to your `script.js` file.  
 First let us link the `<div>` tags in our HTML to JavaScript:  
@@ -267,15 +270,15 @@ const hourHand = document.querySelector(".hour-hand");
 ```
 
 **Explanation:**
-We declare the variables 'secondHand', 'minsHand', 'hourHand' using 'const' and set It's value to the first element that matches a specified CSS selector(s) in the document. In our case, that CSS selectors are `".second-hand"` , `".min-hand"` , `".hour-hand"` respectively.  
+We declare the variables `secondHand`, `minsHand`, `hourHand` using 'const' and set It's value to the first element that matches a specified CSS class(s) in the document. In our case, that CSS selectors are `.second-hand` , `.min-hand` , `.hour-hand` respectively.  
 
 **What is querySelector()?**
-The querySelector() method returns the first element that matches a specified CSS selector(s) in the document.
+The `querySelector()` method returns the first element that matches a specified CSS class(s) in the document.
 
-Learn more about query selector [here](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
+Learn more about `query selector` [here](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
 
 Now It's time to implement a function which will help us in the proper functioning of the clock.  
-Create a function 'setDate' in your file. (You can name it anything you want)
+Create a function `setDate` in your file. (You can name it anything you want)
 
 ```js
 function setDate() {
@@ -289,17 +292,17 @@ function setDate() {
  	const currentTime = new Date();
 }
 ```
-This object also contains specific methods through which you can get the current Hour / Minute / Second etc.  
+This object contains specific methods through which we can get the current hour / minute / second.  
 
-Learn more on [JavaScript Dates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
+Learn more on [JavaScript dates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
 
-let's start by getting the current seconds, Add this code to the setDate function:  
+lets start by getting the current seconds, Add this code to the `setDate` function:  
 ```
 const seconds = currentTime.getSeconds();
 ```
-Now, if we want the hands to rotate, we can't simply feed the current time to it. We'll need to convert the current values into degrees and henceforth do the transition.  
+Now, if we want the hands to rotate, we can't simply feed the current time to it. We'll need to convert the current values into degrees and then do the transition.  
 
-Maths Time!!  
+Time to do some maths! 
 
 ![Image](https://media.giphy.com/media/26gR0YFZxWbnUPtMA/giphy.gif)
 
@@ -307,9 +310,9 @@ Code:
 
 ```js
 function setDate() {
-    const currentTime = new Date();
-    const seconds = currentTime.getSeconds();
-	const secondDegrees = (seconds / 60) * 360 + 90;
+	const currentTime = new Date();
+	const seconds = currentTime.getSeconds();
+	const secondDegrees = ((seconds / 60) * 360) + 90;
 	secondHand.style.transform = `rotate(${secondDegrees}deg)`;
 }
 ```
@@ -331,15 +334,15 @@ The code so far:
 function setDate() {
  	const currentTime = new Date();
 	const seconds = currentTime.getSeconds();
-	const secondDegrees = (seconds / 60) * 360 + 90;
+	const secondDegrees = ((seconds / 60) * 360) + 90;
 	secondHand.style.transform = `rotate(${secondDegrees}deg)`;
 
 	const mins = currentTime.getMinutes();
-	const minsDeg = (mins / 60) * 360 + 90;
+	const minsDeg = ((mins / 60) * 360) + 90;
 	minsHand.style.transform = `rotate(${minsDeg}deg)`;
 
 	const hours = currentTime.getHours();
-	const hourDeg = (hours / 12) * 360 + 90;
+	const hourDeg = ((hours / 12) * 360) + 90;
 	hourHand.style.transform = `rotate(${hourDeg}deg)`;
 }
 ```
@@ -383,7 +386,7 @@ function setDate() {
 requestAnimationFrame(setDate);
 ```
 
-Learn more on [requestAnimationFrame()](https://css-tricks.com/using-requestanimationframe/).
+Learn more on `[requestAnimationFrame()](https://css-tricks.com/using-requestanimationframe/)`.
 
 Let us now try to run our code. And Voila! Our clock is ready!  
 But wait, if we notice something closely, when we refresh our website, something weird happens for a milisecond.  
@@ -416,13 +419,12 @@ setDate(); // Calling the function before requestAnimationFrame().
 requestAnimationFrame(setDate);
 ```
 
-**And Congratulations! You just built a clock using just 20 lines of JavaScript!**  
-What a beauty of Time!   
+**And congratulations! You just built a clock using just 20 lines of JavaScript!**    
 
 ![Image](https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif)
 
 ## Part V: The End
-If you haven't created an account on repl.it, make sure you do so to save this wonderful piece of creation!  
+If you haven't created an account on [repl.it](https://repl.it), make sure you do so to save this wonderful piece of creation!  
 
 Here are somethings which you can do:  
 1. Consider changing the colors and adding more features!  
@@ -438,9 +440,9 @@ Here are somethings which you can do:
 
 Now that you have finished building this wonderful clock, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!  
 
-You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the world wide Hack Club community there is no better place to do that than on Slack.  
+You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.  
 
 1. In a new tab, open and follow [these directions][slack] to signup for our Slack.  
-2. Then, post the link to the [`#ship`](https://hackclub.slack.com/messages/ship) channel to share it with everyone!
+2. Then, post the link to the [`#scrapbook`](https://hackclub.slack.com/messages/scrapbook) channel to share it with everyone!
 
 [slack]: https://slack.hackclub.com/
