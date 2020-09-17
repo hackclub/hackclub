@@ -25,7 +25,7 @@ Use the `+` icon on the top left corner on the figma window to create a new figm
 
 You can rename your file from the top bar which will initially named 'untitled'.
 
-![rename](https://hackclub.slack.com/files/UG60Z8MUK/F01B87UQ40Z/rename_file.gif?origin_team=T0266FRGM&origin_channel=DG60Z9LBV)
+![rename](https://cloud-fe3klq46d.vercel.app/untitled.png)
 
 Renaming
 
@@ -85,7 +85,7 @@ Using `shift` key while drawing shapes will give you shape with same width and h
 
 Using rectangle tool
 
-![square](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/square.gif)
+![square](https://cloud-fe3klq46d.vercel.app/square.gif)
 
 Using shift key with rectangle tool to makes a square
 
@@ -101,11 +101,11 @@ Using Pen tool
 
 Best thing about Figma is that it has a **vector editing** mode which gets toggled when you double click a vector. Here, the **pen tool** can be used to add joints to the existing vector and also you can add curves using **bend tool** and make custom vectors.
 
-![edit vector](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/vector_edit.gif)
+![edit vector](https://cloud-fe3klq46d.vercel.app/vector_edit.gif)
 
 Editing a vector
 
-![bend tool](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/vec_bend.gif)
+![bend tool](https://cloud-fe3klq46d.vercel.app/vec_bend.gif)
 
 Using bend tool
 
@@ -131,9 +131,9 @@ Use `shift` key to select multiple elements in the canvas
 
 An element can be scaled by dragging one of its corners. Use `shift` key to scale the element while maintaining its ratio. But while scaling a text or more than one elements, then this method could sometimes mess things up. So in that case use **Scale tool (K)** to perfectly scale your designs.
 
-![text resizing 1](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_resize_eror.gif)
+![text resizing 1](https://cloud-fe3klq46d.vercel.app/text_resize_eror.gif)
 
-![Text resizing 2](https://cloud-4evcx7nry.vercel.app/.gif)
+![Text resizing 2](https://cloud-fe3klq46d.vercel.app/text_resize.gif)
 
 And in some cases like in circles, you might want to scale the circle keeping its **center** fixed. To do so hold `alt` key while scaling.
 
@@ -159,7 +159,7 @@ Component is a very important part in figma when you have multiple contents of t
 
  You can make an element into a component by selecting it and then clicking the component button at the top bar or use `ctrl + K` 
 
-![component](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Sequence_02.gif)
+![component](https://cloud-fe3klq46d.vercel.app/sequence_02.gif)
 
 A child can be made independent of future component changes by selecting the '**Detach instance**' option in the right-click menu.
 
@@ -169,7 +169,7 @@ A child can be made independent of future component changes by selecting the '**
 
 You can find all the text formatting options in the design tab where font type, size, color, alignment, spacing etc can be changed.
 
-![text formating](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_1.gif)
+![text formating](https://cloud-fe3klq46d.vercel.app/text_1.gif)
 
 A text can be converted to a **vector** by using '**flatten**' option in the right-click menu!
 
@@ -183,7 +183,7 @@ When you start designing, the first thing that you need is an idea or a purpose.
 
 You can get inspired from other designers by checking [figma community](https://www.figma.com/community), [dribble](https://dribbble.com), [behance](https://www.behance.net) or any other medias where you can find creative content. 
 
-![community](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Untitled.png)
+![community](https://cloud-fe3klq46d.vercel.app/untitled.png)
 
 Figma Community
 
@@ -198,9 +198,9 @@ Plugins are add-ons that will help you design quickly and effortlessly!! Figma p
 Figma community tab lets you add **plugins** to your figma account, which can be called using the plugins menu when you `right click` on your canvas.
 There are a lot of plugins available such as material icons, iconify, Unsplash, remove bg, vectary 3d and much much more!
 
-![plugin1](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Untitled%201.png)
+![plugin1](https://cloud-fe3klq46d.vercel.app/untitled_1.png)
 
-![plugin2](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Untitled%202.png)
+![plugin2](https://cloud-fe3klq46d.vercel.app/untitled_2.png)
 
 Figma saves your work automatically in the cloud. 
 
