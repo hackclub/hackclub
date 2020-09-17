@@ -2,7 +2,7 @@
 
 **Figma is a vector graphics editor and prototyping tool that can be used for making most of the digital designs. Its the best in what it does and knowing the basics is all that you need to get going!**
 
-![Intro image](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/A4_-_3.png)
+![Intro image](https://images.unsplash.com/photo-1600289117499-c610840a58ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80)
 image source: unsplash
 
 This workshop is conducted for the ones who are not yet familiar with figma, and this workshop will provide them with the basics to create their first design in figma, be it a UI or a LOGO or a digital poster, any design they wish. 
