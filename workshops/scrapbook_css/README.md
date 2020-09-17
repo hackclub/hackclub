@@ -129,7 +129,7 @@ What this does is, 14% through the animation it will be #ff0000 (red), 28% throu
 Now, we need to tell the web browser which element should have the animation applied to it. How we identify an element is with a class name and a `.` before it. To start we want to type this:
 
 ```css
-.header-title-name{
+.header-title-name {
 
 }
 ```
