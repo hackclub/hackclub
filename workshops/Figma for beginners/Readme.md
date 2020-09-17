@@ -105,13 +105,13 @@ Using Pen tool
 
 Best thing about Figma is that it has a **vector editing** mode which gets toggled when you double click a vector. Here, the **pen tool** can be used to add joints to the existing vector and also you can add curves using **bend tool** and make custom vectors.
 
-![edit vector](https://cloud-fe3klq46d.vercel.app/vector_edit.gif)
+![edit vector](https://cloud-qno7puagi.vercel.app/vec_edit.gif)
 
 Editing a vector
 
 
 
-![bend tool](https://cloud-fe3klq46d.vercel.app/vec_bend.gif)
+![bend tool](https://cloud-qno7puagi.vercel.app/vec_bend.giff)
 
 Using bend tool
 
@@ -182,7 +182,7 @@ A child can be made independent of future component changes by selecting the '**
 
 You can find all the text formatting options in the design tab where font type, size, color, alignment, spacing etc can be changed.
 
-![text formating](https://cloud-fe3klq46d.vercel.app/text_1.gif)
+![text formating](https://cloud-qno7puagi.vercel.app/text_format.gif)
 
 A text can be converted to a **vector** by using '**flatten**' option in the right-click menu!
 
