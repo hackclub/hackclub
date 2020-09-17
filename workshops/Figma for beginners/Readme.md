@@ -25,7 +25,7 @@ Use the `+` icon on the top left corner on the figma window to create a new figm
 
 You can rename your file from the top bar which will initially named 'untitled'.
 
-![Rename File](https://cloud-4evcx7nry.vercel.app/rename_file.gif)
+![rename im](https://cloud-4evcx7nry.vercel.app/rename_file.gif)
 
 Renaming
 
@@ -133,7 +133,7 @@ An element can be scaled by dragging one of its corners. Use `shift` key to scal
 
 ![text resizing 1](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_resize_eror.gif)
 
-![Text resizing 2](https://cloud-4evcx7nry.vercel.app/dupli_dup.gif)
+![Text resizing 2](https://cloud-4evcx7nry.vercel.app/.gif)
 
 And in some cases like in circles, you might want to scale the circle keeping its **center** fixed. To do so hold `alt` key while scaling.
 
