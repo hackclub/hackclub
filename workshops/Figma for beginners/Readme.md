@@ -133,7 +133,7 @@ An element can be scaled by dragging one of its corners. Use `shift` key to scal
 
 ![text resizing 1](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_resize_eror.gif)
 
-![Text resizing 2](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_resize.gif)
+![Text resizing 2](https://cloud-4evcx7nry.vercel.app/dupli_dup.gif)
 
 And in some cases like in circles, you might want to scale the circle keeping its **center** fixed. To do so hold `alt` key while scaling.
 
