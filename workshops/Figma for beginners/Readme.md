@@ -27,7 +27,6 @@ You can rename your file from the top bar which will initially named 'untitled'.
 
 ![rename](https://cloud-5slgyoanm.vercel.app/resize_small.gif)
 
-Renaming
 
 
 
@@ -49,7 +48,6 @@ choose different presets from the panel at the right side, or you can just drag 
 
 ![Frame](https://cloud-4evcx7nry.vercel.app/frame.gif)
 
-Creating a frame
 
 
 Choosing the right frame size is important for your design, specially when you are designing to prototype.
@@ -84,8 +82,6 @@ Using `shift` key while drawing shapes will give you shape with same width and h
 
 ![rectangle](https://cloud-4evcx7nry.vercel.app/rect.gif)
 
-Using rectangle tool
-
 
 
 ![square](https://cloud-fe3klq46d.vercel.app/square.gif)
@@ -115,27 +111,15 @@ Editing a vector
 
 Using bend tool
 
-
 ---
 
 **Boolean operations** like union, intersection, subtraction etc. could be used to make different vector shapes as you desire. Boolean operation menu appear at the top bar when you select multiple elements.
 
 ![intersect](https://cloud-4evcx7nry.vercel.app/bool1.gif)
 
-Intersect selection
-
-
-
 ![Exclude](https://cloud-4evcx7nry.vercel.app/bool2.gif)
 
-Exclude selection
-
-
-
 ![Substract](https://cloud-4evcx7nry.vercel.app/bool4.gif)
-
-Subtract selection
-
 
 
 Use `shift` key to select multiple elements in the canvas
