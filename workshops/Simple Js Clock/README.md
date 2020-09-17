@@ -85,13 +85,13 @@ This is your code so far:
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="clock">
+	<div class="clock">
 		<div class="clock-face">
 			<div class="hand hour-hand"></div>
 			<div class="hand min-hand"></div>
 			<div class="hand second-hand"></div>
 		</div>
-    </div>
+	</div>
     <script src="script.js"></script>
   </body>
 </html>
@@ -102,32 +102,37 @@ And that's it! Yes really! We have completed writing our HTML.
 ### 2) CSS
 
 After we have done writing our HTML, it doesn't really show up on your browser screen. Your browser screen is blank!  
-Let's now add some stylings to our `<div>` tags!  
+Let's now add some styles to our `<div>` tags!  
 
 Go to `style.css` in your repl.it directory. Let's start by adding some styles to our body! uhh... I meant `<body>`!  
 
 Add the following code to your CSS:
 
 ```css
-      body {
-        background: #01ed7f;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-      }
+body {
+  background: #01ed7f;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 ```
 
 **Explanation:**
-3 Main steps in writing CSS:
+3 main steps in writing CSS:
 1. Select the tag / class / id on which you want to apply your styles.
-2. Open Curly Brackets `{}`.
+2. Open curly brackets `{}`.
 3. Start adding your styles inside the curly brackets!
 
 We start by giving our website a soothing green color. Go ahead and try changing it to the color of your own choice!  
-Then we removed the default margin and padding from all the elements in our website. We changed the default display `(display: block)` to `(display: flex)`. A very good reason for this is because `flex` enables you to align your items perfectly to the center! And that's what we have done in the next two lines. The `align-items` property aligns all your children elements to center, but horizontally. The `justify-content` property aligns all your children elements to center, but vertically. Next we have the `min-height` property which sets a minimum height of 100vh (Viewport Height) to your `<body>`. The `min-height` property works together with the `align-items` property and helps the children to align properly at the center.
+
+Then we removed the default margin and padding from all the elements in our website (Some elements have a default value for their margin and padding). We changed the default display `(display: block)` to `(display: flex)`.  
+A very good reason for this is because `flex` enables you to align your items perfectly to the center! And that's what we have done in the next two lines. The `align-items` property aligns all your children elements to center, but horizontally. The `justify-content` property aligns all your children elements to center, but vertically.  
+Next we have the `min-height` property which sets a minimum height of `100vh` (viewport height) to your `<body>`. The `min-height` property works together with the `align-items` property and helps the children to align properly at the center.
+
+Learn more about [viewport heights](https://www.sitepoint.com/css-viewport-units-quick-start/)
 
 Next, we'll need to add some styles to our clock!  
 Following the 3 main steps given above, let's accomplish this task!  
@@ -151,9 +156,9 @@ Following the 3 main steps given above, let's accomplish this task!
     background-image: url(https://bit.ly/2RcERUw);
     background-size: cover;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
-		inset 0 0 0 3px #efefef,
+				inset 0 0 0 3px #efefef,
                 inset 0 0 10px black,
-		0 0 10px rgba(0, 0, 0, 0.2);
+				0 0 10px rgba(0, 0, 0, 0.2);
 }
 ```
 
