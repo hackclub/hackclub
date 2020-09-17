@@ -83,7 +83,7 @@ Add the following code snippet just below the --colors-elevated line.
 ```
 
 
-Replace ` ‘Font name’` with the name of your font, just keep the quotes! We’ve left the other fonts there as a backup for if the font we want won’t load.
+Replace ` ‘Font name’` with the name of your font, just keep the quotes! We’ve left the other fonts there as a backup for if the font we want won’t load. These are called [Fallback Fonts](https://css-tricks.com/css-basics-fallback-font-stacks-robust-web-typography/)
 
 I went techno style, with the [Audiowide](https://fonts.google.com/specimen/Audiowide?category=Display&sidebar.open=true&selection.family=Audiowide) font.
 
