@@ -20,7 +20,7 @@ At the top of `index.html` we reference our stylesheets and metadata. To make st
   <div>
     <h1>Piano on the Web</h1>
     <p>Hey there! This site allows you to make music like you would on any piano! Let's make some noise!</p>
-    <p>Click the <kbd>S</kbd> key to make a middle C (or C4), then <kbd>D</kbd> to make D4 and so on up until B4 			with the <kbd>K</kbd> key.
+    <p>Click the <kbd>S</kbd> key to make a middle C (or C4), then <kbd>D</kbd> to make D4 and so on up until B4 with the <kbd>K</kbd> key.</p>
   </div>
   <div id="piano">
     <span class="key" id="C"><strong>C</strong></span>
