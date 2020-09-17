@@ -9,8 +9,6 @@ author: '@FaisalSayed'
 Have you ever wondered how to build a clock? Have you ever wanted to build your own clock but didn't because it was hard?  
 Well today I'm going to show you how to build one and you know what? It's very simple!  
 
-![Image](https://media.giphy.com/media/xT1XGLSb5E1VjIUw4E/giphy.gif)
-
 It will look something like this (But make sure you do add some custom CSS!) :  
 ![Image](https://cloud-azpvjrywa.vercel.app/image.png)
 
