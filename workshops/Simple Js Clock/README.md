@@ -157,7 +157,7 @@ Following the 3 main steps given above, let's accomplish this task!
     background-size: cover;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
 		inset 0 0 0 3px #efefef,
-                inset 0 0 10px black,
+		inset 0 0 10px black,
 		0 0 10px rgba(0, 0, 0, 0.2);
 }
 ```
@@ -347,7 +347,7 @@ function setDate() {
 }
 ```
 
-Our clock is almost finished! We now just need to call that function every second.  
+Our clock is almost finished! We now just need to call that function every second (recursion).  
 For this, first we will call a `requestAnimationFrame()` function inside of our main function (`setDate()`) and pass `setDate` to `requestAnimationFrame(//pass value here)`. This will make sure our function keeps running and never stops.
 
 ```js
@@ -360,37 +360,9 @@ Copy the `requestAnimationFrame(setDate)` function which we called it inside of 
 
 **Note:** Don't remove the previous `requestAnimationFrame(setDate)`. We need to add the same line once again, but outside of the function.  
 
-Our JavaScript Code so far:
-
-```js
-const secondHand = document.querySelector(".second-hand");
-const minsHand = document.querySelector(".min-hand");
-const hourHand = document.querySelector(".hour-hand");
-
-function setDate() {
- 	const currentTime = new Date();
-	const seconds = currentTime.getSeconds();
-	const secondDegrees = (seconds / 60) * 360 + 90;
-	secondHand.style.transform = `rotate(${secondDegrees}deg)`;
-
-	const mins = currentTime.getMinutes();
-	const minsDeg = (mins / 60) * 360 + 90;
-	minsHand.style.transform = `rotate(${minsDeg}deg)`;
-
-	const hours = currentTime.getHours();
-	const hourDeg = (hours / 12) * 360 + 90;
-	hourHand.style.transform = `rotate(${hourDeg}deg)`;
-	requestAnimationFrame(setDate);
-}
-
-requestAnimationFrame(setDate);
-```
-
 Learn more on `[requestAnimationFrame()](https://css-tricks.com/using-requestanimationframe/)`.
 
 Let us now try to run our code. And Voila! Our clock is ready!  
-But wait, if we notice something closely, when we refresh our website, something weird happens for a milisecond.  
-The quick fix for this is to call our main function before we call `requestAnimationFrame(setDate)`.  
 
 The Final Code:
 
@@ -415,7 +387,6 @@ function setDate() {
 	requestAnimationFrame(setDate);
 }
 
-setDate(); // Calling the function before requestAnimationFrame().
 requestAnimationFrame(setDate);
 ```
 
