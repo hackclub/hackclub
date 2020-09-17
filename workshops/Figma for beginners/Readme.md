@@ -51,6 +51,7 @@ choose different presets from the panel at the right side, or you can just drag 
 
 Creating a frame
 
+
 Choosing the right frame size is important for your design, specially when you are designing to prototype.
 
 ---
@@ -85,6 +86,8 @@ Using `shift` key while drawing shapes will give you shape with same width and h
 
 Using rectangle tool
 
+
+
 ![square](https://cloud-fe3klq46d.vercel.app/square.gif)
 
 Using shift key with rectangle tool to makes a square
@@ -97,6 +100,7 @@ Using shift key with rectangle tool to makes a square
 
 Using Pen tool
 
+
 ---
 
 Best thing about Figma is that it has a **vector editing** mode which gets toggled when you double click a vector. Here, the **pen tool** can be used to add joints to the existing vector and also you can add curves using **bend tool** and make custom vectors.
@@ -105,9 +109,12 @@ Best thing about Figma is that it has a **vector editing** mode which gets toggl
 
 Editing a vector
 
+
+
 ![bend tool](https://cloud-fe3klq46d.vercel.app/vec_bend.gif)
 
 Using bend tool
+
 
 ---
 
@@ -117,13 +124,19 @@ Using bend tool
 
 Intersect selection
 
+
+
 ![Exclude](https://cloud-4evcx7nry.vercel.app/bool2.gif)
 
 Exclude selection
 
+
+
 ![Substract](https://cloud-4evcx7nry.vercel.app/bool4.gif)
 
 Subtract selection
+
+
 
 Use `shift` key to select multiple elements in the canvas
 
@@ -186,6 +199,7 @@ You can get inspired from other designers by checking [figma community](https://
 ![community](https://cloud-fe3klq46d.vercel.app/untitled.png)
 
 Figma Community
+
 
 But if you are super-creative, then get started right away!!
 
