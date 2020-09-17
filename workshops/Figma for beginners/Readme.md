@@ -8,7 +8,9 @@ image source: unsplash
 
 This workshop is conducted for the ones who are not yet familiar with figma, and this workshop will provide them with the basics to create their first design in figma, be it a UI or a LOGO or a digital poster, any design they wish. 
 
+
 > You don't have to be an artist to be a designer!
+
 > And you definitely **don't** have to be a designer to use **FIGMA**!!
 
 ---
