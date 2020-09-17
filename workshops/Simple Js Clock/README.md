@@ -22,7 +22,7 @@ Here's the [live demo][final_live_demo] and [final code][final_code].
 You should have a beginner understanding of:
 - HTML
 - CSS
-- JAVASCRIPT
+- JavaScript
 
 ## Part II: Setup
 
