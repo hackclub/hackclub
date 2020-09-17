@@ -2,7 +2,7 @@
 
 **Figma is a vector graphics editor and prototyping tool that can be used for making most of the digital designs. Its the best in what it does and knowing the basics is all that you need to get going!**
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/A4_-_3.png](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/A4_-_3.png)
+![Intro image](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/A4_-_3.png)
 image source: unsplash
 
 This workshop is conducted for the ones who are not yet familiar with figma, and this workshop will provide them with the basics to create their first design in figma, be it a UI or a LOGO or a digital poster, any design they wish. 
@@ -25,7 +25,7 @@ Use the `+` icon on the top left corner on the figma window to create a new figm
 
 You can rename your file from the top bar which will initially named 'untitled'.
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/rename_file.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/rename_file.gif)
+![Rename File](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/rename_file.gif)
 
 Renaming
 
@@ -47,7 +47,7 @@ Frames are an important part of designing in figma. A frame acts as a parent to 
 You can create a frame using the **Frame tool (F)**. After selecting the frame tool, you can either
 choose different presets from the panel at the right side, or you can just drag your mouse on the canvas to create a custom frame.
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/frame.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/frame.gif)
+![Frame](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/frame.gif)
 
 Creating a frame
 
@@ -81,11 +81,11 @@ Every shape you create in figma is a vector. You can make **rectangles** , **ell
 
 Using `shift` key while drawing shapes will give you shape with same width and height i.e, you can make **squares** using rectangle tool and **circles** using ellipse tool
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/rect.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/rect.gif)
+![rectangle](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/rect.gif)
 
 Using rectangle tool
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/square.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/square.gif)
+![square](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/square.gif)
 
 Using shift key with rectangle tool to makes a square
 
@@ -93,7 +93,7 @@ Using shift key with rectangle tool to makes a square
 
 **Pen tool (P)** can be used to draw a vector, you can add fills and strokes to it.
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/pen_shape.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/pen_shape.gif)
+![pen tool](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/pen_shape.gif)
 
 Using Pen tool
 
@@ -101,11 +101,11 @@ Using Pen tool
 
 Best thing about Figma is that it has a **vector editing** mode which gets toggled when you double click a vector. Here, the **pen tool** can be used to add joints to the existing vector and also you can add curves using **bend tool** and make custom vectors.
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/vector_edit.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/vector_edit.gif)
+![edit vector](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/vector_edit.gif)
 
 Editing a vector
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/vec_bend.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/vec_bend.gif)
+![bend tool](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/vec_bend.gif)
 
 Using bend tool
 
@@ -113,15 +113,15 @@ Using bend tool
 
 **Boolean operations** like union, intersection, subtraction etc. could be used to make different vector shapes as you desire. Boolean operation menu appear at the top bar when you select multiple elements.
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/bool1.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/bool1.gif)
+![intersect](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/bool1.gif)
 
 Intersect selection
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/bool2.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/bool2.gif)
+![Exclude](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/bool2.gif)
 
 Exclude selection
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/bool4.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/bool4.gif)
+![Substract](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/bool4.gif)
 
 Subtract selection
 
@@ -131,9 +131,9 @@ Use `shift` key to select multiple elements in the canvas
 
 An element can be scaled by dragging one of its corners. Use `shift` key to scale the element while maintaining its ratio. But while scaling a text or more than one elements, then this method could sometimes mess things up. So in that case use **Scale tool (K)** to perfectly scale your designs.
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_resize_eror.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_resize_eror.gif)
+![text resizing 1](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_resize_eror.gif)
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_resize.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_resize.gif)
+![Text resizing 2](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_resize.gif)
 
 And in some cases like in circles, you might want to scale the circle keeping its **center** fixed. To do so hold `alt` key while scaling.
 
@@ -141,11 +141,11 @@ And in some cases like in circles, you might want to scale the circle keeping it
 
 Making a duplicate is an important trick to know, you can do that by simply pressing `ctrl + d`  and a duplicate of your selection will appear above itself. Another method to do so is to hold  `alt` key and drag your element, which will let you swiftly move a copy of an item to your destination.
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/dupe.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/dupe.gif)
+![duplicate](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/dupe.gif)
 
 Once you duplicate an item and move it to a position, figma will remember the movement and next time when you press `ctrl + d` the duplicate will be placed respective to your last movement.
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/dupli_dup.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/dupli_dup.gif)
+![duplicate 2](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/dupli_dup.gif)
 
 ---
 
@@ -159,7 +159,7 @@ Component is a very important part in figma when you have multiple contents of t
 
  You can make an element into a component by selecting it and then clicking the component button at the top bar or use `ctrl + K` 
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Sequence_02.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Sequence_02.gif)
+![component](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Sequence_02.gif)
 
 A child can be made independent of future component changes by selecting the '**Detach instance**' option in the right-click menu.
 
@@ -169,7 +169,7 @@ A child can be made independent of future component changes by selecting the '**
 
 You can find all the text formatting options in the design tab where font type, size, color, alignment, spacing etc can be changed.
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_1.gif](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_1.gif)
+![text formating](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/text_1.gif)
 
 A text can be converted to a **vector** by using '**flatten**' option in the right-click menu!
 
@@ -183,7 +183,7 @@ When you start designing, the first thing that you need is an idea or a purpose.
 
 You can get inspired from other designers by checking [figma community](https://www.figma.com/community), [dribble](https://dribbble.com), [behance](https://www.behance.net) or any other medias where you can find creative content. 
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Untitled.png](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Untitled.png)
+![community](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Untitled.png)
 
 Figma Community
 
@@ -198,9 +198,9 @@ Plugins are add-ons that will help you design quickly and effortlessly!! Figma p
 Figma community tab lets you add **plugins** to your figma account, which can be called using the plugins menu when you `right click` on your canvas.
 There are a lot of plugins available such as material icons, iconify, Unsplash, remove bg, vectary 3d and much much more!
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Untitled%201.png](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Untitled%201.png)
+![plugin1](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Untitled%201.png)
 
-![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Untitled%202.png](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Untitled%202.png)
+![plugin2](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/Untitled%202.png)
 
 Figma saves your work automatically in the cloud. 
 
