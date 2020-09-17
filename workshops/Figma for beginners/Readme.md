@@ -10,7 +10,6 @@ This workshop is conducted for the ones who are not yet familiar with figma, and
 
 
 > You don't have to be an artist to be a designer!
-
 > And you definitely **don't** have to be a designer to use **FIGMA**!!
 
 ---
