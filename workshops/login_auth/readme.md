@@ -246,6 +246,8 @@ Here i am going with Firebase.
 
 ### Hosting webpage in firebase 🌐 - 
 
+Hosting part is totally optional!
+
 For hosting your webpage in firebase you need to go to `Hosting` tab in the `Develop` section.
 
 <img src="https://cloud-ph3x9zqi5.vercel.app/15.png">
