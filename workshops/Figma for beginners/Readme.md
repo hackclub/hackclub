@@ -3,7 +3,6 @@
 **Figma is a vector graphics editor and prototyping tool that can be used for making most of the digital designs. Its the best in what it does and knowing the basics is all that you need to get going!**
 
 ![Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/A4_-_3.png](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/A4_-_3.png)
-
 image source: unsplash
 
 This workshop is conducted for the ones who are not yet familiar with figma, and this workshop will provide them with the basics to create their first design in figma, be it a UI or a LOGO or a digital poster, any design they wish. 
@@ -56,7 +55,7 @@ Choosing the right frame size is important for your design, specially when you a
 
 ---
 
-You can zoom in and out on the canvas using `ctrl + scrol` or by using `+` and `-` keys.
+You can zoom in and out on the canvas using `ctrl + scroll` or by using `+` and `-` keys.
 
 You can pan around the canvas using Hand tool (H). Holding down `space` will temporarily switch your pointer to hand tool.
 
