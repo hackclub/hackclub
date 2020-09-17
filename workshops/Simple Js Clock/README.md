@@ -53,8 +53,7 @@ This is the `style.css` file in your directory. Whatever styles we give to our w
 ### 3) The JavaScript file
 
 This is the `script.js` file in your directory. It's empty for now, but we will fill it eventually through the workshop!  
-Also, this is the most important file for our today's workshop. The code written here will be responsible for the functioning of our Clock.  
-Make sure you have linked this file too in your HTML.  
+Also, this is the most important file for our today's workshop. The code written here will be responsible for the functioning of our clock.  
 If you take a look in the `<body>` tag, you'll find:
 
 ```html
@@ -67,33 +66,12 @@ This means that your JavaScript file is linked to your HTML.
 ### 1) HTML
 
 Lets start building our clock! First let's write the HTML code required.  
-Inside of our `<body>` tag, add a `<div>` tag with "Hello World!" in it.  
-Let's see if we wrote our code correctly. On the top of your website, you'll see a **RUN** Button. Click on it and see the Magic Happen! If you see "Hello World!" printed on your screen, you are going the right way!  
+Inside of our `<body>` tag, add a `<div>` tag with a class "clock".  
 
-This is your code so far.
+Add another `<div>` tag inside of your existing `<div>` and give it a class of "clock-face". Let's add 3 more `<div>` tags nested inside of the "clock-face" div. 
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script src="script.js"></script>
-    <div>Hello World</div> <!-- Adding a div tag -->
-  </body>
-</html>
-```
+Give a class of `"hand hour-hand"`, `"hand min-hand"`, `"hand second-hand"` to each of the 3 new `<div>` tags respectively.  
 
-We don't really need the 'Hello World' right? Let's remove it.  
-Add a class "clock" to your `<div>` tag. Now we need to nest some more div tags inside it. Add another `<div>` tag inside of your existing `<div>` and give it a class of "clock-face". Let's add 3 more `<div>` tags nested inside of the "clock-face" div.  
-
-Note: Don't nest these 3 tags in themselves.  
-
-Give a class of "hand hour-hand", "hand min-hand", "hand second-hand" to each of the 3 new `<div>` tags respectively.  
 Note: Make sure the `<script>` tag, which is in your body, is below the `<div>` tags or else it will throw you errors.  
 
 This is your code so far:
@@ -101,27 +79,21 @@ This is your code so far:
 ```html
 <!DOCTYPE html>
 <html>
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>repl.it</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
     <div class="clock">
-      <div class="clock-face">
-      <!-- Nesting the Div -->
-        <div class="hand hour-hand"></div>
-        <div class="hand min-hand"></div>
-        <div class="hand second-hand"></div>
-      <!-- Nesting the Div -->
-      </div>
+	<div class="clock-face">
+		<div class="hand hour-hand"></div>
+		<div class="hand min-hand"></div>
+		<div class="hand second-hand"></div>
+	</div>
     </div>
-	<script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
 ```
 
