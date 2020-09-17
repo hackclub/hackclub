@@ -107,7 +107,7 @@ Editing a vector
 
 
 
-![bend tool](https://cloud-qno7puagi.vercel.app/vec_bend.giff)
+![bend tool](https://cloud-qno7puagi.vercel.app/vec_bend.gif)
 
 Using bend tool
 
