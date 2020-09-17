@@ -97,7 +97,7 @@ This is your code so far:
 </html>
 ```
 
-And that's it! Yes really! We have completed writing our HTML.
+And that's it! We have completed writing our HTML.
 
 ### 2) CSS
 
@@ -244,9 +244,11 @@ Similarly, add more stylings to your CSS code:
 
 **Explanation:** 
 We give the clock hands, a black color.  
-We specify It's height and position. Next, we give it a property of `top` to `50%`, basically it aligns our clock hands in the very center of our clock. To ensure that our clock rotates properly, we give it a  `transform-origin: 100%;`.  
-(Try testing by removing the transform origin property once we add JavaScript later). Next we have more transition properties to animate our hands so as to give us that real clock effect!  
-(transition properties help you animate the elements)
+We specify It's height and position. Next, we give it a property of `top` to `50%`, basically it aligns our clock hands in the very center of our clock. To ensure that our clock rotates properly, we give it a  `transform-origin: 100%;`. The transformation origin is the point around which a transformation is applied.  
+
+Next we have more transition properties to animate our hands so as to give us that real clock effect! (transition properties help you animate the elements).
+
+![Image](https://cloud-e99m314xu.vercel.app/image.png)
 
 Learn more about [transform-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)
 
@@ -324,14 +326,16 @@ function setDate() {
 }
 ```
 **Explanation:**
-We have the current seconds stored in the `seconds` variable. We then create a new variable (`secondDegrees`) in which we convert the current seconds into degrees. In the next line, we add the transform style property to the `secondHand` which will rotate the hand according to the value of `secondDegrees`.  
+We have the current seconds stored in the `seconds` variable. We then create a new variable (`secondDegrees`) in which we use an equation to convert the current seconds into degrees. In the next line, we add the transform style property to the `secondHand` which will rotate the hand according to the value of `secondDegrees`.  
 Note: Here, we used backticks (` `) instead of quotes (""). This is an ES6 syntax. It helps us to write variables inside of strings.  
 So that line basically looks like:  
 
 ```
-eg: if secondDegrees = 110;
-then: secondHand.style.transform = 'rotate(110deg)'; 
+eg: if secondDegrees = 150;
+then: secondHand.style.transform = 'rotate(150deg)'; 
 ```
+
+![Image](https://cloud-bmrnpv27n.vercel.app/image.png)
 
 **Challenge:** Do the same above process for fetching minutes & hours and convert them into degrees.  
 **Hint:** Use the methods `getMinutes()` and `getHours()`
@@ -356,7 +360,8 @@ function setDate() {
 ```
 
 Our clock is almost finished! We now just need to call that function every second (recursion).  
-For this, first we will call a `requestAnimationFrame()` function inside of our main function (`setDate()`) and pass `setDate` to `requestAnimationFrame(//pass value here)`. This will make sure our function keeps running and never stops.
+For this, first we will call a `requestAnimationFrame()` function inside of our main function (`setDate()`).  
+Now, pass `setDate` to `requestAnimationFrame(//pass value here)`. This will make sure our function keeps running and never stops.
 
 ```js
 requestAnimationFrame(setDate)
@@ -364,9 +369,7 @@ requestAnimationFrame(setDate)
 Let us now try to run our code.  
 Hmm... Something is wrong... Our JavaScript doesn't seem to work.  
 That is because we never called our function at the very first place.  
-Copy the `requestAnimationFrame(setDate)` function which we called it inside of our function and paste it outside of the main function.  
-
-**Note:** Don't remove the previous `requestAnimationFrame(setDate)`. We need to add the same line once again, but outside of the function.  
+Call our function outside in our script.   
 
 Learn more on `[requestAnimationFrame()](https://css-tricks.com/using-requestanimationframe/)`.
 
@@ -395,7 +398,7 @@ function setDate() {
 	requestAnimationFrame(setDate);
 }
 
-requestAnimationFrame(setDate);
+setDate();
 ```
 
 **And congratulations! You just built a clock using just 20 lines of JavaScript!**    
