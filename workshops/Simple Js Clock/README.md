@@ -129,7 +129,9 @@ body {
 We start by giving our website a soothing green color. Go ahead and try changing it to the color of your own choice!  
 
 Then we removed the default margin and padding from all the elements in our website (Some elements have a default value for their margin and padding). We changed the default display `(display: block)` to `(display: flex)`.  
+
 A very good reason for this is because `flex` enables you to align your items perfectly to the center! And that's what we have done in the next two lines. The `align-items` property aligns all your children elements to center, but horizontally. The `justify-content` property aligns all your children elements to center, but vertically.  
+
 Next we have the `min-height` property which sets a minimum height of `100vh` (viewport height) to your `<body>`. The `min-height` property works together with the `align-items` property and helps the children to align properly at the center.
 
 Learn more about [viewport heights](https://www.sitepoint.com/css-viewport-units-quick-start/)
@@ -163,7 +165,11 @@ Following the 3 main steps given above, let's accomplish this task!
 ```
 
 **Explanation**:
-We gave a width and a height to our clock. Next, we gave it a border and the radius for the border. Next, is the background color for that clock (if you don't like it, consider changing it or even removing it). Similarly, there's a background image which is the face of the clock. we need to add `background-size: cover;` property, in order to show our image properly on the website screen. Also, we have added some shadows to the element. We gave multiple shadows so as to get a cool effect on our clock. Also, the `inset` property changes the shadow from an outer shadow (outset) to an inner shadow.
+We gave a width and a height to our clock. Next, we gave it a border and the radius for the border. Next, is the background color for that clock (if you don't like it, consider changing it or even removing it).  
+
+Similarly, there's a background image which is the face of the clock. we need to add `background-size: cover;` property, in order to show our image properly on the website screen.  
+
+Also, we have added some shadows to the element. We gave multiple shadows so as to get a cool effect on our clock. Also, the `inset` property changes the shadow from an outer shadow (outset) to an inner shadow.
 
 Now lets test our code! Click on the **RUN** button and Voila! Here's the basic background for our clock!  
 
@@ -240,6 +246,7 @@ Similarly, add more stylings to your CSS code:
 We give the clock hands, a black color.  
 We specify It's height and position. Next, we give it a property of `top` to `50%`, basically it aligns our clock hands in the very center of our clock. To ensure that our clock rotates properly, we give it a  `transform-origin: 100%;`.  
 (Try testing by removing the transform origin property once we add JavaScript later). Next we have more transition properties to animate our hands so as to give us that real clock effect!  
+(transition properties help you animate the elements)
 
 Learn more about [transform-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)
 
@@ -318,8 +325,9 @@ function setDate() {
 ```
 **Explanation:**
 We have the current seconds stored in the `seconds` variable. We then create a new variable (`secondDegrees`) in which we convert the current seconds into degrees. In the next line, we add the transform style property to the `secondHand` which will rotate the hand according to the value of `secondDegrees`.  
-Note: Here, we used backticks (``) instead of quotes (""). This is an ES6 syntax. It helps us to write variables inside of strings.  
+Note: Here, we used backticks (` `) instead of quotes (""). This is an ES6 syntax. It helps us to write variables inside of strings.  
 So that line basically looks like:  
+
 ```
 eg: if secondDegrees = 110;
 then: secondHand.style.transform = 'rotate(110deg)'; 
