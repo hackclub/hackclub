@@ -2,7 +2,7 @@
 
 **Figma is a vector graphics editor and prototyping tool that can be used for making most of the digital designs. Its the best in what it does and knowing the basics is all that you need to get going!**
 
-![Intro image](https://images.unsplash.com/photo-1600289117499-c610840a58ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80)
+![Intro image](https://cloud-4evcx7nry.vercel.app/a4_-_3.png)
 image source: unsplash
 
 This workshop is conducted for the ones who are not yet familiar with figma, and this workshop will provide them with the basics to create their first design in figma, be it a UI or a LOGO or a digital poster, any design they wish. 
@@ -25,7 +25,7 @@ Use the `+` icon on the top left corner on the figma window to create a new figm
 
 You can rename your file from the top bar which will initially named 'untitled'.
 
-![Rename File](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/rename_file.gif)
+![Rename File](https://cloud-4evcx7nry.vercel.app/rename_file.gif)
 
 Renaming
 
@@ -47,7 +47,7 @@ Frames are an important part of designing in figma. A frame acts as a parent to 
 You can create a frame using the **Frame tool (F)**. After selecting the frame tool, you can either
 choose different presets from the panel at the right side, or you can just drag your mouse on the canvas to create a custom frame.
 
-![Frame](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/frame.gif)
+![Frame](https://cloud-4evcx7nry.vercel.app/frame.gif)
 
 Creating a frame
 
@@ -81,7 +81,7 @@ Every shape you create in figma is a vector. You can make **rectangles** , **ell
 
 Using `shift` key while drawing shapes will give you shape with same width and height i.e, you can make **squares** using rectangle tool and **circles** using ellipse tool
 
-![rectangle](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/rect.gif)
+![rectangle](https://cloud-4evcx7nry.vercel.app/rect.gif)
 
 Using rectangle tool
 
@@ -93,7 +93,7 @@ Using shift key with rectangle tool to makes a square
 
 **Pen tool (P)** can be used to draw a vector, you can add fills and strokes to it.
 
-![pen tool](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/pen_shape.gif)
+![pen tool](https://cloud-4evcx7nry.vercel.app/pen_shape.gif)
 
 Using Pen tool
 
@@ -113,15 +113,15 @@ Using bend tool
 
 **Boolean operations** like union, intersection, subtraction etc. could be used to make different vector shapes as you desire. Boolean operation menu appear at the top bar when you select multiple elements.
 
-![intersect](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/bool1.gif)
+![intersect](https://cloud-4evcx7nry.vercel.app/bool1.gif)
 
 Intersect selection
 
-![Exclude](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/bool2.gif)
+![Exclude](https://cloud-4evcx7nry.vercel.app/bool2.gif)
 
 Exclude selection
 
-![Substract](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/bool4.gif)
+![Substract](https://cloud-4evcx7nry.vercel.app/bool4.gif)
 
 Subtract selection
 
@@ -141,11 +141,11 @@ And in some cases like in circles, you might want to scale the circle keeping it
 
 Making a duplicate is an important trick to know, you can do that by simply pressing `ctrl + d`  and a duplicate of your selection will appear above itself. Another method to do so is to hold  `alt` key and drag your element, which will let you swiftly move a copy of an item to your destination.
 
-![duplicate](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/dupe.gif)
+![duplicate](https://cloud-4evcx7nry.vercel.app/dupe.gif)
 
 Once you duplicate an item and move it to a position, figma will remember the movement and next time when you press `ctrl + d` the duplicate will be placed respective to your last movement.
 
-![duplicate 2](Figma%20for%20Beginners%20afae43e5319241d2921fc06a5e4897cd/dupli_dup.gif)
+![duplicate 2](https://cloud-4evcx7nry.vercel.app/dupli_dup.gif)
 
 ---
 
