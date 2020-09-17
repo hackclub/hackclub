@@ -12,9 +12,9 @@ _^ what's going to happen when people see your Scrapbook_
 
 One of the amazing things about building projects for the web is just how easy it is to make it beautiful! To style web projects, we use a language called CSS. It lets us do everything from changing to background colour to animating text!
 
-<img src="https://cloud-5j06exp7f.vercel.app/screenshot_2020-09-12_at_7.29.11_pm.png" width="380" alt="Sam Poder's Scrapbook Profile">
+<a href="https://scrapbook.hackclub.com/sampoder"><img src="https://cloud-5j06exp7f.vercel.app/screenshot_2020-09-12_at_7.29.11_pm.png" width="380" alt="Sam Poder's Scrapbook Profile"></a>
 
-Today, we’re going to be learning about CSS by customizing a [Scrapbook](https://scrapbook.hackclub.com/) profile (^ like mine above). Scrapbook is a platform where hackers can share photos of what they make or just of their daily life. If you don’t have a profile, log in to the Hack Club Slack, visit the [#scrapbook](https://hackclub.slack.com/archives/C01504DCLVD/) channel, take a photo (or use an old one) and post it! 
+Today, we’re going to be learning about CSS by customizing a [Scrapbook](https://scrapbook.hackclub.com/) profile (^ like mine above). Scrapbook is a platform where Hack Clubbers can share photos of what they make or just of their daily life. If you don’t have a profile, log in to the Hack Club Slack, visit the [#scrapbook](https://hackclub.slack.com/archives/C01504DCLVD/) channel, take a photo (or use an old one) and post it! 
 
 Next up, you are going to want to open up the [Scrapbook Customizer](https://scrapbook.hackclub.com/customizer/). Type in your username at the top, and delete any code in the right column. Click **‘Go’**.
 
@@ -26,7 +26,7 @@ To make setting colours easier, Scrapbook uses CSS variables. CSS variables work
 
 For Scrapbook there are 3 key colour variables that we’re going to want to play around with today. These are the background colour, the colour of text and the colour of the posts (referred to as colors-elevated below). 
 
-To tell the web browser the exact colour we want, we can use either HEX codes, or RGB values. For this workshop, we’re going to use HEX codes. To help us get those, we can [Google “colour picker”](https://www.google.com/search?q=color+picker). From here, you can play around with the slides and choose your preferred colour. Choose 3 colours to be used for the profile.
+To tell the web browser the exact colour we want, we can use either Hex codes, or RGB values. For this workshop, we’re going to use HEX codes. To help us get those, we can [Google “colour picker”](https://www.google.com/search?q=color+picker). From here, you can play around with the slides and choose your preferred colour. Choose 3 colours to be used for the profile.
 
 Then in the right column, type:
 
@@ -42,11 +42,26 @@ Then in the right column, type:
 }
 ```
 
-Replace `YOURCOLOUR` with the HEX codes you found, make sure to include the hash (hashtag) symbol at the start.
+Replace `YOURCOLOUR` with the Hex codes you found, make sure to include the hash (hashtag) symbol at the start.
 
 You may still see some grey, these are elements that use the `--colors-muted` variable, can you work out how to change them based on what we learnt above?
 
-I choose these colours:
+I used these colours:
+
+```css
+:root { 
+
+  --colors-background: #A633D6; 
+
+  --colors-text: #FFF; 
+
+  --colors-elevated: #228B23;
+
+}
+
+```
+
+To create:
 
 <img src="https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt="Green and purple themed Scrapbook">
 
@@ -56,7 +71,7 @@ What if your Scrapbook was in cursive? Or in a crazy techno font! Fonts can give
 
 [Google Fonts](https://fonts.google.com/) is a great place to get started, scroll through all their fonts and find one you like! Click it and then for each of its styles click “Select this Style”. Then in the bar that has popped up on the right, click `Embed` and choose `@import`. Copy the first text box without the `<style>` tags. You should have something like:
 
-```
+```css
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
 ```
 
@@ -64,7 +79,7 @@ As we’ve most likely chosen different fonts, don’t worry if our links are di
 
 Similar to colours, Scrapbook uses CSS Variables to make it super simple for us to change the fonts. 
 
-Add the following code snippet just below the --colors-elevated line. 
+Add the following code snippet just below the `--colors-elevated` line. 
 
 ```css
 :root { 
@@ -134,7 +149,7 @@ Now, we need to tell the web browser which element should have the animation app
 }
 ```
 
-In between the two curly braces, we can type stuff that changes what all the elements with the class: header-title-name have. Inside of this, let’s ask the web browser to add our animation to the element. We can do this by adding this:
+In between the two curly braces, we can type stuff that changes what all the elements with the class: `header-title-name` have. Inside of this, let’s ask the web browser to add our animation to the element. We can do this by adding this:
 
 ```css
 animation: rainbow 5s infinite;
