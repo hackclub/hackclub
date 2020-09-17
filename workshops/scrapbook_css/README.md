@@ -193,9 +193,9 @@ It's time for you to control, there are so many epic things you can do with CSS!
 
 ## Publishing
 
-To publish click `Add to Gist`. Copy the link. Now hop over to the #scrapbook-css channel in Slack and paste the link into a new message to apply it to your scrapbook!
+To publish click `Add to Gist`. Copy the link. Now hop over to the [#scrapbook-css](https://hackclub.slack.com/archives/C015M6U6JKU/) channel in Slack and paste the link into a new message to apply it to your scrapbook!
 
-Once you're done making your profile pretty, how about sharing it in #scrapbook? Tag me (@sampoder), I'd love to see it!
+Once you're done making your profile pretty, how about sharing it in [#scrapbook](https://hackclub.slack.com/archives/C01504DCLVD/)? Tag me ([@sampoder](https://hackclub.slack.com/archives/DT08DHJKF/)), I'd love to see it!
 
 ## Reference Guide
 
