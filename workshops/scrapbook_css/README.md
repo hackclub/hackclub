@@ -54,7 +54,7 @@ I choose these colours:
 
 What if your Scrapbook was in cursive? Or in a crazy techno font! Fonts can give your page a lot more character, so let’s switch them up.
 
- is a great place to get started, scroll through all their fonts and find one you like! Click it and then for each of its styles click “Select this Style”. Then in the bar that has popped up on the right, click `Embed` and choose `@import`. Copy the first text box without the `<style>` tags. You should have something like:
+[Google Fonts](https://fonts.google.com/) is a great place to get started, scroll through all their fonts and find one you like! Click it and then for each of its styles click “Select this Style”. Then in the bar that has popped up on the right, click `Embed` and choose `@import`. Copy the first text box without the `<style>` tags. You should have something like:
 
 ```
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
