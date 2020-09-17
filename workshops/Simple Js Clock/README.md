@@ -266,7 +266,7 @@ And that's it for the CSS. Now let's move on to the JavaScript Part!
 
 ## 3) JavaScript
 
-Before panicking, let me ensure you that there's really only 20 lines of JavaScript code!
+Before panicking, let me ensure you that there's really only 30 lines of JavaScript code!
 
 Go to your `script.js` file.  
 First let us link the `<div>` tags in our HTML to JavaScript:  
@@ -374,6 +374,24 @@ Call our function outside in our script.
 Learn more on [requestAnimationFrame()](https://css-tricks.com/using-requestanimationframe/).
 
 Let us now try to run our code. And Voila! Our clock is ready!  
+But let us wait for a minute to pass and see if its working correctly. Did you see a glitch which just happened for a millisecond? Lets fix it.  
+
+Add this to your code inside our function and before the `requestAnimationFrame(setDate)`:
+
+```js
+if(seconds == 0){
+	secondHand.style.transitionDuration = '0s';
+	minsHand.style.transitionDuration = '0s';
+	hourHand.style.transitionDuration = '0s';
+} else {
+	secondHand.style.transitionDuration = '0.05s';
+	minsHand.style.transitionDuration = '0.05s';
+	hourHand.style.transitionDuration = '0.05s';
+}
+```
+
+**Explanation** : We use `if-else` statements to check if our seconds are 0, meaning if we have passed a minute. When that statement is true, i.e when we pass a minute, we set all our `transitionDuration` to 0. Which means we basically stop our transitions at that particular moment. Otherwise we keep all our `transitionDuration` to the normal value.  
+This prevents that bug from happening every minute.
 
 The Final Code:
 
@@ -395,6 +413,15 @@ function setDate() {
 	const hours = currentTime.getHours();
 	const hourDeg = (hours / 12) * 360 + 90;
 	hourHand.style.transform = `rotate(${hourDeg}deg)`;
+	if(seconds == 0){
+		secondHand.style.transitionDuration = '0s';
+		minsHand.style.transitionDuration = '0s';
+		hourHand.style.transitionDuration = '0s';
+	} else {
+		secondHand.style.transitionDuration = '0.05s';
+		minsHand.style.transitionDuration = '0.05s';
+		hourHand.style.transitionDuration = '0.05s';
+	}
 	requestAnimationFrame(setDate);
 }
 
