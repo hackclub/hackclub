@@ -4,10 +4,10 @@ description: 'Build a clock using JavaScript.'
 author: '@FaisalSayed'
 ---
 
-# JavaScript Clock
+# JavaScript Clock  
 
 Have you ever wondered how to build a clock? Have you ever wanted to build your own clock but didn't because it was hard?  
-Well today I'm going to show you how to build one and you know what? It's very simple!
+Well today I'm going to show you how to build one and you know what? It's very simple!  
 
 ![Image](https://media.giphy.com/media/xT1XGLSb5E1VjIUw4E/giphy.gif)
 
