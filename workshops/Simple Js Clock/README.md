@@ -1,20 +1,20 @@
 ---
-name: 'Javascript Clock'
-description: 'Build a clock using Javascript.'
+name: 'JavaScript Clock'
+description: 'Build a clock using JavaScript.'
 author: '@FaisalSayed'
 ---
 
-# Javascript Clock
+# JavaScript Clock
 
 Have you ever wondered how to build a clock? Have you ever wanted to build your own clock but didn't because it was hard?  
-Well today I'm going to show you how to build one and you know what? Its very simple!
+Well today I'm going to show you how to build one and you know what? It's very simple!
 
 ![Image](https://media.giphy.com/media/xT1XGLSb5E1VjIUw4E/giphy.gif)
 
 It will look something like this (But make sure you do add some custom CSS!) :  
 ![Image](https://cloud-azpvjrywa.vercel.app/image.png)
 
-Here's the [live demo][final_live_demo] and [final code][final_code]
+Here's the [live demo][final_live_demo] and [final code][final_code].
 
 [final_live_demo]: https://js-css-clock.faisalsayed1.repl.co/
 [final_code]: https://repl.it/@FaisalSayed1/JS-CSS-Clock
@@ -22,9 +22,9 @@ Here's the [live demo][final_live_demo] and [final code][final_code]
 
 ## Part I: Prerequisites
 You should have a beginner understanding of:
-#### - HTML
-#### - CSS
-#### - JAVASCRIPT
+- HTML
+- CSS
+- JAVASCRIPT
 
 ## Part II: Setup
 
@@ -35,7 +35,7 @@ You should have a beginner understanding of:
 To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
 
 This is what it looks like:  
-![Image](https://cloud-me8mfihcw.vercel.app/image.png)
+![Image](https://cloud-me8mfihcw.vercel.app/image.png)  
 ## Part III: Inspecting The Default Files
 
 ![Image](https://media.giphy.com/media/3o7bufkPz3LRof205G/giphy.gif)
@@ -44,7 +44,7 @@ This is what it looks like:
 Let us first take a look at the HTML file (`index.html`) present in your repl.
 
 At line 1 we have `<!DOCTYPE html>` This declares that this file is a HTML file.  
-If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. Make sure that all the code you write is included between the opening and closing body tags. (`<body></body>`)  
+If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. Make sure that all the code you write is included between the opening and closing body tags. (`<body></body>`).  
 
 **Note:** Make sure you remove line 6 (`<meta name="viewport" content="width=device-width">`) :  
 ![Image](https://cloud-9zj6930c6.vercel.app/gif_maker.gif)
@@ -57,9 +57,9 @@ If you take a look in the `<head>` tag in your html, you will find a line of cod
 `<link href="style.css" rel="stylesheet" type="text/css" />`
 This means that your CSS file is properly linked to your HTML file!
 
-### 3) The Javascript file
+### 3) The JavaScript file
 
-This is the `script.js` file in your directory. Its empty for now, but we will fill it eventually through the workshop!  
+This is the `script.js` file in your directory. It's empty for now, but we will fill it eventually through the workshop!  
 Also, this is the most important file for our today's workshop. The code written here will be responsible for the functioning of our Clock.  
 Make sure you have linked this file too in your HTML.  
 If you take a look in the `<body>` tag, you'll find:
@@ -67,7 +67,7 @@ If you take a look in the `<body>` tag, you'll find:
 ```html
 <script src="script.js"></script>
 ```
-This means that your Javascript file is linked to your HTML.
+This means that your JavaScript file is linked to your HTML.
 
 ## Part IV: Building the Clock
 
@@ -162,7 +162,7 @@ Add the following code to your CSS:
 3. Start adding your styles inside the curly brackets!
 
 We start by giving our website a soothing green color. Go ahead and try changing it to the color of your own choice!  
-Then we removed the default margin and padding from all the elements in our website. We changed the default display `(display: block)` to `(display: flex)`. A very good reason for this is because `flex` enables you to align your items perfectly to the center! And that's what we have done in the next two lines. The `align-items` property aligns all your children elements to center, but horizontally. The `justify-content` property aligns all your children elements to center, but vertically. Next we have the `min-height` property which sets a minimum height of 100vh (Viewport Height) to your `<body>`.  
+Then we removed the default margin and padding from all the elements in our website. We changed the default display `(display: block)` to `(display: flex)`. A very good reason for this is because `flex` enables you to align your items perfectly to the center! And that's what we have done in the next two lines. The `align-items` property aligns all your children elements to center, but horizontally. The `justify-content` property aligns all your children elements to center, but vertically. Next we have the `min-height` property which sets a minimum height of 100vh (Viewport Height) to your `<body>`. The `min-height` property works together with the `align-items` property and helps the children to align properly at the center.
 
 Next, we'll need to add some styles to our clock!  
 Following the 3 main steps given above, let's accomplish this task!  
@@ -186,10 +186,10 @@ Following the 3 main steps given above, let's accomplish this task!
     background-image: url(https://bit.ly/2RcERUw);
     background-size: cover;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
-				inset 0 0 0 3px #efefef,
-          		inset 0 0 10px black,
-				0 0 10px rgba(0, 0, 0, 0.2);
-			}
+		inset 0 0 0 3px #efefef,
+                inset 0 0 10px black,
+		0 0 10px rgba(0, 0, 0, 0.2);
+}
 ```
 
 **Explanation**:
@@ -199,7 +199,7 @@ Now lets test our code! Click on the **RUN** button and Voila! Here's the basic 
 
 ![Image](https://cloud-dgjpl9scw.vercel.app/image.png)
 
-Next, give a position of relative and a 100% width & 100% height to the class `.clock-face`  
+Next, give a position of relative and a 100% width & 100% height to the class `.clock-face`.  
 
 Your CSS code so far:
 
@@ -266,9 +266,9 @@ Similarly, add more stylings to your CSS code:
 ```
 
 **Explanation:** 
-We give the clock hands, a black color. (Once again, totally upto you. Give any color of your choice)  
-We specify its height and position. Next, we give it a property of `top` to `50%`, basically it aligns our clock hands in the very center of our clock. To ensure that our clock rotates properly, we give it a  `transform-origin: 100%;`.  
-(Try testing by removing the transform origin property once we add Javascript later). Next we have more transition properties to animate our hands so as to give us that real clock effect!  
+We give the clock hands, a black color. (Once again, totally upto you. Give any color of your choice).  
+We specify It's height and position. Next, we give it a property of `top` to `50%`, basically it aligns our clock hands in the very center of our clock. To ensure that our clock rotates properly, we give it a  `transform-origin: 100%;`.  
+(Try testing by removing the transform origin property once we add JavaScript later). Next we have more transition properties to animate our hands so as to give us that real clock effect!  
 
 Note: The `.hand` class was given to 3 `<div>` tags which means this styling will affect all the 3 `<div>` tags. To give some extra classes to the Hour Hand, Minute Hand and the Second Hand specifically, we also gave those 3 `<div>` tags, a unique classname.  
 
@@ -278,16 +278,16 @@ Here's what we have so far:
 
 ![Image](https://cloud-fprpa1onx.vercel.app/image.png)
 
-And that's it for the CSS. Now let's move on to the Javascript Part!  
+And that's it for the CSS. Now let's move on to the JavaScript Part!  
 
 ![Image](https://media.giphy.com/media/oymRJRRiiPaVzDnIF1/giphy.gif)
 
-## 3) Javascript
+## 3) JavaScript
 
-Before Panicking, let me ensure you that there's really only 20 lines of Javascript code!
+Before Panicking, let me ensure you that there's really only 20 lines of JavaScript code!
 
 Go to your `script.js` file.  
-First let us link the `<div>` tags in our HTML to javascript:  
+First let us link the `<div>` tags in our HTML to JavaScript:  
 Type the following code:  
 
 ```js
@@ -297,14 +297,14 @@ const hourHand = document.querySelector(".hour-hand");
 ```
 
 **Explanation:**
-We declare the variables 'secondHand', 'minsHand', 'hourHand' using 'const' and set its value to the first element that matches a specified CSS selector(s) in the document. In our case, that CSS selectors are `".second-hand"` , `".min-hand"` , `".hour-hand"` respectively.  
+We declare the variables 'secondHand', 'minsHand', 'hourHand' using 'const' and set It's value to the first element that matches a specified CSS selector(s) in the document. In our case, that CSS selectors are `".second-hand"` , `".min-hand"` , `".hour-hand"` respectively.  
 
 **What is querySelector()?**
 The querySelector() method returns the first element that matches a specified CSS selector(s) in the document.
 
 Learn more about query selector [here](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
 
-Now its time to implement a function which will help us in the proper functioning of the clock.  
+Now It's time to implement a function which will help us in the proper functioning of the clock.  
 Create a function 'setDate' in your file. (You can name it anything you want)
 
 ```js
@@ -312,7 +312,7 @@ function setDate() {
 }
 ```
 
-We can get the current date using the `Javascript Date Object`. Let's store it in a variable:
+We can get the current date using the `JavaScript Date Object`. Let's store it in a variable:
 
 ```js
 function setDate() {
@@ -321,7 +321,7 @@ function setDate() {
 ```
 This object also contains specific methods through which you can get the current Hour / Minute / Second etc.  
 
-Learn more on [Javascript Dates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
+Learn more on [JavaScript Dates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
 
 let's start by getting the current seconds, Add this code to the setDate function:  
 ```
@@ -381,13 +381,13 @@ For this, first we will call a `requestAnimationFrame()` function inside of our 
 requestAnimationFrame(setDate)
 ```
 Let us now try to run our code.  
-Hmm... Something is wrong... Our Javascript doesn't seem to work.  
+Hmm... Something is wrong... Our JavaScript doesn't seem to work.  
 That is because we never called our function at the very first place.  
 Copy the `requestAnimationFrame(setDate)` function which we called it inside of our function and paste it outside of the main function.  
 
 **Note:** Don't remove the previous `requestAnimationFrame(setDate)`. We need to add the same line once again, but outside of the function.  
 
-Our Javascript Code so far:
+Our JavaScript Code so far:
 
 ```js
 const secondHand = document.querySelector(".second-hand");
@@ -446,7 +446,7 @@ setDate(); // Calling the function before requestAnimationFrame().
 requestAnimationFrame(setDate);
 ```
 
-**And Congratulations! You just built a clock using just 20 lines of Javascript!**  
+**And Congratulations! You just built a clock using just 20 lines of JavaScript!**  
 What a beauty of Time!   
 
 ![Image](https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif)
