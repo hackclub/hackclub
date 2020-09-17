@@ -156,83 +156,83 @@ Following the 3 main steps given above, let's accomplish this task!
     background-image: url(https://bit.ly/2RcERUw);
     background-size: cover;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
-				inset 0 0 0 3px #efefef,
+		inset 0 0 0 3px #efefef,
                 inset 0 0 10px black,
-				0 0 10px rgba(0, 0, 0, 0.2);
+		0 0 10px rgba(0, 0, 0, 0.2);
 }
 ```
 
 **Explanation**:
-We gave a width and a height to our clock. Next, we gave it a border and the radius for the border. Next, is the background color for that clock (if you don't like it, consider changing it or even removing it). Similarly, there's a background image which is the face of the clock. we need to add `background-size: cover;` property, in order to show our image properly on the website screen. Also, we have added some shadows to the element.  
+We gave a width and a height to our clock. Next, we gave it a border and the radius for the border. Next, is the background color for that clock (if you don't like it, consider changing it or even removing it). Similarly, there's a background image which is the face of the clock. we need to add `background-size: cover;` property, in order to show our image properly on the website screen. Also, we have added some shadows to the element. We gave multiple shadows so as to get a cool effect on our clock. Also, the `inset` property changes the shadow from an outer shadow (outset) to an inner shadow.
 
 Now lets test our code! Click on the **RUN** button and Voila! Here's the basic background for our clock!  
 
 ![Image](https://cloud-dgjpl9scw.vercel.app/image.png)
 
-Next, give a position of relative and a 100% width & 100% height to the class `.clock-face`.  
+Next, give `position: relative;` , `width: 100%;` & `height: 100%` to the class `.clock-face`.  
+(Try to do it on your own by following the 3 main steps of writing CSS).
 
 Your CSS code so far:
 
 ```css
-      body {
-        background: #01ed7f;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-      }
+body {
+	background: #01ed7f;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
 
-      .clock {
-		width: 25rem;
-        height: 25rem;
-        border: 20px solid whitesmoke;
-        background: blanchedalmond;
-        background-image: url(https://bit.ly/2RcERUw);
-        background-size: cover;
-        border-radius: 50px;
-        box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
-					inset 0 0 0 3px #efefef,
-          			inset 0 0 10px black,
-					0 0 10px rgba(0, 0, 0, 0.2);
-			}
+.clock {
+	width: 25rem;
+	height: 25rem;
+	border: 20px solid whitesmoke;
+	background: blanchedalmond;
+	background-image: url(https://bit.ly/2RcERUw);
+	background-size: cover;
+	border-radius: 50px;
+	box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
+		inset 0 0 0 3px #efefef,
+		inset 0 0 10px black,
+		0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-      .clock-face {
-        position: relative;
-        width: 100%;
-        height: 100%;
-      }
-```
+.clock-face {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}```
 
 Similarly, add more stylings to your CSS code:
 
 ```css
-      .hand {
-        background: black;
-        height: 6px;
-        position: absolute;
-        top: 50%;
-        transform-origin: 100%;
-        transform: rotate(90deg);
-        transition: all 0.05s;
-        transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-      }
+.hand {
+	background: black;
+	height: 6px;
+	position: absolute;
+	top: 50%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+	transition: all 0.05s;
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
 
-      .hour-hand {
-        width: 30%;
-        right: 50%;
-      }
+.hour-hand {
+	width: 30%;
+	right: 50%;
+}
 
-      .min-hand {
-        width: 35%;
-        right: 50%;
-      }
+.min-hand {
+	width: 35%;
+	right: 50%;
+}
 
-      .second-hand {
-        width: 40%;
-        right: 50%;
-      }
+.second-hand {
+	width: 40%;
+	right: 50%;
+}
 ```
 
 **Explanation:** 
