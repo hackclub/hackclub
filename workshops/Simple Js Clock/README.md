@@ -371,7 +371,7 @@ Hmm... Something is wrong... Our JavaScript doesn't seem to work.
 That is because we never called our function at the very first place.  
 Call our function outside in our script.   
 
-Learn more on `[requestAnimationFrame()](https://css-tricks.com/using-requestanimationframe/)`.
+Learn more on [requestAnimationFrame()](https://css-tricks.com/using-requestanimationframe/).
 
 Let us now try to run our code. And Voila! Our clock is ready!  
 
