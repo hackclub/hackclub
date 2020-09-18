@@ -246,76 +246,11 @@ Then click on `Add user` and add `Email` and `Password` for that user and click 
 
 So in this way you can record users for restricted login 🔒.
 
-Now at last if you need hosting for your app you can choose any hosting providers like [Github](https://github.com/), [Vercel](https://vercel.com/), [Repl.it](https://repl.it) and even [FIREBASE](https://firebase.google.com/).
-
-Here i am going with FIREBASE.
-
-### Hosting webpage in FIREBASE 🌐 - 
-
-Hosting part is totally optional!
-
-For hosting your webpage in FIREBASE you need to go to `Hosting` tab in the `Develop` section.
-
-![Hosting](https://cloud-ph3x9zqi5.vercel.app/15.png)
-
-In Hostings click on `Get Started` and follow all on-screen instructions or follow below steps:
-
-![Select hosting](https://cloud-764le5mp9.vercel.app/16.png)
-
-Now you need to install FIREBASE CLI and for that you should have node installed.
-
-Run the following command to install FIREBASE CLI
-`npm install -g firebase-tools`
-
-After installing CLI, move your terminal to directory where your webpage files are stored and run following commands:
-
-- Run `firebase login` for login into FIREBASE and after successfully login proceed with below commands.
-
-
-- Run `firebase init` for setting up project directory.
-
-Follow the instructions on your terminal.
-
-![Firebase CLI](https://cloud-47uau0rvc.vercel.app/c1.png)
-
-Using `space` move to hostings option and press `enter`.
-
-![Select hosting](https://cloud-okanfrh18.vercel.app/c2.png)
-
-After selecting hosting option you will be ask to select FIREBASE project, so select a project you just create and press `enter`.
-
-![Select existing project](https://cloud-g6kdkqkyv.vercel.app/c3.png)
-![Select project name](https://cloud-itpmqub7h.vercel.app/c4.png)
-
-Now you need to setup hosting so for that `public` is the default folder which will contain your webpage files i.e. (HTML + CSS + JavaScript).
-So you need to create a folder named `public` in your webpage directory and transfer all project files to it.
-
-![Setup directory](https://cloud-j3w043jzq.vercel.app/c5.png)
-
-Here it will ask you to auto create a new `index.html` in the public folder so you can select `N (for no)` as we already have `index.html`.
-
-![configure](https://cloud-gfaewro6r.vercel.app/c6.png)
-
-So after that initialization process will complete.
-
-![Initialization](https://cloud-eixkmi8ft.vercel.app/c7.png)
-
-Now at last step you need to deploy you webpage and for that
-
-- Run `firebase deploy` command and your webpage will be hosted online.
-
-![Deploy](https://cloud-aii6uvk91.vercel.app/c8.png)
-
-In above image you will see `Hosting URL`[https://loginauth-12.web.app/](https://loginauth-12.web.app/) so that is the URL for your webpage.
-
-You can also use custom domain for your webpage by wising domain section in FIREBASE.
-
 ### Hooray!🎉 
 You finished the Web Login Authentication Workshop by completing all tasks:
 - [x] Creating a FIREBASE project.
 - [x] Designing a webpage.
 - [x] Connecting FIREBASE to your webpage
-- [x] Hosting app in FIREBASE
 
 ### ⚡ What's Next?
 Now you know how to build a web page with login authentication using FIREBASE.
