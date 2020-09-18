@@ -26,7 +26,7 @@ To make setting colours easier, Scrapbook uses CSS variables. CSS variables work
 
 For Scrapbook there are 3 key colour variables that we’re going to want to play around with today. These are the background colour, the colour of text and the colour of the posts (referred to as colors-elevated below). 
 
-To tell the web browser the exact colour we want, we can use either Hex codes, or RGB values. For this workshop, we’re going to use HEX codes. To help us get those, we can [Google “colour picker”](https://www.google.com/search?q=color+picker). From here, you can play around with the slides and choose your preferred colour. Choose 3 colours to be used for the profile.
+To tell the web browser the exact colour we want, we can use either Hex codes, or RGB values. For this workshop, we’re going to use HEX codes. To help us get those, we can [Google “colour picker”](https://www.google.com/search?q=colour+picker). From here, you can play around with the slides and choose your preferred colour. Choose 3 colours to be used for the profile.
 
 Then in the right column, type:
 
@@ -106,10 +106,10 @@ I went techno style, with the [Audiowide](https://fonts.google.com/specimen/Audi
 
 ## **Crazy CSS Animations - Part 1 ✌︎**
 
-We’ve got a fancy font and some magical colours but this site still needs some jazzing up! Looks animate it!
+We’ve got a fancy font and some magical colours but this site still needs some jazzing up! Let's animate it!
 First off, we’re going to make our text rainbow animated.
 
-Animations are made with keyframes, where you set the state of the object (in CSS properties) at different stages of the animation. If you've got any experience with video animation keyframing works very similarly here!
+Animations are made with keyframes, where you set the state of the object (in CSS properties) at different stages of the animation. If you've got any experience with video animation, keyframing works very similarly here!
 
 Let’s define that animation:
 
