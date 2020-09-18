@@ -107,16 +107,14 @@ I'll take this moment to ask you **not to copy and paste**. It takes away from t
 At the top of your `main.py` file, go ahead and add the following imports:
 
 ```python
-import smtplib, email
+import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-import os, sys, time
 ```
 
 - [`smtplib`](https://docs.python.org/3/library/smtplib.html) is a Python module used to send emails, utilizing the Simple Mail Transfer Protocol
 - [`email`](https://docs.python.org/3/library/email.html) is a Python module not used to send emails, but to manage email contents
 - [`email.mime`](https://docs.python.org/3/library/email.mime.html) is a library that uses the global [MIME internet standard](https://www.wikiwand.com/en/MIME) to format email messages
-- `os` and `sys` are system libraries used to deal with file and program operations, and `time` is just used for delays (in our case)
 
 Next, lets create some variables to hold our credentials.
 

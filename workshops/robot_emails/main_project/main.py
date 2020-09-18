@@ -1,9 +1,8 @@
 
 # imports
-import smtplib, email
+import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-import os, sys, time
 
 #credentials
 address = 'mail@google.com'
