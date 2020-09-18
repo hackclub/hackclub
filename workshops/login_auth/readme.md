@@ -10,7 +10,7 @@ In this workshop you'll build a secure web login page using [Firebase](https://f
 
 You will make something like this 👇
 
-<img src="https://cloud-7782l8k04.vercel.app/loginv2.gif">
+![live gif](https://cloud-7782l8k04.vercel.app/loginv2.gif)
 
 [Live Example](https://loginauth-12.web.app)
 
@@ -24,25 +24,25 @@ At first you will need to sign-in to firebase, if you have google account then y
 
 After sign-in you will see an interface like image below.
 
-<img src="https://cloud-mketa8pxq.vercel.app/1.png">
+![Firebase landing](https://cloud-mketa8pxq.vercel.app/1.png)
 
 In the above image you'll see `Go to console` tab at top right corner, so click on that and you will be redirected to console section.
 
-<img src="https://cloud-kfr44a6da.vercel.app/2.png">
+![Project page](https://cloud-kfr44a6da.vercel.app/2.png)
 
 In the console section you'll see all your firebase projects and here you will see `Add Project` card so click on that to create a new project.
 
-<img src="https://cloud-nfiwmg8kh.vercel.app/3.png">
+![Create project](https://cloud-nfiwmg8kh.vercel.app/3.png)
 
 Here you have to give a name to your firebase project as i am giving `Login-auth`.
 
 After giving a wonderful name to your project just click on continue to proceed further.
 
-<img src="https://cloud-pva80oxrl.vercel.app/4.png">
+![Analytics page](https://cloud-pva80oxrl.vercel.app/4.png)
 
 Here is an optional step, If you need Google Analytics for your projects to can click on `enable` otherwise continue.
 
-<img src="https://cloud-3swaas1pn.vercel.app/5.png">
+![Project created](https://cloud-3swaas1pn.vercel.app/5.png)
 
 Now here you'll see `Your new project is ready`. Hooray!🎉 you just created your new firebase project.
 
@@ -57,7 +57,7 @@ Yea! it is the important part for this workshop, you need to design a login webp
 
 I have already created a code template so you can check it out and i will explain some important parts of code which will help you for your workshop.
 
-<img src="https://cloud-9e1ogteoo.vercel.app/7.png">
+![Repl code](https://cloud-9e1ogteoo.vercel.app/7.png)
 
 
 ## CODE : [Repl.it](https://repl.it/@tanishqsoni/Loginauth)
@@ -193,11 +193,11 @@ At project console's landing page you will see `Get started by adding Firebase t
 2. Android
 3. </> (this option is for web on which you are working so click on that).
 
-<img src="https://cloud-l7pn8f9e9.vercel.app/6.png">
+![Project Console](https://cloud-l7pn8f9e9.vercel.app/6.png)
 
 After clicking on that new page will pops up and ask you for a nickname of your project so give one as i am giving it `login-auth` and click on register app.
 
-<img src="https://cloud-8tdv8wfuj.vercel.app/8.png">
+![App nickname](https://cloud-8tdv8wfuj.vercel.app/8.png)
 
 Then you will see some sort of JavaScript code so don't worry about that, it is the code which contains some keys like API Key, Domain key which helps your firebase project to connect to your webpage and for that you need to copy this code and paste it into HTML code before `</body>` tag.
 
@@ -208,13 +208,13 @@ Also include firebase JS SDK before that code.
 <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 ```
 
-<img src="https://cloud-nsps2klza.vercel.app/9.png">
+![API keys](https://cloud-nsps2klza.vercel.app/9.png)
 
 Now you have successfully integrated the firebase project to your webpage. 
 
 After that you need to add existing users so that they can login and for that you need to enable **Email/Password** authentication in your project's Authentication section, for that you need to click on tab `Authentication` on the top left `Develop` section.
 
-<img src="https://cloud-pnq6xn3gp.vercel.app/10.png">
+![Authentication page](https://cloud-pnq6xn3gp.vercel.app/10.png)
 
 So here in Authentication page you'll see different tabs:
 - Users
@@ -224,19 +224,19 @@ So here in Authentication page you'll see different tabs:
 
 Click on Sign-in method.
 
-<img src="https://cloud-nvyxode6r.vercel.app/11.png">
+![Sign in method](https://cloud-nvyxode6r.vercel.app/11.png)
 
 So here you need to enable **Email/Password** in `sign-in providers` section, so click on **Email/Password** and enable it and save it.
 
-<img src="https://cloud-2vpwetbvx.vercel.app/12.png">
+![Enable email-pass](https://cloud-2vpwetbvx.vercel.app/12.png)
 
 After enabling that you need to add existing users, so for that click on `Users` tab.
 
-<img src="https://cloud-kbxm635o2.vercel.app/13.png">
+![Add user](https://cloud-kbxm635o2.vercel.app/13.png)
 
 Then click on `Add user` and add `Email` and `Password` for that user and click `Add user`.
 
-<img src="https://cloud-l38zbxdt7.vercel.app/14.png">
+![Save user](https://cloud-l38zbxdt7.vercel.app/14.png)
 
 So in this way you can record users for restricted login 🔒.
 
@@ -250,11 +250,11 @@ Hosting part is totally optional!
 
 For hosting your webpage in firebase you need to go to `Hosting` tab in the `Develop` section.
 
-<img src="https://cloud-ph3x9zqi5.vercel.app/15.png">
+![Hosting](https://cloud-ph3x9zqi5.vercel.app/15.png)
 
 In Hostings click on `Get Started` and follow all on-screen instructions or follow below steps:
 
-<img src="https://cloud-764le5mp9.vercel.app/16.png">
+![Select hosting](https://cloud-764le5mp9.vercel.app/16.png)
 
 Now you need to install firebase CLI and for that you should have node installed.
 
@@ -270,35 +270,35 @@ Run `firebase init` for setting up project directory.
 
 Follow the instructions on your terminal.
 
-<img src="https://cloud-47uau0rvc.vercel.app/c1.png">
+![Firebase CLI](https://cloud-47uau0rvc.vercel.app/c1.png)
 
 Using `space` move to hostings option and press `enter`.
 
-<img src="https://cloud-okanfrh18.vercel.app/c2.png">
+![Select hosting](https://cloud-okanfrh18.vercel.app/c2.png)
 
 After selecting hosting option you will be ask to select firebase project, so select a project you just create and press `enter`.
 
-<img src="https://cloud-g6kdkqkyv.vercel.app/c3.png">
-<img src="https://cloud-itpmqub7h.vercel.app/c4.png">
+![Select existing project](https://cloud-g6kdkqkyv.vercel.app/c3.png)
+![Select project name](https://cloud-itpmqub7h.vercel.app/c4.png)
 
 Now you need to setup hosting so for that `public` is the default folder which will contain your webpage files i.e. (HTML + CSS + JavaScript).
 So you need to create a folder named `public` in your webpage directory and transfer all project files to it.
 
-<img src="https://cloud-j3w043jzq.vercel.app/c5.png">
+![Setup directory](https://cloud-j3w043jzq.vercel.app/c5.png)
 
 Here it will ask you to auto create a new `index.html` in the public folder so you can select `N (for no)` as we already have `index.html`.
 
-<img src="https://cloud-gfaewro6r.vercel.app/c6.png">
+![configure](https://cloud-gfaewro6r.vercel.app/c6.png)
 
 So after that initialization process will complete.
 
-<img src="https://cloud-eixkmi8ft.vercel.app/c7.png">
+![Initialization](https://cloud-eixkmi8ft.vercel.app/c7.png)
 
 Now at last step you need to deploy you webpage and for that
 
 Run `firebase deploy` command and your webpage will be hosted online.
 
-<img src="https://cloud-aii6uvk91.vercel.app/c8.png">
+![Deploy](https://cloud-aii6uvk91.vercel.app/c8.png)
 
 In above image you will see `Hosting URL`[https://loginauth-12.web.app/](https://loginauth-12.web.app/) so that is the URL for your webpage.
 
