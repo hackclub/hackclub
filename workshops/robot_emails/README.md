@@ -189,7 +189,7 @@ def read_message(filename): ## input the message file
             print('Message file is empty.')
             sys.exit() # quit program
         subject = template_content.splitlines()[0].rstrip() # obtain the first line (subject) by splitting all lines and indexing the first (0)
-    return subject, template_content # return the subject and the body
+    return subject, '\n'.join(template_content.split('\n')[1:]) # return the subject and the body
 ```
 
 
@@ -252,7 +252,7 @@ for contact_mail in list(contacts):
 mail.quit()
 ```
 
-Here's our first occurence of `MIMEMultipart()`. This, as explained at the top, manages the content of the email according to a universal internet standard. There's more in-depth info [here](https://www.wikiwand.com/en/MIME). 
+Here's our first occurrence of `MIMEMultipart()`. This, as explained at the top, manages the content of the email according to a universal internet standard. There's more in-depth info [here](https://www.wikiwand.com/en/MIME). 
 
 Let's remember that our `contacts` variable is a dictionary. We need to access both the emails and substitutions associated with them. That's where this line comes in, and does multiple things at once:
 
