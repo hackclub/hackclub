@@ -122,7 +122,7 @@ body {
 
 **Explanation:**
 3 main steps in writing CSS:
-1. Select the tag / class / id on which you want to apply your styles.
+1. Select the element / class / id on which you want to apply your styles.
 2. Open curly brackets `{}`.
 3. Start adding your styles inside the curly brackets!
 
@@ -390,7 +390,7 @@ if(seconds == 0){
 }
 ```
 
-**Explanation** : We use `if-else` statements to check if our seconds are 0, meaning if we have passed a minute. When that statement is true, i.e when we pass a minute, we set all our `transitionDuration` to 0. Which means we basically stop our transitions at that particular moment. Otherwise we keep all our `transitionDuration` to the normal value.  
+**Explanation** : We use `if-else` statements to check if our seconds are 0, meaning if we have passed a minute. When that statement is true, i.e when we pass a minute, we set all our `transitionDurations` to 0. Which means we basically stop our transitions at that particular moment. Otherwise we keep all our `transitionDuration` to the normal value.  
 This prevents that bug from happening every minute.
 
 The Final Code:
