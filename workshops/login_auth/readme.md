@@ -205,6 +205,8 @@ Also include firebase JS SDK before that code.
 
 ```javascript
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+```
+```javascript
 <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 ```
 
@@ -261,12 +263,12 @@ Now you need to install firebase CLI and for that you should have node installed
 Run the following command to install firebase CLI
 `npm install -g firebase-tools`
 
-After installing CLI, headover your terminal to the directory where your webpage files is stored and run following commands:
+After installing CLI, move your terminal to directory where your webpage files are stored and run following commands:
 
-Run `firebase login` for login into firebase and after successfully login proceed with below commands.
+- Run `firebase login` for login into firebase and after successfully login proceed with below commands.
 
 
-Run `firebase init` for setting up project directory.
+- Run `firebase init` for setting up project directory.
 
 Follow the instructions on your terminal.
 
@@ -296,7 +298,7 @@ So after that initialization process will complete.
 
 Now at last step you need to deploy you webpage and for that
 
-Run `firebase deploy` command and your webpage will be hosted online.
+- Run `firebase deploy` command and your webpage will be hosted online.
 
 ![Deploy](https://cloud-aii6uvk91.vercel.app/c8.png)
 
