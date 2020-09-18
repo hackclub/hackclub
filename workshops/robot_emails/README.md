@@ -279,7 +279,9 @@ mail.sendmail(address, contact_mail, msg.as_string())
 
 At this point, go ahead and **run the program**. Assuming your email and password are correct, and you let your application access your Google account, the program should run successfully! Go check the emails of the contacts you wrote down.
 
-![yay](https://cloud-mlx5oz5hm.vercel.app/tenor.gif)
+The result should be similar to this: 
+
+![result](https://cloud-a1v5o0pxe.vercel.app/code_result.png)
 
 If you're having problems, go check the final code up at the top of this page and make sure you didn't make any errors. 
 
@@ -287,7 +289,7 @@ If you're having problems, go check the final code up at the top of this page an
 
 ## Further Hacking
 
-
+![yay](https://cloud-mlx5oz5hm.vercel.app/tenor.gif)
 
 There are many things that can be changed in this program. Go back and see what you can modify to make it your own! Because of the modularity of the project, to add another substitution, it's as simple as adding a `{1}` or a `{2}`  in `message.txt` and adding more commas and arguments in `contacts.txt`. Try to think of ways to make the project even better, and please share with me or others in the Hack Club community!
 
