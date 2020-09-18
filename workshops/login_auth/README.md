@@ -1,12 +1,12 @@
 ---
 name: 'Web Login Authentication'
-description: 'Build a secure web login page using firebase'
+description: 'Build a secure web login page using FIREBASE'
 author: '@tanishq-soni'
 ---
 
 # Web Login Authentication 🔒
 
-In this workshop you'll build a secure web login page using [Firebase](https://firebase.google.com/).
+In this workshop you'll build a secure web login page using [FIREBASE](https://firebase.google.com/).
 
 You will make something like this 👇
 
@@ -14,13 +14,15 @@ You will make something like this 👇
 
 [Live Example](https://loginauth-12.web.app)
 
-Try live example using Email-`login@authentication.com` and Password-`password`.
+Try live example using:
+- EMAIL-`login@authentication.com`
+- PASSWORD-`password`
 
 ## Getting Started :rocket:
 
 
-### Creating a firebase project 💻 -
-At first you will need to sign-in to firebase, if you have google account then you can directly sign-in to firebase otherwise create one.
+### Creating a FIREBASE project 💻 -
+At first you will need to sign-in to [FIREBASE](https://firebase.google.com/), if you have google account then you can directly sign-in to FIREBASE otherwise create one.
 
 After sign-in you will see an interface like image below.
 
@@ -30,21 +32,23 @@ In the above image you'll see `Go to console` tab at top right corner, so click 
 
 ![Project page](https://cloud-kfr44a6da.vercel.app/2.png)
 
-In the console section you'll see all your firebase projects and here you will see `Add Project` card so click on that to create a new project.
+In the console section, you'll see all your FIREBASE projects and here you will see `Add Project` card. So click on it to create a project.
 
 ![Create project](https://cloud-nfiwmg8kh.vercel.app/3.png)
 
-Here you have to give a name to your firebase project as i am giving `Login-auth`.
+Here you have to give a name to your FIREBASE project as I am giving `Login-auth`.
 
 After giving a wonderful name to your project just click on continue to proceed further.
 
 ![Analytics page](https://cloud-pva80oxrl.vercel.app/4.png)
 
-Here is an optional step, If you need Google Analytics for your projects to can click on `enable` otherwise continue.
+Here is a step where you can use GOOGLE Analytics for you project but in these workshop you don't need it, So simply disable it.
 
 ![Project created](https://cloud-3swaas1pn.vercel.app/5.png)
 
-Now here you'll see `Your new project is ready`. Hooray!🎉 you just created your new firebase project.
+Now here you'll see `Your new project is ready`. 
+
+Hooray!🎉 you just created a new FIREBASE project.
 
 So before moving to project console first we need to design our login webpage.
 
@@ -95,7 +99,7 @@ lookout [CSS](https://repl.it/@tanishqsoni/Loginauth#style.css) code.
 
 ##### JAVASCRIPT
 
-The main part of webpage comes here and you can also go through [firebase Auth documentation](https://firebase.google.com/docs/auth/web/start?authuser=0).
+The main part of webpage comes here and you can also go through [FIREBASE Auth documentation](https://firebase.google.com/docs/auth/web/start?authuser=0).
 
 In the JavaScript code first you need to add a [`AuthState`](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user) property which is used to get currently `signed-in` user
 
@@ -138,7 +142,7 @@ document.getElementById("login_div").style.display = "block";
 Now after completing this you need to work on both the functions you assigned in HTML `login()` and `logout()`.
 
 ##### Function login()
-As in this login page user can sign-in only if they are existing user so for that firebase has a property called [`signInWithEmailAndPassword`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users).
+As in this login page user can sign-in only if they are existing user so for that FIREBASE has a property called [`signInWithEmailAndPassword`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users).
 
 So before you work on it you need to assign some IDs to input fields in HTML as you need to work with input field here.
 
@@ -173,7 +177,7 @@ window.alert("Error : " + errorMessage);
 ```
 ##### Function logout()
 
-In order to logout the user you need to create `logout()` and inside that function we need to call firebase `signOut` function:
+In order to logout the user you need to create `logout()` and inside that function we need to call FIREBASE `signOut` function:
 
 ```javascript
 function logout(){
@@ -184,11 +188,11 @@ Lookout complete [JavaScript](https://repl.it/@tanishqsoni/Loginauth#index.js) c
 
 Hooray!🎉 you just finished with the coding part!
 
-### Connecting firebase to your webpage 🔗 -
+### Connecting FIREBASE to your webpage 🔗 -
 
-So again moving to firebase, After successfully creating firebase project you will see your project console.
+So again moving to FIREBASE, After successfully creating FIREBASE project you will see your project console.
 
-At project console's landing page you will see `Get started by adding Firebase to your app` and below that you will see three options of integrations:
+At project console's landing page you will see `Get started by adding FIREBASE to your app` and below that you will see three options of integrations:
 1. iOS
 2. Android
 3. </> (this option is for web on which you are working so click on that).
@@ -199,9 +203,9 @@ After clicking on that new page will pops up and ask you for a nickname of your 
 
 ![App nickname](https://cloud-8tdv8wfuj.vercel.app/8.png)
 
-Then you will see some sort of JavaScript code so don't worry about that, it is the code which contains some keys like API Key, Domain key which helps your firebase project to connect to your webpage and for that you need to copy this code and paste it into HTML code before `</body>` tag.
+Then you will see some sort of JavaScript code so don't worry about that, it is the code which contains some keys like API Key, Domain key which helps your FIREBASE project to connect to your webpage and for that you need to copy this code and paste it into HTML code before `</body>` tag.
 
-Also include firebase JS SDK before that code.
+Also include FIREBASE JS SDK before that code.
 
 ```javascript
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
@@ -212,7 +216,7 @@ Also include firebase JS SDK before that code.
 
 ![API keys](https://cloud-nsps2klza.vercel.app/9.png)
 
-Now you have successfully integrated the firebase project to your webpage. 
+Now you have successfully integrated the FIREBASE project to your webpage. 
 
 After that you need to add existing users so that they can login and for that you need to enable **Email/Password** authentication in your project's Authentication section, for that you need to click on tab `Authentication` on the top left `Develop` section.
 
@@ -242,15 +246,15 @@ Then click on `Add user` and add `Email` and `Password` for that user and click 
 
 So in this way you can record users for restricted login 🔒.
 
-Now at last if you need hosting for your app you can choose any hosting providers like [Github](https://github.com/), [Vercel](https://vercel.com/), [Repl.it](https://repl.it) and even [Firebase](https://firebase.google.com/).
+Now at last if you need hosting for your app you can choose any hosting providers like [Github](https://github.com/), [Vercel](https://vercel.com/), [Repl.it](https://repl.it) and even [FIREBASE](https://firebase.google.com/).
 
-Here i am going with Firebase.
+Here i am going with FIREBASE.
 
-### Hosting webpage in firebase 🌐 - 
+### Hosting webpage in FIREBASE 🌐 - 
 
 Hosting part is totally optional!
 
-For hosting your webpage in firebase you need to go to `Hosting` tab in the `Develop` section.
+For hosting your webpage in FIREBASE you need to go to `Hosting` tab in the `Develop` section.
 
 ![Hosting](https://cloud-ph3x9zqi5.vercel.app/15.png)
 
@@ -258,14 +262,14 @@ In Hostings click on `Get Started` and follow all on-screen instructions or foll
 
 ![Select hosting](https://cloud-764le5mp9.vercel.app/16.png)
 
-Now you need to install firebase CLI and for that you should have node installed.
+Now you need to install FIREBASE CLI and for that you should have node installed.
 
-Run the following command to install firebase CLI
+Run the following command to install FIREBASE CLI
 `npm install -g firebase-tools`
 
 After installing CLI, move your terminal to directory where your webpage files are stored and run following commands:
 
-- Run `firebase login` for login into firebase and after successfully login proceed with below commands.
+- Run `firebase login` for login into FIREBASE and after successfully login proceed with below commands.
 
 
 - Run `firebase init` for setting up project directory.
@@ -278,7 +282,7 @@ Using `space` move to hostings option and press `enter`.
 
 ![Select hosting](https://cloud-okanfrh18.vercel.app/c2.png)
 
-After selecting hosting option you will be ask to select firebase project, so select a project you just create and press `enter`.
+After selecting hosting option you will be ask to select FIREBASE project, so select a project you just create and press `enter`.
 
 ![Select existing project](https://cloud-g6kdkqkyv.vercel.app/c3.png)
 ![Select project name](https://cloud-itpmqub7h.vercel.app/c4.png)
@@ -304,19 +308,19 @@ Now at last step you need to deploy you webpage and for that
 
 In above image you will see `Hosting URL`[https://loginauth-12.web.app/](https://loginauth-12.web.app/) so that is the URL for your webpage.
 
-You can also use custom domain for your webpage by wising domain section in firebase.
+You can also use custom domain for your webpage by wising domain section in FIREBASE.
 
 ### Hooray!🎉 
 You finished the Web Login Authentication Workshop by completing all tasks:
-- [x] Creating a firebase project.
+- [x] Creating a FIREBASE project.
 - [x] Designing a webpage.
-- [x] Connecting firebase to your webpage
-- [x] Hosting app in firebase
+- [x] Connecting FIREBASE to your webpage
+- [x] Hosting app in FIREBASE
 
 ### ⚡ What's Next?
-Now you know how to build a web page with login authentication using firebase.
+Now you know how to build a web page with login authentication using FIREBASE.
 
-Now how you can expand it? Try adding some other features to it with the help of [Firebase Guide](https://firebase.google.com/docs/auth/web/start?authuser=0)
+Now how you can expand it? Try adding some other features to it with the help of [FIREBASE Guide](https://firebase.google.com/docs/auth/web/start?authuser=0)
 
 Here are some examples 👇
 - Adding `create account` feature so user can create a new account.
