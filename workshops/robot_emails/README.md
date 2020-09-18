@@ -282,6 +282,8 @@ At this point, go ahead and **run the program**. Assuming your email and passwor
 
 ![yay](https://cloud-mlx5oz5hm.vercel.app/tenor.gif)
 
+If you're having problems, go check the final code up at the top of this page and make sure you didn't make any errors. 
+
 ---
 
 ## Further Hacking
@@ -292,8 +294,12 @@ There are many things that can be changed in this program. Go back and see what 
 
 
 
-Here are some branches of the project that build upon the code:
+Here are some branches of the project that build upon the code (can also be found on [GitHub](https://github.com/hackclub/hackclub))
 
-- **Switching Mail Servers**: 
-- **Company Sponsor Email**:
-- **Multiple Messages**: 
+- **Switching Mail Servers**: [demo and code](https://repl.it/@apexblade/RoboticEmails-MailServerSwitch) 
+  - Easily send templated emails from multiple accounts and smtp servers! 
+- **Company Sponsor Email**: [demo and code](https://repl.it/@apexblade/RoboticEmails-SponsorEmail#main.py) 
+  - An example of how far you can go with this project! In retrospect, it has hundreds of usages.
+- **Multiple Messages**: [demo and code](https://repl.it/@apexblade/RoboticEmails-SwitchableMessages)
+  - Multiple presets for emails, select one and send!
+
