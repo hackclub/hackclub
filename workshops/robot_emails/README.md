@@ -167,7 +167,6 @@ Important elements:
 - [`utf-8`](https://www.wikiwand.com/en/UTF-8) is a character encoding
 - `\n` is a newline character in Python; by splitting a file by `\n`, we are essentially splitting up all the lines
 - `contacts_list[item.split(', ')[0]] = item.split(', ')[1:]` adds the email and all the substitutions associated with that email to a dictionary. The format is `key: [value, another_value, etc.]`
-  - 
 
 
 
