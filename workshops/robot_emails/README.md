@@ -115,6 +115,7 @@ from email.mime.text import MIMEText
 - [`smtplib`](https://docs.python.org/3/library/smtplib.html) is a Python module used to send emails, utilizing the Simple Mail Transfer Protocol
 - [`email`](https://docs.python.org/3/library/email.html) is a Python module not used to send emails, but to manage email contents
 - [`email.mime`](https://docs.python.org/3/library/email.mime.html) is a library that uses the global [MIME internet standard](https://www.wikiwand.com/en/MIME) to format email messages
+- `sys` is a system library used to deal with file and program operations, and `time` is just used for delays (in our case)
 
 Next, lets create some variables to hold our credentials.
 
