@@ -14,7 +14,8 @@ You will make something like this 👇
 
 [Check out this demo of the final product!](https://loginauth-12.web.app)
 
-Try live example using:
+You can test out the demo site using the following credentials:
+
 - EMAIL-`login@authentication.com`
 - PASSWORD-`password`
 
@@ -497,4 +498,3 @@ In this feature you can login anonymously without entering email or password.
 
 - [Live example](https://loginauthanonymous.tanishqsoni.repl.co/)
 - [Code](https://repl.it/@tanishqsoni/Loginauthanonymous)
-
