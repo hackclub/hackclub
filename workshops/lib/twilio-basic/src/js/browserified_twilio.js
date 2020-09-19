@@ -4423,11 +4423,13 @@ var webhookMiddleware = twilio.webhook({
              * @param name      name of property to delete
              * @return promise for the return value
              */
-            Q.del = Q['delete'] = function (object, key) { // XXX legacy
+            Q.del = Q['delete'] = function (object, key) {
+              // XXX legacy
               return Q(object).dispatch('delete', [key])
             }
 
-            Promise.prototype.del = Promise.prototype['delete'] = function ( // XXX legacy
+            Promise.prototype.del = Promise.prototype['delete'] = function (
+              // XXX legacy
               key
             ) {
               return this.dispatch('delete', [key])
@@ -4446,11 +4448,13 @@ var webhookMiddleware = twilio.webhook({
              * @return promise for the return value
              */
             // bound locally because it is used by other methods
-            Q.mapply = Q.post = function (object, name, args) { // XXX As proposed by "Redsandro"
+            Q.mapply = Q.post = function (object, name, args) {
+              // XXX As proposed by "Redsandro"
               return Q(object).dispatch('post', [name, args])
             }
 
-            Promise.prototype.mapply = Promise.prototype.post = function ( // XXX As proposed by "Redsandro"
+            Promise.prototype.mapply = Promise.prototype.post = function (
+              // XXX As proposed by "Redsandro"
               name,
               args
             ) {
@@ -4464,14 +4468,16 @@ var webhookMiddleware = twilio.webhook({
              * @param ...args   array of invocation arguments
              * @return promise for the return value
              */
-            Q.send = Q.mcall = Q.invoke = function (object, name /*...args*/) { // XXX Mark Miller's proposed parlance // XXX As proposed by "Redsandro"
+            Q.send = Q.mcall = Q.invoke = function (object, name /*...args*/) {
+              // XXX Mark Miller's proposed parlance // XXX As proposed by "Redsandro"
               return Q(object).dispatch('post', [
                 name,
                 array_slice(arguments, 2)
               ])
             }
 
-            Promise.prototype.send = Promise.prototype.mcall = Promise.prototype.invoke = function ( // XXX Mark Miller's proposed parlance // XXX As proposed by "Redsandro"
+            Promise.prototype.send = Promise.prototype.mcall = Promise.prototype.invoke = function (
+              // XXX Mark Miller's proposed parlance // XXX As proposed by "Redsandro"
               name /*...args*/
             ) {
               return this.dispatch('post', [name, array_slice(arguments, 1)])
@@ -4668,11 +4674,13 @@ var webhookMiddleware = twilio.webhook({
              * given promise is rejected
              * @returns a promise for the return value of the callback
              */
-            Q.fail = Q['catch'] = function (object, rejected) { // XXX legacy
+            Q.fail = Q['catch'] = function (object, rejected) {
+              // XXX legacy
               return Q(object).then(void 0, rejected)
             }
 
-            Promise.prototype.fail = Promise.prototype['catch'] = function ( // XXX legacy
+            Promise.prototype.fail = Promise.prototype['catch'] = function (
+              // XXX legacy
               rejected
             ) {
               return this.then(void 0, rejected)
@@ -4706,11 +4714,13 @@ var webhookMiddleware = twilio.webhook({
              * @returns a promise for the resolution of the given promise when
              * ``fin`` is done.
              */
-            Q.fin = Q['finally'] = function (object, callback) { // XXX legacy
+            Q.fin = Q['finally'] = function (object, callback) {
+              // XXX legacy
               return Q(object)['finally'](callback)
             }
 
-            Promise.prototype.fin = Promise.prototype['finally'] = function ( // XXX legacy
+            Promise.prototype.fin = Promise.prototype['finally'] = function (
+              // XXX legacy
               callback
             ) {
               callback = Q(callback)
@@ -4926,11 +4936,13 @@ var webhookMiddleware = twilio.webhook({
              * will be provided by Q and appended to these arguments.
              * @returns a promise for the value or error
              */
-            Q.nmapply = Q.npost = function (object, name, args) { // XXX As proposed by "Redsandro"
+            Q.nmapply = Q.npost = function (object, name, args) {
+              // XXX As proposed by "Redsandro"
               return Q(object).npost(name, args)
             }
 
-            Promise.prototype.nmapply = Promise.prototype.npost = function ( // XXX As proposed by "Redsandro"
+            Promise.prototype.nmapply = Promise.prototype.npost = function (
+              // XXX As proposed by "Redsandro"
               name,
               args
             ) {
@@ -4951,7 +4963,8 @@ var webhookMiddleware = twilio.webhook({
              * be provided by Q and appended to these arguments.
              * @returns a promise for the value or error
              */
-            Q.nsend = Q.nmcall = Q.ninvoke = function ( // XXX Based on Mark Miller's proposed "send" // XXX Based on "Redsandro's" proposal
+            Q.nsend = Q.nmcall = Q.ninvoke = function (
+              // XXX Based on Mark Miller's proposed "send" // XXX Based on "Redsandro's" proposal
               object,
               name /*...args*/
             ) {
@@ -4962,7 +4975,8 @@ var webhookMiddleware = twilio.webhook({
               return deferred.promise
             }
 
-            Promise.prototype.nsend = Promise.prototype.nmcall = Promise.prototype.ninvoke = function ( // XXX Based on Mark Miller's proposed "send" // XXX Based on "Redsandro's" proposal
+            Promise.prototype.nsend = Promise.prototype.nmcall = Promise.prototype.ninvoke = function (
+              // XXX Based on Mark Miller's proposed "send" // XXX Based on "Redsandro's" proposal
               name /*...args*/
             ) {
               var nodeArgs = array_slice(arguments, 1)
@@ -39598,7 +39612,7 @@ var webhookMiddleware = twilio.webhook({
                 s.match_length <= 5 &&
                 (s.strategy === Z_FILTERED ||
                   (s.match_length === MIN_MATCH &&
-                    s.strstart - s.match_start > 4096) /*TOO_FAR*/)
+                    s.strstart - s.match_start > 4096)) /*TOO_FAR*/
               ) {
                 /* If prev_match is also MIN_MATCH, match_start is garbage
                  * but we will ignore the current match anyway.
