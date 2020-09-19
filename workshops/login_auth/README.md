@@ -276,9 +276,11 @@ body {
   font-size: 16px;
 }
 ```
-In this way you can add styles to (Divisions/ IDs) and whole webpage.
+In this way you can add styles to (Divisions/ IDs) and whole webpage, Inspect my [CSS file](https://repl.it/@tanishqsoni/Loginauth#style.css)
 
-You can also add fonts to your webpage, As i have added `Nunito` font as you can see a line of code in HTML `<head>`. You can choose fonts from [GOOGLE Fonts](https://fonts.google.com/) and link them.
+You can select different colours from [Colour Picker](https://www.google.com/search?q=color+picker) to give your webpage an Attractive look.
+
+And also add fonts to your webpage, As i have added `Nunito` font as you can see a line of code in HTML `<head>`. You can choose fonts from [GOOGLE Fonts](https://fonts.google.com/) and link them.
 
 If you need help regarding various keywords uses in CSS, So you can go through [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
 
