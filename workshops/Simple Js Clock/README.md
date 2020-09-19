@@ -326,6 +326,7 @@ function setDate() {
 	secondHand.style.transform = `rotate(${secondDegrees}deg)`;
 }
 ```
+
 **Explanation:**
 We have the current seconds stored in the `seconds` variable. We then create a new variable (`secondDegrees`) in which we use an equation to convert the current seconds into degrees. In the next line, we add the transform style property to the `secondHand` which will rotate the hand according to the value of `secondDegrees`.  
 Note: Here, we used backticks (` `) instead of quotes (""). This is an ES6 syntax. It helps us to write variables inside of strings.  
