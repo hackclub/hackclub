@@ -6,7 +6,7 @@ author: '@tanishq-soni'
 
 # Web Login Authentication 🔒
 
-In this workshop you'll build a secure web login page using [Firebase](https://firebase.google.com/).
+In this workshop, you'll build a secure web login page using [Firebase](https://firebase.google.com/).
 
 You will make something like this 👇
 
@@ -16,20 +16,20 @@ You will make something like this 👇
 
 You can test out the demo site using the following credentials:
 
-- EMAIL-`login@authentication.com`
+- Email-`login@authentication.com`
 - Password - `password`
 
 ## Getting Started :rocket:
 
 
 ### Creating a Firebase project 💻 -
-First you will need to sign in to [Firebase](https://firebase.google.com/) using a Google account. You can [create one here](https://accounts.google.com/signup)
+First, you will need to sign in to [Firebase](https://firebase.google.com/) using a Google account. You can [create one here](https://accounts.google.com/signup)
 
 After signing in you will see a page similar to this:
 
 ![Firebase landing](https://cloud-mketa8pxq.vercel.app/1.png)
 
-In the above image you'll see `Go to console` tab at top right corner, So click on that and you will be redirected to console section.
+In the above image you'll see `Go to console` tab at the top right corner, So click on that and you will be redirected to the console section.
 
 ![Project page](https://cloud-kfr44a6da.vercel.app/2.png)
 
@@ -43,7 +43,7 @@ After giving a wonderful name to your project just click on continue to proceed 
 
 ![Analytics page](https://cloud-pva80oxrl.vercel.app/4.png)
 
-Here is a step where you can use Google Analytics for you project but in these workshop you don't need it, So simply disable it.
+Here is a step where you can use Google Analytics for your project but in this workshop, you don't need it, So simply disable it.
 
 ![Project created](https://cloud-3swaas1pn.vercel.app/5.png)
 
@@ -62,13 +62,13 @@ At project console's landing page you will see `Get started by adding Firebase t
 
 ![Project Console](https://cloud-l7pn8f9e9.vercel.app/6.png)
 
-After clicking on that new page will pops up and ask you for a nickname of your project, So give one as i am giving it `login-auth` and click on register app.
+After clicking on that a new page will pop up and ask you for a nickname of your project, So give one as I am giving it `login-auth` and click on register app.
 
 ![App nickname](https://cloud-8tdv8wfuj.vercel.app/8.png)
 
-Then you will see some sort of JavaScript code, So don't worry about that, It is the code which contains some keys like API Key, Domain key which helps your Firebase project to connect with your webpage and for that you need to save this code or just copy/paste into the notes as it will required in coding part later.
+Then you will see some sort of JavaScript code, So don't worry about that, It is the code which contains some keys like API Key, Domain key which helps your Firebase project to connect with your webpage, and for that, you need to save this code or just copy/paste into the notes as it will require in coding part later.
 
-Also include below two lines with above code.
+Also, include below two lines with the above code.
 
 ```javascript
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
@@ -80,17 +80,17 @@ Also include below two lines with above code.
 ![API keys](https://cloud-nsps2klza.vercel.app/9.png)
 
 
-After that you need to add existing users, So that they can login and for that you need to enable **Email/Password** authentication in your project's Authentication section, for that you need to click on tab `Authentication` on the top left `Develop` section.
+After that you need to add existing users, So that they can log in and for that, you need to enable **Email/Password** authentication in your project's Authentication section, for that you need to click on tab `Authentication` on the top left `Develop` section.
 
 ![Authentication page](https://cloud-pnq6xn3gp.vercel.app/10.png)
 
-So here in Authentication page you'll see different tabs:
+So here in the Authentication page, you'll see different tabs:
 - Users
 - Sign-in method
 - Templates
 - Usage
 
-Click on Sign-in method.
+Click on the Sign-in method.
 
 ![Sign in method](https://cloud-nvyxode6r.vercel.app/11.png)
 
@@ -98,11 +98,11 @@ So here you need to enable **Email/Password** in `sign-in providers` section, So
 
 ![Enable email-pass](https://cloud-2vpwetbvx.vercel.app/12.png)
 
-After enabling that you need to add existing users, So for that click on `Users` tab.
+After enabling that you need to add existing users, So for that click on the `Users` tab.
 
 ![Add user](https://cloud-kbxm635o2.vercel.app/13.png)
 
-Then click on `Add user` and add `Email` and `Password` for that user and click `Add user`.
+Then click on `Add User` and add `Email` and `Password` for that user and click `Add User`.
 
 ![Save user](https://cloud-l38zbxdt7.vercel.app/14.png)
 
@@ -117,7 +117,7 @@ You should have a basic knowledge of:
 
 If you want to inspect the [Final Code](https://repl.it/@tanishqsoni/Loginauth) you can.
 
-So at first you need to setup a coding environment and I suggests you to use [Repl.it](https://repl.it) as it sets everthing for you.
+So at first, you need to set up a coding environment and I suggest you use [Repl.it](https://repl.it) as it sets everything for you.
 
 It looks like this 👇
 
@@ -127,7 +127,7 @@ It looks like this 👇
 #### Coding Part </>
 
 ##### HTML
-When you take a look at `index.html` file in your Repl, you'll see `<html>` tag which is the root of HTML file and inside `<html>` tag you'll see `<body>` tag which is the main body of HTML file or we can say it will contain all the main contents and here you will write your HTML code.
+When you take a look at the `index.html` file in your Repl, you'll see `<html>` tag which is the root of the HTML file, and inside `<html>` tag you'll see `<body>` tag which is the main body of HTML file or we can say it will contain all the main contents and here you will write your HTML code.
 
 You will also find lines like:
 - `<link href="style.css" rel="stylesheet" type="text/css"/>` which links your CSS file with the HTML. 
@@ -135,7 +135,7 @@ You will also find lines like:
 
 So let's write our HTML Code:
 
-In `<body>` tag you need to create a two divisions, the first division is for the login page and second is for the logout page using `<div>`.
+In the `<body>` tag you need to create two divisions, the first division is for the login page and the second is for the logout page using `<div>`.
 
 - Division 1:
 
@@ -143,9 +143,9 @@ Create your first division with a class `main_div` and assign ID `login_div`.
 
 you can also give a heading to your page using heading tags like `<h1>,<h2>,<h3>.....`.
 
-In this division you will create two input fields for EMAIL and PASSWORD using `<input>` tag with type `email` and `password` respectively and also assign IDs to both input fields `email_field` and `password_field` respectively.
+In this division, you will create two input fields for EMAIL and PASSWORD using `<input>` tag with type `email` and `password` respectively and also assign IDs to both input fields `email_field` and `password_field` respectively.
  
-Here you will also create a button Login using `<button>` and assign a onclick function `login()` to it and finally close your first division using `</div>`. 
+Here you will also create a button Login using `<button>` and assign an on click function `login()` to it and finally close your first division using `</div>`. 
 
 So here's how your first division looks like:
 ```HTML
@@ -161,7 +161,7 @@ So here's how your first division looks like:
 
 Create your second division below the first with a class `loggedin_div` and assign ID `user_div`.
 
-In this division you will create a button Logout and assign a onclick finction `logout()` to it and it's done.
+In this division, you will create a button Logout and assign an on click function `logout()` to it and it's done.
 
 So here's how your second division looks like:
 ```HTML
@@ -201,7 +201,7 @@ So here is your HTML code:
 ```
 ![without CSS](https://cloud-e3wysrojq.vercel.app/c1.png)
 
-So as you can see it is looking simple, So to make it look cool you need to add CSS but.... 
+So as you can see it is looking simple, So to make it look cool you need to add CSS but... 
 
 You remember you saved lines of JavaScript code from Firebase.
 
@@ -255,9 +255,9 @@ Here is your final HTML code:
 ```
 
 ##### CSS
-This is a `style.css` file present in your Repl just below `script.js`, which gives styles and design to your webpage.
+This is a `style.css` file present in your Repl just below `script.js`, which gives styles and designs to your webpage.
 
-As you created two divisions in HTML file, So you will add designs to it and writing CSS is simple.
+As you created two divisions in the HTML file, So you will add designs to it, and writing CSS is simple.
 
 You just need to:
 - Mention element/ class name/ ID.
@@ -277,11 +277,11 @@ body {
   font-size: 16px;
 }
 ```
-In this way you can add styles to (Divisions/ IDs) and whole webpage, Inspect my [CSS file](https://repl.it/@tanishqsoni/Loginauth#style.css)
+In this way, you can add styles to (Divisions/ IDs) and the whole webpage, Inspect my [CSS file](https://repl.it/@tanishqsoni/Loginauth#style.css)
 
-You can select different colours from [Colour Picker](https://www.google.com/search?q=color+picker) to give your webpage an Attractive look.
+You can select different colors from [Colour Picker](https://www.google.com/search?q=color+picker) to give your webpage an Attractive look.
 
-And also add fonts to your webpage, As i have added `Nunito` font as you can see a line of code in HTML `<head>`. You can choose fonts from [Google Fonts](https://fonts.google.com/) and link them.
+And also add fonts to your webpage, As I have added `Nunito` font as you can see a line of code in HTML `<head>`. You can choose fonts from [Google Fonts](https://fonts.google.com/) and link them.
 
 If you need help regarding various keywords uses in CSS, So you can go through [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
 
@@ -289,7 +289,7 @@ If you need help regarding various keywords uses in CSS, So you can go through [
 
 This is a `script.js` file present in your Repl just below `index.html`, which handles the functioning of your webpage.
 
-Here you have to write small amount JavaScript code because Firebase has some pre-defined functions and properties for Authentication which you will use here and also you can check [Firebase Documentation on web authentication](https://firebase.google.com/docs/auth/web/start).
+Here you have to write a small amount of JavaScript code because Firebase has some pre-defined functions and properties for Authentication which you will use here and also you can check [Firebase Documentation on web authentication](https://firebase.google.com/docs/auth/web/start).
 
 So what you have to do is, you need to `Get the currently signed-in user` as you already created user in Firebase.
 In the `script.js` file you need to add a property [`Get the currently signed-in user`](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user) for that which is:
@@ -303,11 +303,11 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 ```
-As you created two divisions in HTML file, So you have to do something like, division with `login_div` ID to be displayed at login page and division with `user_div` ID to be displayed after login page or when user is signed-in.
+As you created two divisions in the HTML file, So you have to do something like a division with `login_div` ID to be displayed at the login page and a division with `user_div` ID to be displayed after the login page or when the user is signed-in.
 
-So in above code you need to do make some changes
+So in the above code, you need to do make some changes
 
-Add below two lines of code in the `if` condition of above code.
+Add below two lines of code in the `if` condition of the above code.
 
 ```javascript
 
@@ -329,11 +329,11 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 ```
-In the above code `block` will displays the division and `none` will hide that division.
+In the above code `block` will display the division and `none` will hide that division.
 
-As you added this for signed-in user, So you also need `else` part _where user is not signed-in_ means user is on the login page, So the code will same as above code but you need to swap `block` and `none` as you need to display only `main_div` with ID `login_div`.
+As you added this for a signed-in user, So you also need the `else` part _where user is not signed-in_ means the user is on the login page, So the code will same as the above code but you need to swap `block` and `none` as you need to display only `main_div` with ID `login_div`.
 
-Add below code to the `else` condition.
+Add the below code to the `else` condition.
 
 ```javascript
 
@@ -360,7 +360,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 Now after completing this you need to work on both the functions you assigned in HTML buttons `login()` and `logout()`.
 
 - Function login()
-As user can sign-in only if there record is stored in Firebase. So, Firebase has a property called [`Sign-in existing user`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) as exisiting users can sign-in through input fields.
+As a user can sign-in only if their record is stored in Firebase. So, Firebase has a property called [`Sign-in existing user`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) as existing users can sign-in through input fields.
 
 Now you need to create two variables in `login()` function `userEmail` and `userPass` which get email and password values from the input fields with IDs `email_field` and `password_field`.
 
@@ -371,7 +371,7 @@ function login(){
   var userPass = document.getElementById("password_field").value;
 }
 ```
-So in the above function you need to add the [`Sign-in existing user`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) property.
+So in the above function, you need to add the [`Sign-in existing user`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) property.
 
 ```javascript
 firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
@@ -383,7 +383,7 @@ firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error
 ```
 In the above code replace `email` with `userEmail` and `password` with `userPass` as you declared those variables.
 
-Also you need to display error message when error occurs like _wrong email or password_, So add below code in above function.
+Also, you need to display an error message when an error occurs like _wrong email or password_, So add the below code in the above function.
 ```javascript
 window.alert("Error : " + errorMessage);
 ```
@@ -459,7 +459,7 @@ function logout(){
 
 ```
 
-Yayyy🎊! you Finished with coding part!
+Yayyy🎊! you Finished with the coding part!
 
 Try login with the EMAIL and PASSWORD you recorded in Firebase.
 
@@ -472,29 +472,29 @@ You finished the Web Login Authentication Workshop by completing all tasks:
 ### ⚡ What's Next?
 Now you know how to build a web page with login authentication using Firebase.
 
-Now how you can expand it? Try adding some other features to it with the help of [Firebase Guide](https://firebase.google.com/docs/auth/web/start?authuser=0)
+Now, how you can expand it? Try adding some other features to it with the help of [Firebase Guide](https://firebase.google.com/docs/auth/web/start?authuser=0)
 
 Here are some examples 👇
-- Adding `create account` feature, So user can create a new account.
-- Adding `Email verification` feature.
-- Adding `Anonymous Login` feature, So user can visit the page without login.
+- Adding `create account` feature, So the user can create a new account.
+- Adding the `Email verification` feature.
+- Adding the `Anonymous Login` feature, So the user can visit the page without login.
 
 #### ⭐ Live examples with code -
 
 ##### Create Account
-In this feature you can type email and password of your own choice and click on `create account`.
+In this feature, you can type email and password of your own choice and click on `create an account`.
 
 - [Live example](https://loginauthcreateaccount.tanishqsoni.repl.co/)
 - [Code](https://repl.it/@tanishqsoni/loginauthcreateaccount)
 
 ##### Email verification
-In this feature you can send verification mail to verify your account after login.
+In this feature, you can send verification mail to verify your account after login.
 
 - [Live example](https://loginauthemailverification.tanishqsoni.repl.co/)
 - [Code](https://repl.it/@tanishqsoni/Loginauthemailverification)
 
 ##### Anonymous Login
-In this feature you can login anonymously without entering email or password.
+In this feature, you can log in anonymously without entering an email or password.
 
 - [Live example](https://loginauthanonymous.tanishqsoni.repl.co/)
 - [Code](https://repl.it/@tanishqsoni/Loginauthanonymous)
