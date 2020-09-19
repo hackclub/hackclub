@@ -184,8 +184,7 @@ def read_message(filename): ## input the message file
     with open(filename, 'r', encoding = 'utf-8') as template: #open the file in read mode
         template_content = template.read() # read the contents of the file to a variable
         template.seek(0) # look at the beginning of the file
-        first = template.read()
-        if first == '': # if empty, message is empty
+        if template_content == '': # if empty, message is empty
             print('Message file is empty.')
             sys.exit() # quit program
         subject = template_content.splitlines()[0].rstrip() # obtain the first line (subject) by splitting all lines and indexing the first (0)
