@@ -278,6 +278,8 @@ body {
 ```
 In this way you can add styles to (Divisions/ IDs) and whole webpage.
 
+You can also add fonts to your webpage, As i have added `Nunito` font as you can see a line of code in HTML `<head>`. You can also choose fonts from [GOOGLE Fonts](https://fonts.google.com/) and link them.
+
 If you need help regarding various keywords uses in CSS, So you can go through [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
 
 ##### JAVASCRIPT
