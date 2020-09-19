@@ -1,12 +1,12 @@
 ---
 name: 'Web Login Authentication'
-description: 'Build a secure web login page using FIREBASE'
+description: 'Build a secure web login page using Firebase'
 author: '@tanishq-soni'
 ---
 
 # Web Login Authentication 🔒
 
-In this workshop you'll build a secure web login page using [FIREBASE](https://firebase.google.com/).
+In this workshop you'll build a secure web login page using [Firebase](https://firebase.google.com/).
 
 You will make something like this 👇
 
@@ -21,8 +21,8 @@ Try live example using:
 ## Getting Started :rocket:
 
 
-### Creating a FIREBASE project 💻 -
-At first you will need to sign-in to [FIREBASE](https://firebase.google.com/), if you have google account then you can directly sign-in to FIREBASE otherwise create one.
+### Creating a Firebase project 💻 -
+At first you will need to sign-in to [Firebase](https://firebase.google.com/), if you have Google account then you can directly sign-in to Firebase otherwise create one.
 
 After sign-in you will see an interface like image below.
 
@@ -32,29 +32,29 @@ In the above image you'll see `Go to console` tab at top right corner, So click 
 
 ![Project page](https://cloud-kfr44a6da.vercel.app/2.png)
 
-In the console section, you'll see all your FIREBASE projects and here you will see `Add Project` card, So click on it to create a project.
+In the console section, you'll see all your Firebase projects and here you will see `Add Project` card, So click on it to create a project.
 
 ![Create project](https://cloud-nfiwmg8kh.vercel.app/3.png)
 
-Here you have to give a name to your FIREBASE project as I am giving `Login-auth`.
+Here you have to give a name to your Firebase project as I am giving `Login-auth`.
 
 After giving a wonderful name to your project just click on continue to proceed further.
 
 ![Analytics page](https://cloud-pva80oxrl.vercel.app/4.png)
 
-Here is a step where you can use GOOGLE Analytics for you project but in these workshop you don't need it, So simply disable it.
+Here is a step where you can use Google Analytics for you project but in these workshop you don't need it, So simply disable it.
 
 ![Project created](https://cloud-3swaas1pn.vercel.app/5.png)
 
 Now here you'll see `Your new project is ready`. 
 
-Hooray!🎉 you just created a new FIREBASE project.
+Hooray!🎉 you just created a new Firebase project.
 
-### Connecting FIREBASE to your webpage 🔗 -
+### Connecting Firebase to your webpage 🔗 -
 
-After successfully creating FIREBASE project you will see your project console.
+After successfully creating Firebase project you will see your project console.
 
-At project console's landing page you will see `Get started by adding FIREBASE to your app` and below that you will see three options of integrations:
+At project console's landing page you will see `Get started by adding Firebase to your app` and below that you will see three options of integrations:
 1. iOS
 2. Android
 3. </> (this option is for web on which you are working, So click on that).
@@ -65,7 +65,7 @@ After clicking on that new page will pops up and ask you for a nickname of your 
 
 ![App nickname](https://cloud-8tdv8wfuj.vercel.app/8.png)
 
-Then you will see some sort of JavaScript code, So don't worry about that, It is the code which contains some keys like API Key, Domain key which helps your FIREBASE project to connect with your webpage and for that you need to save this code or just copy/paste into the notes as it will required in coding part later.
+Then you will see some sort of JavaScript code, So don't worry about that, It is the code which contains some keys like API Key, Domain key which helps your Firebase project to connect with your webpage and for that you need to save this code or just copy/paste into the notes as it will required in coding part later.
 
 Also include below two lines with above code.
 
@@ -202,7 +202,7 @@ So here is your HTML code:
 
 So as you can see it is looking simple, So to make it look cool you need to add CSS but.... 
 
-You remember you saved lines of JavaScript code from firebase.
+You remember you saved lines of JavaScript code from Firebase.
 
 So you need to include those lines after the second division:
 
@@ -280,7 +280,7 @@ In this way you can add styles to (Divisions/ IDs) and whole webpage, Inspect my
 
 You can select different colours from [Colour Picker](https://www.google.com/search?q=color+picker) to give your webpage an Attractive look.
 
-And also add fonts to your webpage, As i have added `Nunito` font as you can see a line of code in HTML `<head>`. You can choose fonts from [GOOGLE Fonts](https://fonts.google.com/) and link them.
+And also add fonts to your webpage, As i have added `Nunito` font as you can see a line of code in HTML `<head>`. You can choose fonts from [Google Fonts](https://fonts.google.com/) and link them.
 
 If you need help regarding various keywords uses in CSS, So you can go through [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
 
@@ -288,9 +288,9 @@ If you need help regarding various keywords uses in CSS, So you can go through [
 
 This is a `script.js` file present in your Repl just below `index.html`, which handles the functioning of your webpage.
 
-Here you have to write small amount JavaScript code because FIREBASE has some pre-defined functions and properties for Authentication which you will use here and also you can check [FIREBASE Documentation on web authentication](https://firebase.google.com/docs/auth/web/start).
+Here you have to write small amount JavaScript code because Firebase has some pre-defined functions and properties for Authentication which you will use here and also you can check [Firebase Documentation on web authentication](https://firebase.google.com/docs/auth/web/start).
 
-So what you have to do is, you need to `Get the currently signed-in user` as you already created user in FIREBASE.
+So what you have to do is, you need to `Get the currently signed-in user` as you already created user in Firebase.
 In the `script.js` file you need to add a property [`Get the currently signed-in user`](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user) for that which is:
 
 ```javascript
@@ -359,7 +359,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 Now after completing this you need to work on both the functions you assigned in HTML buttons `login()` and `logout()`.
 
 - Function login()
-As user can sign-in only if there record is stored in FIREBASE. So, FIREBASE has a property called [`Sign-in existing user`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) as exisiting users can sign-in through input fields.
+As user can sign-in only if there record is stored in Firebase. So, Firebase has a property called [`Sign-in existing user`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) as exisiting users can sign-in through input fields.
 
 Now you need to create two variables in `login()` function `userEmail` and `userPass` which get email and password values from the input fields with IDs `email_field` and `password_field`.
 
@@ -460,18 +460,18 @@ function logout(){
 
 Yayyy🎊! you Finished with coding part!
 
-Try login with the EMAIL and PASSWORD you recorded in FIREBASE.
+Try login with the EMAIL and PASSWORD you recorded in Firebase.
 
 ### Hooray!🎉 
 You finished the Web Login Authentication Workshop by completing all tasks:
-- [x] Creating a FIREBASE project.
-- [x] Connecting FIREBASE to your webpage
+- [x] Creating a Firebase project.
+- [x] Connecting Firebase to your webpage
 - [x] Designing a webpage.
 
 ### ⚡ What's Next?
-Now you know how to build a web page with login authentication using FIREBASE.
+Now you know how to build a web page with login authentication using Firebase.
 
-Now how you can expand it? Try adding some other features to it with the help of [FIREBASE Guide](https://firebase.google.com/docs/auth/web/start?authuser=0)
+Now how you can expand it? Try adding some other features to it with the help of [Firebase Guide](https://firebase.google.com/docs/auth/web/start?authuser=0)
 
 Here are some examples 👇
 - Adding `create account` feature, So user can create a new account.
