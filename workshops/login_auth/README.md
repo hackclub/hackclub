@@ -206,7 +206,7 @@ You remember you saved lines of JavaScript code from firebase.
 
 So you need to include those lines after the second division:
 
-Your here is your final HTML code:
+Here is your final HTML code:
 
 ```HTML
 <html>
@@ -278,7 +278,7 @@ body {
 ```
 In this way you can add styles to (Divisions/ IDs) and whole webpage.
 
-You can also add fonts to your webpage, As i have added `Nunito` font as you can see a line of code in HTML `<head>`. You can also choose fonts from [GOOGLE Fonts](https://fonts.google.com/) and link them.
+You can also add fonts to your webpage, As i have added `Nunito` font as you can see a line of code in HTML `<head>`. You can choose fonts from [GOOGLE Fonts](https://fonts.google.com/) and link them.
 
 If you need help regarding various keywords uses in CSS, So you can go through [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
 
@@ -325,7 +325,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     // No user is signed in.
   }
 });
-
+```
 In the above code `block` will displays the division and `none` will hide that division.
 
 As you added this for signed-in user, So you also need `else` part _where user is not signed-in_ means user is on the login page, So the code will same as above code but you need to swap `block` and `none` as you need to display only `main_div` with ID `login_div`.
@@ -353,7 +353,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-
+```
 Now after completing this you need to work on both the functions you assigned in HTML buttons `login()` and `logout()`.
 
 - Function login()
@@ -413,7 +413,7 @@ function logout(){
 }
 ```
 
-So here is your final JavaScript code:
+Here is your final JavaScript code:
 ```javascript
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
@@ -456,7 +456,7 @@ function logout(){
 
 ```
 
-Yayyy! you Finished with coding part!
+Yayyy🎊! you Finished with coding part!
 
 Try login with the EMAIL and PASSWORD you recorded in FIREBASE.
 
