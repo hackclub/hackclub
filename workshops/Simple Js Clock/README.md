@@ -74,7 +74,7 @@ Give a class of `hand hour-hand`, `hand min-hand`, `hand second-hand` to each of
 
 Note: Make sure the `<script>` tag, which is in your body, is below the `<div>` tags or else it will throw you errors.  
 
-This is your code so far:
+This is what your code should look like so far:
 
 ```html
 <!DOCTYPE html>
