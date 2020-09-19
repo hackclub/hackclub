@@ -59,7 +59,7 @@ If you take a look in the `<body>` tag, you'll find:
 ```html
 <script src="script.js"></script>
 ```
-This means that your JavaScript file is linked to your HTML.
+This means that your HTML file is linked to your JavaScript.
 
 ## Part 4: Building the Clock
 
