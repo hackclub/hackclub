@@ -6,7 +6,11 @@ jobs:
   prettier:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - run: npx prettier --write .
-      - run: git diff --exit-code
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+      - name: Format with prettier
+        run: npx prettier --write .
+      - name: Check for changes
+        run: git diff --exit-code
