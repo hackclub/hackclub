@@ -1,7 +1,7 @@
 ---
 name:'Creating a UI with Tkinter.'
 description:'We will use python tkinter graphics to make User Interfaces. Its a nice world.'
-author: '@Bezlin Johnson'
+author: '@bezlin6mechminerz'
 ---
 
 # Final User Interface or UI.
