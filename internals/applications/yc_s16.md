@@ -50,15 +50,15 @@ zach@hackclub.com
 
 **Hacker News username**
 
-zachlatta	
+zachlatta
 
-**Name**	
+**Name**
 
-Zach Latta	
+Zach Latta
 
-**Email**	
+**Email**
 
-zach@hackclub.com	
+zach@hackclub.com
 
 **Please enter the URL of a 1 minute unlisted (not private) YouTube video introducing the founders. (Follow the Video Guidelines.)**
 
@@ -66,7 +66,7 @@ https://youtu.be/WtFaWtK5b8A
 
 **Please tell us about an interesting project, preferably outside of class or work, that two or more of you created together. Include URLs if possible.**
 
-$ ssh sshtron.zachlatta.com
+\$ ssh sshtron.zachlatta.com
 
 Run the above command in your terminal. Use WASD to move.
 
@@ -100,7 +100,7 @@ Yes
 
 **How much revenue?**
 
-$165,765.00
+\$165,765.00
 
 **What is your monthly growth rate?**
 
@@ -110,7 +110,7 @@ We're growing our number of clubs by 13% monthly.
 
 **If you've applied previously with the same idea, how much progress have you made since the last time you applied? Anything change?**
 
-We nearly doubled in size (47 -> 83 schools) and secured another $75,000 grant. We made significant progress on our club materials, adding minute-by-minute guidelines for meetings and additional guidance on how to structure clubs.
+We nearly doubled in size (47 -> 83 schools) and secured another \$75,000 grant. We made significant progress on our club materials, adding minute-by-minute guidelines for meetings and additional guidance on how to structure clubs.
 
 [redacted]
 
@@ -130,7 +130,7 @@ I think this is going to work because our clubs are succeeding and the people st
 
 Our clubs and content are built by students, for students.
 
-By having high schoolers lead clubs, we're able to bypass the red tape typically associated with bringing computer science to a school or a community. Whereas it can take years to start a new computer science program, starting a Hack Club can take as little as two weeks. Our leaders don't need to find their own space (the school is their space), recruit external volunteers (their friends are volunteers), or hire teachers (they teach using our pre-written workshops). This model makes the cost of starting a new club virtually $0 from our end and we think it'll let us scale where others haven't.
+By having high schoolers lead clubs, we're able to bypass the red tape typically associated with bringing computer science to a school or a community. Whereas it can take years to start a new computer science program, starting a Hack Club can take as little as two weeks. Our leaders don't need to find their own space (the school is their space), recruit external volunteers (their friends are volunteers), or hire teachers (they teach using our pre-written workshops). This model makes the cost of starting a new club virtually \$0 from our end and we think it'll let us scale where others haven't.
 
 ### Formation
 
@@ -144,7 +144,7 @@ Non-stock non-profit corporation
 
 **If you're already incorporated, when were you? If you've had funding, how much and from whom?**
 
-January 2014. We've secured $165,765.00 in donations from The Reva & David Logan Foundation, the Thiel Foundation, Joe Lonsdale, and other individual supporters.
+January 2014. We've secured \$165,765.00 in donations from The Reva & David Logan Foundation, the Thiel Foundation, Joe Lonsdale, and other individual supporters.
 
 **Have you obtained your 501(c)(3) tax-exempt status yet?**
 
@@ -168,7 +168,7 @@ Edwin Grozier bought The Boston Post in 1891 and, within two decades, grew it fr
 
 How did he do it? He pulled a Buzzfeed. His plan was to do a bunch of viral stunts to get readers, with those readers—and therefore revenue—hire quality journalists, and then produce quality content to keep the readers coming back. It worked exceptionally well -- The Boston Post later became the first paper in Boston to win a Pulitzer Prize.
 
-One of their stunts was to send someone from the paper with $100 in cash ($1000 in today's dollar) to an arbitrary district of Boston. In that morning's Post, they'd print that they sent someone to a certain district of Boston and the first person to ask them if they read the Post that morning would get the $100 on the spot. Throughout the day, everyone in the selected district of the city would be asking strangers if they read the Post that morning.
+One of their stunts was to send someone from the paper with $100 in cash ($1000 in today's dollar) to an arbitrary district of Boston. In that morning's Post, they'd print that they sent someone to a certain district of Boston and the first person to ask them if they read the Post that morning would get the \$100 on the spot. Throughout the day, everyone in the selected district of the city would be asking strangers if they read the Post that morning.
 
 https://en.wikipedia.org/wiki/The_Boston_Post
 

@@ -57,7 +57,7 @@ making Hack Club feel like a continuous hackathon.
 Throughout the year, Hack Clubs go to (and sometimes host) hackathons, work on
 large group projects, and, most importantly, develop into a thriving community
 of hackers at their high schools.
- 
+
 In the sections below, we'll walk you through the process of setting up your
 Hack Club and running your first few meetings. After hosting the first two
 meetings, you will get the hang of how to host subsequent meetings.
@@ -146,15 +146,13 @@ school administration before having your first meeting.
 
 Generally they have an application to fill out [click here for an example][lowell_club_application].
 Some schools require having a club constitution that outlines the club's
-purpose and operational procedures. We've created a template constitution for 
+purpose and operational procedures. We've created a template constitution for
 you, which you can find [here][club_constitution_template].
 
 This shouldn't take very long, especially once you have a teacher sponsor
 backing you.
 
-[lowell_club_application]:
-https://docs.google.com/forms/d/1Tr8OkMX3IN8SWsYkWeTTW4GIyNSDdvco8uks9UE_FOE/viewform
-
+[lowell_club_application]: https://docs.google.com/forms/d/1Tr8OkMX3IN8SWsYkWeTTW4GIyNSDdvco8uks9UE_FOE/viewform
 [club_constitution_template]: constitution.md
 
 ### Student Sign-Ups
@@ -214,7 +212,7 @@ Check out the [`posters/`](posters/) sub-directory for example club posters.
 
 ### Check If Sites Are Blocked
 
-Before starting your first meeting, be sure to make sure that the following 
+Before starting your first meeting, be sure to make sure that the following
 websites are **not** blocked by your school!
 
 - https://hackclub.com
@@ -280,21 +278,22 @@ recommend doing the following four things to accomplish this:
 2. Put some music on (not too loud, [click here][playlist] for a good pre-made
    Spotify playlist)
 3. Make people feel welcome as they walk in
-  - Introduce yourself
-  - Ask a couple questions to initiate conversation
-    - "How did you hear about Hack Club?"
-    - "What sorts of things are you interested in learning?"
-    - "What other interests or hobbies do you have?"
-  - If someone is sitting alone, be proactive and make conversation with them.
-    Bring them into existing conversations.
-  - You want people to feel good about their decision to come to Hack Club
+
+- Introduce yourself
+- Ask a couple questions to initiate conversation
+  - "How did you hear about Hack Club?"
+  - "What sorts of things are you interested in learning?"
+  - "What other interests or hobbies do you have?"
+- If someone is sitting alone, be proactive and make conversation with them.
+  Bring them into existing conversations.
+- You want people to feel good about their decision to come to Hack Club
+
 4. Tell people what will be happening next (e.g., "We're going to get the first
    meeting started in about 10 minutes after people are done trickling in. In
    the meantime, please make yourself at home and let me know if I can be
    helpful with anything.")
 
-[playlist]:
-https://open.spotify.com/user/zachlatta/playlist/16lRCHBANauZr4utynaA2B
+[playlist]: https://open.spotify.com/user/zachlatta/playlist/16lRCHBANauZr4utynaA2B
 
 #### Introduction Presentation
 
@@ -318,7 +317,7 @@ have the person to your left do the same and then repeat what you said (e.g.,
 the same and then say the names and mnemonics for everyone that has gone so
 far, in order. Continue doing this through the whole circle until everyone has
 gone. This will get significantly more difficult (and fun!) as more people go
--- if someone gets stuck, encourage others to help them out.  
+-- if someone gets stuck, encourage others to help them out.
 
 #### First Website Workshop
 
@@ -518,10 +517,8 @@ Template][hack_day_template]. To use the presentations:
 
 [first_meeting_template]: https://docs.google.com/presentation/d/1QhErlJS6rnqu78guPBWuJ1SUyPJKLbxzLNuSN9qVw0c/edit
 [second_meeting_template]: https://docs.google.com/presentation/d/1WCerU9JhJY6L5kM7SrIlYcABwxpqcjmxmSRXilvWAaY/edit
-[workshop_day_template]:
-https://docs.google.com/presentation/d/1LnbH5c7K-V608jMXNk3VyoVaZLaEuet7faHZCbYhOCs/edit
-[hack_day_template]:
-https://docs.google.com/presentation/d/1uIcNYRY5ZLaLgEMO_1p-ZPmdaxeh1osy-0UpDjG2Z7w/edit
+[workshop_day_template]: https://docs.google.com/presentation/d/1LnbH5c7K-V608jMXNk3VyoVaZLaEuet7faHZCbYhOCs/edit
+[hack_day_template]: https://docs.google.com/presentation/d/1uIcNYRY5ZLaLgEMO_1p-ZPmdaxeh1osy-0UpDjG2Z7w/edit
 
 ### Workshop Days
 
@@ -602,8 +599,7 @@ Here's our suggested schedule for Hack Days:
 [Click here][hack_day_template] for our slideshow template for Hack Days. Make
 sure to [customize it](#slideshow-presentations).
 
-[slideshow]:
-https://docs.google.com/presentation/d/1uIcNYRY5ZLaLgEMO_1p-ZPmdaxeh1osy-0UpDjG2Z7w/edit?usp=sharing
+[slideshow]: https://docs.google.com/presentation/d/1uIcNYRY5ZLaLgEMO_1p-ZPmdaxeh1osy-0UpDjG2Z7w/edit?usp=sharing
 
 #### Waiting For Hackers
 
@@ -650,7 +646,7 @@ You should warn and ask them stop. You'll want to make sure to tell them what is
 
 If this persists past the warning, then talk to your teacher/club sponsor/school administrator about the proper course of action to take.
 
-Refer to our [Code of Conduct](https://github.com/hackclub/hackclub/blob/master/CONDUCT.md) for more information. 
+Refer to our [Code of Conduct](https://github.com/hackclub/hackclub/blob/master/CONDUCT.md) for more information.
 
 ### What if our adviser does not want to let us meet every week?
 
@@ -664,10 +660,10 @@ Alternatively, you could find a public space to meet in and have your club meeti
 
 ### What if people come and do non club related activities?
 
-Hack Clubs should be a fun, chill, and creative spaces, where the focus is to create an environment where people want to learn to hack. However, it's not cool when people come with the intention of doing non club related activities, such as playing games or messing around for the fun of it. 
+Hack Clubs should be a fun, chill, and creative spaces, where the focus is to create an environment where people want to learn to hack. However, it's not cool when people come with the intention of doing non club related activities, such as playing games or messing around for the fun of it.
 
 If this happens, make them aware of their actions, as they themselves might not know what they are doing is wrong.
 
 If this persists past the warning, then talk to your teacher/club sponsor/school administrator about the proper course of action to take.
 
-Refer to our [Code of Conduct](https://github.com/hackclub/hackclub/blob/master/CONDUCT.md) for more information. 
+Refer to our [Code of Conduct](https://github.com/hackclub/hackclub/blob/master/CONDUCT.md) for more information.

@@ -14,7 +14,7 @@ You can play the finished game here: https://www.lexaloffle.com/bbs/?pid=53863#p
 
 All you need for this setup is a copy of PICO-8, which you can get [here](https://www.lexaloffle.com/pico-8.php). PICO-8 is a game development suite which is delightfully simple, satisfying and quick to work with—you can write code, draw characters and maps, along with making music, all in the same software which weighs only a few megabytes ⚡
 
-PICO-8 works on Windows, macOS, Linux and even Raspberry Pi 🖥️—it is totally worth the $15!
+PICO-8 works on Windows, macOS, Linux and even Raspberry Pi 🖥️—it is totally worth the \$15!
 
 ## Exploring ⛰
 

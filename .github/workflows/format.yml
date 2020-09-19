@@ -1,0 +1,16 @@
+name: format
+
+on: push
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+      - name: Format with prettier
+        run: npx prettier --write .
+      - name: Check for changes
+        run: git diff --exit-code

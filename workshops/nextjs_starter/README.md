@@ -148,7 +148,7 @@ export default () => (
   <main>
     <h1>Shopping List</h1>
     <ul>
-      {items.map(item => (
+      {items.map((item) => (
         <li key={item}>{item}</li>
       ))}
     </ul>
@@ -184,7 +184,7 @@ export default () => {
         <button>Add item</button>
       </div>
       <ul>
-        {items.map(item => (
+        {items.map((item) => (
           <li key={item}>{item}</li>
         ))}
       </ul>
@@ -207,7 +207,7 @@ export default () => {
         <button>Add item</button>
       </div>
       <ul>
-        {items.map(item => (
+        {items.map((item) => (
           <li key={item}>{item}</li>
         ))}
       </ul>
@@ -222,9 +222,9 @@ export default () => {
 export default () => {
   const [items, setItems] = useState(['Apples', 'Strawberries'])
   const [newItem, setNewItem] = useState('')
-  const changeNewItem = e => setNewItem(e.target.value)
+  const changeNewItem = (e) => setNewItem(e.target.value)
   const addItem = () => {
-    setItems(list => [...list, newItem])
+    setItems((list) => [...list, newItem])
     setNewItem('')
   }
   return (
@@ -239,7 +239,7 @@ export default () => {
         <button onClick={addItem}>Add item</button>
       </div>
       <ul>
-        {items.map(item => (
+        {items.map((item) => (
           <li key={item}>{item}</li>
         ))}
       </ul>

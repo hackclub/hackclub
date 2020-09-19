@@ -10,12 +10,12 @@ The following estimates are conservative and optimistic.
 
 | Category                                          | Estimated Spending |
 | ------------------------------------------------- | ------------------ |
-| Salaries                                          | $150,000           |
-| Services (software, fiscal sponsorship fees, etc) | $20,000            |
-| Transport (public transit, cabs)                  | $10,000            |
-| Travel (flights, accommodation)                   | $5,000             |
-| Marketing (stickers, ads, etc)                    | $10,000            |
-| Office supplies                                   | $2,000             |
+| Salaries                                          | \$150,000          |
+| Services (software, fiscal sponsorship fees, etc) | \$20,000           |
+| Transport (public transit, cabs)                  | \$10,000           |
+| Travel (flights, accommodation)                   | \$5,000            |
+| Marketing (stickers, ads, etc)                    | \$10,000           |
+| Office supplies                                   | \$2,000            |
 
 ## Year to Date Balances
 
@@ -51,7 +51,7 @@ The following estimates are conservative and optimistic.
                    0
 ```
 
-Note: these balances do not include any income or expenses from before January 1st, 2016. This may make some balances confusing, like in the case of `Liabilities:Reimbursement:Jonathan Leung`. To clarify, that means we reimbursed Jonathan $3,014.90 more than what he recorded for reimbursements in 2016. In this case, that's because we paid out all of his 2015 and 2016 reimbursements in a lump sum.
+Note: these balances do not include any income or expenses from before January 1st, 2016. This may make some balances confusing, like in the case of `Liabilities:Reimbursement:Jonathan Leung`. To clarify, that means we reimbursed Jonathan \$3,014.90 more than what he recorded for reimbursements in 2016. In this case, that's because we paid out all of his 2015 and 2016 reimbursements in a lump sum.
 
 ## All Time Balances
 

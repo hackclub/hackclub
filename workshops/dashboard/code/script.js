@@ -16,9 +16,12 @@ function loadWeather() {
 
     $.getJSON(
       url +
-        '?units=imperial&lat=' + latitude +
-        '&lon=' + longitude +
-        '&appid=' + apiKey,
+        '?units=imperial&lat=' +
+        latitude +
+        '&lon=' +
+        longitude +
+        '&appid=' +
+        apiKey,
       function (data) {
         weather.text(
           'At your current location, it is ' + data.main.temp + '° F right now'
