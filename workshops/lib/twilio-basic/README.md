@@ -42,7 +42,7 @@ be in `dist/twilio-basic.min.js`.
 Send a text message to the given phone number.
 
 ```js
-Twilio.sendMessage("1-555-555-5555", "This is a text message");
+Twilio.sendMessage('1-555-555-5555', 'This is a text message')
 ```
 
 ##### Call and Say
@@ -50,7 +50,7 @@ Twilio.sendMessage("1-555-555-5555", "This is a text message");
 Call the given phone number and say the given words.
 
 ```js
-Twilio.callAndSay("1-555-555-5555", "Words words words");
+Twilio.callAndSay('1-555-555-5555', 'Words words words')
 ```
 
 ##### Call and Play
@@ -59,7 +59,10 @@ Call the given phone number and play the given music file (in the below example,
 an MP3).
 
 ```js
-Twilio.callAndPlay("1-555-555-5555", "http://mean2u.rfshq.com/downloads/music/giveyouup.mp3");
+Twilio.callAndPlay(
+  '1-555-555-5555',
+  'http://mean2u.rfshq.com/downloads/music/giveyouup.mp3'
+)
 ```
 
 ##### Receive Text Messages
@@ -71,7 +74,7 @@ Listen for messages and run the given function whenever one is received.
 Twilio.listenForMessages(function (msg) {
   // log the received message to the console
   console.log(msg.body)
-});
+})
 ```
 
 ##### Get Latest Text Message
@@ -82,8 +85,8 @@ Get the most recently received text message.
 // Get the most recent text message...
 Twilio.getLatestMessage(function (msg) {
   // And once it's retrieved, log it to the console
-  console.log(msg);
-});
+  console.log(msg)
+})
 ```
 
 ##### Get All Text Messages
@@ -93,6 +96,6 @@ Retrieve all of the received text messages.
 ```js
 Twilio.getAllMessages(function (messageArray) {
   // Print the number of received messages
-  console.log(messageArray);
-});
+  console.log(messageArray)
+})
 ```

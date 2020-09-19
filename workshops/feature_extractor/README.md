@@ -79,20 +79,20 @@ Here's all the code we write for the `setupButtons()` function 👇
 function setupButtons() {
   buttonA = select('#red')
   buttonB = select('#blue')
-  buttonA.mousePressed(function() {
+  buttonA.mousePressed(function () {
     redCount++
     classifier.addImage('red')
     select('#redCount').html(redCount)
   })
-  buttonB.mousePressed(function() {
+  buttonB.mousePressed(function () {
     blueCount++
     classifier.addImage('blue')
     select('#blueCount').html(blueCount)
   })
 
   train = select('#train')
-  train.mousePressed(function() {
-    classifier.train(function(lossValue) {
+  train.mousePressed(function () {
+    classifier.train(function (lossValue) {
       // This is where we're actually training our model
 
       if (lossValue) {
@@ -124,13 +124,13 @@ Let's start off with this block:
 buttonA = select('#red')
 buttonB = select('#blue')
 
-buttonA.mousePressed(function() {
+buttonA.mousePressed(function () {
   redCount++
   classifier.addImage('red')
   select('#redCount').html(redCount)
 })
 
-buttonB.mousePressed(function() {
+buttonB.mousePressed(function () {
   blueCount++
   classifier.addImage('blue')
   select('#blueCount').html(blueCount)
@@ -151,8 +151,8 @@ Next up, we have this whole block - where we train the classifier itself:
 
 ```javascript
 train = select('#train')
-train.mousePressed(function() {
-  classifier.train(function(lossValue) {
+train.mousePressed(function () {
+  classifier.train(function (lossValue) {
     // This is where we're actually training our model
 
     if (lossValue) {

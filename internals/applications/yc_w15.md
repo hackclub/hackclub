@@ -123,12 +123,12 @@ onboarded the other 6 of the 30 periodically through Spring 2014.
 area? How do you know this is going to work?**
 
 Teaching people to code is part of my DNA, I've been doing it since I was in
-the 3rd grade.  When I entered high school, I started a programming club
+the 3rd grade. When I entered high school, I started a programming club
 because my school didn't offer any computer science courses. During the 1st
 year, I helped 15 students learn to program. By the end of the 2nd year, the
 students in my club launched games on the Android Play Store, won high-profile
 hackathons, founded a web design firm that landed real clients, and secured
-over $30,000 in investment. Having access to a community of other programmers
+over \$30,000 in investment. Having access to a community of other programmers
 made an immense impact in lives of the students in my club, and I want to scale
 that experience to every aspiring student programmer on the planet.
 
@@ -176,7 +176,7 @@ HackEDU is incorporated in the state of Delaware as a non-profit corporation.
 much and from whom?**
 
 HackEDU was incorporated in January of 2013. I won a hackathon and part of the
-prize was a $5,000 donation from Oink to hackEDU.
+prize was a \$5,000 donation from Oink to hackEDU.
 
 **Have you obtained your 501(c)(3) tax-exempt status yet?**
 

@@ -168,7 +168,7 @@ code.
 ```js
 var button = document.getElementById('alertButton')
 
-button.onclick = function() {
+button.onclick = function () {
   alert('Button was pressed')
 }
 ```

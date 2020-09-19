@@ -28,18 +28,18 @@ If you do end up using your own editor, make sure you include:
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>p5.js</title>
-</head>
-<body>
-  <p>Using your mouse, dribble the soccer ball into the goal.</p>
+    <title>p5.js</title>
+  </head>
+  <body>
+    <p>Using your mouse, dribble the soccer ball into the goal.</p>
 
-  <script src="http://rawgit.com/jonleung/33aa8dcb08ce87d689a6/raw/9a3acc3f39ea114aadc1ab87c75f518c553f54ca/p5.js"></script>
-  <script src="http://rawgit.com/jonleung/33aa8dcb08ce87d689a6/raw/9a3acc3f39ea114aadc1ab87c75f518c553f54ca/p5.play.js"></script>
-</body>
+    <script src="http://rawgit.com/jonleung/33aa8dcb08ce87d689a6/raw/9a3acc3f39ea114aadc1ab87c75f518c553f54ca/p5.js"></script>
+    <script src="http://rawgit.com/jonleung/33aa8dcb08ce87d689a6/raw/9a3acc3f39ea114aadc1ab87c75f518c553f54ca/p5.play.js"></script>
+  </body>
 </html>
 ```
 

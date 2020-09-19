@@ -14,7 +14,7 @@ One of the amazing things about building projects for the web is just how easy i
 
 <a href="https://scrapbook.hackclub.com/sampoder"><img src="https://cloud-5j06exp7f.vercel.app/screenshot_2020-09-12_at_7.29.11_pm.png" width="380" alt="Sam Poder's Scrapbook Profile"></a>
 
-Today, we’re going to be learning about CSS by customizing a [Scrapbook](https://scrapbook.hackclub.com/) profile (^ like mine above). Scrapbook is a platform where Hack Clubbers can share photos of what they make or just of their daily life. If you don’t have a profile, log in to the Hack Club Slack, visit the [#scrapbook](https://hackclub.slack.com/archives/C01504DCLVD/) channel, take a photo (or use an old one) and post it! 
+Today, we’re going to be learning about CSS by customizing a [Scrapbook](https://scrapbook.hackclub.com/) profile (^ like mine above). Scrapbook is a platform where Hack Clubbers can share photos of what they make or just of their daily life. If you don’t have a profile, log in to the Hack Club Slack, visit the [#scrapbook](https://hackclub.slack.com/archives/C01504DCLVD/) channel, take a photo (or use an old one) and post it!
 
 Next up, you are going to want to open up the [Scrapbook Customizer](https://scrapbook.hackclub.com/customizer/). Type in your username at the top, and delete any code in the right column. Click **‘Go’**.
 
@@ -24,21 +24,19 @@ We’re now ready to get started!
 
 To make setting colours easier, Scrapbook uses CSS variables. CSS variables work like variables do in any other programming language. You define the variable and then instead of pasting the value in everywhere you add `var(--variable-name)`. This makes it so that if you want to change a theme colour (like we're doing today!) you can do it with one line.
 
-For Scrapbook there are 3 key colour variables that we’re going to want to play around with today. These are the background colour, the colour of text and the colour of the posts (referred to as colors-elevated below). 
+For Scrapbook there are 3 key colour variables that we’re going to want to play around with today. These are the background colour, the colour of text and the colour of the posts (referred to as colors-elevated below).
 
 To tell the web browser the exact colour we want, we can use either Hex codes, or RGB values. For this workshop, we’re going to use HEX codes. To help us get those, we can [Google “colour picker”](https://www.google.com/search?q=color+picker). From here, you can play around with the slides and choose your preferred colour. Choose 3 colours to be used for the profile.
 
 Then in the right column, type:
 
 ```css
-:root { 
+:root {
+  --colors-background: YOURCOLOUR;
 
-  --colors-background: YOURCOLOUR; 
-
-  --colors-text: YOURCOLOUR; 
+  --colors-text: YOURCOLOUR;
 
   --colors-elevated: YOURCOLOUR;
-
 }
 ```
 
@@ -49,16 +47,13 @@ You may still see some grey, these are elements that use the `--colors-muted` va
 I used these colours:
 
 ```css
-:root { 
+:root {
+  --colors-background: #a633d6;
 
-  --colors-background: #A633D6; 
+  --colors-text: #fff;
 
-  --colors-text: #FFF; 
-
-  --colors-elevated: #228B23;
-
+  --colors-elevated: #228b23;
 }
-
 ```
 
 To create:
@@ -77,26 +72,23 @@ What if your Scrapbook was in cursive? Or in a crazy techno font! Fonts can give
 
 As we’ve most likely chosen different fonts, don’t worry if our links are different. Now paste this text snippet into the top of your code file (what you were writing on the right side).
 
-Similar to colours, Scrapbook uses CSS Variables to make it super simple for us to change the fonts. 
+Similar to colours, Scrapbook uses CSS Variables to make it super simple for us to change the fonts.
 
-Add the following code snippet just below the `--colors-elevated` line. 
+Add the following code snippet just below the `--colors-elevated` line.
 
 ```css
-:root { 
+:root {
+  --colors-background: YOURCOLOUR;
 
-  --colors-background: YOURCOLOUR; 
-
-  --colors-text: YOURCOLOUR; 
+  --colors-text: YOURCOLOUR;
 
   --colors-elevated: YOURCOLOUR;
-  
-  /* Add this code below */
-  
-  --fonts-body: 'Font name', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
 
+  /* Add this code below */
+
+  --fonts-body: 'Font name', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
 }
 ```
-
 
 Replace ` ‘Font name’` with the name of your font, just keep the quotes! We’ve left the other fonts there as a backup for if the font we want won’t load. These are called [Fallback Fonts](https://css-tricks.com/css-basics-fallback-font-stacks-robust-web-typography/)
 
@@ -145,7 +137,6 @@ Now, we need to tell the web browser which element should have the animation app
 
 ```css
 .header-title-name {
-
 }
 ```
 
@@ -161,7 +152,7 @@ Here's what I got:
 
 <img src="https://cloud-1fmtzoja5.vercel.app/ezgif-5-db525cfe2a47.gif" width="380" alt="Rainbow animated text">
 
-I’ve got a challenge for you. Let’s make that profile picture spin! 
+I’ve got a challenge for you. Let’s make that profile picture spin!
 
 Here are a few things you’ll need to know:
 
@@ -189,8 +180,8 @@ However, when we do this it's very abrupt and not at all smooth.
 To fix this we want to add this to our CSS:
 
 ```css
-.post { 
-  transition: all .2s ease-in-out; 
+.post {
+  transition: all 0.2s ease-in-out;
 }
 ```
 
@@ -217,7 +208,7 @@ Once you're done making your profile pretty, how about sharing it in [#scrapbook
 Here are all the classes you'll need to know to make a splendid Scrapbook:
 
 - `header` is the entire section above your posts.
-- `header-col-1` is the section with your avatar, name, streak (if set to display), social links and profile audio (if set). 
+- `header-col-1` is the section with your avatar, name, streak (if set to display), social links and profile audio (if set).
 - `header-title-avatar` is your avatar, it is a `<img>`.
 - `header-title-name` is the heading with your name.
 - `header-content` contains all of your social links and your streak (if set to display).
@@ -248,13 +239,13 @@ I truly hope you enjoyed this workshop, happy hacking!
 ```css
 @keyframes rotate {
   0% {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
   50% {
-    transform: rotate(180deg)
+    transform: rotate(180deg);
   }
   100% {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
 

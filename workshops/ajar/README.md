@@ -984,13 +984,23 @@ This pair represents the location (30, 100) where x is `30` and y is `100`.
 Here's the array we're going to make:
 
 ```js
-;[[30, 20], [400, 90], [60, 317], [300, 268]]
+;[
+  [30, 20],
+  [400, 90],
+  [60, 317],
+  [300, 268]
+]
 ```
 
 We want to store this array in a variable named `foodPositions`:
 
 ```js
-var foodPositions = [[30, 20], [400, 90], [60, 317], [300, 268]]
+var foodPositions = [
+  [30, 20],
+  [400, 90],
+  [60, 317],
+  [300, 268]
+]
 ```
 
 ### Generalizing (abstracting) the `drawUserCell`
@@ -1054,7 +1064,12 @@ var y = 250
 var mouseX = 250
 var mouseY = 250
 var velocity = 2
-var foodPositions = [[30, 20], [400, 90], [60, 317], [300, 268]]
+var foodPositions = [
+  [30, 20],
+  [400, 90],
+  [60, 317],
+  [300, 268]
+]
 
 function drawCircle(cellX, cellY, radius) {
   context.beginPath()

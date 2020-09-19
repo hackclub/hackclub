@@ -283,7 +283,7 @@ export class List extends HTMLElement {
   }
 
   async connectedCallback() {
-    const data = await fetch(this.url).then(r => r.json())
+    const data = await fetch(this.url).then((r) => r.json())
 
     for (const contact of data) {
       const el = document.createElement('x-contact')

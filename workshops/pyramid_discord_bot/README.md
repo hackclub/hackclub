@@ -183,19 +183,19 @@ export const isValid = (msg: Discord.Message): validCheck => {
     return {
       isValid: false,
       error: 'Invalid command, must have at least 3 arguments!',
-      reaction: '🗑️',
+      reaction: '🗑️'
     }
     // Ensure that the height of the pyramid is actually a number
   } else if (isNaN(parseInt(msgArr[1]))) {
     return {
       isValid: false,
       error: 'Invalid number, must be an integer!',
-      reaction: '🗑️',
+      reaction: '🗑️'
     }
   } else {
     // Create a temporary storage variable
     let toReturn: validCheck = {
-      isValid: true,
+      isValid: true
     }
 
     // Loop through words to be pyramidified
@@ -208,13 +208,13 @@ export const isValid = (msg: Discord.Message): validCheck => {
           toReturn = {
             isValid: false,
             error: 'Recursiveness is not allowed!',
-            reaction: '😡',
+            reaction: '😡'
           }
         } else if (e === '͔') {
           toReturn = {
             isValid: false,
             error: "Sorry, but that character doesn't work :(",
-            reaction: '😔',
+            reaction: '😔'
           }
         }
       })
@@ -229,12 +229,12 @@ export const isValid = (msg: Discord.Message): validCheck => {
       return {
         isValid: false,
         error: 'Whoops! Looks like that exceeds the maximum characters!',
-        reaction: '😔',
+        reaction: '😔'
       }
     } else {
       // Return correct message!
       return {
-        isValid: true,
+        isValid: true
       }
     }
   }

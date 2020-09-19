@@ -40,11 +40,11 @@ _Key results:_
 - Implement projects shipped collection, per member, per club (Zach)
 - 100% check-in completion for new clubs (Max)
 
-#### Objective: Secure $500,000 by end of 2018 (Zach)
+#### Objective: Secure \$500,000 by end of 2018 (Zach)
 
 _Key results:_
 
-- Secure $300K in commitments (Zach)
+- Secure \$300K in commitments (Zach)
 
 ---
 
@@ -55,7 +55,7 @@ Additional objectives:
 _Key results:_
 
 - 20 self-sustaining clubs checking in weekly
-- $4500 secured
+- \$4500 secured
 - At least 300 members attending events hosted by Hack Club India
 - NPS surveys performed every month (3 times total)
 
@@ -223,8 +223,8 @@ _Contributes to increasing quality of the club & increase outcome collection._
 
 **Secure funding**
 
-- $750k in commitments
-- Over $250k in bank account from fundraising in bank account
+- \$750k in commitments
+- Over \$250k in bank account from fundraising in bank account
 
 ### Q1 & Q2
 

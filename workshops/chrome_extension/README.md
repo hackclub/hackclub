@@ -173,7 +173,7 @@ $notepad.addEventListener('keyup', () => {
   })
 })
 
-chrome.storage.sync.get('notepad', res => {
+chrome.storage.sync.get('notepad', (res) => {
   $notepad.innerText = res.notepad
 })
 ```

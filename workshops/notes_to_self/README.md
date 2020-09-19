@@ -34,8 +34,7 @@ In `index.html`, add the base template, and a title "Notes to Self"
   <head>
     <title>Notes to Self</title>
   </head>
-  <body>
-  </body>
+  <body></body>
 </html>
 ```
 
@@ -52,7 +51,7 @@ We'll be using jQuery in `main.js` later, and we'll need to add it to our `index
 Add `styles.css` to `index.html` by including the following line in the **head**, after the title:
 
 ```html
-<link href="styles.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet" />
 ```
 
 Add `main.js` to `index.html` by including the following line in the **body, beneath the inclusion of jQuery**:
@@ -72,15 +71,13 @@ Thus, we can subdivide the page into two sections -- new note form, and old note
 The first section will house the input fields. We'll start by creating a `div` for this, in our **body**, above the script tags.
 
 ```html
-<div>
-</div>
+<div></div>
 ```
 
 Let's go ahead and give it a class, so that we can remember what this div is for:
 
 ```html
-<div class="new-note">
-</div>
+<div class="new-note"></div>
 ```
 
 And within that `div` we'll add several things:
@@ -95,7 +92,7 @@ Adding an input element inside our `div` is easy:
 
 ```html
 <div class="new-note">
-  <input type="text">
+  <input type="text" />
 </div>
 ```
 
@@ -105,7 +102,7 @@ If we save and look at live preview, our input looks a little bare. We can give 
 
 ```html
 <div class="new-note">
-  <input type="text" placeholder="Note Title">
+  <input type="text" placeholder="Note Title" />
 </div>
 ```
 
@@ -115,7 +112,7 @@ Lastly, we'll add a class to this input, so that we can reference it later in Ja
 
 ```html
 <div class="new-note">
-  <input type="text" placeholder="Note Title" class="new-note-title">
+  <input type="text" placeholder="Note Title" class="new-note-title" />
 </div>
 ```
 
@@ -127,7 +124,7 @@ Adding a `<textarea>` inside our `div` is easy:
 
 ```html
 <div class="new-note">
-  <input type="text" placeholder="Note Title" class="new-note-title">
+  <input type="text" placeholder="Note Title" class="new-note-title" />
   <textarea></textarea>
 </div>
 ```
@@ -136,7 +133,7 @@ We'll give our `<textarea>` some placeholder text:
 
 ```html
 <div class="new-note">
-  <input type="text" placeholder="Note Title" class="new-note-title">
+  <input type="text" placeholder="Note Title" class="new-note-title" />
   <textarea placeholder="Note Text"></textarea>
 </div>
 ```
@@ -145,7 +142,7 @@ And lastly, a class:
 
 ```html
 <div class="new-note">
-  <input type="text" placeholder="Note Title" class="new-note-title">
+  <input type="text" placeholder="Note Title" class="new-note-title" />
   <textarea placeholder="Note Text" class="new-note-content"></textarea>
 </div>
 ```
@@ -158,7 +155,7 @@ We can add a button with the `button` tag, and give it some display text of "Pos
 
 ```html
 <div class="new-note">
-  <input type="text" placeholder="Note Title" class="new-note-title">
+  <input type="text" placeholder="Note Title" class="new-note-title" />
   <textarea placeholder="Note Text" class="new-note-content"></textarea>
   <button>Post Note</button>
 </div>
@@ -168,7 +165,7 @@ Let's add a class to this button as well:
 
 ```html
 <div class="new-note">
-  <input type="text" placeholder="Note Title" class="new-note-title">
+  <input type="text" placeholder="Note Title" class="new-note-title" />
   <textarea placeholder="Note Text" class="new-note-content"></textarea>
   <button class="post-new-note">Post Note</button>
 </div>
@@ -182,26 +179,24 @@ Much like how we've sectioned off part of the body for creating new notes, we ca
 
 ```html
 <div class="new-note">
-  <input type="text" placeholder="Note Title" class="new-note-title">
+  <input type="text" placeholder="Note Title" class="new-note-title" />
   <textarea placeholder="Note Text" class="new-note-content"></textarea>
   <button class="post-new-note">Post Note</button>
 </div>
 
-<div>
-</div>
+<div></div>
 ```
 
 And we'll give this `div` a class of "old-notes":
 
 ```html
 <div class="new-note">
-  <input type="text" placeholder="Note Title" class="new-note-title">
+  <input type="text" placeholder="Note Title" class="new-note-title" />
   <textarea placeholder="Note Text" class="new-note-content"></textarea>
   <button class="post-new-note">Post Note</button>
 </div>
 
-<div class="old-notes">
-</div>
+<div class="old-notes"></div>
 ```
 
 Great. Now that our HTML file is set up, we can move on to styling.
@@ -491,15 +486,9 @@ for (var i = 0; i < myNotes.length; i++) {
 Lastly, we'll fill the elements with the corresponding information. jQuery has a nice method to access and set the text within an element, namely [`.text()`](http://api.jquery.com/text/). We'll add a call to `.text()` to each element, passing it the appropriate value:
 
 ```js
-var noteTitleDisplay = $('<h2>')
-  .addClass('note-title')
-  .text(noteTitle)
-var noteDateDisplay = $('<p>')
-  .addClass('note-date')
-  .text(noteDate)
-var noteContentDisplay = $('<p>')
-  .addClass('note-content')
-  .text(noteContent)
+var noteTitleDisplay = $('<h2>').addClass('note-title').text(noteTitle)
+var noteDateDisplay = $('<p>').addClass('note-date').text(noteDate)
+var noteContentDisplay = $('<p>').addClass('note-content').text(noteContent)
 ```
 
 #### Adding Elements to `index.html`
@@ -514,15 +503,9 @@ for (var i = 0; i < myNotes.length; i++) {
   var noteContent = note.content
 
   var thisNote = $('<div>').addClass('note')
-  var noteTitleDisplay = $('<h2>')
-    .addClass('note-title')
-    .text(noteTitle)
-  var noteDateDisplay = $('<p>')
-    .addClass('note-date')
-    .text(noteDate)
-  var noteContentDisplay = $('<p>')
-    .addClass('note-content')
-    .text(noteContent)
+  var noteTitleDisplay = $('<h2>').addClass('note-title').text(noteTitle)
+  var noteDateDisplay = $('<p>').addClass('note-date').text(noteDate)
+  var noteContentDisplay = $('<p>').addClass('note-content').text(noteContent)
 
   thisNote.append(noteTitleDisplay)
   thisNote.append(noteDateDisplay)
@@ -540,15 +523,9 @@ for (var i = 0; i < myNotes.length; i++) {
   var noteContent = note.content
 
   var thisNote = $('<div>').addClass('note')
-  var noteTitleDisplay = $('<h2>')
-    .addClass('note-title')
-    .text(noteTitle)
-  var noteDateDisplay = $('<p>')
-    .addClass('note-date')
-    .text(noteDate)
-  var noteContentDisplay = $('<p>')
-    .addClass('note-content')
-    .text(noteContent)
+  var noteTitleDisplay = $('<h2>').addClass('note-title').text(noteTitle)
+  var noteDateDisplay = $('<p>').addClass('note-date').text(noteDate)
+  var noteContentDisplay = $('<p>').addClass('note-content').text(noteContent)
 
   thisNote.append(noteTitleDisplay)
   thisNote.append(noteDateDisplay)

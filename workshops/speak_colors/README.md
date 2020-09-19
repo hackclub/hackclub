@@ -124,12 +124,7 @@ For the first iteration, we’re just supporting single-word colors, because it�
 // …
 function parseResult() {
   if (speech.resultValue) {
-    alert(
-      speech.resultString
-        .split(' ')
-        .pop()
-        .toUpperCase()
-    )
+    alert(speech.resultString.split(' ').pop().toUpperCase())
   }
 }
 ```
@@ -140,10 +135,7 @@ Spectacular! Now let’s set the background color to the color, and write it ons
 // …
 function parseResult() {
   if (speech.resultValue) {
-    const color = speech.resultString
-      .split(' ')
-      .pop()
-      .toUpperCase()
+    const color = speech.resultString.split(' ').pop().toUpperCase()
     background(color)
     text(color, width / 2, height / 2)
     console.log(color)
@@ -184,10 +176,7 @@ function draw() {
 
 function parseResult() {
   if (speech.resultValue) {
-    const color = speech.resultString
-      .split(' ')
-      .pop()
-      .toUpperCase()
+    const color = speech.resultString.split(' ').pop().toUpperCase()
     background(color)
     text(color, width / 2, height / 2)
     console.log(color)
