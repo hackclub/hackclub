@@ -301,7 +301,7 @@ function setDate() {
  	const currentTime = new Date();
 }
 ```
-This object contains specific methods through which we can get the current hour / minute / second.  
+The `Date` object contains specific methods through which we can get the current hour / minute / second.  
 
 Learn more on [JavaScript dates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
 
