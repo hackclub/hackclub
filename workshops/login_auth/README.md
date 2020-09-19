@@ -65,7 +65,7 @@ After clicking on that new page will pops up and ask you for a nickname of your 
 
 ![App nickname](https://cloud-8tdv8wfuj.vercel.app/8.png)
 
-Then you will see some sort of JavaScript code, So don't worry about that, it is the code which contains some keys like API Key, Domain key which helps your FIREBASE project to connect to your webpage and for that you need to save this code anywhere or just copy/paste into the notes as it will required in coding part.
+Then you will see some sort of JavaScript code, So don't worry about that, It is the code which contains some keys like API Key, Domain key which helps your FIREBASE project to connect with your webpage and for that you need to save this code or just copy/paste into the notes as it will required in coding part later.
 
 Also include below two lines with above code.
 
@@ -136,7 +136,7 @@ So let's write our HTML Code:
 
 In `<body>` tag you need to create a two divisions, the first division is for the login page and second is for the logout page using `<div>`.
 
-Division 1:
+- Division 1:
 
 Create your first division with a class `main_div` and assign ID `login_div`.
 
@@ -156,7 +156,7 @@ So here's how your first division looks like:
 </div>
 ```
 
-Division 2:
+- Division 2:
 
 Create your second division below the first with a class `loggedin_div` and assign ID `user_div`.
 
