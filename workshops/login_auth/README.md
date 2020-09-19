@@ -16,7 +16,7 @@ You will make something like this 👇
 
 You can test out the demo site using the following credentials:
 
-- Email-`login@authentication.com`
+- EMAIL-`login@authentication.com`
 - Password - `password`
 
 ## Getting Started :rocket:
@@ -29,7 +29,7 @@ After signing in you will see a page similar to this:
 
 ![Firebase landing](https://cloud-mketa8pxq.vercel.app/1.png)
 
-In the above image you'll see `Go to console` tab at the top right corner, So click on that and you will be redirected to the console section.
+In the above image you'll see the `Go to console` tab at the top right corner, So click on that and you will be redirected to the console section.
 
 ![Project page](https://cloud-kfr44a6da.vercel.app/2.png)
 
@@ -53,7 +53,7 @@ Hooray!🎉 you just created a new Firebase project.
 
 ### Connecting Firebase to your webpage 🔗 -
 
-After successfully creating Firebase project you will see your project console.
+After successfully creating the Firebase project you will see your project console.
 
 At project console's landing page you will see `Get started by adding Firebase to your app` and below that you will see three options of integrations:
 1. iOS
@@ -94,7 +94,7 @@ Click on the Sign-in method.
 
 ![Sign in method](https://cloud-nvyxode6r.vercel.app/11.png)
 
-So here you need to enable **Email/Password** in `sign-in providers` section, So click on **Email/Password** and enable it and save it.
+So here you need to enable **Email/Password** in the `sign-in providers` section, So click on **Email/Password** and enable it and save it.
 
 ![Enable email-pass](https://cloud-2vpwetbvx.vercel.app/12.png)
 
@@ -127,7 +127,7 @@ It looks like this 👇
 #### Coding Part </>
 
 ##### HTML
-When you take a look at the `index.html` file in your Repl, you'll see `<html>` tag which is the root of the HTML file, and inside `<html>` tag you'll see `<body>` tag which is the main body of HTML file or we can say it will contain all the main contents and here you will write your HTML code.
+When you take a look at the `index.html` file in your Repl, you'll see the `<html>` tag which is the root of the HTML file, and inside the `<html>` tag you'll see `<body>` tag which is the main body of HTML file or we can say it will contain all the main contents and here you will write your HTML code.
 
 You will also find lines like:
 - `<link href="style.css" rel="stylesheet" type="text/css"/>` which links your CSS file with the HTML. 
