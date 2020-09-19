@@ -28,7 +28,7 @@ You should have a beginner understanding of:
 
 ### Setting up your code environment on Repl.it
 
-[Repl.it](https://repl.it) is an online code editor where you will build your clock today.
+[Repl.it](https://repl.it) is an online code editor where you can build your clock today. You don't have to use Repl.it but we suggest you do as it sets everything up for you.
 
 To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
 
