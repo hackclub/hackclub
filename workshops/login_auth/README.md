@@ -17,7 +17,7 @@ You will make something like this 👇
 You can test out the demo site using the following credentials:
 
 - EMAIL-`login@authentication.com`
-- PASSWORD-`password`
+- Password - `password`
 
 ## Getting Started :rocket:
 
