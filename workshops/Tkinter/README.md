@@ -1,6 +1,6 @@
 ---
 name: 'Creating a UI with Tkinter.'
-description:'We will use python tkinter graphics to make User Interfaces. Its a nice world.'
+description: 'We will use python tkinter graphics to make User Interfaces. Its a nice world.'
 author: '@bezlin6mechminerz'
 ---
 
