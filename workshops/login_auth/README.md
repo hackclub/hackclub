@@ -12,7 +12,7 @@ You will make something like this 👇
 
 ![live gif](https://cloud-7782l8k04.vercel.app/loginv2.gif)
 
-[Live Example](https://loginauth-12.web.app)
+[Check out this demo of the final product!](https://loginauth-12.web.app)
 
 Try live example using:
 - EMAIL-`login@authentication.com`
@@ -497,5 +497,4 @@ In this feature you can login anonymously without entering email or password.
 
 - [Live example](https://loginauthanonymous.tanishqsoni.repl.co/)
 - [Code](https://repl.it/@tanishqsoni/Loginauthanonymous)
-
 
