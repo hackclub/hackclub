@@ -8,4 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      - run: npx prettier --check .
+      - run: npx prettier --write .
+      - run: git diff --exit-code
