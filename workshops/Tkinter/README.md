@@ -34,6 +34,7 @@ Tkinter provides a powerful object-oriented interface to the Tk GUI toolkit. Whi
 ### L1(line-1):
 
 `import tkinter as tk`
+
 Import tkinter means we are importing a python library which is tkinter here . Actually someone clever made this library and made it open source. So we need to import it to our code to use it. Also for ease we imported tkinter as tk so that we no need to repeat that big word tkinter everytime. Instead we can use tk.
 
 ### L2
@@ -51,6 +52,7 @@ Now we named our window as window .So we can adjust the size of the window .For 
 ### L4
 
 `window.title("Simple UI")`
+
 Now we can set a title for our window. For that we use title() function .You can specify the name of the window inside the function in quotes.
 
 ### L5
@@ -63,6 +65,7 @@ window.config means we are configuring our window and setting up its bg which is
 ### L6
 
 `tk.Label(window,text="Enter Something Here.",font=("Helvetica",30),fg="blue",bg="black").place(x=145,y=48)`
+
 This is a big line right? Dont worry its simple like css .Here we are making a text which is to be displayed in the window. So for that we use Label() Function. In order to make use of label function we need to call it. So we need to refer to the library first and call the object Label like this=> tk.Label() thats it .Inside this function we need to specify the window which we want this to be displayed . So for here it is window then we need to specify the text to be displayed in the window for that we use a keyword "text" so we can say our Label that the text to be displayed = the variable text. Like css we can also change the font ,font color,font size,font weight,background etc... so for that we need to use font() function in which we specify the font name , then the size of the font needed. Now fg stands for foreground which means the font color. After the function is set up we need to place it in the screen right? . Now we have made many configurations in the Label but the system now dont know where to keep it in the screen so for that we use place() function. This function allows us to place the element in almost anywhere of the screen by x y axis. We only need to specify the x and y cordinate we need them to be seen.
 
 ### L7
@@ -75,6 +78,7 @@ then the width of the Entry field then the font like said before.
 ### L8
 
 `w.place(x=150,y=100)`
+
 We need to place the entry widget in our screen so we should by giving x and y
 
 #### Note:
@@ -84,6 +88,7 @@ Here we need to be carefull we must use w.place because of the function returnin
 ### L9
 
 `tk.Button(window,command=display,text="Submit",font=("Helvetica",20),width=10,height=1).place(x=300,y=200)`
+
 This line is big dont worry its also simple. Here we need a button to submit it right?
 For that lets call the Button() function. Inside this function we need to specify the window aswell, Then we need another function command which means same as onClick is js . This does the action when we click on the button. Actually it calls the function Display which is described in the lines L2 and L3. The next keyword is text you know what it is. Then font you know that too, Then comes the width and height here you can give the width and height of the button as integers. Then as usual we need to place it using place() function.
 
@@ -97,6 +102,7 @@ This is a loop so it needs to be repeated until we close the window thats it .
 ### L11
 
 `def display():`
+
 This is the function which executes when we press the submit button because we specified command = this function.
 
 ### L12
@@ -119,13 +125,18 @@ Also if you are new to python take a look at [python](https://www.python.org/doc
 ### Softwares made using Tkinter by other hackers.
 
 [HARIPRASAD RAJAN](https://repl.it/@HariprasadR03/hackthon#main.py)
+
 [ANUPRIYA SHAJI](https://repl.it/@Anupriya567/qtshb#main.py)
+
 [KK HARIDEV](https://repl.it/@DandaThor/h#main.py)
+
 [BEZLIN JOHNSON](https://repl.it/@bezlin/graphics)
+
 
 ## Big platforms made using Tkinter
 
 [Billing softwares](https://code-projects.org/food-billing-system-in-python-with-source-code/)
+
 [LMS(Learning Management Softwares)](https://github.com/TheThunderB0lt/LMS/)
 
 ### After building share your repl link to all communities dont forget about slack and make everyone know the piece of work you have done.
