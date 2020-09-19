@@ -137,7 +137,8 @@ Next we have the `min-height` property which sets a minimum height of `100vh` (v
 Learn more about [viewport heights](https://www.sitepoint.com/css-viewport-units-quick-start/)
 
 Next, we'll need to add some styles to our clock!  
-Following the 3 main steps given above, let's accomplish this task!  
+Following the 3 main steps given above, let's accomplish this task!
+  
 1. Select the class designated to the clock div.  
 
 ![Image](https://cloud-namz2to6v.vercel.app/image.png)
