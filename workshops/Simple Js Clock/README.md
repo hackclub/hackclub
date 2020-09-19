@@ -1,6 +1,6 @@
 ---
 name: 'JavaScript Clock'
-description: 'Build a clock using JavaScript.'
+description: 'Build a clock using HTML, CSS, JavaScript.'
 author: '@FaisalSayed'
 ---
 
@@ -18,13 +18,13 @@ Here's the [live demo][final_live_demo] and [final code][final_code].
 [final_code]: https://repl.it/@FaisalSayed1/JS-CSS-Clock
 [repl_it]: https://repl.it
 
-## Part I: Prerequisites
+## Part 1: Prerequisites
 You should have a beginner understanding of:
 - HTML
 - CSS
 - JavaScript
 
-## Part II: Setup
+## Part 2: Setup
 
 ### Setting up your code environment on Repl.it
 
@@ -34,7 +34,7 @@ To get started, go to [https://repl.it/languages/html](https://repl.it/languages
 
 This is what it looks like:  
 ![Image](https://cloud-me8mfihcw.vercel.app/image.png)  
-## Part III: Inspecting The Default Files
+## Part 3: Inspecting The Default Files
 
 ![Image](https://media.giphy.com/media/3o7bufkPz3LRof205G/giphy.gif)
 
@@ -61,7 +61,7 @@ If you take a look in the `<body>` tag, you'll find:
 ```
 This means that your JavaScript file is linked to your HTML.
 
-## Part IV: Building the Clock
+## Part 4: Building the Clock
 
 ### 1) HTML
 
@@ -432,7 +432,7 @@ setDate();
 
 ![Image](https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif)
 
-## Part V: The End
+## Part 5: The End
 If you haven't created an account on [repl.it](https://repl.it), make sure you do so to save this wonderful piece of creation!  
 
 Here are somethings which you can do:  
