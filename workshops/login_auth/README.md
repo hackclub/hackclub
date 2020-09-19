@@ -23,9 +23,9 @@ You can test out the demo site using the following credentials:
 
 
 ### Creating a Firebase project 💻 -
-At first you will need to sign-in to [Firebase](https://firebase.google.com/), if you have Google account then you can directly sign-in to Firebase otherwise create one.
+First you will need to sign in to [Firebase](https://firebase.google.com/) using a Google account. You can [create one here](https://accounts.google.com/signup)
 
-After sign-in you will see an interface like image below.
+After signing in you will see a page similar to this:
 
 ![Firebase landing](https://cloud-mketa8pxq.vercel.app/1.png)
 
