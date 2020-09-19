@@ -50,147 +50,9 @@ Now here you'll see `Your new project is ready`.
 
 Hooray!🎉 you just created a new FIREBASE project.
 
-So before moving to project console first we need to design our login webpage.
-
-### Designing a webpage 🖊️ - 
-
-Yea! it is the important part for this workshop, you need to design a login webpage using:
-- HTML
-- CSS
-- JavaScript
-
-I have already created a code template so you can check it out and i will explain some important parts of code which will help you for your workshop.
-
-![Repl code](https://cloud-9e1ogteoo.vercel.app/7.png)
-
-
-## CODE : [Repl.it](https://repl.it/@tanishqsoni/Loginauth)
-
-#### Explaination of code </>
-
-##### HTML
-HTML code is not complex here, i created two divisons `main-div` & `loggedin-div`. 
-- `main-div`
-  - It is the main division which consists:
-    - Input fields like `email` and `password`.
-    - Login button with onclick function `login()`.
-- `loggedin-div`
-  - It is the logged in divison which consists:
-    - Logout button with onclick function `logout()`.
-    
-lookout [HTML](https://repl.it/@tanishqsoni/Loginauth#index.html) code.
-
-don't forgot to link HTML file with the CSS and JavaScript file using:
-
-_CSS_
-```html
-<link rel="stylesheet" href="style.css" />
-```
-
-_JavaScript_
-```html
-<script src="index.js"></script>
-```
-
-##### CSS
-The style of webpage is completely of your own choice like whether you need blue colour or black, you need rectangle buttons or circle! its completely yours choice.
-
-lookout [CSS](https://repl.it/@tanishqsoni/Loginauth#style.css) code.
-
-##### JAVASCRIPT
-
-The main part of webpage comes here and you can also go through [FIREBASE Auth documentation](https://firebase.google.com/docs/auth/web/start?authuser=0).
-
-In the JavaScript code first you need to add a [`AuthState`](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user) property which is used to get currently `signed-in` user
-
-```javascript
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-    // User is signed in.
-  } else {
-    // No user is signed in.
-  }
-});
-```
-As you created two divisions in HTML so you have to do something like that `loggedin-div` division to be displayed only when the user is signed-in. So in above code you need to do some changes
-but before you make some changes you need to assign IDs to both divisions:
-
-- ID `user_div` to division `loggedin-div`.
-
-- ID `login_div` to division `main-div`.
-
-After assigning IDs add this code in the `if` statement of [`AuthState`](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user) property.
-
-```javascript
-
-document.getElementById("user_div").style.display = "block";
-document.getElementById("login_div").style.display = "none";
-
-```
-In the above code `block` will display the division and `none` will hide the division.
-
-As you added this for signed-in user so you also need `else` part _while user is not signed-in_ so the code will same as above code but you need to swap `block` and `none` as you need to show only `main-div`. 
-
-Add below code to `else` statement of [`AuthState`](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user) property.
-
-```javascript
-
-document.getElementById("user_div").style.display = "none";
-document.getElementById("login_div").style.display = "block";
-
-```
-Now after completing this you need to work on both the functions you assigned in HTML `login()` and `logout()`.
-
-##### Function login()
-As in this login page user can sign-in only if they are existing user so for that FIREBASE has a property called [`signInWithEmailAndPassword`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users).
-
-So before you work on it you need to assign some IDs to input fields in HTML as you need to work with input field here.
-
-- ID `email_field` to `email` input field.
-
-- ID `password_field` to `password` input field.
-
-After assigning IDs you will create two variables in `login()` function `userEmail` and `userPass` which get email and password values from assigned IDs.
-
-```javascript
-function login(){
-
-  var userEmail = document.getElementById("email_field").value;
-  var userPass = document.getElementById("password_field").value;
-}
-```
-So in the above function you need to add the [`signInWithEmailAndPassword`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) property which we discussed above.
-
-```javascript
-firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  // ...
-});
-```
-In the above code replace `email` with `userEmail` and `password` with `userPass` as you declared that variables.
-
-Also you need to display error message when error occurs like _wrong email or password_ so add below code in above function.
-```javascript
-window.alert("Error : " + errorMessage);
-```
-##### Function logout()
-
-In order to logout the user you need to create `logout()` and inside that function we need to call FIREBASE `signOut` function:
-
-```javascript
-function logout(){
-  firebase.auth().signOut();
-}
-```
-Lookout complete [JavaScript](https://repl.it/@tanishqsoni/Loginauth#index.js) code.
-
-Hooray!🎉 you just finished with the coding part!
-
 ### Connecting FIREBASE to your webpage 🔗 -
 
-So again moving to FIREBASE, After successfully creating FIREBASE project you will see your project console.
+After successfully creating FIREBASE project you will see your project console.
 
 At project console's landing page you will see `Get started by adding FIREBASE to your app` and below that you will see three options of integrations:
 1. iOS
@@ -203,9 +65,9 @@ After clicking on that new page will pops up and ask you for a nickname of your 
 
 ![App nickname](https://cloud-8tdv8wfuj.vercel.app/8.png)
 
-Then you will see some sort of JavaScript code so don't worry about that, it is the code which contains some keys like API Key, Domain key which helps your FIREBASE project to connect to your webpage and for that you need to copy this code and paste it into HTML code before `</body>` tag.
+Then you will see some sort of JavaScript code so don't worry about that, it is the code which contains some keys like API Key, Domain key which helps your FIREBASE project to connect to your webpage and for that you need to save this code anywhere or just copy/paste into the notes as it will required in coding part.
 
-Also include FIREBASE JS SDK before that code.
+Also include below two lines with above code.
 
 ```javascript
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
@@ -216,7 +78,6 @@ Also include FIREBASE JS SDK before that code.
 
 ![API keys](https://cloud-nsps2klza.vercel.app/9.png)
 
-Now you have successfully integrated the FIREBASE project to your webpage. 
 
 After that you need to add existing users so that they can login and for that you need to enable **Email/Password** authentication in your project's Authentication section, for that you need to click on tab `Authentication` on the top left `Develop` section.
 
@@ -246,11 +107,362 @@ Then click on `Add user` and add `Email` and `Password` for that user and click 
 
 So in this way you can record users for restricted login 🔒.
 
+### Designing a webpage 🖊️ - 
+
+You should have a basic knowledge of:
+- HTML
+- CSS
+- JavaScript
+
+If you want to inspect the [Final Code](https://repl.it/@tanishqsoni/Loginauth) you can.
+
+So at first you need to setup a coding environment and I suggests you to use [Repl.it](https://repl.it) as it sets everthing for you.
+
+It looks like this 👇
+
+![Repl code](https://cloud-9e1ogteoo.vercel.app/7.png)
+
+
+#### Coding Part </>
+
+##### HTML
+When you take a look at `index.html` file in your Repl, you'll see `<html>` tag which is the root of HTML file and inside `<html>` tag you'll see `<body>` tag which is the main body of HTML file or we can say it will contain all the main contents and here you will write your HTML code.
+
+You will also find lines like:
+- `<link href="style.css" rel="stylesheet" type="text/css"/>` which links your CSS file with the HTML. 
+- `<script src="script.js"></script>` which links JavaScript file with HTML and this should be place just above closing body tag `</body>`.
+
+So let's write our HTML Code:
+
+In `<body>` tag you need to create a two divisions, the first division is for the login page and second is for the logout page using `<div>`.
+
+Division 1:
+
+Create your first division with a class `main_div` and assign ID `login_div`.
+
+you can also give a heading to your page using heading tags like `<h1>,<h2>,<h3>.....`.
+
+In this division you will create two input fields for EMAIL and PASSWORD using `<input>` tag with type `email` and `password` respectively and also assign IDs to both input fields `email_field` and `password_field` respectively.
+ 
+Here you will also create a button Login using `<button>` and assign a onclick function `login()` to it and finally close your first division using `</div>`. 
+
+So here's how your first division looks like:
+```HTML
+<div id="login_div" class="main_div">
+    <h3>Login Authentication</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+    <button onclick="login()">Login</button>
+</div>
+```
+
+Division 2:
+
+Create your second division below the first with a class `loggedin_div` and assign ID `user_div`.
+
+In this division you will create a button Logout and assign a onclick finction `logout()` to it and it's done.
+
+So here's how your second division looks like:
+```HTML
+<div id="user_div" class="loggedin_div">
+    <h3>Welcome</h3>
+    <button onclick="logout()">Logout</button>
+</div>
+```
+
+So here is your HTML code:
+
+```HTML
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login Authentication</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="login_div" class="main_div">
+  <h3>Login Authentication</h3>
+  <input type="email" placeholder="Email..." id="email_field" />
+  <input type="password" placeholder="Password..." id="password_field" />
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="user_div" class="loggedin_div">
+  <h3>Welcome</h3>
+  <button onclick="logout()">Logout</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+```
+![without CSS](https://cloud-e3wysrojq.vercel.app/c1.png)
+
+So as you can see it is looking so weird and to make it look cool you need to add CSS but.... 
+
+You remember you saved lines of JavaScript code from firebase.
+
+So you need to include those lines after the second division:
+
+Your here is your final HTML code:
+
+```HTML
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login Authentication</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="login_div" class="main_div">
+  <h3>Login Authentication</h3>
+  <input type="email" placeholder="Email..." id="email_field" />
+  <input type="password" placeholder="Password..." id="password_field" />
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="user_div" class="loggedin_div">
+  <h3>Welcome</h3>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAVNeXl4cBro95I3dFWMaiT2rI88sqyBtc",
+    authDomain: "loginauth-12.firebaseapp.com",
+    databaseURL: "https://loginauth-12.firebaseio.com",
+    projectId: "loginauth-12",
+    storageBucket: "loginauth-12.appspot.com",
+    messagingSenderId: "308714255384",
+    appId: "1:308714255384:web:98e87065f0e45910f0ff6d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="script.js"></script>
+</body>
+</html>
+```
+
+##### CSS
+This is a `style.css` file present in your Repl just below `script.js`, which gives styles and design to your webpage.
+
+As you created two divisions in HTML file so you will add designs to it and writing CSS is simple.
+
+You just need to:
+- Mention element/ class name/ ID.
+- Open curly brackets `{`.
+- Add styles.
+- Close curly brackets `}`.
+
+Here how you can add styles to your `<body>` tag:
+
+```CSS
+body {
+  background: #000000;
+  color: #fff;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+```
+In this way you can add styles to (Divisions/ IDs) and whole webpage.
+
+If you need help regarding various keywords uses in CSS, So you can go through [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
+
+##### JAVASCRIPT
+
+This is a `script.js` file present in your Repl just below `index.html`, which handles the functioning of your webpage.
+
+Here you have to write small amount JavaScript code because FIREBASE has some pre-defined functions and properties for Authentication which you will use here and also you can check [FIREBASE Documentation on web authentication](https://firebase.google.com/docs/auth/web/start).
+
+So what you have to do is, you need to `Get the currently signed-in user` as you already created user in FIREBASE.
+In the `script.js` file you need to add a property [`Get the currently signed-in user`](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user) for that which is:
+
+```javascript
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+  } else {
+    // No user is signed in.
+  }
+});
+```
+As you created two divisions in HTML file, So you have to do something like, division with `login_div` ID to be displayed at login page and division with `user_div` ID to be displayed after login page or when user is signed-in.
+
+So in above code you need to do make some changes
+
+Add below two lines of code in the `if` condition of above code.
+
+```javascript
+
+document.getElementById("user_div").style.display = "block";
+document.getElementById("login_div").style.display = "none";
+
+```
+
+So, the code looks like this
+
+```javascript
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    document.getElementById("user_div").style.display = "block";
+    document.getElementById("login_div").style.display = "none";
+  } else {
+    // No user is signed in.
+  }
+});
+
+In the above code `block` will displays the division and `none` will hide that division.
+
+As you added this for signed-in user, So you also need `else` part _where user is not signed-in_ means user is on the login page, So the code will same as above code but you need to swap `block` and `none` as you need to display only `main_div` with ID `login_div`.
+
+Add below code to the `else` condition.
+
+```javascript
+
+document.getElementById("user_div").style.display = "none";
+document.getElementById("login_div").style.display = "block";
+
+```
+So the code looks like:
+
+```javascript
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    document.getElementById("user_div").style.display = "block";
+    document.getElementById("login_div").style.display = "none";
+  } else {
+    // No user is signed in.
+    document.getElementById("user_div").style.display = "none";
+    document.getElementById("login_div").style.display = "block";
+  }
+});
+
+
+Now after completing this you need to work on both the functions you assigned in HTML buttons `login()` and `logout()`.
+
+- Function login()
+As user can sign-in only if there record is stored in FIREBASE. So, FIREBASE has a property called [`Sign-in existing user`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) as exisiting users can sign-in through input fields.
+
+Now you need to create two variables in `login()` function `userEmail` and `userPass` which get email and password values from the input fields with IDs `email_field` and `password_field`.
+
+```javascript
+function login(){
+
+  var userEmail = document.getElementById("email_field").value;
+  var userPass = document.getElementById("password_field").value;
+}
+```
+So in the above function you need to add the [`Sign-in existing user`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) property.
+
+```javascript
+firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
+```
+In the above code replace `email` with `userEmail` and `password` with `userPass` as you declared those variables.
+
+Also you need to display error message when error occurs like _wrong email or password_ so add below code in above function.
+```javascript
+window.alert("Error : " + errorMessage);
+```
+So, the code will
+```javascript
+function login(){
+
+  var userEmail = document.getElementById("email_field").value;
+  var userPass = document.getElementById("password_field").value;
+
+  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+
+    window.alert("Error : " + errorMessage);
+
+    // ...
+  });
+
+}
+```
+- Function logout()
+
+For logout add below code below the login().
+
+```javascript
+function logout(){
+  firebase.auth().signOut();
+}
+```
+
+So here is your final JavaScript code:
+```javascript
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+
+    document.getElementById("user_div").style.display = "block";
+    document.getElementById("login_div").style.display = "none";
+
+  } 
+
+  else {
+    // No user is signed in.
+
+    document.getElementById("user_div").style.display = "none";
+    document.getElementById("login_div").style.display = "block";
+
+  }
+});
+
+function login(){
+
+  var userEmail = document.getElementById("email_field").value;
+  var userPass = document.getElementById("password_field").value;
+
+  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+
+    window.alert("Error : " + errorMessage);
+
+    // ...
+  });
+
+}
+
+function logout(){
+  firebase.auth().signOut();
+}
+
+```
+
+Yayyy! you Finished with coding part!
+
+Try login with the EMAIL and PASSWORD you recorded in FIREBASE.
+
 ### Hooray!🎉 
 You finished the Web Login Authentication Workshop by completing all tasks:
 - [x] Creating a FIREBASE project.
-- [x] Designing a webpage.
 - [x] Connecting FIREBASE to your webpage
+- [x] Designing a webpage.
 
 ### ⚡ What's Next?
 Now you know how to build a web page with login authentication using FIREBASE.
