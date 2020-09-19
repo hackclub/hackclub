@@ -19,7 +19,7 @@ We will be using Tkinter python library to develop the user Interface.
 
 ### Setting up the environment for Tkinter
 
-[Repl.it](https://repl.it) is a simple yet powerful online IDE, Editor, Compiler, Interpreter, and REPL. Code, compile, run, and host in 50+ programming languages.So it is super awesome.
+[Repl.it](https://repl.it) is an handy tool that allows us to code inside of our browser.
 
 To get started, go to https://repl.it/languages/Tkinter. If you cant find it just type it in the type box. Your coding environment will be ready in a few seconds!
 <img width="1440" alt="Screenshot 2020-09-18 at 5 39 06 PM" src="https://user-images.githubusercontent.com/54895485/93595705-dbd8f300-f9d5-11ea-8bfa-a26e407adeaf.png">
