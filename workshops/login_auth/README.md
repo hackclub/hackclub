@@ -28,11 +28,11 @@ After sign-in you will see an interface like image below.
 
 ![Firebase landing](https://cloud-mketa8pxq.vercel.app/1.png)
 
-In the above image you'll see `Go to console` tab at top right corner, so click on that and you will be redirected to console section.
+In the above image you'll see `Go to console` tab at top right corner, So click on that and you will be redirected to console section.
 
 ![Project page](https://cloud-kfr44a6da.vercel.app/2.png)
 
-In the console section, you'll see all your FIREBASE projects and here you will see `Add Project` card. So click on it to create a project.
+In the console section, you'll see all your FIREBASE projects and here you will see `Add Project` card, So click on it to create a project.
 
 ![Create project](https://cloud-nfiwmg8kh.vercel.app/3.png)
 
@@ -57,15 +57,15 @@ After successfully creating FIREBASE project you will see your project console.
 At project console's landing page you will see `Get started by adding FIREBASE to your app` and below that you will see three options of integrations:
 1. iOS
 2. Android
-3. </> (this option is for web on which you are working so click on that).
+3. </> (this option is for web on which you are working, So click on that).
 
 ![Project Console](https://cloud-l7pn8f9e9.vercel.app/6.png)
 
-After clicking on that new page will pops up and ask you for a nickname of your project so give one as i am giving it `login-auth` and click on register app.
+After clicking on that new page will pops up and ask you for a nickname of your project, So give one as i am giving it `login-auth` and click on register app.
 
 ![App nickname](https://cloud-8tdv8wfuj.vercel.app/8.png)
 
-Then you will see some sort of JavaScript code so don't worry about that, it is the code which contains some keys like API Key, Domain key which helps your FIREBASE project to connect to your webpage and for that you need to save this code anywhere or just copy/paste into the notes as it will required in coding part.
+Then you will see some sort of JavaScript code, So don't worry about that, it is the code which contains some keys like API Key, Domain key which helps your FIREBASE project to connect to your webpage and for that you need to save this code anywhere or just copy/paste into the notes as it will required in coding part.
 
 Also include below two lines with above code.
 
@@ -79,7 +79,7 @@ Also include below two lines with above code.
 ![API keys](https://cloud-nsps2klza.vercel.app/9.png)
 
 
-After that you need to add existing users so that they can login and for that you need to enable **Email/Password** authentication in your project's Authentication section, for that you need to click on tab `Authentication` on the top left `Develop` section.
+After that you need to add existing users, So that they can login and for that you need to enable **Email/Password** authentication in your project's Authentication section, for that you need to click on tab `Authentication` on the top left `Develop` section.
 
 ![Authentication page](https://cloud-pnq6xn3gp.vercel.app/10.png)
 
@@ -93,11 +93,11 @@ Click on Sign-in method.
 
 ![Sign in method](https://cloud-nvyxode6r.vercel.app/11.png)
 
-So here you need to enable **Email/Password** in `sign-in providers` section, so click on **Email/Password** and enable it and save it.
+So here you need to enable **Email/Password** in `sign-in providers` section, So click on **Email/Password** and enable it and save it.
 
 ![Enable email-pass](https://cloud-2vpwetbvx.vercel.app/12.png)
 
-After enabling that you need to add existing users, so for that click on `Users` tab.
+After enabling that you need to add existing users, So for that click on `Users` tab.
 
 ![Add user](https://cloud-kbxm635o2.vercel.app/13.png)
 
@@ -120,7 +120,7 @@ So at first you need to setup a coding environment and I suggests you to use [Re
 
 It looks like this 👇
 
-![Repl code](https://cloud-9e1ogteoo.vercel.app/7.png)
+<a href="https://repl.it/languages/html"><img src="https://cloud-g2gwlwjtx.vercel.app/c2.png"></a>
 
 
 #### Coding Part </>
@@ -200,7 +200,7 @@ So here is your HTML code:
 ```
 ![without CSS](https://cloud-e3wysrojq.vercel.app/c1.png)
 
-So as you can see it is looking so weird and to make it look cool you need to add CSS but.... 
+So as you can see it is looking simple, So to make it look cool you need to add CSS but.... 
 
 You remember you saved lines of JavaScript code from firebase.
 
@@ -256,7 +256,7 @@ Your here is your final HTML code:
 ##### CSS
 This is a `style.css` file present in your Repl just below `script.js`, which gives styles and design to your webpage.
 
-As you created two divisions in HTML file so you will add designs to it and writing CSS is simple.
+As you created two divisions in HTML file, So you will add designs to it and writing CSS is simple.
 
 You just need to:
 - Mention element/ class name/ ID.
@@ -378,7 +378,7 @@ firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error
 ```
 In the above code replace `email` with `userEmail` and `password` with `userPass` as you declared those variables.
 
-Also you need to display error message when error occurs like _wrong email or password_ so add below code in above function.
+Also you need to display error message when error occurs like _wrong email or password_, So add below code in above function.
 ```javascript
 window.alert("Error : " + errorMessage);
 ```
@@ -470,9 +470,9 @@ Now you know how to build a web page with login authentication using FIREBASE.
 Now how you can expand it? Try adding some other features to it with the help of [FIREBASE Guide](https://firebase.google.com/docs/auth/web/start?authuser=0)
 
 Here are some examples 👇
-- Adding `create account` feature so user can create a new account.
+- Adding `create account` feature, So user can create a new account.
 - Adding `Email verification` feature.
-- Adding `Anonymous Login` feature so user can visit the page without login.
+- Adding `Anonymous Login` feature, So user can visit the page without login.
 
 #### ⭐ Live examples with code -
 
