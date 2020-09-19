@@ -72,7 +72,7 @@ Add another `<div>` tag inside of your existing `<div>` and give it a class of "
 
 Give a class of `hand hour-hand`, `hand min-hand`, `hand second-hand` to each of the 3 new `<div>` tags respectively.  
 
-Note: Make sure the `<script>` tag, which is in your body, is below the `<div>` tags or else it will throw you errors.  
+**Note:** Make sure the `<script>` tag, which is in your body, is below the `<div>` tags or else it will throw you errors.  
 
 This is what your code should look like so far:
 
