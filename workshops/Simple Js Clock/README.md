@@ -48,7 +48,7 @@ If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where
 
 ### 2) The CSS file
 
-This is the `style.css` file in your directory. Whatever styles we give to our website is written in this file. If you take a look in the `<head>` tag in your html, you will find a line of code (`<link href="style.css" rel="stylesheet" type="text/css" />`). This means that your CSS file is properly linked to your HTML file!
+This is the `style.css` file in your directory. Whatever styles we give to our website is written in this file. If you take a look in the `<head>` tag in your HTML, you will find a line of code (`<link href="style.css" rel="stylesheet" type="text/css" />`). This means that your HTML file is properly linked to your CSS file!
 
 ### 3) The JavaScript file
 
