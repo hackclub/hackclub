@@ -1,0 +1,2 @@
+This workshop can work for both members who have experience in HTML/CSS and javascript and just anyone with no background about coding. 
+This workshop was meant to help members understand the basics of coordinates when drawing on the canvas.
