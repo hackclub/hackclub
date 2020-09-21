@@ -42,17 +42,15 @@ Let's start by creating a canvas that will allow us (and our model) to draw.
 Delete the comment on line 3 in `script.js` and replace it with
 
 ```js
-p.setup = function() {
-
-}
+p.setup = function () {}
 ```
 
-*(FYI, the first time you type, it'll be a little glitchy because it's forking my starter project over to your account)*
+_(FYI, the first time you type, it'll be a little glitchy because it's forking my starter project over to your account)_
 
 Then, in between those two lines of code, add:
 
 ```js
-p.setup = function() {
+p.setup = function () {
   p.createCanvas(p.windowWidth, p.windowHeight)
 }
 ```
@@ -62,7 +60,7 @@ This will create a canvas on the website that's the size of your window.
 Next, we're going to call our first three ✨magical helper functions✨ to prepare the canvas for drawing, initialize the machine learning model, and make the buttons work. Under the line you just typed in the `setup()` function, add:
 
 ```js
-p.setup = function() {
+p.setup = function () {
   p.createCanvas(p.windowWidth, p.windowHeight)
   restart()
   initModel(0)
@@ -80,7 +78,7 @@ We need to constantly be keeping track of the state of our sketch—the coordina
 
 The `initModel()` function loads the machine learning model from Magenta.js. The "0" argument is just telling it that we want to load the first model in the list. You can see the full list of models on line 3 in `lib/utils.js` if you're interested.
 
-*Protip: this "list" is known as an array. [Learn more about arrays here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array*
+_Protip: this "list" is known as an array. [Learn more about arrays here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array_
 
 ![Picture of initDomElements](https://cloud-1a31v0vcv.vercel.app/screen_shot_2020-09-21_at_2.22.46_pm.png)
 
@@ -109,9 +107,7 @@ This process is actually super easy. p5.js automatically listens for when the mo
 Let's start by listening for when the user clicks their mouse on the canvas. Under the `p.setup()` function, add:
 
 ```js
-p.mousePressed = function() {
-
-}
+p.mousePressed = function () {}
 ```
 
 Everything between these two curly braces will be run automatically when the user presses their mouse.
@@ -119,7 +115,7 @@ Everything between these two curly braces will be run automatically when the use
 Inside this function, let's add another helper function, `initStrokes()`.
 
 ```js
-p.mousePressed = function() {
+p.mousePressed = function () {
   initStrokes()
 }
 ```
@@ -127,7 +123,7 @@ p.mousePressed = function() {
 Finally, let's set the stroke color to red when a human is drawing.
 
 ```js
-p.mousePressed = function() {
+p.mousePressed = function () {
   initStrokes()
   p.stroke(p.color(255, 0, 0))
 }
@@ -138,15 +134,13 @@ p.mousePressed = function() {
 Listening for when the mouse is dragged is just as easy with p5.js. Under your `p.mousePressed()` function, add:
 
 ```js
-p.mouseDragged = function() {
-
-}
+p.mouseDragged = function () {}
 ```
 
 And again, we have a handy helper function that updates our stroke as we drag the mouse:
 
 ```js
-p.mouseDragged = function() {
+p.mouseDragged = function () {
   updateStrokes()
 }
 ```
@@ -156,15 +150,13 @@ p.mouseDragged = function() {
 Finally, let's listen for when the user releases the mouse. Under the `p.mouseDragged()` function, add:
 
 ```js
-p.mouseReleased = function() {
-
-}
+p.mouseReleased = function () {}
 ```
 
 And let's add our handy helper function that feeds our stroke into the machine learning model.
 
 ```js
-p.mouseReleased = function() {
+p.mouseReleased = function () {
   processStroke()
 }
 ```
@@ -182,9 +174,7 @@ The human stroke is indeed being initialized, but nothing is actually being draw
 Under the `p.mouseReleased()` function, add:
 
 ```js
-p.draw = function() {
-
-}
+p.draw = function () {}
 ```
 
 This code will run continuously as long as your repl is running. Because it's running continuously, we can use it to constantly track whether or not the model is supposed to be drawing.
@@ -192,7 +182,7 @@ This code will run continuously as long as your repl is running. Because it's ru
 We only want the program to draw when the machine learning model is active, so let's start by filtering for that:
 
 ```js
-p.draw = function() {
+p.draw = function () {
   if (!modelLoaded || !modelIsActive) {
     return
   }
@@ -204,11 +194,11 @@ This code means the function will not run if our machine learning model isn't ac
 In addition to only when the machine learning model is active, we also want to draw only after the user has finished drawing a stroke. Let's add some code that tests for that. Under the previous `if` statement you just wrote, add:
 
 ```js
-p.draw = function() {
+p.draw = function () {
   if (!modelLoaded || !modelIsActive) {
     return
   }
-  
+
   if (pen[PEN.END] === 1) {
     initRNNStateFromStrokes(strokes)
   }
@@ -226,8 +216,7 @@ We've written code that runs when the machine learning model is running, but we 
 ```js
 if (pen[PEN.END] === 1) {
   initRNNStateFromStrokes(strokes)
-}
-else {
+} else {
   updateHumanStroke()
 }
 ```
