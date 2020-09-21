@@ -6,9 +6,10 @@ author: '@MatthewStanciu'
 
 ![Gif of a human drawing part of a pineapple and a machine learning model filling in the rest](https://cloud-qvus77map.vercel.app/screen_recording_2020-09-17_at_5.49.18_pm.gif)
 
-Have you ever wanted to sketch something, but you're bad at drawing and don't know how to finish it? Well now, thanks to the fact that our robot overlords are becoming increasingly sentient, we can use machine learning to help us finish sketches that we started!
+Have you ever wanted to sketch something, but you're bad at drawing and don't know how to finish it? Well now, thanks to the fact that our robot overlords are becoming increasingly sentient, we can use machine learning to help us draw!
 
 [Link to Demo](https://InteractiveSketch.techbug2012.repl.co)
+
 [Link to Code](https://repl.it/@TechBug2012/InteractiveSketch)
 
 # Getting started
@@ -24,7 +25,7 @@ Get started by [clicking here](https://repl.it/@TechBug2012/interactive-sketch-s
 
 ![Screenshot of the starter project](https://cloud-pl3k1n9v7.vercel.app/screen_shot_2020-09-18_at_4.56.12_pm.png)
 
-You should see a pretty filled in `script.js` file with a comment that says `// Your code here!` on line 3. If you click the green button at the top that says "Run", you should see a basic HTML website that contains the skeleton of your project. Of course, this website doesn't do anything yet—that's what we're going to fix next!
+You should see a pretty filled in `script.js` file with a comment that says `// Your code here!` on line 3. If you click the green button at the top that says "Run", you should see a basic HTML website that contains the skeleton of your project. Of course, this website doesn't do anything yet—that's what we're doing next!
 
 # About all this extra code...
 
@@ -58,7 +59,7 @@ p.setup = function() {
 
 This will create a canvas on the website that's the size of your window.
 
-Next, we're going to call our first ✨magical helper function✨ to prepare the canvas for drawing, initialize the machine learning model, and make the buttons work. Under the line you just typed in the `setup()` function, add:
+Next, we're going to call our first three ✨magical helper functions✨ to prepare the canvas for drawing, initialize the machine learning model, and make the buttons work. Under the line you just typed in the `setup()` function, add:
 
 ```js
 p.setup = function() {
@@ -79,7 +80,7 @@ We need to constantly be keeping track of the state of our sketch—the coordina
 
 The `initModel()` function loads the machine learning model from Magenta.js. The "0" argument is just telling it that we want to load the first model in the list. You can see the full list of models on line 3 in `lib/utils.js` if you're interested.
 
-*Protip: this "list" is known as an array. [Learn more about arrays here!](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array*
+*Protip: this "list" is known as an array. [Learn more about arrays here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array*
 
 ![Picture of initDomElements](https://cloud-1a31v0vcv.vercel.app/screen_shot_2020-09-21_at_2.22.46_pm.png)
 
@@ -105,7 +106,7 @@ This process is actually super easy. p5.js automatically listens for when the mo
 
 ## Listening for mouse click
 
-Let's start by listening for when the user clicks their mouse on the canvas. With p5.js, this is as simple as:
+Let's start by listening for when the user clicks their mouse on the canvas. Under the `p.setup()` function, add:
 
 ```js
 p.mousePressed = function() {
@@ -113,9 +114,9 @@ p.mousePressed = function() {
 }
 ```
 
-Everything between those two curly braces will be run automatically when the user presses their mouse.
+Everything between these two curly braces will be run automatically when the user presses their mouse.
 
-Inside this function, let's add our super easy `initStrokes()` helper method.
+Inside this function, let's add another helper function, `initStrokes()`.
 
 ```js
 p.mousePressed = function() {
@@ -134,7 +135,7 @@ p.mousePressed = function() {
 
 ## Listening for mouse drag
 
-Listening for when the mouse is dragged is just as easy with p5.js. Under your `mousePressed` function, add:
+Listening for when the mouse is dragged is just as easy with p5.js. Under your `p.mousePressed()` function, add:
 
 ```js
 p.mouseDragged = function() {
@@ -152,7 +153,7 @@ p.mouseDragged = function() {
 
 ## Processing our stroke
 
-Finally, let's listen for when the user releases the mouse.
+Finally, let's listen for when the user releases the mouse. Under the `p.mouseDragged()` function, add:
 
 ```js
 p.mouseReleased = function() {
@@ -178,7 +179,7 @@ If you click the green "Run" button at the top and draw on the screen, you shoul
 
 The human stroke is indeed being initialized, but nothing is actually being drawn yet. That's where p5's `draw()` function comes in.
 
-Under the `mouseReleased()` function, add:
+Under the `p.mouseReleased()` function, add:
 
 ```js
 p.draw = function() {
@@ -186,7 +187,7 @@ p.draw = function() {
 }
 ```
 
-This code will run continuously, many times per second, as long as your repl is running. Because it's running consistently, we can use it to constantly track whether or not the model is supposed to be drawing.
+This code will run continuously as long as your repl is running. Because it's running continuously, we can use it to constantly track whether or not the model is supposed to be drawing.
 
 We only want the program to draw when the machine learning model is active, so let's start by filtering for that:
 
@@ -234,12 +235,9 @@ else {
 One more thing: we want the model to constantly be aware of what's going on and know when it's supposed to start drawing. So just before the end of your `draw()` function, add:
 
 ```js
-...
-else {
-  updateHumanStroke()
-}
-
 updateModelState()
 ```
+
+![Final demo, drawing a bird](https://cloud-gt7uspr78.vercel.app/screen_recording_2020-09-21_at_6.50.24_pm.gif)
 
 That's it! Now, if you run your repl and draw a circle, you should see the machine learning model fill in with endless predictions of what a bird looks like! If you choose another item on the dropdown and then click "Clear Drawing", the model should start drawing something else.
