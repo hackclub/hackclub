@@ -12,6 +12,7 @@ Have you ever wanted to sketch something, but you're bad at drawing and don't kn
 [Link to Code](https://repl.it/@TechBug2012/InteractiveSketch)
 
 # Getting started
+
 This workshop will use two libraries:
 
 - [Magenta.js](https://magenta.tensorflow.org), a library built on top of Google's [TensorFlow](https://www.tensorflow.org) that allows you to easily use pre-trained machine learning models
@@ -26,6 +27,7 @@ Get started by [clicking here](https://repl.it/@TechBug2012/interactive-sketch-s
 You should see a pretty filled in `script.js` file with a comment that says `// Your code here!` on line 3. If you click the green button at the top that says "Run", you should see a basic HTML website that contains the skeleton of your project. Of course, this website doesn't do anything yet—that's what we're going to fix next!
 
 # About all this extra code...
+
 As mentioned above, the project that we're making actually requires a lot of complicated setup steps. If this workshop had to explain all of them, it would be way too long and complicated given what we're trying to make. So there will be some "magic"—or, prewritten code that we don't cover and that you don't need to understand—throughout.
 
 But here's the secret about modern software development: everything is "magic". Repl.it, the online code editor we're using in this workshop, magically parses the code you're about to write and hosts it on the web. The Magenta.js library magically provides pre-trained machine learning models for you to easily use. The browser you're using to read this workshop magically reads HTML and CSS and renders it all into something that looks great. Your computer's operating system calculates billions of 0s and 1s a second and magically turns them into a tool you can use with ease.
@@ -33,6 +35,7 @@ But here's the secret about modern software development: everything is "magic". 
 All this is to say, as you're going through this workshop, don't worry if you feel like you're just plugging code into a mysterious function that magically spits out exactly what you need. **You're not supposed to understand everything that's going on.** Much of coding is just building something cool on top of layers upon layers of tools that others have spent years, sometimes decades, making feel like magic. Plus, this workshop will explain some of the magic to you along the way.
 
 # Initializing
+
 Let's start by creating a canvas that will allow us (and our model) to draw.
 
 Delete the comment on line 3 in `script.js` and replace it with
@@ -87,6 +90,7 @@ Finally, the `initDOMElements()` function adds the list of models to the dropdow
 If you click the green "Run" button at the top of your repl, you should see that the dropdown is now filled with the list of all the models! If you click the "Random" button, you should see it load a random model. "Clear Drawing" works too, but you can't see the effects of it yet.
 
 # Mouse actions 🖱
+
 Now that we've set up our canvas, we're ready to start drawing on it.
 
 ![Gif of a human carefully drawing a stroke, then releasing it, then the machine learning model kicks in](https://cloud-2b7kt6m2v.vercel.app/screen_recording_2020-09-21_at_2.46.36_pm.gif)
@@ -100,6 +104,7 @@ This project is a little weird because we have to account for two different user
 This process is actually super easy. p5.js automatically listens for when the mouse is pressed, dragged, and released, and our helper functions are prewritten to do everything we just described.
 
 ## Listening for mouse click
+
 Let's start by listening for when the user clicks their mouse on the canvas. With p5.js, this is as simple as:
 
 ```js
@@ -128,6 +133,7 @@ p.mousePressed = function() {
 ```
 
 ## Listening for mouse drag
+
 Listening for when the mouse is dragged is just as easy with p5.js. Under your `mousePressed` function, add:
 
 ```js
@@ -145,6 +151,7 @@ p.mouseDragged = function() {
 ```
 
 ## Processing our stroke
+
 Finally, let's listen for when the user releases the mouse.
 
 ```js
@@ -162,11 +169,13 @@ p.mouseReleased = function() {
 ```
 
 ## Viewing our current progress
+
 ![When you run your repl now, the mouse stroke is red! But nothing happens yet](https://cloud-fu8ago15r.vercel.app/screen_recording_2020-09-21_at_4.10.40_pm.gif)
 
 If you click the green "Run" button at the top and draw on the screen, you should now see that you're drawing in red! But...why is nothing happening after you draw? Didn't we just feed the human strokes into the machine learning model?
 
 # Letting the machine model draw
+
 The human stroke is indeed being initialized, but nothing is actually being drawn yet. That's where p5's `draw()` function comes in.
 
 Under the `mouseReleased()` function, add:
