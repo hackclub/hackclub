@@ -42,8 +42,10 @@ Yes! I am not joking. It is possible by using [Teachable Machine](https://teacha
 ![](images/Export.gif)<br />
 
 ## Hacking
-There are different ways in which we can advance in Facial Expression Recognition. Take a look at classses we have add. We can add more class to it like Neautral, winking left or right side,etc. In the begining the result will be not that much accurate, but as time pass it will show more optimal results.Think of where we can use facial expression recoginition can be implement in real life. Below are some new example to keep hacking going on.<br />
+There are different ways in which we can advance in Facial Expression Recognition. We can download Tensorflow model converted into keras .h5 model and load it in our Python Project.We get list for probablity of prediction for each class we add while creating Classes (Step: 4). Tensorflow Lite model to use in android application or IOT and   Take a look at classses we have add. We can add more class to it like Neautral, winking left or right side,etc. In the begining the result will be not that much accurate, but as time pass it will show more optimal results.Think of where we can use facial expression recoginition can be implement in real life. Below are some new example to keep hacking going on.<br />
 
--**Advance Facial Expression Recogination**: [DEMO](https://AdvanceFER.yashkalbande.repl.co) [CODE](https://repl.it/@YashKalbande/AdvanceFER#index.html) <br />
+**Tensorflow Trained Model With Python**: [DEMO](https://FCRwithTensorflow.yashkalbande.repl.run) [CODE](https://repl.it/@YashKalbande/FCRwithTensorflow#main.py) <br />
+**Advance Facial Expression Recogination**: [DEMO](https://advancefacialexpressionrecognition.yashkalbande.repl.co) [CODE](https://repl.it/@YashKalbande/AdvanceFacialExpressionRecognition) <br />
+**Beautify boring looking website with CSS & JS**: [DEMO](https://AdvanceFER.yashkalbande.repl.co) [CODE](https://repl.it/@YashKalbande/AdvanceFER#index.html) <br />
 
 
