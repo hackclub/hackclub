@@ -43,7 +43,7 @@ p.setup = function() {
 }
 ```
 
-*(FYI, the first type you type, it'll be a little glitchy because it's forking my starter project over to your account)*
+*(FYI, the first time you type, it'll be a little glitchy because it's forking my starter project over to your account)*
 
 Then, in between those two lines of code, add:
 
@@ -54,3 +54,183 @@ p.setup = function() {
 ```
 
 This will create a canvas on the website that's the size of your window.
+
+Next, we're going to call our first ✨magical helper functions✨ to prepare the canvas for drawing, initialize the machine learning model, and make the buttons work. Under the line you just typed in the `setup()` function, add:
+
+```js
+p.setup = function() {
+  p.createCanvas(p.windowWidth, p.windowHeight)
+  restart()
+  initModel(0)
+  initDOMElements()
+}
+```
+
+To understand what these functions to, let's take a peek at the code inside these helper functions.
+
+![Picture of the restart function](https://cloud-kcenb4nrj.vercel.app/screen_shot_2020-09-21_at_1.27.35_pm_1.png)
+
+We need to constantly be keeping track of the state of our sketch—the coordinates of the pen, whether or not we're currently drawing, whether or not the model should be drawing, etc. The `restart()` function resets all of these to their default values.
+
+![Picture of the initModel() function](https://cloud-oirptf5ub.vercel.app/screen_shot_2020-09-21_at_1.40.20_pm.png)
+
+The `initModel()` function loads the machine learning model from Magenta.js. The "0" argument is just telling it that we want to load the first model in the list. You can see the full list of models on line 3 in `lib/utils.js` if you're interested.
+
+*Protip: this "list" is known as an array. [Learn more about arrays here!](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array*
+
+![Picture of initDomElements](https://cloud-1a31v0vcv.vercel.app/screen_shot_2020-09-21_at_2.22.46_pm.png)
+
+Finally, the `initDOMElements()` function adds the list of models to the dropdown and makes the "Clear Drawing" and "Random" buttons work.
+
+![Picture of dropdown filled in](https://cloud-hl3ksrdip.vercel.app/screen_shot_2020-09-21_at_2.26.35_pm.png)
+
+If you click the green "Run" button at the top of your repl, you should see that the dropdown is now filled with the list of all the models! If you click the "Random" button, you should see it load a random model. "Clear Drawing" works too, but you can't see the effects of it yet.
+
+# Mouse actions 🖱
+Now that we've set up our canvas, we're ready to start drawing on it.
+
+![Gif of a human carefully drawing a stroke, then releasing it, then the machine learning model kicks in](https://cloud-2b7kt6m2v.vercel.app/screen_recording_2020-09-21_at_2.46.36_pm.gif)
+
+This project is a little weird because we have to account for two different users drawing: the human using the website, and the machine learning model. Here's what needs to be done:
+
+1. When the mouse is pressed, register that the mouse has been pressed, and start tracking of the coordinates of the mouse
+2. As the mouse is being dragged across the canvas to form a stroke, continually record the state of the human stroke
+3. When the mouse is released, feed the stroke to the active machine learning model and tell it to take over
+
+This process is actually super easy. p5.js automatically listens for when the mouse is pressed, dragged, and released, and our helper functions are prewritten to do everything we just described.
+
+## Listening for mouse click
+Let's start by listening for when the user clicks their mouse on the canvas. With p5.js, this is as simple as:
+
+```js
+p.mousePressed = function() {
+
+}
+```
+
+Everything between those two curly braces will be run automatically when the user presses their mouse.
+
+Inside this function, let's add our super easy `initStrokes()` helper method.
+
+```js
+p.mousePressed = function() {
+  initStrokes()
+}
+```
+
+Finally, let's set the stroke color to red when a human is drawing.
+
+```js
+p.mousePressed = function() {
+  initStrokes()
+  p.stroke(p.color(255, 0, 0))
+}
+```
+
+## Listening for mouse drag
+Listening for when the mouse is dragged is just as easy with p5.js. Under your `mousePressed` function, add:
+
+```js
+p.mouseDragged = function() {
+
+}
+```
+
+And again, we have a handy helper function that updates our stroke as we drag the mouse:
+
+```js
+p.mouseDragged = function() {
+  updateStrokes()
+}
+```
+
+## Processing our stroke
+Finally, let's listen for when the user releases the mouse.
+
+```js
+p.mouseReleased = function() {
+
+}
+```
+
+And let's add our handy helper function that feeds our stroke into the machine learning model.
+
+```js
+p.mouseReleased = function() {
+  processStroke()
+}
+```
+
+## Viewing our current progress
+![When you run your repl now, the mouse stroke is red! But nothing happens yet](https://cloud-fu8ago15r.vercel.app/screen_recording_2020-09-21_at_4.10.40_pm.gif)
+
+If you click the green "Run" button at the top and draw on the screen, you should now see that you're drawing in red! But...why is nothing happening after you draw? Didn't we just feed the human strokes into the machine learning model?
+
+# Letting the machine model draw
+The human stroke is indeed being initialized, but nothing is actually being drawn yet. That's where p5's `draw()` function comes in.
+
+Under the `mouseReleased()` function, add:
+
+```js
+p.draw = function() {
+
+}
+```
+
+This code will run continuously, many times per second, as long as your repl is running. Because it's running consistently, we can use it to constantly track whether or not the model is supposed to be drawing.
+
+We only want the program to draw when the machine learning model is active, so let's start by filtering for that:
+
+```js
+p.draw = function() {
+  if (!modelLoaded || !modelIsActive) {
+    return
+  }
+}
+```
+
+This code means the function will not run if our machine learning model isn't active.
+
+In addition to only when the machine learning model is active, we also want to draw only after the user has finished drawing a stroke. Let's add some code that tests for that. Under the previous `if` statement you just wrote, add:
+
+```js
+p.draw = function() {
+  if (!modelLoaded || !modelIsActive) {
+    return
+  }
+  
+  if (pen[PEN.END] === 1) {
+    initRNNStateFromStrokes(strokes)
+  }
+}
+```
+
+`pen[PEN.END] === 1` checks if the user has previously drawn but has lifted the mouse at one point.
+
+![Screenshot of the initRNNStateFromStrokes function](https://cloud-lom2sp5bq.vercel.app/screen_shot_2020-09-21_at_5.11.37_pm.png)
+
+the `initRNNStateFromStrokes()` helper function feeds human strokes into the machine learning model and tells the machine learning model to start drawing on the canvas. This produces the looping effect, where the machine learning model continues drawing multiple times, that you can see in the demo at the beginning of this workshop.
+
+We've written code that runs when the machine learning model is running, but we haven't yet written code for what happens when the human is drawing. Let's add that.
+
+```js
+if (pen[PEN.END] === 1) {
+  initRNNStateFromStrokes(strokes)
+}
+else {
+  updateHumanStroke()
+}
+```
+
+One more thing: we want the model to constantly be aware of what's going on and know when it's supposed to start drawing. So just before the end of your `draw()` function, add:
+
+```js
+...
+else {
+  updateHumanStroke()
+}
+
+updateModelState()
+```
+
+That's it! Now, if you run your repl and draw a circle, you should see the machine learning model fill in with endless predictions of what a bird looks like! If you choose another item on the dropdown and then click "Clear Drawing", the model should start drawing something else.
