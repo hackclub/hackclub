@@ -55,7 +55,7 @@ p.setup = function() {
 
 This will create a canvas on the website that's the size of your window.
 
-Next, we're going to call our first ✨magical helper functions✨ to prepare the canvas for drawing, initialize the machine learning model, and make the buttons work. Under the line you just typed in the `setup()` function, add:
+Next, we're going to call our first ✨magical helper function✨ to prepare the canvas for drawing, initialize the machine learning model, and make the buttons work. Under the line you just typed in the `setup()` function, add:
 
 ```js
 p.setup = function() {
