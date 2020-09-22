@@ -6,11 +6,10 @@ author: '@FaisalSayed'
 
 # JavaScript Clock  
 
-Have you ever wondered how to build a clock? Have you ever wanted to build your own clock but didn't because it was hard?  
-Well today I'm going to show you how to build one and you know what? It's very simple!  
+Have you ever wondered how to build a clock? Have you ever wanted to build your own clock but didn't because it was hard? Well, today I'm going to show you how to build one and you know what? It's very simple!  
 
 It will look something like this (But make sure you do add some custom CSS!) :  
-![Image](https://cloud-azpvjrywa.vercel.app/image.png)
+[![homepage](https://cloud-azpvjrywa.vercel.app/image.png)](https://js-css-clock.faisalsayed1.repl.co/)
 
 Here's the [live demo][final_live_demo] and [final code][final_code].
 
@@ -28,7 +27,7 @@ You should have a beginner understanding of:
 
 ### Setting up your code environment on Repl.it
 
-[Repl.it](https://repl.it) is an online code editor where you can build your clock today. You don't have to use Repl.it but we suggest you do as it sets everything up for you.
+[Repl.it](https://repl.it) is an online code editor where you can build your clock. You don't have to use Repl.it but I suggest you do as it sets everything up for you and you don't require any installations.
 
 To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
 
