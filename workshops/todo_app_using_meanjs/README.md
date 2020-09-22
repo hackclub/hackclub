@@ -147,11 +147,11 @@ var express = require('express')
 var app = express()
 
 // GET request
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
   res.send('<h1>Welcome to Todo Web Application!!')
 })
 
-app.listen('8080', function() {
+app.listen('8080', function () {
   console.log('Server Running!!')
 })
 ```
@@ -264,16 +264,16 @@ Let’s start building our frontend! We're using AngularJS and Bootstrap.
 ```js
 var app = angular.module('todoApp', [])
 
-app.controller('createTodoController', function($scope, $http) {
-  $scope.createTodo = function() {
+app.controller('createTodoController', function ($scope, $http) {
+  $scope.createTodo = function () {
     //console.log($scope.todo);
     $http.post('api/create/todo', $scope.todo).then(
-      function(success) {
+      function (success) {
         //success callback
         console.log($scope.todo)
         console.log(success.status)
       },
-      function(error) {
+      function (error) {
         //error callback
         console.log(error.status)
       }
@@ -281,8 +281,8 @@ app.controller('createTodoController', function($scope, $http) {
   }
 })
 
-app.controller('myCtrl', function($scope, $http) {
-  $http.get('api/get/tasks').then(function(tasks) {
+app.controller('myCtrl', function ($scope, $http) {
+  $http.get('api/get/tasks').then(function (tasks) {
     $scope.tasks = tasks
     //console.log(tasks);
   })
@@ -291,11 +291,11 @@ app.controller('myCtrl', function($scope, $http) {
 
   function deleteTask(taskId) {
     $http.delete('/api/delete/task/' + taskId).then(
-      function() {
+      function () {
         //success callback
         console.log('success')
       },
-      function(error) {
+      function (error) {
         //error callback
         console.log('Error')
       }
@@ -388,7 +388,7 @@ app.use(bodyparser.json()) // for parsing application/json
 app.use(bodyparser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 // GET request
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
   res.sendfile('app/index.html')
 })
 
@@ -400,10 +400,10 @@ function createTodo(req, res) {
 
   //save the todoTask in db
   TaskModel.create(todoTask).then(
-    function(success) {
+    function (success) {
       console.log('Success')
     },
-    function(error) {
+    function (error) {
       console.log('Error')
     }
   )
@@ -415,10 +415,10 @@ function createTodo(req, res) {
 app.get('/api/get/tasks', getAllTasks)
 function getAllTasks(req, res) {
   TaskModel.find().then(
-    function(tasks) {
+    function (tasks) {
       res.json(tasks)
     },
-    function(err) {
+    function (err) {
       res.sendStatus(400)
     }
   )
@@ -430,16 +430,16 @@ function deleteTask(req, res) {
   var taskId = req.params.id
   //console.log(taskId);
   TaskModel.remove({ _id: mongoose.Types.ObjectId(taskId) }).then(
-    function() {
+    function () {
       res.sendStatus(200)
     },
-    function() {
+    function () {
       res.sendStatus(400)
     }
   )
 }
 
-app.listen('8080', function() {
+app.listen('8080', function () {
   console.log('Server Running!!')
 })
 ```

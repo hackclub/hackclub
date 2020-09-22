@@ -27,7 +27,7 @@ const Row = styled.div`
   text-align: center;
 `
 
-export const Details = props => (
+export const Details = (props) => (
   <Container>
     <Row>
       <span>Wind Speed: {props.wSpeed}</span>Humidity: {props.humid}

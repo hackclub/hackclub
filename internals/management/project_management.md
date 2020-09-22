@@ -13,7 +13,7 @@ Single GitHub project board. Tasks must all follow the INVEST acronym. Don't we 
 - **S**mall - Should not be so big as to become impossible to plan/task/prioritize with a certain level of accuracy
 - **T**estable - The task or its related description must provide the necessary information to make test development possible (i.e. there must be a clear win condition)
 
-See [this Wikipedia page](https://en.wikipedia.org/wiki/INVEST_(mnemonic)) for a complete description of INVEST.
+See [this Wikipedia page](<https://en.wikipedia.org/wiki/INVEST_(mnemonic)>) for a complete description of INVEST.
 
 If a task doesn't follow INVEST, **it must be removed** from the board. Modify the task to make it compliant.
 

@@ -81,7 +81,7 @@ Non-profit
 
 **Are you operating under a fiscal sponsor?**
 
-- [X] Yes
+- [x] Yes
 - [ ] No
 
 **If you are operating under a fiscal sponsor, please complete the following
@@ -179,7 +179,7 @@ We've developed our content significantly and are now at the point where we have
 a "club in a box"---including curriculum, meeting guidelines, and
 slideshows---to start clubs with.
 
-We did our first fundraise, bringing in $165,765.00 from the Reva & David Logan
+We did our first fundraise, bringing in \$165,765.00 from the Reva & David Logan
 Foundation, Joe Lonsdale, the Thiel Foundation, among many other generous
 supporters.
 
@@ -204,7 +204,7 @@ can take years to start a new computer science program, starting a Hack Club can
 take as little as two weeks. Our leaders don't need to find their own space (the
 school is their space), recruit external volunteers (their friends are
 volunteers), or hire teachers (they teach using our pre-written workshops). This
-model makes the cost of starting a new club virtually $0 from our end and we
+model makes the cost of starting a new club virtually \$0 from our end and we
 think it'll let us scale where others haven't.
 
 Our content is entirely open source and designed for community contribution.
@@ -283,7 +283,7 @@ deployed their first website. By the end of the second, they've expanded their
 websites and demoed them. This model is repeated in subsequent pairs of
 meetings. For each pair, a new workshop is chosen and new projects are demoed
 at the end.
- 
+
 Our workshops are written documents focused on web development that are meant
 for members to follow at their own pace. There aren't any lectures, and we
 place a heavy emphasis on using Google to figure things out.
@@ -297,7 +297,7 @@ this application:**
 - [ ] Summer or holiday program (like a camp or school)
 - [ ] Teacher training/workshops
 - [ ] Club
-- [X] Afterschool program
+- [x] Afterschool program
 - [ ] Weekend program
 - [ ] Mentoring
 - [ ] Family workshop
@@ -305,7 +305,7 @@ this application:**
 
 **Amount of funding requested ($10,000 - $25,000 USD):**
 
-$20,000
+\$20,000
 
 **Please share a budget breakdown**
 
@@ -426,8 +426,8 @@ context of your organization.
 **What is the purpose of your proposal?**
 
 - [ ] Create or add a new program to the organization
-- [X] Expand an existing program to more students, a new population, or a new
-  geography
+- [x] Expand an existing program to more students, a new population, or a new
+      geography
 - [ ] Secure funding for an existing program
 - [ ] Other
 

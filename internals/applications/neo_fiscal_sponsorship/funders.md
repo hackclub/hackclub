@@ -7,7 +7,7 @@
 
 ## Private Donors
 
-The following donors contributed more than $1,000.
+The following donors contributed more than \$1,000.
 
 - Christina Lewis Halpern -- founder & executive director of All Star Code
 - Geoff Ralston -- founder of Imagine K12, creator of Yahoo Mail, partner at Y Combinator

@@ -269,7 +269,7 @@ You can revisit that workshop for more extensive overview of them, but here's a 
 
 A **pseudo-class** is an **exception to a set of rules you created in CSS**.
 
-- _If you do something**, the **default set of rules will be overridden** by the new set_
+- _If you do something**, the **default set of rules will be overridden\*\* by the new set_
 - Pseudo-classes are activated by adding them to a CSS selector like this.
 
 ```css
@@ -418,7 +418,7 @@ To begin, let's open your JS file!
 The single line of code that we'll need to tell JavaScript to "listen" for an event is:
 
 ```js
-document.addEventListener('[event]', function() {
+document.addEventListener('[event]', function () {
   // [Your code to run]
 })
 ```
@@ -434,7 +434,7 @@ So far pretty simple right? `document.addEventListener` just means: **Start list
 Now we need to specify what type of event we want our listener to look out for, to do this we put the name of the event in the [event] section of the code.
 
 ```js
-document.addEventListener('[event]', function() {})
+document.addEventListener('[event]', function () {})
 ```
 
 These events have certain names, but thanks to our friends at `w3schools` they've given us a nicely arranged list of all the HTML events.
@@ -446,7 +446,7 @@ These events have certain names, but thanks to our friends at `w3schools` they'v
 So following that rule
 
 ```js
-document.addEventListener('onclick', function() {})
+document.addEventListener('onclick', function () {})
 ```
 
 Would turn into:
@@ -490,7 +490,7 @@ variablename.play()
 Don't forget to close your curly brackets of `function() {}` and it should work!
 
 ```js
-document.addEventListener('click', function() {
+document.addEventListener('click', function () {
   var wow = new Audio('wow-.mp3')
   wow.play()
 })

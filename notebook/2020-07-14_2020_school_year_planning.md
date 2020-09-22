@@ -7,31 +7,31 @@
 ## Slack as a Tool
 
 - Mail team – Chris/Zach
-    - Going to hire someone to kickstart
+  - Going to hire someone to kickstart
 - Deals/Hack Pack – Chris + Max + Lachlan + Theo
-    - Need to switch Hack Pack to Enterprise
-    - Adds people to Hack Club GitHub organization
-        - Value-capture
-        - Improves the GitHub relationship
-    - Slash command
-    - Communication
+  - Need to switch Hack Pack to Enterprise
+  - Adds people to Hack Club GitHub organization
+    - Value-capture
+    - Improves the GitHub relationship
+  - Slash command
+  - Communication
 - Killer onboarding – Matthew/Chris
-    1. Deprecate SOM flow—required at end of SOM
-    2. Make experience great—optional/flexible
+  1. Deprecate SOM flow—required at end of SOM
+  2. Make experience great—optional/flexible
 - Forming/running Dev Team – Max
-    - Zoom command
-    - Channel admins
-    - Auto-channel archiving
-    - Unique usernames
-    - CDN channel
-    - Auto-user deactivation
-    - Killer mod tools
-    - Channel discovery
+  - Zoom command
+  - Channel admins
+  - Auto-channel archiving
+  - Unique usernames
+  - CDN channel
+  - Auto-user deactivation
+  - Killer mod tools
+  - Channel discovery
 - New code of conduct – Melody
 - Scrapbook/Ship – ?
-    - Scrapbook deprecation is the default but unlikely?
+  - Scrapbook deprecation is the default but unlikely?
 - Regular announcements/updates from HQ – Melody, Zach on personnel
-    - Knowing what’s going on, specifically with events
+  - Knowing what’s going on, specifically with events
 - Regular high-quality events that get students on video calls – Melody, Zach on personnel
 
 ## Clubs
@@ -39,10 +39,10 @@
 Populate Hackerland. Year of the Rock.
 
 - What clubs actually look like this fall: not fleshed-out yet
-    - Constant communication with clubs
-    - New application flow
-    - Onboarding process
-    - Good team setup/workflows
+  - Constant communication with clubs
+  - New application flow
+  - Onboarding process
+  - Good team setup/workflows
 - Best HTML workshop on the web – Matthew/Chris/Lachlan
 - New homepage – Lachlan
 - Notebook – Lachlan
@@ -53,7 +53,7 @@ Populate Hackerland. Year of the Rock.
 Not much is happening with hackathons this year—most likely scenario is online events
 
 - hackathons.hackclub.com – Michael/Chaleb
-    - In a pretty good spot
+  - In a pretty good spot
 - Prizes – default no but potential – Michael/Chaleb
 
 ## Bank

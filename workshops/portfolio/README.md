@@ -183,15 +183,12 @@ we see that the closer the tag is to h1, the larger the text.
 
 ```html
 <h1>Jonathan Leung</h1>
-^^^^
-this is called the h1 tag
-specifically it is the OPENING h1 tag
+^^^^ this is called the h1 tag specifically it is the OPENING h1 tag
 ```
 
 ```html
 <h1>Jonathan Leung</h1>
-                  ^^^^^
-                  this is the CLOSING h1 tag
+^^^^^ this is the CLOSING h1 tag
 ```
 
 Note that many HTML tags have both an "opening" and "closing tag"
@@ -233,7 +230,7 @@ It doesn't look like much changed but it has!
 To add an image, we use the image tag:
 
 ```html
-<img src="http://website.com/MY_IMAGE.png">
+<img src="http://website.com/MY_IMAGE.png" />
 ```
 
 Let's try adding a picture of me to the page (just for time's sake, let's just
@@ -258,45 +255,39 @@ Ok. Let's make the picture smaller
 But before we do that, let's understand how the image tag works:
 
 ```html
-<img src="http://i.imgur.com/C6P1T0G.jpg">
- ^ "img" is the tag name
+<img src="http://i.imgur.com/C6P1T0G.jpg" /> ^ "img" is the tag name
 ```
 
 ```html
-<img src="http://i.imgur.com/C6P1T0G.jpg">
+<img src="http://i.imgur.com/C6P1T0G.jpg" />
 
-Note that <img> does not have a closing tag
+Note that <img /> does not have a closing tag
 ```
 
 ```html
-<img src="http://i.imgur.com/C6P1T0G.jpg">
-     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-     this part is an attribute
-     of the image tag
-
-     (think of attributes like settings)
+<img src="http://i.imgur.com/C6P1T0G.jpg" />
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ this part is an attribute of the image tag
+(think of attributes like settings)
 ```
 
 For example, in an `<input>` tag:
 
 ```html
-<input type="text">
+<input type="text" />
 ```
 
 - `type` is the name of the attribute
 - `"text"` is the value of the `type` attribute
 
 ```html
-<img src="http://i.imgur.com/C6P1T0G.jpg">
-     ^^^ "src" is the name of the attribute
-         (think the name of the setting, like temperature)
+<img src="http://i.imgur.com/C6P1T0G.jpg" /> ^^^ "src" is the name of the
+attribute (think the name of the setting, like temperature)
 ```
 
 ```html
-<img src="http://i.imgur.com/C6P1T0G.jpg">
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-          "http://i.imgur.com/C6P1T0G.jpg" is the value
-          of the "src" attribute (think value of the setting like 350)
+<img src="http://i.imgur.com/C6P1T0G.jpg" /> ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"http://i.imgur.com/C6P1T0G.jpg" is the value of the "src" attribute (think
+value of the setting like 350)
 ```
 
 ## Changing the look and feel with CSS

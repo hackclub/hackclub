@@ -4,7 +4,7 @@ description: 'Visualize sound by making particles move in a galaxy'
 author: '@MatthewStanciu'
 ---
 
-Sound visualization is one of the coolest things that modern-day web development tools have made accessible. There’s something surreal and indescribably satisfying about *seeing* the sounds around you on your screen and somehow understanding what you’re seeing.
+Sound visualization is one of the coolest things that modern-day web development tools have made accessible. There’s something surreal and indescribably satisfying about _seeing_ the sounds around you on your screen and somehow understanding what you’re seeing.
 
 ![](img/final-demo.GIF)
 
@@ -13,6 +13,7 @@ In this workshop, you’re going to create a galaxy out of shimmering particles 
 [Link to demo](https://sound-galaxy--techbug2012.repl.co)
 
 ## Getting started
+
 We’re going to be using [p5.js](https://p5js.org), a JavaScript library for creative coding, to make this project. This project requires two separate p5.js libraries: `p5.js` and `p5.sound.js`.
 
 Get started from the starter project by [clicking here](https://repl.it/@TechBug2012/sound-galaxy-starter). Once your project spins up, navigate to the `index.html` file. Then, just before the end of your `<head>` tag, import these two libraries:
@@ -25,19 +26,17 @@ Get started from the starter project by [clicking here](https://repl.it/@TechBug
 Great! Now that we’ve imported p5, we’re ready to start writing JavaScript.
 
 ## About the Fourier Transform
+
 At the center of everything we’re building in this workshop is something called a Fourier Transform: a mathematical operation that takes a frequency (e.g. the sound frequency picked up by your computer’s microphone) and decomposes it into the individual wavelengths that make it up. You don’t need to understand how the Fourier Transform works—it’s built into p5 and super easy to use—but if you’re interested, 3Blue1Brown made [a great video](https://youtu.be/spUNpyF58BY) explaining it.
 
 ## Setting up p5
+
 p5.js is primarily composed of two functions: `setup()` and `draw()`. The `setup()` function runs only once when the project first starts up, and the `draw()` function runs continuously afterwards. Let’s start by creating these two functions in your `script.js` file:
 
 ```js
-function setup() {
+function setup() {}
 
-}
-
-function draw() {
-
-}
+function draw() {}
 ```
 
 Everything in p5.js happens on a p5 canvas. Let’s create a canvas that fills our window in the `setup()` function:
@@ -57,7 +56,7 @@ Now, let’s tell p5 to listen for microphone input.
 function setup() {
   createCanvas(windowWidth, windowHeight)
   noStroke()
-  
+
   let mic = new p5.AudioIn()
   mic.start()
 }
@@ -71,26 +70,23 @@ let fft
 function setup() {
   createCanvas(windowWidth, windowHeight)
   noStroke()
-  
+
   let mic = new p5.AudioIn()
   mic.start()
-  
+
   fft = new p5.FFT()
   fft.setInput(mic)
 }
 
-function draw() {
-
-}
+function draw() {}
 ```
 
 ## Creating a Particle
+
 We’re almost ready to start drawing—but as of now, we don’t have anything to draw! Let’s create a Particle object and give it some basic properties. Above the `setup()` function, add:
 
 ```js
-let Particle = function(position) {
-
-}
+let Particle = function (position) {}
 ```
 
 This is how [objects](https://www.w3schools.com/js/js_objects.asp) are created in JavaScript. If we want to create a new Particle, we would use `let particle = new Particle()`.
@@ -98,10 +94,10 @@ This is how [objects](https://www.w3schools.com/js/js_objects.asp) are created i
 We want to give the Particle object a standard set of properties that can be changed for each instance of a Particle. For now, let’s start with `position`, `speed`, and `color`—but think of some other properties that your particles can have!
 
 ```js
-let Particle = function(position) {
+let Particle = function (position) {
   this.position = position
   this.speed = createVector(0, 1)
-  this.color = [random(0, 255), random(0,255), random(0,255)]
+  this.color = [random(0, 255), random(0, 255), random(0, 255)]
 }
 ```
 
@@ -129,21 +125,19 @@ function setup() {
 ```
 
 ## Drawing particles
+
 Before we can draw our particles, we need to think about what “drawing” a particle even means. As of now, a “particle” is just an abstract idea that we made up. We've given it certain properties, but we haven't used these properties anywhere.
 
 Let’s go back to our `Particle` object and write a [method](https://www.w3schools.com/js/js_object_methods.asp) that gives instructions for drawing a particle.
 
 ```js
-let Particle = function(position) {
+let Particle = function (position) {
   this.position = position
   this.speed = createVector(0, 1)
-  this.color = [random(0, 255), random(0,255), random(0,255)]
-  
-  this.draw = function() {
-    circle(
-      this.position.x, this.position.y,
-      this.diameter
-    )
+  this.color = [random(0, 255), random(0, 255), random(0, 255)]
+
+  this.draw = function () {
+    circle(this.position.x, this.position.y, this.diameter)
     fill(this.color)
   }
 }
@@ -183,14 +177,13 @@ function draw() {
 ```
 
 ## Updating particles
+
 We have one more problem: the particles don’t move or change at all! Currently, they’re just being drawn according to the properties we gave them earlier. Let’s put the Fast Fourier Transform to use and make our particles update according to the microphone input.
 
 Just like for drawing particles, we need to set instructions for what “updating” a particle means via a method. Under the `draw` method in the `Particle` object, add
 
 ```js
-this.update = function(energy) {
-
-}
+this.update = function (energy) {}
 ```
 
 We’re passing in an `energy`, which is the intensity of sound at each part of the FFT spectrum. In our case, this means the intensity of each particle.
@@ -198,8 +191,8 @@ We’re passing in an `energy`, which is the intensity of sound at each part of 
 There are endless ways to update a particle based on intensity of sound, but here’s what I personally came up with:
 
 ```js
-this.update = function(energy) {
-  this.diameter = random(5,7) + (energy * 100)
+this.update = function (energy) {
+  this.diameter = random(5, 7) + energy * 100
   this.position.y += this.speed.y * energy * 10
   if (this.position.y > height) {
     this.position.y = 0
@@ -225,23 +218,20 @@ Congratulations! You did it! Here’s what your entire `script.js` file should n
 ```js
 let fft
 
-let Particle = function(position) {
+let Particle = function (position) {
   this.position = position
   this.speed = createVector(0, 1)
-  this.color = [random(0, 255), random(0,255), random(0,255)]
-  this.draw = function() {
-    circle(
-      this.position.x, this.position.y,
-      this.diameter
-    )
+  this.color = [random(0, 255), random(0, 255), random(0, 255)]
+  this.draw = function () {
+    circle(this.position.x, this.position.y, this.diameter)
     fill(this.color)
   }
-  this.update = function(energy) {
+  this.update = function (energy) {
     this.position.y += this.speed.y * energy * 10
     if (this.position.y > height) {
       this.position.y = 0
     }
-    this.diameter = random(5,7) + (energy * 100)
+    this.diameter = random(5, 7) + energy * 100
   }
 }
 
@@ -268,6 +258,7 @@ function draw() {
 Run your repl now, then **open it in a new window** by clicking the window button at the top right corner. Make sure the page has access to your microphone, then click once on the screen. You should start seeing a shimmering galaxy that you can control with your voice!
 
 ## Hacking
+
 There are endless ways to make this project completely your own! Go back through your code and look for anything that can be played with. Try changing the default values of your Particles, playing with the numbers in the `update` method, and think of ways you can add to this to make it even better!
 
 Here are some examples of projects that stem from this project but take it even further:

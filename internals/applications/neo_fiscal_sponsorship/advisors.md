@@ -12,4 +12,4 @@ Cary currently serves as an advisor and board member to many mid-stage startups 
 
 ![Photo of Tom](img/tom_preston_werner.png){width=150}
 
-Tom co-founded and former served as CEO of GitHub, a code collaboration platform used by more than 14 million people and valued at $2 billion. He's a prominent open source software contributor and also created Gravatar, a widely used avatar sharing site.
+Tom co-founded and former served as CEO of GitHub, a code collaboration platform used by more than 14 million people and valued at \$2 billion. He's a prominent open source software contributor and also created Gravatar, a widely used avatar sharing site.
