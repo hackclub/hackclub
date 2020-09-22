@@ -89,11 +89,11 @@ This is what your code should look like so far:
   </head>
   <body>
     <div class="clock">
-	<div class="clock-face">
-	    <div class="hand hour-hand"></div>
-	    <div class="hand min-hand"></div>
-	    <div class="hand second-hand"></div>
-	</div>
+      <div class="clock-face">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
@@ -104,8 +104,7 @@ And that's it! We have completed writing our HTML.
 
 ### 2) CSS
 
-After we have done writing our HTML, it doesn't really show up on your browser screen. Your browser screen is blank!  
-Let's now add some styles to our `<div>` tags!  
+After we have done writing the HTML, you'll notice that when we click `RUN`, you just see a white screen. Let's now add some styles to our `<div>` tags!  
 
 Go to `style.css` in your repl.it directory. Let's start by adding some styles to our body! uhh... I meant `<body>`!  
 
@@ -131,22 +130,21 @@ body {
 
 We start by giving our website a soothing green color. Go ahead and try changing it to the color of your own choice!  
 
-Then we removed the default margin and padding from all the elements in our website (Some elements have a default value for their margin and padding). We changed the default display `(display: block)` to `(display: flex)`.  
+Then we removed the default margin and padding from all the elements in our website (some elements have a default value for their margin and padding). We changed the default display `display: block` to `display: flex`.  
 
 A very good reason for this is because `flex` enables you to align your items perfectly to the center! And that's what we have done in the next two lines. The `align-items` property aligns all your children elements to center, but horizontally. The `justify-content` property aligns all your children elements to center, but vertically.  
 
 Next we have the `min-height` property which sets a minimum height of `100vh` (viewport height) to your `<body>`. The `min-height` property works together with the `align-items` property and helps the children to align properly at the center.
 
-Learn more about [viewport heights](https://www.sitepoint.com/css-viewport-units-quick-start/)
+Learn more about [viewport heights](https://www.sitepoint.com/css-viewport-units-quick-start/).
 
-Next, we'll need to add some styles to our clock!  
-Following the 3 main steps given above, let's accomplish this task!
+Next, we'll need to add some styles to our clock! Following the 3 main steps given above, let's accomplish this task!  
   
 1. Select the class designated to the clock div.  
 
 ![Image](https://cloud-namz2to6v.vercel.app/image.png)
 
-2. Open Curly Brackets to write the stylings.  
+2. Open curly brackets to write the stylings.  
 
 ![Image](https://cloud-b7yg1ciea.vercel.app/image.png)
 
@@ -171,11 +169,16 @@ Following the 3 main steps given above, let's accomplish this task!
 **Explanation**:
 We gave a width and a height to our clock. Next, we gave it a border and the radius for the border. Next, is the background color for that clock (if you don't like it, consider changing it or even removing it).  
 
-Similarly, there's a background image which is the face of the clock. we need to add `background-size: cover;` property, in order to show our image properly on the website screen.  
+Similarly, there's this line:
+
+```css
+background-image: url(https://bit.ly/2RcERUw);
+```
+That link is the face of the clock. we need to add `background-size: cover;` property, in order to show our image properly on the website screen.  
 
 Also, we have added some shadows to the element. We gave multiple shadows so as to get a cool effect on our clock. Also, the `inset` property changes the shadow from an outer shadow (outset) to an inner shadow.
 
-Now lets test our code! Click on the **RUN** button and Voila! Here's the basic background for our clock!  
+Now lets test our code! Click on the **RUN** button and Voila! Here's the basic background for our clock! (if it doesn't looks like this, make sure you crosscheck every single line of code).
 
 ![Image](https://cloud-dgjpl9scw.vercel.app/image.png)
 
@@ -204,9 +207,9 @@ body {
 	background-image: url(https://bit.ly/2RcERUw);
 	background-size: cover;
 	box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
-		inset 0 0 0 3px #efefef,
-		inset 0 0 10px black,
-		0 0 10px rgba(0, 0, 0, 0.2);
+                    inset 0 0 0 3px #efefef,
+                    inset 0 0 10px black,
+                    0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .clock-face {
@@ -246,17 +249,23 @@ Similarly, add more stylings to your CSS code:
 }
 ```
 
-**Explanation:** 
-We give the clock hands, a black color.  
-We specify It's height and position. Next, we give it a property of `top` to `50%`, basically it aligns our clock hands in the very center of our clock. To ensure that our clock rotates properly, we give it a  `transform-origin: 100%;`. The transformation origin is the point around which a transformation is applied.  
+**Explanation:** We give the clock hands a black color. We specify the clock hands' height and position.  
 
-Next we have more transition properties to animate our hands so as to give us that real clock effect! (transition properties help you animate the elements).
+Next, we give it a property of `top` to `50%`, basically it aligns our clock hands in the very center of our clock. To ensure that our clock rotates properly, we give the clock hands a `transform-origin: 100%;`. The transformation origin is the point around which a transformation is applied.  
 
 ![Image](https://cloud-e99m314xu.vercel.app/image.png)
 
-Learn more about [transform-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)
+Next we wrote more transition properties such as:  
+```css
+	transition: all 0.05s;
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+```
+The `transition: all 0.05s;` sets a 0.05s animation duration. Then, the `transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);` is just a transition effect applied to the clock!
 
-Note: The `.hand` class was given to 3 `<div>` tags which means this styling will affect all the 3 `<div>` tags. To give some extra classes to the Hour hand, Minute hand and the Second hand specifically, we also gave those 3 `<div>` tags, a unique classname.  
+Learn more about [transform-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin).  
+Learn more about [cubic-bezier](https://www.w3schools.com/cssref/func_cubic-bezier.asp).
+
+**Note:** The `.hand` class was given to 3 `<div>` tags which means this styling will affect all the 3 `<div>` tags. To give some extra classes to the hour hand, minute hand and the second hand specifically, we also gave those 3 `<div>` tags a unique classname.  
 
 To align each hand properly, we also give them a property of `right: 50%;`  
 
