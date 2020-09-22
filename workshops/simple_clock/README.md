@@ -31,17 +31,20 @@ You should have a beginner understanding of:
 
 To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
 
-This is what it looks like:  
-![Image](https://cloud-me8mfihcw.vercel.app/image.png)  
+You should see something like the following:  
+![Image](https://cloud-kykoumnj6.vercel.app/image.png)  
 ## Part 3: Inspecting The Default Files
 
 ![Image](https://media.giphy.com/media/3o7bufkPz3LRof205G/giphy.gif)
 
 ### 1) The HTML file
-Let us first take a look at the HTML file (`index.html`) present in your repl.
+Let us first take a look at the HTML file (`index.html`).
 
 At line 1 we have `<!DOCTYPE html>` This declares that this file is a HTML file.  
-If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. Make sure that all the code you write is included between the opening and closing body tags. (`<body></body>`). Make sure to remove line 5 (`<meta name="viewport" content="width=device-width">`) which may cause some weird responsiveness issues for our workshop.  
+
+If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. Make sure that all the code you write is included between the opening and closing body tags. (`<body></body>`).  
+
+Make sure to remove line 5 (`<meta name="viewport" content="width=device-width">`) which may cause some weird responsiveness issues for our workshop.  
 
 ![Image](https://cloud-9zj6930c6.vercel.app/gif_maker.gif)
 
