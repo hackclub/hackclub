@@ -15,34 +15,34 @@ To set up the bot, you need to visit the [Discord dev portal](https://discord.co
 Click to the top right button to create a new application.
 Keep this page open for a while, as we may be taking some stuff from here...
 
-<!-- ![new app](https://cloud-9x2pb85rb.vercel.app/screenshot1.png) -->
+![new app](https://cloud-9x2pb85rb.vercel.app/screenshot1.png)
 
-![new app](assets/Screenshot1.png)
+<!-- ![new app](assets/Screenshot1.png) -->
 
 Go ahead and give it a cool name! I'm going to name it as doodle-noddle, but you can name it whatever you want!
 
-<!-- ![fill name](https://cloud-9x2pb85rb.vercel.app/screenshot2.png) -->
+![fill name](https://cloud-9x2pb85rb.vercel.app/screenshot2.png)
 
-![fill name](assets/Screenshot2.png)
+<!-- ![fill name](assets/Screenshot2.png) -->
 
 Then go ahead and create the application.
 Now go to the bot section in the menu on the left hand side, and add a new bot.
 
-<!-- ![add bot](https://cloud-9x2pb85rb.vercel.app/screenshot3.png) -->
+![add bot](https://cloud-9x2pb85rb.vercel.app/screenshot3.png)
 
-![add bot](assets/Screenshot3.png)
+<!-- ![add bot](assets/Screenshot3.png) -->
 
 If you get any formation like this, click on "yes, do it".
 
-<!-- ![confirm bot](https://cloud-9x2pb85rb.vercel.app/screenshot4.png) -->
+![confirm bot](https://cloud-9x2pb85rb.vercel.app/screenshot4.png)
 
-![confirm bot](assets/Screenshot4.png)
+<!-- ![confirm bot](assets/Screenshot4.png) -->
 
 Now you should be greeted with this screen. If you successfully get this, then you're good!
 
-<!-- ![bot done](https://cloud-9x2pb85rb.vercel.app/screenshot5.png) -->
+![bot done](https://cloud-9x2pb85rb.vercel.app/screenshot5.png)
 
-![bot done](assets/Screenshot5.png)
+<!-- ![bot done](assets/Screenshot5.png) -->
 
 <!-- Insert a celebration gif here --->
 
@@ -69,9 +69,9 @@ You will have to tick these permissions below:
 
 Now your screen should look something like this:
 
-<!-- ![bot permissions](https://cloud-9x2pb85rb.vercel.app/screenshot6.png) -->
+![bot permissions](https://cloud-9x2pb85rb.vercel.app/screenshot6.png)
 
-![bot permissions](assets/Screenshot6.png)
+<!-- ![bot permissions](assets/Screenshot6.png) -->
 
 Now, we need to go back to the discord dev page to get the `CLIENT ID` of your application.
 
@@ -97,48 +97,48 @@ Sounds exciting? Follow me to set this up too!
 
 Visit the [Dialogflow console](https://dialogflow.cloud.google.com/) to set up the agent. Remember, you need to have a google account to be able to login.
 
-<!-- ![dialogflow console](https://cloud-9x2pb85rb.vercel.app/screenshot7.png) -->
+![dialogflow console](https://cloud-9x2pb85rb.vercel.app/screenshot7.png)
 
-![dialogflow console](assets/Screenshot7.png)
+<!-- ![dialogflow console](assets/Screenshot7.png) -->
 
 Now you will have to click on this drop down menu, and create a new agent. Go ahead and name it whatever you want.
 I'll call mine as doodle-noodle-agent!
 
-<!-- ![name agent](https://cloud-9x2pb85rb.vercel.app/screenshot8.png) -->
+![name agent](https://cloud-9x2pb85rb.vercel.app/screenshot8.png)
 
-![name agent](assets/Screenshot8.png)
+<!-- ![name agent](assets/Screenshot8.png) -->
 
 Now hit the Create button and wait for a few seconds for the agent to be created.
 
 After a while, you will be greeted with this screen.
 
-<!-- ![create bot](https://cloud-9x2pb85rb.vercel.app/screenshot9.png) -->
+![create bot](https://cloud-9x2pb85rb.vercel.app/screenshot9.png)
 
-![create bot](assets/Screenshot9.png)
+<!-- ![create bot](assets/Screenshot9.png) -->
 
 Now click on the "Small Talk" tab on the menu on the left side, and go ahead and enable the small talk toggle. This is essential if you want your bot to be able to converse with you.
 
-<!-- ![small talk](https://cloud-9x2pb85rb.vercel.app/screenshot10.png) -->
+![small talk](https://cloud-9x2pb85rb.vercel.app/screenshot10.png)
 
-![small talk](assets/Screenshot10.png)
+<!-- ![small talk](assets/Screenshot10.png) -->
 
 Now, we need to get API keys from dialogflow just like how we did it with Discord. For this, click on the gear icon beside your agent name. This will take you to the settings pannel of agent.
 
-<!-- ![agent settings](https://cloud-cl244cmpv.vercel.app/screenshot11.png) -->
+![agent settings](https://cloud-cl244cmpv.vercel.app/screenshot11.png)
 
-![agent settings](assets/Screenshot11.png)
+<!-- ![agent settings](assets/Screenshot11.png) -->
 
 Here, click on the link for the "Service Account" and open it in a new tab.
 
-<!-- ![GCP service account](https://cloud-cl244cmpv.vercel.app/screenshot12.png) -->
+![GCP service account](https://cloud-cl244cmpv.vercel.app/screenshot12.png)
 
-![GCP service account](assets/Screenshot12.png)
+<!-- ![GCP service account](assets/Screenshot12.png) -->
 
 Here, click on your service account down there.
 
-<!-- ![add key](https://cloud-cl244cmpv.vercel.app/screenshot13.png) -->
+![add key](https://cloud-cl244cmpv.vercel.app/screenshot13.png)
 
-![add key](assets/Screenshot13.png)
+<!-- ![add key](assets/Screenshot13.png) -->
 
 Now, click on "Add Key" and create a new key in JSON format.
 This should automatically get downloaded for you to your local system.
@@ -350,9 +350,9 @@ Now, try sending a message in the server.
 
 This is what I received from the bot when i tried to talk with it
 
-<!-- ![bot texting](https://cloud-cl244cmpv.vercel.app/screenshot14.png) -->
+![bot texting](https://cloud-cl244cmpv.vercel.app/screenshot14.png)
 
-![bot texting](assets/Screenshot14.png)
+<!-- ![bot texting](assets/Screenshot14.png) -->
 
 <!-- insert complete gif -->
 
