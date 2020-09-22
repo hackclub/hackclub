@@ -152,17 +152,17 @@ Next, we'll need to add some styles to our clock! Following the 3 main steps giv
 
 ```css
 .clock {
-    width: 25rem;
-    height: 25rem;
-    border: 20px solid whitesmoke;
-    border-radius: 50px;
-    background: blanchedalmond;
-    background-image: url(https://bit.ly/2RcERUw);
-    background-size: cover;
-    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
-		inset 0 0 0 3px #efefef,
-		inset 0 0 10px black,
-		0 0 10px rgba(0, 0, 0, 0.2);
+  width: 25rem;
+  height: 25rem;
+  border: 20px solid whitesmoke;
+  border-radius: 50px;
+  background: blanchedalmond;
+  background-image: url(https://bit.ly/2RcERUw);
+  background-size: cover;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
+              inset 0 0 0 3px #efefef,
+              inset 0 0 10px black,
+              0 0 10px rgba(0, 0, 0, 0.2);
 }
 ```
 
@@ -344,9 +344,9 @@ function setDate() {
 **Explanation:**
 We have the current seconds (1-60) stored in the `seconds` variable. We then create a new variable (`secondDegrees`) in which we use an equation to convert the current seconds into degrees. In the next line, we add the transform style property to the `secondHand` which will rotate the hand according to the value of `secondDegrees`.  
 
-**Note:** Here, we used backticks (``) instead of quotes (""). This is an ES6 syntax. It helps us to write variables inside of strings.  
-So that line basically looks like:  
+**Note:** Here, we used backticks (` `) instead of quotes (" "). This is an [ES6](https://www.javascripttutorial.net/es6/) syntax. It helps us to write variables inside of strings.  
 
+So that line basically looks like:  
 ```
 eg: if secondDegrees = 150;
 then: secondHand.style.transform = 'rotate(150deg)'; 
@@ -376,23 +376,61 @@ function setDate() {
 }
 ```
 
-Our clock is almost finished! We now just need to call that function every second (recursion).  
-For this, first we will call a `requestAnimationFrame()` function inside of our main function (`setDate()`).  
-Now, pass `setDate` to `requestAnimationFrame(//pass value here)`. This will make sure our function keeps running and never stops.
+Our clock is almost finished! We now just need to call that function every second.
+
+This is going to be a bit complex task, so let's do it step by step.
+
+1. Call a `requestAnimationFrame()` function inside of our main function (`setDate()`).
 
 ```js
-requestAnimationFrame(setDate)
+setDate() {
+... // all the previous code
+requestAnimationFrame();
+}
 ```
-Let us now try to run our code.  
 
-Hmm... Something is wrong... Our JavaScript doesn't seem to work. That is because we never called our function at the very first place. Call our function outside in our script.   
+2. Pass `setDate` to `requestAnimationFrame(//pass value here)`. This will make sure our function keeps running and never stops.
+
+```js
+setDate() {
+... // all the previous code
+requestAnimationFrame(setDate);
+}
+```
+
+3. Call the function `setDate()` at the very end of our JavaScript file.
 
 Learn more on [requestAnimationFrame()](https://css-tricks.com/using-requestanimationframe/).
 
-Let us now try to run our code. And Voila! Our clock is ready!  
-But let us wait for a minute to pass and see if its working correctly. Did you see a glitch which just happened for a millisecond? Lets fix it.  
+Let us now try to run our code. And Voila! Our clock is ready!
 
-Add this to your code inside our function and before the `requestAnimationFrame(setDate)`:
+Code so far:
+```js
+const secondHand = document.querySelector(".second-hand");
+const minHand = document.querySelector(".min-hand");
+const hourHand = document.querySelector(".hour-hand");
+
+function setDate() {
+  const currentTime = new Date();
+  const seconds = currentTime.getSeconds();
+  const secondDegrees = (seconds / 60) * 360 + 90;
+  secondHand.style.transform = `rotate(${secondDegrees}deg)`;
+  
+  const mins = currentTime.getMinutes();
+  const minsDeg = (mins / 60) * 360 + 90;
+  minHand.style.transform = `rotate(${minsDeg}deg)`;
+
+  const hours = currentTime.getHours();
+  const hourDeg = (hours / 12) * 360 + 90;
+  hourHand.style.transform = `rotate(${hourDeg}deg)`;
+  
+  requestAnimationFrame(setDate);
+}
+
+setDate();
+```
+
+But let us wait for a minute to pass and see if its working correctly. Did you see a glitch which just happened for a millisecond? Let's fix it by adding this code inside our function before the `requestAnimationFrame(setDate)`:
 
 ```js
 if(seconds == 0){
@@ -406,7 +444,20 @@ if(seconds == 0){
 }
 ```
 
-**Explanation** : We use `if-else` statements to check if our seconds are 0, meaning if we have passed a minute. When that statement is true, i.e when we pass a minute, we set all our `transitionDurations` to 0. Which means we basically stop our transitions at that particular moment. Otherwise we keep all our `transitionDuration` to the normal value.  
+**Explanation** : 
+
+Remember this code snippet which we wrote in our CSS file?
+
+```css
+.hand {
+... // all the above code
+  transition: all 0.05s; // check near line 38.
+}
+```
+
+This is the particular style which we are changing in the `if-else` statement.
+
+We use `if-else` statements to check if our seconds are 0, meaning if we have passed a minute. When that statement is true, i.e when we pass a minute, we set all our `transitionDurations` to 0. Which means we basically stop our transitions at that particular moment. Otherwise we keep all our `transitionDuration` to the normal value.  
 This prevents that bug from happening every minute.
 
 The Final Code:
@@ -417,34 +468,34 @@ const minsHand = document.querySelector(".min-hand");
 const hourHand = document.querySelector(".hour-hand");
 
 function setDate() {
- 	const currentTime = new Date();
-	const seconds = currentTime.getSeconds();
-	const secondDegrees = (seconds / 60) * 360 + 90;
-	secondHand.style.transform = `rotate(${secondDegrees}deg)`;
+  const currentTime = new Date();
+  const seconds = currentTime.getSeconds();
+  const secondDegrees = ((seconds / 60) * 360) + 90;
+  secondHand.style.transform = `rotate(${secondDegrees}deg)`;
 
-	const mins = currentTime.getMinutes();
-	const minsDeg = (mins / 60) * 360 + 90;
-	minsHand.style.transform = `rotate(${minsDeg}deg)`;
+  const mins = currentTime.getMinutes();
+  const minsDeg = ((mins / 60) * 360) + 90;
+  minsHand.style.transform = `rotate(${minsDeg}deg)`;
 
-	const hours = currentTime.getHours();
-	const hourDeg = (hours / 12) * 360 + 90;
-	hourHand.style.transform = `rotate(${hourDeg}deg)`;
-	if(seconds == 0){
-		secondHand.style.transitionDuration = '0s';
-		minsHand.style.transitionDuration = '0s';
-		hourHand.style.transitionDuration = '0s';
-	} else {
-		secondHand.style.transitionDuration = '0.05s';
-		minsHand.style.transitionDuration = '0.05s';
-		hourHand.style.transitionDuration = '0.05s';
-	}
-	requestAnimationFrame(setDate);
+  const hours = currentTime.getHours();
+  const hourDeg = ((hours / 12) * 360) + 90;
+  hourHand.style.transform = `rotate(${hourDeg}deg)`;
+  if(seconds == 0){
+    secondHand.style.transitionDuration = '0s';
+    minsHand.style.transitionDuration = '0s';
+    hourHand.style.transitionDuration = '0s';
+  } else {
+    secondHand.style.transitionDuration = '0.05s';
+    minsHand.style.transitionDuration = '0.05s';
+    hourHand.style.transitionDuration = '0.05s';
+  }
+  requestAnimationFrame(setDate);
 }
 
 setDate();
 ```
 
-**And congratulations! You just built a clock using just 20 lines of JavaScript!**    
+**And congratulations! You just built a clock using nearly 30 lines of JavaScript!**    
 
 ![Image](https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif)
 
