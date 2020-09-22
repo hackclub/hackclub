@@ -10,11 +10,11 @@ In this workshop we will be making a small web based IDE. This is going to be a 
 
 This is what it will lool like:
 
- ![Demo GIF](img/demogif.gif)
+![Demo GIF](img/demogif.gif)
 
- To see a live of demo of what you will be making visit this [link](https://hackideworkshopdemo.vercel.app/) and click on the RUN button to see the magic!
- 
- This [link](https://repl.it/@HARSHBAJPAI1/hackidestarter-1#index.html) is to the final code. If you are stuck at any point then you can take help from this repl.
+To see a live of demo of what you will be making visit this [link](https://hackideworkshopdemo.vercel.app/) and click on the RUN button to see the magic!
+
+This [link](https://repl.it/@HARSHBAJPAI1/hackidestarter-1#index.html) is to the final code. If you are stuck at any point then you can take help from this repl.
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ We will be using HTML,Javascript and CSS in this workshop. To get started go to 
 
 ![Setup Image](img/setup.png)
 
-## Layout 
+## Layout
 
 This is what the layout of the IDE is going to look like:
 
@@ -48,7 +48,6 @@ We will be using Flexbox to implement this layout. This is an awesome [resource]
 Now we will start by making the header for our application. We will define its structure in the index.html file and then we will style it in the style.css file.
 
 Remember HTML is for defining the structure of your website while CSS is for styling it.
-
 
 ![Header Image](img/header.png)
 
@@ -63,26 +62,31 @@ The <title\> tag has name _repl.it_, this is the name which will show up on the 
 ![Title Image](img/title.png)
 
 Change it to **Hack IDE** from **repl.it**.
+
 ```html
-  <title>Hack IDE</title>
+<title>Hack IDE</title>
 ```
 
-### Adding <header\> 
+### Adding <header\>
 
 Now we will define the structure of the header in index.html file.
- Add the following HTML between your **<body\>** tag before the already existing <script\> tag .
-
+Add the following HTML between your **<body\>** tag before the already existing <script\> tag .
 
 ```html
- <header>
-      <div id="logocontainer">
-        <img id="logo" src="https://raw.githubusercontent.com/bajpai244/workshopfilehosting/master/hackide/hackclublogo.png" width="60px" />
-      </div>
-      <div id="buttoncontainer">
-        <button onclick="buttonclick()"><b>RUN</b></button>
-      </div>
-    </header>
+<header>
+  <div id="logocontainer">
+    <img
+      id="logo"
+      src="https://raw.githubusercontent.com/bajpai244/workshopfilehosting/master/hackide/hackclublogo.png"
+      width="60px"
+    />
+  </div>
+  <div id="buttoncontainer">
+    <button onclick="buttonclick()"><b>RUN</b></button>
+  </div>
+</header>
 ```
+
 After Adding it your code it will look like this:
 
 ![Header Insert Code View](img/headerinsert.png)
@@ -91,9 +95,8 @@ The explanation of the above code is as follows:
 
 - <header\> tag is declared to define our header in HTML.
 - <img \> tag is created which will be used as our logo. It has a parent <div\> tag which will be used to vertically align it to the center (we will do it in the CSS part).
-- <button\> tag is created which will be used to run our code when we will click on it. It has a parent <div\> which will be used for its layout. Its width is set to 70px in width attribute. 
+- <button\> tag is created which will be used to run our code when we will click on it. It has a parent <div\> which will be used for its layout. Its width is set to 70px in width attribute.
 - <button\> has an onclick attribute equal to _buttonclick()_ which will run our Javascript code when the button will be clicked (we will define buttonclick() in a later section of this workshop).
-
 
 ## Need for styling
 
@@ -123,6 +126,7 @@ header {
   display: flex;
 }
 ```
+
 - Here we are making html and body to acquire the full space of the display.
 
 - body display is made flex with flex-direction column so that we can have a vertical flex layout ( why we did that will be more clear as we proceed. ).
@@ -161,7 +165,6 @@ button {
   color: white;
   cursor: pointer;
 }
-
 ```
 
 - We made #logocontainer ( parent <div\> of our <img\> ) a flex container so that we can vertically align our image to the center.
@@ -188,21 +191,21 @@ Now it is the time that we make the code editor and the display section of our I
 
 ## Adding HTML
 
-We need to add the HTML for our _code editor and output section._ 
+We need to add the HTML for our _code editor and output section._
 Append the following HTML between your <body\> tags ( inside index.html file ).
 
- Add this code before the <script src="script.js" \> tag in <body\> and after the already existing <header\> tag. 
+Add this code before the <script src="script.js" \> tag in <body\> and after the already existing <header\> tag.
 
 ```html
-   <main>
-      <div id="editor"></div>
-      <iframe src='' id="iframe"> </iframe>
-    </main>
-    <script
-      src="//ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
+<main>
+  <div id="editor"></div>
+  <iframe src="" id="iframe"> </iframe>
+</main>
+<script
+  src="//ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js"
+  type="text/javascript"
+  charset="utf-8"
+></script>
 ```
 
 Here we have done the following:
@@ -236,6 +239,7 @@ iframe {
   flex: 1;
 }
 ```
+
 Here we have done the following:
 
 - main has flex:1 which will allow it to stretch and occupy all the remaining vertical space in the body.
@@ -248,17 +252,16 @@ Here we have done the following:
 
 Now, we will use Javascript to configure our editor.
 
-Add the following js code to your  _script.js file._
+Add the following js code to your _script.js file._
 
 ```javascript
-
 var url = null
 
 const editor = ace.edit('editor')
 editor.setTheme('ace/theme/dracula')
 editor.getSession().setMode('ace/mode/html')
-
 ```
+
 - variable url will be used by us to store the URL string. (its use will become more clear in later sections)
 
 - remember we added <script\> tag when we created our <main\> tag. We added a CDN link to the Ace editor. It gave us access to a variable named **ace.**
@@ -266,11 +269,11 @@ editor.getSession().setMode('ace/mode/html')
 - ace.editor() method takes the HTML id of the element we want to make a code editor as an argument, in our case id is _editor._
 
 - editor.setTheme('ace/theme/dracula') is setting the theme of the editor to dracula. The
-Ace editor has support for multiple themes and dracula is one of them.
+  Ace editor has support for multiple themes and dracula is one of them.
 
 - editor.getSession().setMode('ace/mode/html') is setting the editor mode to html. It will autoclose our HTML tags when we will type in the code editor!
 
-## Run 
+## Run
 
 Now run your html file to see what you have made!
 
@@ -282,12 +285,11 @@ Try typing some HTML <tags\> and you will notice that the editor now supports th
 
 - Whatever code we type in our code editor we will create an HTML [Blob object](https://developer.mozilla.org/en-US/docs/Web/API/Blob) for it.
 
-- The Blob object represents a blob, which is a file-like object of immutable, raw data; it can be read as text or binary data. 
+- The Blob object represents a blob, which is a file-like object of immutable, raw data; it can be read as text or binary data.
 
 - In our case, you can think of it as a representation of our HTML file, which would have been generated from the code that we wrote in our code editor.
 
 - We can create local URLs of the Blob Objects via [URL.createObjectURL(blob)](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL) method where _blob_ is any Blob object.
-
 
 Add the following code to you script.js file:
 
@@ -299,7 +301,7 @@ function createUrl(html) {
 
 function removeUrl(url) {
   URL.revokeObjectURL(url)
-  }
+}
 ```
 
 Here we have done the following:
@@ -339,7 +341,7 @@ function buttonclick() {
 
 Here we have done the following:
 
-- getIframe() will return our iframe object from the [Document Object Model](https://www.w3schools.com/js/js_htmldom.asp). 
+- getIframe() will return our iframe object from the [Document Object Model](https://www.w3schools.com/js/js_htmldom.asp).
 
 - setIframeUrl(url) will take a URL as an argument and will set iframe's src attribute to this URL. iframes show the content via their [src](https://www.w3schools.com/tags/att_iframe_src.asp) attribute. It uses getIframe() function in it to fetch the iframe object.
 
@@ -347,16 +349,15 @@ Here we have done the following:
 
 ### buttonclick() function
 
-Now, let's talk about *_buttonclick()_* function. It will be called when our RUN button is clicked.
+Now, let's talk about _*buttonclick()*_ function. It will be called when our RUN button is clicked.
 
-- It first stores our code in the code variable. Then it removes the existing URL in the system via removeUrl() function. 
+- It first stores our code in the code variable. Then it removes the existing URL in the system via removeUrl() function.
 
 - Remember the url variable we created initially, it will be used to store the current URL in the system.
 
 - It will create a new URL via createUrl() function and will store it in url variable.
 
 - setIframeUrl() will be used to assign this URL to our iframe's src attribute.
-
 
 ## Magic Time!
 
@@ -369,10 +370,9 @@ Congratulations you have completed this workshop. Now run the code and do the fo
 
 See whatever HTML you create you can see it parallelly in your iframe.
 
-
 ## Next Steps!
 
-I know it feels awesome to make it but don't stop here, Create whatever you can from this crazy trick and share it with us in the [```#ship```](https://app.slack.com/client/T0266FRGM/C0M8PUPU6) channel of [Hack Club's Slack](https://hackclub.com/slack/). 
+I know it feels awesome to make it but don't stop here, Create whatever you can from this crazy trick and share it with us in the [`#ship`](https://app.slack.com/client/T0266FRGM/C0M8PUPU6) channel of [Hack Club's Slack](https://hackclub.com/slack/).
 
 Here is a project which I made ( using this trick ):
 
@@ -384,6 +384,6 @@ KodKarate is an open source IDE powered by Judge Api with support for 21 program
 
 Visit: [https://www.kodkarate.in/](https://www.kodkarate.in/)
 
-Github: [https://github.com/bajpai244/Kodkarate][https://github.com/bajpai244/Kodkarate]
+Github: [https://github.com/bajpai244/Kodkarate][https://github.com/bajpai244/kodkarate]
 
 If you have any doubts or queries regarding this workshop then reach out to me on Hack Club's Slack My username is Harsh Bajpai!
