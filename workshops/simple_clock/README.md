@@ -46,7 +46,7 @@ If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where
 
 Make sure to remove line 5 (`<meta name="viewport" content="width=device-width">`) which may cause some weird responsiveness issues for our workshop.  
 
-![Image](https://cloud-9zj6930c6.vercel.app/gif_maker.gif)
+![Image](https://cloud-8h5wlpd5b.vercel.app/metagif.gif)
 
 ### 2) The CSS file
 
