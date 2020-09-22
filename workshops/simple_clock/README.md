@@ -273,53 +273,55 @@ Here's what we have so far:
 
 ![Image](https://cloud-fprpa1onx.vercel.app/image.png)
 
-And that's it for the CSS. Now let's move on to the JavaScript Part!  
+**What we did so far:** We built the structure of the clock with HTML.
+We built the display of the clock with CSS.
+Now with JavaScript, we will build the functionality of the clock.
 
 ![Image](https://media.giphy.com/media/oymRJRRiiPaVzDnIF1/giphy.gif)
 
 ## 3) JavaScript
 
-Before panicking, let me ensure you that there's really only 30 lines of JavaScript code!
+So far, we have the clock hands aligned correctly and now in this section we will animate them. Before panicking, let me ensure you that there's really only 30 lines of JavaScript code!
 
-Go to your `script.js` file.  
-First let us link the `<div>` tags in our HTML to JavaScript:  
+Go to your `script.js` file. First let us link the `<div>` tags in our HTML to JavaScript.  
+
 Type the following code:  
 
 ```js
 const secondHand = document.querySelector(".second-hand");
-const minsHand = document.querySelector(".min-hand");
+const minHand = document.querySelector(".min-hand");
 const hourHand = document.querySelector(".hour-hand");
 ```
 
 **Explanation:**
-We declare the variables `secondHand`, `minsHand`, `hourHand` using 'const' and set It's value to the first element that matches a specified CSS class(s) in the document. In our case, that CSS selectors are `.second-hand` , `.min-hand` , `.hour-hand` respectively.  
+We declare the variables `secondHand`, `minHand`, `hourHand` using `const` and set their value to the first element that matches a specified CSS class(s) in the document. In our case, that CSS selectors are `.second-hand` , `.min-hand` , `.hour-hand` respectively.  
 
-**What is querySelector()?**
-The `querySelector()` method returns the first element that matches a specified CSS class(s) in the document.
+**What is `querySelector()`?** The `querySelector()` method returns the first element that matches a specified CSS class(s) in the document.
 
-Learn more about `query selector` [here](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
+Learn more about [query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
 
-Now It's time to implement a function which will help us in the proper functioning of the clock.  
-Create a function `setDate` in your file. (You can name it anything you want)
+Now it's time to implement a function which will help us in the proper functioning of the clock.  
+Create a function `setDate` at the bottom your file.  
 
 ```js
 function setDate() {
 }
 ```
 
-We can get the current date using the `JavaScript Date Object`. Let's store it in a variable:
+We can get the current date using the JavaScript `Date` object. Let's store it in a variable:
 
 ```js
 function setDate() {
- 	const currentTime = new Date();
+  const currentTime = new Date();
 }
 ```
 The `Date` object contains specific methods through which we can get the current hour / minute / second.  
 
 Learn more on [JavaScript dates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
 
-lets start by getting the current seconds, Add this code to the `setDate` function:  
-```
+Let's start by getting the current seconds, Add this code to the `setDate` function:  
+
+```js
 const seconds = currentTime.getSeconds();
 ```
 Now, if we want the hands to rotate, we can't simply feed the current time to it. We'll need to convert the current values into degrees and then do the transition.  
@@ -332,16 +334,17 @@ Code:
 
 ```js
 function setDate() {
-	const currentTime = new Date();
-	const seconds = currentTime.getSeconds();
-	const secondDegrees = ((seconds / 60) * 360) + 90;
-	secondHand.style.transform = `rotate(${secondDegrees}deg)`;
+  const currentTime = new Date();
+  const seconds = currentTime.getSeconds();
+  const secondDegrees = ((seconds / 60) * 360) + 90;
+  secondHand.style.transform = `rotate(${secondDegrees}deg)`;
 }
 ```
 
 **Explanation:**
-We have the current seconds stored in the `seconds` variable. We then create a new variable (`secondDegrees`) in which we use an equation to convert the current seconds into degrees. In the next line, we add the transform style property to the `secondHand` which will rotate the hand according to the value of `secondDegrees`.  
-Note: Here, we used backticks (` `) instead of quotes (""). This is an ES6 syntax. It helps us to write variables inside of strings.  
+We have the current seconds (1-60) stored in the `seconds` variable. We then create a new variable (`secondDegrees`) in which we use an equation to convert the current seconds into degrees. In the next line, we add the transform style property to the `secondHand` which will rotate the hand according to the value of `secondDegrees`.  
+
+**Note:** Here, we used backticks (``) instead of quotes (""). This is an ES6 syntax. It helps us to write variables inside of strings.  
 So that line basically looks like:  
 
 ```
@@ -365,7 +368,7 @@ function setDate() {
 
 	const mins = currentTime.getMinutes();
 	const minsDeg = ((mins / 60) * 360) + 90;
-	minsHand.style.transform = `rotate(${minsDeg}deg)`;
+	minHand.style.transform = `rotate(${minsDeg}deg)`;
 
 	const hours = currentTime.getHours();
 	const hourDeg = ((hours / 12) * 360) + 90;
@@ -381,9 +384,8 @@ Now, pass `setDate` to `requestAnimationFrame(//pass value here)`. This will mak
 requestAnimationFrame(setDate)
 ```
 Let us now try to run our code.  
-Hmm... Something is wrong... Our JavaScript doesn't seem to work.  
-That is because we never called our function at the very first place.  
-Call our function outside in our script.   
+
+Hmm... Something is wrong... Our JavaScript doesn't seem to work. That is because we never called our function at the very first place. Call our function outside in our script.   
 
 Learn more on [requestAnimationFrame()](https://css-tricks.com/using-requestanimationframe/).
 
@@ -395,11 +397,11 @@ Add this to your code inside our function and before the `requestAnimationFrame(
 ```js
 if(seconds == 0){
 	secondHand.style.transitionDuration = '0s';
-	minsHand.style.transitionDuration = '0s';
+	minHand.style.transitionDuration = '0s';
 	hourHand.style.transitionDuration = '0s';
 } else {
 	secondHand.style.transitionDuration = '0.05s';
-	minsHand.style.transitionDuration = '0.05s';
+	minHand.style.transitionDuration = '0.05s';
 	hourHand.style.transitionDuration = '0.05s';
 }
 ```
