@@ -54,8 +54,8 @@ This is the `style.css` file in your directory. Whatever styles we give to our w
 
 ### 3) The JavaScript file
 
-This is the `script.js` file in your directory. It's empty for now, but we will fill it eventually through the workshop!  
-Also, this is the most important file for our today's workshop. The code written here will be responsible for the functioning of our clock.  
+This is the `script.js` file in your directory. It's empty for now, but we will fill it eventually through the workshop! Also, this is the most important file for today's workshop. The code written here will be responsible for the functioning of our clock.  
+
 If you take a look in the `<body>` tag, you'll find:
 
 ```html
@@ -68,9 +68,10 @@ This means that your HTML file is linked to your JavaScript.
 ### 1) HTML
 
 Lets start building our clock! First let's write the HTML code required.  
-Inside of our `<body>` tag, add a `<div>` tag with a class "clock".  
 
-Add another `<div>` tag inside of your existing `<div>` and give it a class of "clock-face". Let's add 3 more `<div>` tags nested inside of the "clock-face" div. 
+Inside of our `<body>` tag, add a `<div>` tag with a class `clock`. Add another `<div>` tag inside of your existing `<div>` and give it a class of `clock-face`.  
+
+Let's add 3 more `<div>` tags nested inside of the `clock-face` div. 
 
 Give a class of `hand hour-hand`, `hand min-hand`, `hand second-hand` to each of the 3 new `<div>` tags respectively.  
 
@@ -87,13 +88,13 @@ This is what your code should look like so far:
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-	<div class="clock">
-		<div class="clock-face">
-			<div class="hand hour-hand"></div>
-			<div class="hand min-hand"></div>
-			<div class="hand second-hand"></div>
-		</div>
+    <div class="clock">
+	<div class="clock-face">
+	    <div class="hand hour-hand"></div>
+	    <div class="hand min-hand"></div>
+	    <div class="hand second-hand"></div>
 	</div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
