@@ -189,27 +189,27 @@ Your CSS code so far:
 
 ```css
 body {
-	background: #01ed7f;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
+  background: #01ed7f;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .clock {
-	width: 25rem;
-	height: 25rem;
-	border: 20px solid whitesmoke;
-	border-radius: 50px;
-	background: blanchedalmond;
-	background-image: url(https://bit.ly/2RcERUw);
-	background-size: cover;
-	box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
-                    inset 0 0 0 3px #efefef,
-                    inset 0 0 10px black,
-                    0 0 10px rgba(0, 0, 0, 0.2);
+  width: 25rem;
+  height: 25rem;
+  border: 20px solid whitesmoke;
+  border-radius: 50px;
+  background: blanchedalmond;
+  background-image: url(https://bit.ly/2RcERUw);
+  background-size: cover;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
+              inset 0 0 0 3px #efefef,
+              inset 0 0 10px black,
+              0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .clock-face {
@@ -223,29 +223,29 @@ Similarly, add more stylings to your CSS code:
 
 ```css
 .hand {
-	background: black;
-	height: 6px;
-	position: absolute;
-	top: 50%;
-	transform-origin: 100%;
-	transform: rotate(90deg);
-	transition: all 0.05s;
-	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  background: black;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
 .hour-hand {
-	width: 30%;
-	right: 50%;
+  width: 30%;
+  right: 50%;
 }
 
 .min-hand {
-	width: 35%;
-	right: 50%;
+  width: 35%;
+  right: 50%;
 }
 
 .second-hand {
-	width: 40%;
-	right: 50%;
+  width: 40%;
+  right: 50%;
 }
 ```
 
@@ -257,17 +257,17 @@ Next, we give it a property of `top` to `50%`, basically it aligns our clock han
 
 Next we wrote more transition properties such as:  
 ```css
-	transition: all 0.05s;
-	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+transition: all 0.05s;
+transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 ```
-The `transition: all 0.05s;` sets a 0.05s animation duration. Then, the `transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);` is just a transition effect applied to the clock!
+The `transition: all 0.05s;` sets a 0.05s animation duration. The `transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);` is just a transition effect applied to the clock!
 
 Learn more about [transform-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin).  
 Learn more about [cubic-bezier](https://www.w3schools.com/cssref/func_cubic-bezier.asp).
 
 **Note:** The `.hand` class was given to 3 `<div>` tags which means this styling will affect all the 3 `<div>` tags. To give some extra classes to the hour hand, minute hand and the second hand specifically, we also gave those 3 `<div>` tags a unique classname.  
 
-To align each hand properly, we also give them a property of `right: 50%;`  
+To align each hand properly, we also give them a property of `right: 50%;`.  
 
 Here's what we have so far:
 
