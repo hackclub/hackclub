@@ -44,9 +44,7 @@ You should see something like the following:
 
 Let us first take a look at the HTML file (`index.html`).
 
-At line 1 we have `<!DOCTYPE html>` This declares that this file is a HTML file.
-
-If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. Make sure that all the code you write is included between the opening and closing body tags. (`<body></body>`).
+At line 1 we have `<!DOCTYPE html>` This declares that this file is a HTML file. If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. Make sure that all the code you write is included between the opening and closing body tags. (`<body></body>`).
 
 Make sure to remove line 5 (`<meta name="viewport" content="width=device-width">`) which may cause some weird responsiveness issues for our workshop.
 
@@ -75,9 +73,7 @@ Let's start building our clock! First we'll write the HTML code required.
 
 Inside of our `<body>` tag, add a `<div>` tag with a class `clock`. Add another `<div>` tag inside of your existing `<div>` and give it a class of `clock-face`.
 
-Now add 3 more `<div>` tags nested inside of the `clock-face` div.
-
-Give a class of `hand hour-hand`, `hand min-hand`, `hand second-hand` to each of the 3 new `<div>` tags respectively.
+Now add 3 more `<div>` tags nested inside of the `clock-face` div. Give a class of `hand hour-hand`, `hand min-hand`, `hand second-hand` to each of the 3 new `<div>` tags respectively.
 
 **Note:** Make sure the `<script>` tag, which is in your body, is below the `<div>` tags or else it will throw you errors.
 
@@ -110,9 +106,7 @@ And that's it! We have completed writing our HTML.
 
 After we have done writing the HTML, you'll notice that when we click `RUN`, you just see a white screen. Let's now add some styles to our elements!
 
-Go to `style.css` in your repl.it directory. Let's start by adding some styles to our body! uhh... I meant `<body>`!
-
-Add the following code to your CSS:
+Go to `style.css` in your repl.it directory. Let's start by adding some styles to our body! uhh... I meant `<body>`! Add the following code to your CSS:
 
 ```css
 body {
@@ -259,7 +253,7 @@ Next, we give it a property of `top` to `50%`, basically it aligns the clock han
 
 ![Image](https://cloud-e99m314xu.vercel.app/image.png)
 
-Next we wrote more transition properties such as:
+Next we added more transition properties such as:
 
 ```css
 transition: all 0.05s;
@@ -269,7 +263,6 @@ transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 The `transition: all 0.05s;` property sets a 0.05s animation duration. The `transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);` property is just a transition effect applied to the clock!
 
 Learn more about [transform-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin).
-
 Learn more about [cubic-bezier](https://www.w3schools.com/cssref/func_cubic-bezier.asp).
 
 **Note:** The `.hand` class was given to 3 `<div>` tags which means this styling will affect all the 3 `<div>` tags. To give some extra classes to the hour hand, minute hand and the second hand specifically, we also gave those 3 `<div>` tags a unique classname.
@@ -291,9 +284,7 @@ Here's what we have so far:
 
 So far, we have the clock hands aligned correctly and now in this section we will animate them. Before panicking, let me ensure you that there's just 30 lines of JavaScript code!
 
-Go to your `script.js` file. First let us link the `<div>` tags in our HTML to JavaScript.
-
-Type the following code:
+Go to your `script.js` file. First let us link the `<div>` tags in our HTML to JavaScript. Type the following code:
 
 ```js
 const secondHand = document.querySelector(".second-hand");
@@ -332,9 +323,7 @@ Let's start by getting the current seconds, Add this code to the `setDate` funct
 ```js
 const seconds = currentTime.getSeconds();
 ```
-Now, if we want the hands to rotate, we can't simply feed the current time to it. We'll need to convert the current values into degrees and then do the transition.
-
-Time to do some maths!
+Now, if we want the hands to rotate, we can't simply feed the current time to it. We'll need to convert the current values into degrees and then do the transition. Time to do some maths!
 
 ![Image](https://media.giphy.com/media/26gR0YFZxWbnUPtMA/giphy.gif)
 
@@ -526,11 +515,11 @@ Here's how you can create a repl.it account:
 
 ![Image](https://cloud-940o4yxjv.vercel.app/image.png)
 
-![](https://cloud-18phelcmy.vercel.app/image.png)
+![Image](https://cloud-18phelcmy.vercel.app/image.png)
 
 If you still face difficulties in signing up watch [this](https://www.youtube.com/watch?v=Mtqp4CUepk0).
 
-Here are somethings which you can do:  
+Here are somethings which you can do:
 1. Consider changing the colors and adding more features!  
 2. Try to make the clock circular!  
 3. Try to make it dark theme!
@@ -542,11 +531,11 @@ Here are somethings which you can do:
 - [Tanishq](http://darlingnoxiousfolder--five-nine.repl.co/)
 - [Aaryan Porwal](https://myjsclock.aaryanporwal.repl.co/)
 
-Now that you have finished building this wonderful clock, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!  
+Now that you have finished building this wonderful clock, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
 
-You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.  
+You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.
 
-1. In a new tab, open and follow [these directions][slack] to signup for our Slack.  
+1. In a new tab, open and follow [these directions][slack] to signup for our Slack.
 2. Then, post the link to the [`#scrapbook`](https://hackclub.slack.com/messages/scrapbook) channel to share it with everyone!
 
 [slack]: https://slack.hackclub.com/
