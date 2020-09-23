@@ -5,7 +5,7 @@ Everyone uses websites. Chances are, you're using a website right now. But how d
 
 ## What are HTTP Requests?
 
-HTTP requests are a type of request a program can send to a server to get data back. You might use requests to get weather information, or information from a database, or a video or audio file. There are many types of requests one can use, but the type we'll be covering here are GET requests, which send a request to the server or API with arguments in either the headers of the request or the URL, and expect some response data back.
+HTTP requests are a type of request a program can send to a server to get data back. You might use requests to get weather information, or information from a database, or a video or audio file. There are many types of requests one can use, but the type we'll be covering here are GET requests, which send a request to the server or API with arguments in either the headers of the request or the URL, and expect some response data back. Google, Amazon, pretty much every site amd app available uses requests to get data from the Internet.
 
 ## Setting Up
 
@@ -32,12 +32,12 @@ Both these libraries are set up for us out of the box, so we won't need to insta
 import requests
 import json
 ```
-These lines allow your code to access external libraries, in this case JSON and Requests, and work with them. They essentially extend Python's functionality and allow us to do more things with our code. 
+These lines allow your code to access external libraries, in this case JSON and Requests, and work with them. They essentially extend Python's functionality and allow us to do more things with our code. We import these libraries because we want the functionality that these libraries offer.`import [LIBRARY-NAME]` is the syntax used to import the library `[LIBRARY-NAME]` in Python.
 
 
 ## Setting up the API
 
-The first thing we need to do is to set up the API we'll be requesting from. In order to access stock data, we'll need an API that provides this data. For this demonstration, we'll use the [Finnhub](https://finnhub.io/) stock API to get values.
+The first thing we need to do is to set up the API we'll be requesting from. API stands for "Application Programming Interface" and they basically allow you to access data. In order to access stock data, we'll need an API that provides this data. For this demonstration, we'll use the [Finnhub](https://finnhub.io/) stock API to get values.
 
 Of course, often times, APIs won't let you have the data for free. You typically need to have some method to prove your identity to the API to tell the API that you are allowed to make the request. This API requires an API key. This is a value that we pass to the API to prove that we are authenticated, or allowed to use the API. Luckily, Finnhub provides access to its API for free, so we'll need to go to their site and get one.
 
