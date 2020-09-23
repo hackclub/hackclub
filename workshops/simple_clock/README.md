@@ -211,9 +211,9 @@ body {
 }
 
 .clock-face {
-	position: relative;
-	width: 100%;
-	height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 ```
 
@@ -359,19 +359,19 @@ The code so far:
 
 ```js
 function setDate() {
- 	const currentTime = new Date();
+  const currentTime = new Date();
 	 
-	const seconds = currentTime.getSeconds();
-	const secondDeg = ((seconds / 60) * 360) + 90;
-	secondHand.style.transform = `rotate(${secondDeg}deg)`;
+  const seconds = currentTime.getSeconds();
+  const secondDeg = ((seconds / 60) * 360) + 90;
+  secondHand.style.transform = `rotate(${secondDeg}deg)`;
 
-	const mins = currentTime.getMinutes();
-	const minsDeg = ((mins / 60) * 360) + 90;
-	minHand.style.transform = `rotate(${minsDeg}deg)`;
+  const mins = currentTime.getMinutes();
+  const minsDeg = ((mins / 60) * 360) + 90;
+  minHand.style.transform = `rotate(${minsDeg}deg)`;
 
-	const hours = currentTime.getHours();
-	const hoursDeg = ((hours / 12) * 360) + 90;
-	hourHand.style.transform = `rotate(${hoursDeg}deg)`;
+  const hours = currentTime.getHours();
+  const hoursDeg = ((hours / 12) * 360) + 90;
+  hourHand.style.transform = `rotate(${hoursDeg}deg)`;
 }
 ```
 
@@ -410,21 +410,21 @@ const minHand = document.querySelector(".min-hand");
 const hourHand = document.querySelector(".hour-hand");
 
 function setDate() {
- 	const currentTime = new Date();
+  const currentTime = new Date();
 
-	const seconds = currentTime.getSeconds();
-	const secondDeg = ((seconds / 60) * 360) + 90;
-	secondHand.style.transform = `rotate(${secondDeg}deg)`;
+  const seconds = currentTime.getSeconds();
+  const secondDeg = ((seconds / 60) * 360) + 90;
+  secondHand.style.transform = `rotate(${secondDeg}deg)`;
 
-	const mins = currentTime.getMinutes();
-	const minsDeg = ((mins / 60) * 360) + 90;
-	minHand.style.transform = `rotate(${minsDeg}deg)`;
+  const mins = currentTime.getMinutes();
+  const minsDeg = ((mins / 60) * 360) + 90;
+  minHand.style.transform = `rotate(${minsDeg}deg)`;
 
-	const hours = currentTime.getHours();
-	const hoursDeg = ((hours / 12) * 360) + 90;
-	hourHand.style.transform = `rotate(${hoursDeg}deg)`;
+  const hours = currentTime.getHours();
+  const hoursDeg = ((hours / 12) * 360) + 90;
+  hourHand.style.transform = `rotate(${hoursDeg}deg)`;
 
-	requestAnimationFrame(setDate);
+  requestAnimationFrame(setDate);
 }
 
 setDate();
@@ -434,13 +434,13 @@ But let's wait for a minute to pass and see if its working correctly. Did you se
 
 ```js
 if(seconds == 0){
-	secondHand.style.transitionDuration = '0s';
-	minHand.style.transitionDuration = '0s';
-	hourHand.style.transitionDuration = '0s';
+  secondHand.style.transitionDuration = '0s';
+  minHand.style.transitionDuration = '0s';
+  hourHand.style.transitionDuration = '0s';
 } else {
-	secondHand.style.transitionDuration = '0.05s';
-	minHand.style.transitionDuration = '0.05s';
-	hourHand.style.transitionDuration = '0.05s';
+  secondHand.style.transitionDuration = '0.05s';
+  minHand.style.transitionDuration = '0.05s';
+  hourHand.style.transitionDuration = '0.05s';
 }
 ```
 
