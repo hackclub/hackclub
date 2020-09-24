@@ -4,7 +4,7 @@ description: 'Build a clock using HTML, CSS, & JavaScript'
 author: '@FaisalSayed'
 ---
 
-# JavaScript Clock  
+# JavaScript Clock
 
 Have you ever wondered how to build a clock? Have you ever wanted to build your own clock but didn't because it was hard? Well, today I'm going to show you how to build one and you know what? It's very simple!
 
@@ -19,7 +19,9 @@ Here's the [live demo][final_live_demo] and [final code][final_code].
 [repl_it]: https://repl.it
 
 ## Part 1: Prerequisites
+
 You should have a beginner understanding of:
+
 - HTML
 - CSS
 - JavaScript
@@ -63,6 +65,7 @@ If you take a look in the `<body>` tag, you'll find:
 ```html
 <script src="script.js"></script>
 ```
+
 This means that your HTML file is linked to your JavaScript.
 
 ## Part 4: Building the Clock
@@ -83,7 +86,7 @@ This is what your code should look like so far:
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
@@ -122,6 +125,7 @@ body {
 
 **Explanation:**
 3 main steps in writing CSS:
+
 1. Select the element / class / id on which you want to apply your styles.
 2. Open curly brackets `{}`.
 3. Start adding your styles inside the curly brackets!
@@ -157,14 +161,12 @@ Next, we'll need to add some styles to our clock! Following the 3 main steps giv
   background: blanchedalmond;
   background-image: url(https://bit.ly/2RcERUw);
   background-size: cover;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
-              inset 0 0 0 3px #efefef,
-              inset 0 0 10px black,
-              0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
 }
 ```
 
-**Explanation**: 
+**Explanation**:
 We gave the width and height to our clock. Next, we gave it a border and the radius for the border. Next, is the background color for that clock (if you don't like it, consider changing it or even removing it).
 
 Similarly, there's this line:
@@ -172,6 +174,7 @@ Similarly, there's this line:
 ```css
 background-image: url(https://bit.ly/2RcERUw);
 ```
+
 That image is the face of the clock. we need to add `background-size: cover;` property, in order to show our image properly on the website screen.
 
 Also, we have added some shadows to the element. We gave multiple shadows so as to get a cool effect on our clock. Also, the `inset` property changes the shadow from an outer shadow (`outset`) to an inner shadow.
@@ -204,10 +207,8 @@ body {
   background: blanchedalmond;
   background-image: url(https://bit.ly/2RcERUw);
   background-size: cover;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
-              inset 0 0 0 3px #efefef,
-              inset 0 0 10px black,
-              0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .clock-face {
@@ -273,9 +274,10 @@ Here's what we have so far:
 
 ![Image](https://cloud-fprpa1onx.vercel.app/image.png)
 
-**What we did so far:**  
-- We built the structure of the clock with HTML.  
-- We built the display of the clock with CSS.  
+**What we did so far:**
+
+- We built the structure of the clock with HTML.
+- We built the display of the clock with CSS.
 - Now with JavaScript, we will build the functionality of the clock.
 
 ![Image](https://media.giphy.com/media/oymRJRRiiPaVzDnIF1/giphy.gif)
@@ -287,9 +289,9 @@ So far, we have the clock hands aligned correctly and now in this section, we wi
 Go to your `script.js` file. First let's link the `<div>` tags in our HTML to JavaScript. Type the following code:
 
 ```js
-const secondHand = document.querySelector(".second-hand");
-const minHand = document.querySelector(".min-hand");
-const hourHand = document.querySelector(".hour-hand");
+const secondHand = document.querySelector('.second-hand')
+const minHand = document.querySelector('.min-hand')
+const hourHand = document.querySelector('.hour-hand')
 ```
 
 **Explanation:**
@@ -302,18 +304,17 @@ Learn more about [query selector](https://developer.mozilla.org/en-US/docs/Web/A
 Now it's time to implement a function for the proper functionality of the clock. Create a function `setDate` at the bottom of your file.
 
 ```js
-function setDate() {
-
-}
+function setDate() {}
 ```
 
 We can get the current date using the JavaScript `Date` object. Let's store it in a variable:
 
 ```js
 function setDate() {
-  const currentTime = new Date();
+  const currentTime = new Date()
 }
 ```
+
 The `Date` object contains specific methods through which we can get the current hour / minute / second.
 
 Learn more on [JavaScript dates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
@@ -321,8 +322,9 @@ Learn more on [JavaScript dates](https://developer.mozilla.org/en-US/docs/Web/Ja
 Let's start by getting the current seconds, Add this code to the `setDate` function:
 
 ```js
-const seconds = currentTime.getSeconds();
+const seconds = currentTime.getSeconds()
 ```
+
 Now, if we want the hands to rotate, we can't simply feed the current time to it. We'll need to convert the current values into degrees and then do the transition. Time to do some maths!
 
 ![Image](https://media.giphy.com/media/26gR0YFZxWbnUPtMA/giphy.gif)
@@ -331,10 +333,10 @@ Code:
 
 ```js
 function setDate() {
-  const currentTime = new Date();
-  const seconds = currentTime.getSeconds();
-  const secondDeg = ((seconds / 60) * 360) + 90;
-  secondHand.style.transform = `rotate(${secondDeg}deg)`;
+  const currentTime = new Date()
+  const seconds = currentTime.getSeconds()
+  const secondDeg = (seconds / 60) * 360 + 90
+  secondHand.style.transform = `rotate(${secondDeg}deg)`
 }
 ```
 
@@ -344,9 +346,10 @@ We have the current seconds between 1 - 60 stored in the `seconds` variable. We 
 **Note:** Here, we used backticks (``) instead of quotes (" "). This is an [ES6](https://www.javascripttutorial.net/es6/) syntax. It helps us to write variables inside of strings.
 
 So that line basically looks like:
+
 ```
 eg: if secondDeg = 150;
-then: secondHand.style.transform = 'rotate(150deg)'; 
+then: secondHand.style.transform = 'rotate(150deg)';
 ```
 
 ![Image](https://cloud-bmrnpv27n.vercel.app/image.png)
@@ -359,19 +362,19 @@ The code so far:
 
 ```js
 function setDate() {
-  const currentTime = new Date();
-	 
-  const seconds = currentTime.getSeconds();
-  const secondDeg = ((seconds / 60) * 360) + 90;
-  secondHand.style.transform = `rotate(${secondDeg}deg)`;
+  const currentTime = new Date()
 
-  const mins = currentTime.getMinutes();
-  const minsDeg = ((mins / 60) * 360) + 90;
-  minHand.style.transform = `rotate(${minsDeg}deg)`;
+  const seconds = currentTime.getSeconds()
+  const secondDeg = (seconds / 60) * 360 + 90
+  secondHand.style.transform = `rotate(${secondDeg}deg)`
 
-  const hours = currentTime.getHours();
-  const hoursDeg = ((hours / 12) * 360) + 90;
-  hourHand.style.transform = `rotate(${hoursDeg}deg)`;
+  const mins = currentTime.getMinutes()
+  const minsDeg = (mins / 60) * 360 + 90
+  minHand.style.transform = `rotate(${minsDeg}deg)`
+
+  const hours = currentTime.getHours()
+  const hoursDeg = (hours / 12) * 360 + 90
+  hourHand.style.transform = `rotate(${hoursDeg}deg)`
 }
 ```
 
@@ -402,6 +405,7 @@ requestAnimationFrame(setDate);
 **What is `requestAnimationFrame()`?** There used to be just one way to do a timed loop in JavaScript which was `setInterval()`. For the purpose of animation to appear smooth, (sixty frames per second) `requestAnimationFrame()` was introduced.
 
 **Benefits of using `requestAnimationFrame()`:**
+
 1. The browser can optimize it, so animations will be smoother.
 2. Animations in inactive tabs will stop, allowing the CPU to chill.
 3. More battery-friendly.
@@ -411,47 +415,48 @@ Learn more on [requestAnimationFrame()](https://css-tricks.com/using-requestanim
 Let us now try to run our code. And Voila! Our clock is ready!
 
 Our code so far:
+
 ```js
-const secondHand = document.querySelector(".second-hand");
-const minHand = document.querySelector(".min-hand");
-const hourHand = document.querySelector(".hour-hand");
+const secondHand = document.querySelector('.second-hand')
+const minHand = document.querySelector('.min-hand')
+const hourHand = document.querySelector('.hour-hand')
 
 function setDate() {
-  const currentTime = new Date();
+  const currentTime = new Date()
 
-  const seconds = currentTime.getSeconds();
-  const secondDeg = ((seconds / 60) * 360) + 90;
-  secondHand.style.transform = `rotate(${secondDeg}deg)`;
+  const seconds = currentTime.getSeconds()
+  const secondDeg = (seconds / 60) * 360 + 90
+  secondHand.style.transform = `rotate(${secondDeg}deg)`
 
-  const mins = currentTime.getMinutes();
-  const minsDeg = ((mins / 60) * 360) + 90;
-  minHand.style.transform = `rotate(${minsDeg}deg)`;
+  const mins = currentTime.getMinutes()
+  const minsDeg = (mins / 60) * 360 + 90
+  minHand.style.transform = `rotate(${minsDeg}deg)`
 
-  const hours = currentTime.getHours();
-  const hoursDeg = ((hours / 12) * 360) + 90;
-  hourHand.style.transform = `rotate(${hoursDeg}deg)`;
+  const hours = currentTime.getHours()
+  const hoursDeg = (hours / 12) * 360 + 90
+  hourHand.style.transform = `rotate(${hoursDeg}deg)`
 
-  requestAnimationFrame(setDate);
+  requestAnimationFrame(setDate)
 }
 
-setDate();
+setDate()
 ```
 
 But let's wait for a minute to pass and see if its working correctly. Did you see a glitch which just happened for a millisecond? Let's fix it by adding this code inside our function before the `requestAnimationFrame(setDate)`:
 
 ```js
-if(seconds == 0){
-  secondHand.style.transitionDuration = '0s';
-  minHand.style.transitionDuration = '0s';
-  hourHand.style.transitionDuration = '0s';
+if (seconds == 0) {
+  secondHand.style.transitionDuration = '0s'
+  minHand.style.transitionDuration = '0s'
+  hourHand.style.transitionDuration = '0s'
 } else {
-  secondHand.style.transitionDuration = '0.05s';
-  minHand.style.transitionDuration = '0.05s';
-  hourHand.style.transitionDuration = '0.05s';
+  secondHand.style.transitionDuration = '0.05s'
+  minHand.style.transitionDuration = '0.05s'
+  hourHand.style.transitionDuration = '0.05s'
 }
 ```
 
-**Explanation** : 
+**Explanation** :
 
 Remember this code snippet which we wrote in our CSS file?
 
@@ -477,45 +482,46 @@ It specified the transition duration of 0.05s for the clock hands. Now to fix th
 The Final Code:
 
 ```js
-const secondHand = document.querySelector(".second-hand");
-const minsHand = document.querySelector(".min-hand");
-const hourHand = document.querySelector(".hour-hand");
+const secondHand = document.querySelector('.second-hand')
+const minsHand = document.querySelector('.min-hand')
+const hourHand = document.querySelector('.hour-hand')
 
 function setDate() {
-  const currentTime = new Date();
+  const currentTime = new Date()
 
-  const seconds = currentTime.getSeconds();
-  const secondDeg = ((seconds / 60) * 360) + 90;
-  secondHand.style.transform = `rotate(${secondDeg}deg)`;
+  const seconds = currentTime.getSeconds()
+  const secondDeg = (seconds / 60) * 360 + 90
+  secondHand.style.transform = `rotate(${secondDeg}deg)`
 
-  const mins = currentTime.getMinutes();
-  const minsDeg = ((mins / 60) * 360) + 90;
-  minsHand.style.transform = `rotate(${minsDeg}deg)`;
+  const mins = currentTime.getMinutes()
+  const minsDeg = (mins / 60) * 360 + 90
+  minsHand.style.transform = `rotate(${minsDeg}deg)`
 
-  const hours = currentTime.getHours();
-  const hoursDeg = ((hours / 12) * 360) + 90;
-  hourHand.style.transform = `rotate(${hoursDeg}deg)`;
+  const hours = currentTime.getHours()
+  const hoursDeg = (hours / 12) * 360 + 90
+  hourHand.style.transform = `rotate(${hoursDeg}deg)`
 
-  if(seconds == 0){
-    secondHand.style.transitionDuration = '0s';
-    minsHand.style.transitionDuration = '0s';
-    hourHand.style.transitionDuration = '0s';
+  if (seconds == 0) {
+    secondHand.style.transitionDuration = '0s'
+    minsHand.style.transitionDuration = '0s'
+    hourHand.style.transitionDuration = '0s'
   } else {
-    secondHand.style.transitionDuration = '0.05s';
-    minsHand.style.transitionDuration = '0.05s';
-    hourHand.style.transitionDuration = '0.05s';
+    secondHand.style.transitionDuration = '0.05s'
+    minsHand.style.transitionDuration = '0.05s'
+    hourHand.style.transitionDuration = '0.05s'
   }
 
-  requestAnimationFrame(setDate);
+  requestAnimationFrame(setDate)
 }
-setDate();
+setDate()
 ```
 
-**And congratulations! You just built a clock using nearly 30 lines of JavaScript!**    
+**And congratulations! You just built a clock using nearly 30 lines of JavaScript!**
 
 ![Image](https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif)
 
 ## Part 5: The End
+
 If you haven't created an account on [repl.it](https://repl.it), make sure you do so to save this wonderful piece of creation!
 
 Here's how you can create a repl.it account:
@@ -527,14 +533,16 @@ Here's how you can create a repl.it account:
 If you still face difficulties in signing up watch [this](https://www.youtube.com/watch?v=Mtqp4CUepk0).
 
 Here are some things which you can do:
-1. Consider changing the colors and adding more features!  
-2. Try to make the clock circular!  
+
+1. Consider changing the colors and adding more features!
+2. Try to make the clock circular!
 3. Try to make it have a dark theme!
 4. Try to think of more unique ideas on how you can add more features (displaying the date etc).
 
-**Examples on how people have customized it:**  
-- [HumanChalk](https://closelawfulbinarysearchtree--five-nine.repl.co/)  
-- [Adrian](https://js-clock.loboadrian.repl.co/)  
+**Examples on how people have customized it:**
+
+- [HumanChalk](https://closelawfulbinarysearchtree--five-nine.repl.co/)
+- [Adrian](https://js-clock.loboadrian.repl.co/)
 - [Tanishq](http://darlingnoxiousfolder--five-nine.repl.co/)
 - [Aaryan Porwal](https://myjsclock.aaryanporwal.repl.co/)
 
