@@ -44,7 +44,7 @@ You should see something like the following:
 
 Let us first take a look at the HTML file (`index.html`).
 
-At line 1 we have `<!DOCTYPE html>` This declares that this file is a HTML file. If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. Make sure that all the code you write is included between the opening and closing body tags. (`<body></body>`).
+At line 1 we have `<!DOCTYPE html>` This declares that this file is an HTML file. If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. Make sure that all the code you write is included between the opening and closing body tags. (`<body></body>`).
 
 Make sure to remove line 5 (`<meta name="viewport" content="width=device-width">`) which may cause some weird responsiveness issues for our workshop.
 
