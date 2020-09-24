@@ -165,3 +165,34 @@ At the moment your code inside `main` should look like:
 </div>
 ```
 
+You may notice that we're not displaying all the data we have :( The other two pieces of data we'll want to display are GitHub links and the person's website. The issue is these fields are optional so not everyone has them. To fix this we need to wrap the card with `{props.user.github && ( YOUR_CONTENT_HERE )}` to show it only when the GitHub link field is available. Let's add the following to the end of our grid after the `</a>`:
+
+```javascript
+{props.user.github && (
+  <a
+    href={props.user.github}
+    className={styles.card}
+  >
+    <h3>Visit their GitHub &rarr;</h3>
+    <p>I'm sure it's full of coding projects and a lot of green.</p>
+  </a>
+)}
+```
+
+Challenge! Can you do the same for the website link? The variable is: `{props.user.website}`.
+
+No peaking, the solution is:
+
+```
+{props.user.website && (
+  <a
+    href={props.user.website}
+    className={styles.card}
+  >
+    <h3>Visit their website &rarr;</h3>
+    <p>Their little corner of the internet, who knows what you'll find here!</p>
+  </a>
+)}
+```
+
+### real people!!!!!!!
