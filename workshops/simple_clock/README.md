@@ -69,7 +69,7 @@ This means that your HTML file is linked to your JavaScript.
 
 ### 1) HTML
 
-Let us start building our clock! First we'll write the HTML code required.
+Let us start building our clock! First, we'll write the HTML code required.
 
 Inside of our `<body>` tag, add a `<div>` tag with a class `clock`. Add another `<div>` tag inside of your existing `<div>` and give it a class of `clock-face`.
 
