@@ -375,7 +375,7 @@ function setDate() {
 }
 ```
 
-Our clock is almost finished! We now just need to call that function every second.
+Our clock is almost finished! We now just need to call that function repeatedly.
 
 This is going to be a bit complex task, so let's do it step by step.
 
@@ -388,7 +388,7 @@ requestAnimationFrame();
 }
 ```
 
-2. Pass `setDate` to `requestAnimationFrame()`. This will make sure our function keeps running and never stops.
+2. Pass `setDate` to `requestAnimationFrame()`.
 
 ```js
 function setDate() {
@@ -398,6 +398,13 @@ requestAnimationFrame(setDate);
 ```
 
 3. Call the function `setDate()` at the very end of our JavaScript file.
+
+**What is `requestAnimationFrame()`?** There used to be just one way to do a timed loop in JavaScript which was `setInterval()`. For the purpose of animation to appear smooth, (sixty frames per second) `requestAnimationFrame()` was introduced.
+
+**Benefits of `requestAnimationFrame()`:**
+1. The browser can optimize it, so animations will be smoother.
+2. Animations in inactive tabs will stop, allowing the CPU to chill.
+3. More battery-friendly.
 
 Learn more on [requestAnimationFrame()](https://css-tricks.com/using-requestanimationframe/).
 
