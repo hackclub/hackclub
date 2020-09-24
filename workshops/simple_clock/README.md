@@ -128,7 +128,7 @@ body {
 
 We start by giving our website a soothing green color. Go ahead and try changing it to the color of your own choice!
 
-Then we removed the default margin and padding from all the elements in our website (some elements have a default value for their margin and padding such as 2.4, 3 etc). We changed the default display `display: block` to `display: flex`.
+Then we removed the default margin and padding from all the elements in our website (some elements have a default value for their margin and padding such as 2.4, 3, etc). We changed the default display `display: block` to `display: flex`.
 
 A very good reason for this is because `flex` enables you to align your items perfectly to the center! And that's what we have done in the next two lines. The `align-items` property aligns all your children elements to center, but horizontally. The `justify-content` property aligns all your children elements to center, but vertically.
 
