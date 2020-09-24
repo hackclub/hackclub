@@ -165,7 +165,7 @@ Next, we'll need to add some styles to our clock! Following the 3 main steps giv
 ```
 
 **Explanation**: 
-We gave a width and a height to our clock. Next, we gave it a border and the radius for the border. Next, is the background color for that clock (if you don't like it, consider changing it or even removing it).
+We gave the width and height to our clock. Next, we gave it a border and the radius for the border. Next, is the background color for that clock (if you don't like it, consider changing it or even removing it).
 
 Similarly, there's this line:
 
