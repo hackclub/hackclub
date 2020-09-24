@@ -183,7 +183,7 @@ Challenge! Can you do the same for the website link? The variable is: `{props.us
 
 No peaking, the solution is:
 
-```
+```javascript
 {props.user.website && (
   <a
     href={props.user.website}
