@@ -128,6 +128,17 @@ export async function getServerSideProps(context) {
   };
 }
 ```
+Let's pass the page the data, we can do this by editing:
+
+```
+export default function Home() {
+```
+
+To be:
+
+```
+export default function Home(props) {
+```
 
 We've got the data, now we need to get it onto the site!
 
