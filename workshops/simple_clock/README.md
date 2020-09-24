@@ -522,7 +522,7 @@ If you still face difficulties in signing up watch [this](https://www.youtube.co
 Here are somethings which you can do:
 1. Consider changing the colors and adding more features!  
 2. Try to make the clock circular!  
-3. Try to make it dark theme!
+3. Try to make it have a dark theme!
 4. Try to think of more unique ideas on how you can add more features (displaying the date etc).
 
 **Examples on how people have customized it:**  
