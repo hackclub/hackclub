@@ -282,7 +282,7 @@ Here's what we have so far:
 
 ## 3) JavaScript
 
-So far, we have the clock hands aligned correctly and now in this section we will animate them. Before panicking, let me ensure you that there's just 30 lines of JavaScript code!
+So far, we have the clock hands aligned correctly and now in this section, we will animate them. Before panicking, let me ensure you that there are just 30 lines of JavaScript code!
 
 Go to your `script.js` file. First let's link the `<div>` tags in our HTML to JavaScript. Type the following code:
 
