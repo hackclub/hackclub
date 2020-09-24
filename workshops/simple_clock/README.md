@@ -176,7 +176,7 @@ That image is the face of the clock. we need to add `background-size: cover;` pr
 
 Also, we have added some shadows to the element. We gave multiple shadows so as to get a cool effect on our clock. Also, the `inset` property changes the shadow from an outer shadow (`outset`) to an inner shadow.
 
-Now let's test our code! Click on the **RUN** button and Voila! Here's the basic background for our clock! (if it doesn't looks like this, make sure you crosscheck every single line of code).
+Now let's test our code! Click on the **RUN** button and Voila! Here's the basic background for our clock! (if it doesn't look like this, make sure you crosscheck every single line of code).
 
 ![Image](https://cloud-dgjpl9scw.vercel.app/image.png)
 
