@@ -299,7 +299,7 @@ We declare the variables `secondHand`, `minHand`, `hourHand` using `const` and s
 
 Learn more about [query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
 
-Now it's time to implement a function for the proper functionality of the clock. Create a function `setDate` at the bottom your file.
+Now it's time to implement a function for the proper functionality of the clock. Create a function `setDate` at the bottom of your file.
 
 ```js
 function setDate() {
