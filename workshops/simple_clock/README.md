@@ -262,7 +262,7 @@ transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 
 The `transition: all 0.05s;` property sets a 0.05s animation duration. The `transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);` property is just a transition effect applied to the clock!
 
-Learn more about [transform-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin).
+Learn more about [transform-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin).  
 Learn more about [cubic-bezier](https://www.w3schools.com/cssref/func_cubic-bezier.asp).
 
 **Note:** The `.hand` class was given to 3 `<div>` tags which means this styling will affect all the 3 `<div>` tags. To give some extra classes to the hour hand, minute hand, and the second hand specifically, we also gave those 3 `<div>` tags a unique class name.
@@ -401,7 +401,7 @@ requestAnimationFrame(setDate);
 
 **What is `requestAnimationFrame()`?** There used to be just one way to do a timed loop in JavaScript which was `setInterval()`. For the purpose of animation to appear smooth, (sixty frames per second) `requestAnimationFrame()` was introduced.
 
-**Benefits of `requestAnimationFrame()`:**
+**Benefits of using `requestAnimationFrame()`:**
 1. The browser can optimize it, so animations will be smoother.
 2. Animations in inactive tabs will stop, allowing the CPU to chill.
 3. More battery-friendly.
