@@ -1,6 +1,6 @@
 ---
 name: 'JavaScript Clock'
-description: 'Build a clock using HTML, CSS, & JavaScript.'
+description: 'Build a clock using HTML, CSS, & JavaScript'
 author: '@FaisalSayed'
 ---
 
