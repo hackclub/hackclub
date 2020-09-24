@@ -265,7 +265,7 @@ The `transition: all 0.05s;` property sets a 0.05s animation duration. The `tran
 Learn more about [transform-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin).
 Learn more about [cubic-bezier](https://www.w3schools.com/cssref/func_cubic-bezier.asp).
 
-**Note:** The `.hand` class was given to 3 `<div>` tags which means this styling will affect all the 3 `<div>` tags. To give some extra classes to the hour hand, minute hand and the second hand specifically, we also gave those 3 `<div>` tags a unique classname.
+**Note:** The `.hand` class was given to 3 `<div>` tags which means this styling will affect all the 3 `<div>` tags. To give some extra classes to the hour hand, minute hand, and the second hand specifically, we also gave those 3 `<div>` tags a unique class name.
 
 To align each hand properly, we give them a property of `right: 50%;`.
 
