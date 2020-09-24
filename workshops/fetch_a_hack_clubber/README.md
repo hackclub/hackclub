@@ -47,8 +47,7 @@ To help you out, I've prepared some [starter code](https://repl.it/@sampoder/fet
 
 Click `Run ➤` and you'll see what our interface is going to look like. Right now, it's just introducing me ([@sampoder](https://github.com/sampoder))
 
-Next, you're going to want to open `pages/index.js`, this is where we're going to be writing all of our code for the project.
-
+Next, you're going to want to open `pages/index.js`, this is where we're going to be writing all of our code for the project
 Take a look at the code, the basic explanation is:
 
 * We import a few things at the top. We have `next/head` which allows us to add metadata to our head. We import our CSS from `../styles/Home.module.css` to style the web app. We import `isomorphic-unfetch`, which is a utility that helps us fetch data from web APIs.
@@ -69,7 +68,7 @@ To do this we will use the `getServerSideProps` feature of Next.js. This means w
 
 Let's add a basic `getServerSideProps()` function at the bottom
 
-```
+```javascript
 export async function getServerSideProps() {
   return {
     props: { 'number': 1 },
@@ -81,7 +80,7 @@ This isn't doing anything at the moment, but that will change soon! For now, jus
 
 Next up, let's try out fetching data! Using the following snippet we're going to fetch all of the users on Scrapbook, convert the result into JSON and then log it to the console.
 
-```
+```javascript
 export async function getServerSideProps() {
   const users = await fetch(
     "https://scrapbook.hackclub.com/api/users/"
@@ -99,7 +98,7 @@ Now we got all our people, we need to pick one! We can use MATH in Javascript to
 
 Let's add a bit to our `getServerSideProps()` function:
 
-```
+```javascript
 export async function getServerSideProps() {
   const users = await fetch(
     "https://scrapbook.hackclub.com/api/users/"
@@ -116,7 +115,7 @@ Reload the site again, now should only see one user and it should change everyti
 
 Last thing, we need to give our page access to this data, we can do this by replacing `'number': 1` with `user`. We also don't need to log to the console, so our  `getServerSideProps()` function should look like:
 
-```
+```javascript
 export async function getServerSideProps(context) {
   const users = await fetch(
     "https://scrapbook.hackclub.com/api/users/"
