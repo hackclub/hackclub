@@ -43,4 +43,22 @@ From this object we can get my Scrapbook username (which we can use to identify 
 
 ### Getting started
 
-[starter code](https://repl.it/@sampoder/fetchahackclubberstarter)
+To help you out, I've prepared some [starter code](https://repl.it/@sampoder/fetchahackclubberstarter). Open it up with Repl.it (Google Docs for coding) and then fork it so we can get coding!
+
+Click `Run ➤` and you'll see what our interface is going to look like. Right now, it's just introducing me ([@sampoder](https://github.com/sampoder))
+
+Next you're going to want to open `pages/index.js`, this is where we're going to be writing all of our code for the project.
+
+Take a look at the code, the basic explaination is:
+
+* We import a few things at the top. We have `next/head` which allows us to add metadata to our head. We import our CSS from `../styles/Home.module.css` to style the web app. We import `isomorphic-unfetch`, which is a utility that helps us fetch data from web APIs.
+
+* Then inside the function called `Home` (which is our default export) we return all the elements of our site.
+
+  * These are very similar to HTML elements
+  
+  * To style elments we add a class by adding a code snippet like `className={styles.card}` to the element.
+  
+> Sidenote: I'd like to give credit to everyone who contributed to `create-next-app` as the starter code that your using was based off their project. Thank you for their tireless efforts.
+
+
