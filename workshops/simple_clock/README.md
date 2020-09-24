@@ -132,7 +132,7 @@ Then we removed the default margin and padding from all the elements in our webs
 
 A very good reason for this is because `flex` enables you to align your items perfectly to the center! And that's what we have done in the next two lines. The `align-items` property aligns all your children elements to center, but horizontally. The `justify-content` property aligns all your children elements to center, but vertically.
 
-Next we have the `min-height` property which sets a minimum height of `100vh` (viewport height) to your `<body>`. The `min-height` property works together with the `align-items` property and helps the children to align properly at the center.
+Next, we have the `min-height` property which sets a minimum height of `100vh` (viewport height) to your `<body>`. The `min-height` property works together with the `align-items` property and helps the children to align properly at the center.
 
 Learn more about [viewport heights](https://www.sitepoint.com/css-viewport-units-quick-start/).
 
