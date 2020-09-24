@@ -47,6 +47,8 @@ To help you out, I've prepared some [starter code](https://repl.it/@sampoder/fet
 
 Click `Run ➤` and you'll see what our interface is going to look like. Right now, it's just introducing me ([@sampoder](https://github.com/sampoder))
 
+<img src="https://cloud-486h0t7p5.vercel.app/screenshot_2020-09-24_at_10.49.25_pm.png" width="380" alt="Our starter project">
+
 Next, you're going to want to open `pages/index.js`, this is where we're going to be writing all of our code for the project
 Take a look at the code, the basic explanation is:
 
@@ -128,3 +130,38 @@ export async function getServerSideProps(context) {
 ```
 
 We've got the data, now we need to get it onto the site!
+
+### Displaying our data
+
+In Next.js we can use any variable in our page using by putting it in curly braces (`{}`). For example if we wanted to use the person's username we could use `{props.user.username}`. 
+
+Let's get started by changing `sampoder` to `{props.user.username}` in our `h1` tag. Try reloading the site, you should now see a random username on every new load. Can you do the same by changing the source image for the avatar? The variable is `{props.user.avatar}`.
+
+Now we need to change the links to use our variables. This is a bit more of a challenge, we're going to want to replace `{"https://hackclub.slack.com/team/USNPNJXNX"}` with `{"https://hackclub.slack.com/team/" + props.user.slack}` to get the Slack link to work. Knowing that our Scrapbook username is `props.user.scrapbook` can you do the same for the Scrapbook link?
+
+At the moment your code inside `main` should look like:
+
+```javascript
+<img src={props.user.avatar} className={styles.avatar} />
+<h1 className={styles.title}>
+  Meet <span className={styles.accent}>@{props.user.username}</span>
+</h1>
+<div className={styles.grid}>
+  <a
+    href={"https://hackclub.slack.com/team/" + props.user.slack}
+    className={styles.card}
+  >
+    <h3>Message them Slack &rarr;</h3>
+    <p>They're on the Hack Club Slack, just like you (I hope)!</p>
+  </a>
+
+  <a
+    href={"https://scrapbook.hackclub.com/" + props.user.username}
+    className={styles.card}
+  >
+    <h3>Visit their Scrapbook &rarr;</h3>
+    <p>Where Hack Clubbers share what they get up to!</p>
+  </a>
+</div>
+```
+
