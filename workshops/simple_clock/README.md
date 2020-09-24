@@ -75,7 +75,7 @@ Inside of our `<body>` tag, add a `<div>` tag with a class `clock`. Add another 
 
 Now add 3 more `<div>` tags nested inside of the `clock-face` div. Give a class of `hand hour-hand`, `hand min-hand`, `hand second-hand` to each of the 3 new `<div>` tags respectively.
 
-**Note:** Make sure the `<script>` tag, which is in your body, is below the `<div>` tags or else it will throw you errors.
+**Note:** Make sure the `<script>` tag, which is in your body, is below the `<div>` tags, or else it will throw you errors.
 
 This is what your code should look like so far:
 
