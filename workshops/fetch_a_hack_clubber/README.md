@@ -41,3 +41,6 @@ When we query that endpoint we get an array of JSON objects like this:
 
 From this object we can get my Scrapbook username (which we can use to identify them), my Slack user ID, my GitHub and my website. There is a lot more data which you can play around with later!
 
+### Getting started
+
+[starter code](https://repl.it/@sampoder/fetchahackclubberstarter)
