@@ -123,7 +123,7 @@ When you take a look at the `index.html` file in your Repl, you'll see the `<htm
 
 You will also find lines like:
 - `<link href="style.css" rel="stylesheet" type="text/css"/>` which links your CSS file (`style.css`) with the HTML. 
-- `<script src="script.js"></script>` which links you JavaScript file (`script.js`) with HTML and this should be place just above closing body tag `</body>`.
+- `<script src="script.js"></script>` which links your JavaScript file (`script.js`) with HTML and this should be place just above closing body tag `</body>`.
 So let's write our HTML Code:
 
 In the `<body>` tag you need to create two divisions, the first division is for the login page and the second is for the logout page using `<div>`.
