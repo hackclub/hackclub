@@ -64,14 +64,14 @@ Now we can set a title for our window. For that, we use title() function. You ca
 
 `window.config(bg="black")`
 
-In this line, we are setting background color to our window in this case I give black. You can also specify the color in hex code Tkinter will accept it. RGB too.
+In this line, we are setting the background color to our window in this case I give black. You can also specify the color in hex code Tkinter will accept it. RGB too.
 window.config means we are configuring our window and setting up its bg which is a short form for a background.
 
 ### L6
 
 `tk.Label(window,text="Enter Something Here.",font=("Helvetica",30),fg="blue",bg="black").place(x=145,y=48)`
 
-This is a big line, right? Don't worry it's simple like CSS.Here we are making a text which is to be displayed in the window. So for that, we use Label() Function. To make use of the label function we need to call it. So we need to refer to the library first and call the object Label like this=> tk.Label() that's it. Inside this function, we need to specify the window in which we want this to be displayed. So for here, it is window then we need to specify the text to be displayed in the window for that we use a keyword "text" so we can say our Label that the text to be displayed = the variable text. Like CSS we can also change the font, font color, font size, font weight, background, etc... so for that, we need to use the font() function in which we specify the font name, then the size of the font needed. Now fg stands for foreground which means the font color. After the function is set up we need to place it on the screen right? Now we have made many configurations in the Label but the system now don't know where to keep it on the screen so for that we use the place() function. This function allows us to place the element in almost anywhere of the screen by x y-axis. We only need to specify the x and y coordinate we need them to be seen.
+This is a big line, right? Don't worry it's simple like CSS. Here we are making a text which is to be displayed in the window. So for that, we use Label() Function. To make use of the label function we need to call it. So we need to refer to the library first and call the object Label like this=> tk.Label() that's it. Inside this function, we need to specify the window in which we want this to be displayed. So for here, it is a window then we need to specify the text to be displayed in the window for that we use a keyword "text" so we can say our Label that the text to be displayed = the variable text. Like CSS we can also change the font, font color, font size, font weight, background, etc... so for that, we need to use the font() function in which we specify the font name, then the size of the font needed. Now fg stands for foreground which means the font color. After the function is set up we need to place it on the screen right? Now we have made many configurations in the Label but the system now doesn't know where to keep it on the screen so for that we use the place() function. This function allows us to place the element in almost anywhere of the screen by x y-axis. We only need to specify the x and y coordinate we need them to be seen.
 
 ### L7
 
@@ -129,7 +129,7 @@ I am attaching the Tkinter documentation take a look at [Learn Tkinter](https://
 Also if you are new to python take a look at [python](https://www.python.org/doc/) documentation too 
 ### Softwares made using Tkinter by other hackers.
 
-[HARIPRASAD RAJAN](https://repl.it/@HariprasadR03/hackthon#main.py)
+[HARIPRASAD RAJAN](https://repl.it/@bezlin/Hariprasad#main.py)
 
 [ANUPRIYA SHAJI](https://repl.it/@Anupriya567/qtshb#main.py)
 
@@ -142,6 +142,6 @@ Also if you are new to python take a look at [python](https://www.python.org/doc
 
 [Billing softwares](https://code-projects.org/food-billing-system-in-python-with-source-code/)
 
-[LMS(Learning Management Softwares)](https://github.com/TheThunderB0lt/LMS/)
+[LMS(Learning Management Softwares)](https://data-flair.training/blogs/library-management-system-python-project/)
 
 ### After building share your repl link to all communities don't forget about slack and make everyone know the piece of work you have done.
