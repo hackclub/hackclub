@@ -1,7 +1,7 @@
 ---
 name: 'JavaScript Clock'
 description: 'Build a clock using HTML, CSS, & JavaScript'
-author: '@FaisalSayed'
+author: '@faisalsayed10'
 img: 'https://cloud-c98vjphwp.vercel.app/2020-09-24_qz6y21hudmj4cexpmckf204uadvu2nec.png'
 ---
 
