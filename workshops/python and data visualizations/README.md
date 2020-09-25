@@ -6,7 +6,8 @@ When you get to the website you will see something like this...
 
 
 
-**![](https://lh5.googleusercontent.com/kf8WU2xC639Ogql75pwjVJFsHLkL1Jc39FNmU985vWokqKD7IsnbpUYYgYTn1ke_RzrsH4E3zELEMEAGhdUFwghXyNX75iWV8kwH_v4ADJETTzO-5IsHcijdSwtwf3gbBbC994tc0FA)**
+**![Showing Homepage of Jupyter](https://lh5.googleusercontent.com/kf8WU2xC639Ogql75pwjVJFsHLkL1Jc39FNmU985vWokqKD7IsnbpUYYgYTn1ke_RzrsH4E3zELEMEAGhdUFwghXyNX75iWV8kwH_v4ADJETTzO-5IsHcijdSwtwf3gbBbC994tc0FA)**
+
 Click the middle one (Try JupyterLab)! 
 
 
@@ -54,7 +55,7 @@ plt.show()
 *plt.show() --> shows the graph output.*
 *plt.plot(x,y) --> plots your points.*
 
-#
+
 # Now Let's Create A Simple Bar Graph!
 
 ```
@@ -87,7 +88,7 @@ plt.show()
 Example: 
 **![](https://lh6.googleusercontent.com/RWl3JKBqGZxuteF8vZtZQVri3TCxyRkKOG1zPygUGMQhNdJ3iBPqfIutg0oxXp-KpVUdKZUCYqMhT5i7yftGEasuvCuxWdac-RbAG5GK9zVXAGJ-EqrRnYaWzPxMafSjpBtdeTgZppc)**
 
-#
+
 # Let's Make It A Little More Complicated! 
 
 Step One! 
@@ -163,7 +164,8 @@ Check it our in your Jupyter Editor!
 ![Winnie the Poo dancing!](https://i.pinimg.com/originals/50/5a/0e/505a0e4591fc8052631bed84ac0de1ee.gif)
 
 *Can you tell I have a strange fascination with random things dancing hehe*
-#
+
+
 **Step Three!**
 
 Set up spacing...
@@ -289,7 +291,7 @@ You must do that asap, you are missing out on a animated masterpiece.
 
 ![enter image description here](https://media1.tenor.com/images/fac310fb90bbde750d9f2e6ad1af44b1/tenor.gif?itemid=9695910)
 
-#
+
 # Add On!
 
 -   Look up how to link in raw data from the web into your graphs
