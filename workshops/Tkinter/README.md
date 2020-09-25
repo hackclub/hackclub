@@ -1,6 +1,6 @@
 ---
 name: 'Creating a UI with Tkinter.'
-description: 'We will make a little software with a Designed Graphical User Interface today that asks for a text and prints it.'
+description: 'Beginner level. We will make a little software with a Designed Graphical User Interface today that asks for a text and prints it.'
 author: '@bezlin6mechminerz'
 ---
 
