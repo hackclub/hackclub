@@ -21,7 +21,7 @@ You can test out the demo site using the following credentials:
 - EMAIL-`login@authentication.com`
 - Password - `password`
 
-## Getting Started 🚀
+### Getting Started 🚀
 
 To get started, you should have a basic knowledge of:
 - HTML
@@ -30,7 +30,7 @@ To get started, you should have a basic knowledge of:
 
 So let's begin 💨
 
-### Creating a Firebase project 💻
+## Creating a Firebase project 💻
 First, you will need to sign in to [Firebase](https://firebase.google.com/) using a Google account. You can [create one here](https://accounts.google.com/signup).
 
 After signing in you will see a page similar to this:
@@ -59,7 +59,7 @@ Now here you should see `Your new project is ready`.
 
 Hooray!🎉 you just created a new Firebase project.
 
-### Connecting Firebase to your webpage 🔗
+## Connecting Firebase to your webpage 🔗
 
 After successfully creating the Firebase project you will see your project console.
 
@@ -104,7 +104,7 @@ Then click on `Add User` and add `Email` and `Password` for that user and click 
 
 ![Save user](https://cloud-l38zbxdt7.vercel.app/14.png)
 
-### Designing a webpage 🖊️
+## Designing a webpage 🖊️
 
 If you want to inspect the [Final Code](https://repl.it/@tanishqsoni/Loginauth) you can.
 
@@ -116,7 +116,7 @@ It looks like this 👇
 
 <a href="https://repl.it/languages/html"><img src="https://cloud-g2gwlwjtx.vercel.app/c2.png"></a>
 
-#### Coding Part </>
+### Coding Part </>
 
 #### HTML
 When you take a look at the `index.html` file in your Repl, you'll see the `<html>` tag which is the root of the HTML file, and inside the `<html>` tag you'll see `<body>` tag which is the main body of HTML file and contains all the content for our webpage.
@@ -395,7 +395,7 @@ function login(){
 
 }
 ```
-- Function logout()
+##### Function logout()
 
 For logout add below code below the login().
 
@@ -452,13 +452,13 @@ Yayyy🎊! you Finished with the coding part!
 
 Try logging in with the EMAIL and PASSWORD you recorded in Firebase. If it worked you should be all set!
 
-### Hooray!🎉 
+## Hooray!🎉 
 You finished the Web Login Authentication Workshop by completing all tasks:
 - [x] Creating a Firebase project.
 - [x] Connecting Firebase to your webpage.
 - [x] Designing a webpage.
 
-### ⚡ What's Next?
+## ⚡ What's Next?
 Now, how you can expand it? Try adding some other features to it with the help of [Firebase Guide](https://firebase.google.com/docs/auth/web/start?authuser=0)
 
 Here are some examples 👇
@@ -466,21 +466,21 @@ Here are some examples 👇
 - Adding the `Email verification` feature.
 - Adding the `Anonymous Login` feature, So the user can visit the page without login.
 
-#### ⭐ Live examples with code
+### ⭐ Live examples with code
 
-##### Create Account
+#### Create Account
 In this feature, you can type an email and password of your choice and click on `create an account`.
 
 - [Live example](https://loginauthcreateaccount.tanishqsoni.repl.co/)
 - [Code](https://repl.it/@tanishqsoni/loginauthcreateaccount)
 
-##### Email verification
+#### Email verification
 In this feature, you can send a verification email to verify your account after login.
 
 - [Live example](https://loginauthemailverification.tanishqsoni.repl.co/)
 - [Code](https://repl.it/@tanishqsoni/Loginauthemailverification)
 
-##### Anonymous Login
+#### Anonymous Login
 In this feature, you can log in anonymously without entering an email or password.
 
 - [Live example](https://loginauthanonymous.tanishqsoni.repl.co/)
