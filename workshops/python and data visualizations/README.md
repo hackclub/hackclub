@@ -9,7 +9,6 @@ When you get to the website you will see something like this...
 **![](https://lh5.googleusercontent.com/kf8WU2xC639Ogql75pwjVJFsHLkL1Jc39FNmU985vWokqKD7IsnbpUYYgYTn1ke_RzrsH4E3zELEMEAGhdUFwghXyNX75iWV8kwH_v4ADJETTzO-5IsHcijdSwtwf3gbBbC994tc0FA)**
 Click the middle one (Try JupyterLab)! 
 
-#
 
 # Step One!
 
