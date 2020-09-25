@@ -8,6 +8,8 @@ author: '@tanishq-soni'
 
 In this workshop, you'll build a secure web login page using [Firebase](https://firebase.google.com/).
 
+Firebase is a platform developed by Google for creating mobile and web applications.
+
 You will make something like this 👇
 
 ![live gif](https://cloud-7782l8k04.vercel.app/loginv2.gif)
@@ -19,17 +21,17 @@ You can test out the demo site using the following credentials:
 - EMAIL-`login@authentication.com`
 - Password - `password`
 
-## Getting Started :rocket:
+## Getting Started 🚀
 
 
-### Creating a Firebase project 💻 -
-First, you will need to sign in to [Firebase](https://firebase.google.com/) using a Google account. You can [create one here](https://accounts.google.com/signup)
+### Creating a Firebase project 💻
+First, you will need to sign in to [Firebase](https://firebase.google.com/) using a Google account. You can [create one here](https://accounts.google.com/signup).
 
 After signing in you will see a page similar to this:
 
 ![Firebase landing](https://cloud-mketa8pxq.vercel.app/1.png)
 
-In the above image you'll see the `Go to console` tab at the top right corner, So click on that and you will be redirected to the console section.
+In the image above you'll see the `Go to console` button at the top right corner, click on that and you will be redirected to the console section.
 
 ![Project page](https://cloud-kfr44a6da.vercel.app/2.png)
 
@@ -51,7 +53,7 @@ Now here you'll see `Your new project is ready`.
 
 Hooray!🎉 you just created a new Firebase project.
 
-### Connecting Firebase to your webpage 🔗 -
+### Connecting Firebase to your webpage 🔗
 
 After successfully creating the Firebase project you will see your project console.
 
@@ -108,7 +110,7 @@ Then click on `Add User` and add `Email` and `Password` for that user and click 
 
 So in this way you can record users for restricted login 🔒.
 
-### Designing a webpage 🖊️ - 
+### Designing a webpage 🖊️
 
 You should have a basic knowledge of:
 - HTML
@@ -479,7 +481,7 @@ Here are some examples 👇
 - Adding the `Email verification` feature.
 - Adding the `Anonymous Login` feature, So the user can visit the page without login.
 
-#### ⭐ Live examples with code -
+#### ⭐ Live examples with code
 
 ##### Create Account
 In this feature, you can type email and password of your own choice and click on `create an account`.
