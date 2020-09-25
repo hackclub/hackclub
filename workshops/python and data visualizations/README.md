@@ -28,7 +28,6 @@ In this workshop we will be using: [pandas](https://pandas.pydata.org/) , [numpy
 
 **Numpy**: This is a python library that is very good with hard mathematical functions and arrays.
 
-#
 # Step Two: Let's Make A Simple Line Plot!
 
 **Note: Customize your plots and graphs! (Labels, Values, etc.)**
