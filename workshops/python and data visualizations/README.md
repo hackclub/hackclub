@@ -1,6 +1,7 @@
 
 <h1> Create basic graphs and data visuazlizatoins with python! </h1>
-<p> In this workshop you will use python create basic graphs and visualizations with real data.
+
+<p> Follow along to gain some data science skills! You will use python to create basic graphs and visualizations with real data. You can hand draw a graph anytime you want, but why not learn how to code one! You will learn about matplotlib, pandas, and numpy so you can create any graph or vizualizaiton dream of yours come to life!
 </p>
 
 
@@ -34,24 +35,26 @@ In this workshop we will be using: [pandas](https://pandas.pydata.org/) , [numpy
 
 **Note: Customize your plots and graphs! (Labels, Values, etc.)**
 
-```#Example for Simple Line Plot
-#importing libraries 
-
+``` 
 import pandas as pd 
 import matplotlib.pyplot as plt 
+```
+The code is above imports Pandas and Matplotlib into this project so we can have access to certain variables and methods available in these libraries!
 
-#creating x and y axis
-
+```
 x=[x*2 for x in range (100)]
 y=[y*2 for y in range (100)]
 
-#plotting function
-
 plt.plot(x,y)
 
+```
+This code segment will create the ranges on our x and y axis and plt.plot will plot the points we want! In this example there are no specific points being plot though, we are just making a basic linear function. 
+
+```
 #showing graph
 plt.show() 
 ```
+This line will show the graph and points we plotted, basically giving the user an output. 
 
 *plt.show() --> shows the graph output.*
 *plt.plot(x,y) --> plots your points.*
