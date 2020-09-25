@@ -1,4 +1,8 @@
-# Basic Data Visualizations with Python!
+
+<h1> Create basic graphs and data visuazlizatoins with python! </h1>
+<p> In this workshop you will use python create basic graphs and visualizations with real data.
+</p>
+
 
 What will you need: 
 Go to [Try Jupyter](https://jupyter.org/try).
