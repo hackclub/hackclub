@@ -295,21 +295,13 @@ You must do that asap, you are missing out on a animated masterpiece.
 # Add On!
 
 -   Look up how to link in raw data from the web into your graphs
-    
-
-	  	Hint: start off w/ pd.read_csv()
-    
-
--   Heavily personalize your graph (like I did with Chicken Little)!
-    
--   Google code for different kinds of graphs (dot plot, pie charts, etc.)
-    
--   Make multiple different graphs (the set of four/set them up with figure.
-    
--   Continue to play around!
-    
--   Google!
-- Look up how to import Google Trends into your graph!
+    Hint: start off w/ pd.read_csv()
+    -Heavily personalize your graph (like I did with Chicken Little)!
+    -Google code for different kinds of graphs (dot plot, pie charts, etc.)
+    -Make multiple different graphs (the set of four/set them up with figure.
+    -Continue to play around!
+    -Google!
+    -Look up how to import Google Trends into your graph!
 
 
 
