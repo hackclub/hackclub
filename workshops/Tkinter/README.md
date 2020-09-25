@@ -9,8 +9,13 @@ author: '@bezlin6mechminerz'
 <img width="539" alt="Screenshot 2020-09-19 at 11 28 35 AM" src="https://user-images.githubusercontent.com/54895485/93660382-e47c0880-fa6b-11ea-8f9a-94f476991652.png">
 So we will be making this software which has a text field and people can write anything there and it prints it.
 This will be the simple UI we will be making today. This is a nice world we can even make cool software with this.
-Here is the [live_demo](https://repl.it/@bezlin/graphics#main.py) and [final_code](https://repl.it/@bezlin/graphics#main.py) (see src/app.js and public/app.css files).
+
+[live_demo](https://repl.it/@bezlin/graphics#main.py)
+
+[final_code](https://repl.it/@bezlin/graphics#main.py) 
+
 This workshop will take 50 minutes.
+
 ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/54895485/93660884-07f58200-fa71-11ea-8bbd-44b10c7624b5.gif)
 
 ## Step 1: SETUP
