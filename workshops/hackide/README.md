@@ -384,6 +384,6 @@ KodKarate is an open source IDE powered by Judge Api with support for 21 program
 
 Visit: [https://www.kodkarate.in/](https://www.kodkarate.in/)
 
-Github: [https://github.com/bajpai244/Kodkarate][https://github.com/bajpai244/kodkarate]
+Github: [https://github.com/bajpai244/Kodkarate](https://github.com/bajpai244/kodkarate)
 
 If you have any doubts or queries regarding this workshop then reach out to me on Hack Club's Slack My username is Harsh Bajpai!
