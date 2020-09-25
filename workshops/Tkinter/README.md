@@ -171,8 +171,6 @@ Also if you are new to python take a look at [python](https://www.python.org/doc
 
 [Anupriya Shaji](https://repl.it/@Anupriya567/qtshb#main.py)
 
-[Hariprasad Rajan](https://repl.it/@HariprasadR03/haroadas#main.py)
-
 [Kk Haridev](https://repl.it/@DandaThor/harri-kkkkk#main.py)
 
 [Bezlin Johnson](https://repl.it/@bezlin/graphics#main.py)
