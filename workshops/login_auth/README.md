@@ -35,21 +35,21 @@ In the image above you'll see the `Go to console` button at the top right corner
 
 ![Project page](https://cloud-kfr44a6da.vercel.app/2.png)
 
-In the console section, you'll see all your Firebase projects and here you will see `Add Project` card, So click on it to create a project.
+In the console section, you'll see all your Firebase projects and a `Add Project` button, click on it to create a project.
 
 ![Create project](https://cloud-nfiwmg8kh.vercel.app/3.png)
 
-Here you have to give a name to your Firebase project as I am giving `Login-auth`.
+Here you have to give a name to your Firebase project such as `Login-auth`.
 
 After giving a wonderful name to your project just click on continue to proceed further.
 
 ![Analytics page](https://cloud-pva80oxrl.vercel.app/4.png)
 
-Here is a step where you can use Google Analytics for your project but in this workshop, you don't need it, So simply disable it.
+Here is the step where you can use Google Analytics for your project but in this workshop you can disable it.
 
 ![Project created](https://cloud-3swaas1pn.vercel.app/5.png)
 
-Now here you'll see `Your new project is ready`. 
+Now here you should see `Your new project is ready`. 
 
 Hooray!🎉 you just created a new Firebase project.
 
@@ -57,30 +57,20 @@ Hooray!🎉 you just created a new Firebase project.
 
 After successfully creating the Firebase project you will see your project console.
 
-At project console's landing page you will see `Get started by adding Firebase to your app` and below that you will see three options of integrations:
+At the project's console landing page you will see `Get started by adding Firebase to your app` and below that you will see three options of integrations:
 1. iOS
 2. Android
 3. </> (this option is for web on which you are working, So click on that).
 
 ![Project Console](https://cloud-l7pn8f9e9.vercel.app/6.png)
 
-After clicking on that a new page will pop up and ask you for a nickname of your project, So give one as I am giving it `login-auth` and click on register app.
+After clicking on that a new page will pop up and ask you for a name for your app. For this workshop we will use `login-auth` as the app name.
 
 ![App nickname](https://cloud-8tdv8wfuj.vercel.app/8.png)
 
 Then you will see some sort of JavaScript code, So don't worry about that, It is the code which contains some keys like API Key, Domain key which helps your Firebase project to connect with your webpage, and for that, you need to save this code or just copy/paste into the notes as it will require in coding part later.
 
-Also, include below two lines with the above code.
-
-```javascript
-<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-```
-```javascript
-<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-```
-
 ![API keys](https://cloud-nsps2klza.vercel.app/9.png)
-
 
 After that you need to add existing users, So that they can log in and for that, you need to enable **Email/Password** authentication in your project's Authentication section, for that you need to click on tab `Authentication` on the top left `Develop` section.
 
@@ -107,8 +97,6 @@ After enabling that you need to add existing users, So for that click on the `Us
 Then click on `Add User` and add `Email` and `Password` for that user and click `Add User`.
 
 ![Save user](https://cloud-l38zbxdt7.vercel.app/14.png)
-
-So in this way you can record users for restricted login 🔒.
 
 ### Designing a webpage 🖊️
 
