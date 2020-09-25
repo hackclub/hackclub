@@ -29,13 +29,13 @@ To get started, go to https://repl.it/languages/Tkinter. Your coding environment
 
 ## What is Tkinter
 
-Python offers multiple options for developing GUI (Graphical User Interface). Out of all the GUI methods, tkinter is the most commonly used method. It is used to make softwares and Graphical User interfaces for your python code.
+Python offers multiple options for developing a GUI (Graphical User Interface). Out of all the GUI methods, Tkinter is the most commonly used method. It is used to make software and Graphical User interfaces for your python code.
 
 ## Code and explanation.
 
-Go to repl and then lets get started. Coding along is good than going through all this stuff and then getting to code.
+Go to repl and then let's get started. Coding along is good than going through all this stuff and then getting to code.
 ![vedio](https://cloud-1h9458u6z.vercel.app/54_blog_image_13.gif)
-So inorder to make the quote hub we need to import the library tkinter.
+So to make the quote hub we need to import the library Tkinter.
 
 ```python
 import tkinter as tk
@@ -47,7 +47,7 @@ Import Tkinter means we are importing a python library which is Tkinter here. Al
 window=tk.Tk()
 ```
 
-Here we have made a variable "window" and this is going to be our window. We need to name our window right? So we named it as window itself. Now we need to adjust the size of the window for that we use this code.
+Here we have made a variable "window" and this is going to be our window. We need to name our window right? So we named it as the window itself. Now we need to adjust the size of the window for that we use this code.
 
 ```python
 window.minsize(800,560)
@@ -59,20 +59,20 @@ This function takes 2 parameters the height and the width. It is measured as pix
 window.title("Quotes Hub")
 ```
 
-You can specify the name of the window inside the function in quotes. Now lets give the window a color . If you like white which is default here go with it or take this setup.
+You can specify the name of the window inside the function in quotes. Now, let's give the window color. If you like white which is the default here go with it or take this setup.
 
 ```python
 window.config(bg="black")
 ```
 
 I give black. You can also specify the color in hex code Tkinter will accept it. RGB too.
-window.config means we are configuring our window and setting up its bg which is a short form for a background. Now lets display Quotes hub in the window we made For that we use Label function .
+window.config means we are configuring our window and setting up its bg which is a short form for a background. Now let's display the Quotes hub in the window we made For that we use the Label function.
 
 ```python
 tk.Label(window, font=("Helvetica", 60, "bold"),text="QUOTES HUB", bg="black", fg="white").pack()
 ```
 
-The Label function. It is used to display text on the window. The Label function take parameters such as font, text,background color(bg) ,font color(fg) .The first parameter you should give is the name of the window in which you need this text to be displayed. (.pack()) function packs the text at the center layout. Now lets make a button to move to a page where we see our first quote.
+The Label function. It is used to display text on the window. The Label function take parameters such as font, text,background color(bg) ,font color(fg) .The first parameter you should give is the name of the window in which you need this text to be displayed. (.pack()) function packs the text at the center layout. Now let's make a button to move to a page where we see our first quote.
 
 ```python
 tk.Button(window,command=fun1,text="Get In",bg="aqua",fg="black",width=20).place(x=315,y=300)
@@ -99,7 +99,7 @@ tk.Button(window,command=fun1,text="Get In",bg="aqua",fg="black",width=20).place
 window.mainloop()
 ```
 
-As output, this will show an error that the function fun1 is not declared. So let us make the button work. You need to put this code abouve the window declaration then only it will work.
+As output, this will show an error that the function fun1 is not declared. So let us make the button work. You need to put this code above the window declaration then only it will work.
 
 ```python
 def fun1():
@@ -108,7 +108,7 @@ def fun1():
   tk.Button(F1,command=fun2,text="Next",bg="aqua",fg="black",width=20).place(x=612,y=530)
 ```
 
-In this function, we are showing up a new page in which we display a quote and a next button. As pages, we are using the Frame function. A Frame widget is used to organize a group of widgets. It acts like a container that can be used to hold the other widgets. The rectangular areas of the screen are used to organize the widgets to the python application. Then in that frame, we display the quote at the center using the label function. Then we create a next button and give it a command fun2. Now let us create that function.
+In this function, we are showing up a new page in which we display a quote and a next button. As pages, we are using the Frame function. A-Frame widget is used to organize a group of widgets. It acts like a container that can be used to hold the other widgets. The rectangular areas of the screen are used to organize the widgets to the python application. Then in that frame, we display the quote at the center using the label function. Then we create a next button and give it a command fun2. Now let us create that function.
 
 ```python
 def fun2():
@@ -119,7 +119,7 @@ def fun2():
 
 This function will be the next page with another quote. If you don't understand just go to the live demo and feel the button workflow [here](https://repl.it/@bezlin/graphics#main.py). Ok in this function same as before we are creating a frame and in it, we will displaying another quote and a next button. Like that we have created 5 pages. On the last page, you can avoid the next button.
 
-You need to create more functions according to how much pages you want thats it pretty cool.
+You need to create more functions according to how many pages you want that's it pretty cool.
 
 #### Finally the code will look like this.
 
@@ -160,7 +160,7 @@ Its simple just go through the functions and workflow.
 
 ## Step 4: Your Custom Part
 
-Now you know Tkinter a little bit. You should not stop here in order to learn more and master in UIs you need to practice a lot. The best way to learn it is to look at the world and think of an idea then try to make it.
+Now you know Tkinter a little bit. You should not stop here to learn more and master in UIs you need to practice a lot. The best way to learn it is to look at the world and think of an idea then try to make it.
 
 ## Lastly don't get stuck.
 
@@ -187,4 +187,4 @@ Also if you are new to python take a look at [python](https://www.python.org/doc
 
 ![made_it](https://cloud-a58thexdk.vercel.app/tenor.gif)
 
-Yes You made it.
+Yes, You made it.
