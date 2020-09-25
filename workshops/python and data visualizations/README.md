@@ -158,18 +158,15 @@ fig=plt.figure()
 ```
 fig,ax =plt.subplots(2,2) #creates 2 graph figues
 ```
-
 Check it our in your Jupyter Editor!
 
 ![Winnie the Poo dancing!](https://i.pinimg.com/originals/50/5a/0e/505a0e4591fc8052631bed84ac0de1ee.gif)
 
 *Can you tell I have a strange fascination with random things dancing hehe*
 
-
 **Step Three!**
 
 Set up spacing...
-
 ```
 x=np.linspace(0,2,100)
 ```
@@ -181,16 +178,9 @@ x=np.linspace(0,2,100)
 Create a figure! Scroll back up to see how to write that code...
 Here is a hint 
 ```
-
 fig,ax= plt._____()
 ```
-
-
-
-
-
 *Still stuck? Where the underscores are you should put*
-
 ```
 fig,ax= plt.subplots()
 ```
@@ -200,9 +190,7 @@ Now we can plot some lines, in this part customize it however you want!
  This example is going to have 3 basic functions (linear, squared, and cubed) but you can fancy yours up any way you want!
  ```
 ax.plot(x,x,label='Sleep')
-
 ax.plot(x,x**2,label='Worry if sky is falling...')
-
 ax.plot(x,x**3,label='Be a icon')
 ```
 *Label= will be the name of your line*
@@ -218,18 +206,9 @@ Finishing touches!
 ![Bibitty Bobittiy Boo!](https://45.media.tumblr.com/tumblr_lz56maEBTj1qdmlfso1_250.gif)
 
  ```
- ax.set_xlabel('Time') #adds X axis label
-
-  
-
+ax.set_xlabel('Time') #adds X axis label
 ax.set_ylabel('Years')#add Y axis label
-
-  
-
 ax.set_title("Chicken Little's Plot") #adds a title
-
-  
-
 ax.legend() #adds a key of the graph
  ```
 
