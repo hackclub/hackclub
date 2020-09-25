@@ -32,6 +32,7 @@ When we query that endpoint we get an array of JSON objects like this:
   "css": "https://deadspryintelligence.sampoder.repl.co/style.css",
   "audio": "https://dl.airtable.com/.attachments/d6ddca0c63dff2e05ef91673697461d9/cceb30f2/everything_is_awesome____--_the_lego_movie_--_tegan_and_sara_feat._the_lonely_island.mp3",
   "streakCount": 101,
+  "updatesCount":137,
   "displayStreak": true,
   "slack": "USNPNJXNX",
   "github": "https://github.com/sampoder",
