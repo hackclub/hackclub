@@ -10,9 +10,9 @@ The workshop will look something like this.
 
 So we will be making a quotes hub which displays quotes.
 
-View a [live demo](https://repl.it/@bezlin/graphics#main.py)
+View a [live demo](https://repl.it/@bezlin/trialtkinterpy-2#main.py)
 
-View the [final code](https://repl.it/@bezlin/graphics#main.py)
+View the [final code](https://repl.it/@bezlin/trialtkinterpy-2#main.py)
 
 This workshop will take 20 minutes.
 
