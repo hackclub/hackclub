@@ -1,13 +1,13 @@
-+# Create basic graphs and data visualizations with python! </h1>
+# Create basic graphs and data visualizations with python! 
 
 ![Stonks](https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Ffacebook%2F000%2F029%2F959%2FScreen_Shot_2019-06-05_at_1.26.32_PM.jpg)
 
 You after you make your first data visualization^
-+
-+Follow along with this workshop to gain some data science skills! You will use python to create basic graphs and visualizations with real data. You can hand draw a graph anytime you want, but why not learn how to code one! You will learn about matplotlib, pandas, and numpy, so you can create any graph or vizualizaiton you dream of!
+
+*Follow along with this workshop to gain some data science skills! You will use python to create basic graphs and visualizations with real data. You can hand draw a graph anytime you want, but why not learn how to code one! You will learn about matplotlib, pandas, and numpy, so you can create any graph or vizualizaiton you dream of!*
 
 
-What will you need: 
+**What will you need:**
 Go to [Try Jupyter](https://jupyter.org/try).
 When you get to the website you will see something like this...
 
