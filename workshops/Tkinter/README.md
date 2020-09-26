@@ -8,11 +8,11 @@ The workshop will look something like this.
 
 ![ezgif.com-video-to-gif-3.gif](https://cloud-beibqb64y.vercel.app/ezgif.com-video-to-gif-3.gif)
 
-So we will be making this software. A quotes hub which displays quotes.
+So we will be making a quotes hub which displays quotes.
 
-View a [live_demo](https://repl.it/@bezlin/graphics#main.py)
+View a [live demo](https://repl.it/@bezlin/graphics#main.py)
 
-View the [final_code](https://repl.it/@bezlin/graphics#main.py)
+View the [final code](https://repl.it/@bezlin/graphics#main.py)
 
 This workshop will take 20 minutes.
 
@@ -20,16 +20,16 @@ This workshop will take 20 minutes.
 
 We will be using [Tkinter](https://docs.python.org/3/library/tk.html) python library to develop the user interface.
 
+## What is Tkinter
+
+Tkinter is a library in python used to make cool User Interfaces. What the user see on the screen to interact with is called a user interface. So here we will use this library (tkinter) to make it.
+
 ### Setting up the environment for Tkinter
 
 [Repl.it](https://repl.it) We will be using it for coding. This is awesome because you no need to install python on your machine. Just go to this link.
 
 To get started, go to https://repl.it/languages/Tkinter. Your coding environment will be ready in a few seconds!
 <img width="1440" alt="Screenshot 2020-09-18 at 5 39 06 PM" src="https://cloud-o8q46nkko.vercel.app/screenshot_2020-09-25_at_9.23.06_pm.png">
-
-## What is Tkinter
-
-Python offers multiple options for developing a GUI (Graphical User Interface). Out of all the GUI methods, Tkinter is the most commonly used method. It is used to make software and Graphical User interfaces for your python code.
 
 ## Code and explanation.
 
@@ -41,7 +41,21 @@ So to make the quote hub we need to import the library Tkinter.
 import tkinter as tk
 ```
 
-Import Tkinter means we are importing a python library which is Tkinter here. Also for ease, we imported Tkinter as tk so that we no need to repeat that big word Tkinter every time. Instead, we can use tk. Now we can start by making a window for that we need to write this code.
+Import Tkinter means we are importing a python library which is Tkinter here. Also for ease, we imported Tkinter as tk so that we no need to repeat that big word Tkinter every time. Instead, we can use tk. We also need another library called random. Lets import it.
+
+```python
+import random
+```
+
+This library as it spells is used for making random choices. Here we need to display the quotes in random so we need to import it. Now lets make a list of quotes.
+
+```python
+quotelist = ["Instead of wondering when your \nnext vacation is, maybe you \nshould set up a life you don’t \nneed to escape from.","Sometimes\n you win,\n sometimes \nyou learn.","Avoiding failure\n is to avoid \nprogress.","If the plan \ndoesn’t work, \nchange the plan,\n but never the \ngoal.","Creativity \nis \nintelligence \nhaving \nFun."]
+```
+
+We are declaring a variable here named quotelist and assigning a list of quotes to it.
+
+Now let's make a window for that we need to write this code.
 
 ```python
 window=tk.Tk()
@@ -72,13 +86,27 @@ window.config means we are configuring our window and setting up its bg which is
 tk.Label(window, font=("Helvetica", 60, "bold"),text="QUOTES HUB", bg="black", fg="white").pack()
 ```
 
-The Label function. It is used to display text on the window. The Label function take parameters such as font, text,background color(bg) ,font color(fg) .The first parameter you should give is the name of the window in which you need this text to be displayed. (.pack()) function packs the text at the center layout. Now let's make a button to move to a page where we see our first quote.
+The Label function. It is used to display text on the window. The Label function take parameters such as font, text,background color(bg) ,font color(fg) .The first parameter you should give is the name of the window in which you need this text to be displayed.
 
 ```python
-tk.Button(window,command=fun1,text="Get In",bg="aqua",fg="black",width=20).place(x=315,y=300)
+font=("Helvetica", 60, "bold")
 ```
 
-The Tkinter library consists of A Button function which is used to display a button on the window. The button function also takes many parameters such as text,bg,fg,width,height etc... The first parameter you should give is the window in which you need this button to be displayed. Place() function is used to place the element in the particular coordinate we need an example- button.place(x,y). The main thing here is the command parameter inside the button function this represents the action to take after clicking the button. We can make a function run when clicking on the button using command=the function name. We will be creating the function later.
+Here in this piece of code we are setting up the style of the text. font=("fontname", size of the font, font weight)
+
+(.pack()) function packs the text at the center layout. Now let's make a button to move to a page where we see our first quote.
+
+```python
+tk.Button(window,command=lambda:fun1(random.choice(quotelist)),text="Get In",bg="aqua",fg="black",width=20).place(x=315,y=300)
+```
+
+The Tkinter library consists of A Button function which is used to display a button on the window. The button function also takes many parameters such as text,bg,fg,width,height etc... The first parameter you should give is the window in which you need this button to be displayed. Place() function is used to place the element in the particular coordinate we need an example- button.place(x,y). The main thing here is the command parameter inside the button function
+
+```python
+command=lambda:fun1(random.choice(quotelist))
+```
+
+This represents the action to take after clicking the button. We can make a function run when clicking on the button using command= function. If you dont use Lambda here then the function will run immediately when you run the code. You dont want to go to the quote suddenly when you run the code right? . So inorder to prevent that we use lambda .Then comes the function you want to execute. Here we are calling a function fun1()and passing the parameter. Here the parameter is the random quote. We need to pick a random quote from our quote list we assigned above for that we use random function .choice (quotelist).
 
 ```python
 window.mainloop()
@@ -90,66 +118,57 @@ window.mainloop() tells Python to run the Tkinter event loop. ... mainloop() at 
 
 ```python
 import tkinter as tk
+import random
+
+quotelist = ["Instead of wondering when your \nnext vacation is, maybe you \nshould set up a life you don’t \nneed to escape from.","Sometimes\n you win,\n sometimes \nyou learn.","Avoiding failure\n is to avoid \nprogress.","If the plan \ndoesn’t work, \nchange the plan,\n but never the \ngoal.","Creativity \nis \nintelligence \nhaving \nFun."]
 window = tk.Tk()
 window.minsize(800, 560)
-window.title("Simple UI")
+window.title("Quotes Hub")
 window.config(bg="black")
-tk.Label(window, font=("Helvetica", 60, "bold"), text="QUOTES HUB", bg="black",fg="white").pack()
-tk.Button(window,command=fun1,text="Get In",bg="aqua",fg="black",width=20).place(x=315,y=300)
+tk.Label(window, font=("Helvetica", 60, "bold"),
+         text="QUOTES HUB", bg="black", fg="white").pack()
+tk.Button(window,command=lambda:fun1(random.choice(quotelist)),text="Get In",bg="aqua",fg="black",width=20).place(x=315,y=300)
 window.mainloop()
 ```
 
 As output, this will show an error that the function fun1 is not declared. So let us make the button work. You need to put this code above the window declaration then only it will work.
 
 ```python
-def fun1():
-  F1=tk.Frame(window,bg="light salmon",width=800,height=560).place(x=0,y=0)
-  tk.Label(F1,text="Creativity \nis \nintelligence \nhaving \nFun.",font=("Helvetica", 30, "bold"),bg="light salmon",fg="black").pack()
-  tk.Button(F1,command=fun2,text="Next",bg="aqua",fg="black",width=20).place(x=612,y=530)
+def fun1(quote):
+  F1=tk.Frame(window,bg="light salmon",width=800,height=560)
+  F1.place(x=0,y=0)
+  tk.Label(F1,text=quote,font=("Helvetica", 30, "bold"),bg="light salmon",fg="black").pack()
 ```
 
-In this function, we are showing up a new page in which we display a quote and a next button. As pages, we are using the Frame function. A-Frame widget is used to organize a group of widgets. It acts like a container that can be used to hold the other widgets. The rectangular areas of the screen are used to organize the widgets to the python application. Then in that frame, we display the quote at the center using the label function. Then we create a next button and give it a command fun2. Now let us create that function.
+In this function, we are showing up a new page in which we display a random quote . As page, we are using the Frame function. A-Frame widget is used to organize a group of widgets. It acts like a container that can be used to hold the other widgets. The rectangular areas of the screen are used to organize the widgets to the python application. Then in that frame, we display the quote at the center using the label function. We have passed the random quote to this function
 
 ```python
-def fun2():
-   F2=tk.Frame(window,bg="light salmon",width=800,height=560).place(x=0,y=0)
-   tk.Label(F2,text="If the plan \ndoesn’t work, \nchange the plan,\n but never the \ngoal.",font=("Helvetica", 30, "bold"),bg="light salmon",fg="black").place(x=200,y=100)
-   tk.Button(F2,command=fun3,text="Next",bg="aqua",fg="black",width=20).place(x=612,y=530)
+text=quote
 ```
 
-This function will be the next page with another quote. If you don't understand just go to the live demo and feel the button workflow [here](https://repl.it/@bezlin/graphics#main.py). Ok in this function same as before we are creating a frame and in it, we will displaying another quote and a next button. Like that we have created 5 pages. On the last page, you can avoid the next button.
+Here we given text as the quote passed from the button
 
-You need to create more functions according to how many pages you want that's it pretty cool.
+If you don't understand just go to the live demo and feel the button workflow [here](https://repl.it/@bezlin/graphics#main.py).
 
 #### Finally the code will look like this.
 
 ```python
 import tkinter as tk
-def fun1():
-  F1=tk.Frame(window,bg="light salmon",width=800,height=560).place(x=0,y=0)
-  tk.Label(F1,text="Creativity \nis \nintelligence \nhaving \nFun.",font=("Helvetica", 30, "bold"),bg="light salmon",fg="black").pack()
-  tk.Button(F1,command=fun2,text="Next",bg="aqua",fg="black",width=20).place(x=612,y=530)
-def fun2():
-  F2=tk.Frame(window,bg="light salmon",width=800,height=560).place(x=0,y=0)
-  tk.Label(F2,text="If the plan \ndoesn’t work, \nchange the plan,\n but never the \ngoal.",font=("Helvetica", 30, "bold"),bg="light salmon",fg="black").place(x=200,y=100)
-  tk.Button(F2,command=fun3,text="Next",bg="aqua",fg="black",width=20).place(x=612,y=530)
-def fun3():
-  F3=tk.Frame(window,bg="light salmon",width=800,height=560).place(x=0,y=0)
-  tk.Label(F3,text="Avoiding failure\n is to avoid \nprogress.",font=("Helvetica", 30, "bold"),bg="light salmon",fg="black").place(x=200,y=100)
-  tk.Button(F3,command=fun4,text="Next",bg="aqua",fg="black",width=20).place(x=612,y=530)
-def fun4():
-  F4=tk.Frame(window,bg="light salmon",width=800,height=560).place(x=0,y=0)
-  tk.Label(F4,text="Sometimes\n you win,\n sometimes \nyou learn.",font=("Helvetica", 30, "bold"),bg="light salmon",fg="black").place(x=240,y=100)
-  tk.Button(F4,command=fun5,text="Next",bg="aqua",fg="black",width=20).place(x=612,y=530)
-def fun5():
-  F5=tk.Frame(window,bg="light salmon",width=800,height=560).place(x=0,y=0)
-  tk.Label(F5,text="Instead of wondering when your \nnext vacation is, maybe you \nshould set up a life you don’t \nneed to escape from.",font=("Helvetica", 30, "bold"),bg="light salmon",fg="black").place(x=30,y=100)
+import random
+
+quotelist = ["Instead of wondering when your \nnext vacation is, maybe you \nshould set up a life you don’t \nneed to escape from.","Sometimes\n you win,\n sometimes \nyou learn.","Avoiding failure\n is to avoid \nprogress.","If the plan \ndoesn’t work, \nchange the plan,\n but never the \ngoal.","Creativity \nis \nintelligence \nhaving \nFun."]
+
+def fun1(quote):
+  F1=tk.Frame(window,bg="light salmon",width=800,height=560)
+  F1.place(x=0,y=0)
+  tk.Label(F1,text=quote,font=("Helvetica", 30, "bold"),bg="light salmon",fg="black").pack()
 window = tk.Tk()
 window.minsize(800, 560)
-window.title("Simple UI")
+window.title("Quotes Hub")
 window.config(bg="black")
-tk.Label(window, font=("Helvetica", 60, "bold"),text="QUOTES HUB", bg="black", fg="white").pack()
-tk.Button(window,command=fun1,text="Get In",bg="aqua",fg="black",width=20).place(x=315,y=300)
+tk.Label(window, font=("Helvetica", 60, "bold"),
+         text="QUOTES HUB", bg="black", fg="white").pack()
+tk.Button(window,command=lambda:fun1(random.choice(quotelist)),text="Get In",bg="aqua",fg="black",width=20).place(x=315,y=300)
 window.mainloop()
 
 ```
@@ -158,7 +177,7 @@ Its simple just go through the functions and workflow.
 
 ![ezgif com-gif-to-mp4](https://cloud-5m2nwfs8r.vercel.app/ezgif.com-video-to-gif-4.gif)
 
-## Step 4: Hacking time!
+## Hacking time!
 
 Now you know Tkinter a little bit. You should not stop here to learn more and master in UIs you need to practice a lot. The best way to learn it is to look at the world and think of an idea then try to make it.
 
@@ -169,11 +188,13 @@ Also if you are new to python take a look at [python](https://www.python.org/doc
 
 ### Softwares made using Tkinter by other hackers.
 
-[Anupriya Shaji](https://repl.it/@Anupriya567/qtshb#main.py)
+[Hariprasad Rajan](https://repl.it/@HariprasadR03/haroadas#main.py)
 
 [Kk Haridev](https://repl.it/@DandaThor/harri-kkkkk#main.py)
 
-[Bezlin Johnson](https://repl.it/@bezlin/graphics#main.py)
+[Bezlin Johnson](https://repl.it/@bezlin/trialtkinterpy#main.py)
+
+[Anupriya Shaji](https://repl.it/@Anupriya567/qtshb#main.py)
 
 ## Big platforms made using Tkinter
 
