@@ -1,5 +1,5 @@
-yarn add @hackclub/markdown
-# npm i @hackclub/markdown
+import fs from 'fs'
+import md from '@hackclub/markdown'
 
 # Hello!
 
