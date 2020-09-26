@@ -158,7 +158,7 @@ Its simple just go through the functions and workflow.
 
 ![ezgif com-gif-to-mp4](https://cloud-5m2nwfs8r.vercel.app/ezgif.com-video-to-gif-4.gif)
 
-## Step 4: Your Custom Part
+## Step 4: Hacking time!
 
 Now you know Tkinter a little bit. You should not stop here to learn more and master in UIs you need to practice a lot. The best way to learn it is to look at the world and think of an idea then try to make it.
 
