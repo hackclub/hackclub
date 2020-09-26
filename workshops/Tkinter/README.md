@@ -22,7 +22,7 @@ We will be using [Tkinter](https://docs.python.org/3/library/tk.html) python lib
 
 ## What is Tkinter
 
-Tkinter is a library in python used to make cool User Interfaces. What the user see on the screen to interact with is called a user interface. So here we will use this library (tkinter) to make it.
+Tkinter is a library in python used to make cool User Interfaces. What the user sees on the screen to interact with is called a user interface. So here we will use this library (Tkinter) to make it.
 
 ### Setting up the environment for Tkinter
 
@@ -41,19 +41,23 @@ So to make the quote hub we need to import the library Tkinter.
 import tkinter as tk
 ```
 
-Import Tkinter means we are importing a python library which is Tkinter here. Also for ease, we imported Tkinter as tk so that we no need to repeat that big word Tkinter every time. Instead, we can use tk. We also need another library called random. Lets import it.
+Import Tkinter means we are importing a python library which is Tkinter here. Also for ease, we imported Tkinter as tk so that we no need to repeat that big word Tkinter every time. Instead, we can use tk. We also need another library called random. Let's import it.
 
 ```python
 import random
 ```
 
-This library as it spells is used for making random choices. Here we need to display the quotes in random so we need to import it. Now lets make a list of quotes.
+This library as it spells is used for making random choices. Here we need to display the quotes random so we need to import it. Now let's make a list of quotes.
 
 ```python
-quotelist = ["Instead of wondering when your \nnext vacation is, maybe you \nshould set up a life you don’t \nneed to escape from.","Sometimes\n you win,\n sometimes \nyou learn.","Avoiding failure\n is to avoid \nprogress.","If the plan \ndoesn’t work, \nchange the plan,\n but never the \ngoal.","Creativity \nis \nintelligence \nhaving \nFun."]
+quotelist = ["Instead of wondering when your \nnext vacation is, maybe you \nshould set up a life you don’t \nneed to escape from.",
+"Sometimes\n you win,\n sometimes \nyou learn.",
+"Avoiding failure\n is to avoid \nprogress.",
+"If the plan \ndoesn’t work, \nchange the plan,\n but never the \ngoal.",
+"Creativity \nis \nintelligence \nhaving \nFun."]
 ```
 
-We are declaring a variable here named quotelist and assigning a list of quotes to it.
+We are declaring a variable here named quote list and assigning a list of quotes to it.
 
 Now let's make a window for that we need to write this code.
 
@@ -92,7 +96,7 @@ The Label function. It is used to display text on the window. The Label function
 font=("Helvetica", 60, "bold")
 ```
 
-Here in this piece of code we are setting up the style of the text. font=("fontname", size of the font, font weight)
+Here in this piece of code, we are setting up the style of the text. font=("font name", size of the font, font-weight)
 
 (.pack()) function packs the text at the center layout. Now let's make a button to move to a page where we see our first quote.
 
@@ -106,7 +110,7 @@ The Tkinter library consists of A Button function which is used to display a but
 command=lambda:fun1(random.choice(quotelist))
 ```
 
-This represents the action to take after clicking the button. We can make a function run when clicking on the button using command= function. If you dont use Lambda here then the function will run immediately when you run the code. You dont want to go to the quote suddenly when you run the code right? . So inorder to prevent that we use lambda .Then comes the function you want to execute. Here we are calling a function fun1()and passing the parameter. Here the parameter is the random quote. We need to pick a random quote from our quote list we assigned above for that we use random function .choice (quotelist).
+This represents the action to take after clicking the button. We can make a function run when clicking on the button using command= function. If you don't use Lambda here then the function will run immediately when you run the code. You don't want to go to the quote suddenly when you run the code right? So to prevent that we use lambda. Then comes the function you want to execute. Here we are calling a function fun1()and passing the parameter. Here the parameter is the random quote. We need to pick a random quote from our quote list we assigned above for that we use random function .choice (quotelist).
 
 ```python
 window.mainloop()
@@ -140,13 +144,13 @@ def fun1(quote):
   tk.Label(F1,text=quote,font=("Helvetica", 30, "bold"),bg="light salmon",fg="black").pack()
 ```
 
-In this function, we are showing up a new page in which we display a random quote . As page, we are using the Frame function. A-Frame widget is used to organize a group of widgets. It acts like a container that can be used to hold the other widgets. The rectangular areas of the screen are used to organize the widgets to the python application. Then in that frame, we display the quote at the center using the label function. We have passed the random quote to this function
+In this function, we are showing up a new page in which we display a random quote. As a page, we are using the Frame function. A-Frame widget is used to organize a group of widgets. It acts like a container that can be used to hold the other widgets. The rectangular areas of the screen are used to organize the widgets to the python application. Then in that frame, we display the quote at the center using the label function. We have passed the random quote to this function
 
 ```python
 text=quote
 ```
 
-Here we given text as the quote passed from the button
+Here we gave text as the quote passed from the button
 
 If you don't understand just go to the live demo and feel the button workflow [here](https://repl.it/@bezlin/graphics#main.py).
 
