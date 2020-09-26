@@ -207,4 +207,12 @@ No peaking, the solution is:
 )}
 ```
 
-### real people!!!!!!!
+### Polishing off our site ✨
+
+Hooray! You've made something awesome, let's make it epic!
+
+You may have noticed that we sometimes get bot or inactive users, we want people we can meet! Let's change this by filtering out users.
+
+How can we determine is someone is active? The easiest way is to check if they've posted on Scrapbook. Each user object has a field called `updatesCount`
+
+
