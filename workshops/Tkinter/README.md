@@ -6,7 +6,7 @@ author: "@bezlin6mechminerz"
 
 The workshop will look something like this.
 
-![ezgif.com-video-to-gif-3.gif](https://cloud-beibqb64y.vercel.app/ezgif.com-video-to-gif-3.gif)
+![ezgif.com-video-to-gif-3.gif](https://cloud-ilsfagjwp.vercel.app/ezgif.com-video-to-gif-5.gif)
 
 So we will be making a quotes hub which displays quotes.
 
