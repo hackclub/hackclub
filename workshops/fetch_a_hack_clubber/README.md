@@ -235,4 +235,8 @@ With great data, comes great oppourtinity! There's a lot we can do with this dat
 
 Not sure where to go, here a few examples of next steps:
 
-* 
+* Using the custom CSS from Scrapbook, [this version of the project](https://meet-hackclub.vercel.app) makes each profile more personal!
+* Want to get a specfic user? I've built a version that allows you to do that by appending their username to the URL, [find me here](https://meet-hackclub.vercel.app/sampoder). 
+* What more data could we get? We could get a post of their's from Scrapbook, like [I did here](https://meet-hackclub.vercel.app/post-ver)!
+
+Make something cool? Awesomeeee!!!! Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6/) in the Slack and tag me with [@sampoder](https://hackclub.slack.com/archives/DT08DHJKF/)!
