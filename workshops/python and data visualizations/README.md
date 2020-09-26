@@ -256,7 +256,8 @@ You must do that asap, you are missing out on a animated masterpiece.
     
     
    *Heavily personalize your graph (like I did with Chicken Little)!
-    \-Google code for different kinds of graphs (dot plot, pie charts, etc.)
+   
+   *Google code for different kinds of graphs (dot plot, pie charts, etc.)
     
    *[Make multiple different graphs (the set of four/set them up with figure](https://matplotlib.org/devdocs/gallery/subplots_axes_and_figures/subplots_demo.html).
     
