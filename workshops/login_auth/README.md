@@ -77,6 +77,7 @@ After clicking on that a new page will pop up and ask you for a name for your ap
 Then you will see some sort of JavaScript code, So don't worry about that, It is the code which contains some keys like API Key, Domain key which helps your Firebase project to connect with your webpage, and for that, you need to save this code or just copy/paste into the notes as it will require in coding part later.
 
 ![API keys](https://cloud-nsps2klza.vercel.app/9.png)
+
 Also add below line of code with the code above to integrate `firebase.js` with your webpage without any errors!
 
 ```javascript
