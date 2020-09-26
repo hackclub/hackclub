@@ -1,5 +1,4 @@
 ![Winnie the Poo dancing!](https://i.pinimg.com/originals/50/5a/0e/505a0e4591fc8052631bed84ac0de1ee.gif)
-
 <h1> Create basic graphs and data visualizations with python! </h1>
 
 You after you make your first data visualization^
@@ -16,7 +15,7 @@ When you get to the website you will see something like this...
 
 Click the middle one (Try JupyterLab)! 
 
- <iframe allowfullscreen width='852' height='480' scrolling='no' frameborder='0' style='border: none;' src='https://www.wevideo.com/embed/#1849169872' allowfullscreen></iframe>
+**Quick Introduction/tutorial for [Jupyter](https://www.wevideo.com/view/1849208046)!** 
 
 # Step One!
 
@@ -282,4 +281,3 @@ Check out:
 2.  Learning [Matplotlib](https://realpython.com/python-matplotlib-guide/)!
 
 3.  [Codeacademy](https://www.codecademy.com/learn/paths/visualize-data-with-python)!
-
