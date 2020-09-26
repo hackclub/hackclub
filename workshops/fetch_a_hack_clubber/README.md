@@ -103,10 +103,10 @@ Let's add a bit to our `getServerSideProps()` function:
 
 ```javascript
 export async function getServerSideProps() {
-  const users = await fetch(
+  let users = await fetch(
     "https://scrapbook.hackclub.com/api/users/"
   ).then((r) => r.json());
-  const user = users[Math.floor(Math.random() * users.length)];
+  let user = users[Math.floor(Math.random() * users.length)];
   console.log(user)
   return {
     props: { 'number': 1 },
@@ -120,7 +120,7 @@ Last thing, we need to give our page access to this data, we can do this by repl
 
 ```javascript
 export async function getServerSideProps(context) {
-  const users = await fetch(
+  let users = await fetch(
     "https://scrapbook.hackclub.com/api/users/"
   ).then((r) => r.json());
   let user = users[Math.floor(Math.random() * users.length)];
@@ -213,6 +213,26 @@ Hooray! You've made something awesome, let's make it epic!
 
 You may have noticed that we sometimes get bot or inactive users, we want people we can meet! Let's change this by filtering out users.
 
-How can we determine is someone is active? The easiest way is to check if they've posted on Scrapbook. Each user object has a field called `updatesCount`
+How can we determine is someone is active? The easiest way is to check if they've posted on Scrapbook. Each user object has a field called `updatesCount` that tells us how many posts they've made. 
 
+To filter in Javascript we can use `.filter`, with it we give it an array, some criteria and it'll return an array only with items that meet that criteria.
 
+In our case we want to add this (↓) code just below the line where we fetch our users
+
+```
+users = users.filter(u => u.updatesCount != 0)
+```
+
+Try reloading, we shouldn't get any more inactive people and bots!
+
+Our site is basically there! I hope your feeling proud because now it's time to take credit for the site :D
+
+If you scroll down you'll find `@yourname` replace that with your name!
+
+### Hacking time!
+
+With great data, comes great oppourtinity! There's a lot we can do with this data, so play around with it!
+
+Not sure where to go, here a few examples of next steps:
+
+* 
