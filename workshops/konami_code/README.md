@@ -12,7 +12,7 @@ If you don't know what they are, check out these cool easter eggs/konami codes o
 
 1. Try searching 'do a barrel roll' on google.
 
-2. Try inspecting [Max's Website](maxwofford.com) 🤨
+2. Try inspecting [Max's Website](https://maxwofford.com) 🤨
 
 3. Konami Code On [BuzzFeed](https://www.buzzfeed.com/) (Just press up, up, down, down, left, right, left, right, B, A and enter on the homepage).
 
