@@ -185,7 +185,7 @@ Its simple just go through the functions and workflow.
 
 Now you know Tkinter a little bit. You should not stop here to learn more and master in UIs you need to practice a lot. The best way to learn it is to look at the world and think of an idea then try to make it.
 
-## Lastly don't get stuck.
+Lastly don't get stuck.
 
 I am attaching the Tkinter documentation take a look at [Learn Tkinter](https://docs.python.org/3/library/tk.html).
 Also if you are new to python take a look at [python](https://www.python.org/doc/) documentation too
