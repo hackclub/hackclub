@@ -48,7 +48,7 @@ To help you out, I've prepared some [starter code](https://repl.it/@sampoder/fet
 
 Click `Run ➤` and you'll see what our interface is going to look like. Right now, it's just introducing me ([@sampoder](https://github.com/sampoder))
 
-<img src="https://cloud-486h0t7p5.vercel.app/screenshot_2020-09-24_at_10.49.25_pm.png" width="380" alt="Our starter project">
+<img src="https://cloud-486h0t7p5.vercel.app/screenshot_2020-09-24_at_10.49.25_pm.png" width="450" alt="Our starter project">
 
 Next, you're going to want to open `pages/index.js`, this is where we're going to be writing all of our code for the project
 Take a look at the code, the basic explanation is:
@@ -207,11 +207,17 @@ No peaking, the solution is:
 )}
 ```
 
+<img src="https://cloud-a1hqcjanz.vercel.app/ezgif-7-3455d319b9c1.gif" width="450" alt="It's working!">
+
 ### Polishing off our site ✨
 
 Hooray! You've made something awesome, let's make it epic!
 
-You may have noticed that we sometimes get bot or inactive users, we want people we can meet! Let's change this by filtering out users.
+You may have noticed that we sometimes get bot or inactive users, we want people we can meet! I mean we all love Orpheus, but they're not a real person and don't even get me started on `@wb_bot_a01a9mk4fqw`.
+
+<img src="https://cloud-39fyb55qc.vercel.app/screenshot_2020-09-26_at_5.58.05_pm.png" width="450" alt="It's working!">
+
+Let's change this by filtering out users.
 
 How can we determine is someone is active? The easiest way is to check if they've posted on Scrapbook. Each user object has a field called `updatesCount` that tells us how many posts they've made. 
 
