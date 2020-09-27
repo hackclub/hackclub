@@ -246,10 +246,11 @@ You must do that asap, you are missing out on a animated masterpiece.
 [Demo Code](https://gist.githubusercontent.com/datagy/a96789e1a6547cc25c234b6ebf7bf077/raw/25aa94e3a8de7a2a1250c07f74a7584467517721/covid-datagy1.py)
 Follow full workshop using that covid-19 data with  [Visualizing Covid-19 Data](https://towardsdatascience.com/visualizing-covid-19-data-beautifully-in-python-in-5-minutes-or-less-affc361b2c6a)
 By: Nic Piepenbreier!!!
-    
+
+#
 **Heavily personalize your graph (like I did with Chicken Little)!
     \-Google code for different kinds of graphs (dot plot, pie charts, etc.)**
-    
+#   
 **[Make multiple different kinds of graphs/visualizations](https://matplotlib.org/devdocs/gallery/subplots_axes_and_figures/subplots_demo.html).**
 Example: 
    ```python 
@@ -281,6 +282,8 @@ plt.show()
 #Source: https://matplotlib.org/gallery/shapes_and_collections/ellipse_demo.html
 ```
 **![](https://lh6.googleusercontent.com/v_Pj4spo28Zkbyxd_wIIUJ0anPs10QSlbOVbPXL0CcGPjVsSVxHJXMmZ4ddPYqf431rfLcu9gpUGirr4BzrJJmWFWO4I68D3kpe8CHRShTkXd-4Js6no1AIuk_EBpVam1VtPdgtRzNk)**
+#
+
 **Look up how to import [Google Trends](https://trends.google.com/trends/?geo=US) into your graph!**
 Demo Code: 
 ```python 
@@ -307,6 +310,8 @@ tiktok.plot(figsize=(14,6))
 plt.title('Interest in Tik Tok over time');
 ```
 **![](https://lh5.googleusercontent.com/Lt40VZV23B-ArP0MlydpuNZIc_k3-rUUFhJI15l0Db2KXHFSLuE4ErKvwmh6zI8GklP6A96Xy2w3JHPbAvB6RpFEzbqw2DmA04nlrkAFpjCr6qS9jCe1Lb8tLxik-cVyVHHbNS-R-HA)**
+#
+
 # Want to learn more?
 
 ![Dancing Brain](https://media1.giphy.com/media/l41m04gr7tRet7Uas/giphy.gif)
