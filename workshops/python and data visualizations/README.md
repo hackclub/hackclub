@@ -241,7 +241,8 @@ You must do that asap, you are missing out on a animated masterpiece.
 
 # Add On!
 
-*[Look up how to link in raw data from the web into your graphs](https://youtu.be/Ercd-Ip5PfQ).
+*[Look up how to link in raw data from the web into your graphs](https://youtu.be/Ercd-Ip5PfQ). 
+[Demo Code](file:///Users/mwillett/Downloads/REFERENCE_Intro%20Data%20Science%20(1).html)
 
 *Heavily personalize your graph (like I did with Chicken Little)!
 \-Google code for different kinds of graphs (dot plot, pie charts, etc.)
@@ -253,8 +254,6 @@ You must do that asap, you are missing out on a animated masterpiece.
 *Google!
 
 *Look up how to import [Google Trends](https://trends.google.com/trends/?geo=US) into your graph!
-
-**Check out/Follow along with [Visualizing Covid-19 Data](https://towardsdatascience.com/visualizing-covid-19-data-beautifully-in-python-in-5-minutes-or-less-affc361b2c6a), by: Nic Piepenbreier!!!**
 
 
 # Want to learn more?
