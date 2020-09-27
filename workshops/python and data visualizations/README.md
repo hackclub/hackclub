@@ -320,7 +320,7 @@ Need help adding the Google trends data? [Click here!](https://www.wevideo.com/v
 
 Check out: 
 
-1.  Learning [pandas](https://www.learnpython.org/en/Pandas_Basics](https://www.learnpython.org/en/Pandas_Basics)!
+1.  Learning [pandas](https://www.learnpython.org/en/Pandas_Basics)!
 
 2.  Learning [Matplotlib](https://realpython.com/python-matplotlib-guide/)!
 
