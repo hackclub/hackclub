@@ -30,6 +30,7 @@ For a visual understanding, here is the original image followed by an edited one
 ##### The boilerplate
 Head over to https://repl.it. Creating an account is of personal preference, be warned that you may lose your work if you don't have an account. Click on start coding and search for HTML, CSS, JS. Once you create a repl, you'll end up at this page.
 ![html boilerplate](https://cloud-5egibvgdv.vercel.app/image.png)
+
 As you can see, repl has already created the boilerplate code for your project. Let's take a quick look. 
 ```<!DOCTYPE html>```  is a declaration line that means we'll be coding in HTML 5.0. Following up are the ```<html>``` and ```<head>``` tags. Our html markup will be contained inside the two ```<html>``` tags. The ```<head>``` tag is where we will put some of our specifications which we normally don't want the end-user to see. The first ```<meta>``` tag tells the browser which character set to use. Here, it is set to UTF-8. The next ```<meta>``` tag specifies the page's dimensions and scaling. There is no problem in not understanding how these tags work, as they aren't very important. ```<title>``` is something that you should probably change. It is the text that is shown on the browser tab. Here it is set to repl.it. Coming next up in the ```<head>``` tag is ```<link>```. It tells the browser to load the CSS styling from the style.css file. It also informs the browser that it a css text file.
 
