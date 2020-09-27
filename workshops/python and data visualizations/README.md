@@ -309,6 +309,8 @@ tiktok.plot(figsize=(14,6))
 
 plt.title('Interest in Tik Tok over time');
 ```
+Need help adding the Google trends data? [Click here!](https://www.wevideo.com/view/1850050637)
+
 **![](https://lh5.googleusercontent.com/Lt40VZV23B-ArP0MlydpuNZIc_k3-rUUFhJI15l0Db2KXHFSLuE4ErKvwmh6zI8GklP6A96Xy2w3JHPbAvB6RpFEzbqw2DmA04nlrkAFpjCr6qS9jCe1Lb8tLxik-cVyVHHbNS-R-HA)**
 #
 
