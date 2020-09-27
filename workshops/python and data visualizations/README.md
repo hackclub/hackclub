@@ -241,21 +241,72 @@ You must do that asap, you are missing out on a animated masterpiece.
 
 # Add On!
 
-*[Look up how to link in raw data from the web into your graphs](https://youtu.be/Ercd-Ip5PfQ). 
-[Demo Code](file:///Users/mwillett/Downloads/REFERENCE_Intro%20Data%20Science%20(1).html)
+**[Look up how to link in raw data from the web into your graphs](https://youtu.be/Ercd-Ip5PfQ).**
 
-*Heavily personalize your graph (like I did with Chicken Little)!
-\-Google code for different kinds of graphs (dot plot, pie charts, etc.)
+[Demo Code](https://gist.githubusercontent.com/datagy/a96789e1a6547cc25c234b6ebf7bf077/raw/25aa94e3a8de7a2a1250c07f74a7584467517721/covid-datagy1.py)
+Follow full workshop using that covid-19 data with  [Visualizing Covid-19 Data](https://towardsdatascience.com/visualizing-covid-19-data-beautifully-in-python-in-5-minutes-or-less-affc361b2c6a)
+By: Nic Piepenbreier!!!
+    
+**Heavily personalize your graph (like I did with Chicken Little)!
+    \-Google code for different kinds of graphs (dot plot, pie charts, etc.)**
+    
+**[Make multiple different kinds of graphs/visualizations](https://matplotlib.org/devdocs/gallery/subplots_axes_and_figures/subplots_demo.html).**
+Example: 
+   ```python 
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.patches import Ellipse
 
-*[Make multiple different graphs (the set of four/set them up with figure](https://matplotlib.org/devdocs/gallery/subplots_axes_and_figures/subplots_demo.html).
+np.random.seed(19680801)
 
-*Continue to play around!
+NUM = 250
 
-*Google!
+ells = [Ellipse(xy=np.random.rand(2) * 10,
+                width=np.random.rand(), height=np.random.rand(),
+                angle=np.random.rand() * 360)
+        for i in range(NUM)]
 
-*Look up how to import [Google Trends](https://trends.google.com/trends/?geo=US) into your graph!
+fig, ax = plt.subplots(subplot_kw={'aspect': 'equal'})
+for e in ells:
+    ax.add_artist(e)
+    e.set_clip_box(ax.bbox)
+    e.set_alpha(np.random.rand())
+    e.set_facecolor(np.random.rand(3))
 
+ax.set_xlim(0, 10)
+ax.set_ylim(0, 10)
 
+plt.show()
+
+#Source: https://matplotlib.org/gallery/shapes_and_collections/ellipse_demo.html
+```
+**![](https://lh6.googleusercontent.com/v_Pj4spo28Zkbyxd_wIIUJ0anPs10QSlbOVbPXL0CcGPjVsSVxHJXMmZ4ddPYqf431rfLcu9gpUGirr4BzrJJmWFWO4I68D3kpe8CHRShTkXd-4Js6no1AIuk_EBpVam1VtPdgtRzNk)**
+**Look up how to import [Google Trends](https://trends.google.com/trends/?geo=US) into your graph!**
+Demo Code: 
+```python 
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np 
+import random
+
+tiktok=pd.read_csv('multiTimeline (7).csv', header=1)
+
+#for the csv file you need to download the graph off of google trends than uploaed it into jupyter notebook, than you copy the path and put it were multiTimeline (7).csv is. 
+
+cols = tiktok.columns 
+cols = [x.split()[0].lower() if len(x.split())>2 else x.lower() for x in cols]
+tiktok.columns=cols
+
+tiktok['week']= pd.to_datetime(tiktok['week'])
+tiktok = tiktok.replace('<1', 1)
+    
+tiktok.set_index('week', inplace=True)
+
+tiktok.plot(figsize=(14,6))
+
+plt.title('Interest in Tik Tok over time');
+```
+**![](https://lh5.googleusercontent.com/Lt40VZV23B-ArP0MlydpuNZIc_k3-rUUFhJI15l0Db2KXHFSLuE4ErKvwmh6zI8GklP6A96Xy2w3JHPbAvB6RpFEzbqw2DmA04nlrkAFpjCr6qS9jCe1Lb8tLxik-cVyVHHbNS-R-HA)**
 # Want to learn more?
 
 ![Dancing Brain](https://media1.giphy.com/media/l41m04gr7tRet7Uas/giphy.gif)
