@@ -163,7 +163,6 @@ This message just sends a message to discord with all the available commands. Yo
 
 Final Source Code
 ```js
-```js
 const Discord = require('discord.js')
 const client = new Discord.Client()
 const fs = require("fs");
