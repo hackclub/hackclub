@@ -2,6 +2,9 @@
 
 Everyone uses websites. Chances are, you're using a website right now. But how do websites get access to data that is constantly changing? The answer: HTTP requests. The [Requests](https://requests.readthedocs.io/en/master/) library in Python is an easy way to integrate your program with resources online. It provides a simple way to work with HTTP requests, which are a vital part of most large applications.
 
+![Demo](https://cloud-jimsoe1oj.vercel.app/screen-recording__online-video-cutter.com_.mp4)
+[See this in action](https://repl.it/@sohamb117/demo#main.py)
+
 
 ## What are HTTP Requests?
 
@@ -49,7 +52,7 @@ Click on "Get free API key" and create an account. You should see this:
 
 ![Key](https://cloud-ks0dqz7ba.vercel.app/image.png)
 
-There should be a key (I've hidden mine for security purposes) but that's the key you'll need to use for authentication.
+There should be a key (I've hidden mine for security purposes - yours should be where the purple box is) but that's the key you'll need to use for authentication.
 
 Now let's set up the key in Python. The Finnhub API wants the key passed in through the headers, which are ways to send additional information. The Requests library allows you pass headers into the web request, which is how we'll authenticate. Let's define the headers.
 
@@ -57,7 +60,8 @@ Now let's set up the key in Python. The Finnhub API wants the key passed in thro
 header = {'X-Finnhub-Token':'[TOKEN]'} 
 # Replace [TOKEN] with the token you got from Finnhub
 ```
-How does this code work?  The line creates a Python dictionary with an attribute `'X-Finnhub-Token'` and a value of your token . This JSON is saved as a variable, and later, we'll pass the variable into the request.
+How does this code work?  
+The line creates a Python dictionary with an attribute `'X-Finnhub-Token'` and a value of your token. This dictionary is saved as a variable, and later, we'll pass the variable into the request. When the server sees that your request has a token, it *authenticates* you, or lets you use the API.
 
 
 ## Making our First Request
@@ -71,12 +75,13 @@ Here we send our first request. Let's break down this line:
 ```python
 r = requests.get(f'https://finnhub.io/api/v1/quote?symbol=AAPL', headers = header)
 ```
-In this line, we are using `requests.get` to send a HTTP GET request to the API. We're passing an argument `symbol=AAPL` into the URL to tell the API what we want.  We'll be changing the value of the symbol argument later. The part `headers = header` tells the program to set the request headers to the header variable we set earlier, the variable that has our token. The value we get back from the request is saved in a variable `r`. 
+In this line, we are using `requests.get` to send a HTTP GET request to the API. We're passing an argument `symbol=AAPL` into the URL to tell the API what stock we want a value from. For this demo, we'll use `AAPL`. 
+The part `headers = header` tells the program to set the request headers to the header variable we set earlier, the variable that has our token. The value we get back from the request is saved in a variable `r`. 
 
 
 ## Working with the Response
 
-Now that we've made the request, how do we handle it? The `requests.get` method returns a `Response` object. This is a special object defined in the Requests library that has certain attributes we can use to get data. We can get the content of the request using `r.content`. So let's add this line:
+Now that we've made the request, how do we handle it? The `requests.get` method returns a `Response` object. This is a special object of a class that's defined in the Requests library. That has certain attributes we can use to get data. We can get the content of the request using `r.content`. So let's add this line:
 
 ```python
 print(r.content)
@@ -112,13 +117,13 @@ Let's take a look at that string so we can understand it. It has attributes `c`,
 
 ## Parsing the JSON
 
-While this value is useful, we can't do much with it in our code. In order to use it, we'll need to use `json.loads()` to parse this string into a JSON. Let's add this line to our code:
+While this value is what we want, we can't do much with it in our code. In order to use it, we'll need to use `json.loads()` to parse this string into a Python dictionary, which we *can* use. Let's add this line to our code:
 ```python
 rjson = json.loads(r.content)
 ```
-This line uses `json.loads()` to parse the string value of json.content into a Python dictionary. Now, let's display this value to the user.
+This line uses the `json.loads()` method to parse the string value of `r.content` into a Python dictionary. Now, let's display this value to the user.
 
-## Wrapping It Up
+## Displaying the Value
 
 The value we want to display is the `c` value, or the current value of the stock. We can do that by printing `rjson['c']`. Let's add a line that does this to the bottom of our code:
 ```python
@@ -138,6 +143,12 @@ It should print this:
 ```
 AAPL - [VALUE (This will change)]
 ```
+If all goes well, you should see the stock value printed to your terminal. Congratulations, you've made your first request! 
+
+
+# Why this Matters
+
+Webrequests are a *vital* part of almost every large application or product. So often, you'll need to make requests to fetch data online. Now that you've learned how to make a webrequest with Python, you'll be prepared to use Requests when making any large-scale project. They can also be really helpful for automation. Imagine downloading large numbers of files with from the internet. With requests, that's a possibility. Requests opens the door to many possibilities, a whole Internet full of data to access and utilize.
 
 
 ## Hacking and Further Reading
