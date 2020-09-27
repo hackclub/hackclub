@@ -1,4 +1,4 @@
-# Hey! Create a discord bot that allows you to save custom messages!
+# Create a discord bot that allows you to save custom messages!
 
 This workshop requires that you know how to set up a hello world discord bot! It is REALLY easy. If you do not know how to create a this look at [this link](https://workshops.hackclub.com/hello_bot/).
 
