@@ -6,16 +6,14 @@ You after you make your first data visualization^
 
 *Follow along with this workshop to gain some data science skills! You will use python to create basic graphs and visualizations with real data. You can hand draw a graph anytime you want, but why not learn how to code one! You will learn about matplotlib, pandas, and numpy, so you can create any graph or vizualizaiton you dream of!*
 
+Get started by going to [Try Jupyter](https://jupyter.org/try). When you get to the website you will see something like this...
 
-**What will you need:**
-Go to [Try Jupyter](https://jupyter.org/try).
-When you get to the website you will see something like this...
 
 **![Showing Homepage of Jupyter](https://lh5.googleusercontent.com/kf8WU2xC639Ogql75pwjVJFsHLkL1Jc39FNmU985vWokqKD7IsnbpUYYgYTn1ke_RzrsH4E3zELEMEAGhdUFwghXyNX75iWV8kwH_v4ADJETTzO-5IsHcijdSwtwf3gbBbC994tc0FA)**
 
 Click the middle one (Try JupyterLab)! 
 
-**Quick Introduction/tutorial for [Jupyter](https://www.wevideo.com/view/1849208046)!** 
+**Never used Jupyter? Here's a quick introduction/tutorial to [Jupyter](https://www.wevideo.com/view/1849208046)!** 
 
 # Step One!
 
@@ -52,7 +50,7 @@ y=[y*2 for y in range (100)]
 plt.plot(x,y)
 
 ```
-This code segment will create the ranges on our x and y axis and plt.plot will plot the points we want! In this example there are no specific points being plot though, we are just making a basic linear function. 
+This code segment will create the ranges on our x and y axis and `plt.plot` will plot the points we want! In this example there are no specific points being plot though, we are just making a basic linear function. 
 
 ```python
 #showing graph
@@ -60,32 +58,32 @@ plt.show()
 ```
 This line will show the graph and points we plotted, basically giving the user an output. 
 
-*plt.show() --> shows the graph output.*
-*plt.plot(x,y) --> plots your points.*
+*`plt.show()` --> shows the graph output.*
+*`plt.plot(x,y)` --> plots your points.*
 
 **You should get something that looks like this...**
 **![](https://lh6.googleusercontent.com/ANl3lVAPXZfLS8CDBbqIv3Pu8zYpzp5kqXoqBwa4RsDg0g-B0g3x_YnssB2ddfbSh1chvWTnWkvJKFZpuxOcfcQ3aT1vbxxoA3NX2LCY1KnIUXtfNIjeFuMAVW0vQ1RvhgijbcilX9c)**
 
 
-
 # Now Let's Create A Simple Bar Graph!
 ```python 
-    import pandas as pd
-    import matplotlib.pyplot as plt
-    import random
+import pandas as pd
+import matplotlib.pyplot as plt
+import random
 ```
-This code above imports the libraries again. Notice that we import another library called "random" this will allow for a random number to be chosen each time we have a y value which you can see later in our code!
+This code above imports the libraries again. Notice that we import another library called `random` this will allow for a random number to be chosen each time we have a `y` value which you can see later in our code!
 
-   ```python
-  x=['Tacos','Burritos','Churros']
+```python
+x=['Tacos','Burritos','Churros']
 y=[random.randint(0,30), random.randint(0,90),random.randint(0,10)]
-  plt.bar(x,y)
+plt.bar(x,y)
 plt.show()
-   ```
- 
- The code above names each of the bars (defines x and y lines), creates random values of Y using    ```random.randint()```, plots our points, and shows the graph!
+``` 
+
+The code above names each of the bars (defines x and y lines), creates random values of Y using    ```random.randint()```, plots our points, and shows the graph!
 
 Example: 
+
 **![](https://lh6.googleusercontent.com/RWl3JKBqGZxuteF8vZtZQVri3TCxyRkKOG1zPygUGMQhNdJ3iBPqfIutg0oxXp-KpVUdKZUCYqMhT5i7yftGEasuvCuxWdac-RbAG5GK9zVXAGJ-EqrRnYaWzPxMafSjpBtdeTgZppc)**
 
 # Let's Make It A Little More Complicated!
@@ -97,10 +95,11 @@ We are going to make a more personalized graph using three different functions
 I am sure you all have already guessed it hehe, Import your libraries!!!!!!!!!!
 
 ![Kermit the Frog Dancing!](https://media.tenor.com/images/614ba4f8eab2c798cd83d931c4b0f4b1/tenor.gif)
-   ```python
-    import matplotlib.pyplot as plt 
-    import numpy as np
-  ```
+
+ ```python
+import matplotlib.pyplot as plt 
+import numpy as np
+```
 *Notice that we will be using numpy this time! :)*
 
 ### Hold up...what does matplotlib even do?
@@ -126,79 +125,73 @@ To create the graph we want to make we will be using the matplotlib library! It 
 ## Step Two!
 
 The code below creates the skeleton of a graph, plots points, and shows output!
-  ```python
-  #creates figure (graph skeleton)
- fig,ax= plt.subplots()
- #plots points
- ax.plot([1,2,3,4],[1,4,2,3])
+```python
+#creates figure (graph skeleton)
+fig,ax= plt.subplots()
+#plots points
+ax.plot([1,2,3,4],[1,4,2,3])
 plt.show()
-   ```
+```
      
-     
-
 *Something new you may have noticed is the use of fig, or aka [figure](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.figure.html)*.
 
 In the code above, and anytime you want to create a graph you will be using fig.
 
 -   For example in our code so far we have used…
-
-  ```python
-  fig,ax= plt.subplots()
-  ```
+```python
+fig,ax= plt.subplots()
+```
      
 -   This created a figure with a single axes.
 - Here are a few different ways you can use fig…
- ```python
-    fig=plt.figure() 
-    #creates empty graph returns with num. figues
-
-    fig,ax =plt.subplots(2,2) #creates 2 graph figues
-   ```
-
+```python
+fig=plt.figure() 
+#creates empty graph returns with num. figues
+fig,ax =plt.subplots(2,2) #creates 2 graph figues
+```
 Check it out in your Jupyter Editor!
-
 
 *Can you tell I have a strange fascination with random things dancing hehe*
 
-
 ## Step Three!
+
 *Make sure libraries are uploaded, look back @ Step Two if needed*
 
 Set up spacing of your x and y axis...
  ```python
-    x=np.linspace(0,2,100)
+ x=np.linspace(0,2,100)
  ```
 
 \*Make sure your libraries are uploaded!
 
-
 ## Step Four!
+
 Create a figure! Scroll back up to see how to write that code...
 Here is a hint 
 
-   
-    fig,ax= plt._____()
-
+`fig,ax= plt._____()`
 
 *Still stuck? Where the underscores are you should put*
 
-    fig,ax= plt.subplots()
+`fig,ax= plt.subplots()`
 
 ## Step Five!
+
 Now we can plot some lines, in this part customize it however you want!
 
- This example is going to have 3 basic functions (linear, squared, and cubed) but you can fancy yours up any way you want!
+This example is going to have 3 basic functions (linear, squared, and cubed) but you can fancy yours up any way you want!
+
 ```python 
-    ax.plot(x,x,label='Sleep')
-    ax.plot(x,x**2,label='Worry if sky is falling...')
-    ax.plot(x,x**3,label='Be a icon')
+ax.plot(x,x,label='Sleep')
+ax.plot(x,x**2,label='Worry if sky is falling...')
+ax.plot(x,x**3,label='Be a icon')
 ```
 
 *Label= will be the name of your line*
 
 ![These People Went a Little Crazy With the Label Maker - Label Everything |  Guff](https://cdn.guff.com/site_1/media/20000/19031/thumbnails/fb1_6a99eaed05ac9d5f956c3e32.jpg)
 
-*ax.plot will plot your points/lines*
+*`ax.plot` will plot your points/lines*
 
 ## Step Six!
 
@@ -207,42 +200,38 @@ Finishing touches!
 ![Bibitty Bobittiy Boo!](https://45.media.tumblr.com/tumblr_lz56maEBTj1qdmlfso1_250.gif)
 
    ```python 
-    ax.set_xlabel('Time') #adds X axis label
-    ax.set_ylabel('Years')#add Y axis label
-    ax.set_title("Chicken Little's Plot") #adds a title
-    ax.legend() #adds a key of the graph
+   ax.set_xlabel('Time') #adds X axis label
+   ax.set_ylabel('Years')#add Y axis label
+   ax.set_title("Chicken Little's Plot") #adds a title
+   ax.legend() #adds a key of the graph
    ```
 
 You could possibly get someting that looks like this...
 **![](https://lh3.googleusercontent.com/x7NafZjPviM76xz95YQKc4L8kW4zC3B5_zp4wE7Qv4FKWVX-6ZoB_4qtT4WbA1er9soAcMHZeBNgJgLMttFnr1hiXOkWxLQpBXI3uQQyRd7wOElTYLWZtczqgTvmWvmdOEzmnqMTECg)**
 
-# 
 
 *If you are having any issues make sure to check your top right corner to check if the "kernel" is on and is set to Python 3*
 **![](https://lh6.googleusercontent.com/PJUhbx9vkJDp955g7Azwv_j_EyXGC-_YA9NSED74DU1XbTSxuDUrPfXN4S1b3TY-cjtqaSwUJv6Cnat6Zqko3WQBZ9oSZwncGlOL9EckE6zTwOLVuJ3F9CKQrO8INgII254BJiNcazc)**
-
-# 
+ 
 
 # If you are having any issues try copying the example code!
+
 **All Example Code:**
 
    ```python 
    import pandas as pd
-
-    import matplotlib.pyplot as plt
-
-    import numpy as np
-
- 
-    x=np.linspace(0,2,100)
-    fig,ax= plt.subplots()
-    ax.plot(x,x,label='Sleep')
-    ax.plot(x,x**2,label='Worry if sky is falling...')
-    ax.plot(x,x**3,label='Be a icon')
-    ax.set_xlabel('Time') #adds X axis label
-    ax.set_ylabel('Years')#add Y axis lable
-    ax.set_title("Chicken Little's Plot") #adds a title
-    ax.legend() #adds a key of the graph
+   import matplotlib.pyplot as plt
+   import numpy as np
+   
+   x=np.linspace(0,2,100)
+   fig,ax= plt.subplots()
+   ax.plot(x,x,label='Sleep')
+   ax.plot(x,x**2,label='Worry if sky is falling...')
+   ax.plot(x,x**3,label='Be a icon')
+   ax.set_xlabel('Time') #adds X axis label
+   ax.set_ylabel('Years')#add Y axis lable
+   ax.set_title("Chicken Little's Plot") #adds a title
+   ax.legend() #adds a key of the graph
 ```
 \*\*PS. If you have never watched [Chicken Little](https://youtu.be/PPuk2JQgMkU)
 
@@ -253,23 +242,20 @@ You must do that asap, you are missing out on a animated masterpiece.
 # Add On!
 
 *[Look up how to link in raw data from the web into your graphs](https://youtu.be/Ercd-Ip5PfQ).
-    
-    
-   *Heavily personalize your graph (like I did with Chicken Little)!
-   
-   *Google code for different kinds of graphs (dot plot, pie charts, etc.)
-    
-   *[Make multiple different graphs (the set of four/set them up with figure](https://matplotlib.org/devdocs/gallery/subplots_axes_and_figures/subplots_demo.html).
-    
-   *Continue to play around!
-    
-   *Google!
 
-   *Look up how to import [Google Trends](https://trends.google.com/trends/?geo=US) into your graph!
+*Heavily personalize your graph (like I did with Chicken Little)!
+\-Google code for different kinds of graphs (dot plot, pie charts, etc.)
 
+*[Make multiple different graphs (the set of four/set them up with figure](https://matplotlib.org/devdocs/gallery/subplots_axes_and_figures/subplots_demo.html).
 
-**Check out/Follow along with [Visualizing Covid-19 Data](https://towardsdatascience.com/visualizing-covid-19-data-beautifully-in-python-in-5-minutes-or-less-affc361b2c6a)
-By: Nic Piepenbreier!!!**
+*Continue to play around!
+
+*Google!
+
+*Look up how to import [Google Trends](https://trends.google.com/trends/?geo=US) into your graph!
+
+**Check out/Follow along with [Visualizing Covid-19 Data](https://towardsdatascience.com/visualizing-covid-19-data-beautifully-in-python-in-5-minutes-or-less-affc361b2c6a), by: Nic Piepenbreier!!!**
+
 
 # Want to learn more?
 
