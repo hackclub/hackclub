@@ -454,7 +454,7 @@ function logout(){
 
 ```
 
-Yayyy🎊! you Finished with the coding part!
+Yayyy 🎊! You are finished with the coding part! 
 
 Try logging in with the EMAIL and PASSWORD you recorded in Firebase. If it worked you should be all set!
 
