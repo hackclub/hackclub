@@ -2,7 +2,9 @@
 
 Everyone uses websites. Chances are, you're using a website right now. But how do websites get access to data that is constantly changing? The answer: HTTP requests. The [Requests](https://requests.readthedocs.io/en/master/) library in Python is an easy way to integrate your program with resources online. It provides a simple way to work with HTTP requests, which are a vital part of most large applications.
 
-![Demo](https://cloud-jimsoe1oj.vercel.app/screen-recording__online-video-cutter.com_.mp4)
+![DEMO](https://cloud-2v062st9k.vercel.app/screen-recording-online-video-cu.gif)
+
+
 [See this in action](https://repl.it/@sohamb117/demo#main.py)
 
 
@@ -15,13 +17,16 @@ HTTP requests are a type of request a program can send to a server to get data b
 I'll be working in [repl.it](https://repl.it) for this example, but you can use any IDE you want. If you're not using repl.it or you already know how to set this up, skip to "Importing the Libraries."
 
 So let's head over to [https://repl.it](https://repl.it) and make an account or log in. You can do this by pressing one of these buttons: 
+
 ![LogIn](https://cloud-1rkrfmgde.vercel.app/image.png)
 
 Now that you've hopefully made an account and signed in, you should be given a page listing all your repls. Let's make a new repl with the + icon in the corner: 
+
 ![Plus](https://cloud-pz6t16r1v.vercel.app/image.png)
 
 Okay, let's make this repl use Python and give it a cool and imaginative name: 
-![ReplSetUp](https://cloud-pz6t16r1v.vercel.app/image.png)
+
+![ReplSetUp](https://cloud-8ialvbwjj.vercel.app/image.png)
 
 And now we should have a workspace where we can code in Python. Let's move on to actually writing the code.
 
