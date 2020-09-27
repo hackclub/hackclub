@@ -4,7 +4,7 @@ description: 'A web drumpad/beat maker in HTML/CSS & JQuery to see how cool web 
 author: '@emmanuel39hanks'
 ---
 
-# Creating a DrumPad/Beat Maker in HTML/CSS & JQuery
+# Creating a DrumPad/Beat Maker in HTML, CSS & JQuery
 
 ![Beat Maker Preview](https://i.ibb.co/r0JLpWB/Annotation-2020-09-20-200719.png)
 
@@ -219,7 +219,7 @@ So far so good we are now going to add colors and make hovering effects, unactiv
 ```
 
 ![Preview](https://i.ibb.co/LpYQY6N/asdasdasdasdasdasd.png)
-And finally we are done with our CSS it now looks good and feels good but when you click on the pads, they are clickable but we have no sound, what we need to do is now write our JavaScript/jQuery code that will do what we want when we click on our pads.
+And finally we are done with our CSS, it now looks good and feels good but when you click on the buttons, they are clickable but we have no sound, what we need to do is now write our JavaScript/jQuery code that will get us sound.
 
 Navigate to the `index.html` file. Then, just before the end of your `<body>` tag, import your `script.js` file that will be loaded when our document loads:
 
@@ -363,7 +363,7 @@ Once you're done making this, how about sharing it in the Slack ship channel and
 - HTML Docs (https://www.w3schools.com/html/)
 - CSS Docs (https://www.w3schools.com/css/)
 - JavaScript Docs (https://www.w3schools.com/js/)
-- 
+- Audio Object (https://www.w3schools.com/JSREF/dom_obj_audio.asp)
 ## Inspiration
 
 To finish off, I'd like to leave you with some amazing customized Drum Pad Machines/Beat Makers by programmers out their.
