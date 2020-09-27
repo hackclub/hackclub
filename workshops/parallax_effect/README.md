@@ -8,7 +8,7 @@ author: '@giridhar7632'
 **using vanilla javaScript**
 
 
-One of the most popular effects of the modern web experience is the **parallax effect**. There are many javaScript libraries available out there for creating parallax effect. But we are going to use vanilla javascript to make one. Then get started and follow along!
+One of the most popular effects of the modern web experience is the **parallax effect**. We will be building basic-starter parallax effect 
 You should have some beginner-intermediate knowledge about HTML, CSS and some javaScript.
 
 We are going to make something like this
@@ -17,7 +17,6 @@ We are going to make something like this
 
 Here's the [live demo](https://total-parallax.giridharhackclu.repl.co/), and [source code](https://repl.it/@Giridharhackclu/total-parallax#index.html)
 
-# Getting Started
 
 ## Parallax
 
@@ -26,7 +25,7 @@ We will actually experience this effect while scrolling a webpage. It's called P
 
 The technique is popular in many places including video games, where it’s usually seen in the layered backgrounds.
 
-But what exactly makes the illusion? :neutral_face:<br>
+But what exactly makes the illusion?<br>
 As you know, objects at farther distances moves with slower speeds than the nearer ones. As you scroll or do something to trigger the effect, you feel the illusion as the elements moves with different speeds.
 
 > **Note:** Parallax scrolling does not always work on mobile devices smartphones. However, you can use media queries to turn off the effect on mobile devices.
@@ -39,35 +38,36 @@ We can see how the parallax scrolling works in this example [here](https://codep
 
 ## Advantages of Parallax Effect
 
-The world is changing very fast, isn't it? If you want to make your website amazing, it's not enough to show static elements. You have to amaze the visitor and make them want to explore your site, otherwise they can leave fast. You have to show them some cool things and visual suprises, but not too time taking. Parallax effect makes it possible. Moving elements on scrolling or on moving mouse will make them some what interested.
+The world is changing very fast. If you want to make your website amazing, it's not enough to show static elements. You have to amaze the visitor and make them want to explore your site, otherwise they can leave fast. You have to show them some cool things and visual suprises, but not too time taking. Parallax effect makes it possible. Moving elements on scrolling or on moving mouse will make them some what interested.
 You can create something nice! using parallax effect of your choice.
 
-## Creating the Parallax Effect
+## Getting started
 
 Practically a parallax is composed of more than one layer in parallel, moving along on scroll at different speeds, giving us the feel that they're at different distances.
 
 ### Setup
 
-[Repl.it](https://repl.it) is an online code editor. It's similar to Google Docs, but has some important features that make it much better for typing code than a regular text editor.
+We are going to use [Repl.it](https://repl.it) for making this project.
+
+> Repl.it is an online code editor. It's similar to Google Docs, but has some important features that make it much better for typing code than a regular text editor.
+
 Fork this repl and explore ! [here](https://repl.it/@Giridharhackclu/parallax-starter#index.html).
 
 It contains three `div` elements with classes `layer l1`, `layer l2` and `layer l3` added with some basic styles. Go ahead!  use your creativity and customise the styles.
 
 <a href="https://repl.it/@Giridharhackclu/parallax-starter#index.html"><img src="https://cloud-6z92hbh0u.vercel.app/screenshot_2020-09-22_171732.png" style="{border-radius: 3px;}" alt="#index.html"></a>
 
-For adding parallax effect, The thing we have to do is select the layer and change it's speed while scrolling. That's it! :sweat_smile:
+For adding parallax effect, The thing we have to do is select the layer and change it's speed while scrolling. That's it!
 
 Let's start doing it!
 
-### Get going..
 
 Go to [script.js](https://repl.it/@Giridharhackclu/parallax-starter#script.js) and add the following `function`.<br>
 
 ```javascript
-const parallax = (layer, distance, speed) => {
+function parallax(layer, distance, speed){
   const item = document.querySelector(layer)
-
-  item.style.transform = `translateY(${-distance*speed}px)`
+  item.style.transform = "translateY(" + -distance*speed + "px)"
 }
 ```
 This <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">`function`</a> has three arguments `layer`- the layer you want to add parallax, `distance`- how much we scroll and `speed`- the required speed change. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.<br>
@@ -77,8 +77,8 @@ The positive value into `translateY()` translates downwards and negative value t
 
 <a href="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png"><img src="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png" alt="translateY() example" height="250px" width="auto"/></a>
 
-## Event Listener
-Now we are going to call this function while scrolling. So add an [event listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event">`scroll`</a> . The function given as argument gets executed.<br>
+## addEventListener
+Now we are going to call this `parallax` function while scrolling. So add an [event listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event">`scroll`</a> . The function given as argument to event listener gets executed.<br>
 
 ```javascript
 document.addEventListener('scroll', () => {
@@ -124,10 +124,9 @@ Add the following `function` , which causes horizontal motion.<br>
 With the following `function` `hrparallax` the layer gets translated along x-direction as you scroll vertically.
 
 ```javascript
-const hrparallax = (layer, distance, speed) => {
+function hrparallax(layer, distance, speed){
   const item = document.querySelector(layer)
-
-  item.style.transform = `translateX(${-distance*speed}px)`
+  item.style.transform = "translateX(" + -distance*speed + "px)"
 }
 ```
 The positive value translates rightwards and negative value translates leftwards. Discover more about `translateX( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateX).
@@ -145,35 +144,28 @@ For rightward movement the `speed` will be negative and for leftward movement it
 
 Then your final page will look something [like this](https://total-parallax.giridharhackclu.repl.co/).
 
-![Final REsult](https://cloud-1z03ndewk.vercel.app/ezgif.com-gif-maker__2_.gif)
+![Final Result](https://cloud-1z03ndewk.vercel.app/ezgif.com-gif-maker__2_.gif)
 
-That's it! You added both `vertical-parallax` and `horizontal-parallax` effects. Well done.:wink:
+That's it! You added both `vertical-parallax` and `horizontal-parallax` effects. Well done.
 
 ## Hacking
 
 Your creativity is not restricted to only this example. You can create different parallax effects. 
 1) In this example, I focused only on scrolling vertically. You can use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX">`scrollX`</a> for creating parallax while scrolling horizontally.
 1) You can use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate">`transform: translate(X,Y);`</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d">`transform: translate3d(X,Y,Z);`</a> for creating different effects.
-1) You can also create a parallax on `mousemove` using <a href="https://developer.mozilla.org/en-US/docs/Web/API/UIEvent/pageX">`pageX`</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/UIEvent/pageY">`pageY`</a>.
 
-You can add parallax-effect on your websites for creating best of the user experience and display your content more interactively.
+You can add parallax-effect to your websites for creating better user experience and display your content more interactively.
+
 Make use of creativity and create different parallax effects. Share it with me on slack [@giridhar](https://hackclub.slack.com/team/U013E6KE9UJ), I'd love to here from you!
 
 ## Inspiration
 
 These are some projects made using parallax-effect. 
 
-* **Multilayer Parallax** : [Firewatch](http://www.firewatchgame.com/)- they created really awesome hero page using multilayer parallax.
+* Example-1 [demo](https://exampleone.giridharhackclu.repl.co/). [source code](https://repl.it/@Giridharhackclu/exampleone#index.html)
+* Example-2 [demo](https://exampletwo.giridharhackclu.repl.co/). [source code](https://repl.it/@Giridharhackclu/exampletwo#index.html)
+* Example-3 [demo](https://horizontal-parallax-effect.giridharhackclu.repl.co/). [source code](https://repl.it/@Giridharhackclu/horizontal-parallax-effect#index.html)
 
-* **Horizontal parallax** : Best example of horizontal parallax :upside_down_face: 
-  * Check it [here](https://codepen.io/danbhala/full/GJGQad). [Source code](https://codepen.io/danbhala/pen/GJGQad).
-  * You can create a gallery using horizontal parallax effect. Check it [here](https://codepen.io/pehaa/full/zYxbxQg). [Source code](https://codepen.io/pehaa/pen/zYxbxQg).
-  
-* **Parallax on Mouse Move** : Not only on `scroll`, Parallax effect can also be seen on `mousemove`.
-  * You can find mousemove parallax effect in [GitHub erroe page](https://github.com/404). You can see the castle and all things behind the octacat move as you move your mouse pointer. :octocat:
-  * Check this awesome effect [here](https://codepen.io/ge1doot/full/oXWepr). [Source code](https://codepen.io/ge1doot/pen/oXWepr)
-  * I created this one for demonstrating parallax on mousemove. You can check it [here](https://horizontal-parallax-effect.giridharhackclu.repl.co/). [Source code](https://repl.it/@Giridharhackclu/horizontal-parallax-effect).
-  
 Check this article for awesome next-level parallax examples - [article](https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html) 
   
 Hope you love this workshop! :v:
