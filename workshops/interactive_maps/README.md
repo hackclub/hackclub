@@ -40,7 +40,7 @@ Here the ```<head>``` tag ends, giving way to the body tag.  ```<body>``` is whe
 As we can see from the final website image, our site will have two parts, the first part which houses the buttons, and the second part, which houses the actual map. Let's get on with writing the code for the buttons. 
 
 We can use HTML default buttons, but they look like they should've been abandoned along with Windows 1999, so let's spice things up a little and design some buttons of our own. Above the ```<script>``` tag and below the opening ```<body>``` tag, add this.
-```
+```html
     <div class='first' style="margin-left:auto;margin-right:auto;">
       <a onmouseover="changeImage('ocean')" class="button pulse">Ocean</a>
       <a onmouseover="changeImage('beach')" class="button pulse">Beach</a>
@@ -50,14 +50,14 @@ We can use HTML default buttons, but they look like they should've been abandone
     </div>
 ```
 Going through the code, we find a ```<div>```. Divs are a way of grouping multiple obects into one. Divs also have various styling properties. This div has two attributes, class and style. Class is just a way to apply similar styles to multiple objects in CSS. The second attribute is style. It's a way of directly styling an element inside HTML. Margin-left and Margin-left sets the margins of the div. Here, to auto. Read more about margins at https://www.w3schools.com/css/css_margin.asp. Inside the Div, we have 5 ```<a>``` tags. We will tweak these tags to create the buttons, although some other tags can be used for this too. All these buttons share the same classes -> button & pulse. the other attribute, onmouseover, does exactly what it means. It calls a javascript function when the mouse is over that particular element. Right now if you run the markup, it'd be a total mess. So let's add the rest of it. Immediatly under the closing ```</div>``` tag, add 
-```
+```html
 <img id="map" src="https://imgur.com/6MXYopz.png" onmouseover="changeImage('normal')">
 ```
 This creates an image with the ID set as map and with its source at that specific url. The ID is basically a way of naming elements. Now when the webpage is rendered, it will probably show the buttons and the map image, but the buttons would look awful and the map would be too big. Let's fix that up.
 
 ##### The CSS Styling
 Syling in CSS is pretty easy. In its most basic, it's just an element followed by curly braces. The actual styling goes inside the braces. It's like so, 
-```
+```css
 elementTagName{ /* Write your styling in here */ }
 ```
 Now other than the basic, there are some other methods too.
@@ -66,11 +66,11 @@ Now other than the basic, there are some other methods too.
 - ```#idName{}``` applies the styling to the specific id.
 
 There are also **selectors**. Using selectors, we can apply some style to an element while some condition is true. It goes like this,
-```
+```css
 elementTagName:selectorName{}
 ```
 The :hover selector applies a style to an element when the mouse hovers over it. There are several other selectors too. Now, let's add our custom CSS. Open the CSS document from the left pane and paste this to it.
-```
+```css
 *{
   overflow: hidden;
   margin-top: 2px;
@@ -161,25 +161,25 @@ You will probably recognize everything except the actual styles to be applied an
 
 ##### The Javascript Part
 Finally! The functionality to our interactive map. These is where we use functions. Functions are reusable blocks of code that are callable from our HTML document. There are different types of functions in javascript, here we'll be using the most basic one. A function is written like this,
-```
+```js
 function myFunctionName(parameter){
       //some code here
 }
 ```
 Each function starts with the function keyword. This is followed by the function's name. After this come's the parameters. Parameters are variable values that we can use inside the function. These are specified when the function is being called. Parameters are optional. For example, here is a function that adds two numbers. It has two parameters.
-```
+```js
 function addNumbers(firstNum, secondNum){
     console.log(firstNum + secondNum)
 }
 ```
 And here is a function without a parameter. It simply prints out 'hello world'.
-```
+```js
 function sayHello(){
     console.log('Hello World!')
 }
 ```
 Now that you have a basic understanding of how functions work, head over into your script.js file and add this in.
-```
+```js
 var map = document.getElementById('map');
 function changeImage(location){
     if (location == 'ocean'){
@@ -206,7 +206,7 @@ function changeImage(location){
 }
 ```
 This snippet declares a variable named map, which corresponds to the map element in our html file. Then it creates a function named changeImage() with the parameter 'location'. When we call this function from our html file with specific values like 'ocean' or 'residential', (These values passed into parameters are called arguments.) they call on the actual function from the JS file. Inside the function, is an IF -ELSE IF statement. It does exactly what it means. If the location argument is 'beach', set the map's src attribute to the beach highlighted image, and so on. The syntax is
-```
+```js
 if (condition) {
     Do something;
 }
