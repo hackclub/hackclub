@@ -1,5 +1,5 @@
 ---
-name: Creating a DrumPad/Beat Maker in HTML, CSS & JQuery'
+name: 'Creating a DrumPad/Beat Maker in HTML, CSS & JQuery'
 description: 'A web drumpad/beat maker in HTML/CSS & JQuery to see how cool web dev is!'
 author: '@emmanuel39hanks'
 ---
