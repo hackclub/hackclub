@@ -26,12 +26,14 @@ In case you don't know either of those, don't worry. We'll go through each line 
 ### 3 - Designing the image 
 Any suitable image will work, but I have chosen an animated isometric map. The image was of the JPG format, but I removed the background to get a png image. Then from that one image, I selected specific areas and created 5 different images, each with a different area highlighted in red.
 For a visual understanding, here is the original image followed by an edited one.
+
 ![image 1](https://cloud-fyde5ir0a.vercel.app/image.png)
 ![image 2](https://cloud-jmd1dy3k8.vercel.app/image.png)
 
 ### 4 - Coding it up
 ##### The boilerplate
 Head over to https://repl.it. Creating an account is of personal preference, be warned that you may lose your work if you don't have an account. Click on start coding and search for HTML, CSS, JS. Once you create a repl, you'll end up at this page.
+
 ![html boilerplate](https://cloud-5egibvgdv.vercel.app/image.png)
 
 As you can see, repl has already created the boilerplate code for your project. Let's take a quick look. 
@@ -238,6 +240,7 @@ else {
 }
 ```
 Now you probably wouldn't be knowing about prompt. Prompt is a function that allows us to take in user input. If you run this code in your Javascript-only repl, you'll get what I mean. Now let's dive into the code. It creates a variable named pass which gets user data. It then checks **if** the pass is 'abcd'. If the pass is abcd, it logs out that the password is accepted. **Else**, it logs out that access is denied. A qiock word about prompt. Prompt will appear different when you're using it with html. Here's a look.
+
 ![prompt in html/js](https://cloud-i7mb1y4jx.vercel.app/1243.jpg)
 
 Finally, the last If statement. This one checks **if** a condition is true, **else if** that condition is not true, it does something different, **else** it'll do something different. Here's a quick snippet. Be sure to run all these snippets so that you can see it live in-action.
