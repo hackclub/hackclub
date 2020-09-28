@@ -9,6 +9,7 @@ By the end of this tutorial, you will learn to use functions and IF-ELSE stateme
 
 - Demo - https://interactive-maps.jeswinsunsi.repl.co/
 - Final code - https://repl.it/@JeswinSunsi/Interactive-Maps#index.html
+
 ![gif demo](https://cloud-fmga8dmlt.vercel.app/gif_one.gif)
 #### 1 - Prerequisites
 - Basic understanding of functions 
