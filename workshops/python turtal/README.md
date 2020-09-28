@@ -10,8 +10,7 @@ author: '@YashKalbande'
 
 ## Introduction
 
-Turtle graphics is a Python feature like a drawing board, which lets us command a turtle to draw all over it. It is a popular way for introducing programming to kids. Virtual turtles can be programmed to move around the screen. The turtle draws lines as it moves. The "turtle" could look like the turtle animal, an arrow, or be invisibile. The user can write turtle programs that draw beautiful shapes and learn to program at the same time.The original Turtle software was developed by Wally Feurzig and Seymour Papert in 1966.<br/>
-
+Turtle graphics is a Python feature like a drawing board, which lets us command a turtle to draw all over it. It is a popular way of introducing programming to kids. Virtual turtles can be programmed to move around the screen. The turtle draws lines as it moves. The "turtle" could look like the turtle animal, an arrow, or be invisible. The user can write turtle programs that draw beautiful shapes and learn to program at the same time. The original Turtle software was developed by Wally Feurzig and Seymour Papert in 1966.<br/>
 ![](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
 
 [link to demo](https://repl.it/@YashKalbande/RainbowBenzene#main.py)
@@ -66,8 +65,7 @@ The instructions in your program tell the "turtle" how to move. The turtle draws
 
 With these seven steps, the turtle draws a square. The `from turtle import *` is an instruction needed at the beginning of all of your turtle programs. It imports the turtle module so you can do the turtle instructions.
 
-There are many instructions like left() and forward(). These instructions are called functions. This tutorial explains many of the functions in the turtle module. When you learn more of these functions, you will be able to draw many different shapes and beautiful pictures!
-
+There are many instructions like left() and forward(). These instructions are called functions. This tutorial explains many of the functions in the turtle module. When you learn more about these functions, you will be able to draw many different shapes and beautiful pictures!
 
 ## Turtle Motion
 
@@ -77,7 +75,7 @@ The turtle's position is two numbers: the X coordinate and Y coordinate.
 
 ### forward(*distance*)
 
-The forward() function moves the turtle *distance* number of steps in the current direction. If the pen is down (see pendown() and penup()) a line will be drawn as the turtle moves forward. If *distance* is a negative number, the turtle will move backwards.
+The forward() function moves the turtle *distance* a number of steps in the current direction. If the pen is down (see pendown() and penup()) a line will be drawn as the turtle moves forward. If *distance* is a negative number, the turtle will move backward.
 
 ### backward(*distance*)
 
