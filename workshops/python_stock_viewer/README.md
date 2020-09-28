@@ -66,6 +66,7 @@ header = {'X-Finnhub-Token':'[TOKEN]'}
 # Replace [TOKEN] with the token you got from Finnhub
 ```
 How does this code work?  
+
 The line creates a Python dictionary with an attribute `'X-Finnhub-Token'` and a value of your token. This dictionary is saved as a variable, and later, we'll pass the variable into the request. When the server sees that your request has a token, it *authenticates* you, or lets you use the API.
 
 
