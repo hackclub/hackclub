@@ -1,6 +1,6 @@
 ---
 name: 'Parallax Effect'
-description: 'Creating greater user experience on web using vanilla javascript'
+description: 'Creating greater user experience on web using javascript'
 author: '@giridhar7632'
 ---
 
