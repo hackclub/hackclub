@@ -5,7 +5,7 @@ Everyone uses websites. Chances are, you're using a website right now. But how d
 ![DEMO](https://cloud-2v062st9k.vercel.app/screen-recording-online-video-cu.gif)
 
 
-[See this in action](https://repl.it/@sohamb117/demo#main.py)
+[See this in action](https://repl.it/@sohamb117/demo2)
 
 
 ## What are HTTP Requests?
@@ -213,4 +213,4 @@ Here are some things to read to learn more about what we did here:
 * https://www.howtogeek.com/343877/what-is-an-api/
 
 
-[See this in action](https://cloud-k8zl09ofw.vercel.app/zoom_1.mp4)
+[Workshop Demo Video](https://cloud-k8zl09ofw.vercel.app/zoom_1.mp4)
