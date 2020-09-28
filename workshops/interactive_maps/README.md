@@ -1,6 +1,8 @@
-| Name      | Description |Author|
-| :----: | :----: | :----: |
-| Interactive Maps Using JS | Learn JS and HTML while making a fun interactive map | @LonaDotExe |
+---
+name: 'Interactive Maps'
+description: 'Learn JS and HTML while making a fun interactive map'
+author: '@LonaDotExe'
+---
 
 # Making an interactive map using Javascript 
 By the end of this tutorial, you will learn to use functions and IF-ELSE statements in nothing but Vanilla JS to create some really good-looking interactive maps. This workshop will also teach you the basics of HTML and CSS. As a bonus, read till the end for a fun programming fact.
