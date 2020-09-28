@@ -9,7 +9,7 @@ author: '@giridhar7632'
 
 
 One of the most popular effects of the modern web experience is the **parallax effect**. We will be building basic-starter parallax effect 
-You should have some beginner-intermediate knowledge about HTML, CSS and some javaScript.
+To understand this workshop you will need to be familiar with HTML, CSS and Javascript.
 
 We are going to make something like this
 
