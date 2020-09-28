@@ -25,7 +25,8 @@ We will actually experience this effect while scrolling a webpage. It's called P
 
 The technique is popular in many places including video games, where it’s usually seen in the layered backgrounds.
 
-But what exactly makes the illusion?<br>
+But what exactly makes the illusion?
+
 As you know, objects at farther distances moves with slower speeds than the nearer ones. As you scroll or do something to trigger the effect, you feel the illusion as the elements moves with different speeds.
 
 > **Note:** Parallax scrolling does not always work on mobile devices smartphones. However, you can use media queries to turn off the effect on mobile devices.
