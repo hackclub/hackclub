@@ -11,7 +11,7 @@ By the end of this tutorial, you will learn to use functions and IF-ELSE stateme
 - Final code - https://repl.it/@JeswinSunsi/Interactive-Maps#index.html
 
 ![gif demo](https://cloud-fmga8dmlt.vercel.app/gif_one.gif)
-#### 1 - Prerequisites
+### 1 - Prerequisites
 - Basic understanding of functions 
 - Amateur knowledge of HTML and CSS
 
