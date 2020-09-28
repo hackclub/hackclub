@@ -38,8 +38,7 @@ As you can see, repl has already created the boilerplate code for your project. 
 
 Here the ```<head>``` tag ends, giving way to the body tag.  ```<body>``` is where we write the markup that the viewer will see. Repl.it has already created a ```<script>``` tag here that imports the JS code. Now that we have finished with understanding the boilerplate, let's start writing some of our own code.
 ##### The HTML Markup
-[Insert static image of the website here]
-As we can see from the final website image, our site will have two parts, the first part which houses the buttons, and the second part, which houses the actual map. Let's get on with writing the code for the buttons. 
+As we can see from the final website gif, our site will have two parts, the first part which houses the buttons, and the second part, which houses the actual map. Let's get on with writing the code for the buttons. 
 
 We can use HTML default buttons, but they look like they should've been abandoned along with Windows 1999, so let's spice things up a little and design some buttons of our own. Above the ```<script>``` tag and below the opening ```<body>``` tag, add this.
 ```html
@@ -180,7 +179,7 @@ function sayHello(){
     console.log('Hello World!')
 }
 ```
-Now that you have a basic understanding of how functions work, head over into your script.js file and add this in.
+These can now be called from our HTML file as addNumbers(someNumber, someNumber) and sayHello(). Now that you have a basic understanding of how functions work, head over into your script.js file and add this in.
 ```js
 var map = document.getElementById('map');
 function changeImage(location){
@@ -219,6 +218,41 @@ else {
     Do something totally different;
 }
 ```
+There are three basic If statements in Javascript. The normal If statement, the If - Else statement, and the If - Else If - Else statement. Not sure what that means? Let's go through some examples.
+```js
+var name = 'Shane';
+if (name == 'Shane'){
+  console.log('Hello Shane')
+}
+```
+This snippet shows a basic If statement. It first declares a variable called name which has the value of shane. Then the If statement proceeds to check out if the name is Shane, and if yes, it logs out 'Hello Shane'. Note that nothing happens if the name is not set to Shane. To try this for yourself, create a seperate repl with the language set to Javascript only. Paste that snippet and tweak the values. Also, it's time to talk about the equal to symbols. Why only one equal to at the first and two equal to-s at the bottom? This is because one equal to set's the value of the left hand side to the right hand side and two equal to-s compare both the values. Here, we have used an equal to and set the value of name to Shane. Then we have used two equal to-s to check **if** the name and Shane are both the same.
+Now, time for the next snippet. This one shows a basic If-Else statement.
+```js
+var pass = prompt('Enter your passcode: ');
+if (pass == 'abcd'){
+  console.log('Password Accepted');
+}
+else {
+  console.log('Access Denied');
+}
+```
+Now you probably wouldn't be knowing about prompt. Prompt is a function that allows us to take in user input. If you run this code in your Javascript-only repl, you'll get what I mean. Now let's dive into the code. It creates a variable named pass which gets user data. It then checks **if** the pass is 'abcd'. If the pass is abcd, it logs out that the password is accepted. **Else**, it logs out that access is denied. A qiock word about prompt. Prompt will appear different when you're using it with html. Here's a look.
+![prompt in html/js](https://cloud-i7mb1y4jx.vercel.app/1243.jpg)
+
+Finally, the last If statement. This one checks **if** a condition is true, **else if** that condition is not true, it does something different, **else** it'll do something different. Here's a quick snippet. Be sure to run all these snippets so that you can see it live in-action.
+```js
+var name = prompt('Enter your name: ');
+if (name == 'Shane'){
+  console.log('Hello Shane');
+}
+else if (name == 'Leah'){
+  console.log('Hello Leah')
+}
+else {
+  console.log('Hello!');
+}
+```
+Since you already know about If statements and If - Else statements, this one would be a no-brainer. It asks the user for a name, **if** the name is Shane, it logs out Hello Shane, **else if** the name is Leah, it logs out Hello Leah, **else** it simply logs out Hello!.
 ### Conclusion
 And just like that, you have gone through the basics of HTML/CSS and a bit of JS to create your own interactive map. Now it's up to you to add in a bit of your sparkle and tweak it.
 ##### Hacking it
@@ -226,7 +260,7 @@ And just like that, you have gone through the basics of HTML/CSS and a bit of JS
 - Tweak the buttons and add new styles to them
 - Maybe add in a bit of music? The possibilities are endless
 ##### Debugging
-If you have followed the tutorial word by word, the end result would come out as expected. Else if you have some trouble in some part, feel free to check up n the project's final code at the repl. You can also compare your code with the final source code by visiting https://text-compare.com/.
+If you have followed the tutorial word by word, the end result would come out as expected. Else if you have some trouble in some part, feel free to check up the project's final code at the repl. You can also compare your code with the final source code by visiting https://text-compare.com/.
 ### A fun fact
 The term 'patching' and 'patches', in software development, came from the early days when punch card code was the norm. To fix an error in the punch card, developers used to patch up the hole with a fabric. 
 And that's it for his workshop, Happy coding!
