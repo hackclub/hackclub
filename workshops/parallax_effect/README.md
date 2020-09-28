@@ -9,7 +9,7 @@ author: '@giridhar7632'
 
 
 One of the most popular effects of the modern web experience is the **parallax effect**. We will be building basic-starter parallax effect 
-You should have some beginner-intermediate knowledge about HTML, CSS and some javaScript.
+To understand this workshop you will need to be familiar with HTML, CSS and Javascript.
 
 We are going to make something like this
 
@@ -25,7 +25,8 @@ We will actually experience this effect while scrolling a webpage. It's called P
 
 The technique is popular in many places including video games, where it’s usually seen in the layered backgrounds.
 
-But what exactly makes the illusion?<br>
+But what exactly makes the illusion?
+
 As you know, objects at farther distances moves with slower speeds than the nearer ones. As you scroll or do something to trigger the effect, you feel the illusion as the elements moves with different speeds.
 
 > **Note:** Parallax scrolling does not always work on mobile devices smartphones. However, you can use media queries to turn off the effect on mobile devices.
