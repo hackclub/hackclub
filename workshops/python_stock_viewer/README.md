@@ -151,6 +151,44 @@ AAPL - [VALUE (This will change)]
 ```
 If all goes well, you should see the stock value printed to your terminal. Congratulations, you've made your first request! 
 
+## Taking an Input
+
+This is cool and all, but if you want to get a certain value, it's cumbersome to have to change the code. Let's add functionality to take an input from the user. In Python, we use the `input()` method to do this. Let's add this line to our code, just underneath the imports.
+
+```python
+line = input("Give me a stock symbol?")
+```
+
+This line asks the user for the input and prints out the string `Give me a stock symbol` to to the terminal to tell the user what to do. It saves the value the user enters to the variable `line`.
+But even if we ask the user for a value, it's useless unless we use it. Let's change the line 
+
+```python
+r = requests.get(f'https://finnhub.io/api/v1/quote?symbol=AAPL', headers = header)
+``` 
+
+to 
+
+```python
+r = requests.get(f'https://finnhub.io/api/v1/quote?symbol={line}', headers = header)
+``` 
+
+You'll notice that we have a tag `{line}` in the URL now. Python will format the URL string by passing in the value of the variable `line` into the corresponding tag, in this case, `{line}`. This means that the user's input is passed into the webrequest, and we get the value for the symbol the user inputs.
+
+Your final code should look like this:
+```python
+import requests
+import json
+
+line = input("Give me a stock symbol?")
+header = {'X-Finnhub-Token':'bte5t0f48v6t6gcu8epg'}
+r = requests.get(f'https://finnhub.io/api/v1/quote?symbol={line}', headers = header)
+rcontent = (r.content)
+rjson = json.loads(rcontent)
+print(line,rjson['c'], sep = " - ")
+```
+
+Run your code and see what happens. It should prompt you for a symbol and give you the value of that stock.
+
 
 # Why this Matters
 
@@ -163,7 +201,7 @@ Now that we've figured out how to work with requests, how do we expand on this? 
 
 Maybe write a program that will request these values for every stock symbol in a [file](https://repl.it/@sohamb117/demo1)?
 
-Or let the user [input](https://repl.it/@sohamb117/demo2) the stock symbol?
+Or let the user [input](https://repl.it/@sohamb117/demo1-1#main.py) the stock symbols into the file?
 
 Or write a program to [sort](https://repl.it/@sohamb117/demo3) the stocks by value?
 
