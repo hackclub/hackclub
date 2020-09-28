@@ -239,7 +239,7 @@ else {
   console.log('Access Denied');
 }
 ```
-Now you probably wouldn't be knowing about prompt. Prompt is a function that allows us to take in user input. If you run this code in your Javascript-only repl, you'll get what I mean. Now let's dive into the code. It creates a variable named pass which gets user data. It then checks **if** the pass is 'abcd'. If the pass is abcd, it logs out that the password is accepted. **Else**, it logs out that access is denied. A qiock word about prompt. Prompt will appear different when you're using it with html. Here's a look.
+Now you probably wouldn't be knowing about prompt. Prompt is a function that allows us to take in user input. If you run this code in your Javascript-only repl, you'll get what I mean. Now let's dive into the code. It creates a variable named pass which gets user data. It then checks **if** the pass is 'abcd'. If the pass is abcd, it logs out that the password is accepted. **Else**, it logs out that access is denied. A quick word about prompt, prompt will appear different when you're using it with html. Here's a look.
 
 ![prompt in html/js](https://cloud-i7mb1y4jx.vercel.app/1243.jpg)
 
