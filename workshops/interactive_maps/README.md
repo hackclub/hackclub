@@ -259,6 +259,15 @@ else {
 Since you already know about If statements and If - Else statements, this one would be a no-brainer. It asks the user for a name, **if** the name is Shane, it logs out Hello Shane, **else if** the name is Leah, it logs out Hello Leah, **else** it simply logs out Hello!.
 ### Conclusion
 And just like that, you have gone through the basics of HTML/CSS and a bit of JS to create your own interactive map. Now it's up to you to add in a bit of your sparkle and tweak it.
+- Orginal Demo - https://interactive-maps.jeswinsunsi.repl.co/
+  - Source Code - https://repl.it/@JeswinSunsi/Interactive-Maps#index.html
+- With continents - https://interactivemaps2.jeswinsunsi.repl.co
+  - Source Code - https://repl.it/@JeswinSunsi/Interactivemaps2
+- Another use, with a 1 - 10 multiplication table - https://interactivemaps3.jeswinsunsi.repl.co
+  - Source Code - https://repl.it/@JeswinSunsi/Interactivemaps3
+
+![multiplication table](https://cloud-66xb1ygia.vercel.app/multiplication.gif)
+
 ##### Hacking it
 - Try doing the same thing with another image, maybe the inside of a room, maybe a world map with hoverable buttons which highlight different countries
 - Tweak the buttons and add new styles to them
