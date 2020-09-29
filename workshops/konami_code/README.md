@@ -1,14 +1,14 @@
 ---
 name: 'Konami Code'
-description: 'Implement a konami code on a website'
+description: 'Implement a Konami Code on a website'
 author: '@faisalsayed10'
 ---
 
 # Konami Code
 
-You may have heard about movie Easter Eggs or video game Easter Eggs before, but have you ever heard about website Easter Eggs? The internet is filled with copious amounts of weird and wonderful hidden features! I bet you have played the popular game GTA, right? GTA too had konami codes but they were called 'cheat codes'. 
+You may have heard about movie Easter Eggs or video game Easter Eggs before, but have you ever heard about website Easter Eggs? The internet is filled with copious amounts of weird and wonderful hidden features!
 
-If you don't know what they are, check out these cool easter eggs/konami codes on the internet:
+If you don't know what they are, check out these cool easter eggs/Konami Codes on the internet:
 
 1. Try searching 'do a barrel roll' on google.
 
@@ -18,27 +18,25 @@ If you don't know what they are, check out these cool easter eggs/konami codes o
 
 4. In the Firefox browser bar, type "about:mozilla" or "about:robots" to see the secrets of Mozilla.
 
-Well, by now, you must have known what a konami code is. How about we build our own konami code?
+Well, by now, you must have known what a Konami Code is. How about we build our own Konami Code?
 
-It will look something like this after someone types the konami code:
+It will look something like this after someone types the Konami Code:
 
-[![Image](https://cloud-5apj3kt1e.vercel.app/image.png)](https://konami-code.faisalsayed1.repl.co/)
+[![Image](https://cloud-5apj3kt1e.vercel.app/image.png)](https://Konami-code.faisalsayed1.repl.co/)
 
-Here's the [live demo](https://konami-code.faisalsayed1.repl.co/)  
+Here's the [live demo](https://Konami-code.faisalsayed1.repl.co/)  
 Here's the [source code](https://repl.it/@FaisalSayed1/Konami-Code)
 
 Live demo: 
-![Image](https://cloud-95l2730mf.vercel.app/konamigif.gif)
+![Image](https://cloud-95l2730mf.vercel.app/Konamigif.gif)
 
 ## Part 1: Prerequisites
 
 You should have a beginner understanding of:
 
-- HTML
-- CSS
-- JavaScript
-
-Also for this workshop, we will need a library called 'confetti.js'. 
+ ["HTML", "CSS", "JavaScript"]
+ 
+ You should also know the basics of 'Arrays'. Also for this workshop, we will need a library called 'confetti.js'. 
 
 Download it by going [here](https://cloud-72a7nfmm7.vercel.app/index.min.js). Right click and select 'save as'.
 
@@ -62,21 +60,16 @@ Import the confetti.js (`index.min.js`) file which you downloaded on the left si
 
 ### 1) HTML
 
-Let's start writing the HTML code required in the `index.html` file. First, we'll import the required JavaScript files.
+Let's start writing the HTML code required in the `index.html` file. First, we'll import the required JavaScript libraries/files.
 
 Inside the `<head>` tag, we'll import the [`anime.js`](https://animejs.com/) library. Copy the code given below.
-
 ```html
 <script src="https://cutt.ly/anime_js"></script>
 ```
-
-
 Also link the `index.min.js` file to our HTML inside the `<head>` tag.
-
 ```html
 <script src="index.min.js"></script>
 ```
-
 The code so far:
 
 ```html
@@ -109,7 +102,7 @@ Next, we'll add some basic HTML code inside of our `<body>` tag.
 
 **Note:** Make sure the `<script>` tag, which is in your body, is just above the closing `</body>` tag and whatever code you write in the `<body>` should be above that `<script>` tag or else it will throw you errors.
 
-**Explanation:** We are adding a canvas element which will be later used for the confetti. Then there is also a `secret-div`, it will be initially hidden but when someone types the konami code, we'll make it visible.
+**Explanation:** We are adding a canvas element which will be later used for the confetti. Then there is also a `secret-div` which will be hidden but when someone types the Konami Code, we'll make it visible.
 
 We are done with our HTML and here is our final code:
 
@@ -154,9 +147,8 @@ body {
 }
 
 .secret-div {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
   text-align: center;
+  padding-top: 10rem;
   display: none;
 }
 
@@ -182,13 +174,13 @@ const text = document.querySelector(".text");
 const secretDiv = document.querySelector('.secret-div');
 ```
 
-**Explanation:** We linked the `<h1>` and also the `secret-div` tags to the two variables `text` and `secretDiv` respectively.
+**Explanation:** We linked the `<h1>` and also the `secret-div` to the two variables `text` and `secretDiv` respectively using `const`.
 
 **What is `querySelector()`?** The `querySelector()` method returns the first element that matches a specified CSS class(s) in the document.
 
 Learn more about [query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
 
-Now we will declare two arrays. The first array will contain the keys pressed by the user and the second array will contain the keys which will be the Konami Code.
+Now we will declare two arrays. The first array will contain all the keys pressed by the user and the second array will contain the keys which will be the Konami Code.
 
 ```js
 const keys = [];
@@ -219,7 +211,7 @@ The `max` attribute specifies the The number of props(confetti) to be rendered.
 
 The `ConfettiGenerator` contains a `render()` method and when it is called, we will be able to see confetti on our page.
 
-For more information on these attributes, [check here](https://github.com/Agezao/confetti-js/).
+For more information on these attributes, check [here](https://github.com/Agezao/confetti-js/).
 
 Your code so far:
 ```js
@@ -307,6 +299,9 @@ if (keys.length > secretCode.length) {
 **Explanation:** Just like `Array.push()` there is also a method `Array.shift()` which removes the first element from an array! Here we implement the code such that, whenever the `keys` array's length exceeds the `secretCode` array's length, we remove its first element. So, in that way, the number of keys stored in our array is fixed.
 
 Try console logging the `keys` array now (inside the function) and you'll get a better understanding of the above code.
+
+Learn more about [`Array.push`](https://www.w3schools.com/jsref/jsref_push.asp).  
+Learn more about [`Array.shift`](https://www.w3schools.com/jsref/jsref_shift.asp).
 
 And now, the time has come! We will compare both the arrays and whenever `keys === secretCode` we will do some magic!
 
@@ -435,6 +430,8 @@ window.addEventListener('keyup', keysDetector)
 
 And we have built our own Easter Egg for our website!
 
+Try to type the Konami Code which you have specified on the website and see the magic!
+
 ![Image](https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif)
 
 ## Part 4: The End
@@ -460,13 +457,13 @@ Check out these crazy examples!
 
 Check out what other hackclubbers have built!
 
--
+- [Work In Progress]
 
--
+- [Work In Progress]
 
--
+- [Work In Progress]
 
--
+- [Work In Progress]
 
 Now that you have finished building it, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
 
