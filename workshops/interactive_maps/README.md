@@ -1,11 +1,11 @@
 ---
 name: 'Interactive Maps'
 description: 'Learn JS and HTML while making a fun interactive map'
-author: '@LonaDotExe'
+author: 'JeswinSunsi'
 ---
 
 # Making an interactive map using Javascript 
-By the end of this tutorial, you will learn to use functions and IF-ELSE statements in nothing but Vanilla JS to create some really good-looking interactive maps. This workshop will also teach you the basics of HTML and CSS. As a bonus, read till the end for a fun programming fact.
+By the end of this tutorial, you will learn to use functions and if-else statements in nothing but Vanilla JS to create some really good-looking interactive maps. This workshop will also teach you the basics of HTML and CSS. As a bonus, read till the end for a fun programming fact.
 
 - Demo - https://interactive-maps.jeswinsunsi.repl.co/
 - Final code - https://repl.it/@JeswinSunsi/Interactive-Maps#index.html
@@ -32,28 +32,33 @@ For a visual understanding, here is the original image followed by an edited one
 
 ### 4 - Coding it up
 ##### The boilerplate
-Head over to https://repl.it. Creating an account is of personal preference, be warned that you may lose your work if you don't have an account. Click on start coding and search for HTML, CSS, JS. Once you create a repl, you'll end up at this page.
+Head over to https://repl.it/languages/html. Creating an account is of personal preference, be warned that you may lose your work if you don't have an account. 
 
-![html boilerplate](https://cloud-5egibvgdv.vercel.app/image.png)
+![html boilerplate](https://cloud-5egibvgdv.vercel.app/image.png)  
 
 As you can see, repl has already created the boilerplate code for your project. Let's take a quick look. 
-```<!DOCTYPE html>```  is a declaration line that means we'll be coding in HTML 5.0. Following up are the ```<html>``` and ```<head>``` tags. Our html markup will be contained inside the two ```<html>``` tags. The ```<head>``` tag is where we will put some of our specifications which we normally don't want the end-user to see. The first ```<meta>``` tag tells the browser which character set to use. Here, it is set to UTF-8. The next ```<meta>``` tag specifies the page's dimensions and scaling. There is no problem in not understanding how these tags work, as they aren't very important. ```<title>``` is something that you should probably change. It is the text that is shown on the browser tab. Here it is set to repl.it. Coming next up in the ```<head>``` tag is ```<link>```. It tells the browser to load the CSS styling from the style.css file. It also informs the browser that it a css text file.
+```<!DOCTYPE html>```  is a declaration line that means we'll be coding in HTML 5.0. Following up are the `<html>` and `<head>` tags. Our html markup will be contained inside the two `<html>` tags. The `<head>` tag is where we will put some of our specifications which we normally don't want the end-user to see. The first `<meta>` tag tells the browser which character set to use. Here, it is set to UTF-8. The next `<meta>` tag specifies the page's dimensions and scaling. There is no problem in not understanding how these tags work, as they aren't very important. 
 
-Here the ```<head>``` tag ends, giving way to the body tag.  ```<body>``` is where we write the markup that the viewer will see. Repl.it has already created a ```<script>``` tag here that imports the JS code. Now that we have finished with understanding the boilerplate, let's start writing some of our own code.
+`<title>` is something that you should probably change. It is the text that is shown on the browser tab. Here it is set to repl.it. Coming next up in the `<head>` tag is `<link>`. It tells the browser to load the CSS styling from the style.css file. It also informs the browser that it a css text file.
+
+Now we see a `</head>` tag. We have already seen a tag similar to this after the title tag, so what is it? having a slash before the name of any tag usually means that particular tag is ending. Here, it is a `</head>` tag, so the head of our html file ends here. It gives way to the body tag.  `<body>` is where we write the markup that the viewer will see. Repl.it has already created a `<script>` tag here that imports the JS code. Now that we have finished with understanding the boilerplate, let's start writing some of our own code.
+
 ##### The HTML Markup
 As we can see from the final website gif, our site will have two parts, the first part which houses the buttons, and the second part, which houses the actual map. Let's get on with writing the code for the buttons. 
 
-We can use HTML default buttons, but they look like they should've been abandoned along with Windows 1999, so let's spice things up a little and design some buttons of our own. Above the ```<script>``` tag and below the opening ```<body>``` tag, add this.
+We can use HTML default buttons, but they look like they should've been abandoned along with Windows 1999, so let's spice things up a little and design some buttons of our own. Above the `<script>` tag and below the opening `<body>` tag, add this.  
 ```html
-    <div class='first' style="margin-left:auto;margin-right:auto;">
-      <a onmouseover="changeImage('ocean')" class="button pulse">Ocean</a>
-      <a onmouseover="changeImage('beach')" class="button pulse">Beach</a>
-      <a onmouseover="changeImage('roadway')" class="button pulse">Roadway</a>
-      <a onmouseover="changeImage('vendors')" class="button pulse">Vendors</a>
-      <a onmouseover="changeImage('residential')" class="button pulse">Residential</a>
-    </div>
+<div class='first' style="margin-left:auto;margin-right:auto;">
+  <a onmouseover="changeImage('ocean')" class="button pulse">Ocean</a>
+  <a onmouseover="changeImage('beach')" class="button pulse">Beach</a>
+  <a onmouseover="changeImage('roadway')" class="button pulse">Roadway</a>
+  <a onmouseover="changeImage('vendors')" class="button pulse">Vendors</a>
+  <a onmouseover="changeImage('residential')" class="button pulse">Residential</a>
+</div>
 ```
-Going through the code, we find a ```<div>```. Divs are a way of grouping multiple obects into one. Divs also have various styling properties. This div has two attributes, class and style. Class is just a way to apply similar styles to multiple objects in CSS. The second attribute is style. It's a way of directly styling an element inside HTML. Margin-left and Margin-left sets the margins of the div. Here, to auto. Read more about margins at https://www.w3schools.com/css/css_margin.asp. Inside the Div, we have 5 ```<a>``` tags. We will tweak these tags to create the buttons, although some other tags can be used for this too. All these buttons share the same classes -> button & pulse. the other attribute, onmouseover, does exactly what it means. It calls a javascript function when the mouse is over that particular element. Right now if you run the markup, it'd be a total mess. So let's add the rest of it. Immediatly under the closing ```</div>``` tag, add 
+Going through the code, we find a `<div>` tag. Divs are a way of grouping multiple obects into one. Divs also have various styling properties. This div tag has two attributes, class and style. Class is just a way to apply similar styles to multiple objects in CSS. The second attribute is style. It's a way of directly styling an element inside HTML. Margin-left and Margin-left sets the margins of the div. Here, to auto. 
+Read more about margins at https://www.w3schools.com/css/css_margin.asp. 
+Inside the Div, we have 5 `<a>` tags. We will tweak these tags to create the buttons, although some other tags can be used for this too. All these buttons share the same classes -> button & pulse. the other attribute, onmouseover, does exactly what it means. It calls a javascript function when the mouse is over that particular element. Right now if you run the markup, it'd be a total mess. So let's add the rest of it. Immediatly under the closing `</div>` tag, add 
 ```html
 <img id="map" src="https://imgur.com/6MXYopz.png" onmouseover="changeImage('normal')">
 ```
@@ -65,9 +70,9 @@ Syling in CSS is pretty easy. In its most basic, it's just an element followed b
 elementTagName{ /* Write your styling in here */ }
 ```
 Now other than the basic, there are some other methods too.
-- ```*{}``` applies the styling to the whole document.
-- ```.className{}``` applies the styling to the specific class.
-- ```#idName{}``` applies the styling to the specific id.
+- `*{}` applies the styling to the whole document.
+- `.className{}` applies the styling to the specific class.
+- `#idName{}` applies the styling to the specific id.
 
 There are also **selectors**. Using selectors, we can apply some style to an element while some condition is true. It goes like this,
 ```css
@@ -159,7 +164,9 @@ The :hover selector applies a style to an element when the mouse hovers over it.
   display: none;
 }
 ```
-You will probably recognize everything except the actual styles to be applied and @keyframes. These would be easier learnt from https://w3schools.com. Now if you run the markup, the buttons would look pretty neat and the image would've resized itself. Time to give yourself a hooray!
+You will probably recognize everything except the actual styles to be applied and @keyframes. These would be easier learnt from https://w3schools.com.  
+You can learn more about the @keyframes rule at https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp
+Now if you run the markup, the buttons would look pretty neat and the image would've resized itself. Time to give yourself a hooray!
 
 ![hooray](https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif)
 
@@ -209,7 +216,9 @@ function changeImage(location){
     }
 }
 ```
-This snippet declares a variable named map, which corresponds to the map element in our html file. Then it creates a function named changeImage() with the parameter 'location'. When we call this function from our html file with specific values like 'ocean' or 'residential', (These values passed into parameters are called arguments.) they call on the actual function from the JS file. Inside the function, is an IF -ELSE IF statement. It does exactly what it means. If the location argument is 'beach', set the map's src attribute to the beach highlighted image, and so on. The syntax is
+This snippet declares a variable named map, which corresponds to the map element in our html file. Then it creates a function named changeImage() with the parameter 'location'. When we call this function from our html file with specific values like 'ocean' or 'residential', (These values passed into parameters are called arguments.) they call on the actual function from the JS file. 
+Inside the function, is an if else-if statement. It does exactly what it means. If the location argument is 'beach', set the map's src attribute to the beach highlighted image, and so on. The syntax is
+
 ```js
 if (condition) {
     Do something;
@@ -221,15 +230,15 @@ else {
     Do something totally different;
 }
 ```
-There are three basic If statements in Javascript. The normal If statement, the If - Else statement, and the If - Else If - Else statement. Not sure what that means? Let's go through some examples.
+There are three basic if statements in Javascript. The normal if statement, the if - else statement, and the if - else if - Else statement. Not sure what that means? Let's go through some examples.
 ```js
 var name = 'Shane';
 if (name == 'Shane'){
   console.log('Hello Shane')
 }
 ```
-This snippet shows a basic If statement. It first declares a variable called name which has the value of shane. Then the If statement proceeds to check out if the name is Shane, and if yes, it logs out 'Hello Shane'. Note that nothing happens if the name is not set to Shane. To try this for yourself, create a seperate repl with the language set to Javascript only. Paste that snippet and tweak the values. Also, it's time to talk about the equal to symbols. Why only one equal to at the first and two equal to-s at the bottom? This is because one equal to set's the value of the left hand side to the right hand side and two equal to-s compare both the values. Here, we have used an equal to and set the value of name to Shane. Then we have used two equal to-s to check **if** the name and Shane are both the same.
-Now, time for the next snippet. This one shows a basic If-Else statement.
+This snippet shows a basic if statement. It first declares a variable called name which has the value of shane. Then the if statement proceeds to check out if the name is Shane, and if yes, it logs out 'Hello Shane'. Note that nothing happens if the name is not set to Shane. To try this for yourself, create a seperate repl with the language set to Javascript only. Paste that snippet and tweak the values. Also, it's time to talk about the equal to symbols. Why only one equal sign at the first and two equal signs at the bottom? This is because one equal sign set's the value of the left hand side to the right hand side and two equal signs compare both the values. Here, we have used an equal sign and set the value of name to Shane. Then we have used two equal signs to check **if** the name and Shane are both the same.  
+Now, time for the next snippet. This one shows a basic if-else statement.
 ```js
 var pass = prompt('Enter your passcode: ');
 if (pass == 'abcd'){
@@ -239,11 +248,11 @@ else {
   console.log('Access Denied');
 }
 ```
-Now you probably wouldn't be knowing about prompt. Prompt is a function that allows us to take in user input. If you run this code in your Javascript-only repl, you'll get what I mean. Now let's dive into the code. It creates a variable named pass which gets user data. It then checks **if** the pass is 'abcd'. If the pass is abcd, it logs out that the password is accepted. **Else**, it logs out that access is denied. A quick word about prompt, prompt will appear different when you're using it with html. Here's a look.
+Now you probably wouldn't be knowing about prompt. Prompt is a function that allows us to take in user input. If you run this code in your Javascript-only repl, you'll get what I mean. Now let's dive into the code. It creates a variable named pass which gets user data. It then checks **if** the pass is 'abcd'. If the pass is abcd, it logs out that the password is accepted. **else**, it logs out that access is denied. A quick word about prompt, prompt will appear different when you're using it with html. Here's a look.
 
 ![prompt in html/js](https://cloud-i7mb1y4jx.vercel.app/1243.jpg)
 
-Finally, the last If statement. This one checks **if** a condition is true, **else if** that condition is not true, it does something different, **else** it'll do something different. Here's a quick snippet. Be sure to run all these snippets so that you can see it live in-action.
+Finally, the last if statement. This one checks **if** a condition is true, **else if** that condition is not true, it does something different, **else** it'll do something different. Here's a quick snippet. Be sure to run all these snippets so that you can see it live in-action.
 ```js
 var name = prompt('Enter your name: ');
 if (name == 'Shane'){
@@ -256,7 +265,7 @@ else {
   console.log('Hello!');
 }
 ```
-Since you already know about If statements and If - Else statements, this one would be a no-brainer. It asks the user for a name, **if** the name is Shane, it logs out Hello Shane, **else if** the name is Leah, it logs out Hello Leah, **else** it simply logs out Hello!.
+Since you already know about if statements and if - else statements, this one would be a no-brainer. It asks the user for a name, **if** the name is Shane, it logs out Hello Shane, **else if** the name is Leah, it logs out Hello Leah, **else** it simply logs out Hello!.
 ### Conclusion
 And just like that, you have gone through the basics of HTML/CSS and a bit of JS to create your own interactive map. Now it's up to you to add in a bit of your sparkle and tweak it.
 - Orginal Demo - https://interactive-maps.jeswinsunsi.repl.co/
