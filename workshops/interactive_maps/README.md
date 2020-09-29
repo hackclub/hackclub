@@ -269,13 +269,18 @@ Since you already know about if statements and if - else statements, this one wo
 ### Conclusion
 And just like that, you have gone through the basics of HTML/CSS and a bit of JS to create your own interactive map. Now it's up to you to add in a bit of your sparkle and tweak it.
 - Orginal Demo - https://interactive-maps.jeswinsunsi.repl.co/
-  - Source Code - https://repl.it/@JeswinSunsi/Interactive-Maps#index.html
+  - Source Code - https://repl.it/@JeswinSunsi/Interactive-Maps
 - With continents - https://interactivemaps2.jeswinsunsi.repl.co
-  - Source Code - https://repl.it/@JeswinSunsi/Interactivemaps2
+  - Source Code - https://repl.it/@JeswinSunsi/InteractiveMaps2
 - Another use, with a 1 - 10 multiplication table - https://interactivemaps3.jeswinsunsi.repl.co
-  - Source Code - https://repl.it/@JeswinSunsi/Interactivemaps3
+  - Source Code - https://repl.it/@JeswinSunsi/InteractiveMaps3
+- Interactive Solar System - http://interactivemaps4.jeswinsunsi.repl.co/
+  - Source Code - https://repl.it/@JeswinSunsi/InteractiveMaps4
+
+A quick word, if the website doesnt look proper on your device, or if the buttons are too sideways, don't worry. This site is not responsive. You'll have to go into your styles.css and tweak the height and width from the `#map` id, and the left style of the `.first` class.
 
 ![multiplication table](https://cloud-66xb1ygia.vercel.app/multiplication.gif)
+![solar system](https://cloud-ahc3o6oq6.vercel.app/solsys.gif)
 
 ##### Hacking it
 - Try doing the same thing with another image, maybe the inside of a room, maybe a world map with hoverable buttons which highlight different countries
