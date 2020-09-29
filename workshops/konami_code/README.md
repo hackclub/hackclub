@@ -460,13 +460,14 @@ Check out these crazy examples!
 
 Check out what other hackclubbers have built!
 
-- [Work In Progress]
+- [Tanishq](https://konami.tanishqsoni.repl.co/)  
+[Src Code](https://repl.it/@tanishqsoni/konami#index.html) 
 
-- [Work In Progress]
+- [Aaryan](https://konami.aaryanporwal.repl.co/)  
+[Src Code](https://repl.it/@aaryanporwal/konami#index.html)  
 
-- [Work In Progress]
-
-- [Work In Progress]
+- [JackTDC](https://rapidniceregister.jacktdc.repl.co/)  
+[Src Code](https://repl.it/@JackTDC/RapidNiceRegister#index.html)
 
 Now that you have finished building it, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
 
