@@ -6,22 +6,22 @@ author: '@MatthewStanciu'
 
 ![15-second gif of a simple website being changed beyond recognition](https://cloud-awgd5gj78.vercel.app/hc-api-workshop-demo.gif)
 
-You know the scenes in those home renovation reality shows where they have a ton of fun knocking down all of the walls and gutting the house? You know how it feels very cathartic, and you wish you could do something like that? Well, thanks to the magic of websites, you can do the same thing to a website! And it feels just as cathartic!
+You know the scenes in those home renovation reality shows where they knock down all the walls and gut the house, and they're having so much fun, and you think "wow that looks so fun I wish I could do that"? Well, thanks to the magic of webservers, you can do the same thing to a website! And it feels just as cathartic!
 
-In this workshop, we're going to learn about web APIs—specifically, how they work, how we use them to power everything we do on the web, and most importantly, how to write one that allows anyone to wreak havoc on your website. Ready to get started?
+In this workshop, we're going to learn about web APIs—specifically, how they work, and how to write one that allows anyone to wreak havoc on your website. Ready to get started?
 
 # What's a web API?
 ![Drawing of a robot that says it will accept hello and changecolor api endpoints](https://cloud-gza5tupj5.vercel.app/image_from_ios.jpg)
 
-Imagine a robot, floating in space but connected to the Internet. The robot is programmed to do a few certain tasks, but only when it receives the signal to do so. The robot has multiple triggers on its body that run each specific action, and it's constantly listening for when those triggers are hit.
+Imagine a robot. The robot is programmed to do a few certain tasks, but only when it receives the signal to do so. The robot has multiple triggers on its body that run each specific action, and it's constantly listening for when those triggers are hit.
 
 ![The robot receives the hello endpoint, and says hello](https://cloud-j7efghg1c.vercel.app/image_from_ios.jpg)
 
-The triggers can be as simple as a button that does the same thing, or it could be a dropbox that only triggers the action if the necessary items are deposited in the dropbox.
+The triggers can be as simple as a button that does one set task every time you push it, or it could be a dropbox that only triggers the action if the necessary items are deposited in the dropbox.
 
 ![The robot hears changecolor with the parameter coral, and its color changes to color](https://cloud-enxtye0j8.vercel.app/img_0509.jpg)
 
-In reality, the "robot" is a server connected to the internet, and the triggers, known as **API endpoints**, are points on the server that are triggered by **web requests**. If this doesn't quite make sense to you right now, don't worry about it—you'll see all of this in action when you start building your own API!
+In reality, the "robot" is a server connected to the internet, and the triggers, known as **API endpoints**, are points on the server that are triggered by **HTTP requests**. If this doesn't quite make sense to you right now, don't worry about it—you'll see all of this in action when you start building your own API!
 
 # Getting started
 ![The starter project on replit](https://cloud-4f1wogm9b.vercel.app/screen_shot_2020-09-29_at_4.09.11_pm.png)
@@ -117,7 +117,7 @@ app.get('/hello', (req, res) => {
 })
 ```
 
-HTTP requests must return a **status code**. `200` means `OK`. But there are a _lot_ ([learn more about status codes if you're interested!](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)).
+HTTP requests must return a **status code**. `200` means `OK`. But there are a _lot_. [Learn more about status codes if you're interested!](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
 Stop and restart your server. Then, copy the link to the website preview...
 
