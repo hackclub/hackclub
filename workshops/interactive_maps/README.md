@@ -175,9 +175,9 @@ You will probably recognize everything except the actual style rules to be appli
 - `overflow: hidden;` disables the scrollbar on a website
 - `display: block;` marks the element as a block element. Read more about `display:` here - https://developer.mozilla.org/en-US/docs/Web/CSS/display
 - `position: relative;` sets the position of an element relative to its original position. You would be able to move around the element without disturbing the whole layout.
-- `align-items: center;` aligns the contents inside an element to its center
+- `align-items: center;` aligns the contents inside an element to its center.
 - `cursor: pointer;` changes the default cursor to a pointer.
-- `margin: ` sets the margin. Margins can also be seperately customized, like `margin-top:` and `margin-left`
+- `margin: ` sets the margin. Margins can also be seperately customized, like `margin-top` and `margin-left`.
 - `padding: ` sets padding to an element.
 - `font-family: ` specifies the fonts to use.
 - `background: ` sets the background of an element. It accepts text, rgb, rgba, and hex values.
