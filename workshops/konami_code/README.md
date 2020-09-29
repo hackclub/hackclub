@@ -28,6 +28,7 @@ Here's the [live demo](https://Konami-code.faisalsayed1.repl.co/)
 Here's the [source code](https://repl.it/@FaisalSayed1/Konami-Code)
 
 Live demo: 
+
 ![Image](https://cloud-95l2730mf.vercel.app/konamigif.gif)
 
 ## Part 1: Prerequisites
