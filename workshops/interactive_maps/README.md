@@ -165,7 +165,7 @@ The :hover selector applies a style to an element when the mouse hovers over it.
 }
 ```
 You will probably recognize everything except the actual styles to be applied and @keyframes. These would be easier learnt from https://w3schools.com.  
-You can learn more about the @keyframes rule at https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp
+You can learn more about the @keyframes rule at https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp  
 Now if you run the markup, the buttons would look pretty neat and the image would've resized itself. Time to give yourself a hooray!
 
 ![hooray](https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif)
