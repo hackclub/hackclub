@@ -189,10 +189,10 @@ const secretCode = ["h", "a", "c", "k"];
 Here, the `secretCode` array contains the keys which will be the Konami Code. For this workshop's sake, our code will be "hack". You can change it to anything you like. Here are some examples:
 
 ```js
-["KeyUp", "KeyDown", "KeyLeft", "KeyRight"]
-["KeyUp", "a", "KeyLeft", "z", "KeyDown"]
+["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"]
+["ArrowUp", "a", "ArrowLeft", "z", "ArrowDown"]
 ["Shift", "Control", "Enter", "b"]
-["a", "a", "b", "b", "c", "d", "e", "KeyLeft"]
+["a", "a", "b", "b", "c", "d", "e", "ArrowLeft"]
 ```
 
 Next, we will make use of the confetti.js library which we have imported in our project. We will first declare some settings for the confetti. After we declare them, we will create a new `ConfettiGenerator` object which will help us implement the confetti on the site.
@@ -454,6 +454,8 @@ Check out these crazy examples!
 - [Hackclubber?](https://repl.it/@FaisalSayed1/Konami-Code-Example-3)
 
 - [!pwned](https://repl.it/@FaisalSayed1/Konami-Code-Example-4)
+
+- [Spinning Portfolio](https://repl.it/@FaisalSayed1/Konami-Code-Example-5)
 
 Check out what other hackclubbers have built!
 
