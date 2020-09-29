@@ -285,6 +285,7 @@ A quick word, if the website doesnt look proper on your device, or if the button
 ##### Hacking it
 - Try doing the same thing with another image, maybe the inside of a room, maybe a world map with hoverable buttons which highlight different countries
 - Tweak the buttons and add new styles to them
+- Fork the Solar System project and add a textbox that shows some properties of each planet when the respective planet's button is hovered on or clicked
 - Maybe add in a bit of music? The possibilities are endless
 ##### Debugging
 If you have followed the tutorial word by word, the end result would come out as expected. Else if you have some trouble in some part, feel free to check up the project's final code at the repl. You can also compare your code with the final source code by visiting https://text-compare.com/.
