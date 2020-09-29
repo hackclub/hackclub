@@ -56,8 +56,8 @@ We can use HTML default buttons, but they look like they should've been abandone
   <a onmouseover="changeImage('residential')" class="button pulse">Residential</a>
 </div>
 ```
-Going through the code, we find a `<div>` tag. Divs are a way of grouping multiple obects into one. Divs also have various styling properties. This div tag has two attributes, class and style. Class is just a way to apply similar styles to multiple objects in CSS. The second attribute is style. It's a way of directly styling an element inside HTML. Margin-left and Margin-left sets the margins of the div. Here, to auto. 
-Read more about margins at https://www.w3schools.com/css/css_margin.asp. 
+Going through the code, we find a `<div>` tag. Divs are a way of grouping multiple obects into one. Divs also have various styling properties. This div tag has two attributes, class and style. Class is just a way to apply similar styles to multiple objects in CSS. The second attribute is style. It's a way of directly styling an element inside HTML. Margin-left and Margin-left sets the margins of the div. Here, to auto.  
+Read more about margins at https://www.w3schools.com/css/css_margin.asp.  
 Inside the Div, we have 5 `<a>` tags. We will tweak these tags to create the buttons, although some other tags can be used for this too. All these buttons share the same classes -> button & pulse. the other attribute, onmouseover, does exactly what it means. It calls a javascript function when the mouse is over that particular element. Right now if you run the markup, it'd be a total mess. So let's add the rest of it. Immediatly under the closing `</div>` tag, add 
 ```html
 <img id="map" src="https://imgur.com/6MXYopz.png" onmouseover="changeImage('normal')">
