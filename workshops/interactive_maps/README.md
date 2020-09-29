@@ -30,6 +30,14 @@ For a visual understanding, here is the original image followed by an edited one
 ![image 1](https://cloud-fyde5ir0a.vercel.app/image.png)
 ![image 2](https://cloud-jmd1dy3k8.vercel.app/image.png)
 
+Basically, you'll have to take an image, and seperately highlight/color parts of it, and save it as different images. These are the image resources for this workshop incase you need to refer to it.
+- https://cloud-coh6o3mhy.vercel.app/orgbg.png - The original image
+-  https://cloud-9p8jb8vst.vercel.app/orgocean.png - Here, the Ocean is highlighted in red
+- https://cloud-gga696gyn.vercel.app/orgresidential.png - Here, the buildings are highlighted
+- https://cloud-bzeicw4mm.vercel.app/orgroad.png - The roadway is highlighted
+- https://cloud-9ldvvvhb4.vercel.app/orgvendors.png - The shops are highlighted
+- https://cloud-3bvmpy2n1.vercel.app/orgbeach.png - The beach is highlighted
+
 ### 4 - Coding it up
 ##### The boilerplate
 Head over to https://repl.it/languages/html. Creating an account is of personal preference, be warned that you may lose your work if you don't have an account. 
@@ -136,7 +144,6 @@ The :hover selector applies a style to an element when the mouse hovers over it.
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   transform: translate3d(0, 1px, 0);
 }
-
 .pulse {
   position: relative;
 }
@@ -164,7 +171,17 @@ The :hover selector applies a style to an element when the mouse hovers over it.
   display: none;
 }
 ```
-You will probably recognize everything except the actual styles to be applied and @keyframes. These would be easier learnt from https://w3schools.com.  
+You will probably recognize everything except the actual style rules to be applied and @keyframes. These would be easier learnt from https://w3schools.com. However, we will go through some of the easy ones now.  
+- `overflow: hidden;` disables the scrollbar on a website
+- `display: block;` marks the element as a block element. Read more about `display:` here - https://developer.mozilla.org/en-US/docs/Web/CSS/display
+- `position: relative;` sets the position of an element relative to its original position. You would be able to move around the element without disturbing the whole layout.
+- `align-items: center;` aligns the contents inside an element to its center
+- `cursor: pointer;` changes the default cursor to a pointer.
+- `margin: ` sets the margin. Margins can also be seperately customized, like `margin-top:` and `margin-left`
+- `padding: ` sets padding to an element.
+- `font-family: ` specifies the fonts to use.
+- `background: ` sets the background of an element. It accepts text, rgb, rgba, and hex values.
+- `opacity: ` determines the opacity of an element.  
 You can learn more about the @keyframes rule at https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp  
 Now if you run the markup, the buttons would look pretty neat and the image would've resized itself. Time to give yourself a hooray!
 
