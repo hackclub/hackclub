@@ -182,6 +182,7 @@ You will probably recognize everything except the actual style rules to be appli
 - `font-family: ` specifies the fonts to use.
 - `background: ` sets the background of an element. It accepts text, rgb, rgba, and hex values.
 - `opacity: ` determines the opacity of an element.  
+
 You can learn more about the @keyframes rule at https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp  
 Now if you run the markup, the buttons would look pretty neat and the image would've resized itself. Time to give yourself a hooray!
 
