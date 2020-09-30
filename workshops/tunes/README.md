@@ -78,7 +78,7 @@ For example, in the below snippet:
 
 ```javascript
 document.onkeydown = function(e){
-	console.log('Key pressed!')
+  console.log('Key pressed!')
 }
 ```
 
@@ -125,7 +125,7 @@ We're going to do this in a Javascript function, to make our clean.
 
 ```javascript
 function playNote(note) {
-	synth.triggerAttackRelease('C4', "8n");
+  synth.triggerAttackRelease('C4', "8n");
 }
 ```
 
@@ -139,7 +139,7 @@ Putting this together, we can make:
 
 ```javascript
 function playNote(note) {
-	synth.triggerAttackRelease(`${note}4`, "8n");
+  synth.triggerAttackRelease(`${note}4`, "8n");
 }
 
 ```
