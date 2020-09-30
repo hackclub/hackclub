@@ -84,7 +84,7 @@ document.onkeydown = function(e){
 
 Whenever a key is pressed it will log 'Key pressed!'. You can try it too! Just type this into your `script.js` file, click 'Run', then click the browser preview and press a key. You should see the logs in the console.
 
-The next step is knowing what key we pressed, we want to get a bit more info to do that. We can do this with the following snippet. The snippet gets all the information from the event that fired the function.
+The next step is knowing what key we pressed, we want to get a bit more info to do that. We can do this with the following snippet. Building on top of our previous function, we are now getting data from the browser through the event. In this data we get a keyCode this can be used to identify the key that was pressed. The snippet gets all the information from the event that fired the function.
 
 ```javascript
 document.onkeydown = function(e){
