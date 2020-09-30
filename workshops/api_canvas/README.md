@@ -21,17 +21,19 @@ The triggers can be as simple as a button that does one set task every time you 
 
 ![The robot hears changecolor with the parameter coral, and its color changes to color](https://cloud-enxtye0j8.vercel.app/img_0509.jpg)
 
-In reality, the "robot" is a server connected to the internet, and the triggers, known as **API endpoints**, are points on the server that are triggered by **HTTP requests**. If this doesn't quite make sense to you right now, don't worry about it—you'll see all of this in action when you start building your own API!
+In reality, the "robot" is a server connected to the internet, and the triggers, known as **API endpoints**, are points on the server that are triggered by **HTTP requests** that are sent over the internet.
+
+If this doesn't quite make sense to you right now, don't worry about it—you'll see all of this in action when you start building your own API!
 
 # Getting started
 ![The starter project on replit](https://cloud-4f1wogm9b.vercel.app/screen_shot_2020-09-29_at_4.09.11_pm.png)
 
-Get started by [visiting the starter project](https://repl.it/@TechBug2012/hc-api-canvas-starter#index.js) on repl.it. When you open it, you should see something like this.
+Get started by [opening the starter project](https://repl.it/@TechBug2012/hc-api-canvas-starter#index.js) on repl.it. When you open it, you should see something like this.
 
 ## Starting a webserver with Express
 Express is a very powerful JavaScript framework that allows you to easily create webservers and API endpoints. Let's set up a webserver using Express.
 
-Start by importing Express. In `script.js`, type
+Start by importing Express. In the `index.js` file, type:
 
 ```js
 const express = require('express')
@@ -50,11 +52,11 @@ http.listen(3000)
 
 ![Clicking Run now starts up a server, but doesn't do anything yet](https://cloud-icsqd6blm.vercel.app/screen_shot_2020-09-29_at_4.20.08_pm.png)
 
-If you click the green "Run" button at the top of your repl, you should notice that the server starts up, but nothing really happens yet. Let's fix that!
+If you click the green "Run" button at the top of your repl, you should notice that the server starts up, but nothing really happens yet.
 
 ## Serving HTML
 
-Before the `http.listen` line but after the line where you import `http`, add:
+Before the line that starts with `http.listen` line but after the line that starts wtih `const http`, add:
 
 ```js
 app.get('/', (req, res) => {
@@ -62,13 +64,17 @@ app.get('/', (req, res) => {
 })
 ```
 
+![Gif showing how to restart your server on replit](https://cloud-70jejjo7h.vercel.app/screen_recording_2020-09-30_at_10.59.01_am.gif)
+
+Restart the server by clicking "Stop" at the top, then clicking it again when it says "Run", then clicking the refresh icon near the top middle of the website preview (it's a big janky, I know).
+
 ![A website with some HTML now loads](https://cloud-jsf8wn9xe.vercel.app/screen_shot_2020-09-29_at_4.23.24_pm.png)
 
-If you click "Stop" at the top, then click "Run", then click the refresh icon near the top middle of the website preview (it's a big janky, I know), you should see that some HTML is loading. So, what is the code that you just typed, and why does it make a website appear?
+You should see that some HTML loads. So, what is the code that you just typed, and why does it make a website appear?
 
 ![The sidebar contains a folder called views, with an html file, and public, with a css file and a javascript file](https://cloud-h6tqhnlr6.vercel.app/screen_shot_2020-09-29_at_4.27.54_pm.png)
 
-If you take a look at your sidebar, you'll see that the starter project contains a folder called `views`, which contains an HTML file, and a folder called `public`, which contains a CSS file, a JavaScript file called `index.js`, and another JavaScript file called `emojiRain.js`. This is the way Express apps are commonly set up: HTML files are served from a `views` folder, and other files are served from a `public` folder.
+If you take a look at your sidebar, you'll see that the starter project contains a folder called `views`, which contains an HTML file; and a folder called `public`, which contains a CSS file, a JavaScript file called `index.js`, and another JavaScript file called `emojiRain.js`. This is the way Express apps are commonly set up: HTML files are served from a `views` folder, and other files are served from a `public` folder.
 
 Here's where things get a little bit confusing: while all of these files look like they're in the same place, they're actually running in different places at different times. All of the code in `index.js` runs on a server, while all of the code in the files in `views` and `public` run in your browser. It may look like we're making a website here, but we're actually making a web app running on a server that loads a website. When you visit the website where your server is hosted, your web browser sends a web request to the server, and in response the server sends back HTML and CSS that your browser loads.
 
@@ -98,15 +104,9 @@ There are are 9 types of HTTP requests. If you're curious, you can [see a list o
 - `GET` is used to "get"—view, download, etc—some data without changing it
 - `POST` is used to submit new data
 
-To get a feel for web APIs, try using an API yourself!
+Try using an API yourself! Visit [api.adviceslip.com/advice](https://api.adviceslip.com/advice) in your browser and keep refreshing your browser. You should see some random data from the server being sent back to you every time you refresh.
 
-```
-https://api.adviceslip.com/advice
-```
-
-Visit that URL in your browser and keep refreshing your browser. You should see some random data from the server being sent back to you every time you refresh.
-
-The server that powers this API is hosted on `api.adviceslip.com`. When you visit `api.adviceslip.com/advice`, your browser is sending a `GET` request to its `advice` endpoint. When this endpoint is it, it runs code that gets a random piece of advice and sends it back to your browser. Cool, right?
+The server that powers this API is hosted on `api.adviceslip.com`. When you visit `api.adviceslip.com/advice`, your browser is sending a `GET` request to its `advice` endpoint. When this endpoint is hit, it runs code that gets a random piece of advice and sends it back to your browser. Cool, right?
 
 ## Writing your first API endpoint
 Let's write your first API endpoint. Head back over to the `index.js` file in your repl. Between the line that starts with `app.use` and the line that starts with `app.get`, add:
@@ -117,9 +117,9 @@ app.get('/hello', (req, res) => {
 })
 ```
 
-HTTP requests must return a **status code**. `200` means `OK`. But there are a _lot_. [Learn more about status codes if you're interested!](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
+HTTP requests must return a **status code**. `200` means `OK`. But there are a _lot_. [Learn more about status codes if you're interested!](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
-Stop and restart your server. Then, copy the link to the website preview...
+Stop and restart your server. Then, copy the link to the website preview link...
 
 ![Pointing to the website preview, the url at the top](https://cloud-e4zjss6os.vercel.app/screen_shot_2020-09-29_at_5.23.22_pm.png)
 
@@ -127,16 +127,14 @@ Stop and restart your server. Then, copy the link to the website preview...
 
 ![A website that's entirely blank except for a Hi there, at the api endpoint you just wrote](https://cloud-jxf0r41ua.vercel.app/screen_shot_2020-09-29_at_5.25.21_pm.png)
 
-You should see a website that's entirely blank except for the words `Hi there!`
+If you see a website that's entirely blank except for the words `Hi there!`, then congratulations! You've just successfully written your first API endpoint! 🎉🎉🎉
 
 ## Making it rain (emojis)
-Nice! You've just written your first API endpoint! 🎉🎉🎉
+Let's write an API endpoint that actually changes some content on your browser.
 
-Now, let's write one that actually changes some content on your browser.
+There's a problem, though. Remember how I said that the code in `index.js` runs on the server and everything else runs in the browser? Changing content that's loaded in your browser needs to be done *client-side*—but we won't know to make our changes client-side unless the we receive an HTTP request on the *server-side*, and right now there's no way for the server and the client to communicate.
 
-Remember how I said that the code in `index.js` runs on the server and everything else runs in the browser and is served by the server? That's created a problem for us now: we can't change any content on the website from the `index.js` file, because all it's doing is getting the content from the `index.html` file and sending that to the browser, and then it never hears from that content again. We need to make our changes *client-side*—but we won't know to make our changes client-side unless the server receives an HTTP request.
-
-To fix this, we need to open a line of communication between the server and the client. Luckily, an awesome library called `socket.io` is here to save the day.
+We need to open a line of communication between the server and the client. Luckily, an awesome library called `socket.io` does just that.
 
 This workshop won't be diving deep into how websockets work—that's for a whole other workshop!—but basically, websockets open a wormhole between the server and the client, making it easy to quickly send data between them.
 
