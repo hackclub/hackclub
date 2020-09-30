@@ -62,7 +62,7 @@ Numpy documentation :
 
 The framework for defining a neural network as a set of Sequential layers is called "keras", so we import that too.We're importing it separately for our ease
 
-```
+```python
 import tensorflow as tf
 import numpy as np
 from tensorflow import keras
@@ -76,7 +76,7 @@ The one we are creating has 1 layer, and that layer has 1 neuron, and the input 
 
 ![neural network](https://cloud-ltmlw2jd1.vercel.app/neural.png)
 
-```
+```python
 model = tf.keras.Sequential([keras.layers.Dense(units=1, input_shape=[1])])
 ```  
 <br/>
@@ -88,7 +88,7 @@ When the computer is trying to 'learn' that, it makes a guess...maybe y=10x+10. 
 It then uses the OPTIMIZER function to make another guess. Based on how the loss function went, it will try to minimize the loss. At that point maybe it will come up with something like y=5x+5 which, while still pretty bad, is closer to the correct result (i.e. the loss is lower)   
 It will repeat this for a number of "EPOCHS" which we will see shortly. But first, here we are telling it to use 'MEAN SQUARED ERROR' for the loss and 'STOCHASTIC GRADIENT DESCENT' for the optimizer. We don't need to understand the math for these yet, but we can see that they work! :)   
 Over time we will learn the different and appropriate loss and optimizer functions for different scenarios. 
-```
+```python
 model.compile(optimizer='sgd', loss='mean_squared_error')
 ```
 <br/>
@@ -97,7 +97,7 @@ model.compile(optimizer='sgd', loss='mean_squared_error')
 Next up we'll feed in some data. In this case we are taking 6 xs and 6ys. We can see that the relationship between these is that y=2x+1, so where x = -1, y=-1 etc. etc.  
 'Numpy' provides lots of array type data structures that are a standard way of doing it. We declare that the way we want to use these is by specifying the values as an np.array[]  
 \* dtype stands for "data type"
-```
+```python
 xs = np.array([-1.0, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0], dtype=float)
 ys = np.array([-1.0, 1.0, 3.0, 5.0, 7.0, 9.0, 11.0], dtype=float)
 ```
@@ -105,12 +105,12 @@ ys = np.array([-1.0, 1.0, 3.0, 5.0, 7.0, 9.0, 11.0], dtype=float)
 
 # Training the Neural Network
 Now comes the process of training the neural network , where it 'learns' the relationship between the Xs and Ys is in the **model.fit**  call. This is where it will go through the loop we spoke about above, make a guess, measure how good or bad it is (i.e. the loss), and use the optimizer to make another better prediction. It will repeat the process for the number of epochs we specify. When we run this code, we'll see the loss on the right hand side which decreases rapidly.
-```
+```python
 model.fit(xs, ys, epochs=700)
 ```
   
 
-```
+```python
     Epoch 1/700
     1/1 [==============================] - 0s 1ms/step - loss: 8.0000
     Epoch 2/700
@@ -169,7 +169,7 @@ model.fit(xs, ys, epochs=700)
 # Prediction
 Ok, now we have a model that has been trained to learn the relationship between X and Y. We can use the **model.predict** method to have it figure out the Y for a previously unknown X. So, for example, if X = 10, what do you think Y would be?   
 Lets run the code to see
-```
+```python
 print(model.predict([10.0]))
 ```
     [[21.00056]]
@@ -183,7 +183,7 @@ As We work with neural networks, we'll see this pattern recurring. We will almos
 # Complete Program
 
 Here is the complete program put together
-```
+```python
 # Imports
 import tensorflow as tf
 import numpy as np
