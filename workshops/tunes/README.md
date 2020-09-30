@@ -131,7 +131,7 @@ function playNote(note) {
 
 Here's how we create a function. The name of our function will be `playNote` and it will need a variable called `note` to be provided when the function is called. Then inside of that function, it plays the C4 key for the duration of 8 notes. 
 
-However, we aren't using our `note` variable. Let's use this. We're going to add it in using template strings. Template strings allow us to add variables into our strings. To do this we use the <code>`</code> character instead of  <code>'</code>. 
+However, we aren't using our `note` variable. Let's use this. We're going to add it in using template strings (or template literals). Template strings allow us to add variables into our strings. To do this we use the <code>`</code> character instead of  <code>'</code>. 
 
 Then whenever we want to use a variable like note, we can do: `${note}`
 
