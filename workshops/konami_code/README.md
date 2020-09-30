@@ -248,7 +248,7 @@ Learn more about [`addEventListener()`](https://www.w3schools.com/js/js_htmldom_
 
 'RUN' this code, click on the preview window once so that it gets focused and then try typing any keys. Keep a watch on the console!
 
-Voila! The keys pressed by the user is getting logged! We will make use of this keys to check whether the keys matches the Konami Code.
+Voila! The keys pressed by the user is getting logged! We will make use of these keys to check whether the keys match the Konami Code.
 
 Code so far:
 ```js
