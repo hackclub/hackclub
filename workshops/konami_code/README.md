@@ -333,11 +333,11 @@ if (JSON.stringify(keys) === JSON.stringify(secretCode)) {
   console.log('TADAAA!!');
 }
 ```
-**Note:** This will also be included in the function. Except the event listener, nothing is outside the function.
+**Note:** This will also be included in the function. Except for the event listener, nothing is outside the function.
 
 RUN the code and try typing the secret code which you have given (it is "hack" in my case). You'll surely see a TADAAA!! in the console whenever the arrays match each other.
 
-Okay, so now we are sure that our code works perfectly! So, instead of console logging we will make some pretty changes to our website.
+Okay, so now we are sure that our code works perfectly! So, instead of console logging, we will make some pretty changes to our website.
 
 First of all, we'll make our `secret-div` visible. Then we'll change the `text` from 'Password Please' to 'Identity Verified'. And not to forget, we'll also render confetti on our page.
 
