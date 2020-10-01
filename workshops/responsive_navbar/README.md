@@ -16,7 +16,7 @@ The simple nav:
 
 ![Image](https://cloud-o35ba6qxw.vercel.app/fayd-nav.gif)
 
-Or this?
+Or even this?
 
 ![Image](https://cloud-qiqy4s3qm.vercel.app/worst-nav.gif)
 
