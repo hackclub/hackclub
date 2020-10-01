@@ -6,7 +6,7 @@ author: '@MatthewStanciu'
 
 ![15-second gif of a simple website being changed beyond recognition](https://cloud-awgd5gj78.vercel.app/hc-api-workshop-demo.gif)
 
-You know the scenes in those home renovation reality shows where they knock down all the walls and gut the house, and they're having so much fun, and you think "wow that looks so fun I wish I could do that"? Well, thanks to the magic of webservers, you can do the same thing to a website! And it feels just as cathartic!
+You know the scenes in those home renovation reality shows where they knock down all the walls and gut the house, and they're having so much fun, and you think "wow that looks so fun I wish I could do that"? Well it turns out you can do the same thing to a website! And it feels just as cathartic!
 
 In this workshop, we're going to learn about web APIs—specifically, how they work, and how to write one that allows anyone to wreak havoc on your website. Ready to get started?
 
@@ -169,7 +169,7 @@ Then, under what you just wrote in `script.js`, add:
 ```js
 socket.on('emojis', () => {
   makeItRain()
-}
+})
 ```
 
 `makeItRain()` is a function inside `emojis.js` that makes emojis fall on your screen.
