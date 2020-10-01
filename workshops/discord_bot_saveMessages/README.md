@@ -2,7 +2,7 @@
 
 This workshop requires that you know how to set up a hello world discord bot! It is REALLY easy. If you do not know how to create a this look at [this link](https://workshops.hackclub.com/hello_bot/).
 
-Okay! All good! Let's start!
+Okay! All good! Let's start! ***make sure to put json with brackets***
 
 You should have something that looks like this. There are a few things here you won't understand but will be explained.
 ```js
