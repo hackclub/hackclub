@@ -1,12 +1,12 @@
 ---
 name: 'Intro To ML'
-description: 'Making an Machine Learning model to predict relation between 2 number sets '
+description: 'Making a Machine Learning model to predict relation between 2 number sets '
 author: '@Agrim-Bansal'
 ---
 
 
 # Introduction
-Have you always been fascinated by the terms like "Artificial Intelligence", "Machine Learning" etc  and wanted to learn how these things work?  
+Have you always been fascinated by the terms "Artificial Intelligence", "Machine Learning" etc  and wanted to learn how these things work?  
 Well, Today you'll be able to learn about the working of machine learning and make a machine learning model which learns the relationship between two sets of numbers and predicts the result for a future number.  
 Excited? So let's get going!  
 
@@ -16,6 +16,7 @@ Excited? So let's get going!
 
 # Machine Learning
 Machine learning is very similar to Artificial Intelligence but it is not exactly it. Machine learning (or ML as it is called) is about data and classification.  
+
 When we as programmers code a normal program, there we define rules, input some test data and at end, obtain results.  
 But in machine learning, the process is somewhat different. Here we provide the machine some input data and some output data i.e. the known test data and it is the task of the machine to figure out what is the relation between the sets of data and further predict output values for unknown input data.  
 
@@ -26,6 +27,7 @@ But in machine learning, the process is somewhat different. Here we provide the 
 # Working
 **So, how does this actually work ?**   
 We provide the machine with some sets of data (usually 2) and it is made to establish a link between the data sets or in other words, "the ML model is trained".   
+
 In this process of training, the machine makes an initial guess and then checks how good or bad the guess was and it calculates the **loss**. Then it uses an optimizer to make another **optimized** prediction which is better than the previous one. In other words, the loss is decreased. This process continues as many times as we specify.  
 
 So, for example, we have 2 number sets as follows :   
@@ -47,10 +49,12 @@ Note : for this project We'll use PYTHON and a library called Tensorflow.
 
 # Using Google Colab  
 We'll be making our project on a **Google Colab notebook**.  
+
 Go to [colab.research.google.com](https://colab.research.google.com) and sign in with your Google account.  
 Then  Click on File > New notebook  
 Connect to a machine  
 Add a code block and we are ready to get started !  
+
 (Press <kbd>CTRL</kbd> + <kbd>Enter</kbd> to run the code)  
 
 <br/>
@@ -59,19 +63,27 @@ Add a code block and we are ready to get started !
 # Imports
 Let's start with our imports. Imports provide us a way to exceed the limits of inbuilt modules and functions.  
 They are just some pieces of code written by developers which make repetitive tasks way more easier and help in reducing our code
+
 To import a module (called a library) the syntax is : `import <library_name> `  
+
 Further, we can import something specific instead of the  complete library(to reduce program size) from the library using : `from <library_name> import <object_name>`  
+
 Also, we can name them something else for our ease as so that instead of accessing it from the original name, we can give it a shorter name: `import <library_name> as <easier_name>`  
 
 *For more, refer to [Imports Documentation](https://docs.python.org/3/reference/import.html)  
 
+
 <br/>
+
 
 - Here we are importing the library ["TensorFlow"](https://www.tensorflow.org/api_docs) and calling it "tf" for ease of use.
 This library contains many tools for machine learning.
+
 - We then import a library called ['Numpy'](https://numpy.org/doc/), which helps us to represent and manipulate our data as lists easily and quickly. We call it as "np"for ease.
 It provides a quicker and easier way to manipulate lists as compared to python's inbuilt listing system.  
+
 - The framework for defining a neural network as a set of Sequential layers is called "keras", so we import that too.We're importing it separately for our ease
+
 
 ```py
 import tensorflow as tf
@@ -84,7 +96,9 @@ from tensorflow import keras
 
 # Defining the Neural Network
 Next we will create a neural network (a very simple one).
+
 Neural network can be compared to a brain and it is the thing which will perform all the operations and working. A neural network is a network or circuit of neurons, or an artificial neural network, composed of artificial neurons or nodes. A positive value reflects an excitatory connection, while negative values mean inhibitory connections.  
+
 The one we are creating has 1 layer, and that layer has 1 neuron, and the input is just 1 value.
 
 ![neural network](https://cloud-ltmlw2jd1.vercel.app/neural.png)
@@ -129,7 +143,10 @@ ys = np.array([-1.0, 1.0, 3.0, 5.0, 7.0, 9.0, 11.0], dtype=float)
 
 
 # Training the Neural Network
-Now comes the process of training the neural network , where it 'learns' the relationship between the Xs and Ys is in the **model.fit**  call. This is where it will go through the loop we spoke about above, make a guess, measure how good or bad it is (i.e. the loss), and use the optimizer to make another better prediction. It will repeat the process for the number of epochs we specify. When we run this code, we'll see the loss on the right hand side decreasing rapidly.
+Now comes the process of training the neural network , where it 'learns' the relationship between the Xs and Ys is in the **model.fit**  call. 
+
+This is where it will go through the loop we spoke about above, make a guess, measure how good or bad it is (i.e. the loss), and use the optimizer to make another better prediction. It will repeat the process for the number of epochs we specify. When we run this code, we'll see the loss on the right hand side decreasing rapidly.
+
 
 ```py
 model.fit(xs, ys, epochs=700)
@@ -202,11 +219,16 @@ print(model.predict([10.0]))
     [[21.00056]]
     
 
+
 You might have thought 21, right? But it ended up being a little over. Why do you think that is?  
+
 Remember that the neural networks deal with probabilities, so given the data that we fed the Neural network with, it calculated that there is a very high probability that the relationship between X and Y is Y=2x+1, but with only 6 data values we can't know for sure. As a result, the value for 10 is very close to 21, but not necessarily 21.  
+
 As We work with neural networks, we'll see this pattern recurring. We will almost always deal with probabilities, not certainties, and will do a little bit of coding to figure out what the result is based on the probabilities, particularly when it comes to classification.  
 
+
 <br/>
+
 
 # Complete Program
 Here is the complete program put together
