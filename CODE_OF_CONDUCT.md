@@ -1,5 +1,13 @@
 # Code of Conduct
 
+
+## TL;DR
+
+- Treat everyone with respect and kindness.
+- Be thoughtful in how you communicate.
+- Don't be destructive or inflammatory.
+- If you encounter an issue, please mail <conduct@hackclub.com>.
+
 ## Why have a Code of Conduct?
 
 Hack Club's community includes people from many different backgrounds. The Hack Club contributors are committed to providing a friendly, safe, and welcoming environment for all, regardless of age, disability, gender, nationality, race, religion, sexuality, or similar personal characteristic.
@@ -104,12 +112,6 @@ If you encounter a conduct-related issue, you should report it to the Working Gr
 
 Changes to the Code of Conduct should be proposed by [creating an issue](https://github.com/hackclub/hackclub/issues/new) or making a pull request to this document.
 
-## Summary
-
-- Treat everyone with respect and kindness.
-- Be thoughtful in how you communicate.
-- Don't be destructive or inflammatory.
-- If you encounter an issue, please mail <conduct@hackclub.com>.
 
 ## Acknowledgments
 
