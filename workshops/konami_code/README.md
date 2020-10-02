@@ -253,8 +253,8 @@ function keysDetector(e) {
 ... // all the above code
 
 if (keys.length > secretCode.length) {
-		keys.shift()
-	}
+  keys.shift()
+  }
 }
 ```
 
