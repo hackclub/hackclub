@@ -2,9 +2,11 @@
 
 This workshop requires that you know how to set up a hello world discord bot! It is REALLY easy. If you do not know how to create a this look at [this link](https://workshops.hackclub.com/hello_bot/).
 
-Okay! All good! Let's start! ***make sure to put json with brackets***
+Okay! All good! Let's start!
 
-You should have something that looks like this. There are a few things here you won't understand but will be explained.
+You will start with an index.js file. This is where you will be writing your javascript code. Also, create a file cased msgs.json and add a pair of brackets to it. This will be where the messages will be stored. If you do not know what a JSON is, it is a file format that allows you to save key value pairs. If you need for information, check [here](https://www.json.org/json-en.html)
+
+In your index you should have something that looks like this that you will be familiar with from creating a Hello World bot program, but there are a few things here you won't understand but will be explained.
 ```js
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -19,7 +21,7 @@ bot.login('token')
 ```
 *Make sure you insert your bot token where 'token' is*
 
-Let's start by explaining what the prefix is. It allows you to use an exclamation mark to call the bot!
+Let's start by explaining what the prefix is. It allows you to use an exclamation mark to call the bot! Some people have other prefixes such as a dash or pound symbol. It is up to you!
 ```js
 prefix = "!"
 ```
@@ -30,16 +32,17 @@ const fs = require("fs");
 client.msgs = require("./msgs.json");
 ```
 The fs is a file system node module. You need it to write to files.
-The line after this is creating a json file where messages will be written to.
+The line after this says that the json file we created will have messages that will be written to it.
 
 
-Now let's start with the write message command. This will allow you to add your own custom messages.
+Now let's start with the write message command. This will allow you to add your own custom messages. The user will provide a key that the message will be saved to and the message itself.
 Within your client.on brackets add this if statement.
 ```js
 if (message.content.startsWith(`${prefix}write `))
 {}
-```
-What this does is make sure your bot command starts with !write
+```'
+The message.content part of this just looks at the message that the user typed.
+What this does in this case is make sure your bot command starts with !write
 The bot command will be !write {messageKey} {message}
 
 Within the if statement add these lines of code
@@ -61,8 +64,8 @@ if (client.msgs[message.author.id] == undefined)
 }
 client.msgs[message.author.id][keyVal] = messageVal
 ```
-If the user does not exist in the json, we are adding them. We are doing this based on id rather than username.
-Then we are adding the message under the user id in the json.
+If the user does not exist in the json, we are adding them. We are doing this based on id rather than username because every id is unique.
+Then, we are adding the message under the user id in the json.
 
 Now let's add the user to the json file.
 ```js
