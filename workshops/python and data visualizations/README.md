@@ -155,7 +155,7 @@ Check it out in your Jupyter Editor!
 
 ## Step Three!
 
-*Make sure libraries are uploaded, look back @ Step Two if needed*
+*Make sure libraries are uploaded, look back @ Step Two if needed*.
 
 Set up spacing of your x and y axis...
  ```python
