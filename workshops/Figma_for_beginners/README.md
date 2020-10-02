@@ -1,3 +1,9 @@
+---
+name: 'Figma for Beginners'
+description: 'Start designing in Figma'
+author: '@PavithSudhirAP'
+---
+
 # Figma for Beginners
 
 **Figma is a vector graphics editor and prototyping tool that can be used for making most of the digital designs. Its the best in what it does and knowing the basics is all that you need to get going!**
