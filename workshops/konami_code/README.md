@@ -28,13 +28,9 @@ Here's the [live demo](https://Konami-code.faisalsayed1.repl.co/) and the [sourc
 
 ## Part 1: Prerequisites
 
-You should have a beginner understanding of:
-
- ["HTML", "CSS", "JavaScript"]
+You should have a beginner understanding of ["HTML", "CSS", "JavaScript"].
  
- You should also know the basics of 'Arrays'. Also for this workshop, we will need a library called 'confetti.js'. 
-
-Download it by going [here](https://cloud-72a7nfmm7.vercel.app/index.min.js). Right click and select 'save as'.
+You should also know the basics of [`Arrays`](https://www.w3schools.com/js/js_arrays.asp).
 
 ## Part 2: Setup
 
@@ -42,51 +38,21 @@ Download it by going [here](https://cloud-72a7nfmm7.vercel.app/index.min.js). Ri
 
 [Repl.it](https://repl.it) is an online code editor. You don't have to use Repl.it but I suggest you do as it sets everything up for you and you don't require any installations.
 
-To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
+To get started, go to [this starter code](https://repl.it/@FaisalSayed1/Starter-Code). Now you'll see a 'fork' option on the top. Click it and your coding environment will spin up in just a few seconds!
 
 You should see something like the following:
 
 ![Image](https://cloud-p7qnbqzo6.vercel.app/image.png)
 
-Import the confetti.js (`index.min.js`) file which you downloaded on the left side of the screen.
-
-![Image](https://cloud-2d72c0n78.vercel.app/indexminjs.gif)
-
 ## Part 3: Building the project
 
 ### 1) HTML
 
-Let's start writing the HTML code required in the `index.html` file. First, we'll import the required JavaScript libraries/files.
+Let's start writing the HTML code required in the `index.html` file. 
 
-Inside the `<head>` tag, we'll import the [`anime.js`](https://animejs.com/) library. Copy the code given below.
-```html
-<script src="https://cutt.ly/anime_js"></script>
-```
-Also link the `index.min.js` file to our HTML inside the `<head>` tag.
-```html
-<script src="index.min.js"></script>
-```
-The code so far:
+The starter code contains the two libraries, `confetti.js` and `anime.js` already installed and imported for you!
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet"
-    type="text/css" />
-    <script src="https://cutt.ly/anime_js"></script>
-    <script src="index.min.js"></script>
-  </head>
-  <body>
-    <script src="script.js"></script>
-  </body>
-</html>
-```
-
-Next, we'll add some basic HTML code inside of our `<body>` tag.
+Add some basic HTML code inside of our `<body>` tag.
 
 ```html
 <canvas id="my-canvas"></canvas>
@@ -316,8 +282,7 @@ a === a; // true
 a === b; // false
 ```
 
-So, we'll need to go another way which is known as...  
-**`JSON.stringify()`**!
+So, we'll need to go another way which is known as... **`JSON.stringify()`**!
 
 The JSON.stringify() method will convert a JavaScript object or value to a JSON string. So, we will first convert both the arrays to a string and then, we are free to compare it!
 
@@ -434,9 +399,7 @@ Try to type the Konami Code which you have specified on the website and see the 
 
 If you haven't created an account on [repl.it](https://repl.it), make sure you do so to save this wonderful piece of creation!
 
-Here's how you can create a repl.it account:
-
-If you still face difficulties in signing up watch [this](https://www.youtube.com/watch?v=Mtqp4CUepk0).
+If you face any difficulties in signing up watch [this](https://www.youtube.com/watch?v=Mtqp4CUepk0).
 
 
 Now it is up to you! Do anything with this project, try to implement an easter egg similar to this in your other websites!
