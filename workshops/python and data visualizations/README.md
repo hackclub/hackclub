@@ -6,7 +6,7 @@ You after you make your first data visualization^
 
 *Follow along with this workshop to gain some data science skills! You will use python to create basic graphs and visualizations with real data. You can hand draw a graph anytime you want, but why not learn how to code one! You will learn about matplotlib, pandas, and numpy, so you can create any graph or vizualizaiton you dream of!*
 
-Get started by going to [Try Jupyter](https://jupyter.org/try). When you get to the website you will see something like this...
+Get started by going to [Jupyter](https://jupyter.org/try). When you get to the website you will see something like this...
 
 
 **![Showing Homepage of Jupyter](https://lh5.googleusercontent.com/kf8WU2xC639Ogql75pwjVJFsHLkL1Jc39FNmU985vWokqKD7IsnbpUYYgYTn1ke_RzrsH4E3zELEMEAGhdUFwghXyNX75iWV8kwH_v4ADJETTzO-5IsHcijdSwtwf3gbBbC994tc0FA)**
