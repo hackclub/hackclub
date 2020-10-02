@@ -6,15 +6,17 @@ author: '@faisalsayed10'
 
 # Rebar
 
-You probably must have built navbars in your websites. I bet it was a difficult challenge for many of us to build it responsive. Let's have a look on various navbars on the internet:
+You probably must have built navbar in your websites. I bet it was a difficult challenge for many of us to build it responsive. 
+
+Let's have a look on various navbars on the internet:
 
 The responsive nav:
 
-![Image](https://cloud-hskw22p2h.vercel.app/hackclub-nav.gif)
+[![Image](https://cloud-hskw22p2h.vercel.app/hackclub-nav.gif)](https://hackclub.com)
 
 The simple nav:
 
-![Image](https://cloud-o35ba6qxw.vercel.app/fayd-nav.gif)
+[![Image](https://cloud-o35ba6qxw.vercel.app/fayd-nav.gif)](https://fayd.me)
 
 Or even this?
 
@@ -73,11 +75,11 @@ First, we'll build a simple structure of the Navbar:
 </body>
 ```
 
-Explanation: In the `<nav>` element, we create an unordered list (`<ul>`) with the list items (`<li>`) in the form of navlinks.
+Explanation: In the `<nav>` element, we create an unordered list (`<ul>`) with the list items (`<li>`) as navlinks.
 
-Also, the `<nav>` element has a class of `navbar`. The `<ul>` has a class of `elements`. The `<li>` has a class of `nav-el`. And as always, the  `<script>` tag is below all these lines.
+Also, the `<nav>` element has a class of `navbar`, the `<ul>` has a class of `elements`, the `<li>` has a class of `nav-el` and as always, the  `<script>` tag is below all these lines.
 
-Now, we will also create the burger button which will only be visible for smaller screens and it will make the navbar popup from the side. It will come below the unordered list inside the `<nav>` element.
+Now, we will also create a burger button which will only be visible for smaller screens and it will make the navbar pop up from the side. It will come below the unordered list inside the `<nav>` element.
 
 ```html
 <div class="burgerDiv">
@@ -95,31 +97,44 @@ If you run the code now, you will see an unordered list in the preview similar t
 
 ![Image](https://cloud-agu2nwz83.vercel.app/image.png)
 
-Umm... Why didn't our button render? We have built it, right? That's because its width and height now are 0 pixels as default. We will need to specify its size in the CSS.
+Umm... Why didn't our button render? That's because its default width and height are 0 pixels. We will need to specify its size in the CSS.
 
-Your code so far:
+<details>
+<summary>The HTML code so far:</summary>
+
 ```html
-<body>
-  <nav class="navbar">
-    <ul class="elements">
-      <li class="nav-el">HOME</li>
-      <li class="nav-el">ABOUT</li>
-      <li class="nav-el">CONTACT</li>
-      <li class="nav-el">PROJECTS</li>
-    </ul>
-    <div class="burgerDiv">
-      <div class="rows">
-        <div class="span"></div>
-        <div class="span"></div>
-        <div class="span"></div>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Responsive Navbar</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="elements">
+        <li class="nav-el">HOME</li>
+        <li class="nav-el">ABOUT</li>
+        <li class="nav-el">CONTACT</li>
+        <li class="nav-el">PROJECTS</li>
+      </ul>
+      <div class="burgerDiv">
+        <div class="rows">
+          <div class="span"></div>
+          <div class="span"></div>
+          <div class="span"></div>
+        </div>
       </div>
-    </div>
-  </nav>
-  <script src="script.js"></script>
-</body>
+    </nav>
+    <script src="script.js"></script>
+  </body>
+  </html>
 ```
 
-So without any further ado, let's move on to the CSS!
+</details>
+<br>
+Without any further ado, let's move on to the CSS!
 
 ### 2) CSS
 
@@ -161,9 +176,9 @@ An elaborate explanation of `justify-content` and its various properties:
 
 Image courtesy: [css-tricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-Next, we have the `list-style: none;` which will remove the bulleted points which are default to unordered lists. Then we give the element some extra space using the `padding-top: 10px;` and `padding-bottom: 10px;`.
+Next, we have the `list-style: none;` which will remove the bulleted points which are default to unordered lists. Then we give the element some extra space on top and bottom using the `padding-top: 10px;` and `padding-bottom: 10px;`
 
-Then the `color`, `font-weight`, `font-size` properties are defined which will affect the text inside the element. The `background-color: #89a0ce;` property is pretty much self explanatory. Then we give it some transition properties of 0.5 seconds as the transition duration and the transition effect as `cubic-bezier`.
+Next, the `color`, `font-weight`, `font-size` properties are defined which will affect the text inside the element. The `background-color: #89a0ce;` property is pretty much self explanatory. Then we give it some transition properties of 0.5 seconds as the transition duration and the transition effect as `cubic-bezier`.
 
 Learn about [cubic bezier](https://www.geeksforgeeks.org/css-cubic-bezier-function/).
 
@@ -192,7 +207,7 @@ Let's click on 'RUN' and test it out!
 
 Here, you can see the list in the form of navbar and you can also see the burger button. Notice when you hover on it, your cursor will change to `pointer`.
 
-Also, we don't want the burger button to be displayed now, so we will make it to `display: none;`.
+Also, we don't want the burger button to be displayed now, so we will make it to `display: none;`
 
 ```css
 .burgerDiv {
@@ -200,7 +215,9 @@ Also, we don't want the burger button to be displayed now, so we will make it to
 }
 ```
 
-Here's the code so far:
+<details>
+<summary>Here's the code so far:</summary>
+
 ```css
 * {
   margin: 0;
@@ -237,8 +254,9 @@ Here's the code so far:
   display: none;
 }
 ```
-
-Next, we will add a media query. Now what are media queries? Media queries are useful when you want to modify your site or app depending on a device's specific characteristics and parameters (such as screen resolution or browser viewport width). So, we will write a media query if we want to modify the looks of our site in a mobile device. A normal mobile device's width is somewhat 450px.
+</details>
+<br>
+Next, we will add a media query. Now what are media queries? Media queries are useful when you want to modify your site or app depending on a device's specific characteristics and parameters (such as screen resolution or browser viewport width). A normal mobile device's width is somewhat 450px.
 
 So we can write the media query such that:
 ```css
@@ -249,7 +267,7 @@ So we can write the media query such that:
 
 Learn more about [`media-queries`](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries).
 
-Now, all the styles which comes under this query will only be applied when the `max-width:450px` condition is true.
+Now, all the styles which come under this query will only be applied when the `max-width:450px` condition is true.
 
 Here, we will make our navbar vertical instead of horizontal and we'll push it off screen.
 ```css
@@ -258,7 +276,6 @@ Here, we will make our navbar vertical instead of horizontal and we'll push it o
     flex-direction: column;
     align-items: center;
     position: absolute;
-    left: 0%;
     margin: 0;
     padding: 20px;
     width: 35%;
@@ -270,9 +287,9 @@ Here, we will make our navbar vertical instead of horizontal and we'll push it o
 
 Explanation: When the screen resolution becomes less than 450px, these styles will get applied. So here, we make the `flex-direction` of the navbar to `column`, we align the items to center and we make the `position` to `absolute` so it can somewhat float on the browser screen without disturbing other elements on the page.
 
-The `left` position is set to `0%` so that the navbar is perfectly near the left side of the screen. All the `margins` are removed and a `padding` of 20px is applied. The `width` is set to 35% so it will take 35% of the width of a screen. `height` is 100% so that the navbar is spread throughout the page vertically. 
+All the `margins` are removed and a `padding` of 20px is applied. The `width` is set to 35% so it will take 35% width of the screen. `height` is 100% so that the navbar is spread throughout the page vertically. 
 
-A `tranform` property is applied which specifies the element's x position on the screen. The element is -100% in the x direction (which is offscreen).
+A `transform` property is applied which specifies the element's x position on the screen. The element is -100% in the x direction (which is offscreen).
 
 Now if you click 'RUN' and if the preview window's width is more than 450px, you'll see everything normal. Try shrinking down the preview window and at a point, you'll see the navbar go offscreen vertically.
 
@@ -299,7 +316,8 @@ That is pretty much it for the media query and let's test it out. We'll see that
 
 ![If u are not seeing this gif, im really sorry, the link must've expired](https://cloud-j9jziti6y.vercel.app/media-query-test2.gif)
 
-Your code so far:
+<details><summary>Your code so far:</summary>
+
 ```css
 * {
   margin: 0;
@@ -341,7 +359,6 @@ Your code so far:
     flex-direction: column;
     align-items: center;
     position: absolute;
-    left: 0%;
     margin: 0;
     padding: 20px;
     width: 35%;
@@ -358,6 +375,9 @@ Your code so far:
 }
 ```
 
+</details>
+<br>
+
 *Outside the media query, We'll add some styles to the classes which don't even exist.* 
 
 *Wait what? why?*  
@@ -365,7 +385,7 @@ Your code so far:
 
 *Okay... Okay... Just kidding... That non existing classes hold some importance. FINE? Oh God. I'm not wasting your precious time...*
 
-Let's start by adding styles to a class `sidebar`
+Let's start by adding styles to a class named `sidebar`.
 
 ```css
 .sidebar {
@@ -396,81 +416,7 @@ Explanation: Remember we placed our navbar offscreen? Yes, so to bring it back o
 
 Also, the next three classes are defined with the purpose of bringing an animation in the button when it is clicked. We will rotate the first and the third line of the burger button so that it will look like a close button (X). The middle line gets hidden as we scale it down to 0. This will also be toggled using JavaScript.
 
-The final code:
-```css
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.elements {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: whitesmoke;
-  font-weight: 500;
-  font-size: 20px;
-  background-color: #89a0ce;
-  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.rows {
-  cursor: pointer;
-}
-
-.span {
-  width: 30px;
-  height: 4px;
-  background-color: black;
-  margin-bottom: 5px;
-  border-radius: 2px;
-  transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-}
-
-.burgerDiv {
-  display: none;
-}
-
-@media (max-width: 450px) {
-  .elements {
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    left: 0%;
-    margin: 0;
-    padding: 20px;
-    width: 35%;
-    height: 100%;
-    transform: translateX(-100%);
-  }
-  .burgerDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 20px;
-    padding-top: 20px;
-  }
-}
-
-.sidebar {
-  transform: translateX(0px);
-}
-
-.line-0 {
-  transform: rotate(45deg) translate(4.5px, 12px);
-}
-
-.line-1 {
-  transform: scale(0);
-}
-
-.line-2 {
-  transform: rotate(-45deg) translateY(-7.5px);
-}
-```
-
+Refer [here](https://repl.it/@FaisalSayed1/Responsive-Navbar#style.css) for the CSS code so far.
 
 And with dozens of lines of CSS code, let's move on to JavaScript.
 
@@ -478,12 +424,12 @@ And with dozens of lines of CSS code, let's move on to JavaScript.
 
 *Honestly, there are just nearly 10 lines of code. So hang tight and don't freak out!*
 
-First we will link the navbar, the burger button and each of the burger button lines. Confused? You'll get it in a moment.
+First we will link the navbar, the burger button and each line of the burger button to some variables. Confused? You'll get it in a moment.
 
 ```js
 const nav = document.querySelector(".elements");
 const button = document.querySelector(".rows");
-const spans = document.querySelectorAll(".span");
+const lines = document.querySelectorAll(".span");
 ```
 
 Explanation: The first variable `nav` contains the whole navbar. The second variable `button` contains the whole burger button.
@@ -491,30 +437,30 @@ Explanation: The first variable `nav` contains the whole navbar. The second vari
 Notice that we used `querySelector()` for the first 2 variables but `querySelectorAll()` for the last one.
 
 Now first of all, what even is a `querySelector()`?  
-The querySelector() returns the first element within the document that matches the specified selector(s).
+The `querySelector()` returns the first element within the document that matches the specified selector(s).
 
-So, `querySelectorAll()` returns all the elements that matches the specified selector. So all the elements with the class of `span` get selected and they are stored in a `NodeList`.
+So, `querySelectorAll()` returns all the elements that matches the specified selector. Just like that, in the 3rd line, all the elements with the class of `span` get selected and they are stored in a `NodeList`.
 
 Now `NodeLists` are somewhat similar to `Arrays` and `Objects` but they are not `Arrays` or `Objects`. We don't need to go deeper into it but if you want to learn more about it then check [this](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) out.
 
-So that means all 3 of the burger button lines are now stored in the `spans` variable.
+So that means all 3 of the burger button lines are now stored in the `lines` variable.
 
-Next, we will create a `toggler()` function and we will toggle all the extra classes in there.
+Next, we will create a `toggler()` function and we will toggle the styles and animations (which are stored in the extra classes which we made).
 
 ```js
 function toggler() {
   nav.classList.toggle("sidebar");
-  spans[0].classList.toggle("line-0");
-  spans[1].classList.toggle("line-1");
-  spans[2].classList.toggle("line-2");
+  lines[0].classList.toggle("line-0");
+  lines[1].classList.toggle("line-1");
+  lines[2].classList.toggle("line-2");
 }
 ```
 
 Explanation: The navbar will get a class of `sidebar` when the function will be called for the first time and that class will get removed when the function will be called the next time. 
 
-Also, as the `spans` variable is a `NodeList`, we can access each element in it using its index. So, the first burger button line gets toggled with the class of `line-0` and in the same way the next two lines also get toggled with the respective classes.
+Also, as the `lines` variable is a `NodeList`, we can access each element in it using its index. So, the first burger button line gets toggled with the class of `line-0` and in the same way the next two lines get toggled with their respective classes.
 
-Now, we need to class this function every time the button gets clicked, so we will add an `event listener` to the code outside the function.
+Now, we need to call this function every time the button gets clicked, so we will add an `event listener` on the button outside the function.
 
 ```js
 button.addEventListener("click", toggler);
@@ -535,18 +481,33 @@ If you haven't created an account on [repl.it](https://repl.it), make sure you d
 If you still face difficulties in signing up watch [this](https://www.youtube.com/watch?v=Mtqp4CUepk0).
 
 Here are some things which you can do:
-1. All the Navbars you've built before, try to upgrade them referring to this workshop!
-2. Try to implement it in such a way that its always a sidebar and not in the top! 
+
+1. Try to upgrade all the navbars you've ever built referring to this workshop!
+
+2. Try to implement it in such a way that its always a sidebar and not in the top!
+
 3. Try to make the navbar popup from the top or bottom, instead of from left.
+
 4. Try to think of more unique ideas on how you can enhance this project.
 
-**Examples on how people built it:**  
-- []()  
-- []()  
-- []()
+**Some more examples for you**
+- [Example 1](https://repl.it/@FaisalSayed1/Responsive-Navbar-Example-1)
+
+- [Example 2](https://repl.it/@FaisalSayed1/Responsive-Navbar-Example-2)
+
+- [Example 3](https://repl.it/@FaisalSayed1/Responsive-Navbar-Example-3)
+
+**Examples on how people built it:**
+
 - []()
 
-Now that you have finished building this wonderful projects, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
+- []()
+
+- []()
+
+- []()
+
+Now that you have finished building this wonderful project, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
 
 You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.
 
