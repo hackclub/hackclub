@@ -4,7 +4,7 @@
 
 ![https://cloud-4evcx7nry.vercel.app/a4_-_3.png](https://cloud-4evcx7nry.vercel.app/a4_-_3.png)
 
-image source: unsplash
+image source: Unsplash
 
 This workshop is conducted for the ones who are not yet familiar with Figma, and this workshop will provide them with the basics to create their first design in Figma, be it a UI or a LOGO or a digital poster, any design they wish.
 
