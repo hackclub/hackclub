@@ -49,7 +49,7 @@ Choosing the right frame size is important for your design, especially when you 
 
 ---
 
-You can zoom in and out on the canvas using `ctrl + scroll` or by using `+` and `` keys.
+You can zoom in and out on the canvas using `ctrl + scroll` or by using `+` and `-` keys.
 
 You can pan around the canvas using the Hand tool (H). Holding down `space` will temporarily switch your pointer to hand tool.
 
