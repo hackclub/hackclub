@@ -151,7 +151,7 @@ fig,ax =plt.subplots(2,2) #creates 2 graph figues
 ```
 Check it out in your Jupyter Editor!
 
-*Can you tell I have a strange fascination with random things dancing hehe*
+*Can you tell I have a strange fascination with random things dancing hehe!*
 
 ## Step Three!
 
