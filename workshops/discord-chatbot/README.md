@@ -9,6 +9,7 @@ author: "@k4u5h4L"
 Make a discord bot which talks with you!
 
 References:
+
 - Here's the [final code](https://repl.it/@k4u5h4L/discord-chatbot-complete).
 
 - Here's the [starter code](https://repl.it/@k4u5h4L/discord-chatbot).
@@ -112,18 +113,31 @@ Now click on the "Small Talk" tab on the menu on the left side, and go ahead and
 ![small talk](https://cloud-9x2pb85rb.vercel.app/screenshot10.png)
 
 Now, we need to get API keys from dialogflow just like how we did it with Discord. For this, click on the gear icon beside your agent name. This will take you to the settings pannel of agent.
+Here click on your `Project ID` and open it in a new tab.
 
-![agent settings](https://cloud-cl244cmpv.vercel.app/screenshot11.png)
+![agent settings](https://cloud-q4uz3wse3.vercel.app/screenshot15.png)
 
-Here, click on the link for the "Service Account" and open it in a new tab.
+Now go to `Project settings` in your GCP console. If you haven't logged in to GCP, make sure you are using the same Google account with which you have created the Dialogflow agent with.
+
+![gcp console](https://cloud-q4uz3wse3.vercel.app/screenshot16.png)
+
+Now, you will be greeted with this page. Go to `Service Accounts` on the left hand menu.
+
+![gcp service account creation](https://cloud-q4uz3wse3.vercel.app/screenshot17.png)
+
+Now, click on the link for the `Service Account`.
 
 ![GCP service account](https://cloud-cl244cmpv.vercel.app/screenshot12.png)
 
 Here, click on your service account down there.
+(If your service doesn't exist, then wait for a while for it to get created. If it still doesn't appear, then create the agent once again. If this too doesn't work, then go ahead and create a new service account using the button beside `Service Accounts`)
 
 ![add key](https://cloud-cl244cmpv.vercel.app/screenshot13.png)
 
 Now, click on "Add Key" and create a new key in JSON format.
+
+(Create a new key even if a previous one exists)
+
 This should automatically get downloaded for you to your local system.
 
 This is your API key from Dialogflow. Keep this safe, as it has private information about your dialogflow account.
@@ -142,7 +156,7 @@ Go ahead to [this repl link](https://repl.it/@k4u5h4L/discord-chatbot) to code o
 
 Go on and fork the repl.
 
-Okay so now in the repl site, you need to create a file called `.env` in the working directory, and paste in the `TOKEN` value. Eg - suppose my token is 12345, it will look like
+Okay so now in the repl site, you need to create a file called `.env` in the working directory, and paste in the `TOKEN` value. Eg - suppose my token is `12345`, it will look like
 
 ```
 DISCORD_TOKEN=12345
@@ -150,7 +164,7 @@ DISCORD_TOKEN=12345
 
 Avoid any quotes. It should just be the name and value. Also don't forget to add in your project ID in the `.env` file as well. You will find it in the json file you downloaded.
 
-So in the end your `.env` file will look like this (assuming my project ID is qwerty):
+So in the end your `.env` file will look like this (assuming my `project ID` is qwerty):
 
 ```
 DISCORD_TOKEN=12345
@@ -190,20 +204,73 @@ We will modify the function to send a request to Dialogflow everytime a user sen
 
 Here's the code included with the modifications:
 
+- First, we will make an async function which takes in the text from the user as a parameter and declare a `projectId` variable in it.
+
 ```js
 async function replyMsg(textMsg) {
-  projectId = process.env.PROJECT_ID;
-  // A unique identifier for the given session
+  const projectId = process.env.PROJECT_ID;
+}
+```
+
+- Now we will have to create a session using a package called `uuid`. If you are using [this repl link](https://repl.it/@k4u5h4L/discord-chatbot) all the imports have been done for you. So we will just add the `sessionId` variable in that function.
+
+```js
+const sessionId = uuid.v4();
+```
+
+- Now we need to create a new session. This is nicely documented in the [this link](https://github.com/googleapis/nodejs-dialogflow#using-the-client-library). So we will set it all up.
+
+```js
+const sessionClient = new dialogflow.SessionsClient();
+const sessionPath = await sessionClient.projectAgentSessionPath(
+  projectId,
+  sessionId
+);
+```
+
+- So no we will create a request object which will be sent to Dialogflow to get processed. For this, we have to create a structure like this:
+
+```js
+const request = {
+  session: sessionPath,
+  queryInput: {
+    text: {
+      // The query to send to the dialogflow agent
+      text: textMsg,
+      // The language used by the client (en-US)
+      languageCode: "en-US",
+    },
+  },
+};
+```
+
+It takes in the `sessionPath` we just created, and a `queryInput`. In that we will will have to add a field called `text`, and again inside that we will have to feed in the user's text as a query. We will leave the `languageCode` as `"en-US"` since that's the language we're using.
+
+- So now finally, we will write code to filter out the response received.
+
+```js
+const responses = await sessionClient.detectIntent(request);
+const result = responses[0].queryResult;
+console.log(`Query: ${result.queryText}`);
+
+return await result.fulfillmentText;
+```
+
+Here, we will wait for the response, and when it's got, we will extract the `queryResult` from it. We will log the `queryText`, which is basically what the user sent for debugging purposes, and we shall return the `fulfillmentText`, which contains the reply for the user's text from Dialogflow.
+
+Now, your entire function will look like this:
+
+```js
+async function replyMsg(textMsg) {
+  const projectId = process.env.PROJECT_ID;
   const sessionId = uuid.v4();
 
-  // Create a new session
   const sessionClient = new dialogflow.SessionsClient();
   const sessionPath = await sessionClient.projectAgentSessionPath(
     projectId,
     sessionId
   );
 
-  // The text query request.
   const request = {
     session: sessionPath,
     queryInput: {
@@ -225,7 +292,7 @@ async function replyMsg(textMsg) {
 }
 ```
 
-So what's happening here?
+For those of you who need more explanation, y'all can read it down below:
 
 ![thinking](https://media.giphy.com/media/a5viI92PAF89q/giphy.gif)
 
@@ -288,9 +355,9 @@ You can go back to your dialogflow console and customise your bot even more! You
 
 Here are the codes some demos of how the project can be expanded upon:
 
-- Bot which sends your avatar and welcomes a new user into the server: [code](https://repl.it/@k4u5h4L/discord-chatbot-complete-avatar)
+- Bot which replies to the user about Hack Club: [code](https://repl.it/@k4u5h4L/discord-chatbot-complete)
 - Bot which sends a scraped meme when a user asks for one: [code](https://repl.it/@k4u5h4L/discord-chatbot-complete-meme)
-- Bot which tells you covid-19 related info based on the country: [code](https://repl.it/@k4u5h4L/discord-chatbot-complete-covid19)
+- Bot which tells you joke when called: [code](https://repl.it/@k4u5h4L/discord-chatbot-complete)
 
 ## Note:
 
