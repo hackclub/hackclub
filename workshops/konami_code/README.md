@@ -42,7 +42,7 @@ To get started, go to [this starter code](https://repl.it/@FaisalSayed1/Starter-
 
 You should see something like the following:
 
-![Image](https://cloud-p7qnbqzo6.vercel.app/image.png)
+![Image](https://cloud-axmnhdj9w.vercel.app/image.png)
 
 ## Part 3: Building the project
 
@@ -418,14 +418,11 @@ Check out these crazy examples!
 
 Check out what other hackclubbers have built!
 
-- [Tanishq](https://konami.tanishqsoni.repl.co/)  
-[Src Code](https://repl.it/@tanishqsoni/konami#index.html) 
+- [Tanishq](https://konami.tanishqsoni.repl.co/) - [Src Code](https://repl.it/@tanishqsoni/konami#index.html) 
 
-- [Aaryan](https://konami.aaryanporwal.repl.co/)  
-[Src Code](https://repl.it/@aaryanporwal/konami#index.html)  
+- [Aaryan](https://konami.aaryanporwal.repl.co/) - [Src Code](https://repl.it/@aaryanporwal/konami#index.html)  
 
-- [JackTDC](https://rapidniceregister.jacktdc.repl.co/)  
-[Src Code](https://repl.it/@JackTDC/RapidNiceRegister#index.html)
+- [JackTDC](https://rapidniceregister.jacktdc.repl.co/) - [Src Code](https://repl.it/@JackTDC/RapidNiceRegister#index.html)
 
 Now that you have finished building it, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
 
