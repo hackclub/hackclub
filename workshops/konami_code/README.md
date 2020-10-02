@@ -20,16 +20,11 @@ If you don't know what they are, check out these cool easter eggs/Konami Codes o
 
 Well, by now, you must have known what a Konami Code is. How about we build our own Konami Code?
 
-It will look something like this after someone types the Konami Code:
+Here's the demo of what we'll be building:
 
-[![Image](https://cloud-5apj3kt1e.vercel.app/image.png)](https://Konami-code.faisalsayed1.repl.co/)
+[![Image](https://cloud-95l2730mf.vercel.app/konamigif.gif)](https://Konami-code.faisalsayed1.repl.co/)
 
-Here's the [live demo](https://Konami-code.faisalsayed1.repl.co/)  
-Here's the [source code](https://repl.it/@FaisalSayed1/Konami-Code)
-
-Live demo: 
-
-![Image](https://cloud-95l2730mf.vercel.app/konamigif.gif)
+Here's the [live demo](https://Konami-code.faisalsayed1.repl.co/) and the [source code](https://repl.it/@FaisalSayed1/Konami-Code).
 
 ## Part 1: Prerequisites
 
