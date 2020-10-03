@@ -241,4 +241,6 @@ if (message.content == (`${prefix}help`))
 bot.login('token')
 ```
 *Make sure you insert your bot token where 'token' is*
-```
+
+## More that you can make
+this is not done I need to add the files to the other enchanced projects
