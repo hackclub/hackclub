@@ -1,10 +1,15 @@
 # Create a discord bot that allows you to save custom messages!
 
-This workshop requires that you know how to set up a hello world discord bot! It is REALLY easy. If you do not know how to create a this look at [this link](https://workshops.hackclub.com/hello_bot/).
+<img src="https://cloud-bj4vorj8t.vercel.app/examplebot.png" width="380" alt="Message Example">
 
-Okay! All good! Let's start!
+## Setup
+You should know how to set up a hello world discord bot for this workshop. It is REALLY easy. If you do not know how to create a this look [here](https://workshops.hackclub.com/hello_bot/).
 
-You will start with an index.js file. This is where you will be writing your javascript code. Also, create a file cased msgs.json and add a pair of brackets to it. This will be where the messages will be stored. If you do not know what a JSON is, it is a file format that allows you to save key value pairs. If you need for information, check [here](https://www.json.org/json-en.html)
+Let's start!
+
+You will start with an index.js file. This is where you will be writing your javascript code. Also, create a file cased msgs.json and add a pair of brackets to it. This will be where the messages will be stored. If you do not know what a JSON is, it is a file format that allows you to save key value pairs. If you need more information, check [here](https://www.json.org/json-en.html).
+
+<img src="https://cloud-gh7l7h2q1.vercel.app/json_example.png" width="380" alt="Write Command Example">
 
 In your index you should have something that looks like this that you will be familiar with from creating a Hello World bot program, but there are a few things here you won't understand but will be explained.
 ```js
@@ -34,13 +39,16 @@ client.msgs = require("./msgs.json");
 The fs is a file system node module. You need it to write to files.
 The line after this says that the json file we created will have messages that will be written to it.
 
-
+## Write Command
 Now let's start with the write message command. This will allow you to add your own custom messages. The user will provide a key that the message will be saved to and the message itself.
+
+<img src="https://cloud-kb9kganvz.vercel.app/write_message.png" width="380" alt="Write Command Example">
+
 Within your client.on brackets add this if statement.
 ```js
 if (message.content.startsWith(`${prefix}write `))
 {}
-```'
+```
 The message.content part of this just looks at the message that the user typed.
 What this does in this case is make sure your bot command starts with !write
 The bot command will be !write {messageKey} {message}
@@ -99,8 +107,11 @@ if (message.content.startsWith(`${prefix}write `))
 The write command is done! Try it out and check the JSON file!
 add image of what it looks like
 
-
+## Get Command
 Now let's do the get command. This allows you to get the message you saved!
+
+<img src="https://cloud-eing65rqs.vercel.app/get_message.png" width="380" alt="Get Command Example">
+
 ```js
 if (message.content.startsWith(`${prefix}get `))
 {
@@ -114,8 +125,11 @@ if (message.content.startsWith(`${prefix}get `))
 -The second line gets the message in the JSON file.
 -The third line has the bot send the message in the discord channel.
 
-
+## Delete Command
 Now let's do the delete command
+
+<img src="https://cloud-uvlarb2g1.vercel.app/delete_message.png" width="380" alt="Delete Command Example">
+
 ```js
 if (message.content.startsWith(`${prefix}delete `))
 {
@@ -134,7 +148,11 @@ if (message.content.startsWith(`${prefix}delete `))
 -The third line updates the JSON with the message now deleted.
 -The fourth line sends a message to let the user know the message was deleted.
 
+## List Command
 Now let's allow the user to get the list of all their saved messages.
+
+<img src="https://cloud-2ghj25por.vercel.app/list_message.png" width="380" alt="List Command Example">
+
 ```js
 if (message.content == (`${prefix}list`))
 {
@@ -153,8 +171,11 @@ if (message.content == (`${prefix}list`))
 -The for loop cycles through all the key value pairs messages that the user has saved. The inside of the loop adds the messageKey to the messageList.
 -The final message sends the messageList string to the discord channel.
 
-
+## Help Command
 Finally, let's create a help command that allows the user to see all the available commands.
+
+<img src="https://cloud-8qig9t4bs.vercel.app/help_message.png" width="380" alt="Help Command Example">
+
 ```js
 if (message.content == (`${prefix}help`))
 {
@@ -164,7 +185,7 @@ if (message.content == (`${prefix}help`))
 This message just sends a message to discord with all the available commands. You can add to it if you create your own!
 
 
-Final Source Code
+## Final Source Code
 ```js
 const Discord = require('discord.js')
 const client = new Discord.Client()
