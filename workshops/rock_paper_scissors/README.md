@@ -41,7 +41,6 @@ You should see something like the following:
 ### 1)Importing Modules
 Let us start making our game! First, we'll need to import some modules
 So in the first line type `from random import randient`. This will import the radient module
-![Image]()
 
 ### 2)Giving values to the variables
 First let's make a list for all th entries a plyer could enter,
