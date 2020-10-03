@@ -241,6 +241,9 @@ Here are some things which you can do:
 
 - Consider changing and adding more features!
 - Try to think of more unique ideas on how you can add more features (displaying the date etc).
+- Making the game a two player game.
+- Make the game only of 3 turns.
+- You can give the text a typewriter effect.
 
 Now that you have finished building this wonderful clock, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
 
