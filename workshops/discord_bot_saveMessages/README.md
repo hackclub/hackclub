@@ -1,6 +1,6 @@
 ---
 name: 'Discord Custom Message Bot'
-description: 'Save your own own custom messages!'
+description: 'Save your own own custom messages with a Discord Bot!'
 author: '@JakeGerber'
 ---
 # Create a discord bot that allows you to save custom messages!
