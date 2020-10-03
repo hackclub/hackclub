@@ -67,11 +67,11 @@ TicTacToe()
 
 You should get something like this when you run the code:
 
-![Tic%20Tac%20Toe%2001edb0332c1e43d98ca95c5c6c51dd1d/Untitled.png](Tic%20Tac%20Toe%2001edb0332c1e43d98ca95c5c6c51dd1d/Untitled.png)
+![Showing printed board on a terminal](https://cloud-hztfs3uyy.vercel.app/untitled.png)
 
 Awesome! We now have our board printed in the terminal. It's time to get actual inputs from the players!
 
-### Getting user input
+### Getting input from the user
 
 We have to take input from the players and keep it as simple as possible. The players can type any number from 1 to 9 to place their corresponding sign, cross `X` or nought `O` in the boxes. We are going to print a message asking for an input later in the main loop. For now, let's just create a function to get a valid number from the user. 
 
@@ -118,7 +118,7 @@ def GetNumber():
 
 You can now go ahead and run the function to see if it filters out invalid inputs properly.
 
-![Tic%20Tac%20Toe%2001edb0332c1e43d98ca95c5c6c51dd1d/Untitled%201.png](Tic%20Tac%20Toe%2001edb0332c1e43d98ca95c5c6c51dd1d/Untitled%201.png)
+![Code only taking values 1-9 as input on the terminal](https://cloud-hztfs3uyy.vercel.app/untitled_1.png)
 
 ### The main loop
 
@@ -144,7 +144,7 @@ We need a loop to run the game, as there will be up to 9 turns (one for each box
 
 Both players should now be able to place a sign in turns now. 
 
-![Tic%20Tac%20Toe%2001edb0332c1e43d98ca95c5c6c51dd1d/Untitled%202.png](Tic%20Tac%20Toe%2001edb0332c1e43d98ca95c5c6c51dd1d/Untitled%202.png)
+![Code taking input from both palyers](https://cloud-hztfs3uyy.vercel.app/untitled_2.png)
 
 But, we never checked if a player has won or players have run out of moves. Let's now work on that next.
 
