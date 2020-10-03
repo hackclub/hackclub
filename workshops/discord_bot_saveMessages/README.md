@@ -24,6 +24,10 @@ const fs = require("fs");
 client.msgs = require("./msgs.json");
 prefix = "!"
 
+client.once('ready', () => {
+    console.log('Ready!')
+})
+
 client.on('message', (message) => {
 })
 
@@ -43,6 +47,13 @@ client.msgs = require("./msgs.json");
 ```
 The fs is a file system node module. You need it to write to files.
 The line after this says that the json file we created will have messages that will be written to it.
+
+```js
+client.once('ready', () => {
+    console.log('Ready!')
+})
+```
+This part just let's you know the bot is on when you run it.
 
 ## Write Command
 Now let's start with the write message command. This will allow you to add your own custom messages. The user will provide a key that the message will be saved to and the message itself.
@@ -197,6 +208,10 @@ const client = new Discord.Client()
 const fs = require("fs");
 client.msgs = require("./msgs.json");
 prefix = "!"
+
+client.once('ready', () => {
+    console.log('Ready!')
+})
 
 client.on('message', (message) => {
 if (message.content.startsWith(`${prefix}write `))
