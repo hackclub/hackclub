@@ -224,6 +224,17 @@ if (message.content.startsWith(`${prefix}get `))
   message.channel.send(_msg);
 }
 
+if (message.content.startsWith(`${prefix}delete `))
+{
+  let getMessage = message.content.slice(8);
+
+  delete client.msgs[message.author.id][getMessage];
+
+  fs.writeFileSync("./msgs.json", JSON.stringify(client.msgs));
+
+  message.channel.send(getMessage + " has been deleted.");
+}
+
 if (message.content == (`${prefix}list`))
 {
   var messageList = "";
