@@ -27,7 +27,7 @@ prefix = "!"
 client.on('message', (message) => {
 })
 
-bot.login('token')
+client.login('token')
 ```
 *Make sure you insert your bot token where 'token' is*
 
@@ -254,7 +254,7 @@ if (message.content == (`${prefix}help`))
 
 })
 
-bot.login('token')
+client.login('token')
 ```
 *Make sure you insert your bot token where 'token' is*
 
