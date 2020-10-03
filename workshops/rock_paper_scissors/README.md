@@ -74,6 +74,7 @@ PC = 0
 
 ### 3)Keeping the game in a loop
 ![Image](https://cloud-nmra250be.vercel.app/loop.gif)
+
 For this game I will using `while` loop but you can also use `for` loop! 
 
 So for starters type,
