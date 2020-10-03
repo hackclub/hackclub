@@ -218,28 +218,8 @@ def CheckWin(player):
       return True
 ```
 
-The main loop can now check for win with `CheckWin(player)`.
-
-```python
-while not end:
-  PrintBoard()
-  end = CheckWin("O")
-  if end == True:
-    break
-  print("Choose a box player X")
-  placing_index = GetNumber()
-  board[placing_index] = "X"
-
-  PrintBoard()
-  end = CheckWin("X")
-  if end == True:
-    break
-  print("Choose a box player O")
-  placing_index = GetNumber()
-  board[placing_index] = "O"
-```
-
-We are almost done. We still have one small bug to fix though. If you now try placing a sign into a box that's already occupied, our code will just overwrite the previous sign with the new one. This is not allowed in the game so let's fix it. It's convinent to have a function that we can just call when it's a player's turn, instead of doing the same thing twice in a loop. So let's make a function for it.
+We are almost done. We still have one small change though. If you now try placing a sign into a box that's already occupied, our code will just overwrite the previous sign with the new one. This is not allowed in the game so let's fix it. 
+It's convinent to have a function that we can just call when it's a player's turn, instead of writing the same code twice in a loop. So let's make a function for it.
 
 ```python
 def Turn(player):
@@ -344,22 +324,20 @@ def TicTacToe():
     print("Choose a box player O")
     Turn("O")
 
-  if input("Play again? (y/n)\n") == "y":
-    print()
-    TicTacToe()
 
 TicTacToe()
 ```
 
-You can go ahead and code an option to play again if you like. You should now be able to play Tic Tac Toe with a friend in the terminal! You can run my code [here](https://repl.it/@prithul0218/Tic-Tac-Toe).
+You should now be able to play Tic Tac Toe with a friend in the terminal! You can run my code [here](https://repl.it/@prithul0218/Tic-Tac-Toe).
 
 ## Hacking
 
 Now you have control on this code. Go ahead and tinker with it to see if you can find ways to make it more fun. Here are some ideas:
 
+- Add a play again option. *(hint: use [recursion](https://www.geeksforgeeks.org/recursion/))*
 - Change the first player between X and O each time player chooses to play again.
-- Add a score feature to record each players score across multiple games.
-- Code an AI second player with the minimax algorithm. Me and [@A.N.M. Noor](https://hackclub.slack.com/team/U01BLNA1H9S) made one here: [https://repl.it/@prithul0218/Tic-Tac-Toe-minimax](https://repl.it/@prithul0218/Tic-Tac-Toe-minimax)
+- Add a score feature to record each players score across multiple games. 
+- Code an AI second player with the minimax algorithm. I and [@A.N.M. Noor](https://hackclub.slack.com/team/U01BLNA1H9S) made one here: [https://repl.it/@prithul0218/Tic-Tac-Toe-minimax](https://repl.it/@prithul0218/Tic-Tac-Toe-minimax)
 
 While it may look like a tiny game with only 9 boxes, there are 255168 possible game of the Tic Tac Toe excluding symmetrical outcomes. The first player wins in 131184 of these, the second player wins 77904 games and the remaining 46080 are drawn. That's a lot of ways to win. Make sure to be the first player for some extra chance of winning. ;)
 
