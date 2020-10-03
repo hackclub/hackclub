@@ -1,3 +1,8 @@
+---
+name: 'Discord Custom Message Bot'
+description: 'Save your own own custom messages!'
+author: '@JakeGerber'
+---
 # Create a discord bot that allows you to save custom messages!
 
 <img src="https://cloud-bj4vorj8t.vercel.app/examplebot.png" width="380" alt="Message Example">
