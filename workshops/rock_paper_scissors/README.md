@@ -242,7 +242,7 @@ Here are some things which you can do:
 - Consider changing and adding more features!
 - Making the game a two player game.
 - Make the game only of 3 turns.
-- You can give the text a typewriter effect.If you dont know how to do it watch [this][typewritter] video
+- You can give the text a typewriter effect. (If you dont know how to do it watch [this][typewritter] video)
 
 [typewritter]: https://youtu.be/2h8e0tXHfk0
 
