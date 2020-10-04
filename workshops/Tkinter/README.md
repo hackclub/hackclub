@@ -4,6 +4,8 @@ description: "Let's build a slideshow of quotes with Tkinter and Python!"
 author: "@bezlin6mechminerz"
 ---
 
+Having user interfaces are very useful because it gives the user good interactive experiences. So today we will see how to make a simple user interface with python in this workshop.
+
 The workshop will look something like this.
 
 ![ezgif.com-video-to-gif-3.gif](https://cloud-ilsfagjwp.vercel.app/ezgif.com-video-to-gif-5.gif)
@@ -18,18 +20,14 @@ This workshop will take 20 minutes.
 
 ## Getting started
 
-We will be using [Tkinter](https://docs.python.org/3/library/tk.html) python library to develop the user interface.
+We will be using [Tkinter](https://docs.python.org/3/library/tk.html) a python library to develop the user interface. This project requires [Repl.it](https://repl.it) We will be using it for coding. This is awesome because you no need to install python on your machine. Just go to this link.
 
-## What is Tkinter
+To get started, [click here](https://repl.it/languages/Tkinter). Your coding environment will be ready in a few seconds!
+<img width="1440" alt="Screenshot 2020-09-18 at 5 39 06 PM" src="https://cloud-o8q46nkko.vercel.app/screenshot_2020-09-25_at_9.23.06_pm.png">
+
+#### What is Tkinter?
 
 Tkinter is a library in python used to make cool User Interfaces. What the user sees on the screen to interact with is called a user interface. So here we will use this library (Tkinter) to make it.
-
-### Setting up the environment for Tkinter
-
-[Repl.it](https://repl.it) We will be using it for coding. This is awesome because you no need to install python on your machine. Just go to this link.
-
-To get started, go to https://repl.it/languages/Tkinter. Your coding environment will be ready in a few seconds!
-<img width="1440" alt="Screenshot 2020-09-18 at 5 39 06 PM" src="https://cloud-o8q46nkko.vercel.app/screenshot_2020-09-25_at_9.23.06_pm.png">
 
 ## Code and explanation.
 
@@ -132,20 +130,30 @@ window.title("Quotes Hub")
 window.config(bg="black")
 tk.Label(window, font=("Helvetica", 60, "bold"),
          text="QUOTES HUB", bg="black", fg="white").pack()
-tk.Button(window,command=lambda:fun1(random.choice(quotelist)),text="Get In",bg="aqua",fg="black",width=20).place(x=315,y=300)
+tk.Button(window,command=lambda:clicked(random.choice(quotelist)),text="Get In",bg="aqua",fg="black",width=20).place(x=315,y=300)
 window.mainloop()
 ```
 
-As output, this will show an error that the function fun1 is not declared. So let us make the button work. You need to put this code above the window declaration then only it will work.
+As output, this will show an error that the function clicked is not declared. So let us make the button work. You need to put this code above the window declaration then only it will work.
 
 ```python
-def fun1(quote):
-  F1=tk.Frame(window,bg="light salmon",width=800,height=560)
-  F1.place(x=0,y=0)
-  tk.Label(F1,text=quote,font=("Helvetica", 30, "bold"),bg="light salmon",fg="black").pack()
+def clicked(quote):
 ```
 
-In this function, we are showing up a new page in which we display a random quote. As a page, we are using the Frame function. A-Frame widget is used to organize a group of widgets. It acts like a container that can be used to hold the other widgets. The rectangular areas of the screen are used to organize the widgets to the python application. Then in that frame, we display the quote at the center using the label function. We have passed the random quote to this function
+In this function, we are showing up a new page in which we display a random quote. As a page, we are using the Frame function.
+
+```python
+F1=tk.Frame(window,bg="light salmon",width=800,height=560)
+F1.place(x=0,y=0)
+```
+
+A Frame function is used to organize a group of widgets. It acts like a container that can be used to hold the other widgets. The rectangular areas of the screen are used to organize the widgets to the python application. Then in that frame, we display the quote at the center using the label function.
+
+```python
+tk.Label(F1,text=quote,font=("Helvetica", 30,"bold"),bg="light salmon",fg="black").pack()
+```
+
+We have passed the random quote to this function
 
 ```python
 text=quote
@@ -163,7 +171,7 @@ import random
 
 quotelist = ["Instead of wondering when your \nnext vacation is, maybe you \nshould set up a life you don’t \nneed to escape from.","Sometimes\n you win,\n sometimes \nyou learn.","Avoiding failure\n is to avoid \nprogress.","If the plan \ndoesn’t work, \nchange the plan,\n but never the \ngoal.","Creativity \nis \nintelligence \nhaving \nFun."]
 
-def fun1(quote):
+def clicked(quote):
   F1=tk.Frame(window,bg="light salmon",width=800,height=560)
   F1.place(x=0,y=0)
   tk.Label(F1,text=quote,font=("Helvetica", 30, "bold"),bg="light salmon",fg="black").pack()
@@ -173,7 +181,7 @@ window.title("Quotes Hub")
 window.config(bg="black")
 tk.Label(window, font=("Helvetica", 60, "bold"),
          text="QUOTES HUB", bg="black", fg="white").pack()
-tk.Button(window,command=lambda:fun1(random.choice(quotelist)),text="Get In",bg="aqua",fg="black",width=20).place(x=315,y=300)
+tk.Button(window,command=lambda:clicked(random.choice(quotelist)),text="Get In",bg="aqua",fg="black",width=20).place(x=315,y=300)
 window.mainloop()
 
 ```
