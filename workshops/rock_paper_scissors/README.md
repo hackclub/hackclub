@@ -243,7 +243,8 @@ Here are some things which you can do:
 - Making the game a two player game.
 - Make the game only of 3 turns.
 - You can give the text a typewriter effect.If you dont know how to do it watch [this][typewritter] video
-[typewritter]:https://youtu.be/2h8e0tXHfk0
+
+[typewritter]: https://youtu.be/2h8e0tXHfk0
 
 Now that you have finished building your game, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
 
