@@ -12,6 +12,8 @@ You should know how to set up a hello world discord bot for this workshop. If yo
 
 Let's start!
 
+<img src="https://media1.tenor.com/images/d17514e2c03ec6b0e67ba7f18439a011/tenor.gif" width="380" alt="Shawn Sheep Gif">
+
 First, create two files called index.js and msgs.json. We are naming the file “index.js” because it is conventional that the main javascript file of a node project is named either “index.js” or “server.js” While you can name this any name you want, index.js is highly recommended because many tutorials you will find online will use this naming format. Your messages will be stored in msgs.json. JSON is a file format that allows you to store data as a javascript object (key/value pair). If you want to learn more, [check here](https://www.json.org/json-en.html). As with defining a normal javascript object, your .json file should contain brackets as shown below.
 
 <img src="https://cloud-gh7l7h2q1.vercel.app/json_example.png" width="380" alt="Write Command Example">
@@ -56,6 +58,9 @@ client.once('ready', () => {
 This part just let's you know the bot is on when you run it.
 
 ## Write Command
+
+<img src="https://i.pinimg.com/originals/ca/38/b8/ca38b8f7e096956f258d406a7820c7ba.gif" width="380" alt="Snoopy Gif">
+
 Now let's start with the write message command. This will allow you to add your own custom messages. The user will provide a key that the message will be saved to and the message itself.
 
 <img src="https://cloud-kb9kganvz.vercel.app/write_message.png" width="380" alt="Write Command Example">
@@ -124,6 +129,9 @@ The write command is done! Try it out and check the JSON file!
 add image of what it looks like
 
 ## Get Command
+
+<img src="https://media2.giphy.com/media/xT9DPiHFM8Iy3hiC3e/giphy.gif" width="380" alt="Spongebob Gif">
+
 Now let's do the get command. This allows you to get the message you saved!
 
 <img src="https://cloud-eing65rqs.vercel.app/get_message.png" width="380" alt="Get Command Example">
@@ -142,6 +150,9 @@ if (message.content.startsWith(`${prefix}get `))
 -The third line has the bot send the message in the discord channel.
 
 ## Delete Command
+
+<img src="https://media3.giphy.com/media/26xBIUj4Y6K2LcIz6/source.gif" width="380" alt="Delete Gif">
+
 Now let's do the delete command
 
 <img src="https://cloud-uvlarb2g1.vercel.app/delete_message.png" width="380" alt="Delete Command Example">
@@ -165,6 +176,9 @@ if (message.content.startsWith(`${prefix}delete `))
 -The fourth line sends a message to let the user know the message was deleted.
 
 ## List Command
+
+<img src="https://media1.giphy.com/media/j2wpZyLy2s70ul4TKo/giphy-downsized-medium.gif" width="380" alt="List Gif">
+
 Now let's allow the user to get the list of all their saved messages.
 
 <img src="https://cloud-2ghj25por.vercel.app/list_message.png" width="380" alt="List Command Example">
@@ -188,6 +202,9 @@ if (message.content == (`${prefix}list`))
 -The final message sends the messageList string to the discord channel.
 
 ## Help Command
+
+![Help Gif](https://media1.tenor.com/images/361687b43fe908864be1cffd6beda642/tenor.gif?itemid=16034496)
+
 Finally, let's create a help command that allows the user to see all the available commands.
 
 <img src="https://cloud-8qig9t4bs.vercel.app/help_message.png" width="380" alt="Help Command Example">
