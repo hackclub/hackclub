@@ -240,10 +240,10 @@ If you are facing difficulties signing up watch [this](https://www.youtube.com/w
 Here are some things which you can do:
 
 - Consider changing and adding more features!
-- Try to think of more unique ideas on how you can add more features (displaying the date etc).
 - Making the game a two player game.
 - Make the game only of 3 turns.
-- You can give the text a typewriter effect.
+- You can give the text a typewriter effect.If you dont know how to do it watch [this][typewritter] video
+[typewritter]:https://youtu.be/2h8e0tXHfk0
 
 Now that you have finished building your game, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
 
