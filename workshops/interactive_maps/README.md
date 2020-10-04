@@ -143,6 +143,7 @@ This snippet primarily adds styling to our buttons. The actual styles themselves
 - `padding: ` sets padding to an element.
 - `font-family: ` specifies the fonts to use.
 - `background: ` sets the background of an element. It accepts text, rgb, rgba, and hex values.  
+
 After this, let's give some life into our buttons through a pulsing animation. This is a bit of intermediate CSS, so you don't have to understand what's happening now. However, I shall link the W3S reference after the snippet.
 ```css
 @keyframes pulse {
