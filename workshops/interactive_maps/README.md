@@ -185,8 +185,9 @@ After this, let's give some life into our buttons through a pulsing animation. T
   display: none;
 }
 ```
+
 You can learn more about the @keyframes rule at https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp  
-Now if you run the markup, the buttons would look pretty neat and the image would've resized itself. Time to give yourself a hooray!
+Now if you run the markup, the buttons would look pretty neat and the image would've resized itself. Time to give yourself a hooray!  
 
 ![hooray](https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif)
 
