@@ -8,11 +8,11 @@ author: '@JakeGerber'
 <img src="https://cloud-bj4vorj8t.vercel.app/examplebot.png" width="380" alt="Message Example">
 
 ## Setup
-You should know how to set up a hello world discord bot for this workshop. It is REALLY easy. If you do not know how to create a this look [here](https://workshops.hackclub.com/hello_bot/).
+You should know how to set up a hello world discord bot for this workshop. If you do not know how to create a this look [here](https://workshops.hackclub.com/hello_bot/).
 
 Let's start!
 
-You will start with an index.js file. This is where you will be writing your javascript code. Also, create a file cased msgs.json and add a pair of brackets to it. This will be where the messages will be stored. If you do not know what a JSON is, it is a file format that allows you to save key value pairs. If you need more information, check [here](https://www.json.org/json-en.html).
+First, create two files called index.js and msgs.json. We are naming the file “index.js” because it is conventional that the main javascript file of a node project is named either “index.js” or “server.js” While you can name this any name you want, index.js is highly recommended because many tutorials you will find online will use this naming format. Your messages will be stored in msgs.json. JSON is a file format that allows you to store data as a javascript object (key/value pair). If you want to learn more, [check out](https://www.json.org/json-en.html). As with defining a normal javascript object, your .json file should contain brackets as shown below.
 
 <img src="https://cloud-gh7l7h2q1.vercel.app/json_example.png" width="380" alt="Write Command Example">
 
