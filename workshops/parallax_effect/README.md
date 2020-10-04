@@ -13,7 +13,7 @@ To understand this workshop you will need to be familiar with HTML, CSS and Java
 
 We are going to make something like this
 
-<a href="https://total-parallax.giridharhackclu.repl.co/">![Final REsult](https://cloud-1z03ndewk.vercel.app/ezgif.com-gif-maker__2_.gif)</a>
+<a href="https://total-parallax.giridharhackclu.repl.co/">![Final Result](https://cloud-1z03ndewk.vercel.app/ezgif.com-gif-maker__2_.gif)</a>
 
 Here's the [live demo](https://total-parallax.giridharhackclu.repl.co/), and [source code](https://repl.it/@Giridharhackclu/total-parallax#index.html)
 
