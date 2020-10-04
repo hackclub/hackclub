@@ -273,5 +273,7 @@ client.login('token')
 ```
 *Make sure you insert your bot token where 'token' is*
 
-## More that you can make
-this is not done I need to add the files to the other enchanced projects
+## More that you can make with Source Code
+[Original Bot](other_file.md)
+[Original Bot](other_file.md)
+[Original Bot](other_file.md)
