@@ -274,6 +274,7 @@ client.login('token')
 *Make sure you insert your bot token where 'token' is*
 
 ## More that you can make with Source Code
-[Original Bot](workshops/discord_bot_saveMessages/Source Code/Discord-Bot-Workshop-SourceCode.zip)
-[Original Bot](other_file.md)
-[Original Bot](other_file.md)
+[Original Bot](https://repl.it/@CosmicSnowman/Discord-Bot-Workshop#index.js)
+[Expanded Bot with Community Messages](https://repl.it/@CosmicSnowman/WorkshopExpanded1#index.js)
+[Expanded Bot with Message Limits](https://repl.it/@CosmicSnowman/WorkshopExpanded2#index.js)
+[Expanded Bot with Random Messages](https://repl.it/@CosmicSnowman/WorkshopExpanded3#index.js)
