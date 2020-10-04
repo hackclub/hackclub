@@ -10,7 +10,7 @@ Have you ever thought about building a game with Python? Well today is your luck
 
 So let's get started.
 
-[![homepage](https://cloud-8p13u30yt.vercel.app/rps.png)]
+![homepage](https://cloud-8p13u30yt.vercel.app/rps.png)
 
 Here's the [live demo][final_live_demo] and [final code][final_code].
 
@@ -229,7 +229,7 @@ while player == False:
 ```
 
 ### 6) The End
-**And congratulations! You just made your own game using nearly 60 lines of Python!**
+**And congratulations! You just made your own game using Python!**
 
 ![Image](https://cloud-b32jvmwl1.vercel.app/congo.gif)
 
@@ -245,7 +245,7 @@ Here are some things which you can do:
 - Make the game only of 3 turns.
 - You can give the text a typewriter effect.
 
-Now that you have finished building this wonderful clock, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
+Now that you have finished building your game, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
 
 You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.
 
