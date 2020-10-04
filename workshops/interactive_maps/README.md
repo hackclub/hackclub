@@ -101,8 +101,8 @@ The :hover selector applies a style to an element when the mouse hovers over it.
   margin-right: auto;
 }
 ```
-This css snippet adds styling to our main webpage and the map image. Here, `overflow: hidden;` is a rule that hides the scrollbar on the site. `display: block;` allows the element to start from a new line and take up the whole width, just like a block in real life. Everythin else like `height` and `margin` should be self explanatory. Then, add this snippet in.
-```
+This css snippet adds styling to our main webpage and the map image. Here, `overflow: hidden;` is a rule that hides the scrollbar on the site. `display: block;` allows the element to start from a new line and take up the whole width, just like a block in real life. Everything else like `height` and `margin` should be self explanatory. Then, add this snippet in.
+```css
 .first{
   right: 80%;
   left: 20%;
@@ -134,6 +134,30 @@ This css snippet adds styling to our main webpage and the map image. Here, `over
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   transform: translate3d(0, 1px, 0);
 }
+```
+This snippet primarily adds styling to our buttons. The actual styles themselves would be easier learnt from https://w3schools.com as they have an enormous dictionary of styles. However, we will go through some of the easy ones now.  
+- `position: relative;` sets the position of an element relative to its original position. You would be able to move around the element without disturbing the whole layout.
+- `align-items: center;` aligns the contents inside an element to its center.
+- `cursor: pointer;` changes the default cursor to a pointer.
+- `margin: ` sets the margin. Margins can also be seperately customized, like `margin-top` and `margin-left`.
+- `padding: ` sets padding to an element.
+- `font-family: ` specifies the fonts to use.
+- `background: ` sets the background of an element. It accepts text, rgb, rgba, and hex values.  
+After this, let's give some life into our buttons through a pulsing animation. This is a bit of intermediate CSS, so you don't have to understand what's happening now. However, I shall link the W3S reference after the snippet.
+```css
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  33% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
 .pulse {
   position: relative;
 }
@@ -160,30 +184,6 @@ This css snippet adds styling to our main webpage and the map image. Here, `over
 .pulse:hover:before, .pulse:hover:after {
   display: none;
 }
-```
-This snippet primarily adds styling to our buttons. The actual styles themselves would be easier learnt from https://w3schools.com as they have an enormous dictionary of styles. However, we will go through some of the easy ones now.  
-- `position: relative;` sets the position of an element relative to its original position. You would be able to move around the element without disturbing the whole layout.
-- `align-items: center;` aligns the contents inside an element to its center.
-- `cursor: pointer;` changes the default cursor to a pointer.
-- `margin: ` sets the margin. Margins can also be seperately customized, like `margin-top` and `margin-left`.
-- `padding: ` sets padding to an element.
-- `font-family: ` specifies the fonts to use.
-- `background: ` sets the background of an element. It accepts text, rgb, rgba, and hex values.  
-After this, let's give some life into our buttons through a pulsing animation. This is a bit of intermediate CSS, so you don't have to understand what's happening now. However, I shall link the W3S reference after the snippet.
-```
-@keyframes pulse {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  33% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(3);
-    opacity: 0;
-  }
 ```
 You can learn more about the @keyframes rule at https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp  
 Now if you run the markup, the buttons would look pretty neat and the image would've resized itself. Time to give yourself a hooray!
