@@ -144,10 +144,10 @@ while player == False:
 ```
 #### Explanation:
 
-1. The first if statement declares a tie.
-2. In the first three elif statement, the player can either win or lose and the points are given respectively.
-3. In the fourth elif statement, the player could reset the score.
-4. Last else statement occurs only when the player enters a invalid word.
+1. The first `if` statement declares a tie.
+2. In the first three `elif` statement, the player can either win or lose and the points are given respectively.
+3. In the fourth `elif` statement, the player could reset the score.
+4. Last `else` statement occurs only when the player enters a invalid word.
 
 ### 5) Keeping the loop going
 Now as we have completed building the game we need it to run infinitely.
