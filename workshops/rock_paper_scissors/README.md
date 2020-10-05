@@ -43,7 +43,7 @@ Let us start making our game! First, we'll need to import some modules
 So in the first line type `from random import randint`. This will import the radient module
 
 ### 2)Giving values to the variables
-First let's make a list for all th entries a plyer could enter,
+First let's make a list for all the entries a player could enter,
 `t = ["r","p","s"]`
 
 Now we have to write a command so the computer chooses rock, paper or scissors randomly!
