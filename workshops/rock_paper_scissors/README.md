@@ -1,6 +1,6 @@
 ---
 Name: 'Rock Paper Scissors Game'
-Description: 'Easy rock paper scisoors game using Python'
+Description: 'Simple rock paper scissors game using Python'
 Author: '@JackTDC'
 ---
 
@@ -38,19 +38,19 @@ You should see something like the following:
 ## Part 3: Making The Game
 ![Image](https://cloud-931ehqeec.vercel.app/coding.gif)
 
-### 1)Importing Modules
-Let us start making our game! First, we'll need to import some modules
-So in the first line type `from random import randint`. This will import the radient module
+### 1) Importing Modules
+Let us start making our game! First, we'll need to import some modules.
+So in the first line, type `from random import randint`. This will import the radient module.
 
-### 2)Giving values to the variables
+### 2) Giving values to the variables
 First let's make a list for all the entries a player could enter,
 `t = ["r","p","s"]`
 
-Now we have to write a command so the computer chooses rock, paper or scissors randomly!
+Now we have to write a code so the computer chooses rock, paper or scissors randomly!
 `computer = t[randint(0,2)]`.
 
 Now we will set a variable to false and by using it in a `while` loop, we can keep the game playing infinitely! To do that , just type `Player = False`. Now you have to write some code so the player can enter his/her name. 
-Also to make a score system enter the following code:
+Also to make a score system, we'll write the following code:
 ```
 You = 0
 PC = 0 
@@ -75,9 +75,9 @@ PC = 0
 ### 3)Keeping the game in a loop
 ![Image](https://cloud-nmra250be.vercel.app/loop.gif)
 
-For this game I will using `while` loop but you can also use `for` loop! 
+For this, I'll use a `while` loop but you can also use `for` loops!
 
-So for starters type,
+So we'll just type,
 ```
 While Player == False: 
 ```
@@ -150,7 +150,7 @@ while player == False:
 4. Last else statement occurs only when the player enters a invalid word.
 
 ### 5) Keeping the loop going
-Now as we have completed codin the game we need it to be looped infinite number of times.
+Now as we have completed building the game we need it to run infinitely.
 
 To do this you just need to add the following statement after the `while` statement,
 ```
@@ -240,8 +240,8 @@ If you are facing difficulties signing up watch [this](https://www.youtube.com/w
 Here are some things which you can do:
 
 - Consider changing and adding more features!
-- Making the game a two player game.
-- Make the game only of 3 turns.
+- Making it a two player game.
+- Make the game only of 3 turns instead of running it infinitely.
 - You can give the text a typewriter effect. (If you dont know how to do it watch [this][typewritter] video)
 
 **Examples on how people have customized it:**
