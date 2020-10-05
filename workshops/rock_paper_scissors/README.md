@@ -47,7 +47,7 @@ First let's make a list for all th entries a plyer could enter,
 `t = ["r","p","s"]`
 
 Now we have to write a command so the computer chooses rock, paper or scissors randomly!
-`computer = t[randint(0,2)]`
+`computer = t[randint(0,2)]`.
 
 Now we will set the player to false so we can keep the game in a loop to do that just type, `Player = False`. Now you have to write some code so the player could enter his/her name. 
 Also to make a score system enter the following code:
