@@ -8,7 +8,7 @@ Tic Tac Toe is a game that most of us have played when we were bored in class. I
 
 ![GIF showing Tic Tac Toe game running in a terminal](https://cloud-hztfs3uyy.vercel.app/ezgif.com-gif-maker.gif)
 
-In this workshop, we will make the Tic Tac Toe game in Python, which you can play with a friend using the terminal.
+In this workshop, we will make the Tic Tac Toe game in Python that you can play with a friend using the terminal.
 
 ## Getting started
 
