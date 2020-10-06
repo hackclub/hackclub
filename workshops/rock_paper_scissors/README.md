@@ -93,9 +93,29 @@ There are 5 possibilities:
 
 ### 4) Producing separate outcomes for all possibilities
 
-We are going to use if elif & else statement to produce separate outcomes for all possibilities!
+To make things easier I will be making functions to print if the player wins or loses.
+First I will write `message = ""` This will help us by printing different message by calling the same function.
 
-Enter the following code:
+Now I will be making a function that will be called only when the player wins. To do that enter the following code:
+```
+def win():
+  global You
+  You+=1
+  print (message)
+  print('Computer =', PC, '\n', name, '=', You)
+```
+Now we will make a function that will be called only when the player will lose.
+```
+def lose():
+  global PC
+  PC+=1
+  print (message)
+  print('Computer =', PC, '\n', name, '=', You)
+```
+Now we have to call these functions at the right places.
+
+
+To do that enter the following code:
 ```
 while player == False:
     player = input("Rock, Paper, Scissors?(r,p,s)")
@@ -105,37 +125,25 @@ while player == False:
         print(name,'=',You)
     elif player == "r":
         if computer == "p":
-            print("You lose!","Paper covers Rock")
-            PC+=1
-            print('Computer =',PC)
-            print(name,'=',You)
+            message = "You lose!","Paper covers Rock"
+            lose()
         else:
-            print("You win!","Rock smashes Scissors")
-            You+=1
-            print('Computer =',PC)
-            print(name,'=',You)
+            message ="You win!", "Scissors cuts Paper"
+            win()
     elif player == "p":
         if computer == "s":
-            print("You lose!", "Scissors cut Paper")
-            PC+=1
-            print('Computer =',PC)
-            print(name,'=',You)
+            message = "You lose!","Paper covers Rock"
+            lose()
         else:
-            print("You win!","Paper covers Rock")
-            You+=1
-            print('Computer =',PC)
-            print(name,'=',You)
+            message ="You win!", "Scissors cuts Paper"
+            win()
     elif player == "s":
         if computer == "r":
-            print("You lose...","Rock smashes Scissors")
-            PC+=1
-            print('Computer =',PC)
-            print(name,'=',You)
+            message = "You lose!","Paper covers Rock"
+            lose()
         else:
-            print("You win!", "Scissors cuts Paper")
-            You+=1
-            print('Computer =',PC)
-            print(name,'=',You)
+            message ="You win!", "Scissors cuts Paper"
+            win()
     elif player == "reset":
       You=1*0
       PC=1*0
@@ -179,6 +187,19 @@ print("Type 'reset' to reset score")
 
 You = 0
 PC = 0
+
+def win():
+  global You
+  You+=1
+  print(message)
+  print('Computer =', PC, '\n', name, '=', You)
+
+def lose():
+  global PC
+  PC+=1
+  print (message)
+  print('Computer =', PC, '\n', name, '=', You)
+
 while player == False:
     player = input("Rock, Paper, Scissors?(r,p,s)")
     if player == computer:
@@ -187,37 +208,25 @@ while player == False:
         print(name,'=',You)
     elif player == "r":
         if computer == "p":
-            print("You lose!","Paper covers Rock")
-            PC+=1
-            print('Computer =',PC)
-            print(name,'=',You)
+            message = "You lose!,Paper covers Rock"
+            lose()
         else:
-            print("You win!","Rock smashes Scissors")
-            You+=1
-            print('Computer =',PC)
-            print(name,'=',You)
+            message ="You win!, Scissors cuts Paper"
+            win()
     elif player == "p":
         if computer == "s":
-            print("You lose!", "Scissors cut Paper")
-            PC+=1
-            print('Computer =',PC)
-            print(name,'=',You)
+            message = "You lose!,Paper covers Rock"
+            lose()
         else:
-            print("You win!","Paper covers Rock")
-            You+=1
-            print('Computer =',PC)
-            print(name,'=',You)
+            message ="You win!, Scissors cuts Paper"
+            win()
     elif player == "s":
         if computer == "r":
-            print("You lose...","Rock smashes Scissors")
-            PC+=1
-            print('Computer =',PC)
-            print(name,'=',You)
+            message = "You lose!,Paper covers Rock"
+            lose()
         else:
-            print("You win!", "Scissors cuts Paper")
-            You+=1
-            print('Computer =',PC)
-            print(name,'=',You)
+            message ="You win!, Scissors cuts Paper"
+            win()
     elif player == "reset":
       You=1*0
       PC=1*0
@@ -225,7 +234,9 @@ while player == False:
     else:
         print("That's not a valid play. Please select a valid option!")
     player = False
+
     computer = t[randint(0,2)]
+   
 
 ```
 
