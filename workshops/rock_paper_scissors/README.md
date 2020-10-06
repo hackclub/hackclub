@@ -33,7 +33,7 @@ To get started, go to [https://repl.it/languages/python](https://repl.it/languag
 
 You should see something like the following:
 
-![Image](https://cloud-lukrtynqs.vercel.app/repl.png)
+![main.py file in Repl.it](https://cloud-lukrtynqs.vercel.app/repl.png)
 
 ## Part 3: Making The Game
 ![Image](https://cloud-931ehqeec.vercel.app/coding.gif)
@@ -50,7 +50,8 @@ Now we have to write a code so the computer chooses rock, paper or scissors rand
 ```py
 computer = t[randint(0,2)]
 
-Now we will set a variable to false and by using it in a `while` loop, we can keep the game playing infinitely! To do that , just type `Player = False`. Now you have to write some code so the player can enter his/her name. 
+Now we will set a variable to false and by using it in a `while` loop, we can keep the game playing infinitely! To do that , just type `Player = False`. Now you have to write some code so the player can enter his/her name. `name = input("Enter your name:")`
+
 Also to make a score system, we'll write the following code:
 ```
 You = 0
