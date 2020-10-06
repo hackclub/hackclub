@@ -260,15 +260,3 @@ You probably know the best ways to get in touch with your friends and family, bu
 2. Then, post the link to the [`#scrapbook`](https://hackclub.slack.com/messages/scrapbook) channel to share it with everyone!
 
 [slack]: https://slack.hackclub.com/
-
-
-
-
-
-
-
-
-
-
-
-  
