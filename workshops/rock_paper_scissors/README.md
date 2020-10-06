@@ -47,7 +47,8 @@ First let's make a list for all the entries a player could enter,
 `t = ["r","p","s"]`
 
 Now we have to write a code so the computer chooses rock, paper or scissors randomly!
-`computer = t[randint(0,2)]`.
+```py
+computer = t[randint(0,2)]
 
 Now we will set a variable to false and by using it in a `while` loop, we can keep the game playing infinitely! To do that , just type `Player = False`. Now you have to write some code so the player can enter his/her name. 
 Also to make a score system, we'll write the following code:
