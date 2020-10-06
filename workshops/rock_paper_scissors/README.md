@@ -5,8 +5,7 @@ Author: '@JackTDC'
 ---
 
 # Rock Paper Scissor Game
-
-Have you ever thought about building a game with Python? Well today is your lucky day.
+Have you ever wondered how to build a game with python? Have you ever wanted to build your own game but didn't because it was hard? Well, today I'm going to show you how to build one and you know what? It's very simple!
 
 So let's get started.
 
@@ -39,12 +38,13 @@ You should see something like the following:
 ![GIF](https://cloud-931ehqeec.vercel.app/coding.gif)
 
 ### 1) Importing Modules
-Let us start making our game! First, we'll need to import some modules.
+Let us start making our game! First, we'll need to import some modules. As you know there are many modules for python but today we will be working with the `randint` module.
 So in the first line, type `from random import randint`. This will import the randint module.
 
 ### 2) Giving values to the variables
 First let's make a list for all the entries a player could enter,
 `t = ["r","p","s"]`
+'r' stands for `Rock`,'p' stands for `Paper` and 's' stands for `Scissors`.
 
 Now we have to write a code so the computer chooses rock, paper or scissors randomly!
 ```py
@@ -75,7 +75,7 @@ PC = 0
 ```
 
 ### 3)Keeping the game in a loop
-![Image](https://cloud-nmra250be.vercel.app/loop.gif)
+![loop](https://cloud-nmra250be.vercel.app/loop.gif)
 
 For this, I'll use a `while` loop but you can also use `for` loops!
 
