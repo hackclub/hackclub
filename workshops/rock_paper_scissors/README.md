@@ -36,7 +36,7 @@ You should see something like the following:
 ![main.py file in Repl.it](https://cloud-lukrtynqs.vercel.app/repl.png)
 
 ## Part 3: Making The Game
-![Image](https://cloud-931ehqeec.vercel.app/coding.gif)
+![GIF](https://cloud-931ehqeec.vercel.app/coding.gif)
 
 ### 1) Importing Modules
 Let us start making our game! First, we'll need to import some modules.
@@ -244,7 +244,7 @@ while player == False:
 ### 6) The End
 **And congratulations! You just made your own game using Python!**
 
-![Image](https://cloud-b32jvmwl1.vercel.app/congo.gif)
+![Congratulations](https://cloud-b32jvmwl1.vercel.app/congo.gif)
 
 If you haven't created an account on [repl.it](https://repl.it), make sure you do so to save this wonderful piece of creation!
 
