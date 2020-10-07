@@ -8,17 +8,17 @@ author: '@Gautam-flash'
 
 # Deep_meme
 
-![Deep meme GIF](file/deep_meme-teaser-min.gif)
+![Deep meme GIF](files/deep_meme-teaser-min.gif)
 
 ⏫ This is one of the things you will be able to do by following this workshop even with your own image or video.
 
 ### Why?
 As I started learning ML, I wanted to create something visually awesome using AI (not just some numbers and graphs😪) but to make something awesome as the one above we must learn ML, DL and lots of maths. This workshop aims to introduce you to the world of Deep Learning and Deepfakes without discussing the mathematical and scary stuff. After this workshop you can have a taste of the superpower DL gives you, who knows you might fall in love with it😁. Also if you are not into codding so much but other domains (like painting) you might want to use this method too maybe in the following way😀
 
-![Demo work GIF](file/mgif-teaser.gif)
+![Demo work GIF](files/mgif-teaser.gif)
 
 #### Here is another demo
-![Demo2 deepfake GIF](file/fashion-teaser.gif)
+![Demo2 deepfake GIF](files/fashion-teaser.gif)
 
 ⏫ The video(animation) on the far left is original video (driving video) which you can provide as input and the upper row of different images are the subject images, the lower row of videos is the output of the program.
 
@@ -47,7 +47,7 @@ Click on this link https://drive.google.com/drive/folders/1kZ1gCnpfU0BnpdU47pLM_
 <b>Colab </b>
 Google Colab: It is a service provided by google where you can run your intensive codes on a powerful machine (you get GPU, good processor, enough RAM even TPU, you can choose the combination). When you open it, you will see the following screen.
 Log in with your Google account.
-![colab home screen](file/colab.png)
+![colab home screen](files/colab.png)
 
 Click on <b>files</b> and select <b>new notebook</b>.
 
@@ -55,7 +55,7 @@ Click on <b>Runtime</b> and scron down to <b>Change runtime type</b> now choose 
 
 You will see something like this 
 The whole Thing is called a colab notebook it is an adaptation of [jupyter-notebook](https://jupyter.org/)
-![colab-coding-screen](file/empty-colab.png)
+![colab-coding-screen](files/empty-colab.png)
 
 You can see a line with a play button, that's called a cell where we write snippets of code and click on the play button to execute it.
 Notice how I have another tab with my GDrive open, a good practice.
@@ -88,7 +88,7 @@ drive.mount('/content/gdrive')
 
 
 Writing the code in the notebook will look something like this.
-![Notebook](file/notebook.png)
+![Notebook](files/notebook.png)
 
 
 ## cell-4
