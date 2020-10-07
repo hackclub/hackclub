@@ -5,14 +5,12 @@ author: '@Agrim-Bansal'
 ---
 
 
-# Introduction
+# Intro to ML
 Have you always been fascinated by the terms "Artificial Intelligence", "Machine Learning" etc  and wanted to learn how these things work?  
 Well, Today you'll be able to learn about the working of machine learning and make a machine learning model which learns the relationship between two sets of numbers and predicts the result for a future number.  
 Excited? So let's get going!  
 
-
 <br/>
-
 
 # Machine Learning
 Machine learning is very similar to Artificial Intelligence but it is not exactly it. Machine learning (or ML as it is called) is about data and classification.  
@@ -20,9 +18,7 @@ Machine learning is very similar to Artificial Intelligence but it is not exactl
 When we as programmers code a normal program, there we define rules, input some test data and at end, obtain results.  
 But in machine learning, the process is somewhat different. Here we provide the machine some input data and some output data i.e. the known test data and it is the task of the machine to figure out what is the relation between the sets of data and further predict output values for unknown input data.  
 
-
 <br/>
-
 
 # Working
 **So, how does this actually work ?**   
@@ -150,62 +146,10 @@ This is where it will go through the loop we spoke about above, make a guess, me
 
 ```py
 model.fit(xs, ys, epochs=700)
-```
+```  
 
-```py
-    Epoch 1/700
-    1/1 [==============================] - 0s 1ms/step - loss: 8.0000
-    Epoch 2/700
-    1/1 [==============================] - 0s 2ms/step - loss: 5.5120
-    Epoch 3/700
-    1/1 [==============================] - 0s 1ms/step - loss: 3.8004
-    Epoch 4/700
-    1/1 [==============================] - 0s 1ms/step - loss: 2.6229
-    Epoch 5/700
-    1/1 [==============================] - 0s 1ms/step - loss: 1.8128
-    Epoch 6/700
-    1/1 [==============================] - 0s 1ms/step - loss: 1.2554
-    Epoch 7/700
-    1/1 [==============================] - 0s 1ms/step - loss: 0.8718
-    Epoch 8/700
-    1/1 [==============================] - 0s 1ms/step - loss: 0.6078
-    Epoch 9/700
-    1/1 [==============================] - 0s 1ms/step - loss: 0.4260
-    Epoch 10/700
-    1/1 [==============================] - 0s 1ms/step - loss: 0.3008
-    .
-    .
-    .
-    .
-    .
-    .
-    .
-    .
-    Epoch 690/700
-    1/1 [==============================] - 0s 4ms/step - loss: 7.1252e-08
-    Epoch 691/700
-    1/1 [==============================] - 0s 1ms/step - loss: 6.9955e-08
-    Epoch 692/700
-    1/1 [==============================] - 0s 1ms/step - loss: 6.8631e-08
-    Epoch 693/700
-    1/1 [==============================] - 0s 1ms/step - loss: 6.7373e-08
-    Epoch 694/700
-    1/1 [==============================] - 0s 1ms/step - loss: 6.6085e-08
-    Epoch 695/700
-    1/1 [==============================] - 0s 1ms/step - loss: 6.4882e-08
-    Epoch 696/700
-    1/1 [==============================] - 0s 1ms/step - loss: 6.3664e-08
-    Epoch 697/700
-    1/1 [==============================] - 0s 1ms/step - loss: 6.2483e-08
-    Epoch 698/700
-    1/1 [==============================] - 0s 1ms/step - loss: 6.1313e-08
-    Epoch 699/700
-    1/1 [==============================] - 0s 1ms/step - loss: 6.0135e-08
-    Epoch 700/700
-    1/1 [==============================] - 0s 1ms/step - loss: 5.8995e-08
+![output expected while training](https://cloud-656o3gxim.vercel.app/0training_out.jpg)
 
-    <tensorflow.python.keras.callbacks.History at 0x7f24d74b2470> 
-```
 <br/>
 
 
@@ -225,10 +169,7 @@ You might have thought 21, right? But it ended up being a little over. Why do yo
 Remember that the neural networks deal with probabilities, so given the data that we fed the Neural network with, it calculated that there is a very high probability that the relationship between X and Y is Y=2x+1, but with only 6 data values we can't know for sure. As a result, the value for 10 is very close to 21, but not necessarily 21.  
 
 As We work with neural networks, we'll see this pattern recurring. We will almost always deal with probabilities, not certainties, and will do a little bit of coding to figure out what the result is based on the probabilities, particularly when it comes to classification.  
-
-
 <br/>
-
 
 # Complete Program
 Here is the complete program put together
