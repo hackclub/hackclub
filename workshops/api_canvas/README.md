@@ -11,6 +11,7 @@ You know the scenes in those home renovation reality shows where they knock down
 In this workshop, we're going to learn about web APIs—specifically, how they work, and how to write one that allows anyone to wreak havoc on your website. Ready to get started?
 
 # What's a web API?
+
 ![Drawing of a robot that says it will accept hello and changecolor api endpoints](https://cloud-gza5tupj5.vercel.app/image_from_ios.jpg)
 
 Imagine a robot. The robot is programmed to do a few certain tasks, but only when it receives the signal to do so. The robot has multiple triggers on its body that run each specific action, and it's constantly listening for when those triggers are hit.
@@ -26,11 +27,13 @@ In reality, the "robot" is a server connected to the internet, and the triggers,
 If this doesn't quite make sense to you right now, don't worry about it—you'll see all of this in action when you start building your own API!
 
 # Getting started
+
 ![The starter project on replit](https://cloud-4f1wogm9b.vercel.app/screen_shot_2020-09-29_at_4.09.11_pm.png)
 
 Get started by [opening the starter project](https://repl.it/@TechBug2012/hc-api-canvas-starter#index.js) on repl.it. When you open it, you should see something like this.
 
 ## Starting a webserver with Express
+
 Express is a very powerful JavaScript framework that allows you to easily create webservers and API endpoints. Let's set up a webserver using Express.
 
 Start by importing Express. In the `index.js` file, type:
@@ -60,7 +63,7 @@ Before the line that starts with `http.listen` line but after the line that star
 
 ```js
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + "/views/index.html")
+  res.sendFile(__dirname + '/views/index.html')
 })
 ```
 
@@ -78,9 +81,10 @@ If you take a look at your sidebar, you'll see that the starter project contains
 
 Here's where things get a little bit confusing: while all of these files look like they're in the same place, they're actually running in different places at different times. All of the code in `index.js` runs on a server, while all of the code in the files in `views` and `public` run in your browser. It may look like we're making a website here, but we're actually making a web app running on a server that loads a website. When you visit the website where your server is hosted, your web browser sends a web request to the server, and in response the server sends back HTML and CSS that your browser loads.
 
-This is a difficult concept to wrap your head around initially, so if you don't understand, *you're not alone.* But if you don't understand, please make sure to ask your club leader to clarify this concept for you right now—the rest of this workshop will assume that you understand it, and it will be very confusing for you if you don't.
+This is a difficult concept to wrap your head around initially, so if you don't understand, _you're not alone._ But if you don't understand, please make sure to ask your club leader to clarify this concept for you right now—the rest of this workshop will assume that you understand it, and it will be very confusing for you if you don't.
 
 ## Serving CSS and JavaScript
+
 So far, we wrote some code that serves the `index.html` file in the `views` folder. Loading the CSS and other content in the `public` folder is even easier.
 
 Just after the line where you import `http` but before the line that starts with `app.get('/')`, add:
@@ -94,9 +98,11 @@ app.use(express.static('public'))
 If you restart the server and refresh your website preview, you should notice that the heading is blue and the text is centered. Good news! The CSS loaded in, and any code we write in the client-side `script.js` file will take effect.
 
 # Building an API
+
 Woohoo!!! That was a lot of confusing work, but now we've got our Express server up and running, and our website is being loaded by the browser, which means we're officially ready to start building our API!
 
 ## Some more background info
+
 First, a little more background info on how APIs work:
 
 There are are 9 types of HTTP requests. If you're curious, you can [see a list of them](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods), but we're not going to be using all 9. The most common HTTP requests are `GET`, `POST`, `PUT`, AND `PATCH`. The 2 most common HTTP requests by far, and the only ones we're going to use in this workshop, are `GET` and `POST`.
@@ -109,6 +115,7 @@ Try using an API yourself! Visit [api.adviceslip.com/advice](https://api.advices
 The server that powers this API is hosted on `api.adviceslip.com`. When you visit `api.adviceslip.com/advice`, your browser is sending a `GET` request to its `advice` endpoint. When this endpoint is hit, it runs code that gets a random piece of advice and sends it back to your browser. Cool, right?
 
 ## Writing your first API endpoint
+
 Let's write your first API endpoint. Head back over to the `index.js` file in your repl. Between the line that starts with `app.use` and the line that starts with `app.get`, add:
 
 ```js
@@ -130,9 +137,10 @@ Stop and restart your server. Then, copy the link to the website preview link...
 If you see a website that's entirely blank except for the words `Hi there!`, then congratulations! You've just successfully written your first API endpoint! 🎉🎉🎉
 
 ## Making it rain (emojis)
+
 Let's write an API endpoint that actually changes some content on your browser.
 
-There's a problem, though. Remember how I said that the code in `index.js` runs on the server and everything else runs in the browser? Changing content that's loaded in your browser needs to be done *client-side*—but we won't know to make our changes client-side unless the we receive an HTTP request on the *server-side*, and right now there's no way for the server and the client to communicate.
+There's a problem, though. Remember how I said that the code in `index.js` runs on the server and everything else runs in the browser? Changing content that's loaded in your browser needs to be done _client-side_—but we won't know to make our changes client-side unless the we receive an HTTP request on the _server-side_, and right now there's no way for the server and the client to communicate.
 
 We need to open a line of communication between the server and the client. Luckily, an awesome library called `socket.io` does just that.
 
@@ -162,7 +170,7 @@ Next, open the `public` folder and navigate to the `script.js` file inside of it
 let socket = io()
 ```
 
-*FYI: in order for socket.io to work, you also have to import the library on the client side, but we've skipped that step for this workshop. If you check out your `index.html` file, you should see socket.io imported near the beginning.*
+_FYI: in order for socket.io to work, you also have to import the library on the client side, but we've skipped that step for this workshop. If you check out your `index.html` file, you should see socket.io imported near the beginning._
 
 Then, under what you just wrote in `script.js`, add:
 
@@ -181,14 +189,13 @@ After you do that, head back over to your repl. You should see it raining emojis
 ![script code with emojis raining in the website preview](https://cloud-idqkhcy09.vercel.app/screen_shot_2020-09-29_at_5.58.28_pm.png)
 
 ## Changing the background color (& accepting POST requests)
+
 Let's add one more API endpoint that changes the background color.
 
 Head back over to the `index.js` file. After the last endpoint that you wrote, add:
 
 ```js
-app.post('background', (req, res) => {
-
-})
+app.post('background', (req, res) => {})
 ```
 
 Before we proceed, we need to add another library: `body-parser`. Because we're going to send a POST request to this endpoint, we'll need to provide data, and we'll need a way to be able to extract and use that data.
@@ -237,7 +244,7 @@ In a new tab, open [reqbin.com](https://reqbin.com). In the URL section, paste y
 
 ```json
 {
-  "color": "#f34569" 
+  "color": "#f34569"
 }
 ```
 
@@ -245,9 +252,10 @@ Click "Send". When you go back to your repl, you should notice that the backgrou
 
 ![Website with a pink background](https://cloud-poa2iw1aq.vercel.app/screen_shot_2020-09-29_at_6.53.11_pm.png)
 
-*Try some other colors! Google "random html color" and swap the "color" value out.*
+_Try some other colors! Google "random html color" and swap the "color" value out._
 
 # Next Steps
+
 This is a great start! But it's not nearly as exciting as the gif at the beginning of the website. It's up to you to figure that out, and make this entirely your own!
 
 [Here's the link to the demo](https://hc-intro-to-apis.techbug2012.repl.co). [Here's a link to the code](https://repl.it/@TechBug2012/hc-intro-to-apis#index.js). Spend some time playing around with it—there's lots to discover! Then, spend the rest of the meeting writing your own unique API endpoints that do crazy things. By the end of the meeting, your website should look totally different than how it looks like right now, and it should also look different from the websites of the others in the meeting with you.
