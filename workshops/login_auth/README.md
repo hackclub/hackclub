@@ -462,7 +462,8 @@ function logout(){
 
 ```
 It looks like this 👇
-![live](https://cloud-eaqg13z7j.vercel.app/0login_2.gif)
+
+![live](https://cloud-meubu1zac.vercel.app/0login_2.1.gif)
 
 Try logging in with the email and password you stored in Firebase. If it worked you should be all set!
 
