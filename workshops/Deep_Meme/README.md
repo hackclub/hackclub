@@ -1,4 +1,3 @@
-
 ---
 name: Deep Meme
 description: Easy intro to Deepfakes (Deep learning) by having fun.
