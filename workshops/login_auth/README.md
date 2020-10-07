@@ -18,8 +18,8 @@ You will make something like this 👇
 
 You can test out the demo site using the following credentials:
 
-- EMAIL-`login@authentication.com`
-- Password - `password`
+- Email: `login@authentication.com`
+- Password: `password`
 
 ### Getting Started 🚀
 
@@ -31,7 +31,7 @@ To get started, you should have a basic knowledge of:
 So let's begin 💨
 
 ## Creating a Firebase project 💻
-First, you will need to sign in to [Firebase](https://firebase.google.com/) using a Google account. You can [create one here](https://accounts.google.com/signup).
+First, you will need to [sign in to Firebase](https://firebase.google.com/) using a Google account. If you don't have you can [create one here](https://accounts.google.com/signup).
 
 After signing in you will see a page similar to this:
 
@@ -51,7 +51,7 @@ After giving a wonderful name to your project just click on continue to proceed 
 
 ![Analytics page](https://cloud-pva80oxrl.vercel.app/4.png)
 
-Here is the step where you can use Google Analytics for your project but in this workshop you can disable it.
+So here is an optional step where you can use Google Analytics for your project, but in this workshop you can disable it.
 
 ![Project created](https://cloud-3swaas1pn.vercel.app/5.png)
 
@@ -74,15 +74,12 @@ After clicking on that a new page will pop up and ask you for a name for your ap
 
 ![App nickname](https://cloud-8tdv8wfuj.vercel.app/8.png)
 
-Then you will see some sort of JavaScript code, so don't worry about that, it is the code which contains some keys like API Key, domain key which helps your Firebase project to connect with your webpage, and for that, you need to save this code or just copy/paste into the notes as it will require in coding part later.
+Here is an **important** part!
 
+You will see some sort of JavaScript code, this is the code which helps your Firebase project to connect with your webpage. So, make sure you save this code or copy it somewhere as it will require later.
+
+After saving the code, just click on `continue to console`.
 ![API keys](https://cloud-nsps2klza.vercel.app/9.png)
-
-Also add below line of code with the code above to integrate `firebase.js` with your webpage without any errors!
-
-```javascript
-<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-```
 
 After that you need to add existing users, so that they can log in and for that, you need to enable **Email/Password** authentication in your project's Authentication section, for that you need to click on tab `Authentication` on the top left `Develop` section.
 
@@ -112,11 +109,9 @@ Then click on `Add User` and add `Email` and `Password` for that user and click 
 
 ## Designing a webpage 🖊️
 
-If you want to inspect the [Final Code](https://repl.it/@tanishqsoni/Loginauth) you can.
-
 So first you need to set up a coding environment and I suggest you use [Repl.it](https://repl.it) as it sets everything for you.
 
-To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html) as you need to use HTML repl.it
+To get started, just go to [https://repl.it/languages/html](https://repl.it/languages/html).
 
 It looks like this 👇
 
@@ -128,9 +123,9 @@ It looks like this 👇
 When you take a look at the `index.html` file in your Repl, you'll see the `<html>` tag which is the root of the HTML file, and inside the `<html>` tag you'll see `<body>` tag which is the main body of HTML file and contains all the content for our webpage.
 
 You will also find lines like:
-- `<link href="style.css" rel="stylesheet" type="text/css"/>` which links your CSS file (`style.css`) with the HTML. 
+- `<link href="style.css" rel="stylesheet" type="text/css">` which links your CSS file (`style.css`) with the HTML. 
 - `<script src="script.js"></script>` which links your JavaScript file (`script.js`) with HTML and this should be place just above closing body tag `</body>`.
-So let's write our HTML Code:
+So let's write our HTML code:
 
 In the `<body>` tag you need to create two divisions, the first division is for the login page and the second is for the logout page using `<div>`.
 
@@ -140,18 +135,18 @@ Create your first division with a class `main_div` and assign ID `login_div`.
 
 You can also give a heading to your page using heading tags like `<h1>,<h2>,<h3>.....`.
 
-In this division, you will create two input fields for EMAIL and PASSWORD using `<input>` tag with type `email` and `password` respectively and also assign IDs to both input fields `email_field` and `password_field` respectively.
+In this division, you will create two input fields for email and password using `<input>` tag with `type` `email` and `password` respectively and also assign IDs to both input fields `email_field` and `password_field` respectively.
 
-Also you can add placeholder attribute which specifies a short hint that describes the expected value of a input field / textarea.
+Also you can add `placeholder` attribute which specifies a short hint that describes the expected value of a input field / textarea.
  
-Here you will also create a button Login using `<button>` and assign `login()` as a on click function to it and finally close your first division using `</div>`.
+Here you will also create a button login using `<button>` and assign `login()` as a on click function to it and finally close your first division using `</div>`.
 
 So here's how your first division looks like:
 ```HTML
-<div id="login_div" class="main_div">
+<div class="main_div" id="login_div">
     <h3>Login Authentication</h3>
-    <input type="email" placeholder="Email..." id="email_field" />
-    <input type="password" placeholder="Password..." id="password_field" />
+    <input type="email" placeholder="Email..." id="email_field">
+    <input type="password" placeholder="Password..." id="password_field">
     <button onclick="login()">Login</button>
 </div>
 ```
@@ -164,8 +159,8 @@ In this division, you will create a logout button and assign `logout()` as a on 
 
 So here's how your second division looks like:
 ```HTML
-<div id="user_div" class="loggedin_div">
-    <h3>Welcome</h3>
+<div class="loggedin_div" id="user_div">
+    <h3>YAYYY! You successfully logged-in using Firebase.....</h3>
     <button onclick="logout()">Logout</button>
 </div>
 ```
@@ -173,65 +168,81 @@ So here's how your second division looks like:
 So here is what your HTML code should look like:
 
 ```HTML
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Login Authentication</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-
-<div id="login_div" class="main_div">
+<div class="main_div" id="login_div">
   <h3>Login Authentication</h3>
-  <input type="email" placeholder="Email..." id="email_field" />
-  <input type="password" placeholder="Password..." id="password_field" />
+  <input type="email" placeholder="Email..." id="email_field">
+  <input type="password" placeholder="Password..." id="password_field">
   <button onclick="login()">Login</button>
 </div>
-
-<div id="user_div" class="loggedin_div">
-  <h3>Welcome</h3>
+<div class="loggedin_div" id="user_div">
+  <h3>YAYYY! You successfully logged-in using Firebase.....</h3>
   <button onclick="logout()">Logout</button>
 </div>
 <script src="script.js"></script>
 </body>
 </html>
 ```
+
 ![without CSS](https://cloud-e3wysrojq.vercel.app/c1.png)
 
-So as you can see it is looking simple, so to make it look cool you need to add CSS but you need those JavaScript lines from Firebase first! 
+So as you can see both the divisions are displaying on same page but you need to display second division after the user successfully logged-in as it contains the logout button.
 
-So you need to include those lines after the second division:
+So for that you need to work on JavaScript but before moving on, you remember you saved some lines of JavaScript code from Firebase.
+```javascript
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAVNeXl4cBro95I3dFWMaiT2rI88sqyBtc",
+    authDomain: "loginauth-12.firebaseapp.com",
+    databaseURL: "https://loginauth-12.firebaseio.com",
+    projectId: "loginauth-12",
+    storageBucket: "loginauth-12.appspot.com",
+    messagingSenderId: "308714255384",
+    appId: "1:308714255384:web:98e87065f0e45910f0ff6d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+```
+Here is an **important** step, you will see very first line of code:
+`<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>`.
 
-Here is your final HTML code:
+This will give you error, as it only integrates the `Firebase-app` not Firebase library. So, for that add below line of code with above line.
+`<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>`.
 
+Here is your final JavaScript code:
 ```HTML
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Login Authentication</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-
-<div id="login_div" class="main_div">
+<div class="main_div" id="login_div">
   <h3>Login Authentication</h3>
-  <input type="email" placeholder="Email..." id="email_field" />
-  <input type="password" placeholder="Password..." id="password_field" />
+  <input type="email" placeholder="Email..." id="email_field">
+  <input type="password" placeholder="Password..." id="password_field">
   <button onclick="login()">Login</button>
 </div>
-
-<div id="user_div" class="loggedin_div">
-  <h3>Welcome</h3>
+<div class="loggedin_div" id="user_div">
+  <h3>YAYYY! You successfully logged-in using Firebase.....</h3>
   <button onclick="logout()">Logout</button>
 </div>
-
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -251,46 +262,15 @@ Here is your final HTML code:
 </html>
 ```
 
-#### CSS
-The `style.css` file present in your Repl just below `script.js` gives styles and designs to your webpage.
+#### JavaScript
 
-As you created two divisions in the HTML file, so you will add designs to it, and writing CSS is simple.
+This is the `script.js` file present in your repl just below `index.html`. The JavaScript handles the logic of your webpage.
 
-You just need to:
-- Mention element/ class name/ ID.
-- Open curly brackets `{`.
-- Add styles.
-- Close curly brackets `}`.
+Here you have to write a small amount of JavaScript code because Firebase has some pre-defined functions for Authentication which you will use here and also you can check [Firebase Documentation on web authentication](https://firebase.google.com/docs/auth/web/start).
 
-Here how you can add styles to your `<body>` tag:
+So what you have to do is get the currently signed-in user as you created a used in Firebase while creating a Firebase project.
 
-```CSS
-body {
-  background: #000000;
-  color: #fff;
-  padding: 0px;
-  margin: 0px;
-  font-family: 'Nunito', sans-serif;
-  font-size: 16px;
-}
-```
-This way you can add styles to divisions, ids, the whole webpage. Inspect my [CSS file](https://repl.it/@tanishqsoni/Loginauth#style.css)
-
-You can select different colors from a [color Picker](https://www.google.com/search?q=color+picker) to give your webpage an attractive look.
-
-You can also add fonts to your webpage, as I have added `Nunito` font as you can see a line of code in HTML `<head>`. You can choose fonts from [Google Fonts](https://fonts.google.com/) and link them.
-
-If you need help regarding various keywords uses in CSS, so you can go through the [CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
-
-#### JAVASCRIPT
-
-This is the `script.js` file present in your Repl just below `index.html`. The JavaScript handles the logic of your webpage.
-
-Here you have to write a small amount of JavaScript code because Firebase has some pre-defined functions and properties for Authentication which you will use here and also you can check [Firebase Documentation on web authentication](https://firebase.google.com/docs/auth/web/start).
-
-So what you have to do is get the currently signed-in user as you already created user in Firebase.
-
-In the `script.js` file you need to add a property [`Get the currently signed-in user`](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user) for that which is:
+In the `script.js` file you need to add a fuction called [Get the currently signed-in user](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user) for that which is:
 
 ```javascript
 firebase.auth().onAuthStateChanged(function(user) {
@@ -453,6 +433,39 @@ function logout(){
 }
 
 ```
+
+#### CSS
+The `style.css` file present in your Repl just below `script.js` gives styles and designs to your webpage.
+
+As you created two divisions in the HTML file, so you will add designs to it, and writing CSS is simple.
+
+You just need to:
+- Mention element/ class name/ ID.
+- Open curly brackets `{`.
+- Add styles.
+- Close curly brackets `}`.
+
+Here how you can add styles to your `<body>` tag:
+
+```CSS
+body {
+  background: #000000;
+  color: #fff;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+```
+This way you can add styles to divisions, ids, the whole webpage. Inspect my [CSS file](https://repl.it/@tanishqsoni/Loginauth#style.css)
+
+You can select different colors from a [color Picker](https://www.google.com/search?q=color+picker) to give your webpage an attractive look.
+
+You can also add fonts to your webpage, as I have added `Nunito` font as you can see a line of code in HTML `<head>`. You can choose fonts from [Google Fonts](https://fonts.google.com/) and link them.
+
+If you need help regarding various keywords uses in CSS, so you can go through the [CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
+
+
 
 Yayyy 🎊! You are finished with the coding part! 
 
