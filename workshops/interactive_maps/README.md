@@ -70,14 +70,14 @@ Inside the Div, we have 5 `<a>` tags. We will tweak these tags to create the but
 ```html
 <img id="map" src="https://imgur.com/6MXYopz.png" onmouseover="changeImage('normal')">
 ```
-This creates an image with the ID set as map and with its source at that specific url. The ID is basically a way of naming elements. Now when the webpage is rendered, it will probably show the buttons and the map image, but the buttons would look awful and the map would be too big. Let's fix that up.
+This creates an image with the ID set as map and with its source at that specific url. The ID is basically a way of naming elements. Now when the webpage is rendered, it should be showing the buttons and the map image properly.
 
 ##### The CSS Styling
 Syling in CSS is pretty easy. In its most basic, it's just an element followed by curly braces. The actual styling goes inside the braces. It's like so, 
 ```css
 elementTagName{ /* Write your styling in here */ }
 ```
-Now other than the basic, there are some other methods too.
+Now other than that, there are some other methods too.
 - `*{}` applies the styling to the whole document.
 - `.className{}` applies the styling to the specific class.
 - `#idName{}` applies the styling to the specific id.
@@ -104,7 +104,7 @@ The :hover selector applies a style to an element when the mouse hovers over it.
 This css snippet adds styling to our main webpage and the map image. Here, `overflow: hidden;` is a rule that hides the scrollbar on the site. `display: block;` allows the element to start from a new line and take up the whole width, just like a block in real life. Everything else like `height` and `margin` should be self explanatory.
 ```css
 .first{
-  right: 80%;
+  right: 80%; 
   left: 20%;
   position: relative;
 }
