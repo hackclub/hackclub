@@ -497,16 +497,6 @@ Here are some things which you can do:
 
 - [Example 3](https://repl.it/@FaisalSayed1/Responsive-Navbar-Example-3)
 
-**Examples on how people built it:**
-
-- []()
-
-- []()
-
-- []()
-
-- []()
-
 Now that you have finished building this wonderful project, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
 
 You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.
