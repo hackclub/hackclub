@@ -7,7 +7,7 @@ author: '@Gautam-flash'
 
 # Deep_meme
 
-![Deep meme GIF](files/deep_meme-teaser-min.gif)
+![Deep meme GIF](https://cloud-56cgw9xak.vercel.app/0deep_meme-teaser-min.gif)
 
 ⏫ This is one of the things you will be able to do by following this workshop even with your own image or video.
 
@@ -46,7 +46,7 @@ Click on this link https://drive.google.com/drive/folders/1kZ1gCnpfU0BnpdU47pLM_
 <b>Colab </b>
 Google Colab: It is a service provided by google where you can run your intensive codes on a powerful machine (you get GPU, good processor, enough RAM even TPU, you can choose the combination). When you open it, you will see the following screen.
 Log in with your Google account.
-![colab home screen](files/colab.png)
+![colab home screen](https://cloud-eeiyp1q8x.vercel.app/0colab.png)
 
 Click on <b>files</b> and select <b>new notebook</b>.
 
@@ -54,7 +54,7 @@ Click on <b>Runtime</b> and scron down to <b>Change runtime type</b> now choose 
 
 You will see something like this 
 The whole Thing is called a colab notebook it is an adaptation of [jupyter-notebook](https://jupyter.org/)
-![colab-coding-screen](files/empty-colab.png)
+![colab-coding-screen](https://cloud-ij1893q2q.vercel.app/0empty-colab.png)
 
 You can see a line with a play button, that's called a cell where we write snippets of code and click on the play button to execute it.
 Notice how I have another tab with my GDrive open, a good practice.
