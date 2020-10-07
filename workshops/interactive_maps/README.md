@@ -40,7 +40,7 @@ Basically, you'll have to take an image, and seperately highlight/color parts of
 
 ### 4 - Coding it up
 ##### The boilerplate
-Head over to https://repl.it/languages/html. Creating an account is of personal preference, be warned that you may lose your work if you don't have an account. 
+Head over to this [link](https://repl.it/@JeswinSunsi/InteractiveMapsStarter). Creating an account is of personal preference, be warned that you may lose your work if you don't have an account. As soon as you start typing, the project will be forked/ added over to your account. The CSS is already filled in for you.
 
 ![html boilerplate](https://cloud-5egibvgdv.vercel.app/image.png)  
 
@@ -86,7 +86,7 @@ There are also **selectors**. Using selectors, we can apply some style to an ele
 ```css
 elementTagName:selectorName{}
 ```
-The :hover selector applies a style to an element when the mouse hovers over it. There are several other selectors too. Now, let's add our custom CSS. Open the CSS document from the left pane and paste this to it.
+The :hover selector applies a style to an element when the mouse hovers over it. There are several other selectors too. Now, let's take a quick look at our prefilled css. It is written in three parts, let's take a look at what it does.
 ```css
 *{
   overflow: hidden;
@@ -101,7 +101,7 @@ The :hover selector applies a style to an element when the mouse hovers over it.
   margin-right: auto;
 }
 ```
-This css snippet adds styling to our main webpage and the map image. Here, `overflow: hidden;` is a rule that hides the scrollbar on the site. `display: block;` allows the element to start from a new line and take up the whole width, just like a block in real life. Everything else like `height` and `margin` should be self explanatory. Then, add this snippet in.
+This css snippet adds styling to our main webpage and the map image. Here, `overflow: hidden;` is a rule that hides the scrollbar on the site. `display: block;` allows the element to start from a new line and take up the whole width, just like a block in real life. Everything else like `height` and `margin` should be self explanatory.
 ```css
 .first{
   right: 80%;
@@ -144,7 +144,7 @@ This snippet primarily adds styling to our buttons. The actual styles themselves
 - `font-family: ` specifies the fonts to use.
 - `background: ` sets the background of an element. It accepts text, rgb, rgba, and hex values.  
 
-After this, let's give some life into our buttons through a pulsing animation. This is a bit of intermediate CSS, so you don't have to understand what's happening now. However, I shall link the W3S reference after the snippet.
+The next part is what gives life to our buttons. This is a bit of intermediate CSS, so you don't have to understand what's happening now. However, I shall link the W3S reference after the snippet.
 ```css
 @keyframes pulse {
   0% {
@@ -187,7 +187,7 @@ After this, let's give some life into our buttons through a pulsing animation. T
 }
 ```
 
-You can learn more about the @keyframes rule at https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp  
+You can learn more about the @keyframes rule [here](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp)    
 Now if you run the markup, the buttons would look pretty neat and the image would've resized itself. Time to give yourself a hooray!  
 
 ![hooray](https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif)
