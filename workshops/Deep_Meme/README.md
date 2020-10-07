@@ -7,7 +7,7 @@ author: '@Gautam-flash'
 
 # Deep_meme
 
-![Deep meme GIF](https://hackclub.slack.com/files/U017E40N57C/F01CA22H2FN/deep_meme-teaser-min.gif?origin_team=T0266FRGM&origin_channel=D0183UR914G)
+![Deep meme GIF](files/deep_meme-teaser-min.gif)
 
 ⏫ This is one of the things you will be able to do by following this workshop even with your own image or video.
 
