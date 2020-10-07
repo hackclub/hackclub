@@ -139,7 +139,7 @@ In this division, you will create two input fields for email and password using 
 
 Also you can add `placeholder` attribute which specifies a short hint that describes the expected value of a input field / textarea.
  
-Here you will also create a button login using `<button>` and assign `login()` as a on click function to it and finally close your first division using `</div>`.
+Here you will also create a button login using `<button>` tag and assign a onclick function `login()` to it and finally close your first division using `</div>`.
 
 So here's how your first division looks like:
 ```HTML
@@ -155,7 +155,7 @@ So here's how your first division looks like:
 
 Create your second division below the first with a class `loggedin_div` and assign ID `user_div`.
 
-In this division, you will create a logout button and assign `logout()` as a on click function.
+In this division, you will create a logout button and assign a onclick function `logout()` to it.
 
 So here's how your second division looks like:
 ```HTML
@@ -306,7 +306,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 ```
-As you created two divisions in the HTML file, so you have to do something like a division with `login_div` ID to be displayed at the login page and a division with `user_div` ID to be displayed after the login page or when the user is signed-in.
+As you created two divisions in the HTML file, so you need to display division with ID `login_div` at the login page and a division with ID `user_div` after the login page or when the user is signed-in.
 
 So in the above code, you need to do make some changes
 
@@ -461,6 +461,12 @@ function logout(){
 }
 
 ```
+It looks like this 👇
+![live](https://cloud-eaqg13z7j.vercel.app/0login_2.gif)
+
+Try logging in with the email and password you stored in Firebase. If it worked you should be all set!
+
+As you can see your main motive of workshop is completed here, but to make you webpage looks cool you need to add some custom CSS.
 
 #### CSS
 The `style.css` file present in your Repl just below `script.js` gives styles and designs to your webpage.
@@ -469,9 +475,9 @@ As you created two divisions in the HTML file, so you will add designs to it, an
 
 You just need to:
 - Mention element/ class name/ ID.
-- Open curly brackets `{`.
+- Open curly brackets  `{` .
 - Add styles.
-- Close curly brackets `}`.
+- Close curly brackets  `}` .
 
 Here how you can add styles to your `<body>` tag:
 
@@ -485,19 +491,16 @@ body {
   font-size: 16px;
 }
 ```
-This way you can add styles to divisions, ids, the whole webpage. Inspect my [CSS file](https://repl.it/@tanishqsoni/Loginauth#style.css)
 
-You can select different colors from a [color Picker](https://www.google.com/search?q=color+picker) to give your webpage an attractive look.
+This way you can add styles to divisions, ids, the whole webpage. Inspect my [CSS file](https://repl.it/@tanishqsoni/Loginauth#style.css).
 
-You can also add fonts to your webpage, as I have added `Nunito` font as you can see a line of code in HTML `<head>`. You can choose fonts from [Google Fonts](https://fonts.google.com/) and link them.
+You can select different colors from a [color picker](https://www.google.com/search?q=color+picker) to give your webpage a cool colorful look.
 
 If you need help regarding various keywords uses in CSS, so you can go through the [CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
 
-
-
 Yayyy 🎊! You are finished with the coding part! 
 
-Try logging in with the EMAIL and PASSWORD you recorded in Firebase. If it worked you should be all set!
+Take a look at [Final Code](https://repl.it/@tanishqsoni/Loginauth).
 
 ## Hooray!🎉 
 You finished the Web Login Authentication Workshop by completing all tasks:
