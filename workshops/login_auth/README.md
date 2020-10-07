@@ -192,7 +192,7 @@ So here is what your HTML code should look like:
 </html>
 ```
 
-![without CSS](https://cloud-e3wysrojq.vercel.app/c1.png)
+![without JS](https://cloud-ff66h83qt.vercel.app/0u1.png)
 
 So as you can see both the divisions are displaying on same page but you need to display second division after the user successfully logged-in as it contains the logout button.
 
@@ -215,12 +215,37 @@ So for that you need to work on JavaScript but before moving on, you remember yo
 </script>
 ```
 Here is an **important** step, you will see very first line of code:
+
 `<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>`.
 
 This will give you error, as it only integrates the `Firebase-app` not Firebase library. So, for that add below line of code with above line.
+
 `<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>`.
 
-Here is your final JavaScript code:
+After adding, here is your code:
+
+```javascript
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAVNeXl4cBro95I3dFWMaiT2rI88sqyBtc",
+    authDomain: "loginauth-12.firebaseapp.com",
+    databaseURL: "https://loginauth-12.firebaseio.com",
+    projectId: "loginauth-12",
+    storageBucket: "loginauth-12.appspot.com",
+    messagingSenderId: "308714255384",
+    appId: "1:308714255384:web:98e87065f0e45910f0ff6d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+```
+
+So, paste above code just after the second division.
+
+Here is your final HTML code:
 ```HTML
 <!DOCTYPE html>
 <html>
@@ -331,6 +356,9 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 ```
+Now, how it looks like:
+
+![with JS](https://cloud-e3wysrojq.vercel.app/c1.png)
 
 Now after completing this you need to work on both the functions you assigned in HTML buttons `login()` and `logout()`.
 
