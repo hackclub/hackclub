@@ -5,7 +5,7 @@ author: 'JeswinSunsi'
 ---
 
 # Making an interactive map using Javascript 
-By the end of this tutorial, you will learn to use functions and if-else statements in nothing but Vanilla JS to create some really good-looking interactive maps. This workshop will also teach you the basics of HTML and CSS. As a bonus, read till the end for a fun programming fact.
+By the end of this tutorial, you will learn to use functions and if-else statements in nothing but Vanilla JS to create some really good-looking interactive maps. This workshop will also teach you the basics of HTML. As a bonus, read till the end for a fun programming fact.
 
 - Demo - https://interactive-maps.jeswinsunsi.repl.co/
 - Final code - https://repl.it/@JeswinSunsi/Interactive-Maps#index.html
