@@ -233,12 +233,21 @@ Now save your notebook and create a copy of it. Open the copy of the notebook an
 #### Error and troubleshooting 
 This is a straight forward process but if you are getting any errors, it might be due to the file name and extensions (images in .png and viddeos in .mp4 or .mkv are supported).
 
+[Here is the code that was written by me](workshops/Deep_Meme/files/full_fledge_first_model.ipynb)
+
 ##### Done
+Now you can use your own image and some singer's video (maybe maroon5 "Girls like you") to make yourself a singer.<br>
+You can also use your own video with other's image to create cool videos and GIF.<br>
+Here is what I created during the workshop... (Don't mind my looks, I'm at home from like 6 months, no haircuts as well 😅).
+![Deep_meme_by_AK](https://cloud-1ycty8b1q.vercel.app/0download.gif)
+
 Before the first-order-motion was invented we needed more than 5 images of the target and many different videos of the source to create a deepfake, but this FOM model has changed the game completely for which we should thank <b>Aliaksandr Siarohin</b>.
-You can take a look at the FOM directory [Here](https://github.com/AliaksandrSiarohin/first-order-model) .
+
+### Some more great examples and many more use cases are provided in the original FOM directory 
+If you want to take your knowledge further, take a look [Here](https://github.com/AliaksandrSiarohin/first-order-model) .
 
 [Here is what others have created](https://cloud-5eonl4leu.vercel.app/0gmt20201008-123917_workshop-m_1920x1080__1_.mp4)
 
-## I hope you Enjoy this workshop and find new ways to use this super-power because the possibilities are endless.
+## I hope you Enjoyed this workshop and find new ways to use this super-power because the possibilities are endless.
 
 # Happy Hacking!!!
