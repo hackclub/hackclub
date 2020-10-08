@@ -12,11 +12,11 @@ We've all mashed our fingers on a piano, thinking we're creating something amazi
 
 We'll be writing code in Repl.it today! It's an online code editor, think of it a bit like the Google Docs for coding! During this workshop, I want to focus on the JavaScript that runs the project, so I've prepared a starter for you to use. Head on over to [this starter code](https://repl.it/@sampoder/piano).
 
-Let me just quickly explain the starter code. In there you will find three files: `index.html`, `style.css` and `script.js`. The Javascript file is currently empty, on the other hand the rest of the files have been set up to create a basic UI.
+Let me just quickly explain the starter code. In there you will find three files: `index.html`, `style.css` and `script.js`. The JavaScript file is currently empty, on the other hand the rest of the files have been set up to create a basic UI.
 
-At the top of `index.html` we reference our stylesheets and metadata. To make stylinging super easy I've also added a [Github Markdown CSS file](https://github.com/sindresorhus/github-markdown-css).
+At the top of `index.html` we reference our stylesheets and metadata. To make styling super easy, I've also added [GitHub’s Markdown CSS file](https://github.com/sindresorhus/github-markdown-css).
 
-<img src="https://cloud-f8397euam.vercel.app/screenshot_2020-09-17_at_7.06.42_pm.png" width="380" alt="Our starter site">
+<img src="https://cloud-f8397euam.vercel.app/screenshot_2020-09-17_at_7.06.42_pm.png" alt="Our starter site">
 
 ```html
 <body class="markdown-body">
@@ -45,7 +45,7 @@ At the top of `index.html` we reference our stylesheets and metadata. To make st
 </body>
 ```
 
-I'll quickly break this down. The class applied to the `<body>` tag ensures that the Github Markdown styles are applied. Then in the first `<div>` tag we provide a basic introduction to the site. Then in the second `div` there are a `span` element for each key we will be using. Then at the end we add all of our Javascript scripts. Next up let me breakdown the CSS file.
+I'll quickly break this down. The class applied to the `<body>` tag ensures that the Github Markdown styles are applied. Then in the first `<div>` tag we provide a basic introduction to the site. Then in the second `div` there are a `span` element for each key we will be using. Then at the end, we add all of our Javascript scripts. Let me break down the CSS file:
 
 ```css
 body {
@@ -73,7 +73,7 @@ body {
 }
 ```
 
-Firstly, the `body` tag is set to have a width and centered using `margin: auto;`. Secondly, we set the `#piano` div to have a height of 400px. As there is very little content in the keys, this will make sure they are big and look realistic. Next we make each key have the correct height, have a width of one seventh of the div, it has a border and a background of white. Lastly, the B key will have a right border as it comes at the end.
+First, the `body` tag is set to have a width and centered using `margin: auto;`. Secondly, we set the `#piano` div to have a height of 400px. As there is very little content in the keys, this will make sure they are big and look realistic. Next we make each key have the correct height, have a width of one seventh of the div, it has a border and a background of white. Lastly, the B key will have a right border as it comes at the end.
 
 I hope you understand the starter, now you may be getting bored so let's get making!
 
@@ -193,9 +193,9 @@ setTimeout(() => {
 
 This will return the background to white after 200 milliseconds.
 
-<img src="https://cloud-emjvvdec0.vercel.app/ezgif-6-d255a4b6f60b.gif" width="380" alt="Colour changing keys">
+<img src="https://cloud-emjvvdec0.vercel.app/ezgif-6-d255a4b6f60b.gif" alt="Colour changing keys">
 
-AND we've done it! Well done my friend, now let's make this an amazing project!
+AND we've done it! Well done my friend.
 
 ## Going beyond!
 
