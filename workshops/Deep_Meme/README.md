@@ -41,7 +41,7 @@ Now we can <s>create</s> synthesise completely fake media file that look legit a
 - subject image(s) (again you can use your own, or from the demos)
 
 <b>Google drive Setup</b>
-Click on this link https://drive.google.com/drive/folders/1kZ1gCnpfU0BnpdU47pLM_TQ6RypDDqgw?usp=sharing and add the folder to your google drive. It was created by the creator of "first order motion model" and contains almost all the resources and checkpoints you will need. Check once to confirm you have saved this folder in your drive.
+Click on this link https://drive.google.com/drive/folders/1kZ1gCnpfU0BnpdU47pLM_TQ6RypDDqgw?usp=sharing and at the top you will see the name of the fielder "first-order-motion-model", right click on the name and <b>add to starred</b>. It was created by the creator of "first order motion model" and contains almost all the resources and checkpoints you will need. Check once to confirm you have saved this folder in your drive.
 
 <b>Colab </b>
 Google Colab: It is a service provided by google where you can run your intensive codes on a powerful machine (you get GPU, good processor, enough RAM even TPU, you can choose the combination). When you open it, you will see the following screen.
@@ -236,6 +236,8 @@ This is a straight forward process but if you are getting any errors, it might b
 ##### Done
 Before the first-order-motion was invented we needed more than 5 images of the target and many different videos of the source to create a deepfake, but this FOM model has changed the game completely for which we should thank <b>Aliaksandr Siarohin</b>.
 You can take a look at the FOM directory [Here](https://github.com/AliaksandrSiarohin/first-order-model) .
+
+[Here is what others have created](https://cloud-5eonl4leu.vercel.app/0gmt20201008-123917_workshop-m_1920x1080__1_.mp4)
 
 ## I hope you Enjoy this workshop and find new ways to use this super-power because the possibilities are endless.
 
