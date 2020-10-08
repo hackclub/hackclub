@@ -3,6 +3,7 @@ name: Tunes on JS
 description: Make a piano for your web browser with Tone.js
 author: '@sampoder'
 ---
+
 # Tunes on JS - Creating a Piano
 
 We've all mashed our fingers on a piano, thinking we're creating something amazing (of course you are!). Ok, maybe that's just me. Today, I though I'd be cool if we created a piano using HTML & JS all with the help of a great libary called [Tone.js](http://tonejs.github.io/)!
@@ -21,8 +22,14 @@ At the top of `index.html` we reference our stylesheets and metadata. To make st
 <body class="markdown-body">
   <div>
     <h1>Piano on the Web</h1>
-    <p>Hey there! This site allows you to make music like you would on any piano! Let's make some noise!</p>
-    <p>Click the <kbd>S</kbd> key to make a middle C (or C4), then <kbd>D</kbd> to make D4 and so on up until B4 with the <kbd>K</kbd> key.</p>
+    <p>
+      Hey there! This site allows you to make music like you would on any piano!
+      Let's make some noise!
+    </p>
+    <p>
+      Click the <kbd>S</kbd> key to make a middle C (or C4), then
+      <kbd>D</kbd> to make D4 and so on up until B4 with the <kbd>K</kbd> key.
+    </p>
   </div>
   <div id="piano">
     <span class="key" id="C"><strong>C</strong></span>
@@ -32,7 +39,7 @@ At the top of `index.html` we reference our stylesheets and metadata. To make st
     <span class="key" id="G"><strong>G</strong></span>
     <span class="key" id="A"><strong>A</strong></span>
     <span class="key" id="B"><strong>B</strong></span>
-  </div> 
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.52/Tone.js"></script>
   <script src="script.js"></script>
 </body>
@@ -41,16 +48,16 @@ At the top of `index.html` we reference our stylesheets and metadata. To make st
 I'll quickly break this down. The class applied to the `<body>` tag ensures that the Github Markdown styles are applied. Then in the first `<div>` tag we provide a basic introduction to the site. Then in the second `div` there are a `span` element for each key we will be using. Then at the end we add all of our Javascript scripts. Next up let me breakdown the CSS file.
 
 ```css
-body{
+body {
   width: 75vw;
   margin: auto;
 }
 
-#piano{
+#piano {
   height: 400px;
 }
 
-.key{
+.key {
   height: 400px;
   width: 14.2857142857%;
   float: left;
@@ -61,7 +68,7 @@ body{
   padding-top: 300px;
 }
 
-#B{
+#B {
   border-right: 5px solid black;
 }
 ```
@@ -77,7 +84,7 @@ To play a note in our project we will have the user press a key on their keyboar
 For example, in the below snippet:
 
 ```javascript
-document.onkeydown = function(e){
+document.onkeydown = function (e) {
   console.log('Key pressed!')
 }
 ```
@@ -87,9 +94,9 @@ Whenever a key is pressed it will log 'Key pressed!'. You can try it too! Just t
 The next step is knowing what key we pressed, we want to get a bit more info to do that. We can do this with the following snippet. Building on top of our previous function, we are now getting data from the browser through the event. In this data we get a keyCode this can be used to identify the key that was pressed. The snippet gets all the information from the event that fired the function.
 
 ```javascript
-document.onkeydown = function(e){
-  e = e || window.event;
-  var key = e.which || e.keyCode;
+document.onkeydown = function (e) {
+  e = e || window.event
+  var key = e.which || e.keyCode
   console.log(key)
 }
 ```
@@ -101,10 +108,12 @@ You'll see that when running this, our key is a number!? That's because each key
 Now that we know how to identify the key, let's only log the event if it is the `s` key. It's keycode is `83` We'll use an if/else statement for this.
 
 ```javascript
-document.onkeydown = function(e){
-  e = e || window.event;
-  var key = e.which || e.keyCode;
-  if(key===83){console.log('S had been pressed')}
+document.onkeydown = function (e) {
+  e = e || window.event
+  var key = e.which || e.keyCode
+  if (key === 83) {
+    console.log('S had been pressed')
+  }
 }
 ```
 
@@ -115,23 +124,23 @@ We've done it!
 Now it's time to play a sound with Tone.js! First let's start up Tone.js, add the following to the top of the Javascript file:
 
 ```javascript
-Tone.start();
-const synth = new Tone.Synth().toDestination();
+Tone.start()
+const synth = new Tone.Synth().toDestination()
 ```
 
-This starts up Tone.js and then creates a synth for us to play a note. 
+This starts up Tone.js and then creates a synth for us to play a note.
 
-We're going to do this in a Javascript function, to make our clean. 
+We're going to do this in a Javascript function, to make our clean.
 
 ```javascript
 function playNote(note) {
-  synth.triggerAttackRelease('C4', "8n");
+  synth.triggerAttackRelease('C4', '8n')
 }
 ```
 
-Here's how we create a function. The name of our function will be `playNote` and it will need a variable called `note` to be provided when the function is called. Then inside of that function, it plays the C4 key for the duration of 8 notes. 
+Here's how we create a function. The name of our function will be `playNote` and it will need a variable called `note` to be provided when the function is called. Then inside of that function, it plays the C4 key for the duration of 8 notes.
 
-However, we aren't using our `note` variable. Let's use this. We're going to add it in using template strings (or template literals). Template strings allow us to add variables into our strings. To do this we use the <code>`</code> character instead of  <code>'</code>. 
+However, we aren't using our `note` variable. Let's use this. We're going to add it in using template strings (or template literals). Template strings allow us to add variables into our strings. To do this we use the <code>`</code> character instead of <code>'</code>.
 
 Then whenever we want to use a variable like note, we can do: `${note}`
 
@@ -139,9 +148,8 @@ Putting this together, we can make:
 
 ```javascript
 function playNote(note) {
-  synth.triggerAttackRelease(`${note}4`, "8n");
+  synth.triggerAttackRelease(`${note}4`, '8n')
 }
-
 ```
 
 The 4 is kept as this defines, the section of the keyboard. At the moment, we'll keep that the same.
@@ -154,17 +162,12 @@ Test it out! When you click the <kbd>S</kbd> key you should hear the Middle C no
 
 Now can you replicate this?
 
-<kbd>D</kbd> should play the D note.
-
-<kbd>F</kbd> should play the E note.
-
-<kbd>G</kbd> should play the F note.
-
-<kbd>H</kbd> should play the G note.
-
-<kbd>J</kbd> should play the A note. (Yes pianos start at C...)
-
-<kbd>K</kbd> should play the B note.
+- <kbd>D</kbd> should play the D note.
+- <kbd>F</kbd> should play the E note.
+- <kbd>G</kbd> should play the F note.
+- <kbd>H</kbd> should play the G note.
+- <kbd>J</kbd> should play the A note. (Yes pianos start at C...)
+- <kbd>K</kbd> should play the B note.
 
 Remember, you can use [keycode.info](https://keycode.info).
 
@@ -173,7 +176,7 @@ Remember, you can use [keycode.info](https://keycode.info).
 How will the person know the key they clicked? Let's give them some visual confirmation! We've got each key in a seperate element so let's change the background of the key when it's hit. We can do by adding this line to our `playNote` function:
 
 ```javascript
-document.getElementById(note).style.background = '#33d6a6';
+document.getElementById(note).style.background = '#33d6a6'
 ```
 
 What this does, is it gets the element with the ID of the note variable. If you see above, I set the ID of each `<span>` to be the same as their corresponding note. It then sets the background to be Hack Club Green<sup><strike>TM</strike></sup> or `#33d6a6`.
@@ -183,7 +186,9 @@ Run it! What happens?
 They keys turn green, but it stays green!!!! NOOOOOO..... We've got to change this, let's add this line of code:
 
 ```javascript
-setTimeout(() => {document.getElementById(note).style.background = 'white';}, 200);
+setTimeout(() => {
+  document.getElementById(note).style.background = 'white'
+}, 200)
 ```
 
 This will return the background to white after 200 milliseconds.
@@ -198,6 +203,6 @@ We've built a basic project, now let's make it EPIC! I'm handing over control to
 
 - [A piano that gives the user more control.](https://hopeful-mclean-c9c978.netlify.app/) This version of the piano allows you to use the <kbd>SHIFT</kbd> key to type a black key and <kbd>⬅︎</kbd> or <kbd>⮕</kbd> to move down the keyboard.
 - [A piano that goes crazy.](https://optimistic-bhaskara-1870c3.netlify.app) This piano doesn't care, what ever you click it won't care about! Plays random sounds with random colours and some very kind messages!
-- [A global piano, a piano where every can go play and others can hear!](https://global-piano.herokuapp.com) Built with Socket.io, I've adpated this project to power this. Try opening up the website in multiple tabs to play around :) 
+- [A global piano, a piano where every can go play and others can hear!](https://global-piano.herokuapp.com) Built with Socket.io, I've adpated this project to power this. Try opening up the website in multiple tabs to play around :)
 
 Make something cool? Awesomeeee!!!! Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6/) in the Slack and tag me with [@sampoder](https://hackclub.slack.com/archives/DT08DHJKF/)!
