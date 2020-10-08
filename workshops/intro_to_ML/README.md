@@ -39,7 +39,7 @@ We'll be feeding it with a set of Xs and a set of Ys, and when we train it then 
 
 So, lets get started :)  
 <br/>
-Note : for this project We'll use PYTHON and a library called Tensorflow.  
+Note : for this project We'll use Python and a library called Tensorflow.  
 <br/>
 
 
