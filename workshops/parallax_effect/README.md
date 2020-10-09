@@ -1,6 +1,6 @@
 ---
 name: 'Parallax Effect'
-description: 'Creating greater user experience on web using javaScript'
+description: 'Creating greater user experience on web using JavaScript'
 author: '@giridhar7632'
 ---
 
@@ -16,7 +16,7 @@ Here's the [live demo](https://total-parallax.giridharhackclu.repl.co/), and [so
 ## Parallax
 
 Parallax movement is when things move at different speeds relative to each other. This effect can be used to create an illusion of depth.
-We will experience this effect while scrolling a webpage. It's called Parallax scrolling.
+We will experience this effect in websites while scrolling a webpage. It's called Parallax scrolling.
 
 The technique is popular in many places including video games, where it’s usually seen in the layered backgrounds.
 
@@ -26,7 +26,7 @@ We know that objects at farther distances move with slower speeds than the neare
 
 > **Note:** Parallax scrolling does not always work on mobile devices smartphones. However, you can use media queries to turn off the effect on mobile devices.
 
-We can see how the parallax scrolling works, in real wesites, in this example [here](https://codepen.io/samdbeckham/full/OPXPNp).
+We can see how the parallax scrolling works in this example [here](https://codepen.io/samdbeckham/full/OPXPNp).
 
 <a href="https://codepen.io/samdbeckham/full/OPXPNp" target="_blank"><img src="https://cloud-kt149rdr8.vercel.app/ezgif.com-add-text.gif" alt="parallax scrolling"/></a>
 
@@ -35,7 +35,7 @@ We can see how the parallax scrolling works, in real wesites, in this example [h
 ## Advantages of Parallax Effect
 
 If you want to make your website amazing, it's not enough to show static elements. You have to amaze your visitors and make them want to explore your site, otherwise they can leave fast. You have to show them some cool things and some short visual surprises. The Parallax effect makes it possible. Moving components on scrolling or on hovering will make them interested.
-You can create something nice using parallax effect of your choice.
+You can create something interesting using parallax effect of your choice.
 
 ## Getting started
 
@@ -43,7 +43,7 @@ Practically a parallax is composed of more than one layer in parallel, moving al
 
 ### Setup
 
-We will be using [Repl.it](https://repl.it) for making this project.
+We will use [Repl.it](https://repl.it) to build this project.
 
 > Repl.it is an online code editor. It's similar to Google Docs, but has some important features that make it much better for typing code than a regular text editor.
 
@@ -66,9 +66,9 @@ function parallax(layer, distance, speed) {
 }
 ```
 
-This `function` has three arguments `layer`- the layer you want to add parallax, `distance`- how much we scroll and `speed`- the required speed change. We will add parallax for multiple layers. That is the reason we made a function for recalling it for different layers.
+This `function` has three arguments `layer`- the layer you want to add parallax, `distance`- how much we scroll and `speed`- the required speed change. We will add parallax for multiple layers. That is the reason we made a function to recall it for different layers.
 
-Then we will get the element(layer) required using `querySelector`. You can use any javaScript DOM selector as your wish. Then translate the `Y-offset` of the element using CSS `transform: translateY();` to change the speed of that layer.
+Then we will get the element(layer) required using `querySelector`. You can use any JavaScript DOM selector as your wish. Then translate the `Y-offset` of the element using CSS `transform: translateY();` to change the speed of that layer.
 The positive value into `translateY()` translates downwards and negative value translates upwards. Discover more about `translateY()` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateY).
 
 <a href="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png"><img src="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png" alt="translateY() example" height="250px" width="auto"/></a>
@@ -156,7 +156,7 @@ You can create different parallax effects.
 
 You can add parallax-effect to your websites for creating better user experience and display your content more interactively.
 
-Make use of creativity and create different parallax effects. Share it with me on slack [@giridhar](https://hackclub.slack.com/team/U013E6KE9UJ), I'd love to here from you!
+Make use of your creativity and make different parallax effects. Share it with me on slack [@giridhar](https://hackclub.slack.com/team/U013E6KE9UJ), I'd love to here from you!
 
 ## Inspiration
 
