@@ -6,17 +6,19 @@ author: "@Chrisrama"
 
 Hello friends, today we will be using MIT APP INVENTOR, to create our BMI application. It an online platform that help you create android application using blocks to write the code, for this application we are doing, it will be simple that you don’t need any knowledge on how to do it. So you just need to go through each step and your app will be on  running. 
 
-Body mass index (BMI) application an calculator that  measure the body fat (or weight category) based on height and weight that applies to adult men and women. It uses a very simple formula :
+Body mass index (BMI) application an calculator that  measure the body fat (or weight category) based on height and weight of the person. It uses a very simple formula :
 
-(Your weight / your height )*2
+_(Your weight / your height )*2_
+#Step 1
+Now let build  our app. We will start off by visiting [MIT app inventor]{ http://appinventor.mit.edu/ }. Now inside the home page,right at the top next to the Logo of App inventor, click on the label *“CREATE APP!!”.* You will redirected to sign in using google; [click here](https://cloud-kimhkb4fl.vercel.app/0screenshot_2020-09-30_at_12.48.09.png) even if it your first time here. Now select you google account you preferred and you will be directed to to the of the workplace.
 
-Now let build  our app. We will start off by visiting MIT app inventor at http://appinventor.mit.edu/ . When you ready inside the home, right at the top next to the Logo of App inventor, click on the label “CREATE APP!!”.  The site will direct to sign in using google even if it your first time here. Now select you google account you preferred and you will be directed to to the home page of your the project building. 
+Now if you not direct to name your project, right on the top click the selection _MY PROJECTS_ button. You then see that you have zero project. Now click on the select _create new Project_ which will ask you to give the name of your project and set name to "BMI". NOTE: if you prefer to used another name, you should not place a space between the word rather use an undercover ( _ ). 
 
-Now if you not direct on my project , right on the top click the selection MY PROJECTS. You then see that you have zero project. Now click on the select create new Project which will ask you to give the name of your project. Give it the name BMI . NOTE: if you prefer to used another name don’t place space space between the word rather use and undercover ( _ ). 
-What you see now if the user interfaces of how you app will look like on an android phone. On the viewer slide it way you will place all your components you need for your app from palette slide.if you would like to change the device such as to a tablet or a bigger phone , just click on the the phone size button and change to device .
+
+What you see now if the user interfaces of how you app will look like on an android phone/tablet. On the viewer slide it way you will place all your components you need for your app from palette slide.if you would like to change the device such as to a tablet or a bigger phone , just click on the the phone size button and change to device .
 Now let us start, we will use the palette slide to take components we need for our app. We will mostly use the components under user interfaces . 
 1.
-Now drag and drop  Label  from the user interface ad place it inside the phone of the viewer slide. 
+Now drag and drop |Label|  from the user interface ad place it inside the phone of the viewer slide. 
 
  Now drag and drop component name  TextBox . from the user interface and place it under the Label that is on the phone.
 
