@@ -2,7 +2,7 @@
 
 ## General Guidelines
 
-- Conversations in pull requests and issues must align with the [hack club code of conduct](https://hackclub.com/conduct/).
+- Conversations in pull requests and issues must align with the [Hack Club code of conduct](https://hackclub.com/conduct/).
 - Please be patient and kind towards maintainers as a lot of them are volunteers.
 - Make sure the pull request or issue doesn't already exist before making it.
 
@@ -27,7 +27,7 @@ You will be writing your workshop in a README.md file located in a folder within
 
 Now we can get to making! Here are some workshop requirements:
 
-- Complies with the [hack club code of conduct](https://hackclub.com/conduct/).
+- Complies with the [Hack Club code of conduct](https://hackclub.com/conduct/).
 - Help club members produce a compelling and real project in under 20 minutes
 - Offers repl.it or a similar service that allows members to begin coding with one click.
 - Have instructive and compelling images, GIFs, and visuals.
