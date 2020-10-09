@@ -8,9 +8,13 @@ Hello friends, today we will be using MIT APP INVENTOR, to create our BMI applic
 
 Body mass index (BMI) application an calculator that  measure the body fat (or weight category) based on height and weight of the person. It uses a very simple formula :
 
+
 _(Your weight / your height )*2_
+
+
 #Step 1
-Now let build  our app. We will start off by visiting [MIT app inventor]{ http://appinventor.mit.edu/ }. Now inside the home page,right at the top next to the Logo of App inventor, click on the label *“CREATE APP!!”.* You will redirected to sign in using google; [click here](https://cloud-kimhkb4fl.vercel.app/0screenshot_2020-09-30_at_12.48.09.png) even if it your first time here. Now select you google account you preferred and you will be directed to to the of the workplace.
+
+Now let build  our app. We will start off by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,right at the top next to the Logo of App inventor, click on the label *“CREATE APP!!”.* You will redirected to sign in using google; [click here](https://cloud-kimhkb4fl.vercel.app/0screenshot_2020-09-30_at_12.48.09.png) even if it your first time here. Now select you google account you preferred and you will be directed to to the of the workplace.
 
 Now if you not direct to name your project, right on the top click the selection _MY PROJECTS_ button. You then see that you have zero project. Now click on the select _create new Project_ which will ask you to give the name of your project and set name to "BMI". NOTE: if you prefer to used another name, you should not place a space between the word rather use an undercover ( _ ). 
 
@@ -32,7 +36,7 @@ Now will are going drag and drop component Button on top of the user Interface i
 
 G)Now we are going to take let drag and drop another Label into the phone, so will are going to do this 4 times until we have 4 Label one under another.
 
-2.
+#Step 2
 Alright we now have all the component we need.
 Now go over the slide name COMPONENTS and here you will find all the components will have place in our phone user interface. So we need to rename all our components.
  ⚠️To Rename our components you must click one component on the components slide and scroll done onto that slide and click on the button Rename next to delete button and give it a name.
