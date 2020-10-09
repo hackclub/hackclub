@@ -2,6 +2,7 @@
 name: Tunes on JS
 description: Make a piano for your web browser with Tone.js
 author: '@sampoder'
+img: https://cloud-huy2ue7gg.vercel.app/0screenshot_2020-10-10_at_6.17.58_am.png
 ---
 
 # Tunes on JS - Creating a Piano
