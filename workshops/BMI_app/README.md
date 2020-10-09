@@ -12,9 +12,9 @@ Body mass index (BMI) application an calculator that  measure the body fat (or w
 _(Your weight / your height )*2_
 
 
-#Step 1
+# Step 1
 
-Now let build  our app. We will start off by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,right at the top next to the Logo of App inventor, click on the label *“CREATE APP!!”.* You will redirected to sign in using google; [click here](https://cloud-kimhkb4fl.vercel.app/0screenshot_2020-09-30_at_12.48.09.png) even if it your first time here. Now select you google account you preferred and you will be directed to to the of the workplace.
+Now let build  our app. We will start off by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,right at the top next to the Logo of App inventor, click on the label *“CREATE APP!!”.* You will redirected to sign in using google; ![click here](https://cloud-kimhkb4fl.vercel.app/0screenshot_2020-09-30_at_12.48.09.png) even if it your first time here. Now select you google account you preferred and you will be directed to to the of the workplace.
 
 Now if you not direct to name your project, right on the top click the selection _MY PROJECTS_ button. You then see that you have zero project. Now click on the select _create new Project_ which will ask you to give the name of your project and set name to "BMI". NOTE: if you prefer to used another name, you should not place a space between the word rather use an undercover ( _ ). 
 
@@ -83,13 +83,13 @@ Now let create a procedure that does this, we will go onto the the Block slide a
 Now we want to multiply it by 2, so go and click on the Block Math and take the first bock that has a 0  in it and place it after the multiplication sign your block , now click inside this block again to gauge the number to 2, your block should then be place in the remaining puzzle that allow the value to be multiply by 2. Now redone with our procedure that would allow us to know someone’s BMI value. 
 Now let have a process that give the message to the user about they BMI Value and categories weight they are in. Now click on the Block Button_calculate  and look fist block When.Button_calculate.Click.do  and place it on the Viewer slide. Now go back on the Block slide and click on the Block BMI_value and drag and drop the block Set.BMI_value.text.to inside the the Button_calculate.  Now we see an error or a red cross on the block well no problem for that, it just informing us that we did not assign any value to that block. Go back on the Block slide and click on the block Procedure drag and drop the block Call.calculate inside the set.BMI_value.Text.to , now the cross line should go away. Let me explain what will happen here, so when the button_calculate is click the BMI_value ’s text will be the Value of the BMI, which was calculated by the Procedure Calculate. 
 Let now categorise someone’s BMI value to the correct categories weight. So first there is a general rule to categorise someone’s weight here it is: 
-If the BMI value is less than 17 then the person is very underweight
+_If the BMI value is less than 17 then the person is very underweight
 If the BMI value is between 17 and 18.5 then the person is underWeight
 If the BMI value is between 18.5 and 25 then the person has normal weight 
 If the BMI value is between 25 and 30 then the person is over Weight
 If the BMI value is between 30 and 35 then the person has Obesity 1
 If the BMI value is between 35 and 40 then the person has obesity 2(severe)
-If the BMI value is over 40 then the person has obesity 3 (horbid) 
+If the BMI value is over 40 then the person has obesity 3 (horbid)_
 So that what we are going to do now. Take not that the procedure To.calculate.do has the person’s BMI value. Now we are going to call.calculate it to compare it with these numbers. We will need the following, an the If statement so go back on the Block slide and click on the Control bock and drag and the third block of if statement as we well nee a lot of it and drop it in under the block we made in Button_calculate. Now you see there is like a a parameter small button like parameter inside the if statement, click on this block to expand our number of statement, as you click it an option of button will open up, now dead and drop Else if  statements so now let add 4 Else if statement one after another like this video. Now click on that parameter option again to close this option.
 We now can start making the Block code according to the rule I explain how to categorise the BMI value. 
  Now go inside the Maths block and drag a block with an equal sign = and drop it  with the first If inside the If statement , now click inside the Procedure block drag and drop the Call.calculate block inside the first open puzzle from the = block.click on the = sign and set the sign < . Now let call the block Number , inside the Maths Block drag and drop the block that as a number 0 with inside the second puzzle of the = #. Now click on this number block to edit it and set it value to 17. Let go inside the Diagnosis_report drag and drop the block with set.Diagnosis_report.Text.to inside the then Statement. Now go to Text block and drag the first block that has only the “ “ inside it and place it in the set.diagnosis_report.text.to block. now click inside this block to set the text value. Now inside it write “Very underweight “. Now wrote the first code for the rule to set the categorise the person’s weight. now let go for the first Else if statement . 
