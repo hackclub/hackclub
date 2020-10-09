@@ -14,7 +14,7 @@ _(Your weight / your height )*2_
 
 # Step 1
 
-Now let build  our app. We will start off by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,right at the top next to the Logo of App inventor, click on the label *“CREATE APP!!”.* You will redirected to sign in using google; ![click here](https://cloud-kimhkb4fl.vercel.app/0screenshot_2020-09-30_at_12.48.09.png) even if it your first time here. Now select you google account you preferred and you will be directed to to the of the workplace.
+Now let build  our app. We will start off by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,right at the top next to the Logo of App inventor, click on the label *“CREATE APP!!”.* You will redirected to sign in using google; ![click here](https://cloud-k86tkribn.vercel.app/0screenshot_2020-09-30_at_12.31.43.png) even if it your first time here. Now select you google account you preferred and you will be directed to to the of the workplace.
 
 Now if you not direct to name your project, right on the top click the selection _MY PROJECTS_ button. You then see that you have zero project. Now click on the select _create new Project_ which will ask you to give the name of your project and set name to "BMI". NOTE: if you prefer to used another name, you should not place a space between the word rather use an undercover ( _ ). 
 
@@ -108,14 +108,14 @@ Now go over the Text Block and drag the block with an “ “ and place it after
 Now we just completed the second phase for the rule of categorising the BMI value. 
 Let me explain what this code does, it compare the BMI value from procedure if is bigger than 17 and smaller than 18.5 then set the Diagnosis value to the to “Under weight”.
 So we will repeat this step 4 times, but only the text value will change, now go back from where ⚠️THIS STEP WILL BE REAPEATED LATER, I WILL SHOW YOU HOW and do those step  until to ⚠️THIS STEP IS OVER  but remember to change the blue as you see in this picture above. So the change is 
-      Else If                18.5  and 25
-      Then           Normal Weight 
-      Else if                25 and 30 
-      Then          Over Weight 
-      Else if                30 and 35
-      Then           Obesity 1
-      Else if                35 and 40 
-      Then           Obesity 2(severe)
+     _Else If                18.5  and 25_
+       _Then           Normal Weight_
+      _Else if                25 and 30_
+      _Then          Over Weight_
+      _Else if                30 and 35_
+      _Then           Obesity 1_
+      _Else if                35 and 40_
+      _Then           Obesity 2(severe)_
 
 Now after you done your block of code should look like the above picture.So now there should be left with one else If statement .
 Now go over the the Math Block and drag the block that has = sign and place it in the Else if statement.
