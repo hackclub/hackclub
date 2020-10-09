@@ -1,5 +1,5 @@
 ---
-name: "BMI applocation"
+name: "BMI application"
 description: "createing a BMI application using App inventor"
 author: "@Chrisrama"
 ---
