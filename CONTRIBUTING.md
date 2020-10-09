@@ -1,120 +1,54 @@
 # Contribution Guidelines
 
-This document contains a set of guidelines which any contributions to _any_ Hack Club repository must follow.
+## General Guidelines
 
-[If you disagree with something here, you should open up an issue to discuss making a change!](https://github.com/hackclub/hackclub/issues/new)
+- Conversations in pull requests and issues must align with the [hack club code of conduct](https://hackclub.com/conduct/).
+- Please be patient and kind towards maintainers as a lot of them are volunteers.
+- Make sure the pull request or issue doesn't already exist before making it.
 
-## Table of Contents
+## Contributing a Workshop
 
-1. [GitHub Flow](#github-flow)
-2. [Branch Names](#branch-names)
-3. [File Names](#file-names)
-4. [Git Commits](#git-commits)
-5. [Making a Pull Request](#making-a-pull-request)
+Hey there! Super excited to see that you want to contribute to a workshop. Before we get started make sure you have the following:
 
-## GitHub Flow
+- A GitHub account - [Sign Up](https://github.com/join)
+- Basic markdown knowledge - [Learn Markdown](https://www.markdowntutorial.com/)
 
-We use a modified version of [GitHub Flow](https://guides.github.com/introduction/flow/) at Hack Club. The only difference is instead of deploying from a reviewed pull request, we merge first and deploy straight from master.
+That's it! Just make sure that your workshop idea [isn't already being worked on](https://github.com/hackclub/hackclub/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc) and [doesn't already exist](https://github.com/hackclub/hackclub/tree/main/workshops). Let's get started!
 
-Part of the GitHub Flow is submitting pull requests. See https://help.github.com/articles/using-pull-requests/ for a good overview of what pull requests are and how to use them. We use the _fork & pull model_ for managing contributions.
+### 🍴 Fork this Repository
 
-## Branch Names
+If you are familiar with git you know that you can make pull requests from branches. Because you don't have write access to this repository you need to [make a fork](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) and then make a PR from that fork.
 
-Branch names should adhere to the following:
+### ✨ Create README.md
 
-- All lowercase
-- `-` as space separator for branch names
-- If a feature branch, include the name of the feature
+You will be writing your workshop in a README.md file located in a folder within the workshops folder. So if your workshop is called `Building a Rocket with CSS` a good folder name would be `css-rocket`. This means that you would create a README file in `workshops/css-rocket/README.md`. You can create this file within the GitHub editor or with your editor once cloned.
 
-## File Names
+### 🛠 Writing the Workshop
 
-File names should follow the following guidelines:
+Now we can get to making! Here are some workshop requirements:
 
-- All lowercase
-- `_` as space separator for file names
-- `-` as a space separator for dates in file names
-- Dates in `YY-MM-DD` format
+- Complies with the [hack club code of conduct](https://hackclub.com/conduct/).
+- Help club members produce a compelling and real project in under 20 minutes
+- Offers repl.it or a similar service that allows members to begin coding with one click.
+- Have instructive and compelling images, GIFs, and visuals.
+- Are very easy to hack on for long periods of time after completion.
+- Link unknown concepts to external sources.
+- End with at least 3 demos of how the project can be expanded, with live links and code links for each demo.
+- All files besides the README.md are uploaded to the hack club CDN in the `#cdn` channel on slack.
+- Are a registered hack club leader in the slack.
+- All workshops must be in English at native-level proficiency. Phrasing and grammar must be perfect.
 
-## Git Commits
+Workshops are generally ~300 lines of markdown.
 
-In order to ensure that our git history makes sense we have certain guidelines which we require contributors to adhere to. These are:
+Here are some examples of amazing workshops:
 
-### Commits should follow the commit standards
+- @[sampoder](https://github.com/sampoder)'s [Creating a jaw-dropping Scrapbook](https://workshops.hackclub.com/scrapbook_css/)
+- @[faisalsayed10](https://github.com/faisalsayed10)s [JavaScript Clock](https://workshops.hackclub.com/simple_clock/)
 
-These are:
+### 🚀 Submitting the PR
 
-- Commits should be written in the imperative mood
-- Commits should start with a capital letter
-- Commits should not end with a full stop
+Now all you have to do is [submit the PR from the fork](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)!
 
-This is a style used by many other Open Source projects (Linux, Rails) as well as most corporate software development shops.
+### 👀 Next Steps
 
-[This is a great guide on writing a git commit message](http://chris.beams.io/posts/git-commit/)
-
-#### Examples
-
-> fix typo in introduction.
-
-- Does **not** start with a capital letter
-- Ends with a full stop
-
-> Added Iron Man GIF
-
-- Does **not** use the imperative mood
-
-> Adding more pizza parlors to directory
-
-- Does **not** use the imperative mood
-
-> Fix typo in introduction to user guide
-
-This commit message is wonderful!
-
-### Commits should be one logically unit of change
-
-A logical unit of change can be thought of as completion of a single task.
-
-A good way to figure out if you are not adhering to this rule is to tell yourself what you changed ("I added a picture of a donkey to the Twilio workshop"). If you find yourself having multiple statements in this description then you have made your commit too big.
-
-#### Examples
-
-> Add an image of pizza, fix typos, rewrite `README.md`
-
-This commit message contains three units of change, they are:
-
-- An image of pizza
-- Fixed typos
-- Rewrote `README.md`
-
-These should be split into one commit each.
-
-> Add an image of pizza
-
-This commit is great as only one logical change was made.
-
-### Commits should explain the change, but not be longer than 50 chars
-
-A commit message is used for quickly summarizing a change. Another contributor should be able to read it, along with the content and immediately understand the change does.
-
-#### Examples
-
-> Fix typo
-
-- This commit message does not give any context
-
-> Add the spark reactor source code into the document where we add our thoughts
-
-- This commit message is too long! It should be less than 50 characters!
-- It uses too many words and could be simplified
-
-## Making a Pull Request
-
-Here are a series of GIFs that illustrate how to make and commit a change, and create a pull request for review, using GitHub's web interface.
-
-![](img/gh_web_find_file.gif)
-
-![](img/gh_web_edit_file.gif)
-
-![](img/gh_web_make_commit.gif)
-
-![](img/gh_web_submit_pr.gif)
+Now someone will review your workshop! Keep in mind this might take some time so please be patient. Thank you for submitting your workshop!
