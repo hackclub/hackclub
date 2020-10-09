@@ -170,4 +170,4 @@ print(message.media._uri)
 Save the file and run it from the command line:
 
 python send_mms.py
-In just a moment you should receive a text message with an image
+In just a moment you should receive a text message with an image 
