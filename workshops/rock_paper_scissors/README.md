@@ -39,8 +39,10 @@ You should see something like the following:
 
 ### 1) Importing Modules
 Let us start making our game! First, we'll need to import some modules. As you know there are many modules for python but today we will be working with the `randint` module.
-To learn the randint package this click [this][randint]
-[randint]: https://www.journaldev.com/36085/randint-method-in-python
+To learn the randint package this click [this][randint].
+
+[randint]: https://www.journaldev.com/36085/randint-method-in-python/
+
 So in the first line, type `from random import randint`. This will import the randint module.
 
 ### 2) Giving values to the variables
