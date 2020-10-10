@@ -18,7 +18,7 @@ This workshop will take 15 minutes.
 
 You can hear the voice made using the python code [here.](https://repl.it/@bezlin/tts#voice.mp3)
 
-## Getting startted
+## Getting started
 
 ![vedio](https://cloud-1h9458u6z.vercel.app/54_blog_image_13.gif)
 
@@ -33,7 +33,7 @@ To get started, go to [repl](https://repl.it/languages/Python). Your coding envi
 
 ## Step 2: Get started to code
 
-To convert text to speech we need to import a new Library/API. There are several APIs available to convert text to speech in python. One such APIs is the Google Text to Speech API commonly known as the gTTS API. gTTS is a very easy to use tool which converts the text entered, into audio which can be saved as an mp3 file.
+To convert text to speech we need to import a new Library/API. There are several APIs available to convert text to speech in python. One such APIs is the Google Text to Speech API commonly known as the gTTS API. gTTS is a very easy-to-use tool that converts the text entered, into audio which can be saved as an mp3 file.
 The gTTS API supports several languages including English, Hindi, Tamil, French, German, and many more. The speech can be delivered in any one of the two available audio speeds, fast or slow. However, as of the latest update, it is not possible to change the voice of the generated audio.
 
 For getting this module you need to install the gtts package. Don't worry if you are using repl.it.In repl.it it will be automatically installed when you run the code.
@@ -59,7 +59,7 @@ We are just importing the modules in this line.
 mytext = str(input("Enter the text you want to convert :-"))
 ```
 
-In this line, we need to pass the string which we need to convert to speech. Here mytext is a variable that holds our text. When the code runs it will ask for users input to enter a text.
+In this line, we need to pass the string which we need to convert to speech. Here mytext is a variable that holds our text. When the code runs it will ask for the user's input to enter a text.
 
 <img width="1440" alt="Screenshot 2020-09-18 at 5 39 06 PM" src="https://cloud-mvq9zgpof.vercel.app/0screenshot_2020-10-10_at_11.06.28_am.png">
 
@@ -67,7 +67,7 @@ In this line, we need to pass the string which we need to convert to speech. Her
 language = str(input("Enter the language code for example 'en' for English :-"))
 ```
 
-In this line, we are assigning the language to the variable language. Gtts API supports multiple languages but here we are going with English. Every language has its short forms for English it is en. For getting other language code google. So we are declaring the language variable as 'en'. So the text will be converted in the language specified. When the code runs it will ask for users input to enter a language.
+In this line, we are assigning the language to the variable language. Gtts API supports multiple languages but here we are going with English. Every language has its short forms for English it is en. For getting other language code google. So we are declaring the language variable as 'en'. So the text will be converted in the language specified. When the code runs it will ask for the user's input to enter a language.
 
 <img width="1440" alt="Screenshot 2020-09-18 at 5 39 06 PM" src="https://cloud-8uqrl4ft9.vercel.app/0screenshot_2020-10-10_at_11.07.12_am.png">
 
@@ -101,9 +101,9 @@ You may have noticed a new file generated after the code has finished running. I
 
 ## Hacking away!
 
-Now you know how to convert. Try it with other languages and have fun .Try to make a help part in your codes which says the whole help as voice .its pretty cool right?. Ellaborate it and bring more features.
+Now you know how to convert. Try it with other languages and have fun. Try to make a help part in your codes which says the whole help as voice .its pretty cool right?. Elaborate on it and bring more features.
 
-I am attaching the [Gtts](https://gtts.readthedocs.io/en/latest/) documentation take a look. Also if you are new to [python](https://www.python.org/doc/) take a look at python documentation too.
+I am attaching the [Gtts](https://gtts.readthedocs.io/en/latest/) documentation take a look. If you are new to [python](https://www.python.org/doc/) take a look at python documentation too.
 
 # Tried by different hackers
 
