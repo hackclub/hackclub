@@ -131,7 +131,19 @@ window.mainloop() tells Python to run the Tkinter event loop. ... mainloop() at 
 import tkinter as tk
 import random
 
-quotelist = ["Instead of wondering when your \nnext vacation is, maybe you \nshould set up a life you don’t \nneed to escape from.","Sometimes\n you win,\n sometimes \nyou learn.","Avoiding failure\n is to avoid \nprogress.","If the plan \ndoesn’t work, \nchange the plan,\n but never the \ngoal.","Creativity \nis \nintelligence \nhaving \nFun."]
+quotelist = [
+
+"Instead of wondering when your \nnext vacation is, maybe you \nshould set up a life you don’t \nneed to escape from.",
+
+"Sometimes\n you win,\n sometimes \nyou learn.",
+
+"Avoiding failure\n is to avoid \nprogress.",
+
+"If the plan \ndoesn’t work, \nchange the plan,\n but never the \ngoal.",
+
+"Creativity \nis \nintelligence \nhaving \nFun."
+
+]
 window = tk.Tk()
 window.minsize(800, 560)
 window.title("Quotes Hub")
