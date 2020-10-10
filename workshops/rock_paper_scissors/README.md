@@ -50,9 +50,9 @@ Now we have to write a code so the computer chooses rock, paper or scissors rand
 ```py
 computer = t[randint(0,2)]
 
-Now we will set a variable to false and by using it in a `while` loop, we can keep the game playing infinitely! To do that , just type `Player = False`. Now you have to write some code so the player can enter his/her name. `name = input("Enter your name:")`
+Now we will set a variable to false and by using it in a `while` loop, we can keep the game playing infinitely! To do that, just type `Player = False`. Now you have to write some code so the player can enter his/her name. `name = input("Enter your name:")`
 
-Also to make a score system, we'll write the following code:
+Also to make a scoring system, we'll write the following code:
 ```
 You = 0
 PC = 0 
@@ -157,7 +157,7 @@ while player == False:
 1. The first `if` statement declares a tie.
 2. In the first three `elif` statement, the player can either win or lose and the points are given respectively.
 3. In the fourth `elif` statement, the player could reset the score.
-4. Last `else` statement occurs only when the player enters a invalid word.
+4. Last `else` statement occurs only when the player enters an invalid word.
 
 ### 5) Keeping the loop going
 Now as we have completed building the game we need it to run infinitely.
@@ -246,16 +246,16 @@ while player == False:
 
 ![Congratulations](https://cloud-b32jvmwl1.vercel.app/congo.gif)
 
-If you haven't created an account on [repl.it](https://repl.it), make sure you do so to save this wonderful piece of creation!
+If you haven't created an account on [repl.it](https://repl.it), make sure to make an account to save this wonderful piece of creation!
 
 If you are facing difficulties signing up watch [this](https://www.youtube.com/watch?v=Mtqp4CUepk0).
 
 Here are some things which you can do:
 
 - Consider changing and adding more features!
-- Making it a two player game.
+- Making it a two-player game.
 - Make the game only of 3 turns instead of running it infinitely.
-- You can give the text a typewriter effect. (If you dont know how to do it watch [this][typewritter] video)
+- You can give the text a typewriter effect. (If you don't know how to do it watch [this][typewritter] video)
 
 **Examples on how people have customized it:**
 
