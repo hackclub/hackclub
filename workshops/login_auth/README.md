@@ -120,7 +120,7 @@ It looks like this 👇
 ### Coding Part </>
 
 #### HTML
-When you take a look at the `index.html` file in your Repl, you'll see the `<html>` tag, which is the root of the HTML file, and inside the `<html>` tag, you'll see the `<body>` tag, which is the main body of HTML file and contains all the content for our webpage.
+When you take a look at the `index.html` file in your repl, you'll see the `<html>` tag, which is the root of the HTML file, and inside the `<html>` tag, you'll see the `<body>` tag, which is the main body of HTML file and contains all the content for our webpage.
 
 You will also find lines like:
 - `<link href="style.css" rel="stylesheet" type="text/css">`, which links your CSS file (`style.css`) with the HTML. 
@@ -472,7 +472,7 @@ Try logging in with the email and password you stored in Firebase. If it worked,
 As you can see, the main goal of this workshop is completed here, but to make your webpage look cool, you need to add some custom CSS.
 
 #### CSS
-The `style.css` file present in your Repl just below `script.js` gives styles and designs to your webpage.
+The `style.css` file present in your repl just below `script.js` gives styles and designs to your webpage.
 
 As you created two divisions in the HTML file, so you will add designs to it, and writing CSS is simple.
 
