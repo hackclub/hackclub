@@ -51,10 +51,10 @@ Fork this repl and explore! [here](https://repl.it/@Giridharhackclu/parallax-sta
 
 It contains three `div` elements with classes `layer l1`, `layer l2` and `layer l3` added with some basic styles.
 
-```
-  <div class="layer l1">Faster</div>
-  <div class="layer l2">No Effect</div>
-  <div class="layer l3">Slower</div>
+```html
+<div class="layer l1">Faster</div>
+<div class="layer l2">No Effect</div>
+<div class="layer l3">Slower</div>
 ```
 
 For applying parallax effect, the thing we need to do is select the layer and change it's speed while scrolling. That's it!
