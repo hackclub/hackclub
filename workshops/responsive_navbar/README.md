@@ -12,21 +12,21 @@ But first, Let's have a look on various navbars on the internet:
 
 The responsive nav:
 
-[![Image](https://cloud-hskw22p2h.vercel.app/hackclub-nav.gif)](https://hackclub.com)
+[![The responsive nav](https://cloud-hskw22p2h.vercel.app/hackclub-nav.gif)](https://hackclub.com)
 
 The simple nav:
 
-[![Image](https://cloud-o35ba6qxw.vercel.app/fayd-nav.gif)](https://fayd.me)
+[![The simple nav](https://cloud-o35ba6qxw.vercel.app/fayd-nav.gif)](https://fayd.me)
 
 Or even this?
 
-![Image](https://cloud-qiqy4s3qm.vercel.app/worst-nav.gif)
+![The weirdo nav](https://cloud-qiqy4s3qm.vercel.app/worst-nav.gif)
 
 And this is what we'll be building today!
 
 Here's a sneak peek:
 
-[![Image](https://cloud-kezdm1i9q.vercel.app/workshop-nav.gif)](https://responsive-navbar.faisalsayed1.repl.co/)
+[![sneak peek](https://cloud-kezdm1i9q.vercel.app/workshop-nav.gif)](https://responsive-navbar.faisalsayed1.repl.co/)
 
 Here's the [live demo](https://responsive-navbar.faisalsayed1.repl.co/).  
 Here's the [source code](https://repl.it/@FaisalSayed1/Responsive-Navbar).
@@ -49,7 +49,7 @@ To get started, go to [https://repl.it/languages/html](https://repl.it/languages
 
 You should see something like the following:
 
-![Image](https://cloud-p7qnbqzo6.vercel.app/image.png)
+![Starting View](https://cloud-p7qnbqzo6.vercel.app/image.png)
 
 ## Part 3: Building the project
 
@@ -95,7 +95,7 @@ Explanation: The burger button lines will be nested inside 2 `<div>` tags. Simil
 
 If you run the code now, you will see an unordered list in the preview similar to this:
 
-![Image](https://cloud-agu2nwz83.vercel.app/image.png)
+![testing](https://cloud-agu2nwz83.vercel.app/image.png)
 
 Umm... Why didn't our button render? That's because its default width and height are 0 pixels. We will need to specify its size in the CSS.
 
@@ -133,7 +133,7 @@ Umm... Why didn't our button render? That's because its default width and height
 ```
 
 </details>
-<br>
+
 Without any further ado, let's move on to the CSS!
 
 ### 2) CSS
@@ -172,7 +172,7 @@ Explanation: We make the display of that element to `flex` so that we can align 
 
 An elaborate explanation of `justify-content` and its various properties:
 
-![Image](https://cloud-2tk3mfz9w.vercel.app/image.png)
+![justify-content](https://cloud-2tk3mfz9w.vercel.app/image.png)
 
 Image courtesy: [css-tricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
@@ -203,7 +203,7 @@ Explanation: The `rows` element has a property of `cursor` set to `pointer` so w
 
 Let's click on 'RUN' and test it out!
 
-![Image](https://cloud-6tjatnh5x.vercel.app/image.png)
+![Testing of our code](https://cloud-6tjatnh5x.vercel.app/image.png)
 
 Here, you can see the list in the form of navbar and you can also see the burger button. Notice when you hover on it, your cursor will change to `pointer`.
 
@@ -255,7 +255,7 @@ Also, we don't want the burger button to be displayed now, so we will make it to
 }
 ```
 </details>
-<br>
+
 Next, we will add a media query. Now what are media queries? Media queries are useful when you want to modify your site or app depending on a device's specific characteristics and parameters (such as screen resolution or browser viewport width). A normal mobile device's width is somewhat 450px.
 
 So we can write the media query such that:
@@ -293,7 +293,7 @@ A `transform` property is applied which specifies the element's x position on th
 
 Now if you click 'RUN' and if the preview window's width is more than 450px, you'll see everything normal. Try shrinking down the preview window and at a point, you'll see the navbar go offscreen vertically.
 
-![If u are not seeing this gif, im really sorry, the link must've expired](https://cloud-7bj5jyaas.vercel.app/media-query-test.gif)
+![Navbar test](https://cloud-7bj5jyaas.vercel.app/media-query-test.gif)
 
 Next, we will also make the burger button visible as it is set to `display: none;`
 
@@ -314,7 +314,7 @@ Explanation: When the screen resolution gets smaller than 450px, we set the burg
 
 That is pretty much it for the media query and let's test it out. We'll see that the burger button pops up in the corner and the navbar gets shifted off screen.
 
-![If u are not seeing this gif, im really sorry, the link must've expired](https://cloud-j9jziti6y.vercel.app/media-query-test2.gif)
+![Burger button test](https://cloud-j9jziti6y.vercel.app/media-query-test2.gif)
 
 <details><summary>Your code so far:</summary>
 
@@ -376,7 +376,7 @@ That is pretty much it for the media query and let's test it out. We'll see that
 ```
 
 </details>
-<br>
+
 
 *Outside the media query, We'll add some styles to the classes which don't even exist.* 
 
@@ -470,7 +470,7 @@ Explanation: Now, whenever the button will be clicked, the `toggler()` function 
 
 **_And with this, we finish our project! Check out what you've just built!_**
 
-![If u are not seeing this gif, im really sorry, the link must've expired](https://cloud-igb2mu04a.vercel.app/final-output.gif)
+![Final Output](https://cloud-igb2mu04a.vercel.app/final-output.gif)
 
 ## Part 4: The End
 
@@ -491,11 +491,11 @@ Here are some things which you can do:
 4. Try to think of more unique ideas on how you can enhance this project.
 
 **Some more examples for you**
-- [Example 1](https://repl.it/@FaisalSayed1/Responsive-Navbar-Example-1)
+- [Sidebar example](https://repl.it/@FaisalSayed1/Responsive-Navbar-Example-1)
 
-- [Example 2](https://repl.it/@FaisalSayed1/Responsive-Navbar-Example-2)
+- [Navbar popping from the top example 1](https://repl.it/@FaisalSayed1/Responsive-Navbar-Example-2)
 
-- [Example 3](https://repl.it/@FaisalSayed1/Responsive-Navbar-Example-3)
+- [Navbar popping from the top example 2](https://repl.it/@FaisalSayed1/Responsive-Navbar-Example-3)
 
 Now that you have finished building this wonderful project, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
 
