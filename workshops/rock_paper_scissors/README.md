@@ -49,16 +49,16 @@ First let's make a list for all the entries a player could enter,
 Now we have to write a code so the computer chooses rock, paper or scissors randomly!
 ```py
 computer = t[randint(0,2)]
-
+```
 Now we will set a variable to false and by using it in a `while` loop, we can keep the game playing infinitely! To do that, just type `Player = False`. Now you have to write some code so the player can enter his/her name. `name = input("Enter your name:")`
 
 Also to make a scoring system, we'll write the following code:
-```
+```py
 You = 0
 PC = 0 
 ```
 So this is the code so far:
-```
+```py
 from random import randint
 
 t = ["r", "p", "s"]
@@ -80,7 +80,7 @@ PC = 0
 For this, I'll use a `while` loop but you can also use `for` loops!
 
 So we'll just type,
-```
+```py
 While Player == False: 
 ```
 Now we let the player choose either `Rock` `Paper` or `Scissors`
@@ -98,7 +98,7 @@ To make things easier I will be making functions to print if the player wins or 
 First I will write `message = ""` This will help us by printing different message by calling the same function.
 
 Now I will be making a function that will be called only when the player wins. To do that enter the following code:
-```
+```py
 def win():
   global You
   You+=1
@@ -106,7 +106,7 @@ def win():
   print('Computer =', PC, '\n', name, '=', You)
 ```
 Now we will make a function that will be called only when the player will lose.
-```
+```py
 def lose():
   global PC
   PC+=1
@@ -117,7 +117,7 @@ Now we have to call these functions at the right places.
 
 
 To do that enter the following code:
-```
+```py
 while player == False:
     player = input("Rock, Paper, Scissors?(r,p,s)")
     if player == computer:
@@ -163,18 +163,18 @@ while player == False:
 Now as we have completed building the game we need it to run infinitely.
 
 To do this you just need to add the following statement after the `while` statement,
-```
+```py
 player = False
 ```
 This will instantly trigger the loop and keep the game going.
 
 And at last, you need to add the following command so the computer chooses a different outcome every time
-```
+```py
 computer = t[randint(0,2)]
 ```
 
 So, this is the final code:
-```
+```py
 from random import randint
 
 t = ["r", "p", "s"]
