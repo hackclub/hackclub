@@ -11,7 +11,7 @@ using your favorite code editor create two files, one with .HTML extension and t
 now in our CSS file add the following basics styles ![](img/cssfile.png)
  now in our HTML file lets add following basic HTML code in our HTML file.
 
-
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +24,9 @@ now in our CSS file add the following basics styles ![](img/cssfile.png)
 <body>
 </body>
 </html>
+```
 now we have basic html code lets now add our canvas element that will draw on
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,8 +43,10 @@ now we have basic html code lets now add our canvas element that will draw on
     </canvas>
     </body>
     </html>
+    ```
     this gives our canvas a width of 10000px and height of 900px for drawing.
     how will need to add a script tag that will use to add our javascript code will add this tag after the canvas element.
+    ```
 
     <!DOCTYPE html>
 <html lang="en">
@@ -62,10 +66,11 @@ now we have basic html code lets now add our canvas element that will draw on
     </script>
     </body>
     </html>
+    ```
     now lets add some javascript 
     so first we have to access our canvas element , so will declare a variable to store the canvas in and name it canvas. secondly we need to add the getContext which is built inHTML object that has methods to allow us draw  will also store it in a variable called ctx.
     note: a variable is a place holder of a value or object.
-
+```
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -86,6 +91,7 @@ now we have basic html code lets now add our canvas element that will draw on
       </script>
       </body>
       </html>
+      ```
 
       now lets get started with drawing but bfore that in this workshop will be using the following methods fron getContext to draw on how canvas.
 
@@ -94,6 +100,7 @@ now we have basic html code lets now add our canvas element that will draw on
       beginPath: used to begin a path
       now lts get business and start drawing, so will start with.
        drawing letter H:
+       ```
       <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -125,7 +132,9 @@ now we have basic html code lets now add our canvas element that will draw on
 </script>
 </body>
 </html>
+```
 drawing letter A:
+    ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -166,9 +175,10 @@ drawing letter A:
       </script>
       </body>
       </html>
-
+    ```
     drawing letter C:
-    <!DOCTYPE html>
+   ```
+   <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -213,9 +223,10 @@ drawing letter A:
      </script>
      </body>
      <html>
-
+    ```
      drawing letter K:
-     <!DOCTYPE html>
+    ```
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -234,7 +245,9 @@ drawing letter A:
       var ctx=canvas.getContext("2d");
       ctx.lineWidth=15;
       ctx.strokeStyle="white";
+      
 //drawing capital letter H
+
       ctx.beginPath();
       ctx.moveTo(50,60);
       ctx.lineTo(50,400);
@@ -269,7 +282,9 @@ drawing letter A:
       </script>
       </body>
       </html>
+      ```
        drawing letter C:
+       ```
        <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -328,7 +343,9 @@ drawing letter A:
       </script>
       </body>
       </html>
+      ```
       drawing letter L:
+      ```
       <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -394,7 +411,9 @@ drawing letter A:
       </script>
       </body>
       </html>
+      ```
       drawing letter U:
+      ```
       <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -469,7 +488,9 @@ drawing letter A:
       </script>
       </body>
       </html>
+      ```
 drawing letter B:
+    ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -556,6 +577,6 @@ drawing letter B:
     </script>
 </body>
 </html>
-
+    ```
 After completing this work shop one will have a full understanding of how drawing using coordinates work.
 from this workshop you will be motivated to work on canvas projects such as game making, drawing smilly face.
