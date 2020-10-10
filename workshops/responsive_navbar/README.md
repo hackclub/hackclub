@@ -6,7 +6,7 @@ author: '@faisalsayed10'
 
 # Rebar
 
-You probably must have built navbar in your websites. It is a challenging task for us to make a good and responsive navbar. Well, today we'll be building a fully responsive navbar! It is not only easy to build but also very smooth and beautiful!
+You probably must have built navbars in your websites. It is a challenging task for many of us to make a good and responsive navbar. Well, today we'll be building a fully responsive navbar! It is not only easy to build but also very smooth and beautiful!
 
 But first, Let's have a look on various navbars on the internet:
 
