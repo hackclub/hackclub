@@ -9,8 +9,13 @@ author: '@bezlin6mechminerz'
 <img width="1440" alt="Screenshot 2020-09-19 at 12 43 28 PM" src="https://cloud-amkazzxks.vercel.app/93708256-6181ad80-fb52-11ea-9c6b-f1d7534c5520.png">
 
 So we will be converting text to speech using python today.
-Here is the [live demo](https://repl.it/@bezlin/tts#voice.mp3) and the [final code](https://repl.it/@bezlin/tts#main.py) .
+
+View a [live demo](https://repl.it/@bezlin/tts#voice.mp3)
+
+View the [final code](https://repl.it/@bezlin/tts#main.py) .
+
 This workshop will take 15 minutes.
+
 You can hear the voice made using the python code [here.](https://repl.it/@bezlin/tts#voice.mp3)
 
 ## Getting startted
@@ -23,7 +28,7 @@ We will use python to develop the text to speech code.
 
 [Repl.it](https://repl.it) is a simple yet powerful online IDE, Editor, Compiler, Interpreter, and REPL. Code, compile, run, and host in 50+ programming languages. So it is super awesome.
 
-To get started, go to https://repl.it/languages/Python. Your coding environment will be ready in a few seconds!
+To get started, go to [repl](https://repl.it/languages/Python). Your coding environment will be ready in a few seconds!
 <img width="1440" alt="Screenshot 2020-09-18 at 5 39 06 PM" src="https://cloud-o8q46nkko.vercel.app/screenshot_2020-09-25_at_9.23.06_pm.png">
 
 ## Step 2: Get started to code
@@ -42,29 +47,41 @@ Now we are all set to write the code.
 
 ## Lets code
 
-we need to import the module we installed.
+We need to import the module we installed.
 
-`from gtts import gTTS `
+```python
+from gtts import gTTS
+```
 
 We are just importing the modules in this line.
 
-`mytext = 'hello hackers. we have converted text to speech'`
+```python
+mytext = str(input("Enter the text you want to convert :-"))
+```
 
-In this line, we need to pass the string which we need to convert into speech. Here mytext is a variable that holds our text.
+In this line, we need to pass the string which we need to convert to speech. Here mytext is a variable that holds our text. When the code runs it will ask for users input to enter a text.
 
-`language = 'en'`
+```python
+language = str(input("Enter the language code for example 'en' for English :-"))
+```
 
-In this line, we are assigning the language to the variable language. Gtts API supports multiple languages but here we are going with English. Every language has its short forms for English it is en. For getting other language code google. So we are declaring the language variable as 'en'. So the text will be converted in the language specified.
+In this line, we are assigning the language to the variable language. Gtts API supports multiple languages but here we are going with English. Every language has its short forms for English it is en. For getting other language code google. So we are declaring the language variable as 'en'. So the text will be converted in the language specified. When the code runs it will ask for users input to enter a language.
 
-`myobj = gTTS(text=mytext, lang=language, slow=False) `
+```python
+myobj = gTTS(text=mytext, lang=language, slow=False)
+```
 
 Here in this line we are declaring another variable 'myobg' and we are giving it the value as calling the module we imported and the gtts is a function here. It takes 3 arguments one is the text. Here we have declared our text in a variable before we need to give it here. Then the language. We also assigned a variable and collected which language we want we also need to specify the variable name here. Then comes the speed you want slow = False means the voice will be faster. Slow=True means the voice will be slow.
 
-`myobj.save("voice.mp3") `
+```python
+myobj.save("voice.mp3")
+```
 
 So before the above code, the text is converted to the voice but we need to save it right? To save it, the gtts module itself has a save function. the variable we converted to voice .save that's it And also give a name for the file which will be saved here it is voice.mp3.Hope you got it.
 
-`print("Converted")`
+```python
+print("Converted")
+```
 
 We have converted the text to speech and saved it but for fun lets also print converted at the end of the code. So we can make sure the conversion has completed.
 
@@ -86,9 +103,9 @@ I am attaching the [Gtts](https://gtts.readthedocs.io/en/latest/) documentation 
 
 [Anupriya_Shaji](https://repl.it/@Anupriya567/LostDevotedContent#main.py)
 
-[Kk_Haridev](https://repl.it/join/jdfxpfaj-dandathor)
+[Kk_Haridev](https://repl.it/@DandaThor/haridev#voice.mp3)
 
-[Aswin_Prakash](https://repl.it/@AswinPrakash/VirtualIncomparableLegacysystem#main.py)
+[Aswin_Prakash](https://repl.it/@AswinPrakash/texttospeechpy#main.py)
 
 [Bezlin_Johnson](https://repl.it/@bezlin/tts#main.py)
 
