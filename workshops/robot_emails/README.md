@@ -259,11 +259,11 @@ mail.quit()
 
 Let's go through this line by line!
 
-Line 1: We iterate through the emails in the contacts dictionary.
+*Line 1*: We iterate through the emails in the contacts dictionary.
 
-Line 2: Here's our first occurrence of `MIMEMultipart()`. This, as explained at the top, manages the content of the email according to a universal internet standard. There's more in-depth info [here](https://www.wikiwand.com/en/MIME).
+*Line 2*: Here's our first occurrence of `MIMEMultipart()`. This, as explained at the top, manages the content of the email according to a universal internet standard. There's more in-depth info [here](https://www.wikiwand.com/en/MIME).
 
-The following is an explanation of Line 3:
+The following is an explanation of *Line 3*:
 
 If you noticed in the `contacts.txt` file, the substitution is represented by a `{0}` . If you've done Python string formatting before, you may realize that character sequence allows for replacement with the [`.format()`](https://www.w3schools.com/python/ref_string_format.asp) function!
 
@@ -271,9 +271,9 @@ If you noticed in the `contacts.txt` file, the substitution is represented by a 
 - `tuple` is an [immutable](https://www.wikiwand.com/en/Immutable_object) data type in Python. When we write `*tuple()`, we unpack the list of substitutions as arguments for the `format()` function
 - `template_content.format()` - since template_content is a string, we can use the format function to replace the `{0}` with custom arguments!
 
-Lines 5-7: We set the message From, To, and Subject fields.
+*Lines 5-7*: We set the message From, To, and Subject fields.
 
-Lines 9-11: This code attaches the body text to the email in MIME format, and sends the email!
+*Lines 9-11*: This code attaches the body text to the email in MIME format, and sends the email!
 
 
 
