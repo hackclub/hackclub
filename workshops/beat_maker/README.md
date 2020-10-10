@@ -10,13 +10,13 @@ author: '@emmanuel39hanks'
 
 _^ Preview of the DrumPad/Beat Maker we are going to be creating_
 
-In this workshop, you’re going to create a drumpad/beat maker that plays actual sounds, in less than 230 lines of code.
+In this workshop, you’re going to create a drum pad/beatmaker that plays actual sounds, in less than 230 lines of code.
 
-[Link to demo](https://AssuredStudiousNotifications--five-nine.repl.co)
+[Link to demo](https://BeatMaker.emmanuel39hanks.repl.co)
 
 ## Getting started
 
-We’re going to be using HTML, CSS & jQuery(a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax).
+We’re going to be using HTML, CSS & jQuery(https://jquery.com/)(is a JavaScript library used to change elements on a webpage).
 
 Get started by creating an HTML/CSS & JavaScript project on repl.it. Once your project is setup, navigate to the `index.html` file. Then, just before the end of your `<head>` tag, import jQuery:
 
@@ -28,7 +28,7 @@ Great! Now that we’ve imported jQuery, we’re ready to start writing our code
 
 ## Laying out our pads
 
-We are going to start out by writing HTML code we are going to go into our `<body>` tag which is where we write code that will be shown to the client and create a header with the `<h1>` tag, and then we will have 3 rows and 4 columns of pads and each pad will be a `<div>`, you can think of the `<div>` as a box or container.
+We are going to start by writing HTML code we are going to go into our `<body>` tag which is where we write code that will be shown to the client and create a header with the `<h1>` tag, and then we will have 3 rows and 4 columns of pads and each pad will be a `<div>`, you can think of the `<div>` as a box or container.
 
 ```html
 <h1>BEAT MAKER</h1>
@@ -51,7 +51,7 @@ We are going to start out by writing HTML code we are going to go into our `<bod
 </div>
 ```
 
-![Preview](https://i.ibb.co/72XvNn3/Annotation-2020-09-20-204442.png)
+![Preview of HTML with no CSS](https://i.ibb.co/72XvNn3/Annotation-2020-09-20-204442.png)
 
 And if we run our code it should look like this.
 Not so compelling right? we will now need to write some CSS which will style our HTML document and make our Beat Maker look prettier, let's do that.
@@ -64,7 +64,7 @@ Just before the end of your `<head>` tag, link your CSS file:
 
 Your CSS file should now be linked and we can start writing our CSS code.
 
-We're going to start by writing code for our document to change the colors, adding fonts, height, width etc, we are also going to be using a custom font so to do that at the top of our CSS file we will import it using the line `@import 'https://fonts.googleapis.com/css?family=Roboto';`
+We're going to start by writing code for our document to change the colors, adding fonts, height, width, etc, we are also going to be using a custom font so to do that at the top of our CSS file we will import it using the line `@import 'https://fonts.googleapis.com/css?family=Roboto';`
 
 ```css
 @import 'https://fonts.googleapis.com/css?family=Roboto';
@@ -83,11 +83,11 @@ body {
 }
 ```
 
-![Beat Maker Preview](https://i.ibb.co/qgY3jCv/Annotation-2020-09-20-210409.png)
+![Preview of HTML with CSS applied, to change the layout](https://i.ibb.co/qgY3jCv/Annotation-2020-09-20-210409.png)
 
-The major thing you will notice when we run our code this time is that our content has ben aligned to the center.
+The major thing you will notice when we run our code this time is that our content has been aligned to the center.
 
-Now what we want to do is style the header to give it spaces and then creates 3 rows and 4 colums to perfectly align the pads and give them a box or container look we will do just that.
+Now what we want to do is style the header to give it spaces and then create 3 rows and 4 columns to perfectly align the pads and give them a box or container look we will do just that.
 
 ```css
 h1 {
@@ -154,10 +154,10 @@ If you run your code nothing has changed, that because we are using class to gro
 </div>
 ```
 
-![Preview](https://i.ibb.co/TLFcmvk/aasdasd.png)
-And finally when we run our code again it should look like this.
+![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://i.ibb.co/TLFcmvk/aasdasd.png)
+And when we run our code again it should look like this.
 
-So far so good we are now going to add colors and make hovering effects, unactive or active states, to make it stand out and make the experience better, we will do that with the following code:
+We are now going to add colors, make hovering effects, unactive or active states, to make it stand out and make the experience better, we will do that with the following code:
 
 ```css
 .pad-1 {
@@ -226,9 +226,12 @@ So far so good we are now going to add colors and make hovering effects, unactiv
 }
 ```
 
-![Preview](https://i.ibb.co/LpYQY6N/asdasdasdasdasdasd.png)
+![Preview of HTML with our finished layout CSS applied, and our pads colored](https://i.ibb.co/LpYQY6N/asdasdasdasdasdasd.png)
 
-And finally we are done with our CSS, it now looks good and feels good but when you click on the buttons, they are clickable but we have no sound, what we need to do is now write our JavaScript/jQuery code that will get us sound.
+
+## Adding audio interactivity with JS
+
+And finally, we are done with our CSS, it now looks good but when you click on the buttons, they are clickable but we have no sound, what we need to do is now write our JavaScript/jQuery code that will get us sound.
 
 Navigate to the `index.html` file. Then, just before the end of your `<body>` tag, import your `script.js` file that will be loaded when our document loads:
 
@@ -290,7 +293,7 @@ $(document).ready(function () {
 })
 ```
 
-So we are almost done all we need to do is use the jQuery selector which is `$` to select classes and check for actions, we want to load and play a sound when the mouse key is down and we will do that with the following code:
+We are almost done—all we need to do is use the jQuery selector (`$`) to select classes and check for actions. We want to load and play a sound when the mouse key is down, which we can implement like this:
 
 ```javascript
 $(document).ready(function () {
@@ -388,8 +391,8 @@ $(document).ready(function () {
   })
 
   $('.pad-12').mousedown(function () {
-    padTewlve.load()
-    padTewlve.play()
+    padTwelve.load()
+    padTwelve.play()
   })
 })
 ```
@@ -408,11 +411,10 @@ Once you're done making this, how about sharing it in the Slack ship channel and
 
 ## Inspiration
 
-To finish off, I'd like to leave you with some amazing customized Drum Pad Machines/Beat Makers by programmers out their.
+To finish off, here are some amazing, more customized drum pad machines/beatmakers made by other developers:
 
-- Solo Learn Code Playfround by Andrew Siachos (https://code.sololearn.com/WfYyBdZwc6qn/#html)
+- A code playground on Solo Learn by Andrew Siachos (https://code.sololearn.com/WfYyBdZwc6qn/#html)
 - Music Pad Controller with Keyboard (https://endertech.com/blog/music-pad-javascript-html-css)
-- My favorite one is Make Music with JavaScript by Dev Ed on Youtube(https://www.youtube.com/watch?v=8T4SCksjrQ4).
+- My favorite one is by Dev Ed, Make Music with JavaScript by on Youtube(https://www.youtube.com/watch?v=8T4SCksjrQ4).
 
-We are finally done with our project and you can go own ahead and customize it and add more things to it hope you had fun creating this with me.
-I truly hope you enjoyed this workshop, happy hacking!
+We are done with our workshop and you can go ahead, customize it, and add more things to it. Hope you enjoyed this workshop, happy hacking!
