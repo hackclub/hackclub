@@ -391,7 +391,7 @@ You also need to display an error message when an error occurs like _wrong email
 ```javascript
 window.alert("Error : " + errorMessage);
 ```
-So, the code will
+So, your code should look like this:
 ```javascript
 function login(){
 
