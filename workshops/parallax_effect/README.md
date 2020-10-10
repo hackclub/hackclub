@@ -86,7 +86,7 @@ This `function` has three arguments.
 Now call this `parallax` function while scrolling. Add an [event listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event">`scroll`</a> . The function given as argument to event-listener gets executed.
 
 ```javascript
-document.addEventListener('scroll', () => {})
+document.addEventListener('scroll', function () {})
 ```
 
 > **scrollY:** The read-only scrollY property of the Window interface returns the number of pixels that the document is currently **scrolled vertically**. This value is subpixel precise in modern browsers, meaning that it isn't necessarily a whole number. You can get the number of pixels the document is **scrolled horizontally** from the **scrollX** property. - [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY).
