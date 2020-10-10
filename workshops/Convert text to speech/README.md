@@ -61,11 +61,15 @@ mytext = str(input("Enter the text you want to convert :-"))
 
 In this line, we need to pass the string which we need to convert to speech. Here mytext is a variable that holds our text. When the code runs it will ask for users input to enter a text.
 
+<img width="1440" alt="Screenshot 2020-09-18 at 5 39 06 PM" src="https://cloud-mvq9zgpof.vercel.app/0screenshot_2020-10-10_at_11.06.28_am.png">
+
 ```python
 language = str(input("Enter the language code for example 'en' for English :-"))
 ```
 
 In this line, we are assigning the language to the variable language. Gtts API supports multiple languages but here we are going with English. Every language has its short forms for English it is en. For getting other language code google. So we are declaring the language variable as 'en'. So the text will be converted in the language specified. When the code runs it will ask for users input to enter a language.
+
+<img width="1440" alt="Screenshot 2020-09-18 at 5 39 06 PM" src="https://cloud-8uqrl4ft9.vercel.app/0screenshot_2020-10-10_at_11.07.12_am.png">
 
 ```python
 myobj = gTTS(text=mytext, lang=language, slow=False)
@@ -84,6 +88,8 @@ print("Converted")
 ```
 
 We have converted the text to speech and saved it but for fun lets also print converted at the end of the code. So we can make sure the conversion has completed.
+
+<img width="1440" alt="Screenshot 2020-09-18 at 5 39 06 PM" src="https://cloud-94jt398a9.vercel.app/0screenshot_2020-10-10_at_11.07.31_am.png">
 
 ## Run it
 
