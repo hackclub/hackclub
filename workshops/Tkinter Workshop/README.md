@@ -20,7 +20,7 @@ This workshop will take 20 minutes.
 
 ## Getting started
 
-We will be using [Tkinter](https://docs.python.org/3/library/tk.html) a python library to develop the user interface. This project requires [Repl.it](https://repl.it) We will be using it for coding. This is awesome because you no need to install python on your machine. Just go to this link.
+We will be using [Tkinter](https://docs.python.org/3/library/tk.html) a python library to make this Quotes hub. This project requires [Repl.it](https://repl.it) We will be using it for coding. This is awesome because you no need to install python on your machine. Just go to this [link](https://repl.it).
 
 To get started, [click here](https://repl.it/languages/Tkinter). Your coding environment will be ready in a few seconds!
 <img width="1440" alt="Screenshot 2020-09-18 at 5 39 06 PM" src="https://cloud-o8q46nkko.vercel.app/screenshot_2020-09-25_at_9.23.06_pm.png">
