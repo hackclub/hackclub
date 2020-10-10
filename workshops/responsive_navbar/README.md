@@ -1,6 +1,6 @@
 ---
 name: 'Rebar'
-description: 'Build a full responsive navbar for your websites.'
+description: 'Build a fully responsive navbar for your websites.'
 author: '@faisalsayed10'
 ---
 
