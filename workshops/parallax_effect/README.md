@@ -45,13 +45,17 @@ Practically a parallax is composed of more than one layer in parallel, moving al
 
 We will use [Repl.it](https://repl.it) to build this project.
 
-> Repl.it is an online code editor. It's similar to Google Docs, but has some important features that make it much better for typing code than a regular text editor.
+Repl.it is an online code editor. It's similar to Google Docs, but has some important features that make it much better for typing code than a regular text editor.
 
 Fork this repl and explore! [here](https://repl.it/@Giridharhackclu/parallax-starter#index.html).
 
-It contains three `div` elements with classes `layer l1`, `layer l2` and `layer l3` added with some basic styles. Go ahead! use your creativity and customise the styles.
+It contains three `div` elements with classes `layer l1`, `layer l2` and `layer l3` added with some basic styles.
 
-<a href="https://repl.it/@Giridharhackclu/parallax-starter#index.html"><img src="https://cloud-6z92hbh0u.vercel.app/screenshot_2020-09-22_171732.png" style="{border-radius: 3px;}" alt="#index.html"></a>
+```
+  <div class="layer l1">Faster</div>
+  <div class="layer l2">No Effect</div>
+  <div class="layer l3">Slower</div>
+```
 
 For applying parallax effect, the thing we need to do is select the layer and change it's speed while scrolling. That's it!
 
@@ -66,10 +70,14 @@ function parallax(layer, distance, speed) {
 }
 ```
 
-This `function` has three arguments `layer`- the layer you want to add parallax, `distance`- how much we scroll and `speed`- the required speed change. We will add parallax for multiple layers. That is the reason we made a function to recall it for different layers.
+This `function` has three arguments.
 
-Then we will get the element(layer) required using `querySelector`. You can use any JavaScript DOM selector as your wish. Then translate the `Y-offset` of the element using CSS `transform: translateY();` to change the speed of that layer.
-The positive value into `translateY()` translates downwards and negative value translates upwards. Discover more about `translateY()` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateY).
+- `layer`- the layer you want to add parallax
+- `distance`- how much we scroll
+- `speed`- the required speed change
+  We will add parallax for multiple layers. That is the reason we made a function to recall it for different layers.
+  Then we will get the element(layer) required using `querySelector`. You can use any JavaScript DOM selector as your wish. Then translate the `Y-offset` of the element using CSS `transform: translateY();` to change the speed of that layer.
+  The positive value into `translateY()` translates downwards and negative value translates upwards. Discover more about `translateY()` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateY).
 
 <a href="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png"><img src="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png" alt="translateY() example" height="250px" width="auto"/></a>
 
@@ -83,9 +91,9 @@ document.addEventListener('scroll', () => {})
 
 > **scrollY:** The read-only scrollY property of the Window interface returns the number of pixels that the document is currently **scrolled vertically**. This value is subpixel precise in modern browsers, meaning that it isn't necessarily a whole number. You can get the number of pixels the document is **scrolled horizontally** from the **scrollX** property. - [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY).
 
-The `parallax` function is called inside the event-listener. Here, for this project we will select the layers with classes `l1` and `l3` from the document. The `distance` argument in `parallax` function is how much we scroll i.e., `window.scrollY` and you can give any value to the `speed` argument. The `speed` argument decides whether the layer moves faster or slower.
+The `parallax` function is called inside the event-listener. Here, for this project we will select the layers with classes `l1` and `l3` from the document. The `distance` argument in `parallax` function is how much we scroll i.e., `window.scrollY` and you can give any value to the `speed` argument. The `speed` argument decides whether the layer moves faster(upwards) or slower(downwards).
 
-Add the following code.
+Add the following code inside the event listener.
 
 ```javascript
 parallax('.l1', window.scrollY, 0.5)
@@ -101,7 +109,13 @@ Your final page looks something [like this](https://parallax-effect.giridharhack
 
 <a href="https://parallax-effect.giridharhackclu.repl.co/"><img src="https://cloud-qld8y6jii.vercel.app/final_output.gif" alt="final result"/></a>
 
-Try changing the speed to `1`, observe what happens to each layer and think why it happens. You can check the answer [here](#Speed-1).
+Try changing the speed to `1`, observe what happens to each layer and think why it happens.
+
+## Speed-1
+
+In vertical parallax, when the speed is `1` both upwards and downwards, that means the layer gets translated with speed of scrolling.
+
+The faster layer moves with double the speed of normal scrolling-speed. While, the slower layer will be fixed. Because while you are scrolling upwards it gets translated downwards with the same speed. So it appears as fixed in its position.
 
 That's it! You can add any number of layers for the document and call the `parallax` function. This is the _parallax effect_.
 These are the main basic principle of Parallax effect. You can modify the function `parallax` and get the result you want.
@@ -118,7 +132,7 @@ Now add another two `div` tags with classes `layer l4` and `layer l5` to `index.
 ```
 
 In horizontal parallax, the elements in the page move horizontally as you scroll vertically.
-Add the following `function` , which causes horizontal motion.
+Add the following `function`, to your `script.js` file , which causes horizontal motion.
 
 ```javascript
 function hrparallax(layer, distance, speed) {
@@ -132,7 +146,7 @@ The positive value translates rightwards and negative value translates leftwards
 
 <a href="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_185155.png"><img src="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_185155.png" alt="translateX() example" width="auto" height="200px"/></a>
 
-Add the following code
+Add the following code inside the event listener.
 
 ```javascript
 hrparallax('.l4', window.scrollY, -0.5)
@@ -151,30 +165,24 @@ That's it! You added both `vertical-parallax` and `horizontal-parallax` effects.
 
 You can create different parallax effects.
 
-1. In this workshop, I focused only on scrolling vertically. You can use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX">`scrollX`</a> for creating parallax while scrolling horizontally.
+1. In this workshop, I focused only on scrolling vertically. You can make use of <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX">`scrollX`</a> for creating parallax while scrolling horizontally.
 1. You can use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate">`transform: translate(X,Y);`</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d">`transform: translate3d(X,Y,Z);`</a> for creating different effects.
 
 You can add parallax-effect to your websites for creating better user experience and display your content more interactively.
 
-Make use of your creativity and make different parallax effects. Share it with me on slack [@giridhar](https://hackclub.slack.com/team/U013E6KE9UJ), I'd love to here from you!
+Make use of your creativity and make different parallax effects. Also customise the styles. Share it with me on slack [@giridhar](https://hackclub.slack.com/team/U013E6KE9UJ), I'd love to here from you!
 
 ## Inspiration
 
 These are some projects made using parallax-effect.
 
-- Example-1 [demo](https://exampleone.giridharhackclu.repl.co/). [source code](https://repl.it/@Giridharhackclu/exampleone#index.html).
+- Example-1 [demo](https://exampleone.giridharhackclu.repl.co/). [source code](https://repl.it/@Giridharhackclu/exampleone#index.html).<br>
   Real application of parallax effect.
-- Example-2 [demo](https://exampletwo.giridharhackclu.repl.co/). [source code](https://repl.it/@Giridharhackclu/exampletwo#index.html).
+- Example-2 [demo](https://exampletwo.giridharhackclu.repl.co/). [source code](https://repl.it/@Giridharhackclu/exampletwo#index.html).<br>
   _Zoom on scroll_ - In this example, width of elements changes as you scroll.
-- Example-3 [demo](https://horizontal-parallax-effect.giridharhackclu.repl.co/). [source code](https://repl.it/@Giridharhackclu/horizontal-parallax-effect#index.html).
+- Example-3 [demo](https://horizontal-parallax-effect.giridharhackclu.repl.co/). [source code](https://repl.it/@Giridharhackclu/horizontal-parallax-effect#index.html).<br>
   _Mouse-move parallax_ - As you move mouse-pointer, the `innerHeight` and the `innerWidth` of the elements changes.
 
-Check this article for awesome next-level parallax examples - [article](https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html)
+Check this article for awesome another-level parallax examples - [article](https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html)
 
 Hope you love this workshop! :v:
-
-## Speed-1
-
-In vertical parallax, when the speed is `1` both upwards and downwards, that means the layer gets translated with speed of scrolling.
-
-The faster layer moves with double the speed of normal scrolling-speed. While, the slower layer will be fixed. Because while you are scrolling upwards it gets translated downwards with the same speed. So it appears as fixed in its position.
