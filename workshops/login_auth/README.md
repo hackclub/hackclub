@@ -421,6 +421,7 @@ function logout(){
 ```
 
 Here is your final JavaScript code:
+
 ```javascript
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
