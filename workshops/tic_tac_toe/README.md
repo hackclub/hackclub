@@ -334,9 +334,9 @@ You should now be able to play Tic Tac Toe with a friend in the terminal! You ca
 
 Now you have control on this code. Go ahead and tinker with it to see if you can find ways to make it more fun. Here are some ideas:
 
-- Add a play again option. *(hint: use [recursion](https://www.geeksforgeeks.org/recursion/))*
 - Change the first player between X and O each time player chooses to play again.
-- Add a score feature to record each players score across multiple games. 
+- Add a play again option. *(hint: use [recursion](https://www.geeksforgeeks.org/recursion/))* [demo](https://repl.it/@prithul0218/Tic-Tac-Toe-Play-Again-Demo).
+- Add a score feature to record each players score across multiple games. [demo](https://repl.it/@prithul0218/Tic-Tac-Toe-Score-Demo).
 - Code an AI second player with the minimax algorithm. I and [@A.N.M. Noor](https://hackclub.slack.com/team/U01BLNA1H9S) made one here: [https://repl.it/@prithul0218/Tic-Tac-Toe-minimax](https://repl.it/@prithul0218/Tic-Tac-Toe-minimax)
 
 While it may look like a tiny game with only 9 boxes, there are 255168 possible game of the Tic Tac Toe excluding symmetrical outcomes. The first player wins in 131184 of these, the second player wins 77904 games and the remaining 46080 are drawn. That's a lot of ways to win. Make sure to be the first player for some extra chance of winning. ;)
