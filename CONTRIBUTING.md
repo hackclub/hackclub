@@ -25,25 +25,7 @@ You will be writing your workshop in a README.md file located in a folder within
 
 ### 🛠 Writing the Workshop
 
-Now we can get to making! Here are some workshop requirements:
-
-- Complies with the [Hack Club code of conduct](https://hackclub.com/conduct/).
-- Help club members produce a compelling and real project in under 20 minutes
-- Offers repl.it or a similar service that allows members to begin coding with one click.
-- Have instructive and compelling images, GIFs, and visuals.
-- Are very easy to hack on for long periods of time after completion.
-- Link unknown concepts to external sources.
-- End with at least 3 demos of how the project can be expanded, with live links and code links for each demo.
-- All files besides the README.md are uploaded to the hack club CDN in the `#cdn` channel on slack.
-- Are a registered hack club leader in the slack.
-- All workshops must be in English at native-level proficiency. Phrasing and grammar must be perfect.
-
-Workshops are generally ~300 lines of markdown.
-
-Here are some examples of amazing workshops:
-
-- @[sampoder](https://github.com/sampoder)'s [Creating a jaw-dropping Scrapbook](https://workshops.hackclub.com/scrapbook_css/)
-- @[faisalsayed10](https://github.com/faisalsayed10)s [JavaScript Clock](https://workshops.hackclub.com/simple_clock/)
+Please read our [workshop guidelines](https://workshops.hackclub.com/workshop-bounty/) to understand what a workshop looks like.
 
 ### 🚀 Submitting the PR
 
