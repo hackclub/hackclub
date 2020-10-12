@@ -235,7 +235,7 @@ You could possibly get someting that looks like this...
 ```
 \*\*PS. If you have never watched [Chicken Little](https://youtu.be/PPuk2JQgMkU), you must do that asap, you are missing out on an animated masterpiece.
 
-![enter image description here](https://media1.tenor.com/images/fac310fb90bbde750d9f2e6ad1af44b1/tenor.gif?itemid=9695910)
+![Chicken Little!](https://media1.tenor.com/images/fac310fb90bbde750d9f2e6ad1af44b1/tenor.gif?itemid=9695910)
 
 # Add On!
 
