@@ -244,5 +244,3 @@ Also if you are new to python, take a look at [python](https://www.python.org/do
 After building share your repl link to all communities don't forget about slack and make everyone know the piece of work you have done.
 
 ![made_it](https://cloud-a58thexdk.vercel.app/tenor.gif)
-
-Yes, You have made it.
