@@ -86,14 +86,16 @@ This `function` has three arguments.
 Now call this `parallax` function while scrolling. Add an [event listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event">`scroll`</a> . The function given as argument to event-listener gets executed.
 
 ```javascript
-document.addEventListener('scroll', function () {})
+document.addEventListener('scroll', function () {
+  // code here!
+})
 ```
 
 > **scrollY:** The read-only scrollY property of the Window interface returns the number of pixels that the document is currently **scrolled vertically**. This value is subpixel precise in modern browsers, meaning that it isn't necessarily a whole number. You can get the number of pixels the document is **scrolled horizontally** from the **scrollX** property. - [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY).
 
 The `parallax` function is called inside the event-listener. Here, for this project we will select the layers with classes `l1` and `l3` from the document. The `distance` argument in `parallax` function is how much we scroll i.e., `window.scrollY` and you can give any value to the `speed` argument. The `speed` argument decides whether the layer moves faster(upwards) or slower(downwards).
 
-Add the following code inside the event listener.
+Add the following code inside the event listener (in between the opening and curly braces of the above function).
 
 ```javascript
 parallax('.l1', window.scrollY, 0.5)
