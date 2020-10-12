@@ -111,7 +111,7 @@ The pack() function packs the text at the center layout. Now let's make a button
 tk.Button(window,command=lambda:fun1(random.choice(quotelist)),text="Open",bg="aqua",fg="black",width=20).place(x=315,y=300)
 ```
 
-The Tkinter library consists of A Button() function which is used to make a button. The button function takes many parameters such as text, bg, fg, width, height, etc... The first parameter you should give is the window in which you need this button to be displayed. Place() function is used to place the element in the particular coordinate we need it to be syntax - place(x,y). The main thing here is the action of the button.
+The Tkinter library consists of a Button() function which is used to make a button. The button function takes many parameters such as text, bg (background color), fg (foreground/text color), width, height, etc. The first parameter you should give is the window in which you need this button to be displayed. The `place()` function is used to place the element in the particular coordinate we need it to be, in the form `place(x, y)`. The most important part here is the action the button executes.
 
 ```python
 command=lambda:fun1(random.choice(quotelist))
