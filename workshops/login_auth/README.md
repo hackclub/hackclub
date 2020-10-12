@@ -41,51 +41,50 @@ In the image above, you'll see the `Go to console` button at the top right corne
 
 ![Project page](https://cloud-kfr44a6da.vercel.app/2.png)
 
-In the console section, you'll see all your Firebase projects and the `Add Project` button. Click on it to create a project.
+In the console section, you'll see all your Firebase projects and the `Add Project` button. Click on the `Add Project` button to create a new project.
 
 ![Create project](https://cloud-nfiwmg8kh.vercel.app/3.png)
 
 Here you have to give a name to your Firebase project such as `Login-auth`.
 
-After giving a name to your project, click on continue to proceed further.
+Here is an optional step where you can use Google Analytics for your project, but in this workshop, you won't need it. After giving a name to your project click the continue button to proceed further.
 
 ![Analytics page](https://cloud-pva80oxrl.vercel.app/4.png)
 
-Here is an optional step where you can use Google Analytics for your project, but in this workshop, you won't need it.
-
 ![Project created](https://cloud-3swaas1pn.vercel.app/5.png)
 
-Now here you should see `Your new project is ready`. 
+Now you should see `Your new project is ready`. 
 
-Hooray!🎉 you just created a new Firebase project.
+Hooray! 🎉 You just created a new Firebase project.
 
 ## Connecting Firebase to your webpage 🔗
 
-After successfully creating the Firebase project, you will see your project console.
+After successfully creating the Firebase project you will see your project console.
 
-At the project's console landing page, you will see `Get started by adding Firebase to your app`, and below that, you will see three options of integrations:
+At the project's console landing page you will see `Get started by adding Firebase to your app`. Below that you will see three options of integrations:
 1. iOS
 2. Android
-3. </> (this option is for web on which you are working, so click on that).
+3. </> (this option is for web which we are using so click on that)
 
 ![Project Console](https://cloud-l7pn8f9e9.vercel.app/6.png)
 
-After clicking it a new page will pop up and ask you for a name for your app. For this workshop, we will use `login-auth` as the app name.
+After clicking `</>` a new page will pop up and ask you for a name for your app. For this workshop we will use `login-auth` as the app name.
 
 ![App nickname](https://cloud-8tdv8wfuj.vercel.app/8.png)
 
 Here is an **important** part!
 
-You will see some sort of JavaScript code, the code which helps your Firebase project to connect with your webpage. So, make sure you save this code or copy it somewhere as it is required later.
+You will now see some JavaScript code. This code helps your website connect to your Firebase project. Make sure you copy and paste this somewhere as it is required later.
 
-After saving the code, click on `continue to console`.
+After saving the code click on `continue to console`.
+
 ![API keys](https://cloud-nsps2klza.vercel.app/9.png)
 
-After that you need to add the existing users so that they can log in and for that, you need to enable **Email/Password** authentication in your project's Authentication section, for that, you need to click on the tab `Authentication` on the top left `Develop` section.
+After that you need to add the existing users so that they can login. For that you need to enable **Email/Password** authentication in your project's Authentication section. To do that you need to click on the tab `Authentication` on the top left `Develop` section.
 
 ![Authentication page](https://cloud-pnq6xn3gp.vercel.app/10.png)
 
-So here in the Authentication page, you'll see different tabs:
+Here in the Authentication page, you'll see different tabs:
 - Users
 - Sign-in method
 - Templates
@@ -95,53 +94,53 @@ Click on the Sign-in method.
 
 ![Sign in method](https://cloud-nvyxode6r.vercel.app/11.png)
 
-Here, you need to enable **Email/Password** in the `sign-in providers` section, so click on **Email/Password** and enable it and save it.
+Here you need to enable **Email/Password** in the `sign-in providers` section. Click on **Email/Password**, enable it, then save it.
 
 ![Enable email-pass](https://cloud-2vpwetbvx.vercel.app/12.png)
 
-After enabling, you need to add existing users, so click on the `Users` tab.
+After enabling, you need to add users, so click on the `Users` tab.
 
 ![Add user](https://cloud-kbxm635o2.vercel.app/13.png)
 
-Then click on `Add User` and add `Email` and `Password` for that user and click `Add User`.
+Then click on `Add User` and add an `Email` and `Password` for that user. Once done click `Add User`.
 
 ![Save user](https://cloud-l38zbxdt7.vercel.app/14.png)
 
 ## Designing a webpage 🖊️
 
-First, you need to set up a coding environment, I suggest you use [Repl.it](https://repl.it) as it sets everything for you.
+First, you need to set up a coding environment. I suggest you use [Repl.it](https://repl.it) as it sets everything for you with just one click.
 
 To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html).
 
 It looks like this 👇
 
-<a href="https://repl.it/languages/html"><img src="https://cloud-g2gwlwjtx.vercel.app/c2.png"></a>
+<a href="https://repl.it/languages/html" target="_blank"><img src="https://cloud-g2gwlwjtx.vercel.app/c2.png" alt="Repl page" ></a>
 
 ### Coding Part </>
 
 #### HTML
-When you take a look at the `index.html` file in your repl, you'll see the `<html>` tag, which is the root of the HTML file, and inside the `<html>` tag, you'll see the `<body>` tag, which is the main body of HTML file and contains all the content for our webpage.
+When you take a look at the `index.html` file in your repl you'll see the `<html>` tag which is the root of the HTML file. Inside the `<html>` tag you'll see the `<body>` tag. This is the main body of the HTML file and contains all the content for our webpage.
 
 You will also find lines like:
 - `<link href="style.css" rel="stylesheet" type="text/css">`, which links your CSS file (`style.css`) with the HTML. 
-- `<script src="script.js"></script>`, which links your JavaScript file (`script.js`) with HTML and this should be place just above closing body tag `</body>`.
-Let's write our HTML code:
+- `<script src="script.js"></script>`, which links your JavaScript file (`script.js`) with the HTML. It should be placed just above closing body tag `</body>`.
 
-In the `<body>` tag, you need to create two divisions, the first division is for the login page, and the second is for the logout page using `<div>`.
+
+In the `<body>` tag, you need to create two divisions. The first division is for the login page and the second is for the logout page.
 
 ##### Division 1:
 
-Create your first division with a class `main_div` and assign ID `login_div`.
+Create your first division (`<div>`) with a class `main_div` and assign ID `login_div`.
 
-You can also give a heading to your page using heading tags like `<h1>,<h2>,<h3>.....`.
+You can also give a heading to your page using heading tags (`<h1>,<h2>,<h3>.....`).
 
-In this division, you will create two input fields for email and password using `<input>` tag with `type` `email` and `password` respectively and also assign IDs to both input fields, `email_field` and `password_field` respectively.
+In this division, you will create two input fields for an email and password using the `<input>` tag with `type` set as `email` and `password` respectively. Assign IDs to both input fields as `email_field` and `password_field` respectively.
 
-Also, you can add the `placeholder` attribute, which specifies a short hint that describes the expected value of an input field / textarea.
- 
-Here you will also create a button login using `<button>` tag and assign a onclick function `login()` to it and finally close your first division using `</div>`.
+You can also add the `placeholder` attribute which specifies a short hint that describes the expected value of an input field / textarea.
 
-So here's how your first division looks like:
+Here you will also create a login button using the `<button>` tag and assign an onclick function called `login` (remember parenthesis to call the function) to it. Finally, close your first division using `</div>`.
+
+So here's how your first division should look:
 ```HTML
 <div class="main_div" id="login_div">
     <h3>Login Authentication</h3>
@@ -153,9 +152,9 @@ So here's how your first division looks like:
 
 ##### Division 2:
 
-Create your second division below the first with a class `loggedin_div` and assign ID `user_div`.
+Create your second division below the first with a class of `loggedin_div` and assign an ID of `user_div`.
 
-In this division, you will create a logout button and assign a onclick function `logout()` to it.
+In this division, you will create a logout button and assign an onclick function called `logout` (remember parenthesis to call the function) to it.
 
 So here's how your second division looks like:
 ```HTML
@@ -164,8 +163,9 @@ So here's how your second division looks like:
     <button onclick="logout()">Logout</button>
 </div>
 ```
+Add this division just after the first division.
 
-So here is what your HTML code should look like:
+So here is what your HTML code should look like so far:
 
 ```HTML
 <!DOCTYPE html>
@@ -194,9 +194,9 @@ So here is what your HTML code should look like:
 
 ![without JS](https://cloud-ff66h83qt.vercel.app/0u1.png)
 
-As you can see, both divisions are displaying on the same page, but you need to display the second division after the user successfully logged-in as it contains the logout button.
+As you can see, both divisions are being displayed on the same page. You need to display the second division after the user successfully logged-in as it contains the logout button.
 
-For that, you need to work on JavaScript. But before moving on, remember you saved some lines of JavaScript code from Firebase?
+For that, you need to use JavaScript. But before moving on, remember you saved some lines of JavaScript code from Firebase? They should look something like this:
 ```javascript
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
 <script>
@@ -218,11 +218,11 @@ Here is an **important** step, look at very first line of code:
 
 `<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>`.
 
-This will give you an error, as it only integrates the `Firebase-app`, not the Firebase library. So for that, add this below the first line.
+This will give you an error, as it only loads the Firebase library. So for that, add the line below under that first line.
 
 `<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>`.
 
-After adding it, this should be your code:
+After adding it, your code should look like this:
 
 ```javascript
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
@@ -289,13 +289,13 @@ Here is your final HTML code:
 
 #### JavaScript
 
-This is the `script.js` file present in your repl just below the `index.html` file. JavaScript handles the logic of your webpage.
+The javaScript is in the `script.js` file present in your repl just below the `index.html` file. JavaScript handles the logic of your webpage.
 
-Here, you have to write a small amount of JavaScript code because Firebase has some pre-defined functions for Authentication, which you will use here, and also, you can check [Firebase Documentation on web authentication](https://firebase.google.com/docs/auth/web/start).
+Here you only have to write a small amount of JavaScript code because Firebase has some pre-defined functions for Authentication. Checkout [Firebase Documentation on web authentication](https://firebase.google.com/docs/auth/web/start) for more information.
 
-So what you have to do is get the currently signed-in user you created on Firebase.
+So you have to get the currently signed-in user you created on Firebase.
 
-In the `script.js` file, you need to add a fuction called [Get the currently signed-in user](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user) for that which is:
+In the `script.js` file you need to call a function to [Get the currently signed-in user](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user), it is the function which specifies whether the user is signed-in or not.
 
 ```javascript
 firebase.auth().onAuthStateChanged(function(user) {
@@ -306,11 +306,9 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 ```
-As you created two divisions in the HTML file, you need to display a division with ID `login_div` at the login page and a division with ID `user_div` after the login page or when the user is signed-in.
+Now we can show the division with ID `login_div` at the login page and the division with ID `user_div` when the user is signed-in.
 
-So in the above code, some changes have to be made.
-
-Add below two lines of code in the `if` condition of the above code.
+Add the two lines of code below in the `if` condition of the code above.
 
 ```javascript
 document.getElementById("user_div").style.display = "block";
@@ -331,18 +329,18 @@ firebase.auth().onAuthStateChanged(function(user) {
 });
 ```
 
-In the code above, `block` will display the division, and `none` will hide it.
+In the code above `block` will display the division and `none` will hide it.
 
-As you added this for a signed-in user, you also need the `else` part. _where user is not signed-in_ means the user is on the login page, so the code will be the same as the code above, but you need to swap `block` and `none` to display only `main_div` with ID `login_div`.
+You added the part for the signed-in user so you now need the `else` part. This is where the user isn't signed in. The code will be the same as the code in the first `if` but you need to swap `block` and `none` to display only `main_div` with ID `login_div`.
 
-Add this code to the `else` condition.
+Add the following code to the `else` condition:
 
 ```javascript
 document.getElementById("user_div").style.display = "none";
 document.getElementById("login_div").style.display = "block";
 ```
 
-The code should look like:
+The javaScript code should look like:
 
 ```javascript
 firebase.auth().onAuthStateChanged(function(user) {
@@ -361,7 +359,7 @@ Now, how it looks like:
 
 ![with JS](https://cloud-e3wysrojq.vercel.app/c1.png)
 
-After completing this, you need to work on both the functions you assigned in HTML buttons `login()` and `logout()`.
+Now you need to work on both the functions you assigned to HTML buttons (`login()` and `logout()`).
 
 ##### Function login()
 A user can sign-in only if their record is stored in Firebase. So, firebase has a property called [`Sign-in existing user`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) as existing users can sign-in through input fields.
