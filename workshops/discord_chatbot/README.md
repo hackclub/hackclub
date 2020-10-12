@@ -1,7 +1,7 @@
 ---
 name: Discord Chatbot
-description: Make a discord bot which talks with you!
-author: "@k4u5h4L"
+description: Make a Discord bot with Discord.js and Dialogflow which talks with you!
+author: '@k4u5h4L'
 ---
 
 # Discord Chatbot
@@ -178,20 +178,20 @@ All the imports are already done for you! So we shall get to start coding the lo
 This is what [discord.js](https://discord.js.org/) documentation has for us. I have taken the liberty of showing you all the code we need for this bot.
 
 ```js
-const Discord = require("discord.js");
-const client = new Discord.Client();
+const Discord = require('discord.js')
+const client = new Discord.Client()
 
-client.on("ready", () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`)
+})
 
-client.on("message", (msg) => {
-  if (msg.content === "ping") {
-    msg.reply("Pong!");
+client.on('message', (msg) => {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!')
   }
-});
+})
 
-client.login("token");
+client.login('token')
 ```
 
 The above code spins up a simple bot which replies "Pong!" if soneone texts "ping"!
@@ -208,24 +208,24 @@ Here's the code included with the modifications:
 
 ```js
 async function replyMsg(textMsg) {
-  const projectId = process.env.PROJECT_ID;
+  const projectId = process.env.PROJECT_ID
 }
 ```
 
 - Now we will have to create a session using a package called `uuid`. If you are using [this repl link](https://repl.it/@k4u5h4L/discord-chatbot) all the imports have been done for you. So we will just add the `sessionId` variable in that function.
 
 ```js
-const sessionId = uuid.v4();
+const sessionId = uuid.v4()
 ```
 
 - Now we need to create a new session. This is nicely documented in the [this link](https://github.com/googleapis/nodejs-dialogflow#using-the-client-library). So we will set it all up.
 
 ```js
-const sessionClient = new dialogflow.SessionsClient();
+const sessionClient = new dialogflow.SessionsClient()
 const sessionPath = await sessionClient.projectAgentSessionPath(
   projectId,
   sessionId
-);
+)
 ```
 
 - So no we will create a request object which will be sent to Dialogflow to get processed. For this, we have to create a structure like this:
@@ -238,10 +238,10 @@ const request = {
       // The query to send to the dialogflow agent
       text: textMsg,
       // The language used by the client (en-US)
-      languageCode: "en-US",
-    },
-  },
-};
+      languageCode: 'en-US'
+    }
+  }
+}
 ```
 
 It takes in the `sessionPath` we just created, and a `queryInput`. In that we will will have to add a field called `text`, and again inside that we will have to feed in the user's text as a query. We will leave the `languageCode` as `"en-US"` since that's the language we're using.
@@ -249,11 +249,11 @@ It takes in the `sessionPath` we just created, and a `queryInput`. In that we wi
 - So now finally, we will write code to filter out the response received.
 
 ```js
-const responses = await sessionClient.detectIntent(request);
-const result = responses[0].queryResult;
-console.log(`Query: ${result.queryText}`);
+const responses = await sessionClient.detectIntent(request)
+const result = responses[0].queryResult
+console.log(`Query: ${result.queryText}`)
 
-return await result.fulfillmentText;
+return await result.fulfillmentText
 ```
 
 Here, we will wait for the response, and when it's got, we will extract the `queryResult` from it. We will log the `queryText`, which is basically what the user sent for debugging purposes, and we shall return the `fulfillmentText`, which contains the reply for the user's text from Dialogflow.
@@ -262,14 +262,14 @@ Now, your entire function will look like this:
 
 ```js
 async function replyMsg(textMsg) {
-  const projectId = process.env.PROJECT_ID;
-  const sessionId = uuid.v4();
+  const projectId = process.env.PROJECT_ID
+  const sessionId = uuid.v4()
 
-  const sessionClient = new dialogflow.SessionsClient();
+  const sessionClient = new dialogflow.SessionsClient()
   const sessionPath = await sessionClient.projectAgentSessionPath(
     projectId,
     sessionId
-  );
+  )
 
   const request = {
     session: sessionPath,
@@ -278,17 +278,17 @@ async function replyMsg(textMsg) {
         // The query to send to the dialogflow agent
         text: textMsg,
         // The language used by the client (en-US)
-        languageCode: "en-US",
-      },
-    },
-  };
+        languageCode: 'en-US'
+      }
+    }
+  }
 
   // Send request and log result
-  const responses = await sessionClient.detectIntent(request);
-  const result = responses[0].queryResult;
-  console.log(`Query: ${result.queryText}`);
+  const responses = await sessionClient.detectIntent(request)
+  const result = responses[0].queryResult
+  console.log(`Query: ${result.queryText}`)
 
-  return await result.fulfillmentText;
+  return await result.fulfillmentText
 }
 ```
 
@@ -315,14 +315,14 @@ Whew, that's a lot to digest huh? But stay with me, we're almost on the way to c
 Now what we need to do is integrate both Dialogflow and discord.js to make a chatbot. For this, you only need to change the function when a message reaches the bot. Instead of sending "Pong!", we will send the text got from DIalogflow.
 
 ```js
-client.on("message", (message) => {
+client.on('message', (message) => {
   if (!message.author.bot) {
     replyMsg(message.content).then((res) => {
-      console.log(res);
-      message.reply(res);
-    });
+      console.log(res)
+      message.reply(res)
+    })
   }
-});
+})
 ```
 
 So here, we are first checking if the user sending this message is not a bot. If you don't include this condition, then there may be an infinite loop where the bot replies to itself. So keep it for safety.
@@ -341,7 +341,7 @@ Check your code if all your variables and JSON api files are correct and updated
 
 Now, try sending a message in the server.
 
-This is what I received from the bot when i tried to talk with it
+This is what I received from the bot when I tried to talk with it
 
 ![bot texting](https://cloud-cl244cmpv.vercel.app/screenshot14.png)
 
@@ -363,6 +363,6 @@ Here are the codes some demos of how the project can be expanded upon:
 
 - If I may have disclosed any API keys in this workshop, please don't use the same keys since I have already revoked them and they don't work anymore. You have to visit those sites and get registered to get your hands on these keys.
 
-- To those of you people who felt difficult following this workshop, we got your back! We have an extensive youtube video covering topics from the beginning to the very end. So just click on on the below picture if you're confused!
+- To those of you people who felt difficult following this workshop, we got your back! We have an extensive Youtube video covering topics from the beginning to the very end. So just click on on the below picture if you're confused!
 
   [![discord.js bot](https://img.youtube.com/vi/FwIi2Z-7fmI/0.jpg)](https://www.youtube.com/watch?v=FwIi2Z-7fmI)
