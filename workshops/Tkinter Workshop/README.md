@@ -154,7 +154,7 @@ tk.Button(window,command=lambda:clicked(random.choice(quotelist)),text="Open",bg
 window.mainloop()
 ```
 
-As output, an error will be shown, that says function clicked() is not declared. So let us make the button work. You need to put these codes above the window declaration then only it will work.
+The output of this program will be an error, telling us the function `clicked` has not been declared. Let’s fix that by creating that function, above the `window` declaration.
 
 ```python
 def clicked(quote):
