@@ -47,7 +47,7 @@ We are importing a python library which is Tkinter here. Also for ease, we impor
 import random
 ```
 
-This library as the name says is used for making random choices. Here we need to display the quotes randomly, so we need to import it. Now let's make a list of quotes.
+This library, as the name says, is used for making random choices. For our project, we need to display a random quote, so we need to import it. Next, let's make a list of quotes:
 
 ```python
 quotelist = [
