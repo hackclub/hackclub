@@ -2,6 +2,7 @@
 name: 'Parallax Effect'
 description: 'Creating greater user experience on web using JavaScript'
 author: '@giridhar7632'
+img: 'https://files.slack.com/files-pri/T0266FRGM-F01C8MC9L14/image_from_ios.jpg?pub_secret=b727cbb188'
 ---
 
 # Parallax Effect
