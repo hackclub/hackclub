@@ -48,14 +48,14 @@ We need to add some more HTML lines to build our stopwatch. We will write all ou
 
 ```html
 <h1>Stopwatch</h1>
-<div class='main'></div>
+<div class="main"></div>
 ```
 
 Inside the `main` div, we will add a `<p>` tag with a class of `time` and seperate `<span>` tags for minutes, seconds and miliseconds respectively. Confusing? You'll get it in a minute.
 
 ```html
 <p class="time">
-<span class="minutes">00</span>:<span class="seconds">00</span>:<span class="miliseconds">00</span>
+  <span class="minutes">00</span>:<span class="seconds">00</span>:<span class="miliseconds">00</span>
 </p>
 ```
 
@@ -109,13 +109,12 @@ As the `style.css` file was prewritten for you, we will now directly move on to 
 
 Navigate to your `script.js` file and let's start writing JavaScript!
 
-
 First we will link the miliseconds, seconds and minutes in our HTML with some JavaScript variables.
 
 ```js
-const milisec = document.querySelector(".miliseconds")
-const sec = document.querySelector(".seconds")
-const min = document.querySelector(".minutes")
+const milisec = document.querySelector('.miliseconds')
+const sec = document.querySelector('.seconds')
+const min = document.querySelector('.minutes')
 ```
 
 Explanation: We define 3 variables `milisec`, `sec` and `min` using `const` and set their value to the first element that matches a specified CSS class(s) in the document. In our case, those CSS selectors are `.miliseconds` , `.seconds` , `.minutes` respectively.
@@ -138,10 +137,10 @@ Learn more about the [types of variables](https://www.freecodecamp.org/news/var-
 Moving ahead, we'll define 4 more variables but this time, using `let`
 
 ```js
-let miliNum = 0;
-let secNum = 0;
-let minNum = 0;
-let INTERVAL;
+let miliNum = 0
+let secNum = 0
+let minNum = 0
+let INTERVAL
 ```
 
 Explanation: We'll increment the `miliNum`, `secNum` and `minNum` variables and display it on the screen when the user starts the stopwatch. The `INTERVAL` variable will be used to clear or set the intervals.
@@ -150,18 +149,18 @@ Next up, we'll define few functions each for incrementing miliseconds, seconds a
 
 ```js
 function miliseconds() {
-  miliNum++;
-  milisec.innerHTML = miliNum;
+  miliNum++
+  milisec.innerHTML = miliNum
 }
 
 function seconds() {
-  secNum++;
-  sec.innerHTML = secNum;
+  secNum++
+  sec.innerHTML = secNum
 }
 
 function minutes() {
-  minNum++;
-  min.innerHTML = minNum;
+  minNum++
+  min.innerHTML = minNum
 }
 ```
 
@@ -169,7 +168,7 @@ Now these functions need to be called when someone presses the START button. For
 
 ```js
 function start() {
-  clearInterval(INTERVAL);
+  clearInterval(INTERVAL)
   INTERVAL = setInterval(() => {
     miliseconds()
   }, 10)
@@ -185,41 +184,42 @@ After we clear all the previous intervals, we set a new interval of 0.010 second
 Now, the `setInterval` function's syntax looks a bit weird, right? Let's break it down.
 
 ```js
-setInterval(function, intervalTime in seconds)
+setInterval(func, intervalTime)
 ```
 
-The `setInterval` takes in a function and an interval time. It will call the function repeatedly after `intervalTime` seconds. So using that syntax, we pass it an arrow function (=>) which calls the `miliseconds()` function after every 1 miliseconds.
+The `setInterval` takes in a function and an interval time in seconds. It will call the function repeatedly after `intervalTime` seconds. So using that syntax, we pass it an arrow function (=>) which calls the `miliseconds()` function after every 1 miliseconds.
 
 Learn more about [`setInterval()`](https://www.w3schools.com/js/js_timing.asp).
 
 Your code so far:
-```js
-const milisec = document.querySelector(".miliseconds")
-const sec = document.querySelector(".seconds")
-const min = document.querySelector(".minutes")
 
-let miliNum = 0;
-let secNum = 0;
-let minNum = 0;
-let INTERVAL;
+```js
+const milisec = document.querySelector('.miliseconds')
+const sec = document.querySelector('.seconds')
+const min = document.querySelector('.minutes')
+
+let miliNum = 0
+let secNum = 0
+let minNum = 0
+let INTERVAL
 
 function miliseconds() {
-  miliNum++;
-  milisec.innerHTML = miliNum;
+  miliNum++
+  milisec.innerHTML = miliNum
 }
 
 function seconds() {
-  secNum++;
-  sec.innerHTML = secNum;
+  secNum++
+  sec.innerHTML = secNum
 }
 
 function minutes() {
-  minNum++;
-  min.innerHTML = minNum;
+  minNum++
+  min.innerHTML = minNum
 }
 
 function start() {
-  clearInterval(INTERVAL);
+  clearInterval(INTERVAL)
   INTERVAL = setInterval(() => {
     miliseconds()
   }, 10)
@@ -231,9 +231,9 @@ Now if you click **RUN** and then if you press the `start` button, nothing happe
 For this, we will go back to our `index.html` file. We will add an `onclick` attribute to our buttons and we will call our functions.
 
 ```html
-<button onclick='start()' class="start">START</button>
-<button onclick='stop()' class="stop">STOP</button>
-<button onclick='reset()' class="reset">RESET</button>
+<button onclick="start()" class="start">START</button>
+<button onclick="stop()" class="stop">STOP</button>
+<button onclick="reset()" class="reset">RESET</button>
 ```
 
 Explanation: Although we haven't defined the `stop()` and the `reset()` function, we will still add them to `onclick` here and we'll define them later.
@@ -247,7 +247,6 @@ Let's go back to our JavaScript file and test it out!
 Hmm... It works, but not as expected. There are 2 flaws.
 
 1. If you notice closely, it doesn't show as '01' '02' etc. but it shows as '1' '2' etc. Now this looks really bad.
-
 2. Miliseconds keep on increasing and even above 100 but the seconds never increase.
 
 Let's fix them up.
@@ -258,17 +257,16 @@ Your `miliseconds()` function will look like this:
 
 ```js
 function miliseconds() {
-  miliNum++;
+  miliNum++
   if (miliNum < 10) {
-    milisec.innerHTML = "0" + miliNum;
-  }
-  else {
-    milisec.innerHTML = miliNum;
+    milisec.innerHTML = '0' + miliNum
+  } else {
+    milisec.innerHTML = miliNum
   }
 
   if (miliNum == 99) {
-    miliNum = 0;
-    seconds();
+    miliNum = 0
+    seconds()
   }
 }
 ```
@@ -276,7 +274,8 @@ function miliseconds() {
 Similarly, we'll do this for the seconds and minutes too!
 
 **Challenge:** Try to implement the `if-else` statements inside the `seconds()` and `minutes()` function.  
-**Hints:** 
+**Hints:**
+
 1. Seconds should not exceed 60 and should call the `minutes()` function.
 2. Minutes don't need to be checked whether they exceed or not because hours are absent in our stopwatch.
 
@@ -285,42 +284,39 @@ Similarly, we'll do this for the seconds and minutes too!
 
 ```js
 function miliseconds() {
-  miliNum++;
+  miliNum++
   if (miliNum < 10) {
-    milisec.innerHTML = "0" + miliNum;
-  }
-  else {
-    milisec.innerHTML = miliNum;
+    milisec.innerHTML = '0' + miliNum
+  } else {
+    milisec.innerHTML = miliNum
   }
 
   if (miliNum == 99) {
-    miliNum = 0;
-    seconds();
+    miliNum = 0
+    seconds()
   }
 }
 
 function seconds() {
-  secNum++;
+  secNum++
   if (secNum < 10) {
-    sec.innerHTML = "0" + secNum;
-    }
-  else {
-    sec.innerHTML = secNum;
+    sec.innerHTML = '0' + secNum
+  } else {
+    sec.innerHTML = secNum
   }
 
   if (secNum == 59) {
-    secNum = 0;
-    minutes();
+    secNum = 0
+    minutes()
   }
 }
 
 function minutes() {
-  minNum++;
+  minNum++
   if (minNum < 10) {
-      min.innerHTML = "0" + minNum;
-    }
-  else {
-    min.innerHTML = minNum;
+    min.innerHTML = '0' + minNum
+  } else {
+    min.innerHTML = minNum
   }
 }
 ```
@@ -334,15 +330,17 @@ Now, we have only 2 last functions to implement and we are done! They are the `s
 The `stop()` function is pretty much a one-line code. You can write it in 2 different ways as you like.
 
 Either in this way:
+
 ```js
 function stop() {
-  clearInterval(INTERVAL);
+  clearInterval(INTERVAL)
 }
 ```
 
 Or:
+
 ```js
-const stop = () => clearInterval(INTERVAL);
+const stop = () => clearInterval(INTERVAL)
 ```
 
 We just have to clear the interval and our stopwatch will stop! Also both the functions work exactly the same!
@@ -357,13 +355,13 @@ For resetting the stopwatch, we'll implement the `reset()` function which will:
 
 ```js
 function reset() {
-  clearInterval(INTERVAL);
-  miliNum = 0;
-  secNum = 0;
-  minNum = 0;
-  milisec.innerHTML = "00";
-  sec.innerHTML = "00";
-  min.innerHTML = "00";
+  clearInterval(INTERVAL)
+  miliNum = 0
+  secNum = 0
+  minNum = 0
+  milisec.innerHTML = '00'
+  sec.innerHTML = '00'
+  min.innerHTML = '00'
 }
 ```
 
@@ -373,77 +371,72 @@ After we are done implementing these 2 functions, I'm happy to say that you have
 <summary>Here's the final JavaScript code:</summary>
 
 ```js
+const milisec = document.querySelector('.miliseconds')
+const sec = document.querySelector('.seconds')
+const min = document.querySelector('.minutes')
 
-const milisec = document.querySelector(".miliseconds")
-const sec = document.querySelector(".seconds")
-const min = document.querySelector(".minutes")
-
-let miliNum = 0;
-let secNum = 0;
-let minNum = 0;
-let INTERVAL;
+let miliNum = 0
+let secNum = 0
+let minNum = 0
+let INTERVAL
 
 function miliseconds() {
-  miliNum++;
+  miliNum++
   if (miliNum < 10) {
-    milisec.innerHTML = "0" + miliNum;
-  }
-  else {
-    milisec.innerHTML = miliNum;
+    milisec.innerHTML = '0' + miliNum
+  } else {
+    milisec.innerHTML = miliNum
   }
 
   if (miliNum == 99) {
-    miliNum = 0;
-    seconds();
+    miliNum = 0
+    seconds()
   }
 }
 
 function seconds() {
   secNum++
   if (secNum < 10) {
-    sec.innerHTML = "0" + secNum;
-    }
-  else {
-    sec.innerHTML = secNum;
+    sec.innerHTML = '0' + secNum
+  } else {
+    sec.innerHTML = secNum
   }
 
   if (secNum == 59) {
-    secNum = 0;
-    minutes();
+    secNum = 0
+    minutes()
   }
 }
 
 function minutes() {
   minNum++
   if (minNum < 10) {
-    min.innerHTML = "0" + minNum;
-    }
-  else {
-    min.innerHTML = minNum;
+    min.innerHTML = '0' + minNum
+  } else {
+    min.innerHTML = minNum
   }
 }
 
 function start() {
-  clearInterval(INTERVAL);
+  clearInterval(INTERVAL)
   INTERVAL = setInterval(() => {
     miliseconds()
   }, 10)
 }
 
 function stop() {
-  clearInterval(INTERVAL);
+  clearInterval(INTERVAL)
 }
 
 function reset() {
-  clearInterval(INTERVAL);
-  miliNum = 0;
-  secNum = 0;
-  minNum = 0;
-  milisec.innerHTML = "00";
-  sec.innerHTML = "00";
-  min.innerHTML = "00";
+  clearInterval(INTERVAL)
+  miliNum = 0
+  secNum = 0
+  minNum = 0
+  milisec.innerHTML = '00'
+  sec.innerHTML = '00'
+  min.innerHTML = '00'
 }
-
 ```
 
 </details>
@@ -459,27 +452,20 @@ If you haven't created an account on repl.it, make sure you do so to save this w
 Here are some things which you can do:
 
 1. Try adding hours in our stopwatch.
-
 2. Try to change the START button to display RESUME whenever someone clicks STOP.
-
 3. Make the miliseconds as 3 digits instead of 2!
-
 4. Try adding laps in our stopwatch which will get displayed when someone clicks STOP.
 
 Here are some more examples for you:
 
 1. [Stopwatch with hours](https://repl.it/@FaisalSayed1/Stopwatch-with-hours).
-
 2. [Stopwatch with 3 digit miliseconds](https://repl.it/@FaisalSayed1/Stopwatch-with-3-digit-miliseconds).
-
 3. [Stopwatch with dynamically changing START button](https://repl.it/@FaisalSayed1/Stopwatch-with-dynamic-start-button).
 
-Built by hackclubbers:
+Built by Hack Clubbers:
 
 1. [Adrian](https://stopwatch.loboadrian.repl.co/)
-
 2. [Tanishq](https://rundowncompassionatepassword.tanishqsoni.repl.co/)
-
 3. [Eric Zhu](https://frivolousshimmeringblock.ericzhu7.repl.co/)
 
 Now that you have finished building this wonderful project, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
@@ -489,6 +475,6 @@ You probably know the best ways to get in touch with your friends and family, bu
 1. In a new tab, open and follow [these directions][slack] to signup for our Slack.
 2. Then, post the link to the [`#scrapbook`](https://hackclub.slack.com/messages/scrapbook) channel to share it with everyone! Also ping me with what you've built!
 
-PS: I'm `@fayd` on slack!
+PS: I'm `@fayd` on Slack!
 
 [slack]: https://slack.hackclub.com/
