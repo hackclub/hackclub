@@ -27,7 +27,7 @@ To get started, [click here](https://repl.it/languages/Tkinter). Your coding env
 
 #### What is Tkinter?
 
-Tkinter is a library in python used to make cool User Interfaces(UI). What the user sees on the screen to interact with the program is called a user interface. Here we will use it to make our Quotes Hub.
+Tkinter is a library in Python used to make visual User Interfaces (UI), which users see on their screen and interact with. In this workshop, we’ll use Tkinter to make our Quotes Hub interface.
 
 ## Code and explanation.
 
@@ -246,4 +246,3 @@ After building share your repl link to all communities don't forget about slack 
 ![made_it](https://cloud-a58thexdk.vercel.app/tenor.gif)
 
 Yes, You have made it.
-
