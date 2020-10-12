@@ -8,7 +8,7 @@ Having a user interface is very useful because it gives both a good interactive 
 
 The workshop will look something like this.
 
-![ezgif.com-video-to-gif-3.gif](https://cloud-rbupe5aas.vercel.app/0ezgif.com-video-to-gif-2.gif)
+![Output video](https://cloud-rbupe5aas.vercel.app/0ezgif.com-video-to-gif-2.gif)
 
 So we will be making a quotes hub which displays quotes.
 
@@ -23,7 +23,7 @@ This workshop will take about 20 minutes.
 We will be using [Tkinter](https://docs.python.org/3/library/tk.html), a python library to develop our user interface. This project requires [Repl.it.](https://repl.it) We will be using it for coding. It is awesome because you can code online. Just follow this link and start coding!
 
 To get started, [click here](https://repl.it/languages/Tkinter). Your coding environment will be ready in a few seconds!
-<img width="1440" alt="Screenshot 2020-09-18 at 5 39 06 PM" src="https://cloud-o8q46nkko.vercel.app/screenshot_2020-09-25_at_9.23.06_pm.png">
+<img alt="repl.it image" src="https://cloud-o8q46nkko.vercel.app/screenshot_2020-09-25_at_9.23.06_pm.png">
 
 #### What is Tkinter?
 
@@ -31,9 +31,9 @@ Tkinter is a library in Python used to make visual User Interfaces (UI), which u
 
 ## Code and explanation.
 
-Lots of beginners make endless changes to their code and expect it to miraculously work right away. The problem with this approach is that it stacks one problem on top of another, and it becomes difficult to figure what went wrong. So Code along this will allow you to learn practical skills while achieving something!
+Lots of beginners make endless changes to their code and expect it to miraculously work right away. The problem with this approach is that it stacks one problem on top of another, and it becomes difficult to figure what went wrong. It is better if you can code along.
 
-![video](https://cloud-1h9458u6z.vercel.app/54_blog_image_13.gif)
+![Lets code](https://cloud-1h9458u6z.vercel.app/54_blog_image_13.gif)
 
 So to make the Quotes Hub we need to import the library Tkinter.
 
@@ -220,7 +220,7 @@ window.mainloop()
 
 It’s simple, you just have to go through the functions and workflow.
 
-![ezgif com-gif-to-mp4](https://cloud-5m2nwfs8r.vercel.app/ezgif.com-video-to-gif-4.gif)
+![run it](https://cloud-5m2nwfs8r.vercel.app/ezgif.com-video-to-gif-4.gif)
 
 ## Hacking time!
 
@@ -240,7 +240,5 @@ Also if you are new to python, take a look at [python](https://www.python.org/do
 [Aswin Prakash](https://repl.it/@AswinPrakash/VirtualIncomparableLegacysystem#main.py)
 
 [Anupriya Shaji](https://repl.it/@bezlin/trialtkinterpy#main.py)
-
-After building share your repl link to all communities don't forget about slack and make everyone know the piece of work you have done.
 
 ![made_it](https://cloud-a58thexdk.vercel.app/tenor.gif)
