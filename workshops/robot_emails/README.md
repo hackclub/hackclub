@@ -1,7 +1,8 @@
 ---
 name: Robotic Emails
-description: Building a mass-emailer with easy templating and Python
+description: Build a mass-emailer with easy templating in Python
 author: '@rohan-bansal'
+img: https://cloud-l0p478biq.vercel.app/2020-10-12_3hhqjf1c1p1yfpgd7ykvwkr9vunvgvmw.png
 ---
 
 # Robotic Emails
@@ -274,8 +275,6 @@ If you noticed in the `contacts.txt` file, the substitution is represented by a 
 *Lines 5-7*: We set the message From, To, and Subject fields.
 
 *Lines 9-11*: This code attaches the body text to the email in MIME format, and sends the email!
-
-
 
 At this point, go ahead and **run the program**. If you're having problems, go check the final code up at the **top of this page** and make sure you didn't make any errors. Assuming your email and password are correct, and you let your application access your Google account, the program should run successfully! Go check the emails of the contacts you wrote down.
 
