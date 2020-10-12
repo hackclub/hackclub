@@ -39,7 +39,7 @@ You will also need to complete [this captcha](https://accounts.google.com/b/0/Di
 
 *If you happen to have 2 Factor Authentication enabled for your account, please follow [this article](https://support.google.com/accounts/answer/185833?hl=en) to generate an app password. When we write the program and input our account password, replace that with the app password you generated.*
 
-*After working on this project, it is recommended to turn the less secure apps lever back to it's off position.*
+*After working on this project, it is recommended to turn the less secure apps lever back to its off position.*
 
 ---
 
