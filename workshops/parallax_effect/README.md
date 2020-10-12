@@ -185,6 +185,6 @@ These are some projects made using parallax-effect.
 - Example-3 [demo](https://horizontal-parallax-effect.giridharhackclu.repl.co/). [source code](https://repl.it/@Giridharhackclu/horizontal-parallax-effect#index.html).<br>
   _Mouse-move parallax_ - As you move mouse-pointer, the `innerHeight` and the `innerWidth` of the elements changes.
 
-Check this article for awesome another-level parallax examples - [article](https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html)
+Check [this article](https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html) for awesome another-level parallax examples
 
 Hope you love this workshop! :v:
