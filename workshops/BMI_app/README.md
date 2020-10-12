@@ -9,26 +9,29 @@ Hello friends, today we will be using MIT APP INVENTOR, to create our BMI applic
 Body mass index (BMI) application an calculator that  measure the body fat (or weight category) based on height and weight of the person. It uses a very simple formula :
 
 
-_(Your weight / your height )*2_
+_(Your weight / your height )*2_`will be the formula`
 
 
 # Step 1
 
-Now let build  our app. We will start off by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,right at the top next to the Logo of App inventor, click on the label *“CREATE APP!!”.* You will redirected to sign in using google; ![click here](https://cloud-k86tkribn.vercel.app/0screenshot_2020-09-30_at_12.31.43.png) even if it your first time here. Now select you google account you preferred and you will be directed to to the of the workplace.
+Now let build  our app. We will start off by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,right at the top next to the Logo of App inventor, click on the label *“CREATE APP!!”.* You will redirected to sign in using google; ![click here](https://cloud-k86tkribn.vercel.app/0screenshot_2020-09-30_at_12.31.43.png) even if it your first time here. Now select you google account you preferred and you will be directed straigt on the workspace.
 
-Now if you not direct to name your project, right on the top click the selection _MY PROJECTS_ button. You then see that you have zero project. Now click on the select _create new Project_ which will ask you to give the name of your project and set name to "BMI". NOTE: if you prefer to used another name, you should not place a space between the word rather use an undercover ( _ ). 
+if you were not directed to name you project, right on the top, click the selection _MY PROJECTS_ button. then click on the select _create new Project_ which will ask you to give the name of your project and set name to "BMI".`photo`
+NOTE: if you prefer to used another name, you can, but you should not place a space between the word rather use an undercover ( _ ). 
 
 
-What you see now if the user interfaces of how you app will look like on an android phone/tablet. On the viewer slide it way you will place all your components you need for your app from palette slide.if you would like to change the device such as to a tablet or a bigger phone , just click on the the phone size button and change to device .
-Now let us start, we will use the palette slide to take components we need for our app. We will mostly use the components under user interfaces . 
-1.
-Now drag and drop |Label|  from the user interface ad place it inside the phone of the viewer slide. 
+What you see now is the user interfaces of how your app will look like on an android phone/tablet. On the _Viewer_ slide it way you will place all your components you need for your app from _Palette_ slide. if you would like to change the device such as to a tablet or a bigger phone ,`photo`
+just click on the the phone size button and change the device size.
 
- Now drag and drop component name  TextBox . from the user interface and place it under the Label that is on the phone.
+Now let start,We will mostly use the components under user interfaces _Palette_. 
+`photo for the user interface`
+Now drag and drop ||Label|| component from the user interface and place it inside the Phone/ _Viewer_ slide.`photo how it should look` 
 
- Now drag and drop another Label inside the phone under the TextBox  drop on A).
+Then drag and drop ||TextBox|| component and place it under ||Label|| component on the phone.
 
- Now again drag and drop another TextBox and place it under the last Label we drop from B).
+Then drag and drop another ||Label|| component and place it under the ||TextBox|| component in the Phone.
+
+Then again drag and drop another ||TextBox|| and place it under the last Label we drop from B).
 
  Drag and drop component Button and place it under the TextBox from D).
 
@@ -78,7 +81,8 @@ Now let go to our code to write our code.
 Over the Properties slide we find there is tow button one is DESIGN and Code, now click onto the CODE button , you will be directed to a a new page where we will make our code. Now on this page we find a black space this is where we will drag and drop our block for the code. On the left side we find Block slide where all our block will come from and the blank part it called the Viewer slide. Let start with our code. 
 We are going to use the formula to calculate someone’s size category:
 (Your weight / your height )*2
-Now let create a procedure that does this, we will go onto the the Block slide and check down for the on the purple square that say Procedure and click onto it and you will see a group of block appear from there, now drag and drop the second block that say To Procedure result  on the viewer slide
+Now let create a procedure that does this, 
+we will go onto the the Block slide and check down for the on the purple square that say Procedure and click onto it and you will see a group of block appear from there, now drag and drop the second block that say To Procedure result  on the viewer slide
 . Now that our first part. Let go bak to the formula, we need to call (your weight / by your height * 2), so let take the division sign, go onto the Block and click onto the Maths block and you will see group of block, and one of it you will se a division block as a sign / drag and drop it inside the To procedure result block on the viewer, now it fit perfectly, let take a multiplication sign * , go back on the Blocks slide and click on the Maths Block and drag and drop at the bock that as * sign and drop it inside the second column of the division block ‘  /   ‘ like this :  ⚠️Note I use in this picture this the block with this sign   ^, you MUST NOT  do the same rather use the block with * sign.                         now let take the value from the Value_weight the user will input; go to the Block slide, find and click Value_weight Block, now inside the value_weight block we want to take text from the user so drag and drop the block Value_weight.Text and place it in the first puzzle of the block / (division),now let take as well The Value_height from the user, go back to the Block slide and click on the bock Value_height and scroll done for the block Value_Height.Text  and place it in the second puzzle of the block / (division)  like this:
 Now we want to multiply it by 2, so go and click on the Block Math and take the first bock that has a 0  in it and place it after the multiplication sign your block , now click inside this block again to gauge the number to 2, your block should then be place in the remaining puzzle that allow the value to be multiply by 2. Now redone with our procedure that would allow us to know someone’s BMI value. 
 Now let have a process that give the message to the user about they BMI Value and categories weight they are in. Now click on the Block Button_calculate  and look fist block When.Button_calculate.Click.do  and place it on the Viewer slide. Now go back on the Block slide and click on the Block BMI_value and drag and drop the block Set.BMI_value.text.to inside the the Button_calculate.  Now we see an error or a red cross on the block well no problem for that, it just informing us that we did not assign any value to that block. Go back on the Block slide and click on the block Procedure drag and drop the block Call.calculate inside the set.BMI_value.Text.to , now the cross line should go away. Let me explain what will happen here, so when the button_calculate is click the BMI_value ’s text will be the Value of the BMI, which was calculated by the Procedure Calculate. 
