@@ -1,26 +1,26 @@
-# Create basic graphs and data visualizations with python! 
-
 ![Stonks](https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Ffacebook%2F000%2F029%2F959%2FScreen_Shot_2019-06-05_at_1.26.32_PM.jpg)
 
 You after you make your first data visualization^
 
 *Follow along with this workshop to gain some data science skills! You will use python to create basic graphs and visualizations with real data. You can hand draw a graph anytime you want, but why not learn how to code one! You will learn about matplotlib, pandas, and numpy, so you can create any graph or vizualizaiton you dream of!*
 
-Get started by going to [Jupyter](https://jupyter.org/try). When you get to the website you will see something like this...
+# Getting started!
 
+Get started by going to [Jupyter](https://jupyter.org/try). When you get to the website you will see something like this...
 
 **![Showing Homepage of Jupyter](https://lh5.googleusercontent.com/kf8WU2xC639Ogql75pwjVJFsHLkL1Jc39FNmU985vWokqKD7IsnbpUYYgYTn1ke_RzrsH4E3zELEMEAGhdUFwghXyNX75iWV8kwH_v4ADJETTzO-5IsHcijdSwtwf3gbBbC994tc0FA)**
 
 Click the middle one (Try JupyterLab)! 
 
-**Never used Jupyter? Here's a quick introduction/tutorial to [Jupyter](https://www.wevideo.com/view/1849208046)!** 
+**Never used Jupyter? [Here's a quick introduction/tutorial to Jupyter](https://www.wevideo.com/view/1849208046)!** 
 
 # Step One!
 
 *Uploading Libraries* ...
 
 First, we need to upload the [libraries](https://docs.python.org/3/library/) we will be using for this project. Every programming language has different “classes” that you need to use to access specific variables. The same thing occurs in Python, but instead they are known as libraries.
-![Princess Belle in her wonderful library ](https://media1.tenor.com/images/ac626c2d2b7a34b52ea8a630e9add18d/tenor.gif?itemid=4087766)
+
+![Princess Belle in her wonderful library](https://media1.tenor.com/images/ac626c2d2b7a34b52ea8a630e9add18d/tenor.gif?itemid=4087766)
 
 *Libraries Upload Continued...*
 
@@ -80,11 +80,11 @@ plt.bar(x,y)
 plt.show()
 ``` 
 
-The code above names each of the bars (defines x and y lines), creates random values of Y using    ```random.randint()```, plots our points, and shows the graph!
+The code above names each of the bars (defines x and y lines), creates random values of Y using ```random.randint()```, plots our points, and shows the graph!
 
 Example: 
 
-**![](https://lh6.googleusercontent.com/RWl3JKBqGZxuteF8vZtZQVri3TCxyRkKOG1zPygUGMQhNdJ3iBPqfIutg0oxXp-KpVUdKZUCYqMhT5i7yftGEasuvCuxWdac-RbAG5GK9zVXAGJ-EqrRnYaWzPxMafSjpBtdeTgZppc)**
+**![](https://cloud-3r2clygpe.vercel.app/0image_from_ios.jpg)**
 
 # Let's Make It A Little More Complicated!
 
@@ -142,7 +142,7 @@ In the code above, and anytime you want to create a graph you will be using fig.
 fig,ax= plt.subplots()
 ```
      
--   This created a figure with a single axes.
+- This created a figure with a single axis.
 - Here are a few different ways you can use fig…
 ```python
 fig=plt.figure() 
@@ -233,9 +233,7 @@ You could possibly get someting that looks like this...
    ax.set_title("Chicken Little's Plot") #adds a title
    ax.legend() #adds a key of the graph
 ```
-\*\*PS. If you have never watched [Chicken Little](https://youtu.be/PPuk2JQgMkU)
-
-You must do that asap, you are missing out on a animated masterpiece.
+\*\*PS. If you have never watched [Chicken Little](https://youtu.be/PPuk2JQgMkU), you must do that asap, you are missing out on an animated masterpiece.
 
 ![enter image description here](https://media1.tenor.com/images/fac310fb90bbde750d9f2e6ad1af44b1/tenor.gif?itemid=9695910)
 
