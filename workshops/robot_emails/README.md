@@ -27,9 +27,9 @@ _Demo: [Live](https://repl.it/@apexblade/RoboticEmails#main.py)_
 
 ## Initial Setup
 
-[SMTP](https://www.wikiwand.com/en/Simple_Mail_Transfer_Protocol) (Simple Mail Transfer Protocol) has been getting more and more secure as of late; and for good reason. To be able to send emails from your Google account, we need to give our python application access.
+[SMTP](https://www.wikiwand.com/en/Simple_Mail_Transfer_Protocol) (Simple Mail Transfer Protocol) has been getting more and more secure as of late; and for good reason. To be able to send emails from your Google account, we need to give our Python application access.
 
-Head over to [this link](https://myaccount.google.com/u/0/lesssecureapps?hl=en) and flick the "Allow less secure apps" lever to the on position. Google strictly allows only its own or verified software to interface with the creation/sending of emails; since you're creating a python app, it's necessary to tell Google that it's acceptable.
+Head over to [this link](https://myaccount.google.com/u/0/lesssecureapps?hl=en) and flick the "Allow less secure apps" lever to the on position. Google strictly allows only its own or verified software to interface with the creation/sending of emails; since you're creating a Python app, it's necessary to tell Google that it's acceptable.
 
 ![less secure app access](https://cloud-f9wuongol.vercel.app/app_access.png)
 
@@ -135,7 +135,7 @@ So far, this is what your code should look like:
 
 ### Getting Contacts
 
-Now, let's obtain our contacts from the `contacts.txt` file! (You don't have to write the comments, but it's great practice if you do)
+Now, let's obtain our contacts from the `contacts.txt` file!
 
 Create a function and initialize a dictionary to hold our emails and names in `key:value` format:
 
@@ -143,7 +143,7 @@ Create a function and initialize a dictionary to hold our emails and names in `k
 def get_contacts(filename):
     contacts_list = {}
 ```
-Next, let's open the contacts file! Python has an easy way of doing this using `with open...`. This reads the file and closing it immediately after we are finished! We open it in `r` (reading) mode, to make sure nothing is written to the file on accident, and we also use the [`utf-8`](https://www.wikiwand.com/en/UTF-8) character encoding. Make sure to place the following code inside the `get_contacts()` function with an indent.
+Next, let's open the contacts file. Python has an easy way of doing this using `with open...`. This reads the file and closes it immediately after we are finished! We open it in `r` (reading) mode, to make sure nothing is written to the file on accident, and we also use the [`utf-8`](https://www.wikiwand.com/en/UTF-8) character encoding. Make sure to place the following code inside the `get_contacts()` function with an indent.
 
 ```python
 with open(filename, mode = 'r', encoding = 'utf-8') as f:
@@ -289,7 +289,7 @@ The result should be similar to this:
 
 ![yay](https://cloud-mlx5oz5hm.vercel.app/tenor.gif)
 
-There are many things that can be changed in this program. Go back and see what you can modify to make it your own! Because of the modularity of the project, to add another substitution, it's as simple as adding a `{1}` or a `{2}` in `message.txt` and adding more commas and arguments in `contacts.txt`. Try to think of ways to make the project even better, and please share with me or others in the Hack Club community!
+There are many things that can be changed in this program. Go back and see what you can modify to make it your own! Because of the modularity of the project, to add another substitution, it's as simple as adding a `{1}` or a `{2}` in `message.txt` and adding more commas and arguments in `contacts.txt`. Try to think of ways to make the project even better, and please share your creations with me or others in the Hack Club community!
 
 Here are some branches of the project that build upon the code (can also be found on [GitHub](https://github.com/hackclub/hackclub))
 
