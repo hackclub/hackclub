@@ -231,7 +231,7 @@ Lastly, don't get stuck.
 I am attaching the Tkinter documentation take a look at [Learn Tkinter](https://docs.python.org/3/library/tk.html).
 Also if you are new to python, take a look at [python](https://www.python.org/doc/) documentation.
 
-### Applications made using Tkinter by other hackers.
+### Bobby added glitter to the project.
 
 [Hariprasad Rajan](https://repl.it/@HariprasadR03/haroadas#main.py)
 
