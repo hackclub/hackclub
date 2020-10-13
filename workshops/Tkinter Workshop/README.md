@@ -231,14 +231,14 @@ Lastly, don't get stuck.
 I am attaching the Tkinter documentation take a look at [Learn Tkinter](https://docs.python.org/3/library/tk.html).
 Also if you are new to python, take a look at [python](https://www.python.org/doc/) documentation.
 
-### Bobby added glitter to the project.
+### Modified by other hackers.
 
-[Hariprasad Rajan](https://repl.it/@HariprasadR03/haroadas#main.py)
+[Hariprasad Rajan](https://repl.it/@HariprasadR03/haroadas#main.py) He has made a back button and a quit button also added multiple slides.
 
-[Kk Haridev](https://repl.it/@DandaThor/harri-kkkkk#main.py)
+[Kk Haridev](https://repl.it/@DandaThor/harri-kkkkk#main.py) He extended it to many slides and added glitter to the project.
 
-[Aswin Prakash](https://repl.it/@AswinPrakash/VirtualIncomparableLegacysystem#main.py)
+[Aswin Prakash](https://repl.it/@AswinPrakash/VirtualIncomparableLegacysystem#main.py) He changed the quote hub to a movie summary slideshow hub. Check it out!
 
-[Anupriya Shaji](https://repl.it/@bezlin/trialtkinterpy#main.py)
+[Anupriya Shaji](https://repl.it/@bezlin/trialtkinterpy#main.py) She made a list of buttons that displays quotes by selecting which peoples quote you want to see.
 
 ![made_it](https://cloud-a58thexdk.vercel.app/tenor.gif)
