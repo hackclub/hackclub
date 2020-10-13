@@ -65,7 +65,7 @@ In the `message.txt` file, add the following template, which we will process in 
 - The first line contains the subject of the email
 - The rest of the lines contain the body
 
-```reStructuredText
+```
 Test Email
 
 Dear {0},
@@ -84,8 +84,6 @@ The `.env` file is used to hide your Gmail credentials from the public eye--it's
 EMAIL=myemail@gmail.com
 PASSWORD=baconisyummy55
 ```
-
-
 
 _Quick Note: wondering where I got that spicy placeholder text? Check out [Bacon Ipsum](https://baconipsum.com/?paras=5&type=all-meat&start-with-lorem=1)._
 
