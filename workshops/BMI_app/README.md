@@ -9,7 +9,7 @@ Hello friends, today we will be using MIT APP INVENTOR, to create our BMI applic
 Body mass index (BMI) application an calculator that  measure the body fat (or weight category) based on height and weight of the person. It uses a very simple formula :
 
 
-_(Your weight / your height )*2_`will be the formula`
+`_(Your weight / your height )^2`_`will be the formula`
 
 
 # Step 1
@@ -25,13 +25,13 @@ just click on the the phone size button and change the device size.
 
 Now let start,We will mostly use the components under user interfaces _Palette_. 
 `photo for the user interface`
-Now drag and drop ||Label|| component from the user interface and place it inside the Phone/ _Viewer_ slide.`photo how it should look` 
+Now drag and drop |Label| component from the user interface and place it inside the Phone/ _Viewer_ slide.`photo how it should look` 
 
-Then drag and drop ||TextBox|| component and place it under ||Label|| component on the phone.
+Then drag and drop |TextBox| component and place it under ||Label|| component on the phone.
 
-Then drag and drop another ||Label|| component and place it under the ||TextBox|| component in the Phone.
+Then drag and drop another |Label| component and place it under the ||TextBox|| component in the Phone.
 
-Then again drag and drop another ||TextBox|| and place it under the last Label we drop from B).
+Then again drag and drop another |TextBox| and place it under the last Label we drop from B).
 
  Drag and drop component Button and place it under the TextBox from D).
 
