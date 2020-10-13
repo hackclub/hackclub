@@ -11,14 +11,14 @@ author: '@YashKalbande'
 ## Introduction
 
 Turtle graphics is a Python feature like a drawing board, which lets us command a turtle to draw all over it. It is a popular way of introducing programming to kids. Virtual turtles can be programmed to move around the screen. The turtle draws lines as it moves. The "turtle" could look like the turtle animal, an arrow, or be invisible. The user can write turtle programs that draw beautiful shapes and learn to program at the same time. The original Turtle software was developed by Wally Feurzig and Seymour Papert in 1966.<br/>
-![](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
+![Benzen ring with Turtle](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
 
 [link to demo](https://repl.it/@YashKalbande/RainbowBenzene#main.py)
 
 Commonly used turtle methods are :
 | Method        | Parameter           | DESCRIPTION  | Example |
 | ------------- |:-------------:| -----:| --------:|
-| turtle()      | None | Creates and returns a new tutrle object | 
+| turtle()      | None | Creates and returns a new turtle object | 
 | shape()       | shape name | Should be ‘arrow’, ‘classic’, ‘turtle’ or ‘circle’ | shape(turtle)|
 |   turtle.speed()      |    speed – an integer in the range 0..10    | set the speed of turtule|turtle.speed(9)|
 |penup() | None | Picks up the turtle's Pen| 
@@ -51,7 +51,7 @@ forward(100)
 
 Click on Run Button. The output of this program will look like this:
 
-![](https://cloud-36kk4uh0h.vercel.app/square.gif)
+![Square](https://cloud-36kk4uh0h.vercel.app/square.gif)
 
 The instructions in your program tell the "turtle" how to move. The turtle draws a line behind it as it moves. This program draws a square. The steps given to the program are:
 
@@ -180,7 +180,7 @@ forward(100)
 home()
 ```
 
-For more information click [hear](https://docs.python.org/3/library/turtle.html#turtle.forward)
+You can read more about `forward` [on the Python docs](https://docs.python.org/3/library/turtle.html#turtle.forward)
 
 ## Some basic shapes with turtle
 
@@ -195,7 +195,7 @@ pencil.left(120)
 pencil.forward(100)
 turtle.done()
 ```
-![](https://cloud-36kk4uh0h.vercel.app/triangle.gif)
+![Triangle](https://cloud-36kk4uh0h.vercel.app/triangle.gif)
 
 __Star__<br />
 ```python
@@ -209,7 +209,7 @@ for i in range(50):
       
 turtle.done() 
 ```
-![](https://cloud-36kk4uh0h.vercel.app/star.gif)
+![Star](https://cloud-36kk4uh0h.vercel.app/star.gif)
 
 __Hexagon__<br />
 ```python
@@ -226,7 +226,7 @@ for i in range(num_sides):
       
 turtle.done()  
 ```
-![](https://cloud-36kk4uh0h.vercel.app/hexagon.gif)
+![Hexagon](https://cloud-36kk4uh0h.vercel.app/hexagon.gif)
 
 ## Rainbow Benzene 
 So now you have gain basic knowledge of python turtle library. Now lets build the exicting raindow benzene with turtle.
@@ -241,7 +241,7 @@ for x in range(360):
     t.forward(x) 
     t.left(59)
 ```
-![](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
+![Turtle Benzen ring](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
 
 ## Drawing
 
@@ -342,4 +342,4 @@ Here are some examples to give you some more idea:<br />
 Square spiral [Demo and Code](https://repl.it/@YashKalbande/squarespiral#main.py)<br />
 Geometrical Wheel Shape [Demo and Code](https://repl.it/@YashKalbande/geometrical#main.py)<br />
 Colorful Spiral [Demo and Code](https://repl.it/@YashKalbande/spiral#main.py)<br />
-![](https://cloud-36kk4uh0h.vercel.app/spiral.gif)
+![Turtle Spiral](https://cloud-36kk4uh0h.vercel.app/spiral.gif)
