@@ -6,7 +6,7 @@ author: "@Chrisrama"
 
 Hello friends, today we will be using MIT APP INVENTOR, to create our BMI application. It an online platform that help you create android application using blocks to write the code, for this application we are doing, it will be simple that you don’t need any knowledge on how to do it. So you just need to go through each step and your app will be on  running. 
 
-Body mass index (BMI) application an calculator that  measure the body fat (or weight category) based on height and weight of the person. It uses a very simple formula :
+Body mass index (BMI) application an calculator that  measure the body's BMI category  based on height and weight of the person. It uses a very simple formula :
 
 
 `(Your weight / your height )^2 will be the formula`
@@ -14,87 +14,139 @@ Body mass index (BMI) application an calculator that  measure the body fat (or w
 
 # Step 1
 
-Now let build  our app. We will start off by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,right at the top next to the Logo of App inventor![Click](https://cloud-gwkuhl2zb.vercel.app/0screen_recording_2020-10-14_at_14.44.16.mov) 
-click on the button *“CREATE APP!!”.* You will redirected to sign in using google; ![click here](https://cloud-k86tkribn.vercel.app/0screenshot_2020-09-30_at_12.31.43.png) even if it your first time here. Now select you google account you preferred and you will be directed straigt on the workspace.
+Now let build  our app. We will start off by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,then right clik on the button ---Create Apps!---
+ ![click here](https://cloud-k86tkribn.vercel.app/0screenshot_2020-09-30_at_12.31.43.png)
+ 
+ You will redirected to sign in using google;even if it your first time here. Now select you account to sign in then you will be redirected straight on your project and Name it.
+![rename](https://cloud-gwkuhl2zb.vercel.app/2screenshot_2020-10-14_at_14.46.30.png)
+if you were not redirected to _Create New App Invetor project, right on the top_, click the `Start new Project` button. then name your to  *BMI*.`photo`
+NOTE: if you prefer to used another name, you can, but you should not place a space between the words instead use an undercover ( _ ). 
 
-if you were not directed to name you project, right on the top, click the selection _MY PROJECTS_ button. then click on the select _create new Project_ which will ask you to give the name of your project and set name to "BMI".`photo`
-NOTE: if you prefer to used another name, you can, but you should not place a space between the word rather use an undercover ( _ ). 
 
+What you see now an interfaces of how your app will look like on an android phone/tablet. On the _Viewer_ slide it way you will place all your components you need for your app which will come from  _Palette_ slide.![img](https://cloud-jckwy1fjl.vercel.app/0screenshot_2020-09-30_at_14.12.06.png)
 
-What you see now is the user interfaces of how your app will look like on an android phone/tablet. On the _Viewer_ slide it way you will place all your components you need for your app from _Palette_ slide. if you would like to change the device such as to a tablet or a bigger phone ,`photo`
-just click on the the phone size button and change the device size.
+if you would like to change the device such as to a tablet or a bigger phone ,`photo`
+just click on the the `Phone size` in the Viewer  and change the device size you want, i will be using the default sizes.
 
-Now let start,We will mostly use the components under user interfaces _Palette_. 
-`photo for the user interface`
-Now drag and drop |Label| component from the user interface and place it inside the Phone/ _Viewer_ slide.`photo how it should look` 
+Now let start,We will mostly use the components under `user interfaces` _Palette_. 
 
-Then drag and drop |TextBox| component and place it under ||Label|| component on the phone.
+Now drag and drop `A Label` component from the `user interface` and place it inside the Phone/ _Viewer_ slide.`photo how it should look like` 
 
-Then drag and drop another |Label| component and place it under the ||TextBox|| component in the Phone.
+Then drag and drop `I TextBox` component and place it under `Label` component on the phone.
 
-Then again drag and drop another |TextBox| and place it under the last Label we drop from B).
+Then drag and drop another `A Label` component and place it under the `TextBox` component in the Phone.
 
- Drag and drop component Button and place it under the TextBox from D).
+Then again drag and drop another `TextBox` and place it under the last `Label` we drop from.
 
-Now will are going drag and drop component Button on top of the user Interface in the palette and drop it under the TextBox from D).
+Then Drag and drop component `Button` and place it under the `TextBox`.
 
-G)Now we are going to take let drag and drop another Label into the phone, so will are going to do this 4 times until we have 4 Label one under another.
+Then drag and drop another `Label`  and place it under `Button`,
+Then again drag and drop another `Label` and place it under `Label`
+Then again drag and drop another `Label` and place it under `Label`
+and last  drag and drop another `Label` and place it  under `Label`
+`the final picture when unmaned`
 
 #Step 2
+
 Alright we now have all the component we need.
-Now go over the slide name COMPONENTS and here you will find all the components will have place in our phone user interface. So we need to rename all our components.
- ⚠️To Rename our components you must click one component on the components slide and scroll done onto that slide and click on the button Rename next to delete button and give it a name.
+Now go over the slide name COMPONENTS So we can rename all our components, on the name we will use to create the block.
+Note: To Rename our components you must click one component on the components slide and scroll done and click on the button `Rename` next to `Delete``![rename]()` 
+ 
+ 
+ then Rename.
+
 This is how you should rename the component :
-Label1            to     Label_Weight
-TextBox1       to      Value_Weight
-Label2          to      Label_height
-TextBox2      to      Value_Weight
-Button1         to      Button_calculate
-Label3          to      text_BMI
-Label4          to      BMI_value
-Label5          to      text_diagnosis
-Label6          to      Diagnosis_report
+-------------
+Label1     :     to      Label_Weight
+TextBox1   :     to      Value_Weight
+Label2     :     to      Label_height
+TextBox2   :     to      Value_Weight
+Button1    :     to      Button_calculate
+Label3     :     to      text_BMI
+Label4     :     to      BMI_value
+Label5     :     to      text_diagnosis
+Label6     :     to      Diagnosis_report
+------------
+`![picture how it look]()`
 
-Now after this we are going to change the the display name on the screen of the phone to make sense to the user what each components does.
+Now after this we are going to change the Text that should appear on the Phone.
+⚠️ Note to change the name you must click on a Components Name inside the `Components` then go over to the `Properties` Slide and scroll down and click inside the text block that ddispaly the default name on the screen
+`picture of the defaulfname and how it to change it`
+then name chane the text to the name we want.
+
+This is the only textproperty we will change
+-------------------------------
+Label_weight Text  Property   :to      Type Weight 
+Labe_height Text   Property   :to      type weight 
+Button_calulate Text property :to      Calculate BMI
+Text_BMI Text property        :to      BMI value: 
+BMI_value Text property       :to      nothing please ❗️delete the text in there❗️and don’t add any text 
+Text_Diagnosis Text property  :to      Diagnosis:
+Diagnosis_report Text property:to      nothing please delete the text in there and don’t add any text.
+-------------------------------
+`picture of how it will look likebefore it centred`
+Let change the property of our Screen as to how the component be placed, so we are going to centralised everything.
+click on `-Screen` components then click on the Property *AlignHorizontal* and set it to {central:3}
+
+`picture for the centralised `
 
 
-3.
-Now after this we are going to change the the display name(text) that are display onto of each components on the phone. 
-So to change the Text on our screen phone we are going to go over the slide name Properties. 
-To change the text on the components click on the components you need to change the name insides the Components slide and go under Properties and look down for a box name Text and set under the box of text to the Text You we want the user to see. 
-This are the text we are going to change 
-Label_Weight Text  Property to      Type Weight 
-Label_Height Text   Property to      type weight 
-Button_calculate Text property to    Calculate BMI
-Text_BMI Text property to     BMI value: 
-BMI_value Text property to  nothing please delete the text in there ❗️and don’t add any text 
-Text_Diagnosis Text property to      Diagnosis:
- Diagnosis_report Text property to      nothing please delete the text in there and don’t add any text.
+then click on property Backgroundcolor  to set the bakground clour you prefare.
+`pcsanother for background`
+Your final screen of should look something like this:
+`pics of the final`
 
-Let change the property of our screen as how should the component look, you will try to centralise everything on the centre so  it look organised.
-Go over the Components slide and click at the components Screen1 then go back t the Properties slide and set under AlignHorizontaly  property to Center:3 change Backgroundcolor property to the colour you prefer.
-Your final screen of should look like this:
+Now you app should be good looking do some block!!!!
 
-Now you app should be good looking now let go over the coding side for the app to actually work.
+# Step 2
 
-2. Step Town
+
 Now let go to our code to write our code.
-Over the Properties slide we find there is tow button one is DESIGN and Code, now click onto the CODE button , you will be directed to a a new page where we will make our code. Now on this page we find a black space this is where we will drag and drop our block for the code. On the left side we find Block slide where all our block will come from and the blank part it called the Viewer slide. Let start with our code. 
-We are going to use the formula to calculate someone’s size category:
-(Your weight / your height )*2
-Now let create a procedure that does this, 
-we will go onto the the Block slide and check down for the on the purple square that say Procedure and click onto it and you will see a group of block appear from there, now drag and drop the second block that say To Procedure result  on the viewer slide
-. Now that our first part. Let go bak to the formula, we need to call (your weight / by your height * 2), so let take the division sign, go onto the Block and click onto the Maths block and you will see group of block, and one of it you will se a division block as a sign / drag and drop it inside the To procedure result block on the viewer, now it fit perfectly, let take a multiplication sign * , go back on the Blocks slide and click on the Maths Block and drag and drop at the bock that as * sign and drop it inside the second column of the division block ‘  /   ‘ like this :  ⚠️Note I use in this picture this the block with this sign   ^, you MUST NOT  do the same rather use the block with * sign.                         now let take the value from the Value_weight the user will input; go to the Block slide, find and click Value_weight Block, now inside the value_weight block we want to take text from the user so drag and drop the block Value_weight.Text and place it in the first puzzle of the block / (division),now let take as well The Value_height from the user, go back to the Block slide and click on the bock Value_height and scroll done for the block Value_Height.Text  and place it in the second puzzle of the block / (division)  like this:
+Over the Properties slide click on the button `Code` next to `Design`, you will be directed to a a new page where we will make our block. There are two slide here one is the Block where we will get our block from and Viewer where our block will be placed.
+Remember, this formula is used to find the BMI value:
+
+`(Your weight / your height )^2`
+
+ Let then create a procedure that does this, 
+we will go onto the the *Block* slide and click on the BLock `🟪Procedure` and drag and drop the second bock that say `To Procedure result do`  on the viewer slide
+.
+`picture of creating a procedure`
+
+
+Let go bak to the formula, we need to call `(your weight /  your height) ^ 2`, so let take the division sign, clickon the  `🟦Maths` 
+`pctirse`
+and drag and drop the Block with a ` / ` sign into the `TO Procedure result do`
+`picture`
+Go back to the `🟦Math` block and drag and drop the block with sign  the ` ^ `  drop it inside the second puzzle of of the division block ` / `.
+
+`poish`
+
+now let take the value from the Value_weight the user will input; go to the Block slide, find and click Value_weight Block, now inside the value_weight block we want to take text from the user so drag and drop the block Value_weight.Text and place it in the first puzzle of the block / (division),now let take as well The Value_height from the user, go back to the Block slide and click on the bock Value_height and scroll done for the block Value_Height.Text  and place it in the second puzzle of the block / (division)  like this:
 Now we want to multiply it by 2, so go and click on the Block Math and take the first bock that has a 0  in it and place it after the multiplication sign your block , now click inside this block again to gauge the number to 2, your block should then be place in the remaining puzzle that allow the value to be multiply by 2. Now redone with our procedure that would allow us to know someone’s BMI value. 
 Now let have a process that give the message to the user about they BMI Value and categories weight they are in. Now click on the Block Button_calculate  and look fist block When.Button_calculate.Click.do  and place it on the Viewer slide. Now go back on the Block slide and click on the Block BMI_value and drag and drop the block Set.BMI_value.text.to inside the the Button_calculate.  Now we see an error or a red cross on the block well no problem for that, it just informing us that we did not assign any value to that block. Go back on the Block slide and click on the block Procedure drag and drop the block Call.calculate inside the set.BMI_value.Text.to , now the cross line should go away. Let me explain what will happen here, so when the button_calculate is click the BMI_value ’s text will be the Value of the BMI, which was calculated by the Procedure Calculate. 
 Let now categorise someone’s BMI value to the correct categories weight. So first there is a general rule to categorise someone’s weight here it is: 
-_If the BMI value is less than 17 then the person is very underweight
-If the BMI value is between 17 and 18.5 then the person is underWeight
-If the BMI value is between 18.5 and 25 then the person has normal weight 
-If the BMI value is between 25 and 30 then the person is over Weight
-If the BMI value is between 30 and 35 then the person has Obesity 1
-If the BMI value is between 35 and 40 then the person has obesity 2(severe)
-If the BMI value is over 40 then the person has obesity 3 (horbid)_
+
+`_If the BMI value is less than 17 then the person is very underweight`
+
+
+`If the BMI value is between 17 and 18.5 then the person is underWeight`
+
+
+`If the BMI value is between 18.5 and 25 then the person has normal weight` 
+
+
+`If the BMI value is between 25 and 30 then the person is over Weight`
+
+
+`If the BMI value is between 30 and 35 then the person has Obesity 1`
+
+
+`If the BMI value is between 35 and 40 then the person has obesity 2(severe)`
+
+
+`If the BMI value is over 40 then the person has obesity 3 (horbid)_`
+
+
 So that what we are going to do now. Take not that the procedure To.calculate.do has the person’s BMI value. Now we are going to call.calculate it to compare it with these numbers. We will need the following, an the If statement so go back on the Block slide and click on the Control bock and drag and the third block of if statement as we well nee a lot of it and drop it in under the block we made in Button_calculate. Now you see there is like a a parameter small button like parameter inside the if statement, click on this block to expand our number of statement, as you click it an option of button will open up, now dead and drop Else if  statements so now let add 4 Else if statement one after another like this video. Now click on that parameter option again to close this option.
 We now can start making the Block code according to the rule I explain how to categorise the BMI value. 
  Now go inside the Maths block and drag a block with an equal sign = and drop it  with the first If inside the If statement , now click inside the Procedure block drag and drop the Call.calculate block inside the first open puzzle from the = block.click on the = sign and set the sign < . Now let call the block Number , inside the Maths Block drag and drop the block that as a number 0 with inside the second puzzle of the = #. Now click on this number block to edit it and set it value to 17. Let go inside the Diagnosis_report drag and drop the block with set.Diagnosis_report.Text.to inside the then Statement. Now go to Text block and drag the first block that has only the “ “ inside it and place it in the set.diagnosis_report.text.to block. now click inside this block to set the text value. Now inside it write “Very underweight “. Now wrote the first code for the rule to set the categorise the person’s weight. now let go for the first Else if statement . 
