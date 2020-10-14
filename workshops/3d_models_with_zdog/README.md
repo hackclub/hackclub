@@ -141,6 +141,7 @@ Now you can click on run again!
 ![Animated model](https://cloud-djkuut7y4.vercel.app/0screen_recording_2020-10-03_at_7.31.47_pm.gif)
 
 Amazing, huh?
+
 ![Amazing gif](https://cloud-hrs0t8jeh.vercel.app/0tenor.gif)
 
 ### Multiple Shapes
@@ -231,16 +232,22 @@ animation()
 ```
 
 Here's the final result:
+
 ![final result](https://cloud-d9lxnrldx.vercel.app/0screen_recording_2020-10-09_at_12.05.02_pm.gif)
 
+### Coin 3D Model
+
+Here is a coin i made using ZDog in minutes, if you want to check it out; click [here](https://repl.it/@wollygfx/Demo-3-ZDog).
+
+![Coin gif](https://cloud-a2uahifuy.vercel.app/0screen_recording_2020-10-14_at_11.34.04_am.gif)
 
 ### Hack It
 
-Congratulations! You just learned the basics of ZDog, feel free to check the resources below to improve your 3d modeling knowledge...
+Congratulations! You just learned the basics of ZDog, feel free to check the resources below to improve your knowledge...
 
 ![Congrats gif](https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
 
-Make your own 3D Model and showcase it at [Hack Club's slack](hackclub.slack.com), i would love to see what you can create using what you've learned in this workshop. 
+Make your own 3D Model and share it in the [Hack Club Slack](hackclub.slack.com), I would love to see what you can create using what you've learned in this workshop. 
 
 ### Resources
 
