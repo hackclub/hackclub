@@ -2,12 +2,12 @@
 name: Robotic Emails
 description: Build a mass-emailer with easy templating in Python
 author: '@rohan-bansal'
-img: https://cloud-l0p478biq.vercel.app/2020-10-12_3hhqjf1c1p1yfpgd7ykvwkr9vunvgvmw.png
+img: https://cloud-l7sy31aj3.vercel.app/2020-10-13_jrpmhd91qwuhd36zp7czcpnpt6txy09v.png
 ---
 
 # Robotic Emails
 
-![Robot With Emails](https://cloud-48mv5ovk7.vercel.app/email.png)
+![Robot holding stack of emails illustration](https://cloud-l7sy31aj3.vercel.app/2020-10-13_jrpmhd91qwuhd36zp7czcpnpt6txy09v.png)
 
 ## Overview
 
@@ -36,11 +36,11 @@ Head over to [this link](https://myaccount.google.com/u/0/lesssecureapps?hl=en) 
 
 You will also need to complete [this captcha](https://accounts.google.com/b/0/DisplayUnlockCaptcha) to enable access for the next application that uses your credentials (this one).
 
-*Quick Notes*:
+_Quick Notes_:
 
-*If you happen to have 2 Factor Authentication enabled for your account, please follow [this article](https://support.google.com/accounts/answer/185833?hl=en) to generate an app password. When we write the program and input our account password, replace that with the app password you generated.*
+_If you happen to have 2 Factor Authentication enabled for your account, please follow [this article](https://support.google.com/accounts/answer/185833?hl=en) to generate an app password. When we write the program and input our account password, replace that with the app password you generated._
 
-*After working on this project, it is recommended to turn the less secure apps lever back to its off position.*
+_After working on this project, it is recommended to turn the less secure apps lever back to its off position._
 
 ---
 
@@ -114,9 +114,9 @@ address = os.getenv("EMAIL")
 password = os.getenv("PASSWORD")
 ```
 
-For more info about how virtual environments work (and how only you can see this env file) check out [this](https://docs.repl.it/repls/secret-keys) link.
+For more info about how virtual environments work (and how only you can see this env file), [check out repl.it’s docs](https://docs.repl.it/repls/secret-keys).
 
-Lets also initialize a connection to the Gmail SMTP mail server with those credentials.
+Let’s also initialize a connection to the Gmail SMTP mail server with those credentials.
 
 ```python
 mail = smtplib.SMTP('smtp.gmail.com', 587)
@@ -142,17 +142,19 @@ Create a function and initialize a dictionary to hold our emails and names in `k
 def get_contacts(filename):
     contacts_list = {}
 ```
+
 Next, let's open the contacts file. Python has an easy way of doing this using `with open...`. This reads the file and closes it immediately after we are finished! We open it in `r` (reading) mode, to make sure nothing is written to the file on accident, and we also use the [`utf-8`](https://www.wikiwand.com/en/UTF-8) character encoding. Make sure to place the following code inside the `get_contacts()` function with an indent.
 
 ```python
 with open(filename, mode = 'r', encoding = 'utf-8') as f:
 ```
 
-Now we have to actually read the contents in the file.  To do this, we use a pretty straightforward `.read()` method, followed by `.split('\n')`. `\n` is a newline character in Python; by splitting a file by `\n`, we are essentially splitting up all the lines. Remember to place the following inside the `with` statement.
+Now we have to actually read the contents in the file. To do this, we use a pretty straightforward `.read()` method, followed by `.split('\n')`. `\n` is a newline character in Python; by splitting a file by `\n`, we are essentially splitting up all the lines. Remember to place the following inside the `with` statement.
 
 ```python
 contacts = f.read().split('\n')
 ```
+
 We also want to check if the contacts file is empty, and we do that by looking at the beginning of the file and checking if there is a character there. Place the following on the same indent as the previous code.
 
 ```python
@@ -162,6 +164,7 @@ if first == '': # if it's empty, there are no contacts, print error
 	print('Contacts file is empty.')
 	sys.exit() # exit the program
 ```
+
 Last but not least, we want to pair the substitutions with the emails (bobjoe@gmail.com with Bob). To do that, we will add the email and all the substitutions associated with that email to the `contacts_list` dictionary we initialized. The format is `key: [value, another_value, etc.]`. Add the following outside of the `with` statement in the previous code chunk since we no longer need the file.
 
 ```python
@@ -177,13 +180,13 @@ Explanation of the second line:
 
 Here's what the code should look like so far:
 
-![beforereadingmessage](https://mplurren.sirv.com/Images/Screenshot%20from%202020-10-09%2017-18-26.png)
+![Screenshot of Python file so far](https://mplurren.sirv.com/Images/Screenshot%20from%202020-10-09%2017-18-26.png)
 
 ### Reading the Message
 
 Great! You're basically 1/3 of the way there!
 
-![woohoo](https://cloud-62jdtr82i.vercel.app/tenor.gif)
+![Woo-hoo GIF](https://cloud-62jdtr82i.vercel.app/tenor.gif)
 
 Add another function called `read_message` to the `main.py` file at the bottom with a `with open` statement as explained in the previous section:
 
@@ -207,9 +210,10 @@ Next, we need to get the subject of the email! If you look in the `message.txt` 
 ```python
 subject = template_content.splitlines()[0].rstrip()
 ```
-What does `rstrip()` do? It removes whitespace from the string, in case there was any. More info [here](https://www.w3schools.com/python/ref_string_rstrip.asp). 
 
-Last, we need to return two things. 
+What does `rstrip()` do? It removes whitespace from the string, in case there was any. More info [here](https://www.w3schools.com/python/ref_string_rstrip.asp).
+
+Last, we need to return two things.
 
 - the subject
 - the email body
@@ -258,11 +262,11 @@ mail.quit()
 
 Let's go through this line by line!
 
-*Line 1*: We iterate through the emails in the contacts dictionary.
+_Line 1_: We iterate through the emails in the contacts dictionary.
 
-*Line 2*: Here's our first occurrence of `MIMEMultipart()`. This, as explained at the top, manages the content of the email according to a universal internet standard. There's more in-depth info [here](https://www.wikiwand.com/en/MIME).
+_Line 2_: Here's our first occurrence of `MIMEMultipart()`. This, as explained at the top, manages the content of the email according to a universal internet standard. There's more in-depth info [here](https://www.wikiwand.com/en/MIME).
 
-The following is an explanation of *Line 3*:
+The following is an explanation of _Line 3_:
 
 If you noticed in the `contacts.txt` file, the substitution is represented by a `{0}` . If you've done Python string formatting before, you may realize that character sequence allows for replacement with the [`.format()`](https://www.w3schools.com/python/ref_string_format.asp) function!
 
@@ -270,21 +274,21 @@ If you noticed in the `contacts.txt` file, the substitution is represented by a 
 - `tuple` is an [immutable](https://www.wikiwand.com/en/Immutable_object) data type in Python. When we write `*tuple()`, we unpack the list of substitutions as arguments for the `format()` function
 - `template_content.format()` - since template_content is a string, we can use the format function to replace the `{0}` with custom arguments!
 
-*Lines 5-7*: We set the message From, To, and Subject fields.
+_Lines 5-7_: We set the message From, To, and Subject fields.
 
-*Lines 9-11*: This code attaches the body text to the email in MIME format, and sends the email!
+_Lines 9-11_: This code attaches the body text to the email in MIME format, and sends the email!
 
 At this point, go ahead and **run the program**. If you're having problems, go check the final code up at the **top of this page** and make sure you didn't make any errors. Assuming your email and password are correct, and you let your application access your Google account, the program should run successfully! Go check the emails of the contacts you wrote down.
 
 The result should be similar to this:
 
-![result](https://cloud-a1v5o0pxe.vercel.app/code_result.png)
+![Screenshot of terminal output](https://cloud-a1v5o0pxe.vercel.app/code_result.png)
 
 ---
 
 ## Further Hacking
 
-![yay](https://cloud-mlx5oz5hm.vercel.app/tenor.gif)
+![Congratulations GIF](https://cloud-mlx5oz5hm.vercel.app/tenor.gif)
 
 There are many things that can be changed in this program. Go back and see what you can modify to make it your own! Because of the modularity of the project, to add another substitution, it's as simple as adding a `{1}` or a `{2}` in `message.txt` and adding more commas and arguments in `contacts.txt`. Try to think of ways to make the project even better, and please share your creations with me or others in the Hack Club community!
 
