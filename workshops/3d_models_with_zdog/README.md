@@ -19,7 +19,7 @@ Here's a [live demo](https://repl.it/@wollygfx/Hack-Club-Workshop-Demo) of what 
 
 This workshop requires a very basic knowledge of the following languages: HTML & JS. Don’t worry if you get stucked at some point of the workshop, everything is explained the best way for you to understand!
 
-For this workshop we will use [Repl.it](https://repl.it), which is a free [IDE](https://www.veracode.com/security/integrated-development-environment) (integrated development environment) that allows users to write their own programs and code in dozens of different languages. Click [here](https://repl.it/languages/html) to create a coding environment right for this workshop.
+For this workshop we will use [Repl.it](https://repl.it), click [here](https://repl.it/languages/html) to create a coding environment right for this workshop.
 <br>
 
 ![Setup](https://cloud-qbmylslty.vercel.app/0image.png)
@@ -30,11 +30,11 @@ Alright, let’s start!. First we want to create inside of the <body> tag a <can
 ```html
 <canvas class="model"></canvas>
 ```
-Now we have to put the following code inside of the <body> tag, this code allows us to use the zdog library without having to download it. Read more about CDN here.
-```html
+Now we have to put the following code inside of the <body> tag, this code allows us to use the Zdog library without having to download it. Learn about CDN [here](https://en.wikipedia.org/wiki/Content_delivery_network).
+```
 <script src=“https://unpkg.com/zdog@1/dist/zdog.dist.min.js”></script>
 ```
-At the end, the code should look kind of like this:
+At the end, your code should look kind of like this:
 ```html
 <body>
     <canvas class="model"></canvas>
@@ -45,12 +45,8 @@ At the end, the code should look kind of like this:
 *Note: It’s very important to keep this order to make sure everything works perfectly*
 
 ## JS part
-
-Now we will start by making the header for our application. We will define its structure in the index.html file and then we will style it in the style.css file.
-
-Remember HTML is for defining the structure of your website while CSS is for styling it.
-
-![Header Image](img/header.png)
+Now that we have our html file ready to go, we gotta work on our javascript file. 
+![Cool gif](https://cloud-p49mi1lgl.vercel.app/0tumblr_e49d74c805eec46704d22c1da59ecded_cc93a056_500.gif)
 
 ### Setting up the canvas
 
@@ -62,17 +58,19 @@ const ws = new Zdog.Illustration({
   resize: ‘fullscreen’
 });
 ```
-Explanation:
+Let's break this down:
 
-- **Illustration** is the top-level class that handles dealing with the <canvas> element, holding all the shapes in the scene, and displaying those shapes in the element.
-- **element** we use this element to match the render with the canvas tag
-- **resize** is used to modify the size in which the model will be render, in this case, the 3d model will render in the whole screen. If you want to, you can remove this element.
+1. **Illustration** is the top-level class that handles dealing with the <canvas> element, holding all the shapes in the scene, and displaying those shapes in the element.
+2. **element** we use this element to match the render with the canvas tag
+3. **resize** is used to modify the size in which the model will be render, in this case, the 3d model will render in the whole screen. If you want to, you can remove this element.
 
 At this point nothing shows up yet, so let’s create our first 3d model.
 
 ### Creating the model
 
 Now, we’re gonna create a shape, for this workshop I want to make a simple cube, but you can create whatever you want to. Here is a list of [shapes](https://zzz.dog/shapes) you can create with Zdog 
+
+*Note: Every shape has its own properties or elements, you can check them out [here](https://zzz.dog/shapes)*
 
 Let’s add the following code to our js file:
 
@@ -90,25 +88,28 @@ Let’s add the following code to our js file:
     })
 ```
 Explanation:
-- Box is a shape class, you can replace this for the shape you want to use…
-- We made the 3d model (cube) a child to the main variable (ws) using the addTo element. This element must be there, otherwise the 3d model will not render.
-- The width, height and depth elements give the shape a size, you can set this elements to be either a cube or a rectangle
-- The Stroke element gives the model a stroke, I wouldn’t recommend giving to the model a stroke because this can cause bugs, so let’s set this up to “false”
-- leftFace, rightFace, topFace & bottomFace elements give a color to each face of the model, feel free to change the colors.
+1. Box is a shape class, you can replace this for the shape you want to use…
+2. We made the 3d model (cube) a child to the main Zdog Illustration (ws) using the addTo element. This element must be there, otherwise the 3d model will not render.
+3. The width, height and depth elements can either stretch or shrink the shape of your box:
+- Width: Sets the width of the cube
+- Height: Sets the height of the cube
+- Depth: Sets the depth of the cube. If the value is 0, the cube will render as a 2d square; so make sure to give it a value.
+4. The Stroke element gives the 3d model a stroke, it works as an external layer that you can use to give your 3d model a rounded look. Play around with it!
+5. leftFace, rightFace, topFace & bottomFace elements give a color to each face of the 3d model, try using different colors for each face, so that you can appreciate way better the animations you make.
 
 ### Rendering
 
-Now that we have created our model, let’s render it. Use the following line of code to render the model you just created. 
+Now that we have created our 3d model, let’s render it. Use the following line of code to render the cube we just created. 
 
 ```javascript
 ws.updateRenderGraph()
 ```
-This code updates and render your zdog illustration that was declared in the first variable, so make sure to write the correct name in.
+This code updates and render your Zdog illustration that was declared in the first variable, so make sure to write the correct name in.
 
 Now let's click on the **Run** button to see what happens...
 ![Render image](https://cloud-k11ck8g2n.vercel.app/0image.png)
 
-Congrats, you just made your first 3d model… WAIT WHAT??? Yeah, maybe not what you were expecting. Let’s fix this by animating it.
+Congrats, you just made your first 3d model… Yeah, maybe not what you were expecting. Let’s fix this by animating it.
 
 ![woah gif](https://cloud-kr2lyxjbx.vercel.app/0woah.gif)
 
@@ -127,11 +128,13 @@ Add the following code to our JS file:
 ```
 Explanation:
 
-- We just created a function that will make the model rotate, you can name this function to whatever you want.
-- rotate.x and rotate.y set’s the velocity to the rotation of the model.
-- ws.updateRenderGraph() updates and render your zdog illustration that was declared in the first variable, so make sure to write the correct name in.
-- requestAnimationFrame(animatemodel) this is like a loop, basically it makes the model rotates every time by creating frames.
-- animeatemodel() calls the function.
+1. We just created a function that will make the 3d model rotate, you can name this function to whatever you want.
+2. ```rotate.x``` and ```rotate.y``` set’s the velocity to the rotation of the model: 
+- The cube will move up and down depending on the given value (- or +, respectively)
+- The cube will move to the right and to the left depeding on the given value (- or +, respectively)
+3. ```ws.updateRenderGraph()``` updates and render your Zdog illustration that was declared in the first variable, make sure to write the correct name in.
+4. ```requestAnimationFrame(animatemodel)``` this is like a loop, basically it makes the model rotates every time by creating frames.
+5. ```animeatemodel()``` calls the function.
 
 Now you can click on run again!
 
@@ -160,7 +163,12 @@ new Zdog.Box({
   translate: { z: -18 },
 })
 ```
-What this does, is to make a box shape with a width and a height of 100. For the color, I preferred using the “color” property because the whole square will have the same color, in this case red. Also, I used the “stroke” property to round the corners and make it look way better. And finally I used the translate property to move the square -18 away from the 0 in the z coordinate.
+1. As seen before, the ```addTo``` property puts the made shape inside of the main Zdog Illustration.
+2. Used the width and height properties to make a perfect square, i didn't give it a depth because it was not needed.
+3. The whole square will have the same color (red), so we can use the color property to give the whole shape a single color instead of assigning a color to each face.
+4. As said before, the stroke property helps the shape to look a little rounded.
+5. The translate property moves the square -18 within the z-axis. You can interpret this as if you were giving a shape a depth, so the shape is moved backwards.
+
 
 When running these few lines, we will get this:
 ![red square](https://cloud-2q1vsewnu.vercel.app/0image.png)
@@ -177,7 +185,8 @@ new Zdog.Box({
 })
 ```
 
-This block of code generates a new box that is positioned 18 away from 0 in the z coordinate and -20 away from 0 in the x coordinate, basically I moved the box to the left.
+- This time, the shape is moved forward... This creates an space between the red square and this new shape.
+- The shape is moved to the left within the x-axis
 
 ![result 1](https://cloud-kg0xtr3hs.vercel.app/0image.png)
 
@@ -192,7 +201,8 @@ new Zdog.Box({
 })
 ```
 
-This time, we created a new box but way smaller, we moved it to the right using the x coordinate and we moved it a little bit down using the y coordinate.
+- This time, we created a new box but way smaller.
+- We moved it to the right within x-axis and a little bit down within the y-axis.
 
 ![result 2](https://cloud-1nisp19i8.vercel.app/0image.png)
 
@@ -206,7 +216,7 @@ new Zdog.Box({
   translate: { z: 18, x:10},
 })
 ```
-In this last one, all we had to do was to move the box to the right to blend with the box in the right
+In this last one, all we had to do was to move the box to the right within the x-axis, so that it blends with the box in the right.
 ![result 3](https://cloud-m2gpkvlqa.vercel.app/0image.png)
 
 Now, i will just animate it 
@@ -223,10 +233,17 @@ animation()
 Here's the final result:
 ![final result](https://cloud-d9lxnrldx.vercel.app/0screen_recording_2020-10-09_at_12.05.02_pm.gif)
 
+
 ### Hack It
-Make something cool and showcase it at [#scrapbook](https://hackclub.slack.com/archives/C01504DCLVD), i would love to see what you can create using what you've learned in this workshop. 
+
+Congratulations! You just learned the basics of ZDog, feel free to check the resources below to improve your 3d modeling knowledge...
+
+![Congrats gif](https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
+
+Make your own 3D Model and showcase it at [Hack Club's slack](hackclub.slack.com), i would love to see what you can create using what you've learned in this workshop. 
 
 ### Resources
+
 - [ZDog website](https://zzz.dog)
 - [Made with ZDog](https://codepen.io/collection/DzdGMe/?cursor=ZD0xJm89MSZwPTEmdj0z)
 - [Text plugin for ZDog](https://jaames.github.io/zfont/)
