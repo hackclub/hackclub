@@ -1,0 +1,13 @@
+Sponsorship Opportunity
+
+Dear {0},
+
+  As a true supporter of {1}, I was pleasantly surprised to see that {2}. 
+I wanted to to reach out because I truly believe in the cause, and am organizing a {3} to show my support! 
+
+I wanted to ask if the company would like to sponsor my {3}. You will impacting {4} all around the world, and {0} would receive benefits such as {5}.
+
+I would love to hear back from {0}, am I am looking forward to set up a phone call to figure out the details!
+
+Sincerely,
+{6}
