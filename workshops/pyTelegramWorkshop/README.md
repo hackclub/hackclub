@@ -12,11 +12,11 @@ img: 'https://deltacloud.vercel.app/assets/dta25.png'
 Once done, you will be able to use Telegram BOTs to communicate with you, and your services. It has unlimited opurtunities!
 This is the end product of a small project that this workshop houses:
 
-![screenshot-of-workshop-end-project](https://deltacloud.vercel.app/assets/Picture23.png)
+![screenshot-of-workshop-end-project](https://cloud-fmg4yoxia.vercel.app/0dta29-master.png)
 
 
 Here's a sample of what I personally use this for. My store manager, called DBFA uses a Telegram BOT to inform the store owner about operations, schedules, payments and much more. It also enables two-factor-authentication (2FA) via Telegram.
-![screenshot-of-my-personal-implementation](https://deltacloud.vercel.app/assets/dta30-master.jpg.png)
+![screenshot-of-my-personal-implementation](https://cloud-qnh4qjxv1.vercel.app/0dta30-master.jpg.png)
 
 
 ## Hmm... Telegram.. Python?
@@ -98,7 +98,7 @@ For the inquisitive ones out there, there will be some references and resources 
 
 ### Creating a bot in Telegram!
 
-![bots-everywhere-gif-frame](https://deltacloud.vercel.app/assets/Picture1.png)
+![bots-everywhere-gif-frame](https://cloud-1qs71fkjs.vercel.app/0picture1.png)
 
 Telegram has these ‘bots’, or simple chats which can be handled autonomously. They’re basically a way for developers and service providers to automate interactions.
 
@@ -320,11 +320,11 @@ You can try this on a repl.it if you feel too lazy to code: https://repl.it/@del
 
 #### repl.it shell
 
-![repl.it-screenshot](https://deltacloud.vercel.app/assets/Picture22.png)
+![repl.it-screenshot](https://cloud-osjsv4010.vercel.app/0picture22.png)
 
 #### Telegram chat window
 
-![telegram-screenshot](https://deltacloud.vercel.app/assets/Picture23.png)
+![telegram-screenshot](https://cloud-q5u2tr3ki.vercel.app/0picture23.png)
 
 
 
@@ -340,7 +340,7 @@ I really hope this workshop was fun. If you have any doubts, contact me on HackC
 
 ## TIME TO CALL HIM 
 
-![Mahdi-electroBoom-image-the-rectifier](https://deltacloud.vercel.app/assets/Picture24.jpg)
+![Mahdi-electroBoom-image-the-rectifier](https://cloud-cwg1brm1x.vercel.app/0picture24.jpg)
 
 While our code works marvellously, we still have a major problem to fix before we move on to making this a part of something big.
 
