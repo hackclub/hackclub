@@ -92,6 +92,7 @@ Yeah, all using Telegram and Python! What I did is nothing compared to what you 
 
 For the inquisitive ones out there, there will be some references and resources attached at the end so you can tinker a bit more.
 
+(P.S. A PDF of this workshop is available here: https://cloud-4fkdmolyr.vercel.app/0telegram-python-workshop-docs-final7.pdf)
 
 
 ## BOTS EVERYWHERE
