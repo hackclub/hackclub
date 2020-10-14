@@ -2,7 +2,7 @@
 name: 'Connecting Python and Telegram'
 description: 'Connect Telegram with Python to make some awesome stuff'
 author: '@deltaonealpha'
-img: 'https://deltacloud.vercel.app/assets/dta25.png'
+img: 'https://cloud-cwg1brm1x.vercel.app/'
 ---
 
 # Connecting Python and Telegram
