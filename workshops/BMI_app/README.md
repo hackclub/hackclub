@@ -9,12 +9,13 @@ Hello friends, today we will be using MIT APP INVENTOR, to create our BMI applic
 Body mass index (BMI) application an calculator that  measure the body fat (or weight category) based on height and weight of the person. It uses a very simple formula :
 
 
-`_(Your weight / your height )^2`_`will be the formula`
+`(Your weight / your height )^2 will be the formula`
 
 
 # Step 1
 
-Now let build  our app. We will start off by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,right at the top next to the Logo of App inventor, click on the label *“CREATE APP!!”.* You will redirected to sign in using google; ![click here](https://cloud-k86tkribn.vercel.app/0screenshot_2020-09-30_at_12.31.43.png) even if it your first time here. Now select you google account you preferred and you will be directed straigt on the workspace.
+Now let build  our app. We will start off by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,right at the top next to the Logo of App inventor![Click](https://cloud-gwkuhl2zb.vercel.app/0screen_recording_2020-10-14_at_14.44.16.mov) 
+click on the button *“CREATE APP!!”.* You will redirected to sign in using google; ![click here](https://cloud-k86tkribn.vercel.app/0screenshot_2020-09-30_at_12.31.43.png) even if it your first time here. Now select you google account you preferred and you will be directed straigt on the workspace.
 
 if you were not directed to name you project, right on the top, click the selection _MY PROJECTS_ button. then click on the select _create new Project_ which will ask you to give the name of your project and set name to "BMI".`photo`
 NOTE: if you prefer to used another name, you can, but you should not place a space between the word rather use an undercover ( _ ). 
