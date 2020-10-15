@@ -9,33 +9,16 @@ author: '@YashKalbande'
 
 
 ## Introduction
+Welcome! my friends.  My name is Yash, and I am a technology enthusiast. Have you ever heard that you can create exciting visuals with help of Python?  My goal is to help you understand the python turtle library. With the help of the turtle library, we can create stunning visuals. First, I'm going to present to you the basics of the python turtle library. Then I'll share with you shapes like Triangle, Star, Hexagon. Finally, I'll ask you to create some more visual using ideas given in the end.
 
-Turtle graphics is a Python feature like a drawing board, which lets us command a turtle to draw all over it. It is a popular way of introducing programming to kids. Virtual turtles can be programmed to move around the screen. The turtle draws lines as it moves. The "turtle" could look like the turtle animal, an arrow, or be invisible. The user can write turtle programs that draw beautiful shapes and learn to program at the same time. The original Turtle software was developed by Wally Feurzig and Seymour Papert in 1966.<br/>
 ![Benzen ring with Turtle](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
 
-[link to demo](https://repl.it/@YashKalbande/RainbowBenzene#main.py)
-
-Commonly used turtle methods are :
-| Method        | Parameter           | DESCRIPTION  | Example |
-| ------------- |:-------------:| -----:| --------:|
-| turtle()      | None | Creates and returns a new turtle object | 
-| shape()       | shape name | Should be ‘arrow’, ‘classic’, ‘turtle’ or ‘circle’ | shape(turtle)|
-|   turtle.speed()      |    speed – an integer in the range 0..10    | set the speed of turtule|turtle.speed(9)|
-|penup() | None | Picks up the turtle's Pen| 
-| right()      | value of angle is degree      |   Turns the turtle clockwise | turtle.right(45) |
-| left() | value of angle is degree       |    Turns the turtle counter clockwise | turtle.left(45) |
-|  forward()       |  distance – a number (integer or float)       | Moves the turtle forward by the specified amount | turtle.forward(25) |
-|   backward()      |  distance – a number (integer or float)       | Move the turtle backward by distance | turtle.backward(30) |
-| turtle.circle()        | radius, extent=None, steps=None        |radius – a number ,extent – a number (or None),steps – an integer (or None) | turtle.circle(50)|
-|     color()    |    Color name     | Changes the color of the turtle’s pen | color("red")
-|    fillcolor()     |   Color name      | Changes the color of the turtle will use to fill a polygon| fillcolor("yellow")|
-|     goto()    |   x, y      |Move the turtle to position x,y | goto(2,5)|
 
 ## Quickstart
 
 TODO - Explain how to install and setup Python 3 on [repl.it](https://repl.it/languages/python3) for turtle graphics.
 
-Then enter the following code in newly created main.py file.:
+Then enter the following code in the newly created main.py file :
 
 ```python
 from turtle import *
@@ -67,6 +50,25 @@ With these seven steps, the turtle draws a square. The `from turtle import *` is
 
 There are many instructions like left() and forward(). These instructions are called functions. This tutorial explains many of the functions in the turtle module. When you learn more about these functions, you will be able to draw many different shapes and beautiful pictures!
 
+There are many instructions like left() and forward(). These instructions are called functions. Commonly used turtle methods are :
+
+| Method        | Parameter           | DESCRIPTION  | Example |
+| ------------- |:-------------:| -----:| --------:|
+| turtle()      | None | Creates and returns a new turtle object | 
+| shape()       | shape name | Should be ‘arrow’, ‘classic’, ‘turtle’ or ‘circle’ | shape(turtle)|
+|   turtle.speed()      |    speed – an integer in the range 0..10    | set the speed of turtule|turtle.speed(9)|
+|penup() | None | Picks up the turtle's Pen| 
+| right()      | value of angle is degree      |   Turns the turtle clockwise | turtle.right(45) |
+| left() | value of angle is degree       |    Turns the turtle counter clockwise | turtle.left(45) |
+|  forward()       |  distance – a number (integer or float)       | Moves the turtle forward by the specified amount | turtle.forward(25) |
+|   backward()      |  distance – a number (integer or float)       | Move the turtle backward by distance | turtle.backward(30) |
+| turtle.circle()        | radius, extent=None, steps=None        |radius – a number ,extent – a number (or None),steps – an integer (or None) | turtle.circle(50)|
+|     color()    |    Color name     | Changes the color of the turtle’s pen | color("red")
+|    fillcolor()     |   Color name      | Changes the color of the turtle will use to fill a polygon| fillcolor("yellow")|
+|     goto()    |   x, y      |Move the turtle to position x,y | goto(2,5)|
+
+
+
 ## Turtle Motion
 
 By calling these functions, the turtle can be made to move around the screen. Imagine the turtle holding a pen down on the ground and drawing a line as it moves around.
@@ -75,11 +77,11 @@ The turtle's position is two numbers: the X coordinate and Y coordinate.
 
 ### forward(*distance*)
 
-The forward() function moves the turtle *distance* a number of steps in the current direction. If the pen is down (see pendown() and penup()) a line will be drawn as the turtle moves forward. If *distance* is a negative number, the turtle will move backward.
+The forward() function moves the turtle *distance* several steps in the current direction. If the pen is down (see pendown() and penup()) a line will be drawn as the turtle moves forward. If *distance* is a negative number, the turtle will move backward.
 
 ### backward(*distance*)
 
-The backward() function moves the turtle *distance* number of steps in **opposite direction** the current direction. If the pen is down (see pendown() and penup()) a line will be drawn as the turtle moves backward. If *distance* is a negative number, the turtle will move forward.
+The backward() function moves the turtle *distance* several steps in **opposite direction** the current direction. If the pen is down (see pendown() and penup()) a line will be drawn as the turtle moves backward. If *distance* is a negative number, the turtle will move forward.
 
 ### right(*angle*)
 
@@ -113,7 +115,7 @@ forward(100)
 
 The goto() function will immediately move the turtle to the given *x* and *y* coordinates. If the pen is down (see pendown() and penup()) a line will be drawn from the previous coordinates to the new coordinates.
 
-This example moves the to several x and y coordinates while drawing a line behind it:
+This example moves to several x and y coordinates while drawing a line behind it:
 
 ```python
 from turtle import *
@@ -148,7 +150,7 @@ for angle in range(0, 360, 15):
 
 ### undo()
 
-The undo() function will undo the turtle's last action. It will be as though the last action was never made. For example, if the last action was a call to the forward(100) function, calling undo will move the turtle backwards 100 steps and erase any line that was drawn. The undo() function can be called many times to erase more and more of the turtle
+The undo() function will undo the turtle's last action. It will be as though the last action was never made. For example, if the last action was a call to the forward(100) function, calling undo will move the turtle backward 100 steps and erase any line that was drawn. The undo() function can be called many times to erase more and more of the turtle
 
 ```python
 from turtle import *
@@ -169,7 +171,7 @@ for i in range(30):
 
 ### home()
 
-The home() function will move the turtle to it's original position at the coordinates (0, 0) and set it's direction to 0 degrees. Calling home() is the same as calling goto(0, 0) and setheading(0). If the pen is down (see pendown() and penup()) a line will be drawn as the turtle moves back home.
+The home() function will move the turtle to its original position at the coordinates (0, 0) and set the direction to 0 degrees. Calling home() is the same as calling goto(0, 0) and setheading(0). If the pen is down (see pendown() and penup()) a line will be drawn as the turtle moves back home.
 
 ```python
 from turtle import *
@@ -229,7 +231,7 @@ turtle.done()
 ![Hexagon](https://cloud-36kk4uh0h.vercel.app/hexagon.gif)
 
 ## Rainbow Benzene 
-So now you have gain basic knowledge of python turtle library. Now lets build the exicting raindow benzene with turtle.
+So now you have gained basic knowledge of python turtle library. Now let's build the exciting rainbow benzene with a turtle.
 ```python
 import turtle 
 colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow'] 
@@ -242,6 +244,8 @@ for x in range(360):
     t.left(59)
 ```
 ![Turtle Benzen ring](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
+
+
 
 ## Drawing
 
@@ -288,17 +292,17 @@ The clear() function will erase all the line drawings on the screen. This functi
 
 ### reset()
 
-The reset()) function will erase all the line drawings on the screen and return the turtle to the (0, 0) coordinate and facing 0 degrees. This function does the same thing as calling the clear() and home() function.
+The reset() function will erase all the line drawings on the screen and return the turtle to the (0, 0) coordinate and facing 0 degrees. This function does the same thing as calling the clear() and home() function.
 
 ## Color
 
 Red, green, and blue are the three primary colors of light.
 
-The float value 0.0 represents no brightness of that color. The float value 1.0 represents full brightness of that color. So the color red is represented by the RGB color tuple (1.0, 0, 0). The color purple is half-bright red and half-bright blue, so it is represented by the RGB color tuple (0.5, 0.0, 0.5). Full brightness of red and blue makes pink: (1.0, 0.0, 1.0).
+The float value 0.0 represents no brightness of that color. The float value 1.0 represents the full brightness of that color. So the color red is represented by the RGB color tuple (1.0, 0, 0). The color purple is half-bright red and half-bright blue, so it is represented by the RGB color tuple (0.5, 0.0, 0.5). Full brightness of red and blue makes pink: (1.0, 0.0, 1.0).
 
 ## Filling in Shapes
 
-The turtle can draw the outline of a shape and then fill it in with color using the fill functions. The filling process starts when the begin_color() function is called. The turtle can move around as normal. When the end_fill() function is called, the shape the turtle was drawing will be filled with the fill color. The fill color is separate from the pen color.
+The turtle can outline shape and then fill it in with color using the fill functions. The filling process starts when the begin_color() function is called. The turtle can move around as normal. When the end_fill() function is called, the shape the turtle was drawing will be filled with the fill color. The fill color is separate from the pen color.
 
 ```python
 from turtle import *
@@ -322,7 +326,7 @@ end_fill()
 
 ### fillcolor(), fillcolor(*color*), fillcolor((*red*, *green*, *blue*)), fillcolor(*red*, *green*, *blue*)
 
-The fillcolor() function sets the color of the filled in shape when end_fill() is called. The fillcolor() function can be passed a string of the color, such as 'red' or 'black'. Or, the fillcolor() function can be passed an "RGB color tuple" (see the [Color](#color) section).
+The fillcolor() function sets the color of the filled-in shape when end_fill() is called. The fillcolor() function can be passed a string of the color, such as 'red' or 'black'. Or, the fillcolor() function can be passed an "RGB color tuple" (see the [Color](#color) section).
 
 ### begin_fill()
 
@@ -335,11 +339,14 @@ The end_fill() function will stop recording the moves for the filled-in shape an
 To get more information about color [visit hear](https://docs.python.org/3/library/turtle.html#turtle.color)
 
 ## Hacking
-There are endless ways to make this turtle completely your own! Go back through your code and look for anything that can be played with. Try changing the default values of your forward, angle, color, size, etc.<br />
+- There are endless ways to make this turtle completely your own! Go back through your code and look for anything that can be played with. Try changing the default values of your forward, angle, color, size, etc.
 
-Here are some examples to give you some more idea:<br />
+- Here are some examples to give you some more idea:
 
-Square spiral [Demo and Code](https://repl.it/@YashKalbande/squarespiral#main.py)<br />
-Geometrical Wheel Shape [Demo and Code](https://repl.it/@YashKalbande/geometrical#main.py)<br />
-Colorful Spiral [Demo and Code](https://repl.it/@YashKalbande/spiral#main.py)<br />
-![Turtle Spiral](https://cloud-36kk4uh0h.vercel.app/spiral.gif)
+- Square spiral [Demo and Code](https://repl.it/@YashKalbande/squarespiral#main.py)
+
+- Geometrical Wheel Shape [Demo and Code](https://repl.it/@YashKalbande/geometrical#main.py)
+
+- Colorful Spiral [Demo and Code](https://repl.it/@YashKalbande/spiral#main.py)
+
+- ![Turtle Spiral](https://cloud-36kk4uh0h.vercel.app/spiral.gif)
