@@ -291,11 +291,11 @@ Here is your final HTML code:
 
 The javaScript is in the `script.js` file present in your repl just below the `index.html` file. JavaScript handles the logic of your webpage.
 
-Here you only have to write a small amount of JavaScript code because Firebase has some pre-defined functions for Authentication. Checkout [Firebase Documentation on web authentication](https://firebase.google.com/docs/auth/web/start) for more information.
+Here you only have to write a small amount of JavaScript code because Firebase has some pre-defined methods for authentication. Checkout [Firebase Documentation on web authentication](https://firebase.google.com/docs/auth/web/start) for more information.
 
 So you have to get the currently signed-in user you created on Firebase.
 
-In the `script.js` file you need to call a function to [Get the currently signed-in user](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user), it is the function which specifies whether the user is signed-in or not.
+In the `script.js` file you need to call a method to [Get the currently signed-in user](https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed-in_user), it is the method which specifies whether the user is signed-in or not.
 
 ```javascript
 firebase.auth().onAuthStateChanged(function(user) {
@@ -362,9 +362,9 @@ Now, how it looks like:
 Now you need to work on both the functions you assigned to HTML buttons (`login()` and `logout()`).
 
 ##### Function login()
-A user can sign-in only if their record is stored in Firebase. So, firebase has a property called [`Sign-in existing user`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) as existing users can sign-in through input fields.
+A user can sign-in only if their record is stored in Firebase. Firebase has a method called [`Sign-in existing user`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) that allows existing users to sign in using their email address and password.
 
-Now you need to create two variables in `login()` named `userEmail` and `userPass` which get email and password values from the input fields with IDs `email_field` and `password_field`.
+Now you need to create two variables in `login()` named `userEmail` and `userPass`. They get email and password values from the input fields with IDs `email_field` and `password_field`.
 
 ```javascript
 function login(){
@@ -373,7 +373,7 @@ function login(){
   var userPass = document.getElementById("password_field").value;
 }
 ```
-So in the function above, you need to add the [`Sign-in existing user`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) property.
+So you need to add the method [`Sign-in existing user`](https://firebase.google.com/docs/auth/web/start#sign_in_existing_users) inside the `login()`. 
 
 ```javascript
 firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
@@ -385,11 +385,11 @@ firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error
 ```
 In the code above replace `email` with `userEmail` and `password` with `userPass`.
 
-You also need to display an error message when an error occurs like _wrong email or password_, so add the below code in the above function.
+You also need to display an error message when an error occurs like _wrong email or password_, so add the code below inside `Sign-in existing user` method.
 ```javascript
 window.alert("Error : " + errorMessage);
 ```
-So, your code should look like this:
+So your code should look like this:
 ```javascript
 function login(){
 
@@ -410,7 +410,7 @@ function login(){
 ```
 ##### Function logout()
 
-For logout add this code below the login().
+For logout add the following code below the login function:
 
 ```javascript
 function logout(){
@@ -461,18 +461,16 @@ function logout(){
 }
 
 ```
-It looks like this 👇
+Your website should look like this 👇
 
 ![live](https://cloud-meubu1zac.vercel.app/0login_2.1.gif)
 
-Try logging in with the email and password you stored in Firebase. If it worked, you should be all set!
+Try logging in with the email and password you stored in Firebase. If it worked you should be all set!
 
-As you can see, the main goal of this workshop is completed here, but to make your webpage look cool, you need to add some custom CSS.
+As you can see, the main goal of this workshop is completed here. To make your webpage look cool you need to add some custom CSS.
 
 #### CSS
 The `style.css` file present in your repl just below `script.js` gives styles and designs to your webpage.
-
-As you created two divisions in the HTML file, so you will add designs to it, and writing CSS is simple.
 
 You just need to:
 - Mention element/ class name/ ID.
@@ -493,15 +491,15 @@ body {
 }
 ```
 
-This way you can add styles to divisions, ids, the whole webpage. Inspect my [CSS file](https://repl.it/@tanishqsoni/Loginauth#style.css).
+This way you can add styles to divisions, ids, and the whole webpage. Inspect my [CSS file](https://repl.it/@tanishqsoni/Loginauth#style.css).
 
 You can select different colors from a [color picker](https://www.google.com/search?q=color+picker) to give your webpage a cool colorful look.
 
-If you need help regarding the various keywords used in CSS, you can go through the [CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
+If you need help regarding the various keywords used in CSS you can go through the [CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
 
-Yayyy 🎊! You are done with the coding part! 
+Yayyy 🎊! You are done!!
 
-Take a look at [Final Code](https://repl.it/@tanishqsoni/Loginauth).
+Take a look at the [final code](https://repl.it/@tanishqsoni/Loginauth).
 
 ## Hooray!🎉 
 You finished the Web Login Authentication Workshop by completing all tasks:
@@ -510,12 +508,12 @@ You finished the Web Login Authentication Workshop by completing all tasks:
 - [x] Designing a webpage.
 
 ## ⚡ What's Next?
-Now, how you can expand it? Try adding some other features to it with the help of [Firebase Guide](https://firebase.google.com/docs/auth/web/start?authuser=0)
+Now, how you can expand it? Try adding some other features to it with the help of the [Firebase Guide](https://firebase.google.com/docs/auth/web/start?authuser=0)
 
 Here are some examples 👇
-- `create account` feature, so the user can create a new account.
+- `create account` feature so a user can create a new account.
 - `Email verification` feature.
-- `Anonymous Login` feature, so the user can visit the page without login.
+- `Anonymous Login` feature so a user can visit the page without login.
 
 ### ⭐ Live examples with code
 
