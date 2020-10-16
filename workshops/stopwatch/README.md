@@ -51,11 +51,11 @@ We need to add some more HTML lines to build our stopwatch. We will write all ou
 <div class="main"></div>
 ```
 
-Inside the `main` div, we will add a `<p>` tag with a class of `time` and seperate `<span>` tags for minutes, seconds and miliseconds respectively. Confusing? You'll get it in a minute.
+Inside the `main` div, we will add a `<p>` tag with a class of `time` and seperate `<span>` tags for minutes, seconds and milliseconds respectively. Confusing? You'll get it in a minute.
 
 ```html
 <p class="time">
-  <span class="minutes">00</span>:<span class="seconds">00</span>:<span class="miliseconds">00</span>
+  <span class="minutes">00</span>:<span class="seconds">00</span>:<span class="milliseconds">00</span>
 </p>
 ```
 
@@ -82,7 +82,7 @@ Next, we will add some buttons for the functioning of our stopwatch. Create a `<
     <h1>STOPWATCH</h1>
     <div class="main">
       <p class="time">
-        <span class="minutes">00</span>:<span class="seconds">00</span>:<span class="miliseconds">00</span>
+        <span class="minutes">00</span>:<span class="seconds">00</span>:<span class="milliseconds">00</span>
       </p>
       <div>
         <button class="start">START</button>
@@ -109,15 +109,15 @@ As the `style.css` file was prewritten for you, we will now directly move on to 
 
 Navigate to your `script.js` file and let's start writing JavaScript!
 
-First we will link the miliseconds, seconds and minutes in our HTML with some JavaScript variables.
+First we will link the milliseconds, seconds and minutes in our HTML with some JavaScript variables.
 
 ```js
-const milisec = document.querySelector('.miliseconds')
+const milisec = document.querySelector('.milliseconds')
 const sec = document.querySelector('.seconds')
 const min = document.querySelector('.minutes')
 ```
 
-Explanation: We define 3 variables `milisec`, `sec` and `min` using `const` and set their value to the first element that matches a specified CSS class(s) in the document. In our case, those CSS selectors are `.miliseconds` , `.seconds` , `.minutes` respectively.
+Explanation: We define 3 variables `milisec`, `sec` and `min` using `const` and set their value to the first element that matches a specified CSS class(s) in the document. In our case, those CSS selectors are `.milliseconds` , `.seconds` , `.minutes` respectively.
 
 Now, if you are wondering what is a `const` and what is a `querySelector()`, let me clear all your doubts!
 
@@ -145,10 +145,10 @@ let INTERVAL
 
 Explanation: We'll increment the `miliNum`, `secNum` and `minNum` variables and display it on the screen when the user starts the stopwatch. The `INTERVAL` variable will be used to clear or set the intervals.
 
-Next up, we'll define few functions each for incrementing miliseconds, seconds and minutes and we will add them to our HTML.
+Next up, we'll define few functions each for incrementing milliseconds, seconds and minutes and we will add them to our HTML.
 
 ```js
-function miliseconds() {
+function milliseconds() {
   miliNum++
   milisec.innerHTML = miliNum
 }
@@ -170,16 +170,16 @@ Now these functions need to be called when someone presses the START button. For
 function start() {
   clearInterval(INTERVAL)
   INTERVAL = setInterval(() => {
-    miliseconds()
+    milliseconds()
   }, 10)
 }
 ```
 
 Explanation: In the `start()` function, we can use the `setInterval` and `clearInterval` properties for the functioning of our stopwatch. But first of all, we'll clear all the intervals, if any, before setting a new interval. We defined the `INTERVAL` variable for this purpose.
 
-After we clear all the previous intervals, we set a new interval of 0.010 seconds and call the `miliseconds()` function after every 0.010 seconds.
+After we clear all the previous intervals, we set a new interval of 0.010 seconds and call the `milliseconds()` function after every 0.010 seconds.
 
-**NOTE:** 0.010 seconds = 1 milisecond
+**NOTE:** 0.010 seconds = 1 millisecond
 
 Now, the `setInterval` function's syntax looks a bit weird, right? Let's break it down.
 
@@ -187,14 +187,14 @@ Now, the `setInterval` function's syntax looks a bit weird, right? Let's break i
 setInterval(func, intervalTime)
 ```
 
-The `setInterval` takes in a function and an interval time in seconds. It will call the function repeatedly after `intervalTime` seconds. So using that syntax, we pass it an arrow function (=>) which calls the `miliseconds()` function after every 1 miliseconds.
+The `setInterval` takes in a function and an interval time in seconds. It will call the function repeatedly after `intervalTime` seconds. So using that syntax, we pass it an arrow function (=>) which calls the `milliseconds()` function after every 1 milliseconds.
 
 Learn more about [`setInterval()`](https://www.w3schools.com/js/js_timing.asp).
 
 Your code so far:
 
 ```js
-const milisec = document.querySelector('.miliseconds')
+const milisec = document.querySelector('.milliseconds')
 const sec = document.querySelector('.seconds')
 const min = document.querySelector('.minutes')
 
@@ -203,7 +203,7 @@ let secNum = 0
 let minNum = 0
 let INTERVAL
 
-function miliseconds() {
+function milliseconds() {
   miliNum++
   milisec.innerHTML = miliNum
 }
@@ -221,7 +221,7 @@ function minutes() {
 function start() {
   clearInterval(INTERVAL)
   INTERVAL = setInterval(() => {
-    miliseconds()
+    milliseconds()
   }, 10)
 }
 ```
@@ -247,16 +247,16 @@ Let's go back to our JavaScript file and test it out!
 Hmm... It works, but not as expected. There are 2 flaws.
 
 1. If you notice closely, it doesn't show as '01' '02' etc. but it shows as '1' '2' etc. Now this looks really bad.
-2. Miliseconds keep on increasing and even above 100 but the seconds never increase.
+2. Milliseconds keep on increasing and even above 100 but the seconds never increase.
 
 Let's fix them up.
 
-Inside our `miliseconds()` function, we'll write some `if-else` statements. So, if miliseconds are less than 10, we'll appends a 0 to it and if the miliseconds are equal to 99, we'll set the miliseconds to 0 again and we'll call the `seconds()` function.
+Inside our `milliseconds()` function, we'll write some `if-else` statements. So, if milliseconds are less than 10, we'll appends a 0 to it and if the milliseconds are equal to 99, we'll set the milliseconds to 0 again and we'll call the `seconds()` function.
 
-Your `miliseconds()` function will look like this:
+Your `milliseconds()` function will look like this:
 
 ```js
-function miliseconds() {
+function milliseconds() {
   miliNum++
   if (miliNum < 10) {
     milisec.innerHTML = '0' + miliNum
@@ -283,7 +283,7 @@ Similarly, we'll do this for the seconds and minutes too!
 <summary>Here's the answer:</summary>
 
 ```js
-function miliseconds() {
+function milliseconds() {
   miliNum++
   if (miliNum < 10) {
     milisec.innerHTML = '0' + miliNum
@@ -371,7 +371,7 @@ After we are done implementing these 2 functions, I'm happy to say that you have
 <summary>Here's the final JavaScript code:</summary>
 
 ```js
-const milisec = document.querySelector('.miliseconds')
+const milisec = document.querySelector('.milliseconds')
 const sec = document.querySelector('.seconds')
 const min = document.querySelector('.minutes')
 
@@ -380,7 +380,7 @@ let secNum = 0
 let minNum = 0
 let INTERVAL
 
-function miliseconds() {
+function milliseconds() {
   miliNum++
   if (miliNum < 10) {
     milisec.innerHTML = '0' + miliNum
@@ -420,7 +420,7 @@ function minutes() {
 function start() {
   clearInterval(INTERVAL)
   INTERVAL = setInterval(() => {
-    miliseconds()
+    milliseconds()
   }, 10)
 }
 
@@ -453,13 +453,13 @@ Here are some things which you can do:
 
 1. Try adding hours in our stopwatch.
 2. Try to change the START button to display RESUME whenever someone clicks STOP.
-3. Make the miliseconds as 3 digits instead of 2!
+3. Make the milliseconds as 3 digits instead of 2!
 4. Try adding laps in our stopwatch which will get displayed when someone clicks STOP.
 
 Here are some more examples for you:
 
 1. [Stopwatch with hours](https://repl.it/@FaisalSayed1/Stopwatch-with-hours).
-2. [Stopwatch with 3 digit miliseconds](https://repl.it/@FaisalSayed1/Stopwatch-with-3-digit-miliseconds).
+2. [Stopwatch with 3 digit milliseconds](https://repl.it/@FaisalSayed1/Stopwatch-with-3-digit-milliseconds).
 3. [Stopwatch with dynamically changing START button](https://repl.it/@FaisalSayed1/Stopwatch-with-dynamic-start-button).
 
 Built by Hack Clubbers:
