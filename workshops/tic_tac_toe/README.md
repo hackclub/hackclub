@@ -16,7 +16,7 @@ We are going to use [repl.it](http://repl.it) for this project. Just go to [http
 
 ### Printing the board
 
-First we need a board to play the game of course. Let's draw on in the terminal! But wait, you can't really draw in the terminal. What we can do though is print horizontal lines with Hyphen `--` and vertical lines with pipes `|`.
+First, we need a board to play the game of course. Let's draw on in the terminal! But wait, you can't really draw in the terminal. What we can do though is print horizontal lines with Hyphen `--` and vertical lines with pipes `|`.
 
 ```python
    |   |   
