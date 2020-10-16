@@ -8,35 +8,34 @@
 
 This workshop is meant to help python newbies try out a fun library called "turtle".
 			
-In this, we make a whole christmas greetings using turtle graphics !!
-
+In this, we make a whole Christmas greeting using turtle graphics !!
 Try out and leave feedback.
 [Link to Demo Code](https://repl.it/@raz8153/ThankfulFirsthandScandisk)
 
 # Getting Started
 
-Let me give a brief idea of what we are gonna do. We are gonna make a greeting card with maroon-ish back ground with a text written on it saying ***"Merry Cristmas"***.
-Great ! We are done !
- Nope, just kidding . We are gonna add a christmas tree too. That is, we need a green tree with brown stem, a yellow/golden star on top and tiny red balls on either sides of the tree.
+Let me give a brief idea of what we are gonna do. We are gonna make a greeting card with a maroon-ish background with a text written on it saying ***"Merry Christmas"***.
+Great! We are done!
+ Nope, just kidding. We are gonna add a Christmas tree too. That is, we need a green tree with a brown stem, a yellow/golden star on top, and tiny red balls on either side of the tree.
 
-![alt text](https://cloud-4ipo9natc.vercel.app/3merry_christmas.png) 
+![alt completed_output_pic](https://cloud-4ipo9natc.vercel.app/3merry_christmas.png) 
 
-To break it down a bit more, we have made the leaves and stem out of multiple boxes or rectangles, with tiny circles on either end of the rectangle. And finally a star on top at the centre.
-![alt text](https://cloud-4ipo9natc.vercel.app/1image2.png)
+To break it down a bit more, we have made the leaves and stem out of multiple boxes or rectangles, with tiny circles on either end of the rectangle. And finally a star on top of the center.
+![alt tree_without_color_filled](https://cloud-4ipo9natc.vercel.app/1image2.png)
 # Shall we start Coding then ? 
 
-Create a new [repl.it](https://repl.it) project and select **Python** as the language from the drop down menu on the right.
+Create a new [repl.it](https://repl.it) project and select **Python** as the language from the drop-down menu on the right.
+We are gonna make 2 python files. (Writing on a single page may make it a bit too complicated to understand)
+1.  ******Figures.py****** - A python file in which we code the functions that we will use to create the boxes/rectangles, the tiny circles, and the star.
+2.  ******ChristmasTree.py****** - A python file in which we call the functions of boxes and circles and stars to make a Christmas tree. And finally, we will add a greeting on the bottom of the screen as you saw above
 
-We are gonna make 2 python files . (Writing in single page may make it a bit too complicated to understand)
-1.  ******Figures.py****** - A python file in which we code the functions that we will use to create the boxes/rectangles , the tiny circles and the star.
-2.  ******ChristmasTree.py****** - A python file in which we call the functions of boxes and circles and stars to make a christmas tree. And finally, we will add a greeting on the bottom of the screen as you saw above
 
-# Lets code Figures.py first.
+# Let's code Figures.py first.
 
 Using the coding space on the left create a file and name it 'Figures.py' (most probably a main.py file will already be created, don't use that).
 Now in the coding window :
 
-First let's import the turtle library :
+First, let's import the turtle library :
 ```python
 import turtle
 ```
@@ -74,8 +73,8 @@ First we create the function definition with color of the rectangle (color) , po
     turtle.goto(x,y)
     turtle.pendown()
 ```
-We use ******penup()****** and ******pendown()****** function to move the turtle without drawing anything (just like lifting the pen from the paper and keeping back on paper)
-******goto(x,y)****** decides the position of the turtle
+We use `penup()` and `pendown()` function to move the turtle without drawing anything (just like lifting the pen from the paper and keeping back on paper)
+`goto(x,y)` decides the position of the turtle
 ```python
 for i in range(2):
         turtle.forward(width)
@@ -206,7 +205,7 @@ y = -100
 width = 240
 
 ```
-******speed()****** function determines the speed of the turtle, ie, the speed in which the figures get drawn on the screen. When we set that to zero it moves as fast as it can. 
+`speed()` function determines the speed of the turtle, ie, the speed in which the figures get drawn on the screen. When we set that to zero it moves as fast as it can. 
 Next we set the background color to maroon using th hexcode.
 Now decide a value for ******y******, which is basically trial and error. Set some random value first and then iterate to find the right vaue which brings your turtle to the center.
 In Case of ******width******, provide any value you desire. 
@@ -216,7 +215,7 @@ In Case of ******width******, provide any value you desire.
 box1(turtle, "#4F4553", -15, y - 40, 30, 40) #Stem of the tree
 ```
 Now we make a make a stem for the tree by passing desired values for each parameter. Color will be a shade of brown and the rest as you see above. 
-![alt text](https://cloud-4ipo9natc.vercel.app/4image3.png) 
+![alt tree_stem_completed](https://cloud-4ipo9natc.vercel.app/4image3.png) 
 
 
 Next thing we are gonna make is the tree leaves with balls on either sides.
@@ -252,26 +251,26 @@ This is just to set the starting 'x' coordinate.
 box1(turtle, "#05A167", x, y, width, height) # Box for the leaves of tree
 ```
 Now we draw one complete green color filled box for first layer of flowers.
-![alt text](https://cloud-4ipo9natc.vercel.app/5image4.png) 
+![alt One_layer_of_leaves](https://cloud-4ipo9natc.vercel.app/5image4.png) 
 
 ```python
 balls(turtle, "#fc045b", x, y, 5) # Decorative balls
 ```
 Since the turtle is back on the left end of the rectangle, this statement draws a small ball of radius 5 with a shade of red filled in it. 
-![alt text](https://cloud-4ipo9natc.vercel.app/6image5.png) 
+![alt one_ball_completed](https://cloud-4ipo9natc.vercel.app/6image5.png) 
 Now we need one more tiny ball on the right end of the christmas tree right ? 
 
 ```python
 balls(turtle, "#fc045b", -x, y, 5)
 ```
 So we draw another ball with the same dimentions but we pass a different value for x coordinate. We pass ******-x****** instead of ******x******. This helps to position the ball on the right end instead of the left. 
-![alt text](https://cloud-4ipo9natc.vercel.app/7image6.png) 
+![alt both_balls_completed](https://cloud-4ipo9natc.vercel.app/7image6.png) 
 ```python
 y = y + height
 ```
 Finally, the above line helps to move the turtle up to the top of each rectangle so that the next rectangle it draws will be stacked on top of the one before it. 
 Repeating the above step over and over again will give us recatangles stacked on top of each other such that ones on top are slightly smaller then the one directly under it. We also have tiny red balls on either side.
-![alt text](https://cloud-4ipo9natc.vercel.app/8image7.png) 
+![alt tree_and _balls_completed](https://cloud-4ipo9natc.vercel.app/8image7.png) 
 
 Next,  Lets create a star on top of the tree.
 Note that once the rectangle drawing is done, the turtle is already on top of the tree. 
@@ -280,7 +279,7 @@ Note that once the rectangle drawing is done, the turtle is already on top of th
 star(turtle, "#e5f614", 0.4, y, 20)
 ```
 The above code will draw a yellow star on top of the tree. You can tweak the parameters to see how the positioning and size varies. 
-![alt text](https://cloud-4ipo9natc.vercel.app/9image8.png) 
+![alt star_completed](https://cloud-4ipo9natc.vercel.app/9image8.png) 
 
 Wow ! The tree is done. Now for the final touch, the greetings . 
 
@@ -292,7 +291,7 @@ goto(-250, -250)
 write("Merry Christmas !!!", font=("Calibri", 50, "bold"))
 ```
 I believe the code above is pretty self explanatory. We used the write method to have a text be written on the screen.
-Try changing the parameters of the ******goto()****** , ******color()****** and ******write()****** function to see the differences. 
+Try changing the parameters of the `goto()` , `color()` and `write()` function to see the differences. 
 
 
 ```python
@@ -301,11 +300,11 @@ hideturtle()
 
 turtle.done()
 ```
-The ******hideturtle()****** function hides the turtle from the screen. And the ******turtle.done()****** function tells that the turtles task is done.
+The `hideturtle()` function hides the turtle from the screen. And the `turtle.done()` function tells that the turtles task is done.
 
-![alt text](https://cloud-4ipo9natc.vercel.app/0image1.png) 
-Well, guess what ? We are done. 
-One look at the whole code ?
+![alt completed_greeting](https://cloud-4ipo9natc.vercel.app/0image1.png) 
+Well, guess what? We are done. 
+One look at the whole code?
 ```python
 # Now we use the figures we have defined to create the CHRISTMAS TREE
 from turtle import *
@@ -349,23 +348,23 @@ turtle.done()
 
 ```
 
-Now lets run the code . 
-
+Now, let's run the code. 
 # Running the code
-Click the green "Run" button on the top of the repl.it window. A screen will be shown on the right side displaying the turtle graphics that you coded. 
+Click the green "Run" button on the top of the repl.it windows. A screen will be shown on the right side displaying the turtle graphics that you coded. 
 If you face any errors, try commenting out each portion of the code and making only a certain section work. This generally helps to figure out the error.
-![alt text](https://cloud-4ipo9natc.vercel.app/2image9.jpeg) 
+![alt repl_screen](https://cloud-4ipo9natc.vercel.app/2image9.jpeg) 
+
 # One last thing
 
    Did you find this fun ? If yes, try out some of your own designs. 
 You can basically draw almost anything with this. 
 A few suggestions would be:
-1. Try changing the ******speed()****** function to '1' (or other values) to see the difference in speed. Try changing color of the parameters in the code. You can use [this link](https://www.color-hex.com/) to find the right hexcode you want.
+1. Try changing the `speed()` function to '1' (or other values) to see the difference in speed. Try changing color of the parameters in the code. You can use [this link](https://www.color-hex.com/) to find the right hexcode you want.
 2. Try adding some more additions into this code,like maybe a few giftboxes on the bottom of the tree. For this you could use the same rectangle function. 
 You could also try adding a few more decorative stuff into the tree or the back ground
-3. Try making an entire different design. Maybe a pet animal or a house or literally anything you wish. The pic given below is something we call "pookkalam". If you google search this word, you will get to know that these are designs we (South Indians) make on the floor using flower petals. A friend of mine coded a similar design using turtle. A bit complicated, but superfun.
-![alt text](https://github.com/FossMec/Code-a-pookalam/blob/master/Nikita%20Menon/FinalPookalam.png)
-[Code for the "pookkalam" made using turtle](https://github.com/FossMec/Code-a-pookalam/tree/master/Nikita%20Menon)
+3. Try making an entire different design. Maybe a pet animal or a house or literally anything you wish. The pic given below is a Flower Carpet. A friend of mine coded a flower carpet design using turtle. A bit complicated, but superfun.
+![alt flower_carpet_turtle](https://github.com/FossMec/Code-a-pookalam/blob/master/Nikita%20Menon/FinalPookalam.png)
+[Code for the flower carpet made using turtle](https://github.com/FossMec/Code-a-pookalam/tree/master/Nikita%20Menon)
 4. Now, I would suggest to try out some other turtle functions that you may find interesting.    
    [This link](https://runestone.academy/runestone/books/published/StudentCSP/CSPTurtleDecisions/turtleFP.html) provides details of most functions available in turtle.
 
