@@ -169,7 +169,7 @@ The `target` attribute is used to specify the canvas with the id `my-canvas` on 
 
 The `size` attribute specifies the size for the confetti particles.
 
-The `max` attribute specifies the The number of props(confetti) to be rendered.
+The `max` attribute specifies the number of props(confetti) to be rendered.
 
 The `ConfettiGenerator` contains a `render()` method and when it is called, we will be able to see confetti on our page.
 
