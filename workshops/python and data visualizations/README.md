@@ -2,7 +2,7 @@
 
 You after you make your first data visualization^
 
-*Follow along with this workshop to gain some data science skills! You will use python to create basic graphs and visualizations with real data. You can hand draw a graph anytime you want, but why not learn how to code one! You will learn about matplotlib, pandas, and numpy, so you can create any graph or vizualizaiton you dream of!*
+*Follow along with this workshop to gain some data science skills! You will use python to create basic graphs and visualizations with real data. You can hand draw a graph anytime you want, but why not learn how to code one! You will learn about matplotlib, pandas, and numpy, so you can create any graph or visualization you dream of!*
 
 # Getting started!
 
