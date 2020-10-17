@@ -157,7 +157,7 @@ If you run your code nothing has changed, that because we are using class to gro
 ![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://i.ibb.co/TLFcmvk/aasdasd.png)
 And when we run our code again it should look like this.
 
-We are now going to add colors, make hovering effects, unactive or active states, to make it stand out and make the experience better, we will do that with the following code:
+We are now going to add colors, make hovering effects, inactive or active states, to make it stand out and make the experience better, we will do that with the following code:
 
 ```css
 .pad-1 {
