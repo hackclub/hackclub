@@ -10,7 +10,7 @@ Everyone uses websites. Chances are, you're using a website right now. But how d
 
 ## What are HTTP Requests?
 
-HTTP requests are a type of request a program can send to a server to get data back. You might use requests to get weather information, or information from a database, or a video or audio file. There are many types of requests one can use, but the type we'll be covering here are GET requests, which send a request to the server or API with arguments in either the headers of the request or the URL, and expect some response data back. Google, Amazon, pretty much every site amd app available uses requests to get data from the Internet.
+HTTP requests are a type of request a program can send to a server to get data back. You might use requests to get weather information, or information from a database, or a video or audio file. There are many types of requests one can use, but the type we'll be covering here are GET requests, which send a request to the server or API with arguments in either the headers of the request or the URL, and expect some response data back. Google, Amazon, pretty much every site and app available uses requests to get data from the Internet.
 
 ## Setting Up
 
