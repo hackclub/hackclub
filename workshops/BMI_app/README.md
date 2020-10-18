@@ -121,9 +121,29 @@ Go back to the `🟦Math` block and drag and drop the block with sign  the ` ^ `
 
 `poish`
 
-now let take the value from the Value_weight the user will input; go to the Block slide, find and click Value_weight Block, now inside the value_weight block we want to take text from the user so drag and drop the block Value_weight.Text and place it in the first puzzle of the block / (division),now let take as well The Value_height from the user, go back to the Block slide and click on the bock Value_height and scroll done for the block Value_Height.Text  and place it in the second puzzle of the block / (division)  like this:
-Now we want to multiply it by 2, so go and click on the Block Math and take the first bock that has a 0  in it and place it after the multiplication sign your block , now click inside this block again to gauge the number to 2, your block should then be place in the remaining puzzle that allow the value to be multiply by 2. Now redone with our procedure that would allow us to know someone’s BMI value. 
-Now let have a process that give the message to the user about they BMI Value and categories weight they are in. Now click on the Block Button_calculate  and look fist block When.Button_calculate.Click.do  and place it on the Viewer slide. Now go back on the Block slide and click on the Block BMI_value and drag and drop the block Set.BMI_value.text.to inside the the Button_calculate.  Now we see an error or a red cross on the block well no problem for that, it just informing us that we did not assign any value to that block. Go back on the Block slide and click on the block Procedure drag and drop the block Call.calculate inside the set.BMI_value.Text.to , now the cross line should go away. Let me explain what will happen here, so when the button_calculate is click the BMI_value ’s text will be the Value of the BMI, which was calculated by the Procedure Calculate. 
+Then click `⬜️Value_weight` Block, now inside drag and drop the block `Value_weight.Text`
+`picture of the value_weigth text`  
+and place it in the first puzzle of the block` / `(division),
+
+now click on the bock `⬜️Value_height` and scroll done for the block `Value_Height.Text`
+
+and place it in the second puzzle of the block / (division).
+
+Now we want to square, or to to the power of 2, so in the `🟦Math` block and take the first bock that has ' 0 ' in the last puzzle block.
+
+then click inside the ' o ' block to change the number to 2.
+ your final code should look like this:
+ 
+ 
+ 
+Now we want to square,or raise to the power of 2, so in the `🟦Math` block and take the first bock that has ' 0 ' in the last puzzle block.it and place it after the multiplication sign your block ,
+
+now click inside this block again to gauge the number to `2`, your block should then be place in the remaining puzzle that allow the value to be multiply by 2. Now redone with our procedure that would allow us to know someone’s BMI value.
+
+
+Now let process the BMi value from the `🟣Calculate procedure` and give an output that categorise them.
+Now click on the Block `◻️Button_calculate`   and look for block When.Button_calculate.Click.do  and place it on the Viewer slide. Now go back on the Block slide and click on the Block BMI_value and drag and drop the block Set.BMI_value.text.to inside the the Button_calculate.  Now we see an error or a red cross on the block well no problem for that, it just informing us that we did not assign any value to that block. Go back on the Block slide and click on the block Procedure drag and drop the block Call.calculate inside the set.BMI_value.Text.to , now the cross line should go away. Let me explain what will happen here, so when the button_calculate is click the BMI_value ’s text will be the Value of the BMI, which was calculated by the Procedure Calculate. 
+Now let process the BMi value from the `🟣Calculate procedure` and give an output that categorise them. Now click on the Block Button_calculate  and look fist block When.Button_calculate.Click.do  and place it on the Viewer slide. Now go back on the Block slide and click on the Block BMI_value and drag and drop the block Set.BMI_value.text.to inside the the Button_calculate.  Now we see an error or a red cross on the block well no problem for that, it just informing us that we did not assign any value to that block. Go back on the Block slide and click on the block Procedure drag and drop the block Call.calculate inside the set.BMI_value.Text.to , now the cross line should go away. Let me explain what will happen here, so when the button_calculate is click the BMI_value ’s text will be the Value of the BMI, which was calculated by the Procedure Calculate. 
 Let now categorise someone’s BMI value to the correct categories weight. So first there is a general rule to categorise someone’s weight here it is: 
 
 `_If the BMI value is less than 17 then the person is very underweight`
