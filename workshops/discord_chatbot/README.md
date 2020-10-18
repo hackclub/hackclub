@@ -58,7 +58,7 @@ Now you should be greeted with this screen. If you successfully get this, then y
 
 Now, we will add this bot to our server. For this, You need to be the admin of the server.
 
-Assuming you have logged in to your discord account and made a server or having an exisiting server as an admin, let's proceed!
+Assuming you have logged in to your discord account and made a server or having an existing server as an admin, let's proceed!
 
 Visit [this page](https://discordapi.com/permissions.html) to set the permissions of your bot and get the link to add your bot to your server.
 
