@@ -6,7 +6,7 @@ author: '@bajpai244'
 
 In this workshop, we will be creating your first npm package and then we will be publishing it. This workshop will be a quick read and will be fun to do 🤠 So let’s get started!
 
- ![Demo GIF](img/showtime.gif)
+![Demo GIF](img/showtime.gif)
 
 ## Prerequisites
 
@@ -23,14 +23,14 @@ The source code of this workshop is available at [https://github.com/bajpai244/n
 
 ## What will we make?
 
-We will be making a calculator package, which will provide us with 
+We will be making a calculator package, which will provide us with
 functions to do some basic arithmetic calculations!
 
 ## Setup
 
 You need to have Node.js and npm installed in your system.
 
-### Node.js 
+### Node.js
 
 [Node.js](https://nodejs.org/en/) is an open-source cross-platform server environment. At the time of writing this workshop, we are using Node **version:- v12.18.3.**
 
@@ -42,18 +42,19 @@ To check Node.js is working fine type **node -v** in your terminal, if a version
 
 ![node check image](img/nodecheck.png)
 
-
-## Creating your npm account 
+## Creating your npm account
 
 An npm account is required for publishing an npm package. So make sure you have an npm account before proceeding further.
 
-Creating an npm account is very simple, just follow instructions from this 
+Creating an npm account is very simple, just follow instructions from this
 <a href="https://docs.npmjs.com/creating-a-new-npm-user-account" target="blank" >link</a> to create your npm account.
 
 After that **login to your npm** via terminal using the following command:
+
 ```bash
 npm login
 ```
+
 You can also take help from this <a href="https://docs.npmjs.com/creating-a-new-npm-user-account#testing-your-new-account-with-npm-login)" target="blank" >link</a> to login into your npm account.
 
 ![that was easy gif](img/itwaseasy.gif)
@@ -64,11 +65,13 @@ Now, find a folder on your computer where you would like to keep your project. T
 
 ![calculatorfolder image](img/calculatorfolder.png)
 
-Now, open this project inside a terminal and type the following command: 
+Now, open this project inside a terminal and type the following command:
+
 ```bash
 npm init -y
 ```
-Then press the **Enter key** to run it. 
+
+Then press the **Enter key** to run it.
 
 ![ npm init command ](img/npminitcommand.png)
 
@@ -80,7 +83,7 @@ Okay, so now we will discuss some questions that may arise from the above steps 
 
 ### What is this command and what will it do?
 
-The above command will create a **package.json** file for your project. You need to fill some meta information when you run this command like name,version and description etc. 
+The above command will create a **package.json** file for your project. You need to fill some meta information when you run this command like name,version and description etc.
 
 The -y ( it is a command line flag ) **will autofill these fields** with the defualt values for them and write them to your package.json file!
 
@@ -104,7 +107,7 @@ Open your project folder inside an editor. I will be using [VSCode](https://code
 
 ### Change the name in package.json
 
-Now, in the name field( this is going to be your package name ) of your package.json change it from whatever is the default value( here it is calculator ) to @username/calculator. 
+Now, in the name field( this is going to be your package name ) of your package.json change it from whatever is the default value( here it is calculator ) to @username/calculator.
 
 Now, **here @username is your npm username with @ as a prefix.** My npm username is bajpai244 so I will name it as @bajpai244/calculator. Packages with names in this format are called **scoped packages.**
 
@@ -137,36 +140,33 @@ Now create a file index.js in your project folder.
 Now, add the following code to it:
 
 ```js
-
-function add(x, y) { 
-    return x+y
+function add(x, y) {
+  return x + y
 }
 
-function subtract(x, y) { 
-    return x-y
+function subtract(x, y) {
+  return x - y
 }
 
-function multiply(x, y) { 
-    return x*y
+function multiply(x, y) {
+  return x * y
 }
 
-function divide(x, y) { 
-    return x/y
+function divide(x, y) {
+  return x / y
 }
 
 module.exports = {
-    add: add,
-    subtract: subtract,
-    multiply: multiply,
-    divide: divide
+  add: add,
+  subtract: subtract,
+  multiply: multiply,
+  divide: divide
 }
-
 ```
 
 This is what the file will look like:
 
 ![ created index.js file ](img/indexjs1.png)
-
 
 We declared four arithmetic functions that perform the addition, subtraction, multiplication, and division operation respectively.
 
@@ -174,7 +174,7 @@ We declared four arithmetic functions that perform the addition, subtraction, mu
 
 In the Node.js module system, **each file is treated as a separate module**. Each module can export its properties and methods which can then be imported by some other modules ( This is how we import properties and methods from npm packages! ).
 
-module.exports exports a default value from a Node.js module and here we are exporting an object with keys add, subtract, multiply and divide which are then mapped to their respective arithmetic functions. 
+module.exports exports a default value from a Node.js module and here we are exporting an object with keys add, subtract, multiply and divide which are then mapped to their respective arithmetic functions.
 
 This will make sure that we can import our arithmetic functions in another node js file ( i.e module ).
 
@@ -187,6 +187,7 @@ Now, we will be publishing this npm package. Open your project folder inside the
 ```bash
 npm publish --access public
 ```
+
 After typing that press the **Enter key** to run this command.
 
 This is what it will look like:
@@ -206,38 +207,35 @@ Scoped packages are by default published as private npm packages and hence to ma
 Now, before we go ahead and test it out I want to show you something. Add the following code to your existing index.js code:
 
 ```js
-
-function remainder(x,y){ 
-    return x%y
+function remainder(x, y) {
+  return x % y
 }
-
 ```
 
 Now in your module.exports add the remainder function.
 
 ```js
-
 module.exports = {
-    add: add,
-    subtract: subtract,
-    multiply: multiply,
-    divide: divide,
-    remainder:remainder
+  add: add,
+  subtract: subtract,
+  multiply: multiply,
+  divide: divide,
+  remainder: remainder
 }
-
 ```
 
 After making all these changes your file will look like this:
 
 ![indexjs2 image](img/indexjs2.png)
 
-## Now publish this change 
+## Now publish this change
 
 Now, open your project inside a terminal and type the following command to publish it:
 
 ```bash
 npm publish
 ```
+
 We are not adding **--access public** because during the first publish we made it clear that it is going to be a public package.
 
 Now, press the **Enter key** and see what you get.
@@ -272,7 +270,7 @@ Now, open your package.json and there you will see a version number, change it f
 
 ![versionchange image](img/versionchange.png)
 
-We have added new functionality and the code is still backward-compatible and hence we are **increasing the MINOR version to 1 from 0.** 
+We have added new functionality and the code is still backward-compatible and hence we are **increasing the MINOR version to 1 from 0.**
 
 ## Now try publishing it!
 
@@ -281,6 +279,7 @@ Open your project inside a terminal and type the following command:
 ```bash
 npm publish
 ```
+
 Press the **Enter key** to run the above command.
 
 This is what it will look like:
@@ -304,6 +303,7 @@ Now, open this folder inside a terminal and type the following command.
 ```bash
 npm init -y
 ```
+
 Press **Enter key** to run it.
 
 Now, in the next command, I am going to use my scope which is **@bajpai244 and you should change it to your scope i.e your @username.**
@@ -313,6 +313,7 @@ After that type the following command in the terminal:
 ```bash
 npm -i @bajpai244/calculator
 ```
+
 **You should use @username/calculator** where @username is your username with @ as prefix.
 
 ![testcommands image](img/testcommands.png)
@@ -326,11 +327,16 @@ The first command made our package.json file and second command installed our np
 Now open this folder inside a code editor and make a new file **index.js** and type the following code inside it:
 
 ```js
-
-const { add, subtract, multiply, divide, remainder } = require('@bajpai244/calculator')
+const {
+  add,
+  subtract,
+  multiply,
+  divide,
+  remainder
+} = require('@bajpai244/calculator')
 
 function log(val) {
-    console.log(val)
+  console.log(val)
 }
 
 log(add(1, 1))
@@ -342,7 +348,6 @@ log(multiply(3, 3))
 log(divide(15, 3))
 
 log(remainder(6, 3))
-
 ```
 
 Now, here we have imported our package's functions and are testing them with the help of our function **log** which will log their result on a console.
@@ -351,7 +356,6 @@ This is what it will look like:
 
 ![testfile image](img/testfile.png)
 
-
 ## Running the test
 
 Now, we will run this file via Node.js. Open this folder inside your terminal and type the following command:
@@ -359,6 +363,7 @@ Now, we will run this file via Node.js. Open this folder inside your terminal an
 ```bash
 node index.js
 ```
+
 Press the **Enter key** to run this command.
 
 This is what it will look like:
@@ -369,7 +374,7 @@ We will get the output of our file logged on the terminal.
 
 ## Done!
 
-Congratulations! Now you are an npm ninja. You have created and published your first npm package! 
+Congratulations! Now you are an npm ninja. You have created and published your first npm package!
 
 ![crazy image](https://workshops.hackclub.com/content/workshops/hackide/img/awesome.gif)
 
@@ -379,8 +384,7 @@ You will still encounter more challenges in your journey as a package-manager an
 
 ## Next Steps!
 
-I know it feels awesome to make it but don't stop here, Create whatever you can from this crazy trick and share it with us in the [```#ship```](https://app.slack.com/client/T0266FRGM/C0M8PUPU6) channel of [Hack Club's Slack](https://hackclub.com/slack/). 
-
+I know it feels awesome to make it but don't stop here, Create whatever you can from this crazy trick and share it with us in the [`#ship`](https://app.slack.com/client/T0266FRGM/C0M8PUPU6) channel of [Hack Club's Slack](https://hackclub.com/slack/).
 
 ![nailed it gif](img/nailedit.gif)
 
