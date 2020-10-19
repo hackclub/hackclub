@@ -265,7 +265,7 @@ chatID = input("Enter your (own) Telegram chat ID: ")
 
 Now, the user is instructed to send “hello” to their Telegram bot and then enter any key to proceed. 
 
-(We have to wait for a confirmation else the code will immediately proceed to replying when the user hasn’t even sent anything :D)
+(We have to wait for a confirmation else the code will immediately proceed to reply when the user hasn’t even sent anything :D)
 
 ```python
 print("Now open your Telegram application and send 'hello' to your Telegram Bot.")
