@@ -59,7 +59,7 @@ We will be using very simple and easy to understand html elements as display bel
   }
 ```
 
-This is purposely to remove the default margin and padding of every element and to set the box-sizing to border-box which controls behaviour activities of every elements on the page. This prevent default addition of margin and padding to the width and height.
+This is purposely to remove the default margin and padding of every element and to set the box-sizing to border-box which controls behavior activities of every element on the page. This prevents the default addition of margin and padding to the width and height.
 
 - Styling Main Content area
 
