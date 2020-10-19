@@ -16,8 +16,7 @@ In this workshop we will be using the [restcoutries.eu](https://restcountries.eu
 
 ### What is API?
 
-API is an acronym of Application Programming Interface (API) which gives quick access to web app development. A web app is a webpage that is dynamic. For example mere loading of a webpages is `GET` request sent to a server or an API while submitting any kinds of form is a `POST` request.
-
+API is an acronym of Application Programming Interface (API) which gives quick access to web app development. A web app is a webpage that is dynamic. For example mere loading of a webpages is `GET` request sent to a server or an API while submitting any kinds of form is a `POST` request. [Watch this Here](https://www.google.com/url?sa=t&source=web&rct=j&url=https://m.youtube.com/watch%3Fv%3DGZvSYJDk-us&ved=2ahUKEwj3h-2irr_sAhVPqxoKHUwZCGcQt9IBMBF6BAgKEAg&usg=AOvVaw1GsR5vTK377whoesahekss)
 ### The Features/Sections Are
 
 - Flag Section
@@ -75,7 +74,8 @@ This is purposely to remove the default margin and padding of every element and 
   }
 ```
 
-Both the width and height are set to the view width and view height of the viewing device. It is display flex (Flex is a new feature in css that encourage and improve responsiveness of every web pages) you can read more at [CSS Flex](https://flexbox.io)
+Both the width and height are set to the view width and view height of the viewing device. It is display flex (Flex is a new feature in css that encourage and improve responsiveness of every web pages) you can read more at [Read more Here](https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/amp/&ved=2ahUKEwiX0LzIrL_sAhWsyIUKHRveA2EQFjAkegQIGhAB&usg=AOvVaw1L3IU0DUtdahRsgB-n5vBS&ampcf=1)
+
 
 - Styling the Card
 
