@@ -187,9 +187,9 @@ HTML(display(source_image, driving_video, predictions).to_html5_video())
 
 #### Running on whichever data we like
 Till now we were using source image - 'My Drive/first-order-motion-model/02.png' <i>and</i> driving video -  'My Drive/first-order-motion-model/04.mp4'
-I provided full path as I want you to go to the path in your GDrive and take a look at both. Observe the size and dimensions to have an idea what kind of video and image set it works best on (where should the head be, how much od your body should be visible, how much sould it be moving , etc)
+I provided a full path as I want you to go to the path in your GDrive and take a look at both. Observe the size and dimensions to have an idea what kind of video and image set it works best on (where should the head be, how much od your body should be visible, how much sould it be moving, etc)
 
-<b>First we need to crop a face from both source image and video, while simple graphic editor like paint can be used for cropping from image. Cropping from video is more complicated. We are using ffpmeg for this. </b>
+<b>First we need to crop a face from both source image and video, while simple graphic editor like a paint can be used for cropping from the image. Cropping from the video is more complicated. We are using FFmpeg for this. </b>
 
 ```python
 !ffmpeg -i /content/gdrive/My\ Drive/first-order-motion-model/07.mkv -ss 00:08:57.50 -t 00:00:08 -filter:v "crop=600:600:760:50" -async 1 hinton.mp4
