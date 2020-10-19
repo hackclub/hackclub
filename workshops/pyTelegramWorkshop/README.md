@@ -9,7 +9,7 @@ img: 'https://cloud-cwg1brm1x.vercel.app/'
 ### Hello, world!
 
 # What the result will look like:
-Once done, you will be able to use Telegram BOTs to communicate with you, and your services. It has unlimited opurtunities!
+Once done, you will be able to use Telegram BOTs to communicate with you, and your services. It has unlimited opportunities!
 This is the end product of a small project that this workshop houses:
 
 ![screenshot-of-workshop-end-project](https://cloud-fmg4yoxia.vercel.app/0dta29-master.png)
