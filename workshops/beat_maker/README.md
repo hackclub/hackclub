@@ -10,7 +10,7 @@ author: '@emmanuel39hanks'
 
 _Preview of the DrumPad/Beat Maker we are going to be creating._
 
-In this workshop, you're going to create a drum pad/beatmaker that plays actual sounds in less than 230 lines of code.
+In this workshop, you're going to create a drum pad/beatmaker that plays sounds in less than 230 lines of code.
 
 [Link to demo](https://BeatMaker.emmanuel39hanks.repl.co)
 
@@ -69,15 +69,15 @@ We're going to start by writing code for our document to change the colors, addi
 
 html,
 body {
-  background-color: #fff;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  font-family: 'Roboto', sans-serif;
+  background-color: #fff; // Changes the background of our web page to #fff which is white in hexidecimal values.
+  height: 100%; // The height CSS property specifies the height of an element.
+  width: 100%; // The width CSS property specifies the width of an element.
+  display: flex; // The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
+  flex-direction: column; // The flex-direction CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
+  justify-content: center; // The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.
+  align-items: center; // The CSS align-items property sets the align-self value on all direct children as a group. In Flexbox, it controls the alignment of items on the Cross Axis.
+  overflow: hidden; // The CSS overflow property controls what happens to content that is too big to fit into an area. 
+  font-family: 'Roboto', sans-serif; // The CSS font family property is used to specify a list of prioritized fonts and generic family names
 }
 ```
 
@@ -89,30 +89,30 @@ We want to style the header to give it spaces and then create 3 rows and 4 colum
 
 ```css
 h1 {
-  color: #000;
-  font-size: 5vw;
-  letter-spacing: 6px;
+  color: #000; // The color CSS property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value.
+  font-size: 5vw; // The font-size CSS property sets the size of the font.
+  letter-spacing: 6px; // The letter-spacing CSS property sets the horizontal spacing behavior between text characters.
 }
 
 .pad {
   width: 500px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap; // The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines.
 }
 
 .box {
   width: 100px;
   height: 100px;
-  margin: 10px 0;
-  box-shadow: 0 8px 6px -6px black;
+  margin: 10px 0; // The CSS margin properties are used to create space around elements, outside of any defined borders.
+  box-shadow: 0 8px 6px -6px black; // The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas.
   background-color: #444;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.4);
-  user-select: none;
+  user-select: none; // The user-select property in CSS controls how the text in an element is allowed to be selected.
 }
 
 .pad-1,
@@ -127,7 +127,7 @@ h1 {
 .pad-10,
 .pad-11,
 .pad-12 {
-  border: 2px solid;
+  border: 2px solid; // he border shorthand CSS property sets an element's border, and in this case we are giving all our pads 2 pixel borders
 }
 ```
 
@@ -158,6 +158,9 @@ And when we rerun our code, it should look like this.
 We are now going to add colors, make hovering effects, inactive or active states, to make it stand out and make the experience better. We will do that with the following code:
 
 ```css
+
+// Below we are changing the background colors for all our pads
+
 .pad-1 {
   background-color: #e5446d;
 }
@@ -206,15 +209,22 @@ We are now going to add colors, make hovering effects, inactive or active states
   background-color: #ff0496;
 }
 
+// Below we are using pseudo-classes to determine the form of states whether active or hovered.
+
+// The :hover CSS pseudo-class matches when the user interacts with an element with a pointing device, but does not necessarily activate it. It is generally triggered when the user hovers over an element with the cursor (mouse pointer).
+
 .box:hover {
   background-color: lighten(#444, 10%);
-  cursor: pointer;
+  cursor: pointer; // The cursor CSS property sets the type of mouse cursor, if any, to show when the mouse pointer is over an element.
 }
 
+// The :active CSS pseudo-class represents an element (such as a button) that is being activated by the user. When using a mouse, "activation" typically starts when the user presses down the primary mouse button.
+
 .box:active {
-  background-color: darken(#444, 10%);
-  transform: scale(1.1);
-  transition: all 0.2s;
+  background-color: darken(#444, 10%); // The darken() function helps us give our element a color and a percentage of darkness that should be applied to it.
+  transform: scale(1.1); // The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model, and the scale() function helps easily give a scale value to our element.
+  transition: all 0.2s; // CSS transitions allows you to change property values smoothly, over a given duration.
+
 }
 
 .active {
