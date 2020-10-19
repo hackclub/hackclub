@@ -16,7 +16,7 @@ In this workshop we will be using the [restcoutries.eu](https://restcountries.eu
 
 ### What is API?
 
-API is an acronym of Application Programming Interface (API) which gives quick access to web app development. A web app is a webpage that is dynamic. For example mere loading of a webpages is `GET` request sent to a server or an API while submitting any kinds of form is a `POST` request. [Watch this Here](https://www.google.com/url?sa=t&source=web&rct=j&url=https://m.youtube.com/watch%3Fv%3DGZvSYJDk-us&ved=2ahUKEwj3h-2irr_sAhVPqxoKHUwZCGcQt9IBMBF6BAgKEAg&usg=AOvVaw1GsR5vTK377whoesahekss)
+API is an acronym of Application Programming Interface (API) which gives quick access to web app development. A web app is a webpage that is dynamic. For example mere loading of a webpages is `GET` request sent to a server or an API while submitting any kinds of form is a `POST` request. [Check this out](https://www.google.com/url?sa=t&source=web&rct=j&url=https://m.youtube.com/watch%3Fv%3DGZvSYJDk-us&ved=2ahUKEwj3h-2irr_sAhVPqxoKHUwZCGcQt9IBMBF6BAgKEAg&usg=AOvVaw1GsR5vTK377whoesahekss)
 ### The Features/Sections Are
 
 - Flag Section
@@ -25,7 +25,7 @@ API is an acronym of Application Programming Interface (API) which gives quick a
 
 ## Mark Up Section (Setting up the HTML)
 
-We will be using very simple and easy to understand html elements as display below and also our `css` and `script` files will be linked externally
+We will be using a very simple and easy to understand html elements as display below and also our `css` and `script` files will be linked externally
 
 ```
   <!DOCTYPE html>
@@ -45,11 +45,11 @@ We will be using very simple and easy to understand html elements as display bel
   </html>
 ```
 
-**NOTE:** `You can copy-paste the code above` But, never copy paste a non-clear code or the code you did not understand. A brief explanation of the html boilerplate at the top is as simple as having `css` file linked at the `head` section of the html along with the title element to show web title and the main element for the purpose of semantic and web page accessibilities. Followed by a div with a class attribute of card which shall hold every country flags and names and lastly linked with a javascript `script` file that will do all the magic, just before the body closing tag.
+**NOTE:** `You can copy-paste the code above` But, it is advisable not to copy-paste a non-clear code or the code you did not understand. A brief explanation of the html boilerplate at the top is as simple as having `css` file linked at the `head` section of the html along with the title element to show web title and the main element for the purpose of semantic and web page accessibilities. Followed by a <div> with a class attribute of card which shall hold every country flags and names and lastly linked with a javascript `script` file that will do all the magic, just before the body closing tag.
 
 # The StyleSheet
 
-- Clearing Default Style
+- Clearing Default Styles
 
 ```
   * {
@@ -86,9 +86,9 @@ Both the width and height are set to the view width and view height of the viewi
   }
 ```
 
-This will take 40% of the main content area that is the 40% of 100vw and a height of 200px. Percentage is accepted purposely to make a fluid design which is the starting point for Responsive Web Design (RWD).
+This will take 40% of the main content area, that is the 40% of 100vw and a height of 200px. Percentage is accepted purposely to make a fluid design which is the starting point for Responsive Web Design (RWD).
 
-- Styling the flag size
+- Styling the flags
 
 ```
 img {
@@ -116,7 +116,7 @@ Given width and height to the flag size. 100% of the card size.
 
 The font size and type are set and spacing were set using padding and margin with a gainsboro color for the text.
 
-# The Script part and the magic section
+# The script part and the magic section
 
 ```
   window.addEventListener("load", (e) => {
@@ -150,7 +150,7 @@ The font size and type are set and spacing were set using padding and margin wit
     });
 ```
 
-**_ This is the code that did all the magic and I will be expalining what each section is doing one after the other _**
+**_ This is the code that did all the magic and I will be explaining what each section is doing one after the other _**
 As the window loads a fuction get called, where main, card and cardParent are set for DOM manipulation.
 
 ```
@@ -185,11 +185,11 @@ Then javascript fetch method was invoked with the argument/parameters of base ur
 
 ### What is Fetch?
 
-fetch is one of the way of making `HTTP` calls. http calls are numerous ranging from `GET`, `POST`, `DELETE` among nine (9) others which are not the scope of this `WORKSHOP`. Fetch method return a promise.
+Fetch is one of the way of making `HTTP` calls. http calls are numerous ranging from `GET`, `POST`, `DELETE` among nine (9) others which beyond the scope of this `WORKSHOP`. Fetch method return a promise.
 
-### What is a Promise?
+### What is Promise?
 
-The promise is that object that may produce a single value in the future. A response that denotes fulfilment or rejection that is success or failure which is handle in javascript with `.then() method`.
+The promise is that object that may produce a single value in the future. A response that denotes fulfilment or rejection, that is success or failure which is handle in javascript with `.then() method`.
 
 ```
   .then((res) => {
@@ -219,10 +219,10 @@ Inside the loop `flagImage` which is the image of the flag and `countryName` whi
 
 It is basically DOM method that is used to move an element from its current position to another new position as the flagImage and countryName elements were moved to parentCard and parentCard element was moved to card element.
 
-**_ This is basically to show how it is easy and play around with javascript when working with vanilla javascript _**
+**_ This is basically to show how it is easy to play around with javascript syntax when working with vanilla javascript _**
 
-other live demo and extension.
+other live demos and extensions.
 
 [three layered country list app](https://rasheedtaiwo.github.io/day16)
 
-[country list app with amazing style](https://devmukhtar.github.io/workshops)
+[country list app with gradient background style](https://devmukhtar.github.io/workshops)
