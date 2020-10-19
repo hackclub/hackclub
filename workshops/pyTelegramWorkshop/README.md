@@ -23,9 +23,9 @@ Here's a sample of what I personally use this for. My store manager, called DBFA
 
 Yes, Telegram, it is one of the world’s leading messaging apps. Well, “one of the leading apps”. Why Telegram of all?
 
-Well, for starters, it is one of the very few messaging companies that provide open-source API access to everyone. All of Telegram (except the server software) is completely open source!
+Well, for starters, it is one of the very few messaging companies that provide open-source API access to everyone. All of the Telegram (except the server software) is completely open-source!
 
-In fact, the official Telegram app is rather called a client. As its open source, there are literally a gazillion Telegram clients out there.
+In fact, the official Telegram app is rather called a client. As its open-source, there are literally a gazillion Telegram clients out there.
 
 You don’t like your client? Code one yourself, it is that flexible! 
 
