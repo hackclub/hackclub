@@ -23,7 +23,7 @@ As I started learning ML, I wanted to create something visually awesome using AI
 
 ### Few words about [AI](https://en.wikipedia.org/wiki/Artificial_intelligence), [ML](https://en.wikipedia.org/wiki/Machine_learning), [DL](https://en.wikipedia.org/wiki/Deep_learning) and [Deep-Fakes](https://en.wikipedia.org/wiki/Deepfake)
 AI is one of those technologies which has changed (and going to change) the world completely, it can be easily compared to inventions like wheels and transistors. 
-Machine Learning is a method under AI which uses data, math and code together to make machines intelligent🧠. It's almost similar to how a living being learns, we see a spoon daily and then we know it's a spoon based on it's characteristics. Deep Learning is a method under ML which uses more complex maths, [Neural Networks](https://en.wikipedia.org/wiki/Neural_network) (similar to how human brain has neurones) and lots of computations power (eats GPU for lunch 😅) to achieve greater feats such as self-driving cars.
+Machine Learning is a method under AI that uses data, math, and code together to make machines intelligent🧠. It's almost similar to how a living being learns, we see a spoon daily, and then we know it's a spoon based on its characteristics. Deep Learning is a method under ML that uses more complex maths, [Neural Networks](https://en.wikipedia.org/wiki/Neural_network) (similar to how the human brain has neurons) and lots of computations power (eats GPU for lunch 😅) to achieve greater feats such as self-driving cars.
 Now we can <s>create</s> synthesise completely fake media file that look legit and we call those <b>DeepFakes</b>.
 <br>
 
