@@ -8,7 +8,7 @@ author: '@emmanuel39hanks'
 
 ![Beat Maker Preview](https://i.ibb.co/r0JLpWB/Annotation-2020-09-20-200719.png)
 
-_^ Preview of the DrumPad/Beat Maker we are going to be creating._
+_Preview of the DrumPad/Beat Maker we are going to be creating._
 
 In this workshop, you're going to create a drum pad/beatmaker that plays actual sounds in less than 230 lines of code.
 
@@ -26,7 +26,7 @@ Great! Now that we've imported jQuery, we're ready to start writing our code.
 
 ## Creating the pad layout
 
-We are going to start by writing HTML code; we are going to go into our `<body>` tag, which is where we write code that will be shown to the client and create a header with the `<h1>` tag, and then we will have 3 rows, and 4 columns of pads and each pad will be a `<div>,` you can think of the `<div>` as a box or container.
+We are going to start writing HTML code; going into our `<body>` tag, which is where we write code that will be shown to the client, create a header with the `<h1>` tag, and then we will have 3 rows, and 4 columns of pads and each pad will be a `<div>,` you can think of the `<div>` tag as a box or container.
 
 ```html
 <h1>BEAT MAKER</h1>
@@ -52,7 +52,7 @@ We are going to start by writing HTML code; we are going to go into our `<body>`
 ![Preview of HTML with no CSS](https://i.ibb.co/72XvNn3/Annotation-2020-09-20-204442.png)
 
 And if we run our code, it should look like this.
-Not so compelling, right? We will now need to write some CSS, which will style our HTML document and make our Beat Maker look prettier, let's do that.
+Not so compelling, right? We will now write some CSS, which will style our HTML document and make our Beat Maker look prettier, let's do that.
 
 Just before the end of your `<head>` tag, link your CSS file:
 
@@ -131,7 +131,7 @@ h1 {
 }
 ```
 
-If you run your code nothing has changed, that's because we are using class to group our HTML elements, let's go back to our `index.html` and to our `<div>` we will want to do the following:
+If you run your code nothing has changed, that's because we are using classes to group our HTML elements, let's go back to our `index.html` and to our `<div>` we will want add class names to our elements:
 
 ```html
 <div class="pad">
@@ -229,9 +229,9 @@ We are now going to add colors, make hovering effects, inactive or active states
 
 ## Adding audio interactivity with JS
 
-And finally, we are done with our CSS. It now looks good, but when you click on the buttons, they are clickable, but we have no sound. We need to write our JavaScript/jQuery code that will get us sound.
+And finally, we are done with our CSS. It now looks good, but when you click on the buttons we have no sound. We need to write our JavaScript/jQuery code that will get us sound.
 
-Navigate to the `index.html` file. Then, just before the end of your `<body>` tag, import your `script.js` file that will be loaded when our document loads:
+Navigate to the `index.html` file. Then, just before the end of your `<body>` tag, import your `script.js` file that will be used when our document loads:
 
 ```html
 <script src="script.js"></script>
@@ -245,7 +245,7 @@ We will start by checking if the document is ready so we can perform our script 
 $(document).ready(function () {})
 ```
 
-And in the function above is where we will write all our code. What we will do is create 12 variables that will hold sound files hosted on AWS (Amazon Web Services), don't worry, you won't need to host your files by yourself. You can use mine.
+And in the function above inside is where we will write all our code. What we will do is create 12 variables that will hold sound files hosted on AWS (Amazon Web Services), don't worry, you won't need to host your files by yourself. You can use mine.
 
 After creating a variable, we will use the Audio class to make our variable an object. The Audio class comes with the jQuery library.
 
@@ -415,4 +415,4 @@ To finish, here are some amazing, more customized drum pad machines/beatmakers m
 - Music Pad Controller with Keyboard (https://endertech.com/blog/music-pad-javascript-html-css)
 - My favorite one is by Dev Ed, Make Music with JavaScript by on Youtube(https://www.youtube.com/watch?v=8T4SCksjrQ4).
 
-We are done with our workshop, and you can go ahead, customize it, and add more things to it. Hope you enjoyed this workshop, happy hacking!
+We are done with our workshop, and you can go ahead, customize it, and add more things to it. I hope you enjoyed this workshop, happy hacking!
