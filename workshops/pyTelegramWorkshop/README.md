@@ -220,7 +220,7 @@ Again, we import *_requests_* and *_json_*. Since *_json_* is a part of Pythonâ€
 import requests, json
 ```
 
-Now we take an input for the BOT token, and concatenate it with the required URL, issuing *_getUpdates_*. Then we define a variable updates, as a .JSON returned by requests.
+Now we take input for the BOT token, and concatenate it with the required URL, issuing *_getUpdates_*. Then we define variable updates, as a .JSON returned by requests.
 
 ```python
 token = input("Enter your complete bot token: ")
