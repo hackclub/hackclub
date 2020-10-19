@@ -6,7 +6,7 @@ author: '@wollygfx'
 
 # Animated 3D Models
 
-We all have wanted to make 3D models at some point, although it seems to be complicated, but it’s not!— In this workshop, we will be using a simple Java Script library named Zdog that will let us make anything we want to in a matter of minutes, follow along with us and see how easy it is.
+We all have wanted to make 3D models at some point, although it seems to be complicated, it’s not!— In this workshop, we will be using a simple JavaScript library named Zdog that will let us make anything we want to in a matter of minutes, follow along with us and see how easy it is.
 
 At the end of this workshop, you will be able to make 3d models like these:
 
@@ -17,7 +17,7 @@ Here's a [live demo](https://repl.it/@wollygfx/Hack-Club-Workshop-Demo) of what 
 
 ## Set Up
 
-This workshop requires a very basic knowledge of the following languages: HTML & JS. Don’t worry if you get stucked at some point of the workshop, everything is explained the best way for you to understand!
+This workshop requires a very basic knowledge of the following languages: HTML & JS. Don’t worry if you get stuck at some point in the workshop, everything is explained the best way for you to understand!
 
 For this workshop we will use [Repl.it](https://repl.it), click [here](https://repl.it/languages/html) to create a coding environment right for this workshop.
 <br>
@@ -26,7 +26,7 @@ For this workshop we will use [Repl.it](https://repl.it), click [here](https://r
 
 ## HTML part
 
-Alright, let’s start!. First we want to create inside of the <body> tag a <canvas> in which, the 3d model we are going to create will render. Then, put a class; feel free to name it as how ever you want to… I will name it as “model”.
+Alright, let’s start!. First, we want to create inside of the <body> tag a <canvas> in which, the 3d model we are going to create will render. Then, put a class; feel free to name it as however you want to… I will name it as “model”.
 ```html
 <canvas class="model"></canvas>
 ```
@@ -34,7 +34,7 @@ Now we have to put the following code inside of the <body> tag, this code allows
 ```
 <script src=“https://unpkg.com/zdog@1/dist/zdog.dist.min.js”></script>
 ```
-At the end, your code should look kind of like this:
+In the end, your code should look something like this:
 ```html
 <body>
     <canvas class="model"></canvas>
@@ -50,7 +50,7 @@ Now that we have our html file ready to go, we gotta work on our javascript file
 
 ### Setting up the canvas
 
-We are going to start with the funny part. First, let’s create a main variable and let’s give it a name, I will name it as “ws”
+We are going to start with the fun part. First, let’s create the main variable and let’s give it a name, I will name it as “ws”
 
 ```javascript
 const ws = new Zdog.Illustration({
@@ -62,7 +62,7 @@ Let's break this down:
 
 1. **Illustration** is the top-level class that handles dealing with the <canvas> element, holding all the shapes in the scene, and displaying those shapes in the element.
 2. **element** we use this element to match the render with the canvas tag
-3. **resize** is used to modify the size in which the model will be render, in this case, the 3d model will render in the whole screen. If you want to, you can remove this element.
+3. **resize** is used to modify the size in which the model will be rendered, in this case, the 3d model will render on the whole screen. If you want to, you can remove this element.
 
 At this point nothing shows up yet, so let’s create our first 3d model.
 
@@ -95,7 +95,7 @@ Explanation:
 - Height: Sets the height of the cube
 - Depth: Sets the depth of the cube. If the value is 0, the cube will render as a 2d square; so make sure to give it a value.
 4. The Stroke element gives the 3d model a stroke, it works as an external layer that you can use to give your 3d model a rounded look. Play around with it!
-5. leftFace, rightFace, topFace & bottomFace elements give a color to each face of the 3d model, try using different colors for each face, so that you can appreciate way better the animations you make.
+5. leftFace, rightFace, topFace & bottomFace elements give color to each face of the 3d model, try using different colors for each face, so that you can appreciate way better the animations you make.
 
 ### Rendering
 
@@ -131,7 +131,7 @@ Explanation:
 1. We just created a function that will make the 3d model rotate, you can name this function to whatever you want.
 2. ```rotate.x``` and ```rotate.y``` set’s the velocity to the rotation of the model: 
 - The cube will move up and down depending on the given value (- or +, respectively)
-- The cube will move to the right and to the left depeding on the given value (- or +, respectively)
+- The cube will move to the right and to the left depending on the given value (- or +, respectively)
 3. ```ws.updateRenderGraph()``` updates and render your Zdog illustration that was declared in the first variable, make sure to write the correct name in.
 4. ```requestAnimationFrame(animatemodel)``` this is like a loop, basically it makes the model rotates every time by creating frames.
 5. ```animeatemodel()``` calls the function.
@@ -149,7 +149,7 @@ If you want to try and make more complex models you will need to use multiple sh
 
 ![examples](https://cloud-2jaw6a14x.vercel.app/0image.png)
 
-Making multiple shapes is very easy, it’s as simple as putting multiple shapes together, until you get what you want. The hardest part of this, is to put everything where it must be, we can do this using the property: “translate”. Let’s see how it works!
+Making multiple shapes is very easy, it’s as simple as putting multiple shapes together until you get what you want. The hardest part of this is to put everything where it must be, we can do this using the property: “translate”. Let’s see how it works!
 
 I wanna try making the Hack Club logo, but you can make whatever you want!. Click [here](https://repl.it/@wollygfx/Hack-Club-logo) to see the final code.
 
@@ -169,7 +169,6 @@ new Zdog.Box({
 3. The whole square will have the same color (red), so we can use the color property to give the whole shape a single color instead of assigning a color to each face.
 4. As said before, the stroke property helps the shape to look a little rounded.
 5. The translate property moves the square -18 within the z-axis. You can interpret this as if you were giving a shape a depth, so the shape is moved backwards.
-
 
 When running these few lines, we will get this:
 ![red square](https://cloud-2q1vsewnu.vercel.app/0image.png)
