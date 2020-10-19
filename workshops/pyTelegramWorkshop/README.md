@@ -103,13 +103,13 @@ For the inquisitive ones out there, there will be some references and resources 
 
 Telegram has these ‘bots’, or simple chats which can be handled autonomously. They’re basically a way for developers and service providers to automate interactions.
 
-To interface with a bot, we first need to create one, and get its credentials.
+To interface with a bot, we first need to create one and get its credentials.
 
 Making a bot is quite easy. Ironically enough, you create bots via a bot called *_‘BotFather’_*. 
 
 https://t.me/BotFather
 
-Its Telegram’s official bot.
+It's Telegram’s official bot.
 
 
 
