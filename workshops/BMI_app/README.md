@@ -84,7 +84,10 @@ BMI_value Text property       :to      nothing please ❗️delete the text in t
 Text_Diagnosis Text property  :to      Diagnosis:
 Diagnosis_report Text property:to      nothing please delete the text in there and don’t add any text.
 -------------------------------
+
+
 `picture of how it will look likebefore it centred`
+
 Let change the property of our Screen as to how the component be placed, so we are going to centralised everything.
 click on `-Screen` components then click on the Property *AlignHorizontal* and set it to {central:3}
 
@@ -96,7 +99,7 @@ then click on property Backgroundcolor  to set the bakground clour you prefare.
 Your final screen of should look something like this:
 `pics of the final`
 
-Now you app should be good looking do some block!!!!
+Now your app should be good looking do some block!!!!
 
 # Step 2
 
@@ -107,76 +110,154 @@ Remember, this formula is used to find the BMI value:
 
 `(Your weight / your height )^2`
 
- Let then create a procedure that does this, 
-we will go onto the the *Block* slide and click on the BLock `🟪Procedure` and drag and drop the second bock that say `To Procedure result do`  on the viewer slide
+ Let then create a procedure for that, 
+we will go into the the *Block* slide and click on the BLock `🟪Procedure` and drag the second bock that say `🟣To Procedure result do` and drop on the viewer slide
 .
 `picture of creating a procedure`
 
 
-Let go bak to the formula, we need to call `(your weight /  your height) ^ 2`, so let take the division sign, clickon the  `🟦Maths` 
-`pctirse`
-and drag and drop the Block with a ` / ` sign into the `TO Procedure result do`
+Let go bak to the formula, we need to call `(your weight /  your height) ^ 2`, so let take the division sign first, inside the  `🟦Maths` block drag and drop the Block ` / `sign
+
+
+inside the block `🟣TO Procedure result do`
+
 `picture`
-Go back to the `🟦Math` block and drag and drop the block with sign  the ` ^ `  drop it inside the second puzzle of of the division block ` / `.
+
+inside the `🟦Math` block and drag the block with sign the ` ^ ` and  drop it inside the second puzzle of of the division block ` / `.
 
 `poish`
 
-Then click `⬜️Value_weight` Block, now inside drag and drop the block `Value_weight.Text`
+Then click on `⬜️Value_weight` Block, scroll down to the block `🟢Value_weight.Text`
+
 `picture of the value_weigth text`  
-and place it in the first puzzle of the block` / `(division),
 
-now click on the bock `⬜️Value_height` and scroll done for the block `Value_Height.Text`
+and place it in the first puzzle of the` / `(division) block,
 
-and place it in the second puzzle of the block / (division).
+`picture`
 
-Now we want to square, or to to the power of 2, so in the `🟦Math` block and take the first bock that has ' 0 ' in the last puzzle block.
+then click on the block `⬜️Value_height` and scroll done for the block `🟢Value_Height.Text`
 
-then click inside the ' o ' block to change the number to 2.
- your final code should look like this:
+`picture`
+
+and place it in the second puzzle of the` / ` (division) block.
+
+
+`picture`
+
  
  
- 
-Now we want to square,or raise to the power of 2, so in the `🟦Math` block and take the first bock that has ' 0 ' in the last puzzle block.it and place it after the multiplication sign your block ,
+Now we want to square,or raise to the power of 2, so in the `🟦Math` block and take the first bock that has ` 0️⃣ ` and place it inside the last puzzle block.
 
-now click inside this block again to gauge the number to `2`, your block should then be place in the remaining puzzle that allow the value to be multiply by 2. Now redone with our procedure that would allow us to know someone’s BMI value.
+`picture`
 
+then click inside the 0️⃣ block and set the value to  `2`.
 
-Now let process the BMi value from the `🟣Calculate procedure` and give an output that categorise them.
-Now click on the Block `◻️Button_calculate`   and look for block When.Button_calculate.Click.do  and place it on the Viewer slide. Now go back on the Block slide and click on the Block BMI_value and drag and drop the block Set.BMI_value.text.to inside the the Button_calculate.  Now we see an error or a red cross on the block well no problem for that, it just informing us that we did not assign any value to that block. Go back on the Block slide and click on the block Procedure drag and drop the block Call.calculate inside the set.BMI_value.Text.to , now the cross line should go away. Let me explain what will happen here, so when the button_calculate is click the BMI_value ’s text will be the Value of the BMI, which was calculated by the Procedure Calculate. 
-Now let process the BMi value from the `🟣Calculate procedure` and give an output that categorise them. Now click on the Block Button_calculate  and look fist block When.Button_calculate.Click.do  and place it on the Viewer slide. Now go back on the Block slide and click on the Block BMI_value and drag and drop the block Set.BMI_value.text.to inside the the Button_calculate.  Now we see an error or a red cross on the block well no problem for that, it just informing us that we did not assign any value to that block. Go back on the Block slide and click on the block Procedure drag and drop the block Call.calculate inside the set.BMI_value.Text.to , now the cross line should go away. Let me explain what will happen here, so when the button_calculate is click the BMI_value ’s text will be the Value of the BMI, which was calculated by the Procedure Calculate. 
-Let now categorise someone’s BMI value to the correct categories weight. So first there is a general rule to categorise someone’s weight here it is: 
+`picture`
 
-`_If the BMI value is less than 17 then the person is very underweight`
+Now let process the BMI value from the `🟣Calculate procedure` and give an output that categorise each BMI value.
 
+Now click inside  `🟧Button_calculate` block and look for block `🟠When Button_calculate.Click do`  and place it on the Viewer slide. 
 
-`If the BMI value is between 17 and 18.5 then the person is underWeight`
+`picture`
 
+Inside the Block `⬜️BMI_value` and scroll down for the block `🟢Set BMI_value.text to` and drop it inside the `🟠When Button_calculate.click do` block.
 
-`If the BMI value is between 18.5 and 25 then the person has normal weight` 
+`picture`
 
+Now we receive an error ❌ on the block well no problem will fix that,we are just being informed that we did not assign any value to this block. Now click on the `🟪Procedure` drag the block `🟣Call calculate` join it with `🟢set BMI_value.Text to` block, now the cross line should go away.
 
-`If the BMI value is between 25 and 30 then the person is over Weight`
+Let me explain what will happen here, so when the `🟧button_calculate` is click the label of the BMI willbe change to the value of the BMI from the procedure `🟣calculate.` 
+Let  then do a comparission base of the BMI value to someone's to how someone is diagonis, this sis exact this how the code will be written:
 
+` `🟠If` the BMI value from `🟣call calcualte` is less than 17 then the person is "very underweight"`
 
-`If the BMI value is between 30 and 35 then the person has Obesity 1`
+` `🟠else If` the BMI value from `🟣call calcualte` is smaller than 17 and bigger than 18.5 then the person is "_under Weight_"`
 
-
-`If the BMI value is between 35 and 40 then the person has obesity 2(severe)`
-
-
-`If the BMI value is over 40 then the person has obesity 3 (horbid)_`
+` `🟠else If` the BMI value from `🟣call calcualte` is smaller 18.5 and bigger than 25 then the person has "_normal weight_"` 
 
 
-So that what we are going to do now. Take not that the procedure To.calculate.do has the person’s BMI value. Now we are going to call.calculate it to compare it with these numbers. We will need the following, an the If statement so go back on the Block slide and click on the Control bock and drag and the third block of if statement as we well nee a lot of it and drop it in under the block we made in Button_calculate. Now you see there is like a a parameter small button like parameter inside the if statement, click on this block to expand our number of statement, as you click it an option of button will open up, now dead and drop Else if  statements so now let add 4 Else if statement one after another like this video. Now click on that parameter option again to close this option.
-We now can start making the Block code according to the rule I explain how to categorise the BMI value. 
- Now go inside the Maths block and drag a block with an equal sign = and drop it  with the first If inside the If statement , now click inside the Procedure block drag and drop the Call.calculate block inside the first open puzzle from the = block.click on the = sign and set the sign < . Now let call the block Number , inside the Maths Block drag and drop the block that as a number 0 with inside the second puzzle of the = #. Now click on this number block to edit it and set it value to 17. Let go inside the Diagnosis_report drag and drop the block with set.Diagnosis_report.Text.to inside the then Statement. Now go to Text block and drag the first block that has only the “ “ inside it and place it in the set.diagnosis_report.text.to block. now click inside this block to set the text value. Now inside it write “Very underweight “. Now wrote the first code for the rule to set the categorise the person’s weight. now let go for the first Else if statement . 
+` `🟠else If` the BMI value from `🟣call calcualte` is smaller 25 and bigger than 30 then the person has "_over Weight_"`
+
+
+` `🟠else If` the BMI value from `🟣call calcualte` is smaller 30 and bigger than 35 then the person has "_Obesity 1_"`
+
+
+` `🟠else If` the BMI value from `🟣call calcualte` is smaller 35 and bigger than 40 then the person has "_obesity 2(severe)_"`
+
+
+` `🟠else` the BMI value from `🟣call calcualte` is over 40 then the person has "_obesity 3 (horbid)_"`
+
+
+So that what we are going to do now. we will need an `🟠If` statement.
+Click on the `🟧Control` bock and drag and the third block of `🟠if` statement 
+
+`picture`
+and drop it under `🟢set BMI_value.Text to` block.
+`picture`
+
+Now we see a small button like ☸️ paremeter  inside the if statement, click on this button to to add more else if statement.
+
+`picture`
+
+an option will open up that we could add more `🟠else if` statement, now inside this blocks drag `🟠else if` statement inside the group of block and on top of `🟠else` statements.
+
+`picture`
+
+You will then add 4 `🟠Else if` statement one after another.
+
+`picture`
+
+Now click on that parameter option again to close this option.
+
+`picture`
 
 
 
 
-⚠️THIS STEP WILL BE REPEATED LATER I WILL SHOW YOU HOW 
-To compare values we will use the And operator, so go and click on the Logic Block and drag the block with And and place it on the Else if statement. Then go inside the Maths Block and drag and drop the code with the = sign and place it inside the first puzzle of the And block, then change it sign to <=  by clicking on the = sign. It should look like this:
- Now time to go to Math Block and drag and drop the block number With 0, and place it in the first puzzle of  the block we made. Now go to the Procedure block and drag the Call.Calculate block into the second puzzle. Now go on the Math block and drag the block which = sign and place it in the second puzzle of the of the And block and change it sign to <.
+We now can start making the Block code according to he code I show you how we will diagonis the person according to their BMI value. 
+Inside the `🟦Maths` block and drag the block with equal sign `=` and join it with the first `If`statement,
+
+`picture`
+`picture`
+then click on the `=` sign and seelect the sign to ` < `.
+
+`picture`
+
+then click inside the `🟪Procedure` block drag the `🟣Call calculate` block join it with the first open puzzle from the `=` block.
+
+`picture`
+
+Now let call the block Number , inside the `🟦Maths` Block drag the first block `0️⃣` and place it in the second puzzle block of the `=` block. 
+`picture`
+
+Now click on this number block and set it value to ` 17 `.
+
+`picture`
+
+Now go inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the first `🟠else` Statement.
+
+Now go over to `🟥Text` block and drag the first block that has only the ` “ “ ` inside it and join it with `🟢set diagnosis_report.text to` block.
+
+`picture`
+
+now click inside the `" "` block to set the text value to `“Very underweight “`. Now we just finish categorise.
+
+
+
+# ⚠️THIS STEP WILL BE REPEATED LATER I WILL SHOW YOU HOW
+
+
+To compare values we will use the `And` operator, so click on the `🟩Logic` Block and drag the block with ` And ` then place it on the first `🟠Else` if statement.
+
+`picture`
+
+Then go inside the `🟦Maths` Block and drag ` = ` sign block and place it inside the first puzzle of the ` And ` block, then change it sign to ` <= `  by clicking on the ` = ` sign.
+
+`picture`
+
+`picture`
+
+Then time click on `🟦Math` Block and drag the block number With ` 0️⃣ `, and place it in the first puzzle of ` = ` sign block we have. Now go to the `🟪Procedure` block and drag the `🟣Call Calculate` block into the second puzzle. Now go on the Math block and drag the block which = sign and place it in the second puzzle of the of the And block and change it sign to <.
  Now go over the Procedure Block and drag the Call.calculate block inside the first puzzle. 
 Now go over the Math block and drag the 0 block and place it in the second puzzle after. Now set the value for the first block number to 17 and the second to 18.5. 
 Now go over the Diagnosis_report  Block and look and drag the block set.diagnosis_report.Text.to the then block that follow the block we wrote. 
