@@ -74,7 +74,7 @@ This is purposely to remove the default margin and padding of every element and 
   }
 ```
 
-Both the width and height are set to the view width and view height of the viewing device. It is display flex (Flex is a new feature in css that encourage and improve responsiveness of every web pages) you can read more at [Read more Here](https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/amp/&ved=2ahUKEwiX0LzIrL_sAhWsyIUKHRveA2EQFjAkegQIGhAB&usg=AOvVaw1L3IU0DUtdahRsgB-n5vBS&ampcf=1)
+Both the width and height are set to the view width and view height of the viewing device. It is display flex (Flex is a new feature in css that encourage and improve the responsiveness of every web pages) you can read more at [Read More Here](https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/amp/&ved=2ahUKEwiX0LzIrL_sAhWsyIUKHRveA2EQFjAkegQIGhAB&usg=AOvVaw1L3IU0DUtdahRsgB-n5vBS&ampcf=1)
 
 
 - Styling the Card
