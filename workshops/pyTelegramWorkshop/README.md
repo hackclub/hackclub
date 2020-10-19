@@ -331,7 +331,7 @@ You can try this on a repl.it if you feel too lazy to code: https://repl.it/@del
 
 # Goodbye!
 
-That was all for this workshop. This is the first ever workshop that I’ve made in my life and the first time when I’ve tried to teach something to such a wide and diverse community!
+That was all for this workshop. This is the first-ever workshop that I’ve made in my life and the first time when I’ve tried to teach something to such a wide and diverse community!
 
 I really hope this workshop was fun. If you have any doubts, contact me on HackClub’s Slack: @deltaonealpha (https://hackclub.slack.com/team/U01AVFQUCAD)
 
