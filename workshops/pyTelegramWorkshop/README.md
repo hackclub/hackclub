@@ -280,7 +280,7 @@ url = f'https://api.telegram.org/bot{token}/getUpdates'
 updates = requests.post(url).json()
 ```
 
-Then we print the slice the .JSON received, print the received text and put it in an *_if…else_* block to compare it and detect whether the message is “hello” (or its case variations) or something entirely different! 
+Then we print the slice the .JSON received, print the received text, and put it in an *_if…else_* block to compare it and detect whether the message is “hello” (or its case variations) or something entirely different! 
 
 ```python
 print("\nText recieved:\n--------------")
