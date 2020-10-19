@@ -343,7 +343,7 @@ I really hope this workshop was fun. If you have any doubts, contact me on HackC
 
 ![Mahdi-electroBoom-image-the-rectifier](https://cloud-cwg1brm1x.vercel.app/0picture24.jpg)
 
-While our code works marvellously, we still have a major problem to fix before we move on to making this a part of something big.
+While our code works marvelously, we still have a major problem to fix before we move on to making this a part of something big.
 
 ### Issuing Read Receipts to Telegram
 
