@@ -189,7 +189,7 @@ fetch is one of the way of making `HTTP` calls. http calls are numerous ranging 
 
 ### What is a Promise?
 
-Promise is that object that may produce single value in the future. Response which denote fulfilment or rejection that is success or failue which is handle in javascript with `.then() method`.
+The promise is that object that may produce a single value in the future. A response that denotes fulfilment or rejection that is success or failure which is handle in javascript with `.then() method`.
 
 ```
   .then((res) => {
