@@ -40,7 +40,7 @@ Python is a leading language today. Being extremely flexible and one of the easi
 
 Let me give you an example.
 
-My father’s friend lost a lot of money because his restaurant’s manager logged meagre sales and pocketed much of the profit.
+My father’s friend lost a lot of money because his restaurant’s manager logged meager sales and pocketed much of the profit.
 
 On hearing this, I started to think, what if every purchase got logged on its own, in a place inaccessible for everyone but the owner? 
 
