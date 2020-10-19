@@ -88,7 +88,7 @@ Yeah, all using Telegram and Python! What I did is nothing compared to what you 
 
 \- **EXTRA RESOURCE**: Marking received messages as read and a  dive into BOT API v2 and inline stuff!
 
-**NOTE**: This workshop will be a quick one, so that it can be made quickly without getting boring. 
+**NOTE**: This workshop will be a quick one so that it can be made quickly without getting boring. 
 
 For the inquisitive ones out there, there will be some references and resources attached at the end so you can tinker a bit more.
 
