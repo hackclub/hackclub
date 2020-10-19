@@ -15,7 +15,7 @@ This is the end product of a small project that this workshop houses:
 ![screenshot-of-workshop-end-project](https://cloud-fmg4yoxia.vercel.app/0dta29-master.png)
 
 
-Here's a sample of what I personally use this for. My store manager, called DBFA uses a Telegram BOT to inform the store owner about operations, schedules, payments and much more. It also enables two-factor-authentication (2FA) via Telegram.
+Here's a sample of what I personally use this for. My store manager, called DBFA uses a Telegram BOT to inform the store owner about operations, schedules, payments, and much more. It also enables two-factor-authentication (2FA) via Telegram.
 ![screenshot-of-my-personal-implementation](https://cloud-qnh4qjxv1.vercel.app/0dta30-master.jpg.png)
 
 
