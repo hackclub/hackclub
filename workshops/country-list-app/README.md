@@ -146,6 +146,8 @@ The font size and type are set and spacing were set using padding and margin wit
         cardParent.appendChild(flagImage);
         cardParent.appendChild(countryName);
       }
+     });
+    });
 ```
 
 **_ This is the code that did all the magic and I will be expalining what each section is doing one after the other _**
