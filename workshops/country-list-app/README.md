@@ -1,6 +1,6 @@
 ---
 name: "World Countries and their Flags with Javascript"
-description: "This is an app that contain the list of all the countries in the world with teir names and flags"
+description: "This is an app that contains the list of all the countries in the world with their names and flags"
 author: "@Taiwrash"
 ---
 
@@ -226,4 +226,3 @@ other live demo and extension.
 [three layered country list app](https://rasheedtaiwo.github.io/day16)
 
 [country list app with amazing style](https://devmukhtar.github.io/workshops)
-
