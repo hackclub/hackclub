@@ -10,7 +10,7 @@ author: "@Taiwrash"
 
 This is the [Live Demo](https://country-list.taiwrash.repl.co) of the app and [Full Code](https://repl.it/@Taiwrash/country-list).
 
-_We recomend any browser and good network andor internet access._
+_We recommend any browser and good network access._
 
 In this workshop we will be using the [restcoutries.eu](https://restcountries.eu) rest API to fetch all the flags and the countries name using vanilla javascript.
 
