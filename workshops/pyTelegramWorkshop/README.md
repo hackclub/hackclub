@@ -151,7 +151,7 @@ Running this code on repl.it doesn’t require you to pip.
 import requests
 ```
 
-Now we define a function, *_sendMsg()_*. To call this function, we will need to pass three parameters with it, your *_bot’s token_*, your *_chat ID_* and the text you need to send. As simple as that!
+Now we define a function, *_sendMsg()_*. To call this function, we will need to pass three parameters with it, your *_bot’s token_*, your *_chat ID_*, and the text you need to send. As simple as that!
 
 _send_text_ concatenates your token, chat ID and message with the base URL of Telegram’s API. This includes the method *_sendMessage_*, which is used to… well, send messages.
 
