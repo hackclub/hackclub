@@ -45,7 +45,7 @@ We will be using very simple and easy to understand html elements as display bel
   </html>
 ```
 
-**NOTE:** `You can copy paste the code above` But, never copy paste a non-clear code or the code you did not understand. A brief explanation of the html boilerplate at the top is as simple as having `css` file linked at the `head` section of the html along with the title element to show web title and the main element for the purpose of semantic and web page accessibilties. Followed by a div with a class attribute of card which shall hold every country flags and names and lastly linked with a javascript `script` file that will do all the magic, just before the body closing tag.
+**NOTE:** `You can copy-paste the code above` But, never copy paste a non-clear code or the code you did not understand. A brief explanation of the html boilerplate at the top is as simple as having `css` file linked at the `head` section of the html along with the title element to show web title and the main element for the purpose of semantic and web page accessibilities. Followed by a div with a class attribute of card which shall hold every country flags and names and lastly linked with a javascript `script` file that will do all the magic, just before the body closing tag.
 
 # The StyleSheet
 
