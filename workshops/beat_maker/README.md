@@ -1,6 +1,6 @@
 ---
-name: 'Beat Maker'
-description: 'Make a web drumpad/beat maker in HTML/CSS & jQuery'
+name: 'Drum Pad'
+description: 'Build a drumpad/beat maker in HTML/CSS & jQuery'
 author: '@emmanuel39hanks'
 ---
 
@@ -16,9 +16,9 @@ In this workshop, you’re going to create a drum pad/beatmaker that plays actua
 
 ## Getting started
 
-We’re going to be using HTML, CSS & jQuery(https://jquery.com/)(is a JavaScript library used to change elements on a webpage).
+We’re going to be using HTML, CSS & jQuery(a JavaScript library used to change elements on a webpage https://jquery.com/).
 
-Get started by creating an HTML/CSS & JavaScript project on repl.it. Once your project is setup, navigate to the `index.html` file. Then, just before the end of your `<head>` tag, import jQuery:
+Get started by creating an HTML/CSS & JavaScript project on repl.it(https://repl.it/). Once your project is  set up, navigate to your `index.html` file. Then, just before the end of your `<head>` tag, import jQuery:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -247,7 +247,7 @@ We will start by checking if the document is ready so we can perform our script 
 $(document).ready(function () {})
 ```
 
-And in the function above is where we will write all our code, what we will do is create 12 variables that will hold sound files hosted on aws, don't worry you won't need to host your files by yourself you can use mine.
+And in the function above is where we will write all our code, what we will do is create 12 variables that will hold sound files hosted on AWS (Amazon Web Services), don't worry you won't need to host your files by yourself you can use mine.
 
 After creating a variable, we will use the Audio class to make our variable an object. The Audio class comes with the jQuery library.
 
@@ -399,7 +399,7 @@ $(document).ready(function () {
 
 ## Publishing
 
-Once you're done making this, how about sharing it in the Slack ship channel and also with me @Emmanuel Haankwenda on Hack Club Slack.
+Once you're done, how about sharing it in Hack Club's Slack ship channel? And also with me on Slack @emmanuel39hanks.
 
 ## Resources
 
@@ -411,7 +411,7 @@ Once you're done making this, how about sharing it in the Slack ship channel and
 
 ## Inspiration
 
-To finish off, here are some amazing, more customized drum pad machines/beatmakers made by other developers:
+To finish, here are some amazing, more customized drum pad machines/beatmakers made by other developers:
 
 - A code playground on Solo Learn by Andrew Siachos (https://code.sololearn.com/WfYyBdZwc6qn/#html)
 - Music Pad Controller with Keyboard (https://endertech.com/blog/music-pad-javascript-html-css)
