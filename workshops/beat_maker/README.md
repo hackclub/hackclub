@@ -8,7 +8,7 @@ author: '@emmanuel39hanks'
 
 ![Beat Maker Preview](https://i.ibb.co/r0JLpWB/Annotation-2020-09-20-200719.png)
 
-_^ Preview of the DrumPad/Beat Maker we are going to be creating_
+_^ Preview of the DrumPad/Beat Maker we are going to be creating._
 
 In this workshop, you're going to create a drum pad/beatmaker that plays actual sounds in less than 230 lines of code.
 
@@ -18,15 +18,13 @@ In this workshop, you're going to create a drum pad/beatmaker that plays actual 
 
 We will be using HTML, CSS & jQuery(a JavaScript library used to change elements on a webpage https://jquery.com/).
 
-Get started by creating an HTML/CSS & JavaScript project on repl.it(https://repl.it/). Once your project is  set up, navigate to your `index.html` file. Then, just before the end of your `<head>` tag, import jQuery:
+We will get started by creating an HTML/CSS & JavaScript project on repl.it (https://repl.it/). Once your project is  set up, navigate to your `index.html` file. Then, inside of our `<head>` tag, import jQuery:
 
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-`"
+`<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>`
 
 Great! Now that we've imported jQuery, we're ready to start writing our code.
 
-## Laying out our pads
+## Creating the pad layout
 
 We are going to start by writing HTML code; we are going to go into our `<body>` tag, which is where we write code that will be shown to the client and create a header with the `<h1>` tag, and then we will have 3 rows, and 4 columns of pads and each pad will be a `<div>,` you can think of the `<div>` as a box or container.
 
@@ -49,7 +47,7 @@ We are going to start by writing HTML code; we are going to go into our `<body>`
   <div>K</div>
   <div>L</div>
 </div>
-`"
+```
 
 ![Preview of HTML with no CSS](https://i.ibb.co/72XvNn3/Annotation-2020-09-20-204442.png)
 
@@ -60,7 +58,7 @@ Just before the end of your `<head>` tag, link your CSS file:
 
 ```html
 <link rel="stylesheet" href="style.css" />
-`"
+```
 
 Your CSS file should now be linked, and we can start writing our CSS code.
 
@@ -81,7 +79,7 @@ body {
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
 }
-`"
+```
 
 ![Preview of HTML with CSS applied, to change the layout](https://i.ibb.co/qgY3jCv/Annotation-2020-09-20-210409.png)
 
@@ -131,7 +129,7 @@ h1 {
 .pad-12 {
   border: 2px solid;
 }
-`"
+```
 
 If you run your code nothing has changed, that's because we are using class to group our HTML elements, let's go back to our `index.html` and to our `<div>` we will want to do the following:
 
@@ -152,7 +150,7 @@ If you run your code nothing has changed, that's because we are using class to g
   <div class="box pad-11">K</div>
   <div class="box pad-12">L</div>
 </div>
-`"
+```
 
 ![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://i.ibb.co/TLFcmvk/aasdasd.png)
 And when we rerun our code, it should look like this.
@@ -224,7 +222,7 @@ We are now going to add colors, make hovering effects, inactive or active states
   transform: scale(1.1);
   transition: all 0.2s;
 }
-`"
+```
 
 ![Preview of HTML with our finished layout CSS applied, and our pads colored](https://i.ibb.co/LpYQY6N/asdasdasdasdasdasd.png)
 
@@ -237,7 +235,7 @@ Navigate to the `index.html` file. Then, just before the end of your `<body>` ta
 
 ```html
 <script src="script.js"></script>
-`"
+```
 
 We will then start writing our jQuery code in `script.js.`
 
@@ -245,7 +243,7 @@ We will start by checking if the document is ready so we can perform our script 
 
 ```javascript
 $(document).ready(function () {})
-`"
+```
 
 And in the function above is where we will write all our code. What we will do is create 12 variables that will hold sound files hosted on AWS (Amazon Web Services), don't worry, you won't need to host your files by yourself. You can use mine.
 
@@ -291,7 +289,7 @@ $(document).ready(function () {
     'https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CP.mp3'
   )
 })
-`"
+```
 
 We are almost done—all we need to do is use the jQuery selector (`$`) to select classes and check for actions. We want to load and play a sound when the mouse key is down, which we can implement like this:
 
@@ -395,7 +393,7 @@ $(document).ready(function () {
     padTwelve.play()
   })
 })
-`"
+```
 
 ## Publishing
 
