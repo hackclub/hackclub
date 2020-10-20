@@ -25,6 +25,7 @@ Now let build  our app. We will start off by visiting [MIT app inventor](http://
 if you were not redirected to _Create New App Invetor project, right on the top_, click the `Start new Project` button. then name your to  *BMI*
 
 `photo`
+
 NOTE: if you prefer to used another name, you can, but you should not place a space between the words instead use an undercover ( _ ). 
 
 
@@ -69,13 +70,10 @@ your final screen should look like this
 Alright we now have all the component we need.
 
 Now go over the slide name `COMPONENTS` So we can rename all our components, on the name we will use to create the block.
-Note: To Rename our components you must click one component on the components slide and scroll done and click on the button `Rename` next to `Delete`
+Note: To Rename our components you must click one component on the components slide and scroll done and click on the button `Rename` next to `Delete` then rename.
 
-
-`![rename]()` 
+![](https://cloud-kocs0wuh7.vercel.app/0screenshot_2020-09-30_at_15.02.50.png)
  
- 
- then Rename.
 
 This is how you should rename the component: 
 
@@ -125,8 +123,7 @@ Diagnosis_report Text property:"to      nothing please delete the text in there 
 
 ---
 
-
-`![](image)before it centerised`
+![](https://cloud-kocs0wuh7.vercel.app/1screenshot_2020-10-20_at_17.40.21.png)
 
 Let change the property of our Screen as to how the component be placed, so we are going to centralised everything.
 click on `-Screen` components then click on the Property *AlignHorizontal* and set it to {central:3}
@@ -139,7 +136,7 @@ then click on property Backgroundcolor  to set the bakground clour you prefare.
 
 Your final screen of should look something like this:
 
-`pics of the final`
+![](https://cloud-kocs0wuh7.vercel.app/2screenshot_2020-10-20_at_17.49.43.png)
 
 Now your app should be good looking do some block!!!!
 
@@ -153,10 +150,9 @@ Remember, this formula is used to find the BMI value:
 `(Your weight / your height )^2`
 
  Let then create a procedure for that, 
-we will go into the the *Block* slide and click on the BLock `🟪Procedure` and drag the second bock that say `🟣To Procedure result do` and drop on the viewer slide
-.
-`picture of creating a procedure`
+we will go into the the *Block* slide and click on the BLock `🟪Procedure` and drag the second bock that say `🟣To Procedure result do` and drop on the viewer slide.
 
+![](https://cloud-kocs0wuh7.vercel.app/3screenshot_2020-10-20_at_17.53.07.png)
 
 Let go bak to the formula, we need to call `(your weight /  your height) ^ 2`, so let take the division sign first, inside the  `🟦Maths` block drag and drop the Block ` / `sign
 inside the block `🟣TO Procedure result do`
@@ -165,11 +161,13 @@ inside the block `🟣TO Procedure result do`
 
 inside the `🟦Math` block and drag the block with sign the ` ^ ` and  drop it inside the second puzzle of of the division block ` / `.
 
-`poish`
+![](https://cloud-kocs0wuh7.vercel.app/5screenshot_2020-10-01_at_18.31.09.png)
 ![](https://cloud-9gy6fkkle.vercel.app/0screenshot_2020-10-01_at_18.33.32.png)
+
 Then click on `⬜️Value_weight` Block, scroll down to the block `🟢Value_weight.Text`
 
 ![img](https://cloud-p5z7fufpn.vercel.app/0screenshot_2020-10-01_at_18.34.51.png)
+![](https://cloud-kocs0wuh7.vercel.app/6screenshot_2020-10-01_at_18.36.04.png)
 
 and place it in the first puzzle of the` / `(division) block,
 
@@ -177,18 +175,16 @@ and place it in the first puzzle of the` / `(division) block,
 
 then click on the block `⬜️Value_height` and scroll done for the block `🟢Value_Height.Text`
 
-`picture`
+![](https://cloud-kocs0wuh7.vercel.app/4screenshot_2020-10-20_at_17.56.00.png)
 
 and place it in the second puzzle of the` / ` (division) block.
-
 
 ![](https://cloud-hyvrauhc9.vercel.app/0screenshot_2020-10-01_at_18.36.32.png)
 
  
- 
 Now we want to square,or raise to the power of 2, so in the `🟦Math` block and take the first bock that has ` 0️⃣ ` and place it inside the last puzzle block.
 
-`picture`
+![](https://cloud-kocs0wuh7.vercel.app/4screenshot_2020-10-20_at_17.56.00.png)
 
 then click inside the 0️⃣ block and set the value to  `2`.
 
@@ -250,13 +246,13 @@ Now we see a small button like ☸️ paremeter  inside the if statement, click 
 
 an option will open up that we could add more `🟠else if` statement, now inside this blocks drag `🟠else if` statement inside the group of block and on top of `🟠else` statements.
 
-`picture of the video`
+![](https://cloud-kocs0wuh7.vercel.app/7elseif.gif)
 
 You will then add 4 `🟠Else if` statement one after another.
 
 Now click on that parameter option again to close this option.in total you will have 1`🟠If` 5`🟠Else If` and 1 `🟠Else`. MAKE SURE THAT ELSE, GO BACK ON THAT PARAMETER AND ADD MORE ELSE IF STATEMENT OR TAKEOUT SOME.
 
-`picture of total else if`
+![](https://cloud-kocs0wuh7.vercel.app/8screenshot_2020-10-20_at_18.34.44.png)
 
 
 We now can start making the Block code according to he code I show you how we will diagonis the person according to their BMI value. 
@@ -283,7 +279,7 @@ Now click on this number block and set it value to ` 17 `.
 
 Now go inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the first `🟠Then` Statement.
 `picture`
-`![]()`
+![](https://cloud-kocs0wuh7.vercel.app/9screenshot_2020-10-01_at_18.40.46.png)
 ![](https://cloud-5xezqqtxs.vercel.app/0screenshot_2020-10-01_at_18.51.39.png)
 
 Then inside `🟥Text`  block and drag the frist block  ` " " `and join it with the `🟢set Diagnosis_report.Text to` block;
@@ -293,7 +289,7 @@ Then inside `🟥Text`  block and drag the frist block  ` " " `and join it with 
 
 now click inside the `" "` block to set the text value to `“Very under weight “`. Now we just finish categorise.
 
-`picture`
+![](https://cloud-36i8guq34.vercel.app/0screenshot_2020-10-01_at_18.53.49.png)
 
 
 # ⚠️Loop start
@@ -301,19 +297,22 @@ now click inside the `" "` block to set the text value to `“Very under weight 
 
 To compare values we will use the `And` operator, so click on the `🟩Logic` Block and drag the block with ` And ` then place it on the first `🟠ELse if`statement.
 
-`picture`
-`picure`
+![](https://cloud-36i8guq34.vercel.app/1screenshot_2020-10-01_at_20.39.00.png)
+![](https://cloud-36i8guq34.vercel.app/4screenshot_2020-10-20_at_19.09.20.png)
+
 Then go inside the `🟦Maths` Block and drag ` = ` sign block and place it inside the first puzzle of the ` And ` block, then change it sign to ` >= `  by clicking on the ` = ` sign
 
 ![](https://cloud-19htxtacx.vercel.app/3screenshot_2020-10-14_at_15.49.26.png)
 
-`picture`
+![](https://cloud-36i8guq34.vercel.app/2screenshot_2020-10-01_at_20.39.33.png)
+
+![](https://cloud-36i8guq34.vercel.app/3screenshot_2020-10-20_at_19.05.36.png)
  
  Then click on the `🟪procdure` block and drag the `🟣Call Calculate` block into the first puzzle of the ` > ` sign block.
 
 ![](https://cloud-ak6482qx9.vercel.app/0screenshot_2020-10-01_at_18.42.26.png)
 
-`picture`
+![](https://cloud-36i8guq34.vercel.app/5screenshot_2020-10-20_at_19.06.12.png)
 
 Then click on `🟦Math` Block and drag the block number With ` 0️⃣ `, and place it in the second puzzle of ` > ` sign block we have. 
 
@@ -321,43 +320,47 @@ Then click on `🟦Math` Block and drag the block number With ` 0️⃣ `, and p
 
 then clock on the ` 0️⃣ ` block and change the number value to ` 17 `.
 
-`picture`
+![](https://cloud-36i8guq34.vercel.app/6screenshot_2020-10-20_at_19.06.34.png)
 
 Now go on the `🟦Math` block and drag the block which ` = `sign and place it in the second puzzle of the ` And ` block then click on ` = ` sign to change the sign to ` < `.
 
 ![](https://cloud-mgwd8r6yh.vercel.app/0screenshot_2020-10-01_at_18.48.42.png)
 
-`picture`
+![](https://cloud-36i8guq34.vercel.app/7screenshot_2020-10-01_at_20.41.41.png)
 
 Then on the `🟪Procedure` Block and drag the `🟣Call calculate` block inside the first puzzle of the ` < ` block.
 
-`picture`
-
+![](https://cloud-36i8guq34.vercel.app/8screenshot_2020-10-01_at_20.42.06.png)
 
 Now go over the `🟦Math` block and drag the 0️⃣ block and place it in the second puzzle of the ` < ` sign block.
 
 Now set the value of the block number to 18.5.
 
-`picture`
-
+![](https://cloud-e8m9xzhx6.vercel.app/0screenshot_2020-10-01_at_20.51.31.png)
 
 Now go inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the  `🟠Then` Statement.
 
-`picture`
+![](https://cloud-6yznwxnfi.vercel.app/0screenshot_2020-10-01_at_18.51.16.png)
+![](https://cloud-5xezqqtxs.vercel.app/0screenshot_2020-10-01_at_18.51.39.png)
 
 Then inside `🟥Text`  block and drag the frist block  ` " " `and join it with the `🟢set Diagnosis_report.Text to` block;
 
-`picture`
+1[](https://cloud-n2y79sumo.vercel.app/0screenshot_2020-10-01_at_18.52.15.png)
+![](https://cloud-n2y79sumo.vercel.app/1screenshot_2020-10-01_at_18.53.04.png)
 
-now click inside the `" "` block to set the text value to `“Under Weight “`.
- `picture`
+now click inside the `" "` block to set the text value to `“Under Weight “`
+
+ ![](https://cloud-e8m9xzhx6.vercel.app/1screenshot_2020-10-01_at_20.47.36.png)
+
 # ⚠️Loop end
 
 
-Now we just completed the second phase for the rule of categorising the BMI value. 
+Now we just completed the second phase for the rule of categorising the BMI value.
+
 Let me explain what this code does, it compare the BMI value from procedure if is bigger than 17 and smaller than 18.5 then set the Diagnosis value to the to “Under weight”.
+
 So we will repeat this step 4 times, but only the text value we will change, 
-from where ⚠️Loop start to where ⚠️Loop end we will repeat that part but only chaging value from the nuber and the string
+from where ⚠️Loop start to where ⚠️Loop end we will repeat that part but only chaging value from the number and the string.
 start again from ⚠️Loop start to  ⚠️Loop end step but chage the number value and string value.
  So it should look like this : 
  
@@ -378,30 +381,37 @@ start again from ⚠️Loop start to  ⚠️Loop end step but chage the number v
         _Then        set Diagonis_report.text to         "Obesity 2(severe)"_
   
   
-`picture` 
+![](https://cloud-e8m9xzhx6.vercel.app/2screenshot_2020-10-01_at_21.04.18.png)
 
 
 Now after you done your block of code should look like the above picture.
 
 So now you should be left with one `🟠else if` and `🟠else` statement.
 
+![](https://cloud-e8m9xzhx6.vercel.app/3screenshot_2020-10-01_at_18.47.04.png)
+
 Now inside the  `🟦Math` Block and drag the ` = ` sign block and place it in the last  `🟠Else if` statement.
+
+![](https://cloud-e8m9xzhx6.vercel.app/4screenshot_2020-10-20_at_17.56.00.png)
+
 then set it sign to ` >= ` sign by clicking on the ` = ` sign.
 
-`picture`
+![](https://cloud-e8m9xzhx6.vercel.app/8screenshot_2020-10-20_at_19.47.26.png)
+![](https://cloud-e8m9xzhx6.vercel.app/6screenshot_2020-10-20_at_19.46.35.png)
 
 Then on the `🟪Procedure` Block and drag the `🟣Call calculate` block inside the first puzzle of the ` > ` block.
 
 
 Then click on `🟦Math` Block and drag the block number With ` 0️⃣ `, and place it in the second puzzle of ` > ` sign block we have. 
 
-`picture`
+![](https://cloud-e8m9xzhx6.vercel.app/7screenshot_2020-10-20_at_19.46.54.png)
+
 then clock on the ` 0️⃣ ` block and change the number value to ` 40 `.
 
-`picture`
+![](https://cloud-e8m9xzhx6.vercel.app/9screenshot_2020-10-20_at_19.47.50.png)
 
 Now go inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the last  `🟠Then` Statement.
-/////
+
 `picture`
 
 now click inside the `" "` block to set the text value to `“Under Weight “`.
@@ -421,14 +431,12 @@ Then for the last `🟠Else` statement,inside `⬜️Diagnosis_report` drag the 
 
 Then inside `🟥Text`  block and drag the frist block  ` " " `and join it with the `🟢set Diagnosis_report.Text to` block;
 
-`picture`
-
 now click inside the `" "` block to set the text value to `“Invalid input “`.
 
-`picture`
+![](https://cloud-p9r7ltsh3.vercel.app/3screenshot_2020-10-20_at_19.50.38.png)
 
 
-`picture final`
+![](https://cloud-e8m9xzhx6.vercel.app/5screenshot_2020-09-30_at_12.30.06.png)
 
 Check out if there is no warnings 
 We have done with our code and app, time to upload it and download it on our phone. 
@@ -437,7 +445,6 @@ if you were using your computer, go over o your phone on and open the app inveto
 Click on the button on top that say `Designer`.
 
 `picture`
-
 Now on the top menu click on the button `Build` then choose the second option,
 
 `picture`
