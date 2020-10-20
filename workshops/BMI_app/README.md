@@ -73,18 +73,27 @@ Note: To Rename our components you must click one component on the components sl
  
  then Rename.
 
-This is how you should rename the component :
--------------
+This is how you should rename the component : 
+
+
 Label1     :     to      Label_Weight
+
 TextBox1   :     to      Value_Weight
+
 Label2     :     to      Label_height
+
 TextBox2   :     to      Value_Weight
+
 Button1    :     to      Button_calculate
+
 Label3     :     to      text_BMI
+
 Label4     :     to      BMI_value
+
 Label5     :     to      text_diagnosis
+
 Label6     :     to      Diagnosis_report
-------------
+
 `![picture how it look]()`
 
 Now after this we are going to change the Text that should appear on the Phone.
@@ -93,14 +102,21 @@ Now after this we are going to change the Text that should appear on the Phone.
 then name chane the text to the name we want.
 
 This is the only textproperty we will change
--------------------------------
+
 Label_weight Text  Property   :to      Type Weight 
+
 Labe_height Text   Property   :to      type weight 
+
 Button_calulate Text property :to      Calculate BMI
+
 Text_BMI Text property        :to      BMI value: 
+
 BMI_value Text property       :to      nothing please ❗️delete the text in there❗️and don’t add any text 
+
 Text_Diagnosis Text property  :to      Diagnosis:
+
 Diagnosis_report Text property:to      nothing please delete the text in there and don’t add any text.
+
 -------------------------------
 
 
