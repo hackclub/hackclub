@@ -105,7 +105,7 @@ Now your app should be good looking do some block!!!!
 
 
 Now let go to our code to write our code.
-Over the Properties slide click on the button `Code` next to `Design`, you will be directed to a a new page where we will make our block. There are two slide here one is the Block where we will get our block from and Viewer where our block will be placed.
+On the Properties slide click on the button `Code` next to `Design`, you will be directed to a a new page where we will make our block. There are two slide here one is the Block where we will get our block from and Viewer where our block will be placed.
 Remember, this formula is used to find the BMI value:
 
 `(Your weight / your height )^2`
@@ -236,7 +236,7 @@ Now click on this number block and set it value to ` 17 `.
 
 Now go inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the first `🟠else` Statement.
 
-Now go over to `🟥Text` block and drag the first block that has only the ` “ “ ` inside it and join it with `🟢set diagnosis_report.text to` block.
+Then inside `🟥Text`  block and drag the frist block  ` " " `and join it with the `🟢set Diagnosis_report.Text to` block;
 
 `picture`
 
@@ -244,36 +244,86 @@ now click inside the `" "` block to set the text value to `“Very underweight �
 
 
 
-# ⚠️THIS STEP WILL BE REPEATED LATER I WILL SHOW YOU HOW
+# ⚠️Loop start
 
 
 To compare values we will use the `And` operator, so click on the `🟩Logic` Block and drag the block with ` And ` then place it on the first `🟠Else` if statement.
 
 `picture`
 
-Then go inside the `🟦Maths` Block and drag ` = ` sign block and place it inside the first puzzle of the ` And ` block, then change it sign to ` <= `  by clicking on the ` = ` sign.
+Then go inside the `🟦Maths` Block and drag ` = ` sign block and place it inside the first puzzle of the ` And ` block, then change it sign to ` >= `  by clicking on the ` = ` sign.
 
 `picture`
 
 `picture`
+ 
+ Then click on the `🟪procdure` block and drag the `🟣Call Calculate` block into the first puzzle of the ` > ` sign block.
 
-Then time click on `🟦Math` Block and drag the block number With ` 0️⃣ `, and place it in the first puzzle of ` = ` sign block we have. Now go to the `🟪Procedure` block and drag the `🟣Call Calculate` block into the second puzzle. Now go on the Math block and drag the block which = sign and place it in the second puzzle of the of the And block and change it sign to <.
- Now go over the Procedure Block and drag the Call.calculate block inside the first puzzle. 
-Now go over the Math block and drag the 0 block and place it in the second puzzle after. Now set the value for the first block number to 17 and the second to 18.5. 
-Now go over the Diagnosis_report  Block and look and drag the block set.diagnosis_report.Text.to the then block that follow the block we wrote. 
-Now go over the Text Block and drag the block with an “ “ and place it after the code set.Diagnosis.Text.to . Now click on that block to change the Value text To Under Weight . 
-⚠️THIS STEP IS OVER
+`picture`
+
+Then click on `🟦Math` Block and drag the block number With ` 0️⃣ `, and place it in the second puzzle of ` > ` sign block we have. 
+
+`picture`
+then clock on the ` 0️⃣ ` block and change the number value to ` 17 `.
+
+`picture`
+
+Now go on the `🟦Math` block and drag the block which ` = `sign and place it in the second puzzle of the ` And ` block then click on ` = ` sign to change the sign to ` < `.
+`picture`
+
+Then on the `🟪Procedure` Block and drag the `🟣Call calculate` block inside the first puzzle of the ` < ` block.
+
+`picture`
+
+
+Now go over the `🟦Math` block and drag the 0️⃣ block and place it in the second puzzle of the ` < ` sign block.
+
+`picture`
+
+Now set the value of the block number to 18.5.
+
+`picture`
+
+
+Now go inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the  `🟠else` Statement.
+
+`picture`
+
+Then inside `🟥Text`  block and drag the frist block  ` " " `and join it with the `🟢set Diagnosis_report.Text to` block;
+
+`picture`
+
+now click inside the `" "` block to set the text value to `“Under Weight “`.
+ `picture`
+# ⚠️Loop end
+
+
 Now we just completed the second phase for the rule of categorising the BMI value. 
 Let me explain what this code does, it compare the BMI value from procedure if is bigger than 17 and smaller than 18.5 then set the Diagnosis value to the to “Under weight”.
-So we will repeat this step 4 times, but only the text value will change, now go back from where ⚠️THIS STEP WILL BE REAPEATED LATER, I WILL SHOW YOU HOW and do those step  until to ⚠️THIS STEP IS OVER  but remember to change the blue as you see in this picture above. So the change is 
-     _Else If                18.5  and 25_
-       _Then           Normal Weight_
-      _Else if                25 and 30_
-      _Then          Over Weight_
-      _Else if                30 and 35_
-      _Then           Obesity 1_
-      _Else if                35 and 40_
-      _Then           Obesity 2(severe)_
+So we will repeat this step 4 times, but only the text value we will change, 
+from where ⚠️Loop start to where ⚠️Loop end we will repeat that part but only chaging value from the nuber and the string
+start again from ⚠️Loop start to  ⚠️Loop end step but chage the number value and string value.
+ So it should look like this : 
+ 
+     _Else If     call calculate  >       18.5  and     call calculate    <        25_
+     
+          _Then       set Diagonis_report.text to     "Normal Weight" _
+          
+     _Else if     call calculate  >        25  and      call calculate    <         30_
+     
+         _Then        set Diagonis_report.text to      "Over Weight"_
+         
+      _Else if   call calculate  >         30 and       call calculate    <         35_
+      
+         _Then        set Diagonis_report.text to        "Obesity 1"_
+      
+      _Else if   call calculate  >         35 and       call calculate    <          40_
+      
+        _Then        set Diagonis_report.text to         "Obesity 2(severe)"_
+  
+  
+`picture` 
+
 
 Now after you done your block of code should look like the above picture.So now there should be left with one else If statement .
 Now go over the the Math Block and drag the block that has = sign and place it in the Else if statement.
