@@ -166,7 +166,6 @@ inside the `🟦Math` block and drag the block with sign the ` ^ ` and  drop it 
 
 Then click on `⬜️Value_weight` Block, scroll down to the block `🟢Value_weight.Text`
 
-![img](https://cloud-p5z7fufpn.vercel.app/0screenshot_2020-10-01_at_18.34.51.png)
 ![](https://cloud-kocs0wuh7.vercel.app/6screenshot_2020-10-01_at_18.36.04.png)
 
 and place it in the first puzzle of the` / `(division) block,
@@ -412,22 +411,17 @@ then clock on the ` 0️⃣ ` block and change the number value to ` 40 `.
 
 Now go inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the last  `🟠Then` Statement.
 
-`picture`
-
-now click inside the `" "` block to set the text value to `“Under Weight “`.
-
-`picture`
+![](https://cloud-p9r7ltsh3.vercel.app/0screenshot_2020-10-20_at_19.48.22.png)
 
 Then inside `🟥Text`  block and drag the frist block  ` " " `and join it with the `🟢set Diagnosis_report.Text to` block;
 
-`picture`
-
 now click inside the `" "` block to set the text value to `“Obesity 3(Horbid) “`.
 
+![](https://cloud-p9r7ltsh3.vercel.app/2screenshot_2020-10-20_at_19.50.01.png)
 
 Then for the last `🟠Else` statement,inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the last `🟠Else` Statement.
 
-`picture` 
+![](https://cloud-p9r7ltsh3.vercel.app/2screenshot_2020-10-20_at_19.50.01.png)
 
 Then inside `🟥Text`  block and drag the frist block  ` " " `and join it with the `🟢set Diagnosis_report.Text to` block;
 
@@ -439,19 +433,33 @@ now click inside the `" "` block to set the text value to `“Invalid input “`
 ![](https://cloud-e8m9xzhx6.vercel.app/5screenshot_2020-09-30_at_12.30.06.png)
 
 Check out if there is no warnings 
+
+
 We have done with our code and app, time to upload it and download it on our phone. 
 if you were using your computer, go over o your phone on and open the app invetor on the web nd open your project, then follow this procees
 
 Click on the button on top that say `Designer`.
 
-`picture`
+![](https://cloud-a809dlexh.vercel.app/0screenshot_2020-10-01_at_18.25.21.png)
+
 Now on the top menu click on the button `Build` then choose the second option,
 
-`picture`
+![](https://cloud-a809dlexh.vercel.app/1screenshot_2020-10-01_at_21.05.36.png)
 
 that will allow you to download it to your computer or phone. Now it will start to process and download . Note: you may receive a message stating that if you want to download this app, just accept it,  as this app is not identify by google play store yet as it not publish.
 
-`picture`
+![](https://cloud-a809dlexh.vercel.app/2screenshot_2020-10-01_at_21.15.54.png)
 
 Now when done it done install your application or run it on your phone.
 
+# Well Done!!!!!
+
+
+# Challenge 
+
+-
+
+-
+
+
+-
