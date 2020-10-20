@@ -1,7 +1,7 @@
 ---
-name: "BMI application"
-description: "createing a BMI application using App inventor"
-author: "@Chrisrama"
+name   : "BMI application"
+description : "createing a BMI application using App inventor"
+author : "@Chrisrama"
 ---
 
 Hello friends, today we will be using MIT APP INVENTOR, to create our BMI application. It an online platform that help you create android application using blocks to write the code, for this application we are doing, it will be simple that you don’t need any knowledge on how to do it. So you just need to go through each step and your app will be on  running. 
@@ -22,7 +22,9 @@ Now let build  our app. We will start off by visiting [MIT app inventor](http://
  
 ![rename](https://cloud-gwkuhl2zb.vercel.app/2screenshot_2020-10-14_at_14.46.30.png)
 
-if you were not redirected to _Create New App Invetor project, right on the top_, click the `Start new Project` button. then name your to  *BMI*.`photo`
+if you were not redirected to _Create New App Invetor project, right on the top_, click the `Start new Project` button. then name your to  *BMI*
+
+`photo`
 NOTE: if you prefer to used another name, you can, but you should not place a space between the words instead use an undercover ( _ ). 
 
 
@@ -32,23 +34,19 @@ What you see now an interfaces of how your app will look like on an android phon
 
 if you would like to change the device such as to a tablet or a bigger phone ,
 
-`photo`
+![to chage the phone size](https://cloud-kimhkb4fl.vercel.app/0screenshot_2020-09-30_at_12.48.09.png)
 
 just click on the the `Phone size` in the Viewer  and change the device size you want, i will be using the default sizes.
 
 Now let start,We will mostly use the components under `user interfaces` _Palette_. 
 
-Now drag and drop `A Label` component from the `user interface` and place it inside the Phone/ _Viewer_ slide.
+![img](https://cloud-jckwy1fjl.vercel.app/0screenshot_2020-09-30_at_14.12.06.png)
 
-`photo how it should look like` 
+Now drag and drop `A Label` component from the `user interface` and place it inside the Phone/ _Viewer_ slide.
 
 Then drag and drop `I TextBox` component and place it under `Label` component on the phone.
 
-`picture`
-
 Then drag and drop another `A Label` component and place it under the `TextBox` component in the Phone.
-
-`picture`
 
 Then again drag and drop another `TextBox` and place it under the last `Label` we drop from.
 
@@ -62,75 +60,84 @@ Then again drag and drop another `Label` and place it under `Label`
 
 and last  drag and drop another `Label` and place it  under `Label`
 
-`the final picture when unmaned`
+your final screen should look like this
 
-#Step 2
+![img](https://cloud-19htxtacx.vercel.app/0screenshot_2020-10-14_at_18.15.06.png)
+
+# Step 2
 
 Alright we now have all the component we need.
-Now go over the slide name COMPONENTS So we can rename all our components, on the name we will use to create the block.
-Note: To Rename our components you must click one component on the components slide and scroll done and click on the button `Rename` next to `Delete``![rename]()` 
+
+Now go over the slide name `COMPONENTS` So we can rename all our components, on the name we will use to create the block.
+Note: To Rename our components you must click one component on the components slide and scroll done and click on the button `Rename` next to `Delete`
+
+
+`![rename]()` 
  
  
  then Rename.
 
-This is how you should rename the component : 
+This is how you should rename the component: 
 
 
-Label1     :     to      Label_Weight
+Label1             :     to      Label_Weight
 
-TextBox1   :     to      Value_Weight
+TextBox1           :     to      Value_Weight
 
-Label2     :     to      Label_height
+Label2             :     to      Label_height
 
-TextBox2   :     to      Value_Weight
+TextBox2           :     to      Value_Weight
 
-Button1    :     to      Button_calculate
+Button1            :     to      Button_calculate
 
-Label3     :     to      text_BMI
+Label3             :     to      text_BMI
 
-Label4     :     to      BMI_value
+Label4             :     to      BMI_value
 
-Label5     :     to      text_diagnosis
+Label5             :     to      text_diagnosis
 
-Label6     :     to      Diagnosis_report
+Label6             :     to      Diagnosis_report
 
-`![picture how it look]()`
+![picture how it look](https://cloud-m29nx0q47.vercel.app/0screenshot_2020-09-30_at_15.45.27.png)
 
 Now after this we are going to change the Text that should appear on the Phone.
-⚠️ Note to change the name you must click on a Components Name inside the `Components` then go over to the `Properties` Slide and scroll down and click inside the text block that ddispaly the default name on the screen
-`picture of the defaulfname and how it to change it`
-then name chane the text to the name we want.
+⚠️ Note: to change the name you must click on a Component inside the `Components` then go over to the `Properties` Slide and scroll down and click inside the text block that display the default name on the screen, example:
+
+![img](https://cloud-r87dy46vr.vercel.app/0screenshot_2020-09-30_at_16.20.02.png)
+
+then change the text to the name we want.
 
 This is the only textproperty we will change
+---
+Label_weight Text  Property  :"to      Type Weight" 
 
-Label_weight Text  Property   :to      Type Weight 
+Labe_height Text   Property  :"to      type weight"
 
-Labe_height Text   Property   :to      type weight 
+Button_calulate Text property :"to      Calculate BMI"
 
-Button_calulate Text property :to      Calculate BMI
+Text_BMI Text property :"to      BMI value: "
 
-Text_BMI Text property        :to      BMI value: 
+BMI_value Text property :"to      nothing please ❗️delete the text in there❗️and don’t add any text "
 
-BMI_value Text property       :to      nothing please ❗️delete the text in there❗️and don’t add any text 
+Text_Diagnosis Text property  :"to      Diagnosis:"
 
-Text_Diagnosis Text property  :to      Diagnosis:
-
-Diagnosis_report Text property:to      nothing please delete the text in there and don’t add any text.
-
--------------------------------
+Diagnosis_report Text property:"to      nothing please delete the text in there and don’t add any text."
+---
 
 
-`picture of how it will look likebefore it centred`
+`![](image)before it centerised`
 
 Let change the property of our Screen as to how the component be placed, so we are going to centralised everything.
 click on `-Screen` components then click on the Property *AlignHorizontal* and set it to {central:3}
 
-`picture for the centralised `
-
+![](https://cloud-19htxtacx.vercel.app/2screenshot_2020-10-14_at_14.48.15.png)
 
 then click on property Backgroundcolor  to set the bakground clour you prefare.
-`pcsanother for background`
+
+![](https://cloud-j9tjuzlmd.vercel.app/3screenshot_2020-10-14_at_18.16.21.png)
+
 Your final screen of should look something like this:
+
 `pics of the final`
 
 Now your app should be good looking do some block!!!!
@@ -151,23 +158,21 @@ we will go into the the *Block* slide and click on the BLock `🟪Procedure` and
 
 
 Let go bak to the formula, we need to call `(your weight /  your height) ^ 2`, so let take the division sign first, inside the  `🟦Maths` block drag and drop the Block ` / `sign
-
-
 inside the block `🟣TO Procedure result do`
-
-`picture`
+![](
+![](https://cloud-nit6a9lnh.vercel.app/0screenshot_2020-10-01_at_18.33.15-1.png)
 
 inside the `🟦Math` block and drag the block with sign the ` ^ ` and  drop it inside the second puzzle of of the division block ` / `.
 
 `poish`
-
+![](https://cloud-9gy6fkkle.vercel.app/0screenshot_2020-10-01_at_18.33.32.png)
 Then click on `⬜️Value_weight` Block, scroll down to the block `🟢Value_weight.Text`
 
-`picture of the value_weigth text`  
+![img](https://cloud-p5z7fufpn.vercel.app/0screenshot_2020-10-01_at_18.34.51.png)
 
 and place it in the first puzzle of the` / `(division) block,
 
-`picture`
+![](https://cloud-ojz2muccs.vercel.app/0screenshot_2020-10-01_at_18.35.18.png)
 
 then click on the block `⬜️Value_height` and scroll done for the block `🟢Value_Height.Text`
 
@@ -176,7 +181,7 @@ then click on the block `⬜️Value_height` and scroll done for the block `🟢
 and place it in the second puzzle of the` / ` (division) block.
 
 
-`picture`
+![](https://cloud-hyvrauhc9.vercel.app/0screenshot_2020-10-01_at_18.36.32.png)
 
  
  
@@ -192,13 +197,20 @@ Now let process the BMI value from the `🟣Calculate procedure` and give an out
 
 Now click inside  `🟧Button_calculate` block and look for block `🟠When Button_calculate.Click do`  and place it on the Viewer slide. 
 
-`picture`
+![](https://cloud-5ms7s2zfs.vercel.app/0screenshot_2020-10-01_at_18.38.07.png)
 
 Inside the Block `⬜️BMI_value` and scroll down for the block `🟢Set BMI_value.text to` and drop it inside the `🟠When Button_calculate.click do` block.
 
-`picture`
+![img](https://cloud-i8w9tju86.vercel.app/0screenshot_2020-10-01_at_18.40.46.png)
+![](https://cloud-fj058t1ie.vercel.app/0screenshot_2020-10-01_at_18.41.25.png)
 
-Now we receive an error ❌ on the block well no problem will fix that,we are just being informed that we did not assign any value to this block. Now click on the `🟪Procedure` drag the block `🟣Call calculate` join it with `🟢set BMI_value.Text to` block, now the cross line should go away.
+Now we receive an error ❌ on the block well no problem will fix that,we are just being informed that we did not assign any value to this block.
+
+![](https://cloud-ak6482qx9.vercel.app/0screenshot_2020-10-01_at_18.42.26.png)
+
+Now click on the `🟪Procedure` drag the block `🟣Call calculate` join it with `🟢set BMI_value.Text to` block, now the cross line should go away.
+
+![](https://cloud-gi8v12qi0.vercel.app/0screenshot_2020-10-01_at_18.43.04.png)
 
 Let me explain what will happen here, so when the `🟧button_calculate` is click the label of the BMI willbe change to the value of the BMI from the procedure `🟣calculate.` 
 Let  then do a comparission base of the BMI value to someone's to how someone is diagonis, this sis exact this how the code will be written:
@@ -225,57 +237,62 @@ Let  then do a comparission base of the BMI value to someone's to how someone is
 So that what we are going to do now. we will need an `🟠If` statement.
 Click on the `🟧Control` bock and drag and the third block of `🟠if` statement 
 
-`picture`
+![](https://cloud-dcik8k9rd.vercel.app/0screenshot_2020-10-01_at_18.44.15.png)
+
 and drop it under `🟢set BMI_value.Text to` block.
-`picture`
+
+![](https://cloud-jpm75ondl.vercel.app/0screenshot_2020-10-01_at_18.47.04.png)
 
 Now we see a small button like ☸️ paremeter  inside the if statement, click on this button to to add more else if statement.
 
-`picture`
+![](https://cloud-83r6bcwxc.vercel.app/0screenshot_2020-10-01_at_18.44.46.png)
 
 an option will open up that we could add more `🟠else if` statement, now inside this blocks drag `🟠else if` statement inside the group of block and on top of `🟠else` statements.
 
-`picture`
+`picture of the video`
 
 You will then add 4 `🟠Else if` statement one after another.
 
-`picture`
+Now click on that parameter option again to close this option.in total you will have 1`🟠If` 5`🟠Else If` and 1 `🟠Else`. MAKE SURE THAT ELSE, GO BACK ON THAT PARAMETER AND ADD MORE ELSE IF STATEMENT OR TAKEOUT SOME.
 
-Now click on that parameter option again to close this option.
-
-`picture`
-
-
+`picture of total else if`
 
 
 We now can start making the Block code according to he code I show you how we will diagonis the person according to their BMI value. 
 Inside the `🟦Maths` block and drag the block with equal sign `=` and join it with the first `If`statement,
 
-`picture`
-`picture`
-then click on the `=` sign and seelect the sign to ` < `.
+![](https://cloud-mgwd8r6yh.vercel.app/0screenshot_2020-10-01_at_18.48.42.png)
+![](https://cloud-2vlvvpj66.vercel.app/0screenshot_2020-10-01_at_18.49.07.png)
 
-`picture`
+then click on the `=` sign and seelect the sign to ` <= `.
+
+![](https://cloud-1m4i76sm5.vercel.app/0screenshot_2020-10-01_at_20.38.16.png)
 
 then click inside the `🟪Procedure` block drag the `🟣Call calculate` block join it with the first open puzzle from the `=` block.
 
-`picture`
+![](https://cloud-nxqu8s2ac.vercel.app/0screenshot_2020-10-01_at_18.49.35.png)
 
-Now let call the block Number , inside the `🟦Maths` Block drag the first block `0️⃣` and place it in the second puzzle block of the `=` block. 
-`picture`
+Now let call the block Number , inside the `🟦Maths` Block drag the first block `0️⃣` and place it in the second puzzle block of the `<=` block. 
+
+![](https://cloud-67nd751a7.vercel.app/0screenshot_2020-10-01_at_18.32.07.png)
 
 Now click on this number block and set it value to ` 17 `.
 
-`picture`
+![](https://cloud-o9dbl5vy1.vercel.app/0screenshot_2020-10-01_at_18.50.29.png)
 
 Now go inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the first `🟠Then` Statement.
+`picture`
+`![]()`
+![](https://cloud-5xezqqtxs.vercel.app/0screenshot_2020-10-01_at_18.51.39.png)
 
 Then inside `🟥Text`  block and drag the frist block  ` " " `and join it with the `🟢set Diagnosis_report.Text to` block;
 
-`picture`
+![](https://cloud-n2y79sumo.vercel.app/0screenshot_2020-10-01_at_18.52.15.png)
+![](https://cloud-n2y79sumo.vercel.app/1screenshot_2020-10-01_at_18.53.04.png)
 
 now click inside the `" "` block to set the text value to `“Very underweight “`. Now we just finish categorise.
 
+`picture`
 
 
 # ⚠️Loop start
