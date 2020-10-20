@@ -14,36 +14,54 @@ Body mass index (BMI) application an calculator that  measure the body's BMI cat
 
 # Step 1
 
-Now let build  our app. We will start off by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,then right clik on the button ---Create Apps!---
+Now let build  our app. We will start off by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,then right clik on the button Create Apps!
+
  ![click here](https://cloud-k86tkribn.vercel.app/0screenshot_2020-09-30_at_12.31.43.png)
  
- You will redirected to sign in using google;even if it your first time here. Now select you account to sign in then you will be redirected straight on your project and Name it.
+ You will be redirected to sign in using google;even if it your first time here. Now select you account to sign in then you will be redirected straight on your project and Name it.
+ 
 ![rename](https://cloud-gwkuhl2zb.vercel.app/2screenshot_2020-10-14_at_14.46.30.png)
+
 if you were not redirected to _Create New App Invetor project, right on the top_, click the `Start new Project` button. then name your to  *BMI*.`photo`
 NOTE: if you prefer to used another name, you can, but you should not place a space between the words instead use an undercover ( _ ). 
 
 
-What you see now an interfaces of how your app will look like on an android phone/tablet. On the _Viewer_ slide it way you will place all your components you need for your app which will come from  _Palette_ slide.![img](https://cloud-jckwy1fjl.vercel.app/0screenshot_2020-09-30_at_14.12.06.png)
+What you see now an interfaces of how your app will look like on an android phone/tablet. On the _Viewer_ slide it way you will place all your components you need for your app which will come from  _Palette_ slide.
 
-if you would like to change the device such as to a tablet or a bigger phone ,`photo`
+![img](https://cloud-jckwy1fjl.vercel.app/0screenshot_2020-09-30_at_14.12.06.png)
+
+if you would like to change the device such as to a tablet or a bigger phone ,
+
+`photo`
+
 just click on the the `Phone size` in the Viewer  and change the device size you want, i will be using the default sizes.
 
 Now let start,We will mostly use the components under `user interfaces` _Palette_. 
 
-Now drag and drop `A Label` component from the `user interface` and place it inside the Phone/ _Viewer_ slide.`photo how it should look like` 
+Now drag and drop `A Label` component from the `user interface` and place it inside the Phone/ _Viewer_ slide.
+
+`photo how it should look like` 
 
 Then drag and drop `I TextBox` component and place it under `Label` component on the phone.
 
+`picture`
+
 Then drag and drop another `A Label` component and place it under the `TextBox` component in the Phone.
+
+`picture`
 
 Then again drag and drop another `TextBox` and place it under the last `Label` we drop from.
 
 Then Drag and drop component `Button` and place it under the `TextBox`.
 
 Then drag and drop another `Label`  and place it under `Button`,
+
 Then again drag and drop another `Label` and place it under `Label`
+
 Then again drag and drop another `Label` and place it under `Label`
+
 and last  drag and drop another `Label` and place it  under `Label`
+
 `the final picture when unmaned`
 
 #Step 2
@@ -171,21 +189,21 @@ Let  then do a comparission base of the BMI value to someone's to how someone is
 
 ` `🟠If` the BMI value from `🟣call calcualte` is less than 17 then the person is "very underweight"`
 
-` `🟠else If` the BMI value from `🟣call calcualte` is smaller than 17 and bigger than 18.5 then the person is "_under Weight_"`
+` `🟠else If` the BMI value from `🟣call calcualte` is smaller than 17 and bigger than 18.5 then the person is "under Weight"`
 
-` `🟠else If` the BMI value from `🟣call calcualte` is smaller 18.5 and bigger than 25 then the person has "_normal weight_"` 
-
-
-` `🟠else If` the BMI value from `🟣call calcualte` is smaller 25 and bigger than 30 then the person has "_over Weight_"`
+` `🟠else If` the BMI value from `🟣call calcualte` is smaller 18.5 and bigger than 25 then the person has "normal weight"` 
 
 
-` `🟠else If` the BMI value from `🟣call calcualte` is smaller 30 and bigger than 35 then the person has "_Obesity 1_"`
+` `🟠else If` the BMI value from `🟣call calcualte` is smaller 25 and bigger than 30 then the person has "over Weight"`
 
 
-` `🟠else If` the BMI value from `🟣call calcualte` is smaller 35 and bigger than 40 then the person has "_obesity 2(severe)_"`
+` `🟠else If` the BMI value from `🟣call calcualte` is smaller 30 and bigger than 35 then the person has "Obesity 1"`
 
 
-` `🟠else` the BMI value from `🟣call calcualte` is over 40 then the person has "_obesity 3 (horbid)_"`
+` `🟠else If` the BMI value from `🟣call calcualte` is smaller 35 and bigger than 40 then the person has "obesity 2(severe)"`
+
+
+` `🟠else` the BMI value from `🟣call calcualte` is over 40 then the person has "obesity 3 (horbid)"`
 
 
 So that what we are going to do now. we will need an `🟠If` statement.
@@ -234,7 +252,7 @@ Now click on this number block and set it value to ` 17 `.
 
 `picture`
 
-Now go inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the first `🟠else` Statement.
+Now go inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the first `🟠Then` Statement.
 
 Then inside `🟥Text`  block and drag the frist block  ` " " `and join it with the `🟢set Diagnosis_report.Text to` block;
 
@@ -247,7 +265,7 @@ now click inside the `" "` block to set the text value to `“Very underweight �
 # ⚠️Loop start
 
 
-To compare values we will use the `And` operator, so click on the `🟩Logic` Block and drag the block with ` And ` then place it on the first `🟠Else` if statement.
+To compare values we will use the `And` operator, so click on the `🟩Logic` Block and drag the block with ` And ` then place it on the second `🟠ELse if`statement.
 
 `picture`
 
@@ -285,7 +303,7 @@ Now set the value of the block number to 18.5.
 `picture`
 
 
-Now go inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the  `🟠else` Statement.
+Now go inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the  `🟠Then` Statement.
 
 `picture`
 
@@ -325,13 +343,70 @@ start again from ⚠️Loop start to  ⚠️Loop end step but chage the number v
 `picture` 
 
 
-Now after you done your block of code should look like the above picture.So now there should be left with one else If statement .
-Now go over the the Math Block and drag the block that has = sign and place it in the Else if statement.
-Now set it sign to >= sign by clicking on the = sign.
-Now go over to The Block Procedure  and drag the block Call.calculate and drop it in the first puzzle of the = sign block.   Now go back to the Math Block and drag the block number 0 and drop it in the second  puzzle of the block that has an >= then click on this Block number to change the zero to a value number 40. 
-Now got over The Block Diagnosis_report and drag the block set.Diagnosis_reort.Text.to on the Then statement. Now go over the Text block and drag the first block that as an empty quote  “ ” and place it next to the block set.Diagnosis_repot.Text.to then click n that block to change the value in it to the text “Obesity 3 (horbid)”.
+Now after you done your block of code should look like the above picture.
 
-Now we are left with only Else statement, this we are going to provide if perhaps the user did not enter the correct value or may a letter or just nothing, staring the else statement will be responded. 
-Now go over the block Diagnosis_report and drag  set.Diagnosis_repot.Text.to to the else statement . Then go in the Text Block and drag the empty “ ” block and place it with the set.Diagnosis_repot.Text.to then click on it and set the text to “invalid input” Then done. Check out if there is no warnings 
-We done with on our code and app, time to upload it and download it on our phone. Click on the button on top that say Designer and and just look at the user interface how it is like. 
-Now on the top menu click on the button Build then choose the second option, that will allow you to download it to your computer or phone. Now it will start to process and download . Note: you may receive a message stating that you, if you want to download this app, just accept it,  as this app is not identify by google play store yet as it not publish. Now when done it done install your application or run it on your phone. 
+So now you should be left with one `🟠else if` and `🟠else` statement.
+
+Now inside the  `🟦Math` Block and drag the ` = ` sign block and place it in the last  `🟠Else if` statement.
+then set it sign to ` >= ` sign by clicking on the ` = ` sign.
+
+`picture`
+
+Then on the `🟪Procedure` Block and drag the `🟣Call calculate` block inside the first puzzle of the ` > ` block.
+
+
+Then click on `🟦Math` Block and drag the block number With ` 0️⃣ `, and place it in the second puzzle of ` > ` sign block we have. 
+
+`picture`
+then clock on the ` 0️⃣ ` block and change the number value to ` 40 `.
+
+`picture`
+
+Now go inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the last  `🟠Then` Statement.
+/////
+`picture`
+
+now click inside the `" "` block to set the text value to `“Under Weight “`.
+
+`picture`
+
+Then inside `🟥Text`  block and drag the frist block  ` " " `and join it with the `🟢set Diagnosis_report.Text to` block;
+
+`picture`
+
+now click inside the `" "` block to set the text value to `“Obesity 3(Horbid) “`.
+
+
+Then for the last `🟠Else` statement,inside `⬜️Diagnosis_report` drag the block `🟢set Diagnosis_report.Text to` inside the last `🟠Else` Statement.
+
+`picture` 
+
+Then inside `🟥Text`  block and drag the frist block  ` " " `and join it with the `🟢set Diagnosis_report.Text to` block;
+
+`picture`
+
+now click inside the `" "` block to set the text value to `“Invalid input “`.
+
+`picture`
+
+
+`picture final`
+
+Check out if there is no warnings 
+We have done with our code and app, time to upload it and download it on our phone. 
+if you were using your computer, go over o your phone on and open the app invetor on the web nd open your project, then follow this procees
+
+Click on the button on top that say `Designer`.
+
+`picture`
+
+Now on the top menu click on the button `Build` then choose the second option,
+
+`picture`
+
+that will allow you to download it to your computer or phone. Now it will start to process and download . Note: you may receive a message stating that if you want to download this app, just accept it,  as this app is not identify by google play store yet as it not publish.
+
+`picture`
+
+Now when done it done install your application or run it on your phone.
+
