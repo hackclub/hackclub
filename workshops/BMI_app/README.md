@@ -122,6 +122,7 @@ BMI_value Text property :"to      nothing please ❗️delete the text in there�
 Text_Diagnosis Text property  :"to      Diagnosis:"
 
 Diagnosis_report Text property:"to      nothing please delete the text in there and don’t add any text."
+
 ---
 
 
@@ -191,7 +192,7 @@ Now we want to square,or raise to the power of 2, so in the `🟦Math` block and
 
 then click inside the 0️⃣ block and set the value to  `2`.
 
-`picture`
+![](https://cloud-2ye0x24ow.vercel.app/0screenshot_2020-10-01_at_18.37.11.png)
 
 Now let process the BMI value from the `🟣Calculate procedure` and give an output that categorise each BMI value.
 
@@ -290,7 +291,7 @@ Then inside `🟥Text`  block and drag the frist block  ` " " `and join it with 
 ![](https://cloud-n2y79sumo.vercel.app/0screenshot_2020-10-01_at_18.52.15.png)
 ![](https://cloud-n2y79sumo.vercel.app/1screenshot_2020-10-01_at_18.53.04.png)
 
-now click inside the `" "` block to set the text value to `“Very underweight “`. Now we just finish categorise.
+now click inside the `" "` block to set the text value to `“Very under weight “`. Now we just finish categorise.
 
 `picture`
 
@@ -298,28 +299,34 @@ now click inside the `" "` block to set the text value to `“Very underweight �
 # ⚠️Loop start
 
 
-To compare values we will use the `And` operator, so click on the `🟩Logic` Block and drag the block with ` And ` then place it on the second `🟠ELse if`statement.
+To compare values we will use the `And` operator, so click on the `🟩Logic` Block and drag the block with ` And ` then place it on the first `🟠ELse if`statement.
 
 `picture`
+`picure`
+Then go inside the `🟦Maths` Block and drag ` = ` sign block and place it inside the first puzzle of the ` And ` block, then change it sign to ` >= `  by clicking on the ` = ` sign
 
-Then go inside the `🟦Maths` Block and drag ` = ` sign block and place it inside the first puzzle of the ` And ` block, then change it sign to ` >= `  by clicking on the ` = ` sign.
-
-`picture`
+![](https://cloud-19htxtacx.vercel.app/3screenshot_2020-10-14_at_15.49.26.png)
 
 `picture`
  
  Then click on the `🟪procdure` block and drag the `🟣Call Calculate` block into the first puzzle of the ` > ` sign block.
 
+![](https://cloud-ak6482qx9.vercel.app/0screenshot_2020-10-01_at_18.42.26.png)
+
 `picture`
 
 Then click on `🟦Math` Block and drag the block number With ` 0️⃣ `, and place it in the second puzzle of ` > ` sign block we have. 
 
-`picture`
+![](https://cloud-67nd751a7.vercel.app/0screenshot_2020-10-01_at_18.32.07.png)
+
 then clock on the ` 0️⃣ ` block and change the number value to ` 17 `.
 
 `picture`
 
 Now go on the `🟦Math` block and drag the block which ` = `sign and place it in the second puzzle of the ` And ` block then click on ` = ` sign to change the sign to ` < `.
+
+![](https://cloud-mgwd8r6yh.vercel.app/0screenshot_2020-10-01_at_18.48.42.png)
+
 `picture`
 
 Then on the `🟪Procedure` Block and drag the `🟣Call calculate` block inside the first puzzle of the ` < ` block.
@@ -328,8 +335,6 @@ Then on the `🟪Procedure` Block and drag the `🟣Call calculate` block inside
 
 
 Now go over the `🟦Math` block and drag the 0️⃣ block and place it in the second puzzle of the ` < ` sign block.
-
-`picture`
 
 Now set the value of the block number to 18.5.
 
