@@ -32,8 +32,8 @@ Alright, let’s start! First, we want to create inside of the <body> tag a <can
 
 Now we have to put the following code inside of the <body> tag, this code allows us to use the Zdog library without having to download it. Learn about CDN [here](https://en.wikipedia.org/wiki/Content_delivery_network).
 
-```
-<script src=“https://unpkg.com/zdog@1/dist/zdog.dist.min.js”></script>
+```html
+<script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
 ```
 
 In the end, your code should look something like this:
