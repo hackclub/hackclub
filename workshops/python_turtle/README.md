@@ -8,13 +8,13 @@ author: '@YashKalbande'
 
 ## Introduction
 
-Welcome! my friends. My name is Yash, and I am a technology enthusiast. Have you ever heard that you can create exciting visuals with help of Python? My goal is to help you understand the python turtle library. With the help of the turtle library, we can create stunning visuals. First, I'm going to present to you the basics of the python turtle library. Then I'll share with you shapes like Triangle, Star, Hexagon. Finally, I'll ask you to create some more visual using ideas given in the end.
+Welcome! my friends. Have you ever heard that you can create exciting visuals with help of Python? My goal is to help you understand the python turtle library. With the help of the turtle library, we can create stunning visuals. First, I'm going to present to you the basics of the python turtle library. Then I'll share with you shapes like Triangle, Star, Hexagon. Finally, I'll ask you to create some more visual using ideas given in the end.
 
 ![Benzen ring with Turtle](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
 
 ## Quickstart
 
-TODO - Explain how to install and setup Python 3 on [repl.it](https://repl.it/languages/python3) for turtle graphics.
+Start new coding environment of Python 3 on [repl.it](https://repl.it/languages/python3) for turtle graphics.
 
 Then enter the following code in the newly-created `main.py` file:
 
