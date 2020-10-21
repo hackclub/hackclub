@@ -32,7 +32,7 @@ In this workshop, we will be using the [restcountries.eu](https://restcountries.
 
 ## What is API?
 
-API stands for Application Programming Interface, (API), which provides a quick access to web-app development. A web-app is a webpage that is dynamic. For example, loading a webpage is simply a `GET` request sent to a server or an API while submitting any kind of form is a `POST` request. [Read More Here](https://www.google.com/url?sa=t&source=web&rct=j&url=https://m.youtube.com/watch%3Fv%3DGZvSYJDk-us&ved=2ahUKEwj3h-2irr)
+API stands for Application Programming Interface, (API), which provides a quick access to web-app development. A web-app is a webpage that is dynamic. For example, loading a webpage is simply a `GET` request sent to a server or an API while submitting any kind of form is a `POST` request.
 
 ## The features to be developed are:
 
@@ -93,7 +93,7 @@ main {
 }
 ```
 
-This sets the view height and width to the view-height and the view-width of the user's device. It is termed "display flex"(Flex is a new feature in css that improves the responsiveness of web pages). You can learn this under 5 minutes at [CSS Flex under Five Minutes](https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/amp)
+This sets the view height and width to the view-height and the view-width of the user's device. It is termed `display flex` (Flex is a new feature in css that improves the responsiveness of web pages). You can learn more by checking out the cheatsheet on [CSS Flex Cheatsheet](https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/amp)
 
 - Setting the size of the cards
 
@@ -166,7 +166,7 @@ The font size and type are set with the lines of codes above, and the spacing is
       }
 ```
 
-** This is the code that does all the magic you see when you press the play green button on repl.it (or when you run your code on your editor) at this point as it is the complete code for the application. However, I will be expalaining what each line of code does, one after the other **
+**This is the code that does all the magic you see when you press the play green button on repl.it (or when you run your code on your editor) at this point as it is the complete code for the application. However, I will be expalaining what each line of code does, one after the other**
 
 As the window loads, a fuction gets called. Where main, card and cardParent are set for DOM manipulation.
 
@@ -241,7 +241,7 @@ _WAW!_ You just built a web-app that fetches data from external API using pure (
 
 [![Sample Page](https://cloud-g6yi6cyg3.vercel.app/0untitled.png)](https://country-list.taiwrash.repl.co)
 
-** This is basically to show how easy it is to play around with javascript when working with vanilla javascript and API **
+**This is basically to show how easy it is to play around with javascript when working with vanilla javascript and API**
 
 ## What Next?
 
