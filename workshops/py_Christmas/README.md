@@ -8,7 +8,7 @@
 
 This workshop is meant to help python newbies try out a fun library called "[turtle](https://docs.python.org/3/library/turtle.html)".
 			
-In this, we make a Christmas greeting using turtle graphics !!
+In this workshop, we make a Christmas greeting using turtle graphics !!
 Try out and leave a feedback.
 [Link to the demo code.](https://repl.it/@raz8153/ThankfulFirsthandScandisk) 
 
