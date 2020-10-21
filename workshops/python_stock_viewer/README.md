@@ -1,7 +1,7 @@
-name: Stock Visualizer in Python
-description: Make a stock visualizer in Python and learn how to use web requests
-author: @sohamb117
-
+---
+name: 'Stock Visualizer in Python'
+description: 'Make a stock visualizer in Python and learn how to use web requests'
+author: '@sohamb117'
 ---
 
 # Web Requests in Python - With a Stock Visualizer!
