@@ -2,6 +2,7 @@
 name: 'Stopwatch'
 description: 'Build a simple stopwatch with HTML, CSS and JavaScript.'
 author: '@faisalsayed10'
+img: 'https://cloud-ijsj5lfdg.vercel.app/0image.png'
 ---
 
 # Stopwatch
