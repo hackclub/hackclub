@@ -302,4 +302,4 @@ Go crazy—try changing the fonts, colors, & whatever else!
 
 ## Conclusion
 
-Over the course of this workshop, you went from not knowing what JSX was to writing a two-page, interactive web app with it. Great work! his is just a starting point—you can keep adding to this app, but you can also check out the [Next.js Dashboard](/nextjs_dashboard) workshop to continue learning.
+Over the course of this workshop, you went from not knowing what JSX was to writing a two-page, interactive web app with it. Great work! This is just a starting point—you can keep adding to this app, but you can also check out the [Next.js Dashboard](/nextjs_dashboard) workshop to continue learning.
