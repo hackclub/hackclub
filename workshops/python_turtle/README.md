@@ -52,8 +52,8 @@ There are many instructions like left() and forward(). These instructions are ca
 
 There are many instructions like left() and forward(). These instructions are called functions. Commonly used turtle methods are :
 
-| Method        | Parameter           | DESCRIPTION  | Example |
-| ------------- |:-------------:| -----:| --------:|
+| Method        | Parameter           | Description  | Example |
+| ------------- | ------------- | ----- | -------- |
 | turtle()      | None | Creates and returns a new turtle object | 
 | shape()       | shape name | Should be ‘arrow’, ‘classic’, ‘turtle’ or ‘circle’ | shape(turtle)|
 |   turtle.speed()      |    speed – an integer in the range 0..10    | set the speed of turtule|turtle.speed(9)|
@@ -336,12 +336,13 @@ The begin_fill() starts recording the moves that will be the outline of the fill
 
 The end_fill() function will stop recording the moves for the filled-in shape and draw the shape.
 
-To get more information about color [visit hear](https://docs.python.org/3/library/turtle.html#turtle.color)
+To get more information about color, [visit here](https://docs.python.org/3/library/turtle.html#turtle.color).
 
 ## Hacking
-- There are endless ways to make this turtle completely your own! Go back through your code and look for anything that can be played with. Try changing the default values of your forward, angle, color, size, etc.
 
-- Here are some examples to give you some more idea:
+There are endless ways to make this turtle completely your own! Go back through your code and look for anything that can be played with. Try changing the default values of your forward, angle, color, size, etc.
+
+Here are some examples to give you some ideas:
 
 - Square spiral [Demo and Code](https://repl.it/@YashKalbande/squarespiral#main.py)
 
