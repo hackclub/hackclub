@@ -4,21 +4,19 @@ description: 'Exciting Visuals with Python Turtle'
 author: '@YashKalbande'
 ---
 
-
 # Exciting Visuals with Python Turtle
 
-
 ## Introduction
-Welcome! my friends.  My name is Yash, and I am a technology enthusiast. Have you ever heard that you can create exciting visuals with help of Python?  My goal is to help you understand the python turtle library. With the help of the turtle library, we can create stunning visuals. First, I'm going to present to you the basics of the python turtle library. Then I'll share with you shapes like Triangle, Star, Hexagon. Finally, I'll ask you to create some more visual using ideas given in the end.
+
+Welcome! my friends. My name is Yash, and I am a technology enthusiast. Have you ever heard that you can create exciting visuals with help of Python? My goal is to help you understand the python turtle library. With the help of the turtle library, we can create stunning visuals. First, I'm going to present to you the basics of the python turtle library. Then I'll share with you shapes like Triangle, Star, Hexagon. Finally, I'll ask you to create some more visual using ideas given in the end.
 
 ![Benzen ring with Turtle](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
-
 
 ## Quickstart
 
 TODO - Explain how to install and setup Python 3 on [repl.it](https://repl.it/languages/python3) for turtle graphics.
 
-Then enter the following code in the newly created main.py file :
+Then enter the following code in the newly-created `main.py` file:
 
 ```python
 from turtle import *
@@ -52,22 +50,20 @@ There are many instructions like left() and forward(). These instructions are ca
 
 There are many instructions like left() and forward(). These instructions are called functions. Commonly used turtle methods are :
 
-| Method        | Parameter           | Description  | Example |
-| ------------- | ------------- | ----- | -------- |
-| turtle()      | None | Creates and returns a new turtle object | 
-| shape()       | shape name | Should be ‘arrow’, ‘classic’, ‘turtle’ or ‘circle’ | shape(turtle)|
-|   turtle.speed()      |    speed – an integer in the range 0..10    | set the speed of turtule|turtle.speed(9)|
-|penup() | None | Picks up the turtle's Pen| 
-| right()      | value of angle is degree      |   Turns the turtle clockwise | turtle.right(45) |
-| left() | value of angle is degree       |    Turns the turtle counter clockwise | turtle.left(45) |
-|  forward()       |  distance – a number (integer or float)       | Moves the turtle forward by the specified amount | turtle.forward(25) |
-|   backward()      |  distance – a number (integer or float)       | Move the turtle backward by distance | turtle.backward(30) |
-| turtle.circle()        | radius, extent=None, steps=None        |radius – a number ,extent – a number (or None),steps – an integer (or None) | turtle.circle(50)|
-|     color()    |    Color name     | Changes the color of the turtle’s pen | color("red")
-|    fillcolor()     |   Color name      | Changes the color of the turtle will use to fill a polygon| fillcolor("yellow")|
-|     goto()    |   x, y      |Move the turtle to position x,y | goto(2,5)|
-
-
+| Method          | Parameter                              | Description                                                                 | Example             |
+| --------------- | -------------------------------------- | --------------------------------------------------------------------------- | ------------------- |
+| turtle()        | None                                   | Creates and returns a new turtle object                                     |
+| shape()         | shape name                             | Should be ‘arrow’, ‘classic’, ‘turtle’ or ‘circle’                          | shape(turtle)       |
+| turtle.speed()  | speed – an integer in the range 0..10  | set the speed of turtule                                                    | turtle.speed(9)     |
+| penup()         | None                                   | Picks up the turtle's Pen                                                   |
+| right()         | value of angle is degree               | Turns the turtle clockwise                                                  | turtle.right(45)    |
+| left()          | value of angle is degree               | Turns the turtle counter clockwise                                          | turtle.left(45)     |
+| forward()       | distance – a number (integer or float) | Moves the turtle forward by the specified amount                            | turtle.forward(25)  |
+| backward()      | distance – a number (integer or float) | Move the turtle backward by distance                                        | turtle.backward(30) |
+| turtle.circle() | radius, extent=None, steps=None        | radius – a number ,extent – a number (or None),steps – an integer (or None) | turtle.circle(50)   |
+| color()         | Color name                             | Changes the color of the turtle’s pen                                       | color("red")        |
+| fillcolor()     | Color name                             | Changes the color of the turtle will use to fill a polygon                  | fillcolor("yellow") |
+| goto()          | x, y                                   | Move the turtle to position x,y                                             | goto(2,5)           |
 
 ## Turtle Motion
 
@@ -75,17 +71,17 @@ By calling these functions, the turtle can be made to move around the screen. Im
 
 The turtle's position is two numbers: the X coordinate and Y coordinate.
 
-### forward(*distance*)
+### forward(_distance_)
 
-The forward() function moves the turtle *distance* several steps in the current direction. If the pen is down (see pendown() and penup()) a line will be drawn as the turtle moves forward. If *distance* is a negative number, the turtle will move backward.
+The forward() function moves the turtle _distance_ several steps in the current direction. If the pen is down (see pendown() and penup()) a line will be drawn as the turtle moves forward. If _distance_ is a negative number, the turtle will move backward.
 
-### backward(*distance*)
+### backward(_distance_)
 
-The backward() function moves the turtle *distance* several steps in **opposite direction** the current direction. If the pen is down (see pendown() and penup()) a line will be drawn as the turtle moves backward. If *distance* is a negative number, the turtle will move forward.
+The backward() function moves the turtle _distance_ several steps in **opposite direction** the current direction. If the pen is down (see pendown() and penup()) a line will be drawn as the turtle moves backward. If _distance_ is a negative number, the turtle will move forward.
 
-### right(*angle*)
+### right(_angle_)
 
-The right() function will change the current direction clockwise by *angle* degrees. If you imagine being above the turtle looking down, the turtle turning right looks like it is turning clockwise. The turtle will not move; it will only change the direction it is facing.
+The right() function will change the current direction clockwise by _angle_ degrees. If you imagine being above the turtle looking down, the turtle turning right looks like it is turning clockwise. The turtle will not move; it will only change the direction it is facing.
 
 This example moves the turtle forward, then turns right by 90 degrees, then moves forward again:
 
@@ -98,9 +94,9 @@ right(90)
 forward(100)
 ```
 
-### left(*angle*)
+### left(_angle_)
 
-The left() function will change the current direction counter-clockwise or anti-clockwise by *angle* degrees. If you imagine being above the turtle looking down, the turtle turning left looks like it is turning counter-clockwise or anti-clockwise. The turtle will not move; it will only change the direction it is facing.
+The left() function will change the current direction counter-clockwise or anti-clockwise by _angle_ degrees. If you imagine being above the turtle looking down, the turtle turning left looks like it is turning counter-clockwise or anti-clockwise. The turtle will not move; it will only change the direction it is facing.
 
 This example moves the turtle forward, then turns left by 90 degrees, then moves forward again:
 
@@ -111,9 +107,9 @@ left(90)
 forward(100)
 ```
 
-### goto(*x*, *y*)
+### goto(_x_, _y_)
 
-The goto() function will immediately move the turtle to the given *x* and *y* coordinates. If the pen is down (see pendown() and penup()) a line will be drawn from the previous coordinates to the new coordinates.
+The goto() function will immediately move the turtle to the given _x_ and _y_ coordinates. If the pen is down (see pendown() and penup()) a line will be drawn from the previous coordinates to the new coordinates.
 
 This example moves to several x and y coordinates while drawing a line behind it:
 
@@ -126,17 +122,17 @@ goto(100, -50)
 goto(-50, -50)
 ```
 
-### setx(*x*)
+### setx(_x_)
 
-The goto() function will immediately move the turtle to the given *x* coordinate. The turtle's y coordinate will stay the same. If the pen is down (see pendown() and penup()) a line will be drawn from the previous coordinates to the new coordinates.
+The goto() function will immediately move the turtle to the given _x_ coordinate. The turtle's y coordinate will stay the same. If the pen is down (see pendown() and penup()) a line will be drawn from the previous coordinates to the new coordinates.
 
-### sety(*y*)
+### sety(_y_)
 
 The goto() function will immediately move the turtle to the given *y *coordinate. The turtle's x coordinate will stay the same. If the pen is down (see pendown() and penup()) a line will be drawn from the previous coordinates to the new coordinates.
 
-### setheading(*heading*)
+### setheading(_heading_)
 
-The setheading() function will change the current direction to the *heading* angle. If you imagine being above the turtle looking down, the turtle turning left looks like it is turning counter-clockwise or anti-clockwise. The turtle will not move; it will only change the heading it is facing.
+The setheading() function will change the current direction to the _heading_ angle. If you imagine being above the turtle looking down, the turtle turning left looks like it is turning counter-clockwise or anti-clockwise. The turtle will not move; it will only change the heading it is facing.
 
 ```python
 from turtle import *
@@ -186,7 +182,8 @@ You can read more about `forward` [on the Python docs](https://docs.python.org/3
 
 ## Some basic shapes with turtle
 
-__Triangle__<br />
+**Triangle**<br />
+
 ```python
 import turtle
 pencil = turtle.Turtle()
@@ -197,55 +194,61 @@ pencil.left(120)
 pencil.forward(100)
 turtle.done()
 ```
+
 ![Triangle](https://cloud-36kk4uh0h.vercel.app/triangle.gif)
 
-__Star__<br />
+**Star**<br />
+
 ```python
-import turtle  
-  
-star = turtle.Turtle() 
-  
-for i in range(50): 
-    star.forward(50) 
-    star.right(144) 
-      
-turtle.done() 
+import turtle
+
+star = turtle.Turtle()
+
+for i in range(50):
+    star.forward(50)
+    star.right(144)
+
+turtle.done()
 ```
+
 ![Star](https://cloud-36kk4uh0h.vercel.app/star.gif)
 
-__Hexagon__<br />
+**Hexagon**<br />
+
 ```python
-import turtle  
-polygon = turtle.Turtle() 
-  
+import turtle
+polygon = turtle.Turtle()
+
 num_sides = 6
 side_length = 70
-angle = 360.0 / num_sides  
-  
-for i in range(num_sides): 
-    polygon.forward(side_length) 
-    polygon.right(angle) 
-      
-turtle.done()  
+angle = 360.0 / num_sides
+
+for i in range(num_sides):
+    polygon.forward(side_length)
+    polygon.right(angle)
+
+turtle.done()
 ```
+
 ![Hexagon](https://cloud-36kk4uh0h.vercel.app/hexagon.gif)
 
-## Rainbow Benzene 
+## Rainbow Benzene
+
 So now you have gained basic knowledge of python turtle library. Now let's build the exciting rainbow benzene with a turtle.
+
 ```python
-import turtle 
-colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow'] 
-t = turtle.Pen() 
-turtle.bgcolor('black') 
-for x in range(360): 
-    t.pencolor(colors[x%6]) 
-    t.width(x/100 + 1) 
-    t.forward(x) 
+import turtle
+colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow']
+t = turtle.Pen()
+turtle.bgcolor('black')
+for x in range(360):
+    t.pencolor(colors[x%6])
+    t.width(x/100 + 1)
+    t.forward(x)
     t.left(59)
 ```
+
 ![Turtle Benzen ring](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
-
-
 
 ## Drawing
 
@@ -257,11 +260,11 @@ The pendown() function will cause the turtle to draw as it moves around. The lin
 
 The penup() function will cause the turtle to draw as it moves around. The line it draws can be set with the pencolor() and pensize() functions.
 
-### pensize(*size*)
+### pensize(_size_)
 
 The pensize() function sets the width of the line that the turtle draws as it moves.
 
-### pencolor(), pencolor(*color*), pencolor((*red*, *green*, *blue*)), pencolor(*red*, *green*, *blue*)
+### pencolor(), pencolor(_color_), pencolor((_red_, _green_, _blue_)), pencolor(_red_, _green_, _blue_)
 
 The pencolor() function sets the color of the line that the turtle draws. The pencolor() function can be passed a string of the color, such as 'red' or 'black'. Or, the pencolor() function can be passed an "RGB color tuple" (see the [Color](#color) section).
 
@@ -324,7 +327,7 @@ left(90)
 end_fill()
 ```
 
-### fillcolor(), fillcolor(*color*), fillcolor((*red*, *green*, *blue*)), fillcolor(*red*, *green*, *blue*)
+### fillcolor(), fillcolor(_color_), fillcolor((_red_, _green_, _blue_)), fillcolor(_red_, _green_, _blue_)
 
 The fillcolor() function sets the color of the filled-in shape when end_fill() is called. The fillcolor() function can be passed a string of the color, such as 'red' or 'black'. Or, the fillcolor() function can be passed an "RGB color tuple" (see the [Color](#color) section).
 
@@ -345,9 +348,7 @@ There are endless ways to make this turtle completely your own! Go back through 
 Here are some examples to give you some ideas:
 
 - Square spiral [Demo and Code](https://repl.it/@YashKalbande/squarespiral#main.py)
-
 - Geometrical Wheel Shape [Demo and Code](https://repl.it/@YashKalbande/geometrical#main.py)
-
 - Colorful Spiral [Demo and Code](https://repl.it/@YashKalbande/spiral#main.py)
 
-- ![Turtle Spiral](https://cloud-36kk4uh0h.vercel.app/spiral.gif)
+![Turtle Spiral](https://cloud-36kk4uh0h.vercel.app/spiral.gif)
