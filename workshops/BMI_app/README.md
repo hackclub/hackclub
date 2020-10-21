@@ -107,19 +107,19 @@ then change the text to the name we want.
 
 This is the only textproperty we will change
 ---
-Label_weight Text  Property  :"to      Type Weight" 
+Label_weight Text  Property       : to     " Type Weight" 
 
-Labe_height Text   Property  :"to      type weight"
+Labe_height Text   Property       : to      type weight"
 
-Button_calulate Text property :"to      Calculate BMI"
+Button_calulate Text property     : to      "Calculate BMI"
 
-Text_BMI Text property :"to      BMI value: "
+Text_BMI Text property            : to     " BMI value: "
 
-BMI_value Text property :"to      nothing please ❗️delete the text in there❗️and don’t add any text "
+BMI_value Text property           : to      "nothing please ❗️delete the text in there❗️and don’t add any text "
 
-Text_Diagnosis Text property  :"to      Diagnosis:"
+Text_Diagnosis Text property      : to     " Diagnosis:"
 
-Diagnosis_report Text property:"to      nothing please delete the text in there and don’t add any text."
+Diagnosis_report Text property    : to     " nothing please delete the text in there and don’t add any text."
 
 ---
 
@@ -245,7 +245,7 @@ Now we see a small button like ☸️ paremeter  inside the if statement, click 
 
 an option will open up that we could add more `🟠else if` statement, now inside this blocks drag `🟠else if` statement inside the group of block and on top of `🟠else` statements.
 
-![](https://cloud-kocs0wuh7.vercel.app/7elseif.gif)
+![gif](https://cloud-kocs0wuh7.vercel.app/7elseif.gif)
 
 You will then add 4 `🟠Else if` statement one after another.
 
