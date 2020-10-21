@@ -1,3 +1,9 @@
+name: Stock Visualizer in Python
+description: Make a stock visualizer in Python and learn how to use web requests
+author: @sohamb117
+
+---
+
 # Web Requests in Python - With a Stock Visualizer!
 
 Everyone uses websites. Chances are, you're using a website right now. But how do websites get access to data that is constantly changing? The answer: HTTP requests. The [Requests](https://requests.readthedocs.io/en/master/) library in Python is an easy way to integrate your program with resources online. It provides a simple way to work with HTTP requests, which are a vital part of most large applications.
@@ -174,17 +180,51 @@ r = requests.get(f'https://finnhub.io/api/v1/quote?symbol={line}', headers = hea
 
 You'll notice that we have a tag `{line}` in the URL now. Python will format the URL string by passing in the value of the variable `line` into the corresponding tag, in this case, `{line}`. This means that the user's input is passed into the webrequest, and we get the value for the symbol the user inputs.
 
+## Calculating Percent Change
+Let's add some more functionality now. I also want to show the change in stock price since the previous closing price. Let's calculate that now. 
+
+Replace the line 
+```python
+print(line, rjson['c'], sep = " - ");
+```
+
+with
+
+```python
+value = rjson['c']
+previousClose = rjson['pc']
+percentChange = ((value - previousClose)/previousClose) * 100
+```
+This will allow us to calculate how much the stock value has changed by. The code `value - previousClose` tells us how much our stock's price has changed by. We divide by `previousClose` to get a decimal representation of the change. We multiply by 100 to convert to a percent.
+
+Now let's format our print statement. Add these lines to the bottom of your code.
+```python
+print(line + ':')
+print("\t Current Value", "$" + str(value), sep = " - ")
+print("\t Previous Close", "$" + str(previousClose), sep = " - ")
+print("\t Percent Change", "{:.3f}".format(percentChange)+"%", sep = " - ")
+```
+
+The first line here prints the stock name. The second and third lines put in tabs with `\t` and then print the name and the value. The `sep` argument tells us how the strings we separate with `,` in the code will be separated when printing.
+The fourth line here is most interesting. The code uses `"{:.3f}"` as a string placeholder for the `format()` method. I won't go into much depth on how it works here, but an article is linked at the bottom. We format the integer `percentChange` using this method and add a `"%"` string to the end to make it look nice.
+
 Your final code should look like this:
 ```python
 import requests
 import json
 
 line = input("Give me a stock symbol?")
-header = {'X-Finnhub-Token':'bte5t0f48v6t6gcu8epg'}
+header = {'X-Finnhub-Token':'[TOKEN]'}
 r = requests.get(f'https://finnhub.io/api/v1/quote?symbol={line}', headers = header)
 rcontent = (r.content)
 rjson = json.loads(rcontent)
-print(line,rjson['c'], sep = " - ")
+value = rjson['c']
+previousClose = rjson['pc']
+percentChange = ((value - previousClose)/previousClose) * 100
+print(line + ':')
+print("\t Current Value", "$" + str(value), sep = " - ")
+print("\t Previous Close", "$" + str(previousClose), sep = " - ")
+print("\t Percent Change", "{:.3f}".format(percentChange)+"%", sep = " - ")
 ```
 
 Run your code and see what happens. It should prompt you for a symbol and give you the value of that stock.
@@ -211,6 +251,4 @@ Here are some things to read to learn more about what we did here:
 * https://www.tutorialspoint.com/http/http_requests.htm
 * https://docs.python.org/3/library/json.html
 * https://www.howtogeek.com/343877/what-is-an-api/
-
-
-[Workshop Demo Video](https://cloud-k8zl09ofw.vercel.app/zoom_1.mp4)
+* https://realpython.com/python-f-strings/#option-2-strformat
