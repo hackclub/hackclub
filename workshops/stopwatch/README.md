@@ -127,7 +127,7 @@ Mainly, there are 3 ways of defining a variable in JavaScript.
 2. `let`
 3. `const`
 
-We will ignore `var` for now as we won't use it. If we define a variable using `let` then we can change its value anytime in the code afterwards. But, a `const` variable's value always remains constant and it will never change. Even if you try to change it, the console will throw you errors.
+We will ignore `var` for now as we won't use it. If we define a variable using `let`, then we can change its value anytime in the code afterwards. Meanwhile, a `const` (“constant”)’s value always remains constant and cannot be changed—if you try to change it, JavaScript will show you an error in the console.
 
 **What is querySelector()?** The querySelector() method returns the first element that matches a specified CSS class(s) in the document.
 
