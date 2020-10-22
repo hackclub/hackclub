@@ -38,7 +38,7 @@ API stands for Application Programming Interface, (API), which provides a quick 
 
 - The country flags
 - The country names
-- And their respective country's currency.
+- And the respective country's currency.
 
 Each country's features will be shown in it's respective card, represented as a `<div>` element.
 
@@ -64,7 +64,7 @@ We will be using very simple and easy to understand html elements as display bel
 </html>
 ```
 
-**NOTE:** `You can copy-paste the code above` But, never copy-paste a non-clear code or the code you did not understand. A brief explanation of the html boilerplate at the top is as simple as having `css` file linked at the `<head>` section of the html along with the title element to show web title and the main element for the purpose of semantic and web page accessibilities. Followed by a <div> element with a class attribute of card which shall hold every country flags and names and lastly linked with a javascript `script` file that will do all the magic, just before the </body> closing tag.
+**NOTE:** `You can copy-paste the code above` But, never copy-paste a code that is not clear to you. A brief explanation of the html boilerplate at the top is as simple as having a `css` file linked at the `<head>` section of the html along with the `title` element to show the web title and the main element for the purpose of semantics and web page accessibilities. Followed by a `<div>` element with a class attribute of card which shall hold every country's flag and names and also lastly linked with a javascript `script` file that will do all the magic, just before the </body> closing tag.
 
 ## The StyleSheet
 
@@ -78,7 +78,7 @@ We will be using very simple and easy to understand html elements as display bel
 }
 ```
 
-This is done to remove the default margin and padding of every element and to set the box-sizing to border-box, which controls the behavioural activities of every elements on the page. This prevents the default addition of margins and paddings to the width and height.
+This is done to remove the default margin and padding of every element and to set the box-sizing to border-box, which controls the behavioural activities of every element on the page. This prevents the default addition of margins and paddings to the width and height.
 
 - Setting the style of the main content area
 
@@ -167,7 +167,7 @@ The font size and type are set with the lines of codes above, and the spacing is
       }
 ```
 
-**This is the code that does all the magic you see when you press the play green button on repl.it (or when you run your code on your editor) at this point as it is the complete code for the application. However, I will be expalaining what each line of code does, one after the other**
+**This is the code that does all the magic you see when you press the green play button on repl.it (or when you run your code on your editor) at this point as it is the complete code for the application. However, I will be expalaining what each line of code does, one after the other**
 
 As the window loads, a fuction gets called. Where main, card and cardParent are set for DOM manipulation.
 
@@ -175,13 +175,13 @@ As the window loads, a fuction gets called. Where main, card and cardParent are 
 const main = document.getElementById("main");
 ```
 
-`main` variable is bringing our `<main>` tag into the DOM from html page using the `id` assigned to the element.
+The `main` variable is bringing the `<main>` tag into the DOM from html page using the `id` assigned to the element.
 
 ```js
 const card = document.querySelector(".card");
 ```
 
-`<div>` element with the class attribute of card, is brought to the DOM using **`querySelector`** method. `QuerySelector` returns the first element that contains the attribute passed in HTML.
+A `<div>` element with the class attribute of card, is brought to the DOM using **`querySelector`** method. The `QuerySelector` returns the first element that contains the attribute passed in HTML.
 
 ```js
 const cardParent = document.createElement("div");
@@ -203,7 +203,7 @@ Then, the javascript fetch method was invoked with the argument/parameters of th
 
 ## What is Fetch?
 
-Fetch is one of the way of making `HTTP` calls. HTTP calls includes `GET`, `POST`, `DELETE` among nine (9) others, which are not the scope of this workshop. The fetch method returns a promise.
+Fetch is one of the way of making `HTTP` calls. HTTP calls includes `GET`, `POST`, `DELETE` among nine (9) others, which are not within the scope of this workshop. The fetch method returns a PROMISE.
 
 ## What is a Promise?
 
@@ -216,7 +216,7 @@ A Promise is an object that may produce a single response in the future. Such re
    .then((data) => {
 ```
 
-The response was converted to json by the first promise returned. The last promise returned a data from the url and the data was looped through.
+The response is converted to json by the first promise returned. The last promise returned a data from the url and the data was looped through.
 
 ```js
 const flagImage = document.createElement("img");
@@ -232,13 +232,15 @@ cardParent.appendChild(flagImage);
 cardParent.appendChild(countryName);
 ```
 
-Inside the loop `flagImage`, which is the image of the flag, and `countryName`, which is the paragraph element for the name, was created using the javascript `create element` method. The textContent was used to put in the text from the API to the `<p>` tag which was created with DOM. Both were appended into cardParent, then later appended and rendered out in the `card element` using the javascript `appendChild` method.
+In the loop `flagImage`, which is the image of the flag, and `countryName`, which is the paragraph element for the name, were created using the javascript `create element` method. The textContent was used to put in the text from the API to the `<p>` tag which was created with DOM. Both were appended into cardParent, then later appended and rendered out in the `card element` using the javascript `appendChild` method.
 
 ## What is the appendChild method
 
 It is basically the **`DOM`** method that is used to move an element from its current position to another new position as the `flagImage` and `countryName` elements get moved to `parentCard`, while the parentCard element was moved to `card` element.
 
-_WAW!_ You just built a web-app that fetches data from external API using pure (vanilla) Javascript. And your page should look like the image below.
+![congratulations](https://cloud-jcxb4s03p.vercel.app/0bd89.gif)
+
+_WOW!_ You just built a web-app that fetches data from an external API using pure (vanilla) Javascript. Your page should look like the image below.
 
 [![Sample Page](https://cloud-g6yi6cyg3.vercel.app/0untitled.png)](https://country-list.taiwrash.repl.co)
 
@@ -248,15 +250,15 @@ _WAW!_ You just built a web-app that fetches data from external API using pure (
 
 Remember to share the URL you got after pressing the green play button on repl.it on the #ship channel
 
-Below are the list of what can be done on this particular project to improve and have more hacks! It's good to try them out for a challenge.
+Below are the list of what can be done on this particular project to improve it and have more hacks! It is good to try them out for a challenge.
 
 1.  Changing the app layout by giving a new look to the app colours and styles.
 
 2.  A filter bar can be included at top to search for a particular country.
 
-3.  Adding a dark mode to the app will increase the accessibility
+3.  Adding a dark mode to the app will enhance its dynamism
 
-4.  More creative ideas can be implemented with your imagination.
+4.  More creative ideas can be implemented with your imagination as data for real life project also available.
 
 5.  More data can be fetched from the API like the country codes, currency, populations, currency symbols and other tons of data are available.
 
@@ -272,4 +274,4 @@ Below are the list of what can be done on this particular project to improve and
 
 ## Conclusion
 
-This is the end of the workshop and I believe you've been able to build and learn how to work with API using pure Javascript also know as vanilla JS. I wish you all the best in all your upcoming Hacks. Enjoy!
+This is the end of the workshop. I believe you've been able to build and learn how to work with API using pure Javascript also know as vanilla JS. I wish you all the best in all your upcoming Hacks. Enjoy!
