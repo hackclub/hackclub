@@ -9,13 +9,13 @@ img: 'https://cloud-5wbumzu15.vercel.app/2020-10-22_rmy2baf5ukzf4u4knpqhgu7gftrf
 
 ## Introduction
 
-Welcome! Using Python, with the help of the turtle library, we can create stunning visuals. First, I'm going to present to you the basics of the Python turtle library. Then I’ll share with you how to draw shapes—triangles, stars, hexagons. Finally, you’ll create your own graphics using
+Welcome! Using Python, with the help of the turtle library, we can create stunning visuals. First, I'm going to present to you the basics of the Python turtle library. Then I’ll share with you how to draw shapes like triangles, stars, and hexagons. Finally, you’ll create your own graphics.
 
 ![Benzen ring with Turtle](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
 
 ## Hello, Turtle!
 
-I’m sure everybody has used a drawing board as a kid. Now, imagine, instead of manually drawing on the board, you could command the system to draw for you. Isn’t that cool? Python’s turtle module lets you do that. It basically lets you create a drawing board and command a turtle to draw for you.A turtle is a tiny robot that draws on your screen, we can tell it to move around using Python commands.
+I’m sure everybody has used a drawing board as a kid. Now, imagine, instead of manually drawing on the board, you could command the system to draw for you. Isn’t that cool? Python’s turtle module lets you do that. It basically lets you create a drawing board and command a turtle to draw for you. A turtle is a tiny robot that draws on your screen, we can tell it to move around using Python commands.
 
 Start new coding environment of Python 3 on [repl.it](https://repl.it/languages/python3) for turtle graphics.
 
