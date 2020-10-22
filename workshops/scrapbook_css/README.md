@@ -1,6 +1,6 @@
 ---
-name: Creating a jaw-dropping Scrapbook
-description: A simple introduction to CSS and its wonderful quirks!
+name: Jaw-dropping Scrapbook CSS
+description: Customize your Hack Club Scrapbook page through a simple introduction to CSS
 author: '@sampoder'
 ---
 
