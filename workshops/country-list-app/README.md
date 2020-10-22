@@ -14,7 +14,7 @@ Here is the [Live Demo](https://country-list.taiwrash.repl.co) of the app and th
 
 ## Setting up the code environment
 
-If you would like a smooth and easy development and production without installing any desktop software, check our [repl.it](https://repl.it/languages/html). A development and production environment will be set for you in a few seconds.You should have a page like the one below.
+If you would like a smooth and easy development and production without installing any desktop software, check out [repl.it](https://repl.it/languages/html). A development and production environment will be set for you in a few seconds.You should have a page like the one below.
 
 ![Repl.it](https://cloud-be2z8hzbo.vercel.app/0image.png)
 
@@ -38,8 +38,9 @@ API stands for Application Programming Interface, (API), which provides a quick 
 
 - The country flags
 - The country names
-- And their respective country's currency
-  Each country's features will be shown in it's respective card, represented as a <div> element.
+- And their respective country's currency.
+
+Each country's features will be shown in it's respective card, represented as a `<div>` element.
 
 ## Mark Up Section (Setting up the HTML)
 
@@ -63,7 +64,7 @@ We will be using very simple and easy to understand html elements as display bel
 </html>
 ```
 
-**NOTE:** `You can copy paste the code above` But, never copy-paste a non-clear code or the code you did not understand. A brief explanation of the html boilerplate at the top is as simple as having `css` file linked at the `<head>` section of the html along with the title element to show web title and the main element for the purpose of semantic and web page accessibilities. Followed by a <div> element with a class attribute of card which shall hold every country flags and names and lastly linked with a javascript `script` file that will do all the magic, just before the </body> closing tag.
+**NOTE:** `You can copy-paste the code above` But, never copy-paste a non-clear code or the code you did not understand. A brief explanation of the html boilerplate at the top is as simple as having `css` file linked at the `<head>` section of the html along with the title element to show web title and the main element for the purpose of semantic and web page accessibilities. Followed by a <div> element with a class attribute of card which shall hold every country flags and names and lastly linked with a javascript `script` file that will do all the magic, just before the </body> closing tag.
 
 ## The StyleSheet
 
