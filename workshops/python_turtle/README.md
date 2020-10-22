@@ -12,11 +12,44 @@ Welcome! my friends. Have you ever heard that you can create exciting visuals wi
 
 ![Benzen ring with Turtle](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
 
-## Quickstart
+## Hello, Turtle!
+
+I’m sure everybody has used a drawing board as a kid. Now, imagine, instead of manually drawing on the board, you could command the system to draw for you. Isn’t that cool? Python’s turtle module lets you do that. It basically lets you create a drawing board and command a turtle to draw for you.A turtle is a tiny robot that draws on your screen, we can tell it to move around using Python commands.
 
 Start new coding environment of Python 3 on [repl.it](https://repl.it/languages/python3) for turtle graphics.
 
 Then enter the following code in the newly-created `main.py` file:
+
+```python 
+from turtle import *
+forward(100)
+```
+Click on _Run Button_. Observe how the turtle moved forward 100 pixels? The turtle has a pen attached, and draws lines as it moves around the screen.
+
+Now, lets make the turtle move around canvas! Try using backward(distance) as well as turning the turtle by using right(angle) and left(angle). Eg backward(20) tells the turtle to move backwards 20 pixels, and right(90) tells the turtle to turn right 90 degrees. You can give more than one instruction at a time, they will be executed in order.
+
+```python
+from turtle import *
+
+speed(11)
+shape("turtle")
+
+forward(100)
+right(120)
+forward(100)
+left(90)
+backward(100)
+left(90)
+forward(50)
+```
+What does the code at the beginning of our program do:
+
+from turtle import * :- tells Python we want  to use the turtle library, a collection of code we can use to draw on the screen. Using a library means we can save time.
+
+speed() :- sets the speed of the turtle, it take a value between 1 and 11. 11 is the fastest, 1 is the slowest.
+
+shape() :- we are using the "turtle" shape, but it can also take the values "arrow","cicle","square","triangle" or "classic".
+
 
 ```python
 from turtle import *
