@@ -1,7 +1,8 @@
 ---
 name: 'Python Turtle'
-description: 'Exciting Visuals with Python Turtle'
+description: 'Draw shapes & patterns using Python’s Turtle library'
 author: '@YashKalbande'
+img: 'https://cloud-5wbumzu15.vercel.app/2020-10-22_rmy2baf5ukzf4u4knpqhgu7gftrfkff5.jpeg'
 ---
 
 # Exciting Visuals with Python Turtle
@@ -42,14 +43,12 @@ backward(100)
 left(90)
 forward(50)
 ```
-What does the code at the beginning of our program do:
 
-from turtle import * :- tells Python we want  to use the turtle library, a collection of code we can use to draw on the screen. Using a library means we can save time.
+Here's how that code works:
 
-speed() :- sets the speed of the turtle, it take a value between 1 and 11. 11 is the fastest, 1 is the slowest.
-
-shape() :- we are using the "turtle" shape, but it can also take the values "arrow","cicle","square","triangle" or "classic".
-
+- `from turtle import *` tells Python we want to use the `turtle` library, a collection of code we can use to draw on the screen. Using a library means we can save time.
+- `speed()` sets the speed of the turtle, it take a value between 1 and 11 (11 is the fastest, 1 is the slowest).
+- `shape()` we are using the "turtle" shape, but it can also take the values "arrow", "cicle", "square", "triangle" or "classic".
 
 ```python
 from turtle import *
@@ -81,7 +80,7 @@ With these seven steps, the turtle draws a square. The `from turtle import *` is
 
 There are many instructions like left() and forward(). These instructions are called functions. This tutorial explains many of the functions in the turtle module. When you learn more about these functions, you will be able to draw many different shapes and beautiful pictures!
 
-There are many instructions like left() and forward(). These instructions are called functions. Commonly used turtle methods are :
+There are many instructions like left() and forward(). These instructions are called functions. Commonly used turtle methods are:
 
 | Method          | Parameter                              | Description                                                                 | Example             |
 | --------------- | -------------------------------------- | --------------------------------------------------------------------------- | ------------------- |
@@ -372,7 +371,7 @@ The begin_fill() starts recording the moves that will be the outline of the fill
 
 The end_fill() function will stop recording the moves for the filled-in shape and draw the shape.
 
-To get more information about color, [visit here](https://docs.python.org/3/library/turtle.html#turtle.color).
+[Here’s more information on color in turtle.](https://docs.python.org/3/library/turtle.html#turtle.color)
 
 ## Hacking
 
@@ -380,8 +379,8 @@ There are endless ways to make this turtle completely your own! Go back through 
 
 Here are some examples to give you some ideas:
 
-- Square spiral [Demo and Code](https://repl.it/@YashKalbande/squarespiral#main.py)
-- Geometrical Wheel Shape [Demo and Code](https://repl.it/@YashKalbande/geometrical#main.py)
-- Colorful Spiral [Demo and Code](https://repl.it/@YashKalbande/spiral#main.py)
+- [Square spiral Demo and Code](https://repl.it/@YashKalbande/squarespiral#main.py)
+- [Geometrical Wheel Shape Demo and Code](https://repl.it/@YashKalbande/geometrical#main.py)
+- [Colorful Spiral Demo and Code](https://repl.it/@YashKalbande/spiral#main.py)
 
 ![Turtle Spiral](https://cloud-36kk4uh0h.vercel.app/spiral.gif)
