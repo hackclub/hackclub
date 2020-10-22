@@ -2,7 +2,7 @@
 name: 'Python Turtle'
 description: 'Draw shapes & patterns using Python’s Turtle library'
 author: '@YashKalbande'
-img: 'https://cloud-5wbumzu15.vercel.app/2020-10-22_rmy2baf5ukzf4u4knpqhgu7gftrfkff5.jpeg'
+img: 'https://cloud-qtdzdcl76.vercel.app/2020-10-22_arzjn43gad592m4py1nqcngtnmjkqzma.jpeg'
 ---
 
 # Exciting Visuals with Python Turtle
