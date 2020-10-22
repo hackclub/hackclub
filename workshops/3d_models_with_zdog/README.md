@@ -7,13 +7,15 @@ img: 'https://cloud-f0her7co2.vercel.app/2020-10-21_84xj5ymva0f16vfmyderfn46epzg
 
 # Animated 3D Models
 
-We all have wanted to make 3D models at some point, although it seems to be complicated, it’s not!— In this workshop, we will be using a simple JavaScript library named Zdog that will let us make anything we want to in a matter of minutes, follow along with us and see how easy it is.
+We all have wanted to make 3D models at some point, although it seems to be complicated, it’s not!— In this workshop, we will be using a simple JavaScript library named [Zdog](https://zzz.dog/getting-started) that will let us make anything we want to in a matter of minutes, follow along with us and see how easy it is.
 
-At the end of this workshop, you will be able to make 3D models like these:
+At the end of this workshop, you will be able to make 3d models like this one:
 
 ![examples](https://cloud-5a0ya05fk.vercel.app/0large.gif)
 
-Here's a [live demo](https://repl.it/@wollygfx/Hack-Club-Workshop-Demo) of what we will make, you can also find the final code there.
+Here's a [live demo](https://repl.it/@wollygfx/Hack-Club-logo) of what we will make, you can also find the final code there.
+
+![Hack club 3d logo](https://cloud-590c1rr82.vercel.app/0screen_recording_2020-10-21_at_7.00.53_am.gif)
 
 ## Set Up
 
@@ -256,12 +258,6 @@ Here's the final result:
 
 ![final result](https://cloud-d9lxnrldx.vercel.app/0screen_recording_2020-10-09_at_12.05.02_pm.gif)
 
-### Coin 3D Model
-
-Here is a coin i made using ZDog in minutes, if you want to check it out; click [here](https://repl.it/@wollygfx/Demo-3-ZDog).
-
-![Coin gif](https://cloud-a2uahifuy.vercel.app/0screen_recording_2020-10-14_at_11.34.04_am.gif)
-
 ### Hack It
 
 Congratulations! You just learned the basics of ZDog, feel free to check the resources below to improve your knowledge...
@@ -269,6 +265,14 @@ Congratulations! You just learned the basics of ZDog, feel free to check the res
 ![Congrats gif](https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
 
 Make your own 3D Model and share it in the [Hack Club Slack](hackclub.slack.com), I would love to see what you can create using what you've learned in this workshop.
+
+### Other examples
+
+Check out these cool 3D Models made by other people:
+
+- Live digital clock made using ZDog [here](https://codepen.io/jh3y/pen/vqYLKd).
+- Amethyst from steven universe made using ZDog [here](https://codepen.io/Metahari/pen/dEQMBy).
+- Generic coin made using ZDog [here](https://repl.it/@wollygfx/Demo-3-ZDog)
 
 ### Resources
 
