@@ -4,9 +4,9 @@ description: "creating a BMI application using App inventor"
 author: "@Chrisrama"
 ---
 
-Hello friends, today we will be using MIT APP INVENTOR, to create our BMI application. It an online platform that help you create aan ndroid application using blocks to write the code, for this application we are doing, it will be simple that you don’t need any knowledge on how to do it. So you just need to go through each step and your app will be on  unning. 
+Hello friends, today we will be using MIT APP INVENTOR, to create our BMI application. It an online platform that helps you create an android application using blocks to write the code, for this application we are doing, it will be simple that you don’t need any knowledge on how to do it. So you just need to go through each step and your app will be on running. 
 
-Body mass index (BMI) application aacalculator that  measure the body's BMI category  ased on height and weight of the person. It uses a very simple formula :
+Body mass index (BMI) application calculator that  measure the body's BMI index based the on height and weight of the person. It uses a very simple formula :
 
 
 `(Your weight / your height )^2 will be the formula`
@@ -14,7 +14,7 @@ Body mass index (BMI) application aacalculator that  measure the body's BMI cate
 
 # Step 1
 
-Now let build  ur app. We will start by visiting [MIT app inventor](http://appinventor.mit.edu/).Now inside the home page,then right clik on the button Create Apps!
+Now let build the app. We will start by visiting [MIT app inventor](http://appinventor.mit.edu/). Now inside the home page,then right click on the button Create Apps!
 
  ![click here](https://cloud-k86tkribn.vercel.app/0screenshot_2020-09-30_at_12.31.43.png)
  
