@@ -7,7 +7,7 @@ img: 'https://cloud-f0her7co2.vercel.app/2020-10-21_84xj5ymva0f16vfmyderfn46epzg
 
 # Animated 3D Models
 
-We all have wanted to make 3D models at some point, although it seems to be complicated, it’s not!— In this workshop, we will be using a simple JavaScript library named [Zdog](https://zzz.dog/getting-started) that will let us make anything we want to in a matter of minutes, follow along with us and see how easy it is.
+We all have wanted to make 3D models at some point, and although it seems to be complicated, it’s not! In this workshop, we will be using a simple JavaScript library named [Zdog](https://zzz.dog/getting-started) that will let us make anything we want to in a matter of minutes.
 
 At the end of this workshop, you will be able to make 3D models like this one:
 
