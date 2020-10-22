@@ -22,7 +22,7 @@ Well, by now, you must have known what a Konami Code is. How about we build our 
 
 Here's the demo of what we'll be building:
 
-[![Image](https://cloud-95l2730mf.vercel.app/konamigif.gif)](https://Konami-code.faisalsayed1.repl.co/)
+[![Screenshot of website](https://cloud-95l2730mf.vercel.app/konamigif.gif)](https://Konami-code.faisalsayed1.repl.co/)
 
 Here's the [live demo](https://Konami-code.faisalsayed1.repl.co/) and the [source code](https://repl.it/@FaisalSayed1/Konami-Code).
 
@@ -30,7 +30,7 @@ Here's the [live demo](https://Konami-code.faisalsayed1.repl.co/) and the [sourc
 
 You should have a beginner understanding of ["HTML", "CSS", "JavaScript"].
  
-You should also know the basics of [`Arrays`](https://www.w3schools.com/js/js_arrays.asp).
+You should also know the basics of [Arrays](https://www.w3schools.com/js/js_arrays.asp).
 
 ## Part 2: Setup
 
@@ -250,7 +250,7 @@ Here's how you will do it:
 
 ```js
 function keysDetector(e) {
-... // all the above code
+// all the above code
 
 if (keys.length > secretCode.length) {
   keys.shift()
@@ -321,7 +321,7 @@ ELEMENT.innerHTML = "textYouNeedToDisplay";
 
 ```js
 function keysDetector(e) {
-  ... //all the above code
+  // all the above code
 
   if (JSON.stringify(keys) === JSON.stringify(secretCode)) {
     secretDiv.style.display = "block";
@@ -339,16 +339,19 @@ Here's how to do it:
 
 ```js
 function keysDetector(e) {
-  ... //all the above code
+  // all the above code
   if (JSON.stringify(keys) === JSON.stringify(secretCode)) {
-    ... //all the above code
+    // all the above code
     anime({
       targets: 'body',
       rotate: '1turn',
       backgroundColor: '#fcba03',
       duration: 2000
     });
+    }
+    }
 ```
+
 **Explanation:** In the parameter of the `anime()` function, the first value is the target on which the animation will get played on. Then we give it a rotation value of `1turn`. We also change the background color to something else and the duration is set to 2000ms i.e 2secs.
 
 If you want to play around with the animation, [Here](https://animejs.com/documentation/) is the documentation on how to use it.
@@ -399,29 +402,22 @@ Try to type the Konami Code which you have specified on the website and see the 
 
 If you haven't created an account on [repl.it](https://repl.it), make sure you do so to save this wonderful piece of creation!
 
-If you face any difficulties in signing up watch [this](https://www.youtube.com/watch?v=Mtqp4CUepk0).
-
+If you face any difficulties in signing up, [watch this](https://www.youtube.com/watch?v=Mtqp4CUepk0).
 
 Now it is up to you! Do anything with this project, try to implement an easter egg similar to this in your other websites!
 
 Check out these crazy examples!
 
 - [CTF Example](https://repl.it/@FaisalSayed1/Konami-Code-Example-1)
-
 - [Mission Impossible](https://repl.it/@FaisalSayed1/Konami-Code-Example-2)
-
 - [Hackclubber?](https://repl.it/@FaisalSayed1/Konami-Code-Example-3)
-
 - [!pwned](https://repl.it/@FaisalSayed1/Konami-Code-Example-4)
-
 - [Spinning Portfolio](https://repl.it/@FaisalSayed1/Konami-Code-Example-5)
 
-Check out what other hackclubbers have built!
+Check out what other Hack Clubbers have built!
 
 - [Tanishq](https://konami.tanishqsoni.repl.co/) - [Src Code](https://repl.it/@tanishqsoni/konami#index.html) 
-
 - [Aaryan](https://konami.aaryanporwal.repl.co/) - [Src Code](https://repl.it/@aaryanporwal/konami#index.html)  
-
 - [JackTDC](https://rapidniceregister.jacktdc.repl.co/) - [Src Code](https://repl.it/@JackTDC/RapidNiceRegister#index.html)
 
 Now that you have finished building it, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
