@@ -1,7 +1,7 @@
 ```
 ---
 name: 'Contact Me handler with Netlify Functions'
-description: 'Make a "contact me" form using serverles functions'
+description: 'Make a "contact me" form using serverless functions'
 author: '@shreyfirst'
 ---
 ```
