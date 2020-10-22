@@ -9,7 +9,7 @@ img: 'https://cloud-5wbumzu15.vercel.app/2020-10-22_rmy2baf5ukzf4u4knpqhgu7gftrf
 
 ## Introduction
 
-Welcome! my friends. Have you ever heard that you can create exciting visuals with help of Python? My goal is to help you understand the python turtle library. With the help of the turtle library, we can create stunning visuals. First, I'm going to present to you the basics of the python turtle library. Then I'll share with you shapes like Triangle, Star, Hexagon. Finally, I'll ask you to create some more visual using ideas given in the end.
+Welcome! Using Python, with the help of the turtle library, we can create stunning visuals. First, I'm going to present to you the basics of the Python turtle library. Then I’ll share with you how to draw shapes—triangles, stars, hexagons. Finally, you’ll create your own graphics using
 
 ![Benzen ring with Turtle](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
 
