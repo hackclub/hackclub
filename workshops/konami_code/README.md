@@ -1,7 +1,8 @@
 ---
 name: 'Konami Code'
-description: 'Implement a Konami Code on a website'
+description: 'Add a fun Easter Egg to your website with JavaScript'
 author: '@faisalsayed10'
+img: 'https://cloud-ab42sp36n.vercel.app/2020-10-23_fj9xgpmyvhzwht57t0408bwwwbvpjt4t.png'
 ---
 
 # Konami Code
