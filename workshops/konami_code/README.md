@@ -22,14 +22,14 @@ Well, by now, you must have known what a Konami Code is. How about we build our 
 
 Here's the demo of what we'll be building:
 
-[![Screenshot of website](https://cloud-95l2730mf.vercel.app/konamigif.gif)](https://Konami-code.faisalsayed1.repl.co/)
+[![GIF of confetti on website after entering password](https://cloud-95l2730mf.vercel.app/konamigif.gif)](https://Konami-code.faisalsayed1.repl.co/)
 
 Here's the [live demo](https://Konami-code.faisalsayed1.repl.co/) and the [source code](https://repl.it/@FaisalSayed1/Konami-Code).
 
 ## Part 1: Prerequisites
 
-You should have a beginner understanding of ["HTML", "CSS", "JavaScript"].
- 
+You should have a beginner understanding of HTML, CSS, and JavaScript.
+
 You should also know the basics of [Arrays](https://www.w3schools.com/js/js_arrays.asp).
 
 ## Part 2: Setup
@@ -42,13 +42,13 @@ To get started, go to [this starter code](https://repl.it/@FaisalSayed1/Starter-
 
 You should see something like the following:
 
-![Image](https://cloud-axmnhdj9w.vercel.app/image.png)
+![Screenshot of repl.it interface](https://cloud-axmnhdj9w.vercel.app/image.png)
 
 ## Part 3: Building the project
 
 ### 1) HTML
 
-Let's start writing the HTML code required in the `index.html` file. 
+Let's start writing the HTML code required in the `index.html` file.
 
 The starter code contains the two libraries, `confetti.js` and `anime.js` already installed and imported for you!
 
@@ -56,7 +56,7 @@ Add some basic HTML code inside of our `<body>` tag.
 
 ```html
 <canvas id="my-canvas"></canvas>
-<h1 class='text'>Password Please</h1>
+<h1 class="text">Password Please</h1>
 <div class="secret-div">
   <h1>Hello comrade!</h1>
 </div>
@@ -72,8 +72,8 @@ We are done with our HTML and here is our final code:
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cutt.ly/anime_js"></script>
@@ -81,7 +81,7 @@ We are done with our HTML and here is our final code:
   </head>
   <body>
     <canvas id="my-canvas"></canvas>
-    <h1 class='text'>Password Please</h1>
+    <h1 class="text">Password Please</h1>
     <div class="secret-div">
       <h1>Hello comrade!</h1>
     </div>
@@ -92,7 +92,7 @@ We are done with our HTML and here is our final code:
 
 Here is what you will see on clicking 'RUN'
 
-![Image](https://cloud-2tfwv9o6z.vercel.app/image.png)
+![Screenshot of large text saying "Password Please, Hello Comrade"](https://cloud-2tfwv9o6z.vercel.app/image.png)
 
 ### 2) CSS
 
@@ -123,7 +123,7 @@ body {
 
 This is what your website will look now:
 
-![Image](https://cloud-muarr9bpd.vercel.app/image.png)
+![Screenshot of website after styling](https://cloud-muarr9bpd.vercel.app/image.png)
 
 We are done with our CSS and we'll now start writing JavaScript to implement the main functionality.
 
@@ -132,8 +132,8 @@ We are done with our CSS and we'll now start writing JavaScript to implement the
 Go to your `script.js` file. First let's link the HTML elements to JavaScript. Type the following code:
 
 ```js
-const text = document.querySelector(".text");
-const secretDiv = document.querySelector('.secret-div');
+const text = document.querySelector('.text')
+const secretDiv = document.querySelector('.secret-div')
 ```
 
 **Explanation:** We linked the `<h1>` and also the `secret-div` to the two variables `text` and `secretDiv` respectively using `const`.
@@ -145,46 +145,47 @@ Learn more about [query selector](https://developer.mozilla.org/en-US/docs/Web/A
 Now we will declare two arrays. The first array will contain all the keys pressed by the user and the second array will contain the keys which will be the Konami Code.
 
 ```js
-const keys = [];
-const secretCode = ["h", "a", "c", "k"];
+const keys = []
+const secretCode = ['h', 'a', 'c', 'k']
 ```
+
 Here, the `secretCode` array contains the keys which will be the Konami Code. For this workshop's sake, our code will be "hack". You can change it to anything you like. Here are some examples:
 
-```js
-["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"]
-["ArrowUp", "a", "ArrowLeft", "z", "ArrowDown"]
-["Shift", "Control", "Enter", "b"]
-["a", "a", "b", "b", "c", "d", "e", "ArrowLeft"]
+```
+['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight']
+['ArrowUp', 'a', 'ArrowLeft', 'z', 'ArrowDown']
+['Shift', 'Control', 'Enter', 'b']
+['a', 'a', 'b', 'b', 'c', 'd', 'e', 'ArrowLeft']
 ```
 
 Next, we will make use of the confetti.js library which we have imported in our project. We will first declare some settings for the confetti. After we declare them, we will create a new `ConfettiGenerator` object which will help us implement the confetti on the site.
 
 ```js
-const confettiSettings = { target: 'my-canvas', size: 1.4, max: 150 };
-const confetti = new ConfettiGenerator(confettiSettings);
+const confettiSettings = { target: 'my-canvas', size: 1.4, max: 150 }
+const confetti = new ConfettiGenerator(confettiSettings)
 ```
-**Explanation:** The settings for the confetti is an object. It is made with reference to [this](https://github.com/Agezao/confetti-js/) site. There are many more options which you can pass to the settings as you wish.
 
-The `target` attribute is used to specify the canvas with the id `my-canvas` on which the confetti will appear.
+**Explanation:** The settings for the confetti is an object, [using this library called Confetti.js](https://github.com/Agezao/confetti-js/). There are many more options which you can pass to the settings as you wish.
 
-The `size` attribute specifies the size for the confetti particles.
-
-The `max` attribute specifies the number of props(confetti) to be rendered.
+- The `target` attribute is used to specify the canvas with the id `my-canvas` on which the confetti will appear.
+- The `size` attribute specifies the size for the confetti particles.
+- The `max` attribute specifies the number of props(confetti) to be rendered.
 
 The `ConfettiGenerator` contains a `render()` method and when it is called, we will be able to see confetti on our page.
 
 For more information on these attributes, check [here](https://github.com/Agezao/confetti-js/).
 
 Your code so far:
+
 ```js
-const text = document.querySelector(".text");
-const secretDiv = document.querySelector('.secret-div');
+const text = document.querySelector('.text')
+const secretDiv = document.querySelector('.secret-div')
 
-const keys = [];
-const secretCode = ["h", "a", "c", "k"];
+const keys = []
+const secretCode = ['h', 'a', 'c', 'k']
 
-const confettiSettings = { target: 'my-canvas', size: 1.4, max: 150 };
-const confetti = new ConfettiGenerator(confettiSettings);
+const confettiSettings = { target: 'my-canvas', size: 1.4, max: 150 }
+const confetti = new ConfettiGenerator(confettiSettings)
 ```
 
 Next we will implement a function to check which keys are pressed by the user and when the keys match our Konami Code, it will get triggered.
@@ -193,14 +194,14 @@ The function will take an 'event' attribute which will give us the key pressed b
 
 ```js
 function keysDetector(e) {
-  console.log(e.key);
+  console.log(e.key)
 }
 ```
 
 Outside the function, we will add an event listener on the window which will listen for all the `keyup` events and then trigger a particular function. It is written as follows:
 
 ```js
-window.addEventListener('keyup', keysDetector);
+window.addEventListener('keyup', keysDetector)
 ```
 
 **Explanation:** `addEventListener()` takes the first parameter as the event of which we need to keep track of. In our case it is the `keyup` event. The second parameter is a function which will get called whenever the event specified to it is performed. So whenever the `keyup` event is performed, the `keysDetector` function gets called.
@@ -212,18 +213,19 @@ Learn more about [`addEventListener()`](https://www.w3schools.com/js/js_htmldom_
 Voila! The keys pressed by the user is getting logged! We will make use of these keys to check whether the keys match the Konami Code.
 
 Code so far:
+
 ```js
-const text = document.querySelector(".text");
-const secretDiv = document.querySelector('.secret-div');
+const text = document.querySelector('.text')
+const secretDiv = document.querySelector('.secret-div')
 
-const keys = [];
-const secretCode = ["h", "a", "c", "k"];
+const keys = []
+const secretCode = ['h', 'a', 'c', 'k']
 
-const confettiSettings = { target: 'my-canvas', size: 1.4, max: 150 };
-const confetti = new ConfettiGenerator(confettiSettings);
+const confettiSettings = { target: 'my-canvas', size: 1.4, max: 150 }
+const confetti = new ConfettiGenerator(confettiSettings)
 
 function keysDetector(e) {
-  console.log(e.key);
+  console.log(e.key)
 }
 
 window.addEventListener('keyup', keysDetector)
@@ -238,8 +240,9 @@ Yes exactly! It will keep track of the keys pressed by the user. Now, we don't o
 Here's how to do it:
 
 ```js
-keys.push(e.key);
+keys.push(e.key)
 ```
+
 Try console logging the `keys` array inside the function. RUN the code and try pressing the keys. You'll see the keys getting pushed inside the array!
 
 **Note:** Make sure your preview window is focused when you are pressing the keys.
@@ -250,10 +253,10 @@ Here's how you will do it:
 
 ```js
 function keysDetector(e) {
-// all the above code
+  // all the above code
 
-if (keys.length > secretCode.length) {
-  keys.shift()
+  if (keys.length > secretCode.length) {
+    keys.shift()
   }
 }
 ```
@@ -274,12 +277,13 @@ But wait a minute...
 Unfortunately, we can't simply write `keys === secretCode` and get away with it :( The reason for this is as arrays are objects in JavaScript, the triple equals operator `(===)` only returns true if the arrays are the same reference.
 
 Example:
-```js
-const a = [1, 2, 3];
-const b = [1, 2, 3];
 
-a === a; // true
-a === b; // false
+```js
+const a = [1, 2, 3]
+const b = [1, 2, 3]
+
+a === a // true
+a === b // false
 ```
 
 So, we'll need to go another way which is known as... **`JSON.stringify()`**!
@@ -287,12 +291,14 @@ So, we'll need to go another way which is known as... **`JSON.stringify()`**!
 The JSON.stringify() method will convert a JavaScript object or value to a JSON string. So, we will first convert both the arrays to a string and then, we are free to compare it!
 
 Here's how to do it:
+
 ```js
 if (JSON.stringify(keys) === JSON.stringify(secretCode)) {
   //do something or lets just console.log for now.
-  console.log('TADAAA!!');
+  console.log('TADAAA!!')
 }
 ```
+
 **Note:** This will also be included in the function. Except for the event listener, nothing is outside the function.
 
 RUN the code and try typing the secret code which you have given (it is "hack" in my case). You'll surely see a TADAAA!! in the console whenever the arrays match each other.
@@ -303,16 +309,20 @@ First of all, we'll make our `secret-div` visible. Then we'll change the `text` 
 
 **Challenge:** Can you do this all on your own?  
 **Note:** Do it inside the `if` statement and also remove the `console.log()`.  
-**Hints:**  
+**Hints:**
+
 1. The first task can be accomplished using something like:
+
 ```js
-ELEMENT.style.display = "displayType";
+ELEMENT.style.display = 'displayType'
 ```
+
 We have already defined a variable for the `secret-div`. I think you need to use that... maybe... I don't know... Try it yourself...
 
 2. The second task can be accomplished using something like:
+
 ```js
-ELEMENT.innerHTML = "textYouNeedToDisplay";
+ELEMENT.innerHTML = 'textYouNeedToDisplay'
 ```
 
 3. And the method of doing the third task was told to you during the workshop, try to recall it and implement it!
@@ -324,9 +334,9 @@ function keysDetector(e) {
   // all the above code
 
   if (JSON.stringify(keys) === JSON.stringify(secretCode)) {
-    secretDiv.style.display = "block";
-    text.innerHTML = "Identity Verified!"
-    confetti.render();
+    secretDiv.style.display = 'block'
+    text.innerHTML = 'Identity Verified!'
+    confetti.render()
   }
 }
 ```
@@ -346,10 +356,10 @@ function keysDetector(e) {
       targets: 'body',
       rotate: '1turn',
       backgroundColor: '#fcba03',
-      duration: 2000
-    });
-    }
-    }
+      duration: 2000,
+    })
+  }
+}
 ```
 
 **Explanation:** In the parameter of the `anime()` function, the first value is the target on which the animation will get played on. Then we give it a rotation value of `1turn`. We also change the background color to something else and the duration is set to 2000ms i.e 2secs.
@@ -359,33 +369,33 @@ If you want to play around with the animation, [Here](https://animejs.com/docume
 This is the final code:
 
 ```js
-const text = document.querySelector(".text");
-const secretDiv = document.querySelector('.secret-div');
+const text = document.querySelector('.text')
+const secretDiv = document.querySelector('.secret-div')
 
-const keys = [];
-const secretCode = ["h", "a", "c", "k"];
+const keys = []
+const secretCode = ['h', 'a', 'c', 'k']
 
-const confettiSettings = { target: 'my-canvas', size: 1.4, max: 150 };
-const confetti = new ConfettiGenerator(confettiSettings);
+const confettiSettings = { target: 'my-canvas', size: 1.4, max: 150 }
+const confetti = new ConfettiGenerator(confettiSettings)
 
 function keysDetector(e) {
-  console.log(e.key);
-  keys.push(e.key);
+  console.log(e.key)
+  keys.push(e.key)
 
   if (keys.length > secretCode.length) {
-		keys.shift();
-	}
+    keys.shift()
+  }
 
   if (JSON.stringify(keys) === JSON.stringify(secretCode)) {
-    secretDiv.style.display = "block";
-    text.innerHTML = "Identity Verified!";
-    confetti.render();
+    secretDiv.style.display = 'block'
+    text.innerHTML = 'Identity Verified!'
+    confetti.render()
     anime({
       targets: 'body',
       rotate: '1turn',
       backgroundColor: '#fcba03',
-      duration: 2000
-    });
+      duration: 2000,
+    })
   }
 }
 
@@ -400,7 +410,7 @@ Try to type the Konami Code which you have specified on the website and see the 
 
 ## Part 4: The End
 
-If you haven't created an account on [repl.it](https://repl.it), make sure you do so to save this wonderful piece of creation!
+If you haven't created an account on [repl.it](https://repl.it), make sure you do so to save this wonderful creation!
 
 If you face any difficulties in signing up, [watch this](https://www.youtube.com/watch?v=Mtqp4CUepk0).
 
@@ -416,8 +426,8 @@ Check out these crazy examples!
 
 Check out what other Hack Clubbers have built!
 
-- [Tanishq](https://konami.tanishqsoni.repl.co/) - [Src Code](https://repl.it/@tanishqsoni/konami#index.html) 
-- [Aaryan](https://konami.aaryanporwal.repl.co/) - [Src Code](https://repl.it/@aaryanporwal/konami#index.html)  
+- [Tanishq](https://konami.tanishqsoni.repl.co/) - [Src Code](https://repl.it/@tanishqsoni/konami#index.html)
+- [Aaryan](https://konami.aaryanporwal.repl.co/) - [Src Code](https://repl.it/@aaryanporwal/konami#index.html)
 - [JackTDC](https://rapidniceregister.jacktdc.repl.co/) - [Src Code](https://repl.it/@JackTDC/RapidNiceRegister#index.html)
 
 Now that you have finished building it, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL!
