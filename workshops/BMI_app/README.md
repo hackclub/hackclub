@@ -248,6 +248,9 @@ an option will open up that we could add more `🟠else if` statement, now insid
 
 You will then add 4 `🟠Else If` statement one after another.
 
+![elseIf](https://user-images.githubusercontent.com/62946196/96993234-4af0bc80-152b-11eb-9664-a9b86d87f2b9.gif)
+
+
 Now click on that parameter option again to close this option. In total, you will have 1`🟠If` 5`🟠Else If` and 1 `🟠Else`. MAKE SURE THAT ELSE, GO BACK ON THAT PARAMETER AND ADD MORE ELSE IF STATEMENT OR TAKEOUT SOME.
 
 ![](https://cloud-kocs0wuh7.vercel.app/8screenshot_2020-10-20_at_18.34.44.png)
