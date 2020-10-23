@@ -1,8 +1,8 @@
 ---
 name: 'Stopwatch'
-description: 'Build a simple stopwatch with HTML, CSS and JavaScript.'
+description: 'Build a simple stopwatch with HTML, CSS, & JavaScript'
 author: '@faisalsayed10'
-img: 'https://cloud-ijsj5lfdg.vercel.app/0image.png'
+img: 'https://cloud-jh559xslj.vercel.app/2020-10-23_yp6wgrcauymhtq97uk24vk0kj64fu8d3.png'
 ---
 
 # Stopwatch

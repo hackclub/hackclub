@@ -2,7 +2,7 @@
 name: Robotic Emails
 description: Build a mass-emailer with easy templating in Python
 author: '@rohan-bansal'
-img: https://cloud-l7sy31aj3.vercel.app/2020-10-13_jrpmhd91qwuhd36zp7czcpnpt6txy09v.png
+img: 'https://cloud-op4657yvx.vercel.app/2020-10-23_q2awr6zp88qe936y6cnb26t79w31nt38.png'
 ---
 
 # Robotic Emails

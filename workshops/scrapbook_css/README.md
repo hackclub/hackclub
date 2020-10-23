@@ -1,6 +1,6 @@
 ---
-name: Jaw-dropping Scrapbook CSS
-description: Customize your Hack Club Scrapbook page through a simple introduction to CSS
+name: Amazing Scrapbook CSS
+description: Customize your Scrapbook through simple CSS
 author: '@sampoder'
 ---
 
