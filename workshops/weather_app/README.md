@@ -16,7 +16,7 @@ In this App we would take an input of a city from the user and display the weath
 
 Before we start building our app let's see how the final version would look like:
 
-![main](https://cloud-ktt2vamjn.vercel.app/0screencapture-file-home-gautamjajoo-desktop-card-index-html-2020-10-09-00_34_48.png)
+![main](https://cloud-fw0yxvsf2.vercel.app/0screenshot_from_2020-10-23_19-26-13.png)
 
 Isn't it amazing? Get your cup of coffee and 20 minutes of your time to build an awesome weather app. 
 
@@ -134,27 +134,15 @@ Our `HTML` code is done and now we can move to the `CSS` part. At the end, the `
 
 PRO TIP: Personally, I feel before we start coding for any project, we should try to make a flowchart containing all the details that we have to include in our project. This makes things clearer and the chances of committing mistakes also reduces.
 
-Here is a CSS diagram which depicts the details we have to consider.
-
-![CSS(flowchart)](https://cloud-gkcw8pvg7.vercel.app/0css_flowchart_.png)
-
-
-Let's start coding `CSS` by making all the elements with `0` margin and padding. 
-
-Now we will customize the body by giving it a background color, display property and some miscellaneous details.
+First we will customize the body by giving it a background color, display property, font-size and line-height.
 
 We will set display value as `flex` because Flexbox makes it easier to design flexible responsive layout without using float or positioning.
 
 Till now the code would look something like this:
 
 ```css
-*{
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background-color: #dfe7ee; // pale blue
+  background-color: #dfe7ee;
   line-height: 1.5;
   font-size: 125%;
   display: flex;
@@ -165,50 +153,18 @@ All our body part is done, now we can start making the Card.
 
 ```css
 .container {
-  position: relative;
   background-color: #fff;
-  padding: 0 1em 1em; 
-  margin: 150px 500px 400px auto; 
+  padding: 0 4.5em 7em; 
+  margin: 100px 500px 400px auto; 
   -webkit-filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
           filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
 }
 ```
-Here `position:relative` is used for the pseudo-element which we will create in the next step. 
-
 `webkit-filter` with `drop-shadow` is also a very cool property which is used for giving a highlighted shadow behind the card.
-
-For making a tilted card we use, 
-
-```css
-.container::before {
-  content: '';
-  padding-top: 5%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 100%;
-  background-image: linear-gradient(3deg, white calc(50% - 1px), transparent 50%);
-}
-
-```
-
-`::before` creates a pseudo-element that is the first child of the selected element. It is used to insert something before the selected element i.e. `.container`. It also adds some cosmetic content to an element with the content property. 
-
-A pseudo class such as `::before` has a default `position` value of `inline`. Therefore we change the `position` to `absolute` as elements whose position value is `absolute` are taken out of the flow and are `block-level` elements with a default display CSS property value of the block.
-
-Read more about [pseudo elements](https://developer.mozilla.org/en-US/docs/Web/CSS/::before).
-
-The `linear-gradient` with `3deg` gives us the tilted effect. For more information regarding gradients in css [read here](https://www.w3schools.com/css/css3_gradients.asp).
 
 We will add some properties to our heading by adding the following code:
 
 ```css
-.content {
-  position: relative;
-  margin: 0 60px auto;
-  padding: 0 1em;
-}
-
 h1 {
   border-bottom: 4px solid deepskyblue;
   padding-bottom: 0.25em;
@@ -224,12 +180,9 @@ For the input box we add the following code:
  
  ```css
  .input {
-    width: 100%;
     border: none;
     outline: none;
     font-size: 1.4rem;
-    height: 50px;
-    padding: 10px 10px;
     text-align: center;
     font-weight: bold;
 }
@@ -239,21 +192,19 @@ And for the weather details, we add the following code:
 ```css
 .main-weather {
     display: none;
-    padding: 20px;
     line-height: 2.2rem;
-    border-radius: 10px;
     height: 30vh;
     text-align: center;
     color:  #23313E;
     font-weight: bold;
 }
 
-.temp {
-
-    margin: 25px ;
+.temp { 
+    margin: 25px;
     font-size:40pt;
     font-weight: 700;
 }
+
 ```
 Here we have used `display:none` because we wish to hide everything before any input is taken. Rest all elements are basic `CSS` properties. 
 
@@ -292,12 +243,6 @@ api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 ```
 
 Here, we divide the API into two parts, first being the base url and second being the API key.
-
-Before we start to write the code, we will take a look at the flowchart which describes all the components which we would be writing down in the JS 
-file.
-
-![JS(chart)](https://cloud-hs1qd7tki.vercel.app/0js_chart_.png)
-
 
 Since, we have a rough idea about the given API we can now start to code the JS file. 
 At the start, we define a constant named as `api` which contains our Baseurl and our key. It would look something like this:
