@@ -124,6 +124,8 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
              2. Something you might wonder is: "how did they know that my input box's name was `message` or other?" This is because of the `name` property on our input tags! Changing those will change how our form communicates with the server we will build in the next step.
 
 ![GIF of Shrey showing you how to Inspect Element and see the network requests](https://cloud-igmhy1ffg.vercel.app/0screenshot_taken_by_shrey_on_10-21-2020_at_20.10__11_.gif)
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
 
 4. Now we want to build a server to handle the information that we just created. We are going to use Netlify Functions for this. Netlify allows for people to create "serverless" functions for people to use. They use a server to manage our functions, but for us, we only need to call the function. This is so we don't have to spend time worrying about maintaining, securing, and building a full server- we just get a little peice of a gigantic, already built, secure server.
 
