@@ -279,11 +279,11 @@ Here are some things which you can do:
 - Make the game only of 3 turns instead of running it infinitely.
 - You can give the text a typewriter effect. (If you don't know how to do it watch [this][typewritter] video)
 
-**Examples on how people have customized it:**
+**Examples on how you can customized it:**
 
-- [Fayd](https://repl.it/@FaisalSayed1/Rock-Paper-Python#main.py)
-- [CrazyBlackStone](https://repl.it/repls/ThornyWoozyBlogs#main.py)
-- [Vedant](https://repl.it/@Vedantutekar812/BEASTEXAUDOS#main.py)
+- [Adding new actions](https://repl.it/@JackTDC/Rock-Paper-Scissors-Lizard-Spock)
+- [Changing the interface](https://repl.it/@JackTDC/Rock-Paper-Scissors#main.py)
+- [Making it two-player](https://repl.it/@JackTDC/Rock-paper-Scissors2-player#main.py)
 
 [typewritter]: https://youtu.be/2h8e0tXHfk0
 
