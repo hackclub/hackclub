@@ -1,9 +1,34 @@
+---
+name: 'Python_DataViz'
+description: 'Use python to create basic graphs and visualizations with real data'
+author: '@maddieWillett-boop'
+---
+
 ![Stonks](https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Ffacebook%2F000%2F029%2F959%2FScreen_Shot_2019-06-05_at_1.26.32_PM.jpg)
 
 You after you make your first data visualization^
 
-*Follow along with this workshop to gain some data science skills! You will use python to create basic graphs and visualizations with real data. You can hand draw a graph anytime you want, but why not learn how to code one! You will learn about matplotlib, pandas, and numpy, so you can create any graph or visualization you dream of!*
+*In this workshop you will use python to create basic graphs and visualizations with real data.  First we start off with simpler graph visualizations, and learn how to make them more personalized and complicated! You can hand draw a graph anytime you want, but why not learn how to code one! You will learn and use matplotlib, pandas, and numpy, so you can create any graph or visualization you dream of!*
 
+Here is an example of what a end product you will have coded after the workshop...
+**![Example of Workshop Product](https://lh5.googleusercontent.com/xl8z39jFnph-pJTKvrQOPJQA4D2B8sAl6yNfjQFgVsRvGHQtamu48JZBiwVOQcOn9BCfwAGcCmQ58dxwS1Ojz1P54Ke9VjKn6N0VNlcpvDufeuuvrjINbScSlJR6N4ROQv_vvU_u)**
+## Source Code of Example: 
+``` python
+  import pandas as pd
+   import matplotlib.pyplot as plt
+   import numpy as np
+   
+   x=np.linspace(0,2,100)
+   fig,ax= plt.subplots()
+   ax.plot(x,x,label='Sleep')
+   ax.plot(x,x**2,label='Worry if sky is falling...')
+   ax.plot(x,x**3,label='Be a icon')
+   ax.set_xlabel('Time') #adds X axis label
+   ax.set_ylabel('Years')#add Y axis lable
+   ax.set_title("Chicken Little's Plot") #adds a title
+   ax.legend() #adds a key of the graph
+   ```
+   
 # Getting started!
 
 Get started by going to [Jupyter](https://jupyter.org/try). When you get to the website you will see something like this...
@@ -37,7 +62,7 @@ In this workshop we will be using: [pandas](https://pandas.pydata.org/) , [numpy
 
 **Note: Customize your plots and graphs! (Labels, Values, etc.)**
 
-``` python
+```python
 import pandas as pd 
 import matplotlib.pyplot as plt 
 ```
@@ -132,6 +157,7 @@ fig,ax= plt.subplots()
 ax.plot([1,2,3,4],[1,4,2,3])
 plt.show()
 ```
+
      
 *Something new you may have noticed is the use of fig, or aka [figure](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.figure.html)*.
 
@@ -167,13 +193,14 @@ Set up spacing of your x and y axis...
 ## Step Four!
 
 Create a figure! Scroll back up to see how to write that code...
-Here is a hint 
+Here's a hint:
 
 `fig,ax= plt._____()`
 
-*Still stuck? Where the underscores are you should put*
+*Still stuck? Where the underscores are, replace with `fig,ax= plt.subplots()`.*
 
-`fig,ax= plt.subplots()`
+Your graph should look something like this...
+**![After Step Two Example ](https://lh6.googleusercontent.com/rZ5Ei__-ct7jN7yZcb3McvFd0uzkyCOESWRSiO0EoO-m-5Gu1p-20So_sU3YmQcWo_koIUSrp0H2RVZ0XJBYE5WiYP1pn-gnnCCADmlnINS2QuQ-9LMW7cg3xjO7tkF078OBNbqw)**
 
 ## Step Five!
 
@@ -189,10 +216,10 @@ ax.plot(x,x**3,label='Be a icon')
 
 *Label= will be the name of your line*
 
-![These People Went a Little Crazy With the Label Maker - Label Everything |  Guff](https://cdn.guff.com/site_1/media/20000/19031/thumbnails/fb1_6a99eaed05ac9d5f956c3e32.jpg)
-
 *`ax.plot` will plot your points/lines*
 
+Your graph should look something like this...
+**![After Step 5 Example](https://lh3.googleusercontent.com/veZOvUNmTa-s3Iam4Qq1LcxtcXGMR_yGHXYfHp_5zjeHGTdJbQC6Yn-ezuEc3NfyeH5TiWA33vidMP1Ds54OBoWIbOdHqDzjl92wBVF1yEq3b_2EDRSv0lFJc8p_7msC9_LIcQZu)**
 ## Step Six!
 
 Finishing touches!
@@ -206,12 +233,12 @@ Finishing touches!
    ax.legend() #adds a key of the graph
    ```
 
-You could possibly get someting that looks like this...
-**![](https://lh3.googleusercontent.com/x7NafZjPviM76xz95YQKc4L8kW4zC3B5_zp4wE7Qv4FKWVX-6ZoB_4qtT4WbA1er9soAcMHZeBNgJgLMttFnr1hiXOkWxLQpBXI3uQQyRd7wOElTYLWZtczqgTvmWvmdOEzmnqMTECg)**
+You could possibly get something that looks like this...
+**![Workshop Product Example](https://lh3.googleusercontent.com/x7NafZjPviM76xz95YQKc4L8kW4zC3B5_zp4wE7Qv4FKWVX-6ZoB_4qtT4WbA1er9soAcMHZeBNgJgLMttFnr1hiXOkWxLQpBXI3uQQyRd7wOElTYLWZtczqgTvmWvmdOEzmnqMTECg)**
 
 
 *If you are having any issues make sure to check your top right corner to check if the "kernel" is on and is set to Python 3*
-**![](https://lh6.googleusercontent.com/PJUhbx9vkJDp955g7Azwv_j_EyXGC-_YA9NSED74DU1XbTSxuDUrPfXN4S1b3TY-cjtqaSwUJv6Cnat6Zqko3WQBZ9oSZwncGlOL9EckE6zTwOLVuJ3F9CKQrO8INgII254BJiNcazc)**
+**![No Kernel Error](https://lh6.googleusercontent.com/PJUhbx9vkJDp955g7Azwv_j_EyXGC-_YA9NSED74DU1XbTSxuDUrPfXN4S1b3TY-cjtqaSwUJv6Cnat6Zqko3WQBZ9oSZwncGlOL9EckE6zTwOLVuJ3F9CKQrO8INgII254BJiNcazc)**
  
 
 # If you are having any issues try copying the example code!
@@ -236,13 +263,22 @@ You could possibly get someting that looks like this...
 \*\*PS. If you have never watched [Chicken Little](https://youtu.be/PPuk2JQgMkU), you must do that asap, you are missing out on an animated masterpiece.
 
 ![Chicken Little!](https://media1.tenor.com/images/fac310fb90bbde750d9f2e6ad1af44b1/tenor.gif?itemid=9695910)
+# Share Your Project! 
+How can I save my project with Jupyter?
+[Click here for video!](https://www.wevideo.com/view/1886850494)
+1) Press File in the upper right hand corner 
+2) Press "Save Notebook As"
+3) Save the Notebook as a .ipynb file
+4) Than if you ever wanted to come back to this code you can upload the .ipynb file back into Jupyter and edit it! 
+
 
 # Add On!
 
-**[Look up how to link in raw data from the web into your graphs](https://youtu.be/Ercd-Ip5PfQ).**
+[Add raw data from the web into your graphs](https://youtu.be/Ercd-Ip5PfQ).
 
-[Demo Code](https://gist.githubusercontent.com/datagy/a96789e1a6547cc25c234b6ebf7bf077/raw/25aa94e3a8de7a2a1250c07f74a7584467517721/covid-datagy1.py)
-Follow full workshop using that covid-19 data with  [Visualizing Covid-19 Data](https://towardsdatascience.com/visualizing-covid-19-data-beautifully-in-python-in-5-minutes-or-less-affc361b2c6a)
+**[Demo Code](https://gist.githubusercontent.com/datagy/a96789e1a6547cc25c234b6ebf7bf077/raw/25aa94e3a8de7a2a1250c07f74a7584467517721/covid-datagy1.py)**
+
+**OR** Follow full workshop using that covid-19 data with  [Visualizing Covid-19 Data](https://towardsdatascience.com/visualizing-covid-19-data-beautifully-in-python-in-5-minutes-or-less-affc361b2c6a)
 By: Nic Piepenbreier!!!
 
 #
@@ -250,7 +286,7 @@ By: Nic Piepenbreier!!!
     \-Google code for different kinds of graphs (dot plot, pie charts, etc.)**
 #   
 **[Make multiple different kinds of graphs/visualizations](https://matplotlib.org/devdocs/gallery/subplots_axes_and_figures/subplots_demo.html).**
-Example: 
+
    ```python 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -280,8 +316,6 @@ plt.show()
 #Source: https://matplotlib.org/gallery/shapes_and_collections/ellipse_demo.html
 ```
 **![](https://lh6.googleusercontent.com/v_Pj4spo28Zkbyxd_wIIUJ0anPs10QSlbOVbPXL0CcGPjVsSVxHJXMmZ4ddPYqf431rfLcu9gpUGirr4BzrJJmWFWO4I68D3kpe8CHRShTkXd-4Js6no1AIuk_EBpVam1VtPdgtRzNk)**
-#
-
 **Look up how to import [Google Trends](https://trends.google.com/trends/?geo=US) into your graph!**
 Demo Code: 
 ```python 
@@ -311,15 +345,3 @@ Need help adding the Google trends data? [Click here!](https://www.wevideo.com/v
 
 **![](https://lh5.googleusercontent.com/Lt40VZV23B-ArP0MlydpuNZIc_k3-rUUFhJI15l0Db2KXHFSLuE4ErKvwmh6zI8GklP6A96Xy2w3JHPbAvB6RpFEzbqw2DmA04nlrkAFpjCr6qS9jCe1Lb8tLxik-cVyVHHbNS-R-HA)**
 #
-
-# Want to learn more?
-
-![Dancing Brain](https://media1.giphy.com/media/l41m04gr7tRet7Uas/giphy.gif)
-
-Check out: 
-
-1.  Learning [pandas](https://www.learnpython.org/en/Pandas_Basics)!
-
-2.  Learning [Matplotlib](https://realpython.com/python-matplotlib-guide/)!
-
-3.  [Codeacademy](https://www.codecademy.com/learn/paths/visualize-data-with-python)!
