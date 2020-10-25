@@ -1,6 +1,6 @@
 ---
 name: "Simple Image Sharing Site"
-description: "Let's build a website to post images"
+description: "Build an image hosting site in 30 minutes"
 author: "@bezlin6mechminerz"
 ---
 
