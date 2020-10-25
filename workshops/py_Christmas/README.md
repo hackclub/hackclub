@@ -6,27 +6,27 @@
   
 # PyChristmas 
 
-This workshop is meant to help python newbies try out a fun library called "[turtle](https://docs.python.org/3/library/turtle.html)".
+This workshop is meant to help Python newbies try out a fun library called "[turtle](https://docs.python.org/3/library/turtle.html)".
 			
-In this workshop, we make a Christmas greeting using turtle graphics !!
-Try out and leave a feedback.
+In this workshop, we make a Christmas greeting using turtle graphics!
+
 [Link to the demo code.](https://repl.it/@raz8153/ThankfulFirsthandScandisk) 
 
 # Getting Started
 
-Let me give a brief idea of what we are going to do. We are going to make a greeting card with a maroon-ish background with a text written on it saying ***"Merry Christmas"***.We are going to add a Christmas tree above the greeting. That is, we need a green tree with a brown stem, a yellow/golden star on top, and tiny red balls on either side of the tree.
+Let me give a brief idea of what we are going to do. We are going to make a greeting card with a maroon-ish background with a text written on it saying ***"Merry Christmas"***. We are going to add a Christmas tree above the greeting. That is, we need a green tree with a brown stem, a yellow/golden star on top, and tiny red balls on either side of the tree.
 
 ![alt completed_output_pic](https://cloud-4ipo9natc.vercel.app/3merry_christmas.png) 
 
 To break it down a bit more, we have made the leaves and stem out of multiple boxes or rectangles, with tiny circles on either end of the rectangle. Finally, a star on top of the center.
 ![alt tree_without_color_filled](https://cloud-4ipo9natc.vercel.app/1image2.png)
-# Shall we start coding ? 
+
+# Shall we start coding?
 
 Create a new [repl.it](https://repl.it) project and select **Python** as the language from the drop-down menu on the right.
 We are gonna make 2 python files. (Writing on a single page may make it a bit too complicated for a beginner)
 1.  ******Figures.py****** - A python file in which we code the functions that we will use to create the boxes/rectangles, the tiny circles, and the star.
 2.  ******main.py****** - A python file in which we call the functions of boxes, circles and star to make a Christmas tree. And finally, we will add a greeting on the bottom of the screen as you saw above
-
 
 # Let's code Figures.py first.
 
@@ -58,7 +58,7 @@ def box1 (turtle, color, x, y, width, height):
     turtle.setheading(0)
 
 ```
-   Was that a bit too much to take in? No worries,I will  break it down for you. 
+   Was that a bit too much to take in? No worries, I will  break it down for you. 
 ```python
 def box1 (turtle, color, x, y, width, height):
 ```
@@ -176,7 +176,7 @@ def balls(turtle, color, x, y, radius):
     turtle.end_fill()
     turtle.setheading(0)
 ``` 
-All good ? 
+All good? 
 
 # Now, lets move on to the next file : main.py
 
@@ -257,7 +257,7 @@ balls(turtle, "#fc045b", x, y, 5) # Decorative balls
 ```
 This statement draws a small ball of radius 5 with a shade of red (#fc045b) filled in it. 
 ![alt one_ball_completed](https://cloud-4ipo9natc.vercel.app/6image5.png) 
-Now we need one more tiny ball on the right end of the christmas tree, right ? 
+Now we need one more tiny ball on the right end of the christmas tree, right? 
 
 ```python
 balls(turtle, "#fc045b", -x, y, 5)
@@ -356,7 +356,7 @@ If you face any errors, try commenting out each portion of the code and making o
 
 # One last thing
 
-   Did you find this fun ? If yes, try out some of your own designs. 
+   Did you find this fun? If yes, try out some of your own designs. 
 You can basically draw almost anything with this. 
 A few suggestions would be:
 1. Try changing the `speed()` function to '1' (or other values) to see the difference in speed. Try changing color of the parameters in the code. You can use [this link](https://www.color-hex.com/) to find the right hexcode you want.
