@@ -4,7 +4,7 @@ description: "Let's build a slideshow of quotes with Tkinter and Python!"
 author: "@bezlin6mechminerz"
 ---
 
-Having a user interface is very useful because it gives both a good interactive experience for the user and makes it much more visually appealing. So let's see how to make a simple user interface with python. In this workshop, we will be using Python to make a slideshow of quotes.
+Having a user interface is very useful because it gives both a good interactive experience for the user and makes it much more visually appealing. So let's see how to make a simple user interface with Python. In this workshop, we will be using Python to make a slideshow of quotes.
 
 The workshop will look something like this.
 
@@ -87,7 +87,7 @@ font=("Helvetica", 60, "bold")
 ```
 
 Here, in this piece of code, we are setting up the style of the text. The font name, font-size, and the font-weight.
-The pack() function packs the text at the center layout.
+The `pack()` function packs the text at the center layout.
 
 Now let's make a button to display our quote.
 
@@ -107,9 +107,9 @@ If you don't use Lambda here then the function will run immediately when you run
 window.mainloop()
 ```
 
-window.mainloop() tells Python to run the Tkinter event loop mainloop() at the end of a program in a Python file. Without this, the Tkinter application will never run, and nothing will be displayed.
+`window.mainloop()` tells Python to run the Tkinter event loop mainloop() at the end of a program in a Python file. Without this, the Tkinter application will never run, and nothing will be displayed.
 
-###### Now the code will look like this
+Now the code will look like this:
 
 ```python
 import tkinter as tk
@@ -162,7 +162,7 @@ Here we gave `text` as the random quote passed from the button.
 
 If you don't understand, just go to the live demo and see the button workflow [here](https://repl.it/@bezlin/graphics#main.py).
 
-#### Finally the code will look like this
+Finally the code will look like this:
 
 ```python
 import tkinter as tk
