@@ -16,7 +16,7 @@ Here's the [source code](https://codesandbox.io/s/mini-calendar-vjm3f).
 
 ## Part 1: Prerequisites
 
-You should have some familiarity with HTML and JavaScript as well as programming functions like functions, objects, arrays etc but you should be able to follow along regardless. You should also know some basics of React and I recommend you to follow [this](https://workshops.hackclub.com/nextjs_starter/) workshop before proceeding further. If you're having trouble, feel free to ask [me](https://app.slack.com/client/T0266FRGM/user_profile/U014ND5P1N2) or anyone in the [Hack Club Slack](https://hackclub.com/slack/)!
+You should have some familiarity with HTML and JavaScript as well as programming functions like functions, objects, arrays etc. If you know some basics of React, It will be good for you. If not, I will recommend you [this](https://workshops.hackclub.com/nextjs_starter/) workshop. But don't worry, you should be able to follow along regardless. If you're having trouble, feel free to ask [me](https://app.slack.com/client/T0266FRGM/user_profile/U014ND5P1N2) or anyone in the [Hack Club Slack](https://hackclub.com/slack/)!
 
 ## Part 2: Setup
 
