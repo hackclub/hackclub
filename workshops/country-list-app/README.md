@@ -1,6 +1,6 @@
 ---
 name: "Countries  of the World and their Flags with Javascript"
-description: "This is an app that contains the list of the names of all the countries in the world and their respective flags and currencies"
+description: "Display countries and their flags using web APIs"
 author: "@Taiwrash"
 ---
 
