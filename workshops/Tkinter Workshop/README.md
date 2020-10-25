@@ -4,13 +4,11 @@ description: "Let's build a slideshow of quotes with Tkinter and Python!"
 author: "@bezlin6mechminerz"
 ---
 
-Having a user interface is very useful because it gives both a good interactive experience for the user and makes it much more visually appealing. So let's see how to make a simple user interface with python.
+Having a user interface is very useful because it gives both a good interactive experience for the user and makes it much more visually appealing. So let's see how to make a simple user interface with python. In this workshop, we will be using Python to make a slideshow of quotes.
 
 The workshop will look something like this.
 
 ![Output video](https://cloud-rbupe5aas.vercel.app/0ezgif.com-video-to-gif-2.gif)
-
-So we will be making a quotes hub which displays quotes.
 
 View a [live demo](https://repl.it/@bezlin/trialtkinterpy-2#main.py)
 
@@ -20,29 +18,27 @@ This workshop will take about 20 minutes.
 
 ## Getting started
 
-We will be using [Tkinter](https://docs.python.org/3/library/tk.html), a python library to develop our user interface. This project requires [Repl.it.](https://repl.it) We will be using it for coding. It is awesome because you can code online. Just follow this link and start coding!
+[Tkinter](https://docs.python.org/3/library/tk.html) is a library in Python used to make visual User Interfaces (UI). In this workshop, we’ll use it to make our Quotes Hub interface.
 
-To get started, [click here](https://repl.it/languages/Tkinter). Your coding environment will be ready in a few seconds!
+To code this workshop, we'll be using [Repl.it](https://repl.it), a free, online code editor. To get started, [click here](https://repl.it/languages/Tkinter). Your coding environment will be ready in a few seconds!
 <img alt="repl.it image" src="https://cloud-o8q46nkko.vercel.app/screenshot_2020-09-25_at_9.23.06_pm.png">
 
-#### What is Tkinter?
-
-Tkinter is a library in Python used to make visual User Interfaces (UI). In this workshop, we’ll use it to make our Quotes Hub interface.
-
-## Code and explanation.
+## Code and explanation
 
 Lots of beginners make endless changes to their code and expect it to miraculously work right away. The problem with this approach is that it stacks one problem on top of another, and it becomes difficult to figure what went wrong. It is better if you can code along.
 
 ![Lets code](https://cloud-1h9458u6z.vercel.app/54_blog_image_13.gif)
 
-So to make the Quotes Hub we need to import the Tkinter library.
+Start by importing the Tkinter library. At the top of the `main.py` file, add the following lines:
 
 ```python
 import tkinter as tk
 import random
 ```
 
-For ease, we imported Tkinter as tk so that we don't have to repeat "Tkinter" every time. Instead, we can use tk. The random library, as the name says, is used for making random choices. For our project, we need to display a random quote so we will use it. Next, let's make a list of quotes:
+For ease, we imported Tkinter as `tk` so that we don't have to repeat "Tkinter" every time. Instead, we can use tk. The `random` library, as the name suggests, is used for making random choices. We'll be using the `random` library to choose a random quote to display.
+
+Next, let's make a list of quotes:
 
 ```python
 quotelist = [
@@ -70,22 +66,21 @@ window.minsize(800,560)
 window.title("Quotes Hub")
 ```
 
-Here, we have made a variable 'window' and this is going to be our window. 'tk.Tk()' creates the window. The function (minsize) takes 2 parameters the height and the width. It is measured in pixels so we can simply give `minsize(800,600)`. So here we give 800px for width and 600px for height for our window. You can give any height and width as you like. We can also give a title for our window. You can specify the name of the window inside the title function in quotes.
+Here, we're creating a Tkinter window with `tk.Tk()` and assigning it to a variable called `window`. The function `minsize` takes 2 parameters, width and height. We're setting the `minsize` to 800 pixels by 600 pixels. You can give any height and width as you like. Finally, we're giving our window a title using `window.title`.
 
-Now, let's give the window color. If you like white which is the default, go with it or you can give any color you want.
+Now, let's give the window color.
 
 ```python
 window.config(bg="black")
 ```
 
-You can also specify the color as a hex code or RGB value.
-`window.config` means we are configuring our window and setting up its bg which is short for the background. Now let's display the title 'Quotes Hub' in the window we made. For that, we use the Label function.
+`window.config` changes properties of the Tkinter window. Here, we're changing the window background color usuing the `bg` property. You can give it your favorite color in the `bg` parameter as a hex code or RGB value.
 
 ```python
-tk.Label(window, font=("Helvetica", 60, "bold"),text="QUOTES HUB", bg="black", fg="white").pack()
+tk.Label(window, font=("Helvetica", 60, "bold"), text="QUOTES HUB", bg="black", fg="white").pack()
 ```
 
-The Label function is used to display text on the window. The Label function takes parameters such as font, text, background color(bg), font color(fg). The first parameter you should give is the name of the window in which you need this text to be displayed.
+The Label function is used to display text on the window. The Label function takes parameters such as font, text, background color(bg), and foreground or font color(fg). The first parameter you should give is the name of the window in which you need this text to be displayed.
 
 ```python
 font=("Helvetica", 60, "bold")
@@ -112,9 +107,9 @@ If you don't use Lambda here then the function will run immediately when you run
 window.mainloop()
 ```
 
-window.mainloop() tells Python to run the Tkinter event loop mainloop() at the end of a program in a Python file, else the Tkinter application will never run, and nothing will be displayed.
+window.mainloop() tells Python to run the Tkinter event loop mainloop() at the end of a program in a Python file. Without this, the Tkinter application will never run, and nothing will be displayed.
 
-###### Now the code will look like this.
+###### Now the code will look like this
 
 ```python
 import tkinter as tk
@@ -143,7 +138,7 @@ tk.Button(window,command=lambda:clicked(random.choice(quotelist)),text="Open",bg
 window.mainloop()
 ```
 
-The output of this program will be an error, telling us the function `clicked` has not been declared. Let’s fix that by creating that function, above the `window` declaration.
+If you run the program by clicking the green "Run" button at the top, the output will be an error, telling us the function `clicked` has not been declared. Let’s fix that by creating that function, above the `window` declaration.
 
 ```python
 def clicked(quote):
@@ -163,11 +158,11 @@ We have to pass the random quote to this function.
 text=quote
 ```
 
-Here we gave text as the random quote passed from the button.
+Here we gave `text` as the random quote passed from the button.
 
 If you don't understand, just go to the live demo and see the button workflow [here](https://repl.it/@bezlin/graphics#main.py).
 
-#### Finally the code will look like this.
+#### Finally the code will look like this
 
 ```python
 import tkinter as tk
@@ -202,8 +197,6 @@ window.mainloop()
 
 ```
 
-It’s simple, you just have to go through the functions and workflow.
-
 ![run it](https://cloud-5m2nwfs8r.vercel.app/ezgif.com-video-to-gif-4.gif)
 
 ## Hacking time!
@@ -213,7 +206,7 @@ Now you know how to use Tkinter to make UI. You should not stop here. You need t
 Lastly, don't get stuck.
 
 I am attaching the Tkinter documentation take a look at [Learn Tkinter](https://docs.python.org/3/library/tk.html).
-Also if you are new to python, take a look at [python](https://www.python.org/doc/) documentation.
+Also if you are new to Python, take a look at [Python](https://www.python.org/doc/) documentation.
 
 ### Modified by other hackers.
 
