@@ -6,7 +6,7 @@ author: "@Taiwrash"
 
 ## Introduction
 
-Building an application that fetches data from an API is always done with a framework or a librabry in javascript for easy implementation. The procedure is a simple one! And I will be showing you how to do this purely with javscript. Amazing, right? Below is what we are going to build within a very short time.
+Building an application that fetches data from an API may sound intimidating for beginners, but it's actually a very simple process! In this workshop, we're going to use web APIs to fetch a list of country flags and display them on a website.
 
 [![Sample Page](https://cloud-g6yi6cyg3.vercel.app/0untitled.png)](https://country-list.taiwrash.repl.co)
 
@@ -14,25 +14,20 @@ Here is the [Live Demo](https://country-list.taiwrash.repl.co) of the app and th
 
 ## Setting up the code environment
 
-If you would like a smooth and easy development and production without installing any desktop software, check out [repl.it](https://repl.it/languages/html). A development and production environment will be set for you in a few seconds.You should have a page like the one below.
+We're going to be using repl.it, a free online code editor. To get started, [click here](https://repl.it/languages/html) to start an HTML project on repl.it. A development and production environment will be set for you in a few seconds. Once it's loaded, you should see a page like the one below:
 
 ![Repl.it](https://cloud-be2z8hzbo.vercel.app/0image.png)
 
-You can otherwise install any offline desktop code editor of your choice instead (like Visual Studio Code, Sublime text or any other one you prefer).
-
 ## Prerequisites
 
-- Good internet access
 - Basic knowledge of:
   - HTML
   - CSS
   - Javascript
 
-In this workshop, we will be using the [restcountries.eu](https://restcountries.eu) rest API to fetch all the flags and the country names using vanilla javascript.
-
 ## What is API?
 
-API stands for Application Programming Interface, (API), which provides a quick access to web-app development. A web-app is a webpage that is dynamic. For example, loading a webpage is simply a `GET` request sent to a server or an API while submitting any kind of form is a `POST` request.
+API stands for Application Programming Interface, (API), which provides a quick access to web-app development. A web-app is a webpage that is dynamic. For example, loading a webpage is simply a `GET` request sent to a server or an API while submitting any kind of form is a `POST` request. In this workshop, we will be using the [restcountries.eu](https://restcountries.eu) rest API to fetch all the flags and the country names using vanilla JavaScript.
 
 ## The features to be developed are:
 
@@ -42,7 +37,7 @@ API stands for Application Programming Interface, (API), which provides a quick 
 
 Each country's features will be shown in it's respective card, represented as a `<div>` element.
 
-## Mark Up Section (Setting up the HTML)
+## Setting up the HTML
 
 We will be using very simple and easy to understand html elements as display below and also our `css` and `script` files will be linked externally( that is creating a separate files for them)
 
