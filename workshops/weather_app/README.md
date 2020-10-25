@@ -6,50 +6,34 @@ author: '@gautamjajoo'
 
 # Weather App
 
-Are you a beginner in Javascript and don't know how to start working with APIs? 
+Are you a beginner in JavaScript and don't know where to get started? If yes, you're in the right place! Being a beginner in coding and having to learn the fundamentals can be very painful—but the best way to learn is to make fun, simple projects! In this workshop, you'll build an app that uses web APIs to get the weather for any city.
 
-If yes, you are at the right place. Being a beginner at Js and beginning to work with APIs could be very painful.
-But with a simple project we would learn some basic elements of `JS` and I am sure till the end of the workshop you will get a hang of 
-how APIs work.  
-
-In this App we would take an input of a city from the user and display the weather details(Current temp, Min/Max Temp etc) of that particular city.
-
-Before we start building our app let's see how the final version would look like:
+Here's what the final version looks like:
 
 ![main](https://cloud-fw0yxvsf2.vercel.app/0screenshot_from_2020-10-23_19-26-13.png)
 
-Isn't it amazing? Get your cup of coffee and 20 minutes of your time to build an awesome weather app. 
+The [Source Code](https://github.com/gautamjajoo/BasicWeather) & [Demo](https://WeatherApp.gautamjajoo.repl.co) are hyperlinked here.
 
-The [Source Code](https://github.com/gautamjajoo/BasicWeather)  &  [Demo](https://WeatherApp.gautamjajoo.repl.co) are hyperlinked here.
-
-## 0. What could you expect till the end of the workshop?
-
-Till the end of the workshop you would have a good understanding of how to deal with APIs. You could also expand this knowledge to be
-creative and implement new APIs in your projects.
-
-Also, you would learn some nice `CSS` tricks for making beautiful card designs and basic elements/properties of `JS`.
+By the end of this workshop, you'll have learned how to use web APIs, which you could expand to use even more creatively in future projects. You'll also learn some fundamentals of JavaScript, as well as some nice CSS tricks for making beautiful card designs.
 
 ## 1. The Prerequisites
-Some basic understanding of `HTML,CSS and Javascript/JSON`.
+Some basic understanding of HTML,CSS and Javascript/JSON.
 
-Don't be upset if you don't know any of the above, we will make sure you learn something new till the end of the workshop.
+If you don't know any of the above, don't worry! This workshop will guide you through it.
 
 ## 2. Setting up the project on Repl.it
 
-Repl.it is a powerful online IDE(integrated development environment) where you can edit, build and collaborate to make some beautiful projects.
-Make sure you have set up your account on [Repl](repl.it). Once you are finished setting up your account, create a [new repl project](https://repl.it/languages/html) with the above 
-mentioned languages.
+We're going to be using [Repl.it](https://repl.it) for this workshop. Repl.it is a powerful collaborative online code editor.
 
-Three files each of ```HTML,CSS and JS``` would be created and name them as  `index.html`, `style.css` and `app.js` respectively.
-After the above instructions your screen would look something like this:
+Start by creating a [new HTML/CSS repl.it project](https://repl.it/languages/html).
+
+You should see three files: `index.html`, `style.css`, and `script.js`.
 
 ![repl.it screen](https://cloud-o4m9cgxr8.vercel.app/0screenshot_from_2020-10-09_12-14-29.png)
 
-Once you have finished setting up the files, we can now move on to writing some code.
-
 ## 3. Making a skeleton of the app.
 
-Let's start with adding some code to the `HTML` file. We start the file with some basic lines which are added in every HTML file.
+Let's start by adding some code to the `index.html` file. We start the file with some basic lines which are added in every HTML file.
 
 ```html
 <!DOCTYPE html>
