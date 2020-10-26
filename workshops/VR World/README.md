@@ -78,7 +78,7 @@ Feel free to use any of the three ways, personally, i will use a HEX Code. Now w
 Now you can press on the **run** button and see what happens. Okay, maybe you realized you can't see the cube, this is because of the position of the camera and the object, they both are by default in the same position.... We can fix this by moving the cube to just in front of us, add the attribute **position** to our primitive.
 
 This is the syntax for this attribute:
-position="x y z"
+```position="x y z"```
 
 We have to replace z with -5 to move the cube to in front of us, the other values will stay at 0
 
@@ -191,6 +191,7 @@ Dentro de nuestra escena, creemos un primitivo <a-sky> y demosle un color cyan.
 <a-sky color="cyan"></a-sky>
 ```
 ![Sky](https://cloud-qsambqiyk.vercel.app/0image.png)
+
 Okay, ahora tenemos un cielo! Pero hagamoslo un poco mejor agregando una textura, debemos hacer el mismo proceso que hicimos anteriormente con el cubo.
 
 Yo usare esta imagen, pero tu puedes usar cualquiera.
@@ -240,12 +241,9 @@ Notice how the spot light has some intensity that only goes to a certain distanc
 
 If you want to know more about lights, click [here](https://aframe.io/docs/1.0.0/components/light.html)
 
- 
-otra cosa que podemos agregar son sonidos, los sonidos son importantes por que son los que provocan una inmersion total en espacios virtuales. Agregar sonidos es muy similar a agregar texturas, lo unico que tendremos que hacer es adjuntar nuestro sonido a el asset management system y luego colocarlo en un primitivo, miremos el siguiente ejemplo:
+Otra cosa que podemos agregar son sonidos, los sonidos son importantes por que son los que provocan una inmersion total en espacios virtuales. Agregar sonidos es muy similar a agregar texturas, lo unico que tendremos que hacer es adjuntar nuestro sonido a el asset management system y luego colocarlo en un primitivo, miremos el siguiente ejemplo:
 
-Yo usare este sonido que me encanta: https://www.youtube.com/watch?v=T9qVyDbnF3I
-
-Una vez lo haya descargado, lo puedo colocar en el asset management system usando el tag <audio>
+Yo usare este sonido que me encanta: https://www.youtube.com/watch?v=T9qVyDbnF3I. Una vez lo haya descargado, lo puedo colocar en el asset management system usando el tag <audio>
 
 ```html
 <audio id="background-music" src=""></audio>
