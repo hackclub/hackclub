@@ -1,6 +1,6 @@
 ---
 name: 'Weather App'
-description: 'Making a Weather App using HTML, CSS and JS(no framework involved)'
+description: 'Making a Weather App using HTML, CSS and JavaScript'
 author: '@gautamjajoo'
 ---
 
@@ -10,9 +10,9 @@ Are you a beginner in JavaScript and don't know where to get started? If yes, yo
 
 Here's what the final version looks like:
 
-![main](https://cloud-fw0yxvsf2.vercel.app/0screenshot_from_2020-10-23_19-26-13.png)
+![final_app](https://cloud-fw0yxvsf2.vercel.app/0screenshot_from_2020-10-23_19-26-13.png)
 
-The [Source Code](https://github.com/gautamjajoo/BasicWeather) & [Demo](https://Weather.gautamjajoo.repl.co) are hyperlinked here.
+The [source Code](https://github.com/gautamjajoo/BasicWeather) & [demo](https://Weather.gautamjajoo.repl.co) are hyperlinked here.
 
 By the end of this workshop, you'll have learned how to use web APIs, which you could expand to use even more creatively in future projects. You'll also learn some fundamentals of JavaScript, as well as some nice CSS tricks for making beautiful designs.
 
@@ -33,35 +33,25 @@ You should see three files: `index.html`, `style.css`, and `script.js`.
 
 ## 3. Making a skeleton of the app.
 
-Delete all the lines which are already added in the files. 
-Let's start by adding some code to the `index.html` file. We will start the file with some basic lines which are added in every HTML file.
+Let's start by adding some code to the `index.html` file. The basic lines are already added in the file.
+Firstly we will change the title of the project. The code looks something like this:   
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Weather</title>
-</head>
-<body>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+  </body>
 </html>
 ```
 
-We add `!DOCTYPE` with the `html` tag because it used as an information to the browser about what type of document to expect.
-
-Now we will link the`JavaScript` file to our `HTML` file. Also, we will be using `moment.js`, a Javascript library for managing dates and time.
-
-To link the CSS file we add
-
-```html
-<link rel="stylesheet" href="style.css">
-```
-inside the `head` tag and to link the JS file we add
-
-```html
-<script src="script.js"></script>
-``` 
-inside the body tag.
+We will be using `moment.js`, a Javascript library to display the date and time of the user. 
 
 To link external file like `moment.js` we use [`CDNJS`](https://cdnjs.com/) which is an open-source CDN service powered by Cloudflare. 
 
@@ -72,9 +62,7 @@ Add
 ``` 
 inside the `head` tag.
 
-Since we have linked all our files with the `HTML` file, now we can start making a card on which we would display the content.
-
-P.S: For more information about cards, refer to [`Bootstrap`](https://getbootstrap.com/docs/4.0/components/card/), an open source `CSS` framework.
+Since we have linked the `JS` file with the `HTML` file, now we can start making a card on which we would display the content.
 
 Inside our `<body>` we will add `<div>` with class as `container` which makes our main card and for the content inside we can add another
 `<div>` with class as `content`.
@@ -112,18 +100,20 @@ We will be using `<p>` for every detail we display. Hence we declare the weather
 <p id="min-max">Min and Max Temp </p>
 <p id="weather-type">Sunny </p>
 ```
+Make sure you close all the `</div>` tags which have been declared intitially.
 
 Our `HTML` code is done and now we can move to the `CSS` part. At the end, the `HTML` code will look like this:
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
-	<title>Weather</title>	
-</head>
-
+  </head>
 <body>
 	<div class="container">
  		<div class="content">
@@ -133,13 +123,14 @@ Our `HTML` code is done and now we can move to the `CSS` part. At the end, the `
     	</div>
 
     <div class="main-weather">
-    	    <p id="date">Date </p>
+    		<img id="image">
+        <p id="date">Date </p>
             <p id="city">City </p>
             <p class="temp" id="temp">Temp </p>
             <p id="min-max">Min and Max Temp </p>
             <p id="weather-type">Sunny </p>
-    </div>
-</div>
+
+	</div>
 
 <script src="script.js"></script>
 
@@ -149,9 +140,9 @@ Our `HTML` code is done and now we can move to the `CSS` part. At the end, the `
 
 ## 4. Improving the design of skeleton using CSS
 
-We will customize the body by giving it background colour, display property, font-size and line-height.
+We will start the `CSS` code by adding some style to the `<body>` like background colour, display, font-size and line-height.
 
-We will set display value as `flex` because Flexbox makes it easier to design a flexible responsive layout without using float or positioning.
+We will set the display value as `flex` because Flexbox makes it easier to design a responsive layout without using float or positioning.
 
 Till now the code would look something like this:
 
@@ -176,9 +167,10 @@ Now we will start making the Card.
 }
 ```
 
-`WebKit-filter` with `drop-shadow` is a very cool property which is used for giving a highlighted shadow behind the card.
+The `drop-shadow()` CSS function applies a drop shadow effect to the card we have created.
+For more information regarding `webkit-filter` refer to the [Mozzila Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow)
 
-We will add some properties to our heading by adding the following code:
+We will add some properties to our heading by1 adding the following code:
 
 ```css
 h1 {
@@ -257,7 +249,7 @@ The format of the API looks something like this:
 API.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 ```
 
-Here, we divide the API into two parts, first being the base URL and second being the API key.
+Here, we will divide the API into two parts, first will be the base URL and second will be the API key.
 
 Since we have a rough idea about the given API we can now start to code the JS file. 
 At the start, we define a constant named as `api` which contains our Baseurl and our key.
