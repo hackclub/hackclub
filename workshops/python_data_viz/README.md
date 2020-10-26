@@ -4,14 +4,16 @@ description: 'Use python to create basic graphs and visualizations with real dat
 author: '@maddieWillett-boop'
 ---
 
-![Stonks](https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Ffacebook%2F000%2F029%2F959%2FScreen_Shot_2019-06-05_at_1.26.32_PM.jpg)
+![Stonks](https://cloud-byn8r1k9a.vercel.app/0image_from_ios.jpg)
 
 You after you make your first data visualization^
 
 *In this workshop you will use python to create basic graphs and visualizations with real data.  First we start off with simpler graph visualizations, and learn how to make them more personalized and complicated! You can hand draw a graph anytime you want, but why not learn how to code one! You will learn and use matplotlib, pandas, and numpy, so you can create any graph or visualization you dream of!*
 
 Here is an example of what a end product you will have coded after the workshop...
-**![Example of Workshop Product](https://lh5.googleusercontent.com/xl8z39jFnph-pJTKvrQOPJQA4D2B8sAl6yNfjQFgVsRvGHQtamu48JZBiwVOQcOn9BCfwAGcCmQ58dxwS1Ojz1P54Ke9VjKn6N0VNlcpvDufeuuvrjINbScSlJR6N4ROQv_vvU_u)**
+
+**![Example of Workshop Product](https://cloud-4bemu7q0x.vercel.app/0image_from_ios.jpg)**
+
 ## Source Code of Example: 
 ``` python
   import pandas as pd
@@ -33,7 +35,7 @@ Here is an example of what a end product you will have coded after the workshop.
 
 Get started by going to [Jupyter](https://jupyter.org/try). When you get to the website you will see something like this...
 
-**![Showing Homepage of Jupyter](https://lh5.googleusercontent.com/kf8WU2xC639Ogql75pwjVJFsHLkL1Jc39FNmU985vWokqKD7IsnbpUYYgYTn1ke_RzrsH4E3zELEMEAGhdUFwghXyNX75iWV8kwH_v4ADJETTzO-5IsHcijdSwtwf3gbBbC994tc0FA)**
+**![Showing Homepage of Jupyter](https://cloud-55ad5w43q.vercel.app/0image_from_ios.jpg)**
 
 Click the middle one (Try JupyterLab)! 
 
@@ -45,14 +47,14 @@ Click the middle one (Try JupyterLab)!
 
 First, we need to upload the [libraries](https://docs.python.org/3/library/) we will be using for this project. Every programming language has different “classes” that you need to use to access specific variables. The same thing occurs in Python, but instead they are known as libraries.
 
-![Princess Belle in her wonderful library](https://media1.tenor.com/images/ac626c2d2b7a34b52ea8a630e9add18d/tenor.gif?itemid=4087766)
+![Princess Belle in her wonderful library](https://cloud-pawks5rnb.vercel.app/0file_from_ios.gif)
 
 *Libraries Upload Continued...*
 
 In this workshop we will be using: [pandas](https://pandas.pydata.org/) , [numpy](https://numpy.org/), and [matplotlib](https://matplotlib.org/).
 
 **Pandas**: This is not the furry animal you are thinking of, pandas is a efficient and easy way to use open source data analysis.
-![enter image description here](https://i.pinimg.com/originals/35/fa/7d/35fa7d4060787c575eb0ec6a67411270.gif)
+![gif of cute pandas](https://cloud-o3apzt5vk.vercel.app/0file_from_ios.gif)
 
 **Matplotlib**: This is a plotting library using a numerical mathematics extension Numpy.
 
@@ -87,7 +89,7 @@ This line will show the graph and points we plotted, basically giving the user a
 *`plt.plot(x,y)` --> plots your points.*
 
 **You should get something that looks like this...**
-**![](https://lh6.googleusercontent.com/ANl3lVAPXZfLS8CDBbqIv3Pu8zYpzp5kqXoqBwa4RsDg0g-B0g3x_YnssB2ddfbSh1chvWTnWkvJKFZpuxOcfcQ3aT1vbxxoA3NX2LCY1KnIUXtfNIjeFuMAVW0vQ1RvhgijbcilX9c)**
+**![basic linear graph trending upwards](https://cloud-49wgws6lb.vercel.app/0image_from_ios.jpg)**
 
 
 # Now Let's Create A Simple Bar Graph!
@@ -119,7 +121,7 @@ We are going to make a more personalized graph using three different functions
 
 I am sure you all have already guessed it hehe, Import your libraries!!!!!!!!!!
 
-![Kermit the Frog Dancing!](https://media.tenor.com/images/614ba4f8eab2c798cd83d931c4b0f4b1/tenor.gif)
+![Kermit the Frog Dancing!](https://cloud-n5xpv2pg5.vercel.app/0file_from_ios.gif)
 
  ```python
 import matplotlib.pyplot as plt 
@@ -141,7 +143,7 @@ To create the graph we want to make we will be using the matplotlib library! It 
 
 -   Allows us to plot points
 
-![Amazed Monkey Meme](https://impeccabletablemanners.files.wordpress.com/2016/05/monkey-puppet-omg-shock-gif.gif)
+![Amazed Monkey Meme](https://cloud-nnli579mz.vercel.app/0file_from_ios.gif)
 
 ### Okay now lets get back to it...
 
@@ -200,7 +202,7 @@ Here's a hint:
 *Still stuck? Where the underscores are, replace with `fig,ax= plt.subplots()`.*
 
 Your graph should look something like this...
-**![After Step Two Example ](https://lh6.googleusercontent.com/rZ5Ei__-ct7jN7yZcb3McvFd0uzkyCOESWRSiO0EoO-m-5Gu1p-20So_sU3YmQcWo_koIUSrp0H2RVZ0XJBYE5WiYP1pn-gnnCCADmlnINS2QuQ-9LMW7cg3xjO7tkF078OBNbqw)**
+**![After Step Two Example ](https://cloud-7yu234iqo.vercel.app/0image_from_ios.jpg)**
 
 ## Step Five!
 
@@ -219,12 +221,12 @@ ax.plot(x,x**3,label='Be a icon')
 *`ax.plot` will plot your points/lines*
 
 Your graph should look something like this...
-**![After Step 5 Example](https://lh3.googleusercontent.com/veZOvUNmTa-s3Iam4Qq1LcxtcXGMR_yGHXYfHp_5zjeHGTdJbQC6Yn-ezuEc3NfyeH5TiWA33vidMP1Ds54OBoWIbOdHqDzjl92wBVF1yEq3b_2EDRSv0lFJc8p_7msC9_LIcQZu)**
+**![After Step 5 Example](https://cloud-jdfg40s6g.vercel.app/0image_from_ios.jpg)**
 ## Step Six!
 
 Finishing touches!
 
-![Bibitty Bobittiy Boo!](https://45.media.tumblr.com/tumblr_lz56maEBTj1qdmlfso1_250.gif)
+![Bibitty Bobittiy Boo!](https://cloud-kmkvhdhhs.vercel.app/0file_from_ios.gif)
 
    ```python 
    ax.set_xlabel('Time') #adds X axis label
@@ -234,11 +236,11 @@ Finishing touches!
    ```
 
 You could possibly get something that looks like this...
-**![Workshop Product Example](https://lh3.googleusercontent.com/x7NafZjPviM76xz95YQKc4L8kW4zC3B5_zp4wE7Qv4FKWVX-6ZoB_4qtT4WbA1er9soAcMHZeBNgJgLMttFnr1hiXOkWxLQpBXI3uQQyRd7wOElTYLWZtczqgTvmWvmdOEzmnqMTECg)**
+**![Workshop Product Example](https://cloud-hwlfv9j4u.vercel.app/0image_from_ios.jpg)**
 
 
 *If you are having any issues make sure to check your top right corner to check if the "kernel" is on and is set to Python 3*
-**![No Kernel Error](https://lh6.googleusercontent.com/PJUhbx9vkJDp955g7Azwv_j_EyXGC-_YA9NSED74DU1XbTSxuDUrPfXN4S1b3TY-cjtqaSwUJv6Cnat6Zqko3WQBZ9oSZwncGlOL9EckE6zTwOLVuJ3F9CKQrO8INgII254BJiNcazc)**
+**![No Kernel Error](https://cloud-bej0gbbkn.vercel.app/0image_from_ios.jpg)**
  
 
 # If you are having any issues try copying the example code!
@@ -262,7 +264,7 @@ You could possibly get something that looks like this...
 ```
 \*\*PS. If you have never watched [Chicken Little](https://youtu.be/PPuk2JQgMkU), you must do that asap, you are missing out on an animated masterpiece.
 
-![Chicken Little!](https://media1.tenor.com/images/fac310fb90bbde750d9f2e6ad1af44b1/tenor.gif?itemid=9695910)
+![Chicken Little!](https://cloud-g6jgv31zl.vercel.app/0file_from_ios.gif)
 # Share Your Project! 
 How can I save my project with Jupyter?
 [Click here for video!](https://www.wevideo.com/view/1886850494)
@@ -315,7 +317,7 @@ plt.show()
 
 #Source: https://matplotlib.org/gallery/shapes_and_collections/ellipse_demo.html
 ```
-**![](https://lh6.googleusercontent.com/v_Pj4spo28Zkbyxd_wIIUJ0anPs10QSlbOVbPXL0CcGPjVsSVxHJXMmZ4ddPYqf431rfLcu9gpUGirr4BzrJJmWFWO4I68D3kpe8CHRShTkXd-4Js6no1AIuk_EBpVam1VtPdgtRzNk)**
+**![](https://cloud-pw25qj0bn.vercel.app/0image_from_ios.jpg)**
 **Look up how to import [Google Trends](https://trends.google.com/trends/?geo=US) into your graph!**
 Demo Code: 
 ```python 
@@ -343,5 +345,5 @@ plt.title('Interest in Tik Tok over time');
 ```
 Need help adding the Google trends data? [Click here!](https://www.wevideo.com/view/1850050637)
 
-**![](https://lh5.googleusercontent.com/Lt40VZV23B-ArP0MlydpuNZIc_k3-rUUFhJI15l0Db2KXHFSLuE4ErKvwmh6zI8GklP6A96Xy2w3JHPbAvB6RpFEzbqw2DmA04nlrkAFpjCr6qS9jCe1Lb8tLxik-cVyVHHbNS-R-HA)**
+**![](https://cloud-buf4qdryr.vercel.app/0image_from_ios.jpg)**
 #
