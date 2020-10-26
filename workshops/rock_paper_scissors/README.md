@@ -96,7 +96,7 @@ PC = 0
 
 For this, I'll use a `while` loop but you can also use `for` loops!
 
-So we'll just type:
+So we'll just type this before the `while` statement:
 ```py
 while Player == False: 
 ```
@@ -181,7 +181,7 @@ while player == False:
 ### 5) Keeping the loop going
 Now as we have completed building the game we need it to run infinitely.
 
-To do this you just need to add the following statement after the `while` statement,
+To do this you just need to add the following statement after the `while` statement at the end,
 ```py
 player = False
 ```
