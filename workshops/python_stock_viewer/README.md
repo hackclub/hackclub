@@ -245,6 +245,8 @@ Or let the user [input](https://repl.it/@sohamb117/demo1-1#main.py) the stock sy
 
 Or write a program to [sort](https://repl.it/@sohamb117/demo3) the stocks by value?
 
+Or a modification to the code that uses a [different API](https://repl.it/@sohamb117/demo6#main.py) to get information about an anime from an ID? 
+
 Here are some things to read to learn more about what we did here:
 
 * https://requests.readthedocs.io/en/master/user/quickstart/#make-a-request
