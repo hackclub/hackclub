@@ -41,11 +41,11 @@ Click the middle one (Try JupyterLab)!
 
 Jupyter will spin up a coding environment right in your browser! After a few seconds, you should see this:
 
-![A Jupyter notebook](https://cloud-4jz1jljdx.vercel.app/0image_from_ios.jpg)
+![A Jupyter notebook](https://cloud-gxd1qmxly.vercel.app/0image_from_ios.jpg)
 
 Click the `+` button at the top left, then select `Python 3`.
 
-![An untitled Juypter notebook](https://cloud-gxd1qmxly.vercel.app/0image_from_ios.jpg)
+![An untitled Juypter notebook](https://cloud-4jz1jljdx.vercel.app/0image_from_ios.jpg)
 
 You should see a new untitled Juypter notebook.
 
