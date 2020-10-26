@@ -5,9 +5,7 @@ Author: '@JackTDC'
 ---
 
 # Rock Paper Scissors Game
-Have you ever wondered how to build a game with Python? Have you ever wanted to build your own game but didn't because it was hard? Well, today I'm going to show you how to build one and you know what? It's very simple!
-
-So let's get started.
+Have you ever wondered how to build a game with Python? Have you ever wanted to build your own game but didn't because it was hard? Well, today I'm going to show you how to build one and show you just how simple it can be!
 
 ![homepage](https://cloud-8p13u30yt.vercel.app/rps.png)
 
@@ -28,7 +26,7 @@ You should have a beginner understanding of:
 
 [Repl.it](https://repl.it) is an online code editor where you can build your game. You don't have to use Repl.it but I suggest you do as it sets everything up for you and you don't require any installations.
 
-To get started, go to [https://repl.it/languages/python](Repl.it). Your coding environment will spin up in just a few seconds!
+To get started, go to [repl.it/languages/python](https://repl.it/languages/python). Your coding environment will spin up in just a few seconds!
 
 You should see something like the following:
 
@@ -38,21 +36,20 @@ You should see something like the following:
 ![GIF](https://cloud-931ehqeec.vercel.app/coding.gif)
 
 ### 1) Importing Modules
-Let us start making our game! First, we'll need to import some modules. As you know there are many modules for Python but today we will be working with the `randint` module.
-To learn more about the randint package click [here][randint].
+First, we'll need to import the `randint` module. To learn more about the randint package click [here][randint].
 
 [randint]: https://www.journaldev.com/36085/randint-method-in-python/
 
-So in the first line, type `from random import randint`. This will import the randint module.
+On the first line of the `main.py` file, type `from random import randint`. This will import the randint module.
 
 ### 2) Giving values to the variables
-First, let's make a list for all the entries a player could enter,
+Let's make a list for all the entries a player could enter:
 ```py
 t = ["r","p","s"]
 ```
 'r' stands for `Rock`,'p' stands for `Paper` and 's' stands for `Scissors`.
 
-Now we have to write a code so the computer chooses rock, paper or scissors randomly!
+Now, let's write some code that chooses rock, paper or scissors randomly.
 ```py
 computer = t[randint(0,2)]
 ```
@@ -61,7 +58,7 @@ Now we will set a variable to false and by using it in a `while` loop, we can ke
 player = False
 ```
 
-Now you have to write some code so the player can enter his/her name. 
+Now, let's write some code so the player can enter their name.
 ```py
 name = input("Enter your name:")
 ```
@@ -71,12 +68,13 @@ Also to make a scoring system, we'll write the following code:
 You = 0
 PC = 0 
 ```
-We are going to give an option to the player to reset the game to let the player know about this function this type,
+
+Next, we want to give an option to the player to reset the game.
 ```py
 print("Type 'reset' to reset score")
-``
+```
 
-So this is the code so far:
+Here's the code so far:
 ```py
 from random import randint
 
@@ -98,7 +96,7 @@ PC = 0
 
 For this, I'll use a `while` loop but you can also use `for` loops!
 
-So we'll just type,
+So we'll just type:
 ```py
 while Player == False: 
 ```
@@ -136,7 +134,6 @@ def lose():
   print('Computer =', PC, '\n', name, '=', You)
 ```
 Now we have to call these functions at the right places.
-
 
 To do that enter the following code:
 ```py
