@@ -387,7 +387,7 @@ Yippee! We have now finished coding our weather app and the App is ready to be u
 
 For seeing the result use the `Run` button on `Repl`.
 
-![app](https://cloud-g1zuwwz9o.vercel.app/0app.gif)
+![app](https://cloud-9ofo2uek2.vercel.app/0repl.gif)
 
 ## 6. The Improvised Version
 
