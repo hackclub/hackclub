@@ -45,11 +45,11 @@ Jupyter will spin up a coding environment right in your browser! After a few sec
 
 Click the `+` button at the top left, then select `Python 3`.
 
-![An untitled Juypter notebook](https://cloud-4jz1jljdx.vercel.app/0image_from_ios.jpg)
+![Screenshot of a Jupyter notebook showing what steps to take](https://cloud-hywsca56c.vercel.app/0image_from_ios.jpg)
 
 You should see a new untitled Juypter notebook.
 
-![Screenshot of a Jupyter notebook showing what steps to take](https://cloud-hywsca56c.vercel.app/0image_from_ios.jpg)
+![An untitled Juypter notebook](https://cloud-4jz1jljdx.vercel.app/0image_from_ios.jpg)
 
 **Never used Jupyter? [Here's a quick introduction/tutorial to Jupyter](https://www.wevideo.com/view/1849208046)!** 
 
