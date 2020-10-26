@@ -1,5 +1,5 @@
 ---
-name: = 3D World
+name: 3D World
 description: Make your own 3D World in under 20 minutes!
 author: '@wollygfx'
 ---
@@ -121,10 +121,10 @@ A-Frame has an asset management system that allows us to place our assets in one
 
 Nosotros pondremos nuestros assets dentro del tag <a-assets>. Hay 4 tipos de assets que podremos usar para crear nuestro mundo virtual, estos los veremos a traves del taller.
 
-- <a-asset-item> - Miscellaneous assets such as 3D models and materials
-- <a-audio> - Audio files
-- <img> - Image textures
-- <video> - Video textures
+- ```<a-asset-item>``` Miscellaneous assets such as 3D models and materials
+- ```<a-audio>``` Audio files
+- ```<img>``` Image textures
+- ```<video>``` Video textures
 
 **The scene won’t render or initialize until the browser fetches (or errors out) all the assets or the asset system reaches the timeout.**
 
