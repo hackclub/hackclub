@@ -1,5 +1,5 @@
 ---
-name: 'Python_DataViz'
+name: 'Python Data Viz'
 description: 'Use python to create basic graphs and visualizations with real data'
 author: '@maddieWillett-boop'
 ---
@@ -26,7 +26,7 @@ ax.plot(x,x,label='Sleep')
 ax.plot(x,x**2,label='Worry if sky is falling...')
 ax.plot(x,x**3,label='Be a icon')
 ax.set_xlabel('Time') #adds X axis label
-ax.set_ylabel('Years')#add Y axis lable
+ax.set_ylabel('Years') #adds Y axis label
 ax.set_title("Chicken Little's Plot") #adds a title
 ax.legend() #adds a key of the graph
 ```
@@ -43,7 +43,7 @@ Jupyter will spin up a coding environment right in your browser! After a few sec
 
 ![A Jupyter notebook](https://cloud-4jz1jljdx.vercel.app/0image_from_ios.jpg)
 
-Click the `+` button at the top left, then select `Python 3`.
+Click the `+` button at the top left, then select Notebook –> Python 3.
 
 ![Screenshot of a Jupyter notebook showing what steps to take](https://cloud-hywsca56c.vercel.app/0image_from_ios.jpg)
 
@@ -53,9 +53,7 @@ You should see a new untitled Juypter notebook.
 
 **Never used Jupyter? [Here's a quick introduction/tutorial to Jupyter](https://www.wevideo.com/view/1849208046)!** 
 
-# Step One!
-
-*Uploading Libraries* ...
+# Uploading Libraries!
 
 First, we need to upload the [libraries](https://docs.python.org/3/library/) we will be using for this project. Every programming language has different “classes” that you need to use to access specific variables. The same thing occurs in Python, but instead they are known as libraries.
 
@@ -70,7 +68,7 @@ In this workshop we will be using [pandas](https://pandas.pydata.org/), [numpy](
 
 **Numpy**: This is a python library that is very good with hard mathematical functions and arrays.
 
-# Step Two: Let's Make A Simple Line Plot!
+# Simple Line Plot!
 
 **Note: Customize your plots and graphs! (Labels, Values, etc.)**
 
@@ -80,7 +78,7 @@ On the first line of your new untitled Jupyter notebook, add the following code:
 import pandas as pd 
 import matplotlib.pyplot as plt 
 ```
-The code is above imports Pandas and Matplotlib into this project so we can have access to certain variables and methods available in these libraries!
+The above code imports Pandas and Matplotlib into this project so we can have access to certain variables and methods available in these libraries!
 
 Under those two lines, add:
 
@@ -101,8 +99,8 @@ plt.show()
 ```
 This line will show the graph and points we plotted, basically giving the user an output. 
 
-*`plt.show()` --> shows the graph output.*
-*`plt.plot(x,y)` --> plots your points.*
+* *`plt.show()` –> shows the graph output.*
+* *`plt.plot(x,y)` —> plots your points.*
 
 Click the play button near the top of your window.
 
@@ -113,13 +111,17 @@ Click the play button near the top of your window.
 ![Jupyter notebook with code and example](https://cloud-pm56h5avl.vercel.app/0image_from_ios.jpg)
 
 
-# Now Let's Create A Simple Bar Graph!
+# Simple Bar Graph!
+In a new section of your Jupyter notebook, add:
+
 ```python 
 import pandas as pd
 import matplotlib.pyplot as plt
 import random
 ```
-This code above imports the libraries again. Notice that we import another library called `random` this will allow for a random number to be chosen each time we have a `y` value which you can see later in our code!
+This code above imports the libraries again. Notice that we import another library called `random`. This will allow for a random number to be chosen each time we have a `y` value. You'll be able to see this later in our code!
+
+Next, add:
 
 ```python
 x=['Tacos','Burritos','Churros']
@@ -130,9 +132,9 @@ plt.show()
 
 The code above names each of the bars (defines x and y lines), creates random values of Y using ```random.randint()```, plots our points, and shows the graph!
 
-When you click the play button again, you should see this:
+When you click the play button again, you should see something like this:
 
-**![bar graph](https://cloud-3r2clygpe.vercel.app/0image_from_ios.jpg)**
+**![bar graph](https://cloud-lb7wueqlz.vercel.app/0image_from_ios.jpg)**
 
 ![jupyter notebook with code and bar graph](https://cloud-qyo2g39vl.vercel.app/0image_from_ios.jpg)
 
@@ -158,19 +160,19 @@ I am sooooo glad you asked!
 
 To create the graph we want to make we will be using the matplotlib library! It will...
 
--   Create an outline
+- Create an outline
 
--   Create axes
+- Create axes
 
--   Create axes ranges
+- Create axes ranges
 
--   Allows us to plot points
+- Allow us to plot points
 
 ![Amazed Monkey Meme](https://cloud-nnli579mz.vercel.app/0file_from_ios.gif)
 
 ### Okay now lets get back to it...
 
-*Make sure your libraries are uploaded!*
+*Make sure your libraries are imported!*
 
 ## Step Two!
 
@@ -196,9 +198,8 @@ fig,ax= plt.subplots()
 - This created a figure with a single axis.
 - Here are a few different ways you can use fig…
 ```python
-fig=plt.figure() 
-#creates empty graph returns with num. figues
-fig,ax =plt.subplots(2,2) #creates 2 graph figues
+fig=plt.figure() #creates empty graph returns with num. figues
+fig,ax=plt.subplots(2,2) #creates 2 graph figues
 ```
 Check it out in your Jupyter Editor!
 
@@ -220,9 +221,9 @@ Set up spacing of your x and y axis...
 Create a figure! Scroll back up to see how to write that code...
 Here's a hint:
 
-`fig,ax = plt._____()`
+`fig,ax=plt._____()`
 
-*Still stuck? Where the underscores are, replace with `fig,ax = plt.subplots()`.*
+*Still stuck? Where the underscores are, replace with `fig,ax=plt.subplots()`.*
 
 Your graph should look something like this...
 
@@ -240,7 +241,7 @@ ax.plot(x,x**2,label='Worry if sky is falling...')
 ax.plot(x,x**3,label='Be a icon')
 ```
 
-*Label= will be the name of your line*
+*`label=` will be the name of your line*
 
 *`ax.plot` will plot your points/lines*
 
