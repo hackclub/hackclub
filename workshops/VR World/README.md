@@ -13,7 +13,6 @@ Virtual worlds are places where you can chill and vibe, in this workshop i will 
 For this workshop you will need a very basic level of HTML in order to understand what is going on, but don't worry if it's your first time with HTML — I will do my best to explain everything so you can understand.
 
 ## Set up
-
 To start creating our virtual world, we will need just one thing, an [IDE](https://www.veracode.com/security/integrated-development-environment) (Integrated Development Environment). In this case, we will use [repl.it](repl.it), click [here](https://repl.it/languages/html) to create an IDE right for this workshop.
 
 Once you have created your Html IDE, it should look like this:
@@ -37,7 +36,6 @@ Add the following line of code inside of the <head> tag.
 Cool!- Now we can start creating our virtual world.
 
 ### Creating a scene
-
 In order to start creating our virtual world, we must create an scene. Create an scene inside of the  <body> tag using the tag </a-scene>:
 
 ```html
@@ -45,8 +43,8 @@ In order to start creating our virtual world, we must create an scene. Create an
 ```
 The scene contains all the elements of our world, this includes the [primitives](https://aframe.io/docs/1.0.0/introduction/html-and-primitives.html#primitives), the camera and many more that we will get to know through this workshop, something that you should know is that all the A-frame components are tags that start with "a-" and finish with the name of the component.
 
-### Coordinate system
 
+### Coordinate system
 A-frame uses a right-handed coordinate system, los elementos se mueven de diferentes maneras asi:
 
 - X Coordinate: An element will move to the right if it has a positive value or to the left if it has a negative value.
@@ -58,8 +56,7 @@ A-frame uses a right-handed coordinate system, los elementos se mueven de difere
 ![Right Handed system](https://cloud-jp2e01qs3.vercel.app/0original.png)
 
 ### Creating our first object
-
-To learn the basics of A-frame, we will need to create our first object, in this case we will make a cube to be able to see how the rotation, position, color and scale properties work.
+To learn the basics of A-frame, we will need to create our first object, in this case; we will make a cube to be able to see how the rotation, position, color and scale properties work.
 
 Inside of the <a-scene> tag, add the following primitive:
 
@@ -241,16 +238,29 @@ Notice how the spot light has some intensity that only goes to a certain distanc
 
 If you want to know more about lights, click [here](https://aframe.io/docs/1.0.0/components/light.html)
 
-Otra cosa que podemos agregar son sonidos, los sonidos son importantes por que son los que provocan una inmersion total en espacios virtuales. Agregar sonidos es muy similar a agregar texturas, lo unico que tendremos que hacer es adjuntar nuestro sonido a el asset management system y luego colocarlo en un primitivo, miremos el siguiente ejemplo:
+Otra cosa que podemos agregar son sonidos, los sonidos son importantes por que son los que provocan una inmersion total en espacios virtuales. Agregar sonidos es muy similar a agregar texturas, usaremos el Assets Management System para adjuntar nuestros sonidos.
 
-Yo usare este sonido que me encanta: https://www.youtube.com/watch?v=T9qVyDbnF3I. Una vez lo haya descargado, lo puedo colocar en el asset management system usando el tag <audio>
+Hay dos tipos de sonidos que puedes usar:
+- Background sound 
+- Positional sound 
+
+Para el sonido de fondo usare este audio que me gusta mucho: https://www.youtube.com/watch?v=T9qVyDbnF3I. I will have to download it and then upload it to Repl.it the same way as we did before.
+
+Una vez lo hayamos subido a repl.it, we can put it in the asset management system usando el tag <audio>
 
 ```html
 <audio id="background-music" src=""></audio>
 ```
-Luego usando el primitivo <a-audio> puedes hacer
+Luego usando el primitivo <a-audio> puedes adjuntar ese audio a la escena asi:
+```html
+<a-audio src="#background-music" autoplay="true"></a-audio>
+```
+The *autoplay* attribute makes the audio play automatically when the user enters the scene.
 
-
-
-
-
+Now, if you want to make it a positional audio you must add to it the attribute *position* and move it around using the x,y,z coordinates.
+```html
+<a-sound 
+    src="#background" 
+    autoplay="true"
+    position="-3 1 -4"></a-sound>
+```
