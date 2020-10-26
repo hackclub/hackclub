@@ -12,7 +12,7 @@ Here's what the final version looks like:
 
 ![main](https://cloud-fw0yxvsf2.vercel.app/0screenshot_from_2020-10-23_19-26-13.png)
 
-The [Source Code](https://github.com/gautamjajoo/BasicWeather) & [Demo](https://WeatherApp.gautamjajoo.repl.co) are hyperlinked here.
+The [Source Code](https://github.com/gautamjajoo/BasicWeather) & [Demo](https://Weather.gautamjajoo.repl.co) are hyperlinked here.
 
 By the end of this workshop, you'll have learned how to use web APIs, which you could expand to use even more creatively in future projects. You'll also learn some fundamentals of JavaScript, as well as some nice CSS tricks for making beautiful designs.
 
@@ -47,9 +47,9 @@ Let's start by adding some code to the `index.html` file. We will start the file
 </html>
 ```
 
-We add `!DOCTYPE` with the `html` tag as it used as an information to the browser about what document type to expect.
+We add `!DOCTYPE` with the `html` tag because it used as an information to the browser about what type of document to expect.
 
-Now we will link the`JS` file to our `HTML` file. Also, we will be using `moment.js`, a Javascript library for managing dates and time.
+Now we will link the`JavaScript` file to our `HTML` file. Also, we will be using `moment.js`, a Javascript library for managing dates and time.
 
 To link the CSS file we add
 
@@ -72,7 +72,7 @@ Add
 ``` 
 inside the `head` tag.
 
-Since we have linked all our files with the `HTML` file now we can start making a card on which we would display the content.
+Since we have linked all our files with the `HTML` file, now we can start making a card on which we would display the content.
 
 P.S: For more information about cards, refer to [`Bootstrap`](https://getbootstrap.com/docs/4.0/components/card/), an open source `CSS` framework.
 
@@ -91,7 +91,7 @@ Then add a heading to our app using `<h1>` .
 
 To input the city from the user we use the `input` tag and declare it with class as `input` and `id` as `input`. 
 
-Mainly `class` is used for passing information in `CSS` and `id` is used for `JavaScript`. 
+`class` is used for passing information in `CSS` and `id` is used for `JavaScript`. 
 
 Also, add a `placeholder` which guides the user about the expected value of the input.
 
@@ -138,7 +138,8 @@ Our `HTML` code is done and now we can move to the `CSS` part. At the end, the `
             <p class="temp" id="temp">Temp </p>
             <p id="min-max">Min and Max Temp </p>
             <p id="weather-type">Sunny </p>
-	</div>
+    </div>
+</div>
 
 <script src="script.js"></script>
 
@@ -393,7 +394,7 @@ For seeing the result use the `Run` button on `Repl`.
 
 Here are some things which you should consider to improve your knowledge of APIs and make some changes in this project as well.
 
-- You could add different images/[icons](https://erikflowers.github.io/weather-icons/) depending upon the weather type(sunny, rainy etc). The [API](https://openweathermap.org/weather-conditions#Icon-list) itself provides you with the information about displaying the icons.
+- You could add different images / [icons](https://erikflowers.github.io/weather-icons/) depending upon the weather type(sunny, rainy etc). The [API](https://openweathermap.org/weather-conditions#Icon-list) itself provides you with the information about displaying the icons.
 
 - Try to make another card besides the weather card where you could display the map of the city entered. (You will get to know about new APIs of Maps)
 
