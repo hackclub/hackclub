@@ -181,12 +181,6 @@ Now for the last part we are going to assume that the player wants to reset the 
     else:
         print("That's not a valid play. Please select a valid option!")
 ```
-#### Explanation:
-
-1. The first `if` statement declares a tie.
-2. In the first three `elif` statements, the player can either win or lose and the points are given respectively.
-3. In the fourth `elif` statement, the player could reset the score.
-4. Last `else` statement occurs only when the player enters an invalid word.
 
 ### 5) Keeping the loop going
 Now as we have completed building the game we need it to run infinitely.
