@@ -220,9 +220,9 @@ Set up spacing of your x and y axis...
 Create a figure! Scroll back up to see how to write that code...
 Here's a hint:
 
-`fig,ax= plt._____()`
+`fig,ax = plt._____()`
 
-*Still stuck? Where the underscores are, replace with `fig,ax= plt.subplots()`.*
+*Still stuck? Where the underscores are, replace with `fig,ax = plt.subplots()`.*
 
 Your graph should look something like this...
 
@@ -256,7 +256,7 @@ Finishing touches!
 
    ```python 
    ax.set_xlabel('Time') #adds X axis label
-   ax.set_ylabel('Years')#add Y axis label
+   ax.set_ylabel('Years') #adds Y axis label
    ax.set_title("Chicken Little's Plot") #adds a title
    ax.legend() #adds a key of the graph
    ```
@@ -267,9 +267,6 @@ You could possibly get something that looks like this...
 
 *If you are having any issues make sure to check your top right corner to check if the "kernel" is on and is set to Python 3*
 **![No Kernel Error](https://cloud-bej0gbbkn.vercel.app/0image_from_ios.jpg)**
- 
-
-# If you are having any issues try copying the example code!
 
 **All Example Code:**
 
