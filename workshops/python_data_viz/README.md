@@ -262,6 +262,7 @@ Finishing touches!
    ```
 
 You could possibly get something that looks like this...
+
 **![Workshop Product Example](https://cloud-hwlfv9j4u.vercel.app/0image_from_ios.jpg)**
 
 
