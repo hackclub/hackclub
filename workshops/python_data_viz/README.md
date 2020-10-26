@@ -8,7 +8,7 @@ author: '@maddieWillett-boop'
 
 You after you make your first data visualization^
 
-*In this workshop you will use python to create basic graphs and visualizations with real data.  First we start off with simpler graph visualizations, and learn how to make them more personalized and complicated! You can hand draw a graph anytime you want, but why not learn how to code one! You will learn and use matplotlib, pandas, and numpy, so you can create any graph or visualization you dream of!*
+In this workshop you will use python to create basic graphs and visualizations with real data.  First we start off with simpler graph visualizations, and learn how to make them more personalized and complicated! You can hand draw a graph anytime you want, but why not learn how to code one! You will learn and use matplotlib, pandas, and numpy, so you can create any graph or visualization you dream of!
 
 Here is an example of something you will have coded after the workshop:
 
@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 x=np.linspace(0,2,100)
-fig,ax= plt.subplots()
+fig,ax=plt.subplots()
 ax.plot(x,x,label='Sleep')
 ax.plot(x,x**2,label='Worry if sky is falling...')
 ax.plot(x,x**3,label='Be a icon')
@@ -179,7 +179,7 @@ To create the graph we want to make we will be using the matplotlib library! It 
 The code below creates the skeleton of a graph, plots points, and shows output!
 ```python
 #creates figure (graph skeleton)
-fig,ax= plt.subplots()
+fig,ax=plt.subplots()
 #plots points
 ax.plot([1,2,3,4],[1,4,2,3])
 plt.show()
@@ -192,7 +192,7 @@ In the code above, and anytime you want to create a graph you will be using fig.
 
 -   For example in our code so far we have used…
 ```python
-fig,ax= plt.subplots()
+fig,ax=plt.subplots()
 ```
      
 - This created a figure with a single axis.
@@ -307,13 +307,16 @@ How can I save my project with Jupyter?
 **OR** Follow full workshop using that covid-19 data with  [Visualizing Covid-19 Data](https://towardsdatascience.com/visualizing-covid-19-data-beautifully-in-python-in-5-minutes-or-less-affc361b2c6a)
 By: Nic Piepenbreier!!!
 
-#
+---
+
 **Heavily personalize your graph (like I did with Chicken Little)!
     \-Google code for different kinds of graphs (dot plot, pie charts, etc.)**
-#   
+    
+---
+
 **[Make multiple different kinds of graphs/visualizations](https://matplotlib.org/devdocs/gallery/subplots_axes_and_figures/subplots_demo.html).**
 
-   ```python 
+```python 
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Ellipse
@@ -343,6 +346,8 @@ plt.show()
 ```
 **![](https://cloud-pw25qj0bn.vercel.app/0image_from_ios.jpg)**
 
+---
+
 **Look up how to import [Google Trends](https://trends.google.com/trends/?geo=US) into your graph!**
 Demo Code: 
 ```python 
@@ -371,4 +376,3 @@ plt.title('Interest in Tik Tok over time');
 Need help adding the Google trends data? [Click here!](https://www.wevideo.com/view/1850050637)
 
 **![](https://cloud-buf4qdryr.vercel.app/0image_from_ios.jpg)**
-#
