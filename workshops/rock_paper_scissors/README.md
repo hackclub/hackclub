@@ -135,7 +135,8 @@ def lose():
 ```
 Now we have to call these functions at the right places.
 
-To do that enter the following code:
+
+First we will assume that the outcome is a tie to do that enter the following code:
 ```py
 while player == False:
     player = input("Rock, Paper, Scissors?(r,p,s)")
@@ -143,6 +144,9 @@ while player == False:
         print("Tie!")
         print('Computer =',PC)
         print(name,'=',You)
+```
+Next, we want to write some code for each action that someone can take.
+```
     elif player == "r":
         if computer == "p":
             message = "You lose!","Paper covers Rock"
@@ -150,6 +154,9 @@ while player == False:
         else:
             message ="You win!", "Scissors cuts Paper"
             win()
+```
+What would the code be for paper and scissors?
+```
     elif player == "p":
         if computer == "s":
             message = "You lose!","Paper covers Rock"
@@ -164,6 +171,9 @@ while player == False:
         else:
             message ="You win!", "Scissors cuts Paper"
             win()
+```
+Now for the last part we are going to assume that the player wants to reset the game or he/she entered a invalid entry
+```
     elif player == "reset":
       You=1*0
       PC=1*0
