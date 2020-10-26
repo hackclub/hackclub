@@ -115,7 +115,7 @@ There are 5 possibilities:
 ### 4) Producing separate outcomes for all possibilities
 
 To make things easier I will be making functions to print if the player wins or loses.
-First I will write `message = ""` This will help us by printing different message by calling the same function.
+First I will write `message = ""` before we make the function. This will help us by printing different message by calling the same function.
 
 Now I will be making a function that will be called only when the player wins. To do that enter the following code:
 ```py
