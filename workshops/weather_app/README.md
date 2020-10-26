@@ -14,7 +14,7 @@ Here's what the final version looks like:
 
 The [Source Code](https://github.com/gautamjajoo/BasicWeather) & [Demo](https://WeatherApp.gautamjajoo.repl.co) are hyperlinked here.
 
-By the end of this workshop, you'll have learned how to use web APIs, which you could expand to use even more creatively in future projects. You'll also learn some fundamentals of JavaScript, as well as some nice CSS tricks for making beautiful card designs.
+By the end of this workshop, you'll have learned how to use web APIs, which you could expand to use even more creatively in future projects. You'll also learn some fundamentals of JavaScript, as well as some nice CSS tricks for making beautiful designs.
 
 ## 1. The Prerequisites
 Some basic understanding of HTML, CSS and Javascript/JSON.
@@ -29,11 +29,12 @@ Start by creating a [new HTML/CSS repl.it project](https://repl.it/languages/htm
 
 You should see three files: `index.html`, `style.css`, and `script.js`.
 
-![repl.it screen](https://cloud-o4m9cgxr8.vercel.app/0screenshot_from_2020-10-09_12-14-29.png)
+![repl.it screen](https://cloud-9hqnkjk42.vercel.app/0screenshot_from_2020-10-26_14-54-39.png)
 
 ## 3. Making a skeleton of the app.
 
-Delete all the lines which are already added in the files. Let's start by adding some code to the `index.html` file. We start the file with some basic lines which are added in every HTML file.
+Delete all the lines which are already added in the files. 
+Let's start by adding some code to the `index.html` file. We will start the file with some basic lines which are added in every HTML file.
 
 ```html
 <!DOCTYPE html>
@@ -46,9 +47,9 @@ Delete all the lines which are already added in the files. Let's start by adding
 </html>
 ```
 
-Here `!DOCTYPE` is used as an "information" to the browser about what document type to expect.
+We add `!DOCTYPE` with the `html` tag as it used as an information to the browser about what document type to expect.
 
-Now we will link the`JS` file to our `HTML` file. Also, we would be using `moment.js`, a Javascript library for managing dates and time.
+Now we will link the`JS` file to our `HTML` file. Also, we will be using `moment.js`, a Javascript library for managing dates and time.
 
 To link the CSS file we add
 
@@ -62,15 +63,14 @@ inside the `head` tag and to link the JS file we add
 ``` 
 inside the body tag.
 
-To link external file like `moment.js` we use [`CDNJS`](https://cdnjs.com/) which is an open-source CDN service powered by Cloudflare. Cloudflare makes it easier to load library files on our websites.
+To link external file like `moment.js` we use [`CDNJS`](https://cdnjs.com/) which is an open-source CDN service powered by Cloudflare. 
 
 Add 
 
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
 ``` 
-under the `head` tag.
+inside the `head` tag.
 
 Since we have linked all our files with the `HTML` file now we can start making a card on which we would display the content.
 
@@ -79,11 +79,19 @@ P.S: For more information about cards, refer to [`Bootstrap`](https://getbootstr
 Inside our `<body>` we will add `<div>` with class as `container` which makes our main card and for the content inside we can add another
 `<div>` with class as `content`.
 
-Then add a heading using `<h1>` giving the title to the project.
+```html
+<div class="container">
+<div class="content">
+```
+
+Then add a heading to our app using `<h1>` .
+```html
+<h1>WEATHER APP</h1>
+```
 
 To input the city from the user we use the `input` tag and declare it with class as `input` and `id` as `input`. 
 
-Mainly `class` is used for passing information in `CSS` and `id` is used for `JS`. 
+Mainly `class` is used for passing information in `CSS` and `id` is used for `JavaScript`. 
 
 Also, add a `placeholder` which guides the user about the expected value of the input.
 
@@ -91,9 +99,9 @@ Also, add a `placeholder` which guides the user about the expected value of the 
 <input id="input" class="input" placeholder="Enter the City Name">
 ```
 
-As the user has already input the city name therefore the `<div>` of `content` should be closed here.
+As the user has already input the city name, the `<div>` of `content` should be closed here.
 
-Lastly, we will add `div` with class as `main-weather` to display the weather details.
+Lastly, we will add `<div>` with class as `main-weather` to display the weather details.
 
 We will be using `<p>` for every detail we display. Hence we declare the weather details with the following ids
 
@@ -111,8 +119,6 @@ Our `HTML` code is done and now we can move to the `CSS` part. At the end, the `
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
 	<title>Weather</title>	
@@ -127,16 +133,14 @@ Our `HTML` code is done and now we can move to the `CSS` part. At the end, the `
     	</div>
 
     <div class="main-weather">
-    		<img id="image">
-        <p id="date">Date </p>
+    	    <p id="date">Date </p>
             <p id="city">City </p>
             <p class="temp" id="temp">Temp </p>
             <p id="min-max">Min and Max Temp </p>
             <p id="weather-type">Sunny </p>
-
 	</div>
 
-<script src="app.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
@@ -144,7 +148,7 @@ Our `HTML` code is done and now we can move to the `CSS` part. At the end, the `
 
 ## 4. Improving the design of skeleton using CSS
 
-Firstly, we will customize the body by giving it a background colour, display property, font-size and line-height.
+We will customize the body by giving it background colour, display property, font-size and line-height.
 
 We will set display value as `flex` because Flexbox makes it easier to design a flexible responsive layout without using float or positioning.
 
@@ -170,7 +174,8 @@ Now we will start making the Card.
           filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
 }
 ```
-`WebKit-filter` with `drop-shadow` is also a very cool property which is used for giving a highlighted shadow behind the card.
+
+`WebKit-filter` with `drop-shadow` is a very cool property which is used for giving a highlighted shadow behind the card.
 
 We will add some properties to our heading by adding the following code:
 
@@ -178,7 +183,7 @@ We will add some properties to our heading by adding the following code:
 h1 {
   border-bottom: 4px solid deepskyblue;
   padding-bottom: 0.25em;
-  margin-bottom: 0.25em;
+  margin-bottom: 1em;
   text-align: center;
   font-family: Raleway;
 }
@@ -212,13 +217,12 @@ And for the weather details, we add the following code:
 .temp { 
     margin: 25px;
     font-size:40pt;
-    font-weight: 700;
 }
 
 ```
 Here we have used `display: none` because we wish to hide everything before any input is taken. Rest all elements are basic `CSS` properties. 
 
-Yay! All the `CSS` part is completed and we have done designing the webpage. We just need to add the functionalities to our app. 
+Yay! All the `CSS` part is completed and we have done designing the webpage. OUr next goal is to add the functionalities to our app. 
 
 At this point, the CSS code would look something like [this](https://repl.it/@gautamjajoo/Weather#style.css).
 
@@ -255,7 +259,7 @@ API.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 Here, we divide the API into two parts, first being the base URL and second being the API key.
 
 Since we have a rough idea about the given API we can now start to code the JS file. 
-At the start, we define a constant named as `api` which contains our Baseurl and our key. It would look something like this:
+At the start, we define a constant named as `api` which contains our Baseurl and our key.
 
 ```js
 const api = {
@@ -297,10 +301,13 @@ Many more formats and information are mentioned in the [Moment.js Docs](https://
 In the above function, the input of the user is stored in the `const Input`. After the user presses enter(whose keycode is `13`) we will send the value
 to the new function `getWeather` which we will create to get the weather details from the API. 
 
-Also, we store the date in a `const date` using the `moment.js` format mentioned in the docs.
+Also, we will store the date in a `const date` using the `moment.js` format mentioned in the docs.
 
-Since we had set the `display: none` initially in `main-weather` class in `CSS`, so for multiple queries to be answered we add the last line to make
-the `display: block` otherwise after one query we won't be able to see further details.
+Since we had set the `display` as `none` initially in `main-weather` class in `CSS`, so for multiple queries to be answered we add
+```js
+ document.querySelector('.main-weather').style.display = "block";
+```
+ to set `display` as `block` otherwise after one query we won't be able to see further details.
 
 Now we will create the `getWeather` function to get the details from the API.
 ```js
@@ -312,14 +319,12 @@ function getWeather(city) {
 
     }).then(showWeather);
 }
-
-
 ```
 The input value of the user which is passed through the above function is stored in `city`. As we know the format of API, we will fetch the weather details from the provider using the API. Here `api.base` is declared in the first line and `api.key` in the second line of the `JS` file and `city` is the input of the user.
 
 `.then()` is a method in `JS` which has been defined in the `Promise API` and is used to deal with asynchronous tasks such as an API call.
-Previously, callback functions were used instead of this function which made the code difficult to maintain. More information about 
-promises are mentioned in [Developer Mozilla Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises).
+Previously, callback functions were used instead of this function which made the code difficult to maintain.
+More information about promises are mentioned in [Developer Mozilla Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises).
 
 We will also add `units=metric` in the end, since the API returns in Fahrenheit and we want the temperature to be in Celsius.
 
@@ -341,12 +346,12 @@ Before coding further we should try seeing what we obtain from the API using `co
 ```js
 function showWeather(details){  //Taking the received values from API into this function
 
-    // console.log(details);
+    console.log(details);
 }
 
 ```
 
-The console log should look like:
+The console log should look like this:
 
 ![console](https://cloud-1tlmm2zp9.vercel.app/0console.gif)
 
@@ -376,9 +381,9 @@ Since we are using `JSON` for accessing the details, the format of getting the d
 where `details` is our `JSON` object and `property` could be any element of that object. For choosing the correct `property` we have to see
 the console log of the details we receive from the API.
 
-Also, to round off the temperature we are using `Math.round()` function.
+To round off the temperature we are using `Math.round()` function.
 
-Yippee! We have now finished coding our weather app and the App is now ready to be used.
+Yippee! We have now finished coding our weather app and the App is ready to be used.
 
 For seeing the result use the `Run` button on `Repl`.
 
@@ -388,9 +393,9 @@ For seeing the result use the `Run` button on `Repl`.
 
 Here are some things which you should consider to improve your knowledge of APIs and make some changes in this project as well.
 
-- You could add different images/[icons](https://erikflowers.github.io/weather-icons/) depending upon the weather type(sunny, rainy etc). Research on this point you will get a lot of help from the [API](https://openweathermap.org/weather-conditions#Icon-list) itself.
+- You could add different images/[icons](https://erikflowers.github.io/weather-icons/) depending upon the weather type(sunny, rainy etc). The [API](https://openweathermap.org/weather-conditions#Icon-list) itself provides you with the information about displaying the icons.
 
-- Try to make another card on the right of this where you could display the map of the city entered. (You will get to know about some new APIs of Maps)
+- Try to make another card besides the weather card where you could display the map of the city entered. (You will get to know about new APIs of Maps)
 
 - There are many other details which we receive from the API(humidity, pressure etc) that we do not display. See what other details we receive
 and try to display them as well.
@@ -403,7 +408,7 @@ and try to display them as well.
 
 2. [Project](https://weather2.gautamjajoo.repl.co/) with some icons based on the weather type of the place. 
 
-Last but not the least, be as creative and dynamic as possible. This is only the start and I am sure after this workshop you will create
+Last but not the least, be as creative and dynamic as possible. This is only a headstart and I am sure after this workshop you will create
 some amazing projects.
 
 ![yayy](https://cloud-m158dsxpf.vercel.app/0yay.gif)
