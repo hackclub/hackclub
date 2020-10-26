@@ -73,12 +73,12 @@ header = {'X-Finnhub-Token':'[TOKEN]'}
 ```
 How does this code work?  
 
-The line creates a Python dictionary with an attribute `'X-Finnhub-Token'` and a value of your token. This dictionary is saved as a variable, and later, we'll pass the variable into the request. When the server sees that your request has a token, it *authenticates* you, or lets you use the API.
+The line creates a Python [dictionary](https://www.tutorialspoint.com/python/python_dictionary.htm) with an attribute `'X-Finnhub-Token'` and a value of your token. This dictionary is saved as a variable, and later, we'll pass the variable into the request. When the server sees that your request has a token, it *authenticates* you, or lets you use the API.
 
 
 ## Making our First Request
 
-So let's see if it works. Try running this code.
+So let's see if it works. Try running this code by pressing the green "Run" button at the top of the window.
 ```python
 header = {'X-Finnhub-Token':'[TOKEN]'}
 r = requests.get(f'https://finnhub.io/api/v1/quote?symbol=AAPL', headers = header)
@@ -252,3 +252,4 @@ Here are some things to read to learn more about what we did here:
 * https://docs.python.org/3/library/json.html
 * https://www.howtogeek.com/343877/what-is-an-api/
 * https://realpython.com/python-f-strings/#option-2-strformat
+* https://www.tutorialspoint.com/python/python_dictionary.htm
