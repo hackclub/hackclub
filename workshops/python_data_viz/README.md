@@ -349,6 +349,7 @@ plt.show()
 ---
 
 **Look up how to import [Google Trends](https://trends.google.com/trends/?geo=US) into your graph!**
+
 Demo Code: 
 ```python 
 import pandas as pd
