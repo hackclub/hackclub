@@ -82,6 +82,8 @@ import matplotlib.pyplot as plt
 ```
 The code is above imports Pandas and Matplotlib into this project so we can have access to certain variables and methods available in these libraries!
 
+Under those two lines, add:
+
 ```python
 x=[x*2 for x in range (100)]
 y=[y*2 for y in range (100)]
@@ -89,7 +91,9 @@ y=[y*2 for y in range (100)]
 plt.plot(x,y)
 
 ```
-This code segment will create the ranges on our x and y axis and `plt.plot` will plot the points we want! In this example there are no specific points being plot though, we are just making a basic linear function. 
+This code segment will create the ranges on our x and y axis and `plt.plot` will plot the points we want! In this example there are no specific points being plot though, we are just making a basic linear function.
+
+Finally, add:
 
 ```python
 #showing graph
