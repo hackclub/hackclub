@@ -48,7 +48,7 @@ Delete all the lines which are already added in the files. Let's start by adding
 
 Here `!DOCTYPE` is used as an "information" to the browser about what document type to expect.
 
-Now we would link the`JS` file to our `HTML` file. Also, we would be using `moment.js`, a Javascript library for managing dates and time.
+Now we will link the`JS` file to our `HTML` file. Also, we would be using `moment.js`, a Javascript library for managing dates and time.
 
 To link the CSS file we add
 
@@ -73,30 +73,27 @@ Add
 under the `head` tag.
 
 Since we have linked all our files with the `HTML` file now we can start making a card on which we would display the content.
-I feel cards are a very aesthetic form to display our content. Also, there is a lot of scope of making the cards look better and
-more catchy.
 
-P.S: For more information about cards, refer to `Bootstrap`, an open source `CSS` framework. 
-[Bootstrap Card](https://getbootstrap.com/docs/4.0/components/card/)
+P.S: For more information about cards, refer to [`Bootstrap`](https://getbootstrap.com/docs/4.0/components/card/), an open source `CSS` framework.
 
 Inside our `<body>` we will add `<div>` with class as `container` which makes our main card and for the content inside we can add another
 `<div>` with class as `content`.
 
-Then add a heading using the `h1` tag giving the title to the project.
+Then add a heading using `<h1>` giving the title to the project.
 
 To input the city from the user we use the `input` tag and declare it with class as `input` and `id` as `input`. 
 
 Mainly `class` is used for passing information in `CSS` and `id` is used for `JS`. 
-Also, add a `placeholder` which is a text behind the input label that describes the expected value of the input.
+
+Also, add a `placeholder` which guides the user about the expected value of the input.
 
 ```html
 <input id="input" class="input" placeholder="Enter the City Name">
 ```
 
-Make sure you close the `div` of `content` because now we have taken the city name from the user and our only task is to display the weather 
-details.
+As the user has already input the city name therefore the `<div>` of `content` should be closed here.
 
-Lastly, we have to add `div` with class as `main-weather` to display the weather details.
+Lastly, we will add `div` with class as `main-weather` to display the weather details.
 
 We will be using `<p>` for every detail we display. Hence we declare the weather details with the following ids
 
@@ -108,9 +105,42 @@ We will be using `<p>` for every detail we display. Hence we declare the weather
 <p id="weather-type">Sunny </p>
 ```
 
-Our `HTML` code is done and now we can move to the `CSS` part. At the end, the `HTML` code will look like:
+Our `HTML` code is done and now we can move to the `CSS` part. At the end, the `HTML` code will look like this:
 
-![html code](https://cloud-ad455y4xg.vercel.app/0screenshot_from_2020-10-09_19-36-08.png)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+	<title>Weather</title>	
+</head>
+
+<body>
+	<div class="container">
+ 		<div class="content">
+    		
+    		<h1>WEATHER APP</h1>
+        	<input id="input" class="input" placeholder="Enter the City Name">
+    	</div>
+
+    <div class="main-weather">
+    		<img id="image">
+        <p id="date">Date </p>
+            <p id="city">City </p>
+            <p class="temp" id="temp">Temp </p>
+            <p id="min-max">Min and Max Temp </p>
+            <p id="weather-type">Sunny </p>
+
+	</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
+```
 
 ## 4. Improving the design of skeleton using CSS
 
@@ -129,7 +159,7 @@ body {
 }
 ```
 
-All our body part is done, now we can start making the Card.
+Now we will start making the Card.
 
 ```css
 .container {
@@ -200,15 +230,15 @@ API stands for Application Programming Interface. An API is a messenger that del
 
 Developers use APIs to make their jobs more efficient by reusing code and only changing the part that is relevant to the process they want to improve.
 
-For this project, we would be using a weather API which is given by [OpenWeather](https://openweathermap.org/api). 
+For this project, we will be using a weather API which is given by [OpenWeather](https://openweathermap.org/api). 
 
 To start with, you will have to create an account on OpenWeather to generate an API key for yourself.
 
 ![login](https://cloud-dk4z6apbz.vercel.app/0login.gif)
 
-After you have registered head over to the [API](https://openweathermap.org/api) section. 
+After you have registered, head over to the [API](https://openweathermap.org/api) section. 
 
-We would be using the `Current Weather Data` API. Subscribe to the API and after that, you will receive the key in your [profile](https://home.openweathermap.org/api_keys).
+We will be using the `Current Weather Data` API. Subscribe to the API and after that, you will receive the key in your [profile](https://home.openweathermap.org/api_keys).
 
 ![api_key](https://cloud-1uiy34o6d.vercel.app/0api_key.gif)
 
@@ -217,7 +247,7 @@ After setting up the key we will now read the docs to get to know in which forma
 ![api_docs](https://cloud-2r7ixfrb6.vercel.app/0api.gif)
 
 
-The format of the key looks something like this:
+The format of the API looks something like this:
 ```
 API.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 ```
@@ -229,7 +259,7 @@ At the start, we define a constant named as `api` which contains our Baseurl and
 
 ```js
 const api = {
-    key: "bbeac64cfcccb55a846070e17439f18f", 
+    key: "**************************************", 
     base: "https://api.openweathermap.org/data/2.5/weather?", 
 }
 ```
@@ -244,7 +274,7 @@ The format of date and time is:
 Mo MMM YYYY dddd, h:mm:ss
 
 ```
-Many more formats and information is mentioned in the [Moment.js Docs](https://momentjs.com/docs/).
+Many more formats and information are mentioned in the [Moment.js Docs](https://momentjs.com/docs/).
 
 ```js
     const Input = document.getElementById('input');
@@ -264,7 +294,7 @@ Many more formats and information is mentioned in the [Moment.js Docs](https://m
 });
 ```
 
-In the above function, the input of the user is stored in the `const Input`. After the user presses enter(whose keycode is `13`) we would send the value
+In the above function, the input of the user is stored in the `const Input`. After the user presses enter(whose keycode is `13`) we will send the value
 to the new function `getWeather` which we will create to get the weather details from the API. 
 
 Also, we store the date in a `const date` using the `moment.js` format mentioned in the docs.
@@ -373,8 +403,8 @@ and try to display them as well.
 
 2. [Project](https://weather2.gautamjajoo.repl.co/) with some icons based on the weather type of the place. 
 
-Last but not the least, be as creative and dynamic as possible. This is only the start and I am sure after this workshop you would create
-some big and cool projects.
+Last but not the least, be as creative and dynamic as possible. This is only the start and I am sure after this workshop you will create
+some amazing projects.
 
 ![yayy](https://cloud-m158dsxpf.vercel.app/0yay.gif)
 
