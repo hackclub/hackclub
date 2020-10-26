@@ -96,7 +96,7 @@ Para que el cubo no sea tan aburrido, rotaremos el cubo y lo moveremos un poco h
 ```html
 <a-box color="#FF5733" position="0 2 -5" rotation="15 35 2"></a-box>
 ```
-Use the right handed system to rotate the object, the direction in which your fingers curl is the positive direction of rotation. The other way is the negative direction of rotation.
+Use the right handed system to rotate the object, the direction in which your fingers curl is the positive direction of rotation. The other way is the negative direction of rotation.\
 ![Right handed system for Rotation](https://cloud-p06rsrrdj.vercel.app/0image.png)
 
 Ahora, si queremos escalar un objeto debemos usar el atributo **scale**, este tambien tiene una syntax similar a la de los anteriores, 
@@ -176,7 +176,7 @@ Reemplaza el atributo **color** por **src** y coloca la id de la textura que sub
 ```html
 <a-box src="#tiger" position="0 2 -5" rotation="15 35 2" scale="0.3 1 2"></a-box>
 ```
-Ahora presiona Run y mira que pasa! 
+Ahora presiona Run y mira que pasa!\
 ![Tiger texture rendered](https://cloud-hipca4cbn.vercel.app/0screen_recording_2020-10-10_at_3.23.45_pm.gif)
 
 ### Environment
