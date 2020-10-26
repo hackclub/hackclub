@@ -10,26 +10,26 @@ You after you make your first data visualization^
 
 *In this workshop you will use python to create basic graphs and visualizations with real data.  First we start off with simpler graph visualizations, and learn how to make them more personalized and complicated! You can hand draw a graph anytime you want, but why not learn how to code one! You will learn and use matplotlib, pandas, and numpy, so you can create any graph or visualization you dream of!*
 
-Here is an example of what a end product you will have coded after the workshop...
+Here is an example of something you will have coded after the workshop:
 
 **![Example of Workshop Product](https://cloud-4bemu7q0x.vercel.app/0image_from_ios.jpg)**
 
 ## Source Code of Example: 
 ``` python
-  import pandas as pd
-   import matplotlib.pyplot as plt
-   import numpy as np
-   
-   x=np.linspace(0,2,100)
-   fig,ax= plt.subplots()
-   ax.plot(x,x,label='Sleep')
-   ax.plot(x,x**2,label='Worry if sky is falling...')
-   ax.plot(x,x**3,label='Be a icon')
-   ax.set_xlabel('Time') #adds X axis label
-   ax.set_ylabel('Years')#add Y axis lable
-   ax.set_title("Chicken Little's Plot") #adds a title
-   ax.legend() #adds a key of the graph
-   ```
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.linspace(0,2,100)
+fig,ax= plt.subplots()
+ax.plot(x,x,label='Sleep')
+ax.plot(x,x**2,label='Worry if sky is falling...')
+ax.plot(x,x**3,label='Be a icon')
+ax.set_xlabel('Time') #adds X axis label
+ax.set_ylabel('Years')#add Y axis lable
+ax.set_title("Chicken Little's Plot") #adds a title
+ax.legend() #adds a key of the graph
+```
    
 # Getting started!
 
@@ -37,7 +37,19 @@ Get started by going to [Jupyter](https://jupyter.org/try). When you get to the 
 
 **![Showing Homepage of Jupyter](https://cloud-55ad5w43q.vercel.app/0image_from_ios.jpg)**
 
-Click the middle one (Try JupyterLab)! 
+Click the middle one (Try JupyterLab)!
+
+Jupyter will spin up a coding environment right in your browser! After a few seconds, you should see this:
+
+![A Jupyter notebook](https://cloud-4jz1jljdx.vercel.app/0image_from_ios.jpg)
+
+Click the `+` button at the top left, then select `Python 3`.
+
+![An untitled Juypter notebook](https://cloud-gxd1qmxly.vercel.app/0image_from_ios.jpg)
+
+You should see a new untitled Juypter notebook.
+
+![Screenshot of a Jupyter notebook showing what steps to take](https://cloud-hywsca56c.vercel.app/0image_from_ios.jpg)
 
 **Never used Jupyter? [Here's a quick introduction/tutorial to Jupyter](https://www.wevideo.com/view/1849208046)!** 
 
@@ -49,9 +61,7 @@ First, we need to upload the [libraries](https://docs.python.org/3/library/) we 
 
 ![Princess Belle in her wonderful library](https://cloud-pawks5rnb.vercel.app/0file_from_ios.gif)
 
-*Libraries Upload Continued...*
-
-In this workshop we will be using: [pandas](https://pandas.pydata.org/) , [numpy](https://numpy.org/), and [matplotlib](https://matplotlib.org/).
+In this workshop we will be using [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/), and [matplotlib](https://matplotlib.org/).
 
 **Pandas**: This is not the furry animal you are thinking of, pandas is a efficient and easy way to use open source data analysis.
 ![gif of cute pandas](https://cloud-o3apzt5vk.vercel.app/0file_from_ios.gif)
@@ -63,6 +73,8 @@ In this workshop we will be using: [pandas](https://pandas.pydata.org/) , [numpy
 # Step Two: Let's Make A Simple Line Plot!
 
 **Note: Customize your plots and graphs! (Labels, Values, etc.)**
+
+On the first line of your new untitled Jupyter notebook, add the following code:
 
 ```python
 import pandas as pd 
@@ -88,8 +100,13 @@ This line will show the graph and points we plotted, basically giving the user a
 *`plt.show()` --> shows the graph output.*
 *`plt.plot(x,y)` --> plots your points.*
 
+Click the play button near the top of your window.
+
 **You should get something that looks like this...**
+
 **![basic linear graph trending upwards](https://cloud-49wgws6lb.vercel.app/0image_from_ios.jpg)**
+
+![Jupyter notebook with code and example](https://cloud-pm56h5avl.vercel.app/0image_from_ios.jpg)
 
 
 # Now Let's Create A Simple Bar Graph!
@@ -109,17 +126,19 @@ plt.show()
 
 The code above names each of the bars (defines x and y lines), creates random values of Y using ```random.randint()```, plots our points, and shows the graph!
 
-Example: 
+When you click the play button again, you should see this:
 
-**![](https://cloud-3r2clygpe.vercel.app/0image_from_ios.jpg)**
+**![bar graph](https://cloud-3r2clygpe.vercel.app/0image_from_ios.jpg)**
+
+![jupyter notebook with code and bar graph](https://cloud-qyo2g39vl.vercel.app/0image_from_ios.jpg)
 
 # Let's Make It A Little More Complicated!
 
-We are going to make a more personalized graph using three different functions
+We are going to make a more personalized graph using three different functions.
 
 ## Step One! 
 
-I am sure you all have already guessed it hehe, Import your libraries!!!!!!!!!!
+I am sure you all have already guessed it hehe, import your libraries!!!!!!!!!!
 
 ![Kermit the Frog Dancing!](https://cloud-n5xpv2pg5.vercel.app/0file_from_ios.gif)
 
@@ -137,7 +156,7 @@ To create the graph we want to make we will be using the matplotlib library! It 
 
 -   Create an outline
 
--   Create an axes
+-   Create axes
 
 -   Create axes ranges
 
@@ -202,6 +221,7 @@ Here's a hint:
 *Still stuck? Where the underscores are, replace with `fig,ax= plt.subplots()`.*
 
 Your graph should look something like this...
+
 **![After Step Two Example ](https://cloud-7yu234iqo.vercel.app/0image_from_ios.jpg)**
 
 ## Step Five!
@@ -221,7 +241,9 @@ ax.plot(x,x**3,label='Be a icon')
 *`ax.plot` will plot your points/lines*
 
 Your graph should look something like this...
+
 **![After Step 5 Example](https://cloud-jdfg40s6g.vercel.app/0image_from_ios.jpg)**
+
 ## Step Six!
 
 Finishing touches!
@@ -271,10 +293,9 @@ How can I save my project with Jupyter?
 1) Press File in the upper right hand corner 
 2) Press "Save Notebook As"
 3) Save the Notebook as a .ipynb file
-4) Than if you ever wanted to come back to this code you can upload the .ipynb file back into Jupyter and edit it! 
+4) Then if you ever wanted to come back to this code you can upload the .ipynb file back into Jupyter and edit it! 
 
-
-# Add On!
+# Hacking!
 
 [Add raw data from the web into your graphs](https://youtu.be/Ercd-Ip5PfQ).
 
@@ -318,6 +339,7 @@ plt.show()
 #Source: https://matplotlib.org/gallery/shapes_and_collections/ellipse_demo.html
 ```
 **![](https://cloud-pw25qj0bn.vercel.app/0image_from_ios.jpg)**
+
 **Look up how to import [Google Trends](https://trends.google.com/trends/?geo=US) into your graph!**
 Demo Code: 
 ```python 
