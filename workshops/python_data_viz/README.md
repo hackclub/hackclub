@@ -14,7 +14,7 @@ Here is an example of something you will have coded after the workshop:
 
 **![Example of Workshop Product](https://cloud-4bemu7q0x.vercel.app/0image_from_ios.jpg)**
 
-## Source Code of Example: 
+Source Code of Example: 
 ``` python
 import pandas as pd
 import matplotlib.pyplot as plt
