@@ -22,8 +22,10 @@ To break it down a bit more, we have made the leaves and stem out of multiple bo
 ![alt tree_without_color_filled](https://cloud-4ipo9natc.vercel.app/1image2.png)
 # Shall we start coding ? 
 
-Create a new [repl.it](https://repl.it) project and select **Python** as the language from the drop-down menu on the right.
-We are gonna make 2 python files. (Writing on a single page may make it a bit too complicated for a beginner)
+Create a new Python project on repl.it by visiting [this link](https://repl.it/languages/python3).
+![alt Creating python repl](https://cloud-o0kfkx5c1.vercel.app/1creatingpyfile.gif)
+
+We are gonna make 2 python files.
 1.  ******Figures.py****** - A python file in which we code the functions that we will use to create the boxes/rectangles, the tiny circles, and the star.
 2.  ******main.py****** - A python file in which we call the functions of boxes, circles and star to make a Christmas tree. And finally, we will add a greeting on the bottom of the screen as you saw above
 
@@ -31,9 +33,11 @@ We are gonna make 2 python files. (Writing on a single page may make it a bit to
 # Let's code Figures.py first.
 
 Using the coding space on the left create a file and name it 'Figures.py' (most probably a main.py file will already be created, don't use that).
-Now in the coding window :
+![alt Creating file](https://cloud-o0kfkx5c1.vercel.app/0creatingfile.gif)
 
-First, let's import the turtle library :
+Now in the coding window:
+
+First, let's import the turtle library:
 ```python
 import turtle
 ```
@@ -193,7 +197,7 @@ from random import randint
 
 ```
 Here, we import all fuctions from 'turtle' library, all functions from 'Figures' file (which we just created) and finally 'randint' function from 'random' library so that we can use it to generate a random integer.
-Why do we need a random integer? We'll see .
+Why do we need a random integer? We'll see.
 
 
 ```python
@@ -206,7 +210,9 @@ y = -100
 width = 240
 
 ```
+
 `speed()` function determines the speed of the turtle, ie, the speed in which the figures get drawn on the screen. When we set that to zero it moves as fast as it can. 
+
 Next, we set the background color to maroon using hexcode (#99004D).
 Find the right value for ******y******, through trial and error. Set some random value first and then, iterate to find the right value which brings your turtle to the center.
 For ******width******, provide any value you desire. 
@@ -233,7 +239,7 @@ while width > 20 :
     y = y + height
 
 ```
-Not too difficult, is it? Let's break this down.
+Let's break this down.
 
 ```python
 width = width - 20
@@ -256,7 +262,9 @@ Now we draw one complete green color filled box for first layer of leaves.
 balls(turtle, "#fc045b", x, y, 5) # Decorative balls
 ```
 This statement draws a small ball of radius 5 with a shade of red (#fc045b) filled in it. 
+
 ![alt one_ball_completed](https://cloud-4ipo9natc.vercel.app/6image5.png) 
+
 Now we need one more tiny ball on the right end of the christmas tree, right ? 
 
 ```python
@@ -280,7 +288,7 @@ star(turtle, "#e5f614", 0.4, y, 20)
 The above code will draw a yellow star on top of the tree. You can tweak the parameters to see how the positioning and size varies. 
 ![alt star_completed](https://cloud-4ipo9natc.vercel.app/9image8.png) 
 
-Wow ! The tree is done. Now for the final touch, the greetings. 
+Wow! The tree is done. Now for the final touch, the greetings. 
 
 ```python
 #Christmas wishes
