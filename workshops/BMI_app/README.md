@@ -330,11 +330,11 @@ Well done, you just made your own BMI App.Congrats!!!
 
 # Challenge 
 
--TRY to add another text box/input and a label that the user can input their name then next two their BMI value and the label; the name should be added on the label not just display it as different people can place their name. 
+- TRY to add another text box/input and a label that the user can input their name then next two their BMI value and the label; the name should be added on the label not just display it as different people can place their name. 
 
--See if you can display different Background color base on the output, example if the person is Underweight make the background to orange....etc
+- See if you can display different Background color base on the output, example if the person is Underweight make the background to orange....etc
 
 
--
+- 
 
 
