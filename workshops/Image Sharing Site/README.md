@@ -84,39 +84,39 @@ Now you need to paste the above code into the body tag.
 
 ```html
 <body>
- <script>
- var firebaseConfig = {
- apiKey: "AIzaSyCegpMyyDrPgTHENIvOMbexUe9z1s7ydTE",
- authDomain: "simplesocialmedia-f46f6.firebaseapp.com",
- databaseURL: "https://simplesocialmedia-f46f6.firebaseio.com",
- projectId: "simplesocialmedia-f46f6",
- storageBucket: "simplesocialmedia-f46f6.appspot.com",
- messagingSenderId: "593816135912",
- appId: "1:593816135912:web:aa22cf3d2318613718015d",
- measurementId: "G-T3VD77TCVW"
- };
- firebase.initializeApp(firebaseConfig);
- firebase.analytics();
- </script>
- <div class="uploaddiv">
- <h1>Simple social media</h1>
- <input onchange="fileinput()" type="file" id="photo" />
- <br />
- <input class="nameinput" placeholder="Your name" type="text" id="name" />
- <h1 class="status" id="status"></h1>
- <button onclick="upload()" class="imageupldbtn">Upload image</button>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyCegpMyyDrPgTHENIvOMbexUe9z1s7ydTE",
+      authDomain: "simplesocialmedia-f46f6.firebaseapp.com",
+      databaseURL: "https://simplesocialmedia-f46f6.firebaseio.com",
+      projectId: "simplesocialmedia-f46f6",
+      storageBucket: "simplesocialmedia-f46f6.appspot.com",
+      messagingSenderId: "593816135912",
+      appId: "1:593816135912:web:aa22cf3d2318613718015d",
+      measurementId: "G-T3VD77TCVW"
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <div class="uploaddiv">
+  <h1>Simple social media</h1>
+  <input onchange="fileinput()" type="file" id="photo" />
+  <br />
+  <input class="nameinput" placeholder="Your name" type="text" id="name" />
+  <h1 class="status" id="status"></h1>
+  <button onclick="upload()" class="imageupldbtn">Upload image</button>
 </body>
 ```
 
 Now we need to import firebase, firebase-firestore, firebase-storage. let's import it.
 
-```js
+```html
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
- <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
- <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
- <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
 </head>
 ```
 
@@ -207,7 +207,7 @@ function upload() {
 }
 ```
 
-We get the name the user gives in the input tag earlier and check if the URL of the image is null(meaning image not selected). Then we check whether the name is 3 characters long. After all this, we will display the message 'uploading...' and send our URL + name to our firestore. Now we need to display it right? Let's write the code for that.
+We need to upload the name of the image which user has inputed. If the URL of the image is null(meaning image not selected). Then we will check whether the name is 3 characters long. After all this, we will display the message 'uploading...' and send our URL + name to our firestore. Now we need to display it right? Let's write the code for that.
 
 ```js
 db.collection("pictures") //fetching urls from the firestore
@@ -225,7 +225,7 @@ db.collection("pictures") //fetching urls from the firestore
       h.style.color = "deeppink";
       document.getElementById("container").appendChild(h);
       document.getElementById("container").appendChild(img);
-      a = a + 1;
+      a = a++;
     }
   });
 ```
@@ -236,7 +236,9 @@ In these lines of code, we are fetching all URLs of our images from our firestor
 <div class="seconddiv" id="container"></div>
 ```
 
-### Finally we need to add CSS to make it look better.
+### Adding CSS.
+
+Finally we need to add CSS to make it look better.
 
 ```html
 <style>
@@ -303,134 +305,134 @@ In these lines of code, we are fetching all URLs of our images from our firestor
 <!doctype html>
 
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
- <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
- <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
- <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
 
 </head>
 
 <body>
- <style>
- body {
- text-align: center;
- font-family: helvetica;
- background-color: black;
- }
+  <style>
+    body {
+    text-align: center;
+    font-family: helvetica;
+    background-color: black;
+    }
 
- .imageupldbtn {
- width: 200px;
- height: 40px;
- border-radius: 50px;
- border-width: 0px;
- background-color: black;
- color: deeppink;
- font-size: 18px;
- }
+    .imageupldbtn {
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    border-width: 0px;
+    background-color: black;
+    color: deeppink;
+    font-size: 18px;
+    }
 
- .imageupldbtn:hover {
- background-color: deeppink;
- color: black;
- }
+    .imageupldbtn:hover {
+    background-color: deeppink;
+    color: black;
+    }
 
- .status {
- font-size: 18px;
- color: red;
- }
+    .status {
+    font-size: 18px;
+    color: red;
+    }
 
- .uploaddiv {
- background-color: #fff;
- padding: 10px;
- width: 100%;
- position: fixed;
- }
+    .uploaddiv {
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    }
 
- .seconddiv {
- position: absolute;
- top: 250px;
- left: 50%;
- transform: translate(-50%);
- }
+    .seconddiv {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%);
+    }
 
- .nameinput {
- width: 200px;
- font-size: 20px;
- color: deeppink;
- border-width: 2px;
- border-color: black;
- text-align: center;
- }
- </style>
+    .nameinput {
+    width: 200px;
+    font-size: 20px;
+    color: deeppink;
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+    }
+  </style>
  <div class="uploaddiv">
  <h1>Simple social media</h1>
  <input onchange="fileinput()" type="file" id="photo" />
  <br />
  <script>
- var firebaseConfig = {
- apiKey: "AIzaSyCegpMyyDrPgTHENIvOMbexUe9z1s7ydTE",
- authDomain: "simplesocialmedia-f46f6.firebaseapp.com",
- databaseURL: "https://simplesocialmedia-f46f6.firebaseio.com",
- projectId: "simplesocialmedia-f46f6",
- storageBucket: "simplesocialmedia-f46f6.appspot.com",
- messagingSenderId: "593816135912",
- appId: "1:593816135912:web:aa22cf3d2318613718015d",
- measurementId: "G-T3VD77TCVW"
- };
- firebase.initializeApp(firebaseConfig);
- firebase.analytics();
- const db = firebase.firestore();
- var link = null
- function fileinput(e) {
- document.getElementById("status").innerHTML = "Setting up...";
- const ref = firebase.storage().ref();
- const file = document.querySelector('#photo').files[0]
- const task = ref.child(file.name).put(file);
- task
- .then(snapshot => snapshot.ref.getDownloadURL())
- .then((url) => {
- link = url
- document.getElementById("status").innerHTML = "Now you can upload it.";
- })
- }
- function upload() {
- const name = document.getElementById("name").value;
- if (link === null) {
- document.getElementById("status").innerHTML = "Select an image.";
- } else if (name.length <= 2) {
- document.getElementById("status").innerHTML = "Name should be atleast 3 charector long.";
- } else {
- document.getElementById("status").innerHTML = "Uploading...";
- const url = {
- url: link,
- name: name,
- }
- db.collection("pictures")
- .doc()
- .set(url)
- .then(() => {
- location.reload()
- });
- }
- }
- db.collection("pictures")
- .get()
- .then((querySnapshot) => {
- const data = querySnapshot.docs.map((doc) => doc.data());
- var a = 0
- for (var i in data) {
- var img = document.createElement('img');
- img.src = data[a].url;
- img.setAttribute('width', '600');
- var h = document.createElement("H1");
- var t = document.createTextNode(data[a].name);
- h.appendChild(t);
- h.style.color = "deeppink";
- document.getElementById('container').appendChild(h);
- document.getElementById('container').appendChild(img);
- a = a + 1
- }
- });
+  var firebaseConfig = {
+    apiKey: "AIzaSyCegpMyyDrPgTHENIvOMbexUe9z1s7ydTE",
+    authDomain: "simplesocialmedia-f46f6.firebaseapp.com",
+    databaseURL: "https://simplesocialmedia-f46f6.firebaseio.com",
+    projectId: "simplesocialmedia-f46f6",
+    storageBucket: "simplesocialmedia-f46f6.appspot.com",
+    messagingSenderId: "593816135912",
+    appId: "1:593816135912:web:aa22cf3d2318613718015d",
+    measurementId: "G-T3VD77TCVW"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+  var link = null
+  function fileinput(e) {
+    document.getElementById("status").innerHTML = "Setting up...";
+    const ref = firebase.storage().ref();
+    const file = document.querySelector('#photo').files[0]
+    const task = ref.child(file.name).put(file);
+    task
+    .then(snapshot => snapshot.ref.getDownloadURL())
+    .then((url) => {
+      link = url
+      document.getElementById("status").innerHTML = "Now you can upload it.";
+    })
+  }
+  function upload() {
+    const name = document.getElementById("name").value;
+    if (link === null) {
+      document.getElementById("status").innerHTML = "Select an image.";
+    } else if (name.length <= 2) {
+      document.getElementById("status").innerHTML = "Name should be atleast 3 charector long.";
+    } else {
+      document.getElementById("status").innerHTML = "Uploading...";
+      const url = {
+        url: link,
+        name: name,
+      }
+      db.collection("pictures")
+      .doc()
+      .set(url)
+      .then(() => {
+        location.reload()
+      });
+    }
+    }
+    db.collection("pictures")
+    .get()
+    .then((querySnapshot) => {
+      const data = querySnapshot.docs.map((doc) => doc.data());
+      var a = 0
+      for (var i in data) {
+        var img = document.createElement('img');
+        img.src = data[a].url;
+        img.setAttribute('width', '600');
+        var h = document.createElement("H1");
+        var t = document.createTextNode(data[a].name);
+        h.appendChild(t);
+        h.style.color = "deeppink";
+        document.getElementById('container').appendChild(h);
+        document.getElementById('container').appendChild(img);
+        a = a + 1
+      }
+  });
  </script>
  <input class="nameinput" placeholder="Your name" type="text" id="name" />
  <h1 class="status" id="status"></h1>
