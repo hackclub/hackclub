@@ -104,4 +104,179 @@ export default function App() {
 
 Explanation: We create a `url` variable using `const` so its value never changes again and assign it to the API URL. Then we'll import `useState` from `react` and using the basic boilerplate code, we create a `quotes` state. It is currently assigned to an empty object, but will be replaced soon!
 
-Now let's write a function which will make the API request and fetch the data from that URL.
+Now let's write a function which will make the API request and fetch the data from that URL. We'll use `async functions` for that because it will return us a promise. We'll also use `await` inside the `async function`.
+
+The `await` operator is used to wait for a `Promise` to either resolve or reject. It can only be used inside an `async function`.
+
+`Async functions` can contain zero or more `await` expressions. `Await` expressions suspend progress through an `async function`, yielding control and subsequently resuming progress only when an awaited promise-based asynchronous operation is either fulfilled or rejected. The resolved value of the promise is treated as the return value of the await expression. Use of `async` / `await` enables the use of ordinary `try` / `catch` blocks around asynchronous code.
+
+Learn more about [`Async await`](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await).
+
+Inside our `App` component, we'll create an `async` function `getQuotes()` and now let's start fetching the data.
+
+```jsx
+async function getQuotes() {
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    setQuotes(data);
+  } catch (err) {
+    console.log(err);
+  }
+}
+```
+
+Explanation: Inside our async function, we add a `try` / `catch` block, which will help us to get the data or throw errors if not successful. We create a variable called `res` (shortform for `response`) which will store the response we get after we fetch the data from the API URL. Now this response is not yet ready to use and we need to convert it to `json()` format before using it. So we store that json formatted data in the `data` variable. And lastly, we store all the data inside our `quotes` state.
+
+The `catch` block will simply catch an error (if any) and then log it to the console.
+
+Our `async` function is ready and we can now use the data we got from the API request.
+
+Now if we take a look at the value stored inside our state, we'll notice that it is a whole big array consisting of 100s of objects containing quotes! We only need to display 1 random quote at a time. So, for this, we only need to store a single random object from that array inside our state.
+
+Using the formula for getting a random number, let's create a function outside our component which will return us a random number.
+
+```jsx
+const randomNo = () => Math.floor(Math.random() * data.length) + 1;
+```
+
+Now this function will always return a random number between 1 and `data.length` (the length of the `data` array).
+
+The browser must be yelling at you that `data` is undefined. Its coz we have defined it later inside our component. So, a quick fix for this will be to create a `data` variable using `let` above our `randomNo` and remove the `const` keyword from the `data` inside the async function.
+
+What we basically did is that we already defined `data` but we'll pass the value to it later inside the `async function`.
+
+Now we have a random number generated everytime the `randomNo` function is called. And if we pass it to an array, it will return us the value on that index. So, inside the async function, when we set the state, we'll add square brackets to `data` and call `randomNo()` in it.
+
+```jsx
+setQuotes(data[randomNo()]);
+```
+
+This will return us the object which is on the index of the `randomNo`.
+
+Now only 1 object containing the quote and the author will be stored inside the `quotes` state.
+
+<details><summary>Your code so far:</summary>
+
+```jsx
+import React, { useState } from "react";
+import "./styles.css";
+
+const url = "https://type.fit/api/quotes";
+let data;
+const randomNo = () => Math.floor(Math.random() * data.length) + 1;
+
+export default function App() {
+  const [quotes, setQuotes] = useState({});
+
+  async function getQuotes() {
+    try {
+      const res = await fetch(url);
+      data = await res.json();
+      setQuotes(data[randomNo()]);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  return (
+    <div className="App">
+      <h1 className="title">Quotes Generator</h1>
+      <p className="quotes">This is a quote</p>
+      <p className="author">- author name</p>
+      <button className="button">New Quote</button>
+    </div>
+  );
+}
+```
+
+</details>
+
+The next thing we want to implement is that we want to get a random quote everytime our website is loaded. This can easily be done by creating a  `useEffect` hook inside our component, calling our `getQuotes()` function in it and passing an empty dependency array to it.
+
+**Note:** Make sure you import `useEffect` from `react`.
+
+```jsx
+import React, { useState, useEffect } from "react";
+```
+
+```jsx
+useEffect(() => {
+  getQuotes();
+}, []);
+```
+
+Learn more about the [`useEffect`](https://medium.com/javascript-in-plain-english/react-hooks-how-to-use-useeffect-ecea3e90d84f) hook.
+
+
+We can now edit our jsx code to display the quote and the author name.
+
+```jsx
+return (
+  <div className="App">
+    <h1 className="title">Quotes Generator</h1>
+    <p className="quotes">{quotes.text}</p>
+    <p className="author">- {quotes.author ? quotes.author : "Anonymous"}</p>
+    <button className="button">New Quote</button>
+  </div>
+);
+```
+
+Explanation: The quote (which is in the object as `text`) is now rendered on the page. Notice how I used a [`ternary operator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) to render the author name. It is because, there are some quotes which don't have an author, so we check if there's an author inside our object. If its there, we render the name of the author. If its not there, we render `Anonymous` on the browser screen.
+
+Now if you look at the preview window, you'll see that we are pretty much done! The last thing remaining is to add an `onClick` to our button.
+
+```jsx
+<button className="button" onClick={getQuotes}>New Quote</button>
+```
+
+Whenever the button will be clicked, the `getQuotes()` function will be called which will return a new random quote, resulting into a state change which will cause our component to re-render!
+
+<details><summary>The Final Code:</summary>
+
+```jsx
+import React, { useEffect, useState } from "react";
+import "./styles.css";
+
+const url = "https://type.fit/api/quotes";
+let data;
+const randomNo = () => Math.floor(Math.random() * data.length) + 1;
+
+export default function App() {
+  const [quotes, setQuotes] = useState({});
+
+  useEffect(() => {
+    getQuotes();
+  }, []);
+
+  async function getQuotes() {
+    try {
+      const res = await fetch(url);
+      data = await res.json();
+      setQuotes(data[randomNo()]);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  return (
+    <div className="App">
+      <h1 className="title">Quotes Generator</h1>
+      <p className="quotes">{quotes.text}</p>
+      <p className="author">- {quotes.author ? quotes.author : "Anonymous"}</p>
+      <button className="button" onClick={getQuotes}>
+        New Quote
+      </button>
+    </div>
+  );
+}
+```
+
+</details>
+
+This what our project looks like:
+![Final Preview](https://cloud-i1q4mn5yo.vercel.app/0final_preview.gif)
+
+Yay! We are done! We learnt how to handle APIs in React and we built a simple but sweet random quotes generator!!
+
+![Yaaaay](https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif)
