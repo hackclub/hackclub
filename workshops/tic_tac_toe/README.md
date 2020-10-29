@@ -1,7 +1,7 @@
 ---
 name: 'Tic Tac Toe'
 description: 'Make the Classic Tic Tac Toe Game in Python'
-author: '@Prithul0218',
+author: '@Prithul0218'
 img: 'https://cloud-48w32714h.vercel.app/0image.png'
 ---
 
