@@ -108,12 +108,11 @@ def star(turtle, color, x, y, size):
     turtle.end_fill()
     turtle.setheading(0)
 ```
-I guess you would've understood atleast 90% of the above code easily. A brief description is given below.
 The ******size****** parameter decides the length of the edges of the star.
 Here, we move the turtle forward by a distance same as that of the size mentioned. Now, we turn the turtle to right by 144 degrees and move it by the same distance. Repeat the above steps 5 times and you will have a star. Got it? 
 
 Last function in this file to make the tiny balls on either sides of the boxes (green part) of the Christmas tree.
-Go through the code. You will probably understand it pretty easily.
+Go through the code.
 ```python
 def balls(turtle, color, x, y, radius):
     turtle.penup()
@@ -181,11 +180,10 @@ def balls(turtle, color, x, y, radius):
     turtle.setheading(0)
 ``` 
 All good? 
+Now, lets move on to the next file.
 
-# Now, lets move on to the next file : main.py
-
-
-Now open the main.py file. 
+# The main.py file
+Now open the main.py file by clicking it on your sidebar. 
 
 In this page, we are going to make a brown rectangle which will serve as the tree stem. Then, we are going to make multiple green rectangles stacked above each other. If each rectangle is smaller than the one below it, the whole image will have a Christmas tree like appearance.
 Shall we begin?
@@ -210,7 +208,6 @@ y = -100
 width = 240
 
 ```
-
 `speed()` function determines the speed of the turtle, ie, the speed in which the figures get drawn on the screen. When we set that to zero it moves as fast as it can. 
 
 Next, we set the background color to maroon using hexcode (#99004D).
@@ -297,7 +294,7 @@ color("#ff59ac")
 goto(-250, -250)
 write("Merry Christmas !!!", font=("Calibri", 50, "bold"))
 ```
-I believe the code above is pretty self explanatory. We used the `write()` method to have a text be written on the screen.
+Here, we used the `write()` method to have a text be written on the screen.
 Try changing the parameters of the `goto()` , `color()` and `write()` function to see the differences. 
 
 
