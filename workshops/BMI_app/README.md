@@ -6,7 +6,7 @@ author: "@Chrisrama"
 Here the [live demo](https://bmi-project.glitch.me) from glitch.com
 or on repl.it [here](https://repl.it/@chrisrama/BMI-Project)
 
-Hello THere, Today WE will be making Our project using repl.it, so go over your workspace, then start a new HTML, CSS, JS repl.it project If you would like to use another editor, like glitch you welcome to do so, as it works the same manner.
+Hello THere, Today WE will be making Our project using repl.it, so go over your workspace, then start a new HTML, CSS, JS repl.it projects If you would like to use another editor, like glitch you welcome to do so, as it works the same manner.
 Note: Body mass index (BMI) application is a calculator that measures the body's BMI value based on the height and weight of the person, it then gives feedback based on the calculation, how you are diagnosed. This app is a project not made not criticizes anyone, as we are all different and okay the way you are.
 
 # Creating our structure with Html
@@ -139,7 +139,7 @@ let change the text box or input box's sizes:
     
 ```
 Finally, let change the size of our button:
-```css
+CSS
 
    button {
   font-size: 20px;
@@ -335,6 +335,6 @@ Well done, you just made your own BMI App.Congrats!!!
 - See if you can display different Background color base on the output, example if the person is Underweight make the background to orange....etc
 
 
-- Create a function that determine if the person has no normal weight and would like to have it, that the function should find how much weight the person should lose or gain to have a normal weight base on the bmiValue. In short base on the person's height, try to determine 
+- Create a function that determines if the person has would like to have for example have a normal weight, the function should find how much weight the person should lose or gain to have a normal weight base on the bmiValue. In short base on the person's height, try to determine how much weight will the person needs to have/lose in other to have a BMI value between 18.5 and 23.9 which indicate that there has a normal weight.
 
 
