@@ -263,7 +263,7 @@ this how we will give an output using the ` If ` and ` else if ` statement under
   }
 ```
 Now before you copy the ode, let me explain what it does:
-- I the first If statement, We see if the bmiValue is smaller than 17, then if it is, we use Document.getElementById().innerHTML to display The bmiValue, in this case, we want to display it on the first label we left empty, remember we gave it an Id name "number", so inside the bracket we will call out the label using the Id name so we will get ```js Document.getElementById("number").innerHTML ```; now what we want to display if the bmiValue right, so we will assign it to display ```js bmiValue``` now we found a problem, if we just display this number, we will get a float number that goes like ten-digits, we then going to round it by to using the already built in object ```js .toFixed(2)``` that round the answer by 2 decimal place.
+- I the first If statement, We see if the bmiValue is smaller than 17, then if it is, we use Document.getElementById().innerHTML to display The bmiValue, in this case, we want to display it on the first label we left empty, remember we gave it an Id name "number", so inside the bracket we will call out the label using the Id name so we will get ```js Document.getElementById("number").innerHTML ```; now what we want to display if the bmiValue right, so we will assign it to display ```js bmiValue``` now we found a problem, if we just display this number, we will get a float number that goes like ten-digits, we then going to round it by to using the already built-in object ```js .toFixed(2)``` that round the answer by 2 decimal place.
 
 -then the second line display on the second empty Label with the id name "Diagnosis" how the person is Diagnosed, because we want to display text we let place our text under a double quotation mark in this case "You are very under Weight".
 
@@ -335,6 +335,6 @@ Well done, you just made your own BMI App.Congrats!!!
 - See if you can display different Background color base on the output, example if the person is Underweight make the background to orange....etc
 
 
-- 
+- Create a function that determine if the person has no normal weight and would like to have it, that the function should find how much weight the person should lose or gain to have a normal weight base on the bmiValue. In short base on the person's height, try to determine 
 
 
