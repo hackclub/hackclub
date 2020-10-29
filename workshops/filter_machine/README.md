@@ -8,7 +8,7 @@ author: "@Taiwrash"
 
 ![Sample Page](https://cloud-h80qkb2hi.vercel.app/0843a3cd2-5f25-46a9-819c-5dc577cab727)
 
-This is the [Live Demo](https://filter-machine.taiwrash.repl.co) of the app and [Full Code](https://repl.it/@Taiwrash/filter-machine).
+This is the [Live Demo](https://repl.it/@Taiwrash/filter-machine) of the app and [Full Code](https://filter-machine.taiwrash.repl.co).
 
 ## Prerequisites
 
