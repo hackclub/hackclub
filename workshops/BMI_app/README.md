@@ -139,7 +139,8 @@ let change the text box or input box's sizes:
     
 ```
 Finally, let change the size of our button:
-CSS
+
+```CSS
 
    button {
   font-size: 20px;
@@ -149,6 +150,7 @@ CSS
 here how your final code should look like:
 
 ```css
+
   html {
     background-color: rgb(43, 225, 231);
     text-align: center;
