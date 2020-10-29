@@ -23,7 +23,7 @@ To break it down a bit more, we have made the leaves and stem out of multiple bo
 
 # Shall we start coding?
 
-Create a new Python project on repl.it by visiting [this link](https://repl.it/languages/python3).
+Create a new Python project on repl.it by visiting https://repl.it/languages/python3 .
 ![alt Creating python repl](https://cloud-o0kfkx5c1.vercel.app/1creatingpyfile.gif)
 
 We are gonna make 2 python files.
