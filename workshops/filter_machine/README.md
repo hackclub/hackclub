@@ -340,7 +340,7 @@ input.addEventListener("keyup", filterFunction);
 
 A `keyup` event listener was set on the input which responds when a user releases his/her hand from the keyboard and the function created in line 3 is called.
 
-![Sample Page](https://cloud-g1g4s2cve.vercel.app/0402877f3-d5594fb6-9915-d32a879b6126)
+![Sample Page](https://cloud-g1g4s2cve.vercel.app/0402877f3-d559-4fb6-9915-d32a879b6126)
 
 ## We Are Done! It’s as Simple as That.
 
