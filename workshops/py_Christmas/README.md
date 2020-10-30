@@ -30,7 +30,7 @@ We are gonna make 2 python files.
 
 # Let's code Figures.py first.
 
-Using the coding space on the left create a file and name it 'Figures.py' (most probably a main.py file will already be created, don't use that).
+Using the sidebar on the left, create a file and name it 'Figures.py'. (You should see a file called 'main.py', don't worry about that yet)
 ![alt Creating file](https://cloud-o0kfkx5c1.vercel.app/0creatingfile.gif)
 
 Now in the coding window:
