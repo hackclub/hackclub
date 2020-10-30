@@ -1,12 +1,12 @@
 
 
-| name | description | author |
-|---|---|---|
-| PyChristmas | Christmas Greetings with turtle graphics | @raz8153 |
+| name | description | author | img |
+|---|---|---|---|
+| PyChristmas | Christmas Greetings with turtle graphics | @raz8153 | https://cloud-31ansymxi.vercel.app/0screen_shot_2020-10-30_at_2.59.30_pm.png |
   
 # PyChristmas 
 			
-In this workshop, we make a Christmas greeting using aPython library called [turtle](https://docs.python.org/3/library/turtle.html)!
+In this workshop, we make a Christmas greeting using a Python library called [turtle](https://docs.python.org/3/library/turtle.html)!
 
 [Link to the demo and code.](https://repl.it/@raz8153/ThankfulFirsthandScandisk) 
 
@@ -371,8 +371,5 @@ You could also try adding a few more decorative stuff into the tree or the back 
 [Code for the flower carpet made using turtle](https://github.com/FossMec/Code-a-pookalam/tree/master/Nikita%20Menon)
 4. Now, I would suggest to try out some other turtle functions that you may find interesting.    
    [This link](https://runestone.academy/runestone/books/published/StudentCSP/CSPTurtleDecisions/turtleFP.html) provides details of most functions available in turtle.
-
-Alright! Congratulations on completing the workshop. Will you do me a small favour, now? Next time you try out a design, send me the output via twitter (@raz8153) or on hack club slack channel ( send as direct message to @Razz).
-I would Love to see your work.
 
 Once you've made your own design, share it in the `#scrapbook` channel on the Hack Club Slack, or send it to me directly via DM (@Razz). I would love to see your work! Happy hacking!
