@@ -8,6 +8,8 @@ author: '@sohamb117'
 
 Everyone uses websites. Chances are, you're using a website right now. But how do websites get access to data that is constantly changing? The answer: HTTP requests. The [Requests](https://requests.readthedocs.io/en/master/) library in Python is an easy way to integrate your program with resources online. It provides a simple way to work with HTTP requests, which are a vital part of most large applications.
 
+In this workshop, we're going to use the Requests library to make a stock visualizer.
+
 ![DEMO](https://cloud-2v062st9k.vercel.app/screen-recording-online-video-cu.gif)
 
 
