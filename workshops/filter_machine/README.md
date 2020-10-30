@@ -6,7 +6,7 @@ author: "@Taiwrash"
 
 ## Filter Machine
 
-![Sample Page](https://cloud-h80qkb2hi.vercel.app/0843a3cd2-5f25-46a9-819c-5dc577cab727)
+![Sample Page](https://cloud-l9u3rh4d3.vercel.app/0page.gif)
 
 This is the [Live Demo](https://filter-machine.taiwrash.repl.co) of the app and [Full Code](https://repl.it/@Taiwrash/filter-machine).
 
@@ -340,13 +340,13 @@ input.addEventListener("keyup", filterFunction);
 
 A `keyup` event listener was set on the input which responds when a user releases his/her hand from the keyboard and the function created in line 3 is called.
 
-![Sample Page](https://cloud-g1g4s2cve.vercel.app/0402877f3-d559-4fb6-9915-d32a879b6126)
+![Sample Page](https://cloud-jcxb4s03p.vercel.app/0bd89.gif)
 
 ## We Are Done! It’s as Simple as That.
 
 Below is what we just built, isn't amazing?
 
-![Sample Page](https://cloud-h80qkb2hi.vercel.app/0843a3cd2-5f25-46a9-819c-5dc577cab727)
+![Sample Page](https://cloud-l9u3rh4d3.vercel.app/0page.gif)
 
 ## What next?
 
