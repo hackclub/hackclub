@@ -5,20 +5,18 @@
 | PyChristmas | Christmas Greetings with turtle graphics | @raz8153 |
   
 # PyChristmas 
-
-This workshop is meant to help Python newbies try out a fun library called "[turtle](https://docs.python.org/3/library/turtle.html)".
 			
-In this workshop, we make a Christmas greeting using turtle graphics!
+In this workshop, we make a Christmas greeting using aPython library called [turtle](https://docs.python.org/3/library/turtle.html)!
 
-[Link to the demo code.](https://repl.it/@raz8153/ThankfulFirsthandScandisk) 
+[Link to the demo and code.](https://repl.it/@raz8153/ThankfulFirsthandScandisk) 
 
 # Getting Started
 
-Let me give a brief idea of what we are going to do. We are going to make a greeting card with a maroon-ish background with a text written on it saying ***"Merry Christmas"***. We are going to add a Christmas tree above the greeting. That is, we need a green tree with a brown stem, a yellow/golden star on top, and tiny red balls on either side of the tree.
+Let me give a brief idea of what we are going to do. We are going to make a greeting card with a maroon-ish background with text written on it saying ***"Merry Christmas"***. We are going to add a Christmas tree above the greeting. That is, we need a green tree with a brown stem, a yellow/golden star on top, and tiny red balls on either side of the tree.
 
 ![alt completed_output_pic](https://cloud-4ipo9natc.vercel.app/3merry_christmas.png) 
 
-To break it down a bit more, we have made the leaves and stem out of multiple boxes or rectangles, with tiny circles on either end of the rectangle. Finally, a star on top of the center.
+To break it down a bit more, the leaves and stem will be made out of multiple boxes or rectangles, with tiny circles on either end of the rectangle. Finally, a star on top of the center.
 ![alt tree_without_color_filled](https://cloud-4ipo9natc.vercel.app/1image2.png)
 
 # Shall we start coding?
@@ -62,7 +60,7 @@ def box1 (turtle, color, x, y, width, height):
     turtle.setheading(0)
 
 ```
-   Was that a bit too much to take in? No worries, I will  break it down for you. 
+   Let's break down this code. 
 ```python
 def box1 (turtle, color, x, y, width, height):
 ```
@@ -359,11 +357,12 @@ Click the green "Run" button on the top of the repl.it windows. A screen will be
 If you face any errors, try commenting out each portion of the code and making only a certain section work. This generally helps to figure out the error.
 ![alt repl_screen](https://cloud-4ipo9natc.vercel.app/2image9.jpeg) 
 
-# One last thing
+# Hacking
 
-   Did you find this fun? If yes, try out some of your own designs. 
-You can basically draw almost anything with this. 
-A few suggestions would be:
+Now that you've completed the Christmas tree, try making your own designs! You can draw almost anything with this.
+
+A few suggestions:
+
 1. Try changing the `speed()` function to '1' (or other values) to see the difference in speed. Try changing color of the parameters in the code. You can use [this link](https://www.color-hex.com/) to find the right hexcode you want.
 2. Try adding some more additions into this code, like, maybe a few giftboxes on the bottom of the tree. For this you could use the same rectangle function. 
 You could also try adding a few more decorative stuff into the tree or the back ground
@@ -376,10 +375,4 @@ You could also try adding a few more decorative stuff into the tree or the back 
 Alright! Congratulations on completing the workshop. Will you do me a small favour, now? Next time you try out a design, send me the output via twitter (@raz8153) or on hack club slack channel ( send as direct message to @Razz).
 I would Love to see your work.
 
-****Thanks A Lot for sticking till the end and Happy hacking !!!**** 
-
-
-
-
-
-
+Once you've made your own design, share it in the `#scrapbook` channel on the Hack Club Slack, or send it to me directly via DM (@Razz). I would love to see your work! Happy hacking!
