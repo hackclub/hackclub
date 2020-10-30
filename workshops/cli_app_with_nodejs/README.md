@@ -124,7 +124,7 @@ In this part of the tutorial, we are going to fetch a random joke from a [jokes 
 One of the most popular libraries for retrieving and sending data to an API in Node.js is [axios](https://www.npmjs.com/package/axios). Start by adding axios as a dependency:
 
 ```bash
-node install axios
+npm install axios
 ```
 
 Next, replace the contents of your javascript file with the following code.
