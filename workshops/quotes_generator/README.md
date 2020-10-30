@@ -232,7 +232,7 @@ Now if you look at the preview window, you'll see that we are pretty much done! 
 
 Whenever the button will be clicked, the `getQuotes()` function will be called which will return a new random quote, resulting into a state change which will cause our component to re-render!
 
-<details><summary>The Final Code:</summary>
+<detaidls><summary>The Final Code:</summary>
 
 ```jsx
 import React, { useEffect, useState } from "react";
@@ -279,4 +279,43 @@ This what our project looks like:
 
 Yay! We are done! We learnt how to handle APIs in React and we built a simple but sweet random quotes generator!!
 
-![Yaaaay](https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif)
+[Yaaaay](https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif)
+
+## Part 4: The End
+
+Make sure you create an account on codesandbox.io to save this wonderful piece of creation or you'll loose it 😧.
+
+Here are some tasks for you:
+
+1. Try to display a list of quotes on your website.  
+[Example](https://codesandbox.io/s/quotesgenerator-example-1-6thve)
+
+2. Try to add the functionality of going back and forth in your quotes app!  
+[Example](https://codesandbox.io/s/peaceful-fog-80vmr)
+
+Now that you know how to handle APIs in React, here are some APIs for you to play around with!
+
+1. [Weather API](https://openweathermap.org/api)  
+[Example](https://weatherer.fayd.me/) and [Source Code](https://github.com/faisalsayed10/weatherer).
+
+2. [Movies API](https://www.themoviedb.org/documentation/api)  
+[Example](https://binger.fayd.me/) and [Source Code](https://github.com/faisalsayed10/Movie-Search-App).
+
+3. [Hack Club API](https://scrapbook.hackclub.com/api/users/)  
+
+4. [Fortnite API](https://fortnite-api.com/)
+
+Check out what other Hack Clubber built!
+
+WORK IN PROGRESS
+
+Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
+
+You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.
+1. In a new tab, open and follow [these directions][slack] to signup for our Slack.
+2. Then, post the link to the [`#ship`](https://hackclub.slack.com/messages/ship) channel to share it with everyone and also ping me!
+
+[slack]: https://slack.hackclub.com/
+
+
+PS. I'm `@fayd` on slack.
