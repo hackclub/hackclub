@@ -2,7 +2,7 @@
 
 | name | description | author | img |
 |---|---|---|---|
-| PyChristmas | Christmas Greetings with turtle graphics | @raz8153 | https://cloud-31ansymxi.vercel.app/0screen_shot_2020-10-30_at_2.59.30_pm.png |
+| PyChristmas | Christmas Greetings with turtle graphics | @raz8153 | https://cloud-bb9ekgrcc.vercel.app/0image.png |
   
 # PyChristmas 
 			
