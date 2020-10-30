@@ -236,7 +236,7 @@ There are of course a lot of things that you can hack together in your app, but 
 
 ### How To Make Our App Look Pretty?
 
-Let's take a look at two super cute libraries that you can add to our app:
+Let's take a look at two super cute libraries that you can add to your app:
 
 1. [Chalk](https://www.npmjs.com/package/chalk): To format your text with colors, underlines, bold, italics and so much more
 
