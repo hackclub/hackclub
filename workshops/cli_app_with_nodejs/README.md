@@ -281,6 +281,12 @@ Here are some resources to help you in your CLI-ninja 🥷  journey:
   
 - [node.js cli best practices](https://github.com/lirantal/nodejs-cli-apps-best-practices) - Nodejs cli app best practices
 
+## Apps Built By Our Hack Club Hackers
+
+1. Khushraj Rathod built the whole app not only in [Node.js](https://repl.it/@aaryanporwal/CLIIDK) but also in [Deno](https://github.com/KhushrajRathod/dadjoke) using Typescript!
+2. [Tanishq Soni](https://repl.it/@tanishqsoni/cli-tool#email.js) built a random e-mail generator!
+3. [Faisal Sayed](https://repl.it/@FaisalSayed1/BrightSneakyDiskdrive) wonderfully used `chalk` to _beautify_ the app!
+
 ## Sharing With The Community
 
 Now that you have finished building this wonderful project, you should share your own creation with other people! Remember, it's just as easy as giving them your URL!
