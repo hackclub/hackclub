@@ -1,8 +1,9 @@
-
-
-| name | description | author | img |
-|---|---|---|---|
-| PyChristmas | Christmas Greetings with turtle graphics | @raz8153 | https://cloud-bb9ekgrcc.vercel.app/0image.png |
+---
+name: PyChristmas
+description: Make Christmas greetings with Turtle graphics in Python
+author: '@raz8153'
+img: 'https://cloud-bb9ekgrcc.vercel.app/0image.png'
+---
   
 # PyChristmas 
 			
