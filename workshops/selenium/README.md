@@ -182,15 +182,14 @@ Congrats! You have completed your first Selenium Automation.
 
 Okay , now we are going to automate the login process:
 
-- ### Step1:- Create variables to store your credentials
+### Step1:- Create variables to store your credentials
 
-  Okay! now create two variables **email and password** and store your email and password in them.
+Create two variables, **email and password**, and store your email and password in them.
 
-  ```python
-  from selenium import webdriver
-  from webdriver_manager.chrome import ChromeDriverManager
-  import time
-  ```
+```python
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+import time
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get('https://twitter.com/login')
@@ -198,15 +197,14 @@ driver.get('https://twitter.com/login')
 ######################## new code to add 👇 #######################
 email = "yourtwitteremail@gmail.com"
 password = "yourtwitterpassword"
-
 ````
 The above variables will be used to fill up your credentials when you login.
 
-- ### Step2:- Copy the full XPaths!
+### Step2:- Copy the full XPaths!
 
- #### What are XPaths?
+#### What are XPaths?
 
- XPaths will be used here to **_select the element with which our automation script should interact_**. ( believe me, this just sounds complex but is very simple 😎)
+XPaths will be used here to **_select the element with which our automation script should interact_**. ( believe me, this just sounds complex but is very simple 😎)
 
 **The below video (click on the image to see the video) will explain to you how to copy various Xpaths and select web elements with them.**
 
