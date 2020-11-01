@@ -468,7 +468,7 @@ const ChangeDate = ({state, setter}) => {
 export default ChangeDate;
 ```
 
-We don't really need to understand what's going on here. It's just 3 buttons with an SVG copy-pasted from heroicons.com.
+We have basically taken 2 SVGs from [Heroicons](heroicons.com) and inserted them to our button.
 
 **NOTE:** We can remove the `import` for styles from this file as it is a children of `CalendarUI` so it will eventually get the styles.
 
