@@ -420,7 +420,7 @@ const ChangeDate = ({state, setter}) => {
 
 In this way, we have received our props from the parent component and now we can use it in our component. Now we'll add 3 buttons to navigate back and forth as well as reset back to today.
 
-We are going to use some SVGs taken from heroicons.com. So I recommend you to copy the below code inside the `buttons` div to save some time.
+We are going to use some SVGs taken from [Heroicons](heroicons.com). So I recommend you to copy the below code inside the `buttons` div to save some time.
 
 ```jsx
 import React from "react";
