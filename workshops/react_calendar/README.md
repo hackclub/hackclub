@@ -1,5 +1,5 @@
 ---
-name: 'Stopwatch'
+name: 'Mini Calendar'
 description: 'Build a simple mini calendar with ReactJS.'
 author: '@faisalsayed10'
 ---
@@ -76,7 +76,7 @@ Let's start writing our very first component! Navigate to the `components/` dire
 
 **Note:** For naming filenames in React, we use the `TitleCase` convention.
 
-**5 main steps in writing React**
+**5 main steps in React:**
 
 1. Always import `React` at the beginning of every file.
 
