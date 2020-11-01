@@ -58,7 +58,7 @@ Also, this is a React component, so the function will always return jsx code.
 
 **What is jsx?** All the code from line 6 to 9 is known as jsx. It is pretty much similar to HTML but there are few differences which we'll see as we go along.
 
-You'll see that instead of using `class` in our `<div>` tag, we are using `className`, this is one of the difference between jsx and HTML. Whenver we add class to our element in React, we'll use `className` instead of `class`.
+You'll see that instead of using `class` in our `<div>` tag, we are using `className`, this is one of the difference between jsx and HTML. Whenever we add class to our element in React, we'll use `className` instead of `class`.
 
 This is pretty much about the `App.js` file as well as some React.
 
