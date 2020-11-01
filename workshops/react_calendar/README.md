@@ -650,9 +650,13 @@ Check this [Example](https://codepen.io/daniel-snows/pen/awvVoM) to get an idea.
 7. Finally, React is a whole different universe, play around with your newly learnt skills!
 
 
-Check out the builds by other Hack Clubbers!
+Check out what other Hack Clubbers built!
 
-**WORK IN PROGRESS**
+1. [Tanishq](https://codesandbox.io/s/react-js-calendar-luzrj)
+
+2. [Khushraj](https://codesandbox.io/s/calendarstartercode-forked-qz8kl)
+
+3. [Jack](https://codesandbox.io/s/calandooooor-8cisd)
 
 Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
 
