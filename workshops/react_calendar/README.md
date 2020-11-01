@@ -347,7 +347,7 @@ So we will import our `ChangeDate` component inside our `CalendarUI` component a
 ```jsx
 import React, { useState } from "react";
 import "./components.css";
-import "ChangeDate" from "./ChangeDate.js"; // IMPORT THE COMPONENT
+import ChangeDate from "./ChangeDate.js"; // IMPORT THE COMPONENT
 
 const CalendarUI = () => {
   const [today, setToday] = useState(new Date());
