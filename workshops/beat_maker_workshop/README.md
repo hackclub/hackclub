@@ -1,15 +1,9 @@
 
 ---
-
 name: 'Drum Pad'
-
 description: 'Build a drumpad/beat maker in HTML/CSS & JS'
-
 author: '@emmanuel39hanks'
-
 ---
-
-  
 
 # Creating a DrumPad/Beat Maker in HTML, CSS & JavaScript
 
