@@ -1,4 +1,3 @@
-
 ---
 name: 'Drum Pad'
 description: 'Build a drumpad/beat maker in HTML/CSS & JS'
