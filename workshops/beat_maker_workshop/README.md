@@ -30,14 +30,14 @@ In this workshop, you're going to create a drum pad/beatmaker that plays sounds 
 
   
 
-Head over to on repl.it(https://repl.it/) will get started by creating an HTML/CSS & JavaScript project . Once the project is set up, navigate to your `index.html` file, and we can start working on the pad layout. 
+Head over to repl.it(https://repl.it/) and we will get started by creating an HTML/CSS & JavaScript project. Once the project is set up, navigate to your `index.html` file, and we can start working on the pad layout. 
   
 
 ## Creating the pad layout
 
   
 
-We are going to start writing HTML code; going into our `<body>` tag, which is where we write code that will be shown to the client, create a header with the `<h1>` tag, and then we will have three rows, and four columns of pads and each pad will be a `<div>,` you can think of the `<div>` tag as a box or container.
+We are going to start writing HTML; going into our `<body>` tag, which is where we write code that will be shown to the client, create a header with the `<h1>` tag, and then we will have three rows, and four columns of pads and each pad will be a `<div>,` you can think of the `<div>` tag as a box or container.
 
   
 
