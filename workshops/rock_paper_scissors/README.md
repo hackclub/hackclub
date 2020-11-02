@@ -2,6 +2,7 @@
 Name: 'Rock Paper Scissors Game'
 Description: 'Simple rock paper scissors game using Python'
 Author: '@JackTDC'
+img: 'https://cloud-3skpb14wz.vercel.app/0rockpaperscissors.png'
 ---
 
 Have you ever wondered how to build a game with Python? Have you ever wanted to build your own game but didn't because it was hard? Well, today I'm going to show you how to build one and show you just how simple it can be!
