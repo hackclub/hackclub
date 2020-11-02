@@ -2,6 +2,7 @@
 name: 'Stock Visualizer in Python'
 description: 'Make a stock visualizer in Python and learn how to use web requests'
 author: '@sohamb117'
+img: 'https://cloud-krc2urnzo.vercel.app/0545f63e3d1003e629450f6017d83582d.jpg'
 ---
 
 # Web Requests in Python - With a Stock Visualizer!
