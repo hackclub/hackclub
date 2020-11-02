@@ -2,6 +2,7 @@
 name: 'Python Data Viz'
 description: 'Use python to create basic graphs and visualizations with real data'
 author: '@maddieWillett-boop'
+img: 'https://cloud-buf4qdryr.vercel.app/0image_from_ios.jpg'
 ---
 
 ![Stonks](https://cloud-byn8r1k9a.vercel.app/0image_from_ios.jpg)
