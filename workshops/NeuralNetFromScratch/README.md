@@ -2,7 +2,7 @@
 name: 'How to make a Neural Network from Scratch in Python'
 description: '*Learn* the correct numerical output'
 author: '@johnlins'
-img: 'https://hackclub.slack.com/files/U010VMPCEBF/F01DLN2LDHN/screenshot.png?origin_team=T0266FRGM&origin_channel=D010V8S08G4'
+img: 'https://cloud-6z3zjz1y8.vercel.app/0screenshot.png'
 ---
 
 ## How to make a Neural Network from Scratch in Python
