@@ -7,7 +7,7 @@ img: https://cloud-huy2ue7gg.vercel.app/0screenshot_2020-10-10_at_6.17.58_am.png
 
 # Tunes on JS - Creating a Piano
 
-We've all mashed our fingers on a piano, thinking we're creating something amazing (of course you are!). Ok, maybe that's just me. Today, I though I'd be cool if we created a piano using HTML & JS all with the help of a great libary called [Tone.js](http://tonejs.github.io/)!
+We've all mashed our fingers on a piano, thinking we're creating something amazing (of course you are!). Ok, maybe that's just me. Today, I thought it'd be cool if we created a piano using HTML & JS all with the help of a great libary called [Tone.js](http://tonejs.github.io/)!
 
 ## Getting started
 
