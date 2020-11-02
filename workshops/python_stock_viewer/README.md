@@ -65,9 +65,11 @@ Click on "Get free API key" and create an account. You should see this:
 
 ![Key](https://cloud-ks0dqz7ba.vercel.app/image.png)
 
-There should be a key (I've hidden mine for security purposes - yours should be where the purple box is) but that's the key you'll need to use for authentication.
+There should be a key (I've hidden mine for security purposes - yours should be where the purple box is). Tthat's the key you'll need to use for authentication.
 
 Now let's set up the key in Python. The Finnhub API wants the key passed in through the headers, which are ways to send additional information. The Requests library allows you pass headers into the web request, which is how we'll authenticate. Let's define the headers.
+
+At the bottom of the `main.py` file, add:
 
 ```python
 header = {'X-Finnhub-Token':'[TOKEN]'} 
@@ -77,10 +79,8 @@ How does this code work?
 
 The line creates a Python [dictionary](https://www.tutorialspoint.com/python/python_dictionary.htm) with an attribute `'X-Finnhub-Token'` and a value of your token. This dictionary is saved as a variable, and later, we'll pass the variable into the request. When the server sees that your request has a token, it *authenticates* you, or lets you use the API.
 
-
 ## Making our First Request
 
-So let's see if it works. Try running this code by pressing the green "Run" button at the top of the window.
 ```python
 header = {'X-Finnhub-Token':'[TOKEN]'}
 r = requests.get(f'https://finnhub.io/api/v1/quote?symbol=AAPL', headers = header)
@@ -100,10 +100,13 @@ Now that we've made the request, how do we handle it? The `requests.get` method 
 ```python
 print(r.content)
 ```
-If you run this and all goes well, you should see an output like this:
+
+So let's see if it works. Try running this code by pressing the green "Run" button at the top of the window. If all goes well, you should see an output like this:
+
 ```json
 b'{"c":112,"h":115.23,"l":110.03,"o":114.57,"pc":113.49,"t":1600032334}'
 ```
+
 This is a string of a JSON value that we'll need to parse in order to use.
 
 ## Understanding the JSON
@@ -139,7 +142,7 @@ This line uses the `json.loads()` method to parse the string value of `r.content
 
 ## Displaying the Value
 
-The value we want to display is the `c` value, or the current value of the stock. We can do that by printing `rjson['c']`. Let's add a line that does this to the bottom of our code:
+The value we want to display is the `c` value, or the current value of the stock. We can do that by printing `rjson['c']`. At the bottom of your code, add this line:
 ```python
 print("AAPL -", rjson['c'])
 ```
@@ -161,7 +164,7 @@ If all goes well, you should see the stock value printed to your terminal. Congr
 
 ## Taking an Input
 
-This is cool and all, but if you want to get a certain value, it's cumbersome to have to change the code. Let's add functionality to take an input from the user. In Python, we use the `input()` method to do this. Let's add this line to our code, just underneath the imports.
+This is cool and all, but if you want to get a certain value, it's cumbersome to have to change the code. Let's add functionality to take an input from the user. In Python, we use the `input()` method to do this. Just below the second `import` statement at the top of your code, addd this:
 
 ```python
 line = input("Give me a stock symbol?")
