@@ -1,11 +1,11 @@
 ---
-name: 'How to make a Neural Network from Scratch in Python'
+name: 'Neural Network from Scratch'
 description: '*Learn* the correct numerical output'
 author: '@johnlins'
 img: 'https://cloud-6z3zjz1y8.vercel.app/0screenshot.png'
 ---
 
-## How to make a Neural Network from Scratch in Python
+# How to make a Neural Network from Scratch in Python
  
 In this workshop you will learn how to create a neural network in python that learns the appropriate numerical output given 3 boolean values.
 
@@ -136,6 +136,16 @@ Then I will pass this through the train function:
 ```python
 train(trainingInputs, trainingOutputs, 10000)
 ```
+
+# How To Run
+If you cloned it on your computer, just make sure you've installed Numpy and run:
+`cd /NeuralNetwork`
+<br/>
+`python NeuralNetwork.py`
+
+If you are running the NN on repl (Using the link above), simply hit the run button on the top of the screen.
+Sometimes it may ask you to configure your run button, if that's the case, set it to `python3 NeuralNetwork.py` and it should work.
+
  
 # Get The Results!
  
@@ -152,6 +162,7 @@ And finally we will pass it through our network!!!
 base(np.array([input1, input2, input3]))
 ```
  
+In this case, I will input these numbers:
 ```
 input 1: 1
 input 2: 0
@@ -160,7 +171,30 @@ input 3: 0
 Output:
 Something close to 1, for example `[0.99993704]`
 
+# Why Are We Getting This Output?
+
 The neural network learns that if the inputs are [1,1,1], [1,0,1], or [1,0,0] that the output is 1, and otherwise 0.
+
+This is due to out training data... Yes, we told it to do that!
+
+To help visualize what the training data is saying, I have created a table:
+| **Inputs** | **Outputs** |
+|-|-|
+| [0,0,1] | 0 |
+| [1,1,1] | 1 |
+| [1,0,1] | 1 |
+| [0,1,1] | 0 |
+
+Can you see it in the code now?
+```
+trainingInputs = np.array([[0,0,1],
+                            [1,1,1],
+                            [1,0,1],
+                            [0,1,1]])
+
+trainingOutputs = np.array([[0,1,1,0]]).T
+``` 
+
  
 <img src="https://hackclub.slack.com/files/U010VMPCEBF/F01DLN2LDHN/screenshot.png?origin_team=T0266FRGM&origin_channel=D010V8S08G4" alt="Final result">
  
@@ -230,8 +264,3 @@ print(base(np.array([input1, input2, input3])))
 ```
 
 
-
-# Run
-`cd /NeuralNetwork`
-<br/>
-`python NeuralNetwork.py`
