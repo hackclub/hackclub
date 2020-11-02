@@ -185,19 +185,17 @@ fig,ax=plt.subplots()
 ax.plot([1,2,3,4],[1,4,2,3])
 plt.show()
 ```
-
      
 *Something new you may have noticed is the use of fig, or aka [figure](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.figure.html)*.
 
-In the code above, and anytime you want to create a graph you will be using fig.
+In the code above, and anytime you want to create a graph you will be using fig. For example, in our code so far we have used…
 
--   For example in our code so far we have used…
 ```python
 fig,ax=plt.subplots()
 ```
-     
-- This created a figure with a single axis.
-- Here are a few different ways you can use fig…
+...which creates a figure with a single axis.
+
+Here are a few different ways you can use fig:
 ```python
 fig=plt.figure() #creates empty graph returns with num. figues
 fig,ax=plt.subplots(2,2) #creates 2 graph figues
