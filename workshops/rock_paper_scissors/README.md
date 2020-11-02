@@ -43,11 +43,11 @@ First, we'll need to import the `randint` module. To learn more about the randin
 On the first line of the `main.py` file, type `from random import randint`. This will import the randint module.
 
 ### 2) Giving values to the variables
-Let's make a list for all the entries a player could enter:
+Let's make a list for all the entries a player could enter. In your `main.py` file, add:
 ```py
 t = ["r","p","s"]
 ```
-'r' stands for `Rock`,'p' stands for `Paper` and 's' stands for `Scissors`.
+'r' stands for `Rock`, 'p' stands for `Paper` and 's' stands for `Scissors`.
 
 Now, let's write some code that chooses rock, paper or scissors randomly.
 ```py
@@ -96,12 +96,12 @@ PC = 0
 
 For this, I'll use a `while` loop but you can also use `for` loops!
 
-So we'll just type this before the `while` statement:
+At the bottom of the `main.py` file, add this:
 ```py
 while Player == False: 
 ```
-Now we let the player choose either `Rock` `Paper` or `Scissors`
-```
+Next, we'll use `input` to allow the player to choose either `Rock`, `Paper`, or `Scissors`.
+```py
 player = input("Rock, Paper, Scissors?(r,p,s)")
 ```
 
@@ -109,8 +109,8 @@ There are 5 possibilities:
 1. The player chooses `Rock`
 2. The player chooses `Paper`
 3. The player chooses `Scissors`
-4. The word entered is invalid
-5. The player enters `reset`
+4. The player enters `reset`
+5. The word entered is invalid
 
 ### 4) Producing separate outcomes for all possibilities
 
