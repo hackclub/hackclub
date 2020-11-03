@@ -284,5 +284,5 @@ def relu(x):
 Don't forget that you must change the derivative accordingly!
 In fact, that's another great way to experiment!
 
-View a (full list of popular activation functions)[https://en.wikipedia.org/wiki/Activation_function] with their derivatives here.
+View a [full list of popular activation functions](https://en.wikipedia.org/wiki/Activation_function) with their derivatives here.
 
