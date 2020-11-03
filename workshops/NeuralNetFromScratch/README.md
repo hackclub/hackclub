@@ -166,10 +166,11 @@ In this case, I will input these numbers:
 ```
 input 1: 1
 input 2: 0
-input 3: 0
+input 3: 1
 ```
+<img src="https://cloud-9oczrmwv9.vercel.app/0image.png" alt="Final result">
 Output:
-Something close to 1, for example `[0.99993704]`
+Something close to 1, for example `[0.99358931]`
 
 # Why Are We Getting This Output?
 
@@ -195,8 +196,6 @@ trainingInputs = np.array([[0,0,1],
 trainingOutputs = np.array([[0,1,1,0]]).T
 ``` 
 
- 
-<img src="https://cloud-9oczrmwv9.vercel.app/0image.png" alt="Final result">
  
  
 View code here: [https://github.com/JohnLins/NeuralNetwork](https://github.com/JohnLins/NeuralNetwork)
