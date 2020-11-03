@@ -115,7 +115,13 @@ There are 5 possibilities:
 ### 4) Producing separate outcomes for all possibilities
 
 To make things easier I will be making functions to print if the player wins or loses.
-First I will write `message = ""` before we make the function. This will help us by printing different message by calling the same function.
+First I will write the following before we make the function.
+```py
+message = ""
+```
+This will help us by printing different message by calling the same function.
+
+
 
 Now I will be making a function that will be called only when the player wins. To do that enter the following code:
 ```py
@@ -146,7 +152,7 @@ while player == False:
         print(name,'=',You)
 ```
 Next, we want to write some code for each action that someone can take.
-```
+```py
     elif player == "r":
         if computer == "p":
             message = "You lose!","Paper covers Rock"
@@ -156,7 +162,7 @@ Next, we want to write some code for each action that someone can take.
             win()
 ```
 What would the code be for paper and scissors?
-```
+```py
     elif player == "p":
         if computer == "s":
             message = "You lose!","Paper covers Rock"
@@ -173,7 +179,7 @@ What would the code be for paper and scissors?
             win()
 ```
 Now for the last part we are going to assume that the player wants to reset the game or he/she entered a invalid entry
-```
+```py
     elif player == "reset":
       You=1*0
       PC=1*0
