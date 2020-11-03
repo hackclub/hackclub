@@ -273,16 +273,16 @@ So what are you waiting for? Go and had a nice converstion with your own chatbot
 
 You finished the Dialogflow chatbot workshop by completing all tasks:
 
-- Creating a Dialogflow Agent.
-- Creating Intents.
-- Testing Agent.
+- [x] Creating a Dialogflow Agent.
+- [x] Creating Intents.
+- [x] Testing Agent.
 
 # ⚡ What's Next?
 Now, how you can expand it? Try adding some cool commands and try different integrations with the help of [Dialogflow documentation](https://cloud.google.com/dialogflow/es/docs)
 
 Here are some examples 👇
 
+- Integrate the agent with your own website.
+- Integrate it as a dialogflow messenger in your own website.
 - Integrate the agent with Slack.
-- Creating a agent which asks personal details from user.
-- Integrate it with Google Assistance.
 
