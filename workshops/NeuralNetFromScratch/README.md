@@ -172,6 +172,8 @@ input 3: 1
 Output:
 Something close to 1, for example `[0.99358931]`
 
+Note that the output will never be exactly 1, the reason for this is simple... neural networks will never have 100% certainty.
+
 # Why Are We Getting This Output?
 
 The neural network learns that if the inputs are [1,1,1], [1,0,1], or [1,0,0] that the output is 1, and otherwise 0.
