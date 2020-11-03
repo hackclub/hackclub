@@ -6,7 +6,7 @@ author: '@emmanuel39hanks'
 
 # Creating a Drum Pad in HTML, CSS & JavaScript
 
-![Drum Pad Preview](https://i.ibb.co/r0JLpWB/Annotation-2020-09-20-200719.png)
+![Drum Pad Preview](https://cloud-86raoe39p.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_41_28.png)
 
 _Preview of the Drum Pad we are going to be creating._
 
@@ -56,7 +56,7 @@ We are going to start writing HTML; going into our `<body>` tag, which is where 
 
 ```
 
-![Preview of HTML with no CSS](https://i.ibb.co/72XvNn3/Annotation-2020-09-20-204442.png)
+![Preview of HTML with no CSS](https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
 
 And if we run our code, it should look like this.
 
@@ -104,7 +104,7 @@ font-family: 'Roboto', sans-serif;
 
 ```
 
-![Preview of HTML with CSS applied, to change the layout](https://i.ibb.co/qgY3jCv/Annotation-2020-09-20-210409.png)
+![Preview of HTML with CSS applied, to change the layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
 
   
 
@@ -204,7 +204,7 @@ If you run your code, nothing has changed. That's because we are using classes t
 
 ```
 
-![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://i.ibb.co/TLFcmvk/aasdasd.png)
+![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://cloud-dhcn2yd8q.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_39_48.png)
 
 And when we rerun our code, it should look like this.
 
@@ -277,7 +277,7 @@ transition: all  0.2s;
 
 ```
 
-![Preview of HTML with our finished layout CSS applied, and our pads colored](https://i.ibb.co/LpYQY6N/asdasdasdasdasdasd.png)
+![Preview of HTML with our finished layout CSS applied, and our pads colored](https://cloud-86raoe39p.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_41_28.png)
 
 We are done with our styling and layout.
 
