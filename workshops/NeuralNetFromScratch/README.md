@@ -273,11 +273,11 @@ Maybe try inversing the output data like this:
 trainingOutputs = np.array([[1,0,0,1]]).T
 ```
 
-Additionally, try changing the activation function to something else. Maybe tanH or GeLU! See if the output differs!
+Additionally, try changing the activation function to something else. Maybe tanH or ReLU! See if the output differs!
 
-Here is the code for reLU
+Here is the code for ReLU
 ```python
-def rectified(x):
+def relu(x):
 	return max(0.0, x)
  ```
  
