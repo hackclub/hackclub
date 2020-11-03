@@ -1,6 +1,6 @@
 ---
 name: 'Neural Network from Scratch'
-description: 'How to build a neural network from scratch*Learn* the correct numerical output'
+description: 'How to build a neural network from scratch in python'
 author: '@johnlins'
 img: 'https://cloud-o368n9khl.vercel.app/0cover.png'
 ---
