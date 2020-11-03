@@ -162,7 +162,7 @@ color: rgba(255, 255, 255, 0.4);
 
 user-select: none;
 
-border: 2px  solid;
+border: 2px solid #E5446D;
 
 }
 
