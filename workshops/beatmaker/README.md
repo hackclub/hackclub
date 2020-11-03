@@ -82,23 +82,23 @@ html,
 
 body {
 
-background-color: #fff; // Changes the background of our web page to #fff which is white in hexidecimal values.
+background-color: #fff;
 
-height: 100%; // The height CSS property specifies the height of an element.
+height: 100%;
 
-width: 100%; // The width CSS property specifies the width of an element.
+width: 100%;
 
-display: flex; // The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid, or flex.
+display: flex;
 
-flex-direction: column; // The flex-direction CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
+flex-direction: column;
 
-justify-content: center; // The CSS justify-content property defines how the browser distributes space between and around content items along the main axis of a flex container and the inline axis of a grid container.
+justify-content: center;
 
-align-items: center; // The CSS align-items property sets the align-self value on all direct children as a group. In Flexbox, it controls the alignment of items on the Cross Axis.
+align-items: center;
 
-overflow: hidden; // The CSS overflow property controls what happens to content that is too big to fit into an area.
+overflow: hidden;
 
-font-family: 'Roboto', sans-serif; // The CSS font-family  property is used to specify a list of prioritized fonts and generic family names
+font-family: 'Roboto', sans-serif;
 
 }
 
@@ -118,11 +118,11 @@ We want to style the header to give it spaces and then create three rows and fou
 
 h1 {
 
-color: #000; // The color CSS property sets the foreground color value of an element's text and text decorations and sets the current color value.
+color: #000;
 
-font-size: 5vw; // The font-size CSS property sets the size of the font.
+font-size: 5vw;
 
-letter-spacing: 6px; // The letter-spacing CSS property sets the horizontal spacing  behavior between text characters.
+letter-spacing: 6px;
 
 }
 
@@ -134,7 +134,7 @@ display: flex;
 
 justify-content: space-between;
 
-flex-wrap: wrap; // The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines.
+flex-wrap: wrap;
 
 }
 
@@ -162,7 +162,7 @@ color: rgba(255, 255, 255, 0.4);
 
 user-select: none;
 
-border: 2px  solid; // Adds a solid 2 pixel border around our box
+border: 2px  solid;
 
 }
 
@@ -247,27 +247,21 @@ We will write the code that will give our pads hovering effects, inactive or act
 
 ```css
 
-// Below, we are using pseudo-classes to determine the form of states, whether active or hovered.
-
-// The :hover CSS pseudo-class matches when the user interacts with an element with a pointing device but does not necessarily activate it. It is generally triggered when the user hovers over an element with the cursor (mouse pointer).
-
 .box:hover {
 
 background-color: lighten(#444, 10%);
 
-cursor: pointer; // The cursor CSS property sets the type of mouse cursor, if any, to show when the mouse pointer is over an element.
+cursor: pointer;
 
 }
 
-// The :active CSS pseudo-class represents an element (such as a  button) that is being activated by the user. When using a mouse, "activation" typically starts when the user presses down the primary mouse button.
-
 .box:active {
 
-background-color: darken(#444, 10%); // The darken() function helps us give our element a color and a percentage of darkness that should be applied to it.
+background-color: darken(#444, 10%);
 
-transform: scale(1.1); // The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model, and the scale() function helps easily give a scale value to our element.
+transform: scale(1.1);
 
-transition: all  0.2s; // CSS transitions allow you to change property values smoothly over a given duration.
+transition: all  0.2s;
 
 }
 
@@ -322,29 +316,29 @@ Luckily the code required to playing sound is little all we have to do is naviga
 
 <div  class="pad">
 
-<div  class="box"  style="background-color: #E5446D"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0025.mp3')">A</div>
+<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0025.mp3')">A</div>
 
-<div  class="box"  style="background-color: #44aae5"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0010.mp3')">B</div>
+<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0010.mp3')">B</div>
 
-<div  class="box"  style="background-color: #e044e5"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0000.mp3')">C</div>
+<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0000.mp3')">C</div>
 
-<div  class="box"  style="background-color: #4f97c7"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/RS.mp3')">D</div>
+<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/RS.mp3')">D</div>
 
-<div  class="box"  style="background-color: #7fe544"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/OH25.mp3')">E</div>
+<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/OH25.mp3')">E</div>
 
-<div  class="box"  style="background-color:#e56444"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/MA.mp3')">F</div>
+<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/MA.mp3')">F</div>
 
-<div  class="box"  style="background-color: #44e595"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CY0010.mp3')">G</div>
+<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CY0010.mp3')">G</div>
 
-<div  class="box"  style="background-color: #11b619"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CH.mp3')">H</div>
+<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CH.mp3')">H</div>
 
-<div  class="box"  style="background-color:#44e559"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CB.mp3')">I</div>
+<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CB.mp3')">I</div>
 
-<div  class="box"  style="background-color:#3679df"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/BD0010.mp3')">J</div>
+<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/BD0010.mp3')">J</div>
 
-<div  class="box"  style="background-color: #df581a"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/BD0000.mp3')">K</div>
+<div  class="box"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/BD0000.mp3')">K</div>
 
-<div  class="box"  style="background-color: #ff0496"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CP.mp3')">L</div>
+<div  class="box"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CP.mp3')">L</div>
 
 </div>
 
