@@ -2,7 +2,7 @@
 name: 'Neural Network from Scratch'
 description: '*Learn* the correct numerical output'
 author: '@johnlins'
-img: 'https://cloud-6z3zjz1y8.vercel.app/0screenshot.png'
+img: 'https://cloud-o368n9khl.vercel.app/0cover.png'
 ---
 
 # How to make a Neural Network from Scratch in Python
@@ -47,7 +47,7 @@ np.random.seed(1)
 synapticWeights = 2 * np.random.random((3, 1)) - 1
 ```
 
-<img src="https://hackclub.slack.com/files/U010VMPCEBF/F01CG4V285V/weights.png?origin_team=T0266FRGM&origin_channel=D010V8S08G4" alt="weights in a neural network"/>
+<img src="https://cloud-hdp8sg9gd.vercel.app/0weights.png" alt="weights in a neural network"/>
 
 # Activation Functions
  
@@ -58,7 +58,7 @@ The activation function is a crucial component in a neuron. All it does is deter
 But in this case we'll use a sigmoid function.
 
 ![formula](https://render.githubusercontent.com/render/math?math=\frac{\mathrm{1}}{\mathrm{1}+e^{-x}})
-<img src="https://hackclub.slack.com/files/U010VMPCEBF/F01CX3AE0H1/sigmoid.png?origin_team=T0266FRGM&origin_channel=D010V8S08G4" alt="The sigmoid activation function"/>
+<img src="https://cloud-mppwtn9tr.vercel.app/0sigmoid.png" alt="The sigmoid activation function"/>
 
 
 ```python
@@ -115,7 +115,7 @@ Which you can see change here: `synaptic_weights += adjustments`
 # What is BackPropagation?
 Backpropagation is the process of tweaking the weights, remember how the weights were random in the beginning? Well, now we are artificially changing the weight values.
 
-<img src="https://hackclub.slack.com/files/U010VMPCEBF/F01DLN09RFS/backprop.png?origin_team=T0266FRGM&origin_channel=D010V8S08G4" alt="Back Propagation"/>
+<img src="https://cloud-768iz6otd.vercel.app/0backprop.png" alt="Back Propagation"/>
  
  
 # Training it
@@ -196,7 +196,7 @@ trainingOutputs = np.array([[0,1,1,0]]).T
 ``` 
 
  
-<img src="https://hackclub.slack.com/files/U010VMPCEBF/F01DLN2LDHN/screenshot.png?origin_team=T0266FRGM&origin_channel=D010V8S08G4" alt="Final result">
+<img src="https://cloud-9oczrmwv9.vercel.app/0image.png" alt="Final result">
  
  
 View code here: [https://github.com/JohnLins/NeuralNetwork](https://github.com/JohnLins/NeuralNetwork)
