@@ -19,7 +19,7 @@ The following NN is not supposed to be practical, it is supposed to serve as a f
 ---
 
 
-# Table of contents:
+## Table of contents:
 
 - [Getting Started(Initializing weights)](#Getting-started)
 - [Activation-Functions](#Activation-Functions)
@@ -36,13 +36,16 @@ The following NN is not supposed to be practical, it is supposed to serve as a f
 
 In this worshop you will see some very basic linear algebra concepts such as the Dot product and the transpose operation. You don't need a deep understanding of linear algebra to create basics neural networks like this, but if it sparks your intest, I recommend watching a short linear algebra series from 3b1b: https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
 
-# Getting started
+## Getting started
  
-To get started, we must import numpy
+To get started, we must import numpy. Numpy is a popular Python library with pre-made math functions, constants, and operations.
 ```python
 import numpy as np
 ```
-Next, we need to assign random weight values (We will tweak these values later with something called backpropagation)
+Next, we need to assign random weight values (We will tweak these values later with something called backpropagation).
+
+These weight values are the most important part of your model. They are what you get after training. These values are responsible for transforming your input data when you are ready to use your neural network. For example, if I input a picture of a cat, the weight values have the honor of deciding which nodes turn on at each layer to conclude that the picture is a cat and not a dog.
+
 ```python
 np.random.seed(1)
  
@@ -51,9 +54,9 @@ synapticWeights = 2 * np.random.random((3, 1)) - 1
 
 <img src="https://cloud-hdp8sg9gd.vercel.app/0weights.png" alt="weights in a neural network"/>
 
-# Activation Functions
+## Activation Functions
  
-Next, we have to decide on an activation function. The top three are: `Sigmoid`, `TanH`, and `RelU`
+Next, we have to decide on an activation function. The top three are: `Sigmoid`, `TanH`, and `RelU` 
 
 The activation function is a crucial component in a neuron. All it does is determine if a neuron should fire or not. When a neuron fires, that just means that it's value will go on to the next layer.
  
@@ -84,7 +87,7 @@ def base(inputs):
     return sigmoid(np.dot(inputs, synapticWeights))
 ```
  
-# Train
+## Train
 This is the most important part in building a neural network, here, we will create the `train` function.
  
 Within the `train` function, we will input a few arguments. These arguments include: training inputs, training outputs, and training iterations.
@@ -114,13 +117,13 @@ This line here, `adjustments = np.dot(training_inputs.T, error * sigmoid_derivat
  
 Which you can see change here: `synaptic_weights += adjustments`
 
-# What is BackPropagation?
+## What is BackPropagation?
 Backpropagation is the process of tweaking the weights, remember how the weights were random in the beginning? Well, now we are artificially changing the weight values.
 
 <img src="https://cloud-768iz6otd.vercel.app/0backprop.png" alt="Back Propagation"/>
  
  
-# Training it
+## Training it
 Now let's actually train our model!
  
 In the following lines of code, I will create training inputs and transpose them.
@@ -139,7 +142,7 @@ Then I will pass this through the train function:
 train(trainingInputs, trainingOutputs, 10000)
 ```
 
-# How To Run
+## How To Run
 If you cloned it on your computer, just make sure you've installed Numpy and run:
 `cd /NeuralNetwork`
 <br/>
@@ -149,7 +152,7 @@ If you are running the NN on repl (Using the link above), simply hit the run but
 Sometimes it may ask you to configure your run button, if that's the case, set it to `python3 NeuralNetwork.py` and it should work.
 
  
-# Get The Results!
+## Get The Results!
  
 We will prompt the user for inputs:
 ```python
@@ -176,7 +179,7 @@ Something close to 1, for example `[0.99358931]`
 
 Note that our neural network will never output exactly 1, i'll leave it up to you to figure out why.
 
-# Why Are We Getting This Output?
+## Why Are We Getting This Output?
 
 The neural network learns that if the inputs are [1,1,1], [1,0,1], or [1,0,0] that the output is 1, and otherwise 0.
 
@@ -205,7 +208,7 @@ trainingOutputs = np.array([[0,1,1,0]]).T
 View code here: [https://github.com/JohnLins/NeuralNetwork](https://github.com/JohnLins/NeuralNetwork)
 Run code here: [https://repl.it/@JohnLins/NeuralNetwork](https://repl.it/@JohnLins/NeuralNetwork)
  
-# Final code
+## Final code
 ```python
 import numpy as np
 
@@ -267,7 +270,7 @@ print(base(np.array([input1, input2, input3])))
 ```
 
 
-# How to Hack it!
+## How to Hack it!
 
 The easiest way to experiment and learn is by changing up the training data. See if you can teach it something new!
 Maybe try inversing the output data like this:
