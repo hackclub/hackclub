@@ -88,13 +88,14 @@ def base(inputs):
 ```
  
 ## Train
-This is the most important part in building a neural network, here, we will create the `train` function.
+Are you exited? We will create the `train` function!
+
+This is the most important part of our neural network, without it, we wouldn't be unable to teach it cool tricks!
+
  
 Within the `train` function, we will input a few arguments. These arguments include: training inputs, training outputs, and training iterations.
  
-You might be asking, "Why do we include the outputs? Isn't that what the NN has to figure out itself?" 
- 
-The reason why we include the outputs is because we need the correct outputs in training so we can calculate the error.
+You might be asking, "Why do we include the outputs? Isn't that what the NN has to figure out itself?" The reason why we include the outputs is because we need the correct outputs in training so we can calculate the error.
  
  
 ```python
