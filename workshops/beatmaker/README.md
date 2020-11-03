@@ -1,18 +1,18 @@
 ---
 name: 'Drum Pad'
-description: 'Build a drumpad/beat maker in HTML/CSS & JS'
+description: 'Build a Drum Pad in HTML/CSS & JS'
 author: '@emmanuel39hanks'
 ---
 
-# Creating a DrumPad/Beat Maker in HTML, CSS & JavaScript
+# Creating a Drum Pad in HTML, CSS & JavaScript
 
   
 
-![Beat Maker Preview](https://i.ibb.co/r0JLpWB/Annotation-2020-09-20-200719.png)
+![Drum Pad Preview](https://i.ibb.co/r0JLpWB/Annotation-2020-09-20-200719.png)
 
   
 
-_Preview of the DrumPad/Beat Maker we are going to be creating._
+_Preview of the Drum Pad we are going to be creating._
 
   
 
@@ -33,7 +33,7 @@ In this workshop, you're going to create a drum pad/beatmaker that plays sounds 
 Head over to repl.it(https://repl.it/) and we will get started by creating an HTML/CSS & JavaScript project. Once the project is set up, navigate to your `index.html` file, and we can start working on the pad layout. 
   
 
-## Creating the pad layout
+## Part 1
 
   
 
@@ -43,7 +43,7 @@ We are going to start writing HTML; going into our `<body>` tag, which is where 
 
 ```html
 
-<h1>BEAT MAKER</h1>
+<h1>DRUM PAD</h1>
 
   
 
@@ -89,7 +89,7 @@ We are going to start writing HTML; going into our `<body>` tag, which is where 
 
 And if we run our code, it should look like this.
 
-Not so compelling, right? We will now write some CSS, which will style our HTML document and make our Beat Maker look prettier. Let's do that.
+Not so compelling, right? We will now write some CSS, which will style our HTML document and make our drum pad look prettier. Let's do that.
 
   
 
@@ -257,8 +257,6 @@ If you run your code, nothing has changed. That's because we are using classes t
 
 ```
 
-  
-
 ![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://i.ibb.co/TLFcmvk/aasdasd.png)
 
 And when we rerun our code, it should look like this.
@@ -272,33 +270,33 @@ We will first start with adding color to our pads through the `style=""` html at
 ```html
 <div  class="pad">
 
-<div  class="box"  style="background-color: #E5446D">A</div>
+<div  class="box">A</div>
 
-<div  class="box"  style="background-color: #44aae5">B</div>
+<div  class="box">B</div>
 
-<div  class="box"  style="background-color: #e044e5">C</div>
+<div  class="box">C</div>
 
-<div  class="box"  style="background-color: #4f97c7">D</div>
-
-  
-
-<div  class="box"  style="background-color: #7fe544">E</div>
-
-<div  class="box"  style="background-color:#e56444">F</div>
-
-<div  class="box"  style="background-color: #44e595">G</div>
-
-<div  class="box"  style="background-color: #11b619">H</div>
+<div  class="box">D</div>
 
   
 
-<div  class="box"  style="background-color:#44e559">I</div>
+<div  class="box">E</div>
 
-<div  class="box"  style="background-color:#3679df">J</div>
+<div  class="box">F</div>
 
-<div  class="box"  style="background-color: #df581a">K</div>
+<div  class="box">G</div>
 
-<div  class="box"  style="background-color: #ff0496">L</div>
+<div  class="box">H</div>
+
+  
+
+<div  class="box">I</div>
+
+<div  class="box">J</div>
+
+<div  class="box">K</div>
+
+<div  class="box">L</div>
 
 </div>
 ```
@@ -351,7 +349,7 @@ transition: all  0.2s;
 We are done with our styling and layout.
   
 
-## Adding sound with JavaScript
+## Part 2
 
   
 
