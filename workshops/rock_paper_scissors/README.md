@@ -131,7 +131,7 @@ def win():
   print (message)
   print('Computer =', PC, '\n', name, '=', You)
 ```
-Now we will make a function that will be called only when the player will lose.
+Now we will make a function that will be called only when the player losses.
 ```py
 def lose():
   global PC
@@ -139,7 +139,7 @@ def lose():
   print (message)
   print('Computer =', PC, '\n', name, '=', You)
 ```
-Now we have to call these functions at the right places.
+Now we have to call these functions in the right places.
 
 
 First we will assume that the outcome is a tie to do that enter the following code:
