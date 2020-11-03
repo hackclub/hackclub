@@ -106,11 +106,7 @@ font-family: 'Roboto', sans-serif;
 
 ![Preview of HTML with CSS applied, to change the layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
 
-  
-
 The major thing you will notice when we run our code this time is that our content has been aligned to the center.
-
-  
 
 We want to style the header to give it spaces and then create three rows and four columns to correctly align the pads and give them a box or container look. We will do just that.
 
@@ -208,42 +204,7 @@ If you run your code, nothing has changed. That's because we are using classes t
 
 And when we rerun our code, it should look like this.
 
-We are now going to add colors, make hovering effects, inactive or active states, to make it stand out and make the experience better. We will do that with the following code:
-
-We will first start with adding color to our pads through the `style=""` html attribute to give each pad it's unique color:
-
-```html
-<div  class="pad">
-
-<div  class="box">A</div>
-
-<div  class="box">B</div>
-
-<div  class="box">C</div>
-
-<div  class="box">D</div>
-
-<div  class="box">E</div>
-
-<div  class="box">F</div>
-
-<div  class="box">G</div>
-
-<div  class="box">H</div>
-
-<div  class="box">I</div>
-
-<div  class="box">J</div>
-
-<div  class="box">K</div>
-
-<div  class="box">L</div>
-
-</div>
-```
-What we did above is we gave each nested `div` the `style=""` and assigned a unique background color for each pad.
-
-We will write the code that will give our pads hovering effects, inactive or active states.
+We will write code to make hovering effects, inactive or active states, to make it stand out. and make the experience better. We will do that with the following code
 
 ```css
 
