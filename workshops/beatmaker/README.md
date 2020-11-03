@@ -12,7 +12,7 @@ _Preview of the Drum Pad we are going to be creating._
 
 In this workshop, you're going to create a drum pad/beatmaker that plays sounds in less than 230 lines of code.
 
-[Link to demo](https://BeatMaker.emmanuel39hanks.repl.co)
+[Link to demo](https://drumpad.emmanuel39hanks.repl.co)
 
 ## Getting started
 
