@@ -1,7 +1,0 @@
-{
-  "name": "twilio-basic",
-  "dependencies": {
-    "uglify": "^0.1.5"
-  },
-  "devDependencies": {}
-}
