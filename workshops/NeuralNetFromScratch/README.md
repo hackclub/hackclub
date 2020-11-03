@@ -1,6 +1,6 @@
 ---
 name: 'Neural Network from Scratch'
-description: '*Learn* the correct numerical output'
+description: 'How to build a neural network from scratch*Learn* the correct numerical output'
 author: '@johnlins'
 img: 'https://cloud-o368n9khl.vercel.app/0cover.png'
 ---
@@ -172,7 +172,7 @@ input 3: 1
 Output:
 Something close to 1, for example `[0.99358931]`
 
-Note that the output will never be exactly 1, the reason for this is simple... neural networks will never have 100% certainty.
+Note that our neural network will never output exactly 1, i'll leave it up to you to figure out why.
 
 # Why Are We Getting This Output?
 
@@ -189,7 +189,7 @@ To help visualize what the training data is saying, I have created a table:
 | [0,1,1] | 0 |
 
 Can you see it in the code now?
-```
+```python
 trainingInputs = np.array([[0,0,1],
                             [1,1,1],
                             [1,0,1],
@@ -264,4 +264,25 @@ print("Output data: ")
 print(base(np.array([input1, input2, input3])))
 ```
 
+
+# How to Hack It!
+
+The easiest way to experiment and learn is by changing up the training data. See if you can teach it something new!
+Maybe try inversing the output data like this:
+```python
+trainingOutputs = np.array([[1,0,0,1]]).T
+```
+
+Additionally, try changing the activation function to something else. Maybe tanH or GeLU! See if the output differs!
+
+Here is the code for reLU
+```python
+def rectified(x):
+	return max(0.0, x)
+ ```
+ 
+Don't forget that you must change the derivative accordingly!
+In fact, that's another great way to experiment!
+
+View a (full list of popular activation functions)[https://en.wikipedia.org/wiki/Activation_function] with their derivatives here.
 
