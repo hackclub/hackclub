@@ -34,7 +34,7 @@ Usually, the `public/` directory contains an HTML file and all your assets. We w
 
 Next is the `src/` directory which contains all your JavaScript files and your CSS files. We have an `index.js` file, which basically renders our React code. The `style.css` file is already written for you.
 
-Next is the `App.js` file. Now basically, when we build big projects, we don't start directly with the `App.js` file. We create small components and then add them together in the `App.js` component. But today, we'll be building a quotes generator, which turns out to be pretty small and easy. So, we'll start writing our code directly in the `App.js` component to avoid making unnecessary components.
+Next is the `App.js` file. Now basically, when we build big projects, we don't start directly with the `App.js` file. We create small components and then add them together in the `App` component. But today, we'll be building a quotes generator, which turns out to be pretty small and easy. So, we'll start writing our code directly in the `App` component to avoid making unnecessary components.
 
 This is what our `App.js` file looks right now.
 
@@ -78,11 +78,11 @@ This is what your preview window should look like:
 
 ![Preview window](https://cloud-1ugc07d1z.vercel.app/0image.png)
 
-Basically, we'll be making an API request to a url which will return us a json of quotes and their authors. Then we'll store this data in a state using `useState` so we can re-render our component whenever it changes.
+Basically, we'll be making an API request to a url which will return us a json of quotes and their authors. Then we'll store this data in a state using the `useState` hook so we can re-render our component whenever it changes.
 
 The url where we will make the request is - `https://type.fit/api/quotes`.
 
-If you open this link in the browser, you'll see a json file!
+If you open this link in the browser, you'll see a json file full of quotes!
 
 Let's start working with it.
 
@@ -104,7 +104,7 @@ export default function App() {
 
 Explanation: We create a `url` variable using `const` so its value never changes again and assign it to the API URL. Then we'll import `useState` from `react` and using the basic boilerplate code, we create a `quotes` state. It is currently assigned to an empty object, but will be replaced soon!
 
-Now let's write a function which will make the API request and fetch the data from that URL. We'll use `async functions` for that because it will return us a promise. We'll also use `await` inside the `async function`.
+Now let's write a function which will make the API request and fetch the data from that URL. We'll use `async functions` because it will return us a promise. We'll also use `await` inside the `async function`.
 
 The `await` operator is used to wait for a `Promise` to either resolve or reject. It can only be used inside an `async function`.
 
@@ -126,11 +126,11 @@ async function getQuotes() {
 }
 ```
 
-Explanation: Inside our async function, we add a `try` / `catch` block, which will help us to get the data or throw errors if not successful. We create a variable called `res` (shortform for `response`) which will store the response we get after we fetch the data from the API URL. Now this response is not yet ready to use and we need to convert it to `json()` format before using it. So we store that json formatted data in the `data` variable. And lastly, we store all the data inside our `quotes` state.
+Explanation: Inside our async function, we add a `try` / `catch` block, which will help us to get the data or throw errors if not successful. We create a variable called `res` (shortform for `response`) which will store the response we get after we fetch the data from the API URL. Now this response is not yet ready to use and we need to convert it to `json()` format before using it. So we store that json formatted data in the `data` variable. And lastly, we store all the data inside our `quotes` state using `setQuotes`.
 
 The `catch` block will simply catch an error (if any) and then log it to the console.
 
-Our `async` function is ready and we can now use the data we got from the API request.
+Our `async` function is complete and we can now use the data we got from the API request.
 
 Now if we take a look at the value stored inside our state, we'll notice that it is a whole big array consisting of 100s of objects containing quotes! We only need to display 1 random quote at a time. So, for this, we only need to store a single random object from that array inside our state.
 
@@ -142,11 +142,11 @@ const randomNo = () => Math.floor(Math.random() * data.length) + 1;
 
 Now this function will always return a random number between 1 and `data.length` (the length of the `data` array).
 
-The browser must be yelling at you that `data` is undefined. Its coz we have defined it later inside our component. So, a quick fix for this will be to create a `data` variable using `let` above our `randomNo` and remove the `const` keyword from the `data` inside the async function.
+The browser must be yelling at you that `data` is undefined. It is because we have defined it later inside our component. So, a quick fix for this will be to create a `data` variable using `let` above our `randomNo()` function and remove the `const` keyword from the `data` inside the async function.
 
 What we basically did is that we already defined `data` but we'll pass the value to it later inside the `async function`.
 
-Now we have a random number generated everytime the `randomNo` function is called. And if we pass it to an array, it will return us the value on that index. So, inside the async function, when we set the state, we'll add square brackets to `data` and call `randomNo()` in it.
+Now we have a random number generated everytime the `randomNo()` function is called. And if we pass it to an array, it will return us the value on that index. So, inside the async function, when we set the state, we'll add square brackets to `data` and call `randomNo()` in it.
 
 ```jsx
 setQuotes(data[randomNo()]);
@@ -201,9 +201,13 @@ import React, { useState, useEffect } from "react";
 ```
 
 ```jsx
-useEffect(() => {
-  getQuotes();
-}, []);
+export default function App() {
+  const [quotes, setQuotes] = useState({});
+
+  useEffect(() => {
+    getQuotes();
+  }, []);
+  // Rest of the code
 ```
 
 Learn more about the [`useEffect`](https://medium.com/javascript-in-plain-english/react-hooks-how-to-use-useeffect-ecea3e90d84f) hook.
@@ -222,7 +226,7 @@ return (
 );
 ```
 
-Explanation: The quote (which is in the object as `text`) is now rendered on the page. Notice how I used a [`ternary operator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) to render the author name. It is because, there are some quotes which don't have an author, so we check if there's an author inside our object. If its there, we render the name of the author. If its not there, we render `Anonymous` on the browser screen.
+Explanation: The quote (which is in the object as `text`) is now rendered on the page. Notice how I used a [`ternary operator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) to render the author name. It is because, there are some quotes which don't have an author, so we check if there's an author inside our object. If it's there, we render the name of the author. If its not there, we render `Anonymous` on the browser screen.
 
 Now if you look at the preview window, you'll see that we are pretty much done! The last thing remaining is to add an `onClick` to our button.
 
@@ -232,7 +236,7 @@ Now if you look at the preview window, you'll see that we are pretty much done! 
 
 Whenever the button will be clicked, the `getQuotes()` function will be called which will return a new random quote, resulting into a state change which will cause our component to re-render!
 
-<detaidls><summary>The Final Code:</summary>
+<details><summary>The Final Code:</summary>
 
 ```jsx
 import React, { useEffect, useState } from "react";
@@ -279,7 +283,7 @@ This what our project looks like:
 
 Yay! We are done! We learnt how to handle APIs in React and we built a simple but sweet random quotes generator!!
 
-[Yaaaay](https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif)
+![Yaaaay](https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif)
 
 ## Part 4: The End
 
