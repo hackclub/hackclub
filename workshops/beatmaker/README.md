@@ -6,46 +6,25 @@ author: '@emmanuel39hanks'
 
 # Creating a Drum Pad in HTML, CSS & JavaScript
 
-  
-
 ![Drum Pad Preview](https://i.ibb.co/r0JLpWB/Annotation-2020-09-20-200719.png)
-
-  
 
 _Preview of the Drum Pad we are going to be creating._
 
-  
-
 In this workshop, you're going to create a drum pad/beatmaker that plays sounds in less than 230 lines of code.
-
-  
 
 [Link to demo](https://BeatMaker.emmanuel39hanks.repl.co)
 
-  
-
 ## Getting started
 
-  
-
-  
-
 Head over to repl.it(https://repl.it/) and we will get started by creating an HTML/CSS & JavaScript project. Once the project is set up, navigate to your `index.html` file, and we can start working on the pad layout. 
-  
 
 ## Part 1
 
-  
-
 We are going to start writing HTML; going into our `<body>` tag, which is where we write code that will be shown to the client, create a header with the `<h1>` tag, and then we will have three rows, and four columns of pads and each pad will be a `<div>,` you can think of the `<div>` tag as a box or container.
-
-  
 
 ```html
 
 <h1>DRUM PAD</h1>
-
-  
 
 <div>
 
@@ -56,9 +35,7 @@ We are going to start writing HTML; going into our `<body>` tag, which is where 
 <div>C</div>
 
 <div>D</div>
-
   
-
 <div>E</div>
 
 <div>F</div>
@@ -66,8 +43,6 @@ We are going to start writing HTML; going into our `<body>` tag, which is where 
 <div>G</div>
 
 <div>H</div>
-
-  
 
 <div>I</div>
 
@@ -81,21 +56,13 @@ We are going to start writing HTML; going into our `<body>` tag, which is where 
 
 ```
 
-  
-
 ![Preview of HTML with no CSS](https://i.ibb.co/72XvNn3/Annotation-2020-09-20-204442.png)
-
-  
 
 And if we run our code, it should look like this.
 
 Not so compelling, right? We will now write some CSS, which will style our HTML document and make our drum pad look prettier. Let's do that.
 
-  
-
 Just before the end of your `<head>` tag, link your CSS file:
-
-  
 
 ```html
 
@@ -103,15 +70,9 @@ Just before the end of your `<head>` tag, link your CSS file:
 
 ```
 
-  
-
 Your CSS file should now be linked, and we can start writing our CSS code.
 
-  
-
 We will start by writing code for our document to change the colors, adding fonts, height, width, and more. We are also going to be using the font Roboto (https://fonts.google.com/specimen/Roboto?query=roboto), to do that at the top of our CSS file, we will import it using the line `@import 'https://fonts.googleapis.com/css?family=Roboto';`
-
-  
 
 ```css
 
@@ -143,8 +104,6 @@ font-family: 'Roboto', sans-serif; // The CSS font-family  property is used to s
 
 ```
 
-  
-
 ![Preview of HTML with CSS applied, to change the layout](https://i.ibb.co/qgY3jCv/Annotation-2020-09-20-210409.png)
 
   
@@ -154,8 +113,6 @@ The major thing you will notice when we run our code this time is that our conte
   
 
 We want to style the header to give it spaces and then create three rows and four columns to correctly align the pads and give them a box or container look. We will do just that.
-
-  
 
 ```css
 
@@ -180,8 +137,6 @@ justify-content: space-between;
 flex-wrap: wrap; // The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines.
 
 }
-
-  
 
 .box {
 
@@ -215,11 +170,7 @@ border: 2px  solid; // Adds a solid 2 pixel border around our box
 
 ```
 
-  
-
 If you run your code, nothing has changed. That's because we are using classes to group our HTML elements. Let's go back to our `index.html` and to our `<div>` we will want to add the class name `box` to our nested `div` elements, and the parent header will be given the class name `pad`:
-
-  
 
 ```html
 
@@ -233,8 +184,6 @@ If you run your code, nothing has changed. That's because we are using classes t
 
 <div  class="box">D</div>
 
-  
-
 <div  class="box">E</div>
 
 <div  class="box">F</div>
@@ -242,9 +191,7 @@ If you run your code, nothing has changed. That's because we are using classes t
 <div  class="box">G</div>
 
 <div  class="box">H</div>
-
   
-
 <div  class="box">I</div>
 
 <div  class="box">J</div>
@@ -261,8 +208,6 @@ If you run your code, nothing has changed. That's because we are using classes t
 
 And when we rerun our code, it should look like this.
 
-  
-
 We are now going to add colors, make hovering effects, inactive or active states, to make it stand out and make the experience better. We will do that with the following code:
 
 We will first start with adding color to our pads through the `style=""` html attribute to give each pad it's unique color:
@@ -278,8 +223,6 @@ We will first start with adding color to our pads through the `style=""` html at
 
 <div  class="box">D</div>
 
-  
-
 <div  class="box">E</div>
 
 <div  class="box">F</div>
@@ -287,8 +230,6 @@ We will first start with adding color to our pads through the `style=""` html at
 <div  class="box">G</div>
 
 <div  class="box">H</div>
-
-  
 
 <div  class="box">I</div>
 
@@ -342,21 +283,15 @@ transition: all  0.2s;
 
 ```
 
-  
-
 ![Preview of HTML with our finished layout CSS applied, and our pads colored](https://i.ibb.co/LpYQY6N/asdasdasdasdasdasd.png)
 
 We are done with our styling and layout.
-  
 
 ## Part 2
-
-  
 
 And finally, we are done with our CSS. It now looks good, but when you click on the buttons, we have no sound. We need to write our JavaScript code that will get us sound.
 
 Navigate to the `index.html` file. Then, just before the end of your `<body>` tag, import your `script.js` file that will be used when our document loads:
-
 
 ```html
 
@@ -364,10 +299,7 @@ Navigate to the `index.html` file. Then, just before the end of your `<body>` ta
 
 ```
 
-  
-
 We will then start writing our JavaScript code in the `script.js` file.
-
 
 ```javascript
 function  play(link) {
@@ -379,15 +311,12 @@ audio.load();
 audio.play();
 
 }
-
 ```
 What we did above is we created a function called `play()` and it receives a parameter with the name `link`, which is the link to the sound hosted on AWS (Amazon Web Services), don't worry, you won't need to host your files by yourself. You can use mine. We then create an audio object and pass the `link` to the object, and then what we do is we just load the audio with the `load()` function and play it with the `play` function.
-
 
 All we need to do now is add an on click event to each of our nested `divs` then we call the `play()` function and pass the link to the sound file as our parameter.
 
 Luckily the code required to playing sound is little all we have to do is navigate to our `index.html` file first, and then we add the `onclick=""` html attribute, and inside we call the `play(link)` with the link inside like below:
-
   
 ```html
 
@@ -401,8 +330,6 @@ Luckily the code required to playing sound is little all we have to do is naviga
 
 <div  class="box"  style="background-color: #4f97c7"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/RS.mp3')">D</div>
 
-  
-
 <div  class="box"  style="background-color: #7fe544"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/OH25.mp3')">E</div>
 
 <div  class="box"  style="background-color:#e56444"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/MA.mp3')">F</div>
@@ -410,8 +337,6 @@ Luckily the code required to playing sound is little all we have to do is naviga
 <div  class="box"  style="background-color: #44e595"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CY0010.mp3')">G</div>
 
 <div  class="box"  style="background-color: #11b619"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CH.mp3')">H</div>
-
-  
 
 <div  class="box"  style="background-color:#44e559"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CB.mp3')">I</div>
 
@@ -432,11 +357,7 @@ Try it out by clicking the pads and see the magic!
  
 ## Publishing
 
-  
-
 Now that you have finished building it, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL! Don't forget to share it with me on Slack @emmanuel39hanks.
-
-  
 
 ## Resources
   
@@ -450,8 +371,6 @@ Now that you have finished building it, you should share your beautiful creation
 - Onclick event (https://www.w3schools.com/jsref/event_onclick.asp)
 - JavaScript functions (https://www.w3schools.com/js/js_functions.asp)
 
-  
-
 ## The End
 
 Suppose you haven't created an account on [repl.it](https://repl.it), make sure you do so to save this wonderful creation!
@@ -462,8 +381,6 @@ Now it is up to you! Do anything with this project, try to implement a way to pl
 
 Check out these crazy examples!
 To finish, here are some amazing, more customized drum pad machines/beatmakers made by other developers:
-
-  
 
 - A code playground on Solo Learn by Andrew Siachos (https://code.sololearn.com/WfYyBdZwc6qn/#html)
 
