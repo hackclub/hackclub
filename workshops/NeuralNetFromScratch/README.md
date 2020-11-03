@@ -20,7 +20,7 @@ The following NN is not supposed to be practical, it is supposed to serve as a f
 ---
 
 
-## Table of contents:
+# Table of contents:
 
 - [Getting Started(Initializing weights)](#Getting-started)
 - [Activation-Functions](#Activation-Functions)
@@ -30,7 +30,7 @@ The following NN is not supposed to be practical, it is supposed to serve as a f
 - [Get The Results!](#Get-The-Results!)
 - [Why Are We Getting This Output?](#Why-Are-We-Getting-This-Output?)
 - [Final Code](#Final-code)
-- [Hack it!](#How-to-Hack-It!)
+- [Hack it!](#How-to-Hack-it!)
 
 
 
@@ -268,7 +268,7 @@ print(base(np.array([input1, input2, input3])))
 ```
 
 
-# How to Hack It!
+# How to Hack it!
 
 The easiest way to experiment and learn is by changing up the training data. See if you can teach it something new!
 Maybe try inversing the output data like this:
