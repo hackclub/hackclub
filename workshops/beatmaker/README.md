@@ -317,11 +317,8 @@ Now that you have finished building it, you should share your beautiful creation
 ## Resources
   
 - HTML Docs (https://www.w3schools.com/html/)
-
 - CSS Docs (https://www.w3schools.com/css/)
-
 - JavaScript Docs (https://www.w3schools.com/js/)
-
 - Audio Object (https://www.w3schools.com/JSREF/dom_obj_audio.asp)
 - Onclick event (https://www.w3schools.com/jsref/event_onclick.asp)
 - JavaScript functions (https://www.w3schools.com/js/js_functions.asp)
