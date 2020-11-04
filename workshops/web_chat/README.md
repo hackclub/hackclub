@@ -745,11 +745,11 @@ Except... Let's actually test the application. Send the URL from above to some f
 
 ![Dumbledore and Snape partying](https://cloud-pq5lbfiab.vercel.app/3dumbledoreparty.gif)
 
-## What next?
+## What's next?
 
 We've managed to build a basic web chat, now let's build upon it and MAKE IT EXTREMELY USEFUL! This is for you to hack on, but here's some inspiration:
 
-- [Web chat with server response automation](#) In this web chat, entering some messages will trigger responses from the server - Try "Hello", "Hi", "Bye", or "Creeper"
+- [Web chat with server response automation](https://repl.it/@KhushrajRathod/DenoWebsocketChat-AutomatedResponses) In this web chat, entering some messages will trigger responses from the server - Try "Hello", "Hi", "Bye", or "Creeper"
 
 - [Web chat but clients spam randomly](#) In this web chat...There's spam. Once you join, you automatically start spamming and have no control!
 
