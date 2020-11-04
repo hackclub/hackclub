@@ -751,7 +751,7 @@ We've managed to build a basic web chat, now let's build upon it and MAKE IT EXT
 
 - [Web chat with server response automation](https://repl.it/@KhushrajRathod/DenoWebsocketChat-AutomatedResponses) In this web chat, entering some messages will trigger responses from the server - Try "Hello", "Hi", "Bye", or "Creeper"
 
-- [Web chat but clients spam randomly](#) In this web chat...There's spam. Once you join, you automatically start spamming and have no control!
+- [Web chat but clients spam randomly](https://repl.it/@KhushrajRathod/DenoWebsocketChat-Spam) In this web chat...There's spam. Once you join, you automatically start spamming and have no control!
 
 - [Web chat with basic auth](#) People using other's names to send messages? This web chat implements basic authentication and allows you to use only your ID to sign in
 
