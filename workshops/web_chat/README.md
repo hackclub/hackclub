@@ -207,7 +207,10 @@ Explanation:
       - 7/10 of the space is taken up by the message box
       - 1/10 of the space is taken up by the button 
 
-This is how the HTML should look:
+
+
+<details>
+    <summary>This is how the HTML should look:</summary>
 
 ```html
 <!DOCTYPE html>
@@ -284,15 +287,20 @@ This is how the HTML should look:
 </html>
 ```
 
+</details>
+
 ## Adding Javascript
 
 - Create a new file called frontend.js - This will be the code that runs on someone's device when they visit your webpage
-- Add a `<script src="frontend.js"></script>` just before body ends - this is how your HTML file should look now
+- Add a `<script src="frontend.js"></script>` just before body ends
+
+<details>
+    <summary> This is how your HTML file should look now: </summary>
 
 ```html
 <!DOCTYPE html>
 <html>
-
+    
 <head>
     <style>
         * {
@@ -318,7 +326,7 @@ This is how the HTML should look:
             height: 90%;
             overflow: auto;
         }
-
+    
         #controls {
             width: 100%;
             height: 10%;
@@ -350,7 +358,7 @@ This is how the HTML should look:
         }
     </style>
 </head>
-
+    
 <body>
     <div id="messageLog"></div>
     <div id="controls">
@@ -364,6 +372,8 @@ This is how the HTML should look:
 </body>
 </html>
 ```
+
+</details>
 
 Congratulations on making it so far!
 
@@ -535,7 +545,9 @@ await socket.send(JSON.stringify({
 }))
 ```
 
-This is how your index.ts file should look now:
+
+<details>
+    <summary> This is how your index.ts file should look now: </summary>
 
 ```js
 import { serve } from "https://deno.land/std@0.75.0/http/server.ts"
@@ -593,6 +605,8 @@ async function handleWs(socket: WebSocket) {
 }
 ```
 
+</details>
+
 We need references to the current message and name of the user in frontend.js. Add the following just after `document.addEventListener("DOMContentLoaded", _ => {`:
 
 ```js
@@ -617,7 +631,8 @@ Below the last line inside `ws.onmessage`, add:
 addMessages(msg.data)
 ```
 
-Here's how "frontend.js" should look now
+<details>
+    <summary> Here's how "frontend.js" should look now </summary>
 
 ```js
 let ws
@@ -648,6 +663,8 @@ document.addEventListener("DOMContentLoaded", _ => {
     }
 })
 ```
+
+</details>
 
 If you hit run now, you should see "SERVER: Hello, welcome to the webchat!". 
 
@@ -753,6 +770,6 @@ We've managed to build a basic web chat, now let's build upon it and MAKE IT EXT
 
 - [Web chat but clients spam randomly](https://repl.it/@KhushrajRathod/DenoWebsocketChat-Spam) In this web chat...There's spam. Once you join, you automatically start spamming and have no control!
 
-- [Web chat with basic auth](#) People using other's names to send messages? This web chat implements basic authentication and allows you to use only your ID to sign in
+- [Web chat with basic auth](#) People using others' names to send messages? This web chat implements basic authentication and allows you to use only your ID to sign in
 
 Did you make something awesome? Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6) in the Hack Club Slack and tag me with [@KhushrajRathod](https://hackclub.slack.com/team/U01C21G88QM)
