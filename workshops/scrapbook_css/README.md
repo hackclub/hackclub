@@ -1,6 +1,6 @@
 ---
-name: Creating a jaw-dropping Scrapbook
-description: A simple introduction to CSS and its wonderful quirks!
+name: Amazing Scrapbook CSS
+description: Customize your Scrapbook through simple CSS
 author: '@sampoder'
 ---
 
