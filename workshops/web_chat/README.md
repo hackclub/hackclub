@@ -5,6 +5,8 @@ author: '@KhushrajRathod'
 img: https://cloud-pq5lbfiab.vercel.app/2cover.png
 ---
 
+# Web Chat 
+
 Today, most of us use tons of messaging apps. Whether it's Slack, Whatsapp, Telegram, Hangouts, Discord, Facebook, Instagram, Messenger, Snapchat, Signal, Twitter, or iMessage, different friend circles will use different apps. 
 
 What if we create our *own chat*?!  
@@ -14,7 +16,7 @@ Here's the [final code](https://repl.it/@KhushrajRathod/DenoWebsocketChat) and [
 
 If you get stuck anywhere in this workshop, feel free to ask me questions! I'm @KhushrajRathod on the [Hack Club Slack](https://hackclub.com/slack/).
 
-# Prerequisites
+## Prerequisites
 
 You must either:
 
@@ -24,8 +26,8 @@ OR
 OR
 - Be willing to learn how to Google (This is not a joke, learning how to use google to get what you want fast is essential while coding. Check out this [workshop](https://workshops.hackclub.com/personal_website/) to make a personal website and level up your google-fu!)
 
-# Part 1: Preparing your environment
-## Preparing repl.it
+## Part 1: Preparing your environment
+### Preparing repl.it
 
 Today we'll be using repl.it. Repl.it is an online code editor that we can use so we don't have to download a lot of stuff or resort to _Notepad/TextEdit_. Think of it as Google Docs, but for code (and also much more fun :D).
 
@@ -58,8 +60,8 @@ You just finished Part 1!!
 
 ![Minions cheering](https://cloud-pq5lbfiab.vercel.app/0cheer.gif)
 
-# Part 2: Preparing your website
-## Thinking about the website layout
+## Part 2: Preparing your website
+### Thinking about the website layout
 
 The first step to making any UI is to think about how it'll look. Get some paper to start prototyping (or open your digital image editor if you're into that)
 
@@ -82,7 +84,7 @@ The first step to making any UI is to think about how it'll look. Get some paper
 
 ![Message layout example inside larger rectangle, name on the left of the message rectangle and message content in the center](https://cloud-91xu3gqm8.vercel.app/4weblayout4.png)
 
-## Adding the HTML
+### Adding the HTML
 
 The HTML is the structure of the webpage. We won't be going into too much detail in this section -- to learn more about HTML and CSS, check out [this workshop on making your first website](https://workshops.hackclub.com/personal_website/). Add the following code to your HTML file
 
@@ -112,7 +114,7 @@ I'll quickly explain this code:
     - The `<textarea>` (a multi-line `<input>`) is for the user to type their message
     - The `<button>` will allow the user to send their message
 
-## Adding the CSS
+### Adding the CSS
 
 Since our frontend doesn't contain a lot of code, we'll be using an inline stylesheet - This means that all our CSS will be stored within the index.html file. For larger projects, you'll want to use [external stylesheets](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link). To write inline CSS, we'll create a `<style></style>` inside the `<head></head>`
 
@@ -289,7 +291,7 @@ Explanation:
 
 </details>
 
-## Adding Javascript
+### Adding Javascript
 
 - Create a new file called frontend.js - This will be the code that runs on someone's device when they visit your webpage
 - Add a `<script src="frontend.js"></script>` just before body ends
@@ -379,7 +381,7 @@ Congratulations on making it so far!
 
 ![Hermione, Ron and Seamus cheering](https://cloud-pq5lbfiab.vercel.app/1cheer2.gif)
 
-# Programming the server (and frontend Javascript)
+## Programming the server (and frontend Javascript)
 
 > As (at the time of writing) Deno is still in beta @repl.it, you'll want to ignore any errors regarding import, await, and the Deno object.
 
@@ -759,7 +761,7 @@ Enter different names on separate tabs and send messages as if you're having a c
 CONGRATULATIONS ON MAKING IT! YOU'VE SUCCESSFULLY MADE A WEB CHAT.
 
 Except... Let's actually test the application. Send the URL from above to some friends and then PARTY!
-
+ 
 ![Dumbledore and Snape partying](https://cloud-pq5lbfiab.vercel.app/3dumbledoreparty.gif)
 
 ## What's next?
