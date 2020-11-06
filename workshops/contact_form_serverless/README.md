@@ -1,6 +1,8 @@
+---
 name: 'Serverless Contact Form'
 description: 'Make a website “contact me” form using Netlify serverless functions'
 author: '@shreyfirst'
+---
 
 # Make a "contact me" form
 
