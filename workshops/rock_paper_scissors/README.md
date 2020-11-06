@@ -91,7 +91,7 @@ You = 0
 PC = 0
 ```
 
-### 3)Keeping the game in a loop
+### 3) Keeping the game in a loop
 ![loop](https://cloud-nmra250be.vercel.app/loop.gif)
 
 For this, I'll use a `while` loop but you can also use `for` loops!
@@ -286,7 +286,7 @@ Here are some things which you can do:
 - Make the game only of 3 turns instead of running it infinitely.
 - You can give the text a typewriter effect. (If you don't know how to do it watch [this][typewritter] video)
 
-**Examples on how you can customized it:**
+**Demos from people who have hacked this workshop:**
 
 - [Adding new actions](https://repl.it/@JackTDC/Rock-Paper-Scissors-Lizard-Spock)
 - [Changing the interface](https://repl.it/@JackTDC/Rock-Paper-Scissors#main.py)
