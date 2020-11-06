@@ -1,15 +1,13 @@
----
 name: 'Serverless Contact Form'
 description: 'Make a website “contact me” form using Netlify serverless functions'
 author: '@shreyfirst'
----
 
 # Make a "contact me" form
 
 In this tutorial, you will learn how to use:
 
 - [HTTP POST](https://www.w3schools.com/tags/ref_httpmethods.asp) requests
-- Serverles functions ([Netlify functions](https://www.netlify.com/products/functions/)/[AWS Lambda](https://aws.amazon.com/lambda/))
+- Serverless functions ([Netlify functions](https://www.netlify.com/products/functions/)/[AWS Lambda](https://aws.amazon.com/lambda/))
 - [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) communication packages
 
 You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someone to submit a form and it will send you (or anyone you choose) and email, all within a few seconds.
@@ -18,22 +16,30 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
 
 **Average time for completion:** You can complete this in <u>15-20 minutes</u>. You will need the following tools:
 
-- [Repl.it](https://repl.it/) online coding platform (no account nessesary, but highly reccomended)
+- [Repl.it](https://repl.it/) online coding platform (no account necessary, but highly recommended)
 - [Github](https://github.com/) account
 - [Netlify](https://netlify.com/) account
 
-### First, let's make the form that you want to recieve emails with.
+**Demo:** Test out what we'll be making on this demo! Enter your email under the email space and you should get an email!
+
+![Demo of what the website will look like](https://cloud-rntkwewk8.vercel.app/0image.png)
+
+### First, let's make the form that you want to receive emails with.
 
 1. Go to to [Repl.it](https://repl.it/) and either:
 
    1. Create an account
    2. Click the "Start coding" button on the top right
 
-2. Choose "HTML/CSS/JS"
+   **The website will look a little like this:** 
+
+   ![Repl.it website)@2x](https://cloud-cnenr6ov1.vercel.app/0image.png)
+
+1. Choose "HTML/CSS/JS"
 
    1. This means that we will be coding in different web languages. HTML is like the text files, CSS is similar to the design element, and JS is anything special like animations, etc.
 
-3. The first thing we want to do is create an [HTML form](https://www.w3schools.com/html/html_forms.asp). An HTML form is used to collect input from the user and (typically) send it to a specific server to handle that data. In our case, we haven't made our server yet, but we'll be taking the data into our server, then using that data to send an email.
+2. The first thing we want to do is create an [HTML form](https://www.w3schools.com/html/html_forms.asp). An HTML form is used to collect input from the user and (typically) send it to a specific server to handle that data. In our case, we haven't made our server yet, but we'll be taking the data into our server, then using that data to send an email.
 
    1. A form element is wrapped with a `<form>` tag.
       - Here is a sample code block with a form:
@@ -68,11 +74,11 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
      <label for="name">Name</label> <br />
      <input type="text" id="name" name="name" placeholder="John Doe" />
      <br /><br />
-
+   
      <label for="email">Your email</label><br />
      <input type="text" id="email" name="email" placeholder="john@doe.com" />
      <br /><br />
-
+   
      <label for="subject">Subject</label><br />
      <input
        type="text"
@@ -81,14 +87,18 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
        placeholder="I have a question..."
      />
      <br /><br />
-
+   
      <label for="message">Message</label><br />
      <input type="text" id="message" name="message" placeholder="Hi Shrey..." />
      <br /><br />
-
+   
      <input type="submit" value="Submit" />
    </form>
    ```
+
+   **After you have this code in, you website should look like this:**
+
+   ![Screenshot of what your Repl dashboard and website should look like](https://cloud-frgydm7lb.vercel.app/0image.png)
 
    Above I talked a little bit about about [_HTML tag properties_](https://www.w3schools.com/html/html_attributes.asp). People have different words for these, like HTML attributes or properties. I like to call them properties (or props) because it helps when understanding more complex web languages like [React](https://reactjs.org/).
 
@@ -96,7 +106,7 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
    - Let's learn a little bit about the `<form>` tag's properties.
      - Two important ones are: `method` and `action` .
      - `method` is essentially what kind of HTTP request you want to send. You can learn about it here on [Mozilla's web documentation (another trusted site).](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
-       - The main types are GET and POST. It's really simple to understand, GET means you want to recieve data from a server and POST data means you want to give data to a server. We want to use POST for our method on this form because we're GIVING data TO the server to handle and email us.
+       - The main types are GET and POST. It's really simple to understand, GET means you want to receive data from a server and POST data means you want to give data to a server. We want to use POST for our method on this form because we're GIVING data TO the server to handle and email us.
      - `action` is the _who_ you want to send data to. This is a server URL/path that can handle data.
      - **ACTION:** Let's update our code to have these two attributes. Update the **first** line of your code to have this:
 
@@ -110,7 +120,7 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
 
    - Once you try it and click submit, you may realize that it takes you to a dead link! Little did you know that it tried sending data to a server that isn't real.
    - Let's dig a little bit deeper and see what that data looks like.
-     - To some this might seem like some glorified verion of hacking a website, but really we are seeing how the data moves! Follow the instruction in the GIF below.
+     - To some this might seem like some glorified version of hacking a website, but really we are seeing how the data moves! Follow the instruction in the GIF below.
        1. Enter form data
        2. Open Inspect Element (right click and click _Inspect_)
           1. It may open on the bottom or the side, either one is just fine.
@@ -122,17 +132,19 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
           2. The most important information we see is the data at the bottom.
              1. When data is sent to a server, this is how it's being sent. It uses a [x-www-form-urlencoded](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) format to store it.
              2. Something you might wonder is: "how did they know that my input box's name was `message` or other?" This is because of the `name` property on our input tags! Changing those will change how our form communicates with the server we will build in the next step.
-             
-<img alt="GIF of Shrey showing you how to Inspect Element and see the network requests" src="https://cloud-igmhy1ffg.vercel.app/0screenshot_taken_by_shrey_on_10-21-2020_at_20.10__11_.gif" width="25%" height="25%"/>
+
+![GIF of opening Inspect Element and seeing Network requests](https://cloud-a1akh8ybn.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_10.11__56_.gif)
 
 
-4. Now we want to build a server to handle the information that we just created. We are going to use Netlify Functions for this. Netlify allows for people to create "serverless" functions for people to use. They use a server to manage our functions, but for us, we only need to call the function. This is so we don't have to spend time worrying about maintaining, securing, and building a full server- we just get a little peice of a gigantic, already built, secure server.
+4. Now we want to build a server to handle the information that we just created. We are going to use Netlify Functions for this. Netlify allows for people to create "serverless" functions for people to use. They use a server to manage our functions, but for us, we only need to call the function. This is so we don't have to spend time worrying about maintaining, securing, and building a full server- we just get a little piece of a gigantic, already built, secure server.
 
    1. Go to [github.com](https://github.com) and either create an account OR sign in with an existing one.
 
    2. Once you are signed in, use [this repository](https://github.com/shreyfirst/workshop-netlify-function-boilerplate) as a template (you can click "Use this template") and name your repository something meaningful like "contact-form-functions."
 
       1. You are going to be editing the code directly from Github. We will set-up your repository to recompile and deploy to Netlify after every push. Your repository can be either private or public.
+
+      ![GIF of templating the Github repo](https://cloud-ohr0e5hbc.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_10.11__27_.gif)
 
    3. We will use this basic file structure for our serverless function. Notice the following file structure
 
@@ -147,7 +159,7 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
 
    ```javascript
    import nodemailer from 'nodemailer'
-
+   
    exports.handler = async (event, context) => {
      // code here
      return { statusCode: 200 }
@@ -166,7 +178,7 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
       ```javascript
       // createTestAccount is a function that creates a sample SMTP server for you to use for testing (using the https://ethereal.email service)
       let testAccount = await nodemailer.createTestAccount()
-
+      
       // right now we are "authenticating" our email service
       let transporter = nodemailer.createTransport({
         host: 'smtp.ethereal.email', // this is an SMTP address
@@ -178,7 +190,7 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
           pass: testAccount.pass,
         },
       })
-
+      
       // now we are sending the email itself, with all the data
       let info = await transporter.sendMail({
         from: 'sender@example.com',
@@ -186,7 +198,7 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
         subject: 'subject_sample',
         text: 'text_sample',
       })
-
+      
       // logging functions to get any data we may need
       console.log('Message sent: %s', info.messageId)
       console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info))
@@ -199,18 +211,22 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
 
       1. Create a new site from Git, choose your Github repo
       2. Select enter with the prefilled data, wait for it to deploy
-      3. After about a minute, click on "Functions" and you should see the function `hello`.
+      3. **After about a minute**, click on "Functions" and you should see the function `hello`.
       4. Open the function and copy + paste the link in the browser.
       5. After about a minute of staring at the blank page, go back to the function page and see if there is a new log
       6. Copy and paste the link in the log and it should take you to a site with all the email data!
-         1. Theoretically you should be getting the email in your inbox, but if you use a Gmail account, you may need to [configure your settings](https://nodemailer.com/usage/using-gmail/) for it to recieve those types of emails.
+         1. Theoretically you should be getting the email in your inbox, but if you use a Gmail account, you may need to [configure your settings](https://nodemailer.com/usage/using-gmail/) for it to receive those types of emails.
+
+      This is what the Netlify sign-in/site creation process looks like:
+
+      ![GIF of signing in to Netlify, creating a new site from a repo, and looking at the functions tab](https://cloud-ftpbk3pur.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_10.11__30_.gif)
 
    7. This is exciting! Now I can get emails from my server. I just need to connect my server and my repl.it site together!
 
       1. Remember the `x-www-form-urlencoded` item we had originally posted to the blank server when we first made the frontend website? We are going to need that data again here.
 
          - One way you can convert a `x-www-form-urlencoded` item to [JSON](https://www.w3schools.com/js/js_json_intro.asp) format is by creating a function.
-         - After we pass it in through our function, we want to "query" it to pick up all of our data. This means that you find everything by it's key value. You can dig deeper [here](https://www.w3schools.com/js/js_json_intro.asp), but I'll do an example in the next step.
+         - After we pass it in through our function, we want to "query" it to pick up all of our data. This means that you find everything by its key value. You can dig deeper [here](https://www.w3schools.com/js/js_json_intro.asp), but I'll do an example in the next step.
          - The way that our function can pick up data is using the `context` parameter in the function template.
 
          ```javascript
@@ -239,10 +255,10 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
            })
            return result
          }
-
+         
          // we are using the function here
          const body = queryStringToJSON(event.body)
-
+         
          // we are "querying" the JSON object here
          const name = body.name
          const email = body.email
@@ -254,16 +270,16 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
 
       ```javascript
       import nodemailer from 'nodemailer'
-
+      
       exports.handler = async (event, context) => {
         const body = JSON.parse(event.body)
         const name = body.name
         const email = body.email
         const subject = body.subject
         const message = body.message
-
+      
         let testAccount = await nodemailer.createTestAccount()
-
+      
         let transporter = nodemailer.createTransport({
           host: 'smtp.ethereal.email',
           port: 587,
@@ -273,7 +289,7 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
             pass: testAccount.pass,
           },
         })
-
+      
         let info = await transporter.sendMail({
           // let's update these values to reflect the data we are pulling!
           from: email,
@@ -281,10 +297,10 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
           subject: subject + ' - ' + name,
           text: message,
         })
-
+      
         console.log('Message sent: %s', info.messageId)
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info))
-
+      
         return { statusCode: 200 }
       }
       ```
@@ -307,6 +323,19 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
 Now try extending the website on your own. Here are some things that you can try to figure out how to do:
 
 - Make the message input field a full textarea. This is so people can write a long message.
+
+  - Demo: https://earlyvoluminousspreadsheets--five-nine.repl.co/
+
 - Add some styling to your contact form. Learn about other properties/attributes that can help you do that.
+
+  - Demo: https://disfiguredsnivelingdeskscan--five-nine.repl.co/
+
 - Do some validation. What if they didn't type an email in for the email? That means the "from" address would be wrong and the function would fail. Validate the address.
+
+  - *Frontend Challenge:* Learn which HTML property/attribute will force users to enter an email address!
+
+    ![Form field validating a fake email](https://cloud-h0vxo95mq.vercel.app/0image.png)
+
 - Redirect to a "thank you" page
+
+  - *Backend Challenge:* How can you force a redirect on the return of a function?
