@@ -2,6 +2,7 @@
 name: 'Weather App'
 description: 'Making a Weather App using HTML, CSS and JavaScript'
 author: '@gautamjajoo'
+img: 'https://cloud-w7f0jvahc.vercel.app/0weather-app.png'
 ---
 
 # Weather App
