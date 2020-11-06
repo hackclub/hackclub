@@ -5,9 +5,7 @@ author: '@shreyfirst'
 img: 'https://cloud-ibwkgi2m2.vercel.app/0image.png'
 ---
 
-# Make a "contact me" form
-
-In this tutorial, you will learn how to use:
+In this workshop, you will learn how to use:
 
 - [HTTP POST](https://www.w3schools.com/tags/ref_httpmethods.asp) requests
 - Serverless functions ([Netlify functions](https://www.netlify.com/products/functions/)/[AWS Lambda](https://aws.amazon.com/lambda/))
