@@ -1,7 +1,7 @@
 ---
-Name: 'Rock Paper Scissors Game'
-Description: 'Simple rock paper scissors game using Python'
-Author: '@JackTDC'
+name: 'Rock Paper Scissors'
+description: 'Make a simple rock paper scissors game using Python'
+author: '@JackTDC'
 img: 'https://cloud-3skpb14wz.vercel.app/0rockpaperscissors.png'
 ---
 
