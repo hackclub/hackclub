@@ -24,7 +24,11 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
 
 **Demo:** Test out what we'll be making on this demo! Enter your email under the email space and you should get an email!
 
-![Demo of what the website will look like](https://cloud-rntkwewk8.vercel.app/0image.png)
+Link to code: https://repl.it/@ShreyGupta1/LowestDirtyQuarks#index.html
+
+Link to site: https://LowestDirtyQuarks--shreygupta1.repl.co
+
+![Demo of what the website will look like](https://cloud-rgz1bhapa.vercel.app/0image.png)
 
 ### First, let's make the form that you want to receive emails with.
 
