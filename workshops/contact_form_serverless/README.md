@@ -2,7 +2,7 @@
 name: 'Serverless Contact Form'
 description: 'Make a website “contact me” form using Netlify serverless functions'
 author: '@shreyfirst'
-img: 'https://cloud-kmwkrpxo5.vercel.app/0screen_shot_2020-11-06_at_2.39.56_pm.png'
+img: 'https://cloud-ibwkgi2m2.vercel.app/0image.png'
 ---
 
 # Make a "contact me" form
@@ -331,11 +331,11 @@ Now try extending the website on your own. Here are some things that you can try
 
 - Make the message input field a full textarea. This is so people can write a long message.
 
-  - Demo: https://earlyvoluminousspreadsheets--five-nine.repl.co/
+  - Demo: https://earlyvoluminousspreadsheets.shreygupta1.repl.co/
 
 - Add some styling to your contact form. Learn about other properties/attributes that can help you do that.
 
-  - Demo: https://disfiguredsnivelingdeskscan--five-nine.repl.co/
+  - Demo: https://disfiguredsnivelingdeskscan.shreygupta1.repl.co/
 
 - Do some validation. What if they didn't type an email in for the email? That means the "from" address would be wrong and the function would fail. Validate the address.
 
