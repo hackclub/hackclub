@@ -374,7 +374,11 @@ const CalendarUI = () => {
   );
 };
 ```
-But now, the browser will be badly yelling at you. That is because we are rendering the `<ChangeDate />` outside the parent element. But here, we can't take it in because it will become a flex child (the `container` className is set to `display: flex`) and will be displayed weirdly on the browser.
+But now, the browser will be badly yelling at you!!
+
+![Rare footage of browser yelling at me](https://cloud-62rjhf9pw.vercel.app/0image.png)
+
+That is because we are rendering the `<ChangeDate />` outside the parent element. But here, we can't take it in because it will become a flex child (the `container` className is set to `display: flex`) and will be displayed weirdly on the browser.
 
 Here comes something called `fragments`. If we add an empty tag as a parent element, we won't get errors anymore! Fragments let you group a list of children without adding extra nodes to the DOM.
 
