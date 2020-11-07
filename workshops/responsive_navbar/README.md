@@ -2,6 +2,7 @@
 name: 'Rebar'
 description: 'Build a fully responsive navbar for your websites.'
 author: '@faisalsayed10'
+img: 'https://cloud-9x2jsehxu.vercel.app/0image.png'
 ---
 
 # Rebar
