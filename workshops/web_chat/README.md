@@ -776,7 +776,7 @@ We've managed to build a basic web chat, now let's build upon it and MAKE IT EXT
 
 ## Cool Web Chats made by Hack clubbers
 
-- [@faisalsayed10](https://busyscarydisk.faisalsayed1.repl.co/)
-- [@aaryanporwal](https://webchat-deno.aaryanporwal.repl.co/)
+- [@faisalsayed10](https://repl.it/@KhushrajRathod/Fayd-Webchat)
+- [@aaryanporwal](https://repl.it/@KhushrajRathod/Aaryan-Webchat)
 
 Did you make something awesome? Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6) in the Hack Club Slack and tag me with [@KhushrajRathod](https://hackclub.slack.com/team/U01C21G88QM)!
