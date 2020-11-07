@@ -4,7 +4,7 @@ description: 'Build a simple calculator with ReactJS'
 author: '@faisalsayed10'
 ---
 
-# Quotes Generator
+# Simple Calculator
 
 Today, We'll be building a simple yet fun calculator in React.
 
@@ -53,9 +53,24 @@ export default function App() {
 
 ```
 
-Explanation: Here, `useState` is already imported for you as we'll be using it in the later part of the workshop. Next, there's an array containing all the basic operators. The `App` component simply renders a heading and a `div` with a `className` of `calc-wrapper` for now.
+Explanation: Here, `useState` is already imported for you as we'll be using it in the later part of the workshop. Next, there's an a rray containing all the basic operators. The `App` component simply renders a heading and a `div` with a `className` of `calc-wrapper` for now.
 
 Next, if we look in the `components/` directory, we have a `Button` component and a `components.css` file.
 
 ### 2) Creating the `Button` component.
 
+Let us start building the `Button` component.
+
+First we'll create a function `isNum` inside the component which checks if a value is a number or not.
+
+```jsx
+const Button = ({ children, onClick, isInput }) => {
+  const isNum = (val) => {
+    if (!isNaN(val) || val === "C" || val === ".") {
+      return true;
+    }
+    return false;
+  };
+}
+
+Explanation: 
