@@ -6,7 +6,7 @@ author: '@emmanuel39hanks'
 
 # Creating a Drum Pad in HTML, CSS & JavaScript
 
-![Drum Pad Preview](https://cloud-86raoe39p.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_41_28.png)
+![Drum Pad Preview](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
 
 _Preview of the Drum Pad we are going to be creating._
 
@@ -158,12 +158,11 @@ color: rgba(255, 255, 255, 0.4);
 
 user-select: none;
 
-border: 2px solid #E5446D;
+border: 4px solid #E5446D; 
+
+border-radius:15px;
 
 }
-
-  
-
 ```
 
 If you run your code, nothing has changed. That's because we are using classes to group our HTML elements. Let's go back to our `index.html` and to our `<div>` we will want to add the class name `box` to our nested `div` elements, and the parent header will be given the class name `pad`:
@@ -238,7 +237,7 @@ transition: all  0.2s;
 
 ```
 
-![Preview of HTML with our finished layout CSS applied, and our pads colored](https://cloud-86raoe39p.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_41_28.png)
+![Preview of HTML with our finished layout CSS applied, and our pad borders colored](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
 
 We are done with our styling and layout.
 
