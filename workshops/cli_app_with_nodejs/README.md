@@ -119,7 +119,7 @@ But our app doesn't do a lot of stuff right now, so let's get to the next part!!
 
 In this part of the tutorial, we are going to fetch a random joke from a [jokes database](https://icanhazdadjoke.com/) and display it in the terminal, sounds fun, right?
 
-![gif saying awesome!](https://cloud-9w3yv7xjz.vercel.app/0awesome-yes.webp)
+![gif saying awesome!](https://cloud-8n5b8v608.vercel.app/0giphy.gif)
 
 One of the most popular libraries for retrieving and sending data to an API in Node.js is [axios](https://www.npmjs.com/package/axios). Start by adding axios as a dependency:
 
