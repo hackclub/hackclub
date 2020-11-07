@@ -24,7 +24,7 @@ To code this workshop, we'll be using [Repl.it](https://repl.it), a free, online
 
 After that create a new repl and select language HTML, CSS, JS.
 
-<img alt="repl.it image" src="https://cloud-o8q46nkko.vercel.app/screenshot_2020-09-25_at_9.23.06_pm.png">
+![Repl.it]("https://cloud-o8q46nkko.vercel.app/screenshot_2020-09-25_at_9.23.06_pm.png")
 
 ## Code and explanation.
 
@@ -43,7 +43,7 @@ Let's start with the basic HTML structure.
 </html>
 ```
 
-<img alt="Image upload div" src="https://cloud-iuod9ogzf.vercel.app/0screenshot_2020-10-24_at_6.28.11_am.png">
+![Image upload div]("https://cloud-iuod9ogzf.vercel.app/0screenshot_2020-10-24_at_6.28.11_am.png")
 
 Lets make this div to upload images.
 
@@ -85,16 +85,16 @@ Go to [firebase](https://firebase.google.com). Then click on 'go-to console' in 
 
 ![Continue](https://cloud-iqousmfqn.vercel.app/0ezgif.com-video-to-gif.gif)
 
-<img alt="Go to project settings" src="https://cloud-5kv6kdks9.vercel.app/07.png">
+![Go to project settings]("https://cloud-5kv6kdks9.vercel.app/07.png")
 
 This is your firebase dashboard.
 Click on project settings.
 
-<img alt="Create App" src="https://cloud-5uv8qengq.vercel.app/08.png">
+![Create App]("https://cloud-5uv8qengq.vercel.app/08.png")
 
 Give a name for the app. Then click Create.
 
-<img alt="Copy the code shown" src="https://cloud-7xruyy6oh.vercel.app/010.png">
+![Copy the code shown]("https://cloud-7xruyy6oh.vercel.app/010.png")
 
 Now you need to paste the above code into the body tag.
 
@@ -119,20 +119,20 @@ Now you need to paste the above code into the body tag.
 
 Now, let's configure the firebase-firestore.
 
-<img alt="Create firestore database" src="https://cloud-e2i3fchdm.vercel.app/011.png">
+![Create firestore database]("https://cloud-e2i3fchdm.vercel.app/011.png")
 
-<img alt="Select test mode" src="https://cloud-h4gng9zf6.vercel.app/012.png">
+![Select test mode]("https://cloud-h4gng9zf6.vercel.app/012.png")
 
 Then click on enable.
 
-<img alt="Create collection" src="https://cloud-5jvwke9tx.vercel.app/014.png">
+![Create collection]("https://cloud-5jvwke9tx.vercel.app/014.png")
 
 Create a collection and just give sample data.
 
 Bow lets setup the firebase storage for storing our images, Firestore is used to store the urls of the image.
 Inside storage click on get started. you will see a block of code like this.
 
-<img alt="firebase-storage" src="https://res.cloudinary.com/practicaldev/image/fetch/s--w0gBgsQf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/5zcml0x0uvu55i7kqywc.png"/>
+![firebase-storage]("https://cloud-9aiyzkwod.vercel.app/05zcml0x0uvu55i7kqywc.jpeg")
 
 This is a strictly firebase side code.
 
