@@ -158,9 +158,7 @@ color: rgba(255, 255, 255, 0.4);
 
 user-select: none;
 
-border: 4px solid #E5446D; 
-
-border-radius:15px;
+border: 4px solid;
 
 }
 ```
@@ -206,6 +204,36 @@ And when we rerun our code, it should look like this.
 We will write code to make hovering effects, inactive or active states, to make it stand out. and make the experience better. We will do that with the following code
 
 ```css
+.box {
+
+width: 100px;
+
+height: 100px;
+
+margin: 10px  0;
+
+box-shadow: 0  8px  6px  -6px  black;
+
+background-color: #444;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+font-size: 20px;
+
+color: rgba(255, 255, 255, 0.4);
+
+user-select: none;
+
+// We will add these two properties to the .box class to add a colored rounded solid border.
+border: 4px solid #E5446D; 
+
+border-radius:15px;
+
+}
 
 .box:hover {
 
