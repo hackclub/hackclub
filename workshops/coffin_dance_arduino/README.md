@@ -11,7 +11,7 @@ img: https://cloud-psj7hfkrk.vercel.app/0thumbnail.png
 
 ## Overview
 
-Meme songs are everywhere! I bet you (the reader) have been rickrolled at least once, or heard All Star/the Coffin Dance around the internet. In this beginner workshop, you'll be building/coding an Arduino circuit that will be able to play music!
+Meme songs are everywhere! I bet you've been rickrolled at least once, or heard [All Star](https://www.youtube.com/watch?v=L_jWHffIx5E)/the [Coffin Dance](https://www.youtube.com/watch?v=j9V78UbdzWI) around the internet. In this beginner workshop, you'll be building/coding an Arduino circuit that will be able to play music!
 
 We are going to use Tinkercad's interactive circuit builder, which is excellent; it's like building an Arduino circuit in real life. With the expertise you gain from building this circuit online, recreating it with physical components should be a breeze!
 
@@ -212,7 +212,7 @@ Let's test this function out! Delete all the code inside `loop()` , and add this
 
 ```c
 void loop() {
-    play(261, 500);
+  play(261, 500);
 }
 ```
 
@@ -231,7 +231,7 @@ void play(float hz, int wait) {
   if(currentSpeaker == 6) {
     currentSpeaker += 1;
   } else {
-      currentSpeaker -= 1;
+    currentSpeaker -= 1;
   }    
 }
 ```
