@@ -675,4 +675,4 @@ You probably know the best ways to get in touch with your friends and family, bu
 [slack]: https://slack.hackclub.com/
 
 
-PS. I'm `@fayd` on slack.
+PS. I'm `@fayd` on slack!
