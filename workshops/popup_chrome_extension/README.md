@@ -1,5 +1,5 @@
 ---
-name: 'Build a Chrome extension!'
+name: 'Build a pop-up Chrome extension!'
 description: 'Hack your way to productivity by building your own bookmarking Chrome extension'
 author: '@shreyfirst'
 img: 'https://cloud-qyx3m9oc6.vercel.app/0image.png'
@@ -53,7 +53,7 @@ There are a few parts to this workshop. I highly reccomend doing them in order b
    1. Create an account
    2. Click the "Start coding" button on the top right
 
-   **The website will look a little like this:** 
+   **The website will look a little like this:**
 
    ![Repl.it website)@2x](https://cloud-cnenr6ov1.vercel.app/0image.png)
 
@@ -61,7 +61,7 @@ There are a few parts to this workshop. I highly reccomend doing them in order b
 
    * This means that we will be coding in different web languages. HTML is like the text files, CSS is similar to the design element, and JS is anything special like animations, etc
 
-3. Once you have a new HTML Repl, you want to configure it with this file structure: 
+3. Once you have a new HTML Repl, you want to configure it with this file structure:
 
 ```
 .
@@ -74,7 +74,7 @@ There are a few parts to this workshop. I highly reccomend doing them in order b
         └── messages.json
 ```
 
-**NOTES about the file structure:** 
+**NOTES about the file structure:**
 
 1. `index.html` can be whatever Repl.it sets for you. You can <u>delete</u> the other standard Repl files (`style.css` and `script.js`)
 2. `icon.png` can be any **square** PNG graphic that is 48x48px. You can download a sample `icon.png` here:  https://cloud-mkf1ulf19.vercel.app/0bookmark.png
@@ -127,7 +127,7 @@ Add the following code into your `manifest.json` file:
 
 Update the file with the contents from this site: https://gist.githubusercontent.com/shreyfirst/51eae0fbb5bb07f37adba84af0582910/raw/f98c1d3333b07b9e9e15d1e1ef9ec51985d9da1b/messages.json
 
-This is essentially a template file of all the error messages that Chrome could give the user. 
+This is essentially a template file of all the error messages that Chrome could give the user.
 
 ![This is how you can set up your file structure in Repl.it ](https://cloud-9bso257xg.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_17.11__57_.gif)
 
@@ -199,7 +199,7 @@ You can do the UI however you feel, I think they should all be in 3 separate con
           </div>
       </div>
     </div>
-    
+
 </body>
 ```
 
@@ -309,7 +309,7 @@ Now that you've finished the `index.html` code, we can start to work on the back
 
 ## Backend
 
-Our backend is inside of `action.js`.	
+Our backend is inside of `action.js`.
 
 ### Structure
 
@@ -330,9 +330,9 @@ The first thing we need to write is an event listener that says: "when the conte
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function () {
-  
+
 	// code here
-  
+
 });
 ```
 
