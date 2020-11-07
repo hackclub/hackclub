@@ -5,15 +5,13 @@ author: '@gautamjajoo'
 img: 'https://cloud-w7f0jvahc.vercel.app/0weather-app.png'
 ---
 
-# Weather App
-
 Are you a beginner in JavaScript and don't know where to get started? If yes, you're in the right place! Being a beginner in coding and having to learn the fundamentals can be very painful—but the best way to learn is to make fun, simple projects! In this workshop, you'll build an app that uses web APIs to get the weather for any city.
 
 Here's what the final version looks like:
 
 ![final_app](https://cloud-fw0yxvsf2.vercel.app/0screenshot_from_2020-10-23_19-26-13.png)
 
-The [source Code](https://github.com/gautamjajoo/BasicWeather) & [demo](https://Weather.gautamjajoo.repl.co) are hyperlinked here.
+The [source code](https://github.com/gautamjajoo/BasicWeather) & [demo](https://Weather.gautamjajoo.repl.co) are hyperlinked here.
 
 By the end of this workshop, you'll have learned how to use web APIs, which you could expand to use even more creatively in future projects. You'll also learn some fundamentals of JavaScript, as well as some nice CSS tricks for making beautiful designs.
 
@@ -52,15 +50,15 @@ Let us start the project by changing the title of the project. After changing th
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script src="script.js"></script>
-  </body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>repl.it</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <script src="script.js"></script>
+   </body>
 </html>
 ```
 
@@ -116,39 +114,36 @@ Also, add a `class` as `temp` to the `<p>` tag which declares the temperature be
 <p id="min-max">Min and Max Temp </p>
 <p id="weather-type">Sunny </p>
 ```
-Make sure you close all the `</div>` tags which have been declared intitially.
+Make sure you close all the `</div>` tags which have been declared initially.
 
 Our `HTML` code is done and now we can move to the `CSS` part. At the end, the `HTML` code will look like this:
 
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Weather App</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
-  </head>
-<body>
-    <div class="container">
- 	<div class="content">
-    		<h1>WEATHER APP</h1>
-        	<input id="input" class="input" placeholder="Enter the City Name">	
-    	</div>
-
-    	<div class="main-weather">
-       		<p id="date">Date </p>
-            	<p id="city">City </p>
-            	<p class="temp" id="temp">Temp </p>
-            	<p id="min-max">Min and Max Temp </p>
-           	<p id="weather-type">Sunny </p>
-    	</div>
-    </div>
-
-<script src="script.js"></script>
-
-</body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Weather App</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="content">
+            <h1>WEATHER APP</h1>
+            <input id="input" class="input" placeholder="Enter the City Name">	
+         </div>
+         <div class="main-weather">
+            <p id="date">Date </p>
+            <p id="city">City </p>
+            <p class="temp" id="temp">Temp </p>
+            <p id="min-max">Min and Max Temp </p>
+            <p id="weather-type">Sunny </p>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
 </html>
 ```
 
@@ -165,10 +160,10 @@ Also, we will add `font-size` and `line-height` for styling the text inside our 
 
 ```css
 body {
-  background-color: #dfe7ee;
-  line-height: 1.5;
-  font-size: 125%;
-  display: flex;
+	background-color: #dfe7ee;
+	line-height: 1.5;
+	font-size: 125%;
+	display: flex;
 }
 ```
 
@@ -178,15 +173,15 @@ Padding is the space between the content and the border, whereas margin is the s
 
 Next, we will add a shadow behind the card to give it a highlighted effect. For this we will be using the `drop-shadow()` function which applies a drop shadow effect to the card we have created.
 
-For more information regarding `webkit-filter` refer to the [Mozzila Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow)
+For more information regarding `webkit-filter` refer to the [Mozilla Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow)
  
 ```css
 .container {
-  background-color: #fff;
-  padding: 0 4.5em 7em; 
-  margin: 100px 500px 400px auto; 
-  -webkit-filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
-          filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
+	background-color: #fff;
+	padding: 0 4.5em 7em;
+	margin: 100px 500px 400px auto;
+	-webkit-filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
+	filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
 }
 ```
 
@@ -194,103 +189,87 @@ Then, we will add some properties to our heading by adding the following code:
 
 ```css
 h1 {
-  border-bottom: 4px solid deepskyblue;
-  padding-bottom: 0.25em;
-  margin-bottom: 1em;
-  text-align: center;
-  font-family: Raleway;
+	border-bottom: 4px solid deepskyblue;
+	padding-bottom: 0.25em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-family: Raleway;
 }
 ```
  
 Till this point, we have designed almost all the elements and we are only left with the input box and the details which we wish to display.
  
 For the input box we add the following code:
-We will set the `border` and `ouline` as `none` which deleted the line which is displayed around the input box.
+We will set the `border` and `outline` as `none` which deletes the line displayed around the input box.
  
  ```css
- .input {
-    border: none;
-    outline: none;
-    font-size: 1.4rem;
-    text-align: center;
-    font-weight: bold;
+.input {
+	border: none;
+	outline: none;
+	font-size: 1.4rem;
+	text-align: center;
+	font-weight: bold;
 }
 ```
 And for the weather details, we add the following code:
 Here we will use `display: none` because we wish to hide everything before any input is taken. Rest all elements are basic `CSS` properties. 
 
 ```css
-.main-weather {
-    display: none;
-    line-height: 2.2rem;
-    height: 30vh;
-    text-align: center;
-    color:  #23313E;
-    font-weight: bold;
-}
-
-.temp { 
-    margin: 25px;
-    font-size:40pt;
-}
-
-```
-
-Yay! All the `CSS` part is completed and we have done designing the webpage. OUr next goal is to add the functionalities to our app. 
-
-At this point, the CSS code would look something like :
-```css
 body {
-  background-color: #dfe7ee;
-  line-height: 1.5;
-  font-size: 125%;
-  display: flex;
+	background-color: #dfe7ee;
+	line-height: 1.5;
+	font-size: 125%;
+	display: flex;
 }
+
 
 /*--------------------------------------- CARD ------------------------------------------*/
 
 .container {
-  background-color: #fff;
-  padding: 0 4.5em 7em; 
-  margin: 100px 500px 400px auto; 
-   -webkit-filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
-          filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
+	background-color: #fff;
+	padding: 0 4.5em 7em;
+	margin: 100px 500px 400px auto;
+	-webkit-filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
+	filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
 }
+
 
 /* ------------------------------------------------------------------------------------------*/
 
 h1 {
-  border-bottom: 4px solid deepskyblue;
-  padding-bottom: 0.25em;
-  margin-bottom: 1em;
-  text-align: center;
-  font-family: Raleway;
+	border-bottom: 4px solid deepskyblue;
+	padding-bottom: 0.25em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-family: Raleway;
 }
+
 
 /*----------------------------------- INPUT BOX---------------------------------------*/
 
 .input {
-    border: none;
-    outline: none;
-    font-size: 1.4rem;
-    text-align: center;
-    font-weight: bold;
+	border: none;
+	outline: none;
+	font-size: 1.4rem;
+	text-align: center;
+	font-weight: bold;
 }
+
 
 /*------------------------------------DETAILS----------------------------------------- */
 
 .main-weather {
-    display: none;
-    line-height: 2.2rem;
-    height: 30vh;
-    text-align: center;
-    color:  #23313E;
-    font-weight: bold;
+	display: none;
+	line-height: 2.2rem;
+	height: 30vh;
+	text-align: center;
+	color: #23313E;
+	font-weight: bold;
 }
 
-.temp { 
-    margin: 25px;
-    font-size:40pt;
+.temp {
+	margin: 25px;
+	font-size: 40pt;
 }
 ```
 
@@ -332,8 +311,8 @@ At the start, we define a constant named as `api` which contains our Baseurl and
 
 ```js
 const api = {
-    key: "**************************************", 
-    base: "https://api.openweathermap.org/data/2.5/weather?", 
+	key: "**************************************",
+	base: "https://api.openweathermap.org/data/2.5/weather?",
 }
 ```
 
@@ -350,20 +329,20 @@ Mo MMM YYYY dddd, h:mm:ss
 Many more formats and information are mentioned in the [Moment.js Docs](https://momentjs.com/docs/).
 
 ```js
-    const Input = document.getElementById('input');
- 
-    Input.addEventListener('keypress', (event) => {
+const Input = document.getElementById('input');
 
-    if(event.keyCode == 13) {
-        getWeather(Input.value); 
+Input.addEventListener('keypress', (event) => {
 
-/*-------------------FUNCTION TO DISPLAY DATE AND TIME USING MOMENT.JS-------------------*/
+	if (event.keyCode == 13) {
+		getWeather(Input.value);
+
+		/*-------------------FUNCTION TO DISPLAY DATE AND TIME USING MOMENT.JS-------------------*/
 
 		const date = moment();
 		document.getElementById("date").innerHTML = date.format("Mo MMM YYYY dddd, h:mm:ss");
 
-        document.querySelector('.main-weather').style.display = "block"; //used to show the details as initially the display is set as none
-    }
+		document.querySelector('.main-weather').style.display = "block"; //used to show the details as initially the display is set as none
+	}
 });
 ```
 
@@ -382,12 +361,12 @@ Since we had set the `display` as `none` initially in `main-weather` class in `C
 Now we will create the `getWeather` function to get the details from the API.
 ```js
 function getWeather(city) {
-    fetch(`${api.base}q=${city}&appid=${api.key}&units=metric`)   
-                                                              
-    .then(details => {
-        return details.json();  
+	fetch(`${api.base}q=${city}&appid=${api.key}&units=metric`)
 
-    }).then(showWeather);
+		.then(details => {
+			return details.json();
+
+		}).then(showWeather);
 }
 ```
 The input value of the user which is passed through the above function is stored in `city`. As we know the format of API, we will fetch the weather details from the provider using the API. Here `api.base` is declared in the first line and `api.key` in the second line of the `JS` file and `city` is the input of the user.
@@ -414,11 +393,10 @@ Here we pass the `details` received from API to the `showWeather` function.
 Before coding further we should try seeing what we obtain from the API using `console.log()`.
 
 ```js
-function showWeather(details){  //Taking the received values from API into this function
+function showWeather(details) { //Taking the received values from API into this function
 
-    console.log(details);
+	console.log(details);
 }
-
 ```
 
 The console log should look like this:
@@ -428,23 +406,22 @@ The console log should look like this:
 Since, we know the details received from API, we will now store them in a variable and push them to the HTML.
 
 ```js
-function showWeather(details){  //Taking the received values from API into this function
+function showWeather(details) { //Taking the received values from API into this function
 
-    // console.log(details);
+	// console.log(details);
 
-    let city = document.getElementById('city');
-    city.innerHTML = `${details.name}, ${details.sys.country}`;
+	let city = document.getElementById('city');
+	city.innerHTML = `${details.name}, ${details.sys.country}`;
 
-    let temperature = document.getElementById('temp');
-    temperature.innerHTML = `${Math.round(details.main.temp)}&deg;C`; 
+	let temperature = document.getElementById('temp');
+	temperature.innerHTML = `${Math.round(details.main.temp)}°C`;
 
-    let minMax = document.getElementById('min-max');
-    minMax.innerHTML = `${Math.round(details.main.temp_min)}&deg;C (Min) and ${Math.round(details.main.temp_max)}&deg;C (Max) `; 
+	let minMax = document.getElementById('min-max');
+	minMax.innerHTML = `${Math.round(details.main.temp_min)}°C (Min) and ${Math.round(details.main.temp_max)}°C (Max) `;
 
-    let weatherType = document.getElementById('weather-type');
-    weatherType.innerHTML = `${details.weather[0].main}`;
+	let weatherType = document.getElementById('weather-type');
+	weatherType.innerHTML = `${details.weather[0].main}`;
 }
-
 ```
 
 Since we are using `JSON` for accessing the details, the format of getting the details is something like this `details.property` 
@@ -452,67 +429,67 @@ where `details` is our `JSON` object and `property` could be any element of that
 the console log of the details we receive from the API.
 The `innerHTML` property returns the content of the element to the HTML.
 
-To round off the temperature we are using `Math.round()` function.
+To round off the temperature we are using the `Math.round()` function.
 
 The JS code would look something like this:
 ```js
 /*---------------------------------------API--------------------------------------------*/
 
 const api = {
-    key: "bbeac64cfcccb55a846070e17439f18f",
-    base: "https://api.openweathermap.org/data/2.5/weather?", 
+	key: "bbeac64cfcccb55a846070e17439f18f",
+	base: "https://api.openweathermap.org/data/2.5/weather?",
 }
 
 /*-----------------------FUNCTION TO TAKE THE VALUES WHEN ENTERED------------------------*/
-    
-    const Input = document.getElementById('input');
- 
-    Input.addEventListener('keypress', (event) => {
 
-    if(event.keyCode == 13) {
-        getWeather(Input.value);  //passing the input value to getWeather function
+const Input = document.getElementById('input');
 
-/*-------------------FUNCTION TO DISPLAY DATE AND TIME USING MOMENT.JS-------------------*/
+Input.addEventListener('keypress', (event) => {
+
+	if (event.keyCode == 13) {
+		getWeather(Input.value); //passing the input value to getWeather function
+
+		/*-------------------FUNCTION TO DISPLAY DATE AND TIME USING MOMENT.JS-------------------*/
 
 		const date = moment();
 		document.getElementById("date").innerHTML = date.format("Mo MMM YYYY dddd, h:mm:ss");
 
-/*----------------------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------------------*/
 
-        document.querySelector('.main-weather').style.display = "block"; //used to show the details as intially the display is set as none
-    }
+		document.querySelector('.main-weather').style.display = "block"; //used to show the details as initially the display is set as none
+	}
 });
 
 /*-------------------------------FUNCTION TO GET WEATHER--------------------------------*/
 
 
 function getWeather(city) {
-    fetch(`${api.base}q=${city}&appid=${api.key}&units=metric`)   // format for calling api is given on the web docs
-                                                                  // units=metric used for celcius, if you remove it the temperature would be in Fahrenheit
-    .then(details => {
-        return details.json();  // Sending all details to showWeather function in form of json
+	fetch(`${api.base}q=${city}&appid=${api.key}&units=metric`) // format for calling api is given on the web docs
+		// units=metric used for Celsius, if you remove it the temperature would be in Fahrenheit
+		.then(details => {
+			return details.json(); // Sending all details to showWeather function in form of json
 
-    }).then(showWeather);
+		}).then(showWeather);
 }
 
 /*-------------------------------FUNCTION TO SHOW WEATHER--------------------------------*/
 
 
-function showWeather(details){  //Taking the received values from API into this function
+function showWeather(details) { //Taking the received values from API into this function
 
-    console.log(details);
-    
-    let city = document.getElementById('city');
-    city.innerHTML = `${details.name}, ${details.sys.country}`;
+	console.log(details);
 
-    let temperature = document.getElementById('temp');
-    temperature.innerHTML = `${Math.round(details.main.temp)}&deg;C`; //Rounding off the temp using math function
+	let city = document.getElementById('city');
+	city.innerHTML = `${details.name}, ${details.sys.country}`;
 
-    let minMax = document.getElementById('min-max');
-    minMax.innerHTML = `${Math.round(details.main.temp_min)}&deg;C (Min) and ${Math.round(details.main.temp_max)}&deg;C (Max) `; 
+	let temperature = document.getElementById('temp');
+	temperature.innerHTML = `${Math.round(details.main.temp)}°C`; //Rounding off the temp using math function
 
-    let weatherType = document.getElementById('weather-type');
-    weatherType.innerHTML = `${details.weather[0].main}`;
+	let minMax = document.getElementById('min-max');
+	minMax.innerHTML = `${Math.round(details.main.temp_min)}°C (Min) and ${Math.round(details.main.temp_max)}°C (Max) `;
+
+	let weatherType = document.getElementById('weather-type');
+	weatherType.innerHTML = `${details.weather[0].main}`;
 }
 ```
 
@@ -535,7 +512,7 @@ and try to display them as well.
 
 - Add a `right-arrow` [font-awesome icon](https://fontawesome.com/v4.7.0/icons/) which when clicked shows the details instead of pressing `Enter`. (Some basic JS practice)
 
-### Some examples of the improvised version
+### Hacking
 
 1. [Project](https://Weather1.gautamjajoo.repl.co/) including other details from the API like Humidity, Pressure etc. 
 
