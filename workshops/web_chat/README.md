@@ -772,6 +772,6 @@ We've managed to build a basic web chat, now let's build upon it and MAKE IT EXT
 
 - [Web chat but clients spam randomly](https://repl.it/@KhushrajRathod/DenoWebsocketChat-Spam) In this web chat...There's spam. Once you join, you automatically start spamming and have no control!
 
-- [Web chat with basic auth](#) People using others' names to send messages? This web chat implements basic authentication and allows you to use only your ID to sign in
+- [Web chat with authentication](https://repl.it/@KhushrajRathod/DenoWebsocketChat-Auth) People using others' names to send messages? This web chat implements cookie-based authentication and allows you to use only your ID to sign in
 
 Did you make something awesome? Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6) in the Hack Club Slack and tag me with [@KhushrajRathod](https://hackclub.slack.com/team/U01C21G88QM)
