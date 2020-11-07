@@ -197,7 +197,7 @@ If you run your code, nothing has changed. That's because we are using classes t
 
 ```
 
-![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://cloud-dhcn2yd8q.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_39_48.png)
+![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
 
 And when we rerun our code, it should look like this.
 
