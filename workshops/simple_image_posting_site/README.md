@@ -48,28 +48,47 @@ Let's start with the basic HTML structure.
 Lets make this div to upload images.
 
 ```html
-<div class="uploaddiv">
-  <h1>Simple social media</h1>
-  <input onchange="fileinput()" type="file" id="photo" />
-  <br />
-  <input class="nameinput" placeholder="Your name" type="text" id="name" />
-  <h1 class="status" id="status"></h1>
-  <button onclick="upload()" class="imageupldbtn">Upload image</button>
-</div>
+<body>
+  <div class="uploaddiv">
+    <h1>Simple social media</h1>
+    <!-- Heading -->
+    <input onchange="fileinput()" type="file" id="photo" />
+    <!-- Choose Image file-->
+    <br />
+    <!--Next Line-->
+    <input class="nameinput" placeholder="Your name" type="text" id="name" />
+    <!--Naming the image-->
+    <h1 class="status" id="status"></h1>
+    <!--Showing the Status of image uploading-->
+    <button onclick="upload()" class="imageupldbtn">Upload image</button>
+    <!--Button to upload the same-->
+  </div>
+</body>
 ```
 
 This part is easy! We are making a heading "Simple social media", an input tag to upload the input file(i.e, the image). Remember to specify its input type as 'file'. Then an input tag to enter the name. Lastly, a button to upload it. You need to put this code under the body tag.
 
 We will be using [Firebase](https://firebase.google.com) as our database to store images. So let's set it up!
+We need to import firebase, firebase-firestore, firebase-storage. let's import it at the head tag.
+
+```html
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+</head>
+```
 
 Go to [firebase](https://firebase.google.com). Then click on 'go-to console' in the top right corner. Add/Create a project, Give a name for your project. Then click on continue, Create project.
 
 ![Continue](https://cloud-iqousmfqn.vercel.app/0ezgif.com-video-to-gif.gif)
 
+<img alt="Go to project settings" src="https://cloud-5kv6kdks9.vercel.app/07.png">
+
 This is your firebase dashboard.
 Click on project settings.
-
-<img alt="Go to project settings" src="https://cloud-5kv6kdks9.vercel.app/07.png">
 
 <img alt="Create App" src="https://cloud-5uv8qengq.vercel.app/08.png">
 
@@ -96,19 +115,6 @@ Now you need to paste the above code into the body tag.
     firebase.analytics();
   </script>
 </body>
-```
-
-Now we need to import firebase, firebase-firestore, firebase-storage. let's import it.
-
-```html
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- We add the meta tag to make the site responsive on different devices. -->
-  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
-</head>
 ```
 
 Now, let's configure the firebase-firestore.
@@ -156,23 +162,23 @@ Here, in the input tag, the onchange function is calling a function 'fileinput'.
 
 ```js
 function fileinput(e) {
-  document.getElementById("status").innerHTML = "Setting up...";
-  const ref = firebase.storage().ref();
-  const file = document.querySelector("#photo").files[0];
-  const task = ref.child(file.name).put(file);
+  document.getElementById("status").innerHTML = "Setting up..."; //Showing status
+  const ref = firebase.storage().ref(); //refering to our firebase storage
+  const file = document.querySelector("#photo").files[0]; //The file the user selects to upload here it will be an image.
+  const task = ref.child(file.name).put(file); //sending file to firebase storage.
   task
-    .then((snapshot) => snapshot.ref.getDownloadURL())
+    .then((snapshot) => snapshot.ref.getDownloadURL()) //downloading url to upload to firebase firestore.
     .then((url) => {
       link = url;
-      document.getElementById("status").innerHTML = "Now you can upload it.";
+      document.getElementById("status").innerHTML = "Now you can upload it."; //updating status as the file is send to firebase storage now you can upload it which finally uploades the url to firestore.
     });
 }
 ```
 
-In this function, we are returning a value(here the upload status) to the h1 tag(#status) to display that the image is setting up. Then we are declaring a variable ref as firebase storage. Next, we declare another variable file as the input field file fetch(i.e, the image that we select to upload) The variable task is to put the file into the firebase storage.
+This part of the code should be written in the script tag we mentioned before.
+In this function, we are returning a value(here the upload status) to the h1 tag(#status) to display that the image is setting up. Then we are declaring a variable ref as firebase storage. Next, we declare another variable file to fetch the file selected(i.e, the image that we select to upload). The variable task is to put the file into the firebase storage.
 Then we are downloading the URL of the image that we just uploaded to our firebase storage.
-After that, we display that the image is uploaded so you can post it. This adds the URL we just downloaded to the firebase firestore.
-Let's push it to the firestore. This happens when you click the upload image button.
+After that, we display that the image is uploaded so you can post it. This adds the URL we just downloaded to the firebase firestore. This happens when you click the upload image button.
 
 ```js
 function upload() {
@@ -199,6 +205,7 @@ function upload() {
 }
 ```
 
+This part of the code should be written in the script tag we mentioned before.
 We need to upload the name of the image which user has inputed. If the URL of the image is null(meaning image not selected). Then we will check whether the name is 3 characters long. After all this, we will display the message 'uploading...' and send our URL + name to our firestore. Now we need to display it right? Let's write the code for that.
 
 ```js
@@ -222,146 +229,90 @@ db.collection("pictures") //fetching urls from the firestore
   });
 ```
 
+This part of the code should be written in the script tag we mentioned before.
 In these lines of code, we are fetching all URLs of our images from our firestore and storing it in an array. Then we display them one after the other. Here we need to create 2 tags one for the image and one for the heading for displaying the images and names. Then we need to make a container in which we append it.
 
 ```html
 <div class="seconddiv" id="container"></div>
+<!--Add this to body tag-->
 ```
 
-### Adding CSS.
-
-Finally we need to add CSS to make it look better.
-
-```html
-<style>
-  body {
-    text-align: center; /* Aligning everything at the center */
-    font-family: helvetica; /* Just giving a font */
-    background-color: black; /* Setting up background color*/
-  }
-
-  .imageupldbtn {
-    /* Styling for our image upload button to make it look better*/
-    width: 200px;
-    height: 40px;
-    border-radius: 50px;
-    border-width: 0px;
-    background-color: black;
-    color: deeppink;
-    font-size: 18px;
-  }
-
-  .imageupldbtn:hover {
-    /* hovering the image upload button changes styles*/
-    background-color: deeppink;
-    color: black;
-  }
-
-  .status {
-    /* Uploading ststus text styling*/
-    font-size: 18px;
-    color: red;
-  }
-
-  .uploaddiv {
-    /* Upload divition styling*/
-    background-color: #fff;
-    padding: 10px;
-    width: 100%;
-    position: fixed;
-  }
-
-  .seconddiv {
-    /* Image view division styling*/
-    position: absolute;
-    top: 250px;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  .nameinput {
-    /* Name input box styling*/
-    width: 200px;
-    font-size: 20px;
-    color: deeppink;
-    border-width: 2px;
-    border-color: black;
-    text-align: center;
-  }
-</style>
-```
-
-## Finally the code will look like this.
+Summary and finally the code will look like this. Also add some css.
 
 ```html
 <!doctype html>
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--We add this meta tag to make the site responsive in different sized devices-->
   <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+  <!--Importing firebase app-->
   <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
+  <!--Impporing firebase storage-->
   <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+  <!--Importing firebase firestore-->
   <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+  <!--Importing firebase analytics-->
 
 </head>
 
 <body>
-  <style>
-    body {
-    text-align: center;
-    font-family: helvetica;
-    background-color: black;
+  <style>/*Styling for our html elements*/
+    body {/*Styling for body*/
+    text-align: center;/*Aliging Everything at the center*/
+    font-family: helvetica;/*Changing default font to helvetica*/
+    background-color: black;/*Setting background as black*/
     }
 
-    .imageupldbtn {
-    width: 200px;
-    height: 40px;
-    border-radius: 50px;
-    border-width: 0px;
-    background-color: black;
-    color: deeppink;
-    font-size: 18px;
+    .imageupldbtn {/*Styling for Image upload button*/
+    width: 200px;/*Setting the width of the button*/
+    height: 40px;/*Setting the height of the button*/
+    border-radius: 50px;/*Making the button round at the edges*/
+    border-width: 0px;/*Removing the border of the default button*/
+    background-color: black;/*Background color of the button*/
+    color: deeppink;/*Changing the font color of the button*/
+    font-size: 18px;/*Increasing the font size inside the button*/
     }
 
-    .imageupldbtn:hover {
-    background-color: deeppink;
-    color: black;
+    .imageupldbtn:hover {/*When the curser id brought top of the button this happens*/
+    background-color: deeppink;/*Changing the background color of the button*/
+    color: black;/*Changing the font color of the  button*/
     }
 
-    .status {
-    font-size: 18px;
-    color: red;
+    .status {/*Styling for the image upload status*/
+    font-size: 18px;/*Font size of the status*/
+    color: red;/*Color of the status*/
     }
 
-    .uploaddiv {
-    background-color: #fff;
-    padding: 10px;
-    width: 100%;
-    position: fixed;
+    .uploaddiv {/*Styling for the upload div tag*/
+    background-color: #fff;/*background color of the dic tag*/
+    padding: 10px;/*Giving some inner space amoung the elements*/
+    width: 100%;/*Streching width to the full length availabel*/
+    position: fixed;/*Not to move while scrolling*/
     }
 
-    .seconddiv {
-    position: absolute;
-    top: 250px;
-    left: 50%;
-    transform: translate(-50%);
+    .seconddiv {/*Our image showing container*/
+    position: absolute;/*Setting it as absolute so it wont affect the styling of other elements*/
+    top: 250px;/*Moved down by 250 pixels*/
+    left: 50%;/*Moved Left by 50%*/
+    transform: translate(-50%);/*making it in correct center*/
     }
 
-    .nameinput {
-    width: 200px;
-    font-size: 20px;
-    color: deeppink;
-    border-width: 2px;
-    border-color: black;
-    text-align: center;
+    .nameinput {/*Styling for image name input tag */
+    width: 200px;/*Width of the input tag*/
+    font-size: 20px;/*font size of the text inside the input tag*/
+    color: deeppink;/*Color of the text*/
+    border-width: 2px;/*Width of the border*/
+    border-color: black;/*background Color*/
+    text-align: center;/*Centering*/
     }
   </style>
-  <div class="uploaddiv">
-  <h1>Simple social media</h1>
-  <input onchange="fileinput()" type="file" id="photo" />
-  <br />
-  <script>
-    var firebaseConfig = {
+  <div class="uploaddiv"><!--Image upoad division-->
+  <h1>Simple social media</h1><!--Heading-->
+  <input onchange="fileinput()" type="file" id="photo" /><!--For choosing image-->
+  <br /><!--Next Line-->
+  <script>//Adding js to make things work
+    var firebaseConfig = {//This part is the configuration for our firebase app
       apiKey: "AIzaSyCegpMyyDrPgTHENIvOMbexUe9z1s7ydTE",
       authDomain: "simplesocialmedia-f46f6.firebaseapp.com",
       databaseURL: "https://simplesocialmedia-f46f6.firebaseio.com",
@@ -371,67 +322,66 @@ Finally we need to add CSS to make it look better.
       appId: "1:593816135912:web:aa22cf3d2318613718015d",
       measurementId: "G-T3VD77TCVW"
     };
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-    const db = firebase.firestore();
+    firebase.initializeApp(firebaseConfig);//Initializing firebase
+    firebase.analytics();//Setting up analytics
+    const db = firebase.firestore();//Refering to our firebase firestore.
     var link = null
     function fileinput(e) {
-      document.getElementById("status").innerHTML = "Setting up...";
-      const ref = firebase.storage().ref();
-      const file = document.querySelector('#photo').files[0]
-      const task = ref.child(file.name).put(file);
+      document.getElementById("status").innerHTML = "Setting up...";//Showing status of uploading image to firebase storage.
+      const ref = firebase.storage().ref();//Refering to our firebase storage.
+      const file = document.querySelector('#photo').files[0]//Fetching the image we chosen.
+      const task = ref.child(file.name).put(file);//Sending the file to storage.
       task
-      .then(snapshot => snapshot.ref.getDownloadURL())
+      .then(snapshot => snapshot.ref.getDownloadURL())//Fetching the url of the image
       .then((url) => {
         link = url
-        document.getElementById("status").innerHTML = "Now you can upload it.";
+        document.getElementById("status").innerHTML = "Now you can upload it.";//Showing status.
       })
     }
     function upload() {
-      const name = document.getElementById("name").value;
-      if (link === null) {
-        document.getElementById("status").innerHTML = "Select an image.";
+      const name = document.getElementById("name").value;//Fetching the value of name input tag
+      if (link === null) {//Checking wheather the url is downloaded
+        document.getElementById("status").innerHTML = "Select an image.";//Asking user to select an image.
       } else if (name.length <= 2) {
-        document.getElementById("status").innerHTML = "Name should be atleast 3 charector long.";
+        document.getElementById("status").innerHTML = "Name should be atleast 3 charector long.";//Checking wheather the name is atleast 3 letters long.
       } else {
-        document.getElementById("status").innerHTML = "Uploading...";
+        document.getElementById("status").innerHTML = "Uploading...";//Showing status as uploading
         const url = {
-          url: link,
-          name: name,
+          url: link,//link of image to be send to firestore.
+          name: name,//Image name along with it.
         }
-        db.collection("pictures")
+        db.collection("pictures")//Refering to our collection in firestore.
         .doc()
-        .set(url)
+        .set(url)//Uploading
         .then(() => {
-          location.reload()
+          location.reload()//After uploading reload the screen automatically to see the uploaded image.
         });
       }
       }
-      db.collection("pictures")
+      db.collection("pictures")//Fetching the image urls from the firestore and displaying it.
       .get()
       .then((querySnapshot) => {
-        const data = querySnapshot.docs.map((doc) => doc.data());
+        const data = querySnapshot.docs.map((doc) => doc.data());//Storing urls as an array
         var a = 0
-        for (var i in data) {
-          var img = document.createElement('img');
-          img.src = data[a].url;
-          img.setAttribute('width', '600');
-          var h = document.createElement("H1");
-          var t = document.createTextNode(data[a].name);
-          h.appendChild(t);
-          h.style.color = "deeppink";
-          document.getElementById('container').appendChild(h);
-          document.getElementById('container').appendChild(img);
+        for (var i in data) {//maping thorough urls one by one.
+          var img = document.createElement('img');//When one image url come here a new image tag and h1 tag is created and the image is passed to the src of the image tag.
+          img.src = data[a].url;//Fetching url
+          img.setAttribute('width', '600');//Setting width of the image
+          var h = document.createElement("H1");//Creating h1 element
+          var t = document.createTextNode(data[a].name);//Adding image name in h1 tag
+          h.appendChild(t);//Appending the name to h1 tag
+          h.style.color = "deeppink";//Color of the name.
+          document.getElementById('container').appendChild(h);//Apending h1 tag to container
+          document.getElementById('container').appendChild(img);//Appending image tag to container
           a = a + 1
         }
     });
   </script>
-  <input class="nameinput" placeholder="Your name" type="text" id="name" />
-  <h1 class="status" id="status"></h1>
-  <button onclick="upload()" class="imageupldbtn">Upload image</button>
-
+  <input class="nameinput" placeholder="Your name" type="text" id="name" /><!--Name input feild-->
+  <h1 class="status" id="status"></h1><!--Showing status-->
+  <button onclick="upload()" class="imageupldbtn">Upload image</button><!--Image upload button-->
   </div>
-  <div class="seconddiv" id="container">
+  <div class="seconddiv" id="container"><!--Container for displaying images and text from firestore-->
   </div>
 
 </body>
