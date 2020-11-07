@@ -199,5 +199,104 @@ You've done great so far! And I recommend you to relax and take a 5 minutes brea
 
 ![A cute frog relaxing just like I told you to](https://media.giphy.com/media/9u1J84ZtCSl9K/giphy.gif)
 
-### 2) Creating the `App` component.
+### 3) Creating the `App` component.
+
+Let's render the `Button` component in our `App` component. We'll first import it in the `App` component.
+
+```jsx
+import Button from "./components/Button";
+
+export default function App() {
+  return (
+    <div className="App">
+      <h1>React Calculator</h1>
+      <div className="calc-wrapper">
+        <Button isInput></Button>
+        <div className="row">
+          <Button>7</Button>
+          <Button>8</Button>
+          <Button>9</Button>
+          <Button>/</Button>
+        </div>
+      </div>
+  )
+}
+```
+
+Explanation: Inside the `calc-wrapper`, we first add a `Button` with a prop of `isInput`. This means that `isInput` will be `truthy` for this component and as we haven't passed the `isInput` prop to any other `Button`, it will be `falsy` for those components. Next, we create a `row` and add 4 `Buttons` to it, and as `row` has a property of `flex`, it will be displayed nicely on the browser as a row! We also passed the numbers `7, 8, 9` and the operator `/` as children to those buttons respectively.
+
+Your preview should look something like this:
+
+![Preview output of the code written so far](https://cloud-5g2s0vw25.vercel.app/0image.png)
+
+Excellent! Wondering how they got different colors even if they were the same component? This is why we created the functions `isNum()` and `isEqual()`. They check what the value of the children is and give the `className` accordingly! Isn't it cool?
+
+Also wondering how the first `Button` component looks different than the others? This is because the `isInput` boolean prop is truthy for that component and the way we have built our `Button` component is it checks whether the `isInput` is truthy and displays a different `div` accordingly!
+
+We just created the 4 buttons of our calculator! 
+
+**Challenge:** Can you try to add the rest of the buttons in a similar manner?
+
+**Hints:**
+
+1. Use rows for each group of buttons.
+
+2. Check how the final output looks like and try to implement exactly like that!
+
+<detail><summary>Here's the solution:</summary>
+
+```jsx
+export default function App() {
+
+  return (
+    <div className="App">
+      <h1>React Calculator</h1>
+      <div className="calc-wrapper">
+        <Button isInput></Button>
+        <div className="row">
+          <Button>7</Button>
+          <Button>8</Button>
+          <Button>9</Button>
+          <Button>/</Button>
+        </div>
+        <div className="row">
+          <Button>4</Button>
+          <Button>5</Button>
+          <Button>6</Button>
+          <Button>*</Button>
+        </div>
+        <div className="row">
+          <Button>1</Button>
+          <Button>2</Button>
+          <Button>3</Button>
+          <Button>+</Button>
+        </div>
+        <div className="row">
+          <Button>.</Button>
+          <Button>0</Button>
+          <Button>C</Button>
+          <Button>-</Button>
+        </div>
+        <div className="row">
+          <Button>=</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+```
+
+</details>
+
+Now your preview window should look something like this!
+
+![Preview output of our written code!](https://cloud-kvixq3evc.vercel.app/0image.png)
+
+You might have understood that we have finally completed our calculator's UI! Now all that remains is to make appropriate functions for our calculator to work as well as pass appropriate `props` to the `Buttons`!
+
+![Woohoo you did a great job!](https://media.giphy.com/media/3NtY188QaxDdC/giphy.gif)
+
+### 4) Creating The Functions For Our Calculator.
+
+### 4) Creating the functions for our Calculator.
 
