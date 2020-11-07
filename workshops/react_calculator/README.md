@@ -297,6 +297,3 @@ You might have understood that we have finally completed our calculator's UI! No
 ![Woohoo you did a great job!](https://media.giphy.com/media/3NtY188QaxDdC/giphy.gif)
 
 ### 4) Creating The Functions For Our Calculator.
-
-### 4) Creating the functions for our Calculator.
-
