@@ -16,6 +16,8 @@ Here's the [source code](https://codesandbox.io/s/mini-calendar-vjm3f).
 
 ## Part 1: Prerequisites
 
+![React image](https://cloud-lnw8nf1tb.vercel.app/0image.png)
+
 You should have some familiarity with HTML and JavaScript as well as programming functions like functions, objects, arrays etc. If you know some basics of React, It will be good for you. If not, I will recommend you [this](https://workshops.hackclub.com/nextjs_starter/) workshop. But don't worry, you should be able to follow along regardless. If you're having trouble, feel free to ask [me](https://app.slack.com/client/T0266FRGM/user_profile/U014ND5P1N2) or anyone in the [Hack Club Slack](https://hackclub.com/slack/)!
 
 ## Part 2: Setup
@@ -31,6 +33,8 @@ To get started, go to this [starter code](https://codesandbox.io/s/calendarstart
 Let's first have a look at our project's file structure.
 
 First, there are 2 main directories and a package.json file. We'll ignore the package.json file for now and let's have a look at the 2 directories, namely, `public/` and `src/`.
+
+![The image of file structure](https://cloud-94vhfibmh.vercel.app/0image.png)
 
 Usually, the `public/` directory contains an HTML file and all your assets. We won't be touching the `public/` directory during the whole workshop, not even the HTML file!
 
@@ -56,7 +60,11 @@ At line 1, we import React into our file. Similarly, at line 2, we import the CS
 
 Also, this is a React component, so the function will always return jsx code.
 
+![the image showing jsx vs html](https://cloud-forah828h.vercel.app/0image.png)
+
 **What is jsx?** All the code from line 6 to 9 is known as jsx. It is pretty much similar to HTML but there are few differences which we'll see as we go along.
+
+![Image of jsx in the code](https://cloud-iqybgr1sn.vercel.app/0image.png)
 
 You'll see that instead of using `class` in our `<div>` tag, we are using `className`, this is one of the difference between jsx and HTML. Whenever we add class to our element in React, we'll use `className` instead of `class`.
 
@@ -65,31 +73,21 @@ This is pretty much about the `App.js` file as well as some React.
 Now, have a look at the `components/` directory, it contains a `components.css` file which is prewritten for you, as our main focus today will be on React. In this directory, we'll write and store all our children components. Then we'll export them using `export default` and import them in our `App.js` file and therefore it will be rendered.
 
 Navigate, to `App.js` file and remove the heading tags from the code.
+Let's now start writing some code!
+
+![React Components Visual](https://cloud-nkzzi8sgq.vercel.app/0image.png)
 
 [**What are Components?**](https://www.w3schools.com/react/react_components.asp)
 
 ### 2) Writing The Components
 
-#### 1) CalendarUI
+#### 1) CalendarUI Component
 
 Let's start writing our very first component! Navigate to the `components/` directory, hover over the directory name, and you'll see few options. If you click on the 3rd option which says 'New File', it will create a new file inside the `components/` directory. It will ask you the filename. Let's name the file as `CalendarUI.js`.
 
 **Note:** For naming filenames in React, we use the `TitleCase` convention.
 
-**5 main steps in React:**
-
-1. Always import `React` at the beginning of every file.
-
-2. Import the required CSS files. (You may skip this step if you don't have any CSS files in your project or if your parent component already has CSS imported in it.)
-
-3. Create a component whose name is same as the filename.  
-eg: If the filename is `Abc.js`, the component's name will be `Abc`.
-
-4. Return jsx.
-
-5. At the very end or before the function's name, export the function.
-
-6. Import the component in the `App.js` / `index.js` file.
+![5 main steps in writing React](https://cloud-9ssjsk1b2.vercel.app/0image.png)
 
 Next, open the file which you just created and let's write our first React code.
 
@@ -187,7 +185,7 @@ const CalendarUI = () => {
 export default CalendarUI;
 ```
 
-We can also export it without the `default` keyword but for today's sake, we'll use the `default` keyword. Now we also need to import it somewhere so that it is rendered. Can you guess where will we import it? Yes! It's the `App.js` file.
+We can also export it without the `default` keyword but for the scope of this workshop, we'll use the `default` keyword. Now we also need to import it somewhere so that it is rendered. Can you guess where will we import it? Yes! It's the `App.js` file.
 
 [Difference between `export` and `export default`](https://medium.com/@etherealm/named-export-vs-default-export-in-es6-affb483a0910).
 
@@ -216,7 +214,11 @@ Now if you look at the preview, you'll be amazed to see that we have correctly w
 
 But, we have hardcoded our date, right? Let's fix that now.
 
+#### 2) Fixing The Hardcode
+
 In our CalendarUI component, we'll now use a hook called as `useState()`. It is an efficient way of managing our data by storing them in states and rendering it in our component. (You can do many more things with the state).
+
+![A fancy image of useState](https://cloud-90fxjk0al.vercel.app/0image.png)
 
 First, we'll import it from `react`. So we'll change the first line as:
 
@@ -238,7 +240,7 @@ Next, we call the `useState()` and it takes in a value which will be the default
 
 **Note:** It is also a convention to use the word `set` for the 2 variable which basically helps in changing the state.
 
-Learn more about [React states](https://reactjs.org/docs/hooks-state.html).
+Learn more about [React `useState`](https://reactjs.org/docs/hooks-state.html).
 
 Now, we can extract the year, month etc from our state and store them in other variables. We'll write these variable below the `useState()` and above the `return()`.
 
@@ -253,6 +255,8 @@ Explanation: the `getFullYear()` method will give us the current year and the `g
 
 But for month and day, if we use `getMonth()` and `getDay()` it returns the value in numbers. So if we want to get them in words, we need to use something called `toLocaleString()` which takes in our locale as the first parameter and an object with the value we want to return with its type. So, we put in the `default` locale and then we return the `month` and the `weekday` as `long`.
 
+![toLocaleString's better and visual example](https://cloud-q3tkunf3l.vercel.app/0image.png)
+
 **Note:** This is nothing React specific but it is how we would have done in JavaScript.
 
 Learn more about [`toLocaleString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString).
@@ -263,11 +267,7 @@ Here comes the best thing about React.
 
 Remember how we used to pass JavaScript variables inside HTML?
 
-```js
-const number = 1;
-const para = document.querySelector(".class");
-para.innerHTML = number;
-```
+![Way of doing it in JavaScript](https://cloud-otycuvap3.vercel.app/0image.png)
 
 This is one of the way of doing it in plain JavaScript. But surprisingly, React can do this job better! Here's how:
 
@@ -316,7 +316,9 @@ export default CalendarUI;
 
 We have successfully built a basic UI using React. Now let's learn how to manipulate states in React. If you saw the demo at the beginning of the workshop, we were able to navigate back and forth dates. This was done using state manipulation. If the state gets changed, the components are re-rendered and thereby show the new state. Let's start implementing this.
 
-#### 2) ChangeDate
+![Yesss](https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif)
+
+#### 3) ChangeDate Component
 
 In our components file, let's create another component named `ChangeDate.js`. Try to fill out that file with the basic boilerplate code by referring the 5 steps of writing React.
 
@@ -341,6 +343,8 @@ Also, give the `<div>` tags a `className` of `buttons`.
 Now states are limited to that component itself. So we can't access our `today` state which is in `CalendarUI` component in our `ChangeDate` component.
 
 So we'll need to pass that state in the form of `props` to our `ChangeDate` component. But for that, `ChangeDate` component needs to be the child component of `CalendarUI`. Confused? You'll understand it better once you write the code.
+
+![Helpful image of props](https://cloud-gtd06qax5.vercel.app/0image.png)
 
 So we will import our `ChangeDate` component inside our `CalendarUI` component and then we'll render it there.
 
@@ -611,7 +615,7 @@ export default ChangeDate;
 
 </details>
 
-Oh no! 😟 I'm sad to say, but this is the end of our workshop! Yes, we have completed building our React Calendar!
+Yay! I'm happy to say that this is the end of our workshop! Yes, we have completed building our React Calendar!
 
 ![Final Product](https://cloud-6zp1v14uh.vercel.app/0final_product.gif)
 
