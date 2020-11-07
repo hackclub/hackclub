@@ -8,7 +8,7 @@ author: '@faisalsayed10'
 
 Today, We'll be building a simple yet fun calculator in React.
 
-[![Quotes Generator](https://cloud-ht4su332c.vercel.app/0image.png)](https://5trtj.csb.app/)
+[![Simple Calculator](https://cloud-ht4su332c.vercel.app/0image.png)](https://5trtj.csb.app/)
 
 Here's the [source code](https://codesandbox.io/s/workshopcalculator-5trtj).
 
@@ -37,10 +37,10 @@ Next is the `src/` directory which contains all your JavaScript files and your C
 Next is the `App.js` file. It looks something like this:
 
 ```jsx
-import React, { useState } from "react";
-import "./styles.css";
+import React, { useState } from 'react'
+import './styles.css'
 
-const operatorsArr = ["*", "/", "+", ".", "-"];
+const operatorsArr = ['*', '/', '+', '.', '-']
 
 export default function App() {
   return (
@@ -48,9 +48,8 @@ export default function App() {
       <h1>React Calculator</h1>
       <div className="calc-wrapper"></div>
     </div>
-  );
+  )
 }
-
 ```
 
 Explanation: Here, `useState` is already imported for you as we'll be using it in the later part of the workshop. Next, there's an a rray containing all the basic operators. The `App` component simply renders a heading and a `div` with a `className` of `calc-wrapper` for now.
@@ -64,6 +63,100 @@ Let us start building the `Button` component.
 First we'll create a function `isNum` inside the component which checks if a value is a number or not.
 
 ```jsx
+const Button = () => {
+  const isNum = (val) => {
+    if (!isNaN(val) || val === 'C' || val === '.') {
+      return true
+    }
+    return false
+  }
+}
+```
+
+Explanation: We create a function named `isNum` which takes in a `val` as an argument. Then it checks whether the `val` is a number or `C` (clear) or a decimal (`.`), if any of the condition is true, it returns `true` or else it simply returns `false`.
+
+Next we'll create a function to check whether a value is an equal sign or not.
+
+```jsx
+const Button = ({ children, onClick, isInput }) => {
+  // ...
+
+  const isEqual = (val) => {
+    if (val === '=') {
+      return true
+    }
+    return false
+  }
+}
+```
+
+Explanation: This is a quite simple function which takes in a value as an argument and checks whether the value is an equal sign or not and returns `true`/`false` accordingly.
+
+Now its time to render some jsx in this component. This is going to be a bit tricky and will make use of `props`. So try to concentrate and understand what we are writing and you'll surely not be confused.
+
+There will be 3 main props we'll be using in this component.
+
+1. `children` - This prop is the value which will be passed to the components opening and closing tags.
+
+Example:
+
+```jsx
+<Button>7</Button> // Here 7 is the children of that component.
+```
+
+2. `onClick` - This prop will simply hold the functions which we'll create later for our calculator. This function will be passed to the Button component's `onClick`.
+
+3. `isInput` - This prop will work as a boolean for us and help us to determine whether the component will re nder the `input` state's value or not.
+
+**NOTE:** We haven't yet created the `input` state but we'll be doing it soon in few minutes.
+
+```jsx
+const Button = ({ children, onClick, isInput }) => { // <-- Props
+  const isNum = (val) => {...};
+  const isEqual = (val) => {...};
+
+  return (
+    <>
+      {isInput ? (
+        <div className="input">{children}</div>
+      ) : (
+        <div
+          className={`button-wrapper button ${isEqual(children) ?"equal-btn" : null} ${isNum(children) ? null : "operator"}`}
+          onClick={() => onClick(children)}>
+          {children}
+        </div>
+      )}
+    </>
+  );
+};
+```
+
+Explanation: First we accepted  the 3 props in this component. Now here comes the tricky part.
+
+We use `fragments` as the parent element of the `jsx`. Fragments let you group a list of children without adding extra nodes to the DOM.
+
+**NOTE:** `<></>` is known as fragments.
+
+Then we have used `ternary operators` to render different `div` accordingly. If the `isInput` is truthy, it will render the `div` with the `className` of `input` or else it will render another `div`.
+
+Notice that in the second `div`, we have again used `ternary operators` to determine that `div`'s `className`. We call the `isEqual` function passing it the value of `children` and if it returns `true`, it will add a `className` of `equal-btn` to the `div`. We have also called the `isNum` function passing it the same value of `children` and if it returns `true`, it will add a classname of `operator` to the `div`.
+
+Next we give an `onClick` attribute to the `div` which will simply call the `onClick` function which also takes in the `children` as an argument.
+
+**NOTE:** The `onClick` funtion will be passed down by the parent component to this component.
+
+And lastly, we simply render out the `children` of the component.
+
+I hope I wasn't vague in explaining you what the code is doing. If you are still confused, try to read the code and understand it again. Or else, feel free to reach me out on slack!
+
+By this, we finish our `Button` component and now its time to render it out in the main parent component (`App`) and also pass the appropriate `props` to it.
+
+<detail><summary>Your code so far:</summary>
+
+```jsx
+import React from "react";
+import "./components.css";
+
 const Button = ({ children, onClick, isInput }) => {
   const isNum = (val) => {
     if (!isNaN(val) || val === "C" || val === ".") {
@@ -71,6 +164,40 @@ const Button = ({ children, onClick, isInput }) => {
     }
     return false;
   };
-}
 
-Explanation: 
+  const isEqual = (val) => {
+    if (val === "=") {
+      return true;
+    }
+    return false;
+  };
+
+  return (
+    <>
+      {isInput ? (
+        <div className="input">{children}</div>
+      ) : (
+        <div
+          className={`button-wrapper button ${
+            isEqual(children) ? "equal-btn" : null
+          } ${isNum(children) ? null : "operator"}`}
+          onClick={() => onClick(children)}
+        >
+          {children}
+        </div>
+      )}
+    </>
+  );
+};
+
+export default Button;
+```
+
+</details>
+
+You've done great so far! And I recommend you to relax and take a 5 minutes break!
+
+![A cute frog relaxing just like I told you to](https://media.giphy.com/media/9u1J84ZtCSl9K/giphy.gif)
+
+### 2) Creating the `App` component.
+
