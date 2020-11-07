@@ -1,5 +1,5 @@
 ---
-name: 'Stopwatch'
+name: 'Mini Calendar'
 description: 'Build a simple mini calendar with ReactJS.'
 author: '@faisalsayed10'
 ---
@@ -24,7 +24,7 @@ You should have some familiarity with HTML and JavaScript as well as programming
 
 So far, we've been using repl.it for most of our workshops. But today, I want to introduce you to another online code editor, [CodeSandbox](codesandbox.io). For making any React projects, CodeSandbox is the best one out there.
 
-To get started, go to this [starter code](https://codesandbox.io/s/react-calendar-template-0wo32). Press **`ctrl+s`** / **`cmd+s`** and it will automatically fork it for you. Now, we have everything set up so let's get started!
+To get started, go to this [starter code](https://codesandbox.io/s/calendarstartercode-thk00). Press **`ctrl+s`** / **`cmd+s`** and it will automatically fork it for you. Now, we have everything set up so let's get started!
 
 ## Part 3: Building the project
 
@@ -316,6 +316,8 @@ export default CalendarUI;
 
 We have successfully built a basic UI using React. Now let's learn how to manipulate states in React. If you saw the demo at the beginning of the workshop, we were able to navigate back and forth dates. This was done using state manipulation. If the state gets changed, the components are re-rendered and thereby show the new state. Let's start implementing this.
 
+![Yesss](https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif)
+
 #### 3) ChangeDate Component
 
 In our components file, let's create another component named `ChangeDate.js`. Try to fill out that file with the basic boilerplate code by referring the 5 steps of writing React.
@@ -349,7 +351,7 @@ So we will import our `ChangeDate` component inside our `CalendarUI` component a
 ```jsx
 import React, { useState } from "react";
 import "./components.css";
-import "ChangeDate" from "./ChangeDate.js"; // IMPORT THE COMPONENT
+import ChangeDate from "./ChangeDate.js"; // IMPORT THE COMPONENT
 
 const CalendarUI = () => {
   const [today, setToday] = useState(new Date());
@@ -372,7 +374,11 @@ const CalendarUI = () => {
   );
 };
 ```
-But now, the browser will be badly yelling at you. That is because we are rendering the `<ChangeDate />` outside the parent element. But here, we can't take it in because it will become a flex child (the `container` className is set to `display: flex`) and will be displayed weirdly on the browser.
+But now, the browser will be badly yelling at you!!
+
+![Rare footage of browser yelling at me](https://cloud-62rjhf9pw.vercel.app/0image.png)
+
+That is because we are rendering the `<ChangeDate />` outside the parent element. But here, we can't take it in because it will become a flex child (the `container` className is set to `display: flex`) and will be displayed weirdly on the browser.
 
 Here comes something called `fragments`. If we add an empty tag as a parent element, we won't get errors anymore! Fragments let you group a list of children without adding extra nodes to the DOM.
 
@@ -422,7 +428,7 @@ const ChangeDate = ({state, setter}) => {
 
 In this way, we have received our props from the parent component and now we can use it in our component. Now we'll add 3 buttons to navigate back and forth as well as reset back to today.
 
-We are going to use some SVGs taken from heroicons.com. So I recommend you to copy the below code inside the `buttons` div to save some time.
+We are going to use some SVGs taken from [Heroicons](heroicons.com). So I recommend you to copy the below code inside the `buttons` div to save some time.
 
 ```jsx
 import React from "react";
@@ -470,7 +476,7 @@ const ChangeDate = ({state, setter}) => {
 export default ChangeDate;
 ```
 
-We don't really need to understand what's going on here. It's just 3 buttons with an SVG copy-pasted from heroicons.com.
+We have basically taken 2 SVGs from [Heroicons](heroicons.com) and inserted them to our button.
 
 **NOTE:** We can remove the `import` for styles from this file as it is a children of `CalendarUI` so it will eventually get the styles.
 
@@ -613,7 +619,7 @@ export default ChangeDate;
 
 </details>
 
-Oh no! 😟 I'm sad to say, but this is the end of our workshop! Yes, we have completed building our React Calendar!
+Yay! I'm happy to say that this is the end of our workshop! Yes, we have completed building our React Calendar!
 
 ![Final Product](https://cloud-6zp1v14uh.vercel.app/0final_product.gif)
 
@@ -652,9 +658,13 @@ Check this [Example](https://codepen.io/daniel-snows/pen/awvVoM) to get an idea.
 7. Finally, React is a whole different universe, play around with your newly learnt skills!
 
 
-Check out the builds by other Hack Clubbers!
+Check out what other Hack Clubbers built!
 
-**WORK IN PROGRESS**
+1. [Tanishq](https://codesandbox.io/s/react-js-calendar-luzrj)
+
+2. [Khushraj](https://codesandbox.io/s/calendarstartercode-forked-qz8kl)
+
+3. [Jack](https://codesandbox.io/s/calandooooor-8cisd)
 
 Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
 
