@@ -28,6 +28,8 @@ To get started, go to this [starter code](https://codesandbox.io/s/quotesgenerat
 
 Let's first have a look at our project's starter code.
 
+![image of directories in our project](https://cloud-9ne6wtuvp.vercel.app/0image.png)
+
 First, there are 2 main directories and a `package.json` file. We'll ignore the `package.json` file for now and let's have a look at the 2 directories, namely, `public/` and `src/`.
 
 Usually, the `public/` directory contains an HTML file and all your assets. We won't be touching the `public/` directory during the whole workshop, not even the HTML file!
@@ -55,7 +57,7 @@ This code simply renders out `Hello World` on your browser.
 
 Now we know where we are with our code, so it's time to start!
 
-### 2) Writing the code
+### 2) The UI
 
 First let's build the basic UI of how our website should look like. Write the following code in the `App` component's `return()`.
 
@@ -72,17 +74,23 @@ export default function App() {
 }
 ```
 
-We built our very basic UI for our project and everything is self-explanatory here. Nothing works right now, so let's start adding the main functionality.
+We built a very basic UI for our project and everything is self-explanatory here. The `button` doesn't right now and also we haven't yet made any `API calls`. So let's start adding the main functionality.
 
 This is what your preview window should look like:
 
 ![Preview window](https://cloud-1ugc07d1z.vercel.app/0image.png)
 
+### 3) API Call
+
 Basically, we'll be making an API request to a url which will return us a json of quotes and their authors. Then we'll store this data in a state using the `useState` hook so we can re-render our component whenever it changes.
+
+![useState's epic picture](https://cloud-90fxjk0al.vercel.app/0image.png)
 
 The url where we will make the request is - `https://type.fit/api/quotes`.
 
 If you open this link in the browser, you'll see a json file full of quotes!
+
+![What you see in the browser](https://cloud-h7wzq13xb.vercel.app/0image.png)
 
 Let's start working with it.
 
@@ -102,13 +110,17 @@ export default function App() {
 }
 ```
 
-Explanation: We create a `url` variable using `const` so its value never changes again and assign it to the API URL. Then we'll import `useState` from `react` and using the basic boilerplate code, we create a `quotes` state. It is currently assigned to an empty object, but will be replaced soon!
+Explanation: We create a `url` variable using `const` so its value never changes again and assign it to the API's URL. Then we'll import `useState` from `react` and using the basic boilerplate code, we create a `quotes` state. It is currently assigned to an empty object, but will be replaced soon!
 
 Now let's write a function which will make the API request and fetch the data from that URL. We'll use `async functions` because it will return us a promise. We'll also use `await` inside the `async function`.
+
+![Image of async await which looks cool](https://cloud-b58j7jpbu.vercel.app/0image.png)
 
 The `await` operator is used to wait for a `Promise` to either resolve or reject. It can only be used inside an `async function`.
 
 `Async functions` can contain zero or more `await` expressions. `Await` expressions suspend progress through an `async function`, yielding control and subsequently resuming progress only when an awaited promise-based asynchronous operation is either fulfilled or rejected. The resolved value of the promise is treated as the return value of the await expression. Use of `async` / `await` enables the use of ordinary `try` / `catch` blocks around asynchronous code.
+
+![Flowchart explanation of async await](https://cloud-jtner8z3c.vercel.app/0image.png)
 
 Learn more about [`Async await`](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await).
 
@@ -126,13 +138,21 @@ async function getQuotes() {
 }
 ```
 
-Explanation: Inside our async function, we add a `try` / `catch` block, which will help us to get the data or throw errors if not successful. We create a variable called `res` (shortform for `response`) which will store the response we get after we fetch the data from the API URL. Now this response is not yet ready to use and we need to convert it to `json()` format before using it. So we store that json formatted data in the `data` variable. And lastly, we store all the data inside our `quotes` state using `setQuotes`.
+Explanation: Inside our `async` function, we add a `try` / `catch` block, which will help us to get the data or throw errors if not successful. We create a variable called `res` (shortform for `response`) which will store the response we get after we fetch the data from the URL. Now this response is not yet ready to use and we need to convert it to `json()` format before using it. So we store that json formatted data in the `data` variable. And lastly, we store all the data inside our `quotes` state using `setQuotes`.
 
 The `catch` block will simply catch an error (if any) and then log it to the console.
 
+![try catch example](https://cloud-oxjmrq4w2.vercel.app/0image.png)
+
 Our `async` function is complete and we can now use the data we got from the API request.
 
-Now if we take a look at the value stored inside our state, we'll notice that it is a whole big array consisting of 100s of objects containing quotes! We only need to display 1 random quote at a time. So, for this, we only need to store a single random object from that array inside our state.
+Now if we take a look at the value stored inside our state, we'll notice that it is a whole big array consisting of 100s of objects containing quotes! 
+
+![Image of the state containing 1000s of quotes](https://cloud-7drh3ecj9.vercel.app/0image.png)
+
+**NOTE:** You can check this in the codeSandbox's `React DevTools` (next to the console).
+
+We only need to display 1 random quote at a time. So, for this, we only need to store a single random object from that array inside our state.
 
 Using the formula for getting a random number, let's create a function outside our component which will return us a random number.
 
@@ -152,9 +172,11 @@ Now we have a random number generated everytime the `randomNo()` function is cal
 setQuotes(data[randomNo()]);
 ```
 
-This will return us the object which is on the index of the `randomNo`.
+This will return us the object which is on the index of the `randomNo()`.
 
-Now only 1 object containing the quote and the author will be stored inside the `quotes` state.
+Now only one random object containing the quote and the author will be stored inside the `quotes` state.
+
+![Only 1 quote getting stored in the state](https://cloud-7drh3ecj9.vercel.app/1image.png)
 
 <details><summary>Your code so far:</summary>
 
@@ -193,6 +215,8 @@ export default function App() {
 </details>
 
 The next thing we want to implement is that we want to get a random quote everytime our website is loaded. This can easily be done by creating a  `useEffect` hook inside our component, calling our `getQuotes()` function in it and passing an empty dependency array to it.
+
+![useEffect's photo](https://cloud-q749otmin.vercel.app/0image.png)
 
 **Note:** Make sure you import `useEffect` from `react`.
 
@@ -235,6 +259,10 @@ Now if you look at the preview window, you'll see that we are pretty much done! 
 ```
 
 Whenever the button will be clicked, the `getQuotes()` function will be called which will return a new random quote, resulting into a state change which will cause our component to re-render!
+
+Woah! You just wrote some mind blowing code!
+
+![Mind blowing!](https://media.giphy.com/media/OK27wINdQS5YQ/giphy.gif)
 
 <details><summary>The Final Code:</summary>
 
@@ -311,7 +339,9 @@ Now that you know how to handle APIs in React, here are some APIs for you to pla
 
 Check out what other Hack Clubber built!
 
-WORK IN PROGRESS
+1. [Khushraj Rathod](https://codesandbox.io/s/quotesgeneratorstartercode-forked-z0wzm)
+
+2. [Aaryan Porwal](https://codesandbox.io/s/quotesgenerator-sdqkm)
 
 Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
 
