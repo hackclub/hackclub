@@ -774,4 +774,9 @@ We've managed to build a basic web chat, now let's build upon it and MAKE IT EXT
 
 - [Web chat with authentication](https://repl.it/@KhushrajRathod/DenoWebsocketChat-Auth) People using others' names to send messages? This web chat implements cookie-based authentication and allows you to use only your ID to sign in
 
-Did you make something awesome? Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6) in the Hack Club Slack and tag me with [@KhushrajRathod](https://hackclub.slack.com/team/U01C21G88QM)
+## Cool Web Chats made by Hack clubbers
+
+- [@faisalsayed10](https://busyscarydisk.faisalsayed1.repl.co/)
+- [@aaryanporwal](https://webchat-deno.aaryanporwal.repl.co/)
+
+Did you make something awesome? Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6) in the Hack Club Slack and tag me with [@KhushrajRathod](https://hackclub.slack.com/team/U01C21G88QM)!
