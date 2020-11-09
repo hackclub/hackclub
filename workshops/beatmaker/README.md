@@ -1,6 +1,6 @@
 ---
 name: 'Drum Pad'
-description: 'Build a Drum Pad in HTML/CSS & JS'
+description: 'Building a Drum Pad in HTML/CSS & JS'
 author: '@emmanuel39hanks'
 ---
 
