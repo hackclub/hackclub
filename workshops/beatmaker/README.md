@@ -66,11 +66,11 @@ Just before the end of your `<head>` tag, link your CSS file:
 
 ```html
 
-<link  rel="stylesheet"  href="style.css"  />
+<link rel="stylesheet" href="style.css"/>
 
 ```
 
-Your CSS file should now be linked, and we can start writing our CSS code.
+Your CSS file should be linked, and we can start writing our CSS code.
 
 We will start by writing code for our document to change the colors, adding fonts, height, width, and more. We are also going to be using the font Roboto (https://fonts.google.com/specimen/Roboto?query=roboto), to do that at the top of our CSS file, we will import it using the line `@import 'https://fonts.googleapis.com/css?family=Roboto';`
 
@@ -344,7 +344,7 @@ Navigate to the `index.html` file. Then, just before the end of your `<body>` ta
 
 ```
 
-We will then start writing our JavaScript code in the `script.js` file.
+We will start writing our JavaScript code in the `script.js` file.
 
 ```javascript
 
@@ -370,7 +370,7 @@ audio.play();
 
 }
 ```
-What we did above is we created a function called `play()` and it receives a parameter with the name `link`, which is the link to the sound hosted on AWS (Amazon Web Services), don't worry, you won't need to host your files by yourself. You can use mine. We then create an audio object and pass the `link` to the object, and then what we do is we just load the audio with the `load()` function and play it with the `play` function.
+What we did above is we created a function called `play()` and it receives a parameter which is `link`, which is the link to the sound hosted on AWS (Amazon Web Services), don't worry, you won't need to host your files by yourself. You can use mine. We then create an audio object and pass the `link` to the object, and then what we do is we just load the audio with the `load()` function and play it with the `play` function.
 
 All we need to do now is add an on click event to each of our nested `divs` then we call the `play()` function and pass the link to the sound file as our parameter.
 
