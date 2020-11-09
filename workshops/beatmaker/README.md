@@ -323,11 +323,24 @@ Navigate to the `index.html` file. Then, just before the end of your `<body>` ta
 We will then start writing our JavaScript code in the `script.js` file.
 
 ```javascript
+
+// We create a function called play and let it take a parameter which will be a link.
+
+// A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
+
 function  play(link) {
 
-let  audio = new  Audio(link);
+// Creating an audio variabe and giving it the name audio. To the variable we create a new Audio object which will give us the functionality to sounds, and to the object we pass the link.
+
+// let is just another keyword that allows you to declare a variable in JavaScript.
+
+let audio = new Audio(link);
+
+// We load the sound from the link
 
 audio.load();
+
+// And we play it
 
 audio.play();
 
