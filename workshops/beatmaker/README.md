@@ -20,7 +20,7 @@ Head over to repl.it(https://repl.it/) and we will get started by creating an HT
 
 ## Part 1
 
-We are going to start writing HTML; going into our `<body>` tag, which is where we write code that will be shown to the client, create a header with the `<h1>` tag, and then we will have three rows, and four columns of pads and each pad will be a `<div>,` you can think of the `<div>` tag as a box or container.
+We are going to start writing HTML; going into our `<body>` tag, which is where we write code that will be shown to the client. Let's create a header with the `<h1>` tag. Then we will have three rows and four columns of pads and each pad will be a `<div>`. you can think of the `<div>` tag as a box or container.
 
 ```html
 
