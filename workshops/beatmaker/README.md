@@ -16,7 +16,7 @@ In this workshop, we are going to be creating a drum pad in less than 230 lines 
 
 ## Getting started
 
-Head over to repl.it(https://repl.it/) and we will get started by creating an HTML/CSS & JavaScript project. Once the project is set up, navigate to your `index.html` file, and we can start working on the pad layout. 
+Head over to repl.it(https://repl.it/) and we will get started by creating an HTML/CSS & JavaScript repl. Once the repl is set up, navigate to your `index.html` file, and we can start working on the pad layout. 
 
 ## Part 1
 
@@ -112,15 +112,22 @@ We want to style the header to give it spaces and then create three rows and fou
 
 ```css
 
+// Changing properties of our `<h1>DRUM PAD</h1>`, giving it a white color in hex values, a font size of 5 Viewport Width and letter spacing of 6px.
 h1 {
 
 color: #000;
 
+// This unit is based on the width of the user's visible area of a web page. A value of 1vw is equal to 1% of the visible area of a web page width.
+
 font-size: 5vw;
 
-letter-spacing: 6px;
+// Letter spacing just adds space horizontally between text characters.
+ 
+letter-spacing: 6px; 
 
 }
+
+// Here we are changing the properties of our container that holds all our pads changing the width, display, how we justify the content and a flex wrap.
 
 .pad {
 
@@ -128,11 +135,19 @@ width: 500px;
 
 display: flex;
 
+// The justify-content property aligns flex items along the main axis of the current line of the flex container. It defines how space is distributed between and around flex items.
+
+// And a flex item is a flex container that expands items to fill available free space or shrinks them to prevent overflow.
+
 justify-content: space-between;
+
+The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked and in this case we tell them to wrap.
 
 flex-wrap: wrap;
 
 }
+
+// Here we are changing value of our individual pads in the pad area that holds all our pads.
 
 .box {
 
@@ -142,21 +157,38 @@ height: 100px;
 
 margin: 10px  0;
 
+// The box-shadow property is used to cast one or more drop shadows to an element. Each shadow is defined by one to five components: a horizontal offset value, a vertical offset value, an optional blur radius, an optional spread radius, and an optional color.
+
 box-shadow: 0  8px  6px  -6px  black;
 
 background-color: #444;
 
 display: flex;
 
+// Here like above, we justify our content and this time to the center.
+
 justify-content: center;
+
+
+// The align-items property sets the align-self value on all direct children as a group
 
 align-items: center;
 
 font-size: 20px;
 
+// We are changing the color of our individual pad and in this case, instead of using hex values or a normal color name we use rgb()
+
+// The rgb() function define colors using the Red-green-blue (RGB) model. An RGB color value is specified with: rgb(red, green, blue). Each parameter defines the intensity of that color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%).
+
 color: rgba(255, 255, 255, 0.4);
 
+// user-select property specifies whether the text of an element can be selected. In web browsers, if you double-click on some text it will be selected/highlighted. This property can be used to prevent this.
+
 user-select: none;
+
+// The border  property sets the border around an HTML element, meaning all four borders (top, right, bottom and left).
+
+// Here we are giving our individual pads a 4px border that is solid.
 
 border: 4px solid;
 
@@ -167,7 +199,10 @@ If you run your code, nothing has changed. That's because we are using classes t
 
 ```html
 
+<!-- Here we give the parent div the class name pad -->
 <div  class="pad">
+
+<!-- Here we give the nested divs each the class name box -->
 
 <div  class="box">A</div>
 
@@ -229,8 +264,12 @@ color: rgba(255, 255, 255, 0.4);
 user-select: none;
 
 // We will add these two properties to the .box class to add a colored rounded solid border.
+
 border: 4px solid #E5446D; 
 
+// The border-radius property defines the radius of the element's corners.
+
+// This property allows you to add rounded corners to elements!
 border-radius:15px;
 
 }
