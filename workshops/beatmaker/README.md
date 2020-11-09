@@ -352,7 +352,7 @@ Now that you have finished building it, you should share your beautiful creation
 
 ## The End
 
-Suppose you haven't created an account on [repl.it](https://repl.it), make sure you do so to save this wonderful creation!
+Make sure you have created an account on [repl.it](https://repl.it) to save this wonderful creation!
 
 If you face any difficulties in signing up, [watch this](https://www.youtube.com/watch?v=Mtqp4CUepk0).
 
