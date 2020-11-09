@@ -8,7 +8,7 @@ author: '@emmanuel39hanks'
 
 In this workshop, we are going to be creating a drum pad in less than 230 lines of code.
 
-_Preview of the Drum Pad we are going to be creating._
+_Preview of the Drum Pad we are going to be creating_
 
 ![Drum Pad Preview](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
 
@@ -61,7 +61,7 @@ We will do that with the following code:
 
 ```
 
-And if we run our code, it should look like this.
+And if we run our code, it should look like this:
 
 ![Preview of HTML with no CSS](https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
 
@@ -251,7 +251,7 @@ If you run your code, nothing has changed. That's because we are using classes t
 
 ```
 
-And when we rerun our code, it should look like this.
+And when we rerun our code, it should look like this:
 
 ![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
 
@@ -333,7 +333,7 @@ transition: all  0.2s;
 
 ```
 
-We are done with our styling and layout.
+We are done with our styling and layout:
 
 ![Preview of HTML with our finished layout CSS applied, and our pad borders colored](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
 
