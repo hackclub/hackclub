@@ -6,28 +6,33 @@ author: '@emmanuel39hanks'
 
 # Creating a Drum Pad in HTML, CSS & JavaScript
 
-![Drum Pad Preview](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
+In this workshop, we are going to be creating a drum pad in less than 230 lines of code.
 
 _Preview of the Drum Pad we are going to be creating._
 
-In this workshop, we are going to be creating a drum pad in less than 230 lines of code.
+![Drum Pad Preview](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
 
 [Link to demo](https://drum.emmanuel39hanks.repl.co)
 
 ## Getting started
 
-Head over to repl.it(https://repl.it/) and we will get started by creating an HTML/CSS & JavaScript repl. Once the repl is set up, navigate to your `index.html` file, and we can start working on the pad layout. 
+Head over to repl.it (https://repl.it/) and we will get started by creating an HTML/CSS & JavaScript repl. Once the repl is set up, navigate to your `index.html` file, and we can start working on the pad layout. 
 
 ## Part 1
 
-We are going to start writing HTML; going into our `<body>` tag, which is where we write code that will be shown to the client. Let's create a header with the `<h1>` tag. Then we will have three rows and four columns of pads and each pad will be a `<div>`. you can think of the `<div>` tag as a box or container.
+We are going to start writing HTML; going into our `<body>` tag, which is where we write code that will be shown to the user of the web page. Let's create a header with the `<h1>` tag. Then we will have three rows and four columns of pads and each pad will be a `<div>`. you can think of the `<div>` tag as a box or container.
+
+We will do that with the following code:
 
 ```html
 
+<!-- Header tag -->
 <h1>DRUM PAD</h1>
 
+<!-- Parent div -->
 <div>
 
+<!-- nested child divs -->
 <div>A</div>
 
 <div>B</div>
@@ -56,9 +61,9 @@ We are going to start writing HTML; going into our `<body>` tag, which is where 
 
 ```
 
-![Preview of HTML with no CSS](https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
-
 And if we run our code, it should look like this.
+
+![Preview of HTML with no CSS](https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
 
 Not so compelling, right? We will now write some CSS, which will style our HTML document and make our drum pad look prettier. Let's do that.
 
@@ -118,9 +123,9 @@ font-family: 'Roboto', sans-serif;
 
 ```
 
-![Preview of HTML with CSS applied, to change the layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
-
 The major thing you will notice when we run our code this time is that our content has been aligned to the center.
+
+![Preview of HTML with CSS applied, to change the layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
 
 We want to style the header to give it spaces and then create three rows and four columns to correctly align the pads and give them a box or container look. We will do just that.
 
@@ -246,9 +251,9 @@ If you run your code, nothing has changed. That's because we are using classes t
 
 ```
 
-![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
-
 And when we rerun our code, it should look like this.
+
+![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
 
 We will write code to make hovering effects, inactive or active states, to make it stand out. and make the experience better. We will do that with the following code
 
@@ -328,9 +333,9 @@ transition: all  0.2s;
 
 ```
 
-![Preview of HTML with our finished layout CSS applied, and our pad borders colored](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
-
 We are done with our styling and layout.
+
+![Preview of HTML with our finished layout CSS applied, and our pad borders colored](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
 
 ## Part 2
 
