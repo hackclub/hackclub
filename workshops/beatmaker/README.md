@@ -76,6 +76,10 @@ We will start by writing code for our document to change the colors, adding font
 
 ```css
 
+// The @import rule allows you to import a style sheet into another style sheet. The @import rule must be at the top of the document.
+
+// And we are importing the Roboto font from Google fonts.
+
 @import  'https://fonts.googleapis.com/css?family=Roboto';
 
 html,
@@ -88,7 +92,11 @@ height: 100%;
 
 width: 100%;
 
+// The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container
+
 display: flex;
+
+// flex-direction: column; The flexbox items are ordered the same way as the text direction, along the cross axis. The flexbox items are ordered the opposite way as the text direction, along the cross axis.
 
 flex-direction: column;
 
@@ -96,7 +104,13 @@ justify-content: center;
 
 align-items: center;
 
+// The CSS overflow property controls what happens to content that is too big to fit into an area. This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content.
+
+// And we hide all content that overflows.
+
 overflow: hidden;
+
+// Here we set the font of our web page to 'Roboto' and the reason we are padding two is in case, 'Roboto' doesn't load we are going to revert to the font san-serif.
 
 font-family: 'Roboto', sans-serif;
 
@@ -245,6 +259,8 @@ width: 100px;
 
 height: 100px;
 
+// The margin CSS property sets the margin area on all four sides of an element. It is a shorthand for margin-top , margin-right , margin-bottom , and margin-left 
+
 margin: 10px  0;
 
 box-shadow: 0  8px  6px  -6px  black;
@@ -274,29 +290,37 @@ border-radius:15px;
 
 }
 
+// The :hover pseudo class in CSS selects elements when the mouse cursor is current over them.
+
+// Here we use the pseudo class on the individual pad to make the pad lighter when the cursor hovers on it.
+
 .box:hover {
 
 background-color: lighten(#444, 10%);
 
+// Here we change the cursor to a pointer when we hover on the pads.
+ 
 cursor: pointer;
 
 }
 
+// :active is a CSS pseudo-class. It specifies and selects an element based on a state—the active state—and is used to apply styles to an element when it matches that state. The :active pseudo-class is a dynamic class which applies when an element is being activated by the user.
+
 .box:active {
 
-background-color: darken(#444, 10%);
-
-transform: scale(1.1);
-
-transition: all  0.2s;
-
-}
-
-.active {
+// When the pad is clicked we darken the pad with a gray-ish represented by the hex value #444, darken 10%
 
 background-color: darken(#444, 10%);
 
+// transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
+
+// Here we just make it 10% larger when clicked with the scale() function, 
+
 transform: scale(1.1);
+
+// CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time.
+
+// We give a transition that lasts a period of 0.2 seconds and we use a value of “all” to refer to transition properties.
 
 transition: all  0.2s;
 
@@ -415,10 +439,9 @@ To finish, here are some amazing, more customized drum pad machines/beatmakers m
 
 - A code playground on Solo Learn by Andrew Siachos (https://code.sololearn.com/WfYyBdZwc6qn/#html)
 
-- Music Pad Controller with Keyboard (https://endertech.com/blog/music-pad-javascript-html-css)
+- Music Pad Controller with a Keyboard (https://endertech.com/blog/music-pad-javascript-html-css)
 
-- My favorite one is by Dev Ed, Make Music with JavaScript by on Youtube(https://www.youtube.com/watch?v=8T4SCksjrQ4).
+- My favorite one is by Dev Ed, Making Music with JavaScript (https://www.youtube.com/watch?v=8T4SCksjrQ4).
 
   
-
 We are done with our workshop. Go ahead, customize it, and add more things to it and have fun. I hope you enjoyed this workshop, happy hacking!
