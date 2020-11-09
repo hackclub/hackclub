@@ -374,7 +374,7 @@ What we did above is we created a function called `play()` and it receives a par
 
 All we need to do now is add an on click event to each of our nested `divs` then we call the `play()` function and pass the link to the sound file as our parameter.
 
-Luckily the code required to playing sound is little all we have to do is navigate to our `index.html` file first, and then we add the `onclick=""` html attribute, and inside we call the `play(link)` with the link inside like below:
+Luckily the code required to playing our sounds is minimal, let's navigate to our `index.html` file first, and then we will add the `onclick=""` html attribute, and inside we call the `play(link)` with the link inside like below:
   
 ```html
 
