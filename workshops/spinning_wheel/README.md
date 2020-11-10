@@ -4,7 +4,7 @@ description: 'Build a random picker spinning wheel by HTML, CSS and JavaScript'
 author: '@HariOm987'
 img: https://cloud-gvkfrv1qw.vercel.app/0image.png
 ---
-You must have seen the spinning wheel by which we can select the random option, like a fortune wheel or a  lucky draw. But have you ever wondered how to make your own wheel by yourself? If you think that it is very tough then I am sorry, you are wrong. Just follow this workshop and you will have your customized spinning wheel in the next 20 minutes. You will surely accomplish this project with the help of this workshop and even if you are stuck at any point then instead of doing this 👇
+You must have seen the spinning wheel by which we can select the random option, like a fortune wheel or a lucky draw. But have you ever wondered how to make your wheel yourself? If you think that it's very tough then I am sorry, you are wrong. Just follow this workshop and you will have your customized spinning wheel in the next 20 minutes. You will surely accomplish this project with the help of this workshop but even if you are stuck at any point then instead of doing this 👇
 
 ![person stuck in the problem GIF](https://cloud-b323sylf5.vercel.app/01439996693_lolwutaaa.gif)
 
