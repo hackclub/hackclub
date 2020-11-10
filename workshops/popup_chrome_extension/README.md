@@ -34,7 +34,7 @@ Link to download the published version: https://chrome.google.com/webstore/detai
 
 ## Table of Contents
 
-There are a few parts to this workshop. I highly reccomend doing them in order because each one relies on the other.
+There are a few parts to this workshop. I highly recommend doing them in order because each one relies on the other.
 
 1. Setting up the project
 2. Frontend
