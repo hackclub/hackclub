@@ -6,7 +6,7 @@ author: '@faisalsayed10'
 
 # Quotes Generator
 
-Today, We'll be building a random quotes generator using an API in React. This will basically give you an idea of handling APIs in React.
+In this workshop, we'll be building a random quotes generator using an API in React. By the end of it, you'll have learned about handling APIs in React, as well as some cool concepts like React Hooks!
 
 [![Quotes Generator](https://cloud-fl1p1zjes.vercel.app/0image.png)](https://rzfit.csb.app/)
 
@@ -86,9 +86,7 @@ Basically, we'll be making an API request to a url which will return us a json o
 
 ![useState's epic picture](https://cloud-90fxjk0al.vercel.app/0image.png)
 
-The url where we will make the request is - `https://type.fit/api/quotes`.
-
-If you open this link in the browser, you'll see a json file full of quotes!
+The url where we will make the request is `https://type.fit/api/quotes`. If you open this link in the browser, you'll see a json file full of quotes!
 
 ![What you see in the browser](https://cloud-h7wzq13xb.vercel.app/0image.png)
 
@@ -119,8 +117,6 @@ Now let's write a function which will make the API request and fetch the data fr
 The `await` operator is used to wait for a `Promise` to either resolve or reject. It can only be used inside an `async function`.
 
 `Async functions` can contain zero or more `await` expressions. `Await` expressions suspend progress through an `async function`, yielding control and subsequently resuming progress only when an awaited promise-based asynchronous operation is either fulfilled or rejected. The resolved value of the promise is treated as the return value of the await expression. Use of `async` / `await` enables the use of ordinary `try` / `catch` blocks around asynchronous code.
-
-![Flowchart explanation of async await](https://cloud-jtner8z3c.vercel.app/0image.png)
 
 Learn more about [`Async await`](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await).
 
