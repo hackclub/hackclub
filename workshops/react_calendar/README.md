@@ -625,7 +625,7 @@ Yay! I'm happy to say that this is the end of our workshop! Yes, we have complet
 
 ## Part 4: The End
 
-Make sure you create an account on codesandbox.io to save this wonderful piece of creation or you'll loose it 😧.
+Make sure you create an account on CodeSandbox to save this wonderful piece of creation or you'll loose it 😧.
 
 Now it is up to you! Do crazy things with this project!
 
