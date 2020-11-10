@@ -34,7 +34,7 @@ You should see three files: `index.html`, `style.css`, and `script.js`.
 
 Let's start by adding some code to the `index.html` file. The basic lines are already added in the file.
 
-At line 1 we have `<!DOCTYPE html>` This declares that this file is an `HTML` file. If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. 
+At line 1 we have `<!DOCTYPE html>`. This declares that this file is an `HTML` file. If we take a look in the `<html>` tag, we will find a `<body>` tag. Here's where we will write the code. 
 If you take a look in the `<head>` tag in your `HTML`, you will find a line of code 
 ```html
 <link href="style.css" rel="stylesheet" type="text/css" />
