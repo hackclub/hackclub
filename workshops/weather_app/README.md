@@ -358,7 +358,7 @@ Input.addEventListener('keypress', (event) => {
 
 In the above function, the input of the user is stored in the `const Input` by using `document.getElementById`.The `getElementById()` method returns the element that has the ID attribute with the specified value.
 
-After the user presses enter(whose keycode is `13`) we will send the value to the new function `getWeather` which we will create to get the weather details from the API. The `addEventListener()` method attaches an event handler to the specified element.
+After the user presses enter (whose keycode is `13`) we will send the value to the new function `getWeather` which we will create to get the weather details from the API. The `addEventListener()` method attaches an event handler to the specified element.
 
 Also, we will store the date in a `const date` using the `moment.js` format mentioned in the docs.
 
@@ -366,7 +366,7 @@ Since we had set the `display` as `none` initially in `main-weather` class in `C
 ```js
 document.querySelector('.main-weather').style.display = "block";
 ```
- to set `display` as `block` otherwise after one query we won't be able to see further details.
+to set `display` as `block` otherwise after one query we won't be able to see further details.
 
 Now we will create the `getWeather` function to get the details from the API.
 ```js
@@ -407,11 +407,34 @@ function showWeather(details) { //Taking the received values from API into this 
 }
 ```
 
-The console log should look like this:
+The API should return something like:
 
-![console](https://cloud-1tlmm2zp9.vercel.app/0console.gif)
+```json
+base: "stations",
+clouds: {
+  all: 20
+},
+coord: {
+  lon: -0.13,
+  lat: 51.51
+},
+main {
+  feels_like: 6.93,
+  humidity: 71,
+  pressure: 1022,
+  temp: 11.99,
+  temp_max: 12.22,
+  temp_min: 11.62
+},
+name: "London",
+sys: {
+  type: 1,
+  id: 1424,
+  country: "GB"
+}
+```
 
-Since, we know the details received from API, we will now store them in a variable and push them to the HTML.
+And we can use these details in our app!
 
 ```js
 function showWeather(details) { //Taking the received values from API into this function
@@ -514,8 +537,7 @@ Here are some things which you should consider to improve your knowledge of APIs
 
 - Try to make another card besides the weather card where you could display the map of the city entered. (You will get to know about new APIs of Maps)
 
-- There are many other details which we receive from the API(humidity, pressure etc) that we do not display. See what other details we receive
-and try to display them as well.
+- There are many other details which we receive from the API(humidity, pressure etc) that we do not display. To see the full response from the API, type the API call from earlier (the first line in `getWeather()`) into your browser's URL bar. Then, do interesting things with the rest of that data!
 
 - Add a `right-arrow` [font-awesome icon](https://fontawesome.com/v4.7.0/icons/) which when clicked shows the details instead of pressing `Enter`. (Some basic JS practice)
 
