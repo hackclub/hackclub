@@ -412,25 +412,25 @@ The API should return something like:
 ```json
 base: "stations",
 clouds: {
-  all: 20
+  "all": 20
 },
 coord: {
-  lon: -0.13,
-  lat: 51.51
+  "lon": -0.13,
+  "lat": 51.51
 },
 main {
-  feels_like: 6.93,
-  humidity: 71,
-  pressure: 1022,
-  temp: 11.99,
-  temp_max: 12.22,
-  temp_min: 11.62
+  "feels_like": 6.93,
+  "humidity": 71,
+  "pressure": 1022,
+  "temp": 11.99,
+  "temp_max": 12.22,
+  "temp_min": 11.62
 },
 name: "London",
 sys: {
-  type: 1,
-  id: 1424,
-  country: "GB"
+  "type": 1,
+  "id": 1424,
+  "country": "GB"
 }
 ```
 
