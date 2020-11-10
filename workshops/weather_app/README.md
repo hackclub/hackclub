@@ -160,10 +160,10 @@ Also, we will add `font-size` and `line-height` for styling the text inside our 
 
 ```css
 body {
-	background-color: #dfe7ee;
-	line-height: 1.5;
-	font-size: 125%;
-	display: flex;
+  background-color: #dfe7ee;
+  line-height: 1.5;
+  font-size: 125%;
+  display: flex;
 }
 ```
 
@@ -177,11 +177,11 @@ For more information regarding `webkit-filter` refer to the [Mozilla Docs](https
  
 ```css
 .container {
-	background-color: #fff;
-	padding: 0 4.5em 7em;
-	margin: 100px 500px 400px auto;
-	-webkit-filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
-	filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
+  background-color: #fff;
+  padding: 0 4.5em 7em;
+  margin: 100px 500px 400px auto;
+  -webkit-filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
 }
 ```
 
@@ -189,11 +189,11 @@ Then, we will add some properties to our heading by adding the following code:
 
 ```css
 h1 {
-	border-bottom: 4px solid deepskyblue;
-	padding-bottom: 0.25em;
-	margin-bottom: 1em;
-	text-align: center;
-	font-family: Raleway;
+  border-bottom: 4px solid deepskyblue;
+  padding-bottom: 0.25em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: Raleway;
 }
 ```
  
@@ -204,11 +204,11 @@ We will set the `border` and `outline` as `none` which deletes the line displaye
  
  ```css
 .input {
-	border: none;
-	outline: none;
-	font-size: 1.4rem;
-	text-align: center;
-	font-weight: bold;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
 }
 ```
 And for the weather details, we add the following code:
@@ -216,60 +216,60 @@ Here we will use `display: none` because we wish to hide everything before any i
 
 ```css
 body {
-	background-color: #dfe7ee;
-	line-height: 1.5;
-	font-size: 125%;
-	display: flex;
+  background-color: #dfe7ee;
+  line-height: 1.5;
+  font-size: 125%;
+  display: flex;
 }
 
 
 /*--------------------------------------- CARD ------------------------------------------*/
 
 .container {
-	background-color: #fff;
-	padding: 0 4.5em 7em;
-	margin: 100px 500px 400px auto;
-	-webkit-filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
-	filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
+  background-color: #fff;
+  padding: 0 4.5em 7em;
+  margin: 100px 500px 400px auto;
+  -webkit-filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
 }
 
 
 /* ------------------------------------------------------------------------------------------*/
 
 h1 {
-	border-bottom: 4px solid deepskyblue;
-	padding-bottom: 0.25em;
-	margin-bottom: 1em;
-	text-align: center;
-	font-family: Raleway;
+  border-bottom: 4px solid deepskyblue;
+  padding-bottom: 0.25em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: Raleway;
 }
 
 
 /*----------------------------------- INPUT BOX---------------------------------------*/
 
 .input {
-	border: none;
-	outline: none;
-	font-size: 1.4rem;
-	text-align: center;
-	font-weight: bold;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 
 /*------------------------------------DETAILS----------------------------------------- */
 
 .main-weather {
-	display: none;
-	line-height: 2.2rem;
-	height: 30vh;
-	text-align: center;
-	color: #23313E;
-	font-weight: bold;
+  display: none;
+  line-height: 2.2rem;
+  height: 30vh;
+  text-align: center;
+  color: #23313E;
+  font-weight: bold;
 }
 
 .temp {
-	margin: 25px;
-	font-size: 40pt;
+  margin: 25px;
+  font-size: 40pt;
 }
 ```
 
@@ -311,8 +311,8 @@ At the start, we define a constant named as `api` which contains our Baseurl and
 
 ```js
 const api = {
-	key: "**************************************",
-	base: "https://api.openweathermap.org/data/2.5/weather?",
+  key: "**************************************",
+  base: "https://api.openweathermap.org/data/2.5/weather?",
 }
 ```
 
@@ -333,16 +333,16 @@ const Input = document.getElementById('input');
 
 Input.addEventListener('keypress', (event) => {
 
-	if (event.keyCode == 13) {
-		getWeather(Input.value);
+  if (event.keyCode == 13) {
+    getWeather(Input.value);
 
-		/*-------------------FUNCTION TO DISPLAY DATE AND TIME USING MOMENT.JS-------------------*/
+/*-------------------FUNCTION TO DISPLAY DATE AND TIME USING MOMENT.JS-------------------*/
 
-		const date = moment();
-		document.getElementById("date").innerHTML = date.format("Mo MMM YYYY dddd, h:mm:ss");
+    const date = moment();
+    document.getElementById("date").innerHTML = date.format("Mo MMM YYYY dddd, h:mm:ss");
 
-		document.querySelector('.main-weather').style.display = "block"; //used to show the details as initially the display is set as none
-	}
+    document.querySelector('.main-weather').style.display = "block"; //used to show the details as initially the display is set as none
+  }
 });
 ```
 
@@ -361,12 +361,11 @@ Since we had set the `display` as `none` initially in `main-weather` class in `C
 Now we will create the `getWeather` function to get the details from the API.
 ```js
 function getWeather(city) {
-	fetch(`${api.base}q=${city}&appid=${api.key}&units=metric`)
+  fetch(`${api.base}q=${city}&appid=${api.key}&units=metric`)
+  .then(details => {
+    return details.json();
 
-		.then(details => {
-			return details.json();
-
-		}).then(showWeather);
+  }).then(showWeather);
 }
 ```
 The input value of the user which is passed through the above function is stored in `city`. As we know the format of API, we will fetch the weather details from the provider using the API. Here `api.base` is declared in the first line and `api.key` in the second line of the `JS` file and `city` is the input of the user.
@@ -394,8 +393,7 @@ Before coding further we should try seeing what we obtain from the API using `co
 
 ```js
 function showWeather(details) { //Taking the received values from API into this function
-
-	console.log(details);
+  console.log(details);
 }
 ```
 
@@ -408,19 +406,18 @@ Since, we know the details received from API, we will now store them in a variab
 ```js
 function showWeather(details) { //Taking the received values from API into this function
 
-	// console.log(details);
+  // console.log(details);
+  let city = document.getElementById('city');
+  city.innerHTML = `${details.name}, ${details.sys.country}`;
 
-	let city = document.getElementById('city');
-	city.innerHTML = `${details.name}, ${details.sys.country}`;
+  let temperature = document.getElementById('temp');
+  temperature.innerHTML = `${Math.round(details.main.temp)}°C`;
 
-	let temperature = document.getElementById('temp');
-	temperature.innerHTML = `${Math.round(details.main.temp)}°C`;
+  let minMax = document.getElementById('min-max');
+  minMax.innerHTML = `${Math.round(details.main.temp_min)}°C (Min) and ${Math.round(details.main.temp_max)}°C (Max) `;
 
-	let minMax = document.getElementById('min-max');
-	minMax.innerHTML = `${Math.round(details.main.temp_min)}°C (Min) and ${Math.round(details.main.temp_max)}°C (Max) `;
-
-	let weatherType = document.getElementById('weather-type');
-	weatherType.innerHTML = `${details.weather[0].main}`;
+  let weatherType = document.getElementById('weather-type');
+  weatherType.innerHTML = `${details.weather[0].main}`;
 }
 ```
 
@@ -436,8 +433,8 @@ The JS code would look something like this:
 /*---------------------------------------API--------------------------------------------*/
 
 const api = {
-	key: "bbeac64cfcccb55a846070e17439f18f",
-	base: "https://api.openweathermap.org/data/2.5/weather?",
+  key: "bbeac64cfcccb55a846070e17439f18f",
+  base: "https://api.openweathermap.org/data/2.5/weather?",
 }
 
 /*-----------------------FUNCTION TO TAKE THE VALUES WHEN ENTERED------------------------*/
@@ -446,30 +443,30 @@ const Input = document.getElementById('input');
 
 Input.addEventListener('keypress', (event) => {
 
-	if (event.keyCode == 13) {
-		getWeather(Input.value); //passing the input value to getWeather function
+  if (event.keyCode == 13) {
+    getWeather(Input.value); //passing the input value to getWeather function
 
-		/*-------------------FUNCTION TO DISPLAY DATE AND TIME USING MOMENT.JS-------------------*/
+/*-------------------FUNCTION TO DISPLAY DATE AND TIME USING MOMENT.JS-------------------*/
 
-		const date = moment();
-		document.getElementById("date").innerHTML = date.format("Mo MMM YYYY dddd, h:mm:ss");
+    const date = moment();
+    document.getElementById("date").innerHTML = date.format("Mo MMM YYYY dddd, h:mm:ss");
 
-		/*----------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
 
-		document.querySelector('.main-weather').style.display = "block"; //used to show the details as initially the display is set as none
-	}
+    document.querySelector('.main-weather').style.display = "block"; //used to show the details as initially the display is set as none
+  }
 });
 
 /*-------------------------------FUNCTION TO GET WEATHER--------------------------------*/
 
 
 function getWeather(city) {
-	fetch(`${api.base}q=${city}&appid=${api.key}&units=metric`) // format for calling api is given on the web docs
-		// units=metric used for Celsius, if you remove it the temperature would be in Fahrenheit
-		.then(details => {
-			return details.json(); // Sending all details to showWeather function in form of json
+  fetch(`${api.base}q=${city}&appid=${api.key}&units=metric`) // format for calling api is given on the web docs
+  // units=metric used for Celsius, if you remove it the temperature would be in Fahrenheit
+  .then(details => {
+    return details.json(); // Sending all details to showWeather function in form of json
 
-		}).then(showWeather);
+  }).then(showWeather);
 }
 
 /*-------------------------------FUNCTION TO SHOW WEATHER--------------------------------*/
@@ -477,19 +474,19 @@ function getWeather(city) {
 
 function showWeather(details) { //Taking the received values from API into this function
 
-	console.log(details);
+  console.log(details);
 
-	let city = document.getElementById('city');
-	city.innerHTML = `${details.name}, ${details.sys.country}`;
+  let city = document.getElementById('city');
+  city.innerHTML = `${details.name}, ${details.sys.country}`;
 
-	let temperature = document.getElementById('temp');
-	temperature.innerHTML = `${Math.round(details.main.temp)}°C`; //Rounding off the temp using math function
+  let temperature = document.getElementById('temp');
+  temperature.innerHTML = `${Math.round(details.main.temp)}°C`; //Rounding off the temp using math function
 
-	let minMax = document.getElementById('min-max');
-	minMax.innerHTML = `${Math.round(details.main.temp_min)}°C (Min) and ${Math.round(details.main.temp_max)}°C (Max) `;
+  let minMax = document.getElementById('min-max');
+  minMax.innerHTML = `${Math.round(details.main.temp_min)}°C (Min) and ${Math.round(details.main.temp_max)}°C (Max)`;
 
-	let weatherType = document.getElementById('weather-type');
-	weatherType.innerHTML = `${details.weather[0].main}`;
+  let weatherType = document.getElementById('weather-type');
+  weatherType.innerHTML = `${details.weather[0].main}`;
 }
 ```
 
