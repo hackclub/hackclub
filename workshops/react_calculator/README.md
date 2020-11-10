@@ -297,3 +297,171 @@ You might have understood that we have finally completed our calculator's UI! No
 ![Woohoo you did a great job!](https://media.giphy.com/media/3NtY188QaxDdC/giphy.gif)
 
 ### 4) Creating The Functions For Our Calculator.
+
+Let us first create an `input` state which will store all the buttons pressed by the user and also help us in displaying the calculations.
+
+```jsx
+export default function App() {
+  const [input, setInput] = useState(""); // Creating the state
+
+  // ...
+}
+```
+
+Next, let's create a function which will store the numbers clicked by the user in the `input` state.
+
+**NOTE:** We'll create seperate functions for operators and numbers as we don't want the ability to press the operators more than once simultaneously but the numbers can be pressed any number of times we want. If you are confused, don't worry! You'll get it in a minute.
+
+```jsx
+export default function App() {
+  const [input, setInput] = useState("");
+
+  function inputNum(val) {
+    setInput(input + val);
+  }
+
+  // ...
+}
+```
+
+Explanation: We create a function `inputNum` which will take `val` as an argument. Then, we simply append it to the current stored value in the `input`.
+
+Now, we'll make a similar but tricky function for operators. Don't worry, It'll be a little confusing if you look at it the first time.
+
+```jsx
+function inputNum(val) {...}
+
+function inputOperator(val) {
+  if (input === "" || (operatorsArr.includes(input[input.length - 1]) && operatorsArr.includes(val))
+  ) {
+    return;
+  } else {
+    setInput(input + val);
+  }
+}
+
+  // ...
+```
+
+Explanation: We first create a function `inputOperator` which also takes in a value as an argument. Then, we make use of `if-else` statements to check certain conditions.
+
+First, it checks whether the `input` is empty or not. (We definitely don't want the user to click on the operator if there's no number present in the `input`). If this condition is not true, then it moves ahead to the next condition.
+
+`input[input.length - 1]` means the last value of the `input` string. Suppose `input` is `12%2*`, then the last value here is `*`, therefore `input[input.length - 1]` here is equal to `*`. Also, `operatorsArr.includes()` is a function which checks whether a certain value is in an array or not.
+
+So next we basically check whether the `operatorsArr` includes the last value of the `input` or not. If this condition is true, it again moves to the next condition which checks whether the `val` argument is included in the `operatorsArr` or not.
+
+**What does this mean?** In simple language, it simply checks if the previously pressed value by the user is an operator or not while also checking if the newly pressed value (`val`) is again, an operator or not. This will mean that the user pressed the operators 2 times simultaneously. Thus, it will be prevented.
+
+If the first condition is true alone, the function will simply return nothing. Also if the second and the third condition both are true, it will do the same.
+
+If all the conditions turn out to be false, finally it will update the `input` state with the `val`.
+
+Woah that was a pretty big brain! I hope you understood what and why we wrote this code.
+
+![WOAH!!!](https://media.giphy.com/media/3o6ZtmGkSCwGWQNTOg/giphy.gif)
+
+
+Now, we'll make use of the library `mathjs` which, if you look in the project dependencies, it is already installed for you. We only need to import it in our project and the functions in it will be ready to use.
+
+![mathjs already installed](https://cloud-9gtba7h1z.vercel.app/0image.png)
+
+Next, on line 4 of `App.js` we'll import it.
+
+```jsx
+import * as math from "mathjs";
+```
+
+Now, every function inside that library is stored in `math`.
+
+Next, we'll create a function to evaluate our calculations.
+
+```jsx
+function inputOperator(val) {...}
+
+function evaluate() {
+  if (input === "" || operatorsArr.includes(input[input.length - 1])) {
+    return input;
+  } else {
+    setInput(math.evaluate(input));
+  }
+}
+```
+
+Explanation: This function checks if the `input` is empty or if the last value of the input is an operator. If these conditions are true, this will mean that the `input` can't be evaluated. So, it will simply return the `input`. If everything's perfect and the conditions turn out to be false, it will make use of the `evaluate()` function in the `mathjs` library and simply evaluate the `input`!
+
+And here we complete all the necessary functions for the calculator to work!
+
+The last thing which is remaining is passing the appropriate `props` to the `Button` components which will complete our project!
+
+### 5) Passing The Appropriate `props` To The `Button` Components.
+
+For the very first `Button` component, we have passed the `isInput` prop to it, we'll also pass `input` as the `children` to that component.
+
+```jsx
+return (
+  <div className="App">
+    <h1>React Calculator</h1>
+    <div className="calc-wrapper">
+      <Button isInput>{input}</Button>
+      {/* ... */}
+    </div>
+  </div>
+)
+```
+
+Next, for each `Button` which has a number as their `children`, we'll pass `onClick={inputNum}` prop to it. And for each `Button` which has an operator as their `children` (including the decimal `.`) we'll pass `onClick={inputOperator}` prop to it.
+
+For the button which has '`=`' as its children, we'll pass `onClick={evaluate}` prop to it.
+
+Lastly, for the Button which has '`C`' (clear) as its children, we'll pass `onClick` and also create an inline function which will simply clear the state.
+
+<detail>
+<summary>After passing all the `props`, here's what it should look like:</summary>
+
+```jsx
+return (
+  <div className="App">
+    <h1>React Calculator</h1>
+    <div className="calc-wrapper">
+      <Button isInput>{input}</Button>
+      <div className="row">
+        <Button onClick={inputNum}>7</Button>
+        <Button onClick={inputNum}>8</Button>
+        <Button onClick={inputNum}>9</Button>
+        <Button onClick={inputOperator}>/</Button>
+      </div>
+      <div className="row">
+        <Button onClick={inputNum}>4</Button>
+        <Button onClick={inputNum}>5</Button>
+        <Button onClick={inputNum}>6</Button>
+        <Button onClick={inputOperator}>*</Button>
+      </div>
+      <div className="row">
+        <Button onClick={inputNum}>1</Button>
+        <Button onClick={inputNum}>2</Button>
+        <Button onClick={inputNum}>3</Button>
+        <Button onClick={inputOperator}>+</Button>
+      </div>
+      <div className="row">
+        <Button onClick={inputOperator}>.</Button>
+        <Button onClick={inputNum}>0</Button>
+        <Button onClick={() => setInput("")}>C</Button>
+        <Button onClick={inputOperator}>-</Button>
+      </div>
+      <div className="row">
+        <Button onClick={evaluate}>=</Button>
+      </div>
+    </div>
+  </div>
+);
+```
+
+</details>
+
+With this, we finish building our calculator! It also works as we expected it to.
+
+![working of our calculator](https://cloud-lp3s1zn91.vercel.app/0final_preview.gif)
+
+
+## Part 4: Building the project
