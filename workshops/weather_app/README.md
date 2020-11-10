@@ -160,7 +160,7 @@ We will start the `CSS` code by adding some style to the `<body>`.
 
 We start by adding a `background-color` to our website. With CSS, colours can be specified in different ways and one of the ways is using `hexadecimal` value. In this app we will be using `hexadecimal` value i.e. `#dfe7ee` which makes the background colour as bluish-grey. 
 
-You can use [HTML Colour Picker](https://www.w3schools.com/colors/colors_picker.asp) to get the `hexdecimal` value corresponding to the required colour. 
+If you want to customize the color, you can use W3School's [HTML Color Picker](https://www.w3schools.com/colors/colors_picker.asp) to get the `hexdecimal` value of whatever color you want.
 
 We will set the display value as `flex` because `flex` enables you to align your items perfectly to the center without using float or positioning.
 Also, we will add `font-size` and `line-height` for styling the text inside our body.
