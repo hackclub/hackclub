@@ -464,4 +464,42 @@ With this, we finish building our calculator! It also works as we expected it to
 ![working of our calculator](https://cloud-lp3s1zn91.vercel.app/0final_preview.gif)
 
 
-## Part 4: Building the project
+## Part 4: The End
+
+You should be proud of yourself that you built this wonderful calculator!
+
+![yay](https://media.giphy.com/media/xUPGcMzwkOY01nj6hi/giphy.gif)
+
+Make sure you create an account on CodeSandbox to save this wonderful piece of creation or you'll loose it 😧.
+
+Now it is up to you! Do crazy things with this project!
+
+Here are some tasks for you:
+
+1. Add more buttons to the calculator such as square, square root etc.  
+[Example](https://codesandbox.io/s/reactjs-calculator-0fkbb).
+
+2. Add keyboard support to your calculator!  
+[Example](https://another-simple-calculator.vercel.app/).
+
+Also checkout these cool examples!
+
+1. [Example 1](https://codepen.io/giana/pen/GJMBEv)
+
+2. [Example 2](https://codepen.io/tbremer/pen/wKpaWe)
+
+3. [Example 3](https://codepen.io/anthonykoch/pen/xVQOwb)
+
+Check out what other Hack Clubbers built!
+
+**WORK IN PROGRESS**
+
+Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
+
+You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.
+
+In a new tab, open and follow these directions to signup for our Slack.
+Then, post the link to the #ship channel to share it with everyone and also ping me!  
+
+PS. I'm `@fayd` on slack!
+
