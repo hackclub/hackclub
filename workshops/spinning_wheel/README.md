@@ -17,7 +17,7 @@ Here's the [live demo](https://movie-selector.hariom04.repl.co/) and [final code
 ^^^ If you will follow this workshop strictly then you will make something like the above picture, but feel free to add up your imaginations with patterns and colors and you will end up with something better than this. So let's begin. 😁✨
 
 # Part 1 : Prerequisites
-* Account of Repl.it
+* Account on Repl.it
 * Basic knowledge of HTML, CSS and JavaScript would be helpful but is not necessary to continue further.
 # Part 2 : Setup
 ## Setting up your code environment
