@@ -30,7 +30,7 @@ You should see three files: `index.html`, `style.css`, and `script.js`.
 
 ![repl.it screen](https://cloud-9hqnkjk42.vercel.app/0screenshot_from_2020-10-26_14-54-39.png)
 
-## 3. Making a skeleton of the app.
+## 3. Making a skeleton of the app
 
 Let's start by adding some code to the `index.html` file. The basic lines are already added in the file.
 
