@@ -21,7 +21,7 @@ Here's the [live demo](https://movie-selector.hariom04.repl.co/) and [final code
 * Basic knowledge of HTML, CSS and JavaScript would be helpful but is not necessary to continue further.
 # Part 2 : Setup
 ## Setting up your code environment
-We can use any code editor but keeping accessibility in the mind, I will be using Repl.it. It is an online code editor that is easy to use and can directly put your website to the real world.
+We can use any code editor but keeping accessibility in our mind, we will be using Repl.it. It is an online code editor that is easy to use and can directly put your website in the real world.
 
 You can get start with it by just clicking [here](https://repl.it/languages/html). By this, you will directly land on the page where we can write our code.
 
