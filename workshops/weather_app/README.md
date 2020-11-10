@@ -62,7 +62,7 @@ Let us start the project by changing the title of the project. After changing th
 </html>
 ```
 
-Apart from the default `script.js` file, we will also be using [`moment.js`](https://momentjs.com/), a Javascript library to display the date and time of the user. 
+Apart from the default `script.js` file, we will also be using [`moment.js`](https://momentjs.com/), a JavaScript library to display the date and time of the user. 
 
 To link external file like `moment.js` we will use [`CDNJS`](https://cdnjs.com/) which is an open-source CDN service powered by Cloudflare. 
 
@@ -99,7 +99,14 @@ Also, add a `placeholder` which guides the user about the expected value of the 
 <input id="input" class="input" placeholder="Enter the City Name">
 ```
 
-As the user has already input the city name, the `<div>` of `content` should be closed here.
+On the next line, close the `content` `<div>`:
+
+```html
+<div class="content">
+  <h1>WEATHER APP</h1>
+  <input id="input" class="input" placeholder="Enter the City Name">	
+</div>
+```
 
 Lastly, we will add `<div>` with class as `main-weather` to display the weather details.
 
@@ -158,6 +165,8 @@ You can use [HTML Colour Picker](https://www.w3schools.com/colors/colors_picker.
 We will set the display value as `flex` because `flex` enables you to align your items perfectly to the center without using float or positioning.
 Also, we will add `font-size` and `line-height` for styling the text inside our body.
 
+Navigate to the `style.css` file in your repl and add:
+
 ```css
 body {
   background-color: #dfe7ee;
@@ -197,7 +206,7 @@ h1 {
 }
 ```
  
-Till this point, we have designed almost all the elements and we are only left with the input box and the details which we wish to display.
+So far, we have designed almost all the elements and we are only left with the input box and the details which we wish to display.
  
 For the input box we add the following code:
 We will set the `border` and `outline` as `none` which deletes the line displayed around the input box.
@@ -309,6 +318,8 @@ Since we have a rough idea about the given API we can now start to code the JS f
 
 At the start, we define a constant named as `api` which contains our Baseurl and our key.
 
+Navigate to the `script.js` file and add:
+
 ```js
 const api = {
   key: "**************************************",
@@ -316,7 +327,7 @@ const api = {
 }
 ```
 
-Replace the key with your API key present in the profile section.
+Replace the `key` with your API key present in the profile section.
 
 Now we will add a function to take the input city when the user presses enter. Also in the same loop, we will add the function to display the date and time of 
 the user at that particular time using `moment.js`.
@@ -324,7 +335,6 @@ the user at that particular time using `moment.js`.
 The format of date and time is:
 ```js
 Mo MMM YYYY dddd, h:mm:ss
-
 ```
 Many more formats and information are mentioned in the [Moment.js Docs](https://momentjs.com/docs/).
 
@@ -354,7 +364,7 @@ Also, we will store the date in a `const date` using the `moment.js` format ment
 
 Since we had set the `display` as `none` initially in `main-weather` class in `CSS`, so for multiple queries to be answered we add
 ```js
- document.querySelector('.main-weather').style.display = "block";
+document.querySelector('.main-weather').style.display = "block";
 ```
  to set `display` as `block` otherwise after one query we won't be able to see further details.
 
@@ -433,7 +443,7 @@ The JS code would look something like this:
 /*---------------------------------------API--------------------------------------------*/
 
 const api = {
-  key: "bbeac64cfcccb55a846070e17439f18f",
+  key: "YOUR_API_KEY",
   base: "https://api.openweathermap.org/data/2.5/weather?",
 }
 
@@ -492,11 +502,11 @@ function showWeather(details) { //Taking the received values from API into this 
 
 Yippee! We have now finished coding our weather app and the App is ready to be used.
 
-For seeing the result, we use the `Run` button on `Repl`.
+To see the result, click the green `Run` button at the top of your repl.
 
 ![app](https://cloud-9ofo2uek2.vercel.app/0repl.gif)
 
-## 6. The Improvised Version
+## 6. Hacking
 
 Here are some things which you should consider to improve your knowledge of APIs and make some changes in this project as well.
 
@@ -509,7 +519,7 @@ and try to display them as well.
 
 - Add a `right-arrow` [font-awesome icon](https://fontawesome.com/v4.7.0/icons/) which when clicked shows the details instead of pressing `Enter`. (Some basic JS practice)
 
-### Hacking
+### Examples of Hacked Projects
 
 1. [Project](https://Weather1.gautamjajoo.repl.co/) including other details from the API like Humidity, Pressure etc. 
 
