@@ -1,6 +1,6 @@
 ---
 name: 'CLI App'
-description: 'Craft your own CLI App using NodeJS'
+description: 'Craft your own CLI App using Node.js'
 author: '@aaryanporwal'
 img: 'https://cloud-pnkyco5ru.vercel.app/0image.png'
 ---
@@ -28,8 +28,8 @@ You wanna see how the final app looks? Here's the [link](https://uwu.aaryanporwa
 
 You need to have a beginner level understanding of how things work in:
 
-- Javascript
-- NodeJS
+- JavaScript
+- Node.js
 
 That's it!
 
@@ -55,7 +55,7 @@ Hooray!! Your repl instance is now up! You might see a similar screen:
 
 2. In _repl.it_'s terminal (the black sidebar) type `npm init -y` to initialize the project (It'll generate a package.json file).
 
-3. In the first line of your javascript file, type: `#!/usr/bin/env node` to tell repl.it (or your OS) that this file is to be run by _**node**_. This line is also called a shebang or a hashbang.
+3. In the first line of your JavaScript file, type: `#!/usr/bin/env node` to tell repl.it (or your OS) that this file is to be run by _**node**_. This line is also called a shebang or a hashbang.
 
 4. Now to check if everything is working fine, in your js file, type:
 
@@ -82,7 +82,7 @@ The `yargs` module is one such module for Node.js designed to support the most c
     npm install yargs
     ```
 
-2. Next, update your javascript file with the following code:
+2. Next, update your JavaScript file with the following code:
 
    ```javascript
    #!/usr/bin/env node
@@ -127,7 +127,7 @@ One of the most popular libraries for retrieving and sending data to an API in N
 npm install axios
 ```
 
-Next, replace the contents of your javascript file with the following code.
+Next, replace the contents of your JavaScript file with the following code.
 
 ```javascript
 #!/usr/bin/env node
@@ -171,7 +171,7 @@ _Pretty cool, right?_
 
 For this lovely feature, we'll add another argument: `--search` or `-s` in short. For this we'll summon our _Yargs_ module again 🏴‍☠️ !
 
-Now let's update our javascript file again with the following code:
+Now let's update our JavaScript file again with the following code:
 
 ```javascript
 
@@ -298,6 +298,6 @@ Now, You probably know the best ways to get in touch with your friends and famil
 1. In a new tab, open and follow [these directions](https://hackclub.com/slack/) to sign-up for our Slack.
 2. Then, post the link to the [`#scrapbook`](https://hackclub.slack.com/messages/scrapbook) channel to share it with everyone! Also ping me with what you've built!
 
-And if you liked the workshop, or didn't, or need help with something - I'm @aaryanporwal on slack, you can always contact me or thousands of other hackers! 
+And if you liked the workshop, or didn't, or need help with something - I'm @aaryanporwal on Slack, you can always contact me or thousands of other hackers! 
 
 All the best with your journey ahead! ^_^
