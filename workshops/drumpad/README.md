@@ -81,7 +81,7 @@ We will start by writing code for our document to change the colors, adding font
 
 ```css
 
-/* The import rule allows you to import a style sheet into another style sheet. The import rule must be at the top of the document. */
+/* The import rule allows you to @import a style sheet into another style sheet. The @import rule must be at the top of the document. */
 
 /* And we are importing the Roboto font from Google fonts. */
 
@@ -97,11 +97,11 @@ body {
 
   width: 100%;
 
-  // The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container
+  /* The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container */
 
   display: flex;
 
-  // flex-direction: column; The flexbox items are ordered the same way as the text direction, along the cross axis. The flexbox items are ordered the opposite way as the text direction, along the cross axis.
+  /* flex-direction: column; The flexbox items are ordered the same way as the text direction, along the cross axis. The flexbox items are ordered the opposite way as the text direction, along the cross axis. */
 
   flex-direction: column;
 
@@ -109,13 +109,13 @@ body {
 
   align-items: center;
 
-  // The CSS overflow property controls what happens to content that is too big to fit into an area. This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content.
+  /* The CSS overflow property controls what happens to content that is too big to fit into an area. This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. */
 
-  // And we hide all content that overflows.
+  /* And we hide all content that overflows. */
 
   overflow: hidden;
 
-  // Here we set the font of our web page to 'Roboto' and the reason we are padding two is in case, 'Roboto' doesn't load we are going to revert to the font san-serif.
+  /* Here we set the font of our web page to 'Roboto' and the reason we are padding two is in case, 'Roboto' doesn't load we are going to revert to the font san-serif. */
 
   font-family: 'Roboto', sans-serif;
 
@@ -131,22 +131,23 @@ We want to style the header to give it spaces and then create three rows and fou
 
 ```css
 
-// Changing properties of our `<h1>DRUM PAD</h1>`, giving it a white color in hex values, a font size of 5 Viewport Width and letter spacing of 6px.
+/* Changing properties of our `<h1>DRUM PAD</h1>`, giving it a white color in hex values, a font size of 5 Viewport Width and letter spacing of 6px. */
+
 h1 {
 
   color: #000;
 
-  // This unit is based on the width of the user's visible area of a web page. A value of 1vw is equal to 1% of the visible area of a web page width.
+  /* This unit is based on the width of the user's visible area of a web page. A value of 1vw is equal to 1% of the visible area of a web page width. */
 
   font-size: 5vw;
 
-  // Letter spacing just adds space horizontally between text characters.
+  /* Letter spacing just adds space horizontally between text characters. */
 
   letter-spacing: 6px; 
 
 }
 
-// Here we are changing the properties of our container that holds all our pads changing the width, display, how we justify the content and a flex wrap.
+/* Here we are changing the properties of our container that holds all our pads changing the width, display, how we justify the content and a flex wrap. */
 
 .pad {
 
@@ -154,19 +155,19 @@ h1 {
 
   display: flex;
 
-  // The justify-content property aligns flex items along the main axis of the current line of the flex container. It defines how space is distributed between and around flex items.
+  /* The justify-content property aligns flex items along the main axis of the current line of the flex container. It defines how space is distributed between and around flex items. */
 
-  // And a flex item is a flex container that expands items to fill available free space or shrinks them to prevent overflow.
+  /* And a flex item is a flex container that expands items to fill available free space or shrinks them to prevent overflow. */
 
   justify-content: space-between;
 
-  The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked and in this case we tell them to wrap.
+  /* The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked and in this case we tell them to wrap. */
 
   flex-wrap: wrap;
 
 }
 
-// Here we are changing value of our individual pads in the pad area that holds all our pads.
+/* Here we are changing value of our individual pads in the pad area that holds all our pads. */
 
 .box {
 
@@ -176,7 +177,7 @@ h1 {
 
   margin: 10px  0;
 
-  // The box-shadow property is used to cast one or more drop shadows to an element. Each shadow is defined by one to five components: a horizontal offset value, a vertical offset value, an optional blur radius, an optional spread radius, and an optional color.
+  /* The box-shadow property is used to cast one or more drop shadows to an element. Each shadow is defined by one to five components: a horizontal offset value, a vertical offset value, an optional blur radius, an optional spread radius, and an optional color. */
 
   box-shadow: 0  8px  6px  -6px  black;
 
@@ -184,30 +185,30 @@ h1 {
 
   display: flex;
 
-  // Here like above, we justify our content and this time to the center.
+  /* Here like above, we justify our content and this time to the center. */
 
   justify-content: center;
 
 
-  // The align-items property sets the align-self value on all direct children as a group
+  /* The align-items property sets the align-self value on all direct children as a group */
 
   align-items: center;
 
   font-size: 20px;
 
-  // We are changing the color of our individual pad and in this case, instead of using hex values or a normal color name we use rgb()
+  /* We are changing the color of our individual pad and in this case, instead of using hex values or a normal color name we use rgb() */
 
-  // The rgb() function define colors using the Red-green-blue (RGB) model. An RGB color value is specified with: rgb(red, green, blue). Each parameter defines the intensity of that color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%).
+  /* The rgb() function define colors using the Red-green-blue (RGB) model. An RGB color value is specified with: rgb(red, green, blue). Each parameter defines the intensity of that color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%). */
 
   color: rgba(255, 255, 255, 0.4);
 
-  // user-select property specifies whether the text of an element can be selected. In web browsers, if you double-click on some text it will be selected/highlighted. This property can be used to prevent this.
+  /* user-select property specifies whether the text of an element can be selected. In web browsers, if you double-click on some text it will be selected/highlighted. This property can be used to prevent this. */
 
   user-select: none;
 
-  // The border  property sets the border around an HTML element, meaning all four borders (top, right, bottom and left).
+  /* The border  property sets the border around an HTML element, meaning all four borders (top, right, bottom and left). */
 
-  // Here we are giving our individual pads a 4px border that is solid.
+  /* Here we are giving our individual pads a 4px border that is solid. */
 
   border: 4px solid;
 
@@ -264,7 +265,7 @@ We will write code to make hovering effects, inactive or active states, to make 
 
   height: 100px;
 
-  // The margin CSS property sets the margin area on all four sides of an element. It is a shorthand for margin-top , margin-right , margin-bottom , and margin-left 
+  /* The margin CSS property sets the margin area on all four sides of an element. It is a shorthand for margin-top , margin-right , margin-bottom , and margin-left  */
 
   margin: 10px  0;
 
@@ -284,48 +285,49 @@ We will write code to make hovering effects, inactive or active states, to make 
 
   user-select: none;
 
-  // We will add these two properties to the .box class to add a colored rounded solid border.
+  /* We will add these two properties to the .box class to add a colored rounded solid border. */
 
   border: 4px solid #E5446D; 
 
-  // The border-radius property defines the radius of the element's corners.
+  /* The border-radius property defines the radius of the element's corners. */
 
-  // This property allows you to add rounded corners to elements!
+  /* This property allows you to add rounded corners to elements! */
+
   border-radius:15px;
 
 }
 
-// The :hover pseudo class in CSS selects elements when the mouse cursor is current over them.
+/* The :hover pseudo class in CSS selects elements when the mouse cursor is current over them. */
 
-// Here we use the pseudo class on the individual pad to make the pad lighter when the cursor hovers on it.
+/* Here we use the pseudo class on the individual pad to make the pad lighter when the cursor hovers on it. */
 
 .box:hover {
 
   background-color: lighten(#444, 10%);
 
-  // Here we change the cursor to a pointer when we hover on the pads.
+  /* Here we change the cursor to a pointer when we hover on the pads. */
 
   cursor: pointer;
 
 }
 
-// :active is a CSS pseudo-class. It specifies and selects an element based on a state—the active state—and is used to apply styles to an element when it matches that state. The :active pseudo-class is a dynamic class which applies when an element is being activated by the user.
+/* :active is a CSS pseudo-class. It specifies and selects an element based on a state—the active state—and is used to apply styles to an element when it matches that state. The :active pseudo-class is a dynamic class which applies when an element is being activated by the user. */
 
 .box:active {
 
-  // When the pad is clicked we darken the pad with a gray-ish represented by the hex value #444, darken 10%
+  /* When the pad is clicked we darken the pad with a gray-ish represented by the hex value #444, darken 10% */
 
   background-color: darken(#444, 10%);
 
-  // transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
+  /* transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model. */
 
-  // Here we just make it 10% larger when clicked with the scale() function, 
+  /* Here we just make it 10% larger when clicked with the scale() function. */
 
   transform: scale(1.1);
 
-  // CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time.
+  /*CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time. */
 
-  // We give a transition that lasts a period of 0.2 seconds and we use a value of “all” to refer to transition properties.
+  /* We give a transition that lasts a period of 0.2 seconds and we use a value of “all” to refer to transition properties. */
 
   transition: all  0.2s;
 
@@ -369,7 +371,7 @@ We will start writing our JavaScript code in the `script.js` file.
 
   audio.load();
 
-  // And we play it
+  // And we play it here
 
   audio.play();
 
