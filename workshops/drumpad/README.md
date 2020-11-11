@@ -33,29 +33,29 @@ We will do that with the following code:
 <div>
 
 <!-- nested child divs -->
-<div>A</div>
+  <div>A</div>
 
-<div>B</div>
+  <div>B</div>
 
-<div>C</div>
+  <div>C</div>
 
-<div>D</div>
-  
-<div>E</div>
+  <div>D</div>
 
-<div>F</div>
+  <div>E</div>
 
-<div>G</div>
+  <div>F</div>
 
-<div>H</div>
+  <div>G</div>
 
-<div>I</div>
+  <div>H</div>
 
-<div>J</div>
+  <div>I</div>
 
-<div>K</div>
+  <div>J</div>
 
-<div>L</div>
+  <div>K</div>
+
+  <div>L</div>
 
 </div>
 
@@ -91,33 +91,33 @@ html,
 
 body {
 
-background-color: #fff;
+  background-color: #fff;
 
-height: 100%;
+  height: 100%;
 
-width: 100%;
+  width: 100%;
 
-// The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container
+  // The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container
 
-display: flex;
+  display: flex;
 
-// flex-direction: column; The flexbox items are ordered the same way as the text direction, along the cross axis. The flexbox items are ordered the opposite way as the text direction, along the cross axis.
+  // flex-direction: column; The flexbox items are ordered the same way as the text direction, along the cross axis. The flexbox items are ordered the opposite way as the text direction, along the cross axis.
 
-flex-direction: column;
+  flex-direction: column;
 
-justify-content: center;
+  justify-content: center;
 
-align-items: center;
+  align-items: center;
 
-// The CSS overflow property controls what happens to content that is too big to fit into an area. This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content.
+  // The CSS overflow property controls what happens to content that is too big to fit into an area. This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content.
 
-// And we hide all content that overflows.
+  // And we hide all content that overflows.
 
-overflow: hidden;
+  overflow: hidden;
 
-// Here we set the font of our web page to 'Roboto' and the reason we are padding two is in case, 'Roboto' doesn't load we are going to revert to the font san-serif.
+  // Here we set the font of our web page to 'Roboto' and the reason we are padding two is in case, 'Roboto' doesn't load we are going to revert to the font san-serif.
 
-font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -134,15 +134,15 @@ We want to style the header to give it spaces and then create three rows and fou
 // Changing properties of our `<h1>DRUM PAD</h1>`, giving it a white color in hex values, a font size of 5 Viewport Width and letter spacing of 6px.
 h1 {
 
-color: #000;
+  color: #000;
 
-// This unit is based on the width of the user's visible area of a web page. A value of 1vw is equal to 1% of the visible area of a web page width.
+  // This unit is based on the width of the user's visible area of a web page. A value of 1vw is equal to 1% of the visible area of a web page width.
 
-font-size: 5vw;
+  font-size: 5vw;
 
-// Letter spacing just adds space horizontally between text characters.
- 
-letter-spacing: 6px; 
+  // Letter spacing just adds space horizontally between text characters.
+
+  letter-spacing: 6px; 
 
 }
 
@@ -150,19 +150,19 @@ letter-spacing: 6px;
 
 .pad {
 
-width: 500px;
+  width: 500px;
 
-display: flex;
+  display: flex;
 
-// The justify-content property aligns flex items along the main axis of the current line of the flex container. It defines how space is distributed between and around flex items.
+  // The justify-content property aligns flex items along the main axis of the current line of the flex container. It defines how space is distributed between and around flex items.
 
-// And a flex item is a flex container that expands items to fill available free space or shrinks them to prevent overflow.
+  // And a flex item is a flex container that expands items to fill available free space or shrinks them to prevent overflow.
 
-justify-content: space-between;
+  justify-content: space-between;
 
-The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked and in this case we tell them to wrap.
+  The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked and in this case we tell them to wrap.
 
-flex-wrap: wrap;
+  flex-wrap: wrap;
 
 }
 
@@ -170,46 +170,46 @@ flex-wrap: wrap;
 
 .box {
 
-width: 100px;
+  width: 100px;
 
-height: 100px;
+  height: 100px;
 
-margin: 10px  0;
+  margin: 10px  0;
 
-// The box-shadow property is used to cast one or more drop shadows to an element. Each shadow is defined by one to five components: a horizontal offset value, a vertical offset value, an optional blur radius, an optional spread radius, and an optional color.
+  // The box-shadow property is used to cast one or more drop shadows to an element. Each shadow is defined by one to five components: a horizontal offset value, a vertical offset value, an optional blur radius, an optional spread radius, and an optional color.
 
-box-shadow: 0  8px  6px  -6px  black;
+  box-shadow: 0  8px  6px  -6px  black;
 
-background-color: #444;
+  background-color: #444;
 
-display: flex;
+  display: flex;
 
-// Here like above, we justify our content and this time to the center.
+  // Here like above, we justify our content and this time to the center.
 
-justify-content: center;
+  justify-content: center;
 
 
-// The align-items property sets the align-self value on all direct children as a group
+  // The align-items property sets the align-self value on all direct children as a group
 
-align-items: center;
+  align-items: center;
 
-font-size: 20px;
+  font-size: 20px;
 
-// We are changing the color of our individual pad and in this case, instead of using hex values or a normal color name we use rgb()
+  // We are changing the color of our individual pad and in this case, instead of using hex values or a normal color name we use rgb()
 
-// The rgb() function define colors using the Red-green-blue (RGB) model. An RGB color value is specified with: rgb(red, green, blue). Each parameter defines the intensity of that color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%).
+  // The rgb() function define colors using the Red-green-blue (RGB) model. An RGB color value is specified with: rgb(red, green, blue). Each parameter defines the intensity of that color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%).
 
-color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 
-// user-select property specifies whether the text of an element can be selected. In web browsers, if you double-click on some text it will be selected/highlighted. This property can be used to prevent this.
+  // user-select property specifies whether the text of an element can be selected. In web browsers, if you double-click on some text it will be selected/highlighted. This property can be used to prevent this.
 
-user-select: none;
+  user-select: none;
 
-// The border  property sets the border around an HTML element, meaning all four borders (top, right, bottom and left).
+  // The border  property sets the border around an HTML element, meaning all four borders (top, right, bottom and left).
 
-// Here we are giving our individual pads a 4px border that is solid.
+  // Here we are giving our individual pads a 4px border that is solid.
 
-border: 4px solid;
+  border: 4px solid;
 
 }
 ```
@@ -223,29 +223,29 @@ If you run your code, nothing has changed. That's because we are using classes t
 
 <!-- Here we give the nested divs each the class name box -->
 
-<div  class="box">A</div>
+  <div  class="box">A</div>
 
-<div  class="box">B</div>
+  <div  class="box">B</div>
 
-<div  class="box">C</div>
+  <div  class="box">C</div>
 
-<div  class="box">D</div>
+  <div  class="box">D</div>
 
-<div  class="box">E</div>
+  <div  class="box">E</div>
 
-<div  class="box">F</div>
+  <div  class="box">F</div>
 
-<div  class="box">G</div>
+  <div  class="box">G</div>
 
-<div  class="box">H</div>
-  
-<div  class="box">I</div>
+  <div  class="box">H</div>
 
-<div  class="box">J</div>
+  <div  class="box">I</div>
 
-<div  class="box">K</div>
+  <div  class="box">J</div>
 
-<div  class="box">L</div>
+  <div  class="box">K</div>
+
+  <div  class="box">L</div>
 
 </div>
 
@@ -260,38 +260,38 @@ We will write code to make hovering effects, inactive or active states, to make 
 ```css
 .box {
 
-width: 100px;
+  width: 100px;
 
-height: 100px;
+  height: 100px;
 
-// The margin CSS property sets the margin area on all four sides of an element. It is a shorthand for margin-top , margin-right , margin-bottom , and margin-left 
+  // The margin CSS property sets the margin area on all four sides of an element. It is a shorthand for margin-top , margin-right , margin-bottom , and margin-left 
 
-margin: 10px  0;
+  margin: 10px  0;
 
-box-shadow: 0  8px  6px  -6px  black;
+  box-shadow: 0  8px  6px  -6px  black;
 
-background-color: #444;
+  background-color: #444;
 
-display: flex;
+  display: flex;
 
-justify-content: center;
+  justify-content: center;
 
-align-items: center;
+  align-items: center;
 
-font-size: 20px;
+  font-size: 20px;
 
-color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 
-user-select: none;
+  user-select: none;
 
-// We will add these two properties to the .box class to add a colored rounded solid border.
+  // We will add these two properties to the .box class to add a colored rounded solid border.
 
-border: 4px solid #E5446D; 
+  border: 4px solid #E5446D; 
 
-// The border-radius property defines the radius of the element's corners.
+  // The border-radius property defines the radius of the element's corners.
 
-// This property allows you to add rounded corners to elements!
-border-radius:15px;
+  // This property allows you to add rounded corners to elements!
+  border-radius:15px;
 
 }
 
@@ -301,11 +301,11 @@ border-radius:15px;
 
 .box:hover {
 
-background-color: lighten(#444, 10%);
+  background-color: lighten(#444, 10%);
 
-// Here we change the cursor to a pointer when we hover on the pads.
- 
-cursor: pointer;
+  // Here we change the cursor to a pointer when we hover on the pads.
+
+  cursor: pointer;
 
 }
 
@@ -313,21 +313,21 @@ cursor: pointer;
 
 .box:active {
 
-// When the pad is clicked we darken the pad with a gray-ish represented by the hex value #444, darken 10%
+  // When the pad is clicked we darken the pad with a gray-ish represented by the hex value #444, darken 10%
 
-background-color: darken(#444, 10%);
+  background-color: darken(#444, 10%);
 
-// transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
+  // transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
 
-// Here we just make it 10% larger when clicked with the scale() function, 
+  // Here we just make it 10% larger when clicked with the scale() function, 
 
-transform: scale(1.1);
+  transform: scale(1.1);
 
-// CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time.
+  // CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time.
 
-// We give a transition that lasts a period of 0.2 seconds and we use a value of “all” to refer to transition properties.
+  // We give a transition that lasts a period of 0.2 seconds and we use a value of “all” to refer to transition properties.
 
-transition: all  0.2s;
+  transition: all  0.2s;
 
 }
 
@@ -353,25 +353,25 @@ We will start writing our JavaScript code in the `script.js` file.
 
 ```javascript
 
-// We create a function called play and let it take a parameter which will be a link.
+  // We create a function called play and let it take a parameter which will be a link.
 
-// A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
+  // A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
 
-function  play(link) {
+  function  play(link) {
 
-// Creating an audio variabe and giving it the name audio. To the variable we create a new Audio object which will give us the functionality to sounds, and to the object we pass the link.
+  // Creating an audio variabe and giving it the name audio. To the variable we create a new Audio object which will give us the functionality to sounds, and to the object we pass the link.
 
-// let is just another keyword that allows you to declare a variable in JavaScript.
+  // let is just another keyword that allows you to declare a variable in JavaScript.
 
-let audio = new Audio(link);
+  let audio = new Audio(link);
 
-// We load the sound from the link
+  // We load the sound from the link
 
-audio.load();
+  audio.load();
 
-// And we play it
+  // And we play it
 
-audio.play();
+  audio.play();
 
 }
 ```
@@ -385,29 +385,29 @@ Luckily the code required to playing our sounds is minimal, let's navigate to ou
 
 <div  class="pad">
 
-<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0025.mp3')">A</div>
+  <div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0025.mp3')">A</div>
 
-<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0010.mp3')">B</div>
+  <div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0010.mp3')">B</div>
 
-<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0000.mp3')">C</div>
+  <div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0000.mp3')">C</div>
 
-<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/RS.mp3')">D</div>
+  <div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/RS.mp3')">D</div>
 
-<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/OH25.mp3')">E</div>
+  <div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/OH25.mp3')">E</div>
 
-<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/MA.mp3')">F</div>
+  <div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/MA.mp3')">F</div>
 
-<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CY0010.mp3')">G</div>
+  <div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CY0010.mp3')">G</div>
 
-<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CH.mp3')">H</div>
+  <div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CH.mp3')">H</div>
 
-<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CB.mp3')">I</div>
+  <div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CB.mp3')">I</div>
 
-<div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/BD0010.mp3')">J</div>
+  <div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/BD0010.mp3')">J</div>
 
-<div  class="box"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/BD0000.mp3')">K</div>
+  <div  class="box"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/BD0000.mp3')">K</div>
 
-<div  class="box"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CP.mp3')">L</div>
+  <div  class="box"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CP.mp3')">L</div>
 
 </div>
 
