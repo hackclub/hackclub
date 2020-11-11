@@ -54,7 +54,7 @@ Follow these steps:
 
 ![Click add file in top left to add a file, Write code in the center, Click run to run your code](https://cloud-pq5lbfiab.vercel.app/5introtoreplit.png)
 
-- Now, create a new file called "index.html". This is what everyone will see when they visit your website.
+- Now, create a new file called `index.html`. This is what everyone will see when they visit your website.
 
 You just finished Part 1!!
 
@@ -293,11 +293,11 @@ Explanation:
 
 ### Adding Javascript
 
-- Create a new file called frontend.js - This will be the code that runs on someone's device when they visit your webpage
+- Create a new file called `frontend.js` - This will be the code that runs on someone's device when they visit your webpage
 - Add a `<script src="frontend.js"></script>` just before body ends
 
 <details>
-    <summary> This is how your HTML file should look now: </summary>
+    <summary> This is how the `index.html` file should look now: </summary>
 
 ```html
 <!DOCTYPE html>
@@ -387,7 +387,7 @@ Congratulations on making it so far!
 
 Let's get started with the server!
 
-- Head over to the index.ts file and input the following code
+- Head over to the `index.ts` file and input the following code
 
 ```js
 import { serve } from "https://deno.land/std@0.75.0/http/server.ts"
@@ -404,7 +404,7 @@ Explanation:
   - We're creating a http server here so we can serve files and text
   - The `for await` loop replies to every request (i.e. everytime someone navigates to the server) that is sent to the server
 
-Hit "Run" and you should see "Server test" in the top right of your screen. Next, let's actually serve the index.html file we made.
+Hit "Run" and you should see "Server test" in the top right of your screen. Next, let's actually serve the `index.html` file we made.
 
 ```js
 import { serve } from "https://deno.land/std@0.75.0/http/server.ts"
@@ -428,7 +428,7 @@ for await (const req of server) {
 Here's what's happening here:
 
 - By default, all requests go to "/"
-- If the request is going to "/", we want to set the request URL to "/index.html" -- we want to serve index.html by default
+- If the request is going to "/", we want to set the request URL to "/index.html" -- we want to serve `index.html` by default
 - `req.url.substring(1)` removes the first character from `req.url`. Therefore if `req.url` is "/index.html", `req.url.substring(1)` will be "index.html"
 - We read the file requested by the user, and return that file
 - If that file does not exist, we send a 404 error.
@@ -469,7 +469,7 @@ for await (const req of server) {
 }
 ```
 
-Every time someone vists our page, we'll want to send index.html to them. However, trying to connect to a websocket also counts as a request. For every request that we get, we want to try to parse it as a websocket request. If that fails, then we send the index.html. If you hit "Run" now, you should see... no changes. This is because we haven't added any code to connect to our websocket in the frontend yet! Add the following code to frontend.js:
+Every time someone vists our page, we'll want to send index.html to them. However, trying to connect to a websocket also counts as a request. For every request that we get, we want to try to parse it as a websocket request. If that fails, then we send the index.html. If you hit "Run" now, you should see... no changes. This is because we haven't added any code to connect to our websocket in the frontend yet! Add the following code to `frontend.js`:
 
 ```js
 let ws
@@ -492,7 +492,7 @@ document.addEventListener("DOMContentLoaded", _ => {
 })
 ```
 
-If you try to run the code you should see... no changes (again 😑). The socket connects to the server but the server doesn't do anything. Add the following code just before `} catch (error) {` in index.ts:
+If you try to run the code you should see... no changes (again 😑). The socket connects to the server but the server doesn't do anything. Add the following code just before `} catch (error) {` in `index.ts`:
 
 ```js
 try {
@@ -505,7 +505,7 @@ try {
 }
 ```
 
-At the end of index.ts, add:
+At the end of `index.ts`, add:
 
 ```js
 async function handleWs(socket: WebSocket) {
@@ -521,7 +521,7 @@ async function handleWs(socket: WebSocket) {
 ```
 
 Explanation:
-(from above) Every time someone connects to our websocket, we want to try to handle the websocket, i.e. we want to do something for every request to the websocket. If an error is present, we log the error and close the connection. Here, we're listening for an event of type "open" (which we're sending from index.html). If you try running your code now, you should see "Connection established with a client." in your console 🎉🎉
+(from above) Every time someone connects to our websocket, we want to try to handle the websocket, i.e. we want to do something for every request to the websocket. If an error is present, we log the error and close the connection. Here, we're listening for an event of type "open" (which we're sending from `index.html`). If you try running your code now, you should see "Connection established with a client." in your console 🎉🎉
 
 Next, let's store connections to users and send a welcome message to them. We'll create a new array, i.e. a list (add below ``console.log(`Chat server is running on 8080`)``):
 
@@ -549,7 +549,7 @@ await socket.send(JSON.stringify({
 
 
 <details>
-    <summary> This is how your index.ts file should look now: </summary>
+    <summary> This is how your `index.ts` file should look now: </summary>
 
 ```js
 import { serve } from "https://deno.land/std@0.75.0/http/server.ts"
@@ -609,14 +609,14 @@ async function handleWs(socket: WebSocket) {
 
 </details>
 
-We need references to the current message and name of the user in frontend.js. Add the following just after `document.addEventListener("DOMContentLoaded", _ => {`:
+We need references to the current message and name of the user in `frontend.js`. Add the following just after `document.addEventListener("DOMContentLoaded", _ => {`:
 
 ```js
 const name = document.getElementById("name")
 const message = document.getElementById("message")
 ```
 
-After the ws.onmessage block in frontend.js, add a function to add messages received to the screen:
+After the `ws.onmessage` block in `frontend.js`, add a function to add messages received to the screen:
 
 ```js
 function addMessages(message) {
@@ -634,7 +634,7 @@ addMessages(msg.data)
 ```
 
 <details>
-    <summary> Here's how "frontend.js" should look now </summary>
+    <summary> Here's how `frontend.js` should look now </summary>
 
 ```js
 let ws
@@ -670,7 +670,7 @@ document.addEventListener("DOMContentLoaded", _ => {
 
 If you hit run now, you should see "SERVER: Hello, welcome to the webchat!". 
 
-Great! But there's still one important feature to go: You can't send messages yet. In frontend.js, add a new function called sendMessage:
+Great! But there's still one important feature to go: You can't send messages yet. In `frontend.js`, add a new function called `sendMessage`:
 
 ```js
 function sendMessage() {
