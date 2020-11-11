@@ -1,6 +1,6 @@
 ---
 name: 'Drum Pad'
-description: 'Building a Drum Pad in HTML/CSS & JS'
+description: 'Creating a Drum Pad in HTML, CSS & JS'
 author: '@emmanuel39hanks'
 ---
 
@@ -81,9 +81,9 @@ We will start by writing code for our document to change the colors, adding font
 
 ```css
 
-// The @import rule allows you to import a style sheet into another style sheet. The @import rule must be at the top of the document.
+/* The import rule allows you to import a style sheet into another style sheet. The import rule must be at the top of the document. */
 
-// And we are importing the Roboto font from Google fonts.
+/* And we are importing the Roboto font from Google fonts. */
 
 @import  'https://fonts.googleapis.com/css?family=Roboto';
 
