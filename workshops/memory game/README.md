@@ -200,12 +200,13 @@ Remember, we are going code everything after the `cardArray`.
 
 Now we have to create four constants as:
 - `board` : the `div` element with `class = "board"` using [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
-- `result` : the `span` with `id = "score"` using `getElementById()`, to add the live score.
+- `result` : the `span` with `id = "score"`, to add the live score.
 - `placeholder` : for placeholder image. Placeholder image represents back side of our cards.
 - `blank` : for blank image. In place of the empty card, a blank image is displayed. 
 
 ```javascript
 const board = document.querySelector('.board')
+const result = document.querySelector('#score')
 const placeholder = 'https://cloud-5ystxzer7.vercel.app/7placeholder.png'
 const blank = 'https://cloud-5ystxzer7.vercel.app/6blank.png'
 ```
@@ -346,6 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [....]// the cardArray we created before
   
   const board = document.querySelector('.board')
+  const result = document.querySelector('#score')
   const placeholder = "https://cloud-5ystxzer7.vercel.app/7placeholder.png"
   const blank = "https://cloud-5ystxzer7.vercel.app/6blank.png"
   var cardsClicked = []
@@ -510,7 +512,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 ```
-<summary>
+</detials>
   
 One thing you might notice that the cards are not random. So we have to shuffle the `cardArray`, everytime before creating the board, using `sort()` method. The [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method sorts the elements of an array in place and returns the sorted array.
 
