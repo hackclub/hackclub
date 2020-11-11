@@ -497,7 +497,7 @@ function previousDate() {
 
 Explanation: We subtract the `today` state's date by 1, by using the `setter` function (which is `setToday()` in diguise), we pass a `new Date` with a value of `state` (which is -1 at that moment). Our date will change to the `current date stored in today - 1`.
 
-Learn more on [adding dates in javascript](https://stackoverflow.com/questions/24312296/add-one-day-to-date-in-javascript/24312386).
+Learn more about [adding dates in JavaScript](https://stackoverflow.com/questions/24312296/add-one-day-to-date-in-javascript/24312386).
 
 **Challenge:** Create a similar function `nextDate` which will set the date to `today + 1`.
 
