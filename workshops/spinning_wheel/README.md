@@ -5,7 +5,7 @@ author: '@HariOm987'
 img: https://cloud-gvkfrv1qw.vercel.app/0image.png
 ---
 
-In this workshop, we're going to make a colorful spinning wheel with your own custom content, in 20 minutes!
+In this workshop, you're going to make a colorful spinning wheel with your own custom content, in 20 minutes!
 
 Here are [live demo](https://movie-selector.hariom04.repl.co/) and the [final code](https://repl.it/@hariom04/movie-selector#index.html).
 
