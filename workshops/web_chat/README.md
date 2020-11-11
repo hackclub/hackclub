@@ -52,7 +52,16 @@ Follow these steps:
 
 - You now have a Deno repl setup successfully.
 
-![Click add file in top left to add a file, Write code in the center, Click run to run your code](https://cloud-pq5lbfiab.vercel.app/5introtoreplit.png)
+#### Repl.it basics
+
+<video muted autoplay loop controls>
+    <source src="https://cloud-qiwsf0afg.vercel.app/0repl.it_basics.mp4" type="video/mp4">
+    <ul>To add a file, click "Add file" in the top left and give it a name</ul>
+    <ul>To write code, simply start typing in the code editor in the center of the screen</ul>
+    <ul>To run code, click Run and refresh your page preview</ul>
+    <ul>To format your code, click "auto-format" in the top-center of the screen</ul>
+    <ul>To reload your page preview, click "Refresh" in the top-center of the screen</ul>
+</video>
 
 - Now, create a new file called `index.html`. This is what everyone will see when they visit your website.
 
@@ -311,10 +320,6 @@ Here's what's happening here:
 - By default, all requests go to "/", and we want to serve the index.html when the request goes to "/"
 - We read the requested file and set the Content-Type headers so the browser knows what to do with the file (i.e. Run the javascript and use the css to style the HTML)
 - If that file does not exist, we send a 404 error.
-
-> Repl.it TIP:
-> ![Click format and reload on top center of page to format your code and reload your page preview](https://cloud-pq5lbfiab.vercel.app/4formatreload.png)
-
 
 You should see the UI created earlier. Let's create a websocket that a webpage can connect to:
 
