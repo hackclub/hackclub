@@ -4,7 +4,8 @@ description: 'Build a random picker spinning wheel using HTML, CSS, and JavaScri
 author: '@HariOm987'
 img: https://cloud-gvkfrv1qw.vercel.app/0image.png
 ---
-You must have seen the spinning wheel by which we can select the random option, like a fortune wheel or a lucky draw. But have you ever wondered how to make your wheel yourself? Just follow this workshop and you will have your customized spinning wheel in the next 20 minutes!
+
+In this workshop, we're going to make a colorful spinning wheel with your own custom content, in 20 minutes!
 
 Here are [live demo](https://movie-selector.hariom04.repl.co/) and the [final code](https://repl.it/@hariom04/movie-selector#index.html).
 
@@ -15,11 +16,12 @@ Here are [live demo](https://movie-selector.hariom04.repl.co/) and the [final co
 # Part 1: Prerequisites
 * Account on Repl.it
 * Basic knowledge of HTML, CSS and JavaScript would be helpful but is not necessary to continue further.
+
 # Part 2: Setup
 ## Setting up our code environment
 We can use any code editor but keeping accessibility in our mind, we will be using Repl.it. It is an online code editor that is easy to use and can directly put your website in the real world.
 
-You can get started with it by just clicking [here](https://repl.it/languages/html). By this, you will directly land on the page where we can write our code.
+You can get started with it by going to [repl.it/languages/html](https://repl.it/languages/html). You will directly land on the page where we can write our code.
 
 ![Default Code](https://cloud-2un6g11k6.vercel.app/0default-file.png)
 
