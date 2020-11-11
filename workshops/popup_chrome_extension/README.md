@@ -17,7 +17,7 @@ In this workshop, you will learn how to:
 
 You will be making a Chrome extension that allows you to save and access your Zoom links for your classes. This is a very simple app, but it will allow you to "hack your way" to productivity by teaching you the foundation of building a Chrome extension.
 
-**Difficulty/interest level:** This is a simple web app using HTML/CSS/JS, with a strong emphasis on Javascript. I will go over everything you need to know for this workshop, so you don't need to worry about how much experience you have. This demo will *specifically* teach you how to build a bookmarking application (that is tailored for [Zoom](https://zoom.us/) links), but if you want to learn how to build any type of Chrome extension, this is your workshop!
+**Difficulty/interest level:** This is a simple web app using HTML/CSS/JS, with a strong emphasis on JavaScript. I will go over everything you need to know for this workshop, so you don't need to worry about how much experience you have. This demo will *specifically* teach you how to build a bookmarking application (that is tailored for [Zoom](https://zoom.us/) links), but if you want to learn how to build any type of Chrome extension, this is your workshop!
 
 **Average time for completion:** You can complete this in <u>15-20 minutes</u>. You will need the following tools:
 
@@ -49,9 +49,7 @@ There are a few parts to this workshop. I highly reccomend doing them in order b
 
 ## Setting up the project
 
-1. Go to to [Repl.it](https://repl.it/) and either:
-
-   1. Create an account
+1. Go to to [Repl.it](https://repl.it/).
 
 **The website will look a little like this:** 
 
@@ -75,6 +73,8 @@ There are a few parts to this workshop. I highly reccomend doing them in order b
     └── en/
         └── messages.json
 ```
+
+![This is how you can set up your file structure in Repl.it ](https://cloud-9bso257xg.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_17.11__57_.gif)
 
 You can also see the file structure live here on the final Github repo: https://github.com/shreyfirst/zoom_bookmarks
 
@@ -132,8 +132,6 @@ Add the following code into your `manifest.json` file:
 Update the file with the contents from this site: https://gist.githubusercontent.com/shreyfirst/51eae0fbb5bb07f37adba84af0582910/raw/f98c1d3333b07b9e9e15d1e1ef9ec51985d9da1b/messages.json
 
 This is essentially a template file of all the error messages that Chrome could give the user. 
-
-![This is how you can set up your file structure in Repl.it ](https://cloud-9bso257xg.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_17.11__57_.gif)
 
 ## Frontend
 
