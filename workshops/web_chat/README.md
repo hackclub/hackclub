@@ -116,32 +116,32 @@ I'll quickly explain this code:
 
 ### Adding the CSS
 
-Since our frontend doesn't contain a lot of code, we'll be using an inline stylesheet - This means that all our CSS will be stored within the index.html file. For larger projects, you'll want to use [external stylesheets](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link). To write inline CSS, we'll create a `<style></style>` inside the `<head></head>`
+- Create a new file called `styles.css` - CSS contained in this file will style our web page
+- Add a `<link rel="stylesheet" href="styles.css"/>` inside `<head></head>`
 
 ```html
 <!DOCTYPE html>
 <html>
+
 <head>
-  <style>
-    <!-- ADD YOUR INLINE STYLES HERE-->
-  </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
     <div id="messageLog"></div>
     <div id="controls">
         <input id="name" placeholder="Your name">
         <textarea id="message" placeholder="Type your message here"></textarea>
         <button id="send">
-          Send
+            Send
         </button>
     </div>
 </body>
+
 </html>
 ```
 
-We'll put all of our CSS here.
-
-- Add the following CSS into `<style></style>` inside your HTML file
+- Add the following CSS to the `styles.css` file
 
 ```css
 * {
@@ -210,87 +210,6 @@ Explanation:
       - 1/10 of the space is taken up by the button 
 
 
-
-<details>
-    <summary>This is how the HTML should look:</summary>
-
-```html
-<!DOCTYPE html>
-<html>
-
-<head>
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: sans-serif;
-            padding: 5px;
-            margin: 0px;
-            border: 0px;
-        }
-
-        b {
-            padding: 0px;
-        }
-
-        body,
-        html {
-            width: 100%;
-            height: 100%;
-        }
-
-        #messageLog {
-            width: 100%;
-            height: 90%;
-            overflow: auto;
-        }
-
-        #controls {
-            width: 100%;
-            height: 10%;
-            display: grid;
-            grid-template-columns: 2fr 7fr 1fr;
-            grid-gap: 10px;
-        }
-
-        #name {
-            height: 100%;
-            width: 100%;
-            border: 1px solid gray;
-            border-radius: 5px;
-            text-align: center;
-            word-wrap: break-word;
-        }
-
-        #message {
-            height: 100%;
-            width: 100%;
-            border: 1px solid gray;
-            border-radius: 5px;
-        }
-
-        #send {
-            height: 100%;
-            width: 100%;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="messageLog"></div>
-    <div id="controls">
-        <input id="name" placeholder="Your name">
-        <textarea id="message" placeholder="Type your message here"></textarea>
-        <button id="send">
-            Send
-        </button>
-    </div>
-</body>
-</html>
-```
-
-</details>
-
 ### Adding Javascript
 
 - Create a new file called `frontend.js` - This will be the code that runs on someone's device when they visit your webpage
@@ -304,61 +223,7 @@ Explanation:
 <html>
     
 <head>
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: sans-serif;
-            padding: 5px;
-            margin: 0px;
-            border: 0px;
-        }
-
-        b {
-            padding: 0px;
-        }
-
-        body,
-        html {
-            width: 100%;
-            height: 100%;
-        }
-
-        #messageLog {
-            width: 100%;
-            height: 90%;
-            overflow: auto;
-        }
-    
-        #controls {
-            width: 100%;
-            height: 10%;
-            display: grid;
-            grid-template-columns: 2fr 7fr 1fr;
-            grid-gap: 10px;
-        }
-
-        #name {
-            height: 100%;
-            width: 100%;
-            border: 1px solid gray;
-            border-radius: 5px;
-            text-align: center;
-            word-wrap: break-word;
-        }
-
-        #message {
-            height: 100%;
-            width: 100%;
-            border: 1px solid gray;
-            border-radius: 5px;
-        }
-
-        #send {
-            height: 100%;
-            width: 100%;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
     
 <body>
@@ -396,7 +261,7 @@ const server = serve(":8080")
 console.log(`Chat server is running on 8080`)
 
 for await (const req of server) {
-        await req.respond({ status: 200, body: "Server test" })
+    await req.respond({ status: 200, body: "Server test" })
 }
 ```
 
@@ -404,7 +269,7 @@ Explanation:
   - We're creating a http server here so we can serve files and text
   - The `for await` loop replies to every request (i.e. everytime someone navigates to the server) that is sent to the server
 
-Hit "Run" and you should see "Server test" in the top right of your screen. Next, let's actually serve the `index.html` file we made.
+Hit "Run" and you should see "Server test" in the top right of your screen. Next, let's actually serve the frontend we made.
 
 ```js
 import { serve } from "https://deno.land/std@0.75.0/http/server.ts"
@@ -413,24 +278,34 @@ const server = serve(":8080")
 console.log(`Chat server is running on 8080`)
 
 for await (const req of server) {
-    if (req.url === "/") {
-        req.url = "/index.html"
-    }
-    try {
-        const data = await Deno.readTextFile(req.url.substring(1))
-        await req.respond({ status: 200, body: data })
-    } catch {
-        await req.respond({ status: 404 })
-    }
+        try {
+            let headers = new Headers()
+            let data
+
+            if (req.url === "/" || req.url === "/index.html") {
+                headers.set("Content-Type", "text/html")
+                data = await Deno.readTextFile("index.html")
+            } else if (req.url === "/styles.css") {
+                headers.set("Content-Type", "text/css")
+                data = await Deno.readTextFile("styles.css")
+            } else if (req.url === "/frontend.js") {
+                headers.set("Content-Type", "text/javascript")
+                data = await Deno.readTextFile("frontend.js")
+            } else {
+                throw 404
+            }
+
+            await req.respond({ status: 200, body: data, headers: headers })
+        } catch {
+            await req.respond({ status: 404 })
+        }  
 }
 ```
 
 Here's what's happening here:
 
-- By default, all requests go to "/"
-- If the request is going to "/", we want to set the request URL to "/index.html" -- we want to serve `index.html` by default
-- `req.url.substring(1)` removes the first character from `req.url`. Therefore if `req.url` is "/index.html", `req.url.substring(1)` will be "index.html"
-- We read the file requested by the user, and return that file
+- By default, all requests go to "/", and we want to serve the index.html when the request goes to "/"
+- We read the requested file and set the Content-Type headers so the browser knows what to do with the file (i.e. Run the javascript and use the css to style the HTML)
 - If that file does not exist, we send a 404 error.
 
 > Repl.it TIP:
@@ -456,12 +331,24 @@ for await (const req of server) {
             headers,
         })
     } catch (error) {
-        if (req.url === "/") {
-            req.url = "/index.html"
-        }
         try {
-            const data = await Deno.readTextFile(req.url.substring(1))
-            await req.respond({ status: 200, body: data })
+            let headers = new Headers()
+            let data
+
+            if (req.url === "/" || req.url === "/index.html") {
+                headers.set("Content-Type", "text/html")
+                data = await Deno.readTextFile("index.html")
+            } else if (req.url === "/styles.css") {
+                headers.set("Content-Type", "text/css")
+                data = await Deno.readTextFile("styles.css")
+            } else if (req.url === "/frontend.js") {
+                headers.set("Content-Type", "text/javascript")
+                data = await Deno.readTextFile("frontend.js")
+            } else {
+                throw 404
+            }
+
+            await req.respond({ status: 200, body: data, headers: headers })
         } catch {
             await req.respond({ status: 404 })
         }  
@@ -469,7 +356,7 @@ for await (const req of server) {
 }
 ```
 
-Every time someone vists our page, we'll want to send index.html to them. However, trying to connect to a websocket also counts as a request. For every request that we get, we want to try to parse it as a websocket request. If that fails, then we send the index.html. If you hit "Run" now, you should see... no changes. This is because we haven't added any code to connect to our websocket in the frontend yet! Add the following code to `frontend.js`:
+Every time someone vists our page, we'll want to send index.html to them. However, trying to connect to a websocket also counts as a request. For every request that we get, we want to try to parse it as a websocket request. If that fails, then we send the requested file according to the URL. If you hit "Run" now, you should see... no changes. This is because we haven't added any code to connect to our websocket in the frontend yet! Add the following code to `frontend.js`:
 
 ```js
 let ws
@@ -581,8 +468,27 @@ for await (const req of server) {
         }
 
     } catch (error) {
-        const data = await Deno.readTextFile("index.html")
-        await req.respond({ status: 200, body: data })
+        try {
+            let headers = new Headers()
+            let data
+
+            if (req.url === "/" || req.url === "/index.html") {
+                headers.set("Content-Type", "text/html")
+                data = await Deno.readTextFile("index.html")
+            } else if (req.url === "/styles.css") {
+                headers.set("Content-Type", "text/css")
+                data = await Deno.readTextFile("styles.css")
+            } else if (req.url === "/frontend.js") {
+                headers.set("Content-Type", "text/javascript")
+                data = await Deno.readTextFile("frontend.js")
+            } else {
+                throw 404
+            }
+
+            await req.respond({ status: 200, body: data, headers: headers })
+        } catch {
+            await req.respond({ status: 404 })
+        }  
     }
 }
 
