@@ -92,7 +92,7 @@ The url where we will make the request is `https://type.fit/api/quotes`. If you 
 
 Let's start working with it.
 
-First, we'll create a new variable to store this url, next we'll create an empty state to store the data.
+Inside the `App.js`, first we'll create a new variable to store this url, next we'll create an empty state to store the data.
 
 ```jsx
 import React, { useState } from "react"; //<-- Import useState
@@ -153,7 +153,13 @@ We only need to display 1 random quote at a time. So, for this, we only need to 
 Using the formula for getting a random number, let's create a function outside our component which will return us a random number.
 
 ```jsx
+// ...
+
 const randomNo = () => Math.floor(Math.random() * data.length) + 1;
+
+export default function App() {
+  // code from earlier workshop
+}
 ```
 
 Now this function will always return a random number between 1 and `data.length` (the length of the `data` array).
@@ -311,7 +317,7 @@ Yay! We are done! We learnt how to handle APIs in React and we built a simple bu
 
 ## Part 4: The End
 
-Make sure you create an account on codesandbox.io to save this wonderful piece of creation or you'll loose it 😧.
+Make sure you create an account on codesandbox.io to save this wonderful piece of creation or you'll lose it 😧.
 
 Here are some tasks for you:
 
@@ -333,7 +339,7 @@ Now that you know how to handle APIs in React, here are some APIs for you to pla
 
 4. [Fortnite API](https://fortnite-api.com/)
 
-Check out what other Hack Clubber built!
+Check out what other Hack Clubbers built!
 
 1. [Khushraj Rathod](https://codesandbox.io/s/quotesgeneratorstartercode-forked-z0wzm)
 
