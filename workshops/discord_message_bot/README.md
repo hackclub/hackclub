@@ -8,11 +8,29 @@ author: '@JakeGerber'
 
 <img src="https://cloud-bj4vorj8t.vercel.app/examplebot.png" width="380" alt="Message Example">
 
-## Setup
+## Bot Setup
 
-You should know how to set up a hello world discord bot for this workshop. If you do not know how to create a this look [here](https://workshops.hackclub.com/hello_bot/).
+First let's set up a bot before actually creating the features! Click [here](https://discord.com/developers/applications).
 
-Let's start!
+Click the new application button at the top right.
+<img src="https://cloud-noinx6mnk.vercel.app/0screenshot__1379_.png" width="900" alt="New Application Button">
+
+You will now have a new bot where you can customize the name, description, and profile picture!
+<img src="https://cloud-jlzsnh85x.vercel.app/0screenshot__1380_.png" width="900" alt="Bot Profile">
+
+Click the Bot tab on the right side of your screen.
+<img src="https://cloud-e5r0obhgo.vercel.app/0screenshot__1381_.png" width="900" alt="Bot Side Bar">
+
+Click Add Bot to generate a bot token! This identifies the bot! Give it to nobody!
+<img src="https://cloud-lix7k1shj.vercel.app/0screenshot__1382_.png" width="900" alt="Bot Token">
+
+## Repl.it Setup
+
+We're going to use [Repl.it](https://repl.it/~) to host the bot. It is an online IDE that makes it easy to setup and run the bot!
+Create a new repl and use Node.js
+<img src="https://cloud-otu0relhe.vercel.app/0screenshot__1383_.png" width="380" alt="Node.js Repl">
+
+Let's start creating it's functions!
 
 <img src="https://media1.tenor.com/images/d17514e2c03ec6b0e67ba7f18439a011/tenor.gif" width="380" alt="Shawn Sheep Gif">
 
@@ -305,6 +323,12 @@ client.login('token')
 ```
 
 _Make sure you insert your bot token where 'token' is_
+
+## Add the Bot to YOUR server
+
+Go [here](https://discordapi.com/permissions.html#)
+<img src="https://cloud-1ca9lqh0p.vercel.app/0screenshot__1384_.png" width="380" alt="Adding Bot to Your Server">
+Add your permissions, click the link at the bottom, and choose what server you want to add it to!
 
 ## More that you can make with Source Code
 
