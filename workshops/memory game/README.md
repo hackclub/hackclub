@@ -46,7 +46,23 @@ After setting up let's get going.
 
 ## The HTML
 
-Let's create the markup of our game. Change the title and create a heading in the body. Now put a `p` tag of Score with a `span` of `id = "score"` for displaying the live score. Create a `div` element with `class = "board"`. We will create the game board using JavaScript. Your final `index.html` will look something like this.
+Let's create the markup of our game. 
+
+Change the title and create a heading in the body. Now put a `p` tag of Score with a `span` with id of `score` for displaying the live score. 
+
+```html
+<h1>~ Memory Game ~</h1>
+<p>Score:<span id="score"></span></p>
+```
+
+Create a `div` element with `class = "board"`. We will create the game board using JavaScript inside this `div`. 
+
+```html    
+<div class="board"></div>
+```
+
+<details>
+  <summary>Your final `index.html` will look something like this.</summary>
 
 ```html
 <!DOCTYPE html>
@@ -65,12 +81,15 @@ Let's create the markup of our game. Change the title and create a heading in th
   </body>
 </html>
 ```
+</details>
 
 Click the Run button to check your output, whether all the tags are working.
 
 ![HTML output](https://cloud-6a90k3fzb.vercel.app/0htmlop.png)
 
 ## The CSS
+
+If you forked the starter repl, all the styles are pre-written. You can skip this part.
 
 Now hop on to `style.css` file. Let's add some universal styles for our game board. As mentioned before we are going to use images of 100 x 100 px, set the board width to `300px` and height to `400px` for 3 x 4 card board. Add the styles below to your project.
 
@@ -105,7 +124,7 @@ We completed the markup and styling of our project. Now flip over to `script.js`
 
 ## The JavaScript
 
-Create a DOM [event-listener](https://developer.mozilla.org/en-US/docs/Web/API/EventListener) for the event [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event). All our JavaScript code will be inside the event-listener, which will be excuted after the content loaded.
+Create a DOM [event-listener](https://developer.mozilla.org/en-US/docs/Web/API/EventListener) for the event [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event). All our JavaScript code will be inside the event-listener, which will be executed after the content of the web page is loaded.
 
 ```javascript
 document.addEventListener('DOMContentLoaded', () => {
@@ -167,6 +186,9 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'https://cloud-5ystxzer7.vercel.app/06.png'
     }
   ]
+  
+  // All the code goes here
+  
 })
 ```
 
@@ -174,19 +196,63 @@ Now we are going to creating our game board.
 
 ## Game Board
 
-Pick up the `div` element with `class = "board"` using [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) and define it as `board`. Create a function `createBoard()` and loop over through elements in `cardArray` using `for` loop and add cards to our game board.
+Remember, we are going code everything after the `cardArray`. 
 
-Create a constant for our placeholder image. We are going to use it many times in the project.
+Now we have to create four constants as:
+- `board` : the `div` element with `class = "board"` using [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
+- `result` : the `span` with `id = "score"` using `getElementById()`, to add the live score.
+- `placeholder` : for placeholder image. Placeholder image represents back side of our cards.
+- `blank` : for blank image. In place of the empty card, a blank image is displayed. 
 
 ```javascript
+const board = document.querySelector('.board')
 const placeholder = 'https://cloud-5ystxzer7.vercel.app/7placeholder.png'
+const blank = 'https://cloud-5ystxzer7.vercel.app/6blank.png'
 ```
 
-Create a `img` element using `document.createElement` for the every card. Using `setAttribute()`, add `src` and `data-id` attributes to the image. Let's first set the `src` attribute to the placeholder image (i.e, let's assume the placeholder image as reversed card). The link to the placeholder image is given in the code, otherwise add the relative path to the image.
+Now create a function `createBoard()` and loop over through elements in `cardArray` using `for` loop and add cards to our game board.
 
-![place holder image](https://cloud-5ystxzer7.vercel.app/7placeholder.png)
+```
+function createBoard(){
+  for (let i = 0; i < cardArray.length; i++) {
+    // code goes here
+  }
+}
+```
 
-Here, [createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) creates the HTML element specified by tagName, [setAttribute()](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute) sets the value of an attribute on the specified element and [data attribute](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) allow us to store extra information on standard in the HTML tag. According to the game, we have to flip the card that is clicked. So add a `click` event-listener for the card. Every time a card get clicked, `flipCard` function will be excuted, which we will define later on the flow. Then add the `card` into the `board` using `appendChild()`. The method [appenChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) adds a node to the end of the list of children of a specified parent node.
+Create a `img` element using `document.createElement` for the every card.
+
+```js
+var card = document.createElement('img')
+```
+
+Using `setAttribute()`, add `src` and `data-id` attributes to the image. Let's first set the `src` attribute to the placeholder image (i.e, let's assume the placeholder image as reversed card). The link to the placeholder image is given in the code, otherwise add the relative path to the image.
+
+```js
+card.setAttribute('src', placeholder)
+card.setAttribute('data-id', i)
+```
+
+**Explaination :** Here, 
+- [createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) creates the HTML element specified by tagName
+- [setAttribute()](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute) sets the value of an attribute on the specified element 
+- [data attribute](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) allow us to store extra information on standard in the HTML tag. 
+
+According to the game, we have to flip the card that is clicked. So add a `click` event-listener for the card. Every time a card get clicked, `flipCard` function will be executed, which we will define later on the flow. For now, comment the event-listener as `flipCard` haven't yet defined.
+
+```js
+card.addEventListener('click', flipCard)
+```
+
+Then add the `card` into the `board` using `appendChild()`. 
+
+```js
+board.appendChild(card)
+```
+
+The method [appenChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) adds a node to the end of the list of children of a specified parent node.
+
+The function we created finally, will be :
 
 ```javascript
 const board = document.querySelector('.board')
@@ -205,23 +271,86 @@ function createBoard() {
 createBoard()
 ```
 
-For now, comment the event-listener as `flipCard` haven't yet defined and invoke the `createBoard()` function. Press the run button and see the your game board. It looks like this with all the cards turned down (i.e., placeholder images).
+Press the run button and see the your game board. 
+
+It looks like this with all the cards turned down (i.e., placeholder images).
 
 ![Temporary output](https://cloud-2vppbtbp1.vercel.app/0jsop.png)
 
 ## Flip Card
 
-When a card is clicked, let's flip the card. Create two empty variable arrays `cardsClicked` and `cardsClickedId`. Create a function `flipCard()`. Then inside this function, create a variable `cardId`, which is the `data-id` attribute of the clicked card, using `getAttribute()`. Now add name of this card into `cardsClicked` array based on `cardId` using `push()` method. Also push the id of this card (i.e., `cardId`) into `cardsClickedId` array. Then add the front side of the card, image in `cardArray` corrresponding to `cardId`, using `setAttribute`.After selecting two cards, we have to execute the function `checkForMatch()`. For that, if the length of `cardsClicked` array is equal to `2`, add invoke `checkForMatch()` inside `setTimeout()` so that everything doesn't happen too fast.
+When a card is clicked, let's flip the card. 
 
-Here, [getAttribute()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute) returns the value of a specified attribute on the element, [.push() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) adds one or more elements to the end of an array and returns the new length of the array and [setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) sets a timer which executes a function or specified piece of code once the timer expires.
+Create two empty variable arrays `cardsClicked` and `cardsClickedId`. Also create a variable `cardsMatched` array to push the matched cards
 
+```js
+var cardsClicked = []
+var cardsClickedId = []
+var cardsMatched = []
+```
+
+Create a function `flipCard()`. Then inside this function, create a variable `cardId`, which is the `data-id` attribute of the clicked card, using `getAttribute()`. 
+
+```js
+function flipCard() {
+  var cardId = this.getAttribute('data-id')
+  // code goes here
+}
+```
+
+Now add name of this card into `cardsClicked` array based on `cardId` using `push()` method. Also push the id of this card (i.e., `cardId`) into `cardsClickedId` array. 
+
+```js
+cardsClicked.push(cardArray[cardId].name)
+cardsClickedId.push(cardId)
+```
+
+Then add the front side of the card, image in `cardArray` corrresponding to `cardId`, using `setAttribute`.
+
+```js
+this.setAttribute('src', cardArray[cardId].img)
+```
+
+After selecting two cards, we have to check for match. For that, if two cards are clicked i.e., the length of `cardsClicked` array is equal to `2`, invoke `checkForMatch()` inside `setTimeout()` so that everything doesn't happen too fast.
+
+```js
+if (cardsClicked.length ===2) {
+  setTimeout(checkForMatch, 500)
+}
+```
+    
+**Explaination :** Here, 
+- [getAttribute()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute) returns the value of a specified attribute on the element.
+- [push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) method adds one or more elements to the end of an array and returns the new length of the array.
+- [setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) sets a timer which executes a function or specified piece of code once the timer expires.
+
+Final `flipCard` function will be :
+
+```js
+function flipCard() {
+  var cardId = this.getAttribute('data-id')
+  cardsClicked.push(cardArray[cardId].name)
+  cardsClickedId.push(cardId)
+  this.setAttribute('src', cardArray[cardId].img)
+  if (cardsClicked.length ===2) {
+    setTimeout(checkForMatch, 500)
+  }
+}
+```
+
+<details>
+  <summary>Here's what the code looks like so far: </summary>
+  
 ```javascript
 document.addEventListener('DOMContentLoaded', () => {
-  const cardArray = [....]
+  const cardArray = [....]// the cardArray we created before
+  
   const board = document.querySelector('.board')
   const placeholder = "https://cloud-5ystxzer7.vercel.app/7placeholder.png"
+  const blank = "https://cloud-5ystxzer7.vercel.app/6blank.png"
   var cardsClicked = []
   var cardsClickedId = []
+  var cardsMatched = []
 
   //creating game board
     function createBoard() {
@@ -247,13 +376,14 @@ document.addEventListener('DOMContentLoaded', () => {
   createBoard()
 })
 ```
+</details>
 
 Don't forget to uncomment the event-listener of the card.
 Comment the `if` statement in `flipCard` function and check weather the images are changing or not. The output works like this.
 
 ![Flip card](https://cloud-odqx6kfb8.vercel.app/0flipcard.gif)
 
-Until now, we created a flippable game board.
+We created a flippable game board.
 
 ![Wooo!!](https://cloud-bos4syje4.vercel.app/0woo__.gif)
 
@@ -261,15 +391,38 @@ Now that we have flipping cards, let’s handle the matching logic.
 
 ## Match Card
 
-When we click the first card, it needs to wait until another card is flipped. So now, when the user clicks the second car,w e will check to see if it’s a match. In order to do that, let’s create a function `checkForMatch()`. Inside the function, select all the images we created using `querySelectorAll()` and define a `cards` array. Also get the two elements in `cardsClickedId` array into two variables `firstCard` and `secondCard` respectively. If the two cards match you get +1 to your score. These cards then disappear. If you click the same card again, a pop up alert notifies you and the cards flip back. If the next card you flip does not match, the cards flip back. The game continues until you match all the cards on the board.
+When we click the first card, it needs to wait until another card is flipped. So now, when the user clicks the second card, we will check to see if it’s a match. 
 
-In place of the empty card, a blank image is displayed. Create a constant `blank` for the blank image.
+In order to do that, let’s create a function `checkForMatch()`. Inside the function, select all the images we created using `querySelectorAll()` and define a `cards` array. Also get the two elements in `cardsClickedId` array into two variables `firstCard` and `secondCard` respectively. 
 
-```javascript
-const blank = 'https://cloud-5ystxzer7.vercel.app/6blank.png'
+```js
+function checkForMatch() {
+  var cards = document.querySelectorAll('img')
+  const firstCard = cardsClickedId[0]
+  const secondCard = cardsClickedId[1]
+  // upcoming code
+}
 ```
 
-![blank](https://cloud-5ystxzer7.vercel.app/6blank.png)
+If you click the same card again, a pop up alert notifies you and the cards flip back. 
+
+```js
+if(firstCard === secondCard) {
+  cards[firstCard].setAttribute('src', placeholder)
+  cards[secondCard].setAttribute('src', placeholder)
+  alert('You have clicked the same image!')
+}
+```
+      
+Else, if the two cards match you get +1 to your score. These cards then disappear(i.e., blank card is displayed). We add the matched cards to `cardsMatched` array we created before using `push()` method.
+
+```js
+else if (cardsClicked[0] === cardsClicked[1]) {
+  cards[firstCard].setAttribute('src', blank)
+  cards[secondCard].setAttribute('src', blank)
+  cardsMatched.push(cardsClicked)
+}
+```
 
 Once we have a matched, the blank cards are still "clickable" and that's a flaw as far as user experience goes.
 
@@ -278,12 +431,33 @@ Once we have a matched, the blank cards are still "clickable" and that's a flaw 
 So we have to remove the "click" eventListener of the matched pairs. The [removeEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) method removes from the EventTarget an event listener previously registered.
 
 ```javascript
-cards[firstCard].removeEventListener('click', flipCard)
-cards[secondcard].removeEventListener('click', flipCard)
+else if (cardsClicked[0] === cardsClicked[1]) {
+  // previous code
+  cards[firstCard].removeEventListener('click', flipCard)
+  cards[secondcard].removeEventListener('click', flipCard)
+}
 ```
 
-Also create a variable `cardsMatched` array to push the matched cards. The length of `cardsMatched` array is your score. We have to add the live score into the `span` with `id = "score"` using `getElementById()` and `textContent`. After the logic executed, we have to clear both the `cardsClicked` and `cardsClickedId` arrays no matter what.
+If the next card you flip does not match, the cards flip back. The game continues until you match all the cards on the board.
 
+```js
+else {
+  cards[firstCard].setAttribute('src', placeholder)
+  cards[secondCard].setAttribute('src', placeholder)
+}
+```
+
+The length of `cardsMatched` array is your score. We have to add the live score into the `span` with `id = "score"` using `getElementById()` and `textContent`. After the logic executed, we have to clear both the `cardsClicked` and `cardsClickedId` arrays no matter what.
+
+```js
+cardsClicked = []
+cardsClickedId = []
+result.textContent = cardsMatched.length
+```
+
+<detials>
+  <summary>Our code so far:</summary>
+  
 ```javascript
 document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [....]
@@ -336,7 +510,8 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 ```
-
+<summary>
+  
 One thing you might notice that the cards are not random. So we have to shuffle them using `sort()` method. The [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method sorts the elements of an array in place and returns the sorted array.
 
 ```javascript
@@ -364,7 +539,7 @@ It's your turn to customize.
 Hope you love this workshop! :v: <br>
 After customising, do share with me on slack as [@Giridhar](https://hackclub.slack.com/team/U013E6KE9UJ). I'd love to see your project.
 
-## Inspiration
+## Inspiration 
 
 These are some other projects to inspire you.
 
