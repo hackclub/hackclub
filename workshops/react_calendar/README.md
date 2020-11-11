@@ -2,6 +2,7 @@
 name: 'Mini Calendar'
 description: 'Build a simple mini calendar with ReactJS.'
 author: '@faisalsayed10'
+img: 'https://cloud-d3dt7t9w5.vercel.app/0image.png'
 ---
 
 # Mini Calendar
