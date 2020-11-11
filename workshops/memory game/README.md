@@ -2,6 +2,7 @@
 name: 'Memory Game'
 description: 'Create your own memory game using JavaScript'
 author: '@giridhar7632'
+image: 'https://cloud-g7cpynxc4.vercel.app/0screenshot_2020-11-11_104712.png'
 ---
 
 # Memory Game
@@ -340,7 +341,7 @@ function flipCard() {
 ```
 
 <details>
-  <summary>Here's what the code looks like so far: </summary>
+  <summary> Here's what the code looks like so far: </summary>
   
 ```javascript
 document.addEventListener('DOMContentLoaded', () => {
@@ -458,7 +459,7 @@ result.textContent = cardsMatched.length
 ```
 
 <detials>
-  <summary>Our code so far:</summary>
+  <summary> Our code so far: </summary>
   
 ```javascript
 document.addEventListener('DOMContentLoaded', () => {
@@ -515,6 +516,8 @@ document.addEventListener('DOMContentLoaded', () => {
 </detials>
   
 One thing you might notice that the cards are not random. So we have to shuffle the `cardArray`, everytime before creating the board, using `sort()` method. The [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method sorts the elements of an array in place and returns the sorted array.
+
+![Non random board](https://cloud-g7cpynxc4.vercel.app/1screenshot_2020-11-11_105448.png)
 
 Add the following piece of code just after the `cardArray`, before the constants we created.
 
