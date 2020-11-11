@@ -15,9 +15,6 @@ Memory Game, also known as Matching Game, is a simple card game where you need t
 
 ## How to play...
 
-Memory Game has long been a favorite game for all generations. It is easy to play, in fact it is so simple that really young children can play with ease.
-It requires observation, concentration and a good memory to win.
-
 ### Rules
 
 - You will start by flipping over one card
@@ -29,7 +26,7 @@ It requires observation, concentration and a good memory to win.
 ## Prerequisites
 
 ![prerequisites](https://cloud-h9glprsfs.vercel.app/0prerequisites.png)
-Basic knowledge of HTML5, CSS3, and JavaScrip. We will use some in-built functions of JavaScript. Also the styling will be as simple as possible.
+Basic knowledge of HTML5, CSS3, and JavaScript. We will use some in-built functions of JavaScript. Also the styling will be as simple as possible.
 
 ## Setup
 
