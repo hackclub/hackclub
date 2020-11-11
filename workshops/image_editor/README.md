@@ -1,7 +1,7 @@
 ---
-name: Image Editor
-description: Make your own image editor
-author: @wollygfx
+name: 'Image Editor'
+description: 'Make your own image editor'
+author: '@wollygfx'
 img: 'https://cloud-81e0x4zt3.vercel.app/0image.png'
 ---
 
