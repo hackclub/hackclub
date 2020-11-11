@@ -91,7 +91,7 @@ Click the Run button to check your output, whether all the tags are working.
 
 If you forked the starter repl, all the styles are pre-written. You can skip this part.
 
-Now hop on to `style.css` file. Let's add some universal styles for our game board. As mentioned before we are going to use images of 100 x 100 px, set the board width to `300px` and height to `400px` for 3 x 4 card board. Add the styles below to your project.
+Otherwise hop on to `style.css` file. Let's add some universal styles for our game board. As mentioned before, we are going to use images of 100 x 100 px. So set the board width to `300px` and height to `400px` for 3 x 4 card board. Add the styles below to your project.
 
 ```css
 * {
