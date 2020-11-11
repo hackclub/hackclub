@@ -1,8 +1,9 @@
 ---
-name: 'Build a pop-up Chrome extension!'
+name: 'Build a Chrome extension!'
 description: 'Hack your way to productivity by building your own bookmarking Chrome extension'
 author: '@shreyfirst'
 img: 'https://cloud-qyx3m9oc6.vercel.app/0image.png'
+
 ---
 
 In this workshop, you will learn how to:
@@ -26,15 +27,15 @@ You will be making a Chrome extension that allows you to save and access your Zo
 
 **Demo:** Test out what we'll be making by tinkering with this live demo!
 
-You can download/clone this Github repository for the final code, if you want to reference from a master copy: https://github.com/shreyfirst/zoom_bookmarks
+* Link to download the published version: https://chrome.google.com/webstore/detail/zoom-bookmarks/haplbihlmhnffbihdfjhgnickameiphd?hl=en
 
-Link to download the published version: https://chrome.google.com/webstore/detail/zoom-bookmarks/haplbihlmhnffbihdfjhgnickameiphd?hl=en
+* You can download/clone this Github repository for the final code, if you want to reference from a master copy: https://github.com/shreyfirst/zoom_bookmarks
 
 ![Demo of what the extension will look like](https://cloud-qyx3m9oc6.vercel.app/0image.png)
 
 ## Table of Contents
 
-There are a few parts to this workshop. I highly recommend doing them in order because each one relies on the other.
+There are a few parts to this workshop. I highly reccomend doing them in order because each one relies on the other.
 
 1. Setting up the project
 2. Frontend
@@ -51,17 +52,18 @@ There are a few parts to this workshop. I highly recommend doing them in order b
 1. Go to to [Repl.it](https://repl.it/) and either:
 
    1. Create an account
-   2. Click the "Start coding" button on the top right
 
-   **The website will look a little like this:**
+**The website will look a little like this:** 
 
-   ![Repl.it website)@2x](https://cloud-cnenr6ov1.vercel.app/0image.png)
+![Repl.it website)@2x](https://cloud-cnenr6ov1.vercel.app/0image.png)
 
-2. Choose "HTML/CSS/JS"
+2. Click the "Start coding" button on the top right
 
-   * This means that we will be coding in different web languages. HTML is like the text files, CSS is similar to the design element, and JS is anything special like animations, etc
+3. Choose "HTML/CSS/JS"
 
-3. Once you have a new HTML Repl, you want to configure it with this file structure:
+* This means that we will be coding in different web languages. HTML is like the text files, CSS is similar to the design element, and JS is anything special like animations, etc
+
+4. Once you have a new HTML/CSS/JS Repl, you want to configure it with this file structure: 
 
 ```
 .
@@ -74,7 +76,9 @@ There are a few parts to this workshop. I highly recommend doing them in order b
         └── messages.json
 ```
 
-**NOTES about the file structure:**
+You can also see the file structure live here on the final Github repo: https://github.com/shreyfirst/zoom_bookmarks
+
+**NOTES about the file structure:** 
 
 1. `index.html` can be whatever Repl.it sets for you. You can <u>delete</u> the other standard Repl files (`style.css` and `script.js`)
 2. `icon.png` can be any **square** PNG graphic that is 48x48px. You can download a sample `icon.png` here:  https://cloud-mkf1ulf19.vercel.app/0bookmark.png
@@ -89,35 +93,35 @@ Add the following code into your `manifest.json` file:
 
 ```json
 {
-  "name": "Zoom Bookmarks Demo",
-  "version": "0.0.1",
-  "manifest_version": 2,
-  "description": "Demo bookmarks app that allows you to save and open your Zoom links.",
-  "homepage_url": "https://hackclub.com",
-  "icons": {
-    "48": "icon.png"
-  },
-  "default_locale": "en",
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_title": "Zoom Bookmarks Demo",
-    "default_popup": "index.html"
-  },
-  "permissions": [
-    "chrome://favicon/",
-    "clipboardRead",
-    "clipboardWrite",
-    "contentSettings",
-    "contextMenus",
-    "cookies",
-    "idle",
-    "management",
-    "notifications",
-    "tabs",
-    "background",
-    "alarms",
-    "storage"
-  ]
+    "name": "Zoom Bookmarks Demo",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Demo bookmarks app that allows you to save and open your Zoom links.",
+    "homepage_url": "https://hackclub.com",
+    "icons": {
+        "48": "icon.png"
+    },
+    "default_locale": "en",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Zoom Bookmarks Demo",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "chrome://favicon/",
+        "clipboardRead",
+        "clipboardWrite",
+        "contentSettings",
+        "contextMenus",
+        "cookies",
+        "idle",
+        "management",
+        "notifications",
+        "tabs",
+        "background",
+        "alarms",
+        "storage"
+    ]
 }
 ```
 
@@ -127,7 +131,7 @@ Add the following code into your `manifest.json` file:
 
 Update the file with the contents from this site: https://gist.githubusercontent.com/shreyfirst/51eae0fbb5bb07f37adba84af0582910/raw/f98c1d3333b07b9e9e15d1e1ef9ec51985d9da1b/messages.json
 
-This is essentially a template file of all the error messages that Chrome could give the user.
+This is essentially a template file of all the error messages that Chrome could give the user. 
 
 ![This is how you can set up your file structure in Repl.it ](https://cloud-9bso257xg.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_17.11__57_.gif)
 
@@ -149,7 +153,7 @@ We are going to use Bootstrap's UI components for our HTML/CSS. That means we ne
     <title>Zoom Bookmarks Demo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://beneficialcriticalcomputers.shreygupta1.repl.co/style.css">
-		<script src="action.js"></script>
+    <script src="action.js"></script>
 </head>
 
 </html>
@@ -191,13 +195,13 @@ You can do the UI however you feel, I think they should all be in 3 separate con
 
 ```html
 <body style="text-align: center;">
-  <div class="features-boxed" style="height: 130px;width: none;min-width: none;margin-bottom:">
-      <div class="container" style="text-align: center;width: 350px;padding-right: 0px;padding-left: 0px;">
-          <div class="intro" style="text-align: center;margin-right: 0px;margin-left: 0px;width: 350px;min-width: 350px;max-width: 350px;margin-bottom: 20px;">
-            <h2 class="text-center" style="margin-bottom: 8px;width: 350px;min-width: 350px;padding-top: 30px;font-size: 32px;">Zoom bookmarks<h2>
-            <p class="text-center" style="padding-right: 0px;padding-left: 0px;text-align: center;width: 350px;min-width: 350px;max-width: 350px;">Join your online classes with ease.</p>
-          </div>
-      </div>
+    <div class="features-boxed" style="height: 130px;width: none;min-width: none;margin-bottom:">
+        <div class="container" style="text-align: center;width: 350px;padding-right: 0px;padding-left: 0px;">
+            <div class="intro" style="text-align: center;margin-right: 0px;margin-left: 0px;width: 350px;min-width: 350px;max-width: 350px;margin-bottom: 20px;">
+                <h2 class="text-center" style="margin-bottom: 8px;width: 350px;min-width: 350px;padding-top: 30px;font-size: 32px;">Zoom bookmarks<h2>
+                <p class="text-center" style="padding-right: 0px;padding-left: 0px;text-align: center;width: 350px;min-width: 350px;max-width: 350px;">Join your online classes with ease.</p>
+            </div>
+        </div>
     </div>
 
 </body>
@@ -221,41 +225,42 @@ We don't want a use to be bogged down to create a new meeting every single time 
 Add this code inside of the `body` tag:
 
 ```html
-      <br>
-    <div id="add" class="features-boxed" style="height: 75px;width: none;min-width: none;padding-top:0px">
-        <div class="container" style="text-align: center;width: 350px;padding-right: 0px;padding-left: 0px;">
-          <div style="width:100%;" >
-          <h4 class="text-center" style="margin-bottom: 20px;width: 350px;min-width: 350px;padding-top: 25px;font-size: 22px;">Create new bookmark<a id="open1" href="javascript:" style="color: #0077b6; padding-left: 10px;font-size: 22px;display: inline;">(+)</a></h4>
+<br>
+<div id="add" class="features-boxed" style="height: 75px;width: none;min-width: none;padding-top:0px">
+  <div class="container" style="text-align: center;width: 350px;padding-right: 0px;padding-left: 0px;">
+    <div style="width:100%;">
+      <h4 class="text-center" style="margin-bottom: 20px;width: 350px;min-width: 350px;padding-top: 25px;font-size: 22px;">Create new bookmark<a id="open1" href="javascript:" style="color: #0077b6; padding-left: 10px;font-size: 22px;display: inline;">(+)</a></h4>
+    </div>
+    <form action="" id="main">
+      <div class="box" style="padding: 0px;padding-bottom: 10px;margin-bottom: 10px;width: 350px;min-width: 350px;max-width: 350px;">
+        <div class="form-row" style="text-align: center;margin-right: 0px;margin-left: 0px;">
+          <div class="col-md-6" style="width: 150px;padding-right: 0px;padding-left: 0px;text-align: right;max-width: 35%;"><label class="col-form-label" style="padding-right: 10px;margin-top: 5px;">Class Name</label></div>
+          <div class="col" style="margin-top: 5px;padding-right: 0px;text-align: left;max-width: 70%;"><input id="class_name" class="form-control" type="text" style="width: 175px;"></div>
         </div>
-            <form action="" id="main">
-                <div class="box" style="padding: 0px;padding-bottom: 10px;margin-bottom: 10px;width: 350px;min-width: 350px;max-width: 350px;">
-                    <div class="form-row" style="text-align: center;margin-right: 0px;margin-left: 0px;">
-                        <div class="col-md-6" style="width: 150px;padding-right: 0px;padding-left: 0px;text-align: right;max-width: 35%;"><label class="col-form-label" style="padding-right: 10px;margin-top: 5px;">Class Name</label></div>
-                        <div class="col" style="margin-top: 5px;padding-right: 0px;text-align: left;max-width: 70%;"><input id="class_name" class="form-control" type="text" style="width: 175px;"></div>
-                    </div>
-                </div>
-                <div class="box" style="border-color: #7d8285;padding: 10px;margin-bottom: 0px;border-top-style: solid;border-right-style: solid;border-left-style: solid;width: 350px;min-width: 350px;max-width: 350px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
-                    <div class="form-row" style="text-align: center;margin-right: 0px;margin-left: 0px;">
-                        <div class="col-md-6" style="width: 150px;padding-right: 0px;padding-left: 0px;text-align: right;max-width: 35%;"><label class="col-form-label" style="padding-right: 10px;margin-top: 5px;"> Zoom ID</label></div>
-                        <div class="col" style="margin-top: 5px;padding-right: 0px;text-align: left;max-width: 70%;"><input id="meeting_id" class="form-control" type="text" style="width: 175px;"> </div>
-                    </div>
-                    <div class="form-row" style="text-align: center;margin-right: 0px;margin-left: 0px;">
-                        <div class="col-md-6" style="width: 150px;padding-right: 0px;padding-left: 0px;text-align: right;max-width: 35%;"><label class="col-form-label" style="padding-right: 10px;margin-top: 5px;">Password</label></div>
-                        <div class="col" style="margin-top: 5px;padding-right: 0px;text-align: left;max-width: 70%;"><input id="password" class="form-control" type="text" style="width: 175px;"></div>
-                    </div>
-                    <p class="text-center" style="padding-left: 0px;margin-bottom: 0px;padding-bottom: 5px;padding-top: 5px;width: none;padding-right: 0px;border-color: #03045E;border-right-style: none;border-left-style: none;"><strong>OR</strong></p>
-                    <div class="form-row" style="text-align: center;margin-right: 0px;margin-left: 0px;justify-content: center;">
-                        <div class="col-md-6" style="width: 150px;padding-right: 0px;padding-left: 0px;text-align: right;max-width: 35%;"><label class="col-form-label" style="padding-right: 10px;margin-top: 0ps;">Meeting link</label></div>
-                        <div class="col" style="margin-top: 0px;padding-right: 0px;text-align: left;max-width: 70%;"><input id="zoom_link" class="form-control" type="text" style="width: 175px;"></div>
-                        <p style="font-size: 10px;margin: 0px; margin-top: 5px">Supports Google Meet, Webex, and other links too.</p>
-                    </div>
-                </div>
+      </div>
+      <div class="box" style="border-color: #7d8285;padding: 10px;margin-bottom: 0px;border-top-style: solid;border-right-style: solid;border-left-style: solid;width: 350px;min-width: 350px;max-width: 350px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;">
+        <div class="form-row" style="text-align: center;margin-right: 0px;margin-left: 0px;">
+          <div class="col-md-6" style="width: 150px;padding-right: 0px;padding-left: 0px;text-align: right;max-width: 35%;"><label class="col-form-label" style="padding-right: 10px;margin-top: 5px;"> Zoom ID</label></div>
+          <div class="col" style="margin-top: 5px;padding-right: 0px;text-align: left;max-width: 70%;"><input id="meeting_id" class="form-control" type="text" style="width: 175px;"> </div>
+        </div>
+        <div class="form-row" style="text-align: center;margin-right: 0px;margin-left: 0px;">
+          <div class="col-md-6" style="width: 150px;padding-right: 0px;padding-left: 0px;text-align: right;max-width: 35%;"><label class="col-form-label" style="padding-right: 10px;margin-top: 5px;">Password</label></div>
+          <div class="col" style="margin-top: 5px;padding-right: 0px;text-align: left;max-width: 70%;"><input id="password" class="form-control" type="text" style="width: 175px;"></div>
+        </div>
+        <p class="text-center" style="padding-left: 0px;margin-bottom: 0px;padding-bottom: 5px;padding-top: 5px;width: none;padding-right: 0px;border-color: #03045E;border-right-style: none;border-left-style: none;"><strong>OR</strong></p>
+        <div class="form-row" style="text-align: center;margin-right: 0px;margin-left: 0px;justify-content: center;">
+          <div class="col-md-6" style="width: 150px;padding-right: 0px;padding-left: 0px;text-align: right;max-width: 35%;"><label class="col-form-label" style="padding-right: 10px;margin-top: 0ps;">Meeting link</label></div>
+          <div class="col" style="margin-top: 0px;padding-right: 0px;text-align: left;max-width: 70%;"><input id="zoom_link" class="form-control" type="text" style="width: 175px;"></div>
+          <p style="font-size: 10px;margin: 0px; margin-top: 5px">Supports Google Meet, Webex, and other links too.</p>
+        </div>
+      </div>
 
-                <div class="box" style="border-color: #7d8285;padding: 0px;border-right-style: solid;border-bottom-style: solid;border-left-style: solid;width: 350px;min-width: 350px;max-width: 350px;padding-bottom: 15px;"></div>
-                <button class="btn btn-primary" id="new" type="submit" style="text-align: center;margin-top: 22.5px;">Create meeting bookmark</button></div>
-            </form>
-        </div>
-        <br>
+      <div class="box" style="border-color: #7d8285;padding: 0px;border-right-style: solid;border-bottom-style: solid;border-left-style: solid;width: 350px;min-width: 350px;max-width: 350px;padding-bottom: 15px;"></div>
+      <button class="btn btn-primary" id="new" type="submit" style="text-align: center;margin-top: 22.5px;">Create meeting bookmark</button>
+      </div>
+    </form>
+</div>
+<br>
 ```
 
 ##### Key takeaways:
@@ -276,22 +281,22 @@ What it should look like now:
 Now let's add the last part. This is the <u>see existing meeting</u>s section. Add this code above the body tag and below your last `br`:
 
 ```html
-        <div class="features-boxed" style="width: none;min-width: none;margin-bottom:">
+<div class="features-boxed" style="width: none;min-width: none;margin-bottom:">
 
-          <div class="container" style="text-align: center;width: 350px;padding-right: 0px;padding-left: 0px;padding-bottom: 15px;">
-            <div style="width:100%;" >
-            <h4 class="text-center" style="margin-bottom: 25px;width: 350px;min-width: 350px;padding-top: 25px;font-size: 22px;">See all bookmarks<a id="open2" href="javascript:" style="color: #0077b6; padding-left: 10px;font-size: 22px;display: inline;"></a></h4>
-          </div>
+  <div class="container" style="text-align: center;width: 350px;padding-right: 0px;padding-left: 0px;padding-bottom: 15px;">
+    <div style="width:100%;">
+      <h4 class="text-center" style="margin-bottom: 25px;width: 350px;min-width: 350px;padding-top: 25px;font-size: 22px;">See all bookmarks<a id="open2" href="javascript:" style="color: #0077b6; padding-left: 10px;font-size: 22px;display: inline;"></a></h4>
+    </div>
 
-          <div id="bookmarks" class="row">
-              <div id="area" class="col">
-                <p id="none1" class="text-center" style="padding-right: 0px;padding-left: 0px;text-align: center;width: 350px;min-width: 350px;max-width: 350px;">No bookmarks yet! Add some :)</p>
-              </div>
-          </div>
-          </div>
-        </div>
+    <div id="bookmarks" class="row">
+      <div id="area" class="col">
+        <p id="none1" class="text-center" style="padding-right: 0px;padding-left: 0px;text-align: center;width: 350px;min-width: 350px;max-width: 350px;">No bookmarks yet! Add some :)</p>
+      </div>
+    </div>
+  </div>
+</div>
 <br>
-        <p class="text-center" style="color: #7d8285; padding-right: 0px;padding-left: 0px;text-align: center;">made with ❤️️ by <a href="mailto:email@example.com">your mom :)</a></p>
+<p class="text-center" style="color: #7d8285; padding-right: 0px;padding-left: 0px;text-align: center;">made with ❤️️ by <a href="mailto:email@example.com">your mom :)</a></p>
 
 <div id="data">
 </div>
@@ -309,7 +314,7 @@ Now that you've finished the `index.html` code, we can start to work on the back
 
 ## Backend
 
-Our backend is inside of `action.js`.
+Our backend is inside of `action.js`.	
 
 ### Structure
 
@@ -330,9 +335,9 @@ The first thing we need to write is an event listener that says: "when the conte
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function () {
-
+  
 	// code here
-
+  
 });
 ```
 
@@ -340,39 +345,39 @@ We are going to need to create elements many times in this application. Elements
 
 ```javascript
 let elements = [];
-function addElement  (parentId, elementTag, elementId, html) {
 
-  var p = document.getElementById(parentId);
-  var newElement = document.createElement(elementTag);
-  newElement.setAttribute('id', elementId);
-  newElement.innerHTML = html;
-  p.appendChild(newElement);
+function addElement(parentId, elementTag, elementId, html) {
 
-  elements.push(elementId)
-  if (elements.length==1)
-  {
-    document.getElementById('none1').style.display = "none";
-  }
+    var p = document.getElementById(parentId);
+    var newElement = document.createElement(elementTag);
+    newElement.setAttribute('id', elementId);
+    newElement.innerHTML = html;
+    p.appendChild(newElement);
+
+    elements.push(elementId)
+    if (elements.length == 1) {
+        document.getElementById('none1').style.display = "none";
+    }
 
 
 }
-function removeElement(elementId) {
-  let v = confirm("Are you sure you would like to delete this link?");
-  if (v){
-    chrome.storage.sync.remove("" + elementId, function(result) {
-      var elem = document.getElementById(""+elementId);
-      elem.parentNode.removeChild(elem);
-    });
-    if (elements.length == 1)
-    {
-      document.getElementById('none1').style.display = "block";
-    }
 
-    const index = elements.indexOf(elementId);
-    if (index > -1) {
-      elements.splice(index, 1);
+function removeElement(elementId) {
+    let v = confirm("Are you sure you would like to delete this link?");
+    if (v) {
+        chrome.storage.sync.remove("" + elementId, function(result) {
+            var elem = document.getElementById("" + elementId);
+            elem.parentNode.removeChild(elem);
+        });
+        if (elements.length == 1) {
+            document.getElementById('none1').style.display = "block";
+        }
+
+        const index = elements.indexOf(elementId);
+        if (index > -1) {
+            elements.splice(index, 1);
+        }
     }
-  }
 
 }
 ```
@@ -380,7 +385,7 @@ function removeElement(elementId) {
 Now we need functions to popup and copy text:
 
 ```javascript
- let open1 = document.getElementById('open1');
+let open1 = document.getElementById('open1');
 let open2 = document.getElementById('open2');
 
 function popup1(openQ) {
@@ -442,10 +447,13 @@ function copy(x, z) {
         }
 
     });
-
+}
+// THIS IS WHERE YOU'LL START CODING IN THE NEXT STEP
 ```
 
 Lastly, we need functions to open the link in a new tab and **wait for buttons to be pressed**. This Github Gist will help you create eventListeners for listening to button presses: https://gist.githubusercontent.com/shreyfirst/0da1748f048b931f8e9ac13223a50c0a/raw/e554eda21c75411713bf2ca5df96d5d7bd67d317/Final%2520code
+
+* Read the comments on the Gist to understand what's happening. Start coding at the end of where you last finished.
 
 This goes below everything you've coded so far and above the closing of the eventListener that houses once the page loads. These is a Gist to the final code: https://gist.githubusercontent.com/shreyfirst/d980597b6531fddd8d77cb8e63f6ffb3/raw/0d1b7ddffd7f97810998fe2c93d7a814f889562e/Full%2520code
 
