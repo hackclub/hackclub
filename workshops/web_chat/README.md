@@ -356,7 +356,9 @@ for await (const req of server) {
 }
 ```
 
-Every time someone vists our page, we'll want to send index.html to them. However, trying to connect to a websocket also counts as a request. For every request that we get, we want to try to parse it as a websocket request. If that fails, then we send the requested file according to the URL. If you hit "Run" now, you should see... no changes. This is because we haven't added any code to connect to our websocket in the frontend yet! Add the following code to `frontend.js`:
+Every time someone vists our page, we'll want to send index.html to them. However, trying to connect to a websocket also counts as a request. For every request that we get, we want to try to parse it as a websocket request. If that fails, then we send the requested file according to the URL. If you hit "Run" now, you should see... no changes. This is because we haven't added any code to connect to our websocket in the frontend yet! 
+
+Add the following code to `frontend.js`:
 
 ```js
 let ws
