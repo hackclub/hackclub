@@ -24,6 +24,8 @@ Click the Bot tab on the right side of your screen.
 Click Add Bot to generate a bot token! This identifies the bot! Give it to nobody!
 <img src="https://cloud-lix7k1shj.vercel.app/0screenshot__1382_.png" width="900" alt="Bot Token">
 
+<img src="https://media4.giphy.com/media/pvl3qUsgblNOo/200.gif" width="380" alt="Zelda Gif">
+
 ## Repl.it Setup
 
 We're going to use [Repl.it](https://repl.it/~) to host the bot. It is an online IDE that makes it easy to setup and run the bot!
@@ -93,8 +95,11 @@ Now let's start with the write message command. This will allow you to add your 
 Within your client.on brackets add this if statement.
 
 ```js
-if (message.content.startsWith(`${prefix}write `)) {
-}
+client.on('message', (message) => {
+  if (message.content.startsWith(`${prefix}write `)) {
+  
+  }
+})
 ```
 
 The message.content part of this just looks at the message that the user typed.
@@ -104,10 +109,14 @@ The bot command will be !write {messageKey} {message}
 Within the if statement add these lines of code
 
 ```js
-var tempSplits = message.content.split(' ', 2)
-var keyVal = tempSplits[1]
-var messageVal = message.content.slice(
-  tempSplits[0].length + tempSplits[1].length + 2
+client.on('message', (message) => {
+  if (message.content.startsWith(`${prefix}write `)) {
+    var tempSplits = message.content.split(' ', 2)
+    var keyVal = tempSplits[1]
+    var messageVal = message.content.slice(
+    tempSplits[0].length + tempSplits[1].length + 2
+  }
+})
 )
 ```
 
@@ -119,10 +128,13 @@ These three lines of code seperate the key value and the message into two sepera
 Now let's add the user to the json file.
 
 ```js
-if (client.msgs[message.author.id] == undefined) {
-  client.msgs[message.author.id] = {}
-}
-client.msgs[message.author.id][keyVal] = messageVal
+client.on('message', (message) => {
+  if (message.content.startsWith(`${prefix}write `)) {
+  //Code we already wrote previously would be here
+    if (client.msgs[message.author.id] == undefined) {
+      client.msgs[message.author.id] = {}
+    }
+    client.msgs[message.author.id][keyVal] = messageVal
 ```
 
 If the user does not exist in the json, we are adding them. We are doing this based on id rather than username because every id is unique.
@@ -131,10 +143,18 @@ Then, we are adding the message under the user id in the json.
 Now let's add the user to the json file.
 
 ```js
-fs.writeFile('./msgs.json', JSON.stringify(client.msgs, null, 4), (err) => {
-  if (err) throw err
-  message.channel.send('message written')
-})
+client.on('message', (message) => {
+  if (message.content.startsWith(`${prefix}write `)) {
+  //Code we already wrote previously would be here
+    if (client.msgs[message.author.id] == undefined) {
+      client.msgs[message.author.id] = {}
+    }
+    client.msgs[message.author.id][keyVal] = messageVal
+    //New Stuff!
+    fs.writeFile('./msgs.json', JSON.stringify(client.msgs, null, 4), (err) => {
+    if (err) throw err
+      message.channel.send('message written')
+    })
 ```
 
 This writes the message to a JSON and sends a message to the discord channel to confirm that you saved your message.
@@ -142,22 +162,24 @@ This writes the message to a JSON and sends a message to the discord channel to 
 Your entire command should look like this!
 
 ```js
-if (message.content.startsWith(`${prefix}write `)) {
-  var tempSplits = message.content.split(' ', 2)
-  var keyVal = tempSplits[1]
-  var messageVal = message.content.slice(
-    tempSplits[0].length + tempSplits[1].length + 2
-  )
+client.on('message', (message) => {
+  if (message.content.startsWith(`${prefix}write `)) {
+    var tempSplits = message.content.split(' ', 2)
+    var keyVal = tempSplits[1]
+    var messageVal = message.content.slice(
+      tempSplits[0].length + tempSplits[1].length + 2
+    )
 
-  if (client.msgs[message.author.id] == undefined) {
-    client.msgs[message.author.id] = {}
+    if (client.msgs[message.author.id] == undefined) {
+      client.msgs[message.author.id] = {}
+    }
+    client.msgs[message.author.id][keyVal] = messageVal
+
+    fs.writeFile('./msgs.json', JSON.stringify(client.msgs, null, 4), (err) => {
+      if (err) throw err
+      message.channel.send('message written')
+    })
   }
-  client.msgs[message.author.id][keyVal] = messageVal
-
-  fs.writeFile('./msgs.json', JSON.stringify(client.msgs, null, 4), (err) => {
-    if (err) throw err
-    message.channel.send('message written')
-  })
 }
 ```
 
@@ -173,10 +195,13 @@ Now let's do the get command. This allows you to get the message you saved!
 <img src="https://cloud-eing65rqs.vercel.app/get_message.png" width="380" alt="Get Command Example">
 
 ```js
-if (message.content.startsWith(`${prefix}get `)) {
-  let getMessage = message.content.slice(5)
-  let _msg = client.msgs[message.author.id][getMessage]
-  message.channel.send(_msg)
+client.on('message', (message) => {
+  //The Write Message we previously wrote would be here!
+  if (message.content.startsWith(`${prefix}get `)) {
+    let getMessage = message.content.slice(5)
+    let _msg = client.msgs[message.author.id][getMessage]
+    message.channel.send(_msg)
+  }
 }
 ```
 
@@ -194,14 +219,17 @@ Now let's do the delete command
 <img src="https://cloud-uvlarb2g1.vercel.app/delete_message.png" width="380" alt="Delete Command Example">
 
 ```js
-if (message.content.startsWith(`${prefix}delete `)) {
-  let getMessage = message.content.slice(8)
+client.on('message', (message) => {
+  //The Write & Get Commands we wrote would be here!
+  if (message.content.startsWith(`${prefix}delete `)) {
+    let getMessage = message.content.slice(8)
 
-  delete client.msgs[message.author.id][getMessage]
+    delete client.msgs[message.author.id][getMessage]
 
-  fs.writeFileSync('./msgs.json', JSON.stringify(client.msgs))
+    fs.writeFileSync('./msgs.json', JSON.stringify(client.msgs))
 
-  message.channel.send(getMessage + ' has been deleted.')
+    message.channel.send(getMessage + ' has been deleted.')
+  }
 }
 ```
 
@@ -220,14 +248,17 @@ Now let's allow the user to get the list of all their saved messages.
 <img src="https://cloud-2ghj25por.vercel.app/list_message.png" width="380" alt="List Command Example">
 
 ```js
-if (message.content == `${prefix}list`) {
-  var messageList = ''
+client.on('message', (message) => {
+  //The other commands we wrote would be here!
+  if (message.content == `${prefix}list`) {
+    var messageList = ''
 
-  for (var key in client.msgs[message.author.id]) {
-    messageList += key + ', '
+    for (var key in client.msgs[message.author.id]) {
+      messageList += key + ', '
+    }
+
+    message.channel.send(messageList)
   }
-
-  message.channel.send(messageList)
 }
 ```
 
@@ -245,10 +276,13 @@ Finally, let's create a help command that allows the user to see all the availab
 <img src="https://cloud-8qig9t4bs.vercel.app/help_message.png" width="380" alt="Help Command Example">
 
 ```js
-if (message.content == `${prefix}help`) {
-  message.channel.send(
-    'To send a message do: !write {messageKey} {message}\nTo get a message do: !get {messageKey}\nTo delete a message !delete {messageKey}\nTo view your    messages !list'
-  )
+client.on('message', (message) => {
+//The other commands we wrote would be here
+  if (message.content == `${prefix}help`) {
+    message.channel.send(
+      'To send a message do: !write {messageKey} {message}\nTo get a message do: !get {messageKey}\nTo delete a message !delete {messageKey}\nTo view your    messages !list'
+    )
+  }
 }
 ```
 
@@ -326,8 +360,9 @@ _Make sure you insert your bot token where 'token' is_
 
 ## Add the Bot to YOUR server
 
-Go [here](https://discordapi.com/permissions.html#)
-<img src="https://cloud-1ca9lqh0p.vercel.app/0screenshot__1384_.png" width="380" alt="Adding Bot to Your Server">
+Go [here](https://discordapi.com/permissions.html#)!
+
+<img src="https://cloud-1ca9lqh0p.vercel.app/0screenshot__1384_.png" width="450" alt="Adding Bot to Your Server">
 Add your permissions, click the link at the bottom, and choose what server you want to add it to!
 
 ## More that you can make with Source Code
