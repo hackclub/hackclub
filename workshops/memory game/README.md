@@ -414,7 +414,7 @@ if(firstCard === secondCard) {
 }
 ```
       
-Else, if the two cards match you get +1 to your score. These cards then disappear(i.e., blank card is displayed). We add the matched cards to `cardsMatched` array we created before using `push()` method.
+Else, if the two cards match you get +1 to your score. These cards then disappear(i.e., blank card is displayed). We add the matched cards to `cardsMatched` array we created before using `push()` method. The length of `cardsMatched` array is your score. 
 
 ```js
 else if (cardsClicked[0] === cardsClicked[1]) {
@@ -447,7 +447,7 @@ else {
 }
 ```
 
-The length of `cardsMatched` array is your score. We have to add the live score into the `span` with `id = "score"` using `getElementById()` and `textContent`. After the logic executed, we have to clear both the `cardsClicked` and `cardsClickedId` arrays no matter what.
+We have to add the live score into `result` using `textContent`. After the logic executed, we have to clear both the `cardsClicked` and `cardsClickedId` arrays no matter what.
 
 ```js
 cardsClicked = []
@@ -512,7 +512,9 @@ document.addEventListener('DOMContentLoaded', () => {
 ```
 <summary>
   
-One thing you might notice that the cards are not random. So we have to shuffle them using `sort()` method. The [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method sorts the elements of an array in place and returns the sorted array.
+One thing you might notice that the cards are not random. So we have to shuffle the `cardArray`, everytime before creating the board, using `sort()` method. The [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method sorts the elements of an array in place and returns the sorted array.
+
+Add the following piece of code just after the `cardArray`, before the constants we created.
 
 ```javascript
 cardArray.sort(() => 0.5 - Math.random())
