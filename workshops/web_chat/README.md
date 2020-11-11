@@ -91,17 +91,20 @@ The HTML is the structure of the webpage. We won't be going into too much detail
 ```html
 <!DOCTYPE html>
 <html>
+
 <head></head>
+
 <body>
     <div id="messageLog"></div>
     <div id="controls">
         <input id="name" placeholder="Your name">
         <textarea id="message" placeholder="Type your message here"></textarea>
         <button id="send">
-          Send
+            Send
         </button>
     </div>
 </body>
+
 </html>
 ```
 
@@ -221,11 +224,11 @@ Explanation:
 ```html
 <!DOCTYPE html>
 <html>
-    
+
 <head>
     <link rel="stylesheet" href="styles.css" />
 </head>
-    
+
 <body>
     <div id="messageLog"></div>
     <div id="controls">
@@ -237,6 +240,7 @@ Explanation:
     </div>
     <script src="frontend.js"></script>
 </body>
+
 </html>
 ```
 
@@ -278,27 +282,27 @@ const server = serve(":8080")
 console.log(`Chat server is running on 8080`)
 
 for await (const req of server) {
-        try {
-            let headers = new Headers()
-            let data
+    try {
+        let headers = new Headers()
+        let data
 
-            if (req.url === "/" || req.url === "/index.html") {
-                headers.set("Content-Type", "text/html")
-                data = await Deno.readTextFile("index.html")
-            } else if (req.url === "/styles.css") {
-                headers.set("Content-Type", "text/css")
-                data = await Deno.readTextFile("styles.css")
-            } else if (req.url === "/frontend.js") {
-                headers.set("Content-Type", "text/javascript")
-                data = await Deno.readTextFile("frontend.js")
-            } else {
-                throw 404
-            }
+        if (req.url === "/" || req.url === "/index.html") {
+            headers.set("Content-Type", "text/html")
+            data = await Deno.readTextFile("index.html")
+        } else if (req.url === "/styles.css") {
+            headers.set("Content-Type", "text/css")
+            data = await Deno.readTextFile("styles.css")
+        } else if (req.url === "/frontend.js") {
+            headers.set("Content-Type", "text/javascript")
+            data = await Deno.readTextFile("frontend.js")
+        } else {
+            throw 404
+        }
 
-            await req.respond({ status: 200, body: data, headers: headers })
-        } catch {
-            await req.respond({ status: 404 })
-        }  
+        await req.respond({ status: 200, body: data, headers: headers })
+    } catch {
+        await req.respond({ status: 404 })
+    }
 }
 ```
 
@@ -351,7 +355,7 @@ for await (const req of server) {
             await req.respond({ status: 200, body: data, headers: headers })
         } catch {
             await req.respond({ status: 404 })
-        }  
+        }
     }
 }
 ```
@@ -374,9 +378,9 @@ document.addEventListener("DOMContentLoaded", _ => {
     }
 
     ws.onmessage = function (event) {
-      console.log("Message received")
-      const msg = JSON.parse(event.data)
-      console.log(msg.data)
+        console.log("Message received")
+        const msg = JSON.parse(event.data)
+        console.log(msg.data)
     }
 })
 ```
@@ -490,7 +494,7 @@ for await (const req of server) {
             await req.respond({ status: 200, body: data, headers: headers })
         } catch {
             await req.respond({ status: 404 })
-        }  
+        }
     }
 }
 
@@ -528,7 +532,7 @@ After the `ws.onmessage` block in `frontend.js`, add a function to add messages 
 
 ```js
 function addMessages(message) {
-    document.getElementById("messageLog").insertAdjacentHTML (
+    document.getElementById("messageLog").insertAdjacentHTML(
         'beforeend',
         `<p><b>${message.name}</b>: ${message.message}</p>`
     )
