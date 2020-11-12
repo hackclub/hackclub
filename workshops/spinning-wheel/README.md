@@ -7,7 +7,7 @@ img: https://cloud-gvkfrv1qw.vercel.app/0image.png
 
 In this workshop, you're going to make a colorful spinning wheel with your own custom content, in 20 minutes!
 
-Here are [live demo](https://movie-selector.hariom04.repl.co/) and the [final code](https://repl.it/@hariom04/movie-selector#index.html).
+Here's the [live demo](https://movie-selector.hariom04.repl.co/) and the [final code](https://repl.it/@hariom04/movie-selector#index.html).
 
 ![Final Output of our Workshop](https://cloud-4945tg5q1.vercel.app/0final.png)
 
@@ -19,7 +19,7 @@ Here are [live demo](https://movie-selector.hariom04.repl.co/) and the [final co
 
 # Part 2: Setup
 ## Setting up our code environment
-In this workshop, we'll using repl.it, a free, online code editor.
+In this workshop, we'll be using repl.it, a free, online code editor.
 
 You can get started with it by going to [repl.it/languages/html](https://repl.it/languages/html). You will directly land on the page where we can write our code.
 
