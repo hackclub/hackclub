@@ -2,7 +2,7 @@
 name: 'Custom Link Shortener'
 description: 'Build your own custom link shortener to save time remembering links.'
 author: '@shreyfirst'
-img: 'https://cloud-oq6cus4ne.vercel.app/0image.png'
+img: 'https://cloud-e15trekvp.vercel.app/0image.png'
 
 ---
 
@@ -220,7 +220,7 @@ The point of having these workshops is for you to be able to extend this project
 
    * Demo: https://shorttermmadeupaddons.shreygupta1.repl.co/
 
-   <img src="https://cloud-oq6cus4ne.vercel.app/0image.png" alt="Updated styling for the form" style="zoom: 33%;" />
+   <img src="https://cloud-e15trekvp.vercel.app/0image.png" alt="Updated styling for the form" style="zoom: 33%;" />
 
 2. Creating authentication for people to sign in using Netlify Identity or Firebase Authentication! People can have their own customized dashboards to view their links for your domain
 
