@@ -31,7 +31,9 @@ Click "Add Bot" to generate a bot token! This identifies the bot! Give it to nob
 We're going to use [Repl.it](https://repl.it/~) to host the bot. It is an online IDE that makes it easy to setup and run the bot!
 
 Create a new repl and use Node.js as the language.
-<img src="https://cloud-otu0relhe.vercel.app/0screenshot__1383_.png" width="380" alt="Node.js Repl">
+
+<img src="https://cloud-otu0relhe.vercel.app/0screenshot__1383_.png" width="600" alt="Node.js Repl">
+
 
 Let's start creating it's functions!
 
@@ -39,11 +41,11 @@ Let's start creating it's functions!
 
 First, create two files called index.js and msgs.json. 
 
-  -Your messages will be stored in msgs.json. 
+  - Your messages will be stored in msgs.json. 
   
-  -JSON is a file format that allows you to store data as a JavaScript object (key/value pair). If you want to learn more, [check here](https://www.json.org/json-en.html). 
+  - JSON is a file format that allows you to store data as a JavaScript object (key/value pair). If you want to learn more, [check here](https://www.json.org/json-en.html). 
   
-  -As with defining a normal JavaScript object, your .json file should contain brackets as shown below.
+  - As with defining a normal JavaScript object, your .json file should contain brackets as shown below.
   
 
 <img src="https://cloud-gh7l7h2q1.vercel.app/json_example.png" width="380" alt="Write Command Example">
@@ -82,6 +84,7 @@ client.msgs = require('./msgs.json')
 ```
 
 The fs is a file system node module. You need it to write to files.
+
 The line after this says that the json file we created will have messages that will be written to it.
 
 ```js
@@ -111,7 +114,9 @@ client.on('message', (message) => {
 ```
 
 The message.content part of this just looks at the message that the user typed.
+
 What this does in this case is make sure your bot command starts with !write
+
 The bot command will be !write {messageKey} {message}
 
 Within the if statement add these lines of code
@@ -128,11 +133,11 @@ client.on('message', (message) => {
 
 These three lines of code seperate the key value and the message into two seperate strings.
 
--The first line splits into two strings into an array based on the spaces. The two represents how big the array will be. Documentation is [here](https://www.w3schools.com/jsref/jsref_split.asp). The key value will be the second of the two strings.
+- The first line splits into two strings into an array based on the spaces. The two represents how big the array will be. Documentation is [here](https://www.w3schools.com/jsref/jsref_split.asp). The key value will be the second of the two strings.
 
--The second line assigns the second array value to the keyVal string.
+- The second line assigns the second array value to the keyVal string.
 
--The third line takes the original user message and cuts out everything but the message part of the command.
+- The third line takes the original user message and cuts out everything but the message part of the command.
 
 
 Now let's add the user to the json file.
@@ -149,6 +154,7 @@ client.on('message', (message) => {
 ```
 
 If the user does not exist in the json, we are adding them. We are doing this based on id rather than username because every id is unique.
+
 Then, we are adding the message under the user id in the json.
 
 ```js
@@ -213,13 +219,13 @@ client.on('message', (message) => {
 }
 ```
 
--The if statement makes sure the user inputs the !get {messageKey}
+- The if statement makes sure the user inputs the !get {messageKey}
 
--The first line in the if statement gets rid of the !get part of the message to isolate the message
+- The first line in the if statement gets rid of the !get part of the message to isolate the message
 
--The second line gets the message in the JSON file.
+- The second line gets the message in the JSON file.
 
--The third line has the bot send the message in the Discord channel.
+- The third line has the bot send the message in the Discord channel.
 
 
 ## Delete Command
@@ -245,15 +251,15 @@ client.on('message', (message) => {
 }
 ```
 
--Start with the if statement which makes sure the message is !delete {messageKey}
+- Start with the if statement which makes sure the message is !delete {messageKey}
 
--The first line in the if statement isolates the message.
+- The first line in the if statement isolates the message.
 
--The second line deletes the message in the JSON.
+- The second line deletes the message in the JSON.
 
--The third line updates the JSON with the message now deleted.
+- The third line updates the JSON with the message now deleted.
 
--The fourth line sends a message to let the user know the message was deleted.
+- The fourth line sends a message to let the user know the message was deleted.
 
 
 ## List Command
@@ -279,13 +285,13 @@ client.on('message', (message) => {
 }
 ```
 
--The if statement just makes sure the user does !list in order to get the list.
+- The if statement just makes sure the user does !list in order to get the list.
 
--The first message creates an empty string named messageList.
+- The first message creates an empty string named messageList.
 
--The for loop cycles through all the key value pairs messages that the user has saved. The inside of the loop adds the messageKey to the messageList.
+- The for loop cycles through all the key value pairs messages that the user has saved. The inside of the loop adds the messageKey to the messageList.
 
--The final message sends the messageList string to the Discord channel.
+- The final message sends the messageList string to the Discord channel.
 
 
 ## Help Command
@@ -305,7 +311,7 @@ client.on('message', (message) => {
 }
 ```
 
-This message just sends a message to Discord with all the available commands. You can add to it if you create your own!
+This message just sends a message to Discord with all the available commands. You can add to it if you create more!
 
 ## Final Source Code
 
