@@ -68,7 +68,7 @@ client.on('message', (message) => {})
 client.login('token')
 ```
 
-_Make sure you insert your bot token where 'token' is_
+_Make sure you insert your bot token where 'token' is!_
 
 Let's start by explaining what the prefix is. It allows you to use an exclamation mark to call the bot! Some people have other prefixes such as a dash or pound symbol. It is up to you!
 
