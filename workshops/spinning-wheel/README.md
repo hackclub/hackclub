@@ -328,9 +328,10 @@ Here in the first 4 blocks, we have rotated the positions of our text with the r
 Overall now after this, we have created our half structure of the wheel.
 
 ![Output of our code until now](https://cloud-fdorf46uu.vercel.app/0till-now.png)
-^^^ Right now your webpage will look something like this but still, button that says `spin` is not in its position.
 
-Now we will make that. Get started by adding this code below :
+^^^ Right now your webpage will look something like this—but the `spin` button looks off.
+
+Let's fix that. Add this code below:
 
 ```css
 .spin{
