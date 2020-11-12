@@ -54,57 +54,69 @@ This is the `script.js` file in your directory. It's empty for now, but we will 
 
 Let’s begin the coding part of our workshop. Here we will write the HTML code required to build our wheel.
 
-Make a  new section with the assistance of `<div>` tag inside your body labels (`<body> </body>`).
+Make a new section with the assistance of `<div>` tag inside your body labels (`<body> </body>`).
 
-Give `id="mainbox"` and `class="mainbox"` inside that segment, by this CSS and JavaScript files can communicate for the particular segment. (`<div id="mainbox" class="mainbox"> </div>`) ought to be the eventual outcome for this.
+Add the attributes `id="mainbox"` and `class="mainbox"` inside that segment. Adding `id` and `class` attributes gives this particular `div` its own "name", which will allow us to reference it directly using CSS and JavaScript (as we'll see later in this workshop!).
 
-Create another section with `id="box"` and `class="box"`. Nest this inside the `mainbox` div by putting it in-between `<div ...>` and `</div>`.
+```javascript
+<div id="mainbox" class="mainbox"></div>
+```
+
+Next, create another div with `id="box"` and `class="box"`. Nest this inside the `mainbox` div, like so:
 
 ```html
-<div id='mainbox' class='mainbox'>
-  <div id='box' class='box'>
+<div id="mainbox" class="mainbox">
+  <div id="box" class="box">
 
   </div>
 </div>
 ```
 
-^^^ Put `<div class="box1">` in 3rd line. Then use 4 `span` tags one by one and give the `class` as `span1`, `span2`, `span3`, and `span4` respectively.
+Nested inside the `box` div, create another div with the class `box1`. Then, inside that, add 4 `span` tags, like so:
 
 ```html
-<div class="box1">
-  <span class="span1"></span>
-  <span class="span2"></span>
-  <span class="span3"></span>
-  <span class="span4"></span>
+<div id="mainbox" class="mainbox">
+  <div id="box" class="box">    
+    <div class="box1">
+      <span class="span1"></span>
+      <span class="span2"></span>
+      <span class="span3"></span>
+      <span class="span4"></span>
+    </div>
+  </div>
 </div>
 ```    
 
 ^^^ Right now, your division should look something like this.
 
-Then inside those span tags, you can write your option and put them inside (`<b> </b>`) tags to make your font `bold` like this 👇
+The options on your spinning wheel will be inside these `span` tags. So, between each `span` tag, add the options you want on your spinning wheel. Go crazy!
+
 ```html
-<span class="span1"><b>Iron Man</b></span>
-<span class="span2"><b>7500</b></span>
-<span class="span3"><b>Bat Man</b></span>
-<span class="span4"><b>Joker</b></span>
+<span class="span1">Iron Man</span>
+<span class="span2">7500</span>
+<span class="span3">Bat Man</span>
+<span class="span4">Joker</span>
 ```
 
-Put `<div class="box2">` in next line, then copy and paste all the above 4 `span` and change their options like this.👇
+Once you've done that, put `<div class="box2">` after your `box1` div, then copy and paste all the above 4 `span` and change their options like this.👇
 
 ```html
 <div class="box2">
-  <span class="span1"><b>Shoplifters</b></span>
-  <span class="span2"><b>Inception</b></span>
-  <span class="span3"><b>Deadpool</b></span>
-  <span class="span4"><b>Terminator</b></span>
+  <span class="span1">Shoplifters</span>
+  <span class="span2">Inception</span>
+  <span class="span3">Deadpool</span>
+  <span class="span4">Terminator</span>
 </div>
 ``` 
 
-We have created all the options, now we will just add a buttton says `spin` that we saw in the center. For that use this code before the ending of your last `div` tag
+Now that we've created all of our options, we need to add a buttton says `spin`. For that use this code before the ending of your last `div` tag.
+
 ```html
 <button class="spin" onclick="rotateFunction()">SPIN</button>
 ```
-Here we have used the `onclick` event that will be explained in the JavaScript part of our workshop.  
+Here we have used the `onclick` event that will be explained in the JavaScript part of our workshop.
+
+Here's what your final HTML file should look like:
 
 ```html
 <html>
@@ -134,7 +146,7 @@ Here we have used the `onclick` event that will be explained in the JavaScript p
   </body>
 </html>
 ```
-Your final code in the `index.html` should look something like this. Woot woot! We have completed HTML part successfully.😍😍
+Woot woot! We have completed HTML part successfully.😍😍
 
 ## 2)	CSS
 After you have completed HTML part, you'll notice that when you click the "Run" button at the top, you just see a white screen with some text ("options") with a button that says "spin".
@@ -217,6 +229,7 @@ Now add the following code below the body block.
   width: 100%;
   height: 100%;
   position: relative;
+  font-weight: bold;
   border-radius: 50%;
   border: 10px solid #fff;
   overflow: hidden;
