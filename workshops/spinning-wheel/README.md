@@ -382,7 +382,7 @@ We are all done with our CSS part. But still, it is not functional as we have no
 
 Now with JavaScript, we will build the functionality of the wheel.
 
-# 3)	JavaScript 
+# 3) JavaScript 
 
 Jump to the `script.js` file and let's begin to make our wheel functional.
 
@@ -396,9 +396,9 @@ function rotateFunction(){
 }
 ```
     
-Do you remember that I mentioned explaining the reason for putting `onclick=myfuntion()` later in this tutorial while we were on the HTML file? 
+Do you remember that I mentioned explaining the reason for putting `onclick=rotateFunction()` later in this tutorial while we were on the HTML file? 
 
-So this is the time for that.
+Now's the time to write the code for `rotateFunction()`!
 
 Here above we have written the blank code for the `onclick` event as now we are going to nest some other code that will function when the user will click on that `spin` button. 
 
@@ -459,8 +459,8 @@ Finally, we are done with our coding part in JavaScript.
 
 We did it! Now our wheel is fully functional.
 
-# Part 5: The END
-Yet if you have not created your account on `repl.it`, then I would suggest you to do make one to save this cool looking project.
+# Part 5: Hacking
+First, if you haven't created an account on repl.it yet, I highly recommend doing so! Otherwise your project will be deleted after 24 hours.
 
 Here are some things which you can do:
 
