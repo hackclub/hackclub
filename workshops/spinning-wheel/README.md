@@ -201,7 +201,7 @@ Next, we have the `min-height` property which sets a minimum height of `100vh` (
 
 Learn more about [viewport-heights](https://www.sitepoint.com/css-viewport-units-quick-start/).
 
-In line `15` and `16` (background section), you can use any color’s hex code or gradient. You can make your gradeint on this [website](https://cssgradient.io/).
+In line `15` and `16` (background section), you can use any color’s hex code or gradient. You can make your gradient on this [website](https://cssgradient.io/).
 
 For making your gradient, simply navigate to that website and design your gradient by dragging the markers. When you are satisfied with your creation, then copy the code given below and paste it in the background section. By this, your custom background will be applied.
 ![designing gradient for background](https://cloud-gonguupqs.vercel.app/0ezgif.com-gif-maker.gif)
