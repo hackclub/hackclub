@@ -242,7 +242,7 @@ Here first of all we have given the dimensions of the wheel in `.mainbox` block.
 
 Then in the second block that is `.mainbox:after`, we inserted the image of the arrow (make sure to change your arrow image URL with `arrow-left.png`) and gave its position that will point to the random option. 
 
-Coming to the third block, here we have drawn the circle with a border of `10px` and a radius of `50%`. The color of the circle is `#fff` which is white, you can change it if you wish. We have transition property in the last line, this will be explained in the future during this workshop.
+Coming to the third block, here we have drawn the circle with a border of `10px` and a radius of `50%`. The color of the circle is `#fff` which is white (you can change it if you wish). On the last line is the `transition` property—this will be explained later during this workshop.
 
 Now add the code below:
 
