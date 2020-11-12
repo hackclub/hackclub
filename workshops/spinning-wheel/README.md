@@ -102,7 +102,7 @@ Put `<div class="box2">` in next line, then copy and paste all the above 4 `span
 
 We have created all the options, now we will just add a buttton says `spin` that we saw in the center. For that use this code before the ending of your last `div` tag
 ```html
-<button class="spin" onclick="myfunction()">SPIN</button>
+<button class="spin" onclick="rotateFunction()">SPIN</button>
 ```
 Here we have used the `onclick` event that will be explained in the JavaScript part of our workshop.  
 
@@ -128,7 +128,7 @@ Here we have used the `onclick` event that will be explained in the JavaScript p
         <span class="span4"><b>Terminator</b></span>
       </div>
     </div> 
-    <button class="spin" onclick="myfunction()">SPIN</button>
+    <button class="spin" onclick="rotateFunction()">SPIN</button>
   </div>
   <script src="script.js"></script>
   </body>
@@ -378,7 +378,7 @@ Jump to the `script.js` file and let's begin to make our wheel functional.
 First of all, we will write:
     
 ```javascript
-function myfunction(){
+function rotateFunction(){
 
 }
 ```
@@ -404,7 +404,7 @@ Here above we have written the blank code for the `onclick` event as now we are 
 Now our code will look something like this👇
 
 ```javascript
-function myfunction(){
+function rotateFunction(){
   var min = 1024;
   var max = 9999;
   var deg = Math.floor(Math.random() * (max - min)) + min;
@@ -436,7 +436,7 @@ element.classList.add('animate');
 ### Explanation:
 The `setTimeout()` method calls a function or evaluates an expression after a specified number of milliseconds. Here we have added the animation to the arrow after 5000 milliseconds. (`1000 milliseconds = 1 second`).
 
-Overall as this is all inside the `myfunction()` block that we have used on the **`spin`** button. So this all will only work after we have clicked on the **`spin`** button.
+Overall as this is all inside the `rotateFunction()` block that we have used on the **`spin`** button. So this all will only work after we have clicked on the **`spin`** button.
  
 Finally, we are done with our coding part in JavaScript. 
 
