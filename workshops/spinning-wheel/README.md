@@ -40,7 +40,7 @@ HTML gives the structure to our webpage. Here in the first line, we have `<!DOCT
   
 Make sure to remove line 5 (`<meta name="viewport" content="width=device-width">`) which may cause some weird responsiveness issues for our workshop.
   
-[Removing the fifth line](https://cloud-2un6g11k6.vercel.app/2html-1.gif)
+![Removing the fifth line](https://cloud-2un6g11k6.vercel.app/2html-1.gif)
   
 ## 2)	The CSS file
 This is the `style.css` file in your directory. This defines the looks of our website. Whatever styles we give to our website is written in this file. If you take a look in the `<head>` tag in your HTML file, you will find a line of code (`<link href="style.css" rel="stylesheet" type="text/css" />`). This means that your HTML file is properly linked to your CSS file!
