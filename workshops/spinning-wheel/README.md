@@ -474,4 +474,4 @@ Here are some things which you can do:
 * [Vivek](https://lonetiredratios.hariom04.repl.co/)
 * [Samuel](https://jsfiddle.net/qwfz6b2r/)
 
-If you have customized it better then please add your project too to this list by clicking below.👇
+Happy hacking!
