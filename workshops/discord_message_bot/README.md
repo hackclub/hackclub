@@ -4,24 +4,24 @@ description: 'Save your own own custom messages with a Discord Bot!'
 author: '@JakeGerber'
 ---
 
-# Create a discord bot that allows you to save custom messages!
+# Create a Discord Bot that allows you to save custom messages!
 
 <img src="https://cloud-bj4vorj8t.vercel.app/examplebot.png" width="380" alt="Message Example">
 
 ## Bot Setup
 
-First let's set up a bot before actually creating the features! Click [here](https://discord.com/developers/applications).
+Let's set up a bot through Discord before creating its features! Click [here](https://discord.com/developers/applications).
 
-Click the new application button at the top right.
+Click the "New Application" button at the top right.
 <img src="https://cloud-noinx6mnk.vercel.app/0screenshot__1379_.png" width="900" alt="New Application Button">
 
-You will now have a new bot where you can customize the name, description, and profile picture!
+This creates a new bot where you can customize the name, description, and profile picture!
 <img src="https://cloud-jlzsnh85x.vercel.app/0screenshot__1380_.png" width="900" alt="Bot Profile">
 
-Click the Bot tab on the right side of your screen.
+Now, click the "Bot" tab on the right side of your screen.
 <img src="https://cloud-e5r0obhgo.vercel.app/0screenshot__1381_.png" width="900" alt="Bot Side Bar">
 
-Click Add Bot to generate a bot token! This identifies the bot! Give it to nobody!
+Click "Add Bot" to generate a bot token! This identifies the bot! Give it to nobody!
 <img src="https://cloud-lix7k1shj.vercel.app/0screenshot__1382_.png" width="900" alt="Bot Token">
 
 <img src="https://media4.giphy.com/media/pvl3qUsgblNOo/200.gif" width="380" alt="Zelda Gif">
@@ -29,14 +29,16 @@ Click Add Bot to generate a bot token! This identifies the bot! Give it to nobod
 ## Repl.it Setup
 
 We're going to use [Repl.it](https://repl.it/~) to host the bot. It is an online IDE that makes it easy to setup and run the bot!
-Create a new repl and use Node.js
+Create a new repl and use Node.js as the language.
 <img src="https://cloud-otu0relhe.vercel.app/0screenshot__1383_.png" width="380" alt="Node.js Repl">
 
 Let's start creating it's functions!
 
 <img src="https://media1.tenor.com/images/d17514e2c03ec6b0e67ba7f18439a011/tenor.gif" width="380" alt="Shawn Sheep Gif">
 
-First, create two files called index.js and msgs.json. We are naming the file “index.js” because it is conventional that the main javascript file of a node project is named either “index.js” or “server.js” While you can name this any name you want, index.js is highly recommended because many tutorials you will find online will use this naming format. Your messages will be stored in msgs.json. JSON is a file format that allows you to store data as a javascript object (key/value pair). If you want to learn more, [check here](https://www.json.org/json-en.html). As with defining a normal javascript object, your .json file should contain brackets as shown below.
+First, create two files called index.js and msgs.json. 
+  -Your messages will be stored in msgs.json. 
+  -JSON is a file format that allows you to store data as a JavaScript object (key/value pair). If you want to learn more, [check here](https://www.json.org/json-en.html). As with defining a normal JavaScript object, your .json file should contain brackets as shown below.
 
 <img src="https://cloud-gh7l7h2q1.vercel.app/json_example.png" width="380" alt="Write Command Example">
 
@@ -113,11 +115,9 @@ client.on('message', (message) => {
   if (message.content.startsWith(`${prefix}write `)) {
     var tempSplits = message.content.split(' ', 2)
     var keyVal = tempSplits[1]
-    var messageVal = message.content.slice(
-    tempSplits[0].length + tempSplits[1].length + 2
+    var messageVal = message.content.slice(tempSplits[0].length + tempSplits[1].length + 2);
   }
 })
-)
 ```
 
 These three lines of code seperate the key value and the message into two seperate strings.
@@ -135,12 +135,11 @@ client.on('message', (message) => {
       client.msgs[message.author.id] = {}
     }
     client.msgs[message.author.id][keyVal] = messageVal
+})
 ```
 
 If the user does not exist in the json, we are adding them. We are doing this based on id rather than username because every id is unique.
 Then, we are adding the message under the user id in the json.
-
-Now let's add the user to the json file.
 
 ```js
 client.on('message', (message) => {
@@ -157,7 +156,7 @@ client.on('message', (message) => {
     })
 ```
 
-This writes the message to a JSON and sends a message to the discord channel to confirm that you saved your message.
+This writes the message to a JSON and sends a message to the Discord channel to confirm that you saved your message.
 
 Your entire command should look like this!
 
@@ -166,9 +165,8 @@ client.on('message', (message) => {
   if (message.content.startsWith(`${prefix}write `)) {
     var tempSplits = message.content.split(' ', 2)
     var keyVal = tempSplits[1]
-    var messageVal = message.content.slice(
-      tempSplits[0].length + tempSplits[1].length + 2
-    )
+    var messageVal = message.content.slice(tempSplits[0].length + tempSplits[1].length + 2);
+
 
     if (client.msgs[message.author.id] == undefined) {
       client.msgs[message.author.id] = {}
@@ -208,7 +206,7 @@ client.on('message', (message) => {
 -The if statement makes sure the user inputs the !get {messageKey}
 -The first line in the if statement gets rid of the !get part of the message to isolate the message
 -The second line gets the message in the JSON file.
--The third line has the bot send the message in the discord channel.
+-The third line has the bot send the message in the Discord channel.
 
 ## Delete Command
 
@@ -265,7 +263,7 @@ client.on('message', (message) => {
 -The if statement just makes sure the user does !list in order to get the list.
 -The first message creates an empty string named messageList.
 -The for loop cycles through all the key value pairs messages that the user has saved. The inside of the loop adds the messageKey to the messageList.
--The final message sends the messageList string to the discord channel.
+-The final message sends the messageList string to the Discord channel.
 
 ## Help Command
 
@@ -279,14 +277,12 @@ Finally, let's create a help command that allows the user to see all the availab
 client.on('message', (message) => {
 //The other commands we wrote would be here
   if (message.content == `${prefix}help`) {
-    message.channel.send(
-      'To send a message do: !write {messageKey} {message}\nTo get a message do: !get {messageKey}\nTo delete a message !delete {messageKey}\nTo view your    messages !list'
-    )
+    message.channel.send("To send a message do: !write {messageKey} {message}\nTo get a message do: !get {messageKey}\nTo delete a message !delete {messageKey}\nTo view your messages !list");
   }
 }
 ```
 
-This message just sends a message to discord with all the available commands. You can add to it if you create your own!
+This message just sends a message to Discord with all the available commands. You can add to it if you create your own!
 
 ## Final Source Code
 
@@ -305,9 +301,8 @@ client.on('message', (message) => {
   if (message.content.startsWith(`${prefix}write `)) {
     var tempSplits = message.content.split(' ', 2)
     var keyVal = tempSplits[1]
-    var messageVal = message.content.slice(
-      tempSplits[0].length + tempSplits[1].length + 2
-    )
+    var messageVal = message.content.slice(tempSplits[0].length + tempSplits[1].length + 2);
+
 
     if (client.msgs[message.author.id] == undefined) {
       client.msgs[message.author.id] = {}
@@ -347,9 +342,7 @@ client.on('message', (message) => {
   }
 
   if (message.content == `${prefix}help`) {
-    message.channel.send(
-      'To send a message do: !write {messageKey} {message}\nTo get a message do: !get {messageKey}\nTo delete a message !delete {messageKey}\nTo view your    messages !list'
-    )
+    message.channel.send("To send a message do: !write {messageKey} {message}\nTo get a message do: !get {messageKey}\nTo delete a message !delete {messageKey}\nTo view your messages !list");
   }
 })
 
