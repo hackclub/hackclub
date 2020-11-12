@@ -443,7 +443,7 @@ Now we will add the animation to the arrow after the 5 seconds from the time whe
 
 ```javascript
 setTimeout(function(){
-element.classList.add('animate');
+  element.classList.add('animate');
 }, 5000);
 ```
 
