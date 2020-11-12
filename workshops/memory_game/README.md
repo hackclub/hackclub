@@ -310,6 +310,7 @@ function flipCard() {
 ```
 
 <details>
+  
   <summary> Here's what the code looks like so far: </summary>
   
 ```javascript
@@ -348,7 +349,8 @@ document.addEventListener('DOMContentLoaded', () => {
   createBoard()
   })
 
-````
+```
+
 </details>
 
 Don't forget to uncomment the event-listener of the card.
