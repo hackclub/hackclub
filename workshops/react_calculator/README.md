@@ -497,7 +497,7 @@ Check out what other Hack Clubbers built!
 
 2. [Khushraj](https://codesandbox.io/s/workshopcalculatorstarter-forked-b3h2o)
 
-3. [Jack](https://codesandbox.io/s/kalukalator-nnmpv)
+3. [Jack](https://codesandbox.io/s/kalukalator-forked-to4tz)
 
 Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
 
