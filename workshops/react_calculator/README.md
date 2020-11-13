@@ -52,7 +52,7 @@ export default function App() {
 }
 ```
 
-Explanation: Here, `useState` is already imported for you as we'll be using it in the later part of the workshop. Next, there's an a rray containing all the basic operators. The `App` component simply renders a heading and a `div` with a `className` of `calc-wrapper` for now.
+Explanation: Here, `useState` is already imported for you as we'll be using it in the later part of the workshop. Next, there's an array containing all the basic operators. The `App` component simply renders a heading and a `div` with a `className` of `calc-wrapper` for now.
 
 Next, if we look in the `components/` directory, we have a `Button` component and a `components.css` file.
 
