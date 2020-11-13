@@ -23,4 +23,16 @@ After we get the users password, let's replace the data in the 'pwd' variable wi
 ```py
 pwd = hashlib.pbkdf2_hmac('sha256', pwd.encode('utf-8'), b'salt', 100000)
 ```
-The pbkdf2_hmac function's first parameter is the way we will hash the password. In our case, we will be using the sha256 method. The second parameter is the string we want to hash. In our case, it's the 'pwd' variable. We have to encode this to 'utf-8' before passing it into the hash function. The next parameter is the salt we want. A salt is a string specific to security systems and it makes it harder to brute force passwords. We use the 'b' character before the string to convert it to bytes. The final parameter in the hash function is the length of the derived key. This is unimportant for this workshop so I will not be going into what this derived key parameter does.
+Note that we are resetting the pwd variable so that the raw string password is deallocated from memory, and is therefore unhackable. The pbkdf2_hmac function's first parameter is the way we will hash the password. In our case, we will be using the sha256 method. The second parameter is the string we want to hash. In our case, it's the 'pwd' variable. We have to encode this to 'utf-8' before passing it into the hash function. The next parameter is the salt we want. A salt is a string specific to security systems and it makes it harder to brute force passwords. We use the 'b' character before the string to convert it to bytes. The final parameter in the hash function is the length of the derived key. This is unimportant for this workshop so I will not be going into what this derived key parameter does.
+
+This pbkdf2_hmac function returns bytes, so we will convert these bytes to a string:
+```py
+pwd = pwd.hex()
+```
+After that, we will check for what to do based on the player's initial input, which we stored in the 'choice' variable. To do so, we will be using the flow control 'if' statement:
+```py
+if(inp == '1'):
+```
+Note that everything that you want the 'if' block to execute will have to be tabbed directly under the 'if' block. You will see what I mean in the next few steps.
+
+If the player inputted 1 as their choice, we know that they want to sign up. 
