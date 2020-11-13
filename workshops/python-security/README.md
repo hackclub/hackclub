@@ -87,3 +87,38 @@ Now that we have created a system in which the user can save their hashed passwo
 ```py
 elif(inp == '2'):
 ```
+This **elif** block will only run if the user wants to sign in. Therefore, we want to try reading from a file, which we will initiate using a **try** block
+```py
+try:
+```
+Then we will open the file
+```py
+    with open('save.dat', 'r') as file:
+```
+This will open the 'save.dat' file in reading mode and assign it to a variable called *file*. Now, let's iterate through each line in the *file* variable:
+```py
+    for line in file:
+```
+Note that this for loop should only run once since we are only writing one line to it on user sign up. Let's strip each line of '\n' to get the pure text
+```py
+      line = line.replace('\n', '')
+```
+This will replace every '\n', or newline, character with a blank character (''). After this, create an empty print statement to format a newline:
+```py
+print()
+```
+Now we will check whether or not the password the user initially inputted is the same as the one the user made an account with. To do so, we will compare the two variables with an if statement:
+```py
+if(hash_data == line):
+        print(FColor.GREEN + "Correct Password")
+```
+Note that we are writing this with Green text to indicate a successful log in attempt. However, if the user fails to log in since the passwords do not match, we will let them know
+```py
+else:
+    print(FColor.RED + f'Incorrect Password')
+```
+Then, to finish off our **try** block, we will make an **except** block. This will only run if we fail to open up the saved password file. 
+```py
+  except:
+    print(FColor.RED + "Couldn't read file 'save.dat'")
+```
