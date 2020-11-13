@@ -42,4 +42,4 @@ If the player inputted 1 as their choice, we know that they want to sign up. The
   results.close()
   ```
 To add a little flair at the end, we will add some colored text to confirm that the user successfully signed up. On the left side of repl.it, create a new file
-https://gyazo.com/4154e8c624f13436b641de801b5aeec9
+[CreateNewFile](https://gyazo.com/4154e8c624f13436b641de801b5aeec9)
