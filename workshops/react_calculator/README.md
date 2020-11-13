@@ -14,7 +14,7 @@ Here's the [source code](https://codesandbox.io/s/workshopcalculator-5trtj).
 
 ## Part 1: Prerequisites
 
-You should know some basics of React and I recommend you to follow [this](https://workshops.hackclub.com/nextjs_starter/) workshop before proceeding further. If you're having trouble, feel free to ask [me](https://app.slack.com/client/T0266FRGM/user_profile/U014ND5P1N2) or anyone in the [Hack Club Slack](https://hackclub.com/slack/)!
+You should know some basics of React and I recommend you to follow [this](https://workshops.hackclub.com/react_calendar/) workshop before proceeding further. If you're having trouble, feel free to ask [me](https://app.slack.com/client/T0266FRGM/user_profile/U014ND5P1N2) or anyone in the [Hack Club Slack](https://hackclub.com/slack/)!
 
 ## Part 2: Setup
 
