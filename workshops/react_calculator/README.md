@@ -137,7 +137,7 @@ We use `fragments` as the parent element of the `jsx`. Fragments let you group a
 
 **NOTE:** `<></>` is known as fragments.
 
-Then we have used `ternary operators` to render different `div` accordingly. If the `isInput` is true, it will render the `div` with the `className` of `input` or else it will render another `div`.
+Then we have used [`ternary operators`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) to render different `div` accordingly. If the `isInput` is true, it will render the `div` with the `className` of `input` or else it will render another `div`.
 
 Notice that in the second `div`, we have again used `ternary operators` to determine that `div`'s `className`. We call the `isEqual` function passing it the value of `children` and if it returns `true`, it will add a `className` of `equal-btn` to the `div`. We have also called the `isNum` function passing it the same value of `children` and if it returns `true`, it will add a classname of `operator` to the `div`.
 
