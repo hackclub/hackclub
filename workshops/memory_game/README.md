@@ -310,12 +310,12 @@ function flipCard() {
 ```
 
 <details>
-  <summary> Here's what the code looks like so far: </summary>
+<summary>Here's what the code looks like so far:</summary>
   
-```javascript
+```js
 document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [....]// the cardArray we created before
-  
+
   const board = document.querySelector('.board')
   const result = document.querySelector('#score')
   const placeholder = "https://cloud-5ystxzer7.vercel.app/7placeholder.png"
@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   createBoard()
-  })
+})
 ```
 
 </details>
@@ -429,7 +429,8 @@ result.textContent = cardsMatched.length
 ```
 
 <details>
-  <summary> Our code so far: </summary>
+  
+  <summary>Our code so far: </summary>
   
 ```javascript
 document.addEventListener('DOMContentLoaded', () => {
