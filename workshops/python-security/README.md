@@ -35,4 +35,11 @@ if(inp == '1'):
 ```
 Note that everything that you want the 'if' block to execute will have to be tabbed directly under the 'if' block. You will see what I mean in the next few steps.
 
-If the player inputted 1 as their choice, we know that they want to sign up. 
+If the player inputted 1 as their choice, we know that they want to sign up. Therefore, we would like to save their hashed password. Note that we are saving the _hashed_ password. Later on we can check this with the sign in password that the user enters to validate that the passwords are the same. To save the hased password to a file, we will type this:
+```py
+  results = open('save.dat', 'w')
+  results.write(pwd)
+  results.close()
+  ```
+  To add a little flair at the end, we will add some colored text to confirm that the user successfully signed up. On the left side of repl.it, create a new file
+  ![Create New File](https://gyazo.com/4154e8c624f13436b641de801b5aeec9)
