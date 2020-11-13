@@ -5,7 +5,7 @@ author: '@YashKalbande'
 img: 'https://cloud-i9t9ilblm.vercel.app/0emoji_dic.png'
 ---
 
-![final Program](https://cloud-j1mgveibb.vercel.app/0final_program.gif)
+![final Program](https://cloud-3hd98h80j.vercel.app/0demo_gif.gif)
 
 # Overview 
 
@@ -159,19 +159,22 @@ The place geometry manager is the most rarely used geometry manager in Tkinter. 
 - Relative positioning (key options include relx, rely, relwidth, and relheight)
 - Other options commonly used with the place() include width and anchor (the default is NW)
 
-So let us place our widgets to our main root frame
+So let us place our widgets to our main root frame. Now we will add input variable `inputEmoji` to get input form user and search it in our Dictionary. To make code work in loop until we exit window we will add input variable and widgests inside `while loop` by assigning its parameter as `while True:`. Note that there should be correct indentation.
 
 ```python
-inputBox = Label(window,textvariable="")
-inputBox.place(relx=.185,rely=0.70,relwidth=.63,relheight=.082)
+while True:
+  inputEmoji = input("Enter your Emoji : ")
+  
+  inputBox = Label(window,textvariable="")
+  inputBox.place(relx=.185,rely=0.70,relwidth=.63,relheight=.082)
 
 
-button = Button(window,text="Search")
-button.place(relx=.40,rely=.85,relwidth=.2,relheight=.052)
+  button = Button(window,text="Search")
+  button.place(relx=.40,rely=.85,relwidth=.2,relheight=.052)
 
 
-messageBox= Message(window)
-messageBox.place(relx=.185,rely=.05,relwidth=.63,relheight=.50)
+  messageBox= Message(window)
+  messageBox.place(relx=.185,rely=.05,relwidth=.63,relheight=.50)
 ```
 
 So far, we have relied on Tkinter to provide specific platform-based styling for our widgets. However, you can specify your styling of widgets in terms of their color, font size, border width, and relief
