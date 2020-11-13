@@ -310,7 +310,6 @@ function flipCard() {
 ```
 
 <details>
-  
   <summary> Here's what the code looks like so far: </summary>
   
 ```javascript
@@ -348,7 +347,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   createBoard()
   })
-
 ```
 
 </details>
@@ -485,7 +483,7 @@ document.addEventListener('DOMContentLoaded', () => {
 createBoard()
 })
 
-````
+```
 </details>
 
 One thing you might notice that the cards are not random. So we have to shuffle the `cardArray`, every time before creating the board, using `sort()` method. The [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method sorts the elements of an array in place and returns the sorted array.
@@ -496,7 +494,7 @@ Add the following piece of code just after the `cardArray`, before the constants
 
 ```javascript
 cardArray.sort(() => 0.5 - Math.random())
-````
+```
 
 Finally, we finished our memory game.
 
