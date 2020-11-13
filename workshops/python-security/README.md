@@ -41,5 +41,49 @@ If the player inputted 1 as their choice, we know that they want to sign up. The
   results.write(pwd)
   results.close()
   ```
-To add a little flair at the end, we will add some colored text to confirm that the user successfully signed up. On the left side of repl.it, create a new file
-![CreateNewFile](/resources/CreateNewFile.gif)
+To add a little flair at the end, we will add some colored text to confirm that the user successfully signed up. On the left side of repl.it, create a new file named "FColors.py".
+![CreateNewFile](https://i.imgur.com/KV8rndQ.png)
+
+
+Let's define some constant strings. To do so, we will type the following in the FColors.py file:
+```py
+RED   = '\u001b[31m'
+GREEN = '\u001b[32m'
+BLUE  = '\u001b[36m'
+```
+The codes in the strings are known as 'ansi escape codes', which allow us to bring color to the terminal! Back in main.py, add these lines to the end of your if statement:
+```py
+  print()
+  print(FColor.BLUE + 'Sign Up Complete!')
+```
+Printing an ansi escape code will change the terminal text color to the color we print out. Make sure to import the FColors module at the top of main.py so we can access the constant color variables.
+
+Your code right now should be formatted like this:
+```py
+import hashlib
+import FColor
+
+inp = input('Are you\n(1) Signing Up\n(2) Signing In?: ')
+pwd_unhashed = input("Password: ")
+
+data = {
+  'password' : pwd_unhashed
+}
+
+hash_data = hashlib.pbkdf2_hmac('sha256', data['password'].encode('utf-8'), b'salt', 100000)
+hash_data = hash_data.hex()
+
+if(inp == '1'):
+  results = open('save.dat', 'w')
+  results.write(hash_data)
+  results.close()
+  print()
+  print(FColor.BLUE + 'Sign Up Complete!')
+```
+Note the tabs that confine the **if** statement's execution code.
+
+
+Now that we have created a system in which the user can save their hashed password to a file, we will create a system where the user can log in using the password they signed up with. To do so, we will create an **elif** statement under our if statement:
+```py
+elif(inp == '2'):
+```
