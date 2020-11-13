@@ -122,3 +122,38 @@ Then, to finish off our **try** block, we will make an **except** block. This wi
   except:
     print(FColor.RED + "Couldn't read file 'save.dat'")
 ```
+The final code should look like this:
+```py
+
+import hashlib
+import FColor
+
+inp = input('Are you\n(1) Signing Up\n(2) Signing In?: ')
+pwd = input("Password: ")
+
+pwd = hashlib.pbkdf2_hmac('sha256', pwd.encode('utf-8'), b'salt', 100000)
+pwd = pwd.hex()
+
+if(inp == '1'):
+  results = open('save.dat', 'w')
+  results.write(pwd)
+  results.close()
+  print()
+  print(FColor.BLUE + 'Sign Up Complete!')
+
+elif(inp == '2'):
+  try:
+    with open('save.dat', 'r') as file:
+      for line in file:
+        line = line.replace('\n', '')
+        print()
+        if(pwd == line):
+          print(FColor.GREEN + "Correct Password")
+        else:
+          print(FColor.RED + f'Incorrect Password')
+  except:
+    print(FColor.RED + "Couldn't read file 'save.dat'")
+```
+Note the tabs; these confine statements to a certain block of code. Now, if you run your main.py code in repl.it, you will need to first sign up, and then sign in. Note that you will never see your raw password other than the time you type it in to sign up.
+
+You have successfully created a secure password system! You can use this to create secure login pages and sign up pages without ever getting hacked! Check out these example uses of the password system you just created:
