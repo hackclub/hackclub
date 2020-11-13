@@ -1,6 +1,5 @@
 # Code of Conduct
 
-
 ## TL;DR
 
 - Treat everyone with respect and kindness.
@@ -111,7 +110,6 @@ If you encounter a conduct-related issue, you should report it to the Working Gr
 **Note that the goal of the Code of Conduct and the Working Group is to resolve conflicts in the most harmonious way possible.** We hope that in most cases issues may be resolved through polite discussion and mutual agreement. Bannings and other forceful measures are to be employed only as a last resort.
 
 Changes to the Code of Conduct should be proposed by [creating an issue](https://github.com/hackclub/hackclub/issues/new) or making a pull request to this document.
-
 
 ## Acknowledgments
 
