@@ -96,17 +96,17 @@ Now its time to render some jsx in this component. This is going to be a bit tri
 
 There will be 3 main props we'll be using in this component.
 
-1. `children` - This prop is the value which will be passed to the components opening and closing tags.
+1. `children` - This prop is the value which will be passed to the component's opening and closing tags.
 
 Example:
 
 ```jsx
-<Button>7</Button> // Here 7 is the children of that component.
+<Button>7</Button> // Here, 7 is the children of that component.
 ```
 
-2. `onClick` - This prop will simply hold the functions which we'll create later for our calculator. This function will be passed to the Button component's `onClick`.
+2. `onClick` - This prop will simply store the functions which we'll create later for our calculator. This function will be passed to the Button component's `onClick`.
 
-3. `isInput` - This prop will work as a boolean for us and help us to determine whether the component will re nder the `input` state's value or not.
+3. `isInput` - This prop will work as a boolean for us and help us to determine whether the component will render the `input` state's value or not.
 
 **NOTE:** We haven't yet created the `input` state but we'll be doing it soon in few minutes.
 
@@ -131,13 +131,13 @@ const Button = ({ children, onClick, isInput }) => { // <-- Props
 };
 ```
 
-Explanation: First we accepted  the 3 props in this component. Now here comes the tricky part.
+Explanation: First we accepted the 3 props in this component. Now here comes the tricky part.
 
 We use `fragments` as the parent element of the `jsx`. Fragments let you group a list of children without adding extra nodes to the DOM.
 
 **NOTE:** `<></>` is known as fragments.
 
-Then we have used `ternary operators` to render different `div` accordingly. If the `isInput` is truthy, it will render the `div` with the `className` of `input` or else it will render another `div`.
+Then we have used `ternary operators` to render different `div` accordingly. If the `isInput` is true, it will render the `div` with the `className` of `input` or else it will render another `div`.
 
 Notice that in the second `div`, we have again used `ternary operators` to determine that `div`'s `className`. We call the `isEqual` function passing it the value of `children` and if it returns `true`, it will add a `className` of `equal-btn` to the `div`. We have also called the `isNum` function passing it the same value of `children` and if it returns `true`, it will add a classname of `operator` to the `div`.
 
@@ -223,7 +223,7 @@ export default function App() {
 }
 ```
 
-Explanation: Inside the `calc-wrapper`, we first add a `Button` with a prop of `isInput`. This means that `isInput` will be `truthy` for this component and as we haven't passed the `isInput` prop to any other `Button`, it will be `falsy` for those components. Next, we create a `row` and add 4 `Buttons` to it, and as `row` has a property of `flex`, it will be displayed nicely on the browser as a row! We also passed the numbers `7, 8, 9` and the operator `/` as children to those buttons respectively.
+Explanation: Inside the `calc-wrapper`, we first add a `Button` with a prop of `isInput`. This means that `isInput` will be `true` for this component and as we haven't passed the `isInput` prop to any other `Button`, it will be `false` for those components. Next, we create a `row` and add 4 `Buttons` to it, and as `row` has a property of `flex`, it will be displayed nicely on the browser as a row! We also passed the numbers `7, 8, 9` and the operator `/` as children to those buttons respectively.
 
 Your preview should look something like this:
 
@@ -231,7 +231,7 @@ Your preview should look something like this:
 
 Excellent! Wondering how they got different colors even if they were the same component? This is why we created the functions `isNum()` and `isEqual()`. They check what the value of the children is and give the `className` accordingly! Isn't it cool?
 
-Also wondering how the first `Button` component looks different than the others? This is because the `isInput` boolean prop is truthy for that component and the way we have built our `Button` component is it checks whether the `isInput` is truthy and displays a different `div` accordingly!
+Also wondering how the first `Button` component looks different than the others? This is because the `isInput` boolean prop is true for that component and the way we have built our `Button` component is it checks whether the `isInput` is truthy and displays a different `div` accordingly!
 
 We just created the 4 buttons of our calculator! 
 
@@ -343,13 +343,13 @@ function inputOperator(val) {
   // ...
 ```
 
-Explanation: We first create a function `inputOperator` which also takes in a value as an argument. Then, we make use of `if-else` statements to check certain conditions.
+Explanation: We first create a function `inputOperator` which also takes in a `val` as an argument. Then, we make use of `if-else` statements to check certain conditions.
 
 First, it checks whether the `input` is empty or not. (We definitely don't want the user to click on the operator if there's no number present in the `input`). If this condition is not true, then it moves ahead to the next condition.
 
 `input[input.length - 1]` means the last value of the `input` string. Suppose `input` is `12%2*`, then the last value here is `*`, therefore `input[input.length - 1]` here is equal to `*`. Also, `operatorsArr.includes()` is a function which checks whether a certain value is in an array or not.
 
-So next we basically check whether the `operatorsArr` includes the last value of the `input` or not. If this condition is true, it again moves to the next condition which checks whether the `val` argument is included in the `operatorsArr` or not.
+So we basically check whether the `operatorsArr` includes the last value of the `input` or not. If this condition is true, it again moves to the next condition which checks whether the `val` argument is included in the `operatorsArr` or not.
 
 **What does this mean?** In simple language, it simply checks if the previously pressed value by the user is an operator or not while also checking if the newly pressed value (`val`) is again, an operator or not. This will mean that the user pressed the operators 2 times simultaneously. Thus, it will be prevented.
 
