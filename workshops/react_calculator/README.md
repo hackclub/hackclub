@@ -493,7 +493,11 @@ Also checkout these cool examples!
 
 Check out what other Hack Clubbers built!
 
-**WORK IN PROGRESS**
+1. [Aaryan](https://codesandbox.io/s/workshopcalculatorstarter-forked-cps0s)
+
+2. [Khushraj](https://codesandbox.io/s/workshopcalculatorstarter-forked-b3h2o)
+
+3. [Jack](https://codesandbox.io/s/kalukalator-nnmpv)
 
 Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
 
