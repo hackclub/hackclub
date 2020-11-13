@@ -29,6 +29,7 @@ You can get started with it by going to [repl.it/languages/html](https://repl.it
 
 # Part 3: Inspecting The Default Files 
 Here on the right side in the files section, you can see 3 files that are:
+
 1. index.html
 2. script.js
 3. style.css
