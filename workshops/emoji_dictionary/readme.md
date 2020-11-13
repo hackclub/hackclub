@@ -1,3 +1,12 @@
+---
+name: 'Emoji Dictionary'
+description: 'Building Emoji Dictonary using Demoji & Tkinter'
+author: '@YashKalbande'
+img: 'https://cloud-i9t9ilblm.vercel.app/0emoji_dic.png'
+---
+
+![final Program](https://cloud-j1mgveibb.vercel.app/0final_program.gif)
+
 # Overview 
 
 Welcome to the exciting world of Emojis😃. Emojis are the main part of life. We use Emojis in our daily life. In this workshop, you'll be building an Emoji Dictionary that will be able to accurately convert emojis into text strings. We are going to use [demoji library](https://pypi.org/project/demoji) to convert emojis into text strings and [Tkinter library](https://docs.python.org/3/library/tkinter.html) to build a multi-platform User Interface for our dictionary.
@@ -67,7 +76,9 @@ The following gif depicts the root window we are going to create:
 Drawing the root window is easy. You just need the following three lines of code:
 ```python
 from tkinter import *
+
 window = Tk()
+
 window.mainloop()
 ```
 The description of the code is as follows:
@@ -84,17 +95,22 @@ The syntax for adding a widget is as follows:
 ```python
 mywidget = Widget-name (its container window,**configuration options)
 ```
-In the following example below, we will add two widgets, a label and a button, to the root frame. Notice how all widgets are added in between the skeleton code we defined in the first example.
+In the following example below, we will add two widgets, a `Message` and a `Button`, to the root frame. Notice how all widgets are added in between the skeleton code we defined in the first example.
+
 ```python
 from tkinter import *
+
 window = Tk() 
-label = Label(window,text="I am a label widget") 
-b1 = Button(window,text="I am a button") 
-label.pack()
-b1.pack()
+messageBox = Message(window,text="I am a Message widget") 
+button = Button(window,text="I am a button") 
+messageBox.pack()
+button.pack()
+
 window.mainloop()
 ```
+
 The format for adding widgets is the same. To give you a flavor, here's some sample code for adding some common widgets:
+
 ```python
 Label(parent, text=" Enter your Password:")
 
@@ -111,16 +127,14 @@ OptionMenu(parent, var, "Select Country", "USA", "UK", "India", Others")
 Scrollbar(parent, orient=VERTICAL, command=mytext.yview)
 ```
 
-Hope you can spot the pattern common to each widget?
-
-For our case,we will be using the Entry,Button,Text widgets:
+Hope you can spot the pattern common to each widget. For our case, we will be using the Entry, Button, Message widgets:
 
 ```python
-inputBox = Entry(window,textvariable="")
+inputBox = Label(window,textvariable="")
 
 button = Button(window,text="Search")
 
-labelBox = Label(window)
+messageBox = Message(window)
 ```
 
 Let us now turn our attention to the second component of GUI programming—the question of where to place those widgets. This is taken care of by the geometry manager options of Tkinter. This component of GUI programming involves deciding the position of the widget, overall layout, and relative placement of various widgets on the screen.
@@ -148,7 +162,7 @@ The place geometry manager is the most rarely used geometry manager in Tkinter. 
 So let us place our widgets to our main root frame
 
 ```python
-inputBox = Entry(window,textvariable="")
+inputBox = Label(window,textvariable="")
 inputBox.place(relx=.185,rely=0.70,relwidth=.63,relheight=.082)
 
 
@@ -156,8 +170,8 @@ button = Button(window,text="Search")
 button.place(relx=.40,rely=.85,relwidth=.2,relheight=.052)
 
 
-labelBox= Text(window)
-labelBox.place(relx=.185,rely=.05,relwidth=.63,relheight=.20)
+messageBox= Message(window)
+messageBox.place(relx=.185,rely=.05,relwidth=.63,relheight=.50)
 ```
 
 So far, we have relied on Tkinter to provide specific platform-based styling for our widgets. However, you can specify your styling of widgets in terms of their color, font size, border width, and relief
@@ -173,15 +187,15 @@ Alternatively, you could specify widget options using configure ():
 Styling options are also specified as options to the widgets, either at the time of instantiation or later using the configure option
 
 ```python
-inputBox = Entry(window,bg="#761137",fg="WHITE",justify = CENTER,font = ('courier', 30, 'bold'))
+inputBox = Label(window,bg="#761137",fg="WHITE",justify = CENTER,font = ('courier', 30, 'bold'))
 inputBox.place(relx=.185,rely=0.70,relwidth=.63,relheight=.082)
 
 button = Button(window,text="Search",command= lambda : search(inputBox.get()),relief=FLAT,bg="#00154F",fg="#F4AF1B",font = ('courier', 10, 'bold') )
 button.place(relx=.40,rely=.85,relwidth=.2,relheight=.052)
 
 
-labelBox = Label(window,fg="#F2BC94",relief=FLAT,bg="#30110D",font = ('courier', 20, 'bold'))
-labelBox.place(relx=.185,rely=.05,relwidth=.63,relheight=.20)
+messageBox = Message(window,fg="#F2BC94",relief=FLAT,bg="#30110D",font = ('courier', 20, 'bold'))
+messageBox.place(relx=.185,rely=.05,relwidth=.63,relheight=.50)
 ```
 
 Now that we are done discussing styling options, let us wrap up with a discussion on some commonly used options for the root window:
@@ -189,13 +203,13 @@ Now that we are done discussing styling options, let us wrap up with a discussio
 | Method        | Description|
 | ------------- |-------------|
 | root.title("title of my program")| 	Specifying the title for the Title bar|
-| root.geometry('420x420+150+200') | 	You can specify the size and location of a root window using a string of the form widthxheight + xoffset + yoffset      |
+| root.geometry('420x420+150+200') | 	You can specify the size and location of a root window using a string of the form widthxheight + xoffset + yoffset|
 
 For our case we will use the following parameters:-
 
 ```python
 window.title (" Emoji Dictionary")
-window.geometry('xyz')
+window.geometry('420x420+150+200')
 ```
 
 ### 2.3) Window Background 🗔🗔
@@ -219,7 +233,7 @@ The Image module provides a class with the same name which is used to represent 
 The following script loads an image and displays it using an external viewer (usually xv on Unix, and the Paint program on Windows).
 ```python
 from PIL import Image
-im = Image.open("emoji_grid_gray.jpg")
+image = Image.open("emoji_grid_gray.jpg")
 ```
 The ImageTk module contains support to create and modify Tkinter BitmapImage and PhotoImage objects from PIL images.
 
@@ -231,10 +245,12 @@ For our case:
 ```python
 image = Image.open('emoji_grid_gray.jpg')
 photo_image = ImageTk.PhotoImage(image)
+label = Label(window, image = photo_image)
+label.pack()
 ```
-To display the background image, we will take a label widget, assign it to the image and place it with the pack geometry. As we mentioned in the previous slide, this geometry packs widgets on a first-come-first-serve basis in the space available in the master frame in which widgets are pushed. So it should come before the rest of the widgets
+To display the background image, we will take a label widget, assign it to the image and place it with the pack geometry. As we mentioned in the previous part, this geometry packs widgets on a first-come-first-serve basis in the space available in the master frame in which widgets are pushed. So it should come before the rest of the widgets
 
-Now all is remaining is the functionality part, See you in the next slide
+Now all is remaining is the functionality part, See you in the next slide.
 
 ## 3. Functionality 🖨️🖨️
 
@@ -242,7 +258,7 @@ Next is the search function that will check for the emoji we desire:
 
 ```python
 def search(word):
-    labelBox.config(text = demoji.findall(word))
+    messageBox.config(text = demoji.findall(word))
 ```
 
 The description of the code is as follows:
@@ -257,7 +273,7 @@ import demoji
 demoji.download_codes()
 
 def search(word):
-    labelBox.config(text = demoji.findall(word))
+    messageBox.config(text = demoji.findall(word))
     
 
 window = Tk()
@@ -269,17 +285,20 @@ photo_image = ImageTk.PhotoImage(image)
 label = Label(window, image = photo_image)
 label.pack()
 
-#input of the word to search
-inputBox = Entry(window,bg="#761137",fg="WHITE",justify = CENTER,font = ('courier', 30, 'bold'))
-inputBox.place(relx=.185,rely=0.70,relwidth=.63,relheight=.082)
+while True:
+  inputEmoji = input("Enter your Emoji : ")
+  
+  #input of the word to search
+  inputBox = Label(window,text = inputEmoji, bg="#761137",fg="WHITE",justify = CENTER,font = ('courier', 30, 'bold'))
+  inputBox.place(relx=.185,rely=0.70,relwidth=.63,relheight=.082)
 
-#seach button to execute command
-button = Button(window,text="Search",command= lambda : search(inputBox.get()),relief=FLAT,bg="#00154F",fg="#F4AF1B",font = ('courier', 10, 'bold') )
-button.place(relx=.40,rely=.85,relwidth=.2,relheight=.052)
+  #seach button to execute command
+  button = Button(window,text="Search",command= lambda : search(inputEmoji),relief=FLAT,bg="#00154F",fg="#F4AF1B",font = ('courier', 10, 'bold') )
+  button.place(relx=.40,rely=.85,relwidth=.2,relheight=.052)
 
-#ouput the definition of the word
-labelBox = Label(window,fg="#F2BC94",relief=FLAT,bg="#30110D",font = ('courier', 20, 'bold'))
-labelBox.place(relx=.185,rely=.05,relwidth=.63,relheight=.20)
+  #ouput the definition of the emoji
+  messageBox = Message(window,fg="#F2BC94",relief=FLAT,bg="#30110D",font = ('courier', 15, 'bold'))
+  messageBox.place(relx=.185,rely=.05,relwidth=.63,relheight=.50)
 
 
 window.mainloop()
