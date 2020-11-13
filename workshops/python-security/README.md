@@ -18,3 +18,9 @@ After getting the user's choice, let's recieve their password. This will be more
 ```py
 pwd = input("Password: ")
 ```
+
+After we get the users password, let's replace the data in the 'pwd' variable with its hashed version. We are doing this as quick as possible so that the raw password string cannot be hacked.  To hash the password, we will be using the hashlib module:
+```py
+pwd = hashlib.pbkdf2_hmac('sha256', pwd.encode('utf-8'), b'salt', 100000)
+```
+The pbkdf2_hmac function's first parameter is the way we will hash the password. In our case, we will be using the sha256 method. The second parameter is the string we want to hash. In our case, it's the 'pwd' variable. We have to encode this to 'utf-8' before passing it into the hash function. The next parameter is the salt we want. A salt is a string specific to security systems and it makes it harder to brute force passwords. We use the 'b' character before the string to convert it to bytes. The final parameter in the hash function is the length of the derived key. This is unimportant for this workshop so I will not be going into what this derived key parameter does.
