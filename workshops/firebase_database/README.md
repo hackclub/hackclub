@@ -518,6 +518,7 @@ We created a database and added data to it through a form. It's time for you to 
 
 * In Firebase, you can create and delete data directly in database.
 * Try to validate the form. You can use conditional rendering for achieving this.
+* Try inputting different types of inputs.
 * You can also data of high-score of your game, update every time and display it on the webpage.
 * You can create different collection in your database. Try adding different reference for the name, email and message for the above example.
 * Here, we created different handle events for different elements. But if you have a form with more number of inputs, you will be violating `Do Not Repeat Yourself` principle of programming. Try create a custom hook, for handling the form. Learn about creating custom hooks [here](https://reactjs.org/docs/hooks-custom.html).
