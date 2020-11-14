@@ -314,7 +314,7 @@ Here's what the code looks like so far:
 ```javascript
 document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [....]// the cardArray we created before
-  
+
   const board = document.querySelector('.board')
   const result = document.querySelector('#score')
   const placeholder = "https://cloud-5ystxzer7.vercel.app/7placeholder.png"
@@ -345,8 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   createBoard()
-  })
-
+})
 ```
 
 Don't forget to uncomment the event-listener of the card.
