@@ -530,7 +530,7 @@ Try using Firebase in your projects and share it with me on slack. I'm as [@Giri
 
 Check out these other projects:
 
-* **Form using Custom Hook**: `useInput` hook is created for handling multiple inputs.
+* **Student Registration form using Custom Hook**: `useInput` hook is created for handling multiple inputs.
 
   [Demo](https://Form-using-Custom-hooks.giridharhackclu.repl.co). [Source Code](https://repl.it/@Giridharhackclu/Form-using-Custom-hooks#src/App.js).
 
