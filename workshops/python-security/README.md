@@ -31,7 +31,7 @@ pwd = pwd.hex()
 ```
 After that, we will check for what to do based on the player's initial input, which we stored in the 'choice' variable. To do so, we will be using the flow control 'if' statement:
 ```py
-if(inp == '1'):
+if(choice == '1'):
 ```
 Note that everything that you want the 'if' block to execute will have to be tabbed directly under the 'if' block. You will see what I mean in the next few steps.
 
@@ -63,19 +63,15 @@ Your code right now should be formatted like this:
 import hashlib
 import FColor
 
-inp = input('Are you\n(1) Signing Up\n(2) Signing In?: ')
-pwd_unhashed = input("Password: ")
+choice = input('Are you\n(1) Signing Up\n(2) Signing In?: ')
+pwd = input("Password: ")
 
-data = {
-  'password' : pwd_unhashed
-}
+pwd = hashlib.pbkdf2_hmac('sha256', pwd.encode('utf-8'), b'salt', 100000)
+pwd = pwd.hex()
 
-hash_data = hashlib.pbkdf2_hmac('sha256', data['password'].encode('utf-8'), b'salt', 100000)
-hash_data = hash_data.hex()
-
-if(inp == '1'):
+if(choice == '1'):
   results = open('save.dat', 'w')
-  results.write(hash_data)
+  results.write(pwd)
   results.close()
   print()
   print(FColor.BLUE + 'Sign Up Complete!')
@@ -85,7 +81,7 @@ Note the tabs that confine the **if** statement's execution code.
 
 Now that we have created a system in which the user can save their hashed password to a file, we will create a system where the user can log in using the password they signed up with. To do so, we will create an **elif** statement under our if statement:
 ```py
-elif(inp == '2'):
+elif(choice == '2'):
 ```
 This **elif** block will only run if the user wants to sign in. Therefore, we want to try reading from a file, which we will initiate using a **try** block
 ```py
@@ -93,15 +89,15 @@ try:
 ```
 Then we will open the file
 ```py
-    with open('save.dat', 'r') as file:
+with open('save.dat', 'r') as file:
 ```
 This will open the 'save.dat' file in reading mode and assign it to a variable called *file*. Now, let's iterate through each line in the *file* variable:
 ```py
-    for line in file:
+for line in file:
 ```
 Note that this for loop should only run once since we are only writing one line to it on user sign up. Let's strip each line of '\n' to get the pure text
 ```py
-      line = line.replace('\n', '')
+line = line.replace('\n', '')
 ```
 This will replace every '\n', or newline, character with a blank character (''). After this, create an empty print statement to format a newline:
 ```py
@@ -110,7 +106,7 @@ print()
 Now we will check whether or not the password the user initially inputted is the same as the one the user made an account with. To do so, we will compare the two variables with an if statement:
 ```py
 if(hash_data == line):
-        print(FColor.GREEN + "Correct Password")
+    print(FColor.GREEN + "Correct Password")
 ```
 Note that we are writing this with Green text to indicate a successful log in attempt. However, if the user fails to log in since the passwords do not match, we will let them know
 ```py
@@ -119,29 +115,28 @@ else:
 ```
 Then, to finish off our **try** block, we will make an **except** block. This will only run if we fail to open up the saved password file. 
 ```py
-  except:
+except:
     print(FColor.RED + "Couldn't read file 'save.dat'")
 ```
 The final code should look like this:
 ```py
-
 import hashlib
 import FColor
 
-inp = input('Are you\n(1) Signing Up\n(2) Signing In?: ')
+choice = input('Are you\n(1) Signing Up\n(2) Signing In?: ')
 pwd = input("Password: ")
 
 pwd = hashlib.pbkdf2_hmac('sha256', pwd.encode('utf-8'), b'salt', 100000)
 pwd = pwd.hex()
 
-if(inp == '1'):
+if(choice == '1'):
   results = open('save.dat', 'w')
   results.write(pwd)
   results.close()
   print()
   print(FColor.BLUE + 'Sign Up Complete!')
 
-elif(inp == '2'):
+elif(choice == '2'):
   try:
     with open('save.dat', 'r') as file:
       for line in file:
