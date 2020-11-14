@@ -308,10 +308,8 @@ function flipCard() {
   }
 }
 ```
-
-<details>
   
-  <summary> Here's what the code looks like so far: </summary>
+Here's what the code looks like so far:
   
 ```javascript
 document.addEventListener('DOMContentLoaded', () => {
@@ -350,8 +348,6 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
 ```
-
-</details>
 
 Don't forget to uncomment the event-listener of the card.
 Comment the `if` statement in `flipCard` function and check whether the images are changing or not. The output works like this.
@@ -431,7 +427,7 @@ result.textContent = cardsMatched.length
 ```
 
 <details>
-  <summary> Our code so far: </summary>
+<summary> Our code so far will be: </summary>
   
 ```javascript
 document.addEventListener('DOMContentLoaded', () => {
@@ -484,8 +480,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 createBoard()
 })
+```
 
-````
 </details>
 
 One thing you might notice that the cards are not random. So we have to shuffle the `cardArray`, every time before creating the board, using `sort()` method. The [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method sorts the elements of an array in place and returns the sorted array.
@@ -496,7 +492,7 @@ Add the following piece of code just after the `cardArray`, before the constants
 
 ```javascript
 cardArray.sort(() => 0.5 - Math.random())
-````
+```
 
 Finally, we finished our memory game.
 
