@@ -96,7 +96,44 @@ Let's break this down:
 - The class ```mb-3``` gives the column 3px of margin to its bottom.
 - The class ```mt-3``` gives the column 3px of margin to its top.
 
-Here's how the section 1 looks so far:
+<details><summary>Here's how our HTML document looks so far:</summary>  
+  
+```html
+<div class="container-fluid">
+
+  <!--Section #1-->
+  <div class="row">
+    <div class="col-md-12 text-center mb-3 mt-3">
+        <form id="imgurl">
+              <input type="text" placeholder="Image URL" id="onlineurl">
+              <button type="submit">Change Image</button>
+          </form>
+      </div>
+  </div>
+  
+  <!--Section #2-->
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+
+    <!--Section #3-->
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+  
+</div>
+```
+</details>
 
 ![Section 1 Result](https://cloud-cwwxoedf8.vercel.app/0section1.png)
 
@@ -117,7 +154,45 @@ In section 2 we'll just have to add an image tag inside of the **second column**
 - The class ```text-center``` as seen before, keeps all the elements in the center.
 - The ```src``` attribute inside of the ```<img>``` tag let us put an image as default, feel free to change it if you want to!
 
-Here's the result:
+<details><summary>Here's how our HTML document looks so far:</summary>  
+  
+```html
+<div class="container-fluid">
+
+  <!--Section #1-->
+  <div class="row">
+    <div class="col-md-12 text-center mb-3 mt-3">
+        <form id="imgurl">
+              <input type="text" placeholder="Image URL" id="onlineurl">
+              <button type="submit">Change Image</button>
+          </form>
+      </div>
+  </div>
+  
+  <!--Section #2-->
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="https://assets.hackclub.com/flag-orpheus-top.svg" id="targetimage" alt="">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+
+    <!--Section #3-->
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+  
+</div>
+```
+</details>
 
 ![Section 2 Result](https://cloud-q58efbf6w.vercel.app/00image-2.png)
 
@@ -168,7 +243,68 @@ Finally we need a button that we can use to reset the filters, this button goes 
 ```
 The classes ```btn``` & ```btn-primary``` are used to style the button.
 
-Here's the result:
+<details><summary>Here's how our HTML document looks so far:</summary>  
+  
+```html
+<div class="container-fluid">
+
+  <!--Section #1-->
+  <div class="row">
+    <div class="col-md-12 text-center mb-3 mt-3">
+        <form id="imgurl">
+              <input type="text" placeholder="Image URL" id="onlineurl">
+              <button type="submit">Change Image</button>
+          </form>
+      </div>
+  </div>
+  
+  <!--Section #2-->
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="https://assets.hackclub.com/flag-orpheus-top.svg" id="targetimage" alt="">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+
+  <!--Section #3-->
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4 p-2 text-center" id="section_three">
+      <h3>Image Filters</h3>
+            <form id="slider-form">
+            <p>
+              <label for="gs">Grayscale</label>. 
+              <input id="gs" name="gs" type="range" min="" max="100" value="0" class="slider">
+            </p>
+                                
+            <p>
+              <label for="blur">Blur</label>
+              <input id="blur" name="blur" type="range" min="0" max="" value="0" class="slider">
+            </p>
+
+            <p>
+              <label for="hue-rotate">Hue-Rotate</label>
+              <input id="hue-rotate" name="hue-rotate" type="range" min="0" max="" value="0" class="slider">
+            </p>
+
+            <p>
+              <label for="sepia">Sepia</label>
+              <input id="sepia" name="sepia" type="range" min="0" max="" value="0" class="slider">
+            </p>
+            
+            <button type="reset" class="btn btn-primary" >Reset</button>
+        </form>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+</div>
+```
+</details>
 
 ![Section 3 Result](https://cloud-jwbtp72pu.vercel.app/0screen_shot_2020-11-11_at_12.33.02_pm.png)
 
@@ -209,8 +345,8 @@ let myform = document.getElementById('imgurl');
 let targetimage = document.getElementById('targetimage');
 let inputrange = document.querySelectorAll('.slider');
 ```
-- The first variable will hold the data gotten from the input in the section 1.
-- You'll find `document.querySelectorAll` returns a NodeList, a special type of list of elements, that will contain the amount of elements with  `class=slider` in the document. So the 3rd variable contains the value of all the range inputs in the section 3.
+- The first and second variable will hold html elements, we get those elements using the method ```document.getElementById('')```. So those variables will hold the form in section 1 and the image in section 2 respectively.
+- In the third variable, you'll find `document.querySelectorAll` returns a NodeList, a special type of list of elements, that will contain the amount of elements with  `class=slider` in the document. So the 3rd variable contains the value of all the range inputs in the section 3.
 
 Next, we want to trigger some JavaScript code to run when the form is submitted. Under the three variables, add the following code:
 
@@ -227,22 +363,33 @@ myform.addEventListener('submit', function(e) {
   console.log('Image displayed');
 });
 ```
-This is a [JavaScript event listener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp) which gets the value of the image url input when the user clicks the "Change Image" button. The code first makes sure the value is not empty, and then attempts to set the src attribute of the `targetimage` element.
+Let's break this down:
+We are using the method ```addEventListener()``` to the first variable that we created, when the button in the form is submitted we call a function that:
+1. Creates a variable that holds the text input that we placed in section 1.
+2. Creates another variable that will get the data gotten from the text input, we do this using the **value** property.
+3. Creates an if statement that checks if the variable `urlimageval` is empty or not using the **length** property, this property returns `true` if the length of the string is greater than 0 or `false` if the length of the string is 0. When the property returns true, it takes the `img` element in section 2 and sets its `src` to the value of `urlimage`, then it resets the value of `urlimage`.
+4. Then we use the `preventDefault();` method to prevent the default way the browser handles `submit` when it happens, which includes refreshing the page.
+5. Finally, we use the function `console.log('');` to send a message to the console.
 
-Now let's test it out:
+Now let's test it:
 
 ![Image displaying gif](https://cloud-jumlfocs6.vercel.app/0screen_recording_2020-11-08_at_11.26.14_pm.gif)
 
 Works perfectly!
 
-Next, add the following code:
-
+Now we'll need to add an event listener to each range input in section 3, in order to be able to edit the image:
 ```js
 for(let i=0; i<=inputrange.length-1; i++) {
   inputrange[i].addEventListener('input', editimage);
 }
 ```
-This code loops through the inputrange array, then for each input, it adds an event listener to it, and when the event happens, the editimage function gets called
+Let's break this down:
+In this code we are creating a for statement, in which we create a variable called `i` that starts at 0, on each iteration, we check if the condition is false or true, or in other words, whether `i` is smaller than the amount of elements in `inputrange`.
+
+- If the condition is true, for each input it adds an event listener to it, and when the event happens, the `editimage` function gets called.
+- If the condition is false, we stop the loop.
+
+ In order to get to the next iteration, we add one to `i` using `i++`.
 
 Now we'll create a function that takes the values from the range inputs, and then update the style of the image applying the css filter function using those values:
 
@@ -253,7 +400,6 @@ function editImage() {
   let huerotate = document.getElementById('hue-rotate');
   let sepia = document.getElementById('sepia');
 
-  let invertval = invert.value;
   let gsval = gs.value;
   let blurval = blur.value;
   let huerotateval = huerotate.value;
@@ -262,9 +408,15 @@ function editImage() {
   targetimage.style.filter = 'grayscale('+gsval+'%) blur('+blurval+'px) hue-rotate('+huerotateval+'deg) sepia('+sepiaval+'%) invert('+invertval+'%)';
 }
 ```
+Breaking down:
+1. The first 4 variables hold the range inputs from the HTML document using the method: ```document.getElementById('')``` 
+2. The another 4 variables take those range inputs and get them actual values, using the `value` property
+3. Then we take the `targetimage` element and we style it using the `style` & `filter` properties, and we specify what filters we want to apply.
 
+Let's test it:
 ![Image displaying gif](https://cloud-rnyr55z84.vercel.app/0screen_recording_2020-11-08_at_11.31.24_pm.gif)
-Finally we'll need to give the reset button a functionality:
+
+Finally we'll need to give the reset button its functionality:
 ```js
 let sliderform = document.getElementById('slider-form');
 sliderform.addEventListener('reset', function() {
@@ -274,7 +426,11 @@ sliderform.addEventListener('reset', function() {
   }, 0)
 })
 ```
-It adds an event listener to the sliderform element, then it calls the callback which resets the sliderform and then edits the image:
+Let's break it down:
+- We are creating a variable that holds the form in section 3.
+- Then we are adding it an event listener, that when the button is clicked a function is called. What this function does is to reset the values for all the inputs inside of the form using the `reset()` method, and then using the `setTimeout()` method we call the function `editimage` in the given time (0 seconds).
+
+Let's try it:
 ![Image displaying gif](https://cloud-6xk3j2yw1.vercel.app/0screen_recording_2020-11-08_at_11.35.41_pm.gif)
 
 ## Hack it
@@ -292,3 +448,4 @@ Check these resources to go even further:
 - [Font Awesome icons](https://fontawesome.com/v4.7.0/icons/)
 - [5 Stunning CSS Filters tricks you must see](https://www.youtube.com/watch?v=XEuzpXmAEG4)
 - [jQuery for beginners](https://www.tutorialrepublic.com/jquery-tutorial/)
+
