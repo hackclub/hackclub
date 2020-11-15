@@ -394,7 +394,7 @@ In this code we are creating a for statement, in which we create a variable call
 Now we'll create a function that takes the values from the range inputs, and then update the style of the image applying the css filter function using those values:
 
 ```js
-function editImage() {
+function editimage() {
   let gs = document.getElementById('gs');
   let blur = document.getElementById('blur');
   let huerotate = document.getElementById('hue-rotate');
