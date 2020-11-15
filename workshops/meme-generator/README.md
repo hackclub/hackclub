@@ -149,9 +149,10 @@ Now, in our `scripts.js` file:
 
 * Make a `function` called `generateMeme`, which will take: `image`, `topText`, `bottomText`, `topTextSize`, `bottomTextSize` variables as the function arguments.
   
-  Inside our `generateMeme` function, add the following code:
+  Here's how our `generateMeme` function will look like:
   
   ```javascript
+  function generateMeme(img, topText, bottomText, topTextSize, bottomTextSize) {
   const canvas = document.getElementById('meme-canvas');
   const ctx = canvas.getContext('2d');
 
@@ -191,14 +192,15 @@ Now, in our `scripts.js` file:
   bottomText.split('\n').reverse().forEach((t, i) => { // .reverse() because it's drawing the bottom text from the bottom up
     ctx.fillText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
     ctx.strokeText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
+    }
     ```
 
   If you wanna learn more about the cool things `Canvas` can do, check out [this](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage) link.
 
-* Now, after our `generateMeme` function, add a [Window: DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) event:
+* Now, after our `generateMeme` function, add a [Window: DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) event, which will be executed after the content of the web page is loaded.
 
     ```javascript
-    window.addEventListener('DOMContentLoaded', (event) => {
+    window.addEventListener('DOMContentLoaded', () => {
         //Code here
     });
     ```
@@ -206,6 +208,7 @@ Now, in our `scripts.js` file:
 Inside the event, add the following code:
 
 ```javascript
+window.addEventListener('DOMContentLoaded', () => {
   // Initialize variables
   const topTextInput = document.getElementById('top-text');
   const bottomTextInput = document.getElementById('bottom-text');
@@ -213,7 +216,7 @@ Inside the event, add the following code:
   const bottomTextSizeInput = document.getElementById('bottom-text-size-input');
   const imageInput = document.getElementById('image-input');
   const generateBtn = document.getElementById('generate-btn');
-  //Default/Demo text
+  // Default/Demo text
   topTextInput.value = 'Top\nValue';
   bottomTextInput.value = 'Bottom\nValue';
 
@@ -229,9 +232,12 @@ Inside the event, add the following code:
       };
     };
     reader.readAsDataURL(imageInput.files[0]);
+  });
+});
 ```
 
 ![Scared red panda](https://cloud-kb71t9prf.vercel.app/0giphy-2.gif)
+
 Don't be scared like the above ^ panda, let's break the code down:
 
 Code Explanation:
@@ -252,74 +258,75 @@ The final JavaScript code should look like:
 
 ```javascript
 function generateMeme(img, topText, bottomText, topTextSize, bottomTextSize) {
-    const canvas = document.getElementById('meme-canvas');
-    const ctx = canvas.getContext('2d');
+  const canvas = document.getElementById('meme-canvas');
+  const ctx = canvas.getContext('2d');
 
-    // Size canvas to image
-    canvas.width = img.width;
-    canvas.height = img.height;
+  // Size canvas to image
+  canvas.width = img.width;
+  canvas.height = img.height;
 
-    // Clear canvas
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    // Draw main image
-    ctx.drawImage(img, 0, 0);
+  // Clear canvas
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  // Draw main image
+  ctx.drawImage(img, 0, 0);
 
-    // Text style: white with black borders
-    ctx.fillStyle = 'white';
-    ctx.strokeStyle = 'black';
-    ctx.textAlign = 'center';
+  // Text style: white with black borders
+  ctx.fillStyle = 'white';
+  ctx.strokeStyle = 'black';
+  ctx.textAlign = 'center';
 
-    // Top text font size
-    let fontSize = canvas.width * topTextSize;
-    ctx.font = `${fontSize}px Impact`;
-    ctx.lineWidth = fontSize / 20;
+  // Top text font size
+  let fontSize = canvas.width * topTextSize;
+  ctx.font = `${fontSize}px Impact`;
+  ctx.lineWidth = fontSize / 20;
 
-    // Draw top text
-    ctx.textBaseline = 'top';
-    topText.split('\n').forEach((t, i) => {
-        ctx.fillText(t, canvas.width / 2, i * fontSize, canvas.width);
-        ctx.strokeText(t, canvas.width / 2, i * fontSize, canvas.width);
-    });
+  // Draw top text
+  ctx.textBaseline = 'top';
+  topText.split('\n').forEach((t, i) => {
+    ctx.fillText(t, canvas.width / 2, i * fontSize, canvas.width);
+    ctx.strokeText(t, canvas.width / 2, i * fontSize, canvas.width);
+  });
 
-    // Bottom text font size
-    fontSize = canvas.width * bottomTextSize;
-    ctx.font = `${fontSize}px Impact`;
-    ctx.lineWidth = fontSize / 20;
+  // Bottom text font size
+  fontSize = canvas.width * bottomTextSize;
+  ctx.font = `${fontSize}px Impact`;
+  ctx.lineWidth = fontSize / 20;
 
-    // Draw bottom text
-    ctx.textBaseline = 'bottom';
-    bottomText.split('\n').reverse().forEach((t, i) => { // .reverse() because it's drawing the bottom text from the bottom up
-        ctx.fillText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
-        ctx.strokeText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
-    });
+  // Draw bottom text
+  ctx.textBaseline = 'bottom';
+  bottomText.split('\n').reverse().forEach((t, i) => { // .reverse() because it's drawing the bottom text from the bottom up
+    ctx.fillText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
+    ctx.strokeText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
+  });
 }
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    // Initialize variables
-    const topTextInput = document.getElementById('top-text');
-    const bottomTextInput = document.getElementById('bottom-text');
-    const topTextSizeInput = document.getElementById('top-text-size-input');
-    const bottomTextSizeInput = document.getElementById('bottom-text-size-input');
-    const imageInput = document.getElementById('image-input');
-    const generateBtn = document.getElementById('generate-btn');
-    // Default/Demo text
-    topTextInput.value = 'Top\nValue';
-    bottomTextInput.value = 'Bottom\nValue';
+window.addEventListener('DOMContentLoaded', () => {
+  // Initialize variables
+  const topTextInput = document.getElementById('top-text');
+  const bottomTextInput = document.getElementById('bottom-text');
+  const topTextSizeInput = document.getElementById('top-text-size-input');
+  const bottomTextSizeInput = document.getElementById('bottom-text-size-input');
+  const imageInput = document.getElementById('image-input');
+  const generateBtn = document.getElementById('generate-btn');
+  // Default/Demo text
+  topTextInput.value = 'Top\nValue';
+  bottomTextInput.value = 'Bottom\nValue';
 
-    // Generate button click listener
-    generateBtn.addEventListener('click', () => {
-        // Read image as DataURL using the FileReader API
-        const reader = new FileReader();
-        reader.onload = () => {
-            const img = new Image();
-            img.src = reader.result;
-            img.onload = () => {
-                generateMeme(img, topTextInput.value, bottomTextInput.value, topTextSizeInput.value, bottomTextSizeInput.value);
-            };
-        };
-        reader.readAsDataURL(imageInput.files[0]);
-    });
+  // Generate button click listener
+  generateBtn.addEventListener('click', () => {
+    // Read image as DataURL using the FileReader API
+    const reader = new FileReader();
+    reader.onload = () => {
+      const img = new Image();
+      img.src = reader.result;
+      img.onload = () => {
+        generateMeme(img, topTextInput.value, bottomTextInput.value, topTextSizeInput.value, bottomTextSizeInput.value);
+      };
+    };
+    reader.readAsDataURL(imageInput.files[0]);
+  });
 });
+
 ```
 
 </summary>
