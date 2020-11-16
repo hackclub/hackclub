@@ -7,7 +7,7 @@ author: '@emmanuel39hanks'
 Ever wondered how you can play sounds with code? Well, if yes, then you will love this workshop! We are going to be creating a drum pad in less than 230 lines of code that plays actual sounds, and if you are a beginner, this won't only be fun and creative but will help you get comfortable with coding!
 
 <p align='center'>
-<img src="https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif" alt="yes-ready-to-code" >
+<img src="https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif" alt="ready-to-code" >
 </p>
 
 
@@ -24,7 +24,7 @@ Apart from building the drum pad, you will be learning about different types of 
 ## Getting started
 
 Let's start by setting up our IDE (Integrated Development Environment) on Rept.it, a free, online code editor.
-To start your coding right away navigate to (repl.it/languages/html) and you will have your whole setup ready when you sign up.
+To start your coding right away navigate to https://repl.it/languages/html and you will have your whole setup ready when you sign up.
 
 You would see that there are already three files named HTML, CSS and JavaScript., navigate to your `index.html` file, and we can start working on the pad structure in HTML. 
 
