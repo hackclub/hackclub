@@ -23,9 +23,12 @@ Apart from building the drum pad, you will be learning about different types of 
 
 ## Getting started
 
-Head over to repl.it (https://repl.it/) and we will get started by creating an HTML/CSS & JavaScript repl. Once the repl is set up, navigate to your `index.html` file, and we can start working on the pad layout. 
+Let's start by setting up our IDE (Integrated Development Environment) on Rept.it, a free, online code editor.
+To start your coding right away navigate to repl.it/languages/html and you will have your whole setup ready when you sign up.
 
-## Part 1
+You would see that there are already three files named HTML, CSS and JavaScript., navigate to your `index.html` file, and we can start working on the pad structure in HTML. 
+
+## HTML Part:
 
 We are going to start writing HTML; going into our `<body>` tag, which is where we write code that will be shown to the user of the web page. Let's create a header with the `<h1>` tag. Then we will have three rows and four columns of pads and each pad will be a `<div>`. you can think of the `<div>` tag as a box or container.
 
@@ -72,7 +75,9 @@ And if we run our code, it should look like this:
 
 ![Preview of HTML with no CSS](https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
 
-Not so compelling, right? We will now write some CSS, which will style our HTML document and make our drum pad look prettier. Let's do that.
+# CSS Part:
+
+Not so compelling, right? We will now write some CSS to add stying, which make our drum pad look prettier. Let's do that!
 
 Just before the end of your `<head>` tag, link your CSS file:
 
@@ -346,7 +351,7 @@ We are done with our styling and layout:
 
 ![Preview of HTML with our finished layout CSS applied, and our pad borders colored](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
 
-## Part 2
+## JavaScript Part:
 
 And finally, we are done with our CSS. It now looks good, but when you click on the buttons, we have no sound. We need to write our JavaScript code that will get us sound.
 
