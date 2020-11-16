@@ -2,6 +2,7 @@
 name: 'Dialogflow-chatbot'
 description: 'Build a simple chatbot using Dialogflow'
 author: '@tanishq-soni'
+img: 'https://cloud-lkxuqb6ez.vercel.app/035.png'
 ---
 
 # Dialogflow Chatbot
