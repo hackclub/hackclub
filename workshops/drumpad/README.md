@@ -4,9 +4,9 @@ description: 'Creating a Drum Pad in HTML, CSS & JS'
 author: '@emmanuel39hanks'
 ---
 
-# Creating a Drum Pad in HTML, CSS & JavaScript
+Ever wondered how you can play sounds with code? Well if yes, then you will love this workshop! We are going to be creating a drum pad in less than 230 lines of code that plays actual sounds, and if you are a beginner this won't only be fun and creative but will help you get comfortable with coding! 
 
-In this workshop, we are going to be creating a drum pad in less than 230 lines of code.
+# Overview
 
 _Preview of the Drum Pad we are going to be creating_
 
