@@ -6,7 +6,10 @@ author: '@emmanuel39hanks'
 
 Ever wondered how you can play sounds with code? Well, if yes, then you will love this workshop! We are going to be creating a drum pad in less than 230 lines of code that plays actual sounds, and if you are a beginner, this won't only be fun and creative but will help you get comfortable with coding!
 
-![Image](https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif)
+<p align='center'>
+<img src="https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif" alt="yes-ready-to-code" >
+</p>
+
 
 # Overview
 
