@@ -1,5 +1,5 @@
 ---
-name: 'Drawing Shapes Bot'
+name: 'Drawing Shapes Program'
 description: 'Make a drawing program with shapes!'
 author: '@JakeGerber'
 ---
