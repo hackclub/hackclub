@@ -280,9 +280,17 @@ You finished the Dialogflow chatbot workshop by completing all tasks:
 # ⚡ What's Next?
 Now, how you can expand it? Try adding some cool commands and try different integrations with the help of [Dialogflow documentation](https://cloud.google.com/dialogflow/es/docs)
 
-Here are some examples 👇
+**Here are some examples** 👇
 
-- Integrate the agent with your own website.
+- Integrate the chatbot with your own website.
 - Integrate it as a dialogflow messenger in your own website.
-- Integrate the agent with Slack.
+- Build a small talk agent.
+- Integrate the chatbot as slack app.
+- Style your chatbot with some cool CSS.
+
+#### ⭐ Live Demo
+
+- [**Integrating chatbot on webpage**](https://repl.it/@tanishqsoni/web-demo#index.html)
+- [**Integrating as a messenger on webpage**](https://repl.it/@tanishqsoni/messenger#index.html)
+- [**Small talk agent**](https://bot.dialogflow.com/19250c6b-6d36-49d2-8d78-219534cba74c)
 
