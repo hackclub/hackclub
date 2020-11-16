@@ -26,7 +26,7 @@ Apart from building the drum pad, you will be learning about different types of 
 Let's start by setting up our IDE (Integrated Development Environment) on Rept.it, a free, online code editor.
 To start your coding right away navigate to https://repl.it/languages/html and you will have your whole setup ready when you sign up.
 
-You would see that there are already three files named HTML, CSS and JavaScript., navigate to your `index.html` file, and we can start working on the pad structure in HTML. 
+You will see that there are already three files named HTML, CSS, and JavaScript. Navigate to your `index.html` file, and we can start working on the structure pf our drum pads in HTML. 
 
 ## HTML Part:
 
