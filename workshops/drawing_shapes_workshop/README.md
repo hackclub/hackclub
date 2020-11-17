@@ -53,7 +53,7 @@ colors = ["red", "green", "blue", "yellow", "orange", "purple", "grey", "black"]
 - We are setting the max amount of shapes we will draw under "maxItem" and "itemNum" is our index to start at.
 - The variable "colorNum" is the index we are starting at with the array of "colors".
 
-## Initializing Turtle
+## Initializing The Turtle
 Let's initialize the turtle.
 
 <img src="https://media.tenor.com/images/3dda08893f64e5e4437dc3ba93cad5b9/tenor.gif" width="380" alt="Turtle Gif">
