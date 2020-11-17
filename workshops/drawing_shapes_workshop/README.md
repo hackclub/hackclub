@@ -6,7 +6,7 @@ author: '@JakeGerber'
 
 # Create a Drawing Program with Shapes!
 
-<img src="https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png" width="380" alt="Message Example">
+<img src="https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png" width="380" alt="Drawing Example">
 
 ## Repl.it Setup
 
@@ -127,12 +127,56 @@ def triangle(x, y):
 ### Finishing Up the Shapes
 
 ## Switching Between Shapes
+Here is the functionality to switch between shapes.
 
+```python
+def switchShape(x, y):
+  global itemNum
+  global maxItem
+
+  itemNum += 1
+
+  if (itemNum >= maxItem):
+    itemNum = 0
+```
+- The itemNum and maxItem are made global so we can use them.
+- Increment the itemNum and if greater than the maxItem amount, then go back to 0.
+- Even though we are not using the parameters, we need them for our screen clcik function later.
 
 ## Drawing Shapes
+Here is the functionality to draw the current shape.
 
+```python
+def drawItem(x, y): 
+  global itemNum
+  if (itemNum == 0):
+    circle(x, y)
+  elif (itemNum == 1):
+    square(x, y)
+  elif (itemNum == 2):
+    triangle(x, y)
+  else:
+    print(itemNum)
+```
+- The itemNum is made global so we can use it.
+- We then see what value it is and draw the shape based on the number.
 
 ### Switching Between Colors
+We are changing the color.
+
+```python
+def switchColor(x, y):
+  global colorNum
+  global colors
+
+  colorNum += 1
+
+  if (colorNum >= len(colors)):
+    colorNum = 0
+    
+
+  turtle.color(colors[colorNum])
+```
 
 ### Clicking On Screen
 
