@@ -4,9 +4,11 @@ description: 'Make a drawing program with shapes!'
 author: '@JakeGerber'
 ---
 
-#### Create a Drawing Program with Shapes!
+# Create a Drawing Program with Shapes!
 
-<img src="https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png" width="380" alt="Drawing Example">
+<img src="https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png" width="580" alt="Drawing Example">
+
+<img src="https://thumbs.gfycat.com/FantasticFaintAmurminnow-small.gif" width="380" alt="Nice Gif">
 
 ## Repl.it Setup
 
@@ -16,8 +18,8 @@ Create a new repl and use Python as the language.
 
 <img src="https://cloud-2ojs193ra.vercel.app/0screenshot__1396_.png" width="600" alt="Python Repl">
 
-### Let's Begin Creating the Program
-
+# Let's Begin Creating the Program
+<img src="https://media2.giphy.com/media/62PP2yEIAZF6g/giphy.gif" width="380" alt="Cool Gif">
 
 ## Importing Libraries
 Let's begin by importing the turtle and math libraries.
@@ -53,6 +55,9 @@ colors = ["red", "green", "blue", "yellow", "orange", "purple", "grey", "black"]
 
 ## Initializing Turtle
 Let's initialize the turtle.
+
+<img src="https://media.tenor.com/images/3dda08893f64e5e4437dc3ba93cad5b9/tenor.gif" width="380" alt="Turtle Gif">
+
 ```python
 #Code we already wrote
 
@@ -64,7 +69,7 @@ turtle.up()
 - We are setting the speed to 0 so it will draw instantly.
 - We are making the turtle go up.
 
-### Creating the Shapes
+# Creating the Shapes
 
 ## Creating the Circle
 We are going to create the circle function.
@@ -87,7 +92,7 @@ def circle(x, y):
 ## Creating the Square
 We are going to create square function.
 
-<img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Circle Example">
+<img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Square Example">
 
 ```python
 def square(x, y):
@@ -107,7 +112,7 @@ def square(x, y):
 ## Creating the Triangle
 We are going to create triangle function.
 
-<img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Circle Example">
+<img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Triangle Example">
 
 ```python
 def triangle(x, y):
@@ -129,7 +134,9 @@ def triangle(x, y):
 - We finally end the fill and set the direction to the right.
 
 
-### Finishing Up the Shapes
+# Finishing Up the Shapes
+
+<img src="https://media1.tenor.com/images/46422729dc9ecd6898203ef13b3d9985/tenor.gif?itemid=15700153" width="380" alt="Almost There Gif">
 
 ## Switching Between Shapes
 Here is the functionality to switch between shapes.
@@ -166,10 +173,10 @@ def drawItem(x, y):
 - The "itemNum" variable is made global so we can use it.
 - We then see what value it is and draw the shape based on the number.
 
-### Switching Between Colors
+# Switching Between Colors
 We are changing the color.
 
-<img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Circle Example">
+<img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Switch Colors Example">
 
 ```python
 def switchColor(x, y):
@@ -189,7 +196,9 @@ def switchColor(x, y):
 - We then set the turtle's color to the color at the colorNum index of the colors array.
 
 
-### Clicking On Screen
+# Clicking On Screen
+
+<img src="https://media3.giphy.com/media/hCfESQ8r1eBOg/giphy.gif" width="380" alt="Clicking Screen Gif">
 
 ```python
 #everything we already wrote
@@ -202,7 +211,10 @@ turtle.onscreenclick(switchShape, 3)
 - If we click the middle button, switch the color.
 - If we click the right button, switch the shape.
 
-### Final Source Code
+# Final Source Code
+
+<img src="https://media2.giphy.com/media/26u4lOMA8JKSnL9Uk/giphy.gif" width="380" alt="Done Gif">
+
 ```python
 import turtle
 import math 
