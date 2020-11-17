@@ -4,7 +4,7 @@ description: 'Make a drawing program with shapes!'
 author: '@JakeGerber'
 ---
 
-# Create a Drawing Program with Shapes!
+#### Create a Drawing Program with Shapes!
 
 <img src="https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png" width="380" alt="Drawing Example">
 
@@ -14,8 +14,7 @@ We're going to use [Repl.it](https://repl.it/~) to create the project. It is an 
 
 Create a new repl and use Python as the language.
 
-<img src="https://cloud-otu0relhe.vercel.app/0screenshot__1383_.png" width="600" alt="Node.js Repl"> CHANGE
-## FINISH
+<img src="https://cloud-2ojs193ra.vercel.app/0screenshot__1396_.png" width="600" alt="Python Repl">
 
 ### Let's Begin Creating the Program
 
