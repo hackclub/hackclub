@@ -92,7 +92,7 @@ def circle(x, y):
 ## Creating the Square
 We are going to create the square function.
 
-<img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Square Example">
+<img src="https://cloud-mkkyzdd9l.vercel.app/0screenshot__1393_.png" width="380" alt="Square Example">
 
 ```python
 def square(x, y):
@@ -112,7 +112,7 @@ def square(x, y):
 ## Creating the Triangle
 We are going to create triangle function.
 
-<img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Triangle Example">
+<img src="https://cloud-mo50706v1.vercel.app/0screenshot__1394_.png" width="380" alt="Triangle Example">
 
 ```python
 def triangle(x, y):
@@ -176,7 +176,7 @@ def drawItem(x, y):
 # Switching Between Colors
 We are changing the color.
 
-<img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Switch Colors Example">
+<img src="https://cloud-c9ojk6h90.vercel.app/0screenshot__1395_.png" width="380" alt="Switch Colors Example">
 
 ```python
 def switchColor(x, y):
@@ -300,7 +300,7 @@ turtle.onscreenclick(switchColor, 2)
 turtle.onscreenclick(switchShape, 3)
 ```
 
-### More that you can create
+# More that you can create + Source Code
 - [Original Program](https://repl.it/@CosmicSnowman/Drawing-Turtle#main.py)
 - [Randomized Color](https://repl.it/@CosmicSnowman/Drawing-Turtle-Expanded-1#main.py)
 - [More Shapes](https://repl.it/@CosmicSnowman/Drawing-Turtle-Expanded-2#main.py)
