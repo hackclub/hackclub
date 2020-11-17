@@ -10,7 +10,7 @@ author: '@JakeGerber'
 
 <img src="https://thumbs.gfycat.com/FantasticFaintAmurminnow-small.gif" width="380" alt="Nice Gif">
 
-## Repl.it Setup
+# Repl.it Setup
 
 We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE!
 
@@ -30,7 +30,7 @@ import math
 ```
 
 - We will be drawing to the screen using the turtle library!
-- The math library will be used later!
+- The math library will be used for calculations!
 
 ## Creating Variables
 Now lets create some variables.
@@ -51,7 +51,7 @@ colors = ["red", "green", "blue", "yellow", "orange", "purple", "grey", "black"]
 
 - We are creating variables for the width of the square, radius of the circle, and length of the triangle.
 - We are setting the max amount of shapes we will draw under "maxItem" and "itemNum" is our index to start at.
-- "colorNum" is the index we are starting at with the array of "colors"
+- The variable "colorNum" is the index we are starting at with the array of "colors".
 
 ## Initializing Turtle
 Let's initialize the turtle.
@@ -67,7 +67,7 @@ turtle.up()
 ```
 - We are hiding the turtle cursor.
 - We are setting the speed to 0 so it will draw instantly.
-- We are making the turtle go up.
+- We are making the turtle's pen go up so it will not draw while moving.
 
 # Creating the Shapes
 
@@ -84,13 +84,13 @@ def circle(x, y):
   turtle.end_fill()
 ```
 - The def defines the function, and we are passing in x and y coordinates as parameters.
-- The "turtle.begin_fill()" function makes the circle we will draw filled in.
+- The "turtle.begin_fill()" function fills in the circle we will draw.
 - We are then going to the the location of where we will draw. It is offset so it will be centered at the mouse point.
-- We are then drawing the circle and ending the fill.
+- We are then drawing and filling the circle and ending the fill.
 
 
 ## Creating the Square
-We are going to create square function.
+We are going to create the square function.
 
 <img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Square Example">
 
@@ -130,7 +130,7 @@ def triangle(x, y):
 - The def defines the function, and we are passing in x and y coordinates as parameters.
 - We are going to the offset coordinate and setting the direction to face right.
 - We are beginning the fill and creating a for loop.
-- We are going forward and then turning left for 3 times in order to create the triangle.
+- We are going forward and then turning left 3 times in order to create the triangle.
 - We finally end the fill and set the direction to the right.
 
 
@@ -152,8 +152,8 @@ def switchShape(x, y):
     itemNum = 0
 ```
 - The itemNum and maxItem are made global so we can use them.
-- Increment the itemNum and if greater than the maxItem amount, then go back to 0.
-- Even though we are not using the parameters, we need them for our screen clcik function later.
+- Increment the itemNum and if greater than or equal to the maxItem amount, go back to 0.
+- Even though we are not using the parameters, they are required for our screen click function later.
 
 ## Drawing Shapes
 Here is the functionality to draw the current shape.
@@ -171,7 +171,7 @@ def drawItem(x, y):
     print(itemNum)
 ```
 - The "itemNum" variable is made global so we can use it.
-- We then see what value it is and draw the shape based on the number.
+- We then see what value it is and draw the respective shape.
 
 # Switching Between Colors
 We are changing the color.
@@ -192,7 +192,7 @@ def switchColor(x, y):
   turtle.color(colors[colorNum])
 ```
 - The "colorNum" and "colors" variables are made global so we can use them.
-- Increment the itemNum and if greater than or equal to the "colors" length, then go back to 0.
+- Increment the "itemNum" and if greater than or equal to the "colors" length, go back to 0.
 - We then set the turtle's color to the color at the colorNum index of the colors array.
 
 
@@ -206,10 +206,10 @@ turtle.onscreenclick(drawItem, 1)
 turtle.onscreenclick(switchColor, 2)
 turtle.onscreenclick(switchShape, 3)
 ```
-- The turtle.onscreenclick function takes in a function with x and y parameters and the mouse button.
-- If we click the left button, draw the current shape.
-- If we click the middle button, switch the color.
-- If we click the right button, switch the shape.
+- The "turtle.onscreenclick()" function takes in a function with x and y parameters and the mouse button.
+- If we click the left button (1), draw the current shape.
+- If we click the middle button (2), switch the color.
+- If we click the right button (3), switch the shape.
 
 # Final Source Code
 
