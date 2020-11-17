@@ -33,7 +33,7 @@ import math
 
 ## Creating Variables
 Now lets create some variables.
-```js
+```python
 import turtle
 import math
 
@@ -54,7 +54,7 @@ colors = ["red", "green", "blue", "yellow", "orange", "purple", "grey", "black"]
 
 ## Initializing Turtle
 Let's initialize the turtle.
-```js
+```python
 #Code we already wrote
 
 turtle.hideturtle()
@@ -68,15 +68,66 @@ turtle.up()
 ### Creating the Shapes
 
 ## Creating the Circle
+We are going to create the circle function.
+
+```python
+def circle(x, y): 
+  turtle.begin_fill()
+  turtle.goto(x, y-circleRadius) 
+  turtle.circle(circleRadius) 
+  turtle.end_fill()
+```
+- The def defines the function, and we are passing in x and y coordinates as parameters.
+- The "turtle.begin_fill()" function makes the circle we will draw filled in.
+- We are then going to the the location of where we will draw. It is offset so it will be centered at the mouse point.
+- We are then drawing the circle and ending the fill.
+
 
 ## Creating the Square
+We are going to create square function.
+
+```python
+def square(x, y):
+  turtle.begin_fill()
+  turtle.goto(x-(squareWidth/2), y-(squareWidth/2))
+  turtle.setheading(0)
+  for x in range(4):
+    turtle.forward(20)
+    turtle.left(90) 
+  turtle.end_fill()
+```
+- The def defines the function, and we are passing in x and y coordinates as parameters.
+- We are beginning the fill and going to the offset coordinate.
+- We are setting the direction to face right.
+- We are running a for loop to create each side of the square and then ending the fill.
 
 ## Creating the Triangle
+We are going to create triangle function.
+
+```python
+def triangle(x, y):
+  turtle.goto(x-(triangleLength/2), y-((triangleLength *math.sqrt(3))/6))
+  turtle.setheading(0)
+
+  turtle.begin_fill()
+  for x in range(3):
+    turtle.forward(triangleLength)
+    turtle.left(120) 
+  turtle.end_fill()
+
+  turtle.setheading(0)
+```
+- The def defines the function, and we are passing in x and y coordinates as parameters.
+- We are going to the offset coordinate and setting the direction to face right.
+- We are beginning the fill and creating a for loop.
+- We are going forward and then turning left for 3 times in order to create the triangle.
+- We finally end the fill and set the direction to the right.
 
 
-### Shapes
+### Finishing Up the Shapes
 
 ## Switching Between Shapes
+
 
 ## Drawing Shapes
 
