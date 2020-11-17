@@ -30,6 +30,8 @@ import math
 ```
 
 - We will be drawing to the screen using the turtle library!
+- Turtle allows us to draw to the screen like a whiteboard. More information [here](https://www.geeksforgeeks.org/turtle-programming-python/)
+
 - The math library will be used for calculations!
 
 ## Creating Variables
