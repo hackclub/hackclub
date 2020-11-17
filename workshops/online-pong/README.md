@@ -11,7 +11,7 @@ TODO Link to final game, github repo
 
 ## Prerequisites
 
-This is **not** a beginner-level tutorial. I will assume you are at least somewhat familiar with JavaScript/TypeScript features such as classes, ternary expressions, promises, and arrow functions. If you are not, I would recommend going and checking out some of the other JavaScript workshops before working up to this. There are lots of cool ones, including [JS clocks](https://workshops.hackclub.com/simple_clock/), [pianos](https://workshops.hackclub.com/tunes/), and [bullet-dodging](https://workshops.hackclub.com/dodge/) games., 
+This is **not** a beginner-level tutorial. I will assume you are at least somewhat familiar with JavaScript/TypeScript features such as classes, ternary expressions, promises, and arrow functions. If you are not, I would recommend going and checking out some of the other JavaScript workshops before working up to this. There are lots of cool ones, including [JS clocks](https://workshops.hackclub.com/simple_clock/), [pianos](https://workshops.hackclub.com/tunes/), and [bullet-dodging](https://workshops.hackclub.com/dodge/) games.
 
 We will be using the [TypeScript programming language](https://www.typescriptlang.org/docs/) for the server, which is a _superset_ of JavaScript (just JS but with extra features), as it is the recommended language for Colyseus. While you should be able to write standard JS most of the time and get away with it, I recommend [checking out some of typescript's features](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html) beforehand (specifically, types) if you've never used it before.
 
@@ -28,8 +28,8 @@ So, here's the brief explanation of the project:
 1. We'll have a file called `index.ts` (typescript) where we set up and ininitialize the game server. 
 2. When a user requests the game from the server, it will send back a `game.html` and `game.js` file - these are standard JavaScript and HTML files, where we will write the client-side code (code that runs on the player's computer) for the game. This includes drawing all the shapes to the canvas.
 3. We'll also have a file called `PongRoom.ts` that runs on the server. Here, we will put all the server code for the game. It has two main parts: "state" classes, where we can define all the variables we'll need to keep track of for the game, including the position of the Pong rackets ands and Pong ball; and a "room" class that tells Colyseus what to do when players join a game, leave a game, sends an update, etc. (Each game is basically an instance of the room class)
-4. The Colyseus.js library will take care of communicating between the server (the `PongRoom.ts` file) and the client (the `game.js` file).
-5. When a user moves their racket, for example, we'll tell the Colyseus.js library to send the movement to the server, and the server will send it to the other player.
+4. The Colyseus.js library will take care of communicating between the server (the `PongRoom.ts` file) and the client (the `game.js` file). This includes sending messages back and forth, but also synchronizing the state variables across the players and server.
+5. When a user moves their racket, for example, we'll tell the Colyseus.js library to send the movement to the server, and the server will update the state, which will automatically get sent to the other player.
 
 Well, let's get started!
 
@@ -222,13 +222,13 @@ Then, add a key up and key down event handler that updates these variables depen
 
 ```javascript
 window.onkeydown = function (e) {
-  if (e.key = 'ArrowLeft') leftIsPressed = true
-  if (e.key = 'ArrowRight') rightIsPressed = true
+  if (e.key === 'ArrowLeft') leftIsPressed = true
+  if (e.key === 'ArrowRight') rightIsPressed = true
 }
 
 window.onkeyup = function (e) {
-  if (e.key = 'ArrowLeft') leftIsPressed = false
-  if (e.key = 'ArrowRight') rightIsPressed = false
+  if (e.key === 'ArrowLeft') leftIsPressed = false
+  if (e.key === 'ArrowRight') rightIsPressed = false
 }
 ```
 
@@ -238,7 +238,7 @@ Now we need to start a connection with the server before we are able to find or 
 
 ```javascript
 // Connect to the colyseus server on port 3000:
-const client = new Colyseus.Client(`ws://${window.location.hostname}:3000`)
+const client = new Colyseus.Client(`ws://${window.location.hostname}`)
 ```
 
 Then, we want to find or create a pong game. The Colyseus `joinOrCreate` function creates a new game room on the server (we will program the pong game room soon), or joins one that isn't full (with this game, each game room of course only holds 2 players). We also pass an object with a `name` property. This will be sent to the game room as well, where we will later save it so that the other player can see it.
@@ -248,7 +248,7 @@ let room // We'll store the room in this variable
 let isPlayer1 // Keep track of who's player 1 and 2
 client.joinOrCreate('pong', { name: userName || 'player'})
 .then(r => { // We successfully found or created a pong game
-  console.log("joined successfully", room)
+  console.log("joined successfully", r)
   room = r
   room.onMessage('youArePlayer1', m => { isPlayer1 = true }) // If the server tells us we're player 1, set isPlayer1 to true
 }).catch(e => { // Something went wrong
@@ -266,11 +266,13 @@ This is what `game.js` should look like so far:
 
 Most games have at least one or more *game loop*, that is, a chunk of code composed of an update and drawing function, or maybe a function to calculate physics, etc, that runs as frequently as possible while a game is running (this frequency is known as the frame rate and is often 60 times per second). We need one of these in this game to update the position of the pong ball and rackets every frame, and check to see if a player is holding down one of the arrow keys.
 
-Also, the HTML canvas is quite literally a "canvas" in the sense that you can't adjust the position of something (like a player) or remove something from the canvas (you can only add things) - instead, you have to clear the whole canvas and redraw every object on it, each with their new updated positions. This is the main thing the game loop will be responsible for.
+Also, the HTML canvas is quite literally a "canvas" in the sense that you can't adjust the position of something (like a player) or remove something from the canvas (you can only add things) - instead, you have to clear the whole canvas and redraw every object on it, each with their new updated positions. This is the main thing the game loop will be responsible for. 
 
 We will create a function called "loop", which we will pass to a built in browser function called `requestAnimationFrame`. requestAnimationFrame registers a function to be called as soon as possible before the browser repaints the page (which happens roughly 60 times per second on most displays), and because we can call it over and over again at the end of each loop it's the perfect place to call our game loop to make our game graphics appear as smooth as possible (however it won't eliminate lag).
 
 It's also important to keep track of when exactly the loop runs every time, so that we can calculate how many milliseconds it's been since the loop last ran. This is a concept known as "delta time" and it's extremely important for ensuring smooth, consistent gameplay regardless of how fast a player's computer is. For example, if a player moves 10 pixels every frame, then they would move faster on faster computers, but multiplying their speed by the delta time would make sure their speed is always consistent. Fortunately, `requestAnimationFrame` passes the number of milliseconds since the window was loaded into the loop function, which we can use to calculate the delta time.
+
+Each time the loop runs, we will check to see if the player is holding down the left or right arrow. For our purposes, we can simply assume that the user has been holding the left or right key down since the last loop ran, and we can use delta time (the time since the last time the loop was called) to calculate how many pixels the racket should move. So, if the player is holding one of the keys down when the loop runs, we can take deltatime and divide it by 2 to make racket movement a little slower (so, holding the left key down for one second = 1000ms/2 = 500 = the racket moves 500 pixels to the left), and we'll use `room.send` to send it to the server using Colyseus, where it will be handled by a method we'll write later. 
 
 We'll also add a function called `draw`, where we will eventually place all the code for drawing the rackets and pong ball to the screen. However, we don't want to draw anything unless the game has started, so we will only call the `draw` function from the loop if `room.state.gameStarted` is true (we will add room state later).
 
@@ -287,6 +289,10 @@ function loop(timestamp) {
   ctx.fillStyle = 'black'
   ctx.clearRect(0, 0, width, height)
   ctx.fillRect(0, 0, width, height)
+
+  // Check for user input and tell the Colyseus room to send it to the server
+  if (leftIsPressed) room.send('moveRacket', { move: -(delta / 2) }) // Negative sign so the racket moves left
+  if (rightIsPressed) room.send('moveRacket', { move: (delta / 2) })
 
   if (room && room.state.gameStarted) draw() // Draw everything if the game has started
 
@@ -307,7 +313,7 @@ Then you will see a black rectangle where the canvas is:
 
 If you don't see it, make sure you remembered to use `requestAnimationFrame` and set the `fillStyle` to black in the loop:
 
-![Game loop code](https://cloud-3iew3hfv1.vercel.app/0gameloopstep.png "Game loop code")
+![Game loop code](https://cloud-mbbb8hggb.vercel.app/0gameloopstep.png "Game loop code")
 
 ## Part 3 - Pong Room Server Code
 
@@ -320,6 +326,8 @@ Now, we have to start writing the `PongRoom.ts` file, that controls pong games f
 5. We have to add a listener callback to listen for messages from the client telling the server that the player moved their racket
 6. Finally, we have to import the `PongRoom` class into `index.ts`.
 
+It's a lot to do and it might get a little boring without any visible results. Unfortunately though, we have to write all this before we can continue writing the game itself!
+
 ### The `PongRoom` Class
 
 Before we can extend room or state schema classes, we have to import the base classes from Colyseus. We can do this with two import statements at the top of the file:
@@ -329,7 +337,7 @@ import { Room, Client } from "colyseus"
 import { Schema, type } from "@colyseus/schema"
 ```
 
-Now let's extend Colyseus's `Room` class to create a pong room. Each room has several methods we can override to run things when certain events happen. For example, the `onCreate` method is called when a new instance of a room (a new game) is created. Here, we will use it to set a few options: 
+Now let's extend Colyseus's `Room` class to create a pong room. Each Colyseus room has several methods we can override to run things when certain events happen. For example, the `onCreate` method is called when a new instance of a room (a new game) is created. Here, we will use it to set a few options: 
 
 ```typescript
 export default class PongRoom extends Room {
@@ -341,6 +349,8 @@ export default class PongRoom extends Room {
     this.maxClients = 2 // Only 2 players per Pong game!
     this.clock.start() // Start the game clock, a colyseus feature we'll use later
   }
+
+  // These are some empty methods we'll write later:
 
   update (delta: number) {
     
@@ -360,3 +370,212 @@ export default class PongRoom extends Room {
 }
 ```
 
+### State classes
+
+Whenever you have game data that needs to be synchronized across the players and the server, you should use Colyseus's _state_. Each room instance can have one state instance set, and that state class can be declared by extending the Colyseus `Schema` class. In each schema, we must define all the variables we want to use, as well as their types (you can also use schemas within schemas!), using a typescript feature called a "decorator", like this: `@type(either another schema, or something like 'int8' meaning 8 bit integer)` This is because Colyseus has to know what variables to send to the clients, and it also has to know what type of data they are so that it can binary encode them (using a library called msgpack) so they take up as little space as possible when being transfered over websockets. **Make sure you add both schema classes above the `PongRoom` class**.
+
+We'll start by writing a `Player` schema with some variables about each player:
+
+```typescript
+class Player extends Schema {
+  // This class keeps track of the racket position, score and name for a player
+  @type('number')
+  racketX: number = 250 // Initializing it at 250 will make sure it's centered
+
+  @type('int8')
+  score: number = 0
+
+  @type('boolean')
+  hasWon: boolean = false // Has the player won?
+
+  @type('string')
+  name: string // The player's user name
+
+  @type('string')
+  clientId: string // We'll use this to keep track of which player is which
+}
+```
+
+Next, we'll add a `PongState` schema to store schemas for each player as well as information about the pong (add this class between the other two):
+
+```typescript
+class PongState extends Schema {
+  @type('boolean')
+  gameStarted: boolean = false // Has the game started?
+
+  // We instantiate two player schema classes, one for each player
+  @type(Player)
+  player1: Player = new Player() 
+  @type(Player)
+  player2: Player = new Player()
+
+  // We also define a few variables to keep track of the Pong
+  @type('number')
+  pongX: number
+  @type('number')
+  pongY: number
+  @type('boolean')
+  pongDirection: boolean // 1 means it's flying towards player 2, 0 means it's flying toward player 1
+  @type('float32')
+  pongAngle: number // 0 means it's flying in a straight line, 1 is 45 degrees right, -1 is 45 degrees left
+}
+```
+
+### Handling When a Player Joins
+
+Now that we wrote some nice state schemas, let's set the name of each player when they join the room! From within a room class, you can always access the state variables from the `this.state` object! We also have to start the game when there are two players. We can do this in the `onJoin` method of the `PongRoom` class:
+
+```typescript
+onJoin (client: Client, options: any) {
+  // Determine whether this is player 2 or player 1 joining. If player 1 already exists then this is player 2.
+  const alreadyHasPlayer1 = !!this.state.player1.clientId // If the player1 clientId is already there, this must be player 2
+  const newPlayerState = alreadyHasPlayer1 ? this.state.player2 : this.state.player1
+
+  // Set the player's name and ID:
+
+  newPlayerState.name = options.name // options contain options passed from the player. Remember when we wrote the .joinOrCreate part of game.js? We passed the user's name to the server so that we could use it here!
+
+  newPlayerState.clientId = client.sessionId // We can also get the new player's session ID (assigned by Colyseus) and set it. We can then use this to identify them.
+
+  if (alreadyHasPlayer1) {
+    // We now have 2 players and can start the game!!!
+    this.clock.setTimeout(() => this.startGame(), 2000) // Wait 2 seconds before starting
+  } else {
+    client.send('youArePlayer1') // This is player 1, make sure to let them know!
+  }
+}
+```
+
+### Starting the Game
+
+Now, in the `startGame` method of the `PongRoom` class, all we have to do is reset the pong and randomize its direction, then set the `gameStarted` state variable to true, which will let the clients know the game is starting. Remember when we were writing `game.js` and we accessed `room.state.gameStarted`? Well, we're setting it here, and because it's defined in the schema colyseus makes sure it is transfered to each player as well.
+
+```javascript
+startGame() {
+  this.state.pongDirection = Math.random() <= 0.5 // Randomize the starting direction of the pong
+  // Reset the position and angle of pong
+  this.state.pongX = 300
+  this.state.pongY = 300 
+  this.state.pongAngle = 0
+  this.state.gameStarted = true // Start the game!!!
+}
+```
+
+### Handling when a user moves their racket
+
+Earlier, in the `game.js` loop, we sent a message to the server every time the player pressed the arrow keys to move their racket. We need to add a listener to the room now to actually update the racket state variable when it recieves that message. We sent the message from the client using `room.send` and we can recieve it in the room by using `this.onMessage` with a callback. **Add this to the bottom of the `onCreate` method** in `PongRoom`, before the closing bracket, so it's registered as soon as the game is created:
+
+```typescript
+this.onMessage('moveRacket', (client, data) => {
+  // First, we check the client's id to see whether they're player 1 or player 2
+  const player = (client.sessionId === this.state.player1.clientId) ? this.state.player1 : this.state.player2
+
+  player.racketX += data.move // Adjust the player's pong position with the data passed from the player (game.js)
+
+  player.racketX = Math.min(Math.max(player.racketX, 0), 500) // We clamp the paddle position so the player can't move it off the canvas
+})
+```
+
+### Adding `PongRoom` to the Server
+
+Finally, we've written enough of the Pong Room code!
+
+Let's take the exported room class, and import it into `index.ts` so that we can tell the Colyseus game server about it! Add this to the top of the `index.ts` file, right below all the other `import` statements:
+
+```javascript
+import PongRoom from "./PongRoom"
+```
+
+And, we can tell Colyseus about it with the `gameServer.define` method, **above the line** that says `app.use('/colyseus', monitor())`:
+
+```javascript
+gameServer.define('pong', PongRoom) // Add the pong room to the server
+```
+
+TODO add image
+
+## Part 4 - Drawing the Pong Ball, Rackets and Score
+
+Now that we have the state schemas all set up on the server, we can access the state from the client and use it to draw everything onto the canvas!
+
+### The Rackets
+
+We can easily draw the rackets by getting their positions from `room.state`, which is always up-to-date with the latest state on the server. Add functions to draw the two rectangles to the `draw` function in `game.js`:
+
+The player's own racket should always be at the bottom of the screen, so we can create new variables `topPlayer` and `bottomPlayer`, depending on whether this player is player 1 or player 2, to make sure we don't mix this up.
+
+```javascript
+function draw () {
+  // This player plays from the bottom of the canvas
+  const bottomPlayer = isPlayer1 ? room.state.player1 : room.state.player2
+  const topPlayer = isPlayer1 ? room.state.player2 : room.state.player1
+
+  // Draw the rackets
+  ctx.fillStyle = 'white' // set the color
+  // Draw the bottom racket with a width of 100 and height of 20
+  ctx.fillRect(bottomPlayer.racketX, height - 20, 100, 20)
+  // Draw opponent's top racket
+  ctx.fillRect(topPlayer.racketX, 0, 100, 20)
+}
+```
+
+### The Pong Ball
+
+Next, we should show the movement of the pong ball on the canvas. It doesn't actually move yet - simulating its movement is the next part - but we can still draw it with some more code at the end of the `draw` function.
+
+Again, the `state.pongY` actually represents how far away from player 1 the pong ball is, so that means that player 1 has to flip/invert pongY to get the correct coordinate (because canvas coordinates start at the top left, but the player's racket is at the bottom of the canvas)
+
+```javascript
+// Draw the pong ball
+ctx.fillStyle = 'limegreen'
+ctx.beginPath() // Start a new drawing path
+const pongY = isPlayer1 ? height - room.state.pongY : room.state.pongY // For player 1 we should flip the direction of the ball to get the correct relative coordinate
+ctx.arc(room.state.pongX, pongY, 10, 0, 2 * Math.PI) // Draw the ball with a radius of 20
+ctx.fill() // fill it in
+```
+
+### The Score
+
+The score also does not yet change, but we can still draw it as the third part in the `draw` function.
+
+```javascript
+// Draw the score
+ctx.fillStyle = 'white'
+ctx.font = '30px Arial'
+ctx.fillText(bottomPlayer.score, 15,  height - 45) // The bottom player's score
+ctx.fillText(topPlayer.score, 15, 45) // The top player's score
+```
+
+Your `draw` function should now look something like this:
+
+![the draw function code](https://cloud-850hguur0.vercel.app/0drawfunc.png "The draw function")
+
+Now, let's open the game in a new tab as we did earlier to see if everything is working! You'll just see a blank black square at first - that's because there's only one "player".  Earlier when we were writing `PongRoom`, we wrote the `onJoin` function so that it would only set `state.gameStarted` to true once there were two players. But, the draw function only runs if the game has started. So, you can trick the server into thinking there are two players and starting the game by opening the game in another tab so you have it open in two tabs at a time. Then, if you wait a few seconds for the game to start, you should suddenly see the `draw` function drawing everything to the canvas!
+
+![pong game with draw function](https://cloud-6o9ib5amw.vercel.app/2pong_draw.png "The pong game")
+
+Now, we've also added user input listeners that send updates to the server, that updates the state. So, you should be able to move the racket using the left and right arrow keys from one tab:
+
+![moving the racket from one tab](https://cloud-6o9ib5amw.vercel.app/1pong_racketp1.png "moving the racket from one tab")
+
+And then go to the second tab, and see the racket that you moved in the first tab!!!
+
+![and seeing it change the racket in the second tab](https://cloud-6o9ib5amw.vercel.app/0pong_racketp2.png "and seeing it change the racket in the second tab")
+
+Congratulations! This is all there is to the basics of multiplayer games with Colyseus!
+
+But, the ball doesn't actually move... In the next part, we will update the position of the ball at every frame!
+
+## Calculating Pong Ball Movement on the Server
+
+
+
+## Final Touches
+
+### Adding status text & graceful disconnects
+
+### Adding a short delay between rounds
+
+### Making it slightly more difficult
+
+## Conclusion
