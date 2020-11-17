@@ -17,7 +17,7 @@ _Preview of the Drum Pad we are going to be creating_
 
 ![Drum Pad Preview](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
 
-Apart from building the drum pad, you will be learning about different types of events, functions, styling, and more with Vanilla JavaScript, HTML, and CSS. This whole workshop is customizable according to you, And the best part is, it will take less than 20 minutes to complete! 
+Apart from building the drum pad, you will also be learning about different types of events, functions, styling, and more with Vanilla JavaScript, HTML, and CSS. This whole workshop is customizable according to you, And the best part is, it will take less than 20 minutes to complete! 
 
 [Link to demo](https://drum.emmanuel39hanks.repl.co)
 
@@ -30,14 +30,19 @@ You will see that there are already three files named HTML, CSS, and JavaScript.
 
 ## HTML Part:
 
-We are going to start writing HTML; going into our `<body>` tag, which is where we write code that will be shown to the user of the web page. Let's create a header with the `<h1>` tag. Then we will have three rows and four columns of pads and each pad will be a `<div>`. you can think of the `<div>` tag as a box or container.
+We are going to start writing HTML; going into our `<body>` tag, which is where we write code that will be shown to the user.
 
-We will do that with the following code:
+Inside the `<body>` tag, we will create a header that displays the text `DRUM PAD` and we will do that with the `<h1>` tag:
 
 ```html
 
 <!-- Header tag -->
 <h1>DRUM PAD</h1>
+```
+
+Then just under the `<h1>` tag we will have three rows and four columns of pads and each pad will be created with the `<div>` tag. you can think of the `<div>` tag as a box or container, and that's why we are using it here because each of our pads will have a boxy look.
+
+```html
 
 <!-- Parent div -->
 <div>
@@ -71,6 +76,8 @@ We will do that with the following code:
 
 ```
 
+To just explain what we did, We have a parent `<div>` tag that nests or holds all of our pads and then we just pass letters from A to L to easily identify each pad and like i mentioned above each pad will be given a box look and that's why we are using `div` tags.
+
 And if we run our code, it should look like this:
 
 ![Preview of HTML with no CSS](https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
@@ -89,17 +96,21 @@ Just before the end of your `<head>` tag, link your CSS file:
 
 Your CSS file should be linked, and we can start writing our CSS code.
 
-We will start by writing code for our document to change the colors, adding fonts, height, width, and more. We are also going to be using the font [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto). To use the font, we will import it using the line `@import 'https://fonts.googleapis.com/css?family=Roboto';`
+We will start by writing code for our document to change the colors, adding fonts, height, width, and more. We are also going to be using the font [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto). To use the font, we will import it using the line:
+
+```css
+/* The import rule allows you to @import a style sheet into another style sheet. The @import rule must be at the top of the document. */
+
+@import 'link';
+```
+
+We will then edit properties of our `<body>` tag to change the background color, height, width, display type, font family, and how things are aligned. And these properties will show effect on the web page.
 
 ```css
 
-/* The import rule allows you to @import a style sheet into another style sheet. The @import rule must be at the top of the document. */
-
-/* And we are importing the Roboto font from Google fonts. */
+/* Here we are importing the Roboto font from Google fonts. */
 
 @import  'https://fonts.googleapis.com/css?family=Roboto';
-
-html,
 
 body {
 
@@ -135,11 +146,11 @@ body {
 
 ```
 
-The major thing you will notice when we run our code this time is that our content has been aligned to the center.
+You will notice when we run our code this time is that our content has been aligned to the center, and that's because properties we change of our `<body>` tag and in other words, the tag that displays content to the user of a web page.
 
 ![Preview of HTML with CSS applied, to change the layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
 
-We want to style the header to give it spaces and then create three rows and four columns to correctly align the pads and give them a box or container look. We will do just that.
+We want to style the header's font size, color and letter spacing.
 
 ```css
 
@@ -158,6 +169,11 @@ h1 {
   letter-spacing: 6px; 
 
 }
+```
+
+Then create three rows and four columns to correctly align the pads and give them a box or container look. We will do just that.
+
+```css
 
 /* Here we are changing the properties of our container that holds all our pads changing the width, display, how we justify the content and a flex wrap. */
 
@@ -178,8 +194,13 @@ h1 {
   flex-wrap: wrap;
 
 }
+```
 
-/* Here we are changing value of our individual pads in the pad area that holds all our pads. */
+And then we will change properties of our individual pads and we will do that with a class name that all of our pads will have so that they can have styling.
+
+```css
+
+/* Here we are changing values of our individual pads in the pad area that holds all our pads. */
 
 .box {
 
@@ -227,14 +248,14 @@ h1 {
 }
 ```
 
-If you run your code, nothing has changed. That's because we are using classes to group our HTML elements. Let's go back to our `index.html` and to our `<div>` we will want to add the class name `box` to our nested `div` elements, and the parent header will be given the class name `pad`:
+If you run your code, nothing has changed. That's because we are using classes /Explain What classes are/. Let's go back to our `index.html` and to our `<div>` we will want to add the class name `box` to our nested `div` elements, and the parent header will be given the class name `pad`:
 
 ```html
 
-<!-- Here we give the parent div the class name pad -->
+<!-- Here we give the parent div the class name pad /What it does/-->
 <div  class="pad">
 
-<!-- Here we give the nested divs each the class name box -->
+<!-- Here we give the nested divs each the class name box that will add styling of each individual pad /What it does/ -->
 
   <div  class="box">A</div>
 
@@ -270,32 +291,10 @@ And when we rerun our code, it should look like this:
 
 We will write code to make hovering effects, inactive or active states, to make it stand out. and make the experience better. We will do that with the following code
 
+Adding a rounded border, we will go where we wrote code for our `.box` class and add radius to our pads and a color.
+
 ```css
 .box {
-
-  width: 100px;
-
-  height: 100px;
-
-  /* The margin CSS property sets the margin area on all four sides of an element. It is a shorthand for margin-top , margin-right , margin-bottom , and margin-left  */
-
-  margin: 10px  0;
-
-  box-shadow: 0  8px  6px  -6px  black;
-
-  background-color: #444;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  font-size: 20px;
-
-  color: rgba(255, 255, 255, 0.4);
-
-  user-select: none;
 
   /* We will add these two properties to the .box class to add a colored rounded solid border. */
 
@@ -308,11 +307,14 @@ We will write code to make hovering effects, inactive or active states, to make 
   border-radius:15px;
 
 }
-
+```
+We will then add code that adds hovering effects, inactive or active states to our pads.
+```css
 /* The :hover pseudo class in CSS selects elements when the mouse cursor is current over them. */
 
 /* Here we use the pseudo class on the individual pad to make the pad lighter when the cursor hovers on it. */
 
+/*/EXPLAIN again that we add pseudo classes on top of our .box class to add the .box /*/
 .box:hover {
 
   background-color: lighten(#444, 10%);
@@ -355,11 +357,11 @@ We are done with our styling and layout:
 
 And finally, we are done with our CSS. It now looks good, but when you click on the buttons, we have no sound. We need to write our JavaScript code that will get us sound.
 
-Navigate to the `index.html` file. Then, just before the end of your `<body>` tag, import your `script.js` file that will be used when our document loads:
+We will start by navigating to the `index.html` file to link our JavaScript file. Then, just before the end of your `<body>` tag, import your `script.js` file that will be used when our document loads:
 
 ```html
 
-<script  src="script.js"></script>
+<script src="script.js"></script>
 
 ```
 
@@ -371,25 +373,26 @@ We will start writing our JavaScript code in the `script.js` file.
 
   // A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
 
-  function  play(link) {
+function play(link) {
 
   // Creating an audio variabe and giving it the name audio. To the variable we create a new Audio object which will give us the functionality to sounds, and to the object we pass the link.
 
   // let is just another keyword that allows you to declare a variable in JavaScript.
 
-  let audio = new Audio(link);
+    let audio = new Audio(link);
 
-  // We load the sound from the link
+    // We load the sound from the link
 
-  audio.load();
+    audio.load();
 
-  // And we play it here
+    // And we play it here
 
-  audio.play();
+    audio.play();
 
 }
 ```
-What we did above is we created a function called `play()` and it receives a parameter which is `link`. This is the link to the sound hosted on AWS (Amazon Web Services). Don't worry, you won't need to host your files by yourself. You can use mine. We then create an audio object and pass `link` to the object. Now we can just load the audio with the `load()` function and play it with the `play()` function.
+
+To explain what we did above, we created a function called `play()` and it receives a parameter which is `link`. This is the link to the sound hosted on AWS (Amazon Web Services). Don't worry, you won't need to host your files by yourself. You can use mine. We then create an audio object and pass `link` to the object. Now we can just load the audio with the `load()` function and play it with the `play()` function.
 
 All we need to do now is add an on click event to each of our nested `divs` then we call the `play()` function and pass the link to the sound file as our parameter.
 
@@ -434,7 +437,7 @@ Try it out by clicking the pads and see the magic!
  
 ## Publishing
 
-Now that you have finished building it, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL! Don't forget to share it with me on Slack @emmanuel39hanks.
+Now that you have finished building, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL! Don't forget to share it with me on Slack @emmanuel39hanks.
 
 ## Resources
   
@@ -463,4 +466,4 @@ To finish, here are some amazing, more customized drum pad machines/beatmakers m
 - My favorite one is by Dev Ed, Making Music with JavaScript (https://www.youtube.com/watch?v=8T4SCksjrQ4).
 
   
-We are done with our workshop. Go ahead, customize it, and add more things to it and have fun. I hope you enjoyed this workshop, happy hacking!
+We are done with our workshop. Go ahead, customize it, and add more things to it and have fun. I hope you enjoyed this workshop, happy hacking
