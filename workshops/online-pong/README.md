@@ -566,16 +566,236 @@ Congratulations! This is all there is to the basics of multiplayer games with Co
 
 But, the ball doesn't actually move... In the next part, we will update the position of the ball at every frame!
 
-## Calculating Pong Ball Movement on the Server
+## Part 5 - Calculating Pong Ball Movement on the Server
 
+Open `PongRoom.ts` again and scroll down to the `update` function in the `PongRoom` class. You may remember we set this up earlier as a "simulation interval". It runs 60 frames per second on the server by default, and we'll use it to update the position of the Pong ball each frame.
 
+Here's how it will work:
 
-## Final Touches
+1. We keep track of the x position, y position (**where a greater y value means the ball is closer to player 2**), direction (1 means it's flying toward player 2, 0 means it's flying toward player 1) and angle (-1 means it's aiming 45 degrees left, 1 means it's aiming 45 degrees right, 0 means it's flying straight up or down) of the pong ball in the room state (we added this earlier).
+2. Each update, we move it (delta/3) y pixels in whichever direction it's travelling. If the direction is 1 (`true`), we move the ball **towards** player 2 by increasing the ball's Y position, and if it's 0 (`false`) we decrease the ball's Y position, moving it away from player 2.  (we'll keep delta/3 as a variable named `speedConstant` so that we can easily access or change it). Because we are changing the ball's position by (`delta / 3`) pixels each frame, that means it would move 1000 pixels across the canvas in 3 seconds, because delta (time) counts how many milliseconds (thousandths of a second) haved passed. We also add (the angle value * (delta/3)) to the ball's X position each frame to get a new x position for the ball. This means that if the angle value is 1, the ball will move sideways (along the X axis) the same amount as it will move vertically (along the Y axis) - aka 45 degrees.
+3. If we detect the ball has moved within the "goal" area of either player (within 20px of the end) by using an `if` statement to check the ball's Y position, we check to see if it collided with the racket by comparing the ball's X position with the racket's X position.
+4. If it **did not** collide, we increment the other player's score, and reset the ball's position and start a new round using the same `startGame` function we wrote earlier.
+5. If it **did** collide, we switch the direction of the ball, and calculate the new direction it's flying in using this formula: ((ball x position - center of racket x position) / "bounce constant (which will be 40)"). Basically, this formula will ensure that when the ball bounces on one side of the racket, it bounces off in that direction, at an angle proportional to the distance from the center of the racket. When the ball bounces off the center of the racket, it will fly in a straight line, as described by this drawing:
 
-### Adding status text & graceful disconnects
+![Basic pong physics](https://cloud-fnc0pkw30.vercel.app/0pongphysics.png "Basic pong physics")
+
+Note that you can adjust this formula if you want the ball to bounce differently. Setting the "bounce constant" variable to half the racket width (50) would cause a maximum bounce angle of 45 degrees, but we will decrease that to 40 to give a slighly larger possible bounce angle.
+6. If we detect the ball touching a side of the canvas using another `if` statement, we flip the angle (multiply it by `-1`) so it bounces back.
+7. If either player has more than 10 points, we'll set `hasWon` to true for that player and destroy/disconnect the room. We will use this variable in the next step to announce the winner.
+
+Here's the function:
+
+```typescript
+update (delta: number) {
+  if (!this.state.gameStarted) return // Don't update the ball's position if the game hasn't started!
+
+  const speedConstant = delta / 3 // Increasing the number 3 will make the ball move slower and vice versa.
+
+  // Update the ball's Y position:
+  if (this.state.pongDirection) this.state.pongY += speedConstant // Ball is moving TOWARD player 2, so we increase its y position
+  else this.state.pongY -= speedConstant // else, ball is moving away from player 2, so we decrease its Y position
+
+  // Update the ball's X position:
+  this.state.pongX += (speedConstant * this.state.pongAngle) // Change the x value depending on the angle.
+
+  if (this.state.pongY + 10 >= 580 || this.state.pongY - 10 <= 20) // If ball is touching goal zone on either side (+- 10 to account for radius)...
+  {
+    const isOnPlayer1Side = this.state.pongY - 10 <= 20 // Is it on player 1's side or player 2's?
+
+    const racketX = isOnPlayer1Side ? this.state.player1.racketX : this.state.player2.racketX // Get the racket position, depending on whos side it's on
+
+    if (this.state.pongX >= racketX && this.state.pongX <= racketX + 100 ) { // If the ball's x position matches the racket, that means it collided!
+      // Bounce the ball off the racket:
+      this.state.pongDirection = !this.state.pongDirection // Flip the direction the ball is moving
+      this.state.pongAngle = (this.state.pongX - (racketX + 50)) / 50 // Calculate the new angle for the racket, based on where the ball collided
+      this.state.pongY = isOnPlayer1Side ? 30 : 570 // Move the ball's Y position to the edge of the racket to make sure it doesn't get stuck in the racket
+    } else { // Ball did not collide with racket - SCORE!!!
+      if (isOnPlayer1Side) this.state.player2.score += 1 // If the ball's on played 1's side, player 2 scored
+      else this.state.player1.score +=1 // else, player 1 scored
+      
+      this.startGame() // We can just reuse the startGame function to start a new round
+    }
+  } else if (this.state.pongX >= 590 || this.state.pongX <= 10) { // If the ball is touching the left or right edge of the canvas...
+    this.state.pongAngle *= -1 // Flip the angle so the ball bounces back
+  }
+
+  if (this.state.player1.score >= 10 || this.state.player2.score >= 10) { // If one of the players has a winning score of 10...
+    if (this.state.player1.score >= 10) this.state.player1.hasWon = true // Player 1 won
+    else this.state.player2.hasWon = true // else player 2 won
+
+    // These are both Colyseus room methods:
+    this.broadcastPatch() // Broadcast the new state update to make sure each player knows who won before we disconnect them
+
+    this.disconnect() // Disconnect players from room and dispose of the room (it's no longer needed as the game is over)
+  }
+}
+```
+
+Close the two game tabs you already had open and open two new ones so you can test it out! If all went well, you should now have a fully functioning Pong game you can play with a friend! The ball will start moving in a random direction when the game starts, it will bounce off your rackets, and it will increment the other player's score when you miss it with your own racket!
+
+![moving pong ball](https://cloud-h1cmx5i1y.vercel.app/0pongmovement.gif "Moving pong ball")
+
+## Part 6 - Final Touches
+
+The game works as it is now, but there are still a few things we need to fix and add. First, the server doesn't actually do anything when one player leaves, which sometimes allows a third player to join, causing weird problems, such as the rackets and ball getting mixed up and moving in the wrong direction. So, we need to disconnect the room when a player leaves or gets disconnected so that this doesn't happen. Second, we need to add some status text to tell the user what's going on: when the server is waiting for another player, who they're playing against, when the other player disconnects, and when either player wins.
+
+Finally, we'll add two more features to the game: one, we'll add a short delay between rounds, so that each player has a chance to adjust their rackets before the next round begins. Second, we'll make it slightly more difficult by slowly increasing the speed of the ball over time.
+
+#### Adding graceful disconnects
+
+In the `PongRoom` class there's a `onLeave` function that get's called when a user leaves the pong room. In there, let's disconnect and dispose the room whenever a user leaves:
+
+```typescript
+onLeave (client: Client, consented: boolean) {
+  this.disconnect() // If a player leaves the game is unplayable, so destroy the room and disconnect the remaining player so that they can find a new game.
+}
+```
+
+### Adding status text
+
+We could add the status/announcement text to the canvas, but I prefer to add UI elements like status text as HTML around the canvas, as it's easier to program and style. So let's add a new `<p>` tag to `game.html`, right between the header and canvas. At the start of the game, it will say "Waiting for opponent":
+
+```html
+<body>
+  <h1>Pong</h1>
+  <p id='game-status-text'>Waiting for opponent...</p>
+  <canvas id='game-canvas' width='600' height='600'></canvas>
+
+  <script src='/game.js'></script>
+</body>
+```
+
+Now, let's create a reference to this element at the top of `game.js`:
+
+```javascript
+const gameStatusText = document.getElementById('game-status-text')
+```
+
+Now, we need to update this text when the server starts the game. We can do this using the Colyseus `state.listen` function, which calls a callback whenever a state variable (such as `gameStarted` changes. Let's add the game start listener to the bottom of the `.then()` callback, after the line that says `room.onMessage('youArePlayer1',...)` near the top of the file. It will change the status text to tell the user the name of the person they're playing against:
+
+```javascript
+room.state.listen('gameStarted', (currentValue, oldValue) => {
+  // If the game has started and it wasn't started previously, update the status text
+  if (currentValue && !oldValue) gameStatusText.innerText = `${room.state.player1.name} vs ${room.state.player2.name}`
+})
+```
+
+Then, we can add another listener in the same place (right below the gameStarted listener) that listens for the server to disconnect using the Colyseus `room.onLeave` function (which could happen either on accident, or because the other player left, or because the game is over) and updates the status text to tell the user what happened:
+
+```javascript
+room.onLeave((code) => {
+  gameStatusText.innerText = 'Game Over. ' // We were disconnected from the game (either intentionally or because of an error), let the player know it's game over.
+  // Let the user know if either player won:
+  if (room.state.player1.hasWon) gameStatusText.innerText +=  ` ${room.state.player1.name} won!!!` // If player 1 won, add their name
+  else if (room.state.player2.hasWon) gameStatusText.innerText += ` ${room.state.player2.name} won!!!` // else if player 2 won, add theirs
+  else gameStatusText.innerText += ' A player disconnected.' // If neither player won, that can only one of the players disconnected before the game was finished.
+  gameStatusText.innerText += ' Reload the page to find a new game.' // Tell the player how they can find a new game.
+})
+```
+
+Now, if you open two new tabs and start playing, you should see the status text appear above the canvas:
+
+![pong status text element](https://cloud-1bp1dymvt.vercel.app/0winningtext.png "Pong status text")
 
 ### Adding a short delay between rounds
 
+To add a short delay between rounds, let's add a new property to the `PongRoom` class (right at the top before any methods) called `roundIsRunning` that will keep track of whether or not a round is currentluy playing:
+
+```typescript
+export default class PongRoom extends Room {
+  roundIsRunning: boolean
+```
+
+Then, somewhere in the `startGame` function we can set it to true:
+
+```typescript
+this.roundIsRunning = true
+```
+
+And in the `update` function, we can replace the line that starts a new round (`this.startGame()`) with this, which will set `roundIsRunning` to false and wait one second before starting the next round:
+
+```typescript
+this.roundIsRunning = false
+this.clock.setTimeout(() => this.startGame(), 1000) // Wait 1 second before starting next round
+```
+
+And finally, we don't want the update function to run if a round isn't currently playing, so we can change the first line in the `update` function to:
+
+```typescript
+if (!this.state.gameStarted || !this.roundIsRunning) return // Don't update if the game or round hasn't started
+```
+
 ### Making it slightly more difficult
 
-## Conclusion
+There are many ways once could improve this game by making it look better, perform better with less lag, or making it more difficult. Here, we will add one such addition to demonstrate how you can add new features. 
+
+In most pong games, the ball speed starts out slow and gradually increases, then resets when a match ends.
+
+First, we need to add a new state variable to keep track of when each match starts. let's add that to the top of the `PongState` class in `PongRoom.ts`:
+
+```typescript
+@type('number')
+roundStartedAt: number
+```
+
+Then, let's set that number every time a new game starts somewhere in `startGame`:
+
+```typescript
+this.state.roundStartedAt = this.clock.elapsedTime // Set the round started time using the timestamp from the colyseus clock
+```
+
+Now, let's double the speed of the pong every thirty seconds by replacing the `const speedConstant =` line in the `update` method. To do that, we'll subtract the elapsed time (ms) at the start of the round from the current elapsed time (ms), and divide it by 30,000 to see how many times 30 seconds have passed (we'll also add 1 so that it starts at 1 rather than 0) We'll multiply this by our speed constant in the `update` function, like this:
+
+```typescript
+const timeMsSinceRoundStart = this.clock.elapsedTime - this.state.roundStartedAt
+const speedConstant = (delta / 3) * (timeMsSinceRoundStart / 30000 + 1) // Calculate the speed constant for the ball. It should gradually increase over time.
+```
+
+With the last two changes, our Pong game is finally complete! 
+
+<video controls>
+  <source src="https://cloud-8kwmmedl3.vercel.app/0pong.webm" type="video/webm">
+</video>
+
+## Part 7 - Conclusion
+
+Now, you can go ahead and share the link to your game with your friends, and have fun playing and hacking it!
+
+If you got stuck and need to check your code, you can [view any of my  files on this GitHub repo](https://github.com/scitronboy/multiplayer-pong/tree/workshop/replit)
+
+#### Examples of how people have customized it:
+
++ a
++ b
++ c
+
+You could also try...
+
++ a
++ b
++ c
+
+If you're part of [the Hack Club slack](https://hackclub.com/slack/), make sure to share your game in the [#scrapbook](https://app.slack.com/client/T0266FRGM/C01504DCLVD) channel!
+
+**This is the end of this workshop.** I will share a few final notes below, but you don't have to read them if you don't want to!
+
+### Final notes
+
+#### Using the Colyseus Monitor
+
+You may recall when we were first setting up our server we added an express route that said `app.use('/colyseus', monitor())`. This added a built-in Colyseus monitor page that we can access by navigating to `your-game-url/colyseus`. It has details about each game room, the state, and the players connected to the room:
+
+![the colyseus monitor](https://cloud-4vpsksvmq.vercel.app/0colyseusmon.png "The colyseus monitor")
+
+There isn't really much point to using this for a simple Pong game, but as you continue to develop multiplayer games with Colyseus you might find it very useful for debugging your games (although if you publish your games make sure to [secure the monitor so only you can access it](https://docs.colyseus.io/tools/monitor/#restrict-access-to-the-panel-using-a-password)).
+
+#### Learning more
+
+If you would like to continue using the Colyseus framework, you will [find the docs useful](https://docs.colyseus.io/). But remember, if you're serious about delving into the topic, you should also try implementing networking on your own using WebSockets as a learning experience!
+
+Also, multiplayer game networking, across the web and other gaming platforms like console and PC is very complex and fascinating. As you build more complex games, you might have to worry about things like cheaters and network latency. I personally think these are interesting topics and if you're interested in learning more about some of the techniques used by big game studios to minimize these problems, I recommend starting with [this series on server-client architecture](https://www.gabrielgambetta.com/client-server-game-architecture.html).
+
+As for the game itself, if you want to continue making more complex browser games in the future there are helpful frameworks such as [Phaser.js](https://phaser.io/) that provide tools such as physics and animation engines, which you might want to look into.
+
+Anyway, I hope I haven't overwhelmed you with all this, but rather given you a good introduction to the many possibilities and factors involved in multiplayer browser game development! Thanks for reading!
