@@ -32,7 +32,7 @@ You will see that there are already three files named HTML, CSS, and JavaScript.
 
 We are going to start writing HTML; going into our `<body>` tag, which is where we write code that will be shown to the user.
 
-Inside the `<body>` tag, we will create a header that displays the text `DRUM PAD` and we will do that with the `<h1>` tag:
+Inside the `<body>` tag, we will create a big header that displays the text `DRUM PAD` and we will do that with the `<h1>` tag:
 
 ```html
 
@@ -76,7 +76,7 @@ Then just under the `<h1>` tag we will have three rows and four columns of pads 
 
 ```
 
-To just explain what we did, We have a parent `<div>` tag that nests or holds all of our pads and then we just pass letters from A to L to easily identify each pad and like i mentioned above each pad will be given a box look and that's why we are using `div` tags.
+To quickly break this down. We have a parent `<div>` tag that nests or holds all of our pads and then we just pass letters from A to L to easily identify each pad and like i mentioned above each pad will be given a box look and that's why we are using `div` tags.
 
 And if we run our code, it should look like this:
 
@@ -104,7 +104,7 @@ We will start by writing code for our document to change the colors, adding font
 @import 'link';
 ```
 
-We will then edit properties of our `<body>` tag to change the background color, height, width, display type, font family, and how things are aligned. And these properties will show effect on the web page.
+We will then edit properties of our `<body>` tag to change the background color, height, width, display type, font family, and the alignment of our content.
 
 ```css
 
@@ -146,7 +146,7 @@ body {
 
 ```
 
-You will notice when we run our code this time is that our content has been aligned to the center, and that's because properties we change of our `<body>` tag and in other words, the tag that displays content to the user of a web page.
+You will notice when we run our code is that our content has been aligned to the center, and that's because we changed properties of our `<body>` tag, and the `<body>` tag renders content to our web page.
 
 ![Preview of HTML with CSS applied, to change the layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
 
@@ -196,7 +196,7 @@ Then create three rows and four columns to correctly align the pads and give the
 }
 ```
 
-And then we will change properties of our individual pads and we will do that with a class name that all of our pads will have so that they can have styling.
+We will change properties of each of our pads and we will do that with, class name, we will use the class name `.box` that all of our pads will have so that they can have unique styling.
 
 ```css
 
@@ -248,14 +248,16 @@ And then we will change properties of our individual pads and we will do that wi
 }
 ```
 
-If you run your code, nothing has changed. That's because we are using classes /Explain What classes are/. Let's go back to our `index.html` and to our `<div>` we will want to add the class name `box` to our nested `div` elements, and the parent header will be given the class name `pad`:
+If you run your code, nothing has changed. That's because we are using classes and the HTML class attribute specifies one or more class names for an element. Classes are used by CSS and JavaScript to select and access specific elements. The class attribute can be used on any HTML element.
+
+Let's go back to our `index.html`, to our parent `<div>` we will give it the class name `pad` and to our nested `<div>` tags We want to a the class name `box` which will add the styles that we wrote in our CSS.
 
 ```html
 
-<!-- Here we give the parent div the class name pad /What it does/-->
+<!-- Here we give the parent div the class name pad -->
 <div  class="pad">
 
-<!-- Here we give the nested divs each the class name box that will add styling of each individual pad /What it does/ -->
+<!-- Here we give the nested divs each the class name box that will add styling of each individual pad -->
 
   <div  class="box">A</div>
 
@@ -289,9 +291,9 @@ And when we rerun our code, it should look like this:
 
 ![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
 
-We will write code to make hovering effects, inactive or active states, to make it stand out. and make the experience better. We will do that with the following code
+We will write code to add hovering effects, inactive or active states, to make it stand out and make the experience better.
 
-Adding a rounded border, we will go where we wrote code for our `.box` class and add radius to our pads and a color.
+We will go where we wrote styling for our `.box` class and we will add styling that will give our pads a rounded border with a pinkish color.
 
 ```css
 .box {
@@ -308,24 +310,27 @@ Adding a rounded border, we will go where we wrote code for our `.box` class and
 
 }
 ```
+
 We will then add code that adds hovering effects, inactive or active states to our pads.
+
 ```css
 /* The :hover pseudo class in CSS selects elements when the mouse cursor is current over them. */
 
-/* Here we use the pseudo class on the individual pad to make the pad lighter when the cursor hovers on it. */
+/* Here we will add the :hover pseudo class on the .box class styling to make the pad lighter when the cursor hovers on it. */
 
-/*/EXPLAIN again that we add pseudo classes on top of our .box class to add the .box /*/
 .box:hover {
 
   background-color: lighten(#444, 10%);
 
-  /* Here we change the cursor to a pointer when we hover on the pads. */
+  /* Changing the cursor to a pointer when we hover on the pads. */
 
   cursor: pointer;
 
 }
 
-/* :active is a CSS pseudo-class. It specifies and selects an element based on a state—the active state—and is used to apply styles to an element when it matches that state. The :active pseudo-class is a dynamic class which applies when an element is being activated by the user. */
+/* :active is a CSS pseudo-class that specifies and selects an element based on a state—the active state—and is used to apply styles to an element when it matches that state. The :active pseudo-class is a dynamic class which applies when an element is being activated by the user. */
+
+/* And we will use the :active pseudo-class on the .box class and add styling for when the pads are in an active state. */
 
 .box:active {
 
