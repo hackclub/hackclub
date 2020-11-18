@@ -157,6 +157,7 @@ Another thing that is very important when making a world is the lightning. What 
 There are 3 types of lights that we can use, `ambient`, `directional` and `point`. Check these 3 examples:
 
 <details><summary>Ambient lights</summary>
+
 Ambient lights affects all the primitives in the scene, if you chose a dark color then all the elements would look darker, same thing for lighter colors. We can use the `intensity` attribute to change the way this light affects the scene.
 
 ```html
@@ -168,20 +169,27 @@ This is how ambient lights affect the scene and its components:
 
 </details>
 <details><summary>Directional lights</summary>
+
 Directional lights are like a light source that is infinitely far away, but shining from a specific direction, like the sun. We must specify where the light is pointing to, we do that using the attribute `target`, which points to the position of the child object.
+
 ```html
 <a-light type="directional" target="#childbox" color="#007DF9" intensity="0.5" position="-0.5 1 1">
     <a-box id="childbox"></a-box>
 </a-light>
 ```
+
 You can see here that this type of light acts just like the sun, you can also see how it only affects one side of the objects and the other is completely black.
 ![Directional light](https://cloud-g8qe1cxw5.vercel.app/0screen_recording_2020-11-17_at_5.26.33_pm__1_.gif)
+
 </details>
 <details><summary>Point lights</summary>
-Point lights are like light bulbs; we can position them around the scene, the closer the light bulb gets to an object, the greater the object is lit. 
+
+Point lights are like light bulbs; we can position them around the scene, the closer the light bulb gets to an object, the greater the object is lit.
+
 ```html
 <a-light type="point" color="#43484d" position="-0.5 1 1"></a-light>
 ```
+
 Here's how point lights interact with the scene and the objects.
 ![point lights](https://cloud-2hboh6agi.vercel.app/0screen_recording_2020-11-17_at_5.33.22_pm.gif)
 
@@ -201,12 +209,14 @@ Let's break this down:
 4. We can use the `scale` attribute to make the text bigger or smaller, the default size is `1 1 1`.
 
 This is what the code above renders:
+
 ![Text rendered](https://cloud-oql3ioxyn.vercel.app/0screen_recording_2020-11-17_at_5.41.43_pm.gif)
 
 And that's all for today's workshop :)
 
 ### Hack it 
 Yay! you made it to the end of this workshop.
+
 ![Congrats GIF](https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
 
 Make your own VR World and share it in the [Hack Club Slack](https://hackclub.slack.com/), I would love to see what you can create using what you've learned in this workshop!
