@@ -70,7 +70,7 @@ Let's get to the juicy stuff, fetching all that data!
 
 To do this we will use the `getServerSideProps` feature of Next.js. This means whenever a person visits the site, the server running the site will make a data request (which we'll put in a `getServerSideProps` function) and then render the site in preparation to be served to the user.
 
-Let's add a basic `getServerSideProps()` function at the bottom
+Let's add a basic `getServerSideProps()` function at the bottom of `pages/index.js`:
 
 ```javascript
 export async function getServerSideProps() {
