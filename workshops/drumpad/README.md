@@ -96,17 +96,13 @@ Just before the end of your `<head>` tag, link your CSS file:
 
 Your CSS file should be linked, and we can start writing our CSS code.
 
-We will start by writing code for our document to change the colors, adding fonts, height, width, and more. We are also going to be using the font [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto). To use the font, we will import it using the line:
+We will start by writing code for our document to change the colors, adding fonts, height, width, and more. We are also going to be using the font [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto).
+
+So, we will import the font first and then edit the properties of our `<body>` tag to change the background color, height, width, display type, font family, and alignment of our content.
 
 ```css
+
 /* The import rule allows you to @import a style sheet into another style sheet. The @import rule must be at the top of the document. */
-
-@import 'link';
-```
-
-We will then edit the properties of our `<body>` tag to change the background color, height, width, display type, font family, and alignment of our content.
-
-```css
 
 /* Here, we are importing the Roboto font from Google fonts. */
 
