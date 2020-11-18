@@ -22,6 +22,7 @@ To get started, we'll need to link A-frame with our HTML document, there are mul
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 ```
 Now, we can start creating our virtual world.
+
 ![Excited GIF](https://cloud-22dzjiq1j.vercel.app/0tenor.gif)
 
 ### A-Scene
@@ -80,6 +81,7 @@ Breaking down:
 - We had to rotate the plane component because as default it is not parallel to the ground.
 
 After clicking on run, we'll see a beautiful ground rendered.
+
 ![Ground rendered](https://cloud-dn56xww0m.vercel.app/0screen_recording_2020-11-16_at_6.36.26_pm.gif)
 
 But this looks kinda boring, so let's fix this by adding 3d models. There are 2 ways to do this:
@@ -95,6 +97,7 @@ Let's break this down:
 - We needed to move the cube within the y & z coordinates in order to be able to see the cube. The camera's position is set to `0 0 0` by default and also the box 's position is set to `0 0 0` as default, meaning that we can't see the cube unless we move the camera or the cube.
 
 *Note: A-frame uses a right handed coordinate system and uses as distance unit the meter (m)*
+
 ![Box primitive](https://cloud-jab6b30a0.vercel.app/0box.gif)
 
 Now, we can use the box we just created as a parent and then create a bunch of child primitives.
@@ -157,7 +160,6 @@ Another thing that is very important when making a world is the lightning. What 
 There are 3 types of lights that we can use, `ambient`, `directional` and `point`. Check these 3 examples:
 
 <details><summary>Ambient lights</summary>
-
 Ambient lights affects all the primitives in the scene, if you chose a dark color then all the elements would look darker, same thing for lighter colors. We can use the `intensity` attribute to change the way this light affects the scene.
 
 ```html
@@ -165,11 +167,11 @@ Ambient lights affects all the primitives in the scene, if you chose a dark colo
 ```
 
 This is how ambient lights affect the scene and its components:
+
 ![Ambient light](https://cloud-821gtbu0s.vercel.app/0screen_recording_2020-11-17_at_5.18.31_pm.gif)
 
 </details>
 <details><summary>Directional lights</summary>
-
 Directional lights are like a light source that is infinitely far away, but shining from a specific direction, like the sun. We must specify where the light is pointing to, we do that using the attribute `target`, which points to the position of the child object.
 
 ```html
@@ -179,11 +181,11 @@ Directional lights are like a light source that is infinitely far away, but shin
 ```
 
 You can see here that this type of light acts just like the sun, you can also see how it only affects one side of the objects and the other is completely black.
+
 ![Directional light](https://cloud-g8qe1cxw5.vercel.app/0screen_recording_2020-11-17_at_5.26.33_pm__1_.gif)
 
 </details>
 <details><summary>Point lights</summary>
-
 Point lights are like light bulbs; we can position them around the scene, the closer the light bulb gets to an object, the greater the object is lit.
 
 ```html
