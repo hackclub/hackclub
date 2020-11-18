@@ -64,6 +64,7 @@ Let's break this down:
 - Then we replaced the `color` attribute with `src` and pointed it to the id of the `img` component.
 
 This will render a beautiful textured sky.
+
 ![Sky texture](https://cloud-dytwphipl.vercel.app/0screen_recording_2020-11-16_at_6.19.29_pm.gif)
 
 Uploading images to Repl.it is very simple, just go to the navigation bar and click on **Upload file**:
@@ -127,7 +128,9 @@ So, all we have to do to import a 3D model is to create an [asset item](https://
 
 <a-entity  gltf-model="#model"></a-entity>
 ```
+
 Here's what we get:
+
 ![Importing 3D Model](https://cloud-nay6jhbpz.vercel.app/0screen_recording_2020-11-17_at_3.22.37_pm.gif)
 
 There are thousands of websites where you can get the 3D models from, here are some of them:
@@ -155,11 +158,14 @@ There are 3 types of lights that we can use, `ambient`, `directional` and `point
 
 <details><summary>Ambient lights</summary>
 Ambient lights affects all the primitives in the scene, if you chose a dark color then all the elements would look darker, same thing for lighter colors. We can use the `intensity` attribute to change the way this light affects the scene.
+
 ```html
 <a-light type="ambient" color="#43484d" intensity="0.5"></a-light>
 ```
+
 This is how ambient lights affect the scene and its components:
 ![Ambient light](https://cloud-821gtbu0s.vercel.app/0screen_recording_2020-11-17_at_5.18.31_pm.gif)
+
 </details>
 <details><summary>Directional lights</summary>
 Directional lights are like a light source that is infinitely far away, but shining from a specific direction, like the sun. We must specify where the light is pointing to, we do that using the attribute `target`, which points to the position of the child object.
