@@ -82,7 +82,7 @@ export async function getServerSideProps() {
 
 This isn't doing anything at the moment, but that will change soon! For now, just take note that we return an JSON object called `props` that we can use in our page.
 
-Next up, let's try out fetching data! Using the following snippet we're going to fetch all of the users on Scrapbook, convert the result into JSON and then log it to the console.
+Next up, let's try out fetching data! Using the following snippet we're going to fetch all of the users on Scrapbook, convert the result into JSON and then log it to the console. Make sure you are editing your function, not creating a new one.
 
 ```javascript
 export async function getServerSideProps() {
