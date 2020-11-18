@@ -6,7 +6,7 @@ author: '@sampoder'
 
 # Fetch a Hack Clubber with Next.js
 
-Hack Club is a global community full of amazing people, but how can we meet them? ~Like everything the solution is coding!~ We're going to be building a site that introduces you to a random Hack Clubber each time you visit the site. We're going to be [Next.js](https://nextjs.org) and the [Hack Club Scrapbook API](https://scrapbook.hackclub.com/about/).
+Hack Club is a global community full of amazing people, but how can we meet them? ~Like everything the solution is coding!~ We're going to be building a site that introduces you to a random Hack Clubber each time you visit the site. We're going to be using [Next.js](https://nextjs.org) and the [Hack Club Scrapbook API](https://scrapbook.hackclub.com/about/).
 
 ### Our data source
 
@@ -50,7 +50,8 @@ Click `Run ➤` and you'll see what our interface is going to look like. Right n
 
 <img src="https://cloud-486h0t7p5.vercel.app/screenshot_2020-09-24_at_10.49.25_pm.png" width="450" alt="Our starter project">
 
-Next, you're going to want to open `pages/index.js`, this is where we're going to be writing all of our code for the project
+Next, you're going to want to open `pages/index.js`, this is where we're going to be writing all of our code for the project.
+
 Take a look at the code, the basic explanation is:
 
 * We import a few things at the top. We have `next/head` which allows us to add metadata to our head. We import our CSS from `../styles/Home.module.css` to style the web app. We import `isomorphic-unfetch`, which is a utility that helps us fetch data from web APIs.
@@ -61,7 +62,7 @@ Take a look at the code, the basic explanation is:
   
   * To style elments we add a class by adding a code snippet like `className={styles.card}` to the element.
   
-> Sidenote: I'd like to give credit to everyone who contributed to `create-next-app` as the starter code that your using was based on their project. Thank you for their tireless efforts.
+> Sidenote: I'd like to give credit to everyone who contributed to `create-next-app` as the starter code that you're using was based on their project. Thank you for your tireless efforts.
 
 ### Fetching that data
 
@@ -231,7 +232,7 @@ users = users.filter(u => u.updatesCount != 0)
 
 Try reloading, we shouldn't get any more inactive people and bots!
 
-Our site is basically there! I hope your feeling proud because now it's time to take credit for the site :D
+Our site is basically there! I hope you're feeling proud because now it's time to take credit for the site :D
 
 If you scroll down you'll find `@yourname` replace that with your name!
 
