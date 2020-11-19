@@ -263,6 +263,7 @@ Finally, we are done with the CSS part of our workshop.
 
 ### What we did so far:
 1- We built the structure of the password generator tool and webpage.
+
 2-	We customized it to make it look more attractive.
 
 Now with JavaScript, we will add functionality to our tool and will set up a password to the website.
