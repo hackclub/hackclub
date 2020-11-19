@@ -17,7 +17,7 @@ _Preview of the Drum Pad we are going to be creating_
 
 ![Drum Pad Preview](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
 
-Apart from building the drum pad, you will also be learning about different types of events, functions, styling, and more with Vanilla JavaScript, HTML, and CSS. This whole workshop is customizable according to you, And the best part is, it will take less than 20 minutes to complete! 
+Apart from building the drum pad, you will also be learning about different types of events, functions, styling, and more with Vanilla JavaScript, HTML, and CSS. This whole workshop is customizable according to you, and the best part is, it will take less than 20 minutes to complete! 
 
 [Link to demo](https://drum.emmanuel39hanks.repl.co)
 
