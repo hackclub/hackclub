@@ -10,9 +10,15 @@ In this workshop, you will build a Hash code generator using 12 lines of code.
 
 *what?? 12 lines!!*
 
-Hashing is the process of converting a given key to another value. A hash function is used to generate the new value according to a mathematical algorithm.
+![shocking gif](https://cloud-2dqj5d4ln.vercel.app/0giphy.gif)
 
-You will make something like this 👇
+Hashes are the products of cryptographic algorithms designed to produce a string of characters. Often these strings have a fixed length, regardless of the size of the input data. 
+
+![hash flow](https://cloud-r17l9ihjv.vercel.app/0hash-flow.png)
+
+It is very hard to reverse a hash function and it protects against an attacker who only has a hash value and is trying to find the input.
+
+It looks like this 👇
 
 ![final demo](https://cloud-apjvaajlp.vercel.app/0hasher.gif)
 
@@ -169,9 +175,8 @@ Now, how you can expand it? Try adding some other features to it with the help o
 
 Here are some examples 👇
 
-- create an`md5` hash generator.
-- create a `sha256` hash generator.
-- create an app using ciphers.
+- create an `md5`, `sha256` hash generator.
+- create an app that verifies the hash and text.
 - use [chalk](https://www.npmjs.com/package/chalk) & [boxen](https://www.npmjs.com/package/boxen) to beautify the app.
 - create an app that generates multiple hashes at once.
 
