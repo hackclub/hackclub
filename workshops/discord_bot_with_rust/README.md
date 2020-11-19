@@ -10,13 +10,7 @@ Discord bots are cool, right? Haven't you ever wanted to make your own?
 
 Well, today we're going to do exactly that, but this time we're using Rust! We're going to build a Discord bot that allows you to setup polls, and updates counts in real-time!
 
-## Why Rust?!?!?!??!!?
-
-> Isn't rust a super hard language or something? I heard you're always fighting with this "borrow checker" thing...
-
-Fear not, Rust is really easy! You won't be fighting with the borrow checker at all, in fact it'll be helping you :)
-
-However for this tutorial, I do recommend a basic understanding of low-level concepts such as memory management, but it's not required.
+For this tutorial, I do recommend an intermediate understanding of low-level concepts such as memory management, and some experience with Rust as well.
 
 ## Getting started
 
@@ -35,6 +29,24 @@ Right now, our Rust program isn't a Cargo project. That means it won't be able t
 Let's fix that by running `cargo init --name polling-bot` in the terminal. You can replace `polling-bot` with whatever you want your program to be named. This should create two new files on the side: `.gitignore` and `Cargo.toml`, which we'll be using to add the Serenity library:
 
 ![New files created by cargo init](https://cloud-bxfulgo22.vercel.app/0image.png)
+
+Next, create a new file called `real_main.rs` and put this code in it:
+```rust
+fn main() {
+    // todo
+}
+```
+
+Replace the contents of `main.rs` with this:
+```rust
+fn main() { std::process::Command::new("cargo").arg("run").status().unwrap(); }
+```
+
+This is kind of a hack but it's necessary to make sure that the environment variables are passed through correctly. You'll be doing all your coding in `real_main.rs`.
+
+One last thing: Update the path to the source file in `Cargo.toml`, changing `main.rs` to `real_main.rs`. Your Cargo.toml should look like this:
+
+![Cargo.toml after fixing source filename](https://cloud-fvk4e7lkf.vercel.app/0image.png)
 
 ### What is Serenity?
 
@@ -80,7 +92,7 @@ Your `Cargo.toml` should now look like this:
 
 Now, let's add a basic Discord bot template. At this point, you should have invited your bot to a server for testing.
 
-Delete the contents of `main.rs` and replace it with this:
+Delete the contents of `real_main.rs` and replace it with this:
 ```rust
 use serenity::async_trait;
 use serenity::framework::standard::{
@@ -132,3 +144,24 @@ async fn main() {
     }
 }
 ```
+
+This is just a super simple template that has a `~ping` command which makes the bot respond with `Pong!`.
+
+<details>
+<summary>Technical details</summary>
+
+Here we're setting up a pretty basic Serenity client. We're using Serenity's built in command framework. We add a new group called `General` and a command called `ping`, defined by the function. It just takes the current channel's ID and sends "Pong!" in that channel.
+
+We also have an event handler `Handler` which we override the `ready` event for, to print to the console that we are ready.
+
+Serenity is an `async` framework which means that everything uses `async fn` and futures. You can read more about futures [here](https://tokio.rs/tokio/tutorial/hello-tokio#breaking-it-down). This is also why we have the `tokio` dependency, which makes our `main` function into an `async fn` (by default it is not.) so that we can start the bot and use `.await`.
+
+Lastly, we retrieve the Discord token from the environment variable to keep our token private (Repl.it keeps the .env file private by default!)
+</details>
+
+Run the bot to make sure that everything works. It may take a while to build at first but subsequent builds will be faster.
+
+Now it's time to actually add polling to the bot!
+
+## Creating a `poll` command
+
