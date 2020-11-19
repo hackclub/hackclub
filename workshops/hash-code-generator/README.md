@@ -6,7 +6,9 @@ img: 'https://cloud-3ylo4n79q.vercel.app/03.1.png'
 ---
 
 # Hash code generator 
-In this workshop, you will build a Hash code generator app using Nodejs.
+In this workshop, you will build a Hash code generator using 12 lines of code.
+
+*what?? 12 lines!!*
 
 Hashing is the process of converting a given key to another value. A hash function is used to generate the new value according to a mathematical algorithm.
 
