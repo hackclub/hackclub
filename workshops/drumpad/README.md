@@ -192,7 +192,7 @@ Then create three rows and four columns to correctly align the pads and give the
 }
 ```
 
-We will change each of our pad's properties, and we will do that with the class name `.box`.
+We will change each of our pad's properties, and we will do that with the class name `.box`, to give them unique styling.
 
 ```css
 
