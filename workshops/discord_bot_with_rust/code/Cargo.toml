@@ -1,0 +1,11 @@
+[package]
+name = "polling_bot"
+version = "0.1.0"
+authors = ["anirudhb <anirudhb@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serenity = "0.9.1"
+tokio = { version = "^0.2.23", features = ["macros"] }
