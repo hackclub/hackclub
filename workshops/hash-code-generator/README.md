@@ -6,15 +6,15 @@ img: 'https://cloud-3ylo4n79q.vercel.app/03.1.png'
 ---
 
 # Hash code generator 
-In this workshop you will build a Hash code generator app using Nodejs.
+In this workshop, you will build a Hash code generator app using Nodejs.
 
-Hashing is the process of converting a given key into another value. A hash function is used to generate the new value according to a mathematical algorithm.
+Hashing is the process of converting a given key to another value. A hash function is used to generate the new value according to a mathematical algorithm.
 
 You will make something like this 👇
 
 ![final demo](https://cloud-apjvaajlp.vercel.app/0hasher.gif)
 
-[check out the demo of final product](https://repl.it/@tanishqsoni/hash-generator)
+[check out the demo of the final product](https://repl.it/@tanishqsoni/hash-generator)
 
 ## Getting Started 🚀
 
@@ -25,7 +25,7 @@ To get started, you should have a basic knowledge of:
 - Node.js
 
 ### Part 2: The Setup
-To set up a coding environment, i suggest you use [Repl.it](https://repl.it) as it sets everything for you with just one click.
+To set up a coding environment, I suggest you use [Repl.it](https://repl.it) as it sets everything for you with just one click.
 
 To get started, go to https://repl.it/languages/nodejs .
 
@@ -55,7 +55,7 @@ So, you need to create a variable `crypto` and require the `crypto` module.
 var crypto = require('crypto');
 ```
 
-As you need to take input from the user so, you will use built-in [`readline`](https://nodejs.org/en/knowledge/command-line/how-to-prompt-for-command-line-input/) module which is a wrapper around Standard I/O, suitable for taking user input from command line(terminal).
+As you need to take input from the user so, you will use the built-in [`readline`](https://nodejs.org/en/knowledge/command-line/how-to-prompt-for-command-line-input/) module which is a wrapper around Standard I/O, suitable for taking user input from the command line(terminal).
 
 To access the module you need to use
 ```javascript
@@ -67,7 +67,7 @@ So, create a variable `readline` and require the `readline` module as well.
 var readline = require('readline');
 ```
 
-Now, you need to create an instance of `readline` module by configuring the readable and writable streams.
+Now, you need to create an instance of the `readline` module by configuring the readable and writable streams.
 
 So, for that you need to write some code:
 
@@ -77,11 +77,11 @@ var rl = readline.createInterface({
     output: process.stdout
 });
 ```
-Don't get scared, its a easy thing!
+Don't get scared, it's an easy thing!
 
 You have to create a variable `rl` and use `readline.createInterface()` which is used for creating an instance of readline as we discussed above.
 
-The `input` key takes a readable stream like `process.stdin` and the `output` key takes readable stream like `process.stdout`.
+The `input` key takes a readable stream like `process.stdin` and the `output` key takes a readable stream like `process.stdout`.
 
 Your code so far:
 ```javascript
@@ -94,7 +94,7 @@ var rl = readline.createInterface({
 });
 ```
 
-Now, you need to ask query to user, like 
+Now, you need to ask query to the user, like 
 - `Type your text :`
 - `Your text:` 
 - `Text :`
@@ -107,15 +107,15 @@ rl.question('Text : ', function(txt) {
 });
 ```
 
-In the above code the `rl.question()` method displays the query by writing it to the `output`, waits for user input to be provided on `input`, then invokes the `callback` function `fuction(txt)` passing the provided input as the first argument.
+In the above code, the `rl.question()` method displays the query by writing it to the `output`, waits for user input to be provided on `input`, then invokes the `callback` function `function(txt)` passing the provided input as the first argument.
 
 Do remember to use `rl.close()` to close the transmitting otherwise the process will be left in the idle state.
 
 ![input method](https://cloud-5qyk5c2kd.vercel.app/0nohapns.gif)
 
-As you can see the `readline` module is working perfectly and now you need to work on `crypto` module.
+As you can see the `readline` module is working perfectly and now you need to work on the `crypto` module.
 
-In these workshop you will convert your text in `SHA1`
+In this workshop, you will convert your text in `SHA1`
 
 for that you need to write some code:
 
@@ -125,7 +125,7 @@ var sha1 = crypto.createHash('sha1').update(txt).digest('Hex');
 
 Crypto has a method called `createHash` which allows you to calculate a hash as we passed `sha1` so it will generate `sha1` code.
 
-The `update` method is used to push data to later be turned into a hash with the `digest` method. `update` can be invoked multiple times to ingest streaming data, such as buffers from a file read stream. The argument for `digest` represents the output format, and may either be "binary", "hex" or "base64". It defaults to binary.
+The `update` method is used to push data to later be turned into a hash with the `digest` method. `update` can be invoked multiple times to ingest streaming data, such as buffers from a file read stream. The argument for `digest` represents the output format and may either be "binary", "hex" or "base64". It defaults to binary.
 
 To print the hash you need to do `console.log()`.
 
@@ -135,7 +135,7 @@ console.log("sha1 code : " + sha1);
 
 The above two lines of `crypto` code should be inside the `rl.question();`
 
-*what! you completed?? ohh yes*
+*what! you completed?? ummm yes*
 
 Yayyy 🎊! You are done!!
 
@@ -167,11 +167,11 @@ Now, how you can expand it? Try adding some other features to it with the help o
 
 Here are some examples 👇
 
-- create `md5` hash generator.
-- create `sha256` hash generator.
-- create app using ciphers.
+- create an`md5` hash generator.
+- create a `sha256` hash generator.
+- create an app using ciphers.
 - use [chalk](https://www.npmjs.com/package/chalk) & [boxen](https://www.npmjs.com/package/boxen) to beautify the app.
-- create app which generates multiple hashes at once.
+- create an app that generates multiple hashes at once.
 
 ### ⭐ Live examples with code
 
