@@ -84,7 +84,7 @@ And if we run our code, it should look like this:
 
 # CSS Part:
 
-Not so compelling, right? We will now write some CSS to add stying, which make our drum pad look prettier. Let's do that!
+Not so compelling, right? We will now write some CSS to add stlying, which make our drum pad look prettier. Let's do that!
 
 Just before the end of your `<head>` tag, link your CSS file:
 
