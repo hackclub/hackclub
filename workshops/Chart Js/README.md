@@ -70,18 +70,22 @@ Chart.js allows us to use up to 7 built-in charts types, and you can even create
 Here are some of them:
 <details><summary>Bar</summary>
 ![Bar chart](https://cloud-c1xuq61f3.vercel.app/0image.png)
+
 </details>
 
 <details><summary>Line</summary>
 ![Line chart](https://cloud-35yumi24n.vercel.app/0image.png)
+
 </details>
 
 <details><summary>Doughnut and Pie</summary>
 ![Doughnot and pie charts](https://cloud-hh4vxew90.vercel.app/0image.png)
+
 </details>
 
 <details><summary>Radar</summary>
 ![Radar chart](https://cloud-jy6tuwny1.vercel.app/0image.png)
+
 </details>
 
 They're all very easy to do, i promise... Let me show you
