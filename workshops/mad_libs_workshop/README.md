@@ -12,8 +12,166 @@ author: '@JakeGerber'
 
 We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE!
 
-Create a new repl and use Python as the language.
+Create a new repl and use C# as the language.
 
 <img src="https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
+
+# Creating a New Text File
+
+We're creating a new text file in order to put our Mad Libs prompt in.
+
+<img src="https://cloud-7epyavre2.vercel.app/0screenshot__1403_.png" width="600" alt="Creating New Text File">
+
+- Create a new file and name in "madlibs.txt".
+- Put in your own prompt and have things that you want to ask the user surrounded by asterisks (*).
+
+# Initial Statements
+
+Add these statements to print to the console that this is Mad Libs!
+
+```c#
+class Program
+{
+  public static void Main()
+  {
+    Console.WriteLine("Welcome To Madlibs!\n");
+    Console.WriteLine("---------------------------------------------------\n");
+  }
+}
+```
+
+# Reading the File
+
+Let's read the file.
+
+```c#
+class Program
+{
+  public static void Main()
+  {
+    while(true)
+    {
+      string prompt = "";
+
+      using (var sr = new StreamReader("madlib.txt"))
+      {
+        prompt = sr.ReadToEnd();
+      }
+    }
+  }
+}         
+```
+- The while statement is used later in the program in order to play again.
+- Make an empty string named "prompt".
+- The using statement reads the text file, and the contents of the file are set to the "prompt" string.
+
+# Inserting the Words
+
+We are creating a for loop to go through the string.
+
+```c#
+class Program
+{
+  public static void Main()
+  {
+    while(true)
+    {
+      #What we already wrote.
+      for(int i = 0; i < prompt.Length; i++)
+      {
+
+        if (prompt[i] == '*')
+        {
+          int startingIndex = i; 
+          i++;
+          int characterSpace = 2;
+          string word = "";
+          while(true)
+          {
+            if (prompt[i] != '*')
+            {
+              characterSpace++;
+              word += prompt[i];
+              i++;
+            }
+            else
+            {
+              break;
+            }
+          }
+          Console.Write($"{word}: ");
+          string response = Console.ReadLine();
+          Console.WriteLine();
+
+          prompt = prompt.Remove(startingIndex, characterSpace);
+          prompt = prompt.Insert(startingIndex, response);
+          i = startingIndex+response.Length-1;
+        }
+      }
+    }
+  }
+}
+```
+Let's break it down.
+
+## For Loop
+
+```c#
+for(int i = 0; i < prompt.Length; i++)
+{
+}
+```
+
+This for loop loops through each letter in the prompt.
+
+## Checking Character
+
+```c#
+for(int i = 0; i < prompt.Length; i++)
+{
+  if (prompt[i] == '*')
+  {
+    int startingIndex = i; 
+    i++;
+    int characterSpace = 2;
+    string word = "";
+  }
+}
+```
+- This if statement checks if the current character is an asterisk (*).
+- If it is, create a "startingIndex" integer and set it to the current index i, then increment i.
+- Then create a "characterSpace" integer and set it to 2 to represent the two asterisks surround the word.
+- Then create an empty "word string".
+
+## While Loop
+
+```c#
+if (prompt[i] == '*')
+{
+  while(true)
+  {
+  #What we already wrote.
+    if (prompt[i] != '*')
+    {
+      characterSpace++;
+      word += prompt[i];
+      i++;
+    }
+    else
+    {
+      break;
+    }
+  }
+}
+```
+- This if statement checks if the current character is not an asterisk (*).
+- If true, increment the "characterSpace", add the letter to the "word" string, and increment "i".
+- If not true, break out of the while loop because you've went through entire word in asterisks.
+
+##Continue
+
+
+
+
 
 
