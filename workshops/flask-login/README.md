@@ -65,9 +65,41 @@ Right now, our app is kind of useless. If you run it, it should start a new webs
 def helloworld():
 	return("Hello World!")
 ```
-The first line adds a decorator that tells Flask to treat the function as a route. A route is essentially an path that we can send a request to. Flask handles routes by creating functions, the return values of which Flask displays to the user. This function creates a return value of "Hello World!"
+The first line adds a [decorator](https://pythonbasics.org/decorators/) that tells Flask to treat the function as a route. A route is essentially an path that we can send a request to. Flask handles routes by creating functions, the return values of which Flask displays to the user. This function creates a return value of "Hello World!"
 Repl.it should automatically open a panel to allow you to view your Flask app. It should also have a URL to the app. 
 ![Link](https://cloud-94isv6yfc.vercel.app/0image.png)
 Open the URL in a new tab and you should see "Hello World!" displayed. Congratulations, you've successfully finished creating your first route!
 
 Now let's start on the routes we want to define for our webserver to handle logging in.
+
+## Registration Route
+
+We want our new route to be `/register`. This means that in order to register, we'll send a request to `yourURL/register` (of course, yourURL will be the URL given to you by repl.it).
+
+The way you specify the route is as simple as specifying the route in the decorator. It should look something like this:
+```python
+@app.route("/register", methods=['POST'])
+```
+The `POST` method tells Flask that we want to send a POST request here to write data instead of a GET request to receive data. 
+
+Now let's write the code that will run when we send this request. We'll need to create the file to write to. We can do this within repl.it.
+![Add File](https://cloud-j1ica8j2r.vercel.app/0image.png)
+
+Name this file "registered.json"
+Let's define our function now. Here's the code:
+```python
+def register():
+	username = request.args.get("username")
+	password = request.args.get("password")
+	data = request.args.get('data')
+	with open('registered.json', 'a+') as db:
+		db.seek(0)
+		check = (f"\"username\": \"{username}\"")
+		print(check)
+		contents = db.read()
+		print(check in contents)
+		if not(check in contents):
+			db.write(json.dumps({'username': username, 'password': password, 'data':data})+'\n')
+	return("Success")
+```
+
