@@ -48,7 +48,9 @@ Let's read the file.
 class Program
 {
   public static void Main()
-  {
+  {    
+    Console.WriteLine("Welcome To Madlibs!\n");
+    Console.WriteLine("---------------------------------------------------\n");
     while(true)
     {
       string prompt = "";
@@ -74,6 +76,7 @@ class Program
 {
   public static void Main()
   {
+    #Initial printing to console.
     while(true)
     {
       #What we already wrote.
@@ -148,9 +151,9 @@ for(int i = 0; i < prompt.Length; i++)
 ```c#
 if (prompt[i] == '*')
 {
+  #What we already wrote.
   while(true)
   {
-  #What we already wrote.
     if (prompt[i] != '*')
     {
       characterSpace++;
@@ -168,10 +171,88 @@ if (prompt[i] == '*')
 - If true, increment the "characterSpace", add the letter to the "word" string, and increment "i".
 - If not true, break out of the while loop because you've went through entire word in asterisks.
 
-##Continue
+## Finishing Up
 
+```c#
+if (prompt[i] == '*')
+{
+  #What we already wrote.
+  Console.Write($"{word}: ");
+  string response = Console.ReadLine();
+  Console.WriteLine();
 
+  prompt = prompt.Remove(startingIndex, characterSpace);
+  prompt = prompt.Insert(startingIndex, response);
+  i = startingIndex+response.Length-1;
+}
+```
+- First, let's print the "word" string to ask what type of word is wanted using [string interpolation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated). 
+- Then, let's get the user's response and set it to the "response" string.
+- Now, let's remove the "word" variable from our prompt and insert the user's response.
+- Set the current index to right after the response we just inserted.
 
+# Printing the Prompt
 
+```c#
+class Program
+{
+  public static void Main()
+  {
+    while(true)
+    {
+      #What we wrote.
+      Console.WriteLine("---------------------------------------------------\n");
+      Console.WriteLine(prompt);
+      Console.WriteLine("\n---------------------------------------------------\n");
+    }
+  }
+}
+```
+We are just printing lines to seperate the prompt for organization and then printing it.
+
+# Play Again
+```c#
+class Program
+{
+  public static void Main()
+  {
+    while(true)
+    {
+      bool playAgain = false;
+      while(true)
+      {
+        Console.WriteLine("Play again? (y/n)");
+        string again = Console.ReadLine();
+        if (again == "y")
+        {
+          playAgain = true;
+          break;
+        }
+        else if (again == "n")
+        {
+          playAgain = false;
+          break;
+        }
+        else
+        {
+          Console.WriteLine("Not a valid response. Try again.");
+        }
+      }
+
+      if (playAgain == false)
+      {
+        break;
+      }
+      else
+      {
+        Console.WriteLine("\n---------------------------------------------------\n");
+      }
+    }
+  }
+}
+```
+Let's break it down.
+
+## CONTINUE
 
 
