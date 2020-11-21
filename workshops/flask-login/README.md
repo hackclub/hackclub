@@ -278,4 +278,8 @@ Here are some things to check out or read.
 * [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)
 * [How JSON Works](https://www.tutorialspoint.com/json/json_overview.htm)
 
+Here are some hacks that show what you can do with this:
+* [Make a frontend with HTML and serve it with Flask too](https://repl.it/@sohamb117/FlaskTutorial-1#main.py)
+* [Ensure that passwords meet certain conditions](https://repl.it/@sohamb117/FlaskTutorial-2#main.py)
+* [Take in more data, and store timestamps](https://repl.it/@sohamb117/FlaskTutorial-3#main.py)
 
