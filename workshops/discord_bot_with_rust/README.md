@@ -156,7 +156,6 @@ We also have an event handler `Handler` which we override the `ready` event for,
 
 Serenity is an `async` framework which means that everything uses `async fn` and futures. You can read more about futures [here](https://tokio.rs/tokio/tutorial/hello-tokio#breaking-it-down). This is also why we have the `tokio` dependency, which makes our `main` function into an `async fn` (by default it is not.) so that we can start the bot and use `.await`.
 
-Lastly, we retrieve the Discord token from the environment variable to keep our token private (Repl.it keeps the .env file private by default!)
 </details>
 
 Run the bot to make sure that everything works. It may take a while to build at first but subsequent builds will be faster.

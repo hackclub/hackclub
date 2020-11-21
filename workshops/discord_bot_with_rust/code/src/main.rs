@@ -144,14 +144,16 @@ fn render_message(poll: &Poll) -> String {
     let total_answerers = poll.answerers.iter().sum::<usize>();
 
     for (i, (answer, &num)) in poll.answers.iter().zip(poll.answerers.iter()).enumerate() {
-        let percent = num as f64 / total_answerers as f64 * 100.;
         let emoji = format!(
-            ":regional_indicator_{}: ({:.0}%)",
+            ":regional_indicator_{}:",
             std::char::from_u32('a' as u32 + i as u32).expect("Failed to format emoji"),
-            percent,
         );
         // add answerers and percent
         message_text.push_str(&emoji);
+        if total_answerers > 0 {
+            let percent = num as f64 / total_answerers as f64 * 100.;
+            message_text.push_str(&format!(" ({:.0}%)", percent));
+        }
         message_text.push(' ');
         message_text.push_str(answer);
         message_text.push_str(&format!(" ({} votes)", num));
@@ -167,13 +169,13 @@ impl TypeMapKey for PollsKey {
     type Value = Arc<Mutex<PollsMap>>;
 }
 
+type PollsMap = HashMap<(ChannelId, MessageId), Poll>;
+
 struct Poll {
     pub question: String,
     pub answers: Vec<String>,
     pub answerers: Vec<usize>,
 }
-
-type PollsMap = HashMap<(ChannelId, MessageId), Poll>;
 
 #[group]
 #[commands(poll)]
