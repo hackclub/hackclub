@@ -299,7 +299,7 @@ Now that our library is ready, let's make `hcload.ts` use arguments from the CLI
 - First, let's import [Yargs](https://yargs.js.org/). Yargs makes it easy to parse command-line arguments.
 
 ```js
-import Yargs from "https://deno.land/x/yargs/deno.ts"
+import Yargs from "https://deno.land/x/yargs@v16.1.1-deno/deno.ts"
 import * as path from "https://deno.land/std@0.75.0/path/mod.ts"
 import hcload from "./mod.ts"
 
@@ -310,7 +310,7 @@ Deno.exit(0)
 Next, let's parse the args using Yargs
 
 ```js
-import Yargs from "https://deno.land/x/yargs/deno.ts"
+import Yargs from "https://deno.land/x/yargs@v16.1.1-deno/deno.ts"
 import * as path from "https://deno.land/std@0.75.0/path/mod.ts"
 import hcload from "./mod.ts"
 
@@ -338,7 +338,7 @@ Run `hcload -f test` and you should probably see something like
 We want to pass the full path of the property "file" to our library's default function
 
 ```js
-import Yargs from "https://deno.land/x/yargs/deno.ts"
+import Yargs from "https://deno.land/x/yargs@v16.1.1-deno/deno.ts"
 import * as path from "https://deno.land/std@0.75.0/path/mod.ts"
 import hcload from "./mod.ts"
 
@@ -368,8 +368,6 @@ HOORAY! It works! Except there's a single problem. To upload files, we first nee
 ## Part 5: Setting up your project locally
 ### Part 5.1: Installing deno
 
-For this workshop, we'll need version 1.4.6 of Deno.
-
 - [Deno installation docs](https://deno.land/manual/getting_started/installation)
 
 In a nutshell:
@@ -377,21 +375,21 @@ In a nutshell:
 - If you're on Windows, open PowerShell (Windows logo in taskbar > Search > PowerShell), and then run
 
 ```
-$v="1.4.6"; iwr https://deno.land/x/install/install.ps1 -useb | iex
+iwr https://deno.land/x/install/install.ps1 -useb | iex
 ```
 
 - If you're on macOS / Linux, open a Terminal (For macOS, CMD + Space and type "Terminal", for Linux, the command shortcut is usually Ctrl + Alt + T) and run
 
 ```
-curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.4.6
+curl -fsSL https://deno.land/x/install/install.sh | sh
 ```
 
 After you've done this (you may need to close and reopen your terminal / PowerShell), running `deno --version` should display something like:
 
 ```
-deno 1.4.6
+deno 1.5.3
 v8 8.7.220.3
-typescript 4.0.3
+typescript 4.0.5
 ```
 
 ### Part 5.2: Downloading your code from repl.it
