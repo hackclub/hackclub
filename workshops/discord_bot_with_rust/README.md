@@ -309,9 +309,10 @@ Now, let's finally create the `poll` command!
 
 Let's define the `poll` command.
 
-Before we do anything else, we'll need to add a new import:
+Before we do anything else, we'll need to add two new imports:
 ```rust
 use serenity::model::channel::ReactionType;
+use serenity::model::id::{MessageId, ChannelId};
 ```
 We'll use this a little later.
 
@@ -413,6 +414,7 @@ Now we'll have to create a fancy message for the users to respond on:
 We'll define this function later, but for now just know that it takes a `Poll` reference and returns a `String` of the message contents.
 
 We have to accumulate all the emojis to react with, so that the user can easily click to respond. We're using the "regional indicator" section of Unicode, which looks like this in Discord:
+
 ![What regional indicator characters look like in Discord](https://cloud-d9pv3tesy.vercel.app/0image.png)
 
 This code creates a list of all the regional indicator characters we need. For example if we have 5 total answers, we'll need regional indicators A, B, C, D and E.
@@ -553,3 +555,5 @@ That's the end of the `render_message` function!
 Give yourself a pat on the back, we're halfway done!!
 
 ![Halfway done GIF](https://media.giphy.com/media/l0HlRey3XbrNJGRzi/giphy.gif)
+
+If you want to, feel free to run your program now and try out the `poll` command (prefix is `~`). It won't work yet but the message should be printed.
