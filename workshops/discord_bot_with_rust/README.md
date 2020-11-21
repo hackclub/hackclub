@@ -307,7 +307,15 @@ Now, let's finally create the `poll` command!
 
 ## Creating the `poll` command
 
-Let's define the `poll` command. First, remove the `ping` function and change the `ping` in group `General` to be our new `poll` command. Removing it should look something like this:
+Let's define the `poll` command.
+
+Before we do anything else, we'll need to add a new import:
+```rust
+use serenity::model::channel::ReactionType;
+```
+We'll use this a little later.
+
+Next, remove the `ping` function and change the `ping` in group `General` to be our new `poll` command. Removing it should look something like this:
 ```diff
  #[group]
 -#[commands(ping)]
@@ -364,3 +372,184 @@ This makes it much easier to work with errors in Rust especially with `Result<T,
 *Note:* The `?` operator works with any `Result<T, E2>` where `E2: Into<E>` and `E` is the error type of the outer function's `Result`. Also see [`std::ops::Try`](https://doc.rust-lang.org/std/ops/trait.Try.html#impl-Try-2).
 </details>
 
+Next, we're going to get the question, which will be the first argument:
+```rust
+    let question = args.single_quoted::<String>()?;
+```
+The [`single_quoted`](https://docs.rs/serenity/0.9.1/serenity/framework/standard/struct.Args.html#method.single_quoted) function returns one argument (delimited by quotes, if there are spaces in it) of the given type. Since we give it type `String`, this accepts anything. For what the `?` operator means, you can read the above section.
+
+Now let's get all the answers that the user provided:
+```rust
+    let answers = args
+        .quoted()               // 1) Enable quoting for answers with spaces
+        .iter::<String>()       // 2) Iterate over the rest of the arguments (as Strings)
+        .filter_map(|x| x.ok()) // 3) Filter out any arguments that failed to parse
+        .collect::<Vec<_>>();   // 4) Collect all the arguments into a Vec<String>
+```
+
+Let's count the total number of answers (we'll need this later):
+```rust
+
+    let answers_len = answers.len();
+```
+
+Now we can create our `Poll` struct with the data that we got:
+```rust
+    let poll = Poll {
+        question: question,
+        // no responses yet
+        answerers: vec![0; answers_len],
+        answers: answers,
+    };
+```
+The `vec![0; answers_len]` is a shorthand way to create a Vec with length `answers_len` and fill it with zeros. Since we don't have any responses yet, they should all be zero.
+
+Now we'll have to create a fancy message for the users to respond on:
+```rust
+
+    // Build the message contents
+    let message_text = render_message(&poll);
+```
+We'll define this function later, but for now just know that it takes a `Poll` reference and returns a `String` of the message contents.
+
+We have to accumulate all the emojis to react with, so that the user can easily click to respond. We're using the "regional indicator" section of Unicode, which looks like this in Discord:
+![What regional indicator characters look like in Discord](https://cloud-d9pv3tesy.vercel.app/0image.png)
+
+This code creates a list of all the regional indicator characters we need. For example if we have 5 total answers, we'll need regional indicators A, B, C, D and E.
+```rust
+    let emojis = (0..answers_len)
+        .map(|i| std::char::from_u32('🇦' as u32 + i as u32).expect("Failed to format emoji"))
+        .collect::<Vec<_>>();
+```
+We take a range of `0..answers_len` (which is an Iterator), and then we transform it using the `map` function. We add the regional indicator `🇦` to it, which is like an offset. Then once we have all the characters, we collect them into a `Vec` to be iterated over a little later.
+
+<details>
+<summary>Why answers_len and not answers.len()?</summary>
+
+If you tried to use `answers.len()` instead of `answers_len` above, you'd get an error that looks something like this:
+```
+error[E0382]: borrow of moved value: `answers`
+   --> src\main.rs:203:22
+    |
+187 |     let answers = args
+    |         ------- move occurs because `answers` has type `Vec<String>`, which does not implement the `Copy` trait
+...
+198 |         answers: answers,
+    |                  ------- value moved here
+...
+203 |     let emojis = (0..answers.len())
+    |                      ^^^^^^^ value borrowed here after move
+```
+
+What this means is that we're moving the data of `answers` into the `Poll`, so we can't use `answers` anymore since its data is invalid. Therefore, we just get the length of `answers` before moving it into the `Poll` so we can use it later.
+</details>
+
+Now let's actually create the message with the contents we got before:
+```rust
+
+    let poll_msg = msg.channel_id.say(&ctx.http, &message_text).await?;
+```
+So we're taking the channel ID of the command's message, and sending our own message in that same channel.
+
+Now let's add reactions for each of the answers:
+```rust
+
+    for &emoji in &emojis {
+        poll_msg
+            .react(&ctx.http, ReactionType::Unicode(emoji.to_string()))
+            .await?;
+    }
+```
+So for each emoji character we're going to convert it to a string so we can add that reaction (as a Unicode emoji, since we aren't using custom emojis) to our message.
+
+Now that we've setup the message, we need to add our new poll to the polls map. First we need to retrieve the global `data` as writable:
+```rust
+
+    let mut poll_data = ctx.data.write().await;
+```
+
+Next, we need to get the polls map by retrieving key `PollsKey`:
+```rust
+
+    let poll_map = poll_data
+        .get_mut::<PollsKey>()
+        .expect("Failed to retrieve polls map!");
+```
+
+Now, we can finally insert our poll, which is keyed by the channel & message ID (that's all we need to be unique):
+```rust
+
+    poll_map
+        .lock()
+        .await
+        .insert((msg.channel_id, poll_msg.id), poll);
+```
+
+We succeeded! Let's return with a successful value:
+```rust
+
+    Ok(())
+}
+```
+
+And that's the end of the `poll` command!
+
+But... do you remember the `render_message` function which we were going to define later? Let's do that.
+
+## The `render_message` function
+
+The `render_message` function is pretty simple: it just takes a `Poll` reference and formats it to look nice in a message. Let's start defining that right above `struct PollsKey`:
+```rust
+fn render_message(poll: &Poll) -> String {
+```
+We're taking a `Poll` reference as input (we don't need to take ownership since we are just reading it) and returning a `String` of the formatted message contents.
+
+```rust
+    // Build the message contents
+    let mut message_text = format!("**Poll:** {}\n", poll.question);
+    let total_answerers = poll.answerers.iter().sum::<usize>();
+```
+We start the message with a bolded **Poll:** then we put the question after it. We mark it as `mut` since we'll add to it. Also, we create a total_answerers variable which contains the total number of responses (used for percentage calculation.)
+
+```rust
+
+    for (i, (answer, &num)) in poll.answers.iter().zip(poll.answerers.iter()).enumerate() {
+```
+We're iterating over each answer string, how many votes it got and the number of the answer we are iterating over (used for creating emoji).
+
+We create the emoji similarly to the way we did in the `poll` command, and then add it to the message:
+```rust
+        let emoji = std::char::from_u32('🇦' as u32 + i as u32).expect("Failed to format emoji");
+        // add answerers and percent
+        message_text.push(emoji);
+```
+
+If we got at least one response in total we add a percentage (if we have zero responses, we get NaN therefore we don't show it in that case):
+```rust
+        if total_answerers > 0 {
+            let percent = num as f64 / total_answerers as f64 * 100.;
+            message_text.push_str(&format!(" ({:.0}%)", percent));
+        }
+```
+
+Lastly, we add the answer string and how many votes it got (as well as a newline):
+```rust
+        message_text.push(' ');
+        message_text.push_str(answer);
+        message_text.push_str(&format!(" ({} votes)", num));
+        message_text.push('\n');
+    }
+```
+
+Now we just return the message that we've built up!
+```rust
+
+    message_text
+}
+```
+
+That's the end of the `render_message` function!
+
+Give yourself a pat on the back, we're halfway done!!
+
+![Halfway done GIF](https://media.giphy.com/media/l0HlRey3XbrNJGRzi/giphy.gif)

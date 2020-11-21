@@ -3,8 +3,9 @@ use serenity::framework::standard::{
     macros::{command, group},
     Args, CommandResult, StandardFramework,
 };
+use serenity::model::channel::ReactionType;
 use serenity::model::{
-    channel::{Message, Reaction, ReactionType},
+    channel::{Message, Reaction},
     gateway::Ready,
     id::{ChannelId, MessageId},
 };
@@ -144,12 +145,9 @@ fn render_message(poll: &Poll) -> String {
     let total_answerers = poll.answerers.iter().sum::<usize>();
 
     for (i, (answer, &num)) in poll.answers.iter().zip(poll.answerers.iter()).enumerate() {
-        let emoji = format!(
-            ":regional_indicator_{}:",
-            std::char::from_u32('a' as u32 + i as u32).expect("Failed to format emoji"),
-        );
+        let emoji = std::char::from_u32('🇦' as u32 + i as u32).expect("Failed to format emoji");
         // add answerers and percent
-        message_text.push_str(&emoji);
+        message_text.push(emoji);
         if total_answerers > 0 {
             let percent = num as f64 / total_answerers as f64 * 100.;
             message_text.push_str(&format!(" ({:.0}%)", percent));
@@ -184,8 +182,8 @@ struct General;
 #[command]
 async fn poll(ctx: &Context, msg: &Message, mut args: Args) -> CommandResult {
     let question = args.single_quoted::<String>()?;
-    args.quoted();
     let answers = args
+        .quoted()
         .iter::<String>()
         .filter_map(|x| x.ok())
         .collect::<Vec<_>>();
@@ -194,7 +192,7 @@ async fn poll(ctx: &Context, msg: &Message, mut args: Args) -> CommandResult {
     let poll = Poll {
         question: question,
         // no responses yet
-        answerers: vec![0; answers.len()],
+        answerers: vec![0; answers_len],
         answers: answers,
     };
 
