@@ -87,7 +87,7 @@ Here are some of them:
 
 <details><summary>Polar area</summary>
 
-![Polar area chart](https://cloud-4x3lxyzvi.vercel.app/0image.png](https://cloud-4x3lxyzvi.vercel.app/0image.png)
+![Polar area chart](https://cloud-4x3lxyzvi.vercel.app/0image.png)
 </details>
 
 They're all very easy to do, i promise... 
