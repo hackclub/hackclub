@@ -147,6 +147,8 @@ async fn main() {
 
 This is just a super simple template that has a `~ping` command which makes the bot respond with `Pong!`.
 
+By the way, I highly recommend having the [Serenity](https://docs.rs/serenity) docs open on the side while going through this workshop! You can search for all of the functions and structs we use in there, with very detailed explanations.
+
 <details>
 <summary>Technical details</summary>
 
@@ -304,3 +306,61 @@ This just inserts an empty polls map with the type key `PollsKey` we defined ear
 Now, let's finally create the `poll` command!
 
 ## Creating the `poll` command
+
+Let's define the `poll` command. First, remove the `ping` function and change the `ping` in group `General` to be our new `poll` command. Removing it should look something like this:
+```diff
+ #[group]
+-#[commands(ping)]
++#[commands(poll)]
+ struct General;
+
+-#[command]
+-async fn ping(ctx: &Context, msg: &Message, mut _args: Args) -> CommandResult {
+-    msg.channel_id.say(&ctx.http, "Pong!").await?;
+-
+-    Ok(())
+-}
+```
+
+Now, let's create the `poll` command. Right under group `General`, let's add this:
+```rust
+#[command]
+async fn poll(ctx: &Context, msg: &Message, mut args: Args) -> CommandResult {
+```
+This is basic scaffolding used for all commands in Serenity. We take a context (which we can use to send messages, etc.), the message containing the command and an `Args` object allowing us to easily retrieve arguments to our command. Then we return a `CommandResult` which lets us handle errors in our command easily.
+
+<details>
+<summary>What is Result&lt;T, E&gt;?</summary>
+
+Rust doesn't do error handling like most other languages, where you would `throw` or `raise` an Exception and then catch it later. In general it doesn't work that well as a error handling model, so Rust uses `Result<T, E>` instead. It's very simply defined like this:
+```rust
+pub enum Result<T, E> {
+    Ok(T),
+    Err(E),
+}
+```
+We have a success type `T` and an error type `E`. It's just an enum that contains an `Ok` variant and an `Err` variant. This makes it really easy to handle since we can use things like `match` on it and such.
+
+But `Result<T, E>` has one more superpower: the `?` operator. The `?` operator, when used in a function that returns `Result`, makes it _super_ easy to handle errors and propagate them. As an example:
+```rust
+fn error1() -> std::io::Result<()> {
+    // returns the error if the function fails
+    do_some_fallible_io_operation()?;
+
+    Ok(()) // default case, everything ok
+}
+
+// is equivalent to:
+
+fn error2() -> std::io::Result<()> {
+    match do_some_fallible_io_operation() {
+        Ok(_) => Ok(()) // ok, then ok
+        Err(e) => Err(e), // error? propagate the error
+    }
+}
+```
+This makes it much easier to work with errors in Rust especially with `Result<T, E>`.
+
+*Note:* The `?` operator works with any `Result<T, E2>` where `E2: Into<E>` and `E` is the error type of the outer function's `Result`. Also see [`std::ops::Try`](https://doc.rust-lang.org/std/ops/trait.Try.html#impl-Try-2).
+</details>
+
