@@ -185,6 +185,32 @@ return("User not found")
 
 This `for` loop goes through `jsonList` for each value `i` in the list. If `username` and `password` match the values in the dictionary, the method returns `i[data]` or the data value associated with that username and password. We have an `return` statement at the end that runs if the function does not exit. (This works because return statements stop the function from running any further).
 
+## Testing the Code
+
+Finally, we'll be using Insomnia to test if our code works. 
+Let's launch the app (you can do this by going to `chrome://apps` in the URL bar of Chrome).
+You should see something like this:
+![Insomnia](https://cloud-m4ukm1v5f.vercel.app/0image.png)
+
+Click "Create a Request" and enter any request name, it doesn't really matter.
+
+You should see this:
+![Request](https://cloud-ottonqsbw.vercel.app/0image.png)
+
+In the dropdown menu labeled "GET" by default, click it and set to POST. Insomnia will send a post request now.
+
+Next to that, there's a text field. Since we're testing our POST route, or our `/register` route, we want to set that to `yourURL/register?username=USERNAME&password=PASSWORD&data=DATA`. Replace `yourURL` with the URL you got from repl.it, and replace `USERNAME`, `PASSWORD`, and `DATA` to be any values you want.
+For example, I might put `https://FlaskTutorial.sohamb117.repl.co/register?username=soham&password=insecure&data=testing`. 
+Press the purple "Send" button, and then check your `registered.json` file. If everything worked, you should see a new entry in the file. 
+
+Now that we've tested the POST request, we should test the GET request. Set the dropdown back to GET and replace the url with this:
+`yourURL/login?username=USERNAME&password=PASSWORD`
+
+Again, replace the necessary fields and hit "Send". If all goes well, you should see the value for `data` returned back to you. For me, that's `testing`. 
+
+If everything works, your webserver is complete! 
+
+
 ## Final Look at the Code
 
 We've finished the code! It should look like this:
@@ -229,3 +255,27 @@ def login():
 
 app.run(host='0.0.0.0')
 ```
+
+To recap, this code
+* Creates a Flask app
+* Creates routes for the app
+* Reads values from arguments
+* Stores values in a JSON file
+* Returns values as a response to a GET or POST request
+
+What this does NOT have:
+* Security
+* Password requirements
+* Encryption
+* CAPTCHA or any anti-bot measures
+
+Note: While you can modify this code to have these features, you should **NEVER** store passwords in plaintext like this webserver does. If you were to implement security features, this webserver would work for login.
+
+## Hacks and Further Reading
+
+Here are some things to check out or read. 
+* [Get and Post Requests](https://www.w3schools.com/tags/ref_httpmethods.asp)
+* [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)
+* [How JSON Works](https://www.tutorialspoint.com/json/json_overview.htm)
+
+
