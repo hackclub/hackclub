@@ -243,3 +243,44 @@ Now it's time to actually add polling to the bot!
 
 ## Creating a `poll` command
 
+Let's create the `~poll` command which we'll use to actually setup polls.
+
+Before we actually add the command though, we'll need to define some types to represent polls.
+
+Add these lines to your imports:
+```rust
+use std::collections::HashMap;
+use std::sync::Arc;
+use tokio::sync::Mutex;
+```
+
+This just imports some things we'll be using soon.
+
+Now let's start adding the types for polls. Add this code before `struct General` in `real_main.rs`:
+```rust
+struct PollsKey;
+
+impl TypeMapKey for PollsKey {
+    type Value = Arc<Mutex<PollsMap>>;
+}
+```
+
+Here, we create a new type `PollsKey` which we'll use to retrieve the current polls. We also implement the `TypeMapKey` trait for `PollsKey`, which lets us use it as a key in a type map. Serenity uses type maps for data storage so that's why we have to make this type. We set the type of the key's value to be `Arc<Mutex<PollsMap>>`. `Arc` is atomic reference-counting, which lets us share an object across threads (this is necessary for async). `Mutex` is used for exclusive access to the map, when we are changing it. `Arc<Mutex<...>>` is a common pattern used to share mutable data across threads.
+
+Next, let's define the `PollsMap` type:
+```rust
+type PollsMap = HashMap<(ChannelId, MessageId), Poll>;
+```
+
+`PollsMap` is just a type alias to a `HashMap` with key type `(ChannelId, MessageId)` (a tuple) and value type `Poll`.
+
+Finally, let's define the `Poll` type:
+```rust
+struct Poll {
+    pub question: String,
+    pub answers: Vec<String>,
+    pub answerers: Vec<usize>,
+}
+```
+
+The `Poll` type just has a question, list of answers and how many people answered for each response.
