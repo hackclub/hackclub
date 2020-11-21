@@ -36,6 +36,7 @@ Last thing we have to do here is to create a [canvas](https://www.w3schools.com/
 ## Javascript
 
 Now, let's move to the fun part of the workshop.
+![Fun gif](https://cloud-n5xpv2pg5.vercel.app/0file_from_ios.gif)
 
 ### Setting up the canvas
 First we'll need to get the context for our canvas. The [canvas context](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext) is an object with properties and methods that you can use to render graphics inside the **canvas** element.
@@ -85,7 +86,7 @@ Here are some of them:
 
 <details><summary>Polar area</summary>
 
-![Polar area chart]([https://cloud-4x3lxyzvi.vercel.app/0image.png](https://cloud-4x3lxyzvi.vercel.app/0image.png))
+![Polar area chart]([https://cloud-4x3lxyzvi.vercel.app/0image.png](https://cloud-4x3lxyzvi.vercel.app/0image.png)
 </details>
 
 They're all very easy to do, i promise... 
@@ -98,10 +99,9 @@ So, now that we have our chart, if we clicked on "run" it would render this:
 So, we'll have to give it data. For this workshop, i've created a data table that we are going to use, here it is:
 ![Data table](https://cloud-9ts8w8agi.vercel.app/0image.png)
 
-Now, think of each **animal** as a variable and that each animal has a value that we'll call **# of Animals**. So what we need to do, is to put the animal variables inside of the `label` element, take your time and do it by yourself.
+Now, think of each **animal** as a variable and that each animal has a value that we'll call **# of Animals**. So what we need to do, is to put the animal variables inside of the `label` element.
 
 *Note: Each animal goes inside 2 apostrophes and followed by a comma.*
-<details><summary>Solution</summary>
 
 ```js
 var chart = new Chart(ctx, {
@@ -115,7 +115,7 @@ var chart = new Chart(ctx, {
     },
 });
 ```
-</details>
+
 Now if we clicked on run, you would see that now we have our animals right under the x axis.  
 
 ![Chart rendered](https://cloud-gpp881t22.vercel.app/0image.png)
@@ -254,6 +254,7 @@ var chart = new Chart(ctx, {
 
 ## Hack it
 Yes! –you made it to the end of the workshop
+
 ![Congrats GIF](https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
 
 Now that you know how to use Charts Js, feel free to hack it and use it for your personal projects.
@@ -264,7 +265,7 @@ Check out these charts made by other people using ChartJs:
 - [Chart Js line demo](https://jsfiddle.net/leighking2/jx1w1xed/)
 
 ## Resources
-- [# 10 Chart.js example charts to get you started](https://tobiasahlin.com/blog/chartjs-charts-to-get-you-started/)
+- [10 Chart.js example charts to get you started](https://tobiasahlin.com/blog/chartjs-charts-to-get-you-started/)
 - [Official Guide](https://chartjs.org/docs)
 - [A zoom and pan plugin for Chart.js](https://github.com/chartjs/chartjs-plugin-zoom)
 - [Awesome Chart Js](https://github.com/chartjs/awesome)
