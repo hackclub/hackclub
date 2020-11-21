@@ -36,6 +36,7 @@ Last thing we have to do here is to create a [canvas](https://www.w3schools.com/
 ## Javascript
 
 Now, let's move to the fun part of the workshop.
+
 ![Fun gif](https://cloud-n5xpv2pg5.vercel.app/0file_from_ios.gif)
 
 ### Setting up the canvas
