@@ -241,11 +241,9 @@ Run the bot to make sure that everything works. It may take a while to build at 
 
 Now it's time to actually add polling to the bot!
 
-## Creating a `poll` command
+## Representing polls in code
 
-Let's create the `~poll` command which we'll use to actually setup polls.
-
-Before we actually add the command though, we'll need to define some types to represent polls.
+Before we add the `poll` command, we'll need to define some types to represent polls.
 
 Add these lines to your imports:
 ```rust
@@ -284,3 +282,25 @@ struct Poll {
 ```
 
 The `Poll` type just has a question, list of answers and how many people answered for each response.
+
+Now that we've defined our type key and the type value, let's actually add that to our global data map that Serenity provides. Add this in your `main` function:
+```rust
+#[tokio::main]
+async fn main() {
+    // -- snip --
+
+    let mut client = Client::builder(&token)
+        .event_handler(Handler)
+        .framework(framework)
+        .type_map_insert::<PollsKey>(Arc::new(Mutex::new(PollsMap::new()))) // new!
+        .await
+        .expect("Failed to build client");
+
+    // -- snip --
+}
+```
+This just inserts an empty polls map with the type key `PollsKey` we defined earlier.
+
+Now, let's finally create the `poll` command!
+
+## Creating the `poll` command
