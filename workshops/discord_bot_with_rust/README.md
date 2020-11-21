@@ -150,11 +150,90 @@ This is just a super simple template that has a `~ping` command which makes the 
 <details>
 <summary>Technical details</summary>
 
-Here we're setting up a pretty basic Serenity client. We're using Serenity's built in command framework. We add a new group called `General` and a command called `ping`, defined by the function. It just takes the current channel's ID and sends "Pong!" in that channel.
+```rust
+use serenity::async_trait;
+use serenity::framework::standard::{
+    macros::{command, group},
+    Args, CommandResult, StandardFramework,
+};
+use serenity::model::{
+    channel::{Message, Reaction},
+    gateway::Ready,
+};
+use serenity::prelude::*;
+```
+These are just some imports that we need.
 
-We also have an event handler `Handler` which we override the `ready` event for, to print to the console that we are ready.
+```rust
+struct Handler;
+```
+This creates a new type called `Handler` which has no data. We're going to be implementing the `EventHandler` trait on it so that we can handle ready events.
 
-Serenity is an `async` framework which means that everything uses `async fn` and futures. You can read more about futures [here](https://tokio.rs/tokio/tutorial/hello-tokio#breaking-it-down). This is also why we have the `tokio` dependency, which makes our `main` function into an `async fn` (by default it is not.) so that we can start the bot and use `.await`.
+```rust
+#[async_trait]
+impl EventHandler for Handler {
+    async fn ready(&self, _: Context, ready: Ready) {
+        println!("Bot ready with username {}", ready.user.name);
+    }
+}
+```
+This implements the `EventHandler` trait for `Handler`. By default all of the event handlers don't do anything, but here we override the `ready` method, so that we can print our bot's username once it's ready.
+
+Since we're defining an `async fn` in the implementation, we have to use the `#[async_trait]` attribute (imported above) to allow it, because [currently Rust does not natively support async traits](https://github.com/rust-lang/rfcs/issues/2739).
+
+```rust
+#[group]
+#[commands(ping)]
+struct General;
+```
+This sets up a command group. In Serenity, commands can only be added through command groups, so we just setup a `General` command group with the `ping` command.
+
+```rust
+#[command]
+async fn ping(ctx: &Context, msg: &Message, mut _args: Args) -> CommandResult {
+    msg.channel_id.say(&ctx.http, "Pong!").await?;
+
+    Ok(())
+}
+```
+This is the `ping` command. We just take the command's message, get the channel it was sent in, and send `Pong!` in that channel. (So, we just reply with `Pong!`.)
+
+```rust
+#[tokio::main]
+async fn main() {
+    let token = std::env::var("DISCORD_TOKEN").expect("Expected DISCORD_TOKEN to be set!");
+```
+This is the start of the main function. We mark it with the `#[tokio::main]` annotation to make it into an `async fn` which it is not by default.
+
+Then, we retrieve the token from the `DISCORD_TOKEN` environment variable and panic if it's not set.
+
+```rust
+
+    let framework = StandardFramework::new()
+        .configure(|c| c.case_insensitivity(true))
+        .group(&GENERAL_GROUP);
+```
+Here we setup the Serenity standard command framework. We configure it to allow case insensitivity, so that commands can be typed like `~poll`, `~pOlL`, `~poLL` or any other combination. Then we also add the `General` group of commands which includes the `ping` command we defined above.
+
+```rust
+
+    let mut client = Client::builder(&token)
+        .event_handler(Handler)
+        .framework(framework)
+        .await
+        .expect("Failed to build client");
+
+    if let Err(why) = client.start().await {
+        println!("Client error: {:?}", why);
+    }
+}
+```
+Now we setup our Discord bot client with the token we got earlier, our event handler (which prints the bot's username once the ready event is received), and our command framework.
+
+Then, we start the bot, and if there's an error after running it, we print the error.
+
+---
+That's all of the details!
 
 </details>
 
