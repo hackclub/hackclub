@@ -20,6 +20,7 @@ _Preview of the Drum Pad we are going to be creating_
 Apart from building the drum pad, you will also be learning about different types of events, functions, styling, and more with Vanilla JavaScript, HTML, and CSS. This whole workshop is customizable according to you, and the best part is, it will take less than 20 minutes to complete! 
 
 [Link to demo](https://drum.emmanuel39hanks.repl.co)
+
 [Link to code](https://github.com/emmanuel39hanks/beat_maker)
 
 ## Getting started
