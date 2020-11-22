@@ -79,7 +79,6 @@ macro_rules! perform_reaction {
                     let number = (c as u32 - '🇦' as u32) as usize;
 
                     f(poll, Some(number));
-                    // poll.answerers[number as usize] += 1;
                 }
                 _ => {
                     println!("Unknown emoji in reaction, ignoring");
