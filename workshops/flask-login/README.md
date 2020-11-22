@@ -7,7 +7,7 @@ We'll have to:
 *  Make app routes that write to and read from a JSON file
 *  Test our webserver with Insomnia.
 
-This workshop assumes a very basic knowledge of Python and HTTP Requests. 
+This workshop assumes a very basic knowledge of Python and HTTP Requests. I've linked a source at the bottom so you can read up on these topics.
 
 ## What does Flask do?
 
@@ -15,13 +15,13 @@ The [Flask](https://pypi.org/project/flask/) library in Python is what we'll use
 
 ## Downloading Insomnia
 
-Insomnia is useful because it is available for so many platforms. All you need is a Chrome browser. You can get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/insomnia-rest-client/gmodihnfibbjdecbanmpmbmeffnmloel?hl=en-US). You should see a screen like this:
+In order to test our Flask server, we'll need to send requests to the server. We can use Insomnia to do this. Insomnia is great because it is available for so many platforms. All you need is a Chrome browser. You can get Insomnia at the [Chrome Web Store](https://chrome.google.com/webstore/detail/insomnia-rest-client/gmodihnfibbjdecbanmpmbmeffnmloel?hl=en-US). You should see a screen like this:
 ![Insomnia Web Store](https://cloud-a7eisnzme.vercel.app/0image.png)
 
 Press the "Add to Chrome" button, and then press "Add App."
 ![Add to Chrome](https://cloud-6j7h3tfkw.vercel.app/0image.png)
 
-We'll work more with Insomnia after testing out our code.
+We'll work more with Insomnia after writing our code.
 
 ## Getting Started 
 
@@ -46,16 +46,16 @@ import json
 ```
 
 This just imports the `Flask` and `request` modules from the `flask` library, because they're the only ones we need from that library. We also need `json` because that's what we'll be using for storing our data.
-In order to create a webserver with flask we'll need to define a Flask app. We do this with the following line:
+In order to create a webserver with Flask we'll need to define a Flask app. We do this with the following line:
 ```python
 app = Flask("MyApp")
 ```
 The parameter passed into `Flask()` can be any string, and it's the name of your app. You can set it to any valid string you want as it doesn't really make a difference in the project.
-We've now defined our app, but we want to run it. Let's add a line at the bottom of our code to run this. 
+We've now defined our app, but it won't do anything unless we run it. Let's add a line at the bottom of our code to run this. 
 ```python
 app.run(host='0.0.0.0')
 ```
-This runs our newly created app on port 8080, which is the port repl.it allows for webrequests without specifying a port. (If you wanted to use another port, you would have to manually specify it in the URL.)
+This runs our newly created app on the default port, 5000. It doesn't really matter which port you use because repl.it makes it possible to use any port you want here (as long as it's not port 80).
 
 ## Adding Routes
 Right now, our app is kind of useless. If you run it, it should start a new webserver, but it won't do anything. Let's start by creating our first route.
@@ -65,10 +65,18 @@ Right now, our app is kind of useless. If you run it, it should start a new webs
 def helloworld():
 	return("Hello World!")
 ```
-The first line adds a [decorator](https://pythonbasics.org/decorators/) that tells Flask to treat the function as a route. A route is essentially an path that we can send a request to. Flask handles routes by creating functions, the return values of which Flask displays to the user. This function creates a return value of "Hello World!"
+The first line adds a [decorator](https://pythonbasics.org/decorators/) that tells Flask to treat the function as a route. A route is essentially an path that we can send a request to. 
+You can see routes being used in almost any website - they use the `/` character to specify a route. For example, you can see `https://www.iana.org/domains/reserved` uses `/` to indicate that from the main site, you want to go to `domains`, and from there you want to go to `reserved`.
+In Flask, `/` without any text after it indicates that this is the route you'll see when first going to the URL. 
+Flask handles routes by creating functions, the return values of which Flask displays to the user. In this function we see: 
+```python
+	return("Hello World!")
+```
+This function has a return value of "Hello World!" so that's what Flask will display to the user.
+
 Repl.it should automatically open a panel to allow you to view your Flask app. It should also have a URL to the app. 
 ![Link](https://cloud-94isv6yfc.vercel.app/0image.png)
-Open the URL in a new tab and you should see "Hello World!" displayed. Congratulations, you've successfully finished creating your first route!
+If you open the URL in a new tab and you should see "Hello World!" displayed. Congratulations, you've successfully finished creating your first route!
 
 Now let's start on the routes we want to define for our webserver to handle logging in.
 
