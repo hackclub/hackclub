@@ -290,6 +290,6 @@ Now that you've managed to build a simple Todo list bot, build upon it and MAKE 
 | ------------- | -------------------------------- | ----------- |
 | [Here](https://repl.it/@KhushrajRathod/TodoSlackApp-Markable) | "@Todo List Plus" | This todo list bot let's you mark items as done (and un-mark them) without removing them from the todo list by striking through them. |
 | [Here](https://repl.it/@KhushrajRathod/TodoSlackApp-Random) | "@Todo List Random" | This todo list bot simply doesn't like listening to it's users and keeps replying with random messages. |
-| [Here]()      | [Preview]()                      | This todo list bot maintains a generic todo list that everyone can add to and remove from |
+| [Here](https://TodoSlackApp-Community.khushrajrathod.repl.co) | "@Todo List Community" | This todo list bot maintains a generic todo list that everyone can add to and remove from |
 
 Did you make something awesome? Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6) in the Hack Club Slack and tag me with [@KhushrajRathod](https://hackclub.slack.com/team/U01C21G88QM)!
