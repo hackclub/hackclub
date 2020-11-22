@@ -71,7 +71,7 @@ firebase.initializeApp(config)
 
 After copying the code snippet above, head back to Firebase and select the `Auth` tab on the left-hand side. Select `SET UP SIGN-IN METHOD` from the top menu bar, and click `ADD DOMAIN`. Enter `repl.co` and click `ADD`.
 
-Next, go to the `Database` tab on the left-hand side. Change the Database type by selecting Drop-Down after the word Database to say "Real-time Database".  Within the `Database` tab, we're going to select `Rules`. Here we'll set database permissions for reading and writing to `true`.
+Next, go to the `Database` tab on the left-hand side. Change the Database type by selecting Drop-Down after the word Database to say "Real-time Database". Within the `Database` tab, we're going to select `Rules`. Here we'll set database permissions for reading and writing to `true`.
 
 ```json
 {
@@ -214,7 +214,7 @@ function setup() {
   background(255)
   fill(0)
 
-  pointsData.on('child_added', function(point) {
+  pointsData.on('child_added', function (point) {
     points.push(point.val())
   })
 }
@@ -243,7 +243,7 @@ function setup() {
   createCanvas(400, 400)
   background(255)
   fill(0)
-  pointsData.on('child_added', function(point) {
+  pointsData.on('child_added', function (point) {
     points.push(point.val())
   })
 }
@@ -313,7 +313,7 @@ Type the following at the end of the `setup()` function:
 ```js
 function setup() {
   // ...the rest of the setup function
-  pointsData.on('child_added', function(point) {
+  pointsData.on('child_added', function (point) {
     points.push(point.val())
   })
 
@@ -422,10 +422,10 @@ Right now other screens won't clear when we remove the drawing from Firebase. To
 ```js
 function setup() {
   // ...the rest of the setup function
-  pointsData.on('child_added', function(point) {
+  pointsData.on('child_added', function (point) {
     points.push(point.val())
   })
-  pointsData.on('child_removed', function() {
+  pointsData.on('child_removed', function () {
     points = []
   })
 

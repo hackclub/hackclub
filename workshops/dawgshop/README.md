@@ -273,7 +273,7 @@ With that known, we can infer that `.onclick = function() {}` simply means: When
 To review, so far our code looks like:
 
 ```js
-document.getElementById('go').onclick = function() {}
+document.getElementById('go').onclick = function () {}
 ```
 
 which simply says: Find the element with the id of "go" and listen for a click on this element. If there is a registered click, run this function (block of code.)
@@ -356,7 +356,7 @@ So, we've debunked that mystery!
 ![Scooby Doo](img/scooby.gif)
 
 ```js
-document.getElementById('go').onclick = function() {
+document.getElementById('go').onclick = function () {
   var inputText = $('#text-input').val()
 }
 ```
@@ -386,7 +386,7 @@ Alright, now that we're dawging it up, it's time to display our up text on the p
 Just to make sure, at this point your code should look like this:
 
 ```js
-document.getElementById('go').onclick = function() {
+document.getElementById('go').onclick = function () {
   var inputText = $('#text-input').val()
   var dawgifiedText = inputText + ', dawg'
 }
@@ -430,7 +430,7 @@ Close your curly brackets ( `}` ), slap a semicolon ( `;` ) on the end of it and
 Final Code:
 
 ```js
-document.getElementById('go').onclick = function() {
+document.getElementById('go').onclick = function () {
   var inputText = $('#text-input').val()
   var dawgifiedText = inputText + ', dawg'
   document.getElementById('output').innerHTML = dawgifiedText

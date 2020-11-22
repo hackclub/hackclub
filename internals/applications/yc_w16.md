@@ -61,7 +61,7 @@ https://youtu.be/ZM-FOOCxRoI
 work, that two or more of you created together. Include URLs if possible.**
 
 We wrote a script that automatically exploits referral codes to order food with
-delivery for less than $2 per meal. We used it nearly every weekday from
+delivery for less than \$2 per meal. We used it nearly every weekday from
 November 2014 to June 2015 to cut costs.
 
 **How long have the founders known one another and how did you meet? Have any
@@ -106,7 +106,7 @@ We've been working on hackEDU full-time for 12 months.
 
 **How much revenue?**
 
-$91,715.00 in contributions from foundations and individuals in 2015
+\$91,715.00 in contributions from foundations and individuals in 2015
 
 **If you've applied previously with the same idea, how much progress have you
 made since the last time you applied? Anything change?**
@@ -117,7 +117,7 @@ made since the last time you applied? Anything change?**
   onboarding them in January 2016.
 - Hired Dave Fontenot as our Director of Community, bringing the total team size
   to four people (more about him in the domain expertise section)
-- Secured an additional $80,000 in contributions
+- Secured an additional \$80,000 in contributions
 
 In addition to the above, and perhaps our largest development, we ran a summer
 camp and used it to successfully build a prototype of our club playbook. Here's
@@ -193,7 +193,7 @@ will be able to build better content by being open source.
    to find their own space (the school is their space), recruit external
    volunteers (their friends are volunteers), or hire teachers (they teach using
    our pre-written workshops). This model makes the cost of starting a new club
-   virtually $0 from our end and we think it'll let us scale where others
+   virtually \$0 from our end and we think it'll let us scale where others
    haven't.
 2. While many other initiatives, like Girls Who Code, believe in the power of
    intellectual property, we believe we can build better materials if everyone
@@ -218,7 +218,7 @@ Delaware non-stock non-profit corporation.
 **If you're already incorporated, when were you? If you've had funding, how
 much and from whom?**
 
-hackEDU was incorporated in January 2014. We've secured $91,715.00 in
+hackEDU was incorporated in January 2014. We've secured \$91,715.00 in
 contributions from the following (sorted alphabetically):
 
 [redacted]

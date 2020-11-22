@@ -10,7 +10,7 @@ _**We suggest that you make any other changes to your constitution that you feel
 
 #### Article 1 – Name, Purpose, and Authority
 
-The name of the organization will be “Hack Club” of `YOUR_HIGH_SCHOOL`. Hack Club is a club that teaches coding to students in a way that empowers them to build things and solve problems. 
+The name of the organization will be “Hack Club” of `YOUR_HIGH_SCHOOL`. Hack Club is a club that teaches coding to students in a way that empowers them to build things and solve problems.
 
 This club will be a chapter of the broader "Hack Club" initiative, which provides support and resources to the club itself.
 
@@ -31,11 +31,12 @@ The club officers shall consist of students who work together to lead club activ
 #### Article V – Duties
 
 The club officers will have the following duties:
-  - To plan and prepare club activities
-  - To attend all club meetings
-  - To lead workshops
-  - To maintain contact with the greater Hack Club organization
-  - To continually improve the club based on member feedback
+
+- To plan and prepare club activities
+- To attend all club meetings
+- To lead workshops
+- To maintain contact with the greater Hack Club organization
+- To continually improve the club based on member feedback
 
 #### Article VI – Elections / Succession Plan
 

@@ -55,9 +55,7 @@ Let’s write a function that draws a circle at the cursor’s position whenever
 Navigate to your `script.js` file and create a function called `onMouseMove`:
 
 ```js
-function onMouseMove(event) {
-
-}
+function onMouseMove(event) {}
 ```
 
 Although you can normally call functions whatever you want, it’s important that this function is called `onMouseMove` and passes in an `event`. Paper.js knows what `onMouseMove` is—when it sees this function, it will know to run the code you write inside it every time your mouse moves, and that the `event` you pass in is a [Paper.js Mouse Event](https://paperjs.org/reference/mouseevent/). Cool, right?

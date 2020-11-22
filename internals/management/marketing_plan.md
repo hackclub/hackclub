@@ -1,4 +1,3 @@
-
 # Marketing Strat
 
 Two goals:

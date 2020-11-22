@@ -112,9 +112,17 @@ export function ColorPicker() {
     <div>
       <div />
       <div>
-        <input type="range" max={255} onInput={e => setRed(e.target.value)} />
-        <input type="range" max={255} onInput={e => setGreen(e.target.value)} />
-        <input type="range" max={255} onInput={e => setBlue(e.target.value)} />
+        <input type="range" max={255} onInput={(e) => setRed(e.target.value)} />
+        <input
+          type="range"
+          max={255}
+          onInput={(e) => setGreen(e.target.value)}
+        />
+        <input
+          type="range"
+          max={255}
+          onInput={(e) => setBlue(e.target.value)}
+        />
       </div>
     </div>
   )
@@ -142,9 +150,17 @@ export function ColorPicker() {
     <div>
       <div style={sx} />
       <div>
-        <input type="range" max={255} onInput={e => setRed(e.target.value)} />
-        <input type="range" max={255} onInput={e => setGreen(e.target.value)} />
-        <input type="range" max={255} onInput={e => setBlue(e.target.value)} />
+        <input type="range" max={255} onInput={(e) => setRed(e.target.value)} />
+        <input
+          type="range"
+          max={255}
+          onInput={(e) => setGreen(e.target.value)}
+        />
+        <input
+          type="range"
+          max={255}
+          onInput={(e) => setBlue(e.target.value)}
+        />
       </div>
     </div>
   )
@@ -185,13 +201,13 @@ export function List() {
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
-      .then(res => res.json())
-      .then(res => setPeople(res))
+      .then((res) => res.json())
+      .then((res) => setPeople(res))
   })
 
   return (
     <div>
-      {people.map(person => (
+      {people.map((person) => (
         <li key={person.name}>{person.name}</li>
       ))}
     </div>
@@ -208,18 +224,15 @@ export function List() {
   const [people, setPeople] = useState([])
   const [run, setRun] = useState(0)
 
-  useEffect(
-    () => {
-      fetch('https://jsonplaceholder.typicode.com/users')
-        .then(res => res.json())
-        .then(res => setPeople(res))
-    },
-    [run]
-  )
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((res) => res.json())
+      .then((res) => setPeople(res))
+  }, [run])
 
   return (
     <div>
-      {people.map(person => (
+      {people.map((person) => (
         <li key={person.name}>{person.name}</li>
       ))}
     </div>

@@ -36,5 +36,5 @@ _By the end of 2019, how can Hack Club become a quickly-growing, yet efficient a
 - **Be a financially secure organization**
   - Don't have to worry about money
   - Have low unit costs
-  
+
 _From [here](https://goo.gl/photos/PfmqqVJC34T2WMwJ7). Created during planning exercise with Angela._

@@ -1,15 +1,15 @@
-var player;
+var player
 
 function setup() {
-  createCanvas(250, 500);
+  createCanvas(250, 500)
 
-  player = createSprite(125, 400, 50, 50);
+  player = createSprite(125, 400, 50, 50)
 }
 
 function draw() {
-  background(255, 240, 220);
-  drawSprites();
+  background(255, 240, 220)
+  drawSprites()
 
-  player.position.x = mouseX;
-  player.position.y = mouseY;
+  player.position.x = mouseX
+  player.position.y = mouseY
 }

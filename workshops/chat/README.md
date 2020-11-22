@@ -73,8 +73,8 @@ Add a div to store message history in the **body**, above the script tags. We wi
 Put these two inputs into the **body**, below the `div` we just created, and above the script tags:
 
 ```html
-<input type="text" id="nameInput" placeholder="Name">
-<input type="text" id="messageInput" placeholder="Message">
+<input type="text" id="nameInput" placeholder="Name" />
+<input type="text" id="messageInput" placeholder="Message" />
 ```
 
 These two input tags allow us to set a name for the user and allow the user to send a message: whatever is typed in `messageInput`.

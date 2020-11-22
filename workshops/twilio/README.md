@@ -268,7 +268,7 @@ Listen for messages and run the given function whenever one is received.
 
 ```js
 // When a text message is received...
-Twilio.listenForMessages(function(msg) {
+Twilio.listenForMessages(function (msg) {
   // log the received message to the console
   console.log(msg.body)
 })
@@ -280,7 +280,7 @@ Get the most recently received text message.
 
 ```js
 // Get the most recent text message...
-Twilio.getLatestMessage(function(msg) {
+Twilio.getLatestMessage(function (msg) {
   // And once it's retrieved, log it to the console
   console.log(msg)
 })
@@ -291,7 +291,7 @@ Twilio.getLatestMessage(function(msg) {
 Retrieve all of the received text messages.
 
 ```js
-Twilio.getAllMessages(function(messageArray) {
+Twilio.getAllMessages(function (messageArray) {
   // Print the number of received messages
   console.log(messageArray)
 })

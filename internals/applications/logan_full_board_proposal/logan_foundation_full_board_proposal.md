@@ -33,7 +33,7 @@ in.
 
 ### Amount Requested
 
-$75,000
+\$75,000
 
 ### The Payment
 
@@ -85,7 +85,7 @@ this because we don't have to adhere to testing standards). Since our clubs are
 just regular school clubs, like a chess club, our leaders don't need to find
 their own space (the school is their space), recruit external volunteers (their
 friends are volunteers), or hire teachers (they teach using our pre-written
-workshops). This model makes the cost of starting a new club virtually $0 and we
+workshops). This model makes the cost of starting a new club virtually \$0 and we
 think it'll let us scale and reach new audiences where others haven't.
 
 [0] https://docs.google.com/document/d/1gySkItxiJn_vwb8HIIKNXqen184mRtzDX12cux0ZgZk/pub
@@ -141,7 +141,7 @@ Key achievements:
     course average [0])
   - 37% of club members are black or Hispanic (7x industry average [1])
 - 48 schools are on our waitlist, which we'll begin onboarding from January 2015
-- Raised $91,715.00 in support from The Reva & David Logan Foundation, Thiel
+- Raised \$91,715.00 in support from The Reva & David Logan Foundation, Thiel
   Capital, and individual supporters
 - Mentioned in:
   - California Sunday magazine (cover story, LA Times & SF Chronicle, 400k+
@@ -274,12 +274,12 @@ fundraising efforts?_
 We don't currently have a board of directors, but we've been very fortunate to
 grow and maintain an exceptionally talented team of advisors.
 
-- Tom Gruber - Inventor of Siri (sold to Apple for $200M, installed on every
+- Tom Gruber - Inventor of Siri (sold to Apple for \$200M, installed on every
   iPhone, iPod Touch, and iPad manufactured since October 2012)
-- Tom Preston-Werner - Co-founder and former CEO of GitHub (valued at $2B, over
+- Tom Preston-Werner - Co-founder and former CEO of GitHub (valued at \$2B, over
   10M users)
 - Cary Rosenzweig - Former CEO of IMVU (3M active users, brought the company to
-  $50M/year in revenue)
+  \$50M/year in revenue)
 - Quinn Slack - Founder of Sourcegraph & Blend Labs, early employee at Palantir
 - Pierre Arys - Founder of Bookneto (acquired), early employee at Addepar
 

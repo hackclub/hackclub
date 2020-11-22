@@ -65,8 +65,8 @@ https://youtu.be/RxdJ2zDuiV0
 work, that two or more of you created together. Include URLs if possible.**
 
 We wrote a script that exploits referral codes to order food and delivery for
-less than $2 per meal. We've been using it nearly every weekday since November
-to cut costs. 
+less than \$2 per meal. We've been using it nearly every weekday since November
+to cut costs.
 
 https://github.com/zachlatta/2-dollar-dinosaurs
 
@@ -170,7 +170,7 @@ Additionally, since last applying, we:
     on free or reduced lunch.
 - Brought on a full-time volunteer and two part-time volunteers.
 
-We have also secured a small amount of funding (~$10k).
+We have also secured a small amount of funding (~\$10k).
 
 **If you have already participated or committed to participate in an incubator,
 "accelerator" or "pre-accelerator" program, please tell us about it.**
@@ -184,7 +184,7 @@ When in high school, Zach wanted a community of other people to build things
 with at his school because he didn't feel a sense of belonging. He started a
 programming club to create this community. By the end of its 2nd year, the
 members of his club launched games on the Android Play Store, won high-profile
-hackathons, founded a web design firm, and secured over $30,000 in investment.
+hackathons, founded a web design firm, and secured over \$30,000 in investment.
 After meeting other high school students who had also started programming
 clubs, he decided to start hackEDU to scale the model. Being 17, he is the age
 of our target demographic and has made himself a leader in the high school
@@ -240,7 +240,7 @@ corporation.
 much and from whom?**
 
 HackEDU was incorporated in January of 2014. We've secured a small amount
-($10k) of funding from various corporate sponsors and private donors.
+(\$10k) of funding from various corporate sponsors and private donors.
 
 **Have you obtained your 501(c)(3) tax-exempt status yet?**
 
@@ -334,7 +334,7 @@ https://twitter.com/zachlatta
 (non-computer) system to your advantage.**
 
 I hacked my high school education. I exploited a loophole in the California
-K-12 education system to get twice the credits in half the time.  College
+K-12 education system to get twice the credits in half the time. College
 credits count for twice the amount of high school credits and for core classes,
 like language, count for four times the credits. By taking college level
 classes full-time, I could have graduated in two years--but I ended up testing

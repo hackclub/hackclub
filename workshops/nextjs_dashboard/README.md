@@ -130,11 +130,11 @@ class Weather extends Component {
     const url =
       'https://cors-anywhere.herokuapp.com/https://api.forecast.io/forecast/'
 
-    const success = position => {
+    const success = (position) => {
       const { latitude, longitude } = position.coords
       fetch(`${url}${API_KEY}/${latitude},${longitude}`)
-        .then(res => res.json())
-        .then(forecast => this.setState({ forecast, currently: 'success' }))
+        .then((res) => res.json())
+        .then((forecast) => this.setState({ forecast, currently: 'success' }))
         .catch(() => this.setState({ currently: 'error' }))
     }
 
@@ -205,8 +205,8 @@ class News extends Component {
       'https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey='
 
     fetch(url + API_KEY)
-      .then(res => res.json())
-      .then(news => this.setState({ news, currently: 'success' }))
+      .then((res) => res.json())
+      .then((news) => this.setState({ news, currently: 'success' }))
       .catch(() => this.setState({ currently: 'error' }))
   }
 
@@ -221,7 +221,7 @@ class News extends Component {
           <p>There was an error :(</p>
         ) : (
           <ul>
-            {news.articles.map(article => (
+            {news.articles.map((article) => (
               <li key={article.url}>
                 <a href={article.url}>{article.title}</a>
               </li>
@@ -277,8 +277,8 @@ class News extends Component {
       'https://newsapi.org/v1/articles?source=google-news&sortBy=top&apiKey='
 
     fetch(url + API_KEY)
-      .then(res => res.json())
-      .then(news => this.setState({ news, currently: 'success' }))
+      .then((res) => res.json())
+      .then((news) => this.setState({ news, currently: 'success' }))
       .catch(() => this.setState({ currently: 'error' }))
   }
 
@@ -293,7 +293,7 @@ class News extends Component {
           <p>There was an error :(</p>
         ) : (
           <ul>
-            {news.articles.map(article => (
+            {news.articles.map((article) => (
               <li key={article.url}>
                 <a href={article.url}>
                   <strong>{article.title}</strong>

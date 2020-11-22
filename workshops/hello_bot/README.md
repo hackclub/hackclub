@@ -33,7 +33,7 @@ bot.login('token')
 `token` is a placeholder for the bot's token. `discord.js` is event-based, meaning we set up listeners for the events that we want to respond to. The main one we're going to work with is `message`, this event will be fired anytime a message is sent in a server your bot is a member of. As long as the bot has privileges to read the channel the message was sent in. To add a listener for the `message` event we can use the following code:
 
 ```js
-bot.on('message', message => {
+bot.on('message', (message) => {
   console.log(message.content)
 })
 ```
@@ -58,7 +58,7 @@ const prefix = 'h!'
 Now, we will update our listener function to check that the message starts with our prefix. The following is what the updated listener should look like:
 
 ```js
-bot.on('message', message => {
+bot.on('message', (message) => {
   if (!message.content.startsWith(prefix)) return
   console.log(message.content)
 })
@@ -67,7 +67,7 @@ bot.on('message', message => {
 This code will check for the prefix, and if the message doesn't start with it it will exit. If it contains the prefix it will print the entire message to the console. However, to get the actual command we will need to remove the prefix from the message string:
 
 ```js
-bot.on('message', message => {
+bot.on('message', (message) => {
   if (!message.content.startsWith(prefix)) return
   var command = message.content.slice(prefix.length)
   console.log(command)
@@ -77,7 +77,7 @@ bot.on('message', message => {
 This code will now only print the command from the message. Now we should actually have the bot send a message in Discord! For this workshop, the command will be `hello` and the response from the bot will be `world`. We can do that by updating the listener to the following:
 
 ```js
-bot.on('message', message => {
+bot.on('message', (message) => {
   if (!message.content.startsWith(prefix)) return
   var command = message.content.slice(prefix.length)
   if (command == 'hello') {
@@ -98,7 +98,7 @@ If you followed this workshop to a t, which is wrong. Then your code should look
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 
-bot.on('message', message => {
+bot.on('message', (message) => {
   if (!message.content.startsWith(prefix)) return
   var command = message.content.slice(prefix.length)
   if (command == 'hello') {

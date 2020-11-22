@@ -2,7 +2,7 @@
 
 #### Article 1 – Name, Purpose, and Authority
 
-The name of the organization will be “Hack Club” of Berkeley High School. Hack Club is a club that teaches coding to students in a way that empowers them to build things and solve problems. 
+The name of the organization will be “Hack Club” of Berkeley High School. Hack Club is a club that teaches coding to students in a way that empowers them to build things and solve problems.
 
 This club will be a chapter of the broader "Hack Club" initiative, which provides support and resources to the club itself.
 
@@ -19,18 +19,20 @@ Tuesday meetings will consist of a guided workshop in which students will famili
 #### Article IV – Club Officers
 
 The club officers shall consist of the following:
-  - Presidents: Students who take charge of leading the club and communicating with the Hack Club organization. There must be at least one and no more than three active presidents at one time.
+
+- Presidents: Students who take charge of leading the club and communicating with the Hack Club organization. There must be at least one and no more than three active presidents at one time.
 
 #### Article V – Duties
 
 The club officers will have the following duties:
-  - To plan and prepare club activities
-  - To attend all club meetings
-  - To lead workshops
-  - To maintain contact with the greater Hack Club organization
-  - To manage finances or logistics if the need arises
-  - To help club members with any issues and encourage them to use their skills to become self-sufficient learners
-  - To continually improve the club based on member feedback
+
+- To plan and prepare club activities
+- To attend all club meetings
+- To lead workshops
+- To maintain contact with the greater Hack Club organization
+- To manage finances or logistics if the need arises
+- To help club members with any issues and encourage them to use their skills to become self-sufficient learners
+- To continually improve the club based on member feedback
 
 #### Article VI – Elections / Succession Plan
 

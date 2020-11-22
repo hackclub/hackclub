@@ -42,8 +42,7 @@ From there, clear the contents of `index.html` and paste in the following
   <head>
     <title>That Was Easy</title>
   </head>
-  <body>
-  </body>
+  <body></body>
 </html>
 ```
 
@@ -100,7 +99,7 @@ Lastly, we'll add our `style.css` to the HTML file. Add it to the **head** of `i
 ```html
 <head>
   <title>That Was Easy</title>
-  <link href="style.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
 </head>
 ```
 
@@ -111,7 +110,7 @@ Lastly, we'll add our `style.css` to the HTML file. Add it to the **head** of `i
 <html>
   <head>
     <title>That Was Easy</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -148,7 +147,7 @@ Now `index.html` looks like this:
 <html>
   <head>
     <title>That Was Easy</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <button>Easy</button>
@@ -176,7 +175,7 @@ Our HTML now looks like this:
 <html>
   <head>
     <title>That Was Easy</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <button id="easy">Easy</button>

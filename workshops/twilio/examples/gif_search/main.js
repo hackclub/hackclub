@@ -8,17 +8,13 @@ Twilio.listenForMessages(function (msg) {
   searchGIF(msg.body)
     // then send the GIF we find to the number that messaged us.
     .then(function (gifURL) {
-      Twilio.sendMessage(msg.from, gifURL);
-    });
-});
-
-
+      Twilio.sendMessage(msg.from, gifURL)
+    })
+})
 
 // The below code consists of two functions that make the above code work.
 // You're not expected to know how it works, but you're welcome to check it out
 // if you'd like!
-
-
 
 // This function searches https://giphy.com/ for a GIF that matches searchQuery.
 // This is a function that returns a special value called a Promise. We don't
@@ -35,11 +31,11 @@ Twilio.listenForMessages(function (msg) {
 function searchGIF(searchQuery) {
   return fetch(giphyURL(searchQuery))
     .then(function (resp) {
-      return resp.json();
+      return resp.json()
     })
     .then(function (data) {
-      return data.data[0].images.original.url;
-    });
+      return data.data[0].images.original.url
+    })
 }
 
 // This function creates a URL that we can use to search https://giphy.com/ for
@@ -47,10 +43,14 @@ function searchGIF(searchQuery) {
 function giphyURL(searchQuery) {
   // This is a special public key (like the Twilio auth token) provided by Giphy
   // that allows us to search their website
-  var GIPHY_TOKEN="dc6zaTOxFJmzC";
-  var encodedQuery = encodeURIComponent(searchQuery);
+  var GIPHY_TOKEN = 'dc6zaTOxFJmzC'
+  var encodedQuery = encodeURIComponent(searchQuery)
 
-  return "https://surrogate.hackedu.us/api.giphy.com/v1/gifs/search" +
-    "?q=" + encodedQuery +
-    "&api_key=" + GIPHY_TOKEN;
+  return (
+    'https://surrogate.hackedu.us/api.giphy.com/v1/gifs/search' +
+    '?q=' +
+    encodedQuery +
+    '&api_key=' +
+    GIPHY_TOKEN
+  )
 }

@@ -14,9 +14,9 @@ export class App extends Component {
   componentDidMount() {
     getCoords(({ coords }) => {
       fetch(`${baseurl}${secretKey}/${coords.latitude},${coords.longitude}`)
-        .then(res => res.json())
-        .then(dat => dat.currently)
-        .then(dat =>
+        .then((res) => res.json())
+        .then((dat) => dat.currently)
+        .then((dat) =>
           this.setState({
             isLoading: false,
             requested: dat

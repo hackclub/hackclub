@@ -44,7 +44,7 @@ We'll schedule an onboarding call with you. During the call we'll get to know ea
 
 ### How much does this cost?
 
-$0. Null. Nothing. Nada.
+\$0. Null. Nothing. Nada.
 
 Our entire program is 100% free.
 

@@ -44,10 +44,8 @@ Repl.it gives us some code to start out with, but we're going to start from scra
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-  </body>
+  <head> </head>
+  <body></body>
 </html>
 ```
 
@@ -88,12 +86,10 @@ Go ahead and add your name in a heading tag, and your description in a paragraph
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+  <head> </head>
   <body>
     <h1>Prophet Orpheus</h1>
-    <p>Coder Dino
-    Will code for food</p>
+    <p>Coder Dino Will code for food</p>
   </body>
 </html>
 ```
@@ -103,8 +99,7 @@ If your description was a few paragraphs, or had line breaks, you may have notic
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+  <head> </head>
   <body>
     <h1>Prophet Orpheus</h1>
     <p>Coder Dino</p>
@@ -122,7 +117,9 @@ First, find an image you would like to include in your page. You can find someth
 Images are included in HTML via the image tag, or `<img>`. The image tag has an attribute called `src`, which will hold the _source_ URL of the image you want to display. As an example, if I were to add this picture of Prophet Orpheus, I would right click it and get the source URL, which in this case is https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png, and put it in an image tag like so:
 
 ```html
-<img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
+<img
+  src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"
+/>
 ```
 
 You may have noticed that the image tag doesn't have a closing tag like `<h1></h1>` or `<body></body>`. That's because it is a [void element](https://www.w3.org/TR/html-markup/syntax.html#syntax-elements), meaning that it doesn't have any contents.
@@ -132,10 +129,11 @@ Go ahead and add this into your `index.html` now. I put my picture before my hea
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+  <head> </head>
   <body>
-    <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
+    <img
+      src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"
+    />
     <h1>Prophet Orpheus</h1>
     <p>Coder Dino</p>
     <p>Will code for food</p>
@@ -178,7 +176,9 @@ Our HTML file now looks like so:
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
+    <img
+      src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"
+    />
     <h1>Prophet Orpheus</h1>
     <p>Coder Dino</p>
     <p>Will code for food</p>

@@ -1,0 +1,3 @@
+[build]
+  command = "netlify-lambda build src"
+  functions = "dist/server"

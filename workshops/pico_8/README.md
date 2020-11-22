@@ -12,7 +12,7 @@ I consider Pico to be _the best_ way to introduce newcomers to coding because of
 
 ## Setup
 
-This workshop requires a copy of [Pico-8](https://www.lexaloffle.com/pico-8.php), which unfortunately costs $15. The good news is that Pico is DRM-free, which means that one license can technically be shared with the whole club.
+This workshop requires a copy of [Pico-8](https://www.lexaloffle.com/pico-8.php), which unfortunately costs \$15. The good news is that Pico is DRM-free, which means that one license can technically be shared with the whole club.
 
 It is also strongly recommended that you download this wonderful cheatsheet:
 

@@ -13,6 +13,7 @@ Converting words to colors is a difficult concept to wrap your head around when 
 [**Link to demo code**](https://repl.it/@TechBug2012/colorful-grammar)
 
 ## Getting started
+
 Create a new Repl.it project at [repl.it/languages/html](https://repl.it/languages/html).
 
 To make things a little easier for us, we’re going to be using [jQuery](https://jquery.com), a popular JavaScript library that simplifies writing certain common JavaScript tasks. You’ll get to see how jQuery can be really useful throughout this workshop.
@@ -27,6 +28,7 @@ Let’s start by importing these two libraries. Just before the end of the `<hea
 ```
 
 ## Typing on the screen
+
 Great! Now that we’ve imported the libraries we need to make our website, it’s time to write some code.
 
 In order to use our entire screen as our canvas for writing, we need to create a `<textarea>` in our HTML file and use CSS to make it fill the entire screen.
@@ -50,7 +52,6 @@ Start by adding
 
 ```css
 textarea {
-  
 }
 ```
 
@@ -86,7 +87,8 @@ Your textarea still doesn’t quite fill the whole screen, though—these two pr
 To make the `<body>` fill the whole screen, simply add
 
 ```css
-html, body {
+html,
+body {
   height: 100%;
 }
 ```
@@ -100,7 +102,8 @@ Now the textarea fills the whole screen without overflowing!
 Just to recap—this is what your entire `style.css` file should now look like:
 
 ```css
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -116,13 +119,14 @@ textarea {
 ```
 
 ## Coloring our canvas
+
 Now that we can write anywhere on our screen, it’s time to make use of the libraries we imported earlier.
 
 Navigate to your `script.js` file and add the following:
 
 ```js
 const wordpos = new WordPOS({
-  dictPath: "https://cdn.jsdelivr.net/npm/wordpos-web@1.0.2/dict"
+  dictPath: 'https://cdn.jsdelivr.net/npm/wordpos-web@1.0.2/dict'
 })
 ```
 
@@ -131,9 +135,7 @@ This initializes a new instance of the WordPOS library with a dictionary to iden
 Under this, add
 
 ```js
-$(document).ready(function() {
-
-})
+$(document).ready(function () {})
 ```
 
 This is how jQuery is initialized. Usually when you see a dollar sign in JavaScript, it’s a shorthand for jQuery.
@@ -141,17 +143,15 @@ This is how jQuery is initialized. Usually when you see a dollar sign in JavaScr
 Now, let’s write a function that updates the background of our page inside the jQuery function.
 
 ```js
-$(document).ready(function() {
-  function updateBackground() {
-  
-  }
+$(document).ready(function () {
+  function updateBackground() {}
 })
 ```
 
 Inside the `updateBackground` function, add the line:
 
 ```js
-let sentence = $("#sentence").val()
+let sentence = $('#sentence').val()
 ```
 
 This uses jQuery to get the value of our textarea, which if you recall, we gave the id “sentence”. You could replace `$(“#sentence”)` with `document.getElementById(“sentence”)`, but the jQuery syntax makes it a little bit easier.
@@ -159,28 +159,25 @@ This uses jQuery to get the value of our textarea, which if you recall, we gave 
 To get the number of each type of word used in the sentence, we need yet another function. Add the following inside the `updateBackground` function:
 
 ```js
-wordpos.getPOS(sentence).then(function(types) {
-
-})
+wordpos.getPOS(sentence).then(function (types) {})
 ```
 
 As of now, this is what your `script.js` file should look like:
 
 ```js
 const wordpos = new WordPOS({
-  dictPath: "https://cdn.jsdelivr.net/npm/wordpos-web@1.0.2/dict"
+  dictPath: 'https://cdn.jsdelivr.net/npm/wordpos-web@1.0.2/dict'
 })
 
-$(document).ready(function() {
+$(document).ready(function () {
   function updateBackground() {
-    wordpos.getPOS(sentence).then(function(types) {
-    
-    })
+    wordpos.getPOS(sentence).then(function (types) {})
   }
 })
 ```
 
 ## Converting text to a color
+
 The beauty of this workshop is that there are endless ways you can go about creating a color from all of this data, and each will produce a different result. I’m going to show what I personally came up with, but as you read the next steps, be actively thinking of ways you can change it to do something different.
 
 We’re going to be creating our color with the [HSL (Hue, Saturation, Luminosity) color system](http://thenewcode.com/61/An-Easy-Guide-To-HSL-Color). If you’re not familiar with it, all you need to understand for this demo is that the HSL system uses a color wheel, and you identify a color according to its position on the color wheel in degrees. Also important to note is that colors start a new cycle once you pass 360°. Just like a 60° angle looks the same as a 420 (360 + 60)° angle, 60° on the HSL color system is the same color as 420°: yellow.
@@ -192,32 +189,42 @@ Because we can simply identify a color with a number, one way we can process our
 Create a variable that adds up the frequency of every type of word.
 
 ```js
-var color = types.verbs.length + types.adverbs.length + types.nouns.length + types.adjectives.length + types.rest.length
+var color =
+  types.verbs.length +
+  types.adverbs.length +
+  types.nouns.length +
+  types.adjectives.length +
+  types.rest.length
 ```
 
 Now that we have a number that we can create an HSL color with, let’s create it and change the background color. This is where jQuery becomes really useful: we’re going to change the CSS on our page right from our JavaScript file!
 
 ```js
-$("body").css("background-color", `hsl(${color}, 100%, 50%)`)
+$('body').css('background-color', `hsl(${color}, 100%, 50%)`)
 ```
 
-(Note: in JavaScript, you can use back-ticks instead of quotation marks and concatenate strings using the ${variable} syntax. The dollar sign next to `hsl` is unrelated to jQuery. Learn more about this syntax [here](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings).)
+(Note: in JavaScript, you can use back-ticks instead of quotation marks and concatenate strings using the \${variable} syntax. The dollar sign next to `hsl` is unrelated to jQuery. Learn more about this syntax [here](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings).)
 
 Here’s what your entire `script.js` file should look like after this:
 
 ```js
 const wordpos = new WordPOS({
-  dictPath: "https://cdn.jsdelivr.net/npm/wordpos-web@1.0.2/dict"
+  dictPath: 'https://cdn.jsdelivr.net/npm/wordpos-web@1.0.2/dict'
 })
 
-$(document).ready(function() {
+$(document).ready(function () {
   function updateBackground() {
-    let sentence = $("#sentence").val()
+    let sentence = $('#sentence').val()
 
-    wordpos.getPOS(sentence).then(function(types) {
-      var color = types.verbs.length + types.adverbs.length + types.nouns.length + types.adjectives.length + types.rest.length
+    wordpos.getPOS(sentence).then(function (types) {
+      var color =
+        types.verbs.length +
+        types.adverbs.length +
+        types.nouns.length +
+        types.adjectives.length +
+        types.rest.length
 
-      $("body").css("background-color", `hsl(${color}, 100%, 50%)`)
+      $('body').css('background-color', `hsl(${color}, 100%, 50%)`)
     })
   }
 })
@@ -229,34 +236,40 @@ Right before the last closing curly brace, add these two lines:
 
 ```js
 updateBackground()
-$("#sentence").on("keydown", updateBackground)
+$('#sentence').on('keydown', updateBackground)
 ```
 
 Now, your `script.js` file should look like this:
 
 ```js
 const wordpos = new WordPOS({
-  dictPath: "https://cdn.jsdelivr.net/npm/wordpos-web@1.0.2/dict"
+  dictPath: 'https://cdn.jsdelivr.net/npm/wordpos-web@1.0.2/dict'
 })
 
-$(document).ready(function() {
+$(document).ready(function () {
   function updateBackground() {
-    let sentence = $("#sentence").val()
+    let sentence = $('#sentence').val()
 
-    wordpos.getPOS(sentence).then(function(types) {
-      var color = types.verbs.length + types.adverbs.length + types.nouns.length + types.adjectives.length + types.rest.length
+    wordpos.getPOS(sentence).then(function (types) {
+      var color =
+        types.verbs.length +
+        types.adverbs.length +
+        types.nouns.length +
+        types.adjectives.length +
+        types.rest.length
 
-      $("body").css("background-color", `hsl(${color}, 100%, 50%)`)
+      $('body').css('background-color', `hsl(${color}, 100%, 50%)`)
     })
   }
   updateBackground()
-  $("#sentence").on("keydown", updateBackground)
+  $('#sentence').on('keydown', updateBackground)
 })
 ```
 
 When you run your repl, you should be greeted by a blank red screen. Click on the preview and start typing a bunch of words. You should see the background color change as you type each word!
 
 ## Hacking
+
 Your journey is far from over. There are endless ways you can make this your own. Here are a few suggestions:
 
 1. If you feel like the background color is changing too slowly, try multiplying your `color` variable by a number so that it goes around the HSL color wheel more quickly.

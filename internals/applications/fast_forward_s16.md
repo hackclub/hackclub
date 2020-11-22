@@ -2,7 +2,7 @@
 
 Hack Club's nonprofit Fast Forward application for Summer 2016.
 
-## Application 
+## Application
 
 Note: This application uses Hack Club's AngelList profile to apply.
 
@@ -48,7 +48,7 @@ We already have a working product and need help building a fundraising strategy 
 
 There are 14.9 million high school students in the US, 75% of whom don't have access to coding classes. For us, it's not about beating the competition – there are still 11.2 million students without access. What matters most is finding a model that scales to fill the massive need.
 
-There are a few other organizations in our space, including Girls Who Code, CS First, and Code Club, but none that are both in high schools and fully led by students. By having high schoolers lead the clubs, we're able to bypass the red tape typically associated with bringing computer science to a school or a community. Our leaders don't need to find their own space (the school is their space), recruit external volunteers (their friends are volunteers), or hire teachers (they teach using our pre-written workshops). This model makes the cost of starting a new club virtually $0 from our end and we think it'll let us scale where others haven't.
+There are a few other organizations in our space, including Girls Who Code, CS First, and Code Club, but none that are both in high schools and fully led by students. By having high schoolers lead the clubs, we're able to bypass the red tape typically associated with bringing computer science to a school or a community. Our leaders don't need to find their own space (the school is their space), recruit external volunteers (their friends are volunteers), or hire teachers (they teach using our pre-written workshops). This model makes the cost of starting a new club virtually \$0 from our end and we think it'll let us scale where others haven't.
 
 **Who is your target audience? What's your strategy for reaching, acquiring, engaging, and retaining that audience?**
 
@@ -66,7 +66,7 @@ It's hard to say whether I failed or succeeded, since there's so much ahead. But
 
 **Please describe your current funding situation. What is your annual budget for this calendar year and next? Do you have any funding secured? What's your funding strategy for the next 6 months? The next 2 years?**
 
-We raised money for the first time in 2015. So far we've raised $165,765.00 from The Reva & David Logan Foundation, Joe Lonsdale, and other individual contributors.
+We raised money for the first time in 2015. So far we've raised \$165,765.00 from The Reva & David Logan Foundation, Joe Lonsdale, and other individual contributors.
 
 We don't have a very formal annual budget, but we're currently budgeting to spend $5,000 each month (and spending slightly less than this). We currently have $90k in the bank.
 

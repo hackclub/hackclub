@@ -1,0 +1,18 @@
+{
+  "name": "netlify-functions",
+  "version": "0.1.0",
+  "description": "playground",
+  "private": true,
+  "scripts": {
+    "start": "netlify-lambda serve src/lambda",
+    "build": "netlify-lambda build src/lambda"
+  },
+  "author": "shreygupta",
+  "license": "MIT",
+  "devDependencies": {
+    "netlify-lambda": "^0.4.0"
+  },
+  "dependencies": {
+    "nodemailer": "^6.4.14"
+  }
+}

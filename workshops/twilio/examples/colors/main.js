@@ -5,5 +5,5 @@
 // When someone sends a message...
 Twilio.listenForMessages(function (msg) {
   // Set the website's background color to what they text us
-  document.body.style.backgroundColor = msg.body;
-});
+  document.body.style.backgroundColor = msg.body
+})

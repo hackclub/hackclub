@@ -313,7 +313,7 @@ this.methodName = this.methodName.bind(this)
 ### To pass additional parameters with the method, you must use a function
 
 ```js
-e => {
+;(e) => {
   this.methodName(e, data)
 }
 ```

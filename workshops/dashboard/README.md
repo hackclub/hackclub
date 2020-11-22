@@ -125,9 +125,12 @@ function success(position) {
   // API request:
   $.getJSON(
     url +
-      '?units=imperial&lat=' + latitude +
-      '&lon=' + longitude +
-      '&appid=' + apiKey,
+      '?units=imperial&lat=' +
+      latitude +
+      '&lon=' +
+      longitude +
+      '&appid=' +
+      apiKey,
     function (data) {
       weather.text(
         'Based on your current location, it is ' + main.temp + '°F right now'
@@ -165,9 +168,12 @@ function loadWeather() {
     // API request:
     $.getJSON(
       url +
-        '?units=imperial&lat=' + latitude +
-        '&lon=' + longitude +
-        '&appid=' + apiKey,
+        '?units=imperial&lat=' +
+        latitude +
+        '&lon=' +
+        longitude +
+        '&appid=' +
+        apiKey,
       function (data) {
         weather.text(
           'Based on your current location, it is ' + main.temp + '° F right now'

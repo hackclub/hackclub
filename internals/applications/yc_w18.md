@@ -52,7 +52,7 @@ zach@hackclub.com
 
 ### Please tell us about an interesting project, preferably outside of class or work, that two or more of you created together. Include URLs if possible.
 
-When Hack Club was first getting started, we wrote a script that automatically exploited referral codes across multiple services to order food, delivery included, for less than $2 per meal to cut costs.
+When Hack Club was first getting started, we wrote a script that automatically exploited referral codes across multiple services to order food, delivery included, for less than \$2 per meal to cut costs.
 
 We even had a regional manager from one of the companies we were ordering through reach out and, after having lunch with us, encourage us to continue using the script.
 
@@ -184,7 +184,7 @@ This is why our clubs aren't just clubs. They expand beyond the school. They bui
 
 We expect to take a three-tiered approach to funding, where 1/3rd of revenue is from major gifts, 1/3rd from corporate sponsorships, and 1/3rd from program dues.
 
-Assuming we charged $25 in dues annually, we'd expect to make $60k from dues, $60k from sponsorships, and $60k from major gifts, totaling to $180k annually at our current size (note: this is a *very* rough estimate and we'd need to spend a lot of time thinking through how to structure the dues).
+Assuming we charged $25 in dues annually, we'd expect to make $60k from dues, $60k from sponsorships, and $60k from major gifts, totaling to \$180k annually at our current size (note: this is a _very_ rough estimate and we'd need to spend a lot of time thinking through how to structure the dues).
 
 ## Formation
 
@@ -240,11 +240,11 @@ Hacker News
 
 ## Founder
 
-### Name* (Required)
+### Name\* (Required)
 
 Zach Latta
 
-### Email Address* (Required)
+### Email Address\* (Required)
 
 zach@hackclub.com
 

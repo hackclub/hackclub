@@ -86,7 +86,7 @@ import ReactDOM from 'react-dom'
 import { App } from './components/App'
 
 export const secretKey = '<YOUR_SECRET_KEY>'
-export const getCoords = cb => navigator.geolocation.getCurrentPosition(cb)
+export const getCoords = (cb) => navigator.geolocation.getCurrentPosition(cb)
 export const baseurl =
   'https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/'
 
@@ -126,9 +126,9 @@ export class App extends Component {
   componentDidMount() {
     getCoords(({ coords }) => {
       fetch(`${baseurl}${secretKey}/${coords.latitude},${coords.longitude}`)
-        .then(res => res.json())
-        .then(dat => dat.currently)
-        .then(requested => {
+        .then((res) => res.json())
+        .then((dat) => dat.currently)
+        .then((requested) => {
           this.setState({ isLoading: false, requested })
         })
     })
