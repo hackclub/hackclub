@@ -1,7 +1,8 @@
 ---
 name: 'Weather Grapher'
 description: 'Graph the average temperature in any major city by using a Web API'
-author: '@shayanhalder',
+author: '@shayanhalder'
+img: 'https://cloud-hj0zqh901.vercel.app/0summary_image.png'
 ---
 
 # Overview
