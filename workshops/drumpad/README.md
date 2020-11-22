@@ -20,11 +20,12 @@ _Preview of the Drum Pad we are going to be creating_
 Apart from building the drum pad, you will also be learning about different types of events, functions, styling, and more with Vanilla JavaScript, HTML, and CSS. This whole workshop is customizable according to you, and the best part is, it will take less than 20 minutes to complete! 
 
 [Link to demo](https://drum.emmanuel39hanks.repl.co)
+[Link to code](https://github.com/emmanuel39hanks/beat_maker)
 
 ## Getting started
 
 Let's start by setting up our IDE (Integrated Development Environment) on rept.it (https://repl.it/), a free, online code editor.
-To start your coding right away, navigate to https://repl.it/languages/html, and you will have your whole setup ready when you sign up.
+To start your coding right away, navigate to (https://repl.it/languages/html), and you will have your whole setup ready when you sign up.
 
 You will see that there are already three files named HTML, CSS, and JavaScript. Navigate to your `index.html` file, and we can start working on the structure of our drum pads in HTML. 
 
@@ -84,7 +85,7 @@ And if we run our code, it should look like this:
 
 # CSS Part:
 
-Not so compelling, right? We will now write some CSS to add stlying, which make our drum pad look prettier. Let's do that!
+But this doesn't look that nice, right? We will write some CSS to add stlying, which make our drum pad look prettier. Let's do that!
 
 Just before the end of your `<head>` tag, link your CSS file:
 
@@ -352,7 +353,7 @@ We will then add code that adds hovering effects, inactive or active states to o
 
 We are done with our styling and layout:
 
-![Preview of HTML with our finished layout CSS applied, and our pad borders colored](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
+![Preview of HTML with finished layout CSS applied, and our pad borders colored](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
 
 ## JavaScript Part:
 
