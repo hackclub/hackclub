@@ -720,6 +720,7 @@ async fn main() {
 </details>
 
 Alright, take a quick break and relax a little before we jump into coding the rest of our bot!
+
 ---
 
 ## Reacting to reactions
