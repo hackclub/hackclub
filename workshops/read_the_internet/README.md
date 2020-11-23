@@ -1,8 +1,8 @@
 ---
-name: Reading the Internet
-description: Use python to read html and extract any information you can find!
+name: 'Reading the Internet'
+description: 'Use python to read html and extract any information you can find!'
 author: '@RafaelCenzano'
-img: https://cloud-p5pdve0kf.vercel.app/2webscrape.jpg
+img: 'https://cloud-p5pdve0kf.vercel.app/2webscrape.jpg'
 ---
 
 # Reading the Internet
