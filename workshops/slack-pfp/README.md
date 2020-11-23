@@ -106,7 +106,7 @@ An async function is important as it allows us to wait for a line of code to com
 What should we do first? How about setting a profile picture! Inside our `setPFP` function add the following lines. This will fetch the contents of the image r
 
 ```javascript
-const image = await axios.get(image.afternoon, {
+const image = await axios.get(images.afternoon, {
 	responseType: "arraybuffer",
 });
 ```
@@ -134,7 +134,7 @@ Check Slack... do you see any difference in your profile? Fingers crossed you do
 
 Sooooo it may be the afternoon for you but it may not ¯\\\_(ツ)_/¯
 
-Try changing `image.afternoon` to `image.morning` and running your program. You should see a different image as your profile picture after a couple of seconds.
+Try changing `images.afternoon` to `images.morning` and running your program. You should see a different image as your profile picture after a couple of seconds.
 
 To do so we'll need to know how many hours have passed in the day, right?
 
