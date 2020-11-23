@@ -18,7 +18,7 @@ We're going to host our Discord bot on [repl.it](https://repl.it).
 
 To get started, [create an account](https://repl.it/signup). I personally recommend you sign in with your GitHub account if you have one, but email is fine too.
 
-Now let's create a new Rust project by clicking [this link](https://repl.it/languages/rust):
+Now let's create a new Rust project by going to https://repl.it/languages/rust:
 
 ![Initial Rust project](https://cloud-gjndvi3vx.vercel.app/0image.png)
 
@@ -26,7 +26,7 @@ Now let's create a new Rust project by clicking [this link](https://repl.it/lang
 
 Right now, our Rust program isn't a Cargo project. That means it won't be able to import any libraries.
 
-Let's fix that by running `cargo init --name polling-bot` in the terminal. You can replace `polling-bot` with whatever you want your program to be named. This should create two new files on the side: `.gitignore` and `Cargo.toml`, which we'll be using to add the Serenity library:
+Let's fix that by running `cargo init --name polling-bot` in the terminal. This command initializes a new Cargo project for us. You can replace `polling-bot` with whatever you want your program to be named. This should create two new files on the side: `.gitignore` and `Cargo.toml`, which we'll be using to add the Serenity library:
 
 ![New files created by cargo init](https://cloud-bxfulgo22.vercel.app/0image.png)
 
@@ -42,6 +42,13 @@ Replace the contents of `main.rs` with this:
 fn main() { std::process::Command::new("cargo").arg("run").status().unwrap(); }
 ```
 
+<details>
+<summary>Magic?!?!?!?</summary>
+
+This line seems kinda magic but it's just running `cargo run` from a Rust program. Repl.it is kind of weird in this way since it doesn't _natively_ support Cargo projects but it mostly works if we do this. If you're running this code locally, you can skip this and the `real_main.rs` and just write all your code in `main.rs`.
+
+</details>
+
 This is kind of a hack but it's necessary to make sure that the environment variables are passed through correctly. You'll be doing all your coding in `real_main.rs`.
 
 One last thing: Update the path to the source file in `Cargo.toml`, changing `main.rs` to `real_main.rs`. Your Cargo.toml should look like this:
@@ -54,7 +61,7 @@ Serenity is a Rust _crate_ (or library) that helps you write Discord bots in Rus
 
 ### Adding the bot token
 
-Now, we need to create a new bot on the [Discord Developer Portal](https://discord.com/developers/applications). Click "New Application" in the top right corner, highlighted in red here:
+Now, we need to create a new bot in the [Discord Developer Portal](https://discord.com/developers/applications). Click "New Application" in the top right corner, highlighted in red here:
 
 ![Discord Developer Portal- New Application](https://cloud-4fax6pert.vercel.app/0inkedscreenshot_2020-11-19_discord_developer_portal_____api_docs_for_bots_and_developers_li.jpg)
 
@@ -82,7 +89,7 @@ Inside the `.env` file, add a new line that looks like `DISCORD_TOKEN=<token>`. 
 
 ![.env file with DISCORD_TOKEN variable set to your token](https://cloud-nn0n8t195.vercel.app/0inkedscreenshot_2020-11-19_fluffyprevailingmarketing_li.jpg)
 
-Now, let's add the Serenity library! Head over to `Cargo.toml` and add this line under your `[dependencies]` section: `serenity = "0.9.1"`. At the time of writing, the latest version of Serenity is 0.9.1, but you can replace it with the latest version which can be found [here](https://crates.io/crates/serenity).
+Now, let's add the Serenity library! In Rust, projects manage their dependencies using `Cargo.toml`, so that's where we need to add Serenity. Head over to `Cargo.toml` and add this line under your `[dependencies]` section: `serenity = "0.9.1"`. At the time of writing, the latest version of Serenity is 0.9.1, but you can replace it with the latest version which can be found [here](https://crates.io/crates/serenity).
 
 We'll also need another helper library, `tokio`. Add `tokio = { version = "^0.2.23", features = ["macros"] }` to your `Cargo.toml` as well. This library just helps us out with some async stuff, but you don't need to worry too much about it for now. Don't use the latest version of Tokio (0.3 or later) as this will cause incompatibilities with Serenity!
 
@@ -944,7 +951,7 @@ Now that we've let the body update the poll appropriately, we need to update the
 ```
 We're using that `render_message` function we defined earlier (this is why we made it a function 😉) to get the new contents of our message. Then we edit the message's contents.
 
-And that's it! We're done writing our macro! The rest is gonna pretty easy from here since it's just a few more lines!
+And that's it! We're done writing our macro! The rest is gonna be pretty easy from here since it's just a few more lines!
 
 ## Handling reaction events
 
