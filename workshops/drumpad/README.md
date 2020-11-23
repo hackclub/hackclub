@@ -433,8 +433,9 @@ Luckily the code required to playing our sounds is minimal. Let's navigate to ou
 
 ```
 
-And we have built the Drum Pad successfully.
 Try it out by clicking the pads and see the magic!
+If everything works, your drum pad is complete!
+
 
 ![Image](https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif)
  
