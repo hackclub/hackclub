@@ -153,11 +153,8 @@ Note the tabs; these confine statements to a certain block of code. Now, if you 
 
 You have successfully created a secure password system! You can use this to create secure login pages and sign up pages without ever getting hacked! Check out these example uses of the password system you just created:
 
-This example prints out the hashed password in both byte format and string format for you to see and compare!
-[Example1](https://repl.it/@nt998302/Python-Secure-Password-Saver-with-pure-bytes#main.py)
+[This example prints out the hashed password in both byte format and string format for you to see and compare!](https://repl.it/@nt998302/Python-Secure-Password-Saver-with-pure-bytes#main.py)
 
-This example stores the hashed password using a different hash algorithm (md5) and a custom salt!
-[Example2](https://repl.it/@nt998302/Python-Secure-Password-Saver-with-md5-and-custom-salt#main.py)
+[This example stores the hashed password using a different hash algorithm (md5) and a custom salt!](https://repl.it/@nt998302/Python-Secure-Password-Saver-with-md5-and-custom-salt#main.py)
 
-This example takes this workshop to the next level, using repl.it's database system, repldb. It stores the hashed passwords,  using the username as a key. Then, a user can sign into their account, but only with the correct password.
-[Example3](https://repl.it/@nt998302/PS-Ex-1#main.py)
+[This example takes this workshop to the next level, using repl.it's database system, repldb. It stores the hashed passwords,  using the username as a key. Then, a user can sign into their account, but only with the correct password.](https://repl.it/@nt998302/PS-Ex-1#main.py)
