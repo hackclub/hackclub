@@ -39,7 +39,7 @@ Follow these steps:
 
 ![Find node.js in the search box](https://cloud-9vsssxvna.vercel.app/0screenshot_2020-11-16_at_1.29.29_pm.png)
 
-- You now have a Node.js repl setup successfully. Copy the preview URL, we'll need this later for slack's slash command hooks.
+- You now have a Node.js repl setup successfully
 
 ![Arrow pointing to preview URL on top right of repl.it](https://cloud-ccj49d17x.vercel.app/3copyurlfromreplit.png)
 
@@ -72,7 +72,7 @@ Follow these steps:
 
 - Click "Create new command" and fill in the details for your command:
     - Command: /todolist (Note: If you're using the hackclub workspace, you'll need to use a different name for your command, such as /yournametodolist)
-    - Request URL: The URL you copied from Repl.it with /slack/events added at the end. For e.x., if you copied https://TodoSlackApp.khushrajrathod.repl.co, your URL will be https://TodoSlackApp.khushrajrathod.repl.co/slack/events
+    - Request URL: https://yourappname.yourusername.repl.co/slack/events where `yourappname` is your repl's name and `yourusername` is your repl.it username. For e.x., my repl's name is TodoSlackApp and my repl.it username is KhushrajRathod, so my request URL is https://TodoSlackApp.KhushrajRathod.repl.co/slack/events
     - Short Description: Show your todo list
 
 ![Filled in details](https://cloud-ccj49d17x.vercel.app/4createnewcommand.png)
