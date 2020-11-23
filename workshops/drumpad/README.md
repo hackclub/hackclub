@@ -1,6 +1,6 @@
 ---
 name: 'Drum Pad'
-description: 'Creating a Drum Pad in HTML, CSS & JS'
+description: 'Creating a Drum Pad with HTML, CSS & JS'
 author: '@emmanuel39hanks'
 ---
 
@@ -28,7 +28,7 @@ Apart from building the drum pad, you will also be learning about different type
 Let's start by setting up our IDE (Integrated Development Environment) on rept.it (https://repl.it/), a free, online code editor.
 To start your coding right away, navigate to https://repl.it/languages/html, and you will have your whole setup ready when you sign up.
 
-You will see that there are already three files named HTML, CSS, and JavaScript. Navigate to your `index.html` file, and we can start working on the structure of our drum pads in HTML. 
+You will see that there are already three files named HTML, CSS, and JavaScript. Navigate to your `index.html` file, and we can start working on the structure of our drum pads in our HTML file. 
 
 ## HTML Part:
 
