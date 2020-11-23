@@ -1,4 +1,10 @@
-# Logging in With Flask
+---
+name: Logging In
+description: Make a Flask Webserver that allows you to register and log in users.
+author: '@sohamb117'
+---
+
+# Logging in
 
 Open a website, say [Github](https://github.com). Okay, now sign in. What just happened? What did the code do? How does "Logging In" work? Let's try building it ourselves.
 
@@ -7,7 +13,11 @@ We'll have to:
 *  Make app routes that write to and read from a JSON file
 *  Test our webserver with Insomnia.
 
-This workshop assumes a very basic knowledge of Python and HTTP Requests. I've linked a source at the bottom so you can read up on these topics.
+Here's a quick look at what we'll be making: 
+![Gif](https://cloud-1x9c5m3zh.vercel.app/0screen-capture.gif)
+This is a simple backend demo but you can hook this up to ANY frontend you want - and I've provided a demo on how to do that at the bottom.
+
+This workshop does assume a very basic knowledge of Python and HTTP Requests but I hope I've broken things down so that beginners can understand too. I've also linked sources at the bottom so you can read up on these topics.
 
 ## What does Flask do?
 
@@ -277,7 +287,7 @@ What this does NOT have:
 * Encryption
 * CAPTCHA or any anti-bot measures
 
-Note: While you can modify this code to have these features, you should **NEVER** store passwords in plaintext like this webserver does. If you were to implement security features, this webserver would work for login.
+Note: While you can modify this code to have these features, you should **NEVER** store passwords in plaintext like this webserver does. If you were to implement security features, this webserver would work for login. 
 
 ## Hacks and Further Reading
 
@@ -285,6 +295,8 @@ Here are some things to check out or read.
 * [Get and Post Requests](https://www.w3schools.com/tags/ref_httpmethods.asp)
 * [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)
 * [How JSON Works](https://www.tutorialspoint.com/json/json_overview.htm)
+* [Password Hashing and Security](https://thycotic.com/company/blog/2020/05/07/how-do-passwords-work/)
+* [Article on How Login Works](https://iam.harvard.edu/resources/behind-login-screen)
 
 Here are some hacks that show what you can do with this:
 * [Make a frontend with HTML and serve it with Flask too](https://repl.it/@sohamb117/FlaskTutorial-1#main.py)
