@@ -1,12 +1,14 @@
 ---
 name: 'Mad Libs Program'
-description: 'Recreate the game Mad Libs!'
+description: 'Recreate Mad Libs!'
 author: '@JakeGerber'
 ---
 
-# Recreate the game Mad Libs!
+# Recreate Mad Libs!
 
 <img src="https://cloud-9ppbnfui6.vercel.app/0screenshot__1400_.png" width="380" alt="Mad Libs Example">
+
+<img src="https://media.tenor.com/images/2801410c4dff2f169ebedddacb55dc70/tenor.gif" width="400" alt="Kirby Gif">
 
 # Repl.it Setup
 
@@ -47,6 +49,8 @@ class Program
 
 Let's read the file.
 
+<img src="https://media3.giphy.com/media/Qz6KmDIRiQTfy/source.gif" width="600" alt="Snoopy Happy Gif">
+
 ```c#
 using System;
 using System.IO;
@@ -76,6 +80,8 @@ class Program
 # Inserting the Words
 
 We are creating a for loop to go through the string.
+
+<img src="https://media3.giphy.com/media/Qz6KmDIRiQTfy/source.gif" width="600" alt="Snoopy Happy Gif">
 
 ```c#
 using System;
@@ -182,6 +188,8 @@ if (prompt[i] == '*')
 
 ## Finishing Up
 
+<img src="https://media3.giphy.com/media/Qz6KmDIRiQTfy/source.gif" width="600" alt="Snoopy Happy Gif">
+
 ```c#
 if (prompt[i] == '*')
 {
@@ -223,6 +231,9 @@ class Program
 We are just printing lines to seperate the prompt for organization and then printing it.
 
 # Play Again
+
+<img src="https://media3.giphy.com/media/Qz6KmDIRiQTfy/source.gif" width="600" alt="Snoopy Happy Gif">
+
 ```c#
 using System;
 using System.IO;
