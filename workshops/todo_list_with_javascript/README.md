@@ -208,7 +208,7 @@ const message = document.querySelector(".message");
 ### 2. The event listeners
 Now that we got the selectors, we can add event listeners to them. Event listeners are used to put some event or actions to a section of HTML file. Such as, performing a function on a click of mouse, this is also an event. So here also we will add events. 
 
-To do this we will use the selector name and put `.addEventListener()`, inside the apprentices we will first provide ***event** followed by function we want to call on that event.
+To do this we will use the selector name and put `.addEventListener()`, inside the apprentices we will first provide ***event*** followed by function we want to call on that event.
 There are many types of events, we will use here the `click` event.
 
 Have a look here :point_down:
