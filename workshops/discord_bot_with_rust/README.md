@@ -10,6 +10,283 @@ Discord bots are cool, right? Haven't you ever wanted to make your own?
 
 Well, today we're going to do exactly that, but this time we're using Rust! We're going to build a Discord bot that allows you to setup polls, and updates counts in real-time!
 
+The full code can be viewed and demoed [here](https://repl.it/@anirudhb/Rust-discord-bot-finished). Alternatively, you can open the below section for a full listing.
+
+<details>
+<summary>Full code</summary>
+
+`main.rs`:
+```rust
+fn main() { std::process::Command::new("cargo").arg("run").status().unwrap(); }
+```
+
+`Cargo.toml`:
+```toml
+[package]
+name = "polling-bot"
+version = "0.1.0"
+authors = ["runner"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serenity = "0.9.1"
+tokio = { version = "^0.2.23", features = ["macros"] }
+
+[[bin]]
+name = "polling-bot"
+path = "real_main.rs"
+```
+
+`real_main.rs`:
+```rust
+use serenity::async_trait;
+use serenity::framework::standard::{
+  macros::{command, group},
+  Args, CommandResult, StandardFramework,
+};
+use serenity::model::{
+  channel::{Message, Reaction},
+  gateway::Ready,
+};
+use serenity::prelude::*;
+use std::collections::HashMap;
+use std::sync::Arc;
+use tokio::sync::Mutex;
+use serenity::model::channel::ReactionType;
+use serenity::model::id::{MessageId, ChannelId};
+
+enum ReactionEvent<'a> {
+    Reaction(&'a Reaction),
+    RemoveAll(ChannelId, MessageId),
+}
+
+
+macro_rules! perform_reaction {
+  (($ctx:expr, $reaction_event:expr) $body:expr) => {
+    use ReactionEvent::*;
+    // Discard if it's our own reaction.
+    if let Reaction(r) = $reaction_event {
+        if r.user_id == Some($ctx.cache.current_user_id().await) {
+            println!("Reaction added by self, ignoring");
+            return;
+        }
+    }
+
+    let key = match $reaction_event {
+        Reaction(r) => (r.channel_id, r.message_id),
+        RemoveAll(c, m) => (c, m),
+    };
+
+    // Try to get poll for the given message otherwise return
+    {
+      let poll_data = $ctx.data.read().await;
+      let poll_map = poll_data
+          .get::<PollsKey>()
+          .expect("Failed to retrieve polls map!")
+          .lock()
+          .await;
+      if !poll_map.contains_key(&key) {
+          println!("Message not in polls map, ignoring");
+          return;
+      }
+    }
+
+    // reretrieve the map as writable
+    let mut poll_data = $ctx.data.write().await;
+    let mut poll_map = poll_data
+        .get_mut::<PollsKey>()
+        .expect("Failed to retrieve polls map!")
+        .lock()
+        .await;
+    let poll = match poll_map.get_mut(&key) {
+        None => {
+            println!("Failed to get poll for {:?}", key);
+            return;
+        }
+        Some(poll) => poll,
+    };
+
+    // nudges Rust towards the right type :)
+    fn get_f<F: FnOnce(&mut Poll, Option<usize>)>(f: F) -> F {
+        f
+    }
+    let f = get_f($body);
+
+    match $reaction_event {
+      Reaction(r) => match r.emoji {
+        ReactionType::Unicode(ref s) => {
+          let c = s.chars().nth(0).unwrap();
+          let end_char = std::char::from_u32('🇦' as u32 + poll.answers.len() as u32 - 1)
+              .expect("Failed to format emoji");
+          if c < '🇦' || c > end_char {
+              println!("Emoji is not regional indicator or is not in range, ignoring");
+              return;
+          }
+          let number = (c as u32 - '🇦' as u32) as usize;
+
+          f(poll, Some(number));
+        }
+        _ => {
+          println!("Unknown emoji in reaction, ignoring");
+          return;
+        }
+      },
+      RemoveAll(..) => f(poll, None),
+    }
+
+    let content = render_message(&poll);
+    key.0
+        .edit_message(&$ctx.http, key.1, |edit| edit.content(&content))
+        .await
+        .expect("Failed to edit message");
+
+    println!("Rerendered message");
+  };
+}
+
+struct Handler;
+
+#[async_trait]
+impl EventHandler for Handler {
+  async fn ready(&self, _: Context, ready: Ready) {
+      println!("Bot ready with username {}", ready.user.name);
+  }
+
+  async fn reaction_add(&self, ctx: Context, add_reaction: Reaction) {
+    println!("Reaction add");
+
+    perform_reaction! { (ctx, ReactionEvent::Reaction(&add_reaction)) |poll, number| {
+      poll.answerers[number.unwrap()] += 1;
+    }}
+  }
+
+  async fn reaction_remove(&self, ctx: Context, removed_reaction: Reaction) {
+    println!("Single reaction remove");
+
+    perform_reaction! { (ctx, ReactionEvent::Reaction(&removed_reaction)) |poll, number| {
+      poll.answerers[number.unwrap()] -= 1;
+    }}
+  }
+
+  async fn reaction_remove_all(&self, ctx: Context, channel_id: ChannelId, removed_from_message_id: MessageId) {
+    println!("All reactions removed");
+
+    perform_reaction! { (ctx, ReactionEvent::RemoveAll(channel_id, removed_from_message_id)) |poll, _| {
+      for answers in poll.answerers.iter_mut() {
+        *answers = 0;
+      }
+    }}
+  }
+}
+
+fn render_message(poll: &Poll) -> String {
+  let mut message_text = format!("**Poll:** {}\n", poll.question);
+  let total_answerers = poll.answerers.iter().sum::<usize>();
+
+  for (i, (answer, &num)) in poll.answers.iter().zip(poll.answerers.iter()).enumerate() {
+    let emoji = std::char::from_u32('🇦' as u32 + i as u32).expect("Failed to format emoji");
+    message_text.push(emoji);
+    if total_answerers > 0 {
+      let percent = num as f64 / total_answerers as f64 * 100.;
+      message_text.push_str(&format!(" {:.0}%", percent));
+    }
+    message_text.push(' ');
+    message_text.push_str(answer);
+    message_text.push_str(&format!(" ({} votes)", num));
+    message_text.push('\n');
+  }
+
+  message_text
+}
+
+struct PollsKey;
+
+impl TypeMapKey for PollsKey {
+  type Value = Arc<Mutex<PollsMap>>;
+}
+
+type PollsMap = HashMap<(ChannelId, MessageId), Poll>;
+
+struct Poll {
+  pub question: String,
+  pub answers: Vec<String>,
+  pub answerers: Vec<usize>,
+}
+
+#[group]
+#[commands(poll)]
+struct General;
+
+#[command]
+async fn poll(ctx: &Context, msg: &Message, mut args: Args) -> CommandResult {
+  let question = args.single_quoted::<String>()?;
+  let answers = args
+    .quoted()
+    .iter::<String>()
+    .filter_map(|x| x.ok())
+    .collect::<Vec<_>>();
+  
+  let answers_len = answers.len();
+  let poll = Poll {
+    question: question,
+    answerers: vec![0; answers_len],
+    answers: answers,
+  };
+
+  let message_text = render_message(&poll);
+  let emojis = (0..answers_len)
+    .map(|i| std::char::from_u32('🇦' as u32 + i as u32).expect("Failed to format emoji"))
+    .collect::<Vec<_>>();
+  
+  let poll_msg = msg.channel_id.say(&ctx.http, &message_text).await?;
+
+  for &emoji in &emojis {
+    poll_msg
+      .react(&ctx.http, ReactionType::Unicode(emoji.to_string()))
+      .await?;
+  }
+
+  let mut poll_data = ctx.data.write().await;
+
+  let poll_map = poll_data
+    .get_mut::<PollsKey>()
+    .expect("Failed to retrieve polls map!");
+  
+  poll_map
+    .lock()
+    .await
+    .insert((msg.channel_id, poll_msg.id), poll);
+  
+  Ok(())
+}
+
+#[tokio::main]
+async fn main() {
+  let token = std::env::var("DISCORD_TOKEN").expect("Expected DISCORD_TOKEN to be set!");
+
+  let framework = StandardFramework::new()
+      .configure(|c| c.case_insensitivity(true))
+      .group(&GENERAL_GROUP);
+
+  let mut client = Client::builder(&token)
+      .event_handler(Handler)
+      .framework(framework)
+      .type_map_insert::<PollsKey>(Arc::new(Mutex::new(PollsMap::new())))
+      .await
+      .expect("Failed to build client");
+
+  if let Err(why) = client.start().await {
+      println!("Client error: {:?}", why);
+  }
+}
+```
+
+</details>
+
+## Prerequisites
+
 For this tutorial, I do recommend an intermediate understanding of low-level concepts such as memory management, and some experience with Rust as well.
 
 ## Getting started
@@ -1003,277 +1280,12 @@ Let's go ahead and try out all of this new stuff by hitting the run button. You 
 
 ![You did it! Congratulations! GIF](https://media.giphy.com/media/J5Xr9k7qK5KGRi45vp/giphy.gif)
 
-The full code at this point can be viewed [here](https://repl.it/@anirudhb/Rust-discord-bot-finished). Alternatively, you can open the below section for a full listing.
+## Going further
 
-<details>
-<summary>Full code</summary>
+There are many ways to improve and hack on this project further. Here are 3 examples of possible hacks you could do:
+* 
 
-`main.rs`:
-```rust
-fn main() { std::process::Command::new("cargo").arg("run").status().unwrap(); }
-```
-
-`Cargo.toml`:
-```toml
-[package]
-name = "polling-bot"
-version = "0.1.0"
-authors = ["runner"]
-edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-serenity = "0.9.1"
-tokio = { version = "^0.2.23", features = ["macros"] }
-
-[[bin]]
-name = "polling-bot"
-path = "real_main.rs"
-```
-
-`real_main.rs`:
-```rust
-use serenity::async_trait;
-use serenity::framework::standard::{
-  macros::{command, group},
-  Args, CommandResult, StandardFramework,
-};
-use serenity::model::{
-  channel::{Message, Reaction},
-  gateway::Ready,
-};
-use serenity::prelude::*;
-use std::collections::HashMap;
-use std::sync::Arc;
-use tokio::sync::Mutex;
-use serenity::model::channel::ReactionType;
-use serenity::model::id::{MessageId, ChannelId};
-
-enum ReactionEvent<'a> {
-    Reaction(&'a Reaction),
-    RemoveAll(ChannelId, MessageId),
-}
-
-
-macro_rules! perform_reaction {
-  (($ctx:expr, $reaction_event:expr) $body:expr) => {
-    use ReactionEvent::*;
-    // Discard if it's our own reaction.
-    if let Reaction(r) = $reaction_event {
-        if r.user_id == Some($ctx.cache.current_user_id().await) {
-            println!("Reaction added by self, ignoring");
-            return;
-        }
-    }
-
-    let key = match $reaction_event {
-        Reaction(r) => (r.channel_id, r.message_id),
-        RemoveAll(c, m) => (c, m),
-    };
-
-    // Try to get poll for the given message otherwise return
-    {
-      let poll_data = $ctx.data.read().await;
-      let poll_map = poll_data
-          .get::<PollsKey>()
-          .expect("Failed to retrieve polls map!")
-          .lock()
-          .await;
-      if !poll_map.contains_key(&key) {
-          println!("Message not in polls map, ignoring");
-          return;
-      }
-    }
-
-    // reretrieve the map as writable
-    let mut poll_data = $ctx.data.write().await;
-    let mut poll_map = poll_data
-        .get_mut::<PollsKey>()
-        .expect("Failed to retrieve polls map!")
-        .lock()
-        .await;
-    let poll = match poll_map.get_mut(&key) {
-        None => {
-            println!("Failed to get poll for {:?}", key);
-            return;
-        }
-        Some(poll) => poll,
-    };
-
-    // nudges Rust towards the right type :)
-    fn get_f<F: FnOnce(&mut Poll, Option<usize>)>(f: F) -> F {
-        f
-    }
-    let f = get_f($body);
-
-    match $reaction_event {
-      Reaction(r) => match r.emoji {
-        ReactionType::Unicode(ref s) => {
-          let c = s.chars().nth(0).unwrap();
-          let end_char = std::char::from_u32('🇦' as u32 + poll.answers.len() as u32 - 1)
-              .expect("Failed to format emoji");
-          if c < '🇦' || c > end_char {
-              println!("Emoji is not regional indicator or is not in range, ignoring");
-              return;
-          }
-          let number = (c as u32 - '🇦' as u32) as usize;
-
-          f(poll, Some(number));
-        }
-        _ => {
-          println!("Unknown emoji in reaction, ignoring");
-          return;
-        }
-      },
-      RemoveAll(..) => f(poll, None),
-    }
-
-    let content = render_message(&poll);
-    key.0
-        .edit_message(&$ctx.http, key.1, |edit| edit.content(&content))
-        .await
-        .expect("Failed to edit message");
-
-    println!("Rerendered message");
-  };
-}
-
-struct Handler;
-
-#[async_trait]
-impl EventHandler for Handler {
-  async fn ready(&self, _: Context, ready: Ready) {
-      println!("Bot ready with username {}", ready.user.name);
-  }
-
-  async fn reaction_add(&self, ctx: Context, add_reaction: Reaction) {
-    println!("Reaction add");
-
-    perform_reaction! { (ctx, ReactionEvent::Reaction(&add_reaction)) |poll, number| {
-      poll.answerers[number.unwrap()] += 1;
-    }}
-  }
-
-  async fn reaction_remove(&self, ctx: Context, removed_reaction: Reaction) {
-    println!("Single reaction remove");
-
-    perform_reaction! { (ctx, ReactionEvent::Reaction(&removed_reaction)) |poll, number| {
-      poll.answerers[number.unwrap()] -= 1;
-    }}
-  }
-
-  async fn reaction_remove_all(&self, ctx: Context, channel_id: ChannelId, removed_from_message_id: MessageId) {
-    println!("All reactions removed");
-
-    perform_reaction! { (ctx, ReactionEvent::RemoveAll(channel_id, removed_from_message_id)) |poll, _| {
-      for answers in poll.answerers.iter_mut() {
-        *answers = 0;
-      }
-    }}
-  }
-}
-
-fn render_message(poll: &Poll) -> String {
-  let mut message_text = format!("**Poll:** {}\n", poll.question);
-  let total_answerers = poll.answerers.iter().sum::<usize>();
-
-  for (i, (answer, &num)) in poll.answers.iter().zip(poll.answerers.iter()).enumerate() {
-    let emoji = std::char::from_u32('🇦' as u32 + i as u32).expect("Failed to format emoji");
-    message_text.push(emoji);
-    if total_answerers > 0 {
-      let percent = num as f64 / total_answerers as f64 * 100.;
-      message_text.push_str(&format!(" {:.0}%", percent));
-    }
-    message_text.push(' ');
-    message_text.push_str(answer);
-    message_text.push_str(&format!(" ({} votes)", num));
-    message_text.push('\n');
-  }
-
-  message_text
-}
-
-struct PollsKey;
-
-impl TypeMapKey for PollsKey {
-  type Value = Arc<Mutex<PollsMap>>;
-}
-
-type PollsMap = HashMap<(ChannelId, MessageId), Poll>;
-
-struct Poll {
-  pub question: String,
-  pub answers: Vec<String>,
-  pub answerers: Vec<usize>,
-}
-
-#[group]
-#[commands(poll)]
-struct General;
-
-#[command]
-async fn poll(ctx: &Context, msg: &Message, mut args: Args) -> CommandResult {
-  let question = args.single_quoted::<String>()?;
-  let answers = args
-    .quoted()
-    .iter::<String>()
-    .filter_map(|x| x.ok())
-    .collect::<Vec<_>>();
-  
-  let answers_len = answers.len();
-  let poll = Poll {
-    question: question,
-    answerers: vec![0; answers_len],
-    answers: answers,
-  };
-
-  let message_text = render_message(&poll);
-  let emojis = (0..answers_len)
-    .map(|i| std::char::from_u32('🇦' as u32 + i as u32).expect("Failed to format emoji"))
-    .collect::<Vec<_>>();
-  
-  let poll_msg = msg.channel_id.say(&ctx.http, &message_text).await?;
-
-  for &emoji in &emojis {
-    poll_msg
-      .react(&ctx.http, ReactionType::Unicode(emoji.to_string()))
-      .await?;
-  }
-
-  let mut poll_data = ctx.data.write().await;
-
-  let poll_map = poll_data
-    .get_mut::<PollsKey>()
-    .expect("Failed to retrieve polls map!");
-  
-  poll_map
-    .lock()
-    .await
-    .insert((msg.channel_id, poll_msg.id), poll);
-  
-  Ok(())
-}
-
-#[tokio::main]
-async fn main() {
-  let token = std::env::var("DISCORD_TOKEN").expect("Expected DISCORD_TOKEN to be set!");
-
-  let framework = StandardFramework::new()
-      .configure(|c| c.case_insensitivity(true))
-      .group(&GENERAL_GROUP);
-
-  let mut client = Client::builder(&token)
-      .event_handler(Handler)
-      .framework(framework)
-      .type_map_insert::<PollsKey>(Arc::new(Mutex::new(PollsMap::new())))
-      .await
-      .expect("Failed to build client");
-
-  if let Err(why) = client.start().await {
-      println!("Client error: {:?}", why);
-  }
-}
-```
-
-</details>
+Here are some links if you'd like to learn more about writing Discord bots with Serenity:
+* [Serenity docs](https://docs.rs/serenity)
+* [Discord developer docs](https://discord.com/developers/docs/intro)
+* [Rust Book chapter 4, ownership](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
