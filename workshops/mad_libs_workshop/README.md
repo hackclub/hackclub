@@ -22,7 +22,7 @@ Create a new repl and use C# as the language.
 
 We're creating a new text file in order to put our Mad Libs prompt in.
 
-<img src="https://cloud-7epyavre2.vercel.app/0screenshot__1403_.png" width="600" alt="Creating New Text File">
+<img src="https://cloud-7epyavre2.vercel.app/0screenshot__1403_.png" width="900" alt="Creating New Text File">
 
 - Create a new file and name in "madlib.txt".
 - Put in your own prompt and have things that you want to ask the user surrounded by asterisks (*).
@@ -75,7 +75,7 @@ class Program
 ```
 - The while loop that surrounds our program will be used later on in order to play again.
 - Create an empty string named "prompt".
-- The using statement reads the text file, and the contents of the file are set to the "prompt" string.
+- The [using statement](https://docs.microsoft.com/en-us/dotnet/standard/io/how-to-read-text-from-a-file) reads the text file, and the contents of the file are set to the "prompt" string.
 
 # Inserting the Words
 
@@ -323,7 +323,7 @@ else
 }
 ```
 - If the "playAgain" bool is false, then we break out of the while loop surrounding the entire program.
-- Else we go back to the start of the program.
+- Else we go back to the start of the while loop around the program.
 
 # Final Code
 
