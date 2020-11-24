@@ -357,7 +357,7 @@ function TodoList(){
 export default TodoList
 ```
 
-### 'Read' operation
+### Read operation
 
 Now we are going to read the data in the database, fetch it into an array and display on the screen.
 
@@ -570,7 +570,7 @@ This displays the todo items with a `checkbox` and `delete` button.
 
 Let's add functionality to the buttons.
 
-### 'Update' operation
+### Update operation
 
 When the `checkbox` is checked, the task is completed. Let's update the value of `completed` to `true`.
 
@@ -641,7 +641,7 @@ Now our completed tasks will be styled accordingly.
 
 Let's add functionality to our `delete` button.
 
-### 'Delete' operation
+### Delete operation
 
 Add `onClick` attribute to the button with a `deleteTodo` function.
 
