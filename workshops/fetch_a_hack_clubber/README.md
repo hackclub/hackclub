@@ -132,13 +132,13 @@ export async function getServerSideProps(context) {
 ```
 Let's pass the page the data, we can do this by editing:
 
-```
+```javascrirpt
 export default function Home() {
 ```
 
 To be:
 
-```
+```javascript
 export default function Home(props) {
 ```
 
@@ -226,7 +226,7 @@ To filter in Javascript we can use `.filter`, with it we give it an array, some 
 
 In our case we want to add this (↓) code just below the line where we fetch our users
 
-```
+```javascript
 users = users.filter(u => u.updatesCount != 0)
 ```
 
