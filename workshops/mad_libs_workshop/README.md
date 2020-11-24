@@ -24,7 +24,7 @@ We're creating a new text file in order to put our Mad Libs prompt in.
 
 <img src="https://cloud-7epyavre2.vercel.app/0screenshot__1403_.png" width="600" alt="Creating New Text File">
 
-- Create a new file and name in "madlibs.txt".
+- Create a new file and name in "madlib.txt".
 - Put in your own prompt and have things that you want to ask the user surrounded by asterisks (*).
 
 # Initial Statements
@@ -45,11 +45,11 @@ class Program
 }
 ```
 
-# Reading the File
+# Reading the Text File
 
-Let's read the file.
+Let's read the text file.
 
-<img src="https://media3.giphy.com/media/Qz6KmDIRiQTfy/source.gif" width="600" alt="Snoopy Happy Gif">
+<img src="https://media1.tenor.com/images/dd8ffb18e3d4ac5f5b20ab19141e8fcd/tenor.gif?itemid=15407882" width="600" alt="Homer Reading Gif">
 
 ```c#
 using System;
@@ -73,13 +73,13 @@ class Program
   }
 }         
 ```
-- The while statement is used later in the program in order to play again.
-- Make an empty string named "prompt".
+- The while loop that surrounds our program will be used later on in order to play again.
+- Create an empty string named "prompt".
 - The using statement reads the text file, and the contents of the file are set to the "prompt" string.
 
 # Inserting the Words
 
-We are creating a for loop to go through the string.
+We are creating a for loop to go through the "prompt" string.
 
 <img src="https://media3.giphy.com/media/Qz6KmDIRiQTfy/source.gif" width="600" alt="Snoopy Happy Gif">
 
@@ -140,7 +140,7 @@ for(int i = 0; i < prompt.Length; i++)
 }
 ```
 
-This for loop loops through each letter in the prompt.
+This for loop loops through each letter in the "prompt" string.
 
 ## Checking Character
 
@@ -158,8 +158,8 @@ for(int i = 0; i < prompt.Length; i++)
 ```
 - This if statement checks if the current character is an asterisk (*).
 - If it is, create a "startingIndex" integer and set it to the current index i, then increment i.
-- Then create a "characterSpace" integer and set it to 2 to represent the two asterisks surround the word.
-- Then create an empty "word string".
+- Then create a "characterSpace" integer and set it to 2 to represent the two asterisks that surround the word.
+- Then create an empty string named "word".
 
 ## While Loop
 
@@ -184,11 +184,11 @@ if (prompt[i] == '*')
 ```
 - This if statement checks if the current character is not an asterisk (*).
 - If true, increment the "characterSpace", add the letter to the "word" string, and increment "i".
-- If not true, break out of the while loop because you've went through entire word in asterisks.
+- If not true, break out of the while loop because you've went through entire word surrounded by asterisks.
 
 ## Finishing Up
 
-<img src="https://media3.giphy.com/media/Qz6KmDIRiQTfy/source.gif" width="600" alt="Snoopy Happy Gif">
+<img src="https://media1.giphy.com/media/VEzlrMWk3F7uuFuRSq/giphy.gif" width="600" alt="Kermit Gif">
 
 ```c#
 if (prompt[i] == '*')
@@ -232,7 +232,7 @@ We are just printing lines to seperate the prompt for organization and then prin
 
 # Play Again
 
-<img src="https://media3.giphy.com/media/Qz6KmDIRiQTfy/source.gif" width="600" alt="Snoopy Happy Gif">
+<img src="https://media3.giphy.com/media/xThuWcZzGnonnG3ayQ/source.gif" width="600" alt="Another One Gif">
 
 ```c#
 using System;
@@ -279,7 +279,7 @@ class Program
 ```
 Let's break it down.
 
-## Yes or No
+## Asking the User to Play Again
 
 ```c#
 bool playAgain = false;
@@ -309,7 +309,7 @@ while(true)
 - If it is equal to "n", set the "playAgain" to false and break out of the while loop.
 - Else tell the user to try again, and the while loop loops again.
 
-# Bool
+# Actually Playing Again
 
 ```c#
 #What we just wrote.
