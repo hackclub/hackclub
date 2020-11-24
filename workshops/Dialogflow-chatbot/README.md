@@ -289,7 +289,7 @@ Now, how you can expand it? Try adding some cool commands and try different inte
 - Integrate the chatbot as a Slack app.
 - Style your chatbot with some cool CSS.
 
-#### ⭐ Live Demo
+#### ⭐ Live Examples
 
 - [**Integrating chatbot on webpage**](https://repl.it/@tanishqsoni/web-demo#index.html)
 - [**Integrating as a messenger on webpage**](https://repl.it/@tanishqsoni/messenger#index.html)
