@@ -72,12 +72,12 @@ After deleting both intents click on the `CREATE INTENT` button to create new in
 Here you will create two intents in this workshop:
 
 1. ask-name:
-   
-   In this you will trigger the bot by welcome commands like `Hello`, `Hi`, `Hey` and the bot will ask your name.
+   
+   In this you will trigger the bot by welcome commands like `Hello`, `Hi` & `Hey` and the bot will ask your name.
 
 2. final-output:
 
-   In this, you will give your name to the bot and the bot will return your name with some comment like `Hey {your name}, Nice to meet you!` and end the conversation.
+   In this, you will give your name to the bot and the bot will return your name with some comment like `Hey {your name}, Nice to meet you!` and end the conversation.
 
 # Creating Intents 📝
 
@@ -107,8 +107,8 @@ Responses are the response from the bot when you trigger it with the training ph
 
 ![Responses](https://cloud-oqmxib6bs.vercel.app/112.png)
 
-So, add some responses like you need to ask name, 
-`Hello! what is your name?`, 
+So, add some responses like you need to ask name, 
+`Hello! what is your name?`,  
 `Welcome! what is your name?` etc.
 
 ![Add responses](https://cloud-oqmxib6bs.vercel.app/213.png)
@@ -139,7 +139,7 @@ As you can see there is a number before the `name`, it shows the lifespan of tha
 
 So, at last click on the `SAVE` button.
 
-Hooray! you created you successfully first intent.
+Hooray! You created you successfully first intent.
 
 To create second intent, click on the `+` icon in the `Intents` tab on the left menu.
 
@@ -221,7 +221,7 @@ Add some responses like:
 Here you can see the `$name` keyword, it is the reference you have given in the actions block to recognize names.
 So `$name` will return the name which is entered by the user.
 
-Example:  
+Example:  
 I entered the name `Steve` then `Hello $name` will return `Hello Steve`.
 
 As this will be the end of the conversation, so below the `ADD RESPONSES` button you will see `Set this intent as the end of conversation`. So, enable it.
@@ -286,7 +286,7 @@ Now, how you can expand it? Try adding some cool commands and try different inte
 - Integrate the chatbot with your website.
 - Integrate it as a Dialogflow messenger on your website.
 - Build a small talk agent.
-- Integrate the chatbot as a slack app.
+- Integrate the chatbot as a Slack app.
 - Style your chatbot with some cool CSS.
 
 #### ⭐ Live Demo
