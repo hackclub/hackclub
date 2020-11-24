@@ -1289,7 +1289,7 @@ The full code is in the [Demo](#demo) section.
 ## Going further
 
 There are many ways to improve and hack on this project further. Here are 3 examples of possible hacks you could do:
-* Showing who voted for what [code]()
+* Showing who voted for what ([code](https://repl.it/@anirudhb/Rust-discord-bot-hack-1))
 * Only allowing a user to vote once [code]()
 * Modifying polls after they are created [code]()
 
