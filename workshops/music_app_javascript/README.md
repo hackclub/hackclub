@@ -50,7 +50,7 @@ Now create the required folders of ***images*** and ***music***.
 ![folder-creation](https://cloud-izwbr9tpa.vercel.app/0ma_1.gif)
 
 
-The set up is almost done, their one last thing we have to add that is a small library of icons which we will be needing in our app button. Do not worry, I got you covered here too! Just click the link [here](https://cloud-gsfn58rnx.vercel.app/0icons.zip), the zip folder will download and unzip it, extract the icon folder then simple drag and drop in your project.
+The set up is almost done, there is one last thing we have to add that is a small library of icons which we will be needing in our app as buttons. Do not worry, I got you covered here too! Just click the link [here](https://cloud-gsfn58rnx.vercel.app/0icons.zip), the zip folder will download and unzip it, extract the icon folder then simple drag and drop in your project.
 
 ![Drag'n'Drop-procedure](https://cloud-1h4d9km9k.vercel.app/0ma_2.gif)
 
