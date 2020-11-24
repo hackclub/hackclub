@@ -103,9 +103,9 @@ var rl = readline.createInterface({
 ```
 
 Now, you need to ask query to the user, like 
-- `Type your text :`
+- `Type your text:`
 - `Your text:` 
-- `Text :`
+- `Text:`
 
 for that you need to write some code:
 
@@ -175,15 +175,15 @@ Now, how you can expand it? Try adding some other features to it with the help o
 
 Here are some examples 👇
 
-- create an `md5`, `sha256` hash generator.
+- create an `MD5`, `SHA256` hash generator.
 - create an app that verifies the hash and text.
 - use [chalk](https://www.npmjs.com/package/chalk) & [boxen](https://www.npmjs.com/package/boxen) to beautify the app.
 - create an app that generates multiple hashes at once.
 
 ### ⭐ Live examples with code
 
-[**MD5 Generator**](https://repl.it/@tanishqsoni/md5-hash)
+- [**MD5 Generator**](https://repl.it/@tanishqsoni/md5-hash): beautify using boxen
 
-[**SHA256 Generator**](https://repl.it/@tanishqsoni/sha256-hash)
+- [**SHA256 Generator**](https://repl.it/@tanishqsoni/sha256-hash): beautify using chalk 
 
-[**All-in-one Hash Generator**](https://repl.it/@tanishqsoni/all-in-one-hash)
+- [**Multiple Hash Generator**](https://repl.it/@tanishqsoni/all-in-one-hash): Generates SHA1, SHA256 & MD5 Hashes at once
