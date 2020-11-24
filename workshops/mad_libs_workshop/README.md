@@ -279,7 +279,7 @@ class Program
 ```
 Let's break it down.
 
-## CONTINUE
+## Yes or No
 
 ```c#
 bool playAgain = false;
@@ -309,6 +309,7 @@ while(true)
 - If it is equal to "n", set the "playAgain" to false and break out of the while loop.
 - Else tell the user to try again, and the while loop loops again.
 
+# Bool
 
 ```c#
 #What we just wrote.
