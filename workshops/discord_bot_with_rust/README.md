@@ -309,6 +309,8 @@ Let's fix that by running `cargo init --name polling-bot` in the terminal. This 
 
 ![New files created by cargo init](https://cloud-bxfulgo22.vercel.app/0image.png)
 
+P.S. Here's a hint when working with Repl.it: If you ever get a `disk quota exceeded` error just delete the `target` directory and try again. Additionally, delete the `target` directory when you're done playing around with your bot or else it'll take up a bunch of space!
+
 Next, create a new file called `real_main.rs` and put this code in it:
 ```rust
 fn main() {
