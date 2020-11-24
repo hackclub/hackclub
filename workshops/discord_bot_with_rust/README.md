@@ -906,13 +906,15 @@ Next, if the event was a reaction, we need to validate it to ensure that we shou
             Reaction(r) => match r.emoji {
                 ReactionType::Unicode(ref s) => {
                     let c = s.chars().nth(0).unwrap();
-                    if c < '🇦' || c > '🇿' {
-                        println!("Emoji is not regional indicator, ignoring");
+                    let end_char = std::char::from_u32('🇦' as u32 + poll.answers.len() as u32 - 1)
+                      .expect("Failed to format emoji");
+                    if c < '🇦' || c > end_char {
+                        println!("Emoji is not regional indicator or is not in range, ignoring");
                         return;
                     }
                     let number = (c as u32 - '🇦' as u32) as usize;
 ```
-First we ensure that the reaction's emoji is a Unicode emoji, since all regional indicators (the emojis we are using) are Unicode. Then we check that the emoji is actually a regional indicator. Next, we figure out which answer it would be (where 0 is the first answer.)
+First we ensure that the reaction's emoji is a Unicode emoji, since all regional indicators (the emojis we are using) are Unicode. Then we check that the emoji is actually a regional indicator, and is in range. Next, we figure out which answer it would be (where 0 is the first answer.)
 
 Now, we can call the body and it can modify the poll:
 ```rust
@@ -1109,8 +1111,10 @@ macro_rules! perform_reaction {
       Reaction(r) => match r.emoji {
         ReactionType::Unicode(ref s) => {
           let c = s.chars().nth(0).unwrap();
-          if c < '🇦' || c > '🇿' {
-              println!("Emoji is not regional indicator, ignoring");
+          let end_char = std::char::from_u32('🇦' as u32 + poll.answers.len() as u32 - 1)
+              .expect("Failed to format emoji");
+          if c < '🇦' || c > end_char {
+              println!("Emoji is not regional indicator or is not in range, ignoring");
               return;
           }
           let number = (c as u32 - '🇦' as u32) as usize;
