@@ -132,7 +132,7 @@ export async function getServerSideProps(context) {
 ```
 Let's pass the page the data, we can do this by editing:
 
-```javascrirpt
+```javascript
 export default function Home() {
 ```
 
