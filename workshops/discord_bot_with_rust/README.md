@@ -1290,10 +1290,11 @@ The full code is in the [Demo](#demo) section.
 
 There are many ways to improve and hack on this project further. Here are 3 examples of possible hacks you could do:
 * Showing who voted for what ([code](https://repl.it/@anirudhb/Rust-discord-bot-hack-1))
-* Only allowing a user to vote once [code]()
-* Modifying polls after they are created [code]()
+* Reaction roulette - your vote only has a 20% chance of counting! (This is kind of annoying, and on purpose :-) ([code](https://repl.it/@anirudhb/Rust-discord-bot-hack-2))
+* Modifying polls after they are created ([code](https://repl.it/@anirudhb/Rust-discord-bot-hack-3))
 
 Here are some links if you'd like to learn more about writing Discord bots with Serenity:
 * [Serenity docs](https://docs.rs/serenity)
+* [Tokio docs](https://docs.rs/tokio/0.2.23/tokio/index.html)
 * [Discord developer docs](https://discord.com/developers/docs/intro)
 * [Rust Book chapter 4, ownership](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
