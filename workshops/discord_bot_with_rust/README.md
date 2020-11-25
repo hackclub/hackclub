@@ -378,6 +378,32 @@ Your `Cargo.toml` should now look like this:
 
 ![Cargo.toml with Serenity dependency](https://cloud-epv4dnmyn.vercel.app/0image.png)
 
+### Inviting your bot to a server
+
+To invite your bot to a server, you'll need to go to the OAuth2 tab in your application (highlighted in green here):
+
+![Polling Bot- OAuth2 section](https://cloud-oe7fro27r.vercel.app/0inkedscreenshot_2020-11-24_discord_developer_portal_____api_docs_for_bots_and_developers_li.jpg)
+
+Next, select the "bot" scope for OAuth2, highlighted in pink here:
+
+![Polling Bot- OAuth2 section, "bot" scope](https://cloud-677psdnfr.vercel.app/0inkedscreenshot_2020-11-24_discord_developer_portal_____api_docs_for_bots_and_developers_1__li.jpg)
+
+Then, scroll down and check these permissions we'll need (highlighted in orange in the picture):
+* View Channels (under General Permissions)
+* Send Messages (under Text Permissions)
+* Read Message History (under Text Permissions)
+* Add Reactions (under Text Permissions)
+
+![Polling Bot- OAuth2 section, permissions selected: View Channels, Send Messages, Read Message History, Add Reactions](https://cloud-ga2iol69b.vercel.app/0inkedscreenshot_2020-11-24_discord_developer_portal_____api_docs_for_bots_and_developers_2__li.jpg)
+
+Finally, copy the OAuth2 link, highlighted in brown here:
+
+![Polling Bot- OAuth2 section, "copy" button and OAuth2 URL highlighted](https://cloud-11kxy9z13.vercel.app/0inkedscreenshot_2020-11-24_discord_developer_portal_____api_docs_for_bots_and_developers_3__li.jpg)
+
+Paste it into your browser and invite your bot to a server for testing! (Preferably with other people to test the polling.) You'll need the "Manage Server" permission in order to invite the bot to a server.
+
+### A basic template
+
 Now, let's add a basic Discord bot template. At this point, you should have invited your bot to a server for testing.
 
 Delete the contents of `real_main.rs` and replace it with this:
