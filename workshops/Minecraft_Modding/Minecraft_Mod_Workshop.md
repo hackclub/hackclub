@@ -1,4 +1,4 @@
----  
+---
 name: 'Minecraft Mod'  
 description: 'Make your first Minecraft mod using Forge and IntelliJ IDEA'  
 author: '@Kai'  
@@ -29,6 +29,8 @@ Once IDEA has opened the project go to your side bar and click on the Gradle tab
 
 By the way if you are using Eclipse for some reason use the Eclipse one instead of IntelliJRuns.  
 
+Eclipse users: If you are using Eclipse then the previous section does not apply to you. To start off, download the forge MDK and unzip to a new folder, put it anywhere you like, I will put mine on the Desktop. Open a new terminal window by pressing your "search" button (cmd+space on mac or windows key on windows) and type in "terminal". From here you want to type `cd` then your directory that you put it in. For me I am going to type `cd Desktop/MinecraftMod.`From here type in `gradlew eclipse`. This will generate the files for you. Wait until it says `BUILD SUCCESSFUL`. Open up Eclipse and click on `File`. Then select `Open Projects from Directory`. Select the folder where your forge mdk and gradlew build is. For me this is Desktop/TestMod. 
+
 Once it has been built, it should say `BUILD SUCCESSFUL` in the Build tab at the bottom. Open `src/main/java/com/` and delete the example folder as we will create the files ourselves. If you want, you can delete the `test` folder in `src/`. Now within `src/java` make a new package called `com` then under com make a new package and type your name (not the mod name), then under `com/username/` make a new package with the name of your mod in all lowercase with no space. Mine is like this `com/devrim/kaimod`. I will be using kaimod as my mod name, name it whatever you like. Inside of your mod name package make a new class file with the same name as the mod. Now I will provide some code and explain each part of it and have the user change where it is necessary.  
 
 Above the `public class modname` add a line that has `@MOD("modname")`. This means that this is your modid. Within your public class modname add a line of code like this: `private static final Logger LOGGER = LogManager.getLogger();`. Using IDEA Alt-Enter to import the correct import. This line of code just means to make a private static object that cannot be edited based on Logger called LOGGER which is from the LogManager.getLogger method. Now under that make a new method with the same name as your class like `public modname() { }`. Within in your brackets add these 3 lines:  
@@ -37,7 +39,7 @@ Above the `public class modname` add a line that has `@MOD("modname")`. This mea
 FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);  
 FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);  
 MinecraftForge.EVENT_BUS.register(this);  
-```  
+```
 This just is telling forge to initialize a mod basically and add it to Minecraft. You may see some errors but that's because we haven't made some of the needed methods. Under the method not the class add these two methods:  
 
 `private void setup (final FMLCommonSetupEvent event) { }`  
@@ -75,7 +77,7 @@ public static final ItemGroup TAB = new ItemGroup("modNameItems") {
             return new ItemStack(RegistryHandler.ITEM.get()); 
         } 
     }; 
-``` 
+```
 
 Replace `modNameItems` with a no space, name of what you want the tab to be called. Also replace `item` in `RegistryHandler.item.get` with what you called your item in all caps in the `RegistryHandler` class. 
 
@@ -96,7 +98,7 @@ Now go into the `models/item` directory and make an itemname.json file. Make sur
     "layer0": "modname:items/item" 
   } 
 } 
-``` 
+```
 Remember to replace modname and item of course. 
 
 Now we will be putting the item's image in. I will provide an image, but you can make your own in paint, just make sure the image size is 16x16 pixels. The file must have the same itemname and be in .png. Here is the example item I will be using. 
@@ -113,7 +115,7 @@ Making your first block is actually very simple now that we have most of the fil
 
 To get started go back to your `src/main/java/com/username/modname/util` folder and open the RegistryHandler file. Inside of that we are going to just use the same methods from before but change them up a little. 
 
-Duplicate the DeferredRegister line at the start and change the `<Item>` to `<Block>` and rename `ITEMS` to `BLOCKS` in both cases. Now, duplicate the `ITEMS.register` line and change `ITEMS` to `BLOCKS`. `Now duplicate the RegistryObject<Item>` line and change Item to, you guessed it, Block. Now create a name for the variable, I am calling mine MYBLOCK. Now change the `ITEMS` part to `BLOCKS` and put a lowercase version of your block name. Also change Itembase to the `MYBLOCK::new`. 
+Duplicate the DeferredRegister line at the start and change the `<Item>` to `<Block>` and rename `ITEMS` to `BLOCKS` in both cases. Now, duplicate the `ITEMS.register` line and change `ITEMS` to `BLOCKS`. Now duplicate the `RegistryObject<Item>` line and change Item to, you guessed it, Block. Now create a name for the variable, I am calling mine MYBLOCK. Now change the `ITEMS` part to `BLOCKS` and put a lowercase version of your block name. Also change Itembase to the `MYBLOCK::new`. 
 
 One more thing, make another RegistryObject like last time, but keep it as an `<Item>`. Change the name to something like MY_BLOCK_ITEM. Then make it equal to `ITEMS.register("myblock", () -> new BlockItemBase(MY_BLOCK.get()));`. 
 
@@ -132,7 +134,7 @@ Now open your block class and this is where we set the properties of the item! A
 ``` java
 super(Block.Properties.create() 
     ); 
-``` 
+```
 Within the parenthesis write Material. then your IDE should list all the Materials in the game. This just means what type of block it is. I set mine to `Material.IRON`. Now after the parenthesis put down a period and there should be a lot of different methods available. For the sake of simplicity, I will just make it only minable with a pickaxe. You can do that by setting `.harvestTool(ToolType.Pickaxe)`.  
 
 That is all for coding our block now onto getting it in our game. 
@@ -149,7 +151,7 @@ The first step is to add onto the `en_US.json` file in `src/main/resources/asset
     "": { "model": "modname:block/blockname" } 
   } 
 } 
-``` 
+```
 Now for the next json, go into `models/block` and add a the same json name as the previous one. Then add this to the json: 
 ``` 
 { 
@@ -158,7 +160,7 @@ Now for the next json, go into `models/block` and add a the same json name as th
     "all": "modname:blocks/blockname" 
   } 
 } 
-``` 
+```
 Now for the final json, go into `models/item` and make another file with the same name and add this: 
 
 ``` 
