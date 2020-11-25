@@ -228,7 +228,7 @@ Here are all the classes you'll need to know to make a splendid Scrapbook:
 To finish off, I'd like to leave you with some amazing customized Scrapbook profiles.
 
 - The god of Scrapbook profiles: Caleb's scrapbook is too amazing for me to describe. Honestly, just [check it out](https://scrapbook.hackclub.com/caleb/). [Source code](https://gist.github.com/cjdenio/05d70b36875472a87d665ddb6c25aa1b)
-- Ghoshwolf has made a [retro-themed Scrapbook](https://scrapbook.hackclub.com/pauliukas.gec). [Source code](https://gist.github.com/TheOnlyGhostwolf/56614e8d810a9599e87551bc327f410e)
+- Ghoshwolf has made a [retro-themed Scrapbook](https://scrapbook.hackclub.com/ghostwolf). [Source code](https://gist.github.com/TheOnlyGhostwolf/56614e8d810a9599e87551bc327f410e)
 - Yash Karthik has made a [purple Scrapbook, with a few hidden gems](https://scrapbook.hackclub.com/yashkarthik95/). [Source code](https://gist.github.com/YashKarthik/7ed6509dfd736fabb1a2b2503e2ee5ab)
 - I also have [my own](https://scrapbook.hackclub.com/sampoder) customized Scrapbook profile! The theme is always changing, at the time of writing it's Soviet themed. [Source code](https://scrapbook.hackclub.com/api/css/?url=https%3A%2F%2Fdeadspryintelligence.sampoder.repl.co%2Fstyle.css)
 
