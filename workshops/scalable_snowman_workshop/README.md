@@ -14,7 +14,7 @@ We're going to use [Repl.it](https://repl.it/~) to create the project. It is an 
 
 Create a new repl and use Python as the language.
 
-<img src="https://cloud-2ojs193ra.vercel.app/0screenshot__1396_.png" width="600" alt="Python Repl">
+<img src="https://cloud-3jkz47rpl.vercel.app/0screenshot__1408_.png" width="600" alt="Python Repl">
 
 # Initial Statements
 
