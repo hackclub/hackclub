@@ -2,7 +2,7 @@
 name: Fetch a Hack Clubber
 description: Learn data-fetching with Next.js and meet someone new!
 author: '@sampoder'
-image: 'https://cloud-a1hqcjanz.vercel.app/ezgif-7-3455d319b9c1.gif'
+img: 'https://cloud-a1hqcjanz.vercel.app/ezgif-7-3455d319b9c1.gif'
 ---
 
 # Fetch a Hack Clubber with Next.js
