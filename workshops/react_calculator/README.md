@@ -500,8 +500,10 @@ Check out what other Hack Clubbers built!
 Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
 
 You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.
+1. In a new tab, open and follow [these directions][slack] to signup for our Slack.
+2. Then, post the link to the [`#ship`](https://hackclub.slack.com/messages/ship) channel to share it with everyone and also ping me!
 
-In a new tab, open and follow these directions to signup for our Slack.
-Then, post the link to the #ship channel to share it with everyone and also ping me!  
+[slack]: https://slack.hackclub.com/
 
-PS. I'm `@fayd` on slack!
+
+PS. I'm `@fayd` on slack.
