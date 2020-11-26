@@ -53,6 +53,8 @@ def Snowman(x, y, radius1, radius2, radius3):
 
 ## Head and Body Pieces
 
+<img src="https://cloud-52dbjvw3n.vercel.app/0screenshot__1409_.png" width="380" alt="Snowman Head and Body">
+
 ```py
 def Snowman(x, y, radius1, radius2, radius3):
   turtle.goto(x, y)
@@ -89,6 +91,8 @@ def Snowman(x, y, radius1, radius2, radius3):
 
 ## Drawing the Eyes
 
+<img src="https://cloud-br53tx54x.vercel.app/0screenshot__1410_.png" width="380" alt="Snowman Eyes">
+
 ```py
 def Snowman(x, y, radius1, radius2, radius3):
   #What we just wrote.
@@ -119,6 +123,8 @@ def Snowman(x, y, radius1, radius2, radius3):
 
 ## Drawing the Nose
 
+<img src="https://cloud-f9je61z3w.vercel.app/0screenshot__1411_.png" width="380" alt="Snowman Nose">
+
 ```py
 def Snowman(x, y, radius1, radius2, radius3):
   #What we wrote.
@@ -143,6 +149,8 @@ def Snowman(x, y, radius1, radius2, radius3):
 - We are then starting a fill and going forward 1/2 of the head's radius and turning left 120 degrees until we create a triangle.
 
 ## Drawing the Buttons
+
+<img src="https://cloud-a2mh1goji.vercel.app/0screenshot__1413_.png" width="380" alt="Snowman Buttons">
 
 ```py
 def Snowman(x, y, radius1, radius2, radius3):
