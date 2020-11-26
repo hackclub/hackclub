@@ -6,7 +6,9 @@ author: '@JakeGerber'
 
 # Create a Scalable Snowman!
 
-<img src="https://cloud-81lsm6jyf.vercel.app/0screenshot__1406_.png" width="380" alt="Snowman Example">
+<img src="https://cloud-81lsm6jyf.vercel.app/0screenshot__1406_.png" width="900" alt="Snowman Example">
+
+<img src="https://i.pinimg.com/originals/69/3c/5e/693c5ec302f67ef040ad65f21bb25684.gif" width="380" alt="Snoopy Winter Gif">
 
 # Repl.it Setup
 
@@ -20,6 +22,8 @@ Create a new repl and use Python as the language.
 
 Let's Begin!
 
+<img src="https://media4.giphy.com/media/l4JzhRSnaIsShvsxW/giphy.gif" width="380" alt="Frosty the Snowman Gif">
+
 ```py
 import turtle
 
@@ -32,11 +36,14 @@ turtle.hideturtle()
 turtle.bgcolor("black")
 ```
 
-- Import the turtle library. We will be using this to draw to the screen.
+- Import the [turtle library](https://www.geeksforgeeks.org/turtle-programming-python/). We will be using this to draw to the screen.
 - Get the user input for the radius for each snowman body part.
 - Set the turtle speed to zero, hide the cursor, and make the background black.
+- [Here are the turtle colors to choose from.](https://trinket.io/docs/colors) 
 
 # Snowman Function
+
+<img src="https://media3.giphy.com/media/odRLFiZRTm3vi/giphy.gif" width="380" alt="Snowman Gif">
 
 ## Initial Statements
 Put the function under what we just wrote.
@@ -84,7 +91,7 @@ def Snowman(x, y, radius1, radius2, radius3):
   turtle.end_fill() 
 ```
 
-- When drawing circles, turtle starts at the bottom of the circle and creates it upwards.
+- When drawing circles, turtle starts at the bottom of the circle and creates it [upwards](https://www.geeksforgeeks.org/draw-circle-in-python-using-turtle/).
 - We are starting with the head piece and filling in a circle with the radius of the "radius1" variable.
 - We are going down to the first body piece and filling in a circle with the radius of the "radius2" variable.
 - We are then going down to the second body piece and filling in a circle with the radius of the "radius3" variable.
@@ -185,6 +192,8 @@ Fill in the parameters with what you want. We are putting the user input for the
  
 # Final Code
 
+<img src="https://media1.tenor.com/images/cb8ccb4cb181cd2ddefa8c6e604938db/tenor.gif?itemid=7915750" width="380" alt="Snoopy Gif">
+
 ```py
 import turtle
 
@@ -276,21 +285,7 @@ Snowman(-120, 5, radius1, radius2, radius3)
 ```
 
 # More You Can Do + Source Code
-[Original Program](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop#main.py)
-[Random Colors](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop-Expanded-1#main.py)
-[Random Sizes](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop-Expanded-2#main.py)
-[Adding Trees](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop-Expanded-3#main.py)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [Original Program](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop#main.py)
+- [Random Colors](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop-Expanded-1#main.py)
+- [Random Sizes](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop-Expanded-2#main.py)
+- [Adding Trees](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop-Expanded-3#main.py)
