@@ -151,29 +151,135 @@ def Snowman(x, y, radius1, radius2, radius3):
   #buttons
   turtle.setheading(270)
   turtle.forward(radius1)
-  turtle.forward(radius2/2)
   
-  turtle.begin_fill() 
-  turtle.circle(radius1/6) 
-  turtle.end_fill()
-  
-  turtle.forward(radius2/2)
-  
-  turtle.begin_fill() 
-  turtle.circle(radius1/6) 
-  turtle.end_fill()
-  
-  turtle.forward(radius2/2)
-  
-  turtle.begin_fill() 
-  turtle.circle(radius1/6) 
-  turtle.end_fill()
+  for x in range(3):
+    turtle.forward(radius2/2)
+    turtle.begin_fill() 
+    turtle.circle(radius1/6) 
+    turtle.end_fill()
   
   turtle.left(90)
 ```
-- We are setting our direction to down (turtle.setheading(270)) and going to halfway between the first body part.
-- 
+- We are setting our direction to down (turtle.setheading(270)) and going to the top of the first body part.
+- We are creating a for loop three times for the three buttons.
+- In the loop, we are moving forward half the radius of the first body part and creating a circle with 1/6 the radius of the head.
+
+# Calling Statements
+Let's create some statements. Make these after the function.
+
+```py
+#What we already wrote
+Snowman(0, 0, radius1, radius2, radius3)
+Snowman(120, 0, radius1, radius2, radius3)
+Snowman(-120, 5, radius1, radius2, radius3)
+```
+Fill in the parameters with what you want. We are putting the user input for the radii.
+ 
+# Final Code
+
+```py
+import turtle
+
+radius1 = float(input("What radius for the first circle?: "))
+radius2 = float(input("What radius for the second circle?: "))
+radius3 = float(input("What radius for the third circle?: "))
+
+turtle.speed(0)
+turtle.hideturtle()
+turtle.bgcolor("black")
 
 
- 
- 
+def Snowman(x, y, radius1, radius2, radius3):
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill() 
+
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+
+  #nose
+  turtle.forward(radius1/2)
+
+  turtle.right(90)
+  turtle.color("orange")
+
+  turtle.begin_fill()
+  turtle.forward(radius1/2)
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.end_fill()
+
+  #buttons
+  turtle.setheading(270)
+  turtle.forward(radius1)
+  for x in range(3):
+      turtle.forward(radius2/2)
+
+      turtle.begin_fill() 
+      turtle.circle(radius1/6) 
+      turtle.end_fill()
+  turtle.left(90)
+
+
+Snowman(0, 0, radius1, radius2, radius3)
+Snowman(120, 0, radius1, radius2, radius3)
+Snowman(-120, 5, radius1, radius2, radius3)
+```
+
+# More You Can Do + Source Code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
