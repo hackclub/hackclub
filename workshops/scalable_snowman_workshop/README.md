@@ -268,7 +268,10 @@ Snowman(-120, 5, radius1, radius2, radius3)
 ```
 
 # More You Can Do + Source Code
-
+[Original Program](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop#main.py)
+[Random Colors](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop-Expanded-1#main.py)
+[Random Sizes](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop-Expanded-2#main.py)
+[Adding Trees](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop-Expanded-3#main.py)
 
 
 
