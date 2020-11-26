@@ -179,7 +179,7 @@ def Snowman(x, y, radius1, radius2, radius3):
 - We are creating a for loop three times for the three buttons.
 - In the loop, we are moving forward half the radius of the first body part and creating a circle with 1/6 the radius of the head.
 
-# Calling Statements
+# Calling the Snowman Function
 Let's create some statements. Make these after the function.
 
 ```py
