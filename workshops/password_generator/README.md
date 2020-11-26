@@ -165,7 +165,7 @@ In line 5, we gave the `user-select` value as `none` because we don’t want the
 
 ![problem of text selection without user-select](https://cloud-kix9zfmih.vercel.app/0user-select-issue.gif)
 
-If we don’t give `user-select: none;` then when the user clicks on the button that says **Generate Password** for more than once simultaneously, that button's text gets selected that looks weird. So to get rid of this we use that line of code.
+If we don’t give `user-select: none;` then when the user clicks on the button that says **Generate Password** for more than once simultaneously, that button's text will be selected that looks little weird. So to get rid of this, we have used that line of code.
 
 Now in the next block (line 8), we have applied background to our webpage, you can use any solid color or gradient of your choice. 
 
