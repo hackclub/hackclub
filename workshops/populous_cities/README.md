@@ -278,13 +278,273 @@ Annnd we can see the tooltip on hover! Yippee!
 
 We are pretty much done! But before winding up, we need to make some finishing changes to our workshop.
 
-1. You might notice that the map is continuous which feel annoying a bit.
+1. You might notice that the map is continuous which feel a bit annoying.
 
 2. There's a bug which lets you drag the map out of the visible browser screen which is not very appealing.
 
 So let's fix all these bugs in the next section!
 
-**NOTE:** If you feel that you are satisfied with the current project, it's totally upto you and you can skip it. But if you want to learn new stuff, then stick around!
+**NOTE:** If you feel satisfied with the current state of the project, it's totally upto you and you can skip it. But if you want to learn new stuff, then stick around!
+
+<details><summary>Your code so far:</summary>
+
+```jsx
+import React, { useEffect, useState } from "react";
+import { MapContainer, CircleMarker, TileLayer, Tooltip } from "react-leaflet";
+import Leaflet from "leaflet";
+import "leaflet/dist/leaflet.css";
+
+const url =
+  "https://public.opendatasoft.com/api/records/1.0/search/?dataset=geonames-all-cities-with-a-population-1000&q=&lang=EN&rows=50&sort=population&facet=timezone&facet=country";
+
+export default function App() {
+  const [cities, setCities] = useState();
+
+  useEffect(() => {
+    async function fetchCities() {
+      try {
+        const res = await fetch(url);
+        setCities(await res.json());
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    fetchCities();
+  }, []);
+
+  return (
+    <div className="App">
+      <h3 style={{ textAlign: "center" }}>
+        50 Most Populous Cities in the World
+      </h3>
+      <MapContainer
+        center={[0, 0]}
+        zoom={2}
+        minZoom={1.5}
+        style={{ height: "100vh", width: "100%" }}
+      >
+        <TileLayer url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+
+        {cities &&
+          cities.records.map((city, i) => {
+            return (
+              <CircleMarker
+                center={[
+                  city.fields["coordinates"][0],
+                  city.fields["coordinates"][1]
+                ]}
+                radius={1.5 * (city.fields.population / 1000000)}
+                fillOpacity={0.4}
+                stroke={true}
+                key={city.recordid}
+              >
+                <Tooltip direction="top" offset={[0, -2]} opacity={1}>
+                  <span>
+                    {i + 1}. {city.fields.name} : {city.fields.population}
+                  </span>
+                </Tooltip>
+              </CircleMarker>
+            );
+          })}
+      </MapContainer>
+    </div>
+  );
+}
+
+```
+
+</details>
 
 ### 4) Making the finishing changes
 
+First, let's remove the continuity of the map. This can be simply done by adding a boolean prop `noWrap` set to `true` in the `TileLayer` component!
+
+```jsx
+<MapContainer {/* ... */}>
+  <TileLayer
+    url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    noWrap={true}
+  />
+  {/* ... */}
+</MapContainer>
+```
+
+![Demo after writing the following code](https://cloud-5zffcevb4.vercel.app/01.gif)
+
+YAY! We now have our map as a single layer and not as an infinite map! Exactly as we wanted!
+
+Next, to fix the bug which is causing the map go out of the window, we'll need to set the `maxBounds` and the `maxBoundsViscosity` for our map!
+
+When `maxBounds` is set, the map restricts the view to the given geographical bounds, bouncing the user back if the user tries to pan outside the view.
+
+To set `maxBounds`, we'll need to define 2 points with a certain latitude and longitude using `latLng`. Then, by using these values, we'll create the bounds using `LatLngBound`.
+
+First, let's create those 2 variables outside our app component.
+
+```jsx
+const corner1 = Leaflet.latLng(-90, -200); // Here, -90 is the latitude, -200 is the longitude.
+const corner2 = Leaflet.latLng(90, 200); // Here, 90 is the latitude, 200 is the longitude.
+
+export default function App() {
+  // ...
+}
+```
+
+Next, we'll simply create the bounds containing both the points!
+
+```jsx
+const corner1 = Leaflet.latLng(-90, -200);
+const corner2 = Leaflet.latLng(90, 200);
+const bounds = Leaflet.latLngBounds(corner1, corner2);
+```
+
+Now, to actually set this bounds on our map, we'll pass the `maxBounds` prop to the `MapContainer` component and then pass its value as `bounds`.
+
+```jsx
+<MapContainer
+  center={[0, 0]}
+  zoom={2}
+  minZoom={1.5}
+  maxBounds={bounds}
+  style={{ height: "100vh", width: "100%" }}
+>
+```
+
+Now, we'll also set the `maxBoundsViscosity` prop in the `MapContainer`. If maxBounds is set, this option will control how solid the bounds are when dragging the map around. The default value of 0.0 allows the user to drag outside the bounds at normal speed, higher values will slow down map dragging outside bounds, and 1.0 makes the bounds fully solid, preventing the user from dragging outside the bounds.
+
+```jsx
+<MapContainer
+  center={[0, 0]}
+  zoom={2}
+  minZoom={1.5}
+  maxBounds={bounds}
+  maxBoundsViscosity={0.4}
+  style={{ height: "100vh", width: "100%" }}
+>
+```
+
+Now if you check your map, we have fixed all the little bugs and its looks much better now!
+
+![Final Demo](https://cloud-gejk7ab8m.vercel.app/02.gif)
+
+<details><summary>Your Final Code</summary>
+
+```jsx
+import React, { useEffect, useState } from "react";
+import { MapContainer, CircleMarker, TileLayer, Tooltip } from "react-leaflet";
+import Leaflet from "leaflet";
+import "leaflet/dist/leaflet.css";
+
+const url =
+  "https://public.opendatasoft.com/api/records/1.0/search/?dataset=geonames-all-cities-with-a-population-1000&q=&lang=EN&rows=50&sort=population&facet=timezone&facet=country";
+const corner1 = Leaflet.latLng(-90, -200);
+const corner2 = Leaflet.latLng(90, 200);
+const bounds = Leaflet.latLngBounds(corner1, corner2);
+
+export default function App() {
+  const [cities, setCities] = useState();
+
+  useEffect(() => {
+    async function fetchCities() {
+      try {
+        const res = await fetch(url);
+        setCities(await res.json());
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    fetchCities();
+  }, []);
+
+  return (
+    <div className="App">
+      <h3 style={{ textAlign: "center" }}>
+        50 Most Populous Cities in the World
+      </h3>
+      <MapContainer
+        center={[0, 0]}
+        zoom={2}
+        minZoom={1.5}
+        maxBounds={bounds}
+        maxBoundsViscosity={0.4}
+        style={{ height: "100vh", width: "100%" }}
+      >
+        <TileLayer
+          noWrap={true}
+          url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+
+        {cities &&
+          cities.records.map((city, i) => {
+            return (
+              <CircleMarker
+                center={[
+                  city.fields["coordinates"][0],
+                  city.fields["coordinates"][1]
+                ]}
+                radius={1.5 * (city.fields.population / 1000000)}
+                fillOpacity={0.4}
+                stroke={true}
+                key={city.recordid}
+              >
+                <Tooltip direction="top" offset={[0, -2]} opacity={1}>
+                  <span>
+                    {i + 1}. {city.fields.name} : {city.fields.population}
+                  </span>
+                </Tooltip>
+              </CircleMarker>
+            );
+          })}
+      </MapContainer>
+    </div>
+  );
+}
+```
+
+</details>
+
+## Part 4: The End
+
+Annd we just learnt React Leaflet and built this wonderful map!
+
+![yay](https://media.giphy.com/media/xUPGcMzwkOY01nj6hi/giphy.gif)
+
+Make sure you create an account on CodeSandbox to save this wonderful piece of creation or you'll loose it 😧.
+
+Now it is up to you! Do crazy things with this project!
+
+Here are some tasks for you:
+
+1. Play around with different types of Tile Layers!  
+[Here is the full list](https://leaflet-extras.github.io/leaflet-providers/preview/)
+
+2. Add popups and markers to your map!  
+[Example](https://react-leaflet.js.org/docs/example-popup-marker)
+
+3. Create a map which shows your location!  
+[Example](https://react-leaflet.js.org/docs/example-events)
+
+Check out these cool examples!
+
+1. [Example 1](https://react-leaflet.js.org/docs/example-animated-panning)
+
+2. [Example 2](https://react-leaflet.js.org/docs/example-react-control)
+
+3. [Example 3](https://react-leaflet.js.org/docs/example-external-state)
+
+Check out what other Hack Clubbers built!
+
+WIP
+
+Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
+
+You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.
+1. In a new tab, open and follow [these directions][slack] to signup for our Slack.
+2. Then, post the link to the [`#ship`](https://hackclub.slack.com/messages/ship) channel to share it with everyone and also ping me!
+
+[slack]: https://slack.hackclub.com/
+
+
+PS. I'm `@fayd` on slack.
