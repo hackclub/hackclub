@@ -8,6 +8,8 @@ author: '@faisalsayed10'
 
 Today, We'll be creating a simple bubbles map using a popular JavaScript library [`Leaflet`](https://leafletjs.com/). In fact the React version of it - [`React-Leaflet`](https://react-leaflet.js.org/).
 
+![React Leaflet's Epic Logo](https://cloud-d2ma3vev0.vercel.app/0image.png)
+
 [![Populous Cities](https://cloud-na8vxu9zy.vercel.app/0image.png)](https://9jq66.csb.app/)
 
 Here's the [source code](https://codesandbox.io/s/populous-cities-9jq66).
@@ -53,7 +55,7 @@ export default function App() {
 }
 ```
 
-Explanation: We imported `useEffect` and `useState` as we'll use it later in this workshop. Next, `MapContainer`, `CircleMarker`, `TileLayer` and `Tooltip` are the 4 components that we are going to use to plot our map. Similarly, we also import the CSS styles for the map from `leaflet`.
+Explanation: We imported `useEffect` and `useState` as we'll use it later in the workshop. Next, `MapContainer`, `CircleMarker`, `TileLayer` and `Tooltip` are the 4 components that we are going to use to plot our map. Similarly, we also import the CSS styles for the map from `leaflet`.
 
 Next, we use inline styles to align the heading to the center.
 
@@ -79,11 +81,13 @@ export default function App() {
 
 Explanation: the `MapContainer` component will act as the main container to our map. It requires certain props such as `center` which we have kept as `0, 0` (latitude and longitude), the default `zoom` which we have kept as 2, the minimum zoom limit (`minZoom`) as 1.5 and also the width and height for the map.
 
-You'll be able to see a basic container rendered on the browser!
+Learn more about the [`MapContainer component`](https://react-leaflet.js.org/docs/api-map#mapcontainer).
+
+You'll be able to see a basic map container rendered on the browser!
 
 ![Basic MapContainer rendered](https://cloud-6du06y3zt.vercel.app/1image.png)
 
-Next we’ll add a TileLayer inside our `MapContainer`. It is used to load and display tile layers on the map using a specific tile url.
+Next we’ll add a TileLayer inside our `MapContainer`. It is used to load and display tile layers of the map using a specific tile url.
 
 ```jsx
 <MapContainer
@@ -96,6 +100,8 @@ Next we’ll add a TileLayer inside our `MapContainer`. It is used to load and d
 ```
 
 Voila! We can see the map of the world rendered on the browser!
+
+Learn more about the [`TileLayer component`](https://react-leaflet.js.org/docs/api-components#tilelayer).
 
 ![map of the world](https://cloud-9rkjo4k27.vercel.app/0image.png)
 
@@ -142,6 +148,15 @@ export default function App() {
 ```
 
 Explanation: We create an async function `fetchCities` inside `useEffect` which makes an API call to the given url. Then, we store that response in the `res` variable. Then, after converting it to json format, all that data gets stored in the `cities` state. We pass the empty dependency array (`[]`) to `useEffect` to make sure it only runs once.
+
+Now, we can see our data stored inside the `cities` state!
+
+![data stored inside the cities state](https://cloud-hd193mw81.vercel.app/0image.png)
+
+**NOTE:** This can be seen in the console.
+
+Learn more about [`useEffect`](https://reactjs.org/docs/hooks-effect.html).  
+Learn more about [`async-await`](https://javascript.info/async-await).
 
 <details><summary>Your code so far:</summary>
 
@@ -235,6 +250,7 @@ If we look inside our data, we'll find an array of co-ordinates inside the `fiel
 
 5. `key` - The `key` prop is always necessary while mapping arrays. Also, it should always be a unique value for each element. Each city has a unique `recordid` and we use it as the key of that element.
 
+Learn more about the [`map()`](https://www.w3schools.com/jsref/jsref_map.asp) method.  
 Learn more about the [`CircleMarker component`](https://react-leaflet.js.org/docs/api-components#circlemarker).
 
 Woah! Woah! Woah! Look what you just built! We have a bubble mapped perfectly for each city and also with a varying size!
@@ -272,9 +288,13 @@ Explanation: For each mapped bubble, a `Tooltip` component will be created with 
 
 A `span` will be rendered out as the popup which will display the rank of the city using `i + 1` (index starts from 0, so we added 1 to it), the name of the city and also the population of it!
 
+Learn more about the [`Tooltip component`](https://react-leaflet.js.org/docs/api-components#tooltip).
+
 Annnd we can see the tooltip on hover! Yippee!
 
 ![Tooltip popup image](https://cloud-6jxscag6y.vercel.app/0image.png)
+
+![WOOOOOWWW](https://media.giphy.com/media/M33UV4NDvkTHa/giphy.gif)
 
 We are pretty much done! But before winding up, we need to make some finishing changes to our workshop.
 
@@ -283,6 +303,8 @@ We are pretty much done! But before winding up, we need to make some finishing c
 2. There's a bug which lets you drag the map out of the visible browser screen which is not very appealing.
 
 So let's fix all these bugs in the next section!
+
+![Popeye fixing water](https://media.giphy.com/media/lVBtp4SRW6rvDHf1b6/giphy.gif)
 
 **NOTE:** If you feel satisfied with the current state of the project, it's totally upto you and you can skip it. But if you want to learn new stuff, then stick around!
 
