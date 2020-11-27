@@ -537,6 +537,12 @@ Make sure you create an account on CodeSandbox to save this wonderful piece of c
 
 Now it is up to you! Do crazy things with this project!
 
+Here are some helpful links:
+
+1. [LeafletJS Documentation](https://leafletjs.com/)
+
+2. [React Leaflet Documentation](https://react-leaflet.js.org/docs/start-introduction)
+
 Here are some tasks for you:
 
 1. Play around with different types of Tile Layers!  
