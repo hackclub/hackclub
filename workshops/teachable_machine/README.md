@@ -10,7 +10,7 @@ author: '@MatthewStanciu'
 
 Before we get going, some quick background info:
 
-A machine learning model is a mathematical model for the process of machine learning. Some examples of machine learning models include [artificial neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network), [decision trees](en.wikipedia.org/wiki/Decision_tree_learning), and [regression analysis](en.wikipedia.org/wiki/Regression_analysis). Don’t worry, you don’t have to know what any of these things actually are—Teachable Machine will magically create its own model behind the scenes.
+A machine learning model is a mathematical model for the process of machine learning. Some examples of machine learning models include [artificial neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network), [decision trees](https://en.wikipedia.org/wiki/Decision_tree_learning), and [regression analysis](https://en.wikipedia.org/wiki/Regression_analysis). Don’t worry, you don’t have to know what any of these things actually are—Teachable Machine will magically create its own model behind the scenes.
 
 Machine learning models are trained with large amounts of data that attempt to “teach” the model how to correctly solve a specific problem (e.g. what a hot dog looks like). If you want to learn more about how machine learning models are trained, CGP Grey made [a fantastic video](https://youtu.be/R9OHn5ZF4Uo) about it.
 
