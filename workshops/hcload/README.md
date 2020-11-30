@@ -161,7 +161,7 @@ Run `hcload` and you should see the contents of the file `LICENSE` in your brows
 
 ### Part 3.2: Exposing localhost via ngrok
 
-At the moment, files served will only be accessible over your home network (yes, over repl.it they'll be accessible over the internet, but the end use of this program is to upload files from your own computer). Since the Hackclub CDN needs to be able to make a request to your server over the internet, we'll need to expose the server over the internet.
+At the moment, files served will only be accessible over your home network. Since the Hackclub CDN needs to be able to make a request to your server over the internet, we'll need to expose the server over the internet.
 
 - Import the "ngrok" module and expose the server to the web (in `mod.ts`)
 
