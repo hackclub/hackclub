@@ -25,20 +25,18 @@ Apart from building the drum pad, you will also be learning about different type
 
 ## Getting started
 
-Let's start by setting up our IDE (Integrated Development Environment) on rept.it (https://repl.it/), a free, online code editor.
+Let's start by setting up or coding environment on [repl.it](https://repl.it/), a free, online code editor.
 To start your coding right away, navigate to https://repl.it/languages/html, and you will have your whole setup ready when you sign up.
 
-You will see that there are already three files named HTML, CSS, and JavaScript. Navigate to your `index.html` file, and we can start working on the structure of our drum pads in our HTML file. 
+You will see that there are already three files named index.html, style.css, and script.js. Navigate to your `index.html` file, and we can start working on the structure of our drum pads in our HTML file. 
 
-## HTML Part:
+## HTML:
 
 We will start writing HTML, going into our `<body>` tag, where we write code that will be shown to the user.
 
 Inside the `<body>` tag, we will create a big header that displays the text `DRUM PAD`, and we will do that with the `<h1>` tag:
 
 ```html
-
-<!-- Header tag -->
 <h1>DRUM PAD</h1>
 ```
 
@@ -84,9 +82,9 @@ And if we run our code, it should look like this:
 
 ![Preview of HTML with no CSS](https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
 
-# CSS Part:
+# CSS:
 
-But this doesn't look that nice, right? We will write some CSS to add stlying, which make our drum pad look prettier. Let's do that!
+But this doesn't look that nice, right? We will write some CSS to add styling, which make our drum pad look prettier. Let's do that!
 
 Just before the end of your `<head>` tag, link your CSS file:
 
@@ -98,7 +96,9 @@ Just before the end of your `<head>` tag, link your CSS file:
 
 Your CSS file should be linked, and we can start writing our CSS code.
 
-We will start by writing code for our document to change the colors, adding fonts, height, width, and more. We are also going to be using the font [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto).
+Navigate to your `style.css` file and add the following code:
+
+We will be writing code to change the colors, adding fonts, height, width, and more. We are also going to be using the font [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto).
 
 So, we will import the font first and then edit the properties of our `<body>` tag to change the background color, height, width, display type, font family, and alignment of our content.
 
@@ -122,8 +122,6 @@ body {
 
   display: flex;
 
-  /* flex-direction: column; The flexbox items are ordered the same way as the text direction, along the cross axis. The flexbox items are ordered the opposite way as the text direction, along the cross axis. */
-
   flex-direction: column;
 
   justify-content: center;
@@ -136,7 +134,7 @@ body {
 
   overflow: hidden;
 
-  /* Here, we set the font of our web page to 'Roboto', and the reason we are padding two is in case 'Roboto' doesn't load, we are going to revert to the font san-serif. */
+  /* Here, we set the font of our web page to 'Roboto', and the reason we are padding two is in case 'Roboto' doesn't load, we are going to revert to the font sans-serif. */
 
   font-family: 'Roboto', sans-serif;
 
@@ -169,7 +167,7 @@ h1 {
 }
 ```
 
-Then create three rows and four columns to correctly align the pads and give them a box or container look. We will do just that.
+Then create three rows and four columns to correctly align the pads and give them a box or container look.
 
 ```css
 
@@ -289,8 +287,6 @@ And when we rerun our code, it should look like this:
 
 ![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
 
-We will write code to add hovering effects, inactive or active states, to make it stand out and make the experience better.
-
 We will go where we wrote styling for our `.box` class, and we will add styling that will give our pads a rounded border with a pinkish color.
 
 ```css
@@ -304,7 +300,7 @@ We will go where we wrote styling for our `.box` class, and we will add styling 
 
   /* This property allows you to add rounded corners to elements! */
 
-  border-radius:15px;
+  border-radius: 15px;
 
 }
 ```
@@ -352,13 +348,13 @@ We will then add code that adds hovering effects, inactive or active states to o
 
 ```
 
-We are done with our styling and layout:
+Now that we have finished our styling, here's what your website should look like:
 
 ![Preview of HTML with finished layout CSS applied, and our pad borders colored](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
 
-## JavaScript Part:
+## JavaScript:
 
-And finally, we are done with our CSS. It now looks good, but when you click on the buttons, we have no sound. We need to write our JavaScript code that will get us sound.
+When you click on the buttons, we have no sound. We need to write our JavaScript code that will get us sound.
 
 We will start by navigating to the `index.html` file to link our JavaScript file. Then, just before the end of your `<body>` tag, import your `script.js` file that will be used when our document loads:
 
@@ -372,17 +368,16 @@ We will start writing our JavaScript code in the `script.js` file.
 
 ```javascript
 
-  // We create a function called play and let it take a parameter, which will be a link.
 
   // A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
 
 function play(link) {
 
+    let audio = new Audio(link);
+    
   // Creating an audio variable and giving it the name audio. To the variable, we create a new Audio object which will give us the functionality to sounds, and to the object, we pass the link.
 
   // let is just another keyword that allows you to declare a variable in JavaScript.
-
-    let audio = new Audio(link);
 
     // We load the sound from the link
 
@@ -433,34 +428,26 @@ Luckily the code required to playing our sounds is minimal. Let's navigate to ou
 
 ```
 
-Try it out by clicking the pads and see the magic!
+If you run your code now, you should see a working drum pad!
 If everything works, your drum pad is complete!
 
 
 ![Image](https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif)
- 
-## Publishing
+
+## Hacking
 
 Now that you have finished building, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL! Don't forget to share it with me on Slack @emmanuel39hanks.
 
 ## Resources
-  
-- HTML Docs (https://www.w3schools.com/html/)
-- CSS Docs (https://www.w3schools.com/css/)
-- JavaScript Docs (https://www.w3schools.com/js/)
+
 - Audio Object (https://www.w3schools.com/JSREF/dom_obj_audio.asp)
 - Onclick event (https://www.w3schools.com/jsref/event_onclick.asp)
-- JavaScript functions (https://www.w3schools.com/js/js_functions.asp)
-
-## The End
+- Explanation on the Flex Direction CSS property (https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
 
 Make sure you have created an account on [repl.it](https://repl.it) to save this wonderful creation!
 
-If you face any difficulties in signing up, [watch this](https://www.youtube.com/watch?v=Mtqp4CUepk0).
-
 Now it is up to you! Do anything with this project, try to implement a way to play the drum pad with your keyboard's corresponding keys. 
 
-Check out these crazy examples!
 To finish, here are some amazing, more customized drum pad machines/beatmakers made by other developers:
 
 - A code playground on Solo Learn by Andrew Siachos (https://code.sololearn.com/WfYyBdZwc6qn/#html)
@@ -468,6 +455,3 @@ To finish, here are some amazing, more customized drum pad machines/beatmakers m
 - Music Pad Controller with a Keyboard (https://endertech.com/blog/music-pad-javascript-html-css)
 
 - My favorite one is by Dev Ed, Making Music with JavaScript (https://www.youtube.com/watch?v=8T4SCksjrQ4).
-
-  
-We are done with our workshop. Go ahead, customize it, and add more things to it and have fun. I hope you enjoyed this workshop, happy hacking.
