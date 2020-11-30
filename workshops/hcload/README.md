@@ -129,7 +129,7 @@ export default async function (): Promise<void> {
 
 At the moment, the server simply replies with "Server running" when anything is requested. If you trying running the program (simply run hcload), you should see HTTP server ready, and on the top left of your screen "Server running"
 
-- Next, let's ask for a filePath in our library's default function, and serve the file when an HTTP request reaches our server
+- Next, let's ask for a filePath (a path to a file) in our library's default function, and serve the file when an HTTP request reaches our server
 
 ```js
 import { Application, send } from 'https://deno.land/x/oak@v6.3.1/mod.ts'
@@ -148,7 +148,7 @@ export default async function (filePath: string): Promise<void> { // <--- Change
 }
 ```
 
-Modify `hcload.ts` to pass a filePath to the library. Currently, you can pass the `LICENSE` file included with the starter code.
+Modify `hcload.ts` to pass a filePath to the library. To avoid uploading a file to repl.it, you can pass any file from the starter code (I'll be showing how to use the `LICENSE` file). If you'd like to, upload a separate file to repl.it to test your code.
 
 ```js
 import * as path from "https://deno.land/std@0.75.0/path/mod.ts"
