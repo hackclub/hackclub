@@ -2,6 +2,7 @@
 name: 'Simple Calculator'
 description: 'Build a simple calculator with ReactJS'
 author: '@faisalsayed10'
+img: 'https://cloud-fmzgn1t1z.vercel.app/0screen_shot_2020-11-30_at_5.43.36_pm.png'
 ---
 
 # Simple Calculator
