@@ -136,14 +136,13 @@ body {
   height: 100%;
   width: 100%;
   
-/* The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container */
+  /* The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   /* The CSS overflow property controls what happens to content that is too big to fit into an area. This text is really long, and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. */
-
   /* And we hide all content that overflows. */
   overflow: hidden;
 
@@ -160,7 +159,6 @@ We want to style the header's font size, color, and letter spacing.
 
 ```css
 /* Changing properties of our `<h1>DRUM PAD</h1>`, giving it a white color in hex values, a font size of 5 Viewport Width and letter spacing of 6px. */
-
 h1 {
   color: #000;
 
@@ -175,28 +173,26 @@ h1 {
 Then create three rows and four columns to correctly align the pads and give them a box or container look.
 
 ```css
-/* Here, we are changing the properties of our container that holds all our pads changing the width, display, how we justify the content, and a flex-wrap. */
+  /* Here, we are changing the properties of our container that holds all our pads changing the width, display, how we justify the content, and a flex-wrap. */
 
 .pad {
   width: 500px;
   display: flex;
 
   /* The justify-content property aligns flex items along the main axis of the current line of the flex container. It defines how space is distributed between and around flex items. */
-
   /* And a flex item is a flex container that expands items to fill available free space or shrinks them to prevent overflow. */
 
   justify-content: space-between;
 
   /* The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked, and in this case, we tell them to wrap. */
   flex-wrap: wrap;
-
 }
 ```
 
 We will change each of our pad's properties, and we will do that with the class name `.box`, to give them unique styling.
 
 ```css
-/* Here, we are changing the values of our individual pads in the pad area that holds all our pads. */
+ /* Here, we are changing the values of our individual pads in the pad area that holds all our pads. */
 .box {
   width: 100px;
   height: 100px;
@@ -224,7 +220,6 @@ We will change each of our pad's properties, and we will do that with the class 
   /* The border property sets the border around an HTML element, meaning all four borders (top, right, bottom, and left). */
   /* Here, we are giving our individual pads a 4px solid border. */
   border: 4px solid;
-
 }
 ```
 
@@ -285,9 +280,7 @@ We will then add code that adds hovering effects, inactive or active states to o
 
 ```css
 /* The :hover pseudo-class in CSS selects elements when the mouse cursor is over them. */
-
 /* Here, we will add the :hover pseudo-class on the .box class styling to make the pad lighter when the cursor hovers on it. */
-
 .box:hover {
   background-color: lighten(#444, 10%);
 
@@ -296,7 +289,6 @@ We will then add code that adds hovering effects, inactive or active states to o
 }
 
 /* :active is a CSS pseudo-class that specifies and selects an element based on a state—the active state—and is used to apply styles to an element when it matches that state. The :active pseudo-class is a dynamic class that applies when an element is activated by the user. */
-
 /* And we will use the :active pseudo-class on the .box class and add styling for when the pads are in an active state. */
 
 .box:active {
@@ -304,18 +296,16 @@ We will then add code that adds hovering effects, inactive or active states to o
   background-color: darken(#444, 10%);
 
   /* transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model. */
-  
   /* Here, we just make it 10% larger when clicked with the scale() function. */
   transform: scale(1.1);
 
   /*CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time. */
-
   /* We give a transition that lasts a period of 0.2 seconds, and we use a value of “all” to refer to transition properties. */
   transition: all  0.2s;
 }
 ```
 
-Now that we have finished our styling, here's what your website should look like:
+Now that we have finished our styling, here's what your drum pad should look like:
 
 ![Preview of HTML with finished layout CSS applied, and our pad borders colored](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
 
@@ -334,8 +324,6 @@ We will start by navigating to the `index.html` file to link our JavaScript file
 We will start writing our JavaScript code in the `script.js` file.
 
 ```javascript
-
-
   // A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
 
 function play(link) {
@@ -353,7 +341,6 @@ function play(link) {
     // And we play it here
 
     audio.play();
-
 }
 ```
 
