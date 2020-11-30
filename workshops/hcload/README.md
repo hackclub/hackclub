@@ -24,7 +24,7 @@ If you get stuck anywhere in this workshop, feel free to ask me questions! I'm @
 
 > Note: Since (at the time of writing) Deno is in Beta @repl.it, you'll want to ignore any errors you see regarding await, import, and the Deno object.
 
-To make it easier for us to code today, we'll be using Repl.it. However, towards the end of the workshop, we'll download [Deno](https://deno.land/) so that we can upload files from our computers.
+To make it easier for us to code today, we'll be using Repl.it. However, towards the end of the workshop, we'll download [Deno](https://deno.land/) so that we can upload files from our computers. This will involve a terminal and downloading files, so school Chromebooks, iPads, and other devices that don't have command line access cannot be used for this workshop.
 
 Follow these steps:
 
