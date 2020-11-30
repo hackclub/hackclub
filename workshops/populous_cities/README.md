@@ -562,9 +562,7 @@ Check out these cool examples!
 
 3. [Example 3](https://react-leaflet.js.org/docs/example-external-state)
 
-Check out what other Hack Clubbers built!
-
-WIP
+4. [A Covid-19 Tracker built by Khushraj!](https://codesandbox.io/s/covid-tracker-sxfpu)
 
 Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
 
