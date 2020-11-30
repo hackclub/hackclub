@@ -286,7 +286,7 @@ Now that we have finished our styling, here's what your drum pad should look lik
 
 When you click on the buttons, we have no sound. We need to write our JavaScript code that will get us sound.
 
-We will start by navigating to the `index.html` file to link our JavaScript file. Then, just before the end of your `<body>` tag, import your `script.js` file that will be used when our document loads:
+Let's navigate to our the `index.html` file to link the JavaScript file. Then, inside the `<body>` tag at the bottom, we will link our `script.js` file with the following code:
 
 ```html
 <script src="script.js"></script>
@@ -295,27 +295,18 @@ We will start by navigating to the `index.html` file to link our JavaScript file
 We will start writing our JavaScript code in the `script.js` file.
 
 ```javascript
-  // A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
-
 function play(link) {
     let audio = new Audio(link);
-  // Creating an audio variable and giving it the name audio. To the variable, we create a new Audio object which will give us the functionality to sounds, and to the object, we pass the link.
-    // let is just another keyword that allows you to declare a variable in JavaScript.
-    
-    
     audio.load();
-    // We load the sound from the link
-    
     audio.play();
-    // And we play it here
 }
 ```
 
-To explain what we did above, we created a function called `play()`, and it receives a parameter, which is `link`. This is the link to the sound hosted on AWS (Amazon Web Services). Don't worry, you won't need to host your files by yourself. You can use mine. We then create an audio object and pass `link` to the object. Now we can just load the audio with the `load()` function and play it with the `play()` function.
+To explain what we did above, we created a function called `play()`, it receives a parameter, which is `link`. This is the link to the sound. We then create an audio object and pass `link` to the object. Now we can just load the audio with the `load()` function and play it with the `play()` function. A function is a block of code designed to perform a particular task, it is executed when "something" invokes it (calls it).
 
-All we need to do now is add an on click event to each of our nested `divs` then we call the `play()` function and pass the link to the sound file as our parameter.
+All we need to do now is add an on click event to each of our nested `divs`, that gets triggered when a pad is clicked, then we call the `play()` function and pass the link to the sound file as our parameter.
 
-Luckily the code required to playing our sounds is minimal. Let's navigate to our `index.html` file first, and then we will add the `onclick=""` HTML attribute, and inside we call the `play(link)` with the link inside like below:
+Luckily the code required to playing our sound is minimal. Let's navigate to our `index.html` file, and then we will add the `onclick=""` HTML attribute, learn more about the onclick event here: [onclick event](https://www.w3schools.com/jsref/event_onclick.asp), and inside we call the `play(link)` with the link inside of the onclick event like below:
   
 ```html
 <div  class="pad">
