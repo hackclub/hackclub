@@ -1,6 +1,6 @@
 ---
 name: Hack Club CDN Uploader
-description: Make a CLI to upload to the Hack Club CDN and implement uploading to the CDN in your apps
+description: Make a Library and CLI to upload to the Hack Club CDN
 author: '@KhushrajRathod'
 img: https://cloud-bb4wyl0oo.vercel.app/0screenshot_2020-11-11_at_10.00.26_pm.png
 ---
