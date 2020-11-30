@@ -187,8 +187,7 @@ export default async function (filePath: string): Promise<void> {
 }
 ```
 
-Here's what fileBase is:
-    - fileBase is the last part of the path to the file, e.g. For "/home/runner/myFile.png", the fileBase is "myFile.png"
+- fileBase is the last part of the path to the file, e.g. For "/home/runner/myFile.png", the fileBase is "myFile.png"
 
 In your terminal, you should see a ngrok URL, visiting this URL should display the LICENSE contents.
 
