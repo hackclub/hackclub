@@ -46,29 +46,17 @@ Just under the `<h1>` tag, we will have three rows and four columns of pads. Eac
 
 <!-- nested child divs -->
   <div>A</div>
-
   <div>B</div>
-
   <div>C</div>
-
   <div>D</div>
-
   <div>E</div>
-
   <div>F</div>
-
   <div>G</div>
-
   <div>H</div>
-
   <div>I</div>
-
   <div>J</div>
-
   <div>K</div>
-
   <div>L</div>
-
 </div>
 ```
 
@@ -88,7 +76,6 @@ To quickly break this down. We have a parent `<div>` tag that nests our pad  `di
 </head>
 <body>
     <h1>DRUM PAD</h1>
-
     <div>
         <div>A</div>
         <div>B</div>
@@ -103,7 +90,6 @@ To quickly break this down. We have a parent `<div>` tag that nests our pad  `di
         <div>K</div>
         <div>L</div>
     </div>
-
 </body>
 </html>
 ```
@@ -223,40 +209,27 @@ We will change each of our pad's properties, and we will do that with the class 
 }
 ```
 
-If you run your code, nothing has changed. That's because we are using classes, and the HTML class attribute specifies one or more class names for an element. Classes are used by CSS and JavaScript to select and access specific elements. The class attribute can be used on any HTML element.
+If you run your code, nothing has changed. That's because we are using classes. We will solve this by using the HTML attribute `class=""` to add classes to our `div` tags.
 
-Let's go back to our `index.html`, to our parent `<div>` we will give it the class name `pad` and to our nested `<div>` tags We want to add the class name `box` which will add the styles that we wrote in our CSS.
+Let's navigate back to our `index.html`, our parent `<div>` will be given the class name `pad` and our nested `<div>` tags, the class name `box` which will apply the code that we wrote in our CSS file.
 
 ```html
 <!-- Here we give the parent div the class name pad -->
 <div  class="pad">
 
 <!-- Here we give the nested divs each the class name box that will add styling of each individual pad -->
-
   <div  class="box">A</div>
-
   <div  class="box">B</div>
-
   <div  class="box">C</div>
-
   <div  class="box">D</div>
-
-  <div  class="box">E</div>
-
+  <div  class="box">E</div
   <div  class="box">F</div>
-
   <div  class="box">G</div>
-
   <div  class="box">H</div>
-
   <div  class="box">I</div>
-
   <div  class="box">J</div>
-
   <div  class="box">K</div>
-
   <div  class="box">L</div>
-
 </div>
 ```
 
@@ -316,9 +289,7 @@ When you click on the buttons, we have no sound. We need to write our JavaScript
 We will start by navigating to the `index.html` file to link our JavaScript file. Then, just before the end of your `<body>` tag, import your `script.js` file that will be used when our document loads:
 
 ```html
-
 <script src="script.js"></script>
-
 ```
 
 We will start writing our JavaScript code in the `script.js` file.
@@ -327,20 +298,16 @@ We will start writing our JavaScript code in the `script.js` file.
   // A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
 
 function play(link) {
-
     let audio = new Audio(link);
-    
   // Creating an audio variable and giving it the name audio. To the variable, we create a new Audio object which will give us the functionality to sounds, and to the object, we pass the link.
-
-  // let is just another keyword that allows you to declare a variable in JavaScript.
-
-    // We load the sound from the link
-
+    // let is just another keyword that allows you to declare a variable in JavaScript.
+    
+    
     audio.load();
-
-    // And we play it here
-
+    // We load the sound from the link
+    
     audio.play();
+    // And we play it here
 }
 ```
 
@@ -352,7 +319,6 @@ Luckily the code required to playing our sounds is minimal. Let's navigate to ou
   
 ```html
 <div  class="pad">
-
   <div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0025.mp3')">A</div>
 
   <div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0010.mp3')">B</div>
@@ -376,7 +342,6 @@ Luckily the code required to playing our sounds is minimal. Let's navigate to ou
   <div  class="box"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/BD0000.mp3')">K</div>
 
   <div  class="box"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CP.mp3')">L</div>
-
 </div>
 ```
 
