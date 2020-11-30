@@ -20,7 +20,7 @@ You should know the basics of React and I recommend you to follow [this](https:/
 
 ## Part 2: Setup
 
-For writing our code, we'll be using [CodeSandbox](codesandbox.io) which turns out to be the best online code editor for creating React apps.
+For writing our code, we'll be using [CodeSandbox](https://codesandbox.io) which turns out to be the best online code editor for creating React apps.
 
 Go to this [starter code](https://react.new). Press **`ctrl+s`** / **`cmd+s`** and it will automatically fork it for you. Now, we have everything set up so let's get started!
 
