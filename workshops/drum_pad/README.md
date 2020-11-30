@@ -25,25 +25,22 @@ Apart from building the drum pad, you will also be learning about different type
 
 ## Getting started
 
-Let's start by setting up or coding environment on [repl.it](https://repl.it/), a free, online code editor.
-To start your coding right away, navigate to https://repl.it/languages/html, and you will have your whole setup ready when you sign up.
+Let's start by setting up our coding environment on [repl.it](https://repl.it/), a free, online code editor.
+To start your coding right away, navigate to [repl.it](https://repl.it/languages/html), and you will have your whole setup ready when you sign up.
 
 You will see that there are already three files named index.html, style.css, and script.js. Navigate to your `index.html` file, and we can start working on the structure of our drum pads in our HTML file. 
 
 ## HTML:
 
-We will start writing HTML, going into our `<body>` tag, where we write code that will be shown to the user.
-
-Inside the `<body>` tag, we will create a big header that displays the text `DRUM PAD`, and we will do that with the `<h1>` tag:
+Inside the `<body>` tag is where we will write most of our HTML code, we will create a header that displays the text `DRUM PAD`, and we will do that with the `<h1>` tag:
 
 ```html
 <h1>DRUM PAD</h1>
 ```
 
-Then just under the `<h1>` tag, we will have three rows and four columns of pads, and each pad will be created with the `<div>` tag. You can think of the `<div>` tag as a box or container, and that's why we are using it here because each of our pads will have a boxy look.
+Just under the `<h1>` tag, we will have three rows and four columns of pads. Each pad will be created with the `<div>` tag. You can think of the `<div>` tag as a box or container, and we are using it because each of our pads will have a boxy look.
 
 ```html
-
 <!-- Parent div -->
 <div>
 
@@ -73,10 +70,9 @@ Then just under the `<h1>` tag, we will have three rows and four columns of pads
   <div>L</div>
 
 </div>
-
 ```
 
-To quickly break this down. We have a parent `<div>` tag that nests or holds all of our pads, and then we just pass letters from A to L to easily identify each pad and like I mentioned above, each pad will be given a box look, and that's why we are using `div` tags.
+To quickly break this down. We have a parent `<div>` tag that nests our pad  `divs`, and inside our pad `divs` we put letters to easily identify each pad and like I mentioned above, each pad will be given a box look, and that's why we are using `div` tags.
 
 <details>
 
@@ -85,50 +81,30 @@ To quickly break this down. We have a parent `<div>` tag that nests or holds all
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
     <meta charset="UTF-8">
-  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>DRUM PAD</title>
-
 </head>
-
 <body>
-  
     <h1>DRUM PAD</h1>
 
     <div>
-        
         <div>A</div>
-        
         <div>B</div>
-        
         <div>C</div>
-        
         <div>D</div>
-        
         <div>E</div>
-        
         <div>F</div>
-        
         <div>G</div>
-        
         <div>H</div>
-        
         <div>I</div>
-        
         <div>J</div>
-        
         <div>K</div>
-
         <div>L</div>
-        
     </div>
-    
-</body>
 
+</body>
 </html>
 ```
 
@@ -140,62 +116,40 @@ And if we run our code, it should look like this:
 
 # CSS:
 
-But this doesn't look that nice, right? We will write some CSS to add styling, which will make our drum pad look prettier. Let's do that!
+We will write CSS to add styling, which will make our drum pad look appealing Let's do that!
 
 Just before the end of your `<head>` tag, link your CSS file:
 
 ```html
-
 <link rel="stylesheet" href="style.css"/>
-
 ```
 
-Your CSS file should be linked, and we can start writing our CSS code.
+Your CSS file should be linked, and we can begin writing our CSS code.
+
+We will be writing code to change the colors, adding fonts, height, width, and more.
 
 Navigate to your `style.css` file and add the following code:
 
-We will be writing code to change the colors, adding fonts, height, width, and more. We are also going to be using the font [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto).
-
-So, we will import the font first and then edit the properties of our `<body>` tag to change the background color, height, width, display type, font family, and alignment of our content.
-
 ```css
-
-/* The import rule allows you to @import a style sheet into another style sheet. The @import rule must be at the top of the document. */
-
-/* Here, we are importing the Roboto font from Google fonts. */
-
-@import  'https://fonts.googleapis.com/css?family=Roboto';
-
 body {
-
   background-color: #fff;
-
   height: 100%;
-
   width: 100%;
-
-  /* The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container */
-
+  
+/* The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container */
   display: flex;
-
   flex-direction: column;
-
   justify-content: center;
-
   align-items: center;
 
   /* The CSS overflow property controls what happens to content that is too big to fit into an area. This text is really long, and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. */
 
   /* And we hide all content that overflows. */
-
   overflow: hidden;
 
-  /* Here, we set the font of our web page to 'Roboto', and the reason we are padding two is in case 'Roboto' doesn't load, we are going to revert to the font sans-serif. */
-
-  font-family: 'Roboto', sans-serif;
-
+  /* Here, we set the font of our web page to 'sans-serif' */
+  font-family: sans-serif;
 }
-
 ```
 
 When we run our code, you will notice that our content has been aligned to the center, and that's because we changed the properties of our `<body>` tag, and the `<body>` tag renders content to our web page.
@@ -205,34 +159,26 @@ When we run our code, you will notice that our content has been aligned to the c
 We want to style the header's font size, color, and letter spacing.
 
 ```css
-
 /* Changing properties of our `<h1>DRUM PAD</h1>`, giving it a white color in hex values, a font size of 5 Viewport Width and letter spacing of 6px. */
 
 h1 {
-
   color: #000;
 
   /* This unit is based on the width of the user's visible area of a web page. A value of 1vw is equal to 1% of the visible area of a web page width. */
-
   font-size: 5vw;
 
   /* Letter spacing just adds space horizontally between text characters. */
-
   letter-spacing: 6px; 
-
 }
 ```
 
 Then create three rows and four columns to correctly align the pads and give them a box or container look.
 
 ```css
-
 /* Here, we are changing the properties of our container that holds all our pads changing the width, display, how we justify the content, and a flex-wrap. */
 
 .pad {
-
   width: 500px;
-
   display: flex;
 
   /* The justify-content property aligns flex items along the main axis of the current line of the flex container. It defines how space is distributed between and around flex items. */
@@ -242,7 +188,6 @@ Then create three rows and four columns to correctly align the pads and give the
   justify-content: space-between;
 
   /* The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked, and in this case, we tell them to wrap. */
-
   flex-wrap: wrap;
 
 }
@@ -251,50 +196,33 @@ Then create three rows and four columns to correctly align the pads and give the
 We will change each of our pad's properties, and we will do that with the class name `.box`, to give them unique styling.
 
 ```css
-
 /* Here, we are changing the values of our individual pads in the pad area that holds all our pads. */
-
 .box {
-
   width: 100px;
-
   height: 100px;
-
   margin: 10px  0;
 
   /* The box-shadow property is used to cast one or more drop shadows to an element. Each shadow is defined by one to five components: a horizontal offset value, a vertical offset value, an optional blur radius, an optional spread radius, and an optional color. */
-
   box-shadow: 0  8px  6px  -6px  black;
-
   background-color: #444;
-
   display: flex;
 
   /* Here, like above, we justify our content and this time to the center. */
-
   justify-content: center;
 
-
   /* The align-items property sets the align-self value on all direct children as a group */
-
   align-items: center;
-
   font-size: 20px;
 
   /* We are changing the color of our individual pad, and in this case, instead of using hex values or a normal color name, we use rgb() */
-
   /* The rgb() function define colors using the Red-green-blue (RGB) model. An RGB color value is specified with rgb(red, green, blue). Each parameter defines the intensity of that color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%). */
-
   color: rgba(255, 255, 255, 0.4);
 
   /* user-select property specifies whether the text of an element can be selected. In web browsers, if you double-click on some text, it will be selected/highlighted. This property can be used to prevent this. */
-
   user-select: none;
 
   /* The border property sets the border around an HTML element, meaning all four borders (top, right, bottom, and left). */
-
   /* Here, we are giving our individual pads a 4px solid border. */
-
   border: 4px solid;
 
 }
@@ -305,7 +233,6 @@ If you run your code, nothing has changed. That's because we are using classes, 
 Let's go back to our `index.html`, to our parent `<div>` we will give it the class name `pad` and to our nested `<div>` tags We want to add the class name `box` which will add the styles that we wrote in our CSS.
 
 ```html
-
 <!-- Here we give the parent div the class name pad -->
 <div  class="pad">
 
@@ -336,7 +263,6 @@ Let's go back to our `index.html`, to our parent `<div>` we will give it the cla
   <div  class="box">L</div>
 
 </div>
-
 ```
 
 And when we rerun our code, it should look like this:
@@ -347,17 +273,11 @@ We will go where we wrote styling for our `.box` class, and we will add styling 
 
 ```css
 .box {
-
   /* We will add these two properties to the .box class to add a colored rounded, solid border. */
-
-  border: 4px solid #E5446D; 
-
-  /* The border-radius property defines the radius of the element's corners. */
+  border: 4px solid #E5446D;
 
   /* This property allows you to add rounded corners to elements! */
-
   border-radius: 15px;
-
 }
 ```
 
@@ -369,13 +289,10 @@ We will then add code that adds hovering effects, inactive or active states to o
 /* Here, we will add the :hover pseudo-class on the .box class styling to make the pad lighter when the cursor hovers on it. */
 
 .box:hover {
-
   background-color: lighten(#444, 10%);
 
   /* Changing the cursor to a pointer when we hover on the pads. */
-
   cursor: pointer;
-
 }
 
 /* :active is a CSS pseudo-class that specifies and selects an element based on a state—the active state—and is used to apply styles to an element when it matches that state. The :active pseudo-class is a dynamic class that applies when an element is activated by the user. */
@@ -383,25 +300,19 @@ We will then add code that adds hovering effects, inactive or active states to o
 /* And we will use the :active pseudo-class on the .box class and add styling for when the pads are in an active state. */
 
 .box:active {
-
   /* When the pad is clicked, we darken the pad with a gray-ish represented by the hex value #444, darken 10% */
-
   background-color: darken(#444, 10%);
 
   /* transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model. */
-
+  
   /* Here, we just make it 10% larger when clicked with the scale() function. */
-
   transform: scale(1.1);
 
   /*CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time. */
 
   /* We give a transition that lasts a period of 0.2 seconds, and we use a value of “all” to refer to transition properties. */
-
   transition: all  0.2s;
-
 }
-
 ```
 
 Now that we have finished our styling, here's what your website should look like:
@@ -453,7 +364,6 @@ All we need to do now is add an on click event to each of our nested `divs` then
 Luckily the code required to playing our sounds is minimal. Let's navigate to our `index.html` file first, and then we will add the `onclick=""` HTML attribute, and inside we call the `play(link)` with the link inside like below:
   
 ```html
-
 <div  class="pad">
 
   <div  class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0025.mp3')">A</div>
@@ -481,7 +391,6 @@ Luckily the code required to playing our sounds is minimal. Let's navigate to ou
   <div  class="box"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CP.mp3')">L</div>
 
 </div>
-
 ```
 
 If you run your code now, you should see a working drum pad!
