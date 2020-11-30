@@ -78,8 +78,6 @@ Then just under the `<h1>` tag, we will have three rows and four columns of pads
 
 To quickly break this down. We have a parent `<div>` tag that nests or holds all of our pads, and then we just pass letters from A to L to easily identify each pad and like I mentioned above, each pad will be given a box look, and that's why we are using `div` tags.
 
-Here's what your index.html file should look like right now:
-
 <details>
 
 <summary>Here's what your entire index.html file should look like so far:</summary>
