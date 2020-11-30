@@ -278,7 +278,7 @@ console.log(await hcload(path.resolve("./LICENSE")))
 Deno.exit(0)
 ```
 
-Note that we can now simply Deno.exit(0) after we get and log the URL -- we no longer have to exit the program manually using CTRL + C.
+Note that we can now simply `Deno.exit(0)` after we get and log the URL -- we no longer have to exit the program manually using CTRL + C.
 
 EXCELLENT! We've successfully made the library, and we've also used it in `hcload.ts`. 
 
