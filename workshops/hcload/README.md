@@ -400,7 +400,7 @@ cd "~/Downloads/hcload"
 deno install -A --unstable ./hcload.ts
 ```
 
-- Run `ls` to see the names of the files in your current directory
+- Run `ls` to see a list of the names of files in your current directory (See [Navigating a terminal](https://www.codingdojo.com/blog/introduction-terminal-navigation))
 
 - Next, run
 
@@ -408,9 +408,21 @@ deno install -A --unstable ./hcload.ts
 hcload -f abc.ext
 ```
 
-where `abc.ext` is a file in your current directory.
+where `abc.ext` is a file in your current directory. For e.x., if the output of `ls` was
 
-CONGRATULATIONS! You've successfully managed to build a Deno Library and a CLI interface for it! 
+```
+myMovie.mp4
+mySong.mp3
+myDocument.pdf
+```
+
+and you wanted to upload the document, you would type
+
+```bash
+hcload -f myDocument.pdf
+```
+
+CONGRATULATIONS! You've successfully managed to build a Deno Library and a CLI for it! 
 
 ![Dumbledore and Snape partying](https://cloud-pq5lbfiab.vercel.app/3dumbledoreparty.gif)
 
