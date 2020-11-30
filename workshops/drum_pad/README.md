@@ -342,7 +342,7 @@ If you run your code now, you should see a working drum pad!
 
 ## Hacking
 
-Now that you have finished building, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL! Don't forget to share it with me on Slack @emmanuel39hanks.
+Now that you have finished building, you share your beautiful creation with other people! Remember, it's as easy as giving them your URL! Don't forget to share it with me on Slack @emmanuel39hanks.
 
 Resources:
 
