@@ -1,11 +1,11 @@
 ---
-name: Hackclub CDN Uploader
-description: Make a CLI to upload to the Hackclub CDN and implement uploading to the CDN in your apps
+name: Hack Club CDN Uploader
+description: Make a CLI to upload to the Hack Club CDN and implement uploading to the CDN in your apps
 author: '@KhushrajRathod'
 img: https://cloud-bb4wyl0oo.vercel.app/0screenshot_2020-11-11_at_10.00.26_pm.png
 ---
 
-# Hackclub CDN Uploader 
+# Hack Club CDN Uploader 
 
 <video autoplay loop muted>
     <source src="https://cloud-7fq4zemw0.vercel.app/0hcloaddemo.mp4" type="video/mp4">
