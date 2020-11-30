@@ -292,7 +292,7 @@ Let's navigate to our the `index.html` file to link the JavaScript file. Then, i
 <script src="script.js"></script>
 ```
 
-We will start writing our JavaScript code in the `script.js` file.
+Now navigate to your `script.js` file and add the following code:
 
 ```javascript
 function play(link) {
@@ -337,8 +337,6 @@ Luckily the code required to playing our sound is minimal. Let's navigate to our
 ```
 
 If you run your code now, you should see a working drum pad!
-If everything works, your drum pad is complete!
-
 
 ![Image](https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif)
 
