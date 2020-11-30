@@ -168,7 +168,7 @@ Then create three rows and four columns to correctly align the pads and give the
   justify-content: space-between;
   
   /* The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked, and in this case, we tell them to wrap. */
-  /* learn more about the flex property [here](https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp)
+  /* learn more about the flex property [here](https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp) */
   flex-wrap: wrap;
 }
 ```
