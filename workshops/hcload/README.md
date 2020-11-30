@@ -41,14 +41,9 @@ Follow these steps:
 
 #### Repl.it basics
 
-<video muted autoplay loop controls>
-    <source src="https://cloud-qiwsf0afg.vercel.app/0repl.it_basics.mp4" type="video/mp4">
-    <ul>To add a file, click "Add file" in the top left and give it a name</ul>
-    <ul>To write code, simply start typing in the code editor in the center of the screen</ul>
-    <ul>To run code, click Run and refresh your page preview</ul>
-    <ul>To format your code, click "auto-format" in the top-center of the screen</ul>
-    <ul>To reload your page preview, click "Refresh" in the top-center of the screen</ul>
-</video>
+<a href="https://youtu.be/7alknyXs3E8">
+    <img src="https://cloud-d6nt45yqr.vercel.app/0replitbasics-workaround-no-i-wont-use-gifs-they-suck-if-youre-reading-this-you-know-the-answer-to-the-universe-that-is-ban-gifs.png" alt="To add a file, click 'Add file' in the top left and give it a name. To write code, simply start typing in the code editor in the center of the screen. To run code, click Run and refresh your page preview. To format your code, click 'auto-format' in the top-center of the screen. To reload your page preview, click 'Refresh' in the top-center of the screen">
+</a>
 
 ---
 
