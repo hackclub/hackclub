@@ -144,7 +144,6 @@ When we run our code, you will notice that our content has been aligned to the c
 We want to style the header's font size, color, and letter spacing.
 
 ```css
-/* Changing properties of our `<h1>DRUM PAD</h1>`, giving it a white color in hex values, a font size of 5 Viewport Width and letter spacing of 6px. */
 h1 {
   color: #000;
 
@@ -159,8 +158,6 @@ h1 {
 Then create three rows and four columns to correctly align the pads and give them a box or container look.
 
 ```css
-  /* Here, we are changing the properties of our container that holds all our pads changing the width, display, how we justify the content, and a flex-wrap. */
-
 .pad {
   width: 500px;
   display: flex;
@@ -169,8 +166,9 @@ Then create three rows and four columns to correctly align the pads and give the
   /* And a flex item is a flex container that expands items to fill available free space or shrinks them to prevent overflow. */
 
   justify-content: space-between;
-
+  
   /* The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked, and in this case, we tell them to wrap. */
+  /* learn more about the flex property [here](https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp)
   flex-wrap: wrap;
 }
 ```
