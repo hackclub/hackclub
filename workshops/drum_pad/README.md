@@ -84,6 +84,7 @@ Here's what your index.html file should look like right now:
 
 <summary>Here's what your entire index.html file should look like so far:</summary>
 
+```html
 <!DOCTYPE html>
 <html lang="en">
   
@@ -131,6 +132,7 @@ Here's what your index.html file should look like right now:
 </body>
 
 </html>
+```
 
 </details>
 
