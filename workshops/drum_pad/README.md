@@ -140,7 +140,7 @@ And if we run our code, it should look like this:
 
 # CSS:
 
-But this doesn't look that nice, right? We will write some CSS to add styling, which make our drum pad look prettier. Let's do that!
+But this doesn't look that nice, right? We will write some CSS to add styling, which will make our drum pad look prettier. Let's do that!
 
 Just before the end of your `<head>` tag, link your CSS file:
 
