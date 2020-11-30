@@ -344,7 +344,7 @@ If you run your code now, you should see a working drum pad!
 
 Now that you have finished building, you should share your beautiful creation with other people! Remember, it's as easy as giving them your URL! Don't forget to share it with me on Slack @emmanuel39hanks.
 
-## Resources
+Resources:
 
 - Audio Object (https://www.w3schools.com/JSREF/dom_obj_audio.asp)
 - Onclick event (https://www.w3schools.com/jsref/event_onclick.asp)
