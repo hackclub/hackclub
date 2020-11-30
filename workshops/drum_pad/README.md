@@ -78,6 +78,62 @@ Then just under the `<h1>` tag, we will have three rows and four columns of pads
 
 To quickly break this down. We have a parent `<div>` tag that nests or holds all of our pads, and then we just pass letters from A to L to easily identify each pad and like I mentioned above, each pad will be given a box look, and that's why we are using `div` tags.
 
+Here's what your index.html file should look like right now:
+
+<details>
+
+<summary>Here's what your entire index.html file should look like so far:</summary>
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DRUM PAD</title>
+
+</head>
+
+<body>
+  
+    <h1>DRUM PAD</h1>
+
+    <div>
+        
+        <div>A</div>
+        
+        <div>B</div>
+        
+        <div>C</div>
+        
+        <div>D</div>
+        
+        <div>E</div>
+        
+        <div>F</div>
+        
+        <div>G</div>
+        
+        <div>H</div>
+        
+        <div>I</div>
+        
+        <div>J</div>
+        
+        <div>K</div>
+
+        <div>L</div>
+        
+    </div>
+    
+</body>
+
+</html>
+
+</details>
+
 And if we run our code, it should look like this:
 
 ![Preview of HTML with no CSS](https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
