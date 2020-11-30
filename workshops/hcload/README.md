@@ -9,7 +9,7 @@ img: https://cloud-bb4wyl0oo.vercel.app/0screenshot_2020-11-11_at_10.00.26_pm.pn
 
 ![Preview of Final Demo](https://cloud-67l800cdw.vercel.app/0ezgif-7-277bc9913850.gif)
 
-Everyone likes unlimited storage, especially when it's available as a cdn (i.e. you can directly embed items uploaded into webpages). If you're on the [Hack Club Slack](https://hackclub.com/slack/), you've probably uploaded something or the other to [#cdn](https://hackclub.slack.com/archives/C016DEDUL87) (If you aren't on the Slack / Haven't uploaded to #cdn, you should check both out!)
+Everyone likes unlimited storage, especially when it's available as a cdn (i.e. you can directly embed items uploaded into webpages). If you're on the [Hack Club Slack](https://hackclub.com/slack/), you've probably uploaded something or the other to [#cdn](https://hackclub.slack.com/archives/C016DEDUL87)
 
 Today, we'll be creating a library that works with the Hackclub CDN. Along with that, we'll also create a command-line tool to upload files using our library. We'll be using [Deno](https://deno.land/) to accomplish this. (If you've previously used Node.js, check out [this talk](https://www.youtube.com/watch?v=M3BM9TB-8yA) on Deno)
 
