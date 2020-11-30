@@ -299,13 +299,9 @@ console.log(await hcload(path.resolve("./LICENSE")))
 Deno.exit(0)
 ```
 
-Next, let's parse the args using Yargs
+Next, let's parse the args using Yargs (just after all the import statements in `hcload.ts`)
 
 ```js
-import Yargs from "https://deno.land/x/yargs@v16.1.1-deno/deno.ts"
-import * as path from "https://deno.land/std@0.75.0/path/mod.ts"
-import hcload from "./mod.ts"
-
 const args = Yargs(Deno.args)
     .usage("Usage: hcload -f file")
     .option("file", {
@@ -317,8 +313,6 @@ const args = Yargs(Deno.args)
     .argv
 
 console.log(args)
-
-Deno.exit(0)
 ```
 
 Run `hcload -f test` and you should probably see something like
