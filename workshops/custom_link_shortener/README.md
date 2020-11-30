@@ -18,7 +18,7 @@ You will be making an [API](https://en.wikipedia.org/wiki/API) that allows someo
 
 **Average time for completion:** You can complete this in <u>15-20 minutes</u>. You will need the following tools:
 
-- [Repl.it](https://repl.it/) online coding platform (no account necessary, but highly recommended)
+- [Repl.it](https://repl.it/) online coding platform
 - [Custom domain](https://domains.google/) (optional)
 
 **Demo:** Test out what we'll be making on this demo! Enter the shortened URL path you want to access and enter the longer link. Then click submit and it will give you your shortened link!
