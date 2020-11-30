@@ -19,10 +19,9 @@ _Preview of the Drum Pad we are going to be creating_
 
 Apart from building the drum pad, you will also be learning about different types of events, functions, styling, and more with Vanilla JavaScript, HTML, and CSS. This whole workshop is customizable according to you, and the best part is, it will take less than 20 minutes to complete! 
 
-[Link to demo](https://drum.emmanuel39hanks.repl.co)
+Final Code:[GitHub](https://github.com/emmanuel39hanks/beat_maker)
 
-[Link to code](https://github.com/emmanuel39hanks/beat_maker)
-
+Demo:[Live](https://drum.emmanuel39hanks.repl.co)
 ## Getting started
 
 Let's start by setting up our coding environment on [repl.it](https://repl.it/), a free, online code editor.
@@ -32,7 +31,7 @@ You will see that there are already three files named index.html, style.css, and
 
 ## HTML:
 
-Inside the `<body>` tag is where we will write most of our HTML code, we will create a header that displays the text `DRUM PAD`, and we will do that with the `<h1>` tag:
+Inside the `<body>` tag is where we will write most of our HTML code, we will start by creating a header that displays the text `DRUM PAD`, and we will do that with the `<h1>` tag:
 
 ```html
 <h1>DRUM PAD</h1>
