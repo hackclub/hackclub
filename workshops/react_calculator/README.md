@@ -417,8 +417,8 @@ For the button which has '`=`' as its children, we'll pass `onClick={evaluate}` 
 
 Lastly, for the Button which has '`C`' (clear) as its children, we'll pass `onClick` and also create an inline function which will simply clear the state.
 
-<detail>
-<summary>After passing all the `props`, here's what it should look like:</summary>
+<details>
+<summary>After passing all the props, here's what it should look like:</summary>
 
 ```jsx
 return (
