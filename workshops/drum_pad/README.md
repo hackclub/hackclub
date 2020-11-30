@@ -350,8 +350,6 @@ Resources:
 - Onclick event (https://www.w3schools.com/jsref/event_onclick.asp)
 - Explanation on the Flex Direction CSS property (https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
 
-Make sure you have created an account on [repl.it](https://repl.it) to save this wonderful creation!
-
 Now it is up to you! Do anything with this project, try to implement a way to play the drum pad with your keyboard's corresponding keys. 
 
 To finish, here are some amazing, more customized drum pad machines/beatmakers made by other developers:
