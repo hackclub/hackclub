@@ -163,12 +163,11 @@ Then create three rows and four columns to correctly align the pads and give the
   display: flex;
 
   /* The justify-content property aligns flex items along the main axis of the current line of the flex container. It defines how space is distributed between and around flex items. */
-  /* And a flex item is a flex container that expands items to fill available free space or shrinks them to prevent overflow. */
-
   justify-content: space-between;
   
+
   /* The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked, and in this case, we tell them to wrap. */
-  /* learn more about the flex property [here](https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp) */
+  /* And a flex item is a flex container that expands items to fill available free space or shrinks them to prevent overflow. */
   flex-wrap: wrap;
 }
 ```
@@ -176,7 +175,7 @@ Then create three rows and four columns to correctly align the pads and give the
 We will change each of our pad's properties, and we will do that with the class name `.box`, to give them unique styling.
 
 ```css
- /* Here, we are changing the values of our individual pads in the pad area that holds all our pads. */
+
 .box {
   width: 100px;
   height: 100px;
@@ -204,6 +203,7 @@ We will change each of our pad's properties, and we will do that with the class 
   /* The border property sets the border around an HTML element, meaning all four borders (top, right, bottom, and left). */
   /* Here, we are giving our individual pads a 4px solid border. */
   border: 4px solid;
+  /* We are changing the values of our individual pads in the pad area that holds all our pads. */
 }
 ```
 
