@@ -53,7 +53,7 @@ The starter code is pretty simple:
 
 ```js
 export default async function (): Promise<void> {
-    console.log("Hello, world!")
+  console.log("Hello, world!")
 }
 ```
 
@@ -114,16 +114,16 @@ Open up `mod.ts`, and let's get started!
 import { Application, send } from 'https://deno.land/x/oak@v6.3.1/mod.ts'
 
 export default async function (): Promise<void> {
-        const app = new Application()
-        app.use(async (context: any) => {
-            context.response.body = "Server running"
-        })
+  const app = new Application()
+  app.use(async (context: any) => {
+    context.response.body = "Server running"
+  })
 
-        app.addEventListener("listen", async ({ port }) => {
-            console.log("HTTP server ready")
-        })
+  app.addEventListener("listen", async ({ port }) => {
+    console.log("HTTP server ready")
+  })
 
-        await app.listen({ port: 20685 })
+  await app.listen({ port: 20685 })
 }
 ```
 
@@ -135,16 +135,16 @@ At the moment, the server simply replies with "Server running" when anything is 
 import { Application, send } from 'https://deno.land/x/oak@v6.3.1/mod.ts'
 
 export default async function (filePath: string): Promise<void> { // <--- Changed
-    const app = new Application()
-    app.use(async (context: any) => {
-        await send(context, filePath, { root: '/' }) // <--- Changed
-    })
+  const app = new Application()
+  app.use(async (context: any) => {
+    await send(context, filePath, { root: '/' }) // <--- Changed
+  })
 
-    app.addEventListener("listen", async ({ port }) => {
-        console.log("HTTP server ready")
-    })
+  app.addEventListener("listen", async ({ port }) => {
+    console.log("HTTP server ready")
+  })
 
-    await app.listen({ port: 20685 })
+  await app.listen({ port: 20685 })
 }
 ```
 
@@ -171,19 +171,19 @@ import { Application, send } from 'https://deno.land/x/oak@v6.3.1/mod.ts'
 import * as path from "https://deno.land/std@0.75.0/path/mod.ts"
 
 export default async function (filePath: string): Promise<void> {
-    const fileBase = path.parse(filePath).base
+  const fileBase = path.parse(filePath).base
 
-    const app = new Application()
-    app.use(async (context: any) => {
-        await send(context, filePath, { root: '/' })
-    })
+  const app = new Application()
+  app.use(async (context: any) => {
+    await send(context, filePath, { root: '/' })
+  })
 
-    app.addEventListener("listen", async ({ port }) => {
-        const ngrokUrl = `https://${await connect({ protocol: 'http', port })}/${fileBase}`
-        console.log("NGROK: " + ngrokUrl)
-    })
+  app.addEventListener("listen", async ({ port }) => {
+    const ngrokUrl = `https://${await connect({ protocol: 'http', port })}/${fileBase}`
+    console.log("NGROK: " + ngrokUrl)
+  })
 
-    await app.listen({ port: 20685 })
+  await app.listen({ port: 20685 })
 }
 ```
 
@@ -208,24 +208,24 @@ import ky from 'https://unpkg.com/ky/index.js'
 import * as path from "https://deno.land/std@0.75.0/path/mod.ts"
 
 export default async function (filePath: string): Promise<void> {
-    const fileBase = path.parse(filePath).base
+  const fileBase = path.parse(filePath).base
 
-    const app = new Application()
-    app.use(async (context: any) => {
-        await send(context, filePath, { root: '/' })
-    })
+  const app = new Application()
+  app.use(async (context: any) => {
+    await send(context, filePath, { root: '/' })
+  })
 
-    app.addEventListener("listen", async ({ port }) => {
-        const ngrokUrl = `https://${await connect({ protocol: 'http', port })}/${fileBase}`
+  app.addEventListener("listen", async ({ port }) => {
+    const ngrokUrl = `https://${await connect({ protocol: 'http', port })}/${fileBase}`
 
-        // @ts-ignore
-        let response: string[] = await ky.post('https://cdn.hackclub.com/api/new', { json: [ngrokUrl] }).json() // <--- Wrapped in array [ ngrokUrl ]
+    // @ts-ignore
+    let response: string[] = await ky.post('https://cdn.hackclub.com/api/new', { json: [ngrokUrl] }).json() // <--- Wrapped in array [ ngrokUrl ]
 
-        console.log(response[0])     
-        disconnect()
-    })
+    console.log(response[0])
+    disconnect()
+  })
 
-    await app.listen({ port: 20685 })
+  await app.listen({ port: 20685 })
 }
 ```
 
@@ -240,26 +240,26 @@ import ky from 'https://unpkg.com/ky/index.js'
 import * as path from "https://deno.land/std@0.75.0/path/mod.ts"
 
 export default async function (filePath: string): Promise<string> { // <--- Changed
-    return new Promise(async resolve => { // <--- Changed
-        const fileBase = path.parse(filePath).base
+  return new Promise(async resolve => { // <--- Changed
+    const fileBase = path.parse(filePath).base
 
-        const app = new Application()
-        app.use(async (context: any) => {
-            await send(context, filePath, { root: '/' })
-        })
+    const app = new Application()
+    app.use(async (context: any) => {
+      await send(context, filePath, { root: '/' })
+    })
 
-        app.addEventListener("listen", async ({ port }) => {
-            const ngrokUrl = `https://${await connect({ protocol: 'http', port })}/${fileBase}`
+    app.addEventListener("listen", async ({ port }) => {
+      const ngrokUrl = `https://${await connect({ protocol: 'http', port })}/${fileBase}`
 
-            // @ts-ignore
-            let response: string[] = await ky.post('https://cdn.hackclub.com/api/new', { json: [ngrokUrl] }).json()
+      // @ts-ignore
+      let response: string[] = await ky.post('https://cdn.hackclub.com/api/new', { json: [ngrokUrl] }).json()
 
-            disconnect()
-            return resolve(response[0])
-        })
+      disconnect()
+      return resolve(response[0])
+    })
 
-        await app.listen({ port: 20685 })
-    }) as Promise<string> // <--- Changed
+    await app.listen({ port: 20685 })
+  }) as Promise<string> // <--- Changed
 }
 ```
 
@@ -303,14 +303,14 @@ Next, let's parse the args using Yargs (just after all the import statements in 
 
 ```js
 const args = Yargs(Deno.args)
-    .usage("Usage: hcload -f file")
-    .option("file", {
-        alias: "f",
-        description: "Path to file to upload",
-        demandOption: true,
-    })
-    .example('hcload -f myPic.png', 'Upload a file')
-    .argv
+  .usage("Usage: hcload -f file")
+  .option("file", {
+    alias: "f",
+    description: "Path to file to upload",
+    demandOption: true,
+  })
+  .example('hcload -f myPic.png', 'Upload a file')
+  .argv
 
 console.log(args)
 ```
@@ -329,14 +329,14 @@ import * as path from "https://deno.land/std@0.75.0/path/mod.ts"
 import hcload from "./mod.ts"
 
 const args = Yargs(Deno.args)
-    .usage("Usage: hcload -f file")
-    .option("file", {
-        alias: "f",
-        description: "Path to file to upload",
-        demandOption: true,
-    })
-    .example('hcload -f myPic.png', 'Upload a file')
-    .argv
+  .usage("Usage: hcload -f file")
+  .option("file", {
+    alias: "f",
+    description: "Path to file to upload",
+    demandOption: true,
+  })
+  .example('hcload -f myPic.png', 'Upload a file')
+  .argv
 
 console.log("Working...")
 
