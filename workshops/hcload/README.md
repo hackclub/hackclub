@@ -15,7 +15,7 @@ Today, we'll be creating a library that works with the Hackclub CDN. Along with 
 
 You should know a bit of Javascript to follow along -- but don't worry, if you don't know JS, you'll just take a bit longer and you'll have to Google somewhat.
 
-Here's the [final code](https://repl.it/@KhushrajRathod/hcload)
+Here's the [final code](https://github.com/KhushrajRathod/hcload/tree/workshop/FinalCode)
 
 If you get stuck anywhere in this workshop, feel free to ask me questions! I'm @KhushrajRathod on the [Hack Club Slack](https://hackclub.com/slack/).
 
@@ -430,7 +430,7 @@ then, run `hcload` and parse stdout.
 
 By design, the Hack club CDN accepts an _array_ of **URLs**. This means we can:
 
-- [Mirror a URL instead of uploading a file](https://repl.it/@KhushrajRathod/hcload-url)
+- [Mirror a URL instead of uploading a file](https://github.com/KhushrajRathod/hcload/tree/workshop/URLonly)
 
 - Add support for multiple URLs and files - Check this out on [GitHub](https://github.com/KhushrajRathod/hcload) or [deno.land/x](https://deno.land/x/KhushrajRathod/hcload)
 
