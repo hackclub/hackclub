@@ -345,7 +345,7 @@ Resources:
 - Onclick event (https://www.w3schools.com/jsref/event_onclick.asp)
 - Explanation on the Flex Direction CSS property (https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
 
-Now it's up to you! Do anything with this project, try implement something crazy. 
+Now it's up to you! Do anything with this project, go on and implement something crazy. 
 
 To finish, here are some branches that build upon this project:
 
