@@ -2,7 +2,7 @@
 name: 'Facial Expression Recognizer'
 description: 'Build FER with Python'
 author: '@YashKalbande'
-img: ''
+img: 'https://cloud-ki1smi0m8.vercel.app/0finaloutput-min.gif'
 ---
 # Introduction
 In our daily life, we knowingly or unknowingly carry out different types of Facial Expression. These movements convey the emotional state of an individual.
@@ -23,8 +23,9 @@ This expression does not change with cultures, they are universal. Six Facial Ex
 ![suprise image](https://cloud-kmaqeh4qc.vercel.app/suprise1.gif) 
 ![disgust image](https://cloud-kmaqeh4qc.vercel.app/disgust1.gif)
 
-Here's a **demo** of what we'll be making. You can see both the final code and test it out on this Repl environment:
-https://repl.it/@YashKalbande/facialexpressionrecongnizer#main.py
+Here's the [**demo**](https://repl.it/@YashKalbande/facialexpressionrecongnizer#main.py) of what we'll be making. You can see both the final code and test it out on this Repl environment.
+
+![Final Code Output](https://cloud-ki1smi0m8.vercel.app/0finaloutput-min.gif)
 
 In this workshop, I'll share how to build a Facial Expression Recognizer using the `FER` library from python.
 
@@ -68,7 +69,7 @@ Below is Sample Output:
 ```
 **NOTE** If you want to add an image in `repl.it` IDE refer to the below Video:
 
-![]
+![Upload Image Guide](https://cloud-3jh0ilrgt.vercel.app/0uploadimage.gif)
 
 ## What is going on underhood🤔🤔
 
@@ -138,6 +139,8 @@ imgplot = plt.imshow(img)
 plt.show()
 ```
 We at the final step of the workshop. Where we display output image by using matplotlib Library functions.`mpimg.imread('emotion.jpg')` method read the image provided in parentheses. Store the image image in `imgplot` by using `plt.imshow(img)`. And Finally `plt.show()` will display our output image.
+
+![dispaly emotion.jpg image](https://cloud-9v4qr2s03.vercel.app/0emotion.jpg)
 
 **Congrats! You've just made your Facial Expression Recognizer! 🎉**
   
