@@ -41,7 +41,7 @@ Because this is a relatively complex project, we should plan out the functions a
   * Letting the Pac-Man move in the specified direction
 * Add different ghosts and dots into the game to spice it up
 * Making sure initial placement of the ghosts and dots are random
-* Scoreboard that updates based on how many dots the Pac-man eats
+* Scoreboard that updates based on how many dots the Pac-Man eats
 
 ## Setting up our code!
 
@@ -82,8 +82,8 @@ ghosts = [
   * The `state` variable is in a [JSON object](https://www.w3schools.com/python/python_json.asp) with the first key being `score`
   * Both `path` and `writer` use the `turtle` library we imported earlier. Respectively, they are used to draw the game map and to update the score.
   * We imported `vector` earlier. This will let us choose the direction and placement of initial objects. This is assigned using a two-dimensional (x, y) axis. Think of a graph...
-    * `aim` sets the **direction** of movement for the Pac-man as (5, 0). This means that we are setting a speed of 5 to the right on the axis. 
-    * We are also using it in an array called `ghosts`, this will spawn the ghosts at each corner of our game and set their speed at a default of 5.
+  * `aim` sets the **direction** of movement for the Pac-Man as (5, 0). This means that we are setting a speed of 5 to the right on the axis. 
+  * We are also using it in an array called `ghosts`, this will spawn the ghosts at each corner of our game and set their speed at a default of 5.
 
 ## Planning the maze
 
@@ -219,7 +219,7 @@ def world():
   * If the value is `1`, then we'll fill it in for the Pac-Man to walk through.
 * Remember to be very careful about the indentation of each line — for example, make sure the `path.up()` is lined up exactly under the `if` syntax.
 
-## Moving the Pac-man
+## Moving the Pac-Man
 
 We want our Pac-Man to be able to move through the world we created. We're going to create a new function called `move` that will allow the character to move. While coding, notice the different variables we're using and functions that correspond.
 
