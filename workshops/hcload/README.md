@@ -11,7 +11,7 @@ img: https://cloud-bb4wyl0oo.vercel.app/0screenshot_2020-11-11_at_10.00.26_pm.pn
 
 Everyone likes unlimited storage, especially when it's available as a cdn (i.e. you can directly embed items uploaded into webpages). If you're on the [Hack Club Slack](https://hackclub.com/slack/), you've probably uploaded something or the other to [#cdn](https://hackclub.slack.com/archives/C016DEDUL87)
 
-Today, we'll be creating a library that works with the Hackclub CDN. Along with that, we'll also create a command-line tool to upload files using our library. We'll be using [Deno](https://deno.land/) to accomplish this. (If you've previously used Node.js, check out [this talk](https://www.youtube.com/watch?v=M3BM9TB-8yA) on Deno)
+Today, we'll be creating a library that works with the Hack Club CDN. Along with that, we'll also create a command-line tool to upload files using our library. We'll be using [Deno](https://deno.land/) to accomplish this. (If you've previously used Node.js, check out [this talk](https://www.youtube.com/watch?v=M3BM9TB-8yA) on Deno)
 
 You should know a bit of Javascript to follow along -- but don't worry, if you don't know JS, you'll just take a bit longer and you'll have to Google somewhat.
 
@@ -23,7 +23,7 @@ If you get stuck anywhere in this workshop, feel free to ask me questions! I'm @
 
 ## Part 1: Theory
 
-The Hackclub CDN API only accepts an array of URLs and not direct file uploads. This means we can mirror anything already hosted on a URL, but we can't upload files from our device. To get around this, we'll have to
+The Hack Club CDN API only accepts an array of URLs and not direct file uploads. This means we can mirror anything already hosted on a URL, but we can't upload files from our device. To get around this, we'll have to
 
 1. Start a file server on our device
 2. Expose the file server to the internet using [ngrok](https://ngrok.com/)
@@ -193,7 +193,7 @@ Run `hcload` and you should see the contents of the file in your browser preview
 
 ### Part 3.2: Exposing localhost via ngrok
 
-At the moment, files served will only be accessible over your home network. Since the Hackclub CDN needs to be able to make a request to your server over the internet, we'll need to expose the server over the internet.
+At the moment, files served will only be accessible over your home network. Since the Hack Club CDN needs to be able to make a request to your server over the internet, we'll need to expose the server over the internet.
 
 - Import the "ngrok" module and expose the server to the web (in `mod.ts`)
 
@@ -223,13 +223,13 @@ export default async function (filePath: string): Promise<void> {
 
 In your terminal, you should see a ngrok URL, visiting this URL should display the LICENSE contents.
 
-### Part 3.3: Making requests to the Hackclub CDN API with Ky
+### Part 3.3: Making requests to the Hack Club CDN API with Ky
 
 - [Ky](https://github.com/sindresorhus/ky) is an HTTP client that lets you easily make requests to any server.
 
 - We'll be using a POST request, which sends data to a server -- In this case, we'll be sending the ngrok URL.
 
-- Now, the Hackclub CDN API only accepts an array of URLs, so we'll need to wrap our URL in an array
+- Now, the Hack Club CDN API only accepts an array of URLs, so we'll need to wrap our URL in an array
 
 Add the following to `mod.ts`:
 
@@ -468,10 +468,10 @@ By design, the Hack club CDN accepts an _array_ of **URLs**. This means we can:
 
 - Add support for multiple URLs and files - Check this out on [GitHub](https://github.com/KhushrajRathod/hcload) or [deno.land/x](https://deno.land/x/KhushrajRathod/hcload)
 
-### Host a website on the Hackclub CDN
+### Host a website on the Hack Club CDN
 
 By getting a bit creative, we can host websites on the Hack club CDN (Note: this is by far not the best way to do this, but it _is_ fun :) )
 
-- [Here's](https://cloud-2gxi88gfk.vercel.app/0index.html) the website made from the [personal website workshop](https://workshops.hackclub.com/personal_website/) hosted using the Hackclub CDN. Can you figure out how it's done? Hint: Right-click > Inspect element to view the website code.
+- [Here's](https://cloud-2gxi88gfk.vercel.app/0index.html) the website made from the [personal website workshop](https://workshops.hackclub.com/personal_website/) hosted using the Hack Club CDN. Can you figure out how it's done? Hint: Right-click > Inspect element to view the website code.
 
 Did you make something awesome? Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6) in the Hack Club Slack and tag me with [@KhushrajRathod](https://hackclub.slack.com/team/U01C21G88QM)!
