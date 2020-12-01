@@ -64,9 +64,7 @@ Just under the `<h1>` tag, we will have three rows and four columns of pads. Eac
 To quickly break this down. We have a parent `<div>` tag that nests our pad  `divs`, and inside our pad `divs` we put letters to easily identify each pad and like I mentioned above, each pad will be given a box look, and that's why we are using `div` tags.
 
 <details>
-  
 <summary>Here's what your entire index.html file should look like so far:</summary>
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -94,7 +92,6 @@ To quickly break this down. We have a parent `<div>` tag that nests our pad  `di
 </body>
 </html>
 ```
-
 </details>
 
 And if we run our code, it should look like this:
