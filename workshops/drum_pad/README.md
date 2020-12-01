@@ -2,6 +2,7 @@
 name: 'Drum Pad'
 description: 'Creating a Drum Pad with HTML, CSS & JS'
 author: '@emmanuel39hanks'
+img: 'https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png'
 ---
 
 Ever wondered how you can play sounds with code? Well, if yes, then you will love this workshop! We will be creating a drum pad in less than 230 lines of code that plays actual sounds, and if you are a beginner, this won't only be fun and creative but will help you get comfortable with coding!
@@ -348,9 +349,6 @@ Now it's up to you! Do anything with this project, try implement something crazy
 
 To finish, here are some branches of the project that build upon the code:
 
-- **Automatically plays a beat:** [demo and code](https://drumpad.emmanuel39hanks.repl.co)
-  - TEXT
-- **Play the drum pad with your keyboard:** [demo and code](https://drumpad.emmanuel39hanks.repl.co)
-  - TEXT
-- **Dummy Text:** [demo and code](https://drumpad.emmanuel39hanks.repl.co)
-  - TEXT
+- **Plays an automated beat track:** [demo and code](https://repl.it/@emmanuel39hanks/drumpadwithabeattrack)
+- **Play the drum pad with your keyboard:** [demo and code](https://repl.it/@emmanuel39hanks/drumpadwithkeyboard)
+- **More sounds:** [demo and code](https://drumpad.emmanuel39hanks.repl.co)
