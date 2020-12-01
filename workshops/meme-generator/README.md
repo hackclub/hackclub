@@ -1,21 +1,21 @@
 ---
-name: 'Meme-Generator'
-description: 'Spin up your own meme-generator!'
+name: 'Meme Generator'
+description: 'Spin up your own Meme Generator!'
 author: '@aaryanporwal'
 img: 'https://cloud-qmqu378mz.vercel.app/0image.png'
 ---
 
-# Meme-Generator
+# Meme Generator
 
 Ever wondered how to make memes? Or did you ever wanted to make your _own_ cool memes and share it with the world?
 
-Then you're at the right place, today we'll be spinning up our own ***meme-generator***, or as I like to call it - 'The Meme-Genie'
+Then you're at the right place, today we'll be spinning up our own ***Meme Generator***, or as I like to call it - 'The Meme-Genie'
 
-Let's take a look of how our meme-generator looks like:
+Let's take a look of how our Meme Generator looks like:
 
-![meme-generator demo](https://cloud-i6md9xxdx.vercel.app/0image.png)
+![Meme Generator demo](https://cloud-i6md9xxdx.vercel.app/0image.png)
 
-Source code can be found [here](https://repl.it/@aaryanporwal/Meme-generator).
+Source code can be found [here](https://repl.it/@aaryanporwal/Meme Generator).
 
 ## Part 1: Prerequisites
 
@@ -43,7 +43,7 @@ Now let's move on to the next part!
 
 ### 1) HTML
 
-Let's first start by making a structure for our meme-generator website.
+Let's first start by making a structure for our Meme Generator website.
 
 * First give an appropriate heading to our website using the `<h1>` tag.
 
