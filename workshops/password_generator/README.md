@@ -308,7 +308,7 @@ Now we will add the function named `getPassword()`.
 Function getPassword() {
 }
 ```
-This function will be work on the section of HTML code where we wrote `onclick=”getPassword()”`.
+This function will be work on the section of HTML code where we wrote `onclick="getPassword()"`.
 
 Create a variable `chars` and give the alphanumeric symbols you want to include in your password.
 
@@ -327,7 +327,10 @@ Create another variable named `passwordLength` and set it to the size of the pas
 ```javascript
 var passwordLength = 10;
 ```
-In the next line set the value of the password as empty.
+In the next line, set the value of the variable `password` as empty using blank quotation marks.
+```javascript
+password = ""
+```
 
 After you are done with that, use the below codes and add it.
 ```javascript
@@ -347,7 +350,7 @@ Later we created a new variable `randomNumber` which will give a random index of
 
 `math.random` will find a number between `0` and `1`. Multiplying it by `chars.length` will make it a number between `0` and `chars.length`.
 
-`.floor` is applied to remove the decimal part of the number like 7.9 when floored will convert into 7.
+`.floor` is applied to remove the decimal part of the number like `7.9` when floored will convert into `7`.
 
 Now, we have a random integer number from `0` to the `passwordLength`.
 
