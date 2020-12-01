@@ -265,6 +265,43 @@ Run `hcload` and you should get a URL like `https://cloud-something.vercel.app/y
 
 Now, instead of logging the response from our library, we want to return it to the calling function. We'll log it from the calling function instead.
 
+- First, wrap return value of the function in a Promise.
+
+```js
+return new Promise(async resolve => {
+  const fileBase = path.parse(filePath).base
+
+  const app = new Application()
+  app.use(async (context: any) => {
+    await send(context, filePath, { root: '/' })
+  })
+
+  app.addEventListener("listen", async ({ port }) => {
+    const ngrokUrl = `https://${await connect({ protocol: 'http', port })}/${fileBase}`
+
+    // @ts-ignore
+    let response: string[] = await ky.post('https://cdn.hackclub.com/api/new', { json: [ngrokUrl] }).json()
+
+    disconnect()
+    return resolve(response[0]) // We're resolving the promise here instead of just returning
+  })
+  await app.listen({ port: 20685 })
+}) as Promise<string>
+```
+
+- Next, change the Return type of the function to `Promise<string>` from `Promise<void>`
+
+```js
+export default async function (filePath: string): Promise<string> {
+  return new Promise(async resolve => {
+    // ...
+  }) as Promise<string>
+}
+```
+
+<details>
+  <summary>Here's how `hcload.ts` should look now</summary>
+
 ```js
 import { connect, disconnect } from 'https://deno.land/x/ngrok@2.2.3/mod.ts'
 import { Application, send } from 'https://deno.land/x/oak@v6.3.1/mod.ts'
@@ -295,10 +332,7 @@ export default async function (filePath: string): Promise<string> { // <--- Chan
 }
 ```
 
-Since the response is being returned inside an event listener, we'll need to wrap the returned value in a promise. 
-Make sure you
-    - Change the return type from `Promise<void>` to `Promise<string>`
-    - `return resolve(response[0])` AFTER you disconnect()
+</details>
 
 In `hcload.ts`:
 
