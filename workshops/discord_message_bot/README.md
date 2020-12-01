@@ -6,6 +6,8 @@ author: '@JakeGerber'
 
 # Create a Discord Bot that allows you to save custom messages!
 
+In this workshop, we're going to create a Discord bot that allows users to save their custom messages that they can have the bot send at any time. By the end you will have programmed a sweet bot to add to your Discord server! 
+
 <img src="https://cloud-bj4vorj8t.vercel.app/examplebot.png" width="380" alt="Message Example">
 
 ## Bot Setup
@@ -21,7 +23,7 @@ This creates a new bot where you can customize the name, description, and profil
 Now click the "Bot" tab on the right side of your screen.
 <img src="https://cloud-e5r0obhgo.vercel.app/0screenshot__1381_.png" width="900" alt="Bot Side Bar">
 
-Click "Add Bot" to generate a bot token! This identifies the bot! Give it to nobody!
+Click "Add Bot" to generate a bot token. This identifies the bot. Give it to nobody!
 <img src="https://cloud-lix7k1shj.vercel.app/0screenshot__1382_.png" width="900" alt="Bot Token">
 
 <img src="https://media4.giphy.com/media/pvl3qUsgblNOo/200.gif" width="380" alt="Zelda Gif">
@@ -34,8 +36,13 @@ Create a new repl and use Node.js as the language.
 
 <img src="https://cloud-otu0relhe.vercel.app/0screenshot__1383_.png" width="600" alt="Node.js Repl">
 
+Make sure to set it to private. You don't want other people accessing your code.
 
-Let's start creating it's functions!
+<img src="https://cloud-6u5f66efw.vercel.app/0screenshot__1418_.png" width="600" alt="Node.js Repl">
+
+## Initial Setup
+
+Let's start creating its functions!
 
 <img src="https://media1.tenor.com/images/d17514e2c03ec6b0e67ba7f18439a011/tenor.gif" width="380" alt="Shawn Sheep Gif">
 
@@ -76,24 +83,24 @@ Let's start by explaining what the prefix is. It allows you to use an exclamatio
 prefix = '!'
 ```
 
-You also most likely do not know what these two lines do.
+Now let's explain these lines.
 
 ```js
 const fs = require('fs')
 client.msgs = require('./msgs.json')
 ```
 
-The fs is a file system node module. You need it to write to files.
+The [fs](https://nodejs.org/api/fs.html#fs_file_system) is a file system node module. It allows you to interact with file systems, which we will need later when writing to your JSON file.
 
-The line after this says that the json file we created will have messages that will be written to it.
+We then specify that our JSON file will have messages written to it.
 
 ```js
 client.once('ready', () => {
   console.log('Ready!')
 })
 ```
-
-This part just let's you know the bot is on when you run it.
+- Under our previous statements, add this code.
+- This code lets you know the bot is on when you run it.
 
 ## Write Command
 
@@ -115,7 +122,7 @@ client.on('message', (message) => {
 
 The message.content part of this just looks at the message that the user typed.
 
-What this does in this case is make sure your bot command starts with !write
+This makes sure your bot command starts with !write
 
 The bot command will be !write {messageKey} {message}
 
@@ -150,6 +157,7 @@ client.on('message', (message) => {
       client.msgs[message.author.id] = {}
     }
     client.msgs[message.author.id][keyVal] = messageVal
+  }
 })
 ```
 
