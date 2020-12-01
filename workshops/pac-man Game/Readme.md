@@ -310,7 +310,7 @@ world()
 move()
 done()
 ```
-**Congrats! You've just made your own Pacman game! 🎉 **
+**Congrats! You've just made your own Pacman game! 🎉**
 
 **Things to note:**
 
