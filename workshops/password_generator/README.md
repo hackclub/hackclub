@@ -30,11 +30,11 @@ You can get started with it just by going to [repl.it/languages/html](https://re
 # Part 3: Inspecting the Default Files
 On the right side in the files section of your repl.it window, you can see 3 files that are:
 
-1-	Index.html
+1-	index.html
 
-2-	Script.js
+2-	script.js
 
-3-	Style.css
+3-	style.css
 
 Let’s take a look at those files one by one and try to understand them.
 
