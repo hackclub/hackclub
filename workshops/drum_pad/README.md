@@ -350,10 +350,11 @@ Resources:
 
 Now it is up to you! Do anything with this project, try to implement a way to play the drum pad with your keyboard's corresponding keys. 
 
-To finish, here are some amazing, more customized drum pad machines/beatmakers made by other developers:
+To finish, here are some branches of the project that build upon the code:
 
-- A code playground on Solo Learn by Andrew Siachos (https://code.sololearn.com/WfYyBdZwc6qn/#html)
-
-- Music Pad Controller with a Keyboard (https://endertech.com/blog/music-pad-javascript-html-css)
-
-- My favorite one is by Dev Ed, Making Music with JavaScript (https://www.youtube.com/watch?v=8T4SCksjrQ4).
+- **A code playground on Solo Learn by Andrew Siachos** (https://code.sololearn.com/WfYyBdZwc6qn/#html)
+  - TEXT
+- **Music Pad Controller with a Keyboard** (https://endertech.com/blog/music-pad-javascript-html-css)
+  - TEXT
+- **My favorite one is by Dev Ed, Making Music with JavaScript** (https://www.youtube.com/watch?v=8T4SCksjrQ4).
+  - TEXT
