@@ -19,7 +19,7 @@ Here's the [final code](https://github.com/KhushrajRathod/hcload/tree/workshop/F
 
 If you get stuck anywhere in this workshop, feel free to ask me questions! I'm @KhushrajRathod on the [Hack Club Slack](https://hackclub.com/slack/).
 
-This workshop will involve a terminal and downloading a Code Editor / Deno, so school Chromebooks, iPads, and other devices that don't have command line access and program installation access cannot be used for this workshop.
+*Note: This workshop does not use an online code editor, like most other workshops. This workshop will involve using a terminal and downloading a Code Editor + Deno, so school Chromebooks, iPads, and other devices that don't have command line access and program installation access cannot be used for this workshop.*
 
 ## Part 1: Theory
 
