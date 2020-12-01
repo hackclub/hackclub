@@ -348,9 +348,7 @@ Now it's up to you! Do anything with this project, try implement something crazy
 
 To finish, here are some branches of the project that build upon the code:
 
-- **A code playground on Solo Learn by Andrew Siachos** (https://code.sololearn.com/WfYyBdZwc6qn/#html)
+- **Automatically plays a beat:** [demo and code](https://drumpad.emmanuel39hanks.repl.co)
   - TEXT
-- **Music Pad Controller with a Keyboard** (https://endertech.com/blog/music-pad-javascript-html-css)
-  - TEXT
-- **My favorite one is by Dev Ed, Making Music with JavaScript** (https://www.youtube.com/watch?v=8T4SCksjrQ4).
+- **Play the drum pad with your keyboard:** [demo and code](https://drumpad.emmanuel39hanks.repl.co)
   - TEXT
