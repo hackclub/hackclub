@@ -150,3 +150,6 @@ Yay! Now we have a far better UI compared to what we had earlier!
 ![live demo of code written so far](https://cloud-ljmv9ffqq.vercel.app/0image.png)
 
 ### 4) JavaScript
+
+Now it's time to fetch the realtime Bitcoin prices and actually show it on the browser screen instead of `Loading...`.
+
