@@ -165,7 +165,6 @@ Then create three rows and four columns to correctly align the pads and give the
   /* The justify-content property aligns flex items along the main axis of the current line of the flex container. It defines how space is distributed between and around flex items. */
   justify-content: space-between;
   
-
   /* The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked, and in this case, we tell them to wrap. */
   /* And a flex item is a flex container that expands items to fill available free space or shrinks them to prevent overflow. */
   flex-wrap: wrap;
