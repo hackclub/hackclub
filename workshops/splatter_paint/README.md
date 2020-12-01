@@ -156,7 +156,7 @@ We’re getting somewhere, but this still doesn’t feel very splattery.
 
 Part of what makes splatter paint so fun to create and look at is the chaotic randomness of everything on the canvas. So, if you want to get your website as close to splatter paint as possible, the best way to do it is to introduce some randomness.
 
-Change the radius of your circles from `10` to `Math.floor(Math.random() * 30) + 5`. This makes the radius a random number between 5 and 30. Then run the repl again.
+Change the radius of your circles from `10` to `Math.round(Math.random() * 25) + 5`. This makes the radius a random number between 5 and 30. Then run the repl again.
 
 ![](img/random-radius.JPG)
 
