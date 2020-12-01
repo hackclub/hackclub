@@ -19,81 +19,9 @@ Here's the [final code](https://repl.it/@KhushrajRathod/hcload)
 
 If you get stuck anywhere in this workshop, feel free to ask me questions! I'm @KhushrajRathod on the [Hack Club Slack](https://hackclub.com/slack/).
 
-## Part 1: Preparing your environment
-### Preparing repl.it
+This workshop will involve a terminal and downloading a Code Editor / Deno, so school Chromebooks, iPads, and other devices that don't have command line access and program installation access cannot be used for this workshop.
 
-> Note: Since (at the time of writing) Deno is in Beta @repl.it, you'll want to ignore any errors you see regarding await, import, and the Deno object.
-
-To make it easier for us to code today, we'll be using Repl.it. However, towards the end of the workshop, we'll download [Deno](https://deno.land/) so that we can upload files from our computers. This will involve a terminal and downloading files, so school Chromebooks, iPads, and other devices that don't have command line access cannot be used for this workshop.
-
-Follow these steps:
-
-- Open https://repl.it/
-- Click "Sign up"
-
-![Arrow to sign up button on top right](https://cloud-pq5lbfiab.vercel.app/9signup-step1.png)
-
-- Fill in some details
-
-![Arrow to "Username", "Email" and "Password" fields in center of screen](https://cloud-91xu3gqm8.vercel.app/0signup-step2.png)
-
-- You now have a Repl.it account! 
-
-#### Repl.it basics
-
-<a href="https://youtu.be/7alknyXs3E8">
-    <img src="https://cloud-d6nt45yqr.vercel.app/0replitbasics-workaround-no-i-wont-use-gifs-they-suck-if-youre-reading-this-you-know-the-answer-to-the-universe-that-is-ban-gifs.png" alt="To add a file, click 'Add file' in the top left and give it a name. To write code, simply start typing in the code editor in the center of the screen. To run code, click Run and refresh your page preview. To format your code, click 'auto-format' in the top-center of the screen. To reload your page preview, click 'Refresh' in the top-center of the screen">
-</a>
-
----
-
-- Open this [starter code](https://repl.it/@KhushrajRathod/hcload-starter) to get started!
-
-The starter code is pretty simple:
-
-```js
-export default async function (): Promise<void> {
-  console.log("Hello, world!")
-}
-```
-
-- In `mod.ts` (our library), we're exporting a default function that others will be able to use in their code. This is where most of our code will be.
-
-```js
-import hcload from "./mod.ts"
-hcload()
-```
-
-- In `hcload.ts` (our CLI), we're using the `mod.ts` library and calling the default function.
-
-- Since the version of Deno provided by repl.it is outdated, we're going to be using our own Deno binaries. I've set up the Deno binaries in the starter code, but they aren't ready in the repl environment. Inside the repl.it shell, run:
-
-```bash
-source prepEnv.sh
-```
-
-![Run commands in the terminal at the right of the screen. Type your command and press enter to execute](https://cloud-iou35wun9.vercel.app/0screenshot_2020-11-09_at_2.51.13_pm.png)
-
-- Every time you restart your shell, you'll need to run this command again (for repl.it, the shell restarts automatically within a short time once you switch browser tabs, so if you encounter a "command not found", just run this again)
-
-
-- To run your code, simply run
-
-```bash
-hcload
-```
-
-> Tip: To stop running your code, use CTRL + C
-
-- If you encounter something like the following during this workshop, simply run `source prepEnv.sh` again and you should be good to go.
-
-> bash: hcload: command not found
-
-You just finished Part 1!!
-
-![Minions cheering](https://cloud-pq5lbfiab.vercel.app/0cheer.gif)
-
-## Part 2: Theory
+## Part 1: Theory
 
 The Hackclub CDN API only accepts an array of URLs and not direct file uploads. This means we can mirror anything already hosted on a URL, but we can't upload files from our device. To get around this, we'll have to
 
@@ -102,6 +30,100 @@ The Hackclub CDN API only accepts an array of URLs and not direct file uploads. 
 3. Send the URL of the ngrok instance to the API
 
 ![Visual diagram of the process above: 1. A request is sent from the program to the CDN with the array of URLs. 2. The server sends a request to the ngrok instance as per the URL provided. 3. The ngrok instance responds with the file contents 4. The server hosts the files and responds with the hosted file URLs](https://cloud-hrkhc4qna.vercel.app/0cdn-workflow.png)
+
+To make it possible to reuse our program in other programs, we'll be creating a [Library](https://en.wikipedia.org/wiki/Library_(computing)) (we'll call this `mod.ts`) and a [CLI](https://en.wikipedia.org/wiki/Command-line_interface) (we'll call this `hcload.ts`) for it.
+
+
+## Part 2: Preparing your environment
+### Part 2.1: Getting a code editor
+
+Since we're going to be editing files locally, you'll need a code editor. I recommend [Visual Studio Code](https://code.visualstudio.com/), here's an article that introduces the basics: https://code.visualstudio.com/docs/introvideos/basics.
+
+### Part 2.2: Installing deno
+
+If you've never heard about Deno before, it's a [Secure JavaScript and TypeScript Runtime](https://stackoverflow.com/questions/30838412/what-is-javascript-runtime#:~:text=Javascript%20runtime%20refers%20to%20where,node%2C%20again%20its%20v8.%20%E2%80%93) like Node.js. It let's you execute [JavaScript](https://en.wikipedia.org/wiki/JavaScript) code on your machine. It also has built in [TypeScript](https://www.typescriptlang.org/) support. TypeScript is a superset of JavaScript with useful features like types. Since Deno has built in TypeScript, we can simply create files with a .ts extension and run them without any additional [transpilation](https://en.wikipedia.org/wiki/Source-to-source_compiler) steps.
+
+- [Deno installation docs](https://deno.land/manual/getting_started/installation)
+
+In a nutshell:
+
+- If you're on Windows, open PowerShell (Windows logo in taskbar > Search > PowerShell), and then run
+
+```
+iwr https://deno.land/x/install/install.ps1 -useb | iex
+```
+
+- If you're on macOS / Linux, open a Terminal (For macOS, CMD + Space and type "Terminal", for Linux, the command shortcut is usually Ctrl + Alt + T) and run
+
+```
+curl -fsSL https://deno.land/x/install/install.sh | sh
+```
+
+After you've done this (you may need to close and reopen your terminal / PowerShell), running `deno --version` should display something like:
+
+```
+deno 1.5.3
+v8 8.7.220.3
+typescript 4.0.5
+```
+
+Awesome! You have Deno setup successfully!
+
+### Part 2.3: Setting up your Code Editor
+
+To get started, first create a Folder somewhere memorable on your computer, like your Desktop. Next, open that folder in your Code Editor and create two files in it
+
+- `hcload.ts` (our CLI)
+- `mod.ts` (our library - This is where most of our code will be)
+
+Inside hcload.ts, add
+
+```ts
+export default async function (): Promise<void> {
+  console.log("Hello, world!")
+}
+```
+
+Explanation: We're exporting a default function from our library that others will be able to use in their code.
+
+Inside mods.ts, add
+
+```ts
+import hcload from "./mod.ts"
+hcload()
+```
+
+Explanation: We're using the library we created in `hcload.ts` and calling its default function.
+
+In your Terminal / Powershell, navigate to the folder in which you have your code. (See [Navigating a terminal](https://www.codingdojo.com/blog/introduction-terminal-navigation))
+
+After you're in the folder you created your files in run `ls` to see a list of the names of files in your current directory. You should see `hcload.ts` and `mod.ts` as files present in your folder.
+
+Run
+
+```bash
+deno install -A --unstable ./hcload.ts
+```
+
+This adds a [symlink](https://devdojo.com/devdojo/what-is-a-symlink) to your `hcload.ts` file that lets you simply run 
+
+```
+hcload
+```
+
+instead of running
+
+```
+deno run -A --unstable ./hcload.ts
+```
+
+every time
+
+> Tip: To stop running your code, use CTRL + C
+
+You just finished Part 2!!
+
+![Minions cheering](https://cloud-pq5lbfiab.vercel.app/0cheer.gif)
 
 ## Part 3: Programming the library
 ### Part 3.1: Setting up the server
@@ -127,7 +149,7 @@ export default async function (): Promise<void> {
 }
 ```
 
-At the moment, the server simply replies with "Server running" when anything is requested. If you trying running the program (simply run hcload), you should see HTTP server ready, and on the top left of your screen "Server running"
+At the moment, the server simply replies with "Server running" when anything is requested. If you trying running the program (simply run hcload and open `localhost:20685` in your Browser), you should see `HTTP server ready` in your terminal, and "Server running" in your browser
 
 - Next, let's ask for a filePath (a path to a file) in our library's default function, and serve the file when an HTTP request reaches our server
 
@@ -148,16 +170,26 @@ export default async function (filePath: string): Promise<void> { // <--- Change
 }
 ```
 
-Modify `hcload.ts` to pass a filePath to the library. To avoid uploading a file to repl.it, you can pass any file from the starter code (I'll be showing how to use the `LICENSE` file). If you'd like to, upload a separate file to repl.it to test your code.
+Create a test file in the folder containing your code, or copy a small (< 1MB) file into that folder.
+Modify `hcload.ts` to pass a filePath to the library. 
 
 ```js
 import * as path from "https://deno.land/std@0.75.0/path/mod.ts"
 import hcload from "./mod.ts"
 
-hcload(path.resolve("./LICENSE"))
+hcload(path.resolve("./yourFile.txt"))
 ```
 
-Run `hcload` and you should see the contents of the file `LICENSE` in your browser preview. Congratulations on making it so far!
+where `yourFile.txt` is the file you created / moved into your code directory. For e.x., if you created `hello.txt`, your code would be
+
+```js
+import * as path from "https://deno.land/std@0.75.0/path/mod.ts"
+import hcload from "./mod.ts"
+
+hcload(path.resolve("./hello.txt"))
+```
+
+Run `hcload` and you should see the contents of the file in your browser preview. Congratulations on making it so far!
 
 ### Part 3.2: Exposing localhost via ngrok
 
@@ -286,7 +318,7 @@ EXCELLENT! We've successfully made the library, and we've also used it in `hcloa
 
 ## Part 4: Programming the CLI
 
-Now that our library is ready, let's make `hcload.ts` use arguments from the CLI instead of just hardcoding the LICENSE file. 
+Now that our library is ready, let's make `hcload.ts` use arguments from the CLI instead of [hardcoding](https://stackoverflow.com/questions/1895789/what-does-hard-coded-mean) a file. 
 
 - First, let's import [Yargs](https://yargs.js.org/). Yargs makes it easy to parse command-line arguments.
 
@@ -348,61 +380,7 @@ console.log(url)
 Deno.exit(0)
 ```
 
-Try running `hcload -f LICENSE` and the program should return a URL.
-HOORAY! It works! Except there's a single problem. To upload files, we first need to upload them to repl.it, which defeats the purpose of the workshop.
-
-## Part 5: Setting up your project locally
-### Part 5.1: Installing deno
-
-- [Deno installation docs](https://deno.land/manual/getting_started/installation)
-
-In a nutshell:
-
-- If you're on Windows, open PowerShell (Windows logo in taskbar > Search > PowerShell), and then run
-
-```
-iwr https://deno.land/x/install/install.ps1 -useb | iex
-```
-
-- If you're on macOS / Linux, open a Terminal (For macOS, CMD + Space and type "Terminal", for Linux, the command shortcut is usually Ctrl + Alt + T) and run
-
-```
-curl -fsSL https://deno.land/x/install/install.sh | sh
-```
-
-After you've done this (you may need to close and reopen your terminal / PowerShell), running `deno --version` should display something like:
-
-```
-deno 1.5.3
-v8 8.7.220.3
-typescript 4.0.5
-```
-
-### Part 5.2: Downloading your code from repl.it
-
-- First click the three dots on the top left of the screen
-
-![Arrow pointing to 3 dots at top left of screen](https://cloud-omxyme6x4.vercel.app/1screenshot_2020-11-10_at_7.57.29_pm.png)
-
-- Next, click "Download as zip"
-
-![Arrow pointing to "Download as zip" in 3 dots dropdown](https://cloud-omxyme6x4.vercel.app/0screenshot_2020-11-10_at_7.57.58_pm.png)
-
-- Unzip the downloaded file and navigate to the folder in your terminal. For example, if the unzipped folder is called "hcload" and is in your downloads folder, your command will be
-
-```bash
-cd "~/Downloads/hcload"
-```
-
-- Now, let's install our CLI into our local deno installation
-
-```bash
-deno install -A --unstable ./hcload.ts
-```
-
-- Run `ls` to see a list of the names of files in your current directory (See [Navigating a terminal](https://www.codingdojo.com/blog/introduction-terminal-navigation))
-
-- Next, run
+Try running 
 
 ```bash
 hcload -f abc.ext
@@ -421,6 +399,8 @@ and you wanted to upload the document, you would type
 ```bash
 hcload -f myDocument.pdf
 ```
+
+The program should return a Hack Club CDN Url
 
 CONGRATULATIONS! You've successfully managed to build a Deno Library and a CLI for it! 
 
