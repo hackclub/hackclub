@@ -6,7 +6,7 @@ author: '@JakeGerber'
 
 # Create a Discord Bot that allows you to save custom messages!
 
-In this workshop, we're going to create a Discord bot that allows users to save their custom messages that they can have the bot send at any time. By the end you will have programmed a sweet bot to add to your Discord server! 
+In this workshop, we're going to create a Discord bot that allows users to save custom messages that they can have the bot send at any time. By the end you will have programmed a sweet bot to add to your Discord server!
 
 <img src="https://cloud-bj4vorj8t.vercel.app/examplebot.png" width="380" alt="Message Example">
 
@@ -36,28 +36,29 @@ Create a new repl and use Node.js as the language.
 
 <img src="https://cloud-otu0relhe.vercel.app/0screenshot__1383_.png" width="600" alt="Node.js Repl">
 
-Make sure to set it to private. You don't want other people accessing your code.
+Make sure to set it to private. You'll be adding sensitive information to this project, so you don't want other people accessing your code.
 
 <img src="https://cloud-6u5f66efw.vercel.app/0screenshot__1418_.png" width="600" alt="Node.js Repl">
 
 ## Initial Setup
 
-Let's start creating its functions!
+Let's start coding!
 
 <img src="https://media1.tenor.com/images/d17514e2c03ec6b0e67ba7f18439a011/tenor.gif" width="380" alt="Shawn Sheep Gif">
 
-First, create two files called index.js and msgs.json. 
+You should see a file called `index.js`. This is where you'll write the code for the bot.
 
-  - Your messages will be stored in msgs.json. 
-  
-  - JSON is a file format that allows you to store data as a JavaScript object (key/value pair). If you want to learn more, [check here](https://www.json.org/json-en.html). 
-  
-  - As with defining a normal JavaScript object, your .json file should contain brackets as shown below.
-  
+But first, create a file called `msgs.json` by clicking on the "Add file" button at the top left of your sidebar. This file is where your bot's messages will be stored.
+
+JSON is a file format that allows you to store data as a JavaScript object (key/value pair). If you want to learn more, [check here](https://www.json.org/json-en.html).
+
+Once you create the `msgs.json` file, add two curly braces, like so:
 
 <img src="https://cloud-gh7l7h2q1.vercel.app/json_example.png" width="380" alt="Write Command Example">
 
-In your index.js file, you will start off with code that looks like this. It will be explained below.
+### Writing JavaScript!
+
+In your `index.js` file, start off by adding the following code. It will be explained below.
 
 ```js
 const Discord = require('discord.js')
@@ -72,10 +73,8 @@ client.once('ready', () => {
 
 client.on('message', (message) => {})
 
-client.login('token')
+client.login('token') // make sure you replace token with your bot token
 ```
-
-_Make sure you insert your bot token where 'token' is!_
 
 Let's start by explaining what the prefix is. It allows you to use an exclamation mark to call the bot! Some people have other prefixes such as a dash or pound symbol. It is up to you!
 
@@ -90,27 +89,33 @@ const fs = require('fs')
 client.msgs = require('./msgs.json')
 ```
 
-The [fs](https://nodejs.org/api/fs.html#fs_file_system) is a file system node module. It allows you to interact with file systems, which we will need later when writing to your JSON file.
+[fs](https://nodejs.org/api/fs.html#fs_file_system) is a file system node module. It allows you to interact with file systems, which we will need later when writing to your JSON file.
 
 We then specify that our JSON file will have messages written to it.
+
+At the bottom of the `index.js` file, add:
 
 ```js
 client.once('ready', () => {
   console.log('Ready!')
 })
 ```
-- Under our previous statements, add this code.
-- This code lets you know the bot is on when you run it.
+
+This code lets you know the bot is on when you run it.
 
 ## Write Command
 
+Yay! We've successfully completed our initial setup!
+
 <img src="https://i.pinimg.com/originals/ca/38/b8/ca38b8f7e096956f258d406a7820c7ba.gif" width="380" alt="Snoopy Gif">
 
-Now let's start with the write message command. This will allow you to add your own custom messages. The user will provide a key that the message will be saved to and the message itself.
+Now let's start with a command that allows you to add your own custom messages. The user will provide a key that the message will be saved to and the message itself.
 
 <img src="https://cloud-kb9kganvz.vercel.app/write_message.png" width="380" alt="Write Command Example">
 
-Within your client.on brackets add this if statement.
+We'll want the bot to respond to `!write {messageKey} {message}`.
+
+Within your `client.on` brackets add this if statement:
 
 ```js
 client.on('message', (message) => {
@@ -120,39 +125,32 @@ client.on('message', (message) => {
 })
 ```
 
-The message.content part of this just looks at the message that the user typed.
+This makes sure your bot command starts with `!write`. The `message.content` part of this just looks at the message that the user typed.
 
-This makes sure your bot command starts with !write
-
-The bot command will be !write {messageKey} {message}
-
-Within the if statement add these lines of code
+Within the if statement, add:
 
 ```js
 client.on('message', (message) => {
   if (message.content.startsWith(`${prefix}write `)) {
     var tempSplits = message.content.split(' ', 2)
     var keyVal = tempSplits[1]
-    var messageVal = message.content.slice(tempSplits[0].length + tempSplits[1].length + 2);
+    var messageVal = message.content.slice(tempSplits[0].length + tempSplits[1].length + 2)
   }
 })
 ```
 
-These three lines of code seperate the key value and the message into two seperate strings.
+These three lines of code seperate the key value and the message into two separate strings.
 
 - The first line splits into two strings into an array based on the spaces. The two represents how big the array will be. Documentation is [here](https://www.w3schools.com/jsref/jsref_split.asp). The key value will be the second of the two strings.
-
 - The second line assigns the second array value to the keyVal string.
-
 - The third line takes the original user message and cuts out everything but the message part of the command.
 
-
-Now let's add the user to the json file.
+Now, let's add the user to the json file.
 
 ```js
 client.on('message', (message) => {
   if (message.content.startsWith(`${prefix}write `)) {
-  //Code we already wrote previously would be here
+  // Code we already wrote previously would be here
     if (client.msgs[message.author.id] == undefined) {
       client.msgs[message.author.id] = {}
     }
@@ -161,9 +159,9 @@ client.on('message', (message) => {
 })
 ```
 
-If the user does not exist in the json, we are adding them. We are doing this based on id rather than username because every id is unique.
+If the user does not exist in the json, we are adding them. We are doing this based on ID rather than username because every ID is unique.
 
-Then, we are adding the message under the user id in the json.
+Then, we are adding the message under the user ID in the json.
 
 ```js
 client.on('message', (message) => {
@@ -175,7 +173,7 @@ client.on('message', (message) => {
     client.msgs[message.author.id][keyVal] = messageVal
     //New Stuff!
     fs.writeFile('./msgs.json', JSON.stringify(client.msgs, null, 4), (err) => {
-    if (err) throw err
+      if (err) throw err
       message.channel.send('message written')
     })
 ```
@@ -189,8 +187,7 @@ client.on('message', (message) => {
   if (message.content.startsWith(`${prefix}write `)) {
     var tempSplits = message.content.split(' ', 2)
     var keyVal = tempSplits[1]
-    var messageVal = message.content.slice(tempSplits[0].length + tempSplits[1].length + 2);
-
+    var messageVal = message.content.slice(tempSplits[0].length + tempSplits[1].length + 2)
 
     if (client.msgs[message.author.id] == undefined) {
       client.msgs[message.author.id] = {}
@@ -205,20 +202,19 @@ client.on('message', (message) => {
 }
 ```
 
-The write command is done! Try it out and check the JSON file!
-add image of what it looks like
+Yay! The `!write` command is done!
 
 ## Get Command
 
 <img src="https://media2.giphy.com/media/xT9DPiHFM8Iy3hiC3e/giphy.gif" width="380" alt="Spongebob Gif">
 
-Now let's do the get command. This allows you to get the message you saved!
+Now let's do the `!get` command. This allows you to get the message you saved!
 
 <img src="https://cloud-eing65rqs.vercel.app/get_message.png" width="380" alt="Get Command Example">
 
 ```js
 client.on('message', (message) => {
-  //The Write Message we previously wrote would be here!
+  // The !write command we previously wrote would be here
   if (message.content.startsWith(`${prefix}get `)) {
     let getMessage = message.content.slice(5)
     let _msg = client.msgs[message.author.id][getMessage]
@@ -227,48 +223,36 @@ client.on('message', (message) => {
 }
 ```
 
-- The if statement makes sure the user inputs the !get {messageKey}
-
-- The first line in the if statement gets rid of the !get part of the message to isolate the message
-
+- The if statement checks if the message starts with `!get`
+- The first line in the if statement gets rid of the `!get` part of the message to isolate the message
 - The second line gets the message in the JSON file.
-
 - The third line has the bot send the message in the Discord channel.
-
 
 ## Delete Command
 
 <img src="https://media3.giphy.com/media/26xBIUj4Y6K2LcIz6/source.gif" width="380" alt="Delete Gif">
 
-Now let's do the delete command
+Now, let's write a command to delete a message.
 
 <img src="https://cloud-uvlarb2g1.vercel.app/delete_message.png" width="380" alt="Delete Command Example">
 
 ```js
 client.on('message', (message) => {
-  //The Write & Get Commands we wrote would be here!
+  // The Write & Get Commands we wrote would be here
   if (message.content.startsWith(`${prefix}delete `)) {
     let getMessage = message.content.slice(8)
-
     delete client.msgs[message.author.id][getMessage]
-
     fs.writeFileSync('./msgs.json', JSON.stringify(client.msgs))
-
     message.channel.send(getMessage + ' has been deleted.')
   }
 }
 ```
 
-- Start with the if statement which makes sure the message is !delete {messageKey}
-
-- The first line in the if statement isolates the message.
-
-- The second line deletes the message in the JSON.
-
-- The third line updates the JSON with the message now deleted.
-
-- The fourth line sends a message to let the user know the message was deleted.
-
+- As usual, the if statement makes sure the message starts with `!delete`
+- The first line in the if statement isolates the message
+- The second line deletes the message in the JSON
+- The third line updates the JSON with the message now deleted
+- The fourth line sends a message to let the user know the message was deleted
 
 ## List Command
 
@@ -280,7 +264,7 @@ Now let's allow the user to get the list of all their saved messages.
 
 ```js
 client.on('message', (message) => {
-  //The other commands we wrote would be here!
+  // The other commands we wrote would be here!
   if (message.content == `${prefix}list`) {
     var messageList = ''
 
@@ -293,14 +277,11 @@ client.on('message', (message) => {
 }
 ```
 
-- The if statement just makes sure the user does !list in order to get the list.
-
-- The first message creates an empty string named messageList.
-
-- The for loop cycles through all the key value pairs messages that the user has saved. The inside of the loop adds the messageKey to the messageList.
-
-- The final message sends the messageList string to the Discord channel.
-
+- The if statement just makes sure the message starts with `!list`
+- The first line inside the if statement creates an empty string named messageList
+- The for loop cycles through all the key value pairs messages that the user has saved.
+- The inside of the loop adds the messageKey to the messageList.
+- The final line sends the messageList string to the Discord channel.
 
 ## Help Command
 
@@ -312,7 +293,7 @@ Finally, let's create a help command that allows the user to see all the availab
 
 ```js
 client.on('message', (message) => {
-//The other commands we wrote would be here
+  // The other commands we wrote would be here
   if (message.content == `${prefix}help`) {
     message.channel.send("To send a message do: !write {messageKey} {message}\nTo get a message do: !get {messageKey}\nTo delete a message !delete {messageKey}\nTo view your messages !list");
   }
@@ -338,7 +319,7 @@ client.on('message', (message) => {
   if (message.content.startsWith(`${prefix}write `)) {
     var tempSplits = message.content.split(' ', 2)
     var keyVal = tempSplits[1]
-    var messageVal = message.content.slice(tempSplits[0].length + tempSplits[1].length + 2);
+    var messageVal = message.content.slice(tempSplits[0].length + tempSplits[1].length + 2)
 
 
     if (client.msgs[message.author.id] == undefined) {
@@ -360,11 +341,8 @@ client.on('message', (message) => {
 
   if (message.content.startsWith(`${prefix}delete `)) {
     let getMessage = message.content.slice(8)
-
     delete client.msgs[message.author.id][getMessage]
-
     fs.writeFileSync('./msgs.json', JSON.stringify(client.msgs))
-
     message.channel.send(getMessage + ' has been deleted.')
   }
 
@@ -386,13 +364,14 @@ client.on('message', (message) => {
 client.login('token')
 ```
 
-_Make sure you insert your bot token where 'token' is_
+## Add the bot to your server
 
-## Add the Bot to YOUR server
+Now that we've written all of the code, it's time to add this bot to your Discord server!
 
-Go [here](https://discordapi.com/permissions.html#)!
+Go [here](https://discordapi.com/permissions.html#).
 
 <img src="https://cloud-1ca9lqh0p.vercel.app/0screenshot__1384_.png" width="450" alt="Adding Bot to Your Server">
+
 Add your permissions, click the link at the bottom, and choose what server you want to add it to!
 
 ## More that you can make with Source Code
