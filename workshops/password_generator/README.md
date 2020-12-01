@@ -7,7 +7,7 @@ img: https://cloud-nu1ftbbxy.vercel.app/0sample-demo.png
 
 In this workshop, you are going to make a random alphanumeric password generator using which you can safeguard your social media accounts and much more, in just 20 minutes! 🤩
 
-Here’s the [live demo](https://password-security.hariom04.repl.co/) and its [source code](https://repl.it/@hariom04/password-security#index.html). For entering inside the website, use `hariom` as a password.
+Here’s the [live demo](https://password-security.hariom04.repl.co/) and its [source code](https://repl.it/@hariom04/password-security#index.html). For entering inside the website, use `hariom` as password.
 
 ![final output of the codes provided in this workshop](https://cloud-nu1ftbbxy.vercel.app/0sample-demo.png)
 
@@ -29,8 +29,11 @@ You can get started with it just by going to [repl.it/languages/html](https://re
 
 # Part 3: Inspecting the Default Files
 On the right side in the files section of your repl.it window, you can see 3 files that are:
+
 1-	Index.html
+
 2-	Script.js
+
 3-	Style.css
 
 Let’s take a look at those files one by one and try to understand them.
@@ -56,19 +59,19 @@ Let’s start with the coding part of our project.
 
 ### 1- Adding image and welcoming text.
 
-Inside the `body` tags, we will insert image using `<img src="https://cloud-puhemcmfs.vercel.app/0image.png" width="250" height="250">`. Here, `img` and `src` stand for **‘image’** and **‘source’** respectively. You are free to replace that URL of your image and set its width and height accordingly. 
+Inside the `body` tags, we will insert image using `<img src="https://cloud-puhemcmfs.vercel.app/0image.png" width="250" height="250">`. Here, `img` and `src` stand for **‘image’** and **‘source’** respectively. You are free to replace that URL with your image and set its width & height accordingly. 
 
 Next, we will write a welcoming line, for that type anything of your wish inside `<h2>` & `</h2>` tags like this:
 ```html
 <h2> Hiii HariOm👋 Welcome Back! Let's safeguard your accounts. </h2>
 ```
-Now we want to leave the next line as blank in our output to separate our main tool from the welcoming line. For that, we use a break tag that is called as `<br>` in HTML. So, in the next line, type `<br>`.
+Now we want to leave the next line as blank in our output to separate our main tool from the welcoming line. For that, we use a **break** tag that is called as `<br>` in HTML. So, in the next line, type `<br>`.
 
 ### 2- Making our password generator tool.
 
-Make a new section with the assistance of the `<div>` tag below your break (`<br>`) line. Add the attribute `class=”inputbox”` inside that segment. Adding `class` attribute gives this particular div its own **“name”**, which will allow us to reference it directly using CSS (as we’ll see later in this workshop!).
+Make a new section with the assistance of the `<div>` tag below your break (`<br>`) line. Add the attribute `class="inputbox"` inside that segment. Adding `class` attribute gives this particular div its own **“name”**, which will allow us to reference it directly using CSS (as we’ll see later in this workshop!).
 ```html
-<div class=”inputbox”></div>
+<div class="inputbox"></div>
 ```
 Now from here, we will add some elements inside this section.
 
@@ -76,12 +79,12 @@ Add a sub heading using `<h2>` tag stating the topic of our project that is “R
 ```html
 <h2><u> Random Password Generator </u></h2>
 ```
-Now we will create a box where we will get the passwords, for that we will have to use `<input>` tag . Add the attributes `type=”text”`, `placeholder=”Create Password”`, `id=”password”` and `readonly=””`. 
+Now we will create a box where we will get the passwords, for that we will have to use `<input>` tag. Add the attributes `type="text"`, `placeholder="Create Password"`, `id="password"` and `readonly=""` inside that. 
 ```html
 <input type="text" placeholder="Create Password" id="password" readonly="">
 ```
 Uses of these attributes:
-* The `type` attribute specifies the type of <input>, the element should display.
+* The `type` attribute specifies the type of `<input>`, the element should display.
 * The `placeholder` attribute specifies a short hint inside the input field.
 *	The `id` attribute specifies an unique id for the element. We will learn more about it later in this workshop.
 *	The `readonly` attribute specifies that the input field is read-only.
