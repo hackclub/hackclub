@@ -91,7 +91,7 @@ client.msgs = require('./msgs.json')
 
 We then specify that our JSON file will have messages written to it.
 
-At the bottom of the `index.js` file, add:
+Right after the lines where you import everything you need, add:
 
 ```js
 client.once('ready', () => {
