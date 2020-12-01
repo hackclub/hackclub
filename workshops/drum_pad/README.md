@@ -347,8 +347,8 @@ Resources:
 
 Now it's up to you! Do anything with this project, try implement something crazy. 
 
-To finish, here are some branches of the project that build upon the code:
+To finish, here are some branches that build upon this project:
 
-- **Plays an automated beat track:** [demo and code](https://repl.it/@emmanuel39hanks/drumpadwithabeattrack)
+- **Play an automated beat track:** [demo and code](https://repl.it/@emmanuel39hanks/drumpadwithabeattrack)
 - **Play the drum pad with your keyboard:** [demo and code](https://repl.it/@emmanuel39hanks/drumpadwithkeyboard)
-- **More sounds:** [demo and code](https://drumpad.emmanuel39hanks.repl.co)
+- **A beautifully styled drum pad:** [demo and code](https://repl.it/@emmanuel39hanks/beautifulstyleddrumpad)
