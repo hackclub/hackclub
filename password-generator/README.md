@@ -7,7 +7,7 @@ img: https://cloud-nu1ftbbxy.vercel.app/0sample-demo.png
 
 In this workshop, you are going to make a random alphanumeric password generator using which you can safeguard your social media accounts and much more, in just 20 minutes! 🤩
 
-Here’s the [live demo](https://password-security.hariom04.repl.co/) and its [source code](https://repl.it/@hariom04/password-security#index.html). For entering inside the website, use `hariom` as a password.
+Here’s the [live demo](https://password-security.hariom04.repl.co/) and its [source code](https://repl.it/@hariom04/password-security#index.html). For entering inside the website, use `hariom` as password.
 
 ![final output of the codes provided in this workshop](https://cloud-nu1ftbbxy.vercel.app/0sample-demo.png)
 
@@ -29,9 +29,12 @@ You can get started with it just by going to [repl.it/languages/html](https://re
 
 # Part 3: Inspecting the Default Files
 On the right side in the files section of your repl.it window, you can see 3 files that are:
-1-	Index.html
-2-	Script.js
-3-	Style.css
+
+1-	index.html
+
+2-	script.js
+
+3-	style.css
 
 Let’s take a look at those files one by one and try to understand them.
 
@@ -39,12 +42,12 @@ Let’s take a look at those files one by one and try to understand them.
 This is the `index.html` file in your directory. HTML stands for **“Hypertext Markup Language”**. It provides structure to our webpage.
 
 Here in the first line, we have `<!DOCTYPE html>` which is used for specifying the version of HTML. Next, we have the `<title>` tag which specifies the title of our webpage that will be visible on the tab bar. Then we have `<body>` tag which contains the structural part of our web page. Usually, most of our coding part is typed inside the body tags. (`<body> </body>`)
-  
+
 ## 2) The CSS file
 This is the `style.css` file in your directory. CSS stands for **“Cascading Style Sheets”**. It provides the styling to our webpage and defines its look.
 
 Right now, we don’t have any codes in this file but as we will proceed further in this workshop, we will write codes accordingly. If you take a look in the `<head>` tag in your HTML file, you will find a line of code (`<link href="style.css" rel="stylesheet" type="text/css" />`). This means that your HTML file is properly linked to your CSS file. 😃
-  
+
 ## 3) The JavaScript file
 This is the `script.js` file in your directory. It provides scripting to our webpage and is responsible for the proper functionality of items.
 
@@ -56,19 +59,19 @@ Let’s start with the coding part of our project.
 
 ### 1- Adding image and welcoming text.
 
-Inside the `body` tags, we will insert image using `<img src="https://cloud-puhemcmfs.vercel.app/0image.png" width="250" height="250">`. Here, `img` and `src` stand for **‘image’** and **‘source’** respectively. You are free to replace that URL of your image and set its width and height accordingly. 
+Inside the `body` tags, we will insert image using `<img src="https://cloud-puhemcmfs.vercel.app/0image.png" width="250" height="250">`. Here, `img` and `src` stand for **‘image’** and **‘source’** respectively. You are free to replace that URL with your image and set its width & height accordingly. 
 
 Next, we will write a welcoming line, for that type anything of your wish inside `<h2>` & `</h2>` tags like this:
 ```html
 <h2> Hiii HariOm👋 Welcome Back! Let's safeguard your accounts. </h2>
 ```
-Now we want to leave the next line as blank in our output to separate our main tool from the welcoming line. For that, we use a break tag that is called as `<br>` in HTML. So, in the next line, type `<br>`.
+Now we want to leave the next line as blank in our output to separate our main tool from the welcoming line. For that, we use a **break** tag that is called as `<br>` in HTML. So, in the next line, type `<br>`.
 
 ### 2- Making our password generator tool.
 
-Make a new section with the assistance of the `<div>` tag below your break (`<br>`) line. Add the attribute `class=”inputbox”` inside that segment. Adding `class` attribute gives this particular div its own **“name”**, which will allow us to reference it directly using CSS (as we’ll see later in this workshop!).
+Make a new section with the assistance of the `<div>` tag below your break (`<br>`) line. Add the attribute `class="inputbox"` inside that segment. Adding `class` attribute gives this particular div its own **“name”**, which will allow us to reference it directly using CSS (as we’ll see later in this workshop!).
 ```html
-<div class=”inputbox”></div>
+<div class="inputbox"></div>
 ```
 Now from here, we will add some elements inside this section.
 
@@ -76,17 +79,17 @@ Add a sub heading using `<h2>` tag stating the topic of our project that is “R
 ```html
 <h2><u> Random Password Generator </u></h2>
 ```
-Now we will create a box where we will get the passwords, for that we will have to use `<input>` tag . Add the attributes `type=”text”`, `placeholder=”Create Password”`, `id=”password”` and `readonly=””`. 
+Now we will create a box where we will get the passwords, for that we will have to use `<input>` tag. Add the attributes `type="text"`, `placeholder="Create Password"`, `id="password"` and `readonly=""` inside that. 
 ```html
 <input type="text" placeholder="Create Password" id="password" readonly="">
 ```
 Uses of these attributes:
-* The `type` attribute specifies the type of <input>, the element should display.
+* The `type` attribute specifies the type of `<input>`, the element should display.
 * The `placeholder` attribute specifies a short hint inside the input field.
 *	The `id` attribute specifies an unique id for the element. We will learn more about it later in this workshop.
 *	The `readonly` attribute specifies that the input field is read-only.
 
-Add a new section with the help of `<div>` tag and give attributes `id=”btn”` and `onclick=”getPassword()”`. Then put the texts you want to display on the button that will be responsible for generating our passwords. When you are done with that, close that section using `</div>` tag. We will learn more about `onclick=”getPassword()”` later in this workshop.
+Add a new section with the help of `<div>` tag and give attributes `id="btn"` and `onclick="getPassword()"`. Then put the texts you want to display on the button that will be responsible for generating our passwords. When you are done with that, close that section using `</div>` tag. We will learn more about `onclick="getPassword()"` later in this workshop.
 ```html
 <div id="btn" onclick='getPassword()'> Generate Password </div>
 ```
@@ -104,7 +107,7 @@ Leave next line as blank using `<br>` tag.
 
 Add a new section using `<div>` tag and give attribute `class=”mypasswords”`.
 ```html
-<div class=”mypasswords”>
+<div class="mypasswords">
 </div>
 ```
 Give a heading using `<h2>` tag that you want to show above your password's table like this:
@@ -138,7 +141,7 @@ Here `<table>` tag specifies that we want to create a table and its attribute `b
 Our output of this code will look something like this. 👇
 
  ![final output of HTML codes](https://cloud-bzcoffe31.vercel.app/0html-output.png) 
- 
+
 Finally, we are done with the HTML part, but our webpage doesn’t look like the final output we saw in the beginning. So, let’s jump to the next part of our workshop where we will add some styling to our project.
 
 ## 2) CSS
@@ -165,7 +168,7 @@ In line 5, we gave the `user-select` value as `none` because we don’t want the
 
 ![problem of text selection without user-select](https://cloud-kix9zfmih.vercel.app/0user-select-issue.gif)
 
-If we don’t give `user-select: none;` then when the user clicks on the button that says **Generate Password** for more than once simultaneously, that button's text gets selected that looks weird. So to get rid of this we use that line of code.
+If we don’t give `user-select: none;` then when the user clicks on the button that says **Generate Password** for more than once simultaneously, that button's text will be selected that looks little weird. So to get rid of this, we have used that line of code.
 
 Now in the next block (line 8), we have applied background to our webpage, you can use any solid color or gradient of your choice. 
 
@@ -254,7 +257,7 @@ background-color: #65ffea;
 In the first block that is `.mypasswords`, we described the `position`, `background`, `font-size`, `display`, `padding`, and `border-radius` as per our requirements like we did earlier in this workshop.
 
 Then in the next block that is `th`, we have a customized heading of the table where we have applied `<th>` tag. We have changed its background color.
-  
+
 Finally, we are done with the CSS part of our workshop.
 
 ![final output of codes after completetion of CSS part](https://cloud-2td3hm71p.vercel.app/0css-final-output.png)
@@ -263,6 +266,7 @@ Finally, we are done with the CSS part of our workshop.
 
 ### What we did so far:
 1- We built the structure of the password generator tool and webpage.
+
 2-	We customized it to make it look more attractive.
 
 Now with JavaScript, we will add functionality to our tool and will set up a password to the website.
@@ -271,6 +275,8 @@ Now with JavaScript, we will add functionality to our tool and will set up a pas
 Navigate to `script.js` file.
 
 ### 1- Adding a password to the website.
+#### Disclaimer: This isn't the greatest method of securing a web app as password is visible in source code.  
+You can try **code obfuscation** to make it more secure.
 
 Create a variable “password” with help of `var` and set it to empty.
 ```javascript
@@ -304,7 +310,7 @@ Now we will add the function named `getPassword()`.
 Function getPassword() {
 }
 ```
-This function will be work on the section of HTML code where we wrote `onclick=”getPassword()”`.
+This function will be work on the section of HTML code where we wrote `onclick="getPassword()"`.
 
 Create a variable `chars` and give the alphanumeric symbols you want to include in your password.
 
@@ -323,7 +329,10 @@ Create another variable named `passwordLength` and set it to the size of the pas
 ```javascript
 var passwordLength = 10;
 ```
-In the next line set the value of the password as empty.
+In the next line, set the value of the variable `password` as empty using blank quotation marks.
+```javascript
+password = ""
+```
 
 After you are done with that, use the below codes and add it.
 ```javascript
@@ -343,7 +352,7 @@ Later we created a new variable `randomNumber` which will give a random index of
 
 `math.random` will find a number between `0` and `1`. Multiplying it by `chars.length` will make it a number between `0` and `chars.length`.
 
-`.floor` is applied to remove the decimal part of the number like 7.9 when floored will convert into 7.
+`.floor` is applied to remove the decimal part of the number like `7.9` when floored will convert into `7`.
 
 Now, we have a random integer number from `0` to the `passwordLength`.
 
