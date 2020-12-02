@@ -307,7 +307,7 @@ In line 3, we used `else` statement that means if the above condition is not fol
 ### 2- Making our tool functional
 Now we will add the function named `getPassword()`.
 ```javascript
-Function getPassword() {
+function getPassword() {
 }
 ```
 This function will be work on the section of HTML code where we wrote `onclick="getPassword()"`.
