@@ -151,5 +151,80 @@ Yay! Now we have a far better UI compared to what we had earlier!
 
 ### 4) JavaScript
 
-Now it's time to fetch the realtime Bitcoin prices and actually show it on the browser screen instead of `Loading...`.
+Now it's time to fetch the realtime Bitcoin prices and actually show it on the browser screen instead of showing `Loading...` all the time.
+
+```js
+const div = document.querySelector(".bitcoin");
+const url =
+  "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2Cbitcoincash%2Cethereum%2Clitecoin%2Cbinancecoin%2Cripple&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h";
+
+let data;
+```
+
+We select the `div` tag with the class of `bitcoin` using `querySelector()` and assign it to the `div` variable. The `querySelector()` method returns the first element that matches a specified CSS selector(s) in the document.
+
+Learn more about [`querySelector()`](https://www.w3schools.com/jsref/met_document_queryselector.asp).
+
+Then, we assign the API URL from where the data will be fetched to the variable `url`. We also create a `data` variable where we'll store the fetched data later.
+
+Now, let's fetch the data from that `url`.
+
+```js
+async function fetchData() {
+  try {
+    const res = await fetch(url);
+    data = await res.json();
+  } catch (err) {
+    console.error(err);
+  }
+}
+```
+
+Explanation: We first create an `async function` and then by using the `try-catch` blocks, the response we receive is stored inside the `res` variable. Then, after converting this response to `json` format, it is then stored into the `data` variable. As usual, the `fetch` API returns a promise and to handle that promise, we used the `async-await` syntax.
+
+If there's any error, it will simply get console logged.
+
+Learn more about [`async-await`](https://javascript.info/async-await).
+
+
+<details><summary>Now if you try console logging the data variable, you should see something like this:</summary>
+
+```js
+[ { id: 'bitcoin',
+    symbol: 'btc',
+    name: 'Bitcoin',
+    image: 'https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579',
+    current_price: 19327.06,
+    market_cap: 357299782216,
+    market_cap_rank: 1,
+    fully_diluted_valuation: 404286280236,
+    total_volume: 41738893348,
+    high_24h: 19832.27,
+    low_24h: 18338.09,
+    price_change_24h: -257.1378091,
+    price_change_percentage_24h: -1.31299,
+    market_cap_change_24h: -7585140892.950989,
+    market_cap_change_percentage_24h: -2.07878,
+    circulating_supply: 18559362,
+    total_supply: 21000000,
+    max_supply: 21000000,
+    ath: 19832.27,
+    ath_change_percentage: -2.92725,
+    ath_date: '2020-12-01T11:14:31.236Z',
+    atl: 67.81,
+    atl_change_percentage: 28291.10978,
+    atl_date: '2013-07-06T00:00:00.000Z',
+    roi: null,
+    last_updated: '2020-12-01T15:05:30.303Z',
+    price_change_percentage_24h_in_currency: -1.3129860318628117 },
+  {
+    // ...
+  }
+```
+
+</details>
+
+We get an array of data about various cryptocurrencies! From this, we'll make use of the `current_price` value and the `price_change_percentage_24h` value of bitcoin!
+
+Now, let's create a function which will extract these values and add them to the DOM!
 
