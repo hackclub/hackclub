@@ -34,7 +34,10 @@ Let's begin!
 We'll be using [repl.it](repl.it) to make this project. Head on over to [https://repl.it/languages/HTML](https://repl.it/languages/HTML) to start coding. It's suggested that you make an account so you don't lose your code. 
 
 ## Loading Bootstrap and Chart.js
-We'll be using Bootstrap to quickly style our interface and give it a clean look. Start by copying the following lines of code into the header of your `index.html` file. We're simply using a CDN, a content delivery network, to load bootstrap and the Chart.js library so we can use it later. Read more about CDN [here](https://www.sitepoint.com/what-is-a-cdn-and-how-does-it-work/). 
+We'll be using Bootstrap to quickly style our interface and give it a clean look. Start by copying the following lines of code into the header of your `index.html` file. We're simply using a CDN, a content delivery network, to load bootstrap and the Chart.js library so we can use it later.   
+
+Read more about CDN [here](https://www.sitepoint.com/what-is-a-cdn-and-how-does-it-work/).  
+
 ```HTML
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
@@ -47,7 +50,7 @@ Add the next two `<script>` tags at the end of the body. These are simply some J
 If you want to read about everything that Bootstrap has to offer, the [documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/) is the best place to start. 
 
 ## Building the User Interface   
-Inside of our `<body>` tag, add a `<h1>` tag with property `style="text-align:center;"` that displays "Weather Grapher" with `class="mt-3"`. The class adds a slight margin to the top so it doesn't look too cramped on the screen. 
+Inside of our `<body>` tag, add a `<h1>` tag with property `style="text-align:center;"` that displays "Weather Grapher" with `class="mt-3"`. This class adds a slight margin to the top so it doesn't look too cramped on the screen. 
 
 Add a `<div>` after the header with the styling `style="display: flex; justify-content: center;"`, which centers it horizontally on the screen. This `<div>` will hold the input fields for the city, start date, and end date. Inside this `<div>` add an `<input>` with the following properties: `type="text" class="form-control mr-1" id="city" placeholder="City Name" style="width; 200px"`. Repeat this type of `<input>` two more times, except replacing the id and placeholder attributes with "Start Date" and "End Date" respectively.    
 
@@ -61,9 +64,9 @@ Add a `<div>` after the header with the styling `style="display: flex; justify-c
   </div> 
 </body>
 ```   
-The `form-control` class applies some preset styling to make the input field look sleek and the mr-1 class adds a slight right margin. The `placeholder` attribute adds preset text to the input field when nothing is entered in it. We also added (YYYY-MM-DD) to the placeholder because that it is the only date format that the API will accept, which we'll see later when we look at the documentation. We also made the date input fields a little longer so the placeholder text is able to fit.  
+The `form-control` class applies some preset styling to make the input field look sleek and the `mr-1` class adds a slight margin to the right. The `placeholder` attribute adds preset text to the input field when nothing is entered in it. We also added (YYYY-MM-DD) to the placeholder because that it is the only date format that the API will accept, which we'll see later when we look at the documentation. We also made the date input fields a little longer so the placeholder text is able to fit.  
 
-Add a `<button>` with a label of "Graph" with attributes `class="btn btn-outline-primary mr-1" onclick="getData()`. The `btn` class adds some preset styling to make the button look sleek and the `btn-outline primary` class adds a color transition when you hover over the button. We'll write the `getData()` function later in the Javascript section.   
+Add a `<button>` with a label of "Graph" with attributes `class="btn btn-outline-primary mr-1" onclick="getData()"`. The `btn` class adds some preset styling to make the button look sleek and the `btn-outline primary` class adds a color transition when you hover over the button. We'll write the `getData()` function later in the Javascript section.   
 
 
 ```HTML
@@ -82,7 +85,7 @@ We're almost done with HTML!
 
 Add another `<div>` after the first `<div>` and also center it using `justify-content`. Nest another `<div>` inside with the styling `position: relative; width: 140vh; height: 85vh;` so it's big enough to hold the chart. A vh unit represents 1% of the width/height of the viewport. 
 
-Inside of this, add a `<canvas>` element with an `id` of "myChart" and the same width and height as its parent `<div>`. The canvas will hold the chart once we add it in our Javascript. We have to nest the canvas inside of a `<div>` for us to adjust its size. We also have to nest that inside yet another `<div>` for us to center it. Once we implement the chart in Javascript, feel free to play around with the size and ajust it to your liking. 
+Inside of this, add a `<canvas>` element with an `id` of `myChart` and the same width and height as its parent `<div>`. The canvas will hold the chart once we add it in our Javascript. We have to nest the canvas inside of a `<div>` for us to adjust its size. We also have to nest that inside yet another `<div>` for us to center it. Once we implement the chart in Javascript, feel free to play around with the size and ajust it to your liking. 
 
 At this point, the body of your HTML file should look like this: 
 
@@ -172,7 +175,7 @@ options: {
 }
 ```
 
-**Explanation**: The `responsive: true` property allows us the chart to resize itself with respect to its parent `div`. We add an `xAxes` object with a `ticks` object to describe the scaling of the graph. `mackTickLimits: 10` sets the maximum number of x-axis ticks as 10. For the y-xais, we add add a `scaleLabel` object.   
+**Explanation**: The `responsive: true` property allows us the chart to resize itself with respect to its parent `div`. We add an `xAxes` object with a `ticks` object to describe the scaling of the graph. `mackTickLimits: 10` sets the maximum number of x-axis ticks as 10. For the y-axis, we add add a `scaleLabel` object.   
 
 We can then add the properties `labelString: Temperature in Celsius` and `display: true` which will change the y-axis label to "Temperature in Celsius" and make it visible. Lastly, we add `padding: 20` which adds some space between the y-axis and its label. Customizable options like these can be found in the [Chart.js documentation](https://www.chartjs.org/docs/latest/axes/cartesian/#tick-configuration). 
 
@@ -181,7 +184,7 @@ We're done setting up the chart!
 ## Setting up the API   
 We'll be using the Meteostat Web API to get weather data. Before we go to the documentation, head over [here](https://auth.meteostat.net/) to register for an API key, which we'll need when we make requests to the API. Check your email for your API key and save it to your clipboard, we'll use it later.   
 
-[Here](https://dev.meteostat.net/api/#api-key) is the documentation for the API if you want to learn about it more in depth. The basic idea is that the API works by retrieving data made publicly available from various weather stations. So in order to retrieve weather data, we first have to search for weather stations in the in the city we're looking for, and then pick a weather station in that city to retreive data from. First, add the following variables at the very top of your JS file. 
+[Here](https://dev.meteostat.net/api/#api-key) is the documentation for the API if you want to learn about it more in depth. The basic idea is that the API works by retrieving data made publicly available from various weather stations. So in order to retrieve weather data, we first have to search for weather stations in the city we're looking for, and then pick a weather station in that city to retreive data from. First, add the following variables at the very top of your JS file. 
 
 ```javascript
 const stationURL = "https://api.meteostat.net/v2/stations/search";
@@ -202,7 +205,9 @@ async function getData() { // Retrieve the values of city, start date, and end d
 ```
 We simply retrieve the values of the inputs using the `.getElementById()` method and the `.value` property. We've made this an `async` function, which means that it will always return a promise. A promise is essentially an object returned by the function to handle a `fetch()` request.     
 
-For our purposes, we use it because it is always required if the `await` expression is used anywhere inside the function, which we'll use in a bit. We also make it an `async` function because then it will pause the function until a promise is returned, which we'll need when making API calls. Read more in-depth about aync/await in javascript [here](https://javascript.info/async-await).    
+For our purposes, we use it because it is always required if the `await` expression is used anywhere inside the function, which we'll use in a bit. We also make it an `async` function because then it will pause the function until a promise is returned, which we'll need when making API calls.   
+
+Read more in-depth about aync/await in javascript [here](https://javascript.info/async-await).    
 
 **Note:** According to the documentation, the start and end dates for the API requests must be entered in `YYYY-MM-DD` format. A detailed description of the API parameters and response parameters can be found [here](https://dev.meteostat.net/api/stations/daily.html#parameters). For the purposes of this workshop, we won't be going into input validation. However, we recommended that you try it as an exercise after completing this workshop!    
 
@@ -237,7 +242,9 @@ let data = await promise.json(); // Convert the response to JSON format.
 ```
 The first argument in the `fetch()` function is always the API endpoint, or URL, if we're making an API request. The second arugment is an object with some data about the request. We have to include our API Key attatched to the `x-api-key` property and we have to nest this property inside the `headers` object, which is specified in the [documentation](https://dev.meteostat.net/api/#authentication).    
 
-The `await` keyword pauses the function until the promise from the API call is resolved. We then convert the response data to JSON format using the `.json()` method. This workshop will cover just one of many ways to use `fetch()`, read more about everything that `fetch()` has to offer [here](https://javascript.info/fetch).      
+The `await` keyword pauses the function until the promise from the API call is resolved. We then convert the response data to JSON format using the `.json()` method. This workshop will cover just one of many ways to use `fetch()`.    
+
+Read more about everything that `fetch()` has to offer [here](https://javascript.info/fetch).      
 
 If we `console.log(data)` with what have now, you'll see the response object with `meta` and `data` properties. The `meta` property contains additonal information about the API request. The `data` property contains a list of objects, each with a unique station ID in the area.   
 
