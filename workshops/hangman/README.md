@@ -16,7 +16,7 @@ Here is the final code on [repl.it](https://repl.it/@rpal/Hangman).
 A basic understanding of Java and general concepts like conditionals and loops will make this workshop easier, but anyone who is willing to learn along the way can join along!
 
 ## Part 1: Getting Started
-Ok, let's start coding! Today, we will be using repl.it, a super convenient online code editor. Start up your Java program by going to [replit](repl.it/languages/java). You probably want to create a Repl account so that your code gets saved, and once you’re ready, move onto the next step!
+Ok, let's start coding! Today, we will be using repl.it, a super convenient online code editor. Start up your Java program by going to [replit](https://repl.it/languages/java). You probably want to create a Repl account so that your code gets saved, and once you’re ready, move onto the next step!
 
 ![replit java starter code](https://cloud-q1jb0eal0.vercel.app/0screen_shot_2020-11-17_at_11.46.44_am.png)
 
