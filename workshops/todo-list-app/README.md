@@ -726,14 +726,14 @@ These are some example to inspire your thoughts.
 
 * **Example-1**: Own phonebook using React and Firebase.
 
-    [Demo](). [Source Code]().
+    [Demo](https://phonebook.giridharhackclu.repl.co). [Source Code](https://repl.it/@Giridharhackclu/phonebook#src/App.js).
     
 * **Example-2**: Database for school.
 
-    [Demo](). [Source Code]().
+    [Demo](https://school-database.giridharhackclu.repl.co). [Source Code](https://repl.it/@Giridharhackclu/school-database#src/App.js).
     
-* **Example-3**: Creating a database for a book store.
+* **Example-3**: Creating a grocery bud.
 
-    [Demo](). [Source Code]().
+    [Demo](https://grocery-bud.giridharhackclu.repl.co). [Source Code](https://repl.it/@Giridharhackclu/grocery-bud#src/App.js).
 
 
