@@ -6,7 +6,7 @@ author: "@giridhar7632"
 
 # Color Scheme Generator
 
-This workshop is an introduction to [React Hooks](https://reactjs.org/docs/hooks-intro.html). We're building a colorful app - 'random-color scheme generator' using react. It will look something like this.
+In this workshop we are going to use [React Hooks](https://reactjs.org/docs/hooks-intro.html). We're building a colorful app - 'random-color scheme generator' using react. It looks something like this.
 
 ![Final Result](https://cloud-16p9skn27.vercel.app/0colorscheme.png)
 
@@ -42,9 +42,13 @@ For setting up the project fork the repl [here](https://repl.it/@Giridharhackclu
 Let's start creating our React app.
 After setting up the above [repl](https://repl.it/@Giridharhackclu/color-scheme-generator-starter#README.md), click run button to start the live-server (it’ll take a moment to get running the first time). After running successfully, kick down the console, you can see `Hello world!` on the webpage.
 
-Then navigate to `src` folder and create a component `Color.js`. The `Color.js` component displays the colors on the page. Add the following code. This is a basic react functional component that renders a `div` element with class `container`, which has it's styles in `index.css`. Don't forget to include classes to the elements through out the project.
+## Step - 1
 
-```javascript
+Then navigate to `src` folder and create a component `Color.js`. The `Color.js` component displays the colors on the page. Add the following code. 
+
+This is a basic react functional component that renders a `div` element with class `container`. Don't forget to include classes to the elements through out the project. All the styles are prewritten.
+
+```jsx
 import React from 'react'
 
 export default function Color() {
@@ -56,16 +60,18 @@ export default function Color() {
 }
 ```
 
-Then let's create elements with colors. But what colors? We'll give them random colors. Create a [prop](https://reactjs.org/docs/components-and-props.html#props-are-read-only) `colors`, an `array`, which we get from our main component. Then we will loop through the array with [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). The final component wil be like this :
+Now let's create elements with colors. But what colors? We'll give them random colors as we go. 
 
-```javascript
+Create a [prop](https://reactjs.org/docs/components-and-props.html#props-are-read-only) `colors`, an `array`, which we get from our main component. Then we will loop through the array with [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). The final component wil be like this :
+
+```jsx
 import React from 'react'
 
-export default function Color({ colors = [] }) {
+export default function Color({ colors = [] }) {       // <----------- prop
   if (!colors.length) return null
   return (
     <div className="container">
-      {colors.map((color, i) => (
+      {colors.map((color, i) => (                // <---------- map method
           <div
             key={i}
             className="color"
@@ -77,16 +83,18 @@ export default function Color({ colors = [] }) {
 }
 ```
 
-It gets `colors` array as a prop from other component and returns an array of `div` elements with a `backgroundColor`. Each element contains respective `backgroundColor` in form of `hexcode`. If it gets nothing, it renders `null`. Also a [`key`](https://reactjs.org/docs/lists-and-keys.html#keys) is given to every element for it's identity. We finished writing our `Color.js` component. Don't worry, nothing will be on the webpage without rendering the component. 
+It gets `colors` array as a prop from other component and returns an array of `div` elements with a `backgroundColor`. Each element contains respective `backgroundColor` in form of hexcode. If it gets nothing, it renders `null`. Also a [`key`](https://reactjs.org/docs/lists-and-keys.html#keys) is given to every element for it's identity. 
 
-Then open `App.js` component, where we do our major work. For getting a random color we are using a package [randomcolor](https://randomcolor.lllllllllllllllll.com/), which is a small library of some random colors, is already installed in the starter template. Let's import our `Color.js` and `randomColor` into our `App.js` component. Add these lines of code to the `App` component.
+Now we finished writing our `Color.js` component. Don't worry, nothing will be on the webpage without rendering the component. 
 
-```javascript
+Then open `App.js` component, where we do our major work. For getting a random color we are using a package [randomcolor](https://randomcolor.lllllllllllllllll.com/), which is a small library of some random colors. It is already installed in the starter template. Let's import our `Color.js` and `randomColor` into our `App.js` component. Add these lines of code to the `App` component.
+
+```jsx
 import Color from './Color'
 import randomColor from 'randomcolor'
 ```
 
-We create a array of colors and change the colors when you click the button. Create a button with class `btn` inside the `div`.
+We will create a array of colors and change the colors when you click the button. So create a button with class `btn` inside the `div`.
 
 ```html
 <button className="btn" onClick={change}>Change!</button>
@@ -96,17 +104,19 @@ We use state to update the colors array everytime you click the button.
 
 ## The State Hook - `useState()`
 
-Using the `useState()` API, you can create a new state variable, and have a way to alter it. `useState()` accepts the initial value of the state item and returns an array containing the state variable, and the function you call to alter the state. Since it returns an array we use [array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) to access each individual item. You can add as many `useState()` calls you want, to create as many state variables as you want. Just make sure you call it in the [top level]https://reactjs.org/docs/hooks-rules.html#only-call-hooks-at-the-top-level) of a component (not in an `if` or in any other block). Create two variables `count` and `colors` array using `useState`. 
+Using the `useState()` API, you can create a new state variable, and have a way to alter it. `useState()` accepts the initial value of the state item and returns an array containing the state variable, and the function you call to alter the state. Since it returns an array we use [array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) to access each individual item. You can add as many `useState()` calls you want, to create as many state variables as you want. Just make sure you call it in the [top level]https://reactjs.org/docs/hooks-rules.html#only-call-hooks-at-the-top-level) of a component (not in an `if` or in any other block). 
+
+Now create two variables `count` and `colors` array using `useState`. 
 
 You have to import `useState()` hook from react library.
 
-```javascript
-import React, { useState } from 'react'
+```jsx
+import React, { useState } from 'react'      // <---------- importing useState
 import Color from './Color'
 import randomColor from 'randomcolor'
 
 export default function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0)         // <---------- state variables
   const [colors, setColors] = useState([])
 
   return (
@@ -125,7 +135,7 @@ export default function App() {
   const [colors, setColors] = useState([])
 
   const change = () => {
-      setCount(prevCount => prevCount + 1)
+      setCount(prevCount => prevCount + 1)        // <------------ changing count on clicking
     }
 
   return (
@@ -140,12 +150,14 @@ export default function App() {
 
 The `useEffect()` API accepts a function as argument. The function runs when the component is first rendered, and on every subsequent rerender/update. React first updates the DOM, then calls any function passed to `useEffect()`. All without blocking the UI rendering even on blocking code, unlike the old `componentDidMount` and `componentDidUpdate`, which makes our apps feel faster. It is very effective adding external API class, or event-listeners inside this hook. Since the `useEffect()` functions are run on every subsequent re-render/update, we can tell React to skip a run, for performance purposes, by adding a second parameter which is an array that contains a list of state variables to watch for. React will only re-run the side effect if one of the items in this array changes. If the second parameter is not defined, the `useEffect()` runs infinitely.
 
-Now we can set the colors of our project using `useEffect()`. We get a base color from `randomColor()` and make a color scheme using an [the color API](https://www.thecolorapi.com/form-scheme). The following `getColors()` function creates elements in the `colors` array. We can get different color schemes using our `baseColor`from the [the color API](https://www.thecolorapi.com/form-scheme).
+Now we can set the colors of our project using `useEffect()`. We get a base color from `randomColor()` and make a color scheme using an [the color API](https://www.thecolorapi.com/form-scheme). 
+
+The following `getColors()` function creates elements in the `colors` array. We can get different color schemes using our `baseColor`from the [the color API](https://www.thecolorapi.com/form-scheme).
 
 Make sure that you import `useEffect` from React.
 
 ```javascript
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'        // <------------- importing useEffect 
 
 const getColor = () => {
     const baseColor = randomColor().slice(1);
@@ -156,6 +168,8 @@ const getColor = () => {
     })
   }
 ```
+
+Above code fetches the data from the URL. The [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) method in JavaScript provides an easy, logical way to fetch resources asynchronously across the network.
 
 Then we will call this function inside our `useEffect()` hook. As described, we use `count` as a second parameter for recalling the hook. 
 
@@ -169,7 +183,7 @@ Every time you click the button, `count` changes. As the `count` changes, the `u
 
 You cannot see any colors on the screen. Let's now render the `Color.js` component inside for `App.js` component and pass the `colors` array as props.
 
-```javascript
+```jsx
 import React, { useState, useEffect } from 'react'
 import Color from './Color'
 import randomColor from 'randomcolor'
@@ -192,7 +206,7 @@ export default function App() {
   }
 
   useEffect(getColor, [count])
-  console.log(colors)
+  
   return (
     <div>
         <Color
