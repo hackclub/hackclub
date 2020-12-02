@@ -6,7 +6,6 @@ img: 'https://cloud-g96wt9icu.vercel.app/0screen_recording_2020-11-19_at_4.38.37
 
 ---
 
-
 In this workshop you'll learn how to make charts using [Chart Js](https://www.chartjs.org), a free open-source JavaScript library for data visualization. Follow along and see how easy it is!
 
 Here's a [live demo](https://repl.it/@wollygfx/ChartJs#script.js) of what we will make, you can also find the final code there.
