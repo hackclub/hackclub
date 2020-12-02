@@ -21,7 +21,7 @@ React Fundamentals
  - [Components and Props](https://reactjs.org/docs/components-and-props.html)
  - [State and LifeCycle](https://reactjs.org/docs/state-and-lifecycle.html)
 
-If you are familiar with these, Let’s get going.
+If you are familiar with these, let’s get going.
 
 ## React Hooks API
 
@@ -252,5 +252,4 @@ Analogic Color Schemes -   It generates Analogic-complement color-schemes. Same 
 In this example, the [randomcolor](https://randomcolor.lllllllllllllllll.com/) package is not used. Instead created a custom function to generate random colors.
 
 Use the power of React Hooks in your next React project. Hope you enjoy this workshop! :v:
-
 
