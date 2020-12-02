@@ -3,7 +3,6 @@ name: Chart JS
 description: Create any kind of chart for your website
 author: '@wollygfx'
 img: 'https://cloud-g96wt9icu.vercel.app/0screen_recording_2020-11-19_at_4.38.37_pm.gif'
-
 ---
 
 In this workshop you'll learn how to make charts using [Chart Js](https://www.chartjs.org), a free open-source JavaScript library for data visualization. Follow along and see how easy it is!
