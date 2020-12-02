@@ -103,7 +103,7 @@ async function setPFP() {
 
 An async function is important as it allows us to wait for a line of code to complete before moving to the next line using the `await` keyword.
 
-What should we do first? How about setting a profile picture! Inside our `setPFP` function add the following lines. This will fetch the contents of the image r
+What should we do first? How about setting a profile picture! Inside our `setPFP()` function add the following lines. This will fetch the contents of the image.
 
 ```javascript
 const image = await axios.get(images.afternoon, {
