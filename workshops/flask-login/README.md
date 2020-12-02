@@ -46,6 +46,7 @@ Once you're done, you should see the "Home" page.
 Press either the plus icon in the top right or the "New Repl" button in the top left. You should see this screen: 
 
 ![repl create](https://cloud-f0le2m5gi.vercel.app/0image.png)
+
 Set the language to Python and the name to anything you want.
 
 ## Starting the Code
@@ -303,4 +304,3 @@ Here are some hacks that show what you can do with this:
 * [Make a frontend with HTML and serve it with Flask too](https://repl.it/@sohamb117/FlaskTutorial-1#main.py)
 * [Ensure that passwords meet certain conditions](https://repl.it/@sohamb117/FlaskTutorial-2#main.py)
 * [Take in more data, and store timestamps](https://repl.it/@sohamb117/FlaskTutorial-3#main.py)
-
