@@ -407,6 +407,11 @@ Here are some tasks for you:
 
 3. Create a chrome extension which shows the past prices of any cyptocurrency of any given date(s)!
 
+4. Add a feature which alerts you if there is a big price drop!
+
+5. Want to censor/highlight any words on websites you browse? You can create an extension for that too!  
+[Example where it highlights the word `Hack Club` on websites.](https://github.com/faisalsayed10/rainbow_extension)
+
 Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
 
 You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.
