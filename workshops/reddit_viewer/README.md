@@ -2,7 +2,7 @@
 
 name: 'Make a Reddit Web App'   
 description: 'Using Flask and the PRAW library make a webpage that allows you to browse subreddits.'   
-author: '@Kai'   
+author: '@KaiDevrim'   
 ---   
 ![The end result](https://cloud-fz3kdxk80.vercel.app/image.png) 
 
