@@ -187,7 +187,7 @@ If there's any error, it will simply get console logged.
 Learn more about [`async-await`](https://javascript.info/async-await).
 
 
-<details><summary>Now if you try console logging the data variable, you should see something like this:</summary>
+<detail><summary>Now if you try console logging the data variable, you should see something like this:</summary>
 
 ```js
 [ { id: 'bitcoin',
@@ -227,4 +227,140 @@ Learn more about [`async-await`](https://javascript.info/async-await).
 We get an array of data about various cryptocurrencies! From this, we'll make use of the `current_price` value and the `price_change_percentage_24h` value of bitcoin!
 
 Now, let's create a function which will extract these values and add them to the DOM!
+
+Also an important thing to keep in mind is that the `price_change_percentage_24h` can be negative or positive. So we'll need to check that and display it in a green color or a red color accordingly.
+
+```js
+function showPrices() {
+  if (data[0].price_change_percentage_24h > 0) {
+    // Gentle Reminder: We are using backticks below and not quotes.
+    div.innerHTML = 
+    `<p>1 BTC = $${data[0].current_price}</p>
+      <p class="increased">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </span>
+        ${data[0].price_change_percentage_24h}%
+      </p>`;
+  }
+}
+```
+
+Explanation: We simply check if the `price_change_percentage_24h` is greater than 0 or not. If this is true, we start to add various `<p>` tags inside the `<div>` tag.
+
+**NOTE:** Using backticks (``) allows you to inject HTML elements in the DOM using JavaScript, and that's exactly what we do in the above code.
+
+In the first `<p>` tag, we render bitcoin's current price. Next, we create a `<p>` tag with a class of `increased` in which we create a `<span>` containing a `chevron up` svg and next to it, we show the price change percentage.
+
+Similarly, we will add an `else` condition which will do the rendering if the `price_change_percentage_24h` is negative.
+
+```js
+function showPrices() {
+  if (data[0].price_change_percentage_24h > 0) {
+    // ...
+  } else {
+    div.innerHTML = 
+    `<p>1 BTC = $${data[0].current_price}</p>
+      <p class="decreased">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </span>
+        ${data[0].price_change_percentage_24h}%
+      </p>`;
+  }
+}
+```
+
+Explanation: Everything seems similar here, except the class of the `<p>` element is now as `decreased` and the svg we now use is `chevron down`.
+
+Now let's call this function once all the data is fetched.
+
+```js
+async function fetchData() {
+  try {
+    const res = await fetch(url);
+    data = await res.json();
+    showPrices(); // Calling the showPrices() function!
+  } catch (err) {
+    console.error(err);
+  }
+}
+```
+
+And lastly, call the `fetchData()` function at the very last line of the document!
+
+<detail><summary>Your JavaScript code so far</summary>
+
+```js
+const div = document.querySelector(".bitcoin");
+const url =
+  "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2Cbitcoincash%2Cethereum%2Clitecoin%2Cbinancecoin%2Cripple&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h";
+
+let data;
+
+async function fetchData() {
+  try {
+    const res = await fetch(url);
+    data = await res.json();
+    showPrices();
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+function showPrices() {
+  if (data[0].price_change_percentage_24h > 0) {
+    div.innerHTML = `<p>1 BTC = $${data[0].current_price}</p>
+  <p class="increased">
+    <span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+      </svg>
+    </span>
+    ${data[0].price_change_percentage_24h}%
+  </p>`;
+  } else {
+    div.innerHTML = `<p>1 BTC = $${data[0].current_price}</p>
+    <p class="decreased"><span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+</svg></span>${data[0].price_change_percentage_24h}%</p>`;
+  }
+}
+
+fetchData();
+```
+
+</details>
+
+If you `RUN` this code, you should see something like this!
+
+![Preview of the code written so far](https://cloud-m1crtq110.vercel.app/0image.png)
+
+We haven't yet implemented the CSS for the classes `increased` and `decreased` due to which we don't see the green/red color for the price change percentage. Let's do that finally!
+
+### 5) CSS, again
+
+Head back to `style.css` again and let's add styles for those 2 classes.
+
+```css
+.increased {
+  padding: 4px;
+  color: #4dbb79;
+}
+
+.decreased {
+  padding: 4px;
+  color: #f56565;
+}
+```
+
+The `increased` class gets a greenish color and similarly, the `decreased` class gets a reddish color!
+
+Now if you `RUN` the code, you'll see that everything works perfectly as we expected!
+
+![Demo of code written so far](https://cloud-cf7gkmekh.vercel.app/0image.png)
 
