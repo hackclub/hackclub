@@ -1,7 +1,7 @@
 ---
 name: 'ASCII Hangman'
 description: 'Make a simple hangman game using Java'
-author: '@rpalakkal', '@LYZ2003'
+author: '@rpalakkal, @LYZ2003'
 img: 'https://cloud-dwjtmgeuk.vercel.app/0screen_shot_2020-11-18_at_5.48.30_pm.png' 
 ---
 
