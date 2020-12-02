@@ -368,6 +368,7 @@ Finally, we are done with the JavaScript part of our project.
 
 ## Congratulations
 ![congratulations for completing your project](https://cloud-gqymfxotk.vercel.app/0finally_we_are_done__1_.gif)
+
 You accomplished it! Now your tool is fully functional and looks creative. 😍🥳
 
 # Hacking
