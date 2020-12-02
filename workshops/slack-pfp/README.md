@@ -56,7 +56,7 @@ Copy the generated token and store it in a safe space. Don't share it with anyon
 
 ## Building our program
 
-To get started you are going to want to create a new Node.js  [repl.it](http://repl.it/)  project, [click here to do so]([https://repl.it/languages/nodejs](https://repl.it/languages/nodejs)).
+To get started you are going to want to create a new Node.js  [repl.it](http://repl.it/)  project, [click here to do so](https://repl.it/languages/nodejs).
 
 Let's get going by adding your Slack token to your environment variables. What are environment variables? These are super secret variables that you don't want to store publicly. 
 
@@ -103,7 +103,7 @@ async function setPFP() {
 
 An async function is important as it allows us to wait for a line of code to complete before moving to the next line using the `await` keyword.
 
-What should we do first? How about setting a profile picture! Inside our `setPFP()` function add the following lines. This will fetch the contents of the image.
+What should we do first? How about setting a profile picture! Inside our `setPFP` function add the following lines. This will fetch the contents of the image r
 
 ```javascript
 const image = await axios.get(images.afternoon, {
@@ -128,7 +128,7 @@ setPFP()
 ```
 This simply calls your function, now click `Run ►`.
 
-Check Slack... do you see any difference in your profile? Fingers crossed you do but if you don't check the console for any errors and check your code for any typos ;)
+Check Slack... do you see any difference in your profile? Fingers crossed you do but if you do check the console for any errors and check your code for any typos ;)
 
 ### Changing the Profile Picture Based on Time
 
