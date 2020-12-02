@@ -16,7 +16,7 @@ Here's the [source code](https://repl.it/@FaisalSayed1/BitEx).
 
 ## Part 1: Prerequisites
 
-There isn't any, but it will be good if you already have a beginner understanding of:
+You should have a beginner understanding of:
 
 - HTML
 - CSS
@@ -33,6 +33,8 @@ To get started, go to this HTML [starter code](https://repl.it/languages/html).
 ## Part 3: Building the project
 
 ### 1) The Manifest
+
+![Manifest.json's image](https://cloud-h1shultrr.vercel.app/0image.png)
 
 If there is something which is really important for any chrome extension, then it is the `manifest.json` file. Without it, we can't create any extensions. So let's first create our `manifest.json` file!
 
@@ -59,9 +61,9 @@ Let's now start writing the json. First, we need to create an empty object (`{}`
 }
 ```
 
-Explanation: The `manifest_version` will be 2 according to chrome's documentation as `manifest_version` 1 was also deprecated in Chrome 18. The `version` is your extension's version. If you roll out updates to your extension, the version number increases.
+Explanation: The `manifest_version` will be 2 according to chrome's documentation as `manifest_version` 1 was deprecated in Chrome 18. The `version` is your extension's version. If you roll out updates to your extension, the version number increases.
 
-Now, we are going to put our extension's icon in the main Google Chrome toolbar and also have a popup UI for our extension, therefore we will use the `browser_action`.
+Now, we are going to have our extension's icon in the main Google Chrome toolbar and also have a popup UI for our extension, therefore we will use the `browser_action`.
 
 If you want to create an icon that isn't always visible, use a `page action` instead of a `browser action`.
 
@@ -72,6 +74,8 @@ Next, the `browser_action` will need the `default_name`, `default_icon` and the 
 We don't need any permissions for our extension so we'll keep it as empty.
 
 And with this, we finish building our manifest!
+
+![done!](https://cloud-6zi5qojcb.vercel.app/0image.png)
 
 ### 2) HTML
 
@@ -151,7 +155,7 @@ Yay! Now we have a far better UI compared to what we had earlier!
 
 ### 4) JavaScript
 
-Now it's time to fetch the realtime Bitcoin prices and actually show it on the browser screen instead of showing `Loading...` all the time.
+Now it's time to fetch the realtime Bitcoin prices and actually show it on the browser screen instead of showing `Loading...` all the time. First, navigate to your `index.js` file and let's start writing!
 
 ```js
 const div = document.querySelector(".bitcoin");
@@ -203,18 +207,7 @@ Learn more about [`async-await`](https://javascript.info/async-await).
     low_24h: 18338.09,
     price_change_24h: -257.1378091,
     price_change_percentage_24h: -1.31299,
-    market_cap_change_24h: -7585140892.950989,
-    market_cap_change_percentage_24h: -2.07878,
-    circulating_supply: 18559362,
-    total_supply: 21000000,
-    max_supply: 21000000,
-    ath: 19832.27,
-    ath_change_percentage: -2.92725,
-    ath_date: '2020-12-01T11:14:31.236Z',
-    atl: 67.81,
-    atl_change_percentage: 28291.10978,
-    atl_date: '2013-07-06T00:00:00.000Z',
-    roi: null,
+    // ...
     last_updated: '2020-12-01T15:05:30.303Z',
     price_change_percentage_24h_in_currency: -1.3129860318628117 },
   {
@@ -224,7 +217,7 @@ Learn more about [`async-await`](https://javascript.info/async-await).
 
 </details>
 
-We get an array of data about various cryptocurrencies! From this, we'll make use of the `current_price` value and the `price_change_percentage_24h` value of bitcoin!
+We get an array of data about various cryptocurrencies! From this, we'll make use of the `current_price` value and the `price_change_percentage_24h` value of Bitcoin!
 
 Now, let's create a function which will extract these values and add them to the DOM!
 
@@ -252,7 +245,7 @@ Explanation: We simply check if the `price_change_percentage_24h` is greater tha
 
 **NOTE:** Using backticks (``) allows you to inject HTML elements in the DOM using JavaScript, and that's exactly what we do in the above code.
 
-In the first `<p>` tag, we render bitcoin's current price. Next, we create a `<p>` tag with a class of `increased` in which we create a `<span>` containing a `chevron up` svg and next to it, we show the price change percentage.
+In the first `<p>` tag, we render bitcoin's current price. Next, we create a `<p>` tag with a class of `increased` in which we create a `<span>` containing a `'chevron up'` svg and next to it, we show the price change percentage.
 
 Similarly, we will add an `else` condition which will do the rendering if the `price_change_percentage_24h` is negative.
 
@@ -275,7 +268,7 @@ function showPrices() {
 }
 ```
 
-Explanation: Everything seems similar here, except the class of the `<p>` element is now as `decreased` and the svg we now use is `chevron down`.
+Explanation: Everything seems similar here, except the class of the `<p>` element is now as `decreased` and the svg we now use is `'chevron down'`.
 
 Now let's call this function once all the data is fetched.
 
@@ -293,7 +286,7 @@ async function fetchData() {
 
 And lastly, call the `fetchData()` function at the very last line of the document!
 
-<detail><summary>Your JavaScript code so far</summary>
+<details><summary>Your JavaScript code so far:</summary>
 
 ```js
 const div = document.querySelector(".bitcoin");
@@ -364,7 +357,9 @@ Now if you `RUN` the code, you'll see that everything works perfectly as we expe
 
 ![Demo of code written so far](https://cloud-cf7gkmekh.vercel.app/0image.png)
 
-And now its finally time to make this into an extension!
+And now its finally time to turn this into an extension!
+
+![Mind is blown, boom boom boom](https://media.giphy.com/media/3o6ZtmGkSCwGWQNTOg/giphy.gif)
 
 ### 6) Adding your extension to Chrome
 
@@ -398,7 +393,7 @@ If you do have a developer account, feel free to upload it on the chrome web sto
 
 Here are some helpful links:
 
-1. [Chrome Extension Documentation](https://developer.chrome.com/extensions/devguide).
+1. [Chrome Extension Documentation](https://developer.chrome.com/extensions/devguide)
 
 2. [Cryptocurrency API](https://www.coingecko.com/api/documentations/v3)
 
@@ -422,3 +417,5 @@ You probably know the best ways to get in touch with your friends and family, bu
 
 
 PS. I'm `@fayd` on slack.
+
+![Byeeee!](https://media.giphy.com/media/l396M3jF14DXr9mog/giphy.gif)
