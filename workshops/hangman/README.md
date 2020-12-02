@@ -16,7 +16,7 @@ Here is the final code on [repl.it](https://repl.it/@rpal/Hangman).
 A basic understanding of Java and general concepts like conditionals and loops will make this workshop easier, but anyone who is willing to learn along the way can join along!
 
 ## Part 1: Getting Started
-Ok, let's start coding! Today, we will be using repl.it, a super convenient online code editor. Start up your Java program by going to repl.it/languages/java. You probably want to create a Repl account so that your code gets saved, and once you’re ready, move onto the next step!
+Ok, let's start coding! Today, we will be using repl.it, a super convenient online code editor. Start up your Java program by going to [replit](repl.it/languages/java). You probably want to create a Repl account so that your code gets saved, and once you’re ready, move onto the next step!
 
 ![replit java starter code](https://cloud-q1jb0eal0.vercel.app/0screen_shot_2020-11-17_at_11.46.44_am.png)
 
@@ -32,9 +32,17 @@ Our fully constructed man will look like this:
 ```
 As you can see, it uses O, |, /, and \\.
 
-We can start off by creating a Man.java file and declaring the class with `public Man`. 
+We can start off by creating a Man.java file and declaring the class with `public class Man`. 
 
-![gif of creating Man.java file](https://cloud-m2k35jfrd.vercel.app/0ezgif-3-d23d3fadb3a5.gif)
+![gif of creating Man.java file](https://cloud-ltb9tmqd5.vercel.app/0ezgif-3-eec22c123a04.gif)
+
+Right now this is what the file should look like:
+
+```java
+public class Man{
+
+}
+```
 
 Now let’s create some fields, which are variables specific to the class.
 
@@ -50,9 +58,9 @@ body is an Array of characters that stores the body parts of the hangman.
 
 In Java, all classes need a constructor, so let’s get started with that. The Man is 3 characters wide and 3 characters tall so we need to create an array of characters of that size. You might be wondering how to create line breaks between each row of the array. We can do that by using ‘\n’ which represents a line break. Anything after ‘\n’ will be on the next line. We initialize the man like so. We also set numIncorrect to 0, because the user hasn’t made any incorrect guesses yet.
 
-Place the constructor within the `public Man` class declaration like below:
+Place the constructor within the `public class Man` class declaration like below:
 ```java
-public Man{
+public class Man{
 	//Instance variables go here
 	public Man() {
 		/*Initialize the Man object */
@@ -134,7 +142,7 @@ If we just look at the ‘case 1:’ segment of the code, our code is basically 
 
 Believe or not, we’re done with the Man class! Before moving onto building the hangman game, let’s test out the hangman first and see if it is printed out correctly. All the test code will be in the main() method because all Java code is run in the main() method. In order to test the man, we want to create a new Man object which we can call ‘m’, hang it, then print it until it is completely hanged. We can test this using a for loop. However, there is a catch.
 Repl is set up to run our Main class, so we will need to run a few commands to try out our Man class now. Java is a compiled language, meaning that first our program must be converted to machine code before being run. We can do this by running the java compiler.
-First type javac Man.java into the console on the right of your screen to compile our Man class. This will generate a `Man.class` file (it might not show up in the repl file explorer, but don’t worry - it should be there!). Next type java Man and see what happens. You should see all the different stages of the man being hanged before dying.
+First type javac Man.java into the console on the right of your screen to compile our Man class. This will generate a `Man.class` file (it might not show up in the repl file explorer, but don’t worry - it should be there!). Next type `java Man` and see what happens. You should see all the different stages of the man being hanged before dying.
 
 ```java
 public static void main(String[] args) {
@@ -154,7 +162,7 @@ Hopefully your output looks something like this! Now let’s take this man class
 
 For the game logic, all of our code will live inside the main method in the Main class. When you press the “Run” button in Repl, this is what is being run, just like how we tried out the Man class.
 
-First off, we want to print a welcome message, just so people know they are playing hangman.
+First off, we want to print a welcome message, just so people know they are playing hangman. This line can go at the top of the main method and replace the Hello World print statement.
 
 ```java
 System.out.println("Welcome to the ASCII Version of Hangman!");
@@ -181,6 +189,10 @@ class Main {
 }
 ```
 
+You can try running the code now to see what we have acheived so far (since this is in the `Main` class, we can just use the Repl run button). 
+
+![running the prompt word code of main class](https://cloud-cjkgtz9ll.vercel.app/0ezgif-3-5dcd20b53aab.gif)
+
 Great, our code can accept a secret word! Now we will need to create another Array of characters of same length as letters and have all the letters be underscores with the help of a for loop.
 
 ```java
@@ -189,11 +201,6 @@ char[] puzzle = new char[letters.length];
     puzzle[i] = '_';
 }
 ```
-
-You can try running the code now to see what we have acheived so far (since this is in the `Main` class, we can just use the Repl run button). 
-
-![running the prompt word code of main class](https://cloud-cjkgtz9ll.vercel.app/0ezgif-3-5dcd20b53aab.gif)
-
 
 ## Part 6: The Main Class Loop Logic
 You will see that it exits after entering a word, so let's crack on with designing the game! But before we do that, we need to create a Man object to hang and a Scanner object to accept user input for letters.
