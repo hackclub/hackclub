@@ -7,6 +7,8 @@ img: https://cloud-nu1ftbbxy.vercel.app/0sample-demo.png
 
 In this workshop, you are going to make a random alphanumeric password generator using which you can safeguard your social media accounts and much more, in just 20 minutes! 🤩
 
+**Note:** The purpose of this workshop is to teach you how to generate and store passwords. For the purposes of this workshop, the passwords are stored in a table in plaintext. In real life, passwords are encrypted and stored behind many layers of security. Don't store your real-life passwords on the website this workshop makes!
+
 Here’s the [live demo](https://password-security.hariom04.repl.co/) and its [source code](https://repl.it/@hariom04/password-security#index.html). For entering inside the website, use `hariom` as password.
 
 ![final output of the codes provided in this workshop](https://cloud-nu1ftbbxy.vercel.app/0sample-demo.png)
