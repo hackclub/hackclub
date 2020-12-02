@@ -128,7 +128,7 @@ setPFP()
 ```
 This simply calls your function, now click `Run ►`.
 
-Check Slack... do you see any difference in your profile? Fingers crossed you do but if you do check the console for any errors and check your code for any typos ;)
+Check Slack... do you see any difference in your profile? Fingers crossed you do but if you don't check the console for any errors and check your code for any typos ;)
 
 ### Changing the Profile Picture Based on Time
 
