@@ -364,3 +364,61 @@ Now if you `RUN` the code, you'll see that everything works perfectly as we expe
 
 ![Demo of code written so far](https://cloud-cf7gkmekh.vercel.app/0image.png)
 
+And now its finally time to make this into an extension!
+
+### 6) Adding your extension to Chrome
+
+First we'll need to download our code. For this, simply click on the 3 vertical dots on the left and select the option `Download as zip`.
+
+![visual tutorial on how to do it](https://cloud-5vz6fh264.vercel.app/0image.png)
+
+Once you have download the zip file. Extract it. It will then give you a folder of your repl's name with our code inside!
+
+Next, navigate to `chrome://extensions` in your chrome browser. You'll see a list of all your installed extensions!
+
+![image of chrome extensions page](https://cloud-36ht9ja6n.vercel.app/0image.png)
+
+On the top right corner, make sure you have `Developer mode` turned on. If not, make sure you turn it on!
+
+![developer mode image](https://cloud-q7rpbmt3e.vercel.app/0image.png)
+
+Now you'll see 3 new options popped up! Click on the `Load unpacked` option and select the folder containing your code!
+
+![Load unpacked option](https://cloud-btsj473k8.vercel.app/0image.png)
+
+And there we go! We successfully installed our extension into our chrome browser! Now you'll be able to see your extension's icon in the chrome toolbar!
+
+## Part 4: The End
+
+Yay! We successfully built a wonderful chrome extension which tracks Bitcoin prices!
+
+![yay](https://media.giphy.com/media/xUPGcMzwkOY01nj6hi/giphy.gif)
+
+If you do have a developer account, feel free to upload it on the chrome web store!
+
+Here are some helpful links:
+
+1. [Chrome Extension Documentation](https://developer.chrome.com/extensions/devguide).
+
+2. [Cryptocurrency API](https://www.coingecko.com/api/documentations/v3)
+
+3. [Coindesk Bitcoin API](https://www.coindesk.com/coindesk-api)
+
+Here are some tasks for you:
+
+1. Create an extension which shows the current prices for top 5 cryptocurrencies.
+
+2. Create a chrome extension which displays the historical data for Bitcoin using [this](https://www.coindesk.com/coindesk-api#node-35:~:text=We%20offer%20historical%20data%20from%20our,Sample%20Request%3A%20https%3A%2F%2Fapi.coindesk.com%2Fv1%2Fbpi%2Fhistorical%2Fclose.json%3Fstart%3D2013%2D09%2D01%26end%3D2013%2D09%2D05) API.
+
+3. Create a chrome extension which shows the past prices of any cyptocurrency of any given date(s)!
+
+Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
+
+You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.
+1. In a new tab, open and follow [these directions][slack] to signup for our Slack.
+2. Then, post the link to the [`#ship`](https://hackclub.slack.com/messages/ship) channel to share it with everyone and also ping me!
+
+[slack]: https://slack.hackclub.com/
+
+
+PS. I'm `@fayd` on slack.
