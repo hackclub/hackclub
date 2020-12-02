@@ -11,7 +11,7 @@ img: 'https://cloud-dwjtmgeuk.vercel.app/0screen_shot_2020-11-18_at_5.48.30_pm.p
 
 All of us have played hangman before, the classic game where one person tries to guess someone else’s word. You can play it anywhere and it’s extremely simple, making it one of the best childhood games. It is actually fairly simple to make it in Java and should be a fun little project. 
 
-Here is the final code which you can run: [repl.it](https://repl.it/@rpal/Hangman)
+Here is the final code on [repl.it](https://repl.it/@rpal/Hangman).
 
 A basic understanding of Java and general concepts like conditionals and loops will make this workshop easier, but anyone who is willing to learn along the way can join along!
 
@@ -242,7 +242,7 @@ for (int i = 0; i < letters.length && !containsGuess; i++) {
 If there is no match, containsGuess remains false and we hang the man using an if statement. But we can’t just put hang() because the hang method is in the Man class not Main class. Instead, we type m.hang() to tell Java to access the hang method associated with our Man object. 
 
 ```java
-if (!containsGuess) m.hang()
+if (!containsGuess) m.hang();
 ```
 
 Since we have checked whether the user’s guess was correct and have updated our man accordingly, we should print the man out.
