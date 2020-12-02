@@ -227,11 +227,15 @@ For that, you need to use JavaScript. But before moving on, remember you saved s
 
 Here is an **important** step, look at very first line of code:
 
-`<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>`.
+```html
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+```
 
 This will give you an error, as it only loads the Firebase library. So for that, add the line below under that first line.
 
-`<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>`.
+```html
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+```
 
 After adding it, your code should look like this:
 
