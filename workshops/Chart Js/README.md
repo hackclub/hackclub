@@ -2,7 +2,7 @@
 name: Chart JS
 description: Create any kind of chart for your website
 author: '@wollygfx'
-img: ''
+img: 'https://cloud-g96wt9icu.vercel.app/0screen_recording_2020-11-19_at_4.38.37_pm.gif'
 
 ---
 
