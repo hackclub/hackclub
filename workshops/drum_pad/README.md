@@ -121,17 +121,16 @@ body {
   height: 100%;
   width: 100%;
   
-  /* The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container */
+  /* To learn more about the CSS flex box, check out the hacking section */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  /* The CSS overflow property controls what happens to content that is too big to fit into an area. This text is really long, and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. */
-  /* And we hide all content that overflows. */
+  /* To learn more about the overflow property, check out the hacking section */
   overflow: hidden;
 
-  /* Here, we set the font of our web page to 'sans-serif' */
+  /* To learn more about the font-family property, check out the hacking section */
   font-family: sans-serif;
 }
 ```
@@ -146,10 +145,10 @@ We want to style the header's font size, color, and letter spacing.
 h1 {
   color: #000;
 
-  /* This unit is based on the width of the user's visible area of a web page. A value of 1vw is equal to 1% of the visible area of a web page width. */
+  /* To learn more about the font-size property, check out the hacking section */
   font-size: 5vw;
 
-  /* Letter spacing just adds space horizontally between text characters. */
+  /* To learn more about the letter-spacing property, check out the hacking section */
   letter-spacing: 6px; 
 }
 ```
@@ -161,11 +160,10 @@ Then create three rows and four columns to correctly align the pads and give the
   width: 500px;
   display: flex;
 
-  /* The justify-content property aligns flex items along the main axis of the current line of the flex container. It defines how space is distributed between and around flex items. */
+  /* To learn more about the justify-content property, check out the hacking section */
   justify-content: space-between;
   
-  /* The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked, and in this case, we tell them to wrap. */
-  /* And a flex item is a flex container that expands items to fill available free space or shrinks them to prevent overflow. */
+  /* To learn more about the flex-wrap property, check out the hacking section */
   flex-wrap: wrap;
 }
 ```
@@ -179,29 +177,27 @@ We will change each of our pad's properties, and we will do that with the class 
   height: 100px;
   margin: 10px  0;
 
-  /* The box-shadow property is used to cast one or more drop shadows to an element. Each shadow is defined by one to five components: a horizontal offset value, a vertical offset value, an optional blur radius, an optional spread radius, and an optional color. */
+  
+  /* To learn more about the box-shadow property, check out the hacking section */
   box-shadow: 0  8px  6px  -6px  black;
   background-color: #444;
   display: flex;
 
-  /* Here, like above, we justify our content and this time to the center. */
   justify-content: center;
 
-  /* The align-items property sets the align-self value on all direct children as a group */
+  /* To learn more about the align-items property, check out the hacking section */
   align-items: center;
   font-size: 20px;
 
-  /* We are changing the color of our individual pad, and in this case, instead of using hex values or a normal color name, we use rgb() */
-  /* The rgb() function define colors using the Red-green-blue (RGB) model. An RGB color value is specified with rgb(red, green, blue). Each parameter defines the intensity of that color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%). */
+  
+  /* To learn more about the rgba function, check out the hacking section */
   color: rgba(255, 255, 255, 0.4);
 
-  /* user-select property specifies whether the text of an element can be selected. In web browsers, if you double-click on some text, it will be selected/highlighted. This property can be used to prevent this. */
+  /* To learn more about the user-select property, check out the hacking section */
   user-select: none;
 
-  /* The border property sets the border around an HTML element, meaning all four borders (top, right, bottom, and left). */
-  /* Here, we are giving our individual pads a 4px solid border. */
+  /* To learn more about the border-radius property, check out the hacking section */
   border: 4px solid;
-  /* We are changing the values of our individual pads in the pad area that holds all our pads. */
 }
 ```
 
@@ -237,39 +233,33 @@ We will go where we wrote styling for our `.box` class, and we will add styling 
 
 ```css
 .box {
-  /* We will add these two properties to the .box class to add a colored rounded, solid border. */
   border: 4px solid #E5446D;
 
-  /* This property allows you to add rounded corners to elements! */
+  /* To learn more about the border-radius property, check out the hacking section */
   border-radius: 15px;
 }
 ```
 
-We will then add code that adds hovering effects, inactive or active states to our pads.
+We will then add code that adds hovering effects, inactive or active states to our pads:
 
 ```css
-/* The :hover pseudo-class in CSS selects elements when the mouse cursor is over them. */
-/* Here, we will add the :hover pseudo-class on the .box class styling to make the pad lighter when the cursor hovers on it. */
+/* To learn more about the lighten function and :hover pseudo class, check out the hacking section */
 .box:hover {
   background-color: lighten(#444, 10%);
 
-  /* Changing the cursor to a pointer when we hover on the pads. */
+  /* To learn more about the cursor property, check out the hacking section */
   cursor: pointer;
 }
 
-/* :active is a CSS pseudo-class that specifies and selects an element based on a state—the active state—and is used to apply styles to an element when it matches that state. The :active pseudo-class is a dynamic class that applies when an element is activated by the user. */
-/* And we will use the :active pseudo-class on the .box class and add styling for when the pads are in an active state. */
-
+/* To learn more about the :active pseudo class, check out the hacking section */
 .box:active {
-  /* When the pad is clicked, we darken the pad with a gray-ish represented by the hex value #444, darken 10% */
+  /* To learn more about the darken function, check out the hacking section */
   background-color: darken(#444, 10%);
 
-  /* transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model. */
-  /* Here, we just make it 10% larger when clicked with the scale() function. */
+  /* To learn more about the transform property, check out the hacking section */
   transform: scale(1.1);
 
-  /*CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time. */
-  /* We give a transition that lasts a period of 0.2 seconds, and we use a value of “all” to refer to transition properties. */
+  /* To learn more about the transition property, check out the hacking section */
   transition: all  0.2s;
 }
 ```
@@ -329,11 +319,31 @@ If you run your code now, you should see a working drum pad!
 
 Now that you have finished building, you share your beautiful creation with other people! Remember, it's as easy as giving them your URL! Don't forget to share it with me on Slack @emmanuel39hanks.
 
-Resources:
+**Resources:**
 
-- Audio Object (https://www.w3schools.com/JSREF/dom_obj_audio.asp)
-- Onclick event (https://www.w3schools.com/jsref/event_onclick.asp)
-- Explanation on the Flex Direction CSS property (https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
+- [JavaScript Audio Object](https://www.w3schools.com/JSREF/dom_obj_audio.asp)
+- [JavaScript onclick event](https://www.w3schools.com/jsref/event_onclick.asp)
+- [CSS flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
+- [CSS flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
+- [CSS justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
+- [CSS Flex box](https://www.w3schools.com/css/css3_flexbox.asp)
+- [CSS overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
+- [CSS font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
+- [CSS letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)
+- [CSS transition](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+- [CSS transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+- [CSS :hover pseudo class](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover)
+- [CSS :hover pseudo class](https://developer.mozilla.org/en-US/docs/Web/CSS/:active)
+- [CSS cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
+- [CSS lighten & darken function](https://css-tricks.com/snippets/javascript/lighten-darken-color/)
+- [CSS border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
+- [CSS border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
+- [CSS rgba function](https://www.w3schools.com/cssref/func_rgba.asp)
+- [CSS user-select](https://www.w3schools.com/cssref/css3_pr_user-select.asp)
+- [CSS box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
+- [CSS align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
+- [CSS font-family](https://www.w3schools.com/css/css_font.asp)
+
 
 Now it's up to you! Do anything with this project, go on and implement something crazy. 
 
