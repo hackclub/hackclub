@@ -10,6 +10,7 @@ Here is the [live demo](https://vr-world.wollygfx.repl.co/) and the [source code
 ![VR World](https://cloud-rk4ys3373.vercel.app/0image.png)
 
 ## Set-up
+
 This workshop requires a very basic knowledge of HTML. Don’t worry if you get stuck at some point in the workshop, everything is explained the best way for you to understand!
 
 For this workshop we will use Repl.it, a free, online code editor. Click [here](https://repl.it/languages/html) to get started with a new HTML project on repl.it.
@@ -17,6 +18,7 @@ For this workshop we will use Repl.it, a free, online code editor. Click [here](
 ![Setup](https://cloud-qbmylslty.vercel.app/0image.png)
 
 ##  Setting up A-frame
+
 To get started, we'll need to link A-frame with our HTML document, there are multiple ways to do this that you can find [here](https://aframe.io/docs/1.0.0/introduction/installation.html), we'll just need to drop a `<script>` tag pointing to the CDN build:
 ```html
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -26,6 +28,7 @@ Now, we can start creating our virtual world.
 ![Excited GIF](https://cloud-22dzjiq1j.vercel.app/0tenor.gif)
 
 ### A-Scene
+
 In order to start creating our virtual world, we **must** create a scene. The scene is the main tag, everything that we want to put inside of our world will go inside of this tag, that includes the  [primitives](https://aframe.io/docs/1.0.0/introduction/html-and-primitives.html#primitives), the camera, and many more that we will get to know through this workshop.
 
 So go ahead and create an scene inside of the `<body>` tag:
@@ -36,13 +39,16 @@ So go ahead and create an scene inside of the `<body>` tag:
     </a-scene>
 </body>
 ```
+
 Now, we can start putting in whatever we want, but let's start with the basics. Inside of the tag `<a-scene>` create the component `<a-sky>`.
 ```html
 <a-scene>
     <a-sky color="#62B1FF"></a-sky>
 </a-scene>
 ```
+
 ![Sky rendered](https://cloud-e47vodig4.vercel.app/0image.png)
+
 This will render a huge sphere with a color or a texture mapped to the inside. There are a bunch of [attributes](https://aframe.io/docs/1.0.0/primitives/a-sky.html#attributes) that we can use to modify our sky, feel free to play with them:
 - color
 - radius
@@ -69,6 +75,7 @@ This will render a beautifully textured sky.
 ![Sky texture](https://cloud-dytwphipl.vercel.app/0screen_recording_2020-11-16_at_6.19.29_pm.gif)
 
 Uploading images to Repl.it is very simple, just go to the navigation bar and click on **Upload file**:
+
 ![Uploading files to Repl.it](https://cloud-3vcjp49bp.vercel.app/0image.png)
 
 Now that we have a sky, we'll need a floor too. We can simply do this using the `<a-plane>` component.
