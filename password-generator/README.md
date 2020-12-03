@@ -277,8 +277,9 @@ Now with JavaScript, we will add functionality to our tool and will set up a pas
 Navigate to `script.js` file.
 
 ### 1- Adding a password to the website.
-**Disclaimer: This isn't the greatest method of securing a web app as password is visible in source code. **
-You should run all authentication code server side when shipping a final product.
+**Disclaimer: This isn't the greatest method of securing a web app as password is visible in source code.**
+
+You should run all authentication code **server side** when shipping a final product.
 
 Create a variable “password” with help of `var` and set it to empty.
 ```javascript
