@@ -162,9 +162,9 @@ Now, navigate to our `script.js` file and:
     canvas.height = img.height;
 
     // Clear canvas
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // This method erases the pixels in a rectangular area by setting them to transparent black.
     // Draw main image
-    ctx.drawImage(img, 0, 0);
+    ctx.drawImage(img, 0, 0); // 0, 0 are our X and Y coordinates
 
     // Text style: white with black borders
     ctx.fillStyle = 'white';
@@ -172,15 +172,15 @@ Now, navigate to our `script.js` file and:
     ctx.textAlign = 'center';
 
     // Top text font size
-    let fontSize = canvas.width * topTextSize;
-    ctx.font = `${fontSize}px Impact`;
-    ctx.lineWidth = fontSize / 20;
+    let fontSize = canvas.width * topTextSize; //Font Size will change based on our input sliders
+    ctx.font = `${fontSize}px Impact`; // We'll be using Impact font, which is used by most memes
+    ctx.lineWidth = fontSize / 20; // lineWidth will be the outline of our text, and we're setting it to be 20th of our fontSize here.
 
     // Draw top text
-    ctx.textBaseline = 'top';
+    ctx.textBaseline = 'top'; // textBaseline property specifies the current text baseline used when drawing text.
     topText.split('\n').forEach((t, i) => {
-      ctx.fillText(t, canvas.width / 2, i * fontSize, canvas.width);
-      ctx.strokeText(t, canvas.width / 2, i * fontSize, canvas.width);
+      ctx.fillText(t, canvas.width / 2, i * fontSize, canvas.width); // fillText takes 3 arguments: first is our text, second and third arguments are our X and Y coordinates of the point at which to begin drawing the tex.
+      ctx.strokeText(t, canvas.width / 2, i * fontSize, canvas.width); // Arguments are same as fillText but strokeText draws outlines on our text.
     });
 
     // Bottom text font size
@@ -197,7 +197,13 @@ Now, navigate to our `script.js` file and:
   }
     ```
 
-  This code block is really simple, first we make a generateMeme function, that takes all our elements as arguments, inside the function we initialise a [`Canvas`](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage) and to get the canvas' 2D rendering context, we call `getContext()` on the `<canvas>` element, supplying `'2d'` as the argument. Next, we set the canvas dimensions to the image dimensions, then we clear the canvas, and then we draw the image on the canvas. After that we draw our text by first specifying our top text style, then drawing top text and then specifying our bottom text style and then drawing bottom text.
+  This code block is really simple:
+
+  1. Inside the `generateMeme()` function we initialise a [`Canvas`](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage) which .
+  2. To get the canvas' [2D rendering context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D), we call `getContext()` by selecting out `<canvas>` element from HTML by its ID, and supplying `'2d'` as the argument. Our 2D rendering context will provide us with a lot of methods to stylize and draw on our canvas!
+  3. Next, we set the canvas' dimensions same as our meme image's dimensions.
+  4. Then we clear, and draw the image on the canvas.
+  5. Next, to draw text on our meme image, we set the style of our text and drawing the text using `ctx.fillText` and `ctx.strokeText` for outlines, where `ctx` is our [2D rendering context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D).
 
 * Now, after our `generateMeme` function, add a [Window: DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) event listener which will listen to `DOMContentLoaded` event, which will be executed after the content of the web page is loaded and which will also call our `generateMeme` function.
 
@@ -228,7 +234,7 @@ Now, navigate to our `script.js` file and:
       const reader = new FileReader();
       reader.onload = () => {
         const img = new Image();
-        img.src = reader.result;
+        img.src = reader.result; // result attribute contains the data as a dataURL (as a base64 encoded string)
         img.onload = () => {
           generateMeme(img, topTextInput.value, bottomTextInput.value, topTextSizeInput.value, bottomTextSizeInput.value);
         };
@@ -248,7 +254,7 @@ Now, navigate to our `script.js` file and:
 
   After that, we add an `EventListener` to the `generateBtn` which gets triggered on clicking Generate button.
 
-  Inside that we use the [FileReader API](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) to read the input image as a DataURL,  and we use `reader` to initialize a `FileReader` and when our reader will load, we'll generate a new Image, and that image (along with other variable's value) will be passed on to the `generateMeme()` function.
+  Inside that we use the [FileReader API](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) to read the input image as a [DataURL](http://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL),  and we use `reader` to initialize a `FileReader` and when our reader will load, we'll generate a new Image, and that image (along with other variable's value) will be passed on to the `generateMeme()` function.
   And our `generateMeme()` will make our awesome meme!
 
 **The final JavaScript code should look like:**
@@ -371,9 +377,9 @@ If you still face difficulties in signing up watch [this](https://www.youtube.co
 
 ![Doge getting appreciation](https://cloud-jhccbrn2s.vercel.app/0tenor.gif)
 
-Now that you have finished building a website, you should share your beautiful creation—because your site is on the internet, you can share it with anyone who is also online! Remember, it's as easy as giving them your URL!
-
-You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the world wide Hack Club community there is no better place to do that than on Slack.
+Now that you have finished building an awesome project, you should share it with your friends or with our world wide Hack Club Community!
 
 In a new tab, open and follow [these](https://slack.hackclub.com/) directions to sign-up for our Slack.
 Then, post the link to the `#ship` channel to share it with everyone!
+
+P.S I'm @Aaryan Porwal on Hack Club's Slack.
