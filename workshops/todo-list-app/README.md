@@ -724,13 +724,14 @@ I recommend customising the project in this workshop. Share your creation with e
 
 These are some example to inspire your thoughts.
 
-* **Example-1**: Own phonebook using React and Firebase.
+* **Example-1**: A Todo App where you can edit the already added task, using [Material UI](https://material-ui.com/) for styling components.
+
+    [Demo](https://todo-list-app.giridharhackclu.repl.co/). [Source Code](https://repl.it/@Giridharhackclu/Todo-List-App#src/App.js).
+
+* **Example-2**: Own phonebook using React and Firebase.
 
     [Demo](https://phonebook.giridharhackclu.repl.co). [Source Code](https://repl.it/@Giridharhackclu/phonebook#src/App.js).
     
-* **Example-2**: Database for school.
-
-    [Demo](https://school-database.giridharhackclu.repl.co). [Source Code](https://repl.it/@Giridharhackclu/school-database#src/App.js).
     
 * **Example-3**: Creating a grocery bud.
 
