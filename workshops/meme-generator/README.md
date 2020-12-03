@@ -15,7 +15,7 @@ Let's take a look of how our Meme Generator looks like:
 
 ![Meme Generator demo](https://cloud-i6md9xxdx.vercel.app/0image.png)
 
-Source code can be found [here](https://repl.it/@aaryanporwal/Meme Generator).
+Source code can be found [here](https://repl.it/@aaryanporwal/Meme-generator).
 
 ## Part 1: Prerequisites
 
@@ -31,10 +31,6 @@ We'll be using an online code editor called [repl.it](https://repl.it) for this 
 
 To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
 
-You should see something like the following:
-
-![Initial View](https://cloud-p7qnbqzo6.vercel.app/image.png)
-
 Now let's move on to the next part!
 
 ![Excited doge](https://cloud-4560ajsyp.vercel.app/0giphy.gif)
@@ -45,20 +41,24 @@ Now let's move on to the next part!
 
 Let's first start by making a structure for our Meme Generator website.
 
+We'll be writing all our below code inside our `<body>` tag:
+
 * First give an appropriate heading to our website using the `<h1>` tag.
 
-* So we want our memes to have two text fields: ***Top Text*** and ***Bottom Text***, something like this:
+* Next, want our memes to have two text fields: ***Top Text*** and ***Bottom Text***, something like this:
 
     ![Meme showing top text and bottom text](https://cloud-ejplvs3dg.vercel.app/0image.png)
 
-    For that we'll require two text fields in our website, to achieve that we'll use `<textarea>` tag in HTML:
+    For that we'll require two text fields in our website, to achieve that we'll use `<textarea>` tag:
 
     ```html
     <textarea id="top-text"></textarea>
     <textarea id="bottom-text"></textarea>
     ```
+    
+    (put this after our `<h1>` tag)
 
-* Next, we'll need to take a meme template as an input, for that we'll use
+* Next, we'll need to take a meme template as a file input, we'll use:
   
   ```html
   <input type="file" id="image-input" accept="image/*">
@@ -66,7 +66,7 @@ Let's first start by making a structure for our Meme Generator website.
 
     This will pop-up a button on our website that'll let the user input a meme template as an image.
 
-* Now we need a generate button, for this we can use something like this:
+* Now we need a generate button:
 
     ```html
     <button id="generate-btn">Generate!</button>
@@ -94,23 +94,23 @@ Our final HTML file will look like:
     </head>
     <body>
         <h1>Welcome to Meme-Genie 🧞 </h1>
-        <p>
+        <div>
             <textarea id="top-text"></textarea>
             Text size: <input type="range" id="top-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
-        </p>
-        <p>
+        </div>
+        <div>
             <textarea id="bottom-text"></textarea>
             Text size: <input type="range" id="bottom-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
-        </p>
-        <p>
+        </div>
+        <div>
             <input type="file" id="image-input" accept="image/*">
-        </p>
-        <p>
+        </div>
+        <div>
             <button id="generate-btn">Generate!</button>
-        </p>
-        <p>
+        </div>
+        <div>
             <canvas id="meme-canvas" title="Right click to save this meme"></canvas>
-        </p>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
@@ -121,12 +121,12 @@ You can take a look at how different input types work [here](https://developer.m
 
 ### 2) CSS
 
-We'll add some basic styling to our website:
+Next, let's add some basic styling to our website, navigate to our `style.css` file and add the following code:
 
 ```CSS
 h1 {
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
 }
 
 body {
@@ -135,17 +135,17 @@ body {
 }
 
 #meme-canvas {
-    width: 300px;
+  width: 300px;
 }
 ```
 
-So in this CSS code, we first change our heading's font and font size, then we apply a background color to our body, and at last we select the meme canvas by it's ID and set its width to 300 pixels.
+So in this CSS code, we first change our heading's font and font size, then we apply a background color to our body, and finally we select the meme canvas by it's ID and set its width to 300 pixels.
 
 That's it! This is all the CSS we'll be doing in the workshop.
 
 ### 3) JavaScript
 
-Now, in our `scripts.js` file:
+Now, navigate to our `script.js` file and:
 
 * Make a `function` called `generateMeme`, which will take: `image`, `topText`, `bottomText`, `topTextSize`, `bottomTextSize` variables as the function arguments.
   
@@ -153,51 +153,53 @@ Now, in our `scripts.js` file:
   
   ```javascript
   function generateMeme(img, topText, bottomText, topTextSize, bottomTextSize) {
-  const canvas = document.getElementById('meme-canvas');
-  const ctx = canvas.getContext('2d');
 
-  // Size canvas to image
-  canvas.width = img.width;
-  canvas.height = img.height;
+    const canvas = document.getElementById('meme-canvas');
+    const ctx = canvas.getContext('2d');
 
-  // Clear canvas
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  // Draw main image
-  ctx.drawImage(img, 0, 0);
+    // Size canvas to image
+    canvas.width = img.width;
+    canvas.height = img.height;
 
-  // Text style: white with black borders
-  ctx.fillStyle = 'white';
-  ctx.strokeStyle = 'black';
-  ctx.textAlign = 'center';
+    // Clear canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // Draw main image
+    ctx.drawImage(img, 0, 0);
 
-  // Top text font size
-  let fontSize = canvas.width * topTextSize;
-  ctx.font = `${fontSize}px Impact`;
-  ctx.lineWidth = fontSize / 20;
+    // Text style: white with black borders
+    ctx.fillStyle = 'white';
+    ctx.strokeStyle = 'black';
+    ctx.textAlign = 'center';
 
-  // Draw top text
-  ctx.textBaseline = 'top';
-  topText.split('\n').forEach((t, i) => {
-    ctx.fillText(t, canvas.width / 2, i * fontSize, canvas.width);
-    ctx.strokeText(t, canvas.width / 2, i * fontSize, canvas.width);
-  });
+    // Top text font size
+    let fontSize = canvas.width * topTextSize;
+    ctx.font = `${fontSize}px Impact`;
+    ctx.lineWidth = fontSize / 20;
 
-  // Bottom text font size
-  fontSize = canvas.width * bottomTextSize;
-  ctx.font = `${fontSize}px Impact`;
-  ctx.lineWidth = fontSize / 20;
+    // Draw top text
+    ctx.textBaseline = 'top';
+    topText.split('\n').forEach((t, i) => {
+      ctx.fillText(t, canvas.width / 2, i * fontSize, canvas.width);
+      ctx.strokeText(t, canvas.width / 2, i * fontSize, canvas.width);
+    });
 
-  // Draw bottom text
-  ctx.textBaseline = 'bottom';
-  bottomText.split('\n').reverse().forEach((t, i) => { // .reverse() because it's drawing the bottom text from the bottom up
-    ctx.fillText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
-    ctx.strokeText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
-    }
+    // Bottom text font size
+    fontSize = canvas.width * bottomTextSize;
+    ctx.font = `${fontSize}px Impact`;
+    ctx.lineWidth = fontSize / 20;
+
+    // Draw bottom text
+    ctx.textBaseline = 'bottom';
+    bottomText.split('\n').reverse().forEach((t, i) => { // .reverse() because it's drawing the bottom text from the bottom up
+      ctx.fillText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
+      ctx.strokeText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
+    });
+  }
     ```
 
-  If you wanna learn more about the cool things `Canvas` can do, check out [this](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage) link.
+  This code block is really simple, first we make a generateMeme function, that takes all our elements as arguments, inside the function we initialise a [`Canvas`](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage) and to get the canvas' 2D rendering context, we call `getContext()` on the `<canvas>` element, supplying `'2d'` as the argument. Next, we set the canvas dimensions to the image dimensions, then we clear the canvas, and then we draw the image on the canvas. After that we draw our text by first specifying our top text style, then drawing top text and then specifying our bottom text style and then drawing bottom text.
 
-* Now, after our `generateMeme` function, add a [Window: DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) event, which will be executed after the content of the web page is loaded.
+* Now, after our `generateMeme` function, add a [Window: DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) event listener which will listen to `DOMContentLoaded` event, which will be executed after the content of the web page is loaded and which will also call our `generateMeme` function.
 
     ```javascript
     window.addEventListener('DOMContentLoaded', () => {
@@ -205,53 +207,51 @@ Now, in our `scripts.js` file:
     });
     ```
 
-Inside the event, add the following code:
+  Inside the event, add the following code:
 
-```javascript
-window.addEventListener('DOMContentLoaded', () => {
-  // Initialize variables
-  const topTextInput = document.getElementById('top-text');
-  const bottomTextInput = document.getElementById('bottom-text');
-  const topTextSizeInput = document.getElementById('top-text-size-input');
-  const bottomTextSizeInput = document.getElementById('bottom-text-size-input');
-  const imageInput = document.getElementById('image-input');
-  const generateBtn = document.getElementById('generate-btn');
-  // Default/Demo text
-  topTextInput.value = 'Top\nValue';
-  bottomTextInput.value = 'Bottom\nValue';
+  ```javascript
+  window.addEventListener('DOMContentLoaded', () => {
+    // Initialize variables
+    const topTextInput = document.getElementById('top-text');
+    const bottomTextInput = document.getElementById('bottom-text');
+    const topTextSizeInput = document.getElementById('top-text-size-input');
+    const bottomTextSizeInput = document.getElementById('bottom-text-size-input');
+    const imageInput = document.getElementById('image-input');
+    const generateBtn = document.getElementById('generate-btn');
+    // Default/Demo text
+    topTextInput.value = 'Top\nValue';
+    bottomTextInput.value = 'Bottom\nValue';
 
-  // Generate button click listener
-  generateBtn.addEventListener('click', () => {
-    // Read image as DataURL using the FileReader API
-    const reader = new FileReader();
-    reader.onload = () => {
-      const img = new Image();
-      img.src = reader.result;
-      img.onload = () => {
-        generateMeme(img, topTextInput.value, bottomTextInput.value, topTextSizeInput.value, bottomTextSizeInput.value);
+    // Generate button click listener
+    generateBtn.addEventListener('click', () => {
+      // Read image as DataURL using the FileReader API
+      const reader = new FileReader();
+      reader.onload = () => {
+        const img = new Image();
+        img.src = reader.result;
+        img.onload = () => {
+          generateMeme(img, topTextInput.value, bottomTextInput.value, topTextSizeInput.value, bottomTextSizeInput.value);
+        };
       };
-    };
-    reader.readAsDataURL(imageInput.files[0]);
+      reader.readAsDataURL(imageInput.files[0]);
+    });
   });
-});
-```
+  ```
 
-![Scared red panda](https://cloud-kb71t9prf.vercel.app/0giphy-2.gif)
+  ![Scared red panda](https://cloud-kb71t9prf.vercel.app/0giphy-2.gif)
 
-Don't be scared like the above ^ panda, let's break the code down:
+  Don't be scared like the above ^ panda, let's break the code down:
 
-Code Explanation:
+  In the `DOMContentLoaded()` event, we initialize our `topTextInput`, `bottomTextInput`, `topTextSizeInput`, `bottomTextSizeInput`, `imageInput` variables using `document.getElementById()` method which returns an `Element` object.
 
-In the `DOMContentLoaded()` event, we initialize our `topTextInput`, `bottomTextInput`, `topTextSizeInput`, `bottomTextSizeInput`, `imageInput` variables using `document.getElementById()` method which returns an `Element` object.
+  Next, we give a default text (or value) to our `topTextInput` and `bottomTextInput`
 
-Next, we give a default text (or value) to our `topTextInput` and `bottomTextInput`
+  After that, we add an `EventListener` to the `generateBtn` which gets triggered on clicking Generate button.
 
-After that, we add an `EventListener` to the `generateBtn` which gets triggered on clicking Generate button.
+  Inside that we use the [FileReader API](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) to read the input image as a DataURL,  and we use `reader` to initialize a `FileReader` and when our reader will load, we'll generate a new Image, and that image (along with other variable's value) will be passed on to the `generateMeme()` function.
+  And our `generateMeme()` will make our awesome meme!
 
-Inside that we use the [FileReader API](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) to read the input image as a DataURL,  and we use `reader` to initialize a `FileReader` and when our reader will load, we'll generate a new Image, and that image (along with other variable's value) will be passed on to the `generateMeme()` function.
-And our `generateMeme()` will make our awesome meme!
-
-The final JavaScript code should look like:
+**The final JavaScript code should look like:**
 
 <details>
  <summary>Click to expand!</summary>
@@ -332,7 +332,7 @@ window.addEventListener('DOMContentLoaded', () => {
 </summary>
 </details>
 
-**_And with this, we finish coding our Meme-Genie! Check out what you've just built!_**
+**_And with this, we finish coding our Meme-Genie, Check out what you've just built by clicking the "Run" Button on top!_**
 
 ![Final Output](https://cloud-8kdhhtdj0.vercel.app/0ezgif.com-gif-maker.gif)
 
