@@ -14,7 +14,7 @@ Here's the [live demo](https://color-scheme-generator.giridharhackclu.repl.co/) 
 
 ## Prerequisites
 
-You should have  basic knowledge about both [React.js](https://reactjs.org) as well as some of the new [ES6](https://www.w3schools.com/Js/js_es6.asp) features in JavaScript.
+You should have basic knowledge about both [React.js](https://reactjs.org) as well as some of the new [ES6](https://www.w3schools.com/Js/js_es6.asp) features in JavaScript.
 
 React Fundamentals
  - [JSX](https://reactjs.org/docs/introducing-jsx.html)
@@ -41,9 +41,9 @@ There are many benefits of using Functional components. They are:
 
 ## Setup
 
-For writing code, we will be using [Repl.it](https://repl.it). Repl.it is a online code editor to code in many different languages without any installations.
+For writing code, we will be using [Repl.it](https://repl.it). Repl.it is an online code editor to code in many different languages without any installations.
 
-To get started, open the [starter repl](https://repl.it/@Giridharhackclu/color-scheme-generator-starter#README.md) and click on `Fork` button. The starter repl contains ['create-react-app'](https://github.com/facebook/create-react-app) installed. I also added some basic styles so that we can concentrate completely on React.
+To get started, open the [starter repl](https://repl.it/@Giridharhackclu/color-scheme-generator-starter#README.md) and click on the `Fork` button. The starter repl contains ['create-react-app'](https://github.com/facebook/create-react-app) installed. I also added some basic styles so that we can concentrate completely on React.
 
 Click the `Run` button to start the live-server (it’ll take a moment to get running the first time). After running successfully, you can see `Hello world!` on the webpage.
 
@@ -71,7 +71,7 @@ Now let's create elements with colors. But what colors? We'll give them random c
 
 The functional components can accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
 
-Add a [prop](https://reactjs.org/docs/components-and-props.html#props-are-read-only) `colors`, an `array`, which we will get from other component. 
+Add a [prop](https://reactjs.org/docs/components-and-props.html#props-are-read-only) `colors`, an `array`, which we will get from other components. 
 
 ```jsx
 export default function Color({ colors = [] }) {      //<------- accepts an array as prop
@@ -102,11 +102,11 @@ export default function Color({ colors = [] }) {
 }
 ```
 
-The above component gets the `colors` array as a prop from another component and returns an array of `div` elements with a background color. Each element contains the respective `backgroundColor` in form of hex code. You can observe that a [`key`](https://reactjs.org/docs/lists-and-keys.html#keys) is given to every element for it's identity. 
+The above component gets the `colors` array as a prop from another component and returns an array of `div` elements with a background color. Each element contains the respective `backgroundColor` in form of hex code. You can observe that a [`key`](https://reactjs.org/docs/lists-and-keys.html#keys) is given to every element for its identity. 
 
 Now we finished writing our `Color.js` component. But nothing will appear on the screen without rendering this component. 
 
-Open the `App.js` component. To get a random color we will use a package called [randomcolor](https://randomcolor.lllllllllllllllll.com/). It is a small library which returns some random colors. The package is already installed in the starter repl. 
+Open the `App.js` component. To get a random color we will use a package called [randomcolor](https://randomcolor.lllllllllllllllll.com/). It is a small library that returns some random colors. The package is already installed in the starter repl. 
 
 Let's import `Color.js` and `randomColor` into our `App.js` component. Add these lines of code to the `App` component.
 
@@ -121,7 +121,7 @@ We will create an array of colors and change the colors when you click the butto
 <button className="btn">Change!</button>
 ```
 
-We use state to update the colors array every time you click the button. 
+We use the state to update the colors array every time you click the button. 
 
 ## The State Hook - `useState()`
 
@@ -191,7 +191,7 @@ It is very effective adding external API class, or event-listeners inside this h
 
 Now we can set the colors of our project using `useEffect()`. We get a base color from `randomColor()` and make a color scheme using an [the color API](https://www.thecolorapi.com/form-scheme). 
 
-We will get a random color in hex code like `#FA6745` when we use `randomColor()`. But the color API takes only the code without `#`. So we use `slice()` method to remove `#` from the color.
+We will get a random color in hex code like `#FA6745` when we use `randomColor()`. But the color API takes only the code without `#`. So we use the `slice()` method to remove `#` from the color.
 
 ```js
 const baseColor = randomColor().slice(1)
@@ -219,7 +219,7 @@ const getColor = () => {
 
 **Explanation**: The above code fetches the data from the URL. The [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) method in JavaScript provides an easy, logical way to fetch resources asynchronously across the network.
 
-Then we will call this function inside our `useEffect()` hook. As described, we use `count` as a second parameter for recalling the hook everytime the `count` changes. 
+Then we will call this function inside our `useEffect()` hook. As described, we use `count` as a second parameter for recalling the hook every time the `count` changes. 
 
 ```js
 useEffect(getColor, [count])
@@ -229,7 +229,7 @@ Every time you click the button, `count` changes. As the `count` changes, the `u
 
 ![Visualisation](https://cloud-endlseu6b.vercel.app/0resized.png)
 
-You cannot see any colors on the screen. Let's now render the `Color.js` component inside for the `App.js` component and pass the `colors` array as prop.
+You cannot see any colors on the screen. Let's now render the `Color.js` component inside for the `App.js` component and pass the `colors` array as a prop.
 
 ```jsx
 import React, { useState, useEffect } from 'react'
@@ -302,4 +302,5 @@ Analogic Color Schemes -   It generates Analogic-complement color-schemes. Same 
 In this example, the [randomcolor](https://randomcolor.lllllllllllllllll.com/) package is not used. Instead created a custom function to generate random colors.
 
 Use the power of React Hooks in your next React project. Hope you enjoy this workshop!
+
 
