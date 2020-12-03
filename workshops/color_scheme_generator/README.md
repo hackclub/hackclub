@@ -37,14 +37,15 @@ There are many benefits of using Functional components. They are :
 
 ## Setup
 
-For setting up the project fork the repl [here](https://repl.it/@Giridharhackclu/color-scheme-generator-starter#README.md). The starter repl contains ['create-react-app'](https://github.com/facebook/create-react-app) installed. There are some basic styles applied, you will get cleared along with the workshop.
+Fork the starter repl [here](https://repl.it/@Giridharhackclu/color-scheme-generator-starter#README.md). The starter repl contains ['create-react-app'](https://github.com/facebook/create-react-app) installed. There are some basic styles applied, you will get cleared along the flow.
+
+Click the run button to start the live-server (it’ll take a moment to get running the first time). After running successfully, kick down the console. If you can see `Hello world!` on the webpage, you are good to go.
 
 Let's start creating our React app.
-After setting up the above [repl](https://repl.it/@Giridharhackclu/color-scheme-generator-starter#README.md), click the run button to start the live-server (it’ll take a moment to get running the first time). After running successfully, kick down the console, you can see `Hello world!` on the webpage.
 
 ## Step - 1
 
-Then navigate to the `src` folder and create a component `Color.js`. The `Color.js` component displays the colors on the page. Add the following code. 
+Navigate to the `src` folder and create a component `Color.js`. This component is to display the colors on the page. Add the following code. 
 
 This is a basic react functional component that renders a `div` element with class `container`. Don't forget to include classes to the elements throughout the project. All the styles are prewritten.
 
@@ -60,9 +61,15 @@ export default function Color() {
 }
 ```
 
-Now let's create elements with colors. But what colors? We'll give them random colors as we go. 
+Now let's create elements with colors. But what colors? 
 
-Create a [prop](https://reactjs.org/docs/components-and-props.html#props-are-read-only) `colors`, an `array`, which we get from our main component. Then we will loop through the array with [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). The final component will be like this :
+![confused]()
+
+We'll give them random colors as we go. 
+
+Add a [prop](https://reactjs.org/docs/components-and-props.html#props-are-read-only) `colors`, an `array`, which we will get from other component. Then we will loop through the array with [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). 
+
+The final component will be like this :
 
 ```jsx
 import React from 'react'
@@ -87,7 +94,7 @@ It gets the `colors` array as a prop from another component and returns an array
 
 Now we finished writing our `Color.js` component. Don't worry, nothing will be on the webpage without rendering the component. 
 
-Then open the `App.js` component, where we do our major work. For getting a random color we are using a package [randomcolor](https://randomcolor.lllllllllllllllll.com/), which is a small library of some random colors. It is already installed in the starter template. Let's import our `Color.js` and `randomColor` into our `App.js` component. Add these lines of code to the `App` component.
+Open the `App.js` component. For getting a random color we are using a package [randomcolor](https://randomcolor.lllllllllllllllll.com/), which is a small library of some random colors. It is already installed in the starter template. Let's import `Color.js` and `randomColor` into our `App.js` component. Add these lines of code to the `App` component.
 
 ```jsx
 import Color from './Color'
@@ -127,7 +134,13 @@ export default function App() {
 }
 ```
 
-Let's create a function `change()` which changes `count` when the button is clicked.We use the function `setState()` for changing the count. Add event `onClick` to the button and call the function.
+Add event `onClick` to the button and call the function.
+
+```html
+<button className="btn" onClick={change}>Change!</button>
+```
+
+Let's create a function `change()` which changes `count` when the button is clicked. We use the function `setState()` for changing the count. 
 
 ```javascript
 export default function App() {
@@ -148,7 +161,9 @@ export default function App() {
 
 ## The Effect Hook - useEffect()
 
-The `useEffect()` API accepts a function as argument. The function runs when the component is first rendered, and on every subsequent rerender/update. React first updates the DOM, then calls any function passed to `useEffect()`. All without blocking the UI rendering even on blocking code, unlike the old `componentDidMount` and `componentDidUpdate`, which makes our apps feel faster. It is very effective adding external API class, or event-listeners inside this hook. Since the `useEffect()` functions are run on every subsequent re-render/update, we can tell React to skip a run, for performance purposes, by adding a second parameter which is an array that contains a list of state variables to watch for. React will only re-run the side effect if one of the items in this array changes. If the second parameter is not defined, the `useEffect()` runs infinitely.
+The `useEffect()` API accepts a function as argument. The function runs when the component is first rendered, and on every subsequent rerender/update. React first updates the DOM, then calls any function passed to `useEffect()`. All without blocking the UI rendering even on blocking code, unlike the old `componentDidMount` and `componentDidUpdate`, which makes our apps feel faster. 
+
+It is very effective adding external API class, or event-listeners inside this hook. Since the `useEffect()` functions are run on every subsequent re-render/update, we can tell React to skip a run, for performance purposes, by adding a second parameter which is an array that contains a list of state variables to watch for. React will only re-run the side effect if one of the items in this array changes. If the second parameter is not defined, the `useEffect()` runs infinitely.
 
 Now we can set the colors of our project using `useEffect()`. We get a base color from `randomColor()` and make a color scheme using an [the color API](https://www.thecolorapi.com/form-scheme). 
 
@@ -166,15 +181,17 @@ const getColor = () => {
     .then(data => {
       setColors(data.colors.map(color => color.hex.value))
     })
+
+    ...
   }
 ```
 
 The above code fetches the data from the URL. The [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) method in JavaScript provides an easy, logical way to fetch resources asynchronously across the network.
 
-Then we will call this function inside our `useEffect()` hook. As described, we use `count` as a second parameter for recalling the hook. 
+Then we will call this function inside our `useEffect()` hook. As described, we use `count` as a second parameter for recalling the hook everytime the `count` changes. 
 
 ```javascript
-  useEffect(getColor, [count])
+useEffect(getColor, [count])
 ```
 
 Every time you click the button, `count` changes. As the `count` changes, the `useEffect()` runs and `getColor()` is executed, the `colors` array changes. 
