@@ -37,7 +37,7 @@ There are many benefits of using Functional components. They are :
 
 ## Setup
 
-Fork the starter repl [here](https://repl.it/@Giridharhackclu/color-scheme-generator-starter#README.md). The starter repl contains ['create-react-app'](https://github.com/facebook/create-react-app) installed. There are some basic styles applied, you will get cleared along the flow.
+Fork the starter repl [here](https://repl.it/@Giridharhackclu/color-scheme-generator-starter#README.md). The starter repl contains ['create-react-app'](https://github.com/facebook/create-react-app) installed and some prewritten styles.
 
 Click the run button to start the live-server (it’ll take a moment to get running the first time). After running successfully, kick down the console. If you can see `Hello world!` on the webpage, you are good to go.
 
