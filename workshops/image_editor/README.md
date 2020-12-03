@@ -5,7 +5,7 @@ author: '@wollygfx'
 img: 'https://cloud-81e0x4zt3.vercel.app/0image.png'
 ---
 
-In this workshop you'll learn how to make a very simple image editor using [CSS Filters](https://www.w3.org/TR/filter-effects/) , [jQuery](https://jquery.com) and [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) . Follow along with me and see how easy it is!
+In this workshop, you'll learn how to make a very simple image editor using [CSS Filters](https://www.w3.org/TR/filter-effects/), [jQuery](https://jquery.com), and [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/). Follow along with me and see how easy it is!
 
 Here's a [live demo](https://2-image-editor.wollygfx.repl.co) and the [source code](https://repl.it/@wollygfx/2-Image-editor#index.html) if you want to check it out before we start.
 ![live demo](https://cloud-gvno5b2im.vercel.app/0screen_recording_2020-11-09_at_8.14.57_pm.gif)
@@ -330,7 +330,7 @@ Here's the result:
 
 ![CSS Result](https://cloud-i0vj1gzw6.vercel.app/0image.png)
 
-Repl.it should have automatically linked the `style.css` file for you, but if you don't see your changes reflect when you click the green "Run" button at the top, try adding this line to the `<head>` in your `index.html` file:
+Repl.it should have automatically linked the `style.css` file for you, but if you don't see your changes reflect when you click the green "Run" button at the top, make sure you have this line in the `<head>` in your `index.html` file:
 
 ```html
 <link rel="stylesheet" href="style.css">
@@ -347,7 +347,7 @@ let targetImage = document.getElementById('targetimage');
 let inputRange = document.querySelectorAll('.slider');
 ```
 - The first and second variable will hold html elements, we get those elements using the method ```document.getElementById('')```. So those variables will hold the form in section 1 and the image in section 2 respectively.
-- In the third variable, you'll find `document.querySelectorAll` returns a NodeList, a special type of list of elements, that will contain the amount of elements with  `class=slider` in the document. So the 3rd variable contains the value of all the range inputs in the section 3.
+- In the third variable, you'll find `document.querySelectorAll` returns a NodeList, a special type of list of elements, that will contain the amount of elements with the class of `slider` in the document. So the 3rd variable contains the value of all the range inputs in the section 3.
 
 Next, we want to trigger some JavaScript code to run when the form is submitted. Under the three variables, add the following code:
 
@@ -368,7 +368,7 @@ myForm.addEventListener('submit', function(e) {
 Let's break this down:
 We are using the method ```addEventListener()``` to the first variable that we created, when the button in the form is submitted we call a function that:
 1. Creates a variable that holds the text input that we placed in section 1.
-2. Creates another variable that will get the data gotten from the text input, we do this using the **value** property.
+2. Creates another variable that will hold the data we get from the text input, we do this using the **`value`** property.
 3. Creates an if statement that checks if the variable `urlImageval` is empty or not using the **length** property, this property returns `true` if the length of the string is greater than 0 or `false` if the length of the string is 0. When the property returns true, it takes the `img` element in section 2 and sets its `src` to the value of `urlImage`, then it resets the value of `urlImage`.
 4. Then we use the `preventDefault();` method to prevent the default way the browser handles `submit` when it happens, which includes refreshing the page.
 5. Finally, we use the function `console.log('');` to send a message to the console.
@@ -413,7 +413,7 @@ function editImage() {
 ```
 Breaking down:
 1. The first 4 variables hold the range inputs from the HTML document using the method: ```document.getElementById('')``` 
-2. The another 4 variables take those range inputs and get them actual values, using the `value` property
+2. The next 4 variables take those range inputs and get their actual values, using the `value` property
 3. Then we take the `targetImage` element and we style it using the `style` & `filter` properties, and we specify what filters we want to apply.
 
 Let's test it:
