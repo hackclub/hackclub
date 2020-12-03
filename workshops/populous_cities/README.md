@@ -2,6 +2,7 @@
 name: 'Populous Cities'
 description: 'Create a map of 50 most populous cities using React Leaflet'
 author: '@faisalsayed10'
+image: 'https://cloud-na8vxu9zy.vercel.app/0image.png'
 ---
 
 # Populous Cities
@@ -20,7 +21,7 @@ You should know the basics of React and I recommend you to follow [this](https:/
 
 ## Part 2: Setup
 
-For writing our code, we'll be using [CodeSandbox](https://codesandbox.io) which turns out to be the best online code editor for creating React apps.
+For writing our code, we'll be using [CodeSandbox](https://codesandbox.io) which is the best online code editor for creating React apps.
 
 Go to this [starter code](https://react.new). Press **`ctrl+s`** / **`cmd+s`** and it will automatically fork it for you. Now, we have everything set up so let's get started!
 
@@ -556,11 +557,11 @@ Here are some tasks for you:
 
 Check out these cool examples!
 
-1. [Example 1](https://react-leaflet.js.org/docs/example-animated-panning)
+1. [Animated Panning in a map!](https://react-leaflet.js.org/docs/example-animated-panning)
 
-2. [Example 2](https://react-leaflet.js.org/docs/example-react-control)
+2. [A map, but with another minimap!](https://react-leaflet.js.org/docs/example-react-control)
 
-3. [Example 3](https://react-leaflet.js.org/docs/example-external-state)
+3. [A map which has a default latitude and longitude!](https://react-leaflet.js.org/docs/example-external-state)
 
 4. [A Covid-19 Tracker built by Khushraj!](https://codesandbox.io/s/covid-tracker-sxfpu)
 
