@@ -13,63 +13,39 @@ Here’s the [live demo](https://password-security.hariom04.repl.co/) and its [s
 
 ![final output of the codes provided in this workshop](https://cloud-nu1ftbbxy.vercel.app/0sample-demo.png)
 
-Using the code provided in this workshop will land you on a page like this but please feel free to add your imaginations and customization to make it even better. Without wasting any more time, let’s get started.
-
 # Part 1: Prerequisites
 
 Basic knowledge of HTML, CSS, and JavaScript would be helpful for better understanding but is not necessary to continue further in this workshop.
 
 # Part 2: Setup
 ## Setting up our code environment
-During this workshop, we’ll be using repl.it, a free, online code editor. Make sure to make your account!
-
-You can get started with it just by going to [repl.it/languages/html](https://repl.it/languages/html). By that, you will directly land on the webpage where you can write your codes.
+We’ll be using repl.it, a free, online code editor, to make this website. Get started by going to [repl.it/languages/html](https://repl.it/languages/html). Your coding environment will instantly spin up!
 
 ![starting window of repl.it on navigating using above link](https://cloud-plumff9h8.vercel.app/0repl-starting-window.png) 
 
 ^ Right now, your page will look like this.
 
-# Part 3: Inspecting the Default Files
-On the right side, in files section of your repl.it window, you can see 3 files that are:
-
-1-	index.html
-
-2-	script.js
-
-3-	style.css
-
-Let’s take a look at those files one by one and try to understand them.
-
-## 1) The HTML file
-This is the `index.html` file in your directory. HTML stands for **“Hypertext Markup Language”**. It provides structure to our webpage.
-
-Here in the first line, we have `<!DOCTYPE html>` which is used for specifying the version of HTML. Next, we have the `<title>` tag which specifies the title of our webpage that will be visible on the tab bar. Then we have `<body>` tag which contains the structural part of our web page. Usually, most of our coding part is typed inside the body tags. (`<body> </body>`)
-
-## 2) The CSS file
-This is the `style.css` file in your directory. CSS stands for **“Cascading Style Sheets”**. It provides the styling to our webpage and defines its look.
-
-Right now, we don’t have any codes in this file but as we will proceed further in this workshop, we will write codes accordingly. If you take a look in the `<head>` tag in your HTML file, you will find a line of code (`<link href="style.css" rel="stylesheet" type="text/css" />`). This means that your HTML file is properly linked to your CSS file. 😃
-
-## 3) The JavaScript file
-This is the `script.js` file in your directory. It provides scripting to our webpage and is responsible for the proper functionality of items.
-
-It’s empty for now, but we will fill it eventually later during the workshop. If you take a look in the `<head>` tag in your HTML file, you will find a line of code (`<script src="script.js"></script>`). This means that your HTML file is properly linked to your JavaScript file!
-
-# Part 4: Building the Project
+# Part 3: Building the Project
 ## 1) HTML
-Let’s start with the coding part of our project.
+### Adding image and welcoming text
 
-### 1- Adding image and welcoming text.
+Inside the `body` tags, we will insert an image using
 
-Inside the `body` tags, we will insert image using `<img src="https://cloud-puhemcmfs.vercel.app/0image.png" width="250" height="250">`. Here, `img` and `src` stand for **‘image’** and **‘source’** respectively. You are free to replace that URL with your image and set its width & height accordingly. 
+```html
+<img src="https://cloud-puhemcmfs.vercel.app/0image.png" width="250" height="250">
+```
 
-Next, we will write a welcoming line, for that type anything of your wish inside `<h2>` & `</h2>` tags like this:
+Here, `img` and `src` stand for **‘image’** and **‘source’** respectively. You are free to replace that URL with your image and set its width & height accordingly. 
+
+Next, we will add a welcome message. Under your image, add `<h2>` & `</h2>` tags like this:
+
 ```html
 <h2> Hiii HariOm👋 Welcome Back! Let's safeguard your accounts. </h2>
 ```
-Now we want to leave the next line as blank in our output to separate our main tool from the welcoming line. For that, we use a **break** tag that is called as `<br>` in HTML. So, in the next line, type `<br>`.
 
-### 2- Making our password generator tool.
+Now we want to leave the next line as blank in our output to separate our main tool from the welcoming line. For that, we use a `<br>` tag. So, in the next line, type `<br>`.
+
+### Making our password generator tool.
 
 Make a new section with the assistance of the `<div>` tag below your break (`<br>`) line. Add the attribute `class="inputbox"` inside that segment. Adding `class` attribute gives this particular div its own **“name”**, which will allow us to reference it directly using CSS (as we’ll see later in this workshop!).
 ```html
