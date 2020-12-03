@@ -70,7 +70,7 @@ here we create a route using the flask instance which we assign to the `app` var
 
 Earlier, we imported the `requests ` module which we will use to make [http requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
 
-Within the index function follow along withe following code.
+Within the index function follow along with the following code.
 
 ```python
 def index():
@@ -82,7 +82,7 @@ def index():
     return render_template("index.html",quote=quote)
 ```
 
-We start by defining a variable cleverly name `url` which holds the url of the API we are trying to fetch data the using `request.get()` we make [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) request to the API. if you print the `response` variable it should look something like this
+We start by declaring  a variable `url` which holds the url of the API we are trying to fetch data the using `request.get()` we make [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) request to the API. if you print the `response` variable it should look something like this
 
 `{'quote': "some random kanye quote "}`
 
