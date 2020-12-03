@@ -2,11 +2,12 @@
 name: 'Mad Libs Program'
 description: 'Recreate Mad Libs!'
 author: '@JakeGerber'
+image : 'https://cloud-qziue462l.vercel.app/0screenshot__1420_.png'
 ---
 
 # Recreate Mad Libs!
 
-<img src="https://cloud-9ppbnfui6.vercel.app/0screenshot__1400_.png" width="380" alt="Mad Libs Example">
+<img src="https://cloud-qziue462l.vercel.app/0screenshot__1420_.png" width="380" alt="Mad Libs Example">
 
 <img src="https://media.tenor.com/images/2801410c4dff2f169ebedddacb55dc70/tenor.gif" width="400" alt="Kirby Gif">
 
@@ -94,7 +95,13 @@ class Program
     #Initial printing to console.
     while(true)
     {
-      #What we already wrote.
+      string prompt = "";
+
+      using (var sr = new StreamReader("madlib.txt"))
+      {
+        prompt = sr.ReadToEnd();
+      }
+      
       for(int i = 0; i < prompt.Length; i++)
       {
 
@@ -139,8 +146,8 @@ for(int i = 0; i < prompt.Length; i++)
 {
 }
 ```
-
-This for loop loops through each letter in the "prompt" string.
+- Right under our using statement and still within the while loop, add this for loop.
+- This for loop loops through each letter in the "prompt" string.
 
 ## Checking Character
 
@@ -166,7 +173,11 @@ for(int i = 0; i < prompt.Length; i++)
 ```c#
 if (prompt[i] == '*')
 {
-  #What we already wrote.
+  int startingIndex = i; 
+  i++;
+  int characterSpace = 2;
+  string word = "";
+  
   while(true)
   {
     if (prompt[i] != '*')
@@ -182,6 +193,7 @@ if (prompt[i] == '*')
   }
 }
 ```
+- Add this new code within the if statement that we just created.
 - This if statement checks if the current character is not an asterisk (*).
 - If true, increment the "characterSpace", add the letter to the "word" string, and increment "i".
 - If not true, break out of the while loop because you've went through entire word surrounded by asterisks.
@@ -193,7 +205,7 @@ if (prompt[i] == '*')
 ```c#
 if (prompt[i] == '*')
 {
-  #What we already wrote.
+  #Checking character and while loop code would be here.
   Console.Write($"{word}: ");
   string response = Console.ReadLine();
   Console.WriteLine();
@@ -203,6 +215,7 @@ if (prompt[i] == '*')
   i = startingIndex+response.Length-1;
 }
 ```
+- This code with go in our if statment beneath the code we just wrote.
 - First, let's print the "word" string to ask what type of word is wanted using [string interpolation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated). 
 - Then, let's get the user's response and set it to the "response" string.
 - Now, let's remove the "word" variable from our prompt and insert the user's response.
@@ -220,7 +233,18 @@ class Program
   {
     while(true)
     {
-      #What we wrote.
+      string prompt = "";
+
+      using (var sr = new StreamReader("madlib.txt"))
+      {
+        prompt = sr.ReadToEnd();
+      }
+    
+      for(int i = 0; i < prompt.Length; i++)
+      {
+        #All of the code we just wrote would be here
+      }
+      
       Console.WriteLine("---------------------------------------------------\n");
       Console.WriteLine(prompt);
       Console.WriteLine("\n---------------------------------------------------\n");
@@ -228,7 +252,8 @@ class Program
   }
 }
 ```
-We are just printing lines to seperate the prompt for organization and then printing it.
+- Add this code under the for loop we just wrote.
+- We are just printing lines to seperate the prompt for organization and then printing it.
 
 # Play Again
 
@@ -244,6 +269,22 @@ class Program
   {
     while(true)
     {
+      string prompt = "";
+
+      using (var sr = new StreamReader("madlib.txt"))
+      {
+        prompt = sr.ReadToEnd();
+      }
+    
+      for(int i = 0; i < prompt.Length; i++)
+      {
+        #All of the code we just wrote would be here
+      }
+      
+      Console.WriteLine("---------------------------------------------------\n");
+      Console.WriteLine(prompt);
+      Console.WriteLine("\n---------------------------------------------------\n");
+      
       bool playAgain = false;
       while(true)
       {
@@ -277,7 +318,8 @@ class Program
   }
 }
 ```
-Let's break it down.
+- This code would be under after our "printing the prompt" code and still within our while loop.
+- Let's break it down.
 
 ## Asking the User to Play Again
 
@@ -312,7 +354,11 @@ while(true)
 # Actually Playing Again
 
 ```c#
-#What we just wrote.
+while(true)
+{
+  #The code we just wrote asking the player to play again.
+}
+
 if (playAgain == false)
 {
   break;
@@ -322,6 +368,7 @@ else
   Console.WriteLine("\n---------------------------------------------------\n");
 }
 ```
+- This if else statement comes directly after the while loop we just wrote.
 - If the "playAgain" bool is false, then we break out of the while loop surrounding the entire program.
 - Else we go back to the start of the while loop around the program.
 
