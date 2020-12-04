@@ -380,3 +380,6 @@ def drawText(x, y, text):
 
 # More You Can Do
 [Original Program](https://repl.it/@CosmicSnowman/Hangman-Workshop#drawing.py)
+[Option to Play Again](https://repl.it/@CosmicSnowman/Hangman-Workshop-Extended-1#main.py)
+[Change the Drawing](https://repl.it/@CosmicSnowman/Hangman-Workshop-Extended-2#main.py)
+[Add Color](https://repl.it/@CosmicSnowman/Hangman-Workshop-Extended-3#drawing.py)
