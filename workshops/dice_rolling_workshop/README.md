@@ -1,3 +1,4 @@
+---
 name: 'Dice Rolling'
 description: 'Simulate Rolling Dice!'
 author: '@JakeGerber'
@@ -23,6 +24,7 @@ Create a new repl and use Python as the language.
 Let's Begin!
 ```py
 import dice
+import turtle
 
 dice.Die(0, 0, 100, 10, "black", "red")
 
@@ -32,6 +34,28 @@ dice.Die(0, -150, 100, 10, "black", "red")
 ```
 - Add this code to "main.py".
 - Don't worry we're about to create these functions.
+- We need the turtle library here to detect key presses later on.
+
+# ReRoll
+
+```py
+#What we just wrote.
+def reroll():
+  turtle.clear()
+  dice.Die(0, 0, 100, 10, "black", "red")
+
+  dice.Die(0, 150, 100, 10, "black", "red")
+
+  dice.Die(0, -150, 100, 10, "black", "red")
+
+turtle.onkey(reroll, "space")
+
+
+turtle.listen()
+turtle.mainloop()
+```
+- This code comes directly after what we just wrote.
+- This code clears the screen and calls the dice functions again if space is pressed. The turtle is always listening for the user's input.
 
 # Create the "dice.py" file.
 Create the "dice.py" file as shown below.
