@@ -23,6 +23,7 @@ Create a new repl and use Python as the language.
 # Initial Statements
 
 Let's Begin!
+<img src="https://media3.giphy.com/media/8y8NVqFqhTQVa/200.gif" width="380" alt="Ratatouille Gif">
 
 ```py
 import random
@@ -63,6 +64,8 @@ drawing.drawText(-30, 80, wordsType[word])
 
 # User Guessing
 We will be creating this block of code.
+<img src="https://media4.giphy.com/media/d31vIfZXjpQXJukE/giphy.gif" width="380" alt="South Park Gif">
+
 ```py
 #What we already wrote.
 while(True):
@@ -155,6 +158,8 @@ We are drawing our hangman and text, and ending the game and displaying a win or
 
 # Drawing
 
+<img src="https://media4.giphy.com/media/VhtSLWxOQOGdFfGTTa/source.gif" width="380" alt="Kid Drawing Gif">
+
 ## Creating the File
 Create a file and name it drawing.py
 
@@ -168,6 +173,7 @@ import turtle
 Make sure to add this statement at the top so we can use the turtle library.
 
 ### Initial Statements
+<img src="https://media4.giphy.com/media/XcAa52ejGuNqdb5SFQ/giphy-downsized-medium.gif" width="380" alt="Hedgehog Gif">
 
 ```py
 def hangman(x, y, strikes):
@@ -263,6 +269,7 @@ This draws the text at the specified coordinate with the Arial font.
 
 # Final Source Code
 Here's the final code we wrote!
+<img src="https://media1.tenor.com/images/ee23f257055a69a5a27d13c23c39e55d/tenor.gif?itemid=18635064" width="380" alt="Cr1tikal Gif">
 
 ## main.py
 ```py
