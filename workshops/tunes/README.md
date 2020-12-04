@@ -102,6 +102,8 @@ document.onkeydown = function (e) {
 }
 ```
 
+What this code does is it get's the event (the key being pressed) information happening. It then extracts the key code from that information. The use of `||` is as a browser fallback as some browsers have different APIs.
+
 You'll see that when running this, our key is a number!? That's because each key has it's own code. [keycode.info](https://keycode.info/) is a super handy tool to help you identify the codes for each key.
 
 <img src="https://cloud-7ownn8t7c.vercel.app/screenshot_2020-09-17_at_7.14.26_pm.png" width="380" alt="keycode.info's UI">
