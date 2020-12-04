@@ -41,8 +41,8 @@ wordsType = {
 }
 ```
 
-- We are importing the random library for randomness and drawing class which we will create later.
-- We are creating a list of words that can be picked, and then we are creating a dictionary to hold their category.
+- We are importing the [random library](https://docs.python.org/3/library/random.html) for randomness and drawing class which we will create later.
+- We are creating a list of words that can be picked, and then we are creating a [dictionary](https://www.w3schools.com/python/python_dictionaries.asp) to hold their category.
 
 # More Initial Statements
 ```py
@@ -166,7 +166,7 @@ while(True):
 <img src="https://media4.giphy.com/media/VhtSLWxOQOGdFfGTTa/source.gif" width="380" alt="Kid Drawing Gif">
 
 ## Creating the File
-Create a file and name it drawing.py
+Create a file and name it "drawing.py".
 
 <img src="https://cloud-qgmcvvz08.vercel.app/0screenshot__1419_.png" width="380" alt="drawing.py example">
 
@@ -175,7 +175,7 @@ Create a file and name it drawing.py
 ```py
 import turtle
 ```
-Make sure to add this statement at the top so we can use the turtle library.
+Make sure to add this statement at the top so we can use the [turtle library](https://docs.python.org/3/library/turtle.html).
 
 ### Initial Statements
 <img src="https://media4.giphy.com/media/XcAa52ejGuNqdb5SFQ/giphy-downsized-medium.gif" width="380" alt="Hedgehog Gif">
