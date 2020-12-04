@@ -14,7 +14,7 @@ In this workshop we are going to be creating Hangman using Python and the turtle
 
 # Repl.it Setup
 
-We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE!
+We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE that allows us to write code online.
 
 Create a new repl and use Python as the language.
 
@@ -46,7 +46,7 @@ wordsType = {
 
 # More Initial Statements
 ```py
-#What we just wrote.
+#Our previous initial statements would be here.
 word = random.choice(words)
 guess = ""
 for letter in word:
@@ -64,10 +64,11 @@ drawing.drawText(-30, 80, wordsType[word])
 
 # User Guessing
 We will be creating this block of code.
+
 <img src="https://media4.giphy.com/media/d31vIfZXjpQXJukE/giphy.gif" width="380" alt="South Park Gif">
 
 ```py
-#What we already wrote.
+#All the initial statements would be here.
 while(True):
   while(True):
     letterGuess = input("Guess a letter: ").lower()
@@ -102,11 +103,11 @@ while(True):
     drawing.drawText(-60, -120, "YOU WIN!")
     break
 ```
-Don't worry! Let's break it down!
+- This while loop comes after the initial statements.
+- Don't worry! Let's break it down!
 
 ## User Input
 ```py
-#What we already wrote.
 while(True):
   while(True):
     letterGuess = input("Guess a letter: ").lower()
@@ -118,7 +119,11 @@ while(True):
 ## Comparing Input to Word
 ```py
 while(True):
-  #What we just wrote.
+  while(True):
+    letterGuess = input("Guess a letter: ").lower()
+    if (len(letterGuess) == 1):
+      break
+      
   tempAnswer = ""
   tempIndex = 0
   letterHere = False
@@ -153,8 +158,8 @@ while(True):
     drawing.drawText(-60, -120, "YOU WIN!")
     break
 ```
-
-We are drawing our hangman and text, and ending the game and displaying a win or lose message.
+- This code comes after the code we just wrote.
+- We are drawing our hangman and text, and ending the game and displaying a win or lose message.
 
 # Drawing
 
@@ -188,7 +193,12 @@ We want to clear the screen and reset our position each time we draw the hangman
 ### Strike 1
 ```py
 def hangman(x, y, strikes):
-  #What we already wrote.
+  turtle.clearscreen()
+  turtle.speed(0)
+  turtle.hideturtle()
+  turtle.goto(x, y)
+  turtle.down()
+
   if (strikes < 1):
     turtle.up()
   turtle.circle(20)
@@ -206,7 +216,8 @@ def hangman(x, y, strikes):
   turtle.forward(20)
   turtle.backward(10)
   ```
-If the user has at least 2 strikes then we draw the body.
+- This code comes after the first strike's code.
+- If the user has at least 2 strikes then we draw the body.
 
 ### Strike 3
 ```py
@@ -217,7 +228,8 @@ def hangman(x, y, strikes):
   turtle.left(90)
   turtle.forward(10)
 ```
-If the user has at least 3 strikes then we draw the first arm.
+- This code comes after the previous strikes' code.
+- If the user has at least 3 strikes then we draw the first arm.
 
 ### Strike 4
 ```py
@@ -230,7 +242,8 @@ def hangman(x, y, strikes):
   turtle.right(90)
   turtle.forward(10)
 ```
-If the user has at least 4 strikes then we draw the second arm.
+- This code comes after the previous strikes' code.
+- If the user has at least 4 strikes then we draw the second arm.
 
 ### Strike 5
 ```py
@@ -242,7 +255,8 @@ def hangman(x, y, strikes):
   turtle.forward(20)
   turtle.backward(20)
 ```
-If the user has at least 5 strikes then we draw the first leg.
+- This code comes after the previous strikes' code.
+- If the user has at least 5 strikes then we draw the first leg.
 
 ### Strike 6
 ```py
@@ -253,7 +267,8 @@ def hangman(x, y, strikes):
   turtle.right(60)
   turtle.forward(20)
 ```
-If the user has at least 6 strikes then we draw the second leg.
+- This code comes after the previous strikes' code.
+- If the user has at least 6 strikes then we draw the second leg.
 
 ## Drawing Text Function
 Put this function below the previous one.
@@ -269,6 +284,7 @@ This draws the text at the specified coordinate with the Arial font.
 
 # Final Source Code
 Here's the final code we wrote!
+
 <img src="https://media1.tenor.com/images/ee23f257055a69a5a27d13c23c39e55d/tenor.gif?itemid=18635064" width="380" alt="Cr1tikal Gif">
 
 ## main.py
