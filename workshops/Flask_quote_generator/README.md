@@ -131,6 +131,45 @@ Here we render the quote we passed to the `render_template` function earlier.
 
 Once more use the `url_for()` function but this time we pass the name of the function handling the index route since each the page loads it fetches a new quote.
 
+
+## CSS!!
+
+To make things look a little nicer open up `style.css` located in the static folder , feel free to play around with this as much as you want , else you could use the css below.
+
+```CSS
+
+
+
+.head{
+    margin:0 auto;
+    width:60%;
+}
+
+h1{
+    text-align: center;
+}
+
+
+.quote { 
+    text-align:center;
+    font-size:2em;
+    margin:  0 auto;
+    margin-top:2em;
+  
+    
+}
+
+.refresh{
+    text-decoration:none;
+    text-align: center;
+    font-size:2em;
+    width:4em;
+    margin:0 auto;
+    margin-top:2em;
+}
+
+```
+
 Finally add this line to the `main.py`
 
 ```python
@@ -138,7 +177,9 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0")
 ```
 
-This is so our app doesn't exit immediately its run. If you are following along on [repl.it](https://repl.it) click on the green button in the top right corner. So now you've completed the workshop and hopefully your a little more inspired.
+This is so our app doesn't exit immediately its run. While the `host="0.0.0."` parameter makes our app accessible to everyone on the web. 
+
+ If you are following along on [repl.it](https://repl.it) click on the green button in the top right corner. So now you've completed the workshop and hopefully your a little more inspired. So what next ?
 
 # Hacking
 
