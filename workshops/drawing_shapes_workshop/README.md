@@ -2,9 +2,11 @@
 name: 'Drawing Shapes Program'
 description: 'Make a drawing program with shapes!'
 author: '@JakeGerber'
+image: 'https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png'
 ---
 
 # Create a Drawing Program with Shapes!
+In this workshop, we will be creating a drawing program that allows us to make pictures out of different shapes such as circles, squares, and triangles.
 
 <img src="https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png" width="580" alt="Drawing Example">
 
@@ -12,7 +14,7 @@ author: '@JakeGerber'
 
 # Repl.it Setup
 
-We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE!
+We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE, meaning that it allows us to write code from the Repl.it website!
 
 Create a new repl and use Python as the language.
 
@@ -24,18 +26,15 @@ Create a new repl and use Python as the language.
 ## Importing Libraries
 Let's begin by importing the turtle and math libraries.
 
-```js
+```python
 import turtle
 import math
 ```
 
-- We will be drawing to the screen using the turtle library!
-- Turtle allows us to draw to the screen like a whiteboard. More information [here](https://www.geeksforgeeks.org/turtle-programming-python/)
-
-- The math library will be used for calculations!
+We will be drawing to the screen using the turtle library! Turtle allows us to draw to the screen like a whiteboard. More information [here](https://www.geeksforgeeks.org/turtle-programming-python/) The math library will be used for calculations!
 
 ## Creating Variables
-Now lets create some variables.
+Now lets create some initial variables.
 ```python
 import turtle
 import math
@@ -52,8 +51,8 @@ colors = ["red", "green", "blue", "yellow", "orange", "purple", "grey", "black"]
 ```
 
 - We are creating variables for the width of the square, radius of the circle, and length of the triangle.
-- We are setting the max amount of shapes we will draw under "maxItem" and "itemNum" is our index to start at.
-- The variable "colorNum" is the index we are starting at with the array of "colors".
+- The amount of shapes we have will be under "maxItem" and "itemNum" is where we will start. This will make more sense when we draw the items later on. 
+- The variable "colorNum" is the index we are starting at with the array of "colors". We will handle swtiching between colors later on.
 
 ## Initializing The Turtle
 Let's initialize the turtle.
@@ -71,9 +70,9 @@ turtle.up()
 - We are setting the speed to 0 so it will draw instantly.
 - We are making the turtle's pen go up so it will not draw while moving.
 
-# Creating the Shapes
+# Drawing the Shapes
 
-## Creating the Circle
+## Drawing the Circle
 We are going to create the circle function.
 
 <img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Circle Example">
@@ -91,7 +90,7 @@ def circle(x, y):
 - We are then drawing and filling the circle and ending the fill.
 
 
-## Creating the Square
+## Drawing the Square
 We are going to create the square function.
 
 <img src="https://cloud-mkkyzdd9l.vercel.app/0screenshot__1393_.png" width="380" alt="Square Example">
@@ -111,7 +110,7 @@ def square(x, y):
 - We are setting the direction to face right.
 - We are running a for loop to create each side of the square and then ending the fill.
 
-## Creating the Triangle
+## Drawing the Triangle
 We are going to create triangle function.
 
 <img src="https://cloud-mo50706v1.vercel.app/0screenshot__1394_.png" width="380" alt="Triangle Example">
@@ -136,7 +135,7 @@ def triangle(x, y):
 - We finally end the fill and set the direction to the right.
 
 
-# Finishing Up the Shapes
+## Finishing Up the Shapes
 
 <img src="https://media1.tenor.com/images/46422729dc9ecd6898203ef13b3d9985/tenor.gif?itemid=15700153" width="380" alt="Almost There Gif">
 
@@ -203,7 +202,7 @@ def switchColor(x, y):
 <img src="https://media3.giphy.com/media/hCfESQ8r1eBOg/giphy.gif" width="380" alt="Clicking Screen Gif">
 
 ```python
-#everything we already wrote
+#Everything we already wrote.
 turtle.onscreenclick(drawItem, 1)
 turtle.onscreenclick(switchColor, 2)
 turtle.onscreenclick(switchShape, 3)
@@ -213,7 +212,38 @@ turtle.onscreenclick(switchShape, 3)
 - If we click the middle button (2), switch the color.
 - If we click the right button (3), switch the shape.
 
+# Alternative Controls
+In case your middle mouse button and right click do not work, let's make some alternative keyboard controls.
+
+```python
+turtle.onscreenclick(drawItem, 1)
+turtle.onscreenclick(switchColor, 2)
+turtle.onscreenclick(switchShape, 3)
+
+
+def alternativeControl1():
+  canvas = turtle.getcanvas()
+  x, y = canvas.winfo_pointerx(), canvas.winfo_pointery()
+  switchSize(x, y)
+
+def alternativeControl2():
+  canvas = turtle.getcanvas()
+  x, y = canvas.winfo_pointerx(), canvas.winfo_pointery()
+  switchShape(x, y)
+
+
+turtle.onkey(alternativeControl1, "s")
+turtle.onkey(alternativeControl2, "d")
+
+turtle.listen()
+turtle.mainloop()
+```
+- Underneath the mouse buttons we wrote, add these alternative control functions.
+- The functions get the current mouse position and call their respective function.
+- The turtle is then listening for the key presses.
+
 # Final Source Code
+This is the code for the entire program.
 
 <img src="https://media2.giphy.com/media/26u4lOMA8JKSnL9Uk/giphy.gif" width="380" alt="Done Gif">
 
@@ -300,10 +330,28 @@ def switchShape(x, y):
 turtle.onscreenclick(drawItem, 1)
 turtle.onscreenclick(switchColor, 2)
 turtle.onscreenclick(switchShape, 3)
+
+
+def alternativeControl1():
+  canvas = turtle.getcanvas()
+  x, y = canvas.winfo_pointerx(), canvas.winfo_pointery()
+  switchSize(x, y)
+
+def alternativeControl2():
+  canvas = turtle.getcanvas()
+  x, y = canvas.winfo_pointerx(), canvas.winfo_pointery()
+  switchShape(x, y)
+
+
+turtle.onkey(alternativeControl1, "s")
+turtle.onkey(alternativeControl2, "d")
+
+turtle.listen()
+turtle.mainloop()
 ```
 
 # More that you can create + Source Code
 - [Original Program](https://repl.it/@CosmicSnowman/Drawing-Turtle#main.py)
-- [Randomized Color](https://repl.it/@CosmicSnowman/Drawing-Turtle-Expanded-1#main.py)
-- [More Shapes](https://repl.it/@CosmicSnowman/Drawing-Turtle-Expanded-2#main.py)
-- [More Sizes](https://repl.it/@CosmicSnowman/Drawing-Turtle-Expanded-3#main.py)
+- [Get a Random Color Every Time](https://repl.it/@CosmicSnowman/Drawing-Turtle-Expanded-1#main.py)
+- [Create Even More Shapes](https://repl.it/@CosmicSnowman/Drawing-Turtle-Expanded-2#main.py)
+- [Add More Sizes for the Shapes](https://repl.it/@CosmicSnowman/Drawing-Turtle-Expanded-3#main.py)
