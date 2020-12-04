@@ -1,6 +1,6 @@
 ---
 name: 'Hangman'
-description: 'Create the hangman game!'
+description: 'Create the Hangman game!'
 author: '@JakeGerber'
 image: 'https://cloud-pyase6wua.vercel.app/0screenshot__1414_.png'
 ---
