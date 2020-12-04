@@ -100,9 +100,9 @@ The `yargs` module is one such module for Node.js designed to support the most c
    ```
 
 Code Explanation:
-We want our super awesome app to greet the user, for that our app will require a `name` attribute. That's what the code does, it imports yargs module, and then we define the `help` page of our app and ask for `name` attribute, after taking the `name` attribute, our app will greets the user.
+We want our super awesome app to greet the user, for that our app will require a `name` attribute. That's what the code does, it imports yargs module, and with the help of yargs, we make a `help` page and ask for a `name` attribute, after taking the `name` attribute, our app greets the user.
 
->Note: The yargs module automatically builds a great response for displaying help! Your CLI is not only ready to accept `-n` and `--name` arguments but also `--help` and `--version`. Try running your CLI application with any of the above arguments!
+>Note: The yargs module automatically builds a great response for displaying help! Your CLI is not only ready to accept `-n` and `--name` arguments but also `--help` and `--version`. Try running your CLI application with any of the arguments!
 
 So try running our code so far by executing `node <your app name.js> -n <your name>`.
 
