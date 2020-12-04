@@ -2,6 +2,7 @@
 name: 'Hangman'
 description: 'Create the hangman game!'
 author: '@JakeGerber'
+image: 'https://cloud-pyase6wua.vercel.app/0screenshot__1414_.png'
 ---
 
 In this workshop we are going to be creating Hangman using Python and the turtle library.
@@ -260,4 +261,122 @@ def drawText(x, y, text):
 ```
 This draws the text at the specified coordinate with the Arial font.
 
+# Final Source Code
+Here's the final code we wrote!
 
+## main.py
+```py
+import random
+import drawing
+
+
+words = ["apple", "train", "shirt", "fork", "chair"]
+
+wordsType = {
+  "apple": "fruit",
+  "train": "vehicle",
+  "shirt": "clothing",
+  "fork" : "dining",
+  "chair" : "furniture"
+}
+
+
+word = random.choice(words)
+guess = ""
+for letter in word:
+  guess+= "*"
+strikes = 0
+
+drawing.hangman(0, 0, strikes)
+drawing.drawText(-20, -80, guess)
+drawing.drawText(-30, 80, wordsType[word])
+
+
+
+while(True):
+  while(True):
+    letterGuess = input("Guess a letter: ").lower()
+    if (len(letterGuess) == 1):
+      break
+
+  tempAnswer = ""
+  tempIndex = 0
+  letterHere = False
+  for letter in word:
+    if (letterGuess == letter):
+      tempAnswer += letter
+      letterHere = True
+    elif (guess[tempIndex] == "*"):
+      tempAnswer += "*"
+    else:
+      tempAnswer += guess[tempIndex]
+    tempIndex+=1
+  guess = tempAnswer
+  if (letterHere == False):
+    strikes+=1
+
+  drawing.hangman(0, 0, strikes)
+  drawing.drawText(-20, -80, guess)
+  drawing.drawText(-30, 80, wordsType[word])
+
+  if (strikes >= 6):
+    drawing.drawText(-60, -120, "YOU LOSE!")
+    break
+
+  if (word == guess):
+    drawing.drawText(-60, -120, "YOU WIN!")
+    break
+```
+## drawing.py
+```py
+import turtle
+
+def hangman(x, y, strikes):
+  turtle.clearscreen()
+  turtle.speed(0)
+  turtle.hideturtle()
+  turtle.goto(x, y)
+  turtle.down()
+
+  if (strikes < 1):
+    turtle.up()
+  turtle.circle(20)
+
+  if (strikes < 2):
+    turtle.up()
+  turtle.right(90)
+  turtle.forward(20)
+  turtle.backward(10)
+
+  if (strikes < 3):
+    turtle.up()
+  turtle.left(90)
+  turtle.forward(10)
+
+  if (strikes < 4):
+    turtle.up()
+  turtle.backward(20)
+  turtle.forward(10)
+  turtle.right(90)
+  turtle.forward(10)
+
+  if (strikes < 5):
+    turtle.up()
+  turtle.left(30)
+  turtle.forward(20)
+  turtle.backward(20)
+  
+  if (strikes < 6):
+    turtle.up()
+  turtle.right(60)
+  turtle.forward(20)
+
+def drawText(x, y, text):
+  turtle.hideturtle()
+  turtle.up()
+  turtle.goto(x, y)
+  turtle.write(text, font=("Arial", 16, "normal"))
+```
+
+# More You Can Do
+[Original Program](https://repl.it/@CosmicSnowman/Hangman-Workshop#drawing.py)
