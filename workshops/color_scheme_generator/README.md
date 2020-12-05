@@ -27,7 +27,7 @@ If you are familiar with these, let’s get going.
 
 [Hooks](https://reactjs.org/docs/hooks-intro.html) are introduced in React 16.8 version. 
 
-Previously, [Class components](https://reactjs.org/docs/components-and-props.html#function-and-class-components) were the only way to define a component that has its own state, and lifecycle methods. [Functional components](https://reactjs.org/docs/components-and-props.html#function-and-class-components) of React, which are light and more flexible, are limited in functionality. 
+Previously, [Class components](https://reactjs.org/docs/components-and-props.html#function-and-class-components) were the only way to define a component that has its own state, and lifecycle methods. [Functional components](https://reactjs.org/docs/components-and-props.html#function-and-class-components) of React, which were light and more flexible, are limited in functionality. 
 
 React Hooks enable us to use state and other React features, like lifecycle methods and event handlers, without writing a class component.
 
@@ -302,5 +302,4 @@ Analogic Color Schemes -   It generates Analogic-complement color-schemes. Same 
 In this example, the [randomcolor](https://randomcolor.lllllllllllllllll.com/) package is not used. Instead created a custom function to generate random colors.
 
 Use the power of React Hooks in your next React project. Hope you enjoy this workshop!
-
 
