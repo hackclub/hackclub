@@ -16,7 +16,7 @@ Here's the [live demo](https://color-scheme-generator.giridharhackclu.repl.co/) 
 
 You should have basic knowledge about both [React.js](https://reactjs.org) as well as some of the new [ES6](https://www.w3schools.com/Js/js_es6.asp) features in JavaScript.
 
-React Fundamentals
+You should know some React Fundamentals like:
  - [JSX](https://reactjs.org/docs/introducing-jsx.html)
  - [Components and Props](https://reactjs.org/docs/components-and-props.html)
  - [State and LifeCycle](https://reactjs.org/docs/state-and-lifecycle.html)
@@ -37,7 +37,7 @@ There are many benefits of using Functional components. They include:
 - Have better performance.
 - More reusable.
 
-> **Note:** Hooks don’t work inside classes. But you can use them instead of writing classes.
+> **Note:** Hooks don’t work inside class components. But you can use them instead of writing class components in React.
 
 ## Setup
 
@@ -47,7 +47,7 @@ To get started, open the [starter repl](https://repl.it/@Giridharhackclu/color-s
 
 Click the `Run` button to start the live-server (it’ll take a moment to get running the first time). After running successfully, you can see `Hello world!` on the webpage.
 
-Now, we have our coding environment so let's start creating.
+Let's start creating.
 
 ## Step - 1
 
@@ -67,7 +67,7 @@ export default function Color() {
 }
 ```
 
-Now let's create elements with colors. But what colors? We'll give them random colors later. 
+Now let's create some elements that contains our colors. But what colors? We'll give them random colors later. 
 
 The functional components can accept arbitrary inputs (called “`props`”) and return React elements describing what should appear on the screen.
 
@@ -191,13 +191,6 @@ It is very effective adding external API class, or event-listeners inside this h
 
 Now we can set the colors of our project using `useEffect()`. We get a base color from `randomColor()` and make a color scheme using an [the color API](https://www.thecolorapi.com/form-scheme). 
 
-We will get a random color in hex code like `#FA6745` when we use `randomColor()`. But the color API takes only the code without `#`. So we use the `slice()` method to remove `#` from the color.
-
-```js
-const baseColor = randomColor().slice(1)
-```
-
-
 The following `getColors()` function creates elements in the `colors` array. We can get different color schemes using our `baseColor`from [the color API](https://www.thecolorapi.com/form-scheme).
 
 Make sure that you import `useEffect` from React.
@@ -218,6 +211,13 @@ const getColor = () => {
 ```
 
 **Explanation**: The above code fetches the data from the URL. The [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) method in JavaScript provides an easy, logical way to fetch resources asynchronously across the network.
+
+In the above code, We will get a random color in hex code like `#FA6745` when we use `randomColor()`. But the color API takes only the code without `#`. So we use the `slice()` method to remove `#` from the color.
+
+```js
+const baseColor = randomColor().slice(1)
+```
+
 
 Then we will call this function inside our `useEffect()` hook. As described, we use `count` as a second parameter for recalling the hook every time the `count` changes. 
 
