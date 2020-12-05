@@ -31,7 +31,7 @@ Previously, [Class components](https://reactjs.org/docs/components-and-props.htm
 
 React Hooks enable us to use state and other React features, like lifecycle methods and event handlers, without writing a class component.
 
-There are many benefits of using Functional components. They are:
+There are many benefits of using Functional components. They include:
 
 - Easier to read, test, and debug.
 - Have better performance.
@@ -41,7 +41,7 @@ There are many benefits of using Functional components. They are:
 
 ## Setup
 
-For writing code, we will be using [Repl.it](https://repl.it). Repl.it is an online code editor to code in many different languages without any installations.
+For writing code, we will be using [Repl.it](https://repl.it). Repl.it is an online code editor which we can use to code in many different languages without any installations.
 
 To get started, open the [starter repl](https://repl.it/@Giridharhackclu/color-scheme-generator-starter#README.md) and click on the `Fork` button. The starter repl contains ['create-react-app'](https://github.com/facebook/create-react-app) installed. I also added some basic styles so that we can concentrate completely on React.
 
@@ -51,7 +51,7 @@ Now, we have our coding environment so let's start creating.
 
 ## Step - 1
 
-Navigate to the `src` folder and create a component `Color.js`. This component is to display the colors on the page. Add the following code. 
+Navigate to the `src` folder and create a component `Color.js`. This component will be used to display the colors on the page. Add the following code. 
 
 This is a basic react functional component that renders a `div` element with the class of `container`. Don't forget to include classes to the elements throughout the project. All the styles are prewritten.
 
@@ -69,9 +69,9 @@ export default function Color() {
 
 Now let's create elements with colors. But what colors? We'll give them random colors later. 
 
-The functional components can accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
+The functional components can accept arbitrary inputs (called “`props`”) and return React elements describing what should appear on the screen.
 
-Add a [prop](https://reactjs.org/docs/components-and-props.html#props-are-read-only) `colors`, an `array`, which we will get from other components. 
+Add a [prop](https://reactjs.org/docs/components-and-props.html#props-are-read-only) `colors` which will be an `array`, which we will get from other components. 
 
 ```jsx
 export default function Color({ colors = [] }) {      //<------- accepts an array as prop
@@ -127,9 +127,9 @@ We use the state to update the colors array every time you click the button.
 
 Using the `useState()` API, you can create a new state variable, and have a way to alter it. `useState()` accepts the initial value of the state item and returns an array containing the state variable, and the function you call to alter the state. Since it returns an array we use [array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) to access each item. 
 
-You can add as many `useState()` calls as you want, to create as many state variables as you want. Just make sure you call it in the [top level]https://reactjs.org/docs/hooks-rules.html#only-call-hooks-at-the-top-level) of a component (not in an `if` or in any other block). 
+You can add as many `useState()` calls as you want, to create as many state variables as you want. Just make sure you call it in the [top level](https://reactjs.org/docs/hooks-rules.html#only-call-hooks-at-the-top-level) of a component (not in an `if` statement or in any other block). 
 
-Now create two variables `count` and `colors` array using `useState`. 
+Now create two states `count` and `colors` using `useState`. 
 
 You have to import the `useState()` hook from the react library.
 
@@ -302,4 +302,3 @@ Analogic Color Schemes -   It generates Analogic-complement color-schemes. Same 
 In this example, the [randomcolor](https://randomcolor.lllllllllllllllll.com/) package is not used. Instead created a custom function to generate random colors.
 
 Use the power of React Hooks in your next React project. Hope you enjoy this workshop!
-
