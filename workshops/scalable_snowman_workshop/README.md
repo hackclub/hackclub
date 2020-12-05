@@ -2,6 +2,7 @@
 name: 'Scalable Snowman'
 description: 'Create your own scalable snowman!'
 author: '@JakeGerber'
+image: 'https://cloud-81lsm6jyf.vercel.app/0screenshot__1406_.png'
 ---
 
 # Create a Scalable Snowman!
@@ -180,15 +181,52 @@ def Snowman(x, y, radius1, radius2, radius3):
 - In the loop, we are moving forward half the radius of the first body part and creating a circle with 1/6 the radius of the head.
 
 # Calling the Snowman Function
-Let's create some statements. Make these after the function.
-
+This draw function will allow the snowmen to be drawn to the screen.
 ```py
-#What we already wrote
-Snowman(0, 0, radius1, radius2, radius3)
-Snowman(120, 0, radius1, radius2, radius3)
-Snowman(-120, 5, radius1, radius2, radius3)
+#What we already wrote.
+def draw():
+  turtle.tracer(0, 0)
+  Snowman(x, y, radius1, radius2, radius3)
+  Snowman(x+120, y, radius1, radius2, radius3)
+  Snowman(x+-120, y, radius1, radius2, radius3)
+  turtle.update()
 ```
-Fill in the parameters with what you want. We are putting the user input for the radii.
+- Right underneath what we already wrote add this function.
+- This function draws three snowmen with variables that we will create later, along with our radii.
+
+# Movement
+```py
+#What we already wrote.
+def left():
+  global x
+  turtle.clear()
+  x-=10
+  draw()
+
+def right():
+  global x
+  turtle.clear()
+  x+=10
+  draw()
+```
+- Put these functions right under what we already wrote.
+- These functions increase of decrease the x variable, clear the screen, and draw the snowmen again.
+
+# Final Statements
+```py
+#Everything we already wrote.
+x = 0
+y = 0
+draw()
+
+turtle.onkeypress(left, "a")
+turtle.onkeypress(right, "d")
+
+turtle.listen()
+turtle.mainloop()
+```
+- Add these statements after all the code we already wrote.
+- These statements initialize the variables, initially draw the snowmen, and listen in for keyboard input to move them left and right.
  
 # Final Code
 
@@ -204,7 +242,6 @@ radius3 = float(input("What radius for the third circle?: "))
 turtle.speed(0)
 turtle.hideturtle()
 turtle.bgcolor("black")
-
 
 def Snowman(x, y, radius1, radius2, radius3):
   turtle.goto(x, y)
@@ -279,9 +316,34 @@ def Snowman(x, y, radius1, radius2, radius3):
   turtle.left(90)
 
 
-Snowman(0, 0, radius1, radius2, radius3)
-Snowman(120, 0, radius1, radius2, radius3)
-Snowman(-120, 5, radius1, radius2, radius3)
+def draw():
+  turtle.tracer(0, 0)
+  Snowman(x, y, radius1, radius2, radius3)
+  Snowman(x+120, y, radius1, radius2, radius3)
+  Snowman(x+-120, y, radius1, radius2, radius3)
+  turtle.update()
+
+def left():
+  global x
+  turtle.clear()
+  x-=10
+  draw()
+
+def right():
+  global x
+  turtle.clear()
+  x+=10
+  draw()
+
+x = 0
+y = 0
+draw()
+
+turtle.onkeypress(left, "a")
+turtle.onkeypress(right, "d")
+
+turtle.listen()
+turtle.mainloop()
 ```
 
 # More You Can Do + Source Code
