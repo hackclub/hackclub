@@ -23,7 +23,7 @@ You should have some familiarity with HTML and JavaScript as well as programming
 
 ## Part 2: Setup
 
-So far, we've been using repl.it for most of our workshops. But today, I want to introduce you to another online code editor, [CodeSandbox](codesandbox.io). For making any React projects, CodeSandbox is the best one out there.
+So far, we've been using repl.it for most of our workshops. But today, I want to introduce you to another online code editor, [CodeSandbox](https://codesandbox.io). For making any React projects, CodeSandbox is the best one out there.
 
 To get started, go to this [starter code](https://codesandbox.io/s/calendarstartercode-thk00). Press **`ctrl+s`** / **`cmd+s`** and it will automatically fork it for you. Now, we have everything set up so let's get started!
 
