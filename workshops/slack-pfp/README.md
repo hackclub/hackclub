@@ -103,7 +103,7 @@ async function setPFP() {
 
 An async function is important as it allows us to wait for a line of code to complete before moving to the next line using the `await` keyword.
 
-What should we do first? How about setting a profile picture! Inside our `setPFP` function add the following lines. This will fetch the contents of the image r
+What should we do first? How about setting a profile picture! Inside our `setPFP` function add the following lines. This will fetch the contents of the image.
 
 ```javascript
 const image = await axios.get(images.afternoon, {
@@ -128,7 +128,7 @@ setPFP()
 ```
 This simply calls your function, now click `Run ►`.
 
-Check Slack... do you see any difference in your profile? Fingers crossed you do but if you do check the console for any errors and check your code for any typos ;)
+Check Slack... do you see any difference in your profile? Fingers crossed you do but if you don't, check the console for any errors and check your code for any typos ;)
 
 ### Changing the Profile Picture Based on Time
 
