@@ -21,7 +21,7 @@ We will be using [repl.it](https://repl.it) an online code editor. This allows y
 
 We will start by creating a Python 3 repl (You can easily create one by clicking this link https://repl.it/languages/python3).
 
-We now need to install a couple of external libraries. Follow the image below to find where to add the packages. Once in this menu you will need to install `beautifulsoup4`, `requests`, and `lxml`. 
+We now need to install a couple of external libraries. Follow the image below to find where to add the packages. Once in this menu you will need to install `beautifulsoup4`, `requests`, and `lxml`.  Documentation on the packages: [BS4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), [requests](https://requests.readthedocs.io/en/master/), and [LXML](https://lxml.de).
 ![Repl.it packages menu](https://cloud-p5pdve0kf.vercel.app/0ezgif.com-video-to-gif.gif)
 
 
@@ -75,7 +75,7 @@ Before we begin with the python code I will give a short review of the html stru
     </tr>
 </table>
 ```
-A html table can be seen as a 2 dimensional array or list. The table contains rows which are the `tr` tags. Each row contains columns which are the `td` tags. Within the `td` tags is the data or text we can webscrape.
+A html table can be seen as a 2 dimensional array or list. The table contains rows which are the `tr` tags. Each row contains columns which are the `td` tags. Within the `td` tags is the data or text we can webscrape. For more info on html check out this link: [html.com](https://html.com). Its useful to understand html when webscraping because you will need to know how to navigate the html in python.
 
 ### Python time!
 We begin by using beautiful soup to find a html table element. We want to find a specific table by id `sortable_table_world` as seen in the picture. The code below finds the first table that matches that id by using the `find` function and specifying the id as an attribute. The `attrs` is an optional argument and is a dictionary that can be set to any id, class, or html identifier.
@@ -136,7 +136,7 @@ for row in tableRows[1:]:
 
 ### Thats it! You can now get live covid data but more importantly you are now primed with knowledge to webscrape anything!
 ![Sponge bob done gif](https://cloud-5bmb4t5tp.vercel.app/0completed.gif)
-
+You can check out more advanced/in depth projects here. In this project you will be shown how to use selenium to webscrape that will allow you to webscrape pages like amazon or google that use ajax to load as you scroll (https://www.analyticsvidhya.com/blog/2020/08/web-scraping-selenium-with-python/). Check out this workshop by realpython that goes more in depth and links to other resources that can allow you to webscrape more complicated websites (https://realpython.com/beautiful-soup-web-scraper-python/).
 
 **Check out some other webscraping projects**
 [Webscape Github](https://repl.it/@SavageCoder77/Scrape-Github)
