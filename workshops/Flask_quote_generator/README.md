@@ -30,7 +30,7 @@ We're going to pull our Kanye quotes from [kanye.rest](https://kanye.rest), a fr
 
 ### Alright lets do it!
 
-We begin by making a few imports in `main.py`:
+We begin by making a few imports in `main.py`. Under the first two lines you wrote, add:
 
 ```python
 from flask import Flask,render_template
