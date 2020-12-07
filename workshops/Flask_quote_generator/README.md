@@ -132,12 +132,20 @@ Flask uses a templating language called [jinja](https://jinja.palletsprojects.co
 
 There are three main parts to pay attention to here:
 
-- `<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">`
-  - Here we use `url_for` tell flask to look in the static folder in the current directory and return a file named `style.css`.
-- `<h3> {{ quote }} </h3>`
-  - Here we render the quote we passed to the `render_template` function earlier.
-- ` <a href="{{ url_for('index') }}" class="block refresh round">refresh</a>`
-  - Once more use the `url_for()` function but this time we pass the name of the function handling the index route since each the page loads it fetches a new quote.
+```html
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+```
+- Here we use `url_for` tell flask to look in the static folder in the current directory and return a file named `style.css`.
+
+```html
+<h3> {{ quote }} </h3>
+```
+- Here we render the quote we passed to the `render_template` function earlier.
+
+```html
+<a href="{{ url_for('index') }}" class="block refresh round">refresh</a>
+```
+- Once more use the `url_for()` function but this time we pass the name of the function handling the index route since each the page loads it fetches a new quote.
 
 ## CSS!!!
 
