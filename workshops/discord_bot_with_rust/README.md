@@ -2,6 +2,7 @@
 name: 'Discord poll bot in Rust'
 description: 'Make a Discord polling bot in Rust using the Serenity library'
 author: '@anirudhb'
+img: 'https://cloud-kfuekwrsa.vercel.app/0poll-bot-example.gif'
 ---
 
 # Make a Discord bot in Rust!
