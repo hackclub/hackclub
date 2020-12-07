@@ -4,13 +4,15 @@ description: 'Make a quote generator with Flask '
 author: '@s1ntaxe770r'
 ---
 
-So you listened to "mercy", "flashing lights" and "fourfiveseconds". Now you're looking for insipration from Kanye? Yeah me neither! But in this workshop you will learn how to build a Kanye quote generator. By the end of this workshop, you will learn how to do three things:
+So you listened to "Mercy", "Flashing Lights" and "FourFiveSeconds". Now you're looking for insipration from Kanye? Yeah me too!! In this workshop, you will build a Kanye quote generator. By the end of this workshop, you will learn how to do three things:
 
 - Fetch from an API using web requests
 - Parse request data
 - Render the data
 
 This workshop assumes some basic knowledge of Python, HTML, and CSS.
+
+Let's get started!
 
 ## So what's Flask?
 
