@@ -1,15 +1,13 @@
 ---
-name: Slack todo list
-description: Make a slack bot that maintains a todo list with Node.js and Bolt
+name: Slack Todo List
+description: Make a todo list Slack bot with Node.js and Bolt
 author: '@KhushrajRathod'
 img: https://cloud-2xos4hsas.vercel.app/0screenshot_2020-11-16_at_1.00.14_pm.png
 ---
 
-# Slack todo list 
-
 Ever wanted a todo list that's simple, easy, and integrated into your favorite messaging service? Well, today, we're building one!
 
-Today, we'll be creating a slack bot that maintains a todo list using [Bolt.js](https://slack.dev/bolt-js/) and [Node.js](https://nodejs.org/)
+Today, we'll be creating a Slack bot that maintains a todo list using [Bolt.js](https://slack.dev/bolt-js/) and [Node.js](https://nodejs.org/)
 
 Here's the [final code](https://repl.it/@KhushrajRathod/TodoSlackApp). A live demo is available as "@Todo Bot" on the [Hack Club Slack](https://hackclub.com/slack/).
 
@@ -54,7 +52,7 @@ Follow these steps:
     <ul>To reload your page preview, click "Refresh" in the top-center of the screen</ul>
 </video>
 
-### Part 1.2: Getting slack tokens
+### Part 1.2: Getting Slack tokens
 
 - First, go to [Slack's sign in page](https://slack.com/signin) and sign in to your workspace. If you don't have an existing workspace to use, you can simply create a new one [here](https://slack.com/get-started)
 
@@ -227,7 +225,7 @@ app.command('/todolist', async ({ command, ack, say }) => {
 })
 ```
 
-- Next, for the `/todolistadd` command, we want to get the user's array, add the item to the list, and set the array in the database
+- Next, for the `/todolistadd` command, we want to get the user's array, add the item to the list, and set the array in the database.
 
 ```js
 app.command('/todolistadd', async ({ command, ack, say }) => {
@@ -239,7 +237,7 @@ app.command('/todolistadd', async ({ command, ack, say }) => {
 })
 ```
 
-- For the '/todolistremove' command, we want to remove the item from the array and then set it in the database
+- For the `/todolistremove` command, we want to remove the item from the array and then set it in the database.
 
 ```js
 app.command('/todolistremove', async ({ command, ack, say }) => {
@@ -252,7 +250,7 @@ app.command('/todolistremove', async ({ command, ack, say }) => {
 })
 ```
 
-We're done setting up the bot! Run the repl and go to your slack workspace, you should be able to run `/todolist`, `/todolistadd` and `/todolistremove`!
+We're done setting up the bot! Run the repl and go to your Slack workspace, you should be able to run `/todolist`, `/todolistadd` and `/todolistremove`!
 
 ## Setting up uptimerobot
 
