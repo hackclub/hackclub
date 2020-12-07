@@ -1,99 +1,110 @@
 ---
 name: 'KanyeRest Quote Generator'
 description: 'Make a quote generator with Flask '
-author: '@jubril'
+author: '@s1ntaxe770r'
 ---
 
-# Get inspired with flask
+So you listened to "mercy", "flashing lights" and "fourfiveseconds". Now you're looking for insipration from Kanye? Yeah me neither! But in this workshop you will learn how to build a Kanye quote generator. By the end of this workshop, you will learn how to do three things:
 
-So you listened to "mercy", "flashing lights" and "fourfiveseconds". Now you're looking for insipration from Kanye? Yeah me neither! But in this workshop you will learn how to build a Kanye quote generator. By the end of this workshop you should have learnt how to do three things.
-
-- Fetch from an API using requests
-
+- Fetch from an API using web requests
 - Parse request data
-
 - Render the data
 
-This workshop assumes some basic knowledge of python , HTML and CSS.
+This workshop assumes some basic knowledge of Python, HTML, and CSS.
 
-## So what's Flask ?
+## So what's Flask?
 
-Flask is a web application framework written in python, it allows users to build simple and even complex applications,Flask does not enforce particular methods on users. Flask is immensely popular in the python community. According to the jetbrains python developer survey
-Flask was the most used web framework.
-
-![surveyresults](https://cloud-j79fh1cen.vercel.app/0image.png)
+Flask is a web application framework for Python. With it, you can super-easily build fully-functioning web APIs. If you don't totally understand what that means, don't worry—you'll begin to understand it as you go along.
 
 ## Getting started
 
-You can find the starter project [here](https://repl.it/@JubrilOyetunji/kanyerest)
+We're going to be using [repl.it](https://repl.it), a free, online code editor, to write this workshop. To get started, visit the starter project [here](https://repl.it/@JubrilOyetunji/kanyerest)
 
-## But where's the data?
+### But where's the data?
 
 ![where](https://cloud-c2egtgknk.vercel.app/0where.gif)
 
-The data used in this workshop will come from http://kanye.rest.
+We're going to pull our Kanye quotes from [kanye.rest](https://kanye.rest), a free API that generates random Kanye quotes.
 
 ### Alright lets do it!
 
-We begin by making a few imports in `main.py`
+We begin by making a few imports in `main.py`:
 
 ```python
 from flask import Flask,render_template
 import requests
-
 ```
 
-on line one we import `Flask` and `render_tepmlate` , `render_template` allows us to return a "template" along with some data.
-Note: template simply refers to the html
+On the first line, we import `Flask` and `render_template`. `render_template` allows us to return a "template"—in our case, the HTML file in the `templates` folder—along with some data.
 
-Next we create an instance of `Flask` and create route.
+## Creating your first Flask route
 
-#### Route?
+A route in Flask is how we define paths on our app. An example would be http://hackclub.com/workshops — the route would be `/workshops`.
 
-A route in flask is how we define paths on our app. An example would be http://hackclub.com/workshops.
-Routes are defined with the `@flaskinstance.route("/joinhacklubslack")` decorator followed by a function which would get executed whenever a user visits the route. Follow along with the code below
+Let's create an instance of `Flask` and create our first route.
 
 ```python
 app = Flask(__name__)
-
 
 @app.route("/")
 def index():
    # do stuff here
 ```
 
-here we create a route using the flask instance which we assign to the `app` variable and then we pass in a path in this case its root of the page.
+First, we're assigning a Flask instance to a variable called `app`. Then, we create our first route.
+
+As you can see, Flask routes are defined with the `@flaskinstance.route("/routename")`—in our case, `@app.route("/routename")`— decorator right above a function that runs whenever a user visits the route in their web browser.
 
 ## Getting that data!
 
-![data](https://cloud-qlxdganfz.vercel.app/0image.png)
+![give me your phone meme but it's give me your data](https://cloud-fosrs2x3k.vercel.app/03e0-2.jpg)
 
-Earlier, we imported the `requests ` module which we will use to make [http requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
+Earlier, we imported the `requests` module, which we will use to make [http requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
 
-Within the index function follow along with the following code.
+Within the `index` function, add the following code:
 
 ```python
+@app.route("/")
 def index():
-    url = "https://api.kanye.rest"
-    data = requests.get(url)
-    response = data.json()
-    quote = response["quote"]
+  url = "https://api.kanye.rest"
+  data = requests.get(url)
+  response = data.json()
+  quote = response["quote"]
 
-    return render_template("index.html",quote=quote)
+  return render_template("index.html",quote=quote)
 ```
 
-We start by declaring  a variable `url` which holds the url of the API we are trying to fetch data the using `request.get()` we make [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) request to the API. if you print the `response` variable it should look something like this
+- We start by declaring a variable `url` which holds the url of the API we're trying to fetch
+- Then, we make an [HTTP GET request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) to the url using the `requests` library and assign it to a variable `data`
+- Next, we parse the HTTP response using `data.json()`
+  - The response from the API looks something like
+  
+  ```json
+  {"quote":"Sometimes I push the door close button on people running towards the elevator. I just need my own elevator sometimes. My sanctuary."}
+  ```
+  
+- Then, we get the "quote" from the http response and assign it to a variable `quote`
+- Finally, we render the data on a webpage using the `render_data` function.
 
-`{'quote': "some random kanye quote "}`
-
-the `response` variable is a dictionary so we can access the quotes by using the key which is `quote`
-and finally we render the data using the render the data using the `render_template` function. Here we pass the name of the template in this case its `index.html` and `quote` which is the name we would use to refer to the quote in the template.
+<details>
+  
+  <summary>Protip!</summary>
+  
+  If you want to see the response you get from `response`, add:
+  
+  ```python
+  print(response)
+  ```
+  
+  right after that line.
+  
+</details>
 
 ## Rendering the data
 
 ![present](https://cloud-8ec0u6szu.vercel.app/0garfield.gif)
 
-By default flask looks for any html files you pass to the `render_template ` function in a folder called templates.Open the `index.html` in the templates folder and follow along with the following code.
+By default, Flask looks for any HTML files you pass to the `render_template` function in a folder called `templates`. On the sidebar on the left of your repl, click on the folder called `templates` to open it. Then, open the `index.html` file inside it. Add the following code to the `index.html` file:
 
 ```html
 <!DOCTYPE html>
@@ -117,86 +128,155 @@ By default flask looks for any html files you pass to the `render_template ` fun
 </html>
 ```
 
-Flask uses a templating language called jinja, this is how we can pass data and even use things like loops and conditional statements. The begining and end of jinja syntax are denoted by `{{ }}` or `{% %}` in the case of things like conditionals. There are three main parts to pay attention to here.
+Flask uses a templating language called [jinja](https://jinja.palletsprojects.com/en/2.11.x/). This is how we can pass data and even use things like loops and conditional statements. The begining and end of jinja syntax are denoted by `{{ }}` or `{% %}` in the case of things like conditionals.
+
+There are three main parts to pay attention to here:
 
 - `<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">`
-
-Here we use `url_for` tell flask to look in the static folder in the current directory and return a file named `style.css` .
-
+  - Here we use `url_for` tell flask to look in the static folder in the current directory and return a file named `style.css`.
 - `<h3> {{ quote }} </h3>`
-
-Here we render the quote we passed to the `render_template` function earlier.
-
+  - Here we render the quote we passed to the `render_template` function earlier.
 - ` <a href="{{ url_for('index') }}" class="block refresh round">refresh</a>`
+  - Once more use the `url_for()` function but this time we pass the name of the function handling the index route since each the page loads it fetches a new quote.
 
-Once more use the `url_for()` function but this time we pass the name of the function handling the index route since each the page loads it fetches a new quote.
+## CSS!!!
 
-
-## CSS!!
-
-To make things look a little nicer open up `style.css` located in the static folder , feel free to play around with this as much as you want , else you could use the css below.
+To make things look a little nicer, open up the `style.css` file located in the `static` folder. Feel free to play around with it and add your own styles, or you can use the CSS below:
 
 ```CSS
-
-
-
-.head{
-    margin:0 auto;
-    width:60%;
+.head {
+  margin: 0 auto;
+  width: 60%;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-
 
 .quote { 
-    text-align:center;
-    font-size:2em;
-    margin:  0 auto;
-    margin-top:2em;
-  
-    
+  text-align: center;
+  font-size: 2em;
+  margin: 0 auto;
+  margin-top: 2em;
 }
 
-.refresh{
-    text-decoration:none;
-    text-align: center;
-    font-size:2em;
-    width:4em;
-    margin:0 auto;
-    margin-top:2em;
+.refresh {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+  width: 4em;
+  margin: 0 auto;
+  margin-top: 2em;
 }
-
 ```
 
-Finally add this line to the `main.py`
+Once you've added your styles, navigate back to `main.py` and add this to the bottom of the file:
 
 ```python
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+  app.run(host="0.0.0.0")
 ```
 
-This is so our app doesn't exit immediately its run. While the `host="0.0.0."` parameter makes our app accessible to everyone on the web. 
+This will make sure our app continuously runs once we run it. The `host="0.0.0.0"` parameter makes it accessible to everyone on the web.
 
- If you are following along on [repl.it](https://repl.it) click on the green button in the top right corner. So now you've completed the workshop and hopefully your a little more inspired.
+<details>
+   
+  <summary>Here's the final code:</summary>
+  
+  `main.py`:
+  
+  ```python
+  from flask import Flask,render_template
+  import requests
+
+  app = Flask(__name__)
+
+  @app.route("/")
+  def index():
+    url = "https://api.kanye.rest"
+    data = requests.get(url)
+    response = data.json()
+    quote = response["quote"]
+
+    return render_template("index.html",quote=quote)
+
+  if __name__ == "__main__":
+    app.run(host="0.0.0.0")
+  ```
+  
+  `index.html`:
+  
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://unpkg.com/blocks.css/dist/blocks.min.css" />
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+      <title>Kanye Quotes</title>
+    </head>
+    <body>
+      <div class="head block">
+        <h1>Kanye once said</h1> 
+      </div>
+      <div class="quote block">
+        <h3> {{ quote }} </h3>
+      </div>
+      <a href="{{ url_for('index') }}" class="block refresh round">refresh</a>
+    </body>
+  </html>
+  ```
+  
+  `style.css`:
+  
+  ```css
+  .head {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .quote { 
+    text-align: center;
+    font-size: 2em;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+
+  .refresh {
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    width: 4em;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+   ```
+   
+</details>
+
+To see what you made, click the green "Run" button at the top of your repl.
+
+Yay!!! You did it!!!!
 
 # Hacking
 
 ![hacking](https://cloud-hjufepegf.vercel.app/0hacker_cat.gif)
 
-Checkout what other hackclubbers have made
+Check out what other Hack Clubbers have made!
 
-[Khushraj Rathod](https://repl.it/@KhushrajRathod/RandomJokeGenerator#main.py) used the dad joke API to make a dad joke generator
+- [Khushraj Rathod](https://repl.it/@KhushrajRathod/RandomJokeGenerator#main.py) used the dad joke API to make a dad joke generator
+- [Jason Antwi-Appah](https://repl.it/@JasonAntwiAppah/kanyerest2#main.py) used a food API to build to build a food suggestion app
 
-[Jason Appah](https://repl.it/@JasonAntwiAppah/kanyerest2#main.py) used a food API to build to build a food suggestion app
-
-Checkout [this](https://apilist.fun) list for other cool API's you could build stuff with.
+Check out [this](https://apilist.fun) list for other cool API's you could build stuff with.
 
 The source code for this workshop can be found [here](https://github.com/s1ntaxe770r/KQG)
 
 ### Further resources
 
-The [flask](https://flask.palletsprojects.com/en/1.1.x/) documentation is super friendly so it's worth checking out.
-
-if your are more of a visual learner , check out pretty printed on youtube and the [website](https://prettyprinted.com) there are some great flask tutorials.
+- The [flask](https://flask.palletsprojects.com/en/1.1.x/) documentation is super friendly so it's worth checking out.
+- If you're more of a visual learner, check out [Pretty Printed](https://prettyprinted.com)—they've got some great Flask tutorials.
