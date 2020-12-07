@@ -80,6 +80,8 @@ I hope you understand the starter, now you may be getting bored so let's get mak
 
 # Detecting a key press
 
+From here on out, we'll be writing our code in the `script.js` file so load that up in the editor.
+
 To play a note in our project we will have the user press a key on their keyboard. Javascript has an event for this: `document.onkeydown`. This is fired when ever a key is pressed down.
 
 For example, in the below snippet:
