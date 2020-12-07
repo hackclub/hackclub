@@ -80,11 +80,9 @@ def index():
 - Then, we make an [HTTP GET request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) to the url using the `requests` library and assign it to a variable `data`
 - Next, we parse the HTTP response using `data.json()`
   - The response from the API looks something like
-  
   ```json
   {"quote":"Sometimes I push the door close button on people running towards the elevator. I just need my own elevator sometimes. My sanctuary."}
   ```
-  
 - Then, we get the "quote" from the http response and assign it to a variable `quote`
 - Finally, we render the data on a webpage using the `render_data` function.
 
