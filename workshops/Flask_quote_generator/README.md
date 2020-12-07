@@ -98,7 +98,7 @@ def index():
   print(response)
   ```
   
-  right after that line.
+  right after the line that starts with `response =`.
   
 </details>
 
