@@ -14,7 +14,7 @@ Depending on how well you know Rust from an intermediate to advanced level, this
 
 ## Prerequisites
 
-For this tutorial, I do recommend an intermediate understanding of low-level concepts such as memory management, and some experience with Rust as well. Here are the concepts in particular that I recommend you have a good understanding of:
+For this workshop, I do recommend an intermediate understanding of low-level concepts such as memory management, and some experience with Rust as well. Here are the concepts in particular that I recommend you have a good understanding of:
 * Lifetimes, borrowing and move semantics
 * How Rust structures code (i.e. Cargo projects)
 * The general idea behind macros (not the exact syntax but a good idea of their general purpose)
