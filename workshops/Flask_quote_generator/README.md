@@ -20,7 +20,7 @@ Flask is a web application framework for Python. With it, you can super-easily b
 
 ## Getting started
 
-We're going to be using [repl.it](https://repl.it), a free, online code editor, to write this workshop. To get started, visit the starter project [here](https://repl.it/@JubrilOyetunji/kanyerest)
+We're going to be using [repl.it](https://repl.it), a free, online code editor, to write this workshop. To get started, visit the starter project [here](https://repl.it/@JubrilOyetunji/kanyerest). Your coding environment will spin up in a few seconds!
 
 ### But where's the data?
 
