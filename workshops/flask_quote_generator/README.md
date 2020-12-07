@@ -89,14 +89,14 @@ def index():
 
 <details>
   
-  <summary>Protip!</summary>
+  <summary> Protip! </summary>
   
   If you want to see the response you get from `response`, add:
-  
+
   ```python
   print(response)
   ```
-  
+
   right after the line that starts with `response =`.
   
 </details>
@@ -191,9 +191,9 @@ This will make sure our app continuously runs once we run it. The `host="0.0.0.0
 <details>
    
   <summary>Here's the final code:</summary>
-  
+
   `main.py`:
-  
+
   ```python
   from flask import Flask,render_template
   import requests
@@ -212,9 +212,9 @@ This will make sure our app continuously runs once we run it. The `host="0.0.0.0
   if __name__ == "__main__":
     app.run(host="0.0.0.0")
   ```
-  
+
   `index.html`:
-  
+
   ```html
   <!DOCTYPE html>
   <html lang="en">
@@ -236,9 +236,9 @@ This will make sure our app continuously runs once we run it. The `host="0.0.0.0
     </body>
   </html>
   ```
-  
+
   `style.css`:
-  
+
   ```css
   .head {
     margin: 0 auto;
@@ -264,8 +264,8 @@ This will make sure our app continuously runs once we run it. The `host="0.0.0.0
     margin: 0 auto;
     margin-top: 2em;
   }
-   ```
-   
+  ```
+ 
 </details>
 
 To see what you made, click the green "Run" button at the top of your repl.
