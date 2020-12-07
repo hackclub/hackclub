@@ -13,7 +13,7 @@ image: 'https://cloud-45zk83i41.vercel.app/0screenshot_2020-11-22_at_3.27.11_pm.
 
 In my opinion this is the most painful part of this process.
 
-To begin you will need to be a member of a Slack Workspace. The easiest way to join one is to join [Hack Club's]([https://hackclub.com/slack/](https://hackclub.com/slack/)).
+To begin you will need to be a member of a Slack Workspace. The easiest way to join one is to join [Hack Club's](https://hackclub.com/slack).
 
 Then visit the [Slack "Build" page](https://api.slack.com/apps). Click the large green button that says `Create New App`.
 
