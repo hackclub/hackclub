@@ -85,9 +85,9 @@ Next, let's create a data object with each of our images. Replace each URL with 
 
 ```javascript
 const images = {
-	"morning": "https://images.unsplash.com/photo-1517188206596-1e1f7c954177?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-	"afternoon": "https://images.unsplash.com/photo-1566452348683-91f934cd9051?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2090&q=80",
-	"night": "https://images.unsplash.com/photo-1519446251021-1c4ee77fec1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
+  "morning": "https://images.unsplash.com/photo-1517188206596-1e1f7c954177?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+  "afternoon": "https://images.unsplash.com/photo-1566452348683-91f934cd9051?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2090&q=80",
+  "night": "https://images.unsplash.com/photo-1519446251021-1c4ee77fec1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
 }
 ```
 
@@ -97,7 +97,7 @@ Now that we've got our images we need to create an async function that will hand
 
 ```javascript
 async function setPFP() {  
-	console.log(images)
+  console.log(images)
 }
 ```
 
@@ -107,7 +107,7 @@ What should we do first? How about setting a profile picture! Inside our `setPFP
 
 ```javascript
 const image = await axios.get(images.afternoon, {
-	responseType: "arraybuffer",
+  responseType: "arraybuffer"
 });
 ```
 
@@ -115,8 +115,8 @@ Awesome! We now have the image, let's set it to our profile picture on Slack. We
 ```javascript
 const client = new  WebClient();
 const slackRequest = await client.users.setPhoto({
-	image: image.data,
-	token: process.env.SLACK_TOKEN
+  image: image.data,
+  token: process.env.SLACK_TOKEN
 });
 ```
 In the above code we are creating an instance of the Slack Web API Client. Then we make a request to the users.setPhoto API endpoint, with our image data and our token. We need the token so that Slack knows who we are and that we are allowed to make this change. We're sending the data as an array buffer, these are a bit complicated but if you're curious you can read more about them [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer).
@@ -155,19 +155,19 @@ Now let's set the image based on hours using a couple of `if` statements and an 
 ```javascript
 let image
 if (5 < hour && hour < 12) {
-	image = await axios.get(images.morning, {
-		responseType: "arraybuffer",
-	});
+  image = await axios.get(images.morning, {
+    responseType: "arraybuffer",
+  });
 }
 else if (12 < hour && hour < 20) {
-	image = await axios.get(images.afternoon, {
-		responseType: "arraybuffer",
-	});
+  image = await axios.get(images.afternoon, {
+    responseType: "arraybuffer",
+  });
 }
 else {
-	image = await axios.get(images.afternoon, {
-		responseType: "arraybuffer",
-	});
+  image = await axios.get(images.afternoon, {
+    responseType: "arraybuffer",
+  });
 }
 ```
 
@@ -177,33 +177,33 @@ We want to replace our original image fetching code block with this to make our 
 const { WebClient } = require('@slack/web-api');
 const axios = require('axios').default;
 const images = {
-	"morning": "https://images.unsplash.com/photo-1517188206596-1e1f7c954177?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-	"afternoon": "https://images.unsplash.com/photo-1566452348683-91f934cd9051?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2090&q=80",
-	"night": "https://images.unsplash.com/photo-1519446251021-1c4ee77fec1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
+  "morning": "https://images.unsplash.com/photo-1517188206596-1e1f7c954177?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+  "afternoon": "https://images.unsplash.com/photo-1566452348683-91f934cd9051?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2090&q=80",
+  "night": "https://images.unsplash.com/photo-1519446251021-1c4ee77fec1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80"
 } 
 async function setPFP() {
-	var hour = new Date().getHours() + 8
-	let image
-	if (5 < hour && hour < 12) {
-		image = await axios.get(images.afternoon, {
-			responseType: "arraybuffer",
-		});
-	}
-	else if (12 < hour && hour < 20) {
-		image = await axios.get(images.afternoon, {
-			responseType: "arraybuffer",
-		});
-	}
-	else {
-		image = await axios.get(images.afternoon, {
-			responseType: "arraybuffer",
-		});
-	}
-	const client = new WebClient();
-	const slackRequest = await client.users.setPhoto({
-		image: image.data,
-		token: process.env.SLACK_TOKEN
-	});
+  var hour = new Date().getHours() + 8
+  let image
+  if (5 < hour && hour < 12) {
+    image = await axios.get(images.afternoon, {
+      responseType: "arraybuffer",
+    });
+  }
+  else if (12 < hour && hour < 20) {
+    image = await axios.get(images.afternoon, {
+      responseType: "arraybuffer",
+    });
+  }
+  else {
+    image = await axios.get(images.afternoon, {
+      responseType: "arraybuffer",
+    });
+  }
+  const client = new WebClient();
+  const slackRequest = await client.users.setPhoto({
+    image: image.data,
+    token: process.env.SLACK_TOKEN
+  });
 }
 
 setPFP()
@@ -218,8 +218,8 @@ Now we'll need to replace `setPFP()` with:
 
 ```javascript
 export default async (req, res) => {
-	await setPFP()
-	res.send("Started changing your PFP!")
+  await setPFP()
+  res.send("Started changing your PFP!")
 }
 ```
 That's all the code changes we'll need. Now we need to deploy it!
