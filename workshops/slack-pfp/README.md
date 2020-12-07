@@ -7,7 +7,7 @@ image: 'https://cloud-45zk83i41.vercel.app/0screenshot_2020-11-22_at_3.27.11_pm.
 
 # Automating your Slack Profile Picture
 
-<s>Having a plain old profile picture is so 2019. </s> Having a Slack Profile Picture that changes throughout the day is a great way to mix things up on Slack. In this workshop, we'll be learning how to make a dynamic profile picture that changes as the day progresses. We'll be using Node.js deployed as a [Vercel](https://vercel.com) Serverless Function and triggered by [cron-job.org](https://cron-job.org/en/). You'll be learning the basics of getting a Slack User Token, creating a Node.js program and deploying that program as a server less function.
+<s>Having a plain old profile picture is so 2019. </s> Having a Slack Profile Picture that changes throughout the day is a great way to mix things up on Slack. In this workshop, we'll be learning how to make a dynamic profile picture that changes as the day progresses. We'll be using Node.js deployed as a [Vercel](https://vercel.com) Serverless Function and triggered by [cron-job.org](https://cron-job.org/en/). You'll be learning the basics of getting a Slack User Token, creating a Node.js program and deploying that program as a serverless function.
 
 ## Obtaining a Slack Token
 
