@@ -112,7 +112,7 @@ This is what we've built so far:
 ![Image of Current User Interface](https://cloud-iqs31da3d.vercel.app/0user_interface.png) 
 
 
-We're finally done with the HTML! It's time to tackle the Javascript.   
+We're finally done with the HTML! It's time to tackle the JavaScript.   
 
 # JavaScript
 Yay! Now that we've finished writing HTML, it's time to start making it work with JavaScript.
@@ -324,10 +324,9 @@ Note that when we check if there is any data, we check both the `data` property 
 
 Now we just have to graph this data and we're done!   
  
-
 ## Graphing the Weather Data   
 
-At the end of your JS file, create a new function named `updateChart()` which takes two parameters, `inputData` and `cityName`. `inputData` is the data that was returned from the previous function.   
+At the end of the `script.js` file, create a new function named `updateChart()` which takes two parameters, `inputData` and `cityName`. `inputData` is the data that was returned from the previous function.   
 
 Create a constant variable named `newData` with a `label` property of ``Average temperature in ${cityName}``. We're using a *template literal*, which is a formatting tool that lets us easily combine strings and variable names. Anything between the backticks is a string. If a variable is needed, it can be referenced inside curly braces with a dollar sign in front.    
 
@@ -360,8 +359,10 @@ function updateChart(inputData, cityName) {
   myChart.update();    
 }
 ```
-Congratulations! You just built an awesome weather grapher project while also learning about `fetch()`, `async/await`, and the Chart.js library! 
 
+Now, if you click the green "Run" button at the top of your repl, you should see a graph!
+
+Congratulations! You just built an awesome weather grapher project while also learning about `fetch()`, `async/await`, and the Chart.js library! 
 
 ## Extending the Project   
 Now it's your turn to apply what you know to make this project even more awesome! Feel free to use the resources linked at the bottom which provide further depth into the concepts and tools used in this workshop. Here's some inspiration on ways you can extend the project!    
