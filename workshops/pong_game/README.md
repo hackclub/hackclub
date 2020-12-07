@@ -185,7 +185,7 @@ draw()
 done()
 ```
 
-**Congrats! You've just made your own Pacman game! 🎉**
+**Congrats! You've just made your own Pong game! 🎉**
 
 ![applause gif](https://cloud-460srrq0c.vercel.app/0applause.gif)
 
