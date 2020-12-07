@@ -278,5 +278,5 @@ The source code for this workshop can be found [here](https://github.com/s1ntaxe
 
 ### Further resources
 
-- The [flask](https://flask.palletsprojects.com/en/1.1.x/) documentation is super friendly so it's worth checking out.
+- The [Flask](https://flask.palletsprojects.com/en/1.1.x/) documentation is super friendly so it's worth checking out.
 - If you're more of a visual learner, check out [Pretty Printed](https://prettyprinted.com)—they've got some great Flask tutorials.
