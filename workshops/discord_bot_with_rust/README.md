@@ -10,9 +10,23 @@ Discord bots are cool, right? Haven't you ever wanted to make your own?
 
 Well, today we're going to do exactly that, but this time we're using Rust! We're going to build a Discord bot that allows you to setup polls, and updates counts in real-time!
 
+Depending on how well you know Rust from an intermediate to advanced level, this workshop could take anywhere from 40 minutes to an hour to complete. Don't let that scare you, though! You'll learn a lot of new concepts about how to structure complex applications in Rust along the way :)
+
+## Prerequisites
+
+For this tutorial, I do recommend an intermediate understanding of low-level concepts such as memory management, and some experience with Rust as well. Here are the concepts in particular that I recommend you have a good understanding of:
+* Lifetimes, borrowing and move semantics
+* How Rust structures code (i.e. Cargo projects)
+* The general idea behind macros (not the exact syntax but a good idea of their general purpose)
+* Basic Rust knowledge (I recommend the [Rust book](https://doc.rust-lang.org/book/) for this!)
+
 ## Demo
 
-The full code can be viewed and demoed [here](https://repl.it/@anirudhb/Rust-discord-bot-finished). Alternatively, you can open the below section for a full listing.
+Here's a demo of the polling bot in action:
+
+![Polling bot demo](https://cloud-kfuekwrsa.vercel.app/0poll-bot-example.gif)
+
+The full code can be viewed [here](https://repl.it/@anirudhb/Rust-discord-bot-finished). Alternatively, you can open the below section for a full listing.
 
 <details>
 <summary>Full code</summary>
@@ -287,10 +301,6 @@ async fn main() {
 
 </details>
 
-## Prerequisites
-
-For this tutorial, I do recommend an intermediate understanding of low-level concepts such as memory management, and some experience with Rust as well.
-
 ## Getting started
 
 We're going to host our Discord bot on [repl.it](https://repl.it).
@@ -303,7 +313,7 @@ Now let's create a new Rust project by going to https://repl.it/languages/rust:
 
 ## Adding the library and setting up a basic bot
 
-Right now, our Rust program isn't a Cargo project. That means it won't be able to import any libraries.
+Right now, our Rust program isn't a Cargo project. Cargo is Rust's package manager. Without it, we wouldn't be able to easily depend on libraries. So since our program isn't a Cargo project, it won't be able to use the `serenity` library!
 
 Let's fix that by running `cargo init --name polling-bot` in the terminal. This command initializes a new Cargo project for us. You can replace `polling-bot` with whatever you want your program to be named. This should create two new files on the side: `.gitignore` and `Cargo.toml`, which we'll be using to add the Serenity library:
 
