@@ -104,7 +104,7 @@ def index():
 
 ![present](https://cloud-8ec0u6szu.vercel.app/0garfield.gif)
 
-By default, Flask looks for any HTML files you pass to the `render_template` function in a folder called `templates`. On the sidebar on the left of your repl, click on the folder called `templates` to open it. Then, open the `index.html` file inside it. Add the following code to the `index.html` file:
+By default, Flask looks for any HTML files you pass to the `render_template` function in a folder called `templates`. On the sidebar on the left of your repl, click on the folder called `templates` to open it. Then, open the `index.html` file inside it. Inside, you should see the following code:
 
 ```html
 <!DOCTYPE html>
@@ -272,7 +272,7 @@ Check out what other Hack Clubbers have made!
 - [Khushraj Rathod](https://repl.it/@KhushrajRathod/RandomJokeGenerator#main.py) used the dad joke API to make a dad joke generator
 - [Jason Antwi-Appah](https://repl.it/@JasonAntwiAppah/kanyerest2#main.py) used a food API to build to build a food suggestion app
 
-Check out [this](https://apilist.fun) list for other cool API's you could build stuff with.
+Check out [this](https://apilist.fun) list for other cool APIs you could build stuff with.
 
 The source code for this workshop can be found [here](https://github.com/s1ntaxe770r/KQG)
 
