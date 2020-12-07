@@ -30,7 +30,7 @@ We're going to pull our Kanye quotes from [kanye.rest](https://kanye.rest), a fr
 
 ### Alright lets do it!
 
-We begin by making a few imports in `main.py`. Under the first two lines you wrote, add:
+Let's start by importing a few libraries in `main.py`:
 
 ```python
 from flask import Flask,render_template
@@ -43,7 +43,7 @@ On the first line, we import `Flask` and `render_template`. `render_template` al
 
 A route in Flask is how we define paths on our app. An example would be http://hackclub.com/workshops — the route would be `/workshops`.
 
-Let's create an instance of `Flask` and create our first route.
+Let's create an instance of `Flask` and create our first route. Under the first two lines you wrote, add:
 
 ```python
 app = Flask(__name__)
