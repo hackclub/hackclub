@@ -19,12 +19,12 @@ Final Product (without code): [Live](https://weather-grapher-workshop.shayanhald
 To complete this workshop you should have a basic understanding of the fundamentals of:  
 - HTML 
 - CSS  
-- Javascript (DOM, loops, arrays, objects, functions, and conditionals)   
+- JavaScript (DOM, loops, arrays, objects, functions, and conditionals)   
 
 You do NOT need any prior understanding of:   
 - Web APIs    
 - How to make API calls with `fetch()`   
-- Chart.js Library    
+- Chart.js Library
 
 If any of these concepts don't sound familiar to you, don't worry! We'll be learning them as we go.   
 
@@ -34,23 +34,25 @@ Let's begin!
 We'll be using [repl.it](repl.it) to make this project. Head on over to [https://repl.it/languages/HTML](https://repl.it/languages/HTML) to start coding. It's suggested that you make an account so you don't lose your code. 
 
 ## Loading Bootstrap and Chart.js
-We'll be using Bootstrap to quickly style our interface and give it a clean look. Start by copying the following lines of code into the header of your `index.html` file. We're simply using a CDN, a content delivery network, to load bootstrap and the Chart.js library so we can use it later.   
+We'll be using Bootstrap to quickly style our interface and give it a clean look. We're simply using a CDN, a content delivery network, to load Bootstrap and the Chart.js library so we can use it later. [*What's a CDN?*](https://www.sitepoint.com/what-is-a-cdn-and-how-does-it-work/)
 
-Read more about CDN [here](https://www.sitepoint.com/what-is-a-cdn-and-how-does-it-work/).  
+Start by copying the following lines of code between the `<head></head>` tags of your `index.html` file:
 
 ```HTML
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 ```      
-Add the next two `<script>` tags at the end of the body. These are simply some Javascript packages that Bootstrap requires to function. 
+Next, add these two `<script>` tags. These are simply some JavaScript libraries that Bootstrap requires to function.
+
 ```HTML    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-```    
-If you want to read about everything that Bootstrap has to offer, the [documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/) is the best place to start. 
+```
+
+If you want to read about everything that Bootstrap has to offer, the [documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/) is the best place to start.
 
 ## Building the User Interface   
-Inside of our `<body>` tag, add a `<h1>` tag with property `style="text-align:center;"` that displays "Weather Grapher" with `class="mt-3"`. This class adds a slight margin to the top so it doesn't look too cramped on the screen. 
+Inside of the `<body>` tag, add a `<h1>` tag with property `style="text-align:center;"` that displays "Weather Grapher" with `class="mt-3"`. This class adds a slight margin to the top so it doesn't look too cramped on the screen. 
 
 Add a `<div>` after the header with the styling `style="display: flex; justify-content: center;"`, which centers it horizontally on the screen. This `<div>` will hold the input fields for the city, start date, and end date. Inside this `<div>` add an `<input>` with the following properties: `type="text" class="form-control mr-1" id="city" placeholder="City Name" style="width; 200px"`. Repeat this type of `<input>` two more times, except replacing the id and placeholder attributes with "Start Date" and "End Date" respectively.    
 
@@ -112,9 +114,11 @@ This is what we've built so far:
 
 We're finally done with the HTML! It's time to tackle the Javascript.   
 
-# JS Part   
+# JavaScript
+Yay! Now that we've finished writing HTML, it's time to start making it work with JavaScript.
+
 ## Setting up the Chart   
-To get started with the Chart.js library, head on over to the documentation [here](https://www.chartjs.org/docs/latest/). You'll see a starter template for us to use. Copy only the `ctx` and `myChart` variables and paste it in your Javascript file. This code creates a `Chart` object which we store in the variable `myChart`. The first argument in the constructor must be a drawing context that refers to the HTML canvas element that we want to draw to, which is the `ctx` variable. 
+To get started with the Chart.js library, head on over to the documentation [here](https://www.chartjs.org/docs/latest/). You'll see a starter template for us to use. Copy only the `ctx` and `myChart` variables. Then, navigate to the `script.js` file on the left side of your repl and paste those two variables in. This code creates a `Chart` object which we store in the variable `myChart`. The first argument in the constructor must be a drawing context that refers to the HTML canvas element that we want to draw to, which is the `ctx` variable. 
 
 Change `myChart` variable to be a `let` variable and the `ctx` to a `const` variable, since we want to avoid using `var` to declare variables because of [ES6 conventions](https://javascript.info/var). The second argument in the constructor is an object with data that specifies how our chart will look like. Because we want our graph to start off empty, do the following:    
 
@@ -138,7 +142,7 @@ let myChart = new Chart(ctx, {
     fill: false,
     borderColor: 'rgba(255, 99, 132, 1)',
     borderWidth: 1
-  }]
+  }],
   options: {
     scales: {
       yAxes: [{
@@ -194,7 +198,7 @@ const dataURL = "https://api.meteostat.net/v2/stations/daily";
 `stationURL` is the API endpoint for retrieving various weather stations in an area. `dataURL` is the API endpoint for retreiving weather data from a given weather station. An API endpoint is simply a point of entry, or URL, for the client to receive a specific request from a web API. These URLs can be found in the [documentation](https://dev.meteostat.net/api/#json-api). 
 
 ## Retrieving a Weather Station   
-It's time to implement the `getData()` function that we applied to our "Graph" button. Note: All new code segments should be placed directly after the previous code segment unless otherwise specified. Let's start by retreiving the inputs of the city, start date, and end date: 
+It's time to implement the `getData()` function that we applied to our "Graph" button. Note: All new code segments should be placed directly after the previous code segment unless otherwise specified. Let's start by retreiving the inputs of the city, start date, and end date. At the end of your `script.js` file, add:
 
 ```javascript 
 async function getData() { // Retrieve the values of city, start date, and end date from input fields. 
@@ -203,11 +207,11 @@ async function getData() { // Retrieve the values of city, start date, and end d
   const endDate = document.getElementById('endDate').value;
 }   
 ```
-We simply retrieve the values of the inputs using the `.getElementById()` method and the `.value` property. We've made this an `async` function, which means that it will always return a promise. A promise is essentially an object returned by the function to handle a `fetch()` request.     
+We simply retrieve the values of the inputs from the `index.html` file using the `.getElementById()` method and the `.value` property. We've made this an `async` function, which means that it will always return a promise. A promise is essentially an object returned by the function to handle a `fetch()` request.     
 
 For our purposes, we use it because it is always required if the `await` expression is used anywhere inside the function, which we'll use in a bit. We also make it an `async` function because then it will pause the function until a promise is returned, which we'll need when making API calls.   
 
-Read more in-depth about aync/await in javascript [here](https://javascript.info/async-await).    
+Read more in-depth about aync/await in JavaScript [here](https://javascript.info/async-await).    
 
 **Note:** According to the documentation, the start and end dates for the API requests must be entered in `YYYY-MM-DD` format. A detailed description of the API parameters and response parameters can be found [here](https://dev.meteostat.net/api/stations/daily.html#parameters). For the purposes of this workshop, we won't be going into input validation. However, we recommended that you try it as an exercise after completing this workshop!    
 
