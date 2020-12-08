@@ -288,7 +288,7 @@ function play(link) {
 }
 ```
 
-To explain what we did above, we created a function called `play()`, it receives a parameter, which is `link`. This is the link to the sound. We then create an audio object and pass `link` to the object. Now we can just load the audio with the `load()` function and play it with the `play()` function. A function is a block of code designed to perform a particular task, it is executed when "something" invokes it (calls it).
+Here we created a function called `play()`, it receives a parameter, which is `link`. This is the link to the sound. We then create an audio object and pass `link` to the object. Now we can just load the audio with the `load()` function and play it with the `play()` function. A function is a block of code designed to perform a particular task, it is executed when "something" invokes it (calls it).
 
 All we need to do now is add an on click event to each of our nested `divs`, that gets triggered when a pad is clicked, then we call the `play()` function and pass the link to the sound file as our parameter.
 
