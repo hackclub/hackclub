@@ -2,7 +2,7 @@
 name: 'Drum Pad'
 description: 'Creating a Drum Pad with HTML, CSS & JS'
 author: '@emmanuel39hanks'
-img: 'https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png'
+img: 'https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png'
 ---
 
 Ever wondered how you can play sounds with code? Well, if yes, then you will love this workshop! We will be creating a drum pad with less than 230 lines of code that plays actual sounds.
@@ -12,7 +12,7 @@ Ever wondered how you can play sounds with code? Well, if yes, then you will lov
 
 _Preview of the Drum Pad we are going to be creating_
 
-![Drum Pad Preview](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
+![Drum Pad Preview](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
 
 Apart from building the drum pad, you will also be learning about different types of events, functions, styling, and more with Vanilla JavaScript, HTML, and CSS.
 
@@ -123,7 +123,30 @@ When we run our code, you will notice that our content has been aligned to the c
 
 ![Preview of HTML with CSS applied, to change the layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
 
-We can change the header's font size, color, and letter spacing using the following code:
+We're going to be use classes to add styling to our `div` tags, and to use classes we have the HTML attribute `class=""`.
+
+Let's navigate back to our `index.html`, our parent `<div>` tag will be given the class name `pad` and our nested `<div>` tags, the class name `box` which will apply our classes styling to our HTML tags.
+
+```html
+<!-- Here we give the parent div the class name pad -->
+<div  class="pad">
+<!-- Here we give the nested divs each the class name box that will add styling of each individual pad -->
+  <div class="box">A</div>
+  <div class="box">B</div>
+  <div class="box">C</div>
+  <div class="box">D</div>
+  <div class="box">E</div
+  <div class="box">F</div>
+  <div class="box">G</div>
+  <div class="box">H</div>
+  <div class="box">I</div>
+  <div class="box">J</div>
+  <div class="box">K</div>
+  <div class="box">L</div>
+</div>
+```
+
+Now navigate your `style.css`, and we will change the header's font size, color, and letter spacing using the following code:
 
 ```css
 h1 {
@@ -179,35 +202,11 @@ We will change each of our button's properties, and we will do that with the cla
 }
 ```
 
-If you run your code, you'll see that nothing has changed. That's because we are using classes. We will solve this by using the HTML attribute `class=""` to add classes to our `div` tags.
-
-Let's navigate back to our `index.html`, our parent `<div>` tag will be given the class name `pad` and our nested `<div>` tags, the class name `box` which will apply the code that we wrote in our CSS file.
-
-```html
-<!-- Here we give the parent div the class name pad -->
-<div  class="pad">
-
-<!-- Here we give the nested divs each the class name box that will add styling of each individual pad -->
-  <div class="box">A</div>
-  <div class="box">B</div>
-  <div class="box">C</div>
-  <div class="box">D</div>
-  <div class="box">E</div
-  <div class="box">F</div>
-  <div class="box">G</div>
-  <div class="box">H</div>
-  <div class="box">I</div>
-  <div class="box">J</div>
-  <div class="box">K</div>
-  <div class="box">L</div>
-</div>
-```
-
 And when we rerun our code, it should look like this:
 
-![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
+![Preview of HTML with layout CSS applied, the pads are in a grid and all gray borders](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
 
-We will then add code that adds hovering effects, inactive or active states to our pads:
+We will then add code that adds hovering effects, inactive or active states to our buttons:
 
 ```css
 /* To learn more about the lighten function and :hover pseudo class, check out the hacking section */
@@ -231,9 +230,7 @@ We will then add code that adds hovering effects, inactive or active states to o
 }
 ```
 
-Now that we have finished our styling, here's what your drum pad should look like:
-
-![Preview of HTML with finished layout CSS applied, and our pad borders colored](https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png)
+Now that we have finished our styling, let's now work our drum pad functionality.
 
 ## JavaScript:
 
@@ -257,7 +254,7 @@ function play(link) {
 
 Here we created a function called `play()`, it receives a parameter, which is `link`. This is the link to the sound. We then create an audio object and pass `link` to the object. Now we can just load the audio with the `load()` function and play it with the `play()` function. A function is a block of code designed to perform a particular task, it is executed when "something" invokes it (calls it).
 
-All we need to do now is add an on click event to each of our nested `divs`, that gets triggered when a pad is clicked, then we call the `play()` function and pass the link to the sound file as our parameter.
+All we need to do now is find a way to play sound when a button is clicked.
 
 Navigate to your `index.html` file, we want the sound to play when each button is click, we will need a way to call our `play()` function. We will use an HTML attribute called `onclick=""`, learn more about the onclick event here: [onclick events](https://www.w3schools.com/jsref/event_onclick.asp), it helps us call a function when a tag with the attribute is clicked on, and inside the quotation marks, we pass the `play()` function and pass a link as the parameter to the function. And when a pad is clicked, it will get triggered and call the `play()` function and play the sound from that link:
 
