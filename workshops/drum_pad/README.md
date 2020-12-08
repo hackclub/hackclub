@@ -7,11 +7,7 @@ img: 'https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-rep
 
 Ever wondered how you can play sounds with code? Well, if yes, then you will love this workshop! We will be creating a drum pad with less than 230 lines of code that plays actual sounds.
 
-<p align='center'>
-<img src="https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif" alt="ready-to-code" >
-</p>
-
-
+![Am ready GIF](https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif)
 # Overview
 
 _Preview of the Drum Pad we are going to be creating_
@@ -21,7 +17,6 @@ _Preview of the Drum Pad we are going to be creating_
 Apart from building the drum pad, you will also be learning about different types of events, functions, styling, and more with Vanilla JavaScript, HTML, and CSS.
 
 Final Code: [GitHub](https://github.com/emmanuel39hanks/beat_maker)
-
 Demo: [Live](https://drum.emmanuel39hanks.repl.co)
 
 ## Getting started
@@ -313,7 +308,7 @@ Let's navigate to our `index.html` file first, so we want the sound to play when
 
 If you run your code now, you should see a working drum pad!
 
-![Image](https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif)
+![We did it GIF](https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif)
 
 ## Hacking
 
