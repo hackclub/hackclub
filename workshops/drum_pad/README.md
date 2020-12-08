@@ -5,7 +5,7 @@ author: '@emmanuel39hanks'
 img: 'https://cloud-ms6ubs6qu.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_20_37.png'
 ---
 
-Ever wondered how you can play sounds with code? Well, if yes, then you will love this workshop! We will be creating a drum pad in less than 230 lines of code that plays actual sounds, and if you are a beginner, this won't only be fun and creative but will help you get comfortable with coding!
+Ever wondered how you can play sounds with code? Well, if yes, then you will love this workshop! We will be creating a drum pad with less than 230 lines of code that plays actual sounds.
 
 <p align='center'>
 <img src="https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif" alt="ready-to-code" >
