@@ -89,7 +89,7 @@ To quickly break this down. We have a parent `<div>` tag that nests our button `
 ```
 </details>
 
-And if we run our code, it should look like this:
+When we run our code, it will look like this at the moment:
 
 ![Preview of HTML with no CSS](https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
 
