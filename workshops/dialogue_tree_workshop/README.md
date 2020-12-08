@@ -1,1 +1,143 @@
-hi
+---
+name: 'Dialogue Tree'
+description: 'Create your own dialogue tree system!'
+author: '@JakeGerber'
+image: 'https://cloud-74lq7ehps.vercel.app/0screenshot__1426_.png'
+---
+
+# Create a Scalable Snowman!
+
+<img src="https://cloud-74lq7ehps.vercel.app/0screenshot__1426_.png" width="900" alt="Dialogue Tree Example">
+
+<img src="https://cloud-8uexi5mju.vercel.app/01200px-dialog_tree_example.svg.png" width="900" alt="Dialogue Tree Visualization Example">
+
+<img src="https://media3.giphy.com/media/3og0IOH10QFIdLBpZK/200.gif" width="380" alt="Knight Talking Gif">
+
+# Repl.it Setup
+Let's begin!
+
+We're going to use [Repl.it](https://repl.it/~) to create the project. It is an IDE which allows us to write our code online. No downloads necessary.
+
+Create a new repl and use C# as the language.
+
+<img src="https://cloud-n5g94sz4o.vercel.app/0screenshot__1427_.png" width="600" alt="C# Repl">
+
+# Choice Class
+Let's create a "Choice" class. These objects will represent each of our choices, and we will link them together in order to create our dialogue tree.
+## Initial Variables
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+class MainClass {
+  static void Main(string[] args)
+  {
+  }
+}
+
+public class Choice
+{
+    public string answer;
+    public List<Choice> choices;
+    public List<string> connectionStrings;
+}
+```
+- Add the using statements at the top.
+- Add the "Choice" class under the main class. 
+- Each "Choice" object to have a "answer" string that will be displayed when they are gone to on the dialogue tree.
+- Each "Choice" object will also have a list of other connecting choices and a list of strings that will be displayed when the respective choice is chosen.
+- Don't worry if this seems confusing! It will make more sense later on.
+
+## Constructor
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+class MainClass {
+  static void Main(string[] args)
+  {
+  }
+}
+
+public class Choice
+{
+    public string answer;
+    public List<Choice> choices;
+    public List<string> connectionStrings;
+    public Choice(string answer)
+    {
+        this.answer = answer;
+        choices = new List<Choice>();
+        connectionStrings = new List<string>();
+    }
+}
+```
+- This constructor takes in an "answer" string and initializes the other variables.
+
+# Connect Function
+Let's create a function that connects two choices and gives them a connection string.
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+class MainClass {
+  static void Main(string[] args)
+  {
+  }
+  public static bool Connect(Choice c1, Choice c2, string connection) 
+  {
+      if (c1.choices.Contains(c2))
+      {
+          return false;
+      }
+
+      c1.choices.Add(c2);
+      c1.connectionStrings.Add(connection);
+      return true;
+  }
+#Our "Choice" class would be under this class.
+```
+- This function goes in the main class but after the main function.
+- This function takes in two choices and a connecting string.
+- If there is no connection between the choices, a connection is created by adding the second choice and connection string to the first choice's lists.
+
+# Creating the Connections
+Let's fully create our dialogue tree in the main function before working further. This can be changed later, added to, and expanded upon, but let's set some blueprints down now.
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+class MainClass {
+  static void Main(string[] args)
+  {
+    Choice choice1 = new Choice("You wonder into a cave.");
+    Choice choice2 = new Choice("You go further in.");
+    Choice choice3 = new Choice("You exit the cave and walk away.");
+
+    Connect(choice1, choice2, "Explore.");
+    Connect(choice1, choice3, "Leave.");
+
+    Choice choice4 = new Choice("There is ancient text written on the wall!");
+    Choice choice5 = new Choice("The ground is full of bugs!");
+    Choice choice6 = new Choice("The spider scares you!");
+
+    Connect(choice2, choice4, "You take out your flashlight.");
+    Connect(choice2, choice5, "You look at the ground.");
+    Connect(choice2, choice6, "You notice the spider.");
+
+
+    Connect(choice4, choice3, "You will find the enterence with your flashlight.");
+    Connect(choice5, choice3, "You will run back to the enterence.");
+    Connect(choice6, choice3, "You will stumble across the enterence.");
+    }
+}
+```
+Copy this code into your main function. It creates choices and connects them together.
+
+# Going Through the Dialogue Tree
+at the while statement part.
+
