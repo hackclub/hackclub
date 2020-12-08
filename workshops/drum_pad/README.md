@@ -22,7 +22,7 @@ Demo: [Live](https://drum.emmanuel39hanks.repl.co)
 ## Getting started
 
 Let's start by setting up our coding environment using [repl.it](https://repl.it/), a free, online code editor.
-To start your coding right away, navigate to [repl.it](https://repl.it/languages/html), and you will have your whole setup ready when you sign up.
+To begin, navigate to [repl.it](https://repl.it/languages/html), and create a new repl.
 
 You will see that there are already three files: index.html, style.css, and script.js. Navigate to your `index.html` file, and we will work on the structure of our drum pad there. 
 
