@@ -7,6 +7,8 @@ image: 'https://cloud-74lq7ehps.vercel.app/0screenshot__1426_.png'
 
 # Create a Dialogue Tree!
 
+In this workshop, we will be creating a dialogue tree system with C#.
+
 <img src="https://cloud-74lq7ehps.vercel.app/0screenshot__1426_.png" width="900" alt="Dialogue Tree Example">
 
 <img src="https://cloud-8uexi5mju.vercel.app/01200px-dialog_tree_example.svg.png" width="900" alt="Dialogue Tree Visualization Example">
