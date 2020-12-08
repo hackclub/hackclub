@@ -2,7 +2,7 @@
 name: Automating your Slack Profile Picture
 description: Make a program that changes your Slack profile picture based on the time of day.
 author: '@sampoder'
-image: 'https://cloud-45zk83i41.vercel.app/0screenshot_2020-11-22_at_3.27.11_pm.png'
+img: 'https://cloud-6yjkou2ru.vercel.app/0screen_shot_2020-12-08_at_9.38.36_am.png'
 ---
 
 # Automating your Slack Profile Picture
