@@ -5,7 +5,7 @@ author: '@JakeGerber'
 image: 'https://cloud-74lq7ehps.vercel.app/0screenshot__1426_.png'
 ---
 
-# Create a Scalable Snowman!
+# Create a Dialogue Tree!
 
 <img src="https://cloud-74lq7ehps.vercel.app/0screenshot__1426_.png" width="900" alt="Dialogue Tree Example">
 
