@@ -96,7 +96,7 @@ When we run our code, it will look like this at the moment:
 
 We will style our drum pad with CSS, which will make our drum pad look visually appealing.
 
-Navigate to your `style.css` file and add the following code:
+Let's navigate to our `style.css` file and add the following code:
 
 ```css
 body {
@@ -122,7 +122,7 @@ When we run our code, you will notice that our content has been aligned to the c
 
 ![Preview of HTML with CSS applied, to change the layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
 
-We're going to be use classes to add styling to our `div` tags, and to use classes we have the HTML attribute `class=""`.
+We're going to be using classes to add styling to our `div` tags, a class name is an HTML attribute that specifies a tag. Classes are used by CSS and JavaScript to select and access specific tags, the class attribute can be used on any HTML tag by adding the keyword `class=""` to it.
 
 Let's navigate back to our `index.html`, our parent `<div>` tag will be given the class name `pad` and our nested `<div>` tags, the class name `box` which will apply our classes styling to our HTML tags.
 
@@ -134,7 +134,7 @@ Let's navigate back to our `index.html`, our parent `<div>` tag will be given th
   <div class="box">B</div>
   <div class="box">C</div>
   <div class="box">D</div>
-  <div class="box">E</div
+  <div class="box">E</div>
   <div class="box">F</div>
   <div class="box">G</div>
   <div class="box">H</div>
@@ -145,7 +145,7 @@ Let's navigate back to our `index.html`, our parent `<div>` tag will be given th
 </div>
 ```
 
-Now navigate your `style.css`, and we will change the header's font size, color, and letter spacing using the following code:
+Now navigate to your `style.css`, and we will change our header's font size, color, and letter spacing using the following code:
 
 ```css
 h1 {
@@ -174,7 +174,7 @@ Then create three rows and four columns to correctly align the buttons and give 
 }
 ```
 
-We will change each of our button's properties, with the class name `.box`, to give them unique styling.
+We will write styling for our class name `.box`, that will specify unique styling for our buttons.
 
 ```css
 .box {
@@ -201,11 +201,11 @@ We will change each of our button's properties, with the class name `.box`, to g
 }
 ```
 
-And when we rerun our code, it should look like this:
+And when we run our code again, it should look like this:
 
 ![Preview of HTML with layout CSS applied, the pads are in a grid and all gray borders](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
 
-We will then add code that adds hovering effects, inactive or active states to our buttons:
+We will then add styling that adds hovering effects, inactive or active states to our buttons:
 
 ```css
 /* To learn more about the lighten function and :hover pseudo class, check out the hacking section */
@@ -229,7 +229,7 @@ We will then add code that adds hovering effects, inactive or active states to o
 }
 ```
 
-Now that we have finished our styling, let's now work our drum pad functionality.
+Now that we have finished our styling, let's now work on our drum pad functionality.
 
 ## JavaScript:
 
@@ -251,11 +251,11 @@ function play(link) {
 }
 ```
 
-Here we created a function called `play()`, it receives a parameter, which is `link`. This is the link to the sound. We then create an audio object and pass `link` to the object. Now we can just load the audio with the `load()` function and play it with the `play()` function. A function is a block of code designed to perform a particular task, it is executed when "something" invokes it (calls it).
+Here we created a function called `play()`, it receives a parameter, which is `link`. This is the link to the sound. We then create an audio object and pass the link to the object. Now we can just load the audio with the `load()` function and with the `play()` function we can play our sound. A function is a block of code designed to perform a particular task, it is executed when "something" invokes it (calls it).
 
 All we need to do now is find a way to play sound when a button is clicked.
 
-Navigate to your `index.html` file, we want the sound to play when each button is click, we will need a way to call our `play()` function. We will use an HTML attribute called `onclick=""`, learn more about the onclick event here: [onclick events](https://www.w3schools.com/jsref/event_onclick.asp), it helps us call a function when a tag with the attribute is clicked on, and inside the quotation marks, we pass the `play()` function and pass a link as the parameter to the function. And when a pad is clicked, it will get triggered and call the `play()` function and play the sound from that link:
+Navigate to your `index.html` file, we want a sound to play when a button is click, we will need a way to call our `play()` function. We will use an HTML attribute called `onclick=""`, learn more about the onclick event here: [onclick events](https://www.w3schools.com/jsref/event_onclick.asp), it helps us call a function when a tag with the attribute is clicked on, inside the quotation marks, we pass the `play()` function and pass a link as the parameter to the function. And when a button is clicked, it will get triggered and call the `play()` function and play the sound from that link:
 
 ```html
 <div class="pad">
