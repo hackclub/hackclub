@@ -16,7 +16,7 @@ _Preview of the Drum Pad we are going to be creating_
 
 Apart from building the drum pad, you will also be learning about different types of events, functions, styling, and more with Vanilla JavaScript, HTML, and CSS.
 
-Final Code: [GitHub](https://github.com/emmanuel39hanks/beat_maker) | Demo: [Live](https://drum.emmanuel39hanks.repl.co)
+Final Code: [GitHub](https://github.com/emmanuel39hanks/beat_maker), Demo: [Live](https://drum.emmanuel39hanks.repl.co)
 
 ## Getting started
 
