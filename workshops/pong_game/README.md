@@ -1,25 +1,22 @@
 ---
-name: 'Pong Game'
-description: 'Classic Pong Game with Python'
+name: 'Pong'
+description: 'Classic Pong with Python'
 author: '@YashKalbande'
 img: 'https://cloud-awrat6ufv.vercel.app/0pong_game.gif'
 ---
 
 
-# Pong Game
+# Pong
 
-**Pong Game** is one of the first computer games that was created in the world. Pong is a simple yet compelling **tennis** game. It features **two paddles** and a **ball**. The goal is to defeat your opponent. In this workshop, you'll learn how to build your own  **two-player** `Pong Game`. In this workshop, we are going to use libraries like `freegames`, `random`, and `turtle`. 
-# Demo
+**Pong** is one of the first computer games that was created in the world. Pong is a simple yet compelling **tennis** game. It features **two paddles** and a **ball**. The goal is to defeat your opponent. In this workshop, you'll learn how to build your own  **two-player** `Pong Game`. In this workshop, we are going to use libraries like `freegames`, `random`, and `turtle`. 
 
-Here's a [**demo**](https://repl.it/@YashKalbande/ponggame) of what we'll be making. You can see both the final code and test it out on this Repl environment.
+Here's a [**demo**](https://repl.it/@YashKalbande/ponggame) of what we'll be making. You can see both the final code and test it out on this Repl environment. Left side player can control paddle with **w** to move upward and **s** to move paddle downward. Right side player can control paddle with **i** to move upward and **k** to move downward.
 
-![pong game demo](https://cloud-awrat6ufv.vercel.app/0pong_game.gif)
+![pong demo](https://cloud-awrat6ufv.vercel.app/0pong_game.gif)
 
 # Table of contents
 
-- [Pong Game](#pong-game)
-- [Demo](#demo)
-- [Table of Contents](#table-of-contents)
+- [Pong](#pong)
 - [Setup](#setup)
 - [Building The Game](#building-the-game)
     - [1. Generate Random Values](#1-generate-random-values)
@@ -30,7 +27,7 @@ Here's a [**demo**](https://repl.it/@YashKalbande/ponggame) of what we'll be mak
     - [6. The Final Touch!](#6-the-final-touch!) 
 - [Future Hacking](#future-hacking)
 
-# Setup
+## Setup
 
 ### Setting up our Coding Environment
 ![gif of human coding](https://cloud-awrat6ufv.vercel.app/1coding.gif)
@@ -51,7 +48,7 @@ from freegames import vector
   * Import `all` the functions from the `turtle` library. Learn more about the Turtle library [here](https://docs.python.org/3/library/turtle.html). It is a way to implement graphics in Python projects.
   * Get the [`vector`](http://www.grantjenks.com/docs/freegames/api.html#freegames.vector) functions from the `freegames` library. The [freegames library](http://www.grantjenks.com/docs/freegames/index.html) is a basic module with built-in functions that do standard game tasks like moving around and setting a playing field.
 
-# Building The Game
+## Building The Game
 
 ### 1. Generate Random Values
 ```python
@@ -62,7 +59,8 @@ def value():
 
 ### 2. Declare Global Variables
 
-Let's start declaring our global variable, we will start with `ball`:
+We are going to use **ball**, **aim** and **state** as our global variables. So let's begain declaring them :
+
 ```python
 ball = vector(0, 0)
 ```
@@ -86,6 +84,8 @@ def move(player, change):
     state[player] += change
 ```
 ### 4. Drawing our Paddle
+
+![gif showing how paddles will move](https://cloud-p058qpypc.vercel.app/0motion_of_paddle.gif)
 
 The turtle will be used to create a paddle. It is quite easy and fast to make closed graphical objects in python by using turtle. To create a paddle or simply rectangle follow the code:
 
@@ -185,7 +185,7 @@ draw()
 done()
 ```
 
-**Congrats! You've just made your own Pong game! 🎉**
+**Congrats! You've just made your own Pong! 🎉**
 
 ![applause gif](https://cloud-460srrq0c.vercel.app/0applause.gif)
 
