@@ -101,6 +101,7 @@ class MainClass {
       c1.connectionStrings.Add(connection);
       return true;
   }
+}
 #Our "Choice" class would be under this class.
 ```
 - This function goes in the main class but after the main function.
