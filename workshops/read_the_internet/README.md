@@ -13,11 +13,11 @@ We can read all the content on websites, but wouldn't it be cool if we could aut
 [Live Result](https://Read-The-Internet.savagecoder77.repl.run)
 
 ## Prerequisites
-You should have a basic understanding of **HTML** and **Python** or how to use variables and objects.
+You should have a basic understanding of **HTML** and **Python** and how to use variables and objects.
 
-## Let's do some setup
+## Setup
 ![Lets start gif](https://cloud-p23nck0rj.vercel.app/1lets-start.gif)
-We will be using [repl.it](https://repl.it) an online code editor. This allows you to write and use this code from any computer!
+We will be using [repl.it](https://repl.it), an online code editor that allows you to write and run code from any computer!
 
 We will start by creating a Python 3 repl (You can easily create one by clicking this link https://repl.it/languages/python3).
 
@@ -25,7 +25,7 @@ We now need to install a couple of external libraries. Follow the image below to
 ![Repl.it packages menu](https://cloud-p5pdve0kf.vercel.app/0ezgif.com-video-to-gif.gif)
 
 
-#### A short description on the packages
+#### About the packages
 `lxml` is a C package used by beautiful soup that parses the HTML, `beautifulsoup4` is for working with the parsed HTML, and last `requests` is for requesting the webpage/html.
 
 ## Lets start coding!
