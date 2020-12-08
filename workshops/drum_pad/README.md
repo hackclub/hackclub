@@ -123,7 +123,7 @@ When we run our code, you will notice that our content has been aligned to the c
 
 ![Preview of HTML with CSS applied, to change the layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
 
-We want to style the header's font size, color, and letter spacing.
+We can change the header's font size, color, and letter spacing using the following code:
 
 ```css
 h1 {
