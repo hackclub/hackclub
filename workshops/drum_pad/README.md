@@ -39,7 +39,6 @@ Just under the `<h1>` tag, we will have three rows and four columns of buttons. 
 ```html
 <!-- Parent div -->
 <div>
-
 <!-- nested child divs -->
   <div>A</div>
   <div>B</div>
