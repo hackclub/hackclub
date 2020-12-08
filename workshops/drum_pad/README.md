@@ -124,7 +124,7 @@ When we run our code, you will notice that our content has been aligned to the c
 
 We're going to be using classes to add styling to our `div` tags, a class name is an HTML attribute that specifies a tag. Classes are used by CSS and JavaScript to select and access specific tags, the class attribute can be used on any HTML tag by adding the keyword `class=""` to it.
 
-Let's navigate back to our `index.html`, our parent `<div>` tag will be given the class name `pad` and our nested `<div>` tags, the class name `box` which will apply our classes styling to our HTML tags.
+Let's navigate back to our `index.html`, the parent `<div>` tag will be given the class name `pad` and our nested `<div>` tags, the class name `box` which will apply the styling our classes have.
 
 ```html
 <!-- Here we give the parent div the class name pad -->
