@@ -55,7 +55,7 @@ Just under the `<h1>` tag, we will have three rows and four columns of buttons. 
 </div>
 ```
 
-To quickly break this down. We have a parent `<div>` tag that nests our button `divs`, and we label our buttons with letters to easily identify each buttons and like I mentioned above, each button will be given a box look, and that's why we are using `div` tags.
+To quickly break this down. We have a parent `<div>` tag that nests our button `divs`, and we label our buttons with letters to easily identify them, and like I mentioned above, each button will be given a boxy look, and that's why we are using `div` tags.
 
 <details>  
 <summary>Here's what your entire index.html file should look like so far:</summary>
@@ -175,7 +175,7 @@ Then create three rows and four columns to correctly align the buttons and give 
 }
 ```
 
-We will change each of our button's properties, and we will do that with the class name `.box`, to give them unique styling.
+We will change each of our button's properties, with the class name `.box`, to give them unique styling.
 
 ```css
 .box {
@@ -270,8 +270,8 @@ Navigate to your `index.html` file, we want the sound to play when each button i
   <div class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CH.mp3')">H</div>
   <div class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CB.mp3')">I</div>
   <div class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/BD0010.mp3')">J</div>
-  <div class="box"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/BD0000.mp3')">K</div>
-  <div class="box"  onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CP.mp3')">L</div>
+  <div class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/BD0000.mp3')">K</div>
+  <div class="box" onclick="play('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CP.mp3')">L</div>
 </div>
 ```
 
@@ -305,7 +305,6 @@ Now that you have finished building, you can share your beautiful creation with 
 - [CSS box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
 - [CSS align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
 - [CSS font-family](https://www.w3schools.com/css/css_font.asp)
-
 
 Now it's up to you! Do anything with this project, go on and implement something crazy. 
 
