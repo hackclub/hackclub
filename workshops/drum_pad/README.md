@@ -28,7 +28,7 @@ You will see that there are already three files: index.html, style.css, and scri
 
 ## HTML:
 
-Inside the `<body>` tag is where we will write most of our HTML code, we will start by creating a header that displays the text `DRUM PAD`, and we will do that with the `<h1>` tag:
+We will write most of our HTML code inside the `<body>` tag. Let's start by creating a header that displays the text `DRUM PAD` using the `<h1>` tag:
 
 ```html
 <h1>DRUM PAD</h1>
