@@ -347,7 +347,7 @@ Now that you have finished building, you share your beautiful creation with othe
 
 Now it's up to you! Do anything with this project, go on and implement something crazy. 
 
-To finish, here are some branches that build upon this project:
+To finish, here are some examples of what can be built on top of this project:
 
 - **Play an automated beat track:** [demo and code](https://repl.it/@emmanuel39hanks/drumpadwithabeattrack)
 - **Play the drum pad with your keyboard:** [demo and code](https://repl.it/@emmanuel39hanks/drumpadwithkeyboard)
