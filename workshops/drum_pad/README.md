@@ -180,7 +180,7 @@ We will change each of our button's properties, and we will do that with the cla
 }
 ```
 
-If you run your code, nothing has changed. That's because we are using classes. We will solve this by using the HTML attribute `class=""` to add classes to our `div` tags.
+If you run your code, you'll see that nothing has changed. That's because we are using classes. We will solve this by using the HTML attribute `class=""` to add classes to our `div` tags.
 
 Let's navigate back to our `index.html`, our parent `<div>` will be given the class name `pad` and our nested `<div>` tags, the class name `box` which will apply the code that we wrote in our CSS file.
 
