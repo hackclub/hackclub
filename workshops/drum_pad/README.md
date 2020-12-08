@@ -34,7 +34,7 @@ We will write most of our HTML code inside the `<body>` tag. Let's start by crea
 <h1>DRUM PAD</h1>
 ```
 
-Just under the `<h1>` tag, we will have three rows and four columns of pads. Each pad will be created with the `<div>` tag. You can think of the `<div>` tag as a box or container, and we are using it because each of our pads will have a boxy look.
+Just under the `<h1>` tag, we will have three rows and four columns of buttons. Each buttons will be created with the `<div>` tag. You can think of the `<div>` tag as a box or container, and we are using it because each of our buttons will have a boxy look.
 
 ```html
 <!-- Parent div -->
@@ -56,7 +56,7 @@ Just under the `<h1>` tag, we will have three rows and four columns of pads. Eac
 </div>
 ```
 
-To quickly break this down. We have a parent `<div>` tag that nests our pad  `divs`, and inside our pad `divs` we put letters to easily identify each pad and like I mentioned above, each pad will be given a box look, and that's why we are using `div` tags.
+To quickly break this down. We have a parent `<div>` tag that nests our button `divs`, and we label our buttons with letters to easily identify each buttons and like I mentioned above, each button will be given a box look, and that's why we are using `div` tags.
 
 <details>  
 <summary>Here's what your entire index.html file should look like so far:</summary>
@@ -98,16 +98,6 @@ And if we run our code, it should look like this:
 
 We will write CSS to add styling, which will make our drum pad look appealing Let's do that!
 
-Just before the end of your `<head>` tag, link your CSS file:
-
-```html
-<link rel="stylesheet" href="style.css"/>
-```
-
-Your CSS file should be linked, and we can begin writing our CSS code.
-
-We will be writing code to change the colors, adding fonts, height, width, and more.
-
 Navigate to your `style.css` file and add the following code:
 
 ```css
@@ -148,7 +138,7 @@ h1 {
 }
 ```
 
-Then create three rows and four columns to correctly align the pads and give them a box or container look.
+Then create three rows and four columns to correctly align the buttons and give them a box or container look.
 
 ```css
 .pad {
@@ -163,16 +153,14 @@ Then create three rows and four columns to correctly align the pads and give the
 }
 ```
 
-We will change each of our pad's properties, and we will do that with the class name `.box`, to give them unique styling.
+We will change each of our button's properties, and we will do that with the class name `.box`, to give them unique styling.
 
 ```css
-
 .box {
   width: 100px;
   height: 100px;
   margin: 10px  0;
 
-  
   /* To learn more about the box-shadow property, check out the hacking section */
   box-shadow: 0  8px  6px  -6px  black;
   background-color: #444;
@@ -187,9 +175,6 @@ We will change each of our pad's properties, and we will do that with the class 
   
   /* To learn more about the rgba function, check out the hacking section */
   color: rgba(255, 255, 255, 0.4);
-
-  /* To learn more about the user-select property, check out the hacking section */
-  user-select: none;
 
   /* To learn more about the border-radius property, check out the hacking section */
   border: 4px solid;
@@ -223,17 +208,6 @@ Let's navigate back to our `index.html`, our parent `<div>` will be given the cl
 And when we rerun our code, it should look like this:
 
 ![Preview of HTML with layout CSS applied, the pads are in a grid but all gray](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
-
-We will go where we wrote styling for our `.box` class, and we will add styling that will give our pads a rounded border with a pinkish color.
-
-```css
-.box {
-  border: 4px solid #E5446D;
-
-  /* To learn more about the border-radius property, check out the hacking section */
-  border-radius: 15px;
-}
-```
 
 We will then add code that adds hovering effects, inactive or active states to our pads:
 
@@ -332,9 +306,7 @@ Now that you have finished building, you can share your beautiful creation with 
 - [CSS cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
 - [CSS lighten & darken function](https://css-tricks.com/snippets/javascript/lighten-darken-color/)
 - [CSS border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
-- [CSS border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
 - [CSS rgba function](https://www.w3schools.com/cssref/func_rgba.asp)
-- [CSS user-select](https://www.w3schools.com/cssref/css3_pr_user-select.asp)
 - [CSS box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
 - [CSS align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
 - [CSS font-family](https://www.w3schools.com/css/css_font.asp)
