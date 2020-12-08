@@ -259,7 +259,7 @@ Here we created a function called `play()`, it receives a parameter, which is `l
 
 All we need to do now is add an on click event to each of our nested `divs`, that gets triggered when a pad is clicked, then we call the `play()` function and pass the link to the sound file as our parameter.
 
-Navigate to your `index.html` file, we want the sound to play when each button is click, we will need a way to call our `play()` function. We will use an HTML attribute called `onclick=""`, learn more about the onclick event here: [onclick events](https://www.w3schools.com/jsref/event_onclick.asp), it helps us call a function when a tag with the attribute is clicked on, and inside the quotation marks, we pass the `play()` function and pass a link as the parameter to the function. And when a pad is clicked, it will get triggered and call the `play()` function and play the sound from the that link:
+Navigate to your `index.html` file, we want the sound to play when each button is click, we will need a way to call our `play()` function. We will use an HTML attribute called `onclick=""`, learn more about the onclick event here: [onclick events](https://www.w3schools.com/jsref/event_onclick.asp), it helps us call a function when a tag with the attribute is clicked on, and inside the quotation marks, we pass the `play()` function and pass a link as the parameter to the function. And when a pad is clicked, it will get triggered and call the `play()` function and play the sound from that link:
 
 ```html
 <div  class="pad">
