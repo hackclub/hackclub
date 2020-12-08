@@ -159,7 +159,7 @@ h1 {
 }
 ```
 
-Then create three rows and four columns to correctly align the buttons and give them a box or container look.
+Then we create three rows and four columns to correctly align our header and buttons.
 
 ```css
 .pad {
