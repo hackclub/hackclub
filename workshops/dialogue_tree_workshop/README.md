@@ -23,7 +23,7 @@ Create a new repl and use C# as the language.
 <img src="https://cloud-n5g94sz4o.vercel.app/0screenshot__1427_.png" width="600" alt="C# Repl">
 
 # Choice Class
-Let's create a "Choice" class. These objects will represent each of our choices, and we will link them together in order to create our dialogue tree.
+Let's create a "Choice" [class](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/classes). These objects will represent each of our choices, and we will link them together in order to create our dialogue tree.
 
 <img src="https://media3.giphy.com/media/3og0Iwmv38WmJBrYvS/200.gif" width="380" alt="Cookie Monster Gif">
 
@@ -77,7 +77,7 @@ public class Choice
     }
 }
 ```
-This constructor takes in an "answer" string and initializes the variables.
+This [constructor](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors) takes in an "answer" string and initializes the variables.
 
 # Connect Function
 Let's create a function that connects two choices and gives them a connection string.
