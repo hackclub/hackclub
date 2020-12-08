@@ -95,7 +95,7 @@ When we run our code, it will look like this at the moment:
 
 # CSS:
 
-We will write CSS to add styling, which will make our drum pad look appealing Let's do that!
+We will style our drum pad with CSS, which will make our drum pad look visually appealing.
 
 Navigate to your `style.css` file and add the following code:
 
