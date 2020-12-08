@@ -79,7 +79,7 @@ A HTML table can be seen as a 2 dimensional array or list. The table contains ro
 
 ### Python time!
 We begin by using beautiful soup to find a HTML table element. We want to find a specific table by id `sortable_table_world` as seen in the picture. The code below finds the first table that matches that id by using the `find` function and specifying the id as an attribute. The `attrs` is an optional argument and is a dictionary that can be set to any id, class, or HTML identifier.
-![nCovid table open with inspect element](https://cloud-p5pdve0kf.vercel.app/1inspect_element.png)
+![nCOVID table open with inspect element](https://cloud-p5pdve0kf.vercel.app/1inspect_element.png)
 ```python
 # get world data table
 table = soup.find('table', attrs={'id':'sortable_table_world'})
@@ -134,7 +134,7 @@ for row in tableRows[1:]:
         print(f'Critical Cases: {columns[5].text.strip()}\n')
 ```
 
-### Thats it! You can now get live covid data but more importantly you are now primed with knowledge to webscrape anything!
+### Thats it! You can now get live COVID19 data but more importantly you are now primed with knowledge to webscrape anything!
 ![Sponge bob done gif](https://cloud-5bmb4t5tp.vercel.app/0completed.gif)
 You can check out more advanced/in depth projects here. In this project you will be shown how to use selenium to webscrape that will allow you to webscrape pages like amazon or google that use ajax to load as you scroll (https://www.analyticsvidhya.com/blog/2020/08/web-scraping-selenium-with-python/). Check out this workshop by realpython that goes more in depth and links to other resources that can allow you to webscrape more complicated websites (https://realpython.com/beautiful-soup-web-scraper-python/).
 
