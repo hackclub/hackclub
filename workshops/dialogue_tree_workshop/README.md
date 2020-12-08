@@ -24,6 +24,9 @@ Create a new repl and use C# as the language.
 
 # Choice Class
 Let's create a "Choice" class. These objects will represent each of our choices, and we will link them together in order to create our dialogue tree.
+
+<img src="https://media3.giphy.com/media/3og0Iwmv38WmJBrYvS/200.gif" width="380" alt="Cookie Monster Gif">
+
 ## Initial Variables
 ```csharp
 using System;
@@ -74,7 +77,7 @@ public class Choice
     }
 }
 ```
-- This constructor takes in an "answer" string and initializes the other variables.
+This constructor takes in an "answer" string and initializes the variables.
 
 # Connect Function
 Let's create a function that connects two choices and gives them a connection string.
@@ -106,6 +109,9 @@ class MainClass {
 
 # Creating the Connections
 Let's fully create our dialogue tree in the main function before working further. This can be changed later, added to, and expanded upon, but let's set some blueprints down now.
+
+<img src="https://i.makeagif.com/media/5-07-2014/7hQjSl.gif" width="380" alt="Patrick Gif">
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -173,6 +179,9 @@ class MainClass {
 - The "head" variable allows us to keep track of where we are in the tree.
 
 # User Input
+
+<img src="https://i.pinimg.com/originals/2c/dd/d1/2cddd1796354e90f4aab7fb1e48eafb4.gif" width="380" alt="Computer Gif">
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -222,6 +231,9 @@ Right under what we just wrote, we are adding a while loop that we break out of 
 
 # Final Code
 Here is everything that we wrote!
+
+<img src="https://24.media.tumblr.com/tumblr_m72q5gpfZ91rps25mo1_500.gif" width="380" alt="Snoopy Gif">
+
 ```csharp
 using System;
 using System.Collections.Generic;
