@@ -270,7 +270,7 @@ Now that we have finished our styling, here's what your drum pad should look lik
 
 ## JavaScript:
 
-When you click on the buttons, we have no sound. We need to write our JavaScript code that will get us sound.
+When you click on the buttons, we have no sound. We need to write some JavaScript code that will play sounds.
 
 Let's navigate to our the `index.html` file to link the JavaScript file. Then, inside the `<body>` tag at the bottom, we will link our `script.js` file with the following code:
 
