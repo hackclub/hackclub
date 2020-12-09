@@ -1,90 +1,189 @@
-La mayoría de los programas actuales utilizan reconocedores de voz o texto a voz, ya sea para un
-propósito complejo como son las IA las cuales utilizan reconocedores de voz para ejecutar
-funciones, o son utilizados simplemente para reconocer la voz, luego escribirla y por último
-reproducirla dependiendo lo que quiera el usuario, un ejemplo de esto son los traductores.
-En la actualidad la mayoría de las personas utiliza uno diario para facilitar la vida cotidiana.
-En este workshop aprenderás a hacer un reconocimiento de voz y un texto a voz para que lo
-utilices en lo que quieras.
-Por lo tanto, no esperemos más y comencemos
-HTML
-<body>
- <div class="buttons">
- <button id="btnStartRecord">Start to record</button>
- <button id="btnStopRecord">Finish recording</button>
- <button id="playText">Play</button>
- </div>
- <textarea id="text" cols="30" rows="10"></textarea>
- <script src="script.js"></script>
-</body>
-• En el div crearemos una clase para los botones
-• Creamos unos id para facilitar su uso en el JavaScript
-• Creamos un textaria para las líneas de texto.
-• Creamos un JavaScript y lo enlazamos con un src.
-Felicitaciones terminaste el HTML
-JavaScript:
-Comenzaremos trayendo los botones para darle funcionalidad se haría de esta manera:
+---
+name: Speech Recognition
+description: Create a speech recognition app
+author: '@wollygfx'
+img: ''
+---
+
+In this workshop you'll learn how to make a speech recognition app that you will be able to make under minutes, follow along with me and see how easy it is!
+
+Here is the [live demo](https://speech-recognition-app.wollygfx.repl.co) and the [source code](https://repl.it/@wollygfx/Speech-recognition-app) of what we are making:
+
+![Speech recognition app](https://cloud-ekrhqwq4i.vercel.app/0image.png)
+
+##  Set-up
+
+This workshop requires a very basic knowledge of HTML and JavaScript. Don’t worry if you get stuck at some point in the workshop, everything is explained the best way for you to understand!
+
+For this workshop we will use [Repl.it](https://repl.it/), a free, online code editor. Click [here](https://repl.it/languages/html) to get started with a new HTML project on repl.it.
+
+![Setup](https://cloud-qbmylslty.vercel.app/0image.png)
+
+## HTML
+
+The first thing we need to do, is to create a `div` container with the class `main-container`, and then we'll create 2 more `div` elements inside. The first `div` container will have 3 `button` elements in, and the second one will have a `textarea` element.
+``` html
+  <body>
+    <div class="container">
+      <div>
+        <button id="btnStartRecord">START</button>
+        <button id="btnStopRecord">STOP</button>
+        <button id="playText">PLAY</button>
+      </div>
+
+      <div>
+        <textarea id="text" cols="30" rows="10"></textarea>
+      </div>
+
+    </div>
+  </body>
+```
+- Using the `<div>` tag, we are creating a container, in which the `START`, `STOP` and `PLAY` buttons are going to be in.
+- Each button will have an `id` that will let us work with our buttons later in JavaScript. 
+- We are creating a `<textarea>` element, in which all the text will be in.
+- The `<script>` element is linking our JavaScript file with our HTML document.   
+
+This is the result of the code above:
+![HTML](https://cloud-gxt0cik6l.vercel.app/0image.png)
+
+Nice!– This is all we need in our HTML document, so let's move on to CSS.
+
+## CSS 
+
+Now, we are going to style our HTML document a little bit... First, we'll give to our website a background color:
+```css
+body {
+    background: #c5c5c5;
+}
+```
+
+Then, we'll select the class `main-container` and we'll make it to be centered vertically and horizontally in our website.
+```css
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+```
+Let's break this down:
+- The `display` property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
+- The `flex-direction` property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
+- The `justify-content` defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.
+- The `align-items` property sets the align-self value on all direct children as a group.
+
+Here's how our website looks so far:
+![CSS Result 1](https://cloud-383ylgdfq.vercel.app/0image.png)
+
+And finally, we'll style the `button` and `textarea` elements.
+```css
+button {
+  background-color: #34495E;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 20px;
+  margin: 0 3px 5px 0;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#text{
+  border: 2px #34495E solid;
+  border-radius: 2px;
+  overflow-y: scroll;
+}
+```
+Let's break this down:
+- The `background-color`, `color` and `font-size` properties give the buttons a background color, a color to the text and a size to the text respectively.
+- The `padding` and `margin` properties are part of the [CSS box model](https://www.w3schools.com/css/css_boxmodel.asp).
+- The `border` and `border-radius` allow you to specify the style, width, and color of an element's border and define the radius of the element's corners respectively.
+- The `cursor` property sets the type of mouse cursor, if any, to show when the mouse pointer is over the buttons.
+- The `overflow-y` property sets what shows when content overflows a block-level element's top and bottom edges. This may be nothing, a scroll bar, or the overflow content.
+
+Finally, this is how our website looks like:
+![CSS Final result](https://cloud-qxesrc5a6.vercel.app/0image.png)
+
+## JavaScript
+
+First, we'll need to take the buttons from our HTML document and then assign them some variables:
+```js
 const btnStartRecord = document.getElementById('btnStartRecord');
 const btnStopRecord = document.getElementById('btnStopRecord');
-const btnPlayText = document.getElementById('playText');
+const btnPlayText = document.getElementById('playText');  
 const text = document.getElementById('text');
-• Usaremos const para traer los botones.
-• Utilizaremos document.getElementById para seleccionar un elemento del
-elemento.
-Ahora usaremos el objeto recognition para el reconocimiento de voz, esto hará que el micrófono
-del equipo se encienda y grabe lo que estamos diciendo se haría de esta manera:
+```
+Let's break this down:
+- Using the method `document.getElementById()`, we are getting the elements in the document that have the corresponding IDs.
+- We are holding those elements that we got in [constant](https://www.w3schools.com/js/js_const.asp) variables.
+    
+The next thing to do is define a speech recognition instance to control the recognition for our application, to do this, we'll use the `webkitSpeechRecognition()` constructor.
+```js
 let recognition = new webkitSpeechRecognition();
-• El webkitSpeechRecognition, es una clase que facilita la conversión de texto a
-voz
-• El recognition se utiliza para el reconocimiento de caracteres
-Ahora usaremos unas de las variantes del recognition las cuales nos permitirá escoger
-diferentes valores interesantes como idioma y entre otras.
-recognition.lang ='en-US'
+```
+
+Now we can control the way the speech recognition constructor works:
+```js
+recognition.lang =‘en-US’
 recognition.continuous = true;
-recognition.interimResults = false;
-• recognition.lang sirve para escoger el idioma.
-• recognition.continuous, se utiliza para definir si el micrófono sigue grabando
-continuamente.
-• recognition.interimResults, es utilizado para botar resultados al tiempo que
-lo recibe.
-Ahora usaremos un evento del recognition el cual nos permitirá tener un resultado del
-micrófono.
+recognition.interimResults = false;    
+```
+- `recognition.lang` is used to set a language for the speech recognition, [here](http://www.lingoes.net/en/translator/langcode.htm) you can find a table that contains language codes.
+- `recognition.continuous` is used to define whether the microphone records continuous or not.
+- `recognition.interimResults` is used to define if the speech recognition shows the results immediately or once the speech recognition recognize an entire sentence. We can leave it as false, because it's more precise.
+    
+The next thing we want to do, is to return the results that the speech recognition app got:
+ ```js
 recognition.onresult = (event) => {
- const results = event.results;
- const sentence = results[results.length - 1] [0].transcript;
- text.value += sentence;
-}
-• recognition.onresult este es utilizado para dar los resultados del evento
-• length es utilizado para una cadena que representa el número de objetos.
-Ahora crearemos un evento del recognition el cual indica que el micrófono esta activo se
-desarrolla de esta manera:
+     const results = event.results;
+     const sentence = results[results.length - 1][0].transcript;
+     text.value += sentence;
+} 
+```
+- The `onresult` property of the SpeechRecognition interface represents an event handler that will run when the speech recognition service returns a result — a word or phrase has been positively recognized and this has been communicated back to the app.
+- The `results` variable contains the returned values, it has a getter so it can be accessed like an array.
+- The `sentence` variable takes the `result` variable and access the items [result.length - 1] and [0], and then it transcripts those items.
+- Finally, `text.value += sentence;` gets the value of the element text and then using the assignment operator `+=`, we add the gotten result to the current text.
+
+Now, we'll create an event that shows a message when the speech recognition ends.
+
+```js
 recognition.onend = (event) => {
  console.log('the microphone stops listening');
 }
-• console.log es utilizado para mandar un mensaje por la consola.
-• recognition.onend es una variante del recognition
-En caso de que se devuelva un error se crea el siguiente código:
+```
+- The `console.log` is a function that writes a message to **log** on the debugging **console**
+- `recognition.onend` is an event that runs certain code when the speech recognition ends.
+
+And we'll create another event that shows us when an error occurs.
+```js
 recognition.onerror = (event) =>{
  console.log(event.error)
 }
-• recognition.onerror se utiliza para errores
-• console.log (event.error) se utiliza para guardar el error que es devuelto
-Ahora haremos que los botones sean funcionales se haría de esta manera:
+```
+- `recognition.onerror` runs certain code when an error occurs.
+- `console.log (event.error)` writes in the console the occurred error.
+
+Now, we'll make the buttons work when they are clicked.
+```js
 btnStartRecord.addEventListener('click',() => {
  recognition.start();
 });
 btnStopRecord.addEventListener('click',() => {
  recognition.abort();
-})
-• btnStartRecord.addEventListener es utilizado para identificar el botón .
-• 'click' es utilizado para que al momento de dar click en el botón se ejecute una
-función.
-• recognition.start() sirve para comenzar que el micrófono funcione.
-• btnStopRecord.addEventListener es utilizado para identificar el botón .
-• recognition.abort(); sirve para parar el micrófono.
-Utilizaremos este código para lo escrito en un cuadro de texto sea narrado
+});
 btnPlayText.addEventListener('click',() => {
  readtext(text.value);
 });
+```
+- The method **`addEventListener()`** sets up a function that will be called whenever the `click` event is delivered to the buttons.
+- The `recognition.start()` event starts the speech recognition app.
+- The `recognition.abort();` even stops the speech recognition app.
+- In the third event listener we are calling the function `readtext()` that we'll create.
+
+The last thing we'll do is to create a function that reads the text gotten from the speech recognition app.
+```js
 function readtext(text){
  const speech = new SpeechSynthesisUtterance();
  speech.text = text;
@@ -93,17 +192,24 @@ function readtext(text){
  speech.pitch = 1;
  window.speechSynthesis.speak(speech);
 }
-• function readtext(text) crearemos esta funcion para luego usarla
-• readtext(text.value) sirve para que al oprimir el botón se lea el
-texto
-• SpeechSynthesisUtterance modifica sus propiedades para diferentes acciones.
-• speech.text se utilizapara definir el texto
-• speech.volume se utiliza para el nivel del volumen
-• speech.rate se utiliza para el nivel del rate
-• speech.pitch se utiliza para el nivel del pitch
-• Window.speechSynthesis.speak(speech) se utiliza para que diga lo que está en
-un cuadro de texto.
-Listo terminaste el reconocimiento de voz y el texto a voz ¡FELICITACIONES!
-Así se vería
-Oprime aquí para ver todo el JavaScriptSi quieres cambiar el estilo puedes hacerlo atraves de un CSS. Espero que este tutorial te
-hay sido útil ¡ADIOS!
+```
+Let's break this down:
+- First we are creating an object called `SpeechSynthesisUtterance`. It contains the content the speech service should read and information about how to read it.
+- `speech.text` defines which text is going to be read, in this case it will be the text inside of the `<textarea>` element in our document.
+- The property `speech.volume` of the interface gets and sets the volume that the utterance will be spoken at
+- The `speech.rate` property of the interface gets and sets the speed at which the utterance will be spoken at.
+- The `speech.pitch` property of the interface gets and sets the pitch at which the utterance will be spoken at.
+- This line of code `window.speechSynthesis.speak(speech);` makes the speech synthesis start speaking.
+
+## Hack it
+Yay! you made it to the end of this workshop. I know this was a pretty simple workshop, but you can still make pretty complex stuff... Let me give you some ideas:
+- Use [if statatments](https://www.w3schools.com/js/js_if_else.asp) to do certaing thing when the speech recognition app returns text.
+- Create an app that play, stop and skip songs.
+- Style your app to make it look cool.
+
+## Live demos
+Here are some demos made by other people:
+- [An app that takes you to certaing link depending on the word said.](https://codepen.io/Rumyra/pen/bCphe)
+- [Phrase matcher app](https://mdn.github.io/web-speech-api/phrase-matcher/)
+- [This demo changes the background color of the website when a color is recognized](https://mdn.github.io/web-speech-api/speech-color-changer/)
+
