@@ -26,36 +26,45 @@ Let's Begin!
 import dice
 import turtle
 
-dice.Die(0, 0, 100, 10, "black", "red")
+reroll()
 
-dice.Die(0, 150, 100, 10, "black", "red")
+turtle.onkey(reroll, "space")
 
-dice.Die(0, -150, 100, 10, "black", "red")
+turtle.listen()
+turtle.mainloop()
+
 ```
 - Add this code to "main.py".
-- Don't worry we're about to create these functions.
-- We need the turtle library here to detect key presses later on.
+- We import the turtle library and the dice functions that we will soon create.
+- The turtle listens for the space button and calls the reroll function if pressed. We are about to create it.
 
 # ReRoll
 
 ```py
-#What we just wrote.
+import dice
+import turtle
+
+
 def reroll():
   turtle.clear()
+  turtle.tracer(0, 0)
   dice.Die(0, 0, 100, 10, "black", "red")
 
   dice.Die(0, 150, 100, 10, "black", "red")
 
   dice.Die(0, -150, 100, 10, "black", "red")
+  turtle.update()
+
+
+reroll()
 
 turtle.onkey(reroll, "space")
-
 
 turtle.listen()
 turtle.mainloop()
 ```
-- This code comes directly after what we just wrote.
-- This code clears the screen and calls the dice functions again if space is pressed. The turtle is always listening for the user's input.
+- Add this function right after the import statements.
+- This function clears the screens and redraws the dice. They will get another random number.
 
 # Create the "dice.py" file.
 Create the "dice.py" file as shown below.
