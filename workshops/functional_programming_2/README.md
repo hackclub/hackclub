@@ -1,10 +1,10 @@
 ---
-name: 'Functional Programming with js ( part-2 )'
+name: 'Functional Programming with JS (Part 2)'
 description: 'Understand Currying in Functional Programming with Ramda!'
 author: '@bajpai244'
 ---
 
-Welcome to the workshop. This is part-2 of the functional programming with js series.
+Welcome to the workshop. This is part 2 of the functional programming with JavaScript series.
 
 In this part, we will learn about Currying in Functional Programming. If you haven’t gone through [part-1](../functional_programming_1) then I strongly recommend checking it out first.
 
@@ -28,11 +28,11 @@ You don't need to be a Guru in these topics, a basic understanding of them is mo
 
 ### Fork It :-
 
-I will be using [repl.it](https://repl.it/) as my workspace for this workshop, You can fork my repl from [here](https://repl.it/@HARSHBAJPAI1/currying#index.js). 
+I will be using [repl.it](https://repl.it/) as my workspace for this workshop, You can fork my repl from [here](https://repl.it/@HARSHBAJPAI1/currying#index.js).
 
 ### Nah! would do it myself (:
 
-Or you can setup your own repl, make sure you create a node.js repl, and install the ramda package ( not rambda, because it too exists! ) 
+Or you can setup your own repl, make sure you create a node.js repl, and install the ramda package ( not rambda, because it too exists! )
 
 ### Search Ramda
 
@@ -76,22 +76,22 @@ Currying is a core part of writing code via the functional paradigm. It helps us
 
 Let me explain this with a simple example! This example will give you a practical insight into what currying is for.
 
-Suppose you have a function sum(a,b), it takes two numbers and add them and then returns the result. This is what it will look like: 
+Suppose you have a function sum(a,b), it takes two numbers and add them and then returns the result. This is what it will look like:
 
 ```js
- 
+
 function sum(a,b){
-         return a+b 
+         return a+b
 }
 
 console.log(“The sum of 5 and 2 is”, sum(5+2))
 
-//  Output:- The sum of 5 and 2 is 7 
+//  Output:- The sum of 5 and 2 is 7
 
 ```
 Hmm, So this was simple! Where is the real challenge? Okay! So, what if I tell you to create three functions which would increase the value of a number by 1,2, and 3 respectively. This is what you might come up with as a solution:
 
-```js 
+```js
 
 function inc_1(a){
 return a+1;
@@ -123,7 +123,7 @@ Okay, so let’s think about how can we overcome this limitation.
 
 ## Maybe, we need this?
 
-What we need is a way so that we could transform our sum(a,b) function into a function, which when provided a single input a, would return a new function, this new function must already have the earlier passed value to add ( i.e a ) so that it can basically add whatever number we pass to it to a. ( meaning  b+a ). 
+What we need is a way so that we could transform our sum(a,b) function into a function, which when provided a single input a, would return a new function, this new function must already have the earlier passed value to add ( i.e a ) so that it can basically add whatever number we pass to it to a. ( meaning  b+a ).
 
 Hmm, still confusing? Okay, let me simplify!
 
@@ -154,21 +154,21 @@ The same inc_1,inc_2, and inc_3 can be obtained via this way in functional progr
 ```js
 
 const _  = require('ramda') // requiring ramda as _
- 
+
 function sum(a,b){
  return a+b;
 }
- 
+
 const curried_sum = _.curry(sum) // currying function sum(a,b)
- 
+
 const inc_1 = curried_sum(1)
 const inc_2 = curried_sum(2)
 const inc_3 = curried_sum(3)
- 
+
 console.log('1 increase 1 times is',inc_1(1)) // Output: 1 increase 1 times is 2
 console.log('1 increase 2 times is',inc_2(1)) // Output: 1 increase 1 times is 3
 console.log('1 increase 3 times is',inc_3(1)) // Output: 1 increase 1 times is 4
- 
+
 ```
 ## So, what just happened?
 
@@ -192,11 +192,11 @@ Okay, so because of this magical thing called Currying, we get something else re
 // Run the program in repl
 
 const inc_5 = curried_sum(5)
- 
+
 console.log( "Hey! Siri is it true that inc_5(5), curried_sum(5,5) and curried_sum(5)(5) gives the same result? " )
- 
+
 console.log("Siri: I know it might baffle you but you need face it, Yes it is", inc_5(5) === curried_sum(5,5) && inc_5(5) ===  curried_sum(5)(5)    )
- 
+
 ```
 
 ### How is curried_sum(5,5) working?
@@ -219,41 +219,41 @@ These types of functions are pretty common and are known as [Immediately Invoked
 ## f(a,b,c) -> f(a)(b)(c)
 
 I think now you know what I meant when I said currying transforms a function f(a,b,c) to f(a)(b)(c).
- 
-<img src="https://media.giphy.com/media/IbUUbU4xUDJWcgGMGP/giphy.gif" alt="I know gif" width="" /> 
+
+<img src="https://media.giphy.com/media/IbUUbU4xUDJWcgGMGP/giphy.gif" alt="I know gif" width="" />
 
  When we curried function sum(a,b) then we transformed it to accept one argument at a time ( although it can take all of them at the same time too). Immediately Invoking the functions returned from curried functions made the sum(a)(b) pattern possible!
- 
+
 Here are some other patterns for you to play with!
- 
-```js 
- 
+
+```js
+
 const _  = require (‘ramda’)
- 
+
 function sum(a,b,c,d){
  return (a+b+c+d)
 }
- 
+
 const curried_sum = _.curry(sum)
- 
+
 // different patterns
- 
-console.log(curried_sum(1)(2)(3)(4)) 
+
+console.log(curried_sum(1)(2)(3)(4))
 console.log(curried_sum(1,2)(3,4))
 console.log(curried_sum(1,2,3)(4))
 console.log(curried_sum(1)(2,3,4))
- 
+
 // you can try some other patterns too
- 
+
 ```
 
  ## Why should we use currying?
 
-Currying makes it really easy to re-use existing functions in your code-base to create new functions. It advocates re-using existing functions to create new ones. 
+Currying makes it really easy to re-use existing functions in your code-base to create new functions. It advocates re-using existing functions to create new ones.
 
 This makes your programming experience really delightful and makes code easy to manage!
 
-For example, if inc_1 is not working fine, then you have to debug the inc_1 function itself (**if you are not using Currying**),  as the number of functions would increase ( like inc_2, inc_3 ) then the number of function that could cause error will also increase ( because all of them are independent functions ). This will make your job really hard as a programmer. 
+For example, if inc_1 is not working fine, then you have to debug the inc_1 function itself (**if you are not using Currying**),  as the number of functions would increase ( like inc_2, inc_3 ) then the number of function that could cause error will also increase ( because all of them are independent functions ). This will make your job really hard as a programmer.
 
 But, if you have used Currying then you just need to debug the sum(a,b) function ( i.e only one function ) in case of an error. It makes your code reliable and buys you more time!
 

@@ -1,10 +1,10 @@
 ---
-name: 'Functional Programming with js ( part-1 )'
-description: 'Learn the basics of functional programming with js!'
+name: 'Functional Programming with JS (Part 1)'
+description: 'Learn the basics of functional programming with JS!'
 author: '@bajpai244'
 ---
 
-Welcome to the workshop. This is part-1 of the functional programming with js series, this workshop will discuss what is functional programming, why we need it?, and the basics of functional programming. 
+Welcome to the workshop. This is part 1 of the functional programming with js series, this workshop will discuss what is functional programming, why we need it?, and the basics of functional programming.
 
 This workshop will serve as an introduction to the upcoming parts of this series.
 
@@ -33,7 +33,7 @@ Do you wonder what it is? let me provide a simple and clear definition of functi
 
 Functional programming is a way of writing your programs ( a paradigm ) so that your code is:
 
-- Clean 
+- Clean
 - Readable
 - Less Error-Prone
 - Easy to Debug
@@ -44,21 +44,21 @@ To start with something, we deep down need a reason to get ourselves going. So, 
 
 <img src="https://media.giphy.com/media/1jajMAVf2vN9KxoFfw/giphy.gif" alt="tell me why gif" width="" />
 
-We all write code and often find ourselves in messy situations. Like, we don’t understand what the flow of the program is, how is it even working, debugging almost kills most of our time. 
+We all write code and often find ourselves in messy situations. Like, we don’t understand what the flow of the program is, how is it even working, debugging almost kills most of our time.
 
 The reason why these things happen is that we lack a paradigm for our programming style. A paradigm brings order to our programming, making our programming style more predictable, easy to debug, and easy to share.
 
 <img src="https://media.giphy.com/media/RGRkDWsTGvdUaQTO0z/giphy.gif" alt="I get if GIF" width="" />
 
-There are many programming paradigms like Imperative programming, Object-Oriented Programming, Functional Programming, etc. 
+There are many programming paradigms like Imperative programming, Object-Oriented Programming, Functional Programming, etc.
 
 <img src="https://cloud-h4li5m1hj.vercel.app/0image.png" alt="different types of programming languages image" width="400px" />
 
-People advocate their love for different programming paradigm and so do I. Functional Programming is my favorite as it offers a cleaner and a smaller codebase and offers great predictability of code! 
+People advocate their love for different programming paradigm and so do I. Functional Programming is my favorite as it offers a cleaner and a smaller codebase and offers great predictability of code!
 
 ## Let’s take the plunge!
 
-Now, you finally know why you need to learn this programming paradigm so let’s take a deep plunge into the realm of functional programming! 
+Now, you finally know why you need to learn this programming paradigm so let’s take a deep plunge into the realm of functional programming!
 
 <img src="https://media.giphy.com/media/5zkZRNNb7WW8B9iN3Q/giphy.gif" alt="plunge gif" width="" />
 <br/><br/>
@@ -77,7 +77,7 @@ Although there can be a lot of specifications on what makes a language functiona
 
 ## What are higher order functions?
 
-Higher-order functions are functions that can either or both take a _function as a parameter ( i.e argument ) or can return a function._ 
+Higher-order functions are functions that can either or both take a _function as a parameter ( i.e argument ) or can return a function._
 
 <img src="https://cloud-3cfa7ltpu.vercel.app/0image.png" alt="Higher order function Image" width="450px" />
 
@@ -102,29 +102,29 @@ I know it is hard to believe,  but when you are writing your code functional pro
 
 The below is a program to print squares of elements of an Array, it is implemented via loops.
 
- ```js 
+ ```js
 /* Program to print square of number via loops */
 
 const numbers = [1, 2, 3, 4, 5]
 const squares = []  // will store the squares of the numbers of array numbers
 let i;
 
-for (i = 0; i < numbers.length; i++) { 
+for (i = 0; i < numbers.length; i++) {
     squares[i] = numbers[i]*2
 }
 
-for (i = 0; i < squares.length; i++) { 
+for (i = 0; i < squares.length; i++) {
     console.log("The square of",numbers[i],"is =",squares[i])
 }
 
  ```
 The below is a program to print squares of elements of an Array, it is implemented via functional programming.
 
- ```js 
+ ```js
 /* Program to print square of number via functional programming */
 
 const numbers = [1, 2, 3, 4, 5]
-    
+
 const squares = numbers.map(ele => ele * 2) // stores the squares of the numbers of array numbers
 
 squares.forEach((square, i) =>
@@ -137,11 +137,11 @@ You don’t need to worry about them, **they are Higher-order functions to mimic
 
 ## Functions are Pure!!!
 
-In simple words, they only depend on the arguments passed to them and always produce the same output for a give a given input! Meaning you should not use any variable value apart from your function’s input to calculate its output. 
+In simple words, they only depend on the arguments passed to them and always produce the same output for a give a given input! Meaning you should not use any variable value apart from your function’s input to calculate its output.
 
 <img src="https://cloud-3rfz3uikb.vercel.app/0image.png" alt="Pure functions image" width="500px" />
 
-In simple words, they only depend on the arguments passed to them and always produce the same output for a given input! Meaning you should not use any variable value apart from your function’s input to calculate its output. 
+In simple words, they only depend on the arguments passed to them and always produce the same output for a given input! Meaning you should not use any variable value apart from your function’s input to calculate its output.
 
 ## The data is immutable!
 
@@ -153,12 +153,12 @@ This value will be returned by the function without changing the original input 
 
 ## No side-effects allowed (:
 
-Changing state outside of a function is referred to as a side effect. 
+Changing state outside of a function is referred to as a side effect.
 
 <img src="https://cloud-eklk947ki.vercel.app/0group_5.png" alt="no side-effects image" width="500xp" />
 
 
-This means, that a function cannot change any state outside of the function. This makes sure that our code is free from the issues that regularly occur in programs due to functions having side effects. 
+This means, that a function cannot change any state outside of the function. This makes sure that our code is free from the issues that regularly occur in programs due to functions having side effects.
 
 
 ## What is Ramda?

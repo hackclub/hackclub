@@ -1,6 +1,6 @@
 ---
-name: 'Functional Programming with js ( part-3 )'
-description: 'Learn how to deal with Arrays in Functional Programming with Ramda!'
+name: 'Functional Programming with JS (Part 3)'
+description: 'Learn how to deal with arrays in Functional Programming with Ramda!'
 author: '@bajpai244'
 ---
 
@@ -28,11 +28,11 @@ You don't need to be a Guru in these topics, a basic understanding of them is mo
 
 ### Fork It :-
 
-I will be using [repl.it](https://repl.it/) as my workspace for this workshop, You can fork my repl from [here](https://repl.it/@HARSHBAJPAI1/Arrays-with-Ramda#index.js). 
+I will be using [repl.it](https://repl.it/) as my workspace for this workshop, You can fork my repl from [here](https://repl.it/@HARSHBAJPAI1/Arrays-with-Ramda#index.js).
 
 ### Nah! would do it myself (:
 
-Or you can setup your own repl, make sure you create a node.js repl, and install the ramda package ( not rambda, because it too exists! ) 
+Or you can setup your own repl, make sure you create a node.js repl, and install the ramda package ( not rambda, because it too exists! )
 
 ### Search Ramda
 
@@ -64,7 +64,7 @@ The same goes here, we are leveraging the pre-built functions from Ramda to boos
 
 ## Arrays 👀
 
-Okay, so Arrays are one of the most used data structures in programming. Now, let’s first start by thinking about what are the operations that are associated with Arrays. 
+Okay, so Arrays are one of the most used data structures in programming. Now, let’s first start by thinking about what are the operations that are associated with Arrays.
 
 <img src="https://cloud-q139hxihe.vercel.app/0image.png" alt="Arrays Everywhere meme Image" width="" />
 
@@ -76,13 +76,13 @@ To be honest, there are too many! right? So let’s list some basic operations t
 - We remove duplicate entries from the Array.
 - We do certain transformation on every item of an Array.
 
-There are many others. But, for the sake of simplicity, I am showing you some which are regularly used. 
+There are many others. But, for the sake of simplicity, I am showing you some which are regularly used.
 
 My goal here is to teach you the basic approach towards Array in functional programming, so that you can figure out the rest on your own, So, let’s get started.
 
 ## map 🗺️
 
-Okay, sometimes we need to do some calculations on each item of an Array and need the Array with updated items after transformation, for example, An Array containing square of every number in an Array.  
+Okay, sometimes we need to do some calculations on each item of an Array and need the Array with updated items after transformation, for example, An Array containing square of every number in an Array.
 
 We generally use loops for doing it. But, remember in functional programming we don’t use loops.
 
@@ -90,7 +90,7 @@ We generally use loops for doing it. But, remember in functional programming we 
 
 We have a function _map_ in Ramda, it’s first parameter is a **function that receives each item of the array which is passed as the second parameter to the map function.**
 
-Map returns a new Array ( because in functional programming data is immutable ), the value of each item in the returned Array is **the value returned by the function in the map parameter for the corresponding index item in the original Array (passed as second Argument to map).** 
+Map returns a new Array ( because in functional programming data is immutable ), the value of each item in the returned Array is **the value returned by the function in the map parameter for the corresponding index item in the original Array (passed as second Argument to map).**
 
 <img src="https://media.giphy.com/media/ZNnQvIYzIBmZAbrBR7/giphy.gif" alt="confusing meme" width="" />
 
@@ -108,7 +108,7 @@ const ret_sqr = (num) => num*num // return square of a given number
 
 const square_list_generator = _.map(ret_sqr) // _.map takes the ret_sqr function as first parameter, here the concept of Currying is being used, go to part 2 to understand currying
 
-const squares = square_list_generator(numbers) 
+const squares = square_list_generator(numbers)
 
 // square_list_generator will loop through numbers array and provide each item to ret_sqr function
 // the value returned from ret_sqr will be the value of the new Array returned by map for the given index
@@ -135,17 +135,17 @@ Below is a graphical representation of what is happening in the above case
 <img src="https://cloud-f9yugz7dg.vercel.app/0group_11_1__1.png" alt="map working image" width="" />
 <br/><br/>
 
-## filter 
+## filter
 
 It does what its name says, It uses a function to filter out items from an Array. The function is in the following format:
 
 ```js
 
- filter( func, arr ) // returns a new filtered Array 
+ filter( func, arr ) // returns a new filtered Array
 
 ```
 
-Here the function **func** receives each item from the Array **arr**, for the items it returns false are not part of the new filtered Array, **if it returns true for an item then it is part of the new filtered Array.** 
+Here the function **func** receives each item from the Array **arr**, for the items it returns false are not part of the new filtered Array, **if it returns true for an item then it is part of the new filtered Array.**
 
 Let’s take an example to demonstrate it:
 
@@ -159,10 +159,10 @@ const isOdd = (num) => (num%2) != 0 // returns true if an element is odd
 
 const oddArr = _.filter(isOdd,numbers)
 
-// we can also pass one argument at a time via Currying! 
+// we can also pass one argument at a time via Currying!
 //I have already demonstrated that in the map example
 
-console.log("The odd array is", oddArr) 
+console.log("The odd array is", oddArr)
 
 // output : The odd array is [ 1, 3, 5, 7, 9 ]
 
@@ -176,7 +176,7 @@ This is forEach’s format:
 
 ```js
 
-forEach(func,arr) // func is called for every item of arr 
+forEach(func,arr) // func is called for every item of arr
 
 ```
 A good example ( of using it ) would be if you want to print every item of an Array. Here is how you can do that with forEach:
@@ -214,7 +214,7 @@ reduce(func,acc,arr) // func -> function, acc -> accumulator , arr -> array
 
 The accumulator is a value **that is passed to the function along with the Array item.** The value that the function returns is the new value for the accumulator and will be passed back again to the function in the next iteration.
 
-This cycle keeps on going until unless the iteration is done. 
+This cycle keeps on going until unless the iteration is done.
 The last value returned by the function is the total accumulated value during the whole iteration **and is the value that our reduce function will return.**
 
 <img src="https://media.giphy.com/media/l2Je8VO5hSPEsLdMA/giphy.gif" alt="accumalator gif" width="" />
@@ -247,7 +247,7 @@ The above program prints the sum of all the items in the **numbers** Array.
 
 Here each value is passed to the function **add** and the accumulator value is 0 during the 1st iteration, **add** adds the accumulator and the Array item and the value which it returns becomes the new value for the accumulator (for the next iteration).
 
-This way by the end of the iteration the value it returns comes out to be the sum of all items in the  Array **numbers.** 
+This way by the end of the iteration the value it returns comes out to be the sum of all items in the  Array **numbers.**
 
 ## Where is the index?
 
@@ -262,7 +262,7 @@ I know code is the best language to sing the melody of programming ( If it sound
 Okay, so let’s take an example to demonstrate this idea.
 
 
-```js 
+```js
 
 const _ = require('ramda')
 
@@ -281,7 +281,7 @@ The **print** function now receives two arguments 1st is the Array item and the 
 
 ## Conclusion!
 
-Here, we discussed how to use Arrays with Ramda. The benefit of using Arrays with Ramda is that you can easily curry these Array functions and can create some beautiful Reusable functions which in turn will make your codebase modular!  
+Here, we discussed how to use Arrays with Ramda. The benefit of using Arrays with Ramda is that you can easily curry these Array functions and can create some beautiful Reusable functions which in turn will make your codebase modular!
 
 ## Explore!
 
