@@ -16,57 +16,62 @@ Here is the final code on [repl.it](https://repl.it/@rpal/Hangman).
 A basic understanding of Java and general concepts like conditionals and loops will make this workshop easier, but anyone who is willing to learn along the way can join along!
 
 ## Part 1: Getting Started
-Ok, let's start coding! Today, we will be using repl.it, a super convenient online code editor. Start up your Java program by going to [replit](https://repl.it/languages/java). You probably want to create a Repl account so that your code gets saved, and once you’re ready, move onto the next step!
+Ok, let's start coding! Today, we will be using repl.it, a super convenient online code editor. Start up your Java program by going to [repl.it/languages/java](https://repl.it/languages/java). Your coding environment will spin up in a few seconds!
 
 ![replit java starter code](https://cloud-q1jb0eal0.vercel.app/0screen_shot_2020-11-17_at_11.46.44_am.png)
 
-Note: If this is the first time you’re coding in Java, there are many great (and free!) resources available online at your disposal. [CodeAcademy](https://www.codecademy.com/learn/learn-java) is great for learning the basics and [PracticeIt](https://practiceit.cs.washington.edu/) is a great way to practice writing Java programs.
-
 ## Part 2: The Man Class
 For our hangman game, we will be creating two classes, one of them being a Man class. We could squeeze all the code into a single class, but we find separating the code into two classes to be easier. The Man class will be handling everything related to the hangman, such as the drawing of the hangman, and keeping track of whether it’s dead or alive.
+
 Our fully constructed man will look like this:
+
 ```
  O 
 \|/
 / \
 ```
-As you can see, it uses O, |, /, and \\.
 
-We can start off by creating a Man.java file and declaring the class with `public class Man`. 
+As you can see, it uses `O`, `|`, `/`, and `\\`.
 
-![gif of creating Man.java file](https://cloud-ltb9tmqd5.vercel.app/0ezgif-3-eec22c123a04.gif)
-
-Right now this is what the file should look like:
+Start by creating a file called `Man.java` file. Then, declare a class called `Man`:
 
 ```java
-public class Man{
+public class Man {
 
 }
 ```
 
+![gif of creating Man.java file](https://cloud-ltb9tmqd5.vercel.app/0ezgif-3-eec22c123a04.gif)
+
 Now let’s create some fields, which are variables specific to the class.
 
 ```java
-	static final int MAX_INCORRECT = 6;
-	int numIncorrect;
-	char[] body;
+public class Man {
+  static final int MAX_INCORRECT = 6;
+  int numIncorrect;
+  char[] body;
+}
 ```
 
-`MAX_INCORRECT` is a constant, so we use the static and final modifiers to indicate that it will remain the same for all instances of man and never change. Here it’s an integer that never changes.
-numIncorrect is an integer that keeps track of the number of incorrect guesses.
-body is an Array of characters that stores the body parts of the hangman.
+- `MAX_INCORRECT` is a constant, so we use the `static` and `final` modifiers to indicate that it will remain the same for all instances of `Man` and never change. Here it’s an integer that never changes.
+- `numIncorrect` is an integer that keeps track of the number of incorrect guesses.
+- `body` is an Array of characters that stores the body parts of the hangman.
 
-In Java, all classes need a constructor, so let’s get started with that. The Man is 3 characters wide and 3 characters tall so we need to create an array of characters of that size. You might be wondering how to create line breaks between each row of the array. We can do that by using ‘\n’ which represents a line break. Anything after ‘\n’ will be on the next line. We initialize the man like so. We also set numIncorrect to 0, because the user hasn’t made any incorrect guesses yet.
+In Java, all classes need a [constructor](https://www.w3schools.com/java/java_constructors.asp), so let’s get started with that.
 
-Place the constructor within the `public class Man` class declaration like below:
+The Man is 3 characters wide and 3 characters tall, so we need to create an array of characters of that size. You might be wondering how to create line breaks between each row of the array. We can do that by using ‘\n’ which represents a line break. Anything after ‘\n’ will be on the next line. We initialize the man like so. We also set numIncorrect to 0, because the user hasn’t made any incorrect guesses yet.
+
+Place the constructor within the `Man` class declaration like below:
+
 ```java
 public class Man{
-	//Instance variables go here
-	public Man() {
-		/*Initialize the Man object */
-		body = new char[] {' ', ' ', ' ', '\n', ' ', ' ', ' ', '\n', ' ', ' ', ' ', '\n'};
-		numIncorrect = 0;
-	}
+  // Instance variables go here...
+  
+  public Man() {
+    // Initialize the Man object
+    body = new char[] {' ', ' ', ' ', '\n', ' ', ' ', ' ', '\n', ' ', ' ', ' ', '\n'};
+    numIncorrect = 0;
+  }
 }
 ```
 
@@ -83,18 +88,23 @@ The body array creates an invisible grid in which the man can be placed like the
 
 Now that the man is created, how would we know when the man dies? We still need to make the `hang()` method to actually hang the man, but an `isAlive()` method is pretty straightforward. We want it to return true if numIncorrect is less than `MAX_INCORRECT`, and false otherwise.
 
+Now that we've created our man, how will we know when he dies? Well, first, we need to set the conditions for him to stay alive. Per the rules of hangman, the man will stay alive as long as the number of incorrect guesses is less than the maximum allowed number of incorrect guesses. We've already declared and initialized these variables above, so we can use them to create a `boolean` method called `isAlive()`.
+
+At the bottom of your `Man` class, add:
+
 ```java
 public boolean isAlive() {
   return numIncorrect < MAX_INCORRECT;
 }
 ```
 
-During the game, we also would like to print the man after every turn, just to remind the user how close they are to losing. How do you print out an Array of characters though? Java’s String class actually has a constructor that creates a String from an Array of characters that is passed in, so we can use that like this.
+A boolean is a data type that stores whether something is true or false. Here, we're writing a boolean method called `isAlive` which will simply return `true` or `false`, depending on whether or not the current number of incorrect guesses is less than the maximum allowed incorrect guesses.
+
+During the game, we also would like to print the man after every turn, just to remind the user how close they are to losing. Java allows us to combine an array of characters and print them out as a string using the built-in `String` class, which has a constructor that creates a String from an Array of characters.
 
 ```java
 public String toString() {
-	/* TODO: Render the man as a string. */
-	return new String(body);
+  return new String(body);
 }
 ```
 
