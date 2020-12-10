@@ -426,8 +426,9 @@ result.textContent = cardsMatched.length
 ```
 
 <details>
+
 <summary> Our code so far will be: </summary>
-  
+
 ```javascript
 document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [....]
