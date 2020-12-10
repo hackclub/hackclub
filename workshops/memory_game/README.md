@@ -475,10 +475,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if  (cardsMatched.length === cardArray.length/2) {
       result.textContent = 'Congratulations! You found them all!'
     }
+  }
 
-}
-
-createBoard()
+  createBoard()
 })
 ```
 
