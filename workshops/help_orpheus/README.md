@@ -189,7 +189,7 @@ Yesss! after entering the passcode you are only one click away from completing t
 
 ## Thanks, Saviour!
 
-Do you know what you just did by clicking that button? You saved Hack Island’s sacred knowledge and wisdom! You are a hero for the people, and now Orephues knows they have someone to rely on if they get into trouble again!
+Do you know what you just did by clicking that button? You saved Hack Island’s sacred knowledge and wisdom! You are a hero for the people, and now Orpheus knows they have someone to rely on if they get into trouble again!
 
 <img src="https://raw.githubusercontent.com/bajpai244/indiablogfilehosting/main/files/img/hackerman.jpg" alt="hacker man image" width="500px" />
 
