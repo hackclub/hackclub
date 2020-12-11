@@ -19,7 +19,7 @@ The objective is to direct a flying bird :bird: which is moving continuously to 
 
 Extremely basic knowledge of any programming language. We are going to use JavaScript to code our micro:bit.
 
-If you don't have the hardware, don't worry we'll use a stimulator in this workshop. [Makecode's](https://makecode.microbit.org) micro:bit simulator was excellent!
+If you don't have the hardware, don't worry we'll use a simulator in this workshop. [Makecode's](https://makecode.microbit.org) micro:bit simulator is excellent!
 
 ## Getting Started
 
@@ -359,5 +359,4 @@ These are some examples from the makers of the micro:bit to inspire you.
 - Playing music: [Simple tilt alarm](https://makecode.microbit.org/_K4x1HtAccTPu)
 
 PS: I'm [@Giridhar](https://hackclub.slack.com/team/U013E6KE9UJ) on Slack!
-
 
