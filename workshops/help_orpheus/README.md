@@ -84,7 +84,7 @@ To retrieve all the rows in the table we will write the following command:
 
 ```sql
 
-SELECT * from TABEL_NAME ;
+SELECT * from TABLE_NAME ;
 
 ```
 Here * means all records and TABLE_NAME is the name of the table whose records you want to have!
@@ -93,7 +93,7 @@ If you want to get some specific records in SQL then you use the WHERE clause. F
 
 ```sql
 
-SELECT * from TABEL_NAME WHERE username = 'badlo escoabar' AND password = '12345' ;
+SELECT * from TABLE_NAME WHERE username = 'badlo escoabar' AND password = '12345' ;
 
 ```
 
