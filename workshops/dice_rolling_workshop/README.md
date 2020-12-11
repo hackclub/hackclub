@@ -9,7 +9,7 @@ In this workshop we are going to be creating a dice rolling simulation using Pyt
 
 <img src="https://cloud-8ogf0pnlo.vercel.app/0screenshot__1424_.png" width="900" alt="Dice Rolling Example">
 
-<img src="https://media.tenor.com/images/d86646ec4acbb11c68c0e101b090a74d/tenor.gif" width="380" alt="Kazoo Kid Gif">
+<img src="https://1.bp.blogspot.com/-19Qnj82lCrk/U-FYkM_tvvI/AAAAAAAAQNc/5J1wSym33Nw/s320/Spongebob-Squarepants-GIFs-spongebob-squarepants-23416975-500-309.gif" width="380" alt="Spongebob Gif">
 
 # Repl.it Setup
 
@@ -22,6 +22,9 @@ Create a new repl and use Python as the language.
 # Initial Statements
 
 Let's Begin!
+
+<img src="https://thumbs.gfycat.com/SecondTartCygnet-max-1mb.gif" width="380" alt="Dice Rolling Gif">
+
 ```py
 import dice
 import turtle
@@ -39,6 +42,8 @@ turtle.mainloop()
 - The turtle listens for the space button and calls the reroll function if pressed. We are about to create it.
 
 # ReRoll
+
+<img src="https://media3.giphy.com/media/3orieXuSY8GJj1xtaU/source.gif" width="380" alt="Dog Gif">
 
 ```py
 import dice
@@ -100,6 +105,9 @@ def drawBox(x, y, size, color):
 
 # Rolling the Die
 Under the function that we just created, create a "rolls" function. This will draw the dots on the dice.
+
+<img src="https://cloud-2mtzavva3.vercel.app/0screenshot__1429_.png" width="380" alt="Dots on the Box">
+
 ```py
 #Initial statements and function to draw the box would be here.
 def rolls(x, y, size, radius, color, roll):
@@ -228,6 +236,8 @@ This function calls the boxes and dots functions to draw them, and it picks the 
 
 # Source Code
 Here's all the code we wrote!
+
+<img src="https://images.squarespace-cdn.com/content/v1/562516c0e4b095e786b37604/1569883250050-HNCMTRS3DEIHY4CPB87S/ke17ZwdGBToddI8pDm48kOM0wi0zWgY49OChaGdbQod7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UfAtPlxizjcWvBNqgWc_KYFyyq31ajrfWMcmXEH6sz4g7zs2yPjc1ECvpa5Zm_kMqw/yay.gif" width="380" alt="Yay Gif">
 
 ## main.py
 ```py
