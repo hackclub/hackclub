@@ -99,9 +99,268 @@ def drawBox(x, y, size, color):
 - This function goes to the coordinate and draws a square. This will be the square part of the die.
 
 # Rolling the Die
+Under the function that we just created, create a "rolls" function. This will draw the dots on the dice.
+```py
+#Initial statements and function to draw the box would be here.
+def rolls(x, y, size, radius, color, roll):
+  turtle.color(color)
+  turtle.up()
+```
+## Row 1
+```py
+def rolls(x, y, size, radius, color, roll):
+  turtle.color(color)
+  turtle.up()
+
+  #row 1
+  turtle.goto(x+(size/6), y-(size/6)-radius)
+
+  #circle 1
+  if (roll == 2 or roll == 3 or roll == 4 or roll == 5 or roll == 6):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+
+  turtle.forward(size/3)
+
+  #circle 2
+  '''
+  if ():
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+  '''
+
+  turtle.forward(size/3)
+
+  #circle 3
+  if (roll == 4 or roll == 5 or roll == 6):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+```
+- The first circle (top left) is used by rolls 2, 3, 4, 5, and 6.
+- The second circle (top middle) is not used by any rolls.
+- The third circle (top right) is used by rolls 4, 5, and 6.
+
+## Row 2
+```py
+def rolls(x, y, size, radius, color, roll):
+  #row 1 would be here.
+  
+  #row 2
+  turtle.goto(x+(size/6), y-(size/6)-(size/3)-(radius))
+
+  #circle 1
+  if (roll == 6):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+
+  turtle.forward(size/3)
+
+  #circle 2
+  if (roll == 1 or roll == 3 or roll == 5):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+
+  turtle.forward(size/3)
+
+  #circle 3
+  if (roll == 6):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+```
+- The first circle (middle left) is used by roll 6.
+- The second circle (middle middle) is used by rolls 1, 3, and 5.
+- The third circle (middle right) is used by roll 6.
+
+## Row 3
+```py
+def rolls(x, y, size, radius, color, roll):
+  #rows 1 and 2 would be here.
+  
+  #row 3
+  turtle.goto(x+(size/6), y-(size/6)-((size/3)*2)-(radius))
+
+  #circle 1
+  if (roll == 4 or roll == 5 or roll == 6):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+
+  turtle.forward(size/3)
+
+  #circle 2
+  '''
+  if ():
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+  '''
+
+  turtle.forward(size/3)
+
+  #circle 3
+  if (roll == 2 or roll == 3 or roll == 4 or roll == 5 or roll == 6):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+```
+- The first circle (bottom left) is used by rolls 4, 5, and 6.
+- The second circle (bottom middle) is not used by any rolls.
+- The third circle (bottom right) is used by rolls 2, 3, 4, 5, and 6.
 
 # Putting It All Together
+Add this function under the ones we just created.
+```py
+def Die(x, y, size, radius, color1, color2):
+  turtle.speed(0)
+  turtle.hideturtle()
+  x -= (size/2)
+  y += (size/2)
+  drawBox(x, y, size, color1)
+  rolls(x, y, size, radius, color2, random.randint(1, 6))
+```
+This function calls the boxes and dots functions to draw them, and it picks the random number.
 
 # Source Code
+Here's all the code we wrote!
+
+## main.py
+```py
+import dice
+import turtle
+
+def reroll():
+  turtle.clear()
+  turtle.tracer(0, 0)
+  dice.Die(0, 0, 100, 10, "black", "red")
+
+  dice.Die(0, 150, 100, 10, "black", "red")
+
+  dice.Die(0, -150, 100, 10, "black", "red")
+  turtle.update()
+
+reroll()
+
+turtle.onkey(reroll, "space")
+
+turtle.listen()
+turtle.mainloop()
+```
+
+## dice.py
+```py
+import turtle
+import random
+
+def drawBox(x, y, size, color):
+  turtle.color(color)
+  turtle.setheading(0)
+  turtle.up()
+  turtle.goto(x, y)
+  turtle.begin_fill()
+  for x in range(4):
+    turtle.forward(size)
+    turtle.right(90)
+  turtle.end_fill()
+
+def rolls(x, y, size, radius, color, roll):
+  turtle.color(color)
+  turtle.up()
+
+  #row 1
+  turtle.goto(x+(size/6), y-(size/6)-radius)
+
+  #circle 1
+  if (roll == 2 or roll == 3 or roll == 4 or roll == 5 or roll == 6):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+
+  turtle.forward(size/3)
+
+  #circle 2
+  '''
+  if ():
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+  '''
+
+  turtle.forward(size/3)
+
+  #circle 3
+  if (roll == 4 or roll == 5 or roll == 6):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+
+  #row 2
+  turtle.goto(x+(size/6), y-(size/6)-(size/3)-(radius))
+
+  #circle 1
+  if (roll == 6):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+
+  turtle.forward(size/3)
+
+  #circle 2
+  if (roll == 1 or roll == 3 or roll == 5):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+
+  turtle.forward(size/3)
+
+  #circle 3
+  if (roll == 6):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+
+  #row 3
+  turtle.goto(x+(size/6), y-(size/6)-((size/3)*2)-(radius))
+
+  #circle 1
+  if (roll == 4 or roll == 5 or roll == 6):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+
+  turtle.forward(size/3)
+
+  #circle 2
+  '''
+  if ():
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+  '''
+
+  turtle.forward(size/3)
+
+  #circle 3
+  if (roll == 2 or roll == 3 or roll == 4 or roll == 5 or roll == 6):
+    turtle.begin_fill()
+    turtle.circle(radius)
+    turtle.end_fill()
+
+def Die(x, y, size, radius, color1, color2):
+  turtle.speed(0)
+  turtle.hideturtle()
+  x -= (size/2)
+  y += (size/2)
+  drawBox(x, y, size, color1)
+  rolls(x, y, size, radius, color2, random.randint(1, 6))
+```
 
 # More You Can Create
+- [Add Randomized Colors](https://repl.it/@CosmicSnowman/Dice-Roll-Extended-1#dice.py)
+- [Add Nine Possible Choices](https://repl.it/@CosmicSnowman/Dice-Roll-Extended-2#main.py)
+- [Choose the Number of Dice](https://repl.it/@CosmicSnowman/Dice-Roll-Extended-3#main.py)
