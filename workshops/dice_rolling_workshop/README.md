@@ -371,6 +371,7 @@ def Die(x, y, size, radius, color1, color2):
 ```
 
 # More You Can Create
+- [Original Program](https://repl.it/@CosmicSnowman/Dice-Roll#main.py)
 - [Add Randomized Colors](https://repl.it/@CosmicSnowman/Dice-Roll-Extended-1#dice.py)
 - [Add Nine Possible Choices](https://repl.it/@CosmicSnowman/Dice-Roll-Extended-2#main.py)
 - [Choose the Number of Dice](https://repl.it/@CosmicSnowman/Dice-Roll-Extended-3#main.py)
