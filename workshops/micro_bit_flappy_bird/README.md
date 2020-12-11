@@ -17,19 +17,19 @@ The objective is to direct a flying bird :bird: which is moving continuously to 
 
 ## Prerequisites
 
-Extremely basic knowledge of any programming language. We are going to use JavaScript to code our micro:bit.
+We are going to use JavaScript to code our micro:bit. So you should have good knowledge of JavaScript and some ES6 concepts.
 
 If you don't have the hardware, don't worry we'll use a simulator in this workshop. [Makecode's](https://makecode.microbit.org) micro:bit simulator is excellent!
 
 ## Getting Started
 
-A micro:bit is a tiny piece of hardware with many features. It a pocket-sized computer which performs according to your instructions. A micro USB cable is used to transfer the code from PC to micro:bit.
+A micro:bit is a tiny piece of hardware with many features. It a pocket-sized computer which performs according to your instructions written in form of `program`. A micro USB cable is used to transfer the `program` from computer to micro:bit.
 
 ![micro:bit](https://cloud-kifx081bh.vercel.app/1microbit.jpg)
 
-A micro:bit can only do what you tell it to do. You can use different programming languages to write programs like [Makecode](https://makecode.microbit.org/), which you can use to code in code blocks or JavaScript. You can also use [Python](https://python.microbit.org/v/2) to program a micro:bit.
+You can use different programming languages to program your micro:bit. You can use [Makecode](https://makecode.microbit.org/) to program in code blocks or JavaScript. You can also use [Python](https://python.microbit.org/v/2) to program a micro:bit.
 
-On the front face, it has 25 LEDs which we will use to display our game.
+On the front face, it has 25 LEDs which we will use to display our game. And on the back face, it have some awesome pre-built sensors.
 
 These are the main parts of a micro:bit 👇
 
@@ -39,7 +39,7 @@ Learn more about micro:bit [here](https://microbit.org/get-started/user-guide/ov
 
 ## Setup
 
-Open [Makecode](https://makecode.microbit.org/) and click on :heavy_plus_sign:`New Project`.
+Open [Makecode](https://makecode.microbit.org/) and click on ➕`New Project`.
 
 ![Setup](https://cloud-kifx081bh.vercel.app/3setup.png)
 
@@ -51,7 +51,7 @@ You should see something like this.
 
 ![Project created](https://cloud-kifx081bh.vercel.app/5preview.png)
 
-Once you finish setting up, let's get going:rocket:
+Once you finish setting up, let's get going 🚀
 
 ## JavaScript
 
@@ -59,7 +59,7 @@ By default, MakeCode open's a project with code blocks. At top of the window, sw
 
 ![JavaScript](https://cloud-kifx081bh.vercel.app/6javascript.png)
 
-The MakeCode programming environment uses JavaScript along with the Static [TypeScript](https://www.typescriptlang.org/) language. Don't worry about TypeScript. It is super similar to JavaScript. We will use most of the micro:bit’s built-in JavaScript functions. For example, the `showString()` function displays a string on the LED screen. It will scroll to the left if it’s bigger than the screen.
+The MakeCode programming environment uses JavaScript along with the Static [TypeScript](https://www.typescriptlang.org/) language. Don't worry about TypeScript. It is super similar to JavaScript. We will use many of the micro:bit’s built-in JavaScript functions. For example, the `showString()` function displays a string on the LED screen. It will scroll to the left if it’s bigger than the screen.
 
 Try displaying your name. Here's mine: 😊
 
@@ -69,13 +69,13 @@ basic.showString("Giridhar!")
 
 ![name](https://cloud-kifx081bh.vercel.app/7name.gif)
 
-## Step-1
+## Step 1: Add the Bird to the Game
 
 Let's start with adding the bird. We just have 25 LEDs. So unfortunately, we'll have to assume a blinking LED as a bird 😂.
 
-Don't mind about the previously existing code. 
+Don't mind about the previously existing code.
 
-Create a new LED sprite pointing to the right. A sprite is like a little LED creature you can tell what to do.
+Create a new LED sprite pointing to the right.
 
 ```js
 let bird: game.LedSprite = null
@@ -83,19 +83,25 @@ bird = game.createSprite(0, 2)
 bird.set(LedSpriteProperty.Blink, 300)
 ```
 
-A variable `bird` is declared in TypeScript. The syntax of declaring a varible in TypeScript is: `let identifier:data-type = value;`
+Here, the variable `bird` is declared in TypeScript and initiated as `null`. One of the syntax of declaring a varible in TypeScript is: `let identifier:data-type = value;`. Learn more about variables in TypeScript [here](https://www.typescriptlang.org/docs/handbook/variable-declarations.html).
 
-The `game.createSprite(x,y)` creates a sprite(our bird) in position (x, y) on the 5x5 grid of LEDs. Then we set our bird to blink every 300 milliseconds.
+The `game.createSprite(x,y)` creates a sprite(our bird) in position (x, y) on the 5x5 grid of LEDs. 
 
-You can see our bird flying like this:point_down:
+![microbit-coordinates](https://cloud-aqjebemlu.vercel.app/0coordinates.png)
+
+> ⚠ **Note:** A sprite is like a little LED creature you can tell what to do.
+
+We can set the properties of the item using `set()` method. Then we set the `Blink` property of sprite for every 300 milliseconds.
+
+You can see our bird flying like this: 👇
 
 ![blinking LED](https://cloud-70aevdanf.vercel.app/0bird.gif)
 
-## Step-2
+## Step 2: Make the Bird fly
 
-Now let's create some controls.  We’ll control the bird by pressing the A button to go up or the B button to go down.
+Now let's add some controls so that we can move around.  We’ll control the bird by pressing the `A` button to go up or the `B` button to go down.
 
-Micro:bit has built-in [event handlers](https://makecode.microbit.org/reference/event-handler) that are associated with a particular event, such as "button A pressed".  `.onButtonPressed()` handler works when button A or B is pressed, or A and B together. They are just like event listeners in JavaScript but with custom events.
+Micro:bit has built-in [event handlers](https://makecode.microbit.org/reference/event-handler) that are associated with a particular event, such as "button A pressed".  The `onButtonPressed()` handler works when button `A` or `B` is pressed, or `A` and `B` together. They are just like event listeners in JavaScript but with custom events.
 
 ```js
 input.onButtonPressed(Button.A, function () {
@@ -106,15 +112,17 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
+Here, we use `change()` method to change property of the item. We can change the `Y` coordinate of the LED sprite using `change()` method.
+
 Now when any of the 2 buttons is pressed, the position of the bird should change by 1 unit(up or down).
 
 ![controls](https://cloud-70aevdanf.vercel.app/1controls.gif)
 
-## Step-3
+## Step 3: Generating obstacles
 
-Let's create some randomly generated obstacles for the bird to crash💥
+Let's create some randomly generated obstacles for the bird to crash 💥
 
-We’ll keep all obstacles inside an array. All obstacles will have a single hole for the bird to fly through.
+We’ll keep all obstacles inside an array of Led Sprites. All obstacles will have a single hole for the bird to fly through.
 
 First, create an array of `obstacles` that will hold all of the obstacle sprites.
 
@@ -149,13 +157,13 @@ Now with every micro:bit restart you should see different automatically generate
 
 ![random obstacles](https://cloud-70aevdanf.vercel.app/2random_obstacles.gif)
 
-Before continuing, make sure that obstacles are generated randomly and that the bird is moving up and down.
+Before continuing, make sure that obstacles are generated randomly and that the bird is moving up and down. If it doesn't work as expected, try to cross check your code.
 
-## Step-4
+## Step 4: Make obstacles move
 
-Let's make the obstacles move towards the bird. We have to make them move forever. The code inside `basic.forever()` keep running in the background. 
+Let's make the obstacles move towards the bird. We have to make them move forever. The code inside `basic.forever()` keeps running in the background forever. 
 
-Inside `forever()` access each obstacle using a `for` loop (iterate over the obstacles array) and decrease the obstacle `X` coordinate by `1`.
+Inside `forever()` access each obstacle using a `for` loop (iterate over the obstacles array) and decrease the obstacle `X` coordinate by `1` so that we can see them moving towards left. 
 
 ```js
 let obstacles: game.LedSprite[] = []
@@ -168,13 +176,15 @@ basic.forever(() => {
 })
 ```
 
-Here, `basic.pause()` pauses the program for 1000 milliseconds(i.e., 1 second). Now obstacles should move towards the left every second.
+Here, `basic.pause()` pauses the program for 1000 milliseconds(i.e., 1 second) for our convenience. You can control the speed of the obstacles by changing the pause time. 
+
+Now obstacles should move towards the left every second.
 
 ![moving obstacles](https://cloud-70aevdanf.vercel.app/3moving_onstacles.gif)
 
-## Step-5
+## Step 5: Make obstacles disappear
 
-Now let's make obstacles disappear after reaching the leftmost corner. Iterate over all obstacles, delete the obstacle sprites where the `X` coordinate equals `0`, and remove them from the `obstacles` array. `get(property: LedSpriteProperty)` is used to know about the properties of a sprite.
+Now let's make obstacles disappear after reaching the leftmost corner(i.e if their `X` coordinate is equal to `0`). Iterate over all obstacles, delete the obstacle sprites where the `X` coordinate equals `0`, and remove them from the `obstacles` array. We can use `get()` method to read the properties of an item. The `removeAt(n)` method is used to remove an element at `n` in an array and `delete()` method is used to delete it.
 
 ```js
 let obstacles: game.LedSprite[] = []
@@ -195,9 +205,9 @@ Now you see that when the obstacle reaches the bird it will just disappear.
 
 ![disappearing obstacle](https://cloud-70aevdanf.vercel.app/4disappearing_obstacles.gif)
 
-## Step-6
+## Step 6: Generate more obstacles
 
-At the moment, our code generates just one vertical obstacle at a time. We need to put obstacle generation code into the `forever` loop so that it keeps generating more and more obstacles.
+At the moment, our code generates just one vertical obstacle at a time. We need to put [obstacle generation code](#step-3:-generating-obstacles) into the `forever` loop so that it keeps generating more and more obstacles.
 
 ```js
 let emptyObstacleY = 0
@@ -216,11 +226,11 @@ basic.forever(() => {
 })
 ```
 
-Now our screen is full of moving obstacles like this :point_down:
+Now our screen is full of moving obstacles like this: 👇
 
 ![multiple obstacles](https://cloud-70aevdanf.vercel.app/5multiple_obs.gif)
 
-Let's create some spaces between generated obstacles. Create a new variable `ticks` to count how many iterations the forever loop has done and execute obstacle creation only `if` ticks is divisible by `3`.
+Let's create some spaces between generated obstacles. Create a new variable `ticks` to count how many iterations the forever loop has done and execute obstacle creation only `if` ticks is divisible by `3`. The space between the obstacles depends on the number you use. Try add different numbers insted of `3` and observe the patterns generated. 😇
 
 ```js
 let ticks = 0        
@@ -243,17 +253,17 @@ basic.forever(() => {
 })
 ```
 
-Now you can see obstacles created with spaces and moving towards the left.
+Now you can see obstacles created with a space of `2` blocks between them and moving towards the left.
 
 ![Moving left](https://cloud-70aevdanf.vercel.app/6crashing_obstacles.gif)
 
-## Step-7
+## Step 7: Game Over
 
 We are now in the last part of creating the Flappy Bird game. 
 
-Right now nothing happens when the bird is hit by an obstacle. We should end the game when the bird crashes into an obstacle. The built-in function `gameover()` ends the game and shows some cool animations. 
+Right now nothing happens when the bird is hits an obstacle. We should end the game when the bird crashes into an obstacle. The built-in function `gameover()` ends the game and shows some cool animations. 
 
-To do this, we have to iterate over the `obstacles` array and check if any `obstacle` sprite's coordinate is the same as the `bird`'s coordinate. If this condition turns out to be true, we call the `gameover()` function.
+To do this, we have to iterate over the `obstacles` array and check if any `obstacle` sprite's coordinates are the same as the `bird`'s coordinates. If this condition turns out to be true, we call the `gameover()` function.
 
 ```js
 let bird: game.LedSprite = null
@@ -322,22 +332,21 @@ basic.forever(() => {
 })
 ```
 
-## Step-8
+## Step 8: Working with Hardware
 
-If you are using hardware, click on the `Download` button and follow the instructions.
+If you are using hardware, connect the micro:bit to PC using USB cable. Now Click on the `Download` button and follow the instructions.
 
-You're all set. Now you can just play the game.
+You're all set. Now you can just play the game. 😋
 
 ![game](https://cloud-ak4m6yygi.vercel.app/0final_output.gif)
 
-That's it! You created a simple Flappy Bird game on a micro:bit. 
+That's it! You created a simple Flappy Bird game on a micro:bit. ✌
 
 ![well done](https://cloud-70aevdanf.vercel.app/8well_done.gif)
 
 ## Hacking 
 
 It's time for you to take charge.
-
 
 - Try to count and show the game score. We have a built-in function `score()` for counting score. Learn more [here](https://makecode.microbit.org/reference/game/score).
 
@@ -357,5 +366,7 @@ These are some examples from the makers of the micro:bit to inspire you.
 - Using accelerometer: [micro:bit leveler](https://makecode.microbit.org/_6c4DEwFq7ftg) and [Egg and Spoon Race](https://makecode.microbit.org/_9Cr8duiXqhAd)
 
 - Playing music: [Simple tilt alarm](https://makecode.microbit.org/_K4x1HtAccTPu)
+
+Improve the functionality of the game and share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6/) in the [Slack](https://slack.hackclub.com/).
 
 PS: I'm [@Giridhar](https://hackclub.slack.com/team/U013E6KE9UJ) on Slack!
