@@ -122,14 +122,12 @@ When we run our code, you will see that our content has been aligned to the cent
 
 ![Preview of HTML with CSS applied, to change the layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
 
-We're going to be using classes to add styling to our `div` tags, a class name is an HTML attribute that points a tag or a group of tags that have the same class name. Classes are used by CSS and JavaScript to select and access specific tags, the class attribute can be used on any HTML tag by adding the keyword `class=""` to it.
+We're going to be using classes to add styling to our `div` tags, a class name is an HTML attribute that points to a tag or a group of tags that have the same class name. Classes are used by CSS and JavaScript to select and access specific tags, the class attribute can be used on any HTML tag by adding the keyword `class=""` to it.
 
-Let's navigate back to our `index.html`, the parent `div` tag will be given the class name `pad` and our nested `div` tags, the class name `box` which will apply the styling our classes have.
+Let's navigate back to our `index.html`, We will give our parent `div` tag the class name `pad`, and all our nested `div` tags will get the class name `box` which will apply the styling that our classes have.
 
 ```html
-<!-- Here we give the parent div the class name pad -->
 <div  class="pad">
-<!-- Here we give the nested divs each the class name box that will add styling of each individual pad -->
   <div class="box">A</div>
   <div class="box">B</div>
   <div class="box">C</div>
@@ -174,7 +172,7 @@ Then we create three rows and four columns to correctly align our header and but
 }
 ```
 
-We will write styling for our class name `.box`, that will specify unique styling for our buttons.
+We will write styling for our class name `.box`, to specify our buttons unique styling.
 
 ```css
 .box {
@@ -229,7 +227,7 @@ We will then add styling that adds hovering effects, inactive or active states t
 }
 ```
 
-Now that we have finished our styling, let's now work on our drum pad functionality.
+Now that we have finished our styling, let's work on our drum pad functionality.
 
 ## JavaScript:
 
