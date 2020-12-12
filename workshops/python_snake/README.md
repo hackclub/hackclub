@@ -1,6 +1,6 @@
 ---
-name: 'Snake Game'
-description: 'The classic snake game recreated in Python'
+name: Snake Game
+description: The classic snake game recreated in Python
 author: '@kyryloren',
 img: 'https://cloud-i254770eq.vercel.app/0snake.png'
 ---
