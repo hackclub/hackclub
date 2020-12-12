@@ -33,7 +33,7 @@ We will write most of our HTML code inside the `<body>` tag. Let's start by crea
 <h1>DRUM PAD</h1>
 ```
 
-Just under the `<h1>` tag, we will have three rows and four columns of buttons. Each buttons will be created with the `<div>` tag. You can think of the `<div>` tag as a box or container, and we are using it because each of our buttons will have a boxy look.
+Just under the `<h1>` tag, we will have three rows and four columns of buttons. Each buttons will be created with the `<div>` tag. You can think of the `<div>` tag as a box or container, and we are using them because each of our buttons will have a boxy look.
 
 ```html
 <!-- Parent div -->
