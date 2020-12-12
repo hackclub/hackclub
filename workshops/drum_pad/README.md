@@ -27,13 +27,13 @@ You will see that there are already three files: index.html, style.css, and scri
 
 ## HTML:
 
-We will write most of our HTML code inside the `<body>` tag. Let's start by creating a header that displays the text `DRUM PAD` using the `<h1>` tag:
+We will write most of our HTML code inside the `body` tag. Let's start by creating a header that displays the text `DRUM PAD` using the `h1` tag:
 
 ```html
 <h1>DRUM PAD</h1>
 ```
 
-Just under the `<h1>` tag, we will have three rows and four columns of buttons. Each buttons will be created with the `<div>` tag. You can think of the `<div>` tag as a box or container, and we are using them because each of our buttons will have a boxy look.
+Just under the `h1` tag, we will have three rows and four columns of buttons. Each button will be created with the `div` tag. You can think of the `div` tag as a box or container, and we are using them because each of our buttons will have a boxy look.
 
 ```html
 <!-- Parent div -->
@@ -54,7 +54,7 @@ Just under the `<h1>` tag, we will have three rows and four columns of buttons. 
 </div>
 ```
 
-To quickly break this down. We have a parent `<div>` tag that nests our button `divs`, and we label our buttons with letters to easily identify them, and like I mentioned above, each button will be given a boxy look, and that's why we are using `div` tags.
+To quickly break this down. We have a parent `div` tag that nests our button `divs`, and we label our buttons with letters to easily identify them, and like I mentioned above, each button will be given a boxy look, and that's why we are using `div` tags.
 
 <details>  
 <summary>Here's what your entire index.html file should look like so far:</summary>
@@ -124,7 +124,7 @@ When we run our code, you will notice that our content has been aligned to the c
 
 We're going to be using classes to add styling to our `div` tags, a class name is an HTML attribute that points a tag or a group of tags that have the same class name. Classes are used by CSS and JavaScript to select and access specific tags, the class attribute can be used on any HTML tag by adding the keyword `class=""` to it.
 
-Let's navigate back to our `index.html`, the parent `<div>` tag will be given the class name `pad` and our nested `<div>` tags, the class name `box` which will apply the styling our classes have.
+Let's navigate back to our `index.html`, the parent `div` tag will be given the class name `pad` and our nested `div` tags, the class name `box` which will apply the styling our classes have.
 
 ```html
 <!-- Here we give the parent div the class name pad -->
