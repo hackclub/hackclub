@@ -94,7 +94,7 @@ When we run our code, it will look like this at the moment:
 
 # CSS:
 
-We will style our drum pad with CSS, which will make our drum pad look visually appealing.
+Now let's write some CSS styles for our drum pad to make it look visually appealing!
 
 Let's navigate to our `style.css` file and add the following code:
 
@@ -118,7 +118,7 @@ body {
 }
 ```
 
-When we run our code, you will notice that our content has been aligned to the center, and that's because we changed the properties of our `<body>` tag, and the `<body>` tag is the tag that renders content on web page.
+When we run our code, you will see that our content has been aligned to the center, and that's because we changed the properties of our `body` tag, and the tag basically renders the content on a web page.
 
 ![Preview of HTML with CSS applied, to change the layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
 
