@@ -33,7 +33,7 @@ We will write most of our HTML code inside the `body` tag. Let's start by creati
 <h1>DRUM PAD</h1>
 ```
 
-Just under the `h1` tag, we will have three rows and four columns of buttons. Each button will be created with the `div` tag. You can think of the `div` tag as a box or container, and we are using them because each of our buttons will have a boxy look.
+Just under the `h1` tag, we will have three rows and four columns of buttons. Each button will be created with a `div` tag. You can think of a `div` tag as a box or container, and we are using it because each of our buttons will have a boxy look.
 
 ```html
 <!-- Parent div -->
@@ -54,7 +54,7 @@ Just under the `h1` tag, we will have three rows and four columns of buttons. Ea
 </div>
 ```
 
-To quickly break this down. We have a parent `div` tag that nests our button `divs`, and we label our buttons with letters to easily identify them, and like I mentioned above, each button will be given a boxy look, and that's why we are using `div` tags.
+To quickly break this down. We have a parent `div` tag that nests our button `divs`, and then we label our buttons with letters to easily identify them, and like I mentioned above, each button will be given a boxy look, and that's why we are using `div` tags.
 
 <details>  
 <summary>Here's what your entire index.html file should look like so far:</summary>
