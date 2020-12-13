@@ -225,7 +225,7 @@ We will then add styling that adds hovering effects, inactive or active states t
   transform: scale(1.1);
 
   /* To learn more about the transition property, check out the hacking section */
-  transition: all  0.2s;
+  transition: all 0.2s;
 }
 ```
 
