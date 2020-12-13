@@ -38,7 +38,7 @@ Just under the `h1` tag, we will have three rows and four columns of buttons. Ea
 ```html
 <!-- Parent div -->
 <div>
-<!-- nested child divs -->
+  <!-- nested child divs -->
   <div>A</div>
   <div>B</div>
   <div>C</div>
@@ -65,7 +65,8 @@ To quickly break this down. We have a parent `div` tag that nests our button `di
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRUM PAD</title>
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <h1>DRUM PAD</h1>
@@ -83,6 +84,7 @@ To quickly break this down. We have a parent `div` tag that nests our button `di
         <div>K</div>
         <div>L</div>
     </div>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
@@ -127,7 +129,7 @@ We're going to be using classes to add styling to our `div` tags, a class name i
 Let's navigate back to our `index.html`, We will give our parent `div` tag the class name `pad`, and all our nested `div` tags will get the class name `box` which will apply the styling that our classes have.
 
 ```html
-<div  class="pad">
+<div class="pad">
   <div class="box">A</div>
   <div class="box">B</div>
   <div class="box">C</div>
@@ -178,10 +180,10 @@ We will write styling for our class name `.box`, to specify our buttons unique s
 .box {
   width: 100px;
   height: 100px;
-  margin: 10px  0;
+  margin: 10px 0;
 
   /* To learn more about the box-shadow property, check out the hacking section */
-  box-shadow: 0  8px  6px  -6px  black;
+  box-shadow: 0 8px 6px -6px black;
   background-color: #444;
   display: flex;
 
@@ -233,13 +235,7 @@ Now that we have finished our styling, let's work on our drum pad functionality.
 
 When you click on the buttons, we have no sound. We need to write some JavaScript code that will play sounds.
 
-Let's navigate to our the `index.html` file to link the JavaScript file. Then, inside the `<body>` tag at the bottom, we will link our `script.js` file with the following code:
-
-```html
-<script src="script.js"></script>
-```
-
-Now navigate to your `script.js` file and add the following code:
+Navigate to your `script.js` file and add the following code:
 
 ```javascript
 function play(link) {
@@ -249,7 +245,7 @@ function play(link) {
 }
 ```
 
-Here we created a function called `play()`, it receives a parameter, which is `link`. This is the link to the sound. We then create an audio object and pass the link to the object. Now we can just load the audio with the `load()` function and with the `play()` function we can play our sound. A function is a block of code designed to perform a particular task, it is executed when "something" invokes it (calls it).
+To explain what we did, we created a function called `play()`, it receives a parameter, which is `link`. This is the link to the sound. We then create an audio object and pass the link to the object. Now we can just load the audio with the `load()` function and with the `play()` function we can play our sound. A function is a block of code designed to perform a particular task, it is executed when "something" invokes it (calls it).
 
 All we need to do now is find a way to play sound when a button is clicked.
 
