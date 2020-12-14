@@ -36,7 +36,8 @@ We will not use the `.env` file just yet, instead go back to your main file and 
 load_dotenv() 
 app = Flask(__name__) 
 
-app.run(host='0.0.0.0' , port = 9060) 
+if __name__ == '__main__': 
+  app.run(host='0.0.0.0' , port = 9060) 
 ``` 
 The first one line `load_dotenv()` just finds and loads the your .env file and the second part line says that this python file is the main file to run flask in. The third line is just doing a simple if check that will then run flask on localhost with the port being 9060. Localhost is just a term that is meant to refer to your local computing hosting the file, not from a website. Although in this case, repl.it is hosting the file and we are accessing their localhost.
 
@@ -141,7 +142,7 @@ Go back to your `index.html` file, remove your `h1` line and add the following i
 ```
 This handles the user input and also the display of posts. The form section is where the user input is handled with the POST method meaning that the tet the user provides in the `subreddit` text box will be a value on the python side and we can get information from that. 
 
-POST is a type of web request in which there are many. The main ones you will see in development are POST and GET requests. A POST request is when one side of the program or application wants to send data to another program or application. We use POST requests in this form because we want to give data to Reddit about which subreddit we want to look at. 
+POST is a type of web request in which there are many. The main ones you will see in development are POST and GET requests. A POST request is when one side of the program or application wants to send data to another program or application. We use POST requests in this form because we want to give data to Reddit about which subreddit we want to look at. When we use POST here we send the subreddit we want to look at and Reddit sends us back either an error or the posts and information about the subreddit. The PRAW library lets us pick and choose which parts of Reddit we want to see in our custom client. We choose to see only the subreddit posts. 
 
 The block content part is where we display the posts. The weird ooking bracket syntax is called a `JINJA` template and is used to indicate special backend related functions. The `block content` is a special type in which all the information within it should be shown in a block by block structure. The `h1` is reciving data from the Python side and will show what the python code tells it instead of the `JINJA` syntax. We then use some logic by having a for loop. Then we just display the posts using the information that the backend (Python) provided us.
 
@@ -258,7 +259,10 @@ app.run(host='0.0.0.0' , port = 9060)
  
  Three hackable examples:
  [Setting a default subreddit](https://repl.it/@KaiSakurai/Custom-Reddit-Viewer-1)
+    - This demo sets the frontpage to the subreddit r/popular like the frontpage of normal Reddit. It achieves this by rendering the first page with the subreddit r/popular set.
  [Showing more post information](https://repl.it/@KaiSakurai/Custom-Reddit-Viewer-2)
+    - This demo shows more information about each post like upvotes, author and number of comments. The PRAW library has built-in methods to load this information and we pass them in like the URL element in our HTML.
  [Making upvote buttons](https://repl.it/@KaiSakurai/Custom-Reddit-Viewer-3555)
+    - We can use CSS to make buttons for each post by having a custom div act as our target element and have it repeat like all the other elements on the page. We also make the buttons out of pure CSS. Although the upvote and downvote do not have any real-world effects due to to our application having read-only permissions. 
  Thanks for reading!
  --Kai
