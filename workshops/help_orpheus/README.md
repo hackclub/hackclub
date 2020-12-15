@@ -89,7 +89,7 @@ SELECT * from TABLE_NAME ;
 ```
 Here * means all records and TABLE_NAME is the name of the table whose records you want to have!
 
-If you want to get some specific records in SQL then you use the `WHERE` clause. For example, if you want a record with username “badlo escoabr” and password “12345", you would write the following SQL.
+If you want to get some specific records in SQL then you use the `WHERE` clause. For example, if you want a record with username “badlo escobar” and password “12345", you would write the following SQL.
 
 ```sql
 
