@@ -36,8 +36,8 @@ We will not use the `.env` file just yet, instead go back to your main file and 
 load_dotenv() 
 app = Flask(__name__) 
 
-if __name__ == '__main__': 
-  app.run(host='0.0.0.0' , port = 9060) 
+
+app.run(host='0.0.0.0' , port = 9060) 
 ``` 
 The first one line `load_dotenv()` just finds and loads the your .env file and the second part line says that this python file is the main file to run flask in. The third line is just doing a simple if check that will then run flask on localhost with the port being 9060. Localhost is just a term that is meant to refer to your local computing hosting the file, not from a website. Although in this case, repl.it is hosting the file and we are accessing their localhost.
 
