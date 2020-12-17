@@ -158,7 +158,6 @@ Next, let's add styles for the score text, the obstacles and the button.
 
 ```css
 .score {
-  text-align: center;
   font-size: 26px;
 }
 
@@ -175,7 +174,7 @@ button {
   background-color: #e6f151;
   font-size: 15px;
   font-weight: 600;
-  margin: 1rem;
+  margin: 10px;
   padding: 8px 20px;
   outline: none;
   border: 0;
@@ -185,4 +184,299 @@ button {
 }
 ```
 
-Explanation: 
+Explanation: We simply set the font size of `score` to 26px. Then, we select the `obstacles` class. After giving it a specific `width` and `height`, we give it a reddish color. Then, just like our character, we also set its position to `relative`, `top` position of 50px and `left` position of 470px.
+
+Then we give some basic styles to the button such as the background color, text's font size, `font-weight` so that the text looks a bit bolder, a `margin` of 10px on all the sides, a `padding` of 8px on top and bottom and 20px on left and right. We remove its default `outline` and `border`, we set the `cursor` property to `pointer` and lastly, we give it a box shadow.
+
+Now comes the animation part! We will create 2 animations, 1 for jumping of our character and another for the movement of obstacles towards us. Let's first start with the `move` animation.
+
+```css
+@keyframes move {
+  0% {
+    left: 500px
+  }
+  100% {
+    left: -20px
+  }
+}
+```
+Explanation: If you remember the basics of CSS animations, you'll see that we first write `@keyframes` and then we write the name of our animation, then by opening curly brackets, we define the animation.
+
+What our animation simply does is changes its `left` position. At 0% of the animation, its left position will be 500px (it will be on the extreme right of our `game` div) and at 100% of the animation, its left position will be -20px! This will make it look like the obstacles are moving towards the left and out of the `game` div.
+
+Let's test our animation so that if you are confused, you'll get a very clear idea of how it works!
+
+For this, we'll create a new class `move` and give these animation properties to it.
+
+```css
+.move {
+  animation: move 1s infinite linear;
+}
+```
+
+**NOTE:** You can name the class anything you want, its not necessary for the name to match the animation name.
+
+Explanation: `animation` is the shorthand property which is combined of various other animation properties. The first is the `animation-name`, which in fact, we give it as `move`, then is the `animation-duration` which we set it as 1 second.
+
+Then is the `animation-iteration-count` which we set to `infinite` so our animation will run infinitely. The next property is known as `animation-timing-function` which basically defines the way an animation works. We use `linear` for this animation as it is the most suitable!
+
+Now whichever element has this `move` class will be animated with our `move` animation.
+
+Let's go back to our HTML and add this `move` class to the `obstacles` div.
+
+```html
+<div class="obstacles move"></div> <!-- Just add the move keyword after a space! -->
+```
+
+Now if you click `RUN` you'll be surprised!
+
+![our move animation working perfectly fine!](https://cloud-8td2hgnzi.vercel.app/03.gif)
+
+**NOTE:** After we are done testing this animation, remove the `move` class from the `<div>` because we don't want the animation to start directly after we `RUN` our code. We'll use JavaScript later to add the `move` class back again to the `<div>` accordingly.
+
+Now, we need to implement the `jump` animation!
+
+```css
+@keyframes jump {
+  0% {
+    top: 125px;
+  }
+  30% {
+    top: 60px;
+  }
+  50% {
+    top: 30px;
+  }
+  70% {
+    top: 60px;
+  }
+  100% {
+    top: 125px;
+  }
+}
+
+.jump {
+  animation: jump 0.8s linear;
+}
+```
+Explanation: We create the `jump` animation similar to the `move` animation but instead of changing its left position, we change its top position to get that sleek jumping effect! And then, we create a new class `jump` and apply this animation to that class.
+
+Now, if you want to test this animation, you can simply add this class to the `character` div and you'll see that your character jumps! As we haven't set it to iterate infinitely, it will only jump once after you `RUN` the code.
+
+![our character jumping!](https://cloud-e26ox5peb.vercel.app/04.gif)
+
+After we have done making our animations, it's time that we implement these animations using JavaScript, implement a scoring system and also a game over system!
+
+<detail><summary>Your final CSS code should look like this:</summary>
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&display=swap');
+
+* {
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.game {
+  width: 500px;
+  height: 200px;
+  border: 2px solid #000;
+  overflow: hidden;
+}
+
+.character {
+  width: 60px;
+  height: 80px;
+  background-image: url("orpheus.png");
+  background-size: cover;
+  position: relative;
+  top: 125px;
+  left: 20px;
+  z-index: 2;
+}
+
+.score {
+  font-size: 26px;
+}
+
+.obstacles {
+  width: 30px;
+  height: 70px;
+  background-color: #ee3f3f;
+  position: relative;
+  top: 50px;
+  left: 470px;
+}
+
+button {
+  background-color: #e6f151;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px;
+  padding: 8px 20px;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.9);
+}
+
+
+@keyframes move {
+  0% {
+    left: 500px
+  }
+  100%{
+    left: -20px
+  }
+}
+
+.move {
+  animation: move 1s infinite linear;
+}
+
+@keyframes jump{
+  0% {
+    top: 125px;
+  }
+  30% {
+    top: 60px;
+  }
+  50% {
+    top: 30px;
+  }
+  70% {
+    top: 60px;
+  }
+  100% {
+    top: 125px;
+  }
+}
+
+.jump {
+  animation: jump 0.8s linear;
+}
+```
+
+</details>
+
+### 3) JavaScript
+
+Let's start writing the second most important part, that is JavaScript inside the `script.js` file!
+
+First, let's declare some important variables and also access the required DOM elements.
+
+```js
+const character = document.querySelector(".character")
+const obstacles = document.querySelector(".obstacles")
+const scoreText = document.querySelector(".score")
+let score = 0;
+let isStarted = false;
+```
+
+Explanation: We'll create a variable `character` which will access the DOM element which has the class of `character` using the `querySelector()` method. The querySelector() method returns the first element that matches a specified CSS selector(s) in the document. In the same manner, we also access the elements which have the classes `obstacles` and `score`.
+
+Next, we define a `score` variable and set it to 0. We also define a boolean `isStarted` which is set to `false`. We'll basically use this variable to check each time if the game is started or not. The game doesn't start until the player clicks the start button. So, it's set to `false` as the default.
+
+Next, let's create a function which will enable us to add the jump animation to the character.
+
+```js
+function jump() {
+  if (character.classList !== "jump") {
+    clearTimeout()
+    character.classList.add("jump");
+    setTimeout(() => {
+      character.classList.remove("jump");
+    }, 700);
+  }
+}
+```
+Explanation: Basically, we don't want to add the `jump` class to our `character` if it's already jumping. If we don't ensure this, we might face several bugs. So, to be on the safer side, we first check if the `character` already has the `jump` class or not (If the character already has it, it means that the character is jumping). So, If it doesn't have the `jump` class in its `classList`, we'll add that class to it!
+
+But we also need to remove this class after a specific time. If you remember, the jump animation lasts for 800 miliseconds. So, after we add the class to the character, we set a `timeout` of 700 miliseconds and immediately after that, we remove the `jump` class from the character.
+
+Also, to clear all the past unfinished timeouts before we do anything, we call the `clearTimeout()` function which ensures that we always set a fresh new `timeout`.
+
+**NOTE:** Wondering when `jump()` will be called and executed? If you remember, we passed an `onclick` attribute to the `game` div in our HTML. So yeah! that's our answer! Whenever we click on the `game` div, the character jumps!
+
+Try clicking to test it!
+
+![testing of our jump() function](https://cloud-er3hifytb.vercel.app/05.gif)
+
+Now, let's create a function which will start the movement of the obstacles.
+
+```js
+function startMoving() {
+  if (obstacles.classList !== "move") {
+    obstacles.classList.add("move")
+  }
+}
+```
+
+Explanation: Similar to the above function, if the `obstacles` don't have the `move` class, we'll simply add it to its `classList`.
+
+If we `RUN` the code now, we won't much JavaScript into action because we haven't called our functions yet except the `jump()` function.
+
+So let's create a `start()` function, which will start the game on clicking the start button!
+
+```js
+function start() {
+  if (!isStarted) {
+    isStarted = true;
+    startMoving();
+  }
+}
+```
+
+
+
+
+# TODO
+
+## Part 4: The End
+
+Annd we just learnt React Leaflet and built this wonderful map!
+
+[yay](https://media.giphy.com/media/xUPGcMzwkOY01nj6hi/giphy.gif)
+
+Make sure you create an account on CodeSandbox to save this wonderful piece of creation or you'll loose it 😧.
+
+Now it is up to you! Do crazy things with this project!
+
+Here are some helpful links:
+
+1. [LeafletJS Documentation](https://leafletjs.com/)
+
+2. [React Leaflet Documentation](https://react-leaflet.js.org/docs/start-introduction)
+
+Here are some tasks for you:
+
+1. Play around with different types of Tile Layers!  
+[Here is the full list](https://leaflet-extras.github.io/leaflet-providers/preview/)
+
+2. Add popups and markers to your map!  
+[Example](https://react-leaflet.js.org/docs/example-popup-marker)
+
+3. Create a map which shows your location!  
+[Example](https://react-leaflet.js.org/docs/example-events)
+
+Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
+
+You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.
+
+1. In a new tab, open and follow [these directions][slack] to signup for our Slack.
+2. Then, post the link to the [`#ship`](https://hackclub.slack.com/messages/ship) channel to share it with everyone and also ping me!
+
+[slack]: https://slack.hackclub.com/
+
+
+PS. I'm `@fayd` on slack.
