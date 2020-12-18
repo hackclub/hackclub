@@ -19,7 +19,9 @@ to do that on your first line write the code
 ```python 
    import random
 ```
- Now we want to declare some :jared you can continue from here
+ Now let create the class name `game` where all our code will be stored(reason).
+ 
+ jared you can continue from here
  so first say in few short word wha the first thing the person as to do, declaring variable...inside a function, now to write the code on this page you must use 3 of this 
 # Challenge 
 
