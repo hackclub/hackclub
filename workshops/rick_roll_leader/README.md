@@ -33,7 +33,7 @@ Once you verify your email, you'll be taken to another page which asks you to in
 
 ![](img/dashboard.png)
 
-Once you verify your phone number, you should be redirected to the Nexmo dashboard. You should also notice that you have \$2 in free credit. Calls cost 1.39 cents per minute, so plan accordingly. If you lead a large club, you may want to consider adding some extra money to your account to ensure your funds don't run out during your meeting.
+Once you verify your phone number, you should be redirected to the Nexmo dashboard. You should also notice that you have $2 in free credit. Calls cost 1.39 cents per minute, so plan accordingly. If you lead a large club, you may want to consider adding some extra money to your account to ensure your funds don't run out during your meeting.
 
 Copy your API key and API secret and store them somewhere where you can easily retrieve them.
 
