@@ -2,6 +2,7 @@
 name: 'Discord Custom Message Bot'
 description: 'Save your own own custom messages with a Discord Bot!'
 author: '@JakeGerber'
+img: 'https://cloud-bj4vorj8t.vercel.app/examplebot.png'
 ---
 
 In this workshop, we're going to create a Discord bot that allows users to save custom messages that they can have the bot send at any time. By the end you will have programmed a sweet bot to add to your Discord server!
