@@ -72,7 +72,7 @@ Next, outside the `<div>`, we'll add a `<p>` tag for displaying score and also a
 </body>
 ```
 
-And lastly, we'll add `onclick` attributes to the `div` with the class of `game` and also to the button so that the functions (which we'll create very soon) can be triggered on clicking that DOM element.
+And lastly, we'll add `onclick` attributes to the `div` with the class of `game` and also to the button so that the functions (which we'll be creating very soon) can be triggered on clicking those DOM elements.
 
 Your HTML code should look something like this!
 ```html
@@ -122,7 +122,7 @@ Explanation: First, we simply import a font named `Montserrat Alternates` from [
 
 Next, we select the `body` and set its display to `flex` so that by using the `align-items` and `justify-content` properties, we can align our elements to the center of the screen. For this we also require the `min-height` to be set to `100vh` (viewport height), so we exactly do that in the next line.
 
-If you are new to viewport units, learn more about them [here](https://css-tricks.com/fun-viewport-units/).
+If you are new to `viewport units`, learn more about them [here](https://css-tricks.com/fun-viewport-units/).
 
 Next, let's add some more styles, specifically to the `<div>` tags.
 
@@ -148,7 +148,7 @@ Next, let's add some more styles, specifically to the `<div>` tags.
 
 Explanation: The `div` with the class of `game` gets a `width` and a `height` of 500px and 200px respectively. Then, we also give it a black solid border of 2px. The `overflow` is set to hidden so that when the game actually works, we won't see overflowing obstacles going out of the div.
 
-Next, the `character` is given a width and a height of 60px and 80px respectively. The background image is set to the image's file name which we downloaded. Make sure with the name of the image file, for me it was `orpheus.png`, it might be different for you. If it is, simply replace the `url` with your image name. The `background-size` property is set to `cover` so that the image doesn't look buggy.
+Next, the `character` is given a `width` and a `height` of 60px and 80px respectively. The background image is set to the path of image's file name which we downloaded. Make sure with the name of the image, for me it was `orpheus.png`, it might be different for you. If it is, simply replace the `url` with your image's name. The `background-size` property is set to `cover` so that the image doesn't look buggy.
 
 Next, we set its position to `relative` so that we can position it properly inside the `game` div. Then, its `top` position is set to 125px and `left` position is set to 20px and we give it a z-index of 2 so it appears above all the other elements.
 
@@ -206,11 +206,11 @@ Now comes the animation part! We will create 2 animations, 1 for jumping of our 
 ```
 Explanation: If you remember the basics of CSS animations, you'll see that we first write `@keyframes` and then we write the name of our animation, then by opening curly brackets, we define the animation.
 
-What our animation simply does is changes its `left` position. At 0% of the animation, its left position will be 500px (it will be on the extreme right of our `game` div) and at 100% of the animation, its left position will be -20px! This will make it look like the obstacles are moving towards the left and out of the `game` div.
+What our animation simply does is changes its `left` position. At 0% of the animation, its left position will be 500px (it will be on the extreme right of our `game` div) and at 100% of the animation, its left position will be -20px! This will make it look like the obstacles are moving towards the left and beyond!
 
 Learn more about [CSS animations](https://www.script-tutorials.com/css-animation-guide-for-novices/).
 
-Let's test our animation so that if you are confused, you'll get a very clear idea of how it works!
+Let's test this animation so that if you are confused, you'll get a very clear idea of how it works!
 
 For this, we'll create a new class `move` and give these animation properties to it.
 
@@ -274,9 +274,9 @@ Now, if you want to test this animation, you can simply add this class to the `c
 After we have done making our animations, it's time that we implement these animations using JavaScript, implement a scoring system and also a game over system!
 ### 3) JavaScript
 
-Let's start writing the second most important part, that is JavaScript inside the `script.js` file!
+Let's start writing JavaScript inside the `script.js` file.
 
-First, let's declare some important variables and also access the required DOM elements.
+First, let's declare some variables to access the required DOM elements.
 
 ```js
 const character = document.querySelector(".character")
@@ -288,7 +288,7 @@ let isStarted = false;
 
 Explanation: We'll create a variable `character` which will access the DOM element which has the class of `character` using the `querySelector()` method. The `querySelector()` method returns the first element that matches a specified CSS selector(s) in the document. In the same manner, we also access the elements which have the class `obstacles` and `score`.
 
-Next, we define a `score` variable and set it to 0. We also define a boolean `isStarted` which is set to `false`. We'll basically use this variable to check each time if the game is started or not. The game doesn't start until the player clicks the start button. So, it's set to `false` as the default.
+Next, we define a `score` variable and set it to 0. We also define a boolean `isStarted` which is set to `false`. We'll basically use this variable to check each time if the game has started or not. The game doesn't start until the player clicks the start button. So, it's set to `false` as the default.
 
 Next, let's create a function which will enable us to add the jump animation to the character.
 
@@ -327,7 +327,7 @@ function startMoving() {
 
 Explanation: Similar to the above function, if the `obstacles` don't have the `move` class, we'll simply add it to its `classList`.
 
-If we `RUN` the code now, we won't much JavaScript into action because we haven't called our functions yet except the `jump()` function.
+If we `RUN` the code now, we won't see much JavaScript into action because we haven't called our functions yet except the `jump()` function.
 
 So let's create a `start()` function, which will start the game on clicking the start button!
 
@@ -396,7 +396,7 @@ function scoreCounter() {
 }
 ```
 
-Explanation: As we don't want this function to run if the game is not started, we make use of the `isStarted` boolean to check that. If the game is not started, we simply don't want to do anything, so we do an early return. If that condition is not passed, it simply means that the game is started. So we add 1 to the `score` variable and also by using `innerHTML` we display the score on the browser screen!
+Explanation: As we don't want this function to run if the game is not started, we make use of the `isStarted` boolean to check that. If the game is not started, we simply don't want to do anything, so we do an early return. If that condition is not passed, it simply means that the game is started. So we keep adding 1 to the `score` variable and also by using the `innerHTML` property, we display the score on the browser screen!
 
 Learn more about [early returns](https://dev.to/jenniferlynparsons/early-returns-in-javascript-5hfb).
 
@@ -420,7 +420,7 @@ Now we'll see that the score increases as we play the game!
 
 ![our score implementation works fine!](https://cloud-fw9vqdvtx.vercel.app/07.gif)
 
-Now, it's time to implement a function which will check if the character collides with any obstacles and if it does, it will simply end the game!
+Now, it's time to implement a function which will check if the character collides with any obstacles or not. And if it does, it will simply end the game!
 
 ```js
 function checkDead() {
@@ -445,7 +445,7 @@ The `Window.getComputedStyle()` method returns an object containing the values o
 
 Learn more about [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle).  
 
-Now, the `character` is already 20px away from the left and the `character`'s width is 60px. Adding that, we get 80px. This should be the maximum value of the `left` position and 20px should be the minimum value. So, if an `obstacle` is anywhere in between this position, this will mean that an `obstacle` and the `character` are overlapping each other.
+Now, the `character` is already 20px away from the left and `character`'s width is 60px. Adding that, we get 80px. This should be the maximum value of the `left` position and 20px should be the minimum value. So, if an `obstacle` is anywhere in between this position, this will mean that an `obstacle` and the `character` are overlapping each other.
 
 We also check if the `character`'s top position is greater that 60px or not. Because, if it isn't greater than 60px, then the `character` is jumping and its top position somewhat less than 60px.
 
@@ -548,7 +548,7 @@ Here are some tasks for you:
 
 2. Add more different types of obstacles.
 
-3. Increase the speed of the game as one moves ahead.
+3. Increase the speed of the game as it moves ahead.
 
 Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
 
