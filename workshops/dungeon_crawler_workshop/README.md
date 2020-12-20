@@ -7,7 +7,7 @@ image: 'https://cloud-3oy6wuv14.vercel.app/0screenshot__1430_.png'
 
 # Create a Dungeon Crawler Overworld!
 
-In this workshop, we will be creating a dialogue tree system with C#.
+In this workshop, we will be creating a dungeon crawler overworld with Python and the turtle library!
 
 <img src="https://cloud-3oy6wuv14.vercel.app/0screenshot__1430_.png" width="900" alt="Dungeon Crawler Example">
 
@@ -16,9 +16,11 @@ In this workshop, we will be creating a dialogue tree system with C#.
 # Repl.it Setup
 Let's begin!
 
+<img src="https://media.tenor.com/images/5cdca354a391fe57bd449ae1acb45c2e/tenor.gif" width="380" alt="Bart Simpson Dancing Gif">
+
 We're going to use [Repl.it](https://repl.it/~) to create the project. It is an IDE which allows us to write our code online. No downloads necessary.
 
-Create a new repl and use C# as the language.
+Create a new repl and use Python as the language.
 
 <img src="https://cloud-eyujimcxl.vercel.app/0screenshot__1431_.png" width="600" alt="Python Repl">
 
@@ -35,6 +37,7 @@ turtle.hideturtle()
 This sets up the array and initial player position.
 
 # Reading Text File
+<img src="https://media3.giphy.com/media/WoWm8YzFQJg5i/giphy.gif" width="380" alt="Spongebob Reading Gif">
 
 ```py
 import turtle
@@ -65,6 +68,8 @@ f.close()
 - The text file lines are being added to an array, which is then added to the "myarr" array, creating a [2D array](https://www.tutorialspoint.com/python_data_structure/python_2darray.htm).
 
 # Drawing the Square Function
+<img src="https://i.imgur.com/FkDPzDz.gif?noredirect" width="380" alt="Squidward Bold and Brash Gif">
+
 ```py
 #This is right under our initial statements and reading the text file.
 def drawSquare(x, y, side, color):
@@ -79,7 +84,7 @@ def drawSquare(x, y, side, color):
     turtle.end_fill()
 ```
 - Add this function right under our initial statements and reading the text file.
-- This function takes in x and y coordinates, the size of the square, and the color.
+- This function takes in x and y coordinates, the size of the square, and the [color](https://trinket.io/docs/colors).
 - The turtle begins a fill and draws a filled in square at the coordinates.
 
 # Drawing the Map Function
@@ -118,6 +123,9 @@ drawMap()
 
 # Movement
 Let's break down the movement.
+
+<img src="https://media1.tenor.com/images/eaaee9a9d645b72a7dfb6b867659a8e4/tenor.gif?itemid=13599207" width="380" alt="Spongebob Brings It Around Town Gif">
+
 ## Up
 ```py
 def up():
@@ -183,6 +191,8 @@ def right():
 - The "drawMap" function is called to update the turtle to draw the map again.
 
 # Listening for Player Input
+<img src="https://media0.giphy.com/media/tqfS3mgQU28ko/giphy.gif" width="380" alt="Spongebob Music Gif">
+
 ```py
 turtle.onkey(up, "w")
 turtle.onkey(left, "a")
@@ -196,7 +206,10 @@ turtle.mainloop()
 - The turtle is also always listening for input.
 
 # Final Source Code (for the Main File)
-Here is the final source code! Make sure you have a "map.txt" with your created map within it.
+Here is the final source code for the main file!
+
+<img src="https://media1.giphy.com/media/IoMkSXKHQIDVm/200.gif" width="380" alt="Spongebob Happy Gif">
+
 ```py
 import turtle
 
