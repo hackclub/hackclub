@@ -61,7 +61,8 @@ while(True):
 
 f.close()
 ```
-The text file lines are being added to an array, which is then added to the "myarr" array, creating a 2D array.
+- The [turtle library](https://docs.python.org/3/library/turtle.html) is being imported so we can draw to the screen.
+- The text file lines are being added to an array, which is then added to the "myarr" array, creating a [2D array](https://www.tutorialspoint.com/python_data_structure/python_2darray.htm).
 
 # Drawing the Square Function
 ```py
@@ -83,7 +84,7 @@ def drawSquare(x, y, side, color):
 
 # Drawing the Map Function
 ```py
-
+#This comes after everything we already wrote.
 def drawMap():
   x = -120
   y = 60
@@ -112,11 +113,11 @@ drawMap()
 ```
 - This function goes below the "drawSquare" function we just wrote.
 - The tracer and update function surrounding our for loops make it so we do not keep refreshing after every square we draw. Without it, our program will take a long to draw.
-- We are reading the character and drawing a corresponding square.
+- We are reading the character and calling the "drawSquare" function with the corresponding parameters.
 - Add the "drawMap" call at the end so we can draw the inital map.
 
 # Movement
-
+Let's break down the movement.
 ## Up
 ```py
 def up():
@@ -130,6 +131,8 @@ def up():
   turtle.clear()
   drawMap()
 ```
+- This checks if the square above your current position is empty space and if it is, it changes the array values.
+- The "drawMap" function is called to update the turtle to draw the map again.
 
 ## Down
 ```py
@@ -144,6 +147,8 @@ def down():
   turtle.clear()
   drawMap()
 ```
+- This checks if the square below your current position is empty space and if it is, it changes the array values.
+- The "drawMap" function is called to update the turtle to draw the map again.
 
 ## Left
 ```py
@@ -158,6 +163,8 @@ def left():
   turtle.clear()
   drawMap()
 ```
+- This checks if the square left of your current position is empty space and if it is, it changes the array values.
+- The "drawMap" function is called to update the turtle to draw the map again.
 
 ## Right
 ```py
@@ -172,6 +179,8 @@ def right():
   turtle.clear()
   drawMap()
 ```
+- This checks if the square right of your current position is empty space and if it is, it changes the array values.
+- The "drawMap" function is called to update the turtle to draw the map again.
 
 # Listening for Player Input
 ```py
@@ -183,8 +192,10 @@ turtle.onkey(down, "s")
 turtle.listen()
 turtle.mainloop()
 ```
+- Player input for w, a, s, and d and the corresponding movement function is called.
+- The turtle is also always listening for input.
 
-# Final Source Code
+# Final Source Code (for the Main File)
 Here is the final source code! Make sure you have a "map.txt" with your created map within it.
 ```py
 import turtle
@@ -305,6 +316,24 @@ turtle.onkey(down, "s")
 turtle.listen()
 turtle.mainloop()
 ```
+
+# The Text File
+<img src="https://cloud-4dguhfgxx.vercel.app/0screenshot__1432_.png" width="380" alt="Map Text File">
+- Create a new text file named "map.txt" and add 0s, 2s, and a 1 for the empty space, walls, and player.
+- Be sure to update the "col" and "row" values depending on where you place the player!
+
+```
+222222222222222222222222
+210000000000200000000002
+200000000000200000000002
+200022220000200222222202
+200020020000200000002202
+200020022000000000002202
+200020002222200000002202
+200020000000000000002202
+222222222222222222222222
+```
+Here's an example map I created with the col and row values both as 1.
 
 # More You Can Create
 - [Original Program](https://repl.it/@CosmicSnowman/Dungeon-Workshop#main.py)
