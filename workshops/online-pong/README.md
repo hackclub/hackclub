@@ -7,7 +7,9 @@ img: 'https://cloud-a4tglngif.vercel.app/0thumb.png'
 
 Perhaps you've built simple games before, but have you ever built a multiplayer game? In this workshop, we we will be building a simple online version of the classic game of Pong - one that you can play it with someone else on a different computer, or even in a different country! We will be using a fantastic open-source TypeScript framework called [Colyseus.js](https://colyseus.io/) that makes the networking and matchmaking (connecting users to a game automatically when they open the site) easy!
 
-TODO Link to final game, github repo
+[If you get stuck, you can always view the code files here](https://github.com/scitronboy/multiplayer-pong/tree/workshop/replit)
+
+TODO Link to final game
 
 ## Prerequisites
 
@@ -33,9 +35,20 @@ So, here's the brief explanation of the project:
 
 Well, let's get started!
 
-## Part 1 - Setting up the Server
+## Part 1 - Setting up the Project and Server
 
-I'll be coding everything on Repl.it in this workshop (but if you want, you can use a local environment), so let's create an empty project by going to <https://repl.it/languages/typescript>. I would recommend renaming it to something like "Pong" from the dropdown at the top so you can easily find it later.
+I'll be coding everything on Repl.it in this workshop (but if you want, you can use a local environment). Before we start, you'll have to [create your own Repl account] if you haven't already. 
+
+I have created a template with the code we'll need to begin with. [Click here to access the template](https://repl.it/@scitronboy/MultiplayerPong-template). Then, click the fork button to make your own copy of the template:
+
+![fork button](https://cloud-crjvx8agm.vercel.app/0forkbutton.png)
+
+Or, if you want to start from scratch and add the first few files yourself instead of using the template, click below.
+
+<details>
+<summary>I don't want to use the template</summary>
+
+Create an empty project by going to <https://repl.it/languages/typescript>. I would recommend renaming it to something like "Pong" from the dropdown at the top so you can easily find it later.
 
 First things first, let's properly configure the project and add the packages we'll need. Open `tsconfig.json` and replace everything with this, so it works with Colyseus:
 
@@ -116,7 +129,7 @@ gameServer.listen(port) // Finally, we start the server by listening to incoming
 console.log(`Listening on http://localhost:${ port }`)
 ```
 
-The server will work now, but it doesn't actually _do_ anything. Let's fix that. Create two new empty files, `game.html`, and `game.js`. As mention previously, these files will be sent to the player to run on their computers!
+The server will work now, but it doesn't actually _do_ anything. Let's fix that. Create two new empty files, `game.html`, and `game.js`. As mentioned previously, these files will be sent to the player to run on their computers!
 
 In `game.html` let's add a basic HTML page with a title and header, that also imports the `game.js` script using a `<script>` tag:
 
@@ -151,25 +164,29 @@ Basically, these are both Express "routes" that the server performs when the use
 
 You might have noticed the colons and `express.Request` and `express.Response` after the `req` and `res` (request and response) arguments. This is a typescript feature, and it simply tells typescript what type the arguments are so that it can do proper type checking on them.
 
+_----End of template setup----_
+
+</details>
+
 Let's press the "Run" button now and see what happens.
 
 Your project and `index.ts` should look something like this now:
 
 ![The index.ts file](https://cloud-ek1yunog1.vercel.app/0pbeginning.png "The index.ts file")
 
-After waiting a few seconds for it to run - hopefully without errors - you'll notice a new popup in the top right, showing a blank window that might look like this:
+After waiting a few moments for it to run - hopefully without errors - you'll notice a new popup in the top right, showing a blank window that might look like this (or it might be completely blank):
 
 ![The broken preview](https://cloud-58evowjmq.vercel.app/0brokenpreview.png "the broken preview")
 
-This isn't bad, as it's caused by a workaround we used for Colyseus in our server file. All you need to do is click on the little icon at the top right to open it in a new tab instead, where it should work:
+This isn't really a problem, as it's caused by a workaround we used for Colyseus in our server file (it's related to complicated WSS colyseus support on Repl.it, in case you were wondering). All you need to do is click on the little icon at the top right to open it in a new tab instead, where it should work:
 
 ![The blank pong page](https://cloud-qfkqba8yv.vercel.app/0blankpongpage.png "Blank pong page you should see when you open a new tab")
 
 Yeah!! The server works!! 
 
-I should note that whenever you make changes to the server (`index.ts` or `PongRoom.ts`) you will need to press the "run" button again, but whenever you make changes to the client (`game.html` or `game.js`) all you have to do is reload the tab (the one you got when you pressed the new tab icon, not the Repl.it tab!).
+I should note that whenever you make changes to the code you will have to reload the game tabs to see the changes (the one you got when you pressed the new tab icon, not the Repl.it tab!).
 
-## Part 2 - The Canvas, Game Loop, Colyseus.js, and User Input, but not necesarilly in that order.
+## Part 2 - The Canvas, Game Loop, Colyseus.js, and User Input, But not Necesarilly in That Order.
 
 Now we can start writing the `game.js` file! But first, let's import the Colyseus.js library by adding a script tag in `game.html` right below the closing `</head>` tag:
 
@@ -283,7 +300,7 @@ function draw () {
 
 let lastRender = 0 // Initialize lastRender variable to keep track of when the loop was last run.
 function loop(timestamp) {
-  var delta = timestamp - lastRender // How many milliseconds have past since the loop last ran?
+  let delta = timestamp - lastRender // How many milliseconds have past since the loop last ran?
 
   // Erase the canvas and refill with black every time the loop runs
   ctx.fillStyle = 'black'
@@ -573,14 +590,14 @@ Open `PongRoom.ts` again and scroll down to the `update` function in the `PongRo
 Here's how it will work:
 
 1. We keep track of the x position, y position (**where a greater y value means the ball is closer to player 2**), direction (1 means it's flying toward player 2, 0 means it's flying toward player 1) and angle (-1 means it's aiming 45 degrees left, 1 means it's aiming 45 degrees right, 0 means it's flying straight up or down) of the pong ball in the room state (we added this earlier).
-2. Each update, we move it (delta/3) y pixels in whichever direction it's travelling. If the direction is 1 (`true`), we move the ball **towards** player 2 by increasing the ball's Y position, and if it's 0 (`false`) we decrease the ball's Y position, moving it away from player 2.  (we'll keep delta/3 as a variable named `speedConstant` so that we can easily access or change it). Because we are changing the ball's position by (`delta / 3`) pixels each frame, that means it would move 1000 pixels across the canvas in 3 seconds, because delta (time) counts how many milliseconds (thousandths of a second) haved passed. We also add (the angle value * (delta/3)) to the ball's X position each frame to get a new x position for the ball. This means that if the angle value is 1, the ball will move sideways (along the X axis) the same amount as it will move vertically (along the Y axis) - aka 45 degrees.
+2. Each update, we move it (delta/3) y pixels in whichever direction it's travelling. If the direction is 1 (`true`), we move the ball **towards** player 2 by increasing the ball's Y position, and if it's 0 (`false`) we decrease the ball's Y position, moving it away from player 2.  (we'll keep delta/3 as a variable named `speedConstant` so that we can easily access or change it). Because we are changing the ball's position by (`delta / 3`) pixels each frame, that means it would move 1000 pixels across the canvas in 3 seconds, because delta (time) counts how many milliseconds (thousandths of a second) have passed each frame. We also add (the angle value * (delta/3)) to the ball's X position each frame to get a new x position for the ball. This means that if the angle value is 1, the ball will move sideways (along the X axis) the same amount as it will move vertically (along the Y axis) - aka 45 degrees.
 3. If we detect the ball has moved within the "goal" area of either player (within 20px of the end) by using an `if` statement to check the ball's Y position, we check to see if it collided with the racket by comparing the ball's X position with the racket's X position.
 4. If it **did not** collide, we increment the other player's score, and reset the ball's position and start a new round using the same `startGame` function we wrote earlier.
 5. If it **did** collide, we switch the direction of the ball, and calculate the new direction it's flying in using this formula: ((ball x position - center of racket x position) / "bounce constant (which will be 40)"). Basically, this formula will ensure that when the ball bounces on one side of the racket, it bounces off in that direction, at an angle proportional to the distance from the center of the racket. When the ball bounces off the center of the racket, it will fly in a straight line, as described by this drawing:
 
-![Basic pong physics](https://cloud-fnc0pkw30.vercel.app/0pongphysics.png "Basic pong physics")
+ ![Basic pong physics](https://cloud-fnc0pkw30.vercel.app/0pongphysics.png "Basic pong physics")
 
-Note that you can adjust this formula if you want the ball to bounce differently. Setting the "bounce constant" variable to half the racket width (50) would cause a maximum bounce angle of 45 degrees, but we will decrease that to 40 to give a slighly larger possible bounce angle.
+ Note that you can adjust this formula if you want the ball to bounce differently. Setting the "bounce constant" variable to half the racket width (50) would cause a maximum bounce angle of 45 degrees, but we will decrease that to 40 to give a slighly larger possible bounce angle.
 6. If we detect the ball touching a side of the canvas using another `if` statement, we flip the angle (multiply it by `-1`) so it bounces back.
 7. If either player has more than 10 points, we'll set `hasWon` to true for that player and destroy/disconnect the room. We will use this variable in the next step to announce the winner.
 
@@ -632,7 +649,7 @@ update (delta: number) {
 }
 ```
 
-Close the two game tabs you already had open and open two new ones so you can test it out! If all went well, you should now have a fully functioning Pong game you can play with a friend! The ball will start moving in a random direction when the game starts, it will bounce off your rackets, and it will increment the other player's score when you miss it with your own racket!
+Press run, then close the two game tabs you already had open and open two new ones so you can test it out! If all went well, you should now have a fully functioning Pong game you can play with a friend! The ball will start moving in a random direction when the game starts, it will bounce off your rackets, and it will increment the other player's score when you miss it with your own racket!
 
 ![moving pong ball](https://cloud-h1cmx5i1y.vercel.app/0pongmovement.gif "Moving pong ball")
 
