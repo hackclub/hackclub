@@ -13,7 +13,7 @@ Snake is a game that most of us have played on those old Nokia phones. It's also
 We are going to use [repl.it](https://repl.it) for this project. Just go to https://repl.it/languages/python3 to start coding. It's that easy! Creating an account will ensure you don't lose your code but you can do it after we finish this project. Let's start coding!
 
 #### Declare dependencies
-Today, we will be using `random` and `curses`. These should be at the top of the python file. These libraries are just python code that someone wrote.
+Today, we will be using the `random` and `curses` libraries. These should be imported at the top of the python file. These libraries are just python code that someone else wrote for us to use.
 
 ```python
 import random
