@@ -46,7 +46,7 @@ And we'll add script tags for Firebase, p5.js, jQuery, and our own `script.js` f
 <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="main.js"></script>
+<script src="script.js"></script>
 ```
 
 ### Setting up the Firebase App
