@@ -63,7 +63,7 @@ snake = [
 food = [sh/2, sw/2]
 ```
 
-Think of the snake in blocks. The first block is the head. The head is at the initial `snk_x` and `snk_y` positions. This means that the the next body part has to be at 1 less X position than the head. The next body part is 2 less X from the head. The next 3. Each list item in the `snake` list is an initial body part position.
+Think of the snake as a group of blocks. The first block is the head. The head is at the initial `snk_x` and `snk_y` positions. This means that the the next body part has to be at 1 less X position than the head. The next body part is 2 less X from the head. The next 3 and so on. Each list item in the `snake` list is an initial body part position.
 
 Let's add that food to the screen.
 
