@@ -118,7 +118,7 @@ const app = express() // This line creates a new Express app for the server
 
 app.use(express.json()) // This line tells express to interpret incoming requests as JSON, which makes it easy for Colyseus to understand and interact with the requests.
 
-// (you can just ignore this next block) On REPL, Colyseus doesn't work over HTTPS without additional configuration. For building this pong workshop this workaround is necesarry to make it work on Repl, but make sure to remove this if you expand your game into a full website with many people playing it, as this effectively disables encryption to prevent mixed content errors. For some reason, converting everything to HTTPS instead wasn't working, even though it should.
+// (you can just ignore this next block) On REPL, Colyseus doesn't work over HTTPS without additional configuration. For building this pong workshop this workaround is necessarry to make it work on Repl, but make sure to remove this if you expand your game into a full website with many people playing it, as this effectively disables encryption to prevent mixed content errors. For some reason, converting everything to HTTPS instead wasn't working, even though it should.
 app.use((req, res, next) => {
   if (req.headers['x-forwarded-proto'] === 'http') {
     next()
@@ -245,13 +245,13 @@ Yeah!! The server works!!
 
 I should note that whenever you make changes to the code you will have to reload the game tabs to see the changes (the one you got when you pressed the new tab icon, not the Repl.it tab!).
 
-## Part 2 - The Canvas, Game Loop, Colyseus.js, and User Input, But not Necesarilly in That Order.
+## Part 2 - The Canvas, Game Loop, Colyseus.js, and User Input, But Not Necessarily in That Order.
 
 Now we can start writing the `game.js` file!
 
 ### The Canvas
 
-And let's also add a canvas element, where we will draw all the game graphics, to the middle of the `<body>` section:
+Let's add a [canvas element](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API), where we will draw all the game graphics, to the middle of the `<body>` section:
 
 ```html
 <body>
@@ -395,14 +395,13 @@ If you don't see it, make sure you remembered to use `requestAnimationFrame` and
 
 ## Part 3 - Pong Room Server Code
 
-Now, we have to start writing the `PongRoom.ts` file, that controls pong games from the server. Go ahead and create the empty file now. There are 6 things we need to do before we can finish writing the game client:
+Now, we have to start writing the `PongRoom.ts` file, that controls pong games from the server. Go ahead and create the empty file now. There are 5 things we need to do before we can finish writing the game client:
 
-1. Add a mostly-empty `PongRoom` class with some blank methods, and set up the room. 
+1. Add some setup code to the `PongRoom` `onCreate` method
 2. Add two game state schemas (a schema is kind of like a model of how variables will be stored): one schema class to hold each player's variables, like name and racket position, and one schema class to hold information about the game itself, like where the pong ball is.
 3. We have to add a method adds a user's name and id to the state when they join the game.
 4. We have to write a `startGame` function that resets the position of the pong ball and starts the game
 5. We have to add a listener callback to listen for messages from the client telling the server that the player moved their racket
-6. Finally, we have to import the `PongRoom` class into `index.ts`.
 
 It's a lot to do and it might get a little boring without any visible results. Unfortunately though, we have to write all this before we can continue writing the game itself!
 
@@ -426,7 +425,7 @@ onCreate (options: any) {
 
 ### State classes
 
-Before we can extend state schema classes, we have to import the base classes from Colyseus. The template already has import the `Room` and `Client` classes from Colyseus, but we can also import the `Schema` class and `type` decorator with a second import statement right at the top of the `PongRoom.ts` file:
+Before we can extend state schema classes, we have to import the base classes from Colyseus. The template already has imported the `Room` and `Client` classes from Colyseus, but we can also import the `Schema` class and `type` decorator with a second import statement right at the top of the `PongRoom.ts` file:
 
 ```typescript
 import { Schema, type } from "@colyseus/schema"
@@ -567,7 +566,7 @@ function draw () {
 
 Next, we should show the movement of the pong ball on the canvas. It doesn't actually move yet - simulating its movement is the next part - but we can still draw it with some more code at the end of the `draw` function.
 
-Again, the `state.pongY` actually represents how far away from player 1 the pong ball is, so that means that player 1 has to flip/invert pongY to get the correct coordinate (because canvas coordinates start at the top left, but the player's racket is at the bottom of the canvas)
+Again, the `state.pongY` actually represents how far away from player 1 the pong ball is, so that means that player 1 has to flip/invert pongY to get the correct coordinate (because canvas coordinates start at the top left, but the player's racket is at the bottom of the canvas). Add this to the bottom of the draw function:
 
 ```javascript
 // Draw the pong ball
@@ -594,7 +593,7 @@ Your `draw` function should now look something like this:
 
 ![the draw function code](https://cloud-850hguur0.vercel.app/0drawfunc.png "The draw function")
 
-Now, let's open the game in a new tab as we did earlier to see if everything is working! You'll just see a blank black square at first - that's because there's only one "player".  Earlier when we were writing `PongRoom`, we wrote the `onJoin` function so that it would only set `state.gameStarted` to true once there were two players. But, the draw function only runs if the game has started. So, you can trick the server into thinking there are two players and starting the game by opening the game in another tab so you have it open in two tabs at a time. Then, if you wait a few seconds for the game to start, you should suddenly see the `draw` function drawing everything to the canvas!
+Now, let's press run and open the game in a new tab as we did earlier to see if everything is working! You'll just see a blank black square at first - that's because there's only one "player".  Earlier when we were writing `PongRoom`, we wrote the `onJoin` function so that it would only set `state.gameStarted` to true once there were two players. But, the draw function only runs if the game has started. So, you can trick the server into thinking there are two players and starting the game by opening the game in another tab so you have it open in two tabs at a time. Then, if you wait a few seconds for the game to start, you should suddenly see the `draw` function drawing everything to the canvas!
 
 ![pong game with draw function](https://cloud-6o9ib5amw.vercel.app/2pong_draw.png "The pong game")
 
@@ -686,7 +685,7 @@ Press run, then close the two game tabs you already had open and open two new on
 
 The game works as it is now, but there are still a few things we need to fix and add. First, the server doesn't actually do anything when one player leaves, which sometimes allows a third player to join, causing weird problems, such as the rackets and ball getting mixed up and moving in the wrong direction. So, we need to disconnect the room when a player leaves or gets disconnected so that this doesn't happen. Second, we need to add some status text to tell the user what's going on: when the server is waiting for another player, who they're playing against, when the other player disconnects, and when either player wins.
 
-Finally, we'll add two more features to the game: one, we'll add a short delay between rounds, so that each player has a chance to adjust their rackets before the next round begins. Second, we'll make it slightly more difficult by slowly increasing the speed of the ball over time.
+Finally, we'll add two more optional features to the game: one, we'll add a short delay between rounds, so that each player has a chance to adjust their rackets before the next round begins. Second, we'll make it slightly more difficult by slowly increasing the speed of the ball over time.
 
 #### Adding graceful disconnects
 
@@ -744,6 +743,9 @@ Now, if you open two new tabs and start playing, you should see the status text 
 
 ![pong status text element](https://cloud-1bp1dymvt.vercel.app/0winningtext.png "Pong status text")
 
+<details>
+<summary><strong>Optional features: delay between rounds and increasing ball speed</strong></summary>
+
 ### Adding a short delay between rounds
 
 To add a short delay between rounds, let's add a new property to the `PongRoom` class (right at the top before any methods) called `roundIsRunning` that will keep track of whether or not a round is currently playing:
@@ -756,7 +758,7 @@ export default class PongRoom extends Room {
 <details>
   <summary><i>Why did I add this property to the room class rather than the state class?</i></summary>
   
-Put simply, If you have something that needs to be synchronized across the server and players, you should always add it to the state class, and if you have something that can just stay on the server, you can just add it as a property to the room class so as to prevent unnecesary data from being transfered across the websockets. The truth is, throughout this workshop I add several things to the state class that shouldn't really be added to the state class (yet) but in the future, make sure you only add stuff that's necesarry to the state class. 
+Put simply, If you have something that needs to be synchronized across the server and players, you should always add it to the state class, and if you have something that can just stay on the server, you can just add it as a property to the room class so as to prevent unnecessary data from being transfered across the websockets. The truth is, throughout this workshop I add several things to the state class that shouldn't really be added to the state class (yet) but in the future, make sure you only add stuff that's necessarry to the state class. 
 
 As well as reducing the overall size of the state, you might sometimes want to omit data from the state class that you don't want the players to have access to. Remember, everything in the state can be accessed by any player even if you don't explicitly share it with them, they just have to open up their browser's developer tools and search for it. Sometimes, you'll have a state variable that you want to synchronize with just ONE player but not the others (so that they can't use it to cheat). In this case, you can try using [Colyseus's `@filter` decorators](https://docs.colyseus.io/state/schema/#filtering-data-per-client).
 
@@ -809,7 +811,10 @@ const timeMsSinceRoundStart = this.clock.elapsedTime - this.roundStartedAt
 const speedConstant = (delta / 3) * (timeMsSinceRoundStart / 30000 + 1) // Calculate the speed constant for the ball. It should gradually increase over time.
 ```
 
-With the last two changes, our Pong game is finally complete! 
+</details>
+
+
+Our Pong game is finally complete! 
 
 <video controls>
   <source src="https://cloud-8kwmmedl3.vercel.app/0pong.webm" type="video/webm">
