@@ -46,7 +46,7 @@ I have created a template with the code we'll need to begin with. [Click here to
 Or, if you want to start from scratch and add the first few files yourself instead of using the template, click below.
 
 <details>
-<summary>I don't want to use the template</summary>
+<summary><strong>I don't want to use the template</strong></summary>
 
 Create an empty project by going to <https://repl.it/languages/typescript>. I would recommend renaming it to something like "Pong" from the dropdown at the top so you can easily find it later.
 
@@ -131,13 +131,14 @@ console.log(`Listening on http://localhost:${ port }`)
 
 The server will work now, but it doesn't actually _do_ anything. Let's fix that. Create two new empty files, `game.html`, and `game.js`. As mentioned previously, these files will be sent to the player to run on their computers!
 
-In `game.html` let's add a basic HTML page with a title and header, that also imports the `game.js` script using a `<script>` tag:
+In `game.html` let's add a basic HTML page with a title and header:
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
     <title>Pong</title>
+    <script src="https://unpkg.com/colyseus.js@^0.14.0/dist/colyseus.js"></script>
   </head>
   <body>
     <h1>Pong</h1>
@@ -146,6 +147,8 @@ In `game.html` let's add a basic HTML page with a title and header, that also im
   </body>
 </html>
 ```
+
+You can see in the `head` section we are importing the Colyseus.js library using a `<script>` tage from a remote CDN, and in the `body` section we import the `game.js` script (from our own Pong server).
 
 You can leave `game.js` empty for now.
 
@@ -163,6 +166,55 @@ app.get('/game.js', (req: express.Request, res: express.Response) => {
 Basically, these are both Express "routes" that the server performs when the user does a certain action. Specifically, when the user sends a GET request to the server for the `/` path - the homepage of the website - the server sends the HTML file we just made back. The same thing happens for `game.js`.
 
 You might have noticed the colons and `express.Request` and `express.Response` after the `req` and `res` (request and response) arguments. This is a typescript feature, and it simply tells typescript what type the arguments are so that it can do proper type checking on them.
+
+Finally, create one more empty file called `PongRoom.ts`. We won't add much to it now, but we will add all the pong server logic to it later.
+
+Let's export a skeletal Colyseus room class definition from it. First we have to import the base classes from Colyseus. I'll explain all this later, but for now we can do this with an import statement at the top of the file:
+
+```javascript
+import { Room, Client } from "colyseus"
+```
+
+Then, add the following empty class:
+
+```typescript
+export default class PongRoom extends Room {
+
+  onCreate (options: any) {
+  
+  }
+
+  update (delta: number) {
+    
+  }
+
+  startGame () {
+    
+  }
+
+  onJoin (client: Client, options: any) {
+
+  }
+
+  onLeave (client: Client, consented: boolean) {
+
+  }
+}
+```
+
+And let's take the exported room class, and import it into `index.ts` so that we can tell the Colyseus game server about it! Add this to the top of the `index.ts` file, right below all the other `import` statements:
+
+```javascript
+import PongRoom from "./PongRoom"
+```
+
+And, we can tell Colyseus about it with the `gameServer.define` method, **above the line** that says `app.use('/colyseus', monitor())`:
+
+```javascript
+gameServer.define('pong', PongRoom) // Add the pong room to the server
+```
+
+TODO add image
 
 _----End of template setup----_
 
@@ -188,14 +240,7 @@ I should note that whenever you make changes to the code you will have to reload
 
 ## Part 2 - The Canvas, Game Loop, Colyseus.js, and User Input, But not Necesarilly in That Order.
 
-Now we can start writing the `game.js` file! But first, let's import the Colyseus.js library by adding a script tag in `game.html` right below the closing `</head>` tag:
-
-```html
-<head>
-  <title>Pong</title>
-  <script src="https://unpkg.com/colyseus.js@^0.14.0/dist/colyseus.js"></script>
-</head>
-```
+Now we can start writing the `game.js` file!
 
 ### The Canvas
 
@@ -281,6 +326,11 @@ This is what `game.js` should look like so far:
 
 ### Making a game loop
 
+I've placed the explanation of the game loop and delta time in a details box, so please click the arrow to read it if you are not familiar with `requestAnimationFrame` and delta time. Then, you can go ahead and add this code to the next part of your `game.js` script.
+
+<details>
+  <summary><strong>I'm not familiar with this code</strong></summary>
+  
 Most games have at least one or more *game loop*, that is, a chunk of code composed of an update and drawing function, or maybe a function to calculate physics, etc, that runs as frequently as possible while a game is running (this frequency is known as the frame rate and is often 60 times per second). We need one of these in this game to update the position of the pong ball and rackets every frame, and check to see if a player is holding down one of the arrow keys.
 
 Also, the HTML canvas is quite literally a "canvas" in the sense that you can't adjust the position of something (like a player) or remove something from the canvas (you can only add things) - instead, you have to clear the whole canvas and redraw every object on it, each with their new updated positions. This is the main thing the game loop will be responsible for. 
@@ -292,6 +342,10 @@ It's also important to keep track of when exactly the loop runs every time, so t
 Each time the loop runs, we will check to see if the player is holding down the left or right arrow. For our purposes, we can simply assume that the user has been holding the left or right key down since the last loop ran, and we can use delta time (the time since the last time the loop was called) to calculate how many pixels the racket should move. So, if the player is holding one of the keys down when the loop runs, we can take deltatime and divide it by 2 to make racket movement a little slower (so, holding the left key down for one second = 1000ms/2 = 500 = the racket moves 500 pixels to the left), and we'll use `room.send` to send it to the server using Colyseus, where it will be handled by a method we'll write later. 
 
 We'll also add a function called `draw`, where we will eventually place all the code for drawing the rackets and pong ball to the screen. However, we don't want to draw anything unless the game has started, so we will only call the `draw` function from the loop if `room.state.gameStarted` is true (we will add room state later).
+
+_----End of explanation----_
+
+</details>
 
 ```javascript
 function draw () {
@@ -347,51 +401,33 @@ It's a lot to do and it might get a little boring without any visible results. U
 
 ### The `PongRoom` Class
 
-Before we can extend room or state schema classes, we have to import the base classes from Colyseus. We can do this with two import statements at the top of the file:
+If you look open the `PongRoom.ts` file, you'll see a single import statement at the top and a bare `PongRoom` class, that extends a `Room` class imported from Colyseus. Colyseus's room class is a class that you can extend to define a "game room" class. You can think of a room like the set of rules that Colyseus follows for a specific type of game - in this case, Pong. 
 
-```javascript
-import { Room, Client } from "colyseus"
-import { Schema, type } from "@colyseus/schema"
-```
+Each Colyseus room has several methods we can override to do things when certain events happen. For example, we can do different things when a player joins, leaves, sends a message to the server (think: updating the position of a player's pong racket), disconnects, etc. Each room also has several methods we can call to change the room's settings or access different features of Colyseus - for example setting the number of players that can join, setting how often the server sends an update to each player, or accessing the game's built-in clock. _In this workshop, "room" is often interchangable with "game" although I often use "game" to refer to an instance of the room class._
 
-Now let's extend Colyseus's `Room` class to create a pong room. Each Colyseus room has several methods we can override to run things when certain events happen. For example, the `onCreate` method is called when a new instance of a room (a new game) is created. Here, we will use it to set a few options: 
+The `onCreate` method is called when a new instance of a room (a new game) is created. Here, we will use it to set up the room. Add the following code to the `onCreate` method in the `PongRoom` class:
 
 ```typescript
-export default class PongRoom extends Room {
-
-  onCreate (options: any) {
-    this.setState(new PongState()) // Set the state for the room, this is a class we will write in the next step
-    this.setSimulationInterval(delta => this.update(delta)) // Set a "simulation interval" aka an update function (similar to the loop function in game.js) that's called about 60 times per second. We'll use this later.
-    this.setPatchRate(25) // The patch rate determines the interval (in milliseconds) at which the server sends state updates to the client.
-    this.maxClients = 2 // Only 2 players per Pong game!
-    this.clock.start() // Start the game clock, a colyseus feature we'll use later
-  }
-
-  // These are some empty methods we'll write later:
-
-  update (delta: number) {
-    
-  }
-
-  startGame() {
-    
-  }
-
-  onJoin (client: Client, options: any) {
-
-  }
-
-  onLeave (client: Client, consented: boolean) {
-
-  }
+onCreate (options: any) {
+  this.setState(new PongState()) // Set the state for the room, this is a class we will write in the next step
+  this.setSimulationInterval(delta => this.update(delta)) // Set a "simulation interval" aka an update function (similar to the loop function in game.js) that's called about 60 times per second. We'll use this later.
+  this.setPatchRate(25) // The patch rate determines the interval (in milliseconds) at which the server sends state updates to the client.
+  this.maxClients = 2 // Only 2 players per Pong game!
+  this.clock.start() // Start the game clock, a colyseus feature we'll use later
 }
 ```
 
 ### State classes
 
-Whenever you have game data that needs to be synchronized across the players and the server, you should use Colyseus's _state_. Each room instance can have one state instance set, and that state class can be declared by extending the Colyseus `Schema` class. In each schema, we must define all the variables we want to use, as well as their types (you can also use schemas within schemas!), using a typescript feature called a "decorator", like this: `@type(either another schema, or something like 'int8' meaning 8 bit integer)` This is because Colyseus has to know what variables to send to the clients, and it also has to know what type of data they are so that it can binary encode them (using a library called msgpack) so they take up as little space as possible when being transfered over websockets. **Make sure you add both schema classes above the `PongRoom` class**.
+Before we can extend state schema classes, we have to import the base classes from Colyseus. The template already has import the `Room` and `Client` classes from Colyseus, but we can also import the `Schema` class and `type` decorator with a second import statement right at the top of the `PongRoom.ts` file:
 
-We'll start by writing a `Player` schema with some variables about each player:
+```typescript
+import { Schema, type } from "@colyseus/schema"
+```
+
+Whenever you have game data that needs to be synchronized across the players and the server, you should use Colyseus's _state_. Each room instance can have one state instance set, and that state class can be declared by extending the Colyseus `Schema` class. In each schema, we must define all the variables we want to use, as well as their types (you can also use schemas within schemas!), using a typescript feature called a "decorator", like this: `@type(either another schema, or something like 'int8' meaning 8 bit integer)` This is because Colyseus has to know what variables to send to the clients, and it also has to know what type of data they are so that it can binary encode them (using a library called msgpack) so they take up as little space as possible when being transfered over websockets.
+
+We'll start by writing a `Player` schema with some variables about each player. **Make sure you add both schema classes above the exported `PongRoom` class** (as TypeScript won't automatically "hoist" classes to the top of the file, like it does with functions and methods).
 
 ```typescript
 class Player extends Schema {
@@ -480,7 +516,7 @@ startGame() {
 
 ### Handling when a user moves their racket
 
-Earlier, in the `game.js` loop, we sent a message to the server every time the player pressed the arrow keys to move their racket. We need to add a listener to the room now to actually update the racket state variable when it recieves that message. We sent the message from the client using `room.send` and we can recieve it in the room by using `this.onMessage` with a callback. **Add this to the bottom of the `onCreate` method** in `PongRoom`, before the closing bracket, so it's registered as soon as the game is created:
+Earlier, in the `game.js` loop, we sent a message to the server every time the player pressed the arrow keys to move their racket. We need to add a listener to the room now to actually update the racket state variable when it recieves that message. We sent the message from the client using `room.send` and we can receive it in the room by using `this.onMessage` with a callback. **Add this to the bottom of the `onCreate` method** in `PongRoom`, before the closing bracket, so it's registered as soon as a room is created:
 
 ```typescript
 this.onMessage('moveRacket', (client, data) => {
@@ -493,23 +529,7 @@ this.onMessage('moveRacket', (client, data) => {
 })
 ```
 
-### Adding `PongRoom` to the Server
-
-Finally, we've written enough of the Pong Room code!
-
-Let's take the exported room class, and import it into `index.ts` so that we can tell the Colyseus game server about it! Add this to the top of the `index.ts` file, right below all the other `import` statements:
-
-```javascript
-import PongRoom from "./PongRoom"
-```
-
-And, we can tell Colyseus about it with the `gameServer.define` method, **above the line** that says `app.use('/colyseus', monitor())`:
-
-```javascript
-gameServer.define('pong', PongRoom) // Add the pong room to the server
-```
-
-TODO add image
+Done! Most of the pong room logic is now ready.
 
 ## Part 4 - Drawing the Pong Ball, Rackets and Score
 
@@ -724,6 +744,17 @@ export default class PongRoom extends Room {
   roundIsRunning: boolean
 ```
 
+<details>
+  <summary><i>Why did I add this property to the room class rather than the state class?</i></summary>
+  
+Put simply, If you have something that needs to be synchronized across the server and players, you should always add it to the state class, and if you have something that can just stay on the server, you can just add it as a property to the room class so as to prevent unnecesary data from being transfered across the websockets. The truth is, throughout this workshop I add several things to the state class that shouldn't really be added to the state class (yet) but in the future, make sure you only add stuff that's necesarry to the state class. 
+
+As well as reducing the overall size of the state, you might sometimes want to omit data from the state class that you don't want the players to have access to. Remember, everything in the state can be accessed by any player even if you don't explicitly share it with them, they just have to open up their browser's developer tools and search for it. Sometimes, you'll have a state variable that you want to synchronize with just ONE player but not the others (so that they can't use it to cheat). In this case, you can try using [Colyseus's `@filter` decorators](https://docs.colyseus.io/state/schema/#filtering-data-per-client).
+
+_----End of explanation----_
+
+</details>
+
 Then, somewhere in the `startGame` function we can set it to true:
 
 ```typescript
@@ -749,23 +780,23 @@ There are many ways once could improve this game by making it look better, perfo
 
 In most pong games, the ball speed starts out slow and gradually increases, then resets when a match ends.
 
-First, we need to add a new state variable to keep track of when each match starts. let's add that to the top of the `PongState` class in `PongRoom.ts`:
+First, we need to add a new variable to keep track of when each match starts. let's add that to the top of the `PongRoom` class in `PongRoom.ts` right below the `roundIsRunning` property:
 
 ```typescript
-@type('number')
-roundStartedAt: number
+  roundIsRunning: boolean
+  roundStartedAt: number
 ```
 
 Then, let's set that number every time a new game starts somewhere in `startGame`:
 
 ```typescript
-this.state.roundStartedAt = this.clock.elapsedTime // Set the round started time using the timestamp from the colyseus clock
+this.roundStartedAt = this.clock.elapsedTime // Set the round started time using the timestamp from the colyseus clock
 ```
 
 Now, let's double the speed of the pong every thirty seconds by replacing the `const speedConstant =` line in the `update` method. To do that, we'll subtract the elapsed time (ms) at the start of the round from the current elapsed time (ms), and divide it by 30,000 to see how many times 30 seconds have passed (we'll also add 1 so that it starts at 1 rather than 0) We'll multiply this by our speed constant in the `update` function, like this:
 
 ```typescript
-const timeMsSinceRoundStart = this.clock.elapsedTime - this.state.roundStartedAt
+const timeMsSinceRoundStart = this.clock.elapsedTime - this.roundStartedAt
 const speedConstant = (delta / 3) * (timeMsSinceRoundStart / 30000 + 1) // Calculate the speed constant for the ball. It should gradually increase over time.
 ```
 
@@ -779,7 +810,7 @@ With the last two changes, our Pong game is finally complete!
 
 Now, you can go ahead and share the link to your game with your friends, and have fun playing and hacking it!
 
-If you got stuck and need to check your code, you can [view any of my  files on this GitHub repo](https://github.com/scitronboy/multiplayer-pong/tree/workshop/replit)
+If you got stuck and need to check your code, you can [view any of the files from my version on this GitHub repo](https://github.com/scitronboy/multiplayer-pong/tree/workshop/replit)
 
 #### Examples of how people have customized it:
 
@@ -795,10 +826,11 @@ You could also try...
 
 If you're part of [the Hack Club slack](https://hackclub.com/slack/), make sure to share your game in the [#scrapbook](https://app.slack.com/client/T0266FRGM/C01504DCLVD) channel!
 
-**This is the end of this workshop.** I will share a few final notes below, but you don't have to read them if you don't want to!
+**This is the end of this workshop.** I will share a few final notes below, but you don't have to read them if you don't want to! Thanks for reading, and if you have any questions make sure to ask your club leader, or [DM me on the slack](https://hackclub.slack.com/archives/D0128N09V6U).
 
-### Final notes
-
+<details>
+  <summary><strong>Final Notes</strong></summary>  
+  
 #### Using the Colyseus Monitor
 
 You may recall when we were first setting up our server we added an express route that said `app.use('/colyseus', monitor())`. This added a built-in Colyseus monitor page that we can access by navigating to `your-game-url/colyseus`. It has details about each game room, the state, and the players connected to the room:
@@ -811,8 +843,10 @@ There isn't really much point to using this for a simple Pong game, but as you c
 
 If you would like to continue using the Colyseus framework, you will [find the docs useful](https://docs.colyseus.io/). But remember, if you're serious about delving into the topic, you should also try implementing networking on your own using WebSockets as a learning experience!
 
-Also, multiplayer game networking, across the web and other gaming platforms like console and PC is very complex and fascinating. As you build more complex games, you might have to worry about things like cheaters and network latency. I personally think these are interesting topics and if you're interested in learning more about some of the techniques used by big game studios to minimize these problems, I recommend starting with [this series on server-client architecture](https://www.gabrielgambetta.com/client-server-game-architecture.html).
+Also, multiplayer game networking, across the web and other gaming platforms like console and PC is very complex and fascinating. As you build more complex games, you will have to worry about things like **cheaters** and **network latency**. I personally think these are interesting topics and if you're interested in learning more about some of the techniques used even by big game studios to minimize these problems, I recommend starting with [this series on server-client architecture](https://www.gabrielgambetta.com/client-server-game-architecture.html). It goes over all sorts of interesting stuff like client-side prediction, server-side reconciliation and lag compensation. You'll see that the way we implemented movement here wasn't really optimal.
 
 As for the game itself, if you want to continue making more complex browser games in the future there are helpful frameworks such as [Phaser.js](https://phaser.io/) that provide tools such as physics and animation engines, which you might want to look into.
 
 Anyway, I hope I haven't overwhelmed you with all this, but rather given you a good introduction to the many possibilities and factors involved in multiplayer browser game development! Thanks for reading!
+  
+</details>
