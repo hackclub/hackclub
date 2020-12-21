@@ -240,4 +240,4 @@ Schematic: Wiring With MONITOR
 
 <img src="assets/with-serial-monitor.jpg" width=400px>
 
-Testing With The Serial Monitor
+Tested With The Serial Monitor
