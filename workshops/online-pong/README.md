@@ -7,9 +7,7 @@ img: 'https://cloud-a4tglngif.vercel.app/0thumb.png'
 
 Perhaps you've built simple games before, but have you ever built a multiplayer game? In this workshop, we we will be building a simple online version of the classic game of Pong - one that you can play it with someone else on a different computer, or even in a different country! We will be using a fantastic open-source TypeScript framework called [Colyseus.js](https://colyseus.io/) that makes the networking and matchmaking (connecting users to a game automatically when they open the site) easy!
 
-[If you get stuck, you can always view the code files here](https://github.com/scitronboy/multiplayer-pong/tree/workshop/replit)
-
-TODO Link to final game
+[This is the game we will be building](http://multiplayerpongworkshop.scitronboy.repl.co/). If you get stuck, [you can always view the code here](https://repl.it/@scitronboy/multiplayerPongWorkshop#README.md).
 
 ## Prerequisites
 
