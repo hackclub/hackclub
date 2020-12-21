@@ -19,11 +19,18 @@ We will be using the [TypeScript programming language](https://www.typescriptlan
 
 ## How it works
 
+<details>
+<summary><strong>Websockets and Canvas explanation</strong></summary>
+  
 Most browser-based games use what are called *websockets* to communicate with a *game server*, a special kind of web server responsible for synchronizing each player's movements across every player's browser. Websockets are not like traditional browser (HTTP) requests, as they form a *persistent, 2-way connection* with the server, allowing each server and client to send messages back and forth to each other as quickly as needed. For example, if one player in the game moves or does some other game action (depending on the type of game), the game will immediately send that move to the server using a socket connection, where the server will process the move (and perform any validation necessary to prevent cheating), and send it back over a socket connection to all the other players, whose games will process the new data and update the first player's position, so that everyone can see when one player moves. 
 
 Fortunately, the browser's [WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) is easy enough to use already, but for this tutorial we will be using a JavaScript package called [Colyseus](https://colyseus.io/) that handles the websocket connection and game state automatically, so we can just focus on the game itself.
 
 As for the game itself, we will just be using the native browser [canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) as we don't need anything more than that for this simple game. However, if you want to make more complex games in the future there are many available frameworks such as [Phaser.js](https://phaser.io/) that provide useful tools such as physics and animation engines.
+
+_----End of explanation----_
+
+</details>
 
 So, here's the brief explanation of the project:
 
@@ -37,7 +44,7 @@ Well, let's get started!
 
 ## Part 1 - Setting up the Project and Server
 
-I'll be coding everything on Repl.it in this workshop (but if you want, you can use a local environment). Before we start, you'll have to [create your own Repl account] if you haven't already. 
+I'll be coding everything on Repl.it in this workshop (but if you want, you can use a local environment). Before we start, you'll have to [create your own Repl account](https://repl.it/signup) if you haven't already. 
 
 I have created a template with the code we'll need to begin with. [Click here to access the template](https://repl.it/@scitronboy/MultiplayerPong-template). Then, click the fork button to make your own copy of the template:
 
@@ -230,7 +237,7 @@ After waiting a few moments for it to run - hopefully without errors - you'll no
 
 ![The broken preview](https://cloud-58evowjmq.vercel.app/0brokenpreview.png "the broken preview")
 
-This isn't really a problem, as it's caused by a workaround we used for Colyseus in our server file (it's related to complicated WSS colyseus support on Repl.it, in case you were wondering). All you need to do is click on the little icon at the top right to open it in a new tab instead, where it should work:
+This isn't really a problem, as it's caused by a workaround we used for Colyseus in our server file (it's related to complicated WSS colyseus support on Repl.it, in case you were wondering). All you need to do is click on the little icon at the top right to open it in a new tab instead, where it should work. It might take a bit for it to load at each step. If the tab times out before it loads, just reload it and try again.
 
 ![The blank pong page](https://cloud-qfkqba8yv.vercel.app/0blankpongpage.png "Blank pong page you should see when you open a new tab")
 
@@ -628,6 +635,8 @@ update (delta: number) {
   if (!this.state.gameStarted) return // Don't update the ball's position if the game hasn't started!
 
   const speedConstant = delta / 3 // Increasing the number 3 will make the ball move slower and vice versa.
+  
+  const bounceAngleConstant = 40 // less is more!
 
   // Update the ball's Y position:
   if (this.state.pongDirection) this.state.pongY += speedConstant // Ball is moving TOWARD player 2, so we increase its y position
@@ -645,7 +654,7 @@ update (delta: number) {
     if (this.state.pongX >= racketX && this.state.pongX <= racketX + 100 ) { // If the ball's x position matches the racket, that means it collided!
       // Bounce the ball off the racket:
       this.state.pongDirection = !this.state.pongDirection // Flip the direction the ball is moving
-      this.state.pongAngle = (this.state.pongX - (racketX + 50)) / 50 // Calculate the new angle for the racket, based on where the ball collided
+      this.state.pongAngle = (this.state.pongX - (racketX + 50)) / bounceAngleConstant // Calculate the new angle for the racket, based on where the ball collided
       this.state.pongY = isOnPlayer1Side ? 30 : 570 // Move the ball's Y position to the edge of the racket to make sure it doesn't get stuck in the racket
     } else { // Ball did not collide with racket - SCORE!!!
       if (isOnPlayer1Side) this.state.player2.score += 1 // If the ball's on played 1's side, player 2 scored
@@ -737,7 +746,7 @@ Now, if you open two new tabs and start playing, you should see the status text 
 
 ### Adding a short delay between rounds
 
-To add a short delay between rounds, let's add a new property to the `PongRoom` class (right at the top before any methods) called `roundIsRunning` that will keep track of whether or not a round is currentluy playing:
+To add a short delay between rounds, let's add a new property to the `PongRoom` class (right at the top before any methods) called `roundIsRunning` that will keep track of whether or not a round is currently playing:
 
 ```typescript
 export default class PongRoom extends Room {
