@@ -440,7 +440,7 @@ Congratulations! Your collaborative drawing app is now complete.
 
 Make sure you're logged into your Repl.it account and press **Run** with the most recent code.
 
-Share your URL to the [`#shipit`](https://hackclub.slack.com/messages/shipit/) channel on Slack, so that everyone can collaborate together!
+Share your URL to the [`#ship`](https://hackclub.slack.com/messages/ship/) channel on Slack, so that everyone can collaborate together!
 
 ## Part V: Hacking
 
