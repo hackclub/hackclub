@@ -7,12 +7,14 @@ img: 'https://cloud-i254770eq.vercel.app/0snake.png'
 
 Snake is a game that most of us have played on those old Nokia phones. It's also a classic coding challenge for learning a new programming language. As complicated as it may seem at first, it's rather easy to code and takes less than 50 lines. Let's try to recreate this game in the terminal.
 
-![Snake game demo in repl.it](https://cloud-h8v6zt88z.vercel.app/0snakereplit.gif)
+[![Snake game and demo in repl.it](https://cloud-h8v6zt88z.vercel.app/0snakereplit.gif)](https://repl.it/@kyryloorlov/Snake-Game)
 
-## Get started
+You can check out the source code and preview [here](https://repl.it/@kyryloorlov/Snake-Game)
+
+# Get started
 We are going to use [repl.it](https://repl.it) for this project. Just go to https://repl.it/languages/python3 to start coding. It's that easy! Creating an account will ensure you don't lose your code but you can do it after we finish this project. Let's start coding!
 
-#### Declare dependencies
+## Declare dependencies
 Today, we will be using the `random` and `curses` libraries. These should be imported at the top of the python file. These libraries are just python code that someone else wrote for us to use.
 
 ```python
@@ -23,15 +25,15 @@ import curses
 `randint` is a module that will allow us to give random positions to the fruits that will spawn on the map. `Curses` is how we will be handling the user interface and game mechanics.
 
 
-#### Initialize the screen
+## Initialize the screen
 Below our imports let's skip a line and start our game. First, we have to somehow declare that our terminal can be used as a user interface. We'll use the python curses library to set a cursor, screen width, and screen height.
 
 ```python
 # Define the screen
-s = curses.intscr()
+s = curses.initscr()
 
 # Set the cursor to 0 so it's invisible
-curses.curs.set(0)
+curses.curs_set(0)
 
 # Get the width and the height
 sh, sw, = s.getmaxyx()
@@ -42,7 +44,8 @@ w = curses.newwin(sh, sw, 0, 0)
 
 Great! We have defined the screen dimensions and set the cursor to be invisible in the top left corner. Let's move on to the snake logic. We'll be using these variables and definitions when creating the rest of the program.
 
-#### Initialize the snake and food
+![Happy snake](https://cloud-5uzl1njgm.vercel.app/0snek.gif)
+## Initialize the snake and food
 Skip a line from the above code and let's define the snake and its position and food.
 
 ```python
@@ -80,7 +83,8 @@ Let's add the initial direction of the snake. We'll set it to go right.
 key = curses.KEY_RIGHT
 ```
 
-#### Handle movement and game logic
+![Dancing](https://cloud-qco33gkwh.vercel.app/0dancing.gif)
+## Handle movement and game logic
 We define an infinite loop for every movement that the snake makes. This is where we handle out game logic.
 
 ```python
@@ -148,7 +152,10 @@ while True:
 
 The code above is how we actually control the snake. We start by taking the old head of the snake and then checking for what key is being pressed. If key down is pressed, we take the snake's Y position and add 1 to it. If key up is pressed, we take the snake's Y position and subtract 1. If key left is pressed, we take the snake's X position and subtract 1. If key right is pressed, we take the snake's X position and add 1.
 
-#### Handle food logic
+After all that, we get something like this:
+![Snake food](https://cloud-78ocq7ahv.vercel.app/0screen_shot_2020-12-22_at_9.10.17_am.png)
+
+## Handle food logic
 Now let's the handle the snake running into the food. The following code should go into the `while True` statement, below the code above.
 
 ```python
@@ -178,7 +185,7 @@ In the above code, we check if the snake has ran into the food. If it has, we ne
 
 Finally, in any case, we're adding the head of the snake to the screen.
 
-#### The final product:
+## The final product:
 
 ![The snake food near the the snake body](https://cloud-1l5hoiqcf.vercel.app/0image3.png)
 
@@ -236,7 +243,8 @@ while True:
 
 You should now be able to play Snake in the terminal! You can run the code at https://repl.it/@kyryloorlov/Snake-Game.
 
-## Hacking
+![Hacking](https://cloud-adi3v03or.vercel.app/0hacking.gif)
+# Hacking
 Now you have control over this code. Go ahead and tinker with it to see if you can find ways to make it more fun. Here are some ideas:
 
 - Add a play again option: [Demo + Code](https://repl.it/@kyryloorlov/Snake-Game-Try-Again)
