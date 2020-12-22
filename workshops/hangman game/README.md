@@ -29,7 +29,7 @@ First, we need to define a function called ```get_word()``` which will return a 
 
 I have already created a file that contains a list of several hundred words so I'm just going to import that list into our file.
 
-[Click Here]() for the file link.
+[Click Here](https://github.com/iamsid47/hackclub/blob/main/workshops/hangman%20game/words.py) for the file link. Can also be found in this folder itself.
 
 Now, we want to randomly choose a word from this list so let's import the ***random*** library inside ```get_word()```
 
