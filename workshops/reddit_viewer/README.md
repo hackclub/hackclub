@@ -258,11 +258,13 @@ app.run(host='0.0.0.0' , port = 9060)
  I would highely recommend reading more of the [PRAW library documentation](https://praw.readthedocs.io/en/latest/). Also Flask is a very powerful resource and learning how to do some backend. Google is full of tutorials on how to use Flask and there are many projects that are easier done in Flask.
  
  Three hackable examples:
- [Setting a default subreddit](https://repl.it/@KaiSakurai/Custom-Reddit-Viewer-1)
-    - This demo sets the frontpage to the subreddit r/popular like the frontpage of normal Reddit. It achieves this by rendering the first page with the subreddit r/popular set.
- [Showing more post information](https://repl.it/@KaiSakurai/Custom-Reddit-Viewer-2)
-    - This demo shows more information about each post like upvotes, author and number of comments. The PRAW library has built-in methods to load this information and we pass them in like the URL element in our HTML.
- [Making upvote buttons](https://repl.it/@KaiSakurai/Custom-Reddit-Viewer-3555)
-    - We can use CSS to make buttons for each post by having a custom div act as our target element and have it repeat like all the other elements on the page. We also make the buttons out of pure CSS. Although the upvote and downvote do not have any real-world effects due to to our application having read-only permissions. 
+ 
+ [Setting a default subreddit](https://repl.it/@KaiSakurai/Custom-Reddit-Viewer-1)- This demo sets the frontpage to the subreddit r/popular like the frontpage of normal Reddit. It achieves this by rendering the first page with the subreddit r/popular set.
+ 
+ [Showing more post information](https://repl.it/@KaiSakurai/Custom-Reddit-Viewer-2) - This demo shows more information about each post like upvotes, author and number of comments. The PRAW library has built-in methods to load this information and we pass them in like the URL element in our HTML.
+ 
+ [Making upvote buttons](https://repl.it/@KaiSakurai/Custom-Reddit-Viewer-3555) - We can use CSS to make buttons for each post by having a custom div act as our target element and have it repeat like all the other elements on the page. We also make the buttons out of pure CSS. Although the upvote and downvote do not have any real-world effects due to to our application having read-only permissions. 
+ 
  Thanks for reading!
+ 
  --Kai
