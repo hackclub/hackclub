@@ -7,7 +7,7 @@ image: https://cloud-cf7gkmekh.vercel.app/0image.png
 
 # BitEx
 
-Today we'll be building a simple chrome extension which will track live Bitcoin prices!
+Today we'll be building a simple chrome extension which is based on web technologies. It uses HTML, CSS and JavaScript and once, we build it, it will track live Bitcoin prices! 
 
 Here's how it will look like:
 
@@ -34,8 +34,6 @@ To get started, go to this HTML [starter code](https://repl.it/languages/html).
 ## Part 3: Building the project
 
 ### 1) The Manifest
-
-![Manifest.json's image](https://cloud-h1shultrr.vercel.app/0image.png)
 
 If there is something which is really important for any chrome extension, then it is the `manifest.json` file. Without it, we can't create any extensions. So let's first create our `manifest.json` file!
 
@@ -156,7 +154,7 @@ Yay! Now we have a far better UI compared to what we had earlier!
 
 ### 4) JavaScript
 
-Now it's time to fetch the realtime Bitcoin prices and actually show it on the browser screen instead of showing `Loading...` all the time. First, navigate to your `index.js` file and let's start writing!
+Now we will use JavaScript to fetch the realtime Bitcoin prices and then to show it on the browser screen instead of showing `Loading...` all the time. First, navigate to your `index.js` file and let's start writing!
 
 ```js
 const div = document.querySelector(".bitcoin");
@@ -390,7 +388,7 @@ Yay! We successfully built a wonderful chrome extension which tracks Bitcoin pri
 
 ![yay](https://media.giphy.com/media/xUPGcMzwkOY01nj6hi/giphy.gif)
 
-If you do have a developer account, feel free to upload it on the chrome web store!
+If you have a developer account, feel free to publish it on the chrome web store! Here's [how](https://developer.chrome.com/docs/webstore/publish/).
 
 Here are some helpful links:
 
@@ -402,16 +400,18 @@ Here are some helpful links:
 
 Here are some tasks for you:
 
-1. Create an extension which shows the current prices for top 5 cryptocurrencies.
+1. Create an extension which shows the current prices for top 5 cryptocurrencies.  
+[Example](https://repl.it/@FaisalSayed1/Cryptocurrency-price-tracker)
 
-2. Create a chrome extension which displays the historical data for Bitcoin using [this](https://www.coindesk.com/coindesk-api#node-35:~:text=We%20offer%20historical%20data%20from%20our,Sample%20Request%3A%20https%3A%2F%2Fapi.coindesk.com%2Fv1%2Fbpi%2Fhistorical%2Fclose.json%3Fstart%3D2013%2D09%2D01%26end%3D2013%2D09%2D05) API.
-
-3. Create a chrome extension which shows the past prices of any cyptocurrency of any given date(s)!
-
-4. Add a feature which alerts you if there is a big price drop!
-
-5. Want to censor/highlight any words on websites you browse? You can create an extension for that too!  
+2. Want to censor/highlight any words on websites you browse? You can create an extension for that too!  
 [Example where it highlights the word `Hack Club` on websites.](https://github.com/faisalsayed10/rainbow_extension)
+
+3. Create a chrome extension which displays the historical data for Bitcoin using [this](https://www.coindesk.com/coindesk-api#node-35:~:text=We%20offer%20historical%20data%20from%20our,Sample%20Request%3A%20https%3A%2F%2Fapi.coindesk.com%2Fv1%2Fbpi%2Fhistorical%2Fclose.json%3Fstart%3D2013%2D09%2D01%26end%3D2013%2D09%2D05) API.  
+[Example](https://repl.it/@FaisalSayed1/Bitcoin-Historical-Extension)
+
+4. Create a chrome extension which shows the past prices of any cyptocurrency of any given date(s)!
+
+5. Add a feature which alerts you if there is a big price drop!
 
 Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
 
