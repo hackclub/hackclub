@@ -105,6 +105,8 @@ Since we don't use a separate JavaScript file, delete the following line :
 Inside the `<body></body>` tag, specify the center tag followed by the heading and and `<canvas>` tag which is used for creating a canvas (for the pixel art pad).
 The `<canvas>` element is used to draw graphics on a web page. The canvas element is only a container for graphics. We will be using processing.js along with Java to process the graphics.
 
+#### Final index.html code:
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -186,7 +188,7 @@ Here, we are initializing a square grid of 25*25 tiles. You can change it accord
 
 I love colors. In this workshop, we will be adding 9 colors for our color palette. You can modify or add more colors according to your convinience.
 
-![A variety of colors](https://media.giphy.com/media/S72QEV5YfVl4mRrakS/giphy.gif)
+![A variety of colors](https://media.giphy.com/media/8Ry7iAVwKBQpG/giphy.gif)
 
 Use the following code to specify the colors in the color palette :
 
