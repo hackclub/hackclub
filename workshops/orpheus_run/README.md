@@ -552,6 +552,12 @@ Here are some tasks for you:
 
 4. Add keyboard support to the game, such as `spacebar` to jump!
 
+Check Out these amaaaazing hacks!
+
+1. [By Tanishq](https://mariotypegame.tanishqsoni.repl.co/)
+
+2. [By Khushraj](https://repl.it/@KhushrajRathod/OrpheusRunner#index.html)
+
 Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
 
 You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.
