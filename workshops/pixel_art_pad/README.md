@@ -7,7 +7,7 @@ img: 'https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png'
 
 # Pixel Art Pad
 
-In this workshop, I'm going to show you how to make your own pixel art pad with which you can create some amazing pixel art works.
+Most of us like pixel art. In this workshop, I'm going to show you how to make your own pixel art pad with which you can create some amazing pixel art works.
 
 The pixel art pad will be looking like this (You can consider modifying the look if you wish) :
 
@@ -25,6 +25,8 @@ It is recommended to have a basic understanding of:
 
 - HTML
 - Java
+
+We will be using a library called processing.js which would help us in processing the graphics in a web canvas. All the functionalities of the pixel art pad will be written on java.
 
 However, this workshop is beginner friendly and you can refer the [final code][final_code] to understand better.
 
@@ -54,7 +56,7 @@ You will be able to find two other files called `style.css` and `script.js` in t
 
 ### 2) Creating the java file
 
-We will be requiring a java file in this project. Create a file called `index.java` by pressing the new file icon on the files pane.
+We will be requiring a java file in this project. The java file will provide functionality to the web canvas. Create a file called `index.java` by pressing the new file icon on the files pane.
 
 ![Creating index.java](https://cloud-czzce7b1v.vercel.app/0creatingjava.gif)
 
@@ -82,29 +84,26 @@ Firstly, let us write the required HTML code for the pixel art pad. You will be 
 </html>
 ```
 
-Replace the text inside the title tag to the title you want. In my case, I am replacing it with `<title>Pixel Art Pad</title>`.
+Replace the text inside the title tag to the title you want. In my case, I am replacing it with 
 
-If you don't use a custom CSS, remove the following line from the code `<link href="style.css" rel="stylesheet" type="text/css" />`.
-
-Inside the `<body></body>` tag, specify the center tag followed by the heading and and `<canvas>` tag which is used for creating a canvas (for the pixel art pad).
-
-Finally, before you close the body tag - import the Processing js script using the `<script>` tag. The content inside the body will be as follows  :
-
-```html
-    <body>
-    <center>
-    <h1>Pixel Pad</h1>
-    <h7>project made at hack club workshop</h7>
-    <br>
-    <br>
-    <canvas data-processing-sources="index.java"></canvas>
-    </center>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
-  </body>
+```html 
+<title>Pixel Art Pad</title>
 ```
 
+If you don't use a custom CSS, remove the following line from the code  :
 
-Finally, your `index.html` will contain the following code:
+```html
+<link href="style.css" rel="stylesheet" type="text/css" />
+```
+
+Since we don't use a separate JavaScript file, delete the following line :
+
+```html
+<script src="script.js"></script>
+```
+#### The canvas element
+Inside the `<body></body>` tag, specify the center tag followed by the heading and and `<canvas>` tag which is used for creating a canvas (for the pixel art pad).
+The `<canvas>` element is used to draw graphics on a web page. The canvas element is only a container for graphics. We will be using processing.js along with Java to process the graphics.
 
 ```html
 <!DOCTYPE html>
@@ -129,11 +128,13 @@ Finally, your `index.html` will contain the following code:
 
 And that's it! We have completed writing our HTML.
 
+
 ### 2) index.java
 
 #### The Tile class
 
-In the index.java file, create a class called Tile with the following code :
+The `index.java` file will contain all the functionalities required for creating the graphics inside the web canvas.
+In the `index.java` file, create a class called Tile with the following code :
 
 ```java
 class Tile
@@ -153,6 +154,8 @@ class Tile
   }
 }
 ```
+The tile class will need two variables x and y of the type integer, a variable for color and a boolean variable.
+
 
 Now, create a function called `Display()` for displaying the tiles with the following code :
 
@@ -177,14 +180,13 @@ In order to specify the size of the grid, use the following code :
 ```java
 Tile grid[][] = new Tile[25][25];
 ```
-
 Here, we are initializing a square grid of 25*25 tiles. You can change it according to your convenience.
 
 #### Specifying the colors in color palette
 
 I love colors. In this workshop, we will be adding 9 colors for our color palette. You can modify or add more colors according to your convinience.
 
-![A variety of colors](https://media.giphy.com/media/XBhzUNf7ta00w/giphy.gif)
+![A variety of colors](https://media.giphy.com/media/S72QEV5YfVl4mRrakS/giphy.gif)
 
 Use the following code to specify the colors in the color palette :
 
@@ -290,6 +292,7 @@ void mousePressed()
   }
 }
 ```
+The above function defines the mouse action of filling the tile with the color choosen. You can customize or create new mouse actions if you want (For example, you can try using right click to erase a color on a tile).
 
 #### Final index.java code :
 
@@ -427,13 +430,13 @@ Hurray! Cheers on building your own pixel art pad. You can try out new designs a
 
 Here are some of the pixel toons I tried making with the art pad :
 
-![Art 1](https://cloud-6s02cfez1.vercel.app/0art2.png)
+![Smiley Smiley](https://cloud-6s02cfez1.vercel.app/0art2.png)
 
-![Art 2](https://cloud-8mkwhm5cx.vercel.app/0art1.png)
+![Pixel Heart](https://cloud-8mkwhm5cx.vercel.app/0art1.png)
 
-![Art 3](https://cloud-gu0flxczf.vercel.app/0art3.png)
+![Pixel Tree](https://cloud-gu0flxczf.vercel.app/0art3.png)
 
-![Art 4](https://cloud-andjr6f7f.vercel.app/0art4.png)
+![Pixel Hack Club Logo](https://cloud-andjr6f7f.vercel.app/0art4.png)
 
 
 
