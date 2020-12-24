@@ -550,6 +550,8 @@ Here are some tasks for you:
 
 3. Increase the speed of the game as it moves ahead.
 
+4. Add keyboard support to the game, such as `spacebar` to jump!
+
 Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
 
 You probably know the best ways to get in touch with your friends and family, but if you want to share your project with the worldwide Hack Club community there is no better place to do that than on Slack.
