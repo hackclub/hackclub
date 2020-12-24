@@ -2,13 +2,13 @@
 name: 'Sprite Creator Program'
 description: 'Make your own sprites!'
 author: '@JakeGerber'
-image: 'https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png'
+image: 'https://cloud-j2h9qribj.vercel.app/0screenshot__1437_.png'
 ---
 
 # Create a Drawing Program with Shapes!
 In this workshop, we will be creating a drawing program that allows us to make pictures out of different shapes such as circles, squares, and triangles.
 
-<img src="https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png" width="580" alt="Drawing Example">
+<img src="https://cloud-j2h9qribj.vercel.app/0screenshot__1437_.png" width="580" alt="Sprite Example">
 
 <img src="https://thumbs.gfycat.com/FantasticFaintAmurminnow-small.gif" width="380" alt="Nice Gif">
 
@@ -244,3 +244,102 @@ turtle.mainloop()
 # Creating the Text File
 Create a file and name it "sprite.txt".
 <img src="https://cloud-avutgg3d9.vercel.app/0screenshot__1434_.png" width="380" alt="sprite.txt file">
+- Add some colors! Make sure each color has a comma after it, with no spaces anywhere.
+- If you want to create a new sprite then add a dash on it's own line.
+<img src="https://cloud-ft6bf29c5.vercel.app/0screenshot__1438_.png" width="380" alt="Example sprites">
+
+# Final Code for "main.py"
+```py
+import turtle
+
+turtle.hideturtle()
+turtle.clear()
+turtle.speed(0)
+
+allsprites = []
+place = 0
+
+myarr = []
+
+f = open("sprite.txt", "r")
+
+while(True):
+  tempLine = f.readline()
+
+  if tempLine == "": 
+    break
+  elif tempLine[0] == "-":
+    allsprites.append(myarr.copy())
+    myarr.clear()
+
+  temparr = []
+  tempr = ""
+  for t in tempLine:
+    if (not t == ","):
+      tempr+= t
+    else:
+      temparr.append(tempr)
+      tempr = ""
+  myarr.append(temparr)
+
+f.close()
+
+def drawSquare(x, y, side, color):
+  turtle.up()
+  turtle.goto(x, y)
+  if (not color == "none"):
+    turtle.color(color)
+    turtle.begin_fill()
+    for x in range(4):
+      turtle.forward(side)
+      turtle.right(90)
+    turtle.end_fill()
+
+def draw(currentarr):
+  turtle.clear()
+  x = -60
+  y = 60
+  originalX = -60
+  side = 10
+  turtle.tracer(0, 0)
+  for arr in currentarr:
+    for val in arr:
+      drawSquare(x, y, side, val)
+      x+=side
+    y-=side
+    x = originalX
+  turtle.update()
+
+
+def left():
+  global place
+  place -= 1
+  if (place < 0):
+    place = int(len(allsprites)) - 1
+  draw(allsprites[place])
+
+def right():
+  global place
+  place += 1
+  if (place > len(allsprites)-1):
+    place = 0
+  draw(allsprites[place])
+
+
+draw(allsprites[place])
+
+turtle.onkey(left, "Left")
+turtle.onkey(right, "Right")
+
+turtle.listen()
+turtle.mainloop()
+```
+
+# Original Program & More You Can Create
+- [Original Program](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop#main.py)
+- [Simpler Inputs for Specific Colors](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-1#main.py)
+- [Random Cycle](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-2#main.py)
+- [Sprite Layering](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-3#sprite.txt)
+
+
+
