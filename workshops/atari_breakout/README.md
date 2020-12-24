@@ -5,7 +5,7 @@ author: '@shayanhalder'
 img: 'https://cloud-lmpjifksy.vercel.app/0atari_breakout_workshop_cover_image.png'
 ---
 
-In this workshop, we'll be making the one and only Atari Breakout! This workshop is aimed towards anyone who wants an introduction to basic game development in JavaScript. Game development is one of the best ways to learn coding-- it strengthens your problem solving skills in a rewarding and exciting way!
+In this workshop, we'll be making the classic Atari Breakout game! This workshop is aimed towards anyone who wants an introduction to basic game development in JavaScript. Game development is one of the best ways to learn coding-- it strengthens your problem solving skills in a rewarding and exciting way!
 
 This is what we'll build by the end of the workshop:       
 
@@ -16,7 +16,7 @@ This is what we'll build by the end of the workshop:
 
 ### Prerequisites
 
-You should have a basic understanding of JavaScript to understand this workshop, but it shouldn't be too hard to follow along if you're coming from another programming language. We'll also be using the p5.js library but don't worry if you've never used it before-- p5 is super intuitive and we'll be learning its features as we go.     
+You should have a basic understanding of JavaScript to understand this workshop, but it shouldn't be too hard to follow along if you're coming from another programming language. We'll also be using the p5.js library but don't worry if you've never used it before-- p5.js is super intuitive to use and we'll be learning its features as we go.     
 
 Let's begin!   
 
@@ -420,7 +420,7 @@ Your final product should look like this:
 Congratulations, you just built Atari Breakout in JavaScript!  
 
 ## Extending the Project   
-Now it's your turn to apply what you know to make this game even more fun! I've linked some resources you can use below that provide further depth into basic game development with JavaScript. Here's some creative ways to extend this game!     
+Now it's your turn to apply what you know to make this game even more fun! I've linked some resources that you can use below which provide further depth into basic game development with JavaScript. Here's some creative ways to extend this game!     
 
 ### Bullets and Powerups    
 In this version, a powerup apple ocassionally moves across the screen. You can use the spacebar to shoot bullets at the powerup. If they hit, your paddle and ball size will be doubled for 9 seconds.    
