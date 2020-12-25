@@ -7,7 +7,7 @@ img: 'https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png'
 
 # Pixel Art Pad
 
-Most of us like pixel art. In this workshop, I'm going to show you how to make your own pixel art pad with which you can create some amazing pixel art works.
+Most of us like pixel art. In this workshop, I'm going to show you how to make your own pixel art pad with which you can create some amazing pixel arts.
 
 The pixel art pad will be looking like this (You can consider modifying the look if you wish) :
 
@@ -26,7 +26,7 @@ It is recommended to have a basic understanding of:
 - HTML
 - Java
 
-We will be using a library called processing.js which would help us in processing the graphics in a web canvas. All the functionalities of the pixel art pad will be written on java.
+We will be using a library called processing.js which will help us in processing the graphics in a web canvas. All the functionalities of the pixel art pad will be written in java.
 
 However, this workshop is beginner friendly and you can refer the [final code][final_code] to understand better.
 
@@ -35,7 +35,7 @@ However, this workshop is beginner friendly and you can refer the [final code][f
 
 ### Setting up Repl.it
 
-[Repl.it](https://repl.it) is an amazing online code editor where we will writing our code. Though repl.it is not mandatory, I strongly recommend you to use it in order to avoid installations and downloads.
+[Repl.it](https://repl.it) is an amazing online code editor where we will be writing our code. Though repl.it is not mandatory, I strongly recommend you to use it in order to avoid installations and downloads.
 
 To get started, Create your Repl by going to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will be created in a few moments.
 
@@ -50,13 +50,13 @@ Once your repl is setup, you are all set to continue!
 
 The first file that appears soon after the repl is setup is `index.html`.
 
-You will be able to find two other files called `style.css` and `script.js` in the files pane in the left side. Delete both the files as they will be required in this workshop (You can have them if you want to use custom css or js).
+You will be able to find two other files called `style.css` and `script.js` in the files pane in the left side. Delete both the files as are not required in this workshop (You can have them if you want to use custom css or js).
 
 ![Deleting files](https://cloud-63ot6za6a.vercel.app/0deletingfiles.gif)
 
 ### 2) Creating the java file
 
-We will be requiring a java file in this project. The java file will provide functionality to the web canvas. Create a file called `index.java` by pressing the new file icon on the files pane.
+We need a java file in this project. The java file will provide functionality to the web canvas. Create a file called `index.java` by pressing the new file icon on the files pane.
 
 ![Creating index.java](https://cloud-czzce7b1v.vercel.app/0creatingjava.gif)
 
@@ -67,7 +67,7 @@ Finally, you will be having two files called `index.html` and `index.java`.
 
 ### 1) index.html
 
-Firstly, let us write the required HTML code for the pixel art pad. You will be having the following code in `index.html` by default :
+First, let us write the required HTML code for the pixel art pad. You will be having the following code in `index.html` by default :
 
 ```html
 <!DOCTYPE html>
@@ -96,14 +96,14 @@ If you don't use a custom CSS, remove the following line from the code  :
 <link href="style.css" rel="stylesheet" type="text/css" />
 ```
 
-Since we don't use a separate JavaScript file, delete the following line :
+Since we are not using JavaScript, we will also remove the following line which is inside the <body> tag:
 
 ```html
 <script src="script.js"></script>
 ```
 #### The canvas element
-Inside the `<body></body>` tag, specify the center tag followed by the heading and and `<canvas>` tag which is used for creating a canvas (for the pixel art pad).
-The `<canvas>` element is used to draw graphics on a web page. The canvas element is only a container for graphics. We will be using processing.js along with Java to process the graphics.
+Provide `<h1>` tag for the heading and `<h7>` tag for the sub title. The <canvas> tag is used for creating a canvas.
+The canvas tag is only a container for the art pad. We will be using processing.js along with Java to process the art inside the art pad.
 
 #### Final index.html code:
 
