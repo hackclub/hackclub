@@ -7,7 +7,7 @@ image: 'https://cloud-g7zlt63qw.vercel.app/0image.png'
 
 # Orpheus Run
 
-You probably must have played Temple Run or the famous 404 Dino Game! What if we create our own simple version of that? Well, we are going to do exactly the same in today's workshop! And you know what? It only requires HTML, CSS and JavaScript!
+You probably must have played Temple Run or the famous 404 Dino game! What if we create our own simple version of that? Well, we are going to do exactly the same in today's workshop! And you know what? It only requires HTML, CSS and JavaScript!
 
 ![Demo of our today's workshop](https://cloud-da2q27sz3.vercel.app/01.gif)
 
@@ -550,13 +550,13 @@ Here are some tasks for you:
 
 3. Increase the speed of the game as it moves ahead.
 
-4. Add keyboard support to the game, such as `spacebar` to jump!
+Check out these amaaaazing hacks!
 
-Check Out these amaaaazing hacks!
+1. [Tanishq customised it and made it so beautiful!](https://mariotypegame.tanishqsoni.repl.co/)
 
-1. [By Tanishq](https://mariotypegame.tanishqsoni.repl.co/)
+2. [Khushraj converted it into the Dino game and also added a custom GAME OVER prompt!](https://repl.it/@KhushrajRathod/OrpheusRunner#index.html)
 
-2. [By Khushraj](https://repl.it/@KhushrajRathod/OrpheusRunner#index.html)
+3. [Keyboard support in the game!](https://repl.it/@FaisalSayed1/Orpheus-Run-Example-1)
 
 Now that you have finished building it, you should share your beautiful creation with other people! (I can't wait to see you ship this!)
 
