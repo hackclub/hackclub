@@ -165,7 +165,7 @@ else if (12 < hour && hour < 20) {
   });
 }
 else {
-  image = await axios.get(images.afternoon, {
+  image = await axios.get(images.night, {
     responseType: "arraybuffer",
   });
 }
@@ -185,7 +185,7 @@ async function setPFP() {
   var hour = new Date().getHours() + 8
   let image
   if (5 < hour && hour < 12) {
-    image = await axios.get(images.afternoon, {
+    image = await axios.get(images.morning, {
       responseType: "arraybuffer",
     });
   }
@@ -195,7 +195,7 @@ async function setPFP() {
     });
   }
   else {
-    image = await axios.get(images.afternoon, {
+    image = await axios.get(images.night, {
       responseType: "arraybuffer",
     });
   }
