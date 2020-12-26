@@ -24,9 +24,9 @@ Go ahead and create an account in [tinkercad](https://tinkercad.com)
 
 You will be redirected to `Dashboard`.
 
-Now click on `New circuit`.
+Now click on `Create new Circuit`.
 
-![new circuit]()
+![new circuit](https://cloud-gjkck0spr.vercel.app/0screenshot_2020-12-26_090325.png)
 
 Just click on the name at the top left and rename your project.
 
