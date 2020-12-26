@@ -1,14 +1,14 @@
 ---
 name: 'Electronic Dice'
-description: 'Create an electronic dice using 7 segment LED display for your next board game'
+description: 'Create an electronic dice using a Seven segment LED display for your next board game'
 author: '@giridhar7632'
 ---
 
-# Rolling Dice using Arduino and 7 Segment Display
+# Electronic Dice using an Arduino and a Seven Segment Display
 
-Have you ever made a dice using electronics? This workshop will create a virtual dice that displays a random number between 1 and 6. You can use your project for your next board game.
+Have you ever made a dice using electronics? This workshop will create a virtual dice that displays a random number between 1 and 6. You can use this project for your next board game.
 
-We will learn about the 7 Segment Display and see how the Arduino 7 Segment Display Interface works.
+We will learn about the a Seven Segment Display Interface works.
 
 Here you can find the whole working model.
 
@@ -16,13 +16,13 @@ Here you can find the whole working model.
 
 ## Setup
 
-We are going to use Tinkercad's interactive circuit builder, which is terrific. It's like building an Arduino circuit in real life. With the expertise, you gain from making this circuit online, recreating it with physical components should be a breeze!
+We are going to use Tinkercad's interactive circuit builder, which is terrific. It's like building an Arduino circuit in real life. With the expertise you gain from making this circuit online, recreating your circuit with physical components should be a breeze!
 
 Go ahead and create an account in [tinkercad](https://tinkercad.com)
 
 ![Tinkercad](https://cloud-9sltbj02f.vercel.app/0tinkercad.png)
 
-You will be redirected to `Dashboard`.
+You will be redirected to the `Dashboard`.
 
 Now click on `Create new Circuit`.
 
@@ -38,16 +38,16 @@ After setting up, let's start tinkering.🚀
 
 ## Components
 
-1) 7 Segment Display
+1) Seven Segment Display
 2) An Arduino UNO board
 3) Push-button
 4) Resistors
 
-#### 1) 7 Segment Display
+#### 1) Seven Segment Display
 
-The first central part which we are going to use in our project is the 7 Segment Display. A 7 Segment Display is a simple device. It consists of 7 LEDs called arranged in Segments. Hence, the name 7 Segment Display. Each LED Segment is in the shape of a hexagon, and all the 7 LEDs are arranged in an "8" like fashion so that it can display digits 0 to 9.
+The first central part which we are going to use in our project is the Seven  Segment Display. A Seven Segment Display is a simple device. It consists of seven LEDs called arranged in Segments. Hence, the name Seven Segment Display. Each LED Segment is in the shape of a hexagon, and all the seven LEDs are arranged in an "8" like fashion so that it can display digits 0 to 9.
 
-![7 segment display](https://cloud-9sltbj02f.vercel.app/47_segment_dis.png)
+![Seven segment display](https://cloud-9sltbj02f.vercel.app/47_segment_dis.png)
 
 The top five pins are `g`, `f`, `COM`, `a`, and `b`, while the bottom five pins are `e`, `d`, `COM`, `c`, and `dp`. Since it is a common anode display, the COM (common pin) is connected to the Common Collector Voltage.
 
@@ -71,7 +71,7 @@ The other part we will use in our project is Simple Arduino. The Arduino Uno is 
 
 ![Arduino](https://cloud-krdvm0bjz.vercel.app/0arduino.png)
 
-Further, if you're interested in Arduino, you can learn more from [here](https://en.wikipedia.org/wiki/Arduino_Uno)
+If you're interested in Arduino, you can learn more from [here](https://en.wikipedia.org/wiki/Arduino_Uno)
 
 #### 3) Push button
 We are going to use a push-button whenever we need to roll a dice. By pressing, we will obtain a random number between 1 and 6.
@@ -85,8 +85,6 @@ In this project, we will use seven resistors having 220ohm resistance.
 ![resistor](https://cloud-krdvm0bjz.vercel.app/2resistor.png)
 
 ## Building our circuit
-
-Here is the step by step process where you will find it easy to create this project independently. 😊
 
 You will find the window as it appears like this when you open tinkercad.
 
@@ -110,7 +108,7 @@ Let us start with dragging the Arduino board.
 
 ![draging](https://cloud-i27ey1nq6.vercel.app/0draggin_the_arduino.gif)
 
-The next component is our 7 Segment display. You can get it by typing the name in the search box provided. After finding it, just drag it from there to the workspace and place it beside the Arduino board. Also, drag a push-button and 7 resistors onto the screen. You will find them just by typing the name in the search box. Drag it and place it on the workspace.
+The next component is our Seven segment display. You can get it by typing the name in the search box provided. After finding it, just drag it from there to the workspace and place it beside the Arduino board. Also, drag a push-button and 7 resistors onto the screen. You will find them just by typing the name in the search box. Drag it and place it on the workspace.
 
 So far, our workspace will be looking like this.
 
@@ -149,7 +147,7 @@ Connect terminal 1a of the push button to the ground, which is represented as `g
 
 ![button connected](https://cloud-krdvm0bjz.vercel.app/5step-1.png)
 
-Yeah, now the time has come to connect the 7 segment display to the Arduino board.
+Now the time has come to connect the Seven segment display to the Arduino board.
 You will find the seven-segment display port number when you take your mouse pointer near the respective port.
 On the first step, connect the `g` port of the seven segment display to the other end port of the resistor, connected to the `5` pin of Arduino.
 
@@ -157,7 +155,7 @@ Similarly, connect the port `f` of segment display to `6` pin of Arduino, `a` to
 
 Connect the upper side common port to the `9` pin of the Arduino board directly without any resistor.
 
-Yeah, now coming to the lower side of the seven-segment display. In the same way, you connected the upper portion of the seven-segment display connects the lower ports `c` to `4`, `d` to `3`, `e` to `2`. The connections of the seven-segment display registers and Arduino board are completed now. Leave the common port and DP port on the lower side of the seven-segment display.
+Now coming to the lower side of the seven-segment display. In the same way, you connected the upper portion of the seven-segment display connects the lower ports `c` to `4`, `d` to `3`, `e` to `2`. The connections of the seven-segment display registers and Arduino board are completed now. Leave the common port and DP port on the lower side of the seven-segment display.
 
 The final circuit, after all the connections, looks like this.
 
@@ -313,7 +311,7 @@ When the push button is pressed, numbers from `0` to `9` toggles. For this, we u
 
 We turn the `state` to true for displaying a single random number.
 
-Now go ahead and hit the `run simulation` button.
+Hit the `run simulation` button.
 
 We are all set to play a game related to dice.
 
@@ -402,7 +400,7 @@ That's it for this workshop. Enjoy your next board game.
 Now that you know about Seven segment display go wild with it. Here are some other projects to inspire you:
 
 * [Simple Counter](https://www.tinkercad.com/things/jzkwgsMjMeA)
-* [4 digit 7 segment LED display](https://www.tinkercad.com/things/27k65HnoDAQ)
+* [4 digit Seven segment LED display](https://www.tinkercad.com/things/27k65HnoDAQ)
 * [Temperature display](https://www.tinkercad.com/things/hSFv990dO4v)
 
 PS: I'm [@Giridhar](https://hackclub.slack.com/team/U013E6KE9UJ) on Slack!
