@@ -43,29 +43,29 @@ After setting up, let's start tinkering.🚀
 3) Push-button
 4) Resistors
 
-#### 1) 7 Segment Display.
+#### 1) 7 Segment Display
 
 The first central part which we are going to use in our project is the 7 Segment Display. A 7 Segment Display is a simple device. It consists of 7 LEDs called arranged in Segments. Hence, the name 7 Segment Display. Each LED Segment is in the shape of a hexagon, and all the 7 LEDs are arranged in an "8" like fashion so that it can display digits 0 to 9.
 
 ![7 segment display](https://cloud-9sltbj02f.vercel.app/47_segment_dis.png)
 
-The top five pins are 'g,' 'f,' 'COM,' 'a', and 'b,' while the bottom five pins are 'e,' 'd', 'COM,' 'c,' and 'dp.' Since it is a common anode display, the COM (common pin) is connected to the Common Collector Voltage.
+The top five pins are `g`, `f`, `COM`, `a`, and `b`, while the bottom five pins are `e`, `d`, `COM`, `c`, and `dp`. Since it is a common anode display, the COM (common pin) is connected to the Common Collector Voltage.
 
 ![pin diagram](https://cloud-9sltbj02f.vercel.app/5pin_diag.jpeg)
 
-Let us first look at the internal structure of a Common Anode 7 Segment Display, i.e., how the LEDs are connected.
+Let us first look at the internal structure of a Common Anode Seven Segment Display, i.e., how the LEDs are connected.
 
 ![LED's connection](https://cloud-9sltbj02f.vercel.app/7led_connections.png)
 
-We can observe that the anodes of each individual are connected as one(to positive(+)), and for turning on the LEDs according to the number to be displayed, the respective cathodes are connected to the negative(-) terminal.
+We can observe that the anodes of each individual are connected as one (to positive (`+`)), and for turning on the LEDs according to the number to be displayed, the respective cathodes are connected to the negative(`-`) terminal.
 
 To display digits from 0 to 9 on this seven-segment display, you need to activate specific segments for each number. The following table indicates the list of segments you need to turn on to display a particular digit.
 
-![truth table](https://cloud-9sltbj02f.vercel.app/6truthtable.png).
+![truth table](https://cloud-9sltbj02f.vercel.app/6truthtable.png)
 
 This table helps us while we are programming our Arduino.
 
-#### 2) An Arduino UNO board.
+#### 2) An Arduino UNO board
 
 The other part we will use in our project is Simple Arduino. The Arduino Uno is an open-source microcontroller board based on the Microchip ATmega328P microcontroller.
 
@@ -73,18 +73,18 @@ The other part we will use in our project is Simple Arduino. The Arduino Uno is 
 
 Further, if you're interested in Arduino, you can learn more from [here](https://en.wikipedia.org/wiki/Arduino_Uno)
 
-#### 3) Push button.
-We are going to use a push-button whenever we need to roll a dice. By pressing, we will obtain a random number from 1 to 6.
+#### 3) Push button
+We are going to use a push-button whenever we need to roll a dice. By pressing, we will obtain a random number between 1 and 6.
 
 ![push button](https://cloud-krdvm0bjz.vercel.app/1pushbtn.png)
 
-#### 4) Resistors.
+#### 4) Resistors
 
-In our project, we will use resistors having 220ohm resistance. Seven resistors are being used in this project.
+In this project, we will use seven resistors having 220ohm resistance.
 
 ![resistor](https://cloud-krdvm0bjz.vercel.app/2resistor.png)
 
-## Building our circuit.
+## Building our circuit
 
 Here is the step by step process where you will find it easy to create this project independently. 😊
 
@@ -92,7 +92,7 @@ You will find the window as it appears like this when you open tinkercad.
 
 ![Tinkercad project](https://cloud-9sltbj02f.vercel.app/3windows.png)
 
-**First one**: This is the logo of the tinkercad, which we are going to use for our project.
+**First one**: This is the logo of the tinkercad, which we are using now.
 
 **Second one**: It's the title of the project we will give as `Electronic Dice`.
 
@@ -137,7 +137,7 @@ Yes, the time has come to proceed further and give connections for our circuit.
 
 ## Wiring the circuit.
 
-Place the seven resistors of 220-ohm resistance on the top of the digital side of the Arduino board. Each of the 7 resistors should be placed on the top of PIN 8,7,6,5,4,3,2 one by one.
+Place the seven resistors of 220-ohm resistance on the top of the digital side of the Arduino board. Each of the 7 resistors should be placed on the top of PIN 8, 7, 6, 5, 4, 3, 2 one by one.
 
 Of the two ports which the resistor has, the port which is facing the Arduino Uno board is used to connect to the respective PIN. When you select the resistor's port, you will be seeing that a wire of green color is being created.
 
@@ -194,10 +194,10 @@ int num[10][7]={ {0,0,0,1,0,0,0},
 
 The LEDs are arranged in an "8" shape, and to display a digit, individual LEDs should be turned on and turned off. This block of code does the thing we wanted to.
 
-Now define some variables we need: 
-`r_num`: random number
-`roll`: the pin we use for rolling the dice
-`state`: state of PIN 12
+Now define some variables we need:
+* `r_num`: random number
+* `roll`: the pin we use for rolling the dice
+* `state`: state of PIN 12
 
 ```c
 long r_num;     
@@ -207,7 +207,7 @@ bool state = true;
 
 Under this block of code, the main parts are considered the head and body of our code.
 
-"`c
+```c
 void setup()
 {
 
@@ -226,7 +226,7 @@ The `void` thing we wrote is a return type, i.e., if our code block does not req
 
 Now coming to the first loop, i.e., `setup()`, first of all, we are going to tell Arduino which pins are we using, and the other one is to give commands of the pins which are connected to either any of the components, i.e., what should the pin connected have to do.
 
-"`c
+```c
 void setup()
 {
   pinMode(2,OUTPUT);
@@ -253,11 +253,11 @@ void setup()
 }
 ```
 
-The function used to tell the Arduino which pin we will use is `pinMode(pin number, OUTPUT/INPUT)`. As in our circuit, we used 2 to 9 pins. We will declare them as above and as they are all giving output mentioned as "OUTPUT".
+The function used to tell the Arduino which pin we will use is `pinMode(pin number, OUTPUT/INPUT)`. As in our circuit, we used 2 to 9 pins. We will declare them as above and as they are all giving output mentioned as `OUTPUT`.
 
 The `INPUT_PULLUP` is written to enable the internal pull-up resistor.
 
-The next command we used is `digitalWrite(pin number, HIGH/LOW)`. If the pin has been configured as an OUTPUT with `pinMode()`, its voltage will be set to the corresponding value: 5V for HIGH, 0V (ground) for LOW.
+The next command we used is `digitalWrite(pin number, HIGH/LOW)`. If the pin has been configured as an `OUTPUT` with `pinMode()`, its voltage will be set to the corresponding value: 5V for `HIGH`, 0V (ground) for `LOW`.
 
 [`randomSeed()`](https://www.arduino.cc/reference/en/language/functions/random-numbers/randomseed/) initializes the pseudo-random number generator, causing it to start at an arbitrary point in its random sequence.
 
@@ -267,7 +267,7 @@ The next block of code is written in `loop()`.
 
 Add the following code:
 
-"`c
+```c
 void setup()
 {
   if(state)
@@ -290,7 +290,7 @@ Let's add functionality to our button. When the button is clicked, we have to di
 
 Add the following code:
 
-"`c
+```c
 void setup()
 {
   // previous code
@@ -399,7 +399,7 @@ That's it for this workshop. Enjoy your next board game.
 
 ## Next Steps
 
-Now that you know about 7 segment display go wild with it. Here are some other projects to inspire you:
+Now that you know about Seven segment display go wild with it. Here are some other projects to inspire you:
 
 * [Simple Counter](https://www.tinkercad.com/things/jzkwgsMjMeA)
 * [4 digit 7 segment LED display](https://www.tinkercad.com/things/27k65HnoDAQ)
