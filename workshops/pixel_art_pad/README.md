@@ -50,7 +50,7 @@ Once your repl is setup, you are all set to continue!
 
 The first file that appears soon after the repl is setup is `index.html`.
 
-You will be able to find two other files called `style.css` and `script.js` in the files pane in the left side. Delete both the files as are not required in this workshop (You can have them if you want to use custom css or js).
+You will be able to find two other files called `style.css` and `script.js` in the files panel on the left side. Delete both the files as they are not required in this workshop (You can have them if you want to use custom css or js).
 
 ![Deleting files](https://cloud-63ot6za6a.vercel.app/0deletingfiles.gif)
 
