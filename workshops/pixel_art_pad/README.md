@@ -214,7 +214,7 @@ The colors specified above are in color(R, G, B) format. You can modify them wit
 
 #### Function to setup the canvas
 
-We will be requiring to write a function for setting up the canvas. Use the below code to set up the canvas :
+We need to write a function for setting up the canvas. Use the below code to set up the canvas :
 
 ```java
 void setup()
