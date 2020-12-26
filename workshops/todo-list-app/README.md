@@ -715,7 +715,7 @@ export default Todo
 
 ![Delete todo](https://cloud-792qf1oid.vercel.app/4deleting_database.png)
 
-That's it, folks! We completed our Full-stack Todo App. Check your final code [here](https://repl.it/@Giridharhackclu/Todo-App-Final#src/App.js).
+That's it, folks! We completed our Full-stack Todo App. Check your final code [here](https://repl.it/@Giridharhackclu/Todo-App-Final#src/App.js). ✌
 
 ![Completed](https://cloud-792qf1oid.vercel.app/6you_did_it_.gif)
 
