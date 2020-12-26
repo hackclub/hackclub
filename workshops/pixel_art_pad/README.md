@@ -298,7 +298,7 @@ void mousePressed()
   }
 }
 ```
-The above function defines the mouse action of filling the tile with the color choosen. You can customize or create new mouse actions if you want (For example, you can try using right click to erase a color on a tile).
+You can customize or create new mouse actions if you want (For example, you can try using right click to erase a color on a tile).
 
 <details><summary>Your final code should look something like this:</summary>
   
