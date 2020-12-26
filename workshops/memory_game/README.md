@@ -7,11 +7,11 @@ img: 'https://cloud-g7cpynxc4.vercel.app/0screenshot_2020-11-11_104712.png'
 
 # Memory Game
 
-Memory Game, also known as Matching Game, is a simple card game where you need to match pairs by turning over 2 cards at a time. In this workshop, we are going to build a simple memory game using JavaScript. Take a peek at the final project and the code.
+Memory Game, also known as Matching Game, is a simple card game where you need to match pairs by turning over two cards at a time. In this workshop, we are going to build a simple memory game using JavaScript. Take a peek at the final project and the code.
 
 ![Final Project](https://cloud-lrj071vrh.vercel.app/0memory_game.gif)
 
-[Live Demo](https://memory-game.giridharhackclu.repl.co/) and [Source Code](https://repl.it/@Giridharhackclu/Memory-Game#index.html).
+[Live demo](https://memory-game.giridharhackclu.repl.co/) and [source code](https://repl.it/@Giridharhackclu/Memory-Game#index.html).
 
 ## How to play...
 
@@ -26,11 +26,11 @@ Memory Game, also known as Matching Game, is a simple card game where you need t
 ## Prerequisites
 
 ![prerequisites](https://cloud-h9glprsfs.vercel.app/0prerequisites.png)
-Basic knowledge of HTML5, CSS3, and JavaScript. We will use some in-built functions of JavaScript. Also, the styling will be as simple as possible.
+You should have basic knowledge of HTML5, CSS3, and JavaScript. We will use some in-built functions of JavaScript. Also, the styling will be as simple as possible.
 
 ## Setup
 
-[Repl.it](https://repl.it) is an online code editor. There is no need to install anything which makes coding simpler.
+[Repl.it](https://repl.it) is an online code editor. There is no need to install anything, which makes coding simpler.
 
 Fork the starter repl [here](https://repl.it/@Giridharhackclu/Memory-game-starter#index.html). Your development environment will be ready in a few seconds!
 
@@ -38,9 +38,9 @@ Fork the starter repl [here](https://repl.it/@Giridharhackclu/Memory-game-starte
 
 It contains an empty `index.html` file linked with `style.css` and `script.js` files.
 
-We will create a simple 3 x 4 memory card game in this workshop. We will use images for the cards. I will provide the public links for the images along with the code. If you prefer to download, you can download them [here](https://drive.google.com/drive/folders/128S-rB27-86ciSyJvjkfK2NhJeoOmsB3?usp=sharing). You can also add your own images. Make sure that they are 100 x 100 px to avoid further styling.
+We will create a simple 3 x 4 memory card game in this workshop, using images as cards. Public links for the images will be provided along with the code. If you prefer local images, you can download them [here](https://drive.google.com/drive/folders/128S-rB27-86ciSyJvjkfK2NhJeoOmsB3?usp=sharing). You can also add your images. Please make sure that they are 100 x 100 px to avoid further styling.
 
-After setting up let's get going.
+After setting up, let's get going.
 
 ## The HTML
 
@@ -86,23 +86,23 @@ Click the Run button to check your output, whether all the tags are working.
 
 ![CSS output](https://cloud-mv8zkaxw2.vercel.app/0screenshot_2020-10-31_133838.png)
 
-All the styles are prewritten in the starter template. You will see this :point_up_2: kind of output.
+All the styles are prewritten in the starter template. You will see this kind of output. 👆
 
-We completed the markup of our project. Now flip over to `script.js` and let's start creating the game.
+We completed the markup of our project. Now flip over to `script.js`, and let's start creating the game.
 
 ## The JavaScript
 
 Create a DOM [event-listener](https://developer.mozilla.org/en-US/docs/Web/API/EventListener) for the event [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event). All our JavaScript code will be inside the event listener, which will be executed after the content of the web page is loaded.
 
-```javascript
+```js
 document.addEventListener('DOMContentLoaded', () => {
   // code goes here!
 })
 ```
 
-Inside the event-listener, create an array for the cards which we use for the game. Add two of each card for matching the cards. The public links for the images are provided in the code below. If you downloaded the images or using your own images, then add the relative path to the images. Also, name them as you wish.
+Inside the event-listener, create an array for the cards which we use for the game. Add two of each card for matching the cards. The public links for the images are provided in the code below. If you downloaded the images or using your images, then add the relative path to the images. Also, name them as you wish.
 
-```javascript
+```js
 document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [
     {
@@ -168,11 +168,11 @@ Remember, we are going code everything after the `cardArray`.
 Now we have to create four constants as:
 
 - `board`: the `div` element with class of `board` using [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
-- `result`: the `span` with an id of `score`, to add the live score.
-- `placeholder`: for placeholder image. Placeholder image represents the backside of our cards.
-- `blank`: for the blank image. In place of the empty card, a blank image is displayed.
+- `result`: the `span` with an id of `score` to add the live score.
+- `placeholder`: for placeholder image. The placeholder image represents the backside of our cards.
+- `blank`: for the blank image. In place of the blank card, a blank image is displayed.
 
-```javascript
+```js
 const board = document.querySelector('.board')
 const result = document.querySelector('#score')
 const placeholder = 'https://cloud-5ystxzer7.vercel.app/7placeholder.png'
@@ -195,7 +195,7 @@ Create a `img` element using `document.createElement` for the every card.
 var card = document.createElement('img')
 ```
 
-Using `setAttribute()`, add `src` and `data-id` attributes to the image. Let's first set the `src` attribute to the placeholder image (i.e, let's assume the placeholder image as a reversed card). The link to the placeholder image is given in the code, otherwise, add the relative path to the image.
+Using `setAttribute()`, add `src` and `data-id` attributes to the image. Let's first set the `src` attribute to the placeholder image (i.e., let's assume the placeholder image as a reversed card). The link to the placeholder image is given in the code. Otherwise, add the relative path to the image.
 
 ```js
 card.setAttribute('src', placeholder)
@@ -208,7 +208,7 @@ card.setAttribute('data-id', i)
 - [setAttribute()](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute) sets the value of an attribute on the specified element
 - [data attribute](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) allow us to store extra information on standard in the HTML tag.
 
-According to the game, we have to flip the card that is clicked. Add a `click` event-listener for the card. Every time a card gets clicked, `flipCard` function will be executed, which we will define later on the flow. For now, comment the event-listener as `flipCard` haven't yet defined.
+According to the game, we have to flip the card that is clicked. Add a `click` event-listener for the card. Every time a card gets clicked, the `flipCard` function will be executed, which we will define later on the flow. For now, comment on the event-listener as `flipCard` that hasn't yet been defined.
 
 ```js
 card.addEventListener('click', flipCard)
@@ -224,7 +224,7 @@ The method [appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node
 
 The function we created finally, will be:
 
-```javascript
+```js
 const board = document.querySelector('.board')
 const placeholder = 'https://cloud-5ystxzer7.vercel.app/7placeholder.png'
 
@@ -281,7 +281,7 @@ Then add the front side of the card, the image in `cardArray` corresponding to `
 this.setAttribute('src', cardArray[cardId].img)
 ```
 
-After selecting two cards, we have to check for a match. For that, if two cards are clicked i.e., the length of `cardsClicked` array is equal to `2`, invoke `checkForMatch()` inside `setTimeout()` so that everything doesn't happen too fast.
+After selecting two cards, we have to check for a match. For that, if two cards are clicked, i.e., the length of `cardsClicked` array is equal to `2`, invoke `checkForMatch()` inside `setTimeout()` so that everything doesn't happen too fast.
 
 ```js
 if (cardsClicked.length === 2) {
@@ -293,7 +293,7 @@ if (cardsClicked.length === 2) {
 
 - [getAttribute()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute) returns the value of a specified attribute on the element.
 - [push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) method adds one or more elements to the end of an array and returns the new length of the array.
-- [setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) sets a timer which executes a function or specified piece of code once the timer expires.
+- [setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) sets a timer that executes a function or specified piece of code once the timer expires.
 
 Final `flipCard` function will be:
 
@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </details>
 
 Don't forget to uncomment the event-listener of the card.
-Comment the `if` statement in `flipCard` function and check whether the images are changing or not. The output works like this.
+Comment the `if` statement in the `flipCard` function and check whether the images are changing or not. The output works like this.
 
 ![Flip card](https://cloud-odqx6kfb8.vercel.app/0flipcard.gif)
 
@@ -360,11 +360,11 @@ We created a flippable game board.
 
 ![Wooo!!](https://cloud-bos4syje4.vercel.app/0woo__.gif)
 
-Now that we have flipping cards, let’s handle the matching logic.
+Now that we have flipping cards let's handle the matching logic.
 
 ## Match Card
 
-When we click the first card, it needs to wait until another card is flipped. So now, when the user clicks the second card, we will check to see if it’s a match.
+When we click the first card, it needs to wait until another card is flipped. Now, when the user clicks the second card, we will check to see if it's a match.
 
 In order to do that, let’s create a function `checkForMatch()`. Inside the function, select all the images we created using `querySelectorAll()` and define a `cards` array. Also get the two elements in `cardsClickedId` array into two variables `firstCard` and `secondCard` respectively.
 
@@ -377,7 +377,7 @@ function checkForMatch() {
 }
 ```
 
-If you click the same card again, a pop-up alert notifies you and the cards flip back.
+If you click the same card again, a pop-up alert notifies you, and the cards flip back.
 
 ```js
 if (firstCard === secondCard) {
@@ -387,7 +387,7 @@ if (firstCard === secondCard) {
 }
 ```
 
-Else, if the two cards match you get +1 to your score. These cards then disappear(i.e., a blank card is displayed). We add the matched cards to `cardsMatched` array we created before using `push()` method. The length of `cardsMatched` array is your score.
+Else, if the two cards match, you get +1 to your score. These cards then disappear(i.e., a blank card is displayed). We add the matched cards to the `cardsMatched` array we created before using the `push()` method. The length of the `cardsMatched` array is your score.
 
 ```js
 else if (cardsClicked[0] === cardsClicked[1]) {
@@ -397,7 +397,7 @@ else if (cardsClicked[0] === cardsClicked[1]) {
 }
 ```
 
-Once we have a matched, the blank cards are still "clickable" and that's a flaw as far as user experience goes.
+Once we have a match, the blank cards are still "clickable", which's a flaw as far as user experience goes.
 
 ![clickable](https://cloud-fmitdekvd.vercel.app/0removeevent.gif)
 
@@ -420,7 +420,7 @@ else {
 }
 ```
 
-We have to add the live score into `result` using `textContent`. After the logic executed, we have to clear both the `cardsClicked` and `cardsClickedId` arrays no matter what.
+We have to add the live score into `result` using `textContent`. After the logic is executed, we have to clear both the `cardsClicked` and `cardsClickedId` arrays no matter what.
 
 ```js
 cardsClicked = []
@@ -432,7 +432,7 @@ result.textContent = cardsMatched.length
   
   <summary>Our code so far: </summary>
   
-```javascript
+```js
 document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [....]
 
@@ -487,7 +487,7 @@ createBoard()
 ```
 </details>
 
-One thing you might notice that the cards are not random. So we have to shuffle the `cardArray`, every time before creating the board, using `sort()` method. The [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method sorts the elements of an array in place and returns the sorted array.
+You might notice that the cards are not random. So we have to shuffle the `cardArray` every time before creating the board, using the `sort()` method. The [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method sorts the elements of an array in place and returns the sorted array.
 
 ![Non random board](https://cloud-g7cpynxc4.vercel.app/1screenshot_2020-11-11_105448.png)
 
@@ -509,14 +509,14 @@ Check the final code [here](https://repl.it/@Giridharhackclu/Final-Memory-Game#s
 
 It's your turn to customize.
 
-- Use your creativity and go wild with the styles. You can use the desired theme, and create different card games.
-- The game consists of an even number of cards, you can add different levels with the different dimensions of the board, eg:- 3 x 4, 4 x 4, 6 x 4, etc.
+- Use your creativity and go wild with the styles. You can use the desired theme and create different card games.
+- The game consists of an even number of cards. You can add different levels with the different dimensions of the board, e.g.:- 3 x 4, 4 x 4, 6 x 4, etc.
 - For more functionality of the game, you can add a timer, track the number of moves.
-- You can also add two-player mode with more number of cards.
-- Also there are many ways of creating the board. If you are good in JavaScript, use `innerHTML` method for adding cards to the board.
+- You can also add a two-player mode with more number of cards.
+- Also, there are many ways of creating the board. If you are good at JavaScript, use the `innerHTML` method for adding cards to the board.
 
-Hope you love this workshop! :v: <br>
-After customising, do share with me on slack as [@Giridhar](https://hackclub.slack.com/team/U013E6KE9UJ). I'd love to see your project.
+I hope you love this workshop! :v: <br>
+After customizing, do share with me on slack as [@Giridhar](https://hackclub.slack.com/team/U013E6KE9UJ). I'd love to see your project.
 
 ## Inspiration
 
