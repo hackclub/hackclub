@@ -96,7 +96,7 @@ If you don't use a custom CSS, remove the following line from the code  :
 <link href="style.css" rel="stylesheet" type="text/css" />
 ```
 
-Since we are not using JavaScript, we will also remove the following line which is inside the <body> tag:
+Since we are not using JavaScript, we will also remove the following line which is inside the `<body>` tag:
 
 ```html
 <script src="script.js"></script>
