@@ -186,7 +186,7 @@ Here, we are initializing a square grid of 25*25 tiles. You can change it accord
 
 #### Specifying the colors in color palette
 
-I love colors. In this workshop, we will be adding 9 colors for our color palette. You can modify or add more colors according to your convinience.
+I love colors. In this workshop, we will be adding 9 colors for our color palette. You can modify or add more colors according to your convenience.
 
 ![A variety of colors](https://media.giphy.com/media/8Ry7iAVwKBQpG/giphy.gif)
 
@@ -234,10 +234,9 @@ In the above code, the size of the canvas is specified inside `size(500, 500);`.
 
 #### Function to draw upon mouse click
 
-The below function can be used for paiting the tile with the selected color when the left mouse button is clicked.
+We need to create a function called draw(). This function is used to fill a tile with the seletected color.
 
 ```java
-
 void draw()
 { 
   for (int a = 0; a < grid.length; ++a)
@@ -255,9 +254,11 @@ void draw()
       ellipse(50, (a * 50) + 50, 30, 30);
     }
   }
+  ```
   
+After defining the draw() function, we should create an 'if' condition to check if the left mouse button is clicked. The following code checks if the left mouse button is pressed and returns the tile which is clicked :
 
-  // Function for painting with mouse press
+```java
   if (mousePressed && mouseButton == LEFT)
   {
     for (int a = 0; a < grid.length; ++a)
@@ -280,8 +281,11 @@ void draw()
       }
     }
   }
+  ```
+  
+Next, we need to define a function called mousePressed(). This function colors the selected tile with the selected color from the color palette.
 
-}
+```
 void mousePressed()
 {
   if (show)
@@ -296,8 +300,8 @@ void mousePressed()
 ```
 The above function defines the mouse action of filling the tile with the color choosen. You can customize or create new mouse actions if you want (For example, you can try using right click to erase a color on a tile).
 
-#### Final index.java code :
-
+<details><summary>Your final code should look something like this:</summary>
+  
 ```java
 // Setting up Tile class
 class Tile
@@ -415,6 +419,8 @@ void mousePressed()
   }
 }
 ```
+
+</details>
 
 And finally, the coding part for both HTML and Java is done!
 
