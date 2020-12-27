@@ -283,7 +283,7 @@ After defining the draw() function, we should create an 'if' condition to check 
   }
   ```
   
-Next, we need to define a function called mousePressed(). This function colors the selected tile with the selected color from the color palette.
+Next, we need to define a function called `mousePressed()`. This function colors the selected tile with the selected color from the color palette.
 
 ```
 void mousePressed()
