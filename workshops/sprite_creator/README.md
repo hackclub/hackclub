@@ -21,7 +21,7 @@ Create a new repl and use Python as the language.
 <img src="https://cloud-rccf2cjdi.vercel.app/0screenshot__1440_.png" width="600" alt="Python Repl">
 
 # What is a Sprite?
-Essentially, a sprite is a bunch of squares (called pixels) that create an image.
+Essentially, a [sprite](https://en.wikipedia.org/wiki/Sprite_(computer_graphics)#:~:text=In%20computer%20graphics%2C%20a%20sprite,in%20a%202D%20video%20game.&text=Originally%2C%20the%20term%20%22sprites%22,by%20hardware%2C%20with%20a%20background.) is a bunch of squares (called pixels) that create an image.
 
 <img src="https://cloud-8hfp3i0cf.vercel.app/0sansspr.png" width="380" alt="Sans Sprite">
 
@@ -65,7 +65,7 @@ def drawSquare(x, y, side, color):
 
 # Reading in the Text File
 - We are going to read in a text file that we will later create. The text file will be where the user enter's their sprite information.
-- Add the code we will write after the "import" statement but before our function
+- Add the code we will write after the "import" statement but before our function.
 
 <img src="https://vip.socio-corp.jp/wp-content/uploads/sites/3/2014/12/pixel-art-1.gif?w=500" width="380" alt="Train Pixel Art Gif">
 
@@ -250,7 +250,9 @@ turtle.mainloop()
 
 # Creating the Text File
 Create a file and name it "sprite.txt".
+
 <img src="https://cloud-avutgg3d9.vercel.app/0screenshot__1434_.png" width="380" alt="sprite.txt file">
+
 - Add some colors! Make sure each color has a comma after it, with no spaces anywhere.
 - If you want to create a new sprite then add a dash on it's own line.
 <img src="https://cloud-ft6bf29c5.vercel.app/0screenshot__1438_.png" width="380" alt="Example sprites">
