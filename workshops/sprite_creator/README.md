@@ -5,12 +5,12 @@ author: '@JakeGerber'
 image: 'https://cloud-j2h9qribj.vercel.app/0screenshot__1437_.png'
 ---
 
-# Create a Drawing Program with Shapes!
-In this workshop, we will be creating a drawing program that allows us to make pictures out of different shapes such as circles, squares, and triangles.
+# Create a Sprite Creator Program!
+In this workshop, we will be creating a sprite creation program where you can create and cycle through your own custom sprites.
 
 <img src="https://cloud-j2h9qribj.vercel.app/0screenshot__1437_.png" width="580" alt="Sprite Example">
 
-<img src="https://thumbs.gfycat.com/FantasticFaintAmurminnow-small.gif" width="380" alt="Nice Gif">
+<img src="https://art.pixilart.com/a3c97a99fb3c1ed.gif" width="380" alt="Zelda 2 Link Gif">
 
 # Repl.it Setup
 
@@ -18,7 +18,7 @@ We're going to use [Repl.it](https://repl.it/~) to create the project. It is an 
 
 Create a new repl and use Python as the language.
 
-<img src="https://cloud-2ojs193ra.vercel.app/0screenshot__1396_.png" width="600" alt="Python Repl">
+<img src="https://cloud-rccf2cjdi.vercel.app/0screenshot__1440_.png" width="600" alt="Python Repl">
 
 # What is a Sprite?
 Essentially, a sprite is a bunch of squares (called pixels) that create an image.
@@ -64,6 +64,9 @@ def drawSquare(x, y, side, color):
 # Reading in the Text File
 - We are going to read in a text file that we will later create. The text file will be where the user enter's their sprite information.
 - Add the code we will write after the "import" statement but before our function
+
+<img src="https://vip.socio-corp.jp/wp-content/uploads/sites/3/2014/12/pixel-art-1.gif?w=500" width="380" alt="Train Pixel Art Gif">
+
 ## Initial Statements
 
 ```py
@@ -136,7 +139,7 @@ f.close()
 - The "tempr" string will get the entire color until a comma is seen, which represents the end of the pixel color.
 - Our "temparr" array is then getting each pixel, and finally, it is appending the pixel list to the "myarr" array.
 
-# Drawing all the Pixels
+# Drawing All the Pixels
 ```py
 def draw(currentarr):
   turtle.clear()
@@ -184,6 +187,8 @@ def draw(currentarr):
 
 # Changing the Current Sprite
 We are going to add functionality to allow you to cycle between your sprites.
+
+<img src="https://media0.giphy.com/avatars/nickyrojo/AJxzsBVCtrjo.gif" width="380" alt="Pixel Art Dog Gif">
 
 ## Left
 ```py
@@ -249,6 +254,8 @@ Create a file and name it "sprite.txt".
 <img src="https://cloud-ft6bf29c5.vercel.app/0screenshot__1438_.png" width="380" alt="Example sprites">
 
 # Final Code for "main.py"
+<img src="https://thumbs.gfycat.com/RespectfulHonestAxolotl-max-1mb.gif" width="380" alt="Charmander Gif">
+
 ```py
 import turtle
 
@@ -340,6 +347,3 @@ turtle.mainloop()
 - [Simpler Inputs for Specific Colors](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-1#main.py)
 - [Random Cycle](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-2#main.py)
 - [Sprite Layering](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-3#sprite.txt)
-
-
-
