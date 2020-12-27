@@ -1,59 +1,55 @@
 ---
-name: 'Compound Interest Calculator'
+name: 'Interest Calculator'
 description: 'This is a compound interest calculator made using Python'
 author: '@iamsid47'
-img: https://github.com/iamsid47/hangman-pics/blob/main/cic%20-%20%20main.png
+img: https://cloud-5rp4f2rjj.vercel.app/0cic_-__main.png
 ---
 
-![Compound Interest Calculator](https://github.com/iamsid47/hangman-pics/blob/main/cic%20-%20%20main.png)
-
-Hi Everyone! In this workshop, we are gonna build a **Compound Interest Calculator!**
+Hi everyone! In this workshop, we are gonna build an **interest calculator!**
 
 This will be a command line calculator which will ask for inputs, do the math for us and then give us the calculated output.
 
-You can out this project on Repl.it by clicking [THIS](https://repl.it/@iamsid47/compound-interest-calculator#main.py) link.
-
-# Files & Libraries Required
-
-There is gonna be just one file named as `main.py` and nothing else. Also, no libraries are required to run this program!
+You can out this project on Repl.it by clicking [this](https://repl.it/@iamsid47/comp-int#main.py) link.
 
 ## Let's Get Started!
 
-![Create a repl](https://github.com/iamsid47/hangman-pics/blob/main/cic%20-%20repl.png)
+![Create a repl](https://cloud-giasrdstj.vercel.app/3cic_-_repl.png)
 
 So, let's head over to [Repl.it](https://repl.it) and create a new *repl*. Choose Python as the language and the the name of your project.
 
-First, we will be printing up some stuff and then we'll slowly move towards the logic. Now, when we calculate compound interest, there are some specific terms which need to know and understand. This can include things like *monthly investment, interest on investment, principal, etc.* Thus, be sure to understand these terms first and later move over to the project.
+First, we will be printing up some stuff and then we'll slowly move towards the logic. Now there are two types of interests that we are gonna calculater. The first one is gonna be  the simple interest calculation and the other is gonna be a compound interest calculation. Now, when we calculate compound interest, there are some specific terms which need to know and understand. This can include things like *monthly investment, interest on investment, principal, etc.* Thus, be sure to understand these terms first and later move over to the project.
 
-Next, let's first print something cool to start with so to enhance the user's experience.
+Let's first print something cool to start with so to enhance the user's experience.
 
 ```python
 print("Howdy!")
 print("This is Compy ;) A compound interest calculator.")
 ```
-**Pro Tip**: You can also add in some other custom messages of your choice in the start of the program or in the middle of it.
+**Tip**: You can also add in some other custom messages of your choice in the start of the program or in the middle of it.
 
-Now, we will question the regarding how many years he will be saving for. Since this is an integer, we'll define it in our code.
+
+After this, we create a *function* named `comp` and inside this function, we print some questions regarding how many years he will be saving for, monthly investments, etc. Since this is an integer, we'll define it in our code.
 
 ```python
-print("How many years will you be saving?")
-years = int(input("Enter Years:  "))
+def comp():
+    print("How many years will you be saving?")
+    years = int(input("Enter Years:  ")))
 ```
 
 Next, we ask the user for the money he is currently having in his account. Here, the answer can be in decimal places as well. Thus to capture this, we will use `float`.
 
 ```python
 print("How much money is currently in your account?")
-principal = float(input('Enter current amount in account:  '))
+    principal = float(input('Enter current amount in account:  '))
 ```
 
 After this, we ask the user that how money is he planning to invest monthly.
 
 ```python
 print("How much money do you plan in investing?")
-monthly_invest = float(input('Enter amount:  '))
+    monthly_invest = float(input('Enter amount:  '))   
 ```
-And lastly we will ask him the interest he will be getting on this investment. Now this is gonna be in percentage. But to make it a bit easy, we ask for a decimal input instead.
+We will also ask him the interest he will be getting on this investment. Now this is gonna be in percentage. But to make it a bit easy, we ask for a decimal input instead.
 
 ```python
 print("What do you estimate will be your yearly interest of this investment?")
@@ -67,25 +63,84 @@ Next, let's get into the **logic** now!
 So, we are actually asking for monthly investment. Thus we need to multiply it by 12 first to make it yearly. After this, we just define the `final_amount` equal to zero at the start of everythin.
 
 ```python
-monthly_invest = monthly_invest * 12
-final_amount = 0
+print(' ')
+    monthly_invest = monthly_invest * 12
+    final_amount = 0
+    for i in range(0, years):
+        if final_amount == 0:
+            final_amount = principal
+        final_amount = (final_amount + monthly_invest) * (1 + interest)
+    print("This is how much money you would have in your account after {} year:  ".format(years) + str(final_amount))
 ```
-Now, we define the range (which is gonna be number of years the user enters) and add in a conditional.
+We define the range (which is gonna be number of years the user enters) and add in a conditional. Here, we also need to define the formula for calculating the value the user is seeking for. And lastly, we just `print` this and output the calculated value to the user.
+
+Let's move over and create another function named `simple_interest`.
+
+Here, the formula is to take the *principal value, the time, and the rate of interest* and then multiply these and divide the value by **100**.
+Thus,
 
 ```python
-for i in range(0, years):
-    if final_amount == 0:
-        final_amount = principal
+def simple_interest(): 
+    
+    p = int(input("What is the principal amount: "))
+    t = int(input("What is the time period(in Years):  "))
+    r = int(input("What is the rate of intrest"))
+
+    si = (p * t * r)/100
+      
+    print('The Simple Interest is: ', si) 
 ```
-Here, we also need to define the formula for calculating the value the user is seeking for. Thus;
+Now we create a while loop so that the user can exit or keep on calculating as per thier needs.
 
 ```python
-final_amount = (final_amount + monthly_invest) * (1 + interest)
+while True:
+    print("1.Compound Interest")
+    print("2.Simple Interest")
+    print("3.Exit")
+    choice = int(input("Tell me what you have to calculate(1/2/3) :"))
+
 ```
-And lastly, we just `print` this and output the calculated value to the user.
+Next, we add in the conditionals for the choices.
 
 ```python
-print("This is how much money you would have in your account after {} year:  ".format(years) + str(final_amount))
+# choice 1
+if(choice == 1):
+        comp()
+        ans = input("Do you want to calculate something else (y/n)").upper()
+        if (ans == 'Y'):
+            continue
+        elif(ans == 'N'):
+            print("Okay Byee!")
+            break
+        else:
+            print("Sorry Wrong Choice")
+            break
+```
+
+In the first choice, we will calculate the compound interest. If the answer is *Y* then continue or break the the loop. We do the same for **simple interest** as well
+
+```python
+elif(choice == 2):
+        simple_interest()
+        ans = input("Do you want to calculate something else (y/n)").upper()
+        if (ans == 'Y'):
+            continue
+        elif(ans == 'N'):
+            print("Okay Byee!")
+            break
+        else:
+            print("Sorry Wrong Choice")
+            break
+```
+
+Lastly, we need a choice where the user can choose to exit. Thus:
+
+```print
+elif(choice == 3):
+ print("Okay Byeee!")
+   break
+else:
+ print("Sorry you have selected wrong option, Try again")
 ```
 
 ## Voila! You did it!
@@ -102,6 +157,10 @@ You can also host this calculator and make your own API for it. Later on, if you
 
 It is also possible to make app using this. The only tweak will be that instead of just a single country's calculator. You can make a single calculator for all the countries and define the changes automatically when the user selects a country!
 
-## How it looks?
+## Demos
 
-![how it works](https://github.com/iamsid47/hangman-pics/blob/main/cic%20-%20how%20it%20works.png)
+[Demo 1](https://repl.it/@iamsid47/comp-int-demo1#main.py)
+
+[Demo 2](https://repl.it/@iamsid47/simple-int-demo2#main.py)
+
+[Demo 3](https://repl.it/@iamsid47/compint-demo3#index.html)
