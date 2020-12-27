@@ -2,30 +2,21 @@
 name: 'Strong Password Generator'
 description: 'A Complex password generator (including special characters) using Python'
 author: '@iamsid47'
-img: https://github.com/iamsid47/hangman-pics/blob/main/pass%20-%20main.png
+img: hhttps://cloud-howdulbiz.vercel.app/0pass_-_main.png
 ---
 
-![Password Generator](https://github.com/iamsid47/hangman-pics/blob/main/pass%20-%20main.png)
 
-Hello Everyone! In this workshop, we are gonna create a strong password generator using python. This generator will be able to generate a password using lowercase, uppercase alphabets, integers, and as well as special characters. The length of the password will be user defined. This generator will also have a GUI (Graphical User Interface)!
+Hello everyone! In this workshop, we are gonna create a strong password generator using python. This generator will be able to generate a password using lowercase, uppercase alphabets, integers, and as well as special characters. The length of the password will be user defined. This generator will also have a GUI (Graphical User Interface)!
 
-You can test out this generator here on Repl.it by clicking [This](https://repl.it/@iamsid47/password-generator#main.py) Link.
-
-## Files & Libraries
-
-In this workshop we are going to be having only one python file named as `main.py`. We are also going to require couple of libraries. The first one is `tkinter`. This is a library for python programs which will have/require a GUI. We also require `pyperclip`. This library will help in copying the password which the program generates. We will also be required to have `random` and `string` library.
+You can test out this generator here on Repl.it by clicking [this](https://repl.it/@iamsid47/password-generator#main.py) link.
 
 ## Let's Get Started!
 
-![Create a repl](https://github.com/iamsid47/hangman-pics/blob/main/pass-repl.png)
+![Create a repl](https://cloud-qml9pczaj.vercel.app/2pass-repl.png)
 
 Let's head over to [Repl.it](https://repl.it) and create a *repl*. Choose the language as **Python** and name your project/repl.
 
-Now, we will first install the required libraries. For this, head over to the ***shell*** and type in:
-
-```
-pip install tkinter && pip install pyperclip
-```
+Now, we will first take the required libraries from Repl.it's package manager.
 
 This will install the `tkinter` and the `pyperclip` library. Note that you also need `random` and `string`.
 
@@ -120,8 +111,10 @@ You can even combine this project with either `node.js` or `Vercel` and make it 
 
 Further improvements include creating a series of algorithm. Meaning, first create a handful of algorithms for password generators. Then create algorithms to choose the algorithms you just created for your password generation. This will secure your own program from getting cracked and also support some very strong passwords which can barely be patternized and cracked!
 
-## How it works?
+## Demos
 
-![How it works - start](https://github.com/iamsid47/hangman-pics/blob/main/pass%20h%201.png)
+[Demo 1](https://repl.it/@iamsid47/pass-gen-demo1#main.py)
 
-![How it works -  next](https://github.com/iamsid47/hangman-pics/blob/main/pass%20h%202.png)
+[Demo 2](https://repl.it/@iamsid47/pass-gen-demo2#main.py)
+
+[Demo 3](https://repl.it/@iamsid47/pass-gen-demo3)
