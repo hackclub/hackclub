@@ -1,7 +1,7 @@
 ---
 name: 'Shared Clipboard'
 description: 'Sync clipboards across devices, so you can copy from one and paste on another'
-author: '@ishan'
+author: '@quackduck'
 img: ''
 ---
 
