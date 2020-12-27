@@ -259,16 +259,19 @@ plt.show()
 # Keep Hacking!
 ![more resources](https://cloud-guzr7yfin.vercel.app/3libraries.gif)
 
-- [Random Number Heat Map code](https://repl.it/@ShiveshSingh/RandomNumbers-Heat-Map-code)
+- Random Number Heat Map
+[Code Link](https://repl.it/@ShiveshSingh/RandomNumbers-Heat-Map-code)
 
 ![Random Number Heat Map](https://cloud-jrotub72h.vercel.app/0random_integer_heatmap.png)
 
-- [Cereal Heat Map code](https://repl.it/@ShiveshSingh/cereals)
+- Cereal Heat Map
+ [Code Link](https://repl.it/@ShiveshSingh/cereals)
 
 ![Cereal-1](https://cloud-jrotub72h.vercel.app/1cereal.png)
 ![cereal_2](https://cloud-jrotub72h.vercel.app/2cereals_.png)
 
-- [Automobile parts Heat Map code](https://repl.it/@ShiveshSingh/Automobile)
+- Automobile parts Heat Map
+[Code Link](https://repl.it/@ShiveshSingh/Automobile)
 
 ![Automobile Parts](https://cloud-jrotub72h.vercel.app/3automobile.png)
 
