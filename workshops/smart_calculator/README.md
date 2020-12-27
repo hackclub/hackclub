@@ -2,10 +2,8 @@
 name: 'Human-Like Calculator Using Python'
 description: 'A calculator where you type a statement and get the answer!'
 author: '@iamsid47'
-img: https://github.com/iamsid47/hangman-pics/blob/main/smart-calc.png
+img: https://cloud-p6k9fe5b9.vercel.app/0smart-calc.png
 ---
-
-![Smart Calculator](https://github.com/iamsid47/hangman-pics/blob/main/smart-calc.png)
 
 ## Human-Like Calculator
 
@@ -15,13 +13,13 @@ For example: *Hey calc, can you give me the lcm of 9 and 3* and it will provide 
 
 You can try it out on Repl.it. Just click [Here](https://repl.it/@iamsid47/calc#main.py)
 
-## Files & Libraries
+## How it feels?
 
-For this workshop, we only require a python file. Let's name it as `main.py`. We do not need any sort of extra libraries as well!
+![How it works](https://github.com/iamsid47/hangman-pics/blob/main/how-calc-works.png)
 
 ## Let's Get Started
 
-![Create a repl](https://github.com/iamsid47/hangman-pics/blob/main/human-like-calc-repl.png)
+![Create a repl](https://cloud-p6k9fe5b9.vercel.app/1human-like-calc-repl.png)
 
 Let's head over to [Repl.it](https://repl.it) and create a *repl*. Choose **Python** and name your project.
 First, we want our calculator to act a bit human. It should not output just numbers. It should welcome me when I run it. Or it shall tell me if it does not know about a calculation. For the same, we will create some responses.
@@ -207,6 +205,10 @@ Furthermore more, we can also make this calculator go wild by adding in more fun
 
 You can also add in an equation solver which will be able to solve complex equations as well. But that actually comes under the initial stages of machine learning so it will also require a handful of other libraries!
 
-## How it feels?
+## Demos
 
-![How it works](https://github.com/iamsid47/hangman-pics/blob/main/how-calc-works.png)
+[Demo1](https://repl.it/@iamsid47/calc-demo1)
+
+[Demo2](https://repl.it/@iamsid47/calc-demo2)
+
+[Demo3](https://repl.it/@iamsid47/calc-demo3)
