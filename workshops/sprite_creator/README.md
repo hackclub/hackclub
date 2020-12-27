@@ -22,7 +22,9 @@ Create a new repl and use Python as the language.
 
 # What is a Sprite?
 Essentially, a sprite is a bunch of squares (called pixels) that create an image.
+
 <img src="https://cloud-8hfp3i0cf.vercel.app/0sansspr.png" width="380" alt="Sans Sprite">
+
 This sprite is made up of black and white squares that ultimately produce this skeleton face.
 
 # Importing Turtle
