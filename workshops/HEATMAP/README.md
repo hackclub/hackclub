@@ -6,12 +6,11 @@ author: '@shivesh01'
 
 # Heat Map
 
-We use data everywhere. Your smartphone for instance, and the satellite navigation system in your car are a couple of examples. Which is essential for us to continue discovering new things and keep ourselves connected.\
- My project is about Heat Maps. Heat Maps provide a great way to see, at a glance, how popular the elements are in a timeline. The heatmap below shows the increase in the number of passengers on flights from ```1949``` to ```1960```  from January to December. 
+We use data everywhere. Your smartphone for instance, and the satellite navigation system in your car are a couple of examples. Which is essential for us to continue discovering new things and keep ourselves connected. My project is about Heat Maps. Heat Maps provide a great way to see, at a glance, how popular the elements are in a timeline. The heatmap below shows the increase in the number of passengers on flights from ```1949``` to ```1960```  from January to December. 
 
 ![Demo](https://cloud-6tk9ccj2o.vercel.app/0screenshot_2020-12-26_at_14.08.36.png)
 
-![Heat Door G.i.f](https://cloud-guzr7yfin.vercel.app/0heat_door.gif)
+![Heat Door G.i.f](https://cloud-hs5diiot6.vercel.app/0giphy.gif)
 
 [Click here to see a working demo of today's project](https://repl.it/@ShiveshSingh/Heatmap#main.py)
 
@@ -194,8 +193,6 @@ Share with everyone🤗✌️🥳👏🏅🌇🎊**
 ![congratulations g.i.f](https://cloud-mga2rf9gs.vercel.app/4tenor__1_.gif)
 
 
-# Keep Hacking!
-
 **You can create a lot of variety of heat maps as I have created below.** 
 ![Red heat map](https://cloud-tgw4nss32.vercel.app/0heatmap_2.png)
 
@@ -259,22 +256,29 @@ plt.show()
 ```
 
 
-
-# More Resources
+# Keep Hacking!
 ![more resources](https://cloud-guzr7yfin.vercel.app/3libraries.gif)
 
 - [Random Number Heat Map code](https://repl.it/@ShiveshSingh/RandomNumbers-Heat-Map-code)
 
+![Random Number Heat Map](https://cloud-jrotub72h.vercel.app/0random_integer_heatmap.png)
+
 - [Cereal Heat Map code](https://repl.it/@ShiveshSingh/cereals)
 
+![Cereal-1](https://cloud-jrotub72h.vercel.app/1cereal.png)
+![cereal_2](https://cloud-jrotub72h.vercel.app/2cereals_.png)
+
 - [Automobile parts Heat Map code](https://repl.it/@ShiveshSingh/Automobile)
+
+![Automobile Parts](https://cloud-jrotub72h.vercel.app/3automobile.png)
+
+- [Plasma](https://riptutorial.com/matplotlib/example/17254/heatmap)
+
+- [GDP Heat map](https://www.hackerearth.com/blog/developers/data-visualization-for-beginners-part-3/)
 
 - [Univariate Distribution of Birth Rate](https://towardsdatascience.com/visualize-world-trends-using-seaborn-in-python-2e563e7d35da)
 
 - [Cat plot Life Expectancy of people indifferent of the world](https://cmdlinetips.com/2019/03/catplot-in-seaborn-python/)
 
-- [Cereals compositions Heat map](https://towardsdatascience.com/heatmap-basics-with-pythons-seaborn-fb92ea280a6c)
 
-- [GDP Heat map](https://www.hackerearth.com/blog/developers/data-visualization-for-beginners-part-3/)
 
-- [Plasma](https://riptutorial.com/matplotlib/example/17254/heatmap)
