@@ -256,7 +256,7 @@ void draw()
   }
   ```
   
-After defining the draw() function, we should create an 'if' condition to check if the left mouse button is clicked. The following code checks if the left mouse button is pressed and returns the tile which is clicked :
+After defining the draw() function, we will create an 'if' condition to check whether the left mouse button is clicked or not:
 
 ```java
   if (mousePressed && mouseButton == LEFT)
