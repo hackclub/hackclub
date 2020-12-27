@@ -232,7 +232,7 @@ In the above code, the size of the canvas is specified inside `size(500, 500);`.
 
 #### Function to draw upon mouse click
 
-We need to create a function called draw(). This function is used to fill a tile with the seletected color.
+We need to create a function called `draw()`. This function is used to fill a tile with the seletected color.
 
 ```java
 void draw()
@@ -254,7 +254,7 @@ void draw()
   }
   ```
   
-After defining the draw() function, we will create an 'if' condition to check whether the left mouse button is clicked or not:
+After defining the `draw()` function, we will create an `if` condition to check whether the left mouse button is clicked or not:
 
 ```java
   if (mousePressed && mouseButton == LEFT)
