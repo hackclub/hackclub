@@ -11,7 +11,7 @@ The goal of this workshop is to explore some basic usage of [p5.js](https://p5js
 
 When you are done with this workshop, you should end up with something similar to this!
 
-![Final product](https://cloud-k50jkthdw.vercel.app/0particle-physics-summary.png)
+![Final product](https://cloud-oddjiiq5k.vercel.app/0summary.gif)
 
 ## Getting Set Up
 
@@ -154,7 +154,7 @@ Yay! You set up the Particle class! Now you can go back to the main sketch and s
 
 ## Managing the Particles
 
-Right now the code should look like this:
+Let's go back to `sketch.js`. Right now the code should look like this:
 
 ```javascript
 function setup () {
@@ -170,7 +170,7 @@ The [`setup()`]() function is run once at the begining of the program to do any 
 
 The [`draw()`]() function is run every frame of the program. This can be used to update the animation every frame. We will use it to perform the the physics updates and draw the particles to the canvas.
 
-First, we will create the list of particles we will be displaying. Then we need to update and display them every frame inside `update()`.
+First, we will create the array of particles we will be displaying. Then we need to update and display them every frame inside `draw()`.
 
 ```javascript
 const G = 6.67e-11
@@ -206,3 +206,14 @@ function draw () {
 ## You're Finished!
 
 You should now have a working although very basic simulation of gravity between particles. This simulation is very over exagerated as particles with this little mass would have very small gravitational forces.
+
+- [Code](https://repl.it/@SquarePear/Particle-Physics#sketch.js)
+- [Project](https://Particle-Physics.squarepear.repl.co)
+
+## What to Do Next?
+
+Try changing some values and see how they affect the simulation. Add some extra features like creating a particle on click, anti-particles, or maybe apply this concept in a whole different way?
+
+1. [Add on Click](https://repl.it/@SquarePear/Particle-Physics-Add-on-Click#sketch.js)
+2. [Anti-Particles](https://repl.it/@SquarePear/Particle-Physics-Anti-Particle#sketch.js)
+3. [Physical Text](https://repl.it/@SquarePear/Particle-Physics-Text#sketch.js)
