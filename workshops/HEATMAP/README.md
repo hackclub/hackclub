@@ -50,7 +50,7 @@ You need to set up a repl account. you can run this program on your Python idle 
 
 *when we program in repl it automatically imports the libraries and dependencies with the simple command. So, You just need a repl account or any python idle to get started.*
 
-![Library](https://cloud-guzr7yfin.vercel.app/1importing_libraries.gif)
+![Library](https://cloud-tgvjftwf0.vercel.app/0import.gif)
 
 ## Pandas🐼
 Pandas is a popular Python-based toolkit. It presents a diverse range of utilities like converting an entire data table into a NumPy matrix array and much more. This makes pandas a trusted ally in data science and machine learning.
