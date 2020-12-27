@@ -139,7 +139,7 @@ As a topping, you can add in more fields like *interest on purchase, cashbacks, 
 
 You can even make it so awesome that you create an API for this, merge it with a chrome extension which tracks all your purchases and host this script on a server. So, whenever you make a purchase, the whole thing get's sent over to the expense-tracker and it puts all of the data into a .json file!
 
-## Demo
+## Demos
 
 [Demo 1](https://repl.it/@iamsid47/exp-track-demo1)
 
