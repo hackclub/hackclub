@@ -102,7 +102,7 @@ Since we are not using JavaScript, we will also remove the following line which 
 <script src="script.js"></script>
 ```
 #### The canvas element
-Provide `<h1>` tag for the heading and `<h7>` tag for the sub title. The `<canvas>` tag is used for creating a canvas.
+Provide `<h1>` tag for the heading. The `<canvas>` tag is used for creating a canvas.
 The canvas tag is only a container for the art pad. We will be using processing.js along with Java to process the art inside the art pad.
 
 #### Final index.html code:
@@ -118,8 +118,6 @@ The canvas tag is only a container for the art pad. We will be using processing.
   <body>
     <center>
     <h1>Pixel Pad</h1>
-    <h7>project made at hack club workshop</h7>
-    <br>
     <br>
     <canvas data-processing-sources="index.java"></canvas>
     </center>
