@@ -6,18 +6,21 @@ author: '@shivesh01'
 
 # Heat Map
 
-We use data everywhere. Your smartphone for instance, and the satellite navigation system in your car are a couple of examples. Which is essential for us to continue discovering new things and keep ourselves connected. 
+We use data everywhere. Your smartphone for instance, and the satellite navigation system in your car are a couple of examples. Which is essential for us to continue discovering new things and keep ourselves connected.\
+ My project is about Heat Maps. Heat Maps provide a great way to see, at a glance, how popular the elements are in a timeline. The heatmap below shows the increase in the number of passengers on flights from ```1949``` to ```1960```  from January to December. 
 
-![Slideshow](https://cloud-ou07pcifa.vercel.app/0screenshot_2020-12-26_at_15.36.40.png)
+![Demo](https://cloud-6tk9ccj2o.vercel.app/0screenshot_2020-12-26_at_14.08.36.png)
 
-![](https://media.giphy.com/media/l0MYs36RKd3ze7yVy/giphy.gif)
+![Heat Door G.i.f](https://cloud-guzr7yfin.vercel.app/0heat_door.gif)
 
 [Click here to see a working demo of today's project](https://repl.it/@ShiveshSingh/Heatmap#main.py)
 
 # Introduction 
 
 
-In this workshop, you will use the Python language and its libraries to create a stunning heat map from scratch. Even if you don’t know the Python language, no worries my project will help you and keep you interested. You will learn about heat map.
+In this workshop, you will use the Python language and its libraries to create a stunning heat map from scratch. Even if you don’t know the Python language, no worries my project will help you and keep you interested. You will learn about heat map. My project is about how to collect the data then sort, arrange and present the data visualization. That's all with a couple of lines code with different themes, shades, and plot types.
+
+![How to present data](https://cloud-8eg6acje7.vercel.app/0whatsapp_image_2020-12-26_at_11.47.31_am.jpeg)
 
 
 # Getting started
@@ -47,7 +50,8 @@ You need to set up a repl account. you can run this program on your Python idle 
 
 *when we program in repl it automatically imports the libraries and dependencies with the simple command. So, You just need a repl account or any python idle to get started.*
 
-![](https://media.giphy.com/media/LwzBicG26gz0pGI0ro/giphy.gif)
+![Library](https://cloud-guzr7yfin.vercel.app/1importing_libraries.gif)
+
 ## Pandas🐼
 Pandas is a popular Python-based toolkit. It presents a diverse range of utilities like converting an entire data table into a NumPy matrix array and much more. This makes pandas a trusted ally in data science and machine learning.
 
@@ -100,7 +104,7 @@ Wow! You have created your relp plot 🥳👏🏻
 **Output**
 ![Relplot](https://cloud-ikhasazgz.vercel.app/2relp_plot.png)
 
-![graph visualize](https://media.giphy.com/media/l0HlJIp1dIZzimEBq/giphy.gif)
+![graph visualize](https://cloud-guzr7yfin.vercel.app/2watching_graph_visual.gif)
 
 
 
@@ -231,7 +235,7 @@ cbar_ax=cbar_ax,
 cbar_kws={"orientation": "horizontal"})
 plt.show()
 ```
-
+**You can even create animations from Heat Map**
 
 ![Heat Map Animation](https://cloud-8iv05dp76.vercel.app/0ezgif.com-optimize.gif)
 ```Python
@@ -257,7 +261,7 @@ plt.show()
 
 
 # More Resources
-![more resources](https://media.giphy.com/media/3o7btW1Js39uJ23LAA/giphy.gif)
+![more resources](https://cloud-guzr7yfin.vercel.app/3libraries.gif)
 
 - [Random Number Heat Map code](https://repl.it/@ShiveshSingh/RandomNumbers-Heat-Map-code)
 
@@ -266,7 +270,11 @@ plt.show()
 - [Automobile parts Heat Map code](https://repl.it/@ShiveshSingh/Automobile)
 
 - [Univariate Distribution of Birth Rate](https://towardsdatascience.com/visualize-world-trends-using-seaborn-in-python-2e563e7d35da)
+
 - [Cat plot Life Expectancy of people indifferent of the world](https://cmdlinetips.com/2019/03/catplot-in-seaborn-python/)
+
 - [Cereals compositions Heat map](https://towardsdatascience.com/heatmap-basics-with-pythons-seaborn-fb92ea280a6c)
+
 - [GDP Heat map](https://www.hackerearth.com/blog/developers/data-visualization-for-beginners-part-3/)
+
 - [Plasma](https://riptutorial.com/matplotlib/example/17254/heatmap)
