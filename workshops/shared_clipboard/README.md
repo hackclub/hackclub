@@ -665,11 +665,16 @@ Try it out with other devices you own or with your friend (you'll have to be con
 
 Tinker with the code! Mess around! Experiment!
 
-Some things you could improve:
+Some things you could add in:
 
+- Dashboard with clipboard history
+- Use [repl.it](https://repl.it) to host a server or use ngrok so you can share clipboards over the internet with anyone.
+- Add in a web interface so people don't have to deal with CLI stuff
+- Encrypted transmission of the clipboard
+
+Some minor changes you could add:
 - Follow [clig.dev](https://clig.dev) better
 - Add in debug levels (`./myclip --debug 2`)
-- Make the output beautiful!
 
 This workshop was based off my Uniclip project: [github.com/quackduck/uniclip](https://github.com/quackduck/uniclip)
 
