@@ -102,16 +102,27 @@ Let's handle the person losing. How do we lose in snake?
 # Infinite loop repeating every time the snake moves
 while True:
     next_key = w.getch()
-    key = key if next_key == -1 else next_key
+    wrong_operation = True if (next_key==-1 or next_key==curses.KEY_DOWN and key == curses.KEY_UP\
+                            or key==curses.KEY_DOWN and next_key == curses.KEY_UP \
+                            or next_key==curses.KEY_LEFT and key == curses.KEY_RIGHT\
+                            or key==curses.KEY_LEFT and next_key == curses.KEY_RIGHT) else False  
+    key = key if wrong_operation else next_key
 
     # Handle snake losing
     if snake[0][0] in [0, sh] or snake[0][1]  in [0, sw] or snake[0] in snake[1:]:
         # Close the curses window and exit the program
+        curses.nocbreak()
+        s.keypad(False)
+        curses.echo()
         curses.endwin()
+        print("Oops, you lost!")
+        break
         quit()
 ```
 
-In the above code, we define an if statement to check if:
+The first couple lines of this snippet tests every possible combination we can move and where we are currently moving. We do this to make sure the game doesn't stop if, for example, we are going forward and we press to go backward.
+
+In the above code, we also define an if statement to check if:
 - The Y position of the snake is outside the boundaries of the screen
 - The X position of the snake is outside the boundaries of the screen
 - The snake is in itself
@@ -178,10 +189,15 @@ else:
     tail = snake.pop()
     w.addch(int(tail[0]), int(tail[1]), ' ')
 
-w.addch(int(snake[0][0]), int(snake[0][1]), curses.ACS_CKBOARD)
+try:
+    w.addch(int(snake[0][0]), int(snake[0][1]), curses.ACS_CKBOARD)
+except:
+    print("Oops, you lost!")
 ```
 
 In the above code, we check if the snake has ran into the food. If it has, we need to set a new food position and make the snake longer. We use the screen width and height dimensions to randomize coordinates for the new snake position. These random coordinates have a chance of landing right where the snake is. So to avoid that confusion we only set the new food if it's not on the snake. Otherwise, we just repeat the loop.
+
+Notice at the bottom we wrap the logic for adding a body part in a try-except block. This is a hacky way of making sure that when we lose the game, the program says something and doesn't just crash.
 
 Finally, in any case, we're adding the head of the snake to the screen.
 
@@ -194,10 +210,11 @@ Finally, in any case, we're adding the head of the snake to the screen.
 ```python
 import random
 import curses
+
 s = curses.initscr()
 curses.curs_set(0)
 sh, sw = s.getmaxyx()
-w = curses.newwin(sh, sw, 0, 0)
+w = curses.newwin(0, 0, 0, 0)
 w.keypad(1)
 w.timeout(100)
 snk_x = sw/4
@@ -212,33 +229,46 @@ w.addch(int(food[0]), int(food[1]), curses.ACS_PI)
 key = curses.KEY_RIGHT
 while True:
   next_key = w.getch()
-  key = key if next_key == -1 else next_key
-  if snake[0][0] in [0, sh] or snake[0][1]  in [0, sw] or snake[0] in snake[1:]:
-      curses.endwin()
-      quit()
+  wrong_operation = True if (next_key==-1 or next_key==curses.KEY_DOWN and key == curses.KEY_UP\
+                            or key==curses.KEY_DOWN and next_key == curses.KEY_UP \
+                            or next_key==curses.KEY_LEFT and key == curses.KEY_RIGHT\
+                            or key==curses.KEY_LEFT and next_key == curses.KEY_RIGHT) else False  
+  key = key if wrong_operation else next_key
+  if snake[0][0] in [0, sh] or snake[0][1] in [0, sw] or snake[0] in snake[1:]:
+    curses.nocbreak()
+    s.keypad(False)
+    curses.echo()
+    curses.endwin()
+    print("Oops, you lost!")
+    break
+    quit()
   new_head = [snake[0][0], snake[0][1]]
   if key == curses.KEY_DOWN:
-      new_head[0] += 1
+    new_head[0] += 1
   if key == curses.KEY_UP:
-      new_head[0] -= 1
+    new_head[0] -= 1
   if key == curses.KEY_LEFT:
-      new_head[1] -= 1
+    new_head[1] -= 1
   if key == curses.KEY_RIGHT:
-      new_head[1] += 1
+    new_head[1] += 1
   snake.insert(0, new_head)
   if snake[0] == food:
-      food = None
-      while food is None:
-          nf = [
-              random.randint(1, sh-1),
-              random.randint(1, sw-1)
-          ]
-          food = nf if nf not in snake else None
-      w.addch(food[0], food[1], curses.ACS_PI)
+    food = None
+    while food is None:
+      nf = [
+        random.randint(1, sh-1),
+        random.randint(1, sw-1)
+      ]
+      food = nf if nf not in snake else None
+    w.addch(food[0], food[1], curses.ACS_PI)
   else:
-      tail = snake.pop()
-      w.addch(int(tail[0]), int(tail[1]), ' ')
-  w.addch(int(snake[0][0]), int(snake[0][1]), curses.ACS_CKBOARD)
+    tail = snake.pop()
+    w.addch(int(tail[0]), int(tail[1]), ' ')
+
+  try:
+    w.addch(int(snake[0][0]), int(snake[0][1]), curses.ACS_CKBOARD)
+  except:
+    print("Oops, you lost!")
 ```
 
 You should now be able to play Snake in the terminal! You can run the code at https://repl.it/@kyryloorlov/Snake-Game.
