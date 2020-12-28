@@ -1,12 +1,12 @@
 ---
-name: 'Electronic Dice'
-description: 'Create an electronic dice using a Seven segment LED display for your next board game'
+name: 'Electronic Die'
+description: 'Create an electronic die using a seven segment LED display'
 author: '@giridhar7632'
 ---
 
-# Electronic Dice using an Arduino and a Seven Segment Display
+# Building a Electronic Die using an Arduino and a Seven Segment Display
 
-Have you ever made a dice using electronics? This workshop will create a virtual dice that displays a random number between 1 and 6. You can use this project for your next board game.
+Have you ever made a die using electronics? This workshop will create a virtual die that displays a random number between 1 and 6. You can use this project for your next board game.
 
 We will learn how the Seven Segment Display Interface for Arduino works.
 
@@ -45,7 +45,7 @@ After setting up, let's start tinkering.🚀
 
 #### 1) Seven Segment Display
 
-The first central part which we are going to use in our project is the Seven  Segment Display. A Seven Segment Display is a simple device. It consists of seven LEDs called arranged in Segments. Hence, the name Seven Segment Display. Each LED Segment is in the shape of a hexagon, and all the seven LEDs are arranged in an "8" like fashion so that it can display digits 0 to 9.
+The first part we'll use in our project is a seven segment display. A seven segment display is a simple device. It consists of seven LEDs arranged in segments. Hence, the name Seven Segment Display. Each LED Segment is in the shape of a hexagon, and all the seven LEDs are arranged in an "8" like fashion so that it can display digits 0 to 9.
 
 ![Seven segment display](https://cloud-9sltbj02f.vercel.app/47_segment_dis.png)
 
@@ -67,14 +67,15 @@ This table helps us while we are programming our Arduino.
 
 #### 2) An Arduino UNO board
 
-The other part we will use in our project is Simple Arduino. The Arduino Uno is an open-source microcontroller board based on the Microchip ATmega328P microcontroller.
+The other part we will use in our project is an Arduino. The Arduino Uno is an open-source microcontroller board based on the Microchip ATmega328P microcontroller.
 
 ![Arduino](https://cloud-krdvm0bjz.vercel.app/0arduino.png)
 
 If you're interested in Arduino, you can learn more from [here](https://en.wikipedia.org/wiki/Arduino_Uno)
 
 #### 3) Push button
-We are going to use a push-button whenever we need to roll a dice. By pressing, we will obtain a random number between 1 and 6.
+
+We are going to use a push-button, which we'll click when we need to roll a dice. By pressing, we will obtain a random number between 1 and 6.
 
 ![push button](https://cloud-krdvm0bjz.vercel.app/1pushbtn.png)
 
@@ -108,7 +109,7 @@ Let us start with dragging the Arduino board.
 
 ![draging](https://cloud-i27ey1nq6.vercel.app/0draggin_the_arduino.gif)
 
-The next component is our Seven segment display. You can get it by typing the name in the search box provided. After finding it, just drag it from there to the workspace and place it beside the Arduino board. Also, drag a push-button and 7 resistors onto the screen. You will find them just by typing the name in the search box. Drag it and place it on the workspace.
+The next component is our seven segment display. You can get it by typing the name in the search box provided. After finding it, just drag it from there to the workspace and place it beside the Arduino board. Also, drag a push-button and 7 resistors onto the screen. You will find them just by typing the name in the search box. Drag it and place it on the workspace.
 
 So far, our workspace will be looking like this.
 
@@ -147,9 +148,7 @@ Connect terminal 1a of the push button to the ground, which is represented as `g
 
 ![button connected](https://cloud-krdvm0bjz.vercel.app/5step-1.png)
 
-Now the time has come to connect the Seven segment display to the Arduino board.
-You will find the seven-segment display port number when you take your mouse pointer near the respective port.
-On the first step, connect the `g` port of the seven segment display to the other end port of the resistor, connected to the `5` pin of Arduino.
+Now the time has come to connect the seven segment display to the Arduino board. You will find the seven segment display port number when you take your mouse pointer near the respective port. To begin, connect the `g` port of the seven segment display to the other end port of the resistor, connected to the `5` pin of Arduino.
 
 Similarly, connect the port `f` of segment display to `6` pin of Arduino, `a` to `7`, `b` to `8`.
 
@@ -307,17 +306,15 @@ void setup()
 }
 ```
 
-When the push button is pressed, numbers from `0` to `9` toggles. For this, we use two `for` loops to iterate through the `num` matrix. Toggling will be very fast. So we add `delay` of `50` milliseconds. Significantly less, but it makes sense.
+When the push button is pressed, numbers from `0` to `9` toggles. For this, we use two `for` loops to iterate through the `num` matrix. Toggling will be very fast. So we add `delay` of `50` milliseconds.
 
 We turn the `state` to true for displaying a single random number.
 
 Hit the `run simulation` button.
 
-We are all set to play a game related to dice.
+We are all set to play a game that uses a die.
 
-In case you accidentally missed any one of the steps during writing the code and getting an error here's the final one.
-
-The final code combining all the suggestions from the top looks like this.
+In case you accidentally missed a line of code, here's the final one code program.
 
 ```c
 int num[10][7]={ {0,0,0,1,0,0,0},
@@ -390,8 +387,7 @@ void loop()
 }
 ```
 
-Now you will find a random number being displayed whenever you press the push button(i.e., rolling a dice).
-That's it for this workshop. Enjoy your next board game.
+Now you will find a random number being displayed whenever you press the push button(i.e., rolling a die). That's it for this workshop. Enjoy your next board game.
 
 ![enjoy](https://cloud-6vthzzaru.vercel.app/2enjoy.gif)
 
@@ -404,5 +400,3 @@ Now that you know about Seven segment display go wild with it. Here are some oth
 * [Temperature display](https://www.tinkercad.com/things/hSFv990dO4v)
 
 PS: I'm [@Giridhar](https://hackclub.slack.com/team/U013E6KE9UJ) on Slack!
-
-
