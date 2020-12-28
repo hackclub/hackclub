@@ -2,7 +2,7 @@
 name: 'Shared Clipboard'
 description: 'Sync clipboards across devices, so you can copy from one and paste on another'
 author: '@quackduck'
-img: ''
+img: 'https://cloud-crayumbmk.vercel.app/0screen_shot_2020-12-28_at_9.34.51_pm.jpg'
 ---
 
 Sometimes you want to share stuff between computers. You email it to yourself and then you log on to the other computer and then you find that you forgot your email password and then you click "forgot password" and then you find the code and then you enter the code and then you make a new password and then you type in the new password and then you find the email and then you *finally* copy the text and get on your way.
@@ -668,7 +668,7 @@ Tinker with the code! Mess around! Experiment!
 Some things you could add in:
 
 - Dashboard with clipboard history
-- Use [repl.it](https://repl.it) to host a server or use ngrok so you can share clipboards over the internet with anyone.
+- Use ngrok so you can share clipboards over the internet with anyone.
 - Add in a web interface so people don't have to deal with CLI stuff
 - Encrypted transmission of the clipboard
 
@@ -678,8 +678,19 @@ Some minor changes you could add:
 
 This workshop was based off my Uniclip project: [github.com/quackduck/uniclip](https://github.com/quackduck/uniclip)
 
+Stuff other Hackclubbers made after following this workshop:
+
+- @KhushrajRathod made this: [uniclip-ngrok.js](https://gist.github.com/KhushrajRathod/87035f73d6c2d69dbeb9704ad317d7f2)
+  - It uses ngrok to share over the internet so anyone can share clipboards even if they're halfway across the world.
+-
+Both demo-ed their projects and you can watch [here] (https://cloud-51eavoxvn.vercel.app/0zoom_1.mp4)
+
 ## The full source code
 It's pretty long
+
+<details>
+<summary>Click to show</summary>
+
 ```go
 package main
 
@@ -975,3 +986,6 @@ func setLocalClip(s string) {
     return
 }
 ```
+</details>
+
+
