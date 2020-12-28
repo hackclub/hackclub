@@ -136,6 +136,6 @@ You can even make it so awesome that you create an API for this, merge it with a
 
 In this [version](https://repl.it/@iamsid47/exp-track-demo1), you can see the total amount that you have spent.
 
-I made a GUI for my expense tracker along with login/logout in this [Demo-2](https://repl.it/@iamsid47/exp-track-demo2)
+I made a GUI for my [expense tracker](https://repl.it/@iamsid47/exp-track-demo2) along with login/logout in this demo.
 
-This one is a more simpler version of the GUI I have made above. [Demo-3](https://repl.it/@iamsid47/exp-track-demo3#main.py)
+This [one](https://repl.it/@iamsid47/exp-track-demo3#main.py) is a more simpler version of the GUI I have made above.
