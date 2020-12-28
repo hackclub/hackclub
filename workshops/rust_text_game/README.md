@@ -1,8 +1,7 @@
 ---
 name: "Text Adventure Game in Rust"
 description: "Make a text adventure game while writing your first Rust program!"
-author: "@panos"
-author: "@fanoulis"
+author: "@panos, @fanoulis"
 img: "https://hackropolis.is-ne.at/0oMCQ5.png"
 ---
 
