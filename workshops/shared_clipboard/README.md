@@ -682,7 +682,9 @@ Stuff other Hackclubbers made after following this workshop:
 
 - @KhushrajRathod made this: [uniclip-ngrok.js](https://gist.github.com/KhushrajRathod/87035f73d6c2d69dbeb9704ad317d7f2)
   - It uses ngrok to share over the internet so anyone can share clipboards even if they're halfway across the world.
--
+- @jasonaa made [github.com/jasonappah/myclip-additions](https://github.com/jasonappah/myclip-additions)
+   - It provides a web dashboard that can show your clipboard history.
+
 Both demo-ed their projects and you can watch [here](https://cloud-51eavoxvn.vercel.app/0zoom_1.mp4)
 
 ## The full source code
