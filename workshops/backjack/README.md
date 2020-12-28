@@ -126,22 +126,24 @@ Let now work inside the `star_The_Game()` function, inside this function, let di
 In C++ when you write you code you are responsible over everything, you control everything that is display, and so you need to play attention to every little details in the code.
  
 As fast as C++ is, we want to take a make a break to show excatly that the game has started. we then will display to the player to `"Please click enter to shuffle the card"` follow by a new line using `\n`. we Then going to wait for the player to click enter to do that we will use the `cin.get()` function which just pause the program and wait until Enter button is click, we then going to do this inside `start_The_Game()` function under our last code : 
+
 ```c++
 cout << "Please click enter to shuffle the card \n";
     cin.get();
 ```
-    <details> 
-    <summary> This is how your code shoud look so far</summary>
-	```c++
-	#include <iostream>
-	#include <ctime>
-    #include <vector>
-    using namespace std;
+<details> 
+ <summary> This is how your code shoud look so far: </summary>
+	
+  ```C++
+     #include <iostream>
+     #include <ctime>
+     #include <vector>
+     using namespace std;
 
-    int Pl_card1, Pl_card2, Pl_card3;     
-    int Dl_card1, Dl_card2, Dl_card3;     
-    int Tl_Pl_card,Tl_Dl_card;  
-    string player1;           
+     int Pl_card1, Pl_card2, Pl_card3;     
+     int Dl_card1, Dl_card2, Dl_card3;     
+     int Tl_Pl_card,Tl_Dl_card;  
+     string player1;           
 	int  main(){    /*Introduction to the game */
          cout << "\n           Blackjack Game      \n";
          cout << "\n++++++++++++++++++++++++++++++++\n";   
@@ -156,13 +158,16 @@ cout << "Please click enter to shuffle the card \n";
      cout << "\n Player of this round is: " << player1 << "\n\n"; //new start
      cout << "Please click enter to shuffle the cards \n";
      cin.get();  
-	 
-	 }
-	```
-	</details>
+ 
+     }
+   ```
+	
+</details>
+
 To shuffle the card is another way to draw random card (number) for the player and the Dealer, we will need a function to do that.
 
 Inside the ~Declaration Section~ under the `start_The_Game()` function declare `Hit_Card1()` as a void function:
+
 ```c++
 //decalrioj
 void Hit_card1();
