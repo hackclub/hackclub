@@ -290,7 +290,7 @@ we then will only show one card which the Dealer has as the player is only allow
 Time for some thinking:
 ![A person thinking]()
    
-![The rule](https://youtu.be/eyoh-Ku9TCI) of the game tell us if the player or the dealer has a total bigger than 21 then it a bust he then loose if total is 21 then he got blackjack and it a win, else the game goes on. we therefore need to check if one of the person in the game has a bust or a black jack , we will then say if total player card is bigger or equal to 21 or total dealer card is bigger or equal to 21  then we must check for a bust or blackjack :
+[The rule](https://youtu.be/eyoh-Ku9TCI) of the game tell us if the player or the dealer has a total bigger than 21 then it a bust he then loose if total is 21 then he got blackjack and it a win, else the game goes on. we therefore need to check if one of the person in the game has a bust or a black jack , we will then say if total player card is bigger or equal to 21 or total dealer card is bigger or equal to 21  then we must check for a bust or blackjack :
 ```C++
  cout << "The Dealer is Showing a " << Dl_card1 << " \n\n";
     if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {                 /* place it here */
@@ -330,6 +330,58 @@ First Hit_bust_check() function, As the rule of the game inform us :
 ```
 ⚠️In other to understand fully what we just did, I recommend that you may watch the video at the beginning of this page that talk about how Blackjack game work [Here](https://youtu.be/eyoh-Ku9TCI).
 
+Now that we done remember the rule when we declare a function, we have to *give definition* and *Call* the function; we here only called and declare the function ` player_win() ` and ` player_loose() ` , so let give definition to them :
+first player_win function, so what do we want when the player win? 
+ - first we want to display the player card and the dealer card with their total
+ - then write out that the player has won a=while the dealer has loose 
+ - the ask if the player will like to restart the game or to quit the game
+ so let start to displaying the player card with their total and the dealer card with their total (don't forget to use ` display_playercard() ` to display a person's card numbers)
+ ```c++
+ void player_win(){
+     cout << "The Player hand : ";
+        Display_Card(player_card);
+     cout << " with a total of : " << Tl_Pl_card << "\n\n";
+  
+     cout <<"Dealer Hand : " ;
+        Display_Card(dealer_card);
+     cout << " with a total of : " << Tl_Dl_card << "\n\n";
+       
+ }
+ ```
+ then let display that the player has won the game:
+ ```c++
+   cout <<"Dealer Hand : " ;
+        Display_Card(dealer_card);
+   cout << " with a total of : " << Tl_Dl_card << "\n\n";            
+   cout << player1 << " Win🔺 Congrats!! \n\n";                    /* place it here */
+   
+ ```
+ lastly we will ask the player if they would like to Restart or quit playing the game :
+ ```c++
+  cout << player1 << " Win🔺 Congrats!! \n\n";    
+  cout  << "Would you like '1' Restart  or '2' Quit PLAYING\n";                /* place it here */
+  
+  ```
+ Now to get the answer from the player we will declare a new String variable that can store the answer from the player and call it ` answ ` inside the **Declaration section**
+ ```c++
+ /* Declaration section: This will be used to Declare variables and Function */ 
+ string answ;         				/* place it here */
+ ``` 
+  then we will need a new function that will check if the player would like to continue or quit playind, we will neame this function ` Continue_Playing() `
+ ```c++
+ /* Declaration section: This will be used to Declare variables and Function */ 
+ string answ;
+ void Continue_Playing();                        /* place it here */
+ 
+ ```
+ Now let go back inside the ` Player_win() ` function and get the line from the player and store the answer inside the ` answ ` variable :
+ ```C++
+  cout << player1 << " Win🔺 Congrats!! \n\n";        
+  getline(cin,answ);
+ 
+ ```
+ the call the function ` Continue_Playing() ` which we will give a definition now to it.
+ 
 + in the first line we tell the program to display the title of the game which wll be place at the center of the game using spaces.
  + what up with the \n at the end and beginning of the string ,well we us hat to tell the program to dislay a new Line before and after the line and so create a new line,there is more than one way to create a new like check it out *[Here]()*.
  + our second line we use the plus sign to create an line betwwen the title and the body of the game.
