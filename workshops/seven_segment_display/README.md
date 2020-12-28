@@ -8,7 +8,7 @@ author: '@giridhar7632'
 
 Have you ever made a dice using electronics? This workshop will create a virtual dice that displays a random number between 1 and 6. You can use this project for your next board game.
 
-We will learn about the a Seven Segment Display Interface works.
+We will learn how the Seven Segment Display Interface for Arduino works.
 
 Here you can find the whole working model.
 
@@ -404,6 +404,5 @@ Now that you know about Seven segment display go wild with it. Here are some oth
 * [Temperature display](https://www.tinkercad.com/things/hSFv990dO4v)
 
 PS: I'm [@Giridhar](https://hackclub.slack.com/team/U013E6KE9UJ) on Slack!
-
 
 
