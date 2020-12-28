@@ -155,7 +155,7 @@ Basically, this will use our `setCount` function to set `count` to 0 every time 
 Yay! Everything works! Here are some ideas you could use to change up your game:
 
 - Change the background color every time you click, or when you reach a certain score (hint: look at the example component to get started!)
-- Add sounds every time you click (check out the `[use-sound` hook here!](https://github.com/joshwcomeau/use-sound))
+- Add sounds every time you click (check out the [`use-sound` hook here!](https://github.com/joshwcomeau/use-sound))
 - Create a [click per second (CPS) calculator](https://cpstest.org/)
 - Edit `App.css` to completely change the styling and give your game a theme, like [this cookie clicker game?](https://orteil.dashnet.org/cookieclicker/)
 
