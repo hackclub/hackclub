@@ -170,46 +170,50 @@ void Hit_card1();
 We then going to give definition to this function under the ~definition section~. Inside the `Hit_Card1()` fiunction we will use a special function that will help us generate random number, which is will use the `<time>` library, that use the time of the program, to get random number. :
 ```C++
 void Hit_card1() {
- srand(time(0));      /* place it here */
+ srand(time(0));          /* place it here */
  
  }
 ```
 Under that line we will then draw drandom number for the first and sececond card for the player that will be betttwen 11 and 1, so call out the variable that store the frist and second card number whcih is ` Pl_card1 ` and ` Pl_card2 `: 
 ```c++ 
 srand(time(0));
-Pl_card1 = 
-Pl_card2 = 
+Pl_card1 =                   /* place it here */
+Pl_card2 =                   /* place it here */
 ```
 we will then call the random function using ` rand() ` and instruct it to find the number bettween 11 and 1 using ` % ` (percentage sign) as to show between 11 and 1 : 
 ```c++ 
 srand(time(0));
-Pl_card1 = 11 % 1;
-Pl_card2 = 11 % 1;
+Pl_card1 = 11 % 1;           /* place it here */
+Pl_card2 = 11 % 1;           /* place it here */
 ```
-We no have a Random number stored inside the card 1 and 2, now that we have that we need to keep both number inside a vector which is very simalar to a array. so to do that, let declare a vector that store these integer under the ~declaration section~ and indetify it as ` player_card `  : 
+We no have a Random number stored inside the card 1 and 2, now that we have that we need to keep both number inside a vector which is very simalar to a array. so to do that, let declare a vector that store these integer under the **declaration section** and indetify it as ` player_card `  : 
 ```c++
+//****
  vector<int>player_card;
 ```
 You can go head and declare a vector that will store the dealer card as ` dealer_card` we will need it later:
 ```c++
+//*****
  vector<int>player_card;
- vector<int>delaer_card;
+ vector<int>delaer_card;       /* place it here */
 ```
 Now let go back inside the ` Hit_card1() ` function,let take a copy of random cards for the player and place it inside the vector ` player_card `:
 ```c++ 
+void Hit_card1(){
 srand(time(0));
 Pl_card1 = 11 % 1;
 Pl_card2 = 11 % 1;
-player_card = {Pl_card1,Pl_card2};
+player_card = {Pl_card1,Pl_card2};        /* place it here */
+}
 ```
-Here the number from the varibe ` Pl_card1 ` and ` Pl_card2 ` will be store as a list inside the vector ` player_card ` respectively using the bracket.
+Here the number from the variable ` Pl_card1 ` and ` Pl_card2 ` will be store as a list inside the vector ` player_card ` respectively using the bracket.
 we then going to get the total player card(` Tl_Pl_card `  by adding ` Pl_card1 ` to ` Pl_card2 ` :
 ```c++ 
 srand(time(0));
 Pl_card1 = 11 % 1;
 Pl_card2 = 11 % 1;
 player_card = {Pl_card1,Pl_card2};
-Tl_Pl_card = Pl_card1 + Pl_card2;
+Tl_Pl_card = Pl_card1 + Pl_card2;          /* place it here */
 
 ```
 Now we done drawing the card for the player, so let do the same for the dealer:
@@ -219,15 +223,11 @@ Now we done drawing the card for the player, so let do the same for the dealer:
  + get the total card for the dealer using the dealer card (` Dl_card1 ` and ` Dl_card2 `) and store it inside ` Tl_Dl_card ` 
 this should look like this :
 ```c++
- srand(time(0));
-Pl_card1 = 11 % 1;
-Pl_card2 = 11 % 1;
-player_card = {Pl_card1,Pl_card2};
 Tl_Pl_card = Pl_card1 + Pl_card2;
-Dl_card1 = 11 % 1;                    
-Dl_card2 = 11 % 1;                  
-dealer_card = {Dl_card1,Dl_card2};  
-Tl_Dl_card = Dl_card1 + Dl_card2;   
+Dl_card1 = 11 % 1;                    /* place it here */
+Dl_card2 = 11 % 1;                    /* place it here */
+dealer_card = {Dl_card1,Dl_card2};    /* place it here */
+Tl_Dl_card = Dl_card1 + Dl_card2;     /* place it here */
 
 ```
 Now that done let create a variable that will be use to inform us the number of card of the player, inside the ~declaraction section this variable will be an integer called ` num_of_PlayerCard `.
@@ -237,41 +237,104 @@ int num_of_playerCard;
 ```
 Now we will call this variable inside the ` Hit_card1() ` function and give it the value of two, to keep record that the player has been given 2 card :
 ```c++
- srand(time(0));
-Pl_card1 = 11 % 1;
-Pl_card2 = 11 % 1;
-player_card = {Pl_card1,Pl_card2};
-Tl_Pl_card = Pl_card1 + Pl_card2;
-Dl_card1 = 11 % 1;
-Dl_card2 = 11 % 1;
-dealer_card = {Dl_card1,Dl_card2};
+ 
 Tl_Dl_card = Dl_card1 + Dl_card2;
 num_of_playerCard = 2;           /* place it here */
 ```
 woooh!!, we just finish to draw our first cards now let call it!!
-[hit card on the table]()
+![hit card on the table]()
 
 Go over ` start_The_Game() ` function and call ` Hit_card1() ` function after ` cin.get() ` function:
 
 ```C++
- void start_The_Game(){
-     cout << "\n           Blackjack Game      \n";
-     cout << "\n++++++++++++++++++++++++++++++++\n";
-     cout << "\n Welcome to the game.\n";
-     cout << "\n Player of this round is: " << player1 << "\n\n"; //new start
-     cout << "Please click enter to shuffle the cards \n";
      cin.get();  
 	 Hit_card1();                 /* place it here */
-	 
-	 }
 ```
+Now if the program run, Hit_card1 will be called and the operation inside it definition will be executed. 
+Now let show the player their card that is stored inside the vector ` player_card ` as a list : 
+```c++ 
+       Hit_card1();  
+cout << player1 << ",You have been Dealt with [ " ;            /* place it here */
+```
+after we have called the player's name and say what card their have been given/dealt, we can now display the two card the player has, so to do that, we will create  ` Diplay_card ` inside the **Declaration section** that will receive one parameter which will be a vector of the list of card from the player or the dealer.
+```c++
+ void Display_Card(vector<int>list_of_card);
+```
+we will then go over the **Definition section** to give definition to ` Display_card ` function. Inside the Display_card we will use the for loop to display each element in the list of card : 
+```c++
+void  Display_Card(vector<int>list_of_card){
+   for (int i = 0; i < list_of_card.size(); i++){        
+      cout << list_of_card[i] << " ";
+    }
+ }
+```
+In the for loop , we first initialize integer i to be equal to 0,this means it will start on the first index inside the vectorwhich is at position 0, then while i is still smaller than the size(number of element) inside the list of card the integer i will kep increasing while we display the elmet at index(position) i plus a space after each element.
 
+Now that we have a definition, let go back inside the ` start_The_Game() ` function where we left, on a new line after our last line, we will call ` Display_Card ` function with the parameter ` player_card ` which is where the player's list of card numbers is stored : 
+```c++
+ cout << player1 << ",You have been Dealt with [ " ;
+  Display_Card(player_card);                           /* place it here */
+```
+then we need to ddiplay the total of card number the player has which is inside Tl_Pl_card variable  so we will write(dont't forget to tell the program to create a new line after only) :
+```c++ 
+       Display_Card(player_card);
+   cout << "] With have a total of : " << Tl_Pl_card << " \n\n";        /* place it here */
+   
+```
+we then will only show one card which the Dealer has as the player is only allow to know only one card until he or the dealer bust, in this case only the first card of the dealer which is iside the variable ` Dl_card1 ` : 
+```c++
+ cout << "] With have a total of : " << Tl_Pl_card << " \n\n";
+ cout << "The Dealer is Showing a " << Dl_card1 << " \n\n";       /* place it here */
+
+```
+Time for some thinking:
+![A person thinking]()
+   
+![The rule](https://youtu.be/eyoh-Ku9TCI) of the game tell us if the player or the dealer has a total bigger than 21 then it a bust he then loose if total is 21 then he got blackjack and it a win, else the game goes on. we therefore need to check if one of the person in the game has a bust or a black jack , we will then say if total player card is bigger or equal to 21 or total dealer card is bigger or equal to 21  then we must check for a bust or blackjack :
+```C++
+ cout << "The Dealer is Showing a " << Dl_card1 << " \n\n";
+    if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {                 /* place it here */
+        
+     }
+```
+Now we don't have a function that will check for a bust or a black jack, so let declare it under **declaration section** and call it has ` Hit_Bust_Check() ` void function:
+```C++
+ /* Declaration section: This will be used to Declare variables and Function */ 
+         void Hit_Bust_check();                /* place it here */
+```
+we then going to create the function which will display the message to the user if their have won or loose, we ill then call these function ` player_win() ` and ` player_loose() `. Don't worry if you don't understannd these two function's purporse I will explain it soon ;) *wink*  : 
+```c++
+/* Declaration section: This will be used to Declare variables and Function */ 
+     void Hit_Bust_check();
+     void player_win();                        /* place it here */
+     void Player_Loose();                     /* place it here */
+```
+Now go over the **Definition section** and let give some definition to these function  : 
+First Hit_bust_check() function, As the rule of the game inform us :  
+ + we first check if the total card of the player(` Tl_Pl_card `) is equal to 21 or the total card of dealer(` Tl_Dl_card `) is bigger than 21 then the player win so we call the function ` Player_win() `
+ + else if the total card dealer(` Tl_Dl_card `) is equal to 21 or total card of player(` Tl_Pl_card ` ) is bigger than 21 then the player loose so we call the function ` player_loose ` 
+ + else if the total card of the player is bigger than the total card of the dealer then the player loose, so we call the function ` player_loose() `
+ + else if all thes condition are not meet then the player win, so we call the function ` player_loose()` 
+ ```c++
+ void  Hit_Bust_check(){  
+      if (Tl_Pl_card == 21 || Tl_Dl_card > 21 ){
+            player_win();
+        } else if (Tl_Dl_card == 21 || Tl_Pl_card > 21 )  {
+                Player_Loose();
+         } else if (Tl_Pl_card > Tl_Dl_card){
+              player_win();
+          } else {
+             Player_Loose();
+          }
+   } 
+```
+⚠️In other to understand fully what we just did, I recommend that you may watch the video at the beginning of this page that talk about how Blackjack game work [Here](https://youtu.be/eyoh-Ku9TCI).
 
 + in the first line we tell the program to display the title of the game which wll be place at the center of the game using spaces.
- + what up with the \n at the end and beginning of the string ,well we us hat to tell the program to dislay a new Line before and after the line and so create a new line,there is more than one way to create a new like check it out *[Here]()******.
+ + what up with the \n at the end and beginning of the string ,well we us hat to tell the program to dislay a new Line before and after the line and so create a new line,there is more than one way to create a new like check it out *[Here]()*.
  + our second line we use the plus sign to create an line betwwen the title and the body of the game.
  + the third line we welcome the user and ask the Player to Enter they name. We will
  
 # Challenge 
 
--Add Multipler player inside the game
++ Add Multipler player inside the game
