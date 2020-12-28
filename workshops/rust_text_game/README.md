@@ -19,7 +19,8 @@ Welp, in that case, this workshop is just for you! It doesn't matter if you're a
 
 ## Demo
 
-Here's a demo [on asciinema.org](https://asciinema.org/a/8ZB2tvI4NlNkCpKdkY7Wrn8KC)
+You can view a demonstration of an example we prepared on [asciinema.org](https://asciinema.org/a/8ZB2tvI4NlNkCpKdkY7Wrn8KC).
+
 The full code can be viewed [on GitHub](https://github.com/hackropolis/stickerquest) and [repl.it](https://repl.it/@hackropolis/stickerquest).
 
 ## Part 1: Setup 🔰
@@ -35,24 +36,6 @@ You can create an account [here](https://repl.it/signup) and create a new Rust p
 After doing so, run `cargo init --name rust-text-app`
 
 You can also fork our example, should you wish to do so.
-
-### Setting up your project locally
-
-You're free to skip this part if you have already installed Rust and downloaded a copy of our example on GitHub.
-
-- Open a Terminal and create a new Rust app:
-
-```bash
-cargo new --binary rust-game
-```
-
-If everything is working as it should, you should see a message that says "`Created binary (application) \`rust-game\` package`".
-
-Now `cd` into your project's folder
-
-```bash
-cd rust-game
-```
 
 ## Part 2: File structure and the Cargo package manager 🏗
 
@@ -77,7 +60,6 @@ src
 Here's an example of a simple `Cargo.toml` file:
 
 `Cargo.toml`:
-
 ```toml
 [package]
 name = "rust-text-app"
@@ -131,7 +113,6 @@ It's called "print" because running a program didn't always involve screens— I
 In order to understand the importance of semicolons, I'll have the computer print two different things in one line:
 
 `src/main.rs`:
-
 ```
 fn main() { println!("Hello, World"); println!("It's a wonderful day outside!"); }
 ```
@@ -177,7 +158,6 @@ src
 In order to import the functions that we're going to write in `prompts.rs`, we should use `mod prompts;`, to inform the compiler about the existence of our new file.
 
 `src/main.rs`:
-
 ```rust
 mod prompts;
 fn main() {
@@ -193,7 +173,6 @@ Rust is instructed to execute the function named `intro`, which is exported from
 Open the `src/prompts.rs` file, and paste the following in:
 
 `src/prompts.rs`:
-
 ```rust
 // pub stands for "public", not pubs!
 // "public" allows functions to be
@@ -217,20 +196,22 @@ So, we'll write a new function that will accept read the player's answer and rea
 For purposes of simplicity, the player will only be supposed to answer with a word starting with "Y", which includes words such as 'Yes', 'Yep', 'Yeah', or 'Yellow' (as a funny unintended consequence), or, likewise, "N".
 
 `src/prompts.rs`:
-
 ```rust
+use std::io;
+
 fn prompt() -> bool {
-
     let mut input = String::new();
-
     io::stdin().read_line(&mut input).unwrap();
 
     return input.to_ascii_lowercase().starts_with("y");
-
 }
 ```
 
 Now, I know that this is a lot to take in, but don't fret! Let's just go through what's happening here once more, line-by-line:
+
+    - `use std::io;`
+    
+    Importing libraries gives us the opportunity to expand our programs however you can imagine. By importing `std::io`, we gain access to more functions that allow us to perform "input/output" operations (like `println!()`, but more advanced!).
 
     - `fn prompt() -> bool {`
 
@@ -244,7 +225,7 @@ Now, I know that this is a lot to take in, but don't fret! Let's just go through
 
     - `io::stdin().read_line(&mut input).unwrap();`
 
-    Here, making use of the `io` library again, we capture whatever the player is typing until they hit `Enter` inside the `input` variable. (pls explain refs)
+    Here, using the `io` library again, we capture whatever the player is typing until they hit `Enter` inside the `input` variable.
 
     - `return input.to_ascii_lowercase().starts_with("y");`
 
@@ -275,6 +256,59 @@ if answer == true {
 
 You can now create a game by similarly adding more prompts, then using them in the `if... else` blocks of the previous prompt to connect them.
 
+### Part 4.4: Writing a full game
+
+Here's a summary of how the code should look like:
+
+`src/main.rs`:
+```rust
+mod prompts;
+
+fn main() {
+    prompts::intro();
+}
+```
+
+`src/prompts.rs`:
+```rust
+use std::io;
+
+// returns a boolean, accepts text input
+fn prompt() -> bool {
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).unwrap();
+    return input.to_ascii_lowercase().starts_with("y");
+}
+
+// returns nothing, shows the prompt, asks for input with prompt()
+
+pub fn intro() -> () {
+    println!("Someone's calling you, do you answer?");
+    
+    // if prompt() returns true, that's enough for rust to carry on!
+    // a few other expressions that also amount to true are 2 == 2,
+    // 1 > 0, or just the word true.
+    if prompt() {
+     
+    }
+    else {
+    }
+}
+
+pub fn phone_declined() -> () {
+    println!("You hang up the phone.");
+}
+
+pub fn phone_answered() -> () {
+    println!("You hear the caller say: 'Hey, I know it's been a long time, you down to meet up?'");
+    println!("Her voice seems vaguely familiar, and she sounds a bit distressed. Do you accept?"); 
+    
+    if prompt() {
+    }
+    else {
+    }
+}
+```
 ### Part 5: Ideas! 💡
 
 Congrats! You've managed to write your first game in Rust. 🎉
