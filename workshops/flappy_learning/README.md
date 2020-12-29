@@ -3,15 +3,15 @@ name: 'Flappy Learning'
 description: 'Make fun self-learn Flappy Bird
 how to fly and survive longer'
 author: '@ImBIOS'
-img: 'img/thumb.png'
+img: 'https://cloud-qswnyhek4.vercel.app/0thumb.png'
 ---
 # Flappy Learning
 
 Only in easy and simple 32 lines of code, We will learn how to use Neuroevolution.js and Flappy-Bird game to learn how Machine Learning works.
 
-This Flappy-Learning workshop is a workshop to show how to make flappy bird game works with Neuroevolution.js for a complete beginner.
+This Flappy-Learning workshop is a workshop to show how to make a flappy bird game that works with Neuroevolution.js for a complete beginner.
 
-![Result Preview GIF](img/preview.gif)
+![Result Preview GIF](https://cloud-215dmw1tc.vercel.app/0preview.gif)
 
 _^ Cool, huh? not enough cool? Now we are going to make it in an easy and fun coding workshop_
 
@@ -23,12 +23,12 @@ Cause we are focus on Machine Learning, I will provide the flappy bird javascrip
 
 Here is the [starter project](https://repl.it/@iMega/flappy-learning-starter#code.js).
 
-![Blank Project Pict](img/blank_project.png)
+![Blank Project Pict](https://cloud-r8tk4yxo7.vercel.app/0blank_project.png)
 
 _^ You will see something like this._
 
 ## NeuroEvolution Initialization
-Let's begin our coding! We start from our first Neuvol and game variable for the Neuroevolution and game function. Then we initialize the start function.
+Let's begin our coding! We start from our first variable declaration for the Neuroevolution, let's give it a name, like Neuvol and game variable for the game function. Then we initialize the start function.
 
 ```js
 var Neuvol;
@@ -46,13 +46,7 @@ var start = function(){
 }
 ```
 
-After many tweaking processes, I made a simple 2 options to initialize. The options to set the population of the birds set to 50 and the preceptor network to [2, [2], 1] or you can use my favorite [4, [4], 1]. But we will use the simple one.
-
-**Tips: Always use preceptor network number big-to-small or same number from left-to-right, and always use 1 in the right preceptor**
-
-Curious enough to understand why I suggest you like that? Just give it a try and you will laugh.
-
-![Laugh GIF](https://media.giphy.com/media/T7Qx28nEdo9NK/giphy.gif)
+Then we will create a neuron preceptor network. And we will set the population of the baby bird to learn to 50. You can tweak the network of course, but I recommending it as [2, [2], 1] or [4, [4], 1].
 
 ```js
 var start = function(){
@@ -90,13 +84,13 @@ Let's move into the game initialization after before we were coded the NeuroEvol
 
 The only function we write is the Game.prototype.start initialization and a few line of code inside it. Cool, huh?
 
-```
+```js
 Game.prototype.start = function(){}
 ```
 
 Easy. Then we initialize the time (this is must be zero in beginning), the score (of course everyone starts from zero, hackers too), the number of pipes already spawned... We don't want the pipes is overpowered so the array is still empty, and the last is the birds also in an empty set. 
 
-```
+```js
 this.interval = 0;
 this.score = 0;
 this.pipes = [];
@@ -105,7 +99,7 @@ this.birds = [];
 
 With some math, now we will make the birds spawning in the beginning and if all the birds in a generation are dead.
 
-```
+```js
 this.gen = Neuvol.nextGeneration();
 for(var i in this.gen){
     var b = new Bird();
@@ -115,13 +109,13 @@ for(var i in this.gen){
 
 To memorize the amount of generation spawned. We will use the increment.
 
-```
+```js
 this.generation++;
 ```
 
 The last one is to understand how many birds still alive
 
-```
+```js
 this.alives = this.birds.length;
 ```
 
@@ -131,7 +125,7 @@ Tada! Now you can start your Self-Learning Flappy Bird. Feels like being a hacki
 
 ![Awesome GIF](https://media.giphy.com/media/mXz3v0UdjrNTO/giphy.gif)
 
-```
+```js
 // Initialize the Neuroevolution
 var Neuvol;
 var game;
@@ -168,9 +162,9 @@ this.alives = this.birds.length;
 
 ## Hacking Further
 
-Wanna ultimate super-Saiyan hacker? Let's go further!
+Wanna be an ultimate super-Saiyan hacker? Let's go further!
 
-You can play this Flappy Learning with editing the NeuroEvolution Option variables. And even if you already a super-Saiyan or a pro, then you could understand the Neuroevolution.js and the game.js, you can tweak the default settings inside its script.
+You can play through this Flappy Learning by editing the NeuroEvolution Option variables. And even if you already a super-Saiyan or a pro, then you could understand the Neuroevolution.js and the game.js, you can tweak the default settings inside its script.
 
 Example of Further Hack:
 
