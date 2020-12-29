@@ -5,7 +5,7 @@ author: '@iamsid47'
 img: https://cloud-p6k9fe5b9.vercel.app/0smart-calc.png
 ---
 
-## Human-Like Calculator
+## Human-like calculator
 
 In this workshop, we are gonna make a calculator which can add, multiply, divide and subtract two numbers. But the catch is that instead of just adding those two numbers, we give it a statement!
 
@@ -17,7 +17,7 @@ You can try it out on Repl.it. Just click [Here](https://repl.it/@iamsid47/calc#
 
 ![How it works](https://github.com/iamsid47/hangman-pics/blob/main/how-calc-works.png)
 
-## Let's Get Started
+## Let's get started
 
 ![Create a repl](https://cloud-p6k9fe5b9.vercel.app/1human-like-calc-repl.png)
 
@@ -26,7 +26,7 @@ First, we want our calculator to act a bit human. It should not output just numb
 
 ```python
 response=['Welcome to smart calculator','My name is Calc', 
-		'Thanks for enjoy with me ','Sorry ,this is beyond my ability'] 
+'Thanks for enjoy with me ','Sorry ,this is beyond my ability'] 
 ```
 
 Now, for our calculator to calculate something, we need to tell it in some or the other way. Since we don't want our user to tell it in more of a numerical language, let's write in some logic.
@@ -44,7 +44,7 @@ For addition, let's create a function named `add`.
 
 ```python
 def add(a,b): 
-	return a+b 
+return a+b 
 ```
 
 Similar logic applies to the other functions. For subtraction, we create a function named `sub`; for multiplaction: `mul`, for division: `div`, for remainder: `mod`, for LCM: `lcm` and lastly for HCF: `hcf`.
@@ -56,19 +56,19 @@ Next, add some logic inside these. It's gonna be the same like we did it for add
 ```python
 # Subtraction 
 def sub(a,b): 
-	return a-b 
+return a-b 
 
 # Multiplication 
 def mul(a,b): 
-	return a*b 
+return a*b 
 
 # Division 
 def div(a,b): 
-	return a/b 
+return a/b 
 
 # Remainder 
 def mod(a,b): 
-	return a%b 
+return a%b 
 ```
 
 Now, for LCM and HCF, we need to create something different as even in normal python, these expressions work differently.
@@ -78,11 +78,11 @@ Thus for the Least Common Faction,
 ```python
 # calculating LCM 
 def lcm(a,b): 
-	L=a if a>b else b 
-	while L<=a*b: 
-		if L%a==0 and L%b==0: 
-			return L 
-		L+=1
+L=a if a>b else b 
+while L<=a*b: 
+if L%a==0 and L%b==0: 
+return L 
+L+=1
 ```
 
 Here, we have entered the LCM logic which is the same as the one used in a normal Python IDE. Infact all of the calculational logics are the same.
@@ -92,11 +92,11 @@ And for the Highest Common Factor,
 ```python
 # calculating HCF 
 def hcf(a,b): 
-	H=a if a<b else b 
-	while H>=1: 
-		if a%H==0 and b%H==0: 
-			return H 
-		H-=1
+H=a if a<b else b 
+while H>=1: 
+if a%H==0 and b%H==0: 
+return H 
+H-=1
 ```
 
 We just got the calculational logic done! Now, remember that I wanted my calculator to be more like a human? Well, That is, when I type a sentence, it should be able to catch what I want (example: add, subtract, etc) and then perform the calculation.
@@ -109,13 +109,13 @@ To do this, we need to create a token fetcher which will fetch the tokens (funct
 
 ```python
 def extract_from_text(text): 
-	l=[] 
-	for t in text.split(' '): 
-		try: 
-			l.append(float(t)) 
-		except ValueError: 
-			pass
-	return l 
+l=[] 
+for t in text.split(' '): 
+try: 
+l.append(float(t)) 
+except ValueError: 
+pass
+return l 
 ```
 
 Here, we first  make an empty list named `l`. Then we split all the terms the user has written using `for t in text.split(' '):` and then append this list. Later on we remove the unnecessary part using `except ValueError` and then return this list `l`.
@@ -124,11 +124,11 @@ Now for this to work, we create some operations performed on the basis of the to
 So, let's create an operation and we'll name it the same.
 ```python
 operations={'ADD':add,'PLUS':add,'SUM':add,'ADDITION':add, 
-			'SUB':sub,'SUBTRACT':sub, 'MINUS':sub, 
-			'DIFFERENCE':sub,'LCM':lcm,'HCF':hcf, 
-			'PRODUCT':mul, 'MULTIPLY':mul,'MULTIPLICATION':mul, 
-			'DIVISION':div,'MOD':mod,'REMANDER'
-			:mod,'MODULAS':mod} 
+'SUB':sub,'SUBTRACT':sub, 'MINUS':sub, 
+'DIFFERENCE':sub,'LCM':lcm,'HCF':hcf, 
+'PRODUCT':mul, 'MULTIPLY':mul,'MULTIPLICATION':mul, 
+'DIVISION':div,'MOD':mod,'REMANDER'
+:mod,'MODULAS':mod} 
 ```
 
 Now what we have done here is that if we get a list which contains the token `ADD`, then we use the `add` function to add the numbers present in that command.
@@ -158,8 +158,8 @@ Next, we will create a while loop so that the user can calculate on and on and t
 
 ```python
 while True: 
-	print() 
-	text=input('enter your queries: ') 
+print() 
+text=input('enter your queries: ') 
 ```
 
 After this, we split the text so that our operations and the token fetcher can work properly and later create a list named `l`.
@@ -172,25 +172,25 @@ Let's add some conditionals for calculations, errors and exits.
 
 ```python
 if word.upper() in operations.keys(): 
-			try: 
-				l = extract_from_text(text) 
-				r = operations[word.upper()] (l[0],l[1]) 
-				print(r)
-        except: 
-				print('something went wrong going plz enter again !!') 
-			finally: 
-					break
-		elif word.upper() in commands.keys(): 
-					commands[word.upper()]() 
-					break
+try: 
+l = extract_from_text(text) 
+r = operations[word.upper()] (l[0],l[1]) 
+print(r)
+except: 
+print('something went wrong going plz enter again !!') 
+finally: 
+break
+elif word.upper() in commands.keys(): 
+commands[word.upper()]() 
+break
 ```
 
 Here, we define that if there is a word from the list which matches with operations, then we tell to perform the operation. Meaning, if there is a token named *subtract*, we tell it to take this token and perform the subtraction with the respective numbers. Now if the user puts in something which is incorrect or does not comply with our operation, we break the loop.
 
 Next in, we add an `else` for everything else. Meaning, if something other than the conditions mentioned above goes wrong, we still break the loop and exit the program showing an error.
 ```python
-	else:		 
-		sorry() 
+else:		 
+sorry() 
 ```
 
 ## Voila! You did it!
@@ -207,8 +207,8 @@ You can also add in an equation solver which will be able to solve complex equat
 
 ## Demos
 
-[Demo1](https://repl.it/@iamsid47/calc-demo1)
+Here, I made a very simple GUI [version](https://repl.it/@iamsid47/calc-demo1) of a normal calculator.
 
-[Demo2](https://repl.it/@iamsid47/calc-demo2)
+This is a more advanced [version](https://repl.it/@iamsid47/calc-demo2) of the GUI calculator as this can calculate sin, cos, tan and even square root.
 
-[Demo3](https://repl.it/@iamsid47/calc-demo3)
+This one is like a modular [version](https://repl.it/@iamsid47/calc-demo3) because, here it asks the user if they want to add, subtract, multiply or divide and then asks to input numbers and finally gives the result.
