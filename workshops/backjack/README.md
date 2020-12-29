@@ -501,7 +501,7 @@ now we just asked the player if they would like to restart playing or to quite p
                Display_Card(dealer_card);
            cout << " with a total of : " << Tl_Dl_card << "\n\n";
            cout << player1 << " Win🔺 Congrats!! \n\n";
-           cout  << "Would you like '1' Continue  or '2' Quit PLAYING\n";
+           cout  << "Would you like '1' Restart or '2' Quit PLAYING\n";
              getline(cin,answ);
             Continue_Playing();       
           }
@@ -539,7 +539,7 @@ That a long way we have come; Now let write code for the function ` player_loose
  ```C++
  if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
        Hit_Bust_check();
-     } else {                                   /* place it here */
+     } else {                                 					  /* place it here */
             cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
 	    
      }
@@ -548,7 +548,7 @@ Now we ask we ask the user for input we will use getline function and store the 
 ```C++
 else {                                  
             cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
-	   getline(cin, answ)                                                /* place it here */
+	   getline(cin, answ);                                                /* place it here */
 	   
      }
 ```
@@ -562,8 +562,8 @@ we will then declare a function inside the **Declaration section** that will che
 we then going to call this function inside the else statement of the ` start_The_Game() ` function :
 ```C++
 else {                                  
-            cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
-	   getline(cin, answ)                                                
+           cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
+	    getline(cin, answ);                                                
 	   check_Hit_Bust_Stay();                                        /* place it here */
      }
    
@@ -595,8 +595,10 @@ void start_The_Game() {
 }
 
 ```
+
 </details>
-THen let give definition to to the function inside the **definition section**.
+
+Then let give definition to to the function inside the **definition section**.
  + we will check first if the answer is equal to Hit whcih means PLayer ask for another card to be draw, therefore we must a function that will draw another random number which wil be store inside the variable ` Pl_card_cont ` (player card continues) that store any card that the player will ask for.
 	
 ```C++
@@ -667,18 +669,18 @@ void Hit_Player_card() {
 ```
 </details>
 
-GO back inside the ` check_Hit_Bust_Stay() ` function, then if the player's answer is 1 then we should Draw a card for the player :
+GO back inside the ` check_Hit_Bust_Stay() ` function, then if the player's answer is 1 then we should Draw a card for the player by calling ` Hit_Player_card() ` function :
 
 ```C++
 if (answ == "1") {
-	check_Hit_Bust_Stay();                  /* place it here */
+	Hit_Player_card();                  /* place it here */
   }
 
 ```
 Then we shiuld tell the Player  what card they have been given,that is store inside ` Pl_card_cont ` variable :
 ```C++
 if (answ == "1") {
-        check_Hit_Bust_Stay();
+        Hit_Player_card();
      cout << "You have Have been dealt a [" << Pl_card_cont;				/* place it here */
      cout << "] With have a total of : " << Tl_Pl_card << "\n\n";			/* place it here */
   }
@@ -698,7 +700,7 @@ then if one of the total meet this condition we should call ` Hit_Bust_check ` f
  if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21){				
        Hit_Bust_check();                       			/* place it here */
    }
-
+```
 Now that when is that condition is not meet, we should then agin ask the player if they would like to Hit/Bust/Stay, then get the line from the user and stor it inside the answer variable ` answ ` while again you call this same function ` Hit_Bust_Stay() ` which will verify the answer from the player:
 
 ```C++
@@ -709,6 +711,7 @@ if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
      getline(cin, answ);								/* place it here */
      check_Hit_Bust_Stay();								/* place it here */
      }
+```
 Let say for example the player choose 2 Bust then player is saying that they are done taking more card and would like to check with the dealer card if who has won, there for we wil call the function ` Hit_Bust_check() ` :
 ```C++
 if (answ == "1"){
@@ -850,7 +853,7 @@ Let go back to to the function ` check_Hit_Bust_Stay() ` function and write the 
    }
 ```
 <details>
-<summary>Well done!!! with have just finnished with the function ` check_Hit_Bust_Stay() ` , now let see what we have</summary>
+<summary>Well done!!! with have just finnished with the function  check_Hit_Bust_Stay()  , now let see what we have</summary>
 	
 ```C++
 void check_Hit_Bust_Stay(){
@@ -877,7 +880,168 @@ void check_Hit_Bust_Stay(){
 
 </details>
 
+<details>
+<summary>You kind be thinking well how far we are Now, What I can say you can run your code and compare my code to yours</summary>
 
+```C++
+   #include <iostream>
+   #include <ctime>
+   #include <vector>
+     using namespace std;
+     /* Declaration section: This will be used to Declare variables and Function */ 
+          void start_The_Game();  
+          void Hit_card1();
+	  void Display_Card(vector<int>list_of_card);
+	  void Hit_Bust_check();
+	  void player_win();
+	  void Player_Loose(); 
+	  void check_Hit_Bust_Stay(); 
+	  void Hit_Player_card();  
+	  void Player_Stay();
+	  void Hit_Dealer_card();
+     int Pl_card1, Pl_card2, Pl_card3;     
+     int Dl_card1, Dl_card2, Dl_card3;     
+     int Tl_Pl_card,Tl_Dl_card;  
+     string player1; 
+     vector<int> player_card;
+     vector<int> dealer_card;
+      string answ;  
+     int  main()  {    /*Introduction to the game */
+         cout << "\n           Blackjack Game      \n";
+         cout << "\n++++++++++++++++++++++++++++++++\n";   
+         cout << "\n Welcome to the game.\n Enter your player Name: \n";
+         getline(cin,player1);   
+		 start_The_Game();
+       }
+       
+     void start_The_Game(){
+        cout << "\n           Blackjack Game      \n";
+        cout << "\n++++++++++++++++++++++++++++++++\n";
+        cout << "\n Welcome to the game.\n";
+        cout << "\n Player of this round is: " << player1 << "\n\n"; //new start
+        cout << "Please click enter to shuffle the cards \n";
+         cin.get();  
+            Hit_card1();                        
+        cout << player1 << ",You have been Dealt with [ " ;
+               Display_Card(player_card);
+        cout << "] With have a total of : " << Tl_Pl_card << " \n\n";
+        cout << "The Dealer is Showing a " << Dl_card1 << " \n\n";
+
+         if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
+               Hit_Bust_check();
+              } else {                                   			/* place it here */
+           cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
+           getline(cin, answ);
+	   check_Hit_Bust_Stay();
+    }
+ 
+      }
+     void Hit_card1() {
+      srand(time(0));
+      Pl_card1 = rand() % 11 + 1;         
+      Pl_card2 = rand()  % 11 + 1;  
+      player_card = {Pl_card1,Pl_card2};
+      Tl_Pl_card = Pl_card1 + Pl_card2;
+      Dl_card1 = (rand() % 11) + 1;
+      Dl_card2 = (rand()  % 11) + 1;
+      Dl_card_cont = rand() % 11 + 1;
+      dealer_card = {Dl_card1,Dl_card2};
+      Tl_Dl_card = Dl_card1 + Dl_card2 ;
+  
+      num_of_playerCard = 2;
+      }
+    void  Display_Card(vector<int>list_of_card) { 
+     for (int i = 0; i < list_of_card.size(); i++) {
+      cout << list_of_card[i] << " ";
+          }
+     }
+     void  Hit_Bust_check() {  
+      if (Tl_Pl_card == 21 || Tl_Dl_card > 21) {
+            player_win();
+        } else if (Tl_Dl_card == 21 || Tl_Pl_card > 21 )  {
+                Player_Loose();
+         } else if (Tl_Pl_card > Tl_Dl_card) {
+              player_win();
+          } else {
+              Player_Loose();
+           }
+       } 
+       void player_win(){
+           cout << "The Player hand : ";
+                 Display_Card(player_card);
+           cout << " with a total of : " << Tl_Pl_card << "\n\n";
+                
+           cout <<"Dealer Hand : " ;
+               Display_Card(dealer_card);
+           cout << " with a total of : " << Tl_Dl_card << "\n\n";
+           cout << player1 << " Win🔺 Congrats!! \n\n";
+           cout  << "Would you like '1' Restart  or '2' Quit PLAYING\n";
+             getline(cin,answ);
+            Continue_Playing();       
+          }
+	void Player_Loose(){
+          cout << "The Player hand : " ;
+          Display_Card(player_card);
+          cout << " with a total of : " << Tl_Pl_card << "\n\n";
+     
+           cout <<"Dealer Hand : "; 
+           Display_Card(dealer_card);
+           cout << " with a total of : " << Tl_Dl_card << "\n\n";
+           cout << "The Dealer Win!!🔺 " << player1 << " Looses🔻 \n\n";  
+           cout  << "Would you like '1' Restart  or '2' Quit PLAYING\n";
+           getline(cin,answ);
+           Continue_Playing();
+          }
+	  void check_Hit_Bust_Stay(){
+             if (answ == "1") {
+	         Hit_Player_card();
+		 cout << "You have Have been dealt a [" << Pl_card_cont;				
+                 cout << "] With have a total of : " << Tl_Pl_card << "\n\n";
+		 if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
+                           Hit_Bust_check();
+                    } else {										
+                          cout << "would you like to '1' Hit or '2' bust or '3' stay\n";                 	
+                          getline(cin, answ);								
+                           check_Hit_Bust_Stay();								 
+                         }
+	         }  else if (answ == "2") {								
+                         Hit_Bust_check();								
+                       } else {
+    			    Player_Stay();						
+  			   }
+             }
+	   void Hit_Player_card() {
+              srand(time(0));      
+	      Pl_card_cont = rand() % 11 + 1;
+             player_card.push_back(Pl_card_cont);
+             Tl_Pl_card += Pl_card_cont;
+               num_of_playerCard++;
+             }
+	     void Player_Stay() {
+                  while (Tl_Dl_card < 16) {
+		       Hit_Dealer_card()
+                     }
+		     if ( Tl_Dl_card > 21) {				
+      			  player_win();
+ 			  } else if (Tl_Pl_card > Tl_Dl_card && Tl_Pl_card <= 21) {
+       					 player_win();
+  				    } else {
+    					  player_loose()
+  					 }	
+                   }
+
+              void Hit_Dealer_card() {
+                srand(time(0));
+              Dl_card_cont = rand() % 11 + 1;
+             dealer_card.push_back(Dl_card_cont);
+             Tl_Dl_card += Dl_card_cont;
+            }          
+	    
+```
+
+</details>
+
+and you will see that we are done with almost everything, Why did I say almost everything? because when you try to answer '3' stay, you might will some get some weird dealer card number showing, respetively or the answer will be kind of contradition to what th rule of the game relaly is. 
 + in the first line we tell the program to display the title of the game which wll be place at the center of the game using spaces.
  + what up with the \n at the end and beginning of the string ,well we us hat to tell the program to dislay a new Line before and after the line and so create a new line,there is more than one way to create a new like check it out *[Here]()*.
  + our second line we use the plus sign to create an line betwwen the title and the body of the game.
