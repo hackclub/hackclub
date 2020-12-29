@@ -444,6 +444,8 @@ now we just asked the player if they would like to restart playing or to quite p
          getline(cin,player1);   
 		 start_The_Game();
        }
+       /* Definition Section: this section will be used to Give definition to all the Declare function*/
+       
      void start_The_Game(){
         cout << "\n           Blackjack Game      \n";
         cout << "\n++++++++++++++++++++++++++++++++\n";
@@ -569,7 +571,7 @@ else {
    
 ```
 <details>
- <summary>Now we done with star_The_Game() function check out your code and compare to mine here</summary
+ <summary>Now we done with star_The_Game() function check out your code and compare to mine here</summary>
 	 
 ```C++
 void start_The_Game() {
@@ -598,7 +600,7 @@ void start_The_Game() {
 
 </details>
 
-Then let give definition to to the function inside the **definition section**.
+Then let give definition to the function inside the **definition section**.
  + we will check first if the answer is equal to Hit whcih means PLayer ask for another card to be draw, therefore we must a function that will draw another random number which wil be store inside the variable ` Pl_card_cont ` (player card continues) that store any card that the player will ask for.
 	
 ```C++
@@ -607,7 +609,6 @@ Then let give definition to to the function inside the **definition section**.
 	
 	}
      }
-	
 ```
 #### Drawing Card for the player continuesly
 
@@ -752,6 +753,7 @@ void Player_Stay() {
    while (Tl_Dl_card < 16) {
       
    }
+ }
    
 ```
 Now we need to create a function that Give the dealer a new card similar ` Hit_player_card ` function which give a new card to the player. This function we will instead call it ` Hit_Dealer_card() ` :
@@ -913,6 +915,7 @@ void check_Hit_Bust_Stay(){
          getline(cin,player1);   
 		 start_The_Game();
        }
+       /* Definition Section: this section will be used to Give definition to all the Declare function*/
        
      void start_The_Game(){
         cout << "\n           Blackjack Game      \n";
@@ -1042,10 +1045,83 @@ void check_Hit_Bust_Stay(){
 </details>
 
 and you will see that we are done with almost everything, Why did I say almost everything? because when you try to answer '3' stay, you might will some get some weird dealer card number showing, respetively or the answer will be kind of contradition to what th rule of the game relaly is. 
-+ in the first line we tell the program to display the title of the game which wll be place at the center of the game using spaces.
- + what up with the \n at the end and beginning of the string ,well we us hat to tell the program to dislay a new Line before and after the line and so create a new line,there is more than one way to create a new like check it out *[Here]()*.
- + our second line we use the plus sign to create an line betwwen the title and the body of the game.
- + the third line we welcome the user and ask the Player to Enter they name. We will
+How many line of code is the last function again? five, so we done? let find out.
+
+We will declare our last function as ` Check_player_3card() ` because the game allow the dealer to have 3 card if the player has 3 card or more and the player never ask for a stay, then we should give the dealer his third card :
+```C++
+/* Declaration section: This will be used to Declare variables and Function */ 
+void Check_Player_3card();
+```
+Now let give the definition to this function, but what will it do :
+ +So we will check if the number of card of the player is bigger or equal to 3
+ + if it bigger or equal to 3 then we will say the total of the delaer card plus the one dealer card that we call inside ` Hit_Card1 ` but never had place it inside the total of the dealer or the list card for the dealer.
+ + so now we will add it to the total of the dealer card and add it inside the list of the delaer card
+ + so because this function will be called many places and we want to call it one we will set the Number of card for the dealer to 0, so this if staement won't run if this function it called again.
+ ```C++
+ void Check_Player_3card(){
+     if (num_of_playerCard >= 3){
+        Tl_Dl_card += Dl_card_cont;
+        dealer_card.push_back(Dl_card_cont);
+        num_of_playerCard = 0;
+     }   
+}
+```
+Last but not least let call this function :
+ + Inside the ` Player_Stay() ` function before the while loop call ` Check_player_3card() ` function :
+   ```c++
+    Check_Player_3card(); 						/* place it here */
+   while (Tl_Dl_card < 16) {
+      Hit_Dealer_card();
+      }
+   }
+   ```
+ + Inside ` player_win() `  function call out  ` Check_player_3card() ` function :
+    ```c++
+      void player_win(){
+          cout << "The Player hand : ";
+          Display_Card(player_card);
+          cout << " with a total of : " << Tl_Pl_card << "\n\n";
+                   Check_Player_3card();						/* place it here */
+          cout <<"Dealer Hand : " ;
+          Display_Card(dealer_card);
+          cout << " with a total of : " << Tl_Dl_card << "\n\n";
+          cout << player1 << " Win🔺 Congrats!! \n\n";
+          cout  << "Would you like '1' Continue  or '2' Quit PLAYING\n";
+          getline(cin,answ);
+          Continue_Playing();       
+        }
+    ```
+ + Inside ` player_loose() `  function call out  ` Check_player_3card() ` function : 
+     ```c++
+     void player_loose(){
+            cout << "The Player hand : " ;
+            Display_Card(player_card);
+           cout << " with a total of : " << Tl_Pl_card << "\n\n";
+                  Check_Player_3card();							/* place it here */
+           cout <<"Dealer Hand : "; 
+           Display_Card(dealer_card);
+           cout << " with a total of : " << Tl_Dl_card << "\n\n";
+           cout << "The Dealer Win!!🔺 " << player1 << " Looses🔻 \n\n";
+            cout  << "Would you like \'1\' Restart  or '2' Quit PLAYING\n";
+            getline(cin,answ);
+           Continue_Playing();
+	}     
+     ```
+   + and lastly inside the ` check_Hit_Bust_Stay() ` function inside the firt else statement
+       ```c++
+       if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
+              Hit_Bust_check();
+              } else {
+             cout << "would you like to '1' Hit or '2' bust or '3' stay\n";
+               getline(cin, answ);
+           Check_Player_3card(); 							/* place it here */
+             check_Hit_Bust_Stay();
+          }
+	```
+WELL done you have just YOU just level up for you can now run your game and see How Your game really looks 
+
+
+Show everyone want you just made,
  
 # Challenge 
 
