@@ -46,7 +46,7 @@ And we'll add script tags for Firebase, p5.js, jQuery, and our own `script.js` f
 <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="main.js"></script>
+<script src="script.js"></script>
 ```
 
 ### Setting up the Firebase App
@@ -440,7 +440,7 @@ Congratulations! Your collaborative drawing app is now complete.
 
 Make sure you're logged into your Repl.it account and press **Run** with the most recent code.
 
-Share your URL to the [`#shipit`](https://hackclub.slack.com/messages/shipit/) channel on Slack, so that everyone can collaborate together!
+Share your URL to the [`#ship`](https://hackclub.slack.com/messages/ship/) channel on Slack, so that everyone can collaborate together!
 
 ## Part V: Hacking
 

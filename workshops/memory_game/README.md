@@ -308,11 +308,10 @@ function flipCard() {
   }
 }
 ```
-
-<details>
-<summary>Here's what the code looks like so far:</summary>
   
-```js
+Here's what the code looks like so far:
+  
+```javascript
 document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [....]// the cardArray we created before
 
@@ -348,8 +347,6 @@ document.addEventListener('DOMContentLoaded', () => {
   createBoard()
 })
 ```
-
-</details>
 
 Don't forget to uncomment the event-listener of the card.
 Comment the `if` statement in the `flipCard` function and check whether the images are changing or not. The output works like this.
@@ -478,13 +475,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if  (cardsMatched.length === cardArray.length/2) {
       result.textContent = 'Congratulations! You found them all!'
     }
+  }
 
-}
-
-createBoard()
+  createBoard()
 })
-
 ```
+
 </details>
 
 You might notice that the cards are not random. So we have to shuffle the `cardArray` every time before creating the board, using the `sort()` method. The [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method sorts the elements of an array in place and returns the sorted array.

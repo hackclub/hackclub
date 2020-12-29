@@ -80,6 +80,8 @@ I hope you understand the starter, now you may be getting bored so let's get mak
 
 # Detecting a key press
 
+From here on out, we'll be writing our code in the `script.js` file so load that up in the editor.
+
 To play a note in our project we will have the user press a key on their keyboard. Javascript has an event for this: `document.onkeydown`. This is fired when ever a key is pressed down.
 
 For example, in the below snippet:
@@ -101,6 +103,8 @@ document.onkeydown = function (e) {
   console.log(key)
 }
 ```
+
+What this code does is it get's the event (the key being pressed) information happening. It then extracts the key code from that information. The use of `||` is as a browser fallback as some browsers have different APIs.
 
 You'll see that when running this, our key is a number!? That's because each key has it's own code. [keycode.info](https://keycode.info/) is a super handy tool to help you identify the codes for each key.
 

@@ -43,3 +43,4 @@ If you’d like to see someone make a workshop on building a specific type of pr
 - How to make a Discord bot ([@zachlatta](https://github.com/zachlatta))
 - A collaborative Spotify playlist using the Spotify API ([@MatthewStanciu](https://github.com/MatthewStanciu))
 - (Update) GitHub Pages and/or Netlify ([discussion](https://github.com/hackclub/hackclub/issues/1181), [@itsmingjie](https://github.com/itsmingjie))
+- Low-level programming with Rust ([@anirudhb](https://github.com/anirudhb))
