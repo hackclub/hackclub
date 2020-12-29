@@ -139,12 +139,12 @@ cout << "Please click enter to shuffle the card \n";
      #include <ctime>
      #include <vector>
      using namespace std;
-
+         void start_The_Game();  
      int Pl_card1, Pl_card2, Pl_card3;     
      int Dl_card1, Dl_card2, Dl_card3;     
      int Tl_Pl_card,Tl_Dl_card;  
      string player1;           
-	int  main(){    /*Introduction to the game */
+	int  main() {    /*Introduction to the game */
          cout << "\n           Blackjack Game      \n";
          cout << "\n++++++++++++++++++++++++++++++++\n";   
          cout << "\n Welcome to the game.\n Enter your player Name: \n";
@@ -370,23 +370,144 @@ first player_win function, so what do we want when the player win?
  Now to get the answer from the player we will declare a new String variable that can store the answer from the player and call it ` answ ` inside the **Declaration section**
  ```c++
  /* Declaration section: This will be used to Declare variables and Function */ 
- string answ;         				/* place it here */
+ string answ;         				          /* place it here */
  ``` 
   then we will need a new function that will check if the player would like to continue or quit playind, we will neame this function ` Continue_Playing() `
  ```c++
  /* Declaration section: This will be used to Declare variables and Function */ 
  string answ;
- void Continue_Playing();                        /* place it here */
+ void Continue_Playing();                              /* place it here */
  
  ```
- Now let go back inside the ` Player_win() ` function and get the line from the player and store the answer inside the ` answ ` variable :
- ```C++
-  cout << player1 << " Win🔺 Congrats!! \n\n";        
-  getline(cin,answ);
+ Now let go back inside the ` Player_win() ` function and get the line from the player then store the answer inside the ` answ ` variable :
+ ```C++ 
+  cout  << "Would you like '1' Restart  or '2' Quit PLAYING\n";
+  getline(cin,answ);                                                    /* place it here */
  
  ```
- the call the function ` Continue_Playing() ` which we will give a definition now to it.
+ then call the function ` Continue_Playing() ` which we will give a definition to it soon.
+
+```c++
+ getline(cin,answ);
+ Continue_Playing();                      /* place it here */
  
+ ```
+ inside the **Definition section** let start to give definition to the function ` Continue_playing() ` :
+ ```c++
+ Continue_Playing() {
+  
+  }
+  
+``` 
+now we just asked the player if they would like to restart playing or to quite playing we will write small program that check the answer from the player :
+ + if the answer from the player is " 1 " then we will call the game to start using the function ` Start_The_Game() `
+ + else the player want to stop playing there we will just thanks the player for playing and do nothing else.
+ ```c++
+  void Continue_Playing() { 
+   if (answ == "1") {
+      start_The_Game();                                   /* then continue */ this function will start again the game from the beginning 
+   }  else {
+      cout << "\n\nThanks For playing\n\n";                /* this message will be display and nothing else will happen */
+   }
+}
+
+ ```
+ Well done, let see your progress so far because we seem to be going from one function to the other while not finiishing other function :
+ 
+ <sections>
+	<summary> Ceck out your progress here</summary>
+	
+	```c++
+	 #include <iostream>
+     #include <ctime>
+     #include <vector>
+     using namespace std;
+          void start_The_Game();  
+          void Hit_card1();
+	  void Display_Card(vector<int>list_of_card);
+	  void Hit_Bust_check();
+	  void player_win();
+	  void Player_Loose(); 
+     int Pl_card1, Pl_card2, Pl_card3;     
+     int Dl_card1, Dl_card2, Dl_card3;     
+     int Tl_Pl_card,Tl_Dl_card;  
+     string player1; 
+     vector<int> player_card;
+     vector<int> dealer_card;
+      string answ;  
+     int  main()  {    /*Introduction to the game */
+         cout << "\n           Blackjack Game      \n";
+         cout << "\n++++++++++++++++++++++++++++++++\n";   
+         cout << "\n Welcome to the game.\n Enter your player Name: \n";
+         getline(cin,player1);   
+		 start_The_Game();
+       }
+     void start_The_Game(){
+        cout << "\n           Blackjack Game      \n";
+        cout << "\n++++++++++++++++++++++++++++++++\n";
+        cout << "\n Welcome to the game.\n";
+        cout << "\n Player of this round is: " << player1 << "\n\n"; //new start
+        cout << "Please click enter to shuffle the cards \n";
+         cin.get();  
+            Hit_card1();                        
+        cout << player1 << ",You have been Dealt with [ " ;
+               Display_Card(player_card);
+        cout << "] With have a total of : " << Tl_Pl_card << " \n\n";
+        cout << "The Dealer is Showing a " << Dl_card1 << " \n\n";
+
+         if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
+               Hit_Bust_check();
+              }
+ 
+      }
+     void Hit_card1() {
+      srand(time(0));
+      Pl_card1 = rand() % 11 + 1;         
+      Pl_card2 = rand()  % 11 + 1;  
+      player_card = {Pl_card1,Pl_card2};
+      Tl_Pl_card = Pl_card1 + Pl_card2;
+      Dl_card1 = (rand() % 11) + 1;
+      Dl_card2 = (rand()  % 11) + 1;
+      Dl_card_cont = rand() % 11 + 1;
+      dealer_card = {Dl_card1,Dl_card2};
+      Tl_Dl_card = Dl_card1 + Dl_card2 ;
+  
+      num_of_playerCard = 2;
+    }
+    void  Display_Card(vector<int>list_of_card) { 
+     for (int i = 0; i < list_of_card.size(); i++) {
+      cout << list_of_card[i] << " ";
+          }
+     }
+     void  Hit_Bust_check() {  
+      if (Tl_Pl_card == 21 || Tl_Dl_card > 21) {
+            player_win();
+        } else if (Tl_Dl_card == 21 || Tl_Pl_card > 21 )  {
+                Player_Loose();
+         } else if (Tl_Pl_card > Tl_Dl_card) {
+              player_win();
+          } else {
+              Player_Loose();
+           }
+       } 
+       void player_win(){
+           cout << "The Player hand : ";
+                 Display_Card(player_card);
+           cout << " with a total of : " << Tl_Pl_card << "\n\n";
+                
+           cout <<"Dealer Hand : " ;
+               Display_Card(dealer_card);
+           cout << " with a total of : " << Tl_Dl_card << "\n\n";
+           cout << player1 << " Win🔺 Congrats!! \n\n";
+           cout  << "Would you like '1' Continue  or '2' Quit PLAYING\n";
+             getline(cin,answ);
+            Continue_Playing();       
+            }
+     
+	```
+</sections>
+
+That a long way we have come; Now let
 + in the first line we tell the program to display the title of the game which wll be place at the center of the game using spaces.
  + what up with the \n at the end and beginning of the string ,well we us hat to tell the program to dislay a new Line before and after the line and so create a new line,there is more than one way to create a new like check it out *[Here]()*.
  + our second line we use the plus sign to create an line betwwen the title and the body of the game.
