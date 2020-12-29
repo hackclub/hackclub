@@ -254,7 +254,7 @@ void draw()
   }
   ```
   
-After defining the `draw()` function, we will create an `if` condition to check whether the left mouse button is clicked or not:
+After defining the `draw()` function, we will create an `if` condition to check whether the left mouse button is clicked or not. We will be traversing through the grid using two `for` loops to find which tile was clicked. Then, the selected color from the color palette is applied to the tile using `grid[b][a].color = selected;`
 
 ```java
   if (mousePressed && mouseButton == LEFT)
