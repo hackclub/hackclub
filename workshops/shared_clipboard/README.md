@@ -167,6 +167,8 @@ This part just makes a new error that has the message "too many arguments" (lol 
 errors.New("too many arguments")
 ```
 
+Try testing the code at any point in the workshop! Replace function calls with print statements to see if the option parsing works!
+
 ### Handle Errors
 Let's make a function to handle errors:
 ```go
