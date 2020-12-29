@@ -737,14 +737,13 @@ These are some examples to inspire your thoughts.
 * **Example-1**: A Todo App where you can edit the added task, using [Material UI](https://material-ui.com/) for styling components.
 
     [Demo](https://todo-list-app.giridharhackclu.repl.co/). [Source Code](https://repl.it/@Giridharhackclu/Todo-List-App#src/App.js).
+    
+* **Example-2**: Contact Form using React and Firebase.
 
-* **Example-2**: Own phonebook using React and Firebase.
+    [Demo](https://Contact-form.giridharhackclu.repl.co). [Source Code](https://repl.it/@Giridharhackclu/Contact-form#src/App.js).
+
+* **Example-3**: Phonebook app (more inputs for database)
 
     [Demo](https://phonebook.giridharhackclu.repl.co). [Source Code](https://repl.it/@Giridharhackclu/phonebook#src/App.js).
-    
-    
-* **Example-3**: Creating a grocery bud.
-
-    [Demo](https://grocery-bud.giridharhackclu.repl.co). [Source Code](https://repl.it/@Giridharhackclu/grocery-bud#src/App.js).
 
 
