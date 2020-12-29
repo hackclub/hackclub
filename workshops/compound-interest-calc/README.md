@@ -135,7 +135,7 @@ elif(choice == 2):
 
 Lastly, we need a choice where the user can choose to exit. Thus:
 
-```print
+```python
 elif(choice == 3):
  print("Okay Byeee!")
    break
@@ -159,8 +159,8 @@ It is also possible to make app using this. The only tweak will be that instead 
 
 ## Demos
 
-[Demo 1](https://repl.it/@iamsid47/comp-int-demo1#main.py)
+I made a [version](https://repl.it/@iamsid47/comp-int-demo1#main.py) in which I tweaked the code and made a GUI version of the compound interest calculator. It first asks the basic requirements like the investment, the principal, etc and then when we click the calculate button, it calculatest it for us.
 
-[Demo 2](https://repl.it/@iamsid47/simple-int-demo2#main.py)
+This is another [example](https://repl.it/@iamsid47/simple-int-demo2#main.py) of how you can change the GUI of the code. Here, I did not used the previous version's code, rather I made a different GUI completely.
 
-[Demo 3](https://repl.it/@iamsid47/compint-demo3#index.html)
+Here in this [version](https://repl.it/@iamsid47/compint-demo3#index.html) I actually put up my Python code on a website (using Repl.it's **Embed Code** feature) which gives you an iframe that you can add to your website.
