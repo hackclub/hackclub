@@ -2,14 +2,14 @@
 name: Chart JS
 description: Create any kind of chart for your website
 author: '@wollygfx'
-img: 'https://cloud-g96wt9icu.vercel.app/0screen_recording_2020-11-19_at_4.38.37_pm.gif'
+img: 'https://cloud-d661yx1ei.vercel.app/0screen_recording_2020-12-11_at_10.42.35_pm.gif'
 ---
 
-In this workshop you'll learn how to make charts using [Chart Js](https://www.chartjs.org), a free open-source JavaScript library for data visualization. Follow along and see how easy it is!
+In this workshop you'll learn how to make a Chart generator using [Chart Js](https://www.chartjs.org), a free open-source JavaScript library for data visualization. Follow along and see how easy it is!
 
-Here's a [live demo](https://repl.it/@wollygfx/ChartJs#script.js) of what we will make, you can also find the final code there.
+Here you can find a [live demo](https://chart-generator-def.wollygfx.repl.co) and here, you will find the [source code](https://repl.it/@wollygfx/Chart-generator-def#index.htmll).
 
-![Chart JS](https://cloud-g96wt9icu.vercel.app/0screen_recording_2020-11-19_at_4.38.37_pm.gif)
+![Chart Generator](https://cloud-d661yx1ei.vercel.app/0screen_recording_2020-12-11_at_10.42.35_pm.gif)
 
 ## Set Up
 
@@ -21,50 +21,150 @@ For this workshop we will use [Repl.it](https://repl.it), click [here](https://r
 
 ## HTML
 
-Alright, the first thing we have to do is to install Chart JS in our html document, to do this, we are going to paste the following code inside of our `<head>` tag. This allows us to use the Chart JS library without having to download it. 
+Alright, the first thing we have to do is to install Chart JS in our html document, to do this, we are going to paste the following code inside of our `<head>` tag. 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 ```
+This allows us to use Chart JS without having to download it. Learn about CDN [here](https://www.cloudflare.com/es-la/learning/cdn/what-is-a-cdn/).
 
-Last thing we have to do here is to create a [canvas](https://www.w3schools.com/html/html5_canvas.asp) element inside of our `<body>` tag. We also have to give it an `id`, a `width` and a `height`.
+The next thing we have to do is to create a [canvas](https://www.w3schools.com/html/html5_canvas.asp) element inside of our `body` tag, and give it an **id**. In this canvas is where our Chart will be drawn in.
 ```html
-<canvas id="myChart" width="400" height="400"></canvas>
-``` 
+<canvas id="myChart"></canvas>
+```
 
-## Javascript
+Additionally, we have to create inside of a `div` container, 2 input elements and 3 buttons with the following attributes and values.
+```html
+<canvas id="myChart"></canvas>
+<div>
+  <input id="data" type="number" placeholder="Data">
+  <input id="label" type="text" placeholder="Data's Label">
 
-Now, let's move to the fun part of the workshop.
+  <button onclick="addData(myChart)">Add Data</button>
+  <button onclick="removeData(myChart)">Remove Data</button>
+  <button onclick="saveCanvas()">Save Chart</button>
+</div>
+```
+Notice that the 2 input elements have the attribute `type` but with different values. The `number` type is used to let the user enter a number, and the `text` type create basic single-line text fields. These inputs also have the attribute `placeholder`, which specifies a short hint that describes the expected value of an input field.
+
+Also, you can see that the `button` elements have the `onclick` attribute, this is actually an [event handler](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Event_handlers). When the button is being clicked, certain function or event will be run.
+
+Here's how our HTML document looks so far:
+![HTML DOM](https://cloud-3q20mqjc9.vercel.app/0image.png)
+
+## CSS
+
+Now that we have our HTML document ready, we should style it a little bit to make it look better. So, go ahead and click on the `style.css` file located in the **Files tab**.
+
+The first thing we want to do, is to align all the input and button elements to the center.
+```css
+div {
+display:flex;
+justify-content:center;
+}
+```
+Let's break this down:
+- The `display` property sets whether an element is treated as a [block or inline element](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout) and the layout used for its children, such as [flow layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout), [grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) or [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout).
+- The `justify-content` property defines how the browser distributes space between and around content items along the [main-axis](https://developer.mozilla.org/en-US/docs/Glossary/Main_Axis) of a flex container, and the inline axis of a grid container.
+
+When we click on *run*, we'll see that our elements are perfectly aligned to the center.
+![Div aligned to the center](https://cloud-48yrakqtz.vercel.app/0image.png)
+*Note: Make sure your style.css file is linked to your html document so we can see changes.*
+
+Cool! – But our elements look very boring yet, so let's style them a little bit...
+```css
+button {
+  background-color: #ffe0e6;
+  border: 2px solid #fbabbb;
+  border-radius: 5px;
+  padding: 7px 16px;
+  margin:0 2px 0 0;
+  color: #7b7a7a;
+  cursor: pointer;
+}
+
+input{
+  background-color: #ffe0e6;
+  border: 2px solid #fbabbb;
+  border-radius: 5px;
+  padding: 5px;
+  margin:0 2px 0 0;
+}
+
+```
+What we basically did here, was to give the elements a background color, a border (with a color too), a border radius, and some other stuff that you can see here:
+![HTML DOM but with CSS](https://cloud-2dy6ppnzz.vercel.app/0image.png)
+
+Cool, our HTML document looks a lot better now!
+
+## JavaScript
+
+Now, let's move to the fun part of the workshop. Go ahead and click on the `script.js` file located in the **Files tab**. 
 
 ![Fun gif](https://cloud-n5xpv2pg5.vercel.app/0file_from_ios.gif)
 
 ### Setting up the canvas
+
 First we'll need to get the context for our canvas. The [canvas context](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext) is an object with properties and methods that you can use to render graphics inside the **canvas** element.
 ```js
-var ctx = document.getElementById('chart').getContext('2d');
+var canvas = document.getElementById('myChart');
+var ctx = canvas.getContext('2d');
 ```
-1. First, we are creating a variable named `ctx`, that gets the canvas element using the `getElementById('')` method.
-2. Then using the `getContext('')` method we return the drawing context of the canvas, which is `2d`. 
+1. First, we are creating a variable named `canvas`, that gets the canvas element using the `getElementById('')` method.
+2. Then, we are creating another variable named `ctx`, that uses the `getContext('')` method to return the drawing context of the canvas, which is `2d`.
 
 ## Creating a chart
-Now, we are going to create the actual chart using a variable that i will name as `chart`.
+
+Now, we are going to create the actual chart using a variable that we'll name as chart, we are also giving it some colors and adding some options that will be useful later.
 ```js
-var chart = new Chart(ctx, {
-    type: '',
+var myChart = new Chart(ctx, {
+    type: 'bar',
     data: {
-        labels: [],
         datasets: [{
             label: '',
-            data: [],
-        }]
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+            }]
     },
+    
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
 });
+
 ```
 Let's break this down:
-1. The `new`  operator lets us create an object, which will be a Chart.
-2. `Chart(ctx,{});` this object that we just created, will be inserted inside of the canvas context `ctx`.
-3. Each chart is composed of two elements, the `type` element; which specifies what type of chart we will render, and the `data` element; which is composed by other elements that we'll see in a few moments.
+1. In a variable called `chart`, we are creating a Chart object using the `new`  operator.
+2. This object has 2 essential elements: the `type` element; which specifies what type of chart we want to be rendered, and the `data` element; which contains a serie of datasets and labels that will be used to render the chart.
+3. The `backgroundColor:` and `borderColor:` elements set the background and border color for each bar respectively using [rgba colors](https://www.w3schools.com/css/css_colors_rgb.asp).
+4. The `borderWidth` element sets the width for the border.
+5. The `options` element is used to configure the chart in different ways.
+
+Here's what the code above will render:
+![Chart](https://cloud-eh5pe4f89.vercel.app/0image.png)
 
 ### Types of charts
+
 Chart.js allows us to use up to 7 built-in charts types, and you can even create your own chart type.
 
 Here are some of them:
@@ -88,168 +188,71 @@ Here are some of them:
 ![Polar area chart](https://cloud-4x3lxyzvi.vercel.app/0image.png)
 </details>
 
-They're all very easy to do, i promise... 
-
 ### Data
 
-So, now that we have our chart, if we clicked on "run" it would render this:
-![Chart rendered](https://cloud-ltszs5o7k.vercel.app/0image.png)
+Now we have our chart, but we need to get data from somewhere. So, what we are going to do, is to create a function that takes the input elements and gets their values, then using Chart Js methods, we'll push that data into our chart.
+```js
+function addData(chart) {
+  chart.data.labels.push(document.getElementById("label").value);
+  chart.data.datasets.forEach((dataset) => {
+  dataset.data.push(document.getElementById("data").value);
+  });
+  chart.update();
+}
+```
+As mentioned before, we are creating a function called `addData`, this function will be called whenever the user clicks on the **Add Data** button.
 
-So, we'll have to give it data. For this workshop, i've created a data table that we are going to use, here it is:
-![Data table](https://cloud-9ts8w8agi.vercel.app/0image.png)
+Then we are taking the variable `chart` (where the Chart object is in), and using its methods:
 
-Now, think of each **animal** as a variable and that each animal has a value that we'll call **# of Animals**. So what we need to do, is to put the animal variables inside of the `label` element.
+- The `data` method gets the data array from the object `chart`.
+- The `labels` method gets the `labels` array from the `data` array.
+- The `push` method adds data to the `labels` array. This data is gotten using the methods `document.getElementById()` and `value`.
 
-*Note: Each animal goes inside 2 apostrophes and followed by a comma.*
+Then we do the same thing but this time we'll get the `datasets` array from the `data` array, and using the `forEach()` method we'll call a function that will execute for every `dataset` in our `datasets` array.
+
+Finally, we use the `update` method to update the chart once the data is gotten.
+
+Here's the result of the code above:
+![Result](https://cloud-l9cwjcuh7.vercel.app/0screen_recording_2020-12-23_at_1.04.00_pm.gif)
+
+Now, we'll create a function that removes data from the chart, we'll do it the same way as the past function, but this time we'll use the `pop` method instead of the `push` method.
 
 ```js
-var chart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Lions', 'Pinguines', 'Monkeys', 'Elephants'],
-        datasets: [{
-            label: '',
-            data: [],
-        }]
-    },
+function removeData(chart) {
+chart.data.labels.pop();
+chart.data.datasets.forEach((dataset) => {
+dataset.data.pop();
 });
+chart.update();
+} 
 ```
+Let's see if it works:
+![Result](https://cloud-goab5uq2w.vercel.app/0screen_recording_2020-12-24_at_11.31.05_am.gif)
 
-Now if we clicked on run, you would see that now we have our animals right under the x axis.  
-
-![Chart rendered](https://cloud-gpp881t22.vercel.app/0image.png)
-
-Cool, but a bar chart would not be anything if it had no values or data, so we'll now do that.
-
-Let's move into the `datasets` element, what we want to do is to fill the `label` and `data` elements with data, duh. So, do you remember that each animal has a value that we called **# of Animals**? –Well, that's what we are going to put inside of the `label` element. And then, inside of the `data` element we'll put the values for each animal respectively.
-```js
-var chart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Lions', 'Pinguines', 'Monkeys', 'Elephants'],
-        datasets: [{
-            label: '# of Animals',
-            data: [7, 17, 15, 10],
-        }]
-    },
-});
-```
-After clicking on run we'll see that each animal have its value:
-![Chart rendered](https://cloud-95ig0rwc3.vercel.app/0image.png)
-
-But, we have a problem here. ChartJs puts the the smallest given value (7) at the beginning and that's not what we want. And we are fixing this using the `options` element:
-```js
-var chart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Lions', 'Pinguines', 'Monkeys', 'Elephants'],
-        datasets: [{
-            label: '# of Animals',
-            data: [7, 17, 15, 10],
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-```
-What this basically does is to put the zero at the beginning in the y coordinate.
-
-Now, i want you to quickly change the type of the chart for any of the mentioned before. You'll see how easy you can make any chart using the same data structure. 
-
-![Pie and Polar area charts](https://cloud-9brkk5dkc.vercel.app/0screen_recording_2020-11-20_at_7.47.38_pm__1_.gif)
-
-*Note: Some charts such as polar area and pie, don't require the `options` element.*
-
-### Colors
-You have probably noticed that this chart is too boring, we can simply fix this by giving it colors. To do this, we are going to use the elements `backgroundColor:` , `borderColor:` & `borderWidth`. Those elements go inside of the element `datasets`, here's an example:
-```js
-var chart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Lions', 'Pinguines', 'Monkeys', 'Elephants'],
-        datasets: [{
-            label: '# of Animals',
-            data: [7, 17, 15, 10],
-            /* Here we put our elements */
-            backgroundColor: [
-                'rgba(255, 251, 0, 0.2)',
-                'rgba(0, 0, 0, 0.2)',
-                'rgba(250, 0, 0, 0.2)',
-                'rgba(60, 0, 255, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 251, 0, 1)',
-                'rgba(0, 0, 0, 1)',
-                'rgba(250, 0, 0, 1)',
-                'rgba(60, 0, 255, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-```
-Let's break this down:
-- The `backgroundColor:` and `borderColor:` elements set the background and border color for each bar respectively using [rgba colors](https://www.w3schools.com/css/css_colors_rgb.asp).
-- The `borderWidth` element sets the width for the border.
-
-![Cool chart](https://cloud-2flrxsktt.vercel.app/0screen_recording_2020-11-20_at_8.11.26_pm.gif)
-
-### Practical exercise
-Now, i want to challenge you to make a line chart by your own using the following data:
-![Practical Exercise](https://cloud-idj8t53rb.vercel.app/0image.png)
-
-<details><summary>Solution</summary>
+Nice! – Now, the last thing we have to do is to create a function that saves the chart as a png image.
 
 ```js
-var ctx = document.getElementById('chart').getContext('2d');
-
-var chart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ['Chapel School', 'Student Port', 'Reddam House', 'AUK', 'Ad Astra', 'Instenalco'],
-        datasets: [{
-            label: '# of Members',
-            data: [8,4,12,6,15,5],
-            backgroundColor: [
-                'rgba(0, 0, 0, 0.2)'
-            ],
-            borderColor: [
-                'rgba(0, 0, 0, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
+function saveCanvas() {
+    var image = canvas.toDataURL();  
+    var tmpLink = document.createElement( 'a' );  
+    tmpLink.download = 'my_chart.png';
+    tmpLink.href = image;  
+    document.body.appendChild( tmpLink );  
+    tmpLink.click();  
+    document.body.removeChild( tmpLink );  
+}
 ```
+This is what the code above does:
+1. Convert the canvas to a [data url](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs), and store that url in the variable image.
+2. Create an HTML link element using the method `document.createElement()`
+3. Set the download attribute of the link element to `my_chart.png`, this is what the file downloaded gets saved as.
+4. Set the href attribute of the link element to the data url acquired in step 1. This will cause that to be the image that is downloaded when the link is clicked.
+5. Append the link to the end of the page, so that it is part of the website
+6. Automatically trigger a click event on the link with JavaScript
+7. Remove the link from the website, so it's no longer visible
 
-![Result](https://cloud-2gycqani2.vercel.app/0screen_recording_2020-11-20_at_8.31.47_pm.gif)
-
-</details>
+Now, let's try it
+![Demo](https://cloud-9j7oiwmca.vercel.app/0screen_recording_2020-12-29_at_6.17.34_pm.gif)
 
 ## Hack it
 Yes! –you made it to the end of the workshop
@@ -268,3 +271,5 @@ Check out these charts made by other people using ChartJs:
 - [Official Guide](https://chartjs.org/docs)
 - [A zoom and pan plugin for Chart.js](https://github.com/chartjs/chartjs-plugin-zoom)
 - [Awesome Chart Js](https://github.com/chartjs/awesome)
+
+
