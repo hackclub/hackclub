@@ -531,6 +531,7 @@ That a long way we have come; Now let write code for the function ` player_loose
  }
  
  ```
+ </details>
  Now that we have check if the player has a bust or a blackjack, so if both codition are found to be false then we should continue with the game.
  Go back inside ` stat_The_Game() ` function, we should the add an else statemnet that will ask if  the player if the would like to Hit/Bust/stay. for eeach of this codintion we will need to write an function about it : 
  ```C++
@@ -592,7 +593,7 @@ void start_The_Game() {
 }
 
 ```
-<details>
+</details>
 THen let give definition to to the function inside the **definition section**.
  + we will check first if the answer is equal to Hit whcih means PLayer ask for another card to be draw, therefore we must a function that will draw another random number which wil be store inside the variable ` Pl_card_cont ` (player card continues) that store any card that the player will ask for.
 	
