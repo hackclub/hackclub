@@ -509,7 +509,7 @@ now we just asked the player if they would like to restart playing or to quite p
  <details>
     <summary> Check out your progress here</summary>
 	
-	```c++
+```C++
      #include <iostream>
      #include <ctime>
      #include <vector>
@@ -595,9 +595,9 @@ now we just asked the player if they would like to restart playing or to quite p
              getline(cin,answ);
             Continue_Playing();       
             }
-         ```
+  ```
       
-</detailss>
+</details>
 
 That a long way we have come; Now let
 + in the first line we tell the program to display the title of the game which wll be place at the center of the game using spaces.
