@@ -504,7 +504,8 @@ now we just asked the player if they would like to restart playing or to quite p
             Continue_Playing();       
             }
      
-	```
+      ```
+      
 </sections>
 
 That a long way we have come; Now let
