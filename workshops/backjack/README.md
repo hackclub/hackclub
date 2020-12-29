@@ -531,7 +531,9 @@ That a long way we have come; Now let write code for the function ` player_loose
  }
  
  ```
+ 
  </details>
+
  Now that we have check if the player has a bust or a blackjack, so if both codition are found to be false then we should continue with the game.
  Go back inside ` stat_The_Game() ` function, we should the add an else statemnet that will ask if  the player if the would like to Hit/Bust/stay. for eeach of this codintion we will need to write an function about it : 
  ```C++
@@ -605,6 +607,8 @@ THen let give definition to to the function inside the **definition section**.
      }
 	
 ```
+#### Drawing Card for the player continuesly
+
  Now in order to draw a new card we can declare a new fucntion inside **Declaration section** that will perform that task called ` Hit_Player_card() ` function:
  
  ```C++
@@ -650,21 +654,37 @@ finally remember that we a varible that store the number of card for the player,
 
 ```
 <details>
-   <summary> Now you your Hit_player_card() function should look like this : </summary>
+	<summary>  Now you your Hit_player_card() function should look like this : </summary>
 	
-```C++  
-    void Hit_Player_card() {
-        srand(time(0));
-       Pl_card_cont = rand() % 11 + 1;
-       player_card.push_back(Pl_card_cont);
-       Tl_Pl_card += Pl_card_cont;
-       num_of_playerCard++;
-      }		
-      
- ```	
-  
+```c++
+void Hit_Player_card() {
+    srand(time(0));
+    Pl_card_cont = rand() % 11 + 1;
+    player_card.push_back(Pl_card_cont);
+     Tl_Pl_card += Pl_card_cont;
+     num_of_playerCard++;
+}
+```
 </details>
 
+GO back inside the ` check_Hit_Bust_Stay() ` function, then if the player's answer is 1 then we should Draw a card for the player :
+
+```C++
+if (answ == "1") {
+	check_Hit_Bust_Stay();                  /* place it here */
+  }
+
+```
+Then we shiuld tell the Player on what card they have been given which is inside ` Pl_card_cont ` variable :
+```C++
+if (answ == "1") {
+        check_Hit_Bust_Stay();
+     cout << "You have Have been dealt a [" << Pl_card_cont;				/* place it here */
+     cout << "] With have a total of : " << Tl_Pl_card << "\n\n";			/* place it here */
+  }
+  
+```
+Now that the Player has a new card we need to check again if the player 
 + in the first line we tell the program to display the title of the game which wll be place at the center of the game using spaces.
  + what up with the \n at the end and beginning of the string ,well we us hat to tell the program to dislay a new Line before and after the line and so create a new line,there is more than one way to create a new like check it out *[Here]()*.
  + our second line we use the plus sign to create an line betwwen the title and the body of the game.
