@@ -9,11 +9,11 @@ img: https://cloud-4tlcr594m.vercel.app/0expen_e_tracker.png
 
 *Hi everyone! In this workshop, we will walkthrough how to build ***an expense tracker!**** 
 
-The completed project can be found by clicking [here](https://repl.it/@iamsid47/expense-tracker#main.py).
+The completed project can be found by clicking [here](https://repl.it/@iamsid47/expense-tracker-main).
 
-## How it looks?
+## End result
 
-![How it works](https://cloud-giasrdstj.vercel.app/9how_it_works.png)
+![End result](https://cloud-nrw7488qg.vercel.app/0screenshot_2020-12-29_215630.png)
 
 ## Let's Get Started
 
@@ -21,24 +21,24 @@ So, the first thing we need to do is head over to [Repl.it](https://repl.it) and
 
 ![Project Creation](https://cloud-giasrdstj.vercel.app/4expense-tracker.png)
 
-We will use Repl.it's package managers to get our libraries.
+We will use Repl.it's package managers to get our libraries. For this, head over to the *Packages* and search **matplotlib**. Next, click on the add button to add that package to your repl. Do the same for the **datetime** package. We are also required to have **json** library but it's pre-installed so need to get it again.
 
-Next, our data is gonna be stored in `.json` format. Thus, let's create a file named: `expenses.json`. In this file, type in a the list named as **Expenses**. This list will keep on updating as we will be adding entries using our *expense-tracker*. Let's open `main.py` and type some code.
+Now, our data is gonna be stored in `.json` format. Thus, let's create a file named: `expenses.json`. In this file, type in a the list named as **Expenses**. This list will keep on updating as we will be adding entries using our *expense-tracker*. Let's open `main.py` and type some code.
 
 We need to first **import** all the libraries. Thus:
 
 ```python
 import json
 from datetime import datetime
-import pandas
+import matplotlib.pyplot as plt
 ```
 
 Next, we'll define a function named `write_json` and call the `expenses.json` file.
 
 ```python
 def write_json(data, filename='expenses.json'): 
-    with open(filename,'w') as f: 
-        json.dump(data, f, indent=4) 
+with open(filename,'w') as f: 
+json.dump(data, f, indent=4) 
 ```
 
 Now when the user gives in some input, we need to capture it and store this into the `expenses.json` file which we just created. Also, there should be something displayed when we run our program. So let's print something as well!
@@ -55,15 +55,39 @@ Let's add some `choice` then. And later on, some *conditionals* as well. Also, w
 ```python
 choice = input("To input a purchase, press Y, To view all Expenses, Press V, else press E to exit: ").upper()
 ```
-Now here, we add some `if` statements aka conditionals. So, when the user presses **V** we show him the expenses by calling the `expenses.json` file and showing it's content. 
+Now here, we add some `if` statements aka conditionals. So, when the user presses **V** we show him the expenses by calling the `expenses.json` file and showing it's content. We also want to generate a graph of our total expenditure, and that's the reason to install the **matplotlib** library. 
 
 ```python
 if choice == "V":
-        with open("expenses.json") as f:
-            data = json.load(f)
-            temp = data["Expenses"]
-            print(pandas.json_normalize(temp))
+with open("expenses.json") as f:
+for i in temp:
+for key,value in i.items():
+if (key == "Your Purchase"):
+prod.append(value)
+if (key == "Price"):
+exp = exp + value
+p.append(value)
+plt.pie(p, labels=p, wedgeprops={'edgecolor': 'black'})
+plt.title("Total Expenditure in Rs.")
+plt.legend(title="Your Expenses",labels=prod, loc='upper center', bbox_to_anchor=(0.5, 0.05),fancybox=True, shadow=True, ncol=5)
+plt.show()
 ```
+
+To get the total for out expenditure, we create a conditional and make it as *choice* **T**. Inside this, we call the json data which will be store and load it onto a variable named *data*. We again create a varialble named **temp** and call just the **Expenses** from the **data** variable which currently contains all the data from the json file. Next, we create a formula to calculate the total expenses.
+
+```python
+if choice == "T":
+Expenditure = 0
+with open("expenses.json") as f:
+data = json.load(f)
+temp = data["Expenses"]
+for i in data["Expenses"]:
+for key,value in i.items():
+if (key == "Price"):
+Expenditure = Expenditure + value
+print("Your Total Expenditure is ",Expenditure)
+```
+
 Next comes the main thing. We create a `while` loop for the user so that he can add multiple purchases and then exit whenever he wants. So first we create a loop and then if the user presses **"Y"**, we take 3 inputs.
     1. The purchase
     2. The price
@@ -71,9 +95,9 @@ Next comes the main thing. We create a `while` loop for the user so that he can 
 
 ```python
 while (choice == "Y"):
-    purchase = str(input("Purchase Name:  "))
-    price = int(input("Price:  "))
-    time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+purchase = str(input("Purchase Name:  "))
+price = int(input("Price:  "))
+time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 ```
 
 Here, we want the `Purchase` input to be a string and the `Price` input to be an integer. Thus, we define our inputs accordingly. It won't be awesome if we asked the user to input the date and time. Thus, we use our **`datetime`** library to capture the date.
@@ -81,42 +105,66 @@ Here, we want the `Purchase` input to be a string and the `Price` input to be an
 Now we need to send these inputs to the `.json` file. Append in the expenses and again provide a choice to continue the loop. Thus:
 
 ```python
-    dic["Your Purchase"] = purchase
-    dic["Price"] = price
-    dic["Time"] = time
-    expdic["Expenses"].append(dic)
-    choice = input("To input another purchase, press Y, To view all Expenses, Press V, else press E to exit: ").upper()
+dic["Your Purchase"] = purchase
+dic["Price"] = price
+dic["Time"] = time
+expdic["Expenses"].append(dic)
+with open("expenses.json") as f:
+data = json.load(f)
+temp = data["Expenses"]
+temp.append(dic)
+write_json(data)
+choice = input("To input another purchase, press Y, To view all Expenses, Press V, To check total Expenditure, press T, else press E to exit: ").upper()
 ```
 
 Here again, we use `upper` to get the input in uppercase. Now, if the user chooses exit (that is, press E) our program will most probably crash as we haven't made a condition for that. Thus, let's make one!
 
 ```python
 if choice == "E":
-        with open("expenses.json") as f:
-            data = json.load(f)
-            temp = data["Expenses"]
-            temp.append(dic)
-            write_json(data)
-        print("Bye, See you again")
-        break
+print("Bye, See you again")
+break
+```
+Next, here we again add in the **choice: V** so that the user can again see the expenses (especially the newly added expenses).
+
+```python
+if choice == "V":
+with open("expenses.json") as f:
+exp = 0
+p = []
+prod = []
+data = json.load(f)
+temp = data["Expenses"]
+for i in temp:
+for key,value in i.items():
+if (key == "Your Purchase"):
+prod.append(value)
+if (key == "Price"):
+exp = exp + value
+p.append(value)
+plt.pie(p, labels=p, wedgeprops={'edgecolor': 'black'})
+plt.title("Total Expenditure in Rs.")
+plt.legend(title="Your Expenses",labels=prod, loc='upper center', bbox_to_anchor=(0.5, 0.05),fancybox=True, shadow=True, ncol=5)
+plt.show()
+break
 ```
 
 Now, if the user presses **E**, the data he entered get's stored into the `.json` file and we print a message as a sort of exit message: **Bye, See you again**. This will then break the while loop and the program exits.
 
-Next, we also need to create a condition for if the user chooses to view his expenses (that is if he presses V). So, let's create a condition for this as well.
+Next, we also need to create a condition for if the user chooses to view his total expenses again.
 
 ```python
-    if choice == "V":
-        with open("expenses.json") as f:
-            data = json.load(f)
-            temp = data["Expenses"]
-            temp.append(dic)
-            write_json(data)
-            print(pandas.json_normalize(temp))
-        break
+if choice == "T":
+with open("expenses.json") as f:
+data = json.load(f)
+temp = data["Expenses"]
+for i in data["Expenses"]:
+for key,value in i.items():
+if (key == "Price"):
+Expenditure = Expenditure + value
+print("Your Total Expenditure is ",Expenditure)
 ```
 
-Here, we if the user presses **V**, we retrieve the the data from `expenses.json`; show it to the user whilst breaking the while loop and exiting the program.
+Here, we if the user presses **T**, we again retrieve the the data from `expenses.json`; and again show it to the user.
 
 ## Voila!
 
