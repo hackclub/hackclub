@@ -78,17 +78,18 @@ The definition section is where, we give definiton/purporse to the funtion, here
  
  Now that you have Everything set, let start some hack ***
  
- ## second Step
+ ## Second Step
  
- Now inside the Declaration section, Declare a string variable `player1` which will be used to stored the first player name: 
+ Now inside the **Declaration section**, Declare a string variable `player1` which will be used to stored the first player's name: 
  ```c++
   /* Declaration section: This will be used to Declare variables and Function */ 
 
-  void start_The_Game();                   /* Declare start_The_Game function */
-int Pl_card1, Pl_card2, Pl_card_cont;      /* used to stored the Card number for the player*/
-int Dl_card1, Dl_card2, Dl_card_cont;      /* used to stored the Card number for the Daler*/
-int Tl_Pl_card,Tl_Dl_card;                 /*Use to store the total number of card or player and dealer*/
-string player1;
+  void start_The_Game();                  
+int Pl_card1, Pl_card2, Pl_card_cont;     
+int Dl_card1, Dl_card2, Dl_card_cont;      
+int Tl_Pl_card,Tl_Dl_card;                 
+string player1;          		/* place it here */
+
  ```
  Now let inside the main function we have ask the user for their name, now let take their name using `getline()` function wich will take the wholw line from the user, because the player might give their surname too, so we want the full sentences.
 
@@ -110,7 +111,7 @@ Under getline() function call ` start_The_Game() ` function so the game can star
    cout << "\n++++++++++++++++++++++++++++++++\n";                
    cout << "\n Welcome to the game.\n Enter your Name: \n";      
    getline(cin,player1);
-   start_The_Game();                      /* place it here */
+   start_The_Game();                                       /* place it here */
 }
 ```
 Let now work inside the `star_The_Game()` function, inside this function, let display again the intoduction of the game but this time including the player's name :
@@ -172,13 +173,14 @@ Inside the ~Declaration Section~ under the `start_The_Game()` function declare `
 //decalrioj
 void Hit_card1();
 ```
-We then going to give definition to this function under the ~definition section~. Inside the `Hit_Card1()` fiunction we will use a special function that will help us generate random number, which is will use the `<time>` library, that use the time of the program, to get random number. :
+We then going to give definition to this function under the ~definition section~. Inside the ` Hit_Card1() ` fiunction we will use a special function that will help us generate random number, which use the ` <time> ` library, called ` srand() ` function, to get random number :
 ```C++
 void Hit_card1() {
  srand(time(0));          /* place it here */
  
  }
 ```
+For more about how the function of srand function check out it [here]()
 Under that line we will then draw drandom number for the first and sececond card for the player that will be betttwen 11 and 1, so call out the variable that store the frist and second card number whcih is ` Pl_card1 ` and ` Pl_card2 `: 
 ```c++ 
 srand(time(0));
@@ -413,99 +415,7 @@ now we just asked the player if they would like to restart playing or to quite p
 
  ```
  Well done, let see your progress so far because we seem to be going from one function to the other while not finiishing other function :
- <details> 
- <summary> This is how your code shoud look so far: </summary>
-	
-  ```C++
-      #include <iostream>
-     #include <ctime>
-     #include <vector>
-     using namespace std;
-          void start_The_Game();  
-          void Hit_card1();
-	  void Display_Card(vector<int>list_of_card);
-	  void Hit_Bust_check();
-	  void player_win();
-	  void Player_Loose(); 
-     int Pl_card1, Pl_card2, Pl_card3;     
-     int Dl_card1, Dl_card2, Dl_card3;     
-     int Tl_Pl_card,Tl_Dl_card;  
-     string player1; 
-     vector<int> player_card;
-     vector<int> dealer_card;
-      string answ;  
-     int  main()  {    /*Introduction to the game */
-         cout << "\n           Blackjack Game      \n";
-         cout << "\n++++++++++++++++++++++++++++++++\n";   
-         cout << "\n Welcome to the game.\n Enter your player Name: \n";
-         getline(cin,player1);   
-		 start_The_Game();
-       }
-     void start_The_Game(){
-        cout << "\n           Blackjack Game      \n";
-        cout << "\n++++++++++++++++++++++++++++++++\n";
-        cout << "\n Welcome to the game.\n";
-        cout << "\n Player of this round is: " << player1 << "\n\n"; //new start
-        cout << "Please click enter to shuffle the cards \n";
-         cin.get();  
-            Hit_card1();                        
-        cout << player1 << ",You have been Dealt with [ " ;
-               Display_Card(player_card);
-        cout << "] With have a total of : " << Tl_Pl_card << " \n\n";
-        cout << "The Dealer is Showing a " << Dl_card1 << " \n\n";
-
-         if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
-               Hit_Bust_check();
-              }
  
-      }
-     void Hit_card1() {
-      srand(time(0));
-      Pl_card1 = rand() % 11 + 1;         
-      Pl_card2 = rand()  % 11 + 1;  
-      player_card = {Pl_card1,Pl_card2};
-      Tl_Pl_card = Pl_card1 + Pl_card2;
-      Dl_card1 = (rand() % 11) + 1;
-      Dl_card2 = (rand()  % 11) + 1;
-      Dl_card_cont = rand() % 11 + 1;
-      dealer_card = {Dl_card1,Dl_card2};
-      Tl_Dl_card = Dl_card1 + Dl_card2 ;
-  
-      num_of_playerCard = 2;
-    }
-    void  Display_Card(vector<int>list_of_card) { 
-     for (int i = 0; i < list_of_card.size(); i++) {
-      cout << list_of_card[i] << " ";
-          }
-     }
-     void  Hit_Bust_check() {  
-      if (Tl_Pl_card == 21 || Tl_Dl_card > 21) {
-            player_win();
-        } else if (Tl_Dl_card == 21 || Tl_Pl_card > 21 )  {
-                Player_Loose();
-         } else if (Tl_Pl_card > Tl_Dl_card) {
-              player_win();
-          } else {
-              Player_Loose();
-           } 
-	 }
-       void player_win(){
-           cout << "The Player hand : ";
-                 Display_Card(player_card);
-           cout << " with a total of : " << Tl_Pl_card << "\n\n";
-                
-           cout <<"Dealer Hand : " ;
-               Display_Card(dealer_card);
-           cout << " with a total of : " << Tl_Dl_card << "\n\n";
-           cout << player1 << " Win🔺 Congrats!! \n\n";
-           cout  << "Would you like '1' Continue  or '2' Quit PLAYING\n";
-             getline(cin,answ);
-            Continue_Playing();       
-     }
-   ```
-	
-</details>
-
  <details>
     <summary> Check out your progress here</summary>
 	
@@ -594,12 +504,166 @@ now we just asked the player if they would like to restart playing or to quite p
            cout  << "Would you like '1' Continue  or '2' Quit PLAYING\n";
              getline(cin,answ);
             Continue_Playing();       
-            }
+          }
   ```
       
 </details>
 
-That a long way we have come; Now let
+That a long way we have come; Now let write code for the function ` player_loose ` when the player loose :
+  + first we will display the player card with total player card and the dealer card with total dealer card
+  + The write out that the player has loose the game while the winner win the game
+  + then ask the player if the would like to restart or quit the game; remember to store the answer inside the ` answ ` variable 
+  + Lastly call out Continue_playing function to check if the player would like to restart or quit the game.
+ THen your code should look similar to this
+ ```C++ 
+ void Player_Loose(){
+      cout << "The Player hand : " ;
+      Display_Card(player_card);
+      cout << " with a total of : " << Tl_Pl_card << "\n\n";
+      
+      cout <<"Dealer Hand : "; 
+      Display_Card(dealer_card);
+      cout << " with a total of : " << Tl_Dl_card << "\n\n";
+       cout << "The Dealer Win!!🔺 " << player1 << " Looses🔻 \n\n";  
+      cout  << "Would you like '1' Restart  or '2' Quit PLAYING\n";
+      getline(cin,answ);
+      Continue_Playing();
+ }
+ 
+ ```
+ Now that we have check if the player has a bust or a blackjack, so if both codition are found to be false then we should continue with the game.
+ Go back inside ` stat_The_Game() ` function, we should the add an else statemnet that will ask if  the player if the would like to Hit/Bust/stay. for eeach of this codintion we will need to write an function about it : 
+ ```C++
+ if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
+       Hit_Bust_check();
+     } else {                                   /* place it here */
+            cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
+	    
+     }
+```
+Now we ask we ask the user for input we will use getline function and store the answer inside the answ variable: 
+```C++
+else {                                  
+            cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
+	   getline(cin, answ)                                                /* place it here */
+	   
+     }
+```
+we will then declare a function inside the **Declaration section** that will check if the player choose 1 for Hit, 2 for Bust and 3 for stay called  ` check_Hit_Bust_Stay() ` function :
+```C++
+/* Declaration section: This will be used to Declare variables and Function */ 
+
+  void check_Hit_Bust_Stay();             			/* place it here */
+
+```
+we then going to call this function inside the else statement of the ` start_The_Game() ` function :
+```C++
+else {                                  
+            cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
+	   getline(cin, answ)                                                
+	   check_Hit_Bust_Stay();                                        /* place it here */
+     }
+   
+```
+<details>
+ <summary>Now we done with star_The_Game() function check out your code and compare to mine here</summary
+	 
+```C++
+void start_The_Game() {
+    cout << "\n           Blackjack Game      \n";
+    cout << "\n++++++++++++++++++++++++++++++++\n";
+    cout << "\n Welcome to the game.\n";
+    cout << "\n Player of this round is: " << player1 << "\n\n"; //new start
+    cout << "Please click enter to shuffle the cards \n";
+       cin.get();            
+        Hit_card1();                         // draw  card for the dealer and the player 
+    cout << player1 << ",You have been Dealt with [ " ;
+        Display_Card(player_card);
+    cout << "] With have a total of : " << Tl_Pl_card << " \n\n";
+    cout << "The Dealer is Showing a " << Dl_card1 << " \n\n";
+
+    if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
+        Hit_Bust_check();
+      } else {
+            cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
+            getline(cin, answ);
+            check_Hit_Bust_Stay();
+     }
+}
+
+```
+<details>
+THen let give definition to to the function inside the **definition section**.
+ + we will check first if the answer is equal to Hit whcih means PLayer ask for another card to be draw, therefore we must a function that will draw another random number which wil be store inside the variable ` Pl_card_cont ` (player card continues) that store any card that the player will ask for.
+	
+```C++
+ void check_Hit_Bust_Stay(){
+   if (answ == "1") {
+	
+	}
+     }
+	
+```
+ Now in order to draw a new card we can declare a new fucntion inside **Declaration section** that will perform that task called ` Hit_Player_card() ` function:
+ 
+ ```C++
+ /* Declaration section: This will be used to Declare variables and Function */ 
+void Hit_Player_card();                                         /* place it here */
+
+ ```
+ we then should give definition to this function inside **Definition Section** .
+ we will start of by calling the special function from ` <time> ` library called ` srand() ` function :
+ ```C++
+  void Hit_Player_card() {
+     srand(time(0));                       /* place it here */
+  }
+ ```
+ Now we will call the player card continue as we want to draw a card for the player and give it value of random number between 11 and 1 : 
+ ```C++
+   srand(time(0));    
+   Pl_card_cont = rand() 11 % 1;
+   
+ ```
+ Now we got to add this card inside the list of card for the player, to do that we use a special object use to add an elemt inside an vector called ` .push_back() ` including the element you want to add : 
+ 
+ ```C++
+ Pl_card_cont = rand() 11 % 1;
+ player_card.push_back(Pl_card_cont);				/* place it here */
+ 
+ ```
+ What push back object does it add the elemt at the end of the list inside the vector. you wnat to learn more method to add element inside an vector check it out here ****
+ 
+ now we also need to add this number inside the player card totals, to do that we will say ` Tl_Pl_card ` plus equal to ` Pl_card_cont ` this will automaticaly add it to the total :
+ 
+ ```C++
+  player_card.push_back(Pl_card_cont);
+ Tl_Pl_card += Pl_card_cont;						/* place it here */
+ 
+ ```
+ 
+finally remember that we a varible that store the number of card for the player, so we let increment that number by 1
+
+```C++
+ Tl_Pl_card += Pl_card_cont;	
+ num_of_playerCard++;        						/* place it here */
+
+```
+<details>
+   <summary> Now you your Hit_player_card() function should look like this : </summary>
+	
+```C++  
+    void Hit_Player_card() {
+        srand(time(0));
+       Pl_card_cont = rand() % 11 + 1;
+       player_card.push_back(Pl_card_cont);
+       Tl_Pl_card += Pl_card_cont;
+       num_of_playerCard++;
+      }		
+      
+ ```	
+  
+</details>
+
 + in the first line we tell the program to display the title of the game which wll be place at the center of the game using spaces.
  + what up with the \n at the end and beginning of the string ,well we us hat to tell the program to dislay a new Line before and after the line and so create a new line,there is more than one way to create a new like check it out *[Here]()*.
  + our second line we use the plus sign to create an line betwwen the title and the body of the game.
