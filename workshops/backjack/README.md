@@ -675,7 +675,7 @@ if (answ == "1") {
   }
 
 ```
-Then we shiuld tell the Player on what card they have been given which is inside ` Pl_card_cont ` variable :
+Then we shiuld tell the Player  what card they have been given,that is store inside ` Pl_card_cont ` variable :
 ```C++
 if (answ == "1") {
         check_Hit_Bust_Stay();
@@ -684,7 +684,200 @@ if (answ == "1") {
   }
   
 ```
-Now that the Player has a new card we need to check again if the player 
+
+Now that the Player has a new card we need to check again if the player card total is bigger or equal to 21 or the dealer's card total is bigger or equal to 21.
+
+```c++
+cout << "] With have a total of : " << Tl_Pl_card << "\n\n";
+   if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21){				/* place it here */
+   
+   }
+```
+then if one of the total meet this condition we should call ` Hit_Bust_check ` function which check if the player has won or loose.
+```C++
+ if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21){				
+       Hit_Bust_check();                       			/* place it here */
+   }
+
+Now that when is that condition is not meet, we should then agin ask the player if they would like to Hit/Bust/Stay, then get the line from the user and stor it inside the answer variable ` answ ` while again you call this same function ` Hit_Bust_Stay() ` which will verify the answer from the player:
+
+```C++
+if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
+        Hit_Bust_check();
+     } else {										/* place it here */
+     cout << "would you like to '1' Hit or '2' bust or '3' stay\n";                 	/* place it here */
+     getline(cin, answ);								/* place it here */
+     check_Hit_Bust_Stay();								/* place it here */
+     }
+Let say for example the player choose 2 Bust then player is saying that they are done taking more card and would like to check with the dealer card if who has won, there for we wil call the function ` Hit_Bust_check() ` :
+```C++
+if (answ == "1"){
+     Hit_Player_card();        
+     cout << "You have Have been dealt a [" << Pl_card_cont;
+     cout << "] With have a total of : " << Tl_Pl_card << "\n\n";
+     
+     if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
+        Hit_Bust_check();
+     } else {
+     cout << "would you like to '1' Hit or '2' bust or '3' stay\n";
+     getline(cin, answ);
+     check_Hit_Bust_Stay();
+     }
+   } else if (answ == "2") {								/* place it here */
+        Hit_Bust_check();								/* place it here */
+   }
+   
+``` 
+
+#### GIving Definition to PLayer_Stay function
+
+what if the player say Stay, which means the player is done taking more card and rather as the dealer to take card up until the dealer's card is bigger than 16 :
+
+  If you get confuse where we got this rule, check out the [Video]() that explain the rule of this  game in order to understand the game better.
+  Now as I say before we will need to create an function that perform the task when the player say stay, this function we can simply call it ` Player_Stay() `        function :
+     ```C++
+     /* Declaration section: This will be used to Declare variables and Function */ 
+     void Player_Stay();
+     ```
+NOw let give definiton, first what would the FUnction stay do :
+ + As the [video](https://youtu.be/eyoh-Ku9TCI) explain it, when the dealer pull back his card or say stay, the dealer should new card while the delaer total is less than 16.
++ now when the dealer card total is bigger than 16,  we should then check if the dealer as a bust thne the player will win
++ if the dealer does not have a bust, then we will check if the player card is bigger than the dealer's card and smaller than 21 then the player win
++ else the player loose and the dealer win
+```C++
+void Player_Stay() {
+   while (Tl_Dl_card < 16) {
+      
+   }
+   
+```
+Now we need to create a function that Give the dealer a new card similar ` Hit_player_card ` function which give a new card to the player. This function we will instead call it ` Hit_Dealer_card() ` :
+
+```C++
+/* Declaration section: This will be used to Declare variables and Function */ 
+void Hit_Dealer_card();
+```
+we will then give a definition similear to  ` Hit_Player_card() ` function, 
+```C++ 
+void Hit_Dealer_card() {
+    srand(time(0));
+    Dl_card_cont = rand() % 11 + 1;
+    dealer_card.push_back(Dl_card_cont);
+     Tl_Dl_card += Dl_card_cont;
+ }
+ 
+
+```
+For reference if you can't remember ` Hit_Player_card() ` or ` Hit_Dealer_card() ` does : 
+
+
+
++ Now that we done that we need to call out Hit_Dealer card inside ` Player_Stay() ` function when while loop is running :
+```C++
+void Player_Stay() {
+   while (Tl_Dl_card < 16) {
+      Hit_Dealer_card(); 				/* place it here */
+   }
+ }
+```
+ + let write an if staement that check if the total dealer card is bigger than 21 then it a bust for the dealer and the play win :
+```C++
+while (Tl_Dl_card < 16) {
+      Hit_Dealer_card(); 				
+   }
+    if ( Tl_Dl_card > 21) {				/* place it here */
+        player_win();
+   }
+```
+ + So if the dealer card is not a bust then if the player card is bigger than the dealer card and the player card is smaller than 21 then the player win
+```C++
+   if ( Tl_Dl_card > 21) {
+        player_win();
+   } else if (Tl_Pl_card > Tl_Dl_card && Tl_Pl_card <= 21) {						
+        player_win();								/* place it here */
+   }
+
+```
+
+Now if now none of the codition are meet, then the player loose, so we call ` player_loose() ` function :
+
+```C++
+else if (Tl_Pl_card > Tl_Dl_card && Tl_Pl_card <= 21) {
+        player_win();
+   } else {
+      player_loose()
+   }
+```
+<details>
+<summary>finally you final code for the function Hit_Dealer_Card() would look like this : </summary>
+	
+ ```C++
+ void Player_Stay() {
+   while (Tl_Dl_card < 16) {
+      Hit_Dealer_card();
+   }
+   if ( Tl_Dl_card > 21) {
+        player_win();
+   } else if (Tl_Pl_card > Tl_Dl_card && Tl_Pl_card <= 21){
+        player_win();
+   }  else {
+       player_loose();
+   }
+}
+```
+ 
+</details>
+
+Let go back to to the function ` check_Hit_Bust_Stay() ` function and write the last else staement that call out Player_stay() function.
+
+```C++
+ if (answ == "1"){
+     Hit_Player_card();         //draw the player car
+     cout << "You have Have been dealt a [" << Pl_card_cont;
+     cout << "] With have a total of : " << Tl_Pl_card << "\n\n";
+     
+     if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
+        Hit_Bust_check();
+     } else {
+     cout << "would you like to '1' Hit or '2' bust or '3' stay\n";
+     getline(cin, answ);
+     check_Hit_Bust_Stay();
+     }
+   } else if (answ == "2") {
+        Hit_Bust_check();
+   } else {
+     Player_Stay();						/* place it here */
+   }
+```
+<details>
+<summary>Well done!!! with have just finnished with the function ` check_Hit_Bust_Stay() ` , now let see what we have</summary>
+	
+```C++
+void check_Hit_Bust_Stay(){
+   if (answ == "1"){
+     Hit_Player_card();         //draw the player car
+     cout << "You have Have been dealt a [" << Pl_card_cont;
+     cout << "] With have a total of : " << Tl_Pl_card << "\n\n";
+     
+     if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
+        Hit_Bust_check();
+     } else {
+     cout << "would you like to '1' Hit or '2' bust or '3' stay\n";
+     getline(cin, answ);
+       Check_Player_3card();
+     check_Hit_Bust_Stay();
+     }
+   } else if (answ == "2") {
+        Hit_Bust_check();
+   } else {
+     Player_Stay();
+   }
+}
+```
+
+</details>
+
+
 + in the first line we tell the program to display the title of the game which wll be place at the center of the game using spaces.
  + what up with the \n at the end and beginning of the string ,well we us hat to tell the program to dislay a new Line before and after the line and so create a new line,there is more than one way to create a new like check it out *[Here]()*.
  + our second line we use the plus sign to create an line betwwen the title and the body of the game.
