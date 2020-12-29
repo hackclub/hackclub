@@ -99,8 +99,8 @@ Lastly, run the hacking section for students and do a demo for them. Be prepared
 
 Here are some samples:
 
-- [Spam Kahoot with loads of new users](https://repl.it/@sampoder/spam-kahoooot)
-- [Send the Rick Roll lyrics to Kahoot](https://repl.it/@sampoder/rickroll-kahoot)
-- [A Custom Kahoot CLI](https://repl.it/@sampoder/kahoot-custom-client)
+- [Spam Kahoot with loads of new users](https://repl.it/@sampoder/spam-kahoooot), it repeats the join command 100 times or up until we get rate limited by Kahoot.
+- [Send the Rick Roll lyrics to Kahoot](https://repl.it/@sampoder/rickroll-kahoot), it has a string of the song lyric and then splits that into an array and then loops over that array and joins with the username being a song lyric line.
+- [A Custom Kahoot CLI](https://repl.it/@sampoder/kahoot-custom-client), when a new question comes in it presents the choice and then takes in user input for the answer.
 
 Hope you enjoyed! Message me (@sampoder) on Slack if you need help / have feedback :D
