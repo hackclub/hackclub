@@ -415,10 +415,10 @@ now we just asked the player if they would like to restart playing or to quite p
  Well done, let see your progress so far because we seem to be going from one function to the other while not finiishing other function :
  
  <sections>
-	<summary> Ceck out your progress here</summary>
+    <summary> Ceck out your progress here</summary>
 	
 	```c++
-	 #include <iostream>
+     #include <iostream>
      #include <ctime>
      #include <vector>
      using namespace std;
@@ -503,8 +503,7 @@ now we just asked the player if they would like to restart playing or to quite p
              getline(cin,answ);
             Continue_Playing();       
             }
-     
-      ```
+         ```
       
 </sections>
 
