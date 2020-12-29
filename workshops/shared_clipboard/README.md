@@ -40,7 +40,7 @@ You need:
 (Psst! You can run this to install Go if you have [Homebrew](https://brew.sh/) installed: `brew install go`)
 
 macOS already has clipboard utilities pre-installed! Try copying something (Here's some text: Hello, world!) and then running:
-```sh
+```shell
 pbpaste
 ```
 macOS has `pbcopy` for setting the clipboard
@@ -65,7 +65,7 @@ Play around with the commands you installed!
 ### Setup on Android
 Install the Termux app and Termux:API app from the Play Store. Then, install the Termux:API package from the command line (in Termux) using:
 
-```sh
+```shell
 pkg install termux-api
 ```
 
@@ -155,7 +155,7 @@ func main() {
 This should be very readable. A quirk of Go is that `os.Args` has the path to the binary as the first argument. This means that the first actual argument has the index 1 and not 0. When we do `len(os.Args)`, we're actually counting 1 extra. This means that `len(os.Args) > 3` will be true if there's more than 2 arguments.
 
 To refresh your memory, an argument here is all the stuff you type after the command name:
-```sh
+```shell
 ls myDir someFile lol
 ```
 In this example, `myDir`, `someFile` and `lol` are the arguments to `ls`
@@ -637,14 +637,14 @@ We wait for the command to complete its job and we close the writer and we're on
 
 Save your code!
 Now let's see if it works:
-```sh
+```shell
 go build myclip.go
 ./myclip --help
 ```
 The help info should help you run and test it. You can also edit the help info by changing the variables!
 
 Try out:
-```sh
+```shell
 ./myclip --debug
 ```
 and follow the instructions it gives you.
@@ -652,12 +652,12 @@ and follow the instructions it gives you.
 Because this is a CLI, it is recommended to include a version option.
 
 Try out:
-```sh
+```shell
 ./myclip --version
 ```
 
 Check if the short forms work:
-```sh
+```shell
 ./myclip -v
 ```
 
