@@ -59,7 +59,7 @@ repl with the following code:
 const Kahoot = require("kahoot.js-updated"); 
 const client = new Kahoot();
 
-client.join(000000, Math.random() + "- Your Name");
+client.join('000000', Math.random() + "- Your Name");
 
 function verifyProperty(array, property) {
   let finalNo
