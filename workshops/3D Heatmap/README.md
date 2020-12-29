@@ -6,7 +6,7 @@ image: '![3D Heat Map](https://cloud-a08hob7s0.vercel.app/0workshop1.gif)'
 ---
 
 
-# 3D Heat Map
+# Volcano Heat Map
 
 ![Demo](https://cloud-94iqxy8lo.vercel.app/0volcano.gif)
 
