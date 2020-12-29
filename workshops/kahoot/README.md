@@ -97,4 +97,10 @@ Have students write this code for themselves and then run a demo by providing yo
 
 Lastly, run the hacking section for students and do a demo for them. Be prepared to support the students.
 
+Here are some samples:
+
+- [Spam Kahoot with loads of new users](https://repl.it/@sampoder/spam-kahoooot)
+- [Send the Rick Roll lyrics to Kahoot](https://repl.it/@sampoder/rickroll-kahoot)
+- [A Custom Kahoot CLI](https://repl.it/@sampoder/kahoot-custom-client)
+
 Hope you enjoyed! Message me (@sampoder) on Slack if you need help / have feedback :D
