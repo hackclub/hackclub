@@ -2,7 +2,7 @@
 name: Speech Recognition
 description: Create a speech recognition app
 author: '@wollygfx'
-img: ''
+img: 'https://cloud-ekrhqwq4i.vercel.app/0image.png'
 ---
 
 In this workshop you'll learn how to make a speech recognition app that you will be able to make under minutes, follow along with me and see how easy it is!
@@ -10,6 +10,8 @@ In this workshop you'll learn how to make a speech recognition app that you will
 Here is the [live demo](https://speech-recognition-app.wollygfx.repl.co) and the [source code](https://repl.it/@wollygfx/Speech-recognition-app) of what we are making:
 
 ![Speech recognition app](https://cloud-ekrhqwq4i.vercel.app/0image.png)
+
+*Note: This workshop only works for Google chrome at the moment.*
 
 ##  Set-up
 
@@ -44,7 +46,7 @@ The first thing we need to do, is to create a `div` container with the class `ma
 - The `<script>` element is linking our JavaScript file with our HTML document.   
 
 This is the result of the code above:
-![HTML](https://cloud-gxt0cik6l.vercel.app/0image.png)
+![HTML](https://cloud-hz3x1xvwh.vercel.app/0image.png)
 
 Nice!– This is all we need in our HTML document, so let's move on to CSS.
 
@@ -107,7 +109,7 @@ Finally, this is how our website looks like:
 
 ## JavaScript
 
-First, we'll need to take the buttons from our HTML document and then assign them some variables:
+First, we'll need to take the buttons from our HTML document and then assign them to the following variables:
 ```js
 const btnStartRecord = document.getElementById('btnStartRecord');
 const btnStopRecord = document.getElementById('btnStopRecord');
@@ -203,7 +205,7 @@ Let's break this down:
 
 ## Hack it
 Yay! you made it to the end of this workshop. I know this was a pretty simple workshop, but you can still make pretty complex stuff... Let me give you some ideas:
-- Use [if statatments](https://www.w3schools.com/js/js_if_else.asp) to do certaing thing when the speech recognition app returns text.
+- Use [if statatements](https://www.w3schools.com/js/js_if_else.asp) to do certaing thing when the speech recognition app returns text.
 - Create an app that play, stop and skip songs.
 - Style your app to make it look cool.
 
