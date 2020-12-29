@@ -190,8 +190,8 @@ Pl_card2 =                   /* place it here */
 we will then call the random function using ` rand() ` and instruct it to find the number bettween 11 and 1 using ` % ` (percentage sign) as to show between 11 and 1 : 
 ```c++ 
 srand(time(0));
-Pl_card1 = 11 % 1;           /* place it here */
-Pl_card2 = 11 % 1;           /* place it here */
+Pl_card1 = rand() 11 % 1;           /* place it here */
+Pl_card2 = rand() 11 % 1;           /* place it here */
 ```
 We no have a Random number stored inside the card 1 and 2, now that we have that we need to keep both number inside a vector which is very simalar to a array. so to do that, let declare a vector that store these integer under the **declaration section** and indetify it as ` player_card `  : 
 ```c++
@@ -208,8 +208,8 @@ Now let go back inside the ` Hit_card1() ` function,let take a copy of random ca
 ```c++ 
 void Hit_card1(){
 srand(time(0));
-Pl_card1 = 11 % 1;
-Pl_card2 = 11 % 1;
+Pl_card1 = rand() 11 % 1;
+Pl_card2 = rand() 11 % 1;
 player_card = {Pl_card1,Pl_card2};        /* place it here */
 }
 ```
@@ -217,8 +217,8 @@ Here the number from the variable ` Pl_card1 ` and ` Pl_card2 ` will be store as
 we then going to get the total player card(` Tl_Pl_card `  by adding ` Pl_card1 ` to ` Pl_card2 ` :
 ```c++ 
 srand(time(0));
-Pl_card1 = 11 % 1;
-Pl_card2 = 11 % 1;
+Pl_card1 = rand() 11 % 1;
+Pl_card2 = rand() 11 % 1;
 player_card = {Pl_card1,Pl_card2};
 Tl_Pl_card = Pl_card1 + Pl_card2;          /* place it here */
 
@@ -226,13 +226,15 @@ Tl_Pl_card = Pl_card1 + Pl_card2;          /* place it here */
 Now we done drawing the card for the player, so let do the same for the dealer:
  + call ` Dl_card1 ` equal to random number between 11 and 1
  + call ` Dl_card2 ` equal to random number between 11 and 1
+ + call ` Dl_card_cont ` equal to random number between 11 and 1( we will need this card at the of the workshop)
  + store the copy of ` Dl_card1 ` 1 and ` Dl_card2 ` inside the vector ` dealer_card ` respectively using bracket 
  + get the total card for the dealer using the dealer card (` Dl_card1 ` and ` Dl_card2 `) and store it inside ` Tl_Dl_card ` 
 this should look like this :
 ```c++
 Tl_Pl_card = Pl_card1 + Pl_card2;
-Dl_card1 = 11 % 1;                    /* place it here */
-Dl_card2 = 11 % 1;                    /* place it here */
+Dl_card1 = rand() 11 % 1;                    /* place it here */
+Dl_card2 = rand() 11 % 1;                    /* place it here */
+Dl_card_cont = rand() 11 % 1;
 dealer_card = {Dl_card1,Dl_card2};    /* place it here */
 Tl_Dl_card = Dl_card1 + Dl_card2;     /* place it here */
 
@@ -275,7 +277,7 @@ void  Display_Card(vector<int>list_of_card){
     }
  }
 ```
-In the for loop , we first initialize integer i to be equal to 0,this means it will start on the first index inside the vectorwhich is at position 0, then while i is still smaller than the size(number of element) inside the list of card the integer i will kep increasing while we display the elmet at index(position) i plus a space after each element.
+In the for loop , we first initialize integer i to be equal to 0,this means it will start on the first index inside the vectorwhich is at position 0, then while  is still smaller than the size(number of element) inside the list of card the integer i will kep increasing while we display the elmet at index(position) i plus a space after each element.
 
 Now that we have a definition, let go back inside the ` start_The_Game() ` function where we left, on a new line after our last line, we will call ` Display_Card ` function with the parameter ` player_card ` which is where the player's list of card numbers is stored : 
 ```c++
@@ -470,8 +472,8 @@ now we just asked the player if they would like to restart playing or to quite p
       Pl_card2 = rand()  % 11 + 1;  
       player_card = {Pl_card1,Pl_card2};
       Tl_Pl_card = Pl_card1 + Pl_card2;
-      Dl_card1 = (rand() % 11) + 1;
-      Dl_card2 = (rand()  % 11) + 1;
+      Dl_card1 = rand() % 11 + 1;
+      Dl_card2 = rand()  % 11 + 1;
       Dl_card_cont = rand() % 11 + 1;
       dealer_card = {Dl_card1,Dl_card2};
       Tl_Dl_card = Dl_card1 + Dl_card2 ;
