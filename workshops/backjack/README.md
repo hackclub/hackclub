@@ -413,9 +413,101 @@ now we just asked the player if they would like to restart playing or to quite p
 
  ```
  Well done, let see your progress so far because we seem to be going from one function to the other while not finiishing other function :
+ <details> 
+ <summary> This is how your code shoud look so far: </summary>
+	
+  ```C++
+      #include <iostream>
+     #include <ctime>
+     #include <vector>
+     using namespace std;
+          void start_The_Game();  
+          void Hit_card1();
+	  void Display_Card(vector<int>list_of_card);
+	  void Hit_Bust_check();
+	  void player_win();
+	  void Player_Loose(); 
+     int Pl_card1, Pl_card2, Pl_card3;     
+     int Dl_card1, Dl_card2, Dl_card3;     
+     int Tl_Pl_card,Tl_Dl_card;  
+     string player1; 
+     vector<int> player_card;
+     vector<int> dealer_card;
+      string answ;  
+     int  main()  {    /*Introduction to the game */
+         cout << "\n           Blackjack Game      \n";
+         cout << "\n++++++++++++++++++++++++++++++++\n";   
+         cout << "\n Welcome to the game.\n Enter your player Name: \n";
+         getline(cin,player1);   
+		 start_The_Game();
+       }
+     void start_The_Game(){
+        cout << "\n           Blackjack Game      \n";
+        cout << "\n++++++++++++++++++++++++++++++++\n";
+        cout << "\n Welcome to the game.\n";
+        cout << "\n Player of this round is: " << player1 << "\n\n"; //new start
+        cout << "Please click enter to shuffle the cards \n";
+         cin.get();  
+            Hit_card1();                        
+        cout << player1 << ",You have been Dealt with [ " ;
+               Display_Card(player_card);
+        cout << "] With have a total of : " << Tl_Pl_card << " \n\n";
+        cout << "The Dealer is Showing a " << Dl_card1 << " \n\n";
+
+         if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
+               Hit_Bust_check();
+              }
  
- <sections>
-    <summary> Ceck out your progress here</summary>
+      }
+     void Hit_card1() {
+      srand(time(0));
+      Pl_card1 = rand() % 11 + 1;         
+      Pl_card2 = rand()  % 11 + 1;  
+      player_card = {Pl_card1,Pl_card2};
+      Tl_Pl_card = Pl_card1 + Pl_card2;
+      Dl_card1 = (rand() % 11) + 1;
+      Dl_card2 = (rand()  % 11) + 1;
+      Dl_card_cont = rand() % 11 + 1;
+      dealer_card = {Dl_card1,Dl_card2};
+      Tl_Dl_card = Dl_card1 + Dl_card2 ;
+  
+      num_of_playerCard = 2;
+    }
+    void  Display_Card(vector<int>list_of_card) { 
+     for (int i = 0; i < list_of_card.size(); i++) {
+      cout << list_of_card[i] << " ";
+          }
+     }
+     void  Hit_Bust_check() {  
+      if (Tl_Pl_card == 21 || Tl_Dl_card > 21) {
+            player_win();
+        } else if (Tl_Dl_card == 21 || Tl_Pl_card > 21 )  {
+                Player_Loose();
+         } else if (Tl_Pl_card > Tl_Dl_card) {
+              player_win();
+          } else {
+              Player_Loose();
+           } 
+	 }
+       void player_win(){
+           cout << "The Player hand : ";
+                 Display_Card(player_card);
+           cout << " with a total of : " << Tl_Pl_card << "\n\n";
+                
+           cout <<"Dealer Hand : " ;
+               Display_Card(dealer_card);
+           cout << " with a total of : " << Tl_Dl_card << "\n\n";
+           cout << player1 << " Win🔺 Congrats!! \n\n";
+           cout  << "Would you like '1' Continue  or '2' Quit PLAYING\n";
+             getline(cin,answ);
+            Continue_Playing();       
+     }
+   ```
+	
+</details>
+
+ <details>
+    <summary> Check out your progress here</summary>
 	
 	```c++
      #include <iostream>
@@ -505,7 +597,7 @@ now we just asked the player if they would like to restart playing or to quite p
             }
          ```
       
-</sections>
+</detailss>
 
 That a long way we have come; Now let
 + in the first line we tell the program to display the title of the game which wll be place at the center of the game using spaces.
