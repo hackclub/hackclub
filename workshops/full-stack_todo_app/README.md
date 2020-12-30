@@ -1,13 +1,13 @@
 ---
 name: 'Todo App'
-description: 'Create a full-stack Todo app using React and Firebase'
+description: 'Create a full-stack To-do App using React and Firebase'
 author: '@giridhar7632'
 img: 'https://cloud-2nf3f60u4.vercel.app/0todo_app.png'
 ---
 
 # Todo App
 
-The combination of React and Firebase can move web applications to the whole next level. In this workshop, you will create an awesome full-stack Todo app using React for front-end and Firebase real-time database as back-end. By the end of this workshop, you will learn about Forms in React and implementing CRUD operations using Firebase. 
+The combination of React and Firebase can move web applications to a whole new level. In this workshop, you will create an awesome full-stack To-do App using React for front-end and Firebase real-time database as back-end. By the end of this workshop, you will learn about Forms in React and implementing CRUD operations using Firebase. 
 
 We are going to build something similar to this. 👇
 
@@ -18,9 +18,9 @@ Check out [live demo](https://Todo-App-Final.giridharhackclu.repl.co) and [sourc
 ## Prerequisites
 
 - You should have a basic understanding of HTML, CSS, and JavaScript.
-- Some concepts of ES6 feature of JavaScript.
-- You should know some fundamentals of React and React Hooks. 
-- It's also a benefit to have a little bit of knowledge about Firebase. But don't worry, we will cover from scratch.
+- You should also know some concepts of ES6 features of JavaScript.
+- You should be familiar with the fundamentals of React and React Hooks. 
+- It's also good if you have a little bit of knowledge about Firebase. But don't worry, we will cover everything from scratch.
 
 ## Coding Environment
 
@@ -28,7 +28,7 @@ We will be using [Repl.it](https://repl.it) for building our project. [Repl.it](
 
 Fork this starter repl [here](https://repl.it/@Giridharhackclu/todo-app-starter#src/App.js). 
 
- It contains `create-react-app` and `firebase` installed. It also contains all the styles required so that we can concentrate on React and Firebase.
+ It contains `create-react-app` and `firebase` installed. It also contains all the styles required so that we can focus only on React and Firebase.
 
 After forking, press the `Run` button on the top. If you output something like this, you are good to go.
 
@@ -36,19 +36,19 @@ After forking, press the `Run` button on the top. If you output something like t
 
 ## Creating a Firebase Project
 
-Now create a [Firebase](https://firebase.google.com) account. You can access it with your Google account
+You can access [Firebase](https://firebase.google.com) with your Google account.
 
 > **Firebase**: Google's Firebase is Backend-as-a-Service(BaaS), which makes us easy to add a back-end to our applications with some knowledge of server-side coding.
 
 We are going to use Firebase Realtime Database as a database for our Todo App. 
 
-The **Firebase Realtime Database** is cloud-hosted. Data is stored as JSON and synchronized in real-time to every connected client. We can store and sync data across all clients in real-time and remains available when your app goes offline.
+The **Firebase Realtime Database** is cloud-hosted. Data is stored as JSON and synchronized in real-time to every connected client. We can store and sync **data** across all clients in real-time and remains available when your app goes offline.
 
-Open [Firebase](https://firebase.google.com); after signing in, click the `Go to console` on the top right corner.
+Open [Firebase](https://firebase.google.com); after signing in, click on `Go to console` on the top right corner.
 
 ![firebase.com](https://cloud-swc0vwpr0.vercel.app/2firebase.png)
 
-In your console, If you don't have any projects yet, it will be clean and empty. Click on Create project to add a new project.
+In your console, If you don't have any projects yet, it will be clean and empty. Click on `Create Project` to add a new project.
 
 ![Firebase console](https://cloud-swc0vwpr0.vercel.app/0firebase_console.png)
 
@@ -86,7 +86,7 @@ Here are your app credentials. This code helps your project connect to your Fire
 
 ![Firebase config](https://cloud-swc0vwpr0.vercel.app/1firebase_sdk.png)
 
-Make sure you copy the data.
+Make sure you copy your web app's Firebase configuration(`firebaseConfig` object). 
 
 Hop on to the forked Repl and create a new component, `Firebase.js` inside the `src` folder.
 
@@ -138,16 +138,13 @@ Now that we have a database let's create a Todo App using the database.
 
 ## CRUD Operations
 
-According to [wikipedia](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)...
-
-> "In computer programming, create, read, update, and delete (CRUD) are the four basic functions of persistent storage. Alternate words are sometimes used when defining the four basic CRUD functions, such as retrieval instead of reading, modifying instead of update, or destroy instead of delete.<br/>
- CRUD is also sometimes used to describe user interface conventions that facilitate viewing, searching, and changing information, often using computer-based forms and reports. The term was likely first popularized by James Martin in his 1983 book Managing the Data-base Environment. The acronym may be extended to CRUDL to cover the listing of large data sets which bring additional complexity such as pagination when the data sets are too large to hold easily in memory."
-
 CRUD stands for Create, Read, Update, and Delete.
 
 These are the four most basic operations that can be performed with most traditional database systems, and they are the backbone for interacting with any database. 
 
 ![CRUD](https://cloud-9uzz77u17.vercel.app/0crud_operations.png)
+
+If you want to learn more theory about CRUD, check it [here](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
 
 ## Creating Todo App
 
@@ -157,13 +154,13 @@ Create a new folder and name it as `components`. All of our Todo App components 
 
 ### Inputting a Todo
 
-Create a new file in the `components` folder and name it `Input.js`. Import `React` into the component and create the functional component, and export it.
+Create a new file in the `components` folder and name it `Input.js`. Import `React` into the component, create the functional component and export it.
 
 ```jsx
 import React from 'react'
 
 function Input(){
-  // code goes here
+  {/* code goes here*/}
   }
  
  export default Input
@@ -172,7 +169,7 @@ function Input(){
 Also, import the `Firebase.js` file you created before at the top to use Firebase inside this component.
 
 ```jsx
-import firebse from '../Firebase'
+import firebase from '../Firebase'
 ```
 
 Create a `div` with a class of `input` inside the component.  
@@ -184,7 +181,7 @@ import firebase from '../Firebase'
 function Input(){
   return(
     <div className="input">
-      // code goes here
+      {/* code goes here*/}
     </div>
   )
 }
@@ -203,7 +200,7 @@ Add an `input` and a button `Add Todo` with a class of `add-btn` inside the `div
 </div>
 ```
 
-Here, `<i className="fa fa-plus-circle">` is the [plus icon](https://fontawesome.com/v4.7.0/icon/plus-circle) from [font awesome](https://fontawesome.com/v4.7.0/icons/) for styling. 
+Here, `<i className="fa fa-plus-circle">` is the [plus icon](https://fontawesome.com/v4.7.0/icon/plus-circle) from [Font Awesome](https://fontawesome.com/v4.7.0/icons/) for styling. In the starter template, Font Awesome cdn was already linked in `public/index.html` file.
 
 Form elements like `<input>`, `<select>` and `<textarea>` in React are slightly different from those of HTML. In HTML, they responsible on their own to handle the user input and update their respective values. But in React, the forms are controlled by components using state. Learn more about React forms [here](https://reactjs.org/docs/forms.html).
 
@@ -235,9 +232,9 @@ export default Input
 
 ### Create operation
 
-Let's add the entered data into the database when the user clicks the `Add Todo` button.
+Let's add the inputted data into the database when the user clicks the `Add Todo` button.
 
-Add a `onClick` attributewhich invokes `handleClick` function.
+Add a `onClick` attribute which invokes `handleClick` function.
 
 ```html
 <button className="add-btn" onClick={handleClick} >
@@ -277,10 +274,10 @@ function handleClick() {
 }
 ```
 
-Here 👆, we added the data that we get as input into the database. By default, the task was incomplete. After the data is added to the database, the input field is cleared by setting `task` to an empty string(`setTask("")`).
+Here 👆, we added the data that we get as input into the database. By default, the task is incomplete. After the data is added to the database, the input field is cleared by setting `task` to an empty string(`setTask("")`).
 
 <details>
-<summary>Your final Input.js will look like this.</summary>
+<summary>Your final code in Input.js should look like this.</summary>
 
 ```jsx
 import React, { useState } from 'react'
@@ -329,7 +326,7 @@ function App() {
   return (
     <div className="App">
       <h1>Todo App</h1>
-      <Input />                        // <------------ rendering the component
+      <Input />                     {/* <------------ rendering the component*/}
     </div>
   );
 }
@@ -339,11 +336,11 @@ export default App;
 
 ![Output with input](https://cloud-792qf1oid.vercel.app/0input.js.png)
 
-Looks good, doesn't it! 😂
+Looks good, doesn't it!
 
 ![Database](https://cloud-792qf1oid.vercel.app/1input_to_database.png)
 
-The data you add through `input`, after clicking the button, will be appended to Firebase in real-time.
+The data you added through the `input` will be appended to our Firebase Database!
 
 ### Creating Todo List
 
@@ -354,7 +351,7 @@ import React, { useState, useEffect } from 'react'
 import firebase from '../Firebase'
 
 function TodoList(){
-  // code goes here
+  {/*code goes here*/}
   return(
     <div className="todo-list">
 
@@ -382,9 +379,9 @@ useEffect(() => {
 }, [])
 ```
 
-We have got the data in a specified reference. 
+We have our data stored in a specified reference(location). 
 
-To read data at a path and listen for changes, use the `on()` method of `firebase.database.Reference` to observe events. The `on()` method is used to synchronize data in real-time. 
+To read data at a path and listen for changes, we will use the `on()` method of `firebase.database().ref()` to observe events. The `on()` method is used to synchronize data in real-time. 
 
 ```jsx
 useEffect(() => {
@@ -414,7 +411,7 @@ todoRef.on("value", (snapshot) => {
 })
 ```
 
-⭐ **Important**: The `value` event is called every time data is changed at the specified database reference, including changes to children. To limit the size of your snapshots, attach only at the lowest level needed for watching changes. For example, attaching a listener to the root of your database is not recommended.
+⭐ **Important**: The `value` event is called every time data is changed at the specified database reference, including changes to children. To limit the size of your snapshots, add the event listener only at the lowest level needed for watching changes. For example, adding the listener to the root of your database is not recommended.
 
 Now we need the data as an array to put it into the state. Declare an empty array and add the `id` and `task` into the array.
 
@@ -433,7 +430,7 @@ Now that we have the data in `todoList`, we can map through it to display it.
 
 Initially, it is an empty array. So we have to check whether it is empty or not, then map through it. 
 
-For now, let's display using `<h1>`. Later we create a component for saying it.
+For now, let's display our list using the `<h1>` tag but later, we will create a separate component for rendering it.
 
 ```jsx
 return(
@@ -444,7 +441,7 @@ return(
 ```
 
 <details>
-<summary>Your TodoList component so far looks like:</summary>
+<summary>Your TodoList component's code so far:</summary>
 
 ```jsx
 import React, { useState, useEffect } from 'react'
@@ -519,6 +516,8 @@ return(
 )
 ```
 
+Here, 👆 we are rendering a `Todo` component for each todo and also passing the data to that component as prop., using `map()` method. Learn more about `map()` [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
+
 <details>
 <summary>Your final TodoList component looks like this:</summary>
 
@@ -547,8 +546,8 @@ function TodoList(){
   
   return(
     <div className="todo-list">
-      {todoList ? todoList.map((todo, i) => <Todo todo={ todo } key={ i } />) : null}    // <----------- updated with 
-      <Todo />
+      {todoList ? todoList.map((todo, i) => <Todo todo={ todo } key={ i } />) : null}    {/* <----------- updated with 
+      <Todo />*/}
     </div>
   )
 }
@@ -590,7 +589,7 @@ Add the `onClick` attribute to the checkbox that invokes `completeTodo` function
 <input type="checkbox" onClick={ completeTodo } checked={ todo.completed }/>
 ```
 
-To simultaneously write to specific children of a node without overwriting other child nodes, we can use the `update()` method. When calling `update()` updates lower-level child values by specifying a path for the key.
+To simultaneously write to specific children of a node without overwriting other child nodes, we can use the `update()` method. When we call `update()`, it updates lower-level child values by specifying a path for the key.
 
 ```jsx
 function completeTodo(){
@@ -633,7 +632,7 @@ export default function Todo({ todo }){
     <div className="todo-item">
       <div className="task">
         <input type="checkbox" onClick={ completeTodo }checked={todo.completed}/>
-        <p style={todo.completed ? completedStyle : null} >{todo.task}</p>               // <------------ adding className depending on todo.completed
+        <p style={todo.completed ? completedStyle : null} >{todo.task}</p>               {/* <------------ adding className depending on todo.completed */}
       </div>
       <div className="buttons">
         <button className="del-btn"><i className="fa fa-trash" aria-hidden="true"></i></button>
@@ -724,11 +723,10 @@ That's it, folks! We completed our Full-stack Todo App. Check your final code [h
 Now it's your turn to customize.
 
 * Go wild with the styles. Create your custom Todo Apps.
-* Add more functionality.
+* Add more functionality. Eg:- chance to edit the added todo, alert before deleting any todo, etc.
 * Filter the tasks as completed and due.
-* Try to add a database to your projects.
 
-I recommend customizing the project in this workshop. Share your creation with everyone in [#ship](https://hackclub.slack.com/messages/ship) in hack club slack. Do share with me too!!! I'm [@Giridhar](https://hackclub.slack.com/team/U013E6KE9UJ) on slack. I'd love to hear from you. 
+I recommend customizing this project as much as you can! Share your creation with everyone in the [#ship](https://hackclub.slack.com/messages/ship) channel on the Hack Club slack. Don't forget to share it with me too!!! I'm [@Giridhar](https://hackclub.slack.com/team/U013E6KE9UJ) on slack. I'd love to hear from you.
 
 ## Inspiration
 
