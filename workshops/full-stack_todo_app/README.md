@@ -516,7 +516,7 @@ return(
 )
 ```
 
-Here, 👆 we are rendering a `Todo` component for each todo and also passing the data to that component as prop., using `map()` method. Learn more about `map()` [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
+Here, 👆 we are rendering a `Todo` component for each todo and also passing the data to that component as prop., using `map()` method. Learn more about `map()` [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). If you want to know more about rendering multiple components, check [this](https://reactjs.org/docs/lists-and-keys.html#rendering-multiple-components).
 
 <details>
 <summary>Your final TodoList component looks like this:</summary>
