@@ -309,7 +309,7 @@ num_of_playerCard = 2;           					/* place it here */
    num_of_playerCard = 2;
 }
  ```
-<details>
+</details>
 	
 woooh!!, we just finished drawing our first cards now let's call it on the screen!!
 
@@ -371,7 +371,7 @@ we then will only show one card which the Dealer has as the player is only allow
 ```
 Time for some thinking:
 
-[![A person thinking](https://cloud-m8wvf9mhv.vercel.app/0giphy-2.gif)
+![A person thinking](https://cloud-m8wvf9mhv.vercel.app/0giphy-2.gif)
    
 ### checking for a poosible bust or blackjack 👀
 
