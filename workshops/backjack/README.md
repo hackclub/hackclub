@@ -9,7 +9,7 @@ img: 'https://cloud-qtjz7o7jw.vercel.app/0screenshot_2020-12-30_at_00.57.54.png'
 
 Have you ever thought How you could create a simple and smart BlackJack game using C++, well You have come to the right place. In this workshop, you will learn how to create your own blackjack game as well as explore the concept of using a function (especially Void Function) in C++ and how  functions are important.
 
-![live demo of How the game works](https://cloud-9dplxo8ym.vercel.app/0demo.gif)
+[![live demo of How the game works](https://cloud-9dplxo8ym.vercel.app/0demo.gif)
 
 ## Getting started
 
@@ -371,7 +371,7 @@ we then will only show one card which the Dealer has as the player is only allow
 ```
 Time for some thinking:
 
-![A person thinking](https://cloud-m8wvf9mhv.vercel.app/0giphy-2.gif)
+[![A person thinking](https://cloud-m8wvf9mhv.vercel.app/0giphy-2.gif)
    
 ### checking for a poosible bust or blackjack 👀
 
@@ -1263,7 +1263,8 @@ Last but not least let call this function :
           }
 	```
 Well done you have just you now have level up, you can now run your game and see how your game really looks likes, you just become a master card player 
- ![giving high five to a person](https://cloud-fcjpqc2js.vercel.app/0giphy.gif)
+ 
+ [![giving high five to a person](https://cloud-fcjpqc2js.vercel.app/0giphy.gif)
  
 # Challenge 
 Now go on and show everyone what you have made. Aren't them impress about this or you too,  well I have something store for you to try out :
