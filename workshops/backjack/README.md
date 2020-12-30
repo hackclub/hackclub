@@ -1464,8 +1464,9 @@ Well done you have just you now have level up, you can now run your game and see
 # Challenge 
 Now go on and show everyone what you have made. Aren't them impress about this or you too,  well I have something store for you to try out :
  +  Make the game to  be able to take bet from the player which will reward the player coins if the won check out again that video about how the game work:
-   struggling? try check out [my code](), I have added some function that accept number(money) from the user and double the player's bet if they win, or decrease their bet amount to the account if they loose
- + Can you make a new option that allow the player to double they amount before the play say hit or bust, someone just might wwant more money you know, or if the play chnage their mind and would like to decreae their bet amount, their could just slit the bet amount. Can you do this to your game 
- + What if I keep forgoting how much might score from the dealer, create and variable that keep record of the number of ein of the player and the dealer then after the player has win or loose and finish the game, so he can see his score compre to the dealer.
+   struggling? try check out [my code](https://repl.it/@chrisrama/blackjack-gameCoinBase#main.cpp), I have added some function that accept number(money) from the user and double the player's bet if they win, or decrease their bet amount to the account if they loose
+ + Can you make a new option that allow the player to double they amount before the play say hit or bust, someone just might wwant more money you know, or if the play chnage their mind and would like to decreae their bet amount, their could just slit the bet amount. Can you do this to your game? [check out my example here](https://repl.it/@chrisrama/BlackjackgameDoubleSplit#main.cpp)
+ + What if I keep forgoting how much might score from the dealer, create and variable that keep record of the number of ein of the player and the dealer then after the player has win or loose and finish the game, so he can see his score compre to the dealer. [check out my code here](https://repl.it/@chrisrama/Blackjack-game-Winner-review#main.cpp)
  + Add Multiple players inside the game, so more than 3 people can play together.
 
+Are people impress now, add more feature you think can be cool for the game
