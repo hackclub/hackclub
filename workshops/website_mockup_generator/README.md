@@ -146,15 +146,202 @@ And that's it! We have completed writing our HTML. Your mockup generator should 
 
 ### 2) style.css
 
-The style.css file is used to add styles to our website. We will be making the background color as red using `background-color: red;`. We will also align the text to center by `text-align: center;`.
+The style.css file is used to add styles to our website. You can optionally use your own CSS to make our site look better according to your wish!
 
-#### Final style.css code:
+#### Adding custom font
+Import a custom font from Google fonts using the below code :
+
 ```css
-.body{
-  background-color: red;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
 }
 ```
+
+#### Customizing the `<body>` style
+Now, let us customize the body style. Change the body background using `background-color: red;`. Change the body text color into white using `color : white;`. To make the website look better, let us align the items using `align-items: center;`. Finally, the CSS class for the body will be similar :
+
+```css
+body {
+  background-color: red;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  }
+```
+
+Now, provide padding and remove the outline of the text fields using the below code :
+
+```css
+input {
+  padding: 0 10px;
+  outline: none;
+}
+```
+
+Next, create the following CSS classes to make the input fields look more attractive. Though this is optional, I would recommend you to add this :
+
+```css
+#websiteAdress {
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 0 15px 0;
+}
+
+.color_cont {
+  height: 40px;
+  width: 420px;
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 15px 0;
+}
+
+#color_demo {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #7108b6;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.color_cont input {
+  height: 30px;
+  width: 350px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+```
+
+The CSS class for the button will go as follows :
+
+```css
+button {
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  background: #00000069;
+  color: #fff;
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+  border: none;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  cursor: pointer;
+}
+```
+
+Provide width and margin for the generated mockup image by using the below CSS properties :
+
+```css
+#resultImg {
+  width: 50%;
+  margin: 10px;
+}
+```
+
+Finally, create a CSS class called `cont` and provide the follow properties. We have used the `cont` class in the HTML.
+
+```css
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+```
+
+
+<details><summary>Your final CSS code should look similar to this:</summary>
+  
+```css
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: red;
+  color: #fff;
+  align-items: center;
+}
+
+input {
+  padding: 0 10px;
+  outline: none;
+}
+
+/*Website address input*/
+#websiteAdress {
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 0 15px 0;
+}
+
+/*Color input*/
+.color_cont {
+  height: 40px;
+  width: 420px;
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 15px 0;
+}
+
+/*Color demo*/
+#color_demo {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #7108b6;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.color_cont input {
+  height: 30px;
+  width: 350px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  background: #00000069;
+  color: #fff;
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+  border: none;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  cursor: pointer;
+}
+
+
+#resultImg {
+  width: 50%;
+  margin: 10px;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+```
+</details>
 
 You can customize the styles and make it look better if you wish.
 
