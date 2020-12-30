@@ -167,8 +167,363 @@ class MainClass
   }
 }
 ```
-- If the "playAgain" boolean is false, then we break out of the while loop.
-- We create a "moneyDown" integer and set it to 0.
+If the "playAgain" boolean is false, then we break out of the while loop.
 
 # Money Down
 
+## Initial Statements
+```csharp
+using System;
+
+class MainClass
+{
+  static void Main(string[] args)
+  {
+      while (true)
+      {
+          Console.WriteLine($"Your current balance is {balance} dollars.");
+          bool playAgain = true;
+          while (true)
+          {
+            //The code we just wrote.
+          }
+      }
+      
+      if (playAgain == false)
+      {
+          break;
+      }
+      
+      int moneyDown = 0;
+      while (true)
+      {
+       //The code we are going to write
+      }
+  }
+}
+
+```
+- Create the "moneyDown" integer and set it to 0.
+- Create a while loop. The rest of the code we will write in this section is within the while loop so we are going to focus on that for now.
+
+
+## Try-Catch
+
+```csharp
+while (true)
+{
+    Console.Write($"How much money down (in dollars)?: ");
+    try
+    {
+    }
+    catch
+    {
+      Console.WriteLine("That's not a dollar amount.");
+    }
+ }
+```
+- Ask the user how much money they want to put down.
+- Add the try-catch statement so our program will not break if the user puts in a bad input.
+
+## Finishing the Try Statement
+
+```csharp
+while (true)
+{
+    Console.Write($"How much money down (in dollars)?: ");
+    try
+    {
+        int userInput = int.Parse(Console.ReadLine());
+        if (userInput > 0 && userInput <= balance)
+        {
+            moneyDown = userInput;
+            break;
+        }
+        else
+        {
+            Console.WriteLine("Not a valid amount.");
+        }
+    }
+    catch
+    {
+        Console.WriteLine("That's not a dollar amount.");
+    }
+ }
+```
+- Get the user input and parse it to an integer named "userInput".
+- If the input is greater than 0 and less than or equal to the balance, then set the "moneyDown" integer to the input and break out of the while loop.
+- Else tell the user it is not a valid amount, and the loop will run again.
+
+
+# Rolling the Dice
+
+## Initial Randomness
+```csharp
+using System;
+
+class MainClass
+{
+  static void Main(string[] args)
+  {
+      Random random = new Random();
+      int balance = 10;
+
+      Console.WriteLine("Welcome to Craps");
+
+      while (true)
+      {
+        //What we already wrote.
+      }
+
+      if (playAgain == false)
+      {
+          break;
+      }
+      int moneyDown = 0;
+
+      while (true)
+      {
+        //What we already wrote.
+      }
+
+
+      int dice1 = random.Next(1, 7);
+      int dice2 = random.Next(1, 7);
+      int total = dice1 + dice2;
+      int point = 0;
+      Console.WriteLine($"You rolled out with a {dice1} and {dice2}!");
+  }
+}
+```
+- We are rolling two dice by giving them a random value.
+- We are adding up both dice for the total.
+- We are creating a "point" integer and setting it to 0.
+- We are telling the user the values they rolled out with.
+
+## First Roll
+```csharp
+using System;
+
+class MainClass
+{
+  static void Main(string[] args)
+  {
+      Random random = new Random();
+      int balance = 10;
+
+      Console.WriteLine("Welcome to Craps");
+
+      while (true)
+      {
+        //What we already wrote.
+      }
+
+      if (playAgain == false)
+      {
+          break;
+      }
+      int moneyDown = 0;
+
+      while (true)
+      {
+        //What we already wrote.
+      }
+
+
+      int dice1 = random.Next(1, 7);
+      int dice2 = random.Next(1, 7);
+      int total = dice1 + dice2;
+      int point = 0;
+      Console.WriteLine($"You rolled out with a {dice1} and {dice2}!");
+      
+      if (total == 2 || total == 3 || total == 12)
+      {
+          Console.WriteLine("You Lose.");
+          balance -= moneyDown;
+      }
+      else if (total == 7 || total == 11)
+      {
+          Console.WriteLine("You Win!");
+          balance += moneyDown;
+      }
+      else
+      {
+      }
+  }
+}
+```
+- If the user's total is a 2, 3, or 12 on their roll out, they lose.
+- If the usera total is a 7 or 11 on their roll out, they win.
+- Else, they establish the point and the rules change, which we will code in a moment. We will be focusing on the else statement for the rest of the code.
+
+
+## Establish the Point
+```csharp
+else
+{
+    point = total;
+    Console.WriteLine($"The point is established as {point}");
+}
+```
+- We are establishing the point as the total and letting the user know.
+
+## Subsequent Rolls
+
+```csharp
+else
+{
+  point = total;
+  Console.WriteLine($"The point is established as {point}");
+  while (true)
+  {
+    dice1 = random.Next(1, 7);
+    dice2 = random.Next(1, 7);
+    total = dice1 + dice2;
+
+    Console.WriteLine($"You rolled a {dice1} and {dice2}!");
+
+    if (total == 7)
+    {
+        Console.WriteLine("You Lose!");
+        balance -= moneyDown;
+        break;
+    }
+    else if (total == point)
+    {
+        Console.WriteLine("You Win!");
+        balance += moneyDown;
+        break;
+    }
+  }
+}
+```
+- The while loop will keep looping rolls until we win or lose.
+- We do another roll and establish a total, and we let the player know the rolls.
+- If the total is 7, then we lose and take the money put down from the user's balance, and then we break out of the while loop.
+- If the total is equal to the point, then we win and add the money put down to the user's balance, and then we break out of the while loop.
+
+# Final Code
+```csharp
+using System;
+
+class MainClass
+{
+  static void Main(string[] args)
+  {
+      Random random = new Random();
+      int balance = 10;
+
+      Console.WriteLine("Welcome to Craps");
+
+      while (true)
+      {
+        Console.WriteLine($"Your current balance is {balance} dollars.");
+        bool playAgain = true;
+        while (true)
+        {
+            Console.Write($"Would you like to play? (Y/N): ");
+            string userInput = Console.ReadLine();
+            userInput = userInput.ToUpper();
+            if (userInput == "Y")
+            {
+                if (balance <= 0)
+                {
+                    Console.WriteLine("You do not have enough money to play.");
+                    playAgain = false;
+                }
+                break;
+            }
+            else if (userInput == "N")
+            {
+                playAgain = false;
+                break;
+            }
+            else
+            {
+                Console.WriteLine("That's not a valid input");
+            }
+        }
+
+          if (playAgain == false)
+          {
+              break;
+          }
+          int moneyDown = 0;
+
+          while (true)
+          {
+              Console.Write($"How much money down (in dollars)?: ");
+              try
+              {
+                  int userInput = int.Parse(Console.ReadLine());
+                  if (userInput > 0 && userInput <= balance)
+                  {
+                      moneyDown = userInput;
+                      break;
+                  }
+                  else
+                  {
+                      Console.WriteLine("Not a valid amount.");
+                  }
+              }
+              catch
+              {
+                  Console.WriteLine("That's not a dollar amount.");
+              }
+          }
+
+
+          int dice1 = random.Next(1, 7);
+          int dice2 = random.Next(1, 7);
+          int total = dice1 + dice2;
+          int point = 0;
+          Console.WriteLine($"You rolled out with a {dice1} and {dice2}!");
+
+          if (total == 2 || total == 3 || total == 12)
+          {
+              Console.WriteLine("You Lose.");
+              balance -= moneyDown;
+          }
+          else if (total == 7 || total == 11)
+          {
+              Console.WriteLine("You Win!");
+              balance += moneyDown;
+          }
+          else
+          {
+              point = total;
+              Console.WriteLine($"The point is established as {point}");
+              while (true)
+              {
+                  dice1 = random.Next(1, 7);
+                  dice2 = random.Next(1, 7);
+                  total = dice1 + dice2;
+
+                  Console.WriteLine($"You rolled a {dice1} and {dice2}!");
+
+                  if (total == 7)
+                  {
+                      Console.WriteLine("You Lose!");
+                      balance -= moneyDown;
+                      break;
+                  }
+                  else if (total == point)
+                  {
+                      Console.WriteLine("You Win!");
+                      balance += moneyDown;
+                      break;
+                  }
+              }
+          }
+      }
+
+  }
+    
+}
+```
+
+# More You Can Create
+- [Original Program](https://repl.it/@CosmicSnowman/Craps-Simulator#main.cs)
+- [User Sets Balance](https://repl.it/@CosmicSnowman/Craps-Simulator-Expanded-1#main.cs)
+- [Calculate Win Rate](https://repl.it/@CosmicSnowman/Craps-Simulator-Expanded-2#main.cs)
+- [Simulate a Specific Number of Games](https://repl.it/@CosmicSnowman/Craps-Simulator-Expanded-3#main.cs)
