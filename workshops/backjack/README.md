@@ -921,7 +921,7 @@ void Hit_Dealer_card() {
  
 ```
 
-For reference if you can't remember ` Hit_Player_card() ` or ` Hit_Dealer_card() ` does check out how we [draw the card for the player continuesly](#### Drawing card for the player continuously).
+For reference if you can't remember ` Hit_Player_card() ` or ` Hit_Dealer_card() ` does check out how we [draw the card for the player continuesly](#Drawing card for the player continuously).
 
 + Now that we done that we need to call out ` Hit_Dealer card ` inside ` Player_Stay() ` function when while loop is running :
 
