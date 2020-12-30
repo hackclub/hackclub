@@ -1264,7 +1264,7 @@ Last but not least let call this function :
 	```
 Well done you have just you now have level up, you can now run your game and see how your game really looks likes, you just become a master card player 
  
- [![giving high five to a person](https://cloud-fcjpqc2js.vercel.app/0giphy.gif)
+ ![giving high five to a person](https://cloud-fcjpqc2js.vercel.app/0giphy.gif)
  
 # Challenge 
 Now go on and show everyone what you have made. Aren't them impress about this or you too,  well I have something store for you to try out :
