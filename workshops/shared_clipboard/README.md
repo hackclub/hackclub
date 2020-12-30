@@ -933,9 +933,9 @@ Stuff other Hackclubbers made after following this workshop:
    - It provides a web dashboard that can show your clipboard history.
 - Sam made [clipboard-with-logs.go](https://gist.github.com/sampoder/f3555d873d3d569f7927801d9977d54a)
 
-Jason and Khushraj demoe-ed their projects and you can watch [here](https://cloud-51eavoxvn.vercel.app/0zoom_1.mp4)
+Jason and Khushraj demoed their projects and you can watch [here](https://cloud-51eavoxvn.vercel.app/0zoom_1.mp4)
 
-Sam demo-ed his [here](https://youtu.be/i4F_npU3UrI?t=1972)
+Sam demoed his [here](https://youtu.be/i4F_npU3UrI?t=1972)
 ## The full source code
 It's pretty long
 
