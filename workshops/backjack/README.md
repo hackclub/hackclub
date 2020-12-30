@@ -19,7 +19,7 @@ This workshop is very friendly for a beginner or advanced c++ programmer, as it 
 
 If you never play the blackjack game at all or want to know how to play it, don't worry, I have a video short [video](https://youtu.be/eyoh-Ku9TCI) for you that explain how exactly the game works. 
 
-+ NOTE: it important to atch the full video so you understand how the game will be made
++ NOTE: it important to watch the full video so you understand how the game will be made
 
 We are going to be using [repl.it](https://repl.it/~) online IDE to create our game. If you don't have an account yet go over to [repl. it](https://repl.it/signup) to create an account. To create a new C++ project in Repl.it just Clicks over [HERE](https://repl.it/new/cpp) and name your project to what you prefer.
 
@@ -43,7 +43,7 @@ using namespace std;
 
   void start_The_Game();                   /* Declare start_The_Game function */
 int Pl_card1, Pl_card2, Pl_card_cont;      /* used to stored the Card number for the player*/
-int Dl_card1, Dl_card2, Dl_card_cont;      /* used to stored the Card number for the Daler*/
+int Dl_card1, Dl_card2, Dl_card_cont;      /* used to stored the Card number for the Dealer*/
 int Tl_Pl_card,Tl_Dl_card;                 /*Use to store the total number of card or player and dealer*/
 ```
  + Inside the **Declaration section**, will be the section  we will used to declare variables and functions, in this case, I have declared the first function ` start_The_Game() ` that will be called when we need to start the game. Don't worry if you don't see it used now but you will later.
@@ -117,7 +117,7 @@ Inside the getline function we want to ask for input and stored it inside the ` 
 }
 ```
 Under getline() function call ` start_The_Game() ` function so the game can start. Note it important you *Declare* , *give Definition* and *Call* a function.
-RIght now start_The Game function as not task to perfom so let give it a definition :
+RIght now start_The Game function as not task to perform so let give it a definition :
  ```c++
  int main() {
            /*introduction to the game */
@@ -228,15 +228,15 @@ We now have a Random number stored inside card 1 and 2, now that we have that we
 //****
  vector<int>player_card;						 /* place it here */
 ```
-tips: find out here why I prefare to use [vector instead of array here](https://www.tutorialspoint.com/advantages-of-vector-over-the-array-in-cplusplus).
+tips: find out here why I prefer to use [vector instead of array here](https://www.tutorialspoint.com/advantages-of-vector-over-the-array-in-cplusplus).
 
 You can go head and declare a vector that will store the dealer card as ` dealer_card` as we will need it later:
 ```c++
 //*****
  vector<int>player_card;
- vector<int>delaer_card;                       		 /* place it here */
+ vector<int>dealer_card;                       		 /* place it here */
 ```
-Now let go back inside the ` Hit_card1() ` function,let take a copy of random cards of the player and place it inside the vector ` player_card `:
+Now let go back inside the ` Hit_card1() ` function,let’s take a copy of random cards of the player and place it inside the vector ` player_card `:
 
 ```c++ 
 void Hit_card1(){
@@ -313,7 +313,10 @@ num_of_playerCard = 2;           					/* place it here */
  ```
 </details>
 	
-woooh!!, we just finished drawing our first cards now let's call it on the screen!!
+wooo!!, we just finished drawing our first cards now let's call it on the screen!!
+
+ 
+
 
 ![a unicorn shoing his card to the other unicorn](https://cloud-djzhs5d55.vercel.app/0giphy-3.gif)
 
@@ -330,13 +333,14 @@ Now let show the player their card that is stored inside the vector ` player_car
 cout << player1 << ",You have been Dealt with [ " ;            /* place it here */
 ```
 
-### Dipslaying the list of card in the vector
+### Displaying the list of card from the vector
 
-After we have called the player's name and say what card there have been given/dealt, we can now display the two-card the player has, so to do that, we will create  ` Diplay_card ` inside the **Declaration section** that will receive one parameter which will be a vector of the list of cards from the player or the dealer.
+After we have called the player's name and say what card there have been given/dealt, we can now display the two-card the player has, so to do that, we will create  ` Display_card ` inside the **Declaration section** that will receive one parameter which will be a vector of the list of cards from the player or the dealer.
 
 ```c++
  void Display_Card(vector<int>list_of_card);
 ```
+
 
 we will then go over the **Definition section** to give definition to the ` Display_card ` function. Inside the ` Display_card() ` function we will use  for loop to display each element in the list of card : 
 
