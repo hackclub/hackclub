@@ -72,35 +72,35 @@ First, let us write the required HTML code for the website mockup generator. You
   </body>
 </html>
 ```
-##### The site title
+#### The site title
 In the `<head>` section, Replace the text inside the title tag to the title you want. In my case, I am replacing it with 'Website Mockup Generator'
 
 ```html 
 <title>Website Mockup Generator</title>
 ```
 
-##### Changing the body background color and alignment
+#### Changing the body background color and alignment
 In order to change the background color and the text alignment inside the body, specify a class called 'body' in the body tag. We will be providing CSS styling for the body class later.
 
 ```html
 <body class="body">
 ```
 
-##### The heading
+#### The heading
 In the `<body>` provide the heading inside `<h1>...</h1>` tags. In my case, I am providig the heading as 'Website Mockup Generator'.
 
 ```html
 <h1>Website Mockup Generator</h1>
 ```
 
-##### Placing a text input field
+#### Placing a text input field
 In order to place a text input field to get the website from the URL, use the following line to create a text input with a placeholder 'Enter the website' and provide id to the input as 'websiteAddress'.
 
 ```html
 <input type="text" id="websiteAdress" placeholder='Enter the website'>
 ```
 
-##### Placing the buttons
+#### Placing the buttons
 We need two buttons to generate the mockup and to download respectively. Use the `<button>` tag twice to place the buttons. Provide the button label in between the `<button></button>` tags. Provide the id as `submitButton` for the 'Generate mockup' button and `Download` for 'Download' button.
 
 ```html
@@ -108,7 +108,7 @@ We need two buttons to generate the mockup and to download respectively. Use the
 <button id="Download">Download</button>
 ```
 
-##### Generated mockup image
+#### Generated mockup image
 We will be using an `<image>` tag to display the generated mockup image. Provide the id as `resultImg`.
 
 ```html
@@ -166,7 +166,7 @@ The script.js file contains the required JavaScript code. The aim of the JavaScr
 
 Let us implement the above steps one by one :
 
-##### Getting the elements from HTML in JS by their Id
+#### Getting the elements from HTML in JS by their Id
 Firstly, we will be getting the elements from HTML into JS by using their Ids using the following code :
 
 ```javascript
@@ -174,7 +174,7 @@ const resultImg = document.getElementById("resultImg");
 const Download = document.getElementById("Download");
 ```
 
-##### Defining the generateMockup() function
+#### Defining the generateMockup() function
 In order to generate the mockups, we will be defining the generateMockup() function which is called when the 'Generate Mockup' button is pressed. Create a function called generateMockup() using:
 
 ```javascript
@@ -188,7 +188,7 @@ Now, assign the value of `websiteAdress` to the value from the text input field 
 const websiteAdress = document.getElementById("websiteAdress").value;
 ```
 
-##### Fetching the mockup image using an API end point
+#### Fetching the mockup image using an API end point
 Inside the generateMockup() function, use the following line of code to fetch the mockup image from the API end point :
 
 ```javascript
@@ -260,6 +260,7 @@ You can try running the code by pressing the *'Run'* button on the top. You will
 ![Pressing the run button](https://cloud-oy8uhg1nh.vercel.app/0websitemockup.gif)
 
 Hurray! Cheers on building your own website mockup generator.
+
 ![Man celebrating](https://media.giphy.com/media/6nuiJjOOQBBn2/giphy.gif)
 
 Here are some of the mockups that I made :
