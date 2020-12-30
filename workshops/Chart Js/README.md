@@ -1,11 +1,11 @@
 ---
-name: Chart JS
+name: Charts with Chart.js
 description: Create any kind of chart for your website
 author: '@wollygfx'
 img: 'https://cloud-d661yx1ei.vercel.app/0screen_recording_2020-12-11_at_10.42.35_pm.gif'
 ---
 
-In this workshop you'll learn how to make a Chart generator using [Chart Js](https://www.chartjs.org), a free open-source JavaScript library for data visualization. Follow along and see how easy it is!
+In this workshop you'll learn how to make a chart generator using [Chart.js](https://www.chartjs.org), a free open-source JavaScript library for data visualization. Follow along and see how easy it is!
 
 Here you can find a [live demo](https://chart-generator-def.wollygfx.repl.co) and here, you will find the [source code](https://repl.it/@wollygfx/Chart-generator-def#index.htmll).
 
@@ -13,7 +13,7 @@ Here you can find a [live demo](https://chart-generator-def.wollygfx.repl.co) an
 
 ## Set Up
 
-This workshop requires a very basic knowledge of the following languages: HTML & JS. Don’t worry if you get stuck at some point in the workshop, everything is explained the best way for you to understand!
+This workshop requires a very basic knowledge of the following languages: HTML & JS. Don’t worry if you get stuck at some point in the workshop, everything is explained for you to understand!
 
 For this workshop we will use [Repl.it](https://repl.it), click [here](https://repl.it/languages/html) to create a coding environment right for this workshop.
 
@@ -21,13 +21,13 @@ For this workshop we will use [Repl.it](https://repl.it), click [here](https://r
 
 ## HTML
 
-Alright, the first thing we have to do is to install Chart JS in our html document, to do this, we are going to paste the following code inside of our `<head>` tag. 
+Alright, the first thing we have to do is to load Chart.js into our HTML document, to do this, we are going to paste the following code inside of our `<head>` tag. 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 ```
-This allows us to use Chart JS without having to download it. Learn about CDN [here](https://www.cloudflare.com/es-la/learning/cdn/what-is-a-cdn/).
+This allows us to use Chart.js without having to download it. Learn about CDNs [here](https://www.cloudflare.com/es-la/learning/cdn/what-is-a-cdn/).
 
-The next thing we have to do is to create a [canvas](https://www.w3schools.com/html/html5_canvas.asp) element inside of our `body` tag, and give it an **id**. In this canvas is where our Chart will be drawn in.
+The next thing we have to do is to create a [canvas](https://www.w3schools.com/html/html5_canvas.asp) element inside of our `body` tag, and give it an **id**. Our chart will be drawn in this canvas.
 ```html
 <canvas id="myChart"></canvas>
 ```
@@ -53,22 +53,26 @@ Here's how our HTML document looks so far:
 
 ## CSS
 
-Now that we have our HTML document ready, we should style it a little bit to make it look better. So, go ahead and click on the `style.css` file located in the **Files tab**.
+Now that we have our HTML document ready, we should style it a little bit to make it look better. So, go ahead and click on the `style.css` file located in the **Files** tab.
 
 The first thing we want to do, is to align all the input and button elements to the center.
 ```css
 div {
-display:flex;
-justify-content:center;
+  display:flex;
+  justify-content:center;
 }
 ```
 Let's break this down:
+
 - The `display` property sets whether an element is treated as a [block or inline element](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout) and the layout used for its children, such as [flow layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout), [grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) or [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout).
+
 - The `justify-content` property defines how the browser distributes space between and around content items along the [main-axis](https://developer.mozilla.org/en-US/docs/Glossary/Main_Axis) of a flex container, and the inline axis of a grid container.
 
 When we click on *run*, we'll see that our elements are perfectly aligned to the center.
+
 ![Div aligned to the center](https://cloud-48yrakqtz.vercel.app/0image.png)
-*Note: Make sure your style.css file is linked to your html document so we can see changes.*
+
+*Note: Make sure your style.css file is linked to your HTML document so we can see changes.*
 
 Cool! – But our elements look very boring yet, so let's style them a little bit...
 ```css
@@ -94,7 +98,7 @@ input{
 What we basically did here, was to give the elements a background color, a border (with a color too), a border radius, and some other stuff that you can see here:
 ![HTML DOM but with CSS](https://cloud-2dy6ppnzz.vercel.app/0image.png)
 
-Cool, our HTML document looks a lot better now!
+Cool, our website looks a lot better now!
 
 ## JavaScript
 
@@ -154,6 +158,7 @@ var myChart = new Chart(ctx, {
 
 ```
 Let's break this down:
+
 1. In a variable called `chart`, we are creating a Chart object using the `new`  operator.
 2. This object has 2 essential elements: the `type` element; which specifies what type of chart we want to be rendered, and the `data` element; which contains a serie of datasets and labels that will be used to render the chart.
 3. The `backgroundColor:` and `borderColor:` elements set the background and border color for each bar respectively using [rgba colors](https://www.w3schools.com/css/css_colors_rgb.asp).
@@ -190,7 +195,7 @@ Here are some of them:
 
 ### Data
 
-Now we have our chart, but we need to get data from somewhere. So, what we are going to do, is to create a function that takes the input elements and gets their values, then using Chart Js methods, we'll push that data into our chart.
+Now we have our chart, but we need to get data from somewhere. So, what we are going to do, is to create a function that takes the input elements and gets their values, then using Chart.js methods, we'll push that data into our chart.
 ```js
 function addData(chart) {
   chart.data.labels.push(document.getElementById("label").value);
