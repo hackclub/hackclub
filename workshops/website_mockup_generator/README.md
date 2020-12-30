@@ -5,7 +5,7 @@ author: '@hackyguru'
 img: 'https://cloud-aj0lly0fj.vercel.app/0websitemockupgenerator_1_.png'
 ---
 
-# Pixel Art Pad
+# Website Mockup Generator
 
 Creating mockups for websites consume time as we need to take a screenshot manually and edit it. In this workshop, we will be making a *'Website mockup generator'* which will generate mockups in seconds!
 
@@ -15,8 +15,8 @@ The Website mockup generator will be looking like this (You can consider modifyi
 
 You can also take a look at the [live demo][final_live_demo] and [final code][final_code].
 
-[final_live_demo]: https://hcworkshop.19eucs071kumara.repl.co/
-[final_code]: https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator
+[final_live_demo]: https://website-mockup-generator-2.19eucs071kumara.repl.co/
+[final_code]: https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator-2
 [repl_it]: https://repl.it
 
 ## Part 1: Prerequisites
