@@ -27,6 +27,8 @@ It is recommended to have a basic understanding of:
 - JavaScript
 - CSS (totally optional for you to customize the look)
 
+![Difference between HTML CSS and JS](https://media.giphy.com/media/fuJPZBIIqzbt1kAYVc/giphy.gif)
+
 However, this workshop is beginner friendly and you can refer the [final code][final_code] to understand better.
 
 
