@@ -556,18 +556,61 @@ func monitorLocalClip(w *bufio.Writer) {
     }
 }
 ```
-We get the local clipboard and send it. Then in the `for` loop while the clipboard remains the same as last time, we wait. 
+Let's go through this step by step.
+- We get the clipboard from `getLocalClip()`
+- We use the debug function to print some info about `localClipboard`
+- We use a function to send the clipboard to the writer (which could be the writer to a client or server, because both use `monitorLocalClip()`)
+- We handle errors
+- If `localClipboard` is the same as the local clipboard, we wait for some time and check again. If it is still the same, we sleep again. This cycle continues *until* the clipboard changes. When it does, `localClipboard` won't be the same as the actual clipboard on the computer so we'll exit the loop. Because we exited the loop, the code will send the clipboard! 
 
-(we check every second because we set `secondsBetweenChecksForClipChange` to 1 when declaring variables. You can change it!)
+When the function is first called, it immediately sends the current clipboard. Why would we want this? This is because when you join a clipboard, you probably want the other computers to sync up immediately.
 
-When it is no longer the same, we get out of that for loop (This one: `for localClipboard == getLocalClip()`) and then send the new clipboard to the client. (Remember that when calling this function we input the writer to the client).
+Right now, we check every second because we set `secondsBetweenChecksForClipChange` to 1 when declaring variables. You can change it!
 
-We have ANOTHER function to send the clipboard to a writer.
+You: "You have ANOTHER function to send the clipboard to a writer??"
 
-At this point, you're like "omg so many functions it never ends" but in the end it's more readable, it's neater, it's easier to understand and it's easier to manage. A few minutes of looking at the entire source code will convince you of this.
+At this point, you might be like "Oh my god so many functions it never ends" but in the end it's more readable, it's neater, it's easier to understand what each function is doing and it's easier to manage. A few minutes of looking at the entire source code will convince you of this!
+
+### Send the clipboard
+
+The reason we have a seperate function for sending the clipboard is so both the server and the client can send clipboards to each other and we don't have to use duplicate code.
+
+```go
+func sendClipboard(w *bufio.Writer, clipboard string) error {
+
+}
+```
+
+This function will send the clipboard to a writer and return an error if anything goes wrong. We return the error so that we can check for clients that are unreachable and if they are, we can remove them from the list of clients.
+
+When we're sending the clipboard, we put "STARTCLIPBOARD" over it and "ENDCLIPBOARD" below it so that when we're parsing the clipboard the parser knows where one clipboard ends and where another starts (we'll be sending multiple clipboards because they can change, you know). Add in:
+```go
+var err error
+clipString := "STARTCLIPBOARD\n" + clipboard + "\nENDCLIPBOARD\n"
+```
+Sometimes the code gets an empty clipboard for some reason (I have no idea why. Please do tell me if you find out why. I'm **@Ishan** on Slack) so add this to check if it is empty and to not send it if it is empty so that the other computers don't get their clipboards emptied (tongue twister, eh?):
+```go
+if clipboard == "" {
+    debug("was going to send empty string but skipping")
+    return nil
+}
+```
+
+Now we need to show the user what's being sent and then actually send the clipboard.
+Add in:
+```go
+debug("sent:", clipboard)
+_, err = w.WriteString(clipString)
+if err != nil {
+    return err
+}
+err = w.Flush()
+return err
+```
+Because this is a buffered writer, we have to remember to flush. (flush sends all the data in the buffer down the- I mean to the computer at the other end.) Along the way we check for errors and if we find any, we return them.
 
 ### Check for sent clipboards
-This is by far the largest function:
+This is going to be the largest function:
 ```go
 func monitorSentClips(r *bufio.Reader) {
     var foreignClipboard string
@@ -611,53 +654,64 @@ func monitorSentClips(r *bufio.Reader) {
 ```
 
 We define a string at the start to hold sent clipboards.
+```go
+var foreignClipboard string
+```
 
 Then we have a huge `for` loop so that we can keep checking for sent clipboards. Inside this `for` loop is everything else. 
 
+```go
+s, err := r.ReadString('\n')
+if err != nil {
+    handleError(err)
+    return
+}
+```
 We read one line using the `ReadString()` function which takes in a character. How it works is that the function keeps reading until it hits that one character (we chose `"\n"` so we get each line separately) and then returns whatever it found till then *including that one character*. So it basically gives us the next line of input with a newline char at the end.
 
-Then we check if this is the start of a clipboard by checking `if s == "STARTCLIPBOARD\n"`. 
-
-We have yet another for loop that keeps reading more lines and keeps adding them to `foreignClipboard` so we get all of the sent clipboard *until* we find that `s == "ENDCLIPBOARD\n"`. When we see this, we remove the ending newline from `foreignClipboard` because `ReadString()` attaches an extra newline at the end of `s`
-
-So now we have parsed the clipboard and we have it stored in `foreignClipboard`. We set the local clipboard to the sent one (so that both are synced. Our clipboard and the clipboard from far, far away are both the same now)
-
-Then we print what we found if we should (`debug("rcvd:", foreignClipboard)`) and then we have ANOTHER `for` loop in which we send every client which is not `nil` the new clipboard. If we get an error while sending, we set the writer to `nil` so we don't contact him again. This is because we'll get an error after sending if the client simply disconnects (we obviously don't want to contact a client if it's already disconnected). And then when we're done wth sending the clipboard to everyone, we simply reset `foreignClipboard` to `""` so that we can continue getting more clipboards and then this whole cycle starts again!
-
-One thing to note: if this is a client, `listOfClients` will just be empty (look at the source code to convince yourself of this). This means that nothing happens in that for loop if you're a client. When the clipboard is sent, the client will just set it's own clipboard and do nothing else. If it's a server, it'll send all the clients the clipboard as well as set it's own clipboard.
-
-### Send the clipboard
-
-The reason we have a seperate function for sending the clipboard is so both the server and the client can send clipboards to each other and we don't have to use duplicate code.
+```go
+if s == "STARTCLIPBOARD\n" {
+```
+Then we check if this is the start of a clipboard by checking if the string we just read is STARTCLIPBOARD (which is used when sending clipboards to show the start of a clipboard).
 
 ```go
-func sendClipboard(w *bufio.Writer, clipboard string) error {
-    var err error
-    clipString := "STARTCLIPBOARD\n" + clipboard + "\nENDCLIPBOARD\n"
-    if clipboard == "" {
-        debug("was going to send empty string but skipping")
-        return nil
-    }
-    debug("sent:", clipboard)
-    _, err = w.WriteString(clipString)
+for {
+    s, err = r.ReadString('\n')
     if err != nil {
-        return err
+        handleError(err)
+        return
     }
-    err = w.Flush()
-    return err
+    if s == "ENDCLIPBOARD\n" {
+        foreignClipboard = strings.TrimSuffix(foreignClipboard, "\n")
+        break
+    }
+    foreignClipboard += s
 }
 ```
-This function sends the clipboard to a writer and returns an error if anything goes wrong. We return the error so that we can check for clients that are unreachable and if they are, we can remove them from the list.
-
-Sometimes the code gets an empty clipboard for some reason (I have no idea why. Please do tell me if you find out why. I'm **@Ishan** on Slack) so we have this in place to check if it is empty and to not send it if it is empty so that the other computers don't get their clipboards emptied (tongue twister, eh?):
+We have yet another for loop that keeps reading more lines and keeps adding them to `foreignClipboard` so we get all of the sent clipboard *until* we find that `s == "ENDCLIPBOARD\n"`. When we see this, we remove the ending newline from `foreignClipboard` because `ReadString()` attaches an extra newline at the end of `s`. So now we have parsed the clipboard and we have it stored in `foreignClipboard`.
 ```go
-if clipboard == "" {
-    debug("was going to send empty string but skipping")
-    return nil
-}
+setLocalClip(foreignClipboard)
+localClipboard = foreignClipboard // the local clipboard monitoring thread should still get that localClipboard is the same as the local clipboard.
+debug("rcvd:", foreignClipboard)
 ```
+We set the local clipboard to the sent one (so that both are synced. Our clipboard and the clipboard from far, far away are both the same now). Then we print what we found if we should (`debug("rcvd:", foreignClipboard)`)
+```go
+for i, w := range listOfClients {
+    if w != nil {
+        debug("Sending received clipboard to", w)
+        err := sendClipboard(w, foreignClipboard)
+        if err != nil {
+            listOfClients[i] = nil
+            fmt.Println("error when trying to send the clipboard to a device. Will not contact that device again.")
+            //handleError(err)
+        }
+    }
+}
+foreignClipboard = ""
+```
+We have another `for` loop in which we send every client which is not `nil` the new clipboard. If we get an error while sending, we set the writer to `nil` so we don't contact him again. This is because we'll get an error after sending if the client simply disconnects (we obviously don't want to contact a client if it's already disconnected). And then when we're done with sending the clipboard to everyone, we simply reset `foreignClipboard` to `""` so that we can continue getting more clipboards and then this whole cycle starts again!
 
-When we're sending the clipboard, we put "STARTCLIPBOARD" over it and "ENDCLIPBOARD" below it so that when we're parsing the clipboard the parser knows where one clipboard ends and where another starts (we'll be sending multiple clipboards because they can change, you know).
+One thing to note: if this is a client, `listOfClients` will just be empty. This means that nothing happens in that for loop if you're a client. When the clipboard is sent, the client will just set it's own clipboard and do nothing else. If it's a server, it'll send all the clients the clipboard as well as set its own clipboard.
 
 ### Get the local clipboard
 
