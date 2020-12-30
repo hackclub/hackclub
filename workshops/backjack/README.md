@@ -1216,7 +1216,6 @@ Last but not least let call this function :
     while (Tl_Dl_card < 16) {
       Hit_Dealer_card();
       }
-   }
    ```
  + Inside ` player_win() `  function call out  ` Check_player_3card() ` function :
     ```c++
