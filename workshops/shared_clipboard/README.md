@@ -714,31 +714,57 @@ We have another `for` loop in which we send every client which is not `nil` the 
 One thing to note: if this is a client, `listOfClients` will just be empty. This means that nothing happens in that for loop if you're a client. When the clipboard is sent, the client will just set it's own clipboard and do nothing else. If it's a server, it'll send all the clients the clipboard as well as set its own clipboard.
 
 ### Get the local clipboard
-
+This function will run the installed clipboard utility's command to get the clipboard. 
 ```go
 func getLocalClip() string {
+
+}
+```
+Define a few variables:
+```go
     var out []byte
     var err error
     var cmd *exec.Cmd
-    if runtime.GOOS == "darwin" { // darwin means it's macOS
-        cmd = exec.Command("pbpaste")
-    } else if runtime.GOOS == "windows" {
-        cmd = exec.Command("powershell.exe", "-command", "Get-Clipboard")
+```
+`out` will hold the ouput of the commands we run.  
+`err` will hold any errors we encounter
+`cmd` is a special type of variable that holds a command to run.
+
+Now we'll check for different OSs because different OSs will have different commands for getting the clipboard. In Go, you can check the OS using the variable `runtime.GOOS`. Add in:
+```go
+if runtime.GOOS == "darwin" { // darwin means it's macOS
+    cmd = exec.Command("pbpaste")
+} else if runtime.GOOS == "windows" {
+    cmd = exec.Command("powershell.exe", "-command", "Get-Clipboard")
+} else {
+    // Unix - check what's available
+    if _, err := exec.LookPath("xclip"); err == nil {
+        cmd = exec.Command("xclip", "-out", "-selection", "clipboard")
+    } else if _, err := exec.LookPath("xsel"); err == nil {
+        cmd = exec.Command("xsel", "--output", "--clipboard")
+    } else if _, err := exec.LookPath("wl-paste"); err == nil {
+        cmd = exec.Command("wl-paste", "--no-newline")
+    } else if _, err := exec.LookPath("termux-clipboard-get"); err == nil {
+        cmd = exec.Command("termux-clipboard-get")
     } else {
-        // Unix - check what's available
-        if _, err := exec.LookPath("xclip"); err == nil {
-            cmd = exec.Command("xclip", "-out", "-selection", "clipboard")
-        } else if _, err := exec.LookPath("xsel"); err == nil {
-            cmd = exec.Command("xsel", "--output", "--clipboard")
-        } else if _, err := exec.LookPath("wl-paste"); err == nil {
-            cmd = exec.Command("wl-paste", "--no-newline")
-        } else if _, err := exec.LookPath("termux-clipboard-get"); err == nil {
-            cmd = exec.Command("termux-clipboard-get")
-        } else {
-            handleError(errors.New("sorry, myclip won't work if you don't have xsel, xclip, wayland or Termux installed :("))
-            os.Exit(2)
-        }
+        handleError(errors.New("sorry, myclip won't work if you don't have xsel, xclip, wayland or Termux installed :("))
+        os.Exit(2)
     }
+}
+```
+The `exec.Command()` function lets you run commands found installed on the computer. (Like commands you can run in the terminal: ls, cd, etc.)
+
+We set the `cmd` variable to whatever pre-installed command should be run.
+
+For OSs which do not have clipboard utilities pre-installed we have to do a slightly more complicated thing. If the OS is not macOS or Windows, we use the `exec.LookPath()` function to see what's installed. It returns the path to the binary we search for and an `error` variable.
+
+For each check we do, if the error is nil - which means that the command was found and can be used - we set `cmd` to the command we need to use to get the clipboard. 
+
+For example, if we have `xclip` installed on a linux system, `exec.LookPath()` will return no error and so we'll use the command `xclip -out -selection clipboard` to get the clipboard.
+
+If we don't find any of the utilities installed, we make a new error and shutdown the entire program. (`os.Exit(2)` will exit with status code 2) 
+
+```go
     if out, err = cmd.Output(); err != nil {
         handleError(err)
         return "An error occurred wile getting the local clipboard"
@@ -747,91 +773,112 @@ func getLocalClip() string {
         return strings.TrimSuffix(string(out), "\r\n") // powershell's get-clipboard adds a windows newline to the end for some reason
     }
     return string(out)
-}
 ```
+`cmd.Output()` then runs the command and returns the output as a slice of bytes (the output will be the clipboard because that's what the command does!). If we find that there is an error, we handle the error and then return "An error occurred wile getting the local clipboard" as the clipboard because if we have to return something, why not make it descriptive.
 
-
-We define some helper variables and then we check for different OSs because different OSs will have different commands for getting the clipboard. In Go, you can check the OS using the variable `runtime.GOOS`. 
-
-The `exec.Command()` function lets you run commands found installed on the computer. (Like commands you can run in the terminal: ls, cd, etc.)
-
-We set the `cmd` variable to whatever pre-installed command should be run.
-
-For OSs which do not have clipboard utilities pre-installed we have to do a slightly more complicated thing. If the OS is not macOS or Windows, we use the `exec.LookPath()` function to see what's installed. (It returns the path to the binary we search for and an `error` variable)
-
-We check for binaries. For each check we do, if the error is nil - which means that the command was found and can be used - we set `cmd` to the command we need to use to get the clipboard. 
-
-For example, if we have `xclip` installed on a linux system, `exec.LookPath()` will return no error and so we'll use the command `xclip -out -selection clipboard` to get the clipboard.
-
-If we don't find any of the utilities installed, we make a new error and shutdown the entire program. (`os.Exit(2)` will exit with status code 2) 
-
-`cmd.Output()` then runs the command and returns the output as a slice of bytes (this will be the clipboard because that's what the command does). If we find that there is an error, we handle the error and then return "An error occurred wile getting the local clipboard" as the clipboard because if we have to return something, why not make it descriptive.
-
-On Windows, the powershell command attaches a newline at the end of the clipboard for who knows what reason so we remove that. 
+On Windows, the powershell command attaches a newline character at the end of the clipboard for who knows what reason so we remove that. 
 
 Then, we finally return the clipboard after converting the slice of bytes to a string! 
 
 ### Set the local clipboard
-This part is very similar to the "Get the local clipboard" part
+This function takes in a string which the clipboard will be set to.
 ```go
 func setLocalClip(s string) {
-    var copyCmd *exec.Cmd
-    if runtime.GOOS == "darwin" {
-        copyCmd = exec.Command("pbcopy")
-    } else if runtime.GOOS == "windows" {
-        copyCmd = exec.Command("powershell.exe", "-command", "Set-Clipboard -Value "+"\""+s+"\"")
+
+}
+```
+
+Add in:
+```go
+var copyCmd *exec.Cmd
+if runtime.GOOS == "darwin" {
+    copyCmd = exec.Command("pbcopy")
+} else if runtime.GOOS == "windows" {
+    copyCmd = exec.Command("powershell.exe", "-command", "Set-Clipboard -Value "+"\""+s+"\"")
+} else {
+    if _, err := exec.LookPath("xclip"); err == nil {
+        copyCmd = exec.Command("xclip", "-in", "-selection", "clipboard")
+    } else if _, err := exec.LookPath("xsel"); err == nil {
+        copyCmd = exec.Command("xsel", "--input", "--clipboard")
+    } else if _, err := exec.LookPath("wl-copy"); err == nil {
+        copyCmd = exec.Command("wl-copy")
+    } else if _, err := exec.LookPath("termux-clipboard-set"); err == nil {
+        copyCmd = exec.Command("termux-clipboard-set")
     } else {
-        if _, err := exec.LookPath("xclip"); err == nil {
-            copyCmd = exec.Command("xclip", "-in", "-selection", "clipboard")
-        } else if _, err := exec.LookPath("xsel"); err == nil {
-            copyCmd = exec.Command("xsel", "--input", "--clipboard")
-        } else if _, err := exec.LookPath("wl-copy"); err == nil {
-            copyCmd = exec.Command("wl-copy")
-        } else if _, err := exec.LookPath("termux-clipboard-set"); err == nil {
-            copyCmd = exec.Command("termux-clipboard-set")
-        } else {
-            handleError(errors.New("sorry, uniclip won't work if you don't have xsel, xclip, wayland or Termux:API installed :("))
-            os.Exit(2)
-        }
+        handleError(errors.New("sorry, uniclip won't work if you don't have xsel, xclip, wayland or Termux:API installed :("))
+        os.Exit(2)
     }
-    var in io.WriteCloser
-    var err error
-    in, err = copyCmd.StdinPipe()
-    if err != nil {
-        handleError(err)
-        return
-    }
-    if err = copyCmd.Start(); err != nil {
-        handleError(err)
-        return
-    }
-    if _, err = in.Write([]byte(s)); err != nil {
-        handleError(err)
-        return
-    }
-    if err = in.Close(); err != nil {
-        handleError(err)
-        return
-    }
-    if err := copyCmd.Wait(); err != nil {
-        handleError(err)
-        return
-    }
+}
+```
+Just like the last part, we have a command variable and then we look for what's available and all that.
+
+```go
+var in io.WriteCloser
+var err error
+in, err = copyCmd.StdinPipe()
+if err != nil {
+    handleError(err)
+    return
+}
+if err = copyCmd.Start(); err != nil {
+    handleError(err)
+    return
+}
+if _, err = in.Write([]byte(s)); err != nil {
+    handleError(err)
+    return
+}
+if err = in.Close(); err != nil {
+    handleError(err)
+    return
+}
+if err := copyCmd.Wait(); err != nil {
+    handleError(err)
+    return
+}
+return
+```
+The `in` variable is a special type of writer that can be closed. We'll use it to provide input to the command. You see, these commands work by reading in input from their stdin and then they set the clipboard to that.
+
+This part sets `in` to the writer to the command.
+```go
+in, err = copyCmd.StdinPipe()
+```
+
+We start the command using this:
+
+```go
+if err = copyCmd.Start(); err != nil {
+    handleError(err)
     return
 }
 ```
 
-This function takes in a string to set the clipboard to.
+Then, we convert the string (that the clipboard should become) to a byte slice and feed it into the command:
+```go
+if _, err = in.Write([]byte(s)); err != nil {
+    handleError(err)
+    return
+}
+```
 
-Just like the last part, we have a command variable and then we look for what's available and all that.
+We close the writer and wait for the command to finish:
+```go
+if err = in.Close(); err != nil {
+    handleError(err)
+    return
+}
+if err := copyCmd.Wait(); err != nil {
+    handleError(err)
+    return
+}
+```
 
-After that is the part that is different. The `in` variable let's us write to the input of the command. We start the command. Then, we convert the string to a byte slice and feed it into the command. The command then does our work for us and sets the computer's clipboard to the string we fed into it.
+The command then does our work for us and sets the computer's clipboard to the string we fed into it.
 
 The command is like:
 
 ![I'm doing my part](https://media.giphy.com/media/YYfEjWVqZ6NDG/giphy.gif)
-
-We wait for the command to complete its job and we close the writer and we're on our way!
 
 ## The End
 
