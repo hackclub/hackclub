@@ -475,7 +475,6 @@ You are free to customize and contribute to the website mockup generator! You ca
 
 - Customize the styles with your own CSS to make the mockup generator look better
 - Add watermark to the mockup
-- Allow users to specify the background color to the mockup
 - Add more window frames
 
 I would love to hear from you and take a look at your own mockup generators! You can share it on the `#scrapbook` channel on Hack Club Slack or send it to me directly via DM (@Guru). Thanks and happy hacking!
