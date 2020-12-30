@@ -36,7 +36,7 @@ However, this workshop is beginner friendly and you can refer the [final code][f
 
 [Repl.it](https://repl.it) is an amazing online code editor where we will be writing our code. Though repl.it is not mandatory, I strongly recommend you to use it in order to avoid installations and downloads.
 
-To get started, Create your Repl by going to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will be created in a few moments.
+To get started, create your repl by going to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will be created in a few moments.
 
 ![Setting up repl.it](https://cloud-flfptkrmk.vercel.app/0setuprepl.gif)
 
@@ -73,21 +73,21 @@ First, let us write the required HTML code for the website mockup generator. You
 </html>
 ```
 #### The site title
-In the `<head>` section, Replace the text inside the title tag to the title you want. In my case, I am replacing it with 'Website Mockup Generator'
+In the `<head>` section, Replace the text inside the title tag to the title you want. In my case, I am replacing it with 'Website Mockup Generator'.
 
 ```html 
 <title>Website Mockup Generator</title>
 ```
 
 #### Changing the body background color and alignment
-In order to change the background color and the text alignment inside the body, specify a class called 'body' in the body tag. We will be providing CSS styling for the body class later.
+In order to change the background color and the text alignment inside the `body`, specify a class called `body` in the body tag. We will be providing CSS stylings for the `body` class later.
 
 ```html
 <body class="body">
 ```
 
 #### The heading
-In the `<body>` provide the heading inside `<h1>...</h1>` tags. In my case, I am providig the heading as 'Website Mockup Generator'.
+In the `<body>` we will add a heading inside `<h1>...</h1>` tags.
 
 ```html
 <h1>Website Mockup Generator</h1>
@@ -97,7 +97,7 @@ In the `<body>` provide the heading inside `<h1>...</h1>` tags. In my case, I am
 In order to place a text input field to get the website from the URL, use the following line to create a text input with a placeholder 'Enter the website' and provide id to the input as 'websiteAddress'.
 
 ```html
-<input type="text" id="websiteAdress" placeholder='Enter the website'>
+<input type="text" id="websiteAddress" placeholder='Enter the website'>
 ```
 
 #### Placing the buttons
@@ -109,7 +109,7 @@ We need two buttons to generate the mockup and to download respectively. Use the
 ```
 
 #### Generated mockup image
-We will be using an `<image>` tag to display the generated mockup image. Provide the id as `resultImg`.
+We will be using an `<img>` tag to display the generated mockup image. Provide the id as `resultImg`.
 
 ```html
 <img id='resultImg'>
@@ -144,7 +144,7 @@ And that's it! We have completed writing our HTML.
 
 ### 2) style.css
 
-The style.css file is used to customize the look of the website mockup generator. We will be making the background color as red using `backgroundcolor: red;`. We will also align the text to center by `text-align: center;`.
+The style.css file is used to add styles to our website. We will be making the background color as red using `background-color: red;`. We will also align the text to center by `text-align: center;`.
 
 #### Final style.css code:
 ```css
@@ -167,7 +167,7 @@ The script.js file contains the required JavaScript code. The aim of the JavaScr
 Let us implement the above steps one by one :
 
 #### Getting the elements from HTML in JS by their Id
-Firstly, we will be getting the elements from HTML into JS by using their Ids using the following code :
+Firstly, we will be getting the elements from HTML into JavaSript by using their id using the following code :
 
 ```javascript
 const resultImg = document.getElementById("resultImg");
@@ -181,11 +181,12 @@ In order to generate the mockups, we will be defining the generateMockup() funct
 const generateMockup = () => {
 // Function definition here
 }
+```
 
-Now, assign the value of `websiteAdress` to the value from the text input field using :
+Now, assign the value of `websiteAddress` to the value from the text input field using :
 
 ```javascript
-const websiteAdress = document.getElementById("websiteAdress").value;
+const websiteAddress = document.getElementById("websiteAddress").value;
 ```
 
 #### Fetching the mockup image using an API end point
@@ -210,7 +211,7 @@ const resultImg = document.getElementById("resultImg");
 const Download = document.getElementById("Download");
 
 const generateMockup = () => {
-  const websiteAdress = document.getElementById("websiteAdress").value;
+  const websiteAddress = document.getElementById("websiteAddress").value;
   const mockup = "https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=" +websiteAdress;
   console.log(mockup);
 };
@@ -235,7 +236,7 @@ const Download = document.getElementById("Download");
 
 
 const generateMockup = () => {
-  const websiteAdress = document.getElementById("websiteAdress").value;
+  const websiteAddress = document.getElementById("websiteAddress").value;
   const mockup =
     "https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=" +
     websiteAdress;
