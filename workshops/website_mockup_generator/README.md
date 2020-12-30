@@ -374,20 +374,21 @@ const generateMockup = () => {
 }
 ```
 
-Now, assign the value of `websiteAddress` to the value from the text input field using :
+Now, assign the values of `websiteAddress` amd `color` to the value from the text input field using :
 
 ```javascript
 const websiteAddress = document.getElementById("websiteAddress").value;
+const bgColor = document.getElementById("bgColor").value;
 ```
 
 #### Fetching the mockup image using an API end point
 Inside the generateMockup() function, use the following line of code to fetch the mockup image from the API end point :
 
 ```javascript
-const mockup ="https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url="+websiteAdress;
+const mockup ="https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=" +websiteAdress +"&color=" +bgColor;
 ```
 
-The above line appends the website address entered by the user to the end point of the API to fetch the image of the required mockup. The link to the required mockup is assiged to `mockup`.
+The above line appends the website address (`websiteAddress`) and the background color entered by the user to the end point of the API to fetch the image of the required mockup. The link to the required mockup is assiged to `mockup`.
 
 You can optionally print the URL of the mockup image using :
 
@@ -402,9 +403,11 @@ const resultImg = document.getElementById("resultImg");
 const Download = document.getElementById("Download");
 
 const generateMockup = () => {
-  const websiteAddress = document.getElementById("websiteAddress").value;
-  const mockup = "https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=" +websiteAdress;
+  const websiteAdress = document.getElementById("websiteAdress").value;
+  const bgColor = document.getElementById("bgColor").value;
+  const mockup ="https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=" +websiteAdress +"&color=" +bgColor;
   console.log(mockup);
+  resultImg.src = mockup;
 };
 ```
 
