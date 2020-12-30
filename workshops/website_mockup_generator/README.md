@@ -365,6 +365,8 @@ const resultImg = document.getElementById("resultImg");
 const Download = document.getElementById("Download");
 ```
 
+![Button actions](https://cloud-izk2xul9w.vercel.app/0buttonactions.png)
+
 #### Defining the generateMockup() function
 In order to generate the mockups, we will be defining the generateMockup() function which is called when the 'Generate Mockup' button is pressed. Create a function called generateMockup() using:
 
