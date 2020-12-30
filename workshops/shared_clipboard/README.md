@@ -70,8 +70,6 @@ pkg install termux-api
 
 ## Building it!
 
-To be able to sync clipboards, we need to be able to communicate between the devices. We'll do this through TCP sockets (which work over the internet). TCP is a protocol for communication, which means it's a ruleset that computers can follow to communicate.
-
 Open up your favorite editor, make a new file titled `myclip.go` (you can name it whatever you want, really) and add in
 
 ```go
@@ -253,8 +251,7 @@ Add in:
 ```go
 makeServer() // if there's no arguments we should start a new clipboard
 ```
-At this point the only remaining possibility is that the user has not given any arguments. This means that 
-Try testing the code at any point in the workshop! Replace function calls with print statements to see if the option parsing works!
+At this point the only remaining possibility is that the user has not given any arguments. This means that we should start up a new clipboard! The `makeServer()` function will make a server ("no way, *really??*") that will be the connecting point for more computers to join.
 
 ### Handle Errors
 Let's make a function to handle errors:
@@ -299,7 +296,18 @@ The two strings are the two versions of the option - the short option and the lo
 
 The function loops through the arguments and if the argument is either the long version or the short version, it returns true (to say: "yes, the option was found") and it also returns where it was found (the index) so that we can use it for the debug option (check `main()`!). If the loop finishes, which means the option wasn't found, it returns false and 0 because we have to return _something_.
 
-Now, here we can test out the code in `main()` and see if option parsing and error printing works! Just comment out the 
+Now, here we can test out the code in `main()` and see if option parsing and error printing works! Just comment out these lines:
+```go
+makeServer() // if there's no arguments we should start a new clipboard
+```
+```go
+connectToServer(os.Args[1])
+```
+and replace them with print statements like:
+```go
+fmt.Println("Will make a server now!")
+```
+Add in more print statements wherever you want!
 
 ### Remove stuff from slices
 
@@ -374,45 +382,77 @@ This function gets the computers local IP address with which other computers can
 
 The way it works is by checking what IP address the computer would use to connect to the internet.
 
+Check the stackoverflow link for more information.
+
 ### Make a server
 
 ```go
 func makeServer() {
-    fmt.Println("Starting a new clipboard")
-    l, err := net.Listen("tcp4", "0.0.0.0:")
-    if err != nil {
-        handleError(err)
-        return
-    }
-    defer l.Close()
-    port := strconv.Itoa(l.Addr().(*net.TCPAddr).Port)
-    fmt.Println("Run", "`myclip", getOutboundIP().String()+":"+port+"`", "to join this clipboard")
-    fmt.Println()
-    for {
-        c, err := l.Accept()
-        if err != nil {
-            handleError(err)
-            return
-        }
-        fmt.Println("Connected to a device")
-        go handleClient(c)
-    }
+    
 }
 ```
 
-This makes a TCP server that listens for connections.
+Add in:
 
 ```go
+fmt.Println("Starting a new clipboard")
 l, err := net.Listen("tcp4", "0.0.0.0:")
+if err != nil {
+    handleError(err)
+    return
+}
+defer l.Close()
 ```
-This part makes the server and lets Go choose a free port that it can receive connections from.
+We just print out a message showing the user a new clipboard is being made.
+Then we make a server (`l, err := net.Listen("tcp4", "0.0.0.0:")`). The `net.Listen()` takes in the protocol for communication, in this case: TCP, and the address at which it should listen for connections. The address should include the port but here we have not included the port. This means that Go just picks a port which is free on its own. The all zeros IP address tells Go to listen on all IP addresses belonging to the computer.
+
+The `l` variable is a "Listener" which can be used to accept incoming connections.
+
+To be able to sync clipboards, we need to be able to communicate between the devices. We'll do this through TCP sockets (which work over the internet). TCP is a protocol for communication, which means it's a ruleset that computers can follow to communicate.
+
+As usual if we find an error, we handle it and then return.
+
+If there is no error, we immediately "defer" the closing of the listener. This means that when the code finishes running, Go will close the listener.
 
 ```go
 port := strconv.Itoa(l.Addr().(*net.TCPAddr).Port)
 ```
+from the offical docs:
+
+![docs showing that port is variable in the TCPAddr struct](https://cloud-43kwsiiyz.vercel.app/0image.png)
+
+Let's go through that line step by step.  
+`l.Addr()` is the address that the listener is listening on.  
+`(*net.TCPAddr)` converts that address into a type called TCPAddr.  
+`Port` is an int which shows the port number of the address.  
+`strconv.Itoa()` just converts the int to a string. 
+
 This just fetches the port that the server is listening on so that we can show this to the user and then the user can use it to connect to the server.
 
-The `for` loop simply keeps getting connections from the server and sends them to a different function which can then handle them. This is done in a new "goroutine" or thread so we can keep listening for more connections and handle the client at the same time.
+We then print the port formatted with the command and the IP. Add in:
+```go
+fmt.Println("Run", "`myclip", getOutboundIP().String()+":"+port+"`", "to join this clipboard")
+fmt.Println()
+```
+
+Also add in:
+```go
+for {
+    c, err := l.Accept()
+    if err != nil {
+        handleError(err)
+        return
+    }
+    fmt.Println("Connected to a device")
+    go handleClient(c)
+}
+```
+
+`l.Accept()` waits until it gets a connection from a computer and when it does, it returns a `Conn` variable which we can use to communicate to that computer. As usual, we handle errors and print some info.
+
+The `for` loop simply keeps getting connections forever and sends them to a different function which can then handle them. This is done in a new "goroutine" or thread so we can keep listening for more connections and handle the client at the same time.
+
+Hint: A `for` loop in Go with nothing after it is the same as a `while (true)` loop in other languages.
 
 More info about ports, TCP and how the internet works at [www.steves-internet-guide.com/tcpip-ports-sockets](http://www.steves-internet-guide.com/tcpip-ports-sockets/)
 
@@ -424,49 +464,64 @@ func debug(a ...interface{}) {
     }
 }
 ```
-This function takes any number of arguments, nicely formats them in brackets, and prints it out if `printDebugInfo` is `true`. We keep it false unless the user uses the debug option. Here's the relevant piece of `main()` code:
+This function takes any number of arguments (called a "vararg" function. The `...interface{}` lets it accept any number of variables of any type.), nicely formats them in brackets, and prints it out if `printDebugInfo` is `true`. We keep it false unless the user uses the debug option.
 
-```go
-if hasOption, i := argsHaveOption("debug", "d"); hasOption {
-    printDebugInfo = true
-    os.Args = removeElemFromSlice(os.Args, i) // delete the debug option and run again
-    main()
-    return
-}
+If we use the debug function the output will look like this:
+```
+verbose: [some message to be shown if in debug mode]
 ```
 
 ### Handle the client
 
 ```go
 func handleClient(c net.Conn) {
-    w := bufio.NewWriter(c)
-    listOfClients = append(listOfClients, w)
-    defer c.Close()
-    go monitorSentClips(bufio.NewReader(c))
-    monitorLocalClip(w)
+	
 }
 ```
-Get a writer from the connection so we can communicate with the client and add the client to a list of clients so that when we get the clipboard, we can send it to everyone (every client). Now we start another thread which will check for clipboards sent by the client. We input the connection's reader so that the function (`monitorSentClips()`) can get messages sent by the client.
 
-Then we start another function that will check for changes to our own clipboard - the local clipboard - and send the clipboard if it has changed.
+Add in:
+```go
+w := bufio.NewWriter(c)
+defer c.Close()
+```
+This makes a buffered writer that we can write strings to. It will send the strings to the connected computer.
+
+Add in:
+```go
+listOfClients = append(listOfClients, w)
+```
+We need to keep a list of clients so we can send all of them the clipboard when we need to. We just append the writer to the `listOfClients` slice.
+
+Add in:
+```go
+go monitorSentClips(bufio.NewReader(c))
+```
+Now we start another thread which will check for clipboards sent by the client. We input the connection's reader so that the function (`monitorSentClips()`) can get messages sent by the client.
+
+Add in:
+```go
+monitorLocalClip(w)
+```
+
+Then we start another function that will check for changes to our own clipboard - the local clipboard - and send the clipboard if it has changed. We input the writer so that the function can send clipboards if necessary.
 
 ### Connect to server if we are the client
 
 ```go
 func connectToServer(address string) {
-    c, err := net.Dial("tcp4", address)
-    if err != nil {
-        handleError(err)
-        return
-    }
-    defer c.Close()
-    fmt.Println("Connected to the clipboard")
-    go monitorSentClips(bufio.NewReader(c))
-    monitorLocalClip(bufio.NewWriter(c))
+
 }
 ```
 
-Now what if we are the client? If we are the client, we need to connect to the server using the address that the user gives us. 
+```go
+c, err := net.Dial("tcp4", address)
+if err != nil {
+    handleError(err)
+    return
+}
+defer c.Close()
+```
+Now what if we are the client? If we are the client, we need to connect to the server using the address that the user gives us. `net.Dial()` connects to a server at `address`. `net.Dial()`, like the accept function, also returns a `Conn` variable. We'll use this variable to communicate with the server.
 
 Remember, we get the address from this block of code in `main()`:
 ```go
@@ -476,7 +531,12 @@ if len(os.Args) == 2 { // has exactly one argument
 }
 ```
 
-Then we check for changes to our own clipboard and also the clipboards sent by the server.
+```go
+fmt.Println("Connected to the clipboard")
+go monitorSentClips(bufio.NewReader(c))
+monitorLocalClip(bufio.NewWriter(c))
+```
+Then we check for changes to our own clipboard and also the clipboards sent by the server. This is a lot like the code for `handleClient()`.
 
 ### Check for changes to the local clipboard
 
