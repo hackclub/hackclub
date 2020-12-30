@@ -2,7 +2,7 @@
 name: 'Website Mockup Generator'
 description: 'Build a website mockup generator'
 author: '@hackyguru'
-img: 'https://cloud-b7njozaef.vercel.app/0websitemockupgenerator.png'
+img: 'https://cloud-aj0lly0fj.vercel.app/0websitemockupgenerator_1_.png'
 ---
 
 # Pixel Art Pad
@@ -11,7 +11,7 @@ Creating mockups for websites consume time as we need to take a screenshot manua
 
 The Website mockup generator will be looking like this (You can consider modifying the look if you wish) :
 
-[![homepage](https://cloud-b7njozaef.vercel.app/0websitemockupgenerator.png)](https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator)
+[![Demo](https://cloud-ak3dqayi4.vercel.app/0mockupgenerator.gif)](https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator-2)
 
 You can also take a look at the [live demo][final_live_demo] and [final code][final_code].
 
@@ -139,7 +139,9 @@ We will be using an `<img>` tag to display the generated mockup image. Provide t
 </html>
 ```
 
-And that's it! We have completed writing our HTML.
+And that's it! We have completed writing our HTML. Your mockup generator should be looking similar to this :
+
+![Mockup generator with only HTML](https://cloud-cg4k9mn15.vercel.app/0mockupgenerator-html.png)
 
 
 ### 2) style.css
@@ -258,7 +260,7 @@ And finally, the coding part is done!
 
 You can try running the code by pressing the *'Run'* button on the top. You will see the preview of the website mockup generator in the right side pane.
 
-![Pressing the run button](https://cloud-oy8uhg1nh.vercel.app/0websitemockup.gif)
+![Pressing the run button](https://cloud-kk7f3ujxb.vercel.app/0mockuprun.gif)
 
 Hurray! Cheers on building your own website mockup generator.
 
