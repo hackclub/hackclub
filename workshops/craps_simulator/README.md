@@ -1,13 +1,13 @@
 ---
-name: 'Mad Libs Program'
+name: 'Craps Simulator Program'
 description: 'Recreate Mad Libs!'
 author: '@JakeGerber'
-image : 'https://cloud-qziue462l.vercel.app/0screenshot__1420_.png'
+image : 'https://cloud-isbdai043.vercel.app/0screenshot__1441_.png'
 ---
 
-# Recreate Mad Libs!
+# Create a Craps Simulator!
 
-<img src="https://cloud-qziue462l.vercel.app/0screenshot__1420_.png" width="380" alt="Mad Libs Example">
+<img src="https://cloud-isbdai043.vercel.app/0screenshot__1441_.png" width="380" alt="Craps Simulator Example">
 
 <img src="https://media.tenor.com/images/2801410c4dff2f169ebedddacb55dc70/tenor.gif" width="400" alt="Kirby Gif">
 
