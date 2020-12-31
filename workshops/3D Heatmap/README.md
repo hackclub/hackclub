@@ -1,8 +1,8 @@
 ---
-name: 'Make a 3D Heatmap'
+name: 'Make a 3D Heatmap of a volcano'
 description: 'Created amazing graph with the help of Python'
 author: '@shivesh01'
-image: '![3D Heat Map](https://cloud-a08hob7s0.vercel.app/0workshop1.gif)'
+image: (https://cloud-a08hob7s0.vercel.app/0workshop1.gif)'
 ---
 
 
@@ -12,67 +12,60 @@ image: '![3D Heat Map](https://cloud-a08hob7s0.vercel.app/0workshop1.gif)'
 
 [Click here to see a working demo of today's project](https://repl.it/@ShiveshSingh/Volcano-Heatmap#main.py)
 
-
-# Introduction 
-
-![3D](https://cloud-1th3ydnib.vercel.app/0workshop_3d.gif)
-
-
-In this workshop, you will use the Python language and its libraries to create a stunning heat map from scratch. You will learn about the heat map. Our project is about how to collect the data then sort, arrange and present the data visualization. That's all with a couple of lines of code.
-3D modeling has changed the way we design for the better.
+In our workshop, you will use Python programming language and libraries to create a stunning heat map from scratch. And you also learn about 3D heatmaps. Our project is about collecting data then sort, arrange and present the data in a 3D model. We know 3D modeling has changed the way we design for the better.
 
 ![How to present data](https://cloud-3ifpxv546.vercel.app/0image.png)
 
 
 # Getting started
 
-You need to set up a repl account. you can run this program on your Python idle too. It requires some basic knowledge of programming. I have designed this workshop sweet and simple for you. It will just take 15-20 minutes to complete the workshop. 
+You need to set up a repl account or run this program on your Python idle. It requires some basic knowledge of programming. We have designed this workshop as sweet and simple for you. It will only take 15-20 minutes to complete the workshop. 
 
 ## Setting up
 
-- Repl is an online and instant development environment to learn, build, collaborate, and host your project. Show you don’t have to waste time while setting up a development environment. Creating an account on repl is super easy.
+- Repl is an online, instant development environment to learn, build, collaborate, and host your project. Show you don’t have to waste time while setting up a development environment. Creating an account on repl is super easy.
 
 [Create a repl](https://repl.it/signup)
 
 
 ![repl website](https://cloud-73h0sldam.vercel.app/0screenshot_2020-12-25_at_23.03.53.png)
 
-- create a repl by clicking **+ New repl** and choose programming language **PYTHON** and named it as you want and click **create repl**
+- Create a repl by clicking **+ New repl** and choose programming language **PYTHON** and named it as you want and **create repl**
 
-- Download the datasets from a simple click and Drag and drop them to the folder in which you are working on repl.
+- Download the dataset from below, drag and drop them to the folder you are working on repl.\
 [volcano.csv](https://cloud-8ycpvzexa.vercel.app/0volcano.csv)
 
 
 - Rename the file as volcano.csv and place it in the repl folder in which you are working.
 
-- Setup is completed ✅.
+- The setup is complete. ✅.
 
 **Advantage of working on repl**
 
-*when we program in repl it automatically imports the libraries and dependencies with the simple command. So, You just need a repl account or any python idle to get started.*
+*When we program in repl, it automatically imports libraries and dependencies with a simple command. So, you just require a repl account or any python idle get started.*
 
 ![Library](https://cloud-1th3ydnib.vercel.app/1workshop_library.gif)
 
 ## Pandas🐼
-Pandas is a popular Python-based toolkit. It presents a diverse range of utilities like converting an entire data table into a NumPy matrix array and much more. This makes pandas a trusted ally in data science and machine learning.
+Pandas is a popular Python-based toolkit. It presents a diverse range of utilities like converting an entire data table into a NumPy matrix array and much more. That makes pandas a trusted ally in data science and machine learning.
 
 ## Numpy🔢
-NumPy is a library used for working with arrays. It is used to perform a large set of mathematical operations on an array. An array is a data structure consisting of a collection of elements, each identified by at least one array index or key.
+We use NumPy to work with arrays to perform a large set of mathematical operations. An array is a data structure consisting of a collection of elements, each identified by at least one array index or key.
 
 
 ## Matplotlib📊
-A picture is worth a thousand words, and with Python’s matplotlib library, fortunately, takes far less than a thousand words of code to create a production-quality graphic.
+A picture is worth a thousand words, and with Python’s matplotlib library, fortunately, it takes far less than a thousand words of code to create a production-quality graphic.
 
 ## Toolkits🧰
 Toolkits are collections of application-specific functions that extend Matplotlib.
 
 ## Seaborn䷀
-Seaborn library is one of the rarest earth metals. If you are a science student you will get...😄. Seaborn, provides a variety of visualization patterns. It uses fewer syntax and has interesting default themes.
+Seaborn library is one of the rarest earth metals. Seaborn, which provides a variety of visualization patterns, uses fewer syntax and decent themes.
 Great Right!😲
 
-# Step 1 Making 3D Plane
+# Step 1: Making 3D Plane
 
-Plotting 3-D Axis
+
 Importing libraries
 ```python
 from mpl_toolkits.mplot3d import Axes3D
@@ -80,7 +73,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 ```
-The first step is to create 3D Axes, and then plot any of the 3D graphs. We pass ```projection='3d'``` to plt.axes, This is the empty canvas that we'll be painting.
+The first step is to create 3D axes and then plot any of the 3D graphs. We pass ```projection='3d'``` to plt.axes, This is the empty canvas that we'll be painting.
 
 ```python
 fig = plt.figure()
@@ -91,20 +84,22 @@ plt.show()
 
 # 2. Plotting Graph
 
-Plotting 3-D a Graph
+Importing Libraries
 ```python
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+import numpy as np
 ```
 The most basic three-dimensional plot is a line or collection of scatter plot created from sets of (x, y, z) triples.
 
 ```
 ax = plt.axes(projection='3d')
 z = np.linspace(0, 30, 100)
-
+```
 Initialise x is array of np.sin(z), and similarly y is a array of np.cos(z)
+
 ```python
 x = np.sin(z)
 y = np.cos(z)
@@ -120,6 +115,7 @@ plt.show()
 
 # 3. Plotting with Dataset
 
+Importing Libraries
 ```python
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
@@ -127,7 +123,7 @@ import pandas as pd
 import seaborn as sns
 ```
 
-Get the data (CSV file) from the file
+Get the data from the file.\
 volcano [dataset](https://cloud-8ycpvzexa.vercel.app/0volcano.csv)
 
 ```python
@@ -140,7 +136,8 @@ df = data.unstack().reset_index()
 df.columns = ['X', 'Y', 'Z']
 ```
 
-And transform the old column name into something numerical value. Plots have numerical values on the axis of the plane.
+And also transform the old column name into something numerical value. Plots have numerical values on the axis of the plane.
+
 ```
 df['X'] = pd.Categorical(df['X'])
 df['X'] = df['X'].cat.codes
@@ -168,14 +165,19 @@ plt.show()
 **Output**
 ![Volcano Heatmap](https://cloud-94iqxy8lo.vercel.app/0volcano.gif)
 
-### Marvelous! You have created your first 3D Heat Map plot ###
 
 
-# voilà!
+To make 3D plots, we need three coordinates to define each point of the volcano. It's latitude, longitude, and altitude ( X, Y, and Z ). This data has come from the volcano(dataset). Then we will plot each point, and then it will give us the 3D model of the volcano. And then, we have also added colors to make this 3D plot into 3D Heatmap.
+
+\
+Fantastic! You have created your first 3D Heatmap plot.
 
 
-**Congratulations!✌️ you have completed the workshop. Share it with your friends and family.
-Share with everyone🤗✌️🥳👏🏅🌇🎊**
+# Voilà!
+
+
+Congratulations!✌️ you have completed the workshop. Share it with your friends and family.
+Share with everyone🤗✌️🥳👏🏅🌇🎊
 
 ![congratulations g.i.f](https://cloud-1th3ydnib.vercel.app/2workshop_happy.gif)
 
