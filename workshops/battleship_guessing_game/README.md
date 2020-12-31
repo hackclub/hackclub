@@ -138,6 +138,8 @@ class MainClass {
   }
 }
 ```
+- If "dir" equals 1, then get a random place on the board, and get the two spots after it.
+- The randomness specifies that it will stay within the bounds of the array so it will not cause an error.
 
 ## Ending Statements
 ```csharp
@@ -180,6 +182,7 @@ class MainClass {
   }
 }
 ```
+We are then creating variables to track the ship pieces, the hits, and the guesses.
 
 # Guessing
 ```csharp
@@ -351,6 +354,8 @@ while (true)
   }
 }
 ```
+- We are looking if the guess spot has not been guessed already. If not, we are checking if it is a hit or miss.
+- Depending on if it is a hit or miss, we are updating the player's board. If it is a hit, we are incrementing the "shipHits" integer and comparing it to "shipPieces" to see if we sunk the battleship. If we did we break out of the while loop.
 
 ## Ending Statements
 ```csharp
@@ -422,7 +427,7 @@ while (true)
 drawBoard(board);
 Console.WriteLine($"You won with {guesses} guesses!");
 ```
-
+These last statements draw the final board and tell the user how many guesses it took them.
 
 # Drawing the Board
 ## Creating the Function
@@ -440,6 +445,7 @@ class MainClass {
   }
 }
 ```
+Create a new function and pass in a 2D character array.
 
 ## Top Numbers
 ```csharp
@@ -465,6 +471,8 @@ class MainClass {
   }
 }
 ```
+- The "asciiValue" integer is initialized and used later.
+- We are then looping through and displaying the top numbers (1-6).
 
 ## The Rest
 ```csharp
@@ -501,6 +509,8 @@ class MainClass {
   }
 }
 ```
+- We are then using the ascii value and incrementing it each loop time in order to display the letters.
+- The for loop goes line by line to display the user's board.
 
 # Final Code
 ```csharp
@@ -655,4 +665,7 @@ class MainClass {
 ```
 
 # More You Can Create
-
+- [Original Program](https://repl.it/@CosmicSnowman/Battleship-Workshop#main.cs)
+- [Add More Ships](https://repl.it/@CosmicSnowman/Battleship-Workshop-Expanded-1#main.cs)
+- [Add Color](https://repl.it/@CosmicSnowman/Battleship-Workshop-Expanded-2#main.cs)
+- [Add the Option to Play Again](https://repl.it/@CosmicSnowman/Battleship-Workshop-Expanded-3#main.cs)
