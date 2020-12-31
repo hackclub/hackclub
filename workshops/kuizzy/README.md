@@ -445,7 +445,7 @@ Explanation:
 * Every time the server sends a question, we open a SweetAlert containing the question and its answers.
 * Once the player answers, we emit the answer to the server, and show another SweetAlert which says "Waiting for others" (to answer the question)
 
-Add the beginning of the `io.on("connection", ...` in the Server JavaScript, add
+At the beginning of the `io.on("connection", ...` in the Server JavaScript, add
 
 ``` js
 let attempt = ""
