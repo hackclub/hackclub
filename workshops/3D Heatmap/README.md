@@ -63,7 +63,7 @@ Toolkits are collections of application-specific functions that extend Matplotli
 Seaborn library is one of the rarest earth metals. Seaborn, which provides a variety of visualization patterns, uses fewer syntax and decent themes.
 Great Right!😲
 
-# Step 1: Making 3D Plane
+# 1. Making 3D Plane
 
 
 Importing libraries
