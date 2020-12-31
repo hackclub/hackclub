@@ -45,7 +45,7 @@ class MainClass {
   }
 }
 ```
-- We are creating two arrays, an actual board and a board.
+- We are creating two [2D arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays), an actual board and a board.
 - The actual board is like the key, it will have the locations of the ships.
 - The board is the user's board and is like a blank canvas.
 
@@ -69,7 +69,7 @@ class MainClass {
 }
 ```
 - Put this code right under where we initialized the board.
-- Create a random object.
+- Create a [random](https://docs.microsoft.com/en-us/dotnet/api/system.random?view=net-5.0) object.
 - Get a random number that is either a 0 or 1. This will represent is the ship will be vertical or horizontal.
 ## Horizontal
 ```csharp
@@ -215,7 +215,7 @@ while (true)
   }
 }
 ```
-- This try-catch block will catch and bad inputs that cause errors.
+- This [try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch) block will catch and bad inputs that cause errors.
 ## User Input
 ```csharp
 while (true)
