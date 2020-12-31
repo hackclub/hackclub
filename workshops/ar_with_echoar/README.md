@@ -265,13 +265,7 @@ Then pick the .glb option and download it.
 
 ![Download Section Image](https://cloud-p2xzvvkn8.vercel.app/0unknown.png)
 
-have downloadednow upload your model to an and repaeat the steps in tNow that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
-Now that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
-Now that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
-Now that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
-Now that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
-Now that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
-Now that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
+Now that you have downloaded your model, you can upload your model to EchoAR by following the instructions in the `Setting up EchoAR Account and Uploading Models to EchoAR` section.
 
 ## Finished Product
 
