@@ -1,6 +1,6 @@
 ---
 name: 'Craps Simulator Program'
-description: 'Recreate Mad Libs!'
+description: 'Make a Craps Simulator!'
 author: '@JakeGerber'
 image : 'https://cloud-isbdai043.vercel.app/0screenshot__1441_.png'
 ---
