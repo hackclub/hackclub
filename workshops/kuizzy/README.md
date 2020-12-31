@@ -1,5 +1,5 @@
 ---
-name: Slack Todo List
+name: Kahoot Clone - Kuizzy
 description: Make a Kahoot clone with SweetAlert, WebSockets, and Node.js
 author: '@KhushrajRathod'
 img: https://cloud-b0r4v3fgu.vercel.app/0screenshot_2020-12-31_at_3.22.47_pm.png
