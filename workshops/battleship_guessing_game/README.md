@@ -21,11 +21,9 @@ Create a new repl and use C# as the language.
 
 <img src="https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
 
-# Initial Statments
-
-<img src="https://media0.giphy.com/media/5zf2M4HgjjWszLd4a5/giphy.gif" width="400" alt="Let Us Begin Gif">
-
 # Initializing the Board
+<img src="https://media4.giphy.com/media/oF5oUYTOhvFnO/200.gif" width="400" alt="Spongebob Gif">
+
 ```csharp
 using System;
 
@@ -53,6 +51,8 @@ class MainClass {
 
 
 # Ship Placement
+<img src="https://media1.giphy.com/media/jUwpNzg9IcyrK/giphy.gif" width="400" alt="Homer Simpson Gif">
+
 ```csharp
 using System;
 
@@ -185,6 +185,8 @@ class MainClass {
 We are then creating variables to track the ship pieces, the hits, and the guesses.
 
 # Guessing
+<img src="https://media4.giphy.com/media/26tjZRQ4mAgj4L3TW/source.gif" width="400" alt="Simpsons Guessing Gif">
+
 ```csharp
 using System;
 
@@ -430,6 +432,8 @@ Console.WriteLine($"You won with {guesses} guesses!");
 These last statements draw the final board and tell the user how many guesses it took them.
 
 # Drawing the Board
+<img src="https://media0.giphy.com/media/fX8mSey5xMn3Q5x4E9/giphy.gif" width="400" alt="Drawing Gif">
+
 ## Creating the Function
 ```csharp
 using System;
@@ -513,6 +517,8 @@ class MainClass {
 - The for loop goes line by line to display the user's board.
 
 # Final Code
+<img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/45/1478516949-testify.gif" width="400" alt="Bart Simpson Gif">
+
 ```csharp
 using System;
 
