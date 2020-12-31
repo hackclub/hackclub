@@ -45,7 +45,7 @@ Link to site: https://IdenticalFarflungTitles.shreygupta1.repl.co/new
 
    *  It will take you a new Repl environment with a [NodeJS](https://www.w3schools.com/nodejs/) configuration. NodeJS is essentially Javascript for servers. It will allow us to manage our database and frontend web pages easily. 
 
-3. Delete all of the code existing in `index.js`. Your Repl environment should only have 1 file and no code in that file. We will be coding in scratch. Here is a reference of how everything should look like:
+3. Delete all of the code existing in `index.js`. Your Repl environment should only have 1 file and no code in that file. We will be coding from scratch. Here is a reference of how everything should look like:
 
    ![Deleting the code existing](https://cloud-53f8aawmx.vercel.app/0screenshot_taken_by_shrey_on_11-11-2020_at_21.11__48_.gif)
 
