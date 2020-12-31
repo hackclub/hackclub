@@ -15,5 +15,3 @@ jobs:
         uses: actions/setup-node@v1
       - name: Format with prettier
         run: npx prettier --write .
-      - name: Check for changes
-        run: git diff --exit-code
