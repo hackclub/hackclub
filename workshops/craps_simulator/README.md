@@ -9,7 +9,9 @@ image : 'https://cloud-isbdai043.vercel.app/0screenshot__1441_.png'
 
 <img src="https://cloud-isbdai043.vercel.app/0screenshot__1441_.png" width="380" alt="Craps Simulator Example">
 
-<img src="https://media.tenor.com/images/2801410c4dff2f169ebedddacb55dc70/tenor.gif" width="400" alt="Kirby Gif">
+<img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/betting-articles/casino/Craps/in-article-how-to-play-craps-2.jpg" width="400" alt="Craps Tutorial">
+
+<img src="https://media4.giphy.com/media/l2Je4BuL5OnZaMrKM/200.gif" width="400" alt="Homer Simpson Betting Gif">
 
 # Repl.it Setup
 
@@ -20,6 +22,8 @@ Create a new repl and use C# as the language.
 <img src="https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
 
 # Initial Statments
+
+<img src="https://media0.giphy.com/media/5zf2M4HgjjWszLd4a5/giphy.gif" width="400" alt="Let Us Begin Gif">
 
 ```csharp
 using System;
@@ -46,8 +50,11 @@ class MainClass
 - The rest of the code we will write will be contained within the while loop we created.
 
 # Playing Again
-## Creating Another While Loop
 We are adding the play again at the beginning so the user can put in the money they want to bet.
+
+<img src="https://media4.giphy.com/media/GV3aYiEP8qbao/200.gif" width="400" alt="Another One Gif">
+
+## Creating Another While Loop
 ```csharp
 using System;
 
@@ -86,6 +93,9 @@ while (true)
 - The string is then uppercased so the user can input a lowercase "y" or "n" if they choose.
 
 ## Checking the Input
+
+<img src="https://thumbs.gfycat.com/PreciousJitteryDotterel-max-1mb.gif" width="400" alt="Panda Gif">
+
 Console.WriteLine($"Your current balance is {balance} dollars.");
 bool playAgain = true;
 while (true)
@@ -170,6 +180,8 @@ class MainClass
 If the "playAgain" boolean is false, then we break out of the while loop.
 
 # Money Down
+
+<img src="https://media0.giphy.com/media/Tex4wVhhs4iwKoV7YT/200_d.gif" width="400" alt="Money Gif">
 
 ## Initial Statements
 ```csharp
@@ -256,6 +268,8 @@ while (true)
 
 
 # Rolling the Dice
+
+<img src="https://i.pinimg.com/originals/3a/34/6b/3a346b536b6a6f5de274bbbff7908ec0.gif" width="400" alt="Rolling Dice Gif">
 
 ## Initial Randomness
 ```csharp
@@ -369,6 +383,8 @@ else
 
 ## Subsequent Rolls
 
+<img src="https://media0.giphy.com/media/QBGYWFjnggIZ8fMjdt/200.gif" width="400" alt="Captain America Gif">
+
 ```csharp
 else
 {
@@ -403,6 +419,9 @@ else
 - If the total is equal to the point, then we win and add the money put down to the user's balance, and then we break out of the while loop.
 
 # Final Code
+
+<img src="https://media.tenor.com/images/2801410c4dff2f169ebedddacb55dc70/tenor.gif" width="400" alt="Kirby Gif">
+
 ```csharp
 using System;
 
