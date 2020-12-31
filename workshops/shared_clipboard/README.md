@@ -70,7 +70,7 @@ pkg install termux-api
 
 ## Building it!
 
-Open up your favorite editor, make a new file titled `myclip.go` (you can name it whatever you want, really) and add in
+Open up your favorite editor (I recommend VS Code and GoLand), make a new file titled `myclip.go` (you can name it whatever you want, really) and add in
 
 ```go
 package main
@@ -142,6 +142,7 @@ We'll store client addresses in `listOfClients` so that we can send the clipboar
 ```go
 listOfClients = make([]*bufio.Writer, 0)
 ```
+The `make()` function is an inbuilt function that creates new variables. Here, we're making a slice which will hold pointers to `bufio.Writer`s with length 0.
 
 `localClipboard` will just hold the contents of the computer's clipboard.
 ```go
@@ -167,7 +168,7 @@ Our program will:
 - Print out some help if the `--help` option is used.
 - Print the version if the `--version` option is used.
 
-The main function, literally:
+To start we'll write the main function, literally:
 ``` go
 func main() {
     
@@ -310,7 +311,7 @@ fmt.Println("Will make a server now!")
 Add in more print statements wherever you want!
 
 ### Remove stuff from slices
-
+When we'll use the debug option, we'll need it removed from `os.Args` (check `main()`!)
 ```go
 func removeElemFromSlice(slice []string, i int) []string {
     return append(slice[:i], slice[i+1:]...)
@@ -364,6 +365,7 @@ if hasOption, i := argsHaveOption("debug", "d"); hasOption {
 When I was first writing this code, I just thought that clearing the element and setting it to empty would be enough. Turns out that we'd have to properly remove the whole thing because if we don't, `len(os.Args)` will be one more than it should be (the empty element is still *counted* as an element)
 
 ### Get the local IP address
+This function gets the computers local IP address with which other computers can connect (you can see how this is useful).
 
 ```go
 func getOutboundIP() net.IP {
@@ -378,13 +380,15 @@ func getOutboundIP() net.IP {
     return localAddr.IP
 }
 ```
-This function gets the computers local IP address with which other computers can connect (you can see how this is useful).
+
 
 The way it works is by checking what IP address the computer would use to connect to the internet.
 
-Check the stackoverflow link for more information.
+Check the [Stack Overflow link](https://stackoverflow.com/questions/23558425/how-do-i-get-the-local-ip-address-in-go/37382208#37382208) for more information.
 
 ### Make a server
+
+We'll make a server that clients can connect to and send or receive clipboards.
 
 ```go
 func makeServer() {
@@ -457,6 +461,7 @@ Hint: A `for` loop in Go with nothing after it is the same as a `while (true)` l
 More info about ports, TCP and how the internet works at [www.steves-internet-guide.com/tcpip-ports-sockets](http://www.steves-internet-guide.com/tcpip-ports-sockets/)
 
 ### Debug function
+We'll have a special function for printing messages that don't need to be seen by users unless they use the debug option. Remember, using the debug option sets `printDebugInfo` to true.
 ```go
 func debug(a ...interface{}) {
     if printDebugInfo {
@@ -466,12 +471,14 @@ func debug(a ...interface{}) {
 ```
 This function takes any number of arguments (called a "vararg" function. The `...interface{}` lets it accept any number of variables of any type.), nicely formats them in brackets, and prints it out if `printDebugInfo` is `true`. We keep it false unless the user uses the debug option.
 
-If we use the debug function the output will look like this:
+When we use the debug function the output will look like this:
 ```
 verbose: [some message to be shown if in debug mode]
 ```
 
 ### Handle the client
+
+So we've connected to a client now. Then we'll set up everything so we can receive and send clipboards from it. 
 
 ```go
 func handleClient(c net.Conn) {
@@ -507,6 +514,8 @@ Then we start another function that will check for changes to our own clipboard 
 
 ### Connect to server if we are the client
 
+Now what if we are the client? If we are the client, we need to connect to the server using the address that the user gives us.
+
 ```go
 func connectToServer(address string) {
 
@@ -521,7 +530,7 @@ if err != nil {
 }
 defer c.Close()
 ```
-Now what if we are the client? If we are the client, we need to connect to the server using the address that the user gives us. `net.Dial()` connects to a server at `address`. `net.Dial()`, like the accept function, also returns a `Conn` variable. We'll use this variable to communicate with the server.
+`net.Dial()` connects to a server at `address`. `net.Dial()`, like the accept function, also returns a `Conn` variable. We'll use this variable to communicate with the server.
 
 Remember, we get the address from this block of code in `main()`:
 ```go
@@ -561,7 +570,7 @@ Let's go through this step by step.
 - We use the debug function to print some info about `localClipboard`
 - We use a function to send the clipboard to the writer (which could be the writer to a client or server, because both use `monitorLocalClip()`)
 - We handle errors
-- If `localClipboard` is the same as the local clipboard, we wait for some time and check again. If it is still the same, we sleep again. This cycle continues *until* the clipboard changes. When it does, `localClipboard` won't be the same as the actual clipboard on the computer so we'll exit the loop. Because we exited the loop, the code will send the clipboard! 
+- If `localClipboard` is the same as the actual clipboard on the computer, we wait for some time and check again. If it is still the same, we sleep again. This cycle continues *until* the clipboard changes. When it does, `localClipboard` won't be the same as the actual clipboard on the computer so we'll exit the loop. Because we exited the loop, the code will send the clipboard! 
 
 When the function is first called, it immediately sends the current clipboard. Why would we want this? This is because when you join a clipboard, you probably want the other computers to sync up immediately.
 
@@ -596,8 +605,7 @@ if clipboard == "" {
 }
 ```
 
-Now we need to show the user what's being sent and then actually send the clipboard.
-Add in:
+Now we need to show the user what's being sent and then actually send the clipboard. Add in:
 ```go
 debug("sent:", clipboard)
 _, err = w.WriteString(clipString)
@@ -610,7 +618,10 @@ return err
 Because this is a buffered writer, we have to remember to flush. (flush sends all the data in the buffer down the- I mean to the computer at the other end.) Along the way we check for errors and if we find any, we return them.
 
 ### Check for sent clipboards
-This is going to be the largest function:
+
+We'll need to listen for incoming clipboards and do something when we receive them. That's what this function will do.
+
+This is going to be the largest one:
 ```go
 func monitorSentClips(r *bufio.Reader) {
     var foreignClipboard string
@@ -928,14 +939,14 @@ This workshop was based off my Uniclip project: [github.com/quackduck/uniclip](h
 Stuff other Hackclubbers made after following this workshop:
 
 - Khushraj made [uniclip-ngrok.js](https://gist.github.com/KhushrajRathod/87035f73d6c2d69dbeb9704ad317d7f2)
-  - It uses ngrok to share over the internet so anyone can share clipboards even if they're halfway across the world.
+   - It uses ngrok to share over the internet so anyone can share clipboards even if they're halfway across the world.
 - Jason made [github.com/jasonappah/myclip-additions](https://github.com/jasonappah/myclip-additions)
    - It provides a web dashboard that can show your clipboard history.
 - Sam made [clipboard-with-logs.go](https://gist.github.com/sampoder/f3555d873d3d569f7927801d9977d54a)
+   - It creates a file that logs the clipboard history with time displayed.
 
 Jason and Khushraj demoed their projects and you can watch [here](https://cloud-51eavoxvn.vercel.app/0zoom_1.mp4)
 
-Sam demoed his [here](https://youtu.be/i4F_npU3UrI?t=1972)
 ## The full source code
 It's pretty long
 
