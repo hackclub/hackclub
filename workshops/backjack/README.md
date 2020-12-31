@@ -1494,7 +1494,7 @@ Well done you have just you now have leveled up, you can now run your game and s
 # Challenge 
 Now go on and show everyone what you have made. Aren't they impress about this or you too,  well I have something in store for you to try it out :
 
- +  Make the game to  be able to take a bet from the player which will reward the player coins if they win check out again that video about how the game work:
+ + Make the game to  be able to take a bet from the player which will reward the player coins if they win check out again that video about how the game work:
 
    Struggling?
    
@@ -1511,7 +1511,7 @@ Now go on and show everyone what you have made. Aren't they impress about this o
 
  + What if I keep forgetting how many win I have from the dealer, create and variable that keeps a record of the number of the player's win and the dealer's win then after the player has won or loose and the game is over the game, print out the result. so you can see your score compare to the dealer.
  
- [Check out my code here](https://repl.it/@chrisrama/Blackjack-game-Winner-review#main.cpp)
+    [Check out my code here](https://repl.it/@chrisrama/Blackjack-game-Winner-review#main.cpp)
 
  + Can you A=ddd Multiple players inside the game, so more than 3 people can play together? this will require some research.
 
