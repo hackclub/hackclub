@@ -189,7 +189,7 @@ Using our basic knowledge of HTML and researching of the Bootstrap documentation
 2. New bookmark
 3. Existing bookmakrs
 
-You can do the UI however you feel, I think they should all be in 3 separate containers. See my code here and at it below the `head` tag in your `index.html`.
+You can design the UI however you'd like, I think they should all be in 3 separate containers. See my code below and add it below the `head` tag in your `index.html`.
 
 ```html
 <body style="text-align: center;">
