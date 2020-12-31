@@ -162,7 +162,7 @@ plt.show()
 ```
 
 
-**Output**
+**Output**\
 ![Volcano Heatmap](https://cloud-94iqxy8lo.vercel.app/0volcano.gif)
 
 
