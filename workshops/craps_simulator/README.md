@@ -62,6 +62,11 @@ class MainClass
 {
   static void Main(string[] args)
   {
+      Random random = new Random();
+      int balance = 10;
+
+      Console.WriteLine("Welcome to Craps");
+
       while (true)
       {
           Console.WriteLine($"Your current balance is {balance} dollars.");
