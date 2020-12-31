@@ -197,9 +197,232 @@ class MainClass {
 }
 ```
 - Add this while loop. We are going to focus on this for the rest of the "Guessing" section.
+## Try-Catch
+```csharp
+while (true)
+{
+  try
+  {
+  }
+  catch
+  {
+    Console.WriteLine("Bad input.");
+  }
+}
+```
+- This try-catch block will catch and bad inputs that cause errors.
 ## User Input
-## Checking
+```csharp
+while (true)
+{
+  try
+  {
+    drawBoard(board);
+    Console.Write("Enter a letter: ");
+    string colLetter = Console.ReadLine();
+    colLetter = colLetter.ToUpper();
+    int row = 0;
+
+    Console.Write("Enter a number: ");
+    string rowInput = Console.ReadLine();
+    int col = Int32.Parse(rowInput)-1;
+  }
+  catch
+  {
+    Console.WriteLine("Bad input.");
+  }
+}
+```
+- We are asking the user for a letter and making it upper case. This represents our column. We will convert it to a number in a moment.
+- We are asking for a number and parsing it to an integer.
+
+## Letter Input to Number
+```csharp
+while (true)
+{
+  try
+  {
+    drawBoard(board);
+    Console.Write("Enter a letter: ");
+    string colLetter = Console.ReadLine();
+    colLetter = colLetter.ToUpper();
+    int row = 0;
+
+    Console.Write("Enter a number: ");
+    string rowInput = Console.ReadLine();
+    int col = Int32.Parse(rowInput)-1;
+    
+    if (colLetter == "A")
+    {
+        row = 0;
+    }
+    else if (colLetter == "B")
+    {
+        row = 1;
+    }
+    else if (colLetter == "C")
+    {
+        row = 2;
+    }
+    else if (colLetter == "D")
+    {
+        row = 3;
+    }
+    else if (colLetter == "E")
+    {
+        row = 4;
+    }
+    else if (colLetter == "F")
+    {
+        row = 5;
+    }
+  }
+  catch
+  {
+    Console.WriteLine("Bad input.");
+  }
+}
+```
+We are assigning the letters to a a number. 
+## Checking Guess
+```csharp
+while (true)
+{
+  try
+  {
+    drawBoard(board);
+    Console.Write("Enter a letter: ");
+    string colLetter = Console.ReadLine();
+    colLetter = colLetter.ToUpper();
+    int row = 0;
+
+    Console.Write("Enter a number: ");
+    string rowInput = Console.ReadLine();
+    int col = Int32.Parse(rowInput)-1;
+
+    if (colLetter == "A")
+    {
+        row = 0;
+    }
+    else if (colLetter == "B")
+    {
+        row = 1;
+    }
+    else if (colLetter == "C")
+    {
+        row = 2;
+    }
+    else if (colLetter == "D")
+    {
+        row = 3;
+    }
+    else if (colLetter == "E")
+    {
+        row = 4;
+    }
+    else if (colLetter == "F")
+    {
+        row = 5;
+    }
+
+    if (board[row, col] == '.')
+    {
+        guesses++;
+        if (actualBoard[row, col] == 'X')
+        {
+            board[row, col] = 'X';
+            //Console.WriteLine("Hit!");
+            shipHits++;
+            if (shipHits == shipPieces)
+            {
+                break;
+            }
+        }
+        else
+        {
+            board[row, col] = 'O';
+            //Console.WriteLine("Miss!");
+        }
+    }
+  }
+  catch
+  {
+      Console.WriteLine("Bad input.");
+  }
+}
+```
+
 ## Ending Statements
+```csharp
+while (true)
+{
+  try
+  {
+    drawBoard(board);
+    Console.Write("Enter a letter: ");
+    string colLetter = Console.ReadLine();
+    colLetter = colLetter.ToUpper();
+    int row = 0;
+
+    Console.Write("Enter a number: ");
+    string rowInput = Console.ReadLine();
+    int col = Int32.Parse(rowInput)-1;
+
+    if (colLetter == "A")
+    {
+        row = 0;
+    }
+    else if (colLetter == "B")
+    {
+        row = 1;
+    }
+    else if (colLetter == "C")
+    {
+        row = 2;
+    }
+    else if (colLetter == "D")
+    {
+        row = 3;
+    }
+    else if (colLetter == "E")
+    {
+        row = 4;
+    }
+    else if (colLetter == "F")
+    {
+        row = 5;
+    }
+
+    if (board[row, col] == '.')
+    {
+        guesses++;
+        if (actualBoard[row, col] == 'X')
+        {
+            board[row, col] = 'X';
+            //Console.WriteLine("Hit!");
+            shipHits++;
+            if (shipHits == shipPieces)
+            {
+                break;
+            }
+        }
+        else
+        {
+            board[row, col] = 'O';
+            //Console.WriteLine("Miss!");
+        }
+    }
+  }
+  catch
+  {
+      Console.WriteLine("Bad input.");
+  }
+}
+
+drawBoard(board);
+Console.WriteLine($"You won with {guesses} guesses!");
+```
+
 
 # Drawing the Board
 
