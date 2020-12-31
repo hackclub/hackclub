@@ -15,7 +15,7 @@ The Final Project will look like this.
 
 Here's the [Live Demo](https://EchoAR-Models.aaditgupta21.repl.co) and [Final Code](https://repl.it/@aaditgupta21/EchoAR-Models)
 
-## Part 1: Prerequisites
+## Prerequisites
 
 You should have a basic understanding of:
 
@@ -23,7 +23,7 @@ You should have a basic understanding of:
 - CSS
 - JavaScript
 
-## Part 2: Setup
+## Setup
 
 ### Setting up Environment on Repl.it
 
@@ -37,13 +37,13 @@ After a few seconds you should see this page.
 
 ## Learning the Default Files
 
-## HTML File
+### HTML File
 
 Let's first start looking at the default `index.html` file.
 
 At the top of the file we have `<!DOCTYPE html>`. This line helps tell the browser that this is an `HTML` file. We then have the `<html>` and `<head>` tag. Inside the `<head>` tag we will add our imports.
 
-## CSS/JS Files File
+### CSS/JS Files File
 
 In the `<head>` tag of your HTML, you should see these lines.
 
@@ -54,7 +54,7 @@ In the `<head>` tag of your HTML, you should see these lines.
 
 This is linking the `style.css` file and the `script.js` file to your `index.html` file.
 
-### Setting up EchoAR Account and Uploading Models to EchoAR
+## Setting up EchoAR Account and Uploading Models to EchoAR
 
 [EchoAR Website](https://echoar.xyz) is a platform where you can store your 3D models and all the relevant formats for different platforms. You can sign up at their website, and you should be good to go under the "Individual (Free)" plan.
 
@@ -72,7 +72,7 @@ Then, click the share icon and go to the link on your keyboard.
 
 ![Share Button on the EchoAR Website](https://cloud-hr9mfuhs3.vercel.app/0unknown.png)
 
-Next, inspect the page s with "Inspect Element" so we can get the model links!
+Next, inspect the page s with "Inspect Element" so we can get the model links
 
 ![Right Click dialog on EchoAR Screen](https://cloud-pwb6bv0iq.vercel.app/0unknown.png)
 
@@ -82,7 +82,7 @@ Go to the `Elements` tab and look for the `modal-viewer` element and copy the `s
 
 Repeat this for all the models that you want in your application.
 
-### Creating the HTML
+## Creating the HTML
 
 First, we need to import some scripts people have made in order to use AR and make it compatible with different browsers and devices. These imports go at the end of the `head` tag. In addition, we import `Bootstrap` in order to easily style our website.
 
@@ -126,13 +126,12 @@ First, we need to import some scripts people have made in order to use AR and ma
 ></script>
 ```
 
-These are the imports necessary to show the 3D Models and for AR support.
+The main imports here are the last two imports which gives us a Web Component called `model-viewer`. You can read more about what a Web Component is and the `model-viewer` Web Component specifically [here](https://developers.google.com/web/updates/2019/02/model-viewer). This Web Component allows us to display 3D models in the browser. In addition, it also works with AR on Android using ARCore and works with AR on IOS using ARKit.
 
-Inside the `body` tag we can add a `modal-viewer` which will display our 3d element. We set some settings on its properties and inside we have a button which will be displayed on compatible devies and will allow the user to see the object in AR. We use the classes `btn` and `btn-primary` as bootstrap gives these classes good stylings for buttons.
+Inside the `body` tag we add the `model-viewer` Web Component which displays our 3D Model. Inside the `model-viewer` we have a button which will be displayed on compatible devies and will allow the user to see the object in AR (the `slot` and `ar-button` settings help display it). We use the classes `btn` and `btn-primary` as bootstrap gives the stylings for them.
 
 ```html
 <model-viewer
-  alt="3D Model"
   quick-look-browsers="safari chrome"
   camera-controls
   auto-rotate
@@ -149,6 +148,20 @@ Inside the `body` tag we can add a `modal-viewer` which will display our 3d elem
 </model-viewer>
 ```
 
+On the `model-viewer` we set some properties, here are what they each do:
+
+- `quick-look-browsers` Alows you to launch on IOS with both Safari and Chrome
+- `camera-controls` Enables the user to control the model (ie. move it around/rotate it)
+- `auto-rotate` Automatically rotates the model
+- `ar` Enables the use of AR on the model
+- `unstable-webxr` Enables AR Experiences using the device's webXR API
+- `preload` Enables preloading of the model
+- `shadow-intensity` Turns on shadows for the model
+- `loading` Loads the model immediatly (since it is "eager")
+- `id` sets an id that we can use to access it from the JS and control its styling in the CSS
+
+You can learn about more properties of the model-viewer on their [documentation](https://modelviewer.dev/docs/).- quick-look-browsers --
+
 Above this, we can have some buttons which can be used to switch models. In addition, we will make the function `switchModel` used in the `onclick` when we work on the javascript.
 
 ```html
@@ -158,7 +171,7 @@ Above this, we can have some buttons which can be used to switch models. In addi
 </button>
 ```
 
-### A bit of styling
+## A bit of styling
 
 Inside the styles.css file, we can add a bit of styling to make our site look better. First, we can tell our modal viewer to use the full screen and give it a background color.
 
@@ -178,7 +191,7 @@ We can also give the buttons some margins so they are a bit spread out.
 }
 ```
 
-### Connecting EchoAR models to the website using Javascript
+## Connecting EchoAR models to the website using Javascript
 
 First, we want to get the modal-viewer element from the [DOM (Document Object Model) Document](https://www.w3schools.com/js/js_htmldom_document.asp) and put it into a variable so that we can change the sources of the modal viewer.
 
@@ -227,6 +240,38 @@ Finally, we can set a default model by calling the `switchModel` function and sp
 ```javascript
 switchModel('car')
 ```
+
+## TinkerCAD Models
+
+You can also create your own models and show it off on your website.
+
+Go to [tinkercad.com](https://tinkercad.com)
+
+Then click `Join Now`. You can then use your Google account and make an account.
+
+You should then see this screen.
+
+![TinkerCAD Dashboard Page](https://cloud-ore2v6yq7.vercel.app/0unknown.png)
+
+Then click Create New Design. Here I created a simple box model. You can make anything you want.
+
+![Example TinkerCAD Model](https://cloud-7a0hegen9.vercel.app/0unknown.png)
+
+After your done with your model click the export button on the top right.
+
+![Export Button Image](https://cloud-kz5o1m29o.vercel.app/0unknown.png)
+
+Then pick the .glb option and download it.
+
+![Download Section Image](https://cloud-p2xzvvkn8.vercel.app/0unknown.png)
+
+have downloadednow upload your model to an and repaeat the steps in tNow that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
+Now that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
+Now that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
+Now that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
+Now that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
+Now that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
+Now that you installed your model, you can go to EchoAR and upload it the same way like said before in the `#Setting up EchoAR Account and Uploading Models to EchoAR` section.
 
 ## Finished Product
 
