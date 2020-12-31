@@ -44,7 +44,7 @@ class MainClass
   }
 }
 ```
-- We are creating a random object which allows us to get random numbers later in our program.
+- We are creating a [random](https://docs.microsoft.com/en-us/dotnet/api/system.random?view=net-5.0) object which allows us to get random numbers later in our program.
 - The "balance" integer represents our money balance.
 - We are welcoming the user to Craps.
 - The rest of the code we will write will be contained within the while loop we created.
@@ -240,7 +240,7 @@ while (true)
  }
 ```
 - Ask the user how much money they want to put down.
-- Add the try-catch statement so our program will not break if the user puts in a bad input.
+- Add the [try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch) statement so our program will not break if the user puts in a bad input.
 
 ## Finishing the Try Statement
 
