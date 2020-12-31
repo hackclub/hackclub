@@ -21,7 +21,7 @@ This is a friendly workshop for beginner or advanced C++ programmers, as it will
 If you never play the blackjack game at all, or you want to know how to play it, don't worry, I have a [short video](https://youtu.be/eyoh-Ku9TCI) for you that explains exactly all the rules about the game. 
  
  
-+ NOTE: it is very important to watch this video when doing this workshop, as everything here is explained in that video.
+ + NOTE: it is very important to watch this video when doing this workshop, as everything here is explained in that video.
  
  
 We are going to be using [repl.it](https://repl.it/) online IDE to create our game. If you don't have an account yet, go over to [repl.it](https://repl.it/signup) sign up page and create an account for yourself. 
@@ -30,9 +30,9 @@ We are going to be using [repl.it](https://repl.it/) online IDE to create our ga
  
 Now before we start, if you have created a new C++ project you will see that Repl.it has already prepared everything we need to get started but for this workshop, we will need some extra libraries, so I have created a project with everything you need to get started then you can fork to the project so it yours.
  
-+[Click here to view the project. ](https://repl.it/@chrisrama/Blackjack-Game) 
+ + [Click here to view the project. ](https://repl.it/@chrisrama/Blackjack-Game) 
  
-I will explain to you now a bit about what I prepare for you in this project. Let’s start with the header files.
+I will explain to you now a bit about what we have in the project so far. Let’s start with the header files.
 
  ```c++ 
 #include <iostream>
@@ -1473,12 +1473,19 @@ Well done you have just you now have leveled up, you can now run your game and s
  </details>
  
 # Challenge 
-Now go on and show everyone what you have made. Aren't they impress about this or you too,  well I have something in store for you to try out :
- +  Make the game to  be able to take a bet from the player which will reward the player coins if the won check out again that video about how the game work:
-   struggling? try to check out [my code](https://repl.it/@chrisrama/blackjack-gameCoinBase#main.cpp), I have added some function that accepts number(money) from the user and doubles the player's bet if they win, or decrease their bet amount to the account if they loose
- + Can you make a new option that allows the player to double the amount before the play says hit or bust, someone just might want more money you know, or if the play changes their mind and would like to decrease their bet amount, there could just slit the bet amount. Can you do this to your game? [check out my example here](https://repl.it/@chrisrama/BlackjackgameDoubleSplit#main.cpp)
- + What if I keep forgetting how much might score from the dealer, create and variable that keeps a record of the number of the player and the dealer then after the player has won or loose and finish the game, so he can see his score compare to the dealer. [check out my code here](https://repl.it/@chrisrama/Blackjack-game-Winner-review#main.cpp)
- + Add Multiple players inside the game, so more than 3 people can play together.
+Now go on and show everyone what you have made. Aren't they impress about this or you too,  well I have something in store for you to try it out :
+
+ +  Make the game to  be able to take a bet from the player which will reward the player coins if they win check out again that video about how the game work:
+
+   Struggling? Try to check out [my code](https://repl.it/@chrisrama/blackjack-gameCoinBase#main.cpp), I have added some function that accepts a number(money) from the user and doubles the player's bet if they win, or decrease their bet amount to the account if they lose
+
+ + Can you make a new option that allows the player to double the amount before the play says hit or bust, someone just might want more money you know, or if the play changes their mind and would like to decrease their bet amount, there could just slit the bet amount. Can you do this to your game? [Check out my example here](https://repl.it/@chrisrama/BlackjackgameDoubleSplit#main.cpp)
+
+ + What if I keep forgetting how much might score from the dealer, create and variable that keeps a record of the number of the player and the dealer then after the player has won or loose and finish the game, so he can see his score compare to the dealer. [Check out my code here](https://repl.it/@chrisrama/Blackjack-game-Winner-review#main.cpp)
+
+ + Add Multiple players inside the game, so more than 3 people can play together.
+
 
 Are people impress now, add more feature you think can be cool for the game
+
 
