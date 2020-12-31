@@ -597,7 +597,7 @@ When we're sending the clipboard, we put "STARTCLIPBOARD" over it and "ENDCLIPBO
 var err error
 clipString := "STARTCLIPBOARD\n" + clipboard + "\nENDCLIPBOARD\n"
 ```
-Sometimes the code gets an empty clipboard for some reason (I have no idea why. Please do tell me if you find out why. I'm **@Ishan** on Slack) so add this to check if it is empty and to not send it if it is empty so that the other computers don't get their clipboards emptied (tongue twister, eh?):
+Sometimes the user might have an empty clipboard so we add this to check if it is empty and to not send it if it is empty so that the other computers don't get their clipboards emptied (tongue twister, eh?):
 ```go
 if clipboard == "" {
     debug("was going to send empty string but skipping")
