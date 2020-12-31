@@ -27,8 +27,8 @@ Here is the [starter project](https://repl.it/@iMega/flappy-learning-starter#cod
 
 _^ You will see something like this._
 
-## NeuroEvolution Initialization
-Let's begin our coding! We start from our first variable declaration for the Neuroevolution, let's give it a name, like Neuvol and game variable for the game function. Then we initialize the start function.
+## First Line of Code
+Let's begin our coding! We start from our first variable declaration for the Neuroevolution to store the settings for our ML Model, let's give it a name, like Neuvol and game variable to store the game function from game.js. Then we initialize the start function.
 
 ```js
 var Neuvol;
@@ -47,6 +47,8 @@ var start = function(){
 ```
 
 Then we will create a neuron preceptor network. And we will set the population of the baby bird to learn to 50. You can tweak the network of course, but I recommending it as [2, [2], 1] or [4, [4], 1].
+
+_Neuron Preceptor is a network design of the brain of the Machine Learning, similar to human that have its brain cell that united to be a network that is called brain_
 
 ```js
 var start = function(){
