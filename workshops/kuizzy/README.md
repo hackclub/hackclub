@@ -80,7 +80,7 @@ Explanation:
 * First, we're importing [express](https://expressjs.com/), which lets us easily create a HTTP server in Node.js
 * Next, we create an express instance and initialize the http server
 * Following that we start socket.io which allows us to connect to our frontend using WebSockets
-* After that we import the built in events and create a new [EventEmitter](https://www.tutorialspoint.com/nodejs/nodejs_event_emitter.html) which we'll use later
+* After that we import the built in events and create a new [EventEmitter](https://www.tutorialspoint.com/nodejs/nodejs_event_emitter) which we'll use later
 
 Next, enter
 
