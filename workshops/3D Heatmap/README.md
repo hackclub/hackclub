@@ -2,7 +2,7 @@
 name: 'Make a 3D Heatmap of a volcano'
 description: 'Created amazing graph with the help of Python'
 author: '@shivesh01'
-image: (https://cloud-a08hob7s0.vercel.app/0workshop1.gif)'
+image: '(https://cloud-a08hob7s0.vercel.app/0workshop1.gif)'
 ---
 
 
