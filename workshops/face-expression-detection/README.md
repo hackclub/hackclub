@@ -2,7 +2,7 @@
 name: 'Facial Expression Detection'
 description: 'A simple facial expression detection workshop using Python'
 author: '@iamsid47'
-img: https://cloud-4tlcr594m.vercel.app/0expen_e_tracker.png
+img: https://cloud-bj6wcypd4.vercel.app/0expression_detection_using_python.png
 ---
 
 Hi everyone! In this workshop, we will be making a **facial expression detection** program using Python. This program will be able to detect expressions in the terms: **Happy, Sad, Neutral, Angry, and Surprise**.
@@ -11,7 +11,7 @@ The completed project is hosted on Google Colab, and thus can be found [here](ht
 
 ## End result
 
-![angry-face-detected]()
+![angry-face-detected](https://cloud-m37cdf42s.vercel.app/1output.png)
 
 ## Let's get started
 
@@ -27,6 +27,8 @@ Next, we need a lot of images to train our machine to recognize the expression a
 
 Click the **Play/Run** button on the left side of the code snippet to run this command. Now, it will clone the repository and store it onto our notebook. You can check it out by clicking the small **files** icon on the left side of the webpage. Further more, click on the **images** folder, you will see more than a thousand images which will be used for training.
 
+![folder](https://cloud-m37cdf42s.vercel.app/0folder.png)
+
 Now, we want to move over to the **facial_expressions** directory so that we can create a directory where we will be first sorting out all the emotions according to their expressions. Thus, click on the **code** button at the bottom to create a new code snippet. Next, let's move over to the **facial_expressions** directory and create a folder named **data_sets** and inside this folder, let's create 5 other folders namely: **anger, happy, sad, neutral, and surprise**.
 
 ```
@@ -35,6 +37,8 @@ Now, we want to move over to the **facial_expressions** directory so that we can
 ```
 
 You can see that in our cloned directory, there are some `.txt` files named as *anger.txt, happy.txt* and so on. Well these files have the names of the image files which are having those emotions/expressions in them. Meaning, an image depicting *anger* will have it's name in the *anger.txt* file. We now want to extract the images with their expressions and then save them to their respective directories which we just created. For example, the images with *anger* as their expression will go into the **anger** folder.
+
+![create-a-code-snippet](https://cloud-m37cdf42s.vercel.app/2code.png)
 
 For this, create a new code snippet and `import cv2` in it. Now we write in some basic code to move the **anger** only images from the **images** folder to **data_sets/anger**. And as a verification, we add in a `print` statement at the end.
 
@@ -249,7 +253,7 @@ Remember to change the `YOUR-OUTPUT-IMAGE-NAME.jpg` in this snippet to the outpu
 
 ## Voila! You did it!
 
-![]()
+![you-did-it](https://media.giphy.com/media/YP258EkezKv5RSPGRI/giphy.gif)
 
 ## Hack It ;)
 
