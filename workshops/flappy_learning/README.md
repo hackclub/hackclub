@@ -27,7 +27,7 @@ Here is the [starter project](https://repl.it/@iMega/flappy-learning-starter#cod
 
 _^ You will see something like this._
 
-## First Line of Code
+## Artificial Brain Settings
 Let's begin our coding! We start from our first variable declaration for the Neuroevolution to store the settings for our ML Model, let's give it a name, like Neuvol and game variable to store the game function from game.js. Then we initialize the start function.
 
 ```js
@@ -48,7 +48,7 @@ var start = function(){
 
 Then we will create a neuron preceptor network. And we will set the population of the baby bird to learn to 50. You can tweak the network of course, but I recommending it as [2, [2], 1] or [4, [4], 1].
 
-_Neuron Preceptor is a network design of the brain of the Machine Learning, similar to human that have its brain cell that united to be a network that is called brain_
+_**Hacking-Saiyan Secret Informations**: Neuron Preceptor is a mathematical function conceived as a model of biological neurons, a neural network. Usually each input is separately weighted, and the sum is passed through a non-linear function known as an activation function or transfer function._
 
 ```js
 var start = function(){
