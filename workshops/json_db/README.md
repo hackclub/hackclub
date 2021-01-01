@@ -1,7 +1,7 @@
 ---
 name: 'JsonDB'
 description: 'Create your own persistent database with JavaScript!'
-author: '@safinsingh',
+author: '@safinsingh'
 img: 'https://cloud-f26j800mc.vercel.app/0untitled_drawing.png'
 ---
 
