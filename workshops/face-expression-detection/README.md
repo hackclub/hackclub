@@ -260,3 +260,9 @@ Remember to change the `YOUR-OUTPUT-IMAGE-NAME.jpg` in this snippet to the outpu
 You can add a lot more expression rather than just the basic ones. This will also enhance the accuracy of the model you are training. You can also add other repositories having many other images with the same expression (for example: a repository with just images with *anger*) as well. This will also help in improving the accuracy of the image.
 
 ## Demos
+
+In this [demo](https://towardsdatascience.com/emotion-detection-a-machine-learning-project-f7431f652b1f), instead of the `cv2` library, the `dlib` library is being used.
+
+Also, here's an exciting [demo](https://data-flair.training/blogs/python-mini-project-speech-emotion-recognition/) in which instead of image recognition and then expression detection, **speech recognition** and then expression detection from this speech is being made.
+
+Instead of just expression recognition, you can even have a [*real-time* expression detection](https://github.com/gauravtheP/Real-Time-Facial-Expression-Recognition)!
