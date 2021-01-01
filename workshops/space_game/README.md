@@ -30,7 +30,7 @@ import time
 import turtle
 ```
 
-We will be drawing to the screen using the turtle library! Turtle allows us to draw to the screen like a whiteboard. More information [here](https://www.geeksforgeeks.org/turtle-programming-python/). The time library will be used for time!
+We will be drawing to the screen using the turtle library! Turtle allows us to draw to the screen like a whiteboard. More information [here](https://www.geeksforgeeks.org/turtle-programming-python/). The [time library](https://docs.python.org/3/library/time.html) will be used for time!
 
 # Initial Statements
 <img src="https://media2.giphy.com/media/H4iFSugbzV4cIobri3/200.gif" width="380" alt="Start Gif">
