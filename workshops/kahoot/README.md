@@ -45,7 +45,7 @@ Once you have your game codes you are ready.
 
 ## Executing
 
-On the day, load the slideshow from [here](https://workshop-deck-playground-git-add-kahoot-hacking.hackclub.dev/kahoot/0). 
+On the day, load the slideshow from [here](https://workshop-deck-playground-git-add-kahoot-hacking.hackclub.dev/kahoot). 
 
 Run the slideshow through, make sure to give the attendees time to type out their code. 
 
@@ -82,6 +82,8 @@ client.on("QuestionStart", question => {
   question.answer(0);
 });
 ```
+
+This code is the code they should have created in the workshop + the helper function introduced in the slideshow. It loads in the Kahoot module and creates a new client. This client then joins the game with the pin of `000000` in this block and a random name. It then has the helper function that returns the index of an item in an array where the property provided is true. It then has a set up to log when the quiz starts and ends. Lastly, when it receives a question to answer it answers the first option.
 
 Now work with your attendees, inspect the `question` object to find the choices option.
 
