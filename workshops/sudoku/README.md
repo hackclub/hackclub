@@ -59,7 +59,7 @@ class MainClass {
   }
 }
 ```
-Set the board to a 2D array.
+Set the board to a [2D array](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays).
 
 # Places that Can Be Modified
 <img src="https://i.pinimg.com/originals/67/6d/71/676d71d3de7eede22edfba82eb98d888.gif" width="400" alt="Spongebob Looking Gif">
@@ -208,7 +208,7 @@ while (true)
     }
 }
 ```
-Add this try-catch statement to catch any errors.
+Add this [try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch) statement to catch any errors.
 
 ## More User Input
 ```csharp
@@ -555,7 +555,7 @@ public static bool checkSolution(int[][] board)
     return false;
 }
 ```
--Add this function right under the one we just wrote.
+- Add this function right under the one we just wrote.
 - This function checks the row, column, and box of each value to make sure there is only one of the value.
 - We are going to write the "checkRows", "checkCols", and "checkSquare" functions right now.
 - They must all be true for the value to not cause the "solved" boolean to be false.
