@@ -55,9 +55,11 @@ Let's start with importing the libraries we'll be using.
 ```python
 from flask import Flask, request
 import json
+from replit import db
 ```
 
-This just imports the `Flask` and `request` modules from the `flask` library, because they're the only ones we need from that library. We also need `json` because that's what we'll be using for storing our data.
+This just imports the `Flask` and `request` modules from the `flask` library, because they're the only ones we need from that library. We also need `json` because that's what we'll be using for storing our data. We'll be using a [replit database](https://docs.repl.it/misc/database) to store our data.
+
 In order to create a webserver with Flask we'll need to define a Flask app. We do this with the following line:
 ```python
 app = Flask("MyApp")
@@ -102,25 +104,20 @@ The way you specify the route is as simple as specifying the route in the decora
 ```
 The `POST` method tells Flask that we want to send a POST request here to write data instead of a GET request to receive data. 
 
-Now let's write the code that will run when we send this request. We'll need to create the file to write to. We can do this within repl.it.
-![Add File](https://cloud-j1ica8j2r.vercel.app/0image.png)
+Now let's write the code that will run when we send this request. 
 
-Name this file "registered.json"
+
 Let's define our function now. Here's the code:
-```python
+@app.route("/register", methods=['POST'])
 def register():
 	username = request.args.get("username")
 	password = request.args.get("password")
 	data = request.args.get('data')
-	with open('registered.json', 'a+') as db:
-		db.seek(0)
-		check = (f"\"username\": \"{username}\"")
-		contents = db.read()
-		if not(check in contents):
-			db.write(json.dumps({'username': username, 'password': password, 'data':data})+'\n')
-			return("Success")
-		else:
-			return("User already registered.")
+	if not(username in db):
+		db[username] = "{" + f"\"password\": \"{md5(password.encode('utf-8')).hexdigest()}\", \"data\": \"{data}\""  + "}"
+		return("Success")
+	else:
+		return("User already registered.")
 ```
 
 What does this code do? Let's break it down part by part.
@@ -138,30 +135,22 @@ As you can see, the `?` character specifies that arguments will follow. We separ
 
 Now let's take a look at the rest of the route.  
 ```python
-with open('registered.json', 'a+') as db:
-		db.seek(0)
-		check = (f"\"username\": \"{username}\"")
-		contents = db.read()
-		if not(check in contents):
-			db.write(json.dumps({'username': username, 'password': password, 'data':data})+'\n')
-			return("Success")
-		else:
-			return("User already registered.")
+if not(username in db):
+		db[username] = "{" + f"\"password\": \"{md5(password.encode('utf-8')).hexdigest()}\", \"data\": \"{data}\""  + "}"
+		return("Success")
+	else:
+		return("User already registered.")
 ```
 
-In this block, we are using a context manager to open `registered.json` with `a+` to allow us to read and write to the file but only to write to the end of the file.
+In this block, we first check if our username is in the database, to check if the user is registered. If it is, the next line is run.
 
-The line `db.seek(0)` tells us to position the cursor at the beginning of the file. 
-We define a variable `check` that is set to a formatted string containing the username. For example, if the username was "user1" the string would be `"username" = "user1"`. 
-We are also setting `contents` to be the contents of our file.
-
-The `if` statement here determines if the file's contents, `contents`, has the username string, `check`. If it does not, the following lines of code are executed:
 ```python
-db.write(json.dumps({'username': username, 'password': password, 'data':data})+'\n')
-return("Success")
-```
-The `json.dumps` method converts a Python dictionary into a JSON string. We can pass the arguments we took from the request into this dictionary. We add a `\n` to the end of the string to ensure that the next entry starts on the next line. We write this line to the file with `db.write()` and return `"Success"` as the return value. 
-If `check` is in `contents`, this code will not run. Instead, the route will not append anything to the file, and will just return `"User already registered"`.
+db[username] = "{" + f"\"password\": \"{md5(password.encode('utf-8')).hexdigest()}\", \"data\": \"{data}\""  + "}"
+``` 
+This line sets the value `db[username]`, or the value corresponding to this username in the database, to a string formatted like JSON. You'll notice that we're using md5 hashing to save our password, with `md5(password.encode('utf-8')).hexdigest()`. This creates an md5 hash of our string. **VERY IMPORTANT: NEVER STORE PASSWORDS IN PLAINTEXT. ALWAYS USE SOME KIND OF HASHING**
+The code then returns `"Success"`. 
+
+If the user is found in the database, then we're trying to reregister a user. We don't want that, so we return `"User already registered."` and don't update our database.
 
 ## Login Route
 
@@ -177,34 +166,18 @@ The code in this route is more simple than the code for the other route.
 def login():
 	username = request.args.get("username")
 	password = request.args.get("password")
-	with open('registered.json', 'r') as db:
-		jsonList = []
-		for x in db.readlines():
-			jsonList.append(json.loads(str(x)))
-		for i in jsonList:
-			if (i["username"] == username) and (i["password"] == password):
-				return(i["data"])
-		return("User not found")
+	value = db[username]
+	jsonthingy = json.loads(value)
+	if jsonthingy["password"] == md5(password.encode()).hexdigest():
+			return(jsonthingy["data"])
+	return("User not found")
 ```
 
 Once again, we are taking in arguments with `request.args.get` and saving them in variables. However, since we are trying to log in and GET the value of `data` we aren't passing that in. 
-We once again use a context manager to open `registered.json` but this time we use `r` because we only want to read. 
-We define an empty list called `jsonList` that we will populate soon. 
-```python
-for x in db.readlines():
-	jsonList.append(json.loads(str(x)))
-```
-This loop populates the list with Python dictionaries loaded from the JSON strings on each line with `json.loads()`
 
-```python
-for i in jsonList:
-	if (i["username"] == username) and (i["password"] == password):
-		return(i["data"])
-return("User not found")
-```
+Remember how we formatted our value as JSON earlier? Let's convert that JSON string to a Python dictionary with `json.loads`. We first set `value` to `db[username` to get the value assigned to that username. We then set `jsonthingy`, a Python dictionary, to `json.loads(value)`. 
 
-This `for` loop goes through `jsonList` for each value `i` in the list. If `username` and `password` match the values in the dictionary, the method returns `i[data]` or the data value associated with that username and password. We have an `return` statement at the end that runs if the function does not exit. (This works because return statements stop the function from running any further).
-
+We then compare the value assigned to `password` in that dictionary to the hash of the argument we got. If the hashes match, we know that the passwords are the same. If they are the same, we reply with `jsonthingy[data]`, or the data associated with that user. Otherwise, we return `"User not found."`
 ## Testing the Code
 
 Finally, we'll be using Insomnia to test if our code works. 
@@ -237,7 +210,9 @@ We've finished the code! It should look like this:
 
 ```python
 from flask import Flask, request
+from replit import db
 import json
+from hashlib import md5
 
 app = Flask("MyApp")
 
@@ -250,28 +225,21 @@ def register():
 	username = request.args.get("username")
 	password = request.args.get("password")
 	data = request.args.get('data')
-	with open('registered.json', 'a+') as db:
-		db.seek(0)
-		check = (f"\"username\": \"{username}\"")
-		contents = db.read()
-		if not(check in contents):
-			db.write(json.dumps({'username': username, 'password': password, 'data':data})+'\n')
-			return("Success")
-		else:
-			return("User already registered.")
+	if not(username in db):
+		db[username] = "{" + f"\"password\": \"{md5(password.encode('utf-8')).hexdigest()}\", \"data\": \"{data}\""  + "}"
+		return(db[username])
+	else:
+		return("User already registered.")
 
 @app.route("/login", methods=['GET'])
 def login():
 	username = request.args.get("username")
 	password = request.args.get("password")
-	with open('registered.json', 'r') as db:
-		jsonList = []
-		for x in db.readlines():
-			jsonList.append(json.loads(str(x)))
-		for i in jsonList:
-			if (i["username"] == username) and (i["password"] == password):
-				return(i["data"])
-		return("User not found")
+	value = db[username]
+	jsonthingy = json.loads(value)
+	if jsonthingy["password"] == md5(password.encode()).hexdigest():
+			return(jsonthingy["data"])
+	return("User not found")
 
 app.run(host='0.0.0.0')
 ```
@@ -280,16 +248,14 @@ To recap, this code
 * Creates a Flask app
 * Creates routes for the app
 * Reads values from arguments
-* Stores values in a JSON file
+* Hashes passwords
+* Stores values as JSON in a replit database
 * Returns values as a response to a GET or POST request
 
 What this does NOT have:
-* Security
 * Password requirements
-* Encryption
 * CAPTCHA or any anti-bot measures
 
-Note: While you can modify this code to have these features, you should **NEVER** store passwords in plaintext like this webserver does. If you were to implement security features, this webserver would work for login. 
 
 ## Hacks and Further Reading
 
