@@ -281,7 +281,6 @@ fn prompt() -> bool {
 }
 
 // returns nothing, shows the prompt, asks for input with prompt()
-
 pub fn intro() -> () {
     println!("Someone's calling you, do you answer?");
     
@@ -289,14 +288,16 @@ pub fn intro() -> () {
     // a few other expressions that also amount to true are 2 == 2,
     // 1 > 0, or just the word true.
     if prompt() {
-     
+        phone_answered();
     }
     else {
+        phone_declined();
     }
 }
 
 pub fn phone_declined() -> () {
-    println!("You hang up the phone.");
+    println!("You hung up the phone.");
+    println("You didn't find out what was all that about. Maybe you will. One day...");
 }
 
 pub fn phone_answered() -> () {
@@ -304,11 +305,34 @@ pub fn phone_answered() -> () {
     println!("Her voice seems vaguely familiar, and she sounds a bit distressed. Do you accept?"); 
     
     if prompt() {
+        challenge_accepted();
     }
     else {
+        challenge_denied();
     }
 }
+
+pub fn challenge_accepted() -> () {
+    println!("You meet up with the old friend, and she hands you a bag full of cash.");
+    println!("Your friend says: 'Here, don't ask questions, thanks.'");
+    println!("Congratulations! You are now rich and have sufficiently covered your material necessities, but does that amount to true happiness? You may have won the game, but you haven't won at life.");
+    println!("GAME OVER!");
+}
+
+pub fn challenge_denied() -> () {
+    println!("You hung up.");
+    println("You didn't find out what was all that about. Maybe you will. One day...");
+}
 ```
+
+Not only do we trick the player by making them make the most obvious decisions, and then dropping them this moral nuclear bomb right on their faces, but we also get to set the ground for a sequel, should they decide that being given a lot of cash for free is *too good to be true!*
+
+Apart from the comments in the code itself, there's a few important details to note:
+
+- In this example, we have two possible answers, so the story takes two entirely different courses every time. Most videogames end up giving the player the illusion of choice by having them go through short-term consequences, and then twisting the story in such a way so that it all works out the same way or in a slightly different way, and they ultimately end up giving you a different ending. Critically acclaimed titles, such as the **The Last of Us** and the **The Witcher** series, as well as **Night in the Woods**, **Mass Effect** or **Assassin's Creed** games do this.
+- Nevertheless, we still end up giving the player a different dialogue everytime. In our case, it's just that nearly all of the wrong decisions throw the player out of the game.
+- You may want to handle all of the `if... else` clauses and the game logic in one function, instead of dealing with the logic all over the place. However, we believed that the way we wrote the example leaves room for more flexibility.
+
 ### Part 5: Ideas! 💡
 
 Congrats! You've managed to write your first game in Rust. 🎉
@@ -321,11 +345,13 @@ Here's a bunch of ideas that will help you go a step further:
 - Can you include more options in your game for the player to pick from? (**Tip**: Booleans only take two values. Could return another sort of value that will allow you to enter more answers, then evaluate the answer in the prompt itself?)
 - Can you make a game where your program comes up with a random number, has the player try to guess it, and congratulates them if they guess correctly? (**Tip:** Instead of a boolean, the function `prompt()` should return a number instead)
 - Can you make a luck-based game, where you pick dice sizes and have to roll a higher number than the computer?
+- What if you could build entire games ***with graphics*** instead?
 
 Here are a few pointers:
 
 - [The Rust Programming Language - Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
 - [The Rust Programming Language - Patterns and Matching](https://doc.rust-lang.org/book/ch18-00-patterns.html)
+- [Are we game yet?](https://arewegameyet.rs)
 
 You can also check out [this remix](https://repl.it/@cfanoulis/stickerquest-params#main.rs) of this workshop's source code in case you get stuck, which implements some of the ideas:
 
