@@ -2,13 +2,15 @@
 name: 'Space Bar Games'
 description: 'Make two games where you press the space bar as fast as possible!'
 author: '@JakeGerber'
-image: 'https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png'
+image: 'https://cloud-ny55iopyv.vercel.app/0screenshot__1446_.png'
 ---
 
 # Create Space Bar Games!
 In this workshop, we will be creating a two space bar games. In the first you have to press 100 times as fast as possible, and in the second you have to press has much as possible in 5 seconds.
 
-<img src="https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png" width="580" alt="Drawing Example">
+<img src="https://cloud-ny55iopyv.vercel.app/0screenshot__1446_.png" width="580" alt="Space Game 1 Example">
+
+<img src="https://cloud-bmo725iv9.vercel.app/0screenshot__1449_.png" width="580" alt="Space Game 2 Example">
 
 <img src="https://thumbs.gfycat.com/FantasticFaintAmurminnow-small.gif" width="380" alt="Nice Gif">
 
@@ -151,6 +153,7 @@ def space():
     turtle.goto(-50,0)
     turtle.write(str(spacePress) + "/" + str(spacePressAmt) + " presses", font=("Arial", 10, "normal"))
 ```
+We are incrementing the spacePress amount, updating the end variable, and telling the user how much of the way they are on the space count.
 
 ### Ending the Game
 ```csharp
@@ -175,10 +178,10 @@ def space():
       turtle.write("Time is " + str(round(end-start,2)) + " seconds!", font=("Arial", 10, "normal"))
       game1Playing = False
 ```
-
+If spacePress is greater than or equal to spacePressAmt, then we are updating the end time, writing how long it took the user to complete by subtracting the start from the end, and setting game1Playing to false.
 
 ## Game 2
-
+The following code will be for Game 2.
 ### Initial Statements
 ```csharp
 def space():
@@ -207,6 +210,8 @@ def space():
       timerActive = True
       TimerActivate()
 ```
+If Game 2 is being played, increment spacePress and if this is your first time enterig the statement, then set the timer as active by calling the "TimerActive" function.
+
 
 ### Ending the Game
 ```csharp
@@ -241,6 +246,7 @@ def space():
       turtle.write(str(spacePress) + " Presses!", font=("Arial", 10, "normal"))
       game2Playing = False
 ```
+If game2end is true, then let the user know how many presses they got and set game2playing to false. 
 
 # Ending Statements
 ```csharp
@@ -252,6 +258,8 @@ turtle.onkey(right, "Right")
 turtle.listen()
 turtle.mainloop()
 ```
+- These listeners listen for the space bar, left arrow key, and right arrow key, and they call the respective functions.
+- The listen statement allows for the turtle to listen for these key presses.
 
 # Final Code
 ```csharp
