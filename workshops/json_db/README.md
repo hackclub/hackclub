@@ -83,9 +83,11 @@ hello world!
 Alright, that was probably a lot to take in. Let's backtrack a little and answer a couple questions!
 
 Q: Why did we install the `cors` package?
+
 A: CORS, also known as Cross-Origin Resource Sharing, is a method in which you may define external hosts (called origins) from which the server should permit resources. In this case, since we're requesting the data from `hoppscotch`, we'll need to add **middleware** for `express` to allow it to respond correctly.
 
 Q: What's middleware?
+
 A: Typically, middleware is software that you can embed into some sort of pre-existing application and instruct it to execute before or after it performs an operation. In our case, we're using CORS middleware to set the correct HTTP headers before we send responses.
 
 Cool! Now, let's start working on the core of our database-- the method with which we'll alter it. Before we get started, it's worth mentioning that we'll be working with a JSON file to serialize our data to. Effectively, we're using JSON as a format to translate between raw text stored in a file and our code because JavaScript has some really nice built-in abstractions for it. We're also going to be utilizing asynchronous functions from JavaScript's standard `fs` module. What does asynchronous mean? Let's take a look!
