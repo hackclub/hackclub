@@ -5,66 +5,55 @@ author: '@shivesh01'
 image: 'https://cloud-a08hob7s0.vercel.app/0workshop1.gif'
 ---
 
-
 # Volcano Heat Map
 
 ![Demo](https://cloud-94iqxy8lo.vercel.app/0volcano.gif)
 
-[Click here to see a working demo of today's project](https://repl.it/@ShiveshSingh/Volcano-Heatmap#main.py)
+[Click here to see a working demo of today's project.](https://repl.it/@ShiveshSingh/Volcano-Heatmap#main.py)
 
-In our workshop, you will use Python programming language and libraries to create a stunning heat map from scratch. And you also learn about 3D heatmaps. Our project is about collecting data then sort, arrange and present the data in a 3D model. We know 3D modeling has changed the way we design for the better.
+In this workshop, you will use the Python programming language and a couple of libraries to create a stunning heat map from scratch. Along the way, you will also learn about 3D heatmaps. Our project is about collecting data then sorting it, arranging it and lastly presenting it in the form of a 3D model. 
 
 ![How to present data](https://cloud-3ifpxv546.vercel.app/0image.png)
 
-
 # Getting started
 
-You need to set up a repl account or run this program on your Python idle. It requires some basic knowledge of programming. We have designed this workshop as sweet and simple for you. It will only take 15-20 minutes to complete the workshop. 
+Today, we'll be using repl.it to write out doe in. It is an online, instant development environment to learn, build, collaborate, and host your project. Show you don’t have to waste time while setting up a development environment. 
 
-## Setting up
-
-- Repl is an online, instant development environment to learn, build, collaborate, and host your project. Show you don’t have to waste time while setting up a development environment. Creating an account on repl is super easy.
-
-[Create a repl](https://repl.it/signup)
-
+[Sign up and then create a repl here.](https://repl.it/signup)
 
 ![repl website](https://cloud-73h0sldam.vercel.app/0screenshot_2020-12-25_at_23.03.53.png)
 
-- Create a repl by clicking **+ New repl** and choose programming language **PYTHON** and named it as you want and **create repl**
+- Create a repl by clicking **+ New repl** and choose the programming language **PYTHON** and named it whatever you'd like and click **create repl**.
 
-- Download the dataset from below, drag and drop them to the folder you are working on repl.\
-[volcano.csv](https://cloud-8ycpvzexa.vercel.app/0volcano.csv)
+- Then, download the dataset ([`volcano.csv`](https://cloud-8ycpvzexa.vercel.app/0volcano.csv)).
 
-
-- Rename the file as volcano.csv and place it in the repl folder in which you are working.
+- Rename the file to `volcano.csv` and place it in the repl.it folder that you are working in.
 
 - The setup is complete. ✅.
 
-**Advantage of working on repl**
+## Python Libraries
 
-*When we program in repl, it automatically imports libraries and dependencies with a simple command. So, you just require a repl account or any python idle get started.*
+Python libraries are reusable collections of code that others have published. We're able to easily import them into our project and use them.
 
-![Library](https://cloud-1th3ydnib.vercel.app/1workshop_library.gif)
+Here are the libraries we'll be using today:
 
-## Pandas🐼
+### Pandas🐼
 Pandas is a popular Python-based toolkit. It presents a diverse range of utilities like converting an entire data table into a NumPy matrix array and much more. That makes pandas a trusted ally in data science and machine learning.
 
-## Numpy🔢
+### Numpy🔢
 We use NumPy to work with arrays to perform a large set of mathematical operations. An array is a data structure consisting of a collection of elements, each identified by at least one array index or key.
 
-
-## Matplotlib📊
+### Matplotlib📊
 A picture is worth a thousand words, and with Python’s matplotlib library, fortunately, it takes far less than a thousand words of code to create a production-quality graphic.
 
-## Toolkits🧰
+### Toolkits🧰
 Toolkits are collections of application-specific functions that extend Matplotlib.
 
-## Seaborn䷀
+### Seaborn䷀
 Seaborn library is one of the rarest earth metals. Seaborn, which provides a variety of visualization patterns, uses fewer syntax and decent themes.
 Great Right!😲
 
 # 1. Making 3D Plane
-
 
 Importing libraries
 ```python
@@ -162,27 +151,19 @@ plt.show()
 ```
 
 
-**Output**\
+**Output**
 ![Volcano Heatmap](https://cloud-94iqxy8lo.vercel.app/0volcano.gif)
 
+To make 3D plots, we need each data point must have three coordinates to define it's position. These three are it's latitude, longitude, and altitude (X, Y, and Z). This data comes from the volcano.csv dataset. Then we will plot each point, and then it will give us the 3D model of the volcano. And then, we have also added colors to make this 3D plot into 3D Heatmap.
 
-
-To make 3D plots, we need three coordinates to define each point of the volcano. It's latitude, longitude, and altitude ( X, Y, and Z ). This data has come from the volcano(dataset). Then we will plot each point, and then it will give us the 3D model of the volcano. And then, we have also added colors to make this 3D plot into 3D Heatmap.
-
-\
 Fantastic! You have created your first 3D Heatmap plot.
 
-
 # Voilà!
-
 
 Congratulations!✌️ you have completed the workshop. Share it with your friends and family.
 Share with everyone🤗✌️🥳👏🏅🌇🎊
 
 ![congratulations g.i.f](https://cloud-1th3ydnib.vercel.app/2workshop_happy.gif)
-
-
-
 
 # Keep Hacking!
 Mountain Bruno [Code](https://repl.it/@ShiveshSingh/Mtbrunoplot)
@@ -190,15 +171,3 @@ Mountain Bruno [Code](https://repl.it/@ShiveshSingh/Mtbrunoplot)
 Surface Plot [Code](https://repl.it/@ShiveshSingh/Surface-Plot-3D#main.py)
 
 Heat Map Animation [Code](https://repl.it/@ShiveshSingh/HeatmapAnimation)
-
-
-
-
-
-
-
-
-
-
-
-
