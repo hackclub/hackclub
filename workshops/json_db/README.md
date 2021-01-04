@@ -74,7 +74,7 @@ Awesome! We'll head over to [hoppscotch](https://hoppscotch.io/) to finish up th
 
 ![Request](https://cloud-2m3vf7nmm.vercel.app/3request.png)
 
-In the screenshot above, I've copied in the URL of my REPL (in the format: https://<PROJECT_NAME>.<USERNAME>.repl.co) and set the request type to GET. Finally, hit `Send`! You should get a plain response like so:
+In the screenshot above, I've copied in the URL of my REPL (in the format: `https://<PROJECT_NAME>.<USERNAME>.repl.co`) and set the request type to GET. Finally, hit `Send`! You should get a plain response like so:
 
 ```
 hello world!
