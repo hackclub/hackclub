@@ -31,7 +31,7 @@ If any of these concepts don't sound familiar to you, don't worry! We'll be lear
 Let's begin!
 
 # Getting started  
-We'll be using [repl.it](repl.it) to make this project. Head on over to [https://repl.it/languages/HTML](https://repl.it/languages/HTML) to start coding. It's suggested that you make an account so you don't lose your code. 
+We'll be using [repl.it](https://repl.it/) to make this project. Head on over to [https://repl.it/languages/HTML](https://repl.it/languages/HTML) to start coding. It's suggested that you make an account so you don't lose your code. 
 
 ## Loading Bootstrap and Chart.js
 We'll be using Bootstrap to quickly style our interface and give it a clean look. We're simply using a CDN, a content delivery network, to load Bootstrap and the Chart.js library so we can use it later. [*What's a CDN?*](https://www.sitepoint.com/what-is-a-cdn-and-how-does-it-work/)
