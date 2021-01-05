@@ -12,7 +12,7 @@ Have you ever thought of creating a simple and smart Blackjack game using C++, w
  
 ![Live demo of how the game works](https://cloud-5y79yq13o.vercel.app/0screen_recording_2020-12-30_at_00.50.14.mov)
  
-Check out [the final code here](https://repl.it/@chrisrama/Blackjackgame) and the [live demo to the workshop](https://repl.it/join/edraowkm-chrisrama)
+Check out [the final code here](https://repl.it/@chrisrama/Blackjackgame).
  
 ## Getting started
  
@@ -1493,33 +1493,31 @@ Well done you have just you now have levelled up, you can now run your game and 
  ```
  </details>
  
-# Challenge 
-Now go on and show everyone what you have made. Aren't they impress about this or you too,  well I have something in store for you to try it out :
+# Challenges
 
- + Make the game to  be able to take a bet from the player which will reward the player coins if they win check out again that video about how the game work:
 
-   struggling?
+Now go on and show everyone what you have made. Aren't they impress about it, well I have something in store for you to try out :
+ 
+ + Give the player with a balance of 500 coins that will allow them to place a bet, then at the end of each round reward the player with double their bet if they win, or their balance minus the bet. Just like the video in the beginning of the workshop explain.
    
-   
-    Check out [my code here](https://repl.it/@chrisrama/blackjack-gameCoinBase#main.cpp).
-   
-   I have added some function that accepts a number(money) from the user and doubles the player's bet if they win, or decrease their bet amount to the account if they lose.
+    [Check out my code here](https://repl.it/@chrisrama/blackjack-gameCoinBase#main.cpp).
+  
 
-
- + Can you make a new option that allows the player to double the amount before the play says hit or bust, someone just might want more money you know, or if the play changes their mind and would like to decrease their bet amount, there could just split the bet amount. Can you do this to your game?
+ + Can you make a new option that allows the player to double their bet amount before the play says hit or bust. You know, if you, you'd want to get more money when you see that you are winning right? And if the player sees they are loosing and would like to decrease their bet amount, now add another option which allow the player to split their bet amount in half. Can you do this to your game?
     
     [Check out my example here](https://repl.it/@chrisrama/BlackjackgameDoubleSplit#main.cpp)
 
 
- + What if I keep forgetting how many win I have from the dealer, create and variable that keeps a record of the number of the player's win and the dealer's win then after the player has won or loose and the game is over the game, print out the result. So you can see your score compare to the dealer.
+ + What if I keep forgetting how many win I have from the dealer, create and variable that keeps record of the number of the number of win of the player and the dealer. Then display the comparison of win after each round and when the game is over.
  
     [Check out my code here](https://repl.it/@chrisrama/Blackjack-game-Winner-review#main.cpp)
 
- + Can you add multiple players inside the game, so more than 3 people can play together? This will require some research.
+ + Now the difficult challenge, can you add multiple players inside the game, so more than 3 people can play together? Each player can player one after another at the same time. Do some research how you can do that, it can be fun right?
 
 
 Are people impress now, add more feature you think can be cool for the game.
 
+Note : All this change to the game does not affect. The original game, but only add few more functions and line.
 
 
 
