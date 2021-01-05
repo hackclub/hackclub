@@ -1,34 +1,34 @@
 ---
 name: 'Black jackgame'
-description: 'Create your own Blackjack Game Using C++'
+description: 'Create your own blackjack game using C++'
 author: '@chrisrama'
 img: 'https://cloud-qtjz7o7jw.vercel.app/0screenshot_2020-12-30_at_00.57.54.png'
 ---
 
 # Blackjack
 
-Have you ever thought of creating a simple and smart Blackjack game using C++, well you have come to the proper place. In this workshop, you will learn to create your own blackjack game while exploring how functions (especially void function) are used in C++ and why they are important.
+Have you ever thought of creating a simple and smart Blackjack game using C++, well you have come to the right place. In this workshop, you will learn to create your own blackjack game while exploring how functions (especially void function) are used in C++ and why they are important.
  
  
-![Live demo of how the game works](https://cloud-9dplxo8ym.vercel.app/0demo.gif)
+![Live demo of how the game works](https://cloud-5y79yq13o.vercel.app/0screen_recording_2020-12-30_at_00.50.14.mov)
  
 Check out [the final code here](https://repl.it/@chrisrama/Blackjackgame) and the [live demo to the workshop](https://repl.it/join/edraowkm-chrisrama)
  
 ## Getting started
  
-This is a friendly workshop for beginner or advanced C++ programmers, as it will help you practice and understand how functions are used and manipulated in C++.
+This is a friendly workshop for beginner and advanced C++ programmers, as it will help you practice and understand how functions are used and manipulated in C++.
  
 If you never play the blackjack game at all, or you want to know how to play it, don't worry, I have a [short video](https://youtu.be/eyoh-Ku9TCI) for you that explains exactly all the rules about the game. 
  
  
- + NOTE: it is very important to watch this video when doing this workshop, as everything here is explained in that video.
+ + NOTE: it is very important to watch this video when doing this workshop, as the workshop is based entirely on the video’s explanation.
  
  
 We are going to be using [repl.it](https://repl.it/) online IDE to create our game. If you don't have an account yet, go over to [repl.it](https://repl.it/signup) sign up page and create an account for yourself. 
  
 ## First step
  
-Now before we start, if you have created a new C++ project you will see that Repl.it has already prepared everything we need to get started but for this workshop, we will need some extra libraries, so I have created a project with everything you need to get started then you can fork to the project so it yours.
+Now before we start, if you have created a new C++ project you will see that Repl.it has already prepared the things we need to get started but for this workshop, we will need some extra libraries, so I have created a project with everything you need to get started with, then you will need to fork to the project.
  
  + [Click here to view the project. ](https://repl.it/@chrisrama/Blackjack-Game) 
  
@@ -40,34 +40,35 @@ I will explain to you now a bit about what we have in the project so far. Let’
 #include <vector>
 using namespace std;
 ```
-+ Inside the project, I have included the c time library (` <ctime> ` ), this header file will be called when we need to generate random numbers which will be the cards numbers for the players. For more about how how to use the ` ` library, you can found it [Here](http://www.cplusplus.com/reference/ctime/)
-+ I also called the vector library (` <vector> `), because we will be using vectors instead of arrays to keep all the player and the dealer cards.
-+ We are not going to be using ` std:: ` to declare a string variable or output and input message, we then will be using ` using namespace std; ` to inform the program that it won't be using ` std:: ` rather a namespace.
++ Inside the project, I have included the c time library (` <ctime> ` ), this header file will be called when we need to generate random numbers which will be the card numbers for the players. For more about how to use the ` ` library, you can found it [Here](http://www.cplusplus.com/reference/ctime/)
++ I also called the vector library (` <vector> `), because we will be using vectors instead of arrays to keep all the player and the dealer’s cards.
++ We are not going to be using ` std:: ` to declare a string variable or output and input messages, instead we will be using ` using namespace std; ` to inform the program that we won't be using ` std:: ` rather a namespace.
 
  
  ```c++
- /* Declaration section: This will be used to Declare variables and Functions */ 
+ /* Declaration section: this will be used to declare variables and functions */ 
 
-  void start_The_Game();                   /* Declare start_The_Game function */
-    int Pl_card1, Pl_card2, Pl_card_cont;      /* used to stored the Card number for the player*/
-    int Dl_card1, Dl_card2, Dl_card_cont;      /* used to stored the Card number for the Dealer*/
-    int Tl_Pl_card,Tl_Dl_card;                 /*Use to store the total number of card or player and dealer*/
+  void start_The_Game();                   /* declare start_The_Game function */
+    int Pl_card1, Pl_card2, Pl_card_cont;      /* used to stored the card number for the player*/
+    int Dl_card1, Dl_card2, Dl_card_cont;      /* used to stored the card number for the dealer*/
+    int Tl_Pl_card,Tl_Dl_card;                 /*use to store the total number of card or player and dealer*/
 ```
- + Inside the **declaration section**, will be the section we will use to declare variables and functions. In this case, I have declared the first function ` start_The_Game() ` that will be called when we need to start the game. Don't worry if you don't see it used now but you will later.
+ + Inside the **declaration section**, will be the section we will use to declare variables and functions. In this case, I have declared the first function ` start_The_Game() ` that will be called when we need to start the game. Don't worry if you don't see the use now but you will later.
  
-+ For the first integer(short for int) variable declare with multiple variables in it, so when the game starts the player and the dealer(computer) will both will be handed 2 cards, now we declare ` Player card number one ` short for ` Pl_card1 ` that will be used to store the first card number of the player,  we use the ` _ ` (underscore sign) to show that there is a space; Then ` Player card number 2 ` short for ` Pl_card2 ` is used to store the second card.  
-we then have ` Pl_card_cont ` or ` Player card continuous ` which will be used to store the remaining card that will be drawn for the player, therefore continuously.
++ For the first integer (short for int) variable declare with multiple variables with it, so when the game starts the player and the dealer (computer) will both be handed 2 cards, now we declare ` player card number one ` short for ` Pl_card1 ` that will be used to store the first card number of the player,  we use the `  _  ` (underscore sign) to show that there is a space in between; then ` player card number 2 ` short for ` Pl_card2 ` is used to store the second card.  
 
-+ We will then use the same method we use to declare the first cards for the Player, but instead of ` Pl ` for ` Player `, we use ` Dl ` for ` Dealer `. After the dealer got those 2 cards, he will then be given multiple cards that will be represented by the ` Dl_card_cont ` variable.
+we then have ` Pl_card_cont ` or ` player card continuous ` which will be used to store the remaining card that will be drawn for the player as continuously.
 
-+ finally we need a variable that will store the Player's total card and the Dealer's total card, which is used to find who has a blackjack. For ` Tl_Pl_card ` stands for ` Total Player Card` and ` Tl_Dl_card ` stands for ` total dealer card `.
++ We will then use the same method we use to declare the first cards for the player, but instead of ` Pl ` for ` Player `, we use ` Dl ` for ` Dealer `. After the dealer got those 2 cards, he will then be given multiple cards that will be represented by the ` Dl_card_cont ` variable.
+
++ Finally, we need a variable that will store the player's total card and the dealer's total card, which is used to find who has a blackjack. For ` Tl_Pl_card ` stands for ` total player card` and ` Tl_Dl_card ` stands for ` total dealer card `.
 
 ```c++
 int main() {
    /*introduction to the game */
    cout << "\n           Blackjack Game      \n";                 /* the title of the game */
    cout << "\n++++++++++++++++++++++++++++++++\n";                /* line using ++ (plus sign) to separate the title from the body */
-   cout << "\n Welcome to the game.\n Enter your Name: \n";       /*instruct the user to Write their name */
+   cout << "\n Welcome to the game.\n Enter your Name: \n";       /*instruct the player to write their name */
 
 }
 ```
@@ -77,18 +78,18 @@ Inside the main function is where all our code will run. So before the game star
   cout << "\n           Blackjack Game      \n";      /* title of the game */
   cout << "\n++++++++++++++++++++++++++++++++\n";    /* line using ++ (plus sign) to separate the title from the body */
 ```
- We then use the ` \n `(newline character) to tell the program to display a new line, either before or after the written words. For more about [creating new line follow it here](https://www.w3schools.com/cpp/cpp_new_lines.asp).
+ We then use the ` \n `(newline character) to tell the program to display a new line, either before or after the written words. For more about [creating a new line read it here](https://www.w3schools.com/cpp/cpp_new_lines.asp).
  
- We then welcome the player to the game followed by a new line using the ` \n `(newline character)  then ask if they could write their name.
+ We then welcome the player to the game followed by a new line using the ` \n `(newline character)  and ask if they should write their name.
  ```c++ 
-   cout << "\n Welcome to the game.\n Enter your Name: \n";       /*instruct the player to Write their name */
+   cout << "\n Welcome to the game.\n Enter your Name: \n";       /*instruct the player to write their name */
 
  ```
  What I call the **definition section** is where we will define every function declared, example we have the ` start_the_Game() ` function declared, we then going to write the definition and inside the body.
 
  
  ```c++
-/* Definition Section: this section will be used to define all the Declare function*/
+/* definition section: this section will be used to define all the declare function*/
 
 void start_The_Game() {
 
@@ -103,6 +104,7 @@ void start_The_Game() {
  
  ## Getting started with the main function
  
+
  Now inside the **declaration section**, declare a string variable ` player1 `under the interger variable which will be used to stored the first player's name: 
  
  ```c++       
@@ -474,13 +476,13 @@ then let print the message that the player has won the game :
    
  ```
  
- lastly, we will ask the player if they would like to Restart or quit the game :
+ finally, we will ask the player if they would like to Restart or quit the game :
  
  ```c++    
   cout  << "Would you like '1' Restart  or '2' Quit PLAYING\n";         
   ```
   
-  #### Would the player Restart the game or Quite the game
+  #### Would the player restart the game or quite the game
   
 Now to get the answer from the player we will declare a new String variable that can store the answer from the player and call it inside the **declaration section** :
  
@@ -684,7 +686,7 @@ Go back inside the ` start_The_Game() ` function, we should add an else statemen
  
  ```C++
  if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
-       Hit_Bust_check();
+           Hit_Bust_check();
      } else {                                 					   /* place it here */
            cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
 	    
@@ -711,7 +713,7 @@ We then going to call this function inside the else statement of the ` start_The
 
 ```C++
 else {                                  
-           cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
+            cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
 	    getline(cin, answ);                                                
 	    check_Hit_Bust_Stay();                                      	        /* place it here */
      }
@@ -738,7 +740,7 @@ void start_The_Game() {
       cout << "The Dealer is Showing a " << Dl_card1 << " \n\n";
 
       if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
-          Hit_Bust_check();
+             Hit_Bust_check();
         } else {
             cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
             getline(cin, answ);
@@ -809,7 +811,7 @@ Now we also need to add this number inside the player card totals, to do that we
  
  ```
  
-Finally remember that we a variable that store the number of cards for the player, so we will increment that number by 1 :
+finally remember that we a variable that store the number of cards for the player, so we will increment that number by 1 :
 
 ```C++
  num_of_playerCard++;        		
@@ -848,7 +850,7 @@ if (answ == "1") {
   
 ```
 
-Now that the Player has a new card we need to check again if the player card total is bigger or equal to 21 or the dealer's card total is bigger or equal to 21 inside the if statement.
+Now that the player has a new card we need to check again if the player card total is bigger or equal to 21 or the dealer's card total is bigger or equal to 21 inside the if statement.
 
 ```c++
 cout << "] With have a total of : " << Tl_Pl_card << "\n\n";
@@ -1011,23 +1013,23 @@ else if (Tl_Pl_card > Tl_Dl_card && Tl_Pl_card <= 21) {
 Let go back to the ` check_Hit_Bust_Stay() ` function and write the last else statement that calls out the ` Player_Stay() ` function :
 
 ```C++
- if (answ == "1"){
-     Hit_Player_card();         //draw the player car
+ if (answ == "1") {
+     Hit_Player_card();         
      cout << "You have Have been dealt a [" << Pl_card_cont;
      cout << "] With have a total of : " << Tl_Pl_card << "\n\n";
-     
+
      if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
-         Hit_Bust_check();
+            Hit_Bust_check();
          } else {
             cout << "would you like to '1' Hit or '2' bust or '3' stay\n";
             getline(cin, answ);
             check_Hit_Bust_Stay();
-            }
-      } else if (answ == "2") {
+           }
+    } else if (answ == "2") {
             Hit_Bust_check();
-       } else {
+    } else {
          Player_Stay();						/* place it here */
-          }
+     }
 ```
 <details>
 <summary>Well done!!! with have just finished with the function  check_Hit_Bust_Stay(), now let see what we have</summary>
@@ -1048,8 +1050,8 @@ void check_Hit_Bust_Stay(){
             check_Hit_Bust_Stay();
            }
       } else if (answ == "2") {
-        Hit_Bust_check();
-        } else {
+           Hit_Bust_check();
+      } else {
           Player_Stay();
          }
  }
@@ -1496,10 +1498,10 @@ Now go on and show everyone what you have made. Aren't they impress about this o
 
  + Make the game to  be able to take a bet from the player which will reward the player coins if they win check out again that video about how the game work:
 
-   Struggling?
+   struggling?
    
    
-   Try to check out [my code](https://repl.it/@chrisrama/blackjack-gameCoinBase#main.cpp).
+   try to check out [my code](https://repl.it/@chrisrama/blackjack-gameCoinBase#main.cpp).
    
    I have added some function that accepts a number(money) from the user and doubles the player's bet if they win, or decrease their bet amount to the account if they lose.
 
@@ -1513,7 +1515,7 @@ Now go on and show everyone what you have made. Aren't they impress about this o
  
     [Check out my code here](https://repl.it/@chrisrama/Blackjack-game-Winner-review#main.cpp)
 
- + Can you A=ddd Multiple players inside the game, so more than 3 people can play together? this will require some research.
+ + Can you add multiple players inside the game, so more than 3 people can play together? this will require some research.
 
 
 Are people impress now, add more feature you think can be cool for the game.
