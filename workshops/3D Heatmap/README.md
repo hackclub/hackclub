@@ -131,7 +131,7 @@ data = pd.read_csv('volcano.csv')
 ```
 
 Transform it to a long format to plot each data on the 3D plane. We will use  unstack and reset index functions.
-Store the them column x, y, z.
+Store them in column x, y, z.
 
 ```df``` denotes dataframe
 
