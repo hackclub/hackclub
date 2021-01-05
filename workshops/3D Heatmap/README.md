@@ -37,43 +37,52 @@ Python libraries are reusable collections of code that others have published. We
 
 Here are the libraries we'll be using today:
 
-### Pandas🐼
+### Pandas 🐼
 Pandas is a popular Python-based toolkit. It presents a diverse range of utilities like converting an entire data table into a NumPy matrix array and much more. That makes pandas a trusted ally in data science and machine learning.
 
-### Numpy🔢
+### Numpy 🔢
 We use NumPy to work with arrays to perform a large set of mathematical operations. An array is a data structure consisting of a collection of elements, each identified by at least one array index or key.
 
-### Matplotlib📊
-A picture is worth a thousand words, and with Python’s matplotlib library, fortunately, it takes far less than a thousand words of code to create a production-quality graphic.
+### Matplotlib 📊
+Matplotlib one of the famous Python package which is used for data visualization. Python package is used for data analysis. ```matplotlib.pyplot``` is a package which is used for 2D graphics.
 
-### Toolkits🧰
-Toolkits are collections of application-specific functions that extend Matplotlib.
+### Mpl toolkits 🧰
+Mpl Toolkits are collections of  functions that extend Matplotlib application. We will use it to enable us to work with 3D graphics.
 
-### Seaborn䷀
-Seaborn library is one of the rarest earth metals. Seaborn, which provides a variety of visualization patterns, uses fewer syntax and decent themes.
-Great Right!😲
+### Seaborn ䷀
+Seaborn library  provides different variety of visualization patterns, themes, color shades with fewer syntax.
+we use it to transform 3D model to 3D Heatmap model.
+
 
 # 1. Making 3D Plane
+The first step is to create 3D axes and then plot one of the 3D graphs on the 3D axes.
 
-Importing libraries
+We need to import libraries, so we can work on top of it.
+
 ```python
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 ```
-The first step is to create 3D axes and then plot any of the 3D graphs. We pass ```projection='3d'``` to plt.axes, This is the empty canvas that we'll be painting.
+We pass ```projection='3d'``` to plt.axes, This is the empty canvas that we'll be painting.
 
 ```python
 fig = plt.figure()
 ax = plt.axes(projection='3d')
+```
+To see what you have created ```plt.show()``` function is used.
+
+```python
 plt.show()
 ```
 ![3D Plane](https://cloud-a08hob7s0.vercel.app/1workshop2.gif)
 
 # 2. Plotting Graph
 
-Importing Libraries
+To plot graph, we will use a mathematical function to create a helical spring in 3D axes.
+
+We need to import one more library namely ```pandas```
 ```python
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
@@ -87,7 +96,8 @@ The most basic three-dimensional plot is a line or collection of scatter plot cr
 ax = plt.axes(projection='3d')
 z = np.linspace(0, 30, 100)
 ```
-Initialise x is array of np.sin(z), and similarly y is a array of np.cos(z)
+Initialise x is array of np.sin(z), and similarly y is a array of np.cos(z).
+In simple words, we are declaring z is the function of x and y and storing them in arrays.
 
 ```python
 x = np.sin(z)
@@ -103,8 +113,9 @@ plt.show()
 
 
 # 3. Plotting with Dataset
+To plot with dataset, firstly, we will store dataset in a vaiable and then modify dataset a bit and at last, represent the data in the 3D Heatmap model.
 
-Importing Libraries
+Importing all libraries
 ```python
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
@@ -119,34 +130,40 @@ volcano [dataset](https://cloud-8ycpvzexa.vercel.app/0volcano.csv)
 data = pd.read_csv('volcano.csv')
 ```
 
-Transform it to a long format to plot each data on the 3D plane
+Transform it to a long format to plot each data on the 3D plane. We will use  unstack and reset index functions.
+Store the them column x, y, z.
+
+```df``` denotes dataframe
+
 ```python
 df = data.unstack().reset_index()
 df.columns = ['X', 'Y', 'Z']
 ```
 
-And also transform the old column name into something numerical value. Plots have numerical values on the axis of the plane.
+And also transform the old column name into some numerical value using categorical function. Plots have numerical values on the axis of the plane.
 
-```
+```python
 df['X'] = pd.Categorical(df['X'])
 df['X'] = df['X'].cat.codes
 ```
 
 Make the plot in the 3D plane with the help of the projection function.
-Finally, trisurf creates a surface by first finding a set of triangles formed between adjacent points. 
-```
+Finally, trisurf function creates a surface by finding a set of triangles formed between adjacent points. 
+
+```python
 fig = plt.figure()
 ax = fig.gca(projection='3d')
 ax.plot_trisurf(df['Y'], df['X'], df['Z'], cmap=plt.cm.jet, linewidth=0.2)
 ```
-Add a color bar that maps values to colors. The point height on the mountain increase, the color value will shift from blue to red.
+Cmap function is used ata values to RGBA colors and then we will
+add a color bar that map values to colors. The point's height on the mountain increase the color value that will shift from blue to red.
 
 ```python
 surf = ax.plot_trisurf(df['Y'], df['X'], df['Z'], cmap=plt.cm.jet, linewidth=0.2)
 fig.colorbar(surf, shrink=0.5, aspect=5)
 ```
 We will use this function to display the plot on our computer screen.
-```
+```python
 plt.show()
 ```
 
