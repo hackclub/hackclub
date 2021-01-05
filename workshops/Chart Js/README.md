@@ -268,8 +268,9 @@ Now that you know how to use Charts Js, feel free to hack it and use it for your
 
 ##  Live demos
 Check out these charts made by other people using ChartJs:
-- [ChartJS visualization gallery](http://www.bezanilla-solar.cl/libs/jscripts/DevExpressChartJS/Demos/)
-- [Chart Js line demo](https://jsfiddle.net/leighking2/jx1w1xed/)
+- [Pie chart generator](https://repl.it/@wollygfx/Chart-generator-demo-1#index.html)
+- [Line chart generator](https://repl.it/@wollygfx/Chart-generator-demo-2#style.css)
+- [Doughnut chart generator](https://repl.it/@wollygfx/Chart-generator-demo-3#script.js)
 
 ## Resources
 - [10 Chart.js example charts to get you started](https://tobiasahlin.com/blog/chartjs-charts-to-get-you-started/)
