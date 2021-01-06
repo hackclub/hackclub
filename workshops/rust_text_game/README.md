@@ -1,3 +1,4 @@
+
 ---
 name: "Text Adventure Game in Rust"
 description: "Make a text adventure game while writing your first Rust program!"
@@ -11,7 +12,7 @@ Does programming and/or Rust intrigue you, yet you have no idea how to get start
 
 Welp, in that case, this workshop is just for you! It doesn't matter if you're a beginner or already familiar with Rust - The entire process is being written with as much detail as possible, and I've made sure to include a lot of additional resources throughout the workshop, just in case!
 
-**Note:** This workshop was authored with all sorts of different skill levels in mind and may take 20 minutes up to an hour and a half, depending on the level of familiarity.
+**Note:** This workshop was authored with all sorts of different skill levels in mind and may take 30 minutes up to an hour and a half, depending on the level of familiarity.
 
 - If you're familiar with programming, feel free to just glimpse over the first part of _Part 3_.
 - If you're also familiar with the basics of Rust and creating a new project in Rust, skip to _Part 4_.
@@ -25,17 +26,13 @@ The full code can be viewed [on GitHub](https://github.com/hackropolis/stickerqu
 
 ## Part 1: Setup 🔰
 
-In order to initialize your project, you'll either need to [install Rust and its tools on your computer](https://www.rust-lang.org/tools/install) or [repl.it](https://repl.it).
+In order to get ourselves running quicker, we'll be using [repl.it](https://repl.it).
 
-### Setting up your project on repl.it
+### Setting up your project
 
-Using repl.it is advantageous in the sense that you don't need anything apart from a web browser to use it.
+Using repl.it is advantageous in the sense that you don't need anything apart from a web browser to use it. You can create an account [here](https://repl.it/signup) and create a new Rust project by going to https://repl.it/languages/rust:
 
-You can create an account [here](https://repl.it/signup) and create a new Rust project by going tohttps://repl.it/languages/rust:
-
-After doing so, run `cargo init --name rust-text-app`
-
-You can also fork our example, should you wish to do so.
+After doing so, run `cargo init --name rust-text-app` in the Shell tab
 
 ## Part 2: File structure and the Cargo package manager 🏗
 
@@ -57,7 +54,7 @@ src
 
 ### Part 2.1: The Manifest (Cargo.toml)
 
-Here's an example of a simple `Cargo.toml` file:
+The `cargo.toml` file is you project's manifest, which describes your project & its dependencies. Here's how an example `Cargo.toml` file would look like:
 
 `Cargo.toml`:
 ```toml
@@ -71,6 +68,7 @@ edition = "2018"
 - `name` defines how your program is called.
 - `version` defines the version of your program. It's particularly useful if you want to issue updates to the people who are using your program!
 - `authors` is where you put in the names of the people who wrote the program.
+- `edition` describes the version of Rust you want this project to use. You want to keep this as `2018` to make sure you use the latest features.
 
 If you wish to add more than one author, you should separate each author with a comma and use quotation marks:
 
@@ -78,9 +76,7 @@ If you wish to add more than one author, you should separate each author with a 
 authors = ["John Doe <john.doe@example.com>", "Jane Doe <jane.doe@example.com>"]
 ```
 
-There are also a couple of additional _tables_ and _keys_ that you should look into, such as `license` or `[[bin]]`.
-
-You can read up more about the manifest here: https://doc.rust-lang.org/cargo/reference/manifest.html
+There are also a couple of additional _tables_ and _keys_ that you should look into, such as `license` or `[[bin]]`. You can read up more about the manifest here: https://doc.rust-lang.org/cargo/reference/manifest.html
 
 ## Part 3: Getting started with Rust 💫
 
@@ -108,7 +104,7 @@ This is quite an important function! When programs are executed, they generally 
 
 It's called "print" because running a program didn't always involve screens— Instead, actual printers were involved!
 
-- _Semicolons_ give something like a sense of order and coherence to the program.
+- _Semicolons_ mean the instruction ends there. They are there to give a sense of order and coherence to our code.
 
 In order to understand the importance of semicolons, I'll have the computer print two different things in one line:
 
@@ -142,48 +138,18 @@ Alright, our goal is to write a program that will essentially narrate a story to
 
 Let's get started!
 
-### Part 4.1: Rust modules
+### Part 4.1: Output some text
 
-Since we're about to write a lot of different prompts that will all appear depending on the choices that the player makes, it may be worth to split our game across different files, instead of just putting everything in `src/main.rs`!
-
-So, let's create a new file in the `src/` folder called `prompts.rs`! Our directory's structure should now look like this:
-
-```
-Cargo.toml
-src
- ├── main.rs
- └── prompts.rs
-```
-
-In order to import the functions that we're going to write in `prompts.rs`, we should use `mod prompts;`, to inform the compiler about the existence of our new file.
-
-`src/main.rs`:
+So right now, our code looks like this.
 ```rust
-mod prompts;
 fn main() {
-    prompts::intro();
-}
-
-```
-
-You can read more about Rust modules here: https://doc.rust-lang.org/rust-by-example/mod.html
-
-Rust is instructed to execute the function named `intro`, which is exported from the `prompts` crate. This is an **associated** function. But, it currently doesn't exist. Let's implement it now, shall we?
-
-Open the `src/prompts.rs` file, and paste the following in:
-
-`src/prompts.rs`:
-```rust
-// pub stands for "public", not pubs!
-// "public" allows functions to be
-// seen by other project files.
-
-pub fn intro() -> () {
-        println!("Hello brave explorer! Want to embark on an adventure?");
+  println!("Hello, World!");
 }
 ```
 
-Now, you should build and run the program again. The message this time around should differ a little bit!
+ But `Hello, World!` doesn't feel like something you'd see in a game, right?. So, let's change that. Change the text inside the quotes to something else. We'll change it to `Hello brave explorer! Want to embark on an adventure?`.
+ 
+Now run your program again. Instead of `Hello, World`, you should see what you wrote above
 
 ### Part 4.2: User input
 
@@ -209,27 +175,25 @@ fn prompt() -> bool {
 
 Now, I know that this is a lot to take in, but don't fret! Let's just go through what's happening here once more, line-by-line:
 
-    - `use std::io;`
+   - `use std::io;`
     
-    Importing libraries gives us the opportunity to expand our programs however you can imagine. By importing `std::io`, we gain access to more functions that allow us to perform "input/output" operations (like `println!()`, but more advanced!).
+    Importing libraries allows us to use code either installed by cargo, or bundled with Rust (standard library). By importing `std::io` (where `std` means standard library aka included with Rust), we gain access to more functions that allow us to perform "input/output" operations (like `println!()`, but more advanced!).
 
-    - `fn prompt() -> bool {`
+- `fn prompt() -> bool {`
 
-    All functions are meant to return some output, which is either visible to the player, to other programs or parts of the same program.
+    All functions are meant to return some output, which is either visible to the player, to other programs or parts of the same program. In this case, we define a new function called `prompt()`, which will return a value known as a `bool`, which stands for "boolean". Boolean data types can only accept two values, which are denoted with the words `true` or `false` in the Rust programming language. They're named after the mathematician George Boole and are possibly the simplest instance of [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra) in the field of computer science.
 
-    In this case, we define a new function called `prompt()`, which will return a value known as a `bool`, which stands for "boolean". Boolean data types can only accept two values, which are denoted with the words `true` or `false` in the Rust programming language. They're named after the mathematician George Boole and are possibly the simplest instance of [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra) in the field of computer science.
-
-    - `let mut input = String::new();`
+- `let mut input = String::new();`
 
     Here, we create a *mutable* `String`. *Mutability* defines whether you can change the value of a variable. Since we're *initializing* a new string (which means that we declare that the variable `input` exists and is a `String`, but there haven't been any values that have been *declared* to it yet.)
 
-    - `io::stdin().read_line(&mut input).unwrap();`
+- `io::stdin().read_line(&mut input).unwrap();`
 
     Here, using the `io` library again, we capture whatever the player is typing until they hit `Enter` inside the `input` variable.
 
-    - `return input.to_ascii_lowercase().starts_with("y");`
+- `return input.to_ascii_lowercase().starts_with("y");`
 
-    And finally, we check if an all-lowercase counterpart of the input's value starts with `y`. If it does, it means the input was yes (or similar), and returns `true`. If it doesn't, it's safe to assume that the player replied negatively. Therefore, we return the value`false`.
+    And finally, we check if an all-lowercase counterpart of the input's value starts with `y`. If it does, it means the input was yes (or similar), and returns `true`. If it doesn't, it's safe to assume that the player replied negatively. Therefore, we return the value `false`.
 
 ### Part 4.3: Checking the answer!
 
@@ -256,9 +220,95 @@ if answer == true {
 
 You can now create a game by similarly adding more prompts, then using them in the `if... else` blocks of the previous prompt to connect them.
 
+### Part 4.4: Rust modules
+
+Wow... that's a lot of lines written already. If we were to add even 1 more prompt, this would get messy very fast! Since we're about to write a lot of different prompts that will all appear depending on the choices that the player makes anyway, it may be worth to split our game across different files, instead of just putting everything in `src/main.rs`!
+
+So, let's create a new file in the `src/` folder called `prompts.rs`! Our directory's structure should now look like this:
+
+```
+Cargo.toml
+src
+ ├── main.rs
+ └── prompts.rs
+```
+
+In order to import the functions that we're going to write in `prompts.rs`, we should add `mod prompts;` under our first line, to inform the compiler about the existence of our new file. Your code should now look like this:
+
+`src/main.rs`:
+```rust
+use std::io;
+mod prompts;
+
+fn prompt() -> bool {
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).unwrap();
+
+    return input.to_ascii_lowercase().starts_with("y");
+}
+
+fn main() {
+	let answer = prompt();
+// If the player's answer was yes, print a message
+	if answer == true {
+	    println!("Yay! Your aspirations will give you some very good karma later in your life.");
+	// else, if the answer is no (or anything else!)
+	// print a different, less friendly message
+	} else {
+	    println!("Boo, you're such a buzzkill!");
+	}
+}
+
+```
+
+You can read more about Rust modules here: https://doc.rust-lang.org/rust-by-example/mod.html
+
+Rust is instructed to execute the function named `intro`, which is exported from the `prompts` crate. This is an **associated** function. But, it currently doesn't exist. Let's implement it now, shall we?
+
+Open the `src/prompts.rs` file, and paste the following:
+
+`src/prompts.rs`:
+```rust
+use std::io;
+
+fn prompt() -> bool {
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).unwrap();
+
+    return input.to_ascii_lowercase().starts_with("y");
+}
+
+pub fn intro() {
+	let answer = prompt();
+// If the player's answer was yes, print a message
+	if answer == true {
+	    println!("Yay! Your aspirations will give you some very good karma later in your life.");
+	// else, if the answer is no (or anything else!)
+	// print a different, less friendly message
+	} else {
+	    println!("Boo, you're such a buzzkill!");
+	}
+}
+
+```
+You'll notice that the code is similar, but it does have some minor changes:
+- First of all, we removed `mod prompts;`. We don't want to use the file we're working with.
+- We renamed the `main` function to `intro`. As `main` functions have a special naming for Rust, we had to change its name.
+- We also added the `pub` modifier to our function, which allows us to call that function from other files (that import `prompt.rs`)
+
+Let's now use the function we wrote in `main.rs`. Replace all the code in `main.rs`'s `main` function with just a call to the intro function, like below:
+`src/main.rs`:
+```rust
+mod prompts;
+
+fn main() {
+    prompts::intro();
+}
+```
+
 ### Part 4.4: Writing a full game
 
-Here's a summary of how the code should look like:
+Let's add some more prompts now, shall we? It's just a matter of copying-and-pasting. Here's how it can look (feel free to copy this, paste them in the proper files and play this game):
 
 `src/main.rs`:
 ```rust
@@ -280,7 +330,7 @@ fn prompt() -> bool {
     return input.to_ascii_lowercase().starts_with("y");
 }
 
-// returns nothing, shows the prompt, asks for input with prompt()
+// first prompt
 pub fn intro() -> () {
     println!("Someone's calling you, do you answer?");
     
@@ -288,18 +338,13 @@ pub fn intro() -> () {
     // a few other expressions that also amount to true are 2 == 2,
     // 1 > 0, or just the word true.
     if prompt() {
-        phone_answered();
-    }
-    else {
-        phone_declined();
-    }
+	    phone_answered();
+    } else {
+        println!("You hung up the phone. You didn't find out what was all that about. Maybe you will. One day...");
+        }
 }
 
-pub fn phone_declined() -> () {
-    println!("You hung up the phone.");
-    println("You didn't find out what was all that about. Maybe you will. One day...");
-}
-
+// second prompt
 pub fn phone_answered() -> () {
     println!("You hear the caller say: 'Hey, I know it's been a long time, you down to meet up?'");
     println!("Her voice seems vaguely familiar, and she sounds a bit distressed. Do you accept?"); 
@@ -308,36 +353,32 @@ pub fn phone_answered() -> () {
         challenge_accepted();
     }
     else {
-        challenge_denied();
+	    println!("You hung up the phone. You didn't find out what was all that about. Maybe you will. One day...");
     }
 }
 
+// third prompt
 pub fn challenge_accepted() -> () {
     println!("You meet up with the old friend, and she hands you a bag full of cash.");
     println!("Your friend says: 'Here, don't ask questions, thanks.'");
     println!("Congratulations! You are now rich and have sufficiently covered your material necessities, but does that amount to true happiness? You may have won the game, but you haven't won at life.");
     println!("GAME OVER!");
 }
-
-pub fn challenge_denied() -> () {
-    println!("You hung up.");
-    println("You didn't find out what was all that about. Maybe you will. One day...");
-}
 ```
 
 Not only do we trick the player by making them make the most obvious decisions, and then dropping them this moral nuclear bomb right on their faces, but we also get to set the ground for a sequel, should they decide that being given a lot of cash for free is *too good to be true!*
 
-Apart from the comments in the code itself, there's a few important details to note:
+Apart from the comments in the code itself, there are a few important details to note:
 
-- In this example, we have two possible answers, so the story takes two entirely different courses every time. Most videogames end up giving the player the illusion of choice by having them go through short-term consequences, and then twisting the story in such a way so that it all works out the same way or in a slightly different way, and they ultimately end up giving you a different ending. Critically acclaimed titles, such as the **The Last of Us** and the **The Witcher** series, as well as **Night in the Woods**, **Mass Effect** or **Assassin's Creed** games do this.
-- Nevertheless, we still end up giving the player a different dialogue everytime. In our case, it's just that nearly all of the wrong decisions throw the player out of the game.
+- In this example, we have two possible answers, so the story takes two entirely different courses every time. Most videogames end up giving the player the illusion of choice by having them go through short-term consequences and then twisting the story in such a way so that it all works out the same way or in a slightly different way, and they ultimately end up giving you a different ending. Critically acclaimed titles, such as the **The Last of Us** and the **The Witcher** series, as well as **Night in the Woods**, **Mass Effect** or **Assassin's Creed** games do this.
+- Nevertheless, we still end up giving the player a different dialogue every time. In our case, it's just that nearly all of the wrong decisions throw the player out of the game.
 - You may want to handle all of the `if... else` clauses and the game logic in one function, instead of dealing with the logic all over the place. However, we believed that the way we wrote the example leaves room for more flexibility.
-
-### Part 5: Ideas! 💡
+- We also moved all the correct answers to their own function. to keep our code clearer
 
 Congrats! You've managed to write your first game in Rust. 🎉
 
 ![GIF of a movie character saying "Welcome to the club!" inside of a club, from the movie "Scott Pilgrim vs. The World"](https://hack.af/welcome)
+### Part 5: Ideas! 💡
 
 Here's a bunch of ideas that will help you go a step further:
 
