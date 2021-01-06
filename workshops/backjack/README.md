@@ -79,9 +79,9 @@ Inside the main function is where all our code will run. So before the game star
   cout << "\n           Blackjack Game      \n";      /*the title of the game */
   cout << "\n++++++++++++++++++++++++++++++++\n";    /* line using ++ (plus sign) to separate the title from the body */
 ```
- We then use the `  \n  `(newline character) to tell the program to display a new line, either before or after the written words. For more about [creating a new line read it here](https://www.w3schools.com/cpp/cpp_new_lines.asp).
+ We then use the `  \n  ` (newline character) to tell the program to display a new line, either before or after the written words. For more about [creating a new line read it here](https://www.w3schools.com/cpp/cpp_new_lines.asp).
  
- We then welcome the player to the game followed by a new line using the ` \n `(newline character)  and ask if they should write their name.
+ We then welcome the player to the game followed by a new line using the ` \n ` (newline character)  and ask if they should write their name.
  ```c++ 
    cout << "\n Welcome to the game.\n Enter your Name: \n";       /*instruct the player to write their name */
 
@@ -234,7 +234,7 @@ Pl_card2 = rand() % 11 + 1;         		  /* same for the player card two */
 We now have a random number stored inside cards 1 and 2, we then need to have a copy of both numbers inside a vector which is very similar to an array.  So to do that, declare a vector that can receive only integers under the **declaration section** and identify it as ` player_card `  : 
 
 ```c++
- vector<int>player_card;						 /* this vector will be used to have a copy of all the card the player has */
+ vector<int>player_card;						 /* this vector will be used to keep a copy of all the card the player has */
 ```
 Tips: you want to know why I prefer to use [vector instead of arrays here](https://www.tutorialspoint.com/advantages-of-vector-over-the-array-in-cplusplus) check out this article.
 
@@ -664,7 +664,7 @@ That a long way we have come; Now let us write the code for the function ` playe
  Then your code should look similar to this :
  
  ```C++ 
- void Player_Loose(){
+ void player_loose(){
       cout << "The Player hand : " ;
       Display_Card(player_card);
       cout << " with a total of : " << Tl_Pl_card << "\n\n";
@@ -1017,8 +1017,8 @@ Let go back to the ` check_Hit_Bust_Stay() ` function and write the last else st
 ```C++
  if (answ == "1") {
      Hit_Player_card();         
-     cout << "You have Have been dealt a [" << Pl_card_cont;
-     cout << "] With have a total of : " << Tl_Pl_card << "\n\n";
+     cout << "You have been dealt a [" << Pl_card_cont;
+     cout << "] with a total of : " << Tl_Pl_card << "\n\n";
 
      if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
             Hit_Bust_check();
@@ -1034,14 +1034,14 @@ Let go back to the ` check_Hit_Bust_Stay() ` function and write the last else st
      }
 ```
 <details>
-<summary>Well done!!! with have just finished with the function  check_Hit_Bust_Stay(), now let see what we have</summary>
+<summary>Well done!!! we just finished with the function  check_Hit_Bust_Stay(), now let see what we have</summary>
 	
 ```C++
 void check_Hit_Bust_Stay(){
   if (answ == "1"){
      Hit_Player_card();         
-     cout << "You have Have been dealt a [" << Pl_card_cont;
-     cout << "] With have a total of : " << Tl_Pl_card << "\n\n";
+     cout << "You have been dealt a [" << Pl_card_cont;
+     cout << "] with  a total of : " << Tl_Pl_card << "\n\n";
      
      if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
            Hit_Bust_check();
@@ -1111,7 +1111,7 @@ using namespace std;
           Hit_card1();                        
           cout << player1 << ",You have been Dealt with [ " ;
           Display_Card(player_card);
-          cout << "] With have a total of : " << Tl_Pl_card << " \n\n";
+          cout << "] with a total of : " << Tl_Pl_card << " \n\n";
           cout << "The Dealer is Showing a " << Dl_card1 << " \n\n";
 
           if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
@@ -1189,8 +1189,8 @@ using namespace std;
         void check_Hit_Bust_Stay(){
              if (answ == "1") {
 	         Hit_Player_card();
-		 cout << "You have Have been dealt a [" << Pl_card_cont;				
-                 cout << "] With have a total of : " << Tl_Pl_card << "\n\n";
+		 cout << "You have been dealt a [" << Pl_card_cont;				
+                 cout << "] with a total of : " << Tl_Pl_card << "\n\n";
 		 if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
                            Hit_Bust_check();
                     } else {										
@@ -1239,7 +1239,7 @@ And you will see that we are done with almost everything, but why did I say almo
 
 Because when you try to answer '3' for stay, you might get some weird dealer's card number showing respectively or the answer will be kind of contradiction to what the rule of the game is so we need one more function. 
 
-How many lines of code is the last function again? five, so are we done? let's find out.
+How many lines of code is the last function again? Five, so are we done? Let's find out.
 
 We will declare our last function as ` Check_player_3card() ` because the game allows the dealer to have 3 cards if the player has 3 cards or more and the player never asks for a stay, then we should give the dealer his third card :
 
@@ -1368,7 +1368,7 @@ Well done you have just you now have levelled up, you can now run your game and 
         Hit_card1();                        
         cout << player1 << ",You have been Dealt with [ " ;
         Display_Card(player_card);
-        cout << "] With have a total of : " << Tl_Pl_card << " \n\n";
+        cout << "] with a total of : " << Tl_Pl_card << " \n\n";
         cout << "The Dealer is Showing a " << Dl_card1 << " \n\n";
         Check_Player_3card();
          if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
@@ -1446,8 +1446,8 @@ Well done you have just you now have levelled up, you can now run your game and 
 	  void check_Hit_Bust_Stay(){
              if (answ == "1") {
 	         Hit_Player_card();
-		 cout << "You have Have been dealt a [" << Pl_card_cont;				
-                 cout << "] With have a total of : " << Tl_Pl_card << "\n\n";
+		 cout << "You have been dealt a [" << Pl_card_cont;				
+                 cout << "] with a total of : " << Tl_Pl_card << "\n\n";
 		 if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
                            Hit_Bust_check();
                     } else {										
