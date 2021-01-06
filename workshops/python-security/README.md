@@ -88,6 +88,11 @@ if(choice == '1'):
   print()
   print(FColor.BLUE + 'Sign Up Complete!')
 ```
+
+Here's the result of execution:
+
+![LogginIn](https://cloud-i0mava3ii.vercel.app/0c71e3ba10a973ffedf0d70027dec5942.png)
+
 Note the tabs that confine the **if** statement's execution code.
 
 
@@ -151,6 +156,11 @@ elif(choice == '2'):
   except:
     print(FColor.RED + "Couldn't read file 'save.dat'")
 ```
+
+Here's the result of running your code:
+![LogginInSuccess](https://cloud-q7kog3f2u.vercel.app/07b8bfb08547ba316542db0c08b450732.png)
+![LogginInFailure](https://cloud-2kaxxoppv.vercel.app/007490ccaf6bc9853ce2c0222a2536d6f.png)
+
 Note the tabs; these confine statements to a certain block of code. Now, if you run your main.py code in repl.it, you will need to first sign up, and then sign in. Note that you will never see your raw password other than the time you type it in to sign up.
 
 You have successfully created a secure password system! You can use this to create secure login pages and sign up pages without ever getting hacked! Check out these example uses of the password system you just created:
