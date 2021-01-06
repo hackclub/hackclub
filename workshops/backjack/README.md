@@ -177,8 +177,8 @@ To then wait for the player to click enter we should use `cin.get()` function to
        /* Declaration section: This will be used to declare variables and function */
        
       void start_The_Game();  
-          int Pl_card1, Pl_card2, Pl_card3;     
-          int Dl_card1, Dl_card2, Dl_card3;     
+          int Pl_card1, Pl_card2, Pl_card_cont;     
+          int Dl_card1, Dl_card2, Dl_card_cont;     
           int Tl_Pl_card,Tl_Dl_card;  
           string player1;           
 	  int  main() {    /*Introduction to the game */
@@ -418,7 +418,7 @@ We then going to create a function that will display the message to the player, 
 
 ```c++
  void player_win();                        /* will be used to print the winning message to the player */
- void Player_Loose();                     /* will be used to print the message that the player lost */
+ void player_loose();                     /* will be used to print the message that the player lost */
 ```
 
 Now go over the **definition section** and let give some definition to these functions : 
@@ -435,11 +435,11 @@ Now go over the **definition section** and let give some definition to these fun
       if (Tl_Pl_card == 21 || Tl_Dl_card > 21 ){
          player_win();
         } else if (Tl_Dl_card == 21 || Tl_Pl_card > 21 )  {
-                  Player_Loose();
+                  player_loose();
          } else if (Tl_Pl_card > Tl_Dl_card){
                    player_win();
           } else {
-               Player_Loose();
+               player_loose();
             }
     } 
 ```
@@ -540,7 +540,7 @@ We are done asking the player if they would like to restart playing or to quit p
  ```c++
  void start_The_Game() {
    player_card.clear();							 /* place it right at the beginning of this function */
-   Dealer_card.clear();							
+   dealer_card.clear();							
   
  ```
  
@@ -558,13 +558,14 @@ We are done asking the player if they would like to restart playing or to quit p
      
           void start_The_Game();  
           void Hit_card1();
+	  int num_of_playerCard;
 	  void Display_Card(vector<int>list_of_card);
 	  void Hit_Bust_check();
 	  void player_win();
-	  void Player_Loose(); 
-	  void Continue_Playing()
-          int Pl_card1, Pl_card2, Pl_card3;     
-          int Dl_card1, Dl_card2, Dl_card3;     
+	  void player_loose(); 
+	  void Continue_Playing();
+          int Pl_card1, Pl_card2, Pl_card_cont;     
+          int Dl_card1, Dl_card2, Dl_card_cont;     
           int Tl_Pl_card,Tl_Dl_card;  
    	  string player1; 
   	  vector<int> player_card;
@@ -581,7 +582,7 @@ We are done asking the player if they would like to restart playing or to quit p
        
      void start_The_Game(){
         player_card.clear();							 
-        Dealer_card.clear();	
+        dealer_card.clear();	
         cout << "\n           Blackjack Game      \n";
         cout << "\n++++++++++++++++++++++++++++++++\n";
         cout << "\n Welcome to the game.\n";
@@ -589,7 +590,7 @@ We are done asking the player if they would like to restart playing or to quit p
         cout << "Please click enter to shuffle the cards \n";
         cin.get();  
         Hit_card1();                        
-        cout << player1 << “, You have been Dealt with [ " ;
+        cout << player1 << ", You have been Dealt with [ " ;
         Display_Card(player_card);
         cout << "] With a total of : " << Tl_Pl_card << " \n\n";
         cout << "The Dealer is Showing a " << Dl_card1 << " \n\n";
@@ -621,11 +622,11 @@ We are done asking the player if they would like to restart playing or to quit p
       if (Tl_Pl_card == 21 || Tl_Dl_card > 21) {
             player_win();
         } else if (Tl_Dl_card == 21 || Tl_Pl_card > 21 )  {
-                  Player_Loose();
+                  player_loose();
          } else if (Tl_Pl_card > Tl_Dl_card) {
                   player_win();
           } else {
-               Player_Loose();
+               player_loose();
            }
        } 
       void player_win(){
@@ -727,7 +728,7 @@ else {
 ```C++
 void start_The_Game() {
       player_card.clear();							 
-      Dealer_card.clear();
+      dealer_card.clear();
       cout << "\n           Blackjack Game      \n";
       cout << "\n++++++++++++++++++++++++++++++++\n";
       cout << "\n Welcome to the game.\n";
@@ -987,7 +988,7 @@ For reference if you can't remember ` Hit_Player_card() ` or ` Hit_Dealer_card()
 else if (Tl_Pl_card > Tl_Dl_card && Tl_Pl_card <= 21) {
         player_win();
    } else {
-      player_loose()
+       player_loose()
    }
 ```
 
@@ -1065,24 +1066,25 @@ void check_Hit_Bust_Stay(){
 <summary>You kind be thinking well how far we are Now, what I can say you can run your code and compare my code to yours</summary>
 
 ```C++
-   #include <iostream>
-   #include <ctime>
-   #include <vector>
-   using namespace std;
+#include <iostream>
+#include <ctime>
+#include <vector>
+using namespace std;
      /* Declaration section: This will be used to Declare variables and Function */ 
           void start_The_Game();  
           void Hit_card1();
+	  int num_of_playerCard;
 	  void Display_Card(vector<int>list_of_card);
 	  void Hit_Bust_check();
 	  void player_win();
 	  void Continue_Playing();
-	  void Player_Loose(); 
+	  void player_loose(); 
 	  void check_Hit_Bust_Stay(); 
 	  void Hit_Player_card();  
 	  void Player_Stay();
 	  void Hit_Dealer_card();
-          int Pl_card1, Pl_card2, Pl_card3;     
-          int Dl_card1, Dl_card2, Dl_card3;     
+          int Pl_card1, Pl_card2, Pl_card_cont;     
+          int Dl_card1, Dl_card2, Dl_card_cont;     
    	  int Tl_Pl_card,Tl_Dl_card;  
    	  string player1; 
    	  vector<int> player_card;
@@ -1099,7 +1101,7 @@ void check_Hit_Bust_Stay(){
        
      void start_The_Game() {
           player_card.clear();							 
-          Dealer_card.clear();
+          dealer_card.clear();
           cout << "\n           Blackjack Game      \n";
           cout << "\n++++++++++++++++++++++++++++++++\n";
           cout << "\n Welcome to the game.\n";
@@ -1144,11 +1146,11 @@ void check_Hit_Bust_Stay(){
       if (Tl_Pl_card == 21 || Tl_Dl_card > 21) {
             player_win();
         } else if (Tl_Dl_card == 21 || Tl_Pl_card > 21 )  {
-                Player_Loose();
+                player_loose();
          } else if (Tl_Pl_card > Tl_Dl_card) {
               player_win();
           } else {
-              Player_Loose();
+              player_loose();
            }
        } 
       void player_win(){
@@ -1171,7 +1173,7 @@ void check_Hit_Bust_Stay(){
                     cout << "\n\nThanks For playing\n\n";
                  }
 	    }
-	void Player_Loose(){
+	void player_loose(){
            cout << "The Player hand : " ;
            Display_Card(player_card);
            cout << " with a total of : " << Tl_Pl_card << "\n\n";
@@ -1320,26 +1322,27 @@ Well done you have just you now have levelled up, you can now run your game and 
 <summary> check out here the final code how it should look like</summary>
  
  ```c++
-   #include <iostream>
-   #include <ctime>
-   #include <vector>
-   using namespace std;
-     /* Declaration section: This will be used to Declare variables and Function */ 
+ #include <iostream>
+ #include <ctime>
+ #include <vector>
+ using namespace std;
+     /* Declaration section: This will be used to declare variables and function */ 
           void start_The_Game();  
           void Hit_card1();
+	  int num_of_playerCard;
 	  void Display_Card(vector<int>list_of_card);
 	  void Hit_Bust_check();
 	  void player_win();
 	  void Continue_Playing();
-	  void Player_Loose(); 
+	  void player_loose(); 
 	  void check_Hit_Bust_Stay(); 
 	  void Hit_Player_card();  
 	  void Player_Stay();
 	  void Hit_Dealer_card();
 	  void Check_Player_3card();
-          int Pl_card1, Pl_card2, Pl_card3;     
-          int Dl_card1, Dl_card2, Dl_card3;     
-  	  int Tl_Pl_card,Tl_Dl_card;  
+          int Pl_card1, Pl_card2, Pl_card_cont;     
+          int Dl_card1, Dl_card2, Dl_card_cont;     
+  	  int Tl_Pl_card,Tl_Dl_card; 	
   	  string player1; 
           vector<int> player_card;
           vector<int> dealer_card;
@@ -1355,7 +1358,7 @@ Well done you have just you now have levelled up, you can now run your game and 
        
      void start_The_Game() {
         player_card.clear();							 
-        Dealer_card.clear();
+        dealer_card.clear();
         cout << "\n           Blackjack Game      \n";
         cout << "\n++++++++++++++++++++++++++++++++\n";
         cout << "\n Welcome to the game.\n";
@@ -1400,11 +1403,11 @@ Well done you have just you now have levelled up, you can now run your game and 
       if (Tl_Pl_card == 21 || Tl_Dl_card > 21) {
                 player_win();
         } else if (Tl_Dl_card == 21 || Tl_Pl_card > 21 )  {
-                Player_Loose();
+                player_loose();
          } else if (Tl_Pl_card > Tl_Dl_card) {
                 player_win();
           } else {
-                Player_Loose();
+                player_loose();
            }
        } 
        void player_win(){
@@ -1427,7 +1430,7 @@ Well done you have just you now have levelled up, you can now run your game and 
                     cout << "\n\nThanks For playing\n\n";
                  }
 	    }
-	void Player_Loose(){
+	void player_loose(){
            cout << "The Player hand : " ;
            Display_Card(player_card);
            cout << " with a total of : " << Tl_Pl_card << "\n\n";
@@ -1468,14 +1471,14 @@ Well done you have just you now have levelled up, you can now run your game and 
 	     void Player_Stay() {
 	          Check_Player_3card();
                   while (Tl_Dl_card < 16) {
-		       Hit_Dealer_card()
+		       Hit_Dealer_card();
                      }
 		  if ( Tl_Dl_card > 21) {				
       		        player_win();
  			} else if (Tl_Pl_card > Tl_Dl_card && Tl_Pl_card <= 21) {
        				 player_win();
   			     } else {
-    				  player_loose()
+    				  player_loose();
   				 }	
                    }
               void Hit_Dealer_card() {
@@ -1486,8 +1489,8 @@ Well done you have just you now have levelled up, you can now run your game and 
               }          
 	    void Check_Player_3card(){
                if (num_of_playerCard >= 3){
-                  Tl_Dl_card += Dl_card3;
-                  Dealer_card.push_back(Dl_card3);
+                  Tl_Dl_card += Dl_card_cont;
+                  dealer_card.push_back(Dl_card_cont);
                   num_of_playerCard = 0;  
                  }   
               }
@@ -1510,7 +1513,7 @@ Now go on and show everyone what you have made. Aren't they impress about it, we
     [Check out my example here](https://repl.it/@chrisrama/BlackjackgameDoubleSplit#main.cpp)
 
 
- + What if I keep forgetting how many win I have from the dealer, create and variable that keeps record of the number of the number of win of the player and the dealer. Then display the comparison of win after each round and when the game is over.
+ + What if I keep forgetting how many win I have from the dealer, create and variable that keeps record of the number of win for the player and the dealer. Then display the comparison of wins between the player and the dealer, after each round and when the game is over.
  
     [Check out my code here](https://repl.it/@chrisrama/Blackjack-game-Winner-review#main.cpp)
 
