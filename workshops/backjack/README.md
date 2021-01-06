@@ -12,6 +12,7 @@ Have you ever thought of creating a simple and smart Blackjack game using C++, w
  
 ![Live demo of how the game works](https://cloud-r2zxs3jci.vercel.app/0demo_live.gif)
  
+ 
 Check out [the final code here](https://repl.it/@chrisrama/Blackjackgame).
  
 ## Getting started
