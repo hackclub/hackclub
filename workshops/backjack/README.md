@@ -10,7 +10,7 @@ img: 'https://cloud-qtjz7o7jw.vercel.app/0screenshot_2020-12-30_at_00.57.54.png'
 Have you ever thought of creating a simple and smart Blackjack game using C++, well you have come to the right place. In this workshop, you will learn to create your own blackjack game while exploring how functions (especially void function) are used in C++ and why they are important.
  
  
-![Live demo of how the game works](https://cloud-5y79yq13o.vercel.app/0screen_recording_2020-12-30_at_00.50.14.mov)
+![Live demo of how the game works](https://cloud-r2zxs3jci.vercel.app/0demo_live.gif)
  
 Check out [the final code here](https://repl.it/@chrisrama/Blackjackgame).
  
@@ -18,7 +18,7 @@ Check out [the final code here](https://repl.it/@chrisrama/Blackjackgame).
  
 This is a friendly workshop for beginner and advanced C++ programmers, as it will help you practice and understand how functions are used and manipulated in C++.
  
-If you never play the blackjack game at all, or you want to know how to play it, don't worry, I have a [short video](https://youtu.be/eyoh-Ku9TCI) for you that explains exactly all the rules about the game. 
+If you never play the blackjack game at all, or you want to know how to play it, don't worry, I have a [short video](https://youtu.be/eyoh-Ku9TCI) for you that explain exactly all the rules about the game. 
  
  
  + NOTE: it is very important to watch this video when doing this workshop, as the workshop is based entirely on the video’s explanation.
