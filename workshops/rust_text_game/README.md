@@ -189,7 +189,7 @@ Now, I know that this is a lot to take in, but don't fret! Let's just go through
 
 - `io::stdin().read_line(&mut input).unwrap();`
 
-    Here, using the `io` library again, we capture whatever the player is typing until they hit `Enter` inside the `input` variable.
+    Here, using the std's `io` module again, we capture whatever the player is typing until they hit `Enter` inside the `input` variable. The `&mut input` you see is Rust's syntax for creating a mutable _reference_ to a variable. In this case, that's how the `read_line` method is able to read from your standard input buffer; it places the bytes into the memory referenced by the mutable reference that it is passed. In this case, you're passing a mutable reference to `input`, so the resulting line will be placed _directly_ in that `String` without any new `String`s being created. Note that we explicitly had to add the `mut` specifier to our reference; Rust references and variables are instantiated as immutable unless we specify otherwise. In our case, we are specifying it as mutable so that it can be, well, mutated by the `read_line` method
 
 - `return input.to_ascii_lowercase().starts_with("y");`
 
