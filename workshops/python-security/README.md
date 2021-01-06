@@ -33,23 +33,31 @@ This pbkdf2_hmac function returns bytes, so we will convert these bytes to a str
 ```py
 pwd = pwd.hex()
 ```
+The hex function digests a bunch of bytes and spits out a string!
+
+
 After that, we will check for what to do based on the player's initial input, which we stored in the 'choice' variable. To do so, we will be using the flow control 'if' statement:
 ```py
 if(choice == '1'):
 ```
 Note that everything that you want the 'if' block to execute will have to be tabbed directly under the 'if' block. You will see what I mean in the next few steps.
 
-If the player inputted 1 as their choice, we know that they want to sign up. Therefore, we would like to save their hashed password. Note that we are saving the _hashed_ password. Later on we can check this with the sign in password that the user enters to validate that the passwords are the same. To save the hased password to a file, we will type this:
+If the player inputted 1 as their choice, we know that they want to sign up. Therefore, we would like to save their hashed password. Note that we are saving the _hashed_ password rather than the unhashed password, for security. Later on we can check this with the sign in password that the user enters to validate that the passwords are the same. To save the hased password to a file, we will type this:
 ```py
   results = open('save.dat', 'w')
   results.write(pwd)
   results.close()
   ```
-To add a little flair at the end, we will add some colored text to confirm that the user successfully signed up. On the left side of repl.it, create a new file named "FColors.py".
+  The open function opens a file (first parameter), and sets a mode, 'w' to write. We write the pwd _string_ variable to our file, and then close it to save all of our changes!
+  
+To add a little flair at the end, we will add some colored text to confirm that the user successfully signed up. On the left side of repl.it, create a new file named "FColors.py". 
 ![CreateNewFile](https://i.imgur.com/KV8rndQ.png)
 
+The colors we will be using are referred to as ANSI escape sequences. Each sequence represents either a color, background, or style. These codes are used in terminals, including the Windows Command Prompt!
 
-Let's define some constant strings. To do so, we will type the following in the FColors.py file:
+![ANSIEscapeSequences](https://cloud-ov66s9xrl.vercel.app/0ansi_sample_program_output.png)
+
+Let's define some constant strings. Each string will represent an ANSI escape sequence for a certain terminal color. It is a convention to capitalize all letters in a constant variable. Let's define these colors in "FColors.py":
 ```py
 RED   = '\u001b[31m'
 GREEN = '\u001b[32m'
