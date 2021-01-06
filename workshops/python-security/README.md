@@ -3,7 +3,6 @@ In this workshop, we will be creating a secure python password saving system.
 
 Final Code: https://repl.it/@nt998302/CalculatingSeveralData#ansi_codes.txt
 
-[comment]: <> ![Lock](https://cloud-9c7fuhjm1.vercel.app/0891399.png)
 ![PythonLogo](https://cloud-mxjnd7sxa.vercel.app/05848152fcef1014c0b5e4967.png)
 
 ## Getting Setup
