@@ -1320,10 +1320,10 @@ Well done you have just you now have levelled up, you can now run your game and 
 <summary> check out here the final code how it should look like</summary>
  
  ```c++
-    #include <iostream>
+   #include <iostream>
    #include <ctime>
    #include <vector>
-     using namespace std;
+   using namespace std;
      /* Declaration section: This will be used to Declare variables and Function */ 
           void start_The_Game();  
           void Hit_card1();
@@ -1369,7 +1369,7 @@ Well done you have just you now have levelled up, you can now run your game and 
         cout << "The Dealer is Showing a " << Dl_card1 << " \n\n";
         Check_Player_3card();
          if (Tl_Pl_card >= 21 || Tl_Dl_card >= 21 ) {
-               Hit_Bust_check();
+                  Hit_Bust_check();
               } else {                                   			
                  cout << "Would you like to '1' Hit or '2' Bust or '3'stay \n";
                  getline(cin, answ);
@@ -1398,13 +1398,13 @@ Well done you have just you now have levelled up, you can now run your game and 
      }
      void  Hit_Bust_check() {  
       if (Tl_Pl_card == 21 || Tl_Dl_card > 21) {
-            player_win();
+                player_win();
         } else if (Tl_Dl_card == 21 || Tl_Pl_card > 21 )  {
                 Player_Loose();
          } else if (Tl_Pl_card > Tl_Dl_card) {
-              player_win();
+                player_win();
           } else {
-              Player_Loose();
+                Player_Loose();
            }
        } 
        void player_win(){
@@ -1422,7 +1422,7 @@ Well done you have just you now have levelled up, you can now run your game and 
           }
 	  void Continue_Playing() { 
              if (answ == "1") {
-                start_The_Game(); 
+                    start_The_Game(); 
                } else {
                     cout << "\n\nThanks For playing\n\n";
                  }
@@ -1453,7 +1453,7 @@ Well done you have just you now have levelled up, you can now run your game and 
                           check_Hit_Bust_Stay();								 
                          }
 	         }  else if (answ == "2") {								
-                         Hit_Bust_check();								
+                            Hit_Bust_check();								
                        } else {
     			    Player_Stay();						
   			   }
@@ -1493,6 +1493,7 @@ Well done you have just you now have levelled up, you can now run your game and 
               }
  ```
  </details>
+ 
  
 # Challenges
 
