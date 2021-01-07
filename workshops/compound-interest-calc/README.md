@@ -17,7 +17,7 @@ You can out this project on Repl.it by clicking [this](https://repl.it/@iamsid47
 
 So, let's head over to [Repl.it](https://repl.it) and create a new *repl*. Choose Python as the language and the the name of your project.
 
-First, we will be printing up some stuff and then we'll slowly move towards the logic. Now there are two types of interests that we are gonna calculater. The first one is gonna be  the simple interest calculation and the other is gonna be a compound interest calculation. Now, when we calculate compound interest, there are some specific terms which need to know and understand. This can include things like *monthly investment, interest on investment, principal, etc.* Thus, be sure to understand these terms first and later move over to the project.
+First, we will be printing up some stuff and then we'll slowly move towards the logic. Now there are two types of interests that we are gonna calculator. The first one is gonna be  the simple interest calculation and the other is gonna be a compound interest calculation. Now, when we calculate compound interest, there are some specific terms which need to know and understand. This can include things like *monthly investment, interest on investment, principal, etc.* Thus, be sure to understand these terms first and later move over to the project.
 
 Let's first print something cool to start with so to enhance the user's experience.
 
@@ -60,7 +60,7 @@ print(' ')
 ```
 Next, let's get into the **logic** now!
 
-So, we are actually asking for monthly investment. Thus we need to multiply it by 12 first to make it yearly. After this, we just define the `final_amount` equal to zero at the start of everythin.
+So, we are actually asking for monthly investment. Thus we need to multiply it by 12 first to make it yearly. After this, we just define the `final_amount` equal to zero at the start of everything.
 
 ```python
 print(' ')
@@ -90,7 +90,7 @@ def simple_interest():
       
     print('The Simple Interest is: ', si) 
 ```
-Now we create a while loop so that the user can exit or keep on calculating as per thier needs.
+Now we create a while loop so that the user can exit or keep on calculating as per their needs.
 
 ```python
 while True:
