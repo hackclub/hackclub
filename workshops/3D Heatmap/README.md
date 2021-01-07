@@ -115,7 +115,16 @@ plt.show()
 # 3. Plotting with Dataset
 To plot with dataset, firstly, we will store dataset in a vaiable and then modify dataset a bit and at last, represent the data in the 3D Heatmap model.
 
-Importing all libraries
+| Function/Parameter | Description |
+| --- | --- |
+| cmap | colormap package provides simple utilities to convert colors between RGB, HEX, HLS, HUV |        
+| unstack | returning a DataFrame having a new level of column labels |        
+| reset_index | Reset the index of the DataFrame |       
+| linewidth | change line width of lines |             
+| shrink | shrink the width of the plot  |       
+| aspect | aspect is use to prevent future distortions |      
+
+
 ```python
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
