@@ -7,7 +7,7 @@ img: https://cloud-4tlcr594m.vercel.app/0expen_e_tracker.png
 
 ## Expense Tracker Using Python
 
-*Hi everyone! In this workshop, we will walkthrough how to build ***an expense tracker!**** 
+*Hi everyone! In this workshop, we will walk through how to build ***an expense tracker!**** 
 
 The completed project can be found by clicking [here](https://repl.it/@iamsid47/expense-tracker-main).
 
@@ -73,7 +73,7 @@ plt.legend(title="Your Expenses",labels=prod, loc='upper center', bbox_to_anchor
 plt.show()
 ```
 
-To get the total for out expenditure, we create a conditional and make it as *choice* **T**. Inside this, we call the json data which will be store and load it onto a variable named *data*. We again create a varialble named **temp** and call just the **Expenses** from the **data** variable which currently contains all the data from the json file. Next, we create a formula to calculate the total expenses.
+To get the total for out expenditure, we create a conditional and make it as *choice* **T**. Inside this, we call the json data which will be store and load it onto a variable named *data*. We again create a variables named **temp** and call just the **Expenses** from the **data** variable which currently contains all the data from the json file. Next, we create a formula to calculate the total expenses.
 
 ```python
 if choice == "T":
@@ -178,7 +178,7 @@ Further improvements for this project are just endless. You can add in more inpu
 
 As a topping, you can add in more fields like *interest on purchase, cashbacks, rebates, donations, etc.*
 
-You can even make it so awesome that you create an API for this, merge it with a chrome extension which tracks all your purchases and host this script on a server. So, whenever you make a purchase, the whole thing get's sent over to the expense-tracker and it puts all of the data into a .json file!
+You can even make it so awesome that you create an API for this, merge it with a chrome extension which tracks all your purchases and host this script on a server. So, whenever you make a purchase, the whole thing gets sent over to the expense-tracker and it puts all of the data into a .json file!
 
 ## Demos
 
