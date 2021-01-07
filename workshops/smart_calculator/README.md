@@ -31,7 +31,7 @@ response=['Welcome to smart calculator','My name is Calc',
 
 Now, for our calculator to calculate something, we need to tell it in some or the other way. Since we don't want our user to tell it in more of a numerical language, let's write in some logic.
 
-  We will first define some functions for the following mathamatical expressions.
+  We will first define some functions for the following mathematical expressions.
   1. Addition
   2. Subtraction
   3. Multiplication
@@ -47,9 +47,9 @@ def add(a,b):
 return a+b 
 ```
 
-Similar logic applies to the other functions. For subtraction, we create a function named `sub`; for multiplaction: `mul`, for division: `div`, for remainder: `mod`, for LCM: `lcm` and lastly for HCF: `hcf`.
+Similar logic applies to the other functions. For subtraction, we create a function named `sub`; for multiplication: `mul`, for division: `div`, for remainder: `mod`, for LCM: `lcm` and lastly for HCF: `hcf`.
 
-Whoof! A lot of functions!
+Phew! A lot of functions!
 
 Next, add some logic inside these. It's gonna be the same like we did it for addition. Meaning, the method is same just some tweaks.
 
@@ -85,7 +85,7 @@ return L
 L+=1
 ```
 
-Here, we have entered the LCM logic which is the same as the one used in a normal Python IDE. Infact all of the calculational logics are the same.
+Here, we have entered the LCM logic which is the same as the one used in a normal Python IDE. In fact all of the calculational logics are the same.
 
 And for the Highest Common Factor,
 
@@ -105,7 +105,7 @@ For this, we make some text tokens and create some operations. What exactly we a
 *If a user types in* add 5 and 9 for me. Our code will parse it into a list which will contain all the words and integers. *Here, it will be: add, 5, and, 9, for, me.*
 A list of 7! Now, we will remove the unnecessary part from this list. That is **for, me, and**.
 
-To do this, we need to create a token fetcher which will fetch the tokens (functions), remove the unnecesary part and later perform the calculation. Let's create a function for this. I'll name it `extract_from_text`
+To do this, we need to create a token fetcher which will fetch the tokens (functions), remove the unnecessary part and later perform the calculation. Let's create a function for this. I'll name it `extract_from_text`
 
 ```python
 def extract_from_text(text): 
@@ -135,7 +135,7 @@ Now what we have done here is that if we get a list which contains the token `AD
 The same applies for other calculations as well.
 
 Example: If I put something like: **hey there, can you add 10 and 3 for me.** 
-    Here, it will create a list. Then remove the unnecessary part from this list on the basis of the operaitons we mentioned above and then perform the calculations.
+    Here, it will create a list. Then remove the unnecessary part from this list on the basis of the operations we mentioned above and then perform the calculations.
     
 Now let's create some other commands to exit this calculator and all.
 
