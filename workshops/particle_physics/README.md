@@ -9,6 +9,8 @@ img: 'https://cloud-k50jkthdw.vercel.app/0particle-physics-summary.png'
 
 The goal of this workshop is to explore some basic usage of [p5.js](https://p5js.org) while applying some of the things you may have learned in physics class in an interesting way.
 
+All of the different particles will act like planets in orbit. They all apply forces (gravity) to eachother depending on their mass and their distance from eachother. The main difference here is that they are much closer together than real planets. This is so you don't have to wait an entire year for one particle to orbit another.
+
 When you are done with this workshop, you should end up with something similar to this!
 
 ![Final product](https://cloud-oddjiiq5k.vercel.app/0summary.gif)
@@ -42,7 +44,7 @@ The first step in this project is to create a class to manage the particles. Bef
 class Particle {}
 ```
 
-Now that you have a particle class, you need to define what the particle can do.
+A [class](https://en.wikipedia.org/wiki/Class_(computer_programming)) is just a way of connecting a set of variables and functions in one package. Now that you have a particle class, you need to define what the particle can do.
 
 ```javascript
 class Particle {
@@ -68,7 +70,7 @@ class Particle {
 }
 ```
 
-With the basic structure set up, lets go through each function individually and add the code.
+We just added a list of functions that objects of this class can perform. With the basic structure set up, lets go through each function individually and add the code.
 
 ```javascript
 ...
