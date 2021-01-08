@@ -75,6 +75,19 @@ To see what you have created ```plt.show()``` function is used.
 ```python
 plt.show()
 ```
+**Source Code**
+```python
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+
+fig = plt.figure()
+ax = plt.axes(projection='3d')
+
+plt.show()
+```
+**Output**
 ![3D Plane](https://cloud-a08hob7s0.vercel.app/1workshop2.gif)
 
 # 2. Plotting Graph
@@ -89,10 +102,14 @@ import pandas as pd
 import seaborn as sns
 import numpy as np
 ```
-The most basic three-dimensional plot is a line or collection of scatter plot created from sets of (x, y, z) triples.
+The most basic three-dimensional plot is a line or collection of scatter plot created from sets of (x, y, z) triples. `projection='3d'` projects the graph in three dimension.
 
-```
+```python
 ax = plt.axes(projection='3d')
+```
+Z is an array which (starts = 0, end = 30, linspace = 100). `linspace` is used to create an evenly spaced sequence
+
+```python
 z = np.linspace(0, 30, 100)
 ```
 Initialise x is array of np.sin(z), and similarly y is a array of np.cos(z).
@@ -107,6 +124,26 @@ Shows  the graph
 ax.plot3D(x, y, z, 'red')
 plt.show()
 ```
+**Source Code**
+```
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+import numpy as np
+
+ax = plt.axes(projection='3d')
+z = np.linspace(0, 30, 100)
+
+x = np.sin(z)
+y = np.cos(z)
+
+ax.plot3D(x, y, z, 'red')
+plt.show()
+
+```
+
+**Output**
 
 ![3D Graph](https://cloud-a08hob7s0.vercel.app/2workshop3.gif)
 
@@ -114,16 +151,23 @@ plt.show()
 # 3. Plotting with Dataset
 To plot with dataset, firstly, we will store dataset in a vaiable and then modify dataset a bit and at last, represent the data in the 3D Heatmap model.
 
+
 | Function/Parameter | Description |
 | --- | --- |
+|X, Y, Z |	Data values as 1D arrays|
+| CSV | CSV is a simple file format used to store tabular data |
 | cmap | colormap package provides simple utilities to convert colors between RGB, HEX, HLS, HUV |        
 | unstack | returning a DataFrame having a new level of column labels |        
-| reset_index | Reset the index of the DataFrame |       
+| reset_index | reset the index of the DataFrame |       
 | linewidth | change line width of lines |             
 | shrink | shrink the width of the plot  |       
-| aspect | aspect is use to prevent future distortions |      
+| aspect | aspect is use to prevent future distortions|
+cat.codes |return Series of codes as well as the index.|
 
 
+
+\
+We need to import all libraries 
 ```python
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
@@ -131,7 +175,7 @@ import pandas as pd
 import seaborn as sns
 import numpy as np
 ```
-Load csv data in `data` variable
+Loading **csv** data in `data` variable
 
 ```python
 data = pd.read_csv('volcano.csv')
@@ -162,8 +206,13 @@ fig = plt.figure()
 ax = fig.gca(projection='3d')
 ax.plot_trisurf(df['Y'], df['X'], df['Z'], cmap=plt.cm.jet, linewidth=0.2)
 ```
-Cmap function is used ata values to RGBA colors and then we will
-add a color bar that map values to colors. The point's height on the mountain increase the color value that will shift from blue to red.
+`cmap=plt.cm.jet` returns the jet colormap as a three-column array. Each row in the array contains the red, green, and blue intensities for a specific color
+
+
+![Cmap](https://cloud-25g0giqzr.vercel.app/0colormap_jet.png)
+
+and then we will
+add a color bar that map values to colors. The point's height on the mountain increase the color value will shift from blue to red.
 
 ```python
 surf = ax.plot_trisurf(df['Y'], df['X'], df['Z'], cmap=plt.cm.jet, linewidth=0.2)
@@ -173,8 +222,33 @@ We will use this function to display the plot on our computer screen.
 ```python
 plt.show()
 ```
+---
+**Source Code**
+```python
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+import numpy as np
 
+data = pd.read_csv('volcano.csv')
 
+df = data.unstack().reset_index()
+df.columns = ['X', 'Y', 'Z']
+
+df['X'] = pd.Categorical(df['X'])
+df['X'] = df['X'].cat.codes
+
+fig = plt.figure()
+ax = fig.gca(projection='3d')
+ax.plot_trisurf(df['Y'], df['X'], df['Z'], cmap=plt.cm.jet, linewidth=0.2)
+
+surf = ax.plot_trisurf(df['Y'], df['X'], df['Z'], cmap=plt.cm.jet, linewidth=0.2)
+fig.colorbar(surf, shrink=0.5, aspect=5)
+
+plt.show()
+```
+---
 **Output**
 ![Volcano Heatmap](https://cloud-94iqxy8lo.vercel.app/0volcano.gif)
 
@@ -195,3 +269,5 @@ Mountain Bruno [Code](https://repl.it/@ShiveshSingh/Mtbrunoplot)
 Surface Plot [Code](https://repl.it/@ShiveshSingh/Surface-Plot-3D#main.py)
 
 Heat Map Animation [Code](https://repl.it/@ShiveshSingh/HeatmapAnimation)
+
+I would like to thank the author of the volcano.csv [jack parmar](https://github.com/jackparmer) and his team.
