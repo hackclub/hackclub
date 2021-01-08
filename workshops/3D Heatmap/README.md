@@ -23,11 +23,10 @@ Today, we'll be using repl.it to write out doe in. It is an online, instant deve
 
 ![repl website](https://cloud-73h0sldam.vercel.app/0screenshot_2020-12-25_at_23.03.53.png)
 
-- Create a repl by clicking **+ New repl** and choose the programming language **PYTHON** and named it whatever you'd like and click **create repl**.
+- You can fork our repl which contains a volcano.csv file\
+[Link](https://repl.it/@ShiveshSingh/3DHeatmapWorkshop)
 
-- Then, download the dataset ([`volcano.csv`](https://cloud-8ycpvzexa.vercel.app/0volcano.csv)).
-
-- Rename the file to `volcano.csv` and place it in the repl.it folder that you are working in.
+![](https://cloud-kben0mdmg.vercel.app/0screenshot_2021-01-08_at_09.43.56.png)
 
 - The setup is complete. ✅.
 
@@ -130,10 +129,9 @@ from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+import numpy as np
 ```
-
-Get the data from the file.\
-volcano [dataset](https://cloud-8ycpvzexa.vercel.app/0volcano.csv)
+Load csv data in `data` variable
 
 ```python
 data = pd.read_csv('volcano.csv')
