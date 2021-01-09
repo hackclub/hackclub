@@ -2,6 +2,7 @@
 name: 'Type Speed'
 description: 'Learn by playing with Type Speed game'
 author: '@f2acode'
+img: 'https://user-images.githubusercontent.com/12521100/104078337-5a170a80-51fc-11eb-89ea-d79409552bb7.gif'
 ---
 
 Game development is one of the scarest topics for developers, but not in this workshop, you will learn about HTML, CSS and Javascript while developing your own game. You’re going to create a simple game: type speed game where you can both train your typing and have fun.
@@ -79,11 +80,7 @@ We also have an `id` which will be used to show and hide the play button and the
 The structure for the game over page is the same, the difference are the texts and the function called on the button.
 
 ```html
-<div
-  class="d-grid gap-2 col-6 mx-auto"
-  id="gameOver"
-  style="visibility: hidden"
->
+<div class="d-grid gap-2 col-6 mx-auto d-none" id="gameOver">
   <h1 class="text-center">GAME OVER</h1>
   <button type="button" class="btn-lg btn-warning" onclick="showMenu(true)">
     Play Again
@@ -96,9 +93,11 @@ The structure for the game over page is the same, the difference are the texts a
 Here we defined a basic screen where we have an id `youWon` for the main element, a title and a button with another function call.
 
 ```html
-<div id="youWon" style="visibility: hidden">
-  <h1>You Won</h1>
-  <button onclick="showMenu(true)">Play Again</button>
+<div class="d-grid gap-2 col-6 mx-auto d-none" id="youWon">
+  <h1 class="text-center">You Won</h1>
+  <button type="button" class="btn-lg btn-warning" onclick="showMenu(true)">
+    Play Again
+  </button>
 </div>
 ```
 
@@ -109,11 +108,7 @@ Now we have a bigger code for the game page, where we have a `form` for the user
 ```html
 <div class="container">
   <div class="row justify-content-start">
-    <div
-      class="col"
-      id="status"
-      style="position: fixed; bottom: 0;visibility: hidden;"
-    >
+    <div class="col d-none" id="status" style="position: fixed; bottom: 0;">
       <form onsubmit="typeWord();return false" autocomplete="off">
         Enter the word: <input id="winput" type="text" />
         <input type="submit" />
@@ -144,48 +139,47 @@ On this workshop we will use a [great base of common words](https://github.com/d
 ```javascript
 var hittedWords = 0
 var missedWords = 0
+var words = []
+let animationsMap = new Map()
 ```
 
 Bellow that write the following function to randomize our array of words:
 
 ```javascript
-const shuffle = (arr) =>
-  [...arr].reduceRight(
-    (res, _, __, arr) => (
-      res.push(arr.splice(0 | (Math.random() * arr.length), 1)[0]), res
-    ),
-    []
+const shuffle = function (arr) {
+  let shuffledArr = [...arr]
+
+  const getRandomValue = (i, N) => Math.floor(Math.random() * (N - i) + i)
+
+  shuffledArr.forEach(
+    (elem, i, arr, j = getRandomValue(i, arr.length)) =>
+      ([arr[i], arr[j]] = [arr[j], arr[i]])
   )
+
+  return shuffledArr
+}
 ```
+
+First we create a copy of the array, then create a `getRandomValue` function so that we can generate a random number in the size of array. After that we iterate through the array changing the positions of random elements and return the shuffled array.
 
 Then a function to toggle the visibility of the main menu of our game::
 
 ```javascript
 const showMenu = function (show) {
-  if (show) {
-    document.getElementById('status').style.visibility = 'hidden'
-    document.getElementById('playButton').style.visibility = 'visible'
+  document.getElementById('status').classList.toggle('d-none')
+  document.getElementById('playButton').classList.toggle('d-none')
 
-    document.getElementById('gameOver').style.visibility = 'hidden'
-    document.getElementById('youWon').style.visibility = 'hidden'
-  } else {
-    document.getElementById('status').style.visibility = 'visible'
-    document.getElementById('playButton').style.visibility = 'hidden'
+  if (show) {
+    document.getElementById('gameOver').classList.add('d-none')
+    document.getElementById('youWon').classList.add('d-none')
   }
 }
 ```
 
-This function uses the `document.getElementById` to get the elements then set their visibilities accordinly to the `show` value, if true:
+This function uses the `document.getElementById` to get the elements then toggle the presence of the `d-none` class which defines if the element is visible. If the `show` value is true:
 
-- Hide the status bar of the player;
 - Hide game over screen;
-- Hide you won screen;
-- Shows the play screen;
-
-Otherwise:
-
-- Shows the status bar of the player;
-- Hide the play screen.
+- Hide you won screen.
 
 Then, write the last small function, which will handle the user input for trying to hit a word:
 
@@ -201,10 +195,12 @@ const typeWord = function () {
     if (wordFound) {
       hittedWords += 1
 
+      animationsMap.get(typedWord).remove()
+
       document.getElementById('hittedWords').innerText = hittedWords
       wordFound.remove()
 
-      if (anime.running.length == 1) {
+      if (!words.length) {
         document.getElementById('youWon').style.visibility = 'visible'
       }
     }
@@ -212,7 +208,7 @@ const typeWord = function () {
 }
 ```
 
-It gets the value of the input form, check if there is a word and tries to find the element on the HTML, if so this increases the `hittedWords`, and remove the element from the HTML. If there is just one word remaining on the screen then that shows the you won screen.
+It gets the value of the input form, check if there is a word and tries to find the element on the HTML, if so this increases the `hittedWords`, and remove the element from the HTML. If there is no word remaining then that shows the "you won" screen.
 
 ### Main function for the playing
 
@@ -233,61 +229,65 @@ const play = function () {
   showMenu(false)
 
   d3.json('words.json').then(function (data_json) {
-    const words = shuffle(data_json['commonWords'])
+    words = shuffle(data_json['commonWords'])
 
     document.getElementById('remainingWords').innerText = words.length
 
     const interval = setInterval(function () {
-      const word = words.pop()
+      if (document.visibilityState == 'visible') {
+        const word = words.pop()
 
-      if (word) {
-        document.getElementById('remainingWords').innerText = words.length
+        if (word) {
+          document.getElementById('remainingWords').innerText = words.length
 
-        var wordTag = document.createElement('h1')
-        var wordTextTag = document.createTextNode(word)
-        wordTag.appendChild(wordTextTag)
+          var wordTag = document.createElement('h1')
+          var wordTextTag = document.createTextNode(word)
+          wordTag.appendChild(wordTextTag)
 
-        body.appendChild(wordTag)
+          body.appendChild(wordTag)
 
-        function getRandomInt(max) {
-          return Math.floor(Math.random() * Math.floor(max))
-        }
-
-        wordTag.style.position = 'fixed'
-
-        const randomHeight = getRandomInt(window.innerHeight - 100) + 'px'
-        wordTag.style.top = randomHeight
-
-        wordTag.className = word
-
-        var animation = anime({
-          targets: wordTag,
-          right: '0px',
-          easing: 'easeInOutQuad',
-          scale: 1.5,
-          duration: 4000,
-          complete: function (anim) {
-            try {
-              body.removeChild(wordTag)
-
-              if (playing) {
-                missedWords += 1
-                document.getElementById('missedWords').innerText =
-                  missedWords + '/10'
-
-                if (missedWords == 10) {
-                  playing = false
-                  document.getElementById('gameOver').style.visibility =
-                    'visible'
-
-                  clearInterval(interval)
-                }
-              }
-            } catch (e) {}
+          function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max))
           }
-        })
-      } else {
-        clearInterval(interval)
+
+          wordTag.style.position = 'fixed'
+
+          const randomHeight = getRandomInt(window.innerHeight - 100) + 'px'
+          wordTag.style.top = randomHeight
+
+          wordTag.className = word
+
+          var animation = anime({
+            targets: wordTag,
+            right: '0px',
+            easing: 'easeInOutQuad',
+            scale: 1.5,
+            duration: 4000,
+            complete: function (anim) {
+              try {
+                body.removeChild(wordTag)
+
+                if (playing) {
+                  missedWords += 1
+                  document.getElementById('missedWords').innerText =
+                    missedWords + '/10'
+
+                  if (missedWords == 10) {
+                    playing = false
+                    document.getElementById('gameOver').style.visibility =
+                      'visible'
+
+                    clearInterval(interval)
+                  }
+                }
+              } catch (e) {}
+            }
+          })
+
+          animationsMap.set(word, animation)
+        } else {
+          clearInterval(interval)
+        }
       }
     }, 1000)
   })
@@ -302,7 +302,7 @@ We do some small steps at the beginning:
 - Reset the statistic global variables;
 - Call the function `showMenu` we defined ealier.
 
-The `d3.json` reads our file of words, then with its return we define a `words` variable with the words already shuffled by our previous function `suffle` then we define the remaining words on the element of the with the `remainingWords` id.
+The `d3.json` reads our file of words, then with its return we set the `words` variable with the words already shuffled by our previous function `suffle` then we define the remaining words on the element with the `remainingWords` id.
 
 The `setInterval` is a native function of the browser to create recurrence functions which will be called every some milliseconds, we attribute that to a variable to that we can force it to stop. The function called every 1 second (1000 milliseconds) will extract one word from the array and check if the array is not empty (the word was extracted). If it's empty we stop the `interval` recurrence. **If not** it:
 
@@ -312,7 +312,8 @@ The `setInterval` is a native function of the browser to create recurrence funct
 - Add the word to the `body`;
 - Define a function for getting random int values;
 - Define a specific height for the word to start, since it will move from the left to the right with other word then it's good to have different random heights on the screen;
-- Then, it creates an animation with the `anime` function with some parameters: `right` where the word should place at the end of the animation, `easing` the type of animation, `scale` make the element bigger in some scale, `duration` how many milliseconds the animation will last, `complete` a callback function once the animation finishes.
+- Creates an animation with the `anime` function with some parameters: `right` where the word should place at the end of the animation, `easing` the type of animation, `scale` make the element bigger in some scale, `duration` how many milliseconds the animation will last, `complete` a callback function once the animation finishes;
+- Then saves the animation id inside a `Map` so that we can stop propertly each word animation once the user hits.
 
 The callback function deserves a in-depth explanation:
 
@@ -328,10 +329,10 @@ The callback function deserves a in-depth explanation:
 
 It's good to notice that this function will run while the user is typing words (hitting the `typeWord` function) to avoid them to finish the animation.
 
-## Hacking - WIP
+## Hacking
 
-There are many ways to improve this project and make it your own customized project, here are some of the examples you can check:
+That's all! I hope you enjoyed the workshop. You can also extend it in many ways and make it your own customized project, here are some of the examples you can check:
 
-- **Type Speed - customized input word list**: [Demo]() [Code]()
-- **Type Speed - improve styles**: [Demo]() [Code]()
-- **Type Speed - open API word list**: [Demo]() [Code]()
+- **Type Speed - customized input word list**: [Demo](https://typespeed-custom-words.f2acode.repl.co/) [Code](https://repl.it/@f2acode/TypeSpeed-Custom-Words)
+- **Type Speed - custom styles**: [Demo](https://typespeed-improved-styles.f2acode.repl.co/) [Code](https://repl.it/@f2acode/TypeSpeed-Improved-Styles)
+- **Type Speed - open API quote word list**: [Demo](https://typespeed-open-api.f2acode.repl.co/) [Code](https://repl.it/@f2acode/TypeSpeed-Open-API)
