@@ -337,10 +337,6 @@ socket.on('connected', async () => {
         })
     })
 })
-
-socket.on('name', async (name) => {
-    players.innerHTML += `<li>${name}</li>`
-})
 ```
 
 Explanation:
@@ -350,33 +346,23 @@ Explanation:
 * We add the loader class to the loader element like above
 * When the host connects to the server, we want to display a SweetAlert that displays the current players and has a button to start the game
 * Once the host clicks "start", we send the start event to the server and show another SweetAlert that says "Waiting for players to answer" (the first question). The second alert shows a loader (see above) as its content.
+
+Just below the previous code, add
+
+``` js
+socket.on('name', async (name) => {
+    players.innerHTML += `<li>${name}</li>`
+})
+```
+
 * Every time the server sends us the name of a player, we add it to the content of the `players` div created above. This lets the host see all the players currently waiting for the game to start
 
-Next, before the end of the `io.on("connection", ...)` , add:
+Next, before the end of the `io.on("connection", ...)` in the Server JavaScript, add:
 
 ``` js
 socket.once("start", async () => {
     for (const question of questions) {
-        await new Promise(async (resolve) => {
-            const toSend = {
-                ...question
-            } // Duplicate the question
-
-            setTimeout(() => {
-                timeUpEvent.emit("timeUp", question.correctAnswer)
-                const sortedValues = Object.values(userPointsMap).sort(([, a], [, b]) => b - a)
-                const top5 = sortedValues.slice(0, 5)
-
-                io.emit("timeUp", top5)
-
-                socket.once("next", () => {
-                    resolve()
-                })
-            }, question.time * 1000)
-
-            delete toSend.correctAnswer
-            io.emit('question', toSend)
-        })
+        // TODO -- We'll add code here below
     }
 
     const sortedValues = Object.values(userPointsMap).sort(([, a], [, b]) => b - a)
@@ -388,18 +374,46 @@ socket.once("start", async () => {
 Explanation:
 
 * When the host starts the game:
-    - We loop over every question, one by one, and do the following:
-        - Duplicate the question
-        - Delete the correct answer from the duplicate of the question
-        - Send the duplicate of the question (without the correct answer) to the clients as "question"
-        - Set a timer according to the time specified for the question, which will:
-            - Emit "timeUp" using the emitter we created at the start of the workshop and emit the correct answer for question
-            - Convert `userPointsMap` into an array and sort it according to the points every person has
-            - Slice the top 5 people out of the sorted array
-            - Emit "timeUp" using socket.io and send the top 5
-            - Wait for the host to send "next", after which it'll move on to the next question
+    - We loop over every question, one by one. We'll add code to send the questions below
     - Once every question is done, we sort the players according to their ranks like before and emit "gameover" with the sorted values
     - After that, we can stop the server
+
+Inside the for loop in the previous code block, add
+
+``` js
+await new Promise(async (resolve) => {
+    const toSend = {
+        ...question
+    } // Duplicate the question
+
+    setTimeout(() => {
+        timeUpEvent.emit("timeUp", question.correctAnswer)
+        const sortedValues = Object.values(userPointsMap).sort(([, a], [, b]) => b - a)
+        const top5 = sortedValues.slice(0, 5)
+
+        io.emit("timeUp", top5)
+
+        socket.once("next", () => {
+            resolve()
+        })
+    }, question.time * 1000)
+
+    delete toSend.correctAnswer
+    io.emit('question', toSend)
+})
+```
+
+Explanation: For every question that we looped over above, 
+
+* Duplicate the question
+* Set a timer according to the time specified for the question, which will:
+    - Emit "timeUp" using the emitter we created at the start of the workshop and emit the correct answer for question
+    - Convert `userPointsMap` into an array and sort it according to the points every person has
+    - Slice the top 5 people out of the sorted array
+    - Emit "timeUp" using socket.io and send the top 5
+    - Wait for the host to send "next", after which it'll move on to the next question
+* Delete the correct answer from the duplicate of the question
+* Send the duplicate of the question (without the correct answer) to the clients as "question"
 
 Next, lets display the questions sent from the server on the client. Open your Client JavaScript for `/` , and add:
 
@@ -496,6 +510,26 @@ socket.on("correct", async _ => {
         closeOnEsc: false
     })
 })
+```
+
+* When the event `correct` is sent from the server, we display a SweetAlert that shows "Correct! Keep it up :)".
+
+*Challenge: Add similar alerts for `incorrect` and `noAnswer`*
+
+<details>
+    <summary>Here's how the challenge solution looks</summary>
+
+``` js
+socket.on("correct", async _ => {
+    swal({
+        title: "Correct!",
+        text: "Keep it up :)",
+        icon: "success",
+        buttons: false,
+        closeOnClickOutside: false,
+        closeOnEsc: false
+    })
+})
 
 socket.on("incorrect", async _ => {
     swal({
@@ -520,7 +554,7 @@ socket.on("noAnswer", async _ => {
 })
 ```
 
-Explanation: This is pretty straightforward, according to the events from the server, we display SweetAlerts
+</details>
 
 Next, in the Client JavaScript for `/host` , add 
 
