@@ -359,9 +359,12 @@ class MainClass {
 - The [try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch) will catch any errors such as invalid choices to prevent our program from breaking.
 
 # Final Code
-Here is everything that we wrote!
+You are done! Congrats!
 
 <img src="https://24.media.tumblr.com/tumblr_m72q5gpfZ91rps25mo1_500.gif" width="380" alt="Snoopy Gif">
+
+Here is everything we wrote.
+<img src="https://images.squarespace-cdn.com/content/v1/50cbdb88e4b07b9d0e8730e2/1543174618461-SV5S28UJH1774WGCYK4H/ke17ZwdGBToddI8pDm48kPoswlzjSVMM-SxOp7CV59BZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI6FXy8c9PWtBlqAVlUS5izpdcIXDZqDYvprRqZ29Pw0o/yay.gif" width="380" alt="Snoopy Gif">
 
 ```csharp
 using System;
