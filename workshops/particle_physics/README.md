@@ -44,7 +44,7 @@ The first step in this project is to create a class to manage the particles. Bef
 class Particle {}
 ```
 
-A [class](https://en.wikipedia.org/wiki/Class_(computer_programming)) is just a way of connecting a set of variables and functions in one package. Now that you have a particle class, you need to define what the particle can do.
+A [class](<https://en.wikipedia.org/wiki/Class_(computer_programming)>) is just a way of connecting a set of variables and functions in one package. Now that you have a particle class, you need to define what the particle can do.
 
 ```javascript
 class Particle {
@@ -80,19 +80,24 @@ constructor(x, y, mass) {
   this.velocity = createVector(0, 0)
   this.mass = mass
 
+  // radius = (mass / π) ** 0.5
   this.radius = Math.sqrt(this.mass / PI) * SCALE
+  // set random color for particle
   this.color = color(random(0, 255), random(0, 255), random(0, 255))
 }
 ...
 ```
 
-The [constructor](<https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming)>) is used to create an instance of a class. In this case, we use it to set up all of the variables when you make a new particle. The [`createVector()`](https://p5js.org/reference/#/p5/createVector) function is provided by p5 to easily make a [vector object](https://p5js.org/reference/#/p5.Vector). This is just a 2d line with a few helper functions to easily modify the values.
+The [constructor](<https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming)>) is used to create an instance of a class. In this case, we use it to set up all of the variables when you make a new particle. The [`createVector()`](https://p5js.org/reference/#/p5/createVector) function is provided by p5 to easily make a [vector object](https://p5js.org/reference/#/p5.Vector). This is just a 2d line or position with a few helper functions to easily modify the values.
 
 ```javascript
 ...
 draw() {
+  // Remove outline
   noStroke()
+  // Set fill to particles color
   fill(this.color)
+  // Draw particle
   ellipse(this.position.x, this.position.y, this.radius * 2)
 }
 ...
@@ -109,24 +114,29 @@ applyForce(force) {
 ...
 ```
 
-Here we see the first physics formula. This calculates how much acceleration the object should have based on the force applied.
+Here we see the first physics formula. This calculates how much acceleration the object should have based on the force applied. We use [Newton's second law of motion](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Constant_Mass) to calculate this acceleration.
 
 ```javascript
 ...
 physics(particle) {
+  // Don't apply to self
   if (this === particle) return
 
+  // mass1 * mass2
   let mass = this.mass * particle.mass
+  // radius1 + radius2
   let radius = this.radius + particle.radius
+  // Distance between paticles
   let distance = this.position.dist(particle.position)
 
+  // Don't apply if particles are touching
   if (distance <= radius) return
 
   // force = G * mass1 * mass2 / distance ** 2
   let force = p5.Vector.sub(this.position, particle.position)
     .setMag(G * mass  / (distance ** 2))
 
-
+  // Apply the force
   particle.applyForce(force)
 }
 ...
@@ -175,18 +185,23 @@ The [`draw()`]() function is run every frame of the program. This can be used to
 First, we will create the array of particles we will be displaying. Then we need to update and display them every frame inside `draw()`.
 
 ```javascript
+// Constants
 const G = 6.67e-11
 const SCALE = 0.001
+
+// Array to store particles
 let particles = []
 
 function setup () {
   createCanvas(400, 400)
 
+  // Loop and create each particles
   for (let i = 0; i < 10; i++) {
     let x = random(0, width)
     let y = random(0, height)
     let mass = random(2e8, 1e9)
 
+    // Add the new particle to the list
     particles.push(new Particle(x, y, mass))
   }
 }
@@ -194,12 +209,16 @@ function setup () {
 function draw () {
   background(51, 51, 51)
 
+  // Loop all particles twice
   for (const particleA of particles)
     for (const particleB of particles)
       if (particleA !== particleB) particleA.physics(particleB)
 
+  // Loop particles again
   for (const particle of particles) {
+    // Upadte the particle with the new acceleration and velocity
     particle.update()
+    // Draw the particle on the canvas
     particle.draw()
   }
 }
@@ -207,7 +226,7 @@ function draw () {
 
 ## You're Finished!
 
-You should now have a working although very basic simulation of gravity between particles. This simulation is very over exagerated as particles with this little mass would have very small gravitational forces.
+You should now have a working although very basic simulation of gravity between particles. This simulation is roughly what would happen in real life with these exact masses and distances. The values themselves are a bit over exagerated to be more visually interesting.
 
 - [Code](https://repl.it/@SquarePear/Particle-Physics#sketch.js)
 - [Project](https://Particle-Physics.squarepear.repl.co)
