@@ -283,7 +283,9 @@ For example, plotting graphs and building things like the 3D models.
 
 Now it's your turn to apply what you know to make more projects!. Here's some inspiration on ways you can make new projects even cool!
 
-- **3D Volcano:**
+
+\
+**3D Volcano:**
  
 In this project, we can use the volcano dataset to make a 3D volcano plot.    
 
@@ -291,7 +293,9 @@ In this project, we can use the volcano dataset to make a 3D volcano plot.
 
 [Code](https://repl.it/@ShiveshSingh/Volcano-3D-Heatmap)
 
-- **3D Surface Plot:**
+
+\
+**3D Surface Plot:**
 
 In this project, we can use a mathematical function to make the 3D surface plot.
 
@@ -299,7 +303,9 @@ In this project, we can use a mathematical function to make the 3D surface plot.
 
 [Code](https://repl.it/@ShiveshSingh/Surface-Plot-3D#main.py)
 
-- **3D Contour Plot:**
+
+\
+**3D Contour Plot:**
 
 In this project, we can use the sin function to make the contour plot.
 
