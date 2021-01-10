@@ -1,5 +1,5 @@
 ---
-name: Slack Todo List
+name: Kahoot Clone - Kuizzy
 description: Make a Kahoot clone with SweetAlert, WebSockets, and Node.js
 author: '@KhushrajRathod'
 img: https://cloud-b0r4v3fgu.vercel.app/0screenshot_2020-12-31_at_3.22.47_pm.png
@@ -80,7 +80,7 @@ Explanation:
 * First, we're importing [express](https://expressjs.com/), which lets us easily create a HTTP server in Node.js
 * Next, we create an express instance and initialize the http server
 * Following that we start socket.io which allows us to connect to our frontend using WebSockets
-* After that we import the built in events and create a new [EventEmitter](https://www.tutorialspoint.com/nodejs/nodejs_event_emitter.html) which we'll use later
+* After that we import the built in events and create a new [EventEmitter](https://www.tutorialspoint.com/nodejs/nodejs_event_emitter) which we'll use later
 
 Next, enter
 
@@ -459,7 +459,7 @@ Explanation:
 * Every time the server sends a question, we open a SweetAlert containing the question and its answers.
 * Once the player answers, we emit the answer to the server, and show another SweetAlert which says "Waiting for others" (to answer the question)
 
-Add the beginning of the `io.on("connection", ...` in the Server JavaScript, add
+At the beginning of the `io.on("connection", ...` in the Server JavaScript, add
 
 ``` js
 let attempt = ""
