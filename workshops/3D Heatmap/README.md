@@ -11,7 +11,7 @@ image: 'https://cloud-a08hob7s0.vercel.app/0workshop1.gif'
 
 [Click here to see a working demo of today's project.](https://repl.it/@ShiveshSingh/Mtbrunoplot)
 
-In this workshop, you will use the Python programming language and a couple of libraries to create a stunning heat map from scratch. Along the way, you will also learn about 3D heatmaps. Our project is about collecting data then sorting it, arranging it and lastly presenting it in the form of a 3D model.
+In this workshop, you will use the Python language and a couple of libraries to create a stunning heat map from scratch. Along the way, you will also learn about 3D heatmaps. Our project is about collecting data then sorting it, arranging it and lastly presenting it in the form of a 3D model.
 
 ![How to present data](https://cloud-3ifpxv546.vercel.app/0image.png)
 
@@ -95,7 +95,6 @@ ax = plt.axes(projection='3d')
 
 plt.show()
 ```
-
 **Output**
 ![3D Plane](https://cloud-a08hob7s0.vercel.app/1workshop2.gif)
 
@@ -139,6 +138,26 @@ Shows the graph
 ax.plot3D(x, y, z, 'red')
 plt.show()
 ```
+**Source Code**
+```
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+import numpy as np
+
+ax = plt.axes(projection='3d')
+z = np.linspace(0, 30, 100)
+
+x = np.sin(z)
+y = np.cos(z)
+
+ax.plot3D(x, y, z, 'red')
+plt.show()
+
+```
+
+**Output**
 
 **Source Code**
 
@@ -182,6 +201,9 @@ To plot with dataset, firstly, we will store dataset in a vaiable and then modif
 \
 We need to import all libraries
 
+
+\
+We need to import all libraries 
 ```python
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
@@ -189,7 +211,6 @@ import pandas as pd
 import seaborn as sns
 import numpy as np
 ```
-
 Loading **csv** data in `data` variable
 
 ```python
@@ -239,9 +260,6 @@ We will use this function to display the plot on our computer screen.
 ```python
 plt.show()
 ```
-
----
-
 **Source Code**
 
 ```python
@@ -268,9 +286,6 @@ fig.colorbar(surf, shrink=0.5, aspect=5)
 
 plt.show()
 ```
-
----
-
 **Output**
 ![Volcano Heatmap](https://cloud-a08hob7s0.vercel.app/0workshop1.gif)
 
