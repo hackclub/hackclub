@@ -9,7 +9,7 @@ img: 'https://cloud-k50jkthdw.vercel.app/0particle-physics-summary.png'
 
 The goal of this workshop is to explore some basic usage of [p5.js](https://p5js.org) while applying some of the things you may have learned in physics class in an interesting way.
 
-All of the different particles will act like planets in orbit. They all apply forces (gravity) to eachother depending on their mass and their distance from eachother. The main difference here is that they are much closer together than real planets. This is so you don't have to wait an entire year for one particle to orbit another.
+All of the different particles will act like planets in orbit. They all apply forces (gravity) to each other depending on their mass and their distance from each other. The main difference here is that they are much closer together than real planets. This is so you don't have to wait an entire year for one particle to orbit another.
 
 When you are done with this workshop, you should end up with something similar to this!
 
@@ -24,7 +24,7 @@ First you need to setup your project. I created a basic p5.js [boilerplate](http
 
 ## Making a Particle
 
-The first step in this project is to create a class to manage the particles. Before you can do this, you should create a new file to store the class for easier readibility.
+The first step in this project is to create a class to manage the particles. Before you can do this, you should create a new file to store the class for easier readability.
 
 1. Create a new file called `particle.js`
 2. Add this file to the body of `index.html`
@@ -142,8 +142,8 @@ physics(particle) {
 ...
 ```
 
-This one looks complicated, but if you think about it in terms of physics it is actually suprisingly simple.
-The first line is just making sure it isn't trying to compare itself. Next we declare a few variables. The second if statement is just used to stop the forces when the paricles are colliding. This isn't 100% necessary, but things will probably break if they get too close. The `force` variable points from the affected particle to the affector. Next the magnitude is set to the amount of force using the [gravitational formula](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation). Finally, the force is applied to the particle.
+This one looks complicated, but if you think about it in terms of physics it is actually surprisingly simple.
+The first line is just making sure it isn't trying to compare itself. Next we declare a few variables. The second if statement is just used to stop the forces when the particles are colliding. This isn't 100% necessary, but things will probably break if they get too close. The `force` variable points from the affected particle to the affecter. Next the magnitude is set to the amount of force using the [gravitational formula](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation). Finally, the force is applied to the particle.
 
 ```javascript
 ...
@@ -178,7 +178,7 @@ function draw () {
 }
 ```
 
-The [`setup()`]() function is run once at the begining of the program to do any setup you might need. We use it to create the canvas using [`createCanvas()`](). This creates a 400x400 pixel canvas for us to draw on.
+The [`setup()`]() function is run once at the beginning of the program to do any setup you might need. We use it to create the canvas using [`createCanvas()`](). This creates a 400x400 pixel canvas for us to draw on.
 
 The [`draw()`]() function is run every frame of the program. This can be used to update the animation every frame. We will use it to perform the the physics updates and draw the particles to the canvas.
 
@@ -226,7 +226,7 @@ function draw () {
 
 ## You're Finished!
 
-You should now have a working although very basic simulation of gravity between particles. This simulation is roughly what would happen in real life with these exact masses and distances. The values themselves are a bit over exagerated to be more visually interesting.
+You should now have a working although very basic simulation of gravity between particles. This simulation is roughly what would happen in real life with these exact masses and distances. The values themselves are a bit over exaggerated to be more visually interesting.
 
 - [Code](https://repl.it/@SquarePear/Particle-Physics#sketch.js)
 - [Project](https://Particle-Physics.squarepear.repl.co)
