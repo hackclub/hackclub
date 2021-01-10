@@ -96,6 +96,7 @@ ax = plt.axes(projection='3d')
 plt.show()
 ```
 **Output**
+
 ![3D Plane](https://cloud-a08hob7s0.vercel.app/1workshop2.gif)
 
 # 2. Plotting Graph
@@ -262,6 +263,7 @@ fig.colorbar(surf, shrink=0.5, aspect=5)
 plt.show()
 ```
 **Output**
+
 ![Volcano Heatmap](https://cloud-a08hob7s0.vercel.app/0workshop1.gif)
 
 To make 3D plots, we need each data point must have three coordinates to define it's position. These three are it's latitude, longitude, and altitude (X, Y, and Z). This data comes from the mountain.csv dataset. Then we will plot each point, and then it will give us the 3D model of the mountain. And then, we have also added colors to make this 3D plot into 3D Heatmap.
@@ -277,11 +279,11 @@ Share with everyone🤗✌️🥳👏🏅🌇🎊
 
 # Keep Hacking!
 
-There so many exciting things you can make now! 
+There are so many exciting things you can make now! 
 
-For example, plotting graphs and building things like the 3D models.
+For example, plotting graphs and building things like the 3D models etc.
 
-Now it's your turn to apply what you know to make more projects!. Here's some inspiration on ways you can make new projects even cool!
+Now it's your turn to apply what you know to make exciting projects!. Here are some inspirations to make cool new projects.
 
 
 \
