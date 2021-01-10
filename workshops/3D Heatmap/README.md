@@ -1,5 +1,5 @@
 ---
-name: 'Make a 3D Heatmap of a volcano'
+name: 'Make a 3D Heatmap of a mountain'
 description: 'Created amazing graph with the help of Python'
 author: '@shivesh01'
 image: 'https://cloud-a08hob7s0.vercel.app/0workshop1.gif'
@@ -17,7 +17,7 @@ In this workshop, you will use the Python language and a couple of libraries to 
 
 # Getting started
 
-Today, we'll be using repl.it to write out doe in. It is an online, instant development environment to learn, build, collaborate, and host your project. Show you don’t have to waste time while setting up a development environment.
+Today, we'll be using repl.it to write some codes. It is an online, instant development environment to learn, build, collaborate, and host your project. Show you don’t have to waste time while setting up a development environment.
 
 [Sign up and then create a repl here.](https://repl.it/signup)
 
@@ -139,27 +139,6 @@ ax.plot3D(x, y, z, 'red')
 plt.show()
 ```
 **Source Code**
-```
-from mpl_toolkits.mplot3d import Axes3D
-import matplotlib.pyplot as plt
-import pandas as pd
-import seaborn as sns
-import numpy as np
-
-ax = plt.axes(projection='3d')
-z = np.linspace(0, 30, 100)
-
-x = np.sin(z)
-y = np.cos(z)
-
-ax.plot3D(x, y, z, 'red')
-plt.show()
-
-```
-
-**Output**
-
-**Source Code**
 
 ```python
 from mpl_toolkits.mplot3d import Axes3D
@@ -197,10 +176,6 @@ To plot with dataset, firstly, we will store dataset in a vaiable and then modif
 | shrink             | shrink the width of the plot                                                            |
 | aspect             | aspect is use to prevent future distortions                                             |
 | cat.codes          | return Series of codes as well as the index.                                            |
-
-\
-We need to import all libraries
-
 
 \
 We need to import all libraries 
@@ -308,14 +283,15 @@ For example, plotting graphs and building things like the 3D models.
 
 Now it's your turn to apply what you know to make more projects!. Here's some inspiration on ways you can make new projects even cool!
 
-**3D Volcano:**
+- **3D Volcano:**
  
 In this project, we can use the volcano dataset to make a 3D volcano plot.    
 
 ![Volcano img](https://cloud-94iqxy8lo.vercel.app/0volcano.gif)
+
 [Code](https://repl.it/@ShiveshSingh/Volcano-3D-Heatmap)
 
-**3D Surface Plot:**
+- **3D Surface Plot:**
 
 In this project, we can use a mathematical function to make the 3D surface plot.
 
@@ -323,7 +299,7 @@ In this project, we can use a mathematical function to make the 3D surface plot.
 
 [Code](https://repl.it/@ShiveshSingh/Surface-Plot-3D#main.py)
 
-**3D Contour Plot:**
+- **3D Contour Plot:**
 
 In this project, we can use the sin function to make the contour plot.
 
