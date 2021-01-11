@@ -235,6 +235,6 @@ You should now have a working although very basic simulation of gravity between 
 
 Try changing some values and see how they affect the simulation. Add some extra features like creating a particle on click, anti-particles, or maybe apply this concept in a whole different way?
 
-1. [Add on Click](https://repl.it/@SquarePear/Particle-Physics-Add-on-Click#sketch.js)
-2. [Anti-Particles](https://repl.it/@SquarePear/Particle-Physics-Anti-Particle#sketch.js)
-3. [Physical Text](https://repl.it/@SquarePear/Particle-Physics-Text#sketch.js)
+1. [Add on Click](https://repl.it/@SquarePear/Particle-Physics-Add-on-Click#sketch.js): Add a particle whenever you click on the canvas
+2. [Anti-Particles](https://repl.it/@SquarePear/Particle-Physics-Anti-Particle#sketch.js): Anti-particles that repel other particles instead of attracting
+3. [Physical Text](https://repl.it/@SquarePear/Particle-Physics-Text#sketch.js): Trace letters with particles
