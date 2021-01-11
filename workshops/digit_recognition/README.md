@@ -8,7 +8,7 @@ img: 'https://cloud-h61jcon63.vercel.app/0image.png'
 # Image Classification on MNIST using a Neural Network
 
 
-Have you seen all the hype around machine learning and wondered what it's about and how to get started? Well, you're in the write place. In this workshop, we will be training a simple machine learning model to classify handwritten digits. You can think of this as the Hello World program of machine learning.
+Have you seen all the hype around machine learning and wondered what it's about and how to get started? Well, you're in the write place. In this workshop, we will be training a simple machine learning model to classify handwritten digits. You can think of this as the Hello World program of machine learning. An understanding of Python or any other programming language will help greatly with following this tutorial, but as long as you're willing to learn along the way, you're in the right place!
 
 An overview of this tutorial:
 ![overview of different stages/phases of tutorial](https://cloud-h61jcon63.vercel.app/0image.png)
@@ -17,7 +17,7 @@ I'd recommend opening this tutorial on [Google Colab](https://colab.research.goo
 
 ### Importing Tensorflow and Dependencies
 
-Let's start off by importing all the required dependencies. We will be using [TensorFlow](https://tensorflow.org), an open-source machine learning platform. Within TensorFlow we will use  the [Keras Sequential API](https://www.tensorflow.org/guide/keras/overview), which provides a layer of abstraction on top of all the underlying math theory (though if you are mathematically-inclined, I'd totally recommend diving into the math. Andrew Ng's [Coursera](https://www.coursera.org/learn/machine-learning) course is a great starting place). Using Keras will greatly simplify the process, allowing us to create and train our model with ease.
+Let's start off by importing all the required dependencies. We will be using [TensorFlow](https://tensorflow.org), an open-source machine learning platform. Within TensorFlow we will use the [Keras Sequential API](https://www.tensorflow.org/guide/keras/overview), which provides a layer of abstraction on top of all the underlying math theory (though if you are mathematically-inclined, I'd totally recommend diving into the math. Andrew Ng's [Coursera](https://www.coursera.org/learn/machine-learning) course is a great starting place). Using Keras will greatly simplify the process, allowing us to create and train our model with ease.
 
 
 ```py
@@ -41,7 +41,7 @@ For any machine learning (and particularly deep learning) project, we need data.
 
 
 ```py
-nb_classes = 10
+nb_classes = 10 #the number of total classes, or categories that there are (0 - 9)
 
 # the data, shuffled and split between tran and test sets
 (X_train, Y_train), (X_test, Y_test) = tf.keras.datasets.mnist.load_data()
@@ -55,7 +55,7 @@ print("y_train original shape", Y_train.shape)
     y_train original shape (60000,)
 
 
-Before preparing the dataset, let us look at some samples of training data. When approaching machine learning problems, visualizing data, when possible, is a great thing to do since it gives useful insights.
+Before preparing the dataset, let us look at some samples of training data. When approaching machine learning problems, visualizing data, when possible, is a great thing to do since it gives useful insights. We can do this using Matplotlib, a Python library that allows us to create simple plots and images from mathematical data.
 
 
 ```py
@@ -70,7 +70,7 @@ plt.tight_layout()
 
 ![examples of correct predictions](https://cloud-lc775uvcv.vercel.app/3kerasmnist_9_0.png)
 
-
+The `plt.imshow` function converts the digit matrix (all the images are stored as matrices, as we'll soon see) into a visible image. Curious to see what the raw data looks like? Let's take a look.
 
 ```py
 print(X_train[0])
@@ -135,6 +135,7 @@ print("Shape: " + str(X_train[0].shape))
         0   0   0   0   0   0   0   0   0   0]]
     Shape: (28, 28)
 
+As you can see, each image is a matrix of size 28 pixels by 28 pixels. Each pixel is a value from 0 (black) to 255 (white), and numbers in between represent various shades of grey.
 
 ### Preparing the Data for Training
 
