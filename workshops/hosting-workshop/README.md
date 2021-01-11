@@ -72,7 +72,7 @@ git commit -m "Initial Commit"
 Now, let's create a new [GitHub repo](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-repositories) and upload your project to Github.
 
 * Open [GitHub](https://www.github.com), sign-in, and then click on the "New" button in the top left:
-![New repo button](https://cloud-6hzctbqps.vercel.app/0image.png)
+![New repo button](https://cloud-gclk7n9uy.vercel.app/0gh-new-repo.png)
 
 * Type a unique name (there shouldn't be an existing repository with the same name) for the repository, and click the "create repository" button at the bottom of the screen:
 ![create repo](https://cloud-81cltkvfk.vercel.app/0image.png)
