@@ -108,6 +108,7 @@ Now let's write the code that will run when we send this request.
 
 
 Let's define our function now. Here's the code:
+```python
 @app.route("/register", methods=['POST'])
 def register():
 	username = request.args.get("username")
