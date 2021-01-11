@@ -126,7 +126,7 @@ physics(particle) {
   let mass = this.mass * particle.mass
   // radius1 + radius2
   let radius = this.radius + particle.radius
-  // Distance between paticles
+  // Distance between particles
   let distance = this.position.dist(particle.position)
 
   // Don't apply if particles are touching
@@ -216,7 +216,7 @@ function draw () {
 
   // Loop particles again
   for (const particle of particles) {
-    // Upadte the particle with the new acceleration and velocity
+    // Update the particle with the new acceleration and velocity
     particle.update()
     // Draw the particle on the canvas
     particle.draw()
