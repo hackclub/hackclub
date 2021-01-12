@@ -305,8 +305,6 @@ We are pretty much done! But before winding up, we need to make some finishing c
 
 So let's fix all these bugs in the next section!
 
-![Popeye fixing water](https://media.giphy.com/media/lVBtp4SRW6rvDHf1b6/giphy.gif)
-
 **NOTE:** If you feel satisfied with the current state of the project, it's totally upto you and you can skip it. But if you want to learn new stuff, then stick around!
 
 <details><summary>Your code so far:</summary>
