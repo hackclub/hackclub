@@ -96,14 +96,14 @@ In the `<body>` we will add a heading inside `<h1>...</h1>` tags.
 ```
 
 #### Placing a text input field
-In order to place a text input field to get the website from the URL, use the following line to create a text input with a placeholder 'Enter the website' and provide id to the input as 'websiteAddress'.
+In order to place a text input field to get the website from the URL, use the following line to create a text input with a `placeholder` 'Enter the website' and provide `id` to the input as `websiteAddress`.
 
 ```html
 <input type="text" id="websiteAddress" placeholder='Enter the website'>
 ```
 
 #### Placing the buttons
-We need two buttons to generate the mockup and to download respectively. Use the `<button>` tag twice to place the buttons. Provide the button label in between the `<button></button>` tags. Provide the id as `submitButton` for the 'Generate mockup' button and `Download` for 'Download' button.
+We need two buttons to generate the mockup and to download respectively. Use the `<button>` tag twice to place the buttons. Provide the button label in between the `<button></button>` tags. Provide the `id` as `submitButton` for the 'Generate mockup' button and `Download` for 'Download' button.
 
 ```html
 <button type="submit" id="submitBtn" onclick='generateMockup();'>Generate Mockup</button>
@@ -111,7 +111,7 @@ We need two buttons to generate the mockup and to download respectively. Use the
 ```
 
 #### Generated mockup image
-We will be using an `<img>` tag to display the generated mockup image. Provide the id as `resultImg`.
+We will be using an `<img>` tag to display the generated mockup image. Provide the `id` as `resultImg`.
 
 ```html
 <img id='resultImg'>
@@ -161,7 +161,7 @@ Import a custom font from Google fonts using the below code :
 ```
 
 #### Customizing the `<body>` style
-Now, let us customize the body style. Change the body background using `background-color: red;`. Change the body text color into white using `color : white;`. To make the website look better, let us align the items using `align-items: center;`. Finally, the CSS class for the body will be similar :
+Now, let us customize the `<body>` tag. we will change the background color to and the text color to white. To make the website look better, let us align our items to center using `align-items` and `justify-content`:
 
 ```css
 body {
@@ -368,7 +368,7 @@ const Download = document.getElementById("Download");
 ![Button actions](https://cloud-izk2xul9w.vercel.app/0buttonactions.png)
 
 #### Defining the generateMockup() function
-In order to generate the mockups, we will be defining the generateMockup() function which is called when the 'Generate Mockup' button is pressed. Create a function called generateMockup() using:
+In order to generate the mockups, we will be defining the `generateMockup()` function which is called when the 'Generate Mockup' button is pressed.
 
 ```javascript
 const generateMockup = () => {
@@ -376,7 +376,7 @@ const generateMockup = () => {
 }
 ```
 
-Now, assign the values of `websiteAddress` amd `color` to the value from the text input field using :
+Now, assign the values of `websiteAddress` and `color` to the value from the text input field using :
 
 ```javascript
 const websiteAddress = document.getElementById("websiteAddress").value;
@@ -414,7 +414,7 @@ const generateMockup = () => {
 ```
 
 #### Adding the download functionality
-To allow users download the mockup image by pressing the download button, include the following code inside the `generateMockup()` function.
+To allow users to download the mockup image by pressing the download button, include the following code inside the `generateMockup()` function.
 
 ```javascript
 Download.addEventListener("click", function () {
