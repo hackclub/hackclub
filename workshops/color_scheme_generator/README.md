@@ -6,7 +6,7 @@ author: "@giridhar7632"
 
 # Color Scheme Generator
 
-Have you ever used  [React Hooks](https://reactjs.org/docs/hooks-intro.html) in your projects? In this workshop, we're going to work with   [React Hooks](https://reactjs.org/docs/hooks-intro.html) and create a random-color scheme generator.
+In this workshop, we're going to use [React Hooks](https://reactjs.org/docs/hooks-intro.html) to create a random color scheme generator.
 
 ![Final Result](https://cloud-16p9skn27.vercel.app/0colorscheme.png)
 
@@ -24,8 +24,6 @@ You should know some React Fundamentals like:
 If you are familiar with these, let’s get going.
 
 ## React Hooks API
-
-[Hooks](https://reactjs.org/docs/hooks-intro.html) are introduced in React 16.8 version. 
 
 Previously, [Class components](https://reactjs.org/docs/components-and-props.html#function-and-class-components) were the only way to define a component that has its own state, and lifecycle methods. [Functional components](https://reactjs.org/docs/components-and-props.html#function-and-class-components) of React, which were light and more flexible, are limited in functionality. 
 
@@ -49,7 +47,7 @@ Click the `Run` button to start the live-server (it’ll take a moment to get ru
 
 Let's start creating.
 
-## Step - 1
+## Step 1
 
 Navigate to the `src` folder and create a component `Color.js`. This component will be used to display the colors on the page. Add the following code. 
 
@@ -74,14 +72,14 @@ The functional components can accept arbitrary inputs (called “`props`”) and
 Add a [prop](https://reactjs.org/docs/components-and-props.html#props-are-read-only) `colors` which will be an `array`, which we will get from other components. 
 
 ```jsx
-export default function Color({ colors = [] }) {      //<------- accepts an array as prop
+export default function Color({ colors = [] }) { // <------- accepts an array as prop
   // code goes here
 }
 ```
 
 Then we will loop through the array with [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). 
 
-The final component will be like this :
+The final component will look like this:
 
 ```jsx
 import React from 'react'
@@ -90,7 +88,7 @@ export default function Color({ colors = [] }) {
   if (!colors.length) return null
   return (
     <div className="container">
-      {colors.map((color, i) => (                // <---------- map method
+      {colors.map((color, i) => ( // <---------- map method
           <div
             key={i}
             className="color"
@@ -111,8 +109,8 @@ Open the `App.js` component. To get a random color we will use a package called 
 Let's import `Color.js` and `randomColor` into our `App.js` component. Add these lines of code to the `App` component.
 
 ```jsx
-import Color from './Color'     //<----- importing Color.js
-import randomColor from 'randomcolor'       //<----- importing random color package
+import Color from './Color' // <----- importing Color.js
+import randomColor from 'randomcolor' //<----- importing random color package
 ```
 
 We will create an array of colors and change the colors when you click the button. Create a button with a class of `btn` inside the `div`.
@@ -134,12 +132,12 @@ Now create two states `count` and `colors` using `useState`.
 You have to import the `useState()` hook from the react library.
 
 ```jsx
-import React, { useState } from 'react'      // <---------- importing useState
+import React, { useState } from 'react' // <---------- importing useState
 import Color from './Color'
 import randomColor from 'randomcolor'
 
 export default function App() {
-  const [count, setCount] = useState(0)         // <---------- state variables
+  const [count, setCount] = useState(0) // <---------- state variables
   const [colors, setColors] = useState([])
 
   return (
@@ -154,8 +152,8 @@ Let's create a function `change()` which changes `count` when the button is clic
 
 ```jsx
 const change = () => {
-    setCount(prevCount => prevCount + 1)        //<------------ changing count on clicking
-  }
+  setCount(prevCount => prevCount + 1) // <------------ changing count on clicking
+}
 ```
 
 Add event `onClick` to the button and call the function.
@@ -172,7 +170,7 @@ export default function App() {
   const [colors, setColors] = useState([])
 
   const change = () => {
-      setCount(prevCount => prevCount + 1)        // <------------ changing count on clicking
+      setCount(prevCount => prevCount + 1) // <------------ changing count on clicking
     }
 
   return (
@@ -196,7 +194,7 @@ The following `getColors()` function creates elements in the `colors` array. We 
 Make sure that you import `useEffect` from React.
 
 ```jsx
-import React, { useState, useEffect } from 'react'        // <------------- importing useEffect 
+import React, { useState, useEffect } from 'react' // <------------- importing useEffect 
 
 const getColor = () => {
     const baseColor = randomColor().slice(1);
