@@ -2,7 +2,7 @@
 name: 'Populous Cities'
 description: 'Create a map of 50 most populous cities using React Leaflet'
 author: '@faisalsayed10'
-image: 'https://cloud-na8vxu9zy.vercel.app/0image.png'
+img: 'https://cloud-na8vxu9zy.vercel.app/0image.png'
 ---
 
 # Populous Cities
