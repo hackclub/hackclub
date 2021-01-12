@@ -398,6 +398,11 @@ You can optionally print the URL of the mockup image using :
 console.log(mockup);
 ```
 
+Now, save the path to the mockup in `resultImg.src`:
+```
+  resultImg.src = mockup;
+```
+
 Your code should be similar to this as of now :
 
 ```javascript
