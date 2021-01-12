@@ -478,8 +478,8 @@ Here are some of the mockups that I made :
 
 You are free to customize and contribute to the website mockup generator! You can consider trying out the below if you are interested :
 
-- ![A retro style mockup generator](https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator)
-- ![A minimalistic mockup generator](https://repl.it/join/dlpvaodr-19eucs071kumara)
-- ![A dark themed mockup generator](https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator-1)
+- [A retro style mockup generator][https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator]
+- [A minimalistic mockup generator][https://repl.it/join/dlpvaodr-19eucs071kumara]
+- [A dark themed mockup generator][https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator-1]
 
 I would love to hear from you and take a look at your own mockup generators! You can share it on the `#scrapbook` channel on Hack Club Slack or send it to me directly via DM (@Guru). Thanks and happy hacking!
