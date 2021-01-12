@@ -1,23 +1,31 @@
 ---
 name: 'Minecraft Mod'  
 description: 'Make your first Minecraft mod using Forge and IntelliJ IDEA'  
-author: '@Kai'  
----  
-# Minecraft Modding Workshop by Kai  
+author: '@KaiDevrim'
+img: 'https://cloud-m4x2nuz66.vercel.app/image.png'
+---
 
-Learning to mod Minecraft is a very simple process and can help anyone learn programming. Minecraft uses the Java language which albeit old, is still very popular and learning it is useful to know still. This Minecraft modding workshop will go from setting up IntelliJ IDEA to making an item, creative inventory tab, and a block. The result will look something like this:  
+Learning how to make a Minecraft mod is a super fun and surprisingly simple process that's also useful for learning to code! In this workshop, you'll learn how to make a Minecraft mod that adds a new item, creative inventory tab, and block to the game. The result will look something like this:
 
 ![The end result with an inventory tab and a few items](https://cloud-m4x2nuz66.vercel.app/image.png) 
 
-Here is the [final code](https://github.com/KaiDevrim/PlayerEvolutions/tree/workshop). This workshop should take around an hour to complete but its fun the entire time.  
+Here is the [final code](https://github.com/KaiDevrim/PlayerEvolutions/tree/workshop). This workshop should take around an hour to complete.
 
-## Part 1: Setup  
+*Note: unlike most workshops, this workshop does not use Repl.it and requires that you install Minecraft, Java, and the IntelliJ IDEA IDE. Make sure you have access to a computer that allows you to install these things before proceeding.*
 
-Download the [Forge MDK for 1.15.2] (http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.15.2.html)  
+## Part 1: Setup
 
-![Download the MDK](https://cloud-gwdhe1huj.vercel.app/image.png)  
+Start by downloading the [Forge MDK for 1.15.2](http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.15.2.html). (MDK stands for Mod Development Kit)
 
-After you download it, unzip it and start up IntelliJ IDEA (called IDEA from here on). If you want to delete some files you can, just keep the `gradle/`, `src/`, `build.gradle`, `gradle.properties`, `gradlew`, and `gradlew.bat` files. From there you want to click on `Open or Import` in IDEA and then navigate to your mod's directory. Double-click on the `build.gradle` file and have it `Open as Project`.   
+![Download the MDK](https://cloud-gwdhe1huj.vercel.app/image.png)
+
+Once it's installed, unzip it.
+
+We'll be using an IDE called IntelliJ IDEA for this workshop. IntelliJ IDEA provides a powerful and easy-to-use coding environment for you to write your mod. Download and install IDEA by [clicking here](https://www.jetbrains.com/idea/download/). Install the "Community" version.
+
+*Note: some people prefer other IDEs for Minecraft mod development, such as Eclipse. You're welcome to use whatever IDE you want, but for simplicity, from here on out this workshop will assume you're using IntelliJ IDEA.*
+
+Once it's installed, start up IntelliJ IDEA (called IDEA from here on). Click on `Open or Import` and then navigate to your mod's directory. Double-click on the `build.gradle` file and have it `Open as Project`.   
 
 ![Open As Project](https://cloud-1ijkxbdqk.vercel.app/image.png)  
 
@@ -25,11 +33,7 @@ Once IDEA has opened the project go to your side bar and click on the Gradle tab
 
 ![Click on Gradle on the side](https://cloud-beqpbpts3.vercel.app/image.png)  
 
-![Gradle Project -> Tasks -> fg_runs -> genIntelliJRuns](https://cloud-hfo336o3s.vercel.app/image.png)  
-
-By the way if you are using Eclipse for some reason use the Eclipse one instead of IntelliJRuns.  
-
-Eclipse users: If you are using Eclipse then the previous section does not apply to you. To start off, download the forge MDK and unzip to a new folder, put it anywhere you like, I will put mine on the Desktop. Open a new terminal window by pressing your "search" button (cmd+space on mac or windows key on windows) and type in "terminal". From here you want to type `cd` then your directory that you put it in. For me I am going to type `cd Desktop/MinecraftMod.`From here type in `gradlew eclipse`. This will generate the files for you. Wait until it says `BUILD SUCCESSFUL`. Open up Eclipse and click on `File`. Then select `Open Projects from Directory`. Select the folder where your forge mdk and gradlew build is. For me this is Desktop/TestMod. 
+![Gradle Project -> Tasks -> fg_runs -> genIntelliJRuns](https://cloud-hfo336o3s.vercel.app/image.png)
 
 Once it has been built, it should say `BUILD SUCCESSFUL` in the Build tab at the bottom. Open `src/main/java/com/` and delete the example folder as we will create the files ourselves. If you want, you can delete the `test` folder in `src/`. Now within `src/java` make a new package called `com` then under com make a new package and type your name (not the mod name), then under `com/username/` make a new package with the name of your mod in all lowercase with no space. Mine is like this `com/devrim/kaimod`. I will be using kaimod as my mod name, name it whatever you like. Inside of your mod name package make a new class file with the same name as the mod. Now I will provide some code and explain each part of it and have the user change where it is necessary.  
 
