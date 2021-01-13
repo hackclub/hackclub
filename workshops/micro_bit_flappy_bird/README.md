@@ -7,7 +7,7 @@ img: 'https://cloud-ak4m6yygi.vercel.app/0final_output.gif'
 
 Have you ever heard about the popular BBC micro:bit? In this workshop we are going to work with BBC micro:bit and create a basis **Flappy Bird Game** using it. Check out the final project.
 
-[![Final Project](https://cloud-kifx081bh.vercel.app/0flappy_bird.png)](https://makecode.microbit.org/_i6g2xLFeTTfP)
+[![Final Project](https://cloud-ak4m6yygi.vercel.app/0final_output.gif)
 
 Here's the [demo/code](https://makecode.microbit.org/_i6g2xLFeTTfP).
 
