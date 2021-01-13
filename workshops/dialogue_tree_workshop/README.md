@@ -26,7 +26,6 @@ For the rest of the project, we are going to be using the same file.
 
 # File
 ```csharp
-```csharp
 using System;
 
 class MainClass {
@@ -35,7 +34,7 @@ class MainClass {
   }
 }
 ```
-Your file should look like this before we start adding things.
+Your file should look like this before we start adding things. Do not delete anything!
 
 # Choice Class
 Let's create a "Choice" [class](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/classes). Think of classes as blueprints, and by modifying the values in the blueprint, we can create objects. These objects will represent each of our choices, and we will link them together in order to create our dialogue tree.
@@ -43,6 +42,26 @@ Let's create a "Choice" [class](https://docs.microsoft.com/en-us/dotnet/csharp/p
 <img src="https://media3.giphy.com/media/3og0Iwmv38WmJBrYvS/200.gif" width="380" alt="Cookie Monster Gif">
 
 ## Initial Variables
+We're going to set up the function.
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+class MainClass {
+  static void Main(string[] args)
+  {
+  }
+}
+
+public class Choice
+{
+}
+```
+- Add the using statements to the top. These are needed to use certain functions later on. 
+- Create an empty "Choice" class right below the "MainClass."
+
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -61,13 +80,34 @@ public class Choice
     public List<string> connectionStrings;
 }
 ```
-- Add the using statements at the top.
-- Add the "Choice" class under the main class. 
 - Each "Choice" object to have a "answer" string that will be displayed when they are gone to on the dialogue tree.
 - Each "Choice" object will also have a list of other connecting choices and a list of strings that will be displayed when the respective choice is chosen.
 - Don't worry if this seems confusing! It will make more sense later on.
 
 ## Constructor
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+class MainClass {
+  static void Main(string[] args)
+  {
+  }
+}
+
+public class Choice
+{
+    public string answer;
+    public List<Choice> choices;
+    public List<string> connectionStrings;
+    public Choice(string answer)
+    {
+    }
+}
+```
+This [constructor](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors) takes in an "answer" string. It will be initialized to the "answer" string in a moment.
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -92,7 +132,7 @@ public class Choice
     }
 }
 ```
-This [constructor](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors) takes in an "answer" string and initializes the variables.
+Initialize the answer to the [constructor string](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/this), initialize choices as an empty list, and initialize connectionStrings as an empty list. The "this" part means that it will set the "answer" string outside of the constructor to the constructor's "answer." That's all for this class!
 
 # Connect Function
 Let's create a function that connects two choices and gives them a connection string.
@@ -142,6 +182,39 @@ class MainClass {
       {
           return false;
       }
+  }
+}
+
+public class Choice
+{
+    public string answer;
+    public List<Choice> choices;
+    public List<string> connectionStrings;
+    public Choice(string answer)
+    {
+        this.answer = answer;
+        choices = new List<Choice>();
+        connectionStrings = new List<string>();
+    }
+}
+```
+If the choice contains the other choice, meaning they are connected, then return false because there is nothing to connect. If it does not contain it, we will have to connect them.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+class MainClass {
+  static void Main(string[] args)
+  {
+  }
+  public static bool Connect(Choice c1, Choice c2, string connection) 
+  {
+      if (c1.choices.Contains(c2))
+      {
+          return false;
+      }
 
       c1.choices.Add(c2);
       c1.connectionStrings.Add(connection);
@@ -161,8 +234,7 @@ public class Choice
         connectionStrings = new List<string>();
     }
 }
-- If there is no connection between the choices, a connection is created by adding the second choice and connection string to the first choice's lists.
-- Else if a connection exists, return false.
+If there is no connection between the choices, a connection is created by adding the second choice and connection string to the first choice's list. We also want to add the connection string to the first choice's "connectionStrings" list. Then, return true.
 
 
 # Creating the Connections
@@ -224,7 +296,14 @@ public class Choice
     }
 }
 ```
-Copy this code into your main function. It creates choices and connects them together. Let's break it down.
+Copy this code into your main function. It creates choices and connects them together. Think of this as an example though. When you are done with writing all the code, feel free to get rid of it and create your own dialogue tree! Let's break it down.
+
+```csharp
+Choice choice1 = new Choice("You wonder into a cave.");
+Choice choice2 = new Choice("You go further in.");
+Choice choice3 = new Choice("You exit the cave and walk away.");
+```
+Create these three choices. Every choice has the connection string that displays when the choice is picked.
 
 ```csharp
 Choice choice1 = new Choice("You wonder into a cave.");
@@ -237,6 +316,78 @@ Connect(choice1, choice3, "Leave.");
 The string in choice1 is displayed, and then the user is prompted with two choices: Explore or Leave. When a choice is picked, the connecting string is displayed. So, if the user picks Explore, the choice2 string of going further in is displayed. What we are doing here is creating choices and connecting them.
 
 ```csharp
+Choice choice1 = new Choice("You wonder into a cave.");
+Choice choice2 = new Choice("You go further in.");
+Choice choice3 = new Choice("You exit the cave and walk away.");
+
+Connect(choice1, choice2, "Explore.");
+Connect(choice1, choice3, "Leave.");
+
+Choice choice4 = new Choice("There is ancient text written on the wall!");
+Choice choice5 = new Choice("The ground is full of bugs!");
+Choice choice6 = new Choice("The spider scares you!");
+```
+We are expanding our dialogue tree with more choices.
+
+```csharp
+Choice choice1 = new Choice("You wonder into a cave.");
+Choice choice2 = new Choice("You go further in.");
+Choice choice3 = new Choice("You exit the cave and walk away.");
+
+Connect(choice1, choice2, "Explore.");
+Connect(choice1, choice3, "Leave.");
+
+Choice choice4 = new Choice("There is ancient text written on the wall!");
+Choice choice5 = new Choice("The ground is full of bugs!");
+Choice choice6 = new Choice("The spider scares you!");
+
+Connect(choice2, choice4, "You take out your flashlight.");
+Connect(choice2, choice5, "You look at the ground.");
+Connect(choice2, choice6, "You notice the spider.");
+```
+We are connecting the choices we just made just like what we've done before.
+
+```csharp
+Choice choice1 = new Choice("You wonder into a cave.");
+Choice choice2 = new Choice("You go further in.");
+Choice choice3 = new Choice("You exit the cave and walk away.");
+
+Connect(choice1, choice2, "Explore.");
+Connect(choice1, choice3, "Leave.");
+
+Choice choice4 = new Choice("There is ancient text written on the wall!");
+Choice choice5 = new Choice("The ground is full of bugs!");
+Choice choice6 = new Choice("The spider scares you!");
+
+Connect(choice2, choice4, "You take out your flashlight.");
+Connect(choice2, choice5, "You look at the ground.");
+Connect(choice2, choice6, "You notice the spider.");
+
+
+Connect(choice4, choice3, "You will find the enterence with your flashlight.");
+Connect(choice5, choice3, "You will run back to the enterence.");
+Connect(choice6, choice3, "You will stumble across the enterence.");
+```
+We are connecting even more choices for our dialogue tree. Later on you will have a better understanding of how it works and can add more choices and connections to create your own dialogue tree.
+
+# Going Through the Dialogue Tree
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+class MainClass {
+  static void Main(string[] args)
+  { 
+    // PREVIOUS CODE
+    Choice choice1 = new Choice("You wonder into a cave.");
+    Choice choice2 = new Choice("You go further in.");
+    Choice choice3 = new Choice("You exit the cave and walk away.");
+
+    Connect(choice1, choice2, "Explore.");
+    Connect(choice1, choice3, "Leave.");
+
     Choice choice4 = new Choice("There is ancient text written on the wall!");
     Choice choice5 = new Choice("The ground is full of bugs!");
     Choice choice6 = new Choice("The spider scares you!");
@@ -249,10 +400,42 @@ The string in choice1 is displayed, and then the user is prompted with two choic
     Connect(choice4, choice3, "You will find the enterence with your flashlight.");
     Connect(choice5, choice3, "You will run back to the enterence.");
     Connect(choice6, choice3, "You will stumble across the enterence.");
-```
-For this code we are doing the same thing, creating choices and connecting them. It will make more sense later on as we code more.
+    // PREVIOUS CODE
+    
+    Choice head = choice1;
+  }
+  
+  // PREVIOUS CODE
+  public static bool Connect(Choice c1, Choice c2, string connection) 
+  {
+      if (c1.choices.Contains(c2))
+      {
+          return false;
+      }
 
-# Going Through the Dialogue Tree
+      c1.choices.Add(c2);
+      c1.connectionStrings.Add(connection);
+      return true;
+  }
+  // PREVIOUS CODE
+}
+
+// PREVIOUS CODE
+public class Choice
+{
+    public string answer;
+    public List<Choice> choices;
+    public List<string> connectionStrings;
+    public Choice(string answer)
+    {
+        this.answer = answer;
+        choices = new List<Choice>();
+        connectionStrings = new List<string>();
+    }
+}
+// PREVIOUS CODE
+```
+Set a choice refrence called "head" and set it to choice1. This will be how we will track what choice we are on.
 
 ```csharp
 using System;
@@ -262,18 +445,67 @@ using System.Text;
 class MainClass {
   static void Main(string[] args)
   { 
-    #Connections would be here before the new code.
-    Choice head = choice1;
+    // PREVIOUS CODE
+    Choice choice1 = new Choice("You wonder into a cave.");
+    Choice choice2 = new Choice("You go further in.");
+    Choice choice3 = new Choice("You exit the cave and walk away.");
 
+    Connect(choice1, choice2, "Explore.");
+    Connect(choice1, choice3, "Leave.");
+
+    Choice choice4 = new Choice("There is ancient text written on the wall!");
+    Choice choice5 = new Choice("The ground is full of bugs!");
+    Choice choice6 = new Choice("The spider scares you!");
+
+    Connect(choice2, choice4, "You take out your flashlight.");
+    Connect(choice2, choice5, "You look at the ground.");
+    Connect(choice2, choice6, "You notice the spider.");
+
+
+    Connect(choice4, choice3, "You will find the enterence with your flashlight.");
+    Connect(choice5, choice3, "You will run back to the enterence.");
+    Connect(choice6, choice3, "You will stumble across the enterence.");
+    
+    Choice head = choice1;
+    // PREVIOUS CODE
+    
+    
     while (true)
     {
     }
-  }
+ }
+    // PREVIOUS CODE
+    public static bool Connect(Choice c1, Choice c2, string connection) 
+    {
+        if (c1.choices.Contains(c2))
+        {
+            return false;
+        }
+
+        c1.choices.Add(c2);
+        c1.connectionStrings.Add(connection);
+        return true;
+    }
+    // PREVIOUS CODE
+  
 }
+
+// PREVIOUS CODE
+public class Choice
+{
+    public string answer;
+    public List<Choice> choices;
+    public List<string> connectionStrings;
+    public Choice(string answer)
+    {
+        this.answer = answer;
+        choices = new List<Choice>();
+        connectionStrings = new List<string>();
+    }
+}
+// PREVIOUS CODE
 ```
-- Add this code after the connections we just created.
-- Set the head as a refrence to choice1. We are not creating an entire new object.
-- We are creating a while loop that will go through the dialogue tree. When there are no more choices it will break out.
+Add this [while loop](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/while). This is where we will be running through the dialogue tree until we reach the end.
 
 ```csharp
 using System;
@@ -283,8 +515,174 @@ using System.Text;
 class MainClass {
   static void Main(string[] args)
   { 
-    #Connections would be here before the new code.
+    // PREVIOUS CODE
+    Choice choice1 = new Choice("You wonder into a cave.");
+    Choice choice2 = new Choice("You go further in.");
+    Choice choice3 = new Choice("You exit the cave and walk away.");
+
+    Connect(choice1, choice2, "Explore.");
+    Connect(choice1, choice3, "Leave.");
+
+    Choice choice4 = new Choice("There is ancient text written on the wall!");
+    Choice choice5 = new Choice("The ground is full of bugs!");
+    Choice choice6 = new Choice("The spider scares you!");
+
+    Connect(choice2, choice4, "You take out your flashlight.");
+    Connect(choice2, choice5, "You look at the ground.");
+    Connect(choice2, choice6, "You notice the spider.");
+
+
+    Connect(choice4, choice3, "You will find the enterence with your flashlight.");
+    Connect(choice5, choice3, "You will run back to the enterence.");
+    Connect(choice6, choice3, "You will stumble across the enterence.");
+    
     Choice head = choice1;
+    // PREVIOUS CODE
+
+    while (true)
+    {
+      Console.WriteLine($"{head.answer}");
+      int count = 1;
+    }
+    
+    // PREVIOUS CODE
+    public static bool Connect(Choice c1, Choice c2, string connection) 
+    {
+        if (c1.choices.Contains(c2))
+        {
+            return false;
+        }
+
+        c1.choices.Add(c2);
+        c1.connectionStrings.Add(connection);
+        return true;
+    }
+    // PREVIOUS CODE
+  
+}
+
+// PREVIOUS CODE
+public class Choice
+{
+    public string answer;
+    public List<Choice> choices;
+    public List<string> connectionStrings;
+    public Choice(string answer)
+    {
+        this.answer = answer;
+        choices = new List<Choice>();
+        connectionStrings = new List<string>();
+    }
+}
+// PREVIOUS CODE
+```
+Add these two statements. We are writing the choice's string and setting an integer called "count" to 1.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+class MainClass {
+  static void Main(string[] args)
+  { 
+    // PREVIOUS CODE
+    Choice choice1 = new Choice("You wonder into a cave.");
+    Choice choice2 = new Choice("You go further in.");
+    Choice choice3 = new Choice("You exit the cave and walk away.");
+
+    Connect(choice1, choice2, "Explore.");
+    Connect(choice1, choice3, "Leave.");
+
+    Choice choice4 = new Choice("There is ancient text written on the wall!");
+    Choice choice5 = new Choice("The ground is full of bugs!");
+    Choice choice6 = new Choice("The spider scares you!");
+
+    Connect(choice2, choice4, "You take out your flashlight.");
+    Connect(choice2, choice5, "You look at the ground.");
+    Connect(choice2, choice6, "You notice the spider.");
+
+
+    Connect(choice4, choice3, "You will find the enterence with your flashlight.");
+    Connect(choice5, choice3, "You will run back to the enterence.");
+    Connect(choice6, choice3, "You will stumble across the enterence.");
+    
+    Choice head = choice1;
+    // PREVIOUS CODE
+
+    while (true)
+    {
+      Console.WriteLine($"{head.answer}");
+      int count = 1;
+      if (head.choices.Count == 0)
+      {
+          break;
+      }
+    }
+    // PREVIOUS CODE
+    public static bool Connect(Choice c1, Choice c2, string connection) 
+    {
+        if (c1.choices.Contains(c2))
+        {
+            return false;
+        }
+
+        c1.choices.Add(c2);
+        c1.connectionStrings.Add(connection);
+        return true;
+    }
+    // PREVIOUS CODE
+  
+}
+
+// PREVIOUS CODE
+public class Choice
+{
+    public string answer;
+    public List<Choice> choices;
+    public List<string> connectionStrings;
+    public Choice(string answer)
+    {
+        this.answer = answer;
+        choices = new List<Choice>();
+        connectionStrings = new List<string>();
+    }
+}
+// PREVIOUS CODE
+```
+If the current choice has no connections, meaning it is at the end of the dialogue tree, then break out of the while loop.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+class MainClass {
+  static void Main(string[] args)
+  { 
+    // PREVIOUS CODE
+    Choice choice1 = new Choice("You wonder into a cave.");
+    Choice choice2 = new Choice("You go further in.");
+    Choice choice3 = new Choice("You exit the cave and walk away.");
+
+    Connect(choice1, choice2, "Explore.");
+    Connect(choice1, choice3, "Leave.");
+
+    Choice choice4 = new Choice("There is ancient text written on the wall!");
+    Choice choice5 = new Choice("The ground is full of bugs!");
+    Choice choice6 = new Choice("The spider scares you!");
+
+    Connect(choice2, choice4, "You take out your flashlight.");
+    Connect(choice2, choice5, "You look at the ground.");
+    Connect(choice2, choice6, "You notice the spider.");
+
+
+    Connect(choice4, choice3, "You will find the enterence with your flashlight.");
+    Connect(choice5, choice3, "You will run back to the enterence.");
+    Connect(choice6, choice3, "You will stumble across the enterence.");
+    
+    Choice head = choice1;
+    // PREVIOUS CODE
 
     while (true)
     {
@@ -300,11 +698,38 @@ class MainClass {
           count++;
       }
     }
-  }
+    // PREVIOUS CODE
+    public static bool Connect(Choice c1, Choice c2, string connection) 
+    {
+        if (c1.choices.Contains(c2))
+        {
+            return false;
+        }
+
+        c1.choices.Add(c2);
+        c1.connectionStrings.Add(connection);
+        return true;
+    }
+    // PREVIOUS CODE
+  
 }
+
+// PREVIOUS CODE
+public class Choice
+{
+    public string answer;
+    public List<Choice> choices;
+    public List<string> connectionStrings;
+    public Choice(string answer)
+    {
+        this.answer = answer;
+        choices = new List<Choice>();
+        connectionStrings = new List<string>();
+    }
+}
+// PREVIOUS CODE
 ```
-- The while loop goes through every choice connection and displays them to let the user know what choices they can pick from.
-- If there are no choice connections, meaning they are at the end, then there is nothing to display.
+Create a [for loop](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/for) that will go through the choice's connections and print them out for the user. Then, increase the count, which shows the numbers of the choices.
 
 # User Input
 
@@ -318,7 +743,207 @@ using System.Text;
 class MainClass {
   static void Main(string[] args)
   { 
-    #Connections would be here before the new code.
+    // PREVIOUS CODE
+    Choice choice1 = new Choice("You wonder into a cave.");
+    Choice choice2 = new Choice("You go further in.");
+    Choice choice3 = new Choice("You exit the cave and walk away.");
+
+    Connect(choice1, choice2, "Explore.");
+    Connect(choice1, choice3, "Leave.");
+
+    Choice choice4 = new Choice("There is ancient text written on the wall!");
+    Choice choice5 = new Choice("The ground is full of bugs!");
+    Choice choice6 = new Choice("The spider scares you!");
+
+    Connect(choice2, choice4, "You take out your flashlight.");
+    Connect(choice2, choice5, "You look at the ground.");
+    Connect(choice2, choice6, "You notice the spider.");
+
+
+    Connect(choice4, choice3, "You will find the enterence with your flashlight.");
+    Connect(choice5, choice3, "You will run back to the enterence.");
+    Connect(choice6, choice3, "You will stumble across the enterence.");
+    
+    Choice head = choice1;
+    // PREVIOUS CODE
+    
+    while (true)
+    {
+      // PREVIOUS CODE
+      Console.WriteLine($"{head.answer}");
+      int count = 1;
+      if (head.choices.Count == 0)
+      {
+          break;
+      }
+      for (int i = 0; i < head.choices.Count; i++)
+      {
+          Console.WriteLine($"{count}. {head.connectionStrings[i]}");
+          count++;
+      }
+      // PREVIOUS CODE
+      
+      while(true)
+      {
+        Console.Write("Choose your path: ");
+      }
+    }
+    // PREVIOUS CODE
+    public static bool Connect(Choice c1, Choice c2, string connection) 
+    {
+        if (c1.choices.Contains(c2))
+        {
+            return false;
+        }
+
+        c1.choices.Add(c2);
+        c1.connectionStrings.Add(connection);
+        return true;
+    }
+    // PREVIOUS CODE
+  
+}
+
+// PREVIOUS CODE
+public class Choice
+{
+    public string answer;
+    public List<Choice> choices;
+    public List<string> connectionStrings;
+    public Choice(string answer)
+    {
+        this.answer = answer;
+        choices = new List<Choice>();
+        connectionStrings = new List<string>();
+    }
+}
+// PREVIOUS CODE
+```
+Create a new while loop. This is where the user input will be. Also, write to the screen asking the user to choose their path.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+class MainClass {
+  static void Main(string[] args)
+  { 
+    // PREVIOUS CODE
+    Choice choice1 = new Choice("You wonder into a cave.");
+    Choice choice2 = new Choice("You go further in.");
+    Choice choice3 = new Choice("You exit the cave and walk away.");
+
+    Connect(choice1, choice2, "Explore.");
+    Connect(choice1, choice3, "Leave.");
+
+    Choice choice4 = new Choice("There is ancient text written on the wall!");
+    Choice choice5 = new Choice("The ground is full of bugs!");
+    Choice choice6 = new Choice("The spider scares you!");
+
+    Connect(choice2, choice4, "You take out your flashlight.");
+    Connect(choice2, choice5, "You look at the ground.");
+    Connect(choice2, choice6, "You notice the spider.");
+
+
+    Connect(choice4, choice3, "You will find the enterence with your flashlight.");
+    Connect(choice5, choice3, "You will run back to the enterence.");
+    Connect(choice6, choice3, "You will stumble across the enterence.");
+    
+    Choice head = choice1;
+    // PREVIOUS CODE
+    
+    while (true)
+    {
+      // PREVIOUS CODE
+      Console.WriteLine($"{head.answer}");
+      int count = 1;
+      if (head.choices.Count == 0)
+      {
+          break;
+      }
+      for (int i = 0; i < head.choices.Count; i++)
+      {
+          Console.WriteLine($"{count}. {head.connectionStrings[i]}");
+          count++;
+      }
+      // PREVIOUS CODE
+      
+      while(true)
+      {
+        Console.Write("Choose your path: ");
+
+        try
+        {
+        }
+        catch (Exception)
+        {
+
+        }
+      }
+    }
+    // PREVIOUS CODE
+    public static bool Connect(Choice c1, Choice c2, string connection) 
+    {
+        if (c1.choices.Contains(c2))
+        {
+            return false;
+        }
+
+        c1.choices.Add(c2);
+        c1.connectionStrings.Add(connection);
+        return true;
+    }
+    // PREVIOUS CODE
+  
+}
+
+// PREVIOUS CODE
+public class Choice
+{
+    public string answer;
+    public List<Choice> choices;
+    public List<string> connectionStrings;
+    public Choice(string answer)
+    {
+        this.answer = answer;
+        choices = new List<Choice>();
+        connectionStrings = new List<string>();
+    }
+}
+// PREVIOUS CODE
+```
+Create an empty [try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch) statement. This will catch any errors that the user inputs such as invalid choices, which prevents our program from breaking.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+class MainClass {
+  static void Main(string[] args)
+  {
+    Choice choice1 = new Choice("You wonder into a cave.");
+    Choice choice2 = new Choice("You go further in.");
+    Choice choice3 = new Choice("You exit the cave and walk away.");
+
+    Connect(choice1, choice2, "Explore.");
+    Connect(choice1, choice3, "Leave.");
+
+    Choice choice4 = new Choice("There is ancient text written on the wall!");
+    Choice choice5 = new Choice("The ground is full of bugs!");
+    Choice choice6 = new Choice("The spider scares you!");
+
+    Connect(choice2, choice4, "You take out your flashlight.");
+    Connect(choice2, choice5, "You look at the ground.");
+    Connect(choice2, choice6, "You notice the spider.");
+
+
+    Connect(choice4, choice3, "You will find the enterence with your flashlight.");
+    Connect(choice5, choice3, "You will run back to the enterence.");
+    Connect(choice6, choice3, "You will stumble across the enterence.");
+
+
     Choice head = choice1;
 
     while (true)
@@ -328,7 +953,28 @@ class MainClass {
       if (head.choices.Count == 0)
       {
           break;
-      }
+      }    
+    Choice choice1 = new Choice("You wonder into a cave.");
+    Choice choice2 = new Choice("You go further in.");
+    Choice choice3 = new Choice("You exit the cave and walk away.");
+
+    Connect(choice1, choice2, "Explore.");
+    Connect(choice1, choice3, "Leave.");
+
+    Choice choice4 = new Choice("There is ancient text written on the wall!");
+    Choice choice5 = new Choice("The ground is full of bugs!");
+    Choice choice6 = new Choice("The spider scares you!");
+
+    Connect(choice2, choice4, "You take out your flashlight.");
+    Connect(choice2, choice5, "You look at the ground.");
+    Connect(choice2, choice6, "You notice the spider.");
+
+
+    Connect(choice4, choice3, "You will find the enterence with your flashlight.");
+    Connect(choice5, choice3, "You will run back to the enterence.");
+    Connect(choice6, choice3, "You will stumble across the enterence.");
+    
+    Choice head = choice1;
       for (int i = 0; i < head.choices.Count; i++)
       {
           Console.WriteLine($"{count}. {head.connectionStrings[i]}");
@@ -347,16 +993,45 @@ class MainClass {
         }
         catch (Exception)
         {
-
             Console.WriteLine("That's not a valid choice.");
         }
       }
+
+     // PREVIOUS CODE
+    public static bool Connect(Choice c1, Choice c2, string connection) 
+    {
+        if (c1.choices.Contains(c2))
+        {
+            return false;
+        }
+
+        c1.choices.Add(c2);
+        c1.connectionStrings.Add(connection);
+        return true;
     }
-  }
+    // PREVIOUS CODE
+  
 }
+
+// PREVIOUS CODE
+public class Choice
+{
+    public string answer;
+    public List<Choice> choices;
+    public List<string> connectionStrings;
+    public Choice(string answer)
+    {
+        this.answer = answer;
+        choices = new List<Choice>();
+        connectionStrings = new List<string>();
+    }
+}
+// PREVIOUS CODE
 ```
-- Right under what we just wrote, we are adding a while loop that we break out of once the user input's an acceptable option. Instead of the user inputting a zero for the first choice, they are inputting a one.
-- The [try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch) will catch any errors such as invalid choices to prevent our program from breaking.
+
+
+In the try part, we are taking in the user input and [parsing](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number) it into a string. Then we are setting the head to the input-1. Instead of the user inputting a zero for the first choice, they are inputting a one, so we need to account for this. In the catch, we are letting the user know that they inputted an invalid choice.
+
 
 # Final Code
 You are done! Congrats!
