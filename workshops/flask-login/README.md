@@ -30,6 +30,7 @@ In order to test our Flask server, we'll need to send requests to the server. We
 ![Insomnia Web Store](https://cloud-a7eisnzme.vercel.app/0image.png)
 
 Press the "Add to Chrome" button, and then press "Add App."
+
 ![Add to Chrome](https://cloud-6j7h3tfkw.vercel.app/0image.png)
 
 We'll work more with Insomnia after writing our code.
