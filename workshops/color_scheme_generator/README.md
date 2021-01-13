@@ -44,15 +44,13 @@ For writing code, we will be using [Repl.it](https://repl.it). Repl.it is an onl
 
 To get started, open the [starter repl](https://repl.it/@Giridharhackclu/color-scheme-generator-starter#README.md) and click on the `Fork` button. The starter repl contains ['create-react-app'](https://github.com/facebook/create-react-app) installed. I also added some basic styles so that we can concentrate completely on React.
 
-Click the `Run` button to start the live-server (it’ll take a moment to get running the first time). After running successfully, you can see `Hello world!` on the webpage.
+Click the `Run` button to start the live-server (it’ll take a moment to get running the first time). After running successfully, you'll see `Hello world!` on the webpage.
 
 Let's start creating.
 
-## Step 1
+## The Color Component
 
-Navigate to the `src` folder and create a component `Color.js`. This component will be used to display the colors on the page. Add the following code. 
-
-This is a basic react functional component that renders a `div` element with the class of `container`. Don't forget to include classes to the elements throughout the project. All the styles are prewritten.
+Navigate to the `src` folder. Inside, create a file called `Color.js`. In here, you'll write a component that will be used to display the colors on the page. Add the following code:
 
 ```jsx
 import React from 'react'
@@ -66,6 +64,8 @@ export default function Color() {
 }
 ```
 
+This is a basic react functional component that renders a `div` element with the class of `container`. Don't forget to include classes to the elements throughout the project. All the styles are prewritten.
+
 Now let's create some elements that contains our colors. But what colors? We'll give them random colors later. 
 
 The functional components can accept arbitrary inputs (called “`props`”) and return React elements describing what should appear on the screen.
@@ -73,7 +73,7 @@ The functional components can accept arbitrary inputs (called “`props`”) and
 Add a [prop](https://reactjs.org/docs/components-and-props.html#props-are-read-only) `colors` which will be an `array`, which we will get from other components. 
 
 ```jsx
-export default function Color({ colors = [] }) { // <------- accepts an array as prop
+export default function Color({ colors = [] }) { // <–– accepts an array as prop
   // code goes here
 }
 ```
@@ -103,7 +103,9 @@ export default function Color({ colors = [] }) {
 
 The above component gets the `colors` array as a prop from another component and returns an array of `div` elements with a background color. Each element contains the respective `backgroundColor` in form of hex code. You can observe that a [`key`](https://reactjs.org/docs/lists-and-keys.html#keys) is given to every element for its identity. 
 
-Now we finished writing our `Color.js` component. But nothing will appear on the screen without rendering this component. 
+Now we finished writing our `Color.js` component. But nothing will appear on the screen without rendering this component.
+
+## Getting a random color
 
 Open the `App.js` component. To get a random color we will use a package called [randomcolor](https://randomcolor.lllllllllllllllll.com/). It is a small library that returns some random colors. The package is already installed in the starter repl. 
 
@@ -133,12 +135,12 @@ Now create two states `count` and `colors` using `useState`.
 You have to import the `useState()` hook from the react library.
 
 ```jsx
-import React, { useState } from 'react' // <---------- importing useState
+import React, { useState } from 'react' // <—— importing useState
 import Color from './Color'
 import randomColor from 'randomcolor'
 
 export default function App() {
-  const [count, setCount] = useState(0) // <---------- state variables
+  const [count, setCount] = useState(0) // <—— state variables
   const [colors, setColors] = useState([])
 
   return (
@@ -153,7 +155,7 @@ Let's create a function `change()` which changes `count` when the button is clic
 
 ```jsx
 const change = () => {
-  setCount(prevCount => prevCount + 1) // <------------ changing count on clicking
+  setCount(prevCount => prevCount + 1) // <—— changing count on clicking
 }
 ```
 
@@ -171,7 +173,7 @@ export default function App() {
   const [colors, setColors] = useState([])
 
   const change = () => {
-      setCount(prevCount => prevCount + 1) // <------------ changing count on clicking
+      setCount(prevCount => prevCount + 1) // <—— changing count on clicking
     }
 
   return (
@@ -195,7 +197,7 @@ The following `getColors()` function creates elements in the `colors` array. We 
 Make sure that you import `useEffect` from React.
 
 ```jsx
-import React, { useState, useEffect } from 'react' // <------------- importing useEffect 
+import React, { useState, useEffect } from 'react' // <—— importing useEffect 
 
 const getColor = () => {
     const baseColor = randomColor().slice(1);
@@ -224,7 +226,7 @@ Then we will call this function inside our `useEffect()` hook. As described, we 
 useEffect(getColor, [count])
 ```
 
-Every time you click the button, `count` changes. As the `count` changes, the `useEffect()` runs and `getColor()` is executed, the `colors` array changes. 
+Every time you click the button, `count` changes. As the `count` changes, the `useEffect()` runs, `getColor()` is executed, and the `colors` array changes. 
 
 ![Visualisation](https://cloud-endlseu6b.vercel.app/0resized.png)
 
