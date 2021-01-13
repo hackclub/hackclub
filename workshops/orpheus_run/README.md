@@ -13,6 +13,8 @@ You probably must have played Temple Run or the famous 404 Dino game! What if we
 
 Here's the [source code](https://repl.it/@FaisalSayed1/Obstacle-Avoiding-Game).
 
+This workshop should take 45 minutes to 1 hour to complete.
+
 ## Part 1: Prerequisites
 
 You should know the basics (and I mean, very basics) of:
@@ -90,6 +92,7 @@ Your HTML code should look something like this!
 So now the `jump()` function will be triggered when we click on the div with the class of `game` and the `start()` function will be triggered when we click on the start button!
 
 Your preview looks something like this:
+
 ![preview of the code written so far](https://cloud-mx8ey0ual.vercel.app/0image.png)
 
 We won't see anything special in our preview window as we haven't added any styles yet. CSS is going to play a very important role in today's workshop, so let's start writing some styles!
