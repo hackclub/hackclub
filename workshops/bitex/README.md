@@ -2,7 +2,7 @@
 name: 'BitEx'
 description: 'Build a simple chrome extension which tracks Bitcoin prices.'
 author: '@faisalsayed10'
-image: https://cloud-cf7gkmekh.vercel.app/0image.png
+img: https://cloud-cf7gkmekh.vercel.app/0image.png
 ---
 
 # BitEx
