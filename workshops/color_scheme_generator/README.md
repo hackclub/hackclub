@@ -2,6 +2,7 @@
 name: "Color Scheme Generator"
 description: "Create color schemes using React Hooks"
 author: "@giridhar7632"
+img: "https://cloud-352aow76z.vercel.app/068747470733a2f2f636c6f75642d31367039736b6e32372e76657263656c2e6170702f30636f6c6f72736368656d652e706e67.png"
 ---
 
 # Color Scheme Generator
