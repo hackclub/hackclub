@@ -2,7 +2,7 @@
 name: 'Orpheus Run'
 description: 'Create an endless running game with just HTML, CSS and some JavaScript!'
 author: '@faisalsayed10'
-image: 'https://cloud-g7zlt63qw.vercel.app/0image.png'
+img: 'https://cloud-g7zlt63qw.vercel.app/0image.png'
 ---
 
 # Orpheus Run
