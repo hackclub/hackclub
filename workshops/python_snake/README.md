@@ -9,24 +9,26 @@ Snake is a game that most of us have played on those old Nokia phones. It's also
 
 [![Snake game and demo in repl.it](https://cloud-h8v6zt88z.vercel.app/0snakereplit.gif)](https://repl.it/@kyryloorlov/Snake-Game)
 
-You can check out the source code and preview [here](https://repl.it/@kyryloorlov/Snake-Game)
+You can check out the source code and preview [here](https://repl.it/@kyryloorlov/Snake-Game).
 
-# Get started
-We are going to use [repl.it](https://repl.it) for this project. Just go to https://repl.it/languages/python3 to start coding. It's that easy! Creating an account will ensure you don't lose your code but you can do it after we finish this project. Let's start coding!
+# Getting started
+
+We're going to use [repl.it](https://repl.it), a free, online code editor, for this project. Spin up a new Python project by going to https://repl.it/languages/python3.
 
 ## Declare dependencies
-Today, we will be using the `random` and `curses` libraries. These should be imported at the top of the python file. These libraries are just python code that someone else wrote for us to use.
+
+We're going to use the `random` and `cursees` libraries to help us out. `random` is a module that will allow us to give random positions to the fruits that will spawn on the map. `curses` is how we will be handling the user interface and game mechanics.
+
+Import these two libraries by adding the following lines at the top of the `main.py` file:
 
 ```python
 import random
 import curses
 ```
 
-`randint` is a module that will allow us to give random positions to the fruits that will spawn on the map. `Curses` is how we will be handling the user interface and game mechanics.
-
 
 ## Initialize the screen
-Below our imports let's skip a line and start our game. First, we have to somehow declare that our terminal can be used as a user interface. We'll use the python curses library to set a cursor, screen width, and screen height.
+Below our imports let's skip a line and start our game. First, we have to somehow declare that our terminal can be used as a user interface. We'll use `curses` to set a cursor, screen width, and screen height.
 
 ```python
 # Define the screen
@@ -45,6 +47,7 @@ w = curses.newwin(sh, sw, 0, 0)
 Great! We have defined the screen dimensions and set the cursor to be invisible in the top left corner. Let's move on to the snake logic. We'll be using these variables and definitions when creating the rest of the program.
 
 ![Happy snake](https://cloud-5uzl1njgm.vercel.app/0snek.gif)
+
 ## Initialize the snake and food
 Skip a line from the above code and let's define the snake and its position and food.
 
@@ -84,8 +87,9 @@ key = curses.KEY_RIGHT
 ```
 
 ![Dancing](https://cloud-qco33gkwh.vercel.app/0dancing.gif)
+
 ## Handle movement and game logic
-We define an infinite loop for every movement that the snake makes. This is where we handle out game logic.
+Now, we're going to handle the game logic. We want the following code to run continuously, so we're going to put it inside an infinite loop:
 
 ```python
 # Infinite loop repeating every time the snake moves
@@ -129,7 +133,7 @@ In the above code, we also define an if statement to check if:
 
 If any of the above happen, we close the curses window and quit the program.
 
-Now, let's determine the new head of the snake based on our movement
+Now, let's determine the new head of the snake based on our movement.
 
 ```python
 while True:
@@ -274,6 +278,7 @@ while True:
 You should now be able to play Snake in the terminal! You can run the code at https://repl.it/@kyryloorlov/Snake-Game.
 
 ![Hacking](https://cloud-adi3v03or.vercel.app/0hacking.gif)
+
 # Hacking
 Now you have control over this code. Go ahead and tinker with it to see if you can find ways to make it more fun. Here are some ideas:
 
