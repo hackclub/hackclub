@@ -5,38 +5,52 @@ author: '@RafaelCenzano'
 img: 'https://cloud-p5pdve0kf.vercel.app/2webscrape.jpg'
 ---
 
-# Reading the Internet
 We can read all the content on websites, but wouldn't it be cool if we could automatically read specific data from websites whenever you wanted? If this interested you, this workshop is for you. I will be showing you how to use webscraping in Python.
-**To Note:** not all webpages can be read using this technique, if data is loaded in using ajax or after the inital page request this method may not work.
 
-[Final Code](https://repl.it/@SavageCoder77/Read-The-Internet#main.py)
-[Live Result](https://Read-The-Internet.savagecoder77.repl.run)
+*Note: not all webpages can be read using this technique. If data is loaded in using ajax or after the inital page request this method may not work.*
+
+[Final Result and Code](https://repl.it/@SavageCoder77/Read-The-Internet#main.py)
 
 ## Prerequisites
 You should have a basic understanding of **HTML** and **Python** and how to use variables and objects.
 
 ## Setup
-![Lets start gif](https://cloud-p23nck0rj.vercel.app/1lets-start.gif)
+![Lets do it gif](https://cloud-p23nck0rj.vercel.app/1lets-start.gif)
+
 We will be using [repl.it](https://repl.it), an online code editor that allows you to write and run code from any computer!
 
-We will start by creating a Python 3 repl (You can easily create one by clicking this link https://repl.it/languages/python3).
+Spin up a Python3 repl by [clicking here](https://repl.it/languages/python3).
 
-We now need to install a couple of external libraries. Follow the image below to find where to add the packages. Once in this menu you will need to install `beautifulsoup4`, `requests`, and `lxml`.  Documentation on the packages: [BS4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), [requests](https://requests.readthedocs.io/en/master/), and [LXML](https://lxml.de).
+Before we can start coding, we need to install a couple of external libraries. Follow the image below to find where to add the packages. Once in this menu you will need to install `beautifulsoup4`, `requests`, and `lxml`.
+
 ![Repl.it packages menu](https://cloud-p5pdve0kf.vercel.app/0ezgif.com-video-to-gif.gif)
 
+#### What each package does
+`lxml` is a C package used by beautiful soup that parses the HTML, `beautifulsoup4` is for working with the parsed HTML, and `requests` is for requesting the webpage/html.
 
-#### About the packages
-`lxml` is a C package used by beautiful soup that parses the HTML, `beautifulsoup4` is for working with the parsed HTML, and last `requests` is for requesting the webpage/html.
+<details>
+
+<summary> Learn more about the packages: </summary>
+
+- [BS4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+- [requests](https://requests.readthedocs.io/en/master/)
+- [LXML](https://lxml.de) 
+
+</details>
 
 ## Lets start coding!
+
 ![Start coding gif](https://cloud-5bmb4t5tp.vercel.app/1start-coding.gif)
-We are going to start by importing the packages we just installed into `main.py`.
+
+Once you've installed the packages, open the `main.py` file in the sidebar on the left. Then, import the packages you just installed.
+
 ```python
-# Imports
 from bs4 import BeautifulSoup as bs
 import requests
 ```
-After importing our packages we can now start webscraping! We will begin with requesting our webpage and extracting the HTML from the request object.
+
+Now we can start webscraping! We will begin by requesting our webpage and extracting the HTML from the request object.
+
 ```python
 url = 'https://ncov2019.live/data'
 # request the website
@@ -44,15 +58,23 @@ r = requests.get(url)
 # get the HTML from the request
 page = r.text
 ```
-Next we will create the beautiful soup object and use `lxml` to parse the HTML (its faster then the built in parser)
+
+Next we will create the BeautifulSoup object and use `lxml` to parse the HTML.
+
 ```python
 soup = bs(page, 'lxml')
 ```
-Now that we have our beautiful soup object we can go all of the HTML! 
+
+Now that we have our BeautifulSoup object we can go all of the HTML! 
 
 ### Working with the parsed HTML
+
 ![HTML gif](https://cloud-5bmb4t5tp.vercel.app/2html.gif)
-Before we begin with the Python code I will give a short review of the HTML structure that we will be working with. We will be getting data from a HTML table. Below is HTML for how a table would look.
+
+In the next step, we'll be working with data from an HTML table. So, before, we continue, a quick mini-lesson on HTML tables:
+
+Here's an example of an HTML table:
+
 ```html
 <table>
     <tr>
@@ -75,11 +97,15 @@ Before we begin with the Python code I will give a short review of the HTML stru
     </tr>
 </table>
 ```
-A HTML table can be seen as a 2 dimensional array or list. The table contains rows which are the `tr` tags. Each row contains columns which are the `td` tags. Within the `td` tags is the data or text we can webscrape. For more info on HTML check out this link: [HTML.com](https://html.com). Its useful to understand HTML when webscraping because you will need to know how to navigate the HTML in Python.
+
+A HTML table can be seen as a 2 dimensional array or list. The table contains rows (`tr` tags). Each row contains columns (`td` tags). Within the `td` tags is the data or text we can webscrape.
 
 ### Python time!
-We begin by using beautiful soup to find a HTML table element. We want to find a specific table by id `sortable_table_world` as seen in the picture. The code below finds the first table that matches that id by using the `find` function and specifying the id as an attribute. The `attrs` is an optional argument and is a dictionary that can be set to any id, class, or HTML identifier.
+
+We're going to use BeautifulSoup to find an HTML table element. We want to find a specific table by ID `sortable_table_world` as seen in the picture. The code below finds the first table that matches that ID by using the `find` function and specifying the id as an attribute. The `attrs` is an optional argument and is a dictionary that can be set to any id, class, or HTML identifier.
+
 ![nCOVID table open with inspect element](https://cloud-p5pdve0kf.vercel.app/1inspect_element.png)
+
 ```python
 # get world data table
 table = soup.find('table', attrs={'id':'sortable_table_world'})
