@@ -25,6 +25,21 @@ Create a new repl and use Python as the language.
 Let's Begin!
 
 <img src="https://media4.giphy.com/media/l4JzhRSnaIsShvsxW/giphy.gif" width="380" alt="Frosty the Snowman Gif">
+This will be some initial statements to help us get started.
+
+```py
+import turtle
+```
+Import the [turtle library](https://www.geeksforgeeks.org/turtle-programming-python/). We will be using this to draw to the screen.
+
+```py
+import turtle
+
+radius1 = float(input("What radius for the first circle?: "))
+radius2 = float(input("What radius for the second circle?: "))
+radius3 = float(input("What radius for the third circle?: "))
+```
+Ask the user for three radius for each part of the snowman. Take their response, convert the string to a float, and set them to radius variables.
 
 ```py
 import turtle
@@ -38,8 +53,6 @@ turtle.hideturtle()
 turtle.bgcolor("black")
 ```
 
-- Import the [turtle library](https://www.geeksforgeeks.org/turtle-programming-python/). We will be using this to draw to the screen.
-- Get the user input for the radius for each snowman body part.
 - Set the turtle speed to zero (so it draws instantly), hide the cursor, and make the background black.
 - [Here are the turtle colors to choose from.](https://trinket.io/docs/colors) 
 
@@ -48,17 +61,42 @@ turtle.bgcolor("black")
 <img src="https://media3.giphy.com/media/odRLFiZRTm3vi/giphy.gif" width="380" alt="Snowman Gif">
 
 ## Initial Statements
-Put the function under what we just wrote.
+We will be writing the initial statements for our snowman drawing function.
+```py
+#PREVIOUS CODE
+import turtle
+
+radius1 = float(input("What radius for the first circle?: "))
+radius2 = float(input("What radius for the second circle?: "))
+radius3 = float(input("What radius for the third circle?: "))
+
+turtle.speed(0)
+turtle.hideturtle()
+turtle.bgcolor("black")
+#PREVIOUS CODE
+
+def Snowman(x, y, radius1, radius2, radius3):
+```
+Create a "Snowman" function that takes in x and y coordinates, and the three radii. This will be where everything is drawn.
 
 ```py
-#What we already wrote.
+#PREVIOUS CODE
+import turtle
+
+radius1 = float(input("What radius for the first circle?: "))
+radius2 = float(input("What radius for the second circle?: "))
+radius3 = float(input("What radius for the third circle?: "))
+
+turtle.speed(0)
+turtle.hideturtle()
+turtle.bgcolor("black")
+#PREVIOUS CODE
+
 def Snowman(x, y, radius1, radius2, radius3):
   turtle.goto(x, y)
   turtle.color("lightblue")
 ```
-
-- We are creating the Snowman function with parameters of the x and y coordinates (where the head will be) and the three radii.
-- Inside the function we are going to the coordinate and setting the color of the turtle as light blue.
+Inside the function we are going to the coordinate and setting the color of the turtle as light blue. Let's focus on just the "Snowman" function for the time being.
 
 ## Head and Body Pieces
 
@@ -74,27 +112,28 @@ def Snowman(x, y, radius1, radius2, radius3):
   turtle.circle(radius1) 
   turtle.end_fill() 
   turtle.up()
-
-  #body piece 1
-  turtle.right(90)
-  turtle.forward(radius2*2)
-  turtle.left(90)
-  turtle.begin_fill() 
-  turtle.circle(radius2) 
-  turtle.end_fill() 
-  turtle.up()
-
-  #body piece 2
-  turtle.right(90)
-  turtle.forward(radius3*2)
-  turtle.left(90)
-  turtle.begin_fill() 
-  turtle.circle(radius3) 
-  turtle.end_fill() 
 ```
-
 - When drawing circles, turtle starts at the bottom of the circle and creates it [upwards](https://www.geeksforgeeks.org/draw-circle-in-python-using-turtle/).
-- We are starting with the head piece and filling in a circle with the radius of the "radius1" variable, as noted with the beginning and end fill statements that surround it.
+- Whenever we want to fill in a circle or another shape, we have to surround the draw function with begin and end fill statements. For the head, we are drawing a circle with our first radius variable, and we are making our turtle go up afterwards.
+
+```py
+def Snowman(x, y, radius1, radius2, radius3):
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+  
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+```
+For the first body piece, we are going down to the bottom of where the body piece is because it is drawn upwards. We are then repositioning ourselves back to the original orientation.
+
 ```py
 def Snowman(x, y, radius1, radius2, radius3):
   turtle.goto(x, y)
@@ -113,10 +152,36 @@ def Snowman(x, y, radius1, radius2, radius3):
   turtle.begin_fill() 
   turtle.circle(radius2) 
   turtle.end_fill() 
-  turtle.up() 
+  turtle.up()
 ```
-- For the first body piece, we are going to the correct location so the circles are right next to each other but do not overlap.
-- We are then drawing another filled in circle but using radius2.
+Once again, use the begin and end fill statements to surround our circle drawing. Then, draw the circle with our second radius variable. Finally, put the turtle back up again.
+
+```py
+def Snowman(x, y, radius1, radius2, radius3):
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+  
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+```
+For the second body piece, we are going down to the bottom of where the body piece is because it is drawn upwards. We are then repositioning ourselves back to the original orientation.
 
 ```py
 def Snowman(x, y, radius1, radius2, radius3):
@@ -146,17 +211,266 @@ def Snowman(x, y, radius1, radius2, radius3):
   turtle.circle(radius3) 
   turtle.end_fill() 
 ```
-- We are then doing the same thing as the first body part, but moving right under the first body piece instead of the head.
-- We are then drawing in a filled circle like the other pieces, but we are using radius3.
+Finally, surround our drawing statement with begin and end fill statements so it will be filled in, and draw a circle with our third radius variable.
 
 ## Drawing the Eyes
 
 <img src="https://cloud-br53tx54x.vercel.app/0screenshot__1410_.png" width="380" alt="Snowman Eyes">
 
+We are going to draw the eyes of the snowman!
+
 ```py
 def Snowman(x, y, radius1, radius2, radius3):
-  #What we just wrote.
+  # PREVIOUS CODE
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+  # PREVIOUS CODE
   
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+```
+Set the turtle's color to blue, or any other color you want. This will be the color of the snowman's eyes. Then, we are positioning our turtle halfway up head piece.
+
+```py
+def Snowman(x, y, radius1, radius2, radius3):
+  # PREVIOUS CODE
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+  # PREVIOUS CODE
+  
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+  
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+```
+We are positioning ourselves a quarter of the way across the head piece.
+
+```py
+def Snowman(x, y, radius1, radius2, radius3):
+  # PREVIOUS CODE
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+  # PREVIOUS CODE
+  
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+  
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+```
+Surround the drawing statement with the begin and end fill statements and draw the eye. The eye will be 1/6 the radius of the head piece.
+
+```py
+def Snowman(x, y, radius1, radius2, radius3):
+  # PREVIOUS CODE
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+  # PREVIOUS CODE
+  
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+  
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+  
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+```
+Position the turtle to 3/4 across the head piece to the other eye location.
+
+```py
+def Snowman(x, y, radius1, radius2, radius3):
+  # PREVIOUS CODE
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+  # PREVIOUS CODE
+  
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+  
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+  
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+```
+Surround the drawing statement with the begin and end fill statements and draw the eye. The eye will be 1/6 the radius of the head piece.
+
+## Drawing the Nose
+
+<img src="https://cloud-f9je61z3w.vercel.app/0screenshot__1411_.png" width="380" alt="Snowman Nose">
+
+We are going to draw the nose!
+
+```py
+def Snowman(x, y, radius1, radius2, radius3):
+  # PREVIOUS CODE
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
   #eyes
   turtle.color("blue")
   turtle.left(90)
@@ -174,21 +488,121 @@ def Snowman(x, y, radius1, radius2, radius3):
   turtle.begin_fill() 
   turtle.circle(radius1/6) 
   turtle.end_fill()
+  # PREVIOUS CODE
+  
+  #nose
+  turtle.forward(radius1/2)
+  turtle.right(90)
+  turtle.color("orange")
 ```
-
-- We are going up to halfway up head piece.
-- We are changing the turtle color to blue for the eyes (or to whatever color you want).
-- We are then going halfway across the head piece and creating the first eye with a radius of 1/6 of the head's radius.
-- We are then doing the same for the other eye but going across to the other side.
-- Don't get intimidated! A lot of the turtle statements are only for correct spacing.
-
-## Drawing the Nose
-
-<img src="https://cloud-f9je61z3w.vercel.app/0screenshot__1411_.png" width="380" alt="Snowman Nose">
+We are positioning ourselves to draw the nose in a way where it will look like it's sticking out, like a real snowman nose would! We are also changing the turtle's color to orange to represent the nose color.
 
 ```py
 def Snowman(x, y, radius1, radius2, radius3):
-  #What we wrote.
+  # PREVIOUS CODE
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill() 
+
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+  # PREVIOUS CODE
+  
+  #nose
+  turtle.forward(radius1/2)
+  turtle.right(90)
+  turtle.color("orange")
+
+  turtle.begin_fill()
+  
+  turtle.end_fill()
+```
+Create begin and end fill statements. We want to fill in the nose after all.
+
+```py
+def Snowman(x, y, radius1, radius2, radius3):
+  # PREVIOUS CODE
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill() 
+
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+  # PREVIOUS CODE
   
   #nose
   turtle.forward(radius1/2)
@@ -203,20 +617,220 @@ def Snowman(x, y, radius1, radius2, radius3):
   turtle.forward(radius1/2)
   turtle.end_fill()
 ```
+We are going forward 1/2 of the head's radius and turning left 120 degrees until we create a triangle. Once it is complete it will be filled in!
 
-- We are going back to halfway across the head.
-- We are then turning to face down.
-- We are setting the color to orange (or any color you want).
-- We are then starting a fill and going forward 1/2 of the head's radius and turning left 120 degrees until we create a triangle.
-- This allows the nose to have it's point facing outwards like a snowman nose in real life!
 
 ## Drawing the Buttons
 
 <img src="https://cloud-a2mh1goji.vercel.app/0screenshot__1413_.png" width="380" alt="Snowman Buttons">
 
+Let's draw the buttons!
 ```py
 def Snowman(x, y, radius1, radius2, radius3):
-  #What we wrote.
+  #PREVIOUS CODE
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill() 
+
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+
+  #nose
+  turtle.forward(radius1/2)
+
+  turtle.right(90)
+  turtle.color("orange")
+
+  turtle.begin_fill()
+  turtle.forward(radius1/2)
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.end_fill()
+  #PREVIOUS CODE
+
+  #buttons
+  turtle.setheading(270)
+  turtle.forward(radius1)
+```
+We are setting our direction to down (`turtle.setheading(270)`) and going to the top of the first body part. This is to position ourselves for the for loop where the buttons will be drawn.
+
+```py
+def Snowman(x, y, radius1, radius2, radius3):
+  #PREVIOUS CODE
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill() 
+
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+
+  #nose
+  turtle.forward(radius1/2)
+
+  turtle.right(90)
+  turtle.color("orange")
+
+  turtle.begin_fill()
+  turtle.forward(radius1/2)
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.end_fill()
+  #PREVIOUS CODE
+
+  #buttons
+  turtle.setheading(270)
+  turtle.forward(radius1)
+  
+  for x in range(3):
+
+```
+We are creating a for loop that will run three times. This is where the three buttons will be drawn.
+
+```py
+def Snowman(x, y, radius1, radius2, radius3):
+  #PREVIOUS CODE
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill() 
+
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+
+  #nose
+  turtle.forward(radius1/2)
+
+  turtle.right(90)
+  turtle.color("orange")
+
+  turtle.begin_fill()
+  turtle.forward(radius1/2)
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.end_fill()
+  #PREVIOUS CODE
 
   #buttons
   turtle.setheading(270)
@@ -230,14 +844,184 @@ def Snowman(x, y, radius1, radius2, radius3):
   
   turtle.left(90)
 ```
-- We are setting our direction to down (`turtle.setheading(270)`) and going to the top of the first body part.
-- We are creating a for loop three times for the three buttons.
-- In the loop, we are moving forward half the radius of the first body part and creating a circle with 1/6 the radius of the head. This will create the correct spacing to fit the buttons, as the user can scale the body sizes.
+In the for loop, we are going forward half of the body piece's radius. We then creating a filled in circle that is 1/6 the radius size of the head's radius. Finally, outside of the for loop, we are repositioning ourself.
 
 # Calling the Snowman Function
 This draw function will allow the snowmen to be drawn to the screen.
 ```py
-#What we already wrote.
+import turtle
+
+radius1 = float(input("What radius for the first circle?: "))
+radius2 = float(input("What radius for the second circle?: "))
+radius3 = float(input("What radius for the third circle?: "))
+
+turtle.speed(0)
+turtle.hideturtle()
+turtle.bgcolor("black")
+
+def Snowman(x, y, radius1, radius2, radius3):
+#PREVIOUS CODE
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill() 
+
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+
+  #nose
+  turtle.forward(radius1/2)
+
+  turtle.right(90)
+  turtle.color("orange")
+
+  turtle.begin_fill()
+  turtle.forward(radius1/2)
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.end_fill()
+
+  #buttons
+  turtle.setheading(270)
+  turtle.forward(radius1)
+  for x in range(3):
+      turtle.forward(radius2/2)
+
+      turtle.begin_fill() 
+      turtle.circle(radius1/6) 
+      turtle.end_fill()
+  turtle.left(90)
+#PREVIOUS CODE
+
+def draw():
+```
+Add the draw function after all the code we wrote. This is where we will be calling the snowman funciton.
+
+```py
+import turtle
+
+radius1 = float(input("What radius for the first circle?: "))
+radius2 = float(input("What radius for the second circle?: "))
+radius3 = float(input("What radius for the third circle?: "))
+
+turtle.speed(0)
+turtle.hideturtle()
+turtle.bgcolor("black")
+
+def Snowman(x, y, radius1, radius2, radius3):
+#PREVIOUS CODE
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill() 
+
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+
+  #nose
+  turtle.forward(radius1/2)
+
+  turtle.right(90)
+  turtle.color("orange")
+
+  turtle.begin_fill()
+  turtle.forward(radius1/2)
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.end_fill()
+
+  #buttons
+  turtle.setheading(270)
+  turtle.forward(radius1)
+  for x in range(3):
+      turtle.forward(radius2/2)
+
+      turtle.begin_fill() 
+      turtle.circle(radius1/6) 
+      turtle.end_fill()
+  turtle.left(90)
+#PREVIOUS CODE
+
 def draw():
   turtle.tracer(0, 0)
   Snowman(x, y, radius1, radius2, radius3)
@@ -245,13 +1029,301 @@ def draw():
   Snowman(x+-120, y, radius1, radius2, radius3)
   turtle.update()
 ```
-- Right underneath what we already wrote add this function.
 - This function draws three snowmen with variables that we will create later, along with our radii.
 - The tracer function and update function surrounding the snowmen calls will make it so the drawing will happen after all the snowmen are complete, instead of it happening after each draw statement. If we did not have this, the snowmen would keep refreshing before being completed, slowing down the drawing process.
 
 # Movement
 ```py
-#What we already wrote.
+#PREVIOUS CODE
+import turtle
+
+radius1 = float(input("What radius for the first circle?: "))
+radius2 = float(input("What radius for the second circle?: "))
+radius3 = float(input("What radius for the third circle?: "))
+
+turtle.speed(0)
+turtle.hideturtle()
+turtle.bgcolor("black")
+
+def Snowman(x, y, radius1, radius2, radius3):
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill() 
+
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+
+  #nose
+  turtle.forward(radius1/2)
+
+  turtle.right(90)
+  turtle.color("orange")
+
+  turtle.begin_fill()
+  turtle.forward(radius1/2)
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.end_fill()
+
+  #buttons
+  turtle.setheading(270)
+  turtle.forward(radius1)
+  for x in range(3):
+      turtle.forward(radius2/2)
+
+      turtle.begin_fill() 
+      turtle.circle(radius1/6) 
+      turtle.end_fill()
+  turtle.left(90)
+
+
+def draw():
+  turtle.tracer(0, 0)
+  Snowman(x, y, radius1, radius2, radius3)
+  Snowman(x+120, y, radius1, radius2, radius3)
+  Snowman(x+-120, y, radius1, radius2, radius3)
+  turtle.update()
+#PREVIOUS CODE
+
+def left():
+```
+Add this left function with no parameters right under the draw function. This will handle the movement of the snowmen when a key is pressed.
+
+```py
+#PREVIOUS CODE
+import turtle
+
+radius1 = float(input("What radius for the first circle?: "))
+radius2 = float(input("What radius for the second circle?: "))
+radius3 = float(input("What radius for the third circle?: "))
+
+turtle.speed(0)
+turtle.hideturtle()
+turtle.bgcolor("black")
+
+def Snowman(x, y, radius1, radius2, radius3):
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill() 
+
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+
+  #nose
+  turtle.forward(radius1/2)
+
+  turtle.right(90)
+  turtle.color("orange")
+
+  turtle.begin_fill()
+  turtle.forward(radius1/2)
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.end_fill()
+
+  #buttons
+  turtle.setheading(270)
+  turtle.forward(radius1)
+  for x in range(3):
+      turtle.forward(radius2/2)
+
+      turtle.begin_fill() 
+      turtle.circle(radius1/6) 
+      turtle.end_fill()
+  turtle.left(90)
+
+
+def draw():
+  turtle.tracer(0, 0)
+  Snowman(x, y, radius1, radius2, radius3)
+  Snowman(x+120, y, radius1, radius2, radius3)
+  Snowman(x+-120, y, radius1, radius2, radius3)
+  turtle.update()
+#PREVIOUS CODE
+
+def left():
+  global x
+  turtle.clear()
+  x-=10
+  draw()
+```
+We are accessing our x variable we will create later. We are clearing the screen, subtracting 10 from the x variable, and then calling the draw function.
+
+```py
+#PREVIOUS CODE
+import turtle
+
+radius1 = float(input("What radius for the first circle?: "))
+radius2 = float(input("What radius for the second circle?: "))
+radius3 = float(input("What radius for the third circle?: "))
+
+turtle.speed(0)
+turtle.hideturtle()
+turtle.bgcolor("black")
+
+def Snowman(x, y, radius1, radius2, radius3):
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill() 
+
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+
+  #nose
+  turtle.forward(radius1/2)
+
+  turtle.right(90)
+  turtle.color("orange")
+
+  turtle.begin_fill()
+  turtle.forward(radius1/2)
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.end_fill()
+
+  #buttons
+  turtle.setheading(270)
+  turtle.forward(radius1)
+  for x in range(3):
+      turtle.forward(radius2/2)
+
+      turtle.begin_fill() 
+      turtle.circle(radius1/6) 
+      turtle.end_fill()
+  turtle.left(90)
+
+
+def draw():
+  turtle.tracer(0, 0)
+  Snowman(x, y, radius1, radius2, radius3)
+  Snowman(x+120, y, radius1, radius2, radius3)
+  Snowman(x+-120, y, radius1, radius2, radius3)
+  turtle.update()
+#PREVIOUS CODE
+
 def left():
   global x
   turtle.clear()
@@ -264,13 +1336,227 @@ def right():
   x+=10
   draw()
 ```
-- Put these functions right under what we already wrote.
-- These functions increase of decrease the x variable, clear the screen, and draw the snowmen again.
-- If you want to move right, the x value has to be increased, and if you want to go left, the x value has to be decreased.
+The right function is the same as the left but instead of decreasing x by 10, we are increasing x by 10. This makes us move to the right instead of the left.
 
 # Final Statements
+We will write some final statements for our program.
+
 ```py
-#Everything we already wrote.
+#PREVIOUS CODE
+import turtle
+
+radius1 = float(input("What radius for the first circle?: "))
+radius2 = float(input("What radius for the second circle?: "))
+radius3 = float(input("What radius for the third circle?: "))
+
+turtle.speed(0)
+turtle.hideturtle()
+turtle.bgcolor("black")
+
+def Snowman(x, y, radius1, radius2, radius3):
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill() 
+
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+
+  #nose
+  turtle.forward(radius1/2)
+
+  turtle.right(90)
+  turtle.color("orange")
+
+  turtle.begin_fill()
+  turtle.forward(radius1/2)
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.end_fill()
+
+  #buttons
+  turtle.setheading(270)
+  turtle.forward(radius1)
+  for x in range(3):
+      turtle.forward(radius2/2)
+
+      turtle.begin_fill() 
+      turtle.circle(radius1/6) 
+      turtle.end_fill()
+  turtle.left(90)
+
+
+def draw():
+  turtle.tracer(0, 0)
+  Snowman(x, y, radius1, radius2, radius3)
+  Snowman(x+120, y, radius1, radius2, radius3)
+  Snowman(x+-120, y, radius1, radius2, radius3)
+  turtle.update()
+
+def left():
+  global x
+  turtle.clear()
+  x-=10
+  draw()
+
+def right():
+  global x
+  turtle.clear()
+  x+=10
+  draw()
+#PREVIOUS CODE
+
+x = 0
+y = 0
+draw()
+```
+Initialze x and y variables, and call the initial draw function. We want the snowmen to be drawn to the screen even before any user input is recognized.
+
+```py
+#PREVIOUS CODE
+import turtle
+
+radius1 = float(input("What radius for the first circle?: "))
+radius2 = float(input("What radius for the second circle?: "))
+radius3 = float(input("What radius for the third circle?: "))
+
+turtle.speed(0)
+turtle.hideturtle()
+turtle.bgcolor("black")
+
+def Snowman(x, y, radius1, radius2, radius3):
+  turtle.goto(x, y)
+  turtle.color("lightblue")
+
+  #head
+  turtle.begin_fill() 
+  turtle.circle(radius1) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 1
+  turtle.right(90)
+  turtle.forward(radius2*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius2) 
+  turtle.end_fill() 
+  turtle.up()
+
+  #body piece 2
+  turtle.right(90)
+  turtle.forward(radius3*2)
+  turtle.left(90)
+  turtle.begin_fill() 
+  turtle.circle(radius3) 
+  turtle.end_fill() 
+
+  #eyes
+  turtle.color("blue")
+  turtle.left(90)
+  turtle.forward(radius3*2+radius2*2+radius1)
+
+  turtle.left(-90)
+  turtle.forward(radius1/2)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill() 
+
+  turtle.left(180)
+  turtle.forward(radius1)
+  turtle.right(180)
+  turtle.begin_fill() 
+  turtle.circle(radius1/6) 
+  turtle.end_fill()
+
+  #nose
+  turtle.forward(radius1/2)
+
+  turtle.right(90)
+  turtle.color("orange")
+
+  turtle.begin_fill()
+  turtle.forward(radius1/2)
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.left(120)
+  turtle.forward(radius1/2)
+  
+  turtle.end_fill()
+
+  #buttons
+  turtle.setheading(270)
+  turtle.forward(radius1)
+  for x in range(3):
+      turtle.forward(radius2/2)
+
+      turtle.begin_fill() 
+      turtle.circle(radius1/6) 
+      turtle.end_fill()
+  turtle.left(90)
+
+
+def draw():
+  turtle.tracer(0, 0)
+  Snowman(x, y, radius1, radius2, radius3)
+  Snowman(x+120, y, radius1, radius2, radius3)
+  Snowman(x+-120, y, radius1, radius2, radius3)
+  turtle.update()
+
+def left():
+  global x
+  turtle.clear()
+  x-=10
+  draw()
+
+def right():
+  global x
+  turtle.clear()
+  x+=10
+  draw()
+#PREVIOUS CODE
+
 x = 0
 y = 0
 draw()
@@ -281,9 +1567,8 @@ turtle.onkeypress(right, "d")
 turtle.listen()
 turtle.mainloop()
 ```
-- Add these statements after all the code we already wrote.
-- These statements initialize the variables, initially draw the snowmen, and listen in for keyboard input to move them left and right.
- 
+We are calling "onkeypress" functions that will recognize user input. Is "a" is pressed, we want to call the left function, and if "d" is pressed, we want to call the right function. The listen statements listen for user input instead of ending the program.
+
 # Final Code
 
 <img src="https://media1.tenor.com/images/cb8ccb4cb181cd2ddefa8c6e604938db/tenor.gif?itemid=7915750" width="380" alt="Snoopy Gif">
