@@ -177,15 +177,15 @@ In the `index.java` file, create a class called `Tile` with the following code:
 class Tile
 {
   int x, y;
-  color colour;
+  color color;
   
   boolean spread;
   
-  Tile(int x, int y, int colour)
+  Tile(int x, int y, int color)
   {
     this.x = x;
     this.y = y;
-    this.colour = colour;
+    this.color = color;
     
     spread = false;
   }
@@ -194,14 +194,14 @@ class Tile
 
 Here, we're setting up that the `Tile` class needs to be initialized with two integer variables `x` and `y`, a variable that sets a color, and a boolean variable.
 
-*In case you're new to Java: the weird function-looking thing that starts with `Tile(int x, int y, int colour)` is called a [constructor](https://www.w3schools.com/java/java_constructors.asp).*
+*In case you're new to Java: the weird function-looking thing that starts with `Tile(int x, int y, int color)` is called a [constructor](https://www.w3schools.com/java/java_constructors.asp).*
 
 Under the `Tile` constructor, but inside the `Tile` class, create a method called `Display()`.
 
 ```java
 void Display()
   { 
-    fill(colour);
+    fill(color);
     
     if (!show) noStroke();
     else stroke(180);
@@ -257,7 +257,7 @@ Let's add the color options we'll want to use for the pixel art pad. I'll give y
 Under the `Tile` object, add:
 
 ```java
-color colours[] = {
+color colors[] = {
   color(165, 42, 42),
   color(255, 0, 0),
   color(255, 165, 0),
@@ -333,9 +333,9 @@ void draw()
   
   if (show)
   {
-    for (int a = 0; a < colours.length; ++a)
+    for (int a = 0; a < colors.length; ++a)
     {
-      fill(colours[a]);
+      fill(colors[a]);
       stroke(0);
       ellipse(50, (a * 50) + 50, 30, 30);
     }
@@ -365,14 +365,14 @@ if (mousePressed && mouseButton == LEFT)
       {
         if (show)
         {
-          for (int c = 0; c < colours.length; ++c)
+          for (int c = 0; c < colors.length; ++c)
           {
             if (dist(mouseX, mouseY, 50, (c * 50) + 50) <= 30)
               return;
           }
         }
 
-        grid[b][a].colour = selected;
+        grid[b][a].color = selected;
       }
     }
   }
@@ -403,10 +403,10 @@ void mousePressed()
 {
   if (show)
   {
-    for (int a = 0; a < colours.length; ++a)
+    for (int a = 0; a < colors.length; ++a)
     {
       if (dist(mouseX, mouseY, 50, (a * 50) + 50) <= 30)
-        selected = colours[a];
+        selected = colors[a];
     }
   }
 }
@@ -423,15 +423,15 @@ void mousePressed()
 class Tile
 {
   int x, y;
-  color colour;
+  color color;
   
   boolean spread;
   
-  Tile(int x, int y, int colour)
+  Tile(int x, int y, int color)
   {
     this.x = x;
     this.y = y;
-    this.colour = colour;
+    this.color = color;
     
     spread = false;
   }
@@ -439,7 +439,7 @@ class Tile
   // Function to display tiles
   void Display()
   { 
-    fill(colour);
+    fill(color);
     
     if (!show) noStroke();
     else stroke(180);
@@ -452,7 +452,7 @@ class Tile
 Tile grid[][] = new Tile[25][25];
 
 // Color palette
-color colours[] = {
+color colors[] = {
   color(165, 42, 42),
   color(255, 0, 0),
   color(255, 165, 0),
@@ -489,9 +489,9 @@ void draw()
   
   if (show)
   {
-    for (int a = 0; a < colours.length; ++a)
+    for (int a = 0; a < colors.length; ++a)
     {
-      fill(colours[a]);
+      fill(colors[a]);
       stroke(0);
       ellipse(50, (a * 50) + 50, 30, 30);
     }
@@ -509,14 +509,14 @@ void draw()
         {
           if (show)
           {
-            for (int c = 0; c < colours.length; ++c)
+            for (int c = 0; c < colors.length; ++c)
             {
               if (dist(mouseX, mouseY, 50, (c * 50) + 50) <= 30)
                 return;
             }
           }
           
-          grid[b][a].colour = selected;
+          grid[b][a].colors = selected;
         }
       }
     }
@@ -527,10 +527,10 @@ void mousePressed()
 {
   if (show)
   {
-    for (int a = 0; a < colours.length; ++a)
+    for (int a = 0; a < colors.length; ++a)
     {
       if (dist(mouseX, mouseY, 50, (a * 50) + 50) <= 30)
-        selected = colours[a];
+        selected = colors[a];
     }
   }
 }
