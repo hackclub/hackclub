@@ -1,7 +1,7 @@
 ---
 name: 'Pixel Art Pad'
 description: 'Build a pixel art pad using HTML and Java'
-author: '@hackyguru'
+author: '@hackyguru, @MatthewStanciu'
 img: 'https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png'
 ---
 
@@ -23,7 +23,7 @@ Here's what it'll look like:
 
 Before we begin, an important disclaimer. Listen up, **especially if you're new to coding!**
 
-The point of this workshop is to have a little fun with Java by making something fun in the browser with it. In order to do this, we're going to have to use Java in ways its not supposed to be used and employ some very bad practices. **You should not write websites and web apps in Java.** Developers write code for the web using another language called JavaScript, which, despite its name sounding similar to Java, *is a completely different language*. JavaScript is a scripting language for adding functionality to websites intended to be run in the browser; Java is a language intended for writing more complex applications, like desktop apps.
+The point of this workshop is to have a little fun with Java by making something fun in the browser with it. In order to do this, we're going to have to use Java in ways its not supposed to be used and employ some very bad practices. **You should not write websites and web apps in Java.** Developers write code for the web using another language called JavaScript, which, despite its name sounding similar to Java, *is a completely different language*. JavaScript is a scripting language for adding functionality to websites, intended to be run in the browser; Java is a language intended for writing more complex applications, like desktop apps.
 
 We're breaking the rules in this workshop—but breaking the rules without fully understanding them first is dangerous and can potentially be a major source of confusion in your programming journey in the future. So, if you're a beginner doing this workshop alone, I recommend first trying some other workshops that make similarly-cool projects without employing bad practices. You can see some of my favorites by expanding the dropdown under this paragraph. If you're a club leader running this workshop for beginners, make sure you know what you're doing.
 
