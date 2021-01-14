@@ -23,7 +23,7 @@ Apart from building the drum pad, you will also be learning about different type
 
 ## Getting started
 
-Let's start by setting up our coding environment using [repl.it](https://repl.it/), a free, online code editor. To begin, go to [repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up instantly!
+For this workshop, we're going to be using [repl.it](https://repl.it/), a free, online code editor. To begin, go to [repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up instantly!
 
 You will see that there are already three files: `index.html`, `style.css`, and `script.js`. Navigate to your `index.html` file, and we will work on the structure of our drum pad there. 
 
