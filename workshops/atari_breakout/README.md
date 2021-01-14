@@ -14,6 +14,8 @@ This is what we'll build by the end of the workshop:
 [Live Demo](https://atari-breakout.shayanhalder1.repl.co/)    
 [Full Code](https://repl.it/@shayanhalder1/Atari-Breakout#script.js) 
 
+*This workshop will take about 45 minutes to complete.*
+
 ### Prerequisites
 
 You should have a basic understanding of JavaScript to understand this workshop, but it shouldn't be too hard to follow along if you're coming from another programming language. We'll also be using the p5.js library but don't worry if you've never used it before-- p5.js is super intuitive to use and we'll be learning its features as we go.     
