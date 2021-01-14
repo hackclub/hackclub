@@ -5,9 +5,10 @@ author: '@emmanuel39hanks'
 img: 'https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png'
 ---
 
-Ever wondered how you can play sounds with code? Well, if yes, then you will love this workshop! We will be creating a drum pad with less than 230 lines of code that plays actual sounds.
+Ever wondered how you can play sounds with code? Well, if yes, then you will love this workshop! We will be creating a drum pad that plays actual sounds.
 
 ![Am ready GIF](https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif)
+
 # Overview
 
 _Preview of the Drum Pad we are going to be creating_
@@ -20,12 +21,11 @@ Final Code: [GitHub](https://github.com/emmanuel39hanks/beat_maker), Demo: [Live
 
 ## Getting started
 
-Let's start by setting up our coding environment using [repl.it](https://repl.it/), a free, online code editor.
-To begin, navigate to [repl.it](https://repl.it/languages/html), and create a new repl.
+Let's start by setting up our coding environment using [repl.it](https://repl.it/), a free, online code editor. To begin, go to [repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up instantly!
 
-You will see that there are already three files: index.html, style.css, and script.js. Navigate to your `index.html` file, and we will work on the structure of our drum pad there. 
+You will see that there are already three files: `index.html`, `style.css`, and `script.js`. Navigate to your `index.html` file, and we will work on the structure of our drum pad there. 
 
-## HTML:
+## HTML
 
 We will write most of our HTML code inside the `body` tag. Let's start by creating a header that displays the text `DRUM PAD` using the `h1` tag:
 
@@ -54,9 +54,10 @@ Just under the `h1` tag, we will have three rows and four columns of buttons. Ea
 </div>
 ```
 
-To quickly break this down. We have a parent `div` tag that nests our button `divs`, and then we label our buttons with letters to easily identify them, and like I mentioned above, each button will be given a boxy look, and that's why we are using `div` tags.
+Here, we have a parent `div` tag that nests our button `divs`, and then we label our buttons with letters to easily identify them.
 
-<details>  
+<details>
+
 <summary>Here's what your entire index.html file should look like so far:</summary>
 
 ```html
@@ -88,17 +89,18 @@ To quickly break this down. We have a parent `div` tag that nests our button `di
 </body>
 </html>
 ```
+
 </details>
 
 When we run our code, it will look like this at the moment:
 
 ![Preview of HTML with no CSS](https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
 
-# CSS:
+# CSS
 
 Now let's write some CSS styles for our drum pad to make it look visually appealing!
 
-Let's navigate to our `style.css` file and add the following code:
+Navigate to your `style.css` file and add the following code:
 
 ```css
 body {
@@ -124,7 +126,9 @@ When we run our code, you will see that our content has been aligned to the cent
 
 ![Preview of HTML with CSS applied, to change the layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
 
-We're going to be using classes to add styling to our `div` tags, a class name is an HTML attribute that points to a tag or a group of tags that have the same class name. Classes are used by CSS and JavaScript to select and access specific tags, the class attribute can be used on any HTML tag by adding the keyword `class=""` to it.
+## Classes
+
+We're going to be using classes to add styling to our `div` tags. A class name is an HTML attribute that points to a tag or a group of tags that have the same class name. Classes are used by CSS and JavaScript to select and access specific tags. The class attribute can be used on any HTML tag by adding the keyword `class=""` to it.
 
 Let's navigate back to our `index.html`, We will give our parent `div` tag the class name `pad`, and all our nested `div` tags will get the class name `box` which will apply the styling that our classes have.
 
@@ -145,7 +149,7 @@ Let's navigate back to our `index.html`, We will give our parent `div` tag the c
 </div>
 ```
 
-Now navigate to your `style.css`, and we will change our header's font size, color, and letter spacing using the following code:
+Now navigate to your `style.css`, and change your header's font size, color, and letter spacing using the following code:
 
 ```css
 h1 {
@@ -216,40 +220,39 @@ We will then add styling that adds hovering effects, inactive or active states t
   cursor: pointer;
 }
 
-/* To learn more about the :active pseudo class, check out the hacking section */
 .box:active {
-  /* To learn more about the darken function, check out the hacking section */
   background-color: darken(#444, 10%);
-
-  /* To learn more about the transform property, check out the hacking section */
   transform: scale(1.1);
-
-  /* To learn more about the transition property, check out the hacking section */
   transition: all 0.2s;
 }
 ```
 
 Now that we have finished our styling, let's work on our drum pad functionality.
 
-## JavaScript:
+## JavaScript
 
-When you click on the buttons, we have no sound. We need to write some JavaScript code that will play sounds.
+Right now, when you click on the buttons, no sound plays. We need to write some JavaScript code that will play sounds.
 
 Navigate to your `script.js` file and add the following code:
 
 ```javascript
 function play(link) {
-    let audio = new Audio(link);
-    audio.load();
-    audio.play();
+  let audio = new Audio(link);
+  audio.load();
+  audio.play();
 }
 ```
 
-To explain what we did, we created a function called `play()`, it receives a parameter, which is `link`. This is the link to the sound. We then create an audio object and pass the link to the object. Now we can just load the audio with the `load()` function and with the `play()` function we can play our sound. A function is a block of code designed to perform a particular task, it is executed when "something" invokes it (calls it).
+- First, we created a function called `play()`. It receives a parameter `link`, which is the link to the sound.
+- Inside the function, we create a [JavaScript Audio object](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/Audio) and pass the link to the object.
+- Then, we load the audio with the `load()` function (part of the Audio object)
+- And finally, we play our sound using the Audio object's `play()` function
 
-All we need to do now is find a way to play sound when a button is clicked.
+All the building blocks are in place. Now, all we need to do is play the sound when a button is clicked.
 
-Navigate to your `index.html` file, we want a sound to play when a button is click, we will need a way to call our `play()` function. We will use an HTML attribute called `onclick=""`, learn more about the onclick event here: [onclick events](https://www.w3schools.com/jsref/event_onclick.asp), it helps us call a function when a tag with the attribute is clicked on, inside the quotation marks, we pass the `play()` function and pass a link as the parameter to the function. And when a button is clicked, it will get triggered and call the `play()` function and play the sound from that link:
+It turns out running a function when you click on an HTML element is super easy! HTML has a built-in [onclick event](https://www.w3schools.com/jsref/event_onclick.asp). So, all we need to do to play a sound when you click one of the boxes is run the `play()` function we just wrote when the user clicks a box.
+
+Navigate back to the `index.html` file, and modify your divs to include these `onclick` events:
 
 ```html
 <div class="pad">
@@ -274,9 +277,17 @@ If you run your code now, you should see a working drum pad!
 
 ## Hacking
 
-Now that you have finished building, you can share your beautiful creation with other people! Remember, it's as easy as giving them your URL! Don't forget to share it with me on Slack @emmanuel39hanks.
+Now that you have finished building, you can share your beautiful creation with other people by copy/pasting the link to your repl. Also share it with me on Slack! I'm @emmanuel39hanks.
 
-**Resources:**
+But you're not done yet. There are many ways this project can be expanded on. Here are a few examples:
+
+- **Play an automated beat track:** [demo and code](https://repl.it/@emmanuel39hanks/drumpadwithabeattrack)
+- **Play the drum pad with your keyboard:** [demo and code](https://repl.it/@emmanuel39hanks/drumpadwithkeyboard)
+- **A beautifully styled drum pad:** [demo and code](https://repl.it/@emmanuel39hanks/beautifulstyleddrumpad)
+
+<details>
+
+<summary>Resources:</summary>
 
 - [JavaScript Audio Object](https://www.w3schools.com/JSREF/dom_obj_audio.asp)
 - [JavaScript onclick event](https://www.w3schools.com/jsref/event_onclick.asp)
@@ -299,10 +310,6 @@ Now that you have finished building, you can share your beautiful creation with 
 - [CSS align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
 - [CSS font-family](https://www.w3schools.com/css/css_font.asp)
 
-Now it's up to you! Do anything with this project, go on and implement something crazy. 
+</details>
 
-To finish, here are some examples of what can be built on top of this project:
-
-- **Play an automated beat track:** [demo and code](https://repl.it/@emmanuel39hanks/drumpadwithabeattrack)
-- **Play the drum pad with your keyboard:** [demo and code](https://repl.it/@emmanuel39hanks/drumpadwithkeyboard)
-- **A beautifully styled drum pad:** [demo and code](https://repl.it/@emmanuel39hanks/beautifulstyleddrumpad)
+Now it's up to you! Do anything with this project, go on and implement something crazy.
