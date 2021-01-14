@@ -5,7 +5,7 @@ author: '@hackyguru'
 img: 'https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png'
 ---
 
-In this workshop, you're going to learn how to make your own pixel art pad and make your own pixel art right in your browser!
+Java has earned a bit of a negative reputation among young people. After all, many college classes and even AP Computer Science in high schools introduce beginners to the world of programming by teaching them how to write boring, outdated desktop applications using Java. But just because computer science classes teach that Java is boring doesn't mean it has to be! In this workshop, we're going to use Java as a tool for creative coding in the web by coding your own pixel art pad that you can use in a web browser!
 
 Here's what it'll look like:
 
@@ -19,7 +19,30 @@ Here's what it'll look like:
 [final_code]: https://repl.it/@19EUCS071KUMARA/Pixel-Art-Pad
 [repl_it]: https://repl.it
 
-## Part 1: Prerequisites
+## Part 1: A Disclaimer
+
+Before we begin, an important disclaimer. Listen up, **especially if you're new to coding!**
+
+The point of this workshop is to have a little fun with Java by making something fun in the browser with it. In order to do this, we're going to have to use Java in ways its not supposed to be used and employ some very bad practices. **You should not write websites and web apps with Java.** Developers write code for the web using another language called JavaScript, which, despite its name sounding similar to Java, *is a completely different language*. JavaScript is a scripting language intended to run in the browser and add functionality to websites; Java is a language intended for writing more complex applications, like desktop apps.
+
+We're breaking the rules in this workshop—but breaking the rules without fully understanding them first is dangerous and can potentially be a major source of confusion in your programming journey in the future. So, if you're a beginner doing this workshop alone, I recommend first trying some other workshops that make similarly-cool projects without employing bad practices. You can see some of my favorites by clicking on the dropdown under this paragraph. If you're a club leader running this workshop for beginners, make sure you know what you're doing.
+
+<details>
+
+<summary> Some other great creative coding workshops: </summary>
+
+- [Splatter Paint](https://workshops.hackclub.com/splatter_paint/)
+- [Speak Colors](https://workshops.hackclub.com/speak_colors/)
+- [Sound Galaxy](https://workshops.hackclub.com/sound_galaxy/)
+- [Synth](https://workshops.hackclub.com/synth/)
+- [Animated 3D Models](https://workshops.hackclub.com/3d_models_with_zdog/)
+- [Tunes](https://workshops.hackclub.com/tunes/)
+
+</details>
+
+Now that that's out of the way, let's get started!
+
+## Part 2: Prerequisites
 
 It is recommended to have a basic understanding of:
 
@@ -31,7 +54,7 @@ We will be using a library called processing.js which will help us in processing
 However, this workshop is beginner friendly and you can refer the [final code][final_code] to understand better.
 
 
-## Part 2: Getting started
+## Part 3: Getting started
 
 ### Setting up Repl.it
 
@@ -41,7 +64,7 @@ We're going to be writing our code in an online code editor called [Repl.it](htt
 
 Once your repl is setup, you are all set to continue!
 
-## Part 3: Setting Up The Required Files
+## Part 4: Setting Up The Required Files
 
 ### 1) Deleting the files which are not required
 
@@ -60,7 +83,7 @@ We need a java file in this project. The java file will provide functionality to
 Finally, you will be having two files called `index.html` and `index.java`.
 
 
-## Part 4: Building The Pixel Art Pad
+## Part 5: Building The Pixel Art Pad
 
 ### 1) index.html
 
@@ -295,8 +318,10 @@ void mousePressed()
 ```
 You can customize or create new mouse actions if you want (For example, you can try using right click to erase a color on a tile).
 
-<details><summary>Your final code should look something like this:</summary>
+<details>
   
+<summary>Your final code should look something like this:</summary>
+
 ```java
 // Setting up Tile class
 class Tile
@@ -419,9 +444,7 @@ void mousePressed()
 
 And finally, the coding part for both HTML and Java is done!
 
-
-
-## Part 5: The End
+## Part 6: The End
 
 You can try running the code by pressing the *'Run'* button on the top. You will see the preview of the pixel art pad in the right side pane.
 
