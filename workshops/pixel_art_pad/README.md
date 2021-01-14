@@ -5,7 +5,7 @@ author: '@hackyguru'
 img: 'https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png'
 ---
 
-Java has earned a bit of a negative reputation among young people. After all, many college classes and even AP Computer Science in high schools introduce beginners to the world of programming by teaching them how to write boring, outdated desktop applications using Java. But just because computer science classes teach that Java is boring doesn't mean it has to be! In this workshop, we're going to use Java as a tool for creative coding in the web by coding your own pixel art pad.
+Java has earned a bit of a negative reputation among young people. After all, many college classes and even AP Computer Science in high schools introduce beginners to the world of programming by teaching them how to write boring, outdated desktop applications using Java. But just because computer science classes make Java boring doesn't mean it has to be! In this workshop, you're going to use Java as a tool for creative coding in the web by coding your own pixel art pad.
 
 Here's what it'll look like:
 
