@@ -107,17 +107,11 @@ body {
   background-color: #fff;
   height: 100%;
   width: 100%;
-  
-  /* To learn more about the CSS flex box, check out the hacking section */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* To learn more about the overflow property, check out the hacking section */
   overflow: hidden;
-
-  /* To learn more about the font-family property, check out the hacking section */
   font-family: sans-serif;
 }
 ```
@@ -154,11 +148,7 @@ Now navigate to your `style.css`, and change your header's font size, color, and
 ```css
 h1 {
   color: #000;
-
-  /* To learn more about the font-size property, check out the hacking section */
   font-size: 5vw;
-
-  /* To learn more about the letter-spacing property, check out the hacking section */
   letter-spacing: 6px; 
 }
 ```
@@ -169,11 +159,7 @@ Then we create three rows and four columns to correctly align our header and but
 .pad {
   width: 500px;
   display: flex;
-
-  /* To learn more about the justify-content property, check out the hacking section */
   justify-content: space-between;
-  
-  /* To learn more about the flex-wrap property, check out the hacking section */
   flex-wrap: wrap;
 }
 ```
@@ -185,22 +171,13 @@ We will write styling for our class name `.box`, to specify our buttons unique s
   width: 100px;
   height: 100px;
   margin: 10px 0;
-
-  /* To learn more about the box-shadow property, check out the hacking section */
   box-shadow: 0 8px 6px -6px black;
   background-color: #444;
   display: flex;
-
   justify-content: center;
-
-  /* To learn more about the align-items property, check out the hacking section */
   align-items: center;
   font-size: 20px;
-
-  /* To learn more about the rgba function, check out the hacking section */
   color: rgba(255, 255, 255, 0.4);
-
-  /* To learn more about the border-radius property, check out the hacking section */
   border: 4px solid;
 }
 ```
@@ -212,11 +189,8 @@ And when we run our code again, it should look like this:
 We will then add styling that adds hovering effects, inactive or active states to our buttons:
 
 ```css
-/* To learn more about the lighten function and :hover pseudo class, check out the hacking section */
 .box:hover {
   background-color: lighten(#444, 10%);
-
-  /* To learn more about the cursor property, check out the hacking section */
   cursor: pointer;
 }
 
