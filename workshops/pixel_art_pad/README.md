@@ -5,15 +5,15 @@ author: '@hackyguru'
 img: 'https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png'
 ---
 
-Java has earned a bit of a negative reputation among young people. After all, many college classes and even AP Computer Science in high schools introduce beginners to the world of programming by teaching them how to write boring, outdated desktop applications using Java. But just because computer science classes teach that Java is boring doesn't mean it has to be! In this workshop, we're going to use Java as a tool for creative coding in the web by coding your own pixel art pad that you can use in a web browser!
+Java has earned a bit of a negative reputation among young people. After all, many college classes and even AP Computer Science in high schools introduce beginners to the world of programming by teaching them how to write boring, outdated desktop applications using Java. But just because computer science classes teach that Java is boring doesn't mean it has to be! In this workshop, we're going to use Java as a tool for creative coding in the web by coding your own pixel art pad.
 
 Here's what it'll look like:
 
 [![homepage](https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png)](https://pixel-creator-2.19eucs071kumara.repl.co/)
 
-[Live demo][final_live_demo]
+[Live Demo][final_live_demo]
 <br />
-[final code][final_code]
+[Final Code][final_code]
 
 [final_live_demo]: https://pixel-creator-2.19eucs071kumara.repl.co/
 [final_code]: https://repl.it/@19EUCS071KUMARA/Pixel-Art-Pad
@@ -44,15 +44,17 @@ Now that that's out of the way, let's get started!
 
 ## Part 2: Prerequisites
 
-It is recommended to have a basic understanding of:
+This workshop assumes you have a basic understanding of Java, including:
 
-- HTML
-- Java
+- the concept of object-oriented programming and how you can work with objects in Java
+- defining a class and constructor
+- methods and return types
 
-We will be using a library called processing.js which will help us in processing the graphics in a web canvas. All the functionalities of the pixel art pad will be written in java.
+I've included some snippets explaining some Java concepts that we run into throughout in case you're a little rusty, but if you don't have a basic understanding of these concepts, you may get lost.
 
-However, this workshop is beginner friendly and you can refer the [final code][final_code] to understand better.
+It also helps to have a basic understanding of HTML, but it's not required.
 
+We will be using a library called Processing.js, which will help us in processing the graphics in a web canvas. All the functionalities of the pixel art pad will be written in Java.
 
 ## Part 3: Getting started
 
@@ -66,11 +68,9 @@ Once your repl is setup, you are all set to continue!
 
 ## Part 4: Setting Up The Required Files
 
-### 1) Deleting the files which are not required
+### 1) Deleting unnecessary files
 
-The first file that appears soon after the repl is setup is `index.html`.
-
-You will be able to find two other files called `style.css` and `script.js` in the files panel on the left side. Delete both the files as they are not required in this workshop.
+When your repl starts up, you should see 3 files on the sidebar to the left: `index.html`, `style.css`, and `script.js`. Delete `style.css` and `script.js`. We're not going to be using them for this workshop.
 
 ![Deleting files](https://cloud-63ot6za6a.vercel.app/0deletingfiles.gif)
 
@@ -78,16 +78,17 @@ You will be able to find two other files called `style.css` and `script.js` in t
 
 We need a java file in this project. The java file will provide functionality to the web canvas. Create a file called `index.java` by pressing the new file icon on the files pane.
 
+As mentioned earlier, we're going to be writing the functionality for the pixel art pad in Java. So, let's create a file called `index.java` by clicking the "new file" icon at the top of the sidebar.
+
 ![Creating index.java](https://cloud-czzce7b1v.vercel.app/0creatingjava.gif)
 
-Finally, you will be having two files called `index.html` and `index.java`.
-
+You should now have two files called `index.html` and `index.java`.
 
 ## Part 5: Building The Pixel Art Pad
 
 ### 1) index.html
 
-First, let us write the required HTML code for the pixel art pad. You will be having the following code in `index.html` by default :
+First, let's write the required HTML code for the pixel art pad. Repl.it should have already added some starter code to the `index.html` file:
 
 ```html
 <!DOCTYPE html>
@@ -104,26 +105,46 @@ First, let us write the required HTML code for the pixel art pad. You will be ha
 </html>
 ```
 
-Replace the text inside the title tag to the title you want. In my case, I am replacing it with 
+Replace the text inside the `<title>` tag to the title you want. In my case, I am replacing it with:
 
 ```html 
 <title>Pixel Art Pad</title>
 ```
 
-If you don't use a custom CSS, remove the following line from the code  :
+Next, since we're not going to be writing CSS in this workshop, you can remove the line that links the CSS file to the HTML file. Delete the line that looks like this:
 
 ```html
 <link href="style.css" rel="stylesheet" type="text/css" />
 ```
 
-Since we are not using JavaScript, we will also remove the following line which is inside the `<body>` tag:
+Similarly, since we no longer have a JavaScript file to link, you can also remove this line:
 
 ```html
 <script src="script.js"></script>
 ```
-#### The canvas element
-Provide `<h1>` tag for the heading. The `<canvas>` tag is used for creating a canvas.
-The canvas tag is only a container for the art pad. We will be using processing.js along with Java to process the art inside the art pad.
+
+#### Giving the head a new body
+
+Finally, go ahead and delete everything between the `<body>` `</body>` tags and replace it with:
+
+```html
+<body>
+  <center>
+    <h1>Pixel Art Pad</h1>
+    <br>
+    <canvas data-processing-sources="index.java"></canvas>
+  </center>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
+</body>
+```
+
+Here, we're:
+
+- adding a heading (`<h1>`) to the top of the page
+- adding a line break (`<br>`)
+- creating an [HTML Canvas](https://www.w3schools.com/html/html5_canvas.asp) and linking our Java file to it (this is where our pixel art pad will appear!)
+- wrapping everything in a `<center>` tag so that we can center everything without having to write CSS. `<center>` is an obsolete element and you should not use it in your own projects, but in the spirit of hacking our way to a solution without considering good and bad practice, we're using it in this project.
+- importing the Processing.js library, which we'll use to create our pixel art pad
 
 #### Final index.html code:
 
@@ -137,9 +158,9 @@ The canvas tag is only a container for the art pad. We will be using processing.
   </head>
   <body>
     <center>
-    <h1>Pixel Pad</h1>
-    <br>
-    <canvas data-processing-sources="index.java"></canvas>
+      <h1>Pixel Art Pad</h1>
+      <br>
+      <canvas data-processing-sources="index.java"></canvas>
     </center>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
   </body>
@@ -148,13 +169,13 @@ The canvas tag is only a container for the art pad. We will be using processing.
 
 And that's it! We have completed writing our HTML.
 
-
 ### 2) index.java
 
 #### The Tile class
 
-The `index.java` file will contain all the functionalities required for creating the graphics inside the web canvas.
-In the `index.java` file, create a class called Tile with the following code :
+Now that we've written our HTML, it's time to write the Java code that will bring our pixel art pad to life.
+
+In the `index.java` file, create a class called `Tile` with the following code:
 
 ```java
 class Tile
@@ -174,10 +195,12 @@ class Tile
   }
 }
 ```
-The tile class will need two variables x and y of the type integer, a variable for color and a boolean variable.
 
+Here, we're setting up that the `Tile` class needs to be initialized with two integer variables `x` and `y`, a variable that sets a color, and a boolean variable.
 
-Now, create a function called `Display()` for displaying the tiles with the following code :
+*In case you're new to Java: the weird function-looking thing that starts with `Tile(int x, int y, int colour)` is called a [constructor](https://www.w3schools.com/java/java_constructors.asp).*
+
+Under the `Tile` constructor, but inside the `Tile` class, create a method called `Display()`.
 
 ```java
 void Display()
@@ -191,24 +214,51 @@ void Display()
   }
 ```
 
-Another important point to be noted is that the `Display()` function should be defined inside the Tile class.
+This method uses some handy functions—`fill()`, `noStroke()`, `stroke()`, and `rect()`—from the Processing.js library to display a tile. As a general rule throughout this workshop, if you see a random function that you haven't previously written suddenly appear in the code, it's probably from Processing.js. I recommend having the [Processing.js documentation](https://www.khanacademy.org/computing/computer-programming/pjs-documentation) open in another tab so that you can find out what each function does if you're curious.
+
+<details>
+  
+<summary>If you're new to Java:</summary>
+
+All Java methods must specify a "return type", or the type of variable that the function will "return" once completed. For example, if you wanted to write a method that would add two numbers, here's how it would look:
+
+```java
+int addNumbers(int a, int b) {
+  return a + b // since a and b are integers, the return type is also an integer, which is consistent with the return type we declared
+}
+```
+
+And if you wanted to write a method that combined two strings, it would look something like this:
+
+```java
+String combineStrings(String a, String b) {
+  return a + b
+}
+```
+
+Our `Display()` function's return type is `void`, which means it doesn't return anything.
+
+</details>
 
 #### Specifying the grid size
 
-In order to specify the size of the grid, use the following code :
+And with that, your `Tile` class is completed! Now, let's work with it.
+
+After the end of the `Tile` class, add:
 
 ```java
 Tile grid[][] = new Tile[25][25];
 ```
-Here, we are initializing a square grid of 25*25 tiles. You can change it according to your convenience.
+
+This initializes a square grid of 25x25 tiles. Once you finish this workshop, though, come back and try changing these numbers!
 
 #### Specifying the colors in color palette
 
-I love colors. In this workshop, we will be adding 9 colors for our color palette. You can modify or add more colors according to your convenience.
-
 ![A variety of colors](https://media.giphy.com/media/8Ry7iAVwKBQpG/giphy.gif)
 
-Use the following code to specify the colors in the color palette :
+Let's add the color options we'll want to use for the pixel art pad. I'll give you 9 colors to start with, but I recommend choosing your own colors! Google "rgb color picker" and you'll find a tool that lets you pick a color and gets its RGB value.
+
+Under the `Tile` object, add:
 
 ```java
 color colours[] = {
@@ -227,12 +277,23 @@ color selected = color(255);
 boolean show = true;
 ```
 
-The colors specified above are in color(R, G, B) format. You can modify them with the R, G, B properties of the color you want.
+#### Setting up the canvas
 
+Processing includes two main functions:
 
-#### Function to setup the canvas
+- `setup()`, which is run once when you first run your code and is meant for setting things up
+- `draw()`, which runs continuously and is meant for making things happen on your canvas
 
-We need to write a function for setting up the canvas. Use the below code to set up the canvas :
+After the previous bit of code you just wrote, add:
+
+```java
+void setup()
+{
+
+}
+```
+
+Now, let's initialize the tiles on our canvas:
 
 ```java
 void setup()
@@ -247,12 +308,23 @@ void setup()
 }
 ```
 
-In the above code, the size of the canvas is specified inside `size(500, 500);`. You can modify it according to your need.
+In this code:
 
+- First, we set the size of the canvas—500 pixels by 500 pixels. You're welcome to change this if you want!
+- Then, we loop through the grid of `Tile`s we just created and add a new `Tile` object colored gray.
 
-#### Function to draw upon mouse click
+#### The `draw()` function
 
-We need to create a function called `draw()`. This function is used to fill a tile with the seletected color.
+Under the `setup()` function, add the `draw()` function:
+
+```java
+void draw()
+{
+
+}
+```
+
+Then, inside the function, add the following code:
 
 ```java
 void draw()
@@ -272,38 +344,67 @@ void draw()
       ellipse(50, (a * 50) + 50, 30, 30);
     }
   }
-  ```
+}
+```
+
+Remember, the `draw()` function runs continuously. In here, we're calling the `Display()` method on each `Tile`. Then, we display each color option near the left of the canvas.
+
+#### Responding to mouse input
   
 After defining the `draw()` function, we will create an `if` condition to check whether the left mouse button is clicked or not. We will be traversing through the grid using two `for` loops to find which tile was clicked. Then, the selected color from the color palette is applied to the tile using `grid[b][a].color = selected;`
 
+When the user clicks a tile, they want one of two things:
+
+1. to select a color
+2. to draw on a tile
+
+Let's write some code that draws on a tile when the user clicks on it. At the end of the `draw()` function, but before its closing brace, add the following code:
+
 ```java
-  if (mousePressed && mouseButton == LEFT)
+if (mousePressed && mouseButton == LEFT)
+{
+  for (int a = 0; a < grid.length; ++a)
   {
-    for (int a = 0; a < grid.length; ++a)
+    for (int b = 0; b < grid[a].length; ++b)
     {
-      for (int b = 0; b < grid[a].length; ++b)
+      if (mouseX >= (b * 20) && mouseX <= 20 + (b * 20) && mouseY >= (a * 20) && mouseY <= 20 + (a * 20))
       {
-        if (mouseX >= (b * 20) && mouseX <= 20 + (b * 20) && mouseY >= (a * 20) && mouseY <= 20 + (a * 20))
+        if (show)
         {
-          if (show)
+          for (int c = 0; c < colours.length; ++c)
           {
-            for (int c = 0; c < colours.length; ++c)
-            {
-              if (dist(mouseX, mouseY, 50, (c * 50) + 50) <= 30)
-                return;
-            }
+            if (dist(mouseX, mouseY, 50, (c * 50) + 50) <= 30)
+              return;
           }
-          
-          grid[b][a].colour = selected;
         }
+
+        grid[b][a].colour = selected;
       }
     }
   }
-  ```
-  
-Next, we need to define a function called `mousePressed()`. This function colors the selected tile with the selected color from the color palette.
-
+}
 ```
+
+Wow! Check out all of those for loops and if statements. Look through this piece of code closely. Do you understand what it's doing? It's a little difficult to wrap your head around, so if you don't, stick around and I'll show you how to figure it out.
+
+#### Selecting a color
+
+We're almost done! There's just one more thing we need to do: right now, you'll be able to draw, but you won't be able to select a color. So, let's add that.
+  
+After the `draw()` function, at the end of the file, add a function called `mousePressed():
+
+```java
+void mousePressed()
+{
+
+}
+```
+
+`mousePressed()` is another function Processing.js provides us. The code we write in this function will automatically run whenever it detects that the mouse has been pressed.
+
+Inside the `mousePressed()` function, add the following code:
+
+```java
 void mousePressed()
 {
   if (show)
@@ -316,10 +417,11 @@ void mousePressed()
   }
 }
 ```
-You can customize or create new mouse actions if you want (For example, you can try using right click to erase a color on a tile).
+
+#### Running the code
 
 <details>
-  
+
 <summary>Your final code should look something like this:</summary>
 
 ```java
@@ -442,13 +544,21 @@ void mousePressed()
 
 </details>
 
-And finally, the coding part for both HTML and Java is done!
-
-## Part 6: The End
-
-You can try running the code by pressing the *'Run'* button on the top. You will see the preview of the pixel art pad in the right side pane.
+And with that, you've finished! Run the code by clicking the green "Run" button at the top of your repl.
 
 ![Pressing the run button](https://cloud-r25cunjgf.vercel.app/0running.gif)
+
+If all goes well, you should see something like this:
+
+![Final product](https://cloud-pbqnzpudp.vercel.app/0screen_shot_2021-01-14_at_4.10.09_pm.png)
+
+If you don't see it, that's okay! There are a bunch of tiny mistakes that break everything. Take a few minutes to debug your code. If you're having trouble figuring it out, ask your club leader.
+
+*Protip: I recommend opening the website in a few tab for the full effect. You can do so by clicking the button with a box and an arrow at the top right of your website preview.*
+
+So now that it's running, what's the deal with those big code blocks that are difficult to understand? If you haven't figured out how they work yet, now's the time to figure it out! Start by commenting out all of the code inside the if statement that starts with `(mousePressed && mouseButton == LEFT)` and run the program. Then, comment out all of the code in the `mousePressed()` function and see what happens. Then, comment out individual lines and if statements.
+
+## Part 6: The End
 
 Hurray! Cheers on building your own pixel art pad. You can try out new designs and pixel art with the art pad.
 
@@ -470,11 +580,12 @@ Here are some of the pixel toons I tried making with the art pad :
 
 ![Artist with a canvas](https://media.giphy.com/media/lp0nBuaRjcj13j3nMH/giphy.gif)
 
-You are free to customize and contribute to the pixel pad! You can consider trying out the below if you are interested :
+Now that you've finished, make it your own! Here are a few things you could work on to expand this project:
 
+- Add an erase feature
 - Add a download button to download the pixel art as an image
 - More colors or a custom color palette
 - Custom CSS styles to make the color palette look more attractive
 - Add a clear button to clear the drawing from the grid
 
-I would love to hear from you and see your artworks! 🎉
+Once you've finished, join the [Hack Club Slack](https://hackclub.com/slack) (if you aren't there already) and share your work in the `#scrapbook` channel!
