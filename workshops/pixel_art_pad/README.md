@@ -5,15 +5,15 @@ author: '@hackyguru'
 img: 'https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png'
 ---
 
-# Pixel Art Pad
+In this workshop, you're going to learn how to make your own pixel art pad and make your own pixel art right in your browser!
 
-Most of us like pixel art. In this workshop, I'm going to show you how to make your own pixel art pad with which you can create some amazing pixel arts.
-
-The pixel art pad will be looking like this (You can consider modifying the look if you wish) :
+Here's what it'll look like:
 
 [![homepage](https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png)](https://pixel-creator-2.19eucs071kumara.repl.co/)
 
-You can also take a look at the [live demo][final_live_demo] and [final code][final_code].
+[Live demo][final_live_demo]
+<br />
+[final code][final_code]
 
 [final_live_demo]: https://pixel-creator-2.19eucs071kumara.repl.co/
 [final_code]: https://repl.it/@19EUCS071KUMARA/Pixel-Art-Pad
@@ -35,14 +35,11 @@ However, this workshop is beginner friendly and you can refer the [final code][f
 
 ### Setting up Repl.it
 
-[Repl.it](https://repl.it) is an amazing online code editor where we will be writing our code. Though repl.it is not mandatory, I strongly recommend you to use it in order to avoid installations and downloads.
-
-To get started, Create your Repl by going to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will be created in a few moments.
+We're going to be writing our code in an online code editor called [Repl.it](https://repl.it). To get started, simply go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will be created in a few moments.
 
 ![Setting up repl.it](https://cloud-flfptkrmk.vercel.app/0setuprepl.gif)
 
 Once your repl is setup, you are all set to continue!
-
 
 ## Part 3: Setting Up The Required Files
 
@@ -50,11 +47,11 @@ Once your repl is setup, you are all set to continue!
 
 The first file that appears soon after the repl is setup is `index.html`.
 
-You will be able to find two other files called `style.css` and `script.js` in the files panel on the left side. Delete both the files as they are not required in this workshop (You can have them if you want to use custom css or js).
+You will be able to find two other files called `style.css` and `script.js` in the files panel on the left side. Delete both the files as they are not required in this workshop.
 
 ![Deleting files](https://cloud-63ot6za6a.vercel.app/0deletingfiles.gif)
 
-### 2) Creating the java file
+### 2) Creating the Java file
 
 We need a java file in this project. The java file will provide functionality to the web canvas. Create a file called `index.java` by pressing the new file icon on the files pane.
 
