@@ -183,7 +183,7 @@ Surround the drawing statement with the begin and end fill statements and draw t
 
 ```py
 def Snowman(x, y, radius1, radius2, radius3):
-  #Under the previous code we wrote.  # PREVIOUS CODE
+  #Under the previous code we wrote.
   
   #eyes
   turtle.color("blue")
