@@ -5,7 +5,7 @@ author: '@emmanuel39hanks'
 img: 'https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png'
 ---
 
-Ever wondered how you can play sounds with code? Well, if yes, then you will love this workshop! We will be creating a drum pad that plays actual sounds.
+Ever wondered how you can play sounds with code? In this workshop, we will be creating a drum pad that plays actual sounds.
 
 ![Am ready GIF](https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif)
 
@@ -17,7 +17,9 @@ _Preview of the Drum Pad we are going to be creating_
 
 Apart from building the drum pad, you will also be learning about different types of events, functions, styling, and more with Vanilla JavaScript, HTML, and CSS.
 
-Final Code: [GitHub](https://github.com/emmanuel39hanks/beat_maker), Demo: [Live](https://drum.emmanuel39hanks.repl.co)
+[Final Code](https://github.com/emmanuel39hanks/beat_maker)
+<br/>
+[Demo](https://drum.emmanuel39hanks.repl.co)
 
 ## Getting started
 
