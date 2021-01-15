@@ -2,14 +2,14 @@
 name: 'JavaScript Snake'
 description: 'A snake game made with HTML, CSS, and JavaScript!'
 author: '@GurshanBrar'
-img: 'https://cloud-jnwpv6vih.vercel.app/0JavaScript_snake_cover.png'
+img: 'https://cloud-jnwpv6vih.vercel.app/0javascript_snake_cover.png'
 ---
 Snake is addicting. We've all played the game on those tiny flip phones and as programmers, wondered the internal logic of them. But it turns out that creating one is a super easy thing to do! This workshop exists to teach you how to create your own **customizable** snake game that works smooth and looks good! **Are you excited???**
 
 ### What you'll build
 Here's a demo on what you'll be building. Also, the [final code](https://repl.it/@GurshanBrar/JavaScript-Snake-Final) and the [final demo](https://JavaScript-snake-final.gurshanbrar.repl.co/):
 
-![Final game screenshot](https://cloud-jnwpv6vih.vercel.app/0JavaScript_snake_cover.png)
+![Final game screenshot](https://cloud-jnwpv6vih.vercel.app/0javascript_snake_cover.png)
 
 ### Know this beforehand
 Although *technically*, there aren't any prerequisites, this workshop will be a whole lot more fun if you have a basic understanding of HTML, CSS, and JavaScript. But don't worry if you don't, because we all learn by doing! We'll also be using Bootstrap which as a CSS styling framework.
