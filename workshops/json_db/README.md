@@ -2,7 +2,7 @@
 name: 'JsonDB'
 description: 'Create your own persistent database with JavaScript!'
 author: '@safinsingh'
-img: 'https://cloud-f26j800mc.vercel.app/0untitled_drawing.png'
+img: 'https://cloud-n3vum1qac.vercel.app/0image.png'
 ---
 
 Databases are often used in projects to persist and store data associated with certain users. In this workshop, you'll be building your very own database with the power of JavaScript!
