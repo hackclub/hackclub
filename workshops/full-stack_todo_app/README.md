@@ -93,7 +93,7 @@ Hop on to the forked Repl and create a new component, `Firebase.js` inside the `
 In the `Firebase.js` component, import the `firebase` module, which is already installed, and paste the data you copied from Firebase. Your `Firebase.js` file will be like this with **your API keys**.
 
 ```jsx
-import firebase from 'firebase'           // <------------- importing firebase
+import firebase from 'firebase' // <–– importing firebase
 
 var firebaseConfig = {
     apiKey: "AIzaSyCFg0consEutzxGmXo5zxcibJ2-ZUkGRps",
@@ -106,7 +106,7 @@ var firebaseConfig = {
     measurementId: "G-JYGLVL9X55"
   }
 
-firebase.initializeApp(firebaseConfig)          // <---------- initializing firebase
+firebase.initializeApp(firebaseConfig) // <–– initializing firebase
 export default firebase
 ```
 
@@ -159,11 +159,11 @@ Create a new file in the `components` folder and name it `Input.js`. Import `Rea
 ```jsx
 import React from 'react'
 
-function Input(){
+function Input() {
   {/* code goes here*/}
-  }
+}
  
- export default Input
+export default Input
 ```
 
 Also, import the `Firebase.js` file you created before at the top to use Firebase inside this component.
@@ -178,8 +178,8 @@ Create a `div` with a class of `input` inside the component.
 import React from 'react'
 import firebase from '../Firebase'
 
-function Input(){
-  return(
+function Input() {
+  return (
     <div className="input">
       {/* code goes here*/}
     </div>
@@ -207,17 +207,17 @@ Form elements like `<input>`, `<select>` and `<textarea>` in React are slightly 
 Create a state value and update it every time the input changes using the `handleChange` function.
 
 ```jsx
-import React, { useState } from 'react'  // <-------------- importing useState hook
+import React, { useState } from 'react' // <–– importing useState hook
 import firebase from '../Firebase'
 
-function Input(){
-  const [task, setTask] = useState()   // <------------ creating state variable
+function Input() {
+  const [task, setTask] = useState() // <–– creating state variable
 
-  function handleChange(e){
-    setTask(e.target.value)    // <---------- updating the state value
+  function handleChange(e) {
+    setTask(e.target.value) // <–– updating the state value
   }
 
-  return(
+  return (
     <div className="input">
       <input type="text" placeholder="Enter a Todo..." value={task} onChange={handleChange} />
       <button className="add-btn">
@@ -248,9 +248,9 @@ Data in Firebase is structured as collections that we can access through `refere
 
 ```js
 function handleClick() {
-  const todoRef = firebase.database().ref('todo')  // <---------- creating a reference in database
+  const todoRef = firebase.database().ref('todo') // <—— creating a reference in database
   // code goes here
-  }
+ }
 ```
 
 To add data to the database, you can use `set()` to save data to a specified reference, replacing any existing data at that path. 
@@ -266,9 +266,9 @@ function handleClick() {
   const todoRef = firebase.database().ref('todo')  
   const newTodoRef = todoRef.push()
   const todo = {
-      task,
-      completed: false
-    }
+    task,
+    completed: false
+  }
   newTodoRef.set(todo)
   setTask("")             
 }
@@ -277,19 +277,20 @@ function handleClick() {
 Here 👆, we added the data that we get as input into the database. By default, the task is incomplete. After the data is added to the database, the input field is cleared by setting `task` to an empty string(`setTask("")`).
 
 <details>
+
 <summary>Your final code in Input.js should look like this.</summary>
 
 ```jsx
 import React, { useState } from 'react'
 import firebase from '../Firebase'
 
-function Input(){
+function Input() {
   const [task, setTask] = useState('')
 
-  function handleChange(e){
+  function handleChange(e) {
     setTask(e.target.value)
   }
-  function handleClick(){
+  function handleClick() {
     const todoRef = firebase.database().ref('todo')  
     const newTodoRef = todoRef.push()
     const todo = {
@@ -300,7 +301,7 @@ function Input(){
     setTask("")
   }
 
-  return(
+  return (
     <div className="input">
       <input type="text" placeholder="Enter a Todo..." value={task} onChange={handleChange} />
       <button className="add-btn" onClick={handleClick}>
@@ -319,14 +320,14 @@ Now import `Input.js` into `App.js` and check your output by adding some data.
 
 ```jsx
 import React from 'react'
-import Input from './components/Input'   // <----------- importing Input.js
+import Input from './components/Input' // <—— importing Input.js
 import './App.css'
 
 function App() {
   return (
     <div className="App">
       <h1>Todo App</h1>
-      <Input />                     {/* <------------ rendering the component*/}
+      <Input />
     </div>
   );
 }
@@ -350,9 +351,9 @@ Create a new component, `TodoList.js`, in the components folder. Import `React`,
 import React, { useState, useEffect } from 'react'
 import firebase from '../Firebase'
 
-function TodoList(){
+function TodoList() {
   {/*code goes here*/}
-  return(
+  return (
     <div className="todo-list">
 
     </div>
@@ -368,7 +369,7 @@ We will then read the data in the database, fetch it into an array, and display 
 Create a state variable `todoList`. This will be the empty array to which we add the data fetched from the database.
 
 ```jsx
- const [todoList, setTodoList] = useState([])           // <-------- state variable 
+ const [todoList, setTodoList] = useState([]) // <—— state variable 
 ```
 
 We will read the data only once after the component is rendered. To do that, we use the `useEffect` hook.
@@ -392,9 +393,10 @@ useEffect(() => {
 }, [])
 ```
 
-The `on()` method takes two parameters-
+The `on()` method takes two parameters:
+
 1) The event type - how you control the level of synchronization from the real-time database.
-1) The callback function - the event type above controls the callback function.
+2) The callback function - the event type above controls the callback function.
 
 Here, we are going to use the `value` event.
 
@@ -407,7 +409,7 @@ The callback function is called every time there is a change at the specified lo
 
 ```jsx
 todoRef.on("value", (snapshot) => {
-  const todos = snapshot.val()          // <---------- value of the data snapshot
+  const todos = snapshot.val() // <—— value of the data snapshot
 })
 ```
 
@@ -419,10 +421,10 @@ Now we need the data as an array to put it into the state. Declare an empty arra
 todoRef.on("value", (snapshot) => {
   const todos = snapshot.val()
   const todoList = []
-  for(let id in todos){
-    todoList.push({id,...todos[id]})            // <------------ adding todos to todoList
+  for(let id in todos) {
+    todoList.push({id,...todos[id]}) // <—— adding todos to todoList
   }
-  setTodoList(todoList)         // <----------- setting the state
+  setTodoList(todoList) // <—— setting the state
 })
 ```
 
@@ -433,7 +435,7 @@ Initially, it is an empty array. So we have to check whether it is empty or not,
 For now, let's display our list using the `<h1>` tag but later, we will create a separate component for rendering it.
 
 ```jsx
-return(
+return (
   <div className="todo-list">
     {todoList ? todoList.map((todo) => <h1> {todo.task}</h1>) : null}
   </div>
@@ -441,13 +443,14 @@ return(
 ```
 
 <details>
+
 <summary>Your TodoList component's code so far:</summary>
 
 ```jsx
 import React, { useState, useEffect } from 'react'
 import firebase from '../Firebase'
 
-function TodoList(){
+function TodoList() {
   const [todoList, setTodoList] = useState([])
 
   useEffect(() => {
@@ -456,7 +459,7 @@ function TodoList(){
     todoRef.on("value", (snapshot) => {
       const todos = snapshot.val()
       const todoList = []
-      for(let id in todos){
+      for(let id in todos) {
         todoList.push({id,...todos[id]})
       }
       setTodoList(todoList)
@@ -464,7 +467,7 @@ function TodoList(){
 
   }, [])
   
-  return(
+  return (
     <div className="todo-list">
       {todoList ? todoList.map((todo) => <h1> {todo.task}</h1>) : null}
     </div>
@@ -495,8 +498,8 @@ Create another file, `Todo.js`, in the `components` folder. Import React and Fir
 import React from 'react'.
 import firebase from '../Firebase'
 
-function Todo({ todo }){
-  return(
+function Todo({ todo }) {
+  return (
     <div classsName="todo-item">
 
     </div>
@@ -509,7 +512,7 @@ export default Todo
 Update the `TodoList` by importing `Todo` and rendering it.
 
 ```jsx
-return(
+return (
   <div className="todo-list">
     {todoList ? todoList.map((todo, i) => <Todo todo={ todo } key={ i } />) : null}
   </div>
@@ -519,6 +522,7 @@ return(
 Here, 👆 we are rendering a `Todo` component for each todo and also passing the data to that component as prop., using `map()` method. Learn more about `map()` [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). If you want to know more about rendering multiple components, check [this](https://reactjs.org/docs/lists-and-keys.html#rendering-multiple-components).
 
 <details>
+
 <summary>Your final TodoList component looks like this:</summary>
 
 ```jsx
@@ -526,7 +530,7 @@ import React, { useState, useEffect } from 'react'
 import firebase from '../Firebase'
 import Todo from './Todo'
 
-function TodoList(){
+function TodoList() {
   const [todoList, setTodoList] = useState([])
 
   useEffect(() => {
@@ -535,7 +539,7 @@ function TodoList(){
     todoRef.on("value", (snapshot) => {
       const todos = snapshot.val()
       const todoList = []
-      for(let id in todos){
+      for(let id in todos) {
         todoList.push({id,...todos[id]})
       }
       
@@ -544,9 +548,9 @@ function TodoList(){
 
   }, [])
   
-  return(
+  return (
     <div className="todo-list">
-      {todoList ? todoList.map((todo, i) => <Todo todo={ todo } key={ i } />) : null}    {/* <----------- updated with 
+      {todoList ? todoList.map((todo, i) => <Todo todo={ todo } key={ i } />) : null}    {/* <—— updated with 
       <Todo />*/}
     </div>
   )
@@ -560,8 +564,8 @@ export default TodoList
 Hop on to the `Todo` component, and let's display the data.
 
 ```jsx
-function Todo({ todo }){
-  return(
+function Todo({ todo }) {
+  return (
     <div className="todo-item">
       <div className="task">
         <input type="checkbox" />
@@ -592,9 +596,9 @@ Add the `onClick` attribute to the checkbox that invokes `completeTodo` function
 To simultaneously write to specific children of a node without overwriting other child nodes, we can use the `update()` method. When we call `update()`, it updates lower-level child values by specifying a path for the key.
 
 ```jsx
-function completeTodo(){
+function completeTodo() {
   const todoRef = firebase.database().ref('todo')
-  todoRef.child(todo.id).update({             // <----------- updates the object with the key of todo.id
+  todoRef.child(todo.id).update({ // <—— updates the object with the key of todo.id
     completed: !todo.completed
   })
 }
@@ -609,30 +613,31 @@ Click on `Run` and check whether it's working.
 Also, let's add styling for the completed tasks.
 
 <details>
+
 <summary>Our code so far:</summary>
 
 ```jsx
 import React from 'react'
 import firebase from '../Firebase'
 
-export default function Todo({ todo }){
-  const completedStyle = {                  // <------------- styles for completed task
-        fontStyle: "italic",
-        opacity: 0.4,
-        textDecoration: "line-through"
-    }
+export default function Todo({ todo }) {
+  const completedStyle = { // <—— styles for completed task
+    fontStyle: "italic",
+    opacity: 0.4,
+    textDecoration: "line-through"
+   }
 
-  function completeTodo(){
+  function completeTodo() {
     const todoRef = firebase.database().ref('todo')
     todoRef.child(todo.id).update({
       completed: !todo.completed
     })
   }
-  return(
+  return (
     <div className="todo-item">
       <div className="task">
         <input type="checkbox" onClick={ completeTodo }checked={todo.completed}/>
-        <p style={todo.completed ? completedStyle : null} >{todo.task}</p>               {/* <------------ adding className depending on todo.completed */}
+        <p style={todo.completed ? completedStyle : null} >{todo.task}</p> {/* <—— adding className depending on todo.completed */}
       </div>
       <div className="buttons">
         <button className="del-btn"><i className="fa fa-trash" aria-hidden="true"></i></button>
@@ -663,38 +668,39 @@ Add `onClick` attribute to the button with a `deleteTodo` function.
 The simplest way to delete data is to call `remove()` on a reference to that data location.
 
 ```jsx
-function deleteTodo(){
+function deleteTodo() {
   const todoRef = firebase.database().ref('todo')
   todoRef.child(todo.id).remove()
 }
 ```
 
 <details>
+
 <summary>Our final Todo component will be somethink like this:</summary>
 
 ```jsx
 import React from 'react'
 import firebase from '../Firebase'
 
-function Todo({ todo }){
+function Todo({ todo }) {
   const completedStyle = {
-        fontStyle: "italic",
-        opacity: 0.4,
-        textDecoration: "line-through"
-    }
+    fontStyle: "italic",
+    opacity: 0.4,
+    textDecoration: "line-through"
+  }
   
-  function completeTodo(){
+  function completeTodo() {
     const todoRef = firebase.database().ref('todo')
     todoRef.child(todo.id).update({
       completed: !todo.completed
     })
   }
-  function deleteTodo(){
+  function deleteTodo() {
     const todoRef = firebase.database().ref('todo')
     todoRef.child(todo.id).remove()
   }
 
-  return(
+  return (
     <div className="todo-item">
       <div className="task">
         <input type="checkbox" onClick={ completeTodo }checked={todo.completed}/>
