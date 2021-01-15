@@ -956,6 +956,7 @@ Jason and Khushraj demoed their projects and you can watch [here](https://cloud-
 It's pretty long
 
 <details>
+
 <summary>Click to show</summary>
 
 ```go
@@ -1253,6 +1254,7 @@ func setLocalClip(s string) {
     return
 }
 ```
+
 </details>
 
 
