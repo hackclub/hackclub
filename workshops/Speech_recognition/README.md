@@ -90,6 +90,7 @@ Let's break this down:
 - The `align-items` property sets the align-self value on all direct children as a group.
 
 Here's how our website looks so far:
+
 ![CSS Result 1](https://cloud-383ylgdfq.vercel.app/0image.png)
 
 And finally, we'll style the `button` and `textarea` elements.
@@ -106,7 +107,7 @@ button {
   cursor: pointer;
 }
 
-#text{
+#text {
   border: 2px #34495E solid;
   border-radius: 2px;
   overflow-y: scroll;
@@ -122,6 +123,7 @@ Let's break this down:
 - The `overflow-y` property sets what shows when content overflows a block-level element's top and bottom edges. This may be nothing, a scroll bar, or the overflow content.
 
 Finally, this is how our website looks like:
+
 ![CSS Final result](https://cloud-qxesrc5a6.vercel.app/0image.png)
 
 ## JavaScript
@@ -206,19 +208,19 @@ btnStopRecord.addEventListener('click', () => {
   recognition.abort();
 });
 btnPlayText.addEventListener('click', () => {
-  readtext(text.value);
+  readText(text.value);
 });
 ```
 
 - The method **`addEventListener()`** sets up a function that will be called whenever the `click` event is delivered to the buttons.
 - The `recognition.start()` event starts the speech recognition app.
 - The `recognition.abort();` even stops the speech recognition app.
-- In the third event listener we are calling the function `readtext()` that we'll create.
+- In the third event listener we are calling the function `readText()` that we'll create.
 
 The last thing we'll do is to create a function that reads the text gotten from the speech recognition app.
 
 ```js
-function readtext(text) {
+function readText(text) {
   const speech = new SpeechSynthesisUtterance();
   speech.text = text;
   speech.volume = 1;
@@ -281,10 +283,10 @@ btnStopRecord.addEventListener('click',() => {
 })
 
 btnPlayText.addEventListener('click',() => {
-  readtext(text.value);
+  readText(text.value);
 });
 
-function readtext(text) {
+function readText(text) {
   const speech = new SpeechSynthesisUtterance();
   speech.text = text;
   speech.volume = 1;
