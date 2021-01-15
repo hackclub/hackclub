@@ -51,9 +51,7 @@ function App() {
 }
 ```
 
-Now let's test what we've done so far. Open your application in a new tab, right-click on the screen, and hit inspect element, then click Console. Now, you should be able to see the `count` variable get printed to our console every time we click on the screen, like this!
-
-![A screen recording showing numbers being printed to the browser console when the page is clicked](https://cloud-3tm8q0oue.vercel.app/0screen_recording_2020-11-20_at_9.53.44_pm.gif)
+Now let's test what we've done so far. Open your application in a new tab, right-click on the screen, and hit inspect element, then click Console. Now, you should be able to see the `count` variable get printed to our console every time we click on the screen!
 
 We're making progress - but now we need to figure out how to get the variable to show up on the page. Let's add an `<h1>` element to show our number. Insert this line right above your `<h4>` tag:
 
