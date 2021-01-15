@@ -94,3 +94,16 @@ import (
 )
 ```
 
+These are all the Go packages we will be using in our program. Go complains about unused imports, so while testing code if you get an error about an unused import, just comment the import out. (Most IDEs will automatically import packages for you, so if your IDE does it, you don't need to stress about imports.)
+
+- `bufio` handles reading and writing, which we'll need because we'll be writing and reading over the internet
+- `errors` lets us make errors
+- `fmt` helps with printing and formatting
+- `io` is also related to reading and writing
+- Guess what `net` does! It does internet stuff! Didn't see that coming, did you? We use it for accessing the internet and communicating.
+- `os` does stuff related to arguments, files, running commands (we'll need to do this) and a whole lot of other os-related stuff.
+- `os/exec` will let us run commands (it's part of the `os` package)
+- We only use `runtime` for one thing: to find out what os the program is running on so that we can change the commands we run accordingly
+- `strconv` let's us convert from strings to other types and from other types to strings
+- `time` will let us stop the program for some time (we'll use it to wait between clipboard checks.)
+
