@@ -313,12 +313,14 @@ We turn the `state` to true for displaying a single random number.
 
 Hit the `run simulation` button.
 
-We are all set to play a game that uses a die.
+Nice! We're all set!
 
-In case you accidentally missed a line of code, here's the final one code program.
+<details>
+
+<summary>Here's the final code:</summary>
 
 ```c
-int num[10][7]= {
+int num[10][7] = {
   {0,0,0,1,0,0,0},
   {1,1,0,1,1,1,0},
   {0,0,1,0,1,0,0},
@@ -389,13 +391,15 @@ void loop()
 }
 ```
 
-Now you will find a random number being displayed whenever you press the push button(i.e., rolling a die). That's it for this workshop. Enjoy your next board game.
+</details>
+
+Now you will find a random number being displayed whenever you press the push button (i.e., rolling a die).
 
 ![enjoy](https://cloud-6vthzzaru.vercel.app/2enjoy.gif)
 
 ## Next Steps
 
-Now that you know about Seven segment display go wild with it. Here are some other projects to inspire you:
+Now that you know about Seven segment display, go wild with it! Here are some other projects to inspire you:
 
 * [Simple Counter](https://www.tinkercad.com/things/jzkwgsMjMeA)
 * [4 digit Seven segment LED display](https://www.tinkercad.com/things/27k65HnoDAQ)
