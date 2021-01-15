@@ -1,8 +1,6 @@
-<p ></p>
-
 By Hack Club staff. 2015
 
-* * *
+---
 
 Most high schools require you to register your club with the student council or school administration before having your first meeting.
 
