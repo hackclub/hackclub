@@ -7,13 +7,17 @@ img: 'https://cloud-a2dkhe77f.vercel.app/0screen_shot_2020-12-26_at_12.20.26_am.
 
 # Build your own clicker game with React
 
-In this workshop, we'll be building a clicker game! By the end of this workshop, you'll have your own game like this one and learn more about React along the way. Here's a [live demo](https://finished-clicker-game.jasonantwiappah.repl.co/) of what we'll create. Here is the final code you can reference if needed: [https://repl.it/@JasonAntwiAppah/finished-clicker-game#src/App.js](https://repl.it/@JasonAntwiAppah/finished-clicker-game#src/App.js) 
+In this workshop, we'll be building a clicker game! By the end of this workshop, you'll have your own game like this one and learn more about React along the way.
+
+[Live demo](https://finished-clicker-game.jasonantwiappah.repl.co/)
+<br>
+[Final code](https://repl.it/@JasonAntwiAppah/finished-clicker-game#src/App.js) 
 
 ![A screenshot of a page with a red background and a number in the center](https://cloud-hr9ez7m8r.vercel.app/0clicker.gif)
 
 ## Getting started
 
-We'll be using [Repl.it](http://repl.it) to write our code. Let's get started by opening the [starter repl here](https://repl.it/@JasonAntwiAppah/clicker-game-starter), and pressing the 'Fork' button at the top of the screen. Then go ahead and hit 'Run', and you should see something like this. Don't worry if you see any warnings in the console - we'll fix that later.
+We'll be using [Repl.it](http://repl.it) to write our code. Get started by opening the [starter repl here](https://repl.it/@JasonAntwiAppah/clicker-game-starter), and pressing the 'Fork' button at the top of the screen. Then go ahead and hit 'Run', and you should see something like this. Don't worry if you see any warnings in the console - we'll fix that later.
 
 ![A screenshot of the clicker game project opened in the repl.it editor](https://cloud-jo30cv8wy.vercel.app/0untitled.png)
 
@@ -21,9 +25,14 @@ If you see a red screen with some white text in the center, you're good to go! R
 
 ## Moving on!
 
-Now let's take a look at the files we already have.  In the root of our repl, we have `package.json` and `yarn.lock` - these 2 files list all the packages that our project needs to function, including React. Next, the `public` folder contains the HTML file we will be rendering our game in, favicons (the little icons at the top of each browser tab), and other files, but for now we won't need to poke in there. Let's look at the files in `src`. `serviceWorker.js` gives us access to a service worker, which lets us use features like push notifications and offline support, but we can leave this file alone since we won't be using any of those features in this workshop. If you want to learn more about service workers, check out this link from [Google's Web Fundamentals site](https://developers.google.com/web/fundamentals/primers/service-workers).
+Now let's take a look at the files we already have. 
 
-`App.css` and `index.css` are CSS files - there, we can change the styling of the pages. Most of our styling is in `App.css`. Then, we have `App.js`. This is where the magic really happens - here is where we'll be building our game. Finally, we have `index.js`. This is where all the pieces come together to render our game in the HTML file.  
+- In the root of our repl, we have `package.json` and `yarn.lock` - these 2 files list all the packages that our project needs to function, including React.
+- Next, the `public` folder contains the HTML file we will be rendering our game in, favicons (the little icons at the top of each browser tab), and other files, but for now we won't need to poke in there.
+- Let's look at the files in `src`. `serviceWorker.js` gives us access to a service worker, which lets us use features like push notifications and offline support, but we can leave this file alone since we won't be using any of those features in this workshop. If you want to learn more about service workers, check out this link from [Google's Web Fundamentals site](https://developers.google.com/web/fundamentals/primers/service-workers).
+- `App.css` and `index.css` are CSS files - there, we can change the styling of the pages. Most of our styling is in `App.css`.
+- Then, we have `App.js`. This is where the magic really happens - here is where we'll be building our game.
+- Finally, we have `index.js`. This is where all the pieces come together to render our game in the HTML file.  
 
 Let's hop into `App.js`. In the end, we need to be able to count many times the screen gets clicked, see how many points we have accumulated, and be able to reset our points by pressing on our keyboard. To keep track of the clicks, let's make a `count` variable and add an `onClick` handler to the main `<div>` element, like so:
 
@@ -75,6 +84,10 @@ console.log(variable) // prints "different value"
 
 It's totally fine if that didn't make any sense. Let's look at another example before we use this hook in our code. If you want, you can run this example in your repl - just make sure to undo the changes when you're done.
 
+<details>
+
+<summary>Another example of a React Hook</summary>
+
 ```jsx
 // In addition to importing React, we also need to import useState. 
 // Without doing this, our game won't be able to use useState at all!
@@ -113,6 +126,8 @@ function App() {
 export default App;
 ```
 
+</details>
+
 Now let's try this in our own code!
 
 At the beginning of our `App()` component, before the `return` statement, replace this...
@@ -131,9 +146,9 @@ This new line initializes a variable named `count` and sets its initial value to
 
 ```jsx
 <div onClick={() => {
-            setCount(count+1)
-            console.log(count)
-        }} className="App">
+    setCount(count+1)
+    console.log(count)
+}} className="App">
 ```
 
 Now let's see if everything works!
@@ -148,7 +163,7 @@ document.addEventListener("keydown", () => {setCount(0)}, false);
 
 Basically, this will use our `setCount` function to set `count` to 0 every time the browser detects that a key has been pressed. Let's be sure everything works! 
 
-![A screen recording showing the page functioning as intended](https://cloud-9s0sh382z.vercel.app/0screen_recording_2020-11-24_at_5.58.40_pm.gif)
+If you run your repl now, you should see it working as intended!
 
 ## Anddd... we're done!
 
