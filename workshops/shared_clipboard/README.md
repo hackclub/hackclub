@@ -190,3 +190,5 @@ if len(os.Args) > 3 {
     return
 }
 ```
+
+`os.Args` is a slice (which is like an array but the length can change) that stores arguments supplied by the user on the command line.
