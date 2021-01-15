@@ -1,8 +1,6 @@
-<p ></p>
-
 By Chaleb Pommells. 15 Aug 2019
 
-* * *
+---
 
 Let me introduce myself first, my name is Chaleb Pommells. I am the Program Director of We Code 2 a CS program run out of my church that I started. In this program we ended up raising $8,000 in grant money and here's what I did with it.
 
@@ -22,6 +20,6 @@ Wait so Chaleb you just completely abandoned those kids and let them do whatever
 
 So I guess this is it. If you guys have questions or comments or have a working example of this system of your own feel free to DM me in Slack at @Chaleb. Thanks for reading!
 
-* * *
+---
 
 _Edited by @megan._
