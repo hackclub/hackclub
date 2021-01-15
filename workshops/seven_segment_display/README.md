@@ -176,7 +176,7 @@ Let's start coding, which our circuit requires.
 As we saw in the table earlier, this code written at the bottom is based on that one. `1` means `ON` and `0` means `OFF`.
 
 ```c
-int num[10][7]={
+int num[10][7]= {
   {0,0,0,1,0,0,0},
   {1,1,0,1,1,1,0},
   {0,0,1,0,1,0,0},
@@ -318,17 +318,18 @@ We are all set to play a game that uses a die.
 In case you accidentally missed a line of code, here's the final one code program.
 
 ```c
-int num[10][7]={ {0,0,0,1,0,0,0},
-                {1,1,0,1,1,1,0},
-                {0,0,1,0,1,0,0},
-                {1,0,0,0,1,0,0},
-                {1,1,0,0,0,1,0},
-                {1,0,0,0,0,0,1},
-                {0,0,0,0,0,1,1},
-                {1,1,0,1,1,0,0},
-                {0,0,0,0,0,0,0},
-                {1,0,0,0,0,0,0}
-          };
+int num[10][7]= {
+  {0,0,0,1,0,0,0},
+  {1,1,0,1,1,1,0},
+  {0,0,1,0,1,0,0},
+  {1,0,0,0,1,0,0},
+  {1,1,0,0,0,1,0},
+  {1,0,0,0,0,0,1},
+  {0,0,0,0,0,1,1},
+  {1,1,0,1,1,0,0},
+  {0,0,0,0,0,0,0},
+  {1,0,0,0,0,0,0}
+};
 
 long r_num;    
 int roll = 12;           
