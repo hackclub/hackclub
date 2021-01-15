@@ -160,7 +160,7 @@ On the `model-viewer` we set some properties, here are what they each do:
 - `loading` Loads the model immediatly (since it is "eager")
 - `id` sets an id that we can use to access it from the JS and control its styling in the CSS
 
-You can learn about more properties of the model-viewer on their [documentation](https://modelviewer.dev/docs/).- quick-look-browsers --
+You can learn about more properties of the model-viewer on their [documentation](https://modelviewer.dev/docs/).
 
 Above this, we can have some buttons which can be used to switch models. In addition, we will make the function `switchModel` used in the `onclick` when we work on the javascript.
 
@@ -173,7 +173,7 @@ Above this, we can have some buttons which can be used to switch models. In addi
 
 ## A bit of styling
 
-Inside the styles.css file, we can add a bit of styling to make our site look better. First, we can tell our modal viewer to use the full screen and give it a background color.
+Inside the `style.css` file, we can add a bit of styling to make our site look better. First, we can tell our modal viewer to use the full screen and give it a background color.
 
 ```css
 #modal-viewer {
@@ -191,7 +191,7 @@ We can also give the buttons some margins so they are a bit spread out.
 }
 ```
 
-## Connecting EchoAR models to the website using Javascript
+## Connecting EchoAR models to the website using JavaScript
 
 First, we want to get the modal-viewer element from the [DOM (Document Object Model) Document](https://www.w3schools.com/js/js_htmldom_document.asp) and put it into a variable so that we can change the sources of the modal viewer.
 
@@ -235,7 +235,7 @@ function switchModel(model) {
 }
 ```
 
-Finally, we can set a default model by calling the `switchModel` function and specifying our default model
+Finally, we can set a default model by calling the `switchModel` function and specifying our default model.
 
 ```javascript
 switchModel('car')
@@ -257,7 +257,7 @@ Then click Create New Design. Here I created a simple box model. You can make an
 
 ![Example TinkerCAD Model](https://cloud-7a0hegen9.vercel.app/0unknown.png)
 
-After your done with your model click the export button on the top right.
+After you're done with your model click the export button on the top right.
 
 ![Export Button Image](https://cloud-kz5o1m29o.vercel.app/0unknown.png)
 
