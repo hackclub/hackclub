@@ -2,7 +2,7 @@
 name: 'Hacking Kahoot'
 description: 'A learning activity focused around the Kahoot API'
 author: '@sampoder'
-img: 'https://cloud-gl0z7ytn9.vercel.app/0screenshot_2020-12-10_at_9.49.09_pm.png'
+img: 'https://cloud-h0ul1djmv.vercel.app/0image.png'
 ---
 
 Hey! This is an interactive activity for leaders to run with their clubs. 
