@@ -439,7 +439,7 @@ For now, let's display our list using the `<h1>` tag but later, we will create a
 ```jsx
 return (
   <div className="todo-list">
-    {todoList ? todoList.map((todo) => <h1> {todo.task}</h1>) : null}
+    {todoList ? todoList.map((todo) => <h1> {todo.task} </h1>) : null}
   </div>
 )
 ```
