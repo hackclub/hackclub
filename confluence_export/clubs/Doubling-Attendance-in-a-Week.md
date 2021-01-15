@@ -1,14 +1,14 @@
-<p ></p>
-
 By Dina Elhanan (@digitaldina), posted originally in #leaders. 30 Jul 2019
 
-* * *
+---
 
 Hey everyone! I wanted to share something with you all.
 
 Below, you can see a before and an after just one **week** between two of my Hack Club meetings.
 
-![](https://hackclub.atlassian.net/wiki/download/attachments/327725/image-20190730-192355.png?api=v2)![](https://hackclub.atlassian.net/wiki/download/attachments/327725/image-20190730-192406.png?api=v2)
+Before: ![](https://cloud-ovstjg39g.vercel.app/1image-20190730-192355.png)
+
+After: ![](https://cloud-ovstjg39g.vercel.app/0image-20190730-192406.png)
 
 Here's something that helped me **increase member count from 8 to 14 in a week.**
 
@@ -38,6 +38,6 @@ By the way, here's what the **handouts** for the event looked like. I cut them u
 
 Link to the handouts: [https://docs.google.com/document/d/1C3GMC4kvxmCCtI-llNLEWxN1PpCnY6EdNOBsCatW9-c/edit?usp=sharing](https://docs.google.com/document/d/1C3GMC4kvxmCCtI-llNLEWxN1PpCnY6EdNOBsCatW9-c/edit?usp=sharing)
 
-* * *
+---
 
 _Edited by @megan._
