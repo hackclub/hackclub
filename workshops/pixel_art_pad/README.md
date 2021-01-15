@@ -19,6 +19,8 @@ Here's what it'll look like:
 [final_code]: https://repl.it/@19EUCS071KUMARA/Pixel-Art-Pad
 [repl_it]: https://repl.it
 
+This workshop will take about 45 minutes to complete.
+
 ## Part 1: A Disclaimer
 
 Before we begin, an important disclaimer. Listen up, **especially if you're new to coding!**
