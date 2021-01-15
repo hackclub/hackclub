@@ -1,6 +1,6 @@
 ---
 name: 'Shared Clipboard'
-description: 'Sync clipboards across devices, so you can copy from one and paste on another'
+description: 'Sync clipboards across devices using Go'
 author: '@quackduck'
 img: 'https://cloud-crayumbmk.vercel.app/0screen_shot_2020-12-28_at_9.34.51_pm.jpg'
 ---
@@ -13,9 +13,7 @@ Then, you wonder - "What if, what if I could directly copy it to the other compu
 
 In this workshop, we'll make a program that can share clipboards between computers, so you can copy on one and paste on the others.
 
-![Your mouth drops](https://media.giphy.com/media/L3QT1L99qG7M6gFRpM/giphy.gif)
-
-*^ You when it actually works*
+*This workshop will take about an hour and 15 minutes to complete.*
 
 ## Requirements
 
@@ -24,13 +22,14 @@ You need:
 - A Windows, macOS or Linux computer (you *could* also use Termux on an Android device but that might be hard)
 - **Basic Go knowledge** (Get it from the official tour at [tour.golang.org](https://tour.golang.org) or from this ***excellent*** resource - [gobyexample.com](https://gobyexample.com))
 
+*Note: unlike most workshops, this workshop will require you to download things and use a local development environment. Make sure you have access to a computer that allows you to do these things (most school-issued computers don't, sadly). This workshop is not recommended for beginners.*
+
 ![End of list.](https://media.giphy.com/media/j529ybb5ZxD9rLFi8a/giphy.gif)
 
 ## Setup
 
 - Install the Go programming language so we can write our program.
    - Head over to [golang.org/doc/install](https://golang.org/doc/install) to install Go
-  
 - Install clipboard utilities so we can control the clipboard from code
 
 (Just skip to instructions for your OS)
@@ -42,7 +41,9 @@ macOS already has clipboard utilities pre-installed! Try copying something (Here
 ```shell
 pbpaste
 ```
-macOS has `pbcopy` for setting the clipboard
+in your terminal.
+
+macOS also has `pbcopy` for setting the clipboard
 
 ### Setup on Windows
 
@@ -70,7 +71,9 @@ pkg install termux-api
 
 ## Building it!
 
-Open up your favorite editor (I recommend VS Code and GoLand), make a new file titled `myclip.go` (you can name it whatever you want, really) and add in
+Open up a new project in your favorite editor (I recommend [VS Code](https://code.visualstudio.com/download) or [GoLand](https://www.jetbrains.com/go/download/)).
+
+Once you have a new project set up, make a new file titled `myclip.go` (you can name it whatever you want, really) and add in:
 
 ```go
 package main
@@ -105,7 +108,7 @@ These are all the Go packages we will be using in our program. Go complains abou
 
 ### Variables
 
-Add this in:
+Under all the imports, add this:
 ```go
 var (
     
@@ -122,6 +125,7 @@ secondsBetweenChecksForClipChange = 1
 ```
 
 `helpMsg` is one big long string that we'll print out if the user needs help. Add this in the brackets too:
+
 ```go
 helpMsg = `myclip - Shared Clipboard
 With myclip, you can copy from one device and paste on another.
@@ -135,6 +139,7 @@ Examples:
 Running just ` + "`myclip`" + ` will start a new clipboard.
 It will also provide an address with which you can connect to the same clipboard with another device.`
 ```
+
 In Go we can define multi-line strings using backticks.
 
 We'll store client addresses in `listOfClients` so that we can send the clipboard to all of them:
@@ -188,6 +193,7 @@ if len(os.Args) > 3 {
 `os.Args` is a slice (which is like an array but the length can change) that stores arguments supplied by the user on the command line.
 
 <details>
+
 <summary>What are arguments?</summary>
 
 >To refresh your memory, an argument here is all the stuff you type after the command name:
@@ -195,6 +201,7 @@ if len(os.Args) > 3 {
 >ls myDir someFile lol
 >```
 >&nbsp; In this example, `myDir`, `someFile` and `lol` are the arguments to `ls`
+
 </details>
 
 Because the `--debug` option can be used with any other option, the max number of arguments we should get is 2. If we get more than 2, we'll print out an error and exit.
@@ -246,7 +253,7 @@ if len(os.Args) == 2 { // has exactly one argument
     return
 }
 ```
-Because of the quirk we discussed earlier, len(os.Args) will be 2 if there's one argument supplied. We'll use this argument as the address to connect to in another function. Don't worry if you see a lot of errors about undefined stuff.
+Because of the quirk we discussed earlier, `len(os.Args)` will be 2 if there's one argument supplied. We'll use this argument as the address to connect to in another function. Don't worry if you see a lot of errors about undefined stuff.
 
 Add in:
 ```go
@@ -285,8 +292,6 @@ func argsHaveOption(long string, short string) (hasOption bool, foundAt int) {
     return false, 0
 }
 ```
-
-![Wait wait wait.](https://media.tenor.com/images/b30c80d59700e5a1c577487775339b66/tenor.gif)
 
 What does it do?
 
@@ -733,9 +738,9 @@ func getLocalClip() string {
 ```
 Define a few variables:
 ```go
-    var out []byte
-    var err error
-    var cmd *exec.Cmd
+var out []byte
+var err error
+var cmd *exec.Cmd
 ```
 `out` will hold the ouput of the commands we run.  
 `err` will hold any errors we encounter
@@ -776,14 +781,14 @@ For example, if we have `xclip` installed on a linux system, `exec.LookPath()` w
 If we don't find any of the utilities installed, we make a new error and shutdown the entire program. (`os.Exit(2)` will exit with status code 2) 
 
 ```go
-    if out, err = cmd.Output(); err != nil {
-        handleError(err)
-        return "An error occurred wile getting the local clipboard"
-    }
-    if runtime.GOOS == "windows" {
-        return strings.TrimSuffix(string(out), "\r\n") // powershell's get-clipboard adds a windows newline to the end for some reason
-    }
-    return string(out)
+if out, err = cmd.Output(); err != nil {
+    handleError(err)
+    return "An error occurred wile getting the local clipboard"
+}
+if runtime.GOOS == "windows" {
+    return strings.TrimSuffix(string(out), "\r\n") // powershell's get-clipboard adds a windows newline to the end for some reason
+}
+return string(out)
 ```
 `cmd.Output()` then runs the command and returns the output as a slice of bytes (the output will be the clipboard because that's what the command does!). If we find that there is an error, we handle the error and then return "An error occurred wile getting the local clipboard" as the clipboard because if we have to return something, why not make it descriptive.
 
