@@ -1,6 +1,6 @@
 ---
 name: Speech Recognition
-description: Create a speech recognition app
+description: Create a speech recognition app with JavaScript
 author: '@wollygfx'
 img: 'https://cloud-ekrhqwq4i.vercel.app/0image.png'
 ---
@@ -54,6 +54,7 @@ Here's what your HTML body will look like once you've done this:
 - The `<script>` element is linking our JavaScript file with our HTML document.   
 
 This is the result of the code above:
+
 ![HTML](https://cloud-hz3x1xvwh.vercel.app/0image.png)
 
 Nice! This is all the HTML we need to write. Now, let's add some styling.
@@ -177,7 +178,7 @@ Now, we'll create an event that shows a message when the speech recognition ends
 
 ```js
 recognition.onend = (event) => {
- console.log('the microphone stops listening');
+  console.log('the microphone stops listening');
 }
 ```
 
@@ -187,8 +188,8 @@ recognition.onend = (event) => {
 And we'll create another event that shows us when an error occurs.
 
 ```js
-recognition.onerror = (event) =>{
- console.log(event.error)
+recognition.onerror = (event) => {
+  console.log(event.error)
 }
 ```
 
@@ -198,14 +199,14 @@ recognition.onerror = (event) =>{
 Now, we'll make the buttons work when they are clicked.
 
 ```js
-btnStartRecord.addEventListener('click',() => {
- recognition.start();
+btnStartRecord.addEventListener('click', () => {
+  recognition.start();
 });
-btnStopRecord.addEventListener('click',() => {
- recognition.abort();
+btnStopRecord.addEventListener('click', () => {
+  recognition.abort();
 });
-btnPlayText.addEventListener('click',() => {
- readtext(text.value);
+btnPlayText.addEventListener('click', () => {
+  readtext(text.value);
 });
 ```
 
@@ -217,13 +218,13 @@ btnPlayText.addEventListener('click',() => {
 The last thing we'll do is to create a function that reads the text gotten from the speech recognition app.
 
 ```js
-function readtext(text){
- const speech = new SpeechSynthesisUtterance();
- speech.text = text;
- speech.volume = 1;
- speech.rate = 1;
- speech.pitch = 1;
- window.speechSynthesis.speak(speech);
+function readtext(text) {
+  const speech = new SpeechSynthesisUtterance();
+  speech.text = text;
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  window.speechSynthesis.speak(speech);
 }
 ```
 
@@ -259,38 +260,38 @@ recognition.interimResults = false;
 
 recognition.onresult = (event) => {
   const results = event.results;
-	const sentence = results[results.length - 1] [0].transcript;
-	text.value += sentence;
+  const sentence = results[results.length - 1] [0].transcript;
+  text.value += sentence;
 }
 
 recognition.onend = (event) => {
-	console.log('the microphone stops listening');
+  console.log('the microphone stops listening');
 }
 
-recognition.onerror = (event) =>{
-	console.log(event.error)
+recognition.onerror = (event) => {
+  console.log(event.error)
 }
 
 btnStartRecord.addEventListener('click',() => {
-	recognition.start();
+  recognition.start();
 });
 
 btnStopRecord.addEventListener('click',() => {
-	recognition.abort();
+  recognition.abort();
 })
 
 btnPlayText.addEventListener('click',() => {
-	readtext(text.value);
+  readtext(text.value);
 });
 
-function readtext(text){
-	const speech = new SpeechSynthesisUtterance();
-	speech.text = text;
-	speech.volume = 1;
-	speech.rate = 1;
-	speech.pitch = 1;
+function readtext(text) {
+  const speech = new SpeechSynthesisUtterance();
+  speech.text = text;
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
 
-	window.speechSynthesis.speak(speech);
+  window.speechSynthesis.speak(speech);
 }
 ```
 
