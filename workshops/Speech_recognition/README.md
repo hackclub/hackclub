@@ -163,7 +163,7 @@ recognition.interimResults = false;
     
 The next thing we want to do is return the results that the speech recognition app got:
 
- ```js
+```js
 recognition.onresult = (event) => {
   const results = event.results;
   const sentence = results[results.length - 1][0].transcript;
