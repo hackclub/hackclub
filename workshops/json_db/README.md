@@ -18,20 +18,14 @@ Before starting this workshop, you should ideally have knowledge of:
 
 # Getting Started
 
-To bootstrap and run our project, we'll need to head over to [repl.it](https://repl.it) and create a new Node project!
+We're going to be using [repl.it](https://repl.it), a free, online code editor, to write our code. Create a new Node.js project by visiting [repl.it/languages/nodejs](https://repl.it/languages/nodejs).
 
-![Create a new project](https://cloud-2m3vf7nmm.vercel.app/4new-project.png)
-
-Next, select the `Node.js` option under the `language` dropdown. You'll be redirected to a new tab in which we'll build our database! To get started, we'll need to
+To get started, we'll need to
 
 1. Initialize an `npm` project
-2. Install the dependencies associated with it. In this case, we'll need both `express` (a web server framework) and `cors` (an express middleware).
+2. Install the dependencies associated with it. In this case, we'll need `express` (a web server framework) and `cors` (an express middleware).
 
-To do this, head over to the `Shell` tab and run the following:
-
-![Initialize npm and install dependencies](https://cloud-2m3vf7nmm.vercel.app/1npm-install-deps.png)
-
-You can safely ignore the warnings, they're not important to our project! Let's recap what we just did:
+To do this, head over to the `Shell` tab and run:
 
 ```shell
 # Initialize an npm project in the current directory. The --yes "flag" accepts default values when prompted.
@@ -40,6 +34,10 @@ npm init --yes
 # Install (shorthand: i) both the express and cors packages for our project
 npm [i/install] express cors
 ```
+
+![Initialize npm and install dependencies](https://cloud-2m3vf7nmm.vercel.app/1npm-install-deps.png)
+
+You can safely ignore the warnings, they're not important to our project!
 
 Next, let's write out a basic web server. Here's what that would look like with express:
 
@@ -57,12 +55,12 @@ const PORT = process.env.PORT || 3000
 
 // When someone sends a GET request to `/`, respond with "Hello World"!
 app.get('/', (req, res) => {
-	res.send('hello world!')
+  res.send('hello world!')
 })
 
 // Start listening on the port we specified earlier
 app.listen(PORT, () => {
-	console.log(`Listening on ${PORT}`)
+  console.log(`Listening on ${PORT}`)
 })
 ```
 
@@ -70,11 +68,15 @@ Now, let's run this! Hit the big green run button on the top of your editor to d
 
 ![Run program](https://cloud-2m3vf7nmm.vercel.app/5run.png)
 
-Awesome! We'll head over to [hoppscotch](https://hoppscotch.io/) to finish up this basic server. Hoppscotch is an awesome website to send HTTP requests to a remote server! Let's sent a GET request the root (`/`) of our server:
+Awesome! We'll head over to [hoppscotch](https://hoppscotch.io/) to finish up this basic server. Hoppscotch is an awesome website to send HTTP requests to a remote server! Let's sent a GET request the root (`/`) of our server.
+
+Copy the URL of your repl (in the format: `https://PROJECTNAME.YOURUSERNAME.repl.co`) and set the request type to `GET`. The screenshow below shows what this step looks like for me:
+
+In the screenshot below, I've copied in the URL of my REPL (in the format: `https://<PROJECT_NAME>.<USERNAME>.repl.co`) and set the request type to GET.
 
 ![Request](https://cloud-2m3vf7nmm.vercel.app/3request.png)
 
-In the screenshot above, I've copied in the URL of my REPL (in the format: `https://<PROJECT_NAME>.<USERNAME>.repl.co`) and set the request type to GET. Finally, hit `Send`! You should get a plain response like so:
+ Finally, hit `Send`! You should get a plain response like so:
 
 ```
 hello world!
@@ -82,15 +84,12 @@ hello world!
 
 Alright, that was probably a lot to take in. Let's backtrack a little and answer a couple questions!
 
-Q: Why did we install the `cors` package?
+- Q: Why did we install the `cors` package?
+  - A: CORS, also known as Cross-Origin Resource Sharing, is a method in which you may define external hosts (called origins) from which the server should permit resources. In this case, since we're requesting the data from `hoppscotch`, we'll need to add **middleware** for `express` to allow it to respond correctly.
+- Q: What's middleware?
+  - A: Typically, middleware is software that you can embed into some sort of pre-existing application and instruct it to execute before or after it performs an operation. In our case, we're using CORS middleware to set the correct HTTP headers before we send responses.
 
-A: CORS, also known as Cross-Origin Resource Sharing, is a method in which you may define external hosts (called origins) from which the server should permit resources. In this case, since we're requesting the data from `hoppscotch`, we'll need to add **middleware** for `express` to allow it to respond correctly.
-
-Q: What's middleware?
-
-A: Typically, middleware is software that you can embed into some sort of pre-existing application and instruct it to execute before or after it performs an operation. In our case, we're using CORS middleware to set the correct HTTP headers before we send responses.
-
-Cool! Now, let's start working on the core of our database-- the method with which we'll alter it. Before we get started, it's worth mentioning that we'll be working with a JSON file to serialize our data to. Effectively, we're using JSON as a format to translate between raw text stored in a file and our code because JavaScript has some really nice built-in abstractions for it. We're also going to be utilizing asynchronous functions from JavaScript's standard `fs` module. What does asynchronous mean? Let's take a look!
+Cool! Now, let's start working on the core of our database—the method with which we'll alter it. Before we get started, it's worth mentioning that we'll be working with a JSON file to serialize our data to. Effectively, we're using JSON as a format to translate between raw text stored in a file and our code because JavaScript has some really nice built-in abstractions for it. We're also going to be utilizing asynchronous functions from JavaScript's standard `fs` module. What does asynchronous mean? Let's take a look!
 
 Node.js is a single-threaded event-loop JavaScript runtime. Essentially, this allows it to perform non-blocking I/O by abstracting asynchronous operations with Promises. You can spawn a specific promise and attach callbacks (functions) to it and execute those once the operation has been completed. For example:
 
@@ -98,8 +97,8 @@ Node.js is a single-threaded event-loop JavaScript runtime. Essentially, this al
 const fs = require('fs')
 
 fs.readFile('file', function (err, data) {
-	if (err) console.error(err)
-	console.log(data)
+  if (err) console.error(err)
+  console.log(data)
 })
 ```
 
@@ -109,14 +108,16 @@ In this example, we're reading the file named `file` and execution the specified
 const fs = require('fs').promises
 
 async function doCoolStuff() {
-	const data = await fs.readFile('file')
-	return data
+  const data = await fs.readFile('file')
+  return data
 }
 
 doCoolStuff().then(console.log).catch(console.error)
 ```
 
-We're importing the `promises` module from within `fs` because it contains promisified methods for `fs`'s methods already coded for us! Here, the `await` keyword pauses the execution of its parent `async` function, `doCoolStuff`, until the promise has been fulfilled. Then, we return the `data` variable. Finally, when we execute the function, `console.log` its return value with `.then()` and catch and log any possibe errors with `.catch()`. Now... this is all super cool, but how can it be applied to our database? Let's write some basic functions!
+We're importing the `promises` module from within `fs` because it contains promisified methods for `fs`'s methods already coded for us! Here, the `await` keyword pauses the execution of its parent `async` function, `doCoolStuff`, until the promise has been fulfilled. Then, we return the `data` variable. Finally, when we execute the function, `console.log` its return value with `.then()` and catch and log any possibe errors with `.catch()`.
+
+Now... this is all super cool, but how can it be applied to our database? Let's write some basic functions!
 
 We'll need to create a new file, `db.js`, to do so. In this file, let's add some code to get all the entries in our JSON file:
 
@@ -127,11 +128,11 @@ const fs = require('fs').promises
 const STORE = './store.json'
 
 async function getAll(_req) {
-	// Read the file into a variable (and block function execution until it's done)
-	const data = await fs.readFile(STORE)
+  // Read the file into a variable (and block function execution until it's done)
+  const data = await fs.readFile(STORE)
 
-	// fs.readFile returns a Buffer by default. We won't be going over exactly what a Buffer is, but we need to call the .toString() method to return the Buffer as a string
-	return data.toString()
+  // fs.readFile returns a Buffer by default. We won't be going over exactly what a Buffer is, but we need to call the .toString() method to return the Buffer as a string
+  return data.toString()
 }
 ```
 
@@ -139,7 +140,7 @@ Here, we're importing `fs.promises` again and creating a new function called `ge
 
 ```javascript
 module.exports = {
-	getAll // shorthand for getAll: getAll
+  getAll // shorthand for getAll: getAll
 }
 ```
 
@@ -154,16 +155,16 @@ We'll implement a little handler function to make adding more endpoints easier a
 ```javascript
 // Handle any endpoint given a request, response handler, and a method to call (from `db`)
 async function handle(req, res, method) {
-	// Log any request
-	console.log('Recieved connection!')
-	try {
-		// Try to call our async function (specified in `method`). If this fails, jump over to the `catch` block and send an error
-		const onSuccess = await method(req)
-		// If it works, send a successful response with our data!
-		res.send({ status: 'success', response: onSuccess })
-	} catch (e) {
-		res.send({ status: 'fail', error: e.message })
-	}
+  // Log any request
+  console.log('Recieved connection!')
+  try {
+    // Try to call our async function (specified in `method`). If this fails, jump over to the `catch` block and send an error
+    const onSuccess = await method(req)
+    // If it works, send a successful response with our data!
+    res.send({ status: 'success', response: onSuccess })
+  } catch (e) {
+    res.send({ status: 'fail', error: e.message })
+  }
 }
 ```
 
@@ -190,23 +191,23 @@ app.use(cors())
 const PORT = process.env.PORT || 3000
 // Handle any endpoint given a request, response handler, and a method to call (from `db`)
 async function handle(req, res, method) {
-	// Log any request
-	console.log('Recieved connection!')
-	try {
-		// Try to call our async function (specified in `method`). If this fails, jump over to the `catch` block and send an error
-		const onSuccess = await method(req)
-		// If it works, send a successful response with our data!
-		res.send({ status: 'success', response: onSuccess })
-	} catch (e) {
-		res.send({ status: 'fail', error: e.message })
-	}
+  // Log any request
+  console.log('Recieved connection!')
+  try {
+    // Try to call our async function (specified in `method`). If this fails, jump over to the `catch` block and send an error
+    const onSuccess = await method(req)
+    // If it works, send a successful response with our data!
+    res.send({ status: 'success', response: onSuccess })
+  } catch (e) {
+    res.send({ status: 'fail', error: e.message })
+  }
 }
 
 app.get('/getAll', (req, res) => handle(req, res, db.getAll))
 
 // Start listening on the port we specified earlier
 app.listen(PORT, () => {
-	console.log(`Listening on ${PORT}`)
+  console.log(`Listening on ${PORT}`)
 })
 ```
 
@@ -218,33 +219,33 @@ Perfect! Now, let's try to add an endpoint for setting a key in your database:
 
 ```javascript
 async function set(req) {
-	// extract the `key` and `value` properties from our request. express takes care of serializing our JSON request body to a JavaScript object with its built-in JSON middleware
-	const { key, value } = req.body
+  // extract the `key` and `value` properties from our request. express takes care of serializing our JSON request body to a JavaScript object with its built-in JSON middleware
+  const { key, value } = req.body
 
-	// Read our STORE
-	const file = await fs.readFile(STORE)
-	// Serialize, or parse, our JSON into an object
-	const object = JSON.parse(file)
+  // Read our STORE
+  const file = await fs.readFile(STORE)
+  // Serialize, or parse, our JSON into an object
+  const object = JSON.parse(file)
 
-	// Merge the new object with your specified key and value. The spread (...) notation essentially expands the object in place. Because objects cannot have duplicate keys, any pre-existing keys are overwritten
-	const newObject = {
-		...object,
-		// You must specify square brackets around [key] in order to actually use the variable "key" as a key rather than the string "key"
-		[key]: value
-	}
+  // Merge the new object with your specified key and value. The spread (...) notation essentially expands the object in place. Because objects cannot have duplicate keys, any pre-existing keys are overwritten
+  const newObject = {
+    ...object,
+    // You must specify square brackets around [key] in order to actually use the variable "key" as a key rather than the string "key"
+    [key]: value
+  }
 
-	// Write our new object to the store (serialize, or stringify it, before doing so)
-	await fs.writeFile(STORE, JSON.stringify(newObject))
+  // Write our new object to the store (serialize, or stringify it, before doing so)
+  await fs.writeFile(STORE, JSON.stringify(newObject))
 
-	// Return exactly what was given to us as a way of saying "it worked!"
-	return { [key]: value }
+  // Return exactly what was given to us as a way of saying "it worked!"
+  return { [key]: value }
 }
 
 // ...
 
 module.exports = {
-	// ...
-	set
+  // ...
+  set
 }
 ```
 
@@ -271,8 +272,8 @@ As you can see, we've set the HTTP request method to POST, added a body of:
 
 ```json
 {
-	"key": "test",
-	"value": "val"
+  "key": "test",
+  "value": "val"
 }
 ```
 
@@ -282,11 +283,11 @@ Now that we've got our GET and POST endpoints working, let's add one more to cle
 
 ```javascript
 async function clear() {
-	// Write an empty object to our file
-	await fs.writeFile(STORE, JSON.stringify({}))
+  // Write an empty object to our file
+  await fs.writeFile(STORE, JSON.stringify({}))
 
-	// Return the new contents of the file ("{}")
-	return await fs.readFile(STORE)
+  // Return the new contents of the file ("{}")
+  return await fs.readFile(STORE)
 }
 ```
 
@@ -294,8 +295,8 @@ You know the drill! Export it from the file:
 
 ```javascript
 module.exports = {
-	// ...,
-	clear
+  // ...,
+  clear
 }
 ```
 
