@@ -107,3 +107,20 @@ These are all the Go packages we will be using in our program. Go complains abou
 - `strconv` let's us convert from strings to other types and from other types to strings
 - `time` will let us stop the program for some time (we'll use it to wait between clipboard checks.)
 
+### Variables
+
+Under all the imports, add this:
+```go
+var (
+
+)
+```
+
+We're just defining a few global variables so that we can change them easily later on.
+
+We'll use `secondsBetweenChecksForClipChange` later on to decide the delay between checks for whether the clipboard changed. If it did change, we'll send the new one to the other devices connected over the internet.
+
+Add in this inside the `var` brackets:
+```go
+secondsBetweenChecksForClipChange = 1
+```
