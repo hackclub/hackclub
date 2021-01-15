@@ -73,3 +73,24 @@ pkg install termux-api
 ## Building it!
 
 Open up a new project in your favorite editor (I recommend [VS Code](https://code.visualstudio.com/download) or [GoLand](https://www.jetbrains.com/go/download/)).
+
+Once you have a new project set up, make a new file titled `myclip.go` (you can name it whatever you want, really) and add in:
+
+```go
+package main
+
+import (
+    "bufio"
+    "errors"
+    "fmt"
+    "io"
+    "net"
+    "os"
+    "os/exec"
+    "runtime"
+    "strconv"
+    "strings"
+    "time"
+)
+```
+
