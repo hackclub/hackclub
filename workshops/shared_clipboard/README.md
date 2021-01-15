@@ -201,7 +201,7 @@ if len(os.Args) > 3 {
 >```shell
 >ls myDir someFile lol
 >```
->&nbsp; In this example, `myDir`, `someFile` and `lol` are the arguments to `ls`
+>In this example, `myDir`, `someFile` and `lol` are the arguments to `ls`
 
 </details>
 
