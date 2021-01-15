@@ -1,7 +1,7 @@
 ---
 name: 'Clicker Game'
 description: 'Build your own clicker game using React!'
-author: '@Jason'
+author: '@jasonappah'
 img: 'https://cloud-a2dkhe77f.vercel.app/0screen_shot_2020-12-26_at_12.20.26_am.png'
 ---
 
