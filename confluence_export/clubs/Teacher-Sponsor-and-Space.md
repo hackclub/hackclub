@@ -1,8 +1,6 @@
-<p ></p>
-
 By Hack Club staff. 2015
 
-* * *
+---
 
 A good teacher sponsor is key to having access to regular space for club meetings and a good relationship with your school. Your sponsor is the person who will get you a classroom for after-school meetings. If things go wrong with the school administration, your sponsor will be your advocate. Choosing the wrong sponsor can be fatal to clubs, so give it careful thought.
 
