@@ -1,8 +1,6 @@
-<p ></p>
-
 By Hack Club staff in the archived leadership guide from 2015.
 
-* * *
+---
 
 We recommend having 2-3 people running the club. When choosing your team, consider close friends who you think have strong leadership skills. In fact, leadership skills are far more important than technical abilities. Great clubs have been started by leaders that have never coded before.
 
