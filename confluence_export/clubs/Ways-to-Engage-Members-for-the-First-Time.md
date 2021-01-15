@@ -1,16 +1,11 @@
-<p ></p>
-
 By Eureka Soriano (@Eureka). 30 Jul 2019
 
-* * *
-
-**Member Engagement**
-=====================
+---
+# Member Engagement
 
 Keeping members engaged is one of the most important attributes you can have in a club. It helps to retain members throughout the year and helps to make sure everyone is having a fun time!! Part of member engagement is creating a space where members are comfortable in participating, sharing, and talking. To do this you can ask icebreakers and play games that all members take part in either before, the middle, or after meetings. By creating a fun and friendly workspace, members will be encouraged to come to every/most meeting(s) and to share ideas about projects. They’ll also communicate better with their teammates which will make projects work smoother. You should also ask questions about the projects your members are working on. Ask about what they are doing with their website and what they want to make and what their goals are. You can also do positives at the end of your meetings where you share something positive you got out of the meeting or just share any highlights or shoutouts. They are also free to give feedback and constructive criticism.
 
-**Examples of icebreakers would be…**
--------------------------------------
+# Examples of icebreakers would be…
 
 “What color would you say the person to your right is and why?”
 
@@ -22,8 +17,7 @@ Keeping members engaged is one of the most important attributes you can have in 
 
 You should also encourage members to come up with checkout questions.
 
-**Examples of games…**
-----------------------
+# Examples of games…
 
 _Fortunately Unfortunately:_ Create a story. One person says fortunately… then the next person says unfortunately. Ex. Once upon a time San Francisco was invaded by robots. Fortunately there was a team of hack club members to help save the city. Unfortunately they were greatly outnumbered. Fortunately, they were all incredibly smart and secretly had hacking super-powers. Unfortunately....
 
