@@ -2,9 +2,8 @@
 name: 'Electronic Die'
 description: 'Create an electronic die using a seven segment LED display'
 author: '@giridhar7632'
+img: 'https://cloud-7mie21955.vercel.app/01final_circuit.png'
 ---
-
-# Building a Electronic Die using an Arduino and a Seven Segment Display
 
 Have you ever made a die using electronics? This workshop will create a virtual die that displays a random number between 1 and 6. You can use this project for your next board game.
 
