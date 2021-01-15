@@ -192,16 +192,3 @@ if len(os.Args) > 3 {
 ```
 
 `os.Args` is a slice (which is like an array but the length can change) that stores arguments supplied by the user on the command line.
-
-<details>
-
-<summary>What are arguments?</summary>
-
->To refresh your memory, an argument here is all the stuff you type after the command name:
->```shell
->ls myDir someFile lol
->```
->&nbsp; In this example, `myDir`, `someFile` and `lol` are the arguments to `ls`
-
-</details>
-
