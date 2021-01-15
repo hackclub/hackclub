@@ -200,14 +200,14 @@ Under the `Tile` constructor, but inside the `Tile` class, create a method calle
 
 ```java
 void Display()
-  { 
-    fill(color);
-    
-    if (!show) noStroke();
-    else stroke(180);
-    
-    rect(x * 20, y * 20, 20, 20);
-  }
+{ 
+  fill(color);
+
+  if (!show) noStroke();
+  else stroke(180);
+
+  rect(x * 20, y * 20, 20, 20);
+}
 ```
 
 This method uses some handy functions—`fill()`, `noStroke()`, `stroke()`, and `rect()`—from the Processing.js library to display a tile. As a general rule throughout this workshop, if you see a random function that you haven't previously written suddenly appear in the code, it's probably from Processing.js. I recommend having the [Processing.js documentation](https://www.khanacademy.org/computing/computer-programming/pjs-documentation) open in another tab so that you can find out what each function does if you're curious.
