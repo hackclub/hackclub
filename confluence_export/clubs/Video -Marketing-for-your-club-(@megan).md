@@ -1,36 +1,26 @@
-<p ></p>
-
 By Megan Cui (@megan). 06 Aug 2019
 
-* * *
+---
 
-Video Overview
-==============
+[Youtube link](https://youtu.be/j86_TxXIDwM)
 
-*   Marketing is one of the most important parts of preparing for your meetings, which is why this is a separate video from running your club meetings. If you haven't started your first meeting yet, watch this video first, and move on to the "running your first meeting" video.
-    
-*   By the end of this video, you should be well equipped to establish your own marketing strategies tailored for your own school. You should be ready to kick off your first (or next) meeting with high attendance!
-    
+# Video Overview
 
-Creating a narrative
-====================
+- Marketing is one of the most important parts of preparing for your meetings, which is why this is a separate video from running your club meetings. If you haven't started your first meeting yet, watch this video first, and move on to the "running your first meeting" video.
+- By the end of this video, you should be well equipped to establish your own marketing strategies tailored for your own school. You should be ready to kick off your first (or next) meeting with high attendance!
+
+# Creating a narrative
 
 In order to create an effective narrative, you should consider a few factors.
 
-1\. Average skill level of students in your school
---------------------------------------------------
+## 1\. Average skill level of students in your school
 
-*   General surrounding area
-    
-*   Existence and quality of CS courses
-    
-    *   If great CS education, make sure you tell students about how Hack Club will let them apply their learning to build incredible and impactful things
-        
-    *   If no CS education, tell them about all the amazing workshops that Hack Club has that are easy to get started in. Emphasize that your club will teach them to program even if they have NO experience, and you don't have to be good at STEM to be an amazing programmer
-        
+- General surrounding area
+- Existence and quality of CS courses
+  - If great CS education, make sure you tell students about how Hack Club will let them apply their learning to build incredible and impactful things
+  - If no CS education, tell them about all the amazing workshops that Hack Club has that are easy to get started in. Emphasize that your club will teach them to program even if they have NO experience, and you don't have to be good at STEM to be an amazing programmer
 
-2\. Competitors
----------------
+## 2\. Competitors
 
 You'll have to create a nuanced pitch based on the types of competitors you have.
 
@@ -38,61 +28,39 @@ You'll have to create a nuanced pitch based on the types of competitors you have
 
 Organizations like ACM, Robotics, and Girls Who Code.
 
-*   Your org is different because you're focused on building amazing things with code that impact others
-    
-*   Participating in these two orgs are not mutually exclusive, realize that these other orgs are really cool as well
-    
-*   Inclusive of all skill levels and genders at Hack Club — we'll teach you how to code from 0 experience
-    
-*   Over 300 clubs world wide and more than 4000 members
-    
-*   Run amazing events like free coding competitions called hackathons
-    
+- Your org is different because you're focused on building amazing things with code that impact others
+- Participating in these two orgs are not mutually exclusive, realize that these other orgs are really cool as well
+- Inclusive of all skill levels and genders at Hack Club — we'll teach you how to code from 0 experience
+- Over 300 clubs world wide and more than 4000 members
+- Run amazing events like free coding competitions called hackathons
 
 ### Competitive orgs
 
-*   Not mutually exclusive
-    
-*   You get to pursue things for your own sake
-    
-*   No pressure to be the best while developing important coding and potentially organizing skills
-    
-*   Uniquely likely to get development internship opportunities!
-    
-*   Just give it a shot. We'll make it worth it!
-    
+- Not mutually exclusive
+- You get to pursue things for your own sake
+- No pressure to be the best while developing important coding and potentially organizing skills
+- Uniquely likely to get development internship opportunities!
+- Just give it a shot. We'll make it worth it!
 
-3\. Your resources and opportunities
-------------------------------------
+## 3\. Your resources and opportunities
 
 If you have amazing resources, you should definitely let people know about them.
 
-*   Tons of free, amazingly awesome swag!
-    
-*   Connections with local companies
-    
-*   Priority registration at events
-    
-*   A huge community
-    
-*   Amazing alumni network
-    
-*   Volunteering opportunities
-    
-*   Etc.
-    
+- Tons of free, amazingly awesome swag!
+- Connections with local companies
+- Priority registration at events
+- A huge community
+- Amazing alumni network
+- Volunteering opportunities
+- Etc.
 
-Doing the marketing
-===================
+# Doing the marketing
 
 Three tips:
 
-*   Be aggressive (in the most polite way you can) — don't be afraid to ask people to come to meetings personally, even if you don't know them too well.
-    
-*   Be shameless — don't worry about potentially being seen as weird or uncool. Hack Club wasn't cool at Mason until we ran some big events, raised a lot of money, and passed out tons of free lanyards, bracelets, stickers, and shirts.
-    
-*   Be proud — make sure people know that you're proud to be a part of your Hack Club. It's contagious!
-    
+- Be aggressive (in the most polite way you can) — don't be afraid to ask people to come to meetings personally, even if you don't know them too well.
+- Be shameless — don't worry about potentially being seen as weird or uncool. Hack Club wasn't cool at Mason until we ran some big events, raised a lot of money, and passed out tons of free lanyards, bracelets, stickers, and shirts.
+- Be proud — make sure people know that you're proud to be a part of your Hack Club. It's contagious!
 
 Here are a few good ways to market.
 
@@ -121,21 +89,16 @@ Hang posters EVERYWHERE.
 Hang posters in
 
 *   Classrooms
-    
 *   Hallways
-    
 *   Bulletins
-    
 *   Libraries
-    
 *   Cafeterias
-    
 
 The goal is that every single person in the school knows what Hack Club is, even if they don't come.
 
 Make sure these posters are colorful, clear, but concise. Good graphics/pictures will make the design more noticeable and memorable! You can make your own posters on a great website called Canva.
 
-![](https://hackclub.atlassian.net/wiki/download/attachments/1867809/Untitled.png?api=v2)
+![](https://cloud-g8xtbr32u.vercel.app/0untitled.png)
 
 ### Swag
 
@@ -143,17 +106,13 @@ Swag is the best way to spread your Hack Club brand.
 
 On top of stickers, if you have the budget, you can consider investing in these kinds of swag items.
 
-*   Custom lanyards
-    
-*   Custom wristbands
-    
-*   Custom club stickers
-    
+- Custom lanyards
+- Custom wristbands
+- Custom club stickers
 
 You could also pass out:
 
-*   Old hackathon or camp swag
-    
+- Old hackathon or camp swag
 
 The best part about marketing through swag is that a lot of this swag is enduring. Stickers will be stuck to respective laptops until someone puts in the focus and effort to take it off their laptop. Shirts will be worn again. Wristbands are fun accessories. Lanyards have a lot of functionality.
 
@@ -163,11 +122,10 @@ I **definitely** recommend this style of marketing.
 
 Though it takes a bit of confidence, you should also keep in mind that you're giving them free stuff and hopefully also giving them an opportunity to explore technology in a way they've never done so before.
 
-Conclusion
-==========
+# Conclusion
 
 Thanks for watching! I hope you feel confident and equipped to get more people into your awesome meetings. Check out other videos on this channel & other articles in the Help Center. More details can be found in the video description. DM me if you have any questions. Happy hacking!
 
-* * *
+---
 
 _Edited by @megan._
