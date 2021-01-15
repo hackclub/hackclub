@@ -98,7 +98,7 @@ constructor(x, y, mass) {
 
 The [constructor](<https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming)>) is used to create an instance of a class. In this case, we use it to set up all of the variables when we make a new particle. The [`createVector()`](https://p5js.org/reference/#/p5/createVector) function is provided by p5 to easily make a [vector object](https://p5js.org/reference/#/p5.Vector). This is just a 2d line or position with a few helper functions to easily modify the values.
 
-Next, let's add code to the `draw()` function:
+Next, let's add the code for drawing the particle.
 
 ```javascript
 ...
@@ -113,7 +113,9 @@ draw() {
 ...
 ```
 
-This one is much simpler. All this function does it set the color using the [`fill()`](https://p5js.org/reference/#/p5/fill) function and then draws the particle using the [`ellipse()`](https://p5js.org/reference/#/p5/ellipse)
+This one is much simpler. All this function does it set the color using the [`fill()`](https://p5js.org/reference/#/p5/fill) function and then draws the particle using p5's [`ellipse()`](https://p5js.org/reference/#/p5/ellipse) function.
+
+Next, let's add the code for applying force to the particle.
 
 ```javascript
 ...
@@ -125,6 +127,8 @@ applyForce(force) {
 ```
 
 Here we see the first physics formula. This calculates how much acceleration the object should have based on the force applied. We use [Newton's second law of motion](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Constant_Mass)—`F=ma` or `Force = mass * acceleration`— to calculate this acceleration.
+
+Next, let's add the code for applying real-world physics to a particle.
 
 ```javascript
 ...
@@ -161,7 +165,7 @@ This one looks complicated, but if you think about it in terms of physics it is 
 - Next the magnitude is set to the amount of force using the [gravitational formula](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation).
 - Finally, the force is applied to the particle.
 
-Now, let's write some code to update the particle:
+Finall y, let's write some code for updating the properties of the particle:
 
 ```javascript
 ...
@@ -203,6 +207,8 @@ function draw () {
 The [`setup()`]() function is run once at the beginning of the program to do any setup you might need. We use it to create the canvas using [`createCanvas()`](). This creates a 400x400 pixel canvas for us to draw on.
 
 The [`draw()`]() function is run every frame of the program. This can be used to update the animation every frame. We will use it to perform the the physics updates and draw the particles to the canvas.
+
+This file is where we're going to write all the program logic, from creating the `Particle`s we just wrote, to applying physics to them and animating them.
 
 First, we will create the array of particles we will be displaying. Then we need to update and display them every frame inside `draw()`.
 
