@@ -124,3 +124,70 @@ Add in this inside the `var` brackets:
 ```go
 secondsBetweenChecksForClipChange = 1
 ```
+
+`helpMsg` is one big long string that we'll print out if the user needs help. Add this in the brackets too:
+
+```go
+helpMsg = `myclip - Shared Clipboard
+With myclip, you can copy from one device and paste on another.
+
+Usage: myclip [--debug/-d] [ <address> | --help/-h ]
+Examples:
+   myclip                          # start a new clipboard
+   myclip 192.168.86.24:53701      # join the clipboard at 192.168.86.24:53701
+   myclip -d                       # start a new clipboard with debug output
+   myclip -d 192.168.86.24:53701   # join the clipboard with debug output
+Running just ` + "`myclip`" + ` will start a new clipboard.
+It will also provide an address with which you can connect to the same clipboard with another device.`
+```
+
+In Go we can define multi-line strings using backticks.
+
+We'll store client addresses in `listOfClients` so that we can send the clipboard to all of them:
+
+```go
+listOfClients = make([]*bufio.Writer, 0)
+```
+The `make()` function is an inbuilt function that creates new variables. Here, we're making a slice which will hold pointers to `bufio.Writer`s with length 0.
+
+`localClipboard` will just hold the contents of the computer's clipboard.
+```go
+localClipboard string
+```
+`printDebugInfo` is a boolean we'll use to decide whether to print the details of what's happening. We'll change this boolean if the user uses the debug option.
+
+```go
+printDebugInfo = false
+```
+
+Because this is a CLI, and most CLIs print out their version when the `--version` option is used, we define `version`, which we'll print if the user uses the version option.
+```go
+version = "v1.0.0"
+```
+
+### The thing that starts everything
+
+Our program will:
+- Start a new clipboard and print an address (with which more computers can join) if no arguments are given.
+- Join a clipboard if the address is given.
+- Enable debug mode if the `--debug` option is given.
+- Print out some help if the `--help` option is used.
+- Print the version if the `--version` option is used.
+
+To start we'll write the main function, literally:
+``` go
+func main() {
+
+}
+```
+The main function is the function that Go will run when our program starts.
+
+Add this in to the top of the function:
+```go
+if len(os.Args) > 3 {
+    handleError(errors.New("too many arguments"))
+    fmt.Println(helpMsg)
+    return
+}
+```
+
