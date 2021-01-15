@@ -1,24 +1,22 @@
-<p ></p>
-
 By Jack Margeson (@margeson.jack). 08 Sep 2019
 
-* * *
+---
 
 This Tuesday, September 3rd, marked the first club meeting for the Mason Hack Club. Over 80+ students attended to learn, code, and interact with the community — making this Hack Club meeting the largest in the United States to date.
 
 The meeting started off in Room B112 like usual but quickly swelled in size to the point where we ended up moving to Mason’s library.
 
-![](https://hackclub.atlassian.net/wiki/download/attachments/4816897/1_l4-pF9_XLD_cxuJdSu2MsQ.jpeg?api=v2)
+![](https://cloud-jga89q17v.vercel.app/21_l4-pf9_xld_cxujdsu2msq.jpeg)
 
 _Mason Hack Club members overflowing the normal meeting room!_
 
-![](https://hackclub.atlassian.net/wiki/download/attachments/4816897/1_c9IVPAksQOMDq9xgpMf_VA.jpeg?api=v2)
+![](https://cloud-jga89q17v.vercel.app/11_c9ivpaksqomdq9xgpmf_va.jpeg)
 
 _Much better :)_
 
 Following the beginning of the meeting using @JoshC’s custom attendance system to check everyone in, we broke up into multiple rooms for beginner and advanced topics: HTML and CSS for newcomers to the club, and an introduction to React.js for the veterans.
 
-![](https://hackclub.atlassian.net/wiki/download/attachments/4816897/1_ggHkx3zZPI3i-EaKdyhimw.jpeg?api=v2)
+![](https://cloud-jga89q17v.vercel.app/01_gghkx3zzpi3i-eakdyhimw.jpeg)
 
 _Veteran members learning React.js._
 
@@ -28,6 +26,6 @@ Finally, everyone got to leave the meeting with something built, whether that be
 
 We can’t wait to see all of our members again next Tuesday! And until next time — happy hacking!  
 
-* * *
+---
 
 _Edited by @itsmingjie._
