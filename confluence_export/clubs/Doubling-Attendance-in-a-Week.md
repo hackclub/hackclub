@@ -20,9 +20,8 @@ I went old school and actually walked up to students in the hallways, cafeteria 
 
 By walking up to students, looking them in the eye, and telling them what the workshop is, when it is, and why it's so awesome helped me achieve two things:
 
-a) The students are forced to pay attention and aren't so ready to criticize / make fun of the name and concept of a "Hack" Club. (you're not going to immediately get defensive about something that someone is taking the time to stop you and chat about)
-
-b) I got to see people's reactions to what Hack Club is, what our workshops are about, and most importantly, why some people aren't interested, which I took mental note of. I then used those mental notes and adjusted the way I approached other students about Hack Club.
+1. The students are forced to pay attention and aren't so ready to criticize / make fun of the name and concept of a "Hack" Club. (you're not going to immediately get defensive about something that someone is taking the time to stop you and chat about)
+2. I got to see people's reactions to what Hack Club is, what our workshops are about, and most importantly, why some people aren't interested, which I took mental note of. I then used those mental notes and adjusted the way I approached other students about Hack Club.
 
 It probably also helped that these students got to see that the person who essentially runs Hack Club wasn't the stereotypical image of a computer science club member, making the club a lot more approachable as opposed to tweets/announcements that could make your club sound teacher-run.
 

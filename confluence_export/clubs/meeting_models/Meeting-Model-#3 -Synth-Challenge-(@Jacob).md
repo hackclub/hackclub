@@ -2,7 +2,7 @@ By Jacob Haap (@Jacob). 25 Jul 2019
 
 ---
 
-Meetings can be tough to run, so here’s what Jacob chose to do with his meetings outside of the typical workshop structure!
+_Meetings can be tough to run, so here’s what Jacob chose to do with his meetings outside of the typical workshop structure!_
 
 Looking for something interesting to do to bring more excitement to your meetings? Take a look at some cool challenge ideas.
 
