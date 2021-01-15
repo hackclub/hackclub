@@ -13,7 +13,9 @@ We are going to build something similar to this. 👇
 
 ![Final todo app](https://cloud-2nf3f60u4.vercel.app/0todo_app.png)
 
-Check out [live demo](https://Todo-App-Final.giridharhackclu.repl.co) and [source code](https://repl.it/@Giridharhackclu/Todo-App-Final#src/App.js). 
+Check out [live demo](https://Todo-App-Final.giridharhackclu.repl.co) and [source code](https://repl.it/@Giridharhackclu/Todo-App-Final#src/App.js).
+
+This workshop should take about an hour to complete.
 
 ## Prerequisites
 
