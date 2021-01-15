@@ -5,15 +5,21 @@ author: '@SquarePear'
 img: 'https://cloud-k50jkthdw.vercel.app/0particle-physics-summary.png'
 ---
 
-# Particle Physics
-
 The goal of this workshop is to explore some basic usage of [p5.js](https://p5js.org) while applying some of the things you may have learned in physics class in an interesting way.
 
-All of the different particles will act like planets in orbit. They all apply forces (gravity) to each other depending on their mass and their distance from each other. The main difference here is that they are much closer together than real planets. This is so you don't have to wait an entire year for one particle to orbit another.
+In this workshop, you're going to use p5.js, along with 🌟 PHYSICS 🌟, to animate colorful particles. Along the way, you'll learn a little bit about:
+
+- how to use p5.js
+- some basic physics concepts
+- how _fun_ creative coding is
+
+All of the different particles will act like planets in orbit. They'll all apply forces (gravity) to each other depending on their mass and their distance from each other. The main difference here is that they are much closer together than real planets. This is so you don't have to wait an entire year for one particle to orbit another.
 
 When you are done with this workshop, you should end up with something similar to this!
 
 ![Final product](https://cloud-oddjiiq5k.vercel.app/0summary.gif)
+
+This workshop should take 15-20 minutes to complete.
 
 ## Getting Set Up
 
@@ -27,7 +33,7 @@ First you need to setup your project. I created a basic p5.js [boilerplate](http
 The first step in this project is to create a class to manage the particles. Before you can do this, you should create a new file to store the class for easier readability.
 
 1. Create a new file called `particle.js`
-2. Add this file to the body of `index.html`
+2. Add this file in between the `<body>` `</body>` tags of the `index.html` file:
 
 ```html
 ...
@@ -46,25 +52,27 @@ class Particle {}
 
 A [class](<https://en.wikipedia.org/wiki/Class_(computer_programming)>) is just a way of connecting a set of variables and functions in one package. Now that you have a particle class, you need to define what the particle can do.
 
+Inside your newly-created `Particle` class, add:
+
 ```javascript
 class Particle {
   constructor (x, y, mass) {
     // Setup particle
   }
 
-  draw () {
+  draw() {
     // Draw particle
   }
 
-  applyForce (force) {
+  applyForce(force) {
     // Apply force to particle
   }
 
-  physics (particle) {
+  physics(particle) {
     // Use particle
   }
 
-  update () {
+  update() {
     // Update particle
   }
 }
@@ -88,7 +96,9 @@ constructor(x, y, mass) {
 ...
 ```
 
-The [constructor](<https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming)>) is used to create an instance of a class. In this case, we use it to set up all of the variables when you make a new particle. The [`createVector()`](https://p5js.org/reference/#/p5/createVector) function is provided by p5 to easily make a [vector object](https://p5js.org/reference/#/p5.Vector). This is just a 2d line or position with a few helper functions to easily modify the values.
+The [constructor](<https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming)>) is used to create an instance of a class. In this case, we use it to set up all of the variables when we make a new particle. The [`createVector()`](https://p5js.org/reference/#/p5/createVector) function is provided by p5 to easily make a [vector object](https://p5js.org/reference/#/p5.Vector). This is just a 2d line or position with a few helper functions to easily modify the values.
+
+Next, let's add code to the `draw()` function:
 
 ```javascript
 ...
@@ -114,7 +124,7 @@ applyForce(force) {
 ...
 ```
 
-Here we see the first physics formula. This calculates how much acceleration the object should have based on the force applied. We use [Newton's second law of motion](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Constant_Mass) to calculate this acceleration.
+Here we see the first physics formula. This calculates how much acceleration the object should have based on the force applied. We use [Newton's second law of motion](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Constant_Mass)—`F=ma` or `Force = mass * acceleration`— to calculate this acceleration.
 
 ```javascript
 ...
@@ -143,7 +153,15 @@ physics(particle) {
 ```
 
 This one looks complicated, but if you think about it in terms of physics it is actually surprisingly simple.
-The first line is just making sure it isn't trying to compare itself. Next we declare a few variables. The second if statement is just used to stop the forces when the particles are colliding. This isn't 100% necessary, but things will probably break if they get too close. The `force` variable points from the affected particle to the affecter. Next the magnitude is set to the amount of force using the [gravitational formula](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation). Finally, the force is applied to the particle.
+
+- The first line is just making sure it isn't trying to compare itself.
+- Next, we declare a few variables.
+- The second if statement is just used to stop the forces when the particles are colliding. This isn't 100% necessary, but things will probably break if they get too close.
+- The `force` variable points from the affected particle to the affecter.
+- Next the magnitude is set to the amount of force using the [gravitational formula](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation).
+- Finally, the force is applied to the particle.
+
+Now, let's write some code to update the particle:
 
 ```javascript
 ...
@@ -160,13 +178,17 @@ update() {
 ```
 
 This might also look a bit intimidating at first, but if you break it down into sections it is much easier to understand.
-The first line just calculates the change in acceleration. [`deltaTime`](https://p5js.org/reference/#/p5/deltaTime) is used to keep the forces constant no matter how many frames per second you are getting. The next line adds the acceleration to the velocity. Then the velocity is added to the position, again using `deltaTime` to keep constant changes. Finally you reset the acceleration to zero. The velocity stays because of momentum.
+
+- The first line just calculates the change in acceleration. [`deltaTime`](https://p5js.org/reference/#/p5/deltaTime) is used to keep the forces constant no matter how many frames per second you are getting.
+- The next line adds the acceleration to the velocity.
+- Then the velocity is added to the position, again using `deltaTime` to keep constant changes.
+- Finally you reset the acceleration to zero. The velocity stays because of momentum.
 
 Yay! You set up the Particle class! Now you can go back to the main sketch and set up the particle management.
 
 ## Managing the Particles
 
-Let's go back to `sketch.js`. Right now the code should look like this:
+Open the `sketch.js` file in the left sidebar. Right now the code should look like this:
 
 ```javascript
 function setup () {
@@ -184,6 +206,8 @@ The [`draw()`]() function is run every frame of the program. This can be used to
 
 First, we will create the array of particles we will be displaying. Then we need to update and display them every frame inside `draw()`.
 
+First, we need to set some constants and cerate an array of particles we will be displaying. Above the `setup()` function, at the beginning of the file, add:
+
 ```javascript
 // Constants
 const G = 6.67e-11
@@ -191,8 +215,14 @@ const SCALE = 0.001
 
 // Array to store particles
 let particles = []
+```
 
-function setup () {
+In physics, `G` refers to the [Gravitational Constant](https://simple.wikipedia.org/wiki/Gravitational_constant), which is 6.67 times [e](https://en.wikipedia.org/wiki/E_(mathematical_constant)) to the power of -11. This constant is used as the basis for all sorts of fun equations.
+
+Now, let's set up our canvas. In the `setup()` function, add:
+
+```javascript
+function setup() {
   createCanvas(400, 400)
 
   // Loop and create each particles
@@ -205,8 +235,15 @@ function setup () {
     particles.push(new Particle(x, y, mass))
   }
 }
+```
 
-function draw () {
+All we're doing in the `setup()` function is creating a random location on the canvas, as well as a random mass, for the particle. Then, we create a new `Particle` with this data and add it it to the array of particles we just created.
+
+All of the building blocks are in place. Finally, we're going to use the `draw()` function to animate the particles we created according to the rules of physics. In the `draw()` function, add:
+
+```javascript
+function draw() {
+  // Set the background of the canvas to a dark gray
   background(51, 51, 51)
 
   // Loop all particles twice
@@ -224,12 +261,67 @@ function draw () {
 }
 ```
 
+- First, we set the background of our canvas to a dark gray
+- Then, we loop through the array of particles twice. If the two particles in the nested for loop are different, we use the `physics()` function we wrote earlier to apply physics to them
+- After that, we loop through the array of particles again and update each `Particle` object with the new data as a result of running `physics` on the particles.
+- And finally, to see the changes, we draw the particle.
+
+We're going through this slowly and step-by-step, but don't forget that because all of thise code is in the `draw()` function, it's run dozens (sometimes hundreds) of times per second. This is how the smoooth animation that you'll see in a second is created.
+
+<details>
+
+<summary>Here's the final sketch.js code:</summary>
+
+```javascript
+// Constants
+const G = 6.67e-11
+const SCALE = 0.001
+
+// Array to store particles
+let particles = []
+
+function setup() {
+  createCanvas(400, 400)
+
+  // Loop and create each particles
+  for (let i = 0; i < 10; i++) {
+    let x = random(0, width)
+    let y = random(0, height)
+    let mass = random(2e8, 1e9)
+
+    // Add the new particle to the list
+    particles.push(new Particle(x, y, mass))
+  }
+}
+
+function draw() {
+  background(51, 51, 51)
+
+  // Loop all particles twice
+  for (const particleA of particles)
+    for (const particleB of particles)
+      if (particleA !== particleB) particleA.physics(particleB)
+
+  // Loop particles again
+  for (const particle of particles) {
+    // Update the particle with the new acceleration and velocity
+    particle.update()
+    // Draw the particle on the canvas
+    particle.draw()
+  }
+}
+```
+
+</details>
+
 ## You're Finished!
 
-You should now have a working although very basic simulation of gravity between particles. This simulation is roughly what would happen in real life with these exact masses and distances. The values themselves are a bit over exaggerated to be more visually interesting.
+Click the green "Run" button at the top of the page. You should see some colorful particles movine!
 
-- [Code](https://repl.it/@SquarePear/Particle-Physics#sketch.js)
-- [Project](https://Particle-Physics.squarepear.repl.co)
+And with that, you should now have a working—although very basic—simulation of gravity between particles. This simulation is roughly what would happen in real life with these exact masses and distances. The values themselves are a bit over exaggerated to be more visually interesting.
+
+- [Final Code](https://repl.it/@SquarePear/Particle-Physics#sketch.js)
+- [Final Project](https://Particle-Physics.squarepear.repl.co)
 
 ## What to Do Next?
 
