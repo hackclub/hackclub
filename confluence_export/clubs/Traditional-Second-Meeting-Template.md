@@ -1,8 +1,6 @@
-<p ></p>
-
 By Hack Club staff. 2015
 
-* * *
+---
 
 The second meeting will pick up where the first left off. The majority of the meeting will be free-form time for hackers to continue expanding their portfolio websites. At the end of the meeting, everyone will come up to the front of the room and demo their website. As in the first meeting, bringing food is a good idea 😉.
 
@@ -10,24 +8,17 @@ The second meeting will pick up where the first left off. The majority of the me
 
 Here's our suggested schedule:
 
-1.  Wait for hackers to arrive (5 minutes)
-    
-2.  Announcements (5 minutes)
-    
-3.  Example demo (5 minutes)
-    
-4.  Hacking Time (45 minutes)
-    
-5.  Demos (30 minutes)
-    
+1. Wait for hackers to arrive (5 minutes)
+2. Announcements (5 minutes)
+3. Example demo (5 minutes)
+4. Hacking Time (45 minutes)
+5. Demos (30 minutes)
 
-Wait for Hackers to Arrive
---------------------------
+# Wait for Hackers to Arrive
 
 This'll be very similar to the first meeting. Put on a playlist (not too loud) and have a slide on the projector to let people know they're in the right place.
 
-Announcements
--------------
+# Announcements
 
 Announcements are your opportunity to share any updates with your members and let them know what they'll be doing in this meeting. In addition to sharing the meeting's schedule, they're useful for sharing upcoming events, upcoming guest visits, and any other information relevant to your members.
 
@@ -35,22 +26,19 @@ Tell your members that for this meeting, they're going to continue where they le
 
 After announcements, you're going to give an example of what a demo looks like.
 
-Example Demo
-------------
+# Example Demo
 
 You'll want to give an example of what a demo looks like so your members know what to expect at the end of the meeting. The best way to do this is to demo a project that you or another person have built for the Personal Website workshop.
 
 If you don't have a website that you built to demo, go ahead and pull up one of the Personal Website workshop examples that were shown in the first meeting and use it. [Click here](https://www.youtube.com/watch?v=MY01d647S9Y) for an example of what a project demo looks like (this demo was given at a conference).
 
-Hacking Time
-------------
+# Hacking Time
 
 This'll basically be the same as the free-form hacking section in the first meeting. Members will continue building their websites. Your role is to foster an environment where people are comfortable asking for help.
 
 Just like in the first meeting, when people do have questions, be eager to help them out. It's also a good idea to put on an upbeat playlist (but again, not too loud -- people should feel comfortable talking with one another).
 
-Demos
------
+# Demos
 
 Before getting to the demos themselves, give your members 30, 15 minute, and 5 minute warnings so they aren't caught off guard.
 
@@ -64,6 +52,6 @@ After each person demos, celebrate. Clap and cheer for them. Have fun and get me
 
 Demos easily get backlogged, so it's important to keep them moving fast. Each demo should be a minute long -- make an announcement that everyone will need to keep their demos under a minute.
 
-* * *
+---
 
 _Edited by @megan._
