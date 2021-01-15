@@ -1,6 +1,6 @@
 By Jack Margeson (@margeson.jack). 31 Jul 2019
 
-* * *
+---
 
 _Meetings can be tough to run, so here’s what Jack chose to do with his meetings outside of the typical workshop structure!_
 
@@ -34,8 +34,7 @@ Development teams bring many benefits to you and your leadership team. The benef
 
 Marking is a great side effect of development teams. Have your teams slap a “Made with love by the Hack Club” in the footer of each website, and soon, other clubs and organization’s websites will be advertising your club for free.
 
-Why should I believe you?
-=========================
+# Why should I believe you?
 
 Well, here’s some examples of things that the development teams at the Mason Hack Club have made in the past, and even some testimonials from development team members:
 
@@ -55,6 +54,6 @@ _The AMs, Live Music Club website_
 
 Thanks for reading! Hopefully you should have a good idea on how to organize development teams and be able to implement them in your own club. If you have any questions, comments, or concerns, don’t hesitate to reach out! I’m always happy to talk on Slack (@margeson.jack), and if that doesn’t work, all my other social media handles and stuff can be found on my website [https://margeson.org](https://margeson.org/). Until next time — happy hacking!
 
-* * *
+---
 
 _Edited by @megan. Jack is awesome! Unbiased._ ![(heart)](https://cloud-3oid2r0cx.vercel.app/2heart.png)
