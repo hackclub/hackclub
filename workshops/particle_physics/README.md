@@ -5,8 +5,6 @@ author: '@SquarePear'
 img: 'https://cloud-k50jkthdw.vercel.app/0particle-physics-summary.png'
 ---
 
-The goal of this workshop is to explore some basic usage of [p5.js](https://p5js.org) while applying some of the things you may have learned in physics class in an interesting way.
-
 In this workshop, you're going to use p5.js, along with 🌟 PHYSICS 🌟, to animate colorful particles. Along the way, you'll learn a little bit about:
 
 - how to use p5.js
