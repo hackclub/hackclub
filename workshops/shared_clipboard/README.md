@@ -8,7 +8,7 @@ img: 'https://cloud-aq88cmoj7.vercel.app/0image.png'
 
 Sometimes you want to share stuff between computers. You email it to yourself and then you log on to the other computer and then you find that you forgot your email password and then you click "forgot password" and then you find the code and then you enter the code and then you make a new password and then you type in the new password and then you find the email and then you *finally* copy the text and get on your way.
 
-It took you 10 minutes just to get text from one computer to the other.
+It took you 10 minutes just to get some text from one computer to the other.
 
 Then, you wonder - "What if, what if I could directly copy it to the other computer? I'd save 9.95 minutes!"
 
@@ -20,7 +20,7 @@ In this workshop, we'll make a program that can share clipboards between compute
 
 You need:
 
-- A Windows, macOS or Linux computer (you *could* also use Termux on an Android device but that might be hard)
+- A Windows, macOS, or Linux computer (you *could* also use Termux on an Android device but that might be hard)
 - **Basic Go knowledge** (Get it from the official tour at [tour.golang.org](https://tour.golang.org) or from this ***excellent*** resource - [gobyexample.com](https://gobyexample.com))
 
 *Note: unlike most workshops, this workshop will require you to download things and use a local development environment. Make sure you have access to a computer that allows you to do these things (most school-issued computers don't, sadly). This workshop is not recommended for beginners.*
@@ -94,17 +94,17 @@ import (
 )
 ```
 
-These are all the Go packages we will be using in our program. Go complains about unused imports, so while testing code if you get an error about an unused import, just comment the import out. (Most IDEs will automatically import packages for you, so if your IDE does it, you don't need to stress about imports.)
+These are all the Go packages we will be using in our program. Go complains about unused imports, so while testing code if you get an error about an unused import, just comment the import out. (Most IDEs will automatically import packages for you, so if your IDE does it, you don't need to worry about imports.)
 
 - `bufio` handles reading and writing, which we'll need because we'll be writing and reading over the internet
 - `errors` lets us make errors
 - `fmt` helps with printing and formatting
 - `io` is also related to reading and writing
 - Guess what `net` does! It does internet stuff! Didn't see that coming, did you? We use it for accessing the internet and communicating.
-- `os` does stuff related to arguments, files, running commands (we'll need to do this) and a whole lot of other os-related stuff.
+- `os` does stuff related to arguments, files, running commands (we'll need to do this), and a whole lot of other os-related stuff.
 - `os/exec` will let us run commands (it's part of the `os` package)
 - We only use `runtime` for one thing: to find out what os the program is running on so that we can change the commands we run accordingly
-- `strconv` let's us convert from strings to other types and from other types to strings
+- `strconv` lets us convert from strings to other types and from other types to strings
 - `time` will let us stop the program for some time (we'll use it to wait between clipboard checks.)
 
 ### Variables
@@ -148,7 +148,7 @@ We'll store client addresses in `listOfClients` so that we can send the clipboar
 ```go
 listOfClients = make([]*bufio.Writer, 0)
 ```
-The `make()` function is an inbuilt function that creates new variables. Here, we're making a slice which will hold pointers to `bufio.Writer`s with length 0.
+The `make()` function is an inbuilt function that creates new variables. Here, we're making a slice that will hold pointers to `bufio.Writer`s with length 0.
 
 `localClipboard` will just hold the contents of the computer's clipboard.
 ```go
@@ -207,7 +207,7 @@ if len(os.Args) > 3 {
 
 Because the `--debug` option can be used with any other option, the max number of arguments we should get is 2. If we get more than 2, we'll print out an error and exit.
 
-A quirk of Go is that `os.Args` has the path to the binary as the first element. This means that the first actual argument has the index 1 and not 0. When we do `len(os.Args)`, we're actually counting 1 extra. This means that `len(os.Args) > 3` will be true if there's more than 2 arguments.
+A quirk of Go is that `os.Args` has the path to the binary as the first element. This means that the first actual argument has the index 1 and not 0. When we do `len(os.Args)`, we're actually counting 1 extra. This means that `len(os.Args) > 3` will be true if there are more than 2 arguments.
 
 This part just makes a new error that has the message "too many arguments" (lol as if that wasn't obvious):
 ```go
@@ -371,7 +371,7 @@ if hasOption, i := argsHaveOption("debug", "d"); hasOption {
 When I was first writing this code, I just thought that clearing the element and setting it to empty would be enough. Turns out that we'd have to properly remove the whole thing because if we don't, `len(os.Args)` will be one more than it should be (the empty element is still *counted* as an element)
 
 ### Get the local IP address
-This function gets the computers local IP address with which other computers can connect (you can see how this is useful).
+This function gets the computer's local IP address with which other computers can connect (you can see how this is useful).
 
 ```go
 func getOutboundIP() net.IP {
@@ -414,27 +414,27 @@ if err != nil {
 defer l.Close()
 ```
 We just print out a message showing the user a new clipboard is being made.
-Then we make a server (`l, err := net.Listen("tcp4", "0.0.0.0:")`). The `net.Listen()` takes in the protocol for communication, in this case: TCP, and the address at which it should listen for connections. The address should include the port but here we have not included the port. This means that Go just picks a port which is free on its own. The all zeros IP address tells Go to listen on all IP addresses belonging to the computer.
+Then we make a server (`l, err := net.Listen("tcp4", "0.0.0.0:")`). The `net.Listen()` takes in the protocol for communication, in this case: TCP, and the address at which it should listen for connections. The address should include the port but here we have not included the port. This means that Go just picks a free port on its own. The all-zeros IP address tells Go to listen on all IP addresses belonging to the computer.
 
 The `l` variable is a "Listener" which can be used to accept incoming connections.
 
 To be able to sync clipboards, we need to be able to communicate between the devices. We'll do this through TCP sockets (which work over the internet). TCP is a protocol for communication, which means it's a ruleset that computers can follow to communicate.
 
-As usual if we find an error, we handle it and then return.
+As usual, if we find an error, we handle it and then `return`.
 
-If there is no error, we immediately "defer" the closing of the listener. This means that when the code finishes running, Go will close the listener.
+If there is no error, we immediately `defer` the closing of the listener. This means that when the code finishes running, Go will close the listener.
 
 ```go
 port := strconv.Itoa(l.Addr().(*net.TCPAddr).Port)
 ```
-from the offical docs:
+from the official docs:
 
 ![docs showing that port is variable in the TCPAddr struct](https://cloud-43kwsiiyz.vercel.app/0image.png)
 
 Let's go through that line step by step.
 `l.Addr()` is the address that the listener is listening on.
 `(*net.TCPAddr)` converts that address into a type called TCPAddr.
-`Port` is an int which shows the port number of the address.
+`Port` is an int that shows the port number of the address.
 `strconv.Itoa()` just converts the int to a string.
 
 This just fetches the port that the server is listening on so that we can show this to the user and then the user can use it to connect to the server.
@@ -509,7 +509,7 @@ Add in:
 ```go
 go monitorSentClips(bufio.NewReader(c))
 ```
-Now we start another thread which will check for clipboards sent by the client. We input the connection's reader so that the function (`monitorSentClips()`) can get messages sent by the client.
+Now we start another thread that will check for clipboards sent by the client. We input the connection's reader so that the function (`monitorSentClips()`) can get messages sent by the client.
 
 Add in:
 ```go
@@ -574,7 +574,7 @@ func monitorLocalClip(w *bufio.Writer) {
 Let's go through this step by step.
 - We get the clipboard from `getLocalClip()`
 - We use the debug function to print some info about `localClipboard`
-- We use a function to send the clipboard to the writer (which could be the writer to a client or server, because both use `monitorLocalClip()`)
+- We use a function to send the clipboard to the writer (which could be the writer connected to a client or server, because both use `monitorLocalClip()`)
 - We handle errors
 - If `localClipboard` is the same as the actual clipboard on the computer, we wait for some time and check again. If it is still the same, we sleep again. This cycle continues *until* the clipboard changes. When it does, `localClipboard` won't be the same as the actual clipboard on the computer so we'll exit the loop. Because we exited the loop, the code will send the clipboard!
 
@@ -584,11 +584,11 @@ Right now, we check every second because we set `secondsBetweenChecksForClipChan
 
 You: "You have ANOTHER function to send the clipboard to a writer??"
 
-At this point, you might be like "Oh my god so many functions it never ends" but in the end it's more readable, it's neater, it's easier to understand what each function is doing and it's easier to manage. A few minutes of looking at the entire source code will convince you of this!
+At this point, you might be like "Oh my god so many functions it never ends" but in the end, it's more readable, it's neater, it's easier to understand what each function is doing and it's easier to manage. A few minutes of looking at the entire source code will convince you of this!
 
 ### Send the clipboard
 
-The reason we have a seperate function for sending the clipboard is so both the server and the client can send clipboards to each other and we don't have to use duplicate code.
+The reason we have a separate function for sending the clipboard is so both the server and the client can send clipboards to each other and we don't have to use duplicate code.
 
 ```go
 func sendClipboard(w *bufio.Writer, clipboard string) error {
@@ -596,7 +596,7 @@ func sendClipboard(w *bufio.Writer, clipboard string) error {
 }
 ```
 
-This function will send the clipboard to a writer and return an error if anything goes wrong. We return the error so that we can check for clients that are unreachable and if they are, we can remove them from the list of clients.
+This function will send the clipboard to a writer and return an error if anything goes wrong. We return the error so that we can check for unreachable clients and if they are, we can remove them from the list of clients.
 
 When we're sending the clipboard, we put "STARTCLIPBOARD" over it and "ENDCLIPBOARD" below it so that when we're parsing the clipboard the parser knows where one clipboard ends and where another starts (we'll be sending multiple clipboards because they can change, you know). Add in:
 ```go
@@ -621,7 +621,7 @@ if err != nil {
 err = w.Flush()
 return err
 ```
-Because this is a buffered writer, we have to remember to flush. (flush sends all the data in the buffer down the- I mean to the computer at the other end.) Along the way we check for errors and if we find any, we return them.
+Because this is a buffered writer, we have to remember to flush. (flush sends all the data in the buffer down the- I mean to the computer at the other end.) Along the way, we check for errors and if we find any, we return them.
 
 ### Check for sent clipboards
 
@@ -779,7 +779,7 @@ For each check we do, if the error is nil - which means that the command was fou
 
 For example, if we have `xclip` installed on a linux system, `exec.LookPath()` will return no error and so we'll use the command `xclip -out -selection clipboard` to get the clipboard.
 
-If we don't find any of the utilities installed, we make a new error and shutdown the entire program. (`os.Exit(2)` will exit with status code 2)
+If we don't find any of the utilities installed, we make a new error and shut down the entire program. (`os.Exit(2)` will exit with status code 2)
 
 ```go
 if out, err = cmd.Output(); err != nil {
@@ -940,7 +940,7 @@ Some minor changes you could add:
 - Follow [clig.dev](https://clig.dev) better
 - Add in debug levels (`./myclip --debug 2`)
 
-This workshop was based off my Uniclip project: [github.com/quackduck/uniclip](https://github.com/quackduck/uniclip)
+This workshop was based on my Uniclip project: [github.com/quackduck/uniclip](https://github.com/quackduck/uniclip)
 
 Stuff other Hackclubbers made after following this workshop:
 
