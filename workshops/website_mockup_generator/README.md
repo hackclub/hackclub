@@ -131,7 +131,7 @@ We will be using an `<img>` tag to display the generated mockup image. Provide t
   </head>
   <body class="body">
     <h1>Website Mockup Generator</h1>
-    <input type="text" id="websiteAdress" placeholder='Enter the website'>
+    <input type="text" id="websiteAddress" placeholder='Enter the website'>
     <br><br>
     <button type="submit" id="submitBtn" onclick='generateMockup();'>Generate Mockup</button>
     <button id="Download">Download</button>
@@ -148,7 +148,7 @@ And that's it! We have completed writing our HTML. Your mockup generator should 
 
 ### 2) style.css
 
-The style.css file is used to add styles to our website. You can optionally use your own CSS to make our site look better according to your wish!
+The style.css file is used to add styles to our website. You can optionally use your own CSS to make your site look better according to your wish!
 
 #### Adding custom font
 Import a custom font from Google fonts using the below code :
@@ -161,7 +161,7 @@ Import a custom font from Google fonts using the below code :
 ```
 
 #### Customizing the `<body>` style
-Now, let us customize the `<body>` tag. we will change the background color to and the text color to white. To make the website look better, let us align our items to center using `align-items` and `justify-content`:
+Now, let us customize the `<body>` tag. We will change the background color to red and the text color to white. To make the website look better, let us align our items to center using `align-items` and `justify-content`:
 
 ```css
 body {
@@ -279,7 +279,7 @@ input {
 }
 
 /*Website address input*/
-#websiteAdress {
+#websiteAddress {
   height: 40px;
   width: 400px;
   border-radius: 5px;
@@ -367,7 +367,7 @@ const Download = document.getElementById("Download");
 
 ![Button actions](https://cloud-izk2xul9w.vercel.app/0buttonactions.png)
 
-#### Defining the generateMockup() function
+#### Defining the `generateMockup()` function
 In order to generate the mockups, we will be defining the `generateMockup()` function which is called when the 'Generate Mockup' button is pressed.
 
 ```javascript
