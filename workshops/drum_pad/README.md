@@ -173,6 +173,7 @@ We will write styling for our class name `.box`, to specify our buttons unique s
   width: 100px;
   height: 100px;
   margin: 10px 0;
+  user-select: none;
   box-shadow: 0 8px 6px -6px black;
   background-color: #444;
   display: flex;
@@ -192,12 +193,12 @@ We will then add styling that adds hovering effects, inactive or active states t
 
 ```css
 .box:hover {
-  background-color: lighten(#444, 10%);
+  background-color: rgb(80, 80, 80);
   cursor: pointer;
 }
 
 .box:active {
-  background-color: darken(#444, 10%);
+  background-color: #444;
   transform: scale(1.1);
   transition: all 0.2s;
 }
