@@ -17,7 +17,7 @@ We're going to use [repl.it](https://repl.it), a free, online code editor, for t
 
 ## Declare dependencies
 
-We're going to use the `random` and `cursees` libraries to help us out. `random` is a module that will allow us to give random positions to the fruits that will spawn on the map. `curses` is how we will be handling the user interface and game mechanics.
+We're going to use the `random` and `curses` libraries to help us out. `random` is a module that will allow us to give random positions to the fruits that will spawn on the map. `curses` is how we will be handling the user interface and game mechanics.
 
 Import these two libraries by adding the following lines at the top of the `main.py` file:
 
@@ -28,7 +28,7 @@ import curses
 
 
 ## Initialize the screen
-Below our imports let's skip a line and start our game. First, we have to somehow declare that our terminal can be used as a user interface. We'll use `curses` to set a cursor, screen width, and screen height.
+Below our imports let's skip a line and start our game. First, we have to somehow declare that our terminal can be used as a user interface. We'll use `curses` to set a cursor, screen width, screen height, snake speed and enable keys.
 
 ```python
 # Define the screen
@@ -42,6 +42,12 @@ sh, sw, = s.getmaxyx()
 
 # Create a new window from the height and width at the top left corner
 w = curses.newwin(sh, sw, 0, 0)
+
+# Enable all keys
+w.keypad(1)
+
+# Determine how fast the snake moves
+w.timeout(100)
 ```
 
 Great! We have defined the screen dimensions and set the cursor to be invisible in the top left corner. Let's move on to the snake logic. We'll be using these variables and definitions when creating the rest of the program.
@@ -49,7 +55,7 @@ Great! We have defined the screen dimensions and set the cursor to be invisible 
 ![Happy snake](https://cloud-5uzl1njgm.vercel.app/0snek.gif)
 
 ## Initialize the snake and food
-Skip a line from the above code and let's define the snake and its position and food.
+Skip a line from the above code and let's define the snake, its position and food.
 
 ```python
 # The snake's initial X position
@@ -137,14 +143,7 @@ Now, let's determine the new head of the snake based on our movement.
 
 ```python
 while True:
-    next_key = w.getch()
-    key = key if next_key == -1 else next_key
-
-    # Handle snake losing
-    if snake[0][0] in [0, sh] or snake[0][1]  in [0, sw] or snake[0] in snake[1:]:
-        # Close the curses window and exit the program
-        curses.endwin()
-        quit()
+    # Code that we wrote before...
 
     new_head = [snake[0][0], snake[0][1]]
 
@@ -199,7 +198,7 @@ except:
     print("Oops, you lost!")
 ```
 
-In the above code, we check if the snake has ran into the food. If it has, we need to set a new food position and make the snake longer. We use the screen width and height dimensions to randomize coordinates for the new snake position. These random coordinates have a chance of landing right where the snake is. So to avoid that confusion we only set the new food if it's not on the snake. Otherwise, we just repeat the loop.
+In the above code, we check if the snake has ran into the food. If it has, we need to set a new food position and make the snake longer. We use the screen width and height dimensions to randomize coordinates for the new food position. These random coordinates have a chance of landing right where the snake is. So to avoid that confusion we only set the new food if it's not on the snake. Otherwise, we just repeat the loop.
 
 Notice at the bottom we wrap the logic for adding a body part in a try-except block. This is a hacky way of making sure that when we lose the game, the program says something and doesn't just crash.
 
@@ -218,7 +217,7 @@ import curses
 s = curses.initscr()
 curses.curs_set(0)
 sh, sw = s.getmaxyx()
-w = curses.newwin(0, 0, 0, 0)
+w = curses.newwin(sh, sw, 0, 0)
 w.keypad(1)
 w.timeout(100)
 snk_x = sw/4
