@@ -45,7 +45,7 @@ Once you have your game codes you are ready.
 
 ## Executing
 
-On the day, load the slideshow from [here](https://workshop-deck-playground-git-add-kahoot-hacking.hackclub.dev/kahoot). 
+On the day, load the slideshow from [here](https://workshop-deck-playground.hackclub.dev/kahoot). 
 
 Run the slideshow through, make sure to give the attendees time to type out their code. 
 
