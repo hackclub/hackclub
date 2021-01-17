@@ -9,13 +9,15 @@ image : 'https://cloud-isbdai043.vercel.app/0screenshot__1441_.png'
 
 <img src="https://cloud-isbdai043.vercel.app/0screenshot__1441_.png" width="380" alt="Craps Simulator Example">
 
+It's time to gamble with totally real money! Even though you're probably not 21 you can create an experience that mimicks the game of craps. Pretend you're home is now a Vegas casino. 
+
 <img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/betting-articles/casino/Craps/in-article-how-to-play-craps-2.jpg" width="400" alt="Craps Tutorial">
 
 <img src="https://media4.giphy.com/media/l2Je4BuL5OnZaMrKM/200.gif" width="400" alt="Homer Simpson Betting Gif">
 
 # Repl.it Setup
 
-We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE!
+We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE! You can run you're code here instead of somewhere else.
 
 Create a new repl and use C# as the language.
 
@@ -25,6 +27,8 @@ Create a new repl and use C# as the language.
 
 <img src="https://media0.giphy.com/media/5zf2M4HgjjWszLd4a5/giphy.gif" width="400" alt="Let Us Begin Gif">
 
+Let the coding begin! You need some initial statements to have on your program. Let's work through it.
+
 ```csharp
 using System;
 
@@ -32,10 +36,11 @@ class MainClass
 {
   static void Main(string[] args)
   {
+    //The rest of the code will be written here.
   }
 }
 ```
-This is what your main file should look like before we have done anything.
+This is what your main file should look like before we have done anything. All your code will be written within the main function.
 
 ```csharp
 using System;
@@ -56,84 +61,51 @@ class MainClass
 - We are welcoming the user to Craps.
 
 ```csharp
-using System;
+Random random = new Random();
+int balance = 10;
 
-class MainClass
+Console.WriteLine("Welcome to Craps");
+
+while (true)
 {
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
 
-      Console.WriteLine("Welcome to Craps");
-      
-      while (true)
-      {
-        
-      }
-  }
 }
 ```
-Create a while loop. This will deal with the player playing another game. This will make more sense as we write more code.
+Create a while loop. This will deal with the player playing another game. This will make more sense as we write more code. EVERYTHING from now on will be written within this while loop. 
 
 # Playing Again
-We are adding the play again at the beginning so the user can put in the money they want to bet.
+We are adding the play again at the beginning so the user can put in the money they want to bet. Please don't bet all your money in real life. Not a good idea (sorry Vegas!).
 
 <img src="https://media4.giphy.com/media/GV3aYiEP8qbao/200.gif" width="400" alt="Another One Gif">
 
 ## Creating Another While Loop
 ```csharp
-using System;
-
-class MainClass
+while (true)
 {
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
+    Console.WriteLine($"Your current balance is {balance} dollars.");
+    bool playAgain = true;
+    while (true)
+    {
 
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-          Console.WriteLine($"Your current balance is {balance} dollars.");
-          bool playAgain = true;
-          while (true)
-          {
-          
-          }
-      }
-  }
+    }
 }
 ```
 - We are writing the user's current balance.
 - We are creating a "playAgain" boolean that will be utilized within the while loop.
 
 ## User Input
+Without user input nothing happens! Does the user want to play, do they not want to play, if their cat hitting their keyboard so we can't tell their response?
 ```csharp
-using System;
-
-class MainClass
+while (true)
 {
-  static void Main(string[] args)
+  Console.WriteLine($"Your current balance is {balance} dollars.");
+  bool playAgain = true;
+  while (true)
   {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-      
-      while (true)
-      {
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-        }
-      }
-   }
+      Console.Write($"Would you like to play? (Y/N): ");
+      string userInput = Console.ReadLine();
+      userInput = userInput.ToUpper();
+  }
 }
 ```
 - We are getting the user input and assigning that to the "userInput" string.
@@ -143,182 +115,86 @@ class MainClass
 
 <img src="https://thumbs.gfycat.com/PreciousJitteryDotterel-max-1mb.gif" width="400" alt="Panda Gif">
 
+Take the user input and find out what it means!
+
 ```csharp
-using System;
-
-class MainClass
+while (true)
 {
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-            }
-            else if (userInput == "N")
-            {
-            }
-            else
-            {
-              Console.WriteLine("That's not a valid input");
-            }
-        }
+    Console.Write($"Would you like to play? (Y/N): ");
+    string userInput = Console.ReadLine();
+    userInput = userInput.ToUpper();
+    if (userInput == "Y")
+    {
     }
-  }
+    else if (userInput == "N")
+    {
+    }
+    else
+    {
+      Console.WriteLine("That's not a valid input");
+    }
 }
 ```
 Create an if-else statement for if the user input is "Y", "N", or something else. If it is something else then the input isn't valid.
 
 ```csharp
-using System;
-
-class MainClass
+if (userInput == "Y")
 {
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
+    if (balance <= 0)
+    {
+        Console.WriteLine("You do not have enough money to play.");
+        playAgain = false;
     }
-  }
+    break;
+}
+else if (userInput == "N")
+{
+}
+else
+{
+    Console.WriteLine("That's not a valid input");
 }
 ```
 For the user input of "Y", if the balance is less then or equal to 0, then the user does not have money to play the game. If this is so, let the user know and set the "playAgain" boolean to false. Then outside of the if statement, break out of the user input while loop.
 
 ```csharp
-using System;
-
-class MainClass
+if (userInput == "Y")
 {
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
+    if (balance <= 0)
+    {
+        Console.WriteLine("You do not have enough money to play.");
+        playAgain = false;
     }
-  }
+    break;
+}
+else if (userInput == "N")
+{
+    playAgain = false;
+    break;
+}
+else
+{
+    Console.WriteLine("That's not a valid input");
 }
 ```
 For the user input of "N", set the "playAgain" boolean to false and break out of the while loop. This means that the user does not want to play again, which is the same result if they do not have any money left to play.
 
 ## Finishing Statements
+
+If the user doesn't want to bet their life savings then exit out of the while loop.
+
 ```csharp
-using System;
-
-class MainClass
+while (true)
 {
-  static void Main(string[] args)
+  while (true)
   {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
-
-          if (playAgain == false)
-          {
-              break;
-          }
-    }
+    //Code we just wrote would be here.
   }
+
+    if (playAgain == false)
+    {
+        break;
+    }
 }
 ```
 Outside of the while loop, if the "playAgain" boolean is false, then we break out of the while loop for playing the game. If it is true then there nothing to break out of.
@@ -327,61 +203,22 @@ Outside of the while loop, if the "playAgain" boolean is false, then we break ou
 
 <img src="https://media0.giphy.com/media/Tex4wVhhs4iwKoV7YT/200_d.gif" width="400" alt="Money Gif">
 
+Have the user put down the amount of money they want. 10 dollars, 100 dollars, 1 million dollars? As long as they have the money they can put it down.
+
 ## Initial Statements
 ```csharp
-using System;
-
-class MainClass
+while (true)
 {
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-      //PREVIOUS CODE
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
-
-          if (playAgain == false)
-          {
-              break;
-          }
-          //PREVIOUS CODE
-          
-         int moneyDown = 0;
-         while (true)
-         {
-         }
+    //Code we already wrote would be here.
+    if (playAgain == false)
+    {
+        break;
     }
-  }
+
+   int moneyDown = 0;
+   while (true)
+   {
+   }
 }
 ```
 - Create the "moneyDown" integer and set it to 0. This will be used when asking the user how much money to put down.
@@ -391,69 +228,23 @@ class MainClass
 ## Try-Catch
 
 ```csharp
-using System;
-
-class MainClass
+while (true)
 {
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
+   int moneyDown = 0;
+   while (true)
+   {
+      Console.Write($"How much money down (in dollars)?: ");
+      try
       {
-      //PREVIOUS CODE
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
+      }
+      catch
+      {
+          Console.WriteLine("That's not a dollar amount.");
+      }
 
-          if (playAgain == false)
-          {
-              break;
-          }
-          //PREVIOUS CODE
-          
-         int moneyDown = 0;
-         while (true)
-         {
-            Console.Write($"How much money down (in dollars)?: ");
-            try
-            {
-            }
-            catch
-            {
-                Console.WriteLine("That's not a dollar amount.");
-            }
-
-         }
-    }
-  }
+   }
 }
+
 ```
 
 - Ask the user how much money they want to put down. We will ask them for their input in a moment.
@@ -462,220 +253,52 @@ class MainClass
 ## Finishing the Try Statement
 
 ```csharp
-using System;
-
-class MainClass
+try
 {
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-      //PREVIOUS CODE
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
-
-          if (playAgain == false)
-          {
-              break;
-          }
-          //PREVIOUS CODE
-          
-         int moneyDown = 0;
-         while (true)
-         {
-            Console.Write($"How much money down (in dollars)?: ");
-            try
-            {
-              int userInput = int.Parse(Console.ReadLine());
-            }
-            catch
-            {
-                Console.WriteLine("That's not a dollar amount.");
-            }
-
-         }
-    }
-  }
+  int userInput = int.Parse(Console.ReadLine());
+}
+catch
+{
+    Console.WriteLine("That's not a dollar amount.");
 }
 ```
 Get the user input and parse it to an integer named "userInput". If there is an error then it will go the catch statement. Since it is in a while loop it will ask again.
 
 ```csharp
-using System;
-
-class MainClass
+try
 {
-  static void Main(string[] args)
+  int userInput = int.Parse(Console.ReadLine());
+  if (userInput > 0 && userInput <= balance)
   {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-      //PREVIOUS CODE
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
-
-          if (playAgain == false)
-          {
-              break;
-          }
-          //PREVIOUS CODE
-          
-         int moneyDown = 0;
-         while (true)
-         {
-            Console.Write($"How much money down (in dollars)?: ");
-            try
-            {
-              int userInput = int.Parse(Console.ReadLine());
-              if (userInput > 0 && userInput <= balance)
-              {
-                  moneyDown = userInput;
-                  break;
-              }
-            }
-            catch
-            {
-                Console.WriteLine("That's not a dollar amount.");
-            }
-
-         }
-    }
+      moneyDown = userInput;
+      break;
   }
+}
+catch
+{
+    Console.WriteLine("That's not a dollar amount.");
 }
 ```
 The user input needs to be greater than 0 and less than or equal to the balance. If is, then we need to set the "moneyDown" integer to the user input and break out of the while loop.
 
 ```csharp
-using System;
-
-class MainClass
+try
 {
-  static void Main(string[] args)
+  int userInput = int.Parse(Console.ReadLine());
+  if (userInput > 0 && userInput <= balance)
   {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-      //PREVIOUS CODE
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
-
-          if (playAgain == false)
-          {
-              break;
-          }
-          //PREVIOUS CODE
-          
-         int moneyDown = 0;
-         while (true)
-         {
-            Console.Write($"How much money down (in dollars)?: ");
-            try
-            {
-              int userInput = int.Parse(Console.ReadLine());
-              if (userInput > 0 && userInput <= balance)
-              {
-                  moneyDown = userInput;
-                  break;
-              }
-              else
-              {
-                Console.WriteLine("Not a valid amount.");
-              }
-
-            }
-            catch
-            {
-                Console.WriteLine("That's not a dollar amount.");
-            }
-
-         }
-    }
+      moneyDown = userInput;
+      break;
   }
+  else
+  {
+    Console.WriteLine("Not a valid amount.");
+  }
+
+}
+catch
+{
+    Console.WriteLine("That's not a dollar amount.");
 }
 ```
 If the user's input is not within their balance range, then let them know that their amount is not valid. Since this is in a while loop, it will ask them again for the money they want to put down.
@@ -684,448 +307,89 @@ If the user's input is not within their balance range, then let them know that t
 
 <img src="https://i.pinimg.com/originals/3a/34/6b/3a346b536b6a6f5de274bbbff7908ec0.gif" width="400" alt="Rolling Dice Gif">
 
+Here's the best part: rolling the dice (virtually).
+
 ## Initial Randomness
-```csharp
-using System;
-
-class MainClass
+while (true)
 {
-  static void Main(string[] args)
+
+  while (true)
   {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-      //PREVIOUS CODE
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
-
-          if (playAgain == false)
-          {
-              break;
-          }
-          int moneyDown = 0;
-
-          while (true)
-          {
-              Console.Write($"How much money down (in dollars)?: ");
-              try
-              {
-                  int userInput = int.Parse(Console.ReadLine());
-                  if (userInput > 0 && userInput <= balance)
-                  {
-                      moneyDown = userInput;
-                      break;
-                  }
-                  else
-                  {
-                      Console.WriteLine("Not a valid amount.");
-                  }
-              }
-              catch
-              {
-                  Console.WriteLine("That's not a dollar amount.");
-              }
-          }
-          //PREVIOUS CODE
-          
-          int dice1 = random.Next(1, 7);
-          int dice2 = random.Next(1, 7);
-    } 
-  }
+  }          
+  int dice1 = random.Next(1, 7);
+  int dice2 = random.Next(1, 7);
 }
 ```
 We are rolling two dice using our random object. This rolls between 1 and 6 because the upper limit is excluded.
 
 ```csharp
-using System;
-
-class MainClass
+while (true)
 {
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-      //PREVIOUS CODE
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
-
-          if (playAgain == false)
-          {
-              break;
-          }
-          int moneyDown = 0;
-
-          while (true)
-          {
-              Console.Write($"How much money down (in dollars)?: ");
-              try
-              {
-                  int userInput = int.Parse(Console.ReadLine());
-                  if (userInput > 0 && userInput <= balance)
-                  {
-                      moneyDown = userInput;
-                      break;
-                  }
-                  else
-                  {
-                      Console.WriteLine("Not a valid amount.");
-                  }
-              }
-              catch
-              {
-                  Console.WriteLine("That's not a dollar amount.");
-              }
-          }
-          //PREVIOUS CODE
-          
-          int dice1 = random.Next(1, 7);
-          int dice2 = random.Next(1, 7);
-          int total = dice1 + dice2;
-          int point = 0;
-          Console.WriteLine($"You rolled out with a {dice1} and {dice2}!");
-    } 
-  }
-}
+    int dice1 = random.Next(1, 7);
+    int dice2 = random.Next(1, 7);
+    int total = dice1 + dice2;
+    int point = 0;
+    Console.WriteLine($"You rolled out with a {dice1} and {dice2}!");
+} 
 ```
 Create a total integer and set it to both of the dice values added together. Also, create a point integer and set it 0. It represents our point, which is used later in the program. Not only this, but let the player know what their rolls were!
 
 ## First Roll
 ```csharp
-using System;
+while (true)
+{          
+    int dice1 = random.Next(1, 7);
+    int dice2 = random.Next(1, 7);
+    int total = dice1 + dice2;
+    int point = 0;
+    Console.WriteLine($"You rolled out with a {dice1} and {dice2}!");
+    if (total == 2 || total == 3 || total == 12)
+    {
+        Console.WriteLine("You Lose.");
+        balance -= moneyDown;
+    }
 
-class MainClass
-{
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-      //PREVIOUS CODE
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
-
-          if (playAgain == false)
-          {
-              break;
-          }
-          int moneyDown = 0;
-
-          while (true)
-          {
-              Console.Write($"How much money down (in dollars)?: ");
-              try
-              {
-                  int userInput = int.Parse(Console.ReadLine());
-                  if (userInput > 0 && userInput <= balance)
-                  {
-                      moneyDown = userInput;
-                      break;
-                  }
-                  else
-                  {
-                      Console.WriteLine("Not a valid amount.");
-                  }
-              }
-              catch
-              {
-                  Console.WriteLine("That's not a dollar amount.");
-              }
-          }
-          //PREVIOUS CODE
-          
-          int dice1 = random.Next(1, 7);
-          int dice2 = random.Next(1, 7);
-          int total = dice1 + dice2;
-          int point = 0;
-          Console.WriteLine($"You rolled out with a {dice1} and {dice2}!");
-          if (total == 2 || total == 3 || total == 12)
-          {
-              Console.WriteLine("You Lose.");
-              balance -= moneyDown;
-          }
-
-    } 
-  }
-}
+} 
 ```
 In the game of craps, if the total in the first roll is 2, 3, or 12, they lose. Let the user know and take the money put down from their balance.
 
 ```csharp
-using System;
-
-class MainClass
-{
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-      //PREVIOUS CODE
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
-
-          if (playAgain == false)
-          {
-              break;
-          }
-          int moneyDown = 0;
-
-          while (true)
-          {
-              Console.Write($"How much money down (in dollars)?: ");
-              try
-              {
-                  int userInput = int.Parse(Console.ReadLine());
-                  if (userInput > 0 && userInput <= balance)
-                  {
-                      moneyDown = userInput;
-                      break;
-                  }
-                  else
-                  {
-                      Console.WriteLine("Not a valid amount.");
-                  }
-              }
-              catch
-              {
-                  Console.WriteLine("That's not a dollar amount.");
-              }
-          }
-          //PREVIOUS CODE
-          
-          int dice1 = random.Next(1, 7);
-          int dice2 = random.Next(1, 7);
-          int total = dice1 + dice2;
-          int point = 0;
-          Console.WriteLine($"You rolled out with a {dice1} and {dice2}!");
-          if (total == 2 || total == 3 || total == 12)
-          {
-              Console.WriteLine("You Lose.");
-              balance -= moneyDown;
-          }
-          else if (total == 7 || total == 11)
-          {
-              Console.WriteLine("You Win!");
-              balance += moneyDown;
-          }
-
-
-    } 
-  }
-}
+while (true)
+{          
+    if (total == 2 || total == 3 || total == 12)
+    {
+        Console.WriteLine("You Lose.");
+        balance -= moneyDown;
+    }
+    else if (total == 7 || total == 11)
+    {
+        Console.WriteLine("You Win!");
+        balance += moneyDown;
+    }
+} 
 ```
 In the game of craps, if the total in the first roll is 7 or 11, they win. Let the user know and add the money put down to their balance.
 
 
 ```csharp
-using System;
-
-class MainClass
+while (true)
 {
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-      //PREVIOUS CODE
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
-
-          if (playAgain == false)
-          {
-              break;
-          }
-          int moneyDown = 0;
-
-          while (true)
-          {
-              Console.Write($"How much money down (in dollars)?: ");
-              try
-              {
-                  int userInput = int.Parse(Console.ReadLine());
-                  if (userInput > 0 && userInput <= balance)
-                  {
-                      moneyDown = userInput;
-                      break;
-                  }
-                  else
-                  {
-                      Console.WriteLine("Not a valid amount.");
-                  }
-              }
-              catch
-              {
-                  Console.WriteLine("That's not a dollar amount.");
-              }
-          }
-          //PREVIOUS CODE
-          
-          int dice1 = random.Next(1, 7);
-          int dice2 = random.Next(1, 7);
-          int total = dice1 + dice2;
-          int point = 0;
-          Console.WriteLine($"You rolled out with a {dice1} and {dice2}!");
-          if (total == 2 || total == 3 || total == 12)
-          {
-              Console.WriteLine("You Lose.");
-              balance -= moneyDown;
-          }
-          else if (total == 7 || total == 11)
-          {
-              Console.WriteLine("You Win!");
-              balance += moneyDown;
-          }
-          else
-          {
-              point = total;
-              Console.WriteLine($"The point is established as {point}");
-          }
-
-
-    } 
-  }
-}
+    if (total == 2 || total == 3 || total == 12)
+    {
+        Console.WriteLine("You Lose.");
+        balance -= moneyDown;
+    }
+    else if (total == 7 || total == 11)
+    {
+        Console.WriteLine("You Win!");
+        balance += moneyDown;
+    }
+    else
+    {
+        point = total;
+        Console.WriteLine($"The point is established as {point}");
+    }
+} 
 ```
 Else, establish the point as the total in the first roll. Let the user know the point. The point is used in all the rolls after the first roll.
 
@@ -1134,339 +398,58 @@ Else, establish the point as the total in the first roll. Let the user know the 
 <img src="https://media0.giphy.com/media/QBGYWFjnggIZ8fMjdt/200.gif" width="400" alt="Captain America Gif">
 
 ```csharp
-using System;
-
-class MainClass
+else
 {
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
+    point = total;
+    Console.WriteLine($"The point is established as {point}");
+    while (true)
+    {
+        dice1 = random.Next(1, 7);
+        dice2 = random.Next(1, 7);
+        total = dice1 + dice2;
 
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-      //PREVIOUS CODE
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
-
-          if (playAgain == false)
-          {
-              break;
-          }
-          int moneyDown = 0;
-
-          while (true)
-          {
-              Console.Write($"How much money down (in dollars)?: ");
-              try
-              {
-                  int userInput = int.Parse(Console.ReadLine());
-                  if (userInput > 0 && userInput <= balance)
-                  {
-                      moneyDown = userInput;
-                      break;
-                  }
-                  else
-                  {
-                      Console.WriteLine("Not a valid amount.");
-                  }
-              }
-              catch
-              {
-                  Console.WriteLine("That's not a dollar amount.");
-              }
-          }
-          //PREVIOUS CODE
-
-          int dice1 = random.Next(1, 7);
-          int dice2 = random.Next(1, 7);
-          int total = dice1 + dice2;
-          int point = 0;
-          Console.WriteLine($"You rolled out with a {dice1} and {dice2}!");
-
-          if (total == 2 || total == 3 || total == 12)
-          {
-              Console.WriteLine("You Lose.");
-              balance -= moneyDown;
-          }
-          else if (total == 7 || total == 11)
-          {
-              Console.WriteLine("You Win!");
-              balance += moneyDown;
-          }
-          else
-          {
-              point = total;
-              Console.WriteLine($"The point is established as {point}");
-              while (true)
-              {
-                  dice1 = random.Next(1, 7);
-                  dice2 = random.Next(1, 7);
-                  total = dice1 + dice2;
-
-                  Console.WriteLine($"You rolled a {dice1} and {dice2}!");
-              }
-          }
+        Console.WriteLine($"You rolled a {dice1} and {dice2}!");
     }
-  }
 }
 ```
 The while loop will keep looping rolls until we win or lose. We are rolling the dice and calculating the total again and letting the user know the results.
 
 ```csharp
-using System;
-
-class MainClass
+else
 {
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
+    point = total;
+    Console.WriteLine($"The point is established as {point}");
+    while (true)
+    {
+        dice1 = random.Next(1, 7);
+        dice2 = random.Next(1, 7);
+        total = dice1 + dice2;
 
-      Console.WriteLine("Welcome to Craps");
+        Console.WriteLine($"You rolled a {dice1} and {dice2}!");
 
-      while (true)
-      {
-      //PREVIOUS CODE
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
+        if (total == 7)
         {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
+            Console.WriteLine("You Lose!");
+            balance -= moneyDown;
+            break;
         }
-
-          if (playAgain == false)
-          {
-              break;
-          }
-          int moneyDown = 0;
-
-          while (true)
-          {
-              Console.Write($"How much money down (in dollars)?: ");
-              try
-              {
-                  int userInput = int.Parse(Console.ReadLine());
-                  if (userInput > 0 && userInput <= balance)
-                  {
-                      moneyDown = userInput;
-                      break;
-                  }
-                  else
-                  {
-                      Console.WriteLine("Not a valid amount.");
-                  }
-              }
-              catch
-              {
-                  Console.WriteLine("That's not a dollar amount.");
-              }
-          }
-          //PREVIOUS CODE
-
-          int dice1 = random.Next(1, 7);
-          int dice2 = random.Next(1, 7);
-          int total = dice1 + dice2;
-          int point = 0;
-          Console.WriteLine($"You rolled out with a {dice1} and {dice2}!");
-
-          if (total == 2 || total == 3 || total == 12)
-          {
-              Console.WriteLine("You Lose.");
-              balance -= moneyDown;
-          }
-          else if (total == 7 || total == 11)
-          {
-              Console.WriteLine("You Win!");
-              balance += moneyDown;
-          }
-          else
-          {
-              point = total;
-              Console.WriteLine($"The point is established as {point}");
-              while (true)
-              {
-                  dice1 = random.Next(1, 7);
-                  dice2 = random.Next(1, 7);
-                  total = dice1 + dice2;
-
-                  Console.WriteLine($"You rolled a {dice1} and {dice2}!");
-                  
-                  if (total == 7)
-                  {
-                      Console.WriteLine("You Lose!");
-                      balance -= moneyDown;
-                      break;
-                  }
-              }
-          }
     }
-  }
 }
 ```
 In craps, on rolls after the initial roll, the user loses if their dice add up to 7. We have an if-statement to check this. If the user loses, we let them know, take their money down from their balance, and we break out of the while loop.
 
 ```csharp
-using System;
-
-class MainClass
+if (total == 7)
 {
-  static void Main(string[] args)
-  {
-      Random random = new Random();
-      int balance = 10;
-
-      Console.WriteLine("Welcome to Craps");
-
-      while (true)
-      {
-      //PREVIOUS CODE
-        Console.WriteLine($"Your current balance is {balance} dollars.");
-        bool playAgain = true;
-        while (true)
-        {
-            Console.Write($"Would you like to play? (Y/N): ");
-            string userInput = Console.ReadLine();
-            userInput = userInput.ToUpper();
-            if (userInput == "Y")
-            {
-                if (balance <= 0)
-                {
-                    Console.WriteLine("You do not have enough money to play.");
-                    playAgain = false;
-                }
-                break;
-            }
-            else if (userInput == "N")
-            {
-                playAgain = false;
-                break;
-            }
-            else
-            {
-                Console.WriteLine("That's not a valid input");
-            }
-        }
-
-          if (playAgain == false)
-          {
-              break;
-          }
-          int moneyDown = 0;
-
-          while (true)
-          {
-              Console.Write($"How much money down (in dollars)?: ");
-              try
-              {
-                  int userInput = int.Parse(Console.ReadLine());
-                  if (userInput > 0 && userInput <= balance)
-                  {
-                      moneyDown = userInput;
-                      break;
-                  }
-                  else
-                  {
-                      Console.WriteLine("Not a valid amount.");
-                  }
-              }
-              catch
-              {
-                  Console.WriteLine("That's not a dollar amount.");
-              }
-          }
-          //PREVIOUS CODE
-
-          int dice1 = random.Next(1, 7);
-          int dice2 = random.Next(1, 7);
-          int total = dice1 + dice2;
-          int point = 0;
-          Console.WriteLine($"You rolled out with a {dice1} and {dice2}!");
-
-          if (total == 2 || total == 3 || total == 12)
-          {
-              Console.WriteLine("You Lose.");
-              balance -= moneyDown;
-          }
-          else if (total == 7 || total == 11)
-          {
-              Console.WriteLine("You Win!");
-              balance += moneyDown;
-          }
-          else
-          {
-              point = total;
-              Console.WriteLine($"The point is established as {point}");
-              while (true)
-              {
-                  dice1 = random.Next(1, 7);
-                  dice2 = random.Next(1, 7);
-                  total = dice1 + dice2;
-
-                  Console.WriteLine($"You rolled a {dice1} and {dice2}!");
-                  
-                  if (total == 7)
-                  {
-                      Console.WriteLine("You Lose!");
-                      balance -= moneyDown;
-                      break;
-                  }
-                  else if (total == point)
-                  {
-                      Console.WriteLine("You Win!");
-                      balance += moneyDown;
-                      break;
-                  }
-              }
-          }
-    }
-  }
+    Console.WriteLine("You Lose!");
+    balance -= moneyDown;
+    break;
+}
+else if (total == point)
+{
+    Console.WriteLine("You Win!");
+    balance += moneyDown;
+    break;
 }
 ```
 If the user's total equals the point, they win. If they win, we let them know, add the money down to their balance, and we break out the while loop. If their total does not equal the point or 7, then we keep rolling since we are in a while loop. 
@@ -1474,6 +457,8 @@ If the user's total equals the point, they win. If they win, we let them know, a
 # Final Code
 
 <img src="https://media.tenor.com/images/2801410c4dff2f169ebedddacb55dc70/tenor.gif" width="400" alt="Kirby Gif">
+
+You are done! Congrats! Have fun virtually gambling! There are way too many exclamation marks!
 
 ```csharp
 using System;
