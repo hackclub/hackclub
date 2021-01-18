@@ -28,6 +28,12 @@ Let's Begin!
 ```py
 import dice
 import turtle
+```
+Add code to main.py for the time being. It should have nothing in it before adding code. Import these two statements. Importing dice will import the functions from the dice.py file we will write later, and the turtle statement allows us to draw to the screen.
+
+```py
+import dice
+import turtle
 
 reroll()
 
@@ -35,12 +41,8 @@ turtle.onkey(reroll, "space")
 
 turtle.listen()
 turtle.mainloop()
-
 ```
-- Add this code to "main.py".
-- We import the turtle library and the dice functions that we will soon create.
-- The turtle listens for the space button and calls the reroll function if pressed. We are about to create it.
-
+We are calling the reroll function that we will create in a moment. Then, if space is pressed, the reroll function is called, and the turtle is always listening for user input.
 # ReRoll
 
 <img src="https://media3.giphy.com/media/3orieXuSY8GJj1xtaU/source.gif" width="380" alt="Dog Gif">
@@ -51,6 +53,20 @@ import turtle
 
 
 def reroll():
+```
+Add the reroll function right below the import statement. It takes in no parameters.
+
+```py
+def reroll():
+  turtle.clear()
+  turtle.tracer(0, 0)
+  turtle.update()
+```
+The screen in cleared so we can draw new dice. Add the tracer and update functions. These make it so the dice we will draw are fully drawn at the same time, instead of the screen refreshing after every draw call. Basically, without these statements, the dice would draw VERY slow.
+
+
+```py
+def reroll():
   turtle.clear()
   turtle.tracer(0, 0)
   dice.Die(0, 0, 100, 10, "black", "red")
@@ -59,17 +75,8 @@ def reroll():
 
   dice.Die(0, -150, 100, 10, "black", "red")
   turtle.update()
-
-
-reroll()
-
-turtle.onkey(reroll, "space")
-
-turtle.listen()
-turtle.mainloop()
 ```
-- Add this function right after the import statements.
-- This function clears the screens and redraws the dice. They will get another random number.
+The dice file that we imported earlier and will create in a moment is used here to draw the Die function. This will make sense in a moment!
 
 # Create the "dice.py" file.
 Create the "dice.py" file as shown below.
@@ -80,7 +87,7 @@ Create the "dice.py" file as shown below.
 import turtle
 import random
 ```
-Add these statements to the top so we can access the turtle and random libraries.
+Focus on dice.py for the rest of the workshop! Add these statements to the top so we can access the turtle and random libraries. The turtle library allows us to draw to the screen, and the random library allows us to get random numbers.
 
 # Drawing the Box
 
@@ -90,6 +97,31 @@ Add these statements to the top so we can access the turtle and random libraries
 import turtle
 import random
 
+def drawBox(x, y, size, color):
+```
+This function will draw the box of the dice. It takes in x and y coordinates, a size, and a color.
+
+```py
+def drawBox(x, y, size, color):
+  turtle.color(color)
+  turtle.setheading(0)
+  turtle.up()
+  turtle.goto(x, y)
+```
+We are setting the turtle's color to the parameter color, setting the direction, making the turtle go up, and going to the coordinates.
+
+```py
+def drawBox(x, y, size, color):
+  turtle.color(color)
+  turtle.setheading(0)
+  turtle.up()
+  turtle.goto(x, y)
+  turtle.begin_fill()
+  turtle.end_fill()
+```
+Add the begin and end fill statements so the box drawn will be filled in.
+
+```py
 def drawBox(x, y, size, color):
   turtle.color(color)
   turtle.setheading(0)
@@ -101,7 +133,7 @@ def drawBox(x, y, size, color):
     turtle.right(90)
   turtle.end_fill()
 ```
-- This function goes to the coordinate and draws a square. This will be the square part of the die.
+Use a for loop and draw the box. Remember, a box has four sides so we are using a for loop for that!
 
 # Rolling the Die
 Under the function that we just created, create a "rolls" function. This will draw the dots on the dice.
@@ -109,11 +141,12 @@ Under the function that we just created, create a "rolls" function. This will dr
 <img src="https://cloud-2mtzavva3.vercel.app/0screenshot__1429_.png" width="380" alt="Dots on the Box">
 
 ```py
-#Initial statements and function to draw the box would be here.
 def rolls(x, y, size, radius, color, roll):
   turtle.color(color)
   turtle.up()
 ```
+Add the rolls function right under the function we just wrote. It takes in x and y coordinates, the size of the box we just created, the radius of the circles, and the random number that will be passed in.
+
 ## Row 1
 ```py
 def rolls(x, y, size, radius, color, roll):
