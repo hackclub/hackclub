@@ -1,24 +1,32 @@
 ---
-name: 'MNIST Recognition'
+name: 'Handwriting Recognition'
 description: 'An introduction to machine learning with TensorFlow and Keras'
 author: '@rpalakkal'
 img: 'https://cloud-h61jcon63.vercel.app/0image.png'
 ---
 
-# Image Classification on MNIST using a Neural Network
-
-
-Have you seen all the hype around machine learning and wondered what it's about and how to get started? Well, you're in the write place. In this workshop, we will be training a simple machine learning model to classify handwritten digits. You can think of this as the Hello World program of machine learning. An understanding of Python or any other programming language will help greatly with following this tutorial, but as long as you're willing to learn along the way, you're in the right place!
+Have you seen all the hype around machine learning and wondered what it's about and how to get started? Well, you're in the right place. In this workshop, we will be training a simple machine learning model to classify handwritten digits. You can think of this as the Hello World program of machine learning.
 
 An overview of this tutorial:
 ![overview of different stages/phases of tutorial](https://cloud-h61jcon63.vercel.app/0image.png)
 
-I'd recommend opening this tutorial on [Google Colab](https://colab.research.google.com/drive/1S0rZ4htWmO-S7npfMvNyMZrDpt8XCaW9) and then make a [new](https://colab.research.google.com/#create=true) Colab to get started!
+## Getting Started
+
+### Prerequisites
+
+An understanding of Python or any other programming language will help greatly with following this tutorial, but you can still do this workshop and learn along the way even if you don't know Python!
+
+### Creating the project
+
+We're going to be coding in Google Colab, an online tool that's great for training machine learning models. Make a new Colab project by [clicking here](https://colab.research.google.com/#create=true)
+
+## Coding in Colab
 
 ### Importing Tensorflow and Dependencies
 
 Let's start off by importing all the required dependencies. We will be using [TensorFlow](https://tensorflow.org), an open-source machine learning platform. Within TensorFlow we will use the [Keras Sequential API](https://www.tensorflow.org/guide/keras/overview), which provides a layer of abstraction on top of all the underlying math theory (though if you are mathematically-inclined, I'd totally recommend diving into the math. Andrew Ng's [Coursera](https://www.coursera.org/learn/machine-learning) course is a great starting place). Using Keras will greatly simplify the process, allowing us to create and train our model with ease.
 
+Add this in your newly-created Colab notebook:
 
 ```py
 #for rendering pictures and labels properly
@@ -39,7 +47,6 @@ import tensorflow as tf
 
 For any machine learning (and particularly deep learning) project, we need data. In our case, we need access to a dataset of thousands of handwritten digits. Lucky for us, [MNIST Images](http://yann.lecun.com/exdb/mnist/) does just that. The MNIST dataset was taken from the writing of US Census Bureau officials and high school students, and is commonly used to test/train simple machine learning models. Let's go ahead and load in the dataset using Keras.
 
-
 ```py
 nb_classes = 10 #the number of total classes, or categories that there are (0 - 9)
 
@@ -49,14 +56,22 @@ print("X_train original shape", X_train.shape)
 print("y_train original shape", Y_train.shape)
 ```
 
-    Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
-    11493376/11490434 [==============================] - 0s 0us/step
-    X_train original shape (60000, 28, 28)
-    y_train original shape (60000,)
+Run the code by clicking the Play button at the left. You should see this print out at the bottom.
 
+```
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
+11493376/11490434 [==============================] - 0s 0us/step
+X_train original shape (60000, 28, 28)
+y_train original shape (60000,)
+```
+
+Code in Colab is separatered into "cells", so you can separate the code you write and work with different data at different stages. Let's create a new code cell by hovering your mouse on the bottom of the current code cell:
+
+![gif showing creating a new cell](https://cloud-hhas3ruy1.vercel.app/0screen_recording_2021-01-18_at_5.44.07_pm.gif)
 
 Before preparing the dataset, let us look at some samples of training data. When approaching machine learning problems, visualizing data, when possible, is a great thing to do since it gives useful insights. We can do this using Matplotlib, a Python library that allows us to create simple plots and images from mathematical data.
 
+In the new cell you created, add:
 
 ```py
 for i in range(9):
@@ -67,10 +82,9 @@ for i in range(9):
 plt.tight_layout()
 ```
 
-
 ![examples of correct predictions](https://cloud-lc775uvcv.vercel.app/3kerasmnist_9_0.png)
 
-The `plt.imshow` function converts the digit matrix (all the images are stored as matrices, as we'll soon see) into a visible image. Curious to see what the raw data looks like? Let's take a look.
+The `plt.imshow` function converts the digit matrix (all the images are stored as matrices, as we'll soon see) into a visible image. Curious to see what the raw data looks like? Let's take a look. Add these two `print` statements at the bottom and click the Play button.
 
 ```py
 print(X_train[0])
@@ -141,9 +155,11 @@ As you can see, each image is a matrix of size 28 pixels by 28 pixels. Each pixe
 
 ![diagram showing converting 28x28 image to 784 vector](https://cloud-iyr53pwod.vercel.app/0image.png)
 
-The neural network will take a single vector for training, so the 28x28 images have to be changed into a single 784 dimensional vector. Also we must normalize the pixel values to be from [0->1] instead of [0->255]. 
+The neural network will take a single vector for training, so the 28x28 images have to be changed into a single 784 dimensional vector. Also we must normalize the pixel values to be from [0->1] instead of [0->255].
 
+*Note: for the rest of this workshop, when you see multiple code blocks next to each other, and the last one shows some output, assume each code block (other than the code block) should be written in a new cell.*
 
+Create a new cell, then add the following code:
 
 ```py
 #the numpy reshape function can be used to reshape an array, as long the new and old
@@ -154,7 +170,6 @@ X_test = X_test.reshape(10000, 784)
 
 In order to scale all the [0->255] values to be in the range [0->1], we can simple divide the array itself by 255. With Numpy, simple division is applied element-wise, meaning that every element in the array will be divided by 255. In order for us to be able to do this, however, first we need to make sure that all the numbers are in the correct format: float32. 
 
-
 ```py
 X_train = X_train.astype('float32')
 X_test = X_test.astype('float32')
@@ -164,15 +179,15 @@ X_test /= 255
 
 Let's check to see that our input matrices now have the correct shape!
 
-
 ```py
 print("Training matrix shape", X_train.shape)
 print("Testing matrix shape", X_test.shape)
 ```
 
-    Training matrix shape (60000, 784)
-    Testing matrix shape (10000, 784)
-
+```
+Training matrix shape (60000, 784)
+Testing matrix shape (10000, 784)
+```
 
 Notice how the training shape went from (60000, 28, 28) to (60000, 784) - now our X data (input data) is ready to be used! Let's now modify our Y data as well.
 
@@ -201,12 +216,10 @@ Green -> [0, 0, 1]
 
 This isn't too hard to implement from scratch. You can loop through all the data and append any unique elements to a list `uniqueElements`. Then for each element in the data, you can create a new array the same size as `uniqueElements` filled with zeros, and then set the spot corresponding to its index in the `uniqueElements` array to 1. If that sounded confusing, don't worry, since Keras has a function that can do this for us!
 
-
 ```
 Y_train = tf.keras.utils.to_categorical(Y_train, nb_classes)
 Y_test = tf.keras.utils.to_categorical(Y_test, nb_classes)
 ```
-
 
 ```py
 print(X_train[0])
@@ -349,12 +362,11 @@ print(Y_train[0])
 
 ### Building the Neural Network
 
-
 Now we will build our neural network. The high-level tf.keras API makes this part much easier and does the heavy lifting for us. We will use a simple 3 layer fully-connected network.
-
 
 ![neural network diagram](https://cloud-b5i7d98ox.vercel.app/0image.png)
 
+In a new cell, add:
 
 ```py
 model = tf.keras.Sequential([
@@ -365,7 +377,6 @@ model = tf.keras.Sequential([
                               tf.keras.layers.Activation('softmax')
 ])
 ```
-
 
 ```py
 model.summary()
@@ -392,20 +403,20 @@ model.summary()
 
 
 ### Compile the model
+
 When compiing a model, Keras asks you to specify your **loss function** and your **optimizer**. The loss function we'll use here is called *categorical crossentropy*, and is a loss function well-suited to comparing two probability distributions.
 
 Here our predictions are probability distributions across the ten different digits (e.g. "we're 80% confident this image is a 3, 10% sure it's an 8, 5% it's a 2, etc."), and the target is a probability distribution with 100% for the correct category, and 0 for everything else. The cross-entropy is a measure of how different your predicted distribution is from the target distribution. If you are interested in learning more about the math behind cross entropy, feel free to check out this [Wikipedia](https://en.wikipedia.org/wiki/Cross_entropy) link.
 
 The optimizer helps determine how quickly the model learns, how resistent it is to getting "stuck" or "blowing up". We won't discuss this in too much detail, but "adam" is often a good choice.
 
-
 ```py
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 ```
 
 ### Training the Model!
-It is time to feed the prepared data into our newly created model. This is where the magic happens!
 
+It is time to feed the prepared data into our newly created model. This is where the magic happens!
 
 ```py
 model.fit(X_train, Y_train,
@@ -447,7 +458,8 @@ print('Test accuracy:', score[1])
     Test accuracy: 0.9789999723434448
 
 
-##### Evaluating the Output####
+##### Evaluating the Output
+
 It's time for us to make some predictions!
 
 
@@ -514,15 +526,8 @@ I find it super interesting to see how numbers that even people might mix up cau
 
 Congratulations on crafting your first neural network! I hope this project has kickstarted your interest in machine learning. Here are a few ways you can extend this project or use the same process we used in this workshop to solve other problems.
 
-
 *   [Connect the model with a website](https://workshops.hackclub.com/teachable_machine/)
 *   [Add a digit drawing interface with TensorFlow.js](https://digit-recognition.ixartz.com/)
 *   [Create an MNIST API using TensorFlow Serving](https://www.tensorflow.org/tfx/tutorials/serving/rest_simple)
 
 Happy hacking!
-
-
-
-
-
-
