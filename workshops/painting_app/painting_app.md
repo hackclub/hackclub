@@ -2,7 +2,7 @@
 name: Painting app
 description: Create a painting app for your website
 author: '@wollygfx'
-img: ''
+img: 'https://cloud-cjpqh65d8.vercel.app/0screen_shot_2021-01-18_at_6.21.41_pm.png'
 ---
 
 In this workshop you'll learn how to make a painting application using HTML, CSS & JavaScript, follow along with me and see how easy it is.
