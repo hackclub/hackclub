@@ -1,6 +1,6 @@
 ---
-name: Painting app
-description: Create a painting app for your website
+name: Painting App
+description: Created an MSPaint-style painting app on the web!
 author: '@wollygfx'
 img: 'https://cloud-cjpqh65d8.vercel.app/0screen_shot_2021-01-18_at_6.21.41_pm.png'
 ---
