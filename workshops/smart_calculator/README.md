@@ -169,6 +169,13 @@ def end():
   exit()
 ```
 
+And finally, let's add a simple startup message that the calculator will greet you with when you run the program. At the bottom of the `main.py` file, not as part of any function or loop or anything, add:
+
+```
+print(response[0])
+print(response[1])
+```
+
 ## Making it work
 
 All of the building blocks are in place. Now, let's make it work!
