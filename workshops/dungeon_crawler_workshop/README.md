@@ -28,27 +28,52 @@ Create a new repl and use Python as the language.
 
 ```py
 import turtle
+```
+Let's import the [turtle library](https://docs.python.org/3/library/turtle.html). This allows us to draw to the screen!
+
+```py
+import turtle
 
 myarr = []
 col = 1
 row = 1
 turtle.hideturtle()
 ```
-This sets up the array and initial player position.
+Create an empty array, and set some initial player positions based on the map you will create later. Don't worry about it now but this is important later. Also, hide the turtle cursor.
 
 # Reading Text File
 <img src="https://media3.giphy.com/media/WoWm8YzFQJg5i/giphy.gif" width="380" alt="Spongebob Reading Gif">
+```py
+f = open("map.txt", "r")
+
+f.close()
+```
+The open and close statements allow us to read and close a text file. Although we haven't created map.txt yet, add these statements because we will add the text file later.
 
 ```py
-import turtle
+f = open("map.txt", "r")
 
+while(True):
+  tempLine = f.readline()
 
-myarr = []
-col = 1
-row = 1
-turtle.hideturtle()
+f.close()
+```
+This while loop will be used to read the text file line by line. We are setting the tempLine variable to the current line being read. Each time the while loop is run, it goes to the next line.
 
+```py
+f = open("map.txt", "r")
 
+while(True):
+  tempLine = f.readline()
+
+  if tempLine == "": 
+    break
+
+f.close()
+```
+If the line being read is empty, that means we are at the end of the text file. If this is the case, then break out of the while loop.
+
+```py
 f = open("map.txt", "r")
 
 while(True):
@@ -64,8 +89,8 @@ while(True):
 
 f.close()
 ```
-- The [turtle library](https://docs.python.org/3/library/turtle.html) is being imported so we can draw to the screen.
-- The text file lines are being added to an array, which is then added to the "myarr" array, creating a [2D array](https://www.tutorialspoint.com/python_data_structure/python_2darray.htm).
+
+If the line is not empty, it is being added to an array, which is then added to the "myarr" array. This creates a [2D array](https://www.tutorialspoint.com/python_data_structure/python_2darray.htm).
 
 # Drawing the Square Function
 <img src="https://i.imgur.com/FkDPzDz.gif?noredirect" width="380" alt="Squidward Bold and Brash Gif">
