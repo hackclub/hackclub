@@ -1,212 +1,236 @@
 ---
-name: 'Human-Like Calculator Using Python'
-description: 'A calculator where you type a statement and get the answer!'
+name: 'Smart Calculator'
+description: 'Build a human-like calculator that responds to text prompts using Python'
 author: '@iamsid47'
-img: https://cloud-p6k9fe5b9.vercel.app/0smart-calc.png
+img: 'https://cloud-p6k9fe5b9.vercel.app/0smart-calc.png'
 ---
-
-## Human-like calculator
 
 In this workshop, we are going to make a calculator which can add, multiply, divide and subtract two numbers. But the catch is that instead of just adding those two numbers, we input a line in which we ask the program to either add, subtract, multiply, divide.
 
 For example: *Hey calc, can you give me the lcm of 9 and 3* and it will provide you with the LCM (least common multiple) of those two numbers.
 
-You can try the final product on Repl.it: just click [here](https://repl.it/@iamsid47/calc#main.py).
-
-## How does it work?
-
 ![How it works](https://github.com/iamsid47/hangman-pics/blob/main/how-calc-works.png)
 
-## Let's get started
+[Final Product and Code](https://repl.it/@iamsid47/calc#main.py)
 
-![Create a repl](https://cloud-p6k9fe5b9.vercel.app/1human-like-calc-repl.png)
+## Getting Started
 
-Let's head over to [Repl.it](https://repl.it) and create a *repl*. Choose **Python** and name your project.
-First, we want our calculator to act like a human. It should not just output numbers. It should welcome the user when they run it, and it should tell me if it does not understand me. To achieve this, we will create some responses.
+We're going to be using [Repl.it](https://repl.it), a free, online code editor, to write our project. To get started, go to [repl.it/languages/python3](https://repl.it/languages/python3). Your coding environment will spin up instantly! Once your coding environment is ready, let's get started.
+
+The exciting part about this calculator is that it acts somewhat like a human. So, it should not just output numbers—it should welcome the user when they run it, and if it doesn't understand a prompt it should respond accordingly. Let's create some of these responses.
+
+In your `main.py` file, create an array of responses, like so:
 
 ```python
 response=['Welcome to smart calculator','My name is Calc', 
-		'Thanks for enjoy with me ','Sorry ,this is beyond my ability'] 
+    'Thanks for using me!','Sorry, this is beyond my ability'] 
 ```
 
-We will first define some functions for the following mathematical expressions.
-  1. Addition
-  2. Subtraction
-  3. Multiplication
-  4. Division
-  5. LCM
-  6. HCF
-  7. Remainder
-  
-For addition, let's create a function named `add`.
+## Writing the mathematical operations
+
+Let's think about all the mathematical operations we want our calculator to be able to do. Here's what I came up with:
+
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. LCM (least common multiple)
+6. HCF (highest common factor. this is also called GCF, or greatest common factor)
+7. Remainder
+
+Let's create all of the functions that will complete these operations. Because Python can do math, these functions will be pretty simple. For example, here's what the `add()` function will look like:
 
 ```python
 def add(a,b): 
-	return a+b 
+  return a+b 
 ```
 
-Similar logic applies to the other functions. For subtraction, we create a function named `sub`; for multiplication: `mul`, for division: `div`, for remainder: `mod`, for LCM: `lcm` and lastly for HCF: `hcf`.
-
-Phew! A lot of functions!
-
-Next, add some logic inside these. It's gonna be the same like we did it for addition. Meaning, the method is same just some tweaks.
+With this in mind, can you write the rest of the functions that perform the simple operations? Here's what they all look like:
 
 ```python
-# Subtraction 
-def sub(a,b): 
-	return a-b 
+# Addition
+def add(a,b):
+  return a+b
+
+# Subtraction
+def sub(a,b):
+  return a-b
 
 # Multiplication 
 def mul(a,b): 
-	return a*b 
+  return a*b 
 
 # Division 
 def div(a,b): 
-	return a/b 
+  return a/b 
 
 # Remainder 
 def mod(a,b): 
-	return a%b 
+  return a%b 
 ```
 
-Now, for LCM and HCF, we need to create something different as even in normal python, these expressions work differently.
-
-Thus for the Least Common Faction,
+LCM and HCF are a bit of a different story. Because there's no single operator that calculates these in Python, we'll have to write some more complicated functions to calculate them. Keeping in mind what you remember about how to calculate LCM and HCF, can you write these two functions? Here's what they look like (add these two functions at the bottom of your Python file):
 
 ```python
-# calculating LCM 
-def lcm(a,b): 
-	L=a if a>b else b 
-	while L<=a*b: 
-		if L%a==0 and L%b==0: 
-			return L 
-		L+=1
+# LCM
+def lcm(a,b):
+  L=a if a>b else b
+  while L<=A*b:
+    if L%a==0 and L%b==0:
+      return L
+    L+=1
+
+def hcf(a,b):
+  H=a if a<b else b
+  while H>=1:
+    if a%H==0 and b%H==0:
+      return H
+    H-=1
 ```
 
-Here, we have entered the LCM logic which is the same as the one used in a normal Python IDE. In fact all of the calculational logics are the same.
+And with that, we've finished writing all of the operations our calculator will do!
 
-And for the Highest Common Factor,
+## Making it human
+
+Now comes the fun part: we want to be able to parse human-like prompts and extract an operation that we can feed into our calculator. How can we do this?
+
+Well, let's break an example prompt down:
+
+```
+Hey calculator, can you add 5 and 9 for me
+```
+
+We can easily identify some keywords that indicate what we want the calculator to do. The word `add` means that we want to add, and later on we see the numbers `5` and `9`. So, we can write a program that just extracts these 3 keywords and ignores everything else, which will give the impression that our calculator is super smart!
+
+Let's write a function that will extract the numbers we want from the statement. At the bottom of your `main.py` file, add a function called `extract_from_text`:
 
 ```python
-# calculating HCF 
-def hcf(a,b): 
-	H=a if a<b else b 
-	while H>=1: 
-		if a%H==0 and b%H==0: 
-			return H 
-		H-=1
+def extract_from_text(text):
+  l=[]
+  
+  for t in text.split(' '):
+    try:
+      l.append(float(t))
+    except ValueError:
+      pass
+      
+  return l
 ```
 
-We just got the calculational logic done! Now, remember that I wanted my calculator to be more like a human? Well, That is, when I type a sentence, it should be able to catch what I want (example: add, subtract, etc) and then perform the calculation.
+- First, we make an empty array called `l`, which we will populate with the keywords we want to extract
+- Then, we [split](https://www.w3schools.com/python/ref_string_split.asp) the text the user entered, turning it into an array of words, and we loop through each word
+- We use a [try/except block](https://www.w3schools.com/python/python_try_except.asp) to append the character to the list if it is a number. This works because [`float()`](https://www.programiz.com/python-programming/methods/built-in/float) attempts to turn a string into a number, so if it fails to do so, we `pass`—AKA move on to the next word—and don't add that word to the array.
+- Once the for loop is completed, we return our array.
 
-For this, we make some text tokens and create some operations. What exactly we are going to do is,
-*If a user types in* add 5 and 9 for me. Our code will parse it into a list which will contain all the words and integers. *Here, it will be: add, 5, and, 9, for, me.*
-A list of 7! Now, we will remove the unnecessary part from this list. That is **for, me, and**.
-
-To do this, we need to create a token fetcher which will fetch the tokens (functions), remove the unnecessary part and later perform the calculation. Let's create a function for this. I'll name it `extract_from_text`
+So now, we've written a function that extracts the numbers we need to perform an operation on. But we still aren't extracting the operation we want to perform on these numbers. To fix this, let's first start by thinking of as many valid operation keywords as we can and creating a list that binds each one to the proper function. Add this code at the bottom of your `main.py` file:
 
 ```python
-def extract_from_text(text): 
-	l=[] 
-	for t in text.split(' '): 
-		try: 
-			l.append(float(t)) 
-		except ValueError: 
-			pass
-	return l 
+operations = {
+  'ADD': add,
+  'PLUS': add,
+  'SUM': add,
+  'ADDITION': add,
+  'SUB': sub,
+  'SUBTRACT': sub,
+  'MINUS': sub,
+  'DIFFERENCE': sub,
+  'LCM': lcm,
+  'HFC': hfc,
+  'PRODUCT': mul,
+  'MULTIPLY': mul,
+  'MULTIPLICATION': mul,
+  'DIVISION': div,
+  'MOD': mod,
+  'REMAINDER': mod,
+  'MODULAS': mod
+}
 ```
 
-Here, we first  make an empty list named `l`. Then we split all the terms the user has written using `for t in text.split(' '):` and then append this list. Later on we remove the unnecessary part using `except ValueError` and then return this list `l`.
+While we're making lists of keywords, let's also make a list of some other valid commands:
 
-Now for this to work, we create some operations performed on the basis of the tokens we get.
-So, let's create an operation and we'll name it the same.
 ```python
-operations={'ADD':add,'PLUS':add,'SUM':add,'ADDITION':add, 
-			'SUB':sub,'SUBTRACT':sub, 'MINUS':sub, 
-			'DIFFERENCE':sub,'LCM':lcm,'HCF':hcf, 
-			'PRODUCT':mul, 'MULTIPLY':mul,'MULTIPLICATION':mul, 
-			'DIVISION':div,'MOD':mod,'REMANDER'
-			:mod,'MODULAS':mod} 
+commands = {
+  'NAME': myname,
+  'EXIT': end,
+  'END': end,
+  'CLOSE': end
+}
 ```
 
-Now what we have done here is that if we get a list which contains the token `ADD`, then we use the `add` function to add the numbers present in that command.
-The same applies for other calculations as well.
+And let's also add the `myname` and `end` functions that we reference in this list. You can put these anywhere you want, but I recommend adding them near the operation functions so that the code looks neater:
 
-Example: If I put something like: **hey there, can you add 10 and 3 for me.** 
-    Here, it will create a list. Then remove the unnecessary part from this list on the basis of the operations we mentioned above and then perform the calculations.
+```python
+def myname(): 
+  print(response[1])
+  
+def end(): 
+  print(response[2]) 
+  input('press enter key to exit') 
+  exit()
+```
+
+## Making it work
+
+All of the building blocks are in place. Now, let's make it work!
+
+Python has a cool way to run a piece of code continuously. It's called `while True:`. If you put code inside this while loop, it will run code continuously. We want to run the main part of our code continuously because we want to continuously ask the user for input as long as the program is running. So, at the bottom of the `main.py`, file, add:
+
+```python
+while True:
+  text=input('enter your queries:')
+```
+
+In Python, `input()` is a function that waits for user input in the console. So right now, this code will print out 'enter your queries:' and then wait for the user to say something before running the rest of the code. Try it out yourself! Click the green "Run" button and see what happens.
+
+But we don't want to just allow for user input; we want to respond to it too! Inside of the `while True` loop, add:
+
+```python
+while True:
+  text=input('enter your queries:')
+  for word in text.split(' '):
+    if word.upper() in operations.keys():
+      try:
+        l = extract_from_text(text)
+	r = operations[word.upper()] (l[0], l[1])
+	print(r)
+      except:
+        print('something went wrong and i couldnt parse your input, plz enter again!!')
+      finally:
+        break
+
+    elif word.upper() in commands.keys():
+      commands[word.upper()]()
+      break
     
-Now let's create some other commands to exit this calculator and all.
-
-For this, we create an operation named `commands` and enter in the tokes.
-
-```python
-commands={'NAME':myname,'EXIT':end,'END':end,'CLOSE':end}  
+    else:
+      print(response[3])
 ```
 
-Here, if someone puts the command **EXIT**, it will exit the calculator and end the process.
-
-Now, I wanted something more of a human. So I'll print in some basic text and signs.
-
-```python
-print('--------------'+response[0]+'------------') 
-print('--------------'+response[1]+'--------------------') 
-```
-
-Next, we will create a while loop so that the user can calculate on and on and then exit accordingly.
-
-```python
-while True: 
-	print() 
-	text=input('enter your queries: ') 
-```
-
-After this, we split the text so that our operations and the token fetcher can work properly and later create a list named `l`.
-
-```python
-	for word in text.split(' '): 
-```
-
-Let's add some conditionals for calculations, errors and exits.
-
-```python
-		if word.upper() in operations.keys(): 
-			try: 
-				l = extract_from_text(text) 
-				r = operations[word.upper()] (l[0],l[1]) 
-				print(r) 
-			except: 
-				print('something went wrong going plz enter again !!') 
-			finally: 
-					break
-		elif word.upper() in commands.keys(): 
-					commands[word.upper()]() 
-					break
-```
-
-Here, we define that if there is a word from the list which matches with operations, then we tell to perform the operation. Meaning, if there is a token named *subtract*, we tell it to take this token and perform the subtraction with the respective numbers. Now if the user puts in something which is incorrect or does not comply with our operation, we break the loop.
-
-Next in, we add an `else` for everything else. Meaning, if something other than the conditions mentioned above goes wrong, we still break the loop and exit the program showing an error.
-```python
-	else:		 
-		sorry() 
-```
+- First, we again split the user input into an array of words and loop through the words.
+- If it finds a word that is in our list of operations, it extracts the two numbers using the `extract_from_text()` function we wrote earlier, and runs the corresponding operation function on those two numbers. Then, it prints the result.
+- If it finds a word that it recognizes as a command, it executes the corresponding function for that command.
+- If it can't find a word that it recognizes as an operation or a command, it prints the last response we added in the array we wrote at the beginning of this workshop.
 
 ## Voila! You did it!
 
 ![Mission Accomplished](https://media.giphy.com/media/MAzunB1Ru6zAYlYgPD/giphy.gif)
 
-You just made your own human friendly calculator!
+That's it! You did it! Click the green "Run" button at the top of the page to see the result. The program should ask you for an input, and if you enter something with a valid operation word and two numbers, it should calculate that for you!
 
 ## Hack It ;)
 
-Furthermore more, we can also make this calculator go wild by adding in more functionality. As an example, it currently is able to do some basic stuff. But things like roots, squaring, equation solving with one variable can also be added. We can also improve the number of accepted tokens for the operations to improve it's user experience.
+Here are a few things you can do to expand this project:
 
-You can also add in an equation solver which will be able to solve complex equations as well. But that actually comes under the initial stages of machine learning so it will also require a handful of other libraries!
+- At the beginning of this workshop, we came up with a few basic operations—but there are many, many more operatinos you can do, both simple and very complex. Squaring, square roots, solving an equation with one variable, etc.
+- There are some edge cases that we didn't solve. For example, what happens if you include multiple operation or command words? Or an operation word _and_ a command word? You can make the UX better by solving for these edge cases
+- Add more responses! Give this calculator some personality! We only added 4 basic responses at the beginning—you can go wild, and find funny places to insert more random responses
 
-## Demos
+### Demos
 
-Here, I made a very simple GUI [version](https://repl.it/@iamsid47/calc-demo1) of a normal calculator.
+Here are a few ways I expanded this project:
 
-This is a more advanced [version](https://repl.it/@iamsid47/calc-demo2) of the GUI calculator as this can calculate sin, cos, tan and even square root.
+- Here, I made a very simple GUI [version](https://repl.it/@iamsid47/calc-demo1) of a normal calculator.
+- This is a more advanced [version](https://repl.it/@iamsid47/calc-demo2) of the GUI calculator as this can calculate sin, cos, tan and even square root.
+- This one is like a modular [version](https://repl.it/@iamsid47/calc-demo3) because, here it asks the user if they want to add, subtract, multiply or divide and then asks to input numbers and finally gives the result.
 
-This one is like a modular [version](https://repl.it/@iamsid47/calc-demo3) because, here it asks the user if they want to add, subtract, multiply or divide and then asks to input numbers and finally gives the result.
+Happy Hacking!
