@@ -70,7 +70,7 @@ Code in Colab is separatered into "cells", so you can separate the code you writ
 
 Before preparing the dataset, let us look at some samples of training data. When approaching machine learning problems, visualizing data, when possible, is a great thing to do since it gives useful insights. We can do this using Matplotlib, a Python library that allows us to create simple plots and images from mathematical data.
 
-*Note: for the rest of this workshop, when you see multiple code blocks or images next to each other, and the last one shows some output, assume each code block (other than the one that shows the output) should be written in a new cell and that you should run the cell to see that output.*
+*Note: for the rest of this workshop, when you see one or two code blocks directly followed by an output, assume each code block should be put in a new cell and that you should run the cell to see that output.*
 
 In the new cell you created, add:
 
