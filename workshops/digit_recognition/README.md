@@ -7,7 +7,6 @@ img: 'https://cloud-h61jcon63.vercel.app/0image.png'
 
 Have you seen all the hype around machine learning and wondered what it's about and how to get started? Well, you're in the right place. In this workshop, we will be training a simple machine learning model to classify handwritten digits. You can think of this as the Hello World program of machine learning.
 
-An overview of this tutorial:
 ![overview of different stages/phases of tutorial](https://cloud-h61jcon63.vercel.app/0image.png)
 
 ## Getting Started
