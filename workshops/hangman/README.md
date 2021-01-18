@@ -59,7 +59,7 @@ public class Man {
 
 In Java, classes typically need a [constructor](https://www.w3schools.com/java/java_constructors.asp), so let’s get started with that. We have already declared the fields: the constructor is where we can assign initial values to those fields.
 
-The Man is 3 characters wide and 3 characters tall, so we need to create an array of characters of that size. You might be wondering how to create line breaks between each row of the array. We can do that by using ‘\n’ which represents a line break. Anything after ‘\n’ will be on the next line. We initialize the man like so. We also set numIncorrect to 0, because the user hasn’t made any incorrect guesses yet.
+The Man is 3 characters wide and 3 characters tall, so we need to create an array of characters of that size. You might be wondering how to create line breaks between each row of the array. We can do that by using `\n` which represents a line break. Anything after `\n` will be on the next line. We initialize the man like so. We also set numIncorrect to 0, because the user hasn’t made any incorrect guesses yet.
 
 Place the constructor within the `Man` class declaration like below:
 
@@ -108,7 +108,11 @@ public String toString() {
 }
 ```
 
-Hope you’re enjoying this project! Now we need to tackle the `hang` method, which is the hardest part of the Man class. But don’t worry, we’re sure you’ll get the hang of it. The difficulty of the hang() method is that we need to hang different parts of the man according to how many incorrect guesses the user has so far. This can be done in multiple ways, like using if statements, but here we will use the switch statement, which is an often-forgotten functionality. You can pass in a variable to the switch statement, and then write specific code for each of the different cases or possibilities of that variable, using the keyword ‘case’. Here, we want to pass in `numIncorrect` and add body parts to the man according to how many wrong guesses there are. The code looks long, but we assure it’s not as scary as it may seem.
+Hope you’re enjoying this project! Now we need to tackle the `hang` method, which is the hardest part of the Man class. But don’t worry, we’re sure you’ll get the hang of it.
+
+The difficulty of the `hang()` method is that we need to hang different parts of the man according to how many incorrect guesses the user has so far. This can be done in multiple ways, like using if statements, but here we will use the `switch` statement, which is an often-forgotten functionality. You can pass in a variable to the `switch` statement, and then write specific code for each of the different cases or possibilities of that variable, using the keyword `case`.
+
+Here, we want to pass in `numIncorrect` and add body parts to the man according to how many wrong guesses there are. The code looks long, but we assure it’s not as scary as it may seem.
 
 ```java
 public void hang() {
@@ -136,7 +140,7 @@ public void hang() {
 }
 ```
 
-If we just look at the ‘case 1:’ segment of the code, our code is basically saying that it will set the second element of body (Arrays are 0 indexed) to ‘O’. The illustrations below indicate which index of the body Arrays corresponds to which body part of the man. Also, you may have noticed that for the left arm and right leg, we used 2 backward slashes, not 1. This is because ‘\’ alone is a special Java character, like \n for linebreak, and Java will not recognize it. So we have to add an extra ‘\’ so that it prints out an actual backslash.
+If we just look at the `case 1:` segment of the code: our code is basically saying that it will set the second element of body (Arrays are 0 indexed) to `O`. The illustrations below indicate which index of the body Arrays corresponds to which body part of the man. Also, you may have noticed that for the left arm and right leg, we used 2 backward slashes, not 1. This is because `\` alone is a special Java character, like `\n` for linebreak, and Java will not recognize it. So we have to add an extra `\` so that it prints out an actual backslash.
 
 ```
 +---+---+----+----+   +---+---+---+----+
@@ -166,11 +170,15 @@ public static void main(String[] args) {
 
 By running `Man m = new Man()`, we are calling the constructor we previously wrote to create a `Man` object and assigning it to the variable `m`. We can then test the man's functionality using a for loop, and hanging the man until he is dead. 
 
-Repl is set up to run our Main class, so we will need to run a few commands to try out our Man class now. Java is a compiled language, meaning that first our program must be converted to machine code before being run. We can do this by running the java compiler. First type `javac Man.java` into the console on the right of your screen to compile our Man class. 
+Repl is set up to run our Main class, so we will need to run a few commands to try out our Man class now. Java is a compiled language, meaning that first our program must be converted to machine code before being run. We can do this by running the Java compiler. First type `javac Man.java` into the console on the right of your screen to compile your Man class. 
 
-This will generate a `Man.class` file (it might not show up in the repl file explorer, but don’t worry - it should be there!). Next type `java Man` and see what happens. You should see all the different stages of the man being hanged before dying. Hopefully your output looks something like this! Now let’s take this man class and use it in our Main class.
+This will generate a `Man.class` file (it might not show up in the repl file explorer, but don’t worry - it should be there!).
+
+Next type `java Man` and see what happens. You should see all the different stages of the man being hanged before dying. Hopefully your output looks something like this!
 
 ![gif of man main method printing out body iterations](https://cloud-3roj4qo0k.vercel.app/0ezgif-3-0750425b5630.gif)
+
+Now let’s take this man class and use it in our Main class.
 
 ## Part 4: The Main Class
 
@@ -182,7 +190,7 @@ First off, we want to print a welcome message, just so people know they are play
 System.out.println("Welcome to the ASCII Version of Hangman!");
 ```
 
-Now you’re probably asking how the game knows what word you choose. The console actually has many useful functions for this. First, we want to create a Console object and make that Console object read in a password which hides the word when typing. Then, we want to store that password into an Array of characters and convert each letter into uppercase using a `for` loop just so it is easier to read when we print out the letters later on.
+Now you’re probably asking how the game knows what word you choose. The console actually has many useful functions for this. First, we want to create a `Console` object and make that `Console` object read in a password which hides the word when typing. Then, we want to store that password into an Array of characters and convert each letter into uppercase using a `for` loop just so it is easier to read when we print out the letters later on.
 
 ```java
 Console c = System.console();
@@ -193,7 +201,7 @@ for(int i=0; i<letters.length; i++) {
 ```
 In our `for` loop, we use the `letters` array's `length` property (using `.length`) so that we can go through each element of the array.
 
-Before we forget, let’s quickly add two import statements at the top of our code, outside the line that reads `public class Main`. We need to import Console and Scanner so that our program can use their functionalities.
+Before we forget, let’s quickly add two import statements at the top of our code, outside the line that reads `public class Main`. We need to import `Console` and `Scanner` so that our program can use their functionalities.
 
 ```java
 import java.io.Console;
@@ -227,7 +235,13 @@ Man m = new Man();
 Scanner s = new Scanner(System.in);
 ```
 
-Ok, now we’re officially ready. Let’s think about the game of hangman for a second. How is it played? Well, it’s turn-based. Someone guesses a letter. If it’s right, then you replace all the letters of the word that corresponds to the correctly guessed letter. If it’s wrong, then you hang the man once. Once all the letters are guessed, they win; otherwise, you win. We can carry over this logic to Java and use a `while` loop. Each iteration of the `while` loop is a turn for the game, carrying out different actions based on the guessed letter. The while loop should only be run when the man is alive, so we set our condition to `m.isAlive()`.
+Ok, now we’re officially ready. Let’s think about the game of hangman for a second. How is it played? Well, it’s turn-based.
+
+- Someone guesses a letter.
+- If it’s right, then you replace all the letters of the word that corresponds to the correctly guessed letter. If it’s wrong, then you hang the man once.
+- Once all the letters are guessed, they win; otherwise, you win. We can carry over this logic to Java and use a `while` loop.
+- Each iteration of the `while` loop is a turn for the game, carrying out different actions based on the guessed letter.
+- The while loop should only be run when the man is alive, so we set our condition to `m.isAlive()`.
 
 ```java
 while (m.isAlive()) {
@@ -296,7 +310,11 @@ if(!checkUnderscore) break;
 ```
 The logic here is pretty similar to the earlier section where we checked if guess was correct. If there is no underscore (`!checkUnderscore` boolean is true), then the `break` keyword allows us to exit out of the `while` loop, even though the Man may still be alive.
 
-Guess what, we’re actually done with the game logic! The game can now be played. But don’t try it out just yet because we need to determine who the winner is. Outside the while loop, we need to print out different victory messages according to the status of the man. If the man is still alive, then the word has been guessed correctly and Player 2 wins. If the man is dead, that means Player 2 failed to guess the word, so Player 1 wins. This can be done using an if-else statement. Add the following code outside of the `while` loop, but still in the `Main` class.
+Guess what, we’re actually done with the game logic! The game can now be played. But don’t try it out just yet because we need to determine who the winner is.
+
+Outside the while loop, we need to print out different victory messages according to the status of the man. If the man is still alive, then the word has been guessed correctly and Player 2 wins. If the man is dead, that means Player 2 failed to guess the word, so Player 1 wins. This can be done using an if-else statement.
+
+Add the following code outside of the `while` loop, but still in the `Main` class.
 
 ```java
 if (m.isAlive()) System.out.println("Success!  Player 2 wins!");
@@ -308,9 +326,10 @@ Now we’re done! Try running it by clicking the big green Run button at the top
 ![screenshot of hangman game with the word "hackclub"](https://cloud-rioba1jmo.vercel.app/0screen_shot_2020-11-18_at_5.32.09_pm.png)
 
 ## Part 6: Hacking
-We hope you’ve had a blast making your very own Java hangman game! And if you were wondering, the fun doesn’t stop here. You may already have some ideas for how to create extensions to improve your game and you should definitely try them out. So, here of some of our ideas and perhaps you can gain some inspiration for more amazing extensions:
+The fun doesn’t stop here! You may already have some ideas for how to create extensions to improve your game and you should definitely try them out. So, here of some of our ideas and perhaps you can gain some inspiration for more amazing extensions:
+
 * Add gallows for the man to hang on - [repl.it](https://repl.it/@rpal/Hangman-with-Gallows) 
 * Make the computer try to guess your word - [repl.it](https://repl.it/@rpal/Hangman-with-Computer-Guess)
 * Alternating game between you and a friend until someone loses - [repl.it](https://repl.it/@rpal/Hangman-with-Alternating-Turns)
 
-Well, you’ve arrived at the end of our project! We’ve had such a splendid time making this project. Though there was a lot of text to read through in this workshop, once again, we’ve really hope you’ve enjoyed this and make sure to check out all the other great workshops. Happy hacking!
+Well, you’ve arrived at the end of our project! Try the hacks above, and once you've finished, share it in the `#scrapbook` channel in the [Hack Club Slack](https://hackclub.com/slack). Happy hacking!
