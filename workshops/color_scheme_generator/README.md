@@ -89,7 +89,7 @@ export default function Color({ colors = [] }) {
   if (!colors.length) return null
   return (
     <div className="container">
-      {colors.map((color, i) => ( // <---------- map method
+      {colors.map((color, i) => ( // <–– map method
           <div
             key={i}
             className="color"
@@ -112,8 +112,8 @@ Open the `App.js` component. To get a random color we will use a package called 
 Let's import `Color.js` and `randomColor` into our `App.js` component. Add these lines of code to the `App` component.
 
 ```jsx
-import Color from './Color' // <----- importing Color.js
-import randomColor from 'randomcolor' //<----- importing random color package
+import Color from './Color' // <–– importing Color.js
+import randomColor from 'randomcolor' // <–– importing random color package
 ```
 
 We will create an array of colors and change the colors when you click the button. Create a button with a class of `btn` inside the `div`.
@@ -192,7 +192,7 @@ It is very effective adding external API class, or event-listeners inside this h
 
 Now we can set the colors of our project using `useEffect()`. We get a base color from `randomColor()` and make a color scheme using an [the color API](https://www.thecolorapi.com/form-scheme). 
 
-The following `getColors()` function creates elements in the `colors` array. We can get different color schemes using our `baseColor`from [the color API](https://www.thecolorapi.com/form-scheme).
+The following `getColors()` function creates elements in the `colors` array. We can get different color schemes using our `baseColor` from [the color API](https://www.thecolorapi.com/form-scheme).
 
 Make sure that you import `useEffect` from React.
 
