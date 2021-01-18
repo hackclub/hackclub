@@ -1,4 +1,3 @@
-
 ---
 name: 'Reading the Internet'
 description: 'Use Python to read HTML and extract any information you can find!'
