@@ -5,7 +5,7 @@ author: '@rpalakkal'
 img: 'https://cloud-h61jcon63.vercel.app/0image.png'
 ---
 
-Have you seen all the hype around machine learning and wondered what it's about and how to get started? Well, you're in the right place. In this workshop, we will be training a simple machine learning model to classify handwritten digits. You can think of this as the Hello World program of machine learning.
+Have you seen all the hype around machine learning and wondered what it's about and how to get started? Well, you're in the right place. In this workshop, we will be training a simple machine learning model to classify handwritten digits.
 
 ![overview of different stages/phases of tutorial](https://cloud-h61jcon63.vercel.app/0image.png)
 
@@ -17,7 +17,7 @@ An understanding of Python or any other programming language will help greatly w
 
 ### Creating the project
 
-We're going to be coding in Google Colab, an online tool that's great for training machine learning models. Make a new Colab project by [clicking here](https://colab.research.google.com/#create=true)
+We're going to be coding in Google Colab, an online tool that's great for training machine learning models. Make a new Colab project by [clicking here](https://colab.research.google.com/#create=true).
 
 ## Coding in Colab
 
@@ -70,6 +70,8 @@ Code in Colab is separatered into "cells", so you can separate the code you writ
 
 Before preparing the dataset, let us look at some samples of training data. When approaching machine learning problems, visualizing data, when possible, is a great thing to do since it gives useful insights. We can do this using Matplotlib, a Python library that allows us to create simple plots and images from mathematical data.
 
+*Note: for the rest of this workshop, when you see multiple code blocks or images next to each other, and the last one shows some output, assume each code block (other than the one that shows the output) should be written in a new cell and that you should run the cell to see that output.*
+
 In the new cell you created, add:
 
 ```py
@@ -83,7 +85,7 @@ plt.tight_layout()
 
 ![examples of correct predictions](https://cloud-lc775uvcv.vercel.app/3kerasmnist_9_0.png)
 
-The `plt.imshow` function converts the digit matrix (all the images are stored as matrices, as we'll soon see) into a visible image. Curious to see what the raw data looks like? Let's take a look. Add these two `print` statements at the bottom and click the Play button.
+The `plt.imshow` function converts the digit matrix (all the images are stored as matrices, as we'll soon see) into a visible image. Curious to see what the raw data looks like? Let's take a look. Add these two `print` statements in a new cell and click the Play button to run the cell.
 
 ```py
 print(X_train[0])
@@ -155,8 +157,6 @@ As you can see, each image is a matrix of size 28 pixels by 28 pixels. Each pixe
 ![diagram showing converting 28x28 image to 784 vector](https://cloud-iyr53pwod.vercel.app/0image.png)
 
 The neural network will take a single vector for training, so the 28x28 images have to be changed into a single 784 dimensional vector. Also we must normalize the pixel values to be from [0->1] instead of [0->255].
-
-*Note: for the rest of this workshop, when you see multiple code blocks next to each other, and the last one shows some output, assume each code block (other than the code block) should be written in a new cell.*
 
 Create a new cell, then add the following code:
 
