@@ -186,7 +186,7 @@ After the variables, add the following code:
 
 ```py
 def drawMap():
-  //Variables would be here.
+  #Variables would be here.
   turtle.tracer(0, 0)
   for arr in myarr:
     for value in arr:
@@ -353,8 +353,8 @@ Believe it or not, we're almost done! Now, let's write some code to allow our pr
 ```py
 turtle.onkey(up, "w")
 turtle.onkey(left, "a")
-turtle.onkey(right, "d")
 turtle.onkey(down, "s")
+turtle.onkey(right, "d")
 
 turtle.listen()
 turtle.mainloop()
