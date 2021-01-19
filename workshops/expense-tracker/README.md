@@ -225,3 +225,5 @@ In this [version](https://repl.it/@iamsid47/exp-track-demo1), you can see the to
 I made a GUI for my [expense tracker](https://repl.it/@iamsid47/exp-track-demo2) along with login/logout in this demo.
 
 This [one](https://repl.it/@iamsid47/exp-track-demo3#main.py) is a simpler version of the GUI I have made above.
+
+Happy Hacking!
