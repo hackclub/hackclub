@@ -1,30 +1,31 @@
 ---
-name: 'Battleship Guessing Game'
-description: 'Guess Where the Battleship Is!'
+name: 'Battleship'
+description: 'Create a Battleship guessing game with C#!'
 author: '@JakeGerber'
-image : 'https://cloud-qb14h5sfw.vercel.app/0screenshot__1442_.png'
+img: 'https://cloud-qb14h5sfw.vercel.app/0screenshot__1442_.png'
 ---
-
-# Create a Battleship Guessing Game!
 
 <img src="https://cloud-qb14h5sfw.vercel.app/0screenshot__1442_.png" width="380" alt="Battleship Guessing Example">
 
-Battleship is fun but the guessing portion is the best part right? Let's create a game where we have to guess where the opponent's ship is in the least guesses possible!
+In this workshop, we're going to make a fully-functional implementation of the popular game Battleship, in C#! Ready to get started?
 
 <img src="https://media.tenor.com/images/b9fa70678047d351c42397a375b222e9/tenor.gif" width="400" alt="Battleship Gif">
 
-# Repl.it Setup
+[Final Demo and Code](https://repl.it/@CosmicSnowman/Battleship-Workshop#main.cs)
 
-We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE! No need for downloads.
+## Getting started
 
-Create a new repl and use C# as the language.
+We're going to use [Repl.it](https://repl.it/~), a free, online code editor, to create the project. To get started, visit [repl.it/languages/c#](https://repl.it/languages/c#).
 
 <img src="https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
 
-# Initializing the Board
+Don't worry if you've never written C# before. As long as you've written code in most languages before, you'll be able to easily pick it up!
+
+## Initializing the Board
+
 <img src="https://media4.giphy.com/media/oF5oUYTOhvFnO/200.gif" width="400" alt="Spongebob Gif">
 
-We need to initialize the board. This will make more sense as you write more. Let's begin.
+When your repl spins up, you should see this code already added in the `main.cs` file:
 
 ```csharp
 using System;
@@ -35,7 +36,8 @@ class MainClass {
   }
 }
 ```
-Your program should initially look like this. If it doesn't then that means you deleted something!
+
+Let's start by creating two [2D arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays) of characters.
 
 ```csharp
 static void Main(string[] args)
@@ -44,7 +46,10 @@ static void Main(string[] args)
   char[,] board = new char[6, 6];
 }
 ```
-Create two [2D arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays) of characters. The actual board is the answer key, and the board is the user guessing board.
+
+`actualBoard` refers to the answer key, and `board` refers to the user guessing board.
+
+Next, create two for loops, one nested within the other, that loops through each square of the board.
 
 ```csharp
 static void Main(string[] args)
@@ -60,23 +65,10 @@ static void Main(string[] args)
   }
 }
 ```
-We are just going through both arrays and making every single value a dot. This represents empty space (like the water in battleship).
 
+Inside these loops, we set the value of every piece of both boards to a dot. This represents an empty space (like the water in Battleship).
 
-```csharp
-static void Main(string[] args)
-{
-  //Previous code would be here.
-  for (int i = 0; i < board.GetLength(0); i++)
-  {
-    for (int x = 0; x < board.GetLength(1); x++)
-    {
-        board[i, x] = '.';
-        actualBoard[i, x] = '.';
-    }
-  }
-}
-```
+Next, after both for loops complete, create a new [Random](https://docs.microsoft.com/en-us/dotnet/api/system.random?view=net-5.0) object.
 
 ```csharp
 static void Main(string[] args)
@@ -85,13 +77,13 @@ static void Main(string[] args)
   Random random = new Random();
 }
 ```
-We are creating a [random](https://docs.microsoft.com/en-us/dotnet/api/system.random?view=net-5.0) object that will allows us to get random values. This will be used for the random ship placement.
+Random is a library built in to C# that lets us easily generate random values. Soon, we're going to use this for the random ship placement.
 
+## Ship Placement
 
-# Ship Placement
 <img src="https://media1.giphy.com/media/jUwpNzg9IcyrK/giphy.gif" width="400" alt="Homer Simpson Gif">
 
-But where is the ship going to be placed? Well dear reader, we're about to solve this mystery.
+Time to place the ship on the board. But where is the ship going to be placed? Well, this is where the `Random` object we created earlier comes in handy. Under all of the code you just wrote, but still in the `Main` function, add:
 
 ```csharp
 static void Main(string[] args)
@@ -102,15 +94,19 @@ static void Main(string[] args)
   int dir = random.Next(0, 2);
 }
 ```
-With our random object, we are getting a random number that is either a 0 or 1. This will represent if the ship will be vertical or horizontal.
 
-## Horizontal
+Here, we're initializing an integer called `dir` that generates a random that's either 1 or 2. (The upper bound of a Random object is not included, so if we want to choose between 0 and 1, the upper limit needs to be 2). This will represent whether the ship will be vertical or horizontal.
+
+### Horizontal placement
+
+Let's write some code that handles the random value we just generated.
+
 ```csharp
   static void Main(string[] args)
   {
     // The code we already wrote would be here.
       
-      //vertical ship
+      // horizontal ship
       if (dir == 0)
       {
           int x = random.Next(0, 3);
@@ -123,20 +119,28 @@ With our random object, we are getting a random number that is either a 0 or 1. 
   }
 }
 ```
-If "dir" equals 0, then get a random place on the board, and get the two spots after it. The randomness specifies that it will stay within the bounds of the array so it will not cause an error.
 
-## Vertical
+- If `dir` equals 0, then the ship will be placed horizontally.
+- We generate two random numbres to represent a random place on the board.
+- We set the random coordinates on the `actualBoard` to `X`, to represent the placement of a ship.
+- Then, we also set 2 additional x coordinates to an `X`, to give the ship some length.
+- The randomness specifies that it will stay within the bounds of the array so it will not cause an error.
+
+### Vertical
+
+Now, let's handle vertical placement. Add an `else if` statement that checks if `dir` equals 1.
+
 ```csharp
 static void Main(string[] args)
 {
   // The code we already wrote would be here.
 
-    //vertical ship
+    //horizontal ship
     if (dir == 0)
     {
       //Code we just wrote.
     }
-    //horizontal ship
+    //vertical ship
     else if (dir == 1)
     {
         int x = random.Next(0, 6);
@@ -148,9 +152,14 @@ static void Main(string[] args)
     }
 }
 ```
-If "dir" equals 1, then get a random place on the board, and get the two spots after it. The randomness specifies that it will stay within the bounds of the array so it will not cause an error.
 
-## Ending Statements
+- If `dir` equals 1, then the ship will be placed vertically.
+- Add the same code you added for the horizontal placement, except switch the random bounds for the x and y coordinates and increment 2 `y` values instead of 2 `x` values.
+
+### Ending Statements
+
+After both if statements, add:
+
 ```csharp
 static void Main(string[] args)
 {
@@ -161,30 +170,29 @@ static void Main(string[] args)
     int guesses = 0;
 }
 ```
-We are then creating variables to track the ship pieces, the hits, and the guesses. They will be used when the user starts guessing.
 
-# Guessing
+Here, we're creating 3 integer variables to track the ship pieces, the ship hits, and the guesses. We'll use these when the user starts guessing.
+
+## Guessing
+
 <img src="https://media4.giphy.com/media/26tjZRQ4mAgj4L3TW/source.gif" width="400" alt="Simpsons Guessing Gif">
 
-Guessing is the main part of this game. We should probably add that in now. I guess.
+Guessing is the main part of this game. So, let's add that functionality!
+
+Under the code you just wrote, at the bottom of the `Main` method, add an infinite `while` loop:
 
 ```csharp
-using System;
+static void Main(string[] args)
+{
+  //What we already wrote.
 
-class MainClass {
-  static void Main(string[] args)
+  while (true)
   {
-    //What we already wrote.
-    
-    while (true)
-    {
-    }
   }
 }
 ```
-- Add this while loop. We are going to focus on this for the rest of the "Guessing" section.
-## Try-Catch
-We DON'T want errors. They will BREAK our program. Let's catch those suckers up.
+
+Inside the `while` loop, add a [`try-catch` block](https://www.w3schools.com/cs/cs_exceptions.asp):
 
 ```csharp
 while (true)
@@ -198,10 +206,14 @@ while (true)
   }
 }
 ```
-This [try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch) block will catch and bad inputs that cause errors. If there is a bad error, it lets the user know.
 
-## User Input
-Have the user type things in. The computer isn't a psychic!
+This try-catch block will catch and bad inputs that cause errors. If we don't include this, then our program will break if a user enters something invalid!
+
+### User Input
+
+Inside the `try` block, let's add a way for the program to accept user input and make a guess.
+
+Start by calling the `drawBoard()` function. We haven't written this function yet, but we will in a bit, so don't worry :)
 
 ```csharp
 try
@@ -209,7 +221,8 @@ try
   drawBoard(board);
 }
 ```
-Call the drawboard function. We will write it later on so do not worry about it for now.
+
+Then, add the following lines:
 
 ```csharp
 try
@@ -221,7 +234,15 @@ try
   int row = 0;
 }
 ```
-Get the user input for the row letter and make it upper case. Also, create a row integer and set it to 0. We will use it in a moment.
+
+This code:
+
+- Prompts the user for input
+- Uses `Console.ReadLine()` to accept user input
+- Converts their letter to uppercase
+- Initializes an intege variable called `row` and sets it to 0. We'll use this variable in a moment.
+
+Next, add the following 3 lines:
 
 ```csharp
 try
@@ -237,10 +258,19 @@ try
   int col = Int32.Parse(rowInput)-1;
 }
 ```
-Get the user input for the column number and parse it into an integer. Also, the columns are ordered 1-6 so we subtract 1 from the input so it starts at the first index in the 2D array.
 
-## Letter Input to Number
-Letters can't be inputted in a 2D array. Let's convert them to numbers.
+These lines:
+
+- Prompt the user for a number
+- Accepts their input
+- Parses the integer (by default, console input is a string, so we want to convert it to an integer type)
+- Subtracts 1 so that its placement on the board can be more accurate. (The first index of an array is 0, so if we didn't do this, the user's guess would be 1 off)
+
+### Letter Input to Number
+
+At first, we asked the user for a letter. But we can't input a letter into our 2D array. So, we'll need to convert the letters to row numbers.
+
+At the bottom of the `try` block, add:
 
 ```csharp
 try
@@ -273,48 +303,42 @@ try
   }
 }
 ```
-We are assigning the letters to a a number. Don't overthink it! A-F is now 1-5 for the row integer.
 
-## Checking Guess
-Is the guess correct? Let's find out.
+Now, rows A-F are converted to rows 1-5.
+
+### Checking Guess
+
+Was the user's guess correct? Let's write some code to find out.
 
 ```csharp
 try
 {
-  //Previous code would be here.
-  if (board[row, col] == '.')
-  {
-      guesses++;
-  }
-}
-```
-Add an if statement that makes sure that the spot that the user guesses has not been guessed before. This is noted by the period. We also want to increment the guesses by one.
-
-```csharp
-if (board[row, col] == '.')
-{
-    guesses++;
-    if (actualBoard[row, col] == 'X')
+    //Previous code would be here.
+    if (board[row, col] == '.')
     {
-    }
-    else
-    {
-        board[row, col] = 'O';
-        //Console.WriteLine("Miss!");
+        guesses++;
+        if (actualBoard[row, col] == 'X')
+        {
+            board[row, col] = 'X';
+            shipHits++;
+            Console.WriteLine("Hit!");
+        }
+        else
+        {
+            board[row, col] = 'O';
+            Console.WriteLine("Miss!");
+        }
     }
 }
 ```
-Create an if statement that checks if the user guess is a hit, based on the actualboard key. We will write the code for the hit case in a moment. For the miss case, set the user's board guess spot to an "O" to represent a miss.
 
-```csharp
-if (actualBoard[row, col] == 'X')
-{
-    board[row, col] = 'X';
-    //Console.WriteLine("Hit!");
-    shipHits++;
-}
-```
-If it is a hit, then set the user's board guess spot to an "X" to represent a hit. Also, increment the shipHits integer by one.
+- This if statement makes sure the spot that the user guessed has not been guessed before (if it hasn't been guessed before, the spot will be a `.`.
+- First, we increment the number of guesses by 1.
+- Then, we write an if/else statement to check if their guess is a hit on the answer key board.
+- If it's a hit, we set that spot on the user's board to `X` to indicate a hit. Then we tell the user they've hit.
+- If it's a miss, we set that spot on the user's board to `0` to indicate a miss. Then we tell the user they've missed.
+
+Next, inside the if statement that checks if it's a hit, add this second if statement, which compares the `shipHits` and `shipPieces` integers. If they're equal, then the user has guessed all of the pieces of ship, so we break out of the outer `while (true)` loop.
 
 ```csharp
 if (actualBoard[row, col] == 'X')
@@ -328,54 +352,69 @@ if (actualBoard[row, col] == 'X')
     }
 }
 ```
-If the ship hits are equal to the amount of ship pieces, then we want to break out of the while loop. This means that all the ships are taken down and the user wins.
 
-## Ending Statements
+### Ending Statements
+
+Finally, we call the `drawBoard()` function again to draw the final board, and we let the user know that they won the game.
+
 ```csharp
 while (true)
 {
-  //Code we already wrote.
+    //Code we already wrote.
 }
 drawBoard(board);
 Console.WriteLine($"You won with {guesses} guesses!");
 ```
-These last statements draw the final board and tell the user how many guesses it took them. This is the last part of the main function.
 
-# Drawing the Board
+The program won't break out of the loop until the user wins the game, so we know that if they reach that `Console.WriteLine` statement, they've won.
+
+## Drawing the Board
+
 <img src="https://media0.giphy.com/media/fX8mSey5xMn3Q5x4E9/giphy.gif" width="400" alt="Drawing Gif">
 
-The user needs to see the board! Let's draw it.
+Now, let's write the long-awaited `drawBoard()` method!
 
-## Creating the Function
+### Creating the Function
+
+Inside of your `MainClass`, but after the `Main` method, create a new function called `drawBoard()`, which accepts a 2D array of characters, like so:
+
 ```csharp
 using System;
 
 class MainClass {
-  static void Main(string[] args)
-  {
-    //Everything we already wrote.
-  }
-  
-  public static void drawBoard(char[,] arr)
-  {
-  }
+    static void Main(string[] args)
+    {
+        //Everything we already wrote.
+    }
+
+    public static void drawBoard(char[,] arr)
+    {
+    }
 }
 ```
-Create a new function and pass in a 2D character array. This will be where the board is drawn to the screen.
 
-## Top Numbers
+### Top Numbers
+
+Inside the newly-created `drawBoard()` method, add this code:
+
 ```csharp
 public static void drawBoard(char[,] arr)
 {
-  Console.Clear();
-  int asciiVal = 65;
+    Console.Clear();
+    int asciiVal = 65;
 }
 ```
-Clear the console so we can redraw the board. Also create an integer of 65, the [ascii](https://en.wikipedia.org/wiki/ASCII) value for "A".
+
+This code:
+
+- Clears the console so we can redraw the board.
+- Creates an integer value that's set to 65, the [ASCII](https://en.wikipedia.org/wiki/ASCII) value for "A".
+
+Next, add the following code:
 
 ```csharp
-  public static void drawBoard(char[,] arr)
-  {
+public static void drawBoard(char[,] arr)
+{
     Console.Clear();
     int asciiVal = 65;
 
@@ -385,59 +424,53 @@ Clear the console so we can redraw the board. Also create an integer of 65, the 
         Console.Write($"{i}\t");
     }
     Console.WriteLine("\n");
-  }
+}
 ```
-We are just drawing the top row of numbers. This is mainly a lot of spacing. Don't look too deep into it. Lines such as \t create a tab, and \n creates a new line. 
 
-```csharp
-  public static void drawBoard(char[,] arr)
-  {
-    Console.Clear();
-    int asciiVal = 65;
+Here, we're just drawing the top row of numbers (1-6). This is mainly a lot of spacing. Don't look too deep into it. `\t` creates a tab, and `\n` creates a new line.
 
-    Console.Write(" \t");
-    for (int i = 1; i < arr.GetLength(1) + 1; i++)
-    {
-        Console.Write($"{i}\t");
-    }
-    Console.WriteLine("\n");
-  }
-```
-- The "asciiValue" integer is initialized and used later.
-- We are then looping through and displaying the top numbers (1-6).
+### Drawing the Board
 
-## The Rest
+Let's write the rest of the method for drawing the board. Inside the `drawBoard()` method, add:
+
 ```csharp
 public static void drawBoard(char[,] arr)
 {
-  Console.Clear();
-  int asciiVal = 65;
+    // code we just wrote
 
-  Console.Write(" \t");
-  for (int i = 1; i < arr.GetLength(1) + 1; i++)
-  {
-      Console.Write($"{i}\t");
-  }
-  Console.WriteLine("\n");
-
-  for (int i = 0; i < arr.GetLength(0); i++)
-  {
-    Console.Write($"{(char)asciiVal}\t");
-    for (int x = 0; x < arr.GetLength(1); x++)
+    for (int i = 0; i < arr.GetLength(0); i++)
     {
-        Console.Write($"{arr[i, x]}\t");
+        Console.Write($"{(char)asciiVal}\t");
+        for (int x = 0; x < arr.GetLength(1); x++)
+        {
+            Console.Write($"{arr[i, x]}\t");
+        }
+        Console.WriteLine();
+        asciiVal++;
     }
-    Console.WriteLine();
-    asciiVal++;
-  }
 }
 ```
-Loop through the board that was passed in and draw the value, along with adding a tab afterwards to create spacing. Make sure to increment the ascii value after each row. This makes it go from A, to B, to C, etc.
 
-# Final Code
+Here, we:
+
+- Loop through the board that was passed in
+- [Casts](https://www.w3schools.com/cs/cs_type_casting.asp) the ASCII value we set earlier to a character, and prints it, along with a tab at the end
+- Loops through the rest of the board 2D array
+- Prints the value of each square (remember, either `.`, `X`, or `0`), along with a tab at the end
+- Prints an empty line (for readability)
+- Increments the ASCII value so that it increments the rows from A, to B, to C, etc. (if this doesn't make sense, you can see it for yourself in a moment)
+
+## You're done!
+
 <img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/45/1478516949-testify.gif" width="400" alt="Bart Simpson Gif">
 
 I sunk your battleship! Wait, wrong line. I mean you've finished the workshop! That sounds better.
+
+Try it yourself! Play the game with the computer by clicking the green "Run" button at the top of your repl.
+
+<details>
+
+<summary>Final code:</summary>
 
 ```csharp
 using System;
@@ -590,8 +623,14 @@ class MainClass {
 }
 ```
 
-# More You Can Create
-- [Original Program](https://repl.it/@CosmicSnowman/Battleship-Workshop#main.cs)
+</details>
+
+## Hacking
+
+The fun doesn't stop here! Here are some ways you can expand on this project:
+
 - [Add More Ships](https://repl.it/@CosmicSnowman/Battleship-Workshop-Expanded-1#main.cs)
 - [Add Color](https://repl.it/@CosmicSnowman/Battleship-Workshop-Expanded-2#main.cs)
 - [Add the Option to Play Again](https://repl.it/@CosmicSnowman/Battleship-Workshop-Expanded-3#main.cs)
+
+Happy hacking!
