@@ -1,6 +1,6 @@
 ---
-name: 'Sprite Creator Program'
-description: 'Make your own sprites!'
+name: 'Sprite Creator'
+description: 'Make your own sprites with Python!'
 author: '@JakeGerber'
 image: 'https://cloud-j2h9qribj.vercel.app/0screenshot__1437_.png'
 ---
@@ -12,37 +12,64 @@ Video game sprites are rad, so let's create our own. In this workshop, we will b
 
 <img src="https://art.pixilart.com/a3c97a99fb3c1ed.gif" width="380" alt="Zelda 2 Link Gif">
 
-# Repl.it Setup
+## Getting started
 
-We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE, meaning that it allows us to write code from the Repl.it website!
+We're going to use [Repl.it](https://repl.it/~), a free, online code editor, to create the project.
 
-Create a new repl and use Python as the language.
+Create a new Python repl by going to [repl.it/languages/python3](https://repl.it/languages/python3).
 
 <img src="https://cloud-rccf2cjdi.vercel.app/0screenshot__1440_.png" width="600" alt="Python Repl">
 
-# What is a Sprite?
-Essentially, a [sprite](https://en.wikipedia.org/wiki/Sprite_(computer_graphics)#:~:text=In%20computer%20graphics%2C%20a%20sprite,in%20a%202D%20video%20game.&text=Originally%2C%20the%20term%20%22sprites%22,by%20hardware%2C%20with%20a%20background.) is a bunch of squares (called pixels) that create an image. Think of retro video games!
+### What is a sprite?
+
+Essentially, a [sprite](https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) is a bunch of squares (called pixels) that create an image. Think of retro video games!
 
 <img src="https://cloud-8hfp3i0cf.vercel.app/0sansspr.png" width="380" alt="Sans Sprite">
 
-This sprite is made up of black and white squares that ultimately produce this skeleton face.
+In this example, the sprite is made up of black and white squares that ultimately produce this skeleton face.
 
-# Importing Turtle
-We are using the Turtle library to draw to the screen.
+### Importing Turtle
+
+We are using the [Turtle library](https://docs.python.org/3/library/turtle.html) to easily draw on the screen. Start by adding this import statement to the top of your `main.py` file:
+
 ```py
 import turtle
 ```
-Add this statement to the top of the program in order to import the Turtle library.
 
-# Drawing a Pixel
-Let's create a function that goes to a speicified location and draws a single pixel. We're definitely going to be calling this function a lot, unless you draw like two pixes. Art is art I guess. :P
+### Initial Statements
+
+Just under the `import` statement, add these three lines:
+
+```py
+turtle.hideturtle()
+turtle.clear()
+turtle.speed(0)
+```
+
+Here, the turtle's cursor is hidden, the screen is cleared, and the speed is set 0 so it draws instantly.
+
+Next, add these three lines:
+
+```py
+allsprites = []
+place = 0
+
+myarr = []
+```
+
+There is an array for all the sprites, the index place, and another empty array. This will make more sense later.
+
+## Drawing a Pixel
+
+Let's create a function that goes to a specified location and draws a single pixel. We're definitely going to be calling this function a lot, unless you draw like two pixels. Art is art I guess. :P
 
 ```py
 def drawSquare(x, y, side, color):
   turtle.up()
   turtle.goto(x, y)
 ```
-Right under our import statment add this function declaration. We are passing in the x and y coordinates, the size of the pixel, and the color. We are then having our turtle move up and go to the specified location.
+
+Right under the code you just wrote, add a function called `drawSquare()`, which passes in the x and y coordinates, the size of the pixel, and the color. Inside, move the turtle up and go to the passed-in location.
 
 ```py
 def drawSquare(x, y, side, color):
@@ -52,6 +79,7 @@ def drawSquare(x, y, side, color):
   if (not color == "none"):
     turtle.color(color)
 ```
+
 We want to draw the square if they input a color. If "none" is inputted, then we don't want to draw anything.
 
 ```py
@@ -62,9 +90,11 @@ def drawSquare(x, y, side, color):
   if (not color == "none"):
     turtle.color(color)
     turtle.begin_fill()
+    
     turtle.end_fill()
 ```
-We need the begin and end fill functions in order to fill in the square.
+
+We need to wrap everything we draw inside `begin_fill()` and `end_fill()` functions in order to fill in the square. Add these two functions. Leave a space in between them because we're going to add some drawing code in a second.
 
 ```py
 def drawSquare(x, y, side, color):
@@ -79,43 +109,33 @@ def drawSquare(x, y, side, color):
       turtle.right(90)
     turtle.end_fill()
 ```
-Remember, a square has four sides. The for loop makes the square.
 
-# Reading in the Text File
-We are going to read in a text file that we will later create. The text file will be where the user enter's their sprite information. Add the code we will write after the "import" statement but before our function.
+In between the `begin_fill()` and `end_fill()` functions, add a for loop that draws all 4 sides of a square.
 
-<img src="https://vip.socio-corp.jp/wp-content/uploads/sites/3/2014/12/pixel-art-1.gif?w=500" width="380" alt="Train Pixel Art Gif">
+## Reading in the Text File
 
-## Initial Statements
-Add these initial statements. Please don't skip over this.
+We are going to read in a text file that we will later create. The text file will be where the user enters their sprite information.
 
-```py
-turtle.hideturtle()
-turtle.clear()
-turtle.speed(0)
-```
-The turtle's cursor is hidden, the screen is cleared, and the speed is set 0 so it draws instantly.
+<img src="https://cloud-8z2exkpcx.vercel.app/068747470733a2f2f7669702e736f63696f2d636f72702e6a702f77702d636f6e74656e742f75706c6f6164732f73697465732f332f323031342f31322f706978656c2d6172742d312e6769663f773d353030.gif?w=500" width="380" alt="Train Pixel Art Gif">
 
-```py
-allsprites = []
-place = 0
+### Opening the Text File
 
-myarr = []
-```
-There is an array for all the sprites, the index place, and another empty array. This will make more sense later.
+After the initial statements but before the `drawSquare()` function, add:
 
-## Opening the Text File
-We're going to create a text file later on. We need a way to access it's contents!
 ```py
 f = open("sprite.txt", "r")
 
 f.close()
-
 ```
-These statements allow us to open the "sprite.txt" text file that we will later create and assigns it to a file object. [Here is more information about opening files in Python.](https://www.w3schools.com/python/python_file_open.asp)
 
-## Checking Each Line
-Let's take it the text file contents line by line.
+These statements allow us to open the `sprite.txt` file that we will create in a minute, and assigns it to a file object.
+
+[*Learn more about opening files in Python.*](https://www.w3schools.com/python/python_file_open.asp)
+
+### Checking Each Line
+
+In between the two lines you just wrote, add the following code:
+
 ```py
 f = open("sprite.txt", "r")
 
@@ -124,11 +144,12 @@ while(True):
 
 f.close()
 ```
-The while loop makes sure that we check every line. We are also assigning the line that the file read to the "tempLine" variable.
+
+This is an infinite `while` loop that loops through every line in the `sprite.txt` file and assigns each one to a variable called `tempLine`.
+
+Next, add this:
 
 ```py
-f = open("sprite.txt", "r")
-
 while(True):
   tempLine = f.readline()
 
@@ -137,10 +158,10 @@ while(True):
   elif tempLine[0] == "-":
     allsprites.append(myarr.copy())
     myarr.clear()
-
-f.close()
 ```
-We are then making sure that there is text there. If there is no text then it is end of the file and we break out of the while loop. If the text is a dash, then we are done with our current sprite, append it to our "allsprites" array, and clear "myarr". This seems complicated but will make much more sense soon!
+
+- First, we check to make sure that the line we're on contains text. If there is no text, then it is the end of the file, so we break out of the loop.
+- If the text is a dash, then we are finished with our current sprite, so we append it to the `allsprites` array we created earlier, and we clear the `myarr` array. The reason why we do this will make sense soon.
 
 ```py
 while(True):
@@ -149,11 +170,12 @@ while(True):
   temparr = []
   tempr = ""
 ```
-We are creating an empty "temparr" array. This will hold our pixel color information on the line. There is also a "tempr" string that will get the color.
+
+Next, create an empty array called `temparr`. This will hold our pixel color information on the line. After that, create an empty string called `tempr`. We'll use this later to get color data.
 
 ```py
 while(True):
-  //Previous code would be here.
+  #Previous code would be here.
 
   temparr = []
   tempr = ""
@@ -164,7 +186,9 @@ while(True):
       temparr.append(tempr)
       tempr = ""
 ```
-We are looking at the text file line by line, and the while loop is looking at each letter in the line. The "tempr" string will get the entire color until a comma is seen, which represents the end of the pixel color. If a comma is seen, then append "tempr" to the "temparr" array and set it back to an empty string.
+
+Under the `tempr` string, add a for loop, which loops through each letter in the `tempLine` string. It continues adding characters to the `tempr` string until it finds a comma. If it finds a comma, it appends the fully-formed `tempr` string to the `temparr` array, resets `tempr` to an empty string, and continues searching. Once this loop completes, `temparr` will contain a list of strings from the `sprites.txt` file. We'll find out what exactly this data will be in a minute.
+
 ```py
 while(True):
   //Previous code would be here.
@@ -181,14 +205,18 @@ while(True):
 
 f.close()
 ```
-After the line is read, append the "temparr" array to the "myarr" array. Outside of the while loop, close the file. This is because all of the lines are read at that point.
 
-# Drawing All the Pixels
+After the loop completes, append the `temparr` array to the `myarr` array.
+
+## Drawing All the Pixels
+
 Everything needs to be drawn! EVERYTHING!
+
 ```py
 def draw(currentarr):
 ```
-Add this function right under the "drawSquare" function. It takes in an array that contains the sprite information.
+
+Add a function called `draw()`, which takes an array of sprite information, right after the `drawSquare()` function.
 
 ```py
 def draw(currentarr):
@@ -196,9 +224,12 @@ def draw(currentarr):
   x = -60
   y = 60
   originalX = -60
-  side = 10
+  size = 10
 ```
-We are clearing the screen in order to draw the sprite, and initializing some variables to determine our starting position and size of each pixel.
+
+Inside the function,
+- clear the screen
+- initialize some x and y coordinates to determine the starting point and size of each pixel.
 
 ```py
 def draw(currentarr):
@@ -207,7 +238,8 @@ def draw(currentarr):
   turtle.tracer(0, 0)
   turtle.update()
 ```
-The turtle tracer and update functions make it so the screen will refresh after all of the sprite is complete, instead of each time something is drawn. Without it, everything will be drawn REALLY slow.
+
+The turtle tracer and update functions make it so the screen will refresh after all of the sprite is complete, instead of each time something is drawn. Without it, everything will be drawn REALLY slowly.
 
 ```py
 def draw(currentarr):
@@ -222,21 +254,25 @@ def draw(currentarr):
     x = originalX
   turtle.update()
 ```
-The for loop will go through each line within our sprite, and then each pixel within each line. The pixel will be drawn, and then the x and y variables are updated to reflect the position the next pixel is at.
+In between the `turtle.tracer()` and `turtle.update()` lines, add two for loops, one nested inside the other. This will loop through each line within our sprite, and then each pixel within that line. The pixel will be drawn, and then the x and y variables update to refelct the position of the next pixel.
 
-# Changing the Current Sprite
-We are going to add functionality to allow you to cycle between your sprites.
+## Changing the Current Sprite
+
+Next, let's write some code that allows you to cycle between your sprites.
 
 <img src="https://media0.giphy.com/avatars/nickyrojo/AJxzsBVCtrjo.gif" width="380" alt="Pixel Art Dog Gif">
 
-## Left
+### Left
+
 I hope you know directions!
+
 ```py
 def left():
   global place
   place -= 1
 ```
-Add this function at the bottom of our program. Access the place value that we created in our initial statements by making it global and decrement it because we are cycling left.
+
+Add this function at the bottom of the program. Access the `place` value that we created in our initial statements by making it global. Then, decrement it, because we are cycling left.
 
 ```py
 def left():
@@ -247,16 +283,21 @@ def left():
     place = int(len(allsprites)) - 1
   draw(allsprites[place])
 ```
-If our place is less than 0, the first index, we need to go to the back of our sprite list. We are then calling our "draw" function and using our current sprite in the parameter.
 
-## Right
+If the `place` is less than 0 (the first index), we need to go to the back of our sprite list.
+
+Then, call the `draw()` function and use the current sprite in the parameter.
+
+### Right
+
 I hope you know directions part 2!
+
 ```py
 def right():
   global place
   place += 1
 ```
-Add this function at the bottom of our program. Instead of decrementing the place value, we are incrementing it since we are moving right.
+Create another function at the bottom of the file called `right()`. Add the same code that you added for `left()`, except this time we're incrementing `place` by 1 (becasue we're cycling right).
 
 ```py
 def right():
@@ -267,10 +308,13 @@ def right():
     place = 0
   draw(allsprites[place])
 ```
-If our place is greater than our final index, we are going back to index 0, the first index. We are then calling our "draw" function and using our current sprite in the parameter.
 
-# Final Statements
-Almost there. Add these statements at the bottom of your program.
+If the `place` is greater than the final index, we go back to index 0 (the first index). Then, just like before, we `draw()` the current sprite.
+
+## Final Statements
+
+Almost there. Now, add these statements at the bottom of your program.
+
 ```py
 draw(allsprites[place])
 
@@ -280,21 +324,77 @@ turtle.onkey(right, "Right")
 turtle.listen()
 turtle.mainloop()
 ```
-The draw function will draw our current sprite so there is a sprite shown when the program is run. The turtle listens for the left and right arrow keys to call their respective function.
 
-# Creating the Text File
-Create a file and name it "sprite.txt".
+The `draw()` function will draw our current sprite so there is a sprite shown when the program is first run. Then, the turtle listens for the left and right arrow keys to call their respective function.
+
+## Creating the Text File
+
+Finally, let's create the long-awaited `sprite.txt` file and populate it with sprite data.
 
 <img src="https://cloud-avutgg3d9.vercel.app/0screenshot__1434_.png" width="380" alt="sprite.txt file">
 
 - Add some colors! Make sure each color has a comma after it, with no spaces anywhere.
-- If you want to create a new sprite then add a dash on it's own line.
+- If you want to create a new sprite then add a dash on its own line.
+
 <img src="https://cloud-ft6bf29c5.vercel.app/0screenshot__1438_.png" width="380" alt="Example sprites">
 
-# Final Code for "main.py"
+<details>
+
+<summary>Here's some example sprite data that you can use:</summary>
+
+```
+none,none,none,red,red,red,red,red,red,
+none,none,red,red,red,red,red,red,red,red,red,red,
+none,none,brown,brown,brown,tan,tan,tan,black,tan,none,none,
+none,brown,tan,brown,tan,tan,tan,tan,black,tan,tan,tan, tan
+none,brown,tan,brown,brown,tan,tan,tan,tan,black,tan,tan,tan,
+none,brown,brown,tan,tan,tan,tan,tan,black,black,black,black,
+none,none,none,tan,tan,tan,tan,tan,tan,tan,tan,
+none,none,red,red,blue,red,red,red,red,
+none,red,red,red,blue,red,red,blue,red,red,red,
+red,red,red,red,blue,blue,blue,blue,red,red,red,red,
+tan,tan,red,blue,yellow,blue,blue,yellow,red,red,tan,tan,
+tan,tan,tan,blue,blue,blue,blue,blue,blue,tan,tan,tan,
+tan,tan,blue,blue,blue,blue,blue,blue,blue,blue,tan,tan,
+none,none,blue,blue,blue,none,none,blue,blue,blue,
+none,brown,brown,brown,none,none,none,none,brown,brown,brown,
+brown,brown,brown,brown,none,none,none,none,brown,brown,brown,brown,
+-
+pink,pink,pink,pink,pink,pink,
+pink,pink,pink,pink,pink,pink,
+pink,pink,pink,pink,pink,pink,
+pink,pink,pink,pink,pink,pink,
+pink,pink,pink,pink,pink,pink,
+pink,pink,pink,pink,pink,pink,
+pink,pink,pink,pink,pink,pink,
+pink,pink,pink,pink,pink,pink,
+pink,pink,pink,pink,pink,pink,
+pink,pink,pink,pink,pink,pink,
+-
+red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
+red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
+red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
+red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
+red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
+red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
+red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
+red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
+-
+black,black,black,
+-
+```
+
+</details>
+
+## You're done!
+
 <img src="https://thumbs.gfycat.com/RespectfulHonestAxolotl-max-1mb.gif" width="380" alt="Charmander Gif">
 
-You are done. Pretty sweet, I know. Create some epic sprites!
+Yay, you made it to the end of the workshop! Pretty sweet, I know. Now go and create some epic sprites!
+
+<details>
+
+<summary> Final code:</summary>
 
 ```py
 import turtle
@@ -382,8 +482,12 @@ turtle.listen()
 turtle.mainloop()
 ```
 
-# Original Program & More You Can Create
-- [Original Program](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop#main.py)
+</details>
+
+## Hacking
+
+Here are some ways you can expand this project:
+
 - [Simpler Inputs for Specific Colors](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-1#main.py)
 - [Random Cycle](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-2#main.py)
 - [Sprite Layering](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-3#sprite.txt)
