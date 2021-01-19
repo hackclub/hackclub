@@ -16,7 +16,7 @@ Close your eyes for a few seconds. Don't open them until I tell you.
 ...
 <br>
 
-Okay, open them. While your eyes were closed, I transported you to a parallel universe where gambling is legal. Oh and also you're now in a Vegas casino. Oh and also in this universe, Jeff Goldbum is the president of the United States, but nobody knows why. Yay!!! Now it's time to gamble with totally real money! And in this workshop, you're going to build a program that will allow you to do just that. (Minus the real money.)
+Okay, open them. While your eyes were closed, I transported you to a parallel universe where gambling is legal. Oh and also you're now in a Vegas casino. Oh and also in this universe, Jeff Goldbum is the President of the United States, but nobody knows why. Yay!!! Now it's time to gamble with totally real money! And in this workshop, you're going to build a program that will allow you to do just that. (Minus the real money.)
 
 <img src="https://www.pinnacle.com/Cms_Data/Contents/Guest/Media/betting-articles/casino/Craps/in-article-how-to-play-craps-2.jpg" width="400" alt="Craps Tutorial">
 
@@ -580,10 +580,10 @@ class MainClass
 
 ## Hacking
 
-The fun doesn't stop here. Here are a few waysa you can expand on this project:
+The fun doesn't stop here. Here are a few ways you can expand on this project:
 
 - [User Sets Balance](https://repl.it/@CosmicSnowman/Craps-Simulator-Expanded-1#main.cs)
 - [Calculate Win Rate](https://repl.it/@CosmicSnowman/Craps-Simulator-Expanded-2#main.cs)
 - [Simulate a Specific Number of Games](https://repl.it/@CosmicSnowman/Craps-Simulator-Expanded-3#main.cs)
 
-Happy hacking!
+Who knows, maybe if your gambling simulator is good enough, President Goldblum will invite you to the White House. Happy hacking!
