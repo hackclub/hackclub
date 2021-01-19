@@ -2,7 +2,7 @@
 name: 'Scalable Snowman'
 description: 'Create your own scalable snowman using Python Turtle!'
 author: '@JakeGerber'
-image: 'https://cloud-3nwmqnf9y.vercel.app/0image.png'
+img: 'https://cloud-3nwmqnf9y.vercel.app/0image.png'
 ---
 
 <img src="https://cloud-81lsm6jyf.vercel.app/0screenshot__1406_.png" width="900" alt="Snowman Example">
