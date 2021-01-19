@@ -2,7 +2,7 @@
 name: 'Dialogue Tree'
 description: 'Create your own dialogue tree system with C#!'
 author: '@JakeGerber'
-image: 'https://cloud-74lq7ehps.vercel.app/0screenshot__1426_.png'
+img: 'https://cloud-74lq7ehps.vercel.app/0screenshot__1426_.png'
 ---
 
 Have you ever played an RPG or text adventure game and thought that it would be cool to tell your own story? Now you can with this workshop! We will be creating a dialogue tree system with C#. It's pretty rad! B)
