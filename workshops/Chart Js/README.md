@@ -1,6 +1,6 @@
 ---
 name: Charts with Chart.js
-description: Create any kind of chart for your website
+description: Use a JavaScript library to make cool charts!
 author: '@wollygfx'
 img: 'https://cloud-d661yx1ei.vercel.app/0screen_recording_2020-12-11_at_10.42.35_pm.gif'
 ---
@@ -74,7 +74,7 @@ When you click on the green *Run* button at the top of your repl, you'll see tha
 
 ![Div aligned to the center](https://cloud-48yrakqtz.vercel.app/0image.png)
 
-Cool! – But our elements look very boring right now. So let's style them a little bit!
+Cool! – But our elements also look very boring right now. So let's style them a little bit!
 
 ```css
 button {
@@ -96,7 +96,7 @@ input{
 }
 ```
 
-Here, we're giving the `button` and `input `elements:
+Here, we're giving the `button` and `input` elements:
 - A background color
 - A border (with a color too)
 - a border radius
@@ -124,7 +124,7 @@ var ctx = canvas.getContext('2d');
 1. First, we are creating a variable named `canvas`, that gets the canvas element using the `getElementById()` method.
 2. Then, we are creating another variable named `ctx`, that uses the `getContext()` method to return the drawing context of the canvas, which is `2d`.
 
-## Creating a chart
+### Creating a chart
 
 Now, we're going to create a chart with some colors and a few cool options that will be useful later.
 
