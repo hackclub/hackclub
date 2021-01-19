@@ -7,7 +7,7 @@ img: 'https://cloud-cjpqh65d8.vercel.app/0screen_shot_2021-01-18_at_6.21.41_pm.p
 
 In this workshop you'll learn how to make a painting application using HTML, CSS & JavaScript. Follow along with me and see how easy it is!
 
-![final demo](https://cloud-cjpqh65d8.vercel.app/0screen_shot_2021-01-18_at_6.21.41_pm.png)
+![final demo](https://cloud-3mzm880lh.vercel.app/0image.png)
 
 [Live Demo](https://css.wollygfx.repl.co)
 <br>
@@ -15,7 +15,7 @@ In this workshop you'll learn how to make a painting application using HTML, CSS
 
 ## Set Up
 
-This workshop requires a very basic knowledge of the following languages: HTML & JavaScript. Don’t worry if you get stuck at some point in the workshop, everything is explained the best way for you to understand!
+This workshop requires some basic knowledge of HTML, CSS, & JavaScript. Don’t worry if you get stuck at some point in the workshop, everything is explained the best way for you to understand!
 
 For this workshop we will use [Repl.it](https://repl.it), a free, online code editor. Click [here](https://repl.it/languages/HTML) to create an HTML project on repl.it. Once your coding environment spins up, you should see this:
 
@@ -32,7 +32,7 @@ So let's start by creating a `div` container with the class `main-container` ins
 
 Then, we are creating another `div` container with the class `colors`. This will hold all of the buttons that the user will use to select a color. Inside of this `div` container, we'll put 6 `button` elements, with the following values:
 
-```html
+```HTML
 <div class="main-container">
   <div class="colors">
     <button value="#FBFF00"></button>
@@ -48,7 +48,8 @@ Then, we are creating another `div` container with the class `colors`. This will
 I've selected a few colors for you, but if you want to choose your own colors, Google "html hex code generator", pick a color, and replace one of the hexademical color values with whichever one you choose!
 
 Finally, right after the `div` container with the class `colors`, we'll put 4 elements with the following values:
-```
+
+```html
 <div class="main-container">
   <div class="colors">
     <button value="#FBFF00"></button>
@@ -294,6 +295,7 @@ Let's break this down:
 - The property `cursor: crosshair;` sets the type of mouse cursor.
 
 This is how the app looks like now:
+
 ![App with some css](https://cloud-e6g9f5afr.vercel.app/0image.png)
 
 Finally, we are going to style all the buttons:
@@ -349,6 +351,7 @@ Now, we'll give a color to each button:
 The `:nth-of-type()` CSS pseudo-class matches elements of a given type (tag name), based on their position among a group of siblings. Notice that we have 6 buttons inside of the `div` container with the class `colors`. These buttons are indexed just like in an array, so think of the `div` container as an array, and the buttons as indexed data. Using this, we give a background color to every button accordingly.
 
 This is how the app looks at the end:
+
 ![Final result](https://cloud-k6qpdzuk1.vercel.app/0image.png)
 
 ### Hack it!
