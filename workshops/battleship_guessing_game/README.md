@@ -31,9 +31,9 @@ When your repl spins up, you should see this code already added in the `main.cs`
 using System;
 
 class MainClass {
-  static void Main(string[] args)
-  {
-  }
+    static void Main(string[] args)
+    {
+    }
 }
 ```
 
@@ -42,8 +42,8 @@ Let's start by creating two [2D arrays](https://docs.microsoft.com/en-us/dotnet/
 ```csharp
 static void Main(string[] args)
 {
-  char[,] actualBoard = new char[6, 6];
-  char[,] board = new char[6, 6];
+    char[,] actualBoard = new char[6, 6];
+    char[,] board = new char[6, 6];
 }
 ```
 
@@ -54,15 +54,15 @@ Next, create two for loops, one nested within the other, that loops through each
 ```csharp
 static void Main(string[] args)
 {
-  //Previous code would be here.
-  for (int i = 0; i < board.GetLength(0); i++)
-  {
-    for (int x = 0; x < board.GetLength(1); x++)
+    //Previous code would be here.
+    for (int i = 0; i < board.GetLength(0); i++)
     {
-        board[i, x] = '.';
-        actualBoard[i, x] = '.';
+        for (int x = 0; x < board.GetLength(1); x++)
+        {
+            board[i, x] = '.';
+            actualBoard[i, x] = '.';
+        }
     }
-  }
 }
 ```
 
@@ -73,8 +73,8 @@ Next, after both for loops complete, create a new [Random](https://docs.microsof
 ```csharp
 static void Main(string[] args)
 {
-  //Previous code would be here.
-  Random random = new Random();
+    //Previous code would be here.
+    Random random = new Random();
 }
 ```
 Random is a library built in to C# that lets us easily generate random values. Soon, we're going to use this for the random ship placement.
@@ -88,10 +88,10 @@ Time to place the ship on the board. But where is the ship going to be placed? W
 ```csharp
 static void Main(string[] args)
 {
-  // The code we already wrote would be here.
+    // The code we already wrote would be here.
 
-  //horizontal vs vertical
-  int dir = random.Next(0, 2);
+    //horizontal vs vertical
+    int dir = random.Next(0, 2);
 }
 ```
 
@@ -102,21 +102,20 @@ Here, we're initializing an integer called `dir` that generates a random that's 
 Let's write some code that handles the random value we just generated.
 
 ```csharp
-  static void Main(string[] args)
-  {
+static void Main(string[] args)
+{
     // The code we already wrote would be here.
-      
-      // horizontal ship
-      if (dir == 0)
-      {
-          int x = random.Next(0, 3);
-          int y = random.Next(0, 6);
 
-          actualBoard[x, y] = 'X';
-          actualBoard[x + 1, y] = 'X';
-          actualBoard[x + 2, y] = 'X';
-      }
-  }
+    // horizontal ship
+    if (dir == 0)
+    {
+        int x = random.Next(0, 3);
+        int y = random.Next(0, 6);
+
+        actualBoard[x, y] = 'X';
+        actualBoard[x + 1, y] = 'X';
+        actualBoard[x + 2, y] = 'X';
+    }
 }
 ```
 
@@ -133,12 +132,12 @@ Now, let's handle vertical placement. Add an `else if` statement that checks if 
 ```csharp
 static void Main(string[] args)
 {
-  // The code we already wrote would be here.
+    // The code we already wrote would be here.
 
     //horizontal ship
     if (dir == 0)
     {
-      //Code we just wrote.
+        //Code we just wrote.
     }
     //vertical ship
     else if (dir == 1)
@@ -163,7 +162,7 @@ After both if statements, add:
 ```csharp
 static void Main(string[] args)
 {
-  // The code we already wrote would be here.
+    // The code we already wrote would be here.
 
     int shipPieces = 3;
     int shipHits = 0;
@@ -184,11 +183,11 @@ Under the code you just wrote, at the bottom of the `Main` method, add an infini
 ```csharp
 static void Main(string[] args)
 {
-  //What we already wrote.
+    //What we already wrote.
 
-  while (true)
-  {
-  }
+    while (true)
+    {
+    }
 }
 ```
 
@@ -197,13 +196,13 @@ Inside the `while` loop, add a [`try-catch` block](https://www.w3schools.com/cs/
 ```csharp
 while (true)
 {
-  try
-  {
-  }
-  catch
-  {
-    Console.WriteLine("Bad input.");
-  }
+    try
+    {
+    }
+    catch
+    {
+        Console.WriteLine("Bad input.");
+    }
 }
 ```
 
@@ -218,7 +217,7 @@ Start by calling the `drawBoard()` function. We haven't written this function ye
 ```csharp
 try
 {
-  drawBoard(board);
+    drawBoard(board);
 }
 ```
 
@@ -227,11 +226,11 @@ Then, add the following lines:
 ```csharp
 try
 {
-  drawBoard(board);
-  Console.Write("Enter a letter: ");
-  string colLetter = Console.ReadLine();
-  colLetter = colLetter.ToUpper();
-  int row = 0;
+    drawBoard(board);
+    Console.Write("Enter a letter: ");
+    string colLetter = Console.ReadLine();
+    colLetter = colLetter.ToUpper();
+    int row = 0;
 }
 ```
 
@@ -247,24 +246,24 @@ Next, add the following 3 lines:
 ```csharp
 try
 {
-  drawBoard(board);
-  Console.Write("Enter a letter: ");
-  string colLetter = Console.ReadLine();
-  colLetter = colLetter.ToUpper();
-  int row = 0;
+    drawBoard(board);
+    Console.Write("Enter a letter: ");
+    string colLetter = Console.ReadLine();
+    colLetter = colLetter.ToUpper();
+    int row = 0;
 
-  Console.Write("Enter a number: ");
-  string rowInput = Console.ReadLine();
-  int col = Int32.Parse(rowInput)-1;
+    Console.Write("Enter a number: ");
+    string rowInput = Console.ReadLine();
+    int col = Int32.Parse(rowInput)-1;
 }
 ```
 
 These lines:
 
 - Prompt the user for a number
-- Accepts their input
-- Parses the integer (by default, console input is a string, so we want to convert it to an integer type)
-- Subtracts 1 so that its placement on the board can be more accurate. (The first index of an array is 0, so if we didn't do this, the user's guess would be 1 off)
+- Accept their input
+- Parse the integer (by default, console input is a string, so we want to convert it to an integer type)
+- Subtract 1 so that its placement on the board can be more accurate. (The first index of an array is 0, so if we didn't do this, the user's guess would be 1 off)
 
 ### Letter Input to Number
 
@@ -275,32 +274,32 @@ At the bottom of the `try` block, add:
 ```csharp
 try
 {
-  //What we just wrote is here.
+    //What we just wrote is here.
 
-  if (colLetter == "A")
-  {
-      row = 0;
-  }
-  else if (colLetter == "B")
-  {
-      row = 1;
-  }
-  else if (colLetter == "C")
-  {
-      row = 2;
-  }
-  else if (colLetter == "D")
-  {
-      row = 3;
-  }
-  else if (colLetter == "E")
-  {
-      row = 4;
-  }
-  else if (colLetter == "F")
-  {
-      row = 5;
-  }
+    if (colLetter == "A")
+    {
+        row = 0;
+    }
+    else if (colLetter == "B")
+    {
+        row = 1;
+    }
+    else if (colLetter == "C")
+    {
+        row = 2;
+    }
+    else if (colLetter == "D")
+    {
+        row = 3;
+    }
+    else if (colLetter == "E")
+    {
+        row = 4;
+    }
+    else if (colLetter == "F")
+    {
+        row = 5;
+    }
 }
 ```
 
