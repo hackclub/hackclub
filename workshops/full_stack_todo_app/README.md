@@ -152,7 +152,7 @@ If you want to learn more theory about CRUD, check it [here](https://en.wikipedi
 
 Let's create the interface of the Todo App to perform CRUD operations.
 
-Create a new folder and name it as `components`. All of our Todo App components will be in this folder.
+Create a new folder inside the `src` folder and name it as `components`. All of our Todo App components will be in this folder.
 
 ### Inputting a Todo
 
@@ -213,7 +213,7 @@ import React, { useState } from 'react' // <–– importing useState hook
 import firebase from '../Firebase'
 
 function Input() {
-  const [task, setTask] = useState() // <–– creating state variable
+  const [task, setTask] = useState('') // <–– creating state variable
 
   function handleChange(e) {
     setTask(e.target.value) // <–– updating the state value
@@ -359,6 +359,7 @@ function TodoList() {
     <div className="todo-list">
 
     </div>
+  )
 }
 
 export default TodoList
@@ -497,7 +498,7 @@ Let's continue to work with **Update** and **Delete** operations.
 Create another file, `Todo.js`, in the `components` folder. Import React and Firebase. Also, create a functional component that takes a prop `todo`.
 
 ```jsx
-import React from 'react'.
+import React from 'react'
 import firebase from '../Firebase'
 
 function Todo({ todo }) {
@@ -521,7 +522,7 @@ return (
 )
 ```
 
-Here, 👆 we are rendering a `Todo` component for each todo and also passing the data to that component as prop., using `map()` method. Learn more about `map()` [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). If you want to know more about rendering multiple components, check [this](https://reactjs.org/docs/lists-and-keys.html#rendering-multiple-components).
+Here, 👆 we are rendering a `Todo` component for each todo and also passing the data to that component as prop, using `map()` method. Learn more about `map()` [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). If you want to know more about rendering multiple components, check [this](https://reactjs.org/docs/lists-and-keys.html#rendering-multiple-components).
 
 <details>
 
@@ -612,7 +613,21 @@ Click on `Run` and check whether it's working.
 
 ![completed task](https://cloud-792qf1oid.vercel.app/3updating_database.png)
 
-Also, let's add styling for the completed tasks.
+Also, let's add styling for the completed tasks before our `completeTodo()` function.
+
+```jsx
+const completedStyle = { // <—— styles for completed task
+    fontStyle: "italic",
+    opacity: 0.4,
+    textDecoration: "line-through"
+}
+```
+
+And apply that style to the paragraph containing our task.
+
+```jsx
+<p style={todo.completed ? completedStyle : null} >{todo.task}</p>
+```
 
 <details>
 
@@ -678,7 +693,7 @@ function deleteTodo() {
 
 <details>
 
-<summary>Our final Todo component will be somethink like this:</summary>
+<summary>Our final Todo component will be something like this:</summary>
 
 ```jsx
 import React from 'react'
@@ -751,5 +766,3 @@ These are some examples to inspire your thoughts.
 * **Example-3**: Phonebook app (more inputs for database)
 
     [Demo](https://phonebook.giridharhackclu.repl.co). [Source Code](https://repl.it/@Giridharhackclu/phonebook#src/App.js).
-
-
