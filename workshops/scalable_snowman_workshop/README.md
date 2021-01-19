@@ -11,11 +11,13 @@ Have you ever had a dream where you used Python's turtle library to draw snowmen
 
 <img src="https://i.pinimg.com/originals/69/3c/5e/693c5ec302f67ef040ad65f21bb25684.gif" width="380" alt="Snoopy Winter Gif">
 
+[Final Demo and Code](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop#main.py)
+
 # Repl.it Setup
 
 We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE! Think of it as writing code and running it on a website.
 
-Create a new Python project by going to [repl.it/languages/python3](https://repl.it/languages/python3)
+Create a new Python project by going to [repl.it/languages/python3](https://repl.it/languages/python3).
 
 ## Initial Statements
 
@@ -70,6 +72,8 @@ def Snowman(x, y, radius1, radius2, radius3):
 Inside the function, use [`turtle.goto()`](https://docs.python.org/3/library/turtle.html#turtle.goto) to go to the x and y coordinates that will be inputted into the function. Then, set the color to light blue.
 
 ### Head and Body Pieces
+
+Okay! Now we're ready to start drawing the parts of the snowman.
 
 <img src="https://cloud-52dbjvw3n.vercel.app/0screenshot__1409_.png" width="380" alt="Snowman Head and Body">
 
@@ -432,11 +436,13 @@ Almost done! We are calling `onkeypress()` functions that will recognize user in
 
 The `listen()` function then listens for user input instead of ending the program.
 
+Finally, `mainloop()` tells the window to wait for the user to do something.
+
 ## Final Code
 
 <img src="https://media1.tenor.com/images/cb8ccb4cb181cd2ddefa8c6e604938db/tenor.gif?itemid=7915750" width="380" alt="Snoopy Gif">
 
-You are done. Congrats! Now you're an expert at creating snowmen. Create one, or an entire snowman army!
+You are done. Congrats! Now you're an expert at creating snowmen, and you are fully equipped to create an army of snowmen.
 
 <details>
 
@@ -562,7 +568,6 @@ turtle.mainloop()
 
 Here are some examples of ways you can take this project further:
 
-- [Original Program](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop#main.py)
 - [Random Colors](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop-Expanded-1#main.py)
 - [Random Sizes](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop-Expanded-2#main.py)
 - [Adding Trees](https://repl.it/@CosmicSnowman/Scalable-Snowman-Workshop-Expanded-3#main.py)
