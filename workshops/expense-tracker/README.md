@@ -1,6 +1,6 @@
 ---
 name: 'Expense Tracker'
-description: 'A command line based expense tracker using Python'
+description: 'A command-line based expense tracker using Python'
 author: '@iamsid47'
 img: https://cloud-4tlcr594m.vercel.app/0expen_e_tracker.png
 ---
@@ -17,13 +17,32 @@ The completed project can be found by clicking [here](https://repl.it/@iamsid47/
 
 ## Let's Get Started
 
-So, the first thing we need to do is head over to [Repl.it](https://repl.it) and create a *repl*. Choose the **Python** as the language and name your project. I'm going to name mine as **expense-tracker**.
+So, the first thing we need to do is to head over to [Repl.it](https://repl.it) and create a *repl*. Choose **Python** as the language and name your project. I'm going to name mine as **expense-tracker**.
 
 ![Project Creation](https://cloud-giasrdstj.vercel.app/4expense-tracker.png)
 
-We will use Repl.it's package managers to get our libraries. For this, head over to the *Packages* and search **matplotlib**. Next, click on the add button to add that package to your repl. Do the same for the **datetime** package. We are also required to have **json** library but it's pre-installed so need to get it again.
+We will use Repl.it's package managers to get our libraries. For this, head over to the *Packages* section and search **matplotlib**. Next, click on the add button to add that package to your repl. Do the same for the **datetime** package. We also need the **JSON** library but it's pre-installed!
 
-Now, our data is gonna be stored in `.json` format. Thus, let's create a file named: `expenses.json`. In this file, type in a the list named as **Expenses**. This list will keep on updating as we will be adding entries using our *expense-tracker*. Let's open `main.py` and type some code.
+Now, our data is going to be stored in `.json` format. Thus, let's create a file named: `expenses.json`. In this file, type in the list named as **Expenses**. This list will keep on updating as we will be adding entries using our *expense-tracker*. It shall look like this:
+
+```JSON
+{
+    "Expenses": [
+        {
+            "Your Purchase": "candy bars", 
+            "Price": 200,
+            "Time": "2020-12-29 07:15:18"
+        },
+        {
+            "Your Purchase": "pizza",
+            "Price": 499,
+            "Time": "2020-12-29 07:15:27"
+        }
+    ]
+}
+```
+
+Note that `Your Purchase`, `Price`, and `Time` will be put automatically into this file as we will be creating empty lists for that purpose. It's just an example of how the data will be stored. Let's now open `main.py` and type some code.
 
 We need to first **import** all the libraries. Thus:
 
@@ -33,7 +52,7 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 ```
 
-Next, we'll define a function named `write_json` and call the `expenses.json` file.
+Next, we'll define a function named `write_json` and put its data into the `expenses.json` file.
 
 ```python
 def write_json(data, filename='expenses.json'): 
@@ -41,7 +60,9 @@ def write_json(data, filename='expenses.json'):
         json.dump(data, f, indent=4) 
 ```
 
-Now when the user gives in some input, we need to capture it and store this into the `expenses.json` file which we just created. Also, there should be something displayed when we run our program. So let's print something as well!
+Now when the user gives in some input, we need to capture it and store this into the `expenses.json` file which we just created. To achieve this, we declare a variable named `expdic` which will be equal to the data stored in the `.json` file. We also create a *dictionary* which will be equal to a new variable named `dic`. 
+
+Also, there should be something displayed when we run our program. So let's print something as well!
 
 ```python
 expdic = {"Expenses":[]}
@@ -49,15 +70,20 @@ dic = {}
 print("Howdy! Exp-Track here ;)")
 ```
 
-After this, we will start taking in the user's inputs. So first when the program runs, we will offer our user some choices. For example, to add in a new purchase or to view past purchase, or just to exit the program.
-Let's add some `choice` then. And later on, some *conditionals* as well. Also, we are gonna accept capital input. Thus, we will add `upper` at the end get the inputs in uppercase.
+Note that the above code is to be stored in `main.py`.
+
+After this, we will start taking in some user inputs. When the user runs the program, it (the program) shall provide the user with whether they want to add expenses or view their total expenditure. 
+
+To achieve this, we will declare a variable named: `choice.` and input a statement declaring options for the user.
+
+Later, with the help of *conditionals*, we will define the choices.
 
 ```python
 choice = input("To input a purchase, press Y, To view all Expenses, Press V, else press E to exit: ").upper()
 ```
-Now here, we add some `if` statements aka conditionals. So, when the user presses **V** we show him the expenses by calling the `expenses.json` file and showing it's content. We also want to generate a graph of our total expenditure, and that's the reason to install the **matplotlib** library. 
+Now here, we add some `if` statements aka conditionals. So, when the user inputs **V** (after the choices being displayed as said above) we show him the expenses by calling the `expenses.json` file and showing its content. We also want to generate a graph of our total expenditure, and that's the reason to install the **matplotlib** library. 
 
-We shall create a pie diagram of the expenditure which the user inputs. A pie graph is better because the user will easily be able to calculate his total expenditure as well by just adding up all the expenses in the diagram. For achieve this, we use `plt.pie` and add in some attributes. We also want to have a title for our graph and a legend which shows the different types expenses.
+We shall create a pie diagram of the expenditure which the user inputs. A pie graph is better because the user will easily be able to calculate his total expenditure as well by just adding up all the expenses in the diagram. To achieve this, we use `plt.pie` and add in some attributes. We also want to have a title for our graph and a legend which shows the different types of expenses.
 
 ```python
 if choice == "V":
@@ -80,7 +106,7 @@ if choice == "V":
             plt.show()
 ```
 
-To get the total for out expenditure, we create a conditional and make it as *choice* **T**. Inside this, we call the json data which will be store and load it onto a variable named *data*. We again create a variables named **temp** and call just the **Expenses** from the **data** variable which currently contains all the data from the json file. Next, we create a formula to calculate the total expenses.
+To get the total for out expenditure, we create a conditional and make it as *choice* **T**. Inside this, we call the JSON data which will be store and load it onto a variable named *data*. We again create a variable named **temp** and call just the **Expenses** from the **data** variable which currently contains all the data from the JSON file. Next, we create a formula to calculate the total expenses.
 
 ```python
 if choice == "T":
@@ -95,9 +121,13 @@ if choice == "T":
             print("Your Total Expenditure is ",Expenditure)
 ```
 
-Next comes the main thing. We create a `while` loop for the user so that he can add multiple purchases and then exit whenever he wants. So first we create a loop and then if the user presses **"Y"**, we take 3 inputs.
-    1. The purchase
-    2. The price
+Now we shall create a `while` loop for the user so that they can add multiple purchases without going back and forth (perhaps playing with the choices, thus improving the user's experience.)
+
+We shall be taking 2 inputs from the user. Namely, purchase name, and price (as of `date` will automatically be added using the `datetime` library).
+
+Data:
+    1. Purchase name
+    2. Price
     3. The time of purchase.
 
 ```python
@@ -155,7 +185,7 @@ Next, here we again add in the **choice: V** so that the user can again see the 
         break
 ```
 
-Now, if the user presses **E**, the data he entered get's stored into the `.json` file and we print a message as a sort of exit message: **Bye, See you again**. This will then break the while loop and the program exits.
+Now, if the user presses **E**, the data he entered gets stored into the `.json` file and we print a message as a sort of exit message: **Bye, See you again**. This will then break the while loop and the program exits.
 
 Next, we also need to create a condition for if the user chooses to view his total expenses again.
 
@@ -172,7 +202,7 @@ Next, we also need to create a condition for if the user chooses to view his tot
         break
 ```
 
-Here, we if the user presses **T**, we again retrieve the the data from `expenses.json`; and again show it to the user.
+Here, if the user presses **T**, we again retrieve the data from `expenses.json`; and again show it to the user.
 
 ## Voila!
 
@@ -182,11 +212,11 @@ You did it! An expense tracker of your own!
 
 ## Hack It ;)
 
-Further improvements for this project are just endless. You can add in more inputs like a custom category (for example: *food, clothing, etc*). Also, you can add in a function to display the total amount of all the purchases.
+Further improvements for this project are just endless. You can add in more inputs like a custom category (for example: *food, clothing, etc*). Also, you can add a function to display the total amount of all the purchases.
 
-As a topping, you can add in more fields like *interest on purchase, cashbacks, rebates, donations, etc.*
+As a topping, you can add in more fields like *interest on a purchase, cash backs, rebates, donations, etc.*
 
-You can even make it so awesome that you create an API for this, merge it with a chrome extension which tracks all your purchases and host this script on a server. So, whenever you make a purchase, the whole thing gets sent over to the expense-tracker and it puts all of the data into a .json file!
+You can even make it so awesome that you create an API for this, merge it with a chrome extension that tracks all your purchases and host this script on a server. So, whenever you make a purchase, the whole thing gets sent over to the expense-tracker and it puts all of the data into a .json file!
 
 ## Demos
 
@@ -194,4 +224,4 @@ In this [version](https://repl.it/@iamsid47/exp-track-demo1), you can see the to
 
 I made a GUI for my [expense tracker](https://repl.it/@iamsid47/exp-track-demo2) along with login/logout in this demo.
 
-This [one](https://repl.it/@iamsid47/exp-track-demo3#main.py) is a more simpler version of the GUI I have made above.
+This [one](https://repl.it/@iamsid47/exp-track-demo3#main.py) is a simpler version of the GUI I have made above.
