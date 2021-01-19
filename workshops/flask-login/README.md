@@ -1,22 +1,24 @@
 ---
-name: Logging In
-description: Make a Flask Webserver that allows you to register and log in users.
+name: Flask Login
+description: Make a Flask API that allows you to register and log in users.
 author: '@sohamb117'
+img: 'https://cloud-1x9c5m3zh.vercel.app/0screen-capture.gif'
 ---
 
-# Logging in
-
-Open a website, say [Github](https://github.com). Okay, now sign in. What just happened? What did the code do? How does "Logging In" work? Let's try building it ourselves.
+Open a website, say [GitHub](https://github.com). Okay, now sign in. What just happened? What did the code do? How does "Logging In" work? To find out, let's build a login system ourselves!
 
 We'll have to:
 *  Create a Flask webserver
 *  Make app routes that write to and read from a JSON file
-*  Test our webserver with Insomnia.
+*  Test our webserver with Insomnia. (*Note: you will have to install a Chrome extension in order to use Insomnia*)
 
-Here's a quick look at what we'll be making: 
-![Gif](https://cloud-1x9c5m3zh.vercel.app/0screen-capture.gif)
-This is a simple backend demo but you can hook this up to ANY frontend you want - and I've provided a demo on how to do that at the bottom.
-Here's a link to the [code](https://repl.it/@sohamb117/FlaskTutorial#main.py)
+Here's a quick look at what we'll be making:
+
+![final product gif](https://cloud-1x9c5m3zh.vercel.app/0screen-capture.gif)
+
+This is a simple backend demo, but you can hook this up to ANY frontend you want - and I've provided a demo on how to do that at the bottom.
+
+[Final code](https://repl.it/@TechBug2012/FlaskTutorial#main.py)
 
 This workshop does assume a very basic knowledge of Python and HTTP Requests but I hope I've broken things down so that beginners can understand too. I've also linked sources at the bottom so you can read up on these topics.
 
@@ -27,6 +29,7 @@ The [Flask](https://pypi.org/project/flask/) library in Python is what we'll use
 ## Downloading Insomnia
 
 In order to test our Flask server, we'll need to send requests to the server. We can use Insomnia to do this. Insomnia is great because it is available for so many platforms. All you need is a Chrome browser. You can get Insomnia at the [Chrome Web Store](https://chrome.google.com/webstore/detail/insomnia-rest-client/gmodihnfibbjdecbanmpmbmeffnmloel?hl=en-US). You should see a screen like this:
+
 ![Insomnia Web Store](https://cloud-a7eisnzme.vercel.app/0image.png)
 
 Press the "Add to Chrome" button, and then press "Add App."
@@ -59,7 +62,7 @@ import json
 from replit import db
 ```
 
-This just imports the `Flask` and `request` modules from the `flask` library, because they're the only ones we need from that library. We also need `json` because that's what we'll be using for storing our data. We'll be using a [replit database](https://docs.repl.it/misc/database) to store our data.
+This just imports the `Flask` and `request` modules from the `flask` library, because they're the only ones we need from that library. We also need `json` because that's what we'll be using for storing our data. We'll be using a [replit's built-in database](https://docs.repl.it/misc/database) to store our data.
 
 In order to create a webserver with Flask we'll need to define a Flask app. We do this with the following line:
 ```python
@@ -78,19 +81,21 @@ Right now, our app is kind of useless. If you run it, it should start a new webs
 ```python
 @app.route("/", methods=['GET'])
 def helloworld():
-	return("Hello World!")
+  return("Hello World!")
 ```
 The first line adds a [decorator](https://pythonbasics.org/decorators/) that tells Flask to treat the function as a route. A route is essentially an path that we can send a request to. 
 You can see routes being used in almost any website - they use the `/` character to specify a route. For example, you can see `https://www.iana.org/domains/reserved` uses `/` to indicate that from the main site, you want to go to `domains`, and from there you want to go to `reserved`.
 In Flask, `/` without any text after it indicates that this is the route you'll see when first going to the URL. 
 Flask handles routes by creating functions, the return values of which Flask displays to the user. In this function we see: 
 ```python
-	return("Hello World!")
+return("Hello World!")
 ```
 This function has a return value of "Hello World!" so that's what Flask will display to the user.
 
-Repl.it should automatically open a panel to allow you to view your Flask app. It should also have a URL to the app. 
+See it for yourself by clicking the green "Run" button at the top of the repl. Repl.it should automatically open a panel to allow you to view your Flask app. It should also have a URL to the app. 
+
 ![Link](https://cloud-94isv6yfc.vercel.app/0image.png)
+
 If you open the URL in a new tab and you should see "Hello World!" displayed. Congratulations, you've successfully finished creating your first route!
 
 Now let's start on the routes we want to define for our webserver to handle logging in.
@@ -112,36 +117,39 @@ Let's define our function now. Here's the code:
 ```python
 @app.route("/register", methods=['POST'])
 def register():
-	username = request.args.get("username")
-	password = request.args.get("password")
-	data = request.args.get('data')
-	if not(username in db):
-		db[username] = "{" + f"\"password\": \"{md5(password.encode('utf-8')).hexdigest()}\", \"data\": \"{data}\""  + "}"
-		return("Success")
-	else:
-		return("User already registered.")
+  username = request.args.get("username")
+  password = request.args.get("password")
+  data = request.args.get('data')
+  if not(username in db):
+    db[username] = "{" + f"\"password\": \"{md5(password.encode('utf-8')).hexdigest()}\", \"data\": \"{data}\""  + "}"
+    return("Success")
+  else:
+    return("User already registered.")
 ```
 
 What does this code do? Let's break it down part by part.
 
 ```python
-	username = request.args.get("username")
-	password = request.args.get("password")
-	data = request.args.get('data')
+username = request.args.get("username")
+password = request.args.get("password")
+data = request.args.get('data')
 ```
+
 `request.args.get(ARGUMENT)` is a method from the `request` module in Flask that allows you to get arguments from a webrequest. We're saving the value for the argument `"username"` in the variable `username`. This also applies for `"password"` and `"data"`. Arguments for this route will look something like this:
+
 ```
 yourURL/register?username=USERNAME&password=PASSWORD&data=DATA
 ```
+
 As you can see, the `?` character specifies that arguments will follow. We separate the arguments using `&`.
 
 Now let's take a look at the rest of the route.  
 ```python
 if not(username in db):
-		db[username] = "{" + f"\"password\": \"{md5(password.encode('utf-8')).hexdigest()}\", \"data\": \"{data}\""  + "}"
-		return("Success")
-	else:
-		return("User already registered.")
+  db[username] = "{" + f"\"password\": \"{md5(password.encode('utf-8')).hexdigest()}\", \"data\": \"{data}\""  + "}"
+  return("Success")
+else:
+  return("User already registered.")
 ```
 
 In this block, we first check if our username is in the database, to check if the user is registered. If it is, the next line is run.
@@ -149,7 +157,26 @@ In this block, we first check if our username is in the database, to check if th
 ```python
 db[username] = "{" + f"\"password\": \"{md5(password.encode('utf-8')).hexdigest()}\", \"data\": \"{data}\""  + "}"
 ``` 
-This line sets the value `db[username]`, or the value corresponding to this username in the database, to a string formatted like JSON. You'll notice that we're using md5 hashing to save our password, with `md5(password.encode('utf-8')).hexdigest()`. This creates an md5 hash of our string. **VERY IMPORTANT: NEVER STORE PASSWORDS IN PLAINTEXT. ALWAYS USE SOME KIND OF HASHING**
+This line sets the value `db[username]`, or the value corresponding to this username in the database, to a string formatted like JSON. You'll notice that we're using md5 hashing to save our password, with `md5(password.encode('utf-8')).hexdigest()`. This creates an md5 hash of our string.
+
+<details>
+
+<summary> Why are we hashing the password? </summary>
+
+A rule of thumb for storing passwords is that you should never store passwords in plaintext. If you do, and then a hacker happens to get access to the database containing your passwords (which happens more often than you may think, even to major companies!), all of your users' passwords will be compromised. Hashing your passwords provides an extra layer of security against these kinds of attacks.
+
+A hash is a cryptographic algorithm that protects data by ensuring it's computationally infeasible to reverse the hash. So, hashing something is as easy as `md5(your data)`, but reversing the hash is quite literally impossible. In computer science, this is known as a [trapdoor function](https://en.wikipedia.org/wiki/Trapdoor_function).
+
+The reason hashes are great for storing passwords is because the hash of the same data results in the same result. For example, the md5 hash of `password` will _always_ be `5f4dcc3b5aa765d61d8327deb882cf99`. So, even though you can't reverse the hash, you can check if a hash matches some string by hashing the string in question and checking if the resulting hash is equal to the stored hash. This is how every website verifies whether or not you've entered the correct password. This is also why companies make such a big deal about setting secure passwords—one method of password cracking is called a [dictionary attack](https://en.wikipedia.org/wiki/Dictionary_attack), where attackers who got access to a database of hashed passwords try guessing some of the passwords using a list of common passwords.
+
+Pretty interesting stuff! You can really dive into a rabbit hole with this stuff, so I'm going to stop now in the interest of not doing that.
+
+A quick note about the code in this workshop before we go, though: you also shouldn't use an md5 hash, like what we're doing here. We're using md5 for simplicity, but md5 is an old hashing algorithm that people have since figured out how to reverse. In your real projects, find a cryptography library for whatever language you're using and use a more secure hashing algorithm, such as SHA-256.
+
+Ok that concludes this side quest!
+
+</details>
+
 The code then returns `"Success"`. 
 
 If the user is found in the database, then we're trying to reregister a user. We don't want that, so we return `"User already registered."` and don't update our database.
@@ -166,13 +193,13 @@ This route will be `/login` and we want to use a GET request, which tells the se
 The code in this route is more simple than the code for the other route. 
 ```python
 def login():
-	username = request.args.get("username")
-	password = request.args.get("password")
-	value = db[username]
-	jsonthingy = json.loads(value)
-	if jsonthingy["password"] == md5(password.encode()).hexdigest():
-			return(jsonthingy["data"])
-	return("User not found")
+  username = request.args.get("username")
+  password = request.args.get("password")
+  value = db[username]
+  jsonthingy = json.loads(value)
+  if jsonthingy["password"] == md5(password.encode()).hexdigest():
+    return(jsonthingy["data"])
+  return("User not found")
 ```
 
 Once again, we are taking in arguments with `request.args.get` and saving them in variables. However, since we are trying to log in and GET the value of `data` we aren't passing that in. 
@@ -180,11 +207,17 @@ Once again, we are taking in arguments with `request.args.get` and saving them i
 Remember how we formatted our value as JSON earlier? Let's convert that JSON string to a Python dictionary with `json.loads`. We first set `value` to `db[username` to get the value assigned to that username. We then set `jsonthingy`, a Python dictionary, to `json.loads(value)`. 
 
 We then compare the value assigned to `password` in that dictionary to the hash of the argument we got. If the hashes match, we know that the passwords are the same. If they are the same, we reply with `jsonthingy[data]`, or the data associated with that user. Otherwise, we return `"User not found."`
+
 ## Testing the Code
 
-Finally, we'll be using Insomnia to test if our code works. 
+Finally, we'll be using Insomnia to test if our code works.
+
+*Note: if you don't want to install Insomnia, you can find an online-only tester by googling "api tester online". The following steps will assume you have Insomnia installed, but the steps are pretty similar for most API testers.*
+
 Let's launch the app (you can do this by going to `chrome://apps` in the URL bar of Chrome).
+
 You should see something like this:
+
 ![Insomnia](https://cloud-m4ukm1v5f.vercel.app/0image.png)
 
 Click "Create a Request" and enter any request name, it doesn't really matter.
@@ -205,7 +238,6 @@ Again, replace the necessary fields and hit "Send". If all goes well, you should
 
 If everything works, your webserver is complete! 
 
-
 ## Final Look at the Code
 
 We've finished the code! It should look like this:
@@ -220,28 +252,28 @@ app = Flask("MyApp")
 
 @app.route("/", methods=['GET'])
 def helloworld():
-	return("Hello World!")
+  return("Hello World!")
 
 @app.route("/register", methods=['POST'])
 def register():
-	username = request.args.get("username")
-	password = request.args.get("password")
-	data = request.args.get('data')
-	if not(username in db):
-		db[username] = "{" + f"\"password\": \"{md5(password.encode('utf-8')).hexdigest()}\", \"data\": \"{data}\""  + "}"
-		return(db[username])
-	else:
-		return("User already registered.")
+  username = request.args.get("username")
+  password = request.args.get("password")
+  data = request.args.get('data')
+  if not(username in db):
+    db[username] = "{" + f"\"password\": \"{md5(password.encode('utf-8')).hexdigest()}\", \"data\": \"{data}\""  + "}"
+    return(db[username])
+  else:
+    return("User already registered.")
 
 @app.route("/login", methods=['GET'])
 def login():
-	username = request.args.get("username")
-	password = request.args.get("password")
-	value = db[username]
-	jsonthingy = json.loads(value)
-	if jsonthingy["password"] == md5(password.encode()).hexdigest():
-			return(jsonthingy["data"])
-	return("User not found")
+  username = request.args.get("username")
+  password = request.args.get("password")
+  value = db[username]
+  jsonthingy = json.loads(value)
+  if jsonthingy["password"] == md5(password.encode()).hexdigest():
+    return(jsonthingy["data"])
+  return("User not found")
 
 app.run(host='0.0.0.0')
 ```
