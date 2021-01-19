@@ -5,7 +5,7 @@ author: '@KhushrajRathod'
 img: https://cloud-b0r4v3fgu.vercel.app/0screenshot_2020-12-31_at_3.22.47_pm.png
 ---
 
-Love [Kahoot](https://kahoot.com/)? I do! Today were making a Kahoot clone -- Kuizzy -- using 
+Love [Kahoot](https://kahoot.com/)? I do! Today we're making a Kahoot clone -- Kuizzy -- using 
 
 - [SweetAlert](https://sweetalert.js.org/), a beautiful JS alert library which serves as a replacement for the default [JavaScript alert](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert), 
 - [Socket.io](https://socket.io/), a [WebSocket protocol](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) library which lets our webpage maintain a persistent connection with the server, 
