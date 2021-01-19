@@ -23,7 +23,7 @@ Create a new repl and use C# as the language by [clicking here](https://repl.it/
 
 <img src="https://cloud-n5g94sz4o.vercel.app/0screenshot__1427_.png" width="600" alt="C# Repl">
 
-Once your repl spins up, you should see a file called `main.cs` with this code alerady added.
+Once your repl spins up, you should see a file called `main.cs` with this code already added.
 
 ```csharp
 using System;
@@ -130,13 +130,13 @@ Let's create a function that connects two choices and gives them a connection st
 
 ```csharp
 class MainClass {
-  static void Main(string[] args)
-  {
-  }
+    static void Main(string[] args)
+    {
+    }
   
-  public static bool Connect(Choice c1, Choice c2, string connection) 
-  {
-  }
+    public static bool Connect(Choice c1, Choice c2, string connection) 
+    {
+    }
 }
 ```
 
@@ -196,7 +196,6 @@ static void Main(string[] args)
   Connect(choice2, choice5, "You look at the ground.");
   Connect(choice2, choice6, "You notice the spider.");
 
-
   Connect(choice4, choice3, "You will find the enterence with your flashlight.");
   Connect(choice5, choice3, "You will run back to the enterence.");
   Connect(choice6, choice3, "You will stumble across the enterence.");
@@ -220,7 +219,7 @@ Connect(choice1, choice2, "Explore.");
 Connect(choice1, choice3, "Leave.");
 ```
 
-The string in choice1 is displayed, and then the user is prompted with two choices: Explore or Leave. When a choice is picked, the connecting string is displayed. So, if the user picks Explore, the choice2 string of going further in is displayed. What we are doing here is creating choices and connecting them.
+The string in `choice1` is displayed, and then the user is prompted with two choices: Explore or Leave. When a choice is picked, the connecting string is displayed. So, if the user picks Explore, the `choice2` string of going further in is displayed. What we are doing here is creating choices and connecting them.
 
 ```csharp
 Choice choice4 = new Choice("There is ancient text written on the wall!");
