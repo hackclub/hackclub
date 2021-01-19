@@ -2,7 +2,7 @@
 name: 'Dice Rolling'
 description: 'Create a dice rolling simulator with Python and turtle!'
 author: '@JakeGerber'
-image: 'https://cloud-8ogf0pnlo.vercel.app/0screenshot__1424_.png'
+img: 'https://cloud-8ogf0pnlo.vercel.app/0screenshot__1424_.png'
 ---
 
 Create the dice rolling simulation of your dreams with this workshop by using Python and the turtle library. It's cool even if you don't play DND! Maybe you just like rolling dice?
@@ -90,7 +90,7 @@ def reroll():
 
 The `dice.py` file that we imported earlier and will create in a moment is used here to draw the Die function. This will make sense in a moment!
 
-## Create the `dice.py` file.
+## Creating the `dice.py` file
 
 Create the `dice.py` file as shown below. We're gonna put all of our fancy dice functions in this file.
 
@@ -157,8 +157,7 @@ def drawBox(x, y, size, color):
 
 Then, add a for loop and draw the box. We're using a for loop here so that we can draw the box on each side of the die!
 
-# Rolling the Die
-Under the function that we just created, create a "rolls" function. This will draw the dots on the dice. Everybody likes circles! Don't be that one square person in the room.
+## Rolling the Die
 
 <img src="https://cloud-2mtzavva3.vercel.app/0screenshot__1429_.png" width="380" alt="Dots on the Box">
 
