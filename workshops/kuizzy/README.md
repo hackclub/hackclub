@@ -648,7 +648,7 @@ Now that you've managed to build a simple Kahoot clone, add some more functional
 
 01. [Add custom waiting messages ("Were you tooooooo fast?")](https://repl.it/@KhushrajRathod/Kuizzy-custom-messages)
 02. Give points based on time
-03. Add an option to skip questions
+03. [Add an option to skip questions](https://repl.it/@KhushrajRathod/Kuizzy-skippable-questions)
 04. Add a way for the host to see the number of answers while the question is in progress
 05. Add music with the HTML5 AudioElement
 06. Add options for True/false questions
