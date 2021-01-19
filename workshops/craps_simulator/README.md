@@ -10,8 +10,11 @@ img: 'https://cloud-isbdai043.vercel.app/0screenshot__1441_.png'
 Close your eyes for a few seconds. Don't open them until I tell you.
 
 ...
+<br>
 ...
+<br>
 ...
+<br>
 
 Okay, open them. While your eyes were closed, I transported you to a parallel universe where gambling is legal. Oh and also you're now in a Vegas casino. Oh and also in this universe, Jeff Goldbum is the president of the United States, but nobody knows why. Yay!!! Now it's time to gamble with totally real money! And in this workshop, you're going to build a program that will allow you to do just that. (Minus the real money.)
 
