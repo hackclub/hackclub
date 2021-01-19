@@ -30,9 +30,9 @@ First, if you don't know what craps is, I recommend taking a few minutes to [rea
 
 We're going to use [Repl.it](https://repl.it/~), a free, online coding platform, to code the project. Get started by visiting [repl.it/languages/csharp](https://repl.it/languages/csharp).
 
-That's right, we're going to code this project in C#! Don't worry if you've never written C# before—the code is super beginner-friendly, and as long as you've written code in most languages, you'll be able to pick it up pretty easily.
-
 <img src="https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
+
+That's right, we're going to code this project in C#! Don't worry if you've never written C# before—the code is super beginner-friendly, and as long as you've written code in most languages, you'll be able to pick it up pretty easily.
 
 ## Setting up the project
 
@@ -110,7 +110,7 @@ while (true)
 ```
 
 - We are writing the user's current balance.
-- We are creating a "playAgain" boolean that will be utilized within the while loop, and setting its default value to `true`
+- We are creating a boolean called `playAgain` that will be utilized within the while loop, and setting its default value to `true`
 - We're creating _another_ `while (true)` loop :o
 
 ### User Input
@@ -179,7 +179,7 @@ else
 }
 ```
 
-For the user input of "Y", if the balance is less then or equal to 0, then the user does not have money to play the game. If this is so, let the user know and set the "playAgain" boolean to false. Then outside of the if statement, break out of the user input while loop.
+For the user input of "Y", if the balance is less then or equal to 0, then the user does not have money to play the game. If this is so, let the user know and set the `playAgain` boolean to false. Then outside of the if statement, break out of the user input while loop.
 
 ```csharp
 if (userInput == "Y")
@@ -202,7 +202,7 @@ else
 }
 ```
 
-For the user input of "N", set the "playAgain" boolean to false and break out of the while loop. This means that the user does not want to play again, which is the same result if they do not have any money left to play.
+For the user input of "N", set the `playAgain` boolean to `false` and break out of the while loop. This means that the user does not want to play again, which is the same result if they do not have any money left to play.
 
 ### Finishing Statements
 
@@ -586,4 +586,4 @@ The fun doesn't stop here. Here are a few ways you can expand on this project:
 - [Calculate Win Rate](https://repl.it/@CosmicSnowman/Craps-Simulator-Expanded-2#main.cs)
 - [Simulate a Specific Number of Games](https://repl.it/@CosmicSnowman/Craps-Simulator-Expanded-3#main.cs)
 
-Who knows, maybe if your gambling simulator is good enough, President Goldblum will invite you to the White House. Happy hacking!
+Happy hacking!
