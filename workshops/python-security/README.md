@@ -33,13 +33,13 @@ choice = input('Are you\n(1) Signing Up\n(2) Signing In?: ')
 
 This asks the user what they want to do. In Python, `input()` prompts the user for input and stops until they input something.
 
-After getting the user's choice, ask them for their password"
+After getting the user's choice, ask them for their password:
 
 ```py
 pwd = input("Password: ")
 ```
 
-For now, we're going to store the password in a temporary variable. But as you'll find out in a second, we'll need to do a lot more than that if we want our password generator to be secure.
+For now, we're going to store the password in plaintext in a temporary variable. But as you'll find out in a second, we'll need to do a lot more than that if we want our password generator to be secure.
 
 Under the last line you wrote, add this:
 
@@ -70,7 +70,7 @@ Salting is an extra level of security that adds randomness to each password. It 
 
 Whew, that was a lot of information to digest. But now that we're past it, let's keep coding!
 
-This pbkdf2_hmac function returns bytes, so we need to convert these bytes to a string. Under all of the previous code you wrote, add:
+The `pbkdf2_hmac()` function returns bytes, so we need to convert these bytes to a string. Under all of the previous code you wrote, add:
 
 ```py
 pwd = pwd.hex()
@@ -181,7 +181,7 @@ When the program reads each line, it'll occasionally find `\n`, which denotes a 
 line = line.replace('\n', '')
 ```
 
-This will replace every `\n`, or newline, character with a blank character ('').
+This will replace every `\n`, or newline, character with a blank character `('')`.
 
 After this, let's create an empty print statement to format a newline. Still inside the for loop, add:
 
@@ -195,20 +195,20 @@ Under the `print()` statement, still in the for loop, add:
 
 ```py
 if(hash_data == line):
-    print(FColor.GREEN + "Correct Password")
+  print(FColor.GREEN + "Correct Password")
 else:
-    print(FColor.RED + f'Incorrect Password')
+  print(FColor.RED + f'Incorrect Password')
 ```
 
 We again take advantage of our fancy terminal color setup to print in green if the password is correct and red if it's incorrect.
 
-Then, to finish off our **try** block, we will make an **except** block. If you leave a try block open without an except block, your code will error!
+Then, to finish off our **try** block, we will make an **except** block. If you leave a try block open without an except block, your code will error! This will only run if we fail to open up the saved password file.
 
-This will only run if we fail to open up the saved password file.
+At the bottom of the file, in the same indentation as the `try` block, add:
 
 ```py
 except:
-    print(FColor.RED + "Couldn't read file 'save.dat'")
+  print(FColor.RED + "Couldn't read file 'save.dat'")
 ```
 
 <details>
