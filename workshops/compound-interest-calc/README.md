@@ -9,34 +9,38 @@ Hi everyone! In this workshop, we are gonna build an **interest calculator!**
 
 This will be a command-line calculator that will ask for inputs, do the math for us, and then give us the calculated output.
 
-You can out this project on Repl.it by clicking [this](https://repl.it/@iamsid47/comp-int#main.py) link.
+[Final demo and code](https://repl.it/@iamsid47/comp-int#main.py)
 
-## Let's Get Started!
+## Getting started
 
 ![Create a repl](https://cloud-giasrdstj.vercel.app/3cic_-_repl.png)
 
-So, let's head over to [Repl.it](https://repl.it) and create a new *repl*. Choose Python as the language and the name of your project.
+We're going to be using [Repl.it](https://repl.it), a free, online code editor, to code our project. Get started by visiting [repl.it/languages/python3](https://repl.it/languages/python3).
 
-First, we will be printing up some stuff and then we'll slowly move towards the logic. Now there are two types of interests that we are going to calculate. The first one will be  simple interest calculation and the other will be compound interest calculation. Now, when we calculate compound interest, some specific terms need to know and understand. This can include things like *monthly investment, interest on investment, principal, etc.* Thus, be sure to understand these terms first and later move over to the project.
+Once your repl spins up, let's start coding!
 
-Let's first import the `matplotlib` library so that we can generate a bar graph using the data we receive in the compound interest calculation.
+First, we will be printing up some stuff and then we'll slowly move towards the logic.
+
+There are two types of interests that we are going to calculate: simple interest and compound interest. For the sake of staying on-topic, I won't explain simple interest or compound interest—that's for your math class to do, and most of you probably have already learned about interest by now—but if you don't understand the terms *monthly investment*, *interest on investment*, or *principal*, I recommend pausing here and refreshing yourself on compound interest first.
+
+Let's start by importing the `matplotlib` library.
 
 ```
 import matplotlib.pyplot as plt
 ```
 
-Next, let's print something cool to start with to enhance the user's experience.
+[`matplotlib`](https://matplotlib.org) is a handy Python library that allows us to make data visualizations.
+
+Next, let's print something cool to start with.
 
 ```python
+import matplotlib.pylot as plt
+
 print("Howdy!")
 print("This is Compy ;) A compound interest calculator.")
 ```
-**Tip**: You can also add in some other custom messages of your choice at the start of the program or in the middle of it.
 
-
-After this, we create a *function* named `comp` and inside this function, we print some questions regarding how many years he will be saving for, monthly investments, etc. Since this is an integer, we'll define it in our code.
-
-We also want to create two empty lists so that we will be able to data in them which will help us in generating the graph.
+After this, create a function called `comp()`, and add the following code:
 
 ```python
 def comp():
@@ -47,19 +51,30 @@ def comp():
     years = int(input("Enter Years:  ")))
 ```
 
-Next, we ask the user for the money he is currently having in his account. Here, the answer can be in decimal places as well. Thus to capture this, we will use `float`.
+Inside the function, we:
+
+- Create two empty arrays that we'll use to make our graph later.
+- Then, we prompt the user for the first question: "How many years will you be saving?"
+- `input()` waits for user input before continuing. `int()` converts the input (which is a string by default) into an integer. And all of that is set to a variable called `years`.
+
+Next, we ask the user for the money they currently have in his account. Here, the answer can be in decimal places as well. Luckily, there's a type for that! It's called `float`.
+
+Under the code you just wrote, but still inside the `comp()` function, add:
 
 ```python
 print("How much money is currently in your account?")
-    principal = float(input('Enter current amount in account:  '))
+principal = float(input('Enter current amount in account:  '))
 ```
 
-After this, we ask the user how much money is he planning to invest monthly.
+This collects user data for the amount they have in their account.
+
+After this, we ask the user how much money they planning to invest monthly:
 
 ```python
 print("How much money do you plan in investing?")
-    monthly_invest = float(input('Enter amount:  '))   
+monthly_invest = float(input('Enter amount:  '))
 ```
+
 We will also ask him the interest he will be getting on this investment. Now, this is gonna be in percentage. But to make it a bit easy, we ask for a decimal input instead.
 
 ```python
