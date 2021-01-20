@@ -13,7 +13,7 @@ Here's what it'll look like:
 
 [Live demo][final_live_demo]
 <br>
-[Final code][final_code].
+[Final code][final_code]
 
 [final_live_demo]: https://Website-Mockup-Generator-2.techbug2012.repl.co
 [final_code]: https://repl.it/@TechBug2012/Website-Mockup-Generator-2#script.js
@@ -31,8 +31,6 @@ It is recommended to have a basic understanding of:
 ## Part 2: Getting started
 
 ### Setting up Repl.it
-
-We're going to be using [Repl.it](https://repl.it), an online code editor, to write our code. To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will be created in a few moments.
 
 We're going to be using [Repl.it](https://repl.it), an online code editor, to write this project. To get started, [click here to open the starter project](https://repl.it/@TechBug2012/Website-Mockup-Generator-Starter#index.html). Then, click the "Fork" button at the top to edit the file.
 
@@ -72,7 +70,7 @@ Next, let's add a heading to the website. Add the following code in between the 
 Next, let's add an input field where the user will input the website they want to create a mockup of. Under the `<h1>` tag you wrote, add the following code:
 
 ```html
-<input type="text" id="websiteAddress" placeholder='Enter the website'>
+<input type="text" id="websiteAddress" placeholder="Enter the website">
 ```
 
 Here, we're:
@@ -121,7 +119,7 @@ This input has type `text`, id `bgColor`, and a default `value` of `b6b308`, whi
 Next, we need to add two buttons—one for generating the mockup, and one to download the mockup. Under the `color_cont` div, add the following code:
 
 ```html
-<button type="submit" id="submitBtn" onclick='generateMockup();'>Generate Mockup</button>
+<button type="submit" id="submitBtn" onclick="generateMockup()">Generate Mockup</button>
 <button id="Download">Download</button>
 ```
 
@@ -144,12 +142,12 @@ Now, take all of the HTML code you've written and wrap it in between a big `<div
 ```html
 <div class="cont">
   <h1>Website Mockup Generator</h1>
-  <input type="text" id="websiteAddress" placeholder='Enter website'>
+  <input type="text" id="websiteAddress" placeholder="Enter the website">
   <div class="color_cont">
     <div id="color_demo"></div>
-    <input type="text" id="bgColor" value='b6b308'>
+    <input type="text" id="bgColor" value="b6b308">
   </div>
-  <button type="submit" id="submitBtn" onclick='generateMockup();'>Create Mockup</button><br>
+  <button type="submit" id="submitBtn" onclick="generateMockup();">Create Mockup</button><br>
   <button id="Download">Download</button>
   <img id="resultImg">
 </div>
@@ -176,12 +174,12 @@ Nice! You've now written all of the HTML you need for this workshop.
   <body>
     <div class="cont">
       <h1>Website Mockup Generator</h1>
-      <input type="text" id="websiteAddress" placeholder='Enter website'>
+      <input type="text" id="websiteAddress" placeholder="Enter the website">
       <div class="color_cont">
         <div id="color_demo"></div>
-        <input type="text" id="bgColor" value='b6b308'>
+        <input type="text" id="bgColor" value="b6b308">
       </div>
-      <button type="submit" id="submitBtn" onclick='generateMockup();'>Create Mockup</button><br>
+      <button type="submit" id="submitBtn" onclick="generateMockup();">Create Mockup</button><br>
       <button id="Download">Download</button>
       <img id="resultImg">
     </div>
@@ -215,8 +213,6 @@ const Download = document.getElementById("Download");
 ```
 
 Remember the HTML elements we wrote with IDs `resultImg` and `Download`? Well, now we can work with those elements in our JavaScript code!
-
-![Button actions](https://cloud-izk2xul9w.vercel.app/0buttonactions.png)
 
 #### `generateMockup()`
 
@@ -254,7 +250,7 @@ This looks a little complicated, but really it's just taking the URL of the serv
 
 Now, we're going to do something crazy: we're going to use JavaScript to modify the `src` attribute of the `img` tag we wrote at the beginning of this workshop to contain the url for our mockup. This can be done in just one line, which you should add at the bottom of the `generateMockup()` function:
 
-```
+```javascript
 resultImg.src = mockup;
 ```
 
