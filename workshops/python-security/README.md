@@ -254,7 +254,7 @@ Here's the result of running your code:
 
 ![LogginInFailure](https://cloud-2kaxxoppv.vercel.app/007490ccaf6bc9853ce2c0222a2536d6f.png)
 
-## Hacking
+## Hacking 🚀
 
 Woohoo! You have successfully created a secure password system! You can use this to create secure login pages and sign up pages without ever getting hacked!
 
