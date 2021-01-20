@@ -2,7 +2,7 @@
 name: 'Website Mockup Generator'
 description: 'Build a website mockup generator with HTML, CSS, and JS'
 author: '@hackyguru'
-img: 'https://cloud-aj0lly0fj.vercel.app/0websitemockupgenerator_1_.png'
+img: 'https://cloud-2j32ffnay.vercel.app/0screen_shot_2021-01-19_at_9.58.49_pm.png'
 ---
 
 Creating mockups for websites manually can be pretty time-consuming. In this workshop, we're going to make it easy by writing our own website mockup generator with HTML, CSS, and JavaScript!
