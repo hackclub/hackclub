@@ -13,7 +13,7 @@ In this workshop, you're going to build a typing test website with HTML, CSS, an
 
 [Final demo](https://javascript-typing-test-final.gurshanbrar.repl.co/)
 <br>
-[Final code](https://repl.it/@GurshanBrar/JavaScript-Typing-Test-Final)
+[Final code](https://repl.it/@GurshanBrar/javascript-typing-test-Final)
 
 ### Prerequisites
 This project will be more fun to code if you have a general understanding of HTML, CSS, and JavaScript. However, don't worry if you don't because you can definitely complete this workshop without any prerequisites.
