@@ -154,7 +154,7 @@ Now we need to send these inputs to the `.json` file. Append in the expenses and
     choice = input("To input another purchase, press Y, To view all Expenses, Press V, To check total Expenditure, press T, else press E to exit: ").upper()
 ```
 
-Here again, we use `upper` to get the input in uppercase. Now, if the user chooses exit (that is, press E) our program will most probably crash as we haven't made a condition for that. Thus, let's make one!
+Here again, we use the `upper` method for returning uppercased string from the given string. Now, if the user chooses exit (that is, press E) our program will most probably crash as we haven't made a condition for that. Thus, let's make one!
 
 ```python
     if choice == "E":
