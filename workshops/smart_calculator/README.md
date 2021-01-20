@@ -9,7 +9,7 @@ In this workshop, we are going to make a calculator which can add, multiply, div
 
 For example: *Hey calc, can you give me the lcm of 9 and 3* and it will provide you with the LCM (least common multiple) of those two numbers.
 
-![How it works](https://github.com/iamsid47/hangman-pics/blob/main/how-calc-works.png)
+![How it works](https://cloud-aqhjdvc7o.vercel.app/0how-calc-works.png)
 
 [Final Product and Code](https://repl.it/@iamsid47/calc#main.py)
 
