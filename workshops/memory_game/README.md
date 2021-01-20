@@ -483,7 +483,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 createBoard()
 })
-
 ```
 
 </details>
