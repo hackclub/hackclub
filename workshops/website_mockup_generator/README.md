@@ -9,14 +9,14 @@ Creating mockups for websites manually can be pretty time-consuming. In this wor
 
 Here's what it'll look like:
 
-[![Demo](https://cloud-ak3dqayi4.vercel.app/0mockupgenerator.gif)](https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator-2)
+![Final demo](https://cloud-n3fjd3o1a.vercel.app/0screen_recording_2021-01-19_at_9.47.49_pm.gif)
 
 [Live demo][final_live_demo]
 <br>
 [Final code][final_code].
 
-[final_live_demo]: https://website-mockup-generator-2.19eucs071kumara.repl.co/
-[final_code]: https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator-2
+[final_live_demo]: https://Website-Mockup-Generator-2.techbug2012.repl.co
+[final_code]: https://repl.it/@TechBug2012/Website-Mockup-Generator-2#script.js
 [repl_it]: https://repl.it
 
 ## Part 1: Prerequisites
