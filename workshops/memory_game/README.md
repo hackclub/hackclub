@@ -310,42 +310,42 @@ function flipCard() {
 ```
 
 <details>
-<summary>Here's what the code looks like so far:</summary>
-  
+<summary> Here's what the code looks like so far: </summary>
+
 ```js
-document.addEventListener('DOMContentLoaded', () => {
-  const cardArray = [....]// the cardArray we created before
+ document.addEventListener('DOMContentLoaded', () => {
+ const cardArray = [....]// the cardArray we created before
 
-  const board = document.querySelector('.board')
-  const result = document.querySelector('#score')
-  const placeholder = "https://cloud-5ystxzer7.vercel.app/7placeholder.png"
-  const blank = "https://cloud-5ystxzer7.vercel.app/6blank.png"
-  var cardsClicked = []
-  var cardsClickedId = []
-  var cardsMatched = []
+ const board = document.querySelector('.board')
+ const result = document.querySelector('#score')
+ const placeholder = "https://cloud-5ystxzer7.vercel.app/7placeholder.png"
+ const blank = "https://cloud-5ystxzer7.vercel.app/6blank.png"
+ var cardsClicked = []
+ var cardsClickedId = []
+ var cardsMatched = []
 
-  //creating game board
-  function createBoard() {
-    for (let i = 0; i < cardArray.length; i++) {
-      var card = document.createElement('img')
-      card.setAttribute('src', placeholder)
-      card.setAttribute('data-id', i)
-      card.addEventListener('click', flipCard)
-      board.appendChild(card)
-    }
-  }
+ //creating game board
+ function createBoard() {
+   for (let i = 0; i < cardArray.length; i++) {
+     var card = document.createElement('img')
+     card.setAttribute('src', placeholder)
+     card.setAttribute('data-id', i)
+     card.addEventListener('click', flipCard)
+     board.appendChild(card)
+   }
+ }
 
-  //flip the card
-  function flipCard() {
-    var cardId = this.getAttribute('data-id')
-    cardsClicked.push(cardArray[cardId].name)
-    cardsClickedId.push(cardId)
-    this.setAttribute('src', cardArray[cardId].img)
-    if (cardsClicked.length === 2) {
-      setTimeout(checkForMatch, 500)
-    }
-  }
-  createBoard()
+ //flip the card
+ function flipCard() {
+   var cardId = this.getAttribute('data-id')
+   cardsClicked.push(cardArray[cardId].name)
+   cardsClickedId.push(cardId)
+   this.setAttribute('src', cardArray[cardId].img)
+   if (cardsClicked.length === 2) {
+     setTimeout(checkForMatch, 500)
+   }
+ }
+ createBoard()
 })
 ```
 
@@ -428,10 +428,9 @@ cardsClickedId = []
 result.textContent = cardsMatched.length
 ```
 
-<details>
-  
-  <summary>Our code so far: </summary>
-  
+  <details>
+<summary>Our code so far: </summary>
+
 ```javascript
 document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [....]
@@ -485,6 +484,7 @@ createBoard()
 })
 
 ```
+
 </details>
 
 One thing you might notice that the cards are not random. So we have to shuffle the `cardArray`, every time before creating the board, using `sort()` method. The [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method sorts the elements of an array in place and returns the sorted array.
@@ -515,8 +515,8 @@ It's your turn to customize.
 - You can also add two-player mode with more number of cards.
 - Also there are many ways of creating the board. If you are good in JavaScript, use `innerHTML` method for adding cards to the board.
 
-Hope you love this workshop! :v: <br>
-After customising, do share with me on slack as [@Giridhar](https://hackclub.slack.com/team/U013E6KE9UJ). I'd love to see your project.
+Hope you love this workshop! ✌
+After customizing, do share with me on slack as [@Giridhar](https://hackclub.slack.com/team/U013E6KE9UJ). I'd love to see your project.
 
 ## Inspiration
 
