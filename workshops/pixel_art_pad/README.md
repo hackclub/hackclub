@@ -1,7 +1,7 @@
 ---
 name: 'Pixel Art Pad'
 description: 'Build a pixel art pad using HTML and Java'
-author: '@hackyguru, @MatthewStanciu'
+author: '@hackyguru'
 img: 'https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png'
 ---
 
