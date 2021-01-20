@@ -1,19 +1,19 @@
 ---
 name: 'Website Mockup Generator'
-description: 'Build a website mockup generator'
+description: 'Build a website mockup generator with HTML, CSS, and JS'
 author: '@hackyguru'
 img: 'https://cloud-aj0lly0fj.vercel.app/0websitemockupgenerator_1_.png'
 ---
 
-# Website Mockup Generator
+Creating mockups for websites manually can be pretty time-consuming. In this workshop, we're going to make it easy by writing our own website mockup generator with HTML, CSS, and JavaScript!
 
-Creating mockups for websites consume time as we need to take a screenshot manually and edit it. In this workshop, we will be making a *'Website mockup generator'* which will generate mockups in seconds!
-
-The Website mockup generator will be looking like this (You can consider modifying the look if you wish) :
+Here's what it'll look like:
 
 [![Demo](https://cloud-ak3dqayi4.vercel.app/0mockupgenerator.gif)](https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator-2)
 
-You can also take a look at the [live demo][final_live_demo] and [final code][final_code].
+[Live demo][final_live_demo]
+<br>
+[Final code][final_code].
 
 [final_live_demo]: https://website-mockup-generator-2.19eucs071kumara.repl.co/
 [final_code]: https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator-2
@@ -25,100 +25,143 @@ It is recommended to have a basic understanding of:
 
 - HTML
 - JavaScript
-- CSS (totally optional for you to customize the look)
 
 ![Difference between HTML CSS and JS](https://media.giphy.com/media/fuJPZBIIqzbt1kAYVc/giphy.gif)
-
-However, this workshop is beginner friendly and you can refer the [final code][final_code] to understand better.
-
 
 ## Part 2: Getting started
 
 ### Setting up Repl.it
 
-[Repl.it](https://repl.it) is an amazing online code editor where we will be writing our code. Though repl.it is not mandatory, I strongly recommend you to use it in order to avoid installations and downloads.
+We're going to be using [Repl.it](https://repl.it), an online code editor, to write our code. To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will be created in a few moments.
 
-To get started, create your repl by going to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will be created in a few moments.
+We're going to be using [Repl.it](https://repl.it), an online code editor, to write this project. To get started, [click here to open the starter project](https://repl.it/@TechBug2012/Website-Mockup-Generator-Starter#index.html). Then, click the "Fork" button at the top to edit the file.
 
-![Setting up repl.it](https://cloud-flfptkrmk.vercel.app/0setuprepl.gif)
-
-Once your repl is setup, you are all set to continue!
-
+In order to keep it tight, we're not going to be writing any CSS for this workshop. If you click on `style.css`, you'll notice that the starter code comes with a fully-written CSS file. However, I highly recommend playing around with the CSS after this workshop, and making it totally your own!
 
 ## Part 3: Building The Website Mockup Generator
 
-After your repl is setup successfully, you will be able to find 3 files on the left pane :
-- index.html
-- script.js
-- style.css
-
-We will be working with all the three files in this workshop. So, get your hands on the keyboard for some code!
+Once your repl spins, up, you're ready to get going!
 
 ![Coding cat](https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif)
 
-### 1) index.html
+### 1) `index.html`
 
-First, let us write the required HTML code for the website mockup generator. You will be having the following code in `index.html` by default :
+We'll start by writing some HTML that will make the front-end of our website mockup generator.
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script src="script.js"></script>
-  </body>
-</html>
-```
 #### The site title
-In the `<head>` section, Replace the text inside the title tag to the title you want. In my case, I am replacing it with 'Website Mockup Generator'.
+
+In between the `<head>` `</head>` tags, Replace the text inside the title tag to the title you want. In my case, I am replacing it with 'Website Mockup Generator'.
 
 ```html 
 <title>Website Mockup Generator</title>
 ```
 
-#### Changing the body background color and alignment
-In order to change the background color and the text alignment inside the `body`, specify a class called `body` in the body tag. We will be providing CSS stylings for the `body` class later.
-
-```html
-<body class="body">
-```
-
 #### The heading
-In the `<body>` we will add a heading inside `<h1>...</h1>` tags.
+
+Next, let's add a heading to the website. Add the following code in between the `<body>` `</body>` tags:
 
 ```html
-<h1>Website Mockup Generator</h1>
+<body>
+  <!-- the rest of the code repl.it put in here for you !-->
+  <h1>Website Mockup Generator</h1>
+</body>
 ```
 
 #### Placing a text input field
-In order to place a text input field to get the website from the URL, use the following line to create a text input with a `placeholder` 'Enter the website' and provide `id` to the input as `websiteAddress`.
+
+Next, let's add an input field where the user will input the website they want to create a mockup of. Under the `<h1>` tag you wrote, add the following code:
 
 ```html
 <input type="text" id="websiteAddress" placeholder='Enter the website'>
 ```
 
+Here, we're:
+
+- creating an `<input>`, type `text`.
+- We give it an ID `websiteAddress` (we'll use this later, when styling the HTML).
+- We add placeholder text that says 'Enter the website'. On the HTML page, this will appear as faded gray text in the background, and it will disappear as soon as the user starts typing.
+
+#### Divs!
+
+Next, we're going to create some `<div>` elements. You can think of a `<div>` as a container for other HTML elements. It's useful if you want to style multiple elements in a particular website—which is exactly why we're adding `<div>`s here :)
+
+Under the `<input>` tag you just wrote, add:
+
+```html
+<div class="color_cont">
+
+</div>
+```
+
+Then, inside this `<div>`, add another `<div>`:
+
+```html
+<div class="color_cont">
+  <div class="color_demo"></div>
+</div>
+```
+
+The `color_demo` div is a little weird—after all, didn't I just say that divs are useful for nesting other elements inside? So why are we immediately closing? You'll find out the answer to that in a minute!
+
+#### Color input
+
+Now, we need to add a second input for selecting a color. After the `color_demo` div, but inside the `color_cont` div, add:
+
+```html
+<div class="color_cont">
+  <div class="color_demo"></div>
+  <input type="text" id="bgColor" value="b6b308">
+</div>
+```
+
+This input has type `text`, id `bgColor`, and a default `value` of `b6b308`, which is a mustard yellow. You'll see the purpose this serves in a minute!
+
 #### Placing the buttons
-We need two buttons to generate the mockup and to download respectively. Use the `<button>` tag twice to place the buttons. Provide the button label in between the `<button></button>` tags. Provide the `id` as `submitButton` for the 'Generate mockup' button and `Download` for 'Download' button.
+
+Next, we need to add two buttons—one for generating the mockup, and one to download the mockup. Under the `color_cont` div, add the following code:
 
 ```html
 <button type="submit" id="submitBtn" onclick='generateMockup();'>Generate Mockup</button>
 <button id="Download">Download</button>
 ```
 
-#### Generated mockup image
-We will be using an `<img>` tag to display the generated mockup image. Provide the `id` as `resultImg`.
+You'll notice that the first button includes an attribute called [`onclick`](https://www.w3schools.com/jsref/event_onclick.asp). This is an Event that runs the function `generateMockup()` when it detects that the button has been clicked. We haven't written the `generateMockup()` function yet, but we will in a few minutes!
+
+#### Displaying the image
+
+Next, we want to display the final mockup to the user once it has been generated. We'll have to do some JavaScript magic in order to make this work, but for now, add the following code under the two buttons you just wrote:
 
 ```html
-<img id='resultImg'>
+<img id="resultImg">
 ```
 
+*Note: `img` tags in HTML don't require a closing tag.*
+
+#### The parent div
+
+Now, take all of the HTML code you've written and wrap it in between a big `<div>` with a class `cont`:
+
+```html
+<div class="cont">
+  <h1>Website Mockup Generator</h1>
+  <input type="text" id="websiteAddress" placeholder='Enter website'>
+  <div class="color_cont">
+    <div id="color_demo"></div>
+    <input type="text" id="bgColor" value='b6b308'>
+  </div>
+  <button type="submit" id="submitBtn" onclick='generateMockup();'>Create Mockup</button><br>
+  <button id="Download">Download</button>
+  <img id="resultImg">
+</div>
+```
 
 #### Final index.html code:
+
+Nice! You've now written all of the HTML you need for this workshop.
+
+<details>
+
+<summary>Here's what your HTML file should look like now:</summary>
 
 ```html
 <!DOCTYPE html>
@@ -129,357 +172,171 @@ We will be using an `<img>` tag to display the generated mockup image. Provide t
     <title>Website Mockup Generator</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body class="body">
-    <h1>Website Mockup Generator</h1>
-    <input type="text" id="websiteAddress" placeholder='Enter the website'>
-    <br><br>
-    <button type="submit" id="submitBtn" onclick='generateMockup();'>Generate Mockup</button>
-    <button id="Download">Download</button>
-    <img id='resultImg'>
+
+  <body>
+    <div class="cont">
+      <h1>Website Mockup Generator</h1>
+      <input type="text" id="websiteAddress" placeholder='Enter website'>
+      <div class="color_cont">
+        <div id="color_demo"></div>
+        <input type="text" id="bgColor" value='b6b308'>
+      </div>
+      <button type="submit" id="submitBtn" onclick='generateMockup();'>Create Mockup</button><br>
+      <button id="Download">Download</button>
+      <img id="resultImg">
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
 ```
 
-And that's it! We have completed writing our HTML. Your mockup generator should be looking similar to this :
-
-![Mockup generator with only HTML](https://cloud-cg4k9mn15.vercel.app/0mockupgenerator-html.png)
-
-
-### 2) style.css
-
-The style.css file is used to add styles to our website. You can optionally use your own CSS to make your site look better according to your wish!
-
-#### Adding custom font
-Import a custom font from Google fonts using the below code :
-
-```css
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-* {
-  font-family: "Poppins", sans-serif;
-}
-```
-
-#### Customizing the `<body>` style
-Now, let us customize the `<body>` tag. We will change the background color to red and the text color to white. To make the website look better, let us align our items to center using `align-items` and `justify-content`:
-
-```css
-body {
-  background-color: red;
-  color: #fff;
-  align-items: center;
-  justify-content: center;
-  }
-```
-
-Now, provide padding and remove the outline of the text fields using the below code :
-
-```css
-input {
-  padding: 0 10px;
-  outline: none;
-}
-```
-
-Next, create the following CSS classes to make the input fields look more attractive. Though this is optional, I would recommend you to add this :
-
-```css
-#websiteAdress {
-  height: 40px;
-  width: 400px;
-  border-radius: 5px;
-  border: none;
-  margin: 0 0 15px 0;
-}
-
-.color_cont {
-  height: 40px;
-  width: 420px;
-  background: #fff;
-  border-radius: 5px;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 0 0 15px 0;
-}
-
-#color_demo {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background: #7108b6;
-  height: 30px;
-  margin: 0 5px;
-}
-
-.color_cont input {
-  height: 30px;
-  width: 350px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-```
-
-The CSS class for the button will go as follows :
-
-```css
-button {
-  height: 40px;
-  width: 400px;
-  border-radius: 5px;
-  background: #00000069;
-  color: #fff;
-  background-blend-mode: screen, color-dodge, overlay, difference, normal;
-  border: none;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  cursor: pointer;
-}
-```
-
-Provide width and margin for the generated mockup image by using the below CSS properties :
-
-```css
-#resultImg {
-  width: 50%;
-  margin: 10px;
-}
-```
-
-Finally, create a CSS class called `cont` and provide the follow properties. We have used the `cont` class in the HTML.
-
-```css
-.cont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-```
-
-
-<details><summary>Your final CSS code should look similar to this:</summary>
-  
-```css
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-* {
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background-color: red;
-  color: #fff;
-  align-items: center;
-}
-
-input {
-  padding: 0 10px;
-  outline: none;
-}
-
-/*Website address input*/
-#websiteAddress {
-  height: 40px;
-  width: 400px;
-  border-radius: 5px;
-  border: none;
-  margin: 0 0 15px 0;
-}
-
-/*Color input*/
-.color_cont {
-  height: 40px;
-  width: 420px;
-  background: #fff;
-  border-radius: 5px;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 0 0 15px 0;
-}
-
-/*Color demo*/
-#color_demo {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background: #7108b6;
-  height: 30px;
-  margin: 0 5px;
-}
-
-.color_cont input {
-  height: 30px;
-  width: 350px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-button {
-  height: 40px;
-  width: 400px;
-  border-radius: 5px;
-  background: #00000069;
-  color: #fff;
-  background-blend-mode: screen, color-dodge, overlay, difference, normal;
-  border: none;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  cursor: pointer;
-}
-
-
-#resultImg {
-  width: 50%;
-  margin: 10px;
-}
-
-.cont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-```
 </details>
 
-You can customize the styles and make it look better if you wish.
+Want to see what it looks like so far? Click the green "Run" button at the top of your repl. Here's what it should look like:
 
-### 3) script.js
+### 2) `script.js`
 
-The script.js file contains the required JavaScript code. The aim of the JavaScript code is: 
-- To get the website address from the text input
-- Generate a mockup for the website by pressing 'Generate Mockup' button
+Now that you've written all of the frontend code for this project, it's time to write some JavaScript and make it work!
+
+Here's what we'll want our JavaScript code to be able to do at the end:
+
+- Get the website address from the text input
+- Generate a mockup for the website when the user presses the 'Generate Mockup' button
 - Display the mockup as an image
 - Allow users to download the image by pressing 'Download' button
 
-Let us implement the above steps one by one :
+#### Getting HTML elements in JavaScript
 
-#### Getting the elements from HTML in JS by their Id
-Firstly, we will be getting the elements from HTML into JavaSript by using their id using the following code :
+One cool thing about JavaScript is that you can find certain elements on the HTML page and manipulate them with JavaScript 🤯 Let's write some code to do that. Navigate to your `script.js` file and add the following code:
 
 ```javascript
 const resultImg = document.getElementById("resultImg");
 const Download = document.getElementById("Download");
 ```
 
+Remember the HTML elements we wrote with IDs `resultImg` and `Download`? Well, now we can work with those elements in our JavaScript code!
+
 ![Button actions](https://cloud-izk2xul9w.vercel.app/0buttonactions.png)
 
-#### Defining the `generateMockup()` function
-In order to generate the mockups, we will be defining the `generateMockup()` function which is called when the 'Generate Mockup' button is pressed.
+#### `generateMockup()`
+
+Now, let's write the function that will generate our mockup. At the bottom of the `script.js` file, add:
 
 ```javascript
 const generateMockup = () => {
-// Function definition here
+  // code here
 }
 ```
 
-Now, assign the values of `websiteAddress` and `color` to the value from the text input field using :
+Inside the function, add these two lines:
 
 ```javascript
 const websiteAddress = document.getElementById("websiteAddress").value;
 const bgColor = document.getElementById("bgColor").value;
 ```
 
-#### Fetching the mockup image using an API end point
-Inside the generateMockup() function, use the following line of code to fetch the mockup image from the API end point :
+- In JavaScript, `const` refers to a variable that is final and will not be changed.
+- Here, we're getting the value of both of our inputs and assigning them to variables.
+
+#### Fetching the mockup image
+
+We're going to use a handy tool on the web that generates the mockup image for us. At the bottom of the `generateMockup()` function, add:
 
 ```javascript
-const mockup ="https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=" +websiteAdress +"&color=" +bgColor;
+const mockup = 'https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=' + websiteAddress + '&color=' + bgColor;
 ```
 
-The above line appends the website address (`websiteAddress`) and the background color entered by the user to the end point of the API to fetch the image of the required mockup. The link to the required mockup is assiged to `mockup`.
+This looks a little complicated, but really it's just taking the URL of the service we're using to generate the image and appending our data to it.
 
-You can optionally print the URL of the mockup image using :
+*Protip: if you want to see the resulting URL, you can add `console.log(mockup)` on the line directly under this one.*
+
+*Note: this "service" is called an API. Understanding what APIs are and how they work is beyond the scope of this workshop, but there are some other fantastic workshops that introduce the concept of APIs!*
+
+Now, we're going to do something crazy: we're going to use JavaScript to modify the `src` attribute of the `img` tag we wrote at the beginning of this workshop to contain the url for our mockup. This can be done in just one line, which you should add at the bottom of the `generateMockup()` function:
+
+```
+resultImg.src = mockup;
+```
+
+![mind blown gif](https://cloud-bmu0cw52h.vercel.app/01470156847205-y39m16wcfyfqr4x75xon.gif)
+
+#### Downloading the image
+
+We're almost done! The last thing we need to do is allow users to download their mockup.
+
+At the bottom of the `generateMockup()` function, add:
 
 ```javascript
-console.log(mockup);
-```
-
-Now, save the path to the mockup in `resultImg.src`:
-```
-  resultImg.src = mockup;
-```
-
-Your code should be similar to this as of now :
-
-```javascript
-const resultImg = document.getElementById("resultImg");
-const Download = document.getElementById("Download");
-
-const generateMockup = () => {
-  const websiteAdress = document.getElementById("websiteAdress").value;
-  const bgColor = document.getElementById("bgColor").value;
-  const mockup ="https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=" +websiteAdress +"&color=" +bgColor;
-  console.log(mockup);
-  resultImg.src = mockup;
-};
-```
-
-#### Adding the download functionality
-To allow users to download the mockup image by pressing the download button, include the following code inside the `generateMockup()` function.
-
-```javascript
-Download.addEventListener("click", function () {
-window.open(mockup);
+Download.addEventListener("click", () => {
+  window.open(mockup);
 });
 ```
 
-The above code will open the mockup image for the user to download it.
+This code:
 
-<details><summary>Your final  JavaScript code should look something like this:</summary>
-  
+- Attaches an [event listener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp) to the `Download` button. Now, the code inside will run when the button is clicked.
+- Uses `window.open()` to download the file.
+
+<details>
+
+<summary>Why didn't we add an onclick attribute to the download button?</summary>
+
+In case you didn't notice, we're using two different methods of running code when a button is clicked. The first one is to add an `onclick` attribute to the HTML element that runs a JavaScript function. This is what we did with the `submitBtn` button. But for the `Download` button, we skipped that and added the event listener in the JavaScript file. Why?
+
+If you look at the `window.open(mockup)` line, you'll notice that we're passing in the `mockup` variable to the function, which contains the mockup image. Because we need to run JavaScript to get the mockup that we need to pass into `window.open()`, we can't simply call the function in our HTML. If we tried, we wouldn't yet have a mockup image that we could pass in. So, we're attaching the event listener at the end of our `generateMockup()` function in JavaScript so that we can pass in a valid mockup image.
+
+</details>
+
+Yay! you're done!
+
+<details>
+
+<summary>Here's what your final JavaScript code should look like:</summary>
+
 ```javascript
 const resultImg = document.getElementById("resultImg");
 const Download = document.getElementById("Download");
 
-
 const generateMockup = () => {
   const websiteAddress = document.getElementById("websiteAddress").value;
-  const mockup =
-    "https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=" +
-    websiteAdress;
-  console.log(mockup);
+  const mockup = 'https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=' + websiteAddress + '&color=' + bgColor;
   resultImg.src = mockup;
 
-  Download.addEventListener("click", function () {
+  Download.addEventListener("click", () => {
     window.open(mockup);
   });
 };
 ```
+
 </details>
-
-And finally, the coding part is done!
-
-
 
 ## Part 5: The End
 
-You can try running the code by pressing the *'Run'* button on the top. You will see the preview of the website mockup generator in the right side pane.
+Yay!!! You did it! Check out your final project by pressing the *'Run'* button on the top of your repl. You will see the preview of the website mockup generator in the right side pane.
 
 ![Pressing the run button](https://cloud-kk7f3ujxb.vercel.app/0mockuprun.gif)
 
-Hurray! Cheers on building your own website mockup generator.
+If you want to open the website in a new tab, you can do so by clicking the icon that looks like an arrow coming out of a square at the top right.
 
 ![Man celebrating](https://media.giphy.com/media/6nuiJjOOQBBn2/giphy.gif)
 
-Here are some of the mockups that I made :
+Here are some of the mockups I made with this tool.
 
 ![Mockup of my portfolio](https://cloud-39p70jl8k.vercel.app/0mockup2.png)
 
 ![Mockup of Hack Club website](https://cloud-etbe898rq.vercel.app/0mockup1.png)
 
+What mockups can you make? Share a few with the rest of your club.
 
-## What's next? 🚀
+## Hacking 🚀
 
-![Thinking man](https://media.giphy.com/media/d3mlE7uhX8KFgEmY/giphy.gif)
+![Thinking man meme](https://media.giphy.com/media/d3mlE7uhX8KFgEmY/giphy.gif)
 
-You are free to customize and contribute to the website mockup generator! You can consider trying out the below if you are interested :
+Now it's your turn to play around and make this project your own! Here are a few ways I took this project further:
 
 - [A retro style mockup generator](https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator)
 - [A minimalistic mockup generator](https://repl.it/join/dlpvaodr-19eucs071kumara)
 - [A dark themed mockup generator](https://repl.it/@19EUCS071KUMARA/Website-Mockup-Generator-1)
+- Also, right now the colored square in `color_demo` is hardcoded, so it remains a mustard yellow even when you change the color. Try changing the color of that square based on the color inputted in the color input!
 
-I would love to hear from you and take a look at your own mockup generators! You can share it on the `#scrapbook` channel on Hack Club Slack or send it to me directly via DM (@Guru). Thanks and happy hacking!
+I would love to hear from you and take a look at your own mockup generators! You can share it in the `#scrapbook` channel on Hack Club Slack or send it to me directly via DM (@Guru). Thanks and happy hacking!
