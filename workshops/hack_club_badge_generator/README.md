@@ -2,7 +2,7 @@
 name: Hack Club Badge Generator
 description: Make a Hack Club Badge with your name and picture
 author: '@Melvin-Thomas-Dev'
-img: 'https://cloud-bb9ekgrcc.vercel.app/0image.png' ################################ TODO ###############################################
+img: 'https://cloud-9wn2hv2iz.vercel.app/0template_-_copy.png'
 ---
 
 # Hack Club Badge Generator.
@@ -35,7 +35,9 @@ Once you have done these, you are set to start coding.
 
 ## So let's get coding
 
-First of all we need to import Image, ImageDraw, ImageFont from pillow
+First of all let us create a file to write our code in. Create a file called "script.py" and open  it in a tex editor of your choice.
+
+we need to import Image, ImageDraw, ImageFont from pillow. These are used in various parts of our code.
 
 ```python
 from PIL import Image, ImageDraw, ImageFont
@@ -57,7 +59,7 @@ def generate_badge():
     hacker_img = hacker_img.resize((reqwd, reqht))
 ```
 
-What we did here is we opened your picture and then resized the picture.
+What we did here is we opened your picture and then resized the picture. Make sure to copy a good looking picture of you to the same folder and rename it to "image" (or you can change the `image.jpeg` part of the code and add the name the image you have copied to the folder)
 Now we know that the height is accurate. But the widht is still not going to fit the box. So lets crop the image to the size of the white box.
 Now lets crop the image from the center so that the picture fits perfectly in the box
 ```python
@@ -121,7 +123,9 @@ def get_fontsize(image, txt,fraction=1.0):
         fontsize += 1
         font = ImageFont.truetype("fonts/Gobold Regular.otf", fontsize)
 
-    # optionally de-increment to be sure it is less than criteria
+    fontsize = 80 if fontsize>80 else fontsize
+    if fontsize<35:
+        fontsize = get_fontsize(image, txt, 1.4)
     return fontsize
 ```
 
@@ -135,36 +139,182 @@ we define the font variable with the font to be used and the fontsize
 next we increase the fontsize in steps of 1 untill the fontsize is greater than the image width in a while loop. The `getsize()` function returns a tuple of the form (<wudth>, <height>). So `font.getsize[0]` refers to the width of the text.
 Similarly the size function of an image returns a tuple of the same format. So  `image.size[0]` will give you the width of the image.
 We multiply that with the image fraction so that we get the maximum width that our text can have.
-Now we increase the fontsize untill the widht of the text is just greater than the maximum value. When the desired fontsize is reached, the while lop will be terminated. and the function returns the fontsize.
+Now we increase the fontsize untill the widht of the text is just greater than the maximum value. When the desired fontsize is reached, the while loop will be terminated. 
+Now we just do some final adjustments so that the name doesnt look too big or too small. If the fontsize is greater than 80 we decrease it to 80. and if the fontsize is smaller than 35, then we call the `get_fontsize()` function once again, bbut this time the fraction of image to fill is changed to 1.4.
+after these final adjustments are done, the function returns the fontsize.
+
 That's the whole of `get_fontsie()`
+
 
 Now let us code in the `create_label()` function that creates a transparent label with some text in the center.
 
 ```python
 def create_label(text, hacker_img):
     fontsize = get_fontsize(hacker_img, text)
-    #Optimizing fontsize so that it doesnt look too small or too large
-    fontsize = 80 if fontsize>80 else fontsize
-    print('font size',fontsize)
-    (x, y) = (140,920)
-    if fontsize<35:
-        fontsize = get_fontsize(hacker_img, text, 1.4)
-        print("After adjusting:", fontsize)
-        (x, y) = (103, 873)
-    font = ImageFont.truetype('fonts/Gobold Regular.otf', size=fontsize)
-    #Setting text color
+    font = ImageFont.truetype('Gobold Regular.otf', size=fontsize)
     color = 'rgb(236,55,80)' # Red Color
-    #Width and height of new transparent label strip
     strip_width, strip_height = 669, 99
-    #Creating the label
     text_label = Image.new("RGBA", (strip_width,strip_height), (0,0,0,0))
-    #Creating a draw object
     draw = ImageDraw.Draw(text_label)
-    #Getting the width and height of the text(hacker's text)
     text_width, text_height = draw.textsize(text, font)
-    #setting position to center of the strip
     position = ((strip_width-text_width)/2,(strip_height-text_height)/2)
-    #Drawing the text on the label
     draw.text(position, text, color, font=font)
     return text_label
 ```
+First we get the fontsize by calling the `get_fontsize()` function. Then we sent the font to gobold regular.
+The `font = ImageFont.truetype('Gobold Regular.otf', size=fontsize)` line sets the font and the fontsize. We set the color of the font to the hack club red color using `color = 'rgb(236,55,80)'`. 
+Now we will create a transparent label and write the text to the center of the badge. `strip_width, strip_height = 669, 99` defines the width and height of the label we are creating.
+Now we create the label using the `Image.new()` function. The 3 parameters we pass are
+1. THe color mode of the image - "RGBA"
+2. The width and height of the image - (strip_width,strip_height)
+3. The color of the image - (0,0,0,0)
+
+The third parameter is where we set the transparency of the image.
+(0,0,0) represents black color and the final 0 is the alpha value of the image. a transparent image will have alpha value equal to 0.
+Hence by setting the color to (0,0,0,0) we have created a transparent label.
+
+Now we create an ImageDraw object which will be used to draw the letters on the label. `draw = ImageDraw.Draw(text_label)` creates an ImageDraw object that can be used to draw on the text_label.
+
+Now we need to write the name to  the center of the label. For that we first get the height and width of the text and then calculate the position at which we should draw the text.
+Now we have the text to draw and the position to draw the  text. So we draw the text on the label using `draw.text(position, text, color, font=font)`. We pass in the text, the position, the color and the font. Once the label is ready the function returns the label.
+
+Now we have both our functions `get_fontsize()` and `create_label()` ready. 
+At this point your file should look something like this
+```python
+from PIL import Image, ImageDraw, ImageFont
+template = Image.open('template.png')
+
+def get_fontsize(image, txt,fraction=1.0):
+    ...
+    ...
+
+def create_label(text, hacker_img):
+    ...
+    ...
+
+def generate_badge():
+    ...
+    ...
+
+```
+Now let's get back to our main function `generate_badge()`.
+
+We have the badge with the image pasted in the white box.
+Now we need to add your name and the name of your hack club.
+
+Let us create a label for your name first and paste it first
+```python
+def generate_badge():
+    hacker_img = Image.open('image.jpeg')
+    reqht = 474
+    reqwd = int((hacker_img.width/hacker_img.height)*474)
+    hacker_img = hacker_img.resize((reqwd, reqht))
+    width, height = hacker_img.size
+    left = (width - 474)/2
+    top = (height - 474)/2
+    right = (width + 474)/2
+    bottom = (height + 474)/2
+    hacker_img = hacker_img.crop((left, top, right, bottom))
+    template_copy = template.copy()
+    position = (197, 320)
+    template_copy.paste(hacker_img, position)
+
+    # NEW LINES OF CODE
+    name = input("Enter Your Name:").title()
+    name_label = create_label(name, hacker_img)
+    name_position = (103,873)
+    template_copy.paste(name_label, name_position, name_label)
+```
+
+We got the name using the input function and then created the label using the `create_label()` function. Now we set the position at which we paste the image and then we paste the label  like we pasted your picture earlier. The `.title()` at the end of the input function is for converting the input value into title case( i.e. To make the fisrt letter of each name uppercase). You might have noticed that we pass the name of the image 2 times when we are pasting the label. This is because the 2nd time we pass it as a mask. The mask property is used to preserve the transparency of the label.
+
+Now let us repeat the same for the name of the hack club.
+```python
+def generate_badge():
+    hacker_img = Image.open('image.jpeg')
+    reqht = 474
+    reqwd = int((hacker_img.width/hacker_img.height)*474)
+    hacker_img = hacker_img.resize((reqwd, reqht))
+    width, height = hacker_img.size
+    left = (width - 474)/2
+    top = (height - 474)/2
+    right = (width + 474)/2
+    bottom = (height + 474)/2
+    hacker_img = hacker_img.crop((left, top, right, bottom))
+    template_copy = template.copy()
+    position = (197, 320)
+    template_copy.paste(hacker_img, position)
+    name = input("Enter Your Name:").title()
+    name_label = create_label(name, hacker_img)
+    name_position = (103,873)
+    template_copy.paste(name_label, name_position, name_label)
+
+    # NEW LINES OF CODE
+    hc_name_abbr = input("Enter Hack Club Name: ").upper()
+    hc_name = "Hack Club " + str(hc_name_abbr)
+    hc_label = create_label(hc_name, hacker_img)
+    name_position = (103,1011)
+    template_copy.paste(hc_label, name_position, hc_label)
+
+```
+You dont need to enter the full name of your hack club you just need to enter the last part. Say If the name of your hack club is hack club MACE, you just need to input "mace" the suffix hack club is added by this line `hc_name = "Hack Club " + str(hc_name_abbr)`.
+If you would like to have the hack club name in some other form. You can achieve it by changing this line.
+
+At this point we have added your picture, your name and the name of your hack club.
+Now all you have to do is save the badge.
+Let's go ahead aad save the image
+```python
+def generate_badge():
+    hacker_img = Image.open('image.jpeg')
+    reqht = 474
+    reqwd = int((hacker_img.width/hacker_img.height)*474)
+    hacker_img = hacker_img.resize((reqwd, reqht))
+    width, height = hacker_img.size
+    left = (width - 474)/2
+    top = (height - 474)/2
+    right = (width + 474)/2
+    bottom = (height + 474)/2
+    hacker_img = hacker_img.crop((left, top, right, bottom))
+    template_copy = template.copy()
+    position = (197, 320)
+    template_copy.paste(hacker_img, position)
+    name = input("Enter Your Name:").title()
+    name_label = create_label(name, hacker_img)
+    name_position = (103,873)
+    template_copy.paste(name_label, name_position, name_label)
+    hc_name_abbr = input("Enter Hack Club Name: ").upper()
+    hc_name = "Hack Club " + str(hc_name_abbr)
+    hc_label = create_label(hc_name, hacker_img)
+    name_position = (103,1011)
+    template_copy.paste(hc_label, name_position, hc_label)
+
+    # NEW LINES OF CODE
+    template_copy.save(name + ' badge.png')
+    print("Badge generated successfully")
+
+```
+
+Thats it. We have successfully created a badge and saved it.
+
+Now all you have to do is call the function `generate_badge()` to generate your badge. Your file should look like this now
+```python
+from PIL import Image, ImageDraw, ImageFont
+template = Image.open('template.png')
+
+def get_fontsize(image, txt,fraction=1.0):
+    ...
+    ...
+
+def create_label(text, hacker_img):
+    ...
+    ...
+
+def generate_badge():
+    ...
+    ...
+
+generate_badge()
+```
+
+You are all set. Open your terminal/command prompt and type in `python script.py`.
+This will show you a prompt to input your name. Input your name. Then it will show you a prompt to enter the name of your hack club. Enter that as well and you should see an output that says "Badge generated successfully".
