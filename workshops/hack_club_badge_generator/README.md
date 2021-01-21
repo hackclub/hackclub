@@ -15,6 +15,14 @@ We will be making a badge generator wherein you can load your image and generate
 
 ![alt final_image](https://cloud-2s7kfdv88.vercel.app/0john_doe_badge.png)
 
+Lets Look at how we will buld this.
+We will use this template image as our starting material
+![alt template_image](https://cloud-9wn2hv2iz.vercel.app/0template_-_copy.png)
+You can download the high quality image from [https://cloud-3a5mpac6q.vercel.app/0template.png](here).
+
+First of all we will take your picture and then resize it so that it can fit the white rectangle in the template. For that we will first set a height for the image to be equal to the height of the white box (in our case it is 474px) and then calcuate the equivalent width for the image so that we do not loose the original ratio of the image. Once we have the image we will crop it to the required dimensions(474px X 474px) and then paste it in the white box. 
+Now we add your Name and the name of your hack club to the badge. For that we get the input from you and then calculate a font size fo the text so that it will fit perfectly for any name. Once we have have calculated the font size, we then create a label with your name on the center and then paste that to the badge. We do the same thing for your hack club name and then we save the image. Thats it. Your badge is ready
+
 ## So let's get started
 In order to complete this workshop you will need Python installed in your compuuter and an additional Python module called Pillow/PIL.
 
