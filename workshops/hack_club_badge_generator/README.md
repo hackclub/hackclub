@@ -13,7 +13,7 @@ We are all part of the hack club community and what better way to introduce your
 
 We will be making a badge generator wherein you can load your image and generate a badge with a beautiful template containing your name and hack club name as shown below.
 
-![alt final_image](https://cloud-1lrnjshvw.vercel.app/0john_doe_badge.png)
+![alt final_image](https://cloud-2s7kfdv88.vercel.app/0john_doe_badge.png)
 
 ## So let's get started
 In order to complete this workshop you will need Python installed in your compuuter and an additional Python module called Pillow/PIL.
