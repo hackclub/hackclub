@@ -101,3 +101,69 @@ def generate_badge():
 
 We created a copy of the template image so that we can reuse the image for any number of badges and then pasted the picture inside the box.
 `position = (197, 320)` is the position at which the picture should be pasted. The coordinates 197 and 320 are respectively the X and Y coordinates of the top left point of the box(in pixels).
+
+### Time to print your name
+
+Now we need to print your name and the name of your hack club. For that let us define 2 more functions `create_label()` and `get_fontsize()`.
+`create_label()` function will create a transparent label with a text in the middle
+`get_fontsize()` will calculate the font size depending on the text you enter.
+
+Now let us pause the `generate_badge()` function for the time being and code the other 2 functions.
+
+```python
+def get_fontsize(image, txt,fraction=1.0):
+    fontsize = 1  # starting font size
+    # portion of image width you want text width to be
+    img_fraction = float(fraction)
+    font = ImageFont.truetype("fonts/Gobold Regular.otf", fontsize)
+    while font.getsize(txt)[0] < img_fraction*image.size[0]:
+        # iterate until the text size is just larger than the criteria
+        fontsize += 1
+        font = ImageFont.truetype("fonts/Gobold Regular.otf", fontsize)
+
+    # optionally de-increment to be sure it is less than criteria
+    return fontsize
+```
+
+what this function does is it calculates the fontsize so that the text (in this case your name  and the hack club name) are approximately equal in wodth to the image we have pasted.
+we start with fontsize = 1.
+the `img_fraction` signifies the percentage of the image the text should cover. The default value is given to be 1 so the function returns the fontsize in which the text is to be written so that the twxt is approximately equal in width to the picture we have pasted.
+we define the font variable with the font to be used and the fontsize
+`font = ImageFont.truetype("fonts/Gobold Regular.otf", fontsize)`
+
+next we increase the fontsize in steps of 1 untill the fontsize is greater than the image width in a while loop. The `getsize()` function returns a tuple of the form (<wudth>, <height>). So `font.getsize[0]` refers to the width of the text.
+Similarly the size function of an image returns a tuple of the same format. So  `image.size[0]` will give you the width of the image.
+We multiply that with the image fraction so that we get the maximum width that our text can have.
+Now we increase the fontsize untill the widht of the text is just greater than the maximum value. When the desired fontsize is reached, the while lop will be terminated. and the function returns the fontsize.
+That's the whole of `get_fontsie()`
+
+Now let us code in the `create_label()` function that creates a transparent label with some text in the center.
+
+```python
+def create_label(text, hacker_img):
+    fontsize = get_fontsize(hacker_img, text)
+    #Optimizing fontsize so that it doesnt look too small or too large
+    fontsize = 80 if fontsize>80 else fontsize
+    print('font size',fontsize)
+    (x, y) = (140,920)
+    if fontsize<35:
+        fontsize = get_fontsize(hacker_img, text, 1.4)
+        print("After adjusting:", fontsize)
+        (x, y) = (103, 873)
+    font = ImageFont.truetype('fonts/Gobold Regular.otf', size=fontsize)
+    #Setting text color
+    color = 'rgb(236,55,80)' # Red Color
+    #Width and height of new transparent label strip
+    strip_width, strip_height = 669, 99
+    #Creating the label
+    text_label = Image.new("RGBA", (strip_width,strip_height), (0,0,0,0))
+    #Creating a draw object
+    draw = ImageDraw.Draw(text_label)
+    #Getting the width and height of the text(hacker's text)
+    text_width, text_height = draw.textsize(text, font)
+    #setting position to center of the strip
+    position = ((strip_width-text_width)/2,(strip_height-text_height)/2)
+    #Drawing the text on the label
+    draw.text(position, text, color, font=font)
+    return text_label
+```
