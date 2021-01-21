@@ -17,7 +17,9 @@ We will be making a badge generator wherein you can load your image and generate
 
 Lets Look at how we will buld this.
 We will use this template image as our starting material
+
 ![alt template_image](https://cloud-9wn2hv2iz.vercel.app/0template_-_copy.png)
+
 You can download the high quality image from [https://cloud-3a5mpac6q.vercel.app/0template.png](here).
 
 First of all we will take your picture and then resize it so that it can fit the white rectangle in the template. For that we will first set a height for the image to be equal to the height of the white box (in our case it is 474px) and then calcuate the equivalent width for the image so that we do not loose the original ratio of the image. Once we have the image we will crop it to the required dimensions(474px X 474px) and then paste it in the white box. 
