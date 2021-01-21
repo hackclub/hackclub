@@ -129,6 +129,7 @@ what this function does is it calculates the fontsize so that the text (in this 
 we start with fontsize = 1.
 the `img_fraction` signifies the percentage of the image the text should cover. The default value is given to be 1 so the function returns the fontsize in which the text is to be written so that the twxt is approximately equal in width to the picture we have pasted.
 we define the font variable with the font to be used and the fontsize
+
 `font = ImageFont.truetype("fonts/Gobold Regular.otf", fontsize)`
 
 next we increase the fontsize in steps of 1 untill the fontsize is greater than the image width in a while loop. The `getsize()` function returns a tuple of the form (<wudth>, <height>). So `font.getsize[0]` refers to the width of the text.
