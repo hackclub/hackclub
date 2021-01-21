@@ -25,15 +25,79 @@ You can download the high quality image from [here](https://cloud-3a5mpac6q.verc
 First of all we will take your picture and then resize it so that it can fit the white rectangle in the template. For that we will first set a height for the image to be equal to the height of the white box (in our case it is 474px) and then calcuate the equivalent width for the image so that we do not loose the original ratio of the image. Once we have the image we will crop it to the required dimensions(474px X 474px) and then paste it in the white box. 
 Now we add your Name and the name of your hack club to the badge. For that we get the input from you and then calculate a font size fo the text so that it will fit perfectly for any name. Once we have have calculated the font size, we then create a label with your name on the center and then paste that to the badge. We do the same thing for your hack club name and then we save the image. Thats it. Your badge is ready
 
-## So let's get started
-In order to complete this workshop you will need Python installed in your compuuter and an additional Python module called Pillow/PIL.
+The font we have used for our badge is "gobold regular". You can download the font file from [here](https://cloud-p8pyhxmkf.vercel.app/0gobold_regular.otf). Download the template image and the font file and save it into a folder called "Hack club Badge Generator".
 
-You can download and install the latest version of Python from [https://www.python.org/](https://www.python.org)
-
-Install Python with the general settings. Remember to  tick the add python to path option while installing.
-Once you have got pythin set up we need to install pillow, which is a python module used for image processing.
-To install pillow open your terminal/ command prompt and type in 
-```
+We will also need to install one python module called "Pilow". Pillow is a python module used to process images. To install pillow open your terminal/ command prompt and type in 
+```python
 pip install pillow
 ```
+Once you have done these, you are set to start coding.
 
+## So let's get coding
+
+First of all we need to import Image, ImageDraw, ImageFont from pillow
+
+```python
+from PIL import Image, ImageDraw, ImageFont
+```
+Now we will open the template image
+
+```python
+template = Image.open('template.png')
+```
+This will create an image object which we will refer to using the name "template"
+
+Now lets start making our badge. For that let us write a function called `generate_badge()`
+
+```python
+def generate_badge():
+    hacker_img = Image.open('image.jpeg')
+    reqht = 474
+    reqwd = int((hacker_img.width/hacker_img.height)*474)
+    hacker_img = hacker_img.resize((reqwd, reqht))
+```
+
+What we did here is we opened your picture and then resized the picture.
+Now we know that the height is accurate. But the widht is still not going to fit the box. So lets crop the image to the size of the white box.
+Now lets crop the image from the center so that the picture fits perfectly in the box
+```python
+def generate_badge():
+    hacker_img = Image.open('image.jpeg')
+    reqht = 474
+    reqwd = int((hacker_img.width/hacker_img.height)*474)
+    hacker_img = hacker_img.resize((reqwd, reqht))
+
+    #NEW LINES OF CODE
+    width, height = hacker_img.size
+    left = (width - 474)/2
+    top = (height - 474)/2
+    right = (width + 474)/2
+    bottom = (height + 474)/2
+    hacker_img = hacker_img.crop((left, top, right, bottom))
+```
+
+We used the actual width and height of the image and then found 4 points with which we will crop the image. We cropped the image using `hacker_img.crop()`
+
+Now we have the picture in the perfect size. Now we have to paste it inside the box. Let'd do just that
+
+```python
+def generate_badge():
+    hacker_img = Image.open('image.jpeg')
+    reqht = 474
+    reqwd = int((hacker_img.width/hacker_img.height)*474)
+    hacker_img = hacker_img.resize((reqwd, reqht))
+    width, height = hacker_img.size
+    left = (width - 474)/2
+    top = (height - 474)/2
+    right = (width + 474)/2
+    bottom = (height + 474)/2
+    hacker_img = hacker_img.crop((left, top, right, bottom))
+
+    #NEW LINES OF CODE
+    template_copy = template.copy()
+    position = (197, 320)
+    template_copy.paste(hacker_img, position)
+```
+
+We created a copy of the template image so that we can reuse the image for any number of badges and then pasted the picture inside the box.
+`position = (197, 320)` is the position at which the picture should be pasted. The coordinates 197 and 320 are respectively the X and Y coordinates of the top left point of the box(in pixels).
