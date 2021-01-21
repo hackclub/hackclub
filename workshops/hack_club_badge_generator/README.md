@@ -11,7 +11,9 @@ Waiting for a chance to kick start your coding skills and make something cool an
 
 We are all part of the hack club community and what better way to introduce yourself and the local hack club to which you belong, than with a stylish badge that will help you stand out from the crowd. In this workshop, we’ll teach you how to make a badge generator. It would be great if you had a basic knowledge of python but even if you don’t we have made this quite simple for you to easily pick up the concepts.
 
-We will be making a badge generator wherein you can load your image and generate a badge with a beautiful template containing your name and hack club name as text.
+We will be making a badge generator wherein you can load your image and generate a badge with a beautiful template containing your name and hack club name as shown below.
+
+![alt final_image](https://cloud-1lrnjshvw.vercel.app/0john_doe_badge.png)
 
 ## So let's get started
 In order to complete this workshop you will need Python installed in your compuuter and an additional Python module called Pillow/PIL.
@@ -24,3 +26,4 @@ To install pillow open your terminal/ command prompt and type in
 ```
 pip install pillow
 ```
+
