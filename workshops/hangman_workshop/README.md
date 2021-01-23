@@ -7,8 +7,11 @@ image: 'https://cloud-pyase6wua.vercel.app/0screenshot__1414_.png'
 
 In this workshop we are going to be creating Hangman using Python and the turtle library.
 
-<img src="https://cloud-pyase6wua.vercel.app/0screenshot__1414_.png" width="900" alt="Hangman Example">
-<img src="https://cloud-lj0em9l0r.vercel.app/0screenshot__1415_.png" width="900" alt="Hangman Enter Letter Example">
+<img src="https://cloud-pyase6wua.vercel.app/0screenshot__1414_.png" width="400" alt="Hangman Example">
+
+Oh the classic game of Hangman! It's fun to have your friends guess the word you're thinking! Well, if you don't have friends around at the moment, why not create a digital version?
+
+<img src="https://cloud-lj0em9l0r.vercel.app/0screenshot__1415_.png" width="400" alt="Hangman Enter Letter Example">
 
 <img src="https://media.tenor.com/images/d86646ec4acbb11c68c0e101b090a74d/tenor.gif" width="380" alt="Kazoo Kid Gif">
 
@@ -22,14 +25,16 @@ Create a new repl and use Python as the language.
 
 # Initial Statements
 
-Let's Begin!
+These initial statements are pretty nice (aka you need them or your program doesn't work).
 <img src="https://media3.giphy.com/media/8y8NVqFqhTQVa/200.gif" width="380" alt="Ratatouille Gif">
 
 ```py
 import random
 import drawing
+```
+We are importing the [random library](https://docs.python.org/3/library/random.html) for randomness and drawing class which we will create later.
 
-
+```py
 words = ["apple", "train", "shirt", "fork", "chair"]
 
 wordsType = {
@@ -40,71 +45,29 @@ wordsType = {
   "chair" : "furniture"
 }
 ```
-
-- We are importing the [random library](https://docs.python.org/3/library/random.html) for randomness and drawing class which we will create later.
-- We are creating a list of words that can be picked, and then we are creating a [dictionary](https://www.w3schools.com/python/python_dictionaries.asp) to hold their category.
+We are creating a list of words that can be picked, and then we are creating a [dictionary](https://www.w3schools.com/python/python_dictionaries.asp) to hold their category.
 
 # More Initial Statements
 ```py
-#Our previous initial statements would be here.
 word = random.choice(words)
 guess = ""
 for letter in word:
   guess+= "*"
 strikes = 0
+```
+We are assigning a random word to the "word" string and creating an empty string named "guess". Add an asterisk (\*) for each letter of the word the user will guess. Create an integer named "strikes" and setting it to 0 to represent the incorrect user guesses.
 
+```py
 drawing.hangman(0, 0, strikes)
 drawing.drawText(-20, -80, guess)
 drawing.drawText(-30, 80, wordsType[word])
 ```
-- We are assigning a random word to the "word" string and creating an empty string named "guess".
-- We are adding an asterisk (*) for each letter of the word the user will guess.
-- We are creating an integer named "strikes" and setting it to 0 to represent the incorrect user guesses.
-- We are calling some drawing functions that we will create later.
+We are calling some drawing functions that we will create later.
 
 # User Guessing
-We will be creating this block of code.
+The user has to guess a letter! It's Hangman after all.
 
 <img src="https://media4.giphy.com/media/d31vIfZXjpQXJukE/giphy.gif" width="380" alt="South Park Gif">
-
-```py
-#All the initial statements would be here.
-while(True):
-  while(True):
-    letterGuess = input("Guess a letter: ").lower()
-    if (len(letterGuess) == 1):
-      break
-
-  tempAnswer = ""
-  tempIndex = 0
-  letterHere = False
-  for letter in word:
-    if (letterGuess == letter):
-      tempAnswer += letter
-      letterHere = True
-    elif (guess[tempIndex] == "*"):
-      tempAnswer += "*"
-    else:
-      tempAnswer += guess[tempIndex]
-    tempIndex+=1
-  guess = tempAnswer
-  if (letterHere == False):
-    strikes+=1
-
-  drawing.hangman(0, 0, strikes)
-  drawing.drawText(-20, -80, guess)
-  drawing.drawText(-30, 80, wordsType[word])
-
-  if (strikes >= 6):
-    drawing.drawText(-60, -120, "YOU LOSE!")
-    break
-
-  if (word == guess):
-    drawing.drawText(-60, -120, "YOU WIN!")
-    break
-```
-- This while loop comes after the initial statements.
-- Don't worry! Let's break it down!
 
 ## User Input
 ```py
@@ -114,19 +77,42 @@ while(True):
     if (len(letterGuess) == 1):
       break
 ```
-- We are making sure the user is inputting a single letter and converting it to lower case.
+Create two while loops. The first is for the user to keep inputting letters, and the second is for the input. We are making sure the user is inputting a single letter and converting it to lower case.
 
 ## Comparing Input to Word
 ```py
 while(True):
-  while(True):
-    letterGuess = input("Guess a letter: ").lower()
-    if (len(letterGuess) == 1):
-      break
+  #What we just wrote would be here.
       
   tempAnswer = ""
   tempIndex = 0
   letterHere = False
+```
+Create an empty string, integer that equals 0, and a boolean that is false. They will be used in a moment.
+
+```py
+while(True):
+  #What we just wrote would be here.
+      
+  for letter in word:
+```
+We want to use a for-each loop to go through each letter in the word.
+
+```py
+while(True):
+  #What we just wrote would be here.
+      
+  for letter in word:
+    if (letterGuess == letter):
+      tempAnswer += letter
+      letterHere = True
+```
+If the letter guessed is the current letter being checked, then add the letter to the tempAnswer string and set letterHere to true.
+
+```py
+while(True):
+  #What we just wrote would be here.
+      
   for letter in word:
     if (letterGuess == letter):
       tempAnswer += letter
@@ -136,13 +122,29 @@ while(True):
     else:
       tempAnswer += guess[tempIndex]
     tempIndex+=1
+```
+Else if the guess at the index is an asterisk (meaning it is not guessed yet), add it to the tempAnswer string. Else, if the user's guess is already guessed (whether by them inputting the same thing again or it starting with a letter), then add their guess to the tempAnswer string.
+
+```py
+while(True):
+  #What we just wrote would be here.
+      
   guess = tempAnswer
   if (letterHere == False):
     strikes+=1
 ```
-In this part of the code, we are checking if our guessed letter matches up with any letters of the word we are guessing. If it does we are changing our guess string, but if does not we are adding another strike.
+Set the guess to tempAnswer. If the letterHere boolean is false, then add a strike.
 
 ## Ending Statements
+```py
+while(True):
+  #What we already wrote.
+  drawing.hangman(0, 0, strikes)
+  drawing.drawText(-20, -80, guess)
+  drawing.drawText(-30, 80, wordsType[word])
+```
+We are drawing our hangman and text.
+
 ```py
 while(True):
   #What we already wrote.
@@ -158,10 +160,10 @@ while(True):
     drawing.drawText(-60, -120, "YOU WIN!")
     break
 ```
-- This code comes after the code we just wrote.
-- We are drawing our hangman and text, and ending the game and displaying a win or lose message.
+We are ending the game and displaying a win or lose message. If the user has more than or equal to six strikes, they lose. If they guessed the word, they win.
 
 # Drawing
+Let's draw a stick figure to represent our man (don't worry he's fine).
 
 <img src="https://media4.giphy.com/media/VhtSLWxOQOGdFfGTTa/source.gif" width="380" alt="Kid Drawing Gif">
 
@@ -191,50 +193,48 @@ def hangman(x, y, strikes):
 We want to clear the screen and reset our position each time we draw the hangman.
 
 ### Strike 1
+Only one strike.
 ```py
 def hangman(x, y, strikes):
-  turtle.clearscreen()
-  turtle.speed(0)
-  turtle.hideturtle()
-  turtle.goto(x, y)
-  turtle.down()
+  #What we just wrote would be here.
 
   if (strikes < 1):
     turtle.up()
   turtle.circle(20)
  ```
 
-If the user has at least 1 strike then we draw the head.
+If the user has at least 1 strike then we draw the head (a circle).
 
 ### Strike 2
+Two strikes is pushing it.
 ```py
 def hangman(x, y, strikes):
-  #What we already wrote.
+  #What we just wrote would be here.
   if (strikes < 2):
     turtle.up()
   turtle.right(90)
   turtle.forward(20)
   turtle.backward(10)
   ```
-- This code comes after the first strike's code.
-- If the user has at least 2 strikes then we draw the body.
+If the user has at least 2 strikes then we draw the body.
 
 ### Strike 3
+Three strikes and you're out!
 ```py
 def hangman(x, y, strikes):
-  #What we already wrote.
+  #What we just wrote would be here.
   if (strikes < 3):
     turtle.up()
   turtle.left(90)
   turtle.forward(10)
 ```
-- This code comes after the previous strikes' code.
-- If the user has at least 3 strikes then we draw the first arm.
+If the user has at least 3 strikes then we draw the first arm.
 
 ### Strike 4
+Nevermind I mean four.
 ```py
 def hangman(x, y, strikes):
-  #What we already wrote.
+  #What we just wrote would be here.
   if (strikes < 4):
     turtle.up()
   turtle.backward(20)
@@ -242,36 +242,35 @@ def hangman(x, y, strikes):
   turtle.right(90)
   turtle.forward(10)
 ```
-- This code comes after the previous strikes' code.
-- If the user has at least 4 strikes then we draw the second arm.
+If the user has at least 4 strikes then we draw the second arm.
 
 ### Strike 5
+Nevermind again I mean five.
 ```py
 def hangman(x, y, strikes):
-  #What we already wrote.
+  #What we just wrote would be here.
   if (strikes < 5):
     turtle.up()
   turtle.left(30)
   turtle.forward(20)
   turtle.backward(20)
 ```
-- This code comes after the previous strikes' code.
-- If the user has at least 5 strikes then we draw the first leg.
+If the user has at least 5 strikes then we draw the first leg.
 
 ### Strike 6
+Never mind again again I mean seven.
 ```py
 def hangman(x, y, strikes):
-  #What we already wrote.
+  #What we just wrote would be here.
   if (strikes < 6):
     turtle.up()
   turtle.right(60)
   turtle.forward(20)
 ```
-- This code comes after the previous strikes' code.
-- If the user has at least 6 strikes then we draw the second leg.
+If the user has at least 6 strikes then we draw the second leg.
 
 ## Drawing Text Function
-Put this function below the previous one.
+Let's allow text to be drawn to the screen.
 
 ```py
 def drawText(x, y, text):
@@ -283,7 +282,7 @@ def drawText(x, y, text):
 This draws the text at the specified coordinate with the Arial font.
 
 # Final Source Code
-Here's the final code we wrote!
+You're done! Have fun! Here's the final code we wrote!
 
 <img src="https://media1.tenor.com/images/ee23f257055a69a5a27d13c23c39e55d/tenor.gif?itemid=18635064" width="380" alt="Cr1tikal Gif">
 
