@@ -6,7 +6,7 @@ image: 'https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png'
 ---
 
 # Create a Drawing Program with Shapes!
-In this workshop, we will be creating a drawing program that allows us to make pictures out of different shapes such as circles, squares, and triangles.
+I like to draw, you like to draw, so let's create a drawing program with shapes such as circles, squares, and triangles! It will turn out really cool.
 
 <img src="https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png" width="580" alt="Drawing Example">
 
@@ -23,6 +23,8 @@ Create a new repl and use Python as the language.
 # Let's Begin Creating the Program
 <img src="https://media2.giphy.com/media/62PP2yEIAZF6g/giphy.gif" width="380" alt="Cool Gif">
 
+I hope you're ready because we're getting straight into the creation!
+
 ## Importing Libraries
 Let's begin by importing the turtle and math libraries.
 
@@ -34,25 +36,25 @@ import math
 We will be drawing to the screen using the turtle library! Turtle allows us to draw to the screen like a whiteboard. More information [here](https://www.geeksforgeeks.org/turtle-programming-python/) The math library will be used for calculations!
 
 ## Creating Variables
-Now lets create some initial variables.
+Now lets create some initial variables. Don't miss them or else you'll have issues.
 ```python
-import turtle
-import math
-
 squareWidth = 20
 circleRadius = 10
 triangleLength = 20
-
+```
+We are creating variables for the width of the square, radius of the circle, and length of the triangle. They will be used in the drawing process later.
+ 
+```python
 itemNum = 0
 maxItem = 3
+```
+The amount of shapes we have will be under "maxItem" and "itemNum" is where we will start (the index in the array). This will make more sense when we draw the items later on.
 
+```python
 colorNum = 0 
 colors = ["red", "green", "blue", "yellow", "orange", "purple", "grey", "black"]
 ```
-
-- We are creating variables for the width of the square, radius of the circle, and length of the triangle.
-- The amount of shapes we have will be under "maxItem" and "itemNum" is where we will start. This will make more sense when we draw the items later on. 
-- The variable "colorNum" is the index we are starting at with the array of "colors". We will handle swtiching between colors later on.
+The variable "colorNum" is the index we are starting at with the array of "colors". We will handle swtiching between colors later on.
 
 ## Initializing The Turtle
 Let's initialize the turtle.
@@ -60,22 +62,27 @@ Let's initialize the turtle.
 <img src="https://media.tenor.com/images/3dda08893f64e5e4437dc3ba93cad5b9/tenor.gif" width="380" alt="Turtle Gif">
 
 ```python
-#Code we already wrote
-
 turtle.hideturtle()
 turtle.speed(0)
 turtle.up()
 ```
-- We are hiding the turtle cursor.
-- We are setting the speed to 0 so it will draw instantly.
-- We are making the turtle's pen go up so it will not draw while moving.
+We are hiding the turtle cursor. Also, we are setting the speed to 0 so it will draw instantly and making the turtle's pen go up so it will not draw while moving.
 
 # Drawing the Shapes
 
+I know you're eager to get into the meat of the progran, so let's do it.
+
 ## Drawing the Circle
-We are going to create the circle function.
+We are going to create the circle function. Look at the "o". I know it's a pretty cool circle.
 
 <img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Circle Example">
+
+```python
+def circle(x, y): 
+  turtle.begin_fill()
+  turtle.end_fill()
+```
+The def defines the function, and we are passing in x and y coordinates as parameters. Add these begin and end fill statements, which allows us to make filled in shapes.
 
 ```python
 def circle(x, y): 
@@ -84,10 +91,8 @@ def circle(x, y):
   turtle.circle(circleRadius) 
   turtle.end_fill()
 ```
-- The def defines the function, and we are passing in x and y coordinates as parameters.
-- The "turtle.begin_fill()" function fills in the circle we will draw.
-- We are then going to the the location of where we will draw. It is offset so it will be centered at the mouse point.
-- We are then drawing and filling the circle and ending the fill.
+
+We are then going to the the location of where we will draw. It is offset so it will be centered at the mouse point. Then, draw the circle!
 
 
 ## Drawing the Square
@@ -100,20 +105,37 @@ def square(x, y):
   turtle.begin_fill()
   turtle.goto(x-(squareWidth/2), y-(squareWidth/2))
   turtle.setheading(0)
+  turtle.end_fill()
+```
+Once again add the def to define the function and pass in the x and y coordinates as parameters. Then add the begin and end fill statements the same as before, go to the offset, and set the direction of the turtle to face right.
+
+```python
+def square(x, y):
+  turtle.begin_fill()
+  turtle.goto(x-(squareWidth/2), y-(squareWidth/2))
+  turtle.setheading(0)
+  
   for x in range(4):
     turtle.forward(20)
     turtle.left(90) 
   turtle.end_fill()
 ```
-- The def defines the function, and we are passing in x and y coordinates as parameters.
-- We are beginning the fill and going to the offset coordinate.
-- We are setting the direction to face right.
-- We are running a for loop to create each side of the square and then ending the fill.
+
+We are running a for loop to create each side of the square. Squares have four sides so the for loop runs four times. Yeah, pretty clever. I know.
 
 ## Drawing the Triangle
 We are going to create triangle function.
 
 <img src="https://cloud-mo50706v1.vercel.app/0screenshot__1394_.png" width="380" alt="Triangle Example">
+
+```python
+def triangle(x, y):
+  turtle.goto(x-(triangleLength/2), y-((triangleLength *math.sqrt(3))/6))
+  turtle.setheading(0)
+  turtle.begin_fill()
+  turtle.end_fill()
+```
+The def defines the function (its the last shape this time), and we are passing in x and y coordinates as parameters. Go to the offset, set the direction to the right, and add the begin and end fill statements.
 
 ```python
 def triangle(x, y):
@@ -128,19 +150,25 @@ def triangle(x, y):
 
   turtle.setheading(0)
 ```
-- The def defines the function, and we are passing in x and y coordinates as parameters.
-- We are going to the offset coordinate and setting the direction to face right.
-- We are beginning the fill and creating a for loop.
-- We are going forward and then turning left 3 times in order to create the triangle.
-- We finally end the fill and set the direction to the right.
+In the for loop, we are going forward and then turning left 3 times in order to create the triangle. After the fill, set the direction to the right.
 
 
 ## Finishing Up the Shapes
 
 <img src="https://media1.tenor.com/images/46422729dc9ecd6898203ef13b3d9985/tenor.gif?itemid=15700153" width="380" alt="Almost There Gif">
 
+We are done making the shapes, but that's useless if we can't switch between them! Let's add that.
+
 ## Switching Between Shapes
 Here is the functionality to switch between shapes.
+
+```python
+def switchShape(x, y):
+  global itemNum
+  global maxItem
+```
+Define the function for switching shapes and pass in the x and y coordinates as parameters. This sounds weird, but the only way the turtle will recognize this function after input is with these parameters. Just add them. Also, make the itemNum and maxItem global so we can use them in here.
+
 
 ```python
 def switchShape(x, y):
@@ -152,9 +180,7 @@ def switchShape(x, y):
   if (itemNum >= maxItem):
     itemNum = 0
 ```
-- The itemNum and maxItem are made global so we can use them.
-- Increment the itemNum and if greater than or equal to the maxItem amount, go back to 0.
-- Even though we are not using the parameters, they are required for our screen click function later.
+Increment the itemNum and if it is greater than or equal to the maxItem amount, go back to 0.
 
 ## Drawing Shapes
 Here is the functionality to draw the current shape.
@@ -171,13 +197,19 @@ def drawItem(x, y):
   else:
     print(itemNum)
 ```
-- The "itemNum" variable is made global so we can use it.
-- We then see what value it is and draw the respective shape.
+The "itemNum" variable is made global so we can use it. We then see what value it is and draw the respective shape. If the item number is not one of the ones we have a shape for, then print it to the console.
 
 # Switching Between Colors
-We are changing the color.
+Functionality to change the color.
 
 <img src="https://cloud-c9ojk6h90.vercel.app/0screenshot__1395_.png" width="380" alt="Switch Colors Example">
+
+```python
+def switchColor(x, y):
+  global colorNum
+  global colors
+```
+Let's create function to switch the color. Once again, the turtle library's ability for input forces us to pass in x and y parameters. The colorNum and colors variables are made global so we can use them.
 
 ```python
 def switchColor(x, y):
@@ -192,9 +224,7 @@ def switchColor(x, y):
 
   turtle.color(colors[colorNum])
 ```
-- The "colorNum" and "colors" variables are made global so we can use them.
-- Increment the "itemNum" and if greater than or equal to the "colors" length, go back to 0.
-- We then set the turtle's color to the color at the colorNum index of the colors array.
+Increment the itemNum and if greater than or equal to the "colors" length, go back to 0. We then set the turtle's color to the color at the colorNum index of the colors array.
 
 
 # Clicking On Screen
@@ -202,7 +232,6 @@ def switchColor(x, y):
 <img src="https://media3.giphy.com/media/hCfESQ8r1eBOg/giphy.gif" width="380" alt="Clicking Screen Gif">
 
 ```python
-#Everything we already wrote.
 turtle.onscreenclick(drawItem, 1)
 turtle.onscreenclick(switchColor, 2)
 turtle.onscreenclick(switchShape, 3)
@@ -216,11 +245,6 @@ turtle.onscreenclick(switchShape, 3)
 In case your middle mouse button and right click do not work, let's make some alternative keyboard controls.
 
 ```python
-turtle.onscreenclick(drawItem, 1)
-turtle.onscreenclick(switchColor, 2)
-turtle.onscreenclick(switchShape, 3)
-
-
 def alternativeControl1():
   canvas = turtle.getcanvas()
   x, y = canvas.winfo_pointerx(), canvas.winfo_pointery()
@@ -230,20 +254,20 @@ def alternativeControl2():
   canvas = turtle.getcanvas()
   x, y = canvas.winfo_pointerx(), canvas.winfo_pointery()
   switchShape(x, y)
+```
+The functions get the current mouse position and call their respective function of switching the shape or size.
 
-
+```python
 turtle.onkey(alternativeControl1, "s")
 turtle.onkey(alternativeControl2, "d")
 
 turtle.listen()
 turtle.mainloop()
 ```
-- Underneath the mouse buttons we wrote, add these alternative control functions.
-- The functions get the current mouse position and call their respective function.
-- The turtle is then listening for the key presses.
+The turtle is then listening for the key presses, and the functions we created are called when either the s or d key is pressed.
 
 # Final Source Code
-This is the code for the entire program.
+You are done! Congrats! Here's all the code we wrote.
 
 <img src="https://media2.giphy.com/media/26u4lOMA8JKSnL9Uk/giphy.gif" width="380" alt="Done Gif">
 
