@@ -344,10 +344,10 @@ tweetInputField = driver.find_element_by_xpath(
 
 tweetInputField.send_keys(tweet)
 
-time.sleep(1)
-
 tweetButton = driver.find_element_by_xpath(
   '/html/body/div/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[4]/div/div/div[2]/div[3]')
+  
+time.sleep(1)
 
 tweetButton.click()
 
