@@ -7,11 +7,9 @@ img: 'https://cloud-qmqu378mz.vercel.app/0image.png'
 
 # Meme Generator
 
-Ever wondered how to make memes? Or did you ever wanted to make your _own_ cool memes and share it with the world?
+Do you like memes? Ever wanted to make your own, but didn't know which apps to install? Don't worry because in this workshop, you'll be spinning up your own ***Meme Generator***, or as I like to call it, the *Meme-Genie*.
 
-Then you're at the right place, today we'll be spinning up our own ***Meme Generator***, or as I like to call it - 'The Meme-Genie'
-
-Let's take a look of how our Meme Generator looks like:
+Let's take a look at how our Meme Generator will look like:
 
 ![Meme Generator demo](https://cloud-i6md9xxdx.vercel.app/0image.png)
 
@@ -43,22 +41,24 @@ Let's first start by making a structure for our Meme Generator website.
 
 We'll be writing all our below code inside our `<body>` tag:
 
-* First give an appropriate heading to our website using the `<h1>` tag.
+* First give an appropriate heading to our website using the `<h1>` tag, something like:
 
-* Next, want our memes to have two text fields: ***Top Text*** and ***Bottom Text***, something like this:
+  ```html
+  <h1>Welcome to Meme-Genie 🧞 </h1>
+  ```
+
+* Next, we want our memes to have two text fields: ***Top Text*** and ***Bottom Text***, something like this:
 
     ![Meme showing top text and bottom text](https://cloud-ejplvs3dg.vercel.app/0image.png)
 
-    For that we'll require two text fields in our website, to achieve that we'll use `<textarea>` tag:
+    To achieve this we'll use two `<textarea>` tags after our `<h1>` tag :
 
     ```html
     <textarea id="top-text"></textarea>
     <textarea id="bottom-text"></textarea>
     ```
-    
-    (put this after our `<h1>` tag)
 
-* Next, we'll need to take a meme template as a file input, we'll use:
+* Next, we need to take a meme template as our `file` input. For this we'll use `<input>` tags in the following fashion specifying that we only want images as our `file` input:
   
   ```html
   <input type="file" id="image-input" accept="image/*">
@@ -66,13 +66,11 @@ We'll be writing all our below code inside our `<body>` tag:
 
     This will pop-up a button on our website that'll let the user input a meme template as an image.
 
-* Now we need a generate button:
+* Now we need a `Generate` button:
 
     ```html
     <button id="generate-btn">Generate!</button>
     ```
-
-    Later we can add an event listener to this button which can run a function on click!
 
 * But we need something to display our meme, right?
 
@@ -121,7 +119,7 @@ You can take a look at how different input types work [here](https://developer.m
 
 ### 2) CSS
 
-Next, let's add some basic styling to our website, navigate to our `style.css` file and add the following code:
+Next, let's add some basic styling to our website. Navigate to our `style.css` file and add the following code:
 
 ```CSS
 h1 {
@@ -147,42 +145,79 @@ That's it! This is all the CSS we'll be doing in the workshop.
 
 Now, navigate to our `script.js` file and:
 
-* Make a `function` called `generateMeme`, which will take: `image`, `topText`, `bottomText`, `topTextSize`, `bottomTextSize` variables as the function arguments.
-  
-  Here's how our `generateMeme` function will look like:
+* Make a `generateMeme` function, something like:
   
   ```javascript
   function generateMeme(img, topText, bottomText, topTextSize, bottomTextSize) {
+    // Code here
+  }
+  ```
+  
+  Now, inside our `generateMeme` function:
 
-    const canvas = document.getElementById('meme-canvas');
-    const ctx = canvas.getContext('2d');
+  1. First, initialise a [`Canvas`](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage), which will be pointing to our `meme-canvas` element from our HTML code:
+  
+   ```javascript
+  const canvas = document.getElementById('meme-canvas');
+   ```
 
-    // Size canvas to image
-    canvas.width = img.width;
-    canvas.height = img.height;
+  2. Now, to get canvas' [2D rendering context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D), we'll call `getContext()` by selecting out `<canvas>` element from HTML by its ID, and supplying `'2d'` as the argument. Our 2D rendering context will provide us with a lot of methods to stylize and draw on our canvas!
 
-    // Clear canvas
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // This method erases the pixels in a rectangular area by setting them to transparent black.
-    // Draw main image
-    ctx.drawImage(img, 0, 0); // 0, 0 are our X and Y coordinates
+   ```javascript
+   const ctx = canvas.getContext('2d');
+   ```
 
+   3. Next, we set the canvas' dimensions same as our meme image's dimensions:
+
+   ```javascript
+   canvas.width = img.width;
+   canvas.height = img.height;
+   ```
+
+   4. Now, using our `2D rendering context`, we clear out a rectangle, by erasing the pixels in a rectangular area by setting them to transparent black:
+   
+   ```js
+   ctx.clearRect(0, 0, canvas.width, canvas.height);
+   ```
+
+   5. After that, we draw the image on the canvas by using the `drawImage()` function provided by `context` and suppl:
+   ying our image, and the X and Y coordinates.
+   
+   ```js
+   ctx.drawImage(img, 0, 0); // 0, 0 are our X and Y coordinates
+   ```
+
+   6. Next, we set the style of our text using three functions `ctx.fillStyle`, `ctx.strokeStyle` and `ctx.textAlign`:
+   
+   ```js
     // Text style: white with black borders
     ctx.fillStyle = 'white';
     ctx.strokeStyle = 'black';
     ctx.textAlign = 'center';
+   ```
 
-    // Top text font size
+   7. Now, we set our `fontSize`:
+
+  ```js
     let fontSize = canvas.width * topTextSize; //Font Size will change based on our input sliders
     ctx.font = `${fontSize}px Impact`; // We'll be using Impact font, which is used by most memes
     ctx.lineWidth = fontSize / 20; // lineWidth will be the outline of our text, and we're setting it to be 20th of our fontSize here.
+  ```
 
+  8. Next, to draw top text on our meme image, we use `ctx.fillText` to fill text and `ctx.strokeText` for outlines:
+
+   ```js
     // Draw top text
     ctx.textBaseline = 'top'; // textBaseline property specifies the current text baseline used when drawing text.
     topText.split('\n').forEach((t, i) => {
-      ctx.fillText(t, canvas.width / 2, i * fontSize, canvas.width); // fillText takes 3 arguments: first is our text, second and third arguments are our X and Y coordinates of the point at which to begin drawing the tex.
+      ctx.fillText(t, canvas.width / 2, i * fontSize, canvas.width); // fillText takes 3 arguments: first is our text, second and third arguments are our X and Y coordinates of the point at which to begin drawing the text.
       ctx.strokeText(t, canvas.width / 2, i * fontSize, canvas.width); // Arguments are same as fillText but strokeText draws outlines on our text.
     });
+   ```
 
+  9. Now, we repeat the same steps for bottom text:
+  
+  ```javascript
     // Bottom text font size
     fontSize = canvas.width * bottomTextSize;
     ctx.font = `${fontSize}px Impact`;
@@ -194,16 +229,8 @@ Now, navigate to our `script.js` file and:
       ctx.fillText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
       ctx.strokeText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
     });
-  }
+  } // End of our generateMeme() function
     ```
-
-  This code block is really simple:
-
-  1. Inside the `generateMeme()` function we initialise a [`Canvas`](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage) which .
-  2. To get the canvas' [2D rendering context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D), we call `getContext()` by selecting out `<canvas>` element from HTML by its ID, and supplying `'2d'` as the argument. Our 2D rendering context will provide us with a lot of methods to stylize and draw on our canvas!
-  3. Next, we set the canvas' dimensions same as our meme image's dimensions.
-  4. Then we clear, and draw the image on the canvas.
-  5. Next, to draw text on our meme image, we set the style of our text and drawing the text using `ctx.fillText` and `ctx.strokeText` for outlines, where `ctx` is our [2D rendering context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D).
 
 * Now, after our `generateMeme` function, add a [Window: DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) event listener which will listen to `DOMContentLoaded` event, which will be executed after the content of the web page is loaded and which will also call our `generateMeme` function.
 
@@ -258,9 +285,6 @@ Now, navigate to our `script.js` file and:
   And our `generateMeme()` will make our awesome meme!
 
 **The final JavaScript code should look like:**
-
-<details>
- <summary>Click to expand!</summary>
 
 ```javascript
 function generateMeme(img, topText, bottomText, topTextSize, bottomTextSize) {
@@ -335,14 +359,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 ```
 
-</summary>
-</details>
-
-**_And with this, we finish coding our Meme-Genie, Check out what you've just built by clicking the "Run" Button on top!_**
+**_And with this, we finish coding our Meme-Genie. Check out what you've just built by clicking the "Run" Button on top!_**
 
 ![Final Output](https://cloud-8kdhhtdj0.vercel.app/0ezgif.com-gif-maker.gif)
 
->Note: To save the generated meme, you can right click the meme and click "save as...", to save the meme!
+>Note: To save the generated meme, you can right click the meme and click "save as..."
 
 ## Part 4: Hacking
 
@@ -358,9 +379,9 @@ Here are some things you can try to add:
 
 ## Part 5: The End
 
-If you haven't created an account on [repl.it](https://repl.it), make sure you do so to save this wonderful piece of creation!
+If you haven't created an account on [repl.it](https://repl.it), make sure you do so to save this wonderful creation!
 
-If you still face difficulties in signing up watch [this](https://www.youtube.com/watch?v=Mtqp4CUepk0).
+If you're having trouble signing up, ask your club leader or someone on hack club's slack!
 
 ### Some More Examples
 
