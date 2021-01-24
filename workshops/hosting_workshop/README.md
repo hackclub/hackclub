@@ -7,6 +7,14 @@ img: 'https://cloud-kv2ikdnkl.vercel.app/0image.png'
 
 # Deploying, Hosting, Continuous Deployment and Custom Domains
 
+**Deploying**: The process of packaging and installing the code to production emvironment (the final environment/work that is ready to be publicly available) is called “deployment”, and in the context of a web application that would be “web deployment”.
+
+**Hosting**: Hosting is essentially the process of uploading your code on a remote server (like GitHub, GitLab etc.)
+
+**Continuous Deployment**: Continuous deployment is a strategy for software releases wherein any code commit is automatically released (or deployed) into the production environment. It aims at building, testing, and releasing software with greater speed and frequency.
+
+**Custom Domains**: A custom domain is a unique branded label that's connected to the IP address of a website. Like `172.217.160.238` is [one of the IP addresses of Google search](https://www.lifewire.com/what-is-the-ip-address-of-google-818153) and the custom domain that's connected to it is : `google.com`
+
 In this workshop we'll be learning how to push your website on GitHub (A website that provides hosting for software development and version control using Git), hosting it on [Netlify](https://www.netlify.com) with a custom domain from [namecheap](https://www.namecheap.com).
 
 ## Part 1: The Prerequisites
@@ -15,7 +23,7 @@ In this workshop we'll be learning how to push your website on GitHub (A website
 
 2. Next, we need [GitHub's student developer pack](https://education.github.com/pack) for this Workshop so that we can take advantage of namecheap's free 1 year custom domain name, for this you can take advantage of Hack Club's [Hack Pack](https://toolbox.hackclub.com/hack_pack) to instantly get GitHub's student developer pack!
 
-3. A little knowledge about Git, a Version Control System.
+3. A little knowledge about Git, a [Version Control System](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjH7_P0vrTuAhUq8HMBHVoED4EQFjAHegQICBAC&url=https%3A%2F%2Fgit-scm.com%2Fbook%2Fen%2Fv2%2FGetting-Started-About-Version-Control&usg=AOvVaw2i8t1TR6X9msRpOdHt0zOJ).
 
 That's all we need for this workshop!
 
@@ -25,7 +33,7 @@ In this workshop we'll be using a boilerplate [react](https://reactjs.org) app.
 
 > If you already have a website ready, you can directly skip to Part 3
 
-So, head over to [repl.it](https://repl.it) and sign up (you can also directly sign up using your GitHub account), then click on "New repl" and select "HTML, CSS, JS" from the dropdown and giving any name to it, and then click on "Create repl".
+Begin by visiting [repl.it](https://repl.it) and sign up (you can also directly sign up using your GitHub account), then click on "New repl" and select "HTML, CSS, JS" from the dropdown and giving any name to it, and then click on "Create repl".
 
 ![Selecting html,css,js from language dropdown and clicking on create repl](https://cloud-cmhr0swki.vercel.app/0image.png)
 
@@ -83,8 +91,8 @@ Now, let's create a new [GitHub repo](https://docs.github.com/en/free-pro-team@l
 
  >The code we copied tells our repl.it's git where our "remote" is or in other words, where and on which branch should the git repository be "pushed".
 
-* Next, head over to your repl.it instance and in the shell, `cd` into your react app directory and paste the code that we copied earlier from GitHub:
-![pasting the code in repl.it's shell](https://cloud-5tga58lvb.vercel.app/0image.png)
+* Next, head over to your repl.it instance and in the shell, `cd`(change directory) into `my-awesome-app` and paste the code that we copied earlier from GitHub:
+![pasting the code in repl.it's shell](https://cloud-m6l8fjvw5.vercel.app/0image.png)
 
 	After executing the code, git will ask for your GitHub's username and password, so type that and press enter.
 
