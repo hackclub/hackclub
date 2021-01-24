@@ -33,7 +33,7 @@ import turtle
 import math
 ```
 
-We will be drawing to the screen using the [turtle library](https://www.geeksforgeeks.org/turtle-programming-python/)! Turtle allows us to draw to the screen like a whiteboard. We can go specific spots on the screen, create filled in shapes, change the drawing color, and more. You'll get to see it in action soon! The math library will be used for calculations.
+We will be drawing to the screen using the [turtle library](https://www.geeksforgeeks.org/turtle-programming-python/)! The turtle allows us to draw to the screen like a whiteboard. We can go to specific spots on the screen, draw lines and dots, create filled in shapes, change the drawing color, and more. You'll get to see it in action soon! The math library will be used for calculations.
 
 ## Creating Variables
 Now lets create some initial variables. Don't miss them or else you'll have issues.
