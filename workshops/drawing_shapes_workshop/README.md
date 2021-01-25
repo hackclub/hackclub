@@ -1,8 +1,8 @@
 ---
-name: 'Drawing Shapes Program'
-description: 'Make a drawing program with shapes!'
+name: 'Drawing Shapes with Turtle'
+description: 'Make a shape drawing program with Python Turtle!'
 author: '@JakeGerber'
-image: 'https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png'
+img: 'https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png'
 ---
 
 I like to draw, you like to draw, so let's create a drawing program with shapes such as circles, squares, and triangles! It will turn out really cool.
@@ -442,6 +442,8 @@ turtle.onkey(alternativeControlShape, "d")
 turtle.listen()
 turtle.mainloop()
 ```
+
+</details>
 
 ## Hacking
 
