@@ -1,6 +1,6 @@
 ---
 name: 'Meme Generator'
-description: 'Spin up your own Meme Generator!'
+description: 'Make your own meme generator with HTML, CSS, and JavaScript!'
 author: '@aaryanporwal'
 img: 'https://cloud-qmqu378mz.vercel.app/0image.png'
 ---
@@ -29,19 +29,17 @@ We'll be using an online code editor called [repl.it](https://repl.it) for this 
 
 To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
 
-Now let's move on to the next part!
-
 ![Excited doge](https://cloud-4560ajsyp.vercel.app/0giphy.gif)
 
 ## Part 3: Building The Project
 
 ### 1) HTML
 
-Let's first start by making a structure for our Meme Generator website.
+Let's start by making a structure for our Meme Generator website.
 
 We'll be writing all our below code inside our `<body>` tag:
 
-* First give an appropriate heading to our website using the `<h1>` tag, something like:
+* First, let's add a heading that introduces the meme generator using the `<h1>` tag:
 
   ```html
   <h1>Welcome to Meme-Genie 🧞 </h1>
@@ -51,14 +49,14 @@ We'll be writing all our below code inside our `<body>` tag:
 
     ![Meme showing top text and bottom text](https://cloud-ejplvs3dg.vercel.app/0image.png)
 
-    To achieve this we'll use two `<textarea>` tags after our `<h1>` tag :
+    To achieve this we'll use two `<textarea>` tags after our `<h1>` tag:
 
     ```html
     <textarea id="top-text"></textarea>
     <textarea id="bottom-text"></textarea>
     ```
 
-* Next, we need to take a meme template as our `file` input. For this we'll use `<input>` tags in the following fashion specifying that we only want images as our `file` input:
+* Next, we need to take a meme template as our `file` input. For this we'll use `<input>` tags and specify that we only want images as our `file` input:
   
   ```html
   <input type="file" id="image-input" accept="image/*">
@@ -137,7 +135,7 @@ body {
 }
 ```
 
-So in this CSS code, we first change our heading's font and font size, then we apply a background color to our body, and finally we select the meme canvas by it's ID and set its width to 300 pixels.
+So in this CSS code, we first change our heading's font and font size, then we apply a background color to our body, and finally we select the meme canvas by its ID and set its width to 300 pixels.
 
 That's it! This is all the CSS we'll be doing in the workshop.
 
