@@ -53,11 +53,12 @@ Next, add these three lines:
 ```py
 allsprites = []
 place = 0
-
+unchangedarr = []
 myarr = []
+invert = False
 ```
 
-There is an array for all the sprites, the index place, and another empty array. This will make more sense later.
+There is an array for all the sprites, the index place, and two other empty arrays. Also, there is a boolean named invert that will be used to invert the colors. This will make more sense later.
 
 ## Drawing a Pixel
 
@@ -65,49 +66,97 @@ Let's create a function that goes to a specified location and draws a single pix
 
 ```py
 def drawSquare(x, y, side, color):
+  global invert
   turtle.up()
   turtle.goto(x, y)
 ```
 
-Right under the code you just wrote, add a function called `drawSquare()`, which passes in the x and y coordinates, the size of the pixel, and the color. Inside, move the turtle up and go to the passed-in location.
+Right under the code you just wrote, add a function called `drawSquare()`, which passes in the x and y coordinates, the size of the pixel, and the color. Inside, move the turtle up and go to the passed-in location. Also, make the invert boolean from earlier global so we can modify and use it within the function.
 
 ```py
 def drawSquare(x, y, side, color):
+  global invert
   turtle.up()
   turtle.goto(x, y)
-  
   if (not color == "none"):
-    turtle.color(color)
 ```
 
 We want to draw the square if they input a color. If "none" is inputted, then we don't want to draw anything.
 
 ```py
 def drawSquare(x, y, side, color):
+  global invert
   turtle.up()
   turtle.goto(x, y)
-  
   if (not color == "none"):
-    turtle.color(color)
+    if (color[0] == "#"):
+      if (invert):
+```
+We want if statements to see if the color has a # symbol in front of it, and we want to check if the invert boolean is true.
+
+
+```py
+def drawSquare(x, y, side, color):
+  global invert
+  turtle.up()
+  turtle.goto(x, y)
+  if (not color == "none"):
+    if (color[0] == "#"):
+      if (invert):
+        tempcolR = color[1] + color[2]
+        tempcolR = 255 - int(tempcolR, 16)
+    else:
+      turtle.color(color)
+```
+This part is going to seem really weird if you've never heard of [color hex codes](https://www.techopedia.com/definition/29788/color-hex-code). You can represent colors in a form named hexadecimal, rather than our regular decimal system. In these two lines, we are getting the first two places after the # symbol, which represent our red in RGB. We are then converting them to decimal and subtracting from 255 because we are inverting the color. Also, in the else statement set the color to the color string. This means the user most likely just entered the color word, in which case we cannot invert it.
+
+
+<img src="https://cloud-aevez7g72.vercel.app/0screenshot__1470_.png" width="380" alt="Color picker">
+If you search "color picker" on Google, you get access to a slider that can be moved around to pick a color. The hex code at the bottom is the same that you will use when creating your sprites.
+
+```py
+if (invert):
+  tempcolR = color[1] + color[2]
+  tempcolR = 255 - int(tempcolR, 16)
+  tempcolG = color[3] + color[4]
+  tempcolG = 255 - int(tempcolG, 16)
+  tempcolB = color[5] + color[6]
+  tempcolB = 255 - int(tempcolB, 16)
+  turtle.color(tempcolR, tempcolG, tempcolB)
+```
+Do the same thing for the other colors in RGB but change the index values. Afterwards, set the turtle's color using the RGB values.
+
+
+```py
+else:
+  tempcolR = color[1] + color[2]
+  tempcolR = int(tempcolR, 16)
+  tempcolG = color[3] + color[4]
+  tempcolG = int(tempcolG, 16)
+  tempcolB = color[5] + color[6]
+  tempcolB = int(tempcolB, 16)
+  turtle.color(tempcolR, tempcolG, tempcolB)
+```
+In the else statement, once again get the index values from the color string and convert them to integers. But, since we are NOT inverting the colors, do NOT subtract them from 255.
+
+
+```py
+def drawSquare(x, y, side, color):
+  if (not color == "none"):
+    #Everything we already wrote would be here.
     turtle.begin_fill()
-    
+
     turtle.end_fill()
 ```
 
 We need to wrap everything we draw inside `begin_fill()` and `end_fill()` functions in order to fill in the square. Add these two functions. Leave a space in between them because we're going to add some drawing code in a second.
 
 ```py
-def drawSquare(x, y, side, color):
-  turtle.up()
-  turtle.goto(x, y)
-  
-  if (not color == "none"):
-    turtle.color(color)
-    turtle.begin_fill()
-    for x in range(4):
-      turtle.forward(side)
-      turtle.right(90)
-    turtle.end_fill()
+turtle.begin_fill()
+for x in range(4):
+  turtle.forward(side)
+  turtle.right(90)
+turtle.end_fill()
 ```
 
 In between the `begin_fill()` and `end_fill()` functions, add a for loop that draws all 4 sides of a square.
@@ -139,13 +188,17 @@ In between the two lines you just wrote, add the following code:
 ```py
 f = open("sprite.txt", "r")
 
+changeVal = 0
+
+turtle.colormode(255)
+
 while(True):
   tempLine = f.readline()
 
 f.close()
 ```
 
-This is an infinite `while` loop that loops through every line in the `sprite.txt` file and assigns each one to a variable called `tempLine`.
+Create a changeVal integer and set it to 0, along with setting the turtle colormode to 255. This while loop loops through every line in the `sprite.txt` file and assigns each one to a variable called `tempLine`.
 
 Next, add this:
 
@@ -165,7 +218,7 @@ while(True):
 
 ```py
 while(True):
-  //Previous code would be here.
+  #Previous code would be here.
 
   temparr = []
   tempr = ""
@@ -213,48 +266,102 @@ After the loop completes, append the `temparr` array to the `myarr` array.
 Everything needs to be drawn! EVERYTHING!
 
 ```py
-def draw(currentarr):
+def draw(currentarrA, orientation):
+  global invert
 ```
-
-Add a function called `draw()`, which takes an array of sprite information, right after the `drawSquare()` function.
+Create a draw function that takes in an array and orientation. Also make the invert boolean global so we can access and modify it.
 
 ```py
-def draw(currentarr):
+def draw(currentarrA, orientation):
+  global invert
+  currentarr = currentarrA.copy()
   turtle.clear()
   x = -60
   y = 60
   originalX = -60
-  size = 10
+  side = 10
 ```
+Copy ober the array to another variable, clear the screen, and define some variables. These define the starting x and y location, the original x location, and the side length of every pixel square.
 
-Inside the function,
-- clear the screen
-- initialize some x and y coordinates to determine the starting point and size of each pixel.
 
 ```py
-def draw(currentarr):
-  //Code we just wrote.
-  
+def draw(currentarrA, orientation):
+  #Everything we just wrote would be here.
   turtle.tracer(0, 0)
   turtle.update()
 ```
+We want everything drawn to be between these tracer and update functions. This prevent the screen from updating every time something is drawn, and instead draws everything when all the draw statements are entered. Without it, our program runs VERY slow.
 
-The turtle tracer and update functions make it so the screen will refresh after all of the sprite is complete, instead of each time something is drawn. Without it, everything will be drawn REALLY slowly.
+## Orientations
+We will have four orientations for the sprite: normal (0), flipped vertically (1), flipped horizontally and vertically (2), and flipped horizontally (3).
 
 ```py
-def draw(currentarr):
-  //Code we just wrote.
+def draw(currentarrA, orientation):
+  #Everything we just wrote would be here.
+  if (orientation == 1):
+    temparr = currentarr.copy()
+    currentarr.clear()
+    for i in range(len(temparr)):
+      currentarr.append(temparr[len(temparr) - i - 1])
+```
+If the orientation is 1 (flipped vertically), then we want to change our array to draw it that way. In this case, everything at the bottom comes to the top to be drawn first, which is what we are doing in our for loop.
 
-  turtle.tracer(0, 0)
+```py
+def draw(currentarrA, orientation):
+  #Everything we just wrote would be here.
+  if (orientation == 1):
+    temparr = currentarr.copy()
+    currentarr.clear()
+    for i in range(len(temparr)):
+      currentarr.append(temparr[len(temparr) - i - 1])
+```
+
+```py
+  if (orientation == 3):
+    temparr = currentarr.copy()
+    currentarr.clear()
+```
+We're actually skipping to orientation 3 (flipped horizontally) because oritentation 2 combines both orientation 1 and 3. We are copying over currentarr and then clearing it.
+
+```py
+  if (orientation == 3):
+    temparr = currentarr.copy()
+    currentarr.clear()
+    for i in range(len(temparr)):
+      linearr = []
+      for p in range(len(temparr[i])):
+        linearr.append(temparr[i][len(temparr[i])-p-1])
+      currentarr.append(linearr)
+```
+For each array in the array, we want to swap the back values to the front. We are doing this with each line and appending each line to the currentarr array.
+
+```py
+  if (orientation == 2):
+    temparr = currentarr.copy()
+    currentarr.clear()
+    for i in range(len(temparr)):
+      currentarr.append(temparr[len(temparr) - i - 1])
+    temparr = currentarr.copy()
+    currentarr.clear()
+    for i in range(len(temparr)):
+      linearr = []
+      for p in range(len(temparr[i])):
+        linearr.append(temparr[i][len(temparr[i])-p-1])
+      currentarr.append(linearr)
+```
+Add this orientation between 1 and 3. It is the SAME code of orientation 1 and 3. We start with orientation 1, and then we do orientation 3, all within this if statement.
+
+```py
   for arr in currentarr:
     for val in arr:
       drawSquare(x, y, side, val)
       x+=side
     y-=side
     x = originalX
+
   turtle.update()
 ```
-In between the `turtle.tracer()` and `turtle.update()` lines, add two for loops, one nested inside the other. This will loop through each line within our sprite, and then each pixel within that line. The pixel will be drawn, and then the x and y variables update to refelct the position of the next pixel.
+Finally, we go through the 2D array and draw rach square pixel, adjusting the x and y after every one. The y always changes the same amount, but when the x gets to the end of the row, it has to go to the original x to start the next row.
 
 ## Changing the Current Sprite
 
@@ -281,12 +388,10 @@ def left():
   
   if (place < 0):
     place = int(len(allsprites)) - 1
-  draw(allsprites[place])
+  draw(allsprites[place], 0)
 ```
 
-If the `place` is less than 0 (the first index), we need to go to the back of our sprite list.
-
-Then, call the `draw()` function and use the current sprite in the parameter.
+If the `place` is less than 0 (the first index), we need to go to the back of our sprite list. Then, call the `draw()` function and use the current sprite and orientation 0 (defualt orientation) in the parameter.
 
 ### Right
 
@@ -306,34 +411,65 @@ def right():
   
   if (place > len(allsprites)-1):
     place = 0
-  draw(allsprites[place])
+  draw(allsprites[place], 0)
 ```
 
-If the `place` is greater than the final index, we go back to index 0 (the first index). Then, just like before, we `draw()` the current sprite.
+If the `place` is greater than the final index, we go back to index 0 (the first index). Then, just like before, we `draw()` the current sprite with orientation 0.
+
+### Up
+Here's where the orientation will be changed!
+
+```py
+def up():
+  global place
+  global changeVal
+  changeVal+=1
+  if (changeVal > 3):
+    changeVal = 0
+  draw(allsprites[place], changeVal)
+```
+We are making the place and changeVal variables global so we can use them, and then incrementing changeVal. If changeVal is greater than 3 (the max oritentation number), then make changeVal 0. Finally, call the draw function.
+
+### Down
+Here's where the invert setting will be changed!
+
+```py
+def down():
+  global invert
+  global place
+  if (invert):
+    invert = False
+  else:
+    invert = True
+  draw(allsprites[place], changeVal)
+```
+We are making invert and place global so we can access them. If the invert is true, we want to make it false, and vise versa. After, we want to call the draw function.
 
 ## Final Statements
 
 Almost there. Now, add these statements at the bottom of your program.
 
 ```py
-draw(allsprites[place])
+draw(allsprites[place], 0)
 
 turtle.onkey(left, "Left")
 turtle.onkey(right, "Right")
+turtle.onkey(up, "Up")
+turtle.onkey(down, "Down")
 
 turtle.listen()
 turtle.mainloop()
 ```
 
-The `draw()` function will draw our current sprite so there is a sprite shown when the program is first run. Then, the turtle listens for the left and right arrow keys to call their respective function.
+The `draw()` function will draw our current sprite so there is a sprite shown when the program is first run. Then, the turtle listens for the left and right arrow keys to switch between sprites, the up arrow key to switch orientation, and the down arrow key to turn inverted colors on or off.
 
 ## Creating the Text File
 
 Finally, let's create the long-awaited `sprite.txt` file and populate it with sprite data.
 
-<img src="https://cloud-avutgg3d9.vercel.app/0screenshot__1434_.png" width="380" alt="sprite.txt file">
+<img src="https://cloud-prkpho0t8.vercel.app/0screenshot__1471_.png" width="380" alt="sprite.txt file">
 
-- Add some colors! Make sure each color has a comma after it, with no spaces anywhere.
+- Add some color hex codes! Make sure each color has a comma after it, with no spaces anywhere.
 - If you want to create a new sprite then add a dash on its own line.
 
 <img src="https://cloud-ft6bf29c5.vercel.app/0screenshot__1438_.png" width="380" alt="Example sprites">
@@ -343,44 +479,46 @@ Finally, let's create the long-awaited `sprite.txt` file and populate it with sp
 <summary>Here's some example sprite data that you can use:</summary>
 
 ```
-none,none,none,red,red,red,red,red,red,
-none,none,red,red,red,red,red,red,red,red,red,red,
-none,none,brown,brown,brown,tan,tan,tan,black,tan,none,none,
-none,brown,tan,brown,tan,tan,tan,tan,black,tan,tan,tan, tan
-none,brown,tan,brown,brown,tan,tan,tan,tan,black,tan,tan,tan,
-none,brown,brown,tan,tan,tan,tan,tan,black,black,black,black,
-none,none,none,tan,tan,tan,tan,tan,tan,tan,tan,
-none,none,red,red,blue,red,red,red,red,
-none,red,red,red,blue,red,red,blue,red,red,red,
-red,red,red,red,blue,blue,blue,blue,red,red,red,red,
-tan,tan,red,blue,yellow,blue,blue,yellow,red,red,tan,tan,
-tan,tan,tan,blue,blue,blue,blue,blue,blue,tan,tan,tan,
-tan,tan,blue,blue,blue,blue,blue,blue,blue,blue,tan,tan,
-none,none,blue,blue,blue,none,none,blue,blue,blue,
-none,brown,brown,brown,none,none,none,none,brown,brown,brown,
-brown,brown,brown,brown,none,none,none,none,brown,brown,brown,brown,
+none,none,none,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,none,none,none,none,none,
+none,none,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,none,none,
+none,none,#a52a2a,#a52a2a,#a52a2a,#D2B48C,#D2B48C,#D2B48C,#000000,#D2B48C,none,none,none,none,
+none,#a52a2a,#D2B48C,#a52a2a,#D2B48C,#D2B48C,#D2B48C,#D2B48C,#000000,#D2B48C,#D2B48C,#D2B48C,none,none,
+none,#a52a2a,#D2B48C,#a52a2a,#a52a2a,#D2B48C,#D2B48C,#D2B48C,#D2B48C,#000000,#D2B48C,#D2B48C,#D2B48C,none,
+none,#a52a2a,#a52a2a,#D2B48C,#D2B48C,#D2B48C,#D2B48C,#D2B48C,#000000,#000000,#000000,#000000,none,none,
+none,none,none,#D2B48C,#D2B48C,#D2B48C,#D2B48C,#D2B48C,#D2B48C,#D2B48C,#D2B48C,none,none,none,
+none,none,#ff0000,#ff0000,#0000ff,#ff0000,#ff0000,#ff0000,#ff0000,none,none,none,none,none,
+none,#ff0000,#ff0000,#ff0000,#0000ff,#ff0000,#ff0000,#0000ff,#ff0000,#ff0000,#ff0000,none,none,none,
+#ff0000,#ff0000,#ff0000,#ff0000,#0000ff,#0000ff,#0000ff,#0000ff,#ff0000,#ff0000,#ff0000,#ff0000,none,none,
+#D2B48C,#D2B48C,#ff0000,#0000ff,yellow,#0000ff,#0000ff,yellow,#ff0000,#ff0000,#D2B48C,#D2B48C,none,none,
+#D2B48C,#D2B48C,#D2B48C,#0000ff,#0000ff,#0000ff,#0000ff,#0000ff,#0000ff,#D2B48C,#D2B48C,#D2B48C,none,none,
+#D2B48C,#D2B48C,#0000ff,#0000ff,#0000ff,#0000ff,#0000ff,#0000ff,#0000ff,#0000ff,#D2B48C,#D2B48C,none,none,
+none,none,#0000ff,#0000ff,#0000ff,none,none,#0000ff,#0000ff,#0000ff,none,none,none,none,
+none,#a52a2a,#a52a2a,#a52a2a,none,none,none,none,#a52a2a,#a52a2a,#a52a2a,none,none,none,
+#a52a2a,#a52a2a,#a52a2a,#a52a2a,none,none,none,none,#a52a2a,#a52a2a,#a52a2a,#a52a2a,none,none,
 -
-pink,pink,pink,pink,pink,pink,
-pink,pink,pink,pink,pink,pink,
-pink,pink,pink,pink,pink,pink,
-pink,pink,pink,pink,pink,pink,
-pink,pink,pink,pink,pink,pink,
-pink,pink,pink,pink,pink,pink,
-pink,pink,pink,pink,pink,pink,
-pink,pink,pink,pink,pink,pink,
-pink,pink,pink,pink,pink,pink,
-pink,pink,pink,pink,pink,pink,
+#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,
+#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,
+#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,
+#FFB6C1,#FFB6C1,#FFB6C1,#008000,#008000,#FFB6C1,
+#FFB6C1,#FFB6C1,#FFB6C1,#008000,#008000,#FFB6C1,
+#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,
+#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,
+#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,
+#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,
+#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,#FFB6C1,
 -
-red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
-red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
-red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
-red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
-red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
-red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
-red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
-red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,red,
+#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,
+#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,
+#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,
+#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,
+#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,
+#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,
+#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,
+#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,#ff0000,
 -
-black,black,black,
+#000000,#000000,#000000,none,none,none,#000000,#000000,#000000,
+none,none,none,none,none,none,none,none,none,
+none,none,none,#000000,#000000,#000000,none,none,none,
 -
 ```
 
