@@ -221,7 +221,7 @@ const SCALE = 0.001
 let particles = []
 ```
 
-In physics, `G` refers to the [Gravitational Constant](https://simple.wikipedia.org/wiki/Gravitational_constant), which is 6.67 times [e](https://en.wikipedia.org/wiki/E_(mathematical_constant)) to the power of -11. This constant is used as the basis for all sorts of fun equations.
+In physics, `G` refers to the [Gravitational Constant](https://simple.wikipedia.org/wiki/Gravitational_constant), which is 6.67 x 10<sup>-11</sup> N⋅m<sup>2</sup>⋅kg<sup>-2</sup> (which we'll write as 6.67e-11 in JS). This constant is used as the basis for all sorts of fun equations.
 
 Now, let's set up our canvas. In the `setup()` function, add:
 
