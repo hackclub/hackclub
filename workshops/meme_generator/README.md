@@ -58,6 +58,18 @@ We'll be writing all our below code inside our `<body>` tag:
     <textarea id="bottom-text"></textarea>
     ```
 
+    Now we want "Text Size" sliders for both our top and bottom text, for this we'll use the [`<input type="range">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range) HTML element, something like:
+
+    ```html
+    Text size: <input type="range" id="top-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
+    ```
+
+    ```html
+    Text size: <input type="range" id="top-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
+    ```
+
+    Here, the `min` is the minimum text size, `max` is the maximum text size, `value` is the default value and the `step` argument is the stepping interval or the precision of the slider.
+
 * Next, we need to take a meme template as our `file` input. For this we'll use `<input>` tags in the following fashion specifying that we only want images as our `file` input:
   
   ```html
@@ -80,7 +92,41 @@ We'll be writing all our below code inside our `<body>` tag:
     <canvas id="meme-canvas" title="Right click to save this meme"></canvas>
     ```
 
-Our final HTML file will look like:
+Our HTML code so far:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Meme Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Welcome to Meme-Genie 🧞 </h1>
+
+            <textarea id="top-text"></textarea>
+            Text size: <input type="range" id="top-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
+
+            <textarea id="bottom-text"></textarea>
+            Text size: <input type="range" id="bottom-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
+
+            <input type="file" id="image-input" accept="image/*">
+
+            <button id="generate-btn">Generate!</button>
+
+            <canvas id="meme-canvas" title="Right click to save this meme"></canvas>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+```
+
+If you run the website now, you'll notice that the elements are not following a proper fashion and might look something like this:
+![website without div tags](https://cloud-4qhf2j8gs.vercel.app/0image.png)
+To fix this problem, we have the mighty `<div>` tag which we'll be using to seperate out the different elements!
+
+So, wrap all the different elements inside the `<div>` tags, something like:
 
 ```html
 <!DOCTYPE html>
@@ -106,16 +152,17 @@ Our final HTML file will look like:
         <div>
             <button id="generate-btn">Generate!</button>
         </div>
-        <div>
             <canvas id="meme-canvas" title="Right click to save this meme"></canvas>
-        </div>
         <script src="script.js"></script>
     </body>
 </html>
 ```
 
-Note that we have added the *Text Size* slider which we'll use to increase or decrease the text size.
-You can take a look at how different input types work [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input).
+Now run the website and it should look something like:
+
+![website with div tags](https://cloud-bvqyk1aj4.vercel.app/0image.png)
+
+And with this we complete the HTML part!
 
 ### 2) CSS
 
