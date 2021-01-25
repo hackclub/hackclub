@@ -5,84 +5,109 @@ author: '@JakeGerber'
 image: 'https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png'
 ---
 
-# Create a Drawing Program with Shapes!
 I like to draw, you like to draw, so let's create a drawing program with shapes such as circles, squares, and triangles! It will turn out really cool.
 
 <img src="https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png" width="580" alt="Drawing Example">
 
 <img src="https://thumbs.gfycat.com/FantasticFaintAmurminnow-small.gif" width="380" alt="Nice Gif">
 
-# Repl.it Setup
+[Final demo and code](https://repl.it/@CosmicSnowman/Drawing-Turtle#main.py)
 
-We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE, meaning that it allows us to write code from the Repl.it website!
+## Setting up
 
-Create a new repl and use Python as the language.
+We're going to use [Repl.it](https://repl.it/~), a free, online coding editor, to create the project. Get started by visiting [repl.it/languages/python3](https://repl.it/languages/python3).
 
 <img src="https://cloud-2ojs193ra.vercel.app/0screenshot__1396_.png" width="600" alt="Python Repl">
 
-# Let's Begin Creating the Program
+Once your repl spins up, let's do this!
+
 <img src="https://media2.giphy.com/media/62PP2yEIAZF6g/giphy.gif" width="380" alt="Cool Gif">
 
-I hope you're ready because we're getting straight into the creation!
+### Importing Libraries
 
-## Importing Libraries
-Let's begin by importing the turtle and math libraries.
+Let's begin by importing the `turtle` and `math` libraries. At the top of the `main.py` file, add:
 
 ```python
 import turtle
 import math
 ```
 
-We will be drawing to the screen using the [turtle library](https://www.geeksforgeeks.org/turtle-programming-python/)! The turtle allows us to draw to the screen like a whiteboard. We can go to specific spots on the screen, draw lines and dots, create filled in shapes, change the drawing color, and more. You'll get to see it in action soon! The math library will be used for calculations.
+We will be drawing to the screen using the [turtle library](https://www.geeksforgeeks.org/turtle-programming-python/)! `turtle` allows us to draw to the screen like a whiteboard. We can go to specific spots on the screen, draw lines and dots, create filled in shapes, change the drawing color, and more. You'll get to see it in action soon!
 
-## Creating Variables
-Now lets create some initial variables. Don't miss them or else you'll have issues.
+The `math` library just provides an easy way to do math in python. We'll use it to make some calculations in a bit.
+
+### Creating Variables
+
+Next, let's create some initial variables:
+
 ```python
 squareWidth = 20
 circleRadius = 10
 triangleLength = 20
 ```
+
 We are creating variables for the width of the square, radius of the circle, and length of the triangle. They will be used in the drawing process later.
+
+Under those variables, add these variables:
  
 ```python
 itemNum = 0
 maxItem = 3
 ```
-The amount of shapes we have will be under "maxItem" and "itemNum" is where we will start (the index in the array). This will make more sense when we draw the items later on.
+
+The amount of shapes we have will be under `maxItem` and `itemNum` is where we will start (the index in the array). This will make more sense when we draw the items later on.
+
+Finally, add these variables:
 
 ```python
 colorNum = 0 
 colors = ["red", "green", "blue", "yellow", "orange", "purple", "grey", "black"]
 ```
-The variable "colorNum" is the index we are starting at with the array of "colors". We will handle swtiching between colors later on.
 
-## Initializing The Turtle
-Let's initialize the turtle.
+The variable `colorNum` is the index we are starting at with the array of "colors". We will handle swtiching between colors later on.
+
+### Initializing The Turtle
+
+Next, let's initialize the turtle.
 
 <img src="https://media.tenor.com/images/3dda08893f64e5e4437dc3ba93cad5b9/tenor.gif" width="380" alt="Turtle Gif">
+
+After everything you wrote, at the bottom of the file, add:
 
 ```python
 turtle.hideturtle()
 turtle.speed(0)
 turtle.up()
 ```
-We are hiding the turtle cursor. Also, we are setting the speed to 0 so it will draw instantly and making the turtle's pen go up so it will not draw while moving.
 
-# Drawing the Shapes
+Here, we're:
+
+- hiding the turtle cursor, which shows up by default
+- setting the speed to 0 so it will draw instantly
+- making the turtle's pen go up so it will not draw while moving
+
+## Drawing the Shapes
 
 I know you're eager to get into the meat of the progran, so let's do it.
 
-## Drawing the Circle
+### Drawing the Circle
+
 We are going to create the circle function. Look at the "o". I know it's a pretty cool circle.
 
 <img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Circle Example">
+
+At the bottom of the file, add:
 
 ```python
 def circle(x, y): 
   turtle.begin_fill()
   turtle.end_fill()
 ```
-The def defines the function, and we are passing in x and y coordinates as parameters. Add these begin and end fill statements, which allows us to make filled in shapes.
+
+- First, we define the function, which passes in x and y coordinates as parameters
+- Inside the function, we add `begin_fill()` and `end_fill()` statements. Anytime you draw with turtle, you need to wrap your drawing in between these two statements.
+
+In between those two statements, add:
 
 ```python
 def circle(x, y): 
@@ -92,13 +117,16 @@ def circle(x, y):
   turtle.end_fill()
 ```
 
-We are then going to the the location of where we will draw. It is offset so it will be centered at the mouse point. Then, draw the circle!
+- First, we go to the location of where we will draw. It is offset so it'll be centered at the mouse point.
+- Then, we draw the circle with `turtle.circle()`!
 
+### Drawing the Square
 
-## Drawing the Square
-We are going to create the square function.
+Next, let's create the square function.
 
 <img src="https://cloud-mkkyzdd9l.vercel.app/0screenshot__1393_.png" width="380" alt="Square Example">
+
+Under the `circle()` function, add:
 
 ```python
 def square(x, y):
@@ -107,7 +135,10 @@ def square(x, y):
   turtle.setheading(0)
   turtle.end_fill()
 ```
-Once again add the def to define the function and pass in the x and y coordinates as parameters. Then add the begin and end fill statements the same as before, go to the offset, and set the direction of the turtle to face right.
+
+This look similar to the `circle()` function, except the `goto` statement is optimized for a square, and then we set the direction of the turtle to face right.
+
+Next, just before the `end_fill()` statement but after everything else, add:
 
 ```python
 def square(x, y):
@@ -121,12 +152,18 @@ def square(x, y):
   turtle.end_fill()
 ```
 
-We are running a for loop to create each side of the square. Squares have four sides so the for loop runs four times. Yeah, pretty clever. I know.
+Here, we're:
 
-## Drawing the Triangle
-We are going to create triangle function.
+- Running a for loop 4 times, to account for each side of a square
+- Moving the turtle along the square, so that it draws the square.
+
+### Drawing the Triangle
+
+Next, let's create the triangle function.
 
 <img src="https://cloud-mo50706v1.vercel.app/0screenshot__1394_.png" width="380" alt="Triangle Example">
+
+After the `square()` function, add:
 
 ```python
 def triangle(x, y):
@@ -135,7 +172,10 @@ def triangle(x, y):
   turtle.begin_fill()
   turtle.end_fill()
 ```
-The def defines the function (its the last shape this time), and we are passing in x and y coordinates as parameters. Go to the offset, set the direction to the right, and add the begin and end fill statements.
+
+Again, similar to the previous functions, except the `goto()` statement optimizes for a triangle.
+
+Next, in between the `begin_fill()` and `end_fill()` statements, add:
 
 ```python
 def triangle(x, y):
@@ -150,8 +190,8 @@ def triangle(x, y):
 
   turtle.setheading(0)
 ```
-In the for loop, we are going forward and then turning left 3 times in order to create the triangle. After the fill, set the direction to the right.
 
+Just like how we drew the square, we're drawing the 3 sides of the triangle.
 
 ## Finishing Up the Shapes
 
@@ -159,16 +199,20 @@ In the for loop, we are going forward and then turning left 3 times in order to 
 
 We are done making the shapes, but that's useless if we can't switch between them! Let's add that.
 
-## Switching Between Shapes
-Here is the functionality to switch between shapes.
+### Switching Between Shapes
+
+At the bottom of the Python file, after every function you wrote, add:
 
 ```python
 def switchShape(x, y):
   global itemNum
   global maxItem
 ```
-Define the function for switching shapes and pass in the x and y coordinates as parameters. This sounds weird, but the only way the turtle will recognize this function after input is with these parameters. Just add them. Also, make the itemNum and maxItem global so we can use them in here.
 
+- First, we create a function called `switchShape()`, which takes in x and y coordinates as parameters.
+- Then, we use the [`global`](https://www.programiz.com/python-programming/global-keyword) keyword to be able to modify the `itemNum` and `maxItem` global variables we definined at the beginning of this workshop inside this function.
+
+Next, continue the function with the following code:
 
 ```python
 def switchShape(x, y):
@@ -180,10 +224,12 @@ def switchShape(x, y):
   if (itemNum >= maxItem):
     itemNum = 0
 ```
-Increment the itemNum and if it is greater than or equal to the maxItem amount, go back to 0.
 
-## Drawing Shapes
-Here is the functionality to draw the current shape.
+Here, we're just incrementing the `itemNum` variable by 1 and resetting it to 0 if it's greater than the `maxItem`.
+
+### Drawing Shapes
+
+Next, let's add a function for drawing shapes. At the bottom of the file, add:
 
 ```python
 def drawItem(x, y): 
@@ -197,19 +243,20 @@ def drawItem(x, y):
   else:
     print(itemNum)
 ```
-The "itemNum" variable is made global so we can use it. We then see what value it is and draw the respective shape. If the item number is not one of the ones we have a shape for, then print it to the console.
 
-# Switching Between Colors
-Functionality to change the color.
+- First, we use the `global` keyword again to access the `itemNum` variable.
+- If the variable is 0, we draw a circle.
+- If it's 1, we draw a square.
+- If it's 2, we draw a triangle.
+- Otherwise, we print the number to the console since we don't have a shape for it.
+
+### Switching Between Colors
+
+Next, let's add a function to switch between colors.
 
 <img src="https://cloud-c9ojk6h90.vercel.app/0screenshot__1395_.png" width="380" alt="Switch Colors Example">
 
-```python
-def switchColor(x, y):
-  global colorNum
-  global colors
-```
-Let's create function to switch the color. Once again, the turtle library's ability for input forces us to pass in x and y parameters. The colorNum and colors variables are made global so we can use them.
+At the bottom of the file, add:
 
 ```python
 def switchColor(x, y):
@@ -224,52 +271,74 @@ def switchColor(x, y):
 
   turtle.color(colors[colorNum])
 ```
-Increment the itemNum and if greater than or equal to the "colors" length, go back to 0. We then set the turtle's color to the color at the colorNum index of the colors array.
 
+- First, we access the global `colorNum` and `colors` variables.
+- Then, we increment the `colorNum` by 1.
+- If `colorNum` is greater than the number of items in the `colors` array, we reset it to 0
+- Then, we set the turtle's drawing color to the color at the index of the current `colorNum` in the `colors` array.
 
-# Clicking On Screen
+## Clicking On Screen
 
 <img src="https://media3.giphy.com/media/hCfESQ8r1eBOg/giphy.gif" width="380" alt="Clicking Screen Gif">
+
+We're almost done! Now, we want to add some code that will handle the user clicking on the screen to draw something. At the bottom of the file, after every function, add:
 
 ```python
 turtle.onscreenclick(drawItem, 1)
 turtle.onscreenclick(switchColor, 2)
 turtle.onscreenclick(switchShape, 3)
 ```
-- The "turtle.onscreenclick()" function takes in a function with x and y parameters and the mouse button.
-- If we click the left button (1), draw the current shape.
-- If we click the middle button (2), switch the color.
-- If we click the right button (3), switch the shape.
 
-# Alternative Controls
-In case your middle mouse button and right click do not work, let's make some alternative keyboard controls.
+- We call the `turtle.onscreenclick()` function, which is run when it detects that the screen has been clicked.
+- If the user clicks the left mouse button (1), we draw the current shape.
+- If the user clicks on the middle button (2), we switch the color.
+- If the user clicks on the right button (3), we switch the shape.
+
+## Alternative Controls
+
+In case your middle mouse button and right click do not work, let's make some alternative keyboard controls. At the bottom of the file, add:
 
 ```python
-def alternativeControl1():
+def alternativeControlColor():
   canvas = turtle.getcanvas()
   x, y = canvas.winfo_pointerx(), canvas.winfo_pointery()
-  switchSize(x, y)
+  switchColor(x, y)
 
-def alternativeControl2():
+def alternativeControlShape():
   canvas = turtle.getcanvas()
   x, y = canvas.winfo_pointerx(), canvas.winfo_pointery()
   switchShape(x, y)
 ```
-The functions get the current mouse position and call their respective function of switching the shape or size.
+
+These functions get the current mouse position and call their respective function of switching the shape or size.
+
+Next, let turtle know of these alternate controls.
 
 ```python
-turtle.onkey(alternativeControl1, "s")
-turtle.onkey(alternativeControl2, "d")
+turtle.onkey(alternativeControlColor, "s")
+turtle.onkey(alternativeControlShape, "d")
+```
 
+Similar to the `onscreenclick()` function, the `onkey` function will automatically run when turtle detects that the user pressed a key. We link the color control to `s` and the shape control to `d`.
+
+Finally, at the bottom, add:
+
+```python
 turtle.listen()
 turtle.mainloop()
 ```
-The turtle is then listening for the key presses, and the functions we created are called when either the s or d key is pressed.
 
-# Final Source Code
-You are done! Congrats! Here's all the code we wrote.
+These two lines make our turtle program run.
+
+## You're done!
+
+You are done! Congrats!
 
 <img src="https://media2.giphy.com/media/26u4lOMA8JKSnL9Uk/giphy.gif" width="380" alt="Done Gif">
+
+<details>
+
+<summary> Final source code: </summary>
 
 ```python
 import turtle
@@ -356,26 +425,28 @@ turtle.onscreenclick(switchColor, 2)
 turtle.onscreenclick(switchShape, 3)
 
 
-def alternativeControl1():
+def alternativeControlColor():
   canvas = turtle.getcanvas()
   x, y = canvas.winfo_pointerx(), canvas.winfo_pointery()
-  switchSize(x, y)
+  switchColor(x, y)
 
-def alternativeControl2():
+def alternativeControlShape():
   canvas = turtle.getcanvas()
   x, y = canvas.winfo_pointerx(), canvas.winfo_pointery()
   switchShape(x, y)
 
 
-turtle.onkey(alternativeControl1, "s")
-turtle.onkey(alternativeControl2, "d")
+turtle.onkey(alternativeControlColor, "s")
+turtle.onkey(alternativeControlShape, "d")
 
 turtle.listen()
 turtle.mainloop()
 ```
 
-# More that you can create + Source Code
-- [Original Program](https://repl.it/@CosmicSnowman/Drawing-Turtle#main.py)
+## Hacking
+
+The fun doesn't stop here! Here are some things you can do to take this project further:
+
 - [Get a Random Color Every Time](https://repl.it/@CosmicSnowman/Drawing-Turtle-Expanded-1#main.py)
 - [Create Even More Shapes](https://repl.it/@CosmicSnowman/Drawing-Turtle-Expanded-2#main.py)
 - [Add More Sizes for the Shapes](https://repl.it/@CosmicSnowman/Drawing-Turtle-Expanded-3#main.py)
