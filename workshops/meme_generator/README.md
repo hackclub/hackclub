@@ -424,7 +424,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 </details>
 
-**_And with this, we've finish coding our Meme-Genie! Check out what you've just built by clicking the "Run" Button at the top._**
+**_And with this, we've finished coding our Meme-Genie! Check out what you've just built by clicking the "Run" Button at the top._**
 
 ![Final Output](https://cloud-8kdhhtdj0.vercel.app/0ezgif.com-gif-maker.gif)
 
