@@ -2,7 +2,7 @@
 name: 'Sprite Creator'
 description: 'Make your own sprites with Python!'
 author: '@JakeGerber'
-image: 'https://cloud-j2h9qribj.vercel.app/0screenshot__1437_.png'
+img: 'https://cloud-j2h9qribj.vercel.app/0screenshot__1437_.png'
 ---
 
 # Create a Sprite Creator Program!
@@ -58,11 +58,13 @@ myarr = []
 invert = False
 ```
 
-There is an array for all the sprites, the index place, and two other empty arrays. Also, there is a boolean named invert that will be used to invert the colors. This will make more sense later.
+There is an array for all the sprites, the index place, and two other empty arrays. Also, there is a boolean named `invert` that will be used to invert the colors. This will make more sense later.
 
 ## Drawing a Pixel
 
 Let's create a function that goes to a specified location and draws a single pixel. We're definitely going to be calling this function a lot, unless you draw like two pixels. Art is art I guess. :P
+
+Right under the code you just wrote, add a function called `drawSquare()`, which passes in the x and y coordinates, the size of the pixel, and the color. Inside, move the turtle up and go to the passed-in location. Also, make the invert boolean from earlier global so we can modify and use it within the function.
 
 ```py
 def drawSquare(x, y, side, color):
@@ -71,7 +73,7 @@ def drawSquare(x, y, side, color):
   turtle.goto(x, y)
 ```
 
-Right under the code you just wrote, add a function called `drawSquare()`, which passes in the x and y coordinates, the size of the pixel, and the color. Inside, move the turtle up and go to the passed-in location. Also, make the invert boolean from earlier global so we can modify and use it within the function.
+Next, add this if statement:
 
 ```py
 def drawSquare(x, y, side, color):
@@ -92,8 +94,8 @@ def drawSquare(x, y, side, color):
     if (color[0] == "#"):
       if (invert):
 ```
-We want if statements to see if the color has a # symbol in front of it, and we want to check if the invert boolean is true.
 
+We want if statements to see if the color has a # symbol in front of it, and we want to check if the invert boolean is true.
 
 ```py
 def drawSquare(x, y, side, color):
@@ -108,11 +110,12 @@ def drawSquare(x, y, side, color):
     else:
       turtle.color(color)
 ```
-This part is going to seem really weird if you've never heard of [color hex codes](https://www.techopedia.com/definition/29788/color-hex-code). You can represent colors in a form named hexadecimal, rather than our regular decimal system. In these two lines, we are getting the first two places after the # symbol, which represent our red in RGB. We are then converting them to decimal and subtracting from 255 because we are inverting the color. Also, in the else statement set the color to the color string. This means the user most likely just entered the color word, in which case we cannot invert it.
 
+This part is going to seem really weird if you've never heard of [color hex codes](https://www.techopedia.com/definition/29788/color-hex-code). You can represent colors in a form named hexadecimal, rather than our regular decimal system. In these two lines, we are getting the first two places after the `#` symbol, which represents our red in RGB. We are then converting them to decimal and subtracting from 255 because we are inverting the color. Also, in the else statement set the color to the color string. This means the user most likely just entered the color word, in which case we cannot invert it.
 
 <img src="https://cloud-aevez7g72.vercel.app/0screenshot__1470_.png" width="380" alt="Color picker">
-If you search "color picker" on Google, you get access to a slider that can be moved around to pick a color. The hex code at the bottom is the same that you will use when creating your sprites.
+
+If you search "color picker" on Google, you'll see a slider that can be moved around to pick a color. The hex code at the bottom is the same that you will use when creating your sprites.
 
 ```py
 if (invert):
