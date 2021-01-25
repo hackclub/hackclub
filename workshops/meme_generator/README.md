@@ -226,67 +226,67 @@ Navigate to the `script.js` file and:
 
   3. Next, we set the canvas' dimensions same as our meme image's dimensions:
 
-  ```javascript
-  canvas.width = img.width;
-  canvas.height = img.height;
-  ```
+    ```javascript
+    canvas.width = img.width;
+    canvas.height = img.height;
+    ```
 
   4. Now, using our `2D rendering context`, we clear out a rectangle, by erasing the pixels in a rectangular area by setting them to transparent black:
    
-  ```js
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ```
+    ```js
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ```
 
   5. After that, we draw the image on the canvas by using the `drawImage()` function provided by `context` and supplying our image, and the X and Y coordinates.
    
-  ```js
-  ctx.drawImage(img, 0, 0); // 0, 0 are our X and Y coordinates
-  ```
+    ```js
+    ctx.drawImage(img, 0, 0); // 0, 0 are our X and Y coordinates
+    ```
 
   6. Next, we set the style of our text using three functions `ctx.fillStyle`, `ctx.strokeStyle` and `ctx.textAlign`:
    
-  ```js
-  // Text style: white with black borders
-  ctx.fillStyle = 'white';
-  ctx.strokeStyle = 'black';
-  ctx.textAlign = 'center';
-  ```
+    ```js
+    // Text style: white with black borders
+    ctx.fillStyle = 'white';
+    ctx.strokeStyle = 'black';
+    ctx.textAlign = 'center';
+    ```
 
   7. Now, we set our `fontSize`:
 
-  ```js
-  let fontSize = canvas.width * topTextSize; //Font Size will change based on our input sliders
-  ctx.font = `${fontSize}px Impact`; // We'll be using Impact font, which is used by most memes
-  ctx.lineWidth = fontSize / 20; // lineWidth will be the outline of our text, and we're setting it to be 20th of our fontSize here.
-  ```
+    ```js
+    let fontSize = canvas.width * topTextSize; //Font Size will change based on our input sliders
+    ctx.font = `${fontSize}px Impact`; // We'll be using Impact font, which is used by most memes
+    ctx.lineWidth = fontSize / 20; // lineWidth will be the outline of our text, and we're setting it to be 20th of our fontSize here.
+    ```
 
   8. Next, to draw top text on our meme image, we use `ctx.fillText` to fill text and `ctx.strokeText` for outlines:
 
-   ```js
-   // Draw top text
-   ctx.textBaseline = 'top'; // textBaseline property specifies the current text baseline used when drawing text.
-   topText.split('\n').forEach((t, i) => {
-     ctx.fillText(t, canvas.width / 2, i * fontSize, canvas.width); // fillText takes 3 arguments: first is our text, second and third arguments are our X and Y coordinates of the point at which to begin drawing the text.
-     ctx.strokeText(t, canvas.width / 2, i * fontSize, canvas.width); // Arguments are same as fillText but strokeText draws outlines on our text.
-   });
-   ```
+    ```js
+    // Draw top text
+    ctx.textBaseline = 'top'; // textBaseline property specifies the current text baseline used when drawing text.
+    topText.split('\n').forEach((t, i) => {
+      ctx.fillText(t, canvas.width / 2, i * fontSize, canvas.width); // fillText takes 3 arguments: first is our text, second and third arguments are our X and Y coordinates of the point at which to begin drawing the text.
+      ctx.strokeText(t, canvas.width / 2, i * fontSize, canvas.width); // Arguments are same as fillText but strokeText draws outlines on our text.
+    });
+    ```
 
   9. Now, we repeat the same steps for bottom text:
   
-  ```javascript
-    // Bottom text font size
-    fontSize = canvas.width * bottomTextSize;
-    ctx.font = `${fontSize}px Impact`;
-    ctx.lineWidth = fontSize / 20;
+    ```javascript
+      // Bottom text font size
+      fontSize = canvas.width * bottomTextSize;
+      ctx.font = `${fontSize}px Impact`;
+      ctx.lineWidth = fontSize / 20;
 
-    // Draw bottom text
-    ctx.textBaseline = 'bottom';
-    bottomText.split('\n').reverse().forEach((t, i) => { // .reverse() because it's drawing the bottom text from the bottom up
-      ctx.fillText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
-      ctx.strokeText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
-    });
-  } // End of our generateMeme() function
-  ```
+      // Draw bottom text
+      ctx.textBaseline = 'bottom';
+      bottomText.split('\n').reverse().forEach((t, i) => { // .reverse() because it's drawing the bottom text from the bottom up
+        ctx.fillText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
+        ctx.strokeText(t, canvas.width / 2, canvas.height - i * fontSize, canvas.width);
+      });
+    } // End of our generateMeme() function
+    ```
 
 * Now, after the `generateMeme()` function, add a [Window: DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) event listener which will listen for `DOMContentLoaded` event.
 
@@ -302,48 +302,48 @@ Navigate to the `script.js` file and:
 
   1. Initialize our `topTextInput`, `bottomTextInput`, `topTextSizeInput`, `bottomTextSizeInput`, `imageInput` variables using `document.getElementById()` method:
 
-  ```javascript
-  const topTextInput = document.getElementById('top-text');
-  const bottomTextInput = document.getElementById('bottom-text');
-  const topTextSizeInput = document.getElementById('top-text-size-input');
-  const bottomTextSizeInput = document.getElementById('bottom-text-size-input');
-  const imageInput = document.getElementById('image-input');
-  const generateBtn = document.getElementById('generate-btn');
-  ```
+    ```javascript
+    const topTextInput = document.getElementById('top-text');
+    const bottomTextInput = document.getElementById('bottom-text');
+    const topTextSizeInput = document.getElementById('top-text-size-input');
+    const bottomTextSizeInput = document.getElementById('bottom-text-size-input');
+    const imageInput = document.getElementById('image-input');
+    const generateBtn = document.getElementById('generate-btn');
+    ```
 
   2. Next, we give a default text (or value) for the `topTextInput` and `bottomTextInput`:
 
-   ```javascript
-   topTextInput.value = 'Top\nValue';
-   bottomTextInput.value = 'Bottom\nValue';
-   ```
+    ```javascript
+    topTextInput.value = 'Top\nValue';
+    bottomTextInput.value = 'Bottom\nValue';
+    ```
 
   3. After that, add a `click` event listener to the `generateBtn`. The code inside here will run every time that button is clicked.
   
-  ```javascript
-  generateBtn.addEventListener('click', () => {
-    // Code here
-  });
-  ```
+    ```javascript
+    generateBtn.addEventListener('click', () => {
+      // Code here
+    });
+    ```
 
   4. Inside the `EventListener`, we'll use the [FileReader API](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) to read the meme template from the filesystem as a [DataURL](http://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL):
   
-  ```javascript
-  const reader = new FileReader();
-  reader.readAsDataURL(imageInput.files[0])
-  ```
+    ```javascript
+    const reader = new FileReader();
+    reader.readAsDataURL(imageInput.files[0])
+    ```
 
   5. Now, after the FileReader finishes reading the meme template we want to generate a new [`Image`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image), and that image's source will be our reader's result. After our new image is loaded, we'll pass our new image, text and text sizes to the `generateMeme()` function where it'll be displayed on our canvas!
 
-   ```javascript
-   reader.onload = () => {
-     const img = new Image();
-     img.src = reader.result;
-     img.onload = () => {
-       generateMeme(img, topTextInput.value, bottomTextInput.value, topTextSizeInput.value, bottomTextSizeInput.value);
-     };
-   };
-   ```
+    ```javascript
+    reader.onload = () => {
+      const img = new Image();
+      img.src = reader.result;
+      img.onload = () => {
+        generateMeme(img, topTextInput.value, bottomTextInput.value, topTextSizeInput.value, bottomTextSizeInput.value);
+      };
+    };
+    ```
 
 <details>
 
