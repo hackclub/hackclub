@@ -70,8 +70,6 @@ myTur.shape("turtle")
 - `color()` sets the color of the pen. We're setting it to blue.
 - `shape()` sets the shape of our turtle. We're setting it to a "turtle", so a turtle-shaped thing will walk around the screen drawing everything!
 
-For that purpose, let's create the main function or you can say a driver program, which will calculate the value of the Fibonacci series. and move the turtle accordingly.
-
 Now, let's write the code that will calculate the value of the Fibonacci series and move the turtle accordingly. Under all the code, add a function called `main()`, like so:
 
 ```python
@@ -207,7 +205,7 @@ def arcLine(n, length, angle):
 
 And here is the golden curve it generates!
 
-![Golden Curve with rectangles](https://cloud-97au21fhb.vercel.app/0fibonacci-test2.png
+![Golden Curve with rectangles](https://cloud-97au21fhb.vercel.app/0fibonacci-test2.png]
 
 ![Without Rectangles](https://cloud-97au21fhb.vercel.app/1golden_curve_alone.png)
 
