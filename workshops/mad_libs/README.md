@@ -29,13 +29,13 @@ Create a new file and name in `madlib.txt`. Put in your own prompt and have thin
 
 ## Initial Statements
 
-We need initial statements! Add them!
+We need initial statements! Add them to the top of the file!
 
 ```c#
 using System;
 using System.IO;
 ```
-We need these import statements for some functions that we use from these libraries later on.
+We need these import statements for some functions that we use from these libraries later on. `System.IO` allows us to read in files (you want custom prompts right?).
 
 
 ```c#
@@ -55,7 +55,7 @@ Everything that we will be writing from now on will be within the main function.
 
 ## Reading the Text File
 
-Let's read the text file. We gotta get the prompt out of there!
+Let's read the text file. We gotta get the prompt out of there! This will be within our main function right after welcoming the user.
 
 <img src="https://media1.tenor.com/images/dd8ffb18e3d4ac5f5b20ab19141e8fcd/tenor.gif?itemid=15407882" width="600" alt="Homer Reading Gif">
 
@@ -70,8 +70,8 @@ while(true)
   }
 }      
 ```
-- The while loop that surrounds our program will be used later on in order to play again.
-- Create an empty string named `prompt`.
+- Add a while loop that surrounds this code. It will be used later on in order to play again.
+- Create an empty string named `prompt`. This may be surprising but it is used to hold the prompt. 
 - The [using statement](https://docs.microsoft.com/en-us/dotnet/standard/io/how-to-read-text-from-a-file) reads the text file, and the contents of the file are set to the `prompt` string.
 
 ## Inserting the Words
@@ -81,6 +81,7 @@ We are creating a for loop to go through the `prompt` string. This better be a g
 <img src="https://media3.giphy.com/media/Qz6KmDIRiQTfy/source.gif" width="600" alt="Snoopy Happy Gif">
 
 ### For Loop
+This code will still be without our for loop and right under our using statement.
 
 ```c#
 while(true)
@@ -91,11 +92,12 @@ while(true)
   }
 }
 ```
-Right under our using statement and still within the while loop, add this for loop. This for loop loops through each letter in the `prompt` string.
+Add a for loop that goes through the entire `prompt` string length. This allows us to examine each character.
 
 ### Checking Character
 We gotta check each character to make sure it isn't an asterisk.
 
+Add this code within the for loop we just created.
 ```c#
 for(int i = 0; i < prompt.Length; i++)
 {
@@ -108,10 +110,14 @@ for(int i = 0; i < prompt.Length; i++)
   }
 }
 ```
-This if statement checks if the current character is an asterisk (\*). If it is, create a `startingIndex` integer and set it to the current index i, then increment i. Then create a `characterSpace` integer and set it to 2 to represent the two asterisks that surround the word. Then create an empty string named `word`.
+- The if statement checks if the current character is an asterisk (\*). This would represent the start of the type of word the user has to enter in the space, such as an adjective, noun, etc.
+- If it is an asterisk, create a `startingIndex` integer and set it to the current index i, then increment i to represent the character after the asterisk.
+- Then create a `characterSpace` integer and set it to 2 to represent the two asterisks that surround the word. 
+- Finally, create an empty string named `word`, which will represent the word within the asterisk.
 
 ### While Loop
 
+Put this while loop within the if statement we created.
 ```c#
 if (prompt[i] == '*')
 {
@@ -122,8 +128,9 @@ if (prompt[i] == '*')
   }
 }
 ```
-Add this while loop. We're going to be looping through the text file until the next asterisk.
+We're going to be looping through the text file until the next asterisk.
 
+Let's focus on what is inside of the while loop.
 ```c#
 while(true)
 {
@@ -139,13 +146,16 @@ while(true)
   }
 }
 ```
-This if statement checks if the current character is not an asterisk (\*). If true, increment the `characterSpace`, add the letter to the `word` string, and increment `i`. If false, break out of the while loop because you've went through entire word surrounded by asterisks.
+- This if statement checks if the current character is not an asterisk (\*). Remember, every word is surrounded by two asterisks.
+- If true, increment the `characterSpace`, add the letter to the `word` string, and increment `i`. This sets us up for the next time the while loop runs, where we want to check the next character.
+- If false, break out of the while loop because you've went through entire word surrounded by asterisks.
 
 ### Finishing Up
 We have some final statements for this section.
 
 <img src="https://media1.giphy.com/media/VEzlrMWk3F7uuFuRSq/giphy.gif" width="600" alt="Kermit Gif">
 
+This code is right after the while loop we just wrote.
 ```c#
 if (prompt[i] == '*')
 {
@@ -155,7 +165,8 @@ if (prompt[i] == '*')
   Console.WriteLine();
 }
 ```
-First, let's print the `word` string to ask what type of word is wanted using [string interpolation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated). Then, let's get the user's response and set it to the `response` string and create a line for spacing purposes.
+- First, let's print the `word` string to ask what type of word is wanted using [string interpolation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated). This allows us to put variables surrounded by brackets directly into our output. 
+- Then, let's get the user's response. This is done through reading the current line, which is where the user entered their text. Set this text to the `response` string. Let's create a line afterwards for spacing purposes.
 
 ```c#
 if (prompt[i] == '*')
@@ -170,7 +181,7 @@ if (prompt[i] == '*')
   i = startingIndex+response.Length-1;
 }
 ```
-Now, let's remove the `word` variable from our prompt and insert the user's response. Set the current index to right after the response we just inserted.
+Now, let's remove the `word` variable from our prompt and insert the user's response. So if there is supposed to be an adjective in a current spot, then let's actually put the active there. Set the current index to right after the response we just inserted.
 
 ## Printing the Prompt
 Now, we gotta print the prompt to the screen. How else would the user see their final masterpiece?
