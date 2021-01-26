@@ -50,7 +50,7 @@ turtle.speed(0)
 
 Here, the turtle's cursor is hidden, the screen is cleared, and the speed is set 0 so it draws instantly.
 
-Next, add these three lines:
+Next, add these lines:
 
 ```py
 allsprites = []
@@ -87,6 +87,8 @@ def drawSquare(x, y, side, color):
 
 We want to draw the square if they input a color. If "none" is inputted, then we don't want to draw anything.
 
+Next, add:
+
 ```py
 def drawSquare(x, y, side, color):
   global invert
@@ -97,7 +99,9 @@ def drawSquare(x, y, side, color):
       if (invert):
 ```
 
-We want if statements to see if the color has a # symbol in front of it, and we want to check if the invert boolean is true.
+These if statements check if the color has a `#` symbol in front of it, and if the `invert` boolean is true.
+
+Next, populate the innermost if statement and add an else statement:
 
 ```py
 def drawSquare(x, y, side, color):
@@ -119,6 +123,8 @@ This part is going to seem really weird if you've never heard of [color hex code
 
 If you search "color picker" on Google, you'll see a slider that can be moved around to pick a color. The hex code at the bottom is the same that you will use when creating your sprites.
 
+Inside the `invert` if statement, add:
+
 ```py
 if (invert):
   tempcolR = color[1] + color[2]
@@ -129,8 +135,10 @@ if (invert):
   tempcolB = 255 - int(tempcolB, 16)
   turtle.color(tempcolR, tempcolG, tempcolB)
 ```
-Do the same thing for the other colors in RGB but change the index values. Afterwards, set the turtle's color using the RGB values.
 
+We're doing the same thing for the other colors in RGB but changing the index values. Then, we're setting the turtle's color using the RGB values.
+
+Next, add this inside the else statement:
 
 ```py
 else:
@@ -142,8 +150,10 @@ else:
   tempcolB = int(tempcolB, 16)
   turtle.color(tempcolR, tempcolG, tempcolB)
 ```
-In the else statement, once again get the index values from the color string and convert them to integers. But, since we are NOT inverting the colors, do NOT subtract them from 255.
 
+Here, we once again get the index values from the color string and convert them to integers. But, since we are NOT inverting the colors, do NOT subtract them from 255.
+
+After the outermost if statement, add:
 
 ```py
 def drawSquare(x, y, side, color):
@@ -154,7 +164,9 @@ def drawSquare(x, y, side, color):
     turtle.end_fill()
 ```
 
-We need to wrap everything we draw inside `begin_fill()` and `end_fill()` functions in order to fill in the square. Add these two functions. Leave a space in between them because we're going to add some drawing code in a second.
+We need to wrap everything we draw inside `begin_fill()` and `end_fill()` functions in order to fill in the square.
+
+Then, in between those two functions, add:
 
 ```py
 turtle.begin_fill()
@@ -164,7 +176,7 @@ for x in range(4):
 turtle.end_fill()
 ```
 
-In between the `begin_fill()` and `end_fill()` functions, add a for loop that draws all 4 sides of a square.
+This is just a for loop that draws all 4 sides of a square.
 
 ## Reading in the Text File
 
@@ -221,6 +233,8 @@ while(True):
 - First, we check to make sure that the line we're on contains text. If there is no text, then it is the end of the file, so we break out of the loop.
 - If the text is a dash, then we are finished with our current sprite, so we append it to the `allsprites` array we created earlier, and we clear the `myarr` array. The reason why we do this will make sense soon.
 
+Next, create an empty array called `temparr`:
+
 ```py
 while(True):
   #Previous code would be here.
@@ -229,7 +243,9 @@ while(True):
   tempr = ""
 ```
 
-Next, create an empty array called `temparr`. This will hold our pixel color information on the line. After that, create an empty string called `tempr`. We'll use this later to get color data.
+This will hold our pixel color information on the line. After that, create an empty string called `tempr`. We'll use this later to get color data.
+
+Under the `tempr` string, add this for loop:
 
 ```py
 while(True):
@@ -245,7 +261,12 @@ while(True):
       tempr = ""
 ```
 
-Under the `tempr` string, add a for loop, which loops through each letter in the `tempLine` string. It continues adding characters to the `tempr` string until it finds a comma. If it finds a comma, it appends the fully-formed `tempr` string to the `temparr` array, resets `tempr` to an empty string, and continues searching. Once this loop completes, `temparr` will contain a list of strings from the `sprites.txt` file. We'll find out what exactly this data will be in a minute.
+- This for loop loops through each letter in the `tempLine` string.
+- It continues adding characters to the `tempr` string until it finds a comma.
+- If it finds a comma, it appends the fully-formed `tempr` string to the `temparr` array, resets `tempr` to an empty string, and continues searching.
+- Once this loop completes, `temparr` will contain a list of strings from the `sprites.txt` file. We'll find out what exactly this data will be in a minute.
+
+After the loop completes, append the `tempr` array to the `myarr` array:
 
 ```py
 while(True):
@@ -264,17 +285,20 @@ while(True):
 f.close()
 ```
 
-After the loop completes, append the `temparr` array to the `myarr` array.
-
 ## Drawing All the Pixels
 
 Everything needs to be drawn! EVERYTHING!
+
+At the bottom of the file, create a function called `draw()`, which takes in an array and orientation:
 
 ```py
 def draw(currentarrA, orientation):
   global invert
 ```
-Create a draw function that takes in an array and orientation. Also make the invert boolean global so we can access and modify it.
+
+Inside, we're using the `global` keyword to access the global `invert` variable.
+
+Next, add:
 
 ```py
 def draw(currentarrA, orientation):
@@ -286,8 +310,8 @@ def draw(currentarrA, orientation):
   originalX = -60
   side = 10
 ```
-Copy ober the array to another variable, clear the screen, and define some variables. These define the starting x and y location, the original x location, and the side length of every pixel square.
 
+Here, we're copying over the array to another variable, clearing the screen, and defining some variables. Tehse define the starting x and y location, the original x location, and the side length of every pixel square.
 
 ```py
 def draw(currentarrA, orientation):
@@ -295,6 +319,7 @@ def draw(currentarrA, orientation):
   turtle.tracer(0, 0)
   turtle.update()
 ```
+
 We want everything drawn to be between these tracer and update functions. This prevent the screen from updating every time something is drawn, and instead draws everything when all the draw statements are entered. Without it, our program runs VERY slow.
 
 ## Orientations
