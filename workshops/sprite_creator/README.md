@@ -9,7 +9,7 @@ img: 'https://cloud-j2h9qribj.vercel.app/0screenshot__1437_.png'
 Video game sprites are rad, so let's create our own. In this workshop, we will be creating a sprite creation program where you can create and cycle through your own custom sprites.
 
 <img src="https://cloud-j2h9qribj.vercel.app/0screenshot__1437_.png" width="580" alt="Sprite Example">
-
+[Check out what we're going to make!](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop#main.py)
 <img src="https://art.pixilart.com/a3c97a99fb3c1ed.gif" width="380" alt="Zelda 2 Link Gif">
 
 ## Getting started
@@ -628,7 +628,7 @@ turtle.mainloop()
 ## Hacking
 
 Here are some ways you can expand this project:
-- [Original Program](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop#main.py)
+
 - [Simpler Inputs for Specific Colors](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-1#main.py)
 - [Random Cycle](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-2#main.py)
 - [Sprite Layering](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-3#sprite.txt)
