@@ -628,7 +628,7 @@ turtle.mainloop()
 ## Hacking
 
 Here are some ways you can expand this project:
-
+- [Original Program](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop#main.py)
 - [Simpler Inputs for Specific Colors](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-1#main.py)
 - [Random Cycle](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-2#main.py)
 - [Sprite Layering](https://repl.it/@CosmicSnowman/Sprite-Creation-Workshop-Expanded-3#sprite.txt)
