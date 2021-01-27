@@ -5,24 +5,23 @@ author: '@JakeGerber'
 image: 'https://cloud-ny55iopyv.vercel.app/0screenshot__1446_.png'
 ---
 
-# Create Space Bar Games!
 We all love spamming the space bar so let's make a game based on it. In this workshop, we will be creating a two space bar games. In the first you have to press 100 times as fast as possible, and in the second you have to press has much as possible in 5 seconds.
 
 <img src="https://cloud-ny55iopyv.vercel.app/0screenshot__1446_.png" width="580" alt="Space Game 1 Example">
 
 <img src="https://cloud-bmo725iv9.vercel.app/0screenshot__1449_.png" width="580" alt="Space Game 2 Example">
 
+[Here's a demo of what we're going to create!](https://repl.it/@CosmicSnowman/Space-Game#main.py)
+
 <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eab6cc47-e9ea-4310-88ed-ba829f8f32f1/d9ocrek-b38472b3-ed5c-48fd-b4b8-43e0fe790afd.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZWFiNmNjNDctZTllYS00MzEwLTg4ZWQtYmE4MjlmOGYzMmYxXC9kOW9jcmVrLWIzODQ3MmIzLWVkNWMtNDhmZC1iNGI4LTQzZTBmZTc5MGFmZC5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.0EL41U6STfj0sg5f6JPVu8fK_P0vw9_uOPPA7oPtErk" width="380" alt="Saitama Gif">
 
-# Repl.it Setup
+## Repl.it Setup
 
-We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE, meaning that it allows us to write code from the Repl.it website!
-
-Create a new repl and use Python as the language.
+We're going to use [Repl.it](https://repl.it/~), a free, online coding editor, to create the project. Get started by visiting [repl.it/languages/python3](https://repl.it/languages/python3).
 
 <img src="https://cloud-2lezn57vs.vercel.app/0screenshot__1450_.png" width="600" alt="Python Repl">
 
-# Importing Libraries
+## Importing Libraries
 Let's begin by importing the turtle and math libraries. We need these to access certain functions!
 
 ```python
@@ -30,27 +29,32 @@ import time
 import turtle
 ```
 
-We will be drawing to the screen using the turtle library! Turtle allows us to draw to the screen like a whiteboard. More information [here](https://www.geeksforgeeks.org/turtle-programming-python/). The [time library](https://docs.python.org/3/library/time.html) will be used for time!
+We will be drawing to the screen using the turtle library! Turtle allows us to draw to the screen like a whiteboard. We're going to use it to draw text to the screen. More information [here](https://www.geeksforgeeks.org/turtle-programming-python/). The [time library](https://docs.python.org/3/library/time.html) will be used for time! We want this so we can track the time for both of the games.
 
-# Initial Statements
+## Initial Statements
 <img src="https://media2.giphy.com/media/H4iFSugbzV4cIobri3/200.gif" width="380" alt="Start Gif">
-Initial statements are needed. Don't forget them!
+Initial statements are needed. Don't forget them! Put them right under the import statements.
 
 ```csharp
 turtle.hideturtle()
 turtle.up()
 turtle.goto(-150,0)
 ```
-These initial turtle statements hide the cursor, make the turtle go up to prevent it from drawing, and going to a specified location.
+These initial turtle statements hide the cursor, make the turtle go up to prevent it from drawing when we change locations, and go to a specified location. This location is where we will be drawing some text.
 
+This code goes at the bottom.
 ```csharp
 start = 0
 spacePress = 0
 turtle.write("Press Left for Space Game 1 Right for Space Game 2", font=("Arial", 8, "normal"))
 ```
-Start and spacePress variables are initialized, and the turtle writes to the screen how to start the games.
+- The `start` integer is initialized. It will be used in Game 1 to get the user's starting time. This will be subtracted from the ending time to get the total time.
+- The `spacePress` integer is initialized. It will be used in both games when the user presses the space bar.
+- Finally, the turtle writes to the screen how to start the games.
 
-# Initial Booleans
+## Initial Booleans
+
+This code goes at the bottom.
 ```csharp
 game1Playing = False
 game1end = False
@@ -59,13 +63,13 @@ game2Playing = False
 game2end = False
 timerActive = False
 ```
-These booleans are initialized. They will make more sense later on and are used for determining the game.
+These booleans are initialized. They will be used later on when the user starts playing a game.
 
-# Left Arrow Press Function
+## Left Arrow Press Function
 <img src="https://media1.tenor.com/images/b1742ad02258b00eeda5afd92407e2f2/tenor.gif?itemid=5145967" width="380" alt="Left Gif">
 To the left now.
 
-Game 1 is the game where we will be pressing the space bar as fast as possible for 100 times.
+Game 1 is the game where we will be pressing the space bar as fast as possible for 100 times. This function will be at the bottom of the program.
 ```csharp
 def left():
   global game1Playing
@@ -73,8 +77,11 @@ def left():
   game1Playing = True
   start = time.time()
 ```
-This code will occur when the user presses the left arrow key to start the game, which we will handle later on. We are making some booleans global so we can access and modify them here, along with setting the game1Playing boolean to true. We are also setting start to the current time, which will be used later on.
+- This code will occur when the user presses the left arrow key to start Game 1, which we will handle later on. 
+- We are making some booleans global so we can access and modify them here. When the `global` keyword is used inside of a function, we are able to access the variable and modify it. Without this keyword, we cannot do anything with the variables we created earlier in our program.
+- Set `start` to the current time. Remember, this will be used later on to get the total time of the user.
 
+This code goes within the `left` function and right under what we just wrote.
 ```csharp
 def left():
   #What we just wrote would be here.
@@ -82,19 +89,22 @@ def left():
   turtle.goto(-100,0)
   turtle.write("Click Space as Much as Possible", font=("Arial", 10, "normal"))
 ```
-The turtle clears the screen, goes to a specified location, and tells the user the directions.
+The turtle clears the screen, goes to a specified location, and tells the user the directions for Game 1.
 
-# Right Arrow Press Function
+## Right Arrow Press Function
 <img src="https://media3.giphy.com/media/fAJSjAn1auJ1HjxKh0/giphy.gif" width="380" alt="Right Gif">
 To the right now.
 
-Game 2 is the game where we will be pressing the space bar as much as possible in 5 seconds.
+Game 2 is the game where we will be pressing the space bar as much as possible in 5 seconds. This function goes right under the `left` function.
 ```csharp
 def right():
   global game2Playing
   game2Playing = True
 ```
-This code will occur when the user presses the right arrow key to start the game, which we will handle later on. Make the game2Playing boolean global so we can use it, and set it to true.
+- This code will occur when the user presses the right arrow key to start Game 2, which we will handle later on. 
+- Make the `game2Playing` boolean global so we can access and modify it. In fact, set it to true after we make it global. Without it being global, we would not be able to do this.
+
+This code goes within the `right` function and right under what we just wrote.
 ```csharp
 def right():
   #What we just wrote would be here.
@@ -102,17 +112,20 @@ def right():
   turtle.goto(-100,0)
   turtle.write("Click Space as Much as Possible", font=("Arial", 10, "normal"))
 ```
-The turtle clears the screen, goes to the specified location, and tells the user the directions.
+The turtle clears the screen, goes to the specified location, and tells the user the directions for Game 2.
 
-# Activate Timer
-This code will be used for Game 2, and the function will be called later in the program. It will make more sense then so don't worry!
+## Activate Timer
+This code will be used for Game 2, and the function will be called later in the program. It will make more sense then so don't worry!  This function does right below our `right` function.
 ```csharp
 def TimerActivate():
   global game2end
   timeVal = 5
 ```
-This function will tell the user how much time they have left to press the space bar before the game ends. Make the game2end boolean global and make timeVal equal to five to represent the time they will have to play.
+- This function will tell the user how much time they have left to press the space bar before the game ends. 
+- Make the `game2end` boolean global so we can access it.
+- Create the `timeVal` integer and set it equal to 5. This represents the amount of the time the user has to press the space bar as fast as possible in Game 2.
 
+This code goes within the `TimerActive` function and right below what we just wrote.
 ```csharp
 def TimerActivate():
   #What we just wrote would be here.
@@ -123,14 +136,16 @@ def TimerActivate():
     time.sleep(1)
   game2end = True
 ```
-The "time.sleep(1)" line will wait one second before running the for loop again. The loop runs timeVal times, so that is how we create a five second timer. After the loop, set the game2end boolean to true.
+- This for loop will run `timeVal` times. But how will it be `timeVal` seconds long? That's where the `time.sleep(1)` line comes in, which will wait one second before running the loop again. This creates our five second timer.
+- Within the loop, clear then screen, go to the specified coordinate, and led the user know how much time they have remaining.
+- After the loop, set the game2end boolean to true to represent the game's end.
 
-# Space Bar
+## Space Bar
 <img src="https://media0.giphy.com/media/3o6nV0O3Df8yh9oGpq/giphy.gif" width="380" alt="Space Bar Gif">
 
-The user's gonna be pressing space so let's handle that. This is also where it will check what game is currently being played and have code for both games.
+The user's going to be pressing space so let's handle that. This is also where it will check what game is currently being played and have code for both games. This function goes at the bottom of the program.
 
-## Initial Variables
+### Initial Variables
 ```csharp
 def space():
   global game1Playing
@@ -139,13 +154,14 @@ def space():
   global game2Playing
   spacePressAmt = 100
 ```
-Create a new function and add these global statements so we can use our booleans. The spacePressAmt integer is set to 100 because the user will have to press the space bar 100 times in Game 1.
+Create a new function and add these global statements so we can use these booleans. The `spacePressAmt` integer is created and set to 100 because the user will have to press the space bar 100 times in Game 1.
 
-## Game 1
+### Game 1
 <img src="https://media1.giphy.com/media/ToMjGpC87kZY6cihIju/giphy.gif" width="380" alt="Game 1 Gif">
 Onto the first game!
 
-### Initial Statements
+Add this code within our `space` function and right after what we just wrote.
+#### Initial Statements
 ```csharp
 def space():
   #What we just wrote should be here.
@@ -158,7 +174,7 @@ def space():
 ```
 We want an if statement to make sure we are playing Game 1. If we are, then we are incrementing the spacePress amount, updating the end variable, and telling the user how much of the way they are on the space count.
 
-### Ending the Game
+#### Ending the Game
 ```csharp
 def space():
   #What we already wrote would be here.
@@ -174,11 +190,11 @@ def space():
 ```
 If spacePress is greater than or equal to spacePressAmt, then we are updating the end time, writing how long it took the user to complete by subtracting the start from the end, and setting game1Playing to false.
 
-## Game 2
+### Game 2
 <img src="https://media3.giphy.com/media/3oEjHYlwvUK5p9AIbm/giphy.gif" width="380" alt="Game 2 Gif">
 Onto the second game!
 
-### Initial Statements
+#### Initial Statements
 ```csharp
 def space():
   #What we already wrote would be here.
@@ -191,7 +207,7 @@ def space():
 If Game 2 is being played, increment spacePress and if this is your first time enterig the statement, then set the timer as active by calling the "TimerActive" function.
 
 
-### Ending the Game
+#### Ending the Game
 ```csharp
 def space():
   #What we already wrote would be here.
@@ -205,7 +221,7 @@ def space():
 ```
 If game2end is true, then let the user know how many presses they got and set game2playing to false. 
 
-# Ending Statements
+## Ending Statements
 You are so close to finishing. Like really close.
 
 ```csharp
@@ -218,7 +234,7 @@ turtle.mainloop()
 ```
 These listeners listen for the space bar, left arrow key, and right arrow key, and they call the respective functions. The listen statement allows for the turtle to listen for these key presses.
 
-# Final Code
+## Final Code
 <img src="https://cdn.pixilart.com/photos/orginal/3147e5b7f0ee4c7.gif" width="380" alt="Kermit Happy Gif">
 You're done! Let's celebrate!
 
@@ -310,8 +326,7 @@ turtle.listen()
 turtle.mainloop()
 ```
 
-# More You Can Create
-- [Original Program](https://repl.it/@CosmicSnowman/Space-Game#main.py)
+## More You Can Create
 - [Randomize Background Color](https://repl.it/@CosmicSnowman/Space-Game-Expanded-1#main.py)
 - [User Input for Time and Space Amount](https://repl.it/@CosmicSnowman/Space-Game-Expanded-2#main.py)
 - [Win or Lose Scenarios](https://repl.it/@CosmicSnowman/Space-Game-Expanded-3#main.py)
