@@ -181,11 +181,12 @@ if (prompt[i] == '*')
   i = startingIndex+response.Length-1;
 }
 ```
-Now, let's remove the `word` variable from our prompt and insert the user's response. So if there is supposed to be an adjective in a current spot, then let's actually put the active there. Set the current index to right after the response we just inserted.
+Now, let's remove the `word` variable from our prompt and insert the user's response. So, if there is supposed to be an adjective in a current spot, then let's actually put the adjective there. Set the current index to right after the response we just inserted.
 
 ## Printing the Prompt
 Now, we gotta print the prompt to the screen. How else would the user see their final masterpiece?
 
+This code goes under the for loop we just wrote.
 ```c#
 while(true)
 {
@@ -196,7 +197,7 @@ while(true)
   Console.WriteLine("\n---------------------------------------------------\n");
 }
 ```
-Add this code under the for loop we just wrote. We are just printing lines to seperate the prompt for organization and then printing it.
+We are just printing lines to seperate the prompt for organization and then printing it.
 
 ## Play Again
 Another one. Another one. Another one. Maybe another one. Alright final one. Maybe.
@@ -205,6 +206,7 @@ Another one. Another one. Another one. Maybe another one. Alright final one. May
 
 ### Asking the User to Play Again
 
+The code we are writing is still within the large while loop.
 ```c#
 while(true)
 {
@@ -215,7 +217,7 @@ while(true)
   }
 }
 ```
-The code we are writing is still within the large while loop. Create a `playAgain` bool and set it to false.
+Create a `playAgain` bool and set it to false. Also create another while loop. This will handle asking the player to play again.
 
 ```c#
 bool playAgain = false;
@@ -225,7 +227,7 @@ while(true)
   string again = Console.ReadLine();
 }
 ```
-We are taking the user's input and assigning it to the `again` string.
+We are asking the user to play again, taking their input, and assigning the input to the `again` string.
 
 ```c#
 while(true)
@@ -252,11 +254,14 @@ while(true)
   }
 }
 ```
-If the again string is equal to `y`, set the `playAgain` to true and break out of the while loop. If it is equal to `n`, set the `playAgain` to false and break out of the while loop. Else tell the user to try again, and the while loop loops again.
+- If the `again` string is equal to `y`, set the `playAgain` to true and break out of the while loop. This means the user wants to play again.
+- If it is equal to `n`, set the `playAgain` to false and break out of the while loop. This means the user does not want to play again
+- Else tell the user to try again, and the while loop loops again. This is because we are going to ask the user to play again another time because their input was invalid.
 
 ## Actually Playing Again
 That boolean must mean something! Oh wait, we're gonna deal with it right now.
 
+Continue to focus on the while loop we were just writing.
 ```c#
 while(true)
 {
@@ -271,10 +276,13 @@ while(true)
   }
 }
 ```
-If the `playAgain` bool is false, then we break out of the while loop surrounding the entire program. Else we go back to the start of the while loop around the program.
+- If the `playAgain` bool is false, we break out of the while loop surrounding the entire program. 
+- Else we go back to the start of the while loop around the program. This will start another game.
 
 ## Final Code
 You are done! B) "You are all now incredibly funny people." -Master of funny himself.
+
+Happy Hacking!
 
 <details>
 
@@ -374,4 +382,3 @@ class Program
 - [Randomly Picked Prompts](https://repl.it/@CosmicSnowman/Mad-Libs-Expanded-1#main.cs)
 - [More Colors](https://repl.it/@CosmicSnowman/Mad-Libs-Expanded-2#main.cs)
 - [Player System](https://repl.it/@CosmicSnowman/Mad-Libs-Expanded-3#main.cs)
-
