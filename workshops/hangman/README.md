@@ -2,7 +2,7 @@
 name: 'Hangman'
 description: 'Create the Hangman game!'
 author: '@JakeGerber'
-image: 'https://cloud-pyase6wua.vercel.app/0screenshot__1414_.png'
+img: 'https://cloud-pyase6wua.vercel.app/0screenshot__1414_.png'
 ---
 
 In this workshop we are going to be creating Hangman using Python and the turtle library.
