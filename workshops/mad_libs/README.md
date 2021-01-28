@@ -377,7 +377,8 @@ class Program
 ```
 </details>
 
-## More to Create
+## Hacking
+Here are some ways to expand this code!
 
 - [Randomly Picked Prompts](https://repl.it/@CosmicSnowman/Mad-Libs-Expanded-1#main.cs)
 - [More Colors](https://repl.it/@CosmicSnowman/Mad-Libs-Expanded-2#main.cs)
