@@ -2,7 +2,7 @@
 name: 'Space Bar Games'
 description: 'Make two games where you press the space bar as fast as possible!'
 author: '@JakeGerber'
-image: 'https://cloud-ny55iopyv.vercel.app/0screenshot__1446_.png'
+img: 'https://cloud-ny55iopyv.vercel.app/0screenshot__1446_.png'
 ---
 
 We all love spamming the space bar so let's make a game based on it. In this workshop, we will be creating a two space bar games. In the first you have to press 100 times as fast as possible, and in the second you have to press has much as possible in 5 seconds.
@@ -162,6 +162,8 @@ Onto the first game!
 
 Add this code within our `space` function and right after what we just wrote.
 #### Initial Statements
+
+This code goes within the `space` function but after what we just wrote.
 ```csharp
 def space():
   #What we just wrote should be here.
@@ -172,9 +174,14 @@ def space():
     turtle.goto(-50,0)
     turtle.write(str(spacePress) + "/" + str(spacePressAmt) + " presses", font=("Arial", 10, "normal"))
 ```
-We want an if statement to make sure we are playing Game 1. If we are, then we are incrementing the spacePress amount, updating the end variable, and telling the user how much of the way they are on the space count.
+- We want an if statement to make sure we are playing Game 1. 
+- If we are, then increment the `spacePress` amount by one. This keeps track of the amount of times the space bar is pressed.
+- Also, update the `end` integer to get the current time. This will be useful if the user ends up finishing the game.
+- Go to a specified position and tell the user how much of the way they are to `spacePressAmt`.
 
 #### Ending the Game
+
+This code goes within the `space` function and if statement and right under what we just wrote.
 ```csharp
 def space():
   #What we already wrote would be here.
@@ -194,6 +201,7 @@ If spacePress is greater than or equal to spacePressAmt, then we are updating th
 <img src="https://media3.giphy.com/media/3oEjHYlwvUK5p9AIbm/giphy.gif" width="380" alt="Game 2 Gif">
 Onto the second game!
 
+This code goes within the `space` function and right under the if statement.
 #### Initial Statements
 ```csharp
 def space():
@@ -204,10 +212,12 @@ def space():
       timerActive = True
       TimerActivate()
 ```
-If Game 2 is being played, increment spacePress and if this is your first time enterig the statement, then set the timer as active by calling the "TimerActive" function.
-
+- If Game 2 is being played, increment spacePress because the user is pressing space!
+- If this is your first time entering the if statement, meaning Game 2 just started, then set the timer as active by making `timerActive` true and calling the "TimerActive" function.
 
 #### Ending the Game
+
+This code goes without of elif statement we just created, and it goes below what we just wrote.
 ```csharp
 def space():
   #What we already wrote would be here.
@@ -219,11 +229,12 @@ def space():
       turtle.write(str(spacePress) + " Presses!", font=("Arial", 10, "normal"))
       game2Playing = False
 ```
-If game2end is true, then let the user know how many presses they got and set game2playing to false. 
+If `game2end` is true, clear the screen, go to a specified coordinate, let the user know how many presses they got, and set `game2playing` to false. 
 
 ## Ending Statements
 You are so close to finishing. Like really close.
 
+This code goes at the bottom of the program.
 ```csharp
 turtle.onkey(space, "space")
 turtle.onkey(left, "Left")
@@ -232,11 +243,17 @@ turtle.onkey(right, "Right")
 turtle.listen()
 turtle.mainloop()
 ```
-These listeners listen for the space bar, left arrow key, and right arrow key, and they call the respective functions. The listen statement allows for the turtle to listen for these key presses.
+These listeners listen for the space bar, left arrow key, and right arrow keys. They then call the respective functions.
 
 ## Final Code
 <img src="https://cdn.pixilart.com/photos/orginal/3147e5b7f0ee4c7.gif" width="380" alt="Kermit Happy Gif">
 You're done! Let's celebrate!
+
+Happy Hacking!
+
+<details>
+
+<summary> Final source code: </summary>
 
 ```csharp
 import time
@@ -326,7 +343,11 @@ turtle.listen()
 turtle.mainloop()
 ```
 
-## More You Can Create
+</details>
+
+## Hacking
+Here are some ways to expand on the code!
+
 - [Randomize Background Color](https://repl.it/@CosmicSnowman/Space-Game-Expanded-1#main.py)
 - [User Input for Time and Space Amount](https://repl.it/@CosmicSnowman/Space-Game-Expanded-2#main.py)
 - [Win or Lose Scenarios](https://repl.it/@CosmicSnowman/Space-Game-Expanded-3#main.py)
