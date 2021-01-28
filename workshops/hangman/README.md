@@ -455,7 +455,7 @@ def drawText(x, y, text):
 </details>
 
 ## Hacking
-Here are sone ways to expand upon the code!
+Here are some ways to expand upon the code!
 
 - [Option to Play Again](https://repl.it/@CosmicSnowman/Hangman-Workshop-Extended-1#main.py)
 - [Change the Drawing](https://repl.it/@CosmicSnowman/Hangman-Workshop-Extended-2#main.py)
