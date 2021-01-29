@@ -5,7 +5,7 @@ author: '@s1ntaxe770r'
 img: 'https://cloud-57v29xozt.vercel.app/0screen_shot_2020-12-07_at_5.26.13_pm.png'
 ---
 
-So you listened to "Mercy", "Flashing Lights" and "FourFiveSeconds". Now you're looking for insipration from Kanye? Yeah me too!! In this workshop, you will build a Kanye quote generator. By the end of this workshop, you will learn how to do three things:
+So you listened to "Mercy", "Flashing Lights" and "FourFiveSeconds". Now you're looking for inspiration from Kanye? Yeah me too!! In this workshop, you will build a Kanye quote generator. By the end of this workshop, you will learn how to do three things:
 
 - Fetch from an API using web requests
 - Parse request data
@@ -85,7 +85,7 @@ def index():
   {"quote":"Sometimes I push the door close button on people running towards the elevator. I just need my own elevator sometimes. My sanctuary."}
   ```
 - Then, we get the "quote" from the HTTP response and assign it to a variable `quote`
-- Finally, we render the data on a webpage using the `render_data` function.
+- Finally, we render the data on a webpage using the `render_template` function.
 
 <details>
   
@@ -105,7 +105,7 @@ def index():
 
 ![present](https://cloud-8ec0u6szu.vercel.app/0garfield.gif)
 
-By default, Flask looks for any HTML files you pass to the `render_template` function in a folder called `templates`. On the sidebar on the left of your repl, click on the folder called `templates` to open it. Then, open the `index.html` file inside it. Inside, you should see the following code:
+By default, Flask looks for any HTML files you pass to the `render_template` function in a folder called `templates`. On the sidebar on the left of your repl, click on the folder called `templates` to open it. Then, open the `index.html` file inside it. You should see the following code:
 
 ```html
 <!DOCTYPE html>
