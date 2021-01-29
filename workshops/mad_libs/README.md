@@ -1,8 +1,8 @@
 ---
-name: 'Mad Libs Program'
-description: 'Recreate Mad Libs!'
+name: 'Mad Libs'
+description: 'Make a Mad Libs program in C#!'
 author: '@JakeGerber'
-img : 'https://cloud-qziue462l.vercel.app/0screenshot__1420_.png'
+img: 'https://cloud-qziue462l.vercel.app/0screenshot__1420_.png'
 ---
 
 <img src="https://cloud-qziue462l.vercel.app/0screenshot__1420_.png" width="380" alt="Mad Libs Example">
@@ -15,7 +15,7 @@ Mad Libs is a fun game to play with friends (KEEP THE RESPONSES PG!), so let's c
 
 ## Repl.it Setup
 
-We're going to use [Repl.it](https://repl.it/~), a free, online coding editor, to create the project. Get started by visiting [https://repl.it/languages/csharp](https://repl.it/languages/csharp).
+We're going to use [Repl.it](https://repl.it/~), a free, online code editor, to create the project. Get started by visiting [repl.it/languages/csharp](https://repl.it/languages/csharp).
 
 <img src="https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
 
@@ -25,18 +25,20 @@ We're creating a new text file in order to put our Mad Libs prompt in. A text fi
 
 <img src="https://cloud-7epyavre2.vercel.app/0screenshot__1403_.png" width="900" alt="Creating New Text File">
 
-Create a new file and name in `madlib.txt`. Put in your own prompt and have things that you want to ask the user surrounded by asterisks (\*).
+Create a new file and name it `madlib.txt`. Put in your own prompt and surround the things that you want to ask the user with asterisks (\*).
 
 ## Initial Statements
 
-We need initial statements! Add them to the top of the file!
+We need initial statements! Add them to the top of the file:
 
 ```c#
 using System;
 using System.IO;
 ```
+
 We need these import statements for some functions that we use from these libraries later on. `System.IO` allows us to read in files (you want custom prompts right?).
 
+Everything that we will be writing from now on will be within the main function. Let's write a line to the console welcoming the user to Madlibs!
 
 ```c#
 using System;
@@ -51,7 +53,6 @@ class Program
   }
 }
 ```
-Everything that we will be writing from now on will be within the main function. Let's write a line to the console welcoming the user to Madlibs!
 
 ## Reading the Text File
 
@@ -73,14 +74,16 @@ while(true)
 - Add a while loop that surrounds this code. It will be used later on in order to play again.
 - Create an empty string named `prompt`. This may be surprising but it is used to hold the prompt. 
 - The [using statement](https://docs.microsoft.com/en-us/dotnet/standard/io/how-to-read-text-from-a-file) reads the text file, and the contents of the file are set to the `prompt` string.
+  - (Note: we haven't made this text file yet, but we will soon)
 
 ## Inserting the Words
 
-We are creating a for loop to go through the `prompt` string. This better be a good prompt!
+Next, let's create a for loop to go through the `prompt` string. This better be a good prompt!
 
 <img src="https://media3.giphy.com/media/Qz6KmDIRiQTfy/source.gif" width="600" alt="Snoopy Happy Gif">
 
 ### For Loop
+
 This code will still be without our for loop and right under our using statement.
 
 ```c#
@@ -92,12 +95,14 @@ while(true)
   }
 }
 ```
+
 Add a for loop that goes through the entire `prompt` string length. This allows us to examine each character.
 
 ### Checking Character
 We gotta check each character to make sure it isn't an asterisk.
 
-Add this code within the for loop we just created.
+Add this code within the for loop we just created:
+
 ```c#
 for(int i = 0; i < prompt.Length; i++)
 {
@@ -110,6 +115,7 @@ for(int i = 0; i < prompt.Length; i++)
   }
 }
 ```
+
 - The if statement checks if the current character is an asterisk (\*). This would represent the start of the type of word the user has to enter in the space, such as an adjective, noun, etc.
 - If it is an asterisk, create a `startingIndex` integer and set it to the current index i, then increment i to represent the character after the asterisk.
 - Then create a `characterSpace` integer and set it to 2 to represent the two asterisks that surround the word. 
@@ -117,7 +123,8 @@ for(int i = 0; i < prompt.Length; i++)
 
 ### While Loop
 
-Put this while loop within the if statement we created.
+Put this while loop within the if statement we created:
+
 ```c#
 if (prompt[i] == '*')
 {
@@ -128,9 +135,11 @@ if (prompt[i] == '*')
   }
 }
 ```
+
 We're going to be looping through the text file until the next asterisk.
 
 Let's focus on what is inside of the while loop.
+
 ```c#
 while(true)
 {
@@ -146,16 +155,19 @@ while(true)
   }
 }
 ```
+
 - This if statement checks if the current character is not an asterisk (\*). Remember, every word is surrounded by two asterisks.
 - If true, increment the `characterSpace`, add the letter to the `word` string, and increment `i`. This sets us up for the next time the while loop runs, where we want to check the next character.
-- If false, break out of the while loop because you've went through entire word surrounded by asterisks.
+- If false, break out of the while loop because you've gone through entire word surrounded by asterisks.
 
 ### Finishing Up
+
 We have some final statements for this section.
 
 <img src="https://media1.giphy.com/media/VEzlrMWk3F7uuFuRSq/giphy.gif" width="600" alt="Kermit Gif">
 
 This code is right after the while loop we just wrote.
+
 ```c#
 if (prompt[i] == '*')
 {
@@ -165,6 +177,7 @@ if (prompt[i] == '*')
   Console.WriteLine();
 }
 ```
+
 - First, let's print the `word` string to ask what type of word is wanted using [string interpolation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated). This allows us to put variables surrounded by brackets directly into our output. 
 - Then, let's get the user's response. This is done through reading the current line, which is where the user entered their text. Set this text to the `response` string. Let's create a line afterwards for spacing purposes.
 
@@ -184,9 +197,11 @@ if (prompt[i] == '*')
 Now, let's remove the `word` variable from our prompt and insert the user's response. So, if there is supposed to be an adjective in a current spot, then let's actually put the adjective there. Set the current index to right after the response we just inserted.
 
 ## Printing the Prompt
+
 Now, we gotta print the prompt to the screen. How else would the user see their final masterpiece?
 
 This code goes under the for loop we just wrote.
+
 ```c#
 while(true)
 {
@@ -197,9 +212,11 @@ while(true)
   Console.WriteLine("\n---------------------------------------------------\n");
 }
 ```
+
 We are just printing lines to seperate the prompt for organization and then printing it.
 
 ## Play Again
+
 Another one. Another one. Another one. Maybe another one. Alright final one. Maybe.
 
 <img src="https://media3.giphy.com/media/xThuWcZzGnonnG3ayQ/source.gif" width="600" alt="Another One Gif">
@@ -207,6 +224,7 @@ Another one. Another one. Another one. Maybe another one. Alright final one. May
 ### Asking the User to Play Again
 
 The code we are writing is still within the large while loop.
+
 ```c#
 while(true)
 {
@@ -217,6 +235,7 @@ while(true)
   }
 }
 ```
+
 Create a `playAgain` bool and set it to false. Also create another while loop. This will handle asking the player to play again.
 
 ```c#
@@ -227,6 +246,7 @@ while(true)
   string again = Console.ReadLine();
 }
 ```
+
 We are asking the user to play again, taking their input, and assigning the input to the `again` string.
 
 ```c#
@@ -254,14 +274,17 @@ while(true)
   }
 }
 ```
+
 - If the `again` string is equal to `y`, set the `playAgain` to true and break out of the while loop. This means the user wants to play again.
 - If it is equal to `n`, set the `playAgain` to false and break out of the while loop. This means the user does not want to play again
 - Else tell the user to try again, and the while loop loops again. This is because we are going to ask the user to play again another time because their input was invalid.
 
 ## Actually Playing Again
+
 That boolean must mean something! Oh wait, we're gonna deal with it right now.
 
 Continue to focus on the while loop we were just writing.
+
 ```c#
 while(true)
 {
@@ -276,6 +299,7 @@ while(true)
   }
 }
 ```
+
 - If the `playAgain` bool is false, we break out of the while loop surrounding the entire program. 
 - Else we go back to the start of the while loop around the program. This will start another game.
 
@@ -375,9 +399,11 @@ class Program
   }
 }
 ```
+
 </details>
 
 ## Hacking
+
 Here are some ways to expand this code!
 
 - [Randomly Picked Prompts](https://repl.it/@CosmicSnowman/Mad-Libs-Expanded-1#main.cs)
