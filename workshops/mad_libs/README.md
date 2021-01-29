@@ -15,7 +15,7 @@ Mad Libs is a fun game to play with friends (KEEP THE RESPONSES PG!), so let's c
 
 ## Repl.it Setup
 
-We're going to use [Repl.it](https://repl.it/~), a free, online coding editor, to create the project. Get started by visiting [repl.it/languages/python3](https://repl.it/languages/python3).
+We're going to use [Repl.it](https://repl.it/~), a free, online coding editor, to create the project. Get started by visiting [https://repl.it/languages/csharp](https://repl.it/languages/csharp).
 
 <img src="https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
 
