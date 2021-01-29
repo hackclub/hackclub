@@ -2,10 +2,8 @@
 name: 'Sudoku'
 description: 'Recreate Sudoku!'
 author: '@JakeGerber'
-image : 'https://cloud-2m2ihwj5o.vercel.app/0screenshot__1443_.png'
+img: 'https://cloud-2m2ihwj5o.vercel.app/0screenshot__1443_.png'
 ---
-
-# Create Sudoku!
 
 <img src="https://cloud-2m2ihwj5o.vercel.app/0screenshot__1443_.png" width="380" alt="Sudoku Example">
 
@@ -13,15 +11,13 @@ Sudoku is always a fun time. Instead of a pen and paper, let's make it ditgitall
 
 <img src="https://media2.giphy.com/media/xT5LMJiTmufKU0zQOI/source.gif" width="400" alt="Simpsons Sudoku Gif">
 
-# Repl.it Setup
+## Repl.it Setup
 
-We're going to use [Repl.it](https://repl.it/~) to create the project. It is an online IDE! No downloads necessary.
-
-Create a new repl and use C# as the language.
+We're going to use [Repl.it](https://repl.it/~), a free, online coding editor, to create the project. Get started by visiting [https://repl.it/languages/csharp](https://repl.it/languages/csharp).
 
 <img src="https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
 
-# Initializing the Board
+## Initializing the Board
 <img src="https://media3.giphy.com/media/XyaQAnihoZBU3GmFPl/200.gif" width="400" alt="Gravity Falls Start Gif">
 We've got to initialize some things.
 
@@ -37,6 +33,7 @@ class MainClass {
 Your program should initially look like this!
 
 
+Within the main function add this code.
 ```csharp
 static void Main(string[] args)
 {
@@ -69,10 +66,11 @@ static void Main(string[] args)
 ```
 Here is an empty board I got off the internet as well as a solution (you can use any sudoku board but make sure it's solvable). Set the board to a [2D array](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/multidimensional-arrays).
 
-# Places that Can Be Modified
+## Places that Can Be Modified
 <img src="https://i.pinimg.com/originals/67/6d/71/676d71d3de7eede22edfba82eb98d888.gif" width="400" alt="Spongebob Looking Gif">
 But what places aren't filled in at the start? Well now we are going to deal with that.
 
+This code goes right below our board we just wrote.
 ```csharp
 static void Main(string[] args)
 {
@@ -93,12 +91,14 @@ static void Main(string[] args)
     }
 }
 ```
-Create a new 2D array that keeps track of the places that can be modified. If the board has a 0, that means the spot can be modified.
+- Create a new 2D array that keeps track of the places that can be modified. Any place in our board with a 0 would be places that the user can modify.
+- Go through the board and find these places. The `canBeModified` 2D array has all it's values as false by default, so we only need to set the places with 0's in the `board` to true.
 
-# User Input
+## User Input
 <img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/32/1470845049-computer-typing-gif.gif" width="400" alt="Typing Gif">
 The user has to put in their response!
 
+This while loop goes right under what we just wrote.
 ```csharp
 static void Main(string[] args)
 {
@@ -110,7 +110,9 @@ static void Main(string[] args)
 ```
 Everything in the rest of this section is going to be in this while loop.
 
-## Setting Up Variables
+### Setting Up Variables
+
+This code goes within the while loop.
 ```csharp
 while (true)
 {
@@ -124,7 +126,9 @@ while (true)
 ```
 We are calling the "drawBoard" function we will create later and some variables, along with setting the foreground color.
 
-## Handling User Input for the Row and Column
+### Handling User Input for the Row and Column
+
+This second while loop and try-catch statement go inside the while loop and right under what we just wrote.
 ```csharp
 while (true)
 {
@@ -141,9 +145,12 @@ while (true)
     }
 }
 ```
-Add this [try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch) statement to catch any errors. Without it, our program could just break.
+- This second while loop will be used to get the user input. It is a while loop because we want to ask the user for input again if they put something invalid.
+- Add this [try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch) statement to catch any errors. Without it, our program could just break.
 
-## More User Input
+### More User Input
+
+We are focusing on the try portion of our try-catch block.
 ```csharp
 try
 {
@@ -153,8 +160,9 @@ try
     userCol = int.Parse(userInput[2].ToString());
 }
 ```
-This grabs the user input for rows and columns. The user inputs the row, a comma, and a column.
+We are asking the user for the row and column and getting their input. Remember the `userRow` and `userCol` integers we previously created? Those are used now. Certain characters of the user's input is being parsed into an integer. The user inputs the row, a comma, and a column.
 
+We are still focusing on the try section.
 ```csharp
 try
 {
@@ -168,9 +176,11 @@ try
     }
 }
 ```
-This makes sure the user row and column is between and 1 and 9, and then we are making sure the place can be modified.
+We are making sure the user row and column is between and 1 and 9, and then we are making sure the place can be modified. Even though array indexes start at 0, the user still puts in a 1-9. Do not worry though, we will handle this later.
 
-## Entering the Value
+### Entering the Value
+
+We are making a new while loop in our main while loop. This is NOT the same loop with the try-catch statement we just created.
 ```csharp
 while (true)
 {
@@ -193,9 +203,11 @@ while (true)
     }
 }
 ```
-Create another while loop and try-catch statement to catch for errors.
+Create another while loop and try-catch statement to catch for errors. This will handle the user's input value.
 
-## More of Entering the Value
+### More of Entering the Value
+
+Focus on the try portion of the new try-catch block in the while loop.
 ```csharp
 try
 {
@@ -204,8 +216,9 @@ try
     int input = int.Parse(userInput);
 }
 ```
-We are getting the user input and parsing it to an integer.
+We are asking the user for their value, getting the input, and parsing it to an integer.
 
+Still focus on the try section.
 ```csharp
 try
 {
@@ -220,11 +233,12 @@ try
     }
 }
 ```
-We are making sure the input is between 0 and 9. This means it is within the board.
+Make sure the input is between 0 and 9. Even though sudoku only allows for 1-9 values, we are adding the 0 value as an erase function. The user will only see a period so signify an empty space when the code is finished.
 
-## Finishing Statements
+### Finishing Statements
 <img src="https://media1.giphy.com/media/RKZ25EH1junlFIUjza/200.gif" width="400" alt="Finally Gif">
 
+Go outside of the while loop we just wrote and look at the main while loop. Write this code at the bottom of it.
 ```csharp
 while (true)
 {
@@ -237,12 +251,13 @@ while (true)
     }
 }
 ```
-The final statments will call the "checkSolution" function that we will soon create to check the board. If the board is fully correct, the user wins and we break out of the while loop.
+The final statments will call the `checkSolution` function that we will soon create to check the board. If the board is fully correct, the user wins and we break out of the while loop.
 
-# Drawing the Board
+## Drawing the Board
 <img src="https://media2.giphy.com/media/VhtSLWxOQOGdFfGTTa/source.gif" width="400" alt="Drawing Gif">
 Imagine playing Sudoku blind. That would be bad. How about we don't do that.
 
+Create a new function within the `MainClass`.
 ```csharp
 using System;
 
@@ -257,10 +272,12 @@ class MainClass {
   }
 }
 ```
-We are going to focus on the "drawBoard" function for the rest of this section. This is where, you guessed it, we will be drawing the board.
+We are going to focus on the `drawBoard` function for the rest of this section. This is where, you guessed it, we will be drawing the board.
 
 
-## Setting Up 
+### Setting Up 
+
+Write this code within the `drawBoard` function.
 ```csharp
 public static void drawBoard(int[][] board, bool[,] canBeModified)
 {
@@ -276,10 +293,11 @@ public static void drawBoard(int[][] board, bool[,] canBeModified)
   }
 }
 ```
-We are going to be reading each value in each line, so it is a for loop within a for loop. This looks much more complicated than it is! The horizontal and vertical line integers will be used for spacing. Don't worry, it will make sense soon!
+We are going to be reading each value in each line, so it is a for-loop within a for-loop. This looks much more complicated than it is! The horizontal and vertical line integers will be used for spacing. Don't worry, it will make sense soon!
 
-## Checking Each Value
+### Checking Each Value
 
+Focus on the second for-loop we created.
 ```csharp
 for (int y = 0; y < board[x].Length; y++)
 {
@@ -311,6 +329,8 @@ for (int y = 0; y < board[x].Length; y++)
     }
 }
 ```
+Let's break this down!
+
 
 ```csharp
 for (int y = 0; y < board[x].Length; y++)
@@ -327,7 +347,8 @@ for (int y = 0; y < board[x].Length; y++)
     }
 }
 ```
-Increase the vertical line integer. Then, we have an if-else statement if the spot can be modified. If it can, we will write code for it in a moment, else, change the color to green and draw the board spot.
+- Increase the vertical line integer. If you look at the demo code, you notice dashed lines. This determines when the next vertical dashed line will occur.
+- Create an if-else statement to determine if the spot can be modified. If it can, we will write code for it in a moment. Else, change the color to green and draw the board spot.
 
 
 ```csharp
@@ -344,7 +365,9 @@ if (canBeModified[x, y])
     }
 }
 ```
-If the board spot can be modified, set the color to red. If the board spot is 0, it is an empty space so draw a dot. Else, draw the actual board value.
+- If the board spot can be modified, set the color to red. 
+- If the board spot is 0, it is an empty space so draw a dot. 
+- Else, draw the actual board value.
 
 ```csharp
 for (int y = 0; y < board[x].Length; y++)
@@ -361,9 +384,10 @@ for (int y = 0; y < board[x].Length; y++)
 ```
 This is just formatting. We want to draw a vertical line after every three values.
 
-## Final Statements
+### Final Statements
 You're just about done with this function!
 
+This is still within the `drawboard` function and after the first for-loop.
 ```csharp
 public static void drawBoard(int[][] board, bool[,] canBeModified)
 {
@@ -383,19 +407,21 @@ public static void drawBoard(int[][] board, bool[,] canBeModified)
   }
 }
 ```
-Every three lines there is going to be only the dashes and vertical dashes. This makes it look nicer.
+Every three lines there is going to be only the dashes and vertical dashes. This makes it look nicer. Once again, look at the demo code for an example of this!
 
-# Check Solution
+## Check Solution
 <img src="https://media1.tenor.com/images/c5eccc6319cfca596336e51a2b076e82/tenor.gif?itemid=13900813" width="400" alt="Looking Gif">
 Let's create a way to check the board to see if everything is correct. Did the user win?
 
+Add this function right below the `drawBoard` function and still within the main class.
 ```csharp
 public static bool checkSolution(int[][] board)
 {
 }
 ```
-This function will be checking the board solution to see if our board is correct. It takes in a board 2D array.
+This function will be checking the board solution to see if our board is correct. It takes in a board 2D array because that's what it checking!
 
+This code goes within the `checkSolution` function.
 ```csharp
 public static bool checkSolution(int[][] board)
 {
@@ -412,22 +438,14 @@ public static bool checkSolution(int[][] board)
     }
 }
 ```
-Make a solved boolean and set it to true. We are then looping through every value in the 2D array, and we are checking the checkRows, checkCols, and checkSquare functions we will create in a moment. If any of these are false for any value, then the board is not solved.
+- Make a solved boolean and set it to true. If this is still true by the end of the function, then the user's board is fully correct.
+- We are looping through every value in the 2D array and checking the checkRows, checkCols, and checkSquare functions we will create in a moment. If any of these are false for any value, then the board is not solved.
 
+This is still within the same function and right below the code we just wrote.
 ```csharp
 public static bool checkSolution(int[][] board)
 {
-    bool solved = true;
-    for (int x = 0; x < board.Length; x++)
-    {
-        for (int y = 0; y < board[x].Length; y++)
-        {
-            if (!checkCol(board, y, board[x][y]) || !checkRows(board, x, board[x][y]) || !checkSquare(board, x, y, board[x][y]))
-            {
-                solved = false;
-            }
-        }
-    }
+    //What we just wrote would be here.
 
     if (solved == true)
     {
@@ -438,7 +456,9 @@ public static bool checkSolution(int[][] board)
 ```
 If the solved boolean is true, then return true. Otherwise, return false.
 
-# Check Rows
+## Check Rows
+
+Add this function right below the `checkSolution` function and still within our main class.
 ```csharp
 private static bool checkRows(int[][] arr, int col, int guess)
 {
@@ -453,7 +473,7 @@ private static bool checkRows(int[][] arr, int col, int guess)
   }
 }
 ```
-We are checking every value in the row and incrementing timesAppeared for each time the guess is seen.
+We are checking every value in the row and incrementing timesAppeared for each time the guess is seen. In sudoku, a specific value should only be seen once in a row.
 
 ```csharp
 private static bool checkRows(int[][] arr, int col, int guess)
@@ -476,9 +496,12 @@ private static bool checkRows(int[][] arr, int col, int guess)
   return true;
 }
 ```
-The guess is not seen once or the guess is 0, then return false. Else, return true.
+- If the guess is not seen once or the guess is 0, then return false. This means the board is not solved. 
+- Else, return true. This means that this specific value is fine for the row portion of the solution.
 
-# Check Columns
+## Check Columns
+
+This function goes right below the `checkRows` function and still within our main class.
 ```csharp
 private static bool checkCols(int[][] arrtest, int row, int guess)
 {
@@ -502,7 +525,9 @@ private static bool checkCols(int[][] arrtest, int row, int guess)
 ```
 We are checking every value in the column instead of the row, but besides that it is the same function.
 
-# Check Square
+## Check Square
+
+Create this function right below our other ones and still within the main class.
 ```csharp
 private static bool checkSquare(int[][] arrtest, int row, int col, int guess)
 {
@@ -511,8 +536,9 @@ private static bool checkSquare(int[][] arrtest, int row, int col, int guess)
   col = col - col % 3;
 }
 ```
-The sudoku board is made up of nine 3x3 boxes. We are going to the row and column's respective 3x3 box. Also, we are creating a timesAppeared integer.
+The sudoku board is made up of nine 3x3 boxes. We need to the row and column's respective 3x3 box to make sure the value only appears once. We are creating a `timesAppeared` integer to track this.
 
+Continue to focus on the `checkSquare` function.
 ```csharp
 private static bool checkSquare(int[][] arrtest, int row, int col, int guess)
 {
@@ -539,12 +565,21 @@ private static bool checkSquare(int[][] arrtest, int row, int col, int guess)
   return true;
 }
 ```
-We are checking the 3x3 square to see how many times the guess appears. If it does not have one appearence or the guess is 0, then we return false. Else, return true.
+- We are checking the 3x3 square to see how many times the guess appears. 
+- If it does not have one appearence or the guess is 0, then we return false. The board is not solved.
+- Else, return true. The particular value is fine for this function.
 
-# Final Code
+## Final Code
 <img src="https://media.tenor.com/images/565944c7d4cee0fbdaa50bc73bdbcf9a/tenor.gif" width="400" alt="Snoopy Gif">
 
 You're done! Yay! Here is all the code we wrote.
+
+Happy Hacking!
+
+<details>
+  
+<summary> Final source code: </summary>
+
 ```csharp
 using System;
 
@@ -785,8 +820,11 @@ class MainClass {
 }
 ```
 
-# More You Can Create
-- [Original Program](https://repl.it/@CosmicSnowman/Sudoku-Workshop#main.cs)
+</details>
+
+## Hacking
+Here are some examples of this program being expanded!
+
 - [Input Tracker](https://repl.it/@CosmicSnowman/Sudoku-Workshop-Expanded-1#main.cs)
 - [Random Colors](https://repl.it/@CosmicSnowman/Sudoku-Workshop-Expanded-2#main.cs)
 - [Limit the Inputs for Winning](https://repl.it/@CosmicSnowman/Sudoku-Workshop-Expanded-3#main.cs)
