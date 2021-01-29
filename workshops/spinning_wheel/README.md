@@ -28,7 +28,7 @@ You can get started with it by going to [repl.it/languages/html](https://repl.it
 ^ Right now your page will look like this.
 
 # Part 3: Inspecting The Default Files 
-Here on the right side in the files section, you can see 3 files that are:
+Here on the left side in the files section, you can see 3 files that are:
 
 1. index.html
 2. script.js
@@ -59,7 +59,7 @@ Make a new section with the assistance of `<div>` tag inside your body labels (`
 
 Add the attributes `id="mainbox"` and `class="mainbox"` inside that segment. Adding `id` and `class` attributes gives this particular `div` its own "name", which will allow us to reference it directly using CSS and JavaScript (as we'll see later in this workshop!).
 
-```javascript
+```html
 <div id="mainbox" class="mainbox"></div>
 ```
 
@@ -90,27 +90,27 @@ Nested inside the `box` div, create another div with the class `box1`. Then, ins
 
 ^^^ Right now, your division should look something like this.
 
-The options on your spinning wheel will be inside these `span` tags. So, between each `span` tag, add the options you want on your spinning wheel. Go crazy!
+The options on your spinning wheel will be inside these `span` tags. So, between each `span` tag, add the options you want on your spinning wheel and wrap those options in `<b>` tags. Go crazy!
 
 ```html
-<span class="span1">Iron Man</span>
-<span class="span2">7500</span>
-<span class="span3">Bat Man</span>
-<span class="span4">Joker</span>
+<span class="span1"><b>Iron Man</b></span>
+<span class="span2"><b>7500</b></span>
+<span class="span3"><b>Bat Man</b></span>
+<span class="span4"><b>Joker</b></span>
 ```
 
 Once you've done that, put `<div class="box2">` after your `box1` div, then copy and paste all the above 4 `span` and change their options like this.👇
 
 ```html
 <div class="box2">
-  <span class="span1">Shoplifters</span>
-  <span class="span2">Inception</span>
-  <span class="span3">Deadpool</span>
-  <span class="span4">Terminator</span>
+  <span class="span1"><b>Shoplifters</b></span>
+  <span class="span2"><b>Inception</b></span>
+  <span class="span3"><b>Deadpool</b></span>
+  <span class="span4"><b>Terminator</b></span>
 </div>
 ``` 
 
-Now that we've created all of our options, we need to add a buttton says `spin`. For that use this code before the ending of your last `div` tag.
+Now that we've created all of our options, we need to add a button that says `spin`. For that use this code before the ending of your last `div` tag.
 
 ```html
 <button class="spin" onclick="rotateFunction()">SPIN</button>
@@ -120,6 +120,7 @@ Here we have used the `onclick` event that will be explained in the JavaScript p
 Here's what your final HTML file should look like:
 
 ```html
+<!DOCTYPE html>
 <html>
   <head>
     <title>Movie Selector</title>
@@ -367,7 +368,7 @@ Let's fix that. Add this code below:
 }
 ```
 
-Here we have pointed our CSS selector at spin as we have given the `class` as `spin` in the HTML file for the button. We have marked its position in the center in the first 4 lines than in the next remaining lines of that block, we have formed the circle and edited its properties like `height`, `width`, `border`, `background color`, `shadows`, `font weight`, `font size`, and lastly in the `cursor` property we have given the value as `pointer` by which when we will hover our cursor over that button then our cursor will turn into the pointer type.
+Here we have pointed our CSS selector at spin as we have given the `class` as `spin` in the HTML file for the button. We have marked its position in the center in the first 4 lines then in the next remaining lines of that block, we have formed the circle and edited its properties like `height`, `width`, `border`, `background color`, `shadows`, `font weight`, `font size`, and lastly in the `cursor` property we have given the value as `pointer` by which when we will hover our cursor over that button then our cursor will turn into the pointer type.
  
 In the second block of our code that is `.spin:active` , we have decreased the size of the circle and font while we press our cursor over that button to give it a realistic look.
  
@@ -405,8 +406,8 @@ Now's the time to write the code for `rotateFunction()`!
 Here above we have written the blank code for the `onclick` event as now we are going to nest some other code that will function when the user will click on that `spin` button. 
 
 ##### Simple steps with their meaning:
-* Take variable `x` and give the minimum value of 1024 (`var min = 1024;`)
-* Take another variable  `y` and give maximum value of 9999 (`var max = 9999;`)
+* Take variable `min` and give the minimum value of 1024 (`var min = 1024;`)
+* Take another variable `max` and give maximum value of 9999 (`var max = 9999;`)
 * Take next variable `deg` and write this code: (`var deg = Math.floor(Math.random() * (y - x)) + x;`). This line will generate a value between minimum and maximum.
 * Now find an element by element id "box" and then change its `transform` style at the degree which we got in  variable `deg`. 
 
@@ -438,14 +439,22 @@ But if you wanna learn some more amazing stuff then proceed further.
 
 Now we will make the `arrow` to move in its position after the wheel is stopped.
 
-For this, first of all we will get the element having Id `mainbox` and then store it in a variable `element`. Then we will remove the `animate` class from that element. For that we will type: `element.classList.remove('animate');`. The `classList` property returns the class name(s) of an element, as a `DOMTokenList` object. This property is useful to add, remove, and toggle CSS classes on an element. In the next lines, we have removed the animation while the wheel is rotating.
+For this, inside our rotateFunction we will get the element having Id `mainbox` and then store it in a variable `element`. Then we will remove the `animate` class from that element. For that we will type: `element.classList.remove('animate');`. The `classList` property returns the class name(s) of an element, as a `DOMTokenList` object. This property is useful to add, remove, and toggle CSS classes on an element. In the next lines, we have removed the animation while the wheel is rotating.
+
+```javascript
+  // Code that we wrote before...
+  var element = document.getElementById('mainbox');
+  element.classList.remove('animate');
+```
 
 Now we will add the animation to the arrow after the 5 seconds from the time when the person has clicked on the `spin` button. For this use this code:
 
 ```javascript
-setTimeout(function(){
-  element.classList.add('animate');
-}, 5000);
+  // Code that we wrote before...
+  //...
+  setTimeout(function(){
+    element.classList.add('animate');
+  }, 5000);
 ```
 
 ### Explanation:
