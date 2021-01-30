@@ -267,7 +267,7 @@ Take a look at the docs [here](https://icanhazdadjoke.com/api) and try to add mo
 
 ## What You've Learnt
 
-You've made a fully functional Node.js cli application, you've learnt how to easily parse command-line arguments using `yargs` and to make cool help messages, and you learnt how to use`axion` to work with APIs, and you upped your `Node.js` skills!
+You've made a fully functional Node.js cli application, you've learnt how to easily parse command-line arguments using `yargs` and to make cool help messages, and you learnt how to use`axios` to work with APIs, and you upped your `Node.js` skills!
 
 Next, you can learn how to [publish](https://workshops.hackclub.com/firstnpmpackage/) your first npm package!
 
