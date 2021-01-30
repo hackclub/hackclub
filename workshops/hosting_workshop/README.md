@@ -7,7 +7,7 @@ img: 'https://cloud-kv2ikdnkl.vercel.app/0image.png'
 
 # Deploying, Hosting, Continuous Deployment and Custom Domains
 
-**Deploying**: The process of packaging and installing the code to production emvironment (the final environment/work that is ready to be publicly available) is called “deployment”, and in the context of a web application that would be “web deployment”.
+**Deploying**: The process of packaging and installing the code to production environment (the final environment/work that is ready to be publicly available) is called “deployment”, and in the context of a web application that would be “web deployment”.
 
 **Hosting**: Hosting is essentially the process of uploading your code on a remote server (like GitHub, GitLab etc.)
 
@@ -29,11 +29,9 @@ That's all we need for this workshop!
 
 ## Part 2: Create a React Website
 
-In this workshop we'll be using a boilerplate [react](https://reactjs.org) app.
+In this workshop we'll be using a boilerplate [react](https://reactjs.org) app, but if you already have a website ready, you can directly skip to Part 3!
 
-> If you already have a website ready, you can directly skip to Part 3
-
-Begin by visiting [repl.it](https://repl.it) and sign up (you can also directly sign up using your GitHub account), then click on "New repl" and select "HTML, CSS, JS" from the dropdown and giving any name to it, and then click on "Create repl".
+Now, begin by visiting [repl.it](https://repl.it) and sign up (you can also directly sign up using your GitHub account), then click on "New repl" and select "HTML, CSS, JS" from the dropdown giving a name to your repl, and then click on "Create repl".
 
 ![Selecting html,css,js from language dropdown and clicking on create repl](https://cloud-cmhr0swki.vercel.app/0image.png)
 
@@ -53,11 +51,9 @@ npx create-react-app my-awesome-app
 cd my-awesome-app
 ```
 
-It'll take 2-3 minutes for it to complete, this will essentially pull up boilerplate react code.
+It'll take 2-3 minutes for it to complete, this will essentially pull up boilerplate react code and after the completion, you'll see a folder in your repl.it instance inside which is our react app!
 
-After the completion, you'll see a folder/directory in your repl.it instance which essentially is our react app!
-
-Now let's initialize a git repo in our react app and make a commit, in your shell, type:
+Now let's initialize a git repo in our app and make a commit, head over to your repl.it's shell and type:
 
 ```sh
 git init
@@ -65,7 +61,7 @@ git add .
 git commit -m "Initial Commit"
 ```
 
-This will throw an error, asking your name and e-mail id, to remove this error and make a commit, type:
+This will throw an error, asking for your name and e-mail id, to remove this error and make a commit, type:
 
 ```sh
 git config --global user.email "<your email>"
@@ -91,13 +87,13 @@ Now, let's create a new [GitHub repo](https://docs.github.com/en/free-pro-team@l
 
  >The code we copied tells our repl.it's git where our "remote" is or in other words, where and on which branch should the git repository be "pushed".
 
-* Next, head over to your repl.it instance and in the shell, `cd`(change directory) into `my-awesome-app` and paste the code that we copied earlier from GitHub:
+* Next, head over to your repl.it instance's shell and type `cd my-awesome-app` to change directory and paste in the code that we copied earlier from GitHub
 ![pasting the code in repl.it's shell](https://cloud-m6l8fjvw5.vercel.app/0image.png)
 
 	After executing the code, git will ask for your GitHub's username and password, so type that and press enter.
 
 	If you see the following screen, you've successfully uploaded your project on GitHub!
-	![sucessfully uploaded on github](https://cloud-6q9f57u0d.vercel.app/0image.png)
+	![successfully uploaded on github](https://cloud-6q9f57u0d.vercel.app/0image.png)
 	
 Refresh your repository's page on GitHub and make sure the changes are reflected there as well!
 
@@ -105,7 +101,7 @@ Refresh your repository's page on GitHub and make sure the changes are reflected
 
 *Netlify* is a "web hosting service", where we just point where our website is hosted and it can instantaneously deploy our website on the web (with it's own custom domain which we can easily share with anyone for getting suggestions from your teammates!)
 
-Netlify and other similar services (like Vercel, Firebase, AWS Lambda and Azure Serverless) are also known as "Serverless WebHost", which essentially abstracts away the complications of working with backend architecture. In simple words it's like pawning off the complicated work to a third party so that the you the user can focus on *shipping* more.
+Netlify and other similar services (like [Vercel](https://vercel.com/), [Firebase](https://firebase.google.com/), [AWS Lambda](https://aws.amazon.com/getting-started/) and [Azure Serverless](https://azure.microsoft.com/en-in/solutions/serverless/)) are also known as "Serverless Webhosts", which essentially abstracts away the complications of working with backend architecture. In simple words it's like pawning off the complicated work to a third party so that the you the user can focus on *shipping* more.
 
 Now, log into [Netlify](www.netlify.com) (create an account if you haven’t already).
 
@@ -117,12 +113,12 @@ Now, log into [Netlify](www.netlify.com) (create an account if you haven’t alr
 5. Next, click on "Domain Settings" to add a custom domain to your deployment ![click domain settings](https://cloud-pdrxlnmln.vercel.app/0image.png)
 6. In the Domain Settings, you can see a strange domain provided by Netlify, you can click on that to see how your project looks like!
 
-In the next part we'll add a custom domain to our app!
+In the next part we'll add a custom domain to our application!
 
 ## Part 5: Custom Domain
 
 Well, we did see a domain for our website on Netlify, but well it sucks, seriously, if I asked you to close your eyes and repeat back the domain address, you probably couldn’t. But don't worry Custom Domains are our saviours here!
-First, get a free one year custom domain from [Namecheap Education](https://nc.me) using your GitHub account.
+First, get a free one year custom domain from [Namecheap Education](https://nc.me) using your GitHub account (psst. you don't even need a credit card for this!).
 
 Next, In your Netlify's Domain Setting screen:
 
@@ -149,22 +145,24 @@ Now head over to your browser's address bar and type in your new domain and flex
  1. **[Subdomains](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/)**: (they're like `word.example.com`). Most websites are set up so that if you type `example.com` into a browser, you'll be redirected to `www.example.com`. It's actually a technical process to connect your root domain to the `www` domain. Subdomains will improve your search ranking and website traffic significantly. Search engines recognize subdomains as completely separate web addresses from your root domain.
 
  2. **[Custom Email Address Forwading](https://www.namecheap.com/support/knowledgebase/article.aspx/308/2214/how-to-set-up-free-email-forwarding/)**: Having your own domain on email address is really important if you want to create a professional brand image and credibility. There are email services that let you do this for a monthly fee (G-Suite for example) But for a small website or business that doesn’t have much email traffic, paying $6-10 every month just to have a custom domain email seems not worth it.
-   So a lot of domain prodiders like namecheap provide "Free Email Forwarding", basically it’s the same as using your custom domain email address as an alias for your personal email account. For example, when someone send an email to `johndoe@yourdomain.com` it will be forwarded to `johndoe@gmail.com`, pretty cool, right?
+   So a lot of domain providers like namecheap provide "Free Email Forwarding", basically it’s the same as using your custom domain email address as an alias for your personal email account. For example, when someone send an email to `johndoe@yourdomain.com` it will be forwarded to `johndoe@gmail.com`, pretty cool, right?
+
+### The End :)
+
+In this workshop we skimmed through a lot of topics, so take your own time, and understand stuff better. There are a few points I'd like to mention though:
+
+In this workshop we put our website's code in a repository on GitHub which was public, that means anyone can essentially copy our code, so there are two ways to go from here:
+
+One path is to make your website *Open Source* (which is if you want the source code to be publicly accessible). And if you choose this path, you can use one of the *[Open Source Licenses](https://opensource.org/licenses)*. To help with choosing a license, GitHub along with the community have made an amazing website that you can check out [here](https://choosealicense.com).
+
+The other way to go is to make your website *Closed Source* (that is don't want the source code to be open to public), you can simply make your GitHub repository private.
 
 ### Important Links
 
 * [www vs non-www URL](https://seranking.com/blog/www-vs-non-www/)
 * [Netlify Docs for custom domains](https://docs.netlify.com/domains-https/custom-domains/)
 * [What's SEO](https://developer.mozilla.org/en-US/docs/Glossary/SEO)
-
-### THE END :)
-
-In this workshop we skimmed through a lot of topics, so take your own time, and understand stuff better. There are a few points I'd like to mention though:
-
-In the workshop we put our website's code in a repository on GitHub that was public, so essentially anyone can copy the website, and that can be harmful, so there are two solutions for this:
-
-One is that if you want to make your website Open Source (that is want the source code to be open to public), you can choose amongst one of the Open Source Licenses. To help with this, GitHub and the community made this awesome website that you can check out [here](https://choosealicense.com).
-
-Other is that if you want to make your website Closed Source (that is don't want the source code to be open to public), you can simply make your GitHub repository private.
+* [Should You Open Source Your Product?](https://lkanies.medium.com/should-you-open-source-your-product-thats-the-wrong-question-a8cac737c0ca)
 
 **Happy Hacking!**
+![pepe hacking](https://cloud-5lqfbh7am.vercel.app/0hacker-pepe.gif)
