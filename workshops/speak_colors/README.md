@@ -11,6 +11,8 @@ _Note: this workshop requires Google Chrome or another browser [supporting the W
 We’ll be using [p5.js](https://p5js.org) & the p5.speech library to make something fun with web speech recognition! Say a color name out loud, & the screen will fill with that color.
 
 [**Live demo**](https://speak-colors.glitch.me)
+<br>
+[**Final code**](https://glitch.com/edit/#!/speak-colors)
 
 ## Setup
 
