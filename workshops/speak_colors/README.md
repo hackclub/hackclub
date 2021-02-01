@@ -6,7 +6,7 @@ author: '@lachlanjc'
 
 # Speak Colors
 
-_Note: this workshop requires Google Chrome or another browser [supporting the Web Speech API](https://caniuse.com/#feat=speech-recognition)._
+_Note: this workshop requires Google Chrome or another browser [supporting the Web Speech API](https://caniuse.com/mdn-api_speechrecognition)._
 
 We’ll be using [p5.js](https://p5js.org) & the p5.speech library to make something fun with web speech recognition! Say a color name out loud, & the screen will fill with that color.
 
