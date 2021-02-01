@@ -33,7 +33,7 @@ First, there are 2 main directories and a `package.json` file. We'll ignore the 
 
 Usually, the `public/` directory contains an HTML file and all your assets. We won't be touching the `public/` directory during the whole workshop, not even the HTML file!
 
-Next is the `src/` directory which contains all your JavaScript files and your CSS files. We have an `index.js` file, which basically renders our React code. The `style.css` file is already written for you.
+Next is the `src/` directory which contains all your JavaScript files and your CSS files. We have an `index.js` file, which basically renders our React code. The `styles.css` file is already written for you.
 
 Next is the `App.js` file. It looks something like this:
 
@@ -79,7 +79,7 @@ Explanation: We create a function named `isNum` which takes in a `val` as an arg
 Next we'll create a function to check whether a value is an equal sign or not.
 
 ```jsx
-const Button = ({ children, onClick, isInput }) => {
+const Button = () => {
   // ...
 
   const isEqual = (val) => {
@@ -144,7 +144,7 @@ Notice that in the second `div`, we have again used `ternary operators` to deter
 
 Next we give an `onClick` attribute to the `div` which will simply call the `onClick` function which also takes in the `children` as an argument.
 
-**NOTE:** The `onClick` funtion will be passed down by the parent component to this component.
+**NOTE:** The `onClick` function will be passed down by the parent component to this component.
 
 And lastly, we simply render out the `children` of the component.
 
@@ -202,7 +202,7 @@ You've done great so far! And I recommend you to relax and take a 5 minutes brea
 
 ### 3) Creating the `App` component.
 
-Let's render the `Button` component in our `App` component. We'll first import it in the `App` component.
+Let's render the `Button` component in our `App` component. We'll first import it in the `App` component and render a few `Button` components inside our `calc-wrapper` `div`.
 
 ```jsx
 import Button from "./components/Button";
@@ -508,3 +508,4 @@ You probably know the best ways to get in touch with your friends and family, bu
 
 
 PS. I'm `@fayd` on slack.
+
