@@ -1,7 +1,7 @@
 ---
 name: 'Minecraft Mod'  
 description: 'Make your first Minecraft mod using Forge and IntelliJ IDEA'  
-author: '@Kai'  
+author: '@KaiDevrim'  
 ---  
 # Minecraft Modding Workshop by Kai  
 
