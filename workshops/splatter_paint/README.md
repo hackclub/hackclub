@@ -10,6 +10,10 @@ One of the most common myths about coding among people who are first learning to
 
 ![](img/final-demo.png)
 
+[Final code](https://repl.it/@TechBug2012/splatter-paint#index.html)
+<br/>
+[Final demo](https://splatter-paint.techbug2012.repl.co)
+
 ## Getting started
 
 Start by creating a new HTML project on repl.it by going to [repl.it/languages/html](https://repl.it/languages/html).
