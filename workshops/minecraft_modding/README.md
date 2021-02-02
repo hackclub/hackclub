@@ -350,3 +350,13 @@ Now for the final json, go into `/src/main/resources/assets/modname/models/item`
 Remember to replace modname and blockname. Now make a 16x16 png texture, I will be using a simple texture as an example. Place that png under `textures/blocks`. Make sure it has the same name you have been using for the file names. 
 ![Simple green/red texture](https://cloud-lhwjz30iu.vercel.app/myblock.png)
 Now you have finished making your first mod. Go start it and have fun. 
+
+# Extra Demos
+## [First Demo Link](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-1)
+![](https://cloud-kl251xoy7.vercel.app/0image.png)
+
+## [Second Demo Link](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-2)
+![](https://cloud-cf16uvc03.vercel.app/0image.png)
+
+## [Third Demo Link](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-3)
+![](https://cloud-rhvv52dfm.vercel.app/0image.png)
