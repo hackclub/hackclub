@@ -1,191 +1,153 @@
 ---
-name: 'Make a 3D Mountain'
-description: 'Created San Bruno Mountain with the help of Python'
+name: '3D Mountain'
+description: 'Create the San Bruno Mountain with Python'
 author: '@shivesh01'
-image: 'https://cloud-a08hob7s0.vercel.app/0workshop1.gif'
+img: 'https://cloud-a08hob7s0.vercel.app/0workshop1.gif'
 ---
 
-# 3D Mountain
-
-
-Hey, we all love traveling and especially visiting mountains. Let's take a roller coaster ride to visit a Mountain and see where it is on Google Maps.
+Mountains are fun! Here, check out this mountain on Google Maps:
 
 ![Mount san bruno](https://cloud-8at1ve02p.vercel.app/0ezgif.com-gif-maker.gif)    
 
-The reason why I am showing you this because You are going to make a Mountain with Python. You read it correctly will make a Mountain!
+The reason I'm showing you this is because you're going to make a mountain with Python! 🐍🚀
 
 ![amaze g.i.f](https://media.giphy.com/media/5p2wQFyu8GsFO/giphy.gif)
 
-
-[Click here to see a working demo of today's project.](https://repl.it/@ShiveshSingh/Mtbrunoplot)
-
-Now here is a step by step guide for how to prepare the setup for our project.
-
+[Final demo and code](https://repl.it/@ShiveshSingh/Mtbrunoplot)
 
 ## Getting started
 
-Today, you'll be using repl.it to write code. It is an online and instant development environment. So you don’t have to waste time while setting up a development environment.
+We're going to be using [Repl.it](https://repl.it), a free, online code editor, to write our code. To get started, [click here to visit the starter project](https://repl.it/@ShiveshSingh/3DHeatmapWorkshop). Once it loads, click the "Fork" button to start coding.
 
-- [Click here to Sign up](https://repl.it/signup)
-
-![repl website](https://cloud-73h0sldam.vercel.app/0screenshot_2020-12-25_at_23.03.53.png)
-
-- To help get you started, you can fork our repl which contains a mountain.csv file. Click [here](https://repl.it/@ShiveshSingh/3DHeatmapWorkshop) to load up that repl for forking.
-
-![](https://cloud-kben0mdmg.vercel.app/0screenshot_2021-01-08_at_09.43.56.png)
-
-- The setup is complete.
+Once your fork loads, you should notice a blank file called `main.py` and a file called `mountain.csv`, which contains some data. If you see this, you're ready to move on to the next step!
 
 ---
-The libraries you'll be using in our workshop are pandas, numpy, matplotlib, and mpl_toolkits.
 
-I hope you are excited! Let's start the coding part. First, we need to import libraries, and I know, you will think what those are, they are sweet and simple pieces of reusable codes containing modules, and modules containing functions, and we're able to easily import them using the `import` function with the library name into our project and use them.
+We're going to use 3 libraries for this workshop: `pandas`, `numpy`, `matplotlib`, and `mpl_toolkits`.
 
+Start by importing these 3 libraries at the top of the `main.py` file:
 
 ```python
-
 import pandas as pd
-
-```
-
-'pandas' is one of the popular libraries. It allows importing data from various file formats such as comma-separated-values(CSV), JSON, SQL, Microsoft Excel. It also allows various data manipulation operations such as merging, reshaping, selecting, as well as data cleaning, and much more with data-sets.
-
-
-Wondering, what are data-sets? Examples of some kind the data-sets are:
-
-**Image Dataset**
-
-How cute is Pomeranian? 
-
-![Dog Data-set](https://cloud-ht9owe43d.vercel.app/01_ccfehepblmqkqtb4erfesw.jpeg)
-
-
-**CSV Dataset**
-![Apple CSV](https://cloud-ht9owe43d.vercel.app/3screenshot-file.png)
-
-```python
-
 import numpy as np
-
-```
-
-Numpy is a Python library, and it is used to work with arrays. An array is a data-type consisting of a collection of elements, each identified by at least one array index.
-
-![Arrays](https://cloud-okzc7z797.vercel.app/0array.png)
-
-```python
-
 import matplotlib.pyplot as plt
-
-```
-
-The `matplotlib` is used for data visualization like to make a histogram, scatter plot and bar-graph e.t.c. 
-
-![Graphs](https://cloud-cb3n3b4td.vercel.app/0download.png)
-
-```python
-
 from mpl_toolkits.mplot3d import Axes3D
-
 ```
 
-The `mpl_toolkits` are collections of functions that extend the `matplotlib` application. Which will enable us to work with 3D Plane.
+- `pandas` allows importing and working with data from datasets. We're going to use it to manage our CSV file.
+- `numpy` is a library that allows for easy scientific computing. We're going to use it to manage arrays in this workshop.
+- `matplotlib` is a library for data visualization—histograms, scatter plots and bar graphs, etc. We're going to use it to make our mountain.
+- The `mpl_toolkits` are collections of functions that extend the `matplotlib` application. This will enable us to plot in a 3D plane, rather than 2D.
+
+Once you've imported these libraries, add a blank line, then add:
 
 ```python
-
 DataFrame = pd.read_csv('mountain.csv')
-
 ```
-Created a variable `DataFrame` to read the `mountain.csv` with the help of the `pandas` library. Now we need to make rearrangements in `DataFrame` in order to make a plot.
+
+Here, we're creating a variable called `DataFrame`, which will use `pandas` to read the `mountain.csv` file.
+
+Under that line, add:
 
 ```python
-
 DataFrame = DataFrame.unstack()
-
 ```
 
-The `unstack()` function in the data frame unstacks the row to columns. Hence it makes changes to your `Dataframe`. Let's see with an example.
+The `unstack()` function unstacks the row to columns. Here's a diagram that shows how it works:
 
 ![unstack img](https://cloud-5sfh036gn.vercel.app/0reshaping_unstack.png)
 
+Under that, add:
+
 ```python
-
 DataFrame = DataFrame.reset_index()
-
 ```
-When you concatenate, sort, join or do some rearrangements with your `DataFrame`, the index gets shuffled or out of order. To reset the index of a `DataFrame`, You can use `reset_index()` to sort indexes.
+
+When you concatenate, sort, join or do some rearrangements with your `DataFrame`, the index gets shuffled or out of order. To reset the index of a `DataFrame`, we use `reset_index()` to resort the indexes.
 
 ![reset index](https://cloud-8p15tas3t.vercel.app/0reshaping_unstack_.png)
 
-```python
+Uunder that, add:
 
+```python
 DataFrame.columns = ['X', 'Y', 'Z']
-
 ```
-Your `DataFrame` contains three columns without labels, so you need to assign labels to columns, and using `DataFrame.columns` assign the first column to be X, the second column to be Y, and the third column to be Z. I know you might be wondering what these are, these are coordinates of the point of the Mountain like longitude, latitude, and altitude. 
 
-Fun Fact: We got exactly 552 coordinates.
+Your `DataFrame` contains three columns without labels, so we need to assign labels to the columns. `DataFrame.columns` assigns the first column to `X`, the second to `Y`, the third to `Z`. In our 3D graph, this will correspond to latitude, longitude, and altitude.
+
+Fun fact: we have exactly 552 coordinates.
+
+Under that, add:
 
 ```python
-
 DataFrame['X'] = pd.Categorical(DataFrame['X'])
-
 ```
-`Categorical` is a `pandas` data-type and used to save memory space and speed up computation. you can convert using syntax `pd.Categorical()` with parameter `DataFrame['X'] `
+
+`Categorical` is a `pandas` data type which is used to save memory space and speed up computation. you can convert using syntax `pd.Categorical()` with parameter `DataFrame['X']`.
+
+Next, add:
 
 ```python
-
 DataFrame['X'] = DataFrame['X'].cat.codes
-
 ```
-By using `cat.codes` we get unique integer values for each value of `X` in an array in the position of the actual values even if the value is none then also returns a unique numeric value.  
-Suppose your data contains a column named Gender with 1000 rows which have only 2 types of values as Male and Female(both values are just repeated in rows). But for a computer there are 1000 unique values so it will treat every value as unique. To save memory we specify the similar set of values as category so that computers don't allocate memory every time it encounters that value, instead of that it will just assign a reference to the value.
+
+By using `cat.codes`, we get unique integer values for each value of `X` in an array in the position if the actual values, even if the value is none. Then, it returns a unique numeric value.
+
+Suppose your data contains a column named "Birds" with 100 rows, which has only two types of values—parrot and owl—repeated in rows. Even though we only have two types of data, we have 1000 rows of them so the computer will treat every value as unique. To save memory, we specify the similar set of values as a category, so that the computer doesn't allocate memory every time it encounters that value. Instead, it will just assign a reference to the value. If this sounds like gibberish to you, don't worry—all you need to know is that we're doing some fancy computer memory saving things.
+
+Under this line, add:
 
 ```python
-
 fig = plt.figure(figsize=(6, 8))
-
 ```
 
-To create a figure window You can use this function `plt.figure()`, even we can set the figure size by using the `figsize=(x,y)` where x(inches), y(inches) is the width and height of the figure window and stored in `fig`.
+Here, we're using `plt.figure()` to create a figure window and assigning it to a variable called `fig`.
+
+Next, add:
 
 ```python
-
 ax = fig.gca(projection='3d')
-
 ```
-`fig.gca()` with argument as `projection=`3d`` returns the three-dimensional axes associated with the figure window and stored in the `ax` variable. 
+
+`fig.gca()` with the argument `projection=3d` returns the three-dimensional axes associated with the figure window. This is stored in a variable called `ax`.
+
+Next, add:
 
 ```python
-
 ax.plot_trisurf(DataFrame['X'], DataFrame['Y'], DataFrame['Z'], cmap=plt.cm.jet, linewidth=0.2)
-
 ```
 
-Creating a three-dimensional plot with plotting function `ax.plot_trisurf` takes in `x`, `y,` and `z` values, cmap, and linewidth. where `cmap` defines the colormap of the plot, and linewidth makes the curves smoother.
-`cmap=plt.cm.jet` used jet colormap, even you can use another colormap from below list, you need to replace the `jet` with colormap you want to use.
+This creates a three-dimensional plot.
+
+- `cmap` defines the colormap of the plot. We're using the `jet` colormap. Learn more about the different types of colormaps [here](https://matplotlib.org/tutorials/colors/colormaps.html).
+- `linewidth=0.2` makes the curves smoother.
 
 ![colormap list](https://cloud-hppbp7hy7.vercel.app/0colormap.gif)
 
-```python
+Next, add:
 
+```python
 plt.title("San Mount Bruno")
 plt.xlabel("x axis")
 plt.ylabel("y axis")
-
 ```
 
-`plt.title` function will add a title to Your plot, `plot.xlabel` and `plot.ylabel` adds labels to the x and y-axis of the plot.
+- `plt.title` adds a title to the plot
+- `plot.xlabel` and `plot.ylabel` add labels to the x and y-axis of the plot.
+
+Next, let's display the plot!
 
 ```python
-
 plt.show()
-
 ```
-`plt.show` opens interactive windows that display your figure.
+
+`plt.show` opens an interactive window that displays your figure.
 
 ---
-**Source Code**
+
+<details>
+
+<summary>Final Code</summary>
 
 ```python
 import pandas as pd
@@ -222,27 +184,31 @@ plt.ylabel("y axis")
 plt.show()
 ```
 
+</details>
+
 ![Demo](https://cloud-ko9v4kpdg.vercel.app/0ezgif.com-gif-maker__1_.gif)
 
-You have completed the workshop, share with everyone, and Congratulations!!!
+Congrats!!! You've completed the workshop! Pretty simple, right?
 
-
-### Hacking!
+### Hacking
 
 ![congratulations g.i.f](https://cloud-1th3ydnib.vercel.app/2workshop_happy.gif)
 
+Now that you've explored how to make a basic 3D mountain, the possibilities are endless. Real data scientists use Python, along with the tools you used in this workshop, to make complex data visualizations. Here are a few examples I came up with that you can try—but try finding some interesting things you can do in addition to these!
 
-There are so many exciting things you can make now. For example, visualize datasets, and build things like 3D models. Now your turn to apply what you know to make more projects. Here's some inspiration on ways you can try new projects even cool!
-
-- Example 1, using a CSV from Kaggle to make a 3D Volcano.    
-[Demo img](https://cloud-94iqxy8lo.vercel.app/0volcano.gif),
+- Example 1, using a CSV from Kaggle to make a 3D Volcano.
+[Demo img](https://cloud-94iqxy8lo.vercel.app/0volcano.gif)
+<br>
 [Code](https://repl.it/@ShiveshSingh/Volcano-3D-Heatmap)
 
 - Example 2, using Array, and Cos function to make a Surface plot.  
-[Demo img](https://cloud-iwpkargvc.vercel.app/0screenshot_2021-01-10_at_15.24.00.png),
+[Demo img](https://cloud-iwpkargvc.vercel.app/0screenshot_2021-01-10_at_15.24.00.png)
+<br>
 [Code](https://repl.it/@ShiveshSingh/Surface-Plot-3D#main.py)
 
-
 - Example 3, using Loops, List, and Sin function to make the contour plot.  
-[Demo img](https://cloud-iwpkargvc.vercel.app/1screenshot_2021-01-10_at_15.25.30.png),
+[Demo img](https://cloud-iwpkargvc.vercel.app/1screenshot_2021-01-10_at_15.25.30.png)
+<br>
 [Code](https://repl.it/@ShiveshSingh/3D-Contour-Plot#main.py)
+
+Happy hacking!
