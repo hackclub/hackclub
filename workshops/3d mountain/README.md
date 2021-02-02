@@ -200,11 +200,11 @@ Now that you've explored how to make a basic 3D mountain, the possibilities are 
 [Demo img](https://cloud-94iqxy8lo.vercel.app/0volcano.gif),
 [Code](https://repl.it/@ShiveshSingh/Volcano-3D-Heatmap)
 
-- Example 2, using Array, and Cos function to make a Surface plot.  
+- Example 2, using Array, and Cos function to make a Surface plot.
 [Demo img](https://cloud-iwpkargvc.vercel.app/0screenshot_2021-01-10_at_15.24.00.png),
 [Code](https://repl.it/@ShiveshSingh/Surface-Plot-3D#main.py)
 
-- Example 3, using Loops, List, and Sin function to make the contour plot.  
+- Example 3, using Loops, List, and Sin function to make the contour plot.
 [Demo img](https://cloud-iwpkargvc.vercel.app/1screenshot_2021-01-10_at_15.25.30.png),
 [Code](https://repl.it/@ShiveshSingh/3D-Contour-Plot#main.py)
 
