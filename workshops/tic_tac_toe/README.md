@@ -76,7 +76,7 @@ Awesome! We now have our board printed in the terminal. It's time to get actual 
 
 We have to take input from the players and keep it as simple as possible. The players can type any number from 1 to 9 to place their corresponding sign, cross `X` or nought `O` in the boxes. We are going to print a message asking for an input later in the main loop. For now, let's just create a function to get a valid number from the user. 
 
-Any number outside 1 to 9 is not on the board. We can simply check it by converting the input to an `integer` and checking if it is within a range of 1 to 10. Range can be a bit confusing, it consists of numbers starting from the first number, to the number before the seoncd number. So `range(1, 5)` gives us 1 to 4, `range(50, 100)` gives 50 to 99 and so on.
+Any number outside 1 to 9 is not on the board. We can simply check it by converting the input to an `integer` and checking if it is within a range of 1 to 10. Range can be a bit confusing, it consists of numbers starting from the first number, to the number before the second number. So `range(1, 5)` gives us 1 to 4, `range(50, 100)` gives 50 to 99 and so on.
 
 ```python
 number = input()
@@ -85,7 +85,7 @@ if number not in range(1, 10):
   print("\nNumber not on board")
 ```
 
-Any input that is not a number is also unacceptable.  So you can use `try...except` to see if there was any problem converting `number` to an `integer`. If the program fails to convert it to an `integer`, it's probably not a number and we can print an error. 
+Any input that is not a number is also unacceptable. So you can use `try...except` to see if there was any problem converting `number` to an `integer`. If the program fails to convert it to an `integer`, it's probably not a number and we can print an error. 
 
 Like this:
 
@@ -100,7 +100,7 @@ except ValueError:
     print("\nThat's not a number. Try again")
 ```
 
-Let's now put it all into a function. We will also need a loop so that we can ask for an input again in case the previous one was invalid. So make a `while` loop and keep it running until you get a valid input from the user. Finally, `return` the valid number. It'll look something like this:
+Let's now put it all into a function. We will also need a loop so that we can ask for an input again in case the previous one was invalid. So make a `while` loop and keep it running until you get a valid input from the user. Also, check if the number **is** in the range instead of checking if the number is **not** in the range. Finally, `return` the valid number. It'll look something like this:
 
 ```python
 def GetNumber():
@@ -111,9 +111,9 @@ def GetNumber():
       if number in range(1, 10):
         return number
       else:
-        print("Number not on board")
+        print("\nNumber not on board")
     except ValueError:
-      print("That's not a number. Try again")
+      print("\nThat's not a number. Try again")
       continue
 ```
 
@@ -131,13 +131,13 @@ end = False
 while not end:
   PrintBoard()
   print("Choose a box Player X")
-  n= GetNumber()
+  n = GetNumber()
   board[n - 1] = "X"
 	
 
 	PrintBoard()
   print("Choose a box Player O")
-  n= GetNumber()
+  n = GetNumber()
   board[n - 1] = "O"
 ```
 
@@ -183,7 +183,7 @@ for x in range(9):
               return True
 ```
 
-While we are at it, we can also do a simple check to see if the match is a tie by counting the number of cross or noughts placed on the baord. 
+While we are at it, we can also do a simple check to see if the match is a tie by counting the number of cross or noughts placed on the board. 
 
 ```python
 for a in range(9):
