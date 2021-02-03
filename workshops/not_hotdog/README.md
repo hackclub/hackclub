@@ -5,6 +5,8 @@ author: '@harrisbegca'
 begin: 'https://repl.it/repls/GullibleAccomplishedCables'
 ---
 
+*Note: the API this workshop uses is deprecated, so this workshop is out of date and no longer on the workshops site. See https://github.com/hackclub/hackclub/pull/1695 for more info. If you would like to help get this workshop back up, please let me know on Slack (@matthew).*
+
 ## Part 1: Background
 
 You may or may not already be familiar with the popular TV show **Silicon Valley**, in which a character, Jian-Yang, promises to help build an app that identifies different types of food. While the idea is promising, Jian-Yang clearly misunderstands and makes, well, [this](https://www.youtube.com/watch?v=pqTntG1RXSY).
