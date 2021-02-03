@@ -5,7 +5,7 @@ author: '@aaryanporwal'
 img: 'https://cloud-kv2ikdnkl.vercel.app/0image.png'
 ---
 
-In this workshop we'll be learning how to push your website on GitHub (a website that provides hosting for software development and version control using Git), and host it on [Netlify](https://www.netlify.com) with a custom domain from [namecheap](https://www.namecheap.com).
+In this workshop we'll be learning how to push your website on GitHub (a website that provides hosting for software development and version control using Git), and host it on [Netlify](https://www.netlify.com) with a custom domain from [Namecheap](https://www.namecheap.com).
 
 <details>
 
@@ -35,7 +35,7 @@ That's all we need for this workshop!
 
 In this workshop we'll be using a boilerplate [React](https://reactjs.org) app, but if you already have a website ready, you can skip to Part 3!
 
-Now, begin by visiting [repl.it](https://repl.it) and sign up (you can also directly sign up using your GitHub account), then click on "New repl" and select "HTML, CSS, JS" from the dropdown giving a name to your repl, and then click on "Create repl".
+Begin by visiting [repl.it/languages/html](https://repl.it/languages/html).
 
 ![Selecting html,css,js from language dropdown and clicking on create repl](https://cloud-cmhr0swki.vercel.app/0image.png)
 
@@ -102,10 +102,10 @@ Now, create a new [GitHub repo](https://docs.github.com/en/free-pro-team@latest/
 
 ![pasting the code in repl.it's shell](https://cloud-m6l8fjvw5.vercel.app/0image.png)
 
-	After executing the code, git will ask for your GitHub's username and password, so type that and press enter.
+After executing the code, git will ask for your GitHub's username and password, so type that and press enter.
 
-	If you see the following screen, you've successfully uploaded your project on GitHub!
-	![successfully uploaded on github](https://cloud-6q9f57u0d.vercel.app/0image.png)
+If you see the following screen, you've successfully uploaded your project on GitHub!
+![successfully uploaded on github](https://cloud-6q9f57u0d.vercel.app/0image.png)
 	
 Refresh your repository's page on GitHub and make sure the changes are reflected there as well!
 
@@ -121,7 +121,7 @@ Log into [Netlify](www.netlify.com) (create an account if you haven’t already)
 ![Click on new site from git on netlify](https://cloud-ipr3ko8bo.vercel.app/0screenshot_2020-12-28_at_12.42.02_am.png)
 2. On the next screen, we'll be telling Netlify where our project is located at, so select “GitHub”![select github](https://cloud-3p29symvo.vercel.app/0image.png)
 3. Now, scroll down to find the GitHub repo for your app: ![select your repo](https://cloud-4jyvvb08t.vercel.app/0image.png)
-4. Then, click on "Deploy Site" ![click deploy site](https://cloud-1lhe4c42f.vercel.app/0image.png)
+4. Then, click on "Deploy Site" <br> ![click deploy site](https://cloud-1lhe4c42f.vercel.app/0image.png) <br>
 5. Next, click on "Domain Settings" to add a custom domain to your deployment ![click domain settings](https://cloud-pdrxlnmln.vercel.app/0image.png)
 6. In the Domain Settings, you can see a strange domain provided by Netlify. You can click on that to see how your project looks like!
 
