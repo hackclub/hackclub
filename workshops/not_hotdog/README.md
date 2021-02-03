@@ -4,7 +4,7 @@ description: 'Build a basic hot dog classifier using the Clarifai API for Python
 author: '@harrisbegca'
 begin: 'https://repl.it/repls/GullibleAccomplishedCables'
 ---
-
+<!--- Needs to be updated or removed-->
 ## Part 1: Background
 
 You may or may not already be familiar with the popular TV show **Silicon Valley**, in which a character, Jian-Yang, promises to help build an app that identifies different types of food. While the idea is promising, Jian-Yang clearly misunderstands and makes, well, [this](https://www.youtube.com/watch?v=pqTntG1RXSY).
