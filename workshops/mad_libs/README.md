@@ -23,13 +23,13 @@ We're going to use [Repl.it](https://repl.it/~), a free, online code editor, to 
 
 We're creating a new text file in order to put our Mad Libs prompt in. A text file is a file that you put text in...
 
-<img src="https://cloud-7epyavre2.vercel.app/0screenshot__1403_.png" width="900" alt="Creating New Text File">
-
 Create a new file and name it `madlib.txt`. Put in your own prompt and surround the things that you want to ask the user with asterisks (\*).
+
+<img src="https://cloud-7epyavre2.vercel.app/0screenshot__1403_.png" width="900" alt="Creating New Text File">
 
 ## Initial Statements
 
-We need initial statements! Add them to the top of the file:
+Next, add thse to the top of the `main.cs` file:
 
 ```c#
 using System;
@@ -71,6 +71,7 @@ while(true)
   }
 }      
 ```
+
 - Add a while loop that surrounds this code. It will be used later on in order to play again.
 - Create an empty string named `prompt`. This may be surprising but it is used to hold the prompt. 
 - The [using statement](https://docs.microsoft.com/en-us/dotnet/standard/io/how-to-read-text-from-a-file) reads the text file, and the contents of the file are set to the `prompt` string.
@@ -84,7 +85,7 @@ Next, let's create a for loop to go through the `prompt` string. This better be 
 
 ### For Loop
 
-This code will still be without our for loop and right under our using statement.
+Right after the `using` code block, add a for loop that goes through the entire `prompt` string length. This allows us to examine each character.
 
 ```c#
 while(true)
@@ -96,9 +97,8 @@ while(true)
 }
 ```
 
-Add a for loop that goes through the entire `prompt` string length. This allows us to examine each character.
-
 ### Checking Character
+
 We gotta check each character to make sure it isn't an asterisk.
 
 Add this code within the for loop we just created:
@@ -181,6 +181,8 @@ if (prompt[i] == '*')
 - First, let's print the `word` string to ask what type of word is wanted using [string interpolation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated). This allows us to put variables surrounded by brackets directly into our output. 
 - Then, let's get the user's response. This is done through reading the current line, which is where the user entered their text. Set this text to the `response` string. Let's create a line afterwards for spacing purposes.
 
+Now, let's remove the `word` variable from our prompt and insert the user's response. So, if there is supposed to be an adjective in a current spot, then let's actually put the adjective there. Set the current index to right after the response we just inserted.
+
 ```c#
 if (prompt[i] == '*')
 {
@@ -194,7 +196,6 @@ if (prompt[i] == '*')
   i = startingIndex+response.Length-1;
 }
 ```
-Now, let's remove the `word` variable from our prompt and insert the user's response. So, if there is supposed to be an adjective in a current spot, then let's actually put the adjective there. Set the current index to right after the response we just inserted.
 
 ## Printing the Prompt
 
@@ -225,6 +226,8 @@ Another one. Another one. Another one. Maybe another one. Alright final one. May
 
 The code we are writing is still within the large while loop.
 
+Create a `playAgain` bool and set it to false. Also create another while loop. This will handle asking the player to play again.
+
 ```c#
 while(true)
 {
@@ -236,7 +239,7 @@ while(true)
 }
 ```
 
-Create a `playAgain` bool and set it to false. Also create another while loop. This will handle asking the player to play again.
+Inside the inner while loop, add:
 
 ```c#
 bool playAgain = false;
@@ -248,6 +251,8 @@ while(true)
 ```
 
 We are asking the user to play again, taking their input, and assigning the input to the `again` string.
+
+Next, add:
 
 ```c#
 while(true)
@@ -304,6 +309,7 @@ while(true)
 - Else we go back to the start of the while loop around the program. This will start another game.
 
 ## Final Code
+
 You are done! B) "You are all now incredibly funny people." -Master of funny himself.
 
 Happy Hacking!
