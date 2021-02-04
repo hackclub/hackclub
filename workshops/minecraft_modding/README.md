@@ -21,7 +21,7 @@ The annoying thing about Minecraft development is that it requires _a lot_ of se
 
 First, make sure you have IntelliJ IDEA installed. If you don't, [download it here](https://www.jetbrains.com/idea/download/) first (the community edition is fine).
 
-Next, download and unzip the starter project from [hack.af/modworkshopstarter](https://hack.af/modworkshopstarter).
+Next, download and unzip the starter project from [hack.af/modworkshopstarter](https://hack.af/modworkshopstarter). Once it's downloaded, open IntelliJ. Click on `Open or Import`, find the unzipped starter project and open it.
 
 You should be greeted with something like this:
 
@@ -484,9 +484,7 @@ public class RegistryHandler {
 
 </details>
 
-Next, right-click on your package under the `java` directory and crate a new package called `com.yourusername.playerevolutions.blocks`.
-
-Once you've created that, right-click on it and create two classes:
+Next, find the directory called `blocks`. Right-click on it and create two classes:
 
 - `BlockItemBase`
 - `RubyBlock`
@@ -560,12 +558,12 @@ That's it! If you start the test Minecraft client, you should see your mod in ac
 The fun doesn't stop here. Here are a few examples & demos of other things you can do:
 
 - [Ultron Block](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-1)
-  ![](https://cloud-kl251xoy7.vercel.app/0image.png)
+  ![ultron block](https://cloud-kl251xoy7.vercel.app/0image.png)
 
-- [Rickroll Item](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-2)
-  ![](https://cloud-cf16uvc03.vercel.app/0image.png)
+- [Rickroll Item](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-2) <br>
+  ![rickroll item](https://cloud-cf16uvc03.vercel.app/0image.png)
 
 - [Deathnote](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-3)
-  ![](https://cloud-rhvv52dfm.vercel.app/0image.png)
+  ![deathnote](https://cloud-rhvv52dfm.vercel.app/0image.png)
 
 Happy hacking!
