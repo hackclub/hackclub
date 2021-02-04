@@ -120,7 +120,7 @@ const app = new App({
     token: process.env.SLACK_BOT_TOKEN,
 })
 
-;(async () => {
+async function main () {
     await app.start(process.env.PORT || 3000)
 
     app.command('/todolist', async ({ command, ack, say }) => {
@@ -129,7 +129,9 @@ const app = new App({
     })
 
     console.log('⚡️ Server ready')
-})()
+}
+
+main()
 ```
 
 Explanation:
@@ -160,7 +162,7 @@ const app = new App({
     token: process.env.SLACK_BOT_TOKEN,
 })
 
-;(async () => {
+async function main () {
     await app.start(process.env.PORT || 3000)
 
     app.command('/todolist', async ({ command, ack, say }) => {
@@ -179,7 +181,9 @@ const app = new App({
     })
 
     console.log('⚡️ Server ready')
-})()
+}
+
+main()
 ```
 
 To store users' todo lists, we'll be using the [repl.it database](https://docs.repl.it/misc/database). Repl.it provides a handy client for the database to use with Node.js.
