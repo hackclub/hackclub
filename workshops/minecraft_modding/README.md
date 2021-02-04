@@ -15,21 +15,51 @@ Here is the [final code](https://github.com/KaiDevrim/PlayerEvolutions/tree/work
 
 *For the sake of simplicity, this workshop will assume you're using IntelliJ to code your project.*
 
-## Part 1: Setup  
+## Part 1: Setup
 
-Download the [Forge MDK for 1.15.2](http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.15.2.html).
+The annoying thing about Minecraft development is that it requires _a lot_ of setup. In the interest of keeping this workshop short and focused on mod building, we're going to skip a lot of the setup and start from a starter project. Don't worry, though—I'll still explain what's happening in the setup process and why every part of it is necessary, so you'll still be able to make your own Minecraft mods on your own after this workshop.
+
+First, make sure you have IntelliJ IDEA installed. If you don't, [download it here](https://www.jetbrains.com/idea/download/) first (the community edition is fine).
+
+Next, download and unzip the starter project from [hack.af/modworkshopstarter](https://hack.af/modworkshopstarter).
+
+You should be greeted with something like this:
+
+![IntelliJ starter project](https://cloud-c322pijsg.vercel.app/0screen_shot_2021-02-04_at_10.05.11_am.png)
+
+### Walking through the starter project
+
+So what's all this stuff?
+
+The most important thing that you can't see is Forge. Forge is the API used to make Minecraft mods. Throughout the process of making this mod, you'll be importing things from "net.minecraft" or "net.minecraftforge"—these are all methods as part of Forge that allow you to access things in Minecraft, such as blocks, items, inventory, textures, events, you name it!
+
+<details>
+
+<summary>How do you install Forge normally (not as part of a starter project)?</summary>
+
+If you're going to make mods in the future, you'll have to be able to install Forge yourself. Here's how you do it:
+
+Download the [Forge MDK for 1.15.2](http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.15.2.html). There will be a few download links—make sure you click on the one that says "Mdk".
 
 ![Download the MDK](https://cloud-gwdhe1huj.vercel.app/image.png)
 
-*Note: When you click on "Mdk", you will be taken to a very sketchy-looking page with a bunch of ads. Your computer will be fine, but DO NOT click on anything on the page! Wait 5 seconds, then a button that says "Skip" will appear at the top right. Click the "Skip" button to download the Forge MDK. Sadly, navigating spam and adware is normal in the Minecraft world. It's not a big deal, but it's something you should be aware of and navigate through carefully if you choose to continue mod or plugin development.*
+When you click on "Mdk", you will be taken to a very sketchy-looking page with a bunch of ads. Your computer will be fine, but DO NOT click on anything on the page! Wait 5 seconds, then a button that says "Skip" will appear at the top right. Click the "Skip" button to download the Forge MDK. Sadly, navigating spam and adware is normal in the Minecraft world. It's not a big deal, but it's something you should be aware of and navigate through carefully if you choose to continue mod or plugin development.
 
-Next, make sure you have Intellij IDEA installed. If you don't, [download it here](https://www.jetbrains.com/idea/download/) first (the community edition is fine).
+Once the Forge MDK is installed, start up IDEA. Once it's started up, click on `Open or Import`. Find the Forge MDK folder (usually called `forge` or `forge-1`) and select the file inside it called `build.gradle`. When prompted, choose `Open as Project`.
 
-Once the Forge MDK and IntelliJ IDEA (called IDEA from here on) are installed, start up IDEA. Once it's started up, click on `Open or Import`. Find the Forge MDK folder (usually called `forge`) and select the file inside it called `build.gradle`. When prompted, choose `Open as Project`.
+![Open As Project](https://cloud-1ijkxbdqk.vercel.app/image.png)
 
-![Open As Project](https://cloud-1ijkxbdqk.vercel.app/image.png)  
+</details>
 
-Once IDEA has opened the project:
+Next, if you expand all the folders in under the `main` folder on the left sidebar, you'll notice a _bunch_ of nested folders with some files inside them. This is the common folder structure for a Minecraft mod. If you make your own mod in the future, you'll have to make all of these folders and files yourself.
+
+![folder structure](https://cloud-m0v4ngksl.vercel.app/0screen_shot_2021-02-04_at_10.16.51_am.png)
+
+### The setup steps that we do need to do
+
+We do need to do two small setup things before we can begin coding our mod.
+
+First:
 
 1. Click on the tab called `Gradle` at the top right corner. This will look like a super thin tab, and the `Gradle` label will be 90 degrees sideways. You will see a section pop out of the right of IntelliJ. <br>
 ![Click on Gradle on the side](https://cloud-beqpbpts3.vercel.app/image.png) <br>
@@ -45,63 +75,58 @@ Once IDEA has opened the project:
 
 Once it has been built, it should say `BUILD SUCCESSFUL` in the Build tab at the bottom.
 
-Open `src/main/java/com` and delete the example folder—we will create the files ourselves. If you instead see a package name, like `com.examplemod.something`, instead of a `com` folder, delete that package.
+Next, we need to rename some of the directories in the project. Take a look at your left sidebar. See how these are two directories that say `yourusername` and `modname`?
 
-![Delete `src/main/java.com/`](https://cloud-nl8ibjque.vercel.app/0image.png)
+![directory list highlighting the ones we need to change](https://cloud-jnth07j1l.vercel.app/0screen_shot_2021-02-04_at_10.16.51_am.png)
 
-If you want, you can also delete the `test` folder in `src/`.
+The one at the top is called a package. Minecraft mods and plugins follow this package structure. Packages follow the format `com.yourusername.modname`. In IntelliJ, they're separated by periods, but these periods are actually their own nested directories.
 
-Now, within `src/main/java`, make a new package. Packages usually follow the format `com.yourusername.projectname`.
+- Right-click on the package at the top. Hover over `Refactor`, then click `Rename`. Replace `yourusername` with your username, and `modname` with `playerevolutions`. Make sure there are no spaces and everything is lowercase.
+- Next, right-click on the `assets.modname` directory. Hover over `Refactor`, then click `Rename`. Replace `modname` with `playerevolutions`.
 
-- Right-click on the `java` folder
-- Click on `New`
-- Click on `Package` (about 5 options down)
-- In the `package name` field, type `com.yourusername.projectname`. For example, I typed `com.devrim.kaimod`. If you're looking for a project name, `PlayerEvolutions` will do. <br>
-![creating a package](https://cloud-2zewl9cgd.vercel.app/0screen_shot_2021-02-03_at_5.56.37_pm.png)
+Now we're ready to start coding! 🚀
 
-Inside your new package, create a new Class by right-clicking on the package, clicking `New`, and selecting `Java Class`. Name the file the same thing as the project name you defined when you created your package. For example, if your package was `com.yourusername.playerevolutions`, you should name the file `PlayerEvolutions`. Since I called my project name `kaimod`, I called my class name `KaiMod`.
+### Creating your first class
+
+Right-click on the package near the top. Hover over `New`, then click `Java Class`. We want this class to be called the same as our mod name. Since our mod name is `playerevolutions`, name this class `PlayerEvolutions` (make sure the P and E are capitalized)
 
 A class in Java is a blueprint that allows you to create new objects. For more information about classes [read here](https://www.w3schools.com/java/java_classes.asp)
 
 IntelliJ should automatically open the Java class. If it doesn't, open it by double-clicking it.
 
-Just above the `public class modname` line, add:
+Just above the `public class PlayerEvolutions` line, add:
 
 ```java
-@MOD("ModName")
-public class ModName {
+@Mod("PlayerEvolutions")
+public class PlayerEvolutions {
 
 }
 ```
 
-Replace "ModName" with your mod name. This will be your mod ID. As you type it, IntelliJ will give you an option to import something from Forge. Hit enter to import it.
+As you type `@Mod`, IntelliJ will prompt you to import something from Forge. Hit enter to import it. In Java, this @ thing is what's known as an [interface](https://www.w3schools.com/java/java_interface.asp). Forge provides an interface for registering our mod. By putting "PlayerEvolutions" inside the parenthesis, we're specifying that that is our mod ID.
 
 Once this happens, here's what your Java file should look like:
 
 ```java
-package com.yourusername.projectname;
+package com.yourusername.playerevolutions;
 
 import net.minecraftforge.fml.common.Mod;
 
-@Mod("ModName")
-public class ModName {
+@Mod("PlayerEvolutions")
+public class PlayerEvolutions {
 
 }
 ```
-
-When given the option to import an interface, hit enter to import it. If `@Mod` is still red, move your cursor on top of it and type `Alt + Enter` to import it.
 
 Inside the class (in between the curly braces), add:
 
 ```java
-@Mod("ModName")
-public class ModName {
+@Mod("PlayerEvolutions")
+public class PlayerEvolutions {
   private static final Logger LOGGER = LogManager.getLogger();
   public static final String MOD_ID = "ModName";
 }
 ```
-
-Make sure "ModName" matches what's inside `@Mod("ModName")` exactly.
 
 Move your cursor onto `Logger` and `LogManager`, then type `Alt + Enter` on your keyboard to import the packages. Once you do this, two `import` statements should be added to the top of the file.
 
@@ -126,7 +151,7 @@ A Logger is just a method that makes it easy to log things to the console. You d
 Under that line, add a [constructor](https://www.w3schools.com/java/java_constructors.asp), like so:
 
 ```java
-public ModName {
+public PlayerEvolutions() {
 
 }
 ```
@@ -134,9 +159,11 @@ public ModName {
 Inside the constructor, add:
 
 ```java
-FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);  
-FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);  
-MinecraftForge.EVENT_BUS.register(this);  
+public PlayerEvolutions() {
+  FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);  
+  FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);  
+  MinecraftForge.EVENT_BUS.register(this);
+}
 ```
 
 Hit `Alt + Enter` to import `FMLJavaModLoadingContext`, as well as `MinecraftForge`, if it isn't already imported. For now, you'll see errors on `setup` and `doClientStuff`. This is because we're referencing some methods that we haven't written yet. Once we write those methods, those errors will go away.
@@ -165,7 +192,7 @@ What we just made is a very stripped-down version of the example file mod that F
 <summary>Here's what your class should look like so far:</summary>
 
 ```java
-package com.yourname.projectname;
+package com.yourname.playerevolutions;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -175,12 +202,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("ModName")
-public class ModName {
+@Mod("PlayerEvolutions")
+public class PlayerEvolutions {
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "ModName";
 
-    public ModWorkshop() {
+    public PlayerEvolutions() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         MinecraftForge.EVENT_BUS.register(this);
@@ -197,13 +224,9 @@ public class ModName {
 
 </details>
 
-We do have one more file to edit. Go to your `src/main/resources/META-INF/` directory and open the `mods.toml` file. This file contains the metadata for your mod. You won't need to edit most of the file, but we do need to edit one thing.
+Next, we need to edit some metadata. Go to your `src/main/resources/META-INF/` directory and open the `mods.toml` file. This file contains the metadata for your mod. You won't need to edit most of the file, but you do need to edit one thing.
 
-Find the line that starts with `modID`. Replace `examplemod` with what you put inside the `@Mod` interface in your Java class. This is case-sensitive, so make sure it looks exactly the same!
-
-For example, here's what I did:
-
-`modID="kaimod"`
+Find the line that starts with `modID`. Replace `examplemod` with what you put inside the `@Mod` interface in your Java class ("PlayerEvolutions"). This is case-sensitive, so make sure it looks exactly the same!
 
 In order to build and run Minecraft to test the mod, click on the build menu at the top and choose `runClient`. Then press `Shift-F10` or the triangle play button.
 
@@ -219,29 +242,31 @@ The first step is to make a registry handler.
 
 A Registry Handler is what Forge [describes as](https://mcforge.readthedocs.io/en/latest/concepts/registries/) making objects known to the game. We are telling Minecraft that there are new elements like blocks, items, sounds, resources and we need to load them in. Without this, Minecraft would not know what to load or how to load in the new resources.
 
-To create one, make a new package in `src/main/java/com/name/modname/` called `util`.
-
-![creating the new package](https://cloud-48raigcjl.vercel.app/0image.png)
-
-Inside of `util`, create a new class called `RegistryHandler`.
+To create one, find the package called `util` in `src/main/java/com/name/modname/`. Right-click on it and create a new class called `RegistryHandler`.
 
 ![creating the registryhandler class](https://cloud-1eh2dnafi.vercel.app/0image.png)
 
 Inside the `RegistryHandler` class, add:
 
 ```java
-public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, ModName.MOD_ID);
+public class RegistryHandler {
+  public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, PlayerEvolutions.MOD_ID);
+}
 ```
 
-Import any statements that aren't imported. Replace `ModName` with the name of the class you created in the setup step and import it.
+Import any statements that aren't imported. Notice that you're importing the `PlayerEvolutions` class you just wrote near the end!
 
 The `<>` syntax in this code also means that it is a `generic` type in Java and can be as `of Type`. Since we are not changing the type in this Registry Handler class we can keep it as the default type, `<>`.
 
 Next, create a method called `init()` to initialize the creation of our items. Under the line you just added, add:
 
 ```java
-public static void init() {
+public class RegistryHandler {
+  public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, PlayerEvolutions.MOD_ID);
+  
+  public static void init() {
     ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+  }
 }
 ```
 
@@ -249,7 +274,7 @@ public static void init() {
 
 Essentially, we are just adding our item to the Forge registry.
 
-To finish off registering our items, go back into your main class, `ModName.java` and before the `MinecraftForge.EventBus` line add this to make sure your registry is loaded into the game:
+To finish off registering our items, go back into your main class, `PlayerEvolutions.java` and before the `MinecraftForge.EventBus` line add this to make sure your registry is loaded into the game:
 
 ```java
 RegistryHandler.init();
@@ -262,8 +287,8 @@ Make sure to import your `RegistryHandler` class.
 <summary>Not sure where to add this line?</summary>
 
 ```java
-@Mod("ModWorkshop")
-public class ModWorkshop {
+@Mod("PlayerEvolutions")
+public class PlayerEvolutions {
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "ModWorkshop";
 
@@ -284,24 +309,19 @@ The boring registry stuff is out of the way. Now, we can start the fun part: add
 Go into the `RegistryHandler.java` class. Inside the class, but after the `init()` method, add:
 
 ```java
-public static final RegistryObject<Item> ITEMNAME = ITEMS.register("itemname", ItemBase::new);
+public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
 ```
 
 Use `Alt + Enter` to import `RegistryObject`. You'll get an error on `ItemBase` because that is referencing a class that we haven't created yet.
-
-Replace "itemname" and `ITEMNAME` with a creative name. Make sure you keep the correct cases (whatever you replace `ITEMNAME` with must be in all caps, and whatever you replace "itemname" with must be all lowercase with no spaces). This is the name that will appear in the game!
-
-For example, my first `ITEMNAME` is `KAIMOND` and the second `itemname` is `kaimond`.
 
 <details>
 
 <summary> Here's what your RegisteryHandler class should look like so far: </summary>
 
 ```java
-package com.username.projectname.util;
+package com.username.playerevolutions.util;
 
-import com.username.projectname.ModName;
-import com.username.projectname.items.ItemBase;
+import com.username.playerevolutions.PlayerEvolutions;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -314,7 +334,7 @@ public class RegistryHandler {
     public static void init() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
-    public static final RegistryObject<Item> ITEMNAME = ITEMS.register("itemname", ItemBase::new);
+    public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
 }
 
 ```
@@ -323,8 +343,8 @@ public class RegistryHandler {
 
 Now, let's fix that `ItemBase` error by creating our `ItemBase` class.
 
-- Right-click on `com.username.projectname` and create a new Package called `items`.
-- Once you create that package, right-click on it and create a new Java Class. Call it `ItemBase`.
+- Find the directory called `items` in your left sidebar.
+- Right-click it and create a new class. Call it `ItemBase`.
 
 Once, you're inside the `ItemBase` class:
 
@@ -348,35 +368,37 @@ Once, you're inside the `ItemBase` class:
 - Inside the parentheses of the `ItemBase` constructor, remove `Properties properties`.
 - Within the `super()` method, remove `properties` and add this line:
   ```java
-  super(new Item.Properties().group(modname.TAB)
+  super(new Item.Properties().group(PlayerEvolutions.TAB)
   ```
 - You will see an error because we haven't made a TAB for our item yet.
 
 Once you've done this, here's what the whole `ItemBase` class should look like:
 
 ```java
-package com.devrim.kaimod.items;
+package com.yourusername.playerevolutions.items;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import com.devrim.kaimod.KaiMod;
+import com.yourusername.playerevolutions.PlayerEvolutions;
 
 public class ItemBase extends Item {
 
     public ItemBase() {
-        super(new Item.Properties().group(ModName.TAB));
+        super(new Item.Properties().group(PlayerEvolutions.TAB));
     }
 }
 ```
 
-A tab in Minecraft is where you will find the item in creative mode. To fix the error, go back into your main class, `ModName.java`, and add this snippet at the bottom of the class:
+Now, go back to the `RegistryHandler` class and hit `Alt + Enter` to import `ItemBase`.
+
+A tab in Minecraft is where you will find the item in creative mode. To fix the error, go back into your main class, `PlayerEvolutions.java`, and add this at the bottom of the class:
 
 ```java 
-public static final ItemGroup TAB = new ItemGroup("modNameItems") { 
+public static final ItemGroup TAB = new ItemGroup("playerEvolutions") { 
     @Override 
     public ItemStack createIcon() { 
-        return new ItemStack(RegistryHandler.ITEM.get()); 
-    } 
+        return new ItemStack(RegistryHandler.RUBY.get()); 
+    }
 };
 ```
 
@@ -384,233 +406,166 @@ public static final ItemGroup TAB = new ItemGroup("modNameItems") {
 
 Import anything you need to import.
 
-You'll need to replace some things:
+## Part 4: Making Item Textures
 
-- Replace "modNameItems" with the name (no spaces) of what you want the Creative Mode tab to be called.
-- Replace `ITEM` with the all-caps `ITEMNAME` you added in the `RegistryHandler` class. Import when IntelliJ prompts you to import.
-
-# Part 4: Making Item Textures 
-
-This part is annoying—pay close attention.
-
-- Close up the `java` folder and open up the `resources` folder.
-- Within the `resouces` folder, make a new Directory called `assets`.
-- Within `assets`, make new directory called the name of your mod (same case as earlier, styled as ModName)
-- Inside of that directory make 4 directories (we will use some of them later when making our block):
-  - `blockstates`, `lang`, `models`, `textures`.
-  - By default, IntelliJ will try to nest all directories. In order to make these 4 separate directories, you'll have to right-click on the `ModName` folder at the top of Intellij:
-    ![the top directory](https://cloud-pq71piq4o.vercel.app/0screen_shot_2021-02-03_at_7.24.24_pm.png)
-- Inside the `models` directory, create two more directories: 
-  - one called `block`, and another called `item`.
-  - Similar to before, in order to prevent IntelliJ from nesting the directories, you'll have to right-click on `models` at the top of IntelliJ to create a new directory.
-- Insides the `textures` directory, create two directories inside:
-  - one called `blocks` and one called `items`.
-  
-Here's what your `resources` folder should look like after you've done all of this:
-
-![resources folder complete](https://cloud-4lbi6x898.vercel.app/0screen_shot_2021-02-03_at_7.28.08_pm.png)
-
-Now we need to make a few json files.
-
-Still within the `resources` folder, right-click on the `lang` folder (/src/main/resources/assets/modname/lang) and make a new file called `en_US.json`.
-
-Inside the `en_US.json` file, add a pair of curly braces:
+Find the file called `en_US.json` in `src/main/resources/lang`. Open the file. Inside, add:
 
 ```json
 {
+  "item.playerevolutions.ruby": "Ruby",
+  "block.playerevolutions.ruby_block": "Block of Ruby",
+  "itemGroup.playerevolutions": "Player Evolutions"
 }
 ```
 
-Inside the curly braces, add:
+Next, find the file called `item.json` in the `models/item` directory. Rename it to `ruby.json`.
 
-```json
-{
-  "item.modname.itemname": "MyItem"
-}
-```
-
-- Replace `modname` with the lowercase `modname` that you chose near the beginning of the workshop. Replace `itemname` with the name of your item that you chose and put in the `RegistryHandler` in the parentheses.
-- Replace "MyItem" with whatever you want.
-
-At the end of "MyItem", add a comma followed by a new line. Then, add:
-
-```json
-{
-  "item.modname.itemname": "MyItem"
-  "block.kaimod.modNameItems": "Kai Mod"
-}
-```
-
-- Replace `modNameItems` with what you called your `TAB`
-- Replace "Kai Mod" with what you want the tab to be called
-
-Example of mine:
-
-```json
-{
-  "item.kaimod.ruby": "Ruby",
-  "block.kaimod.ruby_block": "Block of Ruby",
-  "itemGroup.kaimod": "Kai Mod"
-}
-```
-
-Next, find the `models/item` directory and create a new file called `itemname.json`, replacing "itemname" with the all-lowercase name of the item that you defined above.
-
-Inside that fine, add:
+Inside the file, add:
 
 ```json
 { 
-  "parent": "item/generated", 
+  "parent": "ruby/generated", 
   "textures": { 
-    "layer0": "modname:items/item" 
+    "layer0": "playerevolutions:items/ruby" 
   } 
 } 
 ```
 
 All this is doing is telling Forge that the item only has one layer.
 
-Remember to replace `modname` and `item` of course.
-
-Next, let's add the texture for the item. Right-click and save this image:
-
-![tiny image texture example](https://cloud-qpr3fyvd6.vercel.app/myitem.png)
-
-to use as an example.
-
-Place the png file in the `textures/items` directory.
-
-For future items, you can design your own item image in Paint or whatever program you want. The only requirements are:
-
-- Needs to be 16x16 pixels
-- Filename must be the same as the itemname, exactly
-- It must be a .png file
-
 Now run Minecraft using Shift-F10 or the triangle play button and see your item in Minecraft!
 
-# Part 5: Making your first block! 
+## Part 5: Making your first block! 
 
 Making your first block is actually very simple now that we have most of the files and registries made.  
 
-To get started go back to your `src/main/java/com/username/modname/util` folder and open the `RegistryHandler.java` file. Inside of that we are going to just use the same methods from before but change them up a little.
+Open the `RegistryHandler.java` file. Inside of that we are going to use the same methods from before but change them up a little.
 
 First, copy the line that has `DeferredRegister` in it and paste it right under. Replace `<Item>` with `<Block>`, and both instances of `ITEMS` with `BLOCKS`.
 
 ```java
-public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, KaiMod.MOD_ID);
-public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, KaiMod.MOD_ID);
+public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, PlayerEvolutions.MOD_ID);
+public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, PlayerEvolutions.MOD_ID);
 ```
 
 When you import `Block`, make sure you're importing the one from Minecraft, not from anywhere else.
 
-Next, copy the line that contains `RegistryObject<Item>` and paste it right under.
-
-- Replace `Item` with `Block`.
-- Rename the variable from `ITEMNAME`, or whatever name you gave the item, to `BLOCKNAME`, or whatever name you want to give your block.
-- Replace `ITEMS.register` with `BLOCKS.register`.
-- Replace `ItemBase` with `BlockName`
-
-Finally, create another `RegistryObject<Item>`, like so:
+Next, find the line that contains `RegistryObject<Item>` and add this right under:
 
 ```java
-public static final RegistryObject<Item> MY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(MY_BLOCK.get()));
+public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
 ```
 
-One more thing, make another RegistryObject like last time, but keep it as an `<Item>`. Change the name to something like `MY_BLOCK_ITEM`. Then make it equal to `ITEMS.register("myblock", () -> new BlockItemBase(MY_BLOCK.get()));`. 
+Finally, under that, create another `RegistryObject<Item>`, like so:
 
-My code looks like:
+```java
+public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
+```
+
+<details>
+
+<summary> Here's what your RegistryHandler class should look like now: </summary>
 
 ```java
 public class RegistryHandler {
-    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, KaiMod.MOD_ID);
-    public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, KaiMod.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, PlayerEvolutions.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, PlayerEvolutions.MOD_ID);
 
     public static void init() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
-    //Items
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
-
-    // Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
-
-    //Block Items
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
 }
 ```
 
-Remember to replace `KaiMod` with your `ModName`. Also replace `RUBY`, `RUBY_BLOCK`, and `RUBY_BLOCK` item with the names you made.
+</details>
 
-Now, within your `modname` directory, make a new directory called `blocks`.
+Next, right-click on your package under the `java` directory and crate a new package called `com.yourusername.playerevolutions.blocks`.
 
-Inside the `blocks` directory, make two classes, one called `BlockItemBase`, and another with your block name. Inside the `BlockItemBase.java` file copy and paste this snippet as we are just adding it to our mod's tab.
+Once you've created that, right-click on it and create two classes:
+
+- `BlockItemBase`
+- `RubyBlock`
+
+Open the `BlockItemBase` class and add this:
 
 ```java 
 public class BlockItemBase extends BlockItem { 
-    public BlockItemBase(Block block) { 
-        super(block, new Item.Properties().group(kaimod.TAB)); 
-    } 
+  public BlockItemBase(Block block) { 
+    super(block, new Item.Properties().group(PlayerEvolutions.TAB)); 
+  } 
 } 
 ```
-Change kaimod to the name of your mod. 
 
-Now open your block class and this is where we set the properties of the item! At the end of the class name, make sure it extends Block. Now make a method inside of your class with the same name, make it public as well. Within the method write 
-``` java
-super(Block.Properties.create() 
-    ); 
+Next, open the `RubyBlock` class. Add this:
+
+```java
+public class RubyBlock extends Block {
+  public RubyBlock() {
+    super(Block.Properties.create(Material.IRON)
+      .harvestTool(ToolType.PICKAXE)
+    );
+  }
+}
 ```
-Within the parenthesis of .create write Material. then your IDE should list all the Materials in the game. 
 
-![](https://cloud-ghi874id6.vercel.app/0image.png). 
+The `super()` line sets the "type" of block that your new block is. `.harvestTool()` sets the type of tool that it can be mined with. You can set these to any material in the game (if you type `Material.` or `ToolType.`, IntelliJ will suggest every available item in the game). 
 
-This just means what type of block it is. I set mine to `Material.IRON`. 
-Now after the parenthesis put down a period and there should be a lot of different methods available. For the sake of simplicity, I will just make it only minable with a pickaxe. You can do that by setting `.harvestTool(ToolType.Pickaxe)`.  
+Now, go back to the `RegistryHandler` class and use `Alt + Enter` to import these two new classes and fix the errors.
 
-That is all for coding our block now onto getting it in our game. 
+## Part 6: Block Textures
 
-# Part 6: Block Textures 
+We're almost done! The final step is to add our block texture to the game.
 
-Making our block have a texture is easy. We already did most of the hard work in the items part. 
+Find the file called `my_block.json` in the folder called `blockstates`. Inside, add:
 
-- The first step is to add onto the `en_US.json` file in `src/main/resources/assets/modname/lang`. 
-- Very simply add this line and replaces kaimod, myblock, MyBlock with your names. `"block.kaimod.myblock": "MyBlock"`. 
-- Now in your `blockstates` folder make a json file with your block as the title. 
-- Inside of it add this (we are currently in /src/main/resources/assets/modname/blockstates: 
-``` 
-
+```json
 { 
   "variants": { 
-    "": { "model": "modname:block/blockname" } 
+    "": { "model": "playerevolutions:block/ruby_block" } 
   } 
-} 
+}
 ```
-Now for the next json, go into `/src/main/resources/assets/modname/models/block` and add a the same json name as the previous one. Then add this to the json: 
-``` 
+
+Next, find the file called `my_block.json` in the folder called `models/block`. Inside, add:
+
+```json
 { 
+  "variants": { 
+    "": { "model": "playerevolutions:block/ruby_block" } 
+  },
   "parent": "block/cube_all", 
   "textures": { 
-    "all": "modname:blocks/blockname" 
+    "all": "playerevolutions:blocks/ruby_block" 
   } 
-} 
+}
 ```
-Now for the final json, go into `/src/main/resources/assets/modname/models/item` and make another file with the same name and add this: 
 
-``` 
+Finally, find the file called `my_block.json` in `models/item`. Inside, add:
+
+```json
 { 
-  "parent": "modname:block/blockname" 
+  "parent": "playerevolutions:block/ruby_block" 
 } 
 ```
-Remember to replace modname and blockname. Now make a 16x16 png texture, I will be using a simple texture as an example. Place that png under `textures/blocks`. Make sure it has the same name you have been using for the file names. 
-![Simple green/red texture](https://cloud-lhwjz30iu.vercel.app/myblock.png)
-Now you have finished making your first mod. Go start it and have fun. 
 
-# Extra Demos
-## [First Demo Link](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-1)
-![](https://cloud-kl251xoy7.vercel.app/0image.png)
+That's it! If you start the test Minecraft client, you should see your mod in action 😎
 
-## [Second Demo Link](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-2)
-![](https://cloud-cf16uvc03.vercel.app/0image.png)
+## Hacking
 
-## [Third Demo Link](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-3)
-![](https://cloud-rhvv52dfm.vercel.app/0image.png)
+The fun doesn't stop here. Here are a few examples & demos of other things you can do:
+
+- [Ultron Block](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-1)
+  ![](https://cloud-kl251xoy7.vercel.app/0image.png)
+
+- [Rickroll Item](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-2)
+  ![](https://cloud-cf16uvc03.vercel.app/0image.png)
+
+- [Deathnote](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-3)
+  ![](https://cloud-rhvv52dfm.vercel.app/0image.png)
+
+Happy hacking!
