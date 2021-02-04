@@ -31,7 +31,7 @@ Create a new file and name it `madlib.txt`. Put in your own prompt and surround 
 
 Next, add thse to the top of the `main.cs` file:
 
-```c#
+```csharp
 using System;
 using System.IO;
 ```
@@ -40,7 +40,7 @@ We need these import statements for some functions that we use from these librar
 
 Everything that we will be writing from now on will be within the main function. Let's write a line to the console welcoming the user to Madlibs!
 
-```c#
+```csharp
 using System;
 using System.IO;
 
@@ -60,7 +60,7 @@ Let's read the text file. We gotta get the prompt out of there! This will be wit
 
 <img src="https://media1.tenor.com/images/dd8ffb18e3d4ac5f5b20ab19141e8fcd/tenor.gif?itemid=15407882" width="600" alt="Homer Reading Gif">
 
-```c#
+```csharp
 while(true)
 {
   string prompt = "";
@@ -87,7 +87,7 @@ Next, let's create a for loop to go through the `prompt` string. This better be 
 
 Right after the `using` code block, add a for loop that goes through the entire `prompt` string length. This allows us to examine each character.
 
-```c#
+```csharp
 while(true)
 {
   //What we just wrote would be here.
@@ -103,7 +103,7 @@ We gotta check each character to make sure it isn't an asterisk.
 
 Add this code within the for loop we just created:
 
-```c#
+```csharp
 for(int i = 0; i < prompt.Length; i++)
 {
   if (prompt[i] == '*')
@@ -125,7 +125,7 @@ for(int i = 0; i < prompt.Length; i++)
 
 Put this while loop within the if statement we created:
 
-```c#
+```csharp
 if (prompt[i] == '*')
 {
   //What we just wrote would be here.
@@ -140,7 +140,7 @@ We're going to be looping through the text file until the next asterisk.
 
 Let's focus on what is inside of the while loop.
 
-```c#
+```csharp
 while(true)
 {
   if (prompt[i] != '*')
@@ -168,7 +168,7 @@ We have some final statements for this section.
 
 This code is right after the while loop we just wrote.
 
-```c#
+```csharp
 if (prompt[i] == '*')
 {
   #What we just wrote would be here.
@@ -183,7 +183,7 @@ if (prompt[i] == '*')
 
 Now, let's remove the `word` variable from our prompt and insert the user's response. So, if there is supposed to be an adjective in a current spot, then let's actually put the adjective there. Set the current index to right after the response we just inserted.
 
-```c#
+```csharp
 if (prompt[i] == '*')
 {
   #What we just wrote would be here.
@@ -203,7 +203,7 @@ Now, we gotta print the prompt to the screen. How else would the user see their 
 
 This code goes under the for loop we just wrote.
 
-```c#
+```csharp
 while(true)
 {
   //All the code we wrote would be here.
@@ -228,7 +228,7 @@ The code we are writing is still within the large while loop.
 
 Create a `playAgain` bool and set it to false. Also create another while loop. This will handle asking the player to play again.
 
-```c#
+```csharp
 while(true)
 {
   //Everything we wrote would be here.
@@ -241,7 +241,7 @@ while(true)
 
 Inside the inner while loop, add:
 
-```c#
+```csharp
 bool playAgain = false;
 while(true)
 {
@@ -254,7 +254,7 @@ We are asking the user to play again, taking their input, and assigning the inpu
 
 Next, add:
 
-```c#
+```csharp
 while(true)
 {
   bool playAgain = false;
@@ -290,7 +290,7 @@ That boolean must mean something! Oh wait, we're gonna deal with it right now.
 
 Continue to focus on the while loop we were just writing.
 
-```c#
+```csharp
 while(true)
 {
   //Everything we wrote would be here.
@@ -318,7 +318,7 @@ Happy Hacking!
 
 <summary> Final source code: </summary>
 
-```c#
+```csharp
 using System;
 using System.IO;
 
