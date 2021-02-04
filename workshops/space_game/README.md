@@ -35,7 +35,7 @@ We will be drawing to the screen using the turtle library! Turtle allows us to d
 <img src="https://media2.giphy.com/media/H4iFSugbzV4cIobri3/200.gif" width="380" alt="Start Gif">
 Initial statements are needed. Don't forget them! Put them right under the import statements.
 
-```csharp
+```python
 turtle.hideturtle()
 turtle.up()
 turtle.goto(-150,0)
@@ -43,7 +43,7 @@ turtle.goto(-150,0)
 These initial turtle statements hide the cursor, make the turtle go up to prevent it from drawing when we change locations, and go to a specified location. This location is where we will be drawing some text.
 
 This code goes at the bottom.
-```csharp
+```python
 start = 0
 spacePress = 0
 turtle.write("Press Left for Space Game 1 Right for Space Game 2", font=("Arial", 8, "normal"))
@@ -55,7 +55,7 @@ turtle.write("Press Left for Space Game 1 Right for Space Game 2", font=("Arial"
 ## Initial Booleans
 
 This code goes at the bottom.
-```csharp
+```python
 game1Playing = False
 game1end = False
 
@@ -70,7 +70,7 @@ These booleans are initialized. They will be used later on when the user starts 
 To the left now.
 
 Game 1 is the game where we will be pressing the space bar as fast as possible for 100 times. This function will be at the bottom of the program.
-```csharp
+```python
 def left():
   global game1Playing
   global start
@@ -82,7 +82,7 @@ def left():
 - Set `start` to the current time. Remember, this will be used later on to get the total time of the user.
 
 This code goes within the `left` function and right under what we just wrote.
-```csharp
+```python
 def left():
   #What we just wrote would be here.
   turtle.clear()
@@ -96,7 +96,7 @@ The turtle clears the screen, goes to a specified location, and tells the user t
 To the right now.
 
 Game 2 is the game where we will be pressing the space bar as much as possible in 5 seconds. This function goes right under the `left` function.
-```csharp
+```python
 def right():
   global game2Playing
   game2Playing = True
@@ -105,7 +105,7 @@ def right():
 - Make the `game2Playing` boolean global so we can access and modify it. In fact, set it to true after we make it global. Without it being global, we would not be able to do this.
 
 This code goes within the `right` function and right under what we just wrote.
-```csharp
+```python
 def right():
   #What we just wrote would be here.
   turtle.clear()
@@ -116,7 +116,7 @@ The turtle clears the screen, goes to the specified location, and tells the user
 
 ## Activate Timer
 This code will be used for Game 2, and the function will be called later in the program. It will make more sense then so don't worry!  This function does right below our `right` function.
-```csharp
+```python
 def TimerActivate():
   global game2end
   timeVal = 5
@@ -126,7 +126,7 @@ def TimerActivate():
 - Create the `timeVal` integer and set it equal to 5. This represents the amount of the time the user has to press the space bar as fast as possible in Game 2.
 
 This code goes within the `TimerActive` function and right below what we just wrote.
-```csharp
+```python
 def TimerActivate():
   #What we just wrote would be here.
   for i in range(timeVal):
@@ -146,7 +146,7 @@ def TimerActivate():
 The user's going to be pressing space so let's handle that. This is also where it will check what game is currently being played and have code for both games. This function goes at the bottom of the program.
 
 ### Initial Variables
-```csharp
+```python
 def space():
   global game1Playing
   global spacePress
@@ -164,7 +164,7 @@ Add this code within our `space` function and right after what we just wrote.
 #### Initial Statements
 
 This code goes within the `space` function but after what we just wrote.
-```csharp
+```python
 def space():
   #What we just wrote should be here.
   if (game1Playing):
@@ -182,7 +182,7 @@ def space():
 #### Ending the Game
 
 This code goes within the `space` function and if statement and right under what we just wrote.
-```csharp
+```python
 def space():
   #What we already wrote would be here.
   if (game1Playing):
@@ -203,7 +203,7 @@ Onto the second game!
 
 This code goes within the `space` function and right under the if statement.
 #### Initial Statements
-```csharp
+```python
 def space():
   #What we already wrote would be here.
   elif (game2Playing):
@@ -218,7 +218,7 @@ def space():
 #### Ending the Game
 
 This code goes without of elif statement we just created, and it goes below what we just wrote.
-```csharp
+```python
 def space():
   #What we already wrote would be here.
   elif (game2Playing):
@@ -235,7 +235,7 @@ If `game2end` is true, clear the screen, go to a specified coordinate, let the u
 You are so close to finishing. Like really close.
 
 This code goes at the bottom of the program.
-```csharp
+```python
 turtle.onkey(space, "space")
 turtle.onkey(left, "Left")
 turtle.onkey(right, "Right")
@@ -255,7 +255,7 @@ Happy Hacking!
 
 <summary> Final source code: </summary>
 
-```csharp
+```python
 import time
 import turtle
 
