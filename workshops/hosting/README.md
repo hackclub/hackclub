@@ -53,7 +53,7 @@ This is our repl.it instance's shell (or terminal), it should look like this:
 
 In the shell, type:
 
-```sh
+```shell
 npx create-react-app my-awesome-app
 cd my-awesome-app
 ```
@@ -62,7 +62,7 @@ It'll take 2-3 minutes for it to complete. This will essentially pull up boilerp
 
 Now let's initialize a git repo in our app and make a commit. Head over to your repl.it's shell and type:
 
-```sh
+```shell
 git init
 git add .
 git commit -m "Initial Commit"
@@ -70,7 +70,7 @@ git commit -m "Initial Commit"
 
 This will throw an error, asking for your name and email address. To remove this error and make a commit, type:
 
-```sh
+```shell
 git config --global user.email "<your email>"
 git config --global user.name "your name>"
 git commit -m "Initial Commit"
