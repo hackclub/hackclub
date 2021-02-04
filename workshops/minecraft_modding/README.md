@@ -9,7 +9,7 @@ Learning to mod Minecraft is a very simple process and can help anyone learn pro
 
 ![The end result with an inventory tab and a few items](https://cloud-m4x2nuz66.vercel.app/image.png) 
 
-Here is the [final code](https://github.com/KaiDevrim/PlayerEvolutions/tree/workshop). This workshop should take around an hour to complete but its fun the entire time.
+Here is the [final code](https://github.com/KaiDevrim/PlayerEvolutions/tree/workshop). This workshop should take about an hour and a half to complete.
 
 *Note: unlike most workshops, this workshop requires a local development environment. You need to use a computer that you're allowed to install things on. If you're using a school-issued computer or a Chromebook, this workshop may not work for you.*
 
@@ -25,17 +25,19 @@ Next, download and unzip the starter project from [hack.af/modworkshopstarter](h
 
 You should be greeted with something like this:
 
-![IntelliJ starter project](https://cloud-c322pijsg.vercel.app/0screen_shot_2021-02-04_at_10.05.11_am.png)
+![IntelliJ starter project](https://cloud-9cq9hdss4.vercel.app/0screen_shot_2021-02-04_at_12.47.38_pm.png)
 
 ### Walking through the starter project
 
 So what's all this stuff?
 
-The most important thing that you can't see is Forge. Forge is the API used to make Minecraft mods. Throughout the process of making this mod, you'll be importing things from "net.minecraft" or "net.minecraftforge"—these are all methods as part of Forge that allow you to access things in Minecraft, such as blocks, items, inventory, textures, events, you name it!
+The most important thing that's included in this project is Forge. Forge is the API used to make Minecraft mods. Throughout the process of making this mod, you'll be importing things from "net.minecraft" or "net.minecraftforge"—these are all methods as part of Forge that allow you to access things in Minecraft, such as blocks, items, inventory, textures, events, you name it!
 
 <details>
 
 <summary>How do you install Forge normally (not as part of a starter project)?</summary>
+
+---
 
 If you're going to make mods in the future, you'll have to be able to install Forge yourself. Here's how you do it:
 
@@ -49,11 +51,13 @@ Once the Forge MDK is installed, start up IDEA. Once it's started up, click on `
 
 ![Open As Project](https://cloud-1ijkxbdqk.vercel.app/image.png)
 
+---
+
 </details>
 
 Next, if you expand all the folders in under the `main` folder on the left sidebar, you'll notice a _bunch_ of nested folders with some files inside them. This is the common folder structure for a Minecraft mod. If you make your own mod in the future, you'll have to make all of these folders and files yourself.
 
-![folder structure](https://cloud-m0v4ngksl.vercel.app/0screen_shot_2021-02-04_at_10.16.51_am.png)
+![folder structure](https://cloud-gt6de7jsm.vercel.app/0screen_shot_2021-02-04_at_12.49.00_pm.png)
 
 ### The setup steps that we do need to do
 
@@ -69,11 +73,13 @@ First:
 
 ![Gradle Project -> Tasks -> fg_runs -> genIntelliJRuns](https://cloud-hfo336o3s.vercel.app/image.png) <br>
 
+This may take a while.
+
 `Gradle` is the name of the build system we are using. It is what turns our Java code into something the compiler understands. `Tasks` is a directory of all the build actions we can use, so if we wanted to change the way the compiler saw our program then we change which build action or Task. `fg_runs` is the Forge specfic build action set and contains all the build actions for our program. 
 
 `genIntellijRuns` tells the compiler and the program itself that it needs to go through Forge before going through the compiler. This also sets us up with our development environment with the mod automically loaded in and a test version of Minecraft is loaded when you run the program from your IDE.
 
-Once it has been built, it should say `BUILD SUCCESSFUL` in the Build tab at the bottom.
+Once it has been built, it should say `BUILD SUCCESSFUL` in the Build tab at the bottom. You can close the gradle tab now by clicking on the `-` at the top right.
 
 Next, we need to rename some of the directories in the project. Take a look at your left sidebar. See how these are two directories that say `yourusername` and `modname`?
 
@@ -81,8 +87,10 @@ Next, we need to rename some of the directories in the project. Take a look at y
 
 The one at the top is called a package. Minecraft mods and plugins follow this package structure. Packages follow the format `com.yourusername.modname`. In IntelliJ, they're separated by periods, but these periods are actually their own nested directories.
 
-- Right-click on the package at the top. Hover over `Refactor`, then click `Rename`. Replace `yourusername` with your username, and `modname` with `playerevolutions`. Make sure there are no spaces and everything is lowercase.
+- Right-click on the package at the top. Hover over `Refactor`, then click `Rename`. Replace `yourusername` with your username (if you don't know what to put here, just put your name), and `modname` with `playerevolutions`. **Make sure there are no spaces and everything is lowercase.**
 - Next, right-click on the `assets.modname` directory. Hover over `Refactor`, then click `Rename`. Replace `modname` with `playerevolutions`.
+
+If you see a package called "yourusername" under your newly-renamed package, feel free to delete it.
 
 Now we're ready to start coding! 🚀
 
@@ -97,13 +105,13 @@ IntelliJ should automatically open the Java class. If it doesn't, open it by dou
 Just above the `public class PlayerEvolutions` line, add:
 
 ```java
-@Mod("PlayerEvolutions")
+@Mod("playerevolutions")
 public class PlayerEvolutions {
 
 }
 ```
 
-As you type `@Mod`, IntelliJ will prompt you to import something from Forge. Hit enter to import it. In Java, this @ thing is what's known as an [interface](https://www.w3schools.com/java/java_interface.asp). Forge provides an interface for registering our mod. By putting "PlayerEvolutions" inside the parenthesis, we're specifying that that is our mod ID.
+As you type `@Mod`, IntelliJ will prompt you to import something from Forge. Hit enter to import it. In Java, this @ thing is what's known as an [interface](https://www.w3schools.com/java/java_interface.asp). Forge provides an interface for registering our mod. By putting "playerevolutions" inside the parenthesis, we're specifying that that is our mod ID.
 
 Once this happens, here's what your Java file should look like:
 
@@ -112,7 +120,7 @@ package com.yourusername.playerevolutions;
 
 import net.minecraftforge.fml.common.Mod;
 
-@Mod("PlayerEvolutions")
+@Mod("playerevolutions")
 public class PlayerEvolutions {
 
 }
@@ -121,10 +129,10 @@ public class PlayerEvolutions {
 Inside the class (in between the curly braces), add:
 
 ```java
-@Mod("PlayerEvolutions")
+@Mod("playerevolutions")
 public class PlayerEvolutions {
   private static final Logger LOGGER = LogManager.getLogger();
-  public static final String MOD_ID = "ModName";
+  public static final String MOD_ID = "playerevolutions";
 }
 ```
 
@@ -148,7 +156,7 @@ import java.util.logging.LogManager;
 
 A Logger is just a method that makes it easy to log things to the console. You don't really need to know the specifics of what it does if you don't already know what it is.
 
-Under that line, add a [constructor](https://www.w3schools.com/java/java_constructors.asp), like so:
+Under the line you just wrote (the one that contains `MOD_ID`), add a [constructor](https://www.w3schools.com/java/java_constructors.asp), like so:
 
 ```java
 public PlayerEvolutions() {
@@ -166,7 +174,7 @@ public PlayerEvolutions() {
 }
 ```
 
-Hit `Alt + Enter` to import `FMLJavaModLoadingContext`, as well as `MinecraftForge`, if it isn't already imported. For now, you'll see errors on `setup` and `doClientStuff`. This is because we're referencing some methods that we haven't written yet. Once we write those methods, those errors will go away.
+Hit `Alt + Enter` to import `FMLJavaModLoadingContext` and `MinecraftForge`. For now, you'll see errors on `setup` and `doClientStuff`. This is because we're referencing some methods that we haven't written yet. Once we write those methods, those errors will go away.
 
 So let's define those methods! After the constructor, add:
 
@@ -202,10 +210,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("PlayerEvolutions")
+@Mod("playerevolutions")
 public class PlayerEvolutions {
     private static final Logger LOGGER = LogManager.getLogger();
-    public static final String MOD_ID = "ModName";
+    public static final String MOD_ID = "playerevolutions";
 
     public PlayerEvolutions() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
@@ -226,19 +234,17 @@ public class PlayerEvolutions {
 
 Next, we need to edit some metadata. Go to your `src/main/resources/META-INF/` directory and open the `mods.toml` file. This file contains the metadata for your mod. You won't need to edit most of the file, but you do need to edit one thing.
 
-Find the line that starts with `modID`. Replace `examplemod` with what you put inside the `@Mod` interface in your Java class ("PlayerEvolutions"). This is case-sensitive, so make sure it looks exactly the same!
+Find the line that starts with `modId`. Replace `ModWorkshop` with `playerevolutions`. This is case-sensitive, so make sure it looks exactly the same!
 
-In order to build and run Minecraft to test the mod, click on the build menu at the top and choose `runClient`. Then press `Shift-F10` or the triangle play button.
+In order to build and run Minecraft to test the mod, click on the build menu at the top and choose `runClient`. Then press `Shift-F10` or the triangle play button. This may take a little while.
 
 ![The build menu](https://cloud-1w8zg60d9.vercel.app/0screen_shot_2021-02-03_at_6.35.14_pm.png)
 
+![Client starting](https://cloud-d13bgaf5x.vercel.app/0screen_shot_2021-02-04_at_1.02.13_pm.png)
+
 ## Part 2: Setting up the Registry!
 
-That was a lot of setup—but the good news is that now we can actually start writing the mod!
-
-Making your first item is annoying to setup but easy once you understand. 
-
-The first step is to make a registry handler.
+We're almost ready to start writing our first item. But first, we need to make a Registry Handler.
 
 A Registry Handler is what Forge [describes as](https://mcforge.readthedocs.io/en/latest/concepts/registries/) making objects known to the game. We are telling Minecraft that there are new elements like blocks, items, sounds, resources and we need to load them in. Without this, Minecraft would not know what to load or how to load in the new resources.
 
@@ -274,7 +280,7 @@ public class RegistryHandler {
 
 Essentially, we are just adding our item to the Forge registry.
 
-To finish off registering our items, go back into your main class, `PlayerEvolutions.java` and before the `MinecraftForge.EventBus` line add this to make sure your registry is loaded into the game:
+To finish off registering our items, go back into your main class, `PlayerEvolutions.java`, and before the `MinecraftForge.EventBus` line add this:
 
 ```java
 RegistryHandler.init();
@@ -287,10 +293,10 @@ Make sure to import your `RegistryHandler` class.
 <summary>Not sure where to add this line?</summary>
 
 ```java
-@Mod("PlayerEvolutions")
+@Mod("playerevolutions")
 public class PlayerEvolutions {
     private static final Logger LOGGER = LogManager.getLogger();
-    public static final String MOD_ID = "ModWorkshop";
+    public static final String MOD_ID = "playerevolutions";
 
     public ModWorkshop() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
@@ -368,9 +374,9 @@ Once, you're inside the `ItemBase` class:
 - Inside the parentheses of the `ItemBase` constructor, remove `Properties properties`.
 - Within the `super()` method, remove `properties` and add this line:
   ```java
-  super(new Item.Properties().group(PlayerEvolutions.TAB)
+  super(new Item.Properties().group(PlayerEvolutions.TAB));
   ```
-- You will see an error because we haven't made a TAB for our item yet.
+- Import everything that it prompts you to import. You will see an error on `TAB` because we haven't made a TAB for our item yet.
 
 Once you've done this, here's what the whole `ItemBase` class should look like:
 
@@ -418,13 +424,13 @@ Find the file called `en_US.json` in `src/main/resources/lang`. Open the file. I
 }
 ```
 
-Next, find the file called `item.json` in the `models/item` directory. Rename it to `ruby.json`.
+Next, find the file called `ruby.json` in the `models/item` directory.
 
 Inside the file, add:
 
 ```json
 { 
-  "parent": "ruby/generated", 
+  "parent": "item/generated", 
   "textures": { 
     "layer0": "playerevolutions:items/ruby" 
   } 
@@ -435,7 +441,9 @@ All this is doing is telling Forge that the item only has one layer.
 
 Now run Minecraft using Shift-F10 or the triangle play button and see your item in Minecraft!
 
-## Part 5: Making your first block! 
+![test minecraft with untextured item](https://cloud-9sg6t7g02.vercel.app/0screen_shot_2021-02-04_at_1.22.45_pm.png)
+
+## Part 5: Making your first block!
 
 Making your first block is actually very simple now that we have most of the files and registries made.  
 
@@ -484,6 +492,8 @@ public class RegistryHandler {
 
 </details>
 
+You will see errors on `RubyBlock` and `BlockItemBase`. We'll create those later.
+
 Next, find the directory called `blocks`. Right-click on it and create two classes:
 
 - `BlockItemBase`
@@ -519,7 +529,7 @@ Now, go back to the `RegistryHandler` class and use `Alt + Enter` to import thes
 
 We're almost done! The final step is to add our block texture to the game.
 
-Find the file called `my_block.json` in the folder called `blockstates`. Inside, add:
+Find the file called `ruby_block.json` in the folder called `blockstates`. Inside, add:
 
 ```json
 { 
@@ -529,13 +539,10 @@ Find the file called `my_block.json` in the folder called `blockstates`. Inside,
 }
 ```
 
-Next, find the file called `my_block.json` in the folder called `models/block`. Inside, add:
+Next, find the file called `ruby_block.json` in the folder called `models/block`. Inside, add:
 
 ```json
-{ 
-  "variants": { 
-    "": { "model": "playerevolutions:block/ruby_block" } 
-  },
+{
   "parent": "block/cube_all", 
   "textures": { 
     "all": "playerevolutions:blocks/ruby_block" 
@@ -543,7 +550,7 @@ Next, find the file called `my_block.json` in the folder called `models/block`. 
 }
 ```
 
-Finally, find the file called `my_block.json` in `models/item`. Inside, add:
+Finally, find the file called `ruby_block.json` in `models/item`. Inside, add:
 
 ```json
 { 
