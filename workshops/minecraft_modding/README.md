@@ -9,7 +9,7 @@ Learning to mod Minecraft is a very simple process and can help anyone learn pro
 
 ![The end result with an inventory tab and a few items](https://cloud-m4x2nuz66.vercel.app/image.png) 
 
-Here is the [final code](https://github.com/KaiDevrim/PlayerEvolutions/tree/workshop). This workshop should take about an hour and a half to complete.
+Here is the [final code](https://github.com/MatthewStanciu/MinecraftModWorkshop/tree/master). This workshop should take about an hour and a half to complete.
 
 *Note: unlike most workshops, this workshop requires a local development environment. You need to use a computer that you're allowed to install things on. If you're using a school-issued computer or a Chromebook, this workshop may not work for you.*
 
@@ -179,7 +179,7 @@ Hit `Alt + Enter` to import `FMLJavaModLoadingContext` and `MinecraftForge`. For
 So let's define those methods! After the constructor, add:
 
 ```java
-public ModName {
+public PlayerEvolutions {
   // ...code we just wrote
 }
 
@@ -559,6 +559,8 @@ Finally, find the file called `ruby_block.json` in `models/item`. Inside, add:
 ```
 
 That's it! If you start the test Minecraft client, you should see your mod in action 😎
+
+*Note: we used predefined textures that came as part of the starter project for the item and block textures. You can find those files in `resources/textures`. When you make a mod on your own, you'll have to define your own textures. You can do it pretty easily in Paint or a pixel art maker. The only requirement is that it needs to be 16x16!*
 
 ## Hacking
 
