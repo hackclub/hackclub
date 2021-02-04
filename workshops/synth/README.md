@@ -13,7 +13,7 @@ Note to club leaders: This workshop is noisy, so **remind people to bring headph
 
 ## My Version
 
-[Live Version](https://synth--polytrope.repl.co) | [Source Code](https://repl.it/@polytrope/synth)
+[Live Version](https://synth.hcbjcentro.repl.co/) | [Source Code](https://repl.it/@hcbjcentro/synth)
 
 ![](img/color_synth.gif)
 
@@ -100,15 +100,14 @@ Let's add some code to make Tone do something simple. Try putting this into your
 
 ```html
 <script>
-  var synth = new Tone.Synth().toMaster()
-
-  synth.triggerAttack(400)
+  Tone.start();
+  const synth = new Tone.Synth().toDestination();
 </script>
 ```
 
-The first line creates a new synthesizer and plugs it into your speakers. The second line triggers a note at 400Hz. Go ahead and run your page.
+In the first line, we initialized Tone.js with `Tone.start()`. After that, we call our function and created a new synthesizer to emit our sounds.
 
-You should hear a super annoying noise. If you are not annoyed, either your sound is off or something got mixed up in your code. This is what you should have so far:
+This is what you should have until now:
 
 ```html
 <!DOCTYPE html>
@@ -135,64 +134,64 @@ You should hear a super annoying noise. If you are not annoyed, either your soun
     <div id="pad"></div>
   </body>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.3.11/Tone.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.9/Tone.js"></script>
 
   <script>
-    var synth = new Tone.Synth().toMaster()
-
-    synth.triggerAttack(400)
+    Tone.start();
+    const synth = new Tone.Synth().toDestination();
   </script>
 </html>
 ```
 
-(to make it stop, refresh the page.)
-
 ## Adding Click/Touch with "Pointer Events"
 
-Ok, now we need a way to turn our tone on and off. Delete that `synth.triggerAttack(400);`. We're going to replace it with two _functions_ and two _listeners_—the functions will turn the synth on and off, and the listeners will activate those functions when a _pointer_ (mouse or finger) the page.
+Ok, now we need a way to turn our tone on and off. We're going to do that by creating two _functions_ and two _listeners_—the functions will turn the synth on and off, and the listeners will activate those functions when a _pointer_ (mouse or finger) is moving through the page.
 
 First, add the `down` and `up` functions:
 
 ```js
-var synth = new Tone.Synth().toMaster()
+Tone.start();
+const synth = new Tone.Synth().toDestination();
 
 function down(event) {
-  synth.triggerAttack(400)
+  synth.triggerAttack(400);
 }
 function up(event) {
-  synth.triggerRelease()
+  synth.triggerRelease();
 }
 ```
 
 Now let's listen for `pointerdown` and `pointerup` events on our pad element. First we need to find the pad using `document.getElementById`:
 
 ```js
-var synth = new Tone.Synth().toMaster()
-var pad = document.getElementById('pad')
+Tone.start();
+const synth = new Tone.Synth().toDestination();
+var pad = document.getElementById('pad'); // <--
 
 function down(event) {
-  synth.triggerAttack(400)
+  synth.triggerAttack(400);
 }
 function up(event) {
-  synth.triggerRelease()
+  synth.triggerRelease();
 }
 ```
 
 Then we add two listeners to the pad element:
 
 ```js
-var synth = new Tone.Synth().toMaster()
-var pad = document.getElementById('pad')
+Tone.start();
+const synth = new Tone.Synth().toDestination();
+var pad = document.getElementById('pad');
 
 function down(event) {
-  synth.triggerAttack(400)
+  synth.triggerAttack(400);
 }
 function up(event) {
-  synth.triggerRelease()
+  synth.triggerRelease();
 }
 
-pad.addEventListener('pointerdown', down)
-pad.addEventListener('pointerup', up)
+pad.addEventListener('pointerdown', down); // <--
+pad.addEventListener('pointerup', up);     // <--
 ```
 
 Now if you run your page, the synth should respond to a click!
@@ -207,8 +206,8 @@ Our `down` function takes in a variable called `event`, which contains data abou
 
 ```js
 function down(event) {
-  var x = event.pageX
-  synth.triggerAttack(x)
+  var x = event.pageX;
+  synth.triggerAttack(x);
 }
 ```
 
@@ -228,12 +227,13 @@ Inside your synth pad, add one more `div`, call it "label", and put CLICK / DRAG
 </body>
 ```
 
-Our new label needs some style. Add this to your `style` section to change the text's font, size, and color:
+Our new label needs some style. Add this to your `style` section to change the text's font, size, color and disable its selection:
 
 ```css
 #label {
   font: 40px Arial;
   color: white;
+  user-select: none;
 }
 ```
 
@@ -267,6 +267,7 @@ Your whole style section should now look like this:
   #label {
     font: 40px Arial;
     color: white;
+    user-select: none;
   }
 </style>
 ```
@@ -278,41 +279,41 @@ When we trigger `down`, we want it to change our label to show the pitch. When w
 To change the text inside our label, first we need to grab that label element in JavaScript. Add this to the top of your `script` section:
 
 ```js
-var label = document.getElementById('label')
+var label = document.getElementById('label');
 ```
 
 Now add this to your `down` function to insert your pitch:
 
 ```js
-label.innerHTML = Math.round(x) + 'Hz'
+label.innerHTML = Math.round(x) + 'Hz';
 ```
 
 And add this to your `up` function to reset it:
 
 ```js
-label.innerHTML = 'DRAG'
+label.innerHTML = 'CLICK / DRAG';
 ```
 
 Your whole `script` section should now look like this:
 
 ```html
 <script>
-  var synth = new Tone.Synth().toMaster()
-  var pad = document.getElementById('pad')
-  var label = document.getElementById('label')
+  const synth = new Tone.Synth().toDestination();
+  var pad = document.getElementById('pad');
+  var label = document.getElementById('label');
 
   function down(event) {
-    var x = event.pageX
-    synth.triggerAttack(x)
-    label.innerHTML = Math.round(x) + 'Hz'
+    var x = event.pageX;
+    synth.triggerAttack(x);
+    label.innerHTML = Math.round(x) + 'Hz';
   }
   function up(event) {
-    synth.triggerRelease()
-    label.innerHTML = 'CLICK / DRAG'
+    synth.triggerRelease();
+    label.innerHTML = 'CLICK / DRAG';
   }
 
-  pad.addEventListener('pointerdown', down)
-  pad.addEventListener('pointerup', up)
+  pad.addEventListener('pointerdown', down);
+  pad.addEventListener('pointerup', up);
 </script>
 ```
 
@@ -324,9 +325,9 @@ Now to add that drag feature. For this we need one more function like `up` and `
 
 ```js
 function move(event) {
-  var x = event.pageX
-  synth.setNote(x)
-  label.innerHTML = Math.round(x) + 'Hz'
+  var x = event.pageX;
+  synth.setNote(x);
+  label.innerHTML = Math.round(x) + 'Hz';
 }
 ```
 
@@ -335,7 +336,7 @@ Notice that this one looks a lot like `down`. It gets the X position of the poin
 Like `up` and `down`, we also need a listener for `move`:
 
 ```js
-pad.addEventListener('pointermove', move)
+pad.addEventListener('pointermove', move);
 ```
 
 Now when you run your page, you should be able to click and drag to change pitch!
@@ -345,19 +346,19 @@ Now when you run your page, you should be able to click and drag to change pitch
 Ok, one last detail: When you mouse over your page it will trigger `move` and show a frequency, even if you haven't clicked yet. So we just need one more variable to know whether we are dragging. So add a variable for that at the top of your `script` section:
 
 ```js
-var dragging = false
+var dragging = false;
 ```
 
 Put this in your `down` function:
 
 ```js
-dragging = true
+dragging = true;
 ```
 
 Put this in your `up` function:
 
 ```js
-dragging = false
+dragging = false;
 ```
 
 And wrap everything in your `move` function with this:
@@ -372,33 +373,33 @@ Now your script section should look something like this:
 
 ```html
 <script>
-  var synth = new Tone.Synth().toMaster()
-  var pad = document.getElementById('pad')
-  var label = document.getElementById('label')
-  var dragging = false
+  const synth = new Tone.Synth().toDestination();
+  var pad = document.getElementById('pad');
+  var label = document.getElementById('label');
+  var dragging = false;
 
   function down(event) {
-    dragging = true
-    var x = event.pageX
-    synth.triggerAttack(x)
-    label.innerHTML = Math.round(x) + 'Hz'
+    dragging = true;
+    var x = event.pageX;
+    synth.triggerAttack(x);
+    label.innerHTML = Math.round(x) + 'Hz';
   }
   function up(event) {
-    dragging = false
-    synth.triggerRelease()
-    label.innerHTML = 'CLICK / DRAG'
+    dragging = false;
+    synth.triggerRelease();
+    label.innerHTML = 'CLICK / DRAG';
   }
   function move(event) {
     if (dragging) {
-      var x = event.pageX
-      synth.setNote(x)
-      label.innerHTML = Math.round(x) + 'Hz'
+      var x = event.pageX;
+      synth.setNote(x);
+      label.innerHTML = Math.round(x) + 'Hz';
     }
   }
 
-  pad.addEventListener('pointerdown', down)
-  pad.addEventListener('pointerup', up)
-  pad.addEventListener('pointermove', move)
+  pad.addEventListener('pointerdown', down);
+  pad.addEventListener('pointerup', up);
+  pad.addEventListener('pointermove', move);
 </script>
 ```
 
@@ -435,6 +436,7 @@ For reference, here's my whole `index.html` file at the end of writing this:
     #label {
       font: 40px Arial;
       color: white;
+      user-select: none;
     }
   </style>
 
@@ -444,38 +446,38 @@ For reference, here's my whole `index.html` file at the end of writing this:
     </div>
   </body>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.3.11/Tone.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.9/Tone.js"></script>
 
   <script>
-    var synth = new Tone.Synth().toMaster()
-    var pad = document.getElementById('pad')
-    var label = document.getElementById('label')
-    var dragging = false
+    const synth = new Tone.Synth().toDestination();
+    var pad = document.getElementById('pad');
+    var label = document.getElementById('label');
+    var dragging = false;
 
     function down(event) {
-      dragging = true
-      var x = event.pageX
-      synth.triggerAttack(x)
-      label.innerHTML = Math.round(x) + 'Hz'
+      dragging = true;
+      var x = event.pageX;
+      synth.triggerAttack(x);
+      label.innerHTML = Math.round(x) + 'Hz';
     }
     function up(event) {
-      dragging = false
-      synth.triggerRelease()
-      label.innerHTML = 'CLICK / DRAG'
+      dragging = false;
+      synth.triggerRelease();
+      label.innerHTML = 'CLICK / DRAG';
     }
     function move(event) {
       if (dragging) {
-        var x = event.pageX
-        synth.setNote(x)
-        label.innerHTML = Math.round(x) + 'Hz'
+        var x = event.pageX;
+        synth.setNote(x);
+        label.innerHTML = Math.round(x) + 'Hz';
       }
     }
 
-    pad.addEventListener('pointerdown', down)
-    pad.addEventListener('pointerup', up)
-    pad.addEventListener('pointermove', move)
+    pad.addEventListener('pointerdown', down);
+    pad.addEventListener('pointerup', up);
+    pad.addEventListener('pointermove', move);
   </script>
 </html>
 ```
 
-If you check out the "original" version I put at the top, you might notice a few differences—like pretty colors and a different sound. Check out my [source code](https://repl.it/@polytrope/synth) to see how I did those, and try adding some new features of your own!
+If you check out the "original" version I put at the top, you might notice a few differences—like pretty colors and a different sound. Check out my [source code](https://repl.it/@hcbjcentro/synth) to see how I did those, and try adding some new features of your own!
