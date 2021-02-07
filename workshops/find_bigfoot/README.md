@@ -55,7 +55,7 @@ So now you have to put an **image** of him into your game, like you did in the [
 
 When you're done, you should see Bigfoot in the live preview, like this:
 
-![](img/bigfoot_image.png)
+![bigfoot_image](img/bigfoot_image.png)
 
 And the `index.html` file looks like this:
 
@@ -73,17 +73,17 @@ And the `index.html` file looks like this:
 
 A game needs interaction in order to be a game, so let's display a pop-up box whenever the player clicks on Bigfoot, like this:
 
-![](img/bigfoot_popup.gif)
+![bigfoot_popup](img/bigfoot_popup.gif)
 
 How can you do that?
 
 One of the most important skills towards becoming an independent hacker is knowing how to Google things when stuck. So let's start by Googling "[HTML handle click](https://www.google.com/search?q=html+handle+click)":
 
-> ![](img/google_html_handle_click.png)
+> ![google_html_handle_click](img/google_html_handle_click.png)
 
 Clicking the first link takes you [here](http://www.w3schools.com/jsref/event_onclick.asp):
 
-> ![](img/w3schools_onclick.png)
+> ![w3schools_onclick](img/w3schools_onclick.png)
 
 Aha! It looks like whenever you put `onclick="myFunction()"` on a tag such as `button` or `img`, it executes the [**JavaScript**](http://www.w3schools.com/js/) code you put in the quotes whenever that tag is clicked on.
 
@@ -95,11 +95,11 @@ For one moment:
 
 We want our JavaScript code to display a pop-up box saying you've won. So now let's Google "[JavaScript pop-up box](https://www.google.com/search?q=javascript+popup+box)":
 
-> ![](img/google_javascript_popup_box.png)
+> ![google_javascript_popup_box](img/google_javascript_popup_box.png)
 
 The first link takes you [here](http://www.w3schools.com/js/js_popup.asp):
 
-> ![](img/w3schools_popup.png)
+> ![w3schools_popup](img/w3schools_popup.png)
 
 It looks like when you run `alert("I am an alert box!");` it opens a pop-up box showing the text inside the quotes. So if we put 2 and 2 together, our `img` tag should look like this:
 
@@ -144,7 +144,7 @@ That must be because we took him out of his natural habitat. You see, normally B
 
 When you are making your own projects, you won't have workshops telling the solution to every step. So this time, let's practice your Googling skills and see if you can figure out how to set that background image without being told the solution! After adding the background image, the live preview looks like this:
 
-![](img/bigfoot_background.png)
+![bigfoot_background](img/bigfoot_background.png)
 
 When you are done, or if you are simply really stuck, we've included a sample solution below. (But there are other ways to add the background image, so if your solution doesn't match mine, that's OK.)
 
@@ -168,7 +168,7 @@ There are several ways to add the background image. Here is one way:
 
 That's much better! But the top left corner is a pretty boring place to hide Bigfoot. Can you figure out how to set Bigfoot's **position** to somewhere else? This one is harder, and may take some trial and error, but it's really worth the effort to see if you can figure it out yourself. Afterwards, Bigfoot's position will be somewhere in the middle of the forest, rather than the top left corner, like this:
 
-![](img/bigfoot_position.png)
+![bigfoot_position](img/bigfoot_position.png)
 
 OK, got it working? If you need help, try asking your neighbor or workshop leader for hints.
 
@@ -178,11 +178,11 @@ Let's walk through the steps of one way of solving this.
 
 Google "[HTML position](https://www.google.com/search?q=html+position)".
 
-> ![](img/google_html_position.png)
+> ![google_html_position](img/google_html_position.png)
 
 The first link takes you [here](http://www.w3schools.com/cssref/pr_class_position.asp):
 
-> ![](img/w3schools_position.png)
+> ![w3schools_position](img/w3schools_position.png)
 
 It has some CSS code showing how to "position an `<h2>` element":
 
