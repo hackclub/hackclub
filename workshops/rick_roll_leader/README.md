@@ -14,24 +14,24 @@ _Note: you'll be required to provide a valid email address and phone number in o
 
 ## Signing up for Nexmo
 
-![](img/nexmo.png)
+![nexmo](img/nexmo.png)
 
 Visit [Nexmo's website](https://nexmo.com) and sign up by clicking on "Try it free".
 
-![](img/signup.png)
+![signup](img/signup.png)
 
 Fill out the signup form with the requested information.
 
-![](img/email-verify-notification.png)
-![](img/email-verify-email.png)
+![email-verify-notification](img/email-verify-notification.png)
+![email-verify-email](img/email-verify-email.png)
 
 You'll be sent a verification email. This may take a few minutes to arrive, and sometimes it'll be in your spam folder, so keep that in mind. Verify your email address once you receive the email.
 
-![](img/phone-verification.png)
+![phone-verification](img/phone-verification.png)
 
 Once you verify your email, you'll be taken to another page which asks you to input a phone number for extra verification. Once you enter your phone number, you'll receive a text message with a verification code that you need to input.
 
-![](img/dashboard.png)
+![dashboard](img/dashboard.png)
 
 Once you verify your phone number, you should be redirected to the Nexmo dashboard. You should also notice that you have $2 in free credit. Calls cost 1.39 cents per minute, so plan accordingly. If you lead a large club, you may want to consider adding some extra money to your account to ensure your funds don't run out during your meeting.
 
@@ -39,7 +39,7 @@ Copy your API key and API secret and store them somewhere where you can easily r
 
 ## Creating an application
 
-![](img/voice.png)
+![voice](img/voice.png)
 
 Navigate to "Voice –> Getting started" in the sidebar. You should be taken to this page, where you'll be able to create an application by typing in the name of your application. Once you click on "Create application", you should be prompted to download a file called `private.key`. Make sure you download this file—you'll need it for when your club members authenticate with your app. Nexmo stores application private keys in this file instead of storing them in plain text.
 
@@ -49,7 +49,7 @@ You'll also notice that you're given a new Application ID once you create your a
 
 By default, all calls using your Nexmo API credentials will come from the phone number you provided during signup. You'll have to share this phone number with your club members during the workshop. If you're okay with this, you don't need to complete this step. But if you don't want to share your personal phone number, you'll need to use a Nexmo virtual number instead.
 
-![](img/number.png)
+![number](img/number.png)
 
 Luckily, your Nexmo account comes with a free virtual number for your first month. To find it, navigate to "Numbers –> Your numbers". Click on the number to copy it, then save it somewhere where you can easily retrieve it.
 
