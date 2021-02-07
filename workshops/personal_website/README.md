@@ -10,7 +10,7 @@ Prophet Orpheus, [our mascot](https://hackclub.com/workshops/orpheus), is here t
 
 It will look something like this:
 
-![](img/dino_site.png)
+![dino_site](img/dino_site.png)
 
 Here's the [live demo][final_live_demo] and [final code][final_code] (see `index.html` and `style.css`).
 
@@ -27,7 +27,7 @@ This workshop should take around 45 minutes.
 
 To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
 
-![](img/html_repl.png)
+![html_repl](img/html_repl.png)
 
 ## Part II: The HTML File
 
@@ -37,7 +37,7 @@ HTML stands for Hypertext Markup Language. Every website from the New York Times
 
 You should have the `index.html` file open, and a bunch of text with `<` & `>` symbols. That's HTML!
 
-![](img/html_repl.png)
+![html_repl](img/html_repl.png)
 
 Repl.it gives us some code to start out with, but we're going to start from scratch. Go ahead and delete everything in the `index.html` file then **type** in the following. **DO NOT COPY AND PASTE.**
 
@@ -53,7 +53,7 @@ This structure is common to all HTML pages. In fact, you can take a look for you
 
 <!-- Source https://developers.google.com/web/tools/chrome-devtools/inspect-styles/imgs/elements-panel.png -->
 
-![](img/elements-panel.png)
+![elements-panel](img/elements-panel.png)
 
 Before proceeding, we'll briefly go over what our template means.
 
@@ -65,15 +65,15 @@ HTML works by storing information inside tags. `<html></html>` is an example of 
 
 Let's check out what our HTML file looks like in Live Preview! To do this, click on the **Run** button above the editor or press <kbd>Ctrl</kbd> + <kbd>Enter</kbd> (<kbd>Command</kbd> + <kbd>Enter</kbd> on Mac).
 
-![](img/run.png)
+![run](img/run.png)
 
 From there, the live preview to the right of the editor should show what your website looks like. If you want to view it in a new tab, the URL above the website preview is the live URL for your website
 
-![](img/url.png)
+![url](img/url.png)
 
 You can also open the external live preview by clicking the icon that looks like a box with an arrow. This will open live preview in a new tab at the aforementioned URL
 
-![](img/preview.gif)
+![preview](img/preview.gif)
 
 As you can see, the page is blank. This is because we haven't added anything to the `body` section yet. Let's add some content!
 
@@ -141,7 +141,7 @@ Go ahead and add this into your `index.html` now. I put my picture before my hea
 </html>
 ```
 
-![](img/no_css.png)
+![no_css](img/no_css.png)
 
 Remember, you need to **Run** your program every time you want to see your updated website.
 
@@ -157,7 +157,7 @@ While HTML oversees the content and the way it's structured, CSS is how you'll s
 
 We already have an `style.css` in the file tree and this is called an external style sheet because the CSS file is external to the HTML file (i.e., the stylesheet is not inside the HTML file).
 
-![](img/index_css.png)
+![index_css](img/index_css.png)
 
 Although we have a CSS file, until we explicitly tell the HTML file to use the CSS file, it will not use it. We must explicitly link the CSS file in the HTML. We'll do this by typing the following into the head of `index.html` (between `<head>` and `</head>`), because the head is where we tell information about the page to the browser.
 
@@ -236,7 +236,7 @@ body {
 
 Now be sure to **Run** to get the most recent version of your website. Ah, it is truly beautiful to behold.
 
-![](img/celebrate_harry_potter.gif)
+![celebrate_harry_potter](img/celebrate_harry_potter.gif)
 
 ## Part IV: Publishing
 
@@ -244,21 +244,21 @@ To actually save your website and be able to come back to it in the future you'l
 
 To create an account, click on the sign up prompt in the top right corner.
 
-![](img/signup.png)
+![signup](img/signup.png)
 
 Once you've filled out the fields (or signed up with another account), go ahead and click on the link they send you by email
 
-![](img/email.png)
+![email](img/email.png)
 
 Now that you have your account set up, all you need to do to change the name of your repl is click on the pencil next to it.
 
-![](img/edit_name.png)
+![edit_name](img/edit_name.png)
 
 Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes (or <kbd>Escape</kbd> to cancel your name change)
 
 And just like that your website is now published at the domain `PROJECTNAME--USERNAME.repl.co` (that's two dashes before your username) on the internet for all your friends to see!
 
-![](img/celebrate_rush_hour.gif)
+![celebrate_rush_hour](img/celebrate_rush_hour.gif)
 
 ## Part V: Hacking
 
