@@ -8,7 +8,7 @@ author: '@MatthewStanciu'
 
 One of the most common myths about coding among people who are first learning to code is that coding mostly consists of sitting in a dark room all day writing ~Algorithms~ in a black terminal window with green text, solving complex mathematical equations, and generally being a genius. You’re going to crush this myth in this workshop by making crazy, colorful splatter paint right in your web browser, in only 20 minutes.
 
-![](img/final-demo.png)
+![final-demo](img/final-demo.png)
 
 ## Getting started
 
@@ -97,7 +97,7 @@ function onMouseMove(event) {
 
 Instead of using the more common hexademical or RGB color systems, Paper.js uses the HSB color system, which uses angles on a color wheel to describe color. In the HSB color system, 0 = 0° = red, and `360*n`° is also red.
 
-![](img/hsb-color-wheel.PNG)
+![hsb-color-wheel](img/hsb-color-wheel.PNG)
 
 (If you’re interested in learning more about the HSB color system, check out [this fantastic explanation](https://learnui.design/blog/the-hsb-color-system-practicioners-primer.html))
 
@@ -146,23 +146,23 @@ canvas {
 
 If you run your repl again, you should notice that your red circles are now filling the entire screen. Woohoo!
 
-![](img/red-circles.JPG)
+![red-circles](img/red-circles.JPG)
 
 ## Making it splattery
 
 We’re getting somewhere, but this still doesn’t feel very splattery.
 
-![](img/real-splatter-paint.JPG)
+![real-splatter-paint](img/real-splatter-paint.JPG)
 
 Part of what makes splatter paint so fun to create and look at is the chaotic randomness of everything on the canvas. So, if you want to get your website as close to splatter paint as possible, the best way to do it is to introduce some randomness.
 
 Change the radius of your circles from `10` to `Math.round(Math.random() * 25) + 5`. This makes the radius a random number between 5 and 30. Then run the repl again.
 
-![](img/random-radius.JPG)
+![random-radius](img/random-radius.JPG)
 
 Not bad, but it feels sort of mashed together, doesn’t it? Maybe we can make each circle unique by making it a different color than the last. Try changing the hue from `0` to `event.count * 3`. Run the repl and see what happens.
 
-![](img/rainbow-colors.JPG)
+![rainbow-colors](img/rainbow-colors.JPG)
 
 `event.count * 3` creates a rainbow effect by setting the hue on each circle to the total number of times a circle has been drawn multiplied by 3, which jumps around the HSB color wheel. And it looks great!
 
