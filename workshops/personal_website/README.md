@@ -10,7 +10,7 @@ Prophet Orpheus, [our mascot](https://hackclub.com/workshops/orpheus), is here t
 
 It will look something like this:
 
-![dino_site](img/dino_site.png)
+![personal site of prophet orpheus](img/dino_site.png)
 
 Here's the [live demo][final_live_demo] and [final code][final_code] (see `index.html` and `style.css`).
 
@@ -27,7 +27,7 @@ This workshop should take around 45 minutes.
 
 To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
 
-![html_repl](img/html_repl.png)
+![html starter repl](img/html_repl.png)
 
 ## Part II: The HTML File
 
@@ -37,7 +37,7 @@ HTML stands for Hypertext Markup Language. Every website from the New York Times
 
 You should have the `index.html` file open, and a bunch of text with `<` & `>` symbols. That's HTML!
 
-![html_repl](img/html_repl.png)
+![HTML tags](img/html_repl.png)
 
 Repl.it gives us some code to start out with, but we're going to start from scratch. Go ahead and delete everything in the `index.html` file then **type** in the following. **DO NOT COPY AND PASTE.**
 
@@ -53,7 +53,7 @@ This structure is common to all HTML pages. In fact, you can take a look for you
 
 <!-- Source https://developers.google.com/web/tools/chrome-devtools/inspect-styles/imgs/elements-panel.png -->
 
-![elements-panel](img/elements-panel.png)
+![elements panel in inspect](img/elements-panel.png)
 
 Before proceeding, we'll briefly go over what our template means.
 
@@ -65,15 +65,15 @@ HTML works by storing information inside tags. `<html></html>` is an example of 
 
 Let's check out what our HTML file looks like in Live Preview! To do this, click on the **Run** button above the editor or press <kbd>Ctrl</kbd> + <kbd>Enter</kbd> (<kbd>Command</kbd> + <kbd>Enter</kbd> on Mac).
 
-![run](img/run.png)
+![run button at the top of the repl](img/run.png)
 
 From there, the live preview to the right of the editor should show what your website looks like. If you want to view it in a new tab, the URL above the website preview is the live URL for your website
 
-![url](img/url.png)
+![link(url) to your live demo](img/url.png)
 
 You can also open the external live preview by clicking the icon that looks like a box with an arrow. This will open live preview in a new tab at the aforementioned URL
 
-![preview](img/preview.gif)
+![preview - open in new tab](img/preview.gif)
 
 As you can see, the page is blank. This is because we haven't added anything to the `body` section yet. Let's add some content!
 
@@ -141,7 +141,7 @@ Go ahead and add this into your `index.html` now. I put my picture before my hea
 </html>
 ```
 
-![no_css](img/no_css.png)
+![site without CSS](img/no_css.png)
 
 Remember, you need to **Run** your program every time you want to see your updated website.
 
@@ -157,7 +157,7 @@ While HTML oversees the content and the way it's structured, CSS is how you'll s
 
 We already have an `style.css` in the file tree and this is called an external style sheet because the CSS file is external to the HTML file (i.e., the stylesheet is not inside the HTML file).
 
-![index_css](img/index_css.png)
+![index.css file](img/index_css.png)
 
 Although we have a CSS file, until we explicitly tell the HTML file to use the CSS file, it will not use it. We must explicitly link the CSS file in the HTML. We'll do this by typing the following into the head of `index.html` (between `<head>` and `</head>`), because the head is where we tell information about the page to the browser.
 
@@ -244,15 +244,15 @@ To actually save your website and be able to come back to it in the future you'l
 
 To create an account, click on the sign up prompt in the top right corner.
 
-![signup](img/signup.png)
+![signing up for repl](img/signup.png)
 
 Once you've filled out the fields (or signed up with another account), go ahead and click on the link they send you by email
 
-![email](img/email.png)
+![enter your email](img/email.png)
 
 Now that you have your account set up, all you need to do to change the name of your repl is click on the pencil next to it.
 
-![edit_name](img/edit_name.png)
+![edit your name](img/edit_name.png)
 
 Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes (or <kbd>Escape</kbd> to cancel your name change)
 
