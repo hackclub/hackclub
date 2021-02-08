@@ -8,7 +8,7 @@ author: '@MaxWofford'
 
 | What you'll build       |
 | ----------------------- |
-| ![final_demo](img/final_demo.gif) |
+| ![final demo](img/final_demo.gif) |
 
 Links to a live demo and the final code below. This workshop should take around 1 hour and 15 minutes.
 
@@ -39,7 +39,7 @@ Just as we've done previously, we're going to be building this project in Repl.i
 
 Go ahead and spin up a new [HTML repl](https://repl.it/languages/html) before continuing.
 
-![html_repl](img/html_repl.png)
+![html starter repl](img/html_repl.png)
 
 Our project's code is going to be divided into two files: `index.html` (the HTML code) and `script.js` (the JavaScript code). The HTML file will tell the browser about the game's existence and how to display it on the page. The JavaScript file will tell the browser how to actually run the game.
 
@@ -538,21 +538,21 @@ We're providing the following images and have already uploaded them to an image 
 
 > | **Player**                        |
 > | --------------------------------- |
-> | ![prophet_orpheus](img/prophet_orpheus.png)      |
+> | ![image of our player - prophet orpheus](img/prophet_orpheus.png)      |
 > | `https://i.imgur.com/N5uCbDu.png` |
 
 <br/>
 
 > | **Enemy**                         |
 > | --------------------------------- |
-> | ![asteroid](img/asteroid.png)             |
+> | ![our enemy - asteroid](img/asteroid.png)             |
 > | `https://i.imgur.com/OdL0XPt.png` |
 
 <br/>
 
 > | **Background**                    |
 > | --------------------------------- |
-> | ![background](img/background.png)           |
+> | ![background image](img/background.png)           |
 > | `https://i.imgur.com/aKQOg3G.png` |
 
 <br/>
@@ -694,7 +694,7 @@ function setup() {
 
 In GIF of what we're aiming for, you'll notice that the asteroid (the `enemy`) is spinning.
 
-![final_demo](img/final_demo.gif)
+![rotating asteriod in final demo](img/final_demo.gif)
 
 This is actually quite easy to implement using p5.play. The [`Sprite`](http://p5play.molleindustria.org/docs/classes/Sprite.html) class in p5.play has an attribute called [`rotationSpeed`](http://p5play.molleindustria.org/docs/classes/Sprite.html#prop-rotationSpeed), which we can set to have p5.play rotate the sprite every time `draw()` is called.
 
@@ -712,7 +712,7 @@ Feel free to customize the enemy's rotation speed to make it faster/slower!
 
 You're done, yay! The game you made is live at the URL above the preview in the editor:
 
-![preview](img/preview.gif)
+![open in new tab](img/preview.gif)
 
 Don't forget to share a link to your beautiful creation on the Slack on the [`#shipit`](https://hackclub.slack.com/messages/shipit) channel!
 
