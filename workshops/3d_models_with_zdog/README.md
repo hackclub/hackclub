@@ -85,7 +85,7 @@ _Note: Every shape has its own properties or elements, you can check [the full l
 Let’s add the following code to our JS file:
 
 ```javascript
-const cube = new Zdog.Box({
+new Zdog.Box({
   addTo: ws,
   width: 100,
   height: 100,
@@ -133,14 +133,14 @@ Congrats, you just made your first 3D model… Yeah, maybe not what you were exp
 Add the following code to our JS file:
 
 ```javascript
-function animatemodel() {
+function animateModel() {
   ws.rotate.y += 0.01
   ws.rotate.x += 0.01
   ws.updateRenderGraph()
-  requestAnimationFrame(animatemodel)
+  requestAnimationFrame(animateModel)
 }
 
-animatemodel()
+animateModel()
 ```
 
 Explanation:
@@ -152,7 +152,7 @@ Explanation:
 
 3. `ws.updateRenderGraph()` updates and render your Zdog illustration that was declared in the first variable, make sure to write the correct name in.
 4. `requestAnimationFrame(animatemodel)` this is like a loop, basically it makes the model rotates every time by creating frames.
-5. `animeatemodel()` calls the function.
+5. `animateModel()` calls the function.
 
 Now you can click on run again!
 
@@ -172,11 +172,37 @@ Making multiple shapes is very easy, it’s as simple as putting multiple shapes
 
 I wanna try making the Hack Club logo, but you can make whatever you want! Click [here](https://repl.it/@wollygfx/Hack-Club-logo) to see the final code.
 
-I'll start making the red square in the background:
+First, let's change the class of our canvas in the `index.html` file from `model` to `hackclub`.
+
+```html
+...
+<canvas class="hackclub"></canvas>
+...
+```
+
+And add a background color for our project in the `style.css` file.
+
+```css
+.hackclub {
+  background: #FDB;
+}
+```
+
+After that, let's go back to the `script.js` file and change the `element` selected by Zdog from `.template` to `.hackclub` and add the `dragRotate` property with the value set to `true` so we can rotate our creation.
+
+```js
+const ws = new Zdog.Illustration({
+  element: '.hackclub',
+  resize: 'fullscreen',
+  dragRotate: true
+})
+```
+
+Next, let's change the properties of our cube so that it turns into a red square:
 
 ```javascript
 new Zdog.Box({
-  addTo: model,
+  addTo: ws,
   width: 100,
   height: 100,
   color: '#ec3750',
@@ -193,13 +219,13 @@ new Zdog.Box({
 
 When running these few lines, we will get this:
 
-![red square](https://cloud-2q1vsewnu.vercel.app/0image.png)
+![red square](https://s2.gifyu.com/images/hc-rotate.gif)
 
 That looks perfect! Now I will create the letter h, so I am gonna need 3 more boxes:
 
 ```javascript
 new Zdog.Box({
-  addTo: model,
+  addTo: ws,
   depth: 20,
   width: 20,
   height: 80,
@@ -215,7 +241,7 @@ new Zdog.Box({
 
 ```javascript
 new Zdog.Box({
-  addTo: model,
+  addTo: ws,
   depth: 20,
   width: 20,
   height: 40,
@@ -231,7 +257,7 @@ new Zdog.Box({
 
 ```javascript
 new Zdog.Box({
-  addTo: model,
+  addTo: ws,
   depth: 20,
   width: 40,
   height: 20,
@@ -244,16 +270,16 @@ In this last one, all we had to do was to move the box to the right within the x
 
 ![result 3](https://cloud-m2gpkvlqa.vercel.app/0image.png)
 
-Now, i will just animate it
+Now let's update the animation function with some simple properties:
 
 ```javascript
-function animation() {
-  model.rotate.y += 0.01
-  model.updateRenderGraph()
-  requestAnimationFrame(animation)
+function animateModel() {
+  ws.rotate.y += 0.01
+  ws.updateRenderGraph()
+  requestAnimationFrame(animateModel)
 }
 
-animation()
+animateModel()
 ```
 
 Here's the final result:
