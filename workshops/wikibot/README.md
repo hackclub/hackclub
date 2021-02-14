@@ -10,7 +10,7 @@ A few months ago, I'd started making chatbots on [Telegram](https://t.me)—I'd 
 
 A week ago, I saw that [Twilio](https://twilio.com) had an official WhatsApp API. 30 minutes later, I made a [Wikipedia bot on WhatsApp](https://wikibot.4ty2.fun) 👇
 
-![final-demo](img/demo.png)
+![final demo](img/demo.png)
 
 This is a workshop to help you make a something like this, and make your own chatbots on WhatsApp, in just 30 minutes 🎓
 
@@ -18,21 +18,21 @@ This is a workshop to help you make a something like this, and make your own cha
 
 First, Sign up for [Twilio](https://www.twilio.com/try-twilio)—it's free and you won't need a credit card 💳
 
-![twilio_signup](img/twilio_signup.png)
+![twilio signup](img/twilio_signup.png)
 
 Once you're done verifying your phone number, select Products > Programmable SMS and then continue to name your project.
 
-![twilio_products](img/twilio_products.png)
+![twilio products](img/twilio_products.png)
 
 Feel free to skip steps for adding teammates—you won't need that for now.
 
 You must now take note of some authentication keys you'll need for building the WhatsApp bot 👇
 
-![auth_token](img/auth_token.png)
+![auth token](img/auth_token.png)
 
 The final step—[set up your WhatsApp Sandbox](https://www.twilio.com/console/sms/whatsapp/sandbox)—choose any number, and join your sandbox following instructions on the page.
 
-![whatsapp_sandbox](img/whatsapp_sandbox.png)
+![whatsapp sandbox](img/whatsapp_sandbox.png)
 
 …and you're done with credential setup! Don't worry, that was the toughest part of this tutorial 😛
 
@@ -55,7 +55,7 @@ Let's go back to the [WhatsApp Sandbox](https://www.twilio.com/console/sms/whats
 
 This URL must be what you see on the preview panel of your [repl.it](http://repl.it) project + `/incoming`
 
-![replit_url](img/replit_url.png)
+![replit url](img/replit_url.png)
 
 We can now finally read messages that are sent to the bot. Add a simple `console.log()` in your webhook handler 👇
 
@@ -67,7 +67,7 @@ app.post('/incoming', (req, res) => {
 
 When you send a message to your bot, you should be able to see something like this in your repl.it console 👨‍💻
 
-![app_running](img/app_running.png)
+![running our app](img/app_running.png)
 
 Building an Echo bot would look something like this, using `twiml` to write a message 👇
 
