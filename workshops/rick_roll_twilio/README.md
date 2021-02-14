@@ -21,7 +21,7 @@ We use environment variables to make sensitive details in our code private. Envi
 
 Environment variables are stored in a `.env` file. In order to keep the contents of the file private, `.env` files on repl.it are only visible to you, and are hidden from anyone else who sees your code. We use `process.env.ENV_VARIABLE_NAME` to refer to environment variables in code.
 
-Let’s create a `.env` file and store the credentials we need for authenticating with Nexmo. Once you’ve created a new `.env.` file, get the Account Sid and the Auth Token from the screen and add them to the file:
+Let’s create a `.env` file and store the credentials we need for authenticating with Twilio. Once you’ve created a new `.env.` file, get the Account Sid and the Auth Token from the screen and add them to the file:
 
 ```
 accountSid=xxxxxxx
