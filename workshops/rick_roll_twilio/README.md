@@ -55,7 +55,7 @@ For now we'll use the following set of instructions:
 
 What this document states is that our **response** when the call is picked up will be to **play** a `.mp3` file that contains the song Never Gonna Give You Up. 
 
-We'll need a link to this file for use later. This file is hosted at: [`https://cloud-ajkdft6d7.vercel.app/0response.xml`](https://cloud-ajkdft6d7.vercel.app/0response.xml).
+We'll need a link to this file for use later. This file is hosted at: [`https://cloud-40shzfm87.vercel.app/0response.xml`](https://cloud-40shzfm87.vercel.app/0response.xml).
 
 Awesome! Now that we’ve given Twilio instructions for a call, it’s time to place a call.
 
@@ -64,7 +64,8 @@ Twilio calls are created with `twilio.calls.create`. Here’s what creating a ca
 ```js
 twilio.calls
   .create({
-    url: 'https://cloud-ajkdft6d7.vercel.app/0response.xml',
+    url: 'https://cloud-40shzfm87.vercel.app/0response.xml',
+    method:'GET',
     to: 'TWILIO_PHONE_NUMBER',
     from: 'PHONE_NUMBER'
   })
@@ -81,7 +82,8 @@ const twilio = require('twilio')(process.env.accountSid, process.env.authToken);
 
 twilio.calls
   .create({
-    url: 'https://cloud-ajkdft6d7.vercel.app/0response.xml',
+    url: 'https://cloud-40shzfm87.vercel.app/0response.xml',
+    method:'GET',
     to: 'TWILIO_PHONE_NUMBER',
     from: 'PHONE_NUMBER'
   })
@@ -126,6 +128,24 @@ Then in between `<Response>` and `</Response>` add any of the following in any o
 ```
 
 There are so many other things you can do, check them out here: https://www.twilio.com/docs/voice/twiml.
+
+Once you're ready, you will need to host your XML document. You can do so on PasteBin.
+
+Head to http://pastebin.com. Then add your content:
+
+![Add Content](https://cloud-3q1u8g9dk.vercel.app/3screenshot_2021-02-14_at_4.04.14_pm.png)
+
+Then click `Create New Paste`:
+
+![Create New Paste](https://cloud-3q1u8g9dk.vercel.app/1screenshot_2021-02-14_at_4.04.21_pm.png)
+
+Then click `Raw`:
+
+![Click Raw](https://cloud-3q1u8g9dk.vercel.app/0screenshot_2021-02-14_at_4.04.31_pm.png)
+
+Lastly, copy the URL in the address bar:
+
+![URL in Address Bar](https://cloud-3q1u8g9dk.vercel.app/2screenshot_2021-02-14_at_4.04.44_pm.png)
 
 <br />
 <br />
