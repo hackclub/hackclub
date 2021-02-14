@@ -55,7 +55,7 @@ For now we'll use the following set of instructions:
 
 What this document states is that our **response** when the call is picked up will be to **play** a `.mp3` file that contains the song Never Gonna Give You Up. 
 
-We'll need a link to this file for use later. This file is hosted at: `[https://cloud-ajkdft6d7.vercel.app/0response.xml](https://cloud-ajkdft6d7.vercel.app/0response.xml)`.
+We'll need a link to this file for use later. This file is hosted at: [`https://cloud-ajkdft6d7.vercel.app/0response.xml`](https://cloud-ajkdft6d7.vercel.app/0response.xml).
 
 Awesome! Now that we’ve given Twilio instructions for a call, it’s time to place a call.
 
