@@ -159,7 +159,7 @@ function draw() {
 
 If you run your repl now, you should see this:
 
-![draw](img/draw.png)
+![particles of random colors all over the screen](img/draw.png)
 
 Nice! We've just given life to our particles! If you want to make your canvas look more like space, you can add
 
