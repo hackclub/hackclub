@@ -70,7 +70,6 @@ twilio.calls
   })
   .then(call => console.log(call.sid))
   .done();
-})
 ```
 
 We’re ready to rickroll! Add the above code block at the bottom of your `index.js` file. Replace `PHONE_NUMBER` with your phone number and `TWILIO_PHONE_NUMBER` with the number displayed on screen.
