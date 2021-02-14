@@ -8,7 +8,7 @@ author: '@MatthewStanciu'
 
 One of the most common myths about coding among people who are first learning to code is that coding mostly consists of sitting in a dark room all day writing ~Algorithms~ in a black terminal window with green text, solving complex mathematical equations, and generally being a genius. You’re going to crush this myth in this workshop by making crazy, colorful splatter paint right in your web browser, in only 20 minutes.
 
-![final-demo](img/final-demo.png)
+![final demo](img/final-demo.png)
 
 ## Getting started
 
@@ -146,23 +146,23 @@ canvas {
 
 If you run your repl again, you should notice that your red circles are now filling the entire screen. Woohoo!
 
-![red-circles](img/red-circles.JPG)
+![red circles](img/red-circles.JPG)
 
 ## Making it splattery
 
 We’re getting somewhere, but this still doesn’t feel very splattery.
 
-![real-splatter-paint](img/real-splatter-paint.JPG)
+![real splatter paint](img/real-splatter-paint.JPG)
 
 Part of what makes splatter paint so fun to create and look at is the chaotic randomness of everything on the canvas. So, if you want to get your website as close to splatter paint as possible, the best way to do it is to introduce some randomness.
 
 Change the radius of your circles from `10` to `Math.round(Math.random() * 25) + 5`. This makes the radius a random number between 5 and 30. Then run the repl again.
 
-![random-radius](img/random-radius.JPG)
+![circles with random radius](img/random-radius.JPG)
 
 Not bad, but it feels sort of mashed together, doesn’t it? Maybe we can make each circle unique by making it a different color than the last. Try changing the hue from `0` to `event.count * 3`. Run the repl and see what happens.
 
-![rainbow-colors](img/rainbow-colors.JPG)
+![circles with rainbow colors](img/rainbow-colors.JPG)
 
 `event.count * 3` creates a rainbow effect by setting the hue on each circle to the total number of times a circle has been drawn multiplied by 3, which jumps around the HSB color wheel. And it looks great!
 
