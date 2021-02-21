@@ -98,8 +98,8 @@ Let's break this down:
 - The class ```mb-3``` gives the column 3px of margin to its bottom.
 - The class ```mt-3``` gives the column 3px of margin to its top.
 
-Here's how our HTML document looks so far:  
-  
+<details><summary>Here's how our HTML document looks so far:</summary>
+    
 ```html
 <div class="container-fluid">
 
@@ -136,6 +136,7 @@ Here's how our HTML document looks so far:
 </div>
 <script src="script.js"></script>
 ```
+</details>
 
 ![Section 1 Result](https://cloud-cwwxoedf8.vercel.app/0section1.png)
 
@@ -156,7 +157,7 @@ In section 2 we'll just have to add an image tag inside of the **second column**
 - The class ```text-center``` as seen before, keeps all the elements in the center.
 - The ```src``` attribute inside of the ```<img>``` tag let us put an image as default, feel free to change it if you want to!
 
-Here's how our HTML document looks so far: 
+<details><summary>Here's how our HTML document looks so far:</summary>
   
 ```html
 <div class="container-fluid">
@@ -195,6 +196,7 @@ Here's how our HTML document looks so far:
 </div>
 <script src="script.js"></script>
 ```
+</details>
 
 ![Section 2 Result](https://cloud-q58efbf6w.vercel.app/00image-2.png)
 
@@ -245,7 +247,7 @@ Finally we need a button that we can use to reset the filters, this button goes 
 ```
 The classes ```btn``` & ```btn-primary``` are used to style the button.
 
-Here's how our HTML document looks so far: 
+<details><summary>Here's how our HTML document looks so far:</summary>
   
 ```html
 <div class="container-fluid">
@@ -307,6 +309,7 @@ Here's how our HTML document looks so far:
 </div>
 <script src="script.js"></script>
 ```
+</details>
 
 ![Section 3 Result](https://cloud-jwbtp72pu.vercel.app/0screen_shot_2020-11-11_at_12.33.02_pm.png)
 
