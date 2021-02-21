@@ -72,6 +72,8 @@ Add the following code inside your `<body>` tag:
   </div>
   
 </div>
+<script src="script.js"></script>
+
 ```
 Each ```<div>``` tag simply creates a container where the rows/columns will be in. What we actually need to understand are the classes that we are using:
 
@@ -132,6 +134,7 @@ Here's how our HTML document looks so far:
   </div>
   
 </div>
+<script src="script.js"></script>
 ```
 
 ![Section 1 Result](https://cloud-cwwxoedf8.vercel.app/0section1.png)
@@ -190,6 +193,7 @@ Here's how our HTML document looks so far:
   </div>
   
 </div>
+<script src="script.js"></script>
 ```
 
 ![Section 2 Result](https://cloud-q58efbf6w.vercel.app/00image-2.png)
@@ -301,6 +305,7 @@ Here's how our HTML document looks so far:
     </div>
   </div>
 </div>
+<script src="script.js"></script>
 ```
 
 ![Section 3 Result](https://cloud-jwbtp72pu.vercel.app/0screen_shot_2020-11-11_at_12.33.02_pm.png)
