@@ -246,66 +246,63 @@ The classes ```btn``` & ```btn-primary``` are used to style the button.
 <details><summary>Here's how our HTML document looks so far:</summary>  
   
 ```html
-	<body>
-		<div class="container-fluid">
-		
-			<!--Section #1-->
-			<div class="row">
-				<div class="col-md-12 text-center mb-3 mt-3">
-					<form id="imgurl">
-						<input type="text" placeholder="Image URL" id="onlineurl">
-								<button type="submit">Change Image</button>
-							</form>
-						</div>
-					</div>
-				  
-					<!--Section #2-->
-					<div class="row">
-						<div class="col-md-4">
-						</div>
-						<div class="col-md-4 text-center">
-							<img src="https://assets.hackclub.com/flag-orpheus-top.svg" id="targetimage" alt="">
-						</div>
-						<div class="col-md-4">
-						</div>
-					</div>
-		
-				    <!--Section #3-->
-					<div class="row">
-						<div class="col-md-4">
-						</div>
-						<div class="col-md-4 p-2 text-center" id="section_three">
-						    <h3>Image Filters</h3>
-			    		    <form id="slider-form">
-							    <p>
-							      <label for="gs">Grayscale</label>. 
-							      <input id="gs" name="gs" type="range" min="" max="100" value="0" class="slider">
-							    </p>
-							                        
-							    <p>
-							      <label for="blur">Blur</label>
-							      <input id="blur" name="blur" type="range" min="0" max="" value="0" class="slider">
-							    </p>
-		
-							    <p>
-							      <label for="hue-rotate">Hue-Rotate</label>
-							      <input id="hue-rotate" name="hue-rotate" type="range" min="0" max="" value="0" class="slider">
-							    </p>
-		
-							    <p>
-							      <label for="sepia">Sepia</label>
-							      <input id="sepia" name="sepia" type="range" min="0" max="" value="0" class="slider">
-							    </p>
-			            
-							    <button type="reset" class="btn btn-primary" >Reset</button>
-							</form>
-						</div>
-						<div class="col-md-4">
-						</div>
-					</div>
-				</div>
-			    <script src="script.js"></script>
-			</body>
+<div class="container-fluid">
+
+  <!--Section #1-->
+  <div class="row">
+    <div class="col-md-12 text-center mb-3 mt-3">
+      <form id="imgurl">
+        <input type="text" placeholder="Image URL" id="onlineurl">
+        <button type="submit">Change Image</button>
+      </form>
+    </div>
+  </div>
+  
+  <!--Section #2-->
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="https://assets.hackclub.com/flag-orpheus-top.svg" id="targetimage" alt="">
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+
+  <!--Section #3-->
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4 p-2 text-center" id="section_three">
+      <h3>Image Filters</h3>
+        <form id="slider-form">
+          <p>
+            <label for="gs">Grayscale</label>. 
+            <input id="gs" name="gs" type="range" min="" max="100" value="0" class="slider">
+          </p>
+                              
+          <p>
+            <label for="blur">Blur</label>
+            <input id="blur" name="blur" type="range" min="0" max="" value="0" class="slider">
+          </p>
+
+          <p>
+            <label for="hue-rotate">Hue-Rotate</label>
+            <input id="hue-rotate" name="hue-rotate" type="range" min="0" max="" value="0" class="slider">
+          </p>
+
+          <p>
+            <label for="sepia">Sepia</label>
+            <input id="sepia" name="sepia" type="range" min="0" max="" value="0" class="slider">
+          </p>
+            
+          <button type="reset" class="btn btn-primary" >Reset</button>
+        </form>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+</div>
 ```
 </details>
 
@@ -384,7 +381,7 @@ Works perfectly!
 
 Now we'll need to add an event listener to each range input in section 3, in order to be able to edit the image:
 ```js
-for (let i = 0; i < inputRange.length; i++) {
+for (let i = 0; i < inputrange.length; i++) {
   inputRange[i].addEventListener('input', editImage);
 }
 ```
