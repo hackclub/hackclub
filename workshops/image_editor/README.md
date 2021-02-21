@@ -97,7 +97,7 @@ Let's break this down:
 - The class ```mt-3``` gives the column 3px of margin to its top.
 
 <details><summary>Here's how our HTML document looks so far:</summary>  
-  
+
 ```html
 <div class="container-fluid">
 
@@ -115,7 +115,8 @@ Let's break this down:
   <div class="row">
     <div class="col-md-4">
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 text-center">
+      <img src="https://assets.hackclub.com/flag-orpheus-top.svg" id="targetimage" alt="">
     </div>
     <div class="col-md-4">
     </div>
@@ -154,8 +155,11 @@ In section 2 we'll just have to add an image tag inside of the **second column**
 - The class ```text-center``` as seen before, keeps all the elements in the center.
 - The ```src``` attribute inside of the ```<img>``` tag let us put an image as default, feel free to change it if you want to!
 
-<details><summary>Here's how our HTML document looks so far:</summary>  
+<details>
+
+<summary>Here's how our HTML document looks so far:</summary>  
   
+
 ```html
 <div class="container-fluid">
 
@@ -243,8 +247,11 @@ Finally we need a button that we can use to reset the filters, this button goes 
 ```
 The classes ```btn``` & ```btn-primary``` are used to style the button.
 
-<details><summary>Here's how our HTML document looks so far:</summary>  
+<details>
+
+<summary>Here's how our HTML document looks so far:</summary>  
   
+
 ```html
 <div class="container-fluid">
 
