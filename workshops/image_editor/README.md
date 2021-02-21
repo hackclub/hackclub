@@ -381,7 +381,7 @@ Works perfectly!
 
 Now we'll need to add an event listener to each range input in section 3, in order to be able to edit the image:
 ```js
-for (let i = 0; i < inputrange.length; i++) {
+for (let i = 0; i < inputRange.length; i++) {
   inputRange[i].addEventListener('input', editImage);
 }
 ```
