@@ -153,7 +153,7 @@ But, we never checked if a player has won or players have run out of moves. Let'
 
 This is the most exciting part of the game, we are gonna find out which player wins. There are 8 ways a player can win in this game, which are the straight lines in 3 vertical rows, 3 columns or 2 diagonal combinations. 
 
-There are a few possible ways we could check for a win. One on of the most common trick is having an array of possible winning combinations, which as you can probably already guess, would be a long list of array with 8 combinations. Then cross checking it with our board to find a match. While it does work, it's neither effecient nor fun. 
+There are a few possible ways we could check for a win. One on of the most common trick is having an array of possible winning combinations, which as you can probably already guess, would be a long list of array with 8 combinations. Then cross checking it with our board to find a match. While it does work, it's neither efficient nor fun. 
 What we are going to use is a [Magic Square](https://en.wikipedia.org/wiki/Magic_square) ✨. It's a square grid of numbers that when added up in rows or columns or diagonally, always sums up to a magic number. Which in our case is going to be 15. This photo from Wikipedia illustrates it nicely:
 
 ![https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Magicsquareexample.svg/1280px-Magicsquareexample.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Magicsquareexample.svg/1280px-Magicsquareexample.svg.png)
@@ -183,7 +183,7 @@ for x in range(9):
               return True
 ```
 
-While we are at it, we can also do a simple check to see if the match is a tie by counting the number of cross or noughts placed on the board. 
+While we are at it, we can also do a simple check to see if the match is a tie by counting the number of cross or naughts placed on the board. 
 
 ```python
 for a in range(9):
@@ -220,7 +220,7 @@ def CheckWin(player):
 ```
 
 We are almost done. We still have one small change though. If you now try placing a sign into a box that's already occupied, our code will just overwrite the previous sign with the new one. This is not allowed in the game so let's fix it. 
-It's convinent to have a function that we can just call when it's a player's turn, instead of writing the same code twice in a loop. So let's make a function for it.
+It's convenient to have a function that we can just call when it's a player's turn, instead of writing the same code twice in a loop. So let's make a function for it.
 
 ```python
 def Turn(player):
