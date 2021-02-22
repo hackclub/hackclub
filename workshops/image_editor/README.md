@@ -72,7 +72,7 @@ Add the following code inside your `<body>` tag:
   </div>
   
 </div>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 ```
 Each ```<div>``` tag simply creates a container where the rows/columns will be in. What we actually need to understand are the classes that we are using:
@@ -134,7 +134,7 @@ Let's break this down:
   </div>
   
 </div>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 ```
 
 </details>
@@ -195,7 +195,7 @@ In section 2 we'll just have to add an image tag inside of the **second column**
   </div>
   
 </div>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 ```
 </details>
 
@@ -308,7 +308,7 @@ The classes ```btn``` & ```btn-primary``` are used to style the button.
     </div>
   </div>
 </div>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 ```
 </details>
 
