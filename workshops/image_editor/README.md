@@ -99,7 +99,7 @@ Let's break this down:
 - The class ```mt-3``` gives the column 3px of margin to its top.
 
 <details><summary>Here's how our HTML document looks so far:</summary>
-    
+
 ```html
 <div class="container-fluid">
 
@@ -136,6 +136,7 @@ Let's break this down:
 </div>
 <script src="script.js"></script>
 ```
+
 </details>
 
 ![Section 1 Result](https://cloud-cwwxoedf8.vercel.app/0section1.png)
