@@ -7,7 +7,7 @@ img: 'https://cloud-h0ul1djmv.vercel.app/0image.png'
 
 Hey! This is an interactive activity for leaders to run with their clubs. 
 It takes them through the process of using the [`kahoot.js-updated` npm module](https://www.npmjs.com/package/kahoot.js-updated) 
-to control a Kahoot user with Node.js. 
+to control a Kahoot user with Node.js. The module is deprecated, but this workshop should still work.
 
 A few quick pointers about the workshop:
 
@@ -49,11 +49,12 @@ On the day, load the slideshow from [here](https://workshop-deck-playground.hack
 
 Run the slideshow through, make sure to give the attendees time to type out their code. 
 
+Make sure that the students **fork** the starter repo at: https://hack.af/kahoot-repl
+
 When you reach the `Let's give it a go!` slide, pass your students the Kahoot code and let them run their programs. 
 Load up Kahoot's reports tab and show the student's scores.
 
-Then comes the challenge section. Begin by doing as the slides instruct. However, if you find the students are struggling load up a [repl.it](https://repl.it) 
-repl with the following code:
+Then comes the challenge section. Begin by doing as the slides instruct. However, if you find the students are struggling load up the starter repl and add the following code:
 
 ```javascript
 const Kahoot = require("kahoot.js-updated"); 
