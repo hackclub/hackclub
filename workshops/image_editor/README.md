@@ -72,6 +72,8 @@ Add the following code inside your `<body>` tag:
   </div>
   
 </div>
+<script src="script.js"></script>
+
 ```
 Each ```<div>``` tag simply creates a container where the rows/columns will be in. What we actually need to understand are the classes that we are using:
 
@@ -96,7 +98,7 @@ Let's break this down:
 - The class ```mb-3``` gives the column 3px of margin to its bottom.
 - The class ```mt-3``` gives the column 3px of margin to its top.
 
-<details><summary>Here's how our HTML document looks so far:</summary>  
+<details><summary>Here's how our HTML document looks so far:</summary>
 
 ```html
 <div class="container-fluid">
@@ -115,8 +117,7 @@ Let's break this down:
   <div class="row">
     <div class="col-md-4">
     </div>
-    <div class="col-md-4 text-center">
-      <img src="https://assets.hackclub.com/flag-orpheus-top.svg" id="targetimage" alt="">
+    <div class="col-md-4">
     </div>
     <div class="col-md-4">
     </div>
@@ -133,7 +134,9 @@ Let's break this down:
   </div>
   
 </div>
+<script src="script.js"></script>
 ```
+
 </details>
 
 ![Section 1 Result](https://cloud-cwwxoedf8.vercel.app/0section1.png)
@@ -155,11 +158,8 @@ In section 2 we'll just have to add an image tag inside of the **second column**
 - The class ```text-center``` as seen before, keeps all the elements in the center.
 - The ```src``` attribute inside of the ```<img>``` tag let us put an image as default, feel free to change it if you want to!
 
-<details>
-
-<summary>Here's how our HTML document looks so far:</summary>  
+<details><summary>Here's how our HTML document looks so far:</summary>
   
-
 ```html
 <div class="container-fluid">
 
@@ -195,6 +195,7 @@ In section 2 we'll just have to add an image tag inside of the **second column**
   </div>
   
 </div>
+<script src="script.js"></script>
 ```
 </details>
 
@@ -247,11 +248,8 @@ Finally we need a button that we can use to reset the filters, this button goes 
 ```
 The classes ```btn``` & ```btn-primary``` are used to style the button.
 
-<details>
-
-<summary>Here's how our HTML document looks so far:</summary>  
+<details><summary>Here's how our HTML document looks so far:</summary>
   
-
 ```html
 <div class="container-fluid">
 
@@ -310,6 +308,7 @@ The classes ```btn``` & ```btn-primary``` are used to style the button.
     </div>
   </div>
 </div>
+<script src="script.js"></script>
 ```
 </details>
 
@@ -388,7 +387,7 @@ Works perfectly!
 
 Now we'll need to add an event listener to each range input in section 3, in order to be able to edit the image:
 ```js
-for (let i = 0; i < inputrange.length; i++) {
+for (let i = 0; i < inputRange.length; i++) {
   inputRange[i].addEventListener('input', editImage);
 }
 ```
