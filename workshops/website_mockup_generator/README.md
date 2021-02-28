@@ -221,7 +221,7 @@ Now, let's write the function that will generate our mockup. At the bottom of th
 ```javascript
 const generateMockup = () => {
   // code here
-}
+};
 ```
 
 Inside the function, add these two lines:
