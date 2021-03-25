@@ -65,7 +65,7 @@ These actions are explicitly forbidden in Hack Club spaces:
   - discrimination based on age, nationality, race, (dis)ability, gender (identity or expression), sexuality, religion, or similar personal characteristic;
   - bullying or systematic harassment;
   - unwelcome sexual advances, including sexually explicit content.
-- Excessive advertisement for unnecessary or non-beneficial commercial products and services.
+- Advertisement for events, companies, organizations, etc - unless specifically given permission by Hack Club HQ.
 - Posting spam-like content that disrupts the environment of the community.
 
 ## Moderation & Enforcement
