@@ -21,16 +21,15 @@ Go to the bot tab, and click "Add Bot". Click the "Copy" button to copy the bot'
 ![Create bot](https://cloud-jjd7stz3y-hack-club-bot.vercel.app/1create_application2.png)
 ![Copy bot token](https://cloud-jjd7stz3y-hack-club-bot.vercel.app/2create_application3.png)
 
-Next, you will need to add permissions to your bot and invite it to a Discord server so it can do certain actions. In the "Scopes" section, select "bot". A URL will appeaer at the bottom which you should copy and paste into a new tab. This will allow you to invite the bot to your Discord server.
+Next, you will need to add permissions to your bot and invite it to a Discord server so it can do certain actions. In the "Scopes" section, select "bot". A URL will appear at the bottom which you should copy and paste into a new tab. This will allow you to invite the bot to your Discord server.
 
 ![Add bot scope](https://cloud-jjd7stz3y-hack-club-bot.vercel.app/3create_application4.png)
-![Inviting the bot to the server](https://cloud-5d05iqa4u-hack-club-bot.vercel.app/0create_application_maybe.png)
 
 Next, scroll down to the "Bot Permissions" section. You may add the following permissions:
 
 ![add bot permissions](https://cloud-jjd7stz3y-hack-club-bot.vercel.app/4create_application5.png)
 
-Now that we have created the bot user, we'll write some JavaScript code to bring the bot to life.
+Now that we have created the bot user and invited it to a server for testing, we'll write some JavaScript code so the bot can do things.
 
 # Discord.js Basics
 
@@ -52,7 +51,7 @@ After `discord.js` has been initialized we can log in with the bot. The followin
 bot.login('token')
 ```
 
-`token` is a placeholder for the bot's token. `discord.js` is event-based, meaning we set up listeners for the events that we want to respond to. The main one we're going to work with is `message`, this event will be fired anytime a message is sent in a server your bot is a member of. As long as the bot has privileges to read the channel the message was sent in. To add a listener for the `message` event we can use the following code:
+`token` is a placeholder for the bot's token which you copied earlier. Put it in quotes here, replacing `'token'`. Discord.js is event-based, meaning we set up listeners for the events that we want to respond to. The main one we're going to work with is `message`, this event will be fired anytime a message is sent in a server your bot is a member of. As long as the bot has privileges to read the channel the message was sent in. To add a listener for the `message` event we can use the following code:
 
 ```js
 bot.on('message', (message) => {
@@ -121,6 +120,7 @@ If you followed the steps above, your code should look exactly like this:
 ```js
 const Discord = require('discord.js')
 const bot = new Discord.Client()
+const prefix = 'h!'
 
 bot.on('message', (message) => {
   if (!message.content.startsWith(prefix)) return
@@ -130,7 +130,7 @@ bot.on('message', (message) => {
   }
 })
 
-bot.login('token')
+bot.login('yourtokenhere')
 ```
 
 # Additional Dependencies
