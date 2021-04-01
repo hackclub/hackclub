@@ -30,7 +30,7 @@ An IDE (Integrated Development Environment) is just fancy speak for where your c
 ## Step 0: Forking the starter repl
 To fork (copy) the starter template,
 
-1. Navigate to the [Starter Template](https://repl.it/@GurshanBrar/JavaScript-Typing-Test-Starter)
+1. Navigate to the [Starter Template](https://replit.com/@GurshanBrar/Javascript-Typing-Test-Starter)
 2. Edit anything and the template will be copied as one of your repls
 3. Click on the run button to run the website, and click on the "open in a new tab" button on the right of the url inside the repl's output.
 
