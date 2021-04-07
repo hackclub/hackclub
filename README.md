@@ -23,7 +23,7 @@ Hack Club was founded by [a teenager](https://zachlatta.com) who dropped out of 
 | Use our logos & banners         | <https://hackclub.com/brand/>        |
 | Follow us on Twitter            | <https://twitter.com/hackclub>       |
 
-## Contributing to our [Workshops](https://workshops.hackclub.com/)
+## Contributing to [Workshops](https://workshops.hackclub.com/)
 
 Contributions are welcome!
 
