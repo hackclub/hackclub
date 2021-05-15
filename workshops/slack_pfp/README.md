@@ -15,7 +15,7 @@ In my opinion this is the most painful part of this process.
 
 To begin you will need to be a member of a Slack Workspace. The easiest way to join one is to join [Hack Club's](https://hackclub.com/slack).
 
-Then visit the [Slack "Build" page](https://api.slack.com/apps). Click the large green button that says `Create New App`.
+Then visit the [Slack "Build" page](https://api.slack.com/apps). Click the large green button that says `Create an App` and select `From scratch` on the next screen.
 
 Name it whatever you'd like, and choose the workspace you'd like the app to be for.
 
