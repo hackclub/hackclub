@@ -60,17 +60,13 @@ To get started you are going to want to create a new Node.js  [repl.it](http://r
 
 Let's get going by adding your Slack token to your environment variables. What are environment variables? These are super secret variables that you don't want to store publicly. 
 
-Create a `.env` file and fill it in like:
+Repl.it provides us an easy way to pass in these environment variables to our app, head over to the "Secrets" tab in the left sidebar:
+![Secrets tab in repl.it](https://user-images.githubusercontent.com/54525904/118370466-73263280-b5c5-11eb-96ee-511a11161b06.png)
 
-```
-SLACK_TOKEN=XOXP-YOUR-TOKEN
-```
+and inside the "key" type `SLACK_TOKEN` and inside the "value" section, paste in your Slack OAuth token and click on `Add new secret` button:
 
-Remember we want to keep this a secret, so create a `.gitignore` file and make it's contents:
+![adding the secret in repl.it](https://user-images.githubusercontent.com/54525904/118370721-a7e6b980-b5c6-11eb-812e-e5bd3b1dc780.png)
 
-```
-.env
-```
 
 Now, let's add two packages (`axios` & `@slack/web-api`) to our `index.js` file.
 
