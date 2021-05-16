@@ -43,7 +43,7 @@ Next, clear the contents of `index.html` and put the following in its place:
 And we'll add script tags for Firebase, p5.js, jQuery, and our own `script.js` file within our `body`.
 
 ```html
-<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="script.js"></script>
@@ -375,7 +375,7 @@ In our `index.html`, we'll create a sort of control panel, with a `div` containi
     <button id="clearDrawing">DELETE DRAWING</button>
   </div>
 
-  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="main.js"></script>
