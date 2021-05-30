@@ -67,6 +67,7 @@ These actions are explicitly forbidden in Hack Club spaces:
   - unwelcome sexual advances, including sexually explicit content.
 - Advertisement for events, companies, organizations, etc - unless specifically given permission by Hack Club HQ.
 - Posting spam-like content that disrupts the environment of the community.
+- Murder, with or without meditation
 
 ## Moderation & Enforcement
 
