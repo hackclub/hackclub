@@ -1,6 +1,6 @@
 ---
 name: 'Password Generator'
-description: 'Build a password genertor tool with HTML, CSS, and JavaScript'
+description: 'Build a password generator tool with HTML, CSS, and JavaScript'
 author: '@HariOm987'
 img: https://cloud-nu1ftbbxy.vercel.app/0sample-demo.png
 ---
