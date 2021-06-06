@@ -7,7 +7,7 @@ group: starter
 
 _This workshop requires advance preparation by a club leader. If you are a club leader, [click here](https://workshops.hackclub.com/preview/main/rick_roll_leader) to view the preparation steps._
 
-[![](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[![Person with an open mouth, singing](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 Rickrolling has been around since the early days of the Internet. But have you ever wanted to take rickrolling to the next level, into the realm of phones? That’s what you’re going to do today. In this workshop, you’re going to build a Node.js web app that calls your phone and rickrolls you.
 
@@ -58,7 +58,7 @@ Instead of offering a private key in plain text, Nexmo saves private keys in a f
 
 Obtain the `private.key` file from your club leader and download it to your computer. Then, upload the file to repl.it by clicking on the three dots at the top left of your screen and clicking “Upload file”.
 
-![](img/upload-file.jpg)
+![Dropdown menu for uploading files in repl.it](img/upload-file.jpg)
 
 Once your `private.key` file is uploaded, you’re all set to start making calls!
 
