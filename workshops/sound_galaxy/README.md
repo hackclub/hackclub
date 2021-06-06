@@ -6,7 +6,7 @@ author: '@MatthewStanciu'
 
 Sound visualization is one of the coolest things that modern-day web development tools have made accessible. There’s something surreal and indescribably satisfying about _seeing_ the sounds around you on your screen and somehow understanding what you’re seeing.
 
-![](img/final-demo.GIF)
+![Colorful particles traveling vertically down the screen](img/final-demo.GIF)
 
 In this workshop, you’re going to create a galaxy out of shimmering particles that expand and move based on microphone input, in less than 50 lines of code.
 
@@ -159,7 +159,7 @@ function draw() {
 
 If you run your repl now, you should see this:
 
-![](img/draw.png)
+![Colorful particles randomly scattered on a white canvas](img/draw.png)
 
 Nice! We've just given life to our particles! If you want to make your canvas look more like space, you can add
 
