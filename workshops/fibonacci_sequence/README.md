@@ -217,7 +217,7 @@ Almost done! Now, to make this entire project functional and generate the Fibona
 # main program loop
 main()
 myTur.end_fill()
-sprial()
+spiral()
 wn.exitonclick()
 ```
 
