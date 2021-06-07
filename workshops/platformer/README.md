@@ -8,7 +8,7 @@ author: '@jkwok91'
 
 | What you'll build       |
 | ----------------------- |
-| ![](img/final_demo.gif) |
+| ![Square particles moving in a game](img/final_demo.gif) |
 
 _We recommend going through this workshop in Google Chrome._
 
@@ -293,7 +293,7 @@ if (firstGroundSprite.position.x <= camera.position.x - width / 2) {
 
 Save and refresh live preview. Hm, does something look funny to you? Specifically, how the first ground sprite is just blipping off the left edge instead of smoothly sliding off?
 
-![](img/scrolling_sprites.gif)
+![Text and diagrams describing the sprites position](img/scrolling_sprites.gif)
 
 This is an issue of not properly offsetting the sprite. Remember that the position of a sprite is at its center, so we must edit our conditional to include this offset. It should now read:
 
@@ -723,7 +723,7 @@ It's time to add in our sprite images! This exercise is left to the user.
 
 Make sure you're logged into your Repl.it account and, if you want to, go ahead and change the name of your repl by clicking on the pencil next to it.
 
-![](img/edit_name.png)
+![Edit button for changing project name](img/edit_name.png)
 
 Your game is now live and playable on `REPL_NAME--USERNAME.repl.co`!!
 
