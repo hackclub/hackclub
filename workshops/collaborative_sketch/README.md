@@ -8,7 +8,7 @@ author: '@jkwok91'
 
 | What you'll build       |
 | ----------------------- |
-| ![](img/final_demo.gif) |
+| ![Smiley face being drawn on 2 screen simultaneously](img/final_demo.gif) |
 
 _We recommend going through this workshop in Google Chrome._
 
@@ -84,7 +84,7 @@ Next, go to the `Database` tab on the left-hand side. Change the Database type b
 
 Click `Publish` to save your changes. You should see this warning at the top of your page -- don't worry about it:
 
-![](img/firebase_warning.png)
+![Red warning message with caution icon](img/firebase_warning.png)
 
 We'll now head back to our `script.js` file. Below the Firebase configuration, we'll add a variable `pointsData` that we can use to access Firebase.
 
