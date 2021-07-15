@@ -76,8 +76,8 @@ This `function` has three arguments.
 - `layer`- the layer you want to add parallax
 - `distance`- how much we scroll
 - `speed`- the required speed change
-  We will add parallax for multiple layers. That is the reason we made a function to recall it for different layers.
-  Then we will get the element(layer) required using `querySelector`. You can use any JavaScript DOM selector as your wish. Then translate the `Y-offset` of the element using CSS `transform: translateY();` to change the speed of that layer.
+  
+  We will add parallax for multiple layers. That is the reason we made a function to recall it for different layers. Then we will get the element(layer) required using `querySelector`. You can use any JavaScript DOM selector as your wish. Then translate the `Y-offset` of the element using CSS `transform: translateY();` to change the speed of that layer.
   The positive value into `translateY()` translates downwards and negative value translates upwards. Discover more about `translateY()` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateY).
 
 <a href="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png"><img src="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png" alt="translateY() example" height="250px" width="auto"/></a>
@@ -188,4 +188,4 @@ These are some projects made using parallax-effect.
 
 Check [this article](https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html) for awesome another-level parallax examples
 
-Hope you love this workshop! :v:
+Hope you love this workshop! ✌️
