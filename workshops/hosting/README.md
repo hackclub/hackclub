@@ -115,7 +115,7 @@ Refresh your repository's page on GitHub and make sure the changes are reflected
 
 Netlify and other similar services (like [Vercel](https://vercel.com/), [Firebase](https://firebase.google.com/), [AWS Lambda](https://aws.amazon.com/getting-started/) and [Azure Serverless](https://azure.microsoft.com/en-in/solutions/serverless/)) are also known as "Serverless Webhosts". ["Serverless"](https://www.cloudflare.com/learning/serverless/what-is-serverless/) essentially abstracts away the complications of working with backend architecture. In simple words it's like pawning off the complicated work to a third party so that the you the user can focus on *shipping* more.
 
-Log into [Netlify](www.netlify.com) (create an account if you haven’t already).
+Log into [Netlify](https://www.netlify.com) (create an account if you haven’t already).
 
 1. Click on “New site from Git”:
 ![Click on new site from git on netlify](https://cloud-ipr3ko8bo.vercel.app/0screenshot_2020-12-28_at_12.42.02_am.png)
@@ -137,7 +137,7 @@ Next, In Netlify's Domain Setting screen:
 
 1. Click on "Add custom domain" <br> ![click add custom domain](https://cloud-lsa9p1n9s.vercel.app/0image.png) <br>
 2. Type in the domain that you got from Namecheap and click "Verify" ![type a domain name and click verify](https://cloud-27kvllkf3.vercel.app/0image.png)
-3. You'll see a prompt saying your domain already has an owner. Click on "Yes, add domain" ![Click yes add domain](https://cloud-aywdrainn.vercel.app/0image.png)
+3. You'll see a prompt saying your domain already has an owner. Click on "Yes, add domain" <br/>![Click yes add domain](https://cloud-aywdrainn.vercel.app/0image.png)
 4. Back on the Domain Settings screen, copy the `.app` link—we'll register this link with our domain on Namecheap.
 
 Now, sign in to `namecheap.com` with the account you got your custom domain from so that we can add the *DNS Records*, think of records as the postage information you use to make sure your email is directed to the right place:
@@ -149,7 +149,7 @@ Sign into `namecheap.com` with the account you used to get your custom domain.
 1. On the Dashboard, click on the `Manage` button ![click manage domain](https://cloud-7f5s0mcm5.vercel.app/0image.png)
 2. Next, click on "Advanced DNS"![click advanced dns](https://cloud-b73r79wje.vercel.app/0image.png)
 3. Click on "Add New Record" ![click add new record](https://cloud-fwd4l8geb.vercel.app/0image.png)
-4. Choose `CNAME` from the dropdown. Yype `www` in the Host field. In the Value field, paste the `.app` link that Netlify gave you. Leave the TTL field to default "Automatic" and hit the green check mark.![click green check mark](https://cloud-lt99artli.vercel.app/0image.png)
+4. Choose `CNAME` from the dropdown. Type `www` in the Host field. In the Value field, paste the `.app` link that Netlify gave you. Leave the TTL field to default "Automatic" and hit the green check mark.![click green check mark](https://cloud-lt99artli.vercel.app/0image.png)
 
  > Canonical Name record (CNAME Record)—can be used to alias a hostname to another hostname (in our case we aliased our Netlify's hostname). When a DNS client requests a record that contains a CNAME, which points to another hostname, the DNS resolution process is repeated with the new hostname.
 
