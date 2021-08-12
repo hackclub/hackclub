@@ -14,7 +14,7 @@ Converting words to colors is a difficult concept to wrap your head around when 
 
 ## Getting started
 
-Create a new Repl.it project at [repl.it/languages/html](https://repl.it/languages/html).
+Create a new Repl.it project at [replit.com/languages/html](https://replit.com/languages/html).
 
 To make things a little easier for us, we’re going to be using [jQuery](https://jquery.com), a popular JavaScript library that simplifies writing certain common JavaScript tasks. You’ll get to see how jQuery can be really useful throughout this workshop.
 
