@@ -39,7 +39,7 @@ You should have the `index.html` file open, and a bunch of text with `<` & `>` s
 
 ![Text inside a code editor](img/html_repl.png)
 
-Repl.it gives us some code to start out with, but we're going to start from scratch. Go ahead and delete everything in the `index.html` file then **type** in the following. **DO NOT COPY AND PASTE.**
+Repl.it gives us some code to start out with, but we're going to start from scratch. Go ahead and delete everything in the `index.html` file then **type** in the following code. **DO NOT COPY AND PASTE.**
 
 ```html
 <!DOCTYPE html>
@@ -279,6 +279,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 - [Winston Iskandar](https://winstoniskandar.com)
 - [Sophie Huang](https://sohuang.github.io/)
 - [Jevin Sidhu](http://jevinsidhu.com/)
+- [Sam Poder](http://sampoder.com/)
 
 **Websites Made by Professionals:**
 
