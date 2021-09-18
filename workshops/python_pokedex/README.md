@@ -13,7 +13,7 @@ Have you ever wanted to play a Pokemon game in your terminal? In this workshop, 
 
 You can [install Python locally](https://www.python.org/) on your computer, or use [repl.it](https://repl.it), a free, online IDE, to write the code for this project. Start a new Python file [here](https://repl.it/languages/python3).
 
-Once you have your Python file open, let's import two libraries!
+Once you have your Python file open, let's import three libraries!
 
 ```py
 import random as rand
@@ -229,11 +229,11 @@ while True:
 
 Done! Let's try running our program. Here's what happens when I run without a save file. I encountered a Toxicroak, and caught it on my second try.
 
-[log][https://i.ibb.co/z8LHYZG/log.jpg]
+[log](https://i.ibb.co/z8LHYZG/log.jpg)
 
 When I backed it up to a file, the Pokemon was transferred successfully!
 
-[file][https://i.ibb.co/z8LHYZG/log.jpg]
+[file](https://i.ibb.co/z8LHYZG/log.jpg)
 
 You can view the [source code](https://github.com/ryanchou-dev/Pokemon_Game/blob/main/main.py) at my Github!
 
