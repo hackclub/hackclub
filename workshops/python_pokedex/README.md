@@ -13,7 +13,7 @@ Have you ever wanted to play a Pokemon game in your terminal? In this workshop, 
 
 You can [install Python locally](https://www.python.org/) on your computer, or use [repl.it](https://repl.it), a free, online IDE, to write the code for this project. Start a new Python file [here](https://repl.it/languages/python3).
 
-Once you have your Python file open, let's import two libraries!
+Once you have your Python file open, let's import three libraries!
 
 ```py
 import random as rand
