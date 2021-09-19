@@ -230,15 +230,15 @@ while True:
 
 Done! Let's try running our program. Here's what happens when I run without a save file. I encountered a Toxicroak, and caught it on my second try.
 
-[log](https://i.ibb.co/z8LHYZG/log.jpg)
+![Text output from running the program](https://cloud-b0iio04zw-hack-club-bot.vercel.app/0log.jpg)
 
 When I backed it up to a file, the Pokemon was transferred successfully!
 
-[file](https://i.ibb.co/z8LHYZG/log.jpg)
+![File output showing owned Pokmeon](https://cloud-b0iio04zw-hack-club-bot.vercel.app/1file.jpg)
 
-You can view the [source code](https://github.com/ryanchou-dev/Pokemon_Game/blob/main/main.py) at my Github!
+You can view the [source code](https://github.com/ryanchou-dev/Pokemon_Game/) on GitHub!
 
-Feel free to add more functionality. Some challenges you can tackle are:
+Ways that you can hack this workshop are:
 - Encrypt the saved file
 - Different Pokeballs
 - Shop
