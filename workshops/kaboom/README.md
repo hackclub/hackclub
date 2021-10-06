@@ -1,6 +1,6 @@
 ---
 name: 'Making games with KABOOM!'
-description: 'Learn how to use the Javascript-based framework game development framework by making a Platformer game'
+description: 'Learn how to use the Javascript-based game development framework by making a Platformer game'
 author: '@sampoder'
 img: 'https://cloud-m8iz2tkec-hack-club-bot.vercel.app/0kaboom___maker_week-2.png'
 ---
