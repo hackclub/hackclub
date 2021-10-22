@@ -1,6 +1,6 @@
 # Berkeley High S1 Club Plan
 
-_**The following is a club plan for the first semester of the Berkeley High Hack Club, coordinated with the school's calendar. We recommend that you make a copy for yourself that conforms to your school schedule.**_
+_**The following is a club plan for the first semester of the Berkeley High Hack Club, coordinated with the school's calendar.**_
 
 <table>
     <thead>

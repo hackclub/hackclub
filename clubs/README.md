@@ -48,12 +48,6 @@ _A step-by-step guide by the Hack Club community._
 Hack Clubs are after-school sessions where people come together to hack-- solve
 problems creatively.
 
-Hack Club meetings are structured in pairs, so that new projects can be started
-and demoed each week. The first of the two meetings includes an hour-long
-workshop to help get members started, and the second is a session of free-form
-hacking. This emphasis on building things echoes the spirit of hackathons,
-making Hack Club feel like a continuous hackathon.
-
 Throughout the year, Hack Clubs go to (and sometimes host) hackathons, work on
 large group projects, and, most importantly, develop into a thriving community
 of hackers at their high schools.
@@ -130,9 +124,8 @@ what you might want to say:
 > the club. I figured I'd reach out because I heard you ran the Hour of Code in
 > your classroom in December.
 
-You'll want to get your teacher sponsor to commit to providing a space twice a
-week after-school for at least an hour and a half (ideally two hours, so
-there's extra time for members to stay after meetings).
+You'll want to get your teacher sponsor to commit to providing a space for each
+of your meetings at a set time.
 
 The difficulty of getting a teacher sponsor varies widely school to school. At
 some schools you'll find a good teacher sponsor on your first try and at others
@@ -219,14 +212,17 @@ websites are **not** blocked by your school!
 - https://workshops.hackclub.com
 - https://hackclub.slack.com
 - https://github.com
-- https://c9.io
+- https://replit.com
 
 It is super important that you can access these sites as you will be using them
 for the entire school year. If any of the sites are blocked by your school,
 please let a staff member know on the
-[`#meta`](https://hackclub.slack.com/messages/meta/) Slack channel.
+[`#hq`](https://hackclub.slack.com/messages/hq/) Slack channel.
 
 ## The First Meeting
+
+> The following is a format commonly used by leaders, but this is *_your_* club, 
+> so be creative and do what you think is best for your club.
 
 At the first meeting, start by explaining that Hack Club allows people to learn
 and build things together over the course of the year, and then have members
@@ -474,7 +470,7 @@ keep their demos under a minute.
 
 ## Meeting Templates
 
-As previously mentioned, Hack Club meetings alternate between running workshops
+A common Hack Club format for meetings is to alternate between running workshops
 and free-form hacking (with demos). From here on out, we'll refer to meetings
 with workshops as _workshop days_ and meetings with free-form hacking and demos
 as _hack days_.
