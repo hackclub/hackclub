@@ -8,15 +8,13 @@ But, we’re here to help! Find the info you’re (probably) looking for right h
 
 Table of contents:
 - Meeting Models
-  - [Meeting Model #1 Development Teams](meeting_models/Meeting-Model-#1%20-Development-Teams-(@margeson.jack).md)
-  - [Meeting Model #2 CTF & Cyber Security](meeting_models/Meeting-Model-#2%20-CTF-&-Cyber-Security-(@digitaldina).md)
-  - [Meeting Model #3 Synth Challenge](meeting_models/Meeting-Model-#3%20-Synth-Challenge-(@Jacob).md)
-  - [Meeting Model #4 Microbits & hardware](meeting_models/Meeting-Model-#4%20-Microbits-&-More-Hardware-(@digitaldina).md)
-  - [Meeting Model #5 Machine Learning](meeting_models/Meeting-Model-#5%20-Introduction-to-Machine-Learning-(@aroon).md)
-  - [Meeting Model #6 Fireside Discussions](meeting_models/Meeting-Model-#6%20-%20Fireside%20-Discussions-(@itsmingjie).md)
-  - [Meeting Model #7 Git](meeting_models/Meeting-Model-#7%20-Git-(@margeson.jack).md)
-  - [Mini hackathons (unfinished)](meeting_models/@lachlanjc%20-Mini-Hackathons.md)
-  - [Multiple meetings (unfinished)](meeting_models/@NaCly%20-Multiple-Meetings-Project.md)
+  - [Meeting Model #1 Development Teams](meeting_models/development-teams.md.md)
+  - [Meeting Model #2 CTF & Cyber Security](meeting_models/ctfs.md)
+  - [Meeting Model #3 Synth Challenge](meeting_models/synth-challenge.md)
+  - [Meeting Model #4 Microbits & hardware](meeting_models/hardware.md)
+  - [Meeting Model #5 Machine Learning](meeting_models/ml-intro.md)
+  - [Meeting Model #6 Fireside Discussions](meeting_models/fireside-discussions.md)
+  - [Meeting Model #7 Git](meeting_models/git.md)
 - [Controlled Anarchy](@Chaleb%20-Controlled-Anarchy-(AKA-maker-space).md)
 - [First Meeting](@lachlanjc's-First-Meeting.md)
 - [Stickers](@lachlanjc's-Stickers.md)
