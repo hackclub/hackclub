@@ -51,7 +51,7 @@ In order for the key bindings to work you have to run the program. One you first
 
 ## Running Muse as a club meeting
 
-If you're running Muse in your club as a workshop we recommend showing the introduction video and listening to some examples of what other people have made in Muse. After that let people get started playing on their own. If possible try to play the music out loud so every and overhear each other's songs.
+If you're running Muse in your club as a workshop we recommend showing the introduction video and listening to some examples of what other people have made in Muse. After that let people get started playing on their own. If possible try to play the music out loud so every one can overhear each other's songs.
 
 ## How does it work?
 
