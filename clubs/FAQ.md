@@ -8,10 +8,6 @@ Filling out your application should take around 45 minutes to an hour and the le
 
 [You should already have a team](https://github.com/hackclub/hackclub/blob/master/clubs/leadership_preface.md). While we encourage you to have a committed teacher sponsor before applying, we don't require it.
 
-### What should my YouTube video be about?
-
-[This link](https://github.com/hackclub/hackclub/blob/master/clubs/youtube_video.md) covers it.
-
 ### We already have our own club. Why should we apply?
 
 Many of our applicants are from clubs that have already been holding meetings, sometimes for years. We provide resources and a community you won't get anywhere else.
@@ -57,4 +53,4 @@ Every club is different. On average though, clubs break down into 2 categories:
 
 ### How do I ask you a question?
 
-You can send us your questions at <apply@hacklub.com>.
+You can send us your questions at <clubs@hacklub.com>.

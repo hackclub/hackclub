@@ -2,7 +2,7 @@ _**The following is a general template for the constitution of your Hack Club. R
 
 _**We suggest that you make any other changes to your constitution that you feel would better suit your school. [A sample constitution can be found here][sample_club_constitution]**_
 
-[sample_club_constitution]: berkeley_high_constitution.md
+[sample_club_constitution]: resources/berkeley_high_constitution.md
 
 ---
 

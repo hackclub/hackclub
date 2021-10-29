@@ -1,0 +1,1 @@
+An assorted set of reference resources shared by Hack Clubbers.
