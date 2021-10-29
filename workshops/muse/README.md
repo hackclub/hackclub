@@ -6,7 +6,7 @@ author: 'Leo McElroy'
 
 # Muse
 
-**Think your meetings are too quiet, not anymore!** We wanted clubs to be lively, we wanted people to make different things, and we wanted bugs to result in delightful new discoveries. So we made Muse.
+**Think your meetings are too quiet, not anymore 🔊!** We wanted to make a tool that would make coding in a workshop lively, interactive, and which would require very little explanation before you can get started hacking, so we made Muse.
 
 Muse is a simple language for making music. It is embedded inside of JavaScript. You can get started with Muse as your first experience programming or you can make complicated JavaScript laced compositions if you're an audio algorithm wizard.
 
@@ -22,7 +22,7 @@ For a quick introduction to Muse you can watch [this video](https://youtu.be/hAc
 
 For more documentation refer to the [GitHub repository](https://github.com/hackclub/muse).
 
-[Launch the editor](https://muse.hackclub.dev/) by clicking the image below:
+[Launch the editor here](https://muse.hackclub.dev/) or by clicking the image below.
 
 [![muse editor](./img/demo.png)](https://muse.hackclub.dev/)
 
