@@ -1,5 +1,5 @@
 ---
-name: 'Muse: a language for jamming'
+name: 'Muse: A Language for Jamming'
 description: 'compose music with code'
 author: 'Leo McElroy'
 ---
@@ -10,7 +10,7 @@ author: 'Leo McElroy'
 
 Muse is a simple language for making music. It is embedded inside of JavaScript. You can get started with Muse as your first experience programming or you can make complicated JavaScript laced compositions if you're an audio algorithm wizard.
 
-To get a sense of how small Muse is the samples below uses pretty much every construct in the language.
+To get a sense of how small Muse is the sample below uses pretty much every construct in the language.
 
 ```
 [ a4+ ;- c5 ;- e5 ;- ] x 2
@@ -39,15 +39,15 @@ Of course you can mix synthesized sounds and samples (and add your own samples)!
 
 **Think small, then repeat.** Most music (and code) is composed of repetitive chunks that combine to make more elaborate structures. This approach to composing works quite well in Muse, and will save you some typing! Start with a cell like [c4; e4; g4; e4;], then multiply it. The Starter template in Examples also has key bindings for notes, which allows you to sketch out ideas before you write them down. 
 
-**Layer sounds.** Once you have a musical idea you like, try writing more CreateMuse functions to complement it. You can write as many as you want! Try creating a beat with the samples, change the synthesizer (e.g sine, sawtooth, piano, etc), or throw in a bassline by writing in a lower octave.
+**Layer sounds.** Once you have a musical idea you like, try writing more `createMuse` functions to complement it. You can write as many as you want! Try creating a beat with the samples, change the synthesizer (e.g sine, sawtooth, piano, etc), or throw in a bassline by writing in a lower octave.
 
 **Keep track of your beats.** Running multiple functions will quickly dissolve into chaos without careful timing. Make use of the pause symbol (;) to ensure everything is coming in and out at the right time. Using even numbers of beats makes this process easier, but anything works as long as you’re consistent - try a song based on multiples of 13! 
 
-**Progress vertically.** Most songs are built around a repeated chord progression. You can build chords in Muse by stacking individual notes like so: [c4 e4 g4 b4;]. Experiment with unexpected combinations and durations of notes to craft a unique harmony. 
+**Progress vertically.** Most songs are built around a repeated chord progression. You can build chords in Muse by stacking individual notes like so: `[c4 e4 g4 b4;]`. Experiment with unexpected combinations and durations of notes to craft a unique harmony. 
 
 We often compose by first finding sounds we like while playing keys. We then copy the notes from the console and add pauses. Try offsetting the notes to form chords (offsetting by 5 has nice consonance).
 
-In order for the key bindings to work you have to run the program. One you first load the page the keys won't make any sound until you hit "play/attach".
+In order for the key bindings to work you have to run the program. When you first load the page the keys won't make any sound until you hit "play/attach".
 
 ## Running Muse as a club meeting
 
