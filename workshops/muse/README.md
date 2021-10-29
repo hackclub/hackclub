@@ -26,12 +26,12 @@ Launch the editor by clicking the image below:
 
 Here are some slightly more involved pieces which will give you a sense of some things you can do in Muse. 
 
-[Fill-up Glassy](https://hackclub.github.io/muse/?file=recYJJltQstKbefwZ) is an example that uses mostly synthesized sounds.
+[Fill-up Glassy](https://hackclub.github.io/muse/?file=recYJJltQstKbefwZ) is an example that uses only synthesized sounds.
 
-Or you can make songs using samples like this piece titled [Samples in the Klerb](https://hackclub.github.io/muse/?file=recwU2R3A0KfL11Ka).
+[Samples in the Klerb](https://hackclub.github.io/muse/?file=recwU2R3A0KfL11Ka) is an example that uses only samples.
 
 
-Of course you can mix samples and synthesized sounds (and add your own samples)!
+Of course you can mix synthesized sounds and samples (and add your own samples)!
 
 ## Tips on composing your first song
 
