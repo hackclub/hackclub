@@ -35,6 +35,10 @@ Of course you can mix synthesized sounds and samples (and add your own samples)!
 
 ## Tips on composing your first song
 
+## Running Muse as a club meeting
+
+If you're running Muse in your club as a workshop we reccomend showing the introduction video and listening to some examples of what other people have made in Muse. After that let people get started playing on there own. If possible try to play the music out loud so every and overhear each other's songs.
+
 ## How does it work?
 
 Muse makes use of some really interesting techniques and technologies. Digging into the codebase you can learn about parsers (specifically [parser combinators](https://fsharpforfunandprofit.com/posts/understanding-parser-combinators/)), [language grammars](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form), [compilers](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools), [tagged template literals](https://patelhemil.medium.com/magic-of-tagged-templates-literals-in-javascript-e0e2379b1ffc), the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API), RegEx, and a whole lot more. Of course you don't need to deal with any of this to use Muse!
