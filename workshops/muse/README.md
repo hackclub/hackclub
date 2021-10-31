@@ -1,6 +1,6 @@
 ---
-name: 'Muse: A Language for Jamming'
-description: 'compose music with code'
+name: 'Jamming with Muse'
+description: 'Compose music with code'
 author: '@leomcelroy'
 ---
 
@@ -64,5 +64,3 @@ We'd love to hear what you made in Muse. To share your song with the Hack Club c
 ![share button](./img/share.png)
 
 You can also pop the link into the sharing input box shown below!
-
-
