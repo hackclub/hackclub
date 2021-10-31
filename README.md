@@ -14,7 +14,7 @@ Hack Club was founded by [a teenager](https://zachlatta.com) who dropped out of 
 
 | Action                          | Link                                 |
 | ------------------------------- | ------------------------------------ |
-| Join our Slack                  | <https://hackclub.com/>              |
+| Join our Slack                  | <https://hackclub.com/slack>         |
 | See our workshops               | <https://workshops.hackclub.com/>    |
 | Apply to start a club           | <https://apply.hackclub.com>         |
 | Draw a dino & join our GitHub   | <https://hack.af/draw-dino>         |
