@@ -8,7 +8,7 @@ We think learning to code is uniquely like gaining a superpower: it converts you
 
 **The goal of Hack Club is to help you become a hacker.** We want an inclusive space on the internet & at every school where people are making interesting things with code, every week. In our [online Slack](https://slack.hackclub.com) (Discord-style online chatroom with 10K student members), you can ask coding questions, you’ll meet amazing friends, share projects you’re building, and so much more. Most members start with little to no coding experience, join our Slack, build projects of their own, [start clubs](https://hackclub.com/clubs/) at their school, attend & later organize [hackathons](https://hackathons.hackclub.com).
 
-Hack Club was founded by [a teenager](https://zachlatta.com) who dropped out of high school because the school system wasn’t working. We’re an entirely open source organization—[our website](https://github.com/hackclub/v3) to even [our finances](https://bank.hackclub.com/hq) are public. It’s backed by everyone from [Elon Musk](https://hackclub.com/elon/) to the co-founder of GitHub, Tom Preston-Werner.
+Hack Club was founded by [a teenager](https://zachlatta.com) who dropped out of high school because the school system wasn’t working. We’re an entirely open source organization—[our website](https://github.com/hackclub/v3) to even [our finances](https://bank.hackclub.com/hq) are public. It’s backed by everyone from [Elon Musk](https://hackclub.com/elon/) to the co-founder of GitHub, [Tom Preston-Werner](https://hackclub.com/preston-werner/).
 
 ## Quick Hack Club links
 
