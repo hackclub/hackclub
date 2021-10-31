@@ -1,7 +1,7 @@
 ---
 name: 'Muse: A Language for Jamming'
 description: 'compose music with code'
-author: 'Leo McElroy'
+author: '@leomcelroy'
 ---
 
 # Muse
