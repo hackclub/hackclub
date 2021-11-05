@@ -17,6 +17,7 @@ author: '@leomcelroy'
 
 Today let’s try to make this stressed out little ball.
 
+https://user-images.githubusercontent.com/27078897/140573405-e9a32e51-de60-4540-89f9-516136e08417.mov
 
 It's a little colored circle that moves around the screen.
 
@@ -58,15 +59,15 @@ To get started head over to this [live-editor](https://hackclub.github.io/live-e
 
   resize();
 
-	const canvas = document.querySelector("canvas");
+  const canvas = document.querySelector("canvas");
   const ctx = canvas.getContext("2d");
 
   const w = canvas.width;
   const h = canvas.height;
 	
-	// BEGIN YOUR CODE
+  // BEGIN YOUR CODE
 
-	// VARIABLES HERE
+  // VARIABLES HERE
 
   function draw() {
     ctx.fillStyle = "white";
@@ -80,7 +81,7 @@ To get started head over to this [live-editor](https://hackclub.github.io/live-e
 
   }
 
-	// END YOUR CODE
+  // END YOUR CODE
 
   setInterval(draw, 10);
 </script>
@@ -132,7 +133,7 @@ Your color will probably be in a [string](https://developer.mozilla.org/en-US/do
 
 ### Move your circle
 
-[Screen Recording 2021-11-02 at 1.14.26 PM.mov](img/Screen_Recording_2021-11-02_at_1.14.26_PM.mov)
+https://user-images.githubusercontent.com/27078897/140573485-cab505f7-cd00-4076-8322-152b70285170.mov
 
 You'll want to use variables, like this:
 
@@ -148,15 +149,15 @@ You'll want to use variables, like this:
 
 Let's stop the ball from running away off the screen. So how do we get from this
 
-[Screen Recording 2021-11-03 at 2.04.48 PM.mov](img/Screen_Recording_2021-11-03_at_2.04.48_PM.mov)
+https://user-images.githubusercontent.com/27078897/140573529-2d6162e7-d1ad-44e4-8e7b-768d92282258.mov
 
- to this
+to this
 
-[Screen Recording 2021-11-03 at 2.08.46 PM.mov](img/Screen_Recording_2021-11-03_at_2.08.46_PM.mov)
+https://user-images.githubusercontent.com/27078897/140573601-f42c7904-df40-4733-9b95-c7b38d3ca5c2.mov
 
 or this
 
-[bounce.mov](img/bounce.mov)
+https://user-images.githubusercontent.com/27078897/140573643-b69d0b8f-4bfd-455d-9289-1bbe74cb3f9d.mov
 
 **Questions**
 
@@ -168,7 +169,7 @@ or this
 
 ### Spruce it up
 
-[Screen Recording 2021-11-03 at 2.10.24 PM.mov](img/Screen_Recording_2021-11-03_at_2.10.24_PM.mov)
+https://user-images.githubusercontent.com/27078897/140573691-491e7111-41e6-4c84-a0f9-d5eb405478ce.mov
 
 Add some randomness to x and y
 
