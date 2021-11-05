@@ -9,8 +9,6 @@ author: '@leomcelroy'
 
 Today let’s try to make this stressed out little ball.
 
-<video src="img/Screen_Recording_2021-11-03_at_2.11.31_PM.mov" controls></video>
-
 
 It's a little colored circle that moves around the screen.
 
