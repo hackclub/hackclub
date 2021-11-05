@@ -5,7 +5,7 @@ author: '@leomcelroy'
 ---
 
 
-> ⚠️☢️ *WARNING:* Are you reading this on workshops.hackclub.com? STOP!!1! This workshop won't show up properly. You should go here:
+> *WARNING:* Are you reading this on workshops.hackclub.com? STOP!!! This workshop won't show up properly. You should go here:
 >
 > 👉[**YOU SHOULD BE HERE**](https://github.com/hackclub/hackclub/blob/main/workshops/stressed_ball/README.md#reverse-workshop-stressed-ball)👈
 >
@@ -70,13 +70,13 @@ To get started head over to this [live-editor](https://hackclub.github.io/live-e
 
   function draw() {
     ctx.fillStyle = "white";
-		ctx.fillRect(0, 0, w, h);
+    ctx.fillRect(0, 0, w, h);
 
-		// DRAW CIRCLE HERE (3 lines)
+    // DRAW CIRCLE HERE (3 lines)
 
-		// COLOR CIRCLE HERE (2 lines)
+    // COLOR CIRCLE HERE (2 lines)
 
-	  // CHANGE VARIABLES HERE
+    // CHANGE VARIABLES HERE
 
   }
 
