@@ -191,4 +191,4 @@ Notes on math
 
 ## Sharing
 
-Leave 15 minutes at the end of the workshop for people to share their work. You can hit share link in the live-editor to generate a link to your site. Share it with Hack Club by pasting the link below.
+Leave 15 minutes at the end of the workshop for people to share their work. You can hit share link in the live-editor to generate a link to your site. Share it with Hack Club by pasting the link in the input box at the bottom of [this](https://workshops.hackclub.com/stressed_ball/) page.
