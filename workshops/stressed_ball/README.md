@@ -1,10 +1,15 @@
 ---
-name: 'Reverse Workshop: Stressed Ball'
+name: 'Reverse Workshop'
 description: 'learn to code like real programmers, by looking everything up'
 author: '@leomcelroy'
 ---
 
 # Reverse Workshop: Stressed Ball
+
+> ⚠️☢️ WARNING: Are you reading this on workshops.hackclub.com? STOP!!! This workshop won't show up properly. You should go here 👇
+
+👉**[YOU SHOULD BE HERE](https://github.com/hackclub/hackclub/blob/main/workshops/stressed_ball/README.md)**👈
+☝️&nbsp;👆&nbsp;👍&nbsp;🤲
 
 Today let’s try to make this stressed out little ball.
 
