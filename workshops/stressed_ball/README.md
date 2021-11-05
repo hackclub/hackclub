@@ -8,8 +8,9 @@ author: '@leomcelroy'
 
 Today let’s try to make this stressed out little ball.
 
-<video src="Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Recording_2021-11-03_at_2.11.31_PM.mov" controls></video>
 
+
+https://user-images.githubusercontent.com/27078897/140564568-53c34ce8-2520-41bc-b341-e24c8bde100f.mov
 
 It's a little colored circle that moves around the screen.
 
