@@ -10,7 +10,9 @@ author: '@leomcelroy'
 >
 > 👉[**YOU SHOULD BE HERE**](https://github.com/hackclub/hackclub/blob/main/workshops/stressed_ball/README.md)👈
 >
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☝️&nbsp;👆&nbsp;👍&nbsp;🤲
+>  ☝️👆👍 
+
+---
 
 Today let’s try to make this stressed out little ball.
 
