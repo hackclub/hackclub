@@ -8,7 +8,7 @@ author: '@leomcelroy'
 
 Today let’s try to make this stressed out little ball.
 
-<video src="Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Recording_2021-11-03_at_2.11.31_PM.mov" controls></video>
+<video src="img/Screen_Recording_2021-11-03_at_2.11.31_PM.mov" controls></video>
 
 
 It's a little colored circle that moves around the screen.
@@ -93,7 +93,7 @@ To help get you along I'll give you some targets that break down the project, an
 
 ### Draw a circle
 
-![Screen Shot 2021-11-02 at 12.21.50 PM.png](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Shot_2021-11-02_at_12.21.50_PM.png)
+![Screen Shot 2021-11-02 at 12.21.50 PM.png](img/Screen_Shot_2021-11-02_at_12.21.50_PM.png)
 
 When you get your circle on the screen, try and decipher what the code is doing to make it. In JavaScript function calls look like this `functionName(argument0, argument1)`. There can be any number of arguments. When you draw the circle try to figure out what the different arguments mean.
 
@@ -104,7 +104,7 @@ When you get your circle on the screen, try and decipher what the code is doing 
 
 ### Color your circle
 
-![Screen Shot 2021-11-02 at 12.23.35 PM.png](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Shot_2021-11-02_at_12.23.35_PM.png)
+![Screen Shot 2021-11-02 at 12.23.35 PM.png](img/Screen_Shot_2021-11-02_at_12.23.35_PM.png)
 
 There are lots of ways to describe colors in code, like: 
 
@@ -125,7 +125,7 @@ Your color will probably be in a [string](https://developer.mozilla.org/en-US/do
 
 ### Move your circle
 
-[Screen Recording 2021-11-02 at 1.14.26 PM.mov](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Recording_2021-11-02_at_1.14.26_PM.mov)
+[Screen Recording 2021-11-02 at 1.14.26 PM.mov](img/Screen_Recording_2021-11-02_at_1.14.26_PM.mov)
 
 You'll want to use variables, like this:
 
@@ -141,15 +141,15 @@ You'll want to use variables, like this:
 
 Let's stop the ball from running away off the screen. So how do we get from this
 
-[Screen Recording 2021-11-03 at 2.04.48 PM.mov](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Recording_2021-11-03_at_2.04.48_PM.mov)
+[Screen Recording 2021-11-03 at 2.04.48 PM.mov](img/Screen_Recording_2021-11-03_at_2.04.48_PM.mov)
 
  to this
 
-[Screen Recording 2021-11-03 at 2.08.46 PM.mov](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Recording_2021-11-03_at_2.08.46_PM.mov)
+[Screen Recording 2021-11-03 at 2.08.46 PM.mov](img/Screen_Recording_2021-11-03_at_2.08.46_PM.mov)
 
 or this
 
-[bounce.mov](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/bounce.mov)
+[bounce.mov](img/bounce.mov)
 
 **Questions**
 
@@ -161,7 +161,7 @@ or this
 
 ### Spruce it up
 
-[Screen Recording 2021-11-03 at 2.10.24 PM.mov](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Recording_2021-11-03_at_2.10.24_PM.mov)
+[Screen Recording 2021-11-03 at 2.10.24 PM.mov](img/Screen_Recording_2021-11-03_at_2.10.24_PM.mov)
 
 Add some randomness to x and y
 
