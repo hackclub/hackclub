@@ -46,7 +46,7 @@ Follow these steps:
 
 ![Arrow to New repl button on the top left](https://cloud-pq5lbfiab.vercel.app/6new-step1.png)
 
-- Search for "Deno" in the search box, click "Deno" and click "Create repl"
+- Search for "Deno" in the search box, click "Deno" and click "Create repl".
 
 ![Find deno in the search box](https://cloud-pq5lbfiab.vercel.app/7new-step2.png)
 
