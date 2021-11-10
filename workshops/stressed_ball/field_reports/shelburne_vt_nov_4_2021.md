@@ -6,7 +6,7 @@
 ### Date and Time: Nov. 4th at 4:00 PM 
 ### Attendence: 15 
 
-![pierson](https://cloud-3sgm1fe5b-hack-club-bot.vercel.app/1piersonclubmeeting.png)
+<img width="1643" alt="Piersonclubmeeting" src="https://user-images.githubusercontent.com/27078897/141187635-3976eaf4-a70f-4949-8606-17f219e0d130.png">
 
 ## Overview 
 
@@ -20,11 +20,11 @@ I think the exercise was mostly successful, but had some important lessons for f
 
  After Leo took five minutes or so to introduce the topic, we basically just set them loose and wandered around to answer questions, then took about 15 minutes at the end of the meeting to demo. Our club is mostly comprised of local middle schoolers from the nearby Shelburne Community School, which is walking distance from the library. This meeting had our best attendence to date, but we have a recurring issue of people arriving without laptops or bringing iPads. This did result in at least one fruitful collaboration though, as two girls shared a laptop and ended up assembling one of the more interesting projects on it, this funky rippling circle: 
 
- ![rippling circle](https://cloud-3sgm1fe5b-hack-club-bot.vercel.app/1piersonclubmeeting.png)
+![ripplingcircle](https://user-images.githubusercontent.com/27078897/141187679-e590c98e-a77d-4e5c-a90b-ede29793b919.gif)
 
  This was also our first meeting that made use of Leo's live editor for Hack Club, instead of Replit. We found that Replit tends to overcomplicate things, occasionally bugs out, and generally offers less control over the experience. Attendees defaulted to Replit initially out of habit, but most switched to the live editor in the course of the meeting. It also makes it easier to save and share example projects, which is a feature we hope to make standard in future workshop design. 
 
- ![rippling circle](https://cloud-3sgm1fe5b-hack-club-bot.vercel.app/0liveeditor.png)
+<img width="1670" alt="liveeditor" src="https://user-images.githubusercontent.com/27078897/141187834-8bfe8386-45d0-412e-8a5f-6620ddd64b1b.png">
 
  The energy of the meeting was a little different than previous ones - there was a lot of confusion and requests for help, and it was a little quieter and more focused. Surprisingly no one seemed totally frustrated or resigned, though a few didn't really end up doing much. As usual I didn't prove to be terribly helpful with solving code problems, having barely figured it out myself the day before. However I did somewhat enjoy being so useless as it only reinforced to the attendees that they needed to figure it out themselves. 
 
