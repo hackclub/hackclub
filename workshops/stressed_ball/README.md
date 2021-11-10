@@ -17,7 +17,7 @@ author: '@leomcelroy'
 
 Today let’s try to make this stressed out little ball.
 
-https://user-images.githubusercontent.com/27078897/140573405-e9a32e51-de60-4540-89f9-516136e08417.mov
+https://user-images.githubusercontent.com/27078897/140564568-53c34ce8-2520-41bc-b341-e24c8bde100f.mov
 
 It's a little colored circle that moves around the screen.
 
@@ -190,5 +190,6 @@ Notes on math
 - negative/positive signs corresponds to direction
 
 ## Sharing
+
 
 Leave 15 minutes at the end of the workshop for people to share their work. You can hit share link in the live-editor to generate a link to your site. Share it with Hack Club by pasting the link in the input box at the bottom of [this](https://workshops.hackclub.com/stressed_ball/) page.
