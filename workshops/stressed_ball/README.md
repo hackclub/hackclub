@@ -1,14 +1,21 @@
 ---
-name: 'Reverse Workshop: Stressed Ball'
+name: 'Reverse Workshop'
 description: 'learn to code like real programmers, by looking everything up'
 author: '@leomcelroy'
+---
+
+
+> *WARNING:* Are you reading this on workshops.hackclub.com? STOP!!! This workshop won't show up properly. You should go here:
+>
+> 👉[**YOU SHOULD BE HERE**](https://github.com/hackclub/hackclub/blob/main/workshops/stressed_ball/README.md#reverse-workshop-stressed-ball)👈
+>
+>  ☝️👆👍 
+
 ---
 
 # Reverse Workshop: Stressed Ball
 
 Today let’s try to make this stressed out little ball.
-
-
 
 https://user-images.githubusercontent.com/27078897/140564568-53c34ce8-2520-41bc-b341-e24c8bde100f.mov
 
@@ -52,29 +59,29 @@ To get started head over to this [live-editor](https://hackclub.github.io/live-e
 
   resize();
 
-	const canvas = document.querySelector("canvas");
+  const canvas = document.querySelector("canvas");
   const ctx = canvas.getContext("2d");
 
   const w = canvas.width;
   const h = canvas.height;
 	
-	// BEGIN YOUR CODE
+  // BEGIN YOUR CODE
 
-	// VARIABLES HERE
+  // VARIABLES HERE
 
   function draw() {
     ctx.fillStyle = "white";
-		ctx.fillRect(0, 0, w, h);
+    ctx.fillRect(0, 0, w, h);
 
-		// DRAW CIRCLE HERE (3 lines)
+    // DRAW CIRCLE HERE (3 lines)
 
-		// COLOR CIRCLE HERE (2 lines)
+    // COLOR CIRCLE HERE (2 lines)
 
-	  // CHANGE VARIABLES HERE
+    // CHANGE VARIABLES HERE
 
   }
 
-	// END YOUR CODE
+  // END YOUR CODE
 
   setInterval(draw, 10);
 </script>
@@ -94,7 +101,7 @@ To help get you along I'll give you some targets that break down the project, an
 
 ### Draw a circle
 
-![Screen Shot 2021-11-02 at 12.21.50 PM.png](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Shot_2021-11-02_at_12.21.50_PM.png)
+![Screen Shot 2021-11-02 at 12.21.50 PM.png](img/Screen_Shot_2021-11-02_at_12.21.50_PM.png)
 
 When you get your circle on the screen, try and decipher what the code is doing to make it. In JavaScript function calls look like this `functionName(argument0, argument1)`. There can be any number of arguments. When you draw the circle try to figure out what the different arguments mean.
 
@@ -105,7 +112,7 @@ When you get your circle on the screen, try and decipher what the code is doing 
 
 ### Color your circle
 
-![Screen Shot 2021-11-02 at 12.23.35 PM.png](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Shot_2021-11-02_at_12.23.35_PM.png)
+![Screen Shot 2021-11-02 at 12.23.35 PM.png](img/Screen_Shot_2021-11-02_at_12.23.35_PM.png)
 
 There are lots of ways to describe colors in code, like: 
 
@@ -126,7 +133,7 @@ Your color will probably be in a [string](https://developer.mozilla.org/en-US/do
 
 ### Move your circle
 
-[Screen Recording 2021-11-02 at 1.14.26 PM.mov](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Recording_2021-11-02_at_1.14.26_PM.mov)
+https://user-images.githubusercontent.com/27078897/140573485-cab505f7-cd00-4076-8322-152b70285170.mov
 
 You'll want to use variables, like this:
 
@@ -142,15 +149,15 @@ You'll want to use variables, like this:
 
 Let's stop the ball from running away off the screen. So how do we get from this
 
-[Screen Recording 2021-11-03 at 2.04.48 PM.mov](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Recording_2021-11-03_at_2.04.48_PM.mov)
+https://user-images.githubusercontent.com/27078897/140573529-2d6162e7-d1ad-44e4-8e7b-768d92282258.mov
 
- to this
+to this
 
-[Screen Recording 2021-11-03 at 2.08.46 PM.mov](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Recording_2021-11-03_at_2.08.46_PM.mov)
+https://user-images.githubusercontent.com/27078897/140573601-f42c7904-df40-4733-9b95-c7b38d3ca5c2.mov
 
 or this
 
-[bounce.mov](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/bounce.mov)
+https://user-images.githubusercontent.com/27078897/140573643-b69d0b8f-4bfd-455d-9289-1bbe74cb3f9d.mov
 
 **Questions**
 
@@ -162,7 +169,7 @@ or this
 
 ### Spruce it up
 
-[Screen Recording 2021-11-03 at 2.10.24 PM.mov](Reverse%20Workshop%2045651ff1dc13459884a2a6da7dfedd85/Screen_Recording_2021-11-03_at_2.10.24_PM.mov)
+https://user-images.githubusercontent.com/27078897/140573691-491e7111-41e6-4c84-a0f9-d5eb405478ce.mov
 
 Add some randomness to x and y
 
@@ -184,4 +191,5 @@ Notes on math
 
 ## Sharing
 
-Leave 15 minutes at the end of the workshop for people to share their work. You can hit share link in the live-editor to generate a link to your site. Share it with Hack Club by pasting the link below.
+
+Leave 15 minutes at the end of the workshop for people to share their work. You can hit share link in the live-editor to generate a link to your site. Share it with Hack Club by pasting the link in the input box at the bottom of [this](https://workshops.hackclub.com/stressed_ball/) page.
