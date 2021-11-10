@@ -1,14 +1,14 @@
-#Field Report 
+# Field Report 
 
-###Author: Tevan Goldberg 
-###Workshop: Stressed Ball (A.K.A. Reverse Workshop #1)
-###Location: Pierson Library, Shelburne VT 
-###Date and Time: Nov. 4th at 4:00 PM 
-###Attendence: 15 
+### Author: Tevan Goldberg 
+### Workshop: Stressed Ball (A.K.A. Reverse Workshop #1)
+### Location: Pierson Library, Shelburne VT 
+### Date and Time: Nov. 4th at 4:00 PM 
+### Attendence: 15 
 
 ! [](Piersonclubmeeting.png)
 
-##Overview 
+## Overview 
 
 This was our first test of a new workshop format, what we're calling the 'reverse workshop.' The idea was to present our club members with a final output and then try to help them decipher the steps needed to get there. This is in contrast to many code tutorials which simply provide you with the needed code in sequential order, limiting opportunities for problem-solving and collaboration. 
 
@@ -16,7 +16,7 @@ Our goal was to write a Javascript program that would display a circle on a simp
 
 I think the exercise was mostly successful, but had some important lessons for future workshop design if we want to stick it. 
 
-##Meeting Flow
+## Meeting Flow
 
  After Leo took five minutes or so to introduce the topic, we basically just set them loose and wandered around to answer questions, then took about 15 minutes at the end of the meeting to demo. Our club is mostly comprised of local middle schoolers from the nearby Shelburne Community School, which is walking distance from the library. This meeting had our best attendence to date, but we have a recurring issue of people arriving without laptops or bringing iPads. This did result in at least one fruitful collaboration though, as two girls shared a laptop and ended up assembling one of the more interesting projects on it, this funky rippling circle: 
 
@@ -33,7 +33,7 @@ I think the exercise was mostly successful, but had some important lessons for f
  About 7 people or so demoed projects at the end, roughly half of the attendees. No one was able to get the ball to change color randomly, but many were able to get it moving across the canvas and bump off the edges, which required some use of variables. 
 
 
- ##Conclusions 
+ ## Conclusions 
 
 In general we were pleased that our club members rose to the challenge of doing 'real' coding, and seemed to find the activity gratifying. We did encounter some issues with the "just Google it" learning approach that are worth considering though; most notably, they would often get sidetracked on irrelevant pages or otherwise imported unhelpful code to solve problems. However there were some cases where following the suggested search queries led them to the correct answer. There are aspects to this which I find useful though, as it shows how hard it is to find what you're looking for, and the importance of good search terms. 
 
