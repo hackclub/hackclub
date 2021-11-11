@@ -124,7 +124,7 @@ function generateBricks() {
     for(let j = 0; j < cols; j++) { // Columns
       let brickData = {
         x: j * (brickWidth + 2) + 10, // "+ 10" => 10px left margin from the left border. 
-        y: i * (brickHeight + 2) + 30, "+ 30" => 30px top margin from the top border. 
+        y: i * (brickHeight + 2) + 30, // "+ 30" => 30px top margin from the top border. 
         width: brickWidth,
         height: brickHeight
       }
