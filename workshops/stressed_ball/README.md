@@ -1,5 +1,5 @@
 ---
-name: 'Reverse Workshop'
+name: 'Reverse Workshop: Stressed Ball'
 description: 'learn to code like real programmers, by looking everything up'
 author: '@leomcelroy'
 ---
