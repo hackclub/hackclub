@@ -20,7 +20,7 @@ Try to create something like this:
 https://user-images.githubusercontent.com/27078897/141502788-e4687f86-2d43-458b-a524-c420fba09ffd.mov
 
 This is another reverse workshop, instead of telling you how to make something step-by-step I'm going to give you some inspiration and the materials you need to make it.
-I reccomend working in the live editor but the whole project is just an HTML file so you can use the environment you are most comfortable with. To run this meeting show your club the example target project. After that have people open up this page. Most of the workshop will be spent in the editor and on the examples page finding useful code snippets (both linked below). It's okay if people don't make the example target project exactly. It's a source of inspiration not a prescription.
+I recommend working in the live editor but the whole project is just an HTML file so you can use the environment you are most comfortable with. To run this meeting show your club the example target project. After that have people open up this page. Most of the workshop will be spent in the editor and on the examples page finding useful code snippets (both linked below). It's okay if people don't make the example target project exactly. It's a source of inspiration not a prescription.
 
 This workshop is all about taking simple ideas and examples and composing them together into more interesting programs.
 
