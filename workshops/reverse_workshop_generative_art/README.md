@@ -46,6 +46,8 @@ Copy code snippets from these examples to compose your drawing.
 
 <img width="1185" alt="Screen_Shot_2021-11-12_at_11 30 45_AM" src="https://user-images.githubusercontent.com/27078897/141502874-ae243edd-2c53-46bf-a31c-d437d1a343ae.png">
 
+If you're having trouble getting something interesting to happen you can take a look at [this example](https://hackclub.github.io/live-editor/?file=rec0dC5MA1jcNF7hP). But be **warned** it may spoil some of the fun of figuring out how to do it yourself.
+
 ## Reverse Steps
 
 There are helpful intermediate stages shown below. Try to identify what changes from one example to the next. They are **not** instructions to follow. They are a way of thinking about what makes the original example by taking away components of that drawing one at a time. Try to identify what changes from one video to the next.
