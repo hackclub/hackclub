@@ -24,17 +24,18 @@ Copy code snippets from these examples to compose you're drawing. You can only h
 
 There are helpful intermediate stages shown below. Try to identify what changes from one example to the next. They are **not** instructions to follow. They are a way of thinking about what makes the original example by taking away components of that drawing one at a time. Try to identify what changes from one video to the next.
 
-https://user-images.githubusercontent.com/27078897/141502930-fdf5611c-7b3b-45c5-9462-0d56849398be.mov
+https://user-images.githubusercontent.com/27078897/141503170-06212409-a648-4576-8ebf-61810830bef4.mov
 
-https://user-images.githubusercontent.com/27078897/141502925-caab9cdc-9ca5-45d3-8c2e-7151321460d7.mov
+https://user-images.githubusercontent.com/27078897/141503205-86c35c00-6d90-4da5-aefe-ff2fcfa8c9c0.mov
 
-https://user-images.githubusercontent.com/27078897/141502926-94369de3-f61e-41d8-a510-986bdffcd48b.mov
+https://user-images.githubusercontent.com/27078897/141503239-26abb376-1221-4fb2-9bf6-3e7a65d0ecb1.mov
 
-https://user-images.githubusercontent.com/27078897/141502928-a45c4ec6-d408-4767-adde-6bfff3a82a24.mov
+https://user-images.githubusercontent.com/27078897/141503268-23232efb-3cb6-452a-b8da-edab8b0c7af2.mov
 
-https://user-images.githubusercontent.com/27078897/141502929-b3288d7e-c53c-4788-b5b4-9fa1a48ff4d1.mov
+https://user-images.githubusercontent.com/27078897/141503316-33d9ee88-cec8-4d8f-ada8-925eb62d13ed.mov
 
-https://user-images.githubusercontent.com/27078897/141502918-8d412e26-3253-485c-978b-1a675820d379.mov
+https://user-images.githubusercontent.com/27078897/141503346-c58cb0a9-19e8-452e-aa86-dc28f37f8b3c.mov
 
-https://user-images.githubusercontent.com/27078897/141502924-00f970a7-674c-40e7-9764-e096acd8cb00.mov
+https://user-images.githubusercontent.com/27078897/141503359-a56bd2da-e731-429a-a267-7703412f62ef.mov
+
 
