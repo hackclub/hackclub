@@ -1,3 +1,18 @@
+---
+name: 'Reverse Workshop: Generative Art'
+description: 'use a toolbox of examples to compose dynamic art pieces'
+author: '@leomcelroy'
+---
+
+
+> *WARNING:* Are you reading this on workshops.hackclub.com? STOP!!! This workshop won't show up properly. You should go here:
+>
+> 👉[**YOU SHOULD BE HERE**](https://github.com/hackclub/hackclub/blob/main/workshops/reverse_workshop_generative_art/README.md#reverse-workshop-generative-art)👈
+>
+>  ☝️👆👍 
+
+---
+
 # Reverse Workshop: Generative Art
 
 Try to create something like this:
