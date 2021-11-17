@@ -17,10 +17,8 @@ author: '@leomcelroy'
 
 Today let’s try to make this stressed out little ball.
 
-https://user-images.githubusercontent.com/27078897/140564568-53c34ce8-2520-41bc-b341-e24c8bde100f.mov
-
 <video 
-       src="https://user-images.githubusercontent.com/27078897/140564568-53c34ce8-2520-41bc-b341-e24c8bde100f.mov"
+       src="https://user-images.githubusercontent.com/27078897/140573691-491e7111-41e6-4c84-a0f9-d5eb405478ce.mov"
        width="320" height="240" controls>
 </video>
 
