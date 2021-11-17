@@ -19,7 +19,7 @@ Today let’s try to make this stressed out little ball.
 
 <video 
        src="https://user-images.githubusercontent.com/27078897/140573691-491e7111-41e6-4c84-a0f9-d5eb405478ce.mov"
-       width="320" height="240" controls>
+       width="80%" controls>
 </video>
 
 It's a little colored circle that moves around the screen.
@@ -138,7 +138,7 @@ Your color will probably be in a [string](https://developer.mozilla.org/en-US/do
 
 <video 
        src="https://user-images.githubusercontent.com/27078897/140573485-cab505f7-cd00-4076-8322-152b70285170.mov"
-       width="320" height="240" controls>
+       width="80%" controls>
 </video>
 
 You'll want to use variables, like this:
@@ -157,21 +157,21 @@ Let's stop the ball from running away off the screen. So how do we get from this
 
 <video 
        src="https://user-images.githubusercontent.com/27078897/140573529-2d6162e7-d1ad-44e4-8e7b-768d92282258.mov"
-       width="320" height="240" controls>
+       width="80%" controls>
 </video>
 
 to this
 
 <video 
        src="https://user-images.githubusercontent.com/27078897/140573601-f42c7904-df40-4733-9b95-c7b38d3ca5c2.mov"
-       width="320" height="240" controls>
+       width="80%" controls>
 </video>
 
 or this
 
 <video 
        src="https://user-images.githubusercontent.com/27078897/140573643-b69d0b8f-4bfd-455d-9289-1bbe74cb3f9d.mov"
-       width="320" height="240" controls>
+       width="80%" controls>
 </video>
 
 **Questions**
@@ -186,7 +186,7 @@ or this
 
 <video 
        src="https://user-images.githubusercontent.com/27078897/140573691-491e7111-41e6-4c84-a0f9-d5eb405478ce.mov"
-       width="320" height="240" controls>
+       width="80%" controls>
 </video>
 
 Add some randomness to x and y
