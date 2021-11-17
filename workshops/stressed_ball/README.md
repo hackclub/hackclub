@@ -4,17 +4,6 @@ description: 'learn to code like real programmers, by looking everything up'
 author: '@leomcelroy'
 ---
 
-
-> *WARNING:* Are you reading this on workshops.hackclub.com? STOP!!! This workshop won't show up properly. You should go here:
->
-> 👉[**YOU SHOULD BE HERE**](https://github.com/hackclub/hackclub/blob/main/workshops/stressed_ball/README.md#reverse-workshop-stressed-ball)👈
->
->  ☝️👆👍 
-
----
-
-# Reverse Workshop: Stressed Ball
-
 Today let’s try to make this stressed out little ball.
 
 <video 
