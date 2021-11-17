@@ -19,6 +19,11 @@ Today let’s try to make this stressed out little ball.
 
 https://user-images.githubusercontent.com/27078897/140564568-53c34ce8-2520-41bc-b341-e24c8bde100f.mov
 
+<video 
+       src="https://user-images.githubusercontent.com/27078897/140564568-53c34ce8-2520-41bc-b341-e24c8bde100f.mov"
+       width="320" height="240" controls>
+</video>
+
 It's a little colored circle that moves around the screen.
 
 What’s going to be a bit different is that I’m **not** going to tell you how to do it. You're going to find out for yourself. This workshop will perhaps be a bit challenging, if you end up making something different from the ball that's totally fine. Just try to challenge yourself by getting your drawing to move, grow, bounce, etc. The ball is just a push in that direction.
