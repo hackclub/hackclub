@@ -2,6 +2,7 @@
 name: Help Orpheus!
 description: Supercop Orpheus needs help to save Hack Island! and you are the one who can help them.
 author: '@bajpai244'
+img: "https://cloud-a13cu1qa5-hack-club-bot.vercel.app/0demo.png"
 ---
 
 Welcome to this new adventure of yours. Supercop Orpheus needs your help saving Hack Island. What?? What is Hack Island? And what is going to happen to it? And Orpheus is also a Supercop! When did all of these happen?
