@@ -39,7 +39,7 @@ Now we can turn characters into numbers, add them together, and turn the result 
 
 So if I rotate `s` by `k`, I get `c`:
 
-![Rotating s by k to get c](/img/rotate_character.gif)
+![Rotating s by k to get c](https://cloud-5ykpylz4d-hack-club-bot.vercel.app/9rotate_character.gif)
 
 Let’s break down that process:
 
@@ -185,7 +185,7 @@ print("Output: " + ciphertext)
 
 Now let's rotate a whole `string` of characters by a single character:
 
-![Rotating secretmessage by k to get combodwocckqo](/img/rotate_string.gif)
+![Rotating secretmessage by k to get combodwocckqo](https://cloud-f7e7al8ty-hack-club-bot.vercel.app/0rotate_string.gif)
 
 We’re going to add a new function called `encrypt`, right after `encrypt_character`. This function goes over every character in your message, and puts it through `encrypt_character`:
 
@@ -300,7 +300,7 @@ print("Output: " + ciphertext)
 
 Now let's rotate a `string` by another `string`:
 
-![Rotating “secretmessage” by “key” to get “ciabirwiqceeo”](/img/encrypt_string.gif)
+![Rotating “secretmessage” by “key” to get “ciabirwiqceeo”](https://cloud-5ykpylz4d-hack-club-bot.vercel.app/4encrypt_string.gif)
 
 _This_ is the full **Vigenere Cipher**!
 
@@ -448,15 +448,15 @@ For each character, there is some other character where if you add them together
 
 So if b=1 in our alphabet, then its inverse is z=25 (because 1+25=0 on our wheel). By the same logic, if k=10 then its inverse is q=16:
 
-![Inverting “k” to get “q”](/img/invert_character.gif)
+![Inverting “k” to get “q”](https://cloud-5ykpylz4d-hack-club-bot.vercel.app/6invert_character.gif)
 
 To get the inverse of “key”, we just apply the same process to every character in our key:
 
-![Inverting “key” to get “qwc”](/img/invert_string.gif)
+![Inverting “key” to get “qwc”](https://cloud-5ykpylz4d-hack-club-bot.vercel.app/7invert_string.gif)
 
 So the inverse of “key” is “qwc”. If we use this key on “ciabirwiqceeo”, it turns back into “secretmessage”:
 
-![Decrypting “ciabirwiqceeo” with “qwc” to get “secretmessage”](/img/decrypt_string.gif)
+![Decrypting “ciabirwiqceeo” with “qwc” to get “secretmessage”](https://cloud-5ykpylz4d-hack-club-bot.vercel.app/3decrypt_string.gif)
 
 To make this happen in our code, we need two new functions. We’ll add them right after `encrypt`.
 
@@ -829,17 +829,17 @@ I mean that literally—the first practical _computationally-universal_ computer
 
 In the 1920s, the German government began to secure their communications with an elaborate mechanical cipher machine called the Enigma. This machine had much in common with the Vigenere cipher you just wrote, and it was thought by many to be practically unbreakable.
 
-![A German Enigma Machine](/img/enigma_machine.jpg)
+![A German Enigma Machine](https://cloud-5ykpylz4d-hack-club-bot.vercel.app/5enigma_machine.jpg)
 
 In the early 1930s, Poland was increasingly threatened by the rise of the Nazis in Germany. Three Polish students named Marian Rejewski, Jerzy Różycki, and Henryk Zygalski developed a way to break the Enigma cipher and read German messages, including exact wiring diagrams of the machine—using only pencil and paper, _without ever seeing the machine itself._
 
 Later in the decade, this team began to automate the message-cracking process with enormous electro-mechanical contraptions known as Cryptologic Bombas. These machines and techniques were later refined by Alan Turing to create the Cryptologic _Bombe_, a similar machine that relied on different cryptanalytical techniques.
 
-![An American Bombe, built by the US Navy](/img/american_bombe.jpg)
+![An American Bombe, built by the US Navy](https://cloud-5ykpylz4d-hack-club-bot.vercel.app/0american_bombe.jpg)
 
 In the 1940s, British codebreakers needed a more advanced machine to break a high-level Nazi code called the Lorenz Cipher. To meet this challenge, a British engineer named Tommy Flowers created a _programmable_ electronic machine called Colossus. This is considered by many to be the first _true_ computer (although a German machine called the Z1 may rightly hold that title).
 
-![Colossus, the first programmable electronic digital computer](/img/colossus.jpg)
+![Colossus, the first programmable electronic digital computer](https://cloud-5ykpylz4d-hack-club-bot.vercel.app/2colossus.jpg)
 
 Effective cryptanalysis was undeniably decisive in _stopping the Nazis_. On the other hand, effective cryptography played a role in their rise.
 
