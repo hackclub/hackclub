@@ -2,6 +2,7 @@
 name: Cringe 101
 description: The most cringiest website ever
 author: '@notbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram'
+img: 
 ---
 
 _Hello friends! We need a community member to update this workshop to work without Cloud9. Interested? Message an admin in slack! Until then, this will live in the Retired section._
@@ -91,7 +92,7 @@ This isn't 100% necessary for the code to run (it will still totally do so), but
 
 They deliver beauties like this:
 
-![](img/hello.gif)
+![](https://cloud-90ixasr67-hack-club-bot.vercel.app/1hello.gif)
 
 Insert GIFs just like any other image format!
 
@@ -115,21 +116,21 @@ Let's break CSS down into an English sentence:
 
 Here's the CSS:
 
-![](img/img.png)
+![](https://cloud-90ixasr67-hack-club-bot.vercel.app/6img.png)
 
-![](img/img_key.png)
+![](https://cloud-90ixasr67-hack-club-bot.vercel.app/3img_key.png)
 
 For every **`img` tag** on the web page
 
-![](img/img_bracket.png)
+![](https://cloud-90ixasr67-hack-club-bot.vercel.app/2img_bracket.png)
 
 I want all the style properties inside the curly brackets to apply:
 
-![](img/img_width.png)
+![](https://cloud-90ixasr67-hack-club-bot.vercel.app/5img_width.png)
 
 specifically, I want the width
 
-![](img/img_value.png)
+![](https://cloud-90ixasr67-hack-club-bot.vercel.app/4img_value.png)
 
 to be 50% of the width of the page.
 
