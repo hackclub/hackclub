@@ -2,7 +2,7 @@
 name: Sketch Together
 description: Real-time collaborative drawing pad using p5.js
 author: '@jkwok91'
-img: https://cloud-m6pkxlvsy-hack-club-bot.vercel.app/0demo.png
+img: "https://cloud-m6pkxlvsy-hack-club-bot.vercel.app/0demo.png"
 ---
 
 # Sketch Together
