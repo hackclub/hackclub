@@ -33,7 +33,7 @@ Please use Google Chrome for this tutorial
 
 When you're done with it, your folder structure should look like this:
 
-![](img/created_twilio_folder.png)
+![](https://cloud-f6g269b6d-hack-club-bot.vercel.app/9created_twilio_folder.png)
 
 ### 3) Create the HTML file for your website
 
@@ -43,7 +43,7 @@ Create an `index.html` file inside of the `twilio` folder:
 2. Click **"New File"**
 3. Then name the file **`index.html`**
 
-   ![](img/created_index_html_file.png)
+   ![](https://cloud-f6g269b6d-hack-club-bot.vercel.app/7created_index_html_file.png)
 
 4. Open the newly created `index.html` and type the below HTML template into it:
 
@@ -69,7 +69,7 @@ To add the capability to send text messages and make phone calls, we need to add
 ></script>
 ```
 
-![](img/add_twilio_basic_script.gif)
+![](https://cloud-f6g269b6d-hack-club-bot.vercel.app/2add_twilio_basic_script.gif)
 
 ### 5) Set your Twilio `sid` and `token`
 
@@ -77,7 +77,7 @@ To add the capability to send text messages and make phone calls, we need to add
 
    > Note: If you are the facilitator (or if you're just doing this workshop by yourself), follow the directions [here](../lib/twilio-basic/signup.md) to get your own Twilio SID and token.
 
-![](img/setting_sid_and_token.gif)
+![](https://cloud-gz8yq7dzs-hack-club-bot.vercel.app/2setting_sid_and_token.gif)
 
 ### 6) Creating our JavaScript File
 
@@ -91,7 +91,7 @@ Create an `main.js` file inside of the `twilio` folder:
 2. Click **"New File"**
 3. Then name the file **`main.js`**
 
-![](img/added_main_js.png)
+![](https://cloud-f6g269b6d-hack-club-bot.vercel.app/3added_main_js.png)
 
 ### 7) Linking the JavaScript file
 
@@ -103,7 +103,7 @@ Although we've created our JavaScript file, the HTML will not run it until you e
 
 1. Add the above script tag \*\*_underneath_ the current `script` tag
 
-   ![](img/add_main_js_script_tag.gif)
+   ![](https://cloud-f6g269b6d-hack-club-bot.vercel.app/1add_main_js_script_tag.gif)
 
 ## Part 2: Writing Your First Line of Twilio Code
 
@@ -119,7 +119,7 @@ Although we've created our JavaScript file, the HTML will not run it until you e
 
 2. Change `555-555-5555` to your cell phone number
 
-![](img/twilio_send_message.gif)
+![](https://cloud-gz8yq7dzs-hack-club-bot.vercel.app/3twilio_send_message.gif)
 
 ### 2) Running the JavaScript code
 
@@ -129,7 +129,7 @@ The code in our `main.js` file will now run every time the `index.html` page is 
 2. Click **"Preview"** → **"Live Preview File"**
 3. You should now receive a text message!
 
-   ![](img/celebrate_1.gif)
+   ![](https://cloud-f6g269b6d-hack-club-bot.vercel.app/4celebrate_1.gif)
 
 ### 3) Adding Some Text
 
@@ -141,7 +141,7 @@ Just to add some clarity to our currently blank webpage:
 <p>Refresh the page to run the code again</p>
 ```
 
-![](img/add_instructions.gif)
+![](https://cloud-f6g269b6d-hack-club-bot.vercel.app/0add_instructions.gif)
 
 ### 3) Modifying And Running New Code
 
@@ -156,7 +156,7 @@ Let's say we want to change the code.
 
 Try calling a bunch of phones at once. Ask your neighbors for their phone number. Then you duplicate the code to call more people's phones!
 
-> ![](img/duplicating_call_and_say.gif)
+> ![](https://cloud-gz8yq7dzs-hack-club-bot.vercel.app/0duplicating_call_and_say.gif)
 
 ### 5) Peeking Under the Hood
 
@@ -164,7 +164,7 @@ The live preview inside of Cloud9 is great for testing out HTML & CSS, but it is
 
 To open your website in Google Chrome
 
-1. In the live preview window, click the button that looks like this ![](img/live_preview_button.png)
+1. In the live preview window, click the button that looks like this ![](https://cloud-gz8yq7dzs-hack-club-bot.vercel.app/1live_preview_button.png)
 2. Now open the developer console.
    - **Mac Directions**
      1. Click **"View"** → **"Developer"** → **"JavaScript Console"** (or use the shortcut **`Command + option + j`**
@@ -173,7 +173,7 @@ To open your website in Google Chrome
 
 In the console here, you can see what's happening underneath the hood:
 
-> ![](img/console.png)
+> ![](https://cloud-f6g269b6d-hack-club-bot.vercel.app/6console.png)
 
 - You can learn that `Your Twilio phone number is +14848689421`
 - You can see when text messages are sent
@@ -258,7 +258,7 @@ You can choose to play any of your favorite songs from YouTube by following thes
 3. Download the mp3 file
 4. Drag the mp3 file into the sidebar of Cloud9 to upload it
 5. In Cloud9, Right click on the mp3 file and click **"Preview"**
-6. In the preview of the mp3, click the arrow link: ![](img/live_preview_button.png)
+6. In the preview of the mp3, click the arrow link: ![](https://cloud-gz8yq7dzs-hack-club-bot.vercel.app/1live_preview_button.png)
 7. Copy the URL of the mp3 file
 8. Update your `Twilio.callAndPlay` function to use this new URL.
 
