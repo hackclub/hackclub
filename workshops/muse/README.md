@@ -25,7 +25,7 @@ For more documentation refer to the [GitHub repository](https://github.com/hackc
 
 [Launch the editor here](https://muse.hackclub.dev/) or by clicking the image below.
 
-[![muse editor](./img/demo.png)](https://muse.hackclub.dev/)
+[![muse editor](https://cloud-9ltsqwncl-hack-club-bot.vercel.app/0demo.png)](https://muse.hackclub.dev/)
 
 Here are some slightly more involved pieces which will give you a sense of some things you can do in Muse. 
 
