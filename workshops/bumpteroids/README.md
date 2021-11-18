@@ -12,7 +12,7 @@ This workshop will show you how to use the P5.play libraries a bit more extensiv
 
 It will look something like this:
 
-![Bumpteroids Example](https://cayce2514.github.io/bumpteroids/images/bumpteroids.png)
+![Bumpteroids Example](https://cloud-e7u6ntlp6-hack-club-bot.vercel.app/0bumpteroids.png)
 
 Here's the [live demo](https://cayce2514.github.io/bumpteroids/) and [final code](https://github.com/Cayce2514/cayce2514.github.io/tree/master/bumpteroids).
 
@@ -138,22 +138,22 @@ When you save your file (<kbd>Ctrl+s</kbd>) you should now see a slightly off-wh
 
 So now we have to decide on our ship. Let's start with some images. We have our basic ship image:
 
-![Basic Ship](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroids_ship0001.png)
+![Basic Ship](https://cloud-e7u6ntlp6-hack-club-bot.vercel.app/6asteroids_ship0001.png)
 
 Fairly simple design. See the final section for where you can find more free to use art.
 
 We will also use an image that shows the same body of the space ship, but a bit of rocket flare:
 
-![Ship with Rocket Flare](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroids_ship0002.png)
+![Ship with Rocket Flare](https://cloud-e7u6ntlp6-hack-club-bot.vercel.app/7asteroids_ship0002.png)
 
 If you look closely to the live demo, the rocket flare isn't just solid, it seems to flutter a bit. That's because we use more images of the ship with rocket flare, in an animation, and the rocket flare is a bit different across the animation. Fires never keep the same shape, right? Our rocket shouldn't either. Here's all the rockets with flare image in order, imagine cycling through each of these. We get the fluttering appearance by switching between these rocket flare images faster than our eyes can see that we've replaced the image. That's how animation works!
 
-![Ship with a second Rocket Flare](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroids_ship0002.png)
-![Ship with a third Rocket Flare](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroids_ship0003.png)
-![Ship with a  fourth Rocket Flare](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroids_ship0004.png)
-![Ship with a fifth Rocket Flare](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroids_ship0005.png)
-![Ship with a sixth Rocket Flare](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroids_ship0006.png)
-![Ship with a seventh Rocket Flare](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroids_ship0007.png)
+![Ship with a second Rocket Flare](https://cloud-e7u6ntlp6-hack-club-bot.vercel.app/7asteroids_ship0002.png)
+![Ship with a third Rocket Flare](https://cloud-e7u6ntlp6-hack-club-bot.vercel.app/8asteroids_ship0003.png)
+![Ship with a  fourth Rocket Flare](https://cloud-e7u6ntlp6-hack-club-bot.vercel.app/9asteroids_ship0004.png)
+![Ship with a fifth Rocket Flare](https://cloud-dhl0wnuub-hack-club-bot.vercel.app/0asteroids_ship0005.png)
+![Ship with a sixth Rocket Flare](https://cloud-dhl0wnuub-hack-club-bot.vercel.app/1asteroids_ship0006.png)
+![Ship with a seventh Rocket Flare](https://cloud-dhl0wnuub-hack-club-bot.vercel.app/2asteroids_ship0007.png)
 
 Download all of these images locally by right-clicking on each of them and selecting "Save Image As…", then uploading to Cloud 9 into an `images` directory. You should have 7 ship images total.
 
@@ -436,7 +436,7 @@ bullets = new Group()
 
 Let's now set the image for the bullet. It's just a small little bit with a transparent background. You can download it here:
 
-![Bullet Image](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroids_bullet.png)
+![Bullet Image](https://cloud-e7u6ntlp6-hack-club-bot.vercel.app/4asteroids_bullet.png)
 
 Upload it into your `images` folder in Cloud9.
 
@@ -534,9 +534,9 @@ Now, we're ready to shoot something!
 
 Asteroids are big rocks floating in space. They take various sizes and shapes. You can use any image you like, but in this tutorial, we'll use the following 3 images:
 
-![Asteroid 0](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroid0.png)
-![Asteroid 1](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroid1.png)
-![Asteroid 2](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroid2.png)
+![Asteroid 0](https://cloud-e7u6ntlp6-hack-club-bot.vercel.app/1asteroid0.png)
+![Asteroid 1](https://cloud-e7u6ntlp6-hack-club-bot.vercel.app/2asteroid1.png)
+![Asteroid 2](https://cloud-e7u6ntlp6-hack-club-bot.vercel.app/3asteroid2.png)
 
 When we shoot the asteroid, it isn't going to blow up completely. It'll break into two smaller pieces, then two more before you can fully destroy the smallest asteroid. We'll use the same images for the big and small sprites. We'll just scale the image to suit our needs. We'll specify them as 3 types: large, medium and small.
 
@@ -743,7 +743,7 @@ asteroids.add(a)
 
 There's now only one issue with the shooting of the asteroid. There's no explosion! Since this game uses quite simple graphics, we'll use another small image to represent an asteroid particle. Download it here:
 
-![Particle 0](https://raw.githubusercontent.com/Cayce2514/cayce2514.github.io/master/bumpteroids/images/asteroids_particle.png)
+![Particle 0](https://cloud-e7u6ntlp6-hack-club-bot.vercel.app/5asteroids_particle.png)
 
 Each time that we shoot and hit an asteroid, there will be a ring of, say, 10 particles expanding out from the position of the bullet we shot the asteroid with to make something like an explosion. We'll have the particles go in random directions and at a somewhat random speed.
 
