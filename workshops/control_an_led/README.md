@@ -29,47 +29,47 @@ Then download the Cayenne app from the [Google Play Store](https://play.google.c
 
 1. Create your free account.
 
-![Cayenne Sign In](img/cayenne_sign_in.png)
+![Cayenne Sign In](https://cloud-41hi5qh48-hack-club-bot.vercel.app/4cayenne_sign_in.png)
 
 2. Click the **+** on the right top side to add new devices.
 
-![Cayenne List](img/cayenne_list.png)
+![Cayenne List](https://cloud-41hi5qh48-hack-club-bot.vercel.app/3cayenne_list.png)
 
 3. Select the Raspberry Pi icon
 
-![Add Device](img/add_device.png)
+![Add Device](https://cloud-41hi5qh48-hack-club-bot.vercel.app/0add_device.png)
 
 4. Follow the instructions and search for your Raspberry Pi
 
-![My Devices](img/my_devices.png)
+![My Devices](https://cloud-41hi5qh48-hack-club-bot.vercel.app/9my_devices.png)
 
-![Looking for Devices](img/looking_for_devices.png)
+![Looking for Devices](https://cloud-41hi5qh48-hack-club-bot.vercel.app/8looking_for_devices.png)
 
 5. Cayenne will automatically detect your Raspberry Pi. If it did not automatically connect you, you can also manually type in the IP address of your Pi. See [this workshop](https://hackclub.com/workshops/remote_viewing_raspi#find-the-ip-address-of-your-pi) for how to find your IP address.
 
-![Your Raspberry Pi](img/your_raspi.png)
+![Your Raspberry Pi](https://cloud-6hpcu9pdc-hack-club-bot.vercel.app/3your_raspi.png)
 
 6. Select your Raspberry Pi and click setup. This will then initialize the installation of required files on to the Raspberry Pi.
 
-![Setup Button](img/setup_button.png)
+![Setup Button](https://cloud-6hpcu9pdc-hack-club-bot.vercel.app/2setup_button.png)
 
 7. It will take 5 min or so to complete this setup. You can go enjoy a a nice afternoon snack while you wait, or you can just sit back and relax.
 
-![Installing Libraries](img/installing_libraries.png)
+![Installing Libraries](https://cloud-41hi5qh48-hack-club-bot.vercel.app/7installing_libraries.png)
 
 8. Once it is done, select your device from the interface.
 
-![Select Device](img/select_device.png)
+![Select Device](https://cloud-6hpcu9pdc-hack-club-bot.vercel.app/1select_device.png)
 
 9. You will be able to see various parameters on the screen, and on the other tab you can see the state and details about GPIO.
 
-![Device Dashboard](img/device_dashboard.png)
+![Device Dashboard](https://cloud-41hi5qh48-hack-club-bot.vercel.app/6device_dashboard.png)
 
-![Pin Dashboard](img/pin_dashboard.png)
+![Pin Dashboard](https://cloud-6hpcu9pdc-hack-club-bot.vercel.app/0pin_dashboard.png)
 
 10. Now connect your LED to your Raspberry Pi using a breadboard and two jumper wires. Follow the diagram below.
 
-![Circuit](img/circuit.png)
+![Circuit](https://cloud-41hi5qh48-hack-club-bot.vercel.app/5circuit.png)
 
 Positive end of the LED should be connected to GPIO 17 of Raspberry Pi. The negative end can be connected to any of the GND available in the Raspberry Pi.
 
@@ -79,7 +79,7 @@ Follow the Raspberry Pi GPIO specification sheet for clarification.
 
 11. Click the + icon on the top right section of the first tab and select light from the actuators and then light switch.
 
-![Add Light](img/add_light_1.png)
+![Add Light](https://cloud-41hi5qh48-hack-club-bot.vercel.app/1add_light_1.png)
 
 12. Fill in the information needed as specified below:
 
@@ -91,7 +91,7 @@ Follow the Raspberry Pi GPIO specification sheet for clarification.
 - Leave the other two fields as is.
 - Then click add button below.
 
-![Add Light 2](img/add_light_2.png)
+![Add Light 2](https://cloud-41hi5qh48-hack-club-bot.vercel.app/2add_light_2.png)
 
 That's it, you have successfully configured your Raspberry Pi. A button should appear on the interface. Now click that button that you have created, and you should see the LED turning ON! 💡
 
