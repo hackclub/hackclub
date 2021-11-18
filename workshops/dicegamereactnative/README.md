@@ -10,7 +10,7 @@ In this workshop, we will be making a Dice game app with the help of React-Nativ
 
 This is what it will look like:
 
-![Demo GIF](img/finaldemo1.gif)
+![Demo GIF](https://cloud-976mmnfhq-hack-club-bot.vercel.app/5finaldemo1.gif)
 
 The above is being run on a web emulator. How to use this emulator is included in this workshop.
 
@@ -32,7 +32,7 @@ So before moving forward let's discuss Snack!
 
 ### Why use Snack?
 
-![Snack logo](img/snacklogo.png)
+![Snack logo](https://cloud-9mddpco09-hack-club-bot.vercel.app/3snacklogo.png)
 
 Snack is the perfect choice for workshops because:
 
@@ -41,13 +41,13 @@ Snack is the perfect choice for workshops because:
 - You can easily share and export your Snack projects with others.
 - You can test your app directly on your phone via the Expo app.
 
-![This is awesoem GIF](img/thisisawesome.gif)
+![This is awesoem GIF](https://cloud-9mddpco09-hack-club-bot.vercel.app/0thisisawesome.gif)
 
 ### Introduction to the interface
 
 The below image is what Snack's interface looks like.
 
-![Snack Interface](img/interface.png)
+![Snack Interface](https://cloud-976mmnfhq-hack-club-bot.vercel.app/9interface.png)
 
 I have labeled the important parts of the interface. The interface is really intuitive and will not be a big issue for anyone who is not familiar with it.
 
@@ -55,21 +55,21 @@ I have labeled the important parts of the interface. The interface is really int
 
 The Snack emulators are really awesome _but sometimes they might require you to wait in a queue ( you won't be waiting for too long )_ but still if you have an Android or iOS device then use it, as it won't require you to be on a queue.
 
-![Emualtor Run Image](img/emulatorintro.png)
+![Emualtor Run Image](https://cloud-976mmnfhq-hack-club-bot.vercel.app/4emulatorintro.png)
 
 Another suggestion is to use the web view as it won't require any waiting time and once the app is developed then try it on emulators ✌️
 
-![Web view Image](img/webviewintro.png)
+![Web view Image](https://cloud-9mddpco09-hack-club-bot.vercel.app/1webviewintro.png)
 
 ### What is this Expo App?
 
-![Expo logo](img/expologo.png)
+![Expo logo](https://cloud-cphtimnl8-hack-club-bot.vercel.app/0expologo.png)
 
 Expo App is available for both Android and iOS and you can test your app made in Snack directly from it in your device ( it also has some other use-cases! ).
 
 You just need to scan the QR code of your Snack project from your Expo app ( In case of iOS users, you can also use your in-built scanner ) to run your project on your device.
 
-![scan qr code image](img/scanqr.png)
+![scan qr code image](https://cloud-fyz7lf2ul-hack-club-bot.vercel.app/5scanqr.png)
 
 Links for Expo:
 
@@ -86,7 +86,7 @@ I have created a Snack template for you, it contains all the resources for makin
 
 This will open a template Snack project for you. **Your setup is complete** ( I know it feels awesome as it required almost no setup 🕶️ ).
 
-![it was easy GIF](img/itwaseasy.gif)
+![it was easy GIF](https://cloud-fyz7lf2ul-hack-club-bot.vercel.app/0itwaseasy.gif)
 
 ## Some Basics first!
 
@@ -154,7 +154,7 @@ Now let's get started by making a project in it ( I believe projects are the bes
 
 Your App.js will already have some template code in it. Your code will look something like this.
 
-![ Initial App file image ](img/initialApp.png)
+![ Initial App file image ](https://cloud-976mmnfhq-hack-club-bot.vercel.app/8initialapp.png)
 
 1. We have made some initial imports here which include React, some react-native components ( View, ScrollView, etc) and Constants from 'expo-constants'.
 
@@ -176,7 +176,7 @@ Now let's discuss about <View\> and <ScrollView\>.
 
 When our device goes in Landscape orientation then our display height becomes really short hence **<ScrollView\> will allow the content to be still accessible via scrolling in Landscape mode. **
 
-![got it GIF](img/gotit.gif)
+![got it GIF](https://cloud-976mmnfhq-hack-club-bot.vercel.app/7gotit.gif)
 
 ### Let's talk about StyleSheet.create
 
@@ -190,20 +190,20 @@ paddingTop: Platform.os == 'ios' ? Constants.statusBarHeight: null,
 
 #### Why are we doing this here?
 
-![padding comparison image](img/paddingcomp.png)
+![padding comparison image](https://cloud-fyz7lf2ul-hack-club-bot.vercel.app/2paddingcomp.png)
 
 - Okay so in iOS devices our app's content starts from the top of the screen ( meaning the status bar is not ignored! ) so Platform.os tell us which operating system the app is running on ( Platform is made available by react-native )
 
 - If it is **'ios'** then we give padding from the top equal to the height of the status bar.
   We use Constants.statusBarHeight for it (The padding problem doesn't exist in Android!).
 
-![ smart gif ](img/smart.gif)
+![ smart gif ](https://cloud-fyz7lf2ul-hack-club-bot.vercel.app/6smart.gif)
 
 ## Making the Profilecard!
 
 Okay, now we are going to make the Profilecard.
 
-![profile card image](img/profilecard.png)
+![profile card image](https://cloud-fyz7lf2ul-hack-club-bot.vercel.app/3profilecard.png)
 
 ### Step1 - Open the profilecard.js file
 
@@ -316,7 +316,7 @@ const imgarr = [
 
 This was all you needed to complete the profile section part!
 
-![awesome GIF](img/awesome.gif)
+![awesome GIF](https://cloud-976mmnfhq-hack-club-bot.vercel.app/0awesome.gif)
 
 ## Working with the game part!
 
@@ -450,18 +450,18 @@ Now let's talk about the <Button\>
 
 Yes, this was all you needed to make this app. You have completed the whole programming part.
 
-![ who is awesome GIF ](img/whoisawesome.gif)
+![ who is awesome GIF ](https://cloud-9mddpco09-hack-club-bot.vercel.app/2whoisawesome.gif)
 
 ## Run it!
 
 Just click on the **Roll button** and see the magic!
 
-![roll button click image](img/rollbuttonclick.png)
+![roll button click image](https://cloud-fyz7lf2ul-hack-club-bot.vercel.app/4rollbuttonclick.png)
 
 ## Next Steps!
 
 I know it feels awesome to make it but don't stop here, Create whatever you can from this crazy trick and share it with us in the [`#ship`](https://app.slack.com/client/T0266FRGM/C0M8PUPU6) channel of [Hack Club's Slack](https://hackclub.com/slack/).
 
-![nailed it gif](img/nailedit.gif)
+![nailed it gif](https://cloud-fyz7lf2ul-hack-club-bot.vercel.app/1nailedit.gif)
 
 I am available on Hack Club's Slack by the username **Harsh Bajpai**, If you have any doubt or query regarding this workshop or react-native feel free to reach out to me!
