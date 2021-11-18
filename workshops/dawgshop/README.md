@@ -6,7 +6,7 @@ author: '@nguyenbrian, @JevinSidhu, @uditdesai, and @vaibhavyadaram'
 
 # The Dawgshop
 
-![Thug Life - Tu Pac](img/tupac.gif)
+![Thug Life - Tu Pac](https://cloud-p7ic0tocj-hack-club-bot.vercel.app/7tupac.gif)
 
 ## Introduction
 
@@ -90,7 +90,7 @@ Include the linking of jQuery above your `script.js` file
 
 Our focus for this workshop is the the basics of JavaScript + jQuery. Let's finish up our HTML first!
 
-![Man Typing](img/typing.gif)
+![Man Typing](https://cloud-p7ic0tocj-hack-club-bot.vercel.app/8typing.gif)
 
 Note: All of this must be enclosed by the `<body>` tag. The closing tag, `</body>`, should be after your script tags.
 
@@ -138,7 +138,7 @@ Indent your code!
 `<input/>` is self-enclosed tag for creating an input box. The `/` is how it
 closes itself. We'll be able to type in this box!
 
-![Screenshot](img/screenshot.png)
+![Screenshot](https://cloud-1nynlle1d-hack-club-bot.vercel.app/0screenshot.png)
 
 Give this input box an id of "text-input"
 
@@ -195,7 +195,7 @@ To do this, we're also going to give this a `type` attribute.
 
 **Look at that beautiful indenting. Is your code indented?**
 
-![Childish Gambino](img/Childish.gif)
+![Childish Gambino](https://cloud-p7ic0tocj-hack-club-bot.vercel.app/0childish.gif)
 
 5. Still inside the div, let's create a space for our dawgified content, let's create a `<p>` tag with an
    id of `output`.
@@ -282,7 +282,7 @@ If you've followed along this far, awesome! You're doing great, we're almost don
 
 **We a team and we the best.**
 
-![DJ Khaled](img/dj2.gif)
+![DJ Khaled](https://cloud-p7ic0tocj-hack-club-bot.vercel.app/3dj2.gif)
 
 Now that we've gotten JavaScript to listen for a click on the button, we need to tell it to do something when it gets a click.
 
@@ -308,7 +308,7 @@ WHOA HOLD UP DID YOU SEE THAT?????
 
 LOOK AGAIN.
 
-![Screenshot](img/screenshot2.png)
+![Screenshot](https://cloud-1nynlle1d-hack-club-bot.vercel.app/1screenshot2.png)
 
 You're probably wondering what the heck that `$` is doing here. Remember the libraries section in the slidedeck?
 
@@ -316,7 +316,7 @@ That is the power of jQuery at work. It took something we would normally use lik
 
 Of course, `document.getElementById('text-input')` would still work if you'd prefer that.
 
-![Michael Scott](img/michael.gif)
+![Michael Scott](https://cloud-p7ic0tocj-hack-club-bot.vercel.app/4michael.gif)
 
 Note: It finds HTML elements exactly like a CSS Selector would:
 
@@ -353,7 +353,7 @@ We're gonna use this string value to dawg it up later on.
 
 So, we've debunked that mystery!
 
-![Scooby Doo](img/scooby.gif)
+![Scooby Doo](https://cloud-p7ic0tocj-hack-club-bot.vercel.app/6scooby.gif)
 
 ```js
 document.getElementById('go').onclick = function () {
@@ -379,7 +379,7 @@ Remember: Whatever is on the right side will be assigned to the left side.
 
 Adding the two strings together is called **concatenation**. Ya fancy, huh?
 
-![What](img/what.gif)
+![What](https://cloud-p7ic0tocj-hack-club-bot.vercel.app/9what.gif)
 
 Alright, now that we're dawging it up, it's time to display our up text on the page — fo'shizzle.
 
@@ -441,7 +441,7 @@ document.getElementById('go').onclick = function () {
 
 Congratulations! You made your own dawging machine!
 
-![Mind Blown](img/mind-blown.gif)
+![Mind Blown](https://cloud-p7ic0tocj-hack-club-bot.vercel.app/5mind-blown.gif)
 
 Unless you copy-pasted, then, eh. Maybe only a half-legend.
 
@@ -476,6 +476,6 @@ Now is the chance to make this project yours! For inspiration, you can look [her
 
 ## Thanks for completing our workshop ❤
 
-![cipher-squad](img/cipher-squad.jpg)
+![cipher-squad](https://cloud-p7ic0tocj-hack-club-bot.vercel.app/1cipher-squad.jpg)
 
 Move on to the [Cringe 101 Workshop](../cringe_101/) afterwards!
