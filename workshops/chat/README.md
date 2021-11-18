@@ -12,7 +12,7 @@ Short link to this workshop: https://workshops.hackclub.com/chat
 
 | What you'll build       |
 | ----------------------- |
-| ![](img/final_demo.gif) |
+| ![](https://cloud-8q2wrl0od-hack-club-bot.vercel.app/8final_demo.gif) |
 
 Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1 hour.
 
@@ -81,7 +81,7 @@ These two input tags allow us to set a name for the user and allow the user to s
 
 Save and open up the external live preview.
 
-![](img/html_setup.png)
+![](https://cloud-8q2wrl0od-hack-club-bot.vercel.app/7html_setup.png)
 
 ## Part III: The JS File
 
@@ -91,11 +91,11 @@ Now we'll set up the Firebase side of our project. Go to [Firebase](https://fire
 
 Now that we're at our dashboard, we'll create our app.
 
-![](img/fb_create_proj.gif)
+![](https://cloud-8q2wrl0od-hack-club-bot.vercel.app/1fb_create_proj.gif)
 
 Let's click on "Add Firebase to your web app." We'll copy part of the code snippet and paste it into our `main.js`:
 
-![](img/fb_get_config.gif)
+![](https://cloud-8q2wrl0od-hack-club-bot.vercel.app/3fb_get_config.gif)
 
 So far our `main.js` looks like this (your URLs and keys will be different):
 
@@ -111,7 +111,7 @@ firebase.initializeApp(config)
 
 Now if we save our `main.js` and check out the external live preview, we'll see an error in console! Why is this?
 
-![](img/fb_domain_not_auth.png)
+![](https://cloud-8q2wrl0od-hack-club-bot.vercel.app/2fb_domain_not_auth.png)
 
 Firebase will only allow authorized domains (websites) to change the database. This is so an internet stranger can't ruin your awesome messaging app.
 
@@ -125,15 +125,15 @@ This will allow us to view what's happening in Firebase while building our app.
 
 Click on `Auth` in the sidebar, and then the "Sign-In Method" tab:
 
-![](img/fb_go_to_auth.gif)
+![](https://cloud-8q2wrl0od-hack-club-bot.vercel.app/4fb_go_to_auth.gif)
 
 Once there, we'll scroll down and add `preview.c9users.io` and `USERNAME.github.io` (so you can later view your project on your GitHub Page) to the list of Authorized Domains:
 
-![](img/fb_add_domain.gif)
+![](https://cloud-8q2wrl0od-hack-club-bot.vercel.app/0fb_add_domain.gif)
 
 Next we have to edit our database permissions. We'll do this by clicking on "Database" in the sidebar, and changing `auth != null` to `true`:
 
-![](img/fb_set_db_perm.gif)
+![](https://cloud-8q2wrl0od-hack-club-bot.vercel.app/6fb_set_db_perm.gif)
 
 Great. Now we are done configuring Firebase and can return to our JavaScript file.
 
@@ -220,7 +220,7 @@ function pushMessage(event) {
 
 Now, save and try sending a message in your live preview! Sure, nothing shows up, but check out your Firebase database (go to `Database` in the sidebar of your Firebase console)! A new entry appears as you send messages!
 
-![](img/fb_msg_to_data.gif)
+![](https://cloud-8q2wrl0od-hack-club-bot.vercel.app/5fb_msg_to_data.gif)
 
 ### Retrieving Messages from Firebase
 

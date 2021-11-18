@@ -27,7 +27,7 @@ All Chrome extensions start with a `manifest`, which is simply a `.json` file th
 
 To load our extension into Chrome, navigate to [chrome://extensions](chrome://extensions), toggle developer mode, and click "Load unpacked extension." Select your working directory (the one containing your manifest), and you should see a card that looks like this:
 
-![Load unpacked extension](img/load_unpacked_extension.png)
+![Load unpacked extension](https://cloud-jb7qtjkxy-hack-club-bot.vercel.app/0load_unpacked_extension.png)
 
 ## Adding an Interface
 
@@ -138,7 +138,7 @@ body {
 
 To view our popup, reload the extension and click on the "H" icon in the extensions menu (top right of the browser window). You'll see a popup that looks like this:
 
-![popup][img/popup.png]
+![popup](https://cloud-jb7qtjkxy-hack-club-bot.vercel.app/1popup.png)
 
 Because the `#notepad` div element has `contenteditable` attribute, you'll be able to type right into the div without any extra `input` elements. Typing on a virtual sticky note is nice, but a sticky note that erases itself every browser session is not very useful. We can remedy this by using some useful Chrome APIs.
 

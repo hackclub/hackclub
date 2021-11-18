@@ -2,6 +2,7 @@
 name: Maze
 description: A "Scary Maze Game" clone
 author: Hack Club staff
+img: "https://cloud-ncfiwbm25-hack-club-bot.vercel.app/0demo.gif"
 ---
 
 # Friendly Maze Game
@@ -14,10 +15,10 @@ Your mission is to build your own version of [The Scary Maze Game](http://www.pl
 
 Navigate your mouse through the maze without touching the walls:
 
-![](img/demo.gif)
+![](https://cloud-ncfiwbm25-hack-club-bot.vercel.app/0demo.gif)
 
-[![](img/bttn_play_now.png)][demo_output]
-[![](img/bttn_view_code.png)][demo]
+[![](https://cloud-ncfiwbm25-hack-club-bot.vercel.app/2bttn_play_now.png)][demo_output]
+[![](https://cloud-ncfiwbm25-hack-club-bot.vercel.app/3bttn_view_code.png)][demo]
 
 [demo]: https://jsbin.com/gist/58278dcbe1d720678fec17561a112be7
 [demo_output]: https://jsbin.com/gist/58278dcbe1d720678fec17561a112be7
