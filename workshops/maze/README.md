@@ -2,7 +2,7 @@
 name: Maze
 description: A "Scary Maze Game" clone
 author: Hack Club staff
-img: https://cloud-ncfiwbm25-hack-club-bot.vercel.app/0demo.gif
+img: "https://cloud-ncfiwbm25-hack-club-bot.vercel.app/0demo.gif"
 ---
 
 # Friendly Maze Game

@@ -2,8 +2,7 @@
 name: 'Colorful Grammar'
 description: 'Let your words color the screen'
 author: '@MatthewStanciu'
-group: 'start'
-order: 3
+img: "https://cloud-pvpvkpeuc-hack-club-bot.vercel.app/0demo.png"
 ---
 
 Converting words to colors is a difficult concept to wrap your head around when you first think about it, but that’s exactly what you’re going to do in this workshop. In just 20 lines of code, you’re going to build a website that allows you to type all over the screen and watch the color of your screen change based on the number of verbs, nouns, adjectives, and adverbs in the text.
@@ -182,7 +181,7 @@ The beauty of this workshop is that there are endless ways you can go about crea
 
 We’re going to be creating our color with the [HSL (Hue, Saturation, Luminosity) color system](http://thenewcode.com/61/An-Easy-Guide-To-HSL-Color). If you’re not familiar with it, all you need to understand for this demo is that the HSL system uses a color wheel, and you identify a color according to its position on the color wheel in degrees. Also important to note is that colors start a new cycle once you pass 360°. Just like a 60° angle looks the same as a 420 (360 + 60)° angle, 60° on the HSL color system is the same color as 420°: yellow.
 
-![Color wheel divided into 6 equal parts](img/hsl-color-wheel.PNG)
+![Color wheel divided into 6 equal parts](https://cloud-pvpvkpeuc-hack-club-bot.vercel.app/1hsl-color-wheel.png)
 
 Because we can simply identify a color with a number, one way we can process our data is by adding up the frequency of each type of word. Using the WordPOS library, getting the total number of word type is as simple as `types.[type].length`; for example, `types.verbs.length`.
 
