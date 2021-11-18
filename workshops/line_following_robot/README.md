@@ -2,6 +2,7 @@
 name: 'Line Following Robot'
 description: 'Make your very own Line Following Robot'
 author: '@Prithul0218'
+img: "https://cloud-6hqrlop55-hack-club-bot.vercel.app/4youtube_thumbnail.png"
 ---
 
 # Line Following Robot
@@ -39,7 +40,7 @@ I will be explaining about some of the parts in later steps
 
 I made a video summarizing the build and working mechanism, so that you can get an image of the whole process. Pardon my newbie video making skills. Click the image below to watch it.
 
-[![The Build Video - YouTube](images/youtube_thumbnail.png)](http://www.youtube.com/watch?v=kM0dcchr15E 'Line Following Robot Build')
+[![The Build Video - YouTube](https://cloud-6hqrlop55-hack-club-bot.vercel.app/4youtube_thumbnail.png)](http://www.youtube.com/watch?v=kM0dcchr15E 'Line Following Robot Build')
 
 ### Choosing the battery:
 
@@ -57,13 +58,13 @@ _Feel free to skip this step if you decided to buy a chassis._
 
 The chassis is something that you can either make yourself, or buy for pretty cheap. I went with the make option because I had some motor with gearbox and wheels lying around. And of course, making is more fun.
 
-![](images/3d-models.jpg)
+![](https://cloud-6hqrlop55-hack-club-bot.vercel.app/03d-models.jpg)
 
 I made a 3D model in Fusion 360 to help me make sure everything would fit in the way I want. It also helped me to cut the woods to the exact shape that I would need for everything to fit nicely. Note that I did update the design as I built the robot. I didn't plan the whole design all at once before starting the build. Feel free to take a look or download the 3D design file [here.](https://a360.co/3dcqOXr)
 
 The robot consists of two round wooden plates held together with bolts and nuts. The bottom and top plates are 180mm diameter round shapes cut out of 4mm plywoods.
 
-I copied the bottom plate drawing from Fusion 360 onto a sheet of plywood and cut out the round shape. Your design may vary depending on the motor and wheels that you use.![The Bottom Board Design](images/fusion.png)
+I copied the bottom plate drawing from Fusion 360 onto a sheet of plywood and cut out the round shape. Your design may vary depending on the motor and wheels that you use.![The Bottom Board Design](https://cloud-6hqrlop55-hack-club-bot.vercel.app/3fusion.png)
 
 The cut doesn't have to be exactly round since we will next use a bolt and nut to connect it to a drill, in order to sand it down to a nice and round shape.
 
@@ -77,7 +78,7 @@ These plates will be held together later on using bolts and nuts. So I taped the
 Next we will start populating the bottom plate. The _bottom plate holds the gearbox, ball caster, IR sensor array, battery and the optional XL6009 voltage booster module_.
 The assembly is hopefully pretty easy to understand from the video. But I will just go over it adding some notes.
 First, start by mounting the gearbox and wheel set. I just used some M3 bolts and nuts to mount everything. You can then start mounting the infrared sensor array, the ball caster and the XL6009 voltage booster board (optional).
-![Mounting the ball caster and QTR sensor](images/bottom.png)
+![Mounting the ball caster and QTR sensor](https://cloud-6hqrlop55-hack-club-bot.vercel.app/1bottom.png)
 
 _Note that the array of sensors should be mounted low so that they are really close to the ground._
 
@@ -97,7 +98,7 @@ I simply used four M5 bolts and three nuts for each of them to hold the two plat
 ### Wiring everything together:
 
 This part should be done with care. Doing something wrong will result in the release of magic smoke when you power the robot. I made a wiring diagram to make things easier.
-![Circuit Diagram](fritzing.png)
+![Circuit Diagram](https://cloud-6hqrlop55-hack-club-bot.vercel.app/2fritzing.png)
 
 You can just use jumper wires to connect the digital circuitries. For wiring the battery, boost converter module and the motors, you will have to solder some wires yourself. You can connect your battery directly to the motor driver through a switch if you don't want to use the voltager booster board.
 
