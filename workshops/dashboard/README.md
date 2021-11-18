@@ -2,13 +2,14 @@
 name: Dashboard
 description: Personal dashboard with news and weather
 author: '@shamdasani'
+img: "https://cloud-rlw420xr2-hack-club-bot.vercel.app/1demo.png"
 ---
 
 # Dashboard
 
 What you'll be building:
 
-![Screenshot of dashboard with news & weather](img/app.gif)
+![Screenshot of dashboard with news & weather](https://cloud-rlw420xr2-hack-club-bot.vercel.app/0app.gif)
 
 Links to a live demo and the final code below. This workshop should take around an hour.
 
@@ -30,13 +31,13 @@ We'll be using the [OpenWeather API](https://openweathermap.org/) for the weathe
 
 Before we begin, you'll have to sign up for a [OpenWeather API key](https://home.openweathermap.org/users/sign_up). Go ahead and visit the site and sign up. Once you're logged in, go to the API keys tab, under the successful sign-in notice. It should look like this when you get there:
 
-![Screenshot of OpenWeather dashboard](img/owm-api.PNG)
+![Screenshot of OpenWeather dashboard](https://cloud-rlw420xr2-hack-club-bot.vercel.app/3owm-api.png)
 
 Take note of your API key (it'll be different for you).
 
 Next, go ahead and sign up for an [News API key](https://newsapi.org/). Once you sign up, you'll get to a page like this:
 
-![Screenshot of News API dashboard](img/news-api.jpg)
+![Screenshot of News API dashboard](https://cloud-rlw420xr2-hack-club-bot.vercel.app/2news-api.jpg)
 
 Once again, keep your API key handy to use in our JavaScript functions.
 
