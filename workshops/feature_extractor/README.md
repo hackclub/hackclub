@@ -6,7 +6,7 @@ begin: 'https://repl.it/@jajoosam/feature-extractor-start'
 canonical: 'https://repl.it/talk/learn/Build-an-ML-app-with-just-a-little-JavaScript/10372'
 ---
 
-![](img/main.gif)
+![](https://cloud-jf8ewefgu-hack-club-bot.vercel.app/1main.gif)
 
 [Demo](https://feature-extractor--jajoosam.repl.co) ⏯️ [Code](https://feature-extractor--jajoosam.repl.co/__repl) 👨‍💻 [Video Walkthrough](https://feature-extractor--jajoosam.repl.co/demo.mp4) 🎦
 
@@ -22,7 +22,7 @@ You should fork this repl - [https://repl.it/@jajoosam/feature-extractor-start](
 
 I've commented everything (except the CSS 😛) - so you should be able to go through the frontend and understand the basic layout of the app in a few minutes. Once you're done, head over to `script.js`
 
-![](img/replit-ui-screenshot.png)
+![](https://cloud-jf8ewefgu-hack-club-bot.vercel.app/3replit-ui-screenshot.png)
 
 ## ✏️ Declaring the variables
 
@@ -139,7 +139,7 @@ buttonB.mousePressed(function () {
 
 `buttonA` and `buttonB` are nothing but the two different buttons we have in our app!
 
-![](img/buttons.png)
+![](https://cloud-jf8ewefgu-hack-club-bot.vercel.app/5buttons.png)
 
 With `.mousePressed()` we're defining what happens when any of these buttons are pressed - which is:
 
@@ -169,7 +169,7 @@ train.mousePressed(function () {
 
 When the `Train 🚋` button on our app is pressed, we call `classifier.train()` - and with each iteration, the function we supply there is called - which is why we see the _[Loss](https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html)_ value keep changing.
 
-![](img/training.gif)
+![](https://cloud-jf8ewefgu-hack-club-bot.vercel.app/4training.gif)
 
 When the _Loss_ value is `0`, then we hid the `Train 🚋` button, and show the previously hidden `Predict 🔮` button!
 
@@ -235,7 +235,7 @@ Here are a few ideas 💡
 
 ml5.js can do crazy things! You can integrate image classification into your own app [like I did](https://repl.it/talk/challenge/male-A-scavenger-hunt-with-image-classification/10185), find similar words which fit into a text, get a precise skeleton of human bodies and even transfer the styles in images - look at what my picture looks like, when composed with the style of a cool painting 🖌️
 
-![mepaint](img/painted-sam.png)
+![mepaint](https://cloud-jf8ewefgu-hack-club-bot.vercel.app/2painted-sam.png)
 
 You should take a look at the many [examples on the ml5.js website](https://ml5js.org/docs/quick-start) - or take a look at [Dan Shiffman's videos on ml5.js](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y), he covers loads of things you can do with it - and explains everything with a ton of energy. I highly recommend watching his videos on the [Coding Train](https://www.youtube.com/user/shiffman) YouTube!
 

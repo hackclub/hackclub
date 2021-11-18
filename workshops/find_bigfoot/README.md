@@ -2,13 +2,14 @@
 name: Find Bigfoot
 description: Simple game to find Bigfoot using HTML, CSS and JS
 author: '@ad510, @qmogh'
+img: "https://cloud-7l9wzh1fc-hack-club-bot.vercel.app/0demo.png"
 ---
 
 # Find Bigfoot
 
 In this workshop, you will make a game about finding Bigfoot. It will look like this:
 
-![Preview of final project](img/final_screenshot.gif)
+![Preview of final project](https://cloud-4q93rtckk-hack-club-bot.vercel.app/6final_screenshot.gif)
 
 Links to a live demo and the final code below. This workshop should take around 1 hour.
 
@@ -55,7 +56,7 @@ So now you have to put an **image** of him into your game, like you did in the [
 
 When you're done, you should see Bigfoot in the live preview, like this:
 
-![A human-like figure on a mostly blank webpage](img/bigfoot_image.png)
+![A human-like figure on a mostly blank webpage](https://cloud-4q93rtckk-hack-club-bot.vercel.app/1bigfoot_image.png)
 
 And the `index.html` file looks like this:
 
@@ -73,17 +74,17 @@ And the `index.html` file looks like this:
 
 A game needs interaction in order to be a game, so let's display a pop-up box whenever the player clicks on Bigfoot, like this:
 
-![Popup with text saying "Wohoo, you win! You found bigfoot!"](img/bigfoot_popup.gif)
+![Popup with text saying "Wohoo, you win! You found bigfoot!"](https://cloud-4q93rtckk-hack-club-bot.vercel.app/2bigfoot_popup.gif)
 
 How can you do that?
 
 One of the most important skills towards becoming an independent hacker is knowing how to Google things when stuck. So let's start by Googling "[HTML handle click](https://www.google.com/search?q=html+handle+click)":
 
-> ![List of search results for the query HTML handle click](img/google_html_handle_click.png)
+> ![List of search results for the query HTML handle click](https://cloud-4q93rtckk-hack-club-bot.vercel.app/7google_html_handle_click.png)
 
 Clicking the first link takes you [here](http://www.w3schools.com/jsref/event_onclick.asp):
 
-> ![Example showing a code snippet, description, and button to try it yourself](img/w3schools_onclick.png)
+> ![Example showing a code snippet, description, and button to try it yourself](https://cloud-hs5sxv0us-hack-club-bot.vercel.app/0w3schools_onclick.png)
 
 Aha! It looks like whenever you put `onclick="myFunction()"` on a tag such as `button` or `img`, it executes the [**JavaScript**](http://www.w3schools.com/js/) code you put in the quotes whenever that tag is clicked on.
 
@@ -95,11 +96,11 @@ For one moment:
 
 We want our JavaScript code to display a pop-up box saying you've won. So now let's Google "[JavaScript pop-up box](https://www.google.com/search?q=javascript+popup+box)":
 
-> ![List of search results for the query 'javascript popup box'](img/google_javascript_popup_box.png)
+> ![List of search results for the query 'javascript popup box'](https://cloud-4q93rtckk-hack-club-bot.vercel.app/9google_javascript_popup_box.png)
 
 The first link takes you [here](http://www.w3schools.com/js/js_popup.asp):
 
-> ![Example with code snippet, description, and button to try it yourself](img/w3schools_popup.png)
+> ![Example with code snippet, description, and button to try it yourself](https://cloud-hs5sxv0us-hack-club-bot.vercel.app/1w3schools_popup.png)
 
 It looks like when you run `alert("I am an alert box!");` it opens a pop-up box showing the text inside the quotes. So if we put 2 and 2 together, our `img` tag should look like this:
 
@@ -144,7 +145,7 @@ That must be because we took him out of his natural habitat. You see, normally B
 
 When you are making your own projects, you won't have workshops telling the solution to every step. So this time, let's practice your Googling skills and see if you can figure out how to set that background image without being told the solution! After adding the background image, the live preview looks like this:
 
-![Image of a forest scene with dense branches](img/bigfoot_background.png)
+![Image of a forest scene with dense branches](https://cloud-4q93rtckk-hack-club-bot.vercel.app/0bigfoot_background.png)
 
 When you are done, or if you are simply really stuck, we've included a sample solution below. (But there are other ways to add the background image, so if your solution doesn't match mine, that's OK.)
 
@@ -168,7 +169,7 @@ There are several ways to add the background image. Here is one way:
 
 That's much better! But the top left corner is a pretty boring place to hide Bigfoot. Can you figure out how to set Bigfoot's **position** to somewhere else? This one is harder, and may take some trial and error, but it's really worth the effort to see if you can figure it out yourself. Afterwards, Bigfoot's position will be somewhere in the middle of the forest, rather than the top left corner, like this:
 
-![image of a forest scene with dense branches and a small figure hidden in the middle](img/bigfoot_position.png)
+![image of a forest scene with dense branches and a small figure hidden in the middle](https://cloud-4q93rtckk-hack-club-bot.vercel.app/3bigfoot_position.png)
 
 OK, got it working? If you need help, try asking your neighbor or workshop leader for hints.
 
@@ -178,11 +179,11 @@ Let's walk through the steps of one way of solving this.
 
 Google "[HTML position](https://www.google.com/search?q=html+position)".
 
-> ![List of search results for the query 'html position'](img/google_html_position.png)
+> ![List of search results for the query 'html position'](https://cloud-4q93rtckk-hack-club-bot.vercel.app/8google_html_position.png)
 
 The first link takes you [here](http://www.w3schools.com/cssref/pr_class_position.asp):
 
-> ![Code example for positioning an html element](img/w3schools_position.png)
+> ![Code example for positioning an html element](https://cloud-hs5sxv0us-hack-club-bot.vercel.app/2w3schools_position.png)
 
 It has some CSS code showing how to "position an `<h2>` element":
 
@@ -335,7 +336,7 @@ Nice again - great work!
 
 Congratulations, you have a working game! You're all done!
 
-![Charlie Brown celebrating](img/celebrate_charlie_brown.gif)
+![Charlie Brown celebrating](https://cloud-4q93rtckk-hack-club-bot.vercel.app/4celebrate_charlie_brown.gif)
 
 Most importantly, by practicing Googling stuff, you are on your way toward becoming an independent hacker.
 
