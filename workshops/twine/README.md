@@ -19,21 +19,21 @@ You'll be creating something a bit less complex than those examples, but still w
 
 We'll be using the online Twine editor to create our text adventure. [You can find it by clicking here](http://twinery.org/2).
 
-![Empty Twine dashboard](img/dashboard-1.png)
+![Empty Twine dashboard](https://cloud-q61bnne8c-hack-club-bot.vercel.app/0dashboard-1.png)
 
 This is the Twine dashboard. For now, we just want to focus on one thing: creating our story! Click on the big green "+ Story" button, and choose a name for your story. As it mentions, you can change this later.
 
-![Story overview with one default passage](img/overview-1.png)
+![Story overview with one default passage](https://cloud-q61bnne8c-hack-club-bot.vercel.app/8overview-1.png)
 
 After you entered the name, you'll notice that the story overview has launched. Towards the middle, you'll notice a box that says "Untitled passage". A passage can be seen like a page of a book, as you'll write your story in these passages. As well, you'll be adding links to other passages from a passage. For now, let's just change the text. Double click on the passage to open the passage editor, and enter something to start your story with. In general, a text adventure will describe the reader's current surroundings, any actions that may have just happened, and what the user can do next. Since the adventure just started, just a brief description will do.
 
-![Passage editor with initial writing](img/editor-1.png)
+![Passage editor with initial writing](https://cloud-q61bnne8c-hack-club-bot.vercel.app/2editor-1.png)
 
 You'll also likely want to change the title of the passage. Once you're done, just click the little X on the popup, and it'll automatically save what you wrote. We're now back in the story overview. You can drag around the passage boxes to organize them in a way that makes most sense to you.
 
 Now, let's make sure this works. In the bottom right, click on the "Test" button. This should open a new tab with your story.
 
-![Story preview of first passage](img/preview-1.png)
+![Story preview of first passage](https://cloud-bver2owov-hack-club-bot.vercel.app/0preview-1.png)
 
 Awesome! You should see what you wrote in that first passage. As well, you'll notice a "Debug View" button in the bottom right. We'll be using that later. You can close this tab for now if you want, but whenever you want to test out your story, you should press the "Test" button in the bottom right of the story overview.
 
@@ -43,19 +43,19 @@ So far, our story is pretty simple: It's just one passage! For this to be an adv
 
 Let's open up our first passage again by double clicking on it. So far, we've wrote about the #meta channel on Slack. Let's add a link to the #random channel. To create a new passage, it's pretty simple: With a special syntax, we tell Twine what the title of our new passage is. Our new passage is going to be called "random". We'll create a couple of blank lines in the editor, and then enter this: `[[random]]`.
 
-![Passage editor with new link syntax](img/editor-2.png)
+![Passage editor with new link syntax](https://cloud-q61bnne8c-hack-club-bot.vercel.app/3editor-2.png)
 
 That syntax of wrapping the title in two square brackets tells Twine that we want to create a clickable link, and when clicked, show the contents of the passage with the title we gave it. Close out of the passage editor, and you'll notice something...
 
-![Story overview with two passage boxes](img/overview-2.png)
+![Story overview with two passage boxes](https://cloud-q61bnne8c-hack-club-bot.vercel.app/9overview-2.png)
 
 Twine recognized that the passage we specified didn't exist, so it made it for us. How convenient! You'll also notice there's an arrow going between the first passage and this new passage. This is Twine letting us know that the link is functional. In other terms, it parsed the syntax we wrote correctly. Let's add something to our new passage the same way we did with our first, by double clicking it. We'll also add a link back to our first passage, just to show again how we create links.
 
-![Passage editor with link syntax again](img/editor-3.png)
+![Passage editor with link syntax again](https://cloud-q61bnne8c-hack-club-bot.vercel.app/4editor-3.png)
 
 You'll have noticed that if you started typing out a link to your previous passage, Twine auto-suggested the name. This is a good way to ensure you're linking to the right passage. When you close out of the editor again, you'll notice the arrow now runs two-ways, letting us know that the link is functional both ways. Let's hit "Test" again at the bottom right, and try out our new links.
 
-![Animation of going between passages](img/link-demo.gif)
+![Animation of going between passages](https://cloud-q61bnne8c-hack-club-bot.vercel.app/7link-demo.gif)
 
 Radical! At this point, you now know the basics of Twine: You create passages with a special syntax, and link them together. You might want to take some time now to write out more of your story. Before you do though, let's learn one more helpful piece of syntax.
 
@@ -65,7 +65,7 @@ So far, when the links are shown in our story, they've just been the name of the
 
 Instead, we can use some syntax to specify what the link says when shown in the story. If we wanted our link to the `random` passage to say "Go to the #random channel", we would replace `[[random]]` with `[[Go to the #random channel->random]]` You'll notice we added an arrow, with `->`.
 
-![Passage editor with new display text syntax](img/editor-4.png)
+![Passage editor with new display text syntax](https://cloud-q61bnne8c-hack-club-bot.vercel.app/5editor-4.png)
 
 Anything that comes after the `->` arrow will display as the text when going through our story. Make sure to write it exactly like our example, where there's no space between the passage title and arrow, and the arrow and display text.
 
@@ -103,7 +103,7 @@ Let's break down this syntax into two parts:
 - `(color: red + white)` - We start with a regular bracket, and then type out the word `color`, followed the colon. This is the macro call, which tells Twine that we want to do. After the colon, we put our color. In their case, they've highlighted that Twine will combine colors if you use a `+` symbol in between color names, so you can have a wide range of colors. We'll experiment with that in a second. After the last color, we put a closing bracket, to show we've finished the macro call.
 - `[Pink]` After that, there's a single square bracket, followed by the word "Pink", and then a closing square bracket. This is the text we want Twine to color, which in this case is `red + white`, which makes pink. Any amount of text can go in-between the opening and closing square brackets. Let's add this to our story:
 
-![Passage editor with color macro](img/editor-5.png)
+![Passage editor with color macro](https://cloud-q61bnne8c-hack-club-bot.vercel.app/6editor-5.png)
 
 In our case, we made the text just plain red. However, you can try experimenting with colors. Try combining a couple different colors to see what you get.
 
@@ -111,7 +111,7 @@ If you looked at the documentation previously, you'll also noticed it mentioned 
 
 Before we finish up, let's test our story again, to make sure we got the syntax right. If everything loads correctly, let's also do one more thing: Press the "Debug View" button in the bottom right of your story preview.
 
-![Story preview with debug view on](img/preview-2.png)
+![Story preview with debug view on](https://cloud-bver2owov-hack-club-bot.vercel.app/1preview-2.png)
 
 The debug view will show where you're using macros, among other things. You'll notice your colored text now shows the macro next to it. However, you'll also notice your link has a macro next to it, that says `(link-goto:)`. What does this mean? Well, when you use the double square bracket syntax to define a link to another passage, you're actually using the shorthand for the `link-goto` macro!
 
@@ -121,7 +121,7 @@ You could create all of your links by typing `(link-goto: "Display text", "Passa
 
 To finish up, we need to do one last thing: Save our stories! Twine automatically saves your story as you go, but this is only within your browser. Some computers may not remember this data when the browser is closed, or when the computer is logged out of. Thankfully, Twine has us covered here. First, click on the Home button in the bottom left of the story overview. You should be back on your Twine dashboard. You'll see that your story now has a place on the dashboard. Click the gear icon on your story, and choose "Publish to file" in the menu that pops up.
 
-![Twine dashboard with options menu open on story created](img/dashboard-2.png)
+![Twine dashboard with options menu open on story created](https://cloud-q61bnne8c-hack-club-bot.vercel.app/1dashboard-2.png)
 
 Twine will automatically download your story into an HTML file. To add it to your website, create a new directory called `twine_workshop` in the Cloud9 sidebar of your projects' workspace. Once you have that, drag the downloaded HTML file into that directory. Then go to the console at the bottom of the screen and run the following commands to add your adventure to your GitHub repository (and therefore your website).
 
