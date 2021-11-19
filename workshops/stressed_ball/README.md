@@ -93,7 +93,7 @@ To help get you along I'll give you some targets that break down the project, an
 
 ### Draw a circle
 
-![Screen Shot 2021-11-02 at 12.21.50 PM.png](https://github.com/hackclub/hackclub/blob/main/workshops/stressed_ball/img/Screen_Shot_2021-11-02_at_12.21.50_PM.png?raw=true)
+![circle outline](https://cloud-frxdc2f2o-hack-club-bot.vercel.app/1screen_shot_2021-11-02_at_12.21.50_pm.png)
 
 When you get your circle on the screen, try and decipher what the code is doing to make it. In JavaScript function calls look like this `functionName(argument0, argument1)`. There can be any number of arguments. When you draw the circle try to figure out what the different arguments mean.
 
@@ -104,7 +104,7 @@ When you get your circle on the screen, try and decipher what the code is doing 
 
 ### Color your circle
 
-![Screen Shot 2021-11-02 at 12.23.35 PM.png](https://github.com/hackclub/hackclub/blob/main/workshops/stressed_ball/img/Screen_Shot_2021-11-02_at_12.23.35_PM.png?raw=true)
+![Screen Shot 2021-11-02 at 12.23.35 PM.png](https://cloud-frxdc2f2o-hack-club-bot.vercel.app/2screen_shot_2021-11-02_at_12.23.35_pm.png)
 
 There are lots of ways to describe colors in code, like: 
 
