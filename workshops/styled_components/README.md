@@ -355,7 +355,7 @@ export const Weather = ({ dat }) => (
 
 This component renders the app after we receive data from the Dark Sky's API. It takes data passed to it (through properties) and routs it to the proper components for rendering. Once this component is completed, you should be able to bundle and run your app (with `npm start`) error free. The completed app should look like this:
 
-![app](img/completed_app.png)
+![app](https://cloud-2cxehya0u-hack-club-bot.vercel.app/0completed_app.png)
 
 ## Challenges
 
