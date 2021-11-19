@@ -6,7 +6,7 @@ author: '@jkwok91'
 
 # That Was Easy Workshop
 
-![](img/final.png)
+![](https://cloud-1gaxog6n9-hack-club-bot.vercel.app/2final.png)
 
 Links to a live demo and the final code below. This workshop should take around 1 hour.
 
@@ -32,7 +32,7 @@ If this feels like an exorbitant amount of new tools -- you're absolutely right.
 
 First let's go onto Repl.it and [start a new HTML repl](https://repl.it/languages/html)
 
-![](img/html_repl.png)
+![](https://cloud-1gaxog6n9-hack-club-bot.vercel.app/3html_repl.png)
 
 From there, clear the contents of `index.html` and paste in the following
 
@@ -214,7 +214,7 @@ https://easy--prophetorpheus.repl.co/that_was_easy.mp3
 
 Once you've downloaded the audio file, click on the three dots above the file tree and select the "Upload file" option
 
-![](img/upload.png)
+![](https://cloud-1gaxog6n9-hack-club-bot.vercel.app/4upload.png)
 
 Next, we'll make a new Audio object with the `that_was_easy.mp3`, and assign it to our variable, by modifying the line we just added:
 
@@ -484,7 +484,7 @@ Now that you know how to add sounds to buttons, you can do many things, includin
 
 | That Was Yeezy                                                         |
 | ---------------------------------------------------------------------- |
-| [![](img/example_yeezy.gif)](https://sohuang.github.io/that_was_easy/) |
+| [![](https://cloud-1gaxog6n9-hack-club-bot.vercel.app/1example_yeezy.gif)](https://sohuang.github.io/that_was_easy/) |
 
 **Made by Professionals:**
 
