@@ -15,7 +15,7 @@ Note to club leaders: This workshop is noisy, so **remind people to bring headph
 
 [Live Version](https://synth.hcbjcentro.repl.co/) | [Source Code](https://repl.it/@hcbjcentro/synth)
 
-![](img/color_synth.gif)
+![](https://cloud-msd3socsg-hack-club-bot.vercel.app/0color_synth.gif)
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ Open up a new HTML project here: https://repl.it/languages/html
 
 Delete _everything_. You should be left with a blank `index.html` file and that's it:
 
-![](img/new_project.png)
+![](https://cloud-msd3socsg-hack-club-bot.vercel.app/3new_project.png)
 
 We're going to do everything in one file, for the sake of simplicity.
 
@@ -94,7 +94,7 @@ Now if you run the page, you should get a big black rectangle. Which is pretty e
 
 Let's make some noise using Tone.js. Search for "Tone" in the Packages tab and click the Plus icon. Repl.it will insert a snippet of code into your file that tells a browser to load Tone.js with this page.
 
-![](img/import_tone.gif)
+![](https://cloud-msd3socsg-hack-club-bot.vercel.app/2import_tone.gif)
 
 Let's add some code to make Tone do something simple. Try putting this into your `script` section:
 
@@ -341,7 +341,7 @@ pad.addEventListener('pointermove', move);
 
 Now when you run your page, you should be able to click and drag to change pitch!
 
-![](img/drag_pitch.gif)
+![](https://cloud-msd3socsg-hack-club-bot.vercel.app/1drag_pitch.gif)
 
 Ok, one last detail: When you mouse over your page it will trigger `move` and show a frequency, even if you haven't clicked yet. So we just need one more variable to know whether we are dragging. So add a variable for that at the top of your `script` section:
 
