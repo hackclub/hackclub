@@ -13,7 +13,7 @@ Short link to this workshop: https://workshops.hackclub.com/todo_app_using_meanj
 
 **What you'll build:**
 
-![](img/final_2.png)
+![](https://cloud-hzswlarmi-hack-club-bot.vercel.app/3final_2.png)
 
 Here's a link to the [live demo][live_demo] and the [final code][final_code]. This workshop should take around 1-2 hours.
 
@@ -45,7 +45,7 @@ MEAN stands for:
 
 | Cloud9 Blank Project              |
 | --------------------------------- |
-| ![](img/cloud9_blank_project.png) |
+| ![](https://cloud-hzswlarmi-hack-club-bot.vercel.app/1cloud9_blank_project.png) 
 
 - Cloud9 with blank Ubuntu project
 - Brain
@@ -65,7 +65,7 @@ MEAN stands for:
 
 ## Part I: Setting up Node.js
 
-![](img/installing_nodejs.png)
+![](https://cloud-hzswlarmi-hack-club-bot.vercel.app/5installing_nodejs.png)
 
 - Open your terminal
 - Type the below command in the terminal to install Node.js
@@ -93,7 +93,7 @@ MEAN stands for:
 
 ## Part II: Installing MongoDB
 
-![](img/installing_nodejs.png)
+![](https://cloud-hzswlarmi-hack-club-bot.vercel.app/5installing_nodejs.png)
 
 - To install MongoDB we need to run the below command.
 
@@ -111,7 +111,7 @@ MEAN stands for:
 
 ## Part III: Building Project
 
-![](img/building_project.png)
+![](https://cloud-hzswlarmi-hack-club-bot.vercel.app/0building_project.png)
 
 - To build use the below command.
 - First create a separate directory for your project, in our case it is `/todo`
@@ -121,7 +121,7 @@ So far our `main.js` looks like this (your URLs and keys will be different):
 
 ## Part IV: Installing Express
 
-![](img/installing_express.png)
+![](https://cloud-hzswlarmi-hack-club-bot.vercel.app/4installing_express.png)
 
 We can install Express with the following command:
 
@@ -135,7 +135,7 @@ Now, we've got Express installed and added to our `package.json`.
 
 | Complete Project Structure     |
 | ------------------------------ |
-| ![](img/project_structure.png) |
+| ![](https://cloud-hzswlarmi-hack-club-bot.vercel.app/8project_structure.png) |
 
 ## Part V: Starting our Node.js Server
 
@@ -164,11 +164,11 @@ $ node server.js
 
 **Nice!! Server Running :) **
 
-![](img/running_nodejs.png)
+![](https://cloud-hzswlarmi-hack-club-bot.vercel.app/9running_nodejs.png)
 
 To see a preview of our application, we need to follow the guide shown in the below image.
 
-![](img/preview_running_app.png)
+![](https://cloud-hzswlarmi-hack-club-bot.vercel.app/7preview_running_app.png)
 
 Now, we will build our application frontend using AngularJS.
 
@@ -314,7 +314,7 @@ Before creating the database using MongoDB, let's start the MongoDB server:
 $ mongod
 ```
 
-![](img/mongod.png)
+![](https://cloud-hzswlarmi-hack-club-bot.vercel.app/6mongod.png)
 
 Once we see our server is running, let's create the database. Open a new terminal tab and run the below commands:
 
@@ -323,7 +323,7 @@ $ mongo
 $ use todo
 ```
 
-![](img/use_todo.png)
+![](https://cloud-c4oe0uttr-hack-club-bot.vercel.app/1use_todo.png)
 
 Once it's done, we need to connect our MongoDB with our MEAN.js application.
 
@@ -452,9 +452,9 @@ Our app is ready! Run the server again:
 $ node server.js
 ```
 
-![](img/final_1.png)
+![](https://cloud-hzswlarmi-hack-club-bot.vercel.app/2final_1.png)
 
-![](img/final_2.png)
+![](https://cloud-hzswlarmi-hack-club-bot.vercel.app/3final_2.png)
 
 Create a task, check off tasks, delete tasks—everything's working!
 
