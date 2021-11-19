@@ -18,17 +18,17 @@ Machine learning models are trained with large amounts of data that attempt to �
 
 Get started by visiting [teachablemachine.withgoogle.com](https://teachablemachine.withgoogle.com) and clicking on “Get Started”. You should be greeted with the option to create an image, audio, or pose project. For now, pick “Image Project”.
 
-![A row of three example projects including an image of a dog, audio waves, and a person posing](img/homepage.JPG)
+![A row of three example projects including an image of a dog, audio waves, and a person posing](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/7homepage.jpg)
 
-![Webpage featuring a category for Class, Training, and Preview](img/imageproject.PNG)
+![Webpage featuring a category for Class, Training, and Preview](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/6imageproject.png)
 
 Rename “Class 1” and “Class 2” to “me” and “me with [some object]”.
 
-![Renaming a field by entering text in a box](img/renameclass.GIF)
+![Renaming a field by entering text in a box](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/8renameclass.gif)
 
 Next, turn on your webcam for each class and click “Hold to Record” until you have a few hundred image samples recorded. You want to take as many pictures and capture as many angles, positions, etc. as you possibly can. The more data you have, the better your model will learn the difference between the two sets of data.
 
-![A row of images of a person and a row of images of a person with a phone](img/imagesamples.PNG)
+![A row of images of a person and a row of images of a person with a phone](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/5imagesamples.png)
 
 Once you feel you’ve recorded enough samples, click on “Train Model”. The time it takes to train the model will vary depending on how many image samples you gave it, but it usually takes somewhere around 30 seconds.
 
@@ -36,13 +36,13 @@ Once your model is trained, a preview should appear. Try it out! If it’s shaky
 
 Here’s what mine looks like:
 
-![A person holding a phone](img/model.GIF)
+![A person holding a phone](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/4model.gif)
 
 ## Exporting your model
 
 Teachable Machine will host your model on their servers, so you can use it in any project you want. To upload your model to Teachable Machine’s servers, click on “Export Model”, then click “Upload my model” once the window pops up. After a few seconds, you should see a link to your model available under “Your sharable link:”
 
-![A modal displaying a shareable url for the project](img/uploadedmodel.PNG)
+![A modal displaying a shareable url for the project](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/9uploadedmodel.png)
 
 (FYI: if you’re interested in seeing the raw data of your model, copy the link to the model and paste it in your URL bar with `model.json` at the end)
 
@@ -58,13 +58,13 @@ Now it’s time to add your Teachable Machine model to your own project!
 
 Run the repl, then open your website in a new tab by clicking the icon at the top right. Once you click “Start” and give the site access to your webcam, you should see your model!
 
-![Person holding a phone with text identifying the state of action](img/finalmodel.PNG)
+![Person holding a phone with text identifying the state of action](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/3finalmodel.png)
 
 ## Hacking
 
 Congratulations! You’ve just trained a machine learning model directly in your browser without writing any code. But your journey is far from over—there are endless ways you can take this project further. Did you notice the “Add a class” button below your two original classes?
 
-![A row of images of a person holding a phone and an option to "Add a Class" at the bottom](img/add-a-class.PNG)
+![A row of images of a person holding a phone and an option to "Add a Class" at the bottom](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/0add-a-class.png)
 
 You can train this model with as many classes as you want! Try and see how far you can take it—you, you + phone, you + water bottle, you + phone + water bottle, etc. Go crazy.
 
