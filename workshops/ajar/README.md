@@ -14,7 +14,7 @@ _Hello friends! We need a community member to update this workshop to work witho
 to teach you to make your own simplistic version of agar.io which we'll call
 ajar.io.
 
-![](img/agar.png)
+<img width="1429" alt="agar" src="https://user-images.githubusercontent.com/27078897/142894041-a22511d0-43ea-41a2-901c-ec94e4e31a67.png">
 
 The workshop will be divided into several parts (check indicates workshop has
 been written):
