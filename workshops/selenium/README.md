@@ -12,7 +12,7 @@ We will be automating the process of **logging in to twitter and posting a tweet
 
 It will look something like this:
 
-![Gif Image showing final demo](img/final.gif)
+![Gif Image showing final demo](https://cloud-ilrs0xyad-hack-club-bot.vercel.app/1final.gif)
 
 This is going to be super fun to make 🤘
 
@@ -46,13 +46,13 @@ It requires the knowledge of most basic concepts of Python like variables, packa
 
 We are going to use [Chrome](https://www.google.com/chrome/) for our automation in this workshop, so make sure you have it on your computer.
 
-![Google chrome Image](img/chrome.png)
+![Google chrome Image](https://cloud-o7ypl7i5p-hack-club-bot.vercel.app/4chrome.png)
 
 - ### Installing Python and pip
 
 The script will be written in Python and hence requires you to have Python installed in your system. You can download python from [here.](https://www.python.org/downloads/)
 
-![ Python Logo ](img/pythonlogo.png)
+![ Python Logo ](https://cloud-bo3r7vx1g-hack-club-bot.vercel.app/5pythonlogo.png)
 
 #### What is pip?
 
@@ -61,12 +61,12 @@ pip is the package management tool for Python, It is used to install and uninsta
 - **For Windows users**:-
   Open cmd ( command prompt ) and type **_pip -V_**. If a version shows up in the terminal that means pip is working fine!
 
-![windows pip confirmation image](img/pipconfirmationwindows.png)
+![windows pip confirmation image](https://cloud-bo3r7vx1g-hack-club-bot.vercel.app/3pipconfirmationwindows.png)
 
 - **For Linux and Mac users**:-
   Open your terminal and type **_pip3 -V_** ( you use pip3 instead of pip ).
 
-![ windows pip confirmation image ](img/pip3confirmationlinux.png)
+![ windows pip confirmation image ](https://cloud-bo3r7vx1g-hack-club-bot.vercel.app/2pip3confirmationlinux.png)
 
 - **Troubleshooting**:-
   If you see an error when executing the pip or pip3 command than head over to these youtube videos, these might help!
@@ -82,13 +82,13 @@ We will first install Selenium via pip ( or pip3 if you are on a Mac or a Linux 
 - ### Windows users:-
 
   Open CMD (command prompt) and type **pip install selenium** and hit Enter.
-  ![selenium install image windows](img/installseleniumwindows.png)
+  ![selenium install image windows](https://cloud-hskmgmmyh-hack-club-bot.vercel.app/3installseleniumwindows.png)
 
 - ### Mac and Linux users:-
 
   Open your terminal and type <b>pip3 install selenium</b> ( basically wherever pip is used in Windows, Mac a Linux Users should use pip3 ) and hit Enter.
 
-  ![selenium install image Linux](img/installseleniumlinux.png)
+  ![selenium install image Linux](https://cloud-hskmgmmyh-hack-club-bot.vercel.app/2installseleniumlinux.png)
 
 ### Installing webdriver-manager
 
@@ -104,13 +104,13 @@ Okay! So now in order to automate our browser we need something known as a drive
 
   Open CMD (command prompt) and type **pip install webdriver-manager** and hit Enter.
 
-  ![webdriver-manager install image window](img/webdriverinstallwindows.png)
+  ![webdriver-manager install image window](https://cloud-qxg20lifn-hack-club-bot.vercel.app/2webdriverinstallwindows.png)
 
 - ### Mac and Linux users:-
 
   Open your terminal and type <b> pip3 install webdriver-manager </b> and hit Enter.
 
-  ![webdriver-manager install image linux](img/webdriverinstalllinux.png)
+  ![webdriver-manager install image linux](https://cloud-qxg20lifn-hack-club-bot.vercel.app/1webdriverinstalllinux.png)
 
 Okay! So this was all you needed as an initial setup for this workshop, quite easy right 🤠
 
@@ -120,7 +120,7 @@ Now , from the next section, we will start coding this automation!
 
 Go to your system and make a file named automation.py ( although name is optional but I am going to use this name ) open this file in your favourite editor ( VSCode, Atom, Notepad etc ). I will be using [VSCode](https://code.visualstudio.com/) in this workshop.
 
-![making automation file GIF](img/makingfile.gif)
+![making automation file GIF](https://cloud-hskmgmmyh-hack-club-bot.vercel.app/6makingfile.gif)
 
 ## Importing modules!
 
@@ -176,7 +176,7 @@ Now go to your python file and simply **double click on it to run it!**
 
 Congrats! You have completed your first Selenium Automation.
 
-![funmeter GIF](img/funmeter.gif)
+![funmeter GIF](https://cloud-ilrs0xyad-hack-club-bot.vercel.app/4funmeter.gif)
 
 ## Now automate the login process:
 
@@ -243,9 +243,9 @@ loginButton = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/d
 
 ````
 
-Okay so in the above code we created 3 variable **loginField , passwordFiled , loginButton** respectively, and stored the respective web elements in them by using the driver.find_element_by_xpath() method and passing the respective XPaths of the elements in them.
+Okay so in the above code we created 3 variables **loginField , passwordFiled , loginButton** respectively, and stored the respective web elements in them by using the driver.find_element_by_xpath() method and passing the respective XPaths of the elements in them.
 
-Now we will automate our login process, add the following new code to your existing code! ( _new code separated by a #### comment line from the old code_)
+Now we will automate our login process; add the following new code to your existing code! ( _new code separated by a #### comment line from the old code_)
 
 ```python
 from selenium import webdriver
@@ -290,7 +290,7 @@ Run the python file by double clicking on it.
 
 See, you twitter login has been automated😎 ( I know it feels awesome )
 
-![ magin GIF ](img/magic.gif)
+![ magin GIF ](https://cloud-hskmgmmyh-hack-club-bot.vercel.app/5magic.gif)
 
 ## Automating witing tweets!
 
@@ -371,11 +371,11 @@ Run your script by double clicking on your file.
 
 After running the script your output must look something like this!
 
-![Gif Image showing final demo](img/final.gif)
+![Gif Image showing final demo](https://cloud-ilrs0xyad-hack-club-bot.vercel.app/1final.gif)
 
 I want to say to you that you did a great job by completing this workshop. You are Awesome!
 
-![ You are awesom GIF ](img/awesome.gif)
+![ You are awesom GIF ](https://cloud-o7ypl7i5p-hack-club-bot.vercel.app/0awesome.gif
 
 ## Conclusion
 
