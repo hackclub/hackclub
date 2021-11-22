@@ -58,7 +58,7 @@ Instead of offering a private key in plain text, Nexmo saves private keys in a f
 
 Obtain the `private.key` file from your club leader and download it to your computer. Then, upload the file to repl.it by clicking on the three dots at the top left of your screen and clicking “Upload file”.
 
-![Dropdown menu for uploading files in repl.it](img/upload-file.jpg)
+![Dropdown menu for uploading files in repl.it](https://cloud-hvhk5fr46-hack-club-bot.vercel.app/1upload-file.jpg)
 
 Once your `private.key` file is uploaded, you’re all set to start making calls!
 
