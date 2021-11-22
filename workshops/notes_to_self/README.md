@@ -247,7 +247,7 @@ Similar to this, we're going to save our list of notes in local storage by mappi
 
 We can view what's in our local storage at the moment by right-clicking the external live preview and selecting `Inspect`, and going to the Resources tab. Once there, we can click the little arrow next to the item on the left sidebar that says "Local Storage."
 
-![](img/localStorage_in_inspector.png)
+![](https://cloud-jw7efthyv-hack-club-bot.vercel.app/3localstorage_in_inspector.png)
 
 There should be an entry below that that says `https://preview.c9users.io`. This is where anything you store in local storage via Cloud9 will show up.
 
@@ -273,7 +273,7 @@ localStorage.setItem('notes', JSON.stringify([]))
 
 Now if we look in local storage, we'll see `[]`. This is what we want.
 
-![](img/localStorage_empty_notes.png)
+![](https://cloud-jw7efthyv-hack-club-bot.vercel.app/0localstorage_empty_notes.png)
 
 We'll also need to wrap the previous line in a conditional. We'd only want to set `notes` in local storage as an empty array (`[]`) if there are no existing notes (because we wouldn't want to overwrite what we currently have).
 
@@ -387,7 +387,7 @@ That's the end of `postNewNote()`. Save and refresh your external live preview, 
 
 If you go ahead and submit a new note, you'll see the `notes` entry in local storage updated to include your new note!
 
-![](img/localStorage_first_note.png)
+![](https://cloud-jw7efthyv-hack-club-bot.vercel.app/2localstorage_first_note.png)
 
 Now we just need to display it on our page.
 
@@ -543,7 +543,7 @@ displayNotes()
 
 If you save and refresh you should be able to see your note on the page. Yay!
 
-![](img/localStorage_first_note_shown.png)
+![](https://cloud-jw7efthyv-hack-club-bot.vercel.app/1localstorage_first_note_shown.png)
 
 ## Part V: Odds and Ends
 
@@ -642,7 +642,7 @@ Open up your `styles.css` file again, and type the following:
 
 You can of course do more in terms of styling, but I'll leave it to you.
 
-![](img/nts_css.gif)
+![](https://cloud-jw7efthyv-hack-club-bot.vercel.app/4nts_css.gif)
 
 ## Part VII: Publishing and Sharing
 
