@@ -6,7 +6,7 @@ author: '@1061999'
 
 # Remote viewing with VNC on Raspberry Pi
 
-![VNC Thumbnail](img/thumbnail.png)
+![VNC Thumbnail](https://cloud-cfy7t0wj8-hack-club-bot.vercel.app/3thumbnail.png)
 
 While building a project with Raspberry Pi, a monitor may not always be accessible for you. For this reason, we often connect to our Pi remotely from our computers. It allows you to view or control your Raspbian desktop (or other distributions that you have installed on your Pi) on a PC or smartphone that is connected to the internet.
 
@@ -22,7 +22,7 @@ Open "Terminal" (usually located on the task bar of Raspbian) and enter the foll
 sudo apt-get update
 ```
 
-![Terminal with apt-get update](img/terminal.png)
+![Terminal with apt-get update](https://cloud-cfy7t0wj8-hack-club-bot.vercel.app/2terminal.png)
 
 This command makes sure Raspbian and pieces of software installed are up to date. Wait until the command finishes executing.
 
@@ -34,7 +34,7 @@ sudo raspi-config
 
 This command opens this configuration window in the terminal.
 
-![raspi-config](img/raspi_config.png)
+![raspi-config](https://cloud-cfy7t0wj8-hack-club-bot.vercel.app/1raspi_config.png)
 
 Next, make sure that you have the latest version of VNC Connect by running the following command:
 
@@ -48,15 +48,15 @@ You have now installed the required software. However, VNC Server is not enabled
 
 - Navigate to Interfacing Options.
 
-![raspi-config Options](img/raspi_config_options.png)
+![raspi-config Options](https://cloud-cfy7t0wj8-hack-club-bot.vercel.app/0raspi_config_options.png)
 
-![raspi-config Interfacing](img/raspi_config_interfacing.png)
+![raspi-config Interfacing](https://cloud-czrwfg3up-hack-club-bot.vercel.app/7raspi_config_interfacing.png)
 
 - Scroll down and select VNC > Yes, and select "finish" when done.
 
-![Enable Graphical Remote](img/enable_graphical_remote.png)
+![Enable Graphical Remote](https://cloud-czrwfg3up-hack-club-bot.vercel.app/5enable_graphical_remote.png)
 
-![Confirm](img/confirm.png)
+![Confirm](https://cloud-czrwfg3up-hack-club-bot.vercel.app/4confirm.png)
 
 That's it! You have enabled the VNC server on your Pi.
 
@@ -76,7 +76,7 @@ ifconfig
 
 Your terminal window will now look something like this:
 
-![ifconfig](img/if-config.jpg)
+![ifconfig](https://cloud-czrwfg3up-hack-club-bot.vercel.app/6if-config.jpg)
 
 Next to the `eth0` entry you will see `inet addr`: `10.0.0.177` which is the IP address of the Raspberry Pi. Keep in mind that your IP address may be different.
 
@@ -92,13 +92,13 @@ _Note: Your PC/smartphone needs to be on the same network that you Pi is connect
 
 1. Open the VNC app and click the **+** icon. Type in the IP address of your Pi.
 
-![Android Connect Step 1](img/android_connect_1.png)
+![Android Connect Step 1](https://cloud-czrwfg3up-hack-club-bot.vercel.app/0android_connect_1.png)
 
-![Android Connect Step 2](img/android_connect_2.png)
+![Android Connect Step 2](https://cloud-czrwfg3up-hack-club-bot.vercel.app/1android_connect_2.png)
 
-![Android Connect Step 3](img/android_connect_3.png)
+![Android Connect Step 3](https://cloud-czrwfg3up-hack-club-bot.vercel.app/2android_connect_3.png)
 
-![Android Connect Step 4](img/android_connect_4.png)
+![Android Connect Step 4](https://cloud-czrwfg3up-hack-club-bot.vercel.app/3android_connect_4.png)
 
 2. Click connect, and you will be prompted to confirm your connection. After confirming, simply enter your identity to log into your Pi.
 
@@ -110,7 +110,7 @@ Password: `raspberry`
 
 Then click "Continue".
 
-![VNC View](img/vnc_view.png)
+![VNC View](https://cloud-cfy7t0wj8-hack-club-bot.vercel.app/4vnc_view.png)
 
 You will be welcomed with the fascinating UI of Raspbian.
 
