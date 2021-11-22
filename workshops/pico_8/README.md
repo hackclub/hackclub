@@ -16,11 +16,11 @@ This workshop requires a copy of [Pico-8](https://www.lexaloffle.com/pico-8.php)
 
 It is also strongly recommended that you download this wonderful cheatsheet:
 
-![](assets/cheatsheet.png)
+![](https://cloud-km39eg9ws-hack-club-bot.vercel.app/0cheatsheet.png)
 
 One common practice is to fullscreen it behind Pico, like so:
 
-![](assets/pico_with_cheatsheet.png)
+![](https://cloud-2bl5irwgc-hack-club-bot.vercel.app/0pico_with_cheatsheet.png)
 
 ## Part 1: the early years
 
@@ -32,19 +32,19 @@ A couple of basic pieces of information about Pico: there are three modes.
 
 - The console mode
 
-  ![](assets/console.gif)
+  ![](https://cloud-2oeapvmru-hack-club-bot.vercel.app/0console.gif)
 
   This is what you see on startup, and allows you to run a couple of basic commands. Don't worry too much about it for now.
 
 - The editor mode
 
-  ![](assets/editor.png)
+  ![](https://cloud-pkpy4ldfo-hack-club-bot.vercel.app/0editor.png)
 
   This is where you make your game. The editor has multiple tabs that give you access to various bits of functionality. **You can get to it by pressing `Esc` from the console mode.**
 
 - The game mode
 
-  ![](assets/game.png)
+  ![](https://cloud-e57slyabd-hack-club-bot.vercel.app/8game.png)
 
   This is where you can test your game. **You can get to it by pressing `Ctrl-R`. To get back to the editor, press `Esc` twice.**
 
@@ -52,7 +52,7 @@ A couple of basic pieces of information about Pico: there are three modes.
 
 Before we start coding we first need to take care of drawing the characters, or sprites, of our game. Go ahead and activate the editor mode and then click on the sprite editor tab. You can then use the various tools to draw a player and an object (like a rain drop) in 2 of the boxes. Feel free to play around with the various tools!
 
-![](assets/sprite_editor.gif)
+![](https://cloud-e57slyabd-hack-club-bot.vercel.app/0sprite_editor.gif)
 
 Note that you want your final sprites to be as close to the top left corner as possible, similar to how they're positioned in the GIF.
 
@@ -60,7 +60,7 @@ Note that you want your final sprites to be as close to the top left corner as p
 
 Before making the actual code, a bit of theory.
 
-![](assets/gameloop.png)
+![](https://cloud-e57slyabd-hack-club-bot.vercel.app/1gameloop.png)
 
 Every game has something called a game loop, which is code that is called every frame. This game loop is split into three parts: first, the game collects user input (is the right arrow pressed?). Then, the game updates some internal variables (move the player right). Finally, the game redraws the screen to reflect the new state.
 
@@ -96,7 +96,7 @@ end
 
 `spr(1, 0, 0)` means to draw the second sprite in our spritesheet with its top left corner at `(0, 0)`. The reason that `1` points to the second sprite is because sprites are 0-indexed.
 
-![](assets/noclear.gif)
+![](https://cloud-e57slyabd-hack-club-bot.vercel.app/2noclear.gif)
 
 When you actually execute this (`Ctrl-R`), you may notice two things: that the square is in a weird place and that there's junk on the screen. In order to solve the screen issue, you need to clear the screen by adding a `cls()` to the top of your `_draw` function.
 
@@ -113,7 +113,7 @@ Now every frame will start from a blank screen.
 
 The reason that the square is in the top-left corner is because coordinates actually work a little differently in Pico. As is drawn on the cheatsheet, the y-axis is actually flipped: this means that `(0, 0)` is actually the top-left corner. Remember this.
 
-![](assets/coordinate_grid.png)
+![](https://cloud-e57slyabd-hack-club-bot.vercel.app/3coordinate_grid.png)
 
 ### Variables
 
@@ -234,7 +234,7 @@ If the boolean between the `if` and `then` is `true` then the up to `end` is run
 
 We can get that boolean with the `btn` function, which returns `true` or `false` depending on whether a button is pressed.
 
-![](assets/keyboard.png)
+![](https://cloud-e57slyabd-hack-club-bot.vercel.app/4keyboard.png)
 
 As shown on the cheatsheet, `btn` accepts a number (0-6) that denotes a keyboard button. Knowing that, try to write an implementation. Once you're done you can check your solution against ours:
 
@@ -307,11 +307,11 @@ end
 
 There is a problem with this code, however, which is that the player can actually go off-screen. The reason that this happens has to due with how coordinates in Pico work.
 
-![](assets/square_edge.gif)
+![](https://cloud-e57slyabd-hack-club-bot.vercel.app/5square_edge.gif)
 
 Because the coordinates refer to the left hand corner checking the bottom or right edge of the screen isn't actually going to work. Instead, what you need to do is to draw an imaginary line that equals the edge minus the square size and check that instead:
 
-![](assets/square_edge_line.png)
+![](https://cloud-e57slyabd-hack-club-bot.vercel.app/6square_edge_line.png)
 
 Here is the updated code:
 
@@ -415,11 +415,11 @@ end
 
 The for loop in this example goes through `drops` and for every value in that table sets `drop` equal to the value. Since in this case that value is a coordinate pair, we then use it to draw a raindrop sprite in that location. We call `spr` with `2` because our raindrop sprite has that value in our spritesheet.
 
-![](assets/spritesheet_rain.png)
+![](https://cloud-e57slyabd-hack-club-bot.vercel.app/9spritesheet_rain.png)
 
 Here is what the code would do if drops were equal to `{{0, 0}, {0, 0}, {0, 0}}`:
 
-![](assets/for_loop.gif)
+![](https://cloud-e57slyabd-hack-club-bot.vercel.app/7for_loop.gif)
 
 ```lua
 drop = {0, 0}
@@ -448,7 +448,7 @@ end
 
 It's worth setting the rain speed to a variable so that it's easier to change it later on. Unfortunately, our game still looks like this:
 
-![](assets/imperfect_rain.gif)
+![](https://cloud-fd9z5m4k2-hack-club-bot.vercel.app/0imperfect_rain.gif)
 
 We can randomize the drops' starting x by using the `rnd` function, which returns a number from 0 up to but not including the number you give it.
 
