@@ -14,24 +14,23 @@ _Note: you'll be required to provide a valid email address and phone number in o
 
 ## Signing up for Nexmo
 
-![Creating customer journeys through conversations. Engaging experiences that move with your customers. Try it free. Contact Sales.](img/nexmo.png)
+![Creating customer journeys through conversations. Engaging experiences that move with your customers. Try it free. Contact Sales.](https://cloud-1voihokpp-hack-club-bot.vercel.app/6nexmo.png)
 
 Visit [Nexmo's website](https://nexmo.com) and sign up by clicking on "Try it free".
 
-![Sign up up form with fields for name, email, and password](img/signup.png)
+![Sign up up form with fields for name, email, and password](https://cloud-94wpook6x-hack-club-bot.vercel.app/2signup.png)
 
 Fill out the signup form with the requested information.
 
-![Verification letter asking to verify your email](img/email-verify-notification.png)
-![Verification letter asking to verify your email](img/email-verify-email.png)
+![Verification letter asking to verify your email](https://cloud-1voihokpp-hack-club-bot.vercel.app/4email-verify-email.png)
 
 You'll be sent a verification email. This may take a few minutes to arrive, and sometimes it'll be in your spam folder, so keep that in mind. Verify your email address once you receive the email.
 
-![Request message for phone number verification](img/phone-verification.png)
+![Request message for phone number verification](https://cloud-94wpook6x-hack-club-bot.vercel.app/0phone-verification.png)
 
 Once you verify your email, you'll be taken to another page which asks you to input a phone number for extra verification. Once you enter your phone number, you'll receive a text message with a verification code that you need to input.
 
-![Dashboard showing API keys and account balance](img/dashboard.png)
+![Dashboard showing API keys and account balance](https://cloud-1voihokpp-hack-club-bot.vercel.app/2dashboard.png)
 
 Once you verify your phone number, you should be redirected to the Nexmo dashboard. You should also notice that you have $2 in free credit. Calls cost 1.39 cents per minute, so plan accordingly. If you lead a large club, you may want to consider adding some extra money to your account to ensure your funds don't run out during your meeting.
 
@@ -39,7 +38,7 @@ Copy your API key and API secret and store them somewhere where you can easily r
 
 ## Creating an application
 
-![Webpage prompting user to name the new application](img/voice.png)
+![Webpage prompting user to name the new application](https://cloud-94wpook6x-hack-club-bot.vercel.app/3voice.png)
 
 Navigate to "Voice –> Getting started" in the sidebar. You should be taken to this page, where you'll be able to create an application by typing in the name of your application. Once you click on "Create application", you should be prompted to download a file called `private.key`. Make sure you download this file—you'll need it for when your club members authenticate with your app. Nexmo stores application private keys in this file instead of storing them in plain text.
 
@@ -49,7 +48,7 @@ You'll also notice that you're given a new Application ID once you create your a
 
 By default, all calls using your Nexmo API credentials will come from the phone number you provided during signup. You'll have to share this phone number with your club members during the workshop. If you're okay with this, you don't need to complete this step. But if you don't want to share your personal phone number, you'll need to use a Nexmo virtual number instead.
 
-![Data table for creating a new virtual phone number](img/number.png)
+![Data table for creating a new virtual phone number](https://cloud-1voihokpp-hack-club-bot.vercel.app/7number.png)
 
 Luckily, your Nexmo account comes with a free virtual number for your first month. To find it, navigate to "Numbers –> Your numbers". Click on the number to copy it, then save it somewhere where you can easily retrieve it.
 
