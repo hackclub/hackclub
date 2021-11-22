@@ -245,7 +245,7 @@ Congratulations! You have successfully completed the journey of making this pass
 
 Now, this password cracker will be able to crack almost all dumb passwords that you can think of. These are passwords that people who are in a hurry to create an account or who don’t take security seriously keep ( I am definitely sure you know such people ).
 
-![programmer image](img/programmer.gif)
+![programmer image](https://cloud-xr1rwflxx-hack-club-bot.vercel.app/0programmer.gif)
 
 ## Running the script!
 
@@ -258,7 +258,7 @@ To run the Script simply double-click on it ( cracker.py file ). You can also ru
 I know it feels awesome to make it but don't stop here, Create whatever you can from this crazy trick and share it with us in the [```#ship```](https://app.slack.com/client/T0266FRGM/C0M8PUPU6) channel of [Hack Club's Slack](https://hackclub.com/slack/). 
 
 
-![nailed it gif](img/nailedit.gif)
+![nailed it gif](https://cloud-xr1rwflxx-hack-club-bot.vercel.app/1nailedit.gif)
 
 I am available on Hack Club's Slack by the username **Harsh Bajpai**, If you have any doubt or query regarding this workshop then feel free to reach out to me!
 
