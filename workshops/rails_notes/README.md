@@ -62,7 +62,7 @@ Finally, let's start our app's server. Open a new terminal tab (click the ⨁ ic
 
 Click _Preview_, then _Preview Running Application_ button to see your app so far:
 
-![](img/rails-2.png)
+![](https://cloud-oitd0ebzw-hack-club-bot.vercel.app/1rails-2.png)
 
 Yay! You're on Rails! You've installed Rails, made a new app, started and set up a database server, created a database, and started the application server. Nice job.
 
@@ -116,7 +116,7 @@ Before seeing what Rails has put together, run `rails db:migrate` again. This wi
 
 In your Preview, add `notes` to the end of the URL box, so it says `https://projects-yourname.c9users.io/notes`, and press enter.
 
-![](img/rails-3.png)
+![](https://cloud-oitd0ebzw-hack-club-bot.vercel.app/2rails-3.png)
 
 Here's your basic app! Click on "New Note", write in the boxes, and submit the form with the "Create Note" button. Your note has been saved in the database! Click "Back" and you'll see it in your note list. Pretty cool, right? You can edit your note or destroy (delete) it, and add more notes.
 
@@ -141,7 +141,7 @@ end
 - **The notification messages.** After creating a new note, saving changes to a note, or deleting a note, a message notifies the user they were successful. Open `app/controllers/notes_controller.rb` and change the text inside the quotes like `notice: 'Note was…'` text (see line 31), like _We've saved your awesome note!_. Next time you run a request of that type, you'll see your new message.
 - **Styling!** You already have some experience writing CSS! Open up `app/assets/stylesheets/scaffolds.scss` and make some changes. On lines 19-21 you'll find the CSS setting the color of links (HTML `<a>` tags). Change `#000` to your favorite color, like `cornflowerblue` or `tomato`.
 
-![](img/rails-4.png)
+![](https://cloud-oitd0ebzw-hack-club-bot.vercel.app/3rails-4.png)
 
 When you're done, commit to Git.
 
