@@ -53,7 +53,8 @@ the [HTML `<canvas>` element](http://www.w3schools.com/html/html5_canvas.asp).
 
 By the end of this part you'll have something that looks like this:
 
-![End of Part 1](img/part1-end.jpg)
+![part1-end](https://user-images.githubusercontent.com/27078897/142892145-dfdadaa2-77c6-4707-8868-9f0cf7378537.jpg)
+
 
 Check out the demo [here](http://jsbin.com/jizoyo/edit?output)
 ([JS Fiddle](http://jsfiddle.net/4j6od7hv/)).
@@ -70,7 +71,8 @@ In Cloud9, create two files in a folder of your choice:
 
 Your folder should look like this:
 
-![Directory](img/directory.jpg)
+![directory](https://user-images.githubusercontent.com/27078897/142892204-c46e3569-18a6-44a1-a08f-f02d5564b2f8.jpg)
+
 
 ### Setting up the HTML
 
@@ -93,7 +95,8 @@ Next, add the below `<canvas>` element inside of the `<body>` element.
 <canvas id="canvas" width="500px" height="500px"></canvas>
 ```
 
-![Adding the canvas element](img/adding-canvas.gif)
+![adding-canvas](https://user-images.githubusercontent.com/27078897/142892232-d1bdb03b-c99f-4bce-93f5-9307ac888e01.gif)
+
 
 **Understanding The Code**
 
@@ -118,7 +121,7 @@ element (make sure it's at the end):
 <script type="text/javascript" src="app.js"></script>
 ```
 
-![](img/script-element.gif)
+![script-element](https://user-images.githubusercontent.com/27078897/142892288-e3c07a73-0b7d-4a0e-a867-38ccdcdd0291.gif)
 
 > Your HTML is now configured!
 
@@ -134,7 +137,7 @@ Let's start by writing this line:
 var canvas = document.getElementById('canvas')
 ```
 
-![Get canvas element](img/get-element-canvas.gif)
+![get-element-canvas](https://user-images.githubusercontent.com/27078897/142892340-f1301978-530f-46ce-8cef-5893a862fc58.gif)
 
 **Understanding The Code**
 
@@ -156,7 +159,7 @@ Next, write this line of code:
 var context = canvas.getContext('2d')
 ```
 
-![](img/assign-context.gif)
+![assign-context](https://user-images.githubusercontent.com/27078897/142892383-90b1ebd7-6638-4baa-be17-6450ba4d6fd9.gif)
 
 **Understanding The Code**
 
@@ -167,7 +170,7 @@ var context = canvas.getContext('2d')
 Time to draw a circle! Open your `index.html` file and from the menu bar click
 `Preview > Live Preview File (index.html)`.
 
-![](img/live_preview.gif)
+![live_preview](https://user-images.githubusercontent.com/27078897/142892409-eb6fa7f0-907e-4006-b7ea-6a636144e4fe.gif)
 
 Now each time you save changes to your HTML or JavaScript your site will refresh
 to reflect the changes. Remember to _save_ changes by going to `File > Save`.
@@ -182,7 +185,7 @@ context.fill()
 
 You should have something that looks like this.
 
-![](img/first-circle.png)
+<img width="1077" alt="first-circle" src="https://user-images.githubusercontent.com/27078897/142892430-7957377c-e60d-434a-a25d-af02565abe91.png">
 
 <a name="drawingArc"></a>
 
@@ -224,7 +227,7 @@ Let's add some color! For this we write the following line directly above the
 context.fillStyle = 'cyan'
 ```
 
-![Fill style](img/fill-style.jpg)
+![fill-style](https://user-images.githubusercontent.com/27078897/142892490-a1b3b315-d206-445a-a53b-0633d46f23cf.jpg)
 
 Woah! Our circle is now cyan.
 
@@ -245,13 +248,13 @@ function to the following:
 
 Your website should now look like this:
 
-![End of Part 1](img/part1-end.jpg)
+![part1-end](https://user-images.githubusercontent.com/27078897/142892524-3afbec4f-0563-4aa1-ac34-90e9183d00b4.jpg)
 
 ### Congrats!
 
 You've finished Part 1!
 
-![](img/celebrate.gif)
+![celebrate](https://user-images.githubusercontent.com/27078897/142892558-0c57613d-e3db-4b36-b1c6-1083e2bb955b.gif)
 
 ## Part 2
 
@@ -386,7 +389,7 @@ Let's modify our code to use functions. Go ahead and open your `index.html` file
 and click on _preview_ in the menu bar and then _Live Preview File
 (`index.html`)_. Now open your `app.js` file.
 
-![Open live preview](img/open-live-preview.gif)
+![open-live-preview](https://user-images.githubusercontent.com/27078897/142892659-d9e60702-e6fa-4454-89e3-ed3ef29548fc.gif)
 
 The first thing we want to do is to wrap these lines in a function:
 
@@ -409,7 +412,7 @@ function drawUserCell() {
 }
 ```
 
-![Wrap with `drawUserCell` function](img/wrap-with-draw-user-cell-function.gif)
+![wrap-with-draw-user-cell-function](https://user-images.githubusercontent.com/27078897/142892685-3a4749ab-c839-405a-918c-66187784ddd4.gif)
 
 If you save the file now you'll see that there's no more circle on screen!
 
@@ -420,7 +423,7 @@ it. Type out the code below the `drawUserCell` function:
 drawUserCell();
 ```
 
-![Invoke `drawUserCell` function](img/invoke-draw-user-cell-function.gif)
+![invoke-draw-user-cell-function](https://user-images.githubusercontent.com/27078897/142892709-4ab737ed-37af-4100-932d-4b0f05491c0e.gif)
 
 The circle is back!
 
@@ -428,7 +431,7 @@ The circle is back!
 
 You've finished Part 2!
 
-![](img/celebrate.gif)
+![celebrate](https://user-images.githubusercontent.com/27078897/142892732-db12bc60-e1ff-4160-8acd-35fd661f8d9f.gif)
 
 ## Part 3
 
@@ -468,7 +471,7 @@ var x = 250
 var y = 250
 ```
 
-![](img/making-x-and-y-variables.gif)
+![making-x-and-y-variables](https://user-images.githubusercontent.com/27078897/142892759-219eda0f-c4bc-4736-bb5d-3c8003130021.gif)
 
 We still set the `x` and `y` to `250` because that's what we want them to be by
 _default_. But now we can change them.
@@ -482,13 +485,13 @@ so:
 context.arc(x, y, 40, 0, 2 * 3.14159)
 ```
 
-![](img/using-x-and-y.gif)
+![using-x-and-y](https://user-images.githubusercontent.com/27078897/142892793-d05dbb2a-ad5f-41ca-a50b-595884b5bd4f.gif)
 
 Now the circle will be drawn at the values from `x` and `y`.
 
 Save your file and open `Live Preview`. Your results should be the same.
 
-![](img/viewing-x-and-y-diffs.gif)
+![viewing-x-and-y-diffs](https://user-images.githubusercontent.com/27078897/142892811-30dda8de-9abf-427b-9fe7-8666372d8685.gif)
 
 ### Detect Mouse Movements
 
@@ -502,7 +505,7 @@ function mouseMoved(mouse) {
 }
 ```
 
-![](img/create-mouse-moved-function.gif)
+![create-mouse-moved-function](https://user-images.githubusercontent.com/27078897/142892844-a049c2b3-8580-4a36-92ca-461dd965a64f.gif)
 
 **Understanding The Code**
 
@@ -531,7 +534,7 @@ Let's invoke the `mouseMoved` function each time the mouse is moved:
 canvas.addEventListener('mousemove', mouseMoved)
 ```
 
-![](img/add-mousemove-listener.gif)
+![add-mousemove-listener](https://user-images.githubusercontent.com/27078897/142892879-fbe6e4a3-dc5d-49be-9f8e-d510dcbf3295.gif)
 
 > Notice we **do not** invoke the `mouseMoved` function ourselves (by writing
 > `mouseMoved()`). Instead we simply tell the `EventListner` to invoke the
@@ -549,11 +552,11 @@ function mouseMoved(mouse) {
 }
 ```
 
-![](img/call-drawusercell-in-mousemoved.gif)
+![call-drawusercell-in-mousemoved](https://user-images.githubusercontent.com/27078897/142892911-b2e7b792-f33a-439c-b378-d61e46c1eeb6.gif)
 
 If you save now, you'll see the fruits of our labor.
 
-![](img/made-paint-by-mistake.gif)
+![made-paint-by-mistake](https://user-images.githubusercontent.com/27078897/142892959-26101b04-733b-4b0d-aade-c372ebb11e0b.gif)
 
 Huh. That's strange. It looks like we've just recreated Paint. Although that's
 pretty cool, it wasn't what we wanted. We wanted one circle that moved with the
@@ -618,11 +621,11 @@ function mouseMoved(mouse) {
 
 Your `app.js` should look like this:
 
-![](img/end-of-part-3.jpg)
+![end-of-part-3](https://user-images.githubusercontent.com/27078897/142893033-6f5abcb6-f892-4f03-90ea-6cca23e56957.jpg)
 
 Save your work and see the results!
 
-![End of part 3](img/end-of-part-3.gif)
+![end-of-part-3](https://user-images.githubusercontent.com/27078897/142893062-cabce253-84a0-497c-a7ee-69824f58be58.gif)
 
 Wonderful, we have a moving cell!
 
@@ -630,7 +633,7 @@ Wonderful, we have a moving cell!
 
 You've finished Part 3!
 
-![](img/celebrate.gif)
+![celebrate](https://user-images.githubusercontent.com/27078897/142893083-0d8a4260-0262-48b3-bdd9-f7051e936f11.gif)
 
 ## Part 4
 
@@ -733,7 +736,7 @@ drawUserCell()
 Lastly, let's replace the invocation of `drawUserCell` at the end of the
 `app.js` file with an invocation of `drawScreen`:
 
-![](img/invoke-draw-screen.gif)
+![invoke-draw-screen](https://user-images.githubusercontent.com/27078897/142893127-4df1b192-968f-4555-a11c-d3b47ebd7865.gif)
 
 Now if we save the file and preview our work, we'll see exactly what we had
 before. Note though that we have what we had before **even though we took a very
@@ -920,11 +923,11 @@ function drawScreen() {
 
 Your `app.js` should look like this:
 
-![end of part 4 code](img/end-of-part-4.jpg)
+![end-of-part-4](https://user-images.githubusercontent.com/27078897/142893185-f0fe4169-55db-43e2-a51d-6f94b1a61376.jpg)
 
 Save your work and preview your results!
 
-![end of part 4 result](img/end-of-part-4.gif)
+![end-of-part-4](https://user-images.githubusercontent.com/27078897/142893226-266036f7-8847-4a7d-b612-481376e42485.gif)
 
 Our cell has velocity!
 
@@ -1126,6 +1129,6 @@ drawScreen()
 
 You've finished Part 5!
 
-![](img/celebrate.gif)
+![celebrate](https://user-images.githubusercontent.com/27078897/142893279-61df632b-414a-44fa-8e90-8928b22bef4a.gif)
 
 More coming soon…
