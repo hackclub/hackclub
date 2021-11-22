@@ -21,7 +21,7 @@ Goals for this workshop:
 
 Your final design looks like this:
 
-> ![](img/final_1.png)
+> ![](https://cloud-87w3ufs57-hack-club-bot.vercel.app/2p_final.png)
 
 Here is a link to a [live demo][final_output].
 
@@ -50,19 +50,19 @@ programming ecosystem!
 
 ### 1) In a new window, open https://github.com
 
-> ![](img/c9_v2_setup_1.png)
+> ![](https://cloud-qoier551d-hack-club-bot.vercel.app/7c9_v2_setup_1.png)
 
 ### 2) Create an account with a valid email
 
-> ![](img/c9_v2_setup_2.png)
+> ![](https://cloud-qoier551d-hack-club-bot.vercel.app/8c9_v2_setup_2.png)
 
 ### 3) Click "Sign up for GitHub"
 
-> ![](img/c9_v2_setup_3.png)
+> ![](https://cloud-qoier551d-hack-club-bot.vercel.app/9c9_v2_setup_3.png)
 
 ### 4) Ignore everything on the page and click "Finish sign up"
 
-> ![](img/finish_signup.png)
+> ![](https://cloud-nldkz0v6l-hack-club-bot.vercel.app/0finish_signup.png)
 
 And now we're done creating a GitHub account!
 
@@ -73,13 +73,13 @@ Now that we have a GitHub account:
 1. Open https://jsbin.com in a new window
 2. Click "Login or Register"
 
-> ![](img/login_or_register.gif)
+> ![](https://cloud-ebxsp7rxf-hack-club-bot.vercel.app/5login_or_register.gif)
 
 ## 4) Login with GitHub
 
 Now click "Authorize application"
 
-> ![](img/authorize_application.png)
+> ![](https://cloud-qoier551d-hack-club-bot.vercel.app/2authorize_application.png)
 
 And we're all set!
 
@@ -90,25 +90,25 @@ code.
 
 Go ahead and close the popup:
 
-> ![](img/close.gif)
+> ![](https://cloud-i0rf32p1a-hack-club-bot.vercel.app/2close.gif)
 
 Then delete everything on the left. We don't need it right now.
 
-> ![](img/delete.gif)
+> ![](https://cloud-f0vcinjqb-hack-club-bot.vercel.app/2delete.gif)
 
 Then write your name in the text box. My name is `Jonathan Leung` so that's
 what I will write:
 
-> ![](img/jonathan_leung.gif)
+> ![](https://cloud-ebxsp7rxf-hack-club-bot.vercel.app/2jonathan_leung.gif)
 
 Notice that what you write on the left side of the screen is reflected
 on the right.
 
-> ![](img/left.png)
+> ![](https://cloud-ebxsp7rxf-hack-club-bot.vercel.app/4left.png)
 
 Note that we are writing "HTML" code.
 
-> ![](img/right.png)
+> ![](https://cloud-87w3ufs57-hack-club-bot.vercel.app/7right.png)
 
 <!-- This is a link to the original image in case any changes
      want to be made in the future: ![](img/original.png) -->
@@ -124,11 +124,11 @@ Ah, we also need to add a description! Let's add it!
 Go ahead and write a short 1 sentence description about yourself. Don't worry
 about getting it perfect, you can always change it later!
 
-> ![](img/welcome.gif)
+> ![](https://cloud-ob0ex4uaq-hack-club-bot.vercel.app/4welcome.gif)
 
 Hmm... It looks funny on the right side:
 
-> ![](img/space.png)
+> ![](https://cloud-ob0ex4uaq-hack-club-bot.vercel.app/2space.png)
 
 Let's understand why:
 
@@ -158,11 +158,11 @@ put it inside of a heading tag, like so:
 
 Let's try it:
 
-> ![](img/heading.gif)
+> ![](https://cloud-nldkz0v6l-hack-club-bot.vercel.app/6heading.gif)
 
 And voila! This is our result:
 
-> ![](img/heading_result.png)
+> ![](https://cloud-nldkz0v6l-hack-club-bot.vercel.app/4heading_result.png)
 
 Hey, look, it's all big and bold!
 
@@ -175,7 +175,7 @@ least important.
 
 If we write out all the tags (don't bother doing this):
 
-> ![](img/h1_through_h6.png)
+> ![](https://cloud-nldkz0v6l-hack-club-bot.vercel.app/3h1_through_h6.png)
 
 we see that the closer the tag is to h1, the larger the text.
 
@@ -197,15 +197,15 @@ Note that many HTML tags have both an "opening" and "closing tag"
 
 Now we need to put the description in the appropriate tag:
 
-> ![](img/description_next.png)
+> ![](https://cloud-f0vcinjqb-hack-club-bot.vercel.app/3description_next.png)
 
 ## The HTML Paragraph Tag
 
 When you look at a different website, say the Wall Street Journal, we can see
 
-> ![](img/heading_wsj.png)
+> ![](https://cloud-nldkz0v6l-hack-club-bot.vercel.app/5heading_wsj.png)
 
-> ![](img/paragraph_wsj.png)
+> ![](https://cloud-87w3ufs57-hack-club-bot.vercel.app/4paragraph_wsj.png)
 
 We use the `h1` tag for headings.
 
@@ -219,11 +219,11 @@ So I would write:
 
 Like so:
 
-> ![](img/p.gif)
+> ![](https://cloud-87w3ufs57-hack-club-bot.vercel.app/3p.gif)
 
 It doesn't look like much changed but it has!
 
-> ![](img/p_final.png)
+> ![](https://cloud-87w3ufs57-hack-club-bot.vercel.app/2p_final.png)
 
 ## Adding the image
 
@@ -243,12 +243,12 @@ This is a link to my picture:
 
 Feel free to copy and paste that into JS Bin and do the following:
 
-> ![](img/img.gif)
+> ![](https://cloud-ebxsp7rxf-hack-club-bot.vercel.app/1img.gif)
 
 The image is taking a lot of room right now but if we scroll down on the right
 side, we see that our original text is still there:
 
-> ![](img/scroll_down.gif)
+> ![](https://cloud-ob0ex4uaq-hack-club-bot.vercel.app/1scroll_down.gif)
 
 Ok. Let's make the picture smaller
 
@@ -304,7 +304,7 @@ So if we want to change the size of an image, we need to use CSS.
 
 To write CSS code, click "CSS" in the menu:
 
-> ![](img/css.gif)
+> ![](https://cloud-i0rf32p1a-hack-club-bot.vercel.app/4css.gif)
 
 Type the the code in the CSS box (don't copy and paste code you want to
 learn because you won't remember it!)
@@ -315,7 +315,7 @@ img {
 }
 ```
 
-> ![](img/50_percent.gif)
+> ![](https://cloud-qoier551d-hack-club-bot.vercel.app/050_percent.gif)
 
 Cool! The image shrunk!
 
@@ -323,34 +323,33 @@ Cool! The image shrunk!
 
 Let's understand the code.
 
-> ![](img/css_img_example.png)
+> ![](https://cloud-i0rf32p1a-hack-club-bot.vercel.app/7css_img_example.png)
 
 Read the following as one long sentence:
 
-> ![](img/img_css_highlight.png) "For every `img` tag on the web page"
+> ![](https://cloud-ebxsp7rxf-hack-club-bot.vercel.app/7img_css_highlight.png) "For every `img` tag on the web page"
 
-> ![](img/css_curly_braces.png) I want all the style properties inside the curly
+> ![](https://cloud-i0rf32p1a-hack-club-bot.vercel.app/6css_curly_braces.png) I want all the style properties inside the curly
 > brackets to apply:
 
-> ![](img/css_property.png) specifically, I want the width
+> ![](https://cloud-i0rf32p1a-hack-club-bot.vercel.app/9css_property.png) specifically, I want the width
 
-> ![](img/css_value.png) to be 50% of the width of the page.
+> ![](https://cloud-i0rf32p1a-hack-club-bot.vercel.app/8css_value.png) to be 50% of the width of the page.
 
 **Vocabulary**
 
-> ![](img/img_css_highlight.png) `img` is called the selector, it "selects" all
+> ![](https://cloud-ebxsp7rxf-hack-club-bot.vercel.app/7img_css_highlight.png)) `img` is called the selector, it "selects" all
 > of the `img` tags and applies all of the settings inside of the curly braces
 
-> ![](img/css_curly_braces.png) `{` `}` are called curly braces
+> ![](https://cloud-i0rf32p1a-hack-club-bot.vercel.app/6css_curly_braces.png) `{` `}` are called curly braces
 
-> ![](img/css_property.png) the thing on the left side of the semicolon is
-> called the `"property", in this case it is`width`
+> ![]((https://cloud-i0rf32p1a-hack-club-bot.vercel.app/9css_property.png) the thing on the left side of the semicolon is called the `"property", in this case it is`width`
 
-> ![](img/css_value.png) `50%` is what's known as the `"value"`
+> ![](https://cloud-i0rf32p1a-hack-club-bot.vercel.app/8css_value.png) `50%` is what's known as the `"value"`
 
 ### But what happens if I resize the page?
 
-> ![](img/resize_page.gif)
+> ![](https://cloud-87w3ufs57-hack-club-bot.vercel.app/6resize_page.gif)
 
 Hmm... I don't want my image to change sizes if my page changes sizes.
 
@@ -365,7 +364,7 @@ no matter the size of the page.
 
 And if we try to resize the page:
 
-> ![](img/nothing_happens.gif)
+> ![](https://cloud-87w3ufs57-hack-club-bot.vercel.app/5pixels.gif)
 
 nothing happens.
 
@@ -373,11 +372,11 @@ nothing happens.
 
 This is where we want to go:
 
-> ![](img/final_1.png)
+> ![](https://cloud-f0vcinjqb-hack-club-bot.vercel.app/7final.png)
 
 We're here right now:
 
-> ![](img/current.png)
+> ![](https://cloud-f0vcinjqb-hack-club-bot.vercel.app/0current.png)
 
 ## Making the image a circle
 
@@ -391,15 +390,12 @@ like, `make image circular in css`
 
 This is the first result I get
 
-> ![](img/rounded_image.png)
+> ![](https://cloud-ob0ex4uaq-hack-club-bot.vercel.app/0rounded_image.png)
 
-I open it and see this site:
-
-> ![](img/how_to_circular.png)
 
 I focus on this line:
 
-> ![](img/how_to_circular_highlight.png)
+> ![](https://cloud-nldkz0v6l-hack-club-bot.vercel.app/7how_to_circular_highlight.png)
 
 It seems like I just need to add
 
@@ -409,7 +405,7 @@ border-radius: 50%;
 
 Since I want this to apply my `img` tag, I add here:
 
-> ![](img/border_radius.gif)
+> ![](https://cloud-qoier551d-hack-club-bot.vercel.app/6border_radius.gif)
 
 Hey! It works!
 
@@ -426,11 +422,11 @@ future.
 
 This is where we want to go:
 
-> ![](img/final_1.png)
+> ![](https://cloud-f0vcinjqb-hack-club-bot.vercel.app/7final.png)
 
 We're here right now:
 
-> ![](img/current_2.png)
+> ![](https://cloud-i0rf32p1a-hack-club-bot.vercel.app/5current_2.png)
 
 Now we have to:
 
@@ -448,15 +444,15 @@ We want to center everything in the entire page.
 
 ### 1. We can add a tag called the `body` tag.
 
-> ![](img/body.gif)
+> ![](https://cloud-qoier551d-hack-club-bot.vercel.app/5body.gif)
 
 ### 2. Put everything inside of the body tag.
 
-> ![](img/body_copy.gif)
+> ![](https://cloud-qoier551d-hack-club-bot.vercel.app/3body_copy.gif)
 
 ### 3. Tell the CSS to center everything in the body tag.
 
-> ![](img/center.gif)
+> ![](https://cloud-i0rf32p1a-hack-club-bot.vercel.app/1center.gif)
 
 To go over the vocabulary of what we just did:
 
@@ -476,7 +472,7 @@ body {
 }
 ```
 
-> ![](img/text-align.png)
+> ![](https://cloud-ob0ex4uaq-hack-club-bot.vercel.app/3text-align.png)
 
 ## Changing the font
 
@@ -484,11 +480,9 @@ Now we also need to change the font:
 
 We are going to use the font `Arial` (feel free to use another font as well)
 
-> ![](img/font.gif)
-
 Here's what it looks like after the change:
 
-> ![](img/arial.png)
+> ![](https://cloud-qoier551d-hack-club-bot.vercel.app/1arial.png)
 
 To go over the vocabulary of what we just did:
 
@@ -511,7 +505,7 @@ initially gave us.
 
 Let's open up a new tab and open JS Bin.
 
-> ![](img/jsbin.gif)
+> ![](https://cloud-my3ctlul7-hack-club-bot.vercel.app/0jsbin.gif)
 
 For now, I won't explain what all this code means, you can
 
@@ -526,15 +520,15 @@ Let's
 
 ### 1. Copy this starter code into our current project.
 
-> ![](img/copy_template.gif)
+> ![](https://cloud-546pzslkm-hack-club-bot.vercel.app/0copy_template.gif)
 
 ### 2. Move the code in our `body` tag into their `body` tag.
 
-> ![](img/body_cut.gif)
+> ![](https://cloud-6nadvye5c-hack-club-bot.vercel.app/0body_cut.gif)
 
 ### 3. Delete our old `body tag`.
 
-> ![](img/delete_old_body.gif)
+> ![](https://cloud-6nadvye5c-hack-club-bot.vercel.app/1delete_old_body.gif)
 
 Huzzah! We did it! We're done!
 
@@ -545,10 +539,10 @@ Now that you're logged in, JS Bin will not "turn off" your website.
 So if you get the output URL, you can share this with everyone on the
 entire internet now and they will be able to see your website!
 
-> ![](img/get_url.gif)
+> ![](https://cloud-ahgtk751j-hack-club-bot.vercel.app/0get_url.gif)
 
 ## Done!
 
 Huzzah, we did it! You can take this URL and share it with your friends now!
 
-> ![](img/celebrate2.gif)
+> ![](https://cloud-i0rf32p1a-hack-club-bot.vercel.app/0celebrate2.gif)
