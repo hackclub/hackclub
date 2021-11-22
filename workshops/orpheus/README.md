@@ -14,19 +14,19 @@ She is always getting into crazy adventures, from stealing food to going to the 
 
 ### The Dinosaur Who Masters The Superpower
 
-![Coding Dinosaur](img/code_dinosaur.png)
+![Coding Dinosaur](https://cloud-i203j2e6a-hack-club-bot.vercel.app/0code_dinosaur.png)
 
 We said coding is a superpower. But nobody has mastered the superpower yet - except her. She learns everything by herself… by reading docs, workshops, and asking her fellow hackers. She then writes workshops, at least attempts to write them… and through inspiring more hackers of Hack Clubs to code together, she becomes the only organism on Earth that has mastered the superpower of coding. But the community of superpower is spreading fast - more and more students have started practicing the superpower, and here’s the mind-blowing part of the story - students don’t just get this superpower from their ordinary classes! The superpower spreads from Orpheus as a center to a group of enthusiastic leaders of Hack Clubs, and then to the students, then other students…
 
 ### Always Confused & Always learning
 
-![Confused Dinosaur](img/confused_dinosaur.png)
+![Confused Dinosaur](https://cloud-i203j2e6a-hack-club-bot.vercel.app/1confused_dinosaur.png)
 
 The dinosaur herself is always confused. Always, like most of the time, she doesn't know what she is doing. You will almost never see her without a question mark over her head. But this is the kind of quality that motivated her to learn more. She travels through the wires and optic fibers of the internet, jumping in between our Slack channels, and from computers to computers of our student hackers. She learns every day.
 
 ### “The Orpheus Is Watching You”
 
-![Dinosaur with cool sunglasses](img/dinosaur_coming_from_the_future_to_destroy_humanity.png)
+![Dinosaur with cool sunglasses](https://cloud-i203j2e6a-hack-club-bot.vercel.app/2dinosaur_coming_from_the_future_to_destroy_humanity.png)
 
 Orpheus has become one of the most powerful members of Hack Club. If you don’t know yet… Your club leader is secretly assisted by Orpheus. They talk every week, and the classic conversations usually start with “Hey, you're looking great today!” She manages the data of every Hack Club, making sure that you are learning the superpower the right way every week; she talks to leaders, telling them the horrific news that “on average you have 21.05 people attend your meetings”... Orpheus has been a part of Hack Club and will continue to be the core member of the core team...
 
