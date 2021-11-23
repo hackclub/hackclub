@@ -6,7 +6,7 @@ author: '@bajpai244'
 
 In this workshop, we will be creating your first npm package and then we will be publishing it. This workshop will be a quick read and will be fun to do 🤠 So let’s get started!
 
-![Demo GIF](img/showtime.gif)
+![Demo GIF](https://cloud-lx5yfy4uk-hack-club-bot.vercel.app/0showtime.gif)
 
 
 ## Prerequisites
@@ -38,11 +38,11 @@ You need to have Node.js and npm installed in your system.
 
 You can download Node.js from [here](https://nodejs.org/en/download/).
 
-![node js Image](img/nodejs.svg)
+![node js Image](https://cloud-axea46wmc-hack-club-bot.vercel.app/7nodejs.svg)
 
 To check Node.js is working fine type **node -v** in your terminal, if a version pops up on the terminal then it means you have a proper installation of Node.js.
 
-![node check image](img/nodecheck.png)
+![node check image](https://cloud-axea46wmc-hack-club-bot.vercel.app/5nodecheck.png)
 
 ## Creating your npm account 
 
@@ -58,13 +58,13 @@ npm login
 
 You can also take help from this <a href="https://docs.npmjs.com/creating-a-new-npm-user-account#testing-your-new-account-with-npm-login)" target="blank" >link</a> to login into your npm account.
 
-![that was easy gif](img/itwaseasy.gif)
+![that was easy gif](https://cloud-axea46wmc-hack-club-bot.vercel.app/3itwaseasy.gif)
 
 ## Creating the package
 
 Now, find a folder on your computer where you would like to keep your project. Then create a new folder and name it calculator.
 
-![calculatorfolder image](img/calculatorfolder.png)
+![calculatorfolder image](https://cloud-g4lb8t7k6-hack-club-bot.vercel.app/4calculatorfolder.png)
 
 Now, open this project inside a terminal and type the following command: 
 ```bash
@@ -72,11 +72,11 @@ npm init -y
 ```
 Then press the **Enter key** to run it. 
 
-![ npm init command ](img/npminitcommand.png)
+![ npm init command ](https://cloud-m6emjtbgq-hack-club-bot.vercel.app/0npminitcommand.png)
 
 After running the command a package.json file will be created in your calculator project folder.
 
-![packagejsoncreated image](img/packagejsoncreated.png)
+![packagejsoncreated image](https://cloud-lh1je5w43-hack-club-bot.vercel.app/2packagejsoncreated.png)
 
 Okay, so now we will discuss some questions that may arise from the above steps that we just performed!
 
@@ -93,7 +93,7 @@ package.json is a file that is used to **store meta-information about your npm p
 
 This file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies.
 
-![got it](img/gotit.gif)
+![got it](https://cloud-axea46wmc-hack-club-bot.vercel.app/0gotit.gif)
 
 ## Editing the package.json file
 
@@ -103,7 +103,7 @@ Now, we are going to edit the package.json file that we have created.
 
 Open your project folder inside an editor. I will be using [VSCode](https://code.visualstudio.com/).
 
-![Opening in Editor Image](img/openingineditor.png)
+![Opening in Editor Image](https://cloud-lh1je5w43-hack-club-bot.vercel.app/1openingineditor.png)
 
 ### Change the name in package.json
 
@@ -111,13 +111,13 @@ Now, in the name field( this is going to be your package name ) of your package.
 
 Now, **here @username is your npm username with @ as a prefix.** My npm username is bajpai244 so I will name it as @bajpai244/calculator. Packages with names in this format are called **scoped packages.**
 
-![editname photo](img/editname.png)
+![editname photo](https://cloud-a5f10iiy1-hack-club-bot.vercel.app/0editname.png)
 
 ### How to find npm username?
 
 Go to [https://npmjs.com](https://npmjs.com) and then login with your npm registered email id and password and once you are logged in click on your profile picture on the top right. There you will see your username.
 
-![usernamefind photo](img/usernamefind.png)
+![usernamefind photo](https://cloud-h4bwztgkl-hack-club-bot.vercel.app/2usernamefind.png)
 
 ### What are scoped npm packages?
 
@@ -129,13 +129,13 @@ Each npm user/organization has its own scope, and only you can add packages to y
 
 So, here in our case @username is acting as a scope and all the packages with this scope will be grouped together in a common directory. As the scope is unique for every user, hence we all will have our packages with the same name but with a differen scope! npm is so smart😎
 
-![smartdog gif](img/smartdog.gif)
+![smartdog gif](https://cloud-h4bwztgkl-hack-club-bot.vercel.app/9smartdog.gif)
 
 ## Create index.js
 
 Now create a file index.js in your project folder.
 
-![createindexjs image](img/createindexjs.png)
+![createindexjs image](https://cloud-25afp3h09-hack-club-bot.vercel.app/0createindexjs.png)
 
 Now, add the following code to it:
 
@@ -166,7 +166,7 @@ module.exports = {
 
 This is what the file will look like:
 
-![ created index.js file ](img/indexjs1.png)
+![ created index.js file ](https://cloud-myi62mys7-hack-club-bot.vercel.app/0indexjs1.png)
 
 We declared four arithmetic functions that perform the addition, subtraction, multiplication, and division operation respectively.
 
@@ -179,7 +179,7 @@ module.exports exports a default value from a Node.js module and here we are exp
 
 This will make sure that we can import our arithmetic functions in another node js file ( i.e module ).
 
-![seewhatyoudid image](img/seewhatyoudid.gif)
+![seewhatyoudid image](https://cloud-nt2j6nfqi-hack-club-bot.vercel.app/0seewhatyoudid.gif)
 
 ## Publishing your package!
 
@@ -193,11 +193,11 @@ After typing that press the **Enter key** to run this command.
 
 This is what it will look like:
 
-![publishing the package image](img/publish1.png)
+![publishing the package image](https://cloud-lh1je5w43-hack-club-bot.vercel.app/5publish1.png)
 
 Congratulations! You have published your first npm package!
 
-![ who is awesome GIF ](img/whoisawesome.gif)
+![ who is awesome GIF ](https://cloud-h4bwztgkl-hack-club-bot.vercel.app/3thisisawesome.gif)
 
 ### Awesome! but why we used --access public in the command?
 
@@ -227,7 +227,7 @@ module.exports = {
 
 After making all these changes your file will look like this:
 
-![indexjs2 image](img/indexjs2.png)
+![indexjs2 image](https://cloud-nbqdwz957-hack-club-bot.vercel.app/0indexjs2.png)
 
 ## Now publish this change 
 
@@ -241,7 +241,7 @@ We are not adding **--access public** because during the first publish we made i
 
 Now, press the **Enter key** and see what you get.
 
-![error image](img/error.png)
+![error image](https://cloud-gl06ii18v-hack-club-bot.vercel.app/0error.png)
 
 Yes, you are right! what you have in front of you is an error. In npm we can't publish a package again with the same version. So we have to change the version number of our package before we publish the package.
 
@@ -263,13 +263,13 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 - MINOR version when you add functionality in a backward-compatible manner, and
 - PATCH version when you make backward-compatible bug fixes.
 
-![awesome2 image](img/awesome2.gif)
+![awesome2 image](https://cloud-g4lb8t7k6-hack-club-bot.vercel.app/0awesome.gif)
 
 ### Changing the version
 
 Now, open your package.json and there you will see a version number, change it from **"1.0.0" to "1.1.0"**.
 
-![versionchange image](img/versionchange.png)
+![versionchange image](https://cloud-h4bwztgkl-hack-club-bot.vercel.app/1versionchange.png)
 
 We have added new functionality and the code is still backward-compatible and hence we are **increasing the MINOR version to 1 from 0.** 
 
@@ -285,7 +285,7 @@ Press the **Enter key** to run the above command.
 
 This is what it will look like:
 
-![publish2 image](img/publish2.png)
+![publish2 image](https://cloud-lh1je5w43-hack-club-bot.vercel.app/6publish2.png)
 
 ## Testing our npm package
 
@@ -295,7 +295,7 @@ Now, we are going to test our npm package!
 
 Now, create another folder **test**.
 
-![testfolder](img/testfolder.png)
+![testfolder](https://cloud-h4bwztgkl-hack-club-bot.vercel.app/5testfolder.png)
 
 ### Initialize it
 
@@ -317,7 +317,7 @@ npm -i @bajpai244/calculator
 
 **You should use @username/calculator** where @username is your username with @ as prefix.
 
-![testcommands image](img/testcommands.png)
+![testcommands image](https://cloud-h4bwztgkl-hack-club-bot.vercel.app/7testcommands.png)
 
 ### What happend in the above two commands?
 
@@ -355,7 +355,7 @@ Now, here we have imported our package's functions and are testing them with the
 
 This is what it will look like:
 
-![testfile image](img/testfile.png)
+![testfile image](https://cloud-h4bwztgkl-hack-club-bot.vercel.app/6testfile.png)
 
 ## Running the test
 
@@ -369,7 +369,7 @@ Press the **Enter key** to run this command.
 
 This is what it will look like:
 
-![testoutput image](img/testoutput.png)
+![testoutput image](https://cloud-h4bwztgkl-hack-club-bot.vercel.app/4testoutput.png)
 
 We will get the output of our file logged on the terminal.
 
@@ -381,12 +381,12 @@ Congratulations! Now you are an npm ninja. You have created and published your f
 
 You will still encounter more challenges in your journey as a package-manager and would be required to learn the best practices while publishing packages, but because you have crossed the first hurdle, I am sure you will easily get through the others.
 
-![programmer image](img/programmer.gif)
+![programmer image](https://cloud-lh1je5w43-hack-club-bot.vercel.app/3programmer.gif)
 
 ## Next Steps!
 
 I know it feels awesome to make it but don't stop here, Create whatever you can from this crazy trick and share it with us in the [`#ship`](https://app.slack.com/client/T0266FRGM/C0M8PUPU6) channel of [Hack Club's Slack](https://hackclub.com/slack/).
 
-![nailed it gif](img/nailedit.gif)
+![nailed it gif](https://cloud-axea46wmc-hack-club-bot.vercel.app/4nailedit.gif)
 
 I am available on Hack Club's Slack by the username **Harsh Bajpai**, If you have any doubt or query regarding this workshop then feel free to reach out to me!
