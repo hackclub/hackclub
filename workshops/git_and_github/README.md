@@ -35,13 +35,13 @@ will take you through setting the workspace up.
   - We recommend signing up with your GitHub account - https://github.com/.
 - It should look like this:
 
-  ![Cloud9 dashboard](img/cloud9_dashboard.png)
+  ![Cloud9 dashboard](https://cloud-i0dmikcsu-hack-club-bot.vercel.app/2cloud9_dashboard.png)
 
 2. Create a workspace!
 
 - Press the **create a new workspace** button.
 
-  ![create new workspace](img/create_new_workspace.gif)
+  ![create new workspace](https://cloud-i0dmikcsu-hack-club-bot.vercel.app/3create_new_workspace.gif)
 
 - Give the workspace a good name that conveys what the workspace is used for
   quickly, and concisely.
@@ -55,7 +55,7 @@ will take you through setting the workspace up.
   provided.
 - For the template you may choose either **Custom** or **HTML5**.
 
-  ![name new workshop](img/name_new_workshop.gif)
+  ![name new workshop](https://cloud-9bugzpkc4-hack-club-bot.vercel.app/4name_new_workshop.gif)
 
 3. Get rid of the unnecessary junk.
 
@@ -64,7 +64,7 @@ will take you through setting the workspace up.
     - You won't need these for your project.
 - Close the opened `README.md` as well.
 
-  ![close readme](img/close_readme.gif)
+  ![close readme](https://cloud-i0dmikcsu-hack-club-bot.vercel.app/1close_readme.gif)
 
 4. Create an `index.html` file.
 
@@ -92,7 +92,7 @@ will take you through setting the workspace up.
   on the sidebar or clicking anywhere in the code.
 - You may press <kbd>Ctrl+S</kbd> (Windows), <kbd>Cmd+S</kbd> (Mac) or go to File --> Save.
 
-  ![save in Cloud9](img/save_in_cloud9.gif)
+  ![save in Cloud9](https://cloud-9bugzpkc4-hack-club-bot.vercel.app/6save_in_cloud9.gif)
 
 7. Celebrate!
 
@@ -106,7 +106,7 @@ will take you through setting the workspace up.
 - Git tracks and manages each change you make ("You added lines A, B, C and removed line D")
 - Git enables many people to work separately on the same project
 
-  ![Git status](img/git_status.png)
+  ![Git status](https://cloud-d76jv25xw-hack-club-bot.vercel.app/6git_status.png)
 
 - Git has tools to show that it has **detected** a **change** in the **file**.
   - Changes consist of anything you've added or removed from the file.
@@ -132,7 +132,7 @@ will take you through setting the workspace up.
   - Running a command called `git log` in the terminal displays every change
     you've saved:
 
-    ![Git log](img/git_log.png)
+    ![Git log](https://cloud-d76jv25xw-hack-club-bot.vercel.app/9git_log.png)
 
 ## Git's Tools
 
@@ -154,7 +154,7 @@ A repository is a place where your project files are stored.
 - Their own copy of the files is called a **fork** or **"forking a repo"**.
 - Must be named without spaces — **replace a space with a dash (-)**.
 
-![example branches](img/example_branches.png)
+![example branches](https://cloud-i0dmikcsu-hack-club-bot.vercel.app/6example_branches.png)
 
 **Example: Why Branches?**
 
@@ -164,7 +164,7 @@ _Bob & John are working on one repo and the same files at the same time:_
 - John wants to continue working, but Bob's bug is not allowing him to continue.
   - In this situation, John would have to wait for Bob to fix the bug, then
     continue his own work.
-- An better alternative: Create two different versions of the same folder and
+- A better alternative: Create two different versions of the same folder and
   its files of code (different branches).
   - Work on their own work and bring them together when they are done.
 
@@ -188,7 +188,7 @@ _Bob & John are working on one repo and the same files at the same time:_
 
 **Diagram of Master Branch Versus Another Branch**
 
-![feature branch tree](img/feature_branch_tree.png)
+![feature branch tree](https://cloud-i0dmikcsu-hack-club-bot.vercel.app/7feature_branch_tree.png)
 
 - Think of "master" as the tree trunk and "feature" as a literal branch.
 
@@ -218,7 +218,7 @@ on their servers (https://pages.github.com/).
 
 2. You **provided** a **Git link** when you **made the workspace**:
 
-![clone from git into Cloud9](img/clone_from_git_in_cloud9.png)
+![clone from git into Cloud9](https://cloud-i0dmikcsu-hack-club-bot.vercel.app/0clone_from_git_in_cloud9.png)
 
 Nah, not familiar? Follow the steps in
 **[Git and GitHub Pages w/ provided link](#git-and-github-pages-w-provided-link)
@@ -233,7 +233,7 @@ in heading below**
 - Hit the "+" button in the bottom panel area OR on the top-bar click
   "Window" and "New Terminal".
 
-  ![open new terminal](img/new_terminal.gif)
+  ![open new terminal](https://cloud-9bugzpkc4-hack-club-bot.vercel.app/5new_terminal.gif)
 
 2. Type the command: `git add [file]` OR `git add .`.
 
@@ -245,7 +245,7 @@ in heading below**
     every file** in the workspace to the tracked files.
     - E.g. `git add .`
 
-  ![git add .](img/git_add.gif)
+  ![git add .](https://cloud-d76jv25xw-hack-club-bot.vercel.app/0git_add.gif)
 
 3. Type: `git commit -m "[commit message here]"`.
 
@@ -259,13 +259,13 @@ in heading below**
 
   - Bad message example:
 
-    ![](img/bad_commit_message.png)
+    ![](https://cloud-i0dmikcsu-hack-club-bot.vercel.app/8bad_commit_message.png)
 
   - Good message example:
 
-    ![](img/good_commit_message.png)
+    ![](https://cloud-9bugzpkc4-hack-club-bot.vercel.app/7good_commit_message.png)
 
-  ![git commit](img/git_commit.gif)
+  ![git commit](https://cloud-d76jv25xw-hack-club-bot.vercel.app/1git_commit.gif)
 
 4. Type: `git push`.
 
@@ -277,12 +277,12 @@ in heading below**
   - You can you find your username either on your profile or at these spots
     when you login to GitHub.
 
-![GitHub username](img/github_username.png)
+![GitHub username](https://cloud-9bugzpkc4-hack-club-bot.vercel.app/2github_username.png)
 
 - The characters for the password not show up in the terminal for security
   reasons — just keep typing!
 
-![git push password](img/git_push_password.gif)
+![git push password](https://cloud-d76jv25xw-hack-club-bot.vercel.app/4git_push_password.gif)
 
 5. Type: `git branch [branch-name]`.
 
@@ -301,7 +301,7 @@ in heading below**
   `https://[yourusername].github.io/[reponame]`.
 - It might take about 30 seconds to fully get online.
 
-  ![git push to `gh-pages`](img/git_push_gh-pages.gif)
+  ![git push to `gh-pages`](https://cloud-d76jv25xw-hack-club-bot.vercel.app/3git_push_gh-pages.gif)
 
 7. Go online to `https://[username].github.io/[reponame]`.
 
@@ -328,7 +328,7 @@ Congrats, now you're a Git (6) God!
 - Hit the "+" button in the bottom panel area OR on the top-bar click
   "Window" (8th from the right) and "New Terminal".
 
-  ![new terminal in Cloud9](img/new_terminal.gif)
+  ![new terminal in Cloud9](https://cloud-9bugzpkc4-hack-club-bot.vercel.app/5new_terminal.gif)
 
 2. In the terminal, type: `git init`.
 
@@ -336,7 +336,7 @@ Congrats, now you're a Git (6) God!
 - The .git file stores all the location data for your workspace.
 - This allows you to use git inside your folder.
 
-![`git init`](img/git_init.gif)
+![`git init`](https://cloud-d76jv25xw-hack-club-bot.vercel.app/2git_init.gif)
 
 2. Type: `git remote add [remote-name] [link to repo]`.
 
@@ -352,7 +352,7 @@ Congrats, now you're a Git (6) God!
 - It will be something similar looking to:
   https://github.com/notbrian/example.git
 
-  ![create a repo on GitHub](img/github_create_repo.gif)
+  ![create a repo on GitHub](https://cloud-d76jv25xw-hack-club-bot.vercel.app/7github_create_repo.gif)
 
 - **Example: Remote is a TV Remote Controller**.
 
@@ -376,7 +376,7 @@ Congrats, now you're a Git (6) God!
     - Again, don't include the square brackets.
   - **Example command**: `git remote add github https://github.com/notbrian/example.git`.
 
-  ![git remote add](img/git_remote_add.gif)
+  ![git remote add](https://cloud-d76jv25xw-hack-club-bot.vercel.app/5git_remote_add.gif)
 
 3. Type: `git add [filename.extension]` OR `git add .`.
 
@@ -388,7 +388,7 @@ Congrats, now you're a Git (6) God!
     file** in the workspace to the tracked files.
     - E.g. `git add .`.
 
-  ![git add](img/git_add.gif)
+  ![git add](https://cloud-d76jv25xw-hack-club-bot.vercel.app/0git_add.gif)
 
 3. Type: `git commit -m "[commit message here]"`.
 
@@ -399,9 +399,9 @@ Congrats, now you're a Git (6) God!
 - Think of committing as packaging something into a package and putting the
   shipping label on it.
 - Don't make bad commit messages: be concise, but clear about what you did.
-  ![Bad message example](img/bad_commit_message.png)
-  ![Good message example](img/good_commit_message.png)
-  ![git commit](img/git_commit.gif)
+  ![Bad message example](https://cloud-i0dmikcsu-hack-club-bot.vercel.app/8bad_commit_message.png)
+  ![Good message example](https://cloud-9bugzpkc4-hack-club-bot.vercel.app/7good_commit_message.png)
+  ![git commit](https://cloud-d76jv25xw-hack-club-bot.vercel.app/1git_commit.gif)
 
 4. Type: `git push`.
 
@@ -414,12 +414,12 @@ Congrats, now you're a Git (6) God!
   - You can you find your username either on your profile or at these spots when
     you login to GitHub.
 
-  ![GitHub username](img/github_username.png)
+  ![GitHub username](https://cloud-9bugzpkc4-hack-club-bot.vercel.app/2github_username.png)
 
   - The characters for the password not show up in the terminal for security
     reasons -- just keep typing!
 
-  ![enter password git push](img/git_push_password.gif)
+  ![enter password git push](https://cloud-d76jv25xw-hack-club-bot.vercel.app/4git_push_password.gif)
 
 5. Type: `git branch [branch-name]`.
 
@@ -438,7 +438,7 @@ Congrats, now you're a Git (6) God!
   `[yourusername].github.io/[reponame]`.
 - It might take about 30 seconds to fully get online.
 
-  ![git push to gh-pages](img/git_push_gh-pages.gif)
+  ![git push to gh-pages](https://cloud-d76jv25xw-hack-club-bot.vercel.app/3git_push_gh-pages.gif)
 
 7. Go online to `https://[username].github.io/[reponame]`.
 
@@ -454,7 +454,7 @@ Congrats, now you're a Git (6) God!
 
 You successfully pushed your site online!
 
-![Drake clapping](img/drake_clapping.gif)
+![Drake clapping](https://cloud-i0dmikcsu-hack-club-bot.vercel.app/5drake_clapping.gif)
 
 ## More Commands
 
@@ -465,12 +465,12 @@ You successfully pushed your site online!
 Cloning a workable copy of a repo onto your local workspace is when you download
 the repo onto a new computer.
 
-![git clone](img/git_clone.png)
+![git clone](https://cloud-d76jv25xw-hack-club-bot.vercel.app/8git_clone.png)
 
 You'll find the **`[repo-url]`** when you click a into a repo on GitHub and look
 for this:
 
-![clone URL](img/clone_url.png)
+![clone URL](https://cloud-i0dmikcsu-hack-club-bot.vercel.app/9clone_url.png)
 
 ### Merge
 
@@ -488,11 +488,11 @@ A pull request means to request changes to be "pulled" from one branch into
 another. Pull requests are commonly used to merge feature branches into master
 branches.
 
-![create pull request](img/create_pull_request.gif)
+![create pull request](https://cloud-i0dmikcsu-hack-club-bot.vercel.app/4create_pull_request.gif)
 
 A good Git workflow:
 
-![good git workflow](img/good_git_workflow.png)
+![good git workflow](https://cloud-9bugzpkc4-hack-club-bot.vercel.app/3good_git_workflow.png)
 
 ### GitHub Terminology
 
@@ -503,7 +503,7 @@ A good Git workflow:
 Similar to a clone, except instead of merging you would do a pull request to
 merge your changes to the master repo.
 
-![GitHub fork button](img/github_fork_button.png)
+![GitHub fork button](https://cloud-9bugzpkc4-hack-club-bot.vercel.app/0github_fork_button.png)
 
 #### Pull Request
 
@@ -517,7 +517,7 @@ merge your changes to the master repo.
 - User-submitted bug tracker.
 - Allows contributors to discuss the bugs.
 
-![GitHub issues tab](img/github_issues_tab.png)
+![GitHub issues tab](https://cloud-9bugzpkc4-hack-club-bot.vercel.app/1github_issues_tab.png)
 
 #### Contributor
 
