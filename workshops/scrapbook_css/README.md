@@ -2,6 +2,7 @@
 name: Amazing Scrapbook CSS
 description: Customize your Scrapbook through simple CSS
 author: '@sampoder'
+locales: 'pt-br'
 ---
 
 # Creating a jaw-dropping Scrapbook
