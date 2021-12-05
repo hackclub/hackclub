@@ -3,6 +3,7 @@ name: Animated 3D Models
 description: Make animated 3D models using a simple JavaScript library
 author: '@wollygfx'
 img: 'https://cloud-f0her7co2.vercel.app/2020-10-21_84xj5ymva0f16vfmyderfn46epzgzbp7.jpeg'
+locales: 'es-xl'
 ---
 
 # Animated 3D Models
@@ -27,13 +28,13 @@ For this workshop we will use [Repl.it](https://repl.it), click [here](https://r
 
 ## HTML part
 
-Alright, let’s start! First, we want to create inside of the <body> tag a <canvas> in which, the 3D model we are going to create will render. Then, put a class; feel free to name it as however you want to… I will name it with the class `model`.
+Alright, let’s start! First, we want to create inside of the `<body>` tag a `<canvas>` in which, the 3D model we are going to create will render. Then, put a class; feel free to name it as however you want to… I will name it with the class `model`.
 
 ```html
 <canvas class="model"></canvas>
 ```
 
-Now we have to put the following code inside of the <body> tag, this code allows us to use the Zdog library without having to download it. Learn about CDN [here](https://en.wikipedia.org/wiki/Content_delivery_network).
+Now we have to put the following code inside of the `<body>` tag, this code allows us to use the Zdog library without having to download it. Learn about CDN [here](https://en.wikipedia.org/wiki/Content_delivery_network).
 
 ```html
 <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
@@ -70,7 +71,7 @@ const ws = new Zdog.Illustration({
 
 Let's break this down:
 
-1. **Illustration** is the top-level class that handles dealing with the <canvas> element, holding all the shapes in the scene, and displaying those shapes in the element
+1. **Illustration** is the top-level class that handles dealing with the `<canvas>` element, holding all the shapes in the scene, and displaying those shapes in the element
 2. **element** we use this element to match the render with the canvas tag
 3. **resize** is used to modify the size in which the model will be rendered, in this case, the 3D model will render on the whole screen. If you want to, you can remove this element
 
@@ -300,7 +301,7 @@ Check out these cool 3D models made by other people:
 
 - [Live digital clock made using Zdog](https://codepen.io/jh3y/pen/vqYLKd)
 - [Amethyst from Steven Universe made using Zdog](https://codepen.io/Metahari/pen/dEQMBy)
-- [Generic coin made using Zdog](https://repl.it/@wollygfx/Demo-3-Zdog)
+- [Octocat made using Zdog](https://codepen.io/defunty/pen/vwwjPL)
 
 ### Resources
 
