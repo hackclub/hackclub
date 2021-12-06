@@ -3,6 +3,7 @@ name: Animated 3D Models
 description: Make animated 3D models using a simple JavaScript library
 author: '@wollygfx'
 img: 'https://cloud-f0her7co2.vercel.app/2020-10-21_84xj5ymva0f16vfmyderfn46epzgzbp7.jpeg'
+locales: 'es-xl'
 ---
 
 # Animated 3D Models
