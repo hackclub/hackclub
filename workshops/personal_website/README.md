@@ -2,6 +2,7 @@
 name: 'Personal Website'
 description: 'Make your first website from scratch'
 author: '@MaxWofford'
+locales: 'es-xl'
 ---
 
 # Personal Website
