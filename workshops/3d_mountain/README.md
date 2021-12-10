@@ -3,6 +3,7 @@ name: '3D Mountain'
 description: 'Create a 3D mountain with Python data viz tools'
 author: '@shivesh01'
 img: 'https://cloud-a08hob7s0.vercel.app/0workshop1.gif'
+locales: 'es-xl'
 ---
 
 Mountains are fun! Here, check out this mountain on Google Maps:
