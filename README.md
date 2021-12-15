@@ -44,4 +44,4 @@ If you need any help, please feel free to contact us at team@hackclub.com or on 
 
 ## License
 
-TL;DR: All content is released under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license. All code is released under the [MIT License](MIT_LICENSE). For the license's full text and attributions, please see [`LICENSE`](LICENSE).
+TL;DR: All content is released under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license. All code is released under the [MIT License](MIT_LICENSE). For the license's full text and attributions, please see [`LICENSE`](LICENSE). The MIT License is compatible with many copyleft licenses, such as the GNU General Public License (GNU GPL). Any software licensed under the terms of the MIT License can be integrated with software licensed under the terms of the GNU GPL.
