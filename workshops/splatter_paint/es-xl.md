@@ -73,7 +73,7 @@ var path = new Path.Circle({
 })
 ```
 
-Si ejecutas tu repl ahora y mueves el mouse, verás ... nada. De hecho, estás dibujando círculos, pero los círculos son actualmente transparentes. Entonces, démosles un poco de color. En el fragmento de código anterior, aún en la función `onMouseMove` , añade:
+Si ejecutas tu repl ahora y mueves el mouse, verás... nada. De hecho, estás dibujando círculos, pero los círculos son actualmente transparentes. Entonces, démosles un poco de color. En el fragmento de código anterior, aún en la función `onMouseMove`, añade:
 
 ```js
 path.fillColor = {
