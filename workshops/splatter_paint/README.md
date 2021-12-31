@@ -2,6 +2,7 @@
 name: 'Splatter Paint'
 description: 'Crazy colorful splatter paint in your browser with Paper.js'
 author: '@MatthewStanciu'
+locales: 'es-xl'
 ---
 
 **Warning: the following workshop involves flashing colors and is not recommended for those with a history of epilepsy.**
