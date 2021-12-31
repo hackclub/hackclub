@@ -176,7 +176,7 @@ Enhorabuena, ahora puedes esparcir círculos de colores por toda la pantalla. Si
 Tu viaje está lejos de terminar. Hay un sinfín de direcciones en las que puedes llevar este proyecto. Aquí hay algunas sugerencias.
 
 1. Si deseas aumentar la distancia entre cada círculo, puedes agregar `tool.fixedDistance = SOME_NUMBER` a la cima de tu archivo `script.js` . Esto activará el evento después de que el cursor se haya movido en cada `SOME_NUMBER`px en lugar de cada vez que se mueva el mouse. Puedes configurarlo en un número fijo, ¡o puedes hacerlo aleatorio!
-2. Si encuentrsa que el arcoíris es demasiado predecible, puede establecer el tono en un número aleatorio entre 0 y 360 (recuerde, esto cubre todos los colores en el sistema HSB).
+2. Si encuentras que el arcoíris es demasiado predecible, puede establecer el tono en un número aleatorio entre 0 y 360 (recuerde, esto cubre todos los colores en el sistema HSB).
 3. ¿Quién dice que tu lienzo tiene que ser blanco? Intenta configurar el color de fondo de tu sitio web en algo personalizado: tu color favorito, una imagen o incluso un [gradiente](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)—y/o cámbialo cada vez que se crea un nuevo círculo.
 4. ¿Quién dice que tienes que dibujar círculos? Intenta dibujar una mezcla aleatoria de círculos, óvalos de longitudes y anchos aleatorios y otras formas.
 5. La aleatoriedad es divertida, pero la aleatoriedad controlada es aún más divertida. Echa un vistazo a los [documentos de Paper.js sobre eventos de mouse](https://paperjs.org/reference/mouseevent/). ¿Cómo se pueden utilizar las propiedades de MouseEvent para jugar con el radio? (esto es lo que se me ocurrió: intenta establecer el radio a `event.delta.length` y ve qué sucede)
