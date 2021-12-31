@@ -1,7 +1,8 @@
 ---
-name: 'Splatter Paint'
-description: 'Crazy colorful splatter paint in your browser with Paper.js'
+name: 'Salpicaduras de pintura'
+description: 'Salpicaduras de pintura locas y coloridas en tu navegador con Paper.js'
 author: '@MatthewStanciu, @J-cordz'
+locales: 'es-xl'
 ---
 
 **Advertencia: el siguiente taller incluye colores destellantes y no se recomienda para personas con antecedentes de epilepsia.**
