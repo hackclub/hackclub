@@ -155,7 +155,7 @@ Si corres tu repl de nuevo, deberías notar que tus círculos rojos ahora están
 
 Estamos llegando a alguna parte, pero esto todavía no se ve muy salpicado.
 
-![pintura colorida salpicada al azar sobre un lienzo](https://cloud-3aosybiuc-hack-club-bot.vercel.app/5real-splatter-paint.jpg)
+![Pintura colorida salpicada al azar sobre un lienzo](https://cloud-3aosybiuc-hack-club-bot.vercel.app/5real-splatter-paint.jpg)
 
 Parte de lo que hace que la salpicadura de pintura sea tan divertida de crear y mirar es la caótica aleatoriedad de todo en el lienzo. Por lo tanto, si deseas que tu sitio web esté lo más cerca posible de la  salpicadura de pintura, la mejor manera de hacerlo es introducir algo de aleatoriedad.
 
