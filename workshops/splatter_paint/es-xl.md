@@ -157,7 +157,7 @@ Estamos llegando a alguna parte, pero esto todavía no se ve muy salpicado.
 
 ![Pintura colorida salpicada al azar sobre un lienzo](https://cloud-3aosybiuc-hack-club-bot.vercel.app/5real-splatter-paint.jpg)
 
-Parte de lo que hace que la salpicadura de pintura sea tan divertida de crear y mirar es la caótica aleatoriedad de todo en el lienzo. Por lo tanto, si deseas que tu sitio web esté lo más cerca posible de la  salpicadura de pintura, la mejor manera de hacerlo es introducir algo de aleatoriedad.
+Parte de lo que hace que la salpicadura de pintura sea tan divertida de crear y mirar es la caótica aleatoriedad de todo en el lienzo. Por lo tanto, si deseas que tu sitio web esté lo más cerca posible de la salpicadura de pintura, la mejor manera de hacerlo es introducir algo de aleatoriedad.
 
 Cambia el radio de tus círculos de `10` a `Math.round(Math.random() * 25) + 5`. Esto hace que el radio sea un número aleatorio entre 5 y 30. Luego corre el repl de nuevo.
 
