@@ -147,7 +147,7 @@ canvas {
 }
 ```
 
-Si corres tu repl de nuevo, Deberías notar que tus círculos rojos ahora están llenando toda la pantalla. Woohoo!
+Si corres tu repl de nuevo, deberías notar que tus círculos rojos ahora están llenando toda la pantalla. Woohoo!
 
 ![Patrón aleatorio formado por círculos rojos](https://cloud-3aosybiuc-hack-club-bot.vercel.app/6red-circles.jpg)
 
