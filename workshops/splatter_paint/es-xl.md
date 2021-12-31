@@ -107,7 +107,7 @@ En lugar de usar los sistemas de color hexadecimal o RGB más comunes, Paper.js 
 
 Con esto en mente, intenta ejecutar tu repl ahora. Porque pusiste el `hue` en 0, ¡ahora estás dibujando círculos rojos! Pero tus círculos solo aparecen en la esquina superior izquierda de la pantalla. Esto se debe a que el ancho y la altura de su lienzo están configurados actualmente en los valores predeterminados de Paper.js. (300px por 150px).
 
-Hagamos que tu lienzo ocupe toda la pantalla. En tu archivo `style.css` , agrega lo siguiente:
+Hagamos que tu lienzo ocupe toda la pantalla. En tu archivo `style.css`, agrega lo siguiente:
 
 ```css
 canvas {
