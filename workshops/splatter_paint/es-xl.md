@@ -153,7 +153,7 @@ Si corres tu repl de nuevo, Deberías notar que tus círculos rojos ahora están
 
 ## Haciendo salpicaduras
 
-Estamos llegando a alguna parte, pero esto todavía no se siente muy salpicado.
+Estamos llegando a alguna parte, pero esto todavía no se ve muy salpicado.
 
 ![pintura colorida salpicada al azar sobre un lienzo](https://cloud-3aosybiuc-hack-club-bot.vercel.app/5real-splatter-paint.jpg)
 
