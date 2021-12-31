@@ -180,7 +180,7 @@ Tu viaje está lejos de terminar. Hay un sinfín de direcciones en las que puede
 3. ¿Quién dice que tu lienzo tiene que ser blanco? Intenta configurar el color de fondo de tu sitio web en algo personalizado: tu color favorito, una imagen o incluso un [gradiente](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)—y/o cámbialo cada vez que se crea un nuevo círculo.
 4. ¿Quién dice que tienes que dibujar círculos? Intenta dibujar una mezcla aleatoria de círculos, óvalos de longitudes y anchos aleatorios y otras formas.
 5. La aleatoriedad es divertida, pero la aleatoriedad controlada es aún más divertida. Echa un vistazo a los [documentos de Paper.js sobre eventos de mouse](https://paperjs.org/reference/mouseevent/). ¿Cómo se pueden utilizar las propiedades de MouseEvent para jugar con el radio? (esto es lo que se me ocurrió: intenta establecer el radio a `event.delta.length` y ve qué sucede)
-6. Si deseas lastimarte los ojos y los oídos, intenta usar la libería [Tone.js](https://tonejs.github.io)  para reproducir un sonido de sintetizador de una frecuencia aleatoria cada vez que se crea un nuevo círculo.
+6. Si deseas lastimarte los ojos y los oídos, intenta usar la librería [Tone.js](https://tonejs.github.io) para reproducir un sonido de sintetizador de una frecuencia aleatoria cada vez que se crea un nuevo círculo.
 
 A continuación, se muestran algunos proyectos de ejemplo que se han derivado de este proyecto:
 
