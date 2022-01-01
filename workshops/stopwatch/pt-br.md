@@ -9,7 +9,7 @@ locales: 'pt-br'
 Aposto que você já usou um cronômetro muitas vezes, seja para corridas ou apenas para se divertir! Você já se perguntou como seria legal se construíssemos nosso próprio cronômetro? Bem, hoje, vamos construir juntos um cronômetro simples e bonito!
 
 <a href="https://cronometro.biel42.repl.co/" target="_blank">
-<img src="img/project.png">
+<img src="https://raw.githubusercontent.com/hack-club-brasil/v1/main/docs/workshops/cronometro/img/project.png">
 </a>
 
 Aqui está o [código fonte](https://repl.it/@biel42/cronometro#index.html) e a [demonstração ao vivo](https://cronometro.biel42.repl.co/).
