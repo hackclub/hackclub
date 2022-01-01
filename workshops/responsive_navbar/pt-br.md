@@ -144,7 +144,7 @@ Uma explicação elaborada do justify-content e suas diversas propriedades:
 
 ![Barra de navegação responsiva](https://raw.githubusercontent.com/hack-club-brasil/v1/main/docs/workshops/barra-responsiva/img/Imagem8.png)
 
-Créditos da imagem: [css-tricks](https://www.css-tricks.com){:target="_blank"}
+Créditos da imagem: [css-tricks](https://www.css-tricks.com)
 
 A seguir, temos o `list-style: none;`, que removerá os pontos marcados por padrão para listas não-ordenadas. Em seguida, damos ao elemento um espaço extra em cima e em baixo usando `padding-top: 10px;` e `padding-bottom: 10px;`
 
@@ -234,7 +234,7 @@ Portanto, podemos escrever a Media Query de tal forma:
 }
 ```
 
-Aprenda mais sobre [media-queries aqui](https://developer.mozilla.org/pt-BR/docs/Web/Guide/CSS/CSS_Media_queries){:target="_blank"}.
+Aprenda mais sobre [media-queries aqui](https://developer.mozilla.org/pt-BR/docs/Web/Guide/CSS/CSS_Media_queries).
 
 Agora, todos os estilos que são estão dentro desta `media query` só serão aplicados quando a condição de `max-width:450px` for verdadeira.
 
@@ -349,7 +349,7 @@ A ``querySelector()`` retorna o primeiro elemento dentro do documento que corres
 
 Assim, a ``querySelectorAll()`` retorna todos os elementos que combinam com o seletor especificado. Da mesma forma, na 3ª linha, todos os elementos com a classe de span são selecionados e são armazenados em uma ``NodeList``.
 
-Agora as ``NodeLists`` são um pouco semelhantes a ``Arrays`` e ``Objetos``, mas eles não são ``Arrays`` ou ``Objetos``. Não precisamos aprofundar, mas se você quiser saber mais sobre isso, dê uma olhada [nisso](https://developer.mozilla.org/pt-BR/docs/Web/API/NodeList){:target="_blank"}.
+Agora as ``NodeLists`` são um pouco semelhantes a ``Arrays`` e ``Objetos``, mas eles não são ``Arrays`` ou ``Objetos``. Não precisamos aprofundar, mas se você quiser saber mais sobre isso, dê uma olhada [nisso](https://developer.mozilla.org/pt-BR/docs/Web/API/NodeList).
 
 Então isso significa que todas as 3 linhas de botão estão agora armazenadas na variável ``linhas``.
 
@@ -384,9 +384,9 @@ E com isto, terminamos nosso **projeto!** Confira o que você acabou de construi
 
 Agora eu entrego este projeto a vocês! É totalmente seu agora!
 
-Se você ainda não criou uma conta no [repl.it](https://www.repl.it/){:target="_blank"}, certifique-se de criar para salvar esta maravilhosa criação!
+Se você ainda não criou uma conta no [repl.it](https://www.repl.it/), certifique-se de criar para salvar esta maravilhosa criação!
 
-Se você ainda enfrentar dificuldades para se inscrever, assista [esse](https://www.youtube.com/watch?v=Mtqp4CUepk0){:target="_blank"} video.
+Se você ainda enfrentar dificuldades para se inscrever, assista [esse](https://www.youtube.com/watch?v=Mtqp4CUepk0) video.
 
 Aqui estão algumas coisas que você pode fazer:
 
@@ -397,8 +397,8 @@ Aqui estão algumas coisas que você pode fazer:
 
 **Alguns outros exemplos pra você!**
 
-  * [Exemplo de barra lateral](https://repl.it/@FaisalSayed1/Responsive-barra-Example-1){:target="_blank"}.
-  * [Barra pulando de cima exemplo 1](https://repl.it/@FaisalSayed1/Responsive-barra-Example-2){:target="_blank"}.
-  * [Barra pulando de cima exemplo 2](https://repl.it/@FaisalSayed1/Responsive-barra-Example-3){:target="_blank"}.
+  * [Exemplo de barra lateral](https://repl.it/@FaisalSayed1/Responsive-barra-Example-1).
+  * [Barra pulando de cima exemplo 1](https://repl.it/@FaisalSayed1/Responsive-barra-Example-2).
+  * [Barra pulando de cima exemplo 2](https://repl.it/@FaisalSayed1/Responsive-barra-Example-3).
 
 Agora que você terminou de construir este maravilhoso projeto, compartilhe sua bela criação com outras pessoas! Lembre-se, é só mandar a URL do seu projeto!

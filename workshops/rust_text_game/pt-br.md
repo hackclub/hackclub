@@ -20,17 +20,17 @@ Então, nesse caso, esse workshop é para você! Não importa se você é um ini
 
 ## Demo
 
-Você pode ver uma demonstração de um exemplo que preparamos no [asciinema.org](https://asciinema.org/a/8ZB2tvI4NlNkCpKdkY7Wrn8KC){:target="_blank"}.
+Você pode ver uma demonstração de um exemplo que preparamos no [asciinema.org](https://asciinema.org/a/8ZB2tvI4NlNkCpKdkY7Wrn8KC).
 
-O código completo pode ser visto [no GitHub](https://github.com/hackropolis/stickerquest){:target="_blank"} e no [repl.it](https://repl.it/@hackropolis/stickerquest){:target="_blank"}.
+O código completo pode ser visto [no GitHub](https://github.com/hackropolis/stickerquest) e no [repl.it](https://repl.it/@hackropolis/stickerquest).
 
 ## Parte 1: Configuração 🔰
 
-A fim de agilizar o processo, utilizaremos o [repl.it](https://repl.it){:target="_blank"}.
+A fim de agilizar o processo, utilizaremos o [repl.it](https://repl.it).
 
 ### Preparando seu projeto
 
-Usar o repl.it é vantajoso no sentido de que você não precisa de nada além de um navegador para usá-lo. Você pode criar uma conta [aqui](https://repl.it/signup){:target="_blank"} e criar um novo projeto Rust indo para [https://repl.it/languages/rust](https://repl.it/languages/rust){:target="_blank"}.
+Usar o repl.it é vantajoso no sentido de que você não precisa de nada além de um navegador para usá-lo. Você pode criar uma conta [aqui](https://repl.it/signup) e criar um novo projeto Rust indo para [https://repl.it/languages/rust](https://repl.it/languages/rust).
 
 Depois de fazer isso, execute `cargo init --name app-texto-rust` na aba do Shell.
 
@@ -43,13 +43,13 @@ Cargo.toml
 main.rs
 ```
 
-[**Cargo**](https://doc.rust-lang.org/cargo/){:target="_blank"} é o [gestor de pacotes](https://pt.wikipedia.org/wiki/Sistema_gestor_de_pacotes){:target="_blank"} que é usado entre a grande maioria dos desenvolvedores do Rust (também conhecida como "Rustaceanos"). É uma ferramenta conveniente que lida com muitas coisas, incluindo, mas não se limitando às seguintes:
+[**Cargo**](https://doc.rust-lang.org/cargo/) é o [gestor de pacotes](https://pt.wikipedia.org/wiki/Sistema_gestor_de_pacotes) que é usado entre a grande maioria dos desenvolvedores do Rust (também conhecida como "Rustaceanos"). É uma ferramenta conveniente que lida com muitas coisas, incluindo, mas não se limitando às seguintes:
 
-- **Construir**: O processo que usamos para descrever o processo onde o [compilador](https://pt.wikipedia.org/wiki/Compilador){:target="_blank"}{:target="_blank"} (neste caso, o **cargo**) traduz o código que você pode escrever e ler para um formato que seu computador possa entender.
+- **Construir**: O processo que usamos para descrever o processo onde o [compilador](https://pt.wikipedia.org/wiki/Compilador) (neste caso, o **cargo**) traduz o código que você pode escrever e ler para um formato que seu computador possa entender.
 
-- **Instalar bibliotecas de software ("caixas") e dependências**: O software depende de outras bibliotecas de software. O Cargo permite que você baixe bibliotecas de software que você encontrou na internet para seus projetos. Por exemplo, o Hack Clubber [@anirudhb](https://github.com/anirudhb){:target="_blank"} usou a biblioteca [Serenity](https://crates.io/crates/serenity){:target="_blank"} para interagir com o Discord de uma maneira muito mais fácil.
+- **Instalar bibliotecas de software ("caixas") e dependências**: O software depende de outras bibliotecas de software. O Cargo permite que você baixe bibliotecas de software que você encontrou na internet para seus projetos. Por exemplo, o Hack Clubber [@anirudhb](https://github.com/anirudhb) usou a biblioteca [Serenity](https://crates.io/crates/serenity) para interagir com o Discord de uma maneira muito mais fácil.
 
-- **Distribuir seus programas**: Compartilhar é cuidar! O **Cargo** também pode ajudá-lo a publicar seu código no [crates.io](https://crates.io){:target="_blank"} junto com alguns detalhes adicionais que explicarei daqui a pouco. É particularmente útil em situações em que você deseja ser creditado por seu trabalho ou se você quiser usar [versões](https://pt.wikipedia.org/wiki/Versionamento_de_software){:target="_blank"}. Todos estes detalhes estão incluídos no arquivo `Cargo.toml`, que explicarei em pouco tempo.
+- **Distribuir seus programas**: Compartilhar é cuidar! O **Cargo** também pode ajudá-lo a publicar seu código no [crates.io](https://crates.io) junto com alguns detalhes adicionais que explicarei daqui a pouco. É particularmente útil em situações em que você deseja ser creditado por seu trabalho ou se você quiser usar [versões](https://pt.wikipedia.org/wiki/Versionamento_de_software). Todos estes detalhes estão incluídos no arquivo `Cargo.toml`, que explicarei em pouco tempo.
 
 ### Parte 2.1: O Manifesto (Cargo.toml)
 
@@ -76,13 +76,13 @@ Se você quiser adicionar mais de um autor, você deve separar cada autor com um
 authors = ["João Silva <joao.silva@exemplo.com>", "Maria Silva <maria.silva@exemplo.com>"]
 ```
 
-Há também alguns items adicionais como _tables_ e _keys_ que você deve dar uma olhada, tais como `license` ou `[[bin]]`. Você pode ler mais sobre o manifesto aqui: [https://doc.rust-lang.org/cargo/reference/manifest.html](https://doc.rust-lang.org/cargo/reference/manifest.html){:target="_blank"}
+Há também alguns items adicionais como _tables_ e _keys_ que você deve dar uma olhada, tais como `license` ou `[[bin]]`. Você pode ler mais sobre o manifesto aqui: [https://doc.rust-lang.org/cargo/reference/manifest.html](https://doc.rust-lang.org/cargo/reference/manifest.html)
 
 ## Parte 3: Começando com o Rust 💫
 
 Viva! Agora que a burocracia está fora do caminho, podemos finalmente chegar à parte divertida: Escrever código!
 
-Para começar, vamos começar com algo simples para nos aconchegar escrevendo um programa ["Olá, Mundo!"](https://pt.wikipedia.org/wiki/Programa_Ol%C3%A1_Mundo){:target="_blank"}.
+Para começar, vamos começar com algo simples para nos aconchegar escrevendo um programa ["Olá, Mundo!"](https://pt.wikipedia.org/wiki/Programa_Ol%C3%A1_Mundo).
 
 Se você está familiarizado com o essencial da programação e do Rust, sinta-se à vontade para pular esta seção.
 
@@ -187,7 +187,7 @@ Eu sei que isto é bastante para absorver, mas não se preocupe! Vamos passar pe
 
 - `fn prompt() -> bool {`
 
-  Todas as funções destinam-se a devolver alguma saída, que é visível para o jogador, para outros programas ou partes do mesmo programa. Neste caso, definimos uma nova função chamada `prompt()`, que retornará um valor conhecido como `bool`, que significa "boolean" (booleano). Os tipos de dados booleanos só podem aceitar dois valores, que são denotados com as palavras `true` (verdadeiro) ou `false` (falso) na linguagem de programação Rust. Eles recebem o nome do matemático George Boole e são possivelmente a instância mais simples da [álgebra booliana](https://pt.wikipedia.org/wiki/%C3%81lgebra_booliana){:target="_blank"} no campo da ciência da computação.
+  Todas as funções destinam-se a devolver alguma saída, que é visível para o jogador, para outros programas ou partes do mesmo programa. Neste caso, definimos uma nova função chamada `prompt()`, que retornará um valor conhecido como `bool`, que significa "boolean" (booleano). Os tipos de dados booleanos só podem aceitar dois valores, que são denotados com as palavras `true` (verdadeiro) ou `false` (falso) na linguagem de programação Rust. Eles recebem o nome do matemático George Boole e são possivelmente a instância mais simples da [álgebra booliana](https://pt.wikipedia.org/wiki/%C3%81lgebra_booliana) no campo da ciência da computação.
 
 - `let mut entrada = String::new();`
 
@@ -266,7 +266,7 @@ fn main() {
 }
 ```
 
-Você pode ler mais sobre os módulos Rust aqui: [https://doc.rust-lang.org/rust-by-example/mod.html](https://doc.rust-lang.org/rust-by-example/mod.html){:target="_blank"}
+Você pode ler mais sobre os módulos Rust aqui: [https://doc.rust-lang.org/rust-by-example/mod.html](https://doc.rust-lang.org/rust-by-example/mod.html)
 
 O Rust é instruído a executar a função chamada `intro`, que é exportada do `prompts`. Esta é uma função **associada**. Mas, atualmente, ela não existe. Vamos implementá-la agora?
 
@@ -391,7 +391,7 @@ Além dos comentários no próprio código, há alguns detalhes importantes a se
 
 Parabéns! Você acaba de escrever seu primeiro jogo em Rust. 🎉
 
-![GIF de um personagem de cinema dizendo "Bem-vindo ao clube!" dentro de um clube, do filme "Scott Pilgrim vs. O Mundo"](https://hack.af/welcome){:target="_blank"}
+![GIF de um personagem de cinema dizendo "Bem-vindo ao clube!" dentro de um clube, do filme "Scott Pilgrim vs. O Mundo"](https://hack.af/welcome)
 
 ### Parte 5: Ideias! 💡
 
@@ -405,18 +405,18 @@ Aqui estão um monte de ideias que o ajudarão a dar um passo além:
 
 Aqui estão algumas dicas (em inglês):
 
-- [The Rust Programming Language - Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html){:target="_blank"}
-- [The Rust Programming Language - Patterns and Matching](https://doc.rust-lang.org/book/ch18-00-patterns.html){:target="_blank"}
-- [Are we game yet?](https://arewegameyet.rs){:target="_blank"}
+- [The Rust Programming Language - Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
+- [The Rust Programming Language - Patterns and Matching](https://doc.rust-lang.org/book/ch18-00-patterns.html)
+- [Are we game yet?](https://arewegameyet.rs)
 
-Você também pode conferir [este remix](https://repl.it/@hcbjcentro/StickerQuest-PT-BR){:target="_blank"} do código fonte deste workshop caso você fique preso, que implementa algumas das ideias apresentadas:
+Você também pode conferir [este remix](https://repl.it/@hcbjcentro/StickerQuest-PT-BR) do código fonte deste workshop caso você fique preso, que implementa algumas das ideias apresentadas:
 
 ### Parte 6: Leitura adicional 📖
 
-- [The Rust Programming Language - an in-depth guide to Rust. Este workshop foi inspirado no Capítulo 2 do livro](https://doc.rust-lang.org/book){:target="_blank"}
-- [Rust By Example - Para aqueles que preferem exemplos de código em vez de páginas de documentação](https://doc.rust-lang.org/stable/rust-by-example/){:target="_blank"}
-- [Rust's learning resources page - incluindo guias para cursos avançados sobre outros tópicos](https://www.rust-lang.org/learn){:target="_blank"}
+- [The Rust Programming Language - an in-depth guide to Rust. Este workshop foi inspirado no Capítulo 2 do livro](https://doc.rust-lang.org/book)
+- [Rust By Example - Para aqueles que preferem exemplos de código em vez de páginas de documentação](https://doc.rust-lang.org/stable/rust-by-example/)
+- [Rust's learning resources page - incluindo guias para cursos avançados sobre outros tópicos](https://www.rust-lang.org/learn)
 
-Você também pode estar interessado em ouvir [a mixtape do Charalampos](https://hackropolis.club/mixtape){:target="_blank"}. Propaganda sem vergonha, eu sei.
+Você também pode estar interessado em ouvir [a mixtape do Charalampos](https://hackropolis.club/mixtape). Propaganda sem vergonha, eu sei.
 
 Agora que você terminou de construir este maravilhoso projeto, compartilhe sua bela criação com outras pessoas! Lembre-se, é só mandar a URL do seu projeto!
