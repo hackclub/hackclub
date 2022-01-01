@@ -1,5 +1,5 @@
 ---
-title: 'App de Tarefas'
+name: 'App de Tarefas'
 description: 'Crie um app de tarefas full-stack usando React e Firebase'
 author: '@giridhar7632, @vitorvavolizza'
 img: 'https://cloud-2nf3f60u4.vercel.app/0todo_app.png'
@@ -11,7 +11,7 @@ A combinação do React e do Firebase pode levar os aplicativos da web a um nív
 
 Vamos construir algo semelhante a isso. 👇
 
-![App de Tarefas Final](img/final.PNG)
+![App de Tarefas Final](https://cloud-2nf3f60u4.vercel.app/0todo_app.png)
 
 Confira a [demo ao vivo](https://app-de-tarefas-inicial.vitorvavolizza.repl.co/) e o [código-fonte](https://repl.it/@VitorVavolizza/app-de-tarefas-final#src/App.js).
 
@@ -34,7 +34,7 @@ Ele contém `create-react-app` e `firebase` instalados. Ele também contém todo
 
 Após a instalação, pressione o botão `Run` na parte superior. Se seu projeto estiver assim, está pronto para prosseguir.
 
-![projeto inicial](img/inicial.PNG)
+![projeto inicial](https://cloud-5vj1vtivl.vercel.app/0todo-starter-template.png)
 
 ## Criação de um projeto Firebase
 
@@ -48,15 +48,15 @@ O **Firebase Realtime Database** é hospedado na nuvem. Os dados são armazenado
 
 Abra o [Firebase](https://firebase.google.com); depois de entrar, clique em `Ir para o console` no canto superior direito.
 
-![firebase.com](img/console.PNG)
+![firebase.com](https://cloud-swc0vwpr0.vercel.app/2firebase.png)
 
 Em seu console, se você ainda não tem nenhum projeto, ele estará limpo e vazio. Clique em `Create Project` para adicionar um novo projeto.
 
-![Firebase console](img/comecando.PNG)
+![Firebase console](https://cloud-swc0vwpr0.vercel.app/0firebase_console.png)
 
 Conclua todas as etapas para criar um projeto Firebase. Nomeie seu projeto como desejar.
 
-![Etapa 1](img/nome-app.PNG)
+![Etapa 1](https://cloud-swc0vwpr0.vercel.app/6step-1.png)
 
 Depois de dar um nome ao seu projeto, clique no botão `Continue` para prosseguir. Esta é uma etapa opcional para usar o Google Analytics em seu projeto, mas você não precisará dela neste workshop. Clique em `Continue`.
 
@@ -64,11 +64,11 @@ Depois de dar um nome ao seu projeto, clique no botão `Continue` para prossegui
 
 Finalmente, clique em `Criar Projeto`.
 
-![Etapa 3](img/analytics.PNG)
+![Etapa 3](https://cloud-swc0vwpr0.vercel.app/8step-3.png)
 
 🎉 Bingo!!! Seu projeto Firebase será criado. Você deveria ver algo assim.
 
-![Projeto criado](img/app-pronto.PNG)
+![Projeto criado](https://cloud-swc0vwpr0.vercel.app/3project_created.png)
 
 Clique no botão `Continue`.
 
@@ -78,11 +78,11 @@ Agora, vamos configurar nosso projeto com o Firebase.
 
 Clique no ícone `(</>)` da Web.
 
-![Visão geral do projeto](img/cod.PNG)
+![Visão geral do projeto](https://cloud-swc0vwpr0.vercel.app/4project_overview.png)
 
 Registre seu projeto com um nome.
 
-![Register name](img/inicio-app.PNG)
+![Register name](https://cloud-swc0vwpr0.vercel.app/5register_app.png)
 
 Essas são as credenciais do seu aplicativo. Este código ajudará seu projeto a se conectar ao projeto do Firebase.
 
@@ -118,7 +118,7 @@ Agora vamos criar um banco de dados para nosso aplicativo.
 
 Abra o console do projeto Firebase. Clique em `Realtime Database` na seção `Build` na barra lateral esquerda.
 
-![Barra lateral do projeto](img/realtime-db.PNG)
+![Barra lateral do projeto](https://cloud-9uzz77u17.vercel.app/4project_overview-1.png)
 
 Você verá algo assim. Clique no botão `Create Database`.
 
@@ -130,11 +130,11 @@ Utilize `Start in Test Mode` e clique em `Enable`.
 
 Em seguida, seu Realtime Database será criado e iniciado com `null` (nada).
 
-![Realtime Database](img/null.PNG)
+![Realtime Database](https://cloud-9uzz77u17.vercel.app/2database.png)
 
 O Firebase permite inicialmente que qualquer pessoa leia e grave o banco de dados por 30 dias. Você pode editar as regras a qualquer momento na aba `Rules`.
 
-![Regras](img/rules.PNG)
+![Regras](https://cloud-9uzz77u17.vercel.app/1database_rules.png)
 
 Agora que temos um banco de dados, vamos criar um aplicativo de tarefas usando esse banco de dados.
 
@@ -345,11 +345,11 @@ function App() {
 export default App;
 ```
 
-![Saída com texto](img/primeira-tarefa.PNG)
+![Saída com texto](https://cloud-792qf1oid.vercel.app/0input.js.png)
 
 Parece que funciona, não é?
 
-![Banco de dados](img/primeira-tarefa-2.PNG)
+![Banco de dados](https://cloud-792qf1oid.vercel.app/1input_to_database.png)
 
 Os dados que você adicionou por meio de `input` serão adicionados à nossa Firebase Database! Sensacional!
 
@@ -622,7 +622,7 @@ export default Tarefa
 
 Agora, nossas tarefas concluídas serão estilizadas devidamente.
 
-![riscadas](img/riscado.PNG)
+![riscadas](https://cloud-792qf1oid.vercel.app/5struckoff.png)
 
 Vamos adicionar funcionalidade ao nosso botão `deletar`.
 
