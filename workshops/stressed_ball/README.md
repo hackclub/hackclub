@@ -2,14 +2,13 @@
 name: 'Reverse Workshop: Stressed Ball'
 description: 'learn to code like real programmers, by looking everything up'
 author: '@leomcelroy'
+img: 'https://cloud-4h5kwjg61-hack-club-bot.vercel.app/0demo.png'
+locales: 'es-xl'
 ---
 
 Today let’s try to make this stressed out little ball.
 
-<video 
-       src="https://user-images.githubusercontent.com/27078897/140573691-491e7111-41e6-4c84-a0f9-d5eb405478ce.mov"
-       width="80%" controls>
-</video>
+![Stressed Ball](https://cloud-hgjwh224h-hack-club-bot.vercel.app/0gif_1.gif)
 
 It's a little colored circle that moves around the screen.
 
@@ -87,7 +86,7 @@ To help get you along I'll give you some targets that break down the project, an
 - **Be explicit.** Tell yourself out loud what you want to do in plain english before doing it in code. All good code starts with good thoughts.
 - **Use the browser tools.** Open up the DevTools to use the JavaScript console and HTML inspector. Helpful error messages will be logged in the console. You can do this by right clicking and pressing inspect element.
 - **Mess with stuff.** If you are curious what something is try changing it and see what happens. All of the numbers can be clicked and dragged.
-- **Look stuff up.** There are a number of prompts for questions `written like this`try Googling them.
+- **Look stuff up.** There are a number of prompts for questions `written like this` try Googling them.
 
 ## Landmarks
 
@@ -104,7 +103,7 @@ When you get your circle on the screen, try and decipher what the code is doing 
 
 ### Color your circle
 
-![Screen Shot 2021-11-02 at 12.23.35 PM.png](https://cloud-frxdc2f2o-hack-club-bot.vercel.app/2screen_shot_2021-11-02_at_12.23.35_pm.png)
+![Colored circle](https://cloud-frxdc2f2o-hack-club-bot.vercel.app/2screen_shot_2021-11-02_at_12.23.35_pm.png)
 
 There are lots of ways to describe colors in code, like: 
 
@@ -125,10 +124,7 @@ Your color will probably be in a [string](https://developer.mozilla.org/en-US/do
 
 ### Move your circle
 
-<video 
-       src="https://user-images.githubusercontent.com/27078897/140573485-cab505f7-cd00-4076-8322-152b70285170.mov"
-       width="80%" controls>
-</video>
+![Circle moving](https://cloud-hgjwh224h-hack-club-bot.vercel.app/1gif_2.gif)
 
 You'll want to use variables, like this:
 
@@ -144,39 +140,27 @@ You'll want to use variables, like this:
 
 Let's stop the ball from running away off the screen. So how do we get from this
 
-<video 
-       src="https://user-images.githubusercontent.com/27078897/140573529-2d6162e7-d1ad-44e4-8e7b-768d92282258.mov"
-       width="80%" controls>
-</video>
+![Circle moving diagonally](https://cloud-hgjwh224h-hack-club-bot.vercel.app/2gif_3.gif)
 
 to this
 
-<video 
-       src="https://user-images.githubusercontent.com/27078897/140573601-f42c7904-df40-4733-9b95-c7b38d3ca5c2.mov"
-       width="80%" controls>
-</video>
+![Circle moving diagonally](https://cloud-hgjwh224h-hack-club-bot.vercel.app/3gif_4.gif)
 
 or this
 
-<video 
-       src="https://user-images.githubusercontent.com/27078897/140573643-b69d0b8f-4bfd-455d-9289-1bbe74cb3f9d.mov"
-       width="80%" controls>
-</video>
+![Circle moving diagonally then bouncing](https://cloud-hgjwh224h-hack-club-bot.vercel.app/4gif_5.gif)
 
 **Questions**
 
-- What values correspond to the left, right, top and bottom of the screen?
-- How can we get something to wrap around?
-- How do we control the direction of movement?
+- `What values correspond to the left, right, top and bottom of the screen?`
+- `How can we get something to wrap around?`
+- `How do we control the direction of movement?`
 - `How to use conditionals in js?`
 - `How to use modulo arithmetic in js?`
 
 ### Spruce it up
 
-<video 
-       src="https://user-images.githubusercontent.com/27078897/140573691-491e7111-41e6-4c84-a0f9-d5eb405478ce.mov"
-       width="80%" controls>
-</video>
+![Circle moving diagonally while changing it's color](https://cloud-hgjwh224h-hack-club-bot.vercel.app/5gif_6.gif)
 
 Add some randomness to x and y
 
@@ -187,6 +171,8 @@ Have the color change with position, here is a simple example of string interpol
 ```html
 `hsl(${number}, 60%, 80%)`
 ```
+
+**Questions**
 
 - `string interpolation in js`
 - `hsl coloring`
