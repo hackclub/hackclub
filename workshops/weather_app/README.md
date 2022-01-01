@@ -3,6 +3,7 @@ name: 'Weather App'
 description: 'Making a Weather App using HTML, CSS and JavaScript'
 author: '@gautamjajoo'
 img: 'https://cloud-w7f0jvahc.vercel.app/0weather-app.png'
+locales: 'pt-br'
 ---
 
 Are you a beginner in JavaScript and don't know where to get started? If yes, you're in the right place! Being a beginner in coding and having to learn the fundamentals can be very painful—but the best way to learn is to make fun, simple projects! In this workshop, you'll build an app that uses web APIs to get the weather for any city.
