@@ -2,6 +2,7 @@
 name: 'Sound Galaxy'
 description: 'Visualize sound by making particles move in a galaxy'
 author: '@MatthewStanciu'
+locales: 'pt-br'
 ---
 
 Sound visualization is one of the coolest things that modern-day web development tools have made accessible. There’s something surreal and indescribably satisfying about _seeing_ the sounds around you on your screen and somehow understanding what you’re seeing.
