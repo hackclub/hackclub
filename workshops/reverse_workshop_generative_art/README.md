@@ -2,13 +2,14 @@
 name: 'Reverse Workshop: Generative Art'
 description: 'use a toolbox of examples to compose dynamic art pieces'
 author: '@leomcelroy'
+locales: 'es-xl'
 ---
 
 # Reverse Workshop: Generative Art
 
 Let's create something like this:
 
-https://user-images.githubusercontent.com/27078897/141502788-e4687f86-2d43-458b-a524-c420fba09ffd.mov
+![Workshop's target project](https://cloud-7m2tx179d-hack-club-bot.vercel.app/0gif1.gif)
 
 This is another reverse workshop, instead of telling you how to make something step-by-step I'm going to give you some inspiration and the materials you need to make it.
 
@@ -28,7 +29,7 @@ A few tips:
 
 Click on "Examples" > "Canvas Starter"
 
-<img width="1204" alt="Screen_Shot_2021-11-12_at_11 30 11_AM" src="https://user-images.githubusercontent.com/27078897/141502840-742144d2-8b45-4254-8e87-d4bad254a74e.png">
+<img width="1204" alt="Examples window" src="https://user-images.githubusercontent.com/27078897/141502840-742144d2-8b45-4254-8e87-d4bad254a74e.png">
 
 ## Examples
 
@@ -36,7 +37,7 @@ Click on "Examples" > "Canvas Starter"
 
 Copy code snippets from these examples to compose your drawing. 
 
-<img width="1185" alt="Screen_Shot_2021-11-12_at_11 30 45_AM" src="https://user-images.githubusercontent.com/27078897/141502874-ae243edd-2c53-46bf-a31c-d437d1a343ae.png">
+<img width="1185" alt="Examples page" src="https://user-images.githubusercontent.com/27078897/141502874-ae243edd-2c53-46bf-a31c-d437d1a343ae.png">
 
 If you're having trouble getting something interesting to happen you can take a look at [this example](https://hackclub.github.io/live-editor/?file=rec0dC5MA1jcNF7hP). But be **warned** it may spoil some of the fun of figuring out how to do it yourself.
 

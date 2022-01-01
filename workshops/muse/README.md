@@ -3,6 +3,7 @@ name: 'Jamming with Muse'
 description: 'Compose music with code'
 author: '@leomcelroy'
 img: "https://cloud-9ltsqwncl-hack-club-bot.vercel.app/0demo.png"
+locales: 'es-xl'
 ---
 
 # Muse
