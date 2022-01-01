@@ -3,6 +3,7 @@ name: 'KanyeRest Quote Generator'
 description: 'Make a quote generator with Flask '
 author: '@s1ntaxe770r'
 img: 'https://cloud-57v29xozt.vercel.app/0screen_shot_2020-12-07_at_5.26.13_pm.png'
+locales: 'pt-br'
 ---
 
 So you listened to "Mercy", "Flashing Lights" and "FourFiveSeconds". Now you're looking for inspiration from Kanye? Yeah me too!! In this workshop, you will build a Kanye quote generator. By the end of this workshop, you will learn how to do three things:
