@@ -3,6 +3,7 @@ name: 'Tic Tac Toe'
 description: 'Make the Classic Tic Tac Toe Game in Python'
 author: '@Prithul0218'
 img: 'https://cloud-48w32714h.vercel.app/0image.png'
+locales: 'pt-br'
 ---
 
 Tic Tac Toe is a game that most of us have played when we were bored in class. It's also a classic coding challenge when learning a new programming language. As complicated as it may seem at first, it's actually rather easy to code and takes less than 80 lines.
