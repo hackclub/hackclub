@@ -194,7 +194,7 @@ Now we will check whether or not the password the user initially inputted is the
 Under the `print()` statement, still in the for loop, add:
 
 ```py
-if(hash_data == line):
+if(pwd == line):
   print(FColor.GREEN + "Correct Password")
 else:
   print(FColor.RED + f'Incorrect Password')
