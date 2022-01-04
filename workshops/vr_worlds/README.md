@@ -3,7 +3,9 @@ name: 'VR World'
 description: 'Create your own VR World'
 author: '@wollygfx'
 img: 'https://cloud-p6nx5mns7.vercel.app/0image.png'
+locales: 'pt-br'
 ---
+
 In this workshop, you'll learn how to create your own VR World using [A-Frame](https://aframe.io/), a web framework for building 3D/AR/VR experiences.
 
 Here is the [live demo](https://vr-world.wollygfx.repl.co/) and the [source code](https://repl.it/@wollygfx/VR-World#index.html) of what we are making:
