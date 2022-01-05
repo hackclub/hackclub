@@ -1,7 +1,7 @@
 ---
 name: 'Password Generation with Python'
 description: 'Learn about cybersecurity by making a password generator in Python!'
-author: '@saneduck'
+author: '@0-0hyun'
 img: 'https://cloud-mkfjdskv8.vercel.app/068747470733a2f2f636c6f75642d6f763636733978726c2e76657263656c2e6170702f30616e73695f73616d706c655f70726f6772616d5f6f75747075742e706e67.png'
 ---
 
