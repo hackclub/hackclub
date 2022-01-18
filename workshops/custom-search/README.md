@@ -2,6 +2,7 @@
 name: Rajan Agarwal
 description: A custom search engine 
 author: '@rajan'
+img: 'https://cloud-9273tibqr-hack-club-bot.vercel.app/0demo.png'
 ---
 
 # Custom Search
