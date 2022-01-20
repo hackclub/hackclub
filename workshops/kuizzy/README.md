@@ -1,7 +1,7 @@
 ---
 name: Kahoot Clone — Kuizzy
 description: Make a Kahoot clone with SweetAlert, WebSockets, and Node.js
-author: '@KhushrajRathod'
+author: '@khrj'
 img: https://cloud-b0r4v3fgu.vercel.app/0screenshot_2020-12-31_at_3.22.47_pm.png
 ---
 
