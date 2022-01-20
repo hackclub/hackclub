@@ -1,7 +1,7 @@
 ---
 name: Slack Todo List
 description: Make a todo list Slack bot with Node.js and Bolt
-author: '@KhushrajRathod'
+author: '@khrj'
 img: https://cloud-2xos4hsas.vercel.app/0screenshot_2020-11-16_at_1.00.14_pm.png
 ---
 
