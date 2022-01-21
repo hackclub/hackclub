@@ -43,7 +43,6 @@ This will reference the image with it's corresponding styling! Feel free to add 
 Now, we need to create a section for the content to appear! Add the following right below the `</div>`
 
 ```html
-<div style="height: 300px;"></div>
 <div id="buttons" class="buttons">
   <button id="allbutton" class="all" onclick="submit()"></button>
 </div>
