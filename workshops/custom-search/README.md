@@ -35,8 +35,8 @@ This will reference the image with it's corresponding styling! Feel free to add 
 
 ```html
 <div class="search">
-<input type="text" id="search" class="input">
-<button id="submit" class="searchbtn" onclick="submit()">Search</button>
+  <input type="text" id="search" class="input">
+  <button id="submit" class="searchbtn" onclick="submit()">Search</button>
 </div>
 ```
 
@@ -45,7 +45,7 @@ Now, we need to create a section for the content to appear! Add the following ri
 ```html
 <div style="height: 300px;"></div>
 <div id="buttons" class="buttons">
-<button id="allbutton" class="all" onclick="submit()"></button>
+  <button id="allbutton" class="all" onclick="submit()"></button>
 </div>
 <div id="content"></div>
 ```
@@ -62,14 +62,13 @@ Finally, let's reference the javascript files to connect the queries to the web!
 Awesome—the interface is complete! Now let's fetch some queries. In your `query.js` file, you should see a function that calls `submit()`. Within that function, paste the following code:
 
 ```javascript
-  document.getElementById('buttons').style.display = 'block';
-  document.getElementById('content').innerHTML = '';
-  var val = document.getElementById('search').value;
-  var newelement = document.createElement('script');
-  newelement.src = `https://www.googleapis.com/customsearch/v1?key=API_KEY&cx=003606982592251140240:5xbiwoxb3m0&q=${val}&callback=hndlr`;
-  newelement.id = 'mainscript';
-  document.body.appendChild(newelement);
-
+document.getElementById('buttons').style.display = 'block';
+document.getElementById('content').innerHTML = '';
+var val = document.getElementById('search').value;
+var newelement = document.createElement('script');
+newelement.src = `https://www.googleapis.com/customsearch/v1?key=API_KEY&cx=003606982592251140240:5xbiwoxb3m0&q=${val}&callback=hndlr`;
+newelement.id = 'mainscript';
+document.body.appendChild(newelement);
 ```
 
 Now, we need to set up the Google Search API! To get started, head on over to [Google's Developer Portal](https://developers.google.com/custom-search/v1/overview) and make sure that you are logged in. Once complete, scroll down to `Get a Key` and create a project called `Search`. Once you click `next`, copy your API key and click `Done`. In your query.js file, you will see a variable called `newelement.src`. Where it says `API_KEY`, paste in your API Key and you're good to go!
@@ -103,16 +102,29 @@ try {
 Essentially, the function will try some code, and if it does not work, will catch & output an error. Within the `try` function, add the following code:
 
 ```javascript
-document.getElementById('content').innerHTML += `<div style="color: grey;">Holy Moly! About ${response.searchInformation.formattedTotalResults} results in ${response.searchInformation.formattedSearchTime} seconds!</div>`
+document.getElementById('content').innerHTML += `
+  <div style="color: grey;">
+    Holy Moly! About ${response.searchInformation.formattedTotalResults} results in ${response.searchInformation.formattedSearchTime} seconds!
+  </div>`
 ```
 
 This fetches the amount of results and the time it took to retreive, just like how you see on Google! Then, to fetch the actual information, add the following to your `try` function:
 
 ```javascript
 
-for (var i = 0; i < response.items.length; i++) { document.getElementById('content').innerHTML += `<div style="align-items: center;"><br><a style="color: grey; font-size: 12px; text-decoration: none;" href=${response.items[i].link} target="_blank">${response.items[i].link}</a><a target="_blank" href=${response.items[i].link} style="text-decoration: none;"><h2 style="margin-top: 2px;">${response.items[i].title}</h2></a><div style="margin-top: -8px;">${response.items[i].htmlSnippet}</div></div>`;
-    }
-
+for (var i = 0; i < response.items.length; i++) { 
+  document.getElementById('content').innerHTML += `
+  <div style="align-items: center;">
+    <br>
+    <a style="color: grey; font-size: 12px; text-decoration: none;" href=${response.items[i].link} target="_blank">${response.items[i].link}</a>
+    <a target="_blank" href=${response.items[i].link} style="text-decoration: none;">
+      <h2 style="margin-top: 2px;">${response.items[i].title}</h2>
+    </a>
+    <div style="margin-top: -8px;">
+      ${response.items[i].htmlSnippet}
+    </div>
+  </div>`;
+}
 ```
 
 Wahoo! Now, your code will fetch the `link`, `title` and `htmlSnippet` to display for each query. To output any errors, add the following to the `catch` function:
