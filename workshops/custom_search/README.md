@@ -1,6 +1,6 @@
 ---
-name: Rajan Agarwal
-description: A custom search engine 
+name: Custom Search Engine
+description: Build a personalized search engine with Google's Search API
 author: '@rajanwastaken'
 img: 'https://cloud-9273tibqr-hack-club-bot.vercel.app/0demo.png'
 ---
