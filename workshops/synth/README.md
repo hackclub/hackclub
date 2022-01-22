@@ -3,6 +3,7 @@ name: 'Synth'
 description: 'Let’s make a synth pad with Tone.js'
 author: '@polytroper'
 begin: 'https://repl.it/languages/html'
+img: 'https://cloud-eauokmvh8-hack-club-bot.vercel.app/0demo-6.png'
 ---
 
 # Synth Pad
