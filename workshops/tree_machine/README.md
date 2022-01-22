@@ -3,6 +3,7 @@ name: 'Tree Machine'
 description: 'Generate virtual trees with p5'
 author: '@polytroper'
 begin: 'https://repl.it/@polytrope/tree-machine-starter'
+img: 'https://cloud-bor29hmzm-hack-club-bot.vercel.app/0demo-5.png'
 ---
 
 Guess what friends, today we’re making _trees_. That’s right, NATURE.
