@@ -148,7 +148,7 @@ Just to add some clarity to our currently blank webpage:
 Let's say we want to change the code.
 
 1. Make sure you have a preview of the `index.html` open
-2. Then open `main.js` and change `Twilio.sendMessage` to `Twilio.callAndSay` ![](img/change_send_message_to_call_and_say.gif)
+2. Then open `main.js` and change `Twilio.sendMessage` to `Twilio.callAndSay` ![](https://cloud-fcoou1sd1-hack-club-bot.vercel.app/0change_send_message_to_call_and_say.gif)
 3. Save your `main.js` file by clicking **"File"** → **"Save"** (or use the shortcut **CTRL + S / Command + S**)
    - Notice that when you save, the page flashes. This means that the page is refreshing and each time your page refreshes, it runs your JavaScript code again. In this case this sends you a text message.
 
