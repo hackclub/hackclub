@@ -23,7 +23,7 @@ Here, we are using the DHT22 Temperature and Humidity sensor with Arduino Uno R3
 
 ## DHT22 Pin Configuration
 
-![](https://cloud-cxpknxrmi-hack-club-bot.vercel.app/3dht22-pinout.jpg)
+![Pin 1 is VCC, Pin 2 is DATA, Pin 3 is NC, Pin 4 is GND](https://cloud-cxpknxrmi-hack-club-bot.vercel.app/3dht22-pinout.jpg)
 
 ## Steps
 
@@ -31,7 +31,7 @@ Here, we are using the DHT22 Temperature and Humidity sensor with Arduino Uno R3
 1. Pin `2` is for data, connect it to digital Pin `7`.
 1. And finally connect Pin `4` to `GND`
 
-![](https://cloud-cxpknxrmi-hack-club-bot.vercel.app/0arduino.jpg)
+![A photo with an Arduino and the above PIN layout](https://cloud-cxpknxrmi-hack-club-bot.vercel.app/0arduino.jpg)
 
 ## The Arduino Sketch
 
@@ -82,8 +82,8 @@ void loop()
 
 Open the Serial Monitor to see the output
 
-![](https://cloud-cxpknxrmi-hack-club-bot.vercel.app/2serial_monitor.png)
+![Serial Monitor is in the tools menu](https://cloud-cxpknxrmi-hack-club-bot.vercel.app/2serial_monitor.png)
 
 ## Here's how my output screen looks like :)
 
-![](https://cloud-cxpknxrmi-hack-club-bot.vercel.app/1dht-22_output.jpg)
+![Serial monitor with output of temperature and ](https://cloud-cxpknxrmi-hack-club-bot.vercel.app/1dht-22_output.jpg)
