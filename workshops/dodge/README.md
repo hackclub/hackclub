@@ -713,9 +713,9 @@ Feel free to customize the enemy's rotation speed to make it faster/slower!
 
 You're done, yay! The game you made is live at the URL above the preview in the editor:
 
-![](https://cloud-en831u68d-hack-club-bot.vercel.app/4preview.gif)
+![Click open in new tab button](https://cloud-en831u68d-hack-club-bot.vercel.app/4preview.gif)
 
-Don't forget to share a link to your beautiful creation on the Slack on the [`#shipit`](https://hackclub.slack.com/messages/shipit) channel!
+Don't forget to share a link to your beautiful creation on the Slack on the [`#ship`](https://hackclub.slack.com/messages/ship) channel!
 
 ## Part IV. Hacking
 
