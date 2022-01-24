@@ -2,13 +2,13 @@
 name: Geometric Pattern
 description: Generate geometric patterns using p5.js
 author: '@jkwok91'
+img: "https://cloud-q9b58bgf7-hack-club-bot.vercel.app/1sample1.png"
 ---
 
 # Geometric Pattern
 
-| What you'll build    |
-| -------------------- |
-| ![](https://cloud-q9b58bgf7-hack-club-bot.vercel.app/1sample1.png) |
+What you'll build
+![](https://cloud-q9b58bgf7-hack-club-bot.vercel.app/1sample1.png)
 
 Links to a live demo and the final code below. This workshop should take around 1 hour.
 
