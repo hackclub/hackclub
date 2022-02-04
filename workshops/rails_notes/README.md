@@ -167,7 +167,7 @@ When you're done, commit to Git.
 
 Now, open the URL you copied in a new tab. Your app is live! Anyone can publish notes on your new website.
 
-If you want, show it off on [Slack](https://hackclub.slack.com)'s `#shipit` channel 🙂
+If you want, show it off on [Slack](https://hackclub.slack.com)'s `#ship` channel 🙂
 
 Finally, and push your work today to GitHub:
 
