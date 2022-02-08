@@ -7,9 +7,9 @@ img: "https://cloud-en831u68d-hack-club-bot.vercel.app/7demo.png"
 
 # Dodge
 
-| What you'll build       |
-| ----------------------- |
-| ![brown objects falling from the sky while dinosaur moves horizontally across the screen](https://cloud-en831u68d-hack-club-bot.vercel.app/1final_demo.gif) |
+What you'll build:
+
+![brown objects falling from the sky while dinosaur moves horizontally across the screen](https://cloud-en831u68d-hack-club-bot.vercel.app/1final_demo.gif)
 
 Links to a live demo and the final code below. This workshop should take around 1 hour and 15 minutes.
 
