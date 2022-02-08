@@ -6,9 +6,9 @@ author: '@jkwok91'
 
 # Platformer
 
-| What you'll build       |
-| ----------------------- |
-| ![Square particles moving in a game](https://cloud-96b8dye2c-hack-club-bot.vercel.app/0final_demo.gif) |
+What you'll build:
+
+![Square particles moving in a game](https://cloud-96b8dye2c-hack-club-bot.vercel.app/0final_demo.gif)
 
 _We recommend going through this workshop in Google Chrome._
 
