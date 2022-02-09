@@ -17,7 +17,9 @@ We are then going to add a character.
 
 First we need to make a sprite asset in the sprite editor.
 
-Click "Create Sprite".
+Click "Create Sprite" and draw your character.
+
+<img width="1346" alt="Screen Shot 2022-02-09 at 1 52 20 PM" src="https://user-images.githubusercontent.com/27078897/153272367-af4f5891-7f2c-4fd1-8086-fae9f9a17dd7.png">
 
 We can add our bird by using the `add` property on the engine.
 
@@ -31,8 +33,33 @@ e.add({
 })
 ```
 
-`add` takes a lot of optional parameters which you can find in the reference pop-out.
+<img width="1345" alt="Screen Shot 2022-02-09 at 1 52 37 PM" src="https://user-images.githubusercontent.com/27078897/153272449-40e14687-d69e-4a16-b84a-309d89322c85.png">
 
+`add` takes a lot of optional parameters which you can find in the "Reference" pop-out (the question mark button).
+
+We use `scale` to size up the sprite.
+
+Next let's add some walls.
+
+```js
+e.add({
+  sprite: wall,
+  scale: 7,
+  x: 100,
+  y: 500,
+})
+
+e.add({
+  sprite: wall,
+  scale: 7,
+  x: 100,
+  y: 200,
+})
+```
+
+That should result in something that looks like this.
+
+<img width="375" alt="Screen Shot 2022-02-09 at 1 52 54 PM" src="https://user-images.githubusercontent.com/27078897/153272793-15ce11e2-cf40-4fb5-a77e-7f315dab5207.png">
 
 ```js
 const e = createEngine(gameCanvas, 300, 300);
