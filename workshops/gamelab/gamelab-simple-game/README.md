@@ -1,6 +1,6 @@
 ---
 name: 'Game Lab: Dino-ish Jump'
-description: 'Make a Game in the HacK Club Game Lab'
+description: 'Make a Game in the Hack Club Game Lab'
 author: '@leomcelroy'
 img: "https://user-images.githubusercontent.com/27078897/153313648-ee21e62f-638d-41be-81a0-00c903b9ad12.png"
 ---
