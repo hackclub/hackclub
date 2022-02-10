@@ -1,5 +1,5 @@
 ---
-name: 'Game Lab: Dino-ish Jump'
+name: 'Game Lab: Dino Jump'
 description: 'Make a Game in the Hack Club Game Lab'
 author: '@leomcelroy'
 img: "https://user-images.githubusercontent.com/27078897/153313648-ee21e62f-638d-41be-81a0-00c903b9ad12.png"
