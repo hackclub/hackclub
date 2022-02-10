@@ -9,6 +9,8 @@ Let's make a game in the Hack Club Game Lab!
 
 ![IMAGE OF GAME LAB](https://user-images.githubusercontent.com/27078897/153313648-ee21e62f-638d-41be-81a0-00c903b9ad12.png)
 
+## Walkthrough
+
 Start by initializing your engine.
 
 ```js
@@ -466,6 +468,10 @@ e.start();
 - Can you add sound effects to the jump?
 - Can you turn it into a "Flappy Birds" style game?
 
+## Help with Game Lab Development
+
+The Hack Club Game Lab is all [open-source](https://www.github.com/hackclub/gamelab) and is actively developed by the Hack Club community. We welcome pull requests, bug reports, and feedback! If you want to join the conversation head over to the [#gamelab-dev](https://app.slack.com/client/T0266FRGM/C02UN35M7LG) channel on the Hack Club Slack.
+
 ## Share Your Game
 
-## Help with Game Lab Development
+Learning is best when we make and SHARE things. So we strongly encourage sharing and we would love to see what you made. You can check out what other people have done in the [Game Lab Aracade on Scrapbook](https://scrapbook.hackclub.com/r/gamelab/). If you'd like to submit to the Game Lab Arcade just send your share link to the [#scrapbook](https://app.slack.com/client/T0266FRGM/C01504DCLVD). You'll have to join the Slack to do so. If you don't want to share publicly we'd still love to see what you cooked up and you can pop the share link in the input box below.
