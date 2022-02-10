@@ -5,7 +5,7 @@ author: '@leomcelroy'
 img: "https://user-images.githubusercontent.com/27078897/153313648-ee21e62f-638d-41be-81a0-00c903b9ad12.png"
 ---
 
-Let's make a game in the [Hack Club Game Lab](https://www.gamelab.hackclub.com)!
+Let's make a [game](http://gamelab.hackclub.com/?id=0ebcff384feebe3393f4d275359843a0) in the [Hack Club Game Lab](https://www.gamelab.hackclub.com)!
 
 [
 ![IMAGE OF GAME LAB](https://user-images.githubusercontent.com/27078897/153313648-ee21e62f-638d-41be-81a0-00c903b9ad12.png)
