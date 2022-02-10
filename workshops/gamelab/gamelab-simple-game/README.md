@@ -421,7 +421,7 @@ e.add({
     me.vy += 1;
 
     if (e.pressedKey(" ")) {
-      me.vy -= 18;
+      me.vy -= 20;
     }
   }
 })
