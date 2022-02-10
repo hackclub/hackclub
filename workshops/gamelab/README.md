@@ -7,7 +7,9 @@ img: "https://user-images.githubusercontent.com/27078897/153313648-ee21e62f-638d
 
 Let's make a game in the [Hack Club Game Lab](https://www.gamelab.hackclub.com)!
 
+[
 ![IMAGE OF GAME LAB](https://user-images.githubusercontent.com/27078897/153313648-ee21e62f-638d-41be-81a0-00c903b9ad12.png)
+](https://www.gamelab.hackclub.com)
 
 ## Walkthrough
 
