@@ -2,12 +2,12 @@
 name: 'Game Lab: Dino-ish Jump'
 description: 'Make a Game in the HacK Club Game Lab'
 author: '@leomcelroy'
-img: ""
+img: "https://user-images.githubusercontent.com/27078897/153313648-ee21e62f-638d-41be-81a0-00c903b9ad12.png"
 ---
 
 Let's make a game in the Hack Club Game Lab!
 
-[IMAGE OF GAME LAB]
+![IMAGE OF GAME LAB](https://user-images.githubusercontent.com/27078897/153313648-ee21e62f-638d-41be-81a0-00c903b9ad12.png)
 
 Start by initializing your engine.
 
@@ -25,7 +25,7 @@ Click "Create Sprite".
 
 We can add our bird by using the `add` property on the engine.
 
-[GIF OF MAKING SPRITE]
+![GIF_MAKING_SPRITE](https://user-images.githubusercontent.com/27078897/153313678-649d619a-6de9-4ab5-8e0d-94edc1ab7b4d.gif)
 
 ```js
 
@@ -36,7 +36,7 @@ e.add({
 })
 ```
 
-[IMAGE OF SPRITE IN GAME]
+![Screen Shot 2022-02-09 at 6 51 18 PM](https://user-images.githubusercontent.com/27078897/153313723-0f10a49c-c37b-47c3-a75a-9cdc132dbe64.png)
 
 `add` takes a lot of optional parameters which you can find in the reference pop-out.
 
@@ -54,7 +54,7 @@ e.add({
 })
 ```
 
-[GIF OF SPRITE FALLING TO OBLIVION]
+![GIF_SPRITE_FALLING_OBLIVION](https://user-images.githubusercontent.com/27078897/153313761-8c613a4f-9fb2-40e2-990b-1334fb323c45.gif)
 
 Now our character just falls into oblivion. Let's prevent that by adding a floor.
 
@@ -78,7 +78,7 @@ e.add({
 })
 ```
 
-[GIF OF SPRITE FALLING THROUGH THE FLOOR]
+![GIF_FALLING_THROUGH_FLOOR](https://user-images.githubusercontent.com/27078897/153313796-1b793a75-fcd0-4627-83f3-343896ee7220.gif)
 
 We've got a floor now but our character falls through it? We need to let the engine know that the player and the floor should not be able to pass through each other. We can do that with the `solid` property.
 
@@ -102,7 +102,7 @@ e.add({
 })
 ```
 
-[GIF OF SPRITE HITTING THE FLOOR]
+![GIF_HITTING_FLOOR](https://user-images.githubusercontent.com/27078897/153313827-a326f03b-7bc1-4b38-8eb6-1c8e557e22fe.gif)
 
 Let's give our player the ability to jump.
 
@@ -124,7 +124,7 @@ e.add({
 })
 ```
 
-[GIF OF SPRITE JUMPING]
+![GIF_SPRITE_JUMPING](https://user-images.githubusercontent.com/27078897/153313845-89bbb86d-af56-400b-af89-dbcfb60a3398.gif)
 
 Now that we've got a character and some controls let's create some obstacles.
 
@@ -139,7 +139,7 @@ e.add({
 })
 ```
 
-[IMAGE OF OBSTACLE ON SCREEN]
+![IMAGE OF OBSTACLE ON SCREEN](https://user-images.githubusercontent.com/27078897/153313856-ab6c6e07-d048-4431-b70a-e88949d32ac9.png)
 
 We want this obstacle to move to the left so let's give it some velocity.
 
@@ -153,7 +153,7 @@ e.add({
 })
 ```
 
-[GIF OF OBSTACLE MOVING LEFT ON SCREEN]
+![GIF_OBSTACLE_MOVING](https://user-images.githubusercontent.com/27078897/153313888-2b1b1604-0b57-444a-bbbb-cb51b95acc9d.gif)
 
 When we hit the player the game should end. To do that let's add a `collides` handler to the player object. To check what we collided with we'll need to add a tag to the obstacle.
 
@@ -187,7 +187,7 @@ e.add({
 })
 ```
 
-[GIF OF GAME ENDING]
+![GIF_GAME_ENDING](https://user-images.githubusercontent.com/27078897/153313925-22a688ea-6098-4f09-9989-611b32c1fd64.gif)
 
 While we are at it let's add some text to spruce up the game ending.
 
@@ -215,7 +215,7 @@ e.add({
 })
 ```
 
-[GIF OF GAME ENDING WITH GAME OVER]
+![GIF_GAME_OVER_TEXT](https://user-images.githubusercontent.com/27078897/153313939-337e0346-efb3-4660-b35f-40d56cd97c59.gif)
 
 But if we jump over the obstacle then we need to remove it.
 
@@ -262,7 +262,7 @@ const addObstacle = () => {
 addObstacle() // start the obstacles
 ```
 
-[GIF OF MULTIPLE OBSTACLES]
+![GIF_MULTIPLE_OBSTACLES](https://user-images.githubusercontent.com/27078897/153313960-7c345b6d-b2b3-4216-816f-aafcd608245f.gif)
 
 This game would get boring because the obstacles are always the same. Let's add some randomness to make it more interesting.
 
@@ -304,7 +304,7 @@ let score = 0;
 let scoreText = e.addText(score, 279, 32, { size: 20 });
 ```
 
-[IMAGE OF SCORE IN GAME]
+![IMAGE OF SCORE IN GAME](https://user-images.githubusercontent.com/27078897/153313983-ccf772f1-411a-4d40-8202-70e66f94a504.png)
 
 Every time we clear an obstacle let's increment and redraw the score.
 
@@ -336,13 +336,13 @@ const addObstacle = () => {
 }
 ```
 
-[GIF OF INCREASING SCORE]
+![GIF_INCREASING_SCORE](https://user-images.githubusercontent.com/27078897/153314002-ed8c2ed2-cd7b-4b87-9d16-a6e07678c8d8.gif)
 
 Let's add some sound effects to the game as well.
 
 We can create a tune in the asset editor.
 
-[GIF OF CREATING TUNE]
+![CREATING_TUNE](https://user-images.githubusercontent.com/27078897/153314010-59244d21-8aac-46ae-a460-846e15e89e6d.gif)
 
 To add it to the game we can use either `loopTune` or `playTune`.
 
