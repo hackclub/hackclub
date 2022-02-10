@@ -187,7 +187,7 @@ e.add({
 })
 ```
 
-![GIF_GAME_ENDING](https://user-images.githubusercontent.com/27078897/153313925-22a688ea-6098-4f09-9989-611b32c1fd64.gif)
+![GIF_GAME_OVER_NO_TEXT](https://user-images.githubusercontent.com/27078897/153315111-760b91f4-7438-45e9-b215-d5e713698610.gif)
 
 While we are at it let's add some text to spruce up the game ending.
 
