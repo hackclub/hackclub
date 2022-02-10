@@ -5,13 +5,15 @@ author: '@leomcelroy'
 img: "https://user-images.githubusercontent.com/27078897/153313648-ee21e62f-638d-41be-81a0-00c903b9ad12.png"
 ---
 
-Let's make a game in the Hack Club Game Lab!
+Let's make a game in the [Hack Club Game Lab](https://www.gamelab.hackclub.com)!
 
 ![IMAGE OF GAME LAB](https://user-images.githubusercontent.com/27078897/153313648-ee21e62f-638d-41be-81a0-00c903b9ad12.png)
 
 ## Walkthrough
 
-Start by initializing your engine.
+Start by creating a new project. It's the first button on the left in the button menu.
+
+Initialize your engine like so:
 
 ```js
 const e = createEngine(gameCanvas, 300, 300);
