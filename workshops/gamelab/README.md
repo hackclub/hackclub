@@ -20,6 +20,8 @@ Initialize your engine like so:
 ```js
 const e = createEngine(gameCanvas, 300, 300);
 
+// your code goes in here
+
 e.start();
 ```
 
@@ -27,9 +29,12 @@ We are then going to add a character.
 
 First we need to make a sprite asset in the sprite editor.
 
-Click "Create Sprite".
+Click "Add Sprite".
 
-We can add our bird by using the `add` property on the engine.
+We can add our character by using the `add` property on the engine.
+
+You'll have to rename the sprite to match the name in the game script 
+on the line that looks like `sprite: player`.
 
 ![GIF_MAKING_SPRITE](https://user-images.githubusercontent.com/27078897/153313678-649d619a-6de9-4ab5-8e0d-94edc1ab7b4d.gif)
 
@@ -469,6 +474,7 @@ e.start();
 
 ## Extensions
 
+- Can you make the character only jump on the ground?
 - Can you add sound effects to the jump?
 - Can you turn it into a "Flappy Birds" style game?
 
