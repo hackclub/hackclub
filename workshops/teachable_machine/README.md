@@ -2,6 +2,7 @@
 name: 'Teachable Machine'
 description: 'Easily get started with machine learning—no coding required'
 author: '@MatthewStanciu'
+img: 'https://cloud-m7q6q8zhs-hack-club-bot.vercel.app/0demo-3.png'
 ---
 
 [Teachable Machine](https://teachablemachine.withgoogle.com) is a website made by Google that allows you to quickly create machine learning models without coding. It’s a fantastic way to learn the fundamental concepts of machine learning and be able to apply them to cool projects without having to understand the complex math is normally required to work with machine learning. In this workshop, we’re building a super simple website that detects whether your camera sees you alone or you with another object (e.g. your phone).

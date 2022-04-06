@@ -3,6 +3,7 @@ name: Meme Songs with Arduino
 description: Building an online Arduino application that plays the Coffin Dance
 author: '@rohan-bansal'
 img: https://cloud-psj7hfkrk.vercel.app/0thumbnail.png
+locales: 'pt-br'
 ---
 
 # Meme Songs with Arduino

@@ -58,7 +58,7 @@ _Feel free to skip this step if you decided to buy a chassis._
 
 The chassis is something that you can either make yourself, or buy for pretty cheap. I went with the make option because I had some motor with gearbox and wheels lying around. And of course, making is more fun.
 
-![](https://cloud-6hqrlop55-hack-club-bot.vercel.app/03d-models.jpg)
+![3D models of robot](https://cloud-6hqrlop55-hack-club-bot.vercel.app/03d-models.jpg)
 
 I made a 3D model in Fusion 360 to help me make sure everything would fit in the way I want. It also helped me to cut the woods to the exact shape that I would need for everything to fit nicely. Note that I did update the design as I built the robot. I didn't plan the whole design all at once before starting the build. Feel free to take a look or download the 3D design file [here.](https://a360.co/3dcqOXr)
 
@@ -104,7 +104,7 @@ You can just use jumper wires to connect the digital circuitries. For wiring the
 
 ## Part 2: How it works
 
-![](https://media.giphy.com/media/W30lCe5ryOMOqJrnS2/giphy.gif)
+![GIF of the robot following a line](https://media.giphy.com/media/W30lCe5ryOMOqJrnS2/giphy.gif)
 The way this robot works is actually pretty simple. It is based on a PID controller, which is a mathematical equation in the code that takes an input value and spits out an output value. It then has a feedback which basically tells it how much the input value is off from what we set it to be, it's called the _error_. The PID controller will do whatever it can with the output to make sure the error stays at, or as close as possible, to 0.
 
 If we look at our robot, the input is coming from the 8 line sensors underneath the robot. The sensors gives us a value between 0 and 7000, 0 meaning the line is all way to the left of the robot and 7000 meaning it's on the right of the robot. The PID controllers work is to keep the value at 3500 while the robot is moving, which would mean the line is right in the middle of the robot. If it's not, the PID controllers output changes, which then changes the speed of the motors, turning the robot and bringing the line back to the middle of the robot.

@@ -6,9 +6,9 @@ author: '@jkwok91'
 
 # Platformer
 
-| What you'll build       |
-| ----------------------- |
-| ![Square particles moving in a game](https://cloud-96b8dye2c-hack-club-bot.vercel.app/0final_demo.gif) |
+What you'll build:
+
+![Square particles moving in a game](https://cloud-96b8dye2c-hack-club-bot.vercel.app/0final_demo.gif)
 
 _We recommend going through this workshop in Google Chrome._
 
@@ -242,7 +242,7 @@ camera.position.x = player.position.x + width / 4
 
 What we'd like to do is modify the position of the first ground sprite so that it immediately follows the last ground sprite.
 
-![](https://cloud-96b8dye2c-hack-club-bot.vercel.app/1reverse_indian_sprints.png)
+![Blocks go from the left of the screen and then back to the right](https://cloud-96b8dye2c-hack-club-bot.vercel.app/1reverse_indian_sprints.png)
 
 We can select the first ground sprite and store it in a variable by typing the following line in the `draw()` function. I put this logic beneath the line that sets camera x-position.
 

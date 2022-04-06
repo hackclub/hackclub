@@ -3,6 +3,7 @@ name: 'Meme Generator'
 description: 'Create your own meme generator with HTML, CSS, and JavaScript!'
 author: '@aaryanporwal'
 img: 'https://cloud-qmqu378mz.vercel.app/0image.png'
+locales: 'pt-br'
 ---
 
 Do you like memes? Ever wanted to make your own, but didn't know which apps to install? Don't worry because in this workshop, you'll be creating your own ***Meme Generator***—or as I like to call it, the *Meme-Genie*.

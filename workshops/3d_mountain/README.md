@@ -3,6 +3,7 @@ name: '3D Mountain'
 description: 'Create a 3D mountain with Python data viz tools'
 author: '@shivesh01'
 img: 'https://cloud-a08hob7s0.vercel.app/0workshop1.gif'
+locales: 'es-xl'
 ---
 
 Mountains are fun! Here, check out this mountain on Google Maps:
@@ -67,7 +68,7 @@ When you concatenate, sort, join or do some rearrangements with your `DataFrame`
 
 ![reset index](https://cloud-8p15tas3t.vercel.app/0reshaping_unstack_.png)
 
-Uunder that, add:
+Under that, add:
 
 ```python
 DataFrame.columns = ['X', 'Y', 'Z']
@@ -93,7 +94,7 @@ DataFrame['X'] = DataFrame['X'].cat.codes
 
 By using `cat.codes`, we get unique integer values for each value of `X` in an array in the position if the actual values, even if the value is none. Then, it returns a unique numeric value.
 
-Suppose your data contains a column named "Birds" with 100 rows, which has only two types of values—parrot and owl—repeated in rows. Even though we only have two types of data, we have 1000 rows of them so the computer will treat every value as unique. To save memory, we specify the similar set of values as a category, so that the computer doesn't allocate memory every time it encounters that value. Instead, it will just assign a reference to the value. If this sounds like gibberish to you, don't worry—all you need to know is that we're doing some fancy computer memory saving things.
+Suppose your data contains a column named "Birds" with 100 rows, which has only two types of values—parrot and owl—repeated in rows. Even though we only have two types of data, we have 100 rows of them so the computer will treat every value as unique. To save memory, we specify the similar set of values as a category, so that the computer doesn't allocate memory every time it encounters that value. Instead, it will just assign a reference to the value. If this sounds like gibberish to you, don't worry—all you need to know is that we're doing some fancy computer memory saving things.
 
 Under this line, add:
 

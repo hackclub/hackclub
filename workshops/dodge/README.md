@@ -7,9 +7,9 @@ img: "https://cloud-en831u68d-hack-club-bot.vercel.app/7demo.png"
 
 # Dodge
 
-| What you'll build       |
-| ----------------------- |
-| ![brown objects falling from the sky while dinosaur moves horizontally across the screen](https://cloud-en831u68d-hack-club-bot.vercel.app/1final_demo.gif) |
+What you'll build:
+
+![brown objects falling from the sky while dinosaur moves horizontally across the screen](https://cloud-en831u68d-hack-club-bot.vercel.app/1final_demo.gif)
 
 Links to a live demo and the final code below. This workshop should take around 1 hour and 15 minutes.
 
@@ -713,9 +713,9 @@ Feel free to customize the enemy's rotation speed to make it faster/slower!
 
 You're done, yay! The game you made is live at the URL above the preview in the editor:
 
-![](https://cloud-en831u68d-hack-club-bot.vercel.app/4preview.gif)
+![Click open in new tab button](https://cloud-en831u68d-hack-club-bot.vercel.app/4preview.gif)
 
-Don't forget to share a link to your beautiful creation on the Slack on the [`#shipit`](https://hackclub.slack.com/messages/shipit) channel!
+Don't forget to share a link to your beautiful creation on the Slack on the [`#ship`](https://hackclub.slack.com/messages/ship) channel!
 
 ## Part IV. Hacking
 

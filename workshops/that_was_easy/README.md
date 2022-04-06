@@ -468,7 +468,7 @@ And that's it! Run the repl with your new `script.js` and try out the key bindin
 
 ## Part VI: Publishing and Sharing
 
-Post on [`#shipit`](https://hackclub.slack.com/messages/shipit) with the URL, so everyone can see and play with your amazing creation!
+Post on [`#ship`](https://hackclub.slack.com/messages/ship) with the URL, so everyone can see and play with your amazing creation!
 
 ## Part VII: Hacking
 

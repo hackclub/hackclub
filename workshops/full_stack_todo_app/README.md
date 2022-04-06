@@ -3,6 +3,7 @@ name: 'Todo App'
 description: 'Create a full-stack To-do App using React and Firebase'
 author: '@giridhar7632'
 img: 'https://cloud-2nf3f60u4.vercel.app/0todo_app.png'
+locales: 'pt-br'
 ---
 
 # Todo App

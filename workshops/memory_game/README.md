@@ -3,6 +3,7 @@ name: 'Memory Game'
 description: 'Create your own memory game using JavaScript'
 author: '@giridhar7632'
 img: 'https://cloud-g7cpynxc4.vercel.app/0screenshot_2020-11-11_104712.png'
+locales: 'pt-br'
 ---
 
 # Memory Game

@@ -3,6 +3,7 @@ name: 'Drum Pad'
 description: 'Creating a Drum Pad with HTML, CSS & JS'
 author: '@emmanuel39hanks'
 img: 'https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png'
+locales: 'pt-br'
 ---
 
 Ever wondered how you can play sounds with code? In this workshop, we will be creating a drum pad that plays actual sounds.

@@ -1,7 +1,7 @@
 ---
 name: Hack Club CDN Uploader
 description: Make a Library and CLI to upload to the Hack Club CDN
-author: '@KhushrajRathod'
+author: '@khrj'
 img: https://cloud-bb4wyl0oo.vercel.app/0screenshot_2020-11-11_at_10.00.26_pm.png
 ---
 

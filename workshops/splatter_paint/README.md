@@ -2,6 +2,8 @@
 name: 'Splatter Paint'
 description: 'Crazy colorful splatter paint in your browser with Paper.js'
 author: '@MatthewStanciu'
+locales: 'es-xl'
+img: https://cloud-3aosybiuc-hack-club-bot.vercel.app/1final-demo.png
 ---
 
 **Warning: the following workshop involves flashing colors and is not recommended for those with a history of epilepsy.**
@@ -101,7 +103,7 @@ function onMouseMove(event) {
 
 Instead of using the more common hexademical or RGB color systems, Paper.js uses the HSB color system, which uses angles on a color wheel to describe color. In the HSB color system, 0 = 0° = red, and `360*n`° is also red.
 
-![Color wheel in which each color is assigned a degree value](img/hsb-color-wheel.PNG)
+![Color wheel in which each color is assigned a degree value](https://cloud-b0scmt0cu-hack-club-bot.vercel.app/0hsb-color-wheel.png)
 
 (If you’re interested in learning more about the HSB color system, check out [this fantastic explanation](https://learnui.design/blog/the-hsb-color-system-practicioners-primer.html))
 

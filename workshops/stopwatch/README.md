@@ -3,6 +3,7 @@ name: 'Stopwatch'
 description: 'Build a simple stopwatch with HTML, CSS, & JavaScript'
 author: '@faisalsayed10'
 img: 'https://cloud-jh559xslj.vercel.app/2020-10-23_yp6wgrcauymhtq97uk24vk0kj64fu8d3.png'
+locales: 'pt-br'
 ---
 
 # Stopwatch

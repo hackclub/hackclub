@@ -3,6 +3,7 @@ name: "Text Adventure Game in Rust"
 description: "Make a text adventure game while writing your first Rust program!"
 author: "@panos, @cfanoulis"
 img: "https://hackropolis.is-ne.at/0oMCQ5.png"
+locales: 'pt-br'
 ---
 
 # Make a text-based adventure game in Rust!

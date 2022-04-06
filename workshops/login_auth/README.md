@@ -3,6 +3,7 @@ name: 'Web Login'
 description: 'Build a secure web login page using Firebase & JavaScript'
 author: '@tanishq-soni'
 img: 'https://cloud-i1u39hjuk.vercel.app/2020-10-23_h3cu9gf014ymk5drx379wq6gdqjxz0e8.png'
+locales: 'pt-br'
 ---
 
 # Web Login Authentication 🔒

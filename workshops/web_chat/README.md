@@ -1,7 +1,7 @@
 ---
 name: Web Chat
 description: Make a personal chat server for you and your friends with WebSockets and Deno
-author: '@KhushrajRathod'
+author: '@khrj'
 img: https://cloud-pq5lbfiab.vercel.app/2cover.png
 ---
 

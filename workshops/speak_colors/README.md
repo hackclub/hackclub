@@ -2,6 +2,8 @@
 name: Speak Colors
 description: Color your screen with your voice via speech recognition.
 author: '@lachlanjc'
+locales: 'pt-br'
+img: "https://cloud-3ipvngxk0-hack-club-bot.vercel.app/0screen_shot_2022-01-24_at_1.04.09_pm.png"
 ---
 
 # Speak Colors
