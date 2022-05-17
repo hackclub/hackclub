@@ -273,6 +273,10 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 **Websites Made by Other Hack Club Hackers:**
 
+- [Kognise](https://kognise.dev/)
+- [Celeste](https://celeste.exposed/)
+- [Leo McElroy](https://leomcelroy.com/)
+- [Sarthak Mohanty](https://sarthakmohanty.me/)
 - [Kat Huang](https://katmh.com)
 - [Theo Bleier](https://tmb.sh/)
 - [Megan Cui](https://megancui.com/)
