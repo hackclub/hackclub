@@ -272,6 +272,7 @@ Want to add more text? Your entire life story? Background image? Background musi
 A good way to get ideas for what to add to your website is to look at other people's websites. Find a website that you like, either from the below list or from somewhere else on the internet, pick one aspect of that website that you would like on your own website, and Google for ways to make it happen!
 
 **Websites Made by Other Hack Club Hackers:**
+
 - [Malte I. Lauterbach](https://patakh.com/)
 - [Kognise](https://kognise.dev/)
 - [Celeste](https://celeste.exposed/)
