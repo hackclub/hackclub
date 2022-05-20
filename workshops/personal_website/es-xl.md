@@ -49,7 +49,7 @@ Repl.it nos da un poco de código para empezar, pero nosotros vamos a comenzar d
 </html>
 ```
 
-Esta estructura es común para todas las páginas HTML. De hecho, ¡puedes echar un vistazo por ti mismo! Simplemente da clic con el botón derecho en cualquier página web, incluida esta, y luego da clic en "Ver código fuente de la página" (a veces llamado "Inspeccionar" según tu navegador) para ver lo que sucede detrás de escena. Encontrarás cada uno de estos elementos en cada página: - La declaración de tipo de documento <!DOCTYPE> y una etiqueta HTML envuelta alrededor de un encabezado y un cuerpo.
+Esta estructura es común para todas las páginas HTML. De hecho, ¡puedes echar un vistazo por ti mismo! Simplemente da clic con el botón derecho en cualquier página web, incluida esta, y luego da clic en "Ver código fuente de la página" (a veces llamado "Inspeccionar" según tu navegador) para ver lo que sucede detrás de escena. Encontrarás cada uno de estos elementos en cada página: — La declaración de tipo de documento <!DOCTYPE> y una etiqueta HTML envuelta alrededor de un encabezado y un cuerpo.
 
 <!-- Source https://developers.google.com/web/tools/chrome-devtools/inspect-styles/imgs/elements-panel.png -->
 
@@ -61,7 +61,7 @@ HTML funciona almacenando información dentro de etiquetas. `<html></html>` es u
 
 `<!DOCTYPE html>` le dice al navegador qué versión de HTML esperar. Dado que es un lenguaje, HTML está en constante crecimiento y actualización, por lo que existen múltiples versiones. En nuestro caso, usaremos HTML5, la versión más actual.
 
-### 2) Previsulizando la Página
+### 2) Previsualizando la Página
 
 ¡Veamos cómo se ve nuestro archivo HTML en una vista previa en vivo! Para hacer esto, da clic en el botón **Run**  encima del editor o presiona <kbd>Ctrl</kbd> + <kbd>Enter</kbd> (<kbd>Command</kbd> + <kbd>Enter</kbd> en Mac).
 
@@ -79,7 +79,7 @@ Como puedes ver, la página está en blanco. Esto se debe a que no hemos agregad
 
 ### 3) Agregar Texto al Cuerpo
 
-Como se mencionó anteriormente, toda la información está envuelta en etiquetas. Las etiquetas están predefinidas en el lenguaje; Piensa en ellas como las palabras en el idioma. Para el texto, HTML proporciona una serie de etiquetas para almacenar texto. Usaremos dos de las más básicas: la etiqueta h1 (`<h1>`) y la etiqueta de párrafo (`<p>`). La etiqueta h1 es la primera de una serie de etiquetas de encabezado, contando con `h1` siendo el ranking más alto y `h6` siendo el ranking más bajo. Al igual que con las otras etiquetas, puedes colocar información dentro de estas etiquetas rodeando su contenido con una etiqueta de apertura y cierre.
+Como se mencionó anteriormente, toda la información está envuelta en etiquetas. Las etiquetas están predefinidas en el lenguaje; piensa en ellas como las palabras en el idioma. Para el texto, HTML proporciona una serie de etiquetas para almacenar texto. Usaremos dos de las más básicas: la etiqueta h1 (`<h1>`) y la etiqueta de párrafo (`<p>`). La etiqueta h1 es la primera de una serie de etiquetas de encabezado, siendo `h1` la de ranking más alto y `h6` la de ranking más bajo. Al igual que con las otras etiquetas, puedes colocar información dentro de estas etiquetas rodeando su contenido con una etiqueta de apertura y cierre.
 
 Continúa y agrega tu nombre en una etiqueta de título, y tu descripción en una etiqueta de párrafo, entre las etiquetas de apertura (`<body>`) y cierre (`</body>`) . Aquí está el nombre y la descripción del Profeta Orfeo:
 
@@ -108,7 +108,7 @@ Si tu descripción constaba de unos pocos párrafos o tenía saltos de línea, e
 </html>
 ```
 
-Ejecuta tu `index.html` y actualiza la Vista previa en vivo. ¡Yay!
+Ejecuta tu `index.html` y actualiza la vista previa en vivo. ¡Yay!
 
 ### 4) Agregar imágenes al cuerpo
 
@@ -124,7 +124,7 @@ Las imágenes se incluyen en HTML a través de la etiqueta de imagen, o `<img>`.
 
 Es posible que hayas notado que la etiqueta de imagen no tiene una etiqueta de cierre como `<h1></h1>` o `<body></body>`. Eso es porque es un [elemento vacío](https://www.w3.org/TR/html-markup/syntax.html#syntax-elements), lo que significa que no tiene ningún contenido.
 
-Continúa y agrega esto a continuación en tu `index.html` . Yo puse mi imagen antes de mi encabezado y mi código se ve así:
+Continúa y agrega esto en tu `index.html` . Yo puse mi imagen antes de mi encabezado y mi código se ve así:
 
 ```html
 <!DOCTYPE html>
@@ -145,12 +145,13 @@ Continúa y agrega esto a continuación en tu `index.html` . Yo puse mi imagen a
 
 Recuerda, necesitas **Correr** tu programa cada vez que desees ver tu sitio web actualizado.
 
-Aunque nuestro sitio web tiene algo de texto y existe en el _internet_, todavía no hemos terminado. Nuestra página web es completamente funcional, pero necesita un poco de ayuda en el departamento de imagen-y-diseño. No temas. CSS te permitirá manipular el estilo de tu página en todas sus necesidades.
+Aunque nuestro sitio web tiene algo de texto y existe en el _Internet_, todavía no hemos terminado. Nuestra página web es completamente funcional, pero necesita un poco de ayuda en el departamento de imagen-y-diseño. No temas. CSS te permitirá manipular el estilo de tu página en todas tus necesidades.
 
 ## Parte III: El archivo CSS
 
-Entonces, ¿qué es CSS? CSS, También conocido como Cascading Style Sheets (Hojas de Estilo en Cascada) es un lenguaje utilizado para personalizar las etiquetas (o "elementos") en una página web.
-Mientras HTML supervisa el contenido y la forma en que está estructurado, CSS es la forma en que especificarás cómo te gustaría que se vea tu contenido; — Con él puedes configurar cosas como los colores, el espaciado y más.
+Entonces, ¿qué es CSS? CSS, también conocido como Cascading Style Sheets (Hojas de Estilo en Cascada), es un lenguaje utilizado para personalizar las etiquetas (o "elementos") en una página web.
+
+Mientras HTML supervisa el contenido y la forma en que está estructurado, CSS es la forma en que especificarás cómo te gustaría que se vea tu contenido: — Con él puedes configurar cosas como los colores, el espaciado y más.
 
 
 ### 1) Usando CSS
@@ -165,7 +166,7 @@ Aunque tenemos un archivo CSS, hasta que le digamos explícitamente al archivo H
 <link rel="stylesheet" href="style.css" />
 ```
 
-`<link />` es la etiqueta de enlace, que describe las relaciones entre el archivo actual (en este caso, `index.html`), y algún archivo externo (`style.css`). En nuestro ejemplo, `rel="stylesheet"` especifica cuál es esta relación, i.e., que `style.css` es una hoja de estilo, y `href` (hypertext reference / referencia de hipertexto) especifica dónde se puede encontrar el archivo (En este caso, es solo el nombre del archivo `style.css`). La etiqueta de enlace, similar a la etiqueta de imagen, es una etiqueta self-closing (de cierre automático), una vez más denotado por el `/` que precede al `>`.
+`<link />` es la etiqueta de enlace, que describe las relaciones entre el archivo actual (en este caso, `index.html`), y algún archivo externo (`style.css`). En nuestro ejemplo, `rel="stylesheet"` especifica cuál es esta relación, i.e., que `style.css` es una hoja de estilo, y `href` (hypertext reference / referencia de hipertexto) especifica dónde se puede encontrar el archivo (en este caso, es solo el nombre del archivo `style.css`). La etiqueta de enlace, similar a la etiqueta de imagen, es una etiqueta self-closing (de cierre automático), una vez más denotado por el `/` que precede al `>`.
 
 Nuestro archivo HTML ahora se ve así:
 
@@ -198,7 +199,7 @@ img {
 }
 ```
 
-Una hoja de estilo CSS contiene "reglas", cada una de las cuales consta de un selector y atributos y valores entre llaves, lo que se conoce como "bloque de declaración".
+Una hoja de estilo CSS contiene "reglas", cada una de las cuales consta de un selector, y atributos y valores entre llaves, lo que se conoce como "bloque de declaración".
 
 En nuestro caso, el selector es `img`. Esto simplemente selecciona todas las etiquetas de imagen (y por lo tanto, todas las imágenes). La regla luego dice que se establezca el `width` (ancho) de todas las cosas seleccionadas (en nuestro caso, todas las imágenes) a `200px`. `px` se refiere a los píxeles, que son una unidad de medida en la pantalla. Cuando se aplica esta regla, todas las imágenes de nuestra página tendrán un ancho de 200 píxeles.
 
@@ -223,7 +224,7 @@ body {
 }
 ```
 
-¡Puedes llevar esto aún más lejos agregando un poco de color a la página! El atributo de color `color` **(deletreado sin una u)** te permite establecer el color del texto y el color de fondo `background-color` te permite establecer un color de fondo. Puedes encontrar una lista de nombres de colores soportados en [W3Schools](https://www.w3schools.com/colors/colors_names.asp). Ten en cuenta que es una buena idea elegir una combinación de colores que mantendrá el texto legible.
+¡Puedes llevar esto aún más lejos agregando un poco de color a la página! El atributo de color `color` te permite establecer el color del texto y el atributo de color de fondo `background-color` te permite establecer un color de fondo. Puedes encontrar una lista de nombres de colores soportados en [W3Schools](https://www.w3schools.com/colors/colors_names.asp). Ten en cuenta que es una buena idea elegir una combinación de colores que mantendrá el texto legible.
 
 ```css
 body {
@@ -234,7 +235,7 @@ body {
 }
 ```
 
-Ahora asegúrate de **Correr** para obtener la versión más reciente de tu sitio web. Ah, es realmente hermoso de contemplar.
+Ahora asegúrate de **Correr** tu programa para obtener la versión más reciente de tu sitio web. Ah, es realmente hermoso de contemplar.
 
 ![Niños celebrando](https://cloud-4zpw37atj-hack-club-bot.vercel.app/0celebrate_harry_potter.gif)
 
@@ -256,17 +257,17 @@ Ahora que tienes tu cuenta configurada, todo lo que necesitas hacer para cambiar
 
 Una vez que estés contento con el nombre que le has dado, presiona <kbd>Enter</kbd> para confirmar tus cambios (o <kbd>Escape</kbd> para cancelar el cambio de nombre)
 
-Y así nada más, tu sitio web se encuentra ahora publicado en el dominio `PROJECTNAME--USERNAME.repl.co` (son dos guiones antes de tu nombre de usuario) en Internet para que todos tus amigos lo vean!
+Y así nada más, ¡tu sitio web se encuentra ahora publicado en el dominio `NOMBREDEPROYECTO--NOMBREDEUSUARIO.repl.co` (son dos guiones antes de tu nombre de usuario) en Internet para que todos tus amigos lo vean!
 
 ![Dos personas cantando y moviéndose de lado a lado en un coche.](https://cloud-4zpw37atj-hack-club-bot.vercel.app/1celebrate_rush_hour.gif)
 
 ## Parte V: Hacking
 
-En esta sección, tu desafío es agregar funciones adicionales a tu sitio web para personalizarlo y volverlo único!
+En esta sección, ¡tu desafío es agregar funciones adicionales a tu sitio web para personalizarlo y volverlo único!
 
 ¿Quieres usar una fuente diferente? ¡Búscalo en Google!
 ¿Quieres agregar más imágenes? ¡Búscalo en Google!  
-¿Quieres agregar más texto? ¿Toda la historia de tu vida? ¿Imagen de fondo? ¿Música de fondo? ¿Video? Más páginas? ¡Búscalo en Google!
+¿Quieres agregar más texto? ¿Toda la historia de tu vida? ¿Imagen de fondo? ¿Música de fondo? ¿Video? ¿Más páginas? ¡Búscalo en Google!
 
 
 Una buena forma de obtener ideas sobre qué agregar a tu sitio web es mirar los sitios web de otras personas. Encuentra un sitio web que te guste, ya sea de la siguiente lista o de otro lugar en Internet, elige un aspecto de ese sitio web que te gustaría en tu propio sitio web, y busca en Google las formas de hacerlo realidad.
