@@ -56,7 +56,7 @@ This structure is common to all HTML pages. In fact, you can take a look for you
 
 ![Inspect element panel containing html and css styles for a website](https://cloud-4zpw37atj-hack-club-bot.vercel.app/3elements-panel.png)
 
-Before proceeding, we'll briefly go over what our template means.
+**Before proceeding, we'll briefly go over what our template means.**
 
 HTML works by storing information inside tags. `<html></html>` is an example of one such tag. Inside `<html></html>`, we've placed two other sets of tags: `<head></head>` (which wraps around the "head") and `<body></body>` (which wraps around the "body"). The body holds everything you would see in the actual tab/window when you open the page, while the head conveys information about the page to the browser.
 
@@ -273,6 +273,11 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 **Websites Made by Other Hack Club Hackers:**
 
+- [Malte I. Lauterbach](https://patakh.com/)
+- [Kognise](https://kognise.dev/)
+- [Celeste](https://celeste.exposed/)
+- [Leo McElroy](https://leomcelroy.com/)
+- [Sarthak Mohanty](https://sarthakmohanty.me/)
 - [Kat Huang](https://katmh.com)
 - [Theo Bleier](https://tmb.sh/)
 - [Megan Cui](https://megancui.com/)
@@ -281,6 +286,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 - [Sophie Huang](https://sohuang.github.io/)
 - [Jevin Sidhu](http://jevinsidhu.com/)
 - [Sam Poder](http://sampoder.com/)
+- [Faisal Sayed](https://fayd.me/)
 
 **Websites Made by Professionals:**
 
