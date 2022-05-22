@@ -58,8 +58,8 @@ from freegames import floor, vector
 ```
 
 * The code above essentially says the following:
-  * Import the `choice` function from the module `random`. This is a built-in Python module that gets a random value for us to use when spawning.
-  * Add all the functions from the `turtle` library. Learn more about the Turtle library [here](https://docs.python.org/3/library/turtle.html). It is a way to implement graphics in Python projects
+  * Import the `choice` function from the module `random`. This is a built-in [Python module](https://www.scaler.com/topics/python/python-modules/) that gets a random value for us to use when spawning.
+  * Add all the functions from the `turtle` library. Learn more about the Turtle library [here](https://docs.python.org/3/library/turtle.html). It is a way to implement graphics in [Python](https://www.scaler.com/topics/python/) projects
   * Get the [`floor`](http://www.grantjenks.com/docs/freegames/api.html#freegames.floor) and [`vector`](http://www.grantjenks.com/docs/freegames/api.html#freegames.vector) functions from the `freegames` library. The [freegames library](http://www.grantjenks.com/docs/freegames/index.html) is a basic module with built-in functions that do standard game tasks like moving around and setting a playing field. 
 
 3. Next, we’ll want to declare and initialize all of our global variables:
