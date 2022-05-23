@@ -274,6 +274,11 @@ Una buena forma de obtener ideas sobre qué agregar a tu sitio web es mirar los 
 
 **Sitios web creados por otros hackers de Hack Club:**
 
+- [Malte I. Lauterbach](https://patakh.com/)
+- [Kognise](https://kognise.dev/)
+- [Celeste](https://celeste.exposed/)
+- [Leo McElroy](https://leomcelroy.com/)
+- [Sarthak Mohanty](https://sarthakmohanty.me/)
 - [Kat Huang](https://katmh.com)
 - [Theo Bleier](https://tmb.sh/)
 - [Megan Cui](https://megancui.com/)
@@ -282,6 +287,7 @@ Una buena forma de obtener ideas sobre qué agregar a tu sitio web es mirar los 
 - [Sophie Huang](https://sohuang.github.io/)
 - [Jevin Sidhu](http://jevinsidhu.com/)
 - [Sam Poder](http://sampoder.com/)
+- [Faisal Sayed](https://fayd.me/)
 
 **Sitios web creados por profesionales:**
 
