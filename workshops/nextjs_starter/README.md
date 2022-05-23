@@ -43,7 +43,7 @@ Now you can use it like this:
 
 (Thinking ahead—instead of just using components one-at-a-time like this, imagine downloading a list of articles, then rendering this Article component for each one. Well, that’s how news websites work!)
 
-JSX tip: when you’re passing a string (text) value to a prop, you can use quotes, just like in HTML, but if you’re passing JavaScript, you use curly braces. If articles had multiple authors, we’d pass an array:
+JSX tip: when you’re passing a string (text) value to a prop, you can use quotes, just like in HTML, but if you’re passing JavaScript, you use curly braces. If our article had multiple authors, we’d pass an array:
 
 ```js
 <Article title="Hello Hack Club!" author={['@lachlanjc', '@zachlatta']} />
@@ -126,7 +126,7 @@ The `Link` component makes whatever we click on go that page, then the `<a>` tag
 
 Now, that doesn’t go anywhere yet. Click on “New file” and enter `pages/shopping.js`. We’re going to make a quick shopping list!
 
-In your mind, imagine with this HTML will look like: (`ul` makes a bulleted list, if you haven’t used it before)
+In your mind, imagine what this HTML will look like: (`ul` makes a bulleted list, if you haven’t used it before)
 
 ```html
 <h1>Shopping List</h1>
@@ -256,15 +256,15 @@ This is a little more complex, so let’s break it down:
    - `setItems` is a function React is generating for us for changing the value of `items`. The whole page is, underneath, a function (see the `() => {}` on the first line), so if you were to do `items = […]`, the next time React ran the function to render the page, the changes to the variable would disappear. To get around this, React keeps track of our state outside the context of just the functions for each component.
 2. `newItem` & `setNewItem` work similarly, keeping track of the text the user types into the input box in a second chunk of React state.
 3. `changeNewItem` is a function we wrote so that when the user types into the input box, we get the value of the input & set it to the state. (`e` is the raw JavaScript event, `target` is the HTML element the event happened to, then `value` is the current value of the element.)
-4. `addItem` is the code that runs when the user presses the “Add item” button. It adds the `newItem` to the list of `items`, then clears the input box. (This works because we set the `value` of the state, so when we change the state, so does the element.)
+4. `addItem` is the code that runs when the user presses the “Add item” button. It adds the `newItem` to the list of `items`, then clears the input box. (This works because we set the `value` of the input box, so when we change the state, so does the element.)
 
-One thing about React state is that it’s not “persistent”—the list won’t be saved if you come back another day—but there a bunch of ways to handle data storage later on.
+One thing about React state is that it’s not “persistent”—the list won’t be saved if you come back another day—but there are a bunch of ways to handle data storage that we'll see later on.
 
 ## Bonus: styling!
 
 When you’re using CSS, every style you add applies to your whole website. This is handy when you’re getting started, but if you imagine working at Facebook, if one person makes the buttons styled a little differently, the entire website updates. With thousands of people working together, there’s no way they can all keep track of changes like that.
 
-One of the really interesting features of Next.js is that you can encapsulate styling inside a React component. If you go back to `pages/index.js`, add a `<style>` tag just like this.
+One of the really interesting features of Next.js is that you can encapsulate styling inside a React component. Go back to `pages/index.js`, and add a `<style>` tag just like this.
 
 ```js
 export default () => (
