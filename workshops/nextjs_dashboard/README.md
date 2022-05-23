@@ -4,7 +4,7 @@ description: News/weather personal dashboard built with React & Next.js
 author: '@lachlanjc'
 ---
 
-_(Note: this workshop assumes the React/Next.js skills explained in the [Next.js Starter](/nextjs_starter) workshop.)_
+_(Note: this workshop assumes you have the React/Next.js skills explained in the [Next.js Starter](/nextjs_starter) workshop.)_
 
 For your Next(.js) steps, we’re building a personal dashboard with React & Next.js that shows weather, news headlines, & whatever else you want. Let’s get going!
 
@@ -80,11 +80,11 @@ export default () => (
 
 Check out the preview—our components are working!
 
-We need a way to fetch the weather data from Dark Sky now. Luckily, there’s a handy library called [`isomorphic-unfetch`](https://github.com/axios/axios) to make it easy.
+We need a way to fetch the weather data from Dark Sky now. Luckily, there’s a handy library called [`isomorphic-unfetch`](https://www.npmjs.com/package/isomorphic-unfetch) to make it easy.
 
-Click “Packages” in the sidebar, then type in `axios`. Click and install it. In the terminal in the corner, you can see repl.it installing the library for you.
+Click “Packages” in the sidebar, then type in `isomorphic-unfetch`. Click and install it. In the terminal in the corner, you can see repl.it installing the library for you.
 
-Before we can add the fetching itself, we’ll need to show that data is loading. head back to `components/Weather.js`:
+Before we can add the fetching itself, we’ll need to show that data is loading. head back to `components/weather.js`:
 
 ```js
 import React, { Component } from 'react'
@@ -110,7 +110,7 @@ class Weather extends Component {
 export default Weather
 ```
 
-(If your editor is showing a red dot next to `state =`, ignore it. We’re using some new JavaScript syntax some editors don’t know about.)
+(If your editor is showing a red dot next to `state =`, ignore it. We’re using some new JavaScript syntax some editors don’t know about).
 
 Now, when the component “mounts” (is initialized on the page), let’s fetch the weather and save it to our state. Remember, every time we call `setState` in React, the component re-renders, so the new temperature will show as soon as it’s loaded.
 
