@@ -213,7 +213,7 @@ No vale mirar, la solución es:
 
 ### Mejoremos nuestro sitio✨
 
-¡Hurra! Acabas de hacer algo espectacular, ¡hágamoslo aún mejor!
+¡Hurra! Acabas de hacer algo asombroso, ¡hágamoslo aún mejor!
 
 Igual y te diste cuenta que algunas veces obtenemos un bot o un usuario inactivo, ¡queremos personas que podamos conocer! Todos amamos a Orfeo, pero no es una persona real y tampoco lo es `@wb_bot_a01a9mk4fqw`.
 
@@ -247,4 +247,4 @@ Si no sabes qué hacer, aquí hay algunos ejemplos de siguientes pasos:
 * ¿Quieres obtener un usuario específico? Sam Poder construyó una versión que te permite hacerlo si agregas un nombre de usuario a la URL, [prueba obteniendo a Sam aquí](https://meet-hackclub.vercel.app/sampoder). 
 * ¿Qué otros datos podemos conseguir? Podemos obtener una publicación del Scrapbook de alguien, ¡tal como [Sam hizo aquí](https://meet-hackclub.vercel.app/post-ver)!
 
-¿Estás haciendo algo cool? ¡Fascinate! ¡Compártelo en [#ship](https://hackclub.slack.com/archives/C0M8PUPU6/) en Slack y taggea a [@sampoder](https://hackclub.slack.com/archives/DT08DHJKF/)!
+¿Estás haciendo algo cool? ¡Asombroso! ¡Compártelo en [#ship](https://hackclub.slack.com/archives/C0M8PUPU6/) en Slack y taggea a [@sampoder](https://hackclub.slack.com/archives/DT08DHJKF/)!
