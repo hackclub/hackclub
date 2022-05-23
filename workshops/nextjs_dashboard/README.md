@@ -28,7 +28,7 @@ export default () => (
     <h1>Welcome, YOURNAME!</h1>
     <p>
       Powered by <a href="https://newsapi.org/">NewsAPI</a> and{' '}
-      <a href="https://darksky.net/poweredby/">Dark Sky</a>
+      <a href="https://openweathermap.org/">Open Weather API</a>
     </p>
   </div>
 )
@@ -36,7 +36,7 @@ export default () => (
 
 ## Registering for API keys
 
-Before we begin coding, you’ll need to sign up for a [Dark Sky API key](https://darksky.net/dev/). Go ahead and visit the site and sign up. Once you’re logged in, you’ll reach a page that says “Your Secret Key.” Leave this site open, you’ll need the key in just a moment.
+Before we begin coding, you’ll need to sign up for a [Open Weather API key](https://home.openweathermap.org/users/sign_up). Go ahead and visit the site and sign up. Once you’re logged in, go to the API keys tab. Leave this page open, you’ll need the key in just a moment.
 
 Go sign up for an [News API key](https://newsapi.org/). After signing up, you’ll see “API key.” Also keep this open.
 
@@ -44,12 +44,12 @@ Go sign up for an [News API key](https://newsapi.org/). After signing up, you’
 
 First, let’s make a Weather component. Click ”New File,” then enter `components/weather.js`.
 
-Let’s get started: (be sure to replace the key with your Dark Sky key)
+Let’s get started: (be sure to replace the key with your Open Weather key)
 
 ```js
 import React, { Component } from 'react'
 
-const API_KEY = 'MY_DARK_SKY_KEY'
+const API_KEY = 'MY_OPEN_WEATHER_KEY'
 
 class Weather extends Component {
   render() {
@@ -118,7 +118,7 @@ Now, when the component “mounts” (is initialized on the page), let’s fetch
 import React, { Component } from 'react'
 import fetch from 'isomorphic-unfetch'
 
-const API_KEY = 'ba95c43d421868c0b135e734fde3f264'
+const API_KEY = '…'
 
 class Weather extends Component {
   state = {
@@ -128,11 +128,11 @@ class Weather extends Component {
 
   componentDidMount() {
     const url =
-      'https://cors-anywhere.herokuapp.com/https://api.forecast.io/forecast/'
+      'https://api.openweathermap.org/data/2.5/weather'
 
     const success = (position) => {
       const { latitude, longitude } = position.coords
-      fetch(`${url}${API_KEY}/${latitude},${longitude}`)
+      fetch(`${url}?lat=${latitude}&lon=${longitude}&units=imperial&appid=${API_KEY}`)
         .then((res) => res.json())
         .then((forecast) => this.setState({ forecast, currently: 'success' }))
         .catch(() => this.setState({ currently: 'error' }))
@@ -154,19 +154,19 @@ class Weather extends Component {
           <>
             <div className="stat">
               <p className="label">Currently</p>
-              <p className="value">{forecast.currently.summary}</p>
+              <p className="value">{forecast.weather[0].main}</p>
             </div>
             <div className="stat">
               <p className="label">Temperature</p>
-              <p className="value">{forecast.currently.temperature}º</p>
+              <p className="value">{forecast.main.temp}º</p>
             </div>
             <p>
-              <span className="label">Right now</span>
-              {forecast.hourly.summary}
+              <span className="label">Pressure & Wind Speed</span>
+              {forecast.main.pressure} hPa - {forecast.wind.speed} miles/hour
             </p>
             <p>
-              <span className="label">This week</span>
-              {forecast.daily.summary}
+              <span className="label">City</span>
+              {forecast.name}, {forecast.sys.country}
             </p>
           </>
         ) : currently === 'error' ? (
@@ -181,8 +181,6 @@ class Weather extends Component {
 
 export default Weather
 ```
-
-On the `const url` line, you’ll notice we’re using this other URL with `cors-anywhere` in it. This is an inelegant hack to get our site working: Dark Sky only wants you to make “proper” requests from your servers, but since we just want to get this working in our browser, we’re using this other utility.
 
 ## Getting the news headlines
 
@@ -250,7 +248,7 @@ export default () => (
     <News />
     <footer>
       Powered by <a href="https://newsapi.org/">NewsAPI</a> and{' '}
-      <a href="https://darksky.net/poweredby/">Dark Sky</a>
+      <a href="https://openweathermap.org/">Open Weather API</a>
     </footer>
   </div>
 )
