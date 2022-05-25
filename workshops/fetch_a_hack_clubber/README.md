@@ -2,6 +2,7 @@
 name: Fetch a Hack Clubber
 description: Learn data-fetching with Next.js and meet someone new!
 author: '@sampoder'
+locales: 'es-xl'
 img: 'https://cloud-a1hqcjanz.vercel.app/ezgif-7-3455d319b9c1.gif'
 ---
 
@@ -61,7 +62,7 @@ Take a look at the code, the basic explanation is:
 
   * These are very similar to HTML elements
   
-  * To style elments we add a class by adding a code snippet like `className={styles.card}` to the element.
+  * To style elements we add a class by adding a code snippet like `className={styles.card}` to the element.
   
 > Sidenote: I'd like to give credit to everyone who contributed to `create-next-app` as the starter code that you're using was based on their project. Thank you for your tireless efforts.
 
@@ -147,11 +148,11 @@ We've got the data, now we need to get it onto the site!
 
 ### Displaying our data
 
-In Next.js we can use any variable in our page using by putting it in curly braces (`{}`). For example if we wanted to use the person's username we could use `{props.user.username}`. 
+In Next.js we can use any variable in our page by putting it in curly braces (`{}`). For example if we wanted to use the person's username we could use `{props.user.username}`. 
 
 Let's get started by changing `sampoder` to `{props.user.username}` in our `h1` tag. Try reloading the site, you should now see a random username on every new load. Can you do the same by changing the source image for the avatar? The variable is `{props.user.avatar}`.
 
-Now we need to change the links to use our variables. This is a bit more of a challenge, we're going to want to replace `{"https://hackclub.slack.com/team/USNPNJXNX"}` with `{"https://hackclub.slack.com/team/" + props.user.slack}` to get the Slack link to work. Knowing that our Scrapbook username is `props.user.scrapbook` can you do the same for the Scrapbook link?
+Now we need to change the links to use our variables. This is a bit more of a challenge, we're going to want to replace `{"https://hackclub.slack.com/team/USNPNJXNX"}` with `{"https://hackclub.slack.com/team/" + props.user.slack}` to get the Slack link to work. Knowing that our Scrapbook username is `props.user.scrapbook`, can you do the same for the Scrapbook link?
 
 At the moment your code inside `main` should look like:
 
@@ -195,7 +196,7 @@ You may notice that we're not displaying all the data we have :( The other two p
 
 Challenge! Can you do the same for the website link? The variable is: `{props.user.website}`.
 
-No peaking, the solution is:
+No peeking, the solution is:
 
 ```javascript
 {props.user.website && (
@@ -244,7 +245,7 @@ With great data, comes great oppourtinity! There's a lot we can do with this dat
 Not sure where to go, here a few examples of next steps:
 
 * Using the custom CSS from Scrapbook, [this version of the project](https://meet-hackclub.vercel.app) makes each profile more personal!
-* Want to get a specfic user? I've built a version that allows you to do that by appending their username to the URL, [find me here](https://meet-hackclub.vercel.app/sampoder). 
+* Want to get a specific user? I've built a version that allows you to do that by appending their username to the URL, [find me here](https://meet-hackclub.vercel.app/sampoder). 
 * What more data could we get? We could get a post of their's from Scrapbook, like [I did here](https://meet-hackclub.vercel.app/post-ver)!
 
 Make something cool? Awesomeeee!!!! Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6/) in the Slack and tag me with [@sampoder](https://hackclub.slack.com/archives/DT08DHJKF/)!
