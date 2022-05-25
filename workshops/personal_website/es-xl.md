@@ -1,5 +1,5 @@
 ---
-name: 'Sitio web personal'
+name: 'Sitio Web Personal'
 description: 'Crea tu primer sitio web desde cero'
 author: '@MaxWofford, @J-cordz'
 ---
