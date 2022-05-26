@@ -67,7 +67,7 @@ Ya tenemos nuestra etiqueta `<h1>`, así que lo único que tenemos que hacer es 
 
 Ahora todo debería de funcionar... ¿o no? Intenta y mira lo que pasa.
 
-[Un video mostrando números siendo impresos en la consola del navegador cada que damos clic, sin que se actualice la página](https://cloud-rbqvdgtkm.vercel.app/0screen_recording_2020-11-20_at_10.04.52_pm.gif)
+![Un video mostrando números siendo impresos en la consola del navegador cada que damos clic, sin que se actualice la página](https://cloud-rbqvdgtkm.vercel.app/0screen_recording_2020-11-20_at_10.04.52_pm.gif)
 
 Como puedes ver, la variable está incrementando cada que damos clic (podemos saberlo porque vemos la cuenta actualizada siendo impresa en la consola). Pero, por alguna razón, nuestra página no se actualiza. ¿Por qué? Bueno, tenemos que decirle explícitamente a React que re-renderice un cierto componente cuando queramos actualizarlo - si no, se quedará igual que como estaba en el renderizado inicial. ¿Cómo hacemos eso? Ahí es donde el hook `useState()` de React entra al juego. 
 
