@@ -2,6 +2,7 @@
 name: 'Clicker Game'
 description: 'Build your own clicker game using React!'
 author: '@jasonappah'
+locales: 'es-xl'
 img: 'https://cloud-a2dkhe77f.vercel.app/0screen_shot_2020-12-26_at_12.20.26_am.png'
 ---
 
@@ -171,4 +172,3 @@ Yay! Everything works! Here are some ideas you could use to change up your game:
 - Add sounds every time you click (check out the [`use-sound` hook here](https://github.com/joshwcomeau/use-sound), and take a look at [this example](https://repl.it/@JasonAntwiAppah/finished-clicker-game-with-sound))
 - Create a [click per second (CPS) calculator](https://cpstest.org/)
 - Edit `App.css` to completely change the styling and give your game a theme, like [this cookie clicker game?](https://orteil.dashnet.org/cookieclicker/)
-
