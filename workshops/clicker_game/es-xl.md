@@ -69,7 +69,8 @@ Ahora todo debería de funcionar... ¿o no? Intenta y mira lo que pasa.
 
 [Un video mostrando números siendo impresos en la consola del navegador cada que damos clic, sin que se actualice la página](https://cloud-rbqvdgtkm.vercel.app/0screen_recording_2020-11-20_at_10.04.52_pm.gif)
 
-Como puedes ver, la variable está incrementando cada que damos clic (podemos saberlo porque vemos la cuenta actualizada siendo impresa en la consola). Pero, por alguna razón, nuestra página no se actualiza. ¿Porqué? Bueno, tenemos que decirle explícitamente a React que re-renderice un cierto componente cuando queramos actualizarlo - si no, se quedará igual que como estaba en el renderizado inicial. ¿Cómo hacemos eso? Ahí es donde el hook `useState()` de React entra al juego. 
+Como puedes ver, la variable está incrementando cada que damos clic (podemos saberlo porque vemos la cuenta actualizada siendo impresa en la consola). Pero, por alguna razón, nuestra página no se actualiza. ¿Por qué? Bueno, tenemos que decirle explícitamente a React que re-renderice un cierto componente cuando queramos actualizarlo - si no, se quedará igual que como estaba en el renderizado inicial. ¿Cómo hacemos eso? Ahí es donde el hook `useState()` de React entra al juego. 
+
 
 `useState()` es una función que retorna 2 cosas: una variable y una función. La variable se comporta como una variable regular y podemos establecerle cualquier valor, pero para editarla, tenemos que usar la función. Cuando usas la función para editar la variable, también se re-renderiza el componente - por lo que la variable será actualizada en todos los lugares del componente donde es usada. Aquí hay un ejemplo rápido de cómo funciona `useState()`.
 
