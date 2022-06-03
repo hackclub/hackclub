@@ -23,9 +23,11 @@ Hack Club was founded by [a teenager](https://zachlatta.com) who dropped out of 
 | Use our logos & banners         | <https://hackclub.com/brand>         |
 | Follow us on Twitter            | <https://twitter.com/hackclub>       |
 
-## Contributing to [Workshops](https://workshops.hackclub.com/)
+## Contributing to [Hack Club](https://hackclub.com/)
 
-Contributions are welcome!
+Contributions are welcome! Feel free to submit a pull request with code changes, or open issues for suggestions or bug reports. In order to properly contribute first check out our [Contribution Guidelines](https://github.com/hackclub/hackclub/blob/main/CONTRIBUTING.md) which contains a set of guidelines which any contributions to any Hack Club repository must follow. 
+
+To make things easier on how to select a project to work on, we have made an [open source](https://github.com/hackclub/contribute) [website](https://contribute.hackclub.com/) that helps with the process!  
 
 If you need any help, please feel free to contact us at team@hackclub.com or on our [Slack](https://hackclub.com/slack).
 
