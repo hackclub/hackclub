@@ -3,7 +3,7 @@ name: 'Quotes Generator'
 description: 'Build a random quotes generator with ReactJS'
 author: '@faisalsayed10'
 img: 'https://cloud-kuvixvb93.vercel.app/0quotes-generator.png'
-locales: 'pt-br'
+locales: 'pt-br, es-xl'
 ---
 
 # Quotes Generator
