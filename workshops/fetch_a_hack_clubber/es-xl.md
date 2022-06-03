@@ -1,5 +1,5 @@
 ---
-name: Obten un Hack Clubber
+name: Obtén un Hack Clubber
 description: Aprende a obtener datos con Next.js y ¡conoce a alguien nuevo!
 author: '@sampoder, @davidballezaa'
 img: 'https://cloud-a1hqcjanz.vercel.app/ezgif-7-3455d319b9c1.gif'

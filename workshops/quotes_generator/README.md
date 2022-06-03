@@ -3,7 +3,7 @@ name: 'Quotes Generator'
 description: 'Build a random quotes generator with ReactJS'
 author: '@faisalsayed10'
 img: 'https://cloud-kuvixvb93.vercel.app/0quotes-generator.png'
-locales: 'pt-br'
+locales: 'pt-br, es-xl'
 ---
 
 # Quotes Generator
@@ -76,7 +76,7 @@ export default function App() {
 }
 ```
 
-We built a very basic UI for our project and everything is self-explanatory here. The `button` doesn't right now and also we haven't yet made any `API calls`. So let's start adding the main functionality.
+We built a very basic UI for our project and everything is self-explanatory here. The `button` doesn't work right now and also we haven't yet made any `API calls`. So let's start adding the main functionality.
 
 This is what your preview window should look like:
 
@@ -146,7 +146,7 @@ Our `async` function is complete and we can now use the data we got from the API
 
 Now if we take a look at the value stored inside our state, we'll notice that it is a whole big array consisting of 100s of objects containing quotes! 
 
-![Image of the state containing 1000s of quotes](https://cloud-7drh3ecj9.vercel.app/0image.png)
+![Image of the state containing 100s of quotes](https://cloud-7drh3ecj9.vercel.app/0image.png)
 
 **NOTE:** You can check this in the codeSandbox's `React DevTools` (next to the console).
 
@@ -218,7 +218,7 @@ export default function App() {
 
 </details>
 
-The next thing we want to implement is that we want to get a random quote everytime our website is loaded. This can easily be done by creating a  `useEffect` hook inside our component, calling our `getQuotes()` function in it and passing an empty dependency array to it.
+The next thing we want to implement is that we want to get a random quote everytime our website is loaded. This can easily be done by creating a `useEffect` hook inside our component, calling our `getQuotes()` function in it and passing an empty dependency array to it.
 
 ![useEffect's photo](https://cloud-q749otmin.vercel.app/0image.png)
 
