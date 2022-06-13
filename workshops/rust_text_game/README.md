@@ -420,5 +420,3 @@ You can also check out [this remix](https://repl.it/@cfanoulis/stickerquest-para
 - [The Rust Programming Language - an in-depth guide to Rust. This workshop has been inspired by Chapter 2 of the book](https://doc.rust-lang.org/book)
 - [Rust By Example - For those that prefer code examples rather than pages of documentation](https://doc.rust-lang.org/stable/rust-by-example/)
 - [Rust's learning resources page - including guides to advanced courses on other topics](https://www.rust-lang.org/learn)
-
-You may also be interested in listening to [Charalampos's mixtape](https://hackropolis.club/mixtape). Shameless plug, I know.
