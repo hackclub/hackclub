@@ -417,6 +417,4 @@ Você também pode conferir [este remix](https://repl.it/@hcbjcentro/StickerQues
 - [Rust By Example - Para aqueles que preferem exemplos de código em vez de páginas de documentação](https://doc.rust-lang.org/stable/rust-by-example/)
 - [Rust's learning resources page - incluindo guias para cursos avançados sobre outros tópicos](https://www.rust-lang.org/learn)
 
-Você também pode estar interessado em ouvir [a mixtape do Charalampos](https://hackropolis.club/mixtape). Propaganda sem vergonha, eu sei.
-
 Agora que você terminou de construir este maravilhoso projeto, compartilhe sua bela criação com outras pessoas! Lembre-se, é só mandar a URL do seu projeto!
