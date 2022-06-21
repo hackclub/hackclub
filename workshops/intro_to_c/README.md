@@ -25,7 +25,13 @@ We'll be building a small number-guessing game in C. If you follow this tutorial
 
 ```shell
 $ ./guess
-
+sorry, that's not the correct answer
+input :: 38
+sorry, that's not the correct answer
+input :: 23
+sorry, that's not the correct answer
+input :: 12
+you guessed it!
 ```
 
 ## Let's code
