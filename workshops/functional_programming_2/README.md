@@ -81,10 +81,10 @@ Suppose you have a function sum(a,b), it takes two numbers and add them and then
 ```js
 
 function sum(a,b){
-         return a+b
+  return a+b;
 }
 
-console.log(“The sum of 5 and 2 is”, sum(5+2))
+console.log(“The sum of 5 and 2 is”, sum(5, 2))
 
 //  Output:- The sum of 5 and 2 is 7
 
@@ -94,26 +94,26 @@ Hmm, So this was simple! Where is the real challenge? Okay! So, what if I tell y
 ```js
 
 function inc_1(a){
-return a+1;
+  return a+1;
 }
 
 
 function inc_2(a){
-return a+2;
+  return a+2;
 }
 
 
 function inc_3(a){
-return a+2;
+  return a+3;
 }
 
-console.log(‘1 increase 1 times is’,inc_1(1)) // Output: 1 increase 1 times is 2
-console.log(‘1 increase 2 times is’,inc_2(1)) // Output: 1 increase 1 times is 3
-console.log(‘1 increase 3 times is’,inc_3(1)) // Output: 1 increase 1 times is 4
+console.log(‘1 increased 1 times is’,inc_1(1)) // Output: 1 increased 1 times is 2
+console.log(‘1 increased 2 times is’,inc_2(1)) // Output: 1 increased 1 times is 3
+console.log(‘1 increased 3 times is’,inc_3(1)) // Output: 1 increased 1 times is 4
 
 ```
 
-You see the problem here inc_1,inc_2, and inc_3 all three of them are doing the same thing, i.e all of them are basically the addition of a number with different values, but we already have a function sum(a,b) for that remember.
+You see the problem here inc_1, inc_2, and inc_3 all three of them are doing the same thing, i.e all of them are basically the addition of a number with different values, but we already have a function sum(a,b) for that remember.
 
 <img src="https://media.giphy.com/media/3oKIPl97G9KsnxS3XG/giphy.gif" alt="hmmmmmmm gif" width="" />
 
