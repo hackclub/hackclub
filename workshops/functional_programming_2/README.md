@@ -84,7 +84,7 @@ function sum(a,b){
          return a+b
 }
 
-console.log(“The sum of 5 and 2 is”, sum(5+2))
+console.log("The sum of 5 and 2 is", sum(5+2))
 
 //  Output:- The sum of 5 and 2 is 7
 
