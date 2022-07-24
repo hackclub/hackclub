@@ -97,7 +97,7 @@ if (choice == '1'):
 - Then, we write the hashed password to the `save.dat` file.
 - Finally, we close the file to save our changes.
   
-To add a little flair at the end, we will add some colored text to confirm that the user successfully signed up. On the left side of repl.it, create a new file named `FColors.py`.
+To add a little flair at the end, we will add some colored text to confirm that the user successfully signed up. On the left side of repl.it, create a new file named `FColor.py`.
 
 ![CreateNewFile](https://i.imgur.com/KV8rndQ.png)
 
@@ -107,7 +107,7 @@ The colors we will be using are referred to as ANSI escape sequences. Each seque
 
 Let's define some constant strings. Each string will represent an ANSI escape sequence for a certain terminal color. It is a convention to capitalize all letters in a constant variable.
 
-Let's define these colors in `FColors.py`:
+Let's define these colors in `FColor.py`:
 
 ```py
 RED   = '\u001b[31m'
