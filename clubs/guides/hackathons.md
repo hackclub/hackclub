@@ -2,6 +2,10 @@
 
 Here are a couple of resources related to hackathons that are wonderful:
 
+- https://github.com/hackclub/assemble
+- https://github.com/hackclub/the-hacker-zephyr
+- https://hackclub.com/hackathons/
+- https://hackclub.com/bank/
 - https://hackclub.com/sponsorship/
 - https://hackathons.hackclub.com/
 - https://notebook.lachlanjc.com/2020-01-19_how_to_start_your_first_hackathon/
