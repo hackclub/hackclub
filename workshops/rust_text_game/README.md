@@ -54,7 +54,7 @@ src
 
 ### Part 2.1: The Manifest (Cargo.toml)
 
-The `cargo.toml` file is you project's manifest, which describes your project & its dependencies. Here's how an example `Cargo.toml` file would look like:
+The `cargo.toml` file is your project's manifest, which describes your project & its dependencies. Here's how an example `Cargo.toml` file would look like:
 
 `Cargo.toml`:
 
