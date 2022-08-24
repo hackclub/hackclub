@@ -1,5 +1,5 @@
 ---
-name: Password cracker with python!
+name: Password cracker with Python!
 description: Learn how to create a password cracker with Python!
 author: '@bajpai244'
 ---
