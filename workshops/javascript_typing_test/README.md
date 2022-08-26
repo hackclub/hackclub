@@ -135,7 +135,7 @@ We add a listener on the JavaScript ```document``` variable, using JavaScript's 
 
 The first argument is the ```'keydown'``` string. This string tells the listener to activate once any key is pressed down. The second argument is a function. That function is called whenever our listener picks up a ```'keydown'``` event. The function takes one argument: the ```event``` variable. This variable contains information about our event.
 
-The function we use first checks if ```event.key``` is a space (empty string). It does this by using the ```===``` operator. That operator compares two values. If they are the same it returns ```true```. To check what ```event```'s properties are on a certain keypress, check out [keycode.info](keycode.info).
+The function we use first checks if ```event.key``` is a space (empty string). It does this by using the ```===``` operator. That operator compares two values. If they are the same it returns ```true```. To check what ```event```'s properties are on a certain keypress, check out [keycode.info](https://keycode.info).
 
 ```event.key``` returns the literal string representation of the key that was pressed. If it is a space, we use the ```event``` [```preventDefault()```](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) function. That function prevents the normal behavior of the key. Without this, whenever we type a space the page scrolls automatically to the end (which is very annoying).
 
