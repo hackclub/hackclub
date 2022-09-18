@@ -1,5 +1,3 @@
-> The following is the contents of our old Confluence page, a resource for (& written by) our club leaders. Now that we've stopped using Confluence I'll do my best to translate the old documents to markdown and archive them here here in our main hackclub/hackclub repo. -@msw
-
 Sometimes, clubs make you feel:
 
 ![](https://cloud-iok6gwa5x.vercel.app/0image__1_.png)
