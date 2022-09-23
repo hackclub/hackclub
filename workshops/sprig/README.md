@@ -1,4 +1,4 @@
-# Running a Sprig Workshop
+# Running a [Sprig](https://editor.sprig.hackclub.com) Workshop
 
 <p align="center">
 <img width="500" alt="Screen Shot 2022-09-23 at 4 41 25 PM" src="https://user-images.githubusercontent.com/27078897/192053140-3bf9cc19-0aa4-4cdb-9845-e4fdf04f2286.jpg">
