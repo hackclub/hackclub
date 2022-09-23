@@ -43,7 +43,7 @@ To save add a name like so:
 
 And then hit `save`.
 
-Recent files are available in the menu. An asterixis nect to file means your current changes are unsaved. Files are saved in local storage in your browser. They will only be accessible on the computer you are currently using and the browser you are using. **The most reliable way to save is to downlad the `js` file**.
+Recent files are available in the menu. An asterisk next to file means your current changes are unsaved. Files are saved in local storage in your browser. They will only be accessible on the computer you are currently using and the browser you are using. **The most reliable way to save is to downlad the `js` file**.
 
 ## Tell People to Get Hackin'! (most of the time)
 
