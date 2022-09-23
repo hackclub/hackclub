@@ -16,6 +16,10 @@ We designed Sprig to accomodate workshops with minimal instruction and maximal m
 
 Give a quick demonstration of a fairly complete game with accessible code. You can go to the [gallery](https://sprig.hackclub.com/gallery) and sort by the `beginner` tag.
 
+<p align="center">
+<img width="500" alt="Screen Shot 2022-09-23 at 5 00 24 PM" src="https://user-images.githubusercontent.com/27078897/192056026-c4c5492d-00e8-44fb-be35-6b74a1c3bfe2.png">
+</p>
+
 Here are a few games that meet the criteria:
 
 - [Sokoban](https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/sokoban.js)
@@ -46,10 +50,6 @@ Recent files are available in the menu. An asterixis nect to file means your cur
 Tell people to start by working through the [tutorial](https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/getting_started.js).
 
 After people complete the tutorial encourge them to start thinking of their own game. Often a good way to make and original game is to start with an existing one and adding a new mechanic to it. Check out the games tagged `hackable` to find remixable bases.
-
-<p align="center">
-<img width="500" alt="Screen Shot 2022-09-23 at 5 00 24 PM" src="https://user-images.githubusercontent.com/27078897/192056026-c4c5492d-00e8-44fb-be35-6b74a1c3bfe2.png">
-</p>
 
 ## Share
 
