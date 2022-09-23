@@ -30,7 +30,7 @@ Here are a few games that meet the criteria:
 
 Open up the toolkit and quickly describe the different things you can do. The point here is not to explain every function. It's just to give people a sense of what is possible and where to look for help. Only spend a few minutes doing this! Check out [the snippet below](#toolkit) to survey essentially every function in Sprig.
 
-Make sure you tell people how to save files.
+Make sure you **tell people how to save files**.
 
 To save add a name like so:
 
@@ -43,7 +43,7 @@ To save add a name like so:
 
 And then hit `save`.
 
-Recent files are available in the menu. An asterixis nect to file means your current changes are unsaved. Files are saved in local storage in your browser. They will only be accessible on the computer you are currently using and the browser you are using. The most reliable way to save is to downlad the `js` file.
+Recent files are available in the menu. An asterixis nect to file means your current changes are unsaved. Files are saved in local storage in your browser. They will only be accessible on the computer you are currently using and the browser you are using. **The most reliable way to save is to downlad the `js` file**.
 
 ## Tell People to Get Hackin'!
 
