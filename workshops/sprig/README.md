@@ -1,10 +1,14 @@
 # Running a Sprig Workshop
 
+<p align="center">
 <img width="500" alt="Screen Shot 2022-09-23 at 4 41 25 PM" src="https://user-images.githubusercontent.com/27078897/192053140-3bf9cc19-0aa4-4cdb-9845-e4fdf04f2286.jpg">
+</p>
 
 [Sprig](https://editor.sprig.hackclub.com/) is a tool developed by Hack Club to help people quickly get started making interesting tile-games. It's a tiny game engine embedded in a web-based editor with integrated art and music tools. If you build a game in Sprig and share it in the community gallery you can get a [Sprig Console](https://sprig.hackclub.com)!
 
+<p align="center">
 <img width="500" alt="Screen Shot 2022-09-23 at 4 41 25 PM" src="https://user-images.githubusercontent.com/27078897/192053241-51cd9891-2e13-482c-b5e0-2d285b87f62c.png">
+</p>
 
 We designed Sprig to accomodate workshops with minimal instruction and maximal making and exploring. This is how I would run Sprig as a workshop.
 
@@ -43,6 +47,10 @@ Tell people to start by working through the [tutorial](https://editor.sprig.hack
 
 After people complete the tutorial encourge them to start thinking of their own game. Often a good way to make and original game is to start with an existing one and adding a new mechanic to it. Check out the games tagged `hackable` to find remixable bases.
 
+<p align="center">
+<img width="500" alt="Screen Shot 2022-09-23 at 5 00 24 PM" src="https://user-images.githubusercontent.com/27078897/192056026-c4c5492d-00e8-44fb-be35-6b74a1c3bfe2.png">
+</p>
+
 ## Share
 
 Gather everyone's attention and have them share their games with you. Ask if anyone would like to demo their game to the group. Celebrate the work and use it as a chance for each person to get feedback, inspiration, and affirmation.
@@ -53,9 +61,7 @@ If the games are not complete encourage people to keep working on them and plan 
 
 # Reference
 
-<a name="toolkit">The Toolkit</a>
-
-For more information on these functions check the `help` menu.
+<a name="toolkit">The Toolkit.</a> For more information on these functions check the `help` menu.
 
 ```js
 const player = "p";
