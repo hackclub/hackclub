@@ -273,7 +273,6 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 **Websites Made by Other Hack Club Hackers:**
 
-- [Japroz Saini](https://japrozsaini.me/)
 - [Malte I. Lauterbach](https://patakh.com/)
 - [Kognise](https://kognise.dev/)
 - [Celeste](https://celeste.exposed/)
