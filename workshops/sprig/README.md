@@ -7,13 +7,13 @@ img: "https://user-images.githubusercontent.com/27078897/192363683-dc202e64-bf3b
 
 # Running a [Sprig](https://editor.sprig.hackclub.com) Workshop
 
-> This workshop is designed to help club leaders use Sprig in their clubs. 
-> If you are a solo hacker you can jump straight into the [Sprig editor](https://editor.sprig.hackclub.com).
-> You may be able to pick up some helpful tips reading through this though.
-
 <img width="500" alt="Screen Shot 2022-09-23 at 4 41 25 PM" src="https://user-images.githubusercontent.com/27078897/192053140-3bf9cc19-0aa4-4cdb-9845-e4fdf04f2286.jpg">
 
 [Sprig](https://editor.sprig.hackclub.com/) is a tool developed by Hack Club to help people quickly get started making interesting tile-games. It's a tiny game engine embedded in a web-based editor with integrated art and music tools. If you build a game in Sprig and share it in the community gallery you can get a [Sprig Console](https://sprig.hackclub.com)!
+
+> This workshop is designed to help club leaders use Sprig in their clubs. 
+> If you are a solo hacker you can jump straight into the [Sprig editor](https://editor.sprig.hackclub.com).
+> You may be able to pick up some helpful tips reading through this though.
 
 <img width="500" alt="Screen Shot 2022-09-23 at 4 41 25 PM" src="https://user-images.githubusercontent.com/27078897/192053241-51cd9891-2e13-482c-b5e0-2d285b87f62c.png">
 
