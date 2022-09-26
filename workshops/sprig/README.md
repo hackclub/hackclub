@@ -2,7 +2,7 @@
 name: 'Running a Sprig Workshop'
 description: 'Use the Sprig game editor in your club.'
 author: '@leomcelroy'
-img: ""
+img: "https://user-images.githubusercontent.com/27078897/192363683-dc202e64-bf3b-475f-81c1-18cd769a4b6e.png"
 ---
 
 # Running a [Sprig](https://editor.sprig.hackclub.com) Workshop
@@ -66,7 +66,7 @@ If the games are not complete encourage people to keep working on them and plan 
 You can also encourage people to share the games they have so far by posting links to those games in the [Sprig channel]() on Slack.
 You can generate a link by navigating to the `share` -> `as link` option in the file menu, as seen below:
 
-
+<img width="500" alt="Screen Shot 2022-09-23 at 4 41 25 PM" src="https://user-images.githubusercontent.com/27078897/192363738-35a5fa1e-d4e8-4b56-8ff1-878191ab8829.png" />
 
 People could easily spend 3 or 4 club meetings working on games.
 
