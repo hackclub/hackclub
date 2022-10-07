@@ -40,9 +40,7 @@ We think learning to code is uniquely like gaining a superpower: it converts you
 
 Hack Club is a community by and for teen hackers. Our software, past events, branding etc. have all been crafted by teenagers from around the world. We’re also an entirely open source organization—[our website](https://github.com/hackclub/site) to even [our finances](https://bank.hackclub.com/hq) are public.
 
-
-
-<img src="https://user-images.githubusercontent.com/39828164/194591327-6beb3ecc-9c2a-4749-9ade-a838c1ebd3c8.JPG" height="170px"> <img src="https://user-images.githubusercontent.com/39828164/194591959-84023281-11ed-488f-8802-55e5edf20ded.jpeg" height="170px" /> <img src="https://user-images.githubusercontent.com/39828164/194592333-7efd3cd6-65a3-461d-a1a4-f232731f1b1b.jpeg" height="170px" />
+<a href="https://hack.af/assemble-photos"><img src="https://user-images.githubusercontent.com/39828164/194591327-6beb3ecc-9c2a-4749-9ade-a838c1ebd3c8.JPG" height="170px"></a> <a href="https://photos.app.goo.gl/WB8H9xQUgTrN9m2r5"><img src="https://user-images.githubusercontent.com/39828164/194591959-84023281-11ed-488f-8802-55e5edf20ded.jpeg" height="170px" /> </a> <a href="https://photos.app.goo.gl/F5JDxq5FzfhofTMD9"><img src="https://user-images.githubusercontent.com/39828164/194592333-7efd3cd6-65a3-461d-a1a4-f232731f1b1b.jpeg" height="170px" /></a>
 
 ## 🔗 Quick Hack Club links
 
