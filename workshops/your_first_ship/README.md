@@ -20,7 +20,3 @@ It's fairly simple and you can run through it in around 10 minutes.
 ## Preparing for the workshop
 
 To prepare for the workshop the best thing to do is to familiarise yourself with the Slack joining process. Try going to [hackclub.com/slack](https://hackclub.com/slack) and making a dummy account to get a feel for it or run `/restart` to go through the Slack onboarding with Clippy. 
-
-## Club Channels
-
-You can customise the flow by having members be invited to your very own club channel! To get your custom link run `/slack-invite` on the Hack Club Slack as a leader and then the link will be at the end of the message.
