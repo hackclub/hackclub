@@ -60,7 +60,7 @@ Una vez que la gente haya completado el tutorial, anímala a que empiece a pensa
 
 Llama la atención de todos y pídeles que compartan sus juegos contigo. Pregunta si alguien quiere hacer una demostración de su juego al grupo. Celebra el trabajo de todos y aprovecha para que cada persona reciba comentarios, inspiración y afirmación.
 
-Si los juegos están completos, entonces [hacer un Pull Request](https://sprig.hackclub.com/share) para presentarlos a la galería y [ganar una consola Sprig](https://sprig.hackclub.com). 
+Si los juegos están completos, entonces puedes [hacer un Pull Request](https://sprig.hackclub.com/share) para presentarlos a la galería y [ganar una consola Sprig](https://sprig.hackclub.com). 
 
 Si los juegos no están completos, anima a la gente a seguir trabajando en ellos y planea seguir trabajando en estos en la próxima reunión del club.
 También puedes animar a la gente a compartir los juegos que tienen hasta ahora publicando enlaces a esos juegos en el [canal Sprig](https://hackclub.slack.com/archives/C02UN35M7LGs) en Slack.
