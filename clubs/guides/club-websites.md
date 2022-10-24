@@ -24,6 +24,7 @@ If you have issues, ping @msw on Slack.
 - [Fremont High School Hack Club](https://www.fhshackclub.com/)
 - [Palm Springs High School Hack Club](https://pshs.hackclub.com/)
 - [Westborough Hack Club](https://westborough.hackclub.com/)
+- [Pomperaug Hack Club](https://pomperaug.hackclub.com/)
 
 # Adding a Hack Club banner
 
