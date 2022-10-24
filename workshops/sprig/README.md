@@ -63,7 +63,7 @@ Gather everyone's attention and have them share their games with you. Ask if any
 If the games are complete then [make a PR](https://sprig.hackclub.com/share) to submit them to the gallery and [earn a Sprig console](https://sprig.hackclub.com). 
 
 If the games are not complete encourage people to keep working on them and plan to continue working in your next club meeting. 
-You can also encourage people to share the games they have so far by posting links to those games in the [Sprig channel]() on Slack.
+You can also encourage people to share the games they have so far by posting links to those games in the [Sprig channel](https://hackclub.slack.com/archives/C02UN35M7LG) on Slack.
 You can generate a link by navigating to the `share` -> `as link` option in the file menu, as seen below:
 
 <img width="500" alt="Screen Shot 2022-09-23 at 4 41 25 PM" src="https://user-images.githubusercontent.com/27078897/192363738-35a5fa1e-d4e8-4b56-8ff1-878191ab8829.png" />
