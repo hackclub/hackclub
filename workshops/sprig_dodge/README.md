@@ -8,9 +8,9 @@ img: 'TODO'
 In this workshop, we'll be building a dodging game using [Sprig](https://sprig.hackclub.com). The player will have to doge the falling obstacles to score points. Sprig is a JavaScript game engine that makes it easy for beginners and masters to make games, all in your browser.
 
 Basic JavaScript knowledge is recommended for this workshop.
-If you're not familar with Sprig, you can check out the [Getting Started Guide](https://github.com/hackclub/sprig/blob/main/docs/GETTING_STARTED.md) to learn the basics. 
+If you're not familar with Sprig, you can check out the [Getting Started Guide](https://github.com/hackclub/sprig/blob/main/docs/GETTING_STARTED.md) to learn the basics.
 
-Here's what your game could end up looking like:
+Here's what your game could end up looking like.
 ![TODO: Add a gif of the game]()
 [Live Demo](TODO: Add a link to the live demo)
 
@@ -29,13 +29,13 @@ Your file should look something like this:
 */
 ```
 
-Let's make it ours. Set the `@title` to the name of your game, in this case `dodging_game` and set the `@author` to your name.
+Let's make it ours. Set the `@title` to the name of your game and set the `@author` to your name.
 
 Mine looks something like this:
 
 ```js
 /*
-@title: dodging_game
+@title: dodge_the_fireball
 @author: sam liu
 */
 ```
@@ -56,7 +56,7 @@ const player = "p";
 const obstacle = "o";
 ```
 
-> `p` and `o` are assigned to our sprites, `player` and `obsatcle`, respectively. 
+> `p` and `o` are assigned to our sprites, `player` and `obstacle`, respectively. 
 
 ### b) Making art for the sprites
 
@@ -169,7 +169,7 @@ onInput("a", () => {
 
 > `onInput()` will run the code of the function when the key is pressed. <br> `getFirst()` will get the first sprite of that type. <br> We decrement its x position to move it left.
 
-This is similar to the code for moving right.
+The code for moving right is similar.
 
 ```js
 onInput("d", () => {
