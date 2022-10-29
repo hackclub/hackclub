@@ -163,7 +163,7 @@ A game is no fun if you cannot interact with it. We'll be adding controls to our
 
 ```js
 onInput("a", () => {
-  getFirst(player).y -= 1;
+  getFirst(player).x -= 1;
 });
 ```
 
@@ -173,7 +173,7 @@ This is similar to the code for moving right.
 
 ```js
 onInput("d", () => {
-  getFirst(player).y += 1;
+  getFirst(player).x += 1;
 });
 ```
 
