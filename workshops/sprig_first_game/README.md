@@ -537,4 +537,3 @@ afterInput(() => {
 });
 ```
 
-Sprig makes it easy to write fun games!
