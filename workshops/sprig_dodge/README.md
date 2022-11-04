@@ -10,7 +10,7 @@ In this workshop, we'll be building a dodging game using [Sprig](https://sprig.h
 Basic JavaScript knowledge is recommended for this workshop.
 If you're not familiar with Sprig, you can check out the [Getting Started Guide](https://github.com/hackclub/sprig/blob/main/docs/GETTING_STARTED.md) to learn the basics.
 
-Here's what your game could end up looking like.
+Here's what your game will end up looking like:
 
 ![A GIF of the game](https://cloud-2mv7g5tu2-hack-club-bot.vercel.app/0sprig.gif)
 
