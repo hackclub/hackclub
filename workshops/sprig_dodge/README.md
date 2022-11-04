@@ -14,7 +14,7 @@ Here's what your game will end up looking like:
 
 ![A GIF of the game](https://cloud-2mv7g5tu2-hack-club-bot.vercel.app/0sprig.gif)
 
-[Final Code](https://editor.sprig.hackclub.com/?id=85cfd61b0be21099942c4df571b11432)
+[Curious? Check out the final game's code & play it!](https://editor.sprig.hackclub.com/?id=85cfd61b0be21099942c4df571b11432)
 
 ## 1. Getting Started
 
