@@ -1,6 +1,6 @@
 ---
 name: 'Running a Sprig Workshop'
-description: 'Spice up your club meetings or hackathon with the Sprig game editor.'
+description: 'Spice up your club meetings or hackathon with Sprig.'
 author: '@leomcelroy'
 img: "https://user-images.githubusercontent.com/27078897/192053140-3bf9cc19-0aa4-4cdb-9845-e4fdf04f2286.jpg"
 ---
