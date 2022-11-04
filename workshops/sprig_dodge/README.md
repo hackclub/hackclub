@@ -8,7 +8,7 @@ img: 'https://cloud-ijhz85il3-hack-club-bot.vercel.app/0image.png'
 In this workshop, we'll be building a dodging game using [Sprig](https://sprig.hackclub.com). The player will have to doge the falling obstacles to score points. Sprig is a JavaScript game engine that makes it easy for beginners and masters to make games, all in your browser.
 
 Basic JavaScript knowledge is recommended for this workshop.
-If you're not familiar with Sprig, you can check out the [Getting Started Guide](https://github.com/hackclub/sprig/blob/main/docs/GETTING_STARTED.md) to learn the basics.
+If you're not familiar with Sprig, you can try making [your first Sprig game](https://workshops.hackclub.com/sprig_first_game/) to learn the basics.
 
 Here's what your game will end up looking like:
 
@@ -371,11 +371,11 @@ Once you think you're done, submit your modified game to the [Sprig Gallery](htt
 
 See [this guide](https://sprig.hackclub.com/share) for more details.
 
-Feel free to also share your work in the `#scrapbook` and `#sprig` channels on the [Hack Club Slack](https://hackclub.com/slack). I would love to see your creations.
+Feel free to also share your work in the `#scrapbook` and `#sprig` channels on the [Hack Club Slack](https://hackclub.com/slack). I would love to see your creations, mention me (`@samliu`)!
 
 Thank you so much for reading my first workshop. It was a lot of fun to make, and I hope you enjoyed it as well.
 
-### Happy Hacking
+**Happy Hacking**
 
 <details>
 <summary>Final Code</summary>
