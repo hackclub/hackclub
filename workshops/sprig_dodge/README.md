@@ -73,12 +73,12 @@ setLegend(
 ```
 
 > `setLegend()` will tell Sprig what image to display for each sprite.
- We put the obstacle on top as we want it to display above the player.
+> We put the obstacle on top as we want it to display above the player.
 
 Click on the green `bitmap` text to open the pixel editor. Select colors and tools on the right to draw your sprites in the 16x16 area. Be creative with your design.
 
 > The bitmap is stored as a string. You can click on the arrow next to the line number to expand or hide it.
- Each character represents a pixel and its color.
+> Each character represents a pixel and its color.
 
 <details>
 <summary>Here's what I came up with.</summary>
@@ -157,7 +157,7 @@ setMap(map`
 ```
 
 > Similar to the sprites, each character represents a sprite.
-The `.` represents an empty tile.
+> The `.` represents an empty tile.
 
 ## 4. Adding controls
 
@@ -170,8 +170,8 @@ onInput("a", () => {
 ```
 
 > `onInput()` will run the code of the function when the key is pressed.
- `getFirst()` will get the first sprite of that type.
- We decrement its x position to move it left.
+> `getFirst()` will get the first sprite of that type.
+> We decrement its x position to move it left.
 
 The code for moving right is similar.
 
@@ -204,7 +204,7 @@ function spawnObstacle() {
 ```
 
 > `Math.floor(Math.random() * 8)` will generate a random integer between 0 and 7.
- y is always 0 as we want the obstacle to spawn at the top.
+> y is always 0 as we want the obstacle to spawn at the top.
 
 ### b) Making the obstacles fall
 
@@ -223,7 +223,7 @@ function moveObstacles() {
 ```
 
 > `getAll()` will get all the sprites of that type.
- We increase the y value of each obstacle to make it move down.
+> We increase the y value of each obstacle to make it move down.
 
 ---
 
@@ -310,7 +310,7 @@ var gameLoop = setInterval(() => {
 ```
 
 > `setInterval()` allows us to repeat a function every x milliseconds.
- We set it to the `gameLoop` variable so we can stop it later when the game ends.
+> We set it to the `gameLoop` variable so we can stop it later when the game ends.
 
 We put the functions in this order, so the obstacles don't move the instant they spawn, and don't despawn the instant they move to the bottom. This ensures that the obstacles can appear at the top and the bottom.
 
@@ -345,7 +345,7 @@ We'll also modify our game loop to change the variable when the player looses. W
 ```
 
 > `addText()` will add text to the game.
- We set the color to `color`3` which is red.
+> We set the color to `color`3` which is red.
 
 We'll also modify our controls to only work when the game is running.
 
@@ -384,7 +384,7 @@ Feel free to also share your work in the `#scrapbook` and `#sprig` channels on t
 
 Thank you so much for reading my first workshop. It was a lot of fun to make, and I hope you enjoyed it as well.
 
-**Happy Hacking**
+**Happy Hacking!**
 
 <details>
 <summary>Final Code</summary>
