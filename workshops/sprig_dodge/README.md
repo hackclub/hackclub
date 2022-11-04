@@ -2,17 +2,19 @@
 name: 'Sprig Dodging Game'
 description: 'Doge falling obstacles. Learn how to make it using Sprig!'
 author: '@SamDev-7'
-img: 'TODO'
+img: 'https://cloud-ijhz85il3-hack-club-bot.vercel.app/0image.png'
 ---
 
 In this workshop, we'll be building a dodging game using [Sprig](https://sprig.hackclub.com). The player will have to doge the falling obstacles to score points. Sprig is a JavaScript game engine that makes it easy for beginners and masters to make games, all in your browser.
 
 Basic JavaScript knowledge is recommended for this workshop.
-If you're not familar with Sprig, you can check out the [Getting Started Guide](https://github.com/hackclub/sprig/blob/main/docs/GETTING_STARTED.md) to learn the basics.
+If you're not familiar with Sprig, you can check out the [Getting Started Guide](https://github.com/hackclub/sprig/blob/main/docs/GETTING_STARTED.md) to learn the basics.
 
 Here's what your game could end up looking like.
-![TODO: Add a gif of the game]()
-[Live Demo](TODO: Add a link to the live demo)
+
+![A gif of the game](https://cloud-2mv7g5tu2-hack-club-bot.vercel.app/0sprig.gif)
+
+[Final Code](https://editor.sprig.hackclub.com/?id=85cfd61b0be21099942c4df571b11432)
 
 ## 1. Getting Started
 
@@ -74,7 +76,6 @@ setLegend(
 
 Click on the green `bitmap` text to open the pixel editor. Select colors and tools on the right to draw your sprites in the 16x16 area. Be creative with your design.
 
-![TODO: Add a gif of the pixel editor]()
 > The bitmap is stored as a string. You can click on the arrow next to the line number to expand or hide it. <br> Each character represents a pixel and its color.
 
 <details>
@@ -194,9 +195,9 @@ Let's make a function that will randomly spawn a new obstacle.
 
 ```js
 function spawnObstacle() {
-  let x = Math.floor(Math.random() * 8); // Random integer between 0 and 7
-  let y = 0; // Make it start at the top
-  addSprite(x, y, obstacle); // Adding the obstacle
+  let x = Math.floor(Math.random() * 8);
+  let y = 0;
+  addSprite(x, y, obstacle);
 }
 ```
 
@@ -359,7 +360,7 @@ onInput("d", () => {
 });
 ```
 
-## 9. Hack it
+## What's next?
 
 The game works! However there currently isn't much.
 
@@ -370,3 +371,141 @@ It's up to you to add more features to the game. Here are some ideas.
 - Add powerups that fall from the sky.
 - Make the obstacles spawn faster over time.
 
+Once you think you're done submit your modified game to the [Sprig Gallery](https://sprig.hackclub.com/gallery)! Teenagers who get their game added will also receive a Sprig console kit (while supplies last).
+
+See [this guide](https://sprig.hackclub.com/share) for more details.
+
+Feel free to also share your work in the `#scrapbook` and `#sprig` channels on the [Hack Club Slack](https://hackclub.com/slack). I would love to see your creations.
+
+Thank you so much for reading my first workshop. It was a lot of fun to make and I hope you enjoyed it as well.
+
+### Happy Hacking!
+
+<details>
+<summary>Final Code</summary>
+
+```js
+/*
+@title: dodge_the_fireball
+@author: sam liu
+*/
+
+const player = "p";
+const obstacle = "o";
+
+setLegend(
+  [obstacle, bitmap`
+.......66.......
+........6.......
+.....66.6.6.....
+....66.66.66....
+....666666.6....
+...6699999966...
+...69999999966..
+..669999999996..
+..669933339996..
+..699333333996..
+..699333333996..
+...69333333996..
+...69333333996..
+...6993333996...
+....66999996....
+.....666666.....`],
+  [player, bitmap`
+................
+................
+................
+.....00000......
+....0.....0.....
+....0.0.0.0.....
+....0.....0.....
+....0.000.0.....
+....0.....0.....
+.....00000......
+.......0........
+.....00000......
+.......0........
+.......0........
+......0.0.......
+.....0...0......`]
+)
+
+setMap(map`
+........
+........
+........
+........
+........
+........
+........
+...p....`)
+
+var gameRunning = true; 
+
+onInput("a", () => {
+  if (gameRunning) {
+    getFirst(player).x -= 1;
+  }
+});
+
+onInput("d", () => {
+  if (gameRunning) {
+    getFirst(player).x += 1;
+  }
+});
+
+function spawnObstacle() {
+  let x = Math.floor(Math.random() * 8); // Random number between 0 and 7
+  let y = 0; // Make it start at the top
+  addSprite(x, y, obstacle); // Adding the obstacle
+}
+
+function moveObstacles() {
+  let obstacles = getAll(obstacle);
+
+  for (let i = 0; i < obstacles.length; i++) {
+    obstacles[i].y += 1;
+  }
+}
+
+function despawnObstacles() {
+  let obstacles = getAll(obstacle);
+
+  for (let i = 0; i < obstacles.length; i++) {
+   if (obstacles[i].y == 7) {
+     obstacles[i].remove();
+   }
+  }
+}
+
+function checkHit() {
+  let obstacles = getAll(obstacle);
+  let p = getFirst(player);
+
+  for (let i = 0; i < obstacles.length; i++) {
+    if (obstacles[i].x == p.x && obstacles[i].y == p.y) {
+      return true;
+    }
+  }
+
+  return false;
+}
+var gameLoop = setInterval(() => {
+  despawnObstacles();
+  moveObstacles();
+  spawnObstacle();
+
+  if (checkHit()) {
+    clearInterval(gameLoop);
+    gameRunning = false;
+    addText("Game Over!", {
+      x: 5,
+      y: 6,
+      color: color`3`
+    });
+  }
+
+}, 1000);
+```
+
+</details>
