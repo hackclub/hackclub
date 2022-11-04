@@ -124,7 +124,7 @@ setLegend(
 
 </details>
 
-Hit the run button to load the legend. Nothing will show up yet but This will allow us to make our map in the next step.
+Hit the `Run` button to load the legend. Nothing will show up yet but This will allow us to make our map in the next step.
 
 ## 3. Making the level
 
