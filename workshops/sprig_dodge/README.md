@@ -64,12 +64,13 @@ Add the following to your code.
 
 ```js
 setLegend(
-    [player, bitmap`...`],
-    [obstacle, bitmap`...`]
+  [obstacle, bitmap`...`],
+  [player, bitmap`...`]
+    
 );
 ```
 
-> `setLegend()` will tell Sprig what image to display for each sprite.
+> `setLegend()` will tell Sprig what image to display for each sprite. <br> We put the obstacle on top as we want it to display above the player.
 
 Click on the green `bitmap` text to open the pixel editor. Select colors and tools on the right to draw your sprites in the 16x16 area. Be creative with your design.
 
@@ -157,7 +158,7 @@ setMap(map`
 
 > Similar to the sprites, each character represents a sprite. <br> The `.` represents an empty tile.
 
-## 5. Adding controls
+## 4. Adding controls
 
 A game is no fun if you cannot interact with it. We'll be adding controls to our game so the player can move. Sprig allows for the use of `wasd` and `ijkl` keys. We'll be using `w` and `d` to move the player left and right.
 
@@ -183,5 +184,189 @@ In Sprig, the top left is `(0, 0)`.
 
 Run your game! We're now able to control the player with the `a` and `d` keys.
 
-## 6. Spawning in obstacles
+## 5. Spawning in obstacles
+
+A game isn't fun if it takes no effort to play. We'll be adding obstacles to our game so the player has to dodge them.
+
+### a) Making the obstacles spawn randomly
+
+Let's make a function that will randomly spawn a new obstacle.
+
+```js
+function spawnObstacle() {
+  let x = Math.floor(Math.random() * 8); // Random integer between 0 and 7
+  let y = 0; // Make it start at the top
+  addSprite(x, y, obstacle); // Adding the obstacle
+}
+```
+
+> `Math.floor(Math.random() * 8)` will generate a random integer between 0 and 7. <br> y is always 0 as we want the obstacle to spawn at the top.
+
+### b) Making the obstacles fall
+
+Nothing happens with the obstacle, because we haven't programmed that part yet. Let's do this!
+
+We'll loop through all the obstacles and move them down by one.
+
+```js
+function moveObstacles() {
+  let obstacles = getAll(obstacle);
+
+  for (let i = 0; i < obstacles.length; i++) {
+    obstacles[i].y += 1;
+  }
+}
+```
+
+> `getAll()` will get all the sprites of that type. <br> We increase the y value of each obstacle to make it move down.
+
+---
+
+Let's test what we have so far.
+
+Add the following to your code.
+
+```js
+spawnObstacle();
+```
+
+Woohoo! We have our first obstacle!
+
+Let's test the moving part.
+Append the following to your code.
+
+```js
+moveObstacles();
+moveObstacles();
+```
+
+Nice! The obstacle moved down twice as we called the function twice.
+
+We can remove the testing code now.
+
+### c) Making the obstacles despawn
+
+With the current code, the obstacles Never actually get removed.
+
+We need to make it despawn when it reaches the bottom. We can detect this when y = 7.
+
+```js
+function despawnObstacles() {
+  let obstacles = getAll(obstacle);
+
+  for (let i = 0; i < obstacles.length; i++) {
+    if (obstacles[i].y == 7) {
+      obstacles[i].remove();
+    }
+  }
+}
+```
+
+> `.remove()` will remove that sprite from the game.
+
+We'll be calling this function when we make the game loop.
+
+## 6. Detecting if the player gets hit
+
+We'll again write a function so we can use it in the game loop.
+
+```js
+function checkHit() {
+  let obstacles = getAll(obstacle);
+  let p = getFirst(player);
+
+  for (let i = 0; i < obstacles.length; i++) {
+    if (obstacles[i].x == p.x && obstacles[i].y == p.y) {
+      return true;
+    }
+  }
+
+  return false;
+}
+```
+
+> This function will loop through all obstacles and check if the player is on the same tile as the obstacle. If it is, it will return true.
+
+## 7. Main game loop
+
+We'll now be using all the functions we've created and putting them together in a main loop.
+
+```js
+var gameLoop = setInterval(() => {
+  despawnObstacles();
+  moveObstacles();
+  spawnObstacle();
+
+  if (checkHit()) {
+    clearInterval(gameLoop);
+  }
+
+}, 1000);
+```
+
+> `setInterval()` allows us to repeat a function every x milliseconds. <br> We set it to the `gameLoop` variable so we can stop it later when the game ends. 
+
+We put the functions in this order so the obstacles don't move the instant they spawn, and don't despawn the instant they move to the bottom. This ensures that the the obstacles can appear at the top and the bottom.
+
+---
+
+Run the game and see what happens!
+
+We can move around, the obstacles spawn and move down. When we lose, all the obstacles stop moving but the player can still move.
+
+We can fix this by creating a variable that stores if the game is running or not.
+
+
+## 8. Game over
+
+Let's create a variable right under `setMap()`.
+
+```js
+var gameRunning = true; 
+```
+
+We'll also modify our game loop to change the variable when the player looses. We'll also add a message to tell the player that they lost.
+
+```js
+  if (checkHit()) {
+    clearInterval(gameLoop);
+    gameRunning = false;
+    addText("Game Over!", {
+      x: 5,
+      y: 6,
+      color: color`3`
+    });
+  }
+```
+
+> `addText()` will add text to the game. <br> We set the color to `color`3` which is red.
+
+We'll also modify our controls to only work when the game is running.
+
+```js
+onInput("a", () => {
+  if (gameRunning) {
+    getFirst(player).x -= 1;
+  }
+});
+```
+
+```js
+onInput("d", () => {
+  if (gameRunning) {
+    getFirst(player).x += 1;
+  }
+});
+```
+
+## 9. Hack it
+
+The game works! However there currently isn't much.
+
+It's up to you to add more features to the game. Here are some ideas.
+
+- Add a score counter.
+- Add a background.
+- Add powerups that fall from the sky.
+- Make the obstacles spawn faster over time.
 
