@@ -120,7 +120,7 @@ setLegend(
 );
 ```
 
-> Your design probably will be different. <br> I tried my best, my art skills are not the best.
+> Experiment! Don't copy my design verbatim. 
 
 </details>
 
