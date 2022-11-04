@@ -4,7 +4,7 @@ description: 'Doge falling obstacles. Learn how to make it using Sprig!'
 author: '@SamDev-7'
 img: 'https://cloud-ijhz85il3-hack-club-bot.vercel.app/0image.png'
 ---
-
+ 
 In this workshop, we'll be building a dodging game using [Sprig](https://sprig.hackclub.com). The player will have to doge the falling obstacles to score points. Sprig is a JavaScript game engine that makes it easy for beginners and masters to make games, all in your browser.
 
 Basic JavaScript knowledge is recommended for this workshop.
@@ -12,7 +12,7 @@ If you're not familiar with Sprig, you can check out the [Getting Started Guide]
 
 Here's what your game could end up looking like.
 
-![A gif of the game](https://cloud-2mv7g5tu2-hack-club-bot.vercel.app/0sprig.gif)
+![A GIF of the game](https://cloud-2mv7g5tu2-hack-club-bot.vercel.app/0sprig.gif)
 
 [Final Code](https://editor.sprig.hackclub.com/?id=85cfd61b0be21099942c4df571b11432)
 
@@ -58,7 +58,7 @@ const player = "p";
 const obstacle = "o";
 ```
 
-> `p` and `o` are assigned to our sprites, `player` and `obstacle`, respectively. 
+> `p` and `o` are assigned to our sprites, `player` and `obstacle`, respectively.
 
 ### b) Making art for the sprites
 
@@ -68,7 +68,7 @@ Add the following to your code.
 setLegend(
   [obstacle, bitmap`...`],
   [player, bitmap`...`]
-    
+   
 );
 ```
 
@@ -136,12 +136,9 @@ The following code can be used to make and set the level map.
 setMap(map`.`);
 ```
 
-Similar to sprites, click on the green `map` text to open up the map editor. Use the `+` and `-` signs on the edges to expand ot shrink the map. We want to create a 8x8 map.
+Similar to sprites, click on the green `map` text to open up the map editor. Use the `+` and `-` signs on the edges to expand or to shrink the map. We want to create a 8x8 map.
 
 Our map will only contain the player. We will write code later to spawn in the obstacles.
-
-It should look something like this.
-![TODO: Add a img of the map editor]()
 
 The code after expanding should be similar to this.
 
@@ -161,7 +158,7 @@ setMap(map`
 
 ## 4. Adding controls
 
-A game is no fun if you cannot interact with it. We'll be adding controls to our game so the player can move. Sprig allows for the use of `wasd` and `ijkl` keys. We'll be using `w` and `d` to move the player left and right.
+A game is no fun if you cannot interact with it. We'll be adding controls to our game, so the player can move. Sprig allows for the use of `wasd` and `ijkl` keys. We'll be using `w` and `d` to move the player left and right.
 
 ```js
 onInput("a", () => {
@@ -187,7 +184,7 @@ Run your game! We're now able to control the player with the `a` and `d` keys.
 
 ## 5. Spawning in obstacles
 
-A game isn't fun if it takes no effort to play. We'll be adding obstacles to our game so the player has to dodge them.
+A game isn't fun if it takes no effort to play. We'll be adding obstacles to our game, so the player has to dodge them.
 
 ### a) Making the obstacles spawn randomly
 
@@ -212,7 +209,7 @@ We'll loop through all the obstacles and move them down by one.
 ```js
 function moveObstacles() {
   let obstacles = getAll(obstacle);
-
+ 
   for (let i = 0; i < obstacles.length; i++) {
     obstacles[i].y += 1;
   }
@@ -231,7 +228,7 @@ Add the following to your code.
 spawnObstacle();
 ```
 
-Woohoo! We have our first obstacle!
+Woo-hoo! We have our first obstacle!
 
 Let's test the moving part.
 Append the following to your code.
@@ -254,7 +251,7 @@ We need to make it despawn when it reaches the bottom. We can detect this when y
 ```js
 function despawnObstacles() {
   let obstacles = getAll(obstacle);
-
+ 
   for (let i = 0; i < obstacles.length; i++) {
     if (obstacles[i].y == 7) {
       obstacles[i].remove();
@@ -275,13 +272,13 @@ We'll again write a function so we can use it in the game loop.
 function checkHit() {
   let obstacles = getAll(obstacle);
   let p = getFirst(player);
-
+ 
   for (let i = 0; i < obstacles.length; i++) {
     if (obstacles[i].x == p.x && obstacles[i].y == p.y) {
       return true;
     }
   }
-
+ 
   return false;
 }
 ```
@@ -297,33 +294,32 @@ var gameLoop = setInterval(() => {
   despawnObstacles();
   moveObstacles();
   spawnObstacle();
-
+ 
   if (checkHit()) {
     clearInterval(gameLoop);
   }
-
+ 
 }, 1000);
 ```
 
-> `setInterval()` allows us to repeat a function every x milliseconds. <br> We set it to the `gameLoop` variable so we can stop it later when the game ends. 
+> `setInterval()` allows us to repeat a function every x milliseconds. <br> We set it to the `gameLoop` variable so we can stop it later when the game ends.
 
-We put the functions in this order so the obstacles don't move the instant they spawn, and don't despawn the instant they move to the bottom. This ensures that the the obstacles can appear at the top and the bottom.
+We put the functions in this order, so the obstacles don't move the instant they spawn, and don't despawn the instant they move to the bottom. This ensures that the obstacles can appear at the top and the bottom.
 
 ---
 
 Run the game and see what happens!
 
-We can move around, the obstacles spawn and move down. When we lose, all the obstacles stop moving but the player can still move.
+We can move around, the obstacles spawn and move down. When we lose, all the obstacles stop moving, but the player can still move.
 
 We can fix this by creating a variable that stores if the game is running or not.
-
 
 ## 8. Game over
 
 Let's create a variable right under `setMap()`.
 
 ```js
-var gameRunning = true; 
+var gameRunning = true;
 ```
 
 We'll also modify our game loop to change the variable when the player looses. We'll also add a message to tell the player that they lost.
@@ -362,24 +358,24 @@ onInput("d", () => {
 
 ## What's next?
 
-The game works! However there currently isn't much.
+The game works! However, there currently isn't much.
 
 It's up to you to add more features to the game. Here are some ideas.
 
 - Add a score counter.
 - Add a background.
-- Add powerups that fall from the sky.
+- Add power ups that fall from the sky.
 - Make the obstacles spawn faster over time.
 
-Once you think you're done submit your modified game to the [Sprig Gallery](https://sprig.hackclub.com/gallery)! Teenagers who get their game added will also receive a Sprig console kit (while supplies last).
+Once you think you're done, submit your modified game to the [Sprig Gallery](https://sprig.hackclub.com/gallery)! Teenagers who get their game added will also receive a Sprig console kit (while supplies last).
 
 See [this guide](https://sprig.hackclub.com/share) for more details.
 
 Feel free to also share your work in the `#scrapbook` and `#sprig` channels on the [Hack Club Slack](https://hackclub.com/slack). I would love to see your creations.
 
-Thank you so much for reading my first workshop. It was a lot of fun to make and I hope you enjoyed it as well.
+Thank you so much for reading my first workshop. It was a lot of fun to make, and I hope you enjoyed it as well.
 
-### Happy Hacking!
+### Happy Hacking
 
 <details>
 <summary>Final Code</summary>
@@ -389,10 +385,10 @@ Thank you so much for reading my first workshop. It was a lot of fun to make and
 @title: dodge_the_fireball
 @author: sam liu
 */
-
+ 
 const player = "p";
 const obstacle = "o";
-
+ 
 setLegend(
   [obstacle, bitmap`
 .......66.......
@@ -429,7 +425,7 @@ setLegend(
 ......0.0.......
 .....0...0......`]
 )
-
+ 
 setMap(map`
 ........
 ........
@@ -439,62 +435,62 @@ setMap(map`
 ........
 ........
 ...p....`)
-
-var gameRunning = true; 
-
+ 
+var gameRunning = true;
+ 
 onInput("a", () => {
   if (gameRunning) {
     getFirst(player).x -= 1;
   }
 });
-
+ 
 onInput("d", () => {
   if (gameRunning) {
     getFirst(player).x += 1;
   }
 });
-
+ 
 function spawnObstacle() {
-  let x = Math.floor(Math.random() * 8); // Random number between 0 and 7
-  let y = 0; // Make it start at the top
-  addSprite(x, y, obstacle); // Adding the obstacle
+  let x = Math.floor(Math.random() * 8);
+  let y = 0;
+  addSprite(x, y, obstacle);
 }
-
+ 
 function moveObstacles() {
   let obstacles = getAll(obstacle);
-
+ 
   for (let i = 0; i < obstacles.length; i++) {
     obstacles[i].y += 1;
   }
 }
-
+ 
 function despawnObstacles() {
   let obstacles = getAll(obstacle);
-
+ 
   for (let i = 0; i < obstacles.length; i++) {
    if (obstacles[i].y == 7) {
      obstacles[i].remove();
    }
   }
 }
-
+ 
 function checkHit() {
   let obstacles = getAll(obstacle);
   let p = getFirst(player);
-
+ 
   for (let i = 0; i < obstacles.length; i++) {
     if (obstacles[i].x == p.x && obstacles[i].y == p.y) {
       return true;
     }
   }
-
+ 
   return false;
 }
 var gameLoop = setInterval(() => {
   despawnObstacles();
   moveObstacles();
   spawnObstacle();
-
+ 
   if (checkHit()) {
     clearInterval(gameLoop);
     gameRunning = false;
@@ -504,7 +500,7 @@ var gameLoop = setInterval(() => {
       color: color`3`
     });
   }
-
+ 
 }, 1000);
 ```
 
