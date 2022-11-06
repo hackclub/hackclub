@@ -9,7 +9,7 @@ Let's make our first game in Sprig!
 
 [Sprig](https://sprig.hackclub.com/) is a tool developed by Hack Club to help people quickly get started making interesting tile games. It's a tiny game engine embedded in a web-based editor with integrated art and music tools. If you build a game in Sprig and share it in the community gallery you can get a [Sprig Console](https://sprig.hackclub.com)!
 
-We're going to build a Sokoban game to get started with Sprig. Find the Sokoban game [in the gallery] (https://sprig.hackclub.com/gallery) and click on it to open the editor. Now you're hacking on Sokoban's code! You can do this with any game in the gallery.
+We're going to build a [Sokoban game] (https://www.mathsisfun.com/games/sokoban.html) to get started with Sprig. Simply open [the Sprig editor] (https://editor.sprig.hackclub.com).
 
 [![Sprig's editor](https://cloud-mju5h5o89-hack-club-bot.vercel.app/0screenshot_2022-11-02_at_16-01-13_sprig.png)](https://sprig.hackclub.com)
 
