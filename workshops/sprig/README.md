@@ -37,18 +37,22 @@ Open up the toolkit and quickly describe the different things you can do. The po
 
 Make sure you **tell people how to save files**.
 
+Recent files are available in the menu. Files are saved in local storage in your browser. They will only be accessible on the computer you are currently using and the browser you are using. **The most reliable way to save is to downlad the `js` file**.
+
 To save add a name like so:
 
 ```js
 /*
 @title: my_game_name
-@author: leo_mcelroy
+@author: your_name
 */
 ```
 
-And then hit `save`.
+And then hit `file > download file.`
+Note where it was saved ! 
+**For those of you on school computers be aware that they often get wiped frequently**, so you'll want to save the link somewhere safe and off the computer, like to your email or on a cloud-based doc.
 
-Recent files are available in the menu. An asterisk next to file means your current changes are unsaved. Files are saved in local storage in your browser. They will only be accessible on the computer you are currently using and the browser you are using. **The most reliable way to save is to downlad the `js` file**.
+
 
 ## Tell People to Get Hackin'! (rest of available workshop time)
 
