@@ -20,6 +20,7 @@ We are going to create 4 variables; a **p**layer, a **b**ox that you're going to
 We then use `setLegend` to create the art (sprite) for each of these. Later you'll be using these variables to build maps.
 
 Let's get rolling!
+
 To start, let's assign a single character to a variable.
 
 ```js
