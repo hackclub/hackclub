@@ -15,9 +15,13 @@ We're going to build a [Sokoban game] (https://www.mathsisfun.com/games/sokoban.
 
 On the left, we have an editor, and on the right, we have the actual game. We're going to be using the editor to write the code for our game.
 
+## Introduction ##
+You're going to create 4 variables: a **p**layer, a **b**ox that you're going to push, the **g**oal, and a **w**all that'll serve as an obstacle.
+We then use `setLegend` and our sprite editor to create the art for each of these. Later you'll be using these variables to build maps.
+
 ## Creating a Player
 
-To start, let's assign a single character to a variable that we can use in our spite legend.
+To start, let's assign a single character to a variable that we can later use in our sprite legend.
 
 ```js
 const player = "p";
@@ -31,11 +35,11 @@ const player = "p";
 setLegend([player, bitmap`...`]);
 ```
 
-`setLegend` allows us to set up a sprite for our character. We can click on `bitmap` to open up the pixel editor and draw an image for our sprite.
+`setLegend` allows us to set up a sprite for our character. We can click on `bitmap` to open up the sprite editor and draw an image for our sprite.
 
 ![Bitmap editor](https://user-images.githubusercontent.com/27078897/197604643-2a59cc85-5a07-446d-95b3-d9be844b62c0.gif)
 
-The bitmap is stored as a string. To take a look at it, click on the little arrow next to the lint number. You can minimize it by clicking the area again.
+The bitmap is stored as a string. To take a look at it, click on the little arrow next to the lint number. You can minimize it by clicking the area again. 
 
 Awesome! Now let's add some obstacles, boxes, and objectives to our game:
 
@@ -129,14 +133,7 @@ setLegend(
 );
 ```
 
-Here's the code so far. We've created four sprites:
 
--   `p`, for our player
--   `b`, for the box our player is going to be pushing around
--   `g`, for the goal we're going to try to get the box on
--   and `w`, for a wall that serves as an obstacle
-
-We then use `setLegend` to set the art for each of these sprites. For each sprite, we pass an array into `setLegend` containing the variable referencing the sprite and the bitmap for the sprite, which we created with the bitmap editor.
 
 Now let's create a level to get this game moving!
 
