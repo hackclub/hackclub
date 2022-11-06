@@ -49,7 +49,7 @@ To save add a name like so:
 ```
 
 And then hit `file > download file.`
-Note where it was saved ! 
+Don't forget to take note of where it was saved! 
 **For those of you on school computers be aware that they often get wiped frequently**, so you'll want to save the link somewhere safe and off the computer, like to your email or on a cloud-based doc.
 
 
