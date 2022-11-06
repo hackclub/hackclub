@@ -7,9 +7,9 @@ img: "https://user-images.githubusercontent.com/27078897/186008909-cc9ea9d5-5843
 
 Let's make our first game in Sprig!
 
-[Sprig](https://editor.sprig.hackclub.com/) is a tool developed by Hack Club to help people quickly get started making interesting tile games. It's a tiny game engine embedded in a web-based editor with integrated art and music tools. If you build a game in Sprig and share it in the community gallery you can get a [Sprig Console](https://sprig.hackclub.com)!
+[Sprig](https://sprig.hackclub.com/) is a tool developed by Hack Club to help people quickly get started making interesting tile games. It's a tiny game engine embedded in a web-based editor with integrated art and music tools. If you build a game in Sprig and share it in the community gallery you can get a [Sprig Console](https://sprig.hackclub.com)!
 
-We're going to build a Sokoban game to get started with Sprig. Let's [open up Sprig](https://sprig.hackclub.com) first:
+We're going to build a Sokoban game to get started with Sprig. Find the Sokoban game [in the gallery] (https://sprig.hackclub.com/gallery) and click on it to open the editor. Now you're hacking on Sokoban's code! You can do this with any game in the gallery.
 
 [![Sprig's editor](https://cloud-mju5h5o89-hack-club-bot.vercel.app/0screenshot_2022-11-02_at_16-01-13_sprig.png)](https://sprig.hackclub.com)
 
@@ -345,7 +345,7 @@ For inspiration, check out some of the cool games other Hack Clubbers have made!
 
 ## Uploading to the Gallery
 
-So you've written a game and want to share it! It's actually quite easy. First, add the following comment to the top of your game inside the editor:
+So you've written a game and want to share it or submit your game to win a Sprig device! It's actually quite easy. First, add the following comment to the top of your game inside the editor:
 
 ```js
 /*
@@ -356,7 +356,7 @@ So you've written a game and want to share it! It's actually quite easy. First, 
 
 `your_game` should be replaced with the name of your game, and `your_name` should be replaced with your name, of course.
 
-The next step is to download your game file. To do this, select "file > share > as file" in the menu. Your game file should be downloaded to your computer.
+The next step is to download your game file. To do this, select "file > download file" in the menu. Your game file should be downloaded to your computer.
 
 Once you've downloaded the file, you need to upload it to the Sprig gallery for everyone to see. To do this, you need to [fork](https://github.com/hackclub/sprig/fork) the Sprig repository, which contains all the code for the Sprig editor and gallery.
 
