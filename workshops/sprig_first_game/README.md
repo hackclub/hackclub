@@ -15,7 +15,7 @@ We're going to build a [Sokoban game](https://www.mathsisfun.com/games/sokoban.h
 
 On the left, we have an editor, and on the right, we have the actual game. We're going to be using the editor to write the code for our game.
 
-## Introduction ##
+## Creating a Player
 We are going to create 4 variables; a **p**layer, a **b**ox that you're going to push, the **g**oal of the level, and a **w**all that'll serve as an obstacle.
 We then use `setLegend` to create the art (sprite) for each of these. Later you'll be using these variables to build maps.
 
