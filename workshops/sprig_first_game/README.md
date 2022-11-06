@@ -15,9 +15,14 @@ We're going to build a [Sokoban game](https://www.mathsisfun.com/games/sokoban.h
 
 On the left, we have an editor, and on the right, we have the actual game. We're going to be using the editor to write the code for our game.
 
-## Creating a Player
+## Creating Our Players
 
-To start, let's assign a single character to a variable that we can use in our spite legend.
+We are going to create 4 variables; a **p**layer, a **b**ox that you're going to push, the **g**oal of the level, and a **w**all that'll serve as an obstacle.
+We then use `setLegend` to create the art (sprite) for each of these. Later you'll be using these variables to build maps.
+
+Let's get rolling!
+
+To start, let's assign a single character to a variable.
 
 ```js
 const player = "p";
@@ -35,7 +40,7 @@ setLegend([player, bitmap`...`]);
 
 ![Bitmap editor](https://user-images.githubusercontent.com/27078897/197604643-2a59cc85-5a07-446d-95b3-d9be844b62c0.gif)
 
-The bitmap is stored as a string. To take a look at it, click on the little arrow next to the lint number. You can minimize it by clicking the area again.
+The bitmap is stored as a string. To take a look at it, click on the little arrow next to the line number. You can minimize it by clicking the area again.
 
 Awesome! Now let's add some obstacles, boxes, and objectives to our game:
 
@@ -129,14 +134,6 @@ setLegend(
 );
 ```
 
-Here's the code so far. We've created four sprites:
-
--   `p`, for our player
--   `b`, for the box our player is going to be pushing around
--   `g`, for the goal we're going to try to get the box on
--   and `w`, for a wall that serves as an obstacle
-
-We then use `setLegend` to set the art for each of these sprites. For each sprite, we pass an array into `setLegend` containing the variable referencing the sprite and the bitmap for the sprite, which we created with the bitmap editor.
 
 Now let's create a level to get this game moving!
 
