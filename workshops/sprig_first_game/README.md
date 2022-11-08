@@ -1,7 +1,7 @@
 ---
 name: "Build your first Sprig game!"
 description: "Get started with Sprig and build a game!"
-author: "@jianmin-chen"
+author: "@jianmin-chen, @leomcelroy"
 img: "https://user-images.githubusercontent.com/27078897/186008909-cc9ea9d5-5843-487e-ac3a-29330496eed1.png"
 ---
 
