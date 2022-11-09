@@ -161,7 +161,7 @@ setMap(map`
 
 ## 4. Adding controls
 
-A game is no fun if you cannot interact with it. We'll be adding controls to our game, so the player can move. Sprig allows for the use of `wasd` and `ijkl` keys. We'll be using `w` and `d` to move the player left and right.
+A game is no fun if you cannot interact with it. We'll be adding controls to our game, so the player can move. Sprig allows for the use of `wasd` and `ijkl` keys. We'll be using `a` and `d` to move the player left and right.
 
 ```js
 onInput("a", () => {
