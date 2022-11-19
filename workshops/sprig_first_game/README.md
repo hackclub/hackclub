@@ -177,7 +177,7 @@ Now let's add some controls to our player so we can start playing the game.
 
 Sprig has eight inputs:
 
-1. `up`, `down`, `left`, and `right, which is `w`, `a`, `s`, and `d` on the keyboard respectively.
+1. `up`, `down`, `left`, and `right`, which is `w`, `a`, `s`, and `d` on the keyboard respectively.
 2. `i`, `j`, `k`, and `l`.
 
 You can do something on a button press like so:
