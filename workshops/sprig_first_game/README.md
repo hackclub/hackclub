@@ -367,7 +367,7 @@ After you've forked the repo, open the `games` folder inside your fork, and then
 
 You can add your game file, and then scroll down to the bottom and click "Commit file".
 
-If you want to add a thumbnail to your game in the gallery, you can! By default, it will be the first map of your game. If you want to change this though, you can. Just take a screenshot of your game in PNG format, go to the `img` folder inside the `gallery` folder, and then upload the image there. Make sure to name your image file the filename for your game!
+If you want to add a thumbnail to your game in the gallery, you can! By default, it will be the first map of your game. If you want to change this though, you can. Just take a screenshot of your game in PNG format, go to the `img` folder inside the `games` folder, and then upload the image there. Make sure to name your image file the filename for your game!
 
 ![Add thumbnail to fork](https://sprig.hackclub.com/screenshots/thumbnail.png)
 
