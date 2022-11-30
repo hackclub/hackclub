@@ -36,7 +36,7 @@ Check out [`contribute.hackclub.com`](https://contribute.hackclub.com) for more 
 
 We think learning to code is uniquely like gaining a superpower: it converts you from a _consumer_ to a _creator_, turning your computer into a tool for creation. If you’re reading this, you can learn to build an app—there’s never been a better time for making.
 
-**The goal of Hack Club is to help you develop your superpowers.** We want an inclusive space on the internet & at every school where people are making interesting things with code, every week. In our [online Slack](https://hackclub.com/slack) (Discord-style online chatroom with 17K+ student members), you can ask coding questions, meet amazing friends, share [projects you’re building](https://scrapbook.hackclub.com), and so much more.
+**The goal of Hack Club is to help you develop your superpowers.** We want an inclusive space on the internet & at every school where people are making interesting things with code, every week. In our [online Slack](https://hackclub.com/slack) (Discord-style online chatroom with 20K+ student members), you can ask coding questions, meet amazing friends, share [projects you’re building](https://scrapbook.hackclub.com), and so much more.
 
 Hack Club is a community by and for teen hackers. Our software, past events, branding etc. have all been crafted by teenagers from around the world. We’re also an entirely open source organization—[our website](https://github.com/hackclub/site) to even [our finances](https://bank.hackclub.com/hq) are public.
 
