@@ -245,15 +245,11 @@ To actually save your website and be able to come back to it in the future you'l
 
 To create an account, click on the sign up prompt in the top right corner.
 
-![Input fields for logging in](https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/4signup.png)
+![Input fields for logging in](https://cloud-ae4zkoehw-hack-club-bot.vercel.app/0image.png)
 
-Once you've filled out the fields (or signed up with another account), go ahead and click on the link they send you by email
+Now that you have your account set up, just need to click on the current name and then on `name`.
 
-![Confirmation email asking for email verification](https://cloud-4zpw37atj-hack-club-bot.vercel.app/8email.png)
-
-Now that you have your account set up, all you need to do to change the name of your repl is click on the pencil next to it.
-
-![Edit button for changing the name of a project](https://cloud-4zpw37atj-hack-club-bot.vercel.app/7edit_name.png)
+![Edit button for changing the name of a project](https://cloud-4prq79j8b-hack-club-bot.vercel.app/0v__deo_sem_t__tulo_____feito_com_o_clipchamp__6_.mp4)
 
 Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes (or <kbd>Escape</kbd> to cancel your name change)
 
