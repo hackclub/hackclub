@@ -249,7 +249,7 @@ Now be sure to **Run** to get the most recent version of your website. Ah, it is
 
 Just need to click on the current name and then on `name`.
 
-![Edit button for changing the name of a project](https://cloud-4prq79j8b-hack-club-bot.vercel.app/0v__deo_sem_t__tulo_____feito_com_o_clipchamp__6_.mp4)
+![Edit button for changing the name of a project](https://cloud-bpasdxn89-hack-club-bot.vercel.app/0image.png)
 
 Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes.
 
