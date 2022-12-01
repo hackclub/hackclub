@@ -257,7 +257,7 @@ Now that you have your account set up, all you need to do to change the name of 
 
 Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes (or <kbd>Escape</kbd> to cancel your name change)
 
-And just like that your website is now published at the domain `PROJECTNAME.USERNAME.repl.co` (that's two dashes before your username) on the internet for all your friends to see!
+And just like that your website is now published at the domain `PROJECTNAME.USERNAME.repl.co` on the internet for all your friends to see!
 
 ![Two people singing and moving side to side in a car](https://cloud-4zpw37atj-hack-club-bot.vercel.app/1celebrate_rush_hour.gif)
 
