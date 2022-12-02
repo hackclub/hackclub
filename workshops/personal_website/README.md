@@ -26,7 +26,13 @@ This workshop should take around 45 minutes.
 
 [Repl.it](https://repl.it) is an online code editor. It's similar to Google Docs, but has some important features that make it much better for typing code than a regular text editor.
 
-To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
+To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). 
+
+Click on the sign up prompt in the top right corner.
+
+![Input fields for logging in](https://cloud-ae4zkoehw-hack-club-bot.vercel.app/0image.png)
+
+Your coding environment will spin up in just a few seconds!
 
 ![Text inside a code editor](https://cloud-4zpw37atj-hack-club-bot.vercel.app/5html_repl.png)
 
@@ -241,21 +247,11 @@ Now be sure to **Run** to get the most recent version of your website. Ah, it is
 
 ## Part IV: Publishing
 
-To actually save your website and be able to come back to it in the future you'll need to create an account on Repl.it.
+Just need to click on the current name and then on `name`.
 
-To create an account, click on the sign up prompt in the top right corner.
+![Edit button for changing the name of a project](https://cloud-bpasdxn89-hack-club-bot.vercel.app/0image.png)
 
-![Input fields for logging in](https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/4signup.png)
-
-Once you've filled out the fields (or signed up with another account), go ahead and click on the link they send you by email
-
-![Confirmation email asking for email verification](https://cloud-4zpw37atj-hack-club-bot.vercel.app/8email.png)
-
-Now that you have your account set up, all you need to do to change the name of your repl is click on the pencil next to it.
-
-![Edit button for changing the name of a project](https://cloud-4zpw37atj-hack-club-bot.vercel.app/7edit_name.png)
-
-Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes (or <kbd>Escape</kbd> to cancel your name change)
+Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes.
 
 And just like that your website is now published at the domain `PROJECTNAME--USERNAME.repl.co` (that's two dashes before your username) on the internet for all your friends to see!
 
