@@ -24,7 +24,7 @@ Here on GitHub, there are many ways to contribute:
 
 - [Write a Hack Club workshop](https://workshops.hackclub.com/submit-a-workshop/) for clubs & hackers to build from.
 
-- [Draw a 🦕 dino](https://hack.af/draw-dino) & sumbit a PR to [`hackclub/dinosaurs`](https://github.com/hackclub/dinosaurs).
+- [Draw a 🦕 dino](https://hack.af/draw-dino) & submit a PR to [`hackclub/dinosaurs`](https://github.com/hackclub/dinosaurs).
 
 - Create a game in [🍃 Sprig](https://sprig.hackclub.com) (we'll ship you a [console](https://github.com/hackclub/sprig-hardware)!).
 
