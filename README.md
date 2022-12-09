@@ -18,7 +18,7 @@ We'd love to have you involved in the community:
 
 - Ship a new project with one of [our workshops](https://workshops.hackclub.com).
 
-### 🦦 Contributing on GitHub
+### [🦦](https://shakingmy.horse/) Contributing on GitHub
 
 Here on GitHub, there are many ways to contribute:
 
