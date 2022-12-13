@@ -15,6 +15,14 @@ We're going to build a [Sokoban game](https://www.mathsisfun.com/games/sokoban.h
 
 On the left, we have an editor, and on the right, we have the actual game. We're going to be using the editor to write the code for our game.
 
+You may want to watch this video to get acquainted with the editor:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GEbDRR_cqJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+And this video to get to know the toolkit a bit:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1UTLS4aO9bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Creating Our Players
 
 We are going to create 4 variables; a **p**layer, a **b**ox that you're going to push, the **g**oal of the level, and a **w**all that'll serve as an obstacle.
