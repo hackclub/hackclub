@@ -1,6 +1,6 @@
 ---
 name: 'Sprig Dodging Game'
-description: 'Doge falling obstacles. Learn how to make it using Sprig!'
+description: 'Dodge falling obstacles. Learn how to make it using Sprig!'
 author: '@SamDev-7'
 img: 'https://cloud-ijhz85il3-hack-club-bot.vercel.app/0image.png'
 ---
