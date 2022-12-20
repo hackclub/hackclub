@@ -269,6 +269,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 **Websites Made by Other Hack Club Hackers:**
 
+- [Zeyu (Peter) Yao](https://cytronicoder.com)
 - [Reese Armstrong](https://reeseric.ci)
 - [Malte I. Lauterbach](https://patakh.com/)
 - [Kognise](https://kognise.dev/)
