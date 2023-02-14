@@ -6,7 +6,7 @@
 Build an API explorer that gets images from Curiosity, a NASA Mars rover, such as this one!
 ![One of Curiosity's images](https://cloud-8qn1gonwl-hack-club-bot.vercel.app/0mars.jpg)
 
-This workshop should take about ~60 min.
+This workshop should take about ~40 min.
 
 ## Project Overview
 PyCuriosity is an API explorer that gets Curiosity's images and image urls. 
