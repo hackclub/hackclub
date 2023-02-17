@@ -69,7 +69,7 @@ TODOs. Notice how `explore_mars_rover_photos(file_name, date)`'s signature inclu
 if __name__ == "__main__":
     main()
 ```
-If unfamiliar, this makes the program modular, so the functions defined can be used/imported in other projects.
+This makes the program modular, so the functions defined can be used/imported in other projects.
 
 To access the Mars Rover Photos API, we need an API key(above). An API key is useful for authenticating data, so only
 trusted parties with the right API key can request information, which is very useful if the data costs money to collect,
