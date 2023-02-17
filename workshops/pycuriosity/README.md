@@ -36,7 +36,6 @@ provides a clear picture of the project, the resources to use, the skills to acq
 ![Battle Plan GIF from Home Alone](https://cloud-odfqnnmkf-hack-club-bot.vercel.app/0giphy.gif)
 
 This program flow was made using [diagrams.net](https://app.diagrams.net)
-on making a big project, especially with a team.
 
 ![PyCuriosity program flow](https://cloud-2o6nek83e-hack-club-bot.vercel.app/0curiosity_battle_plan.png)
 
