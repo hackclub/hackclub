@@ -1,6 +1,9 @@
-| name        | description                                           | author          | img                                                        |
-|-------------|-------------------------------------------------------|-----------------|------------------------------------------------------------|
-| PyCuriosity | API explorer that gets Curiosity's(Mars rover) images | @agentblack6000 | https://cloud-8qn1gonwl-hack-club-bot.vercel.app/0mars.jpg |
+---
+name: PyCuriosity
+description: An API explorer that fetches images from the Curiosity Rover.
+author: '@agentblack6000'
+img: https://cloud-8qn1gonwl-hack-club-bot.vercel.app/0mars.jpg
+---
 
 # PyCuriosity
 Build an API explorer that gets images from Curiosity, a NASA Mars rover, such as this one!
