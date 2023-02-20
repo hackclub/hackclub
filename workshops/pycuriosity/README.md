@@ -1,7 +1,7 @@
 ---
 name: PyCuriosity
 description: An API explorer that fetches images from the Curiosity Rover.
-author: '@agentblack6000'
+author: '@agentblack-6000'
 img: https://cloud-8qn1gonwl-hack-club-bot.vercel.app/0mars.jpg
 ---
 
