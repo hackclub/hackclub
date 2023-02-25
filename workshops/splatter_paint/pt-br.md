@@ -1,16 +1,8 @@
 ---
-title: Respingos de Tinta
-description: Pintura colorida e vibrante em seu navegador com Paper.js
-bg-image: "/workshops/respingos-tinta/img/fundo.png"
-permalink: /workshops/respingos-tinta/
-order: 1
-
+title: 'Respingos de Tinta'
+description: 'Pintura colorida e vibrante em seu navegador com Paper.js'  
+author: '@MatthewStanciu, @vitorvavolizza'
 ---
-<center>Pintura colorida e vibrante em seu navegador com Paper.js</center>  
-<center>Feito por <a href="https://github.com/MatthewStanciu" target="_blank" >@MatthewStanciu</a></center>
-<center>Traduzido por <a href="https://github.com/vitorvavolizza" target="_blank" >@vitorvavolizza</a></center>
-
-<br />
 
 **Aviso: o workshop involve cores vibrantes e não é recomendado para quem tem um histórico de epilepsia**
 
