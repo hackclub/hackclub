@@ -178,18 +178,3 @@ Aqui estão alguns exemplos de projetos que surgiram a partir deste projeto:
 - [https://wlhc-paperjs-demo-custom1.glitch.me](https://wlhc-paperjs-demo-custom1.glitch.me)
 
 Agora que você terminou de construir este maravilhoso projeto, compartilhe sua bela criação com outras pessoas! Lembre-se, é só mandar a URL do seu projeto!
-
-Você provavelmente conhece as melhores maneiras de entrar em contato com seus amigos e familiares, mas se você quiser compartilhar seu projeto com a comunidade brasileira do Hack Club, não há melhor lugar para fazer isso do que no Discord do Hack Club Brasil ou no Slack do Hack Club.✨
-
-### Discord
-1. Clique [aqui][discord]{:target="_blank"} para fazer parte da nossa comunidade!
-2. Depois, poste o link do seu projeto no canal `💡┇criações` para compartilhá-lo com todos os Hack Clubbers!
-
-### Slack
-1. Em uma nova guia, abra e siga [estas instruções][slack] para se inscrever em nosso Slack.
-2. Em seguida, poste o link no canal [`#ship`](https://hackclub.slack.com/messages/ship) para compartilhar com todos!
-
-A comunidade te espera!🎉🎉
-
-[discord]: http://bit.ly/discord-hc-brasil
-[slack]: https://slack.hackclub.com/
