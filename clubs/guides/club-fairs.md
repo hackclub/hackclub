@@ -20,7 +20,7 @@ So the leaders of my club and I decided that we would go all out. That entailed 
 
 To ensure that each member of the club was saying the same thing and was adequately advertising the club, we made sure to practice and prepare for several different scenarios that could have occurred. Here are some of them:
 
-**A student just walks up and stand there**
+**A student just walks up and stands there**
 
 Us: Hey! Are you interested in Hack Club?
 
@@ -58,6 +58,12 @@ The biggest thing I learned from this was that: **Hack Clubs, and Computer Scien
 
 Now, what would I change next year to try to get more students? Other than talking to more of the students who were just standing around, I don’t think that changing anything would have led to a much larger number of people signing up because every student saw our presentation and more-or-less understood what Hack Club was, but we only got about 30 sign-ups, about 10% of the rising freshman. I understood this as the best the WHS Hack Club could do and other than getting more credentials for Hack Club/CS Clubs, I don’t think that many things would enable us to get more than 10% of students to sign-up.
 
+
+## Additional notes 
+_Added on Febuary 28th, 2023 by @ohdear12_
+
+This was done by a club with plenty of funding and resources. It's okay to do somthing smaller, for two years my club only did a tri-fold display for out club fair. The most important part of a club fair is that you tell people what your club is, why it's cool to join, when to meet, etc, etc, and seem approchable and frendly while you do so. While a big fancy dysplay does get more attention, a good leader reconises a club's limits and knows when a project is too much to handle.
+
 ---
 
-_Edited by @itsmingjie._
+_Original guide edited by @itsmingjie._
