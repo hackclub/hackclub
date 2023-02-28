@@ -4,11 +4,7 @@ By Lachlan Campbell (@lachlanjc) and staff. 30 Jul 2019
 
 # Getting a [hackclub.com](http://hackclub.com) subdomain
 
-> ⚠️ This section is out of date! You can now get your own subdomain by going directly to github.com/hackclub/dns & submitting a PR. -@msw
-
-Any club leader can get access to a [hackclub.com](http://hackclub.com) subdomain for their club or hackathon website. To register or update yours, go to [leaders.hackclub.com](https://leaders.hackclub.com/), sign in with the email address on your application, & there’s a link to “add a subdomain.” A Hack Club staff member will approve your request shortly.
-
-[Hack Club Leaders](https://leaders.hackclub.com/)
+Any club leader can get access to a [hackclub.com](http://hackclub.com) subdomain for their club or hackathon website. To register or update yours, go to to github.com/hackclub/dns & submitting a PR. A Hack Club staff member will approve your request shortly.
 
 Fun fact: all of Hack Club’s DNS is [open source on GitHub](https://github.com/hackclub/dns)!
 
@@ -58,3 +54,8 @@ Here was the first version of the site ([source code](https://github.com/SCHacks
 
 ![](https://cloud-pjoop60lr.vercel.app/2image-20190730-202530.png)
 ![](https://cloud-pjoop60lr.vercel.app/1image-20190730-202542.png)
+
+## Additional notes
+_Added by @ohdear12 on Febuary 28th, 2023_
+
+Having
