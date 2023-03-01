@@ -1,14 +1,34 @@
-By Lachlan Campbell (@lachlanjc) and staff. 30 Jul 2019
+__By Lachlan Campbell (@lachlanjc) and staff. 30 Jul 2019__
+
+_Reviewed, edited, and updated by @ohdear12 on March 1st, 2023_
 
 ---
 
-# Getting a [hackclub.com](http://hackclub.com) subdomain
+# Website componants and code
 
-Any club leader can get access to a [hackclub.com](http://hackclub.com) subdomain for their club or hackathon website. To register or update yours, go to to github.com/hackclub/dns & submitting a PR. A Hack Club staff member will approve your request shortly.
+### Getting a [hackclub.com](http://hackclub.com) subdomain
 
-Fun fact: all of Hack Club’s DNS is [open source on GitHub](https://github.com/hackclub/dns)!
+Any club leader can get access to a [hackclub.com](http://hackclub.com) subdomain for their club or hackathon website. To register or update yours, go to to [github.com/hackclub/dns](https://github.com/hackclub/dns) & submit a PR. A Hack Club staff member will approve your request shortly.
+
+> Fun fact: all of Hack Club’s DNS is [open source on GitHub](https://github.com/hackclub/dns)!
 
 If you have issues, ping @msw on Slack.
+
+### Adding a Hack Club banner
+
+![](https://cloud-pjoop60lr.vercel.app/0image-20190730-202428.png)
+
+Hack Club has official banners for your club website to link to Hack Club. If you’re making a standard HTML site, here’s the code for adding a linked banner: [https://github.com/hackclub/hackclub#banners](https://github.com/hackclub/hackclub#banners)
+
+If you’re making a React site, we’ve got you covered with a custom component published on npm as `@hackclub/banner`. Here’s the docs: [https://hackclub.com/banner](https://hackclub.com/banner)
+
+### Branding
+
+Looking for offical hackclub colors, icons, banners, and logos? Find them at [hackclub.com/brand](https://hackclub.com/brand/).
+
+### UI componants and CSS
+
+Hackclub has pre-made CSS and UI components. They can be found at [github.com/hackclub/css](https://github.com/hackclub/css) and [github.com/hackclub/theme-starter](https://github.com/hackclub/theme-starter), respectively. A preview of the theme can be found at [theme.hackclub.com](https://theme.hackclub.com/)
 
 # Site examples
 
@@ -21,14 +41,6 @@ If you have issues, ping @msw on Slack.
 - [Palm Springs High School Hack Club](https://pshs.hackclub.com/)
 - [Westborough Hack Club](https://westborough.hackclub.com/)
 - [Pomperaug Hack Club](https://pomperaug.hackclub.com/)
-
-# Adding a Hack Club banner
-
-![](https://cloud-pjoop60lr.vercel.app/0image-20190730-202428.png)
-
-Hack Club has official banners for your club website to link to Hack Club. If you’re making a standard HTML site, here’s the code for adding a linked banner: [https://github.com/hackclub/hackclub#banners](https://github.com/hackclub/hackclub#banners)
-
-If you’re making a React site, we’ve got you covered with a custom component published on npm as `@hackclub/banner`. Here’s the docs: [https://hackclub.com/banner](https://hackclub.com/banner)
 
 # Stories from club leaders
 
@@ -55,7 +67,3 @@ Here was the first version of the site ([source code](https://github.com/SCHacks
 ![](https://cloud-pjoop60lr.vercel.app/2image-20190730-202530.png)
 ![](https://cloud-pjoop60lr.vercel.app/1image-20190730-202542.png)
 
-## Additional notes
-_Added by @ohdear12 on Febuary 28th, 2023_
-
-Having
