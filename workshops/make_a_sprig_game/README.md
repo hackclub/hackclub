@@ -3,6 +3,7 @@ name: 'Make a Sprig Game'
 description: 'A walk through in making your first Sprig game.'
 author: '@leomcelroy'
 img: ""
+locales: 'pt-br'
 ---
 
 # Let's make our first game in [Sprig](https://editor.sprig.hackclub.com)!

@@ -3,6 +3,7 @@ name: 'Sprig Dodging Game'
 description: 'Dodge falling obstacles. Learn how to make it using Sprig!'
 author: '@SamDev-7'
 img: 'https://cloud-ijhz85il3-hack-club-bot.vercel.app/0image.png'
+locales: 'pt-br'
 ---
  
 In this workshop, we'll be building a dodging game using [Sprig](https://sprig.hackclub.com). The player will have to doge the falling obstacles to score points. Sprig is a JavaScript game engine that makes it easy for beginners and masters to make games, all in your browser.
