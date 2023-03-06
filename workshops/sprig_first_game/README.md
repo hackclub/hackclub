@@ -46,7 +46,7 @@ setLegend([player, bitmap`...`]);
 
 `setLegend` allows us to set up a sprite for our character. We can click on `bitmap` to open up the pixel editor and draw an image for our sprite.
 
-![Bitmap editor](https://user-images.githubusercontent.com/27078897/197604643-2a59cc85-5a07-446d-95b3-d9be844b62c0.gif)
+![Bitmap editor](https://cloud-bhbu1ddry-hack-club-bot.vercel.app/020230306_175717.gif)
 
 The bitmap is stored as a string. To take a look at it, click on the little arrow next to the line number. You can minimize it by clicking the area again.
 
@@ -157,7 +157,7 @@ const levels = [map`.`];
 
 Right now we only have one level, so let's do something with it! Click on `map` to open up the map editor. **Make sure you hit run** to load the legend before editing the map.
 
-![Map editor](https://user-images.githubusercontent.com/27078897/197605676-4c1e7a9b-3acc-41f5-a958-8e15dc55ba91.gif)
+![Map editor](https://cloud-fai1j30ad-hack-club-bot.vercel.app/020230306_170018.gif)
 
 To set the map so the player can see it, use `setMap`, another function that's provided by Sprig.
 
@@ -218,7 +218,7 @@ onInput("d", () => {
 });
 ```
 
-![onInput demo](https://user-images.githubusercontent.com/27078897/197607562-15d0146f-329c-4b90-ac91-584d1290528e.gif)
+![onInput demo](https://cloud-3fq6fhgsm-hack-club-bot.vercel.app/020230306_173651.gif)
 
 Now when you click "Run", you'll be able to move the player around with `w`, `a`, `s`, and `d`! Right now, the player can move through the wall and box. Let's fix that.
 
@@ -234,7 +234,7 @@ setSolids([player, box, wall]);
 
 Now those sprites won't overlap.
 
-![setSolids demo](https://user-images.githubusercontent.com/27078897/197606834-9c3c3e48-84bd-49a3-938e-43eea8ea05ce.gif)
+![setSolids demo](https://cloud-iuizfgwkn-hack-club-bot.vercel.app/020230306_172547.gif)
 
 We want the player to push boxes, though, so let's use Sprig's `setPushables`:
 
@@ -248,7 +248,7 @@ The argument passed to `setPushables` means that every sprite of type `player`, 
 
 Let's try it out now!
 
-![setPushables demo](https://user-images.githubusercontent.com/27078897/197606970-76f14b26-b3b2-44dd-ac96-a3459613a7b9.gif)
+![setPushables demo](https://cloud-p3xo8pbbd-hack-club-bot.vercel.app/020230306_170757.gif)
 
 ## Win Condition
 
@@ -292,7 +292,7 @@ p.w.
 ];
 ```
 
-![Win condition demo](https://user-images.githubusercontent.com/27078897/197607684-45683107-fb28-4900-95ff-cd0b1b69c1f5.gif)
+![Win condition demo](https://cloud-qnqk1plkg-hack-club-bot.vercel.app/020230306_174220.gif)
 
 Nice!
 
