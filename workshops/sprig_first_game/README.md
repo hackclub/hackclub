@@ -2,7 +2,7 @@
 name: "Build your first Sprig game!"
 description: "Get started with Sprig and build a game!"
 author: "@jianmin-chen, @leomcelroy"
-img: "https://user-images.githubusercontent.com/27078897/186008909-cc9ea9d5-5843-487e-ac3a-29330496eed1.png"
+img: "https://cloud-m22g5yyl0-hack-club-bot.vercel.app/0image.png"
 ---
 
 Let's make our first game in Sprig!
@@ -11,7 +11,7 @@ Let's make our first game in Sprig!
 
 We're going to build a [Sokoban game](https://www.mathsisfun.com/games/sokoban.html). To get started with Sprig, simply open [the Sprig editor](https://editor.sprig.hackclub.com).
 
-[![Sprig's editor](https://cloud-mju5h5o89-hack-club-bot.vercel.app/0screenshot_2022-11-02_at_16-01-13_sprig.png)](https://sprig.hackclub.com)
+[![Sprig's editor](https://cloud-ouq5g8q82-hack-club-bot.vercel.app/0image.png)](https://sprig.hackclub.com)
 
 On the left, we have an editor, and on the right, we have the actual game. We're going to be using the editor to write the code for our game.
 
@@ -46,7 +46,7 @@ setLegend([player, bitmap`...`]);
 
 `setLegend` allows us to set up a sprite for our character. We can click on `bitmap` to open up the pixel editor and draw an image for our sprite.
 
-![Bitmap editor](https://user-images.githubusercontent.com/27078897/197604643-2a59cc85-5a07-446d-95b3-d9be844b62c0.gif)
+![Bitmap editor](https://cloud-bhbu1ddry-hack-club-bot.vercel.app/020230306_175717.gif)
 
 The bitmap is stored as a string. To take a look at it, click on the little arrow next to the line number. You can minimize it by clicking the area again.
 
@@ -157,7 +157,7 @@ const levels = [map`.`];
 
 Right now we only have one level, so let's do something with it! Click on `map` to open up the map editor. **Make sure you hit run** to load the legend before editing the map.
 
-![Map editor](https://user-images.githubusercontent.com/27078897/197605676-4c1e7a9b-3acc-41f5-a958-8e15dc55ba91.gif)
+![Map editor](https://cloud-fai1j30ad-hack-club-bot.vercel.app/020230306_170018.gif)
 
 To set the map so the player can see it, use `setMap`, another function that's provided by Sprig.
 
@@ -218,7 +218,7 @@ onInput("d", () => {
 });
 ```
 
-![onInput demo](https://user-images.githubusercontent.com/27078897/197607562-15d0146f-329c-4b90-ac91-584d1290528e.gif)
+![onInput demo](https://cloud-3fq6fhgsm-hack-club-bot.vercel.app/020230306_173651.gif)
 
 Now when you click "Run", you'll be able to move the player around with `w`, `a`, `s`, and `d`! Right now, the player can move through the wall and box. Let's fix that.
 
@@ -234,7 +234,7 @@ setSolids([player, box, wall]);
 
 Now those sprites won't overlap.
 
-![setSolids demo](https://user-images.githubusercontent.com/27078897/197606834-9c3c3e48-84bd-49a3-938e-43eea8ea05ce.gif)
+![setSolids demo](https://cloud-iuizfgwkn-hack-club-bot.vercel.app/020230306_172547.gif)
 
 We want the player to push boxes, though, so let's use Sprig's `setPushables`:
 
@@ -248,7 +248,7 @@ The argument passed to `setPushables` means that every sprite of type `player`, 
 
 Let's try it out now!
 
-![setPushables demo](https://user-images.githubusercontent.com/27078897/197606970-76f14b26-b3b2-44dd-ac96-a3459613a7b9.gif)
+![setPushables demo](https://cloud-p3xo8pbbd-hack-club-bot.vercel.app/020230306_170757.gif)
 
 ## Win Condition
 
@@ -292,7 +292,7 @@ p.w.
 ];
 ```
 
-![Win condition demo](https://user-images.githubusercontent.com/27078897/197607684-45683107-fb28-4900-95ff-cd0b1b69c1f5.gif)
+![Win condition demo](https://cloud-qnqk1plkg-hack-club-bot.vercel.app/020230306_174220.gif)
 
 Nice!
 
@@ -350,18 +350,14 @@ For inspiration, check out some of the cool games other Hack Clubbers have made!
 
 ## Uploading to the Gallery
 
-So you've written a game and want to share it or submit your game to win a Sprig device! It's actually quite easy. First, add the following comment to the top of your game inside the editor:
+So you've written a game and want to share it or submit your game to win a Sprig device! It's actually quite easy. First, hit the automatically generated name:
 
-```js
-/*
-@title: your_game
-@author: your_name
-*/
-```
+<img width="500" alt="Screen Shot 2023-03-03 at 6 56 26 PM" src="https://cloud-n9033q1na-hack-club-bot.vercel.app/0image.png"> 
 
-`your_game` should be replaced with the name of your game, and `your_name` should be replaced with your name, of course.
+and add a name like so:
+`my_sprig_game`
 
-The next step is to download your game file. To do this, select "file > download file" in the menu. Your game file should be downloaded to your computer.
+The next step is to download your game file. To do this, select "Download" in the menu. Your game file should be downloaded to your computer.
 
 Once you've downloaded the file, you need to upload it to the Sprig gallery for everyone to see. To do this, you need to [fork](https://github.com/hackclub/sprig/fork) the Sprig repository, which contains all the code for the Sprig editor and gallery.
 
@@ -541,4 +537,3 @@ afterInput(() => {
     }
 });
 ```
-

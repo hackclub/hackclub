@@ -2,7 +2,7 @@
 name: 'Sprig Dodging Game'
 description: 'Dodge falling obstacles. Learn how to make it using Sprig!'
 author: '@SamDev-7'
-img: 'https://cloud-ijhz85il3-hack-club-bot.vercel.app/0image.png'
+img: 'https://cloud-pwlhdlj0h-hack-club-bot.vercel.app/0image.png'
 locales: 'pt-br'
 ---
  
@@ -19,29 +19,7 @@ Here's what your game will end up looking like:
 
 ## 1. Getting Started
 
-Open up the [Sprig Editor](https://editor.sprig.hackclub.com). Create a new game (`file` > `new game`). This is where we'll be coding our game.
-
-We won't be using the default Sprig game, so let's delete everything except the orange comments at the top. We'll be starting from scratch.
-
-Your file should look something like this:
-
-```js
-/*
-@title: crashing_rhyhorn
-@author: your_name
-*/
-```
-
-Let's make it ours. Set the `@title` to the name of your game and set the `@author` to your name.
-
-Mine looks something like this:
-
-```js
-/*
-@title: dodge_the_fireball
-@author: sam liu
-*/
-```
+Open up the [Sprig Editor](https://editor.sprig.hackclub.com). Create a new game (menu > `new game`). This is where we'll be coding our game.
 
 Let's start programming!
 
@@ -391,11 +369,6 @@ Thank you so much for reading my first workshop. It was a lot of fun to make, an
 <summary>Final Code</summary>
 
 ```js
-/*
-@title: dodge_the_fireball
-@author: sam liu
-*/
- 
 const player = "p";
 const obstacle = "o";
  

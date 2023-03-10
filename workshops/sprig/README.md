@@ -16,7 +16,7 @@ locales: 'es-xl, pt-br'
 > If you are a solo hacker you can jump straight into the [Sprig editor](https://editor.sprig.hackclub.com).
 > You may be able to pick up some helpful tips reading through this though.
 
-<img width="500" alt="Screen Shot 2022-09-23 at 4 41 25 PM" src="https://user-images.githubusercontent.com/27078897/192053241-51cd9891-2e13-482c-b5e0-2d285b87f62c.png">
+<img width="500" alt="Screen Shot 2023-03-03 at 5 48 32 PM" src="https://cloud-guxu865fy-hack-club-bot.vercel.app/0image.png">
 
 We designed Sprig to accomodate workshops with minimal instruction and maximal making and exploring. This is how I would run Sprig as a workshop.
 
@@ -24,7 +24,7 @@ We designed Sprig to accomodate workshops with minimal instruction and maximal m
 
 Give a quick demonstration of a fairly complete game with accessible code. You can go to the [gallery](https://sprig.hackclub.com/gallery) and sort by the `beginner` tag.
 
-<img width="500" alt="Screen Shot 2022-09-23 at 5 00 24 PM" src="https://user-images.githubusercontent.com/27078897/192056026-c4c5492d-00e8-44fb-be35-6b74a1c3bfe2.png">
+<img width="500" alt="Screen Shot 2023-03-03 at 6 14 44 PM" src="https://cloud-9h10p1the-hack-club-bot.vercel.app/0image.png">
 
 Here are a few games that meet the criteria:
 
@@ -32,24 +32,36 @@ Here are a few games that meet the criteria:
 - [Penguin Slide](https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/penguin_slide.js)
 - [Nomis](https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/nomis.js)
 
+## Account (2 minutes)
+
+For that you and your club don't lose your files, we use an account system, here is the step by step:
+
+1. Click on the "Log in" button at the top right of the page
+<img width="500" alt="Screen Shot 2023-03-03 at 6 35 57 PM" src="https://cloud-c0fezx07u-hack-club-bot.vercel.app/0image.png">
+
+2. Fill in the field with an email and then click on the "Send code" button
+<img width="500" alt="Screen Shot 2023-03-03 at 6 40 41 PM" src="https://cloud-5tajrvzec-hack-club-bot.vercel.app/0image.png">
+
+3. You will receive an email like this, then just put this code in the field "Code:"
+<img width="500" alt="Screen Shot 2023-03-03 at 6 46 27 PM" src="https://cloud-3e970nukr-hack-club-bot.vercel.app/0image.png">
+
+That's it! Your account is ready!
+
 ## Toolkit (3 minutes)
 
 Open up the toolkit and quickly describe the different things you can do. The point here is not to explain every function. It's just to give people a sense of what is possible and where to look for help. Only spend a few minutes doing this! Check out [the snippet below](#toolkit) to survey essentially every function in Sprig.
 
-Make sure you **tell people how to save files**.
+Recent files are available in the "Your Games" page. They will always be saved in your account. **The most reliable way to save is to downlad the `js` file**.
 
-Recent files are available in the menu. Files are saved in local storage in your browser. They will only be accessible on the computer you are currently using and the browser you are using. **The most reliable way to save is to downlad the `js` file**.
+To save, hit the automatically generated name:
 
-To save add a name like so:
+<img width="500" alt="Screen Shot 2023-03-03 at 6 56 26 PM" src="https://cloud-n9033q1na-hack-club-bot.vercel.app/0image.png"> 
 
-```js
-/*
-@title: my_game_name
-@author: your_name
-*/
-```
+and add a name like so:
+`my_sprig_game`
 
-And then hit `file > download file.`
+
+Then hit `menu > Download`
 Don't forget to take note of where it was saved! 
 **For those of you on school computers be aware that they often get wiped frequently**, so you'll want to save the link somewhere safe and off the computer, like to your email or on a cloud-based doc.
 
@@ -71,14 +83,14 @@ If the games are not complete encourage people to keep working on them and plan 
 You can also encourage people to share the games they have so far by posting links to those games in the [Sprig channel](https://hackclub.slack.com/archives/C02UN35M7LG) on Slack.
 You can generate a link by navigating to the `share` -> `as link` option in the file menu, as seen below:
 
-<img width="500" alt="Screen Shot 2022-09-23 at 4 41 25 PM" src="https://user-images.githubusercontent.com/27078897/192363738-35a5fa1e-d4e8-4b56-8ff1-878191ab8829.png" />
+<img width="500" alt="Screen Shot 2023-03-03 at 6 18 29 PM" src="https://cloud-es6rq2rf2-hack-club-bot.vercel.app/0image.png" />
 
 People could easily spend 3 or 4 club meetings working on games.
 
 # Reference
 
 <a name="toolkit">The toolkit</a> is essentially every function we added to Sprig, otherwise it's just JavaScript.
-For more information on these functions check the `help` menu in the Sprig editor.
+For more information on these functions check the `Show Help` menu in the Sprig editor.
 
 ```js
 const player = "p";
@@ -122,6 +134,5 @@ playback.end()
 width();
 height();
 ```
-
 
 
