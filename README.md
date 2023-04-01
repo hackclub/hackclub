@@ -49,6 +49,7 @@ Hack Club is a community by and for teen hackers. Our software, past events, bra
 | 💬 Join our Slack                                         | <https://hackclub.com/slack>         |
 | ✨ See our workshops                                      | <https://workshops.hackclub.com>     |
 | 📸 See what Hack Clubbers are making every day            | <https://scrapbook.hackclub.com>     |
+| 🎤 Listen to The Orpheus Show podcast                     | <https://podcast.hackclub.com>       |
 | 🗺️ Join a high-school hackathon nearby                    | <https://hackathons.hackclub.com>    |
 | 🎒 Start a Hack Club at your school                       | <https://apply.hackclub.com>         |
 | 🦕 Draw a dino & join our GitHub                          | <https://hack.af/draw-dino>          |
