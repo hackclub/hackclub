@@ -203,7 +203,7 @@ function gotResults(err, result) {
   if (err) {
     console.log(err)
   }
-  select('body').style('background', result)
+  select('body').style('background', result[0].label) // set background to most likely color
   classify()
 }
 ```
