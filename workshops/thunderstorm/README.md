@@ -2,7 +2,7 @@
 name: 'Thunderstorm'
 description: 'A thunderstorm in your browser'
 author: '@polytroper'
-begin: 'https://repl.it/@polytrope/thunderstorm-starter'
+img: 'https://cloud-5bblxtvxm-hack-club-bot.vercel.app/0screenshot_2023-04-15_at_1.17.54_pm.png'
 ---
 
 Ever wanted your own private, portable thunderstorm?
