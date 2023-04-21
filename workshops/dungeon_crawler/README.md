@@ -107,7 +107,7 @@ while(True):
 
 ## Drawing the Square Function
 
-<img src="https://i.imgur.com/FkDPzDz.gif?noredirect" width="380" alt="Squidward Bold and Brash Gif">
+<img src="https://cloud-otkmx51x8-hack-club-bot.vercel.app/0FkDPzDz.gif?noredirect" width="380" alt="Squidward Bold and Brash Gif">
 
 Squares! Squares everywhere! Let's draw them.
 

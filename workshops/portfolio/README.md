@@ -239,7 +239,7 @@ picture of yourself).
 
 This is a link to my picture:
 
-    http://i.imgur.com/C6P1T0G.jpg
+    https://cloud-hjaqtb9xx-hack-club-bot.vercel.app/0C6P1T0G.jpg
 
 Feel free to copy and paste that into JS Bin and do the following:
 
@@ -255,17 +255,17 @@ Ok. Let's make the picture smaller
 But before we do that, let's understand how the image tag works:
 
 ```html
-<img src="http://i.imgur.com/C6P1T0G.jpg" /> ^ "img" is the tag name
+<img src="https://cloud-4sl3hswy9-hack-club-bot.vercel.app/0C6P1T0G.jpg" /> ^ "img" is the tag name
 ```
 
 ```html
-<img src="http://i.imgur.com/C6P1T0G.jpg" />
+<img src="https://cloud-7l935regv-hack-club-bot.vercel.app/0C6P1T0G.jpg" />
 
 Note that <img /> does not have a closing tag
 ```
 
 ```html
-<img src="http://i.imgur.com/C6P1T0G.jpg" />
+<img src="https://cloud-goc5uidgi-hack-club-bot.vercel.app/0C6P1T0G.jpg" />
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ this part is an attribute of the image tag
 (think of attributes like settings)
 ```
@@ -280,13 +280,13 @@ For example, in an `<input>` tag:
 - `"text"` is the value of the `type` attribute
 
 ```html
-<img src="http://i.imgur.com/C6P1T0G.jpg" /> ^^^ "src" is the name of the
+<img src="https://cloud-lbmvo751w-hack-club-bot.vercel.app/0C6P1T0G.jpg" /> ^^^ "src" is the name of the
 attribute (think the name of the setting, like temperature)
 ```
 
 ```html
-<img src="http://i.imgur.com/C6P1T0G.jpg" /> ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-"http://i.imgur.com/C6P1T0G.jpg" is the value of the "src" attribute (think
+<img src="https://cloud-bkqc0919n-hack-club-bot.vercel.app/0C6P1T0G.jpg" /> ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"https://cloud-md7p9ss2d-hack-club-bot.vercel.app/0C6P1T0G.jpg" is the value of the "src" attribute (think
 value of the setting like 350)
 ```
 

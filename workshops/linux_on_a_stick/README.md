@@ -59,13 +59,13 @@ Next open your program of choice, select the USB drive you intend to use **Be ca
 
 Select the ISO file you downloaded earlier, and make sure to set as much persistent storage as you want under the persistent storage option. **Do not hit the download button in LiLi/UUI** pressing that will redownload the ISO image, and will download an outdated version of it.
 
-![click here](https://i.imgur.com/nlHHvmJ.png)
+![click here](https://cloud-p4j5ezs93-hack-club-bot.vercel.app/0nlHHvmJ.png)
 
 At this moment you will only be able to set 4 GB of storage, but that is normal, and is due to the FAT32 filesystem. We will fix this later. Install the ISO to your flash drive, and find something to do while it loads.
 
 Your config should look something like this:
 
-![ignore the weird name of my flash drive, I did this like 50 times](https://i.imgur.com/0uL8YKH.jpg)
+![ignore the weird name of my flash drive, I did this like 50 times](https://cloud-3bvdxvlx1-hack-club-bot.vercel.app/00uL8YKH.jpg)
 
 Please note: If you are using Unetbootin on Windows, the program will appear unresponsive, and Windows will tell you this. The installation should keep going, unless the program actually did crash. Just be patient, wait at least 20 minutes and the installation should finish.
 
@@ -87,11 +87,11 @@ If it is still there: awesome!
 
 The first thing to do is boot into a copy of Linux other than the one on your new portable Linux drive, and then plug in your persistent USB. On the USB drive, there should be a file called casper-rw; delete it. **WARNING:** that is where your stored files go on the persistent drive, so backup anything on the portable drive before hand. Next open up (and download) the program GParted (or some alternative). Once in it, select your hard drive and right click on it. You will see the option to unmount; choose it.
 
-![What you should see (more or less.)](https://i.imgur.com/ViVyqsn.png)
+![What you should see (more or less.)](https://cloud-pp74lltth-hack-club-bot.vercel.app/0ViVyqsn.png)
 
 After you unmount, right click again, and click resize. Then resize the partition on your persistent USB drive to the smallest possible size. Also make sure the partition has 0 MiB preceding it, so your new storage partition can use all of the free space.
 
-![Should look like this](https://i.imgur.com/blYp32b.png)
+![Should look like this](https://cloud-gfib5x5y3-hack-club-bot.vercel.app/0blYp32b.png)
 
 Now all we have to do is create a new casper-rw partition instead of a file! We will do this by right clicking on the unallocated space and creating a new partition. Set the file system to ext4, and then label it as `casper-rw`.
 
@@ -107,7 +107,7 @@ Once the setup finishes open a terminal (Ctrl + Alt + T) and type the following 
 
 You will see something like this:
 
-![Checking available space](https://i.imgur.com/syLOs0h.jpg)
+![Checking available space](https://cloud-4pq4bp0xq-hack-club-bot.vercel.app/0syLOs0h.jpg)
 
 Check that under the `Avail` column you see a value similar to the available space of the USB. If you still see 4 GB or similar, repeat the partitioning step.
 

@@ -540,21 +540,21 @@ We're providing the following images and have already uploaded them to an image 
 > | **Player**                        |
 > | --------------------------------- |
 > | ![white dinosaur sprite](https://cloud-en831u68d-hack-club-bot.vercel.app/8prophet_orpheus.png)      |
-> | `https://i.imgur.com/N5uCbDu.png` |
+> | `https://cloud-9x4hvopq6-hack-club-bot.vercel.app/0N5uCbDu.png` |
 
 <br/>
 
 > | **Enemy**                         |
 > | --------------------------------- |
 > | ![brown asteroid](https://cloud-en831u68d-hack-club-bot.vercel.app/5asteroid.png)             |
-> | `https://i.imgur.com/OdL0XPt.png` |
+> | `https://cloud-cfakr2ma3-hack-club-bot.vercel.app/0OdL0XPt.png` |
 
 <br/>
 
 > | **Background**                    |
 > | --------------------------------- |
 > | ![night sky with stars](https://cloud-en831u68d-hack-club-bot.vercel.app/6background.png)           |
-> | `https://i.imgur.com/aKQOg3G.png` |
+> | `https://cloud-kh6ahxow6-hack-club-bot.vercel.app/0aKQOg3G.png` |
 
 <br/>
 
@@ -588,7 +588,7 @@ Now let's load an image into `playerImage` in `preload()`.
 
 ```js
 function preload() {
-  playerImage = loadImage('https://i.imgur.com/N5uCbDu.png')
+  playerImage = loadImage('https://cloud-of5gtw65x-hack-club-bot.vercel.app/0N5uCbDu.png')
 }
 ```
 
@@ -596,8 +596,8 @@ function preload() {
 
 ```js
 function preload() {
-  playerImage = loadImage('https://i.imgur.com/N5uCbDu.png')
-  enemyImage = loadImage('https://i.imgur.com/OdL0XPt.png')
+  playerImage = loadImage('https://cloud-fcmrsan58-hack-club-bot.vercel.app/0N5uCbDu.png')
+  enemyImage = loadImage('https://cloud-4lajub4te-hack-club-bot.vercel.app/0OdL0XPt.png')
 }
 ```
 
@@ -667,8 +667,8 @@ var enemyImage
 var backgroundImage
 
 function preload() {
-  enemyImage = loadImage('https://i.imgur.com/OdL0XPt.png')
-  backgroundImage = loadImage('https://i.imgur.com/aKQOg3G.png')
+  enemyImage = loadImage('https://cloud-ptjm4djok-hack-club-bot.vercel.app/0OdL0XPt.png')
+  backgroundImage = loadImage('https://cloud-dptjloh1q-hack-club-bot.vercel.app/0aKQOg3G.png')
   // ...the rest of the preload function
 }
 ```
