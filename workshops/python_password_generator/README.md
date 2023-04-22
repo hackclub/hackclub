@@ -99,7 +99,7 @@ if (choice == '1'):
   
 To add a little flair at the end, we will add some colored text to confirm that the user successfully signed up. On the left side of repl.it, create a new file named `FColor.py`.
 
-![CreateNewFile](https://i.imgur.com/KV8rndQ.png)
+![CreateNewFile](https://cloud-3um758cqv-hack-club-bot.vercel.app/0KV8rndQ.png)
 
 The colors we will be using are referred to as ANSI escape sequences. Each sequence represents either a color, background, or style. These codes are used in terminals, including the Windows Command Prompt!
 

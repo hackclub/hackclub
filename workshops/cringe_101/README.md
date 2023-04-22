@@ -262,7 +262,7 @@ body {
 
 Tip — Along with changing the fonts, change the colors (`color`) and thickness (`font-weight`) of the different text as well to see your friends cringe even more!
 
-![](https://i.imgur.com/Ahl9pXr.gif)
+![](https://cloud-dw13hdws1-hack-club-bot.vercel.app/0Ahl9pXr.gif)
 
 ## Pseudo - Classes
 
@@ -310,7 +310,7 @@ You'll need to upload your sound file directly to C9 if you can't find it hosted
 
 Just follow the either method below to upload your file to C9.
 
-![](https://i.imgur.com/TeXlg3h.gif)
+![](https://cloud-gm8zmui8y-hack-club-bot.vercel.app/0TeXlg3h.gif)
 
 1. Drag and drop your file onto the folder tree you want to upload it under
 
@@ -318,7 +318,7 @@ Just follow the either method below to upload your file to C9.
 
 **Alternate Method**
 
-![](https://i.imgur.com/TwtpqXB.gif)
+![](https://cloud-nlkrkmrai-hack-club-bot.vercel.app/0TwtpqXB.gif)
 
 1. Look at the top bar of your workspace and select "File".
 2. Mouse over the drop down list that pops up and hit "Upload Local Files...".
@@ -377,7 +377,7 @@ This tag also has its own set of attributes like `<audio>` also it's **self-clos
 - Alternatively, hosted directly where the website is
 - e.g "thiswebsite.com/hotlinebling.mp3" another example:
 
-![](https://i.imgur.com/LUcCvwl.png)
+![](https://cloud-6nvg3sfdj-hack-club-bot.vercel.app/0LUcCvwl.png)
 
 `type="[media-type]"`
 

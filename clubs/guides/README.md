@@ -6,7 +6,7 @@ But, we’re here to help! Find the info you’re (probably) looking for right h
 
 Table of contents:
 - Meeting Models
-  - [Meeting Model #1 Development Teams](meeting_models/development-teams.md.md)
+  - [Meeting Model #1 Development Teams](meeting_models/development-teams.md)
   - [Meeting Model #2 CTF & Cyber Security](meeting_models/ctfs.md)
   - [Meeting Model #3 Synth Challenge](meeting_models/synth-challenge.md)
   - [Meeting Model #4 Microbits & hardware](meeting_models/hardware.md)

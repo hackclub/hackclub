@@ -135,7 +135,7 @@ All revenue is currently from donors.
 ### If you've applied previously with the same idea, how much progress have you made since the last time you applied? Anything change?
 
 - We doubled in size, from 90 clubs to 186
-- We started tracking per-meeting attendance with a Slack bot (screenshot: https://i.imgur.com/w8qr2Re.png) and significantly tightened the criteria for what qualifies as an active club – we had to kill a lot of clubs as part of this
+- We started tracking per-meeting attendance with a Slack bot (screenshot: https://cloud-pdsvvm06t-hack-club-bot.vercel.app/0w8qr2Re.png) and significantly tightened the criteria for what qualifies as an active club – we had to kill a lot of clubs as part of this
 - We received our own 501(c)(3) status
 
 If you have already participated or committed to participate in an incubator, "accelerator" or "pre-accelerator" program, please tell us about it.

@@ -284,7 +284,9 @@ A good way to get ideas for what to add to your website is to look at other peop
 - [Sophie Huang](https://sohuang.github.io/)
 - [Jevin Sidhu](http://jevinsidhu.com/)
 - [Sam Poder](http://sampoder.com/)
+- [Nisarga Adhikary](https://nisarga.me)
 - [Faisal Sayed](https://fayd.me/)
+- [EvanNotFound](https://ohevan.com/)
 
 **Websites Made by Professionals:**
 

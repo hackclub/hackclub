@@ -317,7 +317,7 @@ in heading below**
 
 Congrats, now you're a Git (6) God!
 
-![Git (6) God](https://i.imgur.com/LWvdiqA.gif)
+![Git (6) God](https://cloud-9i6mz70ob-hack-club-bot.vercel.app/0LWvdiqA.gif)
 
 ## Git and GitHub Pages w/o provided link
 

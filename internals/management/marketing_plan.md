@@ -8,7 +8,7 @@ Two goals:
 
 ## Coding Clubs = Hack Club
 
-![](https://i.imgur.com/ozv1cnY.jpg)
+![](https://cloud-gs62bvyse-hack-club-bot.vercel.app/0ozv1cnY.jpg)
 
 Build seeds to create new clubs to trigger grassroots strategy in new areas.
 

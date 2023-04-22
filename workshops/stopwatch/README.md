@@ -114,12 +114,12 @@ Navigate to your `script.js` file and let's start writing JavaScript!
 First we will link the milliseconds, seconds and minutes in our HTML with some JavaScript variables.
 
 ```js
-const milisec = document.querySelector('.milliseconds')
+const millisec = document.querySelector('.milliseconds')
 const sec = document.querySelector('.seconds')
 const min = document.querySelector('.minutes')
 ```
 
-Explanation: We define 3 variables `milisec`, `sec` and `min` using `const` and set their value to the first element that matches a specified CSS class(s) in the document. In our case, those CSS selectors are `.milliseconds` , `.seconds` , `.minutes` respectively.
+Explanation: We define 3 variables `millisec`, `sec` and `min` using `const` and set their value to the first element that matches a specified CSS class(s) in the document. In our case, those CSS selectors are `.milliseconds` , `.seconds` , `.minutes` respectively.
 
 Now, if you are wondering what is a `const` and what is a `querySelector()`, let me clear all your doubts!
 
@@ -139,20 +139,20 @@ Learn more about the [types of variables](https://www.freecodecamp.org/news/var-
 Moving ahead, we'll define 4 more variables but this time, using `let`
 
 ```js
-let miliNum = 0
+let milliNum = 0
 let secNum = 0
 let minNum = 0
 let INTERVAL
 ```
 
-Explanation: We'll increment the `miliNum`, `secNum` and `minNum` variables and display it on the screen when the user starts the stopwatch. The `INTERVAL` variable will be used to clear or set the intervals.
+Explanation: We'll increment the `milliNum`, `secNum` and `minNum` variables and display it on the screen when the user starts the stopwatch. The `INTERVAL` variable will be used to clear or set the intervals.
 
 Next up, we'll define few functions each for incrementing milliseconds, seconds and minutes and we will add them to our HTML.
 
 ```js
 function milliseconds() {
-  miliNum++
-  milisec.innerHTML = miliNum
+  milliNum++
+  millisec.innerHTML = milliNum
 }
 
 function seconds() {
@@ -196,18 +196,18 @@ Learn more about [`setInterval()`](https://www.w3schools.com/js/js_timing.asp).
 Your code so far:
 
 ```js
-const milisec = document.querySelector('.milliseconds')
+const millisec = document.querySelector('.milliseconds')
 const sec = document.querySelector('.seconds')
 const min = document.querySelector('.minutes')
 
-let miliNum = 0
+let milliNum = 0
 let secNum = 0
 let minNum = 0
 let INTERVAL
 
 function milliseconds() {
-  miliNum++
-  milisec.innerHTML = miliNum
+  milliNum++
+  millisec.innerHTML = milliNum
 }
 
 function seconds() {
@@ -259,15 +259,15 @@ Your `milliseconds()` function will look like this:
 
 ```js
 function milliseconds() {
-  miliNum++
-  if (miliNum < 10) {
-    milisec.innerHTML = '0' + miliNum
+  milliNum++
+  if (milliNum < 10) {
+    millisec.innerHTML = '0' + milliNum
   } else {
-    milisec.innerHTML = miliNum
+    millisec.innerHTML = milliNum
   }
 
-  if (miliNum == 99) {
-    miliNum = 0
+  if (milliNum == 99) {
+    milliNum = 0
     seconds()
   }
 }
@@ -286,15 +286,15 @@ Similarly, we'll do this for the seconds and minutes too!
 
 ```js
 function milliseconds() {
-  miliNum++
-  if (miliNum < 10) {
-    milisec.innerHTML = '0' + miliNum
+  milliNum++
+  if (milliNum < 10) {
+    millisec.innerHTML = '0' + milliNum
   } else {
-    milisec.innerHTML = miliNum
+    millisec.innerHTML = milliNum
   }
 
-  if (miliNum == 99) {
-    miliNum = 0
+  if (milliNum == 99) {
+    milliNum = 0
     seconds()
   }
 }
@@ -358,10 +358,10 @@ For resetting the stopwatch, we'll implement the `reset()` function which will:
 ```js
 function reset() {
   clearInterval(INTERVAL)
-  miliNum = 0
+  milliNum = 0
   secNum = 0
   minNum = 0
-  milisec.innerHTML = '00'
+  millisec.innerHTML = '00'
   sec.innerHTML = '00'
   min.innerHTML = '00'
 }
@@ -373,25 +373,25 @@ After we are done implementing these 2 functions, I'm happy to say that you have
 <summary>Here's the final JavaScript code:</summary>
 
 ```js
-const milisec = document.querySelector('.milliseconds')
+const millisec = document.querySelector('.milliseconds')
 const sec = document.querySelector('.seconds')
 const min = document.querySelector('.minutes')
 
-let miliNum = 0
+let milliNum = 0
 let secNum = 0
 let minNum = 0
 let INTERVAL
 
 function milliseconds() {
-  miliNum++
-  if (miliNum < 10) {
-    milisec.innerHTML = '0' + miliNum
+  milliNum++
+  if (milliNum < 10) {
+    millisec.innerHTML = '0' + milliNum
   } else {
-    milisec.innerHTML = miliNum
+    millisec.innerHTML = milliNum
   }
 
-  if (miliNum == 99) {
-    miliNum = 0
+  if (milliNum == 99) {
+    milliNum = 0
     seconds()
   }
 }
@@ -432,10 +432,10 @@ function stop() {
 
 function reset() {
   clearInterval(INTERVAL)
-  miliNum = 0
+  milliNum = 0
   secNum = 0
   minNum = 0
-  milisec.innerHTML = '00'
+  millisec.innerHTML = '00'
   sec.innerHTML = '00'
   min.innerHTML = '00'
 }

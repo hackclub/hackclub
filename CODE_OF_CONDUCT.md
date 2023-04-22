@@ -30,6 +30,8 @@ Explicit enforcement of the Code of Conduct applies to all official online Hack 
 - The [GitHub projects](https://github.com/hackclub)
 - Club Meetings
 
+Anyone associated with HQ is required to follow and model the Code of Conduct in all situations, including places with explicit enforcement and in other spaces too. There is a higher bar for anyone associated with HQ.
+
 Other Hack Club groups (such as hackathons, conferences, meetups, and other unofficial forums) are encouraged to adopt this Code of Conduct. Those groups must provide their own moderators and/or working group (see below).
 
 ## Hacker Values
@@ -93,11 +95,11 @@ If you encounter a conduct-related issue, you should report it to the Working Gr
   - Reports are confidential within the Working Group.
   - Should you choose to remain anonymous then the Working Group cannot notify you of the outcome of your report.
   - You may contact a member of the group directly if you do not feel comfortable contacting the group as a whole. That member will then raise the issue with the Working Group as a whole, preserving the privacy of the reporter (if desired).
-  - If your report concerns a member of the Working Group they will be recused from Working Group discussions of the report.
+  - If your report concerns a member of the Working Group, they will be recused from Working Group discussions of the report.
   - The Working Group will strive to handle reports with discretion and sensitivity, to protect the privacy of the involved parties, and to avoid conflicts of interest.
 - You should receive a response within 48 hours (likely sooner). (Should you choose to contact a single Working Group member, it may take longer to receive a response.)
 - The Working Group will meet to review the incident and determine what happened.
-  - With the permission of person reporting the incident, the Working Group may reach out to other community members for more context.
+  - With the permission of the person reporting the incident, the Working Group may reach out to other community members for more context.
   - The Working Group will reach a decision as to how to act. These may include:
     - Nothing.
     - A request for a private or public apology.
@@ -105,7 +107,7 @@ If you encounter a conduct-related issue, you should report it to the Working Gr
     - An imposed vacation (for instance, asking someone to abstain for a week from the Slack or a GitHub project).
     - A permanent or temporary ban from some or all Hack Club spaces.
 - The Working Group will reach out to the original reporter to let them know the decision.
-- Appeals to the decision may be made to the Working Group, or to any of its members directly.
+- Appeals to the decision may be made to the Working Group or to any of its members directly.
 
 **Note that the goal of the Code of Conduct and the Working Group is to resolve conflicts in the most harmonious way possible.** We hope that in most cases issues may be resolved through polite discussion and mutual agreement. Bannings and other forceful measures are to be employed only as a last resort.
 
