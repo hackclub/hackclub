@@ -12,6 +12,8 @@ In this workshop we will make a an Arduino Nano-compatible PCB with NeoPixels.
 If you are not already familiar with the basics of using an ECAD tool like EasyEDA or KiCAD, check out @maggie's workshop on designing a PCB Business card:
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/enMtMOgimm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+Recommend a KiCAD video???
+
 In addition, the rest of the workshop assumes you know basic electronics terms like:
 1. Resistor: describe resistor
 2. Capacitor: describe capacitor
