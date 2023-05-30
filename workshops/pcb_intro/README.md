@@ -19,6 +19,34 @@ In addition, the rest of the workshop assumes you know basic electronics terms l
 2. Capacitor: describe capacitor
 </details>
 
+
+
+I am using: 
+<label><input name="viewSettings" type="radio" data-to-hide=".easyeda-img" checked />EasyEDA</label>
+<label><input name="viewSettings" type="radio" data-to-hide=".kicad-img" /> KiCAD</label>
+<script>
+  var style = document.createElement("style");
+  document.head.appendChild(style);
+
+  function updateStyles() {
+    var str = "";
+    document.querySelectorAll("input[type=radio][name=viewSettings]").forEach(function (c) {
+      if (!c.checked) str += `${c.attributes["data-to-hide"].value} {display: none}\n`;
+    });
+    style.innerHTML = str;
+  }
+
+
+  document.querySelectorAll("input[type=radio][name=viewSettings]").forEach(function (c) {
+    c.addEventListener("change", updateStyles);
+  });
+
+  updateStyles();
+</script>
+
+<span class="kicad-img">hiiiiiiiiiiiiiiiiii</span>
+<span class="easyeda-img">easyedaaaaaa</span>
+
 ## Part Selection
 
 Step 0 of designing a board is to clearly what problem you need the board to solve. Here, we are making a fancy level. The primary goal is demonstrating different electronics concepts related to PCB making. The secondary goal is to have an attractive and fun level.
