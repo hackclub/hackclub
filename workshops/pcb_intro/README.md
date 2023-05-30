@@ -22,9 +22,10 @@ In addition, the rest of the workshop assumes you know basic electronics terms l
 
 
 I am using: 
-<label><input name="viewSettings" type="radio" data-to-hide=".easyeda-img" checked />EasyEDA</label>
+<label><input name="viewSettings" type="radio" data-to-hide=".easyeda-img" checked=true/>EasyEDA</label>
 <label><input name="viewSettings" type="radio" data-to-hide=".kicad-img" /> KiCAD</label>
 <script>
+    // this script will hide 'data-to-hide' elements (images) when the above radio buttons are not clicked
   var style = document.createElement("style");
   document.head.appendChild(style);
 
@@ -43,9 +44,6 @@ I am using:
 
   updateStyles();
 </script>
-
-<span class="kicad-img">hiiiiiiiiiiiiiiiiii</span>
-<span class="easyeda-img">easyedaaaaaa</span>
 
 ## Part Selection
 
@@ -70,16 +68,32 @@ First, we place the heart of our system, the ATMEGA328P, in the TQFP pacakge.
 
 ### Power
 
-![](./1.png)
-
+<span class=kicad-img>![](./1.png)</span>
+<span class=easyeda-img>![](./e1.0.png)</span>
 Then, we need to connect the core power pins to power *nets*, and place *decoupling capacitors*.
 
-Nets:  Explain
+Nets: Nets, like VCC and GND serve as abstractions for actual connections in our schematic. If we literally connected every single chip to a central VCC and GND point in our schematic, it would be very messy. These symbols tell the PCB Design software that we need to connect those pins, while keeping the schematic clean.
 
-Decoupling Capacitor: explain
+Decoupling Capacitors: A decoupling capacitor is placed very close to the chip that needs or supplies power. When a chip suddenly demands power, it provides it while the battery and other components ramp up. So, these have to be as close to their IC as possible.
+
+
+<span class=easyeda-img>
+
+For the capacitors, go to "Common Library", click the arrow next to `C_0603_US` and select `C_0805_US` (sizes will be explained later).
+
+![](./e1.1.png)
+![](./e1.2.png)
+
+</span>
+
+
 
 ### Clock
-![](2.png)
+<span class=kicad-img>![](./2.png)</span>
+<span class=easyeda-img>
+![](./e2.0.png)
+Search for "C13738" in the Library for the clock.
+</span>
 Now that our MCU is powered, it needs a clock to tick to. We can later configure the ATMega328P to use our 16MHz crystal here rather than run at its default of 1MHz in software.
 
 This crystal needs an accompanying capacitor connected to ground on each pin. 
@@ -96,42 +110,62 @@ So, we use 12pF capacitors.
 </details>
 
 ### Reset
-![](3.png)
+<span class=kicad-img>![](./3.png)</span>
+<span class=easyeda-img>![](./e3.0.png)
+Search for `C318884` in the library to find the switch. Just like the capacitor, use a R_0805_EU resistor.
+</span>
 
-The bar over RESET means that it is active low, 0V will reset the MCU and it should be at 5V during normal operation. The SPST button here is JLCPCB's basic push button which connects it to the pin to ground when pressed. 
+The bar or hash next to RESET means that it is active low, 0V will reset the MCU and it should be at 5V during normal operation. The SPST button here is JLCPCB's basic push button which connects it to the pin to ground when pressed. 
 
 The resistor R6 is a pull-up resistor, a high-resistance resistor that gently pulls the RESET pin HIGH without passing too much current through it. This allows the switch to pull the RESET pin down without causing a short circuit, while preventing random noise from flipping RESET.
 
-This line is also **labeled** as RESET. This connects it to the RESET *net*. If we place another RESET label somewhere else in the circuit, our ECAD tool will understand that these two points have to be connected together.
+<span class=easyeda-img>![](./e3.1.png)
+
+Use the Net Label tool to label that line RESET. </span>
+
+Labeling this wire as RESET connects it to the RESET *net*. If we place another RESET label somewhere else in the circuit, our ECAD tool will understand that these two points have to be connected together, just like the GND and VCC nets.
 
 
 ### Label Pinout
 
-![](4.png)
+<span class=kicad-img>![](./4.png)</span>
+<span class=easyeda-img>![](./e4.0.png)</span>
+
 After this, we need labels telling us which MCU pin is which Arduino Nano pin.
+<span class=easyeda-img>Use the Net Port tool for this.
+
+![](./e4.1.png)</span>
 
 ## Headers
-![](5.png)
+<span class=kicad-img>![](./5.png)</span>
+<span class=easyeda-img>![](./e5.0.png)</span>
 
-First, we have the traditional Arduino Nano pinout connected to our labels, telling the ECAD software we want these headers connected to the prespecified microcontroller pins. Since this whole board is running at 5V, just mark 3V3 as NC (No Connetion).
+<span class=easyeda-img>
+
+In the Library, under the "System" tab, search for `DIP-30 ARDUINONANO` and `HEADER_PRG_2x03` to find these headers.
+![](./e5.1.png)
+![](./e5.2.png)
+</span>
+First, we have the traditional Arduino Nano pinout connected to our labels, telling the ECAD software we want these headers connected to the prespecified microcontroller pins. Since this whole board is running at 5V, just mark 3V3 as NC (No Connect).
+
+<span class=easyeda-img>![](./e5.3.png)</span>
 
 We also have the ICSP header, which is used for flashing the Arduino's bootloader. It has all the SPI pins in one neat package, MISO, MOSI, SCK, RESET, VCC, GND.
 
-## USB
+## USB Type C
 
 We start with the 16 Pin USB 2.0 Type C receptacle, C2988369.
 
-![](6.png)
+<span class=kicad-img>![](./6.png)</span>
+<span class=easyeda-img>![](./e6.0.png)</span>
 
-NC: SBU1/2 and Shield (shield is only for hosts).
+NC: SBU1/2 and Shield/Shell (shield is only for hosts).
 GND goes to our ground net.
 Mark VBUS with a net, and then run it through a diode to the VCC net, which powers everything else on this board. Since we are powering a bunch of LEDs I picked the biggest diode JLCPCB had (as a basic part). This diode prevents current from going backwards into your computer if both USB and 5V pins are plugged in.
 
 Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have to each be connected to 5.1k resistors to ground. That tells the USB-C power adapter that we can draw up to 5V 3A.
 
-
-
-![](7.png)
+<span class=kicad-img>![](./7.png)</span>
 
 Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor, this capacitor makes the RESET pin briefly pulse low, until it is charged up again.
 
@@ -141,4 +175,4 @@ TXD and RXD (belonging to the *device* i.e. this MCU), are connected to their mi
 
 Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 to actually turn this into a PCB, or check out Part 3 to add more features to this board.
 
-![](longhorn_leds.svg)
+<span class=kicad-img>![](./full-kicad.svg)</span>
