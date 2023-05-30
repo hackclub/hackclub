@@ -152,7 +152,7 @@ First, we have the traditional Arduino Nano pinout connected to our labels, tell
 
 We also have the ICSP header, which is used for flashing the Arduino's bootloader. It has all the SPI pins in one neat package, MISO, MOSI, SCK, RESET, VCC, GND.
 
-## USB Type C
+## USB
 
 We start with the 16 Pin USB 2.0 Type C receptacle, C2988369.
 
@@ -166,6 +166,7 @@ Mark VBUS with a net, and then run it through a diode to the VCC net, which powe
 Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have to each be connected to 5.1k resistors to ground. That tells the USB-C power adapter that we can draw up to 5V 3A.
 
 <span class=kicad-img>![](./7.png)</span>
+<span class=easyeda-img>![](./e7.0.png)</span>
 
 Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor, this capacitor makes the RESET pin briefly pulse low, until it is charged up again.
 
@@ -173,6 +174,7 @@ TXD and RXD (belonging to the *device* i.e. this MCU), are connected to their mi
 
 ### Done!
 
-Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 to actually turn this into a PCB, or check out Part 3 to add more features to this board.
+Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 to actually turn this into a PCB, or Part 3 to add more features to this board.
 
 <span class=kicad-img>![](./full-kicad.svg)</span>
+<span class=easyeda-img>![](./full-easyeda.svg)</span>
