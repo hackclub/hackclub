@@ -2,7 +2,7 @@
 name: 'PCB Level Part 1: Microcontroller Design'
 description: 'Design an Arduino Nano-compatible microcontroller board'
 author: '@karmanyaahm'
-img: './7.png'
+img: 'https://cloud-b13eq4dcp-hack-club-bot.vercel.app/1e7.0.png'
 ---
 
 In this workshop, we will design an Arduino Nano-compatible microcontroller board.
