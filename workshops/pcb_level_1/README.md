@@ -66,8 +66,8 @@ First, we place the heart of our system, the ATmega328P, in a TQFP package.
 
 ### Power
 
-<span class=kicad-img>![](./1.png)</span>
-<span class=easyeda-img>![](./e1.0.png)</span>
+<span class=kicad-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/01.png)</span>
+<span class=easyeda-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/3e1.0.png)</span>
 
 Then, we need to connect the power pins to power *nets* and place *decoupling capacitors*.
 
@@ -80,17 +80,18 @@ Then, we need to connect the power pins to power *nets* and place *decoupling ca
 
 For the capacitors, go to "Common Library", click the arrow next to `C_0603_US` and select `C_0805_US` (sizes will be explained later).
 
-![](./e1.1.png)
-![](./e1.2.png)
+![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/4e1.1.png)
+![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/5e1.2.png)
 
 </span>
 
 ### Clock
-<span class=kicad-img>![](./2.png)</span>
+<span class=kicad-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/12.png)</span>
 <span class=easyeda-img>
-![](./e2.0.png)
+![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/6e2.0.png)
 Search for "C13738" in the Library for the clock.
 </span>
+
 Now that our MCU is powered, it needs a clock to tick to. We can configure the ATmega328P to use this 16MHz crystal rather than run at its default of 1MHz.
 
 This crystal needs an accompanying capacitor connected to ground on each pin. 
@@ -107,8 +108,8 @@ So, we use 12pF capacitors.
 </details>
 
 ### Reset
-<span class=kicad-img>![](./3.png)</span>
-<span class=easyeda-img>![](./e3.0.png)
+<span class=kicad-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/23.png)</span>
+<span class=easyeda-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/7e3.0.png)
 Search for `C318884` in the library to find the switch. Just like the capacitor, use a R_0805_EU resistor.
 </span>
 
@@ -116,7 +117,7 @@ The bar or hash next to RESET means that it is active low, 0V will reset the MCU
 
 The resistor R6 is a pull-up resistor, a high-resistance resistor that gently pulls the RESET pin HIGH without passing too much current through it. This allows the switch to pull the RESET pin down without causing a short circuit, while preventing random noise from flipping RESET.
 
-<span class=easyeda-img>![](./e3.1.png)
+<span class=easyeda-img>![image](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/8e3.1.png)
 
 Use the Net Label tool to label that line RESET. </span>
 
@@ -125,28 +126,28 @@ Labeling this wire as RESET connects it to the RESET *net*. If we place another 
 
 ### Label Pinout
 
-<span class=kicad-img>![](./4.png)</span>
-<span class=easyeda-img>![](./e4.0.png)</span>
+<span class=kicad-img>![image](./4.png)</span>
+<span class=easyeda-img>![image](./e4.0.png)</span>
 
 After this, we need labels telling us which MCU pin is which Arduino Nano pin.
 <span class=easyeda-img>Use the Net Port tool for this.
-![](./e4.1.png)
+![image](./e4.1.png)
 </span>
 
 ## Headers
 <span class=kicad-img>![](./5.png)</span>
 
-<span class=easyeda-img>![](./e5.0.png)</span>
+<span class=easyeda-img>![image](./e5.0.png)</span>
 
 <span class=easyeda-img>
 In the Library, under the "System" tab, search for `DIP-30 ARDUINONANO` and `HEADER_PRG_2x03` to find these headers.
-![](./e5.1.png)
-![](./e5.2.png)
+![image](./e5.1.png)
+![image](./e5.2.png)
 </span>
 
 First, we have the traditional Arduino Nano pinout connected to our labels, telling the ECAD software we want these headers connected to the prespecified microcontroller pins. Since this whole board is running at 5V, just mark 3V3 as NC (No Connect).
 
-<span class=easyeda-img>![](./e5.3.png)</span>
+<span class=easyeda-img>![image](./e5.3.png)</span>
 
 We also have the ICSP header, which is used for flashing the Arduino's bootloader. It has all the SPI pins in one neat package, MISO, MOSI, SCK, RESET, VCC, GND.
 
@@ -154,8 +155,8 @@ We also have the ICSP header, which is used for flashing the Arduino's bootloade
 
 We start with the 16 Pin USB 2.0 Type C receptacle, C2988369.
 
-<span class=kicad-img>![](./6.png)</span>
-<span class=easyeda-img>![](./e6.0.png)</span>
+<span class=kicad-img>![image](./6.png)</span>
+<span class=easyeda-img>![image](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/0e6.0.png)</span>
 
 NC: SBU1/2 and Shield/Shell (shield is only for hosts).
 GND goes to our ground net.
@@ -163,8 +164,8 @@ Mark VBUS with a net, and then run it through a diode to the VCC net, which powe
 
 Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have to each be connected through separate 5.1k resistors to ground. That tells the USB-C power adapter that we can draw up to 5V 3A.
 
-<span class=kicad-img>![](./7.png)</span>
-<span class=easyeda-img>![](./e7.0.png)</span>
+<span class=kicad-img>![image](./7.png)</span>
+<span class=easyeda-img>![](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/1e7.0.png)</span>
 
 Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor; this capacitor makes the RESET pin briefly pulse low.
 
@@ -174,8 +175,8 @@ TXD and RXD (belonging to the *device* i.e. this MCU), are connected to their mi
 
 Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 to turn this into a PCB, or Part 3 to add more features to this board.
 
-<span class=kicad-img>![](./full-kicad.svg)</span>
-<span class=easyeda-img>![](./full-easyeda.svg)</span>
+<span class=kicad-img>![](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/3full-kicad.svg)</span>
+<span class=easyeda-img>![](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/2full-easyeda.svg)</span>
 
 ### Notes
 1. Thanks to Hugo Hu for his instructable, this is based on that design: https://www.instructables.com/ATmega328P-Corgi-Arduino/
