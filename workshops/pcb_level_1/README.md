@@ -1,8 +1,8 @@
 ---
-name: 'OnBoard Part 1: Designing out microcontroller board'
-description: ''
+name: 'PCB Level Part 1: Microcontroller Design'
+description: 'Design an Arduino Nano-compatible microcontroller board'
 author: '@karmanyaahm'
-img: ''
+img: './7.png'
 ---
 
 In this workshop, we will design an Arduino Nano-compatible microcontroller board.
@@ -22,8 +22,8 @@ In addition, the rest of the workshop assumes you know basic electronics terms l
 
 
 I am using: 
-<label><input name="viewSettings" type="radio" data-to-hide=".easyeda-img"  checked=true/>EasyEDA</label>
-<label><input name="viewSettings" type="radio" data-to-hide=".kicad-img" /> KiCAD</label>
+<label><input name="viewSettings" type="radio" data-to-hide=".kicad-img" checked=true/> KiCAD</label>
+<label><input name="viewSettings" type="radio" data-to-hide=".easyeda-img" />EasyEDA</label>
 <script>
     // this script will switch between KiCAD images and EasyEDA images based on radio buttons above
 
@@ -130,19 +130,20 @@ Labeling this wire as RESET connects it to the RESET *net*. If we place another 
 
 After this, we need labels telling us which MCU pin is which Arduino Nano pin.
 <span class=easyeda-img>Use the Net Port tool for this.
-
-![](./e4.1.png)</span>
+![](./e4.1.png)
+</span>
 
 ## Headers
 <span class=kicad-img>![](./5.png)</span>
+
 <span class=easyeda-img>![](./e5.0.png)</span>
 
 <span class=easyeda-img>
-
 In the Library, under the "System" tab, search for `DIP-30 ARDUINONANO` and `HEADER_PRG_2x03` to find these headers.
 ![](./e5.1.png)
 ![](./e5.2.png)
 </span>
+
 First, we have the traditional Arduino Nano pinout connected to our labels, telling the ECAD software we want these headers connected to the prespecified microcontroller pins. Since this whole board is running at 5V, just mark 3V3 as NC (No Connect).
 
 <span class=easyeda-img>![](./e5.3.png)</span>
