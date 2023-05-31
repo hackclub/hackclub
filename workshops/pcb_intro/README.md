@@ -5,7 +5,7 @@ author: '@karmanyaahm'
 img: ''
 ---
 
-In this workshop we will make a an Arduino Nano-compatible PCB with NeoPixels.
+In this workshop, we will design an Arduino Nano-compatible microcontroller board.
 
 <details>
 <summary>Prerequisites</summary>
@@ -15,17 +15,18 @@ If you are not already familiar with the basics of using an ECAD tool like EasyE
 Recommend a KiCAD video???
 
 In addition, the rest of the workshop assumes you know basic electronics terms like:
-1. Resistor: describe resistor
-2. Capacitor: describe capacitor
+1. Resistor: A resistor limits the electric current that flows through a circuit. Resistance is the restriction of current.
+2. Capacitor: A capacitor stores charge, and thus energy. It's like a tiny battery that charges and discharges very quickly.
 </details>
 
 
 
 I am using: 
-<label><input name="viewSettings" type="radio" data-to-hide=".easyeda-img" checked=true/>EasyEDA</label>
+<label><input name="viewSettings" type="radio" data-to-hide=".easyeda-img"  checked=true/>EasyEDA</label>
 <label><input name="viewSettings" type="radio" data-to-hide=".kicad-img" /> KiCAD</label>
 <script>
-    // this script will hide 'data-to-hide' elements (images) when the above radio buttons are not clicked
+    // this script will switch between KiCAD images and EasyEDA images based on radio buttons above
+
   var style = document.createElement("style");
   document.head.appendChild(style);
 
@@ -47,34 +48,32 @@ I am using:
 
 ## Part Selection
 
-Step 0 of designing a board is to clearly what problem you need the board to solve. Here, we are making a fancy level. The primary goal is demonstrating different electronics concepts related to PCB making. The secondary goal is to have an attractive and fun level.
+Step 0 of designing a board is to clearly define what problem you need the board to solve. Here, we are making a fancy level. The primary goal is to demonstrate electronics and PCB concepts. A secondary goal is to have an attractive and fun level.
 
 Now, Step 1 of designing a board is selecting your core components.
 
-1. Microcontroller: Atmega328P. The Atmega series is the most robust and common 8-bit MCU in the maker community, being used in nearly all Arduinos ever since the beginning. Additionally, it requires very few external components and runs over a wide range of voltages (1.8V-5.5V). It's also one of the very few microcontrollers that is a *Basic Part* on JLCPCB. And, is available in a QFP package so it can be hand-soldered. Many other microcontrollers are cheaper and faster than the Atmega328P, but none are as robust.
+1. Microcontroller: ATmega328P. The ATmega series is the most robust and common 8-bit MCUs, being used in many Arduinos since the beginning. Additionally, it requires very few external components and runs over a wide range of voltages (1.8V-5.5V). It's also one of the very few microcontrollers that is a *Basic Part* on JLCPCB. And, it's available in a QFP package so it can be hand-soldered. It doesn't have many fancy features, but it's simple and robust.
 
-2. USB-Serial Interface: CH340N. Because the Atmega328P doesn't have built-in USB, we need a USB-UART IC. @hugo said that the CH340C worked well for him, and it's very cheap, so I'm using it too. The CH340N is the cheapest IC from the CH340 series that has an integrated clock, meaning fewer components are needed.
+2. USB-Serial Interface: CH340N. Because the ATmega328P doesn't have a built-in USB interface, we need a USB-UART IC. @hugo said that the CH340C worked well for him, and it's very cheap, so I'm using it too. The CH340N is the cheapest IC from the CH340 series that has an integrated clock, meaning fewer components are needed.
 
-3. LEDs: WS2812B or equivalent. The size is dictated by your PCB design, you could get the original 5x5mm WS2812, or 3.5x3.5mm WS2812-MINI, or 2x2mm WS2812-2020 or an equivalent clone.
+3. Pinout: While not technically a component, we will follow the standard Arduino Nano pinout. This really doesn't matter— unless you value your future self's sanity when trying to wire up new components.
 
-4. Pinout: While not technically a component, we will follow the standard Arduino Nano pinout. This really doesn't matter, unless you value your future self's sanity when trying to wire up new components.
-
-
-Okay, now on to the actual circuitry.
+Okay, now on to the actual circuit.
 
 ## Core (Microcontroller)
 
-First, we place the heart of our system, the ATMEGA328P, in the TQFP pacakge.
+First, we place the heart of our system, the ATmega328P, in a TQFP package.
 
 ### Power
 
 <span class=kicad-img>![](./1.png)</span>
 <span class=easyeda-img>![](./e1.0.png)</span>
-Then, we need to connect the core power pins to power *nets*, and place *decoupling capacitors*.
 
-Nets: Nets, like VCC and GND serve as abstractions for actual connections in our schematic. If we literally connected every single chip to a central VCC and GND point in our schematic, it would be very messy. These symbols tell the PCB Design software that we need to connect those pins, while keeping the schematic clean.
+Then, we need to connect the power pins to power *nets* and place *decoupling capacitors*.
 
-Decoupling Capacitors: A decoupling capacitor is placed very close to the chip that needs or supplies power. When a chip suddenly demands power, it provides it while the battery and other components ramp up. So, these have to be as close to their IC as possible.
+**Nets**: Nets like VCC and GND serve as abstractions for actual connections in our schematic. If we connected every single chip to a central VCC and GND point in our schematic, it would be very messy. These symbols tell the PCB Designer that we need to connect those pins while keeping the schematic clean.
+
+**Decoupling Capacitors**: A decoupling capacitor is placed very close to the chip that needs or supplies power. When a chip suddenly demands power, it provides it while the battery and other components ramp up. So, these have to be as close to their IC as possible.
 
 
 <span class=easyeda-img>
@@ -86,20 +85,18 @@ For the capacitors, go to "Common Library", click the arrow next to `C_0603_US` 
 
 </span>
 
-
-
 ### Clock
 <span class=kicad-img>![](./2.png)</span>
 <span class=easyeda-img>
 ![](./e2.0.png)
 Search for "C13738" in the Library for the clock.
 </span>
-Now that our MCU is powered, it needs a clock to tick to. We can later configure the ATMega328P to use our 16MHz crystal here rather than run at its default of 1MHz in software.
+Now that our MCU is powered, it needs a clock to tick to. We can configure the ATmega328P to use this 16MHz crystal rather than run at its default of 1MHz.
 
 This crystal needs an accompanying capacitor connected to ground on each pin. 
 
 <details>
-<summary>How to calculate the value of these capacitors?</summary>
+<summary>How did I come up with the value of these capacitors?</summary>
 
 ```
 C = 2 * CL - CS
@@ -161,20 +158,24 @@ We start with the 16 Pin USB 2.0 Type C receptacle, C2988369.
 
 NC: SBU1/2 and Shield/Shell (shield is only for hosts).
 GND goes to our ground net.
-Mark VBUS with a net, and then run it through a diode to the VCC net, which powers everything else on this board. Since we are powering a bunch of LEDs I picked the biggest diode JLCPCB had (as a basic part). This diode prevents current from going backwards into your computer if both USB and 5V pins are plugged in.
+Mark VBUS with a net, and then run it through a diode to the VCC net, which powers everything else on this board. Since we are powering a bunch of LEDs I picked the biggest diode JLCPCB had (as a basic part). This diode prevents current from going back into your computer if both USB and 5V pins are plugged in.
 
-Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have to each be connected to 5.1k resistors to ground. That tells the USB-C power adapter that we can draw up to 5V 3A.
+Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have to each be connected through separate 5.1k resistors to ground. That tells the USB-C power adapter that we can draw up to 5V 3A.
 
 <span class=kicad-img>![](./7.png)</span>
 <span class=easyeda-img>![](./e7.0.png)</span>
 
-Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor, this capacitor makes the RESET pin briefly pulse low, until it is charged up again.
+Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor; this capacitor makes the RESET pin briefly pulse low.
 
 TXD and RXD (belonging to the *device* i.e. this MCU), are connected to their microcontroller pins D1 and D0 respectively with some status LEDs.
 
-### Done!
+## Done!
 
-Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 to actually turn this into a PCB, or Part 3 to add more features to this board.
+Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 to turn this into a PCB, or Part 3 to add more features to this board.
 
 <span class=kicad-img>![](./full-kicad.svg)</span>
 <span class=easyeda-img>![](./full-easyeda.svg)</span>
+
+### Notes
+1. Thanks to Hugo Hu for his instructable, this is based on that design: https://www.instructables.com/ATmega328P-Corgi-Arduino/
+2. **WARNING**: You will need another microcontroller board to flash the bootloader on this board before you can program it with USB. 
