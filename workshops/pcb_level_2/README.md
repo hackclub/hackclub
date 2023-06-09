@@ -87,9 +87,100 @@ Now that our footprints are all selected, we can move on to the PCB!
 
 ## PCB
 
+### Setup
+
 ![](1.png)
+
+Click 'Open PCB in board editor' in the schematic view.
+
 ![](2.png)
+
+In the PCB editor, click on 'Edit board setup'. This is where we will set the constraints of our PCB fab.
+
 ![](3.png)
+
+<!-- can we add a toggle button for other fabs and add those settings for reference-->
+Here I'm using JLCPCB's specifications, but every fab should have a document like this. Go to <https://jlcpcb.com/capabilities/pcb-capabilities> to find the latest specs, these might have changed since this guide was writen.
+
+![](4.png)
+
+Go to Design Rules > Constraints.
+
+![](5.png)
+
+And fill out these details.
+
+![](6.png)
+
+Then, in Design Rules > Pre-defined Sizes, specify how wide you want your traces, vias, and differential pairs will be. KiCAD will let you pick between the options here when designing your board. We will set a track width of 0.3mm for signal traces, 0.5mm for power traces, and 0.7mm diameter vias with a 0.3mm hole. For slow signals/short traces this doesn't matter as much, so we will pick 0.3mm/0.3mm/0.5mm.
+
+Then, press OK to save and exit board setup.
+
+
+### Set Up Components
+
+![](7.png)
+
+
+
+Now, in the board editor window, clicking on 'Update PCB with schematic' brings in all your components to the PCB page. If you make schematic changes, you can click on this to bring in your new parts. In the Update PCB window options, check Delete footprints and Replace footprints and click on Update PCB.
+
+![](8.png)
+
+Place them off to the side for now.
+
+
+### Board Edges
+
+![](9.png)
+
+Now, to define the edges of our board, select the `Edge.Cuts` layer in the layer menu.
+
+![](10.png)
+
+You can use the shape tools to draw the outline of the board, or...
+
+![](11.png)
+
+you can go to File > Import > Graphics to import a custom SVG. You can pick whatever shape you like here.
+
+> *Note*: In future workshops with this board, we will be adding more features such as an LED strip and accelerometer to make a level. Make sure your design will support the physical realities of being a level, such as having two points to balance on, which do not have any ports. Also, consider how your LEDs will physicall and aesthetically fit.  Make a rough paper sketch if that helps.  
+> Of course, none of this applies to you if you are not building a level.
+
+![](12.png)
+
+By default, your drawing probably won't fit the Arduino Nano template.
+
+![](13.png)
+
+Delete the first import and go back to File > Import > Graphics. Play with the scale setting until your design snugly fits the Arduino Nano template (while leaving space for other components).
+
+![](15.png)
+
+Clean up the drawing to only leave the one continuous board shape.
+
+![](14.png)
+
+Double click the shape and set it up like the image above.
+- Not Locked
+- Not Filled Shape
+- Line width: 0.6mm
+- Line Style: Solid
+- Layer: Edge.Cuts
+
+### Components
+
+> Note: Many of the choices in this section will depend upon your design. Feel free to ask for help in [#onboard-help](https://k.malhotra.cc/todo.link).
+
+![](17.a.png)
+![](16.png)
+After you position the Board Edge and Arduino Template, lock them in place to avoid accidentally moving it.
+
+Then, start by placing the major components: USB Port, ICs, Microcontroller, buttons, etc. 
+![](17.png)
+Rotate them to a position that'll make running traces convinient. You can rotate things 90 degrees by pressing 'R' on your keyboard, or set a 45 degree offset by going to properties.
+![](18.png)
+![](19.png)
 
 ## Further Reading
 1. https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-sizes-and-packages/#
