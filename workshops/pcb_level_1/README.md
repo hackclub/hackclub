@@ -181,3 +181,6 @@ Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 
 ### Notes
 1. Thanks to Hugo Hu for his instructable, this is based on that design: https://www.instructables.com/ATmega328P-Corgi-Arduino/
 2. **WARNING**: You will need another microcontroller board to flash the bootloader on this board before you can program it with USB. 
+
+TODO: 
+- Header pin D2/D3 is marked different from MCU pin D2/D3. Re-render all imgs.6

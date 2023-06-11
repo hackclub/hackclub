@@ -170,17 +170,78 @@ Double click the shape and set it up like the image above.
 
 ### Components
 
-> Note: Many of the choices in this section will depend upon your design. Feel free to ask for help in [#onboard-help](https://k.malhotra.cc/todo.link).
+> Note: Many of the choices in this section will depend upon your outline. Feel free to ask for help in [#onboard-help](https://k.malhotra.cc/todo.link).
 
 ![](17.a.png)
 ![](16.png)
 After you position the Board Edge and Arduino Template, lock them in place to avoid accidentally moving it.
 
-Then, start by placing the major components: USB Port, ICs, Microcontroller, buttons, etc. 
+Then, start placing the major components: USB Port, ICs, Microcontroller, buttons, etc. 
 ![](17.png)
-Rotate them to a position that'll make running traces convinient. You can rotate things 90 degrees by pressing 'R' on your keyboard, or set a 45 degree offset by going to properties.
+Rotate them to a position that'll make running traces convinient. For example, you want the D+ and D- pins of the USB controller to be facing the port, and the TX, RX pins to be facing your microcontroller. You can rotate things 90 degrees by pressing 'R' on your keyboard, or set a 45 degree offset by going to properties.
+
 ![](18.png)
 ![](19.png)
+![](19.5.png)
+
+This is how I roughly layed out the core components within the Arduino Nano footprint. Some large components like the reset switch and diode are outside the main nano footprint. The red pads indicate that these are all on the `F.Cu` layer. This is the front of the PCB. While a typical Nano design needs to be two sided (have components on both the front and back) to fit within that footprint, here, we will make a larger, one-sided board to keep assembly costs down.
+
+> Note: This layout took several rounds of iteration between layout and trace routing to generate. It's absolutely fine to come back to rearrange your components if you find your layout doesn't work when routing traces - especially if this is your first complex board.
+
+![](20.png)
+
+While laying out your board, the 3D viewer is a very useful tool (especially if you are hand-soldering and need more space in between components). Use 'Alt+3' to open it.
+
+![](21.png)
+If some components are not visible, go back to your board design and double click the part to open properties.
+![](22.png)
+
+Make sure you're in properties for the whole component, not just one pad or silkscreen, and then open the '3D Models' tab. Click on the file browser for the 3D model line. These are the correct models:
+
+- USB Connector: `${KICAD7_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.wrl`
+- CH340N: `${KICAD7_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.wrl`
+- SW1: `${KICAD7_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_TL3342.wrl`
+
+These may vary based on your version of KiCAD.
+
+<!--put this somewhere else-->Also, you should have your schematic split screened with the PCB layout. Whenever you click on a component in one, it will be focused in the other, making it significatly easier to see what's going on.
+
+
+### Routing
+
+To route tracks
+
+
 
 ## Further Reading
+
 1. https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-sizes-and-packages/#
+
+
+//// TODO write
+
+by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B)
+
+EasyEDA Layers:
+Top/BottomLayer: The layers of copper on your PCB. The conductive traces on your board should live on these layers. Separate conductive traces can not cross each other on the same layer, you must use a via to connect two layers and not cross traces on the same side of the board.
+Top/BottomSilkLayer: The printed (silkscreened) layers on your PCB. These are either white or black and must be monochrome (you can't have gradients, everything must be a clear line). Anything can go on these layers, they are simply printed.
+Top/BottomPasteMaskLayer: This is the mask for the solder paste. Anything that will be soldered needs to have paste on it. You probably don't need to mess with this layer unless you know what you're doing, it should be automatically handled by your part footprints.
+Top/BottomSolderMaskLayer: The is is the mask for the soldermask. The soldermask is the colored coating that goes on the board. By default, it covers everything except pads and is what gets printed on. Removing soldermask can be used to expose copper for cool effects.
+Ratlines: These have no impact on the final production of your board, they are simply guides to tell you where you still need to draw traces.
+BoardOutLine: This is the actual outline of how your board will be cut.
+Multi-Layer: This holds, as the name suggests, multilayer elements such as vias or holes.
+Document: This layer has information that will not be printed on the board and is only visible in EasyEDA. Think of it as comments in your code.Reminders:
+
+    Make sure you draw your traces! You shouldn't have any ratlines on your board when you send it for production
+    Remember separate conductive traces cannot touch each other
+    You can use a combination of layers to design the look of your board
+    You almost always want to have the traces of your board covered with soldermask, but it's typically ok to have other copper regions exposed, just remember it might tarnish
+    JLCPCB engineers will review your design before production, if they spot any issues they'll send you an email to check in
+
+Component notes:
+
+    The grant allows you to purchase anything from one of the allowed suppliers, including JLCPCB
+    One of JLCPCB's sister/partner companies, LCSC, stocks virtually every generic component you'd ever need, and all of them can be assembled
+    Keep in mind that JLCPCB charges a $3 fee for every "extended component" type that they assemble
+    You will not be able to get specialized components from Adafruit or similar companies through the grant
+    A complete library of JLCPCB/LCSC components is available at https://jlcpcb.com/parts
