@@ -114,6 +114,8 @@ And fill out these details.
 
 Then, in Design Rules > Pre-defined Sizes, specify how wide you want your traces, vias, and differential pairs will be. KiCAD will let you pick between the options here when designing your board. We will set a track width of 0.3mm for signal traces, 0.5mm for power traces, and 0.7mm diameter vias with a 0.3mm hole. For slow signals/short traces this doesn't matter as much, so we will pick 0.3mm/0.3mm/0.5mm.
 
+In Text & Graphics -> Defaults, change all Text Thicknesses that are less than .153mm to .153mm.
+
 Then, press OK to save and exit board setup.
 
 
@@ -286,6 +288,18 @@ Microcontrollers and complex ICs might have multiple pins that serve the same fu
 ![](45.png)
 ![](46.png)
 ![](47.png)
+
+Done! 
+
+Now you can solve other DRC issues pretty easily.
+- For trace clearance issues, just move the trace away from the specified component. These sometimes pop up when rearranging components after drawing them.
+- You can ignore/exclude all the Courtyard Overlaps with A1. That just points out that there are components inside the Arduino template. If you want to fix it, Right Click A1 > Open in Footprint Editor; delete the purple courtyard. This only affects this one instance of the Arduino footprint, and won't affect future PCBs you make with KiCAD.
+- Through-hole has 'Thermal relief connection incomplete': Make sure it's surrounded by the ground plane enough, and if it is ~110 degrees adjacent to it, try double clicking and rotating the pad 45 degrees from properties. Regenerate the plane with 'B' and it should connect with two spokes.
+- You can ignore most 'Footprint doesn't match copy' and Silkscreen. warnings. Manually fix the silkscreens that you want to see.
+
+
+![](50.svg/longhorn_leds-brd.svg)
+![](50.svg/longhorn_leds-B_Cu.svg)
 ## Further Reading
 
 1. https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-sizes-and-packages/#
