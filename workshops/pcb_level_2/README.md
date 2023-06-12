@@ -209,10 +209,83 @@ These may vary based on your version of KiCAD.
 
 ### Routing
 
-To route tracks
+To route tracks, just follow the ratsnest (thin blue lines connecting matching nets), and connect the pads. Start with data signals, and do power and ground later. Try to use the higher thickness .5mm trace for sensitive or high load applications if you can fit it.
+
+The following images are one possible order to do this process in:
+
+Note: You can press 'X' when hovering over a pad to start a trace.
+
+In the Apperance sidebar go to Objects > Locked Item Shadow, and hide it to clean up your layout a little bit. Feel free to play with the opacities of other elements to get to a point that you are comfortable with.
+
+![](23.png)
+![](24.png)
+The decoupling capacitors for an IC must be right next to it. The purple lines are the 'Courtyard' - they show you how close two components can be without physically interfering, so, you keep the decoupling capacitor and IC's courtyards very close to each other.
 
 
+![](25.png)
+And then, connect the microcontroller pins. In my layout A0-A5, D0,D1,D5-D13 can be routed on the top layer as shown above.
 
+> I have to emphasize, this is my layout. This is not the right layout, this is not the best layout. It's just one out of the infinite possible arrangements of these traces.
+
+
+### Two layer routing
+
+Now because our microcontroller is on the Front layer, but there is no way to directly connect D4 of the microcontroller to the header pin D4, we will have to jump to another layer. First, press 'X' to start running a trace away from D4, towards the inside of the microcontroller
+
+You can click on the blue B.Cu layer to bring the Back layer traces to the front in the Layers sidebar.
+
+![](30.png)
+![](31.png)
+![](32.png)
+
+![](33.png)
+And then a little bit of finagling with the A6, A7, and the D13 vias lets me run VBUS under the Microcontroller, straight up to the USB port.
+
+Now, we only have ground pins left, and for that, we'll do something special.
+
+### Ground Plane
+
+Why is a ground plane good: describe
+
+
+![](34.png)
+![](35.png)
+![](36.png)
+
+And press 'B' to 
+
+
+![](37.png)
+![](38.png)
+![](39.png)
+![](40.png)
+
+The through-holes should connect themselves.
+
+## Checkcing your design with the DRC
+
+![](41.png)
+To make sure our board has no mistakes
+
+After you run the DRC with Refilling and Parity checks, you should see something like this.
+
+![](42.png)
+
+Sooo, there's 90 issues. That's not good.
+
+Looking at the Unconnected Items tab, where
+
+All 3 of the unconnected SHIELD errors can be Right Click > Excluded. They're all connected to the same USB port housing, so I don't know why KiCAD would expect us to connect them.
+
+Microcontrollers and complex ICs might have multiple pins that serve the same function, so KiCAD expects identically named pins to be interconnected. In this case, it's meaningless and can be ignored.
+
+
+> Note: while this solution is written as straightforward - coming up with something like this really wasn't. I was comparing approaches for over 30 mins before I decided on this. 
+
+![](44.png)
+![](45.png)
+![](46.png)
+![](47.png)
 ## Further Reading
 
 1. https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-sizes-and-packages/#
