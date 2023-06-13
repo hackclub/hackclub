@@ -126,7 +126,7 @@ Labeling this wire as RESET connects it to the RESET *net*. If we place another 
 
 ### Label Pinout
 
-<span class=kicad-img>![image](https://cloud-nbfq15yho-hack-club-bot.vercel.app/04.png)</span>
+<span class=kicad-img>![image](./4.png)</span>
 <span class=easyeda-img>![image](https://cloud-4drjlif5e-hack-club-bot.vercel.app/0e4.0.png)</span>
 
 After this, we need labels telling us which MCU pin is which Arduino Nano pin.
@@ -164,7 +164,7 @@ Mark VBUS with a net, and then run it through a diode to the VCC net, which powe
 
 Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have to each be connected through separate 5.1k resistors to ground. That tells the USB-C power adapter that we can draw up to 5V 3A.
 
-<span class=kicad-img>![image](https://cloud-nbfq15yho-hack-club-bot.vercel.app/37.png)</span>
+<span class=kicad-img>![image](./7.png)</span>
 <span class=easyeda-img>![](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/1e7.0.png)</span>
 
 Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor; this capacitor makes the RESET pin briefly pulse low.
@@ -181,6 +181,3 @@ Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 
 ### Notes
 1. Thanks to Hugo Hu for his instructable, this is based on that design: https://www.instructables.com/ATmega328P-Corgi-Arduino/
 2. **WARNING**: You will need another microcontroller board to flash the bootloader on this board before you can program it with USB. 
-
-TODO: 
-- Header pin D2/D3 is marked different from MCU pin D2/D3. Re-render all imgs.6

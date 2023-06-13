@@ -2,7 +2,7 @@
 name: 'OnBoard Part 2: From Schematic to PCB in KiCAD'
 description: ''
 author: '@karmanyaahm'
-img: ''
+img: './52.png'
 ---
 
 KiCAD version, maybe make an EasyEDA section later? I don't want to manually transfer my whole schematic and auto thing is not working.
@@ -206,7 +206,7 @@ Make sure you're in properties for the whole component, not just one pad or silk
 
 These may vary based on your version of KiCAD.
 
-<!--put this somewhere else-->Also, you should have your schematic split screened with the PCB layout. Whenever you click on a component in one, it will be focused in the other, making it significatly easier to see what's going on.
+<!--put this somewhere else, where-->Also, you should have your schematic split screened with the PCB layout. Whenever you click on a component in one, it will be focused in the other, making it significatly easier to see what's going on.
 
 
 ### Routing
@@ -234,75 +234,138 @@ And then, connect the microcontroller pins. In my layout A0-A5, D0,D1,D5-D13 can
 
 Now because our microcontroller is on the Front layer, but there is no way to directly connect D4 of the microcontroller to the header pin D4, we will have to jump to another layer. First, press 'X' to start running a trace away from D4, towards the inside of the microcontroller
 
-You can click on the blue B.Cu layer to bring the Back layer traces to the front in the Layers sidebar.
+![](26.png)
+
+Move to some empty space then press 'V' to create a via.
+
+![](27.png)
+
+Click to place the via, and now you can drag a blue trace - on the back side of the board.
+
+![](28.png)
+
+Click on D4. Since D4 and other pins are through holes, you can connect traces from either layer to them.
+
+![](29.png)
+
+Just like D4, use vias on A6, A7, D2, and D3 to reach their respective header pins. 
+- If your via is too close to a pad, solder might flow into it and prevent the pad from being properly attached, so, even though KiCAD doesn't stop you from doing that, stay a safe distance away from pads.
+- Note how we used vias to cross A6 and A7. This prevented us from having to run A7 all the way outside the headers to loop around.
+
+You can click on the blue `B.Cu` layer in the Layers sidebar to bring the Back layer traces to the front.
 
 ![](30.png)
+
+Just like that, use vias and thoughtful crossings to connect D0/D1 to the USB chip and D11/12/13 to the ICSP header.
+
+
+### The other tracks
+
 ![](31.png)
+
+And then you can run the Reset track.
+
 ![](32.png)
 
+And VCC.
+
 ![](33.png)
-And then a little bit of finagling with the A6, A7, and the D13 vias lets me run VBUS under the Microcontroller, straight up to the USB port.
+
+And then a little bit of finagling with the A6, A7, and D13 vias lets us run VBUS under the Microcontroller, straight up to the USB port.
 
 Now, we only have ground pins left, and for that, we'll do something special.
 
 ### Ground Plane
 
-Why is a ground plane good: describe
+A ground plane is a large continuous chunk of copper on a layer. It creates a low impedance i.e. clean and easy path for ground current to return. Having an adjacent ground plane also reduces the interference between parallel traces.  More complex 4 layer boards might even have a plane for VCC power. In this board, the ground plane will take up all the unoccupied space on the `B.Cu` layer.
 
 
 ![](34.png)
+
+First, click on add a filled zone.
+
 ![](35.png)
+
+Then, click on a point far outside the edge of the board and set up the Copper Zone to be connected to ground, and to remove islands below 10mm^2.
+
+
 ![](36.png)
 
-And press 'B' to 
+Then, draw a shape encompassing the whole board and press 'B' to build the plane.
 
 
 ![](37.png)
+
+You should play with Zone opacity in the Objects sidebar to find something good for you.
+
+
+Then, start dropping vias from ground pads. Press escape when it draws a blue trace, you only need the via.
+
 ![](38.png)
 ![](39.png)
+
+
+The through-holes should connect themselves to the ground plane.
+
 ![](40.png)
 
-The through-holes should connect themselves.
+This is what all the grounds look like.
 
-## Checkcing your design with the DRC
+
+## Design Rules Checker
+
+The Design Rules Checker (DRC) looks at the constraints we set the board up with and finds problems in the design.
 
 ![](41.png)
-To make sure our board has no mistakes
 
-After you run the DRC with Refilling and Parity checks, you should see something like this.
+After you run the DRC with Refilling and Parity checks, you should see a bunch of errors.
 
 ![](42.png)
 
 Sooo, there's 90 issues. That's not good.
 
-Looking at the Unconnected Items tab, where
+Looking at the Unconnected Items tab - the most important issues:
 
-All 3 of the unconnected SHIELD errors can be Right Click > Excluded. They're all connected to the same USB port housing, so I don't know why KiCAD would expect us to connect them.
+- All 3 of the unconnected SHIELD errors can be Right Click > Excluded. Microcontrollers and complex ICs might have multiple pins that serve the same function, so KiCAD expects identically named pins to be interconnected. In this case, it's meaningless and can be ignored because it's just the USB housing.
+- GND on the ICSP header is disconnected. That's a big problem.
 
-Microcontrollers and complex ICs might have multiple pins that serve the same function, so KiCAD expects identically named pins to be interconnected. In this case, it's meaningless and can be ignored.
-
-
-> Note: while this solution is written as straightforward - coming up with something like this really wasn't. I was comparing approaches for over 30 mins before I decided on this. 
+> Note: while this solution is written as straightforward - coming up with something like this really wasn't. I spent way more than 30 mins comparing approaches before I decided on this. 
 
 ![](44.png)
+
+Turned out, the part of the ground plane that connected to this GND pin was disconnected from the rest. [2](#2)
+
+
+The ground plane island highlighted another issue with this design. If you follow the current flow from the USB port to the bottom plane, it turns out the whole thing relies on one .3mm connection under the clock. 
 ![](45.png)
+
+Fortunately, there's an easy solution: double click the ground plane to open properties and change clearance and minimum width to .3mm.
+
 ![](46.png)
+
+Then, the ground plane goes in between the planes and it's a continuous chunk again.
 ![](47.png)
 
-Done! 
+And now our board is electrically done!
 
-Now you can solve other DRC issues pretty easily.
-- For trace clearance issues, just move the trace away from the specified component. These sometimes pop up when rearranging components after drawing them.
-- You can ignore/exclude all the Courtyard Overlaps with A1. That just points out that there are components inside the Arduino template. If you want to fix it, Right Click A1 > Open in Footprint Editor; delete the purple courtyard. This only affects this one instance of the Arduino footprint, and won't affect future PCBs you make with KiCAD.
-- Through-hole has 'Thermal relief connection incomplete': Make sure it's surrounded by the ground plane enough, and if it is ~110 degrees adjacent to it, try double clicking and rotating the pad 45 degrees from properties. Regenerate the plane with 'B' and it should connect with two spokes.
+You can solve other DRC issues pretty easily.
+- For trace clearance issues, just move the trace away from the specified component. These sometimes pop up when rearranging components after originally placing tracks.
+- You can ignore/exclude all the Courtyard Overlaps with A1. That just points out that there are components inside the Arduino template. [3](#3)
+- Through-hole has 'Thermal relief connection incomplete': Make sure it's surrounded by the ground plane enough, and if it is ~110 degrees adjacent to it, try double clicking and rotating the pad 45 degrees from properties. Regenerate the plane with 'B' and it should connect  with two spokes.
 - You can ignore most 'Footprint doesn't match copy' and Silkscreen. warnings. Manually fix the silkscreens that you want to see.
+- And you can ignore Hole Clearance violations of J1 to J1. It seems to work just fine anyway.
 
 
+## Finished Board
 ![](50.svg/longhorn_leds-brd.svg)
 ![](50.svg/longhorn_leds-B_Cu.svg)
+
+![](52.png)
 ## Further Reading
 
 1. https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-sizes-and-packages/#
+2. Ideally, the ground plane would be a continuous, mostly unobstructed, chunk, but that would require more layers i.e. more complexity and cost, which is not good for this workshop.
+3. If you're obsessed with details like me and want to fix it, right click A1 > Open in Footprint Editor; delete the purple courtyard. This only affects this one instance of the Arduino footprint, and won't affect future PCBs you make with KiCAD. This tells KiCAD that the Arduino is not an exclusive component, and other things can overlap it.
 
 
 //// TODO write
