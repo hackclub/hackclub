@@ -1,11 +1,11 @@
 ---
-name: 'OnBoard Part 2: From Schematic to PCB in KiCAD'
-description: ''
+name: 'PCB Level Part 2: Using KiCAD to design a board for JLCPCB'
+description: 'Use KiCAD's board design'
 author: '@karmanyaahm'
 img: './52.png'
 ---
 
-KiCAD version, maybe make an EasyEDA section later? I don't want to manually transfer my whole schematic and auto thing is not working.
+<!--KiCAD version, maybe make an EasyEDA version later?-->
 
 In this workshop we will turn our schematic from Part 1 into an actual PCB.
 
@@ -13,7 +13,26 @@ In this workshop we will turn our schematic from Part 1 into an actual PCB.
 <summary>Prerequisites</summary>
 The rest of the workshop assumes you understand PCB Basics like:
 1. Layers: describe 
-2. Traces: describe
+2. Traces: A continous stretch of copper that connects multiple parts.
+
+Some tips by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B)
+
+**KiCAD Layers:**
+`F.Cu`/`B.Cu`: The layers of copper on your PCB. The conductive traces on your board should live on these layers. Separate conductive traces can not cross each other on the same layer, you must use a via to connect two layers and not cross traces on the same side of the board.
+`F.Silkscreen`/`B.Silkscreen`: The printed (silkscreened) layers on your PCB. These are either white or black and must be monochrome (you can't have gradients, everything must be a clear line). Anything can go on these layers, they are simply printed.
+`F.Paste`/`B.Paste`: This is the mask for the solder paste. Anything that will be soldered needs to have paste on it. You probably don't need to mess with this layer unless you know what you're doing, it should be automatically handled by your part footprints.
+`F.Mask`/`B.Mask`: The is is the mask for the soldermask. The soldermask is the colored coating that goes on the board. By default, it covers everything except pads and is what gets printed on. Removing soldermask can be used to expose copper for cool effects.
+Objects > Ratlines: These have no impact on the final production of your board, they are simply guides to tell you where you still need to draw traces.
+`Edge.Cuts`: This is the actual outline of how your board will be cut.
+Multi-Layer: This holds, as the name suggests, multilayer elements such as vias or holes.
+`User.Comments`: This layer has information that will not be printed on the board and is only visible in KiCAD. Think of it as comments in your code.
+
+Reminders:
+- Make sure you draw your traces! You shouldn't have any ratlines on your board when you send it for production.
+- Remember separate conductive traces cannot touch each other.
+- You can use a combination of layers to design the look of your board.
+- You almost always want to have the traces of your board covered with soldermask, but it's typically ok to have other copper regions exposed, just remember it might tarnish.
+- JLCPCB engineers will review your design before production, if they spot any issues they'll send you an email to check in.
 </details>
 
 
@@ -122,8 +141,6 @@ Then, press OK to save and exit board setup.
 ### Set Up Components
 
 ![](7.png)
-
-
 
 Now, in the board editor window, clicking on 'Update PCB with schematic' brings in all your components to the PCB page. If you make schematic changes, you can click on this to bring in your new parts. In the Update PCB window options, check Delete footprints and Replace footprints and click on Update PCB.
 
@@ -366,32 +383,3 @@ You can solve other DRC issues pretty easily.
 1. https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-sizes-and-packages/#
 2. Ideally, the ground plane would be a continuous, mostly unobstructed, chunk, but that would require more layers i.e. more complexity and cost, which is not good for this workshop.
 3. If you're obsessed with details like me and want to fix it, right click A1 > Open in Footprint Editor; delete the purple courtyard. This only affects this one instance of the Arduino footprint, and won't affect future PCBs you make with KiCAD. This tells KiCAD that the Arduino is not an exclusive component, and other things can overlap it.
-
-
-//// TODO write
-
-by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B)
-
-EasyEDA Layers:
-Top/BottomLayer: The layers of copper on your PCB. The conductive traces on your board should live on these layers. Separate conductive traces can not cross each other on the same layer, you must use a via to connect two layers and not cross traces on the same side of the board.
-Top/BottomSilkLayer: The printed (silkscreened) layers on your PCB. These are either white or black and must be monochrome (you can't have gradients, everything must be a clear line). Anything can go on these layers, they are simply printed.
-Top/BottomPasteMaskLayer: This is the mask for the solder paste. Anything that will be soldered needs to have paste on it. You probably don't need to mess with this layer unless you know what you're doing, it should be automatically handled by your part footprints.
-Top/BottomSolderMaskLayer: The is is the mask for the soldermask. The soldermask is the colored coating that goes on the board. By default, it covers everything except pads and is what gets printed on. Removing soldermask can be used to expose copper for cool effects.
-Ratlines: These have no impact on the final production of your board, they are simply guides to tell you where you still need to draw traces.
-BoardOutLine: This is the actual outline of how your board will be cut.
-Multi-Layer: This holds, as the name suggests, multilayer elements such as vias or holes.
-Document: This layer has information that will not be printed on the board and is only visible in EasyEDA. Think of it as comments in your code.Reminders:
-
-    Make sure you draw your traces! You shouldn't have any ratlines on your board when you send it for production
-    Remember separate conductive traces cannot touch each other
-    You can use a combination of layers to design the look of your board
-    You almost always want to have the traces of your board covered with soldermask, but it's typically ok to have other copper regions exposed, just remember it might tarnish
-    JLCPCB engineers will review your design before production, if they spot any issues they'll send you an email to check in
-
-Component notes:
-
-    The grant allows you to purchase anything from one of the allowed suppliers, including JLCPCB
-    One of JLCPCB's sister/partner companies, LCSC, stocks virtually every generic component you'd ever need, and all of them can be assembled
-    Keep in mind that JLCPCB charges a $3 fee for every "extended component" type that they assemble
-    You will not be able to get specialized components from Adafruit or similar companies through the grant
-    A complete library of JLCPCB/LCSC components is available at https://jlcpcb.com/parts
