@@ -5,7 +5,7 @@ author: '@karmanyaahm'
 img: './52.png'
 ---
 
-<!--KiCAD version, maybe make an EasyEDA version later? -->
+<!--KiCAD version, maybe make an EasyEDA version later?-->
 
 In this workshop we will turn our schematic from Part 1 into an actual PCB.
 
