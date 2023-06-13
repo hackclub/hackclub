@@ -1,8 +1,8 @@
 ---
 name: 'PCB Level Part 2: Using KiCAD to design a board for JLCPCB'
-description: 'Learn to use KiCAD's board design'
+description: "Learn to use KiCAD's board design"
 author: '@karmanyaahm'
-img: ''
+img: './52.png'
 ---
 
 <!--KiCAD version, maybe make an EasyEDA version later?-->
