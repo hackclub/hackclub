@@ -5,7 +5,7 @@ author: '@karmanyaahm'
 img: ''
 ---
 
-<!--KiCAD version, maybe make an EasyEDA version later?>
+<!--KiCAD version, maybe make an EasyEDA version later?-->
 
 In this workshop we will turn our schematic from Part 1 into an actual PCB.
 
@@ -118,7 +118,7 @@ In the PCB editor, click on 'Edit board setup'. This is where we will set the co
 
 ![](3.png)
 
-<!-- can we add a toggle button for other fabs and add those settings for reference>
+<!-- can we add a toggle button for other fabs and add those settings for reference-->
 Here I'm using JLCPCB's specifications, but every fab should have a document like this. Go to <https://jlcpcb.com/capabilities/pcb-capabilities> to find the latest specs, these might have changed since this guide was writen.
 
 ![](4.png)
@@ -223,7 +223,7 @@ Make sure you're in properties for the whole component, not just one pad or silk
 
 These may vary based on your version of KiCAD.
 
-<!--put this somewhere else, where>Also, you should have your schematic split screened with the PCB layout. Whenever you click on a component in one, it will be focused in the other, making it significatly easier to see what's going on.
+<!--put this somewhere else, where-->Also, you should have your schematic split screened with the PCB layout. Whenever you click on a component in one, it will be focused in the other, making it significatly easier to see what's going on.
 
 
 ### Routing
@@ -382,4 +382,4 @@ You can solve other DRC issues pretty easily.
 
 1. https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-sizes-and-packages/#
 2. Ideally, the ground plane would be a continuous, mostly unobstructed, chunk, but that would require more layers i.e. more complexity and cost, which is not good for this workshop.
-3. If you're obsessed with details like me and want to fix it, right click A1 > Open in Footprint Editor; delete the purple courtyard. This only affects this one instance of the Arduino footprint, and won't affect future PCBs you make with KiCAD. This tells KiCAD that the Arduino is not an exclusive component, and other things can overlap it.-->
+3. If you're obsessed with details like me and want to fix it, right click A1 > Open in Footprint Editor; delete the purple courtyard. This only affects this one instance of the Arduino footprint, and won't affect future PCBs you make with KiCAD. This tells KiCAD that the Arduino is not an exclusive component, and other things can overlap it.
