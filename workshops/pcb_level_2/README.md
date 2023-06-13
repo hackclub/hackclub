@@ -15,7 +15,7 @@ The rest of the workshop assumes you understand PCB Basics like:
 1. Layers: describe 
 2. Traces: A continous stretch of copper that connects multiple parts.
 
-Some tips by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B)
+<!--Some tips by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B)-->
 
 **KiCAD Layers:**
 `F.Cu`/`B.Cu`: The layers of copper on your PCB. The conductive traces on your board should live on these layers. Separate conductive traces can not cross each other on the same layer, you must use a via to connect two layers and not cross traces on the same side of the board.
