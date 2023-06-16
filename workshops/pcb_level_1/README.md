@@ -168,7 +168,16 @@ Since we are powering a bunch of LEDs, I picked the biggest diode JLCPCB had (as
 
 Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have to each be connected through separate 5.1k resistors to ground. That tells the USB-C power adapter that we can draw up to 5V 3A.
 
-<span class=kicad-img>![image](./7.png)</span>
+<span class=kicad-img>
+
+![](7.1.png)
+![](7.2.png)
+
+You can download the KiCAD CH340N footprint here: [ch340n.kicad_sym](./ch340n.kicad_sym). Then, put it in your project folder and add it to your symbol library in Preferences > Manage Symbol Libraries > Project Specific Libraries.
+
+
+![image](./7.png)
+</span>
 <span class=easyeda-img>![](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/1e7.0.png)</span>
 
 Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB-C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor; this capacitor makes the RESET pin briefly pulse low instead of staying low forever (avoiding bootlooping the MCU).
