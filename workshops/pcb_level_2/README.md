@@ -1,23 +1,20 @@
 ---
-name: "PCB Level Part 2: Using KiCAD to design a board for JLCPCB"
+name: "PCB Level Part 2: Using KiCAD to design a PCB"
 description: "Learn to use KiCAD's board design"
 author: '@karmanyaahm'
 img: './52.png'
 ---
 
-<!--KiCAD version, maybe make an EasyEDA version later?-->
-
-In this workshop we will turn our schematic from Part 1 into an actual PCB.
+In this workshop we will turn our schematic from Part 1 into an actual PCB layout.
 
 <details>
 <summary>Prerequisites</summary>
 The rest of the workshop assumes you understand PCB Basics like:
-1. Layers: describe 
-2. Traces: A continous stretch of copper that connects multiple parts.
+1. Traces: A continous stretch of copper that connects multiple parts.
+2. Layers: Layers are parallel surfaces of *stuff* on your PCB. There are a bunch of different kinds of layers, like:
 
-Some tips by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B)
 
-**KiCAD Layers:**
+**KiCAD Layers:** [^4]
 `F.Cu`/`B.Cu`: The layers of copper on your PCB. The conductive traces on your board should live on these layers. Separate conductive traces can not cross each other on the same layer, you must use a via to connect two layers and not cross traces on the same side of the board.
 `F.Silkscreen`/`B.Silkscreen`: The printed (silkscreened) layers on your PCB. These are either white or black and must be monochrome (you can't have gradients, everything must be a clear line). Anything can go on these layers, they are simply printed.
 `F.Paste`/`B.Paste`: This is the mask for the solder paste. Anything that will be soldered needs to have paste on it. You probably don't need to mess with this layer unless you know what you're doing, it should be automatically handled by your part footprints.
@@ -33,6 +30,8 @@ Reminders:
 - You can use a combination of layers to design the look of your board.
 - You almost always want to have the traces of your board covered with soldermask, but it's typically ok to have other copper regions exposed, just remember it might tarnish.
 - JLCPCB engineers will review your design before production, if they spot any issues they'll send you an email to check in.
+
+
 </details>
 
 
@@ -58,7 +57,7 @@ Some footprints, like the Arduino Nano outline, which is not a real component in
 
 ### Generics
 
-0402, 0603, 0805, and 1206 are common sizes of small two terminal SMD components like resistors, capacitors, and diodes. 0805 is very common and still somewhat hand solderable, so we will use 0805 for all our components.
+0402, 0603, 0805, and 1206 are common sizes of small two terminal SMD components like resistors, capacitors, and diodes. 0805 is very common and still somewhat hand solderable, so we will use 0805 for all our components [^1].
 
 <a title="Zerodamage, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:SMT_sizes,_based_on_original_by_Zureks.svg"><img style="background-color: white;" width="256" alt="SMT sizes, based on original by Zureks" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/SMT_sizes%2C_based_on_original_by_Zureks.svg/256px-SMT_sizes%2C_based_on_original_by_Zureks.svg.png"></a>
 
@@ -93,9 +92,9 @@ Similarly, for the ICSP header, you will get the right result by searching for 2
 
 You might've noticed that in my original footprint assignment window had some components filled out already. This is because chips like the ATmega328P-AU only have one footprint - that's what the `AU` designates.
 
-Others, like the switch, were found by searching for the part number `1187A` through the footprint window.
+Others, like the switch, were found by searching for the part number, `1187A`, through the footprint window.
 
-Lastly, some components like the USB-C Receptacle can be weird. While there are hundereds of different manufacturers of USB-C ports and receptacles, there are only a few common designs. However, there is no way to confirm which part uses which design, so in this case, I went backwards - first picking the KiCAD footprint that I liked, and then finding that part of JLCPCB, which happens to be the `7010ASV`.
+Lastly, some components like the USB-C Receptacle can be weird. While there are hundreds of different manufacturers of USB-C ports and receptacles, there are only a few common designs. However, there is no way to confirm which part uses which design (without manually checking each dimension), so in this case, I went backwards - first picking the KiCAD footprint that I liked, and then finding that part of JLCPCB, which happens to be the `7010ASV`.
 
 
 ---
@@ -163,7 +162,7 @@ You can use the shape tools to draw the outline of the board, or...
 
 you can go to File > Import > Graphics to import a custom SVG. You can pick whatever shape you like here.
 
-> *Note*: In future workshops with this board, we will be adding more features such as an LED strip and accelerometer to make a level. Make sure your design will support the physical realities of being a level, such as having two points to balance on, which do not have any ports. Also, consider how your LEDs will physicall and aesthetically fit.  Make a rough paper sketch if that helps.  
+> *Note*: In future workshops with this board, we will be adding more features such as an LED strip and accelerometer to make a level. Make sure your design will support the physical realities of being a level, such as having two points to balance on, which do not have any ports. Also, consider how your LEDs will physically and aesthetically fit.  Make a rough paper sketch if that helps.  
 > Of course, none of this applies to you if you are not building a level.
 
 ![](12.png)
@@ -182,14 +181,14 @@ Clean up the drawing to only leave the one continuous board shape.
 
 Double click the shape and set it up like the image above.
 - Not Locked
-- Not Filled Shape
+- Not Filled
 - Line width: 0.6mm
 - Line Style: Solid
 - Layer: Edge.Cuts
 
 ### Components
 
-> Note: Many of the choices in this section will depend upon your outline. Feel free to ask for help in [#onboard-help](https://k.malhotra.cc/todo.link).
+> Note: Many of the choices in this section will depend upon your outline. Feel free to ask for help in [#onboard-help](https://hackclub.slack.com/archives/C0593MG26TT).
 
 ![](17.a.png)
 ![](16.png)
@@ -230,7 +229,7 @@ These may vary based on your version of KiCAD.
 
 To route tracks, just follow the ratsnest (thin blue lines connecting matching nets), and connect the pads. Start with data signals, and do power and ground later. Try to use the higher thickness .5mm trace for sensitive or high load applications if you can fit it.
 
-The following images are one possible order to do this process in:
+The following images are one way to do this:
 
 Note: You can press 'X' when hovering over a pad to start a trace.
 
@@ -238,13 +237,15 @@ In the Apperance sidebar go to Objects > Locked Item Shadow, and hide it to clea
 
 ![](23.png)
 ![](24.png)
+
 The decoupling capacitors for an IC must be right next to it. The purple lines are the 'Courtyard' - they show you how close two components can be without physically interfering, so, you keep the decoupling capacitor and IC's courtyards very close to each other.
 
 
 ![](25.png)
+
 And then, connect the microcontroller pins. In my layout A0-A5, D0,D1,D5-D13 can be routed on the top layer as shown above.
 
-> I have to emphasize, this is my layout. This is not the right layout, this is not the best layout. It's just one out of the infinite possible arrangements of these traces.
+> I have to emphasize, this is just what I came up with. This is not the right layout, this is not the best layout. It's one out of the infinite possible arrangements of these traces.
 
 
 ### Two layer routing
@@ -266,10 +267,10 @@ Click on D4. Since D4 and other pins are through holes, you can connect traces f
 ![](29.png)
 
 Just like D4, use vias on A6, A7, D2, and D3 to reach their respective header pins. 
-- If your via is too close to a pad, solder might flow into it and prevent the pad from being properly attached, so, even though KiCAD doesn't stop you from doing that, stay a safe distance away from pads.
-- Note how we used vias to cross A6 and A7. This prevented us from having to run A7 all the way outside the headers to loop around.
+- If your via is too close to a pad, solder might flow into it and prevent the pad from being properly attached. So, even though KiCAD doesn't stop you from doing that, stay a safe distance away from pads.
+- Note how this uses vias to cross A6 and A7. This prevents us from having to run A7 all the way outside the headers to loop around.
 
-You can click on the blue `B.Cu` layer in the Layers sidebar to bring the Back layer traces to the front.
+You can click on the blue `B.Cu` layer in the Layers sidebar to visually bring the back layer traces to the front.
 
 ![](30.png)
 
@@ -294,7 +295,7 @@ Now, we only have ground pins left, and for that, we'll do something special.
 
 ### Ground Plane
 
-A ground plane is a large continuous chunk of copper on a layer. It creates a low impedance i.e. clean and easy path for ground current to return. Having an adjacent ground plane also reduces the interference between parallel traces.  More complex 4 layer boards might even have a plane for VCC power. In this board, the ground plane will take up all the unoccupied space on the `B.Cu` layer.
+A ground plane is a large continuous chunk of copper on a layer. It creates a low impedance i.e. clean and easy path for ground current to return. (Because physics) Having an adjacent ground plane also reduces the interference between parallel traces.  More complex 4 layer boards might even have a plane for VCC power. In this board, the ground plane will take up all the unoccupied space on the `B.Cu` layer.
 
 
 ![](34.png)
@@ -305,27 +306,23 @@ First, click on add a filled zone.
 
 Then, click on a point far outside the edge of the board and set up the Copper Zone to be connected to ground, and to remove islands below 10mm^2.
 
-
 ![](36.png)
 
 Then, draw a shape encompassing the whole board and press 'B' to build the plane.
-
 
 ![](37.png)
 
 You should play with Zone opacity in the Objects sidebar to find something good for you.
 
-
-Then, start dropping vias from ground pads. Press escape when it draws a blue trace, you only need the via.
-
 ![](38.png)
 ![](39.png)
 
+Then, start dropping vias from ground pads. Press escape when it draws a blue trace, you only need the via here.
 
-The through-holes should connect themselves to the ground plane.
 
 ![](40.png)
 
+The through-holes should connect themselves to the ground plane.
 This is what all the grounds look like.
 
 
@@ -350,11 +347,12 @@ Looking at the Unconnected Items tab - the most important issues:
 
 ![](44.png)
 
-Turned out, the part of the ground plane that connected to this GND pin was disconnected from the rest. [2](#2)
+Turned out, the part of the ground plane that connected to this GND pin was disconnected from the rest [^2].
 
 
-The ground plane island highlighted another issue with this design. If you follow the current flow from the USB port to the bottom plane, it turns out the whole thing relies on one .3mm connection under the clock. 
 ![](45.png)
+
+The ground plane island highlighted another issue with this design. If you follow the current flow from the USB port to the bottom plane, it turns out the whole thing relies on one .3mm connection under the clock.
 
 Fortunately, there's an easy solution: double click the ground plane to open properties and change clearance and minimum width to .3mm.
 
@@ -367,7 +365,7 @@ And now our board is electrically done!
 
 You can solve other DRC issues pretty easily.
 - For trace clearance issues, just move the trace away from the specified component. These sometimes pop up when rearranging components after originally placing tracks.
-- You can ignore/exclude all the Courtyard Overlaps with A1. That just points out that there are components inside the Arduino template. [3](#3)
+- You can ignore/exclude all the Courtyard Overlaps with A1. That just points out that there are components inside the Arduino template [^3].
 - Through-hole has 'Thermal relief connection incomplete': Make sure it's surrounded by the ground plane enough, and if it is ~110 degrees adjacent to it, try double clicking and rotating the pad 45 degrees from properties. Regenerate the plane with 'B' and it should connect  with two spokes.
 - You can ignore most 'Footprint doesn't match copy' and Silkscreen. warnings. Manually fix the silkscreens that you want to see.
 - And you can ignore Hole Clearance violations of J1 to J1. It seems to work just fine anyway.
@@ -378,8 +376,13 @@ You can solve other DRC issues pretty easily.
 ![](50.svg/longhorn_leds-B_Cu.svg)
 
 ![](52.png)
+
 ## Further Reading
 
-1. https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-sizes-and-packages/#
-2. Ideally, the ground plane would be a continuous, mostly unobstructed, chunk, but that would require more layers i.e. more complexity and cost, which is not good for this workshop.
-3. If you're obsessed with details like me and want to fix it, right click A1 > Open in Footprint Editor; delete the purple courtyard. This only affects this one instance of the Arduino footprint, and won't affect future PCBs you make with KiCAD. This tells KiCAD that the Arduino is not an exclusive component, and other things can overlap it.
+[^1]: More info at https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-sizes-and-packages/#
+
+[^2]: Ideally, the ground plane would be a continuous, mostly unobstructed, chunk, but that would require more layers i.e. more complexity and cost, which is not good for this workshop.
+
+[^3]: If you're obsessed with details like me and want to fix it, right click A1 > Open in Footprint Editor; delete the purple courtyard. This only affects this one instance of the Arduino footprint, and won't affect future PCBs you make with KiCAD. This tells KiCAD that the Arduino is not an exclusive component, and other things can overlap it.
+
+[^4]: Tips in prerequisites by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B).
