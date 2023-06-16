@@ -48,9 +48,9 @@ I am using:
 
 ## Part Selection
 
-Step 0 of designing a board is to clearly define what problem you need the board to solve. Here, we are making a fancy level. The primary goal is to demonstrate electronics and PCB concepts. A secondary goal is to have an attractive and fun level.
+Step 0 of designing a board is to clearly define what problem you need the board to solve. Here, we are making a nice looking level. The primary goal is to demonstrate electronics and PCB concepts. A secondary goal is to have an attractive and fun level.
 
-Now, Step 1 of designing a board is selecting your core components.
+Step 1 of designing a board is selecting your core components:
 
 1. Microcontroller: ATmega328P. The ATmega series is the most robust and common 8-bit MCUs, being used in many Arduinos since the beginning. Additionally, it requires very few external components and runs over a wide range of voltages (1.8V-5.5V). It's also one of the very few microcontrollers that is a *Basic Part* on JLCPCB. And, it's available in a QFP package so it can be hand-soldered. It doesn't have many fancy features, but it's simple and robust.
 
@@ -58,11 +58,11 @@ Now, Step 1 of designing a board is selecting your core components.
 
 3. Pinout: While not technically a component, we will follow the standard Arduino Nano pinout. This really doesn't matter— unless you value your future self's sanity when trying to wire up new components.
 
-Okay, now on to the actual circuit.
+Now on to the actual circuit.
 
 ## Core (Microcontroller)
 
-First, we place the heart of our system, the ATmega328P, in a TQFP package.
+First, we place the heart of our system, the ATmega328P-AU, in a TQFP package.
 
 ### Power
 
@@ -73,7 +73,7 @@ Then, we need to connect the power pins to power *nets* and place *decoupling ca
 
 **Nets**: Nets like VCC and GND serve as abstractions for actual connections in our schematic. If we connected every single chip to a central VCC and GND point in our schematic, it would be very messy. These symbols tell the PCB Designer that we need to connect those pins while keeping the schematic clean.
 
-**Decoupling Capacitors**: A decoupling capacitor is placed very close to the chip that needs or supplies power. When a chip suddenly demands power, it provides it while the battery and other components ramp up. So, these have to be as close to their IC as possible.
+**Decoupling Capacitors**: A decoupling capacitor is placed very close to the chip that needs or supplies power. When a chip suddenly demands power, it provides it while the battery and other components ramp up. So, these have to be as close to their parent IC as possible.
 
 
 <span class=easyeda-img>
@@ -113,9 +113,9 @@ So, we use 12pF capacitors.
 Search for `C318884` in the library to find the switch. Just like the capacitor, use a R_0805_EU resistor.
 </span>
 
-The bar or hash next to RESET means that it is active low, 0V will reset the MCU and it should be at 5V during normal operation. The SPST button here is JLCPCB's basic push button which connects it to the pin to ground when pressed. 
+The bar or hash next to RESET means that it is active low, 0V will reset the MCU and it should be at 5V during normal operation. The SPST button here is JLCPCB's basic push button which connects RESET to ground when pressed. 
 
-The resistor R6 is a pull-up resistor, a high-resistance resistor that gently pulls the RESET pin HIGH without passing too much current through it. This allows the switch to pull the RESET pin down without causing a short circuit, while preventing random noise from flipping RESET.
+The resistor R6 is a pull-up resistor, a high-resistance resistor that gently pulls the RESET pin HIGH without passing too much current through it. This allows the switch to pull the RESET pin down without causing a short circuit, while preventing random noise from pulling RESET down.
 
 <span class=easyeda-img>![image](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/8e3.1.png)
 
@@ -159,25 +159,29 @@ We start with the 16 Pin USB 2.0 Type C receptacle, C2988369.
 <span class=easyeda-img>![image](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/0e6.0.png)</span>
 
 NC: SBU1/2 and Shield/Shell (shield is only for hosts).
+
 GND goes to our ground net.
-Mark VBUS with a net, and then run it through a diode to the VCC net, which powers everything else on this board. Since we are powering a bunch of LEDs I picked the biggest diode JLCPCB had (as a basic part). This diode prevents current from going back into your computer if both USB and 5V pins are plugged in.
+
+Mark VBUS with a net, and then run it through a diode to the VCC net, which powers everything else on this board. 
+
+Since we are powering a bunch of LEDs, I picked the biggest diode JLCPCB had (as a basic part). This diode prevents current from going back into your computer if both USB and 5V pins are plugged in.
 
 Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have to each be connected through separate 5.1k resistors to ground. That tells the USB-C power adapter that we can draw up to 5V 3A.
 
 <span class=kicad-img>![image](./7.png)</span>
 <span class=easyeda-img>![](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/1e7.0.png)</span>
 
-Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor; this capacitor makes the RESET pin briefly pulse low.
+Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB-C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor; this capacitor makes the RESET pin briefly pulse low instead of staying low forever (avoiding bootlooping the MCU).
 
-TXD and RXD (belonging to the *device* i.e. this MCU), are connected to their microcontroller pins D1 and D0 respectively with some status LEDs.
+TXD and RXD (*device* directionality i.e. MCU), are connected to their microcontroller pins D1 and D0 respectively with some status LEDs.
 
 ## Done!
 
-Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 to turn this into a PCB, or Part 3 to add more features to this board.
+Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 to turn this into a PCB, or Part 4 to add more features to this board.
 
 <span class=kicad-img>![](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/3full-kicad.svg)</span>
 <span class=easyeda-img>![](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/2full-easyeda.svg)</span>
 
-### Notes
+### Footnotes
 1. Thanks to Hugo Hu for his instructable, this is based on that design: https://www.instructables.com/ATmega328P-Corgi-Arduino/
-2. **WARNING**: You will need another microcontroller board to flash the bootloader on this board before you can program it with USB. 
+2. **WARNING**: You will need another microcontroller board to flash the bootloader on this ATmega328P before you can program it with USB. 

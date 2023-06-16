@@ -7,7 +7,7 @@ img: 'https://raw.githubusercontent.com/karmanyaahm/hackclub/onboard/workshops/p
 
 In this workshop we will take a KiCAD PCB and order it through JLCPCB with assembly.
 
-If you're just jumping in, make sure you have your [Board Setup](../pcb_level_2/#setup) and [DRC Checked](../pcb_level_2/#design-rules-checker) from Part 2 of this workshop series.
+If you're just jumping in, make sure you have your [board set up](../pcb_level_2/#setup) and [DRC checked](../pcb_level_2/#design-rules-checker) from Part 2 of this workshop series.
 
 ## Install the Extension
 
@@ -74,9 +74,6 @@ Everything you need to order your board will now be in `your_kicad_project/produ
 
 ![](12.png)
 
-
-
-
 Now, log in to <https://jlcpcb.com>. Go to <https://cart.jlcpcb.com/quote> and upload `gerber.zip` into "add gerber file".
 
 You should see something like this:
@@ -112,3 +109,4 @@ If you do get all parts assembled though, this board (just the microcontroller a
 With shipping, it's $45.
 
 ![](19.png)
+
