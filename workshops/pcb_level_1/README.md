@@ -62,7 +62,7 @@ Now on to the actual circuit.
 
 ## Core (Microcontroller)
 
-First, we place the heart of our system, the ATmega328P-AU, in a TQFP package.
+First, we place the heart of our system, the ATmega328P-AU, in a TQFP package. This is NOT the ATmega328PB, which is not backwards compatible with the ATmega328P.
 
 ### Power
 
@@ -73,7 +73,7 @@ Then, we need to connect the power pins to power *nets* and place *decoupling ca
 
 **Nets**: Nets like VCC and GND serve as abstractions for actual connections in our schematic. If we connected every single chip to a central VCC and GND point in our schematic, it would be very messy. These symbols tell the PCB Designer that we need to connect those pins while keeping the schematic clean.
 
-**Decoupling Capacitors**: A decoupling capacitor is placed very close to the chip that needs or supplies power. When a chip suddenly demands power, it provides it while the battery and other components ramp up. So, these have to be as close to their parent IC as possible.
+**Decoupling Capacitors**: A decoupling capacitor is placed very close to the chip that needs or supplies power. When a chip suddenly demands power, it provides it while the battery and other components ramp up. It also absorbs noise and voltage spikes from the power source. So, these have to be as close to their parent IC as possible.
 
 
 <span class=easyeda-img>
@@ -86,7 +86,10 @@ For the capacitors, go to "Common Library", click the arrow next to `C_0603_US` 
 </span>
 
 ### Clock
-<span class=kicad-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/12.png)</span>
+
+<span class=kicad-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/12.png)
+The datasheet for our crystal, C13738, shows that pins 2 and 4 are connected to ground. So, import the part "Crystal_GND24".
+</span>
 <span class=easyeda-img>
 ![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/6e2.0.png)
 Search for "C13738" in the Library for the clock.
@@ -121,7 +124,7 @@ The resistor R6 is a pull-up resistor, a high-resistance resistor that gently pu
 
 Use the Net Label tool to label that line RESET. </span>
 
-Labeling this wire as RESET connects it to the RESET *net*. If we place another RESET label somewhere else in the circuit, our ECAD tool will understand that these two points have to be connected together, just like the GND and VCC nets.
+Labeling this wire as RESET connects it to the RESET *net*. If we place another RESET label somewhere else on this page, our ECAD tool will understand that these two points have to be connected together, just like the GND and VCC nets.
 
 
 ### Label Pinout
@@ -134,6 +137,8 @@ After this, we need labels telling us which MCU pin is which Arduino Nano pin.
 ![image](https://cloud-4drjlif5e-hack-club-bot.vercel.app/4e4.1.png)
 </span>
 
+These are global labels. Unlike the RESET label, these work on all pages of the schematic.
+
 ## Headers
 <span class=kicad-img>![](https://cloud-nbfq15yho-hack-club-bot.vercel.app/15.png)</span>
 
@@ -141,6 +146,7 @@ After this, we need labels telling us which MCU pin is which Arduino Nano pin.
 
 <span class=easyeda-img>
 In the Library, under the "System" tab, search for `DIP-30 ARDUINONANO` and `HEADER_PRG_2x03` to find these headers.
+
 ![image](https://cloud-4drjlif5e-hack-club-bot.vercel.app/2e5.1.png)
 ![image](https://cloud-4drjlif5e-hack-club-bot.vercel.app/3e5.2.png)
 </span>
@@ -153,10 +159,10 @@ We also have the ICSP header, which is used for flashing the Arduino's bootloade
 
 ## USB
 
-We start with the 16 Pin USB 2.0 Type C receptacle, C2988369.
+We start with the 16 Pin USB 2.0 Type C receptacle, C165948.
 
-<span class=kicad-img>![image](https://cloud-nbfq15yho-hack-club-bot.vercel.app/26.png)</span>
-<span class=easyeda-img>![image](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/0e6.0.png)</span>
+<span class=kicad-img>![image](./6.png)</span>
+<span class=easyeda-img>![image](./e6.0.png)</span>
 
 NC: SBU1/2 and Shield/Shell (shield is only for hosts).
 
@@ -164,7 +170,7 @@ GND goes to our ground net.
 
 Mark VBUS with a net, and then run it through a diode to the VCC net, which powers everything else on this board. 
 
-Since we are powering a bunch of LEDs, I picked the biggest diode JLCPCB had (as a basic part). This diode prevents current from going back into your computer if both USB and 5V pins are plugged in.
+Since we will be powering a bunch of LEDs, I picked a big diode JLCPCB had as a basic part, C8678. This diode prevents current from going back into your computer if both USB and 5V pins are plugged in.
 
 Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have to each be connected through separate 5.1k resistors to ground. That tells the USB-C power adapter that we can draw up to 5V 3A.
 
@@ -177,8 +183,12 @@ You can download the KiCAD CH340N footprint here: [ch340n.kicad_sym](./ch340n.ki
 
 
 ![image](./7.png)
+
 </span>
-<span class=easyeda-img>![](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/1e7.0.png)</span>
+<span class=easyeda-img>
+
+![](./e7.0.png)
+</span>
 
 Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB-C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor; this capacitor makes the RESET pin briefly pulse low instead of staying low forever (avoiding bootlooping the MCU).
 
@@ -188,8 +198,8 @@ TXD and RXD (*device* directionality i.e. MCU), are connected to their microcont
 
 Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 to turn this into a PCB, or Part 4 to add more features to this board.
 
-<span class=kicad-img>![](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/3full-kicad.svg)</span>
-<span class=easyeda-img>![](https://cloud-b13eq4dcp-hack-club-bot.vercel.app/2full-easyeda.svg)</span>
+<span class=kicad-img>![](./full-kicad.svg)</span>
+<span class=easyeda-img>![](./full-easyeda.svg)</span>
 
 ### Footnotes
 1. Thanks to Hugo Hu for his instructable, this is based on that design: https://www.instructables.com/ATmega328P-Corgi-Arduino/
