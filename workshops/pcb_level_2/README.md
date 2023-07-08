@@ -113,26 +113,11 @@ Click 'Open PCB in board editor' in the schematic view.
 
 ![](2.png)
 
-In the PCB editor, click on 'Edit board setup'. This is where we will set the constraints of our PCB fab.
-
-![](3.png)
-
-<!-- can we add a toggle button for other fabs and add those settings for reference-->
-Here I'm using JLCPCB's specifications, but every fab should have a document like this. Go to <https://jlcpcb.com/capabilities/pcb-capabilities> to find the latest specs, these might have changed since this guide was writen.
-
-![](4.png)
-
-Go to Design Rules > Constraints.
-
-![](5.png)
-
-And fill out these details.
+In the PCB editor, click on 'Edit board setup'. This is where we will set the constraints of our design.
 
 ![](6.png)
 
-Then, in Design Rules > Pre-defined Sizes, specify how wide you want your traces, vias, and differential pairs will be. KiCAD will let you pick between the options here when designing your board. We will set a track width of 0.3mm for signal traces, 0.5mm for power traces, and 0.7mm diameter vias with a 0.3mm hole. For slow signals/short traces this doesn't matter as much, so we will pick 0.3mm/0.3mm/0.5mm.
-
-In Text & Graphics -> Defaults, change all Text Thicknesses that are less than .153mm to .153mm.
+Then, in Design Rules > Pre-defined Sizes, specify how wide you want your traces, vias, and differential pairs will be. KiCAD will let you pick between the options here when designing your board. We will set a track width of 0.3mm for signal traces, 0.5mm for power traces, and 0.7mm diameter vias with a 0.3mm hole. 
 
 Then, press OK to save and exit board setup.
 
@@ -162,6 +147,8 @@ You can use the shape tools to draw the outline of the board, or...
 
 you can go to File > Import > Graphics to import a custom SVG. You can pick whatever shape you like here.
 
+
+
 > *Note*: In future workshops with this board, we will be adding more features such as an LED strip and accelerometer to make a level. Make sure your design will support the physical realities of being a level, such as having two points to balance on, which do not have any ports. Also, consider how your LEDs will physically and aesthetically fit.  Make a rough paper sketch if that helps.  
 > Of course, none of this applies to you if you are not building a level.
 
@@ -186,6 +173,8 @@ Double click the shape and set it up like the image above.
 - Line Style: Solid
 - Layer: Edge.Cuts
 
+> In case you don't have a nice SVG, but do have a solid shape image, try KiCAD's Bitmap to Component converter. Paste the Footprint into your PCB design, Right Click > Edit Footprint, and follow the above steps.
+
 ### Components
 
 > Note: Many of the choices in this section will depend upon your outline. Feel free to ask for help in [#onboard-help](https://hackclub.slack.com/archives/C0593MG26TT).
@@ -196,7 +185,7 @@ After you position the Board Edge and Arduino Template, lock them in place to av
 
 Then, start placing the major components: USB Port, ICs, Microcontroller, buttons, etc. 
 ![](17.png)
-Rotate them to a position that'll make running traces convinient. For example, you want the D+ and D- pins of the USB controller to be facing the port, and the TX, RX pins to be facing your microcontroller. You can rotate things 90 degrees by pressing 'R' on your keyboard, or set a 45 degree offset by going to properties.
+Rotate them to a position that'll make running traces convenient. For example, you want the D+ and D- pins of the USB controller to be facing the port, and the TX, RX pins to be facing your microcontroller. You can rotate things 90 degrees by pressing 'R' on your keyboard, or set a 45 degree offset by going to properties.
 
 ![](18.png)
 ![](19.png)
@@ -274,7 +263,7 @@ You can click on the blue `B.Cu` layer in the Layers sidebar to visually bring t
 
 ![](30.png)
 
-Just like that, use vias and thoughtful crossings to connect D0/D1 to the USB chip and D11/12/13 to the ICSP header.
+Just like that, use vias and thoughtful crossings to connect D0/D1 to the USB chip and D11/12/13 to the ICSP header. However try to minimize the length of traces on the back, because of the [ground plane](#ground-plane) we will later put in.
 
 
 ### The other tracks
@@ -336,11 +325,11 @@ After you run the DRC with Refilling and Parity checks, you should see a bunch o
 
 ![](42.png)
 
-Sooo, there's 90 issues. That's not good.
+Sooo, there's 90 issues. That's not good. Luckily, most of them are inconsequential.
 
-Looking at the Unconnected Items tab - the most important issues:
+The most important issues are in the Unconnected Items tab:
 
-- All 3 of the unconnected SHIELD errors can be Right Click > Excluded. Microcontrollers and complex ICs might have multiple pins that serve the same function, so KiCAD expects identically named pins to be interconnected. In this case, it's meaningless and can be ignored because it's just the USB housing.
+- All 3 unconnected SHIELD errors can be Right Click > Excluded. Microcontrollers and complex ICs might have multiple pins that serve the same function, so KiCAD expects identically named pins to be interconnected. In this case, it's meaningless and can be ignored because it's just the USB housing.
 - GND on the ICSP header is disconnected. That's a big problem.
 
 > Note: while this solution is written as straightforward - coming up with something like this really wasn't. I spent way more than 30 mins comparing approaches before I decided on this. 
@@ -354,21 +343,22 @@ Turned out, the part of the ground plane that connected to this GND pin was disc
 
 The ground plane island highlighted another issue with this design. If you follow the current flow from the USB port to the bottom plane, it turns out the whole thing relies on one .3mm connection under the clock.
 
-Fortunately, there's an easy solution: double click the ground plane to open properties and change clearance and minimum width to .3mm.
+Fortunately, there's an easy solution: double-click the ground plane to open properties and change clearance and minimum width to .3mm.
 
 ![](46.png)
 
 Then, the ground plane goes in between the planes and it's a continuous chunk again.
+
 ![](47.png)
 
 And now our board is electrically done!
 
 You can solve other DRC issues pretty easily.
-- For trace clearance issues, just move the trace away from the specified component. These sometimes pop up when rearranging components after originally placing tracks.
+- For trace clearance issues, just move the trace away from the specified component. These sometimes pop up when rearranging components.
 - You can ignore/exclude all the Courtyard Overlaps with A1. That just points out that there are components inside the Arduino template [^3].
-- Through-hole has 'Thermal relief connection incomplete': Make sure it's surrounded by the ground plane enough, and if it is ~110 degrees adjacent to it, try double clicking and rotating the pad 45 degrees from properties. Regenerate the plane with 'B' and it should connect  with two spokes.
-- You can ignore most 'Footprint doesn't match copy' and Silkscreen. warnings. Manually fix the silkscreens that you want to see.
-- And you can ignore Hole Clearance violations of J1 to J1. It seems to work just fine anyway.
+- Through-hole has 'Thermal relief connection incomplete': if the connection looks good enough, it's probably good enough. 
+- Ignore most 'Footprint doesn't match copy' and Silkscreen. warnings. Manually fix the silkscreens that you want to see.
+- And, ignore Hole Clearance violations of J1 to J1. It seems to work just fine anyway.
 
 
 ## Finished Board
@@ -381,8 +371,8 @@ You can solve other DRC issues pretty easily.
 
 [^1]: More info at https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-sizes-and-packages/#
 
-[^2]: Ideally, the ground plane would be a continuous, mostly unobstructed, chunk, but that would require more layers i.e. more complexity and cost, which is not good for this workshop.
+[^2]: Ideally, the ground plane would be a continuous, mostly unobstructed chunk, but that would require either spreading out the components further, or more layers i.e. more complexity and cost, which is not good for this workshop.
 
-[^3]: If you're obsessed with details like me and want to fix it, right click A1 > Open in Footprint Editor; delete the purple courtyard. This only affects this one instance of the Arduino footprint, and won't affect future PCBs you make with KiCAD. This tells KiCAD that the Arduino is not an exclusive component, and other things can overlap it.
+[^3]: If you're obsessed with details like me and want to fix it, right-click A1 > Open in Footprint Editor; delete the purple courtyard. This only affects this one instance of the Arduino footprint, and won't affect future PCBs you make with KiCAD. This tells KiCAD that the Arduino is not an exclusive component, and other things can overlap it.
 
 [^4]: Tips in prerequisites by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B).
