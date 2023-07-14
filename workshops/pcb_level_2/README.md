@@ -5,7 +5,7 @@ author: '@karmanyaahm'
 img: './52.png'
 ---
 
-In this workshop we will turn our schematic from Part 1 into an actual PCB layout.
+In this workshop, we will turn our schematic from Part 1 into an actual PCB layout.
 
 <details>
 <summary>Prerequisites</summary>
@@ -48,11 +48,11 @@ Reminders:
 
 Footprints are the exposed copper pads on the PCB for each component.
 
-First, click on run footprint assignment tool.
+First, click on 'Run footprint assignment tool'.
 
 ![](0.png)
 
-In the new window, under Footprint Filters, select the first one - "filters defined in symbol" - but deselect the other two to get good filtering.
+In the new window, under Footprint Filters, select the first one - "filters defined in symbol" - but deselect the other two.
 
 ![](0.1.png)
 
@@ -99,9 +99,9 @@ Similarly, for the ICSP header, you will get the right result by searching for `
 
 ### Other components
 
-You might've noticed that in my original footprint assignment window had some components filled out already. This is because chips like the ATmega328P-AU only have one footprint - that's what the `AU` designates.
+You might've noticed that my original footprint assignment window had some components filled out already. This is because chips like the ATmega328P-AU only have one footprint - that's what the `AU` designates.
 
-Others, like the switch, were found by searching for the part number, `1187A`, through the footprint window.
+Others, like the switch, were found by searching for their part number, `1187A`, in the footprint window.
 
 Lastly, some components like the USB-C Receptacle can be weird. While there are hundreds of different manufacturers of USB-C ports and receptacles, there are only a few common designs. However, there is no way to confirm which part uses which design without manually checking each dimension, so I just used the popular `HRO_TYPE-C-31-M-12`.
 
@@ -171,11 +171,11 @@ Delete the first import and go back to File > Import > Graphics. Play with the s
 
 ![](15.png)
 
-Clean up the drawing to only leave the one continuous board shape.
+Clean up the drawing to only leave one continuous board shape.
 
 ![](14.png)
 
-Double click the shape and set it up like the image above.
+Double-click the shape and set it up like the image above.
 - Not Locked
 - Not Filled
 - Line width: 0.6mm
@@ -190,7 +190,7 @@ Double click the shape and set it up like the image above.
 
 ![](17.a.png)
 ![](16.png)
-After you position the Board Edge and Arduino Template, lock them in place to avoid accidentally moving it.
+After you position the Board Edge and Arduino Template, lock them in place to avoid accidentally moving them.
 
 Then, start placing the major components: USB Port, ICs, Microcontroller, buttons, etc. 
 ![](17.png)
@@ -200,16 +200,16 @@ Rotate them to a position that'll make running traces convenient. For example, y
 ![](19.png)
 ![](19.5.png)
 
-This is how I roughly layed out the core components within the Arduino Nano footprint. Some large components like the reset switch and diode are outside the main nano footprint. The red pads indicate that these are all on the `F.Cu` layer. This is the front of the PCB. While a typical Nano design needs to be two sided (have components on both the front and back) to fit within that footprint, here, we will make a larger, one-sided board to keep assembly costs down.
+This is how I roughly laid out the core components within the Arduino Nano footprint. Some large components like the reset switch and diode are outside the main nano footprint. The red pads indicate that these are all on the `F.Cu` layer. This is the front of the PCB. While a typical Nano design needs to be two-sided (have components on both the front and back) to fit within that footprint, here, we will make a larger, one-sided board to keep assembly costs down.
 
 > Note: This layout took several rounds of iteration between layout and trace routing to generate. It's absolutely fine to come back to rearrange your components if you find your layout doesn't work when routing traces - especially if this is your first complex board.
 
 ![](20.png)
 
-While laying out your board, the 3D viewer is a very useful tool (especially if you are hand-soldering and need more space in between components). Use 'Alt+3' to open it.
+While laying out your board, the 3D viewer is a very useful tool (especially if you are hand-soldering and need more space between components). Use 'Alt+3' to open it.
 
 ![](21.png)
-If some components are not visible, go back to your board design and double click the part to open properties.
+If some components are not visible, go back to your board design and double-click the part to open properties.
 ![](22.png)
 
 Make sure you're in properties for the whole component, not just one pad or silkscreen, and then open the '3D Models' tab. Click on the file browser for the 3D model line. These are the correct models:
@@ -220,7 +220,7 @@ Make sure you're in properties for the whole component, not just one pad or silk
 
 These may vary based on your version of KiCAD.
 
-<!--can i put this somewhere else, where-->Also, you should have your schematic split screened with the PCB layout. Whenever you click on a component in one, it will be focused in the other, making it significantly easier to see what's going on.
+<!--could I put this somewhere more suitable, where?-->Also, you should have your schematic split screened with the PCB layout. Whenever you click on a component in one, it will be focused in the other, making it significantly easier to see what's going on.
 
 
 ### Routing
@@ -298,7 +298,7 @@ A ground plane is a large continuous chunk of copper on a layer. It creates a lo
 
 ![](34.png)
 
-First, click on add a filled zone.
+First, click on 'Add a filled zone'.
 
 ![](35.png)
 

@@ -66,7 +66,7 @@ Now on to the actual circuit.
 
 ## Core (Microcontroller)
 
-First, we place the heart of our system, the ATmega328P-AU, in a TQFP package. This is NOT the ATmega328PB, which is not backwards compatible with the ATmega328P.
+First, we place the heart of our system, the ATmega328P-AU, in a TQFP package. This is NOT the ATmega328PB, which is not backward compatible with the ATmega328P.
 
 ### Power
 
@@ -128,7 +128,7 @@ The resistor R6 is a pull-up resistor, a high-resistance resistor that gently pu
 
 Use the Net Label tool to label that line RESET. </span>
 
-Labeling this wire as RESET connects it to the RESET *net*. If we place another RESET label somewhere else on this page, our ECAD tool will understand that these two points have to be connected together, just like the GND and VCC nets.
+Labeling this wire as RESET connects it to the RESET *net*. If we place another RESET label somewhere else on this page, our ECAD tool will understand that these two points have to be connected, just like the GND and VCC nets.
 
 
 ### Label Pinout

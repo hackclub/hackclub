@@ -5,7 +5,7 @@ author: '@karmanyaahm'
 img: 'https://raw.githubusercontent.com/karmanyaahm/hackclub/onboard/workshops/pcb_level_3/14.png'
 ---
 
-In this workshop we will take a KiCAD PCB and order it through JLCPCB with assembly.
+In this workshop, we will take a KiCAD PCB and order it through JLCPCB with assembly.
 
 If you're just jumping in, make sure you have your [DRC checked](../pcb_level_2/#design-rules-checker) from Part 2 of this workshop series.
 
@@ -74,7 +74,7 @@ Everything you need to order your board will now be in `your_kicad_project/produ
 
 ![](12.png)
 
-Now, log in to <https://jlcpcb.com>. Go to <https://cart.jlcpcb.com/quote> and upload `gerber.zip` into "add gerber file".
+Now, log in to <https://jlcpcb.com>. Go to <https://cart.jlcpcb.com/quote> and upload `gerber.zip` into "Add Gerber file".
 
 You should see something like this:
 ![](13.png)
@@ -83,7 +83,7 @@ Tips:
 - 5 is the minimum number of PCBs you can order.
 - You can change your shipping option on the right 'Shipping Estimate' sidebar.
 - Sometimes, reducing the PCB thickness from 1.6 to ~1.0 will reduce the weight of the package, and thus the shipping price without increasing manufacturing price.
-- If your PCB will be handled a lot consider selecting 'LeadFree HASL' for its surface; exessive exposure to lead can be toxic.
+- If your PCB will be handled a lot consider selecting 'LeadFree HASL' for its surface; excessive exposure to lead can be toxic.
 
 Leave the 'High-spec options' at their defaults, and then, enable assembly. 
 - You can choose to only assemble 2 boards out of 5, in which case the other 3 bare boards will be shipped to you. If you only want one PCB, this can save money on parts.
@@ -96,7 +96,7 @@ Then, on the Bill of Materials page, upload bom.csv and positions.csv from your 
 
 ![](16.png)
 
-- You can save a lot of money on Extended Parts in the long run (if you plan on making many PCBs) by buying them directly and soldering them yourself [^1]. For example, basically every project has a USB-C connector, so it makes sense to buy a bunch yourself and avoid the $3 extended part fee every time you buy a board from JLCPCB.
+- You can save a lot of money on Extended Parts in the long run (if you plan on making many PCBs) by buying them directly and soldering them yourself [^1]. For example, basically every project has a USB-C connector and header pins, so it makes sense to buy a bunch yourself and avoid the $3 extended part fee every time you buy a board from JLCPCB.
 - Virtual Components (only used for their through holes) like the Arduino Nano and ICSP header can be ignored.
 
 ![](17.png)
