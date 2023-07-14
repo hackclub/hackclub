@@ -9,27 +9,36 @@ In this workshop we will turn our schematic from Part 1 into an actual PCB layou
 
 <details>
 <summary>Prerequisites</summary>
+
 The rest of the workshop assumes you understand PCB Basics like:
-1. Traces: A continous stretch of copper that connects multiple parts.
+
+1. Traces: A continuous stretch of copper that connects multiple parts.
 2. Layers: Layers are parallel surfaces of *stuff* on your PCB. There are a bunch of different kinds of layers, like:
 
 
 **KiCAD Layers:** [^4]
+
 `F.Cu`/`B.Cu`: The layers of copper on your PCB. The conductive traces on your board should live on these layers. Separate conductive traces can not cross each other on the same layer, you must use a via to connect two layers and not cross traces on the same side of the board.
+
 `F.Silkscreen`/`B.Silkscreen`: The printed (silkscreened) layers on your PCB. These are either white or black and must be monochrome (you can't have gradients, everything must be a clear line). Anything can go on these layers, they are simply printed.
-`F.Paste`/`B.Paste`: This is the mask for the solder paste. Anything that will be soldered needs to have paste on it. You probably don't need to mess with this layer unless you know what you're doing, it should be automatically handled by your part footprints.
-`F.Mask`/`B.Mask`: The is is the mask for the soldermask. The soldermask is the colored coating that goes on the board. By default, it covers everything except pads and is what gets printed on. Removing soldermask can be used to expose copper for cool effects.
+
+`F.Paste`/`B.Paste`: Anything that will be soldered needs to have paste on it. You probably don't need to mess with this layer unless you know what you're doing, it should be automatically handled by your part footprints.
+
+`F.Mask`/`B.Mask`: The soldermask is the colored coating that goes on the board. By default, it covers everything except pads and is what gets printed on. Removing soldermask can be used to expose copper for cool effects.
+
 Objects > Ratlines: These have no impact on the final production of your board, they are simply guides to tell you where you still need to draw traces.
+
 `Edge.Cuts`: This is the actual outline of how your board will be cut.
-Multi-Layer: This holds, as the name suggests, multilayer elements such as vias or holes.
+
 `User.Comments`: This layer has information that will not be printed on the board and is only visible in KiCAD. Think of it as comments in your code.
+
 
 Reminders:
 - Make sure you draw your traces! You shouldn't have any ratlines on your board when you send it for production.
 - Remember separate conductive traces cannot touch each other.
 - You can use a combination of layers to design the look of your board.
 - You almost always want to have the traces of your board covered with soldermask, but it's typically ok to have other copper regions exposed, just remember it might tarnish.
-- JLCPCB engineers will review your design before production, if they spot any issues they'll send you an email to check in.
+- JLCPCB engineers will review your design before production, if they spot any issues they'll send you an email to check it.
 
 
 </details>
@@ -51,13 +60,13 @@ Now, you should have a window like this with some footprints autofilled, others 
 
 ![](0.2.png)
 
-Some footprints, like the Arduino Nano outline, which is not a real component in this case, only have a few options. Double click on `Module:Arduino_Nano_WithMountingHoles` to select it.
+Some footprints, like the Arduino Nano outline, which is not a real component in this case, only have a few options. Double-click on `Module:Arduino_Nano_WithMountingHoles` to select it.
 
 ![](0.3.png)
 
 ### Generics
 
-0402, 0603, 0805, and 1206 are common sizes of small two terminal SMD components like resistors, capacitors, and diodes. 0805 is very common and still somewhat hand solderable, so we will use 0805 for all our components [^1].
+0402, 0603, 0805, and 1206 are common sizes of small two-terminal SMD components like resistors, capacitors, and diodes. 0805 is very common and still somewhat hand solderable, so we will use 0805 for all our components [^1].
 
 <a title="Zerodamage, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:SMT_sizes,_based_on_original_by_Zureks.svg"><img style="background-color: white;" width="256" alt="SMT sizes, based on original by Zureks" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/SMT_sizes%2C_based_on_original_by_Zureks.svg/256px-SMT_sizes%2C_based_on_original_by_Zureks.svg.png"></a>
 
@@ -83,7 +92,7 @@ Then, in KiCAD, after selecting the diode, we can search for the package. While 
 
 Doing the same with the Crystal will get you its package `SMD3225`, and footprint `Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering`.
 
-Similarly, for the ICSP header, you will get the right result by searching for 2.54mm (i.e. 0.1 inch pin spacing), and 2x03 (6 pins arranged in 2x3): `Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical`.
+Similarly, for the ICSP header, you will get the right result by searching for `2.54mm` (i.e. 0.1 inch pin spacing), and `2x03` (6 pins arranged in 2x3): `Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical`.
 
 ![](0.8.png)
 
@@ -94,7 +103,7 @@ You might've noticed that in my original footprint assignment window had some co
 
 Others, like the switch, were found by searching for the part number, `1187A`, through the footprint window.
 
-Lastly, some components like the USB-C Receptacle can be weird. While there are hundreds of different manufacturers of USB-C ports and receptacles, there are only a few common designs. However, there is no way to confirm which part uses which design (without manually checking each dimension), so in this case, I went backwards - first picking the KiCAD footprint that I liked, and then finding that part of JLCPCB, which happens to be the `7010ASV`.
+Lastly, some components like the USB-C Receptacle can be weird. While there are hundreds of different manufacturers of USB-C ports and receptacles, there are only a few common designs. However, there is no way to confirm which part uses which design without manually checking each dimension, so I just used the popular `HRO_TYPE-C-31-M-12`.
 
 
 ---
@@ -211,18 +220,18 @@ Make sure you're in properties for the whole component, not just one pad or silk
 
 These may vary based on your version of KiCAD.
 
-<!--put this somewhere else, where-->Also, you should have your schematic split screened with the PCB layout. Whenever you click on a component in one, it will be focused in the other, making it significatly easier to see what's going on.
+<!--can i put this somewhere else, where-->Also, you should have your schematic split screened with the PCB layout. Whenever you click on a component in one, it will be focused in the other, making it significantly easier to see what's going on.
 
 
 ### Routing
 
-To route tracks, just follow the ratsnest (thin blue lines connecting matching nets), and connect the pads. Start with data signals, and do power and ground later. Try to use the higher thickness .5mm trace for sensitive or high load applications if you can fit it.
+To route tracks, just follow the Rat's Nest (thin blue lines connecting matching nets), and connect the pads. Start with data signals, and do power and ground later. Try to use the higher thickness .5mm trace for sensitive or high load applications if you can fit it.
 
 The following images are one way to do this:
 
 Note: You can press 'X' when hovering over a pad to start a trace.
 
-In the Apperance sidebar go to Objects > Locked Item Shadow, and hide it to clean up your layout a little bit. Feel free to play with the opacities of other elements to get to a point that you are comfortable with.
+In the Appearance sidebar go to Objects > Locked Item Shadow, and hide it to clean up your layout a little bit. Feel free to play with the opacities of other elements to get to a point that you are comfortable with.
 
 ![](23.png)
 ![](24.png)
@@ -232,18 +241,18 @@ The decoupling capacitors for an IC must be right next to it. The purple lines a
 
 ![](25.png)
 
-And then, connect the microcontroller pins. In my layout A0-A5, D0,D1,D5-D13 can be routed on the top layer as shown above.
+And then, connect the microcontroller pins. In my layout A0-A5, D0, D1, D5-D13 can be routed on the top layer as shown above.
 
 > I have to emphasize, this is just what I came up with. This is not the right layout, this is not the best layout. It's one out of the infinite possible arrangements of these traces.
 
 
-### Two layer routing
+### Two-layer routing
 
-Now because our microcontroller is on the Front layer, but there is no way to directly connect D4 of the microcontroller to the header pin D4, we will have to jump to another layer. First, press 'X' to start running a trace away from D4, towards the inside of the microcontroller
+Now because there is no way to connect D4 of the microcontroller to the header pin, we will have to jump layers. First, press 'X' to start running a trace away from D4, towards the inside of the microcontroller.
 
 ![](26.png)
 
-Move to some empty space then press 'V' to create a via.
+Move to some empty space then press 'v' to create a via.
 
 ![](27.png)
 
@@ -315,9 +324,35 @@ The through-holes should connect themselves to the ground plane.
 This is what all the grounds look like.
 
 
+## (Optional) Header Pins
+<details>
+<summary>If you want your PCB manufacturer to install Arduino Header Pins on your board.</summary>
+This could be useful if you want to mount your board onto a breadboard but don't have soldering equipment.
+
+Go back to your schematic and add these two `Conn_01x15_Pin` symbols and connect them to the correct nets.
+![](53.png)
+
+> Note how D0/D1 are flipped relative to the rest of the pins.
+
+In the footprint selection window, select `PinHeader_1x15_P2.54mm_Vertical` for both.
+![](54.png)
+
+Update your board to sync it with the schematic and then position the new pins on top of the old ones.
+
+![](55.png)
+You might have to zoom in to get the holes perfectly concentric.
+
+Lock the new pins in place (Right Click > Locking > Lock) and delete the old Arduino layout.
+
+Additionally, you might want to add pin labels on the back silkscreen layer (where there is more space).
+</details>
+
 ## Design Rules Checker
 
+> Note: This section will vary a lot for you based on your design and layout.
+
 The Design Rules Checker (DRC) looks at the constraints we set the board up with and finds problems in the design.
+
 
 ![](41.png)
 
@@ -325,25 +360,25 @@ After you run the DRC with Refilling and Parity checks, you should see a bunch o
 
 ![](42.png)
 
-Sooo, there's 90 issues. That's not good. Luckily, most of them are inconsequential.
+Sooo, there's 90 issues. That's not good. Luckily, the vast majority of them are inconsequential.
 
 The most important issues are in the Unconnected Items tab:
 
 - All 3 unconnected SHIELD errors can be Right Click > Excluded. Microcontrollers and complex ICs might have multiple pins that serve the same function, so KiCAD expects identically named pins to be interconnected. In this case, it's meaningless and can be ignored because it's just the USB housing.
 - GND on the ICSP header is disconnected. That's a big problem.
 
-> Note: while this solution is written as straightforward - coming up with something like this really wasn't. I spent way more than 30 mins comparing approaches before I decided on this. 
+> Note: while this solution is presented straightforwardly - coming up with it really wasn't. I spent way more than 30 mins comparing approaches before I decided on this. 
+
+
+Turned out, the part of the ground plane that connected to this GND pin was disconnected from the rest [^2], so make it like this:
 
 ![](44.png)
 
-Turned out, the part of the ground plane that connected to this GND pin was disconnected from the rest [^2].
-
+The ground plane island highlighted another issue with this design. If you follow the current flow from the USB port to the bottom plane, it turns out the whole thing relies on one .3mm connection under the clock.
 
 ![](45.png)
 
-The ground plane island highlighted another issue with this design. If you follow the current flow from the USB port to the bottom plane, it turns out the whole thing relies on one .3mm connection under the clock.
-
-Fortunately, there's an easy solution: double-click the ground plane to open properties and change clearance and minimum width to .3mm.
+Fortunately, there's an easy solution: double-click the ground plane to open properties and change its clearance and minimum width to .3mm.
 
 ![](46.png)
 
@@ -356,9 +391,8 @@ And now our board is electrically done!
 You can solve other DRC issues pretty easily.
 - For trace clearance issues, just move the trace away from the specified component. These sometimes pop up when rearranging components.
 - You can ignore/exclude all the Courtyard Overlaps with A1. That just points out that there are components inside the Arduino template [^3].
-- Through-hole has 'Thermal relief connection incomplete': if the connection looks good enough, it's probably good enough. 
-- Ignore most 'Footprint doesn't match copy' and Silkscreen. warnings. Manually fix the silkscreens that you want to see.
-- And, ignore Hole Clearance violations of J1 to J1. It seems to work just fine anyway.
+- Through-hole has 'Thermal relief connection incomplete': if the connection looks good enough, it's good enough. 
+- Ignore most 'Footprint doesn't match copy' and Silkscreen warnings. Manually fix the silkscreens that you want to see.
 
 
 ## Finished Board
@@ -371,8 +405,9 @@ You can solve other DRC issues pretty easily.
 
 [^1]: More info at https://eepower.com/resistor-guide/resistor-standards-and-codes/resistor-sizes-and-packages/#
 
-[^2]: Ideally, the ground plane would be a continuous, mostly unobstructed chunk, but that would require either spreading out the components further, or more layers i.e. more complexity and cost, which is not good for this workshop.
+[^2]: Ideally, the ground plane would be a continuous, mostly unobstructed chunk, but that would require either spreading out the components or more layers. Both would result in more complexity and cost, which is not good for this workshop.
 
 [^3]: If you're obsessed with details like me and want to fix it, right-click A1 > Open in Footprint Editor; delete the purple courtyard. This only affects this one instance of the Arduino footprint, and won't affect future PCBs you make with KiCAD. This tells KiCAD that the Arduino is not an exclusive component, and other things can overlap it.
 
 [^4]: Tips in prerequisites by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B).
+

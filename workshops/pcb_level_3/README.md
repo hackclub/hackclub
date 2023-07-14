@@ -7,7 +7,7 @@ img: 'https://raw.githubusercontent.com/karmanyaahm/hackclub/onboard/workshops/p
 
 In this workshop we will take a KiCAD PCB and order it through JLCPCB with assembly.
 
-If you're just jumping in, make sure you have your [board set up](../pcb_level_2/#setup) and [DRC checked](../pcb_level_2/#design-rules-checker) from Part 2 of this workshop series.
+If you're just jumping in, make sure you have your [DRC checked](../pcb_level_2/#design-rules-checker) from Part 2 of this workshop series.
 
 ## Install the Extension
 
@@ -96,17 +96,22 @@ Then, on the Bill of Materials page, upload bom.csv and positions.csv from your 
 
 ![](16.png)
 
-- You can save a lot of money on Extended Parts in the long run (if you plan on making many PCBs) by buying them directly and soldering them yourself. For example, basically every project has a USB-C connector, so it makes sense to buy a bunch yourself and avoid the $3 extended part fee every time you buy a board from JLCPCB.
-- Virtual Components (only used for their header pins) like the Arduino Nano and ICSP header can be ignored.
+- You can save a lot of money on Extended Parts in the long run (if you plan on making many PCBs) by buying them directly and soldering them yourself [^1]. For example, basically every project has a USB-C connector, so it makes sense to buy a bunch yourself and avoid the $3 extended part fee every time you buy a board from JLCPCB.
+- Virtual Components (only used for their through holes) like the Arduino Nano and ICSP header can be ignored.
 
 ![](17.png)
 When it prompts you about unselected parts, just click 'Do not place'.
 
+Zoom into your components on the 'Component Placements' screen and rotate them to the correct orientation if they're wrong.
 
-If you do get all parts assembled though, this board (just the microcontroller and PCB) ends up being around $33.
+
+If you get all parts assembled, this board (just the microcontroller and PCB) ends up being around $33.
 ![](18.png)
 
-With shipping, it's $45.
+With shipping, that's $45.
 
 ![](19.png)
 
+### Footprints
+
+[^1]: You might want to edit the footprints of components you are hand-soldering. For example, to hand solder the USB-C connector, make the pads longer and remove unused ones like SBUS.

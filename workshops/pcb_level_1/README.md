@@ -12,11 +12,15 @@ In this workshop, we will design an Arduino Nano-compatible microcontroller boar
 If you are not already familiar with the basics of using an ECAD tool like EasyEDA or KiCAD, check out @maggie's workshop on designing a PCB Business card:
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/enMtMOgimm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Recommend a KiCAD video???
+This video demonstrates the basics of navigating around KiCAD.
+<!-- Ideally a better version of this video will be made by a Hack Clubber, but this is the best basic video we have now -->
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EPH23zhPg50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 In addition, the rest of the workshop assumes you know basic electronics terms like:
 1. Resistor: A resistor limits the electric current that flows through a circuit. Resistance is the restriction of current.
 2. Capacitor: A capacitor stores charge, and thus energy. It's like a tiny battery that charges and discharges very quickly.
+2. Microcontroller: A microcontroller (aka MCU) is a system on a chip that contains an integrated processor, memory, and input/output peripherals, which are used to interact with other electronic components.
+
 </details>
 
 
@@ -140,11 +144,13 @@ After this, we need labels telling us which MCU pin is which Arduino Nano pin.
 These are global labels. Unlike the RESET label, these work on all pages of the schematic.
 
 ## Headers
-<span class=kicad-img>![](https://cloud-nbfq15yho-hack-club-bot.vercel.app/15.png)</span>
+<span class=kicad-img>
+![](https://cloud-nbfq15yho-hack-club-bot.vercel.app/15.png)
 
-<span class=easyeda-img>![image](./e5.0.png)</span>
+</span>
 
-<span class=easyeda-img>
+<span class=easyeda-img>![image](./e5.0.png)
+
 In the Library, under the "System" tab, search for `DIP-30 ARDUINONANO` and `HEADER_PRG_2x03` to find these headers.
 
 ![image](https://cloud-4drjlif5e-hack-club-bot.vercel.app/2e5.1.png)
@@ -170,7 +176,7 @@ GND goes to our ground net.
 
 Mark VBUS with a net, and then run it through a diode to the VCC net, which powers everything else on this board. 
 
-Since we will be powering a bunch of LEDs, I picked a big diode JLCPCB had as a basic part, C8678. This diode prevents current from going back into your computer if both USB and 5V pins are plugged in.
+Since we will be powering a bunch of LEDs, I picked a big diode JLCPCB had as a basic part, C35722. This diode prevents current from going back into your computer if both USB and 5V pins are plugged in.
 
 Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have to each be connected through separate 5.1k resistors to ground. That tells the USB-C power adapter that we can draw up to 5V 3A.
 
@@ -188,6 +194,7 @@ You can download the KiCAD CH340N footprint here: [ch340n.kicad_sym](./ch340n.ki
 <span class=easyeda-img>
 
 ![](./e7.0.png)
+
 </span>
 
 Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB-C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor; this capacitor makes the RESET pin briefly pulse low instead of staying low forever (avoiding bootlooping the MCU).
@@ -203,4 +210,4 @@ Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 
 
 ### Footnotes
 1. Thanks to Hugo Hu for his instructable, this is based on that design: https://www.instructables.com/ATmega328P-Corgi-Arduino/
-2. **WARNING**: You will need another microcontroller board to flash the bootloader on this ATmega328P before you can program it with USB. 
+2. **WARNING**: You will need another microcontroller board to flash the bootloader on this ATmega328P before you can program it with USB.
