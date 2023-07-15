@@ -13,11 +13,11 @@ If you're just jumping in, make sure you have your [DRC checked](../pcb_level_2/
 
 Click on Plugin Manager on the KiCAD home page.
 
-![](1.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/111.webp)
 
 Search for 'JLC'.
 
-![](2.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/122.webp)
 
 Install 'Fabrication Toolkit' and apply changes.
 
@@ -26,11 +26,11 @@ Install 'Fabrication Toolkit' and apply changes.
 
 Open your schematic. Go to Bulk Edit fields.
 
-![](5.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/135.webp)
 
 In the Field Editor window, click on 'Add Field' and add the field `LCSC`. It doesn't matter whether you have `Sim.*` or `Datasheet` fields or not.
 
-![](6.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/146.webp)
 
 Then, search for your components at <https://jlcpcb.com/parts> and fill in the LCSC id.
 
@@ -40,11 +40,11 @@ You don't *have* to necessarily specify the part number for generic components l
 
 The LCSC Part number (aka JLCPCB Part #) looks like `Cxxxx`.
 
-![](7.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/157.webp)
 
 For more specific components, like the Atmega328P-AU, you should only have a couple of options and just pick the most popular one (Basic Part if possible).
 
-![](8.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/168.webp)
 
 
 Try doing this yourself before you look at my version below.
@@ -54,7 +54,7 @@ Try doing this yourself before you look at my version below.
 This is what your table should look like, and then Apply and Save.
 </summary>
 
-![](9.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/179.webp)
 
 Because A1 and J2 aren't real components - we only need their footprint and pin layout, not the component itself - they don't need an LCSC part number.
 </details>
@@ -63,21 +63,21 @@ Because A1 and J2 aren't real components - we only need their footprint and pin 
 
 Now, go back to the PCB view and sync it.
 
-![](10.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/110.webp)
 
 Then, click on Tools > External Plugins > Fabrication Toolkit.
 
 
-![](11.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/211.webp)
 
 Everything you need to order your board will now be in `your_kicad_project/production/`.
 
-![](12.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/312.webp)
 
 Now, log in to <https://jlcpcb.com>. Go to <https://cart.jlcpcb.com/quote> and upload `gerber.zip` into "Add Gerber file".
 
 You should see something like this:
-![](13.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/413.webp)
 
 Tips:
 - 5 is the minimum number of PCBs you can order.
@@ -91,26 +91,26 @@ Leave the 'High-spec options' at their defaults, and then, enable assembly.
 - Standard PCB assembly with both sides is very expensive  (~$65) and will use up most of your grant money. Try to design PCBs that have components on one side and don't use any 'Standard Only' components. Or, solder the other side by hand.
 
 
-![](14.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/514.webp)
 Then, on the Bill of Materials page, upload bom.csv and positions.csv from your production folder. 
 
-![](16.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/716.webp)
 
 - You can save a lot of money on Extended Parts in the long run (if you plan on making many PCBs) by buying them directly and soldering them yourself [^1]. For example, basically every project has a USB-C connector and header pins, so it makes sense to buy a bunch yourself and avoid the $3 extended part fee every time you buy a board from JLCPCB.
 - Virtual Components (only used for their through holes) like the Arduino Nano and ICSP header can be ignored.
 
-![](17.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/817.webp)
 When it prompts you about unselected parts, just click 'Do not place'.
 
 Zoom into your components on the 'Component Placements' screen and rotate them to the correct orientation if they're wrong.
 
 
 If you get all parts assembled, this board (just the microcontroller and PCB) ends up being around $33.
-![](18.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/918.webp)
 
 With shipping, that's $45.
 
-![](19.png)
+![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/1019.webp)
 
 ### Footprints
 

@@ -70,7 +70,7 @@ First, we place the heart of our system, the ATmega328P-AU, in a TQFP package. T
 
 ### Power
 
-<span class=kicad-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/01.png)</span>
+<span class=kicad-img>![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/21.webp)</span>
 <span class=easyeda-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/3e1.0.png)</span>
 
 Then, we need to connect the power pins to power *nets* and place *decoupling capacitors*.
@@ -91,7 +91,7 @@ For the capacitors, go to "Common Library", click the arrow next to `C_0603_US` 
 
 ### Clock
 
-<span class=kicad-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/12.png)
+<span class=kicad-img>![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/32.webp)
 The datasheet for our crystal, C13738, shows that pins 2 and 4 are connected to ground. So, import the part "Crystal_GND24".
 </span>
 <span class=easyeda-img>
@@ -115,7 +115,7 @@ So, we use 12pF capacitors.
 </details>
 
 ### Reset
-<span class=kicad-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/23.png)</span>
+<span class=kicad-img>![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/43.webp)</span>
 <span class=easyeda-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/7e3.0.png)
 Search for `C318884` in the library to find the switch. Just like the capacitor, use a R_0805_EU resistor.
 </span>
@@ -167,8 +167,8 @@ We also have the ICSP header, which is used for flashing the Arduino's bootloade
 
 We start with the 16 Pin USB 2.0 Type C receptacle, C165948.
 
-<span class=kicad-img>![image](./6.png)</span>
-<span class=easyeda-img>![image](./e6.0.png)</span>
+<span class=kicad-img>![image](https://cloud-j48wmzjac-hack-club-bot.vercel.app/76.webp)</span>
+<span class=easyeda-img>![image](https://cloud-j48wmzjac-hack-club-bot.vercel.app/23e6.0.webp)</span>
 
 NC: SBU1/2 and Shield/Shell (shield is only for hosts).
 
@@ -182,18 +182,18 @@ Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have
 
 <span class=kicad-img>
 
-![](7.1.png)
-![](7.2.png)
+![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/87.1.webp)
+![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/97.2.webp)
 
 You can download the KiCAD CH340N footprint here: [ch340n.kicad_sym](./ch340n.kicad_sym). Then, put it in your project folder and add it to your symbol library in Preferences > Manage Symbol Libraries > Project Specific Libraries.
 
 
-![image](./7.png)
+![image](https://cloud-j48wmzjac-hack-club-bot.vercel.app/107.webp)
 
 </span>
 <span class=easyeda-img>
 
-![](./e7.0.png)
+![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/24e7.0.webp)
 
 </span>
 
@@ -205,8 +205,8 @@ TXD and RXD (*device* directionality i.e. MCU), are connected to their microcont
 
 Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 to turn this into a PCB, or Part 4 to add more features to this board.
 
-<span class=kicad-img>![](./full-kicad.svg)</span>
-<span class=easyeda-img>![](./full-easyeda.svg)</span>
+<span class=kicad-img>![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/1full-kicad.svg)</span>
+<span class=easyeda-img>![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/0full-easyeda.svg)</span>
 
 ### Footnotes
 1. Thanks to Hugo Hu for his instructable, this is based on that design: https://www.instructables.com/ATmega328P-Corgi-Arduino/
