@@ -26,9 +26,23 @@ In addition, the rest of the workshop assumes you know basic electronics terms l
 
 
 I am using: 
-<label><input name="viewSettings" type="radio" data-to-hide=".kicad-img" checked=true/> KiCAD</label>
-<label><input name="viewSettings" type="radio" data-to-hide=".easyeda-img" />EasyEDA</label>
-<script>
+
+<style>
+#kicad-img {
+  display: none;
+}
+
+#easyeda-img {
+  display: none;
+}
+
+:target {
+  display: inherit;
+}
+</style>
+<a href="#kicad-img"><label><input name="viewSettings" type="radio" data-to-hide=".kicad-img" checked=true/> KiCAD</label> </a>
+<a href="#easyeda-img"><label><input name="viewSettings" type="radio" data-to-hide=".easyeda-img" /> EasyEDA </label></a>
+<!--script>
     // this script will switch between KiCAD images and EasyEDA images based on radio buttons above
 
   var style = document.createElement("style");
@@ -48,7 +62,7 @@ I am using:
   });
 
   updateStyles();
-</script>
+</script-->
 
 ## Part Selection
 
@@ -70,8 +84,8 @@ First, we place the heart of our system, the ATmega328P-AU, in a TQFP package. T
 
 ### Power
 
-<span class=kicad-img>![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/21.webp)</span>
-<span class=easyeda-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/3e1.0.png)</span>
+<span id=kicad-img>![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/21.webp)</span>
+<span id=easyeda-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/3e1.0.png)</span>
 
 Then, we need to connect the power pins to power *nets* and place *decoupling capacitors*.
 
@@ -133,7 +147,7 @@ Labeling this wire as RESET connects it to the RESET *net*. If we place another 
 
 ### Label Pinout
 
-<span class=kicad-img>![image](./4.png)</span>
+<span class=kicad-img>![image](https://cloud-j48wmzjac-hack-club-bot.vercel.app/54.webp)</span>
 <span class=easyeda-img>![image](https://cloud-4drjlif5e-hack-club-bot.vercel.app/0e4.0.png)</span>
 
 After this, we need labels telling us which MCU pin is which Arduino Nano pin.
@@ -145,11 +159,12 @@ These are global labels. Unlike the RESET label, these work on all pages of the 
 
 ## Headers
 <span class=kicad-img>
+
 ![](https://cloud-nbfq15yho-hack-club-bot.vercel.app/15.png)
 
 </span>
 
-<span class=easyeda-img>![image](./e5.0.png)
+<span class=easyeda-img>![image](https://cloud-j48wmzjac-hack-club-bot.vercel.app/19e5.0.webp)
 
 In the Library, under the "System" tab, search for `DIP-30 ARDUINONANO` and `HEADER_PRG_2x03` to find these headers.
 
