@@ -26,23 +26,9 @@ In addition, the rest of the workshop assumes you know basic electronics terms l
 
 
 I am using: 
-
-<style>
-#kicad-img {
-  display: none;
-}
-
-#easyeda-img {
-  display: none;
-}
-
-:target {
-  display: inherit;
-}
-</style>
-<a href="#kicad-img"><label><input name="viewSettings" type="radio" data-to-hide=".kicad-img" checked=true/> KiCAD</label> </a>
-<a href="#easyeda-img"><label><input name="viewSettings" type="radio" data-to-hide=".easyeda-img" /> EasyEDA </label></a>
-<!--script>
+<label><input name="viewSettings" type="radio" data-to-hide=".kicad-img" checked=true/> KiCAD</label>
+<label><input name="viewSettings" type="radio" data-to-hide=".easyeda-img" /> EasyEDA </label>
+<script>
     // this script will switch between KiCAD images and EasyEDA images based on radio buttons above
 
   var style = document.createElement("style");
@@ -62,7 +48,7 @@ I am using:
   });
 
   updateStyles();
-</script-->
+</script>
 
 ## Part Selection
 
@@ -84,8 +70,8 @@ First, we place the heart of our system, the ATmega328P-AU, in a TQFP package. T
 
 ### Power
 
-<span id=kicad-img>![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/21.webp)</span>
-<span id=easyeda-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/3e1.0.png)</span>
+<span class=kicad-img>![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/21.webp)</span>
+<span class=easyeda-img>![](https://cloud-jpd7o9va3-hack-club-bot.vercel.app/3e1.0.png)</span>
 
 Then, we need to connect the power pins to power *nets* and place *decoupling capacitors*.
 
