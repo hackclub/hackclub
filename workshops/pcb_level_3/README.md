@@ -1,13 +1,21 @@
 ---
-name: 'OnBoard Part 3: Ordering a KiCAD board on JLCPCB'
-description: ''
+name: 'SparkleTilt PCB 3: Ordering a KiCAD design from JLCPCB'
+description: 'Learn how to convert a board design into an actual order'
 author: '@karmanyaahm'
-img: 'https://raw.githubusercontent.com/karmanyaahm/hackclub/onboard/workshops/pcb_level_3/14.png'
+img: 'https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/514.webp'
 ---
 
-In this workshop, we will take a KiCAD PCB and order it through JLCPCB with assembly.
+In this workshop, we will take a KiCAD PCB and order it through JLCPCB with assembly[^2].
 
 If you're just jumping in, make sure you have your [DRC checked](../pcb_level_2/#design-rules-checker) from Part 2 of this workshop series.
+
+
+Here are some component notes by [@camdan.me](https://hackclub.slack.com/team/U04J96SRS5B):
+- The grant allows you to purchase anything from one of the allowed suppliers, including JLCPCB.
+- One of JLCPCB's sister/partner companies, LCSC, stocks virtually every generic component you'd ever need, and all of them can be assembled.
+- Keep in mind that JLCPCB charges a $3 fee for every "extended component" type that they assemble.
+- You will not be able to get specialized components from Adafruit or similar companies through the grant.
+- A complete library of JLCPCB/LCSC components is available at <https://jlcpcb.com/parts>.
 
 ## Install the Extension
 
@@ -115,3 +123,4 @@ With shipping, that's $45.
 ### Footprints
 
 [^1]: You might want to edit the footprints of components you are hand-soldering. For example, to hand solder the USB-C connector, make the pads longer and remove unused ones like SBUS.
+[^2]: There are a million different ways to export your files and order with different manufacturers, but for simplicity, this workshop only focuses on one.
