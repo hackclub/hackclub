@@ -1,8 +1,8 @@
 ---
-name: "PCB Level Part 2: Using KiCAD to design a PCB"
-description: "Learn to use KiCAD's board design"
+name: "SparkleTilt PCB 2: Using KiCAD to design a PCB"
+description: "Turn a microcontroller schematic into a PCB"
 author: '@karmanyaahm'
-img: './52.png'
+img: 'https://cloud-r3x168b9x-hack-club-bot.vercel.app/5552.webp'
 ---
 
 In this workshop, we will turn our schematic from Part 1 into an actual PCB layout.
@@ -186,7 +186,7 @@ Double-click the shape and set it up like the image above.
 
 ### Components
 
-> Note: Many of the choices in this section will depend upon your outline. Feel free to ask for help in [#onboard-help](https://hackclub.slack.com/archives/C0593MG26TT).
+> Note: Many of the choices in this section will depend upon your outline. Feel free to ask for help in [#onboard-help](https://hackclub.slack.com/archives/C0593MG26TT) on Slack.
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/1817.a.webp)
 
@@ -233,7 +233,7 @@ Note: You can press 'X' when hovering over a pad to start a trace.
 
 In the Appearance sidebar go to Objects > Locked Item Shadow, and hide it to clean up your layout a little bit. Feel free to play with the opacities of other elements to get to a point that you are comfortable with.
 
-![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2723.webp)
+![](./23.png)
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/2824.webp)
 
 The decoupling capacitors for an IC must be right next to it. The purple lines are the 'Courtyard' - they show you how close two components can be without physically interfering, so, you keep the decoupling capacitor and IC's courtyards very close to each other.
@@ -270,7 +270,7 @@ Just like D4, use vias on A6, A7, D2, and D3 to reach their respective header pi
 
 You can click on the blue `B.Cu` layer in the Layers sidebar to visually bring the back layer traces to the front.
 
-![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/3530.webp)
+![](30.png)
 
 Just like that, use vias and thoughtful crossings to connect D0/D1 to the USB chip and D11/12/13 to the ICSP header. However try to minimize the length of traces on the back, because of the [ground plane](#ground-plane) we will later put in.
 
@@ -396,7 +396,7 @@ You can solve other DRC issues pretty easily.
 
 
 ## Finished Board
-![](https://cloud-1tut81n9o-hack-club-bot.vercel.app/1longhorn_leds-brd.svg)
+![](1longhorn_leds-brd.svg)
 ![](https://cloud-1tut81n9o-hack-club-bot.vercel.app/0longhorn_leds-B_Cu.svg)
 
 ![](https://cloud-r3x168b9x-hack-club-bot.vercel.app/5552.webp)

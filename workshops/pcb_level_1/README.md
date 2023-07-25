@@ -1,5 +1,5 @@
 ---
-name: 'PCB Level Part 1: Microcontroller Design'
+name: 'SparkleTilt PCB 1: Microcontroller Design'
 description: 'Design an Arduino Nano-compatible microcontroller board'
 author: '@karmanyaahm'
 img: 'https://cloud-b13eq4dcp-hack-club-bot.vercel.app/1e7.0.png'
@@ -168,7 +168,7 @@ We also have the ICSP header, which is used for flashing the Arduino's bootloade
 
 We start with the 16 Pin USB 2.0 Type C receptacle, C165948.
 
-<span class=kicad-img>![image](https://cloud-j48wmzjac-hack-club-bot.vercel.app/76.webp)</span>
+<span class=kicad-img>![image](6.png)</span>
 <span class=easyeda-img>![image](https://cloud-j48wmzjac-hack-club-bot.vercel.app/23e6.0.webp)</span>
 
 NC: SBU1/2 and Shield/Shell (shield is only for hosts).
@@ -189,7 +189,7 @@ Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have
 You can download the KiCAD CH340N footprint here: [ch340n.kicad_sym](./ch340n.kicad_sym). Then, put it in your project folder and add it to your symbol library in Preferences > Manage Symbol Libraries > Project Specific Libraries.
 
 
-![image](https://cloud-j48wmzjac-hack-club-bot.vercel.app/107.webp)
+![image](7.png)
 
 </span>
 <span class=easyeda-img>
@@ -200,13 +200,13 @@ You can download the KiCAD CH340N footprint here: [ch340n.kicad_sym](./ch340n.ki
 
 Now, we can connect our UART chip, the CH340N. Both D+ and D- from the USB-C connector go to D+/- on the CH340N. As specified in its datasheet, both V3 and VCC get 100nF decoupling capacitors. RTS goes to RESET through another 100nF capacitor; this capacitor makes the RESET pin briefly pulse low instead of staying low forever (avoiding bootlooping the MCU).
 
-TXD and RXD (*device* directionality i.e. MCU), are connected to their microcontroller pins D1 and D0 respectively with some status LEDs.
+RXD and TXD (USB directionality), are connected to their microcontroller pins D1 (MCU's TX) and D0 (MCU's RX) respectively with some status LEDs.
 
 ## Done!
 
 Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 to turn this into a PCB, or Part 4 to add more features to this board.
 
-<span class=kicad-img>![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/1full-kicad.svg)</span>
+<span class=kicad-img>![](1full-kicad.svg)</span>
 <span class=easyeda-img>![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/0full-easyeda.svg)</span>
 
 ### Footnotes
