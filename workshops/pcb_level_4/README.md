@@ -2,7 +2,7 @@
 name: 'SparkleTilt PCB 4: Adding Peripherals'
 description: 'Add useful sensors, chargers, and lights to your dev board'
 author: '@karmanyaahm'
-img: ''
+img: 'https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/32thumb.jpg'
 ---
 
 In this workshop we will add an accelerometer, battery charger, and LEDs to our microcontroller board.
@@ -13,7 +13,7 @@ In this workshop we will add an accelerometer, battery charger, and LEDs to our 
 1. Battery Charger - TP4057 - It's a basic part on JLCPCB, fairly small (SOT-23), and has two separate LEDs for charging and battery full.
 2. LEDs - WS2812 or SK6812 - There are several addressable options in the WS2812 and Sk6812 series. Most of them are rated for 3.7V-5.3V and require 70% of VDD to read a logic high. Your main deciding factor here will be physical and assembly constraints. In my design, I wanted the LEDs on the opposite side of the rest of the circuit which further increased complications (getting both sides assembled is super expensive). 
    
-   I ended up installing a combination of the `SK6812SIDE-A-RVS` which shines at a right angle from JLCPCB, and the `WS2812D-F5` for the back of my board, that I could solder myself. Honorable mentions go to the `SK6812MINI-E`, a reverse mounted LED which I would've totally used if my board was wide enough. There is no right answer here; everyone's design and aesthetic preferences will differ.
+    I ended up installing a combination of the `SK6812SIDE-A-RVS` which shines at a right angle from JLCPCB, and the `WS2812D-F5` for the back of my board, that I could solder myself. Honorable mentions go to the `SK6812MINI-E`, a reverse-mounted LED that I would've totally used if my board was wide enough. There is no right answer here; everyone's design and aesthetic preferences will differ.
 3. Accelerometer - LIS3DHTR - We don't need anything too fancy as we're just meausring the orientation of 1G reltive to the board. Unfortunately there are no popular and cheap 5V-compatible accelerometers. The LIS3DHTR is 1.8V to 3.6V and Arduino libraries from Adafruit and Sparkfun exist for it.
 
 
@@ -56,16 +56,16 @@ The rest of the parts are:
 There are 3 modifications you need to make to the old design to suit the new power layout.
 
 1. Connect the new power rails to the right pins.  
-   ![](2.png)
-2. The USB chip now runs off 3.3V VCC, and according to [the datasheet](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF), V3 and VCC need to be connected together to 3.3V. Also, lower the resistance for the LEDs because of the lower voltage. ![](3.png)
-3. Change the Diode to our new one, and USB is now powering VBUS (5V rail). ![](4.png)
+   ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/192.webp)
+2. The USB chip now runs off 3.3V VCC, and according to [the datasheet](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF), V3 and VCC need to be connected together to 3.3V. Also, lower the resistance for the LEDs because of the lower voltage. ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/233.webp)
+3. Change the Diode to our new one, and USB is now powering VBUS (5V rail). ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/244.webp)
 
 
 ## Other peripherals
 
 First, create a new sheet called "Devices" to store everything else and place it on your schematic.
 
-![](5.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/255.webp)
 
 Now, you have a whole new page to store your components.
 
@@ -73,7 +73,7 @@ Now, you have a whole new page to store your components.
 
 In 'Section 4: Application Hints' of the [LIS3DH datasheet](https://www.st.com/resource/en/datasheet/lis3dh.pdf), you'll see an example circuit and descriptions for what you're supposed to do to each pin. You can also look at other OSHW circuits (ex. Adafruit, Sparkfun) to understand the application of such an IC.
 
-![](6.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/266.webp)
 
 Here, everything is being powered from the 3.3V VCC. There are two decoupling capacitors (100nF and 10uF) as required by the datasheet. The two 4.7K resistors pull the I2C line high when it's not being used. CS is tied high to enable I2C communication at all times. The interrupts are not being used here since we don't need data immediately[^5].
 
@@ -81,27 +81,27 @@ Here, everything is being powered from the 3.3V VCC. There are two decoupling ca
 
 This is a simple set of switches which can be read with the microcontroller's internal pullup pins and will let us define aspects of the LEDs and Level in software. Consider using something that has protruding switches and is (significantly) bigger than the C40737 if you want to control it by hand.
 
-![](7.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/277.webp)
 
 ### Battery Charging
 
 [The datasheet](./tp4057-google-translated-datasheet.pdf) for the TP4057 recommends this circuit if we want the Red LED to light up when it's charging, the Green LED when it's charged, and both lights be off if no battery is connected.
 
-![](10.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/010.webp)
 
 The PROG resistor determines how fast to charge the battery based on a forumla, some common values are in the datasheet:
 
-![](9.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/299.webp)
 
 Lithium batteries should typically only be charged with up to 1C of current[^8]. For example, if you have a 300mAh battery, 1C = 300mA of charge or discharge current. Since this is an LED project, it'll require big batteries (> 500mAh), so we'll select 500mA as the charging current with a 1.6k resistor[^7].
 
 This is the final schematic:
-![](8.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/288.webp)
 
 
 ### Power Processing
 
-![](12.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/212.webp)
 
 > KiCAD doesn't have a TP4057 symbol by default, see the [Component Listing](#component-listing) to download it.
 
@@ -119,7 +119,7 @@ This is called a Power ORing circuit.
 
 So, I have a battery (say +3V min) and USB (nominally +5V). I want to drive VDrive from the USB when it's connected, else the battery. This is the simplest way to do that:
 
-![](14.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/314.webp)
 
 Here, the VBat Diode has one job: Protect the battery from charging directly through USB. This is because when VDrive (the junction point) is at 5V due to USB (maybe 4.6V due to the diodes), the potential at VDrive is higher than the potential at VBat. Since current flows from higher to lower potential (voltage), it won't flow from the battery (<4.2V) to VDrive (>4.5V). The diode (being a one-way valve) won't allow USB current into the battery.
 
@@ -127,7 +127,7 @@ The VBUS Diode prevents the battery from powering the charger, possible power LE
 
 Now, why is our MOSFET design better? It seems far more complicated. But, the trick is that instead of a fixed voltage drop, turning the MOSFET on causes the drop to be ~40 mOhms. At 1A, that is a .04V drop - significantly better than the diode's ~.3V. Not only does this save energy, it allows you to use the battery down to a lower voltage.
 
-![](15.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/415.webp)
 
 There are 3 states to this MOSFET arrangement[^10]:
 1. VBUS is 5V, VBAT is 4V. (G - S) > -1. MOSFET does not conduct. Additionally, since S > D, no potential gets applied backwards onto the battery.
@@ -140,7 +140,7 @@ There are 3 states to this MOSFET arrangement[^10]:
 
 Additionally, the USB interface should already be protected in case VBUS is being powered by the header pin.
 
-![](4.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/244.webp)
 
 This design is why current coming from USB to VDrive has two diodes, and thus we picked diodes with a 0.25V to 0.65V drop (ideally a constant .3V). 
 
@@ -148,7 +148,7 @@ This design is why current coming from USB to VDrive has two diodes, and thus we
 
 This is a chain of NeoPixels:
 
-![](16.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/516.webp)
 
 The WS2812B symbol works for any WS2812 or SK6812 LED that has 4 pins (+, -, DIN, DOUT). Since they are all logically the same, different NeoPixel form factors use the same symbol with different PCB footprints. Although they are not required, we have a capacitor to aid with sudden bursts of energy and a resistor to prevent too much current going to the LEDs data pin in case of a short[^11]. There's also a debug connector to test the LEDs from an external microcontroller, again, not required, just helpful in development.
 
@@ -165,25 +165,25 @@ From a circuit standpoint, putting LEDs in parallel is easy, you just connect th
 
 > **Note**: Carefully compare the datasheets if you're putting two different LEDs in parallel. Some LEDs are GRB, others are RGB, so won't be the same color if connected in parallel[^13].
 
-![](22.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1122.webp)
 
 But, as you can see, it quickly turns into a mess. If you want to block sets of LEDs that will be together repeatedly (in series or in parallel) do this:
 
 First, add a hierarchical sheet called `LED_BLOCK`. Then, put something like this in it (for parallel). Since the power symbols are globally the same, you can put them inside this drawing rather than having to connect it to every single LED group.
-![](17.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/617.webp)
 
 Then, add hierarchical labels from the right sidebar and called "DIN" and "DOUT".
 
-![](18.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/718.webp)
 
 Then, connect them to the right points. Notice how we're not connecting both the LEDs outputs; they would interfere with each other. One LED is doing the talking on DOUT, while the other is a passive listener.
-![](19.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/819.webp)
 
 Go back to the DEVICES sheet. Then, click on 'Import a hierarchical sheet pin' to put the DIN and DOUT we defined in the last step to the outside of the block. You can delete the 'File' label.
-![](20.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/920.webp)
 
 Then, copy-paste this sheet and connect it in a chain.
-![](21.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1021.webp)
 
 If you copy and paste them, the blocks will be linked and making a change to one will propagate throughout the rest, making iteration easier.
 </details>
@@ -192,8 +192,8 @@ If you copy and paste them, the blocks will be linked and making a change to one
 
 To add symbols, see the [CH340N from Part 1](../pcb_level_1/#usb-interface). Just like that, in the PCB view, you can add custom footprint libraries. My custom symbols (TP4057) and footprints (LEDs) are in [custom-leds.pretty.zip](./custom-leds.pretty.zip), which you need can extract into your KiCAD project folder. You could also find such footprints elsewhere on the internet, or create them from the datasheet.
 
-![](31.png)
-![](32.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/2131.webp)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/2232.webp)
 
 
 
@@ -216,44 +216,46 @@ Since your board design will be very different from mine - with a different phys
 
 I replaced the one big diode with the accelerometer near the MCU, to make routing easier, since they both talk I2C and use 3.3V VCC. It's using 0402 components and .2mm traces to reasonably be able to route around the incredibly tiny pins.
 
-![](23.png)
-![](25.png)
+![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/1123.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1425.webp)
 
 I also put the voltage regulator in that vicinty because everything that needs 3.3V VCC is inside the Arduino footprint.
-![](24.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1324.webp)
 
 The two power diodes are off to one side, where I found some free space. That header pin is the only thing connected to VBUS, so centering the diodes approximately there reduces trace length.
 
-![](26.png)
-![](27.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1526.webp)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1627.webp)
 
 
 Then, the battery charger and connector is placed right next to the rest of the power management. 
 
 > I'd recommend flipping the connector compared to how I placed it in the image because the ICSP header is obstructing my clips.
-![](28.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1728.webp)
 
 The switch is oriented (and wired in the schematic) in such a way that the switch pads and header pins are in a line.
 
-![](29.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1829.webp)
 
 And my overly complicated parallel LEDs were laid out as shown. Of course, you can't use both at the same time due to color encoding differences (see the [LEDs section on grouping](#leds)). The through-holes provide a free via to run VDrive on the other side, and access the ground plane. If you have a penninsula like this, double-check that the ground plane isn't constricted through a bottleneck. There's no harm in running traces on top of the plane to ensure there's enough capacity. 
-![](30.png)
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/2030.webp)
 
 
 ## Final Design
 And that's it, you have a completed SparkleTilt!
 Full Board:
-![](./longhorn_leds-F_Cu.svg)
-![](./longhorn_leds-B_Cu.svg)
-![](./longhorn_leds-F_Fab.svg)
-![](./longhorn_leds-brd.svg)
+![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/6longhorn_leds-F_Cu.svg)
+![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/2longhorn_leds-B_Cu.svg)
+![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/7longhorn_leds-F_Fab.svg)
+![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/3longhorn_leds-brd.svg)
 
 This is the full schematic:
-![](longhorn_leds.svg)
-![](longhorn_leds-DEVICES_PAGE.svg)
-![](longhorn_leds-DEVICES_PAGE-LED-stick0.svg)
+![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/8longhorn_leds.svg)
+![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/5longhorn_leds-DEVICES_PAGE.svg)
+![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/4longhorn_leds-DEVICES_PAGE-LED-stick0.svg)
 
+This is what my board looks like (the CH340N is missing because I messed up the traces in v1):
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/31picture.jpg)
 
 I can't wait to see how you remix this. You can share your designs and get feedback in [#onboard on Slack](https://hackclub.slack.com/archives/C056AMWSFKJ). We'll discuss programming this board in Part 5 of this workshop! (Coming Soon)
 
@@ -261,7 +263,7 @@ I can't wait to see how you remix this. You can share your designs and get feedb
 [^1]: https://learn.adafruit.com/li-ion-and-lipoly-batteries/voltages
 [^2]: In practice, you may see Neopixels running happily from 3.3V microcontrollers, but can't rely on that. The MCU's voltage might be on the lower end and output slightly under 3.3V, your USB line might be outputting 5.2V and now the limit is at 3.65V, etc. It's best to keep a margin of error.
 [^3]: https://youtu.be/osfgkFyq7lA?t=127
-[^4]: A DIP switch is a package with multiple individual switches like this: ![](1.jpg){:width="50%"}
+[^4]: A DIP switch is a package with multiple individual switches like this: ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/301.jpg){:width="50%"}
 [^5]: These interrupts would be useful if you needed an event notification from the IC (is acceleration > *n*?), or you wanted every single value immediately after it was measured (integrate acceleration to velocity) (AKA Pushing data). In our case, we'll just ask the chip for the acceleration every few hundred milliseconds (AKA Polling data).
 [^6]: See table on page 8 for more info.
 [^7]: I used 1.5k because of 1.6ks were unavailable in my size on JLCPCB, anything in that vicinity ought to work. Similarly I used 4.7k's instead of 5k on the battery pin pull up.

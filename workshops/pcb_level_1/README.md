@@ -170,7 +170,7 @@ We also have the ICSP header, which is used for flashing the Arduino's bootloade
 
 We start with the 16 Pin USB 2.0 Type C receptacle, C165948.
 
-<span class=kicad-img>![image](6.png)</span>
+<span class=kicad-img>![image](https://cloud-iztw9b588-hack-club-bot.vercel.app/06.webp)</span>
 <span class=easyeda-img>![image](https://cloud-j48wmzjac-hack-club-bot.vercel.app/23e6.0.webp)</span>
 
 NC: SBU1/2 and Shield/Shell (shield is only for hosts).
@@ -192,7 +192,7 @@ You can download the KiCAD CH340N footprint here: [ch340n.kicad_sym](./ch340n.ki
 
 
 
-![image](7.png)
+![image](https://cloud-iztw9b588-hack-club-bot.vercel.app/17.webp)
 
 </span>
 <span class=easyeda-img>
@@ -209,7 +209,7 @@ RXD and TXD (USB directionality), are connected to their microcontroller pins D1
 
 Now you have a simple Arduino Nano Compatible Board Schematic! Check out Part 2 to turn this into a PCB, or Part 4 to add more features to this board.
 
-<span class=kicad-img>![](1full-kicad.svg)</span>
+<span class=kicad-img>![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/01full-kicad.svg)</span>
 <span class=easyeda-img>![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/0full-easyeda.svg)</span>
 
 ### Footnotes
