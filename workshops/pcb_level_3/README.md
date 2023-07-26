@@ -16,6 +16,7 @@ Here are some component notes by [@camdan.me](https://hackclub.slack.com/team/U0
 - Keep in mind that JLCPCB charges a $3 fee for every "extended component" type that they assemble.
 - You will not be able to get specialized components from Adafruit or similar companies through the grant.
 - A complete library of JLCPCB/LCSC components is available at <https://jlcpcb.com/parts>.
+- If following the ATMega328P workshop, you will need an Arduino, FTDI board, or any other AVR programmer to flash the bootloader before you can use the board's USB port. Verify what you need for your chip. ESP32s and RP2040s typically work out of the box.
 
 ## Install the Extension
 
@@ -120,7 +121,6 @@ With shipping, that's $45.
 
 ![](https://cloud-9ctvo6cbs-hack-club-bot.vercel.app/1019.webp)
 
-### Footprints
 
 [^1]: You might want to edit the footprints of components you are hand-soldering. For example, to hand solder the USB-C connector, make the pads longer and remove unused ones like SBUS.
 [^2]: There are a million different ways to export your files and order with different manufacturers, but for simplicity, this workshop only focuses on one.

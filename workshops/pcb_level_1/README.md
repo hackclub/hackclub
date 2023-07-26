@@ -150,12 +150,14 @@ These are global labels. Unlike the RESET label, these work on all pages of the 
 
 </span>
 
-<span class=easyeda-img>![image](https://cloud-j48wmzjac-hack-club-bot.vercel.app/19e5.0.webp)
+<span class=easyeda-img>
+![image](https://cloud-j48wmzjac-hack-club-bot.vercel.app/19e5.0.webp)
 
 In the Library, under the "System" tab, search for `DIP-30 ARDUINONANO` and `HEADER_PRG_2x03` to find these headers.
 
 ![image](https://cloud-4drjlif5e-hack-club-bot.vercel.app/2e5.1.png)
 ![image](https://cloud-4drjlif5e-hack-club-bot.vercel.app/3e5.2.png)
+
 </span>
 
 First, we have the traditional Arduino Nano pinout connected to our labels, telling the ECAD software we want these headers connected to the prespecified microcontroller pins. Since this whole board is running at 5V, just mark 3V3 as NC (No Connect).
@@ -183,10 +185,11 @@ Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have
 
 <span class=kicad-img>
 
+You can download the KiCAD CH340N footprint here: [ch340n.kicad_sym](./ch340n.kicad_sym). Then, put it in your project folder and add it to your symbol library in Preferences > Manage Symbol Libraries > Project Specific Libraries.
+
 ![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/87.1.webp)
 ![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/97.2.webp)
 
-You can download the KiCAD CH340N footprint here: [ch340n.kicad_sym](./ch340n.kicad_sym). Then, put it in your project folder and add it to your symbol library in Preferences > Manage Symbol Libraries > Project Specific Libraries.
 
 
 ![image](7.png)
