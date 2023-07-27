@@ -85,7 +85,7 @@ This is a simple set of switches which can be read with the microcontroller's in
 
 ### Battery Charging
 
-[The datasheet](./tp4057-google-translated-datasheet.pdf) for the TP4057 recommends this circuit if we want the Red LED to light up when it's charging, the Green LED when it's charged, and both lights be off if no battery is connected.
+[The datasheet](https://cloud-b6v3rkn29-hack-club-bot.vercel.app/1tp4057-google-translated-datasheet.pdf) for the TP4057 recommends this circuit if we want the Red LED to light up when it's charging, the Green LED when it's charged, and both lights be off if no battery is connected.
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/010.webp)
 
@@ -190,7 +190,7 @@ If you copy and paste them, the blocks will be linked and making a change to one
 
 ## Component Listing
 
-To add symbols, see the [CH340N from Part 1](../pcb_level_1/#usb-interface). Just like that, in the PCB view, you can add custom footprint libraries. My custom symbols (TP4057) and footprints (LEDs) are in [custom-leds.pretty.zip](./custom-leds.pretty.zip), which you need can extract into your KiCAD project folder. You could also find such footprints elsewhere on the internet, or create them from the datasheet.
+To add symbols, see the [CH340N from Part 1](../pcb_level_1/#usb-interface). Just like that, in the PCB view, you can add custom footprint libraries. My custom symbols (TP4057) and footprints (LEDs) are in [custom-leds.pretty.zip](https://cloud-b6v3rkn29-hack-club-bot.vercel.app/2custom-leds.pretty.zip), which you need can extract into your KiCAD project folder. You could also find such footprints elsewhere on the internet, or create them from the datasheet.
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/2131.webp)
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/2232.webp)

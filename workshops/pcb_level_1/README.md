@@ -1,6 +1,6 @@
 ---
 name: 'SparkleTilt PCB 1: Microcontroller Design'
-description: 'Design an Arduino Nano-compatible microcontroller board'
+description: 'Design an Arduino Nano-compatible microcontroller board in KiCAD'
 author: '@karmanyaahm'
 img: 'https://cloud-182dent0a-hack-club-bot.vercel.app/0thumb.jpg'
 ---
@@ -14,12 +14,12 @@ A finished SparkleTilt looks something like this (with your design customization
 
 <details>
 <summary>Video Demo</summary>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/px2V8bZMeLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" rel=0 src="https://www.youtube-nocookie.com/embed/px2V8bZMeLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </details>
 
 <details>
 <summary>Prerequisites</summary>
-If you are not already familiar with the basics of using an ECAD tool like EasyEDA or KiCAD, check out @maggie's workshop on designing a PCB Business card:
+If you are not already familiar with the basics of using an ECAD tool like EasyEDA or KiCAD, check out @maggie's workshop on designing a PCB Business card in EasyEDA:
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/enMtMOgimm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 This video demonstrates the basics of navigating around KiCAD.
@@ -198,7 +198,7 @@ Then, to tell the USB-C port that we are drawing power from it, CC1 and CC2 have
 
 <span class=kicad-img>
 
-You can download the KiCAD CH340N footprint here: [ch340n.kicad_sym](./ch340n.kicad_sym). Then, put it in your project folder and add it to your symbol library in Preferences > Manage Symbol Libraries > Project Specific Libraries.
+You can download the KiCAD CH340N footprint here: [ch340n.kicad_sym](https://cloud-b6v3rkn29-hack-club-bot.vercel.app/0ch340n.kicad_sym). Then, put it in your project folder and add it to your symbol library in Preferences > Manage Symbol Libraries > Project Specific Libraries.
 
 ![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/87.1.webp)
 ![](https://cloud-j48wmzjac-hack-club-bot.vercel.app/97.2.webp)
