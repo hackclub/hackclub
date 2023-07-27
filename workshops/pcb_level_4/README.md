@@ -5,7 +5,7 @@ author: '@karmanyaahm'
 img: 'https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/32thumb.jpg'
 ---
 
-In this workshop we will add an accelerometer, battery charger, and LEDs to our microcontroller board.
+In this workshop, we will add an accelerometer, battery charger, and LEDs to our microcontroller board.
 
 ## Part selection
 
@@ -14,7 +14,7 @@ In this workshop we will add an accelerometer, battery charger, and LEDs to our 
 2. LEDs - WS2812 or SK6812 - There are several addressable options in the WS2812 and Sk6812 series. Most of them are rated for 3.7V-5.3V and require 70% of VDD to read a logic high. Your main deciding factor here will be physical and assembly constraints. In my design, I wanted the LEDs on the opposite side of the rest of the circuit which further increased complications (getting both sides assembled is super expensive). 
    
     I ended up installing a combination of the `SK6812SIDE-A-RVS` which shines at a right angle from JLCPCB, and the `WS2812D-F5` for the back of my board, that I could solder myself. Honorable mentions go to the `SK6812MINI-E`, a reverse-mounted LED that I would've totally used if my board was wide enough. There is no right answer here; everyone's design and aesthetic preferences will differ.
-3. Accelerometer - LIS3DHTR - We don't need anything too fancy as we're just meausring the orientation of 1G reltive to the board. Unfortunately there are no popular and cheap 5V-compatible accelerometers. The LIS3DHTR is 1.8V to 3.6V and Arduino libraries from Adafruit and Sparkfun exist for it.
+3. Accelerometer - LIS3DHTR - We don't need anything too fancy as we're just measuring the orientation of 1G relative to the board. Unfortunately, there are no popular and cheap 5V-compatible accelerometers. The LIS3DHTR is 1.8V to 3.6V and Arduino libraries from Adafruit and Sparkfun exist for it.
 
 
 
@@ -49,7 +49,7 @@ The rest of the parts are:
 4. Voltage Regulator - XC6206P332MR. A small (SOT-23) basic LDO (Low DropOut) voltage regulator on JLCPCB Basic Parts that outputs 3.3V. This has a 250mV dropout, so it needs 3.55V in to output 3.3V, and it can take in up to 6V.
 5. Switches - C40737. Just a nice small DIP switch[^4] to set different modes on our MCU.
 5. P-Channel MOSFET - AO3401A. This will switch the battery onto VDrive when USB is disconnected. Same story, the best of the three available basic parts of JLCPCB; adequate current capacity and low resistance.
-6. Diodes - C8678. So, we want to drop our ~5V USB input to <4.5V. While they are not perfectly linear like Ohmic resistors, diodes do vary the voltage they drop based on the current going through them. To stay in spec with both the LDO and the LEDs, we want the lowest voltage on VDrive to be >3.7V. So, our drop ranges from .5V to 1.3V (varying based on current draw). We will use two diodes (explained later), so each should have a current drop between 0.25V to 0.65V. This SS34 Diode fits the bill, and has the ability to dissipate all that heat.
+6. Diodes - C8678. So, we want to drop our ~5V USB input to <4.5V. While they are not perfectly linear like Ohmic resistors, diodes do vary the voltage they drop based on the current going through them. To stay in spec with both the LDO and the LEDs, we want the lowest voltage on VDrive to be >3.7V. So, our drop ranges from .5V to 1.3V (varying based on current draw). We will use two diodes (explained later), so each should have a current drop between 0.25V to 0.65V. This SS34 Diode fits the bill and can dissipate all that heat.
 
 ## Modifications
 
@@ -75,21 +75,21 @@ In 'Section 4: Application Hints' of the [LIS3DH datasheet](https://www.st.com/r
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/266.webp)
 
-Here, everything is being powered from the 3.3V VCC. There are two decoupling capacitors (100nF and 10uF) as required by the datasheet. The two 4.7K resistors pull the I2C line high when it's not being used. CS is tied high to enable I2C communication at all times. The interrupts are not being used here since we don't need data immediately[^5].
+Here, everything is powered from the 3.3V VCC. There are two decoupling capacitors (100nF and 10uF) as required by the datasheet. The two 4.7K resistors pull the I2C line high when it's not being used. CS is tied high to enable I2C communication at all times. The interrupts are not being used here since we don't need data immediately[^5].
 
 ### Configuration Switch
 
-This is a simple set of switches which can be read with the microcontroller's internal pullup pins and will let us define aspects of the LEDs and Level in software. Consider using something that has protruding switches and is (significantly) bigger than the C40737 if you want to control it by hand.
+This is a simple set of switches that can be read with the microcontroller's internal pullup pins and will let us define aspects of the LEDs and Level in software. Consider using something that has protruding switches and is (significantly) bigger than the C40737 if you want to control it by hand.
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/277.webp)
 
 ### Battery Charging
 
-[The datasheet](https://cloud-b6v3rkn29-hack-club-bot.vercel.app/1tp4057-google-translated-datasheet.pdf) for the TP4057 recommends this circuit if we want the Red LED to light up when it's charging, the Green LED when it's charged, and both lights be off if no battery is connected.
+[The datasheet](https://cloud-b6v3rkn29-hack-club-bot.vercel.app/1tp4057-google-translated-datasheet.pdf) for the TP4057 recommends this circuit if we want the Red LED to light up when it's charging, the Green LED when it's charged, and both lights off if no battery is connected.
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/010.webp)
 
-The PROG resistor determines how fast to charge the battery based on a forumla, some common values are in the datasheet:
+The PROG resistor determines how fast to charge the battery based on a formula, some common values are in the datasheet:
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/299.webp)
 
@@ -130,7 +130,7 @@ Now, why is our MOSFET design better? It seems far more complicated. But, the tr
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/415.webp)
 
 There are 3 states to this MOSFET arrangement[^10]:
-1. VBUS is 5V, VBAT is 4V. (G - S) > -1. MOSFET does not conduct. Additionally, since S > D, no potential gets applied backwards onto the battery.
+1. VBUS is 5V, VBAT is 4V. (G - S) > -1. MOSFET does not conduct. Additionally, since S > D, no potential gets applied backward onto the battery.
 2. VBUS is 0V (stable because of the pull-down), VBAT (D) is 4V. G = S = 0. Now, since S < D, current can flow across the body diode. This brings S up to 3V.
 3. Now, S = 3V, G = 0V, (G - S) < -1V and the MOSFET is enabled.
 4. If VUSB is enabled again now, go back to step 1.
@@ -138,7 +138,7 @@ There are 3 states to this MOSFET arrangement[^10]:
 
 <br>
 
-Additionally, the USB interface should already be protected in case VBUS is being powered by the header pin.
+Additionally, the USB interface should already be protected in case VBUS is powered by the header pin.
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/244.webp)
 
@@ -150,9 +150,9 @@ This is a chain of NeoPixels:
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/516.webp)
 
-The WS2812B symbol works for any WS2812 or SK6812 LED that has 4 pins (+, -, DIN, DOUT). Since they are all logically the same, different NeoPixel form factors use the same symbol with different PCB footprints. Although they are not required, we have a capacitor to aid with sudden bursts of energy and a resistor to prevent too much current going to the LEDs data pin in case of a short[^11]. There's also a debug connector to test the LEDs from an external microcontroller, again, not required, just helpful in development.
+The WS2812B symbol works for any WS2812 or SK6812 LED that has 4 pins (+, -, DIN, DOUT). Since they are all logically the same, different NeoPixel form factors use the same symbol with different PCB footprints. Although they are not required, we have a capacitor to aid with sudden bursts of energy and a resistor to stop too much current from going to the LED's data pin in case of a short[^11]. There's also a debug connector to test the LEDs from an external microcontroller, again, not required, just helpful in development.
 
-Like I said in part selection, your NeoPixel choice will vary hugely based on your physical design and assembly technique. Feel free to ask for help in [#onboard-help](https://hackclub.slack.com/archives/C0593MG26TT) on Slack.
+As I said in Part Selection, your NeoPixel choice will vary hugely based on your physical design and assembly technique. Feel free to ask for help in [#onboard-help](https://hackclub.slack.com/archives/C0593MG26TT) on Slack.
 
 > Note: Each Neopixel uses up to 60mA at max brightness. While this circuit is prepared to deal with 3A, make sure your power supply and battery are too. Even though you may not be planning to set them to full birghtness (because they are insanely bright), don't go way over the limit (50 LEDs) so software bugs or electrical glitches don't burn your house down.
 > Your battery MUST be at least 1000mAh (ideally more) if you have 50 LEDs = 3A. This will prevent it from triggering its overcurrent protection in case of accidental max brightness. If you're *planning* to run 50 LEDs at max brightness, I'd recommend going with at least 3000mAh battery to discharge at 1C[^12].
@@ -161,7 +161,7 @@ Like I said in part selection, your NeoPixel choice will vary hugely based on yo
 <details>
 <summary>How to group LEDs?</summary>
 
-From a circuit standpoint, putting LEDs in parallel is easy, you just connect their DIN pins, and leave out one of their DOUTs.
+From a circuit standpoint, putting LEDs in parallel is easy: you just connect their DIN pins and leave out all but one of their DOUTs.
 
 > **Note**: Carefully compare the datasheets if you're putting two different LEDs in parallel. Some LEDs are GRB, others are RGB, so won't be the same color if connected in parallel[^13].
 
@@ -172,7 +172,7 @@ But, as you can see, it quickly turns into a mess. If you want to block sets of 
 First, add a hierarchical sheet called `LED_BLOCK`. Then, put something like this in it (for parallel). Since the power symbols are globally the same, you can put them inside this drawing rather than having to connect it to every single LED group.
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/617.webp)
 
-Then, add hierarchical labels from the right sidebar and called "DIN" and "DOUT".
+Then, add hierarchical labels from the right sidebar called "DIN" and "DOUT".
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/718.webp)
 
@@ -219,7 +219,7 @@ I replaced the one big diode with the accelerometer near the MCU, to make routin
 ![](https://cloud-596d7k8lu-hack-club-bot.vercel.app/1123.png)
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1425.webp)
 
-I also put the voltage regulator in that vicinty because everything that needs 3.3V VCC is inside the Arduino footprint.
+I also put the voltage regulator in that vicinity because everything that needs 3.3V VCC is inside the Arduino footprint.
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1324.webp)
 
 The two power diodes are off to one side, where I found some free space. That header pin is the only thing connected to VBUS, so centering the diodes approximately there reduces trace length.
@@ -228,7 +228,7 @@ The two power diodes are off to one side, where I found some free space. That he
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1627.webp)
 
 
-Then, the battery charger and connector is placed right next to the rest of the power management. 
+Then, the battery charger and connector are placed right next to the rest of the power management. 
 
 > I'd recommend flipping the connector compared to how I placed it in the image because the ICSP header is obstructing my clips.
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1728.webp)
@@ -237,7 +237,7 @@ The switch is oriented (and wired in the schematic) in such a way that the switc
 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/1829.webp)
 
-And my overly complicated parallel LEDs were laid out as shown. Of course, you can't use both at the same time due to color encoding differences (see the [LEDs section on grouping](#leds)). The through-holes provide a free via to run VDrive on the other side, and access the ground plane. If you have a penninsula like this, double-check that the ground plane isn't constricted through a bottleneck. There's no harm in running traces on top of the plane to ensure there's enough capacity. 
+And my overly complicated parallel LEDs were laid out as shown. Of course, you can't use both at the same time due to color encoding differences (see the [LEDs section on grouping](#leds)). The through-holes provide a free via to run VDrive on the other side and access the ground plane. If you have a peninsula like this, double-check that the ground plane isn't constricted through a bottleneck. There's no harm in running traces on top of the plane to ensure there's enough capacity. 
 ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/2030.webp)
 
 
@@ -266,8 +266,8 @@ I can't wait to see how you remix this. You can share your designs and get feedb
 [^4]: A DIP switch is a package with multiple individual switches like this: ![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/301.jpg){:width="50%"}
 [^5]: These interrupts would be useful if you needed an event notification from the IC (is acceleration > *n*?), or you wanted every single value immediately after it was measured (integrate acceleration to velocity) (AKA Pushing data). In our case, we'll just ask the chip for the acceleration every few hundred milliseconds (AKA Polling data).
 [^6]: See table on page 8 for more info.
-[^7]: I used 1.5k because of 1.6ks were unavailable in my size on JLCPCB, anything in that vicinity ought to work. Similarly I used 4.7k's instead of 5k on the battery pin pull up.
-[^8]: Slower charging is fine, it'll just take more time, faster could overheat the battery.
+[^7]: I used 1.5k because 1.6ks were unavailable in my size on JLCPCB, anything around that ought to work. Similarly, I used a 4.7k instead of a 5k on the battery pin pull-up.
+[^8]: Slower charging is fine, it'll just take more time, whereas faster could overheat the battery, reducing capacity.
 [^9]: This ORing design was inspired by [Unexpected Maker's Feather S3](https://github.com/UnexpectedMaker/esp32s3/blob/4aa7ebb8e56a60362dc5455193b5c223e020a28b/schematics/schematic-feathers3_p7.pdf). Open Source Hardware FTW!
 [^10]: This video on reverse voltage protection might help understand these states: <https://youtu.be/IrB-FPcv1Dc?t=116>. We are doing practically the same thing, just checking another power supply instead of the direction of the one battery.
 [^11]: It's unlikely to have a disconnected power supply but active data pin on a PCB, but the cost of adding the resistor is negligible, so might as well. It's not a big deal if you remove it.
