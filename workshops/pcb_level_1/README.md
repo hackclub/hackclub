@@ -2,10 +2,20 @@
 name: 'SparkleTilt PCB 1: Microcontroller Design'
 description: 'Design an Arduino Nano-compatible microcontroller board'
 author: '@karmanyaahm'
-img: 'https://cloud-b13eq4dcp-hack-club-bot.vercel.app/1e7.0.png'
+img: 'https://cloud-182dent0a-hack-club-bot.vercel.app/0thumb.jpg'
 ---
 
 In this workshop, we will design an Arduino Nano-compatible microcontroller board.
+
+
+A finished SparkleTilt looks something like this (with your design customizations, of course):
+
+![](https://cloud-rbtn9ts6c-hack-club-bot.vercel.app/31picture.jpg)
+
+<details>
+<summary>Video Demo</summary>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/px2V8bZMeLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</details>
 
 <details>
 <summary>Prerequisites</summary>
@@ -19,12 +29,14 @@ This video demonstrates the basics of navigating around KiCAD.
 In addition, the rest of the workshop assumes you know basic electronics terms like:
 1. Resistor: A resistor limits the electric current that flows through a circuit. Resistance is the restriction of current.
 2. Capacitor: A capacitor stores charge, and thus energy. It's like a tiny battery that charges and discharges very quickly.
+3. Diode: A diode only allows current to flow in one direction. It also drops a little bit of voltage, turning that energy into heat.
 2. Microcontroller: A microcontroller (aka MCU) is a system on a chip that contains an integrated processor, memory, and input/output peripherals, which are used to interact with other electronic components.
 
 </details>
 
 
-
+<!-- I'm hiding this selection stuff rn because it doesn't make sense to have part 1 be both KiCAD and EasyEDA when the rest of the parts are not. However, I don't wanna delete it in case someone makes easyeda part 2 and 4 in the future, and it was a ton of work to write this stuff :(-->
+<div style="display: none;">
 I am using: 
 <label><input name="viewSettings" type="radio" data-to-hide=".kicad-img" checked=true/> KiCAD</label>
 <label><input name="viewSettings" type="radio" data-to-hide=".easyeda-img" /> EasyEDA </label>
@@ -49,6 +61,7 @@ I am using:
 
   updateStyles();
 </script>
+</div>
 
 ## Part Selection
 
