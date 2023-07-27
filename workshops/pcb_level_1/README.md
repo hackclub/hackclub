@@ -36,6 +36,7 @@ In addition, the rest of the workshop assumes you know basic electronics terms l
 
 
 <!-- I'm hiding this selection stuff rn because it doesn't make sense to have part 1 be both KiCAD and EasyEDA when the rest of the parts are not. However, I don't wanna delete it in case someone makes easyeda part 2 and 4 in the future, and it was a ton of work to write this stuff :(-->
+<style>.easyeda-img {display: none; }</style>
 <div style="display: none;">
 I am using: 
 <label><input name="viewSettings" type="radio" data-to-hide=".kicad-img" checked=true/> KiCAD</label>
