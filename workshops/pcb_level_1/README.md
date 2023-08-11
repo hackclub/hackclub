@@ -5,7 +5,7 @@ author: '@karmanyaahm'
 img: 'https://cloud-182dent0a-hack-club-bot.vercel.app/0thumb.jpg'
 ---
 
-In this workshop, we will design an Arduino Nano-compatible microcontroller board.
+In this workshop, we will design an Arduino Nano-compatible microcontroller board using KiCAD.
 
 
 A finished SparkleTilt looks something like this (with your design customizations, of course):
@@ -77,6 +77,7 @@ Step 1 of designing a board is selecting your core components:
 3. Pinout: While not technically a component, we will follow the standard Arduino Nano pinout. This really doesn't matter— unless you value your future self's sanity when trying to wire up new components.
 
 Now on to the actual circuit.
+Make sure you have KiCAD downloaded, then set up a new project, and open the schematic editor.
 
 ## Core (Microcontroller)
 
