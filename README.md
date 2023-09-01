@@ -14,7 +14,7 @@ We'd love to have you involved in the community:
 
 - Attend _(or start!)_ a [high school hackathon](https://hackclub.com/hackathons) in your area.
 
-- Make your project a 501(c)(3) nonprofit with [🏦 Hack Club Bank](https://hackclub.com/bank).
+- Make your project a 501(c)(3) nonprofit with [🏦 HCB](https://hackclub.com/hcb).
 
 - Ship a new project with one of [our workshops](https://workshops.hackclub.com).
 
