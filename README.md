@@ -44,19 +44,19 @@ Hack Club is a community by and for teen hackers. Our software, past events, bra
 
 ## 🔗 Quick Hack Club links
 
-| Action                                                    | Link                                 |
-| --------------------------------------------------------- | ------------------------------------ |
-| 💬 Join our Slack                                         | <https://hackclub.com/slack>         |
-| ✨ See our workshops                                      | <https://workshops.hackclub.com>     |
-| 📸 See what Hack Clubbers are making every day            | <https://scrapbook.hackclub.com>     |
-| 🗺️ Join a high-school hackathon nearby                    | <https://hackathons.hackclub.com>    |
-| 🎒 Start a Hack Club at your school                       | <https://apply.hackclub.com>         |
-| 🏦 Run an open-source project / event on HCB              | <https://hackclub.com/hcb>           |
-| 🦕 Draw a dino & join our GitHub                          | <https://hack.af/draw-dino>          |
-| 💖 See our contribution guidelines                        | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
-| 🙏 Read our code of conduct                               | <https://hackclub.com/conduct>       |
-| 🎨 Use our logos & banners                                | <https://hackclub.com/brand>         |
-| 🐦 Follow us on Twitter                                   | <https://twitter.com/hackclub>       |
+| Action                                                    | Link                                                          |
+| --------------------------------------------------------- | ------------------------------------------------------------  |
+| 💬 Join our Slack                                         | [hackclub.com/slack](https://hackclub.com/slack)              |
+| ✨ See our workshops                                      | [workshops.hackclub.com](https://workshops.hackclub.com)      |
+| 📸 See what Hack Clubbers are making every day            | [scrapbook.hackclub.com](https://scrapbook.hackclub.com)      |
+| 🗺️ Join a high-school hackathon nearby                    | [hackathons.hackclub.com](https://hackathons.hackclub.com)    |
+| 🎒 Start a Hack Club at your school                       | [apply.hackclub.com](https://apply.hackclub.com)              |
+| 🏦 Run an open-source project / event on HCB              | [hackclub.com/hcb](https://hackclub.com/hcb)                  |
+| 🦕 Draw a dino & join our GitHub                          | [hack.af/draw-dino](https://hack.af/draw-dino)                |
+| 💖 See our contribution guidelines                        | [`CONTRIBUTING.md`](CONTRIBUTING.md)                          |
+| 🙏 Read our code of conduct                               | [hackclub.com/conduct](https://hackclub.com/conduct)          |
+| 🎨 Use our logos & banners                                | [hackclub.com/brand](https://hackclub.com/brand)              |
+| 🐦 Follow us on Twitter                                   | [twitter.com/hackclub](https://twitter.com/hackclub)          |
 
 ## 📜 License
 
