@@ -51,6 +51,7 @@ Hack Club is a community by and for teen hackers. Our software, past events, bra
 | 📸 See what Hack Clubbers are making every day            | <https://scrapbook.hackclub.com>     |
 | 🗺️ Join a high-school hackathon nearby                    | <https://hackathons.hackclub.com>    |
 | 🎒 Start a Hack Club at your school                       | <https://apply.hackclub.com>         |
+| 🏦 Run an open-source project / event on HCB              | <https://hackclub.com/hcb>           |
 | 🦕 Draw a dino & join our GitHub                          | <https://hack.af/draw-dino>          |
 | 💖 See our contribution guidelines                        | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
 | 🙏 Read our code of conduct                               | <https://hackclub.com/conduct>       |
