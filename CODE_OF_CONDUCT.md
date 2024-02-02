@@ -69,7 +69,7 @@ These actions are explicitly forbidden in Hack Club spaces:
   - unwelcome sexual advances, including sexually explicit content.
 - Advertising or recruiting for events, companies, organizations, etc - unless specifically given permission by Hack Club HQ.
 - Posting spam-like content that disrupts the environment of the community.
-- Defrauding Hack Club, including HCB, by collecting funds or resources under false information, identity, or pretenses. This is treated as a **third offense** and results in a call to **your school admin**.
+- Defrauding Hack Club, including HCB, by collecting funds or resources under false information, identity, or pretenses. This is treated as a **third offense** and could result in a call to **your school admin**.
 
 ## Moderation & Enforcement
 
