@@ -6,6 +6,8 @@ img: https://cloud-psj7hfkrk.vercel.app/0thumbnail.png
 locales: 'pt-br'
 ---
 
+_Want to build this & get your arduino for free? High schoolers in the US can get an electronics kit for free through [The Bin](https://hackclub.com/bin)._
+
 # Meme Songs with Arduino
 
 ![thumbnail](https://cloud-psj7hfkrk.vercel.app/0thumbnail.png)
