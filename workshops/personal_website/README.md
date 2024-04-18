@@ -328,33 +328,27 @@ A good way to get ideas for what to add to your website is to look at other peop
 **Websites Made by Other Hack Club Hackers:**
 
 - [Zeyu (Peter) Yao](https://cytronicoder.com)
-- [Reese Armstrong](https://reeseric.ci)
-- [Malte I. Lauterbach](https://patakh.com/)
 - [Kognise](https://kognise.dev/)
 - [Celeste](https://celeste.exposed/)
-- [Leo McElroy](https://leomcelroy.com/)
 - [Sarthak Mohanty](https://sarthakmohanty.me/)
 - [Kat Huang](https://katmh.com)
 - [Theo Bleier](https://tmb.sh/)
 - [Megan Cui](https://megancui.com/)
 - [Matthew Stanciu](https://matthewstanciu.me/)
-- [Winston Iskandar](https://winstoniskandar.com)
 - [Sophie Huang](https://sohuang.github.io/)
 - [Jevin Sidhu](http://jevinsidhu.com/)
 - [Sam Poder](http://sampoder.com/)
 - [Nisarga Adhikary](https://nisarga.me)
-- [Faisal Sayed](https://fayd.me/)
-- [EvanNotFound](https://ohevan.com/)
 
 **Websites Made by Professionals:**
 
 - [Melody Starling](https://melody.dev/)
 - [Eel Slap](http://eelslap.com)
+- [Alice Lee](http://byalicelee.com)
 - [Lynn Fisher](https://lynnandtonic.com)
 - [Tatiana Mac](https://tatianamac.com)
 - [Mina Markham](http://mina.codes/)
 - [Robb Owen](https://robbowen.digital)
-- [Alice Lee](http://byalicelee.com)
 - [Yaron Schoen](http://yaronschoen.com)
 
 ### Additional Resources
