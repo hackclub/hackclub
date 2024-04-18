@@ -247,13 +247,69 @@ Now be sure to **Run** to get the most recent version of your website. Ah, it is
 
 ## Part IV: Publishing
 
-Just need to click on the current name and then on `name`.
+Repl.it is great for editing and previewing your site, but it's not something you can easily share with others. To do that, you need to publish your site on Github– a free place for hosting your code.
 
-![Edit button for changing the name of a project](https://cloud-bpasdxn89-hack-club-bot.vercel.app/0image.png)
+There are going to be [first time steps](#first-time-steps) to setup GitHub right now, [publishing changes](#publishing-changes) steps for future changes you make.
 
-Once you're happy with the name you've given it, press <kbd>Enter</kbd> to confirm your changes.
+### First time steps
 
-And just like that your website is now published at the domain `PROJECTNAME.USERNAME.repl.co` on the internet for all your friends to see!
+**Link your accounts**
+
+Publishing your first time requires creating and linking accounts. You'll need to [create a Github account](https://github.com/join) if you don't already have one.
+
+Next, add GitHub to your Repl.it account by going to [Account settings](https://replit.com/account#connected-services) & clicking "GitHub Connect"
+
+![Connect replit to github](https://cloud-8iuysbpe7-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_15.04.27.png)
+
+**Create a repo**
+
+Now you'll go into the "Git" tab on replit's editor
+
+![](https://cloud-74ae7tec1-hack-club-bot.vercel.app/1screenshot_2024-04-18_at_14.01.35.png)
+
+Click "Initialize Git Repository"
+
+![](https://cloud-74ae7tec1-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_14.01.41.png)
+
+**Link your repo to GitHub**
+
+Now we have a "repo" on replit, but we need to link it to something on GitHub!
+
+Click "Settings View"
+
+![](https://cloud-m4wojsqir-hack-club-bot.vercel.app/1screenshot_2024-04-18_at_15.19.15.png)
+
+Then fill out the details for a new repo on GitHub
+
+![](https://cloud-m4wojsqir-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_15.19.52.png)
+
+Click "Create Repository on GitHub"
+
+Quickly [Publish your changes](#publishing-changes) and then we can configure your site link.
+
+After that, we need to go to our GitHub account and click on the repo we just created.
+
+![](https://cloud-mqt6brgrz-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_15.55.28.png)
+
+_Change deployment branch to "main"_
+
+Now everything is wired up! You can publish your site now, or any time in the future by following the steps below.
+
+### Publishing changes
+
+**Commit your changes**
+
+Whenever you drop a new feature or fix, you'll have some changed lines in your code.
+
+![](https://cloud-6t6udfst5-hack-club-bot.vercel.app/1screenshot_2024-04-18_at_15.24.52.png)
+
+Go to the "Git" tab, fill a "Commit message", and click "Commit Changes"
+
+![](https://cloud-6t6udfst5-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_15.25.01.png)
+
+And just like that your website is now published at the domain `USERNAME.github.io/REPONAME` on the internet for all your friends to see!
+
+_Give it 2 minutes to deploy your changes the first time!_
 
 ![Two people singing and moving side to side in a car](https://cloud-4zpw37atj-hack-club-bot.vercel.app/1celebrate_rush_hour.gif)
 
