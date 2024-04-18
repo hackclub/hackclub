@@ -7,6 +7,8 @@ locales: 'es-xl, pt-br'
 
 # Personal Website
 
+_For a limited time: build your site & [get a free bubble tea](hack.club/boba)_
+
 Prophet Orpheus, [our mascot](https://hackclub.com/workshops/orpheus), is here to guide you through making your own personal website.
 
 It will look something like this:
