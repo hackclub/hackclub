@@ -315,6 +315,8 @@ _Give it 2 minutes to deploy your changes the first time!_
 
 ![Two people singing and moving side to side in a car](https://cloud-4zpw37atj-hack-club-bot.vercel.app/1celebrate_rush_hour.gif)
 
+_For a limited time: [get a free bubble tea](https://hack.club/boba) after your site deploys_
+
 ## Part V: Hacking
 
 In this section, your challenge is to add additional features to your website to make it your own!
