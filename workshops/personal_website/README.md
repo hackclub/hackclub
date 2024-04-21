@@ -19,8 +19,8 @@ Here's the [live demo][final_live_demo] and [final code][final_code] (see `index
 
 This workshop should take around 45 minutes.
 
-[final_live_demo]: https://website--prophetorpheus.repl.co
-[final_code]: https://repl.it/@prophetorpheus/website
+[final_live_demo]: https://prophetorpheus.github.io
+[final_code]: https://github.com/prophetorpheus/prophetorpheus.github.io
 
 ## Part I: Setup
 
