@@ -26,7 +26,7 @@ Here on GitHub, there are many ways to contribute:
 
 - [Draw a 🦕 dino](https://hack.af/draw-dino) & submit a PR to [`hackclub/dinosaurs`](https://github.com/hackclub/dinosaurs).
 
-- Create a game in [🍃 Sprig](https://sprig.hackclub.com) (we'll ship you a [console](https://github.com/hackclub/sprig-hardware)!).
+- Create a game in [🍃 Sprig](https://sprig.hackclub.com) (we'll ship you a [console](https://github.com/hackclub/sprig/tree/main/hardware)!).
 
 - Multilingual? Help us [translate our site](https://github.com/hackclub/global/issues/15)!
 
