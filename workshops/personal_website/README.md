@@ -24,19 +24,33 @@ This workshop should take around 45 minutes.
 
 ## Part I: Setup
 
-### Getting ready to repl it on Repl.it
+### Getting ready to code it on Codespaces
 
-[Repl.it](https://repl.it) is an online code editor. It's similar to Google Docs, but has some important features that make it much better for typing code than a regular text editor.
+[Github Codespaces]([https://repl.it](https://github.com/features/codespaces)) is an online code editor. It's similar to Google Docs, but has some important features that make it much better for typing code than a regular text editor.
 
-To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). 
+To get started, make a Github account (or login if you have one) at [https://github.com/signup](https://github.com/signup).
 
-Click on the sign up prompt in the top right corner.
+Then, go to [https://github.com/new](https://github.com/new). 
 
-![Input fields for logging in](https://cloud-ae4zkoehw-hack-club-bot.vercel.app/0image.png)
+Enter a name and then click "Create repository"
 
-Your coding environment will spin up in just a few seconds!
+![Input fields for creating a repository](https://cloud-hgpbjbr0j-hack-club-bot.vercel.app/0screenshot12.png)
 
-![Text inside a code editor](https://cloud-gcyfpgb0u-hack-club-bot.vercel.app/0image.png)
+Then click "Create a codespace"
+
+![Repository view](https://cloud-aoyz7ok1s-hack-club-bot.vercel.app/0screenshot10.png)
+
+Then click "Create new codespace"
+
+![Create codespace](https://cloud-2db6a3th5-hack-club-bot.vercel.app/0screenshot11.png)
+
+Wait a bit for the codespace to load and then you should get this screen:
+
+![New codespace](https://cloud-5cq8kbjwm-hack-club-bot.vercel.app/0screenshot9.png)
+
+Congrats! You created a codespace
+
+If you are using firefox you may have to disable Enchanced Tracking Protection
 
 ## Part II: The HTML File
 
@@ -44,11 +58,11 @@ Your coding environment will spin up in just a few seconds!
 
 HTML stands for Hypertext Markup Language. Every website from the New York Times to Twitch uses HTML to display content on the web.
 
-You should have the `index.html` file open, and a bunch of text with `<` & `>` symbols. That's HTML!
+Create a `index.html` file by clicking the + button in the top and writing `index.html`
 
-![Text inside a code editor](https://cloud-mgklr52aw-hack-club-bot.vercel.app/0image.png)
+![Create index.html](https://cloud-6n7eek9u8-hack-club-bot.vercel.app/0screenshot_new_file.png)
 
-Repl.it gives us some code to start out with, but we're going to start from scratch. Go ahead and delete everything in the `index.html` file then **type** in the following code. **DO NOT COPY AND PASTE.**
+**Type**, in the `index.html` file, the following code. **DO NOT COPY AND PASTE.**
 
 ```html
 <!DOCTYPE html>
@@ -72,21 +86,37 @@ HTML works by storing information inside tags. `<html></html>` is an example of 
 
 ### 2) Previewing the Page
 
-Let's check out what our HTML file looks like in Live Preview! To do this, click on the **Run** button above the editor or press <kbd>Ctrl</kbd> + <kbd>Enter</kbd> (<kbd>Command</kbd> + <kbd>Enter</kbd> on Mac).
+Let's check out what our HTML file looks like in Live Preview!
 
-![A green button](https://cloud-d92zz5ssb-hack-club-bot.vercel.app/0image.png)
+To do this, click on the extensions button in the left pane
 
-From there, the live preview to the right of the editor should show what your website looks like. If you want to view it in a new tab, the URL above the website preview is the live URL for your website
+![Left pane](https://cloud-c430fguz6-hack-club-bot.vercel.app/0screenshot_extensions.png)
 
-![Image of a url for a website](https://cloud-chbm1r7jn-hack-club-bot.vercel.app/0image.png)
+Then, search for `Live Server` and click Install
 
-You can also open the external live preview by clicking the icon that looks like a box with an arrow. This will open live preview in a new tab at the aforementioned URL
+![Searching for extension](https://cloud-azcsz3vus-hack-club-bot.vercel.app/0screenshot2.png)
 
-![Launching the website in a new page](https://cloud-9logx0r6t-hack-club-bot.vercel.app/0v__deo_sem_t__tulo_____feito_com_o_clipchamp.gif)
+Then, go to the files again (Click on the first button in the left pane) and click `Go Live!` in the status bar
 
-As you can see, the page is blank. This is because we haven't added anything to the `body` section yet. Let's add some content!
+![Status bar](https://cloud-4utf7hlyb-hack-club-bot.vercel.app/0screenshot3.png)
+
+A new tab should open with your page
+
+### 2.1) (Optional) Preview the page in the editor
+
+Press `F1` and type `Simple Browser`
+
+![Command Palete](https://cloud-3553b97jw-hack-club-bot.vercel.app/0screenshot4.png)
+
+Press enter and input the link of the new tab that opened in the previous step and press enter again
+
+You should now have the preview alongside the editor!
+
+![Preview in editor](https://cloud-3s0lkfgf4-hack-club-bot.vercel.app/0screenshot5.png)
 
 ### 3) Adding Text to the Body
+
+As you can see, the page is blank. This is because we haven't added anything to the `body` section yet. Let's add some content!
 
 As mentioned before, all information is wrapped in tags. Tags are predefined in the language; think of them as the words in the language. For text, HTML provides a number of tags to store text. We'll be using two of the most basic ones: the h1 tag (`<h1>`) and the paragraph tag (`<p>`). The h1 tag is the first in a series of heading tags, with `h1` being the highest ranking, and `h6` being the lowest ranking. Just as with the other tags, you can place information within the these tags by surrounding your content with an opening and closing tag.
 
@@ -164,11 +194,9 @@ While HTML oversees the content and the way it's structured, CSS is how you'll s
 
 ### 1) Using CSS
 
-We already have an `style.css` in the file tree and this is called an external style sheet because the CSS file is external to the HTML file (i.e., the stylesheet is not inside the HTML file).
+Create a `style.css` file like you created `index.html`. This is called an external style sheet because the CSS file is external to the HTML file (i.e., the stylesheet is not inside the HTML file).
 
-![Three files in a list](https://cloud-fxxk8zq5c-hack-club-bot.vercel.app/0image.png)
-
-Although we have a CSS file, until we explicitly tell the HTML file to use the CSS file, it will not use it. We must explicitly link the CSS file in the HTML. We'll do this by typing the following into the head of `index.html` (between `<head>` and `</head>`), because the head is where we tell information about the page to the browser.
+Although we have a CSS file now, until we explicitly tell the HTML file to use the CSS file, it will not use it. We must explicitly link the CSS file in the HTML. We'll do this by typing the following into the head of `index.html` (between `<head>` and `</head>`), because the head is where we tell information about the page to the browser.
 
 ```html
 <link rel="stylesheet" href="style.css" />
@@ -249,49 +277,23 @@ Now be sure to **Run** to get the most recent version of your website. Ah, it is
 
 ## Part IV: Publishing
 
-Repl.it is great for editing and previewing your site, but it's not something you can easily share with others. To do that, you need to publish your site on Github– a free place for hosting your code.
+Right now only you can see your website. Let's fix that!
 
-There are going to be [first time steps](#first-time-steps) to setup GitHub right now, [publishing changes](#publishing-changes) steps for future changes you make.
+Click on the the "Git" tab on the left pane
 
-### First time steps
+![Left pane](https://cloud-a2t1lug9o-hack-club-bot.vercel.app/0screenshot_git.png)
 
-**Link your accounts**
+Write a cool commit message at the top and then click `Commit`
 
-Publishing your first time requires creating and linking accounts. You'll need to [create a Github account](https://github.com/join) if you don't already have one.
+![Git panel](https://cloud-nge9xhuux-hack-club-bot.vercel.app/0screenshot6.png)
 
-Next, add GitHub to your Repl.it account by going to [Account settings](https://replit.com/account#connected-services) & clicking "GitHub Connect"
+Then, click Always on the pop-up
 
-![Connect replit to github](https://cloud-8iuysbpe7-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_15.04.27.png)
+![pop-up](https://cloud-8gllz91ga-hack-club-bot.vercel.app/0screenshot7.png)
 
-**Create a repo**
+Now, we need to go to our GitHub account and click on the repo we created at the start of this workshop. Then, follow the instructions on the image:
 
-Now you'll go into the "Git" tab on replit's editor
-
-![](https://cloud-74ae7tec1-hack-club-bot.vercel.app/1screenshot_2024-04-18_at_14.01.35.png)
-
-Click "Initialize Git Repository"
-
-![](https://cloud-74ae7tec1-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_14.01.41.png)
-
-**Link your repo to GitHub**
-
-Now we have a "repo" on replit, but we need to link it to something on GitHub!
-
-Click "Settings View"
-
-![](https://cloud-m4wojsqir-hack-club-bot.vercel.app/1screenshot_2024-04-18_at_15.19.15.png)
-
-Then fill out the details for a new repo on GitHub
-
-![](https://cloud-m4wojsqir-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_15.19.52.png)
-
-Click "Create Repository on GitHub"
-
-Quickly [Publish your changes](#publishing-changes) and then we can configure your site link.
-
-After that, we need to go to our GitHub account and click on the repo we just created.
-
-![](https://cloud-mqt6brgrz-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_15.55.28.png)
+![Github settings](https://cloud-mqt6brgrz-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_15.55.28.png)
 
 _Change deployment branch to "main"_
 
@@ -303,11 +305,9 @@ Now everything is wired up! You can publish your site now, or any time in the fu
 
 Whenever you drop a new feature or fix, you'll have some changed lines in your code.
 
-![](https://cloud-6t6udfst5-hack-club-bot.vercel.app/1screenshot_2024-04-18_at_15.24.52.png)
-
 Go to the "Git" tab, fill a "Commit message", and click "Commit Changes"
 
-![](https://cloud-6t6udfst5-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_15.25.01.png)
+![Git tab](https://cloud-a7ulcfg3e-hack-club-bot.vercel.app/0screenshot_update.png)
 
 And just like that your website is now published at the domain `USERNAME.github.io/REPONAME` on the internet for all your friends to see!
 
