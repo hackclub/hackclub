@@ -26,7 +26,7 @@ This workshop should take around 45 minutes.
 
 ### Getting ready to code it on Codespaces
 
-[Github Codespaces]([https://repl.it](https://github.com/features/codespaces)) is an online code editor. It's similar to Google Docs, but has some important features that make it much better for typing code than a regular text editor.
+[Github Codespaces](https://github.com/features/codespaces) is an online code editor. It's similar to Google Docs, but has some important features that make it much better for typing code than a regular text editor.
 
 To get started, make a Github account (or login if you have one) at [https://github.com/signup](https://github.com/signup).
 
