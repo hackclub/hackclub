@@ -34,7 +34,7 @@ Then, go to [https://github.com/new](https://github.com/new).
 
 Enter a name and then click "Create repository"
 
-![Input fields for creating a repository](https://cloud-hgpbjbr0j-hack-club-bot.vercel.app/0screenshot12.png)
+![Input fields for creating a repository](https://cloud-1seqqsbpy-hack-club-bot.vercel.app/2screenshot12.png)
 
 Then click "Create a codespace"
 
@@ -44,9 +44,9 @@ Then click "Create new codespace"
 
 ![Create codespace](https://cloud-2db6a3th5-hack-club-bot.vercel.app/0screenshot11.png)
 
-Wait a bit for the codespace to load and then you should get this screen:
+Wait a bit for the codespace to load and then you should see this:
 
-![New codespace](https://cloud-5cq8kbjwm-hack-club-bot.vercel.app/0screenshot9.png)
+![New codespace](https://cloud-1seqqsbpy-hack-club-bot.vercel.app/1screenshot9.png)
 
 Congrats! You created a codespace
 
@@ -94,13 +94,15 @@ To do this, click on the extensions button in the left pane
 
 Then, search for `Live Server` and click Install
 
-![Searching for extension](https://cloud-azcsz3vus-hack-club-bot.vercel.app/0screenshot2.png)
+![Searching for extension](https://cloud-1seqqsbpy-hack-club-bot.vercel.app/0screenshot2.png)
 
 Then, go to the files again (Click on the first button in the left pane) and click `Go Live!` in the status bar
 
 ![Status bar](https://cloud-4utf7hlyb-hack-club-bot.vercel.app/0screenshot3.png)
 
-A new tab should open with your page
+A new tab should open with your page!
+
+Every time you save (`Ctrl+S`) your page the live preview will update.
 
 ### 2.1) (Optional) Preview the page in the editor
 
@@ -147,7 +149,7 @@ If your description was a few paragraphs, or had line breaks, you may have notic
 </html>
 ```
 
-Run your `index.html` and refresh the Live Preview. Yay!
+Save your `index.html` and look at the Live Preview. Yay!
 
 ### 4) Adding Images to the Body
 
@@ -182,7 +184,7 @@ Go ahead and add this into your `index.html` now. I put my picture before my hea
 
 ![dinosaur reading a book and text describing it below](https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/2no_css.png)
 
-Remember, you need to **Run** your program every time you want to see your updated website.
+Remember, you need to **save** your program every time you want to see your updated website.
 
 Though our website has some text on it and exists on the _internet_, we're not done. Our webpage is fully functional, but needs a little help in the look-and-feel department. Fret not. CSS will allow you to manipulate the styling of your page in all your needs.
 
@@ -271,7 +273,7 @@ body {
 }
 ```
 
-Now be sure to **Run** to get the most recent version of your website. Ah, it is truly beautiful to behold.
+Now be sure to **save** to get the most recent version of your website. Ah, it is truly beautiful to behold.
 
 ![Children celebrating](https://cloud-4zpw37atj-hack-club-bot.vercel.app/0celebrate_harry_potter.gif)
 
@@ -305,7 +307,7 @@ Now everything is wired up! You can publish your site now, or any time in the fu
 
 Whenever you drop a new feature or fix, you'll have some changed lines in your code.
 
-Go to the "Git" tab, fill a "Commit message", and click "Commit Changes"
+Go to the "Git" tab, fill a "Commit message", and click "Commit"
 
 ![Git tab](https://cloud-a7ulcfg3e-hack-club-bot.vercel.app/0screenshot_update.png)
 
