@@ -9,7 +9,7 @@ Ever wanted a todo list that's simple, easy, and integrated into your favorite m
 
 Today, we'll be creating a Slack bot that maintains a todo list using [Bolt.js](https://slack.dev/bolt-js/) and [Node.js](https://nodejs.org/)
 
-Here's the [final code](https://repl.it/@KhushrajRathod/TodoSlackApp). A live demo is available as "@Todo Bot" on the [Hack Club Slack](https://hackclub.com/slack/).
+Here's the [final code](https://github.com/khrj/hackclub-workshops/tree/main/showcase/TodoSlackApp). A live demo is available as "@Todo Bot" on the [Hack Club Slack](https://hackclub.com/slack/).
 
 If you get stuck anywhere in this workshop, feel free to ask me questions! I'm @KhushrajRathod.
 
@@ -288,10 +288,10 @@ At the moment, your bot will go offline after an hour due to your repl going to 
 
 Now that you've managed to build a simple Todo list bot, build upon it and MAKE IT EXTREMELY USEFUL! This is for you to hack on, but here's some inspiration:
 
-| Repl.it code  | Live Demo on the Hack Club Slack | Description |
+| Code  | Live Demo on the Hack Club Slack | Description |
 | ------------- | -------------------------------- | ----------- |
-| [Here](https://repl.it/@KhushrajRathod/TodoSlackApp-Markable) | "@Todo List Plus" | This todo list bot let's you mark items as done (and un-mark them) without removing them from the todo list by striking through them. |
-| [Here](https://repl.it/@KhushrajRathod/TodoSlackApp-Random) | "@Todo List Random" | This todo list bot simply doesn't like listening to it's users and keeps replying with random messages. |
-| [Here](https://TodoSlackApp-Community.khushrajrathod.repl.co) | "@Todo List Community" | This todo list bot maintains a generic todo list that everyone can add to and remove from |
+| [Here](https://github.com/khrj/hackclub-workshops/tree/main/showcase/TodoSlackApp-Markable) | "@Todo List Plus" | This todo list bot let's you mark items as done (and un-mark them) without removing them from the todo list by striking through them. |
+| [Here](https://github.com/khrj/hackclub-workshops/tree/main/showcase/TodoSlackApp-Random) | "@Todo List Random" | This todo list bot simply doesn't like listening to it's users and keeps replying with random messages. |
+| [Here](https://github.com/khrj/hackclub-workshops/tree/main/showcase/TodoSlackApp-Community) | "@Todo List Community" | This todo list bot maintains a generic todo list that everyone can add to and remove from |
 
 Did you make something awesome? Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6) in the Hack Club Slack and tag me with [@KhushrajRathod](https://hackclub.slack.com/team/U01C21G88QM)!
