@@ -11,7 +11,7 @@ Love [Kahoot](https://kahoot.com/)? I do! Today we're making a Kahoot clone—Ku
 - [Socket.io](https://socket.io/), a [WebSocket protocol](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) library which lets our webpage maintain a persistent connection with the server, 
 - and [Node.js](https://nodejs.org/).
 
-Here's the [final code](https://repl.it/@KhushrajRathod/Kuizzy#app.js) and [live demo](https://kuizzy.khushrajrathod.com).
+Here's the [final code](https://github.com/khrj/hackclub-workshops/blob/main/showcase/Kuizzy/app.js) and [live demo](https://kuizzy.khushrajrathod.com).
 
 If you get stuck anywhere in this workshop, I'm @KhushrajRathod -- feel free to ping me.
 
@@ -50,7 +50,7 @@ Follow these steps:
 ## Part 2: The Starter Code
 
 We'll be focusing on JavaScript for this workshop, so I've already done the HTML and CSS for you.
-To get started, go to this [Starter Code](https://repl.it/@KhushrajRathod/Kuizzy-starter) and fork it
+To get started, go to this [Starter Code](https://github.com/khrj/hackclub-workshops/tree/main/showcase/Kuizzy-starter) and fork it
 
 If you take a look at the starter code, you'll see the following:
 
@@ -647,9 +647,9 @@ You should have a fully functional Kahoot clone, Kuizzy, ready!
 
 Now that you've managed to build a simple Kahoot clone, add some more functionality to make it EXTREMELY USEFUL. This is for you to hack on, but here are ideas (ascending difficulty -- I've done 3 for you to be used as reference).
 
-01. [Add custom waiting messages ("Were you tooooooo fast?")](https://repl.it/@KhushrajRathod/Kuizzy-custom-messages)
-02. [Give points based on time](https://repl.it/@KhushrajRathod/Kuizzy-time-points)
-03. [Add an option to skip questions](https://repl.it/@KhushrajRathod/Kuizzy-skippable-questions)
+01. [Add custom waiting messages ("Were you tooooooo fast?")](https://github.com/khrj/hackclub-workshops/tree/main/showcase/Kuizzy-custom-messages)
+02. [Give points based on time](https://github.com/khrj/hackclub-workshops/tree/main/showcase/Kuizzy-time-points)
+03. [Add an option to skip questions](https://github.com/khrj/hackclub-workshops/tree/main/showcase/Kuizzy-skippable-questions)
 04. Add a way for the host to see the number of answers while the question is in progress
 05. Add music with the HTML5 AudioElement
 06. Add options for True/false questions
