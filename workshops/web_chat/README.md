@@ -12,7 +12,7 @@ Today, most of us use tons of messaging apps. Whether it's Slack, Whatsapp, Tele
 What if we create our *own chat*?!  
 Today, we'll be creating a web chat using [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) and [Deno](https://deno.land/) (If you've previously used Node.js, check out [this talk](https://www.youtube.com/watch?v=M3BM9TB-8yA) on Deno)
 
-Here's the [final code](https://repl.it/@KhushrajRathod/DenoWebsocketChat) and [live demo](https://DenoWebsocketChat.khushrajrathod.repl.co).
+Here's the [final code](https://github.com/khrj/hackclub-workshops/tree/main/showcase/DenoWebsocketChat).
 
 If you get stuck anywhere in this workshop, feel free to ask me questions! I'm @KhushrajRathod on the [Hack Club Slack](https://hackclub.com/slack/).
 
@@ -685,15 +685,15 @@ Except... Let's actually test the application. Send the URL from above to some f
 
 We've managed to build a basic web chat, now let's build upon it and MAKE IT EXTREMELY USEFUL! This is for you to hack on, but here's some inspiration:
 
-- [Web chat with server response automation](https://repl.it/@KhushrajRathod/DenoWebsocketChat-AutomatedResponses) In this web chat, entering some messages will trigger responses from the server - Try "Hello", "Hi", "Bye", or "Creeper"
+- [Web chat with server response automation](https://github.com/khrj/hackclub-workshops/tree/main/showcase/DenoWebsocketChat-AutomatedResponses) In this web chat, entering some messages will trigger responses from the server - Try "Hello", "Hi", "Bye", or "Creeper"
 
-- [Web chat but clients spam randomly](https://repl.it/@KhushrajRathod/DenoWebsocketChat-Spam) In this web chat...There's spam. Once you join, you automatically start spamming and have no control!
+- [Web chat but clients spam randomly](https://github.com/khrj/hackclub-workshops/tree/main/showcase/DenoWebsocketChat-Spam) In this web chat...There's spam. Once you join, you automatically start spamming and have no control!
 
-- [Web chat with authentication](https://repl.it/@KhushrajRathod/DenoWebsocketChat-Auth) People using others' names to send messages? This web chat implements cookie-based authentication and allows you to use only your ID to sign in
+- [Web chat with authentication](https://github.com/khrj/hackclub-workshops/tree/main/showcase/DenoWebsocketChat-Auth) People using others' names to send messages? This web chat implements cookie-based authentication and allows you to use only your ID to sign in
 
 ## Cool Web Chats made by Hack clubbers
 
-- [@faisalsayed10](https://repl.it/@KhushrajRathod/Fayd-Webchat)
-- [@aaryanporwal](https://repl.it/@KhushrajRathod/Aaryan-Webchat)
+- [@faisalsayed10](https://github.com/khrj/hackclub-workshops/tree/main/showcase/DenoWebsocketChat-Fayd-Demo)
+- [@aaryanporwal](https://github.com/khrj/hackclub-workshops/tree/main/showcase/DenoWebsocketChat-Aaryan-Demo)
 
 Did you make something awesome? Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6) in the Hack Club Slack and tag me with [@KhushrajRathod](https://hackclub.slack.com/team/U01C21G88QM)!
