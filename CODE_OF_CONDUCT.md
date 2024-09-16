@@ -85,7 +85,7 @@ Please understand that we will not restrict your ability to contact the [Code of
 
 ## Working Group
 
-The Working Group is responsible for handling conduct-related issues. Their mission is to de-escalate conflicts and try to resolve issues to the satisfaction of all parties. For all [projects related to and/or maintained by Hack Club HQ](#where-does-the-code-of-conduct-apply), the Working Group is made up of the [Hack Club staff team](https://hackclub.com/team/) and [Community team](https://app.slack.com/client/T0266FRGM/C01D7AHKMPF). The specific team member(s) handling each violation depend on the location and nature of the issue.
+The Working Group is responsible for handling conduct-related issues. Their mission is to de-escalate conflicts and try to resolve issues to the satisfaction of all parties. For all [projects related to and/or maintained by Hack Club HQ](#where-does-the-code-of-conduct-apply), the Working Group is made up of the [Hack Club staff team](https://hackclub.com/team/) and [Firehouse team](https://app.slack.com/client/T0266FRGM/C01D7AHKMPF). The specific team member(s) handling each violation depend on the location and nature of the issue.
 
 ## Reporting Issues
 
