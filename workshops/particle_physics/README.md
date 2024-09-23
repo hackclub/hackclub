@@ -31,7 +31,7 @@ To get started, make a Github account (or login if you have one) at [https://git
 
 First you need to setup your project. I created a basic p5.js [boilerplate](https://en.wikipedia.org/wiki/Boilerplate_code) that you can use to easily start coding.
 
-1. Go to [https://repl.it/@SquarePear/p5-boilerplate](https://github.com/Luna5379/p5-boilerplate/fork)
+1. Go to [https://github.com/Luna5379/p5-boilerplate/fork](https://github.com/Luna5379/p5-boilerplate/fork)
 2. Click "Create fork" to make a copy for you to edit
 3. Then, click the plus icon in the top right corner of the screen and select 'New codespace'.
 4. Select the repository called 'p5-boilerplate', change any other settings you would like, and click 'Create codespace'.
