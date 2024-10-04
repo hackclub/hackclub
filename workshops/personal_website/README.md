@@ -32,25 +32,23 @@ To get started, make a Github account (or login if you have one) at [https://git
 
 Then, go to [https://github.com/new](https://github.com/new). 
 
-Enter a name and then click "Create repository"
+Enter a name, check the box that says "Add a README file", and then click "Create repository"
 
-![Input fields for creating a repository](https://cloud-1seqqsbpy-hack-club-bot.vercel.app/2screenshot12.png)
+![Input fields for creating a repository](https://cloud-l7uo7n5dd-hack-club-bot.vercel.app/0screenshot_2024-10-04_at_08-58-54_new_repository.png)
 
-Then click "Create a codespace"
+Next, go to [https://github.com/codespaces/new](https://github.com/codespaces/new).
 
-![Repository view](https://cloud-aoyz7ok1s-hack-club-bot.vercel.app/0screenshot10.png)
+![Create codespace](https://cloud-pp1naqu1h-hack-club-bot.vercel.app/0image.png)
 
-Then click "Create new codespace"
-
-![Create codespace](https://cloud-2db6a3th5-hack-club-bot.vercel.app/0screenshot11.png)
+Select the repository that you just created, and then then click "Create codespace"
 
 Wait a bit for the codespace to load and then you should see this:
 
 ![New codespace](https://cloud-1seqqsbpy-hack-club-bot.vercel.app/1screenshot9.png)
 
-Congrats! You created a codespace
+Congrats! You created a codespace. This is where you will write the code for your website.
 
-If you are using firefox you may have to disable Enchanced Tracking Protection
+If you are using Firefox, you may have to disable Enchanced Tracking Protection.
 
 ## Part II: The HTML File
 
