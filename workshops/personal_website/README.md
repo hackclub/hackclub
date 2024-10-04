@@ -291,7 +291,7 @@ Then, click Always on the pop-up
 
 ![pop-up](https://cloud-8gllz91ga-hack-club-bot.vercel.app/0screenshot7.png)
 
-Now, we need to go to our GitHub account and click on the repo we created at the start of this workshop. Then, follow the instructions on the image:
+Now, we need to go to our GitHub account and open the repo we created at the start of this workshop. Once you have it open, follow the instructions in the below image:
 
 ![Github settings](https://cloud-mqt6brgrz-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_15.55.28.png)
 
@@ -303,13 +303,13 @@ Now everything is wired up! You can publish your site now, or any time in the fu
 
 **Commit your changes**
 
-Whenever you drop a new feature or fix, you'll have some changed lines in your code.
+Whenever you add a new feature or fix, you'll have to commit the lines of code that you changed.
 
-Go to the "Git" tab, fill a "Commit message", and click "Commit"
+Go to the "Git" tab on the left of your codespace, fill out a "Commit message", and click "Commit"
 
 ![Git tab](https://cloud-a7ulcfg3e-hack-club-bot.vercel.app/0screenshot_update.png)
 
-And just like that your website is now published at the domain `USERNAME.github.io/REPONAME` on the internet for all your friends to see!
+And just like that, your new changes are now published at the URL `USERNAME.github.io/REPONAME` on the internet for all your friends to see!
 
 _Give it 2 minutes to deploy your changes the first time!_
 
