@@ -358,6 +358,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 These are some additional resources that you can use to make your site even better!
 
 - [HTML Dog](http://www.htmldog.com/guides/html/beginner/): _Very beginner focused. If you're not sure which one to choose, pick this one._
+  - If you also want to learn more about how to style your website with CSS, check out their [CSS tutorial](https://www.htmldog.com/guides/css/beginner/).
 - [Free Code Camp](http://www.freecodecamp.com/map): _Interactive and very methodical._
 - [Treehouse](https://teamtreehouse.com/library/html/introduction/): _Their videos are extremely comprehensive and thorough._
 
