@@ -114,11 +114,11 @@ Ejecuta tu `index.html` y actualiza la vista previa en vivo. ¡Yay!
 
 Primero, busca una imagen que te gustaría incluir en tu página. Puedes encontrar algo en Google Images, Facebook o Imgur. Necesitaremos la URL de origen de la imagen, así que da clic derecho y selecciona "Copiar dirección de imagen".
 
-Las imágenes se incluyen en HTML a través de la etiqueta de imagen, o `<img>`. La etiqueta de la imagen tiene un atributo llamado `src`, que contendrá la _fuente_ de la URL de la imagen que deseas mostrar. Por ejemplo, si tuviera que agregar esta imagen del Profeta Orfeo, daría clic derecho y obtendría la URL de origen, que en este caso es https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png para ponerla en una etiqueta de imagen de esta forma:
+Las imágenes se incluyen en HTML a través de la etiqueta de imagen, o `<img>`. La etiqueta de la imagen tiene un atributo llamado `src`, que contendrá la _fuente_ de la URL de la imagen que deseas mostrar. Por ejemplo, si tuviera que agregar esta imagen del Profeta Orfeo, daría clic derecho y obtendría la URL de origen, que en este caso es https://github.com/hackclub/dinosaurs/raw/main/smart_dinosaur_docs.png para ponerla en una etiqueta de imagen de esta forma:
 
 ```html
 <img
-  src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"
+  src="https://github.com/hackclub/dinosaurs/raw/main/smart_dinosaur_docs.png"
 />
 ```
 
@@ -132,7 +132,7 @@ Continúa y agrega esto en tu `index.html` . Yo puse mi imagen antes de mi encab
   <head> </head>
   <body>
     <img
-      src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"
+      src="https://github.com/hackclub/dinosaurs/raw/main/smart_dinosaur_docs.png"
     />
     <h1>Prophet Orpheus</h1>
     <p>Coder Dino</p>
@@ -178,7 +178,7 @@ Nuestro archivo HTML ahora se ve así:
   </head>
   <body>
     <img
-      src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"
+      src="https://github.com/hackclub/dinosaurs/raw/main/smart_dinosaur_docs.png"
     />
     <h1>Prophet Orpheus</h1>
     <p>Coder Dino</p>

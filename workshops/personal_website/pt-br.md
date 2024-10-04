@@ -119,11 +119,11 @@ Execute seu `index.html` e veja a visualização ao vivo. Uhuul!
 
 Primeiro, encontre uma imagem que você gostaria de incluir em sua página. Você pode encontrar algo no Google Imagens, Facebook, ou Imgur. Vamos precisar da URL de origem da imagem, então clique com o botão direito do mouse e selecione "Copiar endereço da imagem".
 
-As imagens são incluídas no HTML por meio da tag de imagem ou `<img>`. A tag de imagem possui um atributo chamado `src`, que conterá a URL _source_ da imagem que você deseja exibir. Por exemplo, se eu adicionasse esta foto do Profeta Orfeu, clicaria com o botão direito e obteria o URL de origem, que neste caso é https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png , e coloque-o em uma tag de imagem desse jeito:
+As imagens são incluídas no HTML por meio da tag de imagem ou `<img>`. A tag de imagem possui um atributo chamado `src`, que conterá a URL _source_ da imagem que você deseja exibir. Por exemplo, se eu adicionasse esta foto do Profeta Orfeu, clicaria com o botão direito e obteria o URL de origem, que neste caso é https://github.com/hackclub/dinosaurs/raw/main/smart_dinosaur_docs.png , e coloque-o em uma tag de imagem desse jeito:
 
 ```html
 <img
-  src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"
+  src="https://github.com/hackclub/dinosaurs/raw/main/smart_dinosaur_docs.png"
 />
 ```
 
@@ -137,7 +137,7 @@ Vá em frente e adicione isso ao seu `index.html` agora. Coloquei minha foto ant
   <head> </head>
   <body>
     <img
-      src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"
+      src="https://github.com/hackclub/dinosaurs/raw/main/smart_dinosaur_docs.png"
     />
     <h1>Profeta Orfeu</h1>
     <p>Dino programadora</p>
@@ -181,7 +181,7 @@ Nosso arquivo HTML agora parecerá com isso:
   </head>
   <body>
     <img
-      src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"
+      src="https://github.com/hackclub/dinosaurs/raw/main/smart_dinosaur_docs.png"
     />
     <h1>Profeta Orfeu</h1>
     <p>Dino programadora</p>

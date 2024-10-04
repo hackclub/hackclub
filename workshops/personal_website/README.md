@@ -32,25 +32,23 @@ To get started, make a Github account (or login if you have one) at [https://git
 
 Then, go to [https://github.com/new](https://github.com/new). 
 
-Enter a name and then click "Create repository"
+Enter a name, check the box that says "Add a README file", and then click "Create repository"
 
-![Input fields for creating a repository](https://cloud-1seqqsbpy-hack-club-bot.vercel.app/2screenshot12.png)
+![Input fields for creating a repository](https://cloud-l7uo7n5dd-hack-club-bot.vercel.app/0screenshot_2024-10-04_at_08-58-54_new_repository.png)
 
-Then click "Create a codespace"
+Next, go to [https://github.com/codespaces/new](https://github.com/codespaces/new).
 
-![Repository view](https://cloud-aoyz7ok1s-hack-club-bot.vercel.app/0screenshot10.png)
+![Create codespace](https://cloud-pp1naqu1h-hack-club-bot.vercel.app/0image.png)
 
-Then click "Create new codespace"
-
-![Create codespace](https://cloud-2db6a3th5-hack-club-bot.vercel.app/0screenshot11.png)
+Select the repository that you just created, and then then click "Create codespace"
 
 Wait a bit for the codespace to load and then you should see this:
 
 ![New codespace](https://cloud-1seqqsbpy-hack-club-bot.vercel.app/1screenshot9.png)
 
-Congrats! You created a codespace
+Congrats! You created a codespace. This is where you will write the code for your website.
 
-If you are using firefox you may have to disable Enchanced Tracking Protection
+If you are using Firefox, you may have to disable Enchanced Tracking Protection.
 
 ## Part II: The HTML File
 
@@ -155,11 +153,11 @@ Save your `index.html` and look at the Live Preview. Yay!
 
 First, find an image you would like to include in your page. You can find something on Google Images, Facebook, or Imgur. We'll need the source URL of the image, so right click and select "Copy Image Address".
 
-Images are included in HTML via the image tag, or `<img>`. The image tag has an attribute called `src`, which will hold the _source_ URL of the image you want to display. As an example, if I were to add this picture of Prophet Orpheus, I would right click it and get the source URL, which in this case is https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png, and put it in an image tag like so:
+Images are included in HTML via the image tag, or `<img>`. The image tag has an attribute called `src`, which will hold the _source_ URL of the image you want to display. As an example, if I were to add this picture of Prophet Orpheus, I would right click it and get the source URL, which in this case is https://github.com/hackclub/dinosaurs/raw/main/smart_dinosaur_docs.png, and put it in an image tag like so:
 
 ```html
 <img
-  src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"
+  src="https://github.com/hackclub/dinosaurs/raw/main/smart_dinosaur_docs.png"
 />
 ```
 
@@ -173,7 +171,7 @@ Go ahead and add this into your `index.html` now. I put my picture before my hea
   <head> </head>
   <body>
     <img
-      src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"
+      src="https://github.com/hackclub/dinosaurs/raw/main/smart_dinosaur_docs.png"
     />
     <h1>Prophet Orpheus</h1>
     <p>Coder Dino</p>
@@ -216,7 +214,7 @@ Our HTML file now looks like so:
   </head>
   <body>
     <img
-      src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"
+      src="https://github.com/hackclub/dinosaurs/raw/main/smart_dinosaur_docs.png"
     />
     <h1>Prophet Orpheus</h1>
     <p>Coder Dino</p>
@@ -293,7 +291,7 @@ Then, click Always on the pop-up
 
 ![pop-up](https://cloud-8gllz91ga-hack-club-bot.vercel.app/0screenshot7.png)
 
-Now, we need to go to our GitHub account and click on the repo we created at the start of this workshop. Then, follow the instructions on the image:
+Now, we need to go to our GitHub account and open the repo we created at the start of this workshop. Once you have it open, follow the instructions in the below image:
 
 ![Github settings](https://cloud-mqt6brgrz-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_15.55.28.png)
 
@@ -305,13 +303,13 @@ Now everything is wired up! You can publish your site now, or any time in the fu
 
 **Commit your changes**
 
-Whenever you drop a new feature or fix, you'll have some changed lines in your code.
+Whenever you add a new feature or fix, you'll have to commit the lines of code that you changed.
 
-Go to the "Git" tab, fill a "Commit message", and click "Commit"
+Go to the "Git" tab on the left of your codespace, fill out a "Commit message", and click "Commit"
 
 ![Git tab](https://cloud-a7ulcfg3e-hack-club-bot.vercel.app/0screenshot_update.png)
 
-And just like that your website is now published at the domain `USERNAME.github.io/REPONAME` on the internet for all your friends to see!
+And just like that, your new changes are now published at the URL `USERNAME.github.io/REPONAME` on the internet for all your friends to see!
 
 _Give it 2 minutes to deploy your changes the first time!_
 
@@ -360,6 +358,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 These are some additional resources that you can use to make your site even better!
 
 - [HTML Dog](http://www.htmldog.com/guides/html/beginner/): _Very beginner focused. If you're not sure which one to choose, pick this one._
+  - If you also want to learn more about how to style your website with CSS, check out their [CSS tutorial](https://www.htmldog.com/guides/css/beginner/).
 - [Free Code Camp](http://www.freecodecamp.com/map): _Interactive and very methodical._
 - [Treehouse](https://teamtreehouse.com/library/html/introduction/): _Their videos are extremely comprehensive and thorough._
 
