@@ -32,9 +32,9 @@ To get started, make a Github account (or login if you have one) at [https://git
 
 Then, go to [https://github.com/new](https://github.com/new). 
 
-Enter a name, check the box that says "Add a README file", and then click "Create repository"
+Enter a name, select "MIT License" underneath "Choose a license", and then click "Create repository"
 
-![Input fields for creating a repository](https://cloud-l7uo7n5dd-hack-club-bot.vercel.app/0screenshot_2024-10-04_at_08-58-54_new_repository.png)
+![Input fields for creating a repository](https://cloud-jyzgt07rh-hack-club-bot.vercel.app/0image.png)
 
 Next, go to [https://github.com/codespaces/new](https://github.com/codespaces/new).
 
