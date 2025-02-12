@@ -1,8 +1,14 @@
+---
+name: 'creating installation media'
+description: 'Creating a bootable USB stick with installation media creation software'
+author: '@gdsimpson3'
+img: 'cdn-link-to-image-summarizing-your-workshop'
+---
 # Creating a bootable USB stick with installation media creation software.
 
 This article will cover the process of creating installation media with three different installation media creation Softwares (Rufus, Make startup disk and BalenaEtcher), once you have finished this article it will enable you to boot from a USB stick with your the OS that you wish to install.
 
-![Ubuntu](https://otnews.vercel.app/articles/creating-a-bootable-usb-stick-with-installation-media-creation-software/img1.webp)
+![Ubuntu](https://cdn.hackclubber.dev/slackcdn/7b3b4b96bbedb75f471704f1735dc807.webp)
 
 There are other ways to do this but in this article I cannot cover them all since in that case the article will be quite long.
 
@@ -10,7 +16,7 @@ There are other ways to do this but in this article I cannot cover them all sinc
 
 > This installation media software is operational only on Windows OS
 
-![Rufus](https://otnews.vercel.app/articles/creating-a-bootable-usb-stick-with-installation-media-creation-software/img2.webp)
+![Rufus](https://cdn.hackclubber.dev/slackcdn/15b848d73bba345092c84f070974b849.webp)
 
 > Rufus is supported on Windows operating systems 8+
 
@@ -18,7 +24,7 @@ There are other ways to do this but in this article I cannot cover them all sinc
 
 1.2: Download and run the appropriate EXE depending on your CPU type (Arm = ARM64/intel = x64 or x86)
 
-![Rufus Download](https://otnews.vercel.app/articles/creating-a-bootable-usb-stick-with-installation-media-creation-software/img3.webp)
+![Rufus Download](https://cdn.hack.pet/slackcdn/8a4d824e03f2dc0faae592068cbd9f48.webp)
 
 > Note: try not to click on any ads that say “download” or “click here”
 
@@ -26,7 +32,7 @@ There are other ways to do this but in this article I cannot cover them all sinc
 
 
 
-![Rufus](https://otnews.vercel.app/articles/creating-a-bootable-usb-stick-with-installation-media-creation-software/img4.webp)
+![Rufus](https://cdn.hack.pet/slackcdn/049baf3e919876566d0481463b649781.webp)
 
 1.4: Now I will explain what each of the inputs are;
 
@@ -54,13 +60,13 @@ There are other ways to do this but in this article I cannot cover them all sinc
 
 > This program is only operational on Ubuntu (other linux distro’s/older ubuntu versions will have their own version)
 
-![Make Startup Disk](https://otnews.vercel.app/articles/creating-a-bootable-usb-stick-with-installation-media-creation-software/img5.webp)
+![Make Startup Disk](https://cdn.hack.pet/slackcdn/89c0e0711683b62c13a180b0cc01f0c6.webp)
 
 2.1: In most cases this will be pre-installed on your operating system,
 
 2.2: Once you open it then you should see this menu
 
-![MSD Screen](https://otnews.vercel.app/articles/creating-a-bootable-usb-stick-with-installation-media-creation-software/img6.webp)
+![MSD Screen](https://cdn.hack.pet/slackcdn/d9b11517cbd39a40100f03b65a007060.webp)
 
 2.3: As you can see this is much more straight forward compared to Rufus, “Source disc image” is the ISO of the operating system that you wish to install, and “disk to use” is your USB stick,
 
@@ -82,7 +88,7 @@ There are other ways to do this but in this article I cannot cover them all sinc
 
 3.4: you should see this UI on opening of the program
 
-![BalenaEtcher](https://otnews.vercel.app/articles/creating-a-bootable-usb-stick-with-installation-media-creation-software/img1.webp)
+![BalenaEtcher](https://cdn.hack.pet/slackcdn/e21de42ecba8fde1d500db1a05e5f64d.webp)
 
 3.4: Once again this is pretty straightforward compared to Rufus,
 
