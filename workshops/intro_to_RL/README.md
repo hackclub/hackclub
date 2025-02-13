@@ -1,8 +1,8 @@
 ---
-name: Intro to Reinforcement Learning with Gym
+name: Solving Cartpole with Reinforcement Learning
 description: Learn a new type of AI and Q-learning
-author: '@Ben182911'
-img: https://www.gymlibrary.dev/_images/cart_pole.gif
+author: '@slowpoke111'
+img: https://www.gymlibrary.dev/_images/cart_pole.gif](https://cdn.hack.pet/slackcdn/9508828c7db76783c5d9ab14ee26db5c.gif
 ---
 
 > This assumes you have completed the [Handwriting Recognition Workshop](https://workshops.hackclub.com/digit_recognition/) and are familiar with Python
