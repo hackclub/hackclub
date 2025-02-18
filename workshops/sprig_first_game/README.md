@@ -9,7 +9,7 @@ Let's make our first game in Sprig!
 
 [Sprig](https://sprig.hackclub.com/) is a tool developed by Hack Club to help people quickly get started making interesting tile games. It's a tiny game engine embedded in a web-based editor with integrated art and music tools. If you build a game in Sprig and share it in the community gallery you can get a [Sprig Console](https://sprig.hackclub.com)!
 
-We're going to build a [Sokoban game](https://www.mathsisfun.com/games/sokoban.html). To get started with Sprig, simply open [the Sprig editor](https://editor.sprig.hackclub.com).
+We're going to build a [Sokoban game](https://www.mathsisfun.com/games/sokoban.html). To get started with Sprig, simply open [the Sprig editor](https://sprig.hackclub.com/).
 
 [![Sprig's editor](https://cloud-ouq5g8q82-hack-club-bot.vercel.app/0image.png)](https://sprig.hackclub.com)
 
@@ -344,9 +344,9 @@ Make the game your own! You can try:
 
 For inspiration, check out some of the cool games other Hack Clubbers have made!
 
--   [Sokoban](https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/sokoban.js)
--   [Penguin Slide](https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/penguin_slide.js)
--   [Nomis](https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/nomis.js)
+-   [Sokoban](https://sprig.hackclub.com/gallery/sokoban)
+-   [Penguin Slide](https://sprig.hackclub.com/gallery/penguin_slide)
+-   [Nomis](https://sprig.hackclub.com/gallery/nomis)
 
 ## Uploading to the Gallery
 
