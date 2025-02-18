@@ -6,14 +6,14 @@ img: "https://user-images.githubusercontent.com/27078897/192053140-3bf9cc19-0aa4
 locales: 'es-xl, pt-br'
 ---
 
-# Running a [Sprig](https://editor.sprig.hackclub.com) Workshop
+# Running a [Sprig](https://sprig.hackclub.com) Workshop
 
 <img width="500" alt="Screen Shot 2022-09-23 at 4 41 25 PM" src="https://user-images.githubusercontent.com/27078897/192053140-3bf9cc19-0aa4-4cdb-9845-e4fdf04f2286.jpg">
 
-[Sprig](https://editor.sprig.hackclub.com/) is a tool developed by Hack Club to help people quickly get started making interesting tile-games. It's a tiny game engine embedded in a web-based editor with integrated art and music tools. If you build a game in Sprig and share it in the community gallery you can get a [Sprig Console](https://sprig.hackclub.com)!
+[Sprig](https://sprig.hackclub.com) is a tool developed by Hack Club to help people quickly get started making interesting tile-games. It's a tiny game engine embedded in a web-based editor with integrated art and music tools. If you build a game in Sprig and share it in the community gallery you can get a [Sprig Console](https://sprig.hackclub.com)!
 
 > This workshop is designed to help club leaders use Sprig in their clubs. 
-> If you are a solo hacker you can jump straight into the [Sprig editor](https://editor.sprig.hackclub.com).
+> If you are a solo hacker you can jump straight into the [Sprig editor](https://sprig.hackclub.com).
 > You may be able to pick up some helpful tips reading through this though.
 
 <img width="500" alt="Screen Shot 2023-03-03 at 5 48 32 PM" src="https://cloud-guxu865fy-hack-club-bot.vercel.app/0image.png">
@@ -28,9 +28,9 @@ Give a quick demonstration of a fairly complete game with accessible code. You c
 
 Here are a few games that meet the criteria:
 
-- [Sokoban](https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/sokoban.js)
-- [Penguin Slide](https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/penguin_slide.js)
-- [Nomis](https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/nomis.js)
+- [Sokoban](https://sprig.hackclub.com/gallery/sokoban)
+- [Penguin Slide](https://sprig.hackclub.com/gallery/penguin_slide)
+- [Nomis](https://sprig.hackclub.com/gallery/nomis)
 
 ## Account (2 minutes)
 
@@ -69,7 +69,7 @@ Don't forget to take note of where it was saved!
 
 ## Tell People to Get Hackin'! (rest of available workshop time)
 
-Tell people to start by working through the [tutorial](https://editor.sprig.hackclub.com/?file=https://raw.githubusercontent.com/hackclub/sprig/main/games/getting_started.js).
+Tell people to start by working through the [tutorial](https://sprig.hackclub.com/gallery/getting_started).
 
 After people complete the tutorial encourge them to start thinking of their own game. Often a good way to make and original game is to start with an existing one and adding a new mechanic to it. Check out the games tagged `hackable` to find remixable bases.
 
