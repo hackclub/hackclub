@@ -15,11 +15,11 @@ Here's what your game will end up looking like:
 
 ![A GIF of the game](https://cloud-2mv7g5tu2-hack-club-bot.vercel.app/0sprig.gif)
 
-[Curious? Check out the final game's code & play it!](https://editor.sprig.hackclub.com/?id=85cfd61b0be21099942c4df571b11432)
+[Curious? Check out the final game's code & play it!](https://sprig.hackclub.com/gallery/sprig_dodge)
 
 ## 1. Getting Started
 
-Open up the [Sprig Editor](https://editor.sprig.hackclub.com). Create a new game (menu > `new game`). This is where we'll be coding our game.
+Open up the [Sprig Editor](https://sprig.hackclub.com). Create a new game (menu > `new game`). This is where we'll be coding our game.
 
 Let's start programming!
 
