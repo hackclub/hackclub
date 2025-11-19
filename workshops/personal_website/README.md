@@ -7,7 +7,7 @@ locales: 'es-xl, pt-br'
 
 # Personal Website
 
-_For a limited time: build your site & [get a free bubble tea](https://hack.club/boba)_
+_psst... we have a shiny new guide available on the [boba drops](https://hack.club/boba) website, where you can also get free bubble tea_
 
 Prophet Orpheus, [our mascot](https://hackclub.com/workshops/orpheus), is here to guide you through making your own personal website.
 
