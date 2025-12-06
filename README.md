@@ -46,7 +46,7 @@ Hack Club is a community by and for teen hackers. Our software, past events, bra
 
 | Action                                                    | Link                                                          |
 | --------------------------------------------------------- | ------------------------------------------------------------  |
-| 💬 Join our Slack                                         | [hackclub.com/slack](https://hackclub.com/slack)              |
+| 💬 Join our Slack (similar to discord)                    | [hackclub.com/slack](https://hackclub.com/slack)              |
 | ✨ See our workshops                                      | [workshops.hackclub.com](https://workshops.hackclub.com)      |
 | 📸 See what Hack Clubbers are making every day            | [scrapbook.hackclub.com](https://scrapbook.hackclub.com)      |
 | 🗺️ Join a high-school hackathon nearby                    | [hackathons.hackclub.com](https://hackathons.hackclub.com)    |
