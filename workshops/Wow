@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drum Pad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #111;
+      color: white;
+    }
+    h1 {
+      margin-top: 30px;
+    }
+    .pad-container {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .pad {
+      background: #222;
+      border: 2px solid #555;
+      border-radius: 10px;
+      padding: 40px;
+      font-size: 18px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .pad:active {
+      background: #00ff99;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🥁 Drum Pad</h1>
+<p>Click pads or press A S D F</p>
+
+<div class="pad-container">
+  <div class="pad" data-sound="kick">Kick (A)</div>
+  <div class="pad" data-sound="snare">Snare (S)</div>
+  <div class="pad" data-sound="hihat">Hi-Hat (D)</div>
+  <div class="pad" data-sound="clap">Clap (F)</div>
+</div>
+
+<script>
+  const AudioContext = window.AudioContext || window.webkitAudioContext;
+  const audioCtx = new AudioContext();
+
+  function kick() {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.frequency.setValueAtTime(150, audioCtx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(50, audioCtx.currentTime + 0.1);
+    gain.gain.setValueAtTime(1, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.1);
+    osc.connect(gain).connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime + 0.1);
+  }
+
+  function snare() {
+    const bufferSize = audioCtx.sampleRate * 0.2;
+    const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+    const data = buffer.getChannelData(0);
+    for (let i = 0
