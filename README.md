@@ -1,3 +1,9 @@
+<!--START_SECTION:navbar-->
+<div align="center">
+  <a href="README.md">🇺🇸 English</a> | <a href="locales/README.de.md">🇩🇪 Deutsch</a> | <a href="locales/README.fr.md">🇫🇷 Français</a> | <a href="locales/README.hi.md">🇮🇳 हिंदी</a> | <a href="locales/README.ja.md">🇯🇵 日本語</a> | <a href="locales/README.pt.md">🇵🇹 Português</a> | <a href="locales/README.ru.md">🇷🇺 Русский</a> | <a href="locales/README.zh.md">🇨🇳 中文</a>
+</div>
+<!--END_SECTION:navbar-->
+
 # <a href="https://www.youtube.com/watch?v=PnK4gzO6S3Q" target="_blank"><img src="https://user-images.githubusercontent.com/39828164/194585524-d49a7908-044f-4f02-8c9b-0b6f557d4aac.png" width="100%" alt="Welcome to Hack Club!"></a>
 
 Welcome to a worldwide community of high school hackers. We’re artists, writers, engineers, tinkerers, campers, filmmakers, volunteers. We **make** things. We **help** one another. We have **fun**. **[Join us ➚](https://hackclub.com/slack)**
