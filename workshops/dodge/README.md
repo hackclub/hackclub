@@ -2,7 +2,7 @@
 name: Dodge
 description: 'Bullet-dodging game using p5.js'
 author: '@MaxWofford'
-img: "https://cloud-en831u68d-hack-club-bot.vercel.app/7demo.png"
+img: 'https://cdn.hackclub.com/019e0322-96ba-7067-b5fc-8b46ad37d2c0/unknown-7__1_.png'
 ---
 
 # Dodge
