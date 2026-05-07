@@ -2,14 +2,12 @@
 name: 'JavaScript Typing Test'
 description: 'A Typing Test website built with HTML, CSS, and JavaScript'
 author: '@GurshanBrar'
-img: 'https://cloud-gny03pu07.vercel.app/0javascript_typing_test_cover.png'
+img: 'https://cdn.hackclub.com/019e0318-622d-7769-92fd-4895761ee556/unknown-6__1_.png'
 ---
 
 In this workshop, you're going to build a typing test website with HTML, CSS, and JavaScript! Here's what it'll look like:
 
 ![Screenshot of the final site for the test portion](https://cloud-1v9gb7z3j.vercel.app/0javascript_typing_test_final_image_1.png)
-
-![Screenshot of the final site for the results portion](https://cloud-1v9gb7z3j.vercel.app/1javascript_typing_test_final_image_2.png)
 
 [Final demo](https://javascript-typing-test-final.gurshanbrar.repl.co/)
 <br>
