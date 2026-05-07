@@ -2,6 +2,7 @@
 name: Platformer
 description: Simple side-scrolling platformer game
 author: '@jkwok91'
+img: 'https://cdn.hackclub.com/019e0326-aff8-7fc2-ac7e-f39f0d740786/unknown-8__1_.png'
 ---
 
 # Platformer
