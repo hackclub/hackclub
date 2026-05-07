@@ -2,7 +2,7 @@
 name: 'Stopwatch'
 description: 'Build a simple stopwatch with HTML, CSS, & JavaScript'
 author: '@faisalsayed10'
-img: 'https://cloud-jh559xslj.vercel.app/2020-10-23_yp6wgrcauymhtq97uk24vk0kj64fu8d3.png'
+img: 'https://cdn.hackclub.com/019e030c-274a-7d90-b0f6-7f7bcde68e32/unknown__1___1_.png'
 locales: 'pt-br'
 ---
 
