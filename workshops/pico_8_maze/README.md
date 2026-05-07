@@ -2,6 +2,7 @@
 name: PICO-8 Maze
 description: A "scary maze" game built on the PICO-8
 author: '@jajoosam'
+img:'https://cdn.hackclub.com/019e032e-4562-7e70-ac42-1b314388f49a/maze.png'
 ---
 
 # Maze
