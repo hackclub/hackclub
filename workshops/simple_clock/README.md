@@ -2,7 +2,7 @@
 name: 'JavaScript Clock'
 description: 'Build a clock using HTML, CSS, & JavaScript'
 author: '@faisalsayed10'
-img: 'https://cloud-c98vjphwp.vercel.app/2020-09-24_qz6y21hudmj4cexpmckf204uadvu2nec.png'
+img: 'https://cdn.hackclub.com/019e02ff-fd17-7f05-8b52-a74814961a7d/unknown-2.png'
 ---
 
 # JavaScript Clock
