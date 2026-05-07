@@ -2,7 +2,7 @@
 name: 'Memory Game'
 description: 'Create your own memory game using JavaScript'
 author: '@giridhar7632'
-img: 'https://cloud-g7cpynxc4.vercel.app/0screenshot_2020-11-11_104712.png'
+img: 'https://cdn.hackclub.com/019e0335-b171-7622-9cc4-209aaadda0f3/unknown-9.png'
 locales: 'pt-br'
 ---
 
