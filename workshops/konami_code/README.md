@@ -2,7 +2,7 @@
 name: 'Konami Code'
 description: 'Add a fun Easter Egg to your website with JavaScript'
 author: '@faisalsayed10'
-img: 'https://cloud-ab42sp36n.vercel.app/2020-10-23_fj9xgpmyvhzwht57t0408bwwwbvpjt4t.png'
+img: 'https://cdn.hackclub.com/019e075e-86bb-71fc-bd6e-85f997816140/unknown__2___1_.png'
 ---
 
 # Konami Code
