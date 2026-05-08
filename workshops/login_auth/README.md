@@ -2,7 +2,7 @@
 name: 'Web Login'
 description: 'Build a secure web login page using Firebase & JavaScript'
 author: '@tanishq-soni'
-img: 'https://cloud-i1u39hjuk.vercel.app/2020-10-23_h3cu9gf014ymk5drx379wq6gdqjxz0e8.png'
+img: 'https://cdn.hackclub.com/019e0761-f957-7667-a508-5e6bb5af0f27/unknown-2__1___1_.png'
 locales: 'pt-br'
 ---
 
