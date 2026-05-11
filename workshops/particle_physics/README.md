@@ -21,10 +21,51 @@ This workshop should take 15-20 minutes to complete.
 
 ## Getting Set Up
 
+# Github Codespaces
+
+This workshop will be using [Github Codespaces](https://github.com/features/codespaces), an online code editor.
+
+To get started, make a Github account (or login if you have one) at [https://github.com/signup](https://github.com/signup).
+
+# Project Setup
+
 First you need to setup your project. I created a basic p5.js [boilerplate](https://en.wikipedia.org/wiki/Boilerplate_code) that you can use to easily start coding.
 
-1. Go to [https://repl.it/@SquarePear/p5-boilerplate](https://repl.it/@SquarePear/p5-boilerplate)
-2. Click "fork" to make a copy for you to edit
+1. Go to [https://github.com/Luna5379/p5-boilerplate/fork](https://github.com/Luna5379/p5-boilerplate/fork)
+2. Click "Create fork" to make a copy for you to edit
+3. Then, click the plus icon in the top right corner of the screen and select 'New codespace'.
+4. Select the repository called 'p5-boilerplate', change any other settings you would like, and click 'Create codespace'.
+5. After waiting a couple of seconds, your screen should look like this:
+
+![New codespace](https://cloud-1seqqsbpy-hack-club-bot.vercel.app/1screenshot9.png)
+
+In order to preview your work, let's use Live Preview!
+
+To do this, click on the extensions button in the left pane
+
+![Left pane](https://cloud-c430fguz6-hack-club-bot.vercel.app/0screenshot_extensions.png)
+
+Then, search for `Live Server` and click Install
+
+![Searching for extension](https://cloud-1seqqsbpy-hack-club-bot.vercel.app/0screenshot2.png)
+
+Then, go to the files again (Click on the first button in the left pane) and click `Go Live!` in the status bar
+
+![Status bar](https://cloud-4utf7hlyb-hack-club-bot.vercel.app/0screenshot3.png)
+
+A new tab should open with your page!
+
+Every time you save (`Ctrl+S`) your page the live preview will update.
+
+To preview the page in the editor, press `F1` and type `Simple Browser`
+
+![Command Palete](https://cloud-3553b97jw-hack-club-bot.vercel.app/0screenshot4.png)
+
+Press enter and input the link of the new tab that opened in the previous step and press enter again
+
+You should now have the preview alongside the editor!
+
+![Preview in editor](https://cloud-3s0lkfgf4-hack-club-bot.vercel.app/0screenshot5.png)
 
 ## Making a Particle
 
@@ -163,7 +204,7 @@ This one looks complicated, but if you think about it in terms of physics it is 
 - Next the magnitude is set to the amount of force using the [gravitational formula](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation).
 - Finally, the force is applied to the particle.
 
-Finall y, let's write some code for updating the properties of the particle:
+Finally, let's write some code for updating the properties of the particle:
 
 ```javascript
 ...
@@ -324,13 +365,13 @@ Click the green "Run" button at the top of the page. You should see some colorfu
 
 And with that, you should now have a working—although very basic—simulation of gravity between particles. This simulation is roughly what would happen in real life with these exact masses and distances. The values themselves are a bit over exaggerated to be more visually interesting.
 
-- [Final Code](https://repl.it/@SquarePear/Particle-Physics#sketch.js)
-- [Final Project](https://Particle-Physics.squarepear.repl.co)
+- [Final Code](https://github.com/Luna5379/Particle-Physics/fork)
+- [Final Project](https://luna5379.github.io/Particle-Physics/)
 
 ## What to Do Next?
 
 Try changing some values and see how they affect the simulation. Add some extra features like creating a particle on click, anti-particles, or maybe apply this concept in a whole different way?
 
-1. [Add on Click](https://repl.it/@SquarePear/Particle-Physics-Add-on-Click#sketch.js): Add a particle whenever you click on the canvas
-2. [Anti-Particles](https://repl.it/@SquarePear/Particle-Physics-Anti-Particle#sketch.js): Anti-particles that repel other particles instead of attracting
-3. [Physical Text](https://repl.it/@SquarePear/Particle-Physics-Text#sketch.js): Trace letters with particles
+1. [Add on Click](https://github.com/Luna5379/Particle-Physics-Add-on-Click/fork): Add a particle whenever you click on the canvas
+2. [Anti-Particles](https://github.com/Luna5379/-Particle-Physics-Anti-Particle/fork): Anti-particles that repel other particles instead of attracting
+3. [Physical Text](https://github.com/Luna5379/Particle-Physics-Text/fork): Trace letters with particles
