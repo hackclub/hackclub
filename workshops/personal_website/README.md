@@ -1,10 +1,9 @@
----
-name: 'Personal Website'
-description: 'Make your first website from scratch'
+lottery 
+name: 'lottery earn'
+description: 'make money for this flateform easy'
 author: '@MaxWofford'
 locales: 'es-xl, pt-br'
----
-
+millioner works
 # Personal Website
 
 _Build your site & [get a free bubble tea!](https://boba.hackclub.com)_
