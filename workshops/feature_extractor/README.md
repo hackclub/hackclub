@@ -239,6 +239,6 @@ ml5.js can do crazy things! You can integrate image classification into your own
 
 You should take a look at the many [examples on the ml5.js website](https://ml5js.org/docs/quick-start) - or take a look at [Dan Shiffman's videos on ml5.js](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YPSwT06y_AEYTqIwbeam3y), he covers loads of things you can do with it - and explains everything with a ton of energy. I highly recommend watching his videos on the [Coding Train](https://www.youtube.com/user/shiffman) YouTube!
 
-If you have any questions or need any help with a project you're building, feel free to ping @jajoosam on the hackclub slack :)
+If you have any questions or need any help with a project you're building, feel free to ping @jajoosam on the Hack Club Slack :)
 
 > _A big thank you to repl.it for allowing us to republish this workshop!_
