@@ -230,11 +230,11 @@ while True:
 
 Done! Let's try running our program. Here's what happens when I run without a save file. I encountered a Toxicroak, and caught it on my second try.
 
-![Text output from running the program](https://cloud-b0iio04zw-hack-club-bot.vercel.app/0log.jpg)
+![Text output from running the program](https://cdn.hackclub.com/rescue?url=https://cloud-b0iio04zw-hack-club-bot.vercel.app/0log.jpg)
 
 When I backed it up to a file, the Pokemon was transferred successfully!
 
-![File output showing owned Pokmeon](https://cloud-b0iio04zw-hack-club-bot.vercel.app/1file.jpg)
+![File output showing owned Pokmeon](https://cdn.hackclub.com/rescue?url=https://cloud-b0iio04zw-hack-club-bot.vercel.app/1file.jpg)
 
 You can view the [source code](https://github.com/ryanchou-dev/Pokemon_Game/) on GitHub!
 

@@ -2,7 +2,7 @@
 name: 'Teachable Machine'
 description: 'Easily get started with machine learning—no coding required'
 author: '@MatthewStanciu'
-img: 'https://cloud-m7q6q8zhs-hack-club-bot.vercel.app/0demo-3.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-m7q6q8zhs-hack-club-bot.vercel.app/0demo-3.png'
 ---
 
 [Teachable Machine](https://teachablemachine.withgoogle.com) is a website made by Google that allows you to quickly create machine learning models without coding. It’s a fantastic way to learn the fundamental concepts of machine learning and be able to apply them to cool projects without having to understand the complex math is normally required to work with machine learning. In this workshop, we’re building a super simple website that detects whether your camera sees you alone or you with another object (e.g. your phone).
@@ -19,17 +19,17 @@ Machine learning models are trained with large amounts of data that attempt to �
 
 Get started by visiting [teachablemachine.withgoogle.com](https://teachablemachine.withgoogle.com) and clicking on “Get Started”. You should be greeted with the option to create an image, audio, or pose project. For now, pick “Image Project”.
 
-![A row of three example projects including an image of a dog, audio waves, and a person posing](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/7homepage.jpg)
+![A row of three example projects including an image of a dog, audio waves, and a person posing](https://cdn.hackclub.com/rescue?url=https://cloud-3r9r82ylx-hack-club-bot.vercel.app/7homepage.jpg)
 
-![Webpage featuring a category for Class, Training, and Preview](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/6imageproject.png)
+![Webpage featuring a category for Class, Training, and Preview](https://cdn.hackclub.com/rescue?url=https://cloud-3r9r82ylx-hack-club-bot.vercel.app/6imageproject.png)
 
 Rename “Class 1” and “Class 2” to “me” and “me with [some object]”.
 
-![Renaming a field by entering text in a box](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/8renameclass.gif)
+![Renaming a field by entering text in a box](https://cdn.hackclub.com/rescue?url=https://cloud-3r9r82ylx-hack-club-bot.vercel.app/8renameclass.gif)
 
 Next, turn on your webcam for each class and click “Hold to Record” until you have a few hundred image samples recorded. You want to take as many pictures and capture as many angles, positions, etc. as you possibly can. The more data you have, the better your model will learn the difference between the two sets of data.
 
-![A row of images of a person and a row of images of a person with a phone](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/5imagesamples.png)
+![A row of images of a person and a row of images of a person with a phone](https://cdn.hackclub.com/rescue?url=https://cloud-3r9r82ylx-hack-club-bot.vercel.app/5imagesamples.png)
 
 Once you feel you’ve recorded enough samples, click on “Train Model”. The time it takes to train the model will vary depending on how many image samples you gave it, but it usually takes somewhere around 30 seconds.
 
@@ -37,13 +37,13 @@ Once your model is trained, a preview should appear. Try it out! If it’s shaky
 
 Here’s what mine looks like:
 
-![A person holding a phone](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/4model.gif)
+![A person holding a phone](https://cdn.hackclub.com/rescue?url=https://cloud-3r9r82ylx-hack-club-bot.vercel.app/4model.gif)
 
 ## Exporting your model
 
 Teachable Machine will host your model on their servers, so you can use it in any project you want. To upload your model to Teachable Machine’s servers, click on “Export Model”, then click “Upload my model” once the window pops up. After a few seconds, you should see a link to your model available under “Your sharable link:”
 
-![A modal displaying a shareable url for the project](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/9uploadedmodel.png)
+![A modal displaying a shareable url for the project](https://cdn.hackclub.com/rescue?url=https://cloud-3r9r82ylx-hack-club-bot.vercel.app/9uploadedmodel.png)
 
 (FYI: if you’re interested in seeing the raw data of your model, copy the link to the model and paste it in your URL bar with `model.json` at the end)
 
@@ -59,13 +59,13 @@ Now it’s time to add your Teachable Machine model to your own project!
 
 Run the repl, then open your website in a new tab by clicking the icon at the top right. Once you click “Start” and give the site access to your webcam, you should see your model!
 
-![Person holding a phone with text identifying the state of action](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/3finalmodel.png)
+![Person holding a phone with text identifying the state of action](https://cdn.hackclub.com/rescue?url=https://cloud-3r9r82ylx-hack-club-bot.vercel.app/3finalmodel.png)
 
 ## Hacking
 
 Congratulations! You’ve just trained a machine learning model directly in your browser without writing any code. But your journey is far from over—there are endless ways you can take this project further. Did you notice the “Add a class” button below your two original classes?
 
-![A row of images of a person holding a phone and an option to "Add a Class" at the bottom](https://cloud-3r9r82ylx-hack-club-bot.vercel.app/0add-a-class.png)
+![A row of images of a person holding a phone and an option to "Add a Class" at the bottom](https://cdn.hackclub.com/rescue?url=https://cloud-3r9r82ylx-hack-club-bot.vercel.app/0add-a-class.png)
 
 You can train this model with as many classes as you want! Try and see how far you can take it—you, you + phone, you + water bottle, you + phone + water bottle, etc. Go crazy.
 

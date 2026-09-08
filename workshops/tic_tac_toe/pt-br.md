@@ -2,7 +2,7 @@
 name: 'Jogo da Velha'
 description: 'Crie o clássico jogo da velha com Python'
 author: '@Prithul0218, @vitorvavolizza '
-img: 'https://cloud-48w32714h.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-48w32714h.vercel.app/0image.png'
 locales: 'pt-br'
 ---
 
@@ -69,7 +69,7 @@ JogoDaVelha()
 
 Você deve obter algo assim quando você executar o código:
 
-![Mostrando a placa impressa em um terminal](https://cloud-hztfs3uyy.vercel.app/untitled.png)
+![Mostrando a placa impressa em um terminal](https://cdn.hackclub.com/rescue?url=https://cloud-hztfs3uyy.vercel.app/untitled.png)
 
 Fantástico! Agora temos nossa placa impressa no terminal. Chegou a hora de receber os dados reais dos jogadores!
 

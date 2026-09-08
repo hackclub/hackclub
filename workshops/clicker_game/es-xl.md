@@ -2,7 +2,7 @@
 name: 'Clicker Game'
 description: '¡Construye tu propio clicker game usando React!'
 author: '@jasonappah, @davidballezaa'
-img: 'https://cloud-a2dkhe77f.vercel.app/0screen_shot_2020-12-26_at_12.20.26_am.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-a2dkhe77f.vercel.app/0screen_shot_2020-12-26_at_12.20.26_am.png'
 ---
 
 # Construye un clicker game con React
@@ -13,13 +13,13 @@ En este taller, ¡construiremos un clicker game! Al finalizar, tendrás un juego
 <br>
 [Código final](https://repl.it/@JasonAntwiAppah/finished-clicker-game#src/App.js) 
 
-![Captura de pantalla de una página con fondo rojo y un número en el centro](https://cloud-hr9ez7m8r.vercel.app/0clicker.gif)
+![Captura de pantalla de una página con fondo rojo y un número en el centro](https://cdn.hackclub.com/rescue?url=https://cloud-hr9ez7m8r.vercel.app/0clicker.gif)
 
 ## Empezando
 
 Usaremos [Repl.it](http://repl.it) para escribir nuestro código. Abre la [plantilla de inicio aquí](https://replit.com/@davidballezaa/clicker-game-starter-spanish) y da clic en el botón de 'Fork' (está en la parte superior de tu pantalla). Ahora da clic en 'Run' y deberías ver algo como esto. No te preocupes si ves advertencias en la consola - lo arreglaremos más tarde.
 
-![Captura de pantalla del clicker game abierto en el editor de repl.it](https://cloud-jo30cv8wy.vercel.app/0untitled.png)
+![Captura de pantalla del clicker game abierto en el editor de repl.it](https://cdn.hackclub.com/rescue?url=https://cloud-jo30cv8wy.vercel.app/0untitled.png)
 
 Si ves una pantalla roja con texto blanco en el centro, ¡estás listo para continuar! Por ahora, nuestro juego no hace demasiado - si le damos clic a la pantalla o presionamos cualquier tecla, no pasa nada.  
 
@@ -67,7 +67,7 @@ Ya tenemos nuestra etiqueta `<h1>`, así que lo único que tenemos que hacer es 
 
 Ahora todo debería de funcionar... ¿o no? Intenta y mira lo que pasa.
 
-![Un video mostrando números siendo impresos en la consola del navegador cada que damos clic, sin que se actualice la página](https://cloud-rbqvdgtkm.vercel.app/0screen_recording_2020-11-20_at_10.04.52_pm.gif)
+![Un video mostrando números siendo impresos en la consola del navegador cada que damos clic, sin que se actualice la página](https://cdn.hackclub.com/rescue?url=https://cloud-rbqvdgtkm.vercel.app/0screen_recording_2020-11-20_at_10.04.52_pm.gif)
 
 Como puedes ver, la variable está incrementando cada que damos clic (podemos saberlo porque vemos la cuenta actualizada siendo impresa en la consola). Pero, por alguna razón, nuestra página no se actualiza. ¿Por qué? Bueno, tenemos que decirle explícitamente a React que re-renderice un cierto componente cuando queramos actualizarlo - si no, se quedará igual que como estaba en el renderizado inicial. ¿Cómo hacemos eso? Ahí es donde el hook `useState()` de React entra al juego. 
 
@@ -152,7 +152,7 @@ Esta nueva línea inicializa una variable llamada `count`, le establece un valor
 
 ¡Ahora veamos si todo funciona!
 
-![Un video mostrando una página con un número siendo incrementado por cada clic](https://cloud-4q8ijirlb.vercel.app/0screen_recording_2020-11-24_at_5.40.24_pm.gif)
+![Un video mostrando una página con un número siendo incrementado por cada clic](https://cdn.hackclub.com/rescue?url=https://cloud-4q8ijirlb.vercel.app/0screen_recording_2020-11-24_at_5.40.24_pm.gif)
 
 Eso es cool, pero ¿si queremos resetear? Claro, podríamos refrezcar la página, pero eso no es muy sofisticado. Usemos el teclado para resetear `count` a 0, añadiendo esta línea de código antes de nuestro `return`.
 

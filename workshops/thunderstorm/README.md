@@ -2,14 +2,14 @@
 name: 'Thunderstorm'
 description: 'A thunderstorm in your browser'
 author: '@polytroper'
-img: 'https://cloud-5bblxtvxm-hack-club-bot.vercel.app/0screenshot_2023-04-15_at_1.17.54_pm.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5bblxtvxm-hack-club-bot.vercel.app/0screenshot_2023-04-15_at_1.17.54_pm.png'
 ---
 
 Ever wanted your own private, portable thunderstorm?
 
 Well I have, so I built one—[check it out here](https://thunderstorm--polytrope.repl.co).
 
-![Example of this project](https://cloud-ohjasd9wa-hack-club-bot.vercel.app/0storm_tree.gif)
+![Example of this project](https://cdn.hackclub.com/rescue?url=https://cloud-ohjasd9wa-hack-club-bot.vercel.app/0storm_tree.gif)
 
 All you need is three simple parts:
 
@@ -500,11 +500,11 @@ Now if you hit Run, you should see a "landscape”—which is really just a blac
 
 Let's put something _on_ the landscape now. I used a picture of a tree, which I copied out of an old xkcd comic (thanks Randall Munroe!).
 
-![Example of this project with a Tree](https://cloud-ohjasd9wa-hack-club-bot.vercel.app/0storm_tree.gif)
+![Example of this project with a Tree](https://cdn.hackclub.com/rescue?url=https://cloud-ohjasd9wa-hack-club-bot.vercel.app/0storm_tree.gif)
 
 But _you_ should use something of your own choosing! Code is creative—think about what would go well in a storm, find it on google, and maybe use an image editor to make it into a black silhouette…
 
-![Example of this project with a Mystery Emoji](https://cloud-ohjasd9wa-hack-club-bot.vercel.app/1storm_poo.gif)
+![Example of this project with a Mystery Emoji](https://cdn.hackclub.com/rescue?url=https://cloud-ohjasd9wa-hack-club-bot.vercel.app/1storm_poo.gif)
 
 Drag/drop the image into your repl.it window to upload it into your project. Name the file something like "thing.png" or "thing.jpg" (whatever the original file was—probably .png or .jpg—use that).
 

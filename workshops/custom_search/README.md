@@ -2,14 +2,14 @@
 name: Custom Search Engine
 description: Build a personalized search engine with Google's Search API
 author: '@rajanwastaken'
-img: 'https://cloud-9273tibqr-hack-club-bot.vercel.app/0demo.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-9273tibqr-hack-club-bot.vercel.app/0demo.png'
 ---
 
 # Custom Search
 
 Let's use Google to build Google. In this workshop, we're going to use Google's Search API to fetch queries and output the most relevant topics! Here's what the final product will look like (I highly encourage you to customize it to make it your own!)
 
-![Demo](https://cloud-9273tibqr-hack-club-bot.vercel.app/0demo.png)
+![Demo](https://cdn.hackclub.com/rescue?url=https://cloud-9273tibqr-hack-club-bot.vercel.app/0demo.png)
 
 To build this product, we're going to need:
 - HTML
@@ -22,7 +22,7 @@ We'll also be delving into Google APIs, so make sure that you have an account se
 
 Head on over to the [Replit Starter](https://replit.com/@rajnagrwl/search-starter) for this project and click **fork** in the top right corner. This will give you access to the styles and preliminary code to get you started!
 
-![Starter](https://cloud-8wkzuz8vw-hack-club-bot.vercel.app/0image.png)
+![Starter](https://cdn.hackclub.com/rescue?url=https://cloud-8wkzuz8vw-hack-club-bot.vercel.app/0image.png)
 
 Once this is ready, head on over to the `index.html` file and add the following between the `<body></body>` tags:
 
@@ -74,7 +74,7 @@ Now, we need to set up the Google Search API! To get started, head on over to [G
 
 *Disclaimer: The Google Search API provides 100 search queries per day for free. Additional requests cost $5 per 1000 queries. [Learn more](https://developers.google.com/custom-search/v1/introduction/?apix=true)*
 
-![Portal](https://cloud-nnr7tnov2-hack-club-bot.vercel.app/0image.png)
+![Portal](https://cdn.hackclub.com/rescue?url=https://cloud-nnr7tnov2-hack-club-bot.vercel.app/0image.png)
 
 So what is this URL and why is it so long?
 
@@ -139,8 +139,8 @@ And just like that, you've successfully fetched your meta data for each query! N
 
 And that's it! If you click run and head to your replit link, you should see a full functional search engine at your service! Here's a link to [the final code](https://replit.com/@rajnagrwl/search) (excluding the API key) if you need any help!
 
-![Before](https://cloud-9ulwzpplp-hack-club-bot.vercel.app/0image.png)
-![After](https://cloud-5flz3qyg1-hack-club-bot.vercel.app/0image.png)
+![Before](https://cdn.hackclub.com/rescue?url=https://cloud-9ulwzpplp-hack-club-bot.vercel.app/0image.png)
+![After](https://cdn.hackclub.com/rescue?url=https://cloud-5flz3qyg1-hack-club-bot.vercel.app/0image.png)
 
 ## Next Steps
 

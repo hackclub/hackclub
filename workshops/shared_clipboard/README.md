@@ -2,7 +2,7 @@
 name: 'Shared Clipboard'
 description: 'Sync clipboards across devices using Go'
 author: '@quackduck'
-img: 'https://cloud-aq88cmoj7.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-aq88cmoj7.vercel.app/0image.png'
 ---
 
 
@@ -429,7 +429,7 @@ port := strconv.Itoa(l.Addr().(*net.TCPAddr).Port)
 ```
 from the official docs:
 
-![docs showing that port is variable in the TCPAddr struct](https://cloud-43kwsiiyz.vercel.app/0image.png)
+![docs showing that port is variable in the TCPAddr struct](https://cdn.hackclub.com/rescue?url=https://cloud-43kwsiiyz.vercel.app/0image.png)
 
 Let's go through that line step by step.
 `l.Addr()` is the address that the listener is listening on.
@@ -951,7 +951,7 @@ Stuff other Hack Clubbers made after following this workshop:
 - Sam made [clipboard-with-logs.go](https://gist.github.com/sampoder/f3555d873d3d569f7927801d9977d54a)
    - It creates a file that logs the clipboard history with time displayed.
 
-Jason and Khushraj demoed their projects and you can watch [here](https://cloud-51eavoxvn.vercel.app/0zoom_1.mp4)
+Jason and Khushraj demoed their projects and you can watch [here](https://cdn.hackclub.com/rescue?url=https://cloud-51eavoxvn.vercel.app/0zoom_1.mp4)
 
 ## The full source code
 It's pretty long

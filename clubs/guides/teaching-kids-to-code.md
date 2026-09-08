@@ -16,7 +16,7 @@ Jack: I was introduced into coding through the Mason Hack Club my Sophomore year
 
 We both go to Mason High School, and both of us joined our school’s Hack Club, the Mason Hack Club, in the fall of 2017. We’ve been teaching kids how to code as outreach ever since. Some of the events we’ve run together include Mason Hack Camp, a yearly week long coding camp for kids, and CincyHacks Jr., Mason’s first middle school hackathon.
 
-![](https://cloud-al9r256lr.vercel.app/6img_4064.jpg)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-al9r256lr.vercel.app/6img_4064.jpg)
 
 **_Here we are looking stressed at CincyHacks Jr check-in._**
 
@@ -28,7 +28,7 @@ We’ll all admit that coding can be frustrating sometimes. Even though it’s f
 
 When a student begins to become frustrated with coding, it’s your job as a teacher to help them refocus. You’re a role model to them—it’s important for them to realize that everyone makes mistakes and that you’re there to help. We like to tell our own personal stories about the first times we coded—everyone struggles at first and that’s okay.
 
-![](https://cloud-al9r256lr.vercel.app/5pasted_image_0.jpg)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-al9r256lr.vercel.app/5pasted_image_0.jpg)
 
 **_Young coders hard at work at CincyHacks Jr._**
 
@@ -42,13 +42,13 @@ Often, parents do that thing where they sign their kids up for any random activi
 
 The best way to combat frustration and/or indifference to what you’re teaching is to encourage kids to integrate their interests into what they’re doing. Our best practice in the past has been making our first activity at events a personal website workshop.
 
-![](https://cloud-al9r256lr.vercel.app/4pasted_image_1.jpg)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-al9r256lr.vercel.app/4pasted_image_1.jpg)
 
 **_Teaching a personal website workshop at CincyHacks Jr._**
 
 This allows kids to make a website about whatever they want. Kids can be creatively wonderful and awesome—and it opens up a lot of cool ideas for projects. Coding is a creative outlet as much as it is a tool for learning—letting kids incorporate their interests into their projects allows them to see that there’s a fun side to coding and that there’s a reason they should continue. We’ve had students make websites about everything from Dorito Devito (Danny Devito as a Dorito) to Fartnite (a parody of Fortnite with all poop-themed locations). Every kid is excited about something outside of coding—help them find it! If a student looks stuck on what to build, we usually ask what their favorite activity, food, or animal is.
 
-![](https://cloud-al9r256lr.vercel.app/3pasted_image_2.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-al9r256lr.vercel.app/3pasted_image_2.png)
 
 **_An attendee presents their project at CincyHacks Jr._**
 
@@ -58,7 +58,7 @@ One of the biggest struggles with teaching young students is that they’re ofte
 
 When you’re teaching kids, you’ll find that you sound like a broken record. Kids sometimes don’t listen the first time you say something, or they’ll ask you a question you already answered because they didn’t understand what you told them. Like we said, patience in these situations is important! When you find yourself repeating the same thing over and over again, try to rephrase what you’re teaching to make it easier to understand. Remember that these are new coders and younger kids—their brains don’t work quite like yours. Giving them an example other than the code they’re working on is a good place to start.
 
-![](https://cloud-al9r256lr.vercel.app/2pasted_image_3.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-al9r256lr.vercel.app/2pasted_image_3.png)
 
 **_Kids being taught by Mason Hack Club members_**
 
@@ -70,7 +70,7 @@ No one can do it alone! You’re going to need to find a capable group of people
 
 One of the biggest qualities we look for in team members is adaptivity. When running events, plans and timing can change quickly and unexpectedly. Having a team who can adapt to different situations on the spot as well as communicate changes to kids effectively are great people to work with. Another super important quality our kid-approved team members tend to have is a fun attitude. Cracking jokes and being silly makes teaching a lesson more lighthearted and less like a boring traditional classroom, and it keeps kids interested in what you have to say.
 
-![](https://cloud-al9r256lr.vercel.app/1pasted_image_4.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-al9r256lr.vercel.app/1pasted_image_4.png)
 
 **_The CincyHacks Jr. 2019 team!_**
 
@@ -84,7 +84,7 @@ The biggest question you should ask yourself when picking a venue: is this space
 
 Another aspect you need to look for when choosing a venue: quality of outdoor spaces. If you’re running an event in the hotter months, you’re definitely going to want to run outdoor breaks. They’re beneficial in two ways: one, they let kids blow off steam and tire themselves out (trust us, you’re going to want it) and two, team members who aren’t supervising the outdoor break get time to recollect and take a break as well (trust us, you’re going to need it). Tag, night at the museum, and mafia and other no-supplies-required outdoor games are super fun and let kids take a brain break from code for a bit.
 
-![](https://cloud-al9r256lr.vercel.app/0pasted_image_5.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-al9r256lr.vercel.app/0pasted_image_5.png)
 
 **_CincyHacks Jr. attendees outside Cengage Learning in Mason, Ohio_**
 

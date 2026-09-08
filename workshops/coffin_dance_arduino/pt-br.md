@@ -2,11 +2,11 @@
 name: Músicas de Memes com Arduino
 description: Construa um app de Arduino que toca a música do Meme do Caixão
 author: '@rohan-bansal, @vitorvavolizza '
-img: https://cloud-psj7hfkrk.vercel.app/0thumbnail.png
+img: https://cdn.hackclub.com/rescue?url=https://cloud-psj7hfkrk.vercel.app/0thumbnail.png
 locales: 'pt-br'
 ---
 
-![thumbnail](https://cloud-psj7hfkrk.vercel.app/0thumbnail.png)
+![thumbnail](https://cdn.hackclub.com/rescue?url=https://cloud-psj7hfkrk.vercel.app/0thumbnail.png)
 
 ## Visão geral
 
@@ -52,7 +52,7 @@ Isto é importante porque o Arduino não tem ideia do que é uma nota musical, e
 
 Agora que temos uma nova janela de projeto aberta, você verá várias coisas:
 
-![espaço de trabalho](https://cloud-7anwdjqtl.vercel.app/0workspace.png)
+![espaço de trabalho](https://cdn.hackclub.com/rescue?url=https://cloud-7anwdjqtl.vercel.app/0workspace.png)
 
 Aqui está um resumo dos itens em cada retângulo, da esquerda para a direita:
 
@@ -66,13 +66,13 @@ Aqui está um resumo dos itens em cada retângulo, da esquerda para a direita:
 
 Agora, temos que fazer duas coisas para começarmos. Renomear o projeto clicando no nome no canto superior esquerdo, e arrastar um Arduino da barra de componentes à direita!
 
-![renomear_plus_arduino](https://cloud-ot05nrpna.vercel.app/0rename_and_arduino.gif)
+![renomear_plus_arduino](https://cdn.hackclub.com/rescue?url=https://cloud-ot05nrpna.vercel.app/0rename_and_arduino.gif)
 
 Também precisamos adicionar os componentes que estarão tocando nossa música. Em primeiro lugar -piezos! Piezo é a abreviação de [Amplificador Piezoelétrico](https://en.wikipedia.org/wiki/Buzzer#Piezoelectric_2), um circuito oscilante que projeta uma onda sonora. Vá em frente, arraste **dois piezos** para a tela principal, junto com **dois resistores.** Se não conseguir encontrá-los, use a barra de busca. 
 
 Você deve ter isto até agora:
 
-![piezo_and_resistors](https://cloud-mu05rgdue.vercel.app/0screenshot_from_2020-10-20_18-20-31.png) 
+![piezo_and_resistors](https://cdn.hackclub.com/rescue?url=https://cloud-mu05rgdue.vercel.app/0screenshot_from_2020-10-20_18-20-31.png) 
 
 Como qualquer dispositivo elétrico, um circuito precisa ser completado para ativá-lo. No caso do piezo, ele precisa de um sinal (energia) e aterramento. 
 
@@ -82,13 +82,13 @@ Não vou entrar em detalhes sobre pinos digitais e pinos analógicos, mas você 
 
 A seguir, precisamos configurar os resistores para o valor de resistência correto. Isto assegura que o sinal enviado aos piezos não exceda um certo limite. Clique nos dois resistores e altere os valores da resistência na caixa na parte superior direita como foi configurado abaixo:
 
-![resistor_config](https://cloud-q7ciep09e.vercel.app/0resistor_config.png) 
+![resistor_config](https://cdn.hackclub.com/rescue?url=https://cloud-q7ciep09e.vercel.app/0resistor_config.png) 
 
 Você pode ignorar o campo do nome, pois isso não é importante para o circuito, apenas para fins de rotulagem. Certifique-se de que o menu dropdown esteja ajustado para ohms (símbolo de resistência elétrica).
 
 Chegou a hora de ligar o circuito! Ao clicar em uma porta no piezo, resistor ou Arduino, você deverá ser capaz de criar um fio. Conecte o circuito como abaixo:
 
-![corrigir_cablagem](https://cloud-o5uuil1gg.vercel.app/0correct_wiring.png) 
+![corrigir_cablagem](https://cdn.hackclub.com/rescue?url=https://cloud-o5uuil1gg.vercel.app/0correct_wiring.png) 
 
 Vamos rever os elementos deste circuito. No pino 6, o fio do sinal primeiro se conecta a um resistor, que se conecta a uma entrada de sinal de um piezo. A outra porta do piezo encaminha a eletricidade para a terra, completando o circuito. O mini-circuito é o mesmo para o pino 7! Não se deixe intimidar pela eletrônica, ela pode ser simplificada.
 
@@ -98,7 +98,7 @@ Viva! Você terminou **a construção do circuito**. Hora de tocar a música do 
 
 Lembra-se do botão de alternar para a janela de código no retângulo azul da foto anterior? Vá em frente e clique nele e mude do código de blocos para o código de texto. Como aqui:
 
-![convert_code_type](https://cloud-g16ym3hgq.vercel.app/0convert_to_textcode.gif)
+![convert_code_type](https://cdn.hackclub.com/rescue?url=https://cloud-g16ym3hgq.vercel.app/0convert_to_textcode.gif)
 
 Agora estamos prontos para começar a programação! Vá em frente e apague tudo na janela e digite o seguinte:
 
@@ -226,7 +226,7 @@ O que fizemos aqui? Em vez de ajustar o piezo manualmente, temos a variável `am
 
 Pressione **Iniciar Simulação** mais uma vez e você deve ver os sons alternando de ambos os piezos!
 
-![woohoo](https://cloud-62jdtr82i.vercel.app/tenor.gif)
+![woohoo](https://cdn.hackclub.com/rescue?url=https://cloud-62jdtr82i.vercel.app/tenor.gif)
 
 A parte difícil foi feita, vamos fazer um pouco de música agora! Referindo-se a [este link](https://pages.mtu.edu/~suits/notefreqs.html) com todas as notas e frequências possíveis, é assim que faríamos para tocar a dança do caixão (substitua o conteúdo da função `loop()` por isso):
 
@@ -273,7 +273,7 @@ O código final está disponível na demonstração no topo desta página. Se vo
 
 ## Hackeando
 
-![yay](https://cloud-mlx5oz5hm.vercel.app/tenor.gif)
+![yay](https://cdn.hackclub.com/rescue?url=https://cloud-mlx5oz5hm.vercel.app/tenor.gif)
 
 Este workshop passou por cima do básico de como fazer música com Arduino, mas há muito a ser mudado! Veja se você consegue mexer nas durações das notas para criar acordes (já que o Arduino não suporta tocar várias notas ao mesmo tempo), arranje suas próprias canções, etc. Se você acha quer sua criação está épica, compartilhe-a com a comunidade brasileira do Hack Club!
 

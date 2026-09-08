@@ -2,7 +2,7 @@
 name: 'Stock Visualizer in Python'
 description: 'Make a stock visualizer in Python and learn how to use web requests'
 author: '@sohamb117'
-img: 'https://cloud-krc2urnzo.vercel.app/0545f63e3d1003e629450f6017d83582d.jpg'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-krc2urnzo.vercel.app/0545f63e3d1003e629450f6017d83582d.jpg'
 ---
 
 # Web Requests in Python - With a Stock Visualizer!
@@ -11,7 +11,7 @@ Everyone uses websites. Chances are, you're using a website right now. But how d
 
 In this workshop, we're going to use the Requests library to make a stock visualizer.
 
-![DEMO](https://cloud-2v062st9k.vercel.app/screen-recording-online-video-cu.gif)
+![DEMO](https://cdn.hackclub.com/rescue?url=https://cloud-2v062st9k.vercel.app/screen-recording-online-video-cu.gif)
 
 
 [See this in action](https://repl.it/@sohamb117/demo2)
@@ -27,15 +27,15 @@ I'll be working in [repl.it](https://repl.it) for this example, but you can use 
 
 So let's head over to [https://repl.it](https://repl.it) and make an account or log in. You can do this by pressing one of these buttons: 
 
-![LogIn](https://cloud-1rkrfmgde.vercel.app/image.png)
+![LogIn](https://cdn.hackclub.com/rescue?url=https://cloud-1rkrfmgde.vercel.app/image.png)
 
 Now that you've hopefully made an account and signed in, you should be given a page listing all your repls. Let's make a new repl with the + icon in the corner: 
 
-![Plus](https://cloud-pz6t16r1v.vercel.app/image.png)
+![Plus](https://cdn.hackclub.com/rescue?url=https://cloud-pz6t16r1v.vercel.app/image.png)
 
 Okay, let's make this repl use Python and give it a cool and imaginative name: 
 
-![ReplSetUp](https://cloud-8ialvbwjj.vercel.app/image.png)
+![ReplSetUp](https://cdn.hackclub.com/rescue?url=https://cloud-8ialvbwjj.vercel.app/image.png)
 
 And now we should have a workspace where we can code in Python. Let's move on to actually writing the code.
 
@@ -60,11 +60,11 @@ Of course, often times, APIs won't let you have the data for free. You typically
 
 Once you're on the site, you'll see this screen:
 
-![Screen](https://cloud-8ws90xn6j.vercel.app/image.png)
+![Screen](https://cdn.hackclub.com/rescue?url=https://cloud-8ws90xn6j.vercel.app/image.png)
 
 Click on "Get free API key" and create an account. You should see this:
 
-![Key](https://cloud-ks0dqz7ba.vercel.app/image.png)
+![Key](https://cdn.hackclub.com/rescue?url=https://cloud-ks0dqz7ba.vercel.app/image.png)
 
 There should be a key (I've hidden mine for security purposes - yours should be where the purple box is). Tthat's the key you'll need to use for authentication.
 

@@ -10,7 +10,7 @@ Profeta Orfeo, [nuestra mascota](https://hackclub.com/workshops/orpheus), se enc
 
 Se verá algo similar a esto:
 
-![dinosaurio leyendo un libro](https://cloud-4zpw37atj-hack-club-bot.vercel.app/2dino_site.png)
+![dinosaurio leyendo un libro](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/2dino_site.png)
 
 Aquí se encuentra el [demo en vivo][final_live_demo] y el [código final][final_code] (mirar `index.html` y `style.css`).
 
@@ -27,7 +27,7 @@ Este taller debería durar aproximadamente unos 45 minutos.
 
 Para empezar, ve a [https://repl.it/languages/html](https://repl.it/languages/html). ¡Tu entorno de codificación se activará en solo unos segundos!
 
-![Texto dentro de un editor de código](https://cloud-4zpw37atj-hack-club-bot.vercel.app/5html_repl.png)
+![Texto dentro de un editor de código](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/5html_repl.png)
 
 ## Parte II: El archivo HTML
 
@@ -37,7 +37,7 @@ HTML son las siglas de Hypertext Markup Language (Lenguaje de Marcado de Hiperte
 
 Deberías tener abierto el archivo `index.html` y un montón de texto con símbolos `<` & `>` . ¡Eso es HTML!
 
-![Texto dentro de un editor de código](https://cloud-4zpw37atj-hack-club-bot.vercel.app/5html_repl.png)
+![Texto dentro de un editor de código](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/5html_repl.png)
 
 Repl.it nos da un poco de código para empezar, pero nosotros vamos a comenzar desde cero. Continúa y elimina todo en el archivo `index.html` y luego **escribe** adentro el siguiente código. **NO COPIES Y PEGUES.**
 
@@ -53,7 +53,7 @@ Esta estructura es común para todas las páginas HTML. De hecho, ¡puedes echar
 
 <!-- Source https://developers.google.com/web/tools/chrome-devtools/inspect-styles/imgs/elements-panel.png -->
 
-![Panel de Inspección de Elementos que contiene estilos html y css para un sitio web](https://cloud-4zpw37atj-hack-club-bot.vercel.app/3elements-panel.png)
+![Panel de Inspección de Elementos que contiene estilos html y css para un sitio web](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/3elements-panel.png)
 
 Antes de proceder, repasaremos brevemente lo que significa nuestra plantilla.
 
@@ -65,15 +65,15 @@ HTML funciona almacenando información dentro de etiquetas. `<html></html>` es u
 
 ¡Veamos cómo se ve nuestro archivo HTML en una vista previa en vivo! Para hacer esto, da clic en el botón **Run**  encima del editor o presiona <kbd>Ctrl</kbd> + <kbd>Enter</kbd> (<kbd>Command</kbd> + <kbd>Enter</kbd> en Mac).
 
-![Un botón verde y un botón gris uno al lado del otro.](https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/5run.png)
+![Un botón verde y un botón gris uno al lado del otro.](https://cdn.hackclub.com/rescue?url=https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/5run.png)
 
 A partir de ahí, la vista previa en vivo a la derecha del editor debería mostrar cómo se ve tu sitio web. Si deseas verlo en una nueva pestaña, la URL que se encuentra arriba de la vista previa del sitio web es la URL activa de tu sitio web.
 
-![Imagen de la URL de un sitio web](https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/6url.png)
+![Imagen de la URL de un sitio web](https://cdn.hackclub.com/rescue?url=https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/6url.png)
 
 También puedes abrir la vista previa externa en vivo haciendo clic en el ícono que parece un cuadrado con una flecha. Esto abrirá la vista previa en vivo en una nueva pestaña en la URL mencionada anteriormente.
 
-![Lanzamiento del sitio web en una nueva página](https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/3preview.gif)
+![Lanzamiento del sitio web en una nueva página](https://cdn.hackclub.com/rescue?url=https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/3preview.gif)
 
 Como puedes ver, la página está en blanco. Esto se debe a que no hemos agregado nada a la sección del cuerpo `body` todavía. ¡Agreguemos algo de contenido!
 
@@ -141,7 +141,7 @@ Continúa y agrega esto en tu `index.html` . Yo puse mi imagen antes de mi encab
 </html>
 ```
 
-![dinosaurio leyendo un libro y un texto que lo describe en la parte inferior.](https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/2no_css.png)
+![dinosaurio leyendo un libro y un texto que lo describe en la parte inferior.](https://cdn.hackclub.com/rescue?url=https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/2no_css.png)
 
 Recuerda, necesitas **Correr** tu programa cada vez que desees ver tu sitio web actualizado.
 
@@ -158,7 +158,7 @@ Mientras HTML supervisa el contenido y la forma en que está estructurado, CSS e
 
 Ya tenemos un `style.css` en el árbol de archivos y esto se denomina hoja de estilo externa porque el archivo CSS es externo al archivo HTML (i.e., la hoja de estilo no está dentro del archivo HTML).
 
-![Tres archivos en una lista](https://cloud-4zpw37atj-hack-club-bot.vercel.app/9index_css.png)
+![Tres archivos en una lista](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/9index_css.png)
 
 Aunque tenemos un archivo CSS, hasta que le digamos explícitamente al archivo HTML que use el archivo CSS, no lo usará. Debemos vincular explícitamente el archivo CSS en el HTML. Haremos esto escribiendo lo siguiente en el encabezado de `index.html` (entre `<head>` y `</head>`), porque la cabeza es donde le contamos información sobre la página al navegador.
 
@@ -237,7 +237,7 @@ body {
 
 Ahora asegúrate de **Correr** tu programa para obtener la versión más reciente de tu sitio web. Ah, es realmente hermoso de contemplar.
 
-![Niños celebrando](https://cloud-4zpw37atj-hack-club-bot.vercel.app/0celebrate_harry_potter.gif)
+![Niños celebrando](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/0celebrate_harry_potter.gif)
 
 ## Parte IV: Publicación
 
@@ -245,21 +245,21 @@ Para poder guardar tu sitio web y ser capaz de volver a él en el futuro, deber�
 
 Para crear una cuenta, da clic en el mensaje de registro (sign up) en la esquina superior derecha.
 
-![Campos de entrada para iniciar sesión](https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/4signup.png)
+![Campos de entrada para iniciar sesión](https://cdn.hackclub.com/rescue?url=https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/4signup.png)
 
 Una vez que hayas completado los campos (o te hayas registrado con otra cuenta), continúa y da clic en el enlace que te enviaron por correo electrónico.
 
-![Correo electrónico de confirmación solicitando verificación por correo electrónico](https://cloud-4zpw37atj-hack-club-bot.vercel.app/8email.png)
+![Correo electrónico de confirmación solicitando verificación por correo electrónico](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/8email.png)
 
 Ahora que tienes tu cuenta configurada, todo lo que necesitas hacer para cambiar el nombre de tu repl es dar clic en el lápiz que se encuentra al lado.
 
-![Botón editar para cambiar el nombre de un proyecto](https://cloud-4zpw37atj-hack-club-bot.vercel.app/7edit_name.png)
+![Botón editar para cambiar el nombre de un proyecto](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/7edit_name.png)
 
 Una vez que estés contento con el nombre que le has dado, presiona <kbd>Enter</kbd> para confirmar tus cambios (o <kbd>Escape</kbd> para cancelar el cambio de nombre)
 
 Y así nada más, ¡tu sitio web se encuentra ahora publicado en el dominio `NOMBREDEPROYECTO--NOMBREDEUSUARIO.repl.co` (son dos guiones antes de tu nombre de usuario) en Internet para que todos tus amigos lo vean!
 
-![Dos personas cantando y moviéndose de lado a lado en un coche.](https://cloud-4zpw37atj-hack-club-bot.vercel.app/1celebrate_rush_hour.gif)
+![Dos personas cantando y moviéndose de lado a lado en un coche.](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/1celebrate_rush_hour.gif)
 
 ## Parte V: Hacking
 

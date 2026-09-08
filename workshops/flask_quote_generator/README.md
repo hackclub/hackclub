@@ -2,7 +2,7 @@
 name: 'KanyeRest Quote Generator'
 description: 'Make a quote generator with Flask '
 author: '@s1ntaxe770r'
-img: 'https://cloud-57v29xozt.vercel.app/0screen_shot_2020-12-07_at_5.26.13_pm.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-57v29xozt.vercel.app/0screen_shot_2020-12-07_at_5.26.13_pm.png'
 locales: 'pt-br'
 ---
 
@@ -26,7 +26,7 @@ We're going to be using [repl.it](https://repl.it), a free, online code editor, 
 
 ### But where's the data?
 
-![where](https://cloud-c2egtgknk.vercel.app/0where.gif)
+![where](https://cdn.hackclub.com/rescue?url=https://cloud-c2egtgknk.vercel.app/0where.gif)
 
 We're going to pull our Kanye quotes from [kanye.rest](https://kanye.rest), a free API that generates random Kanye quotes.
 
@@ -61,7 +61,7 @@ As you can see, Flask routes are defined with the `@flaskinstance.route("/routen
 
 ## Getting that data!
 
-![give me your phone meme but it's give me your data](https://cloud-fosrs2x3k.vercel.app/03e0-2.jpg)
+![give me your phone meme but it's give me your data](https://cdn.hackclub.com/rescue?url=https://cloud-fosrs2x3k.vercel.app/03e0-2.jpg)
 
 Earlier, we imported the `requests` module, which we will use to make [http requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
 
@@ -104,7 +104,7 @@ def index():
 
 ## Rendering the data
 
-![present](https://cloud-8ec0u6szu.vercel.app/0garfield.gif)
+![present](https://cdn.hackclub.com/rescue?url=https://cloud-8ec0u6szu.vercel.app/0garfield.gif)
 
 By default, Flask looks for any HTML files you pass to the `render_template` function in a folder called `templates`. On the sidebar on the left of your repl, click on the folder called `templates` to open it. Then, open the `index.html` file inside it. You should see the following code:
 
@@ -275,7 +275,7 @@ Yay!!! You did it!!!!
 
 # Hacking
 
-![hacking](https://cloud-hjufepegf.vercel.app/0hacker_cat.gif)
+![hacking](https://cdn.hackclub.com/rescue?url=https://cloud-hjufepegf.vercel.app/0hacker_cat.gif)
 
 Check out what other Hack Clubbers have made!
 

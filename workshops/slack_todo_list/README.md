@@ -2,7 +2,7 @@
 name: Slack Todo List
 description: Make a todo list Slack bot with Node.js and Bolt
 author: '@khrj'
-img: https://cloud-2xos4hsas.vercel.app/0screenshot_2020-11-16_at_1.00.14_pm.png
+img: https://cdn.hackclub.com/rescue?url=https://cloud-2xos4hsas.vercel.app/0screenshot_2020-11-16_at_1.00.14_pm.png
 ---
 
 Ever wanted a todo list that's simple, easy, and integrated into your favorite messaging service? Well, today, we're building one!
@@ -23,28 +23,28 @@ Follow these steps:
 - Open https://repl.it/
 - Click "Sign up"
 
-![Arrow to sign up button on top right](https://cloud-pq5lbfiab.vercel.app/9signup-step1.png)
+![Arrow to sign up button on top right](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/9signup-step1.png)
 
 - Fill in some details
 
-![Arrow to "Username", "Email" and "Password" fields in center of screen](https://cloud-91xu3gqm8.vercel.app/0signup-step2.png)
+![Arrow to "Username", "Email" and "Password" fields in center of screen](https://cdn.hackclub.com/rescue?url=https://cloud-91xu3gqm8.vercel.app/0signup-step2.png)
 
 - You now have a Repl.it account! Next, click "New repl"
 
-![Arrow to New repl button on the top left](https://cloud-pq5lbfiab.vercel.app/6new-step1.png)
+![Arrow to New repl button on the top left](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/6new-step1.png)
 
 - Search for "Node.js" in the search box, click "Node.js" and click "Create repl".
 
-![Find node.js in the search box](https://cloud-9vsssxvna.vercel.app/0screenshot_2020-11-16_at_1.29.29_pm.png)
+![Find node.js in the search box](https://cdn.hackclub.com/rescue?url=https://cloud-9vsssxvna.vercel.app/0screenshot_2020-11-16_at_1.29.29_pm.png)
 
 - You now have a Node.js repl setup successfully
 
-![Arrow pointing to preview URL on top right of repl.it](https://cloud-ccj49d17x.vercel.app/3copyurlfromreplit.png)
+![Arrow pointing to preview URL on top right of repl.it](https://cdn.hackclub.com/rescue?url=https://cloud-ccj49d17x.vercel.app/3copyurlfromreplit.png)
 
 #### Repl.it basics
 
 <video muted autoplay loop controls>
-    <source src="https://cloud-qiwsf0afg.vercel.app/0repl.it_basics.mp4" type="video/mp4">
+    <source src="https://cdn.hackclub.com/rescue?url=https://cloud-qiwsf0afg.vercel.app/0repl.it_basics.mp4" type="video/mp4">
     <ul>To add a file, click "Add file" in the top left and give it a name</ul>
     <ul>To write code, simply start typing in the code editor in the center of the screen</ul>
     <ul>To run code, click Run and refresh your page preview</ul>
@@ -58,22 +58,22 @@ Follow these steps:
 
 - Next, go to https://api.slack.com/apps and create a new app.
 
-![Arrow pointing to "Create New App"](https://cloud-ccj49d17x.vercel.app/1createnewapp.png)
+![Arrow pointing to "Create New App"](https://cdn.hackclub.com/rescue?url=https://cloud-ccj49d17x.vercel.app/1createnewapp.png)
 
 - Give your app a name, select your workspace, and click "Create App".
 
-![Arrow pointing to "Create App"](https://cloud-ccj49d17x.vercel.app/0createslackappdetails.png)
+![Arrow pointing to "Create App"](https://cdn.hackclub.com/rescue?url=https://cloud-ccj49d17x.vercel.app/0createslackappdetails.png)
 
 - Inside Basic Information, go to "Add features and functionality" and click "Slash Commands"
 
-![Arrows pointing to various places: 1. "Basic Information" on left sidebar, 2. "Add features and functionality" and 3. "Slash commands" in the dropdown](https://cloud-ccj49d17x.vercel.app/2basicinfo-features-slashcommands.png)
+![Arrows pointing to various places: 1. "Basic Information" on left sidebar, 2. "Add features and functionality" and 3. "Slash commands" in the dropdown](https://cdn.hackclub.com/rescue?url=https://cloud-ccj49d17x.vercel.app/2basicinfo-features-slashcommands.png)
 
 - Click "Create new command" and fill in the details for your command:
     - Command: /todolist (Note: If you're using the hackclub workspace, you'll need to use a different name for your command, such as /yournametodolist)
     - Request URL: https://yourappname.yourusername.repl.co/slack/events where `yourappname` is your repl's name and `yourusername` is your repl.it username. For e.x., my repl's name is TodoSlackApp and my repl.it username is KhushrajRathod, so my request URL is https://TodoSlackApp.KhushrajRathod.repl.co/slack/events
     - Short Description: Show your todo list
 
-![Filled in details](https://cloud-ccj49d17x.vercel.app/4createnewcommand.png)
+![Filled in details](https://cdn.hackclub.com/rescue?url=https://cloud-ccj49d17x.vercel.app/4createnewcommand.png)
 
 - Click save.
 
@@ -85,11 +85,11 @@ Create two more commands, /todolistadd and /todolistremove. Use the same request
 
 - This is how your Slack API page should look now
 
-![Three commands shown, /todolist, /todolistadd and /todolistremove](https://cloud-ccj49d17x.vercel.app/5finalslashcommands.png)
+![Three commands shown, /todolist, /todolistadd and /todolistremove](https://cdn.hackclub.com/rescue?url=https://cloud-ccj49d17x.vercel.app/5finalslashcommands.png)
 
 - Now, go to "OAuth & Permissions" in the sidebar, scroll down to "Scopes" and add chat:write and chat:write.public as Bot Token Scopes
 
-![Three scopes present, commands, chat:write and chat:write.public](https://cloud-b17s5cy5p.vercel.app/0scopes.png)
+![Three scopes present, commands, chat:write and chat:write.public](https://cdn.hackclub.com/rescue?url=https://cloud-b17s5cy5p.vercel.app/0scopes.png)
 
 - Scroll back to the top of "OAuth & Permissions" and click "Add to Workspace". Slack will ask you to authenticate with your workspace, once you're done with that you should be able to see a Bot User OAuth Access Token, copy that -- we'll need this later.
 
@@ -97,7 +97,7 @@ Create two more commands, /todolistadd and /todolistremove. Use the same request
 
 We've finished setting up the Slack API side of our app!
 
-![Minions cheering](https://cloud-pq5lbfiab.vercel.app/0cheer.gif)
+![Minions cheering](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/0cheer.gif)
 
 ## Part 2: Programming the bot backend
 
@@ -262,27 +262,27 @@ At the moment, your bot will go offline after an hour due to your repl going to 
 
 - Go to https://uptimerobot.com and click "Register for FREE"
 
-![Arrow pointing to "Register for FREE" on top right](https://cloud-qbitd29kl.vercel.app/4register.png)
+![Arrow pointing to "Register for FREE" on top right](https://cdn.hackclub.com/rescue?url=https://cloud-qbitd29kl.vercel.app/4register.png)
 
 - Enter your name, email and create a password
 
-![Arrows pointing to various fields on register page](https://cloud-qbitd29kl.vercel.app/3details.png)
+![Arrows pointing to various fields on register page](https://cdn.hackclub.com/rescue?url=https://cloud-qbitd29kl.vercel.app/3details.png)
 
 - Click "Add New Monitor"
 
-![Arrow pointing to "Add New Monitor" on top left](https://cloud-qbitd29kl.vercel.app/2addnewmonitor.png)
+![Arrow pointing to "Add New Monitor" on top left](https://cdn.hackclub.com/rescue?url=https://cloud-qbitd29kl.vercel.app/2addnewmonitor.png)
 
 - Click the dropdown next to monitor type, and click "HTTP(s)"
 
-![Arrow pointing to "HTTP(s)" in monitor type dropdown](https://cloud-qbitd29kl.vercel.app/1typehttp.png)
+![Arrow pointing to "HTTP(s)" in monitor type dropdown](https://cdn.hackclub.com/rescue?url=https://cloud-qbitd29kl.vercel.app/1typehttp.png)
 
 - Enter anything for friendly name, set the URL as your repl.it preview URL, and make sure you uncheck any alert contacts.
 
-![Arrows pointing to empty URL field and unchecked alert contacts - Bolt doesn't actually serve any HTTP requests to it and will return 404s, creating useless alerts](https://cloud-qbitd29kl.vercel.app/0monitordetails.png)
+![Arrows pointing to empty URL field and unchecked alert contacts - Bolt doesn't actually serve any HTTP requests to it and will return 404s, creating useless alerts](https://cdn.hackclub.com/rescue?url=https://cloud-qbitd29kl.vercel.app/0monitordetails.png)
 
 - Click "Create Monitor", and you're done!
 
-![Dumbledore and Snape partying](https://cloud-pq5lbfiab.vercel.app/3dumbledoreparty.gif)
+![Dumbledore and Snape partying](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/3dumbledoreparty.gif)
 
 ## What's next?
 

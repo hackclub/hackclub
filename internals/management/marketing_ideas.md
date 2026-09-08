@@ -2,7 +2,7 @@
 
 Working document for holding marketing ideas for Hack Club. Results from first brainstorm:
 
-![](https://cloud-9k9k1srj8-hack-club-bot.vercel.app/0BOwGkta.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-9k9k1srj8-hack-club-bot.vercel.app/0BOwGkta.png)
 
 Additional ideas below (include your name next to your idea):
 

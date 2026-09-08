@@ -2,12 +2,12 @@
 name: 'Handwriting Recognition'
 description: 'An introduction to machine learning with TensorFlow and Keras'
 author: '@rpalakkal'
-img: 'https://cloud-h61jcon63.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-h61jcon63.vercel.app/0image.png'
 ---
 
 Have you seen all the hype around machine learning and wondered what it's about and how to get started? Well, you're in the right place. In this workshop, we will be training a simple machine learning model to classify handwritten digits.
 
-![overview of different stages/phases of tutorial](https://cloud-h61jcon63.vercel.app/0image.png)
+![overview of different stages/phases of tutorial](https://cdn.hackclub.com/rescue?url=https://cloud-h61jcon63.vercel.app/0image.png)
 
 ## Getting Started
 
@@ -66,7 +66,7 @@ y_train original shape (60000,)
 
 Code in Colab is separatered into "cells", so you can separate the code you write and work with different data at different stages. Let's create a new code cell by hovering your mouse on the bottom of the current code cell:
 
-![gif showing creating a new cell](https://cloud-hhas3ruy1.vercel.app/0screen_recording_2021-01-18_at_5.44.07_pm.gif)
+![gif showing creating a new cell](https://cdn.hackclub.com/rescue?url=https://cloud-hhas3ruy1.vercel.app/0screen_recording_2021-01-18_at_5.44.07_pm.gif)
 
 Before preparing the dataset, let us look at some samples of training data. When approaching machine learning problems, visualizing data, when possible, is a great thing to do since it gives useful insights. We can do this using Matplotlib, a Python library that allows us to create simple plots and images from mathematical data.
 
@@ -83,7 +83,7 @@ for i in range(9):
 plt.tight_layout()
 ```
 
-![examples of correct predictions](https://cloud-lc775uvcv.vercel.app/3kerasmnist_9_0.png)
+![examples of correct predictions](https://cdn.hackclub.com/rescue?url=https://cloud-lc775uvcv.vercel.app/3kerasmnist_9_0.png)
 
 The `plt.imshow` function converts the digit matrix (all the images are stored as matrices, as we'll soon see) into a visible image. Curious to see what the raw data looks like? Let's take a look. Add these two `print` statements in a new cell and click the Play button to run the cell.
 
@@ -154,7 +154,7 @@ As you can see, each image is a matrix of size 28 pixels by 28 pixels. Each pixe
 
 ### Preparing the Data for Training
 
-![diagram showing converting 28x28 image to 784 vector](https://cloud-iyr53pwod.vercel.app/0image.png)
+![diagram showing converting 28x28 image to 784 vector](https://cdn.hackclub.com/rescue?url=https://cloud-iyr53pwod.vercel.app/0image.png)
 
 The neural network will take a single vector for training, so the 28x28 images have to be changed into a single 784 dimensional vector. Also we must normalize the pixel values to be from [0->1] instead of [0->255].
 
@@ -363,7 +363,7 @@ print(Y_train[0])
 
 Now we will build our neural network. The high-level tf.keras API makes this part much easier and does the heavy lifting for us. We will use a simple 3 layer fully-connected network.
 
-![neural network diagram](https://cloud-b5i7d98ox.vercel.app/0image.png)
+![neural network diagram](https://cdn.hackclub.com/rescue?url=https://cloud-b5i7d98ox.vercel.app/0image.png)
 
 In a new cell, add:
 
@@ -501,7 +501,7 @@ plt.tight_layout()
 ```
 
 
-![example of correct predictions](https://cloud-lc775uvcv.vercel.app/5kerasmnist_38_0.png)
+![example of correct predictions](https://cdn.hackclub.com/rescue?url=https://cloud-lc775uvcv.vercel.app/5kerasmnist_38_0.png)
 
 
 
@@ -516,7 +516,7 @@ plt.tight_layout()
 ```
 
 
-![examples of incorrect predictions](https://cloud-lc775uvcv.vercel.app/1kerasmnist_39_0.png)
+![examples of incorrect predictions](https://cdn.hackclub.com/rescue?url=https://cloud-lc775uvcv.vercel.app/1kerasmnist_39_0.png)
 
 
 I find it super interesting to see how numbers that even people might mix up causes trouble for our neural network too! 

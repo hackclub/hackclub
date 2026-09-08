@@ -2,7 +2,7 @@
 name: 'Mini Calendar'
 description: 'Build a simple mini calendar with ReactJS.'
 author: '@faisalsayed10'
-img: 'https://cloud-d3dt7t9w5.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-d3dt7t9w5.vercel.app/0image.png'
 ---
 
 # Mini Calendar
@@ -11,13 +11,13 @@ You probably must have heard about [React](https://reactjs.org/) more often thes
 
 Here's what it will look like:
 
-[![Final Output](https://cloud-l3dj39n5y.vercel.app/0image.png)](https://vjm3f.csb.app/)
+[![Final Output](https://cdn.hackclub.com/rescue?url=https://cloud-l3dj39n5y.vercel.app/0image.png)](https://vjm3f.csb.app/)
 
 Here's the [source code](https://codesandbox.io/s/mini-calendar-vjm3f).
 
 ## Part 1: Prerequisites
 
-![React image](https://cloud-lnw8nf1tb.vercel.app/0image.png)
+![React image](https://cdn.hackclub.com/rescue?url=https://cloud-lnw8nf1tb.vercel.app/0image.png)
 
 You should have some familiarity with HTML and JavaScript as well as programming functions like functions, objects, arrays etc. If you know some basics of React, It will be good for you. If not, I will recommend you [this](https://workshops.hackclub.com/nextjs_starter/) workshop. But don't worry, you should be able to follow along regardless. If you're having trouble, feel free to ask [me](https://app.slack.com/client/T0266FRGM/user_profile/U014ND5P1N2) or anyone in the [Hack Club Slack](https://hackclub.com/slack/)!
 
@@ -35,7 +35,7 @@ Let's first have a look at our project's file structure.
 
 First, there are 2 main directories and a package.json file. We'll ignore the package.json file for now and let's have a look at the 2 directories, namely, `public/` and `src/`.
 
-![The image of file structure](https://cloud-94vhfibmh.vercel.app/0image.png)
+![The image of file structure](https://cdn.hackclub.com/rescue?url=https://cloud-94vhfibmh.vercel.app/0image.png)
 
 Usually, the `public/` directory contains an HTML file and all your assets. We won't be touching the `public/` directory during the whole workshop, not even the HTML file!
 
@@ -61,11 +61,11 @@ At line 1, we import React into our file. Similarly, at line 2, we import the CS
 
 Also, this is a React component, so the function will always return jsx code.
 
-![the image showing jsx vs html](https://cloud-forah828h.vercel.app/0image.png)
+![the image showing jsx vs html](https://cdn.hackclub.com/rescue?url=https://cloud-forah828h.vercel.app/0image.png)
 
 **What is jsx?** All the code from line 6 to 9 is known as jsx. It is pretty much similar to HTML but there are few differences which we'll see as we go along.
 
-![Image of jsx in the code](https://cloud-iqybgr1sn.vercel.app/0image.png)
+![Image of jsx in the code](https://cdn.hackclub.com/rescue?url=https://cloud-iqybgr1sn.vercel.app/0image.png)
 
 You'll see that instead of using `class` in our `<div>` tag, we are using `className`, this is one of the difference between jsx and HTML. Whenever we add class to our element in React, we'll use `className` instead of `class`.
 
@@ -76,7 +76,7 @@ Now, have a look at the `components/` directory, it contains a `components.css` 
 Navigate, to `App.js` file and remove the heading tags from the code.
 Let's now start writing some code!
 
-![React Components Visual](https://cloud-nkzzi8sgq.vercel.app/0image.png)
+![React Components Visual](https://cdn.hackclub.com/rescue?url=https://cloud-nkzzi8sgq.vercel.app/0image.png)
 
 [**What are Components?**](https://www.w3schools.com/react/react_components.asp)
 
@@ -88,7 +88,7 @@ Let's start writing our very first component! Navigate to the `components/` dire
 
 **Note:** For naming filenames in React, we use the `TitleCase` convention.
 
-![5 main steps in writing React](https://cloud-9ssjsk1b2.vercel.app/0image.png)
+![5 main steps in writing React](https://cdn.hackclub.com/rescue?url=https://cloud-9ssjsk1b2.vercel.app/0image.png)
 
 Next, open the file which you just created and let's write our first React code.
 
@@ -211,7 +211,7 @@ return (
 
 Now if you look at the preview, you'll be amazed to see that we have correctly written our React code!
 
-![Preview of our code](https://cloud-lbrmfr4kt.vercel.app/0image.png)
+![Preview of our code](https://cdn.hackclub.com/rescue?url=https://cloud-lbrmfr4kt.vercel.app/0image.png)
 
 But, we have hardcoded our date, right? Let's fix that now.
 
@@ -219,7 +219,7 @@ But, we have hardcoded our date, right? Let's fix that now.
 
 In our CalendarUI component, we'll now use a hook called as `useState()`. It is an efficient way of managing our data by storing them in states and rendering it in our component. (You can do many more things with the state).
 
-![A fancy image of useState](https://cloud-90fxjk0al.vercel.app/0image.png)
+![A fancy image of useState](https://cdn.hackclub.com/rescue?url=https://cloud-90fxjk0al.vercel.app/0image.png)
 
 First, we'll import it from `react`. So we'll change the first line as:
 
@@ -256,7 +256,7 @@ Explanation: the `getFullYear()` method will give us the current year and the `g
 
 But for month and day, if we use `getMonth()` and `getDay()` it returns the value in numbers. So if we want to get them in words, we need to use something called `toLocaleString()` which takes in our locale as the first parameter and an object with the value we want to return with its type. So, we put in the `default` locale and then we return the `month` and the `weekday` as `long`.
 
-![toLocaleString's better and visual example](https://cloud-q3tkunf3l.vercel.app/0image.png)
+![toLocaleString's better and visual example](https://cdn.hackclub.com/rescue?url=https://cloud-q3tkunf3l.vercel.app/0image.png)
 
 **Note:** This is nothing React specific but it is how we would have done in JavaScript.
 
@@ -268,7 +268,7 @@ Here comes the best thing about React.
 
 Remember how we used to pass JavaScript variables inside HTML?
 
-![Way of doing it in JavaScript](https://cloud-otycuvap3.vercel.app/0image.png)
+![Way of doing it in JavaScript](https://cdn.hackclub.com/rescue?url=https://cloud-otycuvap3.vercel.app/0image.png)
 
 This is one of the way of doing it in plain JavaScript. But surprisingly, React can do this job better! Here's how:
 
@@ -345,7 +345,7 @@ Now states are limited to that component itself. So we can't access our `today` 
 
 So we'll need to pass that state in the form of `props` to our `ChangeDate` component. But for that, `ChangeDate` component needs to be the child component of `CalendarUI`. Confused? You'll understand it better once you write the code.
 
-![Helpful image of props](https://cloud-gtd06qax5.vercel.app/0image.png)
+![Helpful image of props](https://cdn.hackclub.com/rescue?url=https://cloud-gtd06qax5.vercel.app/0image.png)
 
 So we will import our `ChangeDate` component inside our `CalendarUI` component and then we'll render it there.
 
@@ -377,7 +377,7 @@ const CalendarUI = () => {
 ```
 But now, the browser will be badly yelling at you!!
 
-![Rare footage of browser yelling at me](https://cloud-62rjhf9pw.vercel.app/0image.png)
+![Rare footage of browser yelling at me](https://cdn.hackclub.com/rescue?url=https://cloud-62rjhf9pw.vercel.app/0image.png)
 
 That is because we are rendering the `<ChangeDate />` outside the parent element. But here, we can't take it in because it will become a flex child (the `container` className is set to `display: flex`) and will be displayed weirdly on the browser.
 
@@ -483,7 +483,7 @@ We have basically taken 2 SVGs from [Heroicons](heroicons.com) and inserted them
 
 This is what you'll see in the preview window now.
 
-![Preview Image](https://cloud-f4ky58l37.vercel.app/0image.png)
+![Preview Image](https://cdn.hackclub.com/rescue?url=https://cloud-f4ky58l37.vercel.app/0image.png)
 
 We have our UI totally set up. Now we'll implement 3 functions to go back, forth and also to get back to the current date.
 
@@ -622,7 +622,7 @@ export default ChangeDate;
 
 Yay! I'm happy to say that this is the end of our workshop! Yes, we have completed building our React Calendar!
 
-![Final Product](https://cloud-6zp1v14uh.vercel.app/0final_product.gif)
+![Final Product](https://cdn.hackclub.com/rescue?url=https://cloud-6zp1v14uh.vercel.app/0final_product.gif)
 
 ## Part 4: The End
 

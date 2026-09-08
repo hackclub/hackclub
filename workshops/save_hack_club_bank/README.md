@@ -102,7 +102,7 @@ She says he is very dumb and lazy and would probably have used the **SHA-1 hash 
 
 ## Let the great hack begin 🐱‍💻
 
-Okay, so this is a small list of passwords [link to passwords](https://cloud-nlh1tynsg.vercel.app/0wordlist.txt) that people like Badlo generally use! ( yes, these are available over the internet! really! )
+Okay, so this is a small list of passwords [link to passwords](https://cdn.hackclub.com/rescue?url=https://cloud-nlh1tynsg.vercel.app/0wordlist.txt) that people like Badlo generally use! ( yes, these are available over the internet! really! )
 
 Now [open this repl.it.](https://repl.it/@HARSHBAJPAI1/passwordcrackertemplate#index.js) I have already **made a template repl for you.** This repl has some code that we have already written for you which will save some development time for us! ( **don't delete any file from the repl** )
 

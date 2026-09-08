@@ -2,7 +2,7 @@
 name: 'Cronômetro'
 description: 'Construa um cronômetro simples com HTML, CSS & JavaScript'
 author: '@faisalsayed10, @gabriellimma'
-img: 'https://cloud-jh559xslj.vercel.app/2020-10-23_yp6wgrcauymhtq97uk24vk0kj64fu8d3.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-jh559xslj.vercel.app/2020-10-23_yp6wgrcauymhtq97uk24vk0kj64fu8d3.png'
 locales: 'pt-br'
 ---
 

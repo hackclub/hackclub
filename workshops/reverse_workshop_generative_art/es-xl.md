@@ -8,7 +8,7 @@ author: '@leomcelroy'
 
 Vamos a crear algo así:
 
-![Objetivo del taller](https://cloud-7m2tx179d-hack-club-bot.vercel.app/0gif1.gif)
+![Objetivo del taller](https://cdn.hackclub.com/rescue?url=https://cloud-7m2tx179d-hack-club-bot.vercel.app/0gif1.gif)
 
 Este es otro taller invertido, en lugar de decirte cómo hacer algo paso a paso; te voy a dar algo de inspiración y los materiales que necesitas para hacerlo.
 

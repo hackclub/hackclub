@@ -2,12 +2,12 @@
 name: 'ASCII Hangman'
 description: 'Make a simple hangman game using Java'
 author: '@rpalakkal, @LYZ2003'
-img: 'https://cloud-dwjtmgeuk.vercel.app/0screen_shot_2020-11-18_at_5.48.30_pm.png' 
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-dwjtmgeuk.vercel.app/0screen_shot_2020-11-18_at_5.48.30_pm.png' 
 ---
 
 # Making Hangman with Java
 
-![screenshot of extension 1: hangman with gallows](https://cloud-dwjtmgeuk.vercel.app/0screen_shot_2020-11-18_at_5.48.30_pm.png)
+![screenshot of extension 1: hangman with gallows](https://cdn.hackclub.com/rescue?url=https://cloud-dwjtmgeuk.vercel.app/0screen_shot_2020-11-18_at_5.48.30_pm.png)
 
 All of us have played hangman before, the classic game where one person tries to guess someone else’s word. You can play it anywhere and it’s extremely simple, making it one of the best childhood games. It is actually fairly simple to make it in Java and should be a fun little project. 
 
@@ -18,7 +18,7 @@ A basic understanding of Java and general concepts like conditionals and loops w
 ## Part 1: Getting Started
 Ok, let's start coding! Today, we will be using repl.it, a super convenient online code editor. Start up your Java program by going to [repl.it/languages/java](https://repl.it/languages/java). Your coding environment will spin up in a few seconds!
 
-![replit java starter code](https://cloud-q1jb0eal0.vercel.app/0screen_shot_2020-11-17_at_11.46.44_am.png)
+![replit java starter code](https://cdn.hackclub.com/rescue?url=https://cloud-q1jb0eal0.vercel.app/0screen_shot_2020-11-17_at_11.46.44_am.png)
 
 ## Part 2: The Man Class
 For our hangman game, we will be creating two classes, one of them being a Man class. We could squeeze all the code into a single class, but we find separating the code into two classes to be easier. The Man class will be handling everything related to the hangman, such as the drawing of the hangman, and keeping track of whether it’s dead or alive.
@@ -41,7 +41,7 @@ public class Man {
 }
 ```
 
-![gif of creating Man.java file](https://cloud-ltb9tmqd5.vercel.app/0ezgif-3-eec22c123a04.gif)
+![gif of creating Man.java file](https://cdn.hackclub.com/rescue?url=https://cloud-ltb9tmqd5.vercel.app/0ezgif-3-eec22c123a04.gif)
 
 We use the `public` keyword so that our Man can be accessed by other classes too (you will see that in comes in handy in later steps). Now let’s create some fields, which are variables specific to the class.
 
@@ -176,7 +176,7 @@ This will generate a `Man.class` file (it might not show up in the repl file exp
 
 Next type `java Man` and see what happens. You should see all the different stages of the man being hanged before dying. Hopefully your output looks something like this!
 
-![gif of man main method printing out body iterations](https://cloud-3roj4qo0k.vercel.app/0ezgif-3-0750425b5630.gif)
+![gif of man main method printing out body iterations](https://cdn.hackclub.com/rescue?url=https://cloud-3roj4qo0k.vercel.app/0ezgif-3-0750425b5630.gif)
 
 Now let’s take this man class and use it in our Main class.
 
@@ -214,7 +214,7 @@ public class Main {
 
 You can try running the code now to see what we have acheived so far (since this is in the `Main` class, we can just use the Repl run button). 
 
-![running the prompt word code of main class](https://cloud-cjkgtz9ll.vercel.app/0ezgif-3-5dcd20b53aab.gif)
+![running the prompt word code of main class](https://cdn.hackclub.com/rescue?url=https://cloud-cjkgtz9ll.vercel.app/0ezgif-3-5dcd20b53aab.gif)
 
 Great, our code can accept a secret word! Now we will need to create another Array of characters of same length as letters and have all the letters be underscores with the help of a for loop. We can add the following inside the `Main` class (beneath our previous `for` loop).
 
@@ -323,7 +323,7 @@ else System.out.println("Game over!  Player 1 wins!");
 
 Now we’re done! Try running it by clicking the big green Run button at the top. Go grab a friend or a parent, and see who wins in your very own hangman game! One quick note, when you type in the secret word, you will need to hit “enter” for the Console to register your word.
 
-![screenshot of hangman game with the word "hackclub"](https://cloud-rioba1jmo.vercel.app/0screen_shot_2020-11-18_at_5.32.09_pm.png)
+![screenshot of hangman game with the word "hackclub"](https://cdn.hackclub.com/rescue?url=https://cloud-rioba1jmo.vercel.app/0screen_shot_2020-11-18_at_5.32.09_pm.png)
 
 ## Part 6: Hacking
 The fun doesn’t stop here! You may already have some ideas for how to create extensions to improve your game and you should definitely try them out. So, here of some of our ideas and perhaps you can gain some inspiration for more amazing extensions:

@@ -2,14 +2,14 @@
 name: 'Atari Breakout'
 description: 'Build the classic Atari Breakout game using p5.js'
 author: '@shayanhalder'
-img: 'https://cloud-lmpjifksy.vercel.app/0atari_breakout_workshop_cover_image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-lmpjifksy.vercel.app/0atari_breakout_workshop_cover_image.png'
 ---
 
 In this workshop, we'll be making the classic Atari Breakout game! This workshop is aimed towards anyone who wants an introduction to basic game development in JavaScript. Game development is one of the best ways to learn coding-- it strengthens your problem solving skills in a rewarding and exciting way!
 
 This is what we'll build by the end of the workshop:       
 
-![GIF Demo of Atari Breakout Game](https://cloud-ac6sditv8.vercel.app/0atari_breakout_workshop_gif.gif)    
+![GIF Demo of Atari Breakout Game](https://cdn.hackclub.com/rescue?url=https://cloud-ac6sditv8.vercel.app/0atari_breakout_workshop_gif.gif)    
 
 [Live Demo](https://atari-breakout.shayanhalder1.repl.co/)    
 [Full Code](https://repl.it/@shayanhalder1/Atari-Breakout#script.js) 
@@ -166,7 +166,7 @@ function draw() {
 ```
 `background()` can take in many different formats to display color, which can be found in the [documentation](https://p5js.org/reference/#/p5/background). We also added 3 more functions which we'll implement later. If you run the program now, you should see 6 rows and 10 columns of red bricks as seen below:   
 
-![Image of Bricks](https://cloud-7n2ffoi70.vercel.app/0atari_breakout_workshop_ex_1.png)    
+![Image of Bricks](https://cdn.hackclub.com/rescue?url=https://cloud-7n2ffoi70.vercel.app/0atari_breakout_workshop_ex_1.png)    
 
 ## Input Handling   
 p5.js has two functions specifically tailored for handling input: `keyPressed()` and `keyReleased()`. As the name might suggest, `keyPressed()` is automatically run whenever any key is pressed while `keyReleased()` is run whenever any key is released.   
@@ -249,7 +249,7 @@ We adjust the `if` statements to make sure that the paddle is within the canvas 
 
 At this point, your game should look like this:     
 
-![Moving Paddle](https://cloud-qbd1awcy5.vercel.app/0atari_breakout_workshop_ex_2.gif)    
+![Moving Paddle](https://cdn.hackclub.com/rescue?url=https://cloud-qbd1awcy5.vercel.app/0atari_breakout_workshop_ex_2.gif)    
 
 ## Animating The Ball   
 
@@ -417,7 +417,7 @@ If there aren't any bricks left, we display "You Win!" on the screen using the `
 
 Your final product should look like this:   
 
-![GIF Demo of Atari Breakout Game](https://cloud-ac6sditv8.vercel.app/0atari_breakout_workshop_gif.gif)      
+![GIF Demo of Atari Breakout Game](https://cdn.hackclub.com/rescue?url=https://cloud-ac6sditv8.vercel.app/0atari_breakout_workshop_gif.gif)      
 
 Congratulations, you just built Atari Breakout in JavaScript!  
 

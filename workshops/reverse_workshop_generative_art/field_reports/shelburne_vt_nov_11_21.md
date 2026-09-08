@@ -7,7 +7,7 @@
 ### Attendence: 20 
 ### Written by: Tevan Goldberg
 
-![11/11 meeting](https://cloud-675c4j3rq-hack-club-bot.vercel.app/2img_14fb77f25dac-1.jpeg)
+![11/11 meeting](https://cdn.hackclub.com/rescue?url=https://cloud-675c4j3rq-hack-club-bot.vercel.app/2img_14fb77f25dac-1.jpeg)
 
 ## Overview
 
@@ -27,18 +27,18 @@ Leo threw on a pretty sample output of the workshop on the big monitor before th
 
 By about ten minutes in we were more on track, although I was still busy getting people onto the correct pages for over 30 minutes. Like with the last reverse workshop there was some confusion and resistance at first, which gave way to excitement once the basic workshop mechanics were deciphered. The key once again was encouraging close reading of the example code, which looked like this:
 
-![codesnippet](https://cloud-675c4j3rq-hack-club-bot.vercel.app/3screen_shot_2021-11-15_at_2.34.03_pm.png)
+![codesnippet](https://cdn.hackclub.com/rescue?url=https://cloud-675c4j3rq-hack-club-bot.vercel.app/3screen_shot_2021-11-15_at_2.34.03_pm.png)
 
 
  Most people began by copying and pasting the snippets wholesale into the editor, which resulted in many redundant lines. Getting them to think more precisely about fitting them together and finding the differences/similarities between each example worked pretty well. 
 
 Here are some of the notable outputs from the meeting: 
 
-![rainbow](https://cloud-675c4j3rq-hack-club-bot.vercel.app/0screen_shot_2021-11-15_at_1.11.10_pm.png)
+![rainbow](https://cdn.hackclub.com/rescue?url=https://cloud-675c4j3rq-hack-club-bot.vercel.app/0screen_shot_2021-11-15_at_1.11.10_pm.png)
 
-![flower_of_lines](https://cloud-675c4j3rq-hack-club-bot.vercel.app/1screen_shot_2021-11-15_at_1.11.32_pm.png)
+![flower_of_lines](https://cdn.hackclub.com/rescue?url=https://cloud-675c4j3rq-hack-club-bot.vercel.app/1screen_shot_2021-11-15_at_1.11.32_pm.png)
 
-![rainbowdots](https://cloud-61tmjabiu-hack-club-bot.vercel.app/0screen_shot_2021-11-15_at_3.06.33_pm.png)
+![rainbowdots](https://cdn.hackclub.com/rescue?url=https://cloud-61tmjabiu-hack-club-bot.vercel.app/0screen_shot_2021-11-15_at_3.06.33_pm.png)
 
 Pretty groovy for 1 hour of intro JavaScript huh? 
 

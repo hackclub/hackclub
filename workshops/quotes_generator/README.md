@@ -2,7 +2,7 @@
 name: 'Quotes Generator'
 description: 'Build a random quotes generator with ReactJS'
 author: '@faisalsayed10'
-img: 'https://cloud-kuvixvb93.vercel.app/0quotes-generator.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-kuvixvb93.vercel.app/0quotes-generator.png'
 locales: 'pt-br, es-xl'
 ---
 
@@ -10,7 +10,7 @@ locales: 'pt-br, es-xl'
 
 In this workshop, we'll be building a random quotes generator using an API in React. By the end of it, you'll have learned about handling APIs in React, as well as some cool concepts like React Hooks!
 
-[![Quotes Generator](https://cloud-fl1p1zjes.vercel.app/0image.png)](https://rzfit.csb.app/)
+[![Quotes Generator](https://cdn.hackclub.com/rescue?url=https://cloud-fl1p1zjes.vercel.app/0image.png)](https://rzfit.csb.app/)
 
 Here's the [source code](https://codesandbox.io/s/random-quotes-generator-rzfit).
 
@@ -30,7 +30,7 @@ To get started, go to this [starter code](https://codesandbox.io/s/quotesgenerat
 
 Let's first have a look at our project's starter code.
 
-![image of directories in our project](https://cloud-9ne6wtuvp.vercel.app/0image.png)
+![image of directories in our project](https://cdn.hackclub.com/rescue?url=https://cloud-9ne6wtuvp.vercel.app/0image.png)
 
 First, there are 2 main directories and a `package.json` file. We'll ignore the `package.json` file for now and let's have a look at the 2 directories, namely, `public/` and `src/`.
 
@@ -80,17 +80,17 @@ We built a very basic UI for our project and everything is self-explanatory here
 
 This is what your preview window should look like:
 
-![Preview window](https://cloud-1ugc07d1z.vercel.app/0image.png)
+![Preview window](https://cdn.hackclub.com/rescue?url=https://cloud-1ugc07d1z.vercel.app/0image.png)
 
 ### 3) API Call
 
 Basically, we'll be making an API request to a url which will return us a json of quotes and their authors. Then we'll store this data in a state using the `useState` hook so we can re-render our component whenever it changes.
 
-![useState's epic picture](https://cloud-90fxjk0al.vercel.app/0image.png)
+![useState's epic picture](https://cdn.hackclub.com/rescue?url=https://cloud-90fxjk0al.vercel.app/0image.png)
 
 The url where we will make the request is `https://type.fit/api/quotes`. If you open this link in the browser, you'll see a json file full of quotes!
 
-![What you see in the browser](https://cloud-h7wzq13xb.vercel.app/0image.png)
+![What you see in the browser](https://cdn.hackclub.com/rescue?url=https://cloud-h7wzq13xb.vercel.app/0image.png)
 
 Let's start working with it.
 
@@ -114,7 +114,7 @@ Explanation: We create a `url` variable using `const` so its value never changes
 
 Now let's write a function which will make the API request and fetch the data from that URL. We'll use `async functions` because it will return us a promise. We'll also use `await` inside the `async function`.
 
-![Image of async await which looks cool](https://cloud-b58j7jpbu.vercel.app/0image.png)
+![Image of async await which looks cool](https://cdn.hackclub.com/rescue?url=https://cloud-b58j7jpbu.vercel.app/0image.png)
 
 The `await` operator is used to wait for a `Promise` to either resolve or reject. It can only be used inside an `async function`.
 
@@ -140,13 +140,13 @@ Explanation: Inside our `async` function, we add a `try` / `catch` block, which 
 
 The `catch` block will simply catch an error (if any) and then log it to the console.
 
-![try catch example](https://cloud-oxjmrq4w2.vercel.app/0image.png)
+![try catch example](https://cdn.hackclub.com/rescue?url=https://cloud-oxjmrq4w2.vercel.app/0image.png)
 
 Our `async` function is complete and we can now use the data we got from the API request.
 
 Now if we take a look at the value stored inside our state, we'll notice that it is a whole big array consisting of 100s of objects containing quotes! 
 
-![Image of the state containing 100s of quotes](https://cloud-7drh3ecj9.vercel.app/0image.png)
+![Image of the state containing 100s of quotes](https://cdn.hackclub.com/rescue?url=https://cloud-7drh3ecj9.vercel.app/0image.png)
 
 **NOTE:** You can check this in the codeSandbox's `React DevTools` (next to the console).
 
@@ -180,7 +180,7 @@ This will return us the object which is on the index of the `randomNo()`.
 
 Now only one random object containing the quote and the author will be stored inside the `quotes` state.
 
-![Only 1 quote getting stored in the state](https://cloud-7drh3ecj9.vercel.app/1image.png)
+![Only 1 quote getting stored in the state](https://cdn.hackclub.com/rescue?url=https://cloud-7drh3ecj9.vercel.app/1image.png)
 
 <details><summary>Your code so far:</summary>
 
@@ -220,7 +220,7 @@ export default function App() {
 
 The next thing we want to implement is that we want to get a random quote everytime our website is loaded. This can easily be done by creating a `useEffect` hook inside our component, calling our `getQuotes()` function in it and passing an empty dependency array to it.
 
-![useEffect's photo](https://cloud-q749otmin.vercel.app/0image.png)
+![useEffect's photo](https://cdn.hackclub.com/rescue?url=https://cloud-q749otmin.vercel.app/0image.png)
 
 **Note:** Make sure you import `useEffect` from `react`.
 
@@ -311,7 +311,7 @@ export default function App() {
 </details>
 
 This what our project looks like:
-![Final Preview](https://cloud-i1q4mn5yo.vercel.app/0final_preview.gif)
+![Final Preview](https://cdn.hackclub.com/rescue?url=https://cloud-i1q4mn5yo.vercel.app/0final_preview.gif)
 
 Yay! We are done! We learnt how to handle APIs in React and we built a simple but sweet random quotes generator!!
 

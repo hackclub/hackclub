@@ -2,7 +2,7 @@
 name: 'Reading the Internet'
 description: 'Use Python to read HTML and extract any information you can find!'
 author: '@RafaelCenzano'
-img: 'https://cloud-p5pdve0kf.vercel.app/2webscrape.jpg'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-p5pdve0kf.vercel.app/2webscrape.jpg'
 ---
 
 We can read all the content on websites, but wouldn't it be cool if we could automatically read specific data from websites whenever you wanted? If this interested you, this workshop is for you. I will be showing you how to use webscraping to create a tool that can gather current COVID data and displays it as text.
@@ -11,13 +11,13 @@ We can read all the content on websites, but wouldn't it be cool if we could aut
 
 [Final Result and Code](https://repl.it/@SavageCoder77/Read-The-Internet#main.py)
 
-![Terminal output with covid data](https://cloud-aui60bjja.vercel.app/0screen_shot_2021-01-13_at_4.01.40_pm.png)
+![Terminal output with covid data](https://cdn.hackclub.com/rescue?url=https://cloud-aui60bjja.vercel.app/0screen_shot_2021-01-13_at_4.01.40_pm.png)
 
 ## Prerequisites
 You should have a basic understanding of **HTML** and **Python** and how to use variables and objects.
 
 ## Setup
-![Lets do it gif](https://cloud-p23nck0rj.vercel.app/1lets-start.gif)
+![Lets do it gif](https://cdn.hackclub.com/rescue?url=https://cloud-p23nck0rj.vercel.app/1lets-start.gif)
 
 We will be using [repl.it](https://repl.it), an online code editor that allows you to write and run code from any computer!
 
@@ -25,7 +25,7 @@ Spin up a Python3 repl by [clicking here](https://repl.it/languages/python3).
 
 Before we can start coding, we need to install a couple of external libraries. Follow the image below to find where to add the packages. Once in this menu you will need to install `beautifulsoup4`, `requests`, and `lxml`.
 
-![Repl.it packages menu](https://cloud-p5pdve0kf.vercel.app/0ezgif.com-video-to-gif.gif)
+![Repl.it packages menu](https://cdn.hackclub.com/rescue?url=https://cloud-p5pdve0kf.vercel.app/0ezgif.com-video-to-gif.gif)
 
 #### What each package does
  `requests` is a Python library which makes it very easy to request a webpage. Requesting a webpage means we give the `requests` library a url and it returns all the HTML from the url we provide.
@@ -46,7 +46,7 @@ Before we can start coding, we need to install a couple of external libraries. F
 
 ## Lets start coding!
 
-![Start coding gif](https://cloud-5bmb4t5tp.vercel.app/1start-coding.gif)
+![Start coding gif](https://cdn.hackclub.com/rescue?url=https://cloud-5bmb4t5tp.vercel.app/1start-coding.gif)
 
 Once you've installed the packages, open the `main.py` file in the sidebar on the left. Then, import the packages you just installed.
 
@@ -75,7 +75,7 @@ Now that we have our BeautifulSoup object we can go all of the HTML!
 
 ### Working with the parsed HTML
 
-![HTML gif](https://cloud-5bmb4t5tp.vercel.app/2html.gif)
+![HTML gif](https://cdn.hackclub.com/rescue?url=https://cloud-5bmb4t5tp.vercel.app/2html.gif)
 
 In the next step, we'll be working with data from an HTML table. The website that contains the COVID data uses HTML tables. The structure of an HTML table can be a little confusing so lets break it down first.
 
@@ -111,7 +111,7 @@ Some tables can be really large, like the ones used on the COVID data website, b
 
 We're going to use BeautifulSoup to find an HTML table element. We want to find a specific table by ID `sortable_table_world` as seen in the picture. 
 
-![nCOVID table open with inspect element](https://cloud-p5pdve0kf.vercel.app/1inspect_element.png)
+![nCOVID table open with inspect element](https://cdn.hackclub.com/rescue?url=https://cloud-p5pdve0kf.vercel.app/1inspect_element.png)
 
 The code below finds the first table that matches that ID by using the `find()` function from the BeautifulSoup library. We are looking for a very specific table as shown in the picture below. We pass in `'table'` to specify we want an HTML table and pass in a dictionary that specifiies we want the table with the ID `sortable_table_world`. 
 
@@ -205,7 +205,7 @@ You can now get live COVID19 data, but more importantly you are now primed with 
 Here is the final code you can view and edit:
 [Final Result and Code](https://repl.it/@SavageCoder77/Read-The-Internet#main.py)
 
-![Sponge bob done gif](https://cloud-5bmb4t5tp.vercel.app/0completed.gif)
+![Sponge bob done gif](https://cdn.hackclub.com/rescue?url=https://cloud-5bmb4t5tp.vercel.app/0completed.gif)
 
 ## Hacking
 You can check out more advanced/in depth projects here. 
@@ -224,4 +224,4 @@ This workshop by Realpython goes more in depth and includes links to other resou
 ## What now?
 
 Go out there and create your own project! I'm sure you will blow us away
-![Mind blown](https://cloud-p23nck0rj.vercel.app/0amazed.gif)
+![Mind blown](https://cdn.hackclub.com/rescue?url=https://cloud-p23nck0rj.vercel.app/0amazed.gif)

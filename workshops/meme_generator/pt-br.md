@@ -2,7 +2,7 @@
 name: 'Gerador de Memes'
 description: 'Faça seu próprio gerador de memes com HTML, CSS e JavaScript!'
 author: '@aaryanporwal, @adrianoapj'
-img: 'https://cloud-qmqu378mz.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-qmqu378mz.vercel.app/0image.png'
 ---
 
 Você gosta de memes? Já quis fazer seu próprio, mas não sabia que aplicativo instalar? Não se preocupe, porque neste workshop, você criará seu próprio ***Gerador de Memes*** — ou, como gosto de chamar, o *Gênio Meme*.

@@ -2,7 +2,7 @@
 ## Introduction
 I'm sure you've used a timer before, whether for work or just for fun! Have you ever thought about how awesome it would be to create our own Pomodoro App? Well, today, we're going to make a simple yet helpful Pomodoro App!
 
-![pomodoro pic](https://cloud-5emsg0oga-hack-club-bot.vercel.app/0pomodoro_pic.png)
+![pomodoro pic](https://cdn.hackclub.com/rescue?url=https://cloud-5emsg0oga-hack-club-bot.vercel.app/0pomodoro_pic.png)
 
 You should have a beginner understanding of:
 
@@ -43,7 +43,7 @@ Once you have installed VS Code and forked the starter code repository:
 2. Click on the "FORK" button on the top right corner of the repository page.
 3. You're all set up and ready to start coding!
 
-![vscode](https://cloud-kcqvhviaz-hack-club-bot.vercel.app/0vscode.png)
+![vscode](https://cdn.hackclub.com/rescue?url=https://cloud-kcqvhviaz-hack-club-bot.vercel.app/0vscode.png)
 ### Building the Project
 
 #### 1. Starter Code
@@ -414,7 +414,7 @@ function addTask() {
 }
 ```
 Here is how it will be:
-[video link](https://cloud-8908hvpn1-hack-club-bot.vercel.app/0video.mp4)
+[video link](https://cdn.hackclub.com/rescue?url=https://cloud-8908hvpn1-hack-club-bot.vercel.app/0video.mp4)
 
 ## Conclusion
 The Pomodoro App was built using HTML, CSS, and JavaScript. HTML was used to create the structure of the app, defining elements like the timer display, control buttons, settings for work and break durations, and a task list. CSS was applied to style the app, including fonts from Google Fonts, setting the background color and layout of the app, styling the timer display, buttons, and input fields. JavaScript provided the interactivity, implementing functionalities such as starting, stopping, and resetting the timer, updating the timer display dynamically, and adding tasks to the task list. Together, these technologies enabled the creation of a fully functional Pomodoro App that helps users manage their work time effectively.

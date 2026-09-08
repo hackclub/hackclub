@@ -2,16 +2,16 @@
 name: 'Populous Cities'
 description: 'Create a map of 50 most populous cities using React Leaflet'
 author: '@faisalsayed10'
-img: 'https://cloud-na8vxu9zy.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-na8vxu9zy.vercel.app/0image.png'
 ---
 
 # Populous Cities
 
 Today, We'll be creating a simple bubbles map using a popular JavaScript library [`Leaflet`](https://leafletjs.com/). In fact the React version of it - [`React-Leaflet`](https://react-leaflet.js.org/).
 
-![React Leaflet's Epic Logo](https://cloud-d2ma3vev0.vercel.app/0image.png)
+![React Leaflet's Epic Logo](https://cdn.hackclub.com/rescue?url=https://cloud-d2ma3vev0.vercel.app/0image.png)
 
-[![Populous Cities](https://cloud-na8vxu9zy.vercel.app/0image.png)](https://9jq66.csb.app/)
+[![Populous Cities](https://cdn.hackclub.com/rescue?url=https://cloud-na8vxu9zy.vercel.app/0image.png)](https://9jq66.csb.app/)
 
 Here's the [source code](https://codesandbox.io/s/populous-cities-9jq66).
 
@@ -33,9 +33,9 @@ First, delete the `styles.css` file from your project as we won't need much CSS 
 
 Now let's install the 2 dependencies, namely `leaflet` and `react-leaflet` into your project. To do this, simply search for those dependencies in the left column and install it by selecting it.
 
-![Searching for the dependency](https://cloud-6du06y3zt.vercel.app/0image.png)
+![Searching for the dependency](https://cdn.hackclub.com/rescue?url=https://cloud-6du06y3zt.vercel.app/0image.png)
 
-![Installing it](https://cloud-j0qh8nov4.vercel.app/1image.png)
+![Installing it](https://cdn.hackclub.com/rescue?url=https://cloud-j0qh8nov4.vercel.app/1image.png)
 
 Let’s edit `App.js` by removing unnecessary lines of code and importing modules from `react-leaflet` that we just installed.
 
@@ -86,7 +86,7 @@ Learn more about the [`MapContainer component`](https://react-leaflet.js.org/doc
 
 You'll be able to see a basic map container rendered on the browser!
 
-![Basic MapContainer rendered](https://cloud-6du06y3zt.vercel.app/1image.png)
+![Basic MapContainer rendered](https://cdn.hackclub.com/rescue?url=https://cloud-6du06y3zt.vercel.app/1image.png)
 
 Next we’ll add a TileLayer inside our `MapContainer`. It is used to load and display tile layers of the map using a specific tile url.
 
@@ -104,7 +104,7 @@ Voila! We can see the map of the world rendered on the browser!
 
 Learn more about the [`TileLayer component`](https://react-leaflet.js.org/docs/api-components#tilelayer).
 
-![map of the world](https://cloud-9rkjo4k27.vercel.app/0image.png)
+![map of the world](https://cdn.hackclub.com/rescue?url=https://cloud-9rkjo4k27.vercel.app/0image.png)
 
 Here, we finish building a very basic map of the world using `react-leaflet`!
 
@@ -152,7 +152,7 @@ Explanation: We create an async function `fetchCities` inside `useEffect` which 
 
 Now, we can see our data stored inside the `cities` state!
 
-![data stored inside the cities state](https://cloud-hd193mw81.vercel.app/0image.png)
+![data stored inside the cities state](https://cdn.hackclub.com/rescue?url=https://cloud-hd193mw81.vercel.app/0image.png)
 
 **NOTE:** This can be seen in the console.
 
@@ -256,7 +256,7 @@ Learn more about the [`CircleMarker component`](https://react-leaflet.js.org/doc
 
 Woah! Woah! Woah! Look what you just built! We have a bubble mapped perfectly for each city and also with a varying size!
 
-![Bubble Mapped for each city](https://cloud-4rqd9f1k2.vercel.app/0image.png)
+![Bubble Mapped for each city](https://cdn.hackclub.com/rescue?url=https://cloud-4rqd9f1k2.vercel.app/0image.png)
 
 The most populous city has a bigger circle and the less populous cities have a slightly smaller circle and so on!
 
@@ -293,7 +293,7 @@ Learn more about the [`Tooltip component`](https://react-leaflet.js.org/docs/api
 
 Annnd we can see the tooltip on hover! Yippee!
 
-![Tooltip popup image](https://cloud-6jxscag6y.vercel.app/0image.png)
+![Tooltip popup image](https://cdn.hackclub.com/rescue?url=https://cloud-6jxscag6y.vercel.app/0image.png)
 
 ![WOOOOOWWW](https://media.giphy.com/media/M33UV4NDvkTHa/giphy.gif)
 
@@ -391,7 +391,7 @@ First, let's remove the continuity of the map. This can be simply done by adding
 </MapContainer>
 ```
 
-![Demo after writing the following code](https://cloud-5zffcevb4.vercel.app/01.gif)
+![Demo after writing the following code](https://cdn.hackclub.com/rescue?url=https://cloud-5zffcevb4.vercel.app/01.gif)
 
 YAY! We now have our map as a single layer and not as an infinite map! Exactly as we wanted!
 
@@ -447,7 +447,7 @@ Now, we'll also set the `maxBoundsViscosity` prop in the `MapContainer`. If maxB
 
 Now if you check your map, we have fixed all the little bugs and its looks much better now!
 
-![Final Demo](https://cloud-gejk7ab8m.vercel.app/02.gif)
+![Final Demo](https://cdn.hackclub.com/rescue?url=https://cloud-gejk7ab8m.vercel.app/02.gif)
 
 <details><summary>Your Final Code</summary>
 

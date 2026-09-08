@@ -2,14 +2,14 @@
 name: 'Website Mockup Generator'
 description: 'Build a website mockup generator with HTML, CSS, and JS'
 author: '@hackyguru'
-img: 'https://cloud-2j32ffnay.vercel.app/0screen_shot_2021-01-19_at_9.58.49_pm.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-2j32ffnay.vercel.app/0screen_shot_2021-01-19_at_9.58.49_pm.png'
 ---
 
 Creating mockups for websites manually can be pretty time-consuming. In this workshop, we're going to make it easy by writing our own website mockup generator with HTML, CSS, and JavaScript!
 
 Here's what it'll look like:
 
-![Final demo](https://cloud-n3fjd3o1a.vercel.app/0screen_recording_2021-01-19_at_9.47.49_pm.gif)
+![Final demo](https://cdn.hackclub.com/rescue?url=https://cloud-n3fjd3o1a.vercel.app/0screen_recording_2021-01-19_at_9.47.49_pm.gif)
 
 [Live demo][final_live_demo]
 <br>
@@ -254,7 +254,7 @@ Now, we're going to do something crazy: we're going to use JavaScript to modify 
 resultImg.src = mockup;
 ```
 
-![mind blown gif](https://cloud-bmu0cw52h.vercel.app/01470156847205-y39m16wcfyfqr4x75xon.gif)
+![mind blown gif](https://cdn.hackclub.com/rescue?url=https://cloud-bmu0cw52h.vercel.app/01470156847205-y39m16wcfyfqr4x75xon.gif)
 
 #### Downloading the image
 
@@ -310,7 +310,7 @@ const generateMockup = () => {
 
 Yay!!! You did it! Check out your final project by pressing the *'Run'* button on the top of your repl. You will see the preview of the website mockup generator in the right side pane.
 
-![Pressing the run button](https://cloud-kk7f3ujxb.vercel.app/0mockuprun.gif)
+![Pressing the run button](https://cdn.hackclub.com/rescue?url=https://cloud-kk7f3ujxb.vercel.app/0mockuprun.gif)
 
 If you want to open the website in a new tab, you can do so by clicking the icon that looks like an arrow coming out of a square at the top right.
 
@@ -318,9 +318,9 @@ If you want to open the website in a new tab, you can do so by clicking the icon
 
 Here are some of the mockups I made with this tool.
 
-![Mockup of my portfolio](https://cloud-39p70jl8k.vercel.app/0mockup2.png)
+![Mockup of my portfolio](https://cdn.hackclub.com/rescue?url=https://cloud-39p70jl8k.vercel.app/0mockup2.png)
 
-![Mockup of Hack Club website](https://cloud-etbe898rq.vercel.app/0mockup1.png)
+![Mockup of Hack Club website](https://cdn.hackclub.com/rescue?url=https://cloud-etbe898rq.vercel.app/0mockup1.png)
 
 What mockups can you make? Share a few with the rest of your club.
 

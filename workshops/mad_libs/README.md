@@ -2,10 +2,10 @@
 name: 'Mad Libs'
 description: 'Make a Mad Libs program in C#!'
 author: '@JakeGerber'
-img: 'https://cloud-qziue462l.vercel.app/0screenshot__1420_.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-qziue462l.vercel.app/0screenshot__1420_.png'
 ---
 
-<img src="https://cloud-qziue462l.vercel.app/0screenshot__1420_.png" width="380" alt="Mad Libs Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-qziue462l.vercel.app/0screenshot__1420_.png" width="380" alt="Mad Libs Example">
 
 Mad Libs is a fun game to play with friends (KEEP THE RESPONSES PG!), so let's create our own. Don't worry, I'll walk you through it, so you can become the world's second funniest person (I'm the first).
 
@@ -17,7 +17,7 @@ Mad Libs is a fun game to play with friends (KEEP THE RESPONSES PG!), so let's c
 
 We're going to use [Repl.it](https://repl.it/~), a free, online code editor, to create the project. Get started by visiting [repl.it/languages/csharp](https://repl.it/languages/csharp).
 
-<img src="https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
 
 ## Creating a New Text File
 
@@ -25,7 +25,7 @@ We're creating a new text file in order to put our Mad Libs prompt in. A text fi
 
 Create a new file and name it `madlib.txt`. Put in your own prompt and surround the things that you want to ask the user with asterisks (\*).
 
-<img src="https://cloud-7epyavre2.vercel.app/0screenshot__1403_.png" width="900" alt="Creating New Text File">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-7epyavre2.vercel.app/0screenshot__1403_.png" width="900" alt="Creating New Text File">
 
 ## Initial Statements
 

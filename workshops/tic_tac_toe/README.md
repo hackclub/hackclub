@@ -2,13 +2,13 @@
 name: 'Tic Tac Toe'
 description: 'Make the Classic Tic Tac Toe Game in Python'
 author: '@Prithul0218'
-img: 'https://cloud-48w32714h.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-48w32714h.vercel.app/0image.png'
 locales: 'pt-br'
 ---
 
 Tic Tac Toe is a game that most of us have played when we were bored in class. It's also a classic coding challenge when learning a new programming language. As complicated as it may seem at first, it's actually rather easy to code and takes less than 80 lines.
 
-![GIF showing Tic Tac Toe game running in a terminal](https://cloud-hztfs3uyy.vercel.app/ezgif.com-gif-maker.gif)
+![GIF showing Tic Tac Toe game running in a terminal](https://cdn.hackclub.com/rescue?url=https://cloud-hztfs3uyy.vercel.app/ezgif.com-gif-maker.gif)
 
 In this workshop, we will make the Tic Tac Toe game in Python that you can play with a friend using the terminal.
 
@@ -69,7 +69,7 @@ TicTacToe()
 
 You should get something like this when you run the code:
 
-![Showing printed board on a terminal](https://cloud-hztfs3uyy.vercel.app/untitled.png)
+![Showing printed board on a terminal](https://cdn.hackclub.com/rescue?url=https://cloud-hztfs3uyy.vercel.app/untitled.png)
 
 Awesome! We now have our board printed in the terminal. It's time to get actual inputs from the players!
 
@@ -120,7 +120,7 @@ def GetNumber():
 
 You can now go ahead and run the function to see if it filters out invalid inputs properly.
 
-![Code only taking values 1-9 as input on the terminal](https://cloud-hztfs3uyy.vercel.app/untitled_1.png)
+![Code only taking values 1-9 as input on the terminal](https://cdn.hackclub.com/rescue?url=https://cloud-hztfs3uyy.vercel.app/untitled_1.png)
 
 ### The main loop
 
@@ -146,7 +146,7 @@ We need a loop to run the game, as there will be up to 9 turns (one for each box
 
 Both players should now be able to place a sign in turns now. 
 
-![Code taking input from both palyers](https://cloud-hztfs3uyy.vercel.app/untitled_2.png)
+![Code taking input from both palyers](https://cdn.hackclub.com/rescue?url=https://cloud-hztfs3uyy.vercel.app/untitled_2.png)
 
 But, we never checked if a player has won or players have run out of moves. Let's now work on that next.
 

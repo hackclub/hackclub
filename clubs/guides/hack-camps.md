@@ -51,12 +51,12 @@ Quick bullets:
 - We hold camp between mid-June and mid-July every year
 - In total, we raised ~$12K in 2017 & 2018 and ~$10k in 2019. We run the club primarily off of this money (we were able to run CincyHacks 2018 and CincyHacks Jr. 2019 off of it!)
 
-![](https://cloud-bgvqkuigj.vercel.app/5image-20190802-204140.png)
-![](https://cloud-bgvqkuigj.vercel.app/4image-20190802-204155.png)
-![](https://cloud-bgvqkuigj.vercel.app/3image-20190802-204205.png)
-![](https://cloud-bgvqkuigj.vercel.app/2image-20190802-204215.png)
-![](https://cloud-bgvqkuigj.vercel.app/1image-20190802-204223.png)
-![](https://cloud-bgvqkuigj.vercel.app/0image-20190802-204257.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-bgvqkuigj.vercel.app/5image-20190802-204140.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-bgvqkuigj.vercel.app/4image-20190802-204155.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-bgvqkuigj.vercel.app/3image-20190802-204205.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-bgvqkuigj.vercel.app/2image-20190802-204215.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-bgvqkuigj.vercel.app/1image-20190802-204223.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-bgvqkuigj.vercel.app/0image-20190802-204257.png)
 
 From now on, I will refer to Mason Hack Camp as Camp. Everything here is simply my experience with camps!
 
@@ -235,7 +235,7 @@ There are instances where instructors will do things that require a stern talk. 
 
 # Sample Schedule
 
-![](https://cloud-opoj9n97p.vercel.app/0image-20190802-204106.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-opoj9n97p.vercel.app/0image-20190802-204106.png)
 
 An important distinction is that we always had one outdoor break every single day (O and Y were different groups of students), and instructors would go outside to play games with students (like Sharks & Minnows, Ninja, Tag, etc.).
 

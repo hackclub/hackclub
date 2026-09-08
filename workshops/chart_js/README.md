@@ -2,14 +2,14 @@
 name: Charts with Chart.js
 description: Use a JavaScript library to make cool charts!
 author: '@wollygfx'
-img: 'https://cloud-d661yx1ei.vercel.app/0screen_recording_2020-12-11_at_10.42.35_pm.gif'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-d661yx1ei.vercel.app/0screen_recording_2020-12-11_at_10.42.35_pm.gif'
 ---
 
 In this workshop you'll learn how to make a chart generator using [Chart.js](https://www.chartjs.org), a free open-source JavaScript library for data visualization. Follow along and see how easy it is!
 
 Here you can find a [live demo](https://chart-generator-def.wollygfx.repl.co) and here, you will find the [source code](https://repl.it/@wollygfx/Chart-generator-def#index.htmll).
 
-![Chart Generator](https://cloud-d661yx1ei.vercel.app/0screen_recording_2020-12-11_at_10.42.35_pm.gif)
+![Chart Generator](https://cdn.hackclub.com/rescue?url=https://cloud-d661yx1ei.vercel.app/0screen_recording_2020-12-11_at_10.42.35_pm.gif)
 
 ## Set Up
 
@@ -17,7 +17,7 @@ This workshop requires a very basic knowledge of the following languages: HTML &
 
 For this workshop we will use [Repl.it](https://repl.it), a free, online code editor. Click [here](https://repl.it/languages/html) to create a coding environment.
 
-![Setup](https://cloud-qbmylslty.vercel.app/0image.png)
+![Setup](https://cdn.hackclub.com/rescue?url=https://cloud-qbmylslty.vercel.app/0image.png)
 
 ## HTML
 
@@ -50,7 +50,7 @@ Also, you can see that the `button` elements have the `onclick` attribute. Tthis
 
 Here's how our HTML document looks so far:
 
-![HTML DOM](https://cloud-3q20mqjc9.vercel.app/0image.png)
+![HTML DOM](https://cdn.hackclub.com/rescue?url=https://cloud-3q20mqjc9.vercel.app/0image.png)
 
 ## CSS
 
@@ -72,7 +72,7 @@ Let's break this down:
 
 When you click on the green *Run* button at the top of your repl, you'll see that the elements are perfectly aligned to the center.
 
-![Div aligned to the center](https://cloud-48yrakqtz.vercel.app/0image.png)
+![Div aligned to the center](https://cdn.hackclub.com/rescue?url=https://cloud-48yrakqtz.vercel.app/0image.png)
 
 Cool! – But our elements also look very boring right now. So let's style them a little bit!
 
@@ -102,7 +102,7 @@ Here, we're giving the `button` and `input` elements:
 - a border radius
 - And some other stuff that you can see here:
 
-![HTML DOM but with CSS](https://cloud-2dy6ppnzz.vercel.app/0image.png)
+![HTML DOM but with CSS](https://cdn.hackclub.com/rescue?url=https://cloud-2dy6ppnzz.vercel.app/0image.png)
 
 Cool, our website looks a lot better now!
 
@@ -110,7 +110,7 @@ Cool, our website looks a lot better now!
 
 Now, let's move to the fun part of the workshop. Go ahead and click on the `script.js` file located in the **Files tab**. 
 
-![Fun gif](https://cloud-n5xpv2pg5.vercel.app/0file_from_ios.gif)
+![Fun gif](https://cdn.hackclub.com/rescue?url=https://cloud-n5xpv2pg5.vercel.app/0file_from_ios.gif)
 
 ### Setting up the canvas
 
@@ -176,7 +176,7 @@ Let's break this down:
 
 Here's what the code above will render:
 
-![Chart](https://cloud-eh5pe4f89.vercel.app/0image.png)
+![Chart](https://cdn.hackclub.com/rescue?url=https://cloud-eh5pe4f89.vercel.app/0image.png)
 
 ### Types of charts
 
@@ -188,7 +188,7 @@ Here are some of them:
 
 <summary>Bar</summary>
 
-![Bar chart](https://cloud-c1xuq61f3.vercel.app/0image.png)
+![Bar chart](https://cdn.hackclub.com/rescue?url=https://cloud-c1xuq61f3.vercel.app/0image.png)
 
 </details>
 
@@ -196,7 +196,7 @@ Here are some of them:
 
 <summary>Line</summary>
 
-![Line chart](https://cloud-35yumi24n.vercel.app/0image.png)
+![Line chart](https://cdn.hackclub.com/rescue?url=https://cloud-35yumi24n.vercel.app/0image.png)
 
 </details>
 
@@ -204,7 +204,7 @@ Here are some of them:
 
 <summary>Doughnut and Pie</summary>
 
-![Doughnot and pie charts](https://cloud-hh4vxew90.vercel.app/0image.png)
+![Doughnot and pie charts](https://cdn.hackclub.com/rescue?url=https://cloud-hh4vxew90.vercel.app/0image.png)
 
 </details>
 
@@ -212,7 +212,7 @@ Here are some of them:
 
 <summary>Polar area</summary>
 
-![Polar area chart](https://cloud-4x3lxyzvi.vercel.app/0image.png)
+![Polar area chart](https://cdn.hackclub.com/rescue?url=https://cloud-4x3lxyzvi.vercel.app/0image.png)
 
 </details>
 
@@ -239,7 +239,7 @@ function addData(chart) {
 
 Here's the result of the code above:
 
-![Result](https://cloud-l9cwjcuh7.vercel.app/0screen_recording_2020-12-23_at_1.04.00_pm.gif)
+![Result](https://cdn.hackclub.com/rescue?url=https://cloud-l9cwjcuh7.vercel.app/0screen_recording_2020-12-23_at_1.04.00_pm.gif)
 
 Now, we'll create a function that removes data from the chart. We'll do it the same way as the past function, but this time we'll use the `pop` method instead of the `push` method.
 
@@ -255,7 +255,7 @@ function removeData(chart) {
 
 Let's see if it works:
 
-![Result](https://cloud-goab5uq2w.vercel.app/0screen_recording_2020-12-24_at_11.31.05_am.gif)
+![Result](https://cdn.hackclub.com/rescue?url=https://cloud-goab5uq2w.vercel.app/0screen_recording_2020-12-24_at_11.31.05_am.gif)
 
 Nice! – Now, the last thing we have to do is to create a function that saves the chart as a png image.
 
@@ -283,13 +283,13 @@ This is what the code above does:
 
 Now, let's try it:
 
-![Demo](https://cloud-9j7oiwmca.vercel.app/0screen_recording_2020-12-29_at_6.17.34_pm.gif)
+![Demo](https://cdn.hackclub.com/rescue?url=https://cloud-9j7oiwmca.vercel.app/0screen_recording_2020-12-29_at_6.17.34_pm.gif)
 
 ## Hack it
 
 Yay! You made it to the end of the workshop!
 
-![Congrats GIF](https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
+![Congrats GIF](https://cdn.hackclub.com/rescue?url=https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
 
 Now that you know how to use Chart.js, feel free to hack it and use it for your personal projects.
 

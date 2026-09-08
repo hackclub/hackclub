@@ -13,7 +13,7 @@ _^ what's going to happen when people see your Scrapbook_
 
 One of the amazing things about building projects for the web is just how easy it is to make it beautiful! To style web projects, we use a language called CSS. It lets us do everything from changing to background colour to animating text!
 
-<a href="https://scrapbook.hackclub.com/sampoder"><img src="https://cloud-5j06exp7f.vercel.app/screenshot_2020-09-12_at_7.29.11_pm.png" width="380" alt="Sam Poder's Scrapbook Profile"></a>
+<a href="https://scrapbook.hackclub.com/sampoder"><img src="https://cdn.hackclub.com/rescue?url=https://cloud-5j06exp7f.vercel.app/screenshot_2020-09-12_at_7.29.11_pm.png" width="380" alt="Sam Poder's Scrapbook Profile"></a>
 
 Today, we’re going to be learning about CSS by customizing a [Scrapbook](https://scrapbook.hackclub.com/) profile (^ like mine above). Scrapbook is a platform where Hack Clubbers can share photos of what they make or just of their daily life. If you don’t have a profile, log in to the Hack Club Slack, visit the [#scrapbook](https://hackclub.slack.com/archives/C01504DCLVD/) channel, take a photo (or use an old one) and post it!
 
@@ -59,7 +59,7 @@ I used these colours:
 
 To create:
 
-<img src="https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt="Green and purple themed Scrapbook">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt="Green and purple themed Scrapbook">
 
 ## Fancy fonts ❡
 
@@ -95,7 +95,7 @@ Replace ` ‘Font name’` with the name of your font, just keep the quotes! We�
 
 I went techno style, with the [Audiowide](https://fonts.google.com/specimen/Audiowide?category=Display&sidebar.open=true&selection.family=Audiowide) font.
 
-<img src="https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt="Green and purple themed Scrapbook">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt="Green and purple themed Scrapbook">
 
 ## **Crazy CSS Animations - Part 1 ✌︎**
 
@@ -151,7 +151,7 @@ We want to add this inside the curly braces. What this does is apply the rainbow
 
 Here's what I got:
 
-<img src="https://cloud-1fmtzoja5.vercel.app/ezgif-5-db525cfe2a47.gif" width="380" alt="Rainbow animated text">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-1fmtzoja5.vercel.app/ezgif-5-db525cfe2a47.gif" width="380" alt="Rainbow animated text">
 
 I’ve got a challenge for you. Let’s make that profile picture spin!
 
@@ -162,7 +162,7 @@ Here are a few things you’ll need to know:
 
 So can you do it? The solution is [here](#spinner-solution).
 
-<img src="https://cloud-ojh0xf17r.vercel.app/ezgif-5-5540a1713ebc.gif" width="380" alt="Spinning profile picture">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-ojh0xf17r.vercel.app/ezgif-5-5540a1713ebc.gif" width="380" alt="Spinning profile picture">
 
 ## **Crazy CSS Animations - Part 2** **✌︎**
 
@@ -188,7 +188,7 @@ To fix this we want to add this to our CSS:
 
 What this does is that it means that the change will transformation will ease in and out, making it buttery smooth!
 
-<img src="https://cloud-af3nqoqwq.vercel.app/ezgif-4-effdbb2d1794.gif" width="380" alt="Grow on hover animation for each post">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-af3nqoqwq.vercel.app/ezgif-4-effdbb2d1794.gif" width="380" alt="Grow on hover animation for each post">
 
 ## Hacking
 

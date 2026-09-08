@@ -2,7 +2,7 @@
 name: Modelos Animados 3D
 description: Faça modelos 3D utilizando uma biblioteca JavaScript simples
 author: '@wollygfx, @vitorvavolizza'
-img: 'https://cloud-f0her7co2.vercel.app/2020-10-21_84xj5ymva0f16vfmyderfn46epzgzbp7.jpeg'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-f0her7co2.vercel.app/2020-10-21_84xj5ymva0f16vfmyderfn46epzgzbp7.jpeg'
 locales: 'es-xl, pt-br'
 ---
 
@@ -12,11 +12,11 @@ Todos nós já quisemos fazer modelos 3D em algum momento, e embora pareça ser 
 
 Ao final deste workshop, você poderá fazer modelos em 3D como estes:
 
-![exemplos](https://cloud-5a0ya05fk.vercel.app/0large.gif)
+![exemplos](https://cdn.hackclub.com/rescue?url=https://cloud-5a0ya05fk.vercel.app/0large.gif)
 
 Aqui está uma [demonstração ao vivo](https://repl.it/@hcbjcentro/Modelos-3D) do que vamos fazer, você também pode encontrar o código final lá.
 
-![Hack Club 3D logo](https://cloud-590c1rr82.vercel.app/0screen_recording_2020-10-21_at_7.00.53_am.gif)
+![Hack Club 3D logo](https://cdn.hackclub.com/rescue?url=https://cloud-590c1rr82.vercel.app/0screen_recording_2020-10-21_at_7.00.53_am.gif)
 
 ## Configurando
 
@@ -24,7 +24,7 @@ Este workshop requer um conhecimento básico das seguintes linguagens: HTML & JS
 
 Para este workshop usaremos o [Repl.it](https://repl.it), clique [aqui](https://repl.it/languages/html) para criar um ambiente de programação adequado para este workshop.
 
-![Configuração](https://cloud-qbmylslty.vercel.app/0image.png)
+![Configuração](https://cdn.hackclub.com/rescue?url=https://cloud-qbmylslty.vercel.app/0image.png)
 
 ## Parte do HTML
 
@@ -56,7 +56,7 @@ _Nota: é muito importante manter essa ordem para ter certeza que tudo funciona 
 
 Agora que temos nosso arquivo HTML pronto, temos que trabalhar em nosso arquivo JavaScript.
 
-![Cool gif](https://cloud-p49mi1lgl.vercel.app/0tumblr_e49d74c805eec46704d22c1da59ecded_cc93a056_500.gif)
+![Cool gif](https://cdn.hackclub.com/rescue?url=https://cloud-p49mi1lgl.vercel.app/0tumblr_e49d74c805eec46704d22c1da59ecded_cc93a056_500.gif)
 
 ### Configurando o canvas
 
@@ -127,7 +127,7 @@ Agora vamos clicar no botão **Run** para ver o que acontece...
 
 Parabéns, você acabou de fazer seu primeiro modelo 3D... Sim, talvez não seja o que você estava esperando. Vamos consertar isso animando-o.
 
-![woah gif](https://cloud-kr2lyxjbx.vercel.app/0woah.gif)
+![woah gif](https://cdn.hackclub.com/rescue?url=https://cloud-kr2lyxjbx.vercel.app/0woah.gif)
 
 ### Animando o modelo
 
@@ -161,13 +161,13 @@ Agora você pode clicar em run novamente!
 
 Incrível, não é?
 
-![Gif Incrível](https://cloud-hrs0t8jeh.vercel.app/0tenor.gif)
+![Gif Incrível](https://cdn.hackclub.com/rescue?url=https://cloud-hrs0t8jeh.vercel.app/0tenor.gif)
 
 ### Formas múltiplas
 
 Se você quiser tentar fazer modelos mais complexos, você precisará usar múltiplas formas, [aqui](https://zzz.dog/#made-with-zdog) estão alguns exemplos do que você pode criar:
 
-![exemplos](https://cloud-2jaw6a14x.vercel.app/0image.png)
+![exemplos](https://cdn.hackclub.com/rescue?url=https://cloud-2jaw6a14x.vercel.app/0image.png)
 
 Fazer múltiplas formas é muito fácil, é tão simples quanto juntar múltiplas formas até conseguir o que você quer. A parte mais difícil disto é colocar tudo onde deve estar, podemos fazer isto usando a propriedade: "translate". Vamos ver como funciona!
 
@@ -238,7 +238,7 @@ new Zdog.Box({
 - Desta vez, a forma é movida para frente... Assim, criamos um espaço entre o quadrado vermelho e esta nova forma.
 - A forma é movida para a esquerda dentro do eixo x
 
-![resultado 1](https://cloud-kg0xtr3hs.vercel.app/0image.png)
+![resultado 1](https://cdn.hackclub.com/rescue?url=https://cloud-kg0xtr3hs.vercel.app/0image.png)
 
 ```javascript
 new Zdog.Box({
@@ -254,7 +254,7 @@ new Zdog.Box({
 - Desta vez, criamos uma nova caixa, mas bem menor.
 - Nós a movemos para a direita dentro do eixo x e um pouco para baixo dentro do eixo y.
 
-![resultado 2](https://cloud-1nisp19i8.vercel.app/0image.png)
+![resultado 2](https://cdn.hackclub.com/rescue?url=https://cloud-1nisp19i8.vercel.app/0image.png)
 
 ```javascript
 new Zdog.Box({
@@ -269,7 +269,7 @@ new Zdog.Box({
 
 Nesta último, tudo o que tivemos que fazer foi mover a caixa para a direita dentro do eixo x, para que ela se misture com a caixa da direita.
 
-![resultado 3](https://cloud-m2gpkvlqa.vercel.app/0image.png)
+![resultado 3](https://cdn.hackclub.com/rescue?url=https://cloud-m2gpkvlqa.vercel.app/0image.png)
 
 Agora, vamos atualizar a animação com algumas propriedades simples:
 
@@ -285,13 +285,13 @@ animaModelo()
 
 Esse é o resultado final:
 
-![resultado final](https://cloud-d9lxnrldx.vercel.app/0screen_recording_2020-10-09_at_12.05.02_pm.gif)
+![resultado final](https://cdn.hackclub.com/rescue?url=https://cloud-d9lxnrldx.vercel.app/0screen_recording_2020-10-09_at_12.05.02_pm.gif)
 
 ### Hackeando
 
 Parabéns! Você acabou de aprender o básico da Zdog, sinta-se à vontade para dar uma olhada nos recursos abaixo para melhorar seus conhecimentos...
 
-![gif parabéns](https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
+![gif parabéns](https://cdn.hackclub.com/rescue?url=https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
 
 ### Outros exemplos
 

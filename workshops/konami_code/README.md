@@ -23,7 +23,7 @@ Well, by now, you must have known what a Konami Code is. How about we build our 
 
 Here's the demo of what we'll be building:
 
-[![GIF of confetti on website after entering password](https://cloud-95l2730mf.vercel.app/konamigif.gif)](https://Konami-code.faisalsayed1.repl.co/)
+[![GIF of confetti on website after entering password](https://cdn.hackclub.com/rescue?url=https://cloud-95l2730mf.vercel.app/konamigif.gif)](https://Konami-code.faisalsayed1.repl.co/)
 
 Here's the [live demo](https://Konami-code.faisalsayed1.repl.co/) and the [source code](https://repl.it/@FaisalSayed1/Konami-Code).
 
@@ -43,7 +43,7 @@ To get started, go to [this starter code](https://repl.it/@FaisalSayed1/Starter-
 
 You should see something like the following:
 
-![Screenshot of repl.it interface](https://cloud-axmnhdj9w.vercel.app/image.png)
+![Screenshot of repl.it interface](https://cdn.hackclub.com/rescue?url=https://cloud-axmnhdj9w.vercel.app/image.png)
 
 ## Part 3: Building the project
 
@@ -93,7 +93,7 @@ We are done with our HTML and here is our final code:
 
 Here is what you will see on clicking 'RUN'
 
-![Screenshot of large text saying "Password Please, Hello Comrade"](https://cloud-2tfwv9o6z.vercel.app/image.png)
+![Screenshot of large text saying "Password Please, Hello Comrade"](https://cdn.hackclub.com/rescue?url=https://cloud-2tfwv9o6z.vercel.app/image.png)
 
 ### 2) CSS
 
@@ -124,7 +124,7 @@ body {
 
 This is what your website will look now:
 
-![Screenshot of website after styling](https://cloud-muarr9bpd.vercel.app/image.png)
+![Screenshot of website after styling](https://cdn.hackclub.com/rescue?url=https://cloud-muarr9bpd.vercel.app/image.png)
 
 We are done with our CSS and we'll now start writing JavaScript to implement the main functionality.
 

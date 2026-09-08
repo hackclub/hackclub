@@ -2,7 +2,7 @@
 name: 'JsonDB'
 description: 'Create your own persistent database with JavaScript!'
 author: '@safinsingh'
-img: 'https://cloud-n3vum1qac.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-n3vum1qac.vercel.app/0image.png'
 ---
 
 Databases are often used in projects to persist and store data associated with certain users. In this workshop, you'll be building your very own database with the power of JavaScript!
@@ -35,7 +35,7 @@ npm init --yes
 npm [i/install] express cors
 ```
 
-![Initialize npm and install dependencies](https://cloud-2m3vf7nmm.vercel.app/1npm-install-deps.png)
+![Initialize npm and install dependencies](https://cdn.hackclub.com/rescue?url=https://cloud-2m3vf7nmm.vercel.app/1npm-install-deps.png)
 
 You can safely ignore the warnings, they're not important to our project!
 
@@ -66,7 +66,7 @@ app.listen(PORT, () => {
 
 Now, let's run this! Hit the big green run button on the top of your editor to do so:
 
-![Run program](https://cloud-2m3vf7nmm.vercel.app/5run.png)
+![Run program](https://cdn.hackclub.com/rescue?url=https://cloud-2m3vf7nmm.vercel.app/5run.png)
 
 Awesome! We'll head over to [hoppscotch](https://hoppscotch.io/) to finish up this basic server. Hoppscotch is an awesome website to send HTTP requests to a remote server! Let's sent a GET request the root (`/`) of our server.
 
@@ -74,7 +74,7 @@ Copy the URL of your repl (in the format: `https://PROJECTNAME.YOURUSERNAME.repl
 
 In the screenshot below, I've copied in the URL of my REPL (in the format: `https://<PROJECT_NAME>.<USERNAME>.repl.co`) and set the request type to GET.
 
-![Request](https://cloud-2m3vf7nmm.vercel.app/3request.png)
+![Request](https://cdn.hackclub.com/rescue?url=https://cloud-2m3vf7nmm.vercel.app/3request.png)
 
  Finally, hit `Send`! You should get a plain response like so:
 
@@ -213,7 +213,7 @@ app.listen(PORT, () => {
 
 Now, head back to `hoppscotch` and send a request to `/getAll`! You should get back whatever you put in your `STORE` file:
 
-![getAll endpoint](https://cloud-2m3vf7nmm.vercel.app/0get-all.png)
+![getAll endpoint](https://cdn.hackclub.com/rescue?url=https://cloud-2m3vf7nmm.vercel.app/0get-all.png)
 
 Perfect! Now, let's try to add an endpoint for setting a key in your database:
 
@@ -265,7 +265,7 @@ Notice that we specified `/set` as a POST request with `app.post`. This is becau
 
 Awesome! We should now be able to set keys! Let's hop back over to `hoppscotch` and test it:
 
-![POST request set endpoint](https://cloud-2m3vf7nmm.vercel.app/2post-set.png)
+![POST request set endpoint](https://cdn.hackclub.com/rescue?url=https://cloud-2m3vf7nmm.vercel.app/2post-set.png)
 ![File after set](2m3vf7nmm.vercel.app/6store-after-set.png)
 
 As you can see, we've set the HTTP request method to POST, added a body of:

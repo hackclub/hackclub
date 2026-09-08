@@ -2,7 +2,7 @@
 name: 'Barra de navegação responsiva'
 description: 'Construa uma barra de navegação que responde ao tamanho do navegador'
 author: '@faisalsayed10, @Ifritosss'
-img: 'https://cloud-9x2jsehxu.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-9x2jsehxu.vercel.app/0image.png'
 locales: 'pt-br'
 ---
 

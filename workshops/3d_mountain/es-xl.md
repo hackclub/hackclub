@@ -2,12 +2,12 @@
 name: 'Montaña 3D'
 description: 'Crea una montaña 3D con herramientas de visualización de datos de Python'
 author: '@shivesh01'
-img: 'https://cloud-a08hob7s0.vercel.app/0workshop1.gif'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-a08hob7s0.vercel.app/0workshop1.gif'
 ---
 
 ¡Las montañas son divertidas! Échale un vistazo a esta montaña en Google Maps:
 
-![Monte San Bruno](https://cloud-8at1ve02p.vercel.app/0ezgif.com-gif-maker.gif)    
+![Monte San Bruno](https://cdn.hackclub.com/rescue?url=https://cloud-8at1ve02p.vercel.app/0ezgif.com-gif-maker.gif)    
 
 La razón por la que te estoy mostrando esto, ¡es porque tú vas a crear tu propia montaña con Python!🐍🚀
 
@@ -54,7 +54,7 @@ DataFrame = DataFrame.unstack()
 
 La función `unstack()` desapila la fila a las columnas. Aquí hay un diagrama que muestra cómo funciona:
 
-![Imagen desapilar](https://cloud-rdh98lh2j-hack-club-bot.vercel.app/0grafica_taller.jpg)
+![Imagen desapilar](https://cdn.hackclub.com/rescue?url=https://cloud-rdh98lh2j-hack-club-bot.vercel.app/0grafica_taller.jpg)
 
 Debajo de eso, escribe:
 
@@ -64,7 +64,7 @@ DataFrame = DataFrame.reset_index()
 
 Cuando concatenas, ordenas, unes o haces algunos reordenamientos a los datos `DataFrame`, el índice se baraja o se desordena. Para restablecer el índice de los datos `DataFrame`, utilizamos `reset_index()` para reordenar los índices.
 
-![Restablecer índice](https://cloud-9vtehx4ml-hack-club-bot.vercel.app/00reshaping_unstack_.jpg)
+![Restablecer índice](https://cdn.hackclub.com/rescue?url=https://cloud-9vtehx4ml-hack-club-bot.vercel.app/00reshaping_unstack_.jpg)
 
 Debajo de eso, escribe:
 
@@ -122,7 +122,7 @@ Esto crea una gráfica tridimensional.
 - `cmap` define el mapa de colores de la gráfica. Estamos usando el mapa de color `jet`. Aprende más acerca de los diferentes mapas de colores [aquí.](https://matplotlib.org/tutorials/colors/colormaps.html).
 - `linewidth=0.2` hace las curvas más suaves.
 
-![Lista de mapas de colores](https://cloud-hppbp7hy7.vercel.app/0colormap.gif)
+![Lista de mapas de colores](https://cdn.hackclub.com/rescue?url=https://cloud-hppbp7hy7.vercel.app/0colormap.gif)
 
 Luego, escribe:
 
@@ -185,24 +185,24 @@ plt.show()
 
 </details>
 
-![Demo](https://cloud-ko9v4kpdg.vercel.app/0ezgif.com-gif-maker__1_.gif)
+![Demo](https://cdn.hackclub.com/rescue?url=https://cloud-ko9v4kpdg.vercel.app/0ezgif.com-gif-maker__1_.gif)
 
 ¡Felicitaciones! ¡Has completado el taller! ¿Bastante sencillo, cierto?
 
 ## Hackear
 
-![Felicitaciones g.i.f](https://cloud-1th3ydnib.vercel.app/2workshop_happy.gif)
+![Felicitaciones g.i.f](https://cdn.hackclub.com/rescue?url=https://cloud-1th3ydnib.vercel.app/2workshop_happy.gif)
 
 Ahora que has explorado cómo hacer una montaña 3D básica, las posibilidades son infinitas. Los verdaderos científicos de datos usan Python, junto con las herramientas que usaste en este taller, para hacer visualizaciones de datos complejas. Aquí hay algunos ejemplos que se me ocurrieron y que puedes probar, ¡pero trata de encontrar algunas cosas interesantes que puedas hacer además de estas!
 
 - Ejemplo 1, usando datos de Kaggle para crear un volcán en 3D.
-  - [Demo imagen](https://cloud-94iqxy8lo.vercel.app/0volcano.gif)
+  - [Demo imagen](https://cdn.hackclub.com/rescue?url=https://cloud-94iqxy8lo.vercel.app/0volcano.gif)
   - [Código](https://repl.it/@ShiveshSingh/Volcano-3D-Heatmap)
 - Ejemplo 2, utilizando un arreglo o matriz y una función coseno para hacer una gráfica de superficie.
-  - [Demo imagen](https://cloud-iwpkargvc.vercel.app/0screenshot_2021-01-10_at_15.24.00.png)
+  - [Demo imagen](https://cdn.hackclub.com/rescue?url=https://cloud-iwpkargvc.vercel.app/0screenshot_2021-01-10_at_15.24.00.png)
   - [Código](https://repl.it/@ShiveshSingh/Surface-Plot-3D#main.py)
 - Ejemplo 3, utilizando bucles, una lista y una función seno para hacer una gráfica de isolínea.
-  - [Demo imagen](https://cloud-iwpkargvc.vercel.app/1screenshot_2021-01-10_at_15.25.30.png)
+  - [Demo imagen](https://cdn.hackclub.com/rescue?url=https://cloud-iwpkargvc.vercel.app/1screenshot_2021-01-10_at_15.25.30.png)
   - [Código](https://repl.it/@ShiveshSingh/3D-Contour-Plot#main.py)
 
 ¡Feliz hackeo!

@@ -2,7 +2,7 @@
 name: Automating your Slack Profile Picture
 description: Make a program that changes your Slack profile picture based on the time of day.
 author: '@sampoder'
-img: 'https://cloud-6yjkou2ru.vercel.app/0screen_shot_2020-12-08_at_9.38.36_am.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-6yjkou2ru.vercel.app/0screen_shot_2020-12-08_at_9.38.36_am.png'
 ---
 
 # Automating your Slack Profile Picture
@@ -22,7 +22,7 @@ Name it whatever you'd like, and choose the workspace you'd like the app to be f
 On the next screen, find the `Add features and functionality` section and select `Permissions`.
 
   
-![Slack API Configuration Screen with an arrow pointing to permissions](https://cloud-25utju6i9.vercel.app/0screenshot_2020-11-19_at_11.50.18_pm.png)
+![Slack API Configuration Screen with an arrow pointing to permissions](https://cdn.hackclub.com/rescue?url=https://cloud-25utju6i9.vercel.app/0screenshot_2020-11-19_at_11.50.18_pm.png)
 
   
 
@@ -30,7 +30,7 @@ On this screen, scroll down to the `User Token Scopes` section and select the bu
 
   
 
-![OAuth Scope Selection on Slack API page](https://cloud-1xkvojjl4.vercel.app/0screenshot_2020-11-19_at_11.55.09_pm.png)
+![OAuth Scope Selection on Slack API page](https://cdn.hackclub.com/rescue?url=https://cloud-1xkvojjl4.vercel.app/0screenshot_2020-11-19_at_11.55.09_pm.png)
 
   
 
@@ -38,7 +38,7 @@ In the pop-up box that follows, select `users.profile:write` and add that scope.
 
   
 
-![OAuth Scope Selection on Slack API page completed](https://cloud-2ru7t5yz0.vercel.app/0screenshot_2020-11-20_at_12.00.03_am.png)
+![OAuth Scope Selection on Slack API page completed](https://cdn.hackclub.com/rescue?url=https://cloud-2ru7t5yz0.vercel.app/0screenshot_2020-11-20_at_12.00.03_am.png)
 
   
 
@@ -46,7 +46,7 @@ Scroll to the top of the page, click `Install to Workspace`, then `Allow` and th
 
   
 
-![Sample Token from Slack](https://cloud-1spwslhyd.vercel.app/0screenshot_2020-11-20_at_12.05.54_am.png)
+![Sample Token from Slack](https://cdn.hackclub.com/rescue?url=https://cloud-1spwslhyd.vercel.app/0screenshot_2020-11-20_at_12.05.54_am.png)
 
   
 
@@ -224,53 +224,53 @@ First, we'll add it to GitHub (a code hosting platform). If you don't have an ac
 
 Click the `Version Control` button:
 
-![Version Control Icon on Repl.it](https://cloud-sg9h5hqot.vercel.app/0screenshot_2020-11-21_at_5.36.01_pm.png)
+![Version Control Icon on Repl.it](https://cdn.hackclub.com/rescue?url=https://cloud-sg9h5hqot.vercel.app/0screenshot_2020-11-21_at_5.36.01_pm.png)
 
 Then click the `Create a Git Repo` button
 
-![Create a Git Repo Button](https://cloud-anmjphf23.vercel.app/0screenshot_2020-11-21_at_5.40.05_pm.png)
+![Create a Git Repo Button](https://cdn.hackclub.com/rescue?url=https://cloud-anmjphf23.vercel.app/0screenshot_2020-11-21_at_5.40.05_pm.png)
 
 Then click `Connect to GitHub`. The following process is different for different people so please follow the onscreen instructions.
 
-![Connect to GitHub Button](https://cloud-f8t5l4xpe.vercel.app/0screenshot_2020-11-21_at_5.47.33_pm.png)
+![Connect to GitHub Button](https://cdn.hackclub.com/rescue?url=https://cloud-f8t5l4xpe.vercel.app/0screenshot_2020-11-21_at_5.47.33_pm.png)
 
 Once you get to this screen, copy this link.
 
-![Link to copy with arrow](https://cloud-p50jnssri.vercel.app/0screenshot_2020-11-21_at_5.43.50_pm.png)
+![Link to copy with arrow](https://cdn.hackclub.com/rescue?url=https://cloud-p50jnssri.vercel.app/0screenshot_2020-11-21_at_5.43.50_pm.png)
 
 Now head to vercel.com and register for an account.
 
 Once you have registered for Vercel, visit https://vercel.com/import and click this button:
 
-![Vercel Git Repo Button](https://cloud-ah3kdl8r4.vercel.app/0screenshot_2020-11-21_at_5.52.09_pm.png)
+![Vercel Git Repo Button](https://cdn.hackclub.com/rescue?url=https://cloud-ah3kdl8r4.vercel.app/0screenshot_2020-11-21_at_5.52.09_pm.png)
 
 Paste in the link you previously copied and click continue. Click continue again and then deploy!
 
-![Congrats page](https://cloud-o1laihfer.vercel.app/0screenshot_2020-11-21_at_5.56.17_pm.png)
+![Congrats page](https://cdn.hackclub.com/rescue?url=https://cloud-o1laihfer.vercel.app/0screenshot_2020-11-21_at_5.56.17_pm.png)
 
 If all goes to plan you should see this page, yay!! We have deployed it. Now we need to configure our environment variables. Open the dashboard up.
 
-![Click to open dashboard](https://cloud-mbfalxjtt.vercel.app/0screenshot_2020-11-21_at_5.59.06_pm.png)
+![Click to open dashboard](https://cdn.hackclub.com/rescue?url=https://cloud-mbfalxjtt.vercel.app/0screenshot_2020-11-21_at_5.59.06_pm.png)
 
 Then open up the settings:
 
-![Open settings](https://cloud-bw0zco82g.vercel.app/0screenshot_2020-11-21_at_6.00.33_pm.png)
+![Open settings](https://cdn.hackclub.com/rescue?url=https://cloud-bw0zco82g.vercel.app/0screenshot_2020-11-21_at_6.00.33_pm.png)
 
 Create an environment secret for your Slack token with the following settings:
 
-![Add env variable](https://cloud-1rw8v8j7g.vercel.app/0screenshot_2020-11-21_at_6.05.48_pm.png)
+![Add env variable](https://cdn.hackclub.com/rescue?url=https://cloud-1rw8v8j7g.vercel.app/0screenshot_2020-11-21_at_6.05.48_pm.png)
 
 Now we need to redeploy our app. You can do this by going to Deployments:
 
-![Deployments button](https://cloud-ofbgibav5.vercel.app/0screenshot_2020-11-21_at_6.10.44_pm.png)
+![Deployments button](https://cdn.hackclub.com/rescue?url=https://cloud-ofbgibav5.vercel.app/0screenshot_2020-11-21_at_6.10.44_pm.png)
 
 Then select the top one:
 
-![Selecting the top one](https://cloud-hkb7mvp1m.vercel.app/0screenshot_2020-11-21_at_6.12.10_pm.png)
+![Selecting the top one](https://cdn.hackclub.com/rescue?url=https://cloud-hkb7mvp1m.vercel.app/0screenshot_2020-11-21_at_6.12.10_pm.png)
 
 Then in the top right, click the three dots and then the redeploy button.
 
-![Redeploy button location](https://cloud-fcenvvko0.vercel.app/0screenshot_2020-11-21_at_6.13.35_pm.png)
+![Redeploy button location](https://cdn.hackclub.com/rescue?url=https://cloud-fcenvvko0.vercel.app/0screenshot_2020-11-21_at_6.13.35_pm.png)
 
 Now try visiting `/api` on your url. You should see your profile picture change on Slack ;) Check it out! But... we don't want to have to visit this URL every time. So, let's automate that.
 
@@ -280,15 +280,15 @@ Now let's schedule when to trigger this API. Head on over to cron-job.org and cr
 
 Once you've logged into that account, click `Cronjobs`.
 
-![Cronjobs button](https://cloud-6ep1r0ykr.vercel.app/0screenshot_2020-11-22_at_1.42.39_pm.png)
+![Cronjobs button](https://cdn.hackclub.com/rescue?url=https://cloud-6ep1r0ykr.vercel.app/0screenshot_2020-11-22_at_1.42.39_pm.png)
 
 Then create a new one!
 
-![Create new button](https://cloud-rhrfjtuo7.vercel.app/0screenshot_2020-11-22_at_1.43.43_pm.png)
+![Create new button](https://cdn.hackclub.com/rescue?url=https://cloud-rhrfjtuo7.vercel.app/0screenshot_2020-11-22_at_1.43.43_pm.png)
 
 Fill in the form with the following settings and click create:
 
-![Recommended Settings](https://cloud-7lnp5ap0k.vercel.app/0screenshot_2020-11-22_at_1.45.03_pm.png)
+![Recommended Settings](https://cdn.hackclub.com/rescue?url=https://cloud-7lnp5ap0k.vercel.app/0screenshot_2020-11-22_at_1.45.03_pm.png)
 
 And wow... we're done!! Now throughout the day your profile picture will change depending on the time.
 

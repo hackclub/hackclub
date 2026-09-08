@@ -2,7 +2,7 @@
 name: Tunes on JS
 description: Make a piano for your web browser with Tone.js
 author: '@sampoder'
-img: https://cloud-huy2ue7gg.vercel.app/0screenshot_2020-10-10_at_6.17.58_am.png
+img: https://cdn.hackclub.com/rescue?url=https://cloud-huy2ue7gg.vercel.app/0screenshot_2020-10-10_at_6.17.58_am.png
 ---
 
 # Tunes on JS - Creating a Piano
@@ -17,7 +17,7 @@ Let me just quickly explain the starter code. In there you will find three files
 
 At the top of `index.html` we reference our stylesheets and metadata. To make styling super easy, I've also added [GitHub’s Markdown CSS file](https://github.com/sindresorhus/github-markdown-css).
 
-<img src="https://cloud-f8397euam.vercel.app/screenshot_2020-09-17_at_7.06.42_pm.png" alt="Our starter site">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-f8397euam.vercel.app/screenshot_2020-09-17_at_7.06.42_pm.png" alt="Our starter site">
 
 ```html
 <body class="markdown-body">
@@ -108,7 +108,7 @@ What this code does is it get's the event (the key being pressed) information ha
 
 You'll see that when running this, our key is a number!? That's because each key has it's own code. [keycode.info](https://keycode.info/) is a super handy tool to help you identify the codes for each key.
 
-<img src="https://cloud-7ownn8t7c.vercel.app/screenshot_2020-09-17_at_7.14.26_pm.png" width="380" alt="keycode.info's UI">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-7ownn8t7c.vercel.app/screenshot_2020-09-17_at_7.14.26_pm.png" width="380" alt="keycode.info's UI">
 
 Now that we know how to identify the key, let's only log the event if it is the `s` key. It's keycode is `83` We'll use an if/else statement for this.
 
@@ -198,7 +198,7 @@ setTimeout(() => {
 
 This will return the background to white after 200 milliseconds.
 
-<img src="https://cloud-emjvvdec0.vercel.app/ezgif-6-d255a4b6f60b.gif" alt="Colour changing keys">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-emjvvdec0.vercel.app/ezgif-6-d255a4b6f60b.gif" alt="Colour changing keys">
 
 AND we've done it! Well done my friend.
 

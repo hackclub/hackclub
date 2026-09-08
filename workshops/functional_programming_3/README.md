@@ -8,7 +8,7 @@ Welcome to the workshop. This is part-3 of the functional programming with js se
 
 In this part, we will learn how to work with Arrays in Functional Programming. If you haven’t gone through [part-2](../functional_programming_2) then I strongly recommend checking it out first.
 
-<img alt="Functional Programming Intro" src="https://cloud-id64d2gzs.vercel.app/0image.png" width="400px" />
+<img alt="Functional Programming Intro" src="https://cdn.hackclub.com/rescue?url=https://cloud-id64d2gzs.vercel.app/0image.png" width="400px" />
 
 This workshop should take around **_30 minutes_** to complete.
 
@@ -20,7 +20,7 @@ The workshop is for anyone familiar with:
 - How to run a Node.js program
 - General programming concepts
 
-<img src="https://cloud-83pmg6qma.vercel.app/0image.png" alt="jsimage" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-83pmg6qma.vercel.app/0image.png" alt="jsimage" />
 
 You don't need to be a Guru in these topics, a basic understanding of them is more than enough!
 
@@ -38,14 +38,14 @@ Or you can setup your own repl, make sure you create a node.js repl, and install
 
 search for ramda in repl, make sure you don't search rambda ( because it too exists! ).
 
-<img src="https://cloud-fhfy1btje.vercel.app/1ss1_1_.png" alt="replt help-1 image" width="" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-fhfy1btje.vercel.app/1ss1_1_.png" alt="replt help-1 image" width="" />
 <br/><br/>
 
 ### Install It
 
 Now, install it! Click the Run button to run your program.
 
-<img src="https://cloud-ixtk94biz.vercel.app/0group_7.png" alt="replt help-2 image" width="" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-ixtk94biz.vercel.app/0group_7.png" alt="replt help-2 image" width="" />
 
 If you prefer to work offline, then install ramda via
 
@@ -58,7 +58,7 @@ npm install ramda
 
 So, we have already discussed Ramda in our [first part](../functional_programming_1). We will use its pre-built functions to implement functional programming. No one wants to re-invent the wheel ( although some people might! ) and wants to make the car instead.
 
-<img src="https://cloud-847umy3yj.vercel.app/0image.png" alt="Ramda js Image" width="500px" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-847umy3yj.vercel.app/0image.png" alt="Ramda js Image" width="500px" />
 
 The same goes here, we are leveraging the pre-built functions from Ramda to boost our development process!
 
@@ -66,7 +66,7 @@ The same goes here, we are leveraging the pre-built functions from Ramda to boos
 
 Okay, so Arrays are one of the most used data structures in programming. Now, let’s first start by thinking about what are the operations that are associated with Arrays.
 
-<img src="https://cloud-q139hxihe.vercel.app/0image.png" alt="Arrays Everywhere meme Image" width="" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-q139hxihe.vercel.app/0image.png" alt="Arrays Everywhere meme Image" width="" />
 
 To be honest, there are too many! right? So let’s list some basic operations that we do with Arrays:
 
@@ -132,7 +132,7 @@ So, now let me just summarize what happened in the above case:
 
 Below is a graphical representation of what is happening in the above case
 
-<img src="https://cloud-f9yugz7dg.vercel.app/0group_11_1__1.png" alt="map working image" width="" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-f9yugz7dg.vercel.app/0group_11_1__1.png" alt="map working image" width="" />
 <br/><br/>
 
 ## filter
@@ -287,7 +287,7 @@ Here, we discussed how to use Arrays with Ramda. The benefit of using Arrays wit
 
 Ramda has a universe of functions to deal with Arrays, go to its docs and search for functions labeled list ( you can type list in the search bar ). Try learning some more functions from there because learning must never stop!
 
-<img src="https://cloud-hyxvls54w.vercel.app/0image.png" alt="Explore Image" width="400px" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-hyxvls54w.vercel.app/0image.png" alt="Explore Image" width="400px" />
 
 ## Thanks!
 

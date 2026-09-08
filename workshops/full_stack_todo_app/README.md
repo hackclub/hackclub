@@ -2,7 +2,7 @@
 name: 'Todo App'
 description: 'Create a full-stack To-do App using React and Firebase'
 author: '@giridhar7632'
-img: 'https://cloud-2nf3f60u4.vercel.app/0todo_app.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-2nf3f60u4.vercel.app/0todo_app.png'
 locales: 'pt-br'
 ---
 
@@ -12,7 +12,7 @@ The combination of React and Firebase can move web applications to a whole new l
 
 We are going to build something similar to this. 👇
 
-![Final todo app](https://cloud-2nf3f60u4.vercel.app/0todo_app.png)
+![Final todo app](https://cdn.hackclub.com/rescue?url=https://cloud-2nf3f60u4.vercel.app/0todo_app.png)
 
 Check out [live demo](https://Todo-App-Final.giridharhackclu.repl.co) and [source code](https://repl.it/@Giridharhackclu/Todo-App-Final#src/App.js).
 
@@ -35,7 +35,7 @@ Fork this starter repl [here](https://repl.it/@Giridharhackclu/todo-app-starter#
 
 After forking, press the `Run` button on the top. If you output something like this, you are good to go.
 
-![starter template](https://cloud-5vj1vtivl.vercel.app/0todo-starter-template.png)
+![starter template](https://cdn.hackclub.com/rescue?url=https://cloud-5vj1vtivl.vercel.app/0todo-starter-template.png)
 
 ## Creating a Firebase Project
 
@@ -49,27 +49,27 @@ The **Firebase Realtime Database** is cloud-hosted. Data is stored as JSON and s
 
 Open [Firebase](https://firebase.google.com); after signing in, click on `Go to console` on the top right corner.
 
-![firebase.com](https://cloud-swc0vwpr0.vercel.app/2firebase.png)
+![firebase.com](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/2firebase.png)
 
 In your console, If you don't have any projects yet, it will be clean and empty. Click on `Create Project` to add a new project.
 
-![Firebase console](https://cloud-swc0vwpr0.vercel.app/0firebase_console.png)
+![Firebase console](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/0firebase_console.png)
 
 Complete all the steps to create a firebase project. Name your project as you wish.
 
-![Step-1](https://cloud-swc0vwpr0.vercel.app/6step-1.png)
+![Step-1](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/6step-1.png)
 
 After giving a name to your project, click the `Continue` button to proceed further. Here is an optional step to use Google Analytics for your project, but you won't need it in this workshop. Click on `Continue`.
 
-![Step-2](https://cloud-swc0vwpr0.vercel.app/7step-2.png)
+![Step-2](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/7step-2.png)
 
 Finally, hit `Create Project`. 
 
-![Step-3](https://cloud-swc0vwpr0.vercel.app/8step-3.png)
+![Step-3](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/8step-3.png)
 
 🎉 Bingo!!! Your Firebase project will be created. You should see something like this.  
 
-![Project created](https://cloud-swc0vwpr0.vercel.app/3project_created.png)
+![Project created](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/3project_created.png)
 
 Click on the `Continue` button.
 
@@ -79,15 +79,15 @@ Then let's configure our Project with Firebase.
 
 Click on the Web `(</>)` icon.
 
-![Project overview](https://cloud-swc0vwpr0.vercel.app/4project_overview.png)
+![Project overview](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/4project_overview.png)
 
 Register your project with a name.
 
-![Register name](https://cloud-swc0vwpr0.vercel.app/5register_app.png)
+![Register name](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/5register_app.png)
 
 Here are your app credentials. This code helps your project connect to your Firebase project. 
 
-![Firebase config](https://cloud-swc0vwpr0.vercel.app/1firebase_sdk.png)
+![Firebase config](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/1firebase_sdk.png)
 
 Make sure you copy your web app's Firebase configuration(`firebaseConfig` object). 
 
@@ -119,23 +119,23 @@ Now let's create a database for our application.
 
 Open the Firebase project console. Click on the `Realtime Database` in the `Develop` section on the left sidebar. 
 
-![Project Sidebar](https://cloud-9uzz77u17.vercel.app/4project_overview-1.png)
+![Project Sidebar](https://cdn.hackclub.com/rescue?url=https://cloud-9uzz77u17.vercel.app/4project_overview-1.png)
 
 You will see something like this. :point_down: Click on the `Create Database` button.
 
-![Create Database](https://cloud-9uzz77u17.vercel.app/3create_database.png)
+![Create Database](https://cdn.hackclub.com/rescue?url=https://cloud-9uzz77u17.vercel.app/3create_database.png)
 
 Set `Start in Test Mode` and click on `Enable`.
 
-![Test Mode](https://cloud-9uzz77u17.vercel.app/5test_mode.png)
+![Test Mode](https://cdn.hackclub.com/rescue?url=https://cloud-9uzz77u17.vercel.app/5test_mode.png)
 
 Then your Realtime Database will be created and initiated with `null`(nothing). 
 
-![Realtime Database](https://cloud-9uzz77u17.vercel.app/2database.png)
+![Realtime Database](https://cdn.hackclub.com/rescue?url=https://cloud-9uzz77u17.vercel.app/2database.png)
 
 Firebase initially allows anyone to read and write the database for 30 days. You can edit the rules anytime in the `Rules` tab.
 
-![Rules](https://cloud-9uzz77u17.vercel.app/1database_rules.png)
+![Rules](https://cdn.hackclub.com/rescue?url=https://cloud-9uzz77u17.vercel.app/1database_rules.png)
 
 Now that we have a database let's create a Todo App using the database.
 
@@ -145,7 +145,7 @@ CRUD stands for Create, Read, Update, and Delete.
 
 These are the four most basic operations that can be performed with most traditional database systems, and they are the backbone for interacting with any database. 
 
-![CRUD](https://cloud-9uzz77u17.vercel.app/0crud_operations.png)
+![CRUD](https://cdn.hackclub.com/rescue?url=https://cloud-9uzz77u17.vercel.app/0crud_operations.png)
 
 If you want to learn more theory about CRUD, check it [here](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
 
@@ -338,11 +338,11 @@ function App() {
 export default App;
 ```
 
-![Output with input](https://cloud-792qf1oid.vercel.app/0input.js.png)
+![Output with input](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/0input.js.png)
 
 Looks good, doesn't it!
 
-![Database](https://cloud-792qf1oid.vercel.app/1input_to_database.png)
+![Database](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/1input_to_database.png)
 
 The data you added through the `input` will be appended to our Firebase Database!
 
@@ -486,11 +486,11 @@ export default TodoList
 
 This will display the data that is retrieved from the database. Make sure you import and render the `TodoList` component into `App.js`.
 
-![Retrived data](https://cloud-792qf1oid.vercel.app/2reading_database.png)
+![Retrived data](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/2reading_database.png)
 
 So far, we have done **Create** and **Read** operations. Halfway done!!! 🙌
 
-![Half way done](https://cloud-792qf1oid.vercel.app/7half_way_done_.gif)
+![Half way done](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/7half_way_done_.gif)
 
 Let's continue to work with **Update** and **Delete** operations.
 
@@ -612,7 +612,7 @@ The above code updates the `completed` in the database.
 
 Click on `Run` and check whether it's working.
 
-![completed task](https://cloud-792qf1oid.vercel.app/3updating_database.png)
+![completed task](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/3updating_database.png)
 
 Also, let's add styling for the completed tasks before our `completeTodo()` function.
 
@@ -669,7 +669,7 @@ export default function Todo({ todo }) {
 
 Now our completed tasks will be styled accordingly.
 
-![struck off](https://cloud-792qf1oid.vercel.app/5struckoff.png)
+![struck off](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/5struckoff.png)
 
 Let's add functionality to our `delete` button.
 
@@ -736,11 +736,11 @@ export default Todo
 
 </details>
 
-![Delete todo](https://cloud-792qf1oid.vercel.app/4deleting_database.png)
+![Delete todo](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/4deleting_database.png)
 
 That's it, folks! We completed our Full-stack Todo App. Check your final code [here](https://repl.it/@Giridharhackclu/Todo-App-Final#src/App.js). ✌
 
-![Completed](https://cloud-792qf1oid.vercel.app/6you_did_it_.gif)
+![Completed](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/6you_did_it_.gif)
 
 ## Hacking
 

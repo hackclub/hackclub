@@ -2,7 +2,7 @@
 name: 'Particle Physics'
 description: 'Creating a basic particle physics simulation and rendering using p5.js'
 author: '@SquarePear'
-img: 'https://cloud-k50jkthdw.vercel.app/0particle-physics-summary.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-k50jkthdw.vercel.app/0particle-physics-summary.png'
 ---
 
 In this workshop, you're going to use p5.js, along with 🌟 PHYSICS 🌟, to animate colorful particles. Along the way, you'll learn a little bit about:
@@ -15,7 +15,7 @@ All of the different particles will act like planets in orbit. They'll all apply
 
 When you are done with this workshop, you should end up with something similar to this!
 
-![Final product](https://cloud-oddjiiq5k.vercel.app/0summary.gif)
+![Final product](https://cdn.hackclub.com/rescue?url=https://cloud-oddjiiq5k.vercel.app/0summary.gif)
 
 This workshop should take 15-20 minutes to complete.
 

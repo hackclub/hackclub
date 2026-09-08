@@ -2,12 +2,12 @@
 name: Hack Club CDN Uploader
 description: Make a Library and CLI to upload to the Hack Club CDN
 author: '@khrj'
-img: https://cloud-bb4wyl0oo.vercel.app/0screenshot_2020-11-11_at_10.00.26_pm.png
+img: https://cdn.hackclub.com/rescue?url=https://cloud-bb4wyl0oo.vercel.app/0screenshot_2020-11-11_at_10.00.26_pm.png
 ---
 
 # Hack Club CDN Uploader 
 
-![Preview of Final Demo](https://cloud-67l800cdw.vercel.app/0ezgif-7-277bc9913850.gif)
+![Preview of Final Demo](https://cdn.hackclub.com/rescue?url=https://cloud-67l800cdw.vercel.app/0ezgif-7-277bc9913850.gif)
 
 Everyone likes unlimited storage, especially when it's available as a cdn (i.e. you can directly embed items uploaded into webpages). If you're on the [Hack Club Slack](https://hackclub.com/slack/), you've probably uploaded something or the other to [#cdn](https://hackclub.slack.com/archives/C016DEDUL87)
 
@@ -29,7 +29,7 @@ The Hack Club CDN API only accepts an array of URLs and not direct file uploads.
 2. Expose the file server to the internet using [ngrok](https://ngrok.com/)
 3. Send the URL of the ngrok instance to the API
 
-![Visual diagram of the process above: 1. A request is sent from the program to the CDN with the array of URLs. 2. The server sends a request to the ngrok instance as per the URL provided. 3. The ngrok instance responds with the file contents 4. The server hosts the files and responds with the hosted file URLs](https://cloud-hrkhc4qna.vercel.app/0cdn-workflow.png)
+![Visual diagram of the process above: 1. A request is sent from the program to the CDN with the array of URLs. 2. The server sends a request to the ngrok instance as per the URL provided. 3. The ngrok instance responds with the file contents 4. The server hosts the files and responds with the hosted file URLs](https://cdn.hackclub.com/rescue?url=https://cloud-hrkhc4qna.vercel.app/0cdn-workflow.png)
 
 To make it possible to reuse our program in other programs, we'll be creating a [Library](https://en.wikipedia.org/wiki/Library_(computing)) (we'll call this `mod.ts`) and a [CLI](https://en.wikipedia.org/wiki/Command-line_interface) (we'll call this `hcload.ts`) for it.
 
@@ -123,7 +123,7 @@ every time
 
 You just finished Part 2!!
 
-![Minions cheering](https://cloud-pq5lbfiab.vercel.app/0cheer.gif)
+![Minions cheering](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/0cheer.gif)
 
 ## Part 3: Programming the library
 ### Part 3.1: Setting up the server
@@ -261,7 +261,7 @@ export default async function (filePath: string): Promise<void> {
 }
 ```
 
-Run `hcload` and you should get a URL like `https://cloud-something.vercel.app/yourFile.ext`. If opening the URL loads the file in your browser, or your browser asks you to download the file, CONGRATULATIONS! You've just hosted a file successfully on the CDN!
+Run `hcload` and you should get a URL like `https://cdn.hackclub.com/rescue?url=https://cloud-something.vercel.app/yourFile.ext`. If opening the URL loads the file in your browser, or your browser asks you to download the file, CONGRATULATIONS! You've just hosted a file successfully on the CDN!
 
 Now, instead of logging the response from our library, we want to return it to the calling function. We'll log it from the calling function instead.
 
@@ -348,7 +348,7 @@ Note that we can now simply `Deno.exit(0)` after we get and log the URL -- we no
 
 EXCELLENT! We've successfully made the library, and we've also used it in `hcload.ts`. 
 
-![Hermione, Ron and Seamus cheering](https://cloud-pq5lbfiab.vercel.app/1cheer2.gif)
+![Hermione, Ron and Seamus cheering](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/1cheer2.gif)
 
 ## Part 4: Programming the CLI
 
@@ -438,7 +438,7 @@ The program should return a Hack Club CDN Url
 
 CONGRATULATIONS! You've successfully managed to build a Deno Library and a CLI for it! 
 
-![Dumbledore and Snape partying](https://cloud-pq5lbfiab.vercel.app/3dumbledoreparty.gif)
+![Dumbledore and Snape partying](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/3dumbledoreparty.gif)
 
 ## Hacking!
 
@@ -472,6 +472,6 @@ By design, the Hack club CDN accepts an _array_ of **URLs**. This means we can:
 
 By getting a bit creative, we can host websites on the Hack club CDN (Note: this is by far not the best way to do this, but it _is_ fun :) )
 
-- [Here's](https://cloud-2gxi88gfk.vercel.app/0index.html) the website made from the [personal website workshop](https://workshops.hackclub.com/personal_website/) hosted using the Hack Club CDN. Can you figure out how it's done? Hint: Right-click > Inspect element to view the website code.
+- [Here's](https://cdn.hackclub.com/rescue?url=https://cloud-2gxi88gfk.vercel.app/0index.html) the website made from the [personal website workshop](https://workshops.hackclub.com/personal_website/) hosted using the Hack Club CDN. Can you figure out how it's done? Hint: Right-click > Inspect element to view the website code.
 
 Did you make something awesome? Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6) in the Hack Club Slack and tag me with [@KhushrajRathod](https://hackclub.slack.com/team/U01C21G88QM)!

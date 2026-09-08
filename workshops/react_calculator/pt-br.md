@@ -2,7 +2,7 @@
 name: 'Calculadora Simples'
 description: 'Crie uma calculadora com React.js'
 author: '@faisalsayed10, @vitorvavolizza'
-img: 'https://cloud-fmzgn1t1z.vercel.app/0screen_shot_2020-11-30_at_5.43.36_pm.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-fmzgn1t1z.vercel.app/0screen_shot_2020-11-30_at_5.43.36_pm.png'
 ---
 
 Hoje, construiremos uma calculadora com React simples, mas muito divertida.
@@ -356,7 +356,7 @@ Caraca, essa foi complicadinha! Espero que você tenha entendido o que e por que
 
 Agora, faremos uso da biblioteca `mathjs` que, se você olhar nas dependências do projeto, ela já está instalada para você. Só precisamos importá-la em nosso projeto e as funções de dentro dela estarão prontas para uso.
 
-![mathjs já instalada](https://cloud-9gtba7h1z.vercel.app/0image.png)
+![mathjs já instalada](https://cdn.hackclub.com/rescue?url=https://cloud-9gtba7h1z.vercel.app/0image.png)
 
 A seguir, na linha 4 do `App.js`, vamos importá-la.
 

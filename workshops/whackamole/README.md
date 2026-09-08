@@ -2,7 +2,7 @@
 name: 'Whackamole!'
 description: 'Build a Whackamole game'
 author: '@sohamb117'
-img: "https://cloud-qqtj6180q-hack-club-bot.vercel.app/0whackamole_.png"
+img: "https://cdn.hackclub.com/rescue?url=https://cloud-qqtj6180q-hack-club-bot.vercel.app/0whackamole_.png"
 ---
 
 # Whackamole
@@ -10,7 +10,7 @@ img: "https://cloud-qqtj6180q-hack-club-bot.vercel.app/0whackamole_.png"
 We'll be building the game Whackamole today! It's an extremely popular game where you click the "mole" before the timer runs out. It's a fun game, and pretty easy to build on your own. So today, you'll be doing exactly that: building Whackamole all by yourself.
 
 [Check out the Demo!](https://whackamole-demo.sohamb117.repl.co/)
-[![whackamole demo](https://cloud-blecn0kdn-hack-club-bot.vercel.app/0image.png)](https://whackamole-demo.sohamb117.repl.co/)
+[![whackamole demo](https://cdn.hackclub.com/rescue?url=https://cloud-blecn0kdn-hack-club-bot.vercel.app/0image.png)](https://whackamole-demo.sohamb117.repl.co/)
 
 ### How to Build It
 

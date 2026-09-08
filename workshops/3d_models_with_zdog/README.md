@@ -12,11 +12,11 @@ We all have wanted to make 3D models at some point, and although it seems to be 
 
 At the end of this workshop, you will be able to make 3D models like this one:
 
-![examples](https://cloud-5a0ya05fk.vercel.app/0large.gif)
+![examples](https://cdn.hackclub.com/rescue?url=https://cloud-5a0ya05fk.vercel.app/0large.gif)
 
 Here's a [live demo](https://repl.it/@wollygfx/Hack-Club-logo) of what we will make, you can also find the final code there.
 
-![Hack Club 3D logo](https://cloud-590c1rr82.vercel.app/0screen_recording_2020-10-21_at_7.00.53_am.gif)
+![Hack Club 3D logo](https://cdn.hackclub.com/rescue?url=https://cloud-590c1rr82.vercel.app/0screen_recording_2020-10-21_at_7.00.53_am.gif)
 
 ## Set Up
 
@@ -24,7 +24,7 @@ This workshop requires a very basic knowledge of the following languages: HTML &
 
 For this workshop we will use [Repl.it](https://repl.it), click [here](https://repl.it/languages/html) to create a coding environment right for this workshop.
 
-![Setup](https://cloud-qbmylslty.vercel.app/0image.png)
+![Setup](https://cdn.hackclub.com/rescue?url=https://cloud-qbmylslty.vercel.app/0image.png)
 
 ## HTML part
 
@@ -56,7 +56,7 @@ _Note: It’s very important to keep this order to make sure everything works pe
 
 Now that we have our html file ready to go, we gotta work on our JavaScript file.
 
-![Cool gif](https://cloud-p49mi1lgl.vercel.app/0tumblr_e49d74c805eec46704d22c1da59ecded_cc93a056_500.gif)
+![Cool gif](https://cdn.hackclub.com/rescue?url=https://cloud-p49mi1lgl.vercel.app/0tumblr_e49d74c805eec46704d22c1da59ecded_cc93a056_500.gif)
 
 ### Setting up the canvas
 
@@ -123,11 +123,11 @@ This code updates and render your Zdog illustration that was declared in the fir
 
 Now let's click on the **Run** button to see what happens…
 
-![Render image](https://cloud-k11ck8g2n.vercel.app/0image.png)
+![Render image](https://cdn.hackclub.com/rescue?url=https://cloud-k11ck8g2n.vercel.app/0image.png)
 
 Congrats, you just made your first 3D model… Yeah, maybe not what you were expecting. Let’s fix this by animating it.
 
-![woah gif](https://cloud-kr2lyxjbx.vercel.app/0woah.gif)
+![woah gif](https://cdn.hackclub.com/rescue?url=https://cloud-kr2lyxjbx.vercel.app/0woah.gif)
 
 ### Animating it
 
@@ -157,17 +157,17 @@ Explanation:
 
 Now you can click on run again!
 
-![Animated model](https://cloud-djkuut7y4.vercel.app/0screen_recording_2020-10-03_at_7.31.47_pm.gif)
+![Animated model](https://cdn.hackclub.com/rescue?url=https://cloud-djkuut7y4.vercel.app/0screen_recording_2020-10-03_at_7.31.47_pm.gif)
 
 Amazing, huh?
 
-![Amazing gif](https://cloud-hrs0t8jeh.vercel.app/0tenor.gif)
+![Amazing gif](https://cdn.hackclub.com/rescue?url=https://cloud-hrs0t8jeh.vercel.app/0tenor.gif)
 
 ### Multiple Shapes
 
 If you want to try and make more complex models you will need to use multiple shapes, [here](https://zzz.dog/#made-with-zdog) are some examples of what you can create:
 
-![examples](https://cloud-2jaw6a14x.vercel.app/0image.png)
+![examples](https://cdn.hackclub.com/rescue?url=https://cloud-2jaw6a14x.vercel.app/0image.png)
 
 Making multiple shapes is very easy, it’s as simple as putting multiple shapes together until you get what you want. The hardest part of this is to put everything where it must be, we can do this using the property: “translate”. Let’s see how it works!
 
@@ -238,7 +238,7 @@ new Zdog.Box({
 - This time, the shape is moved forward… This creates an space between the red square and this new shape.
 - The shape is moved to the left within the x-axis
 
-![result 1](https://cloud-kg0xtr3hs.vercel.app/0image.png)
+![result 1](https://cdn.hackclub.com/rescue?url=https://cloud-kg0xtr3hs.vercel.app/0image.png)
 
 ```javascript
 new Zdog.Box({
@@ -254,7 +254,7 @@ new Zdog.Box({
 - This time, we created a new box but way smaller.
 - We moved it to the right within x-axis and a little bit down within the y-axis.
 
-![result 2](https://cloud-1nisp19i8.vercel.app/0image.png)
+![result 2](https://cdn.hackclub.com/rescue?url=https://cloud-1nisp19i8.vercel.app/0image.png)
 
 ```javascript
 new Zdog.Box({
@@ -269,7 +269,7 @@ new Zdog.Box({
 
 In this last one, all we had to do was to move the box to the right within the x-axis, so that it blends with the box in the right.
 
-![result 3](https://cloud-m2gpkvlqa.vercel.app/0image.png)
+![result 3](https://cdn.hackclub.com/rescue?url=https://cloud-m2gpkvlqa.vercel.app/0image.png)
 
 Now let's update the animation function with some simple properties:
 
@@ -285,13 +285,13 @@ animateModel()
 
 Here's the final result:
 
-![final result](https://cloud-d9lxnrldx.vercel.app/0screen_recording_2020-10-09_at_12.05.02_pm.gif)
+![final result](https://cdn.hackclub.com/rescue?url=https://cloud-d9lxnrldx.vercel.app/0screen_recording_2020-10-09_at_12.05.02_pm.gif)
 
 ### Hack It
 
 Congratulations! You just learned the basics of Zdog, feel free to check the resources below to improve your knowledge...
 
-![Congrats gif](https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
+![Congrats gif](https://cdn.hackclub.com/rescue?url=https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
 
 Make your own 3D Model and share it in the [Hack Club Slack](https://hackclub.slack.com), I would love to see what you can create using what you've learned in this workshop!
 

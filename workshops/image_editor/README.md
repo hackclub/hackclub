@@ -2,25 +2,25 @@
 name: 'Image Editor'
 description: 'Make your own image editor'
 author: '@wollygfx'
-img: 'https://cloud-81e0x4zt3.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-81e0x4zt3.vercel.app/0image.png'
 ---
 
 In this workshop, you'll learn how to make a very simple image editor using [CSS Filters](https://www.w3.org/TR/filter-effects/), [jQuery](https://jquery.com), and [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/). Follow along with me and see how easy it is!
 
 Here's a [live demo](https://2-image-editor.wollygfx.repl.co) and the [source code](https://repl.it/@wollygfx/2-Image-editor#index.html) if you want to check it out before we start.
-![live demo](https://cloud-gvno5b2im.vercel.app/0screen_recording_2020-11-09_at_8.14.57_pm.gif)
+![live demo](https://cdn.hackclub.com/rescue?url=https://cloud-gvno5b2im.vercel.app/0screen_recording_2020-11-09_at_8.14.57_pm.gif)
 
 ## Set Up
 This workshop requires a basic knowledge of the following languages: HTML, CSS & JS. Don’t worry if you get stuck at some point in the workshop, everything is explained the best way for you to understand!
 
 For this workshop we will use [Repl.it](https://repl.it/), a free, online code editor. Click [here](https://repl.it/languages/html) to get started with a new HTML project on repl.it.
 
-![Repl.it](https://cloud-qbmylslty.vercel.app/0image.png)
+![Repl.it](https://cdn.hackclub.com/rescue?url=https://cloud-qbmylslty.vercel.app/0image.png)
 
 ## HTML
 To begin, we're going to make all the elements that will be in our image editor. The layout will look like this:
 
-![Image editor's layour](https://cloud-lrjvj5rqz.vercel.app/0image.png)
+![Image editor's layour](https://cdn.hackclub.com/rescue?url=https://cloud-lrjvj5rqz.vercel.app/0image.png)
 1. In **section 1** we will put an image input and a button that updates the image displayed in section 2.
 2. In **section 2** the chosen image will be displayed.
 3. In **section 3** we will put some inputs that will let the user edit the image displayed in section 2.
@@ -34,7 +34,7 @@ Add the following code inside of your `<head>` tag. This links the HTML file to 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
 ```
 [Bootstrap’s grid system](https://getbootstrap.com/docs/4.1/layout/grid/) uses a series of containers, rows, and columns to layout and align content. Our website will be full of them:
-![Div Containers](https://cloud-e8d17xj1f.vercel.app/0image.png)
+![Div Containers](https://cdn.hackclub.com/rescue?url=https://cloud-e8d17xj1f.vercel.app/0image.png)
 - Color grey represents the ```<body>``` tag
 - Color green represents the main container.
 - Color pink represents a row.
@@ -139,7 +139,7 @@ Let's break this down:
 
 </details>
 
-![Section 1 Result](https://cloud-cwwxoedf8.vercel.app/0section1.png)
+![Section 1 Result](https://cdn.hackclub.com/rescue?url=https://cloud-cwwxoedf8.vercel.app/0section1.png)
 
 ## Section 2
 In section 2 we'll just have to add an image tag inside of the **second column** of the **second row**:
@@ -199,7 +199,7 @@ In section 2 we'll just have to add an image tag inside of the **second column**
 ```
 </details>
 
-![Section 2 Result](https://cloud-q58efbf6w.vercel.app/00image-2.png)
+![Section 2 Result](https://cdn.hackclub.com/rescue?url=https://cloud-q58efbf6w.vercel.app/00image-2.png)
 
 ## Section 3
 In this section we will put some inputs that will let the user edit the image displayed in section 2.
@@ -312,7 +312,7 @@ The classes ```btn``` & ```btn-primary``` are used to style the button.
 ```
 </details>
 
-![Section 3 Result](https://cloud-jwbtp72pu.vercel.app/0screen_shot_2020-11-11_at_12.33.02_pm.png)
+![Section 3 Result](https://cdn.hackclub.com/rescue?url=https://cloud-jwbtp72pu.vercel.app/0screen_shot_2020-11-11_at_12.33.02_pm.png)
 
 # CSS
 The Boostrap stylesheet we added at the beginning of this workshop gives us most of the styling we need. But let's do a little bit of our own customizing.
@@ -334,7 +334,7 @@ Let's break this down:
 
 Here's the result:
 
-![CSS Result](https://cloud-i0vj1gzw6.vercel.app/0image.png)
+![CSS Result](https://cdn.hackclub.com/rescue?url=https://cloud-i0vj1gzw6.vercel.app/0image.png)
 
 Repl.it should have automatically linked the `style.css` file for you, but if you don't see your changes reflect when you click the green "Run" button at the top, make sure you have this line in the `<head>` in your `index.html` file:
 
@@ -381,7 +381,7 @@ We are using the method ```addEventListener()``` to the first variable that we c
 
 Now let's test it:
 
-![Image displaying gif](https://cloud-jumlfocs6.vercel.app/0screen_recording_2020-11-08_at_11.26.14_pm.gif)
+![Image displaying gif](https://cdn.hackclub.com/rescue?url=https://cloud-jumlfocs6.vercel.app/0screen_recording_2020-11-08_at_11.26.14_pm.gif)
 
 Works perfectly!
 
@@ -424,7 +424,7 @@ Breaking down:
 
 Let's test it:
 
-![Image displaying gif](https://cloud-rnyr55z84.vercel.app/0screen_recording_2020-11-08_at_11.31.24_pm.gif)
+![Image displaying gif](https://cdn.hackclub.com/rescue?url=https://cloud-rnyr55z84.vercel.app/0screen_recording_2020-11-08_at_11.31.24_pm.gif)
 
 Finally we'll need to give the reset button its functionality:
 ```js
@@ -442,12 +442,12 @@ Let's break it down:
 
 Let's try it:
 
-![Image displaying gif](https://cloud-6xk3j2yw1.vercel.app/0screen_recording_2020-11-08_at_11.35.41_pm.gif)
+![Image displaying gif](https://cdn.hackclub.com/rescue?url=https://cloud-6xk3j2yw1.vercel.app/0screen_recording_2020-11-08_at_11.35.41_pm.gif)
 
 ## Hack it
 Congratulations! You just made an amazing image editor. 
 
-![Congrats gif](https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
+![Congrats gif](https://cdn.hackclub.com/rescue?url=https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
 
 Hack this workshop and share it in the [Hack Club Slack](https://hackclub.slack.com/), I would love to see what you can create using what you've learned in this workshop!
 

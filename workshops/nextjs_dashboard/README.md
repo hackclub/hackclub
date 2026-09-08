@@ -8,7 +8,7 @@ _(Note: this workshop assumes you have the React/Next.js skills explained in the
 
 For your Next(.js) steps, we’re building a personal dashboard with React & Next.js that shows weather, news headlines, & whatever else you want. Let’s get going!
 
-![Project preview screenshot](https://cloud-8tm3h0hix-hack-club-bot.vercel.app/0project.png)
+![Project preview screenshot](https://cdn.hackclub.com/rescue?url=https://cloud-8tm3h0hix-hack-club-bot.vercel.app/0project.png)
 
 [**See the live demo**](https://nextjs-dashboard.glitch.me)
 

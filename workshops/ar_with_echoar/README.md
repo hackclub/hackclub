@@ -2,7 +2,7 @@
 name: 'EchoAR Models'
 description: 'Displaying EchoAR Models that you can see in Augmented Reality'
 author: '@aaditgupta21'
-img: 'https://cloud-35h2h9f5s.vercel.app/0unknown.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-35h2h9f5s.vercel.app/0unknown.png'
 ---
 
 # EchoAR Models
@@ -11,7 +11,7 @@ In this workshop, we will talk about how to display 3D Models and show them in A
 
 The Final Project will look like this.
 
-![Final Project](https://cloud-el7ts8s43.vercel.app/0unknown.png) ![Final Project](https://cloud-dykp1xvd8.vercel.app/0unknown.png)
+![Final Project](https://cdn.hackclub.com/rescue?url=https://cloud-el7ts8s43.vercel.app/0unknown.png) ![Final Project](https://cdn.hackclub.com/rescue?url=https://cloud-dykp1xvd8.vercel.app/0unknown.png)
 
 Here's the [Live Demo](https://EchoAR-Models.aaditgupta21.repl.co) and [Final Code](https://repl.it/@aaditgupta21/EchoAR-Models)
 
@@ -33,7 +33,7 @@ To create your repl, go to [https://repl.it/languages/html](https://repl.it/lang
 
 After a few seconds you should see this page.
 
-![Repl.it Home Screen for HTML Language](https://cloud-phzgv7tcx.vercel.app/0unknown.png)
+![Repl.it Home Screen for HTML Language](https://cdn.hackclub.com/rescue?url=https://cloud-phzgv7tcx.vercel.app/0unknown.png)
 
 ## Learning the Default Files
 
@@ -58,27 +58,27 @@ This is linking the `style.css` file and the `script.js` file to your `index.htm
 
 [EchoAR Website](https://echoar.xyz) is a platform where you can store your 3D models and all the relevant formats for different platforms. You can sign up at their website, and you should be good to go under the "Individual (Free)" plan.
 
-![EchoAR Sign Up Page](https://cloud-eyauwzd28.vercel.app/0unknown.png)
+![EchoAR Sign Up Page](https://cdn.hackclub.com/rescue?url=https://cloud-eyauwzd28.vercel.app/0unknown.png)
 
 Once you sign up, you can click on the "Add to Cloud" button in order to add a 3D model to EchoAR.
 
-![Add Image Button](https://cloud-j928xf04l.vercel.app/0unknown.png)
+![Add Image Button](https://cdn.hackclub.com/rescue?url=https://cloud-j928xf04l.vercel.app/0unknown.png)
 
 You can choose one of their premade models or upload your own 3D Model (as GLB File) and select the target as "Anywhere".
 
-![Picking the 3D Model on the EchoAR Website](https://cloud-miu8nmofp.vercel.app/0unknown.png)
+![Picking the 3D Model on the EchoAR Website](https://cdn.hackclub.com/rescue?url=https://cloud-miu8nmofp.vercel.app/0unknown.png)
 
 Then, click the share icon and go to the link on your keyboard.
 
-![Share Button on the EchoAR Website](https://cloud-hr9mfuhs3.vercel.app/0unknown.png)
+![Share Button on the EchoAR Website](https://cdn.hackclub.com/rescue?url=https://cloud-hr9mfuhs3.vercel.app/0unknown.png)
 
 Next, inspect the page s with "Inspect Element" so we can get the model links
 
-![Right Click dialog on EchoAR Screen](https://cloud-pwb6bv0iq.vercel.app/0unknown.png)
+![Right Click dialog on EchoAR Screen](https://cdn.hackclub.com/rescue?url=https://cloud-pwb6bv0iq.vercel.app/0unknown.png)
 
 Go to the `Elements` tab and look for the `modal-viewer` element and copy the `src` and `ios-src` (you may have to open up the `body` element to find the `modal-viewer` element). We need to get the `ios-src` as ios phones need a different file to run.
 
-![Inspect Modal-Viewer Element](https://cloud-mxa9oazwp.vercel.app/0unknown.png)
+![Inspect Modal-Viewer Element](https://cdn.hackclub.com/rescue?url=https://cloud-mxa9oazwp.vercel.app/0unknown.png)
 
 Repeat this for all the models that you want in your application.
 
@@ -251,19 +251,19 @@ Then click `Join Now`. You can then use your Google account and make an account.
 
 You should then see this screen.
 
-![TinkerCAD Dashboard Page](https://cloud-ore2v6yq7.vercel.app/0unknown.png)
+![TinkerCAD Dashboard Page](https://cdn.hackclub.com/rescue?url=https://cloud-ore2v6yq7.vercel.app/0unknown.png)
 
 Then click Create New Design. Here I created a simple box model. You can make anything you want.
 
-![Example TinkerCAD Model](https://cloud-7a0hegen9.vercel.app/0unknown.png)
+![Example TinkerCAD Model](https://cdn.hackclub.com/rescue?url=https://cloud-7a0hegen9.vercel.app/0unknown.png)
 
 After you're done with your model click the export button on the top right.
 
-![Export Button Image](https://cloud-kz5o1m29o.vercel.app/0unknown.png)
+![Export Button Image](https://cdn.hackclub.com/rescue?url=https://cloud-kz5o1m29o.vercel.app/0unknown.png)
 
 Then pick the .glb option and download it.
 
-![Download Section Image](https://cloud-p2xzvvkn8.vercel.app/0unknown.png)
+![Download Section Image](https://cdn.hackclub.com/rescue?url=https://cloud-p2xzvvkn8.vercel.app/0unknown.png)
 
 Now that you have downloaded your model, you can upload your model to EchoAR by following the instructions in the `Setting up EchoAR Account and Uploading Models to EchoAR` section.
 
@@ -271,7 +271,7 @@ Now that you have downloaded your model, you can upload your model to EchoAR by 
 
 Voila!! You finished! If you are a little confused with something, please feel free to dm me on the HackClub Slack, `@aadit`.
 
-![Congratulations image](https://cloud-dyfldjz20.vercel.app/0unknown.png)
+![Congratulations image](https://cdn.hackclub.com/rescue?url=https://cloud-dyfldjz20.vercel.app/0unknown.png)
 
 ## Hacking
 

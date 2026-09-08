@@ -10,7 +10,7 @@ locales: 'pt-br'
 
 Memory Game, also known as Matching Game, is a simple card game where you need to match pairs by turning over two cards at a time. In this workshop, we are going to build a simple memory game using JavaScript. Take a peek at the final project and the code.
 
-![Final Project](https://cloud-lrj071vrh.vercel.app/0memory_game.gif)
+![Final Project](https://cdn.hackclub.com/rescue?url=https://cloud-lrj071vrh.vercel.app/0memory_game.gif)
 
 [Live demo](https://memory-game.giridharhackclu.repl.co/) and [source code](https://repl.it/@Giridharhackclu/Memory-Game#index.html).
 
@@ -26,7 +26,7 @@ Memory Game, also known as Matching Game, is a simple card game where you need t
 
 ## Prerequisites
 
-![prerequisites](https://cloud-h9glprsfs.vercel.app/0prerequisites.png)
+![prerequisites](https://cdn.hackclub.com/rescue?url=https://cloud-h9glprsfs.vercel.app/0prerequisites.png)
 You should have basic knowledge of HTML5, CSS3, and JavaScript. We will use some in-built functions of JavaScript. Also, the styling will be as simple as possible.
 
 ## Setup
@@ -35,7 +35,7 @@ You should have basic knowledge of HTML5, CSS3, and JavaScript. We will use some
 
 Fork the starter repl [here](https://repl.it/@Giridharhackclu/Memory-game-starter#index.html). Your development environment will be ready in a few seconds!
 
-![Repl](https://cloud-oyhes1lns.vercel.app/0memory-game-starter.png)
+![Repl](https://cdn.hackclub.com/rescue?url=https://cloud-oyhes1lns.vercel.app/0memory-game-starter.png)
 
 It contains an empty `index.html` file linked with `style.css` and `script.js` files.
 
@@ -85,7 +85,7 @@ Create a `div` element with a class of `board`. We will create the game board us
 
 Click the Run button to check your output, whether all the tags are working.
 
-![CSS output](https://cloud-mv8zkaxw2.vercel.app/0screenshot_2020-10-31_133838.png)
+![CSS output](https://cdn.hackclub.com/rescue?url=https://cloud-mv8zkaxw2.vercel.app/0screenshot_2020-10-31_133838.png)
 
 All the styles are prewritten in the starter template. You will see this kind of output. 👆
 
@@ -108,51 +108,51 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [
     {
       name: '1',
-      img: 'https://cloud-5ystxzer7.vercel.app/11.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/11.png'
     },
     {
       name: '2',
-      img: 'https://cloud-5ystxzer7.vercel.app/22.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/22.png'
     },
     {
       name: '3',
-      img: 'https://cloud-5ystxzer7.vercel.app/33.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/33.png'
     },
     {
       name: '4',
-      img: 'https://cloud-5ystxzer7.vercel.app/44.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/44.png'
     },
     {
       name: '5',
-      img: 'https://cloud-5ystxzer7.vercel.app/55.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/55.png'
     },
     {
       name: '6',
-      img: 'https://cloud-5ystxzer7.vercel.app/06.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/06.png'
     },
     {
       name: '1',
-      img: 'https://cloud-5ystxzer7.vercel.app/11.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/11.png'
     },
     {
       name: '2',
-      img: 'https://cloud-5ystxzer7.vercel.app/22.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/22.png'
     },
     {
       name: '3',
-      img: 'https://cloud-5ystxzer7.vercel.app/33.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/33.png'
     },
     {
       name: '4',
-      img: 'https://cloud-5ystxzer7.vercel.app/44.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/44.png'
     },
     {
       name: '5',
-      img: 'https://cloud-5ystxzer7.vercel.app/55.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/55.png'
     },
     {
       name: '6',
-      img: 'https://cloud-5ystxzer7.vercel.app/06.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/06.png'
     }
   ]
 
@@ -176,8 +176,8 @@ Now we have to create four constants as:
 ```js
 const board = document.querySelector('.board')
 const result = document.querySelector('#score')
-const placeholder = 'https://cloud-5ystxzer7.vercel.app/7placeholder.png'
-const blank = 'https://cloud-5ystxzer7.vercel.app/6blank.png'
+const placeholder = 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/7placeholder.png'
+const blank = 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/6blank.png'
 ```
 
 Now create a function `createBoard()` and loop over through elements in `cardArray` using `for` loop and add cards to our game board.
@@ -227,7 +227,7 @@ The function we created finally, will be:
 
 ```js
 const board = document.querySelector('.board')
-const placeholder = 'https://cloud-5ystxzer7.vercel.app/7placeholder.png'
+const placeholder = 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/7placeholder.png'
 
 // create game board
 function createBoard() {
@@ -246,7 +246,7 @@ Press the run button and see your game board.
 
 It looks like this with all the cards turned down (i.e., placeholder images).
 
-![Temporary output](https://cloud-2vppbtbp1.vercel.app/0jsop.png)
+![Temporary output](https://cdn.hackclub.com/rescue?url=https://cloud-2vppbtbp1.vercel.app/0jsop.png)
 
 ## Flip Card
 
@@ -319,8 +319,8 @@ function flipCard() {
 
   const board = document.querySelector('.board')
   const result = document.querySelector('#score')
-  const placeholder = "https://cloud-5ystxzer7.vercel.app/7placeholder.png"
-  const blank = "https://cloud-5ystxzer7.vercel.app/6blank.png"
+  const placeholder = "https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/7placeholder.png"
+  const blank = "https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/6blank.png"
   var cardsClicked = []
   var cardsClickedId = []
   var cardsMatched = []
@@ -356,11 +356,11 @@ function flipCard() {
 Don't forget to uncomment the event-listener of the card.
 Comment the `if` statement in the `flipCard` function and check whether the images are changing or not. The output works like this.
 
-![Flip card](https://cloud-odqx6kfb8.vercel.app/0flipcard.gif)
+![Flip card](https://cdn.hackclub.com/rescue?url=https://cloud-odqx6kfb8.vercel.app/0flipcard.gif)
 
 We created a flippable game board.
 
-![Wooo!!](https://cloud-bos4syje4.vercel.app/0woo__.gif)
+![Wooo!!](https://cdn.hackclub.com/rescue?url=https://cloud-bos4syje4.vercel.app/0woo__.gif)
 
 Now that we have flipping cards let's handle the matching logic.
 
@@ -401,7 +401,7 @@ else if (cardsClicked[0] === cardsClicked[1]) {
 
 Once we have a match, the blank cards are still "clickable", which's a flaw as far as user experience goes.
 
-![clickable](https://cloud-fmitdekvd.vercel.app/0removeevent.gif)
+![clickable](https://cdn.hackclub.com/rescue?url=https://cloud-fmitdekvd.vercel.app/0removeevent.gif)
 
 So we have to remove the "click" event listener of the matched pairs. The [removeEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) method removes from the EventTarget an event listener previously registered.
 
@@ -439,8 +439,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const board = document.querySelector('.board')
   const result = document.querySelector('#score')
-  const placeholder = "https://cloud-5ystxzer7.vercel.app/7placeholder.png"
-  const blank = "https://cloud-5ystxzer7.vercel.app/6blank.png"
+  const placeholder = "https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/7placeholder.png"
+  const blank = "https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/6blank.png"
   var cardsClicked = []
   var cardsClickedId = []
   var cardsMatched = []
@@ -492,7 +492,7 @@ createBoard()
 
 You might notice that the cards are not random. So we have to shuffle the `cardArray` every time before creating the board, using the `sort()` method. The [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method sorts the elements of an array in place and returns the sorted array.
 
-![Non random board](https://cloud-g7cpynxc4.vercel.app/1screenshot_2020-11-11_105448.png)
+![Non random board](https://cdn.hackclub.com/rescue?url=https://cloud-g7cpynxc4.vercel.app/1screenshot_2020-11-11_105448.png)
 
 Add the following piece of code just after the `cardArray`, before the constants we created.
 
@@ -502,11 +502,11 @@ cardArray.sort(() => 0.5 - Math.random())
 
 Finally, we finished our memory game.
 
-![Hooray!!!](https://cloud-4ddhwjoi2.vercel.app/0hooray.gif)
+![Hooray!!!](https://cdn.hackclub.com/rescue?url=https://cloud-4ddhwjoi2.vercel.app/0hooray.gif)
 
 Check the final code [here](https://repl.it/@Giridharhackclu/Final-Memory-Game#script.js).
 
-![final output](https://cloud-cz47beweb.vercel.app/0final-memory-game.gif)
+![final output](https://cdn.hackclub.com/rescue?url=https://cloud-cz47beweb.vercel.app/0final-memory-game.gif)
 
 ## Hacking
 

@@ -2,10 +2,10 @@
 name: 'Scalable Snowman'
 description: 'Create your own scalable snowman using Python Turtle!'
 author: '@JakeGerber'
-img: 'https://cloud-3nwmqnf9y.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-3nwmqnf9y.vercel.app/0image.png'
 ---
 
-<img src="https://cloud-81lsm6jyf.vercel.app/0screenshot__1406_.png" width="900" alt="Snowman Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-81lsm6jyf.vercel.app/0screenshot__1406_.png" width="900" alt="Snowman Example">
 
 Have you ever had a dream where you used Python's turtle library to draw snowmen to your computer screen that you can control with your keyboard? Probably not (it would be really weird if you did) but who cares because that's what we're going to make today! It's cool I swear. Let's create your own scalable snowmen to move around the screen!
 
@@ -75,7 +75,7 @@ Inside the function, use [`turtle.goto()`](https://docs.python.org/3/library/tur
 
 Okay! Now we're ready to start drawing the parts of the snowman.
 
-<img src="https://cloud-52dbjvw3n.vercel.app/0screenshot__1409_.png" width="380" alt="Snowman Head and Body">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-52dbjvw3n.vercel.app/0screenshot__1409_.png" width="380" alt="Snowman Head and Body">
 
 ```py
 def Snowman(x, y, radius1, radius2, radius3):
@@ -144,7 +144,7 @@ Finally, surround our drawing statement with `begin_fill()` and `end_fill()` sta
 
 ### Drawing the Eyes
 
-<img src="https://cloud-br53tx54x.vercel.app/0screenshot__1410_.png" width="380" alt="Snowman Eyes">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-br53tx54x.vercel.app/0screenshot__1410_.png" width="380" alt="Snowman Eyes">
 
 Yay! We've completed the head and body pieces! Now, we are going to draw the eyes of the snowman. Remember, Frosty the snowman has two eyes made out of coal.
 
@@ -242,7 +242,7 @@ Surround the drawing statement with the `begin_fill()` and `end_fill()` statemen
 
 ### Drawing the Nose
 
-<img src="https://cloud-f9je61z3w.vercel.app/0screenshot__1411_.png" width="380" alt="Snowman Nose">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-f9je61z3w.vercel.app/0screenshot__1411_.png" width="380" alt="Snowman Nose">
 
 We are going to draw the nose! Unfortunately, we can't import a carrot through the computer screen, so an orange triangle will have to do.
 
@@ -295,7 +295,7 @@ Go forward 1/2 of the head's radius and turn left 120 degrees until you create a
 
 ### Drawing the Buttons
 
-<img src="https://cloud-a2mh1goji.vercel.app/0screenshot__1413_.png" width="380" alt="Snowman Buttons">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-a2mh1goji.vercel.app/0screenshot__1413_.png" width="380" alt="Snowman Buttons">
 
 Let's draw the three buttons of the snowman. It's almost like the snowman is wearing an invisible coat.
 

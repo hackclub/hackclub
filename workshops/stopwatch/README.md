@@ -10,7 +10,7 @@ locales: 'pt-br'
 
 I bet you have used a stopwatch many times be it racing or just for fun! Have you wondered how cool would it be if we built our own stopwatch? Well today, we will together build a simple but sweet stopwatch!
 
-[![Stopwatch](https://cloud-ijsj5lfdg.vercel.app/0image.png)](https://stopwatch-htmlcssjs.faisalsayed1.repl.co/)
+[![Stopwatch](https://cdn.hackclub.com/rescue?url=https://cloud-ijsj5lfdg.vercel.app/0image.png)](https://stopwatch-htmlcssjs.faisalsayed1.repl.co/)
 
 Here's the [source code](https://repl.it/@FaisalSayed1/Stopwatch-HTMLCSSJS) and the [live demo](https://stopwatch-htmlcssjs.faisalsayed1.repl.co/).
 
@@ -32,7 +32,7 @@ Also, I have prepared a starter code for you to begin with. Just go [here](https
 
 You should see something like the following:
 
-![Starter Code](https://cloud-c4pzov9uf.vercel.app/0image.png)
+![Starter Code](https://cdn.hackclub.com/rescue?url=https://cloud-c4pzov9uf.vercel.app/0image.png)
 
 Click on the **FORK** button on the top and you are good to go!
 
@@ -63,7 +63,7 @@ Inside the `main` div, we will add a `<p>` tag with a class of `time` and sepera
 
 If you click **RUN**, you'll see that we have built a basic layout for our stopwatch!
 
-![Basic Layout](https://cloud-1wq4fc7do.vercel.app/0image.png)
+![Basic Layout](https://cdn.hackclub.com/rescue?url=https://cloud-1wq4fc7do.vercel.app/0image.png)
 
 Next, we will add some buttons for the functioning of our stopwatch. Create a `<div>` tag below our `<p>` tag and add 3 buttons inside it with the text and the class of `start`, `stop` and `reset` respectively.
 
@@ -101,7 +101,7 @@ Next, we will add some buttons for the functioning of our stopwatch. Create a `<
 
 And this is what you'll see when you click **RUN**
 
-![Output after writing the HTML code](https://cloud-qnajywf4c.vercel.app/0image.png)
+![Output after writing the HTML code](https://cdn.hackclub.com/rescue?url=https://cloud-qnajywf4c.vercel.app/0image.png)
 
 Here's a funfact! You just completed writing HTML!
 
@@ -244,7 +244,7 @@ Now whenever someone clicks the button, the `start()` function will be called!
 
 Let's go back to our JavaScript file and test it out!
 
-![Test](https://cloud-2hpj4eqx8.vercel.app/01.gif)
+![Test](https://cdn.hackclub.com/rescue?url=https://cloud-2hpj4eqx8.vercel.app/01.gif)
 
 Hmm... It works, but not as expected. There are 2 flaws.
 
@@ -445,7 +445,7 @@ function reset() {
 
 Here's the final output:
 
-![Final Output GIF](https://cloud-a8vhbx5i9.vercel.app/0final-output.gif)
+![Final Output GIF](https://cdn.hackclub.com/rescue?url=https://cloud-a8vhbx5i9.vercel.app/0final-output.gif)
 
 ## Part 4: The End
 

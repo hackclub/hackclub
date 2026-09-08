@@ -2,18 +2,18 @@
 name: "Fibonacci Graph Generator"
 description: "Build a Fibonacci Graph Generator with Python!"
 author: "@iamsid47"
-img: "https://cloud-97au21fhb.vercel.app/0fibonacci-test2.png"
+img: "https://cdn.hackclub.com/rescue?url=https://cloud-97au21fhb.vercel.app/0fibonacci-test2.png"
 ---
 
 In this workshop, we will walk through how to build **a Fibonacci graph generator!**
 
-![Fibonacci graph](https://cloud-97au21fhb.vercel.app/0fibonacci-test2.png)
+![Fibonacci graph](https://cdn.hackclub.com/rescue?url=https://cloud-97au21fhb.vercel.app/0fibonacci-test2.png)
 
 The Fibonacci sequence is a peculiar series of numbers from classical mathematics that has found applications in advanced mathematics, nature, statistics, and computer science.
 
 The Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers, starting with 0, and 1. 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55… and so on.
 
-![pascals triangle](https://cloud-jdkgsy3xx.vercel.app/02-pascals-triangle-science-photo-library.jpg)
+![pascals triangle](https://cdn.hackclub.com/rescue?url=https://cloud-jdkgsy3xx.vercel.app/02-pascals-triangle-science-photo-library.jpg)
 
 You may have seen Pascal's Triangle in math class. The diagonals in Pascal's triangle add up to the Fibonacci sequence.
 
@@ -25,7 +25,7 @@ Sound interesting? Let's build it with Python!
 
 ## Getting started
 
-![Create a repl](https://cloud-dqnxiplyi.vercel.app/0fibo-repl.png)
+![Create a repl](https://cdn.hackclub.com/rescue?url=https://cloud-dqnxiplyi.vercel.app/0fibo-repl.png)
 
 We're going to be using [Repl.it](https://repl.it), a free, online code editor, to code our project. To get started, visit [repl.it/languages/python3](https://repl.it/languages/python3). Your coding environment will spin up instantly!
 
@@ -114,7 +114,7 @@ If you run the above code by clicking the green "Run" button at the top, you'll 
 
 Yay! You've completed the first section of this project!
 
-![Golden Triangles](https://cloud-97au21fhb.vercel.app/2fibonacci-test.png)
+![Golden Triangles](https://cdn.hackclub.com/rescue?url=https://cloud-97au21fhb.vercel.app/2fibonacci-test.png)
 
 Now, let's write some functions for creating the Golden Spiral.
 
@@ -205,9 +205,9 @@ def arcLine(n, length, angle):
 
 And here is the golden curve it generates!
 
-![Golden Curve with rectangles](https://cloud-97au21fhb.vercel.app/0fibonacci-test2.png]
+![Golden Curve with rectangles](https://cdn.hackclub.com/rescue?url=https://cloud-97au21fhb.vercel.app/0fibonacci-test2.png]
 
-![Without Rectangles](https://cloud-97au21fhb.vercel.app/1golden_curve_alone.png)
+![Without Rectangles](https://cdn.hackclub.com/rescue?url=https://cloud-97au21fhb.vercel.app/1golden_curve_alone.png)
 
 ## Invoking the functions
 

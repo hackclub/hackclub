@@ -2,7 +2,7 @@
 name: 'Drum Pad'
 description: 'Creating a Drum Pad with HTML, CSS & JS'
 author: '@emmanuel39hanks'
-img: 'https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png'
 locales: 'pt-br'
 ---
 
@@ -14,7 +14,7 @@ Ever wondered how you can play sounds with code? In this workshop, we will be cr
 
 _Preview of the Drum Pad we are going to be creating_
 
-![Drum Pad Preview](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
+![Drum Pad Preview](https://cdn.hackclub.com/rescue?url=https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
 
 Apart from building the drum pad, you will also be learning about different types of events, functions, styling, and more with Vanilla JavaScript, HTML, and CSS.
 
@@ -97,7 +97,7 @@ Here, we have a parent `div` tag that nests our button `divs`, and then we label
 
 When we run our code, it will look like this at the moment:
 
-![Preview of HTML with no CSS](https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
+![Preview of HTML with no CSS](https://cdn.hackclub.com/rescue?url=https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
 
 # CSS
 
@@ -121,7 +121,7 @@ body {
 
 When we run our code, you will see that our content has been aligned to the center, and that's because we changed the properties of our `body` tag, and the tag basically renders the content on a web page.
 
-![Preview of HTML with CSS applied, to change the layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
+![Preview of HTML with CSS applied, to change the layout](https://cdn.hackclub.com/rescue?url=https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
 
 ## Classes
 
@@ -188,7 +188,7 @@ We will write styling for our class name `.box`, to specify our buttons unique s
 
 And when we run our code again, it should look like this:
 
-![Preview of HTML with layout CSS applied, the pads are in a grid and all gray borders](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
+![Preview of HTML with layout CSS applied, the pads are in a grid and all gray borders](https://cdn.hackclub.com/rescue?url=https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
 
 We will then add styling that adds hovering effects, inactive or active states to our buttons:
 

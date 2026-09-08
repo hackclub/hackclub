@@ -2,14 +2,14 @@
 name: 'JavaScript Snake'
 description: 'A snake game made with HTML, CSS, and JavaScript!'
 author: '@GurshanBrar'
-img: 'https://cloud-jnwpv6vih.vercel.app/0javascript_snake_cover.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-jnwpv6vih.vercel.app/0javascript_snake_cover.png'
 ---
 Snake is addicting. We've all played the game on those tiny flip phones and as programmers, wondered the internal logic of them. But it turns out that creating one is a super easy thing to do! This workshop exists to teach you how to create your own **customizable** snake game that works smooth and looks good! **Are you excited???**
 
 ### What you'll build
 Here's a demo on what you'll be building. Also, the [final code](https://repl.it/@GurshanBrar/JavaScript-Snake-Final) and the [final demo](https://JavaScript-snake-final.gurshanbrar.repl.co/):
 
-![Final game screenshot](https://cloud-jnwpv6vih.vercel.app/0javascript_snake_cover.png)
+![Final game screenshot](https://cdn.hackclub.com/rescue?url=https://cloud-jnwpv6vih.vercel.app/0javascript_snake_cover.png)
 
 ### Know this beforehand
 Although *technically*, there aren't any prerequisites, this workshop will be a whole lot more fun if you have a basic understanding of HTML, CSS, and JavaScript. But don't worry if you don't, because we all learn by doing! We'll also be using Bootstrap which as a CSS styling framework.
@@ -39,7 +39,7 @@ We need to eliminate any confusion that stems from the starter template. To do t
 #### The HTML file
 HTML stands for **Hyper Text Markup Language** and is used for defining the **basic structure and content** of a web page. HTML consists of opening tags followed by closing tags. Inside the two tags, we add in our content. We use HTML to define a ```<div>``` (container) for our snake game and ```<span>```/```<svg>``` elements for the play button and stats. Now lets go over it!
 
-![Image describing a HTML tag](https://cloud-k4ovk19o8.vercel.app/4html_tag_demo.png)
+![Image describing a HTML tag](https://cdn.hackclub.com/rescue?url=https://cloud-k4ovk19o8.vercel.app/4html_tag_demo.png)
 
 - ```html <!DOCTYPE html>``` tells the browser to render the file as an HTML document
 - Inside ```<html lang="en">``` is where all of our content goes
@@ -73,7 +73,7 @@ To contain the score and length we use another ```<div>``` element. Since this `
 
 Finally, we add an HTML ```<canvas>``` element. I want to give special attention to this because it'll be important to the understanding of our snake game. [Html canvas](https://www.w3schools.com/html/html5_canvas.asp) is a type of [bitmap](https://www.figma.com/dictionary/#bitmap) graphics implementation in which shapes and lines can be drawn easily with JavaScript. It has a coordinate system that corrolates with each pixel making it easy to place graphics accurately. It also had ```width``` and ```height``` attributes that define the maximum coordinates of the x and y axis. These attributes automatically influence the height and width of the element on the page. You can see an example here:
 
-![Image of HTML Canvas coordinate system](https://cloud-eb3rdoa3y.vercel.app/0canvas_example.png)
+![Image of HTML Canvas coordinate system](https://cdn.hackclub.com/rescue?url=https://cloud-eb3rdoa3y.vercel.app/0canvas_example.png)
 
 The last elements are the ```<script>``` tags with a ```src``` attribute defining the url. The first three are Bootstrap's required scripts and the last one refers to ours.
 
@@ -107,7 +107,7 @@ We use dot notation to change the HTML attributes, width and height. We set the 
 
 Now lets start making the functionality of our snake game! Refer to the flowchart: 
 
-![Flowchart depicting the game loop's logic](https://cloud-1p4py9nup.vercel.app/0flowchart.png) 
+![Flowchart depicting the game loop's logic](https://cdn.hackclub.com/rescue?url=https://cloud-1p4py9nup.vercel.app/0flowchart.png) 
 
 Let me explain the processes more thoroughly:
 - First we make the game variables. These can include a snake object, a gameOver variable, etc.
@@ -197,7 +197,7 @@ A ```do while``` loop in JavaScript initially runs the ```do``` block, and runs 
 
 The ```while``` means that the ```do``` part repeats until the snake's food is not equivalent to the snake's head because we don't want food spawning there. The two ampersands in the middle (&&) simply mean that left and right conditions have to be true for the whole statement to be true. So if they are both true that means that the food is in fact on the head and the loop repeats. Heres some reference to logical operators:
 
-![Reference to logical operators](https://cloud-k4ovk19o8.vercel.app/5logical_operator_description.png)
+![Reference to logical operators](https://cdn.hackclub.com/rescue?url=https://cloud-k4ovk19o8.vercel.app/5logical_operator_description.png)
 
 Finally, we add 
 ```JavaScript
@@ -274,7 +274,7 @@ let repeat = window.setInterval(main, interval);
 ```
 This line starts an interval on the ```window``` object. It repeats the function specified in its first argument and takes a duration in the second argument. Arguments in JavaScript are variables passed to a function. They can be used in a function when otherwise the variable would not be available. The ```repeat``` variable is used to clear the interval too, as seen above. Every ```interval``` miliseconds, ```main()``` will repeat automatically! Here's a small reference:
 
-![Image describing arguments and parameters](https://cloud-k4ovk19o8.vercel.app/0arguments_demo.jpeg)
+![Image describing arguments and parameters](https://cdn.hackclub.com/rescue?url=https://cloud-k4ovk19o8.vercel.app/0arguments_demo.jpeg)
 
 Let's create our ```moveSnake()``` function now. This function moves our snake in ```moveDirection```. Its right here and you should add it after the last bracket of ```main()```:
 ```JavaScript
@@ -302,7 +302,7 @@ To move the snake, we first need to add the current head object into the body. T
 
 Finally we use an array's [pop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) method to remove the last object. Check out these different array methods:
 
-![Image that lists and describes array methods](https://cloud-k4ovk19o8.vercel.app/1array_methods_description.jpg)
+![Image that lists and describes array methods](https://cdn.hackclub.com/rescue?url=https://cloud-k4ovk19o8.vercel.app/1array_methods_description.jpg)
 
 That function is now done, so code this this new function after the closing bracket of the ```moveSnake()``` function:
 ```JavaScript
@@ -346,7 +346,7 @@ document.addEventListener('keydown', event => {
     moveDirection = direction === oppositeDirection ? moveDirection : direction;
 });
 ```
-![Image showing a cartoon person *listening* to an event](https://cloud-k4ovk19o8.vercel.app/2event_listener.png)
+![Image showing a cartoon person *listening* to an event](https://cdn.hackclub.com/rescue?url=https://cloud-k4ovk19o8.vercel.app/2event_listener.png)
 
 The document gets a listener on a ```keydown``` event. Whenever the event happens, we prevent the default action which is to scroll and can be annoying. We change the direction to the ```event.key``` taken from our object, and if it is ```null``` make it equal to ```moveDirection```. We finally add a check to make sure our direction isn't opposite direction. We do this to make sure our snake can move in the direction because it can't move in on itself.
 
@@ -388,7 +388,7 @@ All this does is makes a ```oppositeDirection``` variable to decide where the sn
 
 ### And we're done!
 
-![Image showing spongebob dusting hands](https://cloud-k4ovk19o8.vercel.app/3finished.gif)
+![Image showing spongebob dusting hands](https://cdn.hackclub.com/rescue?url=https://cloud-k4ovk19o8.vercel.app/3finished.gif)
 
 Congrats! You can check the [final code](https://repl.it/@GurshanBrar/JavaScript-Snake-Final#script.js) for accuracy and mess around with the result. Fiddle colors, add custom CSS, the choice is yours! If you need inspiration, here are some extensions you can try making:
 - [The snake game with a play button](https://repl.it/@GurshanBrar/JavaScript-Snake-v1#index.html). You don't have to refresh to play again. Here's the [demo](https://JavaScript-snake-v1.gurshanbrar.repl.co/)

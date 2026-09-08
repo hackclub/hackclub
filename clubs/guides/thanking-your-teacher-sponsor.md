@@ -14,4 +14,4 @@ On your card, make sure you include:
 4. Signatures of all co-leaders of your club
 5. (Optional) A picture?
     
-![](https://cloud-i2m4n0l00.vercel.app/0image-20190730-210411.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-i2m4n0l00.vercel.app/0image-20190730-210411.png)

@@ -2,10 +2,10 @@
 name: 'Craps Simulator'
 description: 'Enter a parallel universe where gambling is legal and make a gambling simulator in C#'
 author: '@JakeGerber'
-img: 'https://cloud-isbdai043.vercel.app/0screenshot__1441_.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-isbdai043.vercel.app/0screenshot__1441_.png'
 ---
 
-<img src="https://cloud-isbdai043.vercel.app/0screenshot__1441_.png" width="380" alt="Craps Simulator Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-isbdai043.vercel.app/0screenshot__1441_.png" width="380" alt="Craps Simulator Example">
 
 Close your eyes for a few seconds. Don't open them until I tell you.
 
@@ -30,7 +30,7 @@ First, if you don't know what craps is, I recommend taking a few minutes to [rea
 
 We're going to use [Repl.it](https://repl.it/~), a free, online coding platform, to code the project. Get started by visiting [repl.it/languages/csharp](https://repl.it/languages/csharp).
 
-<img src="https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
 
 That's right, we're going to code this project in C#! Don't worry if you've never written C# before—the code is super beginner-friendly, and as long as you've written code in most languages, you'll be able to pick it up pretty easily.
 

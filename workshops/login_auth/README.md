@@ -14,7 +14,7 @@ Firebase is a platform developed by Google for creating mobile and web applicati
 
 You will make something like this 👇
 
-![live gif](https://cloud-7782l8k04.vercel.app/loginv2.gif)
+![live gif](https://cdn.hackclub.com/rescue?url=https://cloud-7782l8k04.vercel.app/loginv2.gif)
 
 [Check out this demo of the final product!](https://Loginauth.tanishqsoni.repl.co)
 
@@ -39,23 +39,23 @@ First, you will need to [sign in to Firebase](https://firebase.google.com/) usin
 
 After signing in, you will see a page similar to this:
 
-![Firebase landing](https://cloud-mketa8pxq.vercel.app/1.png)
+![Firebase landing](https://cdn.hackclub.com/rescue?url=https://cloud-mketa8pxq.vercel.app/1.png)
 
 In the image above, you'll see the `Go to console` button at the top right corner. Click on that, and you will be redirected to the console section.
 
-![Project page](https://cloud-kfr44a6da.vercel.app/2.png)
+![Project page](https://cdn.hackclub.com/rescue?url=https://cloud-kfr44a6da.vercel.app/2.png)
 
 In the console section, you'll see all your Firebase projects and the `Add Project` button. Click on the `Add Project` button to create a new project.
 
-![Create project](https://cloud-nfiwmg8kh.vercel.app/3.png)
+![Create project](https://cdn.hackclub.com/rescue?url=https://cloud-nfiwmg8kh.vercel.app/3.png)
 
 Here you have to give a name to your Firebase project such as `Login-auth`.
 
 Here is an optional step where you can use Google Analytics for your project, but in this workshop, you won't need it. After giving a name to your project click the continue button to proceed further.
 
-![Analytics page](https://cloud-pva80oxrl.vercel.app/4.png)
+![Analytics page](https://cdn.hackclub.com/rescue?url=https://cloud-pva80oxrl.vercel.app/4.png)
 
-![Project created](https://cloud-3swaas1pn.vercel.app/5.png)
+![Project created](https://cdn.hackclub.com/rescue?url=https://cloud-3swaas1pn.vercel.app/5.png)
 
 Now you should see `Your new project is ready`.
 
@@ -71,11 +71,11 @@ At the project's console landing page you will see `Get started by adding Fireba
 2. Android
 3. `</>` (this option is for web which we are using so click on that)
 
-![Project Console](https://cloud-l7pn8f9e9.vercel.app/6.png)
+![Project Console](https://cdn.hackclub.com/rescue?url=https://cloud-l7pn8f9e9.vercel.app/6.png)
 
 After clicking `</>` a new page will pop up and ask you for a name for your app. For this workshop we will use `login-auth` as the app name.
 
-![App nickname](https://cloud-8tdv8wfuj.vercel.app/8.png)
+![App nickname](https://cdn.hackclub.com/rescue?url=https://cloud-8tdv8wfuj.vercel.app/8.png)
 
 Here is an **important** part!
 
@@ -83,11 +83,11 @@ You will now see some JavaScript code. This code helps your website connect to y
 
 After saving the code click on `continue to console`.
 
-![API keys](https://cloud-nsps2klza.vercel.app/9.png)
+![API keys](https://cdn.hackclub.com/rescue?url=https://cloud-nsps2klza.vercel.app/9.png)
 
 After that you need to add the existing users so that they can login. For that you need to enable **Email/Password** authentication in your project's Authentication section. To do that you need to click on the tab `Authentication` on the top left `Develop` section.
 
-![Authentication page](https://cloud-pnq6xn3gp.vercel.app/10.png)
+![Authentication page](https://cdn.hackclub.com/rescue?url=https://cloud-pnq6xn3gp.vercel.app/10.png)
 
 Here in the Authentication page, you'll see different tabs:
 
@@ -98,19 +98,19 @@ Here in the Authentication page, you'll see different tabs:
 
 Click on the Sign-in method.
 
-![Sign in method](https://cloud-nvyxode6r.vercel.app/11.png)
+![Sign in method](https://cdn.hackclub.com/rescue?url=https://cloud-nvyxode6r.vercel.app/11.png)
 
 Here you need to enable **Email/Password** in the `sign-in providers` section. Click on **Email/Password**, enable it, then save it.
 
-![Enable email-pass](https://cloud-2vpwetbvx.vercel.app/12.png)
+![Enable email-pass](https://cdn.hackclub.com/rescue?url=https://cloud-2vpwetbvx.vercel.app/12.png)
 
 After enabling, you need to add users, so click on the `Users` tab.
 
-![Add user](https://cloud-kbxm635o2.vercel.app/13.png)
+![Add user](https://cdn.hackclub.com/rescue?url=https://cloud-kbxm635o2.vercel.app/13.png)
 
 Then click on `Add User` and add an `Email` and `Password` for that user. Once done click `Add User`.
 
-![Save user](https://cloud-l38zbxdt7.vercel.app/14.png)
+![Save user](https://cdn.hackclub.com/rescue?url=https://cloud-l38zbxdt7.vercel.app/14.png)
 
 ## Designing a webpage 🖊️
 
@@ -120,7 +120,7 @@ To get started, go to [https://repl.it/languages/html](https://repl.it/languages
 
 It looks like this 👇
 
-<a href="https://repl.it/languages/html" target="_blank"><img src="https://cloud-g2gwlwjtx.vercel.app/c2.png" alt="Repl page" ></a>
+<a href="https://repl.it/languages/html" target="_blank"><img src="https://cdn.hackclub.com/rescue?url=https://cloud-g2gwlwjtx.vercel.app/c2.png" alt="Repl page" ></a>
 
 ### Coding Part </>
 
@@ -202,7 +202,7 @@ So here is what your HTML code should look like so far:
 </html>
 ```
 
-![without JS](https://cloud-ff66h83qt.vercel.app/0u1.png)
+![without JS](https://cdn.hackclub.com/rescue?url=https://cloud-ff66h83qt.vercel.app/0u1.png)
 
 As you can see, both divisions are being displayed on the same page. You need to display the second division after the user successfully logged-in as it contains the logout button.
 
@@ -376,7 +376,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 Now, how it looks like:
 
-![with JS](https://cloud-e3wysrojq.vercel.app/c1.png)
+![with JS](https://cdn.hackclub.com/rescue?url=https://cloud-e3wysrojq.vercel.app/c1.png)
 
 Now you need to work on both the functions you assigned to HTML buttons (`login()` and `logout()`).
 
@@ -489,7 +489,7 @@ function logout() {
 
 Your website should look like this 👇
 
-![live](https://cloud-meubu1zac.vercel.app/0login_2.1.gif)
+![live](https://cdn.hackclub.com/rescue?url=https://cloud-meubu1zac.vercel.app/0login_2.1.gif)
 
 Try logging in with the email and password you stored in Firebase. If it worked you should be all set!
 

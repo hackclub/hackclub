@@ -2,14 +2,14 @@
 name: 'Orpheus Run'
 description: 'Create an endless running game with just HTML, CSS and some JavaScript!'
 author: '@faisalsayed10'
-img: 'https://cloud-g7zlt63qw.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-g7zlt63qw.vercel.app/0image.png'
 ---
 
 # Orpheus Run
 
 You probably must have played Temple Run or the famous 404 Dino game! What if we create our own simple version of that? Well, we are going to do exactly the same in today's workshop! And you know what? It only requires HTML, CSS and JavaScript!
 
-![Demo of our today's workshop](https://cloud-da2q27sz3.vercel.app/01.gif)
+![Demo of our today's workshop](https://cdn.hackclub.com/rescue?url=https://cloud-da2q27sz3.vercel.app/01.gif)
 
 Here's the [source code](https://repl.it/@FaisalSayed1/Obstacle-Avoiding-Game).
 
@@ -25,7 +25,7 @@ You should know the basics (and I mean, very basics) of:
 
 We also require a picture of Orpheus so that we can use it as the game character!
 
-Download it by going [here](https://cloud-iz63k53d6.vercel.app/0image.png).
+Download it by going [here](https://cdn.hackclub.com/rescue?url=https://cloud-iz63k53d6.vercel.app/0image.png).
 
 ## Part 2: Setup
 
@@ -36,7 +36,7 @@ To start, go to this [starter code](https://repl.it/languages/html) and Replit w
 Also import the downloaded Orpheus image into your repl.
 
 Here's how:  
-![importing orpheus image into the repl](https://cloud-iso38maak.vercel.app/02.gif)
+![importing orpheus image into the repl](https://cdn.hackclub.com/rescue?url=https://cloud-iso38maak.vercel.app/02.gif)
 
 ![let's begin!](https://media.giphy.com/media/5zf2M4HgjjWszLd4a5/giphy.gif)
 
@@ -93,13 +93,13 @@ So now the `jump()` function will be triggered when we click on the div with the
 
 Your preview looks something like this:
 
-![preview of the code written so far](https://cloud-mx8ey0ual.vercel.app/0image.png)
+![preview of the code written so far](https://cdn.hackclub.com/rescue?url=https://cloud-mx8ey0ual.vercel.app/0image.png)
 
 We won't see anything special in our preview window as we haven't added any styles yet. CSS is going to play a very important role in today's workshop, so let's start writing some styles!
 
 ### 2) CSS
 
-![css](https://cloud-1pbtnta6d.vercel.app/0image.png)
+![css](https://cdn.hackclub.com/rescue?url=https://cloud-1pbtnta6d.vercel.app/0image.png)
 
 It's time to write some styles for our DOM elements so that we can see them on the screen! Head over to the `style.css` file in your repl and let's start writing.
 
@@ -157,7 +157,7 @@ Next, we set its position to `relative` so that we can position it properly insi
 
 Here's what your game now looks like!
 
-![preview of our code written so far](https://cloud-8lx2r9sy5.vercel.app/0image.png)
+![preview of our code written so far](https://cdn.hackclub.com/rescue?url=https://cloud-8lx2r9sy5.vercel.app/0image.png)
 
 We are getting really close to our desired product!
 
@@ -239,7 +239,7 @@ Let's go back to our HTML and add this `move` class to the `obstacles` div.
 
 Now if you click `RUN` you'll be surprised!
 
-![our move animation working perfectly fine!](https://cloud-8td2hgnzi.vercel.app/03.gif)
+![our move animation working perfectly fine!](https://cdn.hackclub.com/rescue?url=https://cloud-8td2hgnzi.vercel.app/03.gif)
 
 **NOTE:** After we are done testing this animation, remove the `move` class from the `<div>` because we don't want the animation to start directly after we `RUN` our code. We'll use JavaScript later to add the `move` class back again to the `<div>` accordingly.
 
@@ -272,7 +272,7 @@ Explanation: We create the `jump` animation similar to the `move` animation but 
 
 Now, if you want to test this animation, you can simply add this class to the `character` div and you'll see that your character jumps! As we haven't set it to iterate infinitely, it will only jump once after you `RUN` the code.
 
-![our character jumping!](https://cloud-e26ox5peb.vercel.app/04.gif)
+![our character jumping!](https://cdn.hackclub.com/rescue?url=https://cloud-e26ox5peb.vercel.app/04.gif)
 
 After we have done making our animations, it's time that we implement these animations using JavaScript, implement a scoring system and also a game over system!
 ### 3) JavaScript
@@ -316,7 +316,7 @@ Also, to clear all the past unfinished timeouts before we do anything, we call t
 
 Try clicking to test it!
 
-![testing of our jump() function](https://cloud-er3hifytb.vercel.app/05.gif)
+![testing of our jump() function](https://cdn.hackclub.com/rescue?url=https://cloud-er3hifytb.vercel.app/05.gif)
 
 Now, let's create a function which will start the movement of the obstacles.
 
@@ -347,7 +347,7 @@ Explanation: Whenever the `start()` function is triggered, it will check if the 
 
 Test your game now by pressing the start button!
 
-![preview of our game](https://cloud-fapkjm7bk.vercel.app/06.gif)
+![preview of our game](https://cdn.hackclub.com/rescue?url=https://cloud-fapkjm7bk.vercel.app/06.gif)
 
 <detail><summary>Your code so far:</summary>
 
@@ -421,7 +421,7 @@ function start() {
 
 Now we'll see that the score increases as we play the game!
 
-![our score implementation works fine!](https://cloud-fw9vqdvtx.vercel.app/07.gif)
+![our score implementation works fine!](https://cdn.hackclub.com/rescue?url=https://cloud-fw9vqdvtx.vercel.app/07.gif)
 
 Now, it's time to implement a function which will check if the character collides with any obstacles or not. And if it does, it will simply end the game!
 
@@ -475,7 +475,7 @@ function start() {
 
 And that's it! We are done creating our game!
 
-![demo of our game which is working soo perfect OMG](https://cloud-da2q27sz3.vercel.app/01.gif)
+![demo of our game which is working soo perfect OMG](https://cdn.hackclub.com/rescue?url=https://cloud-da2q27sz3.vercel.app/01.gif)
 
 <details><summary>Here's your final code so far:</summary>
 

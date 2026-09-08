@@ -2,12 +2,12 @@
 name: Speech Recognition
 description: Create a speech recognition app with JavaScript
 author: '@wollygfx'
-img: 'https://cloud-ekrhqwq4i.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-ekrhqwq4i.vercel.app/0image.png'
 ---
 
 In this workshop, you'll learn how to make a speech recognition app in just 20 minutes! Follow along with me and see how easy it is 🚀
 
-![Speech recognition app](https://cloud-ekrhqwq4i.vercel.app/0image.png)
+![Speech recognition app](https://cdn.hackclub.com/rescue?url=https://cloud-ekrhqwq4i.vercel.app/0image.png)
 
 [Live demo](https://speech-recognition-app.wollygfx.repl.co)
 <br>
@@ -21,7 +21,7 @@ This workshop requires a very basic knowledge of HTML and JavaScript. Don’t wo
 
 For this workshop we will use [Repl.it](https://repl.it/), a free, online code editor. Click [here](https://repl.it/languages/html) to get started with a new HTML project on repl.it.
 
-![Setup](https://cloud-qbmylslty.vercel.app/0image.png)
+![Setup](https://cdn.hackclub.com/rescue?url=https://cloud-qbmylslty.vercel.app/0image.png)
 
 ## HTML
 
@@ -55,7 +55,7 @@ Here's what your HTML body will look like once you've done this:
 
 This is the result of the code above:
 
-![HTML](https://cloud-hz3x1xvwh.vercel.app/0image.png)
+![HTML](https://cdn.hackclub.com/rescue?url=https://cloud-hz3x1xvwh.vercel.app/0image.png)
 
 Nice! This is all the HTML we need to write. Now, let's add some styling.
 
@@ -91,7 +91,7 @@ Let's break this down:
 
 Here's how our website looks so far:
 
-![CSS Result 1](https://cloud-383ylgdfq.vercel.app/0image.png)
+![CSS Result 1](https://cdn.hackclub.com/rescue?url=https://cloud-383ylgdfq.vercel.app/0image.png)
 
 And finally, we'll style the `button` and `textarea` elements.
 
@@ -124,7 +124,7 @@ Let's break this down:
 
 Finally, this is how our website looks like:
 
-![CSS Final result](https://cloud-qxesrc5a6.vercel.app/0image.png)
+![CSS Final result](https://cdn.hackclub.com/rescue?url=https://cloud-qxesrc5a6.vercel.app/0image.png)
 
 ## JavaScript
 

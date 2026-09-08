@@ -2,7 +2,7 @@
 name: 'CLI App'
 description: 'Craft your own CLI App using Node.js'
 author: '@aaryanporwal'
-img: 'https://cloud-pnkyco5ru.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-pnkyco5ru.vercel.app/0image.png'
 ---
 
 # Craft a Basic CLI App using NodeJS
@@ -20,7 +20,7 @@ This workshop will serve as a great starter to make CLI _(short for Command Line
 Let's make an app that fetches jokes? 
 Because ... who doesn't like jokes?
 
-![A gif that says no idea](https://cloud-grdpgs1h5.vercel.app/0giphy.gif)
+![A gif that says no idea](https://cdn.hackclub.com/rescue?url=https://cloud-grdpgs1h5.vercel.app/0giphy.gif)
 
 You wanna see how the final app looks? Here's the [link](https://uwu.aaryanporwal.repl.run/) to the live demo, and here's the [link](https://repl.it/@aaryanporwal/uwu) to the source code.
 
@@ -41,13 +41,13 @@ So let's begin 🚀
 
 Head over to repl.it and follow the steps to spin up your environment:
 
-![Click on start coding](https://cloud-anvhhtdg5.vercel.app/0image.png)
+![Click on start coding](https://cdn.hackclub.com/rescue?url=https://cloud-anvhhtdg5.vercel.app/0image.png)
 
-![Select bash from language dropdown and click on create repl](https://cloud-iztsipr4g.vercel.app/0image.png)
+![Select bash from language dropdown and click on create repl](https://cdn.hackclub.com/rescue?url=https://cloud-iztsipr4g.vercel.app/0image.png)
 
 Hooray!! Your repl instance is now up! You might see a similar screen:
 
-![repl environment photo](https://cloud-p5pvtbzdd.vercel.app/0image.png)
+![repl environment photo](https://cdn.hackclub.com/rescue?url=https://cloud-p5pvtbzdd.vercel.app/0image.png)
 
 ## Part 3: Building the App
 
@@ -66,7 +66,7 @@ Hooray!! Your repl instance is now up! You might see a similar screen:
 5. Execute the app by typing `node <your-app-name>.js` in your terminal.
 
     You should see the something like this:
-    ![console.log() returns the statement](https://cloud-387cmkqc6.vercel.app/0image.png)
+    ![console.log() returns the statement](https://cdn.hackclub.com/rescue?url=https://cloud-387cmkqc6.vercel.app/0image.png)
     Where the string inside the _console.log_ function is printed in the terminal
 
 >Note: In future whenever you want to execute the app we'll use the same syntax used in point number 5.
@@ -109,7 +109,7 @@ So try running our code so far by executing `node <your app name.js> -n <your na
 
 ### Our App So Far
 
-![Code preview](https://cloud-fwazdes5p.vercel.app/0image.png)
+![Code preview](https://cdn.hackclub.com/rescue?url=https://cloud-fwazdes5p.vercel.app/0image.png)
 
 Your screen should look similar to the above screen!
 
@@ -119,7 +119,7 @@ But our app doesn't do a lot of stuff right now, so let's get to the next part!!
 
 In this part of the tutorial, we are going to fetch a random joke from a [jokes database](https://icanhazdadjoke.com/) and display it in the terminal, sounds fun, right?
 
-![gif saying awesome!](https://cloud-8n5b8v608.vercel.app/0giphy.gif)
+![gif saying awesome!](https://cdn.hackclub.com/rescue?url=https://cloud-8n5b8v608.vercel.app/0giphy.gif)
 
 One of the most popular libraries for retrieving and sending data to an API in Node.js is [axios](https://www.npmjs.com/package/axios). Start by adding axios as a dependency:
 
@@ -153,7 +153,7 @@ axios.get(url, { headers: { Accept: "application/json" } })
  });
 ```
 
-![what's happening](https://cloud-h0r4eewr9.vercel.app/0whats-happening.gif)
+![what's happening](https://cdn.hackclub.com/rescue?url=https://cloud-h0r4eewr9.vercel.app/0whats-happening.gif)
 
 **Code Explanation:**
 
@@ -161,11 +161,11 @@ In addition to responding with a greeting, the CLI application will now retrieve
 
 **_How does the app look now 🤔 ?_**
 
-![random joke functionality](https://cloud-3wip6rf0e.vercel.app/0image.png)
+![random joke functionality](https://cdn.hackclub.com/rescue?url=https://cloud-3wip6rf0e.vercel.app/0image.png)
 
 _Pretty cool, right?_
 
-![Oh yes gif](https://cloud-3sjs1qqpt.vercel.app/0oh-yes.gif)
+![Oh yes gif](https://cdn.hackclub.com/rescue?url=https://cloud-3sjs1qqpt.vercel.app/0oh-yes.gif)
 
 ## Adding Search Feature
 

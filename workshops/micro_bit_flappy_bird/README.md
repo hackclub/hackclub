@@ -2,12 +2,12 @@
 name: 'micro:bit Flappy Bird'
 description: 'Create a basic Flappy Bird Game using BBC micro:bit'
 author: '@giridhar7632'
-img: 'https://cloud-ak4m6yygi.vercel.app/0final_output.gif'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-ak4m6yygi.vercel.app/0final_output.gif'
 ---
 
 Have you ever heard about the popular BBC micro:bit? In this workshop we are going to work with BBC micro:bit and create a basis **Flappy Bird Game** using it. Check out the final project.
 
-[![Final Project](https://cloud-ak4m6yygi.vercel.app/0final_output.gif)
+[![Final Project](https://cdn.hackclub.com/rescue?url=https://cloud-ak4m6yygi.vercel.app/0final_output.gif)
 
 Here's the [demo/code](https://makecode.microbit.org/_i6g2xLFeTTfP).
 
@@ -25,7 +25,7 @@ If you don't have the hardware, don't worry we'll use a simulator in this worksh
 
 A micro:bit is a tiny piece of hardware with many features. It a pocket-sized computer which performs according to your instructions written in form of `program`. A micro USB cable is used to transfer the `program` from computer to micro:bit.
 
-![micro:bit](https://cloud-kifx081bh.vercel.app/1microbit.jpg)
+![micro:bit](https://cdn.hackclub.com/rescue?url=https://cloud-kifx081bh.vercel.app/1microbit.jpg)
 
 You can use different programming languages to program your micro:bit. You can use [Makecode](https://makecode.microbit.org/) to program in code blocks or JavaScript. You can also use [Python](https://python.microbit.org/v/2) to program a micro:bit.
 
@@ -33,7 +33,7 @@ On the front face, it has 25 LEDs which we will use to display our game. And on 
 
 These are the main parts of a micro:bit 👇
 
-![micro:bit parts](https://cloud-kifx081bh.vercel.app/2microbitparts.jpg)
+![micro:bit parts](https://cdn.hackclub.com/rescue?url=https://cloud-kifx081bh.vercel.app/2microbitparts.jpg)
 
 Learn more about micro:bit [here](https://microbit.org/get-started/user-guide/overview/).
 
@@ -41,15 +41,15 @@ Learn more about micro:bit [here](https://microbit.org/get-started/user-guide/ov
 
 Open [Makecode](https://makecode.microbit.org/) and click on ➕`New Project`.
 
-![Setup](https://cloud-kifx081bh.vercel.app/3setup.png)
+![Setup](https://cdn.hackclub.com/rescue?url=https://cloud-kifx081bh.vercel.app/3setup.png)
 
 Give it a name.
 
-![naming project](https://cloud-kifx081bh.vercel.app/4name_your_roject.png)
+![naming project](https://cdn.hackclub.com/rescue?url=https://cloud-kifx081bh.vercel.app/4name_your_roject.png)
 
 You should see something like this. 
 
-![Project created](https://cloud-kifx081bh.vercel.app/5preview.png)
+![Project created](https://cdn.hackclub.com/rescue?url=https://cloud-kifx081bh.vercel.app/5preview.png)
 
 Once you finish setting up, let's get going 🚀
 
@@ -57,7 +57,7 @@ Once you finish setting up, let's get going 🚀
 
 By default, MakeCode open's a project with code blocks. At top of the window, switch to JavaScript.
 
-![JavaScript](https://cloud-kifx081bh.vercel.app/6javascript.png)
+![JavaScript](https://cdn.hackclub.com/rescue?url=https://cloud-kifx081bh.vercel.app/6javascript.png)
 
 The MakeCode programming environment uses JavaScript along with the Static [TypeScript](https://www.typescriptlang.org/) language. Don't worry about TypeScript. It is super similar to JavaScript. We will use many of the micro:bit’s built-in JavaScript functions. For example, the `showString()` function displays a string on the LED screen. It will scroll to the left if it’s bigger than the screen.
 
@@ -67,7 +67,7 @@ Try displaying your name. Here's mine: 😊
 basic.showString("Giridhar!")
 ```
 
-![name](https://cloud-kifx081bh.vercel.app/7name.gif)
+![name](https://cdn.hackclub.com/rescue?url=https://cloud-kifx081bh.vercel.app/7name.gif)
 
 ## Step 1: Add the Bird to the Game
 
@@ -87,7 +87,7 @@ Here, the variable `bird` is declared in TypeScript and initiated as `null`. One
 
 The `game.createSprite(x,y)` creates a sprite(our bird) in position (x, y) on the 5x5 grid of LEDs. 
 
-![microbit-coordinates](https://cloud-aqjebemlu.vercel.app/0coordinates.png)
+![microbit-coordinates](https://cdn.hackclub.com/rescue?url=https://cloud-aqjebemlu.vercel.app/0coordinates.png)
 
 > ⚠ **Note:** A sprite is like a little LED creature you can tell what to do.
 
@@ -95,7 +95,7 @@ We can set the properties of the item using `set()` method. Then we set the `Bli
 
 You can see our bird flying like this: 👇
 
-![blinking LED](https://cloud-70aevdanf.vercel.app/0bird.gif)
+![blinking LED](https://cdn.hackclub.com/rescue?url=https://cloud-70aevdanf.vercel.app/0bird.gif)
 
 ## Step 2: Make the Bird fly
 
@@ -116,7 +116,7 @@ Here, we use `change()` method to change property of the item. We can change the
 
 Now when any of the 2 buttons is pressed, the position of the bird should change by 1 unit(up or down).
 
-![controls](https://cloud-70aevdanf.vercel.app/1controls.gif)
+![controls](https://cdn.hackclub.com/rescue?url=https://cloud-70aevdanf.vercel.app/1controls.gif)
 
 ## Step 3: Generating obstacles
 
@@ -155,7 +155,7 @@ for (let index = 0; index <= 4; index++) {
 
 Now with every micro:bit restart you should see different automatically generated vertical obstacles.
 
-![random obstacles](https://cloud-70aevdanf.vercel.app/2random_obstacles.gif)
+![random obstacles](https://cdn.hackclub.com/rescue?url=https://cloud-70aevdanf.vercel.app/2random_obstacles.gif)
 
 Before continuing, make sure that obstacles are generated randomly and that the bird is moving up and down. If it doesn't work as expected, try to cross check your code.
 
@@ -180,7 +180,7 @@ Here, `basic.pause()` pauses the program for 1000 milliseconds(i.e., 1 second) f
 
 Now obstacles should move towards the left every second.
 
-![moving obstacles](https://cloud-70aevdanf.vercel.app/3moving_onstacles.gif)
+![moving obstacles](https://cdn.hackclub.com/rescue?url=https://cloud-70aevdanf.vercel.app/3moving_onstacles.gif)
 
 ## Step 5: Make obstacles disappear
 
@@ -203,7 +203,7 @@ basic.forever(() => {
 
 Now you see that when the obstacle reaches the bird it will just disappear.
 
-![disappearing obstacle](https://cloud-70aevdanf.vercel.app/4disappearing_obstacles.gif)
+![disappearing obstacle](https://cdn.hackclub.com/rescue?url=https://cloud-70aevdanf.vercel.app/4disappearing_obstacles.gif)
 
 ## Step 6: Generate more obstacles
 
@@ -228,7 +228,7 @@ basic.forever(() => {
 
 Now our screen is full of moving obstacles like this: 👇
 
-![multiple obstacles](https://cloud-70aevdanf.vercel.app/5multiple_obs.gif)
+![multiple obstacles](https://cdn.hackclub.com/rescue?url=https://cloud-70aevdanf.vercel.app/5multiple_obs.gif)
 
 Let's create some spaces between generated obstacles. Create a new variable `ticks` to count how many iterations the forever loop has done and execute obstacle creation only `if` ticks is divisible by `3`. The space between the obstacles depends on the number you use. Try add different numbers insted of `3` and observe the patterns generated. 😇
 
@@ -255,7 +255,7 @@ basic.forever(() => {
 
 Now you can see obstacles created with a space of `2` blocks between them and moving towards the left.
 
-![Moving left](https://cloud-70aevdanf.vercel.app/6crashing_obstacles.gif)
+![Moving left](https://cdn.hackclub.com/rescue?url=https://cloud-70aevdanf.vercel.app/6crashing_obstacles.gif)
 
 ## Step 7: Game Over
 
@@ -287,7 +287,7 @@ basic.forever(() => {
 
 Now the game ends when the bird is hit by an obstacle.
 
-![Game over](https://cloud-70aevdanf.vercel.app/7game_over.gif)
+![Game over](https://cdn.hackclub.com/rescue?url=https://cloud-70aevdanf.vercel.app/7game_over.gif)
 
 Our final code should look something like this:
 
@@ -338,11 +338,11 @@ If you are using hardware, connect the micro:bit to PC using USB cable. Now Clic
 
 You're all set. Now you can just play the game. 😋
 
-![game](https://cloud-ak4m6yygi.vercel.app/0final_output.gif)
+![game](https://cdn.hackclub.com/rescue?url=https://cloud-ak4m6yygi.vercel.app/0final_output.gif)
 
 That's it! You created a simple Flappy Bird game on a micro:bit. ✌
 
-![well done](https://cloud-70aevdanf.vercel.app/8well_done.gif)
+![well done](https://cdn.hackclub.com/rescue?url=https://cloud-70aevdanf.vercel.app/8well_done.gif)
 
 ## Hacking 
 

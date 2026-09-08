@@ -16,7 +16,7 @@ locales: 'es-xl, pt-br'
 > If you are a solo hacker you can jump straight into the [Sprig editor](https://sprig.hackclub.com).
 > You may be able to pick up some helpful tips reading through this though.
 
-<img width="500" alt="Screen Shot 2023-03-03 at 5 48 32 PM" src="https://cloud-guxu865fy-hack-club-bot.vercel.app/0image.png">
+<img width="500" alt="Screen Shot 2023-03-03 at 5 48 32 PM" src="https://cdn.hackclub.com/rescue?url=https://cloud-guxu865fy-hack-club-bot.vercel.app/0image.png">
 
 We designed Sprig to accomodate workshops with minimal instruction and maximal making and exploring. This is how I would run Sprig as a workshop.
 
@@ -24,7 +24,7 @@ We designed Sprig to accomodate workshops with minimal instruction and maximal m
 
 Give a quick demonstration of a fairly complete game with accessible code. You can go to the [gallery](https://sprig.hackclub.com/gallery) and sort by the `beginner` tag.
 
-<img width="500" alt="Screen Shot 2023-03-03 at 6 14 44 PM" src="https://cloud-9h10p1the-hack-club-bot.vercel.app/0image.png">
+<img width="500" alt="Screen Shot 2023-03-03 at 6 14 44 PM" src="https://cdn.hackclub.com/rescue?url=https://cloud-9h10p1the-hack-club-bot.vercel.app/0image.png">
 
 Here are a few games that meet the criteria:
 
@@ -37,13 +37,13 @@ Here are a few games that meet the criteria:
 For that you and your club don't lose your files, we use an account system, here is the step by step:
 
 1. Click on the "Log in" button at the top right of the page
-<img width="500" alt="Screen Shot 2023-03-03 at 6 35 57 PM" src="https://cloud-c0fezx07u-hack-club-bot.vercel.app/0image.png">
+<img width="500" alt="Screen Shot 2023-03-03 at 6 35 57 PM" src="https://cdn.hackclub.com/rescue?url=https://cloud-c0fezx07u-hack-club-bot.vercel.app/0image.png">
 
 2. Fill in the field with an email and then click on the "Send code" button
-<img width="500" alt="Screen Shot 2023-03-03 at 6 40 41 PM" src="https://cloud-5tajrvzec-hack-club-bot.vercel.app/0image.png">
+<img width="500" alt="Screen Shot 2023-03-03 at 6 40 41 PM" src="https://cdn.hackclub.com/rescue?url=https://cloud-5tajrvzec-hack-club-bot.vercel.app/0image.png">
 
 3. You will receive an email like this, then just put this code in the field "Code:"
-<img width="500" alt="Screen Shot 2023-03-03 at 6 46 27 PM" src="https://cloud-3e970nukr-hack-club-bot.vercel.app/0image.png">
+<img width="500" alt="Screen Shot 2023-03-03 at 6 46 27 PM" src="https://cdn.hackclub.com/rescue?url=https://cloud-3e970nukr-hack-club-bot.vercel.app/0image.png">
 
 That's it! Your account is ready!
 
@@ -55,7 +55,7 @@ Recent files are available in the "Your Games" page. They will always be saved i
 
 To save, hit the automatically generated name:
 
-<img width="500" alt="Screen Shot 2023-03-03 at 6 56 26 PM" src="https://cloud-n9033q1na-hack-club-bot.vercel.app/0image.png"> 
+<img width="500" alt="Screen Shot 2023-03-03 at 6 56 26 PM" src="https://cdn.hackclub.com/rescue?url=https://cloud-n9033q1na-hack-club-bot.vercel.app/0image.png"> 
 
 and add a name like so:
 `my_sprig_game`
@@ -83,7 +83,7 @@ If the games are not complete encourage people to keep working on them and plan 
 You can also encourage people to share the games they have so far by posting links to those games in the [Sprig channel](https://hackclub.slack.com/archives/C02UN35M7LG) on Slack.
 You can generate a link by navigating to the `share` -> `as link` option in the file menu, as seen below:
 
-<img width="500" alt="Screen Shot 2023-03-03 at 6 18 29 PM" src="https://cloud-es6rq2rf2-hack-club-bot.vercel.app/0image.png" />
+<img width="500" alt="Screen Shot 2023-03-03 at 6 18 29 PM" src="https://cdn.hackclub.com/rescue?url=https://cloud-es6rq2rf2-hack-club-bot.vercel.app/0image.png" />
 
 People could easily spend 3 or 4 club meetings working on games.
 

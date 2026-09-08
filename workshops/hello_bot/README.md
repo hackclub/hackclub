@@ -14,20 +14,20 @@ Create a new Node.js Repl on [Repl.it](https://repl.it/). If you follow the next
 
 Go to the [Discord Developers Page](https://discord.com/developers/applications/) and sign in. Click "New Application". Give your bot a name, and press "Create". 
 
-![Create a new Discord Application](https://cloud-jjd7stz3y-hack-club-bot.vercel.app/0create_application.png)
+![Create a new Discord Application](https://cdn.hackclub.com/rescue?url=https://cloud-jjd7stz3y-hack-club-bot.vercel.app/0create_application.png)
 
 Go to the bot tab, and click "Add Bot". Click the "Copy" button to copy the bot's token. Save this token somewhere as you will need this token in the next section.
 
-![Create bot](https://cloud-jjd7stz3y-hack-club-bot.vercel.app/1create_application2.png)
-![Copy bot token](https://cloud-jjd7stz3y-hack-club-bot.vercel.app/2create_application3.png)
+![Create bot](https://cdn.hackclub.com/rescue?url=https://cloud-jjd7stz3y-hack-club-bot.vercel.app/1create_application2.png)
+![Copy bot token](https://cdn.hackclub.com/rescue?url=https://cloud-jjd7stz3y-hack-club-bot.vercel.app/2create_application3.png)
 
 Next, you will need to add permissions to your bot and invite it to a Discord server so it can do certain actions. In the "Scopes" section, select "bot". A URL will appear at the bottom which you should copy and paste into a new tab. This will allow you to invite the bot to your Discord server.
 
-![Add bot scope](https://cloud-jjd7stz3y-hack-club-bot.vercel.app/3create_application4.png)
+![Add bot scope](https://cdn.hackclub.com/rescue?url=https://cloud-jjd7stz3y-hack-club-bot.vercel.app/3create_application4.png)
 
 Next, scroll down to the "Bot Permissions" section. You may add the following permissions:
 
-![add bot permissions](https://cloud-jjd7stz3y-hack-club-bot.vercel.app/4create_application5.png)
+![add bot permissions](https://cdn.hackclub.com/rescue?url=https://cloud-jjd7stz3y-hack-club-bot.vercel.app/4create_application5.png)
 
 Now that we have created the bot user and invited it to a server for testing, we'll write some JavaScript code so the bot can do things.
 
@@ -111,7 +111,7 @@ bot.on('message', (message) => {
 
 Test it out by sending a message with `h!hello`. The bot should respond with `world`. 
 
-![Bot command in channel](https://cloud-jjd7stz3y-hack-club-bot.vercel.app/5createapplication6767.png)
+![Bot command in channel](https://cdn.hackclub.com/rescue?url=https://cloud-jjd7stz3y-hack-club-bot.vercel.app/5createapplication6767.png)
 
 # Final Source Code
 

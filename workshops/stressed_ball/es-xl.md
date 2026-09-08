@@ -94,7 +94,7 @@ Para ayudarte a avanzar te daré algunos objetivos que desglosan el proyecto, y 
 
 ### Dibuja un circulo
 
-![Contorno del círculo](https://cloud-frxdc2f2o-hack-club-bot.vercel.app/1screen_shot_2021-11-02_at_12.21.50_pm.png)
+![Contorno del círculo](https://cdn.hackclub.com/rescue?url=https://cloud-frxdc2f2o-hack-club-bot.vercel.app/1screen_shot_2021-11-02_at_12.21.50_pm.png)
 
 Cuando tengas tu círculo en la pantalla, intenta descifrar qué hace el código para crearlo. En JavaScript, llamar una función tiene el siguiente aspecto: `nombreDeLaFunción(argumento0, argumento1)`. Puede haber cualquier cantidad de argumentos. Cuando dibujes el círculo, intenta averiguar qué significan los diferentes argumentos.
 
@@ -105,7 +105,7 @@ Cuando tengas tu círculo en la pantalla, intenta descifrar qué hace el código
 
 ### Colorea tu círculo
 
-![Círculo coloreado](https://cloud-frxdc2f2o-hack-club-bot.vercel.app/2screen_shot_2021-11-02_at_12.23.35_pm.png)
+![Círculo coloreado](https://cdn.hackclub.com/rescue?url=https://cloud-frxdc2f2o-hack-club-bot.vercel.app/2screen_shot_2021-11-02_at_12.23.35_pm.png)
 
 Hay muchas formas de representar colores en código, como: 
 

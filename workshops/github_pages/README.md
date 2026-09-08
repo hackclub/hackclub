@@ -34,7 +34,7 @@ Make a repository following this format:
 
 So if your username is `supersam`, your repository would be `supersam.github.io`.
 
-> ![](https://cloud-5a2wjgsux-hack-club-bot.vercel.app/2createrepo.gif)
+> ![](https://cdn.hackclub.com/rescue?url=https://cloud-5a2wjgsux-hack-club-bot.vercel.app/2createrepo.gif)
 
 # Clone into Cloud9
 
@@ -53,11 +53,11 @@ code.
 2. Go into your Cloud9 workspace and open a new terminal (Alt+T, or Window > New
    Terminal).
 
-   > ![](https://cloud-5a2wjgsux-hack-club-bot.vercel.app/3openterm.gif)
+   > ![](https://cdn.hackclub.com/rescue?url=https://cloud-5a2wjgsux-hack-club-bot.vercel.app/3openterm.gif)
 
 3. In the terminal type: `git clone [then the link you just copied]`
 
-   > ![](https://cloud-5a2wjgsux-hack-club-bot.vercel.app/1clone.gif)
+   > ![](https://cdn.hackclub.com/rescue?url=https://cloud-5a2wjgsux-hack-club-bot.vercel.app/1clone.gif)
 
 **Congrats! You can now edit and save in your repository!**
 
@@ -123,4 +123,4 @@ The URL to your website is the same name as your repository so it should be
 
 Congrats! Now you can share the URL to anyone!
 
-> ![](https://cloud-5a2wjgsux-hack-club-bot.vercel.app/0celebrate.gif)
+> ![](https://cdn.hackclub.com/rescue?url=https://cloud-5a2wjgsux-hack-club-bot.vercel.app/0celebrate.gif)

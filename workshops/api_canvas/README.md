@@ -4,7 +4,7 @@ description: Make a web API that wreaks havoc on your website
 author: '@MatthewStanciu'
 ---
 
-![15-second gif of a simple website being changed beyond recognition](https://cloud-awgd5gj78.vercel.app/hc-api-workshop-demo.gif)
+![15-second gif of a simple website being changed beyond recognition](https://cdn.hackclub.com/rescue?url=https://cloud-awgd5gj78.vercel.app/hc-api-workshop-demo.gif)
 
 You know the scenes in those home renovation reality shows where they knock down all the walls and gut the house, and they're having so much fun, and you think "wow that looks so fun I wish I could do that"? Well it turns out you can do the same thing to a website! And it feels just as cathartic!
 
@@ -12,15 +12,15 @@ In this workshop, we're going to learn about web APIs—specifically, how they w
 
 # What's a web API?
 
-![Drawing of a robot that says it will accept hello and changecolor api endpoints](https://cloud-gza5tupj5.vercel.app/image_from_ios.jpg)
+![Drawing of a robot that says it will accept hello and changecolor api endpoints](https://cdn.hackclub.com/rescue?url=https://cloud-gza5tupj5.vercel.app/image_from_ios.jpg)
 
 Imagine a robot. The robot is programmed to do a few certain tasks, but only when it receives the signal to do so. The robot has multiple triggers on its body that run each specific action, and it's constantly listening for when those triggers are hit.
 
-![The robot receives the hello endpoint, and says hello](https://cloud-j7efghg1c.vercel.app/image_from_ios.jpg)
+![The robot receives the hello endpoint, and says hello](https://cdn.hackclub.com/rescue?url=https://cloud-j7efghg1c.vercel.app/image_from_ios.jpg)
 
 The triggers can be as simple as a button that does one set task every time you push it, or it could be a dropbox that only triggers the action if the necessary items are deposited in the dropbox.
 
-![The robot hears changecolor with the parameter coral, and its color changes to color](https://cloud-enxtye0j8.vercel.app/img_0509.jpg)
+![The robot hears changecolor with the parameter coral, and its color changes to color](https://cdn.hackclub.com/rescue?url=https://cloud-enxtye0j8.vercel.app/img_0509.jpg)
 
 In reality, the "robot" is a server connected to the internet, and the triggers, known as **API endpoints**, are points on the server that are triggered by **HTTP requests** that are sent over the internet.
 
@@ -28,7 +28,7 @@ If this doesn't quite make sense to you right now, don't worry about it—you'll
 
 # Getting started
 
-![The starter project on replit](https://cloud-4f1wogm9b.vercel.app/screen_shot_2020-09-29_at_4.09.11_pm.png)
+![The starter project on replit](https://cdn.hackclub.com/rescue?url=https://cloud-4f1wogm9b.vercel.app/screen_shot_2020-09-29_at_4.09.11_pm.png)
 
 Get started by [opening the starter project](https://repl.it/@TechBug2012/hc-api-canvas-starter#index.js) on repl.it. When you open it, you should see something like this.
 
@@ -53,7 +53,7 @@ const http = require('http').Server(app)
 http.listen(3000)
 ```
 
-![Clicking Run now starts up a server, but doesn't do anything yet](https://cloud-icsqd6blm.vercel.app/screen_shot_2020-09-29_at_4.20.08_pm.png)
+![Clicking Run now starts up a server, but doesn't do anything yet](https://cdn.hackclub.com/rescue?url=https://cloud-icsqd6blm.vercel.app/screen_shot_2020-09-29_at_4.20.08_pm.png)
 
 If you click the green "Run" button at the top of your repl, you should notice that the server starts up, but nothing really happens yet.
 
@@ -67,15 +67,15 @@ app.get('/', (req, res) => {
 })
 ```
 
-![Gif showing how to restart your server on replit](https://cloud-70jejjo7h.vercel.app/screen_recording_2020-09-30_at_10.59.01_am.gif)
+![Gif showing how to restart your server on replit](https://cdn.hackclub.com/rescue?url=https://cloud-70jejjo7h.vercel.app/screen_recording_2020-09-30_at_10.59.01_am.gif)
 
 Restart the server by clicking "Stop" at the top, then clicking it again when it says "Run", then clicking the refresh icon near the top middle of the website preview (it's a big janky, I know).
 
-![A website with some HTML now loads](https://cloud-jsf8wn9xe.vercel.app/screen_shot_2020-09-29_at_4.23.24_pm.png)
+![A website with some HTML now loads](https://cdn.hackclub.com/rescue?url=https://cloud-jsf8wn9xe.vercel.app/screen_shot_2020-09-29_at_4.23.24_pm.png)
 
 You should see that some HTML loads. So, what is the code that you just typed, and why does it make a website appear?
 
-![The sidebar contains a folder called views, with an html file, and public, with a css file and a javascript file](https://cloud-h6tqhnlr6.vercel.app/screen_shot_2020-09-29_at_4.27.54_pm.png)
+![The sidebar contains a folder called views, with an html file, and public, with a css file and a javascript file](https://cdn.hackclub.com/rescue?url=https://cloud-h6tqhnlr6.vercel.app/screen_shot_2020-09-29_at_4.27.54_pm.png)
 
 If you take a look at your sidebar, you'll see that the starter project contains a folder called `views`, which contains an HTML file; and a folder called `public`, which contains a CSS file, a JavaScript file called `index.js`, and another JavaScript file called `emojiRain.js`. This is the way Express apps are commonly set up: HTML files are served from a `views` folder, and other files are served from a `public` folder.
 
@@ -93,7 +93,7 @@ Just after the line where you import `http` but before the line that starts with
 app.use(express.static('public'))
 ```
 
-![CSS now loads in](https://cloud-ba4rst9g2.vercel.app/screen_shot_2020-09-29_at_4.54.18_pm.png)
+![CSS now loads in](https://cdn.hackclub.com/rescue?url=https://cloud-ba4rst9g2.vercel.app/screen_shot_2020-09-29_at_4.54.18_pm.png)
 
 If you restart the server and refresh your website preview, you should notice that the heading is blue and the text is centered. Good news! The CSS loaded in, and any code we write in the client-side `script.js` file will take effect.
 
@@ -128,11 +128,11 @@ HTTP requests must return a **status code**. `200` means `OK`. But there are a _
 
 Stop and restart your server. Then, copy the link to the website preview link...
 
-![Pointing to the website preview, the url at the top](https://cloud-e4zjss6os.vercel.app/screen_shot_2020-09-29_at_5.23.22_pm.png)
+![Pointing to the website preview, the url at the top](https://cdn.hackclub.com/rescue?url=https://cloud-e4zjss6os.vercel.app/screen_shot_2020-09-29_at_5.23.22_pm.png)
 
 ...open a new tab, paste the url in, and add `/hello` at the end of it. Then hit enter.
 
-![A website that's entirely blank except for a Hi there, at the api endpoint you just wrote](https://cloud-jxf0r41ua.vercel.app/screen_shot_2020-09-29_at_5.25.21_pm.png)
+![A website that's entirely blank except for a Hi there, at the api endpoint you just wrote](https://cdn.hackclub.com/rescue?url=https://cloud-jxf0r41ua.vercel.app/screen_shot_2020-09-29_at_5.25.21_pm.png)
 
 If you see a website that's entirely blank except for the words `Hi there!`, then congratulations! You've just successfully written your first API endpoint! 🎉🎉🎉
 
@@ -186,7 +186,7 @@ Let's see it in action! Restart your server, refresh the page, copy your website
 
 After you do that, head back over to your repl. You should see it raining emojis now!
 
-![script code with emojis raining in the website preview](https://cloud-idqkhcy09.vercel.app/screen_shot_2020-09-29_at_5.58.28_pm.png)
+![script code with emojis raining in the website preview](https://cdn.hackclub.com/rescue?url=https://cloud-idqkhcy09.vercel.app/screen_shot_2020-09-29_at_5.58.28_pm.png)
 
 ## Changing the background color (& accepting POST requests)
 
@@ -238,7 +238,7 @@ Restart your repl by clicking the "Stop" button at the top and then clicking "Ru
 
 We've been hitting our API endpoints from our browser so far because the browser easily sends GET requests. But in order to hit this endpoint, we'll need to use a service that makes HTTP requests for us.
 
-![reqbin website](https://cloud-kmrjzwig5.vercel.app/screen_shot_2020-09-29_at_6.41.17_pm.png)
+![reqbin website](https://cdn.hackclub.com/rescue?url=https://cloud-kmrjzwig5.vercel.app/screen_shot_2020-09-29_at_6.41.17_pm.png)
 
 In a new tab, open [reqbin.com](https://reqbin.com). In the URL section, paste your website preview URL followed by `/background`. Change the request type to `POST` in the dropdown. Then, click on "Content", and in the text area, add:
 
@@ -250,7 +250,7 @@ In a new tab, open [reqbin.com](https://reqbin.com). In the URL section, paste y
 
 Click "Send". When you go back to your repl, you should notice that the background of your website is a pinkish color!
 
-![Website with a pink background](https://cloud-poa2iw1aq.vercel.app/screen_shot_2020-09-29_at_6.53.11_pm.png)
+![Website with a pink background](https://cdn.hackclub.com/rescue?url=https://cloud-poa2iw1aq.vercel.app/screen_shot_2020-09-29_at_6.53.11_pm.png)
 
 _Try some other colors! Google "random html color" and swap the "color" value out._
 

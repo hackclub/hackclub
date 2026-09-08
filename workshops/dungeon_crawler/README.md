@@ -2,12 +2,12 @@
 name: 'Dungeon Crawler Overworld'
 description: 'Create your dungeon crawler overworld with Python!'
 author: '@JakeGerber'
-img: 'https://cloud-3oy6wuv14.vercel.app/0screenshot__1430_.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-3oy6wuv14.vercel.app/0screenshot__1430_.png'
 ---
 
 Dungeon crawlers are cool, so let's make our own. You can even make your own custom map! In this workshop, we will be creating a dungeon crawler overworld with Python and the turtle library.
 
-<img src="https://cloud-3oy6wuv14.vercel.app/0screenshot__1430_.png" width="900" alt="Dungeon Crawler Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-3oy6wuv14.vercel.app/0screenshot__1430_.png" width="900" alt="Dungeon Crawler Example">
 
 <img src="https://media2.giphy.com/media/QYECbEHYafe9O/200.gif" width="380" alt="Knight Dancing Gif">
 
@@ -21,7 +21,7 @@ Let's begin!
 
 We're going to use [Repl.it](https://repl.it/~), a free, online code editor, to create the project. Get started by going to [repl.it/languages/python3](https://repl.it/languages/python3).
 
-<img src="https://cloud-eyujimcxl.vercel.app/0screenshot__1431_.png" width="600" alt="Python Repl">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-eyujimcxl.vercel.app/0screenshot__1431_.png" width="600" alt="Python Repl">
 
 Once your repl spins up, start by importing the [turtle](https://docs.python.org/3/library/turtle.html) library at the top of the `main.py` file. If you haven't used it before, Turtle allows us to easily add graphics in Python.
 
@@ -107,7 +107,7 @@ while(True):
 
 ## Drawing the Square Function
 
-<img src="https://cloud-otkmx51x8-hack-club-bot.vercel.app/0FkDPzDz.gif?noredirect" width="380" alt="Squidward Bold and Brash Gif">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-otkmx51x8-hack-club-bot.vercel.app/0FkDPzDz.gif?noredirect" width="380" alt="Squidward Bold and Brash Gif">
 
 Squares! Squares everywhere! Let's draw them.
 
@@ -365,7 +365,7 @@ turtle.mainloop()
 - `turtle.mainloop()` tells the window to wait for the user to do something
 
 ## The Text File
-<img src="https://cloud-4dguhfgxx.vercel.app/0screenshot__1432_.png" width="380" alt="Map Text File">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-4dguhfgxx.vercel.app/0screenshot__1432_.png" width="380" alt="Map Text File">
 
 Alright, we're almost there! Finally, let's add the text file that we've been writing code for throughout this workshop.
 

@@ -2,14 +2,14 @@
 name: 'Pixel Art Pad'
 description: 'Build a pixel art pad using HTML and Java'
 author: '@hackyguru'
-img: 'https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png'
 ---
 
 Java has earned a bit of a negative reputation among young people. After all, many college classes and even AP Computer Science in high schools introduce beginners to the world of programming by teaching them how to write boring, outdated desktop applications using Java. But just because computer science classes make Java boring doesn't mean it has to be! In this workshop, you're going to use Java as a tool for creative coding in the web by coding your own pixel art pad.
 
 Here's what it'll look like:
 
-[![homepage](https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png)](https://pixel-creator-2.19eucs071kumara.repl.co/)
+[![homepage](https://cdn.hackclub.com/rescue?url=https://cloud-2qbyb4hwx.vercel.app/0pixelpad.png)](https://pixel-creator-2.19eucs071kumara.repl.co/)
 
 [Live Demo][final_live_demo]
 <br />
@@ -64,7 +64,7 @@ We will be using a library called Processing.js, which makes it super easy to wr
 
 We're going to be writing our code in an online code editor called [Repl.it](https://repl.it). To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will be created in a few moments.
 
-![Setting up repl.it](https://cloud-flfptkrmk.vercel.app/0setuprepl.gif)
+![Setting up repl.it](https://cdn.hackclub.com/rescue?url=https://cloud-flfptkrmk.vercel.app/0setuprepl.gif)
 
 Once your repl is setup, you are all set to continue!
 
@@ -74,13 +74,13 @@ Once your repl is setup, you are all set to continue!
 
 When your repl starts up, you should see 3 files on the sidebar to the left: `index.html`, `style.css`, and `script.js`. Delete `style.css` and `script.js`. We're not going to be using them for this workshop.
 
-![Deleting files](https://cloud-63ot6za6a.vercel.app/0deletingfiles.gif)
+![Deleting files](https://cdn.hackclub.com/rescue?url=https://cloud-63ot6za6a.vercel.app/0deletingfiles.gif)
 
 ### 2) Creating the Java file
 
 As mentioned earlier, we're going to be writing the functionality for the pixel art pad in Java. So, let's create a file called `index.java` by clicking the "new file" icon at the top of the sidebar.
 
-![Creating index.java](https://cloud-czzce7b1v.vercel.app/0creatingjava.gif)
+![Creating index.java](https://cdn.hackclub.com/rescue?url=https://cloud-czzce7b1v.vercel.app/0creatingjava.gif)
 
 You should now have two files called `index.html` and `index.java`.
 
@@ -542,7 +542,7 @@ void mousePressed()
 
 And with that, you've finished! Run the code by clicking the green "Run" button at the top of your repl. If all goes well, you should see something like this:
 
-![Pressing the run button](https://cloud-r25cunjgf.vercel.app/0running.gif)
+![Pressing the run button](https://cdn.hackclub.com/rescue?url=https://cloud-r25cunjgf.vercel.app/0running.gif)
 
 If you don't see it, that's okay! There are a bunch of tiny mistakes that break everything. Take a few minutes to debug your code. If you're having trouble figuring it out, ask your club leader.
 
@@ -558,13 +558,13 @@ Congrats! You've built your own pixel art pad in the web using Java! Crazy, righ
 
 Take a few minutes to play around and make your own pixel art. Then share it with the rest of your club. Here are a few things I made:
 
-![Smiley Smiley](https://cloud-6s02cfez1.vercel.app/0art2.png)
+![Smiley Smiley](https://cdn.hackclub.com/rescue?url=https://cloud-6s02cfez1.vercel.app/0art2.png)
 
-![Pixel Heart](https://cloud-8mkwhm5cx.vercel.app/0art1.png)
+![Pixel Heart](https://cdn.hackclub.com/rescue?url=https://cloud-8mkwhm5cx.vercel.app/0art1.png)
 
-![Pixel Tree](https://cloud-gu0flxczf.vercel.app/0art3.png)
+![Pixel Tree](https://cdn.hackclub.com/rescue?url=https://cloud-gu0flxczf.vercel.app/0art3.png)
 
-![Pixel Hack Club Logo](https://cloud-andjr6f7f.vercel.app/0art4.png)
+![Pixel Hack Club Logo](https://cdn.hackclub.com/rescue?url=https://cloud-andjr6f7f.vercel.app/0art4.png)
 
 ## What's next? 🚀
 

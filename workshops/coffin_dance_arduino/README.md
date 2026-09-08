@@ -2,7 +2,7 @@
 name: Meme Songs with Arduino
 description: Building an online Arduino application that plays the Coffin Dance
 author: '@rohan-bansal'
-img: https://cloud-psj7hfkrk.vercel.app/0thumbnail.png
+img: https://cdn.hackclub.com/rescue?url=https://cloud-psj7hfkrk.vercel.app/0thumbnail.png
 locales: 'pt-br'
 ---
 
@@ -10,7 +10,7 @@ _Want to build this & get your arduino for free? High schoolers in the US can ge
 
 # Meme Songs with Arduino
 
-![thumbnail](https://cloud-psj7hfkrk.vercel.app/0thumbnail.png)
+![thumbnail](https://cdn.hackclub.com/rescue?url=https://cloud-psj7hfkrk.vercel.app/0thumbnail.png)
 
 ## Overview
 
@@ -40,7 +40,7 @@ We are going to use Tinkercad's interactive circuit builder, which is excellent;
 
 Let's get started! Head over to [tinkercad](https://www.tinkercad.com) and register for an account in the top right. You should then be redirected to a dashboard, at which point you can create a new circuit diagram. Refer to the GIF below if you're having trouble:
 
-![createproject](https://cloud-98eknqy7u.vercel.app/0createproject.gif)
+![createproject](https://cdn.hackclub.com/rescue?url=https://cloud-98eknqy7u.vercel.app/0createproject.gif)
 
 
 
@@ -62,7 +62,7 @@ This is important because Arduino has no idea what a music note is, and neither 
 
 Now that we have a new project window open, you'll see multiple things:
 
-![workspace](https://cloud-7anwdjqtl.vercel.app/0workspace.png)
+![workspace](https://cdn.hackclub.com/rescue?url=https://cloud-7anwdjqtl.vercel.app/0workspace.png)
 
 Here's a rundown of the items in each rectangle, from left to right:
 
@@ -77,13 +77,13 @@ Here's a rundown of the items in each rectangle, from left to right:
 
 Now, we have to do two things to start off. Rename the project by clicking the name in the top left, and drag in an Arduino from the left components bar!
 
-![rename_plus_arduino](https://cloud-ot05nrpna.vercel.app/0rename_and_arduino.gif)
+![rename_plus_arduino](https://cdn.hackclub.com/rescue?url=https://cloud-ot05nrpna.vercel.app/0rename_and_arduino.gif)
 
 We also need to add the components that will be making music in the first place--piezos! Piezo is short for [piezoelectric speaker](https://en.wikipedia.org/wiki/Buzzer#Piezoelectric_2), an oscillating circuit that projects a sound wave. Go ahead drag **two piezos** into the main view, along with  **two resistors.** If you can't find them, use the search bar. 
 
 You should have this so far:
 
-![piezo_and_resistors](https://cloud-mu05rgdue.vercel.app/0screenshot_from_2020-10-20_18-20-31.png) 
+![piezo_and_resistors](https://cdn.hackclub.com/rescue?url=https://cloud-mu05rgdue.vercel.app/0screenshot_from_2020-10-20_18-20-31.png) 
 
 Like any electrical device, a circuit needs to be completed to activate it. In the piezo's case, it needs a signal (aka power) and ground. 
 
@@ -93,13 +93,13 @@ I won't go into detail about digital pins and analog pins, but you can definitel
 
 Next, we need to configure the resistors to the right resistance value. This ensures the signal sent to the piezos does not exceed a certain limit and is smooth. Click both resistors and change the resistance values in the box in the top right to the below:
 
-![resistor_config](https://cloud-q7ciep09e.vercel.app/0resistor_config.png) 
+![resistor_config](https://cdn.hackclub.com/rescue?url=https://cloud-q7ciep09e.vercel.app/0resistor_config.png) 
 
 You can ignore the name field, as that isn't important to the circuit, just for labeling purposes. Make sure that the dropdown is set to plain [ohms](ynderhost.com/) (symbol for electrical resistance).
 
 It's time to wire up the circuit! By clicking a port on either the piezo, resistor, or Arduino, you should be able to create a wire. Wire the circuit as below:
 
-![correct_wiring](https://cloud-o5uuil1gg.vercel.app/0correct_wiring.png) 
+![correct_wiring](https://cdn.hackclub.com/rescue?url=https://cloud-o5uuil1gg.vercel.app/0correct_wiring.png) 
 
 Let's go over the elements of this diagram. Following pin 6, the signal wire first connects to a resistor, which connects to one piezo's signal input. The piezo's other port routes the electricity to ground, completing the circuit. The mini-circuit is the same for pin 7! Don't be intimidated by electronics, in hindsight it can be very simple.
 
@@ -113,7 +113,7 @@ Hooray! You finished **building the circuit**. Time to play some meme music!
 
 Remember the code window toggle button in the blue rectangle in the picture earlier? Go ahead and click that and toggle from block code to text code. Here's how to do that:
 
-![convert_code_type](https://cloud-g16ym3hgq.vercel.app/0convert_to_textcode.gif)
+![convert_code_type](https://cdn.hackclub.com/rescue?url=https://cloud-g16ym3hgq.vercel.app/0convert_to_textcode.gif)
 
 We're now ready to start coding! Go ahead and delete everything in the window and type out the following:
 
@@ -243,7 +243,7 @@ What did we do here? Instead of setting the piezo manually, we have the `current
 
 Hit **Start Simulation** once more and you should see the sounds alternating from both piezos!
 
-![woohoo](https://cloud-62jdtr82i.vercel.app/tenor.gif)
+![woohoo](https://cdn.hackclub.com/rescue?url=https://cloud-62jdtr82i.vercel.app/tenor.gif)
 
 The hard part is done, let's make some music now! Referring to [this link](https://pages.mtu.edu/~suits/notefreqs.html) with all the possible notes and frequencies, here's how to play the coffin dance (replace `loop()` contents):
 
@@ -290,7 +290,7 @@ The final code is available in the demo at the top of this page. If you have a s
 
 ## Further Hacking
 
-![yay](https://cloud-mlx5oz5hm.vercel.app/tenor.gif)
+![yay](https://cdn.hackclub.com/rescue?url=https://cloud-mlx5oz5hm.vercel.app/tenor.gif)
 
 This program went over the basics of how to make music; there's a lot to be changed! See if you can mess with note durations to create chords (since Arduino does not support playing multiple notes at once), arrange your own songs, etc. If you think your creation is epic, please do share it with the Hack Club community!
 

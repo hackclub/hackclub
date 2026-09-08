@@ -3,12 +3,12 @@ name: 'Sound Galaxy'
 description: 'Visualize sound by making particles move in a galaxy'
 author: '@MatthewStanciu'
 locales: 'pt-br'
-img: 'https://cloud-cz4d47utl-hack-club-bot.vercel.app/0demo-4.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-cz4d47utl-hack-club-bot.vercel.app/0demo-4.png'
 ---
 
 Sound visualization is one of the coolest things that modern-day web development tools have made accessible. There’s something surreal and indescribably satisfying about _seeing_ the sounds around you on your screen and somehow understanding what you’re seeing.
 
-![Colorful particles traveling vertically down the screen](https://cloud-mtoslrg9r-hack-club-bot.vercel.app/2final-demo.gif)
+![Colorful particles traveling vertically down the screen](https://cdn.hackclub.com/rescue?url=https://cloud-mtoslrg9r-hack-club-bot.vercel.app/2final-demo.gif)
 
 In this workshop, you’re going to create a galaxy out of shimmering particles that expand and move based on microphone input, in less than 50 lines of code.
 
@@ -161,7 +161,7 @@ function draw() {
 
 If you run your repl now, you should see this:
 
-![Colorful particles randomly scattered on a white canvas](https://cloud-mtoslrg9r-hack-club-bot.vercel.app/1draw.png)
+![Colorful particles randomly scattered on a white canvas](https://cdn.hackclub.com/rescue?url=https://cloud-mtoslrg9r-hack-club-bot.vercel.app/1draw.png)
 
 Nice! We've just given life to our particles! If you want to make your canvas look more like space, you can add
 

@@ -12,13 +12,13 @@ I make all my designs in [Figma](https://figma.com), a free online design tool. 
 
 ### Custom stickers: final designs
 
-![](https://cloud-2cssg9fhq.vercel.app/6image-20190730-194954.png)
-![](https://cloud-2cssg9fhq.vercel.app/5image-20190730-195006.png)
-![](https://cloud-2cssg9fhq.vercel.app/4image-20190730-195030.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-2cssg9fhq.vercel.app/6image-20190730-194954.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-2cssg9fhq.vercel.app/5image-20190730-195006.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-2cssg9fhq.vercel.app/4image-20190730-195030.png)
 
 ### Stickers in use
 
-![](https://cloud-2cssg9fhq.vercel.app/3image-20190730-195104.png)
-![](https://cloud-2cssg9fhq.vercel.app/2image-20190730-195206.png)
-![](https://cloud-2cssg9fhq.vercel.app/1image-20190730-195218.png)
-![](https://cloud-2cssg9fhq.vercel.app/0image-20190730-195234.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-2cssg9fhq.vercel.app/3image-20190730-195104.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-2cssg9fhq.vercel.app/2image-20190730-195206.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-2cssg9fhq.vercel.app/1image-20190730-195218.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-2cssg9fhq.vercel.app/0image-20190730-195234.png)

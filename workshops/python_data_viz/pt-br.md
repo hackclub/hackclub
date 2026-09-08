@@ -2,11 +2,11 @@
 name: 'Visualizar Dados com Python'
 description: 'Use Python para criar gráficos e visualizar dados reais'
 author: '@maddieWillett-boop, @vitorvavolizza'
-img: 'https://cloud-buf4qdryr.vercel.app/0image_from_ios.jpg'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-buf4qdryr.vercel.app/0image_from_ios.jpg'
 locales: 'pt-br'
 ---
 
-![Stonks](https://cloud-byn8r1k9a.vercel.app/0image_from_ios.jpg)
+![Stonks](https://cdn.hackclub.com/rescue?url=https://cloud-byn8r1k9a.vercel.app/0image_from_ios.jpg)
 
 Você, depois de fazer sua primeira ferramenta de visualização de dados ^
 
@@ -37,21 +37,21 @@ ax.legend() #adiciona legenda ao gráfico
 
 Comece acessando o site do [Jupyter](https://jupyter.org/try). Quando você acessar o site, verá algo assim...
 
-**![Mostrando a página inicial do Jupyter](https://cloud-55ad5w43q.vercel.app/0image_from_ios.jpg)**
+**![Mostrando a página inicial do Jupyter](https://cdn.hackclub.com/rescue?url=https://cloud-55ad5w43q.vercel.app/0image_from_ios.jpg)**
 
 Clique no botão do meio (Try JupyterLab)!
 
 O Jupyter criará um ambiente de programação direto no seu navegador! Após alguns segundos, você verá o seguinte:
 
-![Um bloco de notas Jupyter](https://cloud-4jz1jljdx.vercel.app/0image_from_ios.jpg)
+![Um bloco de notas Jupyter](https://cdn.hackclub.com/rescue?url=https://cloud-4jz1jljdx.vercel.app/0image_from_ios.jpg)
 
 Clique no botão `+` no canto superior esquerdo e selecione Notebook -> Python 3.
 
-![Captura de tela de um bloco de anotações Jupyter mostrando quais etapas executar](https://cloud-hywsca56c.vercel.app/0image_from_ios.jpg)
+![Captura de tela de um bloco de anotações Jupyter mostrando quais etapas executar](https://cdn.hackclub.com/rescue?url=https://cloud-hywsca56c.vercel.app/0image_from_ios.jpg)
 
 Você deverá ver um novo bloco de notas Jupyter sem título.
 
-![Um bloco de notas Juypter sem título](https://cloud-gxd1qmxly.vercel.app/0image_from_ios.jpg)
+![Um bloco de notas Juypter sem título](https://cdn.hackclub.com/rescue?url=https://cloud-gxd1qmxly.vercel.app/0image_from_ios.jpg)
 
 **Nunca usou o Jupyter? [Essa aqui é uma introdução ao Jupyter](https://www.wevideo.com/view/1849208046)!**
 
@@ -59,12 +59,12 @@ Você deverá ver um novo bloco de notas Jupyter sem título.
 
 Primeiro, precisamos fazer upload das [bibliotecas](https://docs.python.org/3/library/) que usaremos para este projeto. Cada linguagem de programação tem diferentes “classes” que você precisa usar para acessar variáveis ​​específicas. A mesma coisa ocorre no Python, mas, em vez disso, elas são conhecidas como bibliotecas.
 
-![Princesa Belle em sua biblioteca maravilhosa](https://cloud-pawks5rnb.vercel.app/0file_from_ios.gif)
+![Princesa Belle em sua biblioteca maravilhosa](https://cdn.hackclub.com/rescue?url=https://cloud-pawks5rnb.vercel.app/0file_from_ios.gif)
 
 Neste workshop usaremos as bibliotecas [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/) e [matplotlib](https://matplotlib.org/)
 
 **Pandas**: Não é o animal peludo em que você está pensando; o pandas é uma maneira fácil e eficiente de usar análise de dados open source.
-![gif de pandas fofos](https://cloud-o3apzt5vk.vercel.app/0file_from_ios.gif)
+![gif de pandas fofos](https://cdn.hackclub.com/rescue?url=https://cloud-o3apzt5vk.vercel.app/0file_from_ios.gif)
 
 **Matplotlib**: É uma biblioteca de inserção que usa uma extensão matemática numérica Numpy.
 
@@ -110,9 +110,9 @@ Clique no botão Run próximo ao topo de sua janela.
 
 **Você deve ver algo parecido com isto...**
 
-**![gráfico linear básico com tendência ascendente](https://cloud-49wgws6lb.vercel.app/0image_from_ios.jpg)**
+**![gráfico linear básico com tendência ascendente](https://cdn.hackclub.com/rescue?url=https://cloud-49wgws6lb.vercel.app/0image_from_ios.jpg)**
 
-![Notebook Jupyter com código e exemplo](https://cloud-pm56h5avl.vercel.app/0image_from_ios.jpg)
+![Notebook Jupyter com código e exemplo](https://cdn.hackclub.com/rescue?url=https://cloud-pm56h5avl.vercel.app/0image_from_ios.jpg)
 
 Em uma nova seção do seu bloco de notas, adicione:
 
@@ -137,9 +137,9 @@ O código acima nomeia cada uma das barras (define os eixos x e y), cria valores
 
 Ao clicar no botão Run novamente, você verá algo assim:
 
-**![gráfico de barras](https://cloud-lb7wueqlz.vercel.app/0image_from_ios.jpg)**
+**![gráfico de barras](https://cdn.hackclub.com/rescue?url=https://cloud-lb7wueqlz.vercel.app/0image_from_ios.jpg)**
 
-![notebook jupyter com código e gráfico de barras](https://cloud-qyo2g39vl.vercel.app/0image_from_ios.jpg)
+![notebook jupyter com código e gráfico de barras](https://cdn.hackclub.com/rescue?url=https://cloud-qyo2g39vl.vercel.app/0image_from_ios.jpg)
 
 # Vamos complicar um pouco mais!
 
@@ -149,7 +149,7 @@ Vamos fazer um gráfico mais personalizado usando três funções diferentes.
 
 Tenho certeza que todos vocês já adivinharam hehe, importem suas bibliotecas!!!!!!!!!!
 
-![Kermit the Frog Dancing!](https://cloud-n5xpv2pg5.vercel.app/0file_from_ios.gif)
+![Kermit the Frog Dancing!](https://cdn.hackclub.com/rescue?url=https://cloud-n5xpv2pg5.vercel.app/0file_from_ios.gif)
 
 ```python
 import matplotlib.pyplot as plt 
@@ -172,7 +172,7 @@ Para criar o gráfico que queremos fazer, usaremos a biblioteca matplotlib! Que 
 
 - Permitir-nos traçar pontos
 
-![Amazed Monkey Meme](https://cloud-nnli579mz.vercel.app/0file_from_ios.gif)
+![Amazed Monkey Meme](https://cdn.hackclub.com/rescue?url=https://cloud-nnli579mz.vercel.app/0file_from_ios.gif)
 
 ### Ok, agora vamos voltar onde estávamos...
 
@@ -253,7 +253,7 @@ Seu gráfico deve se parecer com esse:
 
 Toques finais!
 
-![Bibitty Bobittiy Boo!](Https://cloud-kmkvhdhhs.vercel.app/0file_from_ios.gif)
+![Bibitty Bobittiy Boo!](https://cdn.hackclub.com/rescue?url=https://cloud-kmkvhdhhs.vercel.app/0file_from_ios.gif)
 
    ```python
    ax.set_xlabel('Tempo') #adiciona descrição do eixo X
@@ -267,7 +267,7 @@ Você deve conseguir algo parecido com isto ...
 **![Exemplo Produto Workshop](https://raw.githubusercontent.com/hack-club-brasil/v1/main/docs/workshops/data-vis-python/img/exemplo5.PNG)**
 
 *Se você estiver tendo algum problema, certifique-se de verificar o canto superior direito para verificar se o "kernel" está ligado e configurado para Python 3*
-**![No Kernel Error](https://cloud-bej0gbbkn.vercel.app/0image_from_ios.jpg)**
+**![No Kernel Error](https://cdn.hackclub.com/rescue?url=https://cloud-bej0gbbkn.vercel.app/0image_from_ios.jpg)**
 
 **Exemplo de código:**
 
@@ -289,7 +289,7 @@ ax.legend() #adiciona legenda ao gráfico
 
 \*\* PS. Se você nunca assistiu [Chicken Little](https://youtu.be/PPuk2JQgMkU), deve fazer isso o mais rápido possível, pois está perdendo uma obra-prima animada.
 
-![Chicken Little!](Https://cloud-g6jgv31zl.vercel.app/0file_from_ios.gif)
+![Chicken Little!](https://cdn.hackclub.com/rescue?url=https://cloud-g6jgv31zl.vercel.app/0file_from_ios.gif)
 # Compartilhe seu projeto!
 Como posso salvar meu projeto com o Jupyter?
 [Clique aqui para ver o vídeo!](Https://www.wevideo.com/view/1886850494)

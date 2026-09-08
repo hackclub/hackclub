@@ -2,7 +2,7 @@
 name: 'Build a Chrome extension!'
 description: 'Hack your way to productivity by building your own bookmarking Chrome extension'
 author: '@shreyfirst'
-img: 'https://cloud-qyx3m9oc6.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-qyx3m9oc6.vercel.app/0image.png'
 
 ---
 
@@ -31,7 +31,7 @@ You will be making a Chrome extension that allows you to save and access your Zo
 
 * You can download/clone this Github repository for the final code, if you want to reference from a master copy: https://github.com/shreyfirst/zoom_bookmarks
 
-![Demo of what the extension will look like](https://cloud-qyx3m9oc6.vercel.app/0image.png)
+![Demo of what the extension will look like](https://cdn.hackclub.com/rescue?url=https://cloud-qyx3m9oc6.vercel.app/0image.png)
 
 ## Table of Contents
 
@@ -53,7 +53,7 @@ There are a few parts to this workshop. I highly reccomend doing them in order b
 
 **The website will look a little like this:** 
 
-![Repl.it website)@2x](https://cloud-cnenr6ov1.vercel.app/0image.png)
+![Repl.it website)@2x](https://cdn.hackclub.com/rescue?url=https://cloud-cnenr6ov1.vercel.app/0image.png)
 
 2. Click the "Start coding" button on the top right
 
@@ -74,14 +74,14 @@ There are a few parts to this workshop. I highly reccomend doing them in order b
         └── messages.json
 ```
 
-![This is how you can set up your file structure in Repl.it ](https://cloud-9bso257xg.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_17.11__57_.gif)
+![This is how you can set up your file structure in Repl.it ](https://cdn.hackclub.com/rescue?url=https://cloud-9bso257xg.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_17.11__57_.gif)
 
 You can also see the file structure live here on the final Github repo: https://github.com/shreyfirst/zoom_bookmarks
 
 **NOTES about the file structure:** 
 
 1. `index.html` can be whatever Repl.it sets for you. You can <u>delete</u> the other standard Repl files (`style.css` and `script.js`)
-2. `icon.png` can be any **square** PNG graphic that is 48x48px. You can download a sample `icon.png` here:  https://cloud-mkf1ulf19.vercel.app/0bookmark.png
+2. `icon.png` can be any **square** PNG graphic that is 48x48px. You can download a sample `icon.png` here:  https://cdn.hackclub.com/rescue?url=https://cloud-mkf1ulf19.vercel.app/0bookmark.png
 
 #### Edit your `manifest.json`
 
@@ -214,7 +214,7 @@ You can design the UI however you'd like, I think they should all be in 3 separa
 
 What it should look like so far:
 
-![First component with title screen](https://cloud-pd8ies8lv.vercel.app/0image.png)
+![First component with title screen](https://cdn.hackclub.com/rescue?url=https://cloud-pd8ies8lv.vercel.app/0image.png)
 
 **Now, we should add the 2nd section: <u>Creating a new meeting</u>**
 
@@ -274,7 +274,7 @@ Add this code inside of the `body` tag:
 
 What it should look like now:
 
-![Both components - title & new bookmark](https://cloud-hrqx1n5tu.vercel.app/0image.png)
+![Both components - title & new bookmark](https://cdn.hackclub.com/rescue?url=https://cloud-hrqx1n5tu.vercel.app/0image.png)
 
 Now let's add the last part. This is the <u>see existing meeting</u>s section. Add this code above the body tag and below your last `br`:
 
@@ -302,13 +302,13 @@ Now let's add the last part. This is the <u>see existing meeting</u>s section. A
 
 This is pretty similar to the Add Meeting component in terms of what tags are present and how to use them. **Tip: You should add your name and email hyperlink into your code in case people have questions or need to reach out :)**
 
-![Last component](https://cloud-fodkt6aig.vercel.app/0image.png)
+![Last component](https://cdn.hackclub.com/rescue?url=https://cloud-fodkt6aig.vercel.app/0image.png)
 
 Now that you've finished the `index.html` code, we can start to work on the backend. If you need a snip of what the final code I wrote should look like, you can see this link: https://gist.githubusercontent.com/shreyfirst/04ea57ac3bb6db7b0a7db52881256932/raw/41749144bd561a9acca42309960592f4a7dead36/Zoom%2520bookmarks%2520demo
 
 **This is what everything should look like in Repl!**
 
-![Final Repl design of Zoom Bookmarks](https://cloud-3lh6geocf.vercel.app/0image.png)
+![Final Repl design of Zoom Bookmarks](https://cdn.hackclub.com/rescue?url=https://cloud-3lh6geocf.vercel.app/0image.png)
 
 ## Backend
 
@@ -455,7 +455,7 @@ Lastly, we need functions to open the link in a new tab and **wait for buttons t
 
 This goes below everything you've coded so far and above the closing of the eventListener that houses once the page loads. These is a Gist to the final code: https://gist.githubusercontent.com/shreyfirst/d980597b6531fddd8d77cb8e63f6ffb3/raw/0d1b7ddffd7f97810998fe2c93d7a814f889562e/Full%2520code
 
-![GIF of how adding a new item in the app looks like](https://cloud-ko5ixsp25.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_17.11__52_.gif)
+![GIF of how adding a new item in the app looks like](https://cdn.hackclub.com/rescue?url=https://cloud-ko5ixsp25.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_17.11__52_.gif)
 
 ##### Key takeaways:
 
@@ -469,7 +469,7 @@ Chrome allows developers to test out their extensions to see if it works. Follow
 
 1. Download your Repl as a ZIP file.
 
-![Showing where to find the download Repl button](https://cloud-ebhkkm5u1.vercel.app/0image.png)
+![Showing where to find the download Repl button](https://cdn.hackclub.com/rescue?url=https://cloud-ebhkkm5u1.vercel.app/0image.png)
 
 1. Unzip your file.
    1. Depending on if you are on a Windows or Mac (or even possibly a Chromebook), there are different ways to UNZIP a file.
@@ -479,7 +479,7 @@ Chrome allows developers to test out their extensions to see if it works. Follow
 5. Choose the file directory for your extension
 6. Now your extension should show up in the extensions pane!
 
-![GIF of how to do steps 2-5](https://cloud-1u9szhlh9.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_17.11__12_.gif)
+![GIF of how to do steps 2-5](https://cdn.hackclub.com/rescue?url=https://cloud-1u9szhlh9.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_17.11__12_.gif)
 
 
 
@@ -492,7 +492,7 @@ Chrome allows developers to test out their extensions to see if it works. Follow
   - Demo: https://chrome.google.com/webstore/detail/zoom-bookmarks/haplbihlmhnffbihdfjhgnickameiphd?hl=en
   - This is the live demo I mentioned at the start of this workshop. If you want the code for this, see this Github repo: https://github.com/shreyfirst/zoom_bookmarks
 
-  ![Zoom link closer](https://cloud-fonvfiubt.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_18.11__54__2x.png)
+  ![Zoom link closer](https://cdn.hackclub.com/rescue?url=https://cloud-fonvfiubt.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_18.11__54__2x.png)
 
   *This feature was inspired by this (existing) Chrome extension: https://chrome.google.com/webstore/detail/zoom-meetings-page-auto-c/edflihlonecjkejpbajecilgmopegldj?hl=en-US*
 

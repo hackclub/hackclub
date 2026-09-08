@@ -2,14 +2,14 @@
 name: 'Space Bar Games'
 description: 'Make two games where you press the space bar as fast as possible!'
 author: '@JakeGerber'
-img: 'https://cloud-ny55iopyv.vercel.app/0screenshot__1446_.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-ny55iopyv.vercel.app/0screenshot__1446_.png'
 ---
 
 We all love spamming the space bar so let's make a game based on it. In this workshop, we will be creating a two space bar games. In the first you have to press 100 times as fast as possible, and in the second you have to press has much as possible in 5 seconds.
 
-<img src="https://cloud-ny55iopyv.vercel.app/0screenshot__1446_.png" width="580" alt="Space Game 1 Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-ny55iopyv.vercel.app/0screenshot__1446_.png" width="580" alt="Space Game 1 Example">
 
-<img src="https://cloud-bmo725iv9.vercel.app/0screenshot__1449_.png" width="580" alt="Space Game 2 Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-bmo725iv9.vercel.app/0screenshot__1449_.png" width="580" alt="Space Game 2 Example">
 
 [Here's a demo of what we're going to create!](https://repl.it/@CosmicSnowman/Space-Game#main.py)
 
@@ -19,7 +19,7 @@ We all love spamming the space bar so let's make a game based on it. In this wor
 
 We're going to use [Repl.it](https://repl.it/~), a free, online coding editor, to create the project. Get started by visiting [repl.it/languages/python3](https://repl.it/languages/python3).
 
-<img src="https://cloud-2lezn57vs.vercel.app/0screenshot__1450_.png" width="600" alt="Python Repl">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-2lezn57vs.vercel.app/0screenshot__1450_.png" width="600" alt="Python Repl">
 
 ## Importing Libraries
 Let's begin by importing the turtle and math libraries. We need these to access certain functions!

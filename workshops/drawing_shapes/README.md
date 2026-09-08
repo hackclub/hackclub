@@ -2,12 +2,12 @@
 name: 'Drawing Shapes with Turtle'
 description: 'Make a shape drawing program with Python Turtle!'
 author: '@JakeGerber'
-img: 'https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png'
 ---
 
 I like to draw, you like to draw, so let's create a drawing program with shapes such as circles, squares, and triangles! It will turn out really cool.
 
-<img src="https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png" width="580" alt="Drawing Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-r8adu66vb.vercel.app/0screenshot__1391_.png" width="580" alt="Drawing Example">
 
 <img src="https://thumbs.gfycat.com/FantasticFaintAmurminnow-small.gif" width="380" alt="Nice Gif">
 
@@ -17,7 +17,7 @@ I like to draw, you like to draw, so let's create a drawing program with shapes 
 
 We're going to use [Repl.it](https://repl.it/~), a free, online coding editor, to create the project. Get started by visiting [repl.it/languages/python3](https://repl.it/languages/python3).
 
-<img src="https://cloud-2ojs193ra.vercel.app/0screenshot__1396_.png" width="600" alt="Python Repl">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-2ojs193ra.vercel.app/0screenshot__1396_.png" width="600" alt="Python Repl">
 
 Once your repl spins up, let's do this!
 
@@ -94,7 +94,7 @@ I know you're eager to get into the meat of the progran, so let's do it.
 
 We are going to create the circle function. Look at the "o". I know it's a pretty cool circle.
 
-<img src="https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Circle Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-me8qh205n.vercel.app/0screenshot__1392_.png" width="380" alt="Circle Example">
 
 At the bottom of the file, add:
 
@@ -124,7 +124,7 @@ def circle(x, y):
 
 Next, let's create the square function.
 
-<img src="https://cloud-mkkyzdd9l.vercel.app/0screenshot__1393_.png" width="380" alt="Square Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-mkkyzdd9l.vercel.app/0screenshot__1393_.png" width="380" alt="Square Example">
 
 Under the `circle()` function, add:
 
@@ -161,7 +161,7 @@ Here, we're:
 
 Next, let's create the triangle function.
 
-<img src="https://cloud-mo50706v1.vercel.app/0screenshot__1394_.png" width="380" alt="Triangle Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-mo50706v1.vercel.app/0screenshot__1394_.png" width="380" alt="Triangle Example">
 
 After the `square()` function, add:
 
@@ -254,7 +254,7 @@ def drawItem(x, y):
 
 Next, let's add a function to switch between colors.
 
-<img src="https://cloud-c9ojk6h90.vercel.app/0screenshot__1395_.png" width="380" alt="Switch Colors Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-c9ojk6h90.vercel.app/0screenshot__1395_.png" width="380" alt="Switch Colors Example">
 
 At the bottom of the file, add:
 

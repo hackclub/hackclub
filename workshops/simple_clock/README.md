@@ -11,7 +11,7 @@ Have you ever wondered how to build a clock? Have you ever wanted to build your 
 
 It will look something like this (But make sure you do add some custom CSS) :
 
-[![homepage](https://cloud-azpvjrywa.vercel.app/image.png)](https://js-css-clock.faisalsayed1.repl.co/)
+[![homepage](https://cdn.hackclub.com/rescue?url=https://cloud-azpvjrywa.vercel.app/image.png)](https://js-css-clock.faisalsayed1.repl.co/)
 
 Here's the [live demo][final_live_demo] and [final code][final_code].
 
@@ -37,7 +37,7 @@ To get started, go to [https://repl.it/languages/html](https://repl.it/languages
 
 You should see something like the following:
 
-![Image](https://cloud-p7qnbqzo6.vercel.app/image.png)
+![Image](https://cdn.hackclub.com/rescue?url=https://cloud-p7qnbqzo6.vercel.app/image.png)
 
 ## Part 3: Inspecting The Default Files
 
@@ -51,7 +51,7 @@ At line 1 we have `<!DOCTYPE html>` This declares that this file is an HTML file
 
 Make sure to remove line 5 (`<meta name="viewport" content="width=device-width">`) which may cause some weird responsiveness issues for our workshop.
 
-![Image](https://cloud-8h5wlpd5b.vercel.app/metagif.gif)
+![Image](https://cdn.hackclub.com/rescue?url=https://cloud-8h5wlpd5b.vercel.app/metagif.gif)
 
 ### 2) The CSS file
 
@@ -145,11 +145,11 @@ Next, we'll need to add some styles to our clock! Following the 3 main steps giv
 
 1. Select the class designated to the clock div.
 
-![Image](https://cloud-namz2to6v.vercel.app/image.png)
+![Image](https://cdn.hackclub.com/rescue?url=https://cloud-namz2to6v.vercel.app/image.png)
 
 2. Open curly brackets to write the stylings.
 
-![Image](https://cloud-b7yg1ciea.vercel.app/image.png)
+![Image](https://cdn.hackclub.com/rescue?url=https://cloud-b7yg1ciea.vercel.app/image.png)
 
 3. Add the following styles to this class.
 
@@ -182,7 +182,7 @@ Also, we have added some shadows to the element. We gave multiple shadows so as 
 
 Now let's test our code! Click on the **RUN** button and Voila! Here's the basic background for our clock! (if it doesn't look like this, make sure you crosscheck every single line of code).
 
-![Image](https://cloud-dgjpl9scw.vercel.app/image.png)
+![Image](https://cdn.hackclub.com/rescue?url=https://cloud-dgjpl9scw.vercel.app/image.png)
 
 Next, give `position: relative;` , `width: 100%;` & `height: 100%` to the class `.clock-face`.
 (Try to do it on your own by following the 3 main steps of writing CSS).
@@ -253,7 +253,7 @@ Similarly, add more styles to your CSS code:
 
 Next, we give it a property of `top` to `50%`, basically it aligns the clock hands in the very center of our clock. To ensure that our clock rotates properly, we give the clock hands a `transform-origin: 100%;`. The transformation origin is the point around which a transformation is applied.
 
-![Image](https://cloud-e99m314xu.vercel.app/image.png)
+![Image](https://cdn.hackclub.com/rescue?url=https://cloud-e99m314xu.vercel.app/image.png)
 
 Next we added more transition properties such as:
 
@@ -273,7 +273,7 @@ To align each hand properly, we give them a property of `right: 50%;`.
 
 Here's what we have so far:
 
-![Image](https://cloud-fprpa1onx.vercel.app/image.png)
+![Image](https://cdn.hackclub.com/rescue?url=https://cloud-fprpa1onx.vercel.app/image.png)
 
 **What we did so far:**
 
@@ -353,7 +353,7 @@ eg: if secondDeg = 150;
 then: secondHand.style.transform = 'rotate(150deg)';
 ```
 
-![Image](https://cloud-bmrnpv27n.vercel.app/image.png)
+![Image](https://cdn.hackclub.com/rescue?url=https://cloud-bmrnpv27n.vercel.app/image.png)
 
 **Challenge:** Do the same above process for fetching the minutes & hours and convert them into degrees.
 
@@ -527,9 +527,9 @@ If you haven't created an account on [repl.it](https://repl.it), make sure you d
 
 Here's how you can create a repl.it account:
 
-![Image](https://cloud-940o4yxjv.vercel.app/image.png)
+![Image](https://cdn.hackclub.com/rescue?url=https://cloud-940o4yxjv.vercel.app/image.png)
 
-![Image](https://cloud-18phelcmy.vercel.app/image.png)
+![Image](https://cdn.hackclub.com/rescue?url=https://cloud-18phelcmy.vercel.app/image.png)
 
 If you still face difficulties in signing up watch [this](https://www.youtube.com/watch?v=Mtqp4CUepk0).
 

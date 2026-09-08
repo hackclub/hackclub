@@ -2,7 +2,7 @@
 name: 'Serverless Contact Form'
 description: 'Make a website “contact me” form using Netlify serverless functions'
 author: '@shreyfirst'
-img: 'https://cloud-ibwkgi2m2.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-ibwkgi2m2.vercel.app/0image.png'
 ---
 
 In this workshop, you will learn how to use:
@@ -27,7 +27,7 @@ Link to code: https://repl.it/@ShreyGupta1/LowestDirtyQuarks#index.html
 
 Link to site: https://LowestDirtyQuarks--shreygupta1.repl.co
 
-![Demo of what the website will look like](https://cloud-rgz1bhapa.vercel.app/0image.png)
+![Demo of what the website will look like](https://cdn.hackclub.com/rescue?url=https://cloud-rgz1bhapa.vercel.app/0image.png)
 
 ### First, let's make the form that you want to receive emails with.
 
@@ -38,7 +38,7 @@ Link to site: https://LowestDirtyQuarks--shreygupta1.repl.co
 
    **The website will look a little like this:** 
 
-   ![Repl.it website)@2x](https://cloud-cnenr6ov1.vercel.app/0image.png)
+   ![Repl.it website)@2x](https://cdn.hackclub.com/rescue?url=https://cloud-cnenr6ov1.vercel.app/0image.png)
 
 1. Choose "HTML/CSS/JS"
 
@@ -103,7 +103,7 @@ Link to site: https://LowestDirtyQuarks--shreygupta1.repl.co
 
    **After you have this code in, you website should look like this:**
 
-   ![Screenshot of what your Repl dashboard and website should look like](https://cloud-frgydm7lb.vercel.app/0image.png)
+   ![Screenshot of what your Repl dashboard and website should look like](https://cdn.hackclub.com/rescue?url=https://cloud-frgydm7lb.vercel.app/0image.png)
 
    Above I talked a little bit about about [_HTML tag properties_](https://www.w3schools.com/html/html_attributes.asp). People have different words for these, like HTML attributes or properties. I like to call them properties (or props) because it helps when understanding more complex web languages like [React](https://reactjs.org/).
 
@@ -138,7 +138,7 @@ Link to site: https://LowestDirtyQuarks--shreygupta1.repl.co
              1. When data is sent to a server, this is how it's being sent. It uses a [x-www-form-urlencoded](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) format to store it.
              2. Something you might wonder is: "how did they know that my input box's name was `message` or other?" This is because of the `name` property on our input tags! Changing those will change how our form communicates with the server we will build in the next step.
 
-![GIF of opening Inspect Element and seeing Network requests](https://cloud-a1akh8ybn.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_10.11__56_.gif)
+![GIF of opening Inspect Element and seeing Network requests](https://cdn.hackclub.com/rescue?url=https://cloud-a1akh8ybn.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_10.11__56_.gif)
 
 
 4. Now we want to build a server to handle the information that we just created. We are going to use Netlify Functions for this. Netlify allows for people to create "serverless" functions for people to use. They use a server to manage our functions, but for us, we only need to call the function. This is so we don't have to spend time worrying about maintaining, securing, and building a full server- we just get a little piece of a gigantic, already built, secure server.
@@ -149,7 +149,7 @@ Link to site: https://LowestDirtyQuarks--shreygupta1.repl.co
 
       1. You are going to be editing the code directly from Github. We will set-up your repository to recompile and deploy to Netlify after every push. Your repository can be either private or public.
 
-      ![GIF of templating the Github repo](https://cloud-ohr0e5hbc.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_10.11__27_.gif)
+      ![GIF of templating the Github repo](https://cdn.hackclub.com/rescue?url=https://cloud-ohr0e5hbc.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_10.11__27_.gif)
 
    3. We will use this basic file structure for our serverless function. Notice the following file structure
 
@@ -224,7 +224,7 @@ Link to site: https://LowestDirtyQuarks--shreygupta1.repl.co
 
       This is what the Netlify sign-in/site creation process looks like:
 
-      ![GIF of signing in to Netlify, creating a new site from a repo, and looking at the functions tab](https://cloud-ftpbk3pur.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_10.11__30_.gif)
+      ![GIF of signing in to Netlify, creating a new site from a repo, and looking at the functions tab](https://cdn.hackclub.com/rescue?url=https://cloud-ftpbk3pur.vercel.app/0screenshot_taken_by_shrey_on_11-06-2020_at_10.11__30_.gif)
 
    7. This is exciting! Now I can get emails from my server. I just need to connect my server and my repl.it site together!
 
@@ -339,7 +339,7 @@ Now try extending the website on your own. Here are some things that you can try
 
   - *Frontend Challenge:* Learn which HTML property/attribute will force users to enter an email address!
 
-    ![Form field validating a fake email](https://cloud-h0vxo95mq.vercel.app/0image.png)
+    ![Form field validating a fake email](https://cdn.hackclub.com/rescue?url=https://cloud-h0vxo95mq.vercel.app/0image.png)
 
 - Redirect to a "thank you" page
 

@@ -2,7 +2,7 @@
 name: 'Weather App'
 description: 'Making a Weather App using HTML, CSS and JavaScript'
 author: '@gautamjajoo'
-img: 'https://cloud-w7f0jvahc.vercel.app/0weather-app.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-w7f0jvahc.vercel.app/0weather-app.png'
 locales: 'pt-br'
 ---
 
@@ -10,7 +10,7 @@ Are you a beginner in JavaScript and don't know where to get started? If yes, yo
 
 Here's what the final version looks like:
 
-![final_app](https://cloud-fw0yxvsf2.vercel.app/0screenshot_from_2020-10-23_19-26-13.png)
+![final_app](https://cdn.hackclub.com/rescue?url=https://cloud-fw0yxvsf2.vercel.app/0screenshot_from_2020-10-23_19-26-13.png)
 
 The [source code](https://github.com/gautamjajoo/BasicWeather) & [demo](https://Weather.gautamjajoo.repl.co) are hyperlinked here.
 
@@ -30,7 +30,7 @@ Start by creating a [new HTML/CSS repl.it project](https://repl.it/languages/htm
 
 You should see three files: `index.html`, `style.css`, and `script.js`.
 
-![repl.it screen](https://cloud-9hqnkjk42.vercel.app/0screenshot_from_2020-10-26_14-54-39.png)
+![repl.it screen](https://cdn.hackclub.com/rescue?url=https://cloud-9hqnkjk42.vercel.app/0screenshot_from_2020-10-26_14-54-39.png)
 
 ## 3. Making a skeleton of the app
 
@@ -343,17 +343,17 @@ For this project, we will be using a weather API which is given by [OpenWeather]
 
 To start with, you will have to create an account on OpenWeather to generate an API key for yourself.
 
-![login](https://cloud-dk4z6apbz.vercel.app/0login.gif)
+![login](https://cdn.hackclub.com/rescue?url=https://cloud-dk4z6apbz.vercel.app/0login.gif)
 
 After you have registered, head over to the [API](https://openweathermap.org/api) section.
 
 We will be using the `Current Weather Data` API. Subscribe to the API and after that, you will receive the key in your [profile](https://home.openweathermap.org/api_keys).
 
-![api_key](https://cloud-1uiy34o6d.vercel.app/0api_key.gif)
+![api_key](https://cdn.hackclub.com/rescue?url=https://cloud-1uiy34o6d.vercel.app/0api_key.gif)
 
 After setting up the key we will now read the docs to know in which format does the API responds. The [docs](https://openweathermap.org/current) contain the format for API call, under `By City name` tab.
 
-![api_docs](https://cloud-2r7ixfrb6.vercel.app/0api.gif)
+![api_docs](https://cdn.hackclub.com/rescue?url=https://cloud-2r7ixfrb6.vercel.app/0api.gif)
 
 The format of the API looks something like this:
 
@@ -593,7 +593,7 @@ Yippee! We have now finished coding our weather app and the App is ready to be u
 
 To see the result, click the green `Run` button at the top of your repl.
 
-![app](https://cloud-9ofo2uek2.vercel.app/0repl.gif)
+![app](https://cdn.hackclub.com/rescue?url=https://cloud-9ofo2uek2.vercel.app/0repl.gif)
 
 ## 6. Hacking
 
@@ -616,4 +616,4 @@ Here are some things which you should consider to improve your knowledge of APIs
 Last but not the least, be as creative and dynamic as possible. This is only a headstart and I am sure after this workshop you will create
 some amazing projects.
 
-![yayy](https://cloud-m158dsxpf.vercel.app/0yay.gif)
+![yayy](https://cdn.hackclub.com/rescue?url=https://cloud-m158dsxpf.vercel.app/0yay.gif)

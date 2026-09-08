@@ -2,7 +2,7 @@
 name: 'Simple Calculator'
 description: 'Build a simple calculator with ReactJS'
 author: '@faisalsayed10'
-img: 'https://cloud-fmzgn1t1z.vercel.app/0screen_shot_2020-11-30_at_5.43.36_pm.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-fmzgn1t1z.vercel.app/0screen_shot_2020-11-30_at_5.43.36_pm.png'
 locales: 'pt-br'
 ---
 
@@ -10,7 +10,7 @@ locales: 'pt-br'
 
 Today, We'll be building a simple yet fun calculator in React.
 
-[![Simple Calculator](https://cloud-ht4su332c.vercel.app/0image.png)](https://5trtj.csb.app/)
+[![Simple Calculator](https://cdn.hackclub.com/rescue?url=https://cloud-ht4su332c.vercel.app/0image.png)](https://5trtj.csb.app/)
 
 Here's the [source code](https://codesandbox.io/s/workshopcalculator-5trtj).
 
@@ -230,7 +230,7 @@ Explanation: Inside the `calc-wrapper`, we first add a `Button` with a prop of `
 
 Your preview should look something like this:
 
-![Preview output of the code written so far](https://cloud-5g2s0vw25.vercel.app/0image.png)
+![Preview output of the code written so far](https://cdn.hackclub.com/rescue?url=https://cloud-5g2s0vw25.vercel.app/0image.png)
 
 Excellent! Wondering how they got different colors even if they were the same component? This is why we created the functions `isNum()` and `isEqual()`. They check what the value of the children is and give the `className` accordingly! Isn't it cool?
 
@@ -293,7 +293,7 @@ export default function App() {
 
 Now your preview window should look something like this!
 
-![Preview output of our written code!](https://cloud-kvixq3evc.vercel.app/0image.png)
+![Preview output of our written code!](https://cdn.hackclub.com/rescue?url=https://cloud-kvixq3evc.vercel.app/0image.png)
 
 You might have understood that we have finally completed our calculator's UI! Now all that remains is to make appropriate functions for our calculator to work as well as pass appropriate `props` to the `Buttons`!
 
@@ -367,7 +367,7 @@ Woah that was a pretty big brain! I hope you understood what and why we wrote th
 
 Now, we'll make use of the library `mathjs` which, if you look in the project dependencies, it is already installed for you. We only need to import it in our project and the functions in it will be ready to use.
 
-![mathjs already installed](https://cloud-9gtba7h1z.vercel.app/0image.png)
+![mathjs already installed](https://cdn.hackclub.com/rescue?url=https://cloud-9gtba7h1z.vercel.app/0image.png)
 
 Next, on line 4 of `App.js` we'll import it.
 
@@ -464,7 +464,7 @@ return (
 
 With this, we finish building our calculator! It also works as we expected it to.
 
-![working of our calculator](https://cloud-lp3s1zn91.vercel.app/0final_preview.gif)
+![working of our calculator](https://cdn.hackclub.com/rescue?url=https://cloud-lp3s1zn91.vercel.app/0final_preview.gif)
 
 
 ## Part 4: The End

@@ -2,7 +2,7 @@
 name: Web Chat
 description: Make a personal chat server for you and your friends with WebSockets and Deno
 author: '@khrj'
-img: https://cloud-pq5lbfiab.vercel.app/2cover.png
+img: https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/2cover.png
 ---
 
 # Web Chat 
@@ -36,26 +36,26 @@ Follow these steps:
 - Open https://repl.it/
 - Click "Sign up"
 
-![Arrow to sign up button on top right](https://cloud-pq5lbfiab.vercel.app/9signup-step1.png)
+![Arrow to sign up button on top right](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/9signup-step1.png)
 
 - Fill in some details
 
-![Arrow to "Username", "Email" and "Password" fields in center of screen](https://cloud-91xu3gqm8.vercel.app/0signup-step2.png)
+![Arrow to "Username", "Email" and "Password" fields in center of screen](https://cdn.hackclub.com/rescue?url=https://cloud-91xu3gqm8.vercel.app/0signup-step2.png)
 
 - You now have a Repl.it account! Next, click "New repl"
 
-![Arrow to New repl button on the top left](https://cloud-pq5lbfiab.vercel.app/6new-step1.png)
+![Arrow to New repl button on the top left](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/6new-step1.png)
 
 - Search for "Deno" in the search box, click "Deno" and click "Create repl".
 
-![Find deno in the search box](https://cloud-pq5lbfiab.vercel.app/7new-step2.png)
+![Find deno in the search box](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/7new-step2.png)
 
 - You now have a Deno repl setup successfully.
 
 #### Repl.it basics
 
 <video muted autoplay loop controls>
-    <source src="https://cloud-qiwsf0afg.vercel.app/0repl.it_basics.mp4" type="video/mp4">
+    <source src="https://cdn.hackclub.com/rescue?url=https://cloud-qiwsf0afg.vercel.app/0repl.it_basics.mp4" type="video/mp4">
     <ul>To add a file, click "Add file" in the top left and give it a name</ul>
     <ul>To write code, simply start typing in the code editor in the center of the screen</ul>
     <ul>To run code, click Run and refresh your page preview</ul>
@@ -67,7 +67,7 @@ Follow these steps:
 
 You just finished Part 1!!
 
-![Minions cheering](https://cloud-pq5lbfiab.vercel.app/0cheer.gif)
+![Minions cheering](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/0cheer.gif)
 
 ## Part 2: Preparing your website
 ### Thinking about the website layout
@@ -76,22 +76,22 @@ The first step to making any UI is to think about how it'll look. Get some paper
 
 - First, we'll need a huge square to contain everything - This is our webpage body
 
-![Single rectangle filling image](https://cloud-91xu3gqm8.vercel.app/1weblayout1.png)
+![Single rectangle filling image](https://cdn.hackclub.com/rescue?url=https://cloud-91xu3gqm8.vercel.app/1weblayout1.png)
 
 - We'll need two rectangles, one large and one small - The large one will contain the messages sent and received (the message log) and the smaller one will contain controls and a space to type your message.
 
-![Large rectangle on top smaller rectangle below](https://cloud-91xu3gqm8.vercel.app/2weblayout2.png)
+![Large rectangle on top smaller rectangle below](https://cdn.hackclub.com/rescue?url=https://cloud-91xu3gqm8.vercel.app/2weblayout2.png)
 
 - Inside our smaller rectangle, we'll need 3 things
   - A field to type the user's name
   - A field to type their message
   - A button so they can send their message
 
-![Addition to previous image, three elements inside smaller rectangle](https://cloud-91xu3gqm8.vercel.app/3weblayout3.png)
+![Addition to previous image, three elements inside smaller rectangle](https://cdn.hackclub.com/rescue?url=https://cloud-91xu3gqm8.vercel.app/3weblayout3.png)
 
 - We won't add stuff to the larger rectangle right now -- that'll happen when someone sends a message. Here's how a message will look
 
-![Message layout example inside larger rectangle, name on the left of the message rectangle and message content in the center](https://cloud-91xu3gqm8.vercel.app/4weblayout4.png)
+![Message layout example inside larger rectangle, name on the left of the message rectangle and message content in the center](https://cdn.hackclub.com/rescue?url=https://cloud-91xu3gqm8.vercel.app/4weblayout4.png)
 
 ### Adding the HTML
 
@@ -257,7 +257,7 @@ Explanation:
 
 Congratulations on making it so far!
 
-![Hermione, Ron and Seamus cheering](https://cloud-pq5lbfiab.vercel.app/1cheer2.gif)
+![Hermione, Ron and Seamus cheering](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/1cheer2.gif)
 
 ## Programming the server (and frontend Javascript)
 
@@ -671,7 +671,7 @@ WE'VE DONE IT! Now let's test the app.
 
 Open this URL in multiple tabs:
 
-![Arrow pointing to URL above repl.it web preview](https://cloud-pq5lbfiab.vercel.app/8openurl.png)
+![Arrow pointing to URL above repl.it web preview](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/8openurl.png)
 
 Enter different names on separate tabs and send messages as if you're having a conversation.
 
@@ -679,7 +679,7 @@ CONGRATULATIONS ON MAKING IT! YOU'VE SUCCESSFULLY MADE A WEB CHAT.
 
 Except... Let's actually test the application. Send the URL from above to some friends and then PARTY!
  
-![Dumbledore and Snape partying](https://cloud-pq5lbfiab.vercel.app/3dumbledoreparty.gif)
+![Dumbledore and Snape partying](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/3dumbledoreparty.gif)
 
 ## What's next?
 

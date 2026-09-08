@@ -2,7 +2,7 @@
 name: 'Gerador de Citações'
 description: 'Build a random quotes generator with ReactJS'
 author: '@faisalsayed10, @vitorvavolizza'
-img: 'https://cloud-kuvixvb93.vercel.app/0quotes-generator.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-kuvixvb93.vercel.app/0quotes-generator.png'
 locales: 'pt-br'
 ---
 
@@ -30,7 +30,7 @@ Para começar, acesse este [código inicial](https://codesandbox.io/s/gerador-de
 
 Vamos primeiro dar uma olhada no código inicial do nosso projeto.
 
-![imagem dos diretórios em nosso projeto](https://cloud-9ne6wtuvp.vercel.app/0image.png)
+![imagem dos diretórios em nosso projeto](https://cdn.hackclub.com/rescue?url=https://cloud-9ne6wtuvp.vercel.app/0image.png)
 
 Primeiro, existem 2 diretórios principais e um arquivo `package.json`. Iremos ignorar o arquivo `package.json` por enquanto e vamos dar uma olhada nos 2 diretórios, `public/` e `src/`.
 
@@ -86,11 +86,11 @@ Esta é a aparência de sua janela de preview:
 
 Basicamente, estaremos fazendo uma chamada de API para uma url que nos retornará um json de citações e seus autores. Em seguida, armazenaremos esses dados em um estado usando o hook `useState` para que possamos renderizar novamente nosso componente sempre que ele mudar.
 
-![imagem épica de useState](https://cloud-90fxjk0al.vercel.app/0image.png)
+![imagem épica de useState](https://cdn.hackclub.com/rescue?url=https://cloud-90fxjk0al.vercel.app/0image.png)
 
 O url onde faremos a solicitação é `https://type.fit/api/quotes`. Se você abrir este link no navegador, verá um arquivo json cheio de citações!
 
-![O que você vê no navegador](https://cloud-h7wzq13xb.vercel.app/0image.png)
+![O que você vê no navegador](https://cdn.hackclub.com/rescue?url=https://cloud-h7wzq13xb.vercel.app/0image.png)
 
 Vamos começar a trabalhar com isso.
 
@@ -114,7 +114,7 @@ Explicação: Criamos uma variável `url` usando `const` para que seu valor nunc
 
 Agora vamos escrever uma função que fará a solicitação à API e buscará os dados desse URL. Usaremos `funções async` porque nos retornará uma promessa. Também usaremos `await` dentro da `função async`.
 
-![Imagem de async que parece legal](https://cloud-b58j7jpbu.vercel.app/0image.png)
+![Imagem de async que parece legal](https://cdn.hackclub.com/rescue?url=https://cloud-b58j7jpbu.vercel.app/0image.png)
 
 O operador `await` é usado para esperar por uma `Promise` para resolver ou rejeitá-la. E só pode ser usado dentro de uma `função async`.
 
@@ -146,7 +146,7 @@ Nossa função `async` está completa e agora podemos usar os dados que obtivemo
 
 Agora, se dermos uma olhada no valor armazenado dentro de nosso estado, notaremos que é um grande array inteiro consistindo de centenas de objetos contendo aspas!
 
-![Imagem do estado contendo milhares de citações](https://cloud-7drh3ecj9.vercel.app/0image.png)
+![Imagem do estado contendo milhares de citações](https://cdn.hackclub.com/rescue?url=https://cloud-7drh3ecj9.vercel.app/0image.png)
 
 **NOTA:** Você pode verificar isso no `React DevTools` do codeSandbox (próximo ao console).
 
@@ -180,7 +180,7 @@ Isso nos retornará o objeto que está no índice de `numAleatorio()`.
 
 Agora, apenas um objeto aleatório contendo a citação e o autor será armazenado dentro do estado `aspas`.
 
-![Apenas 1 citação sendo armazenada no estado](https://cloud-7drh3ecj9.vercel.app/1image.png)
+![Apenas 1 citação sendo armazenada no estado](https://cdn.hackclub.com/rescue?url=https://cloud-7drh3ecj9.vercel.app/1image.png)
 
 Seu código até agora:
 
@@ -220,7 +220,7 @@ export default function App() {
 
 A próxima coisa que desejamos implementar é obter uma citação aleatória sempre que nosso site for carregado. Isso pode ser feito facilmente criando um hook `useEffect` dentro de nosso componente, chamando nossa função `getCitacoes()` e passando um array de dependência vazio para ele.
 
-![foto de useEffect](https://cloud-q749otmin.vercel.app/0image.png)
+![foto de useEffect](https://cdn.hackclub.com/rescue?url=https://cloud-q749otmin.vercel.app/0image.png)
 
 **Nota:** Certifique-se de importar `useEffect` de `react`.
 

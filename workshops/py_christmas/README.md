@@ -2,7 +2,7 @@
 name: PyChristmas
 description: Make Christmas greetings with Turtle graphics in Python
 author: '@raz8153'
-img: 'https://cloud-bb9ekgrcc.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-bb9ekgrcc.vercel.app/0image.png'
 ---
   
 # PyChristmas 
@@ -15,15 +15,15 @@ In this workshop, we make a Christmas greeting using a Python library called [tu
 
 Let me give a brief idea of what we are going to do. We are going to make a greeting card with a maroon-ish background with text written on it saying ***"Merry Christmas"***. We are going to add a Christmas tree above the greeting. That is, we need a green tree with a brown stem, a yellow/golden star on top, and tiny red balls on either side of the tree.
 
-![alt completed_output_pic](https://cloud-4ipo9natc.vercel.app/3merry_christmas.png) 
+![alt completed_output_pic](https://cdn.hackclub.com/rescue?url=https://cloud-4ipo9natc.vercel.app/3merry_christmas.png) 
 
 To break it down a bit more, the leaves and stem will be made out of multiple boxes or rectangles, with tiny circles on either end of the rectangle. Finally, a star on top of the center.
-![alt tree_without_color_filled](https://cloud-4ipo9natc.vercel.app/1image2.png)
+![alt tree_without_color_filled](https://cdn.hackclub.com/rescue?url=https://cloud-4ipo9natc.vercel.app/1image2.png)
 
 # Shall we start coding?
 
 Create a new Python project on repl.it by visiting https://repl.it/languages/python3 .
-![alt Creating python repl](https://cloud-o0kfkx5c1.vercel.app/1creatingpyfile.gif)
+![alt Creating python repl](https://cdn.hackclub.com/rescue?url=https://cloud-o0kfkx5c1.vercel.app/1creatingpyfile.gif)
 
 We are gonna make 2 python files.
 1.  ******Figures.py****** - A python file in which we code the functions that we will use to create the boxes/rectangles, the tiny circles, and the star.
@@ -32,7 +32,7 @@ We are gonna make 2 python files.
 # Let's code Figures.py first.
 
 Using the sidebar on the left, create a file and name it 'Figures.py'. (You should see a file called 'main.py', don't worry about that yet)
-![alt Creating file](https://cloud-o0kfkx5c1.vercel.app/0creatingfile.gif)
+![alt Creating file](https://cdn.hackclub.com/rescue?url=https://cloud-o0kfkx5c1.vercel.app/0creatingfile.gif)
 
 Now in the coding window:
 
@@ -218,7 +218,7 @@ For ******width******, provide any value you desire.
 box1(turtle, "#4F4553", -15, y - 40, 30, 40) #Stem of the tree
 ```
 Now we make a make a stem for the tree by passing desired values for each parameter. Color will be a shade of brown (#4F4553) and the rest as you see above. 
-![alt tree_stem_completed](https://cloud-4ipo9natc.vercel.app/4image3.png) 
+![alt tree_stem_completed](https://cdn.hackclub.com/rescue?url=https://cloud-4ipo9natc.vercel.app/4image3.png) 
 
 
 Next thing we are gonna make is the tree leaves with tiny balls on either sides.
@@ -252,14 +252,14 @@ This is just to set the starting 'x' coordinate.
 box1(turtle, "#05A167", x, y, width, height) # Box for the leaves of tree
 ```
 Now we draw one complete green color filled box for first layer of leaves.
-![alt One_layer_of_leaves](https://cloud-4ipo9natc.vercel.app/5image4.png) 
+![alt One_layer_of_leaves](https://cdn.hackclub.com/rescue?url=https://cloud-4ipo9natc.vercel.app/5image4.png) 
 
 ```python
 balls(turtle, "#fc045b", x, y, 5) # Decorative balls
 ```
 This statement draws a small ball of radius 5 with a shade of red (#fc045b) filled in it. 
 
-![alt one_ball_completed](https://cloud-4ipo9natc.vercel.app/6image5.png) 
+![alt one_ball_completed](https://cdn.hackclub.com/rescue?url=https://cloud-4ipo9natc.vercel.app/6image5.png) 
 
 Now we need one more tiny ball on the right end of the christmas tree, right ? 
 
@@ -267,13 +267,13 @@ Now we need one more tiny ball on the right end of the christmas tree, right ?
 balls(turtle, "#fc045b", -x, y, 5)
 ```
 So we draw another ball with the same dimentions but we pass a different value for x coordinate. We pass ******-x****** instead of ******x******. This helps to position the ball on the right end instead of the left. 
-![alt both_balls_completed](https://cloud-4ipo9natc.vercel.app/7image6.png) 
+![alt both_balls_completed](https://cdn.hackclub.com/rescue?url=https://cloud-4ipo9natc.vercel.app/7image6.png) 
 ```python
 y = y + height
 ```
 Finally, the above line helps to move the turtle up to the top of each rectangle so that the next rectangle it draws will be stacked on top of the one before it. 
 Repeating the above step over and over again will give us rectangles stacked on top of each other such that the ones on top are slightly smaller then the one directly under it. We also have tiny red balls on either side.
-![alt tree_and _balls_completed](https://cloud-4ipo9natc.vercel.app/8image7.png) 
+![alt tree_and _balls_completed](https://cdn.hackclub.com/rescue?url=https://cloud-4ipo9natc.vercel.app/8image7.png) 
 
 Next,  Lets create a star on top of the tree.
 Note that once the rectangle drawing is done, the turtle is already on top of the tree. 
@@ -282,7 +282,7 @@ Note that once the rectangle drawing is done, the turtle is already on top of th
 star(turtle, "#e5f614", 0.4, y, 20)
 ```
 The above code will draw a yellow star on top of the tree. You can tweak the parameters to see how the positioning and size varies. 
-![alt star_completed](https://cloud-4ipo9natc.vercel.app/9image8.png) 
+![alt star_completed](https://cdn.hackclub.com/rescue?url=https://cloud-4ipo9natc.vercel.app/9image8.png) 
 
 Wow! The tree is done. Now for the final touch, the greetings. 
 
@@ -305,7 +305,7 @@ turtle.done()
 ```
 The `hideturtle()` function hides the turtle from the screen. And the `turtle.done()` function tells that the turtles task is done.
 
-![alt completed_greeting](https://cloud-4ipo9natc.vercel.app/0image1.png) 
+![alt completed_greeting](https://cdn.hackclub.com/rescue?url=https://cloud-4ipo9natc.vercel.app/0image1.png) 
 Well, guess what? We are done. 
 
 One look at the whole code?
@@ -356,7 +356,7 @@ Now, let's run the code.
 # Running the code
 Click the green "Run" button on the top of the repl.it windows. A screen will be shown on the right side displaying the turtle graphics that you coded. 
 If you face any errors, try commenting out each portion of the code and making only a certain section work. This generally helps to figure out the error.
-![alt repl_screen](https://cloud-4ipo9natc.vercel.app/2image9.jpeg) 
+![alt repl_screen](https://cdn.hackclub.com/rescue?url=https://cloud-4ipo9natc.vercel.app/2image9.jpeg) 
 
 # Hacking
 

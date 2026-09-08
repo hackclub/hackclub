@@ -2,7 +2,7 @@
 name: 'Deploying Websites'
 description: 'Deploying, hosting, using continuous deployment, custom domains and more'
 author: '@aaryanporwal'
-img: 'https://cloud-kv2ikdnkl.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-kv2ikdnkl.vercel.app/0image.png'
 ---
 
 In this workshop we'll be learning how to push your website on GitHub (a website that provides hosting for software development and version control using Git), and host it on [Netlify](https://www.netlify.com) with a custom domain from [Namecheap](https://www.namecheap.com).
@@ -37,19 +37,19 @@ In this workshop we'll be using a boilerplate [React](https://reactjs.org) app, 
 
 Begin by visiting [repl.it/languages/html](https://repl.it/languages/html).
 
-![Selecting html,css,js from language dropdown and clicking on create repl](https://cloud-cmhr0swki.vercel.app/0image.png)
+![Selecting html,css,js from language dropdown and clicking on create repl](https://cdn.hackclub.com/rescue?url=https://cloud-cmhr0swki.vercel.app/0image.png)
 
 You should see something like this:
 
-![Repl.it workspace](https://cloud-8bei8bskq.vercel.app/0image.png)
+![Repl.it workspace](https://cdn.hackclub.com/rescue?url=https://cloud-8bei8bskq.vercel.app/0image.png)
 
 Now in the bottom right black section above, click on "Shell":
 
-![Selecting shell](https://cloud-jalq6znct.vercel.app/0image.png)
+![Selecting shell](https://cdn.hackclub.com/rescue?url=https://cloud-jalq6znct.vercel.app/0image.png)
 
 This is our repl.it instance's shell (or terminal), it should look like this:
 
-![Shell screen](https://cloud-ifryxtexs.vercel.app/0image.png)
+![Shell screen](https://cdn.hackclub.com/rescue?url=https://cloud-ifryxtexs.vercel.app/0image.png)
 
 In the shell, type:
 
@@ -84,15 +84,15 @@ Now, create a new [GitHub repo](https://docs.github.com/en/free-pro-team@latest/
 
 * Open [GitHub](https://www.github.com), sign-in, and then click on the "New" button in the top left:
 
-![New repo button](https://cloud-gclk7n9uy.vercel.app/0gh-new-repo.png)
+![New repo button](https://cdn.hackclub.com/rescue?url=https://cloud-gclk7n9uy.vercel.app/0gh-new-repo.png)
 
 * Type a unique name (there shouldn't be an existing repository with the same name) for the repository, and click the "create repository" button at the bottom of the screen:
 
-![create repo](https://cloud-81cltkvfk.vercel.app/0image.png)
+![create repo](https://cdn.hackclub.com/rescue?url=https://cloud-81cltkvfk.vercel.app/0image.png)
 
 * After creating the repository, you should see the following screen:
 
- ![Click on the clipboard sign on the push an existing repo code](https://cloud-98lmwa0ha.vercel.app/0image.png)
+ ![Click on the clipboard sign on the push an existing repo code](https://cdn.hackclub.com/rescue?url=https://cloud-98lmwa0ha.vercel.app/0image.png)
  
  Click on the clipboard sign on the right side of the "..or push an existing ..." to copy the code.
 
@@ -100,12 +100,12 @@ Now, create a new [GitHub repo](https://docs.github.com/en/free-pro-team@latest/
 
 * Next, head over to your repl.it instance's shell and type `cd my-awesome-app` to change directory and paste in the code that we copied earlier from GitHub
 
-![pasting the code in repl.it's shell](https://cloud-m6l8fjvw5.vercel.app/0image.png)
+![pasting the code in repl.it's shell](https://cdn.hackclub.com/rescue?url=https://cloud-m6l8fjvw5.vercel.app/0image.png)
 
 After executing the code, git will ask for your GitHub's username and password, so type that and press enter.
 
 If you see the following screen, you've successfully uploaded your project on GitHub!
-![successfully uploaded on github](https://cloud-6q9f57u0d.vercel.app/0image.png)
+![successfully uploaded on github](https://cdn.hackclub.com/rescue?url=https://cloud-6q9f57u0d.vercel.app/0image.png)
 	
 Refresh your repository's page on GitHub and make sure the changes are reflected there as well!
 
@@ -118,11 +118,11 @@ Netlify and other similar services (like [Vercel](https://vercel.com/), [Firebas
 Log into [Netlify](https://www.netlify.com) (create an account if you haven’t already).
 
 1. Click on “New site from Git”:
-![Click on new site from git on netlify](https://cloud-ipr3ko8bo.vercel.app/0screenshot_2020-12-28_at_12.42.02_am.png)
-2. On the next screen, we'll be telling Netlify where our project is located at, so select “GitHub”![select github](https://cloud-3p29symvo.vercel.app/0image.png)
-3. Now, scroll down to find the GitHub repo for your app: ![select your repo](https://cloud-4jyvvb08t.vercel.app/0image.png)
-4. Then, click on "Deploy Site" <br> ![click deploy site](https://cloud-1lhe4c42f.vercel.app/0image.png) <br>
-5. Next, click on "Domain Settings" to add a custom domain to your deployment ![click domain settings](https://cloud-pdrxlnmln.vercel.app/0image.png)
+![Click on new site from git on netlify](https://cdn.hackclub.com/rescue?url=https://cloud-ipr3ko8bo.vercel.app/0screenshot_2020-12-28_at_12.42.02_am.png)
+2. On the next screen, we'll be telling Netlify where our project is located at, so select “GitHub”![select github](https://cdn.hackclub.com/rescue?url=https://cloud-3p29symvo.vercel.app/0image.png)
+3. Now, scroll down to find the GitHub repo for your app: ![select your repo](https://cdn.hackclub.com/rescue?url=https://cloud-4jyvvb08t.vercel.app/0image.png)
+4. Then, click on "Deploy Site" <br> ![click deploy site](https://cdn.hackclub.com/rescue?url=https://cloud-1lhe4c42f.vercel.app/0image.png) <br>
+5. Next, click on "Domain Settings" to add a custom domain to your deployment ![click domain settings](https://cdn.hackclub.com/rescue?url=https://cloud-pdrxlnmln.vercel.app/0image.png)
 6. In the Domain Settings, you can see a strange domain provided by Netlify. You can click on that to see how your project looks like!
 
 In the next part we'll add a custom domain to our application!
@@ -135,9 +135,9 @@ First, get a free one year custom domain from [Namecheap Education](https://nc.m
 
 Next, In Netlify's Domain Setting screen:
 
-1. Click on "Add custom domain" <br> ![click add custom domain](https://cloud-lsa9p1n9s.vercel.app/0image.png) <br>
-2. Type in the domain that you got from Namecheap and click "Verify" ![type a domain name and click verify](https://cloud-27kvllkf3.vercel.app/0image.png)
-3. You'll see a prompt saying your domain already has an owner. Click on "Yes, add domain" <br/>![Click yes add domain](https://cloud-aywdrainn.vercel.app/0image.png)
+1. Click on "Add custom domain" <br> ![click add custom domain](https://cdn.hackclub.com/rescue?url=https://cloud-lsa9p1n9s.vercel.app/0image.png) <br>
+2. Type in the domain that you got from Namecheap and click "Verify" ![type a domain name and click verify](https://cdn.hackclub.com/rescue?url=https://cloud-27kvllkf3.vercel.app/0image.png)
+3. You'll see a prompt saying your domain already has an owner. Click on "Yes, add domain" <br/>![Click yes add domain](https://cdn.hackclub.com/rescue?url=https://cloud-aywdrainn.vercel.app/0image.png)
 4. Back on the Domain Settings screen, copy the `.app` link—we'll register this link with our domain on Namecheap.
 
 Now, sign in to `namecheap.com` with the account you got your custom domain from so that we can add the *DNS Records*, think of records as the postage information you use to make sure your email is directed to the right place:
@@ -146,10 +146,10 @@ Now, we need to manage the DNS records of our domain to point to our Netlify sit
 
 Sign into `namecheap.com` with the account you used to get your custom domain.
 
-1. On the Dashboard, click on the `Manage` button ![click manage domain](https://cloud-7f5s0mcm5.vercel.app/0image.png)
-2. Next, click on "Advanced DNS"![click advanced dns](https://cloud-b73r79wje.vercel.app/0image.png)
-3. Click on "Add New Record" ![click add new record](https://cloud-fwd4l8geb.vercel.app/0image.png)
-4. Choose `CNAME` from the dropdown. Type `www` in the Host field. In the Value field, paste the `.app` link that Netlify gave you. Leave the TTL field to default "Automatic" and hit the green check mark.![click green check mark](https://cloud-lt99artli.vercel.app/0image.png)
+1. On the Dashboard, click on the `Manage` button ![click manage domain](https://cdn.hackclub.com/rescue?url=https://cloud-7f5s0mcm5.vercel.app/0image.png)
+2. Next, click on "Advanced DNS"![click advanced dns](https://cdn.hackclub.com/rescue?url=https://cloud-b73r79wje.vercel.app/0image.png)
+3. Click on "Add New Record" ![click add new record](https://cdn.hackclub.com/rescue?url=https://cloud-fwd4l8geb.vercel.app/0image.png)
+4. Choose `CNAME` from the dropdown. Type `www` in the Host field. In the Value field, paste the `.app` link that Netlify gave you. Leave the TTL field to default "Automatic" and hit the green check mark.![click green check mark](https://cdn.hackclub.com/rescue?url=https://cloud-lt99artli.vercel.app/0image.png)
 
  > Canonical Name record (CNAME Record)—can be used to alias a hostname to another hostname (in our case we aliased our Netlify's hostname). When a DNS client requests a record that contains a CNAME, which points to another hostname, the DNS resolution process is repeated with the new hostname.
 
@@ -182,4 +182,4 @@ The other way to go is to make your website *Closed Source* (that is don't want 
 
 **Happy Hacking!**
 
-![pepe hacking](https://cloud-5lqfbh7am.vercel.app/0hacker-pepe.gif)
+![pepe hacking](https://cdn.hackclub.com/rescue?url=https://cloud-5lqfbh7am.vercel.app/0hacker-pepe.gif)

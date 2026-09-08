@@ -12,12 +12,12 @@ For any given event or club, different Slack channels should be formed to facili
 
 For example, for Mason Hack Club, we have four channels on top of a leadership channel to talk about development, finance, operations, and outreach.
 
-![](https://cloud-ixb8ojv0f.vercel.app/0image-20190730-204704.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-ixb8ojv0f.vercel.app/0image-20190730-204704.png)
 
 # Hack Cincinnati
 
 Hack Cincinnati is similar. We broke our discussions up into multiple different channels, just like masonleads, but notice that we have two new and unique channels called #hc-data and #hc-important. #hc-data reports data using Zapier in real time, and #hc-important is a channel for the leadership team to announce important things, such as venue changes, big sponsorship agreements, and more!
 
-![](https://cloud-ixb8ojv0f.vercel.app/1image-20190730-204724.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-ixb8ojv0f.vercel.app/1image-20190730-204724.png)
 
 … work in progress

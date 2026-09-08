@@ -13,7 +13,7 @@ Prophet Orpheus, [our mascot](https://hackclub.com/workshops/orpheus), is here t
 
 It will look something like this:
 
-![dinosaur reading a book](https://cloud-4zpw37atj-hack-club-bot.vercel.app/2dino_site.png)
+![dinosaur reading a book](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/2dino_site.png)
 
 Here's the [live demo][final_live_demo] and [final code][final_code] (see `index.html` and `style.css`).
 
@@ -34,17 +34,17 @@ Then, go to [https://github.com/new](https://github.com/new).
 
 Enter a name, select "MIT License" underneath "Choose a license", and then click "Create repository"
 
-![Input fields for creating a repository](https://cloud-jyzgt07rh-hack-club-bot.vercel.app/0image.png)
+![Input fields for creating a repository](https://cdn.hackclub.com/rescue?url=https://cloud-jyzgt07rh-hack-club-bot.vercel.app/0image.png)
 
 Next, go to [https://github.com/codespaces/new](https://github.com/codespaces/new).
 
-![Create codespace](https://cloud-pp1naqu1h-hack-club-bot.vercel.app/0image.png)
+![Create codespace](https://cdn.hackclub.com/rescue?url=https://cloud-pp1naqu1h-hack-club-bot.vercel.app/0image.png)
 
 Select the repository that you just created, and then then click "Create codespace"
 
 Wait a bit for the codespace to load and then you should see this:
 
-![New codespace](https://cloud-1seqqsbpy-hack-club-bot.vercel.app/1screenshot9.png)
+![New codespace](https://cdn.hackclub.com/rescue?url=https://cloud-1seqqsbpy-hack-club-bot.vercel.app/1screenshot9.png)
 
 Congrats! You created a codespace. This is where you will write the code for your website.
 
@@ -58,7 +58,7 @@ HTML stands for Hypertext Markup Language. Every website from the New York Times
 
 Create a `index.html` file by clicking the + button in the top and writing `index.html`
 
-![Create index.html](https://cloud-6n7eek9u8-hack-club-bot.vercel.app/0screenshot_new_file.png)
+![Create index.html](https://cdn.hackclub.com/rescue?url=https://cloud-6n7eek9u8-hack-club-bot.vercel.app/0screenshot_new_file.png)
 
 **Type**, in the `index.html` file, the following code. **DO NOT COPY AND PASTE.**
 
@@ -74,7 +74,7 @@ This structure is common to all HTML pages. In fact, you can take a look for you
 
 <!-- Source https://developers.google.com/web/tools/chrome-devtools/inspect-styles/imgs/elements-panel.png -->
 
-![Inspect element panel containing html and css styles for a website](https://cloud-4zpw37atj-hack-club-bot.vercel.app/3elements-panel.png)
+![Inspect element panel containing html and css styles for a website](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/3elements-panel.png)
 
 **Before proceeding, we'll briefly go over what our template means.**
 
@@ -88,15 +88,15 @@ Let's check out what our HTML file looks like in Live Preview!
 
 To do this, click on the extensions button in the left pane
 
-![Left pane](https://cloud-c430fguz6-hack-club-bot.vercel.app/0screenshot_extensions.png)
+![Left pane](https://cdn.hackclub.com/rescue?url=https://cloud-c430fguz6-hack-club-bot.vercel.app/0screenshot_extensions.png)
 
 Then, search for `Live Server` and click Install
 
-![Searching for extension](https://cloud-1seqqsbpy-hack-club-bot.vercel.app/0screenshot2.png)
+![Searching for extension](https://cdn.hackclub.com/rescue?url=https://cloud-1seqqsbpy-hack-club-bot.vercel.app/0screenshot2.png)
 
 Then, go to the files again (Click on the first button in the left pane) and click `Go Live!` in the status bar
 
-![Status bar](https://cloud-4utf7hlyb-hack-club-bot.vercel.app/0screenshot3.png)
+![Status bar](https://cdn.hackclub.com/rescue?url=https://cloud-4utf7hlyb-hack-club-bot.vercel.app/0screenshot3.png)
 
 A new tab should open with your page!
 
@@ -106,13 +106,13 @@ Every time you save (`Ctrl+S`) your page the live preview will update.
 
 Press `F1` and type `Simple Browser`
 
-![Command Palete](https://cloud-3553b97jw-hack-club-bot.vercel.app/0screenshot4.png)
+![Command Palete](https://cdn.hackclub.com/rescue?url=https://cloud-3553b97jw-hack-club-bot.vercel.app/0screenshot4.png)
 
 Press enter and input the link of the new tab that opened in the previous step and press enter again
 
 You should now have the preview alongside the editor!
 
-![Preview in editor](https://cloud-3s0lkfgf4-hack-club-bot.vercel.app/0screenshot5.png)
+![Preview in editor](https://cdn.hackclub.com/rescue?url=https://cloud-3s0lkfgf4-hack-club-bot.vercel.app/0screenshot5.png)
 
 ### 3) Adding Text to the Body
 
@@ -180,7 +180,7 @@ Go ahead and add this into your `index.html` now. I put my picture before my hea
 </html>
 ```
 
-![dinosaur reading a book and text describing it below](https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/2no_css.png)
+![dinosaur reading a book and text describing it below](https://cdn.hackclub.com/rescue?url=https://cloud-1lgnmk5nw-hack-club-bot.vercel.app/2no_css.png)
 
 Remember, you need to **save** your program every time you want to see your updated website.
 
@@ -273,7 +273,7 @@ body {
 
 Now be sure to **save** to get the most recent version of your website. Ah, it is truly beautiful to behold.
 
-![Children celebrating](https://cloud-4zpw37atj-hack-club-bot.vercel.app/0celebrate_harry_potter.gif)
+![Children celebrating](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/0celebrate_harry_potter.gif)
 
 ## Part IV: Publishing
 
@@ -281,19 +281,19 @@ Right now only you can see your website. Let's fix that!
 
 Click on the the "Git" tab on the left pane
 
-![Left pane](https://cloud-a2t1lug9o-hack-club-bot.vercel.app/0screenshot_git.png)
+![Left pane](https://cdn.hackclub.com/rescue?url=https://cloud-a2t1lug9o-hack-club-bot.vercel.app/0screenshot_git.png)
 
 Write a cool commit message at the top and then click `Commit`
 
-![Git panel](https://cloud-nge9xhuux-hack-club-bot.vercel.app/0screenshot6.png)
+![Git panel](https://cdn.hackclub.com/rescue?url=https://cloud-nge9xhuux-hack-club-bot.vercel.app/0screenshot6.png)
 
 Then, click Always on the pop-up
 
-![pop-up](https://cloud-8gllz91ga-hack-club-bot.vercel.app/0screenshot7.png)
+![pop-up](https://cdn.hackclub.com/rescue?url=https://cloud-8gllz91ga-hack-club-bot.vercel.app/0screenshot7.png)
 
 Now, we need to go to our GitHub account and open the repo we created at the start of this workshop. Once you have it open, follow the instructions in the below image:
 
-![Github settings](https://cloud-mqt6brgrz-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_15.55.28.png)
+![Github settings](https://cdn.hackclub.com/rescue?url=https://cloud-mqt6brgrz-hack-club-bot.vercel.app/0screenshot_2024-04-18_at_15.55.28.png)
 
 _Change deployment branch to "main"_
 
@@ -307,13 +307,13 @@ Whenever you add a new feature or fix, you'll have to commit the lines of code t
 
 Go to the "Git" tab on the left of your codespace, fill out a "Commit message", and click "Commit"
 
-![Git tab](https://cloud-a7ulcfg3e-hack-club-bot.vercel.app/0screenshot_update.png)
+![Git tab](https://cdn.hackclub.com/rescue?url=https://cloud-a7ulcfg3e-hack-club-bot.vercel.app/0screenshot_update.png)
 
 And just like that, your new changes are now published at the URL `USERNAME.github.io/REPONAME` on the internet for all your friends to see!
 
 _Give it 2 minutes to deploy your changes the first time!_
 
-![Two people singing and moving side to side in a car](https://cloud-4zpw37atj-hack-club-bot.vercel.app/1celebrate_rush_hour.gif)
+![Two people singing and moving side to side in a car](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/1celebrate_rush_hour.gif)
 
 _For a limited time: [get a free bubble tea](https://hack.club/boba) after your site deploys_
 

@@ -6,17 +6,17 @@ This Tuesday, September 3rd, marked the first club meeting for the Mason Hack Cl
 
 The meeting started off in Room B112 like usual but quickly swelled in size to the point where we ended up moving to Mason’s library.
 
-![](https://cloud-jga89q17v.vercel.app/21_l4-pf9_xld_cxujdsu2msq.jpeg)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-jga89q17v.vercel.app/21_l4-pf9_xld_cxujdsu2msq.jpeg)
 
 _Mason Hack Club members overflowing the normal meeting room!_
 
-![](https://cloud-jga89q17v.vercel.app/11_c9ivpaksqomdq9xgpmf_va.jpeg)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-jga89q17v.vercel.app/11_c9ivpaksqomdq9xgpmf_va.jpeg)
 
 _Much better :)_
 
 Following the beginning of the meeting using @JoshC’s custom attendance system to check everyone in, we broke up into multiple rooms for beginner and advanced topics: HTML and CSS for newcomers to the club, and an introduction to React.js for the veterans.
 
-![](https://cloud-jga89q17v.vercel.app/01_gghkx3zzpi3i-eakdyhimw.jpeg)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-jga89q17v.vercel.app/01_gghkx3zzpi3i-eakdyhimw.jpeg)
 
 _Veteran members learning React.js._
 

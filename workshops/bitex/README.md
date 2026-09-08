@@ -2,7 +2,7 @@
 name: 'BitEx'
 description: 'Build a simple chrome extension which tracks Bitcoin prices.'
 author: '@faisalsayed10'
-img: https://cloud-cf7gkmekh.vercel.app/0image.png
+img: https://cdn.hackclub.com/rescue?url=https://cloud-cf7gkmekh.vercel.app/0image.png
 ---
 
 # BitEx
@@ -11,7 +11,7 @@ Today we'll be building a simple chrome extension which is based on web technolo
 
 Here's how it will look like:
 
-![Demo of how our extension will look like](https://cloud-cf7gkmekh.vercel.app/0image.png)
+![Demo of how our extension will look like](https://cdn.hackclub.com/rescue?url=https://cloud-cf7gkmekh.vercel.app/0image.png)
 
 Here's the [source code](https://repl.it/@FaisalSayed1/BitEx).
 
@@ -39,7 +39,7 @@ If there is something which is really important for any chrome extension, then i
 
 First, click on `'Add file'`.
 
-![visual guide to creating manifest](https://cloud-7l16l8dgo.vercel.app/0image.png)
+![visual guide to creating manifest](https://cdn.hackclub.com/rescue?url=https://cloud-7l16l8dgo.vercel.app/0image.png)
 
 Then, name your file as `manifest.json`.
 
@@ -68,13 +68,13 @@ If you want to create an icon that isn't always visible, use a `page action` ins
 
 Next, the `browser_action` will need the `default_name`, `default_icon` and the `default_popup` values for our extension to work. (Although these values are optional but for our case, we need them.)
 
-**NOTE:** You can download the icon which I used [here](https://cloud-ixdoyae2t.vercel.app/0image.png).
+**NOTE:** You can download the icon which I used [here](https://cdn.hackclub.com/rescue?url=https://cloud-ixdoyae2t.vercel.app/0image.png).
 
 We don't need any permissions for our extension so we'll keep it as empty.
 
 And with this, we finish building our manifest!
 
-![done!](https://cloud-6zi5qojcb.vercel.app/0image.png)
+![done!](https://cdn.hackclub.com/rescue?url=https://cloud-6zi5qojcb.vercel.app/0image.png)
 
 ### 2) HTML
 
@@ -91,15 +91,15 @@ Let's start building the UI for our extension. Building an extension's UI is no 
 </body>
 ```
 
-**NOTE:** Download `bitcoin.png` from [here](https://cloud-94v45750t.vercel.app/0image.png) and simply drag and drop it into your repl!
+**NOTE:** Download `bitcoin.png` from [here](https://cdn.hackclub.com/rescue?url=https://cloud-94v45750t.vercel.app/0image.png) and simply drag and drop it into your repl!
 
-![demo on how to drag and drop files in repl.it](https://cloud-hv94fl1nv.vercel.app/01.gif)
+![demo on how to drag and drop files in repl.it](https://cdn.hackclub.com/rescue?url=https://cloud-hv94fl1nv.vercel.app/01.gif)
 
 We simply create a `div` element containing a heading, an image and also another `div` which will display `Loading...` for now.
 
 You should see something like this in your preview window:
 
-![Demo of the code written so far](https://cloud-gxzis4tsg.vercel.app/0image.png)
+![Demo of the code written so far](https://cdn.hackclub.com/rescue?url=https://cloud-gxzis4tsg.vercel.app/0image.png)
 
 What mess have we created! It definitely needs some styles! Let's add CSS in the next section!
 
@@ -150,7 +150,7 @@ Here, we simply set its font family to `Merriweather` and its font size is set t
 
 Yay! Now we have a far better UI compared to what we had earlier!
 
-![live demo of code written so far](https://cloud-ljmv9ffqq.vercel.app/0image.png)
+![live demo of code written so far](https://cdn.hackclub.com/rescue?url=https://cloud-ljmv9ffqq.vercel.app/0image.png)
 
 ### 4) JavaScript
 
@@ -330,7 +330,7 @@ fetchData();
 
 If you `RUN` this code, you should see something like this!
 
-![Preview of the code written so far](https://cloud-m1crtq110.vercel.app/0image.png)
+![Preview of the code written so far](https://cdn.hackclub.com/rescue?url=https://cloud-m1crtq110.vercel.app/0image.png)
 
 We haven't yet implemented the CSS for the classes `increased` and `decreased` due to which we don't see the green/red color for the price change percentage. Let's do that finally!
 
@@ -354,7 +354,7 @@ The `increased` class gets a greenish color and similarly, the `decreased` class
 
 Now if you `RUN` the code, you'll see that everything works perfectly as we expected!
 
-![Demo of code written so far](https://cloud-cf7gkmekh.vercel.app/0image.png)
+![Demo of code written so far](https://cdn.hackclub.com/rescue?url=https://cloud-cf7gkmekh.vercel.app/0image.png)
 
 And now its finally time to turn this into an extension!
 
@@ -364,21 +364,21 @@ And now its finally time to turn this into an extension!
 
 First we'll need to download our code. For this, simply click on the 3 vertical dots on the left and select the option `Download as zip`.
 
-![visual tutorial on how to do it](https://cloud-5vz6fh264.vercel.app/0image.png)
+![visual tutorial on how to do it](https://cdn.hackclub.com/rescue?url=https://cloud-5vz6fh264.vercel.app/0image.png)
 
 Once you have download the zip file. Extract it. It will then give you a folder of your repl's name with our code inside!
 
 Next, navigate to `chrome://extensions` in your chrome browser. You'll see a list of all your installed extensions!
 
-![image of chrome extensions page](https://cloud-36ht9ja6n.vercel.app/0image.png)
+![image of chrome extensions page](https://cdn.hackclub.com/rescue?url=https://cloud-36ht9ja6n.vercel.app/0image.png)
 
 On the top right corner, make sure you have `Developer mode` turned on. If not, make sure you turn it on!
 
-![developer mode image](https://cloud-q7rpbmt3e.vercel.app/0image.png)
+![developer mode image](https://cdn.hackclub.com/rescue?url=https://cloud-q7rpbmt3e.vercel.app/0image.png)
 
 Now you'll see 3 new options popped up! Click on the `Load unpacked` option and select the folder containing your code!
 
-![Load unpacked option](https://cloud-btsj473k8.vercel.app/0image.png)
+![Load unpacked option](https://cdn.hackclub.com/rescue?url=https://cloud-btsj473k8.vercel.app/0image.png)
 
 And there we go! We successfully installed our extension into our chrome browser! Now you'll be able to see your extension's icon in the chrome toolbar!
 

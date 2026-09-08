@@ -2,14 +2,14 @@
 name: 'VR World'
 description: 'Create your own VR World'
 author: '@wollygfx'
-img: 'https://cloud-p6nx5mns7.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-p6nx5mns7.vercel.app/0image.png'
 locales: 'pt-br'
 ---
 
 In this workshop, you'll learn how to create your own VR World using [A-Frame](https://aframe.io/), a web framework for building 3D/AR/VR experiences.
 
 Here is the [live demo](https://vr-world.wollygfx.repl.co/) and the [source code](https://repl.it/@wollygfx/VR-World#index.html) of what we are making:
-![VR World](https://cloud-rk4ys3373.vercel.app/0image.png)
+![VR World](https://cdn.hackclub.com/rescue?url=https://cloud-rk4ys3373.vercel.app/0image.png)
 
 ## Set-up
 
@@ -17,7 +17,7 @@ This workshop requires a very basic knowledge of HTML. Don’t worry if you get 
 
 For this workshop we will use Repl.it, a free, online code editor. Click [here](https://repl.it/languages/html) to get started with a new HTML project on repl.it.
 
-![Setup](https://cloud-qbmylslty.vercel.app/0image.png)
+![Setup](https://cdn.hackclub.com/rescue?url=https://cloud-qbmylslty.vercel.app/0image.png)
 
 ##  Setting up A-frame
 
@@ -27,7 +27,7 @@ To get started, we'll need to link A-frame with our HTML document, there are mul
 ```
 Now, we can start creating our virtual world.
 
-![Excited GIF](https://cloud-22dzjiq1j.vercel.app/0tenor.gif)
+![Excited GIF](https://cdn.hackclub.com/rescue?url=https://cloud-22dzjiq1j.vercel.app/0tenor.gif)
 
 ### A-Scene
 
@@ -49,7 +49,7 @@ Now, we can start putting in whatever we want, but let's start with the basics. 
 </a-scene>
 ```
 
-![Sky rendered](https://cloud-e47vodig4.vercel.app/0image.png)
+![Sky rendered](https://cdn.hackclub.com/rescue?url=https://cloud-e47vodig4.vercel.app/0image.png)
 
 This will render a huge sphere with a color or a texture mapped to the inside. There are a bunch of [attributes](https://aframe.io/docs/1.0.0/primitives/a-sky.html#attributes) that we can use to modify our sky, feel free to play with them:
 - color
@@ -74,11 +74,11 @@ Let's break this down:
 
 This will render a beautifully textured sky.
 
-![Sky texture](https://cloud-dytwphipl.vercel.app/0screen_recording_2020-11-16_at_6.19.29_pm.gif)
+![Sky texture](https://cdn.hackclub.com/rescue?url=https://cloud-dytwphipl.vercel.app/0screen_recording_2020-11-16_at_6.19.29_pm.gif)
 
 Uploading images to Repl.it is very simple, just go to the navigation bar and click on **Upload file**:
 
-![Uploading files to Repl.it](https://cloud-3vcjp49bp.vercel.app/0image.png)
+![Uploading files to Repl.it](https://cdn.hackclub.com/rescue?url=https://cloud-3vcjp49bp.vercel.app/0image.png)
 
 Now that we have a sky, we'll need a floor too. We can simply do this using the `<a-plane>` component.
 ```html
@@ -143,7 +143,7 @@ So, all we have to do to import a 3D model is to create an [asset item](https://
 
 Here's what we get:
 
-![Importing 3D Model](https://cloud-nay6jhbpz.vercel.app/0screen_recording_2020-11-17_at_3.22.37_pm.gif)
+![Importing 3D Model](https://cdn.hackclub.com/rescue?url=https://cloud-nay6jhbpz.vercel.app/0screen_recording_2020-11-17_at_3.22.37_pm.gif)
 
 There are thousands of websites where you can get the 3D models from, here are some of them:
 - [Sketchfab](https://sketchfab.com/)
@@ -177,7 +177,7 @@ Ambient lights affects all the primitives in the scene, if you chose a dark colo
 
 This is how ambient lights affect the scene and its components:
 
-![Ambient light](https://cloud-821gtbu0s.vercel.app/0screen_recording_2020-11-17_at_5.18.31_pm.gif)
+![Ambient light](https://cdn.hackclub.com/rescue?url=https://cloud-821gtbu0s.vercel.app/0screen_recording_2020-11-17_at_5.18.31_pm.gif)
 
 </details>
 <details><summary>Directional lights</summary>
@@ -191,7 +191,7 @@ Directional lights are like a light source that is infinitely far away, but shin
 
 You can see here that this type of light acts just like the sun, you can also see how it only affects one side of the objects and the other is completely black.
 
-![Directional light](https://cloud-g8qe1cxw5.vercel.app/0screen_recording_2020-11-17_at_5.26.33_pm__1_.gif)
+![Directional light](https://cdn.hackclub.com/rescue?url=https://cloud-g8qe1cxw5.vercel.app/0screen_recording_2020-11-17_at_5.26.33_pm__1_.gif)
 
 </details>
 <details><summary>Point lights</summary>
@@ -202,7 +202,7 @@ Point lights are like light bulbs; we can position them around the scene, the cl
 ```
 
 Here's how point lights interact with the scene and the objects.
-![point lights](https://cloud-2hboh6agi.vercel.app/0screen_recording_2020-11-17_at_5.33.22_pm.gif)
+![point lights](https://cdn.hackclub.com/rescue?url=https://cloud-2hboh6agi.vercel.app/0screen_recording_2020-11-17_at_5.33.22_pm.gif)
 
 </details>
 Feel free to play around with lightning!
@@ -221,14 +221,14 @@ Let's break this down:
 
 This is what the code above renders:
 
-![Text rendered](https://cloud-oql3ioxyn.vercel.app/0screen_recording_2020-11-17_at_5.41.43_pm.gif)
+![Text rendered](https://cdn.hackclub.com/rescue?url=https://cloud-oql3ioxyn.vercel.app/0screen_recording_2020-11-17_at_5.41.43_pm.gif)
 
 And that's all for today's workshop :)
 
 ### Hack it
 Yay! you made it to the end of this workshop.
 
-![Congrats GIF](https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
+![Congrats GIF](https://cdn.hackclub.com/rescue?url=https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
 
 Make your own VR World and share it in the [Hack Club Slack](https://hackclub.slack.com/), I would love to see what you can create using what you've learned in this workshop!
 

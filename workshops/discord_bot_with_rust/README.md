@@ -2,7 +2,7 @@
 name: 'Discord poll bot in Rust'
 description: 'Make a Discord polling bot in Rust using the Serenity library'
 author: '@anirudhb'
-img: 'https://cloud-kfuekwrsa.vercel.app/0poll-bot-example.gif'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-kfuekwrsa.vercel.app/0poll-bot-example.gif'
 ---
 
 # Make a Discord bot in Rust!
@@ -25,7 +25,7 @@ For this workshop, I do recommend an intermediate understanding of low-level con
 
 Here's a demo of the polling bot in action:
 
-![Polling bot demo](https://cloud-kfuekwrsa.vercel.app/0poll-bot-example.gif)
+![Polling bot demo](https://cdn.hackclub.com/rescue?url=https://cloud-kfuekwrsa.vercel.app/0poll-bot-example.gif)
 
 The full code can be viewed [here](https://repl.it/@anirudhb/Rust-discord-bot-finished). Alternatively, you can open the below section for a full listing.
 
@@ -310,7 +310,7 @@ To get started, [create an account](https://repl.it/signup). I personally recomm
 
 Now let's create a new Rust project by going to https://repl.it/languages/rust:
 
-![Initial Rust project](https://cloud-gjndvi3vx.vercel.app/0image.png)
+![Initial Rust project](https://cdn.hackclub.com/rescue?url=https://cloud-gjndvi3vx.vercel.app/0image.png)
 
 ## Adding the library and setting up a basic bot
 
@@ -318,7 +318,7 @@ Right now, our Rust program isn't a Cargo project. Cargo is Rust's package manag
 
 Let's fix that by running `cargo init --name polling-bot` in the terminal. This command initializes a new Cargo project for us. You can replace `polling-bot` with whatever you want your program to be named. This should create two new files on the side: `.gitignore` and `Cargo.toml`, which we'll be using to add the Serenity library:
 
-![New files created by cargo init](https://cloud-bxfulgo22.vercel.app/0image.png)
+![New files created by cargo init](https://cdn.hackclub.com/rescue?url=https://cloud-bxfulgo22.vercel.app/0image.png)
 
 P.S. Here's a hint when working with Repl.it: If you ever get a `disk quota exceeded` error just delete the `target` directory and try again. Additionally, delete the `target` directory when you're done playing around with your bot or else it'll take up a bunch of space!
 
@@ -345,7 +345,7 @@ This is kind of a hack but it's necessary to make sure that the environment vari
 
 One last thing: Update the path to the source file in `Cargo.toml`, changing `main.rs` to `real_main.rs`. Your Cargo.toml should look like this:
 
-![Cargo.toml after fixing source filename](https://cloud-fvk4e7lkf.vercel.app/0image.png)
+![Cargo.toml after fixing source filename](https://cdn.hackclub.com/rescue?url=https://cloud-fvk4e7lkf.vercel.app/0image.png)
 
 ### What is Serenity?
 
@@ -355,23 +355,23 @@ Serenity is a Rust _crate_ (or library) that helps you write Discord bots in Rus
 
 Now, we need to create a new bot in the [Discord Developer Portal](https://discord.com/developers/applications). Click "New Application" in the top right corner, highlighted in red here:
 
-![Discord Developer Portal- New Application](https://cloud-4fax6pert.vercel.app/0inkedscreenshot_2020-11-19_discord_developer_portal_____api_docs_for_bots_and_developers_li.jpg)
+![Discord Developer Portal- New Application](https://cdn.hackclub.com/rescue?url=https://cloud-4fax6pert.vercel.app/0inkedscreenshot_2020-11-19_discord_developer_portal_____api_docs_for_bots_and_developers_li.jpg)
 
 Give your bot a nice name (I'm using "Polling Bot" for this tutorial), then hit the create button!
 
 Now, go to the "Bot" section of your application, highlighted in red here:
 
-![Polling Bot- Bot section](https://cloud-jufkijale.vercel.app/0inkedscreenshot_2020-11-19_discord_developer_portal_____api_docs_for_bots_and_developers_1__li.jpg)
+![Polling Bot- Bot section](https://cdn.hackclub.com/rescue?url=https://cloud-jufkijale.vercel.app/0inkedscreenshot_2020-11-19_discord_developer_portal_____api_docs_for_bots_and_developers_1__li.jpg)
 
 Click the "Add Bot" button to enable the bot for this application, highlighted in red here:
 
-![Polling Bot, bot section- Add Bot button](https://cloud-jdkfymmpt.vercel.app/0inkedscreenshot_2020-11-19_discord_developer_portal_____api_docs_for_bots_and_developers_2__li.jpg)
+![Polling Bot, bot section- Add Bot button](https://cdn.hackclub.com/rescue?url=https://cloud-jdkfymmpt.vercel.app/0inkedscreenshot_2020-11-19_discord_developer_portal_____api_docs_for_bots_and_developers_2__li.jpg)
 
 If you want to, feel free to rename the bot's username or give it an avatar. I'm skipping that here since it's up to you to add your own creative touch ✨
 
 Alright, now that we've setup our bot, copy the bot's token by clicking the "Copy" button next to the token field, highlighted in light cyan here:
 
-![Polling Bot, bot section- Copy button next to Token field](https://cloud-7f7l7crt1.vercel.app/0inkedscreenshot_2020-11-19_discord_developer_portal_____api_docs_for_bots_and_developers_3__li.jpg)
+![Polling Bot, bot section- Copy button next to Token field](https://cdn.hackclub.com/rescue?url=https://cloud-7f7l7crt1.vercel.app/0inkedscreenshot_2020-11-19_discord_developer_portal_____api_docs_for_bots_and_developers_3__li.jpg)
 
 Great, you've copied your token!
 
@@ -379,7 +379,7 @@ Let's put it into Repl.it. Create a new `.env` file in Repl.it. The `.env` file 
 
 Inside the `.env` file, add a new line that looks like `DISCORD_TOKEN=<token>`. Replace `<token>` with the token that you previously copied. It should look like this (I've redacted my token):
 
-![.env file with DISCORD_TOKEN variable set to your token](https://cloud-nn0n8t195.vercel.app/0inkedscreenshot_2020-11-19_fluffyprevailingmarketing_li.jpg)
+![.env file with DISCORD_TOKEN variable set to your token](https://cdn.hackclub.com/rescue?url=https://cloud-nn0n8t195.vercel.app/0inkedscreenshot_2020-11-19_fluffyprevailingmarketing_li.jpg)
 
 Now, let's add the Serenity library! In Rust, projects manage their dependencies using `Cargo.toml`, so that's where we need to add Serenity. Head over to `Cargo.toml` and add this line under your `[dependencies]` section: `serenity = "0.9.1"`. At the time of writing, the latest version of Serenity is 0.9.1, but you can replace it with the latest version which can be found [here](https://crates.io/crates/serenity).
 
@@ -387,17 +387,17 @@ We'll also need another helper library, `tokio`. Add `tokio = { version = "^0.2.
 
 Your `Cargo.toml` should now look like this:
 
-![Cargo.toml with Serenity dependency](https://cloud-epv4dnmyn.vercel.app/0image.png)
+![Cargo.toml with Serenity dependency](https://cdn.hackclub.com/rescue?url=https://cloud-epv4dnmyn.vercel.app/0image.png)
 
 ### Inviting your bot to a server
 
 To invite your bot to a server, you'll need to go to the OAuth2 tab in your application (highlighted in green here):
 
-![Polling Bot- OAuth2 section](https://cloud-oe7fro27r.vercel.app/0inkedscreenshot_2020-11-24_discord_developer_portal_____api_docs_for_bots_and_developers_li.jpg)
+![Polling Bot- OAuth2 section](https://cdn.hackclub.com/rescue?url=https://cloud-oe7fro27r.vercel.app/0inkedscreenshot_2020-11-24_discord_developer_portal_____api_docs_for_bots_and_developers_li.jpg)
 
 Next, select the "bot" scope for OAuth2, highlighted in pink here:
 
-![Polling Bot- OAuth2 section, "bot" scope](https://cloud-677psdnfr.vercel.app/0inkedscreenshot_2020-11-24_discord_developer_portal_____api_docs_for_bots_and_developers_1__li.jpg)
+![Polling Bot- OAuth2 section, "bot" scope](https://cdn.hackclub.com/rescue?url=https://cloud-677psdnfr.vercel.app/0inkedscreenshot_2020-11-24_discord_developer_portal_____api_docs_for_bots_and_developers_1__li.jpg)
 
 Then, scroll down and check these permissions we'll need (highlighted in orange in the picture):
 * View Channels (under General Permissions)
@@ -405,11 +405,11 @@ Then, scroll down and check these permissions we'll need (highlighted in orange 
 * Read Message History (under Text Permissions)
 * Add Reactions (under Text Permissions)
 
-![Polling Bot- OAuth2 section, permissions selected: View Channels, Send Messages, Read Message History, Add Reactions](https://cloud-ga2iol69b.vercel.app/0inkedscreenshot_2020-11-24_discord_developer_portal_____api_docs_for_bots_and_developers_2__li.jpg)
+![Polling Bot- OAuth2 section, permissions selected: View Channels, Send Messages, Read Message History, Add Reactions](https://cdn.hackclub.com/rescue?url=https://cloud-ga2iol69b.vercel.app/0inkedscreenshot_2020-11-24_discord_developer_portal_____api_docs_for_bots_and_developers_2__li.jpg)
 
 Finally, copy the OAuth2 link, highlighted in brown here:
 
-![Polling Bot- OAuth2 section, "copy" button and OAuth2 URL highlighted](https://cloud-11kxy9z13.vercel.app/0inkedscreenshot_2020-11-24_discord_developer_portal_____api_docs_for_bots_and_developers_3__li.jpg)
+![Polling Bot- OAuth2 section, "copy" button and OAuth2 URL highlighted](https://cdn.hackclub.com/rescue?url=https://cloud-11kxy9z13.vercel.app/0inkedscreenshot_2020-11-24_discord_developer_portal_____api_docs_for_bots_and_developers_3__li.jpg)
 
 Paste it into your browser and invite your bot to a server for testing! (Preferably with other people to test the polling.) You'll need the "Manage Server" permission in order to invite the bot to a server.
 
@@ -740,7 +740,7 @@ We'll define this function later, but for now just know that it takes a `Poll` r
 
 We have to accumulate all the emojis to react with, so that the user can easily click to respond. We're using the "regional indicator" section of Unicode, which looks like this in Discord:
 
-![What regional indicator characters look like in Discord](https://cloud-d9pv3tesy.vercel.app/0image.png)
+![What regional indicator characters look like in Discord](https://cdn.hackclub.com/rescue?url=https://cloud-d9pv3tesy.vercel.app/0image.png)
 
 This code creates a list of all the regional indicator characters we need. For example if we have 5 total answers, we'll need regional indicators A, B, C, D and E.
 ```rust

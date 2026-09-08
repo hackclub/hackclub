@@ -2,14 +2,14 @@
 name: 'Generador de frases'
 description: 'Construye un generador de frases aleatorias con ReactJS'
 author: '@faisalsayed10, @davidballezaa'
-img: 'https://cloud-kuvixvb93.vercel.app/0quotes-generator.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-kuvixvb93.vercel.app/0quotes-generator.png'
 ---
 
 # Generador de frases 
 
 En este taller, construiremos un generador de frases aleatorias usando una API en React. Al terminar, habrás aprendido cómo manejar APIs en React, al igual que conceptos interesantes como los Hooks de React.
 
-[![Generador de frases](https://cloud-eoezh7wof-hack-club-bot.vercel.app/0ej0.png)](https://ut9jvq.csb.app/)
+[![Generador de frases](https://cdn.hackclub.com/rescue?url=https://cloud-eoezh7wof-hack-club-bot.vercel.app/0ej0.png)](https://ut9jvq.csb.app/)
 
 Aquí está el [código final](https://codesandbox.io/s/generador-de-frases-final-ut9jvq).
 
@@ -29,7 +29,7 @@ Para comenzar, abre esta [plantilla de código](https://codesandbox.io/s/generad
 
 Echemos un vistazo al código inicial de nuestro proyecto.
 
-![Imagen de las carpetas en nuestro proyecto](https://cloud-9ne6wtuvp.vercel.app/0image.png)
+![Imagen de las carpetas en nuestro proyecto](https://cdn.hackclub.com/rescue?url=https://cloud-9ne6wtuvp.vercel.app/0image.png)
 
 Primero, hay 2 carpetas principales y un archivo `package.json`. Ignoremos el `package.json` por ahora y pongamos nuestro enfoque en las 2 carpetas: `public/` y `src/`.
 
@@ -79,17 +79,17 @@ Construimos una UI para nuestro proyecto y todo se explica por sí mismo. El `bu
 
 Así se debe ver la vista previa:
 
-![Pestaña de vista previa](https://cloud-1jlsaawts-hack-club-bot.vercel.app/0ej1.png)
+![Pestaña de vista previa](https://cdn.hackclub.com/rescue?url=https://cloud-1jlsaawts-hack-club-bot.vercel.app/0ej1.png)
 
 ### 3) API Call
 
 Básicamente, haremos una solicitud a una API que retorna un JSON con frases y sus autores. Luego guardaremos estos datos en estado usando el hook `useState` para que podamos re-renderizar nuestro componente.
 
-![Imagen de useState](https://cloud-90fxjk0al.vercel.app/0image.png)
+![Imagen de useState](https://cdn.hackclub.com/rescue?url=https://cloud-90fxjk0al.vercel.app/0image.png)
 
 La URL a la que haremos la solicitud es `https://type.fit/api/quotes`. Si abres este link en tu navegador, ¡verás un JSON lleno de frases!
 
-![Lo que se ve en el navegador si haces la solicitud](https://cloud-h7wzq13xb.vercel.app/0image.png)
+![Lo que se ve en el navegador si haces la solicitud](https://cdn.hackclub.com/rescue?url=https://cloud-h7wzq13xb.vercel.app/0image.png)
 
 Empecemos a trabajar.
 
@@ -113,7 +113,7 @@ Explicación: Creamos una variable `url` usando `const` para que el valor nunca 
 
 Ahora escribamos una función que haga la solicitud API y obtenga los datos de esa URL. Usaremos `funciones asíncronas` porque la solicitud nos retornará una promesa. También usaremos `await` dentro de la función.
 
-![Imagen de async await](https://cloud-b58j7jpbu.vercel.app/0image.png)
+![Imagen de async await](https://cdn.hackclub.com/rescue?url=https://cloud-b58j7jpbu.vercel.app/0image.png)
 
 El operador `await` se usa para esperar a que la `Promesa` se resuelva o se rechace. Solo puede ser usado dentro de una `función asíncrona`.
 
@@ -139,13 +139,13 @@ Explicación: Dentro de nuestra función `async`, agregamos un bloque `try` / `c
 
 El bloque `catch` simplemente imprimirá el error (si es que hay) en la consola.
 
-![ejemplo try catch](https://cloud-oxjmrq4w2.vercel.app/0image.png)
+![ejemplo try catch](https://cdn.hackclub.com/rescue?url=https://cloud-oxjmrq4w2.vercel.app/0image.png)
 
 Nuestra función `async` está completada y ya podemos usar los datos que obtenemos de la solicitud a la API.
 
 Si echamos un vistazo al valor guardado en nuestro estado, ¡notaremos que es un gran array que consiste de cientos de objetos que contienen frases! 
 
-![Imagen del estado que contiene cientos de frases](https://cloud-7drh3ecj9.vercel.app/0image.png)
+![Imagen del estado que contiene cientos de frases](https://cdn.hackclub.com/rescue?url=https://cloud-7drh3ecj9.vercel.app/0image.png)
 
 **Nota:** Puedes ver esto en las `React DevTools` de codeSandbox (a lado de la consola).
 
@@ -179,7 +179,7 @@ Esto nos retornará el objeto que se encuentra en el índice retornado por `rand
 
 Ahora solo un objeto aleatorio que contiene la frase y el autor será almacenado en nuestra variable de estado `quotes`.
 
-![Solo una frase se guarda en estado](https://cloud-7drh3ecj9.vercel.app/1image.png)
+![Solo una frase se guarda en estado](https://cdn.hackclub.com/rescue?url=https://cloud-7drh3ecj9.vercel.app/1image.png)
 
 <details><summary>Tu código hasta ahora se debería ver así:</summary>
 
@@ -219,7 +219,7 @@ export default function App() {
 
 Queremos obtener una frase aleatoria cada que cargue nuestro sitio web, que será lo siguiente que implementaremos. Lo podemos hacer fácilmente usando el hook `useEffect` dentro de nuestro componente, llamando nuestra función `getQuotes()` dentro de él y pasándole un array vacío de dependencias.
 
-![foto de useEffect](https://cloud-q749otmin.vercel.app/0image.png)
+![foto de useEffect](https://cdn.hackclub.com/rescue?url=https://cloud-q749otmin.vercel.app/0image.png)
 
 **Nota:** Asegúrate de importar `useEffect` de `react`.
 
@@ -310,7 +310,7 @@ export default function App() {
 </details>
 
 Así es como se ve nuestro proyecto:
-![Producto final](https://cloud-i1q4mn5yo.vercel.app/0final_preview.gif)
+![Producto final](https://cdn.hackclub.com/rescue?url=https://cloud-i1q4mn5yo.vercel.app/0final_preview.gif)
 
 ¡Acabamos! Aprendimos cómo manejar APIs en React y construimos un simple pero increíble generador de frases aleatorias.
 

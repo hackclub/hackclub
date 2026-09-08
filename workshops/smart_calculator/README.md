@@ -2,14 +2,14 @@
 name: 'Smart Calculator'
 description: 'Build a human-like calculator that responds to text prompts using Python'
 author: '@iamsid47'
-img: 'https://cloud-p6k9fe5b9.vercel.app/0smart-calc.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-p6k9fe5b9.vercel.app/0smart-calc.png'
 ---
 
 In this workshop, we are going to make a calculator which can add, multiply, divide and subtract two numbers. But the catch is that instead of just adding those two numbers, we input a line in which we ask the program to either add, subtract, multiply, divide.
 
 For example: *Hey calc, can you give me the lcm of 9 and 3* and it will provide you with the LCM (least common multiple) of those two numbers.
 
-![How it works](https://cloud-aqhjdvc7o.vercel.app/0how-calc-works.png)
+![How it works](https://cdn.hackclub.com/rescue?url=https://cloud-aqhjdvc7o.vercel.app/0how-calc-works.png)
 
 [Final Product and Code](https://repl.it/@iamsid47/calc#main.py)
 

@@ -2,7 +2,7 @@
 name: 'Jogo da Memória'
 description: 'Crie seu próprio jogo da memória utilizando JavaScript'
 author: '@giridhar7632, @vitorvavolizza'
-img: 'https://cloud-g7cpynxc4.vercel.app/0screenshot_2020-11-11_104712.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-g7cpynxc4.vercel.app/0screenshot_2020-11-11_104712.png'
 locales: 'pt-br'
 ---
 
@@ -26,7 +26,7 @@ O jogo da memória é um jogo de cartas simples em que você precisa combinar pa
 
 ## Pré-requisitos
 
-![pré-requisitos](https://cloud-h9glprsfs.vercel.app/0prerequisites.png)
+![pré-requisitos](https://cdn.hackclub.com/rescue?url=https://cloud-h9glprsfs.vercel.app/0prerequisites.png)
 Conhecimento básico de HTML5, CSS3 e JavaScript. Usaremos algumas funções embutidas do JavaScript. Além disso, o estilo será o mais simples possível.
 
 ## Configuração
@@ -35,7 +35,7 @@ O [Repl.it](https://repl.it) é um editor de código online, usaremos ele para e
 
 Entre no projeto inicial [aqui](https://repl.it/@hcbjcentro/memoria-inicial#index.html) e clique em Fork. Seu ambiente de desenvolvimento estará pronto em alguns segundos!
 
-![Repl](https://cloud-oyhes1lns.vercel.app/0memory-game-starter.png)
+![Repl](https://cdn.hackclub.com/rescue?url=https://cloud-oyhes1lns.vercel.app/0memory-game-starter.png)
 
 Ele contém um arquivo `index.html` vazio vinculado aos arquivos `style.css` e `script.js`.
 
@@ -105,51 +105,51 @@ document.addEventListener('DOMContentLoaded', () => {
   const arrayDeCartas = [
     {
       name: '1',
-      img: 'https://cloud-5ystxzer7.vercel.app/11.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/11.png'
     },
     {
       name: '2',
-      img: 'https://cloud-5ystxzer7.vercel.app/22.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/22.png'
     },
     {
       name: '3',
-      img: 'https://cloud-5ystxzer7.vercel.app/33.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/33.png'
     },
     {
       name: '4',
-      img: 'https://cloud-5ystxzer7.vercel.app/44.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/44.png'
     },
     {
       name: '5',
-      img: 'https://cloud-5ystxzer7.vercel.app/55.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/55.png'
     },
     {
       name: '6',
-      img: 'https://cloud-5ystxzer7.vercel.app/06.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/06.png'
     },
     {
       name: '1',
-      img: 'https://cloud-5ystxzer7.vercel.app/11.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/11.png'
     },
     {
       name: '2',
-      img: 'https://cloud-5ystxzer7.vercel.app/22.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/22.png'
     },
     {
       name: '3',
-      img: 'https://cloud-5ystxzer7.vercel.app/33.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/33.png'
     },
     {
       name: '4',
-      img: 'https://cloud-5ystxzer7.vercel.app/44.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/44.png'
     },
     {
       name: '5',
-      img: 'https://cloud-5ystxzer7.vercel.app/55.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/55.png'
     },
     {
       name: '6',
-      img: 'https://cloud-5ystxzer7.vercel.app/06.png'
+      img: 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/06.png'
     }
   ]
 
@@ -173,8 +173,8 @@ Agora temos que criar quatro constantes:
 ```javascript
 const tabuleiro = document.querySelector('.tabuleiro')
 const resultado = document.querySelector('#pontuacao')
-const placeholder = 'https://cloud-5ystxzer7.vercel.app/7placeholder.png'
-const branco = 'https://cloud-5ystxzer7.vercel.app/6blank.png'
+const placeholder = 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/7placeholder.png'
+const branco = 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/6blank.png'
 ```
 
 Agora crie uma função `criarTabuleiro()` e itere sobre os elementos do `arrayDeCartas` usando um loop `for` e adicione as cartas ao nosso tabuleiro.
@@ -225,8 +225,8 @@ A função que criamos, ficará assim:
 ```javascript
 const tabuleiro = document.querySelector('.tabuleiro')
 const resultado = document.querySelector('#pontuacao')
-const placeholder = 'https://cloud-5ystxzer7.vercel.app/7placeholder.png'
-const branco = 'https://cloud-5ystxzer7.vercel.app/6blank.png'
+const placeholder = 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/7placeholder.png'
+const branco = 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/6blank.png'
 
 // Cria tabuleiro do jogo - A 4° linha da função foi
 // comentada porque ainda não criamos a função viraCarta
@@ -324,8 +324,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const tabuleiro = document.querySelector('.tabuleiro')
   const resultado = document.querySelector('#pontuacao')
-  const placeholder = 'https://cloud-5ystxzer7.vercel.app/7placeholder.png'
-  const branco = 'https://cloud-5ystxzer7.vercel.app/6blank.png'
+  const placeholder = 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/7placeholder.png'
+  const branco = 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/6blank.png'
 
   var cartasClicadas = []
   var cartasClicadasId = []
@@ -364,7 +364,7 @@ Comente a instrução `if` na função `viraCarta` e verifique se as imagens est
 
 Criamos um tabuleiro de jogo que funciona!
 
-![Yeeess !!](https://cloud-bos4syje4.vercel.app/0woo__.gif)
+![Yeeess !!](https://cdn.hackclub.com/rescue?url=https://cloud-bos4syje4.vercel.app/0woo__.gif)
 
 Agora que temos as cartas viradas, vamos lidar com a lógica de correspondência.
 
@@ -452,8 +452,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const tabuleiro = document.querySelector('.tabuleiro')
   const resultado = document.querySelector('#pontuacao')
-  const placeholder = 'https://cloud-5ystxzer7.vercel.app/7placeholder.png'
-  const branco = 'https://cloud-5ystxzer7.vercel.app/6blank.png'
+  const placeholder = 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/7placeholder.png'
+  const branco = 'https://cdn.hackclub.com/rescue?url=https://cloud-5ystxzer7.vercel.app/6blank.png'
 
   // Cria tabuleiro do jogo
   function criarTabuleiro() {
@@ -522,7 +522,7 @@ arrayDeCartas.sort(() => 0.5 - Math.random())
 
 Ebaaaa! Terminamos nosso jogo da memória.
 
-![Hooray !!!](https://cloud-4ddhwjoi2.vercel.app/0hooray.gif)
+![Hooray !!!](https://cdn.hackclub.com/rescue?url=https://cloud-4ddhwjoi2.vercel.app/0hooray.gif)
 
 Você pode checar o código final [aqui](https://repl.it/@hcbjcentro/jogo-da-memoria-final#script.js).
 

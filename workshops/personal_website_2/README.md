@@ -12,7 +12,7 @@ I never realized how vastly I underestimated and took for granted the gift of 3D
 
 There is good news, though: running a great online club meeting is possible, and we're all figuring out how to do it together. One of the first key insights I had is that having some sort of visual aid accompany your online club meeting goes a very long way. A visual aid helps everyone feel more engaged with what's happening in your club meeting because it replaces some of the abyss that Zoom school drowns us in with something fun to look at.
 
-![Screenshot of the new personal website workshop](https://cloud-91i54thoh.vercel.app/screen_shot_2020-09-17_at_2.59.55_pm.png)
+![Screenshot of the new personal website workshop](https://cdn.hackclub.com/rescue?url=https://cloud-91i54thoh.vercel.app/screen_shot_2020-09-17_at_2.59.55_pm.png)
 
 That's why I rewrote the classic [Personal Website](https://workshops.hackclub.com/personal_website/) workshop in slide format. If you're looking for a compelling way to kick off your online Hack Club this year, this workshop has got your back.
 

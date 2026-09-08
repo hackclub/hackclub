@@ -2,12 +2,12 @@
 name: Robotic Emails
 description: Build a mass-emailer with easy templating in Python
 author: '@rohan-bansal'
-img: 'https://cloud-op4657yvx.vercel.app/2020-10-23_q2awr6zp88qe936y6cnb26t79w31nt38.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-op4657yvx.vercel.app/2020-10-23_q2awr6zp88qe936y6cnb26t79w31nt38.png'
 ---
 
 # Robotic Emails
 
-![Robot holding stack of emails illustration](https://cloud-l7sy31aj3.vercel.app/2020-10-13_jrpmhd91qwuhd36zp7czcpnpt6txy09v.png)
+![Robot holding stack of emails illustration](https://cdn.hackclub.com/rescue?url=https://cloud-l7sy31aj3.vercel.app/2020-10-13_jrpmhd91qwuhd36zp7czcpnpt6txy09v.png)
 
 ## Overview
 
@@ -32,7 +32,7 @@ _Demo: [Live](https://repl.it/@apexblade/RoboticEmails#main.py)_
 
 Head over to [this link](https://myaccount.google.com/u/0/lesssecureapps?hl=en) and flick the "Allow less secure apps" lever to the on position. Google strictly allows only its own or verified software to interface with the creation/sending of emails; since you're creating a Python app, it's necessary to tell Google that it's acceptable.
 
-![less secure app access](https://cloud-f9wuongol.vercel.app/app_access.png)
+![less secure app access](https://cdn.hackclub.com/rescue?url=https://cloud-f9wuongol.vercel.app/app_access.png)
 
 You will also need to complete [this captcha](https://accounts.google.com/b/0/DisplayUnlockCaptcha) to enable access for the next application that uses your credentials (this one).
 
@@ -52,7 +52,7 @@ Head over to [repl.it/languages/python3](https://repl.it/languages/python3) and 
 - `message.txt`
 - `.env`
 
-![uploadfiles](https://cloud-e11rop4sa.vercel.app/0uploadfiles.gif)
+![uploadfiles](https://cdn.hackclub.com/rescue?url=https://cloud-e11rop4sa.vercel.app/0uploadfiles.gif)
 
 The `contacts.txt` file will contain emails and names that will be substituted into the message body later (can be customized). Feel free to add an email and a name to it, but make sure it's formatted exactly as below:
 
@@ -186,7 +186,7 @@ Here's what the code should look like so far:
 
 Great! You're basically 1/3 of the way there!
 
-![Woo-hoo GIF](https://cloud-62jdtr82i.vercel.app/tenor.gif)
+![Woo-hoo GIF](https://cdn.hackclub.com/rescue?url=https://cloud-62jdtr82i.vercel.app/tenor.gif)
 
 Add another function called `read_message` to the `main.py` file at the bottom with a `with open` statement as explained in the previous section:
 
@@ -282,13 +282,13 @@ At this point, go ahead and **run the program**. If you're having problems, go c
 
 The result should be similar to this:
 
-![Screenshot of terminal output](https://cloud-a1v5o0pxe.vercel.app/code_result.png)
+![Screenshot of terminal output](https://cdn.hackclub.com/rescue?url=https://cloud-a1v5o0pxe.vercel.app/code_result.png)
 
 ---
 
 ## Further Hacking
 
-![Congratulations GIF](https://cloud-mlx5oz5hm.vercel.app/tenor.gif)
+![Congratulations GIF](https://cdn.hackclub.com/rescue?url=https://cloud-mlx5oz5hm.vercel.app/tenor.gif)
 
 There are many things that can be changed in this program. Go back and see what you can modify to make it your own! Because of the modularity of the project, to add another substitution, it's as simple as adding a `{1}` or a `{2}` in `message.txt` and adding more commas and arguments in `contacts.txt`. Try to think of ways to make the project even better, and please share your creations with me or others in the Hack Club community!
 

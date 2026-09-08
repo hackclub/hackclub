@@ -20,7 +20,7 @@ Benjamin decided to forgo Leo's custom code editor and instead run the exercise 
 There were some issues at first with getting the canvas template working, HTML syntax errors, and their school computers inexplicably disabling the browser's developer tools, but otherwise they were able to essentially complete the exercise as we envisioned it, co-creating this result by the end: 
 
 
-![final output](https://cloud-f3pr5mtch-hack-club-bot.vercel.app/0bellevue_ball.gif)
+![final output](https://cdn.hackclub.com/rescue?url=https://cloud-f3pr5mtch-hack-club-bot.vercel.app/0bellevue_ball.gif)
 
 Their final code is viewable at this link: https://hackclub.github.io/live-editor/?file=recUdsHqfIeWEJMBm
 

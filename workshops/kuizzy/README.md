@@ -2,7 +2,7 @@
 name: Kahoot Clone — Kuizzy
 description: Make a Kahoot clone with SweetAlert, WebSockets, and Node.js
 author: '@khrj'
-img: https://cloud-b0r4v3fgu.vercel.app/0screenshot_2020-12-31_at_3.22.47_pm.png
+img: https://cdn.hackclub.com/rescue?url=https://cloud-b0r4v3fgu.vercel.app/0screenshot_2020-12-31_at_3.22.47_pm.png
 ---
 
 Love [Kahoot](https://kahoot.com/)? I do! Today we're making a Kahoot clone—Kuizzy—using :
@@ -31,11 +31,11 @@ Follow these steps:
 * Open https://repl.it/
 * Click "Sign up"
 
-![Arrow to sign up button on top right](https://cloud-pq5lbfiab.vercel.app/9signup-step1.png)
+![Arrow to sign up button on top right](https://cdn.hackclub.com/rescue?url=https://cloud-pq5lbfiab.vercel.app/9signup-step1.png)
 
 * Fill in some details
 
-![Arrow to "Username", "Email" and "Password" fields in center of screen](https://cloud-91xu3gqm8.vercel.app/0signup-step2.png)
+![Arrow to "Username", "Email" and "Password" fields in center of screen](https://cdn.hackclub.com/rescue?url=https://cloud-91xu3gqm8.vercel.app/0signup-step2.png)
 
 * You now have a Repl.it account!
 
@@ -43,7 +43,7 @@ Follow these steps:
 
 <a href="https://www.youtube.com/watch?v=7alknyXs3E8">
 
-<img src="https://cloud-d6nt45yqr.vercel.app/0replitbasics-workaround-no-i-wont-use-gifs-they-suck-if-youre-reading-this-you-know-the-answer-to-the-universe-that-is-ban-gifs.png" alt="Repl.it basics"></img>
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-d6nt45yqr.vercel.app/0replitbasics-workaround-no-i-wont-use-gifs-they-suck-if-youre-reading-this-you-know-the-answer-to-the-universe-that-is-ban-gifs.png" alt="Repl.it basics"></img>
 
 </a>
 
@@ -66,7 +66,7 @@ If you take a look at the starter code, you'll see the following:
 
 ## Part 3: Code
 
-![Cat frantically hitting keyboard](https://cloud-c5sjja2wx.vercel.app/0giphy.gif)
+![Cat frantically hitting keyboard](https://cdn.hackclub.com/rescue?url=https://cloud-c5sjja2wx.vercel.app/0giphy.gif)
 
 In your Server JavaScript file (from the previous section), enter:
 
@@ -641,7 +641,7 @@ socket.on("gameover", async (leaderboard) => {
 
 You should have a fully functional Kahoot clone, Kuizzy, ready!
 
-![Man celebrating](https://cloud-ie2v1iz2x.vercel.app/03176028b92c680e1b07a159db36cc3a8.gif)
+![Man celebrating](https://cdn.hackclub.com/rescue?url=https://cloud-ie2v1iz2x.vercel.app/03176028b92c680e1b07a159db36cc3a8.gif)
 
 ## What's next?
 

@@ -98,7 +98,7 @@ The goal is that every single person in the school knows what Hack Club is, even
 
 Make sure these posters are colorful, clear, but concise. Good graphics/pictures will make the design more noticeable and memorable! You can make your own posters on a great website called Canva.
 
-![](https://cloud-g8xtbr32u.vercel.app/0untitled.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-g8xtbr32u.vercel.app/0untitled.png)
 
 ### Swag
 

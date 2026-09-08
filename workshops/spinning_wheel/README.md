@@ -2,14 +2,14 @@
 name: 'Spin The Wheel'
 description: 'Build a random picker spinning wheel using HTML, CSS, and JavaScript'
 author: '@HariOm987'
-img: https://cloud-gvkfrv1qw.vercel.app/0image.png
+img: https://cdn.hackclub.com/rescue?url=https://cloud-gvkfrv1qw.vercel.app/0image.png
 ---
 
 In this workshop, you're going to make a colorful spinning wheel with your own custom content, in 20 minutes!
 
 Here's the [live demo](https://movie-selector.hariom04.repl.co/) and the [final code](https://repl.it/@hariom04/movie-selector#index.html).
 
-![Final Output of our Workshop](https://cloud-4945tg5q1.vercel.app/0final.png)
+![Final Output of our Workshop](https://cdn.hackclub.com/rescue?url=https://cloud-4945tg5q1.vercel.app/0final.png)
 
 ^^^ If you will follow this workshop strictly then you will make something like the above picture, but feel free to add up your imaginations with patterns and colors and you will end up with something better than this. So let's begin. 😁✨
 
@@ -23,7 +23,7 @@ In this workshop, we'll be using repl.it, a free, online code editor.
 
 You can get started with it by going to [repl.it/languages/html](https://repl.it/languages/html). You will directly land on the page where we can write our code.
 
-![Default Code](https://cloud-2un6g11k6.vercel.app/0default-file.png)
+![Default Code](https://cdn.hackclub.com/rescue?url=https://cloud-2un6g11k6.vercel.app/0default-file.png)
 
 ^ Right now your page will look like this.
 
@@ -41,7 +41,7 @@ HTML gives the structure to our webpage. Here in the first line, we have `<!DOCT
   
 Make sure to remove line 5 (`<meta name="viewport" content="width=device-width">`) which may cause some weird responsiveness issues for our workshop.
   
-![Removing the fifth line](https://cloud-2un6g11k6.vercel.app/2html-1.gif)
+![Removing the fifth line](https://cdn.hackclub.com/rescue?url=https://cloud-2un6g11k6.vercel.app/2html-1.gif)
   
 ## 2)	The CSS file
 This is the `style.css` file in your directory. This defines the looks of our website. Whatever styles we give to our website is written in this file. If you take a look in the `<head>` tag in your HTML file, you will find a line of code (`<link href="style.css" rel="stylesheet" type="text/css" />`). This means that your HTML file is properly linked to your CSS file!
@@ -183,11 +183,11 @@ body{
 ### Explanation: 
 In line number `2`, we have given the size of the container (triangles of our wheel). Then in line number `3 & 4`, padding & margin between them is marked as `0` separately as we don’t require space between the triangles. In line number `4`, outline is marked as `none` as we don’t require border when we click on the `spin` button.
 
-![spin button with border](https://cloud-migxi228s.vercel.app/0spin1.png)
+![spin button with border](https://cdn.hackclub.com/rescue?url=https://cloud-migxi228s.vercel.app/0spin1.png)
 
 ^^^ If we don’t type `outline: none;` then after you click, your button will have a outline box like this.
 
-![spin button without border](https://cloud-migxi228s.vercel.app/1spin2.png)
+![spin button without border](https://cdn.hackclub.com/rescue?url=https://cloud-migxi228s.vercel.app/1spin2.png)
 
 ^^^ Whereas if we give `outline: none;` then our button will look like this (without any border) after clicking.
 
@@ -206,7 +206,7 @@ Learn more about [viewport-heights](https://www.sitepoint.com/css-viewport-units
 In line `15` and `16` (background section), you can use any color’s hex code or gradient. You can make your gradient on this [website](https://cssgradient.io/).
 
 For making your gradient, simply navigate to that website and design your gradient by dragging the markers. When you are satisfied with your creation, then copy the code given below and paste it in the background section. By this, your custom background will be applied.
-![designing gradient for background](https://cloud-gonguupqs.vercel.app/0ezgif.com-gif-maker.gif)
+![designing gradient for background](https://cdn.hackclub.com/rescue?url=https://cloud-gonguupqs.vercel.app/0ezgif.com-gif-maker.gif)
 
 Now add the following code below the body block.
 
@@ -285,7 +285,7 @@ Here we have made the triangles that are present in the circle. And for making t
 
 Just like that, we have replicated the `span1` three more times then changed the name as `span2`, `span3`, and `span4` respectively. We have also changed the value of color as we want different background colors and the polygon path is also changed as we are looking for different orientations each of the time.
 
-![Our webpage till now will look litk this](https://cloud-pop1a9d8c.vercel.app/0webpage-till-now.png)
+![Our webpage till now will look litk this](https://cdn.hackclub.com/rescue?url=https://cloud-pop1a9d8c.vercel.app/0webpage-till-now.png)
 
 ^^^ Right now our web page will be looking like this. Here triangle with **yellow** color is formed by `span1` and just like that **green**, **pink** and **orange** are formed by `span2`, `span3`, and `span4` respectively. 
 
@@ -329,7 +329,7 @@ Here in the first 4 blocks, we have rotated the positions of our text with the r
 
 Overall now after this, we have created our half structure of the wheel.
 
-![Output of our code until now](https://cloud-fdorf46uu.vercel.app/0till-now.png)
+![Output of our code until now](https://cdn.hackclub.com/rescue?url=https://cloud-fdorf46uu.vercel.app/0till-now.png)
 
 ^^^ Right now your webpage will look something like this—but the `spin` button looks off.
 
@@ -375,7 +375,7 @@ In the second block of our code that is `.spin:active` , we have decreased the s
 In the third block, we have `.mainbox` selector (we used this earlier for the left-pointing arrow), so the properties which will be edited in this will affect that arrow. Here we have applied the animation to the arrow by which it will move forward and backward every 0.7 seconds till the webpage is opened and the wheel is stopped. Well, right now it will not move.
 
 Right now our webpage will look something like this 👇
-![Output of our code until now where spin button is not working](https://cloud-eybffxezw.vercel.app/0ezgif-2-520a3b0bd382.gif)
+![Output of our code until now where spin button is not working](https://cdn.hackclub.com/rescue?url=https://cloud-eybffxezw.vercel.app/0ezgif-2-520a3b0bd382.gif)
 
 We are all done with our CSS part. But still, it is not functional as we have not added any JavaScript part yet.
 
@@ -389,7 +389,7 @@ Now with JavaScript, we will build the functionality of the wheel.
 
 Jump to the `script.js` file and let's begin to make our wheel functional.
 
-![Simple steps to make JavaSrcipt part simple and easy](https://cloud-1g9yuvs9a.vercel.app/0simple_understanding.gif) 
+![Simple steps to make JavaSrcipt part simple and easy](https://cdn.hackclub.com/rescue?url=https://cloud-1g9yuvs9a.vercel.app/0simple_understanding.gif) 
  
 First of all, we will write:
     
@@ -466,7 +466,7 @@ Finally, we are done with our coding part in JavaScript.
 
 ## Congratulations
 
-![Congratulation for completing](https://cloud-3pw0bkofz.vercel.app/0finally_we_are_done.gif)
+![Congratulation for completing](https://cdn.hackclub.com/rescue?url=https://cloud-3pw0bkofz.vercel.app/0finally_we_are_done.gif)
 
 We did it! Now our wheel is fully functional.
 

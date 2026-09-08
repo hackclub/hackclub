@@ -2,7 +2,7 @@
 name: 'Jugando con Muse'
 description: 'Componer música con código'
 author: '@leomcelroy'
-img: "https://cloud-9ltsqwncl-hack-club-bot.vercel.app/0demo.png"
+img: "https://cdn.hackclub.com/rescue?url=https://cloud-9ltsqwncl-hack-club-bot.vercel.app/0demo.png"
 ---
 
 # Muse
@@ -25,7 +25,7 @@ Para más documentación, consulta el [repositorio de Github](https://github.com
 
 [Inicie el editor aquí](https://muse.hackclub.dev/) o haciendo clic en la imagen de abajo.
 
-[![Editor Muse](https://cloud-9ltsqwncl-hack-club-bot.vercel.app/0demo.png)](https://muse.hackclub.dev/)
+[![Editor Muse](https://cdn.hackclub.com/rescue?url=https://cloud-9ltsqwncl-hack-club-bot.vercel.app/0demo.png)](https://muse.hackclub.dev/)
 
 Aquí hay algunas piezas un poco más complicadas que le darán una idea de lo que puede hacer en Muse. 
 
@@ -62,6 +62,6 @@ Muse utiliza algunas técnicas y tecnologías realmente interesantes. Al profund
 
 Nos encantaría escuchar lo que has hecho en Muse. Para compartir tu canción con la comunidad del Hack Club únete al canal `#ship` en el Slack de Hack Club y envía el enlace generado pulsando el botón de compartir.
 
-![Botón de compartir](https://cloud-9ltsqwncl-hack-club-bot.vercel.app/1share.png)
+![Botón de compartir](https://cdn.hackclub.com/rescue?url=https://cloud-9ltsqwncl-hack-club-bot.vercel.app/1share.png)
 
 También puede introducir el enlace en el cuadro de texto para compartir que se muestra a continuación.

@@ -2,12 +2,12 @@
 name: 'Snake Game'
 description: 'The classic snake game recreated in Python'
 author: '@kyryloren'
-img: 'https://cloud-i254770eq.vercel.app/0snake.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-i254770eq.vercel.app/0snake.png'
 ---
 
 Snake is a game that most of us have played on those old Nokia phones. It's also a classic coding challenge for learning a new programming language. As complicated as it may seem at first, it's rather easy to code and takes less than 50 lines. Let's try to recreate this game in the terminal.
 
-[![Snake game and demo in repl.it](https://cloud-h8v6zt88z.vercel.app/0snakereplit.gif)](https://repl.it/@kyryloorlov/Snake-Game)
+[![Snake game and demo in repl.it](https://cdn.hackclub.com/rescue?url=https://cloud-h8v6zt88z.vercel.app/0snakereplit.gif)](https://repl.it/@kyryloorlov/Snake-Game)
 
 You can check out the source code and preview [here](https://repl.it/@kyryloorlov/Snake-Game).
 
@@ -52,7 +52,7 @@ w.timeout(100)
 
 Great! We have defined the screen dimensions and set the cursor to be invisible in the top left corner. Let's move on to the snake logic. We'll be using these variables and definitions when creating the rest of the program.
 
-![Happy snake](https://cloud-5uzl1njgm.vercel.app/0snek.gif)
+![Happy snake](https://cdn.hackclub.com/rescue?url=https://cloud-5uzl1njgm.vercel.app/0snek.gif)
 
 ## Initialize the snake and food
 Skip a line from the above code and let's define the snake, its position and food.
@@ -92,7 +92,7 @@ Let's add the initial direction of the snake. We'll set it to go right.
 key = curses.KEY_RIGHT
 ```
 
-![Dancing](https://cloud-qco33gkwh.vercel.app/0dancing.gif)
+![Dancing](https://cdn.hackclub.com/rescue?url=https://cloud-qco33gkwh.vercel.app/0dancing.gif)
 
 ## Handle movement and game logic
 Now, we're going to handle the game logic. We want the following code to run continuously, so we're going to put it inside an infinite loop:
@@ -167,7 +167,7 @@ while True:
 The code above is how we actually control the snake. We start by taking the old head of the snake and then checking for what key is being pressed. If key down is pressed, we take the snake's Y position and add 1 to it. If key up is pressed, we take the snake's Y position and subtract 1. If key left is pressed, we take the snake's X position and subtract 1. If key right is pressed, we take the snake's X position and add 1.
 
 After all that, we get something like this:
-![Snake food](https://cloud-78ocq7ahv.vercel.app/0screen_shot_2020-12-22_at_9.10.17_am.png)
+![Snake food](https://cdn.hackclub.com/rescue?url=https://cloud-78ocq7ahv.vercel.app/0screen_shot_2020-12-22_at_9.10.17_am.png)
 
 ## Handle food logic
 Now let's the handle the snake running into the food. The following code should go into the `while True` statement, below the code above.
@@ -206,7 +206,7 @@ Finally, in any case, we're adding the head of the snake to the screen.
 
 ## The final product:
 
-![The snake food near the the snake body](https://cloud-1l5hoiqcf.vercel.app/0image3.png)
+![The snake food near the the snake body](https://cdn.hackclub.com/rescue?url=https://cloud-1l5hoiqcf.vercel.app/0image3.png)
 
 **We are done!** This is what your code should now look like:
 
@@ -276,7 +276,7 @@ while True:
 
 You should now be able to play Snake in the terminal! You can run the code at https://repl.it/@kyryloorlov/Snake-Game.
 
-![Hacking](https://cloud-adi3v03or.vercel.app/0hacking.gif)
+![Hacking](https://cdn.hackclub.com/rescue?url=https://cloud-adi3v03or.vercel.app/0hacking.gif)
 
 # Hacking
 Now you have control over this code. Go ahead and tinker with it to see if you can find ways to make it more fun. Here are some ideas:

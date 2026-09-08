@@ -2,12 +2,12 @@
 name: 'Minecraft Mod'
 description: 'Make your first Minecraft mod using Forge and IntelliJ IDEA'
 author: '@KaiDevrim'
-img: 'https://cloud-m4x2nuz66.vercel.app/image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-m4x2nuz66.vercel.app/image.png'
 ---  
 
 Learning to mod Minecraft is a very simple process and can help anyone learn programming. Minecraft uses the Java language which albeit old, is still very popular and learning it is still useful. This Minecraft modding workshop will go from setting up IntelliJ IDEA to making an item, creative inventory tab, and a block. The result will look something like this:  
 
-![The end result with an inventory tab and a few items](https://cloud-m4x2nuz66.vercel.app/image.png) 
+![The end result with an inventory tab and a few items](https://cdn.hackclub.com/rescue?url=https://cloud-m4x2nuz66.vercel.app/image.png) 
 
 Here is the [final code](https://github.com/MatthewStanciu/MinecraftModWorkshop/tree/master). This workshop should take about an hour and a half to complete.
 
@@ -25,7 +25,7 @@ Next, download and unzip the starter project from [hack.af/modworkshopstarter](h
 
 You should be greeted with something like this:
 
-![IntelliJ starter project](https://cloud-9cq9hdss4.vercel.app/0screen_shot_2021-02-04_at_12.47.38_pm.png)
+![IntelliJ starter project](https://cdn.hackclub.com/rescue?url=https://cloud-9cq9hdss4.vercel.app/0screen_shot_2021-02-04_at_12.47.38_pm.png)
 
 ### Walking through the starter project
 
@@ -43,13 +43,13 @@ If you're going to make mods in the future, you'll have to be able to install Fo
 
 Download the [Forge MDK for 1.15.2](http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.15.2.html). There will be a few download links—make sure you click on the one that says "Mdk".
 
-![Download the MDK](https://cloud-gwdhe1huj.vercel.app/image.png)
+![Download the MDK](https://cdn.hackclub.com/rescue?url=https://cloud-gwdhe1huj.vercel.app/image.png)
 
 When you click on "Mdk", you will be taken to a very sketchy-looking page with a bunch of ads. Your computer will be fine, but DO NOT click on anything on the page! Wait 5 seconds, then a button that says "Skip" will appear at the top right. Click the "Skip" button to download the Forge MDK. Sadly, navigating spam and adware is normal in the Minecraft world. It's not a big deal, but it's something you should be aware of and navigate through carefully if you choose to continue mod or plugin development.
 
 Once the Forge MDK is installed, start up IDEA. Once it's started up, click on `Open or Import`. Find the Forge MDK folder (usually called `forge` or `forge-1`) and select the file inside it called `build.gradle`. When prompted, choose `Open as Project`.
 
-![Open As Project](https://cloud-1ijkxbdqk.vercel.app/image.png)
+![Open As Project](https://cdn.hackclub.com/rescue?url=https://cloud-1ijkxbdqk.vercel.app/image.png)
 
 ---
 
@@ -57,7 +57,7 @@ Once the Forge MDK is installed, start up IDEA. Once it's started up, click on `
 
 Next, if you expand all the folders in under the `main` folder on the left sidebar, you'll notice a _bunch_ of nested folders with some files inside them. This is the common folder structure for a Minecraft mod. If you make your own mod in the future, you'll have to make all of these folders and files yourself.
 
-![folder structure](https://cloud-gt6de7jsm.vercel.app/0screen_shot_2021-02-04_at_12.49.00_pm.png)
+![folder structure](https://cdn.hackclub.com/rescue?url=https://cloud-gt6de7jsm.vercel.app/0screen_shot_2021-02-04_at_12.49.00_pm.png)
 
 ### The setup steps that we do need to do
 
@@ -66,12 +66,12 @@ We do need to do two small setup things before we can begin coding our mod.
 First:
 
 1. Click on the tab called `Gradle` at the top right corner. This will look like a super thin tab, and the `Gradle` label will be 90 degrees sideways. You will see a section pop out of the right of IntelliJ. <br>
-![Click on Gradle on the side](https://cloud-beqpbpts3.vercel.app/image.png) <br>
+![Click on Gradle on the side](https://cdn.hackclub.com/rescue?url=https://cloud-beqpbpts3.vercel.app/image.png) <br>
 2. Open the folder called `Tasks`
 3. Open the folder called `fg_runs`
 4. Double-click on `genIntelliJRuns` <br>
 
-![Gradle Project -> Tasks -> fg_runs -> genIntelliJRuns](https://cloud-hfo336o3s.vercel.app/image.png) <br>
+![Gradle Project -> Tasks -> fg_runs -> genIntelliJRuns](https://cdn.hackclub.com/rescue?url=https://cloud-hfo336o3s.vercel.app/image.png) <br>
 
 This may take a while.
 
@@ -83,7 +83,7 @@ Once it has been built, it should say `BUILD SUCCESSFUL` in the Build tab at the
 
 Next, we need to rename some of the directories in the project. Take a look at your left sidebar. See how these are two directories that say `yourusername` and `modname`?
 
-![directory list highlighting the ones we need to change](https://cloud-jnth07j1l.vercel.app/0screen_shot_2021-02-04_at_10.16.51_am.png)
+![directory list highlighting the ones we need to change](https://cdn.hackclub.com/rescue?url=https://cloud-jnth07j1l.vercel.app/0screen_shot_2021-02-04_at_10.16.51_am.png)
 
 The one at the top is called a package. Minecraft mods and plugins follow this package structure. Packages follow the format `com.yourusername.modname`. In IntelliJ, they're separated by periods, but these periods are actually their own nested directories.
 
@@ -238,9 +238,9 @@ Find the line that starts with `modId`. Replace `ModWorkshop` with `playerevolut
 
 In order to build and run Minecraft to test the mod, click on the build menu at the top and choose `runClient`. Then press `Shift-F10` or the triangle play button. This may take a little while.
 
-![The build menu](https://cloud-1w8zg60d9.vercel.app/0screen_shot_2021-02-03_at_6.35.14_pm.png)
+![The build menu](https://cdn.hackclub.com/rescue?url=https://cloud-1w8zg60d9.vercel.app/0screen_shot_2021-02-03_at_6.35.14_pm.png)
 
-![Client starting](https://cloud-d13bgaf5x.vercel.app/0screen_shot_2021-02-04_at_1.02.13_pm.png)
+![Client starting](https://cdn.hackclub.com/rescue?url=https://cloud-d13bgaf5x.vercel.app/0screen_shot_2021-02-04_at_1.02.13_pm.png)
 
 ## Part 2: Setting up the Registry!
 
@@ -250,7 +250,7 @@ A Registry Handler is what Forge [describes as](https://mcforge.readthedocs.io/e
 
 To create one, find the package called `util` in `src/main/java/com/name/modname/`. Right-click on it and create a new class called `RegistryHandler`.
 
-![creating the registryhandler class](https://cloud-1eh2dnafi.vercel.app/0image.png)
+![creating the registryhandler class](https://cdn.hackclub.com/rescue?url=https://cloud-1eh2dnafi.vercel.app/0image.png)
 
 Inside the `RegistryHandler` class, add:
 
@@ -362,7 +362,7 @@ Once, you're inside the `ItemBase` class:
   ```
 - Import `Item` from `net.minecraft.item.Item`.
 - Once you do this, you will see an error. Click on the red light bulb (you may have to hover near the left of the line to see it). Then click "Create constructor matching super". <br>
-  ![create constructor matching super](https://cloud-5kx4ewe3h.vercel.app/0screen_shot_2021-02-03_at_7.05.57_pm.png)
+  ![create constructor matching super](https://cdn.hackclub.com/rescue?url=https://cloud-5kx4ewe3h.vercel.app/0screen_shot_2021-02-03_at_7.05.57_pm.png)
 - IntelliJ should automatically add a few new lines of code:
   ```java
   public class ItemBase extends Item {
@@ -408,7 +408,7 @@ public static final ItemGroup TAB = new ItemGroup("playerEvolutions") {
 };
 ```
 
-![screenshot showing where to put this function](https://cloud-2scubjums.vercel.app/0image.png)
+![screenshot showing where to put this function](https://cdn.hackclub.com/rescue?url=https://cloud-2scubjums.vercel.app/0image.png)
 
 Import anything you need to import.
 
@@ -441,7 +441,7 @@ All this is doing is telling Forge that the item only has one layer.
 
 Now run Minecraft using Shift-F10 or the triangle play button and see your item in Minecraft!
 
-![test minecraft with untextured item](https://cloud-9sg6t7g02.vercel.app/0screen_shot_2021-02-04_at_1.22.45_pm.png)
+![test minecraft with untextured item](https://cdn.hackclub.com/rescue?url=https://cloud-9sg6t7g02.vercel.app/0screen_shot_2021-02-04_at_1.22.45_pm.png)
 
 ## Part 5: Making your first block!
 
@@ -567,12 +567,12 @@ That's it! If you start the test Minecraft client, you should see your mod in ac
 The fun doesn't stop here. Here are a few examples & demos of other things you can do:
 
 - [Ultron Block](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-1)
-  ![ultron block](https://cloud-kl251xoy7.vercel.app/0image.png)
+  ![ultron block](https://cdn.hackclub.com/rescue?url=https://cloud-kl251xoy7.vercel.app/0image.png)
 
 - [Rickroll Item](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-2) <br>
-  ![rickroll item](https://cloud-cf16uvc03.vercel.app/0image.png)
+  ![rickroll item](https://cdn.hackclub.com/rescue?url=https://cloud-cf16uvc03.vercel.app/0image.png)
 
 - [Deathnote](https://github.com/devrimtech/PlayerEvolutions/tree/hackable-demo-3)
-  ![deathnote](https://cloud-rhvv52dfm.vercel.app/0image.png)
+  ![deathnote](https://cdn.hackclub.com/rescue?url=https://cloud-rhvv52dfm.vercel.app/0image.png)
 
 Happy hacking!

@@ -2,11 +2,11 @@
 name: 'Python Data Viz'
 description: 'Use python to create basic graphs and visualizations with real data'
 author: '@maddieWillett-boop'
-img: 'https://cloud-buf4qdryr.vercel.app/0image_from_ios.jpg'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-buf4qdryr.vercel.app/0image_from_ios.jpg'
 locales: 'pt-br'
 ---
 
-![Stonks](https://cloud-byn8r1k9a.vercel.app/0image_from_ios.jpg)
+![Stonks](https://cdn.hackclub.com/rescue?url=https://cloud-byn8r1k9a.vercel.app/0image_from_ios.jpg)
 
 You after you make your first data visualization^
 
@@ -14,7 +14,7 @@ In this workshop you will use python to create basic graphs and visualizations w
 
 Here is an example of something you will have coded after the workshop:
 
-**![Example of Workshop Product](https://cloud-4bemu7q0x.vercel.app/0image_from_ios.jpg)**
+**![Example of Workshop Product](https://cdn.hackclub.com/rescue?url=https://cloud-4bemu7q0x.vercel.app/0image_from_ios.jpg)**
 
 Source Code of Example: 
 ``` python
@@ -37,21 +37,21 @@ ax.legend() #adds a key of the graph
 
 Get started by going to [Jupyter](https://jupyter.org/try). When you get to the website you will see something like this...
 
-**![Showing Homepage of Jupyter](https://cloud-55ad5w43q.vercel.app/0image_from_ios.jpg)**
+**![Showing Homepage of Jupyter](https://cdn.hackclub.com/rescue?url=https://cloud-55ad5w43q.vercel.app/0image_from_ios.jpg)**
 
 Click the middle one (Try JupyterLab)!
 
 Jupyter will spin up a coding environment right in your browser! After a few seconds, you should see this:
 
-![A Jupyter notebook](https://cloud-4jz1jljdx.vercel.app/0image_from_ios.jpg)
+![A Jupyter notebook](https://cdn.hackclub.com/rescue?url=https://cloud-4jz1jljdx.vercel.app/0image_from_ios.jpg)
 
 Click the `+` button at the top left, then select Notebook –> Python 3.
 
-![Screenshot of a Jupyter notebook showing what steps to take](https://cloud-hywsca56c.vercel.app/0image_from_ios.jpg)
+![Screenshot of a Jupyter notebook showing what steps to take](https://cdn.hackclub.com/rescue?url=https://cloud-hywsca56c.vercel.app/0image_from_ios.jpg)
 
 You should see a new untitled Juypter notebook.
 
-![An untitled Juypter notebook](https://cloud-gxd1qmxly.vercel.app/0image_from_ios.jpg)
+![An untitled Juypter notebook](https://cdn.hackclub.com/rescue?url=https://cloud-gxd1qmxly.vercel.app/0image_from_ios.jpg)
 
 **Never used Jupyter? [Here's a quick introduction/tutorial to Jupyter](https://www.wevideo.com/view/1849208046)!** 
 
@@ -59,12 +59,12 @@ You should see a new untitled Juypter notebook.
 
 First, we need to upload the [libraries](https://docs.python.org/3/library/) we will be using for this project. Every programming language has different “classes” that you need to use to access specific variables. The same thing occurs in Python, but instead they are known as libraries.
 
-![Princess Belle in her wonderful library](https://cloud-pawks5rnb.vercel.app/0file_from_ios.gif)
+![Princess Belle in her wonderful library](https://cdn.hackclub.com/rescue?url=https://cloud-pawks5rnb.vercel.app/0file_from_ios.gif)
 
 In this workshop we will be using [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/), and [matplotlib](https://matplotlib.org/).
 
 **Pandas**: This is not the furry animal you are thinking of, pandas is a efficient and easy way to use open source data analysis.
-![gif of cute pandas](https://cloud-o3apzt5vk.vercel.app/0file_from_ios.gif)
+![gif of cute pandas](https://cdn.hackclub.com/rescue?url=https://cloud-o3apzt5vk.vercel.app/0file_from_ios.gif)
 
 **Matplotlib**: This is a plotting library using a numerical mathematics extension Numpy.
 
@@ -108,9 +108,9 @@ Click the play button near the top of your window.
 
 **You should get something that looks like this...**
 
-**![basic linear graph trending upwards](https://cloud-49wgws6lb.vercel.app/0image_from_ios.jpg)**
+**![basic linear graph trending upwards](https://cdn.hackclub.com/rescue?url=https://cloud-49wgws6lb.vercel.app/0image_from_ios.jpg)**
 
-![Jupyter notebook with code and example](https://cloud-pm56h5avl.vercel.app/0image_from_ios.jpg)
+![Jupyter notebook with code and example](https://cdn.hackclub.com/rescue?url=https://cloud-pm56h5avl.vercel.app/0image_from_ios.jpg)
 
 
 # Simple Bar Graph!
@@ -136,9 +136,9 @@ The code above names each of the bars (defines x and y lines), creates random va
 
 When you click the play button again, you should see something like this:
 
-**![bar graph](https://cloud-lb7wueqlz.vercel.app/0image_from_ios.jpg)**
+**![bar graph](https://cdn.hackclub.com/rescue?url=https://cloud-lb7wueqlz.vercel.app/0image_from_ios.jpg)**
 
-![jupyter notebook with code and bar graph](https://cloud-qyo2g39vl.vercel.app/0image_from_ios.jpg)
+![jupyter notebook with code and bar graph](https://cdn.hackclub.com/rescue?url=https://cloud-qyo2g39vl.vercel.app/0image_from_ios.jpg)
 
 # Let's Make It A Little More Complicated!
 
@@ -148,7 +148,7 @@ We are going to make a more personalized graph using three different functions.
 
 I am sure you all have already guessed it hehe, import your libraries!!!!!!!!!!
 
-![Kermit the Frog Dancing!](https://cloud-n5xpv2pg5.vercel.app/0file_from_ios.gif)
+![Kermit the Frog Dancing!](https://cdn.hackclub.com/rescue?url=https://cloud-n5xpv2pg5.vercel.app/0file_from_ios.gif)
 
  ```python
 import matplotlib.pyplot as plt 
@@ -170,7 +170,7 @@ To create the graph we want to make we will be using the matplotlib library! It 
 
 - Allow us to plot points
 
-![Amazed Monkey Meme](https://cloud-nnli579mz.vercel.app/0file_from_ios.gif)
+![Amazed Monkey Meme](https://cdn.hackclub.com/rescue?url=https://cloud-nnli579mz.vercel.app/0file_from_ios.gif)
 
 ### Okay now lets get back to it...
 
@@ -227,7 +227,7 @@ Here's a hint:
 
 Your graph should look something like this...
 
-**![After Step Two Example ](https://cloud-7yu234iqo.vercel.app/0image_from_ios.jpg)**
+**![After Step Two Example ](https://cdn.hackclub.com/rescue?url=https://cloud-7yu234iqo.vercel.app/0image_from_ios.jpg)**
 
 ## Step Five!
 
@@ -247,13 +247,13 @@ ax.plot(x,x**3,label='Be a icon')
 
 Your graph should look something like this...
 
-**![After Step 5 Example](https://cloud-jdfg40s6g.vercel.app/0image_from_ios.jpg)**
+**![After Step 5 Example](https://cdn.hackclub.com/rescue?url=https://cloud-jdfg40s6g.vercel.app/0image_from_ios.jpg)**
 
 ## Step Six!
 
 Finishing touches!
 
-![Bibitty Bobittiy Boo!](https://cloud-kmkvhdhhs.vercel.app/0file_from_ios.gif)
+![Bibitty Bobittiy Boo!](https://cdn.hackclub.com/rescue?url=https://cloud-kmkvhdhhs.vercel.app/0file_from_ios.gif)
 
    ```python 
    ax.set_xlabel('Time') #adds X axis label
@@ -264,11 +264,11 @@ Finishing touches!
 
 You could possibly get something that looks like this...
 
-**![Workshop Product Example](https://cloud-hwlfv9j4u.vercel.app/0image_from_ios.jpg)**
+**![Workshop Product Example](https://cdn.hackclub.com/rescue?url=https://cloud-hwlfv9j4u.vercel.app/0image_from_ios.jpg)**
 
 
 *If you are having any issues make sure to check your top right corner to check if the "kernel" is on and is set to Python 3*
-**![No Kernel Error](https://cloud-bej0gbbkn.vercel.app/0image_from_ios.jpg)**
+**![No Kernel Error](https://cdn.hackclub.com/rescue?url=https://cloud-bej0gbbkn.vercel.app/0image_from_ios.jpg)**
 
 **All Example Code:**
 
@@ -289,7 +289,7 @@ You could possibly get something that looks like this...
 ```
 \*\*PS. If you have never watched [Chicken Little](https://youtu.be/PPuk2JQgMkU), you must do that asap, you are missing out on an animated masterpiece.
 
-![Chicken Little!](https://cloud-g6jgv31zl.vercel.app/0file_from_ios.gif)
+![Chicken Little!](https://cdn.hackclub.com/rescue?url=https://cloud-g6jgv31zl.vercel.app/0file_from_ios.gif)
 # Share Your Project! 
 How can I save my project with Jupyter?
 [Click here for video!](https://www.wevideo.com/view/1886850494)
@@ -344,7 +344,7 @@ plt.show()
 
 #Source: https://matplotlib.org/gallery/shapes_and_collections/ellipse_demo.html
 ```
-**![](https://cloud-pw25qj0bn.vercel.app/0image_from_ios.jpg)**
+**![](https://cdn.hackclub.com/rescue?url=https://cloud-pw25qj0bn.vercel.app/0image_from_ios.jpg)**
 
 ---
 
@@ -376,4 +376,4 @@ plt.title('Interest in Tik Tok over time');
 ```
 Need help adding the Google trends data? [Click here!](https://www.wevideo.com/view/1850050637)
 
-**![](https://cloud-buf4qdryr.vercel.app/0image_from_ios.jpg)**
+**![](https://cdn.hackclub.com/rescue?url=https://cloud-buf4qdryr.vercel.app/0image_from_ios.jpg)**

@@ -2,10 +2,10 @@
 name: 'Battleship'
 description: 'Create a Battleship guessing game with C#!'
 author: '@JakeGerber'
-img: 'https://cloud-qb14h5sfw.vercel.app/0screenshot__1442_.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-qb14h5sfw.vercel.app/0screenshot__1442_.png'
 ---
 
-<img src="https://cloud-qb14h5sfw.vercel.app/0screenshot__1442_.png" width="380" alt="Battleship Guessing Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-qb14h5sfw.vercel.app/0screenshot__1442_.png" width="380" alt="Battleship Guessing Example">
 
 In this workshop, we're going to make a fully-functional implementation of the popular game Battleship, in C#! Ready to get started?
 
@@ -17,7 +17,7 @@ In this workshop, we're going to make a fully-functional implementation of the p
 
 We're going to use [Repl.it](https://repl.it/~), a free, online code editor, to create the project. To get started, visit [repl.it/languages/c#](https://repl.it/languages/c#).
 
-<img src="https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-7dbilwpvc.vercel.app/0screenshot__1402_.png" width="600" alt="C# Repl">
 
 Don't worry if you've never written C# before. As long as you've written code in most languages before, you'll be able to easily pick it up!
 

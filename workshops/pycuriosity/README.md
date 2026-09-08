@@ -2,12 +2,12 @@
 name: PyCuriosity
 description: An API explorer that fetches images from the Curiosity Rover.
 author: '@agentblack-6000'
-img: https://cloud-8qn1gonwl-hack-club-bot.vercel.app/0mars.jpg
+img: https://cdn.hackclub.com/rescue?url=https://cloud-8qn1gonwl-hack-club-bot.vercel.app/0mars.jpg
 ---
 
 # PyCuriosity
 Build an API explorer that gets images from Curiosity, a NASA Mars rover, such as this one!
-![One of Curiosity's images](https://cloud-8qn1gonwl-hack-club-bot.vercel.app/0mars.jpg)
+![One of Curiosity's images](https://cdn.hackclub.com/rescue?url=https://cloud-8qn1gonwl-hack-club-bot.vercel.app/0mars.jpg)
 
 This workshop should take about ~40 min.
 
@@ -36,11 +36,11 @@ Be sure to read the previous section if you're still confused as to what PyCurio
 All great projects, big or small, always start with a plan. Planning out the project ahead of time saves confusion and 
 provides a clear picture of the project, the resources to use, the skills to acquire. 
 
-![Battle Plan GIF from Home Alone](https://cloud-odfqnnmkf-hack-club-bot.vercel.app/0giphy.gif)
+![Battle Plan GIF from Home Alone](https://cdn.hackclub.com/rescue?url=https://cloud-odfqnnmkf-hack-club-bot.vercel.app/0giphy.gif)
 
 This program flow was made using [diagrams.net](https://app.diagrams.net)
 
-![PyCuriosity program flow](https://cloud-2o6nek83e-hack-club-bot.vercel.app/0curiosity_battle_plan.png)
+![PyCuriosity program flow](https://cdn.hackclub.com/rescue?url=https://cloud-2o6nek83e-hack-club-bot.vercel.app/0curiosity_battle_plan.png)
 
 ## Init
 First, we need to look at the Mars Rover Photos API [documentation](https://github.com/corincerami/mars-photo-api), and 
@@ -103,7 +103,7 @@ It's a good idea to get used to this, because this is standard practice when wor
 Next, we need to export the API key as an environment variable so the above code works. 
 To do so, click on Shell, next to Console, on replit
 
-![Clicking on shell](https://cloud-fx418po7s-hack-club-bot.vercel.app/0shell.png)
+![Clicking on shell](https://cdn.hackclub.com/rescue?url=https://cloud-fx418po7s-hack-club-bot.vercel.app/0shell.png)
 
 If you signed up for an API key at [api.nasa.gov](https://api.nasa.gov/), copy it to your clipboard, and type in the 
 following command
@@ -219,7 +219,7 @@ def explore_mars_rover_photos(file_name, date):
 ```
 Recall this section from reading the documentation for the API-
 
-![Mars Rover Photos API request parameters](https://cloud-keimlvsaj-hack-club-bot.vercel.app/0api_params.png)
+![Mars Rover Photos API request parameters](https://cdn.hackclub.com/rescue?url=https://cloud-keimlvsaj-hack-club-bot.vercel.app/0api_params.png)
 
 In particular, the date needs to be in the format YYYY-MM-DD. To validate this is the case, we use a regex from the 
 ```re``` module to verify the date is in this format. If unfamiliar with what a regex is, a regex essentially enables
@@ -310,7 +310,7 @@ This should give you a good feel for how the JSON data returned looks like, and 
 A sample for what the data looks like(this may vary if you're doing the workshop at a later date, in which case you'll 
 need to figure out the appropriate keys)
 
-![JSON data](https://cloud-rkp0zzb2x-hack-club-bot.vercel.app/0json_data.png)
+![JSON data](https://cdn.hackclub.com/rescue?url=https://cloud-rkp0zzb2x-hack-club-bot.vercel.app/0json_data.png)
 
 Now that we've got the API response and a good picture of what keys we need, we first need to check if any data was 
 returned-

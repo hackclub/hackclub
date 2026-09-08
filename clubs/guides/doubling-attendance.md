@@ -6,9 +6,9 @@ Hey everyone! I wanted to share something with you all.
 
 Below, you can see a before and an after just one **week** between two of my Hack Club meetings.
 
-Before: ![](https://cloud-ovstjg39g.vercel.app/1image-20190730-192355.png)
+Before: ![](https://cdn.hackclub.com/rescue?url=https://cloud-ovstjg39g.vercel.app/1image-20190730-192355.png)
 
-After: ![](https://cloud-ovstjg39g.vercel.app/0image-20190730-192406.png)
+After: ![](https://cdn.hackclub.com/rescue?url=https://cloud-ovstjg39g.vercel.app/0image-20190730-192406.png)
 
 Here's something that helped me **increase member count from 8 to 14 in a week.**
 

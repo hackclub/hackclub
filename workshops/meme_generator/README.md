@@ -2,13 +2,13 @@
 name: 'Meme Generator'
 description: 'Create your own meme generator with HTML, CSS, and JavaScript!'
 author: '@aaryanporwal'
-img: 'https://cloud-qmqu378mz.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-qmqu378mz.vercel.app/0image.png'
 locales: 'pt-br'
 ---
 
 Do you like memes? Ever wanted to make your own, but didn't know which apps to install? Don't worry because in this workshop, you'll be creating your own ***Meme Generator***—or as I like to call it, the *Meme-Genie*.
 
-![Meme Generator demo](https://cloud-i6md9xxdx.vercel.app/0image.png)
+![Meme Generator demo](https://cdn.hackclub.com/rescue?url=https://cloud-i6md9xxdx.vercel.app/0image.png)
 
 Let's get started!
 
@@ -28,7 +28,7 @@ We'll be using an online code editor called [repl.it](https://repl.it) for this 
 
 To get started, go to [https://repl.it/languages/html](https://repl.it/languages/html). Your coding environment will spin up in just a few seconds!
 
-![Excited doge](https://cloud-4560ajsyp.vercel.app/0giphy.gif)
+![Excited doge](https://cdn.hackclub.com/rescue?url=https://cloud-4560ajsyp.vercel.app/0giphy.gif)
 
 ## Part 3: Building The Project
 
@@ -46,7 +46,7 @@ Let's start by making a structure for our Meme Generator website.
 
 * Next, we want our memes to have two text fields: ***Top Text*** and ***Bottom Text***, something like this:
 
-    ![Meme showing top text and bottom text](https://cloud-ejplvs3dg.vercel.app/0image.png)
+    ![Meme showing top text and bottom text](https://cdn.hackclub.com/rescue?url=https://cloud-ejplvs3dg.vercel.app/0image.png)
 
     To achieve this we'll use two `<textarea>` tags after our `<h1>` tag:
 
@@ -123,7 +123,7 @@ Our HTML code so far:
 
 If you run the website now by clicking the green "Run" button at the top, you'll notice that the elements look kinda weird, something like this:
 
-![website without div tags](https://cloud-4qhf2j8gs.vercel.app/0image.png)
+![website without div tags](https://cdn.hackclub.com/rescue?url=https://cloud-4qhf2j8gs.vercel.app/0image.png)
 
 To fix this problem, we have the mighty `<div>` tag which we'll be using to seperate out the different elements!
 
@@ -161,7 +161,7 @@ So, wrap all the different elements inside the `<div>` tags, like this:
 
 Now run the website again. It should look something like this:
 
-![website with div tags](https://cloud-bvqyk1aj4.vercel.app/0image.png)
+![website with div tags](https://cdn.hackclub.com/rescue?url=https://cloud-bvqyk1aj4.vercel.app/0image.png)
 
 And with this we've completed the HTML part!
 
@@ -427,7 +427,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 **_And with this, we've finished coding our Meme-Genie! Check out what you've just built by clicking the "Run" Button at the top._**
 
-![Final Output](https://cloud-8kdhhtdj0.vercel.app/0ezgif.com-gif-maker.gif)
+![Final Output](https://cdn.hackclub.com/rescue?url=https://cloud-8kdhhtdj0.vercel.app/0ezgif.com-gif-maker.gif)
 
 >Note: To save the generated meme, you can right click the meme and click "save as..."
 
@@ -462,7 +462,7 @@ If you're having trouble signing up, ask your club leader or someone on the [Hac
 
 ### Part 6: Sharing with the Community
 
-![Doge getting appreciation](https://cloud-jhccbrn2s.vercel.app/0tenor.gif)
+![Doge getting appreciation](https://cdn.hackclub.com/rescue?url=https://cloud-jhccbrn2s.vercel.app/0tenor.gif)
 
 Now that you have finished building an awesome project, you should share it with your friends or with our world wide Hack Club Community!
 

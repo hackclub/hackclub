@@ -7,7 +7,7 @@ img: 'https://cdn.hackclub.com/019e0318-622d-7769-92fd-4895761ee556/unknown-6__1
 
 In this workshop, you're going to build a typing test website with HTML, CSS, and JavaScript! Here's what it'll look like:
 
-![Screenshot of the final site for the test portion](https://cloud-1v9gb7z3j.vercel.app/0javascript_typing_test_final_image_1.png)
+![Screenshot of the final site for the test portion](https://cdn.hackclub.com/rescue?url=https://cloud-1v9gb7z3j.vercel.app/0javascript_typing_test_final_image_1.png)
 
 [Final demo](https://javascript-typing-test-final.gurshanbrar.repl.co/)
 <br>
@@ -79,7 +79,7 @@ The first variable is used by our event listener and lists all the keys we won't
 
 An array in JavaScript is a variable that can store a list of many variables. A specific variable inside an array is accesible by an index value that starts at zero. Index 0 corresponds to the first element in the array. Index 1 contributes to the second, and so on. Arrays are initialized like this: ```let array = ['string', 'apple']```.
 
-![Image that explains index](https://cloud-ei7nqg21v.vercel.app/3index_demo.png)
+![Image that explains index](https://cdn.hackclub.com/rescue?url=https://cloud-ei7nqg21v.vercel.app/3index_demo.png)
 
 The ```split()``` function splits a string into an array based on a delimeter. The delimeter is the string we add in its parantheses as a parameter. So every time it sees the parameter we passed in, it makes a new array element.
 
@@ -129,7 +129,7 @@ document.addEventListener('keydown', event => {
 ```
 We add a listener on the JavaScript ```document``` variable, using JavaScript's built in method called [```addEventListener('eventType', function)```](https://www.w3schools.com/jsref/met_element_addeventlistener.asp). This function adds a listener on whatever variable we call it from. Since we called it from ```document``` it adds one on the whole page. The function takes two arguments: the type of event that will call the function, and the code to run once the event happens. 
 
-![Image explaining ```document```](https://cloud-ei7nqg21v.vercel.app/2document_demo.png)
+![Image explaining ```document```](https://cdn.hackclub.com/rescue?url=https://cloud-ei7nqg21v.vercel.app/2document_demo.png)
 
 The first argument is the ```'keydown'``` string. This string tells the listener to activate once any key is pressed down. The second argument is a function. That function is called whenever our listener picks up a ```'keydown'``` event. The function takes one argument: the ```event``` variable. This variable contains information about our event.
 
@@ -266,13 +266,13 @@ First off, we calculate the time, the wpm, and the accuracy. If you want to lear
 
 As for the time, we get the minutes first. To get the minutes we divide the time by 60. The remainder is chopped off because we use ```Math.floor()``` (```Math.floor()``` rounds the result down). We then store the leftover seconds in ```seconds```. We modify the ```innerHTML``` properties of our ```wpmText```, ```accuracyText```, and ```timeText``` variables. Remember that these variables were declared at the very top of our file and refer to HTML elements. 
 
-![Image describing ```innerHTML```, ```outerHTML```, and ```innerText```](https://cloud-ei7nqg21v.vercel.app/1inner_html_demo.png)
+![Image describing ```innerHTML```, ```outerHTML```, and ```innerText```](https://cdn.hackclub.com/rescue?url=https://cloud-ei7nqg21v.vercel.app/1inner_html_demo.png)
 
 Finally, we set the display of our ```main``` container to ```'none'``` and the ```resultsContainer``` to ```'block'```. We can do this by referencing the HTML `style` attribute. The `style` attribute adds an inline `style` to the HTML element. To create the `style` attribute we can reference it as an object `key`. We can then add CSS styles inside of it. Our style hides the text and shows the results by using the CSS `display` property. Remember we set the display of our `resultsContainer` to `none`? Our JavaScript `style` attribute overrides that property and returns the `resultsContainer` back to its default value. We now set a new property on the `main` container to hide it.
 
 ## Step 3: Hacking
 
-![Image resembling finishing a race](https://cloud-ei7nqg21v.vercel.app/0finished.jpeg)
+![Image resembling finishing a race](https://cdn.hackclub.com/rescue?url=https://cloud-ei7nqg21v.vercel.app/0finished.jpeg)
 
 Thats it! We've finished coding the typing test workshop. You should feel proud of yourself because you learned many new skills such as functions, backticks, operators, ```if``` statements, and more! This workshop is pretty hackable, though. Here are some examples of extending it:
 

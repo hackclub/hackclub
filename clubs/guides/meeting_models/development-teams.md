@@ -38,11 +38,11 @@ Marking is a great side effect of development teams. Have your teams slap a “M
 
 Well, here’s some examples of things that the development teams at the Mason Hack Club have made in the past, and even some testimonials from development team members:
 
-![](https://cloud-3oid2r0cx.vercel.app/1pasted_image_0.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-3oid2r0cx.vercel.app/1pasted_image_0.png)
 
 [_Mason Hack Camp 2019 website_](https://web.archive.org/web/20201024151413/https://camp.masonhackclub.com/)  
 
-![](https://cloud-3oid2r0cx.vercel.app/0pasted_image_1.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-3oid2r0cx.vercel.app/0pasted_image_1.png)
 
 _The AMs, Live Music Club website_
 
@@ -56,4 +56,4 @@ Thanks for reading! Hopefully you should have a good idea on how to organize dev
 
 ---
 
-_Edited by @megan. Jack is awesome! Unbiased._ ![(heart)](https://cloud-3oid2r0cx.vercel.app/2heart.png)
+_Edited by @megan. Jack is awesome! Unbiased._ ![(heart)](https://cdn.hackclub.com/rescue?url=https://cloud-3oid2r0cx.vercel.app/2heart.png)

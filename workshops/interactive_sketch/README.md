@@ -4,7 +4,7 @@ description: Doodle pineapples with the help of machine learning
 author: '@MatthewStanciu'
 ---
 
-![Gif of a human drawing part of a pineapple and a machine learning model filling in the rest](https://cloud-qvus77map.vercel.app/screen_recording_2020-09-17_at_5.49.18_pm.gif)
+![Gif of a human drawing part of a pineapple and a machine learning model filling in the rest](https://cdn.hackclub.com/rescue?url=https://cloud-qvus77map.vercel.app/screen_recording_2020-09-17_at_5.49.18_pm.gif)
 
 Have you ever wanted to sketch something, but you're bad at drawing and don't know how to finish it? Well now, thanks to the fact that our robot overlords are becoming increasingly sentient, we can use machine learning to help us draw!
 
@@ -23,7 +23,7 @@ This project requires a lot of complicated setup that is outside the scope of th
 
 Get started by [clicking here](https://repl.it/@TechBug2012/interactive-sketch-starter#script.js).
 
-![Screenshot of the starter project](https://cloud-pl3k1n9v7.vercel.app/screen_shot_2020-09-18_at_4.56.12_pm.png)
+![Screenshot of the starter project](https://cdn.hackclub.com/rescue?url=https://cloud-pl3k1n9v7.vercel.app/screen_shot_2020-09-18_at_4.56.12_pm.png)
 
 You should see a pretty filled in `script.js` file with a comment that says `// Your code here!` on line 3. If you click the green button at the top that says "Run", you should see a basic HTML website that contains the skeleton of your project. Of course, this website doesn't do anything yet—that's what we're doing next!
 
@@ -70,21 +70,21 @@ p.setup = function () {
 
 To understand what these functions to, let's take a peek at the code inside these helper functions.
 
-![Picture of the restart function](https://cloud-kcenb4nrj.vercel.app/screen_shot_2020-09-21_at_1.27.35_pm_1.png)
+![Picture of the restart function](https://cdn.hackclub.com/rescue?url=https://cloud-kcenb4nrj.vercel.app/screen_shot_2020-09-21_at_1.27.35_pm_1.png)
 
 We need to constantly be keeping track of the state of our sketch—the coordinates of the pen, whether or not we're currently drawing, whether or not the model should be drawing, etc. The `restart()` function resets all of these to their default values.
 
-![Picture of the initModel() function](https://cloud-oirptf5ub.vercel.app/screen_shot_2020-09-21_at_1.40.20_pm.png)
+![Picture of the initModel() function](https://cdn.hackclub.com/rescue?url=https://cloud-oirptf5ub.vercel.app/screen_shot_2020-09-21_at_1.40.20_pm.png)
 
 The `initModel()` function loads the machine learning model from Magenta.js. The "0" argument is just telling it that we want to load the first model in the list. You can see the full list of models on line 3 in `lib/utils.js` if you're interested.
 
 _Protip: this "list" is known as an array. [Learn more about arrays here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array_
 
-![Picture of initDomElements](https://cloud-1a31v0vcv.vercel.app/screen_shot_2020-09-21_at_2.22.46_pm.png)
+![Picture of initDomElements](https://cdn.hackclub.com/rescue?url=https://cloud-1a31v0vcv.vercel.app/screen_shot_2020-09-21_at_2.22.46_pm.png)
 
 Finally, the `initDOMElements()` function adds the list of models to the dropdown and makes the "Clear Drawing" and "Random" buttons work.
 
-![Picture of dropdown filled in](https://cloud-hl3ksrdip.vercel.app/screen_shot_2020-09-21_at_2.26.35_pm.png)
+![Picture of dropdown filled in](https://cdn.hackclub.com/rescue?url=https://cloud-hl3ksrdip.vercel.app/screen_shot_2020-09-21_at_2.26.35_pm.png)
 
 If you click the green "Run" button at the top of your repl, you should see that the dropdown is now filled with the list of all the models! If you click the "Random" button, you should see it load a random model. "Clear Drawing" works too, but you can't see the effects of it yet.
 
@@ -92,7 +92,7 @@ If you click the green "Run" button at the top of your repl, you should see that
 
 Now that we've set up our canvas, we're ready to start drawing on it.
 
-![Gif of a human carefully drawing a stroke, then releasing it, then the machine learning model kicks in](https://cloud-2b7kt6m2v.vercel.app/screen_recording_2020-09-21_at_2.46.36_pm.gif)
+![Gif of a human carefully drawing a stroke, then releasing it, then the machine learning model kicks in](https://cdn.hackclub.com/rescue?url=https://cloud-2b7kt6m2v.vercel.app/screen_recording_2020-09-21_at_2.46.36_pm.gif)
 
 This project is a little weird because we have to account for two different users drawing: the human using the website, and the machine learning model. Here's what needs to be done:
 
@@ -163,7 +163,7 @@ p.mouseReleased = function () {
 
 ## Viewing our current progress
 
-![When you run your repl now, the mouse stroke is red! But nothing happens yet](https://cloud-fu8ago15r.vercel.app/screen_recording_2020-09-21_at_4.10.40_pm.gif)
+![When you run your repl now, the mouse stroke is red! But nothing happens yet](https://cdn.hackclub.com/rescue?url=https://cloud-fu8ago15r.vercel.app/screen_recording_2020-09-21_at_4.10.40_pm.gif)
 
 If you click the green "Run" button at the top and draw on the screen, you should now see that you're drawing in red! But...why is nothing happening after you draw? Didn't we just feed the human strokes into the machine learning model?
 
@@ -207,7 +207,7 @@ p.draw = function () {
 
 `pen[PEN.END] === 1` checks if the user has previously drawn but has lifted the mouse at one point.
 
-![Screenshot of the initRNNStateFromStrokes function](https://cloud-lom2sp5bq.vercel.app/screen_shot_2020-09-21_at_5.11.37_pm.png)
+![Screenshot of the initRNNStateFromStrokes function](https://cdn.hackclub.com/rescue?url=https://cloud-lom2sp5bq.vercel.app/screen_shot_2020-09-21_at_5.11.37_pm.png)
 
 the `initRNNStateFromStrokes()` helper function feeds human strokes into the machine learning model and tells the machine learning model to start drawing on the canvas. This produces the looping effect, where the machine learning model continues drawing multiple times, that you can see in the demo at the beginning of this workshop.
 
@@ -227,6 +227,6 @@ One more thing: we want the model to constantly be aware of what's going on and 
 updateModelState()
 ```
 
-![Final demo, drawing a bird](https://cloud-gt7uspr78.vercel.app/screen_recording_2020-09-21_at_6.50.24_pm.gif)
+![Final demo, drawing a bird](https://cdn.hackclub.com/rescue?url=https://cloud-gt7uspr78.vercel.app/screen_recording_2020-09-21_at_6.50.24_pm.gif)
 
 That's it! Now, if you run your repl and draw a circle, you should see the machine learning model fill in with endless predictions of what a bird looks like! If you choose another item on the dropdown and then click "Clear Drawing", the model should start drawing something else.

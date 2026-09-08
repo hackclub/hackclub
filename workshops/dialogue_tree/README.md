@@ -2,14 +2,14 @@
 name: 'Dialogue Tree'
 description: 'Create your own dialogue tree system with C#!'
 author: '@JakeGerber'
-img: 'https://cloud-74lq7ehps.vercel.app/0screenshot__1426_.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-74lq7ehps.vercel.app/0screenshot__1426_.png'
 ---
 
 Have you ever played an RPG or text adventure game and thought that it would be cool to tell your own story? Now you can with this workshop! We will be creating a dialogue tree system with C#. It's pretty rad! B)
 
-<img src="https://cloud-74lq7ehps.vercel.app/0screenshot__1426_.png" width="900" alt="Dialogue Tree Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-74lq7ehps.vercel.app/0screenshot__1426_.png" width="900" alt="Dialogue Tree Example">
 
-<img src="https://cloud-8uexi5mju.vercel.app/01200px-dialog_tree_example.svg.png" width="900" alt="Dialogue Tree Visualization Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-8uexi5mju.vercel.app/01200px-dialog_tree_example.svg.png" width="900" alt="Dialogue Tree Visualization Example">
 
 [Final Demo and Code](https://repl.it/@CosmicSnowman/DialogueTree#main.cs)
 
@@ -21,7 +21,7 @@ We're going to use [Repl.it](https://repl.it) to create the project. It is an ID
 
 Create a new repl and use C# as the language by [clicking here](https://repl.it/languages/c#).
 
-<img src="https://cloud-n5g94sz4o.vercel.app/0screenshot__1427_.png" width="600" alt="C# Repl">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-n5g94sz4o.vercel.app/0screenshot__1427_.png" width="600" alt="C# Repl">
 
 Once your repl spins up, you should see a file called `main.cs` with this code already added.
 

@@ -2,10 +2,10 @@
 name: 'Pac-Man Game'
 description: 'Simple Pac-Man Game using Python'
 author: '@YashKalbande'
-img: 'https://cloud-k9b5z9yni.vercel.app/1pac-man.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-k9b5z9yni.vercel.app/1pac-man.png'
 ---
 
-![Pac-Man gif](https://cloud-k9b5z9yni.vercel.app/0pacman.gif)
+![Pac-Man gif](https://cdn.hackclub.com/rescue?url=https://cloud-k9b5z9yni.vercel.app/0pacman.gif)
 
 ## Introduction
 
@@ -122,7 +122,7 @@ tiles = [
 
 For reference, this is what the above sample code will look like, once we implement the correct functions to draw it on:
 
-![maze](https://cloud-k9b5z9yni.vercel.app/2maze.png)
+![maze](https://cdn.hackclub.com/rescue?url=https://cloud-k9b5z9yni.vercel.app/2maze.png)
 
 ## Drawing our maze
 

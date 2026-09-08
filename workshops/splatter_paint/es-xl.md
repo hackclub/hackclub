@@ -9,7 +9,7 @@ locales: 'es-xl'
 
 Uno de los mitos más comunes sobre la codificación entre las personas que están aprendiendo a programar por primera vez es que consiste principalmente en sentarse en una habitación oscura todo el día escribiendo ~Algoritmos~ en una ventana de terminal negra con texto verde, resolviendo ecuaciones matemáticas complejas y en general, ser un genio. Vas a aplastar este mito en este taller haciendo  salpicaduras de pintura locas y coloridas directamente en tu navegador web, en solo 20 minutos.
 
-![Patrones de colores de puntos y líneas en un lienzo](https://cloud-3aosybiuc-hack-club-bot.vercel.app/1final-demo.png)
+![Patrones de colores de puntos y líneas en un lienzo](https://cdn.hackclub.com/rescue?url=https://cloud-3aosybiuc-hack-club-bot.vercel.app/1final-demo.png)
 
 [Código Final](https://repl.it/@TechBug2012/splatter-paint#index.html)
 <br/>
@@ -150,23 +150,23 @@ canvas {
 
 Si corres tu repl de nuevo, deberías notar que tus círculos rojos ahora están llenando toda la pantalla. Woohoo!
 
-![Patrón aleatorio formado por círculos rojos](https://cloud-3aosybiuc-hack-club-bot.vercel.app/6red-circles.jpg)
+![Patrón aleatorio formado por círculos rojos](https://cdn.hackclub.com/rescue?url=https://cloud-3aosybiuc-hack-club-bot.vercel.app/6red-circles.jpg)
 
 ## Haciendo salpicaduras
 
 Estamos llegando a alguna parte, pero esto todavía no se ve muy salpicado.
 
-![Pintura colorida salpicada al azar sobre un lienzo](https://cloud-3aosybiuc-hack-club-bot.vercel.app/5real-splatter-paint.jpg)
+![Pintura colorida salpicada al azar sobre un lienzo](https://cdn.hackclub.com/rescue?url=https://cloud-3aosybiuc-hack-club-bot.vercel.app/5real-splatter-paint.jpg)
 
 Parte de lo que hace que la salpicadura de pintura sea tan divertida de crear y mirar es la caótica aleatoriedad de todo en el lienzo. Por lo tanto, si deseas que tu sitio web esté lo más cerca posible de la salpicadura de pintura, la mejor manera de hacerlo es introducir algo de aleatoriedad.
 
 Cambia el radio de tus círculos de `10` a `Math.round(Math.random() * 25) + 5`. Esto hace que el radio sea un número aleatorio entre 5 y 30. Luego corre el repl de nuevo.
 
-![Círculos con radios grandes que forman un patrón aleatorio sobre un lienzo.](https://cloud-3aosybiuc-hack-club-bot.vercel.app/4random-radius.jpg)
+![Círculos con radios grandes que forman un patrón aleatorio sobre un lienzo.](https://cdn.hackclub.com/rescue?url=https://cloud-3aosybiuc-hack-club-bot.vercel.app/4random-radius.jpg)
 
 No está mal, pero se siente un poco aplastado, ¿no? Tal vez podamos hacer que cada círculo sea único haciéndolo de un color diferente al anterior. Intenta cambiar el tono de `0` a `event.count * 3`. Corre el repl y mira lo que sucede.
 
-![Surtido arcoiris de círculos de varios tamaños sobre un lienzo](https://cloud-3aosybiuc-hack-club-bot.vercel.app/3rainbow-colors.jpg)
+![Surtido arcoiris de círculos de varios tamaños sobre un lienzo](https://cdn.hackclub.com/rescue?url=https://cloud-3aosybiuc-hack-club-bot.vercel.app/3rainbow-colors.jpg)
 
 `event.count * 3` crea un efecto de arcoíris al establecer el tono en cada círculo en el número total de veces que se ha dibujado un círculo multiplicado por 3, lo que salta alrededor de la rueda de colores HSB. ¡Y luce genial!
 

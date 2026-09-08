@@ -2,7 +2,7 @@
 name: Help Orpheus!
 description: Supercop Orpheus needs help to save Hack Island! and you are the one who can help them.
 author: '@bajpai244'
-img: "https://cloud-a13cu1qa5-hack-club-bot.vercel.app/0demo.png"
+img: "https://cdn.hackclub.com/rescue?url=https://cloud-a13cu1qa5-hack-club-bot.vercel.app/0demo.png"
 ---
 
 Welcome to this new adventure of yours. Supercop Orpheus needs your help saving Hack Island. What?? What is Hack Island? And what is going to happen to it? And Orpheus is also a Supercop! When did all of these happen?
@@ -71,13 +71,13 @@ Hmm, so remember Squirrel told us the website’s database is written in SQL. Le
 
 The way you have HTML to make webpages in a similar way you have SQL to write databases. Databases store information. 
 
-<img src="https://cloud-or83s8bmg.vercel.app/0image.png" alt="SQL Logo" width="" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-or83s8bmg.vercel.app/0image.png" alt="SQL Logo" width="" />
 
 SQL stands for Structured Query Language. Databases written in SQL are **in the form of tables.** 
 
 The below is a sample database storing data in the form of tables.
 
-<img src="https://cloud-9k8vw5nyb.vercel.app/0image.png" alt="SQL table image" width="" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-9k8vw5nyb.vercel.app/0image.png" alt="SQL table image" width="" />
 
 We can retrieve information from this table by using SQL’s `SELECT` statement. Each row of the table is called a **record**.
 
@@ -106,7 +106,7 @@ This was a small introduction to SQL for you.
 
 Agent Squirrel told us that the website uses SQL for its database. Websites which use SQL are prone to a vulnerability known as SQL injection. Hmmm? Lemme explain it to you.
 
-<img src="https://cloud-5taef3i63.vercel.app/0image.png" alt="SQL Injection" width="500px" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-5taef3i63.vercel.app/0image.png" alt="SQL Injection" width="500px" />
 
 So, to retrieve data from their database, websites run SQL commands in their backend and we can inject some SQL into these commands to mutate these statements for desirable results!
 

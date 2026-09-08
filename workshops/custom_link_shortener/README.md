@@ -2,7 +2,7 @@
 name: 'Custom Link Shortener'
 description: 'Build your own custom link shortener to save time remembering links.'
 author: '@shreyfirst'
-img: 'https://cloud-e15trekvp.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-e15trekvp.vercel.app/0image.png'
 
 ---
 
@@ -27,7 +27,7 @@ Link to code: https://repl.it/@ShreyGupta1/IdenticalFarflungTitles
 
 Link to site: https://IdenticalFarflungTitles.shreygupta1.repl.co/new
 
-![Demo of what the website will look like](https://cloud-2k20qqfzo.vercel.app/0image.png)
+![Demo of what the website will look like](https://cdn.hackclub.com/rescue?url=https://cloud-2k20qqfzo.vercel.app/0image.png)
 
 
 
@@ -39,7 +39,7 @@ Link to site: https://IdenticalFarflungTitles.shreygupta1.repl.co/new
 
      **The website will look a little like this:** 
 
-     <img src="https://cloud-cnenr6ov1.vercel.app/0image.png" alt="Repl.it website)@2x"  />
+     <img src="https://cdn.hackclub.com/rescue?url=https://cloud-cnenr6ov1.vercel.app/0image.png" alt="Repl.it website)@2x"  />
 
 2. Choose "NodeJS"
 
@@ -47,7 +47,7 @@ Link to site: https://IdenticalFarflungTitles.shreygupta1.repl.co/new
 
 3. Delete all of the code existing in `index.js`. Your Repl environment should only have 1 file and no code in that file. We will be starting from scratch. Here is a reference of how everything should look like:
 
-   ![Deleting the code existing](https://cloud-53f8aawmx.vercel.app/0screenshot_taken_by_shrey_on_11-11-2020_at_21.11__48_.gif)
+   ![Deleting the code existing](https://cdn.hackclub.com/rescue?url=https://cloud-53f8aawmx.vercel.app/0screenshot_taken_by_shrey_on_11-11-2020_at_21.11__48_.gif)
 
 ## Down to business
 
@@ -135,7 +135,7 @@ Notice how this code is formatting. There will be no response until the data is 
 
 Let's create the form where people can submit now. HTML is a web interface language that can be used to make up web pages. So far, everything we've created is on the server, it's time for the user to be able to input new things for our app.
 
-![GIF of creating a new HTML file](https://cloud-la3kgwf9v.vercel.app/0screenshot_taken_by_shrey_on_11-11-2020_at_22.11__28_.gif)
+![GIF of creating a new HTML file](https://cdn.hackclub.com/rescue?url=https://cloud-la3kgwf9v.vercel.app/0screenshot_taken_by_shrey_on_11-11-2020_at_22.11__28_.gif)
 
 1. As outlined by the GIF above, create a new file called: `new.html`. This will let us create a *new* link for our app.
 2. HTML is written in [tags](https://www.w3schools.com/tags/default.asp). There are three tags needed for forms: `<form>`, `<input>`, and `<label>.` You can add your own paragraph or heading tag to be descriptive, but that is all up to you.
@@ -202,7 +202,7 @@ app.get('/*', (req, res) => {
 
 Your final code should look like this: https://rerpl.it/@ShreyGupta1/IdenticalFarflungTitles#index.js - If you click run, we should get a `404` error on the window because we haven't defined the root value.
 
-![Window of the code saying 404 error](https://cloud-k84z5v8b2.vercel.app/0image.png)
+![Window of the code saying 404 error](https://cdn.hackclub.com/rescue?url=https://cloud-k84z5v8b2.vercel.app/0image.png)
 
 ## Finishing touches
 
@@ -220,7 +220,7 @@ The point of having these workshops is for you to be able to extend this project
 
    * Demo: https://shorttermmadeupaddons.shreygupta1.repl.co/
 
-   <img src="https://cloud-e15trekvp.vercel.app/0image.png" alt="Updated styling for the form" style="zoom: 33%;" />
+   <img src="https://cdn.hackclub.com/rescue?url=https://cloud-e15trekvp.vercel.app/0image.png" alt="Updated styling for the form" style="zoom: 33%;" />
 
 2. Creating authentication for people to sign in using Netlify Identity or Firebase Authentication! People can have their own customized dashboards to view their links for your domain
 

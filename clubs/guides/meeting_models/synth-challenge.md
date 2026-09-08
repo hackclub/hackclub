@@ -6,7 +6,7 @@ _Meetings can be tough to run, so here’s what Jacob chose to do with his meeti
 
 Looking for something interesting to do to bring more excitement to your meetings? Take a look at some cool challenge ideas.
 
-![](https://cloud-gqu3fbf3m.vercel.app/0image-20190801-170703.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-gqu3fbf3m.vercel.app/0image-20190801-170703.png)
 
 # Synth Music 🎶
 

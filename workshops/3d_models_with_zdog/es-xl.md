@@ -2,7 +2,7 @@
 name: Modelos 3D Animados
 description: Crea modelos 3D animados utilizando una librería de JavaScript simple
 author: '@wollygfx'
-img: 'https://cloud-f0her7co2.vercel.app/2020-10-21_84xj5ymva0f16vfmyderfn46epzgzbp7.jpeg'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-f0her7co2.vercel.app/2020-10-21_84xj5ymva0f16vfmyderfn46epzgzbp7.jpeg'
 ---
 
 # Modelos 3D Animados
@@ -10,11 +10,11 @@ img: 'https://cloud-f0her7co2.vercel.app/2020-10-21_84xj5ymva0f16vfmyderfn46epzg
 En algún punto todos hemos querido crear modelos en 3D, y aunque suene complicado; ¡no lo es! En este taller, usaremos una simple librería de JavaScript llamada [ZDog](https://zzz.dog/getting-started) que nos dejará crear lo que queramos en cuestión de minutos. Al final de este taller, tendrás la capacidad de crear modelos 3D como este:
 
 
-![Ejemplos](https://cloud-5a0ya05fk.vercel.app/0large.gif)
+![Ejemplos](https://cdn.hackclub.com/rescue?url=https://cloud-5a0ya05fk.vercel.app/0large.gif)
 
 Aquí hay un [demo en vivo](https://repl.it/@wollygfx/Hack-Club-logo) de lo que vamos a hacer, también puedes encontrar el código final ahí. de lo que vamos a hacer, tambien puedes encontrar el codigo final ahi.
 
-![Hack Club logo 3D](https://cloud-590c1rr82.vercel.app/0screen_recording_2020-10-21_at_7.00.53_am.gif)
+![Hack Club logo 3D](https://cdn.hackclub.com/rescue?url=https://cloud-590c1rr82.vercel.app/0screen_recording_2020-10-21_at_7.00.53_am.gif)
 
 ## Configuración
 
@@ -22,7 +22,7 @@ Este taller requiere de unos conocimientos básicos en los siguientes lenguajes 
 
 Para este taller utilizaremos [Repl.it](https://repl.it), clic [aquí](https://repl.it/languages/html) para crear un entorno de programación para este taller.
 
-![Configuración](https://cloud-qbmylslty.vercel.app/0image.png)
+![Configuración](https://cdn.hackclub.com/rescue?url=https://cloud-qbmylslty.vercel.app/0image.png)
 
 ## Sección HTML
 
@@ -54,7 +54,7 @@ _Nota: Es muy importante mantener este orden para asegurarnos que todo funcione 
 
 Ahora que tenemos nuestro documento HTML listo, tenemos que trabajar con nuestro código JavaScript.
 
-![Cool gif](https://cloud-p49mi1lgl.vercel.app/0tumblr_e49d74c805eec46704d22c1da59ecded_cc93a056_500.gif)
+![Cool gif](https://cdn.hackclub.com/rescue?url=https://cloud-p49mi1lgl.vercel.app/0tumblr_e49d74c805eec46704d22c1da59ecded_cc93a056_500.gif)
 
 ### Configurando el Canvas
 
@@ -120,11 +120,11 @@ Este código actualiza y renderiza la clase de nivel superior **Zdog.illustratio
 
 Ahora, dale clic al botón **Run** para ver que pasa…
 
-![Imagen renderizada](https://cloud-k11ck8g2n.vercel.app/0image.png)
+![Imagen renderizada](https://cdn.hackclub.com/rescue?url=https://cloud-k11ck8g2n.vercel.app/0image.png)
 
 Felicidades, acabaste de crear tu primer modelo 3D… Si, quizás no era lo que estabas esperando. Arreglemos esto animando nuestra figura.
 
-![woah gif](https://cloud-kr2lyxjbx.vercel.app/0woah.gif)
+![woah gif](https://cdn.hackclub.com/rescue?url=https://cloud-kr2lyxjbx.vercel.app/0woah.gif)
 
 ### Animando nuestro modelo 3D
 
@@ -152,17 +152,17 @@ Explicación:
 
 Ahora, dale clic al botón **Run** de nuevo
 
-![Modelo animado](https://cloud-djkuut7y4.vercel.app/0screen_recording_2020-10-03_at_7.31.47_pm.gif)
+![Modelo animado](https://cdn.hackclub.com/rescue?url=https://cloud-djkuut7y4.vercel.app/0screen_recording_2020-10-03_at_7.31.47_pm.gif)
 
 Increíble, ¿cierto?
 
-![Increíble gif](https://cloud-hrs0t8jeh.vercel.app/0tenor.gif)
+![Increíble gif](https://cdn.hackclub.com/rescue?url=https://cloud-hrs0t8jeh.vercel.app/0tenor.gif)
 
 ### Múltiples figuras
 
 Si quieres intentar crear modelos 3D complejos, necesitaras utilizar muchas figuras y ponerlas juntas, [aquí](https://zzz.dog/#made-with-zdog) hay algunos ejemplos de lo que puedes hacer:
 
-![Ejemplos](https://cloud-2jaw6a14x.vercel.app/0image.png)
+![Ejemplos](https://cdn.hackclub.com/rescue?url=https://cloud-2jaw6a14x.vercel.app/0image.png)
 
 Crear múltiples figuras es muy fácil, es tan simple como crear varias figuras y juntarlas hasta obtener lo que quieras. Sin embargo, la parte difícil es colocar las figuras en el lugar correcto para que nuestra figura se vea bien. Podemos hacer esto utilizando la propiedad `"translate"`. ¡Miremos como funciona!
 
@@ -235,7 +235,7 @@ new Zdog.Box({
 - Adicionalmente, cambiamos el tamaño de la figura utilizando las propiedades `width` y `height` para crear un rectángulo y le dimos una profundidad de 20 a nuestra figura.
 
 
-![Resultado 1](https://cloud-kg0xtr3hs.vercel.app/0image.png)
+![Resultado 1](https://cdn.hackclub.com/rescue?url=https://cloud-kg0xtr3hs.vercel.app/0image.png)
 
 ```javascript
 new Zdog.Box({
@@ -251,7 +251,7 @@ new Zdog.Box({
 - Esta vez creamos una figura mucho más pequeña usando las propiedades `width` y `height`
 - Movimos la figura 18 entro de la coordenada z (hacia adelante), hacia la derecha dentro de la coordenada x y hacia abajo dentro de la coordenada y
 
-![Resultado 2](https://cloud-1nisp19i8.vercel.app/0image.png)
+![Resultado 2](https://cdn.hackclub.com/rescue?url=https://cloud-1nisp19i8.vercel.app/0image.png)
 
 ```javascript
 new Zdog.Box({
@@ -266,7 +266,7 @@ new Zdog.Box({
 
 En esta última, todo lo que tuvimos que hacer fue duplicar la figura anterior y moverla hacia la derecha dentro de la coordenada x para que se mezcle con la figura de la derecha.
 
-![Resultado 3](https://cloud-m2gpkvlqa.vercel.app/0image.png)
+![Resultado 3](https://cdn.hackclub.com/rescue?url=https://cloud-m2gpkvlqa.vercel.app/0image.png)
 
 Ahora vamos a actualizar la función de animación, agregándole unas propiedades simples:
 
@@ -282,13 +282,13 @@ animateModel()
 
 Aquí está el resultado final:
 
-![Resultado final](https://cloud-d9lxnrldx.vercel.app/0screen_recording_2020-10-09_at_12.05.02_pm.gif)
+![Resultado final](https://cdn.hackclub.com/rescue?url=https://cloud-d9lxnrldx.vercel.app/0screen_recording_2020-10-09_at_12.05.02_pm.gif)
 
 ### Hackealo
 
 ¡Felicitaciones! Acabaste de aprender lo básico de ZDog, siéntete libre de revisar los siguientes recursos para incrementar tu conocimiento...
 
-![Felicitaciones gif](https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
+![Felicitaciones gif](https://cdn.hackclub.com/rescue?url=https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
 
 Crea tu propio modelo 3D y compártelo en el [Slack de Hack Club](https://hackclub.slack.com), me encantaría ver que puedes crear utilizando lo que acabaste de aprender en este taller. 
 

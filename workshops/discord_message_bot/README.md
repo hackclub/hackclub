@@ -2,28 +2,28 @@
 name: 'Discord Custom Message Bot'
 description: 'Save your own own custom messages with a Discord Bot!'
 author: '@JakeGerber'
-img: 'https://cloud-bj4vorj8t.vercel.app/examplebot.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-bj4vorj8t.vercel.app/examplebot.png'
 ---
 
 In this workshop, we're going to create a Discord bot that allows users to save custom messages that they can have the bot send at any time. By the end you will have programmed a sweet bot to add to your Discord server!
 
-<img src="https://cloud-bj4vorj8t.vercel.app/examplebot.png" width="380" alt="Message Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-bj4vorj8t.vercel.app/examplebot.png" width="380" alt="Message Example">
 
 ## Bot Setup
 
 Let's set up a bot through Discord before creating its features! Click [here](https://discord.com/developers/applications).
 
 Click the "New Application" button at the top right.
-<img src="https://cloud-noinx6mnk.vercel.app/0screenshot__1379_.png" width="900" alt="New Application Button">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-noinx6mnk.vercel.app/0screenshot__1379_.png" width="900" alt="New Application Button">
 
 This creates a new bot where you can customize the name, description, and profile picture!
-<img src="https://cloud-jlzsnh85x.vercel.app/0screenshot__1380_.png" width="900" alt="Bot Profile">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-jlzsnh85x.vercel.app/0screenshot__1380_.png" width="900" alt="Bot Profile">
 
 Now click the "Bot" tab on the right side of your screen.
-<img src="https://cloud-e5r0obhgo.vercel.app/0screenshot__1381_.png" width="900" alt="Bot Side Bar">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-e5r0obhgo.vercel.app/0screenshot__1381_.png" width="900" alt="Bot Side Bar">
 
 Click "Add Bot" to generate a bot token. This identifies the bot. Give it to nobody!
-<img src="https://cloud-lix7k1shj.vercel.app/0screenshot__1382_.png" width="900" alt="Bot Token">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-lix7k1shj.vercel.app/0screenshot__1382_.png" width="900" alt="Bot Token">
 
 <img src="https://media4.giphy.com/media/pvl3qUsgblNOo/200.gif" width="380" alt="Zelda Gif">
 
@@ -33,11 +33,11 @@ We're going to use [Repl.it](https://repl.it/~) to host the bot. It is an online
 
 Create a new repl and use Node.js as the language.
 
-<img src="https://cloud-otu0relhe.vercel.app/0screenshot__1383_.png" width="600" alt="Node.js Repl">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-otu0relhe.vercel.app/0screenshot__1383_.png" width="600" alt="Node.js Repl">
 
 Make sure to set it to private. You'll be adding sensitive information to this project, so you don't want other people accessing your code.
 
-<img src="https://cloud-6u5f66efw.vercel.app/0screenshot__1418_.png" width="600" alt="Node.js Repl">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-6u5f66efw.vercel.app/0screenshot__1418_.png" width="600" alt="Node.js Repl">
 
 ## Initial Setup
 
@@ -53,7 +53,7 @@ JSON is a file format that allows you to store data as a JavaScript object (key/
 
 Once you create the `msgs.json` file, add two curly braces, like so:
 
-<img src="https://cloud-gh7l7h2q1.vercel.app/json_example.png" width="380" alt="Write Command Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-gh7l7h2q1.vercel.app/json_example.png" width="380" alt="Write Command Example">
 
 ### Writing JavaScript!
 
@@ -110,7 +110,7 @@ Yay! We've successfully completed our initial setup!
 
 Now let's start with a command that allows you to add your own custom messages. The user will provide a key that the message will be saved to and the message itself.
 
-<img src="https://cloud-kb9kganvz.vercel.app/write_message.png" width="380" alt="Write Command Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-kb9kganvz.vercel.app/write_message.png" width="380" alt="Write Command Example">
 
 We'll want the bot to respond to `!write {messageKey} {message}`.
 
@@ -209,7 +209,7 @@ Yay! The `!write` command is done!
 
 Now let's do the `!get` command. This allows you to get the message you saved!
 
-<img src="https://cloud-eing65rqs.vercel.app/get_message.png" width="380" alt="Get Command Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-eing65rqs.vercel.app/get_message.png" width="380" alt="Get Command Example">
 
 ```js
 client.on('message', (message) => {
@@ -233,7 +233,7 @@ client.on('message', (message) => {
 
 Now, let's write a command to delete a message.
 
-<img src="https://cloud-uvlarb2g1.vercel.app/delete_message.png" width="380" alt="Delete Command Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-uvlarb2g1.vercel.app/delete_message.png" width="380" alt="Delete Command Example">
 
 ```js
 client.on('message', (message) => {
@@ -259,7 +259,7 @@ client.on('message', (message) => {
 
 Now let's allow the user to get the list of all their saved messages.
 
-<img src="https://cloud-2ghj25por.vercel.app/list_message.png" width="380" alt="List Command Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-2ghj25por.vercel.app/list_message.png" width="380" alt="List Command Example">
 
 ```js
 client.on('message', (message) => {
@@ -288,7 +288,7 @@ client.on('message', (message) => {
 
 Finally, let's create a help command that allows the user to see all the available commands.
 
-<img src="https://cloud-8qig9t4bs.vercel.app/help_message.png" width="380" alt="Help Command Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-8qig9t4bs.vercel.app/help_message.png" width="380" alt="Help Command Example">
 
 ```js
 client.on('message', (message) => {
@@ -369,7 +369,7 @@ Now that we've written all of the code, it's time to add this bot to your Discor
 
 Go [here](https://discordapi.com/permissions.html#).
 
-<img src="https://cloud-1ca9lqh0p.vercel.app/0screenshot__1384_.png" width="450" alt="Adding Bot to Your Server">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-1ca9lqh0p.vercel.app/0screenshot__1384_.png" width="450" alt="Adding Bot to Your Server">
 
 Add your permissions, click the link at the bottom, and choose what server you want to add it to!
 

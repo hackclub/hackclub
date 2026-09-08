@@ -2,12 +2,12 @@
 name: Painting App
 description: Create an MSPaint-style painting app on the web!
 author: '@wollygfx'
-img: 'https://cloud-cjpqh65d8.vercel.app/0screen_shot_2021-01-18_at_6.21.41_pm.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-cjpqh65d8.vercel.app/0screen_shot_2021-01-18_at_6.21.41_pm.png'
 ---
 
 In this workshop you'll learn how to make a painting application using HTML, CSS & JavaScript. Follow along with me and see how easy it is!
 
-![final demo](https://cloud-3mzm880lh.vercel.app/0image.png)
+![final demo](https://cdn.hackclub.com/rescue?url=https://cloud-3mzm880lh.vercel.app/0image.png)
 
 [Live Demo](https://css.wollygfx.repl.co)
 <br>
@@ -19,7 +19,7 @@ This workshop requires some basic knowledge of HTML, CSS, & JavaScript. Don’t 
 
 For this workshop we will use [Repl.it](https://repl.it), a free, online code editor. Click [here](https://repl.it/languages/HTML) to create an HTML project on repl.it. Once your coding environment spins up, you should see this:
 
-![Setup](https://cloud-qbmylslty.vercel.app/0image.png)
+![Setup](https://cdn.hackclub.com/rescue?url=https://cloud-qbmylslty.vercel.app/0image.png)
 
 ## HTML
 
@@ -80,7 +80,7 @@ Let's break this down:
 
 Here's the result of the code above:
 
-![Result](https://cloud-lblb3umex.vercel.app/0image.png)
+![Result](https://cdn.hackclub.com/rescue?url=https://cloud-lblb3umex.vercel.app/0image.png)
 
 ## JavaScript
 
@@ -296,7 +296,7 @@ Let's break this down:
 
 This is how the app looks like now:
 
-![App with some css](https://cloud-e6g9f5afr.vercel.app/0image.png)
+![App with some css](https://cdn.hackclub.com/rescue?url=https://cloud-e6g9f5afr.vercel.app/0image.png)
 
 Finally, we are going to style all the buttons:
 ```css  
@@ -352,13 +352,13 @@ The `:nth-of-type()` CSS pseudo-class matches elements of a given type (tag name
 
 This is how the app looks at the end:
 
-![Final result](https://cloud-k6qpdzuk1.vercel.app/0image.png)
+![Final result](https://cdn.hackclub.com/rescue?url=https://cloud-k6qpdzuk1.vercel.app/0image.png)
 
 ### Hack it!
 
 Yay! you made it to the end of this workshop.
 
-![Congrats GIF](https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
+![Congrats GIF](https://cdn.hackclub.com/rescue?url=https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
 
 You can always hack it and give it your own style. 
 

@@ -10,7 +10,7 @@ img: 'https://files.slack.com/files-pri/T0266FRGM-F01C8MC9L14/image_from_ios.jpg
 One of the most popular effects of modern web experience is **the parallax effect**. We are going to build a basic project to understand how the parallax effect works.
 To understand this workshop you will need to be familiar with HTML, CSS and JavaScript.
 
-<a href="https://total-parallax.giridharhackclu.repl.co/">![Final Result](https://cloud-1z03ndewk.vercel.app/ezgif.com-gif-maker__2_.gif)</a>
+<a href="https://total-parallax.giridharhackclu.repl.co/">![Final Result](https://cdn.hackclub.com/rescue?url=https://cloud-1z03ndewk.vercel.app/ezgif.com-gif-maker__2_.gif)</a>
 
 Here's the [live demo](https://total-parallax.giridharhackclu.repl.co/), and [source code](https://repl.it/@Giridharhackclu/total-parallax#index.html) of the project.
 
@@ -29,7 +29,7 @@ We know that objects at farther distances move with slower speeds than the neare
 
 We can see how the parallax scrolling works in this example [here](https://codepen.io/samdbeckham/full/OPXPNp).
 
-<a href="https://codepen.io/samdbeckham/full/OPXPNp" target="_blank"><img src="https://cloud-kt149rdr8.vercel.app/ezgif.com-add-text.gif" alt="parallax scrolling"/></a>
+<a href="https://codepen.io/samdbeckham/full/OPXPNp" target="_blank"><img src="https://cdn.hackclub.com/rescue?url=https://cloud-kt149rdr8.vercel.app/ezgif.com-add-text.gif" alt="parallax scrolling"/></a>
 
 ^As you scroll, each of the layers moves at different speeds.
 
@@ -80,7 +80,7 @@ This `function` has three arguments.
   We will add parallax for multiple layers. That is the reason we made a function to recall it for different layers. Then we will get the element(layer) required using `querySelector`. You can use any JavaScript DOM selector as your wish. Then translate the `Y-offset` of the element using CSS `transform: translateY();` to change the speed of that layer.
   The positive value into `translateY()` translates downwards and negative value translates upwards. Discover more about `translateY()` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateY).
 
-<a href="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png"><img src="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png" alt="translateY() example" height="250px" width="auto"/></a>
+<a href="https://cdn.hackclub.com/rescue?url=https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png"><img src="https://cdn.hackclub.com/rescue?url=https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png" alt="translateY() example" height="250px" width="auto"/></a>
 
 ## addEventListener
 
@@ -110,7 +110,7 @@ So finally check the output and scroll.
 
 Your final page looks something [like this](https://parallax-effect.giridharhackclu.repl.co/).
 
-<a href="https://parallax-effect.giridharhackclu.repl.co/"><img src="https://cloud-qld8y6jii.vercel.app/final_output.gif" alt="final result"/></a>
+<a href="https://parallax-effect.giridharhackclu.repl.co/"><img src="https://cdn.hackclub.com/rescue?url=https://cloud-qld8y6jii.vercel.app/final_output.gif" alt="final result"/></a>
 
 Try changing the speed to `1`, observe what happens to each layer and think why it happens.
 
@@ -147,7 +147,7 @@ function hrparallax(layer, distance, speed) {
 The `hrparallax` function makes the layer translate along x-direction as you scroll vertically.
 The positive value translates rightwards and negative value translates leftwards. Discover more about `translateX()` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateX).
 
-<a href="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_185155.png"><img src="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_185155.png" alt="translateX() example" width="auto" height="200px"/></a>
+<a href="https://cdn.hackclub.com/rescue?url=https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_185155.png"><img src="https://cdn.hackclub.com/rescue?url=https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_185155.png" alt="translateX() example" width="auto" height="200px"/></a>
 
 Add the following code inside the event listener.
 
@@ -160,7 +160,7 @@ For rightward movement the `speed` will be negative and for leftward movement it
 
 Then your final page looks something [like this](https://total-parallax.giridharhackclu.repl.co/).
 
-![Final Result](https://cloud-1z03ndewk.vercel.app/ezgif.com-gif-maker__2_.gif)
+![Final Result](https://cdn.hackclub.com/rescue?url=https://cloud-1z03ndewk.vercel.app/ezgif.com-gif-maker__2_.gif)
 
 That's it! You added both `vertical-parallax` and `horizontal-parallax` effects. Well done.
 

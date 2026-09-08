@@ -8,7 +8,7 @@ Welcome to the workshop. This is part 1 of the functional programming with js se
 
 This workshop will serve as an introduction to the upcoming parts of this series.
 
-<img alt="Functional Programming Intro" src="https://cloud-id64d2gzs.vercel.app/0image.png" width="400px" />
+<img alt="Functional Programming Intro" src="https://cdn.hackclub.com/rescue?url=https://cloud-id64d2gzs.vercel.app/0image.png" width="400px" />
 
 This workshop should take around **_20 minutes_** to complete.
 
@@ -19,7 +19,7 @@ The workshop is for anyone familiar with:
 - Javascript
 - General programming concecpts
 
-<img src="https://cloud-83pmg6qma.vercel.app/0image.png" alt="jsimage" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-83pmg6qma.vercel.app/0image.png" alt="jsimage" />
 
 You don't need to be a Guru in these topics, a basic understanding of them is more than enough!
 
@@ -52,7 +52,7 @@ The reason why these things happen is that we lack a paradigm for our programmin
 
 There are many programming paradigms like Imperative programming, Object-Oriented Programming, Functional Programming, etc.
 
-<img src="https://cloud-h4li5m1hj.vercel.app/0image.png" alt="different types of programming languages image" width="400px" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-h4li5m1hj.vercel.app/0image.png" alt="different types of programming languages image" width="400px" />
 
 People advocate their love for different programming paradigm and so do I. Functional Programming is my favorite as it offers a cleaner and a smaller codebase and offers great predictability of code!
 
@@ -67,7 +67,7 @@ Now, you finally know why you need to learn this programming paradigm so let’s
 
 [Lambda calculus](https://en.wikipedia.org/wiki/Lambda_calculus) is the mathematical foundation on which the functional programming paradigm is built. We don’t need to understand its mathematical implication although.
 
-<img src="https://cloud-qlxm58ybs.vercel.app/0image.png" alt="Lambda Symbol Image" width="400" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-qlxm58ybs.vercel.app/0image.png" alt="Lambda Symbol Image" width="400" />
 
 The reason I am telling you about it is a lot of time functional programming is accompanied by the Lambda Symbol (λ) and this Lamda basically represents the fact that it is based on lambda calculus (see, now you know it!).
 
@@ -79,7 +79,7 @@ Although there can be a lot of specifications on what makes a language functiona
 
 Higher-order functions are functions that can either or both take a _function as a parameter ( i.e argument ) or can return a function._
 
-<img src="https://cloud-3cfa7ltpu.vercel.app/0image.png" alt="Higher order function Image" width="450px" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-3cfa7ltpu.vercel.app/0image.png" alt="Higher order function Image" width="450px" />
 
 Higher-order functions exist in JavaScript which makes it eligible to qualify as a functional programming language.
 
@@ -94,7 +94,7 @@ I know it is hard to believe,  but when you are writing your code functional pro
 
  We use **Higher-order functions and recursion** to mimic loops. Loops are ugly and make code hard to understand. So, we use Higher-order functions and recursion for the job, which makes our code a lot more cleaner!
 
- <img src="https://cloud-2tzqnkbqc.vercel.app/0image.png" alt="programming without loops image" width="400px" />
+ <img src="https://cdn.hackclub.com/rescue?url=https://cloud-2tzqnkbqc.vercel.app/0image.png" alt="programming without loops image" width="400px" />
 
  We will be using a Javascript library ( will discuss it in a later section of this workshop ) to assist us in writing functional programming code and mimic this behavior!
 
@@ -139,7 +139,7 @@ You don’t need to worry about them, **they are Higher-order functions to mimic
 
 In simple words, they only depend on the arguments passed to them and always produce the same output for a give a given input! Meaning you should not use any variable value apart from your function’s input to calculate its output.
 
-<img src="https://cloud-3rfz3uikb.vercel.app/0image.png" alt="Pure functions image" width="500px" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-3rfz3uikb.vercel.app/0image.png" alt="Pure functions image" width="500px" />
 
 In simple words, they only depend on the arguments passed to them and always produce the same output for a given input! Meaning you should not use any variable value apart from your function’s input to calculate its output.
 
@@ -147,7 +147,7 @@ In simple words, they only depend on the arguments passed to them and always pro
 
 In functional programming we create values, which we then provide as inputs to our functions for processing, Now if these functions want to do some transformation to the object’s state, then they create a new object and initialize it with the transformed value.
 
-<img src="https://cloud-gjx9bz2g3.vercel.app/0image.png" alt="Immutablity Image" width="450px" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-gjx9bz2g3.vercel.app/0image.png" alt="Immutablity Image" width="450px" />
 
 This value will be returned by the function without changing the original input object’s state. This gives birth to immutability! ( In the next parts of this series we will elaborate on it via some code examples! )
 
@@ -155,7 +155,7 @@ This value will be returned by the function without changing the original input 
 
 Changing state outside of a function is referred to as a side effect.
 
-<img src="https://cloud-eklk947ki.vercel.app/0group_5.png" alt="no side-effects image" width="500xp" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-eklk947ki.vercel.app/0group_5.png" alt="no side-effects image" width="500xp" />
 
 
 This means, that a function cannot change any state outside of the function. This makes sure that our code is free from the issues that regularly occur in programs due to functions having side effects.
@@ -165,7 +165,7 @@ This means, that a function cannot change any state outside of the function. Thi
 
 [Ramda](https://ramdajs.com/) is a functional programming library for Javascript that we will use throughout this series to implement functional programming in Javascript.
 
-<img src="https://cloud-847umy3yj.vercel.app/0image.png" alt="Ramda replacement" width="500px" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-847umy3yj.vercel.app/0image.png" alt="Ramda replacement" width="500px" />
 
 ## Introduction ends here!
 

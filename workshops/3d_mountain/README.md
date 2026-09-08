@@ -2,13 +2,13 @@
 name: '3D Mountain'
 description: 'Create a 3D mountain with Python data viz tools'
 author: '@shivesh01'
-img: 'https://cloud-a08hob7s0.vercel.app/0workshop1.gif'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-a08hob7s0.vercel.app/0workshop1.gif'
 locales: 'es-xl'
 ---
 
 Mountains are fun! Here, check out this mountain on Google Maps:
 
-![Mount san bruno](https://cloud-8at1ve02p.vercel.app/0ezgif.com-gif-maker.gif)    
+![Mount san bruno](https://cdn.hackclub.com/rescue?url=https://cloud-8at1ve02p.vercel.app/0ezgif.com-gif-maker.gif)    
 
 The reason I'm showing you this is because you're going to make your own mountain with Python! 🐍🚀
 
@@ -56,7 +56,7 @@ DataFrame = DataFrame.unstack()
 
 The `unstack()` function unstacks the row to columns. Here's a diagram that shows how it works:
 
-![unstack img](https://cloud-5sfh036gn.vercel.app/0reshaping_unstack.png)
+![unstack img](https://cdn.hackclub.com/rescue?url=https://cloud-5sfh036gn.vercel.app/0reshaping_unstack.png)
 
 Under that, add:
 
@@ -66,7 +66,7 @@ DataFrame = DataFrame.reset_index()
 
 When you concatenate, sort, join or do some rearrangements with your `DataFrame`, the index gets shuffled or out of order. To reset the index of a `DataFrame`, we use `reset_index()` to resort the indexes.
 
-![reset index](https://cloud-8p15tas3t.vercel.app/0reshaping_unstack_.png)
+![reset index](https://cdn.hackclub.com/rescue?url=https://cloud-8p15tas3t.vercel.app/0reshaping_unstack_.png)
 
 Under that, add:
 
@@ -123,7 +123,7 @@ This creates a three-dimensional plot.
 - `cmap` defines the colormap of the plot. We're using the `jet` colormap. Learn more about the different types of colormaps [here](https://matplotlib.org/tutorials/colors/colormaps.html).
 - `linewidth=0.2` makes the curves smoother.
 
-![colormap list](https://cloud-hppbp7hy7.vercel.app/0colormap.gif)
+![colormap list](https://cdn.hackclub.com/rescue?url=https://cloud-hppbp7hy7.vercel.app/0colormap.gif)
 
 Next, add:
 
@@ -187,24 +187,24 @@ plt.show()
 
 </details>
 
-![Demo](https://cloud-ko9v4kpdg.vercel.app/0ezgif.com-gif-maker__1_.gif)
+![Demo](https://cdn.hackclub.com/rescue?url=https://cloud-ko9v4kpdg.vercel.app/0ezgif.com-gif-maker__1_.gif)
 
 Congrats!!! You've completed the workshop! Pretty simple, right?
 
 ## Hacking
 
-![congratulations g.i.f](https://cloud-1th3ydnib.vercel.app/2workshop_happy.gif)
+![congratulations g.i.f](https://cdn.hackclub.com/rescue?url=https://cloud-1th3ydnib.vercel.app/2workshop_happy.gif)
 
 Now that you've explored how to make a basic 3D mountain, the possibilities are endless. Real data scientists use Python, along with the tools you used in this workshop, to make complex data visualizations. Here are a few examples I came up with that you can try—but try finding some interesting things you can do in addition to these!
 
 - Example 1, using a CSV from Kaggle to make a 3D Volcano.
-  - [Demo img](https://cloud-94iqxy8lo.vercel.app/0volcano.gif)
+  - [Demo img](https://cdn.hackclub.com/rescue?url=https://cloud-94iqxy8lo.vercel.app/0volcano.gif)
   - [Code](https://repl.it/@ShiveshSingh/Volcano-3D-Heatmap)
 - Example 2, using Array, and Cos function to make a Surface plot.
-  - [Demo img](https://cloud-iwpkargvc.vercel.app/0screenshot_2021-01-10_at_15.24.00.png)
+  - [Demo img](https://cdn.hackclub.com/rescue?url=https://cloud-iwpkargvc.vercel.app/0screenshot_2021-01-10_at_15.24.00.png)
   - [Code](https://repl.it/@ShiveshSingh/Surface-Plot-3D#main.py)
 - Example 3, using Loops, List, and Sin function to make the contour plot.
-  - [Demo img](https://cloud-iwpkargvc.vercel.app/1screenshot_2021-01-10_at_15.25.30.png)
+  - [Demo img](https://cdn.hackclub.com/rescue?url=https://cloud-iwpkargvc.vercel.app/1screenshot_2021-01-10_at_15.25.30.png)
   - [Code](https://repl.it/@ShiveshSingh/3D-Contour-Plot#main.py)
 
 Happy hacking!

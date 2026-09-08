@@ -2,7 +2,7 @@
 name: 'Python Turtle'
 description: 'Draw shapes & patterns using Python’s Turtle library'
 author: '@YashKalbande'
-img: 'https://cloud-qtdzdcl76.vercel.app/2020-10-22_arzjn43gad592m4py1nqcngtnmjkqzma.jpeg'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-qtdzdcl76.vercel.app/2020-10-22_arzjn43gad592m4py1nqcngtnmjkqzma.jpeg'
 ---
 
 # Exciting Visuals with Python Turtle
@@ -11,7 +11,7 @@ img: 'https://cloud-qtdzdcl76.vercel.app/2020-10-22_arzjn43gad592m4py1nqcngtnmjk
 
 Welcome! Using Python, with the help of the turtle library, we can create stunning visuals. First, I'm going to present to you the basics of the Python turtle library. Then I’ll share with you how to draw shapes like triangles, stars, and hexagons. Finally, you’ll create your own graphics.
 
-![Benzen ring with Turtle](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
+![Benzen ring with Turtle](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
 
 ## Hello, Turtle!
 
@@ -64,7 +64,7 @@ forward(100)
 
 Click on Run Button. The output of this program will look like this:
 
-![Square](https://cloud-36kk4uh0h.vercel.app/square.gif)
+![Square](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/square.gif)
 
 The instructions in your program tell the "turtle" how to move. The turtle draws a line behind it as it moves. This program draws a square. The steps given to the program are:
 
@@ -227,7 +227,7 @@ pencil.forward(100)
 turtle.done()
 ```
 
-![Triangle](https://cloud-36kk4uh0h.vercel.app/triangle.gif)
+![Triangle](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/triangle.gif)
 
 **Star**<br />
 
@@ -243,7 +243,7 @@ for i in range(50):
 turtle.done()
 ```
 
-![Star](https://cloud-36kk4uh0h.vercel.app/star.gif)
+![Star](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/star.gif)
 
 **Hexagon**<br />
 
@@ -262,7 +262,7 @@ for i in range(num_sides):
 turtle.done()
 ```
 
-![Hexagon](https://cloud-36kk4uh0h.vercel.app/hexagon.gif)
+![Hexagon](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/hexagon.gif)
 
 ## Rainbow Benzene
 
@@ -280,7 +280,7 @@ for x in range(360):
     t.left(59)
 ```
 
-![Turtle Benzen ring](https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
+![Turtle Benzen ring](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/turtle_benzene_ring.gif)
 
 ## Drawing
 
@@ -383,4 +383,4 @@ Here are some examples to give you some ideas:
 - [Geometrical Wheel Shape Demo and Code](https://repl.it/@YashKalbande/geometrical#main.py)
 - [Colorful Spiral Demo and Code](https://repl.it/@YashKalbande/spiral#main.py)
 
-![Turtle Spiral](https://cloud-36kk4uh0h.vercel.app/spiral.gif)
+![Turtle Spiral](https://cdn.hackclub.com/rescue?url=https://cloud-36kk4uh0h.vercel.app/spiral.gif)

@@ -2,7 +2,7 @@
 name: Flask Login
 description: Make a Flask API that allows you to register and log in users.
 author: '@sohamb117'
-img: 'https://cloud-1x9c5m3zh.vercel.app/0screen-capture.gif'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-1x9c5m3zh.vercel.app/0screen-capture.gif'
 ---
 
 Open a website, say [GitHub](https://github.com). Okay, now sign in. What just happened? What did the code do? How does "Logging In" work? To find out, let's build a login system ourselves!
@@ -14,7 +14,7 @@ We'll have to:
 
 Here's a quick look at what we'll be making:
 
-![final product gif](https://cloud-1x9c5m3zh.vercel.app/0screen-capture.gif)
+![final product gif](https://cdn.hackclub.com/rescue?url=https://cloud-1x9c5m3zh.vercel.app/0screen-capture.gif)
 
 This is a simple backend demo, but you can hook this up to ANY frontend you want - and I've provided a demo on how to do that at the bottom.
 
@@ -30,11 +30,11 @@ The [Flask](https://pypi.org/project/flask/) library in Python is what we'll use
 
 In order to test our Flask server, we'll need to send requests to the server. We can use Insomnia to do this. Insomnia is great because it is available for so many platforms. All you need is a Chrome browser. You can get Insomnia at the [Chrome Web Store](https://chrome.google.com/webstore/detail/insomnia-rest-client/gmodihnfibbjdecbanmpmbmeffnmloel?hl=en-US). You should see a screen like this:
 
-![Insomnia Web Store](https://cloud-a7eisnzme.vercel.app/0image.png)
+![Insomnia Web Store](https://cdn.hackclub.com/rescue?url=https://cloud-a7eisnzme.vercel.app/0image.png)
 
 Press the "Add to Chrome" button, and then press "Add App."
 
-![Add to Chrome](https://cloud-6j7h3tfkw.vercel.app/0image.png)
+![Add to Chrome](https://cdn.hackclub.com/rescue?url=https://cloud-6j7h3tfkw.vercel.app/0image.png)
 
 We'll work more with Insomnia after writing our code.
 
@@ -43,13 +43,13 @@ We'll work more with Insomnia after writing our code.
 We'll be using [Repl.it](https://repl.it) to work on this, because it makes it very easy for us to run our webserver and code in Python. Let's set up our accounts.
 
 Go to [repl.it](https://repl.it). You should see something like this:
-![repl.it](https://cloud-i5iknsq3z.vercel.app/0image.png)
+![repl.it](https://cdn.hackclub.com/rescue?url=https://cloud-i5iknsq3z.vercel.app/0image.png)
 
 Either press "Log In" or "Sign Up," depending on whether or not you already have an account. 
 Once you're done, you should see the "Home" page.
 Press either the plus icon in the top right or the "New Repl" button in the top left. You should see this screen: 
 
-![repl create](https://cloud-f0le2m5gi.vercel.app/0image.png)
+![repl create](https://cdn.hackclub.com/rescue?url=https://cloud-f0le2m5gi.vercel.app/0image.png)
 
 Set the language to Python and the name to anything you want.
 
@@ -94,7 +94,7 @@ This function has a return value of "Hello World!" so that's what Flask will dis
 
 See it for yourself by clicking the green "Run" button at the top of the repl. Repl.it should automatically open a panel to allow you to view your Flask app. It should also have a URL to the app. 
 
-![Link](https://cloud-94isv6yfc.vercel.app/0image.png)
+![Link](https://cdn.hackclub.com/rescue?url=https://cloud-94isv6yfc.vercel.app/0image.png)
 
 If you open the URL in a new tab and you should see "Hello World!" displayed. Congratulations, you've successfully finished creating your first route!
 
@@ -218,12 +218,12 @@ Let's launch the app (you can do this by going to `chrome://apps` in the URL bar
 
 You should see something like this:
 
-![Insomnia](https://cloud-m4ukm1v5f.vercel.app/0image.png)
+![Insomnia](https://cdn.hackclub.com/rescue?url=https://cloud-m4ukm1v5f.vercel.app/0image.png)
 
 Click "Create a Request" and enter any request name, it doesn't really matter.
 
 You should see this:
-![Request](https://cloud-ottonqsbw.vercel.app/0image.png)
+![Request](https://cdn.hackclub.com/rescue?url=https://cloud-ottonqsbw.vercel.app/0image.png)
 
 In the dropdown menu labeled "GET" by default, click it and set to POST. Insomnia will send a post request now.
 

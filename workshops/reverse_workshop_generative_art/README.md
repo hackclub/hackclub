@@ -9,7 +9,7 @@ locales: 'es-xl'
 
 Let's create something like this:
 
-![Workshop's target project](https://cloud-7m2tx179d-hack-club-bot.vercel.app/0gif1.gif)
+![Workshop's target project](https://cdn.hackclub.com/rescue?url=https://cloud-7m2tx179d-hack-club-bot.vercel.app/0gif1.gif)
 
 This is another reverse workshop, instead of telling you how to make something step-by-step I'm going to give you some inspiration and the materials you need to make it.
 

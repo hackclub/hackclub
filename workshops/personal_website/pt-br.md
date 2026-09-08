@@ -27,11 +27,11 @@ Para começar, vá para [https://repl.it/languages/html](https://repl.it/languag
 
 Clique no botão "Sign Up" no canto superior direito.
 
-![Campos para fazer login](https://cloud-ae4zkoehw-hack-club-bot.vercel.app/0image.png)
+![Campos para fazer login](https://cdn.hackclub.com/rescue?url=https://cloud-ae4zkoehw-hack-club-bot.vercel.app/0image.png)
 
 Seu ambiente de codificação será gerado em apenas alguns segundos!
 
-![Texto dentro de um editor de código](https://cloud-gcyfpgb0u-hack-club-bot.vercel.app/0image.png)
+![Texto dentro de um editor de código](https://cdn.hackclub.com/rescue?url=https://cloud-gcyfpgb0u-hack-club-bot.vercel.app/0image.png)
 
 ## Parte II: O arquivo HTML
 
@@ -41,7 +41,7 @@ HTML significa Hypertext Markup Language (Linguagem de marcação de hipertexto)
 
 Você deve ter o arquivo `index.html` aberto, e um monte de texto com símbolos `<` & `>`. Isso é HTML!
 
-![Texto dentro de um editor de código](https://cloud-mgklr52aw-hack-club-bot.vercel.app/0image.png)
+![Texto dentro de um editor de código](https://cdn.hackclub.com/rescue?url=https://cloud-mgklr52aw-hack-club-bot.vercel.app/0image.png)
 
 O Repl.it nos dá algum código para começar, mas vamos começar do zero. Vá em frente e apague tudo no arquivo `index.html` e então **digite** o seguinte: 
 
@@ -58,7 +58,7 @@ Esta estrutura é comum a todas as páginas HTML. Na verdade, você pode dar uma
 
 <!-- Source https://developers.google.com/web/tools/chrome-devtools/inspect-styles/imgs/elements-panel.png -->
 
-![Inspecione o painel de elementos com estilos html e css de um site](https://cloud-4zpw37atj-hack-club-bot.vercel.app/3elements-panel.png)
+![Inspecione o painel de elementos com estilos html e css de um site](https://cdn.hackclub.com/rescue?url=https://cloud-4zpw37atj-hack-club-bot.vercel.app/3elements-panel.png)
 
 **Antes de prosseguir, vamos rever brevemente o que significa nosso template atual.**
 
@@ -70,15 +70,15 @@ O `<!DOCTYPE html>` diz ao navegador qual versão do HTML deve esperar. Por ser 
 
 Vamos conferir como é o nosso arquivo HTML na visualização ao vivo! Para fazer isso, clique no botão **Run** acima do editor ou pressione <kbd>Ctrl</kbd> + <kbd>Enter</kbd> (<kbd>Command</kbd> + <kbd>Enter</kbd> em Mac).
 
-![Um botão verde](https://cloud-d92zz5ssb-hack-club-bot.vercel.app/0image.png)
+![Um botão verde](https://cdn.hackclub.com/rescue?url=https://cloud-d92zz5ssb-hack-club-bot.vercel.app/0image.png)
 
 A partir daí, a visualização ao vivo à direita do editor deve mostrar como está seu site. Se você quiser vê-lo em uma nova aba, a URL acima da pré-visualização do site é a URL ao vivo para o seu site
 
-![Imagem de um url para um site](https://cloud-chbm1r7jn-hack-club-bot.vercel.app/0image.png)
+![Imagem de um url para um site](https://cdn.hackclub.com/rescue?url=https://cloud-chbm1r7jn-hack-club-bot.vercel.app/0image.png)
 
 Você também pode abrir a visualização externa ao vivo clicando no ícone que se parece com uma caixa com uma seta. Isto abrirá a visualização ao vivo em uma nova aba na URL acima mencionada.
 
-![Abrindo o site em uma nova página](https://cloud-9logx0r6t-hack-club-bot.vercel.app/0v__deo_sem_t__tulo_____feito_com_o_clipchamp.gif)
+![Abrindo o site em uma nova página](https://cdn.hackclub.com/rescue?url=https://cloud-9logx0r6t-hack-club-bot.vercel.app/0v__deo_sem_t__tulo_____feito_com_o_clipchamp.gif)
 
 Como você pode ver, a página está em branco. Isto porque ainda não acrescentamos nada à seção `body`. Vamos adicionar conteúdo!
 
@@ -162,7 +162,7 @@ Enquanto o HTML supervisiona o conteúdo e a forma como esse conteúdo é estrut
 
 Já temos um `style.css` entre nossos arquivos. O CSS é chamado de folha de estilo externa porque o arquivo CSS é externo ao arquivo HTML (ou seja, a folha de estilo não está dentro do arquivo HTML).
 
-![Três arquivos em uma lista](https://cloud-fxxk8zq5c-hack-club-bot.vercel.app/0image.png)
+![Três arquivos em uma lista](https://cdn.hackclub.com/rescue?url=https://cloud-fxxk8zq5c-hack-club-bot.vercel.app/0image.png)
 
 Embora tenhamos um arquivo CSS, até dizermos explicitamente ao arquivo HTML para usar o arquivo CSS, ele não o utilizará. Devemos vincular explicitamente o arquivo CSS no HTML. Faremos isso digitando o seguinte no cabeçalho de `index.html` (entre `<head>` e `</head>`), porque o cabeçalho é onde dizemos as informações sobre a página para o navegador.
 
@@ -244,7 +244,7 @@ Ah, é realmente bonito de se ver.
 
 Basta clicar no nome atual e depois em `name`.
 
-![Botão Editar para alterar o nome de um projeto](https://cloud-bpasdxn89-hack-club-bot.vercel.app/0image.png)
+![Botão Editar para alterar o nome de um projeto](https://cdn.hackclub.com/rescue?url=https://cloud-bpasdxn89-hack-club-bot.vercel.app/0image.png)
 
 Assim que estiver satisfeito com o nome que lhe deu, pressione <kbd>Enter</kbd> para confirmar suas alterações.
 

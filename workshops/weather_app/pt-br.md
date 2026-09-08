@@ -2,7 +2,7 @@
 name: 'App do Tempo'
 description: 'Crie um app para checar o tempo com HTML, CSS e JavaScript'
 author: '@gautamjajoo, @vitorvavolizza'
-img: 'https://cloud-w7f0jvahc.vercel.app/0weather-app.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-w7f0jvahc.vercel.app/0weather-app.png'
 ---
 
 Você é um iniciante em JavaScript e não sabe por onde começar? Se sim, você está no lugar certo! Ser um iniciante na programação e ter que aprender os fundamentos pode ser muito doloroso - mas a melhor maneira de aprender é construindo projetos simples e divertidos! Neste workshop, você vai construir um aplicativo que usa APIs da web para obter o clima de qualquer cidade.
@@ -349,17 +349,17 @@ Para este projeto, estaremos usando uma API de tempo, a [OpenWeather](https://op
 
 Para começar, você terá que criar uma conta no OpenWeather para gerar uma chave API para você mesmo.
 
-![login](https://cloud-dk4z6apbz.vercel.app/0login.gif)
+![login](https://cdn.hackclub.com/rescue?url=https://cloud-dk4z6apbz.vercel.app/0login.gif)
 
 Após o registro, dirija-se à seção [API](https://openweathermap.org/api).
 
 Estaremos utilizando a API `Current Weather Data`. Inscreva-se na API e depois disso, você receberá a chave em seu [perfil](https://home.openweathermap.org/api_keys).
 
-![api_key](https://cloud-1uiy34o6d.vercel.app/0api_key.gif)
+![api_key](https://cdn.hackclub.com/rescue?url=https://cloud-1uiy34o6d.vercel.app/0api_key.gif)
 
 Depois de estabelecer a chave, vamos agora ler os documentos para saber em que formato a API responde. Os [docs](https://openweathermap.org/current) contêm o formato da chamada API, na aba `By City name`.
 
-![api_docs](https://cloud-2r7ixfrb6.vercel.app/0api.gif)
+![api_docs](https://cdn.hackclub.com/rescue?url=https://cloud-2r7ixfrb6.vercel.app/0api.gif)
 
 O formato da API é algo parecido com isto:
 
@@ -605,6 +605,6 @@ Aqui estão algumas coisas que você deve considerar para melhorar seu conhecime
 
 Por último, mas não menos importante, seja o mais criativo e dinâmico quanto possível. Isto é apenas um começo e tenho certeza de que após este workshop você criará projetos impressionantes.
 
-![yayy](https://cloud-m158dsxpf.vercel.app/0yay.gif)
+![yayy](https://cdn.hackclub.com/rescue?url=https://cloud-m158dsxpf.vercel.app/0yay.gif)
 
 Agora que você terminou de construir este maravilhoso projeto, compartilhe sua bela criação com outras pessoas! Lembre-se, é só mandar a URL do seu projeto!

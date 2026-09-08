@@ -10,7 +10,7 @@ Vamos fazer nosso primeiro jogo no Sprig!
 
 Vamos construir o [jogo Sokoban](https://www.mathsisfun.com/games/sokoban.html). Para começar a usar o Sprig, basta abrir [o editor do Sprig](https://editor.sprig.hackclub.com).
 
-[![Editor Sprig](https://cloud-mju5h5o89-hack-club-bot.vercel.app/0screenshot_2022-11-02_at_16-01-13_sprig.png)](https://sprig.hackclub.com)
+[![Editor Sprig](https://cdn.hackclub.com/rescue?url=https://cloud-mju5h5o89-hack-club-bot.vercel.app/0screenshot_2022-11-02_at_16-01-13_sprig.png)](https://sprig.hackclub.com)
 
 À esquerda, temos um editor e, à direita, temos o jogo real. Vamos usar o editor para escrever o código do nosso jogo.
 

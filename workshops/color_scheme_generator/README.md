@@ -2,14 +2,14 @@
 name: "Color Scheme Generator"
 description: "Create color schemes using React Hooks"
 author: "@giridhar7632"
-img: "https://cloud-dshtwo7if.vercel.app/0colorschemegenerator.png"
+img: "https://cdn.hackclub.com/rescue?url=https://cloud-dshtwo7if.vercel.app/0colorschemegenerator.png"
 ---
 
 # Color Scheme Generator
 
 In this workshop, we're going to use [React Hooks](https://reactjs.org/docs/hooks-intro.html) to create a random color scheme generator.
 
-![Final Result](https://cloud-16p9skn27.vercel.app/0colorscheme.png)
+![Final Result](https://cdn.hackclub.com/rescue?url=https://cloud-16p9skn27.vercel.app/0colorscheme.png)
 
 Here's the [live demo](https://color-scheme-generator.giridharhackclu.repl.co/) and [source code](https://repl.it/@Giridharhackclu/Color-scheme-generator#src/index.js)
 
@@ -228,7 +228,7 @@ useEffect(getColor, [count])
 
 Every time you click the button, `count` changes. As the `count` changes, the `useEffect()` runs, `getColor()` is executed, and the `colors` array changes. 
 
-![Visualisation](https://cloud-endlseu6b.vercel.app/0resized.png)
+![Visualisation](https://cdn.hackclub.com/rescue?url=https://cloud-endlseu6b.vercel.app/0resized.png)
 
 You cannot see any colors on the screen. Let's now render the `Color.js` component inside for the `App.js` component and pass the `colors` array as a prop.
 
@@ -269,7 +269,7 @@ export default function App() {
 
 Click on the `Run` button to see the output. You can see random color-schemes on the webpage. When you click the `Change` button the colors will change. 
 
-![Final Project](https://cloud-hptr7s5bf.vercel.app/0color-schemer.gif)
+![Final Project](https://cdn.hackclub.com/rescue?url=https://cloud-hptr7s5bf.vercel.app/0color-schemer.gif)
 
 You can check the final code [here](https://color-scheme-generator.giridharhackclu.repl.co/).
 

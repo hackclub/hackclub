@@ -2,12 +2,12 @@
 name: 'Dice Rolling'
 description: 'Create a dice rolling simulator with Python and turtle!'
 author: '@JakeGerber'
-img: 'https://cloud-8ogf0pnlo.vercel.app/0screenshot__1424_.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-8ogf0pnlo.vercel.app/0screenshot__1424_.png'
 ---
 
 Create the dice rolling simulation of your dreams with this workshop by using Python and the turtle library. It's cool even if you don't play DND! Maybe you just like rolling dice?
 
-<img src="https://cloud-8ogf0pnlo.vercel.app/0screenshot__1424_.png" width="900" alt="Dice Rolling Example">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-8ogf0pnlo.vercel.app/0screenshot__1424_.png" width="900" alt="Dice Rolling Example">
 
 [Final demo and code](https://repl.it/@CosmicSnowman/Dice-Roll#main.py)
 
@@ -17,7 +17,7 @@ We're going to use [Repl.it](https://repl.it/~), a free, online coding environme
 
 Create a new Python repl by going to [repl.it/languages/python3](https://repl.it/languages/python3)
 
-<img src="https://cloud-ai5440o46.vercel.app/0screenshot__1423_.png" width="600" alt="Python Repl">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-ai5440o46.vercel.app/0screenshot__1423_.png" width="600" alt="Python Repl">
 
 ## Initial Statements
 
@@ -94,7 +94,7 @@ The `dice.py` file that we imported earlier and will create in a moment is used 
 
 Create the `dice.py` file as shown below. We're gonna put all of our fancy dice functions in this file.
 
-<img src="https://cloud-p8cbn4vsp.vercel.app/0screenshot__1421_.png" width="600" alt="Python Repl">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-p8cbn4vsp.vercel.app/0screenshot__1421_.png" width="600" alt="Python Repl">
 
 ```py
 import turtle
@@ -107,7 +107,7 @@ Add these statements to the top so we can access the `turtle` and `random` libra
 
 ## Drawing the Box
 
-<img src="https://cloud-eexbpirit.vercel.app/0screenshot__1425_.png" width="380" alt="Drawn Box">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-eexbpirit.vercel.app/0screenshot__1425_.png" width="380" alt="Drawn Box">
 
 Every dice has a box. If not then it's just circles. Only circles. Pretty ominous. Let's add a function that draws a box.
 
@@ -159,7 +159,7 @@ Then, add a for loop and draw the box. We're using a for loop here so that we ca
 
 ## Rolling the Die
 
-<img src="https://cloud-2mtzavva3.vercel.app/0screenshot__1429_.png" width="380" alt="Dots on the Box">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-2mtzavva3.vercel.app/0screenshot__1429_.png" width="380" alt="Dots on the Box">
 
 ```py
 def rolls(x, y, size, radius, color, roll):

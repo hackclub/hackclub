@@ -2,7 +2,7 @@
 name: 'App de Tarefas'
 description: 'Crie um app de tarefas full-stack usando React e Firebase'
 author: '@giridhar7632, @vitorvavolizza'
-img: 'https://cloud-2nf3f60u4.vercel.app/0todo_app.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-2nf3f60u4.vercel.app/0todo_app.png'
 ---
 
 ## App de Tarefas
@@ -11,7 +11,7 @@ A combinação do React e do Firebase pode levar os aplicativos da web a um nív
 
 Vamos construir algo semelhante a isso. 👇
 
-![App de Tarefas Final](https://cloud-2nf3f60u4.vercel.app/0todo_app.png)
+![App de Tarefas Final](https://cdn.hackclub.com/rescue?url=https://cloud-2nf3f60u4.vercel.app/0todo_app.png)
 
 Confira a [demo ao vivo](https://app-de-tarefas-inicial.vitorvavolizza.repl.co/) e o [código-fonte](https://repl.it/@VitorVavolizza/app-de-tarefas-final#src/App.js).
 
@@ -34,7 +34,7 @@ Ele contém `create-react-app` e `firebase` instalados. Ele também contém todo
 
 Após a instalação, pressione o botão `Run` na parte superior. Se seu projeto estiver assim, está pronto para prosseguir.
 
-![projeto inicial](https://cloud-5vj1vtivl.vercel.app/0todo-starter-template.png)
+![projeto inicial](https://cdn.hackclub.com/rescue?url=https://cloud-5vj1vtivl.vercel.app/0todo-starter-template.png)
 
 ## Criação de um projeto Firebase
 
@@ -48,27 +48,27 @@ O **Firebase Realtime Database** é hospedado na nuvem. Os dados são armazenado
 
 Abra o [Firebase](https://firebase.google.com); depois de entrar, clique em `Ir para o console` no canto superior direito.
 
-![firebase.com](https://cloud-swc0vwpr0.vercel.app/2firebase.png)
+![firebase.com](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/2firebase.png)
 
 Em seu console, se você ainda não tem nenhum projeto, ele estará limpo e vazio. Clique em `Create Project` para adicionar um novo projeto.
 
-![Firebase console](https://cloud-swc0vwpr0.vercel.app/0firebase_console.png)
+![Firebase console](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/0firebase_console.png)
 
 Conclua todas as etapas para criar um projeto Firebase. Nomeie seu projeto como desejar.
 
-![Etapa 1](https://cloud-swc0vwpr0.vercel.app/6step-1.png)
+![Etapa 1](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/6step-1.png)
 
 Depois de dar um nome ao seu projeto, clique no botão `Continue` para prosseguir. Esta é uma etapa opcional para usar o Google Analytics em seu projeto, mas você não precisará dela neste workshop. Clique em `Continue`.
 
-![Etapa 2](https://cloud-swc0vwpr0.vercel.app/7step-2.png)
+![Etapa 2](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/7step-2.png)
 
 Finalmente, clique em `Criar Projeto`.
 
-![Etapa 3](https://cloud-swc0vwpr0.vercel.app/8step-3.png)
+![Etapa 3](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/8step-3.png)
 
 🎉 Bingo!!! Seu projeto Firebase será criado. Você deveria ver algo assim.
 
-![Projeto criado](https://cloud-swc0vwpr0.vercel.app/3project_created.png)
+![Projeto criado](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/3project_created.png)
 
 Clique no botão `Continue`.
 
@@ -78,15 +78,15 @@ Agora, vamos configurar nosso projeto com o Firebase.
 
 Clique no ícone `(</>)` da Web.
 
-![Visão geral do projeto](https://cloud-swc0vwpr0.vercel.app/4project_overview.png)
+![Visão geral do projeto](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/4project_overview.png)
 
 Registre seu projeto com um nome.
 
-![Register name](https://cloud-swc0vwpr0.vercel.app/5register_app.png)
+![Register name](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/5register_app.png)
 
 Essas são as credenciais do seu aplicativo. Este código ajudará seu projeto a se conectar ao projeto do Firebase.
 
-![Firebase config](https://cloud-swc0vwpr0.vercel.app/1firebase_sdk.png)
+![Firebase config](https://cdn.hackclub.com/rescue?url=https://cloud-swc0vwpr0.vercel.app/1firebase_sdk.png)
 
 Certifique-se de copiar a configuração do Firebase do seu aplicativo da web (objeto `firebaseConfig`).
 
@@ -118,23 +118,23 @@ Agora vamos criar um banco de dados para nosso aplicativo.
 
 Abra o console do projeto Firebase. Clique em `Realtime Database` na seção `Build` na barra lateral esquerda.
 
-![Barra lateral do projeto](https://cloud-9uzz77u17.vercel.app/4project_overview-1.png)
+![Barra lateral do projeto](https://cdn.hackclub.com/rescue?url=https://cloud-9uzz77u17.vercel.app/4project_overview-1.png)
 
 Você verá algo assim. Clique no botão `Create Database`.
 
-![Criar banco de dados](https://cloud-9uzz77u17.vercel.app/3create_database.png)
+![Criar banco de dados](https://cdn.hackclub.com/rescue?url=https://cloud-9uzz77u17.vercel.app/3create_database.png)
 
 Utilize `Start in Test Mode` e clique em `Enable`.
 
-![Modo de teste](https://cloud-9uzz77u17.vercel.app/5test_mode.png)
+![Modo de teste](https://cdn.hackclub.com/rescue?url=https://cloud-9uzz77u17.vercel.app/5test_mode.png)
 
 Em seguida, seu Realtime Database será criado e iniciado com `null` (nada).
 
-![Realtime Database](https://cloud-9uzz77u17.vercel.app/2database.png)
+![Realtime Database](https://cdn.hackclub.com/rescue?url=https://cloud-9uzz77u17.vercel.app/2database.png)
 
 O Firebase permite inicialmente que qualquer pessoa leia e grave o banco de dados por 30 dias. Você pode editar as regras a qualquer momento na aba `Rules`.
 
-![Regras](https://cloud-9uzz77u17.vercel.app/1database_rules.png)
+![Regras](https://cdn.hackclub.com/rescue?url=https://cloud-9uzz77u17.vercel.app/1database_rules.png)
 
 Agora que temos um banco de dados, vamos criar um aplicativo de tarefas usando esse banco de dados.
 
@@ -144,7 +144,7 @@ CRUD significa Create, Read, Update e Delete. (Criar, Ler, Atualizar e Excluir)
 
 Essas são as quatro operações mais básicas que podem ser executadas com a maioria dos sistemas de banco de dados tradicionais e são as bases para interagir com qualquer banco de dados.
 
-![CRUD](https://cloud-9uzz77u17.vercel.app/0crud_operations.png)
+![CRUD](https://cdn.hackclub.com/rescue?url=https://cloud-9uzz77u17.vercel.app/0crud_operations.png)
 
 Se você quiser aprender mais sobre a teoria sobre CRUD, dê uma olhada [aqui](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
 
@@ -345,11 +345,11 @@ function App() {
 export default App;
 ```
 
-![Saída com texto](https://cloud-792qf1oid.vercel.app/0input.js.png)
+![Saída com texto](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/0input.js.png)
 
 Parece que funciona, não é?
 
-![Banco de dados](https://cloud-792qf1oid.vercel.app/1input_to_database.png)
+![Banco de dados](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/1input_to_database.png)
 
 Os dados que você adicionou por meio de `input` serão adicionados à nossa Firebase Database! Sensacional!
 
@@ -454,11 +454,11 @@ return (
 
 Isso exibirá os dados que são recuperados do banco de dados. Certifique-se de importar e renderizar o componente `ListaDeTarefas` no `App.js`.
 
-![Dados recuperados](https://cloud-792qf1oid.vercel.app/2reading_database.png)
+![Dados recuperados](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/2reading_database.png)
 
 Até agora, realizamos as operações **Create** e **Read**. Meio caminho feito!!!🙌
 
-![Metade do caminho](https://cloud-792qf1oid.vercel.app/7half_way_done_.gif)
+![Metade do caminho](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/7half_way_done_.gif)
 
 Vamos continuar a trabalhar com as operações **Update** e **Delete**.
 
@@ -568,7 +568,7 @@ O código acima atualiza o `feita` no banco de dados.
 
 Clique em `Run` e verifique se está funcionando.
 
-![tarefa concluída](https://cloud-792qf1oid.vercel.app/3updating_database.png)
+![tarefa concluída](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/3updating_database.png)
 
 Além disso, vamos adicionar um estilo para as tarefas feitas antes de nossa função `completarTarefa()`.
 
@@ -622,7 +622,7 @@ export default Tarefa
 
 Agora, nossas tarefas concluídas serão estilizadas devidamente.
 
-![riscadas](https://cloud-792qf1oid.vercel.app/5struckoff.png)
+![riscadas](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/5struckoff.png)
 
 Vamos adicionar funcionalidade ao nosso botão `deletar`.
 
@@ -683,11 +683,11 @@ function Tarefa({ tarefa }) {
 export default Tarefa
 ```
 
-![Excluir tarefa](https://cloud-792qf1oid.vercel.app/4deleting_database.png)
+![Excluir tarefa](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/4deleting_database.png)
 
 É isso aí, pessoal! Concluímos nosso App de Tarefas. Verifique o código final [aqui](https://repl.it/@VitorVavolizza/app-de-tarefas-final#src/App.js). ✌
 
-![Concluído](https://cloud-792qf1oid.vercel.app/6you_did_it_.gif)
+![Concluído](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/6you_did_it_.gif)
 
 ## Hackeando
 

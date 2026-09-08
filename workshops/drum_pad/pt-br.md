@@ -2,7 +2,7 @@
 name: 'Drum Pad'
 description: 'Crie um Drum Pad com HTML, CSS e JS'
 author: '@emmanuel39hanks, @vitorvavolizza'
-img: 'https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png'
 locales: 'pt-br'
 ---
 
@@ -15,7 +15,7 @@ Você já se perguntou como se reproduz sons com código? Neste workshop, criare
 
 _Preview do Drum Pad que iremos criar_
 
-![Visualização do Drum Pad](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
+![Visualização do Drum Pad](https://cdn.hackclub.com/rescue?url=https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
 
 Além de construir o drum pad, você também aprenderá sobre diferentes tipos de eventos, funções, estilos e muito mais com Vanilla JavaScript, HTML e CSS.
 
@@ -94,7 +94,7 @@ Aqui, temos uma tag pai `div` que aninha nosso botões `divs`, e então rotulamo
 
 Quando executarmos nosso código, ele se parecerá com isto:
 
-![Visualização de HTML sem CSS](https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
+![Visualização de HTML sem CSS](https://cdn.hackclub.com/rescue?url=https://cloud-hqtl5tea3.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_36_46.png)
 
 # CSS
 
@@ -118,7 +118,7 @@ body {
 
 Quando executamos nosso código, você verá que nosso conteúdo foi alinhado ao centro, isso porque mudamos as propriedades de nossa tag `body`, e a tag basicamente renderiza o conteúdo em uma página da web.
 
-![Visualização de HTML com CSS aplicada, para alterar o layout](https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
+![Visualização de HTML com CSS aplicada, para alterar o layout](https://cdn.hackclub.com/rescue?url=https://cloud-bp7m8g6di.vercel.app/0screencapture-drumpad-emmanuel39hanks-repl-co-2020-11-03-08_35_57.png)
 
 ## Classes
 
@@ -185,7 +185,7 @@ Vamos escrever um estilo para nossa classe `.botao`, para especificar o estilo e
 
 E quando executamos nosso código novamente, ele deve se parecer com isto:
 
-![Visualização de HTML com layout CSS aplicado, os pads estão em uma grade e todas as bordas cinzas](https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
+![Visualização de HTML com layout CSS aplicado, os pads estão em uma grade e todas as bordas cinzas](https://cdn.hackclub.com/rescue?url=https://cloud-edj42rbl8.vercel.app/0screencapture-drum-emmanuel39hanks-repl-co-2020-11-07-23_43_18.png)
 
 Em seguida, adicionaremos um estilo que adicionará efeitos para quando passarmos os mouse sobre os botões, estados inativos ou ativos:
 

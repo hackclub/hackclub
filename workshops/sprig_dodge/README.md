@@ -2,7 +2,7 @@
 name: 'Sprig Dodging Game'
 description: 'Dodge falling obstacles. Learn how to make it using Sprig!'
 author: '@SamDev-7'
-img: 'https://cloud-pwlhdlj0h-hack-club-bot.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-pwlhdlj0h-hack-club-bot.vercel.app/0image.png'
 locales: 'pt-br'
 ---
  
@@ -13,7 +13,7 @@ If you're not familiar with Sprig, you can try making [your first Sprig game](ht
 
 Here's what your game will end up looking like:
 
-![A GIF of the game](https://cloud-2mv7g5tu2-hack-club-bot.vercel.app/0sprig.gif)
+![A GIF of the game](https://cdn.hackclub.com/rescue?url=https://cloud-2mv7g5tu2-hack-club-bot.vercel.app/0sprig.gif)
 
 [Curious? Check out the final game's code & play it!](https://sprig.hackclub.com/gallery/sprig_dodge)
 

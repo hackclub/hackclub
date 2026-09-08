@@ -2,7 +2,7 @@
 name: 'Mundos VR'
 description: 'Crie seu próprio mundo VR'
 author: '@wollygfx, @vitorvavolizza'
-img: 'https://cloud-p6nx5mns7.vercel.app/0image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-p6nx5mns7.vercel.app/0image.png'
 locales: 'pt-br'
 ---
 
@@ -17,7 +17,7 @@ Este workshop requer um conhecimento muito básico de HTML. Não se preocupe se 
 
 Para este workshop usaremos o Repl.it, um editor de código online gratuito. Clique [aqui](https://repl.it/languages/html) para começar um novo projeto HTML no repl.it.
 
-![Configuração](https://cloud-qbmylslty.vercel.app/0image.png)
+![Configuração](https://cdn.hackclub.com/rescue?url=https://cloud-qbmylslty.vercel.app/0image.png)
 
 ## Configurando a A-frame
 
@@ -28,7 +28,7 @@ Para começar, precisaremos vincular o A-frame no nosso documento HTML, há vár
 ```
 Agora, podemos começar a criar nosso mundo virtual.
 
-![Excited GIF](https://cloud-22dzjiq1j.vercel.app/0tenor.gif)
+![Excited GIF](https://cdn.hackclub.com/rescue?url=https://cloud-22dzjiq1j.vercel.app/0tenor.gif)
 
 ### A-Scene
 
@@ -51,7 +51,7 @@ Agora, podemos começar a colocar o que quisermos, mas vamos começar com o bás
 </a-scene>
 ```
 
-![Renderização do Céu](https://cloud-e47vodig4.vercel.app/0image.png)
+![Renderização do Céu](https://cdn.hackclub.com/rescue?url=https://cloud-e47vodig4.vercel.app/0image.png)
 
 Isto renderizará uma esfera enorme com uma cor ou uma textura mapeada para o interior. Há um monte de [atributos](https://aframe.io/docs/1.0.0/primitives/a-sky.html#attributes) que podemos usar para modificar nosso céu, sinta-se à vontade para brincar com eles:
 
@@ -79,11 +79,11 @@ Vamos explicar isso em partes:
 **Agora, busque uma imagem para ser seu céu no Google e salve ela no seu projeto!**
 
 
-![Textura do céu](https://cloud-dytwphipl.vercel.app/0screen_recording_2020-11-16_at_6.19.29_pm.gif)
+![Textura do céu](https://cdn.hackclub.com/rescue?url=https://cloud-dytwphipl.vercel.app/0screen_recording_2020-11-16_at_6.19.29_pm.gif)
 
 O upload de imagens para o Repl.it é muito simples, basta ir até a barra de navegação e clicar em **Upload file**:
 
-![Carregando arquivos para o Repl.it](https://cloud-3vcjp49bp.vercel.app/0image.png)
+![Carregando arquivos para o Repl.it](https://cdn.hackclub.com/rescue?url=https://cloud-3vcjp49bp.vercel.app/0image.png)
 
 Agora que temos um céu, vamos precisar de um chão também. Podemos fazer isso simplesmente utilizando o componente `<a-plane>`.
 
@@ -154,7 +154,7 @@ Portanto, tudo que temos que fazer para importar um modelo 3D é criar um compon
 
 Eis o que obtemos:
 
-![Importação de modelo 3D](https://cloud-nay6jhbpz.vercel.app/0screen_recording_2020-11-17_at_3.22.37_pm.gif)
+![Importação de modelo 3D](https://cdn.hackclub.com/rescue?url=https://cloud-nay6jhbpz.vercel.app/0screen_recording_2020-11-17_at_3.22.37_pm.gif)
 
 Há milhares de websites onde você pode obter os modelos em 3D, aqui estão alguns deles:
 - [Sketchfab](https://sketchfab.com/)
@@ -191,7 +191,7 @@ As luzes ambiente afetam todos os primitivos da cena, se você escolher uma cor 
 
 É assim que as luzes ambiente afetam a cena e seus componentes:
 
-![Luz ambiente](https://cloud-821gtbu0s.vercel.app/0screen_recording_2020-11-17_at_5.18.31_pm.gif)
+![Luz ambiente](https://cdn.hackclub.com/rescue?url=https://cloud-821gtbu0s.vercel.app/0screen_recording_2020-11-17_at_5.18.31_pm.gif)
 
 **Luzes direcionais**
 
@@ -205,7 +205,7 @@ As luzes direcionais são como uma fonte de luz que está infinitamente distante
 
 Você pode ver aqui que este tipo de luz age como o sol, você também pode ver como ela afeta apenas um lado dos objetos e o outro é completamente preto.
 
-![Directional light](https://cloud-g8qe1cxw5.vercel.app/0screen_recording_2020-11-17_at_5.26.33_pm__1_.gif)
+![Directional light](https://cdn.hackclub.com/rescue?url=https://cloud-g8qe1cxw5.vercel.app/0screen_recording_2020-11-17_at_5.26.33_pm__1_.gif)
 
 **Luzes pontuais**
 
@@ -216,7 +216,7 @@ Luzes pontuais são como lâmpadas; podemos posicioná-las ao redor da cena, qua
 ```
 
 Veja aqui como as luzes pontuais interagem com a cena e os objetos.
-![luzes pontuais](https://cloud-2hboh6agi.vercel.app/0screen_recording_2020-11-17_at_5.33.22_pm.gif)
+![luzes pontuais](https://cdn.hackclub.com/rescue?url=https://cloud-2hboh6agi.vercel.app/0screen_recording_2020-11-17_at_5.33.22_pm.gif)
 
 Sinta-se à vontade para brincar com as luzes!
 
@@ -245,6 +245,6 @@ Yay! você conseguiu chegar ao final desta oficina.
 
 Parabéns!!!🎉🎉
 
-![GIF](https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
+![GIF](https://cdn.hackclub.com/rescue?url=https://cloud-d0aqa4icc.vercel.app/0bec38a05d56ac6ae2d9dec2f482ebff9.gif)
 
 Agora que você terminou de construir este maravilhoso projeto, compartilhe sua bela criação com outras pessoas! Lembre-se, é só mandar a URL do seu projeto!

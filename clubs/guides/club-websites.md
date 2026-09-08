@@ -28,7 +28,7 @@ If you have issues, ping @msw on Slack.
 
 # Adding a Hack Club banner
 
-![](https://cloud-pjoop60lr.vercel.app/0image-20190730-202428.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-pjoop60lr.vercel.app/0image-20190730-202428.png)
 
 Hack Club has official banners for your club website to link to Hack Club. If you’re making a standard HTML site, here’s the code for adding a linked banner: [https://github.com/hackclub/hackclub#banners](https://github.com/hackclub/hackclub#banners)
 
@@ -56,5 +56,5 @@ I made my site using React/[Gatsby](https://www.gatsbyjs.org/) & the [Hack Club 
 
 Here was the first version of the site ([source code](https://github.com/SCHacks/site/blob/e358fbd73a095f728843f19ff4e13f61cfa4d460/index.html)) & the [second version](https://5ba46bd1dd28ef740fcf3e9e--schacks.netlify.com/) ([source code](https://github.com/SCHacks/site/tree/8446a00fded449ee50110ec6182153d0c98596d4)):
 
-![](https://cloud-pjoop60lr.vercel.app/2image-20190730-202530.png)
-![](https://cloud-pjoop60lr.vercel.app/1image-20190730-202542.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-pjoop60lr.vercel.app/2image-20190730-202530.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-pjoop60lr.vercel.app/1image-20190730-202542.png)

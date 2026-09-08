@@ -14,7 +14,7 @@ My school has about 1200 total students, and approximately 300 upcoming freshmen
 
 So the leaders of my club and I decided that we would go all out. That entailed making a [presentable website](https://whs.hackclub.com), a web app that would change the background color when you texted the name of a color to a number, laying out a ton of stickers for people to take, handing out candy to anyone that walked by, having special candy (jolly ranchers are so very special aren’t they) to students who got a score over 50 on snake, and lastly a laptop for students to fill out an interest form on.
 
-![](https://cloud-3upss4n9t.vercel.app/1image2.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-3upss4n9t.vercel.app/1image2.png)
 
 # The Pitch
 
@@ -48,7 +48,7 @@ Us: That’s fine. Take some candy and stickers anyway! Also, fill out our inter
 
 # How It Went
 
-![](https://cloud-3upss4n9t.vercel.app/0image1.jpg)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-3upss4n9t.vercel.app/0image1.jpg)
 
 We set up our booth right at the entrance and had quite the eye-catching display, so we can be pretty confident in saying that every student that was there saw our booth. As a result of that, however, a lot of students standing around and just messing with different colors that the TV could change to. Which was a really good thing, but many of the students that were up there texting a color to change the background never really spoke to any of the club leaders, which I felt was a real shame. Overall, I would say that the club fair went pretty well and that as a club, we did just about everything that we could possibly do to attract students and try to get them to join the club.
 

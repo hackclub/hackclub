@@ -2,7 +2,7 @@
 name: 'Password Generation with Python'
 description: 'Learn about cybersecurity by making a password generator in Python!'
 author: '@0-0hyun'
-img: 'https://cloud-mkfjdskv8.vercel.app/068747470733a2f2f636c6f75642d6f763636733978726c2e76657263656c2e6170702f30616e73695f73616d706c655f70726f6772616d5f6f75747075742e706e67.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-mkfjdskv8.vercel.app/068747470733a2f2f636c6f75642d6f763636733978726c2e76657263656c2e6170702f30616e73695f73616d706c655f70726f6772616d5f6f75747075742e706e67.png'
 ---
 
 Have you ever wanted to learn how exactly passwords are generated? In this workshop, we're going to dive deep into cybersecurity, and along the way we'll make a secure password generator with Python.
@@ -58,7 +58,7 @@ Note that we are resetting the `pwd` variable so that the raw string password is
 
 Now WHAT the hanky panky is all this????
 
-![fungal colony meme](https://cloud-a60gl1dm4.vercel.app/0a9ltpez5bptc3epxmspk.jpeg)
+![fungal colony meme](https://cdn.hackclub.com/rescue?url=https://cloud-a60gl1dm4.vercel.app/0a9ltpez5bptc3epxmspk.jpeg)
 
 To understand hashing, you first need to know what encryption is. Every character on your keyboard (yes, look down at your keyboard) is assigned to an integer value, which is called an ASCII value. When someone encrypts a file, they will generally turn the characters held within a file into their ASCII values, and increment them in some way. So basically, if the character 'A' is in an encrypted file, it might look like 'C'. Of course, these files cannot be understood by humans after encryption, so people use decrypters to get encrypted files back into their normal ASCII form.
 
@@ -66,7 +66,7 @@ Simply put, hashing is a form of encryption that involves converting a piece of 
 
 Salting is an extra level of security that adds randomness to each password. It basically adds a unique string to the password that is hashed along with it.
 
-![HashingDiagram](https://cloud-68emkaq6o.vercel.app/0hash-plus-salt-1-1024x516.png)
+![HashingDiagram](https://cdn.hackclub.com/rescue?url=https://cloud-68emkaq6o.vercel.app/0hash-plus-salt-1-1024x516.png)
 
 Whew, that was a lot of information to digest. But now that we're past it, let's keep coding!
 
@@ -99,11 +99,11 @@ if (choice == '1'):
   
 To add a little flair at the end, we will add some colored text to confirm that the user successfully signed up. On the left side of repl.it, create a new file named `FColor.py`.
 
-![CreateNewFile](https://cloud-3um758cqv-hack-club-bot.vercel.app/0KV8rndQ.png)
+![CreateNewFile](https://cdn.hackclub.com/rescue?url=https://cloud-3um758cqv-hack-club-bot.vercel.app/0KV8rndQ.png)
 
 The colors we will be using are referred to as ANSI escape sequences. Each sequence represents either a color, background, or style. These codes are used in terminals, including the Windows Command Prompt!
 
-![ANSIEscapeSequences](https://cloud-ov66s9xrl.vercel.app/0ansi_sample_program_output.png)
+![ANSIEscapeSequences](https://cdn.hackclub.com/rescue?url=https://cloud-ov66s9xrl.vercel.app/0ansi_sample_program_output.png)
 
 Let's define some constant strings. Each string will represent an ANSI escape sequence for a certain terminal color. It is a convention to capitalize all letters in a constant variable.
 
@@ -160,7 +160,7 @@ if(choice == '1'):
 
 If you click the green "Run" button at the top of your repl, here's what you should see:
 
-![Signing up output](https://cloud-i0mava3ii.vercel.app/0c71e3ba10a973ffedf0d70027dec5942.png)
+![Signing up output](https://cdn.hackclub.com/rescue?url=https://cloud-i0mava3ii.vercel.app/0c71e3ba10a973ffedf0d70027dec5942.png)
 
 Now that we have created a system in which the user can save their hashed password to a file, we will create a system where the user can log in using the password they signed up with. To do so, we will create an **elif** statement under our if statement. The **elif** block will only run if the user wants to sign in.
 
@@ -250,9 +250,9 @@ elif(choice == '2'):
 
 Here's the result of running your code:
 
-![LogginInSuccess](https://cloud-q7kog3f2u.vercel.app/07b8bfb08547ba316542db0c08b450732.png)
+![LogginInSuccess](https://cdn.hackclub.com/rescue?url=https://cloud-q7kog3f2u.vercel.app/07b8bfb08547ba316542db0c08b450732.png)
 
-![LogginInFailure](https://cloud-2kaxxoppv.vercel.app/007490ccaf6bc9853ce2c0222a2536d6f.png)
+![LogginInFailure](https://cdn.hackclub.com/rescue?url=https://cloud-2kaxxoppv.vercel.app/007490ccaf6bc9853ce2c0222a2536d6f.png)
 
 ## Hacking 🚀
 

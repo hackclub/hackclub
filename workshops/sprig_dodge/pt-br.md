@@ -1,7 +1,7 @@
 ---
 title: ' jogo dos desvios no Sprig'
 description: 'Desvie dos objetos que estão caindo. Aprenda a fazer com Sprig!'  
-bg-image: "https://cloud-ijhz85il3-hack-club-bot.vercel.app/0image.png"
+bg-image: "https://cdn.hackclub.com/rescue?url=https://cloud-ijhz85il3-hack-club-bot.vercel.app/0image.png"
 permalink: /workshops/jogo-dos-desvios-no-sprig/
 order: 34
 ---
@@ -18,7 +18,7 @@ Se você não estiver familiarizado com Sprig, você pode tentar fazer [seu prim
 
 Veja como seu jogo ficará:
 
-![Um GIF do jogo](https://cloud-2mv7g5tu2-hack-club-bot.vercel.app/0sprig.gif)
+![Um GIF do jogo](https://cdn.hackclub.com/rescue?url=https://cloud-2mv7g5tu2-hack-club-bot.vercel.app/0sprig.gif)
 
 [Curioso? Confira o código do jogo final e jogue!](https://editor.sprig.hackclub.com/?id=85cfd61b0be21099942c4df571b11432)
 

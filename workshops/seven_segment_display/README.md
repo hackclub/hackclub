@@ -2,7 +2,7 @@
 name: 'Electronic Die'
 description: 'Create an electronic die using a seven segment LED display'
 author: '@giridhar7632'
-img: 'https://cloud-7mie21955.vercel.app/01final_circuit.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-7mie21955.vercel.app/01final_circuit.png'
 ---
 
 Have you ever made a die using electronics? This workshop will create a virtual die that displays a random number between 1 and 6. You can use this project for your next board game.
@@ -11,7 +11,7 @@ We will learn how the Seven Segment Display Interface for Arduino works.
 
 Here you can find the whole working model.
 
-![final circuit](https://cloud-9sltbj02f.vercel.app/1final_circuit.png)
+![final circuit](https://cdn.hackclub.com/rescue?url=https://cloud-9sltbj02f.vercel.app/1final_circuit.png)
 
 ## Setup
 
@@ -19,19 +19,19 @@ We are going to use Tinkercad's interactive circuit builder, which is terrific. 
 
 Go ahead and create an account in [tinkercad](https://tinkercad.com)
 
-![Tinkercad](https://cloud-9sltbj02f.vercel.app/0tinkercad.png)
+![Tinkercad](https://cdn.hackclub.com/rescue?url=https://cloud-9sltbj02f.vercel.app/0tinkercad.png)
 
 You will be redirected to the `Dashboard`.
 
 Now click on `Create new Circuit`.
 
-![new circuit](https://cloud-gjkck0spr.vercel.app/0screenshot_2020-12-26_090325.png)
+![new circuit](https://cdn.hackclub.com/rescue?url=https://cloud-gjkck0spr.vercel.app/0screenshot_2020-12-26_090325.png)
 
 Just click on the name at the top left and rename your project.
 
 You will see something like this 👇 with all the components on the right side.
 
-![Tinkercad new project](https://cloud-9sltbj02f.vercel.app/2project.png)
+![Tinkercad new project](https://cdn.hackclub.com/rescue?url=https://cloud-9sltbj02f.vercel.app/2project.png)
 
 After setting up, let's start tinkering.🚀
 
@@ -46,21 +46,21 @@ After setting up, let's start tinkering.🚀
 
 The first part we'll use in our project is a seven segment display. A seven segment display is a simple device. It consists of seven LEDs arranged in segments. Hence, the name Seven Segment Display. Each LED Segment is in the shape of a hexagon, and all the seven LEDs are arranged in an "8" like fashion so that it can display digits 0 to 9.
 
-![Seven segment display](https://cloud-9sltbj02f.vercel.app/47_segment_dis.png)
+![Seven segment display](https://cdn.hackclub.com/rescue?url=https://cloud-9sltbj02f.vercel.app/47_segment_dis.png)
 
 The top five pins are `g`, `f`, `COM`, `a`, and `b`, while the bottom five pins are `e`, `d`, `COM`, `c`, and `dp`. Since it is a common anode display, the COM (common pin) is connected to the Common Collector Voltage.
 
-![pin diagram](https://cloud-9sltbj02f.vercel.app/5pin_diag.jpeg)
+![pin diagram](https://cdn.hackclub.com/rescue?url=https://cloud-9sltbj02f.vercel.app/5pin_diag.jpeg)
 
 Let us first look at the internal structure of a Common Anode Seven Segment Display, i.e., how the LEDs are connected.
 
-![LED's connection](https://cloud-9sltbj02f.vercel.app/7led_connections.png)
+![LED's connection](https://cdn.hackclub.com/rescue?url=https://cloud-9sltbj02f.vercel.app/7led_connections.png)
 
 We can observe that the anodes of each individual are connected as one (to positive (`+`)), and for turning on the LEDs according to the number to be displayed, the respective cathodes are connected to the negative(`-`) terminal.
 
 To display digits from 0 to 9 on this seven-segment display, you need to activate specific segments for each number. The following table indicates the list of segments you need to turn on to display a particular digit.
 
-![truth table](https://cloud-9sltbj02f.vercel.app/6truthtable.png)
+![truth table](https://cdn.hackclub.com/rescue?url=https://cloud-9sltbj02f.vercel.app/6truthtable.png)
 
 This table helps us while we are programming our Arduino.
 
@@ -68,7 +68,7 @@ This table helps us while we are programming our Arduino.
 
 The other part we will use in our project is an Arduino. The Arduino Uno is an open-source microcontroller board based on the Microchip ATmega328P microcontroller.
 
-![Arduino](https://cloud-krdvm0bjz.vercel.app/0arduino.png)
+![Arduino](https://cdn.hackclub.com/rescue?url=https://cloud-krdvm0bjz.vercel.app/0arduino.png)
 
 If you're interested in Arduino, you can learn more from [here](https://en.wikipedia.org/wiki/Arduino_Uno)
 
@@ -76,19 +76,19 @@ If you're interested in Arduino, you can learn more from [here](https://en.wikip
 
 We are going to use a push-button, which we'll click when we need to roll a dice. By pressing, we will obtain a random number between 1 and 6.
 
-![push button](https://cloud-krdvm0bjz.vercel.app/1pushbtn.png)
+![push button](https://cdn.hackclub.com/rescue?url=https://cloud-krdvm0bjz.vercel.app/1pushbtn.png)
 
 #### 4) Resistors
 
 In this project, we will use seven resistors having 220ohm resistance.
 
-![resistor](https://cloud-krdvm0bjz.vercel.app/2resistor.png)
+![resistor](https://cdn.hackclub.com/rescue?url=https://cloud-krdvm0bjz.vercel.app/2resistor.png)
 
 ## Building our circuit
 
 You will find the window as it appears like this when you open tinkercad.
 
-![Tinkercad project](https://cloud-9sltbj02f.vercel.app/3windows.png)
+![Tinkercad project](https://cdn.hackclub.com/rescue?url=https://cloud-9sltbj02f.vercel.app/3windows.png)
 
 **First one**: This is the logo of the tinkercad, which we are using now.
 
@@ -106,13 +106,13 @@ First, select the components from basic to all; by default, it will be chosen as
 
 Let us start with dragging the Arduino board.
 
-![draging](https://cloud-i27ey1nq6.vercel.app/0draggin_the_arduino.gif)
+![draging](https://cdn.hackclub.com/rescue?url=https://cloud-i27ey1nq6.vercel.app/0draggin_the_arduino.gif)
 
 The next component is our seven segment display. You can get it by typing the name in the search box provided. After finding it, just drag it from there to the workspace and place it beside the Arduino board. Also, drag a push-button and 7 resistors onto the screen. You will find them just by typing the name in the search box. Drag it and place it on the workspace.
 
 So far, our workspace will be looking like this.
 
-![workspace](https://cloud-krdvm0bjz.vercel.app/3components.png)
+![workspace](https://cdn.hackclub.com/rescue?url=https://cloud-krdvm0bjz.vercel.app/3components.png)
 
 Wow! you are doing great.
 
@@ -121,7 +121,7 @@ Let us see how to set the resistance of the resistor to 220 ohms.
 
 After collecting all the seven resistors, click on each of the seven resistors, and you will find the dialogue box, which appears as shown below.
 
-![changing resistance](https://cloud-krdvm0bjz.vercel.app/6changing_resistance.png)
+![changing resistance](https://cdn.hackclub.com/rescue?url=https://cloud-krdvm0bjz.vercel.app/6changing_resistance.png)
 
 In the `Resistance` tab, you can set the resistance value of your own, and the tab next to it is the `unit`, which is a dropdown used to set the resistance unit.
 
@@ -141,11 +141,11 @@ Of the two ports which the resistor has, the port which is facing the Arduino Un
 
 Drag the wire from the end of the resistor to the respective pin and drop it there. Now you will see the connection is established between the resistor and the Arduino UNO board. Repeat the same thing to all the other six resistors, and directly the seven resistors are connected to the Arduino UNO board.
 
-![resistors connected](https://cloud-krdvm0bjz.vercel.app/4ristors_connected.png)
+![resistors connected](https://cdn.hackclub.com/rescue?url=https://cloud-krdvm0bjz.vercel.app/4ristors_connected.png)
 
 Connect terminal 1a of the push button to the ground, which is represented as `gnd` on the digital side of the Arduino. Next, connect the terminal 2a to PIN 12 of the Arduino in the same way.
 
-![button connected](https://cloud-krdvm0bjz.vercel.app/5step-1.png)
+![button connected](https://cdn.hackclub.com/rescue?url=https://cloud-krdvm0bjz.vercel.app/5step-1.png)
 
 Now the time has come to connect the seven segment display to the Arduino board. You will find the seven segment display port number when you take your mouse pointer near the respective port. To begin, connect the `g` port of the seven segment display to the other end port of the resistor, connected to the `5` pin of Arduino.
 
@@ -157,17 +157,17 @@ Now coming to the lower side of the seven-segment display. In the same way, you 
 
 The final circuit, after all the connections, looks like this.
 
-![final circuit](https://cloud-6vthzzaru.vercel.app/1final.png)
+![final circuit](https://cdn.hackclub.com/rescue?url=https://cloud-6vthzzaru.vercel.app/1final.png)
 
 Yay! All the connections are set, and we are free to proceed further to code the Arduino.
 
-![hurray](https://cloud-6vthzzaru.vercel.app/0hooray__2_.gif)
+![hurray](https://cdn.hackclub.com/rescue?url=https://cloud-6vthzzaru.vercel.app/0hooray__2_.gif)
 
 ## Coding our Arduino.
 
 As we saw earlier, the code button was at the right side top corner of our tinkercad. Click on that and toggle from block code to text code. 
 
-![text mode](https://cloud-krdvm0bjz.vercel.app/7text_mode.png)
+![text mode](https://cdn.hackclub.com/rescue?url=https://cloud-krdvm0bjz.vercel.app/7text_mode.png)
 
 We are now set to start coding. By default, in the code window, there will be some code written on it. Go ahead and delete everything in the window.
 Let's start coding, which our circuit requires.
@@ -394,7 +394,7 @@ void loop()
 
 Now you will find a random number being displayed whenever you press the push button (i.e., rolling a die).
 
-![enjoy](https://cloud-6vthzzaru.vercel.app/2enjoy.gif)
+![enjoy](https://cdn.hackclub.com/rescue?url=https://cloud-6vthzzaru.vercel.app/2enjoy.gif)
 
 ## Next Steps
 

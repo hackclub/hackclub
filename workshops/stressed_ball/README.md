@@ -2,13 +2,13 @@
 name: 'Reverse Workshop: Stressed Ball'
 description: 'learn to code like real programmers, by looking everything up'
 author: '@leomcelroy'
-img: 'https://cloud-4h5kwjg61-hack-club-bot.vercel.app/0demo.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-4h5kwjg61-hack-club-bot.vercel.app/0demo.png'
 locales: 'es-xl'
 ---
 
 Today let’s try to make this stressed out little ball.
 
-![Stressed Ball](https://cloud-hgjwh224h-hack-club-bot.vercel.app/0gif_1.gif)
+![Stressed Ball](https://cdn.hackclub.com/rescue?url=https://cloud-hgjwh224h-hack-club-bot.vercel.app/0gif_1.gif)
 
 It's a little colored circle that moves around the screen.
 
@@ -92,7 +92,7 @@ To help get you along I'll give you some targets that break down the project, an
 
 ### Draw a circle
 
-![circle outline](https://cloud-frxdc2f2o-hack-club-bot.vercel.app/1screen_shot_2021-11-02_at_12.21.50_pm.png)
+![circle outline](https://cdn.hackclub.com/rescue?url=https://cloud-frxdc2f2o-hack-club-bot.vercel.app/1screen_shot_2021-11-02_at_12.21.50_pm.png)
 
 When you get your circle on the screen, try and decipher what the code is doing to make it. In JavaScript function calls look like this `functionName(argument0, argument1)`. There can be any number of arguments. When you draw the circle try to figure out what the different arguments mean.
 
@@ -103,7 +103,7 @@ When you get your circle on the screen, try and decipher what the code is doing 
 
 ### Color your circle
 
-![Colored circle](https://cloud-frxdc2f2o-hack-club-bot.vercel.app/2screen_shot_2021-11-02_at_12.23.35_pm.png)
+![Colored circle](https://cdn.hackclub.com/rescue?url=https://cloud-frxdc2f2o-hack-club-bot.vercel.app/2screen_shot_2021-11-02_at_12.23.35_pm.png)
 
 There are lots of ways to describe colors in code, like: 
 
@@ -124,7 +124,7 @@ Your color will probably be in a [string](https://developer.mozilla.org/en-US/do
 
 ### Move your circle
 
-![Circle moving](https://cloud-hgjwh224h-hack-club-bot.vercel.app/1gif_2.gif)
+![Circle moving](https://cdn.hackclub.com/rescue?url=https://cloud-hgjwh224h-hack-club-bot.vercel.app/1gif_2.gif)
 
 You'll want to use variables, like this:
 
@@ -140,15 +140,15 @@ You'll want to use variables, like this:
 
 Let's stop the ball from running away off the screen. So how do we get from this
 
-![Circle moving diagonally](https://cloud-hgjwh224h-hack-club-bot.vercel.app/2gif_3.gif)
+![Circle moving diagonally](https://cdn.hackclub.com/rescue?url=https://cloud-hgjwh224h-hack-club-bot.vercel.app/2gif_3.gif)
 
 to this
 
-![Circle moving diagonally](https://cloud-hgjwh224h-hack-club-bot.vercel.app/3gif_4.gif)
+![Circle moving diagonally](https://cdn.hackclub.com/rescue?url=https://cloud-hgjwh224h-hack-club-bot.vercel.app/3gif_4.gif)
 
 or this
 
-![Circle moving diagonally then bouncing](https://cloud-hgjwh224h-hack-club-bot.vercel.app/4gif_5.gif)
+![Circle moving diagonally then bouncing](https://cdn.hackclub.com/rescue?url=https://cloud-hgjwh224h-hack-club-bot.vercel.app/4gif_5.gif)
 
 **Questions**
 
@@ -160,7 +160,7 @@ or this
 
 ### Spruce it up
 
-![Circle moving diagonally while changing it's color](https://cloud-hgjwh224h-hack-club-bot.vercel.app/5gif_6.gif)
+![Circle moving diagonally while changing it's color](https://cdn.hackclub.com/rescue?url=https://cloud-hgjwh224h-hack-club-bot.vercel.app/5gif_6.gif)
 
 Add some randomness to x and y
 

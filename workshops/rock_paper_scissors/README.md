@@ -2,12 +2,12 @@
 name: 'Rock Paper Scissors'
 description: 'Make a simple rock paper scissors game using Python'
 author: '@JackTDC'
-img: 'https://cloud-3skpb14wz.vercel.app/0rockpaperscissors.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-3skpb14wz.vercel.app/0rockpaperscissors.png'
 ---
 
 Have you ever wondered how to build a game with Python? Have you ever wanted to build your own game but didn't because it was hard? Well, today I'm going to show you how to build one and show you just how simple it can be!
 
-![homepage](https://cloud-8p13u30yt.vercel.app/rps.png)
+![homepage](https://cdn.hackclub.com/rescue?url=https://cloud-8p13u30yt.vercel.app/rps.png)
 
 Here's the [live demo][final_live_demo] and [final code][final_code].
 
@@ -30,10 +30,10 @@ To get started, go to [repl.it/languages/python](https://repl.it/languages/pytho
 
 You should see something like the following:
 
-![main.py file in Repl.it](https://cloud-lukrtynqs.vercel.app/repl.png)
+![main.py file in Repl.it](https://cdn.hackclub.com/rescue?url=https://cloud-lukrtynqs.vercel.app/repl.png)
 
 ## Part 3: Making The Game
-![GIF](https://cloud-931ehqeec.vercel.app/coding.gif)
+![GIF](https://cdn.hackclub.com/rescue?url=https://cloud-931ehqeec.vercel.app/coding.gif)
 
 ### 1) Importing Modules
 First, we'll need to import the `randint` module. To learn more about the randint package click [here][randint].
@@ -92,7 +92,7 @@ PC = 0
 ```
 
 ### 3) Keeping the game in a loop
-![loop](https://cloud-nmra250be.vercel.app/loop.gif)
+![loop](https://cdn.hackclub.com/rescue?url=https://cloud-nmra250be.vercel.app/loop.gif)
 
 For this, I'll use a `while` loop but you can also use `for` loops!
 
@@ -273,7 +273,7 @@ while player == False:
 ### 6) The End
 **And congratulations! You just made your own game using Python!**
 
-![Congratulations](https://cloud-b32jvmwl1.vercel.app/congo.gif)
+![Congratulations](https://cdn.hackclub.com/rescue?url=https://cloud-b32jvmwl1.vercel.app/congo.gif)
 
 If you haven't created an account on [repl.it](https://repl.it), make sure to make an account to save this wonderful creation!
 

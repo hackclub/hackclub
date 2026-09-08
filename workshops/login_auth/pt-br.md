@@ -2,7 +2,7 @@
 name: 'Login na Web'
 description: 'Construa uma página de login segura na web usando Firebase & JavaScript'
 author: '@tanishq-soni, @gabriellimma'
-img: 'https://cloud-i1u39hjuk.vercel.app/2020-10-23_h3cu9gf014ymk5drx379wq6gdqjxz0e8.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-i1u39hjuk.vercel.app/2020-10-23_h3cu9gf014ymk5drx379wq6gdqjxz0e8.png'
 ---
 
 Nesta oficina, você construirá uma página de Autenticação de Login na web usando o [Firebase](https://firebase.google.com/).

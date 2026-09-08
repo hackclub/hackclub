@@ -2,7 +2,7 @@
 name: 'Password Generator'
 description: 'Build a password generator tool with HTML, CSS, and JavaScript'
 author: '@HariOm987'
-img: https://cloud-nu1ftbbxy.vercel.app/0sample-demo.png
+img: https://cdn.hackclub.com/rescue?url=https://cloud-nu1ftbbxy.vercel.app/0sample-demo.png
 ---
 
 In this workshop, you are going to make a random alphanumeric password generator using which you can safeguard your social media accounts and much more, in just 20 minutes! 🤩
@@ -11,7 +11,7 @@ In this workshop, you are going to make a random alphanumeric password generator
 
 Here’s the [live demo](https://password-security.hariom04.repl.co/) and its [source code](https://repl.it/@hariom04/password-security#index.html). For entering inside the website, use `hariom` as password.
 
-![final output of the codes provided in this workshop](https://cloud-nu1ftbbxy.vercel.app/0sample-demo.png)
+![final output of the codes provided in this workshop](https://cdn.hackclub.com/rescue?url=https://cloud-nu1ftbbxy.vercel.app/0sample-demo.png)
 
 # Part 1: Prerequisites
 
@@ -21,7 +21,7 @@ Basic knowledge of HTML, CSS, and JavaScript would be helpful for better underst
 ## Setting up our code environment
 We’ll be using repl.it, a free, online code editor, to make this website. Get started by going to [repl.it/languages/html](https://repl.it/languages/html). Your coding environment will instantly spin up!
 
-![starting window of repl.it on navigating using above link](https://cloud-plumff9h8.vercel.app/0repl-starting-window.png) 
+![starting window of repl.it on navigating using above link](https://cdn.hackclub.com/rescue?url=https://cloud-plumff9h8.vercel.app/0repl-starting-window.png) 
 
 ^ Right now, your page will look like this.
 
@@ -32,7 +32,7 @@ We’ll be using repl.it, a free, online code editor, to make this website. Get 
 Inside the `body` tags, we will insert an image using
 
 ```html
-<img src="https://cloud-puhemcmfs.vercel.app/0image.png" width="250" height="250">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-puhemcmfs.vercel.app/0image.png" width="250" height="250">
 ```
 
 Here, `img` and `src` stand for **‘image’** and **‘source’** respectively. You are free to replace that URL with your image and set its width & height accordingly. 
@@ -118,7 +118,7 @@ Here `<table>` tag specifies that we want to create a table and its attribute `b
 
 Our output of this code will look something like this. 👇
 
- ![final output of HTML codes](https://cloud-bzcoffe31.vercel.app/0html-output.png) 
+ ![final output of HTML codes](https://cdn.hackclub.com/rescue?url=https://cloud-bzcoffe31.vercel.app/0html-output.png) 
 
 Finally, we are done with the HTML part, but our webpage doesn’t look like the final output we saw in the beginning. So, let’s jump to the next part of our workshop where we will add some styling to our project.
 
@@ -144,7 +144,7 @@ Here we opened a new section (code block) using `{`. In line 2 & 3, `padding` an
 
 In line 5, we gave the `user-select` value as `none` because we don’t want the user to select the content of our webpage due to the following reason. 👇
 
-![problem of text selection without user-select](https://cloud-kix9zfmih.vercel.app/0user-select-issue.gif)
+![problem of text selection without user-select](https://cdn.hackclub.com/rescue?url=https://cloud-kix9zfmih.vercel.app/0user-select-issue.gif)
 
 If we don’t give `user-select: none;` then when the user clicks on the button that says **Generate Password** for more than once simultaneously, that button's text will be selected that looks little weird. So to get rid of this, we have used that line of code.
 
@@ -152,7 +152,7 @@ Now in the next block (line 8), we have applied background to our webpage, you c
 
 For making your gradient, simply navigate to [cssgradient.io](https://cssgradient.io/) and create a gradient of your imagination by dragging the markers. After that, copy the code given below and paste it into the `background` section. By this, your custom gradient background will be applied.
 
-![steps for designing css gradient](https://cloud-2d97a84ef.vercel.app/0designing-gradient.gif)
+![steps for designing css gradient](https://cdn.hackclub.com/rescue?url=https://cloud-2d97a84ef.vercel.app/0designing-gradient.gif)
 
 Now add the following code below the body block.
 
@@ -238,7 +238,7 @@ Then in the next block that is `th`, we have a customized heading of the table w
 
 Finally, we are done with the CSS part of our workshop.
 
-![final output of codes after completetion of CSS part](https://cloud-2td3hm71p.vercel.app/0css-final-output.png)
+![final output of codes after completetion of CSS part](https://cdn.hackclub.com/rescue?url=https://cloud-2td3hm71p.vercel.app/0css-final-output.png)
 
 ^^^Final output of our codes after completetion of CSS part. But it is not functional yet.
 
@@ -341,12 +341,12 @@ So, at the end of our loop, we got a random password selected from the character
 
 Finally, we are done with the JavaScript part of our project.
 
-![final output of codes after completetion of javascript](https://cloud-r9k5bhazs.vercel.app/0ezgif-6-2a4189e70248.gif)
+![final output of codes after completetion of javascript](https://cdn.hackclub.com/rescue?url=https://cloud-r9k5bhazs.vercel.app/0ezgif-6-2a4189e70248.gif)
 
 ^^^Your webpage will look something similar to this. 😍🤩
 
 ## Congratulations
-![congratulations for completing your project](https://cloud-gqymfxotk.vercel.app/0finally_we_are_done__1_.gif)
+![congratulations for completing your project](https://cdn.hackclub.com/rescue?url=https://cloud-gqymfxotk.vercel.app/0finally_we_are_done__1_.gif)
 
 You accomplished it! Now your tool is fully functional and looks creative. 😍🥳
 

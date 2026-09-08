@@ -10,7 +10,7 @@ _^ o que vai acontecer quando as pessoas virem o seu scrapbook_
 
 Uma das coisas incríveis de construir projetos para a web é como é fácil torná-los bonitos! Para estilizar projetos da web, usamos uma linguagem chamada CSS. Ela nos permite fazer tudo, desde mudar a cor de fundo até animar o texto!
 
-<a href="https://scrapbook.hackclub.com/sampoder"><img src="https://cloud-5j06exp7f.vercel.app/screenshot_2020-09-12_at_7.29.11_pm.png" width="380" alt="Sam Poder's Scrapbook Profile"></a>
+<a href="https://scrapbook.hackclub.com/sampoder"><img src="https://cdn.hackclub.com/rescue?url=https://cloud-5j06exp7f.vercel.app/screenshot_2020-09-12_at_7.29.11_pm.png" width="380" alt="Sam Poder's Scrapbook Profile"></a>
 
 Hoje, vamos aprender CSS personalizando um perfil do [Scrapbook](https://scrapbook.hackclub.com/)(^ como o meu acima). O scrapbook é uma plataforma onde Hack Clubbers podem compartilhar fotos do que estão fazendo ou do dia a dia. Se você não tem um perfil ainda, faça login no Slack do Hack Club, visite o canal [#scrapbook](https://hackclub.slack.com/archives/C01504DCLVD/), tire uma foto (ou use uma antiga) e poste!
 
@@ -56,7 +56,7 @@ Usei estas cores:
 
 Para criar isso:
 
-<img src="https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt="Green and purple themed Scrapbook">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt="Green and purple themed Scrapbook">
 
 ## Fontes diferenciadas
 
@@ -92,7 +92,7 @@ Substitua `‘Nome da fonte’` pelo nome de sua fonte, apenas mantenha as aspas
 
 Eu usei um estilo techno, com a fonte [Audiowide](https://fonts.google.com/specimen/Audiowide?category=Display&sidebar.open=true&selection.family=Audiowide).
 
-<img src = "https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt ="Scrapbook com tema verde e roxo">
+<img src = "https://cdn.hackclub.com/rescue?url=https://cloud-loib1whnd.vercel.app/screenshot_2020-09-12_at_8.01.02_pm.png" width="380" alt ="Scrapbook com tema verde e roxo">
 
 ## **Animações CSS loucas - Parte 1 ✌︎**
 
@@ -149,7 +149,7 @@ Adicionaremos isso dentro das chaves. O que isso fará é aplicar a animação d
 
 Por enquanto está assim:
 
-<img src="https://cloud-1fmtzoja5.vercel.app/ezgif-5-db525cfe2a47.gif" width="380" alt="Texto animado do arco-íris" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-1fmtzoja5.vercel.app/ezgif-5-db525cfe2a47.gif" width="380" alt="Texto animado do arco-íris" />
 
 Eu tenho um desafio para você. Vamos fazer a imagem de perfil girar!
 
@@ -160,7 +160,7 @@ Aqui estão algumas coisas que você precisa saber:
 
 Acha que consegue fazer isso? A solução está [aqui](#solução-girar).
 
-<img src="https://cloud-ojh0xf17r.vercel.app/ezgif-5-5540a1713ebc.gif" widt="380" alt="Spinning profile picture">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-ojh0xf17r.vercel.app/ezgif-5-5540a1713ebc.gif" widt="380" alt="Spinning profile picture">
 
 ## **Animações CSS loucas - Parte 2 ✌︎**
 
@@ -186,7 +186,7 @@ Para corrigir isso, adicionaremos isso ao nosso CSS:
 
 O que isso significa é que a transição é tranquila no começo e no final, tornando-a suave e lisinha!
 
-<img src="https://cloud-af3nqoqwq.vercel.app/ezgif-4-effdbb2d1794.gif" width="380" alt="Aumentar a animação flutuante para cada postagem">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-af3nqoqwq.vercel.app/ezgif-4-effdbb2d1794.gif" width="380" alt="Aumentar a animação flutuante para cada postagem">
 
 ## Hackeando
 

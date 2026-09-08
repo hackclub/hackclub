@@ -2,7 +2,7 @@
 name: 'Weather Grapher'
 description: 'Graph the average temperature in any major city by using a Web API'
 author: '@shayanhalder'
-img: 'https://cloud-hj0zqh901.vercel.app/0summary_image.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-hj0zqh901.vercel.app/0summary_image.png'
 ---
 
 # Overview
@@ -10,7 +10,7 @@ img: 'https://cloud-hj0zqh901.vercel.app/0summary_image.png'
 In this workshop, you'll build a weather grapher program which will be able to graph the average temeprature in any city for a given time range that the user inputs. We'll be using the Chart.js library to graph the data and the Meteostat Web API to let us get weather data. This workshop should take around 20-30 minutes to complete.   
 
 This is what you'll build by the end of this workshop:  
-![Example Gif With End Result](https://cloud-7seldit0m.vercel.app/0end_result.gif)    
+![Example Gif With End Result](https://cdn.hackclub.com/rescue?url=https://cloud-7seldit0m.vercel.app/0end_result.gif)    
 
 Live Demo with Code: [Repl](https://repl.it/@shayanhalder1/Weather-Grapher-Workshop#index.html)  
 Final Product (without code): [Live](https://weather-grapher-workshop.shayanhalder1.repl.co/)    
@@ -109,7 +109,7 @@ At this point, the body of your HTML file should look like this:
 ```
 This is what we've built so far:   
 
-![Image of Current User Interface](https://cloud-iqs31da3d.vercel.app/0user_interface.png) 
+![Image of Current User Interface](https://cdn.hackclub.com/rescue?url=https://cloud-iqs31da3d.vercel.app/0user_interface.png) 
 
 
 We're finally done with the HTML! It's time to tackle the JavaScript.   
@@ -252,7 +252,7 @@ Read more about everything that `fetch()` has to offer [here](https://javascript
 
 If we `console.log(data)` with what have now, you'll see the response object with `meta` and `data` properties. The `meta` property contains additonal information about the API request. The `data` property contains a list of objects, each with a unique station ID in the area.   
 
-![Image of Station Data Response Object](https://cloud-ks3i4va0o.vercel.app/0station_data.png)   
+![Image of Station Data Response Object](https://cdn.hackclub.com/rescue?url=https://cloud-ks3i4va0o.vercel.app/0station_data.png)   
 (Note: This image was taken in the console of the Chrome browser.)    
 
 If we happen to pick a weather station without any data, we should handle it with an alert message, shown below. If there is data, we'll just always pick the first weather station in the response for the sake of this workshop.   
@@ -301,7 +301,7 @@ let data = await promise.json(); // Convert the response to JSON format.
 ```
 If you `console.log(data)`, then you'll see an object with the `data` and `meta` properties, like we saw before. The `data` property contains an array of many objects, each object containing weather data for one specific data.   
 
-![Image of Weather Data Response Object](https://cloud-25az1z0r1.vercel.app/0weather_data.png)
+![Image of Weather Data Response Object](https://cdn.hackclub.com/rescue?url=https://cloud-25az1z0r1.vercel.app/0weather_data.png)
 
 First we must check if there is data in the response, which we may not get in some weather stations. If there is, we can use a `for` loop to iterate through all the objects in the `data` property of the response object and add the date to the `xDates` array and the average temperatures to the `yTemps` array. The function will then return these variables in an object so we can graph it.    
 

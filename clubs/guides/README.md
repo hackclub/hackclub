@@ -1,6 +1,6 @@
 Sometimes, clubs make you feel:
 
-![](https://cloud-iok6gwa5x.vercel.app/0image__1_.png)
+![](https://cdn.hackclub.com/rescue?url=https://cloud-iok6gwa5x.vercel.app/0image__1_.png)
 
 But, we’re here to help! Find the info you’re (probably) looking for right here:
 

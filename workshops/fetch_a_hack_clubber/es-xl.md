@@ -2,7 +2,7 @@
 name: Obtén un Hack Clubber
 description: Aprende a obtener datos con Next.js y ¡conoce a alguien nuevo!
 author: '@sampoder, @davidballezaa'
-img: 'https://cloud-a1hqcjanz.vercel.app/ezgif-7-3455d319b9c1.gif'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-a1hqcjanz.vercel.app/ezgif-7-3455d319b9c1.gif'
 ---
 
 # Obten un Hack Clubber con Next.js
@@ -49,7 +49,7 @@ Para ayudarte, hemos preparado una [plantilla de código](https://replit.com/@da
 
 Da clic en `Run ➤` y verás cómo se verá nuestra interfaz. Por ahora, sólo está introduciendo a [@sampoder](https://github.com/sampoder)
 
-<img src="https://cloud-486h0t7p5.vercel.app/screenshot_2020-09-24_at_10.49.25_pm.png" width="450" alt="Proyecto inicial">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-486h0t7p5.vercel.app/screenshot_2020-09-24_at_10.49.25_pm.png" width="450" alt="Proyecto inicial">
 
 A continuación abre `pages/index.js`, aquí es donde estaremos escribiendo todo el código de nuestro proyecto.
 
@@ -209,7 +209,7 @@ No vale mirar, la solución es:
 )}
 ```
 
-<img src="https://cloud-a1hqcjanz.vercel.app/ezgif-7-3455d319b9c1.gif" width="450" alt="¡Funciona!">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-a1hqcjanz.vercel.app/ezgif-7-3455d319b9c1.gif" width="450" alt="¡Funciona!">
 
 ### Mejoremos nuestro sitio✨
 
@@ -217,7 +217,7 @@ No vale mirar, la solución es:
 
 Igual y te diste cuenta que algunas veces obtenemos un bot o un usuario inactivo, ¡queremos personas que podamos conocer! Todos amamos a Orfeo, pero no es una persona real y tampoco lo es `@wb_bot_a01a9mk4fqw`.
 
-<img src="https://cloud-39fyb55qc.vercel.app/screenshot_2020-09-26_at_5.58.05_pm.png" width="450" alt="¡Funciona!">
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-39fyb55qc.vercel.app/screenshot_2020-09-26_at_5.58.05_pm.png" width="450" alt="¡Funciona!">
 
 Cambiemos esto filtrando a los usuarios.
 

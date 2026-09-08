@@ -8,7 +8,7 @@ Welcome to the workshop. This is part 2 of the functional programming with JavaS
 
 In this part, we will learn about Currying in Functional Programming. If you haven’t gone through [part-1](../functional_programming_1) then I strongly recommend checking it out first.
 
-<img alt="Functional Programming Intro" src="https://cloud-id64d2gzs.vercel.app/0image.png" width="400px" />
+<img alt="Functional Programming Intro" src="https://cdn.hackclub.com/rescue?url=https://cloud-id64d2gzs.vercel.app/0image.png" width="400px" />
 
 This workshop should take around **_25 minutes_** to complete.
 
@@ -20,7 +20,7 @@ The workshop is for anyone familiar with:
 - How to run a Node.js program
 - General programming concepts
 
-<img src="https://cloud-83pmg6qma.vercel.app/0image.png" alt="jsimage" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-83pmg6qma.vercel.app/0image.png" alt="jsimage" />
 
 You don't need to be a Guru in these topics, a basic understanding of them is more than enough!
 
@@ -38,14 +38,14 @@ Or you can setup your own repl, make sure you create a node.js repl, and install
 
 search for ramda in repl, make sure you don't search rambda ( because it too exists! ).
 
-<img src="https://cloud-fhfy1btje.vercel.app/1ss1_1_.png" alt="replt help-1 image" width="" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-fhfy1btje.vercel.app/1ss1_1_.png" alt="replt help-1 image" width="" />
 <br/><br/>
 
 ### Install It
 
 Now, install it! Click the Run button to run your program.
 
-<img src="https://cloud-ixtk94biz.vercel.app/0group_7.png" alt="replt help-2 image" width="" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-ixtk94biz.vercel.app/0group_7.png" alt="replt help-2 image" width="" />
 
 If you prefer to work offline, then install ramda via
 
@@ -58,7 +58,7 @@ npm install ramda
 
 So, we have already discussed Ramda in our first part. We will use its pre-built functions to implement functional programming. No one wants to re-invent the wheel ( although some people might! ) and wants to make the car instead.
 
-<img src="https://cloud-847umy3yj.vercel.app/0image.png" alt="Ramda js Image" width="500px" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-847umy3yj.vercel.app/0image.png" alt="Ramda js Image" width="500px" />
 
 The same goes here, we are leveraging the pre-built functions from Ramda to boost our development process!
 
@@ -203,7 +203,7 @@ console.log("Siri: I know it might baffle you but you need face it, Yes it is", 
 
 Currying transforms a function to accept one argument at a time, It doesn’t mean that it can accept only one argument at a time, it just means that it will even work if you provide it only one argument.
 
-<img src="https://cloud-pf5att3lh.vercel.app/0image.png" alt="spidey image" width="400px" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-pf5att3lh.vercel.app/0image.png" alt="spidey image" width="400px" />
 
 Therefore, when we call curried_sum(5,5) then we get the result 10, because when all the arguments are provided to a curried function at once then it evaluates the function in the same way as if it never was curried, this is why it yeilds a result equal to inc\_(5).
 
@@ -257,7 +257,7 @@ For example, if inc_1 is not working fine, then you have to debug the inc_1 func
 
 But, if you have used Currying then you just need to debug the sum(a,b) function ( i.e only one function ) in case of an error. It makes your code reliable and buys you more time!
 
-<img src="https://cloud-dwm57u3r6.vercel.app/0image.png" alt="smart meme image" width="500px" />
+<img src="https://cdn.hackclub.com/rescue?url=https://cloud-dwm57u3r6.vercel.app/0image.png" alt="smart meme image" width="500px" />
 
 ## Thanks!
 

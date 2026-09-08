@@ -2,7 +2,7 @@
 name: 'Gerador de Citações KanyeRest'
 description: 'Faça um gerador de citações do Kanye West com Flask'
 author: '@s1ntaxe770r, @vitorvavolizza'
-img: 'https://cloud-57v29xozt.vercel.app/0screen_shot_2020-12-07_at_5.26.13_pm.png'
+img: 'https://cdn.hackclub.com/rescue?url=https://cloud-57v29xozt.vercel.app/0screen_shot_2020-12-07_at_5.26.13_pm.png'
 ---
 
 Você já deve ter escutado "Stronger", "POWER" e "FourFiveSeconds". Agora você deve estar procurando pela inspiração do Kanye? Sim, eu também!! Neste workshop, você construirá um gerador de citações do Kanye West. Ao final deste workshop, você aprenderá a fazer três coisas:
@@ -25,7 +25,7 @@ Vamos usar o [repl.it](https://repl.it), um editor de código online gratuito pa
 
 ### Mas onde estão os dados?
 
-![onde](https://cloud-c2egtgknk.vercel.app/0where.gif)
+![onde](https://cdn.hackclub.com/rescue?url=https://cloud-c2egtgknk.vercel.app/0where.gif)
 
 Vamos buscar nossas citações do Kanye da [kanye.rest](https://kanye.rest), uma API gratuita que gera citações aleatórias do Kanye.
 
@@ -97,7 +97,7 @@ logo após a linha que começa com `resposta =`.
 
 ## Renderizando os dados
 
-![presente](https://cloud-8ec0u6szu.vercel.app/0garfield.gif)
+![presente](https://cdn.hackclub.com/rescue?url=https://cloud-8ec0u6szu.vercel.app/0garfield.gif)
 
 Por padrão, o Flask procura por qualquer arquivo HTML que você passa para a função `render_template` em uma pasta chamada `templates`. Na barra lateral à esquerda do seu projeto, clique na pasta chamada `templates` para abri-la. Em seguida, abra o arquivo `index.html` dentro dele. Você deve ver o seguinte código:
 
@@ -264,7 +264,7 @@ Viva!!! Você conseguiu!!!!
 
 ## Hackeando
 
-![hackeando](https://cloud-hjufepegf.vercel.app/0hacker_cat.gif)
+![hackeando](https://cdn.hackclub.com/rescue?url=https://cloud-hjufepegf.vercel.app/0hacker_cat.gif)
 
 Confira o que outros Hack Clubbers fizeram!
 
