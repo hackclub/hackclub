@@ -942,7 +942,7 @@ Some minor changes you could add:
 
 This workshop was based on my Uniclip project: [github.com/quackduck/uniclip](https://github.com/quackduck/uniclip)
 
-Stuff other Hackclubbers made after following this workshop:
+Stuff other Hack Clubbers made after following this workshop:
 
 - Khushraj made [uniclip-ngrok.js](https://gist.github.com/KhushrajRathod/87035f73d6c2d69dbeb9704ad317d7f2)
    - It uses ngrok to share over the internet so anyone can share clipboards even if they're halfway across the world.
