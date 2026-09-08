@@ -421,7 +421,7 @@ Check out these crazy examples!
 
 - [CTF Example](https://repl.it/@FaisalSayed1/Konami-Code-Example-1)
 - [Mission Impossible](https://repl.it/@FaisalSayed1/Konami-Code-Example-2)
-- [Hackclubber?](https://repl.it/@FaisalSayed1/Konami-Code-Example-3)
+- [Hack Clubber?](https://repl.it/@FaisalSayed1/Konami-Code-Example-3)
 - [!pwned](https://repl.it/@FaisalSayed1/Konami-Code-Example-4)
 - [Spinning Portfolio](https://repl.it/@FaisalSayed1/Konami-Code-Example-5)
 
