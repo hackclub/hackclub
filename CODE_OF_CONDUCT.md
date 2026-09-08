@@ -26,7 +26,7 @@ If you join in or contribute to the Hack Club ecosystem in any way, you are enco
 Explicit enforcement of the Code of Conduct applies to all official online Hack Club groups, in-person meetings, and events including:
 
 - The [Slack](https://hackclub.com/slack/)
-- The [Events](https://events.hackclub.com/), including [AMAs](https://hackclub.com/amas/), [Hack Night](https://hackclub.com/night/), & Zoom calls on Slack
+- The [Events](https://events.hackclub.com/), including but not limited to [AMAs](https://hackclub.com/amas/), [Hack Night](https://hackclub.com/night/), & Zoom calls on Slack
 - The [GitHub projects](https://github.com/hackclub)
 - Club Meetings
 
