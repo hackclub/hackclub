@@ -73,7 +73,7 @@ const invalidKeys = 'F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 Escape Tab CapsLock 
     ' ',
 );
 const text =
-    'Hello there! I hope your day is going well. Thanks for trying out my typing test. Did you know that this project was actually made for Hackclub? Hackclub is a worldwide, student led coding club for teens that strives to provide a comfortable and educational place to collaborate with others!';
+    'Hello there! I hope your day is going well. Thanks for trying out my typing test. Did you know that this project was actually made for Hack Club? Hack Club is a worldwide, student led coding club for teens that strives to provide a comfortable and educational place to collaborate with others!';
 ```
 The first variable is used by our event listener and lists all the keys we won't count as *errors* when typing. We use JavaScript's built-in [```split()```](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) function to separate the string into an [array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
@@ -167,7 +167,7 @@ let timeText = document.getElementById('time');
 const invalidKeys = 'F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 Escape Tab CapsLock Shift Control Alt Meta ArrowLeft ArrowRight ArrowDown ArrowUp Enter'.split(
     ' ',
 );
-const text = 'Hello there! I hope your day is going well. Thanks for trying out my typing test. Did you know that this project was actually made for Hackclub? Hackclub is a worldwide, student led coding club for teens that strives to provide a comfortable and educational place to collaborate with others!';
+const text = 'Hello there! I hope your day is going well. Thanks for trying out my typing test. Did you know that this project was actually made for Hack Club? Hack Club is a worldwide, student led coding club for teens that strives to provide a comfortable and educational place to collaborate with others!';
 const textArr = text.split('');
 const htmlArr = textArr.map((item, index, array) => {
     if (item === ' ') {
@@ -278,7 +278,7 @@ Thats it! We've finished coding the typing test workshop. You should feel proud 
 
 - A try again button! We can add a try again button to our workshop. Here's the [final demo](https://javascript-typing-test-final-1.gurshanbrar.repl.co/) and the [source code](https://repl.it/@GurshanBrar/JavaScript-Typing-Test-v1#index.html).
 - Save our results in ```localStorage```. ```localStorage``` is a place on a user's browser to store data. We can store the results there, and fetch them every time we complete the typing test! The [final demo](https://javascript-typing-test-v2.gurshanbrar.repl.co/) and the [source code](https://repl.it/@GurshanBrar/JavaScript-Typing-Test-v2#script.js).
-- Add a nice little navbar. We can add a navbar that links to your github and has a link to Hackclub. Just make sure to read the comment inside the HTML file. The [final demo](https://javascript-typing-test-v3.gurshanbrar.repl.co/) and the [source code](https://repl.it/@GurshanBrar/JavaScript-Typing-Test-v3#index.html).
+- Add a nice little navbar. We can add a navbar that links to your github and has a link to Hack Club. Just make sure to read the comment inside the HTML file. The [final demo](https://javascript-typing-test-v3.gurshanbrar.repl.co/) and the [source code](https://repl.it/@GurshanBrar/JavaScript-Typing-Test-v3#index.html).
 
 A version with all of these features is [here](https://javascript-typing-test.netlify.app)
 
