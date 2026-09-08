@@ -107,7 +107,7 @@ document.getElementById('content').innerHTML += `
   </div>`
 ```
 
-This fetches the amount of results and the time it took to retreive, just like how you see on Google! Then, to fetch the actual information, add the following to your `try` function:
+This fetches the amount of results and the time it took to retrieve, just like how you see on Google! Then, to fetch the actual information, add the following to your `try` function:
 
 ```javascript
 

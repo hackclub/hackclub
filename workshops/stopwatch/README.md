@@ -53,7 +53,7 @@ We need to add some more HTML lines to build our stopwatch. We will write all ou
 <div class="main"></div>
 ```
 
-Inside the `main` div, we will add a `<p>` tag with a class of `time` and seperate `<span>` tags for minutes, seconds and milliseconds respectively. Confusing? You'll get it in a minute.
+Inside the `main` div, we will add a `<p>` tag with a class of `time` and separate `<span>` tags for minutes, seconds and milliseconds respectively. Confusing? You'll get it in a minute.
 
 ```html
 <p class="time">

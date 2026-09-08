@@ -103,7 +103,7 @@ http.listen(3000, () => {
 Explanation:
 
 * We're printing "A user connected!" every time a user connects to our WebSocket.
-* `app.use(express.static('public'))` serves all files in the public directory. This automatically sends the `index.html` file to whoever vists your repl preview link, and sends the `index.html` inside `host` to whoever visits `https://your-repl-link/host`. It also serves the CSS and JS files present inside public which are referenced by the `index.html` files.
+* `app.use(express.static('public'))` serves all files in the public directory. This automatically sends the `index.html` file to whoever visits your repl preview link, and sends the `index.html` inside `host` to whoever visits `https://your-repl-link/host`. It also serves the CSS and JS files present inside public which are referenced by the `index.html` files.
 
 Next, let's setup the data. Below the `require` statements, add your questions (The one's you'll use for your Kuizzy) in the following format:
 

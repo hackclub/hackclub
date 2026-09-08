@@ -101,7 +101,7 @@ function onMouseMove(event) {
 }
 ```
 
-Instead of using the more common hexademical or RGB color systems, Paper.js uses the HSB color system, which uses angles on a color wheel to describe color. In the HSB color system, 0 = 0° = red, and `360*n`° is also red.
+Instead of using the more common hexadecimal or RGB color systems, Paper.js uses the HSB color system, which uses angles on a color wheel to describe color. In the HSB color system, 0 = 0° = red, and `360*n`° is also red.
 
 ![Color wheel in which each color is assigned a degree value](https://cdn.hackclub.com/rescue?url=https://cloud-b0scmt0cu-hack-club-bot.vercel.app/0hsb-color-wheel.png)
 

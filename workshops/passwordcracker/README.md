@@ -20,7 +20,7 @@ The workshop is for anyone familiar with Python!
 
 You don't need to be a Guru in Python, a basic understanding of it is more than enough!
 
-## Souce Code
+## Source Code
 
 The final source code for the workshop is available [here](https://repl.it/@HARSHBAJPAI1/passwordcracker). This is on [repl.it](https://repl.it/), you can use repl.it too for making this workshop! 
 
@@ -32,7 +32,7 @@ The questions that would be arising in your mind would be that will this thing b
 
 ![i take your questions gif](https://media.giphy.com/media/xT5LMB2WiOdjpB7K4o/giphy.gif)
 
-Okay, so before I answer thess questions, I want to introduce you to some concepts. After going through these concepts you yourself would be able to answer all your questions.
+Okay, so before I answer this questions, I want to introduce you to some concepts. After going through these concepts you yourself would be able to answer all your questions.
 
 ## What is the Brute Force technique?
 
@@ -40,7 +40,7 @@ Brute Force technique is a technique in which we check all the possible solution
 
 ![brute force poster](https://cdn.hackclub.com/rescue?url=https://cloud-n4yyj3ff0.vercel.app/0image.png)
 
-In short, think that we have a list of passwords that we think can be someone’s password, then we try all of these passwords until unless we find the right one. Bizzare right? I know it sounds really inefficient but this solution is being used already with some efficiency improvements to it ( check [Appendix](#Appendix)  )  also thanks to Moore's Law that with increasing computing power the solution is becoming more and more efficient.
+In short, think that we have a list of passwords that we think can be someone’s password, then we try all of these passwords until unless we find the right one. Bizarre right? I know it sounds really inefficient but this solution is being used already with some efficiency improvements to it ( check [Appendix](#Appendix)  )  also thanks to Moore's Law that with increasing computing power the solution is becoming more and more efficient.
 
 ![I see GIF](https://media.giphy.com/media/RGRkDWsTGvdUaQTO0z/giphy.gif)
 
@@ -90,7 +90,7 @@ These Hash functions take your password as an input and transform them into a ha
 
 Examples of hash functions are **SHA-1 and bcrypt**. Now _SHA-1 shouldn’t be used for storing passwords_ as it is really fast and hence really easy to Bruteforce.
 
-![hasing Image](https://cdn.hackclub.com/rescue?url=https://cloud-6oiwvoqit.vercel.app/0image.png)
+![hashing Image](https://cdn.hackclub.com/rescue?url=https://cloud-6oiwvoqit.vercel.app/0image.png)
 
 bcrypt is slow and adds salt to your password while Hashing it ( there are also some other technical details to it, you can visit [Wikipedia](https://en.wikipedia.org/wiki/Bcrypt) for that ). Salt is an additional input added by the function so that **unlike SHA-1 the same password will not create the same Hash.** These qualities make bycrypt a better option than SHA-1 as it is harder to Brute Force.
 

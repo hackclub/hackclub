@@ -391,7 +391,7 @@ To read data at a path and listen for changes, we will use the `on()` method of 
 ```jsx
 useEffect(() => {
   const todoRef = firebase.database().ref('todo')
-  // Syncronizing
+  // Synchronizing
   todoRef.on()
 
 }, [])
@@ -459,7 +459,7 @@ function TodoList() {
 
   useEffect(() => {
     const todoRef = firebase.database().ref('todo')
-    // Syncronizing
+    // Synchronizing
     todoRef.on("value", (snapshot) => {
       const todos = snapshot.val()
       const todoList = []
@@ -486,7 +486,7 @@ export default TodoList
 
 This will display the data that is retrieved from the database. Make sure you import and render the `TodoList` component into `App.js`.
 
-![Retrived data](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/2reading_database.png)
+![Retrieved data](https://cdn.hackclub.com/rescue?url=https://cloud-792qf1oid.vercel.app/2reading_database.png)
 
 So far, we have done **Create** and **Read** operations. Halfway done!!! 🙌
 
@@ -539,7 +539,7 @@ function TodoList() {
 
   useEffect(() => {
     const todoRef = firebase.database().ref('todo')
-    // Syncronizing data
+    // Synchronizing data
     todoRef.on("value", (snapshot) => {
       const todos = snapshot.val()
       const todoList = []

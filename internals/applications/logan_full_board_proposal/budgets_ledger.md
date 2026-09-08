@@ -243,7 +243,7 @@ Below is our complete financial ledger for 2015.
                                 Income:Donations                                    $-50,000.00            0
 15-May-19 Uber                  Expenses:Transport:Rental Car                            $16.54       $16.54
                                 Assets:Bank:Checking:Jonathan Leung                     $-16.54            0
-15-May-20 Airbnb                Expenses:Travel:Accomodation                            $126.00      $126.00
+15-May-20 Airbnb                Expenses:Travel:Accommodation                            $126.00      $126.00
                                 Assets:Bank:Checking:Jonathan Leung                    $-126.00            0
 15-May-21 Lee's Deli            Expenses:Food                                            $11.65       $11.65
                                 Assets:Bank:Checking:Jonathan Leung                     $-11.65            0
@@ -301,7 +301,7 @@ Below is our complete financial ledger for 2015.
                                 Assets:Bank:Checking:Andrea Deng                       $-249.60            0
 15-Jun-10 Jonathan Leung        Expenses:Salary                                       $3,840.00    $3,840.00
                                 Assets:Bank:Checking                                 $-3,840.00            0
-15-Jun-16 Airbnb                Expenses:Travel:Accomodation                            $202.00      $202.00
+15-Jun-16 Airbnb                Expenses:Travel:Accommodation                            $202.00      $202.00
                                 Assets:Bank:Checking:Jonathan Leung                    $-202.00            0
 15-Jun-16 Amazon                Expenses:Miscellaneous:Shopping                           $7.01        $7.01
                                 Assets:Bank:Checking:Jonathan Leung                      $-7.01            0

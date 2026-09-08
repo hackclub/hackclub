@@ -169,7 +169,7 @@ void setup() {
   mySerial.println("hello");
 
 
-  // initialize all the motor driver input pins as outuput in HIGH state.
+  // initialize all the motor driver input pins as output in HIGH state.
   pinMode(M1A, OUTPUT);
   pinMode(M1B, OUTPUT);
   pinMode(M2A, OUTPUT);
@@ -305,7 +305,7 @@ void set_motors(int speed1, int speed2) {
 
 ### Controlling it over Bluetooth:
 
-I added an ESP32 module that has Bluetooth built-in. It's running a simple code that just receives the Arduinos data, and sends it to my phone using Bluetooth. It also takes any input from the phone sends it to the Arduino. It made tuning the PID constants a lot easier, rather than having to upload a code everytime I want to change the values. Maybe storing the values in the built-in EEPROM would be a nice little update.
+I added an ESP32 module that has Bluetooth built-in. It's running a simple code that just receives the Arduinos data, and sends it to my phone using Bluetooth. It also takes any input from the phone sends it to the Arduino. It made tuning the PID constants a lot easier, rather than having to upload a code every time I want to change the values. Maybe storing the values in the built-in EEPROM would be a nice little update.
 I also explained the Bluetooth function at the end of the video.
 
 ## Tuning the PID constants:
@@ -318,9 +318,9 @@ unsigned long Ki = 10000;   // integral divider constant
 float Kd = 5.0;         	// derivative multiplier constant
 ```
 
-I recommend starting with a really large intergral divider constant, something like 100,000 to basically make sure it has no effects. Then tinker with the Kp and Kd variables. Kd should be bigger than Kp. First try to get the robot to follow the line with oscillation. Then eventually turn up the derivative value to kind of dampen the oscillation. Remember that increasing Kp makes the robot less responsive since it is dividing the error value and affecting the motor speeds directly. Increasing the Kd also makes the robot a little less responsive but it might act differently based on how much the robot is turning. Lastly you can slowly start reducing the integral divider to make your robot further responsive. Having more effect in the integral component means that you will probably need to increase the proportional constant a little bit or you will start oscillating.
+I recommend starting with a really large integral divider constant, something like 100,000 to basically make sure it has no effects. Then tinker with the Kp and Kd variables. Kd should be bigger than Kp. First try to get the robot to follow the line with oscillation. Then eventually turn up the derivative value to kind of dampen the oscillation. Remember that increasing Kp makes the robot less responsive since it is dividing the error value and affecting the motor speeds directly. Increasing the Kd also makes the robot a little less responsive but it might act differently based on how much the robot is turning. Lastly you can slowly start reducing the integral divider to make your robot further responsive. Having more effect in the integral component means that you will probably need to increase the proportional constant a little bit or you will start oscillating.
 
-All and all, you will have to play around with the constants until you reach perfection. This is the most tiem consuming but probably the most fun part in the making of this robot. You can get the robot going really fast without ever losing track if you do a good job with the tuning.
+All and all, you will have to play around with the constants until you reach perfection. This is the most time consuming but probably the most fun part in the making of this robot. You can get the robot going really fast without ever losing track if you do a good job with the tuning.
 
 ## Next steps:
 

@@ -83,7 +83,7 @@ bird = game.createSprite(0, 2)
 bird.set(LedSpriteProperty.Blink, 300)
 ```
 
-Here, the variable `bird` is declared in TypeScript and initiated as `null`. One of the syntax of declaring a varible in TypeScript is: `let identifier:data-type = value;`. Learn more about variables in TypeScript [here](https://www.typescriptlang.org/docs/handbook/variable-declarations.html).
+Here, the variable `bird` is declared in TypeScript and initiated as `null`. One of the syntax of declaring a variable in TypeScript is: `let identifier:data-type = value;`. Learn more about variables in TypeScript [here](https://www.typescriptlang.org/docs/handbook/variable-declarations.html).
 
 The `game.createSprite(x,y)` creates a sprite(our bird) in position (x, y) on the 5x5 grid of LEDs. 
 
@@ -230,7 +230,7 @@ Now our screen is full of moving obstacles like this: 👇
 
 ![multiple obstacles](https://cdn.hackclub.com/rescue?url=https://cloud-70aevdanf.vercel.app/5multiple_obs.gif)
 
-Let's create some spaces between generated obstacles. Create a new variable `ticks` to count how many iterations the forever loop has done and execute obstacle creation only `if` ticks is divisible by `3`. The space between the obstacles depends on the number you use. Try add different numbers insted of `3` and observe the patterns generated. 😇
+Let's create some spaces between generated obstacles. Create a new variable `ticks` to count how many iterations the forever loop has done and execute obstacle creation only `if` ticks is divisible by `3`. The space between the obstacles depends on the number you use. Try add different numbers instead of `3` and observe the patterns generated. 😇
 
 ```js
 let ticks = 0        

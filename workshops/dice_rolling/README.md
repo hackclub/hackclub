@@ -23,7 +23,7 @@ Create a new Python repl by going to [repl.it/languages/python3](https://repl.it
 
 <img src="https://thumbs.gfycat.com/SecondTartCygnet-max-1mb.gif" width="380" alt="Dice Rolling Gif">
 
-Time to start coding! Let's begin by importing the two libaries we'll need. Add this code to the `main.py` file:
+Time to start coding! Let's begin by importing the two libraries we'll need. Add this code to the `main.py` file:
 
 ```py
 import dice

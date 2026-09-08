@@ -24,7 +24,7 @@ This workshop does assume a very basic knowledge of Python and HTTP Requests but
 
 ## What does Flask do?
 
-The [Flask](https://pypi.org/project/flask/) library in Python is what we'll use to create a server for us to write (POST) and read (GET) data from. We'll test our Flask webserver with [Insomnia](https://insomnia.rest/), a desktop program or Chrome extension that allows us to test APIs by sending GET or POST requests. (If you don't know what GET or POST requests are, I've linked some helpful sources at the bottom). Flask works with routes, which allow us to define what the code does when a certain request is recieved. We'll be defining routes to write to and read from the JSON file we'll be creating.
+The [Flask](https://pypi.org/project/flask/) library in Python is what we'll use to create a server for us to write (POST) and read (GET) data from. We'll test our Flask webserver with [Insomnia](https://insomnia.rest/), a desktop program or Chrome extension that allows us to test APIs by sending GET or POST requests. (If you don't know what GET or POST requests are, I've linked some helpful sources at the bottom). Flask works with routes, which allow us to define what the code does when a certain request is received. We'll be defining routes to write to and read from the JSON file we'll be creating.
 
 ## Downloading Insomnia
 

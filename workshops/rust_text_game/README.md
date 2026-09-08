@@ -10,7 +10,7 @@ locales: 'pt-br'
 
 Does programming and/or Rust intrigue you, yet you have no idea how to get started? Do you want to treat the nostalgia for a period that you most likely didn't get to live in?
 
-Welp, in that case, this workshop is just for you! It doesn't matter if you're a beginner or already familiar with Rust - The entire process is being written with as much detail as possible, and I've made sure to include a lot of additional resources throughout the workshop, just in case!
+Whelp, in that case, this workshop is just for you! It doesn't matter if you're a beginner or already familiar with Rust - The entire process is being written with as much detail as possible, and I've made sure to include a lot of additional resources throughout the workshop, just in case!
 
 **Note:** This workshop was authored with all sorts of different skill levels in mind and may take 30 minutes up to an hour and a half, depending on the level of familiarity.
 

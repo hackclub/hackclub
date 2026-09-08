@@ -130,7 +130,7 @@ By default, Flask looks for any HTML files you pass to the `render_template` fun
 </html>
 ```
 
-Flask uses a templating language called [jinja](https://jinja.palletsprojects.com/en/2.11.x/). This is how we can pass data and even use things like loops and conditional statements. The begining and end of jinja syntax are denoted by `{{ }}` or `{% %}` in the case of things like conditionals.
+Flask uses a templating language called [jinja](https://jinja.palletsprojects.com/en/2.11.x/). This is how we can pass data and even use things like loops and conditional statements. The beginning and end of jinja syntax are denoted by `{{ }}` or `{% %}` in the case of things like conditionals.
 
 There are three main parts to pay attention to here:
 

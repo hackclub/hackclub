@@ -150,14 +150,14 @@ Inside the `body` tag we add the `model-viewer` Web Component which displays our
 
 On the `model-viewer` we set some properties, here are what they each do:
 
-- `quick-look-browsers` Alows you to launch on IOS with both Safari and Chrome
+- `quick-look-browsers` Allows you to launch on IOS with both Safari and Chrome
 - `camera-controls` Enables the user to control the model (ie. move it around/rotate it)
 - `auto-rotate` Automatically rotates the model
 - `ar` Enables the use of AR on the model
 - `unstable-webxr` Enables AR Experiences using the device's webXR API
 - `preload` Enables preloading of the model
 - `shadow-intensity` Turns on shadows for the model
-- `loading` Loads the model immediatly (since it is "eager")
+- `loading` Loads the model immediately (since it is "eager")
 - `id` sets an id that we can use to access it from the JS and control its styling in the CSS
 
 You can learn about more properties of the model-viewer on their [documentation](https://modelviewer.dev/docs/).
