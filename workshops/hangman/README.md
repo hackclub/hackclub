@@ -212,7 +212,7 @@ public class Main {
 }
 ```
 
-You can try running the code now to see what we have acheived so far (since this is in the `Main` class, we can just use the Repl run button). 
+You can try running the code now to see what we have achieved so far (since this is in the `Main` class, we can just use the Repl run button). 
 
 ![running the prompt word code of main class](https://cdn.hackclub.com/rescue?url=https://cloud-cjkgtz9ll.vercel.app/0ezgif-3-5dcd20b53aab.gif)
 

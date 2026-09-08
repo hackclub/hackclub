@@ -120,7 +120,7 @@ static void Main(string[] args)
 ```
 
 - If `dir` equals 0, then the ship will be placed horizontally.
-- We generate two random numbres to represent a random place on the board.
+- We generate two random numbers to represent a random place on the board.
 - We set the random coordinates on the `actualBoard` to `X`, to represent the placement of a ship.
 - Then, we also set 2 additional x coordinates to an `X`, to give the ship some length.
 - The randomness specifies that it will stay within the bounds of the array so it will not cause an error.

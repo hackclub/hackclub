@@ -133,7 +133,7 @@ You'll want to use variables, like this:
 **Questions**
 
 - `How do I increase a variable js?`
-- `Whats the difference between declaration and assignment in js?`
+- `What's the difference between declaration and assignment in js?`
 - `Which direction is up on the canvas?`
 
 ### Dealing with abandonment

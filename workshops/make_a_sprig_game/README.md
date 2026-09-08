@@ -131,7 +131,7 @@ const levels = [
 
 Right now we only have one level. 
 Click on `map` to open up the map editor. 
-__Make sure you hit run__ to load the legend before editting the map.
+__Make sure you hit run__ to load the legend before editing the map.
 
 ![Screen Recording 2022-07-18 at 3 17 36 PM](https://user-images.githubusercontent.com/27078897/179600230-f29db474-9fcb-4829-94e5-d2f283bd03ad.gif)
 
@@ -195,7 +195,7 @@ onInput("d", () => {
 
 We want our player to push boxes and not be able to move through walls.
 
-Let's make the player, boxes, and walls all solid so they can't move through eachother.
+Let's make the player, boxes, and walls all solid so they can't move through each other.
 
 ```js
 setSolids([ player, box, wall ]);
@@ -213,7 +213,7 @@ setPushables({
 });
 ```
 
-The arguement passed to set pushables means that every sprite of type `player` or in this case `p` can push sprites with type `box` or in this case `b`.
+The argument passed to set pushables means that every sprite of type `player` or in this case `p` can push sprites with type `box` or in this case `b`.
 
 Let's see what that looks like now.
 

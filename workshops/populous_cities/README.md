@@ -528,7 +528,7 @@ export default function App() {
 
 ## Part 4: The End
 
-Annd we just learnt React Leaflet and built this wonderful map!
+And we just learnt React Leaflet and built this wonderful map!
 
 ![yay](https://media.giphy.com/media/xUPGcMzwkOY01nj6hi/giphy.gif)
 

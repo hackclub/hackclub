@@ -42,7 +42,7 @@ I'll give you an overview of what these are for, but you'll understand them much
 
 `video` is where we're storing the webcam stream, while `loss` lets us know the progress of how far our on feature extractor has been trained.
 
-Finally, `blueCount` and `redCount` are counters for how many images there are in each category - and we initalize both of them with a value of `0`, in the next line.
+Finally, `blueCount` and `redCount` are counters for how many images there are in each category - and we initialize both of them with a value of `0`, in the next line.
 
 ## 🛠️ The setup function
 

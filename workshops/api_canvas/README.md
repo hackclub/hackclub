@@ -59,7 +59,7 @@ If you click the green "Run" button at the top of your repl, you should notice t
 
 ## Serving HTML
 
-Before the line that starts with `http.listen` line but after the line that starts wtih `const http`, add:
+Before the line that starts with `http.listen` line but after the line that starts with `const http`, add:
 
 ```js
 app.get('/', (req, res) => {

@@ -28,7 +28,7 @@ Below is a full overview of our year-to-date spending in 2015.
   $1,238.05      Public Transportation
     $256.60      Rental Car
   $1,580.87    Travel
-    $328.00      Accomodation
+    $328.00      Accommodation
   $1,078.35      Air Travel
      $21.50      Public Transportation
      $94.52      Rental Car

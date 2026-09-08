@@ -743,7 +743,7 @@ var out []byte
 var err error
 var cmd *exec.Cmd
 ```
-`out` will hold the ouput of the commands we run.
+`out` will hold the output of the commands we run.
 `err` will hold any errors we encounter
 `cmd` is a special type of variable that holds a command to run.
 
@@ -784,14 +784,14 @@ If we don't find any of the utilities installed, we make a new error and shut do
 ```go
 if out, err = cmd.Output(); err != nil {
     handleError(err)
-    return "An error occurred wile getting the local clipboard"
+    return "An error occurred while getting the local clipboard"
 }
 if runtime.GOOS == "windows" {
     return strings.TrimSuffix(string(out), "\r\n") // powershell's get-clipboard adds a windows newline to the end for some reason
 }
 return string(out)
 ```
-`cmd.Output()` then runs the command and returns the output as a slice of bytes (the output will be the clipboard because that's what the command does!). If we find that there is an error, we handle the error and then return "An error occurred wile getting the local clipboard" as the clipboard because if we have to return something, why not make it descriptive.
+`cmd.Output()` then runs the command and returns the output as a slice of bytes (the output will be the clipboard because that's what the command does!). If we find that there is an error, we handle the error and then return "An error occurred while getting the local clipboard" as the clipboard because if we have to return something, why not make it descriptive.
 
 On Windows, the powershell command attaches a newline character at the end of the clipboard for who knows what reason so we remove that.
 
@@ -1201,7 +1201,7 @@ func getLocalClip() string {
     }
     if out, err = cmd.Output(); err != nil {
         handleError(err)
-        return "An error occurred wile getting the local clipboard"
+        return "An error occurred while getting the local clipboard"
     }
     if runtime.GOOS == "windows" {
         return strings.TrimSuffix(string(out), "\r\n") // powershell's get-clipboard adds a windows newline to the end for some reason

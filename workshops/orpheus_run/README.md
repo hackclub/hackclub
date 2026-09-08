@@ -308,7 +308,7 @@ function jump() {
 ```
 Explanation: Basically, we don't want to add the `jump` class to our `character` if it's already jumping. If we don't ensure this, we might face several bugs. So, to be on the safer side, we first check if the `character` already has the `jump` class or not (If the character already has it, it means that the character is jumping). So, If it doesn't have the `jump` class in its `classList`, we'll add that class to it!
 
-But we also need to remove this class after a specific time. If you remember, the jump animation lasts for 800 miliseconds. So, after we add the class to the character, we set a `timeout` of 700 miliseconds and immediately after that, we remove the `jump` class from the character.
+But we also need to remove this class after a specific time. If you remember, the jump animation lasts for 800 milliseconds. So, after we add the class to the character, we set a `timeout` of 700 milliseconds and immediately after that, we remove the `jump` class from the character.
 
 Also, to clear all the past unfinished timeouts before we do anything, we call the `clearTimeout()` function which ensures that we always set a fresh new `timeout`.
 
@@ -386,7 +386,7 @@ function start() {
 
 Now, we need to add the two final things to our game: The scoring system and also the Game Over system.
 
-First, let's implement a simpe scoring system!
+First, let's implement a simple scoring system!
 
 ```js
 function scoreCounter() {

@@ -4,7 +4,7 @@
 ### Workshop: Muse
 ### Location: St. Francis Xavier Hack Club, Louisville KY
 ### Date: Wednesday, November 3rd 2021
-### Attendence: 8
+### Attendance: 8
 ### Written by: Tevan Goldberg
 
 ## Overview

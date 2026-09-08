@@ -315,7 +315,7 @@ The classes ```btn``` & ```btn-primary``` are used to style the button.
 ![Section 3 Result](https://cdn.hackclub.com/rescue?url=https://cloud-jwbtp72pu.vercel.app/0screen_shot_2020-11-11_at_12.33.02_pm.png)
 
 # CSS
-The Boostrap stylesheet we added at the beginning of this workshop gives us most of the styling we need. But let's do a little bit of our own customizing.
+The Bootstrap stylesheet we added at the beginning of this workshop gives us most of the styling we need. But let's do a little bit of our own customizing.
 
 Open the `style.css` file on the sidebar on the left. Then, add:
 

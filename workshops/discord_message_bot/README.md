@@ -138,7 +138,7 @@ client.on('message', (message) => {
 })
 ```
 
-These three lines of code seperate the key value and the message into two separate strings.
+These three lines of code separate the key value and the message into two separate strings.
 
 - The first line splits into two strings into an array based on the spaces. The two represents how big the array will be. Documentation is [here](https://www.w3schools.com/jsref/jsref_split.asp). The key value will be the second of the two strings.
 - The second line assigns the second array value to the keyVal string.

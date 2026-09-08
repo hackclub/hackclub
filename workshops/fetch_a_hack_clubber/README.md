@@ -117,7 +117,7 @@ export async function getServerSideProps() {
 }
 ```
 
-Reload the site again, now should only see one user and it should change everytime you reload!
+Reload the site again, now should only see one user and it should change every time you reload!
 
 Last thing, we need to give our page access to this data, we can do this by replacing `'number': 1` with `user`. We also don't need to log to the console, so our  `getServerSideProps()` function should look like:
 

@@ -246,7 +246,7 @@ turtle.mainloop()
 These listeners listen for the space bar, left arrow key, and right arrow keys. They then call the respective functions.
 
 ## Final Code
-<img src="https://cdn.pixilart.com/photos/orginal/3147e5b7f0ee4c7.gif" width="380" alt="Kermit Happy Gif">
+<img src="https://cdn.pixilart.com/photos/original/3147e5b7f0ee4c7.gif" width="380" alt="Kermit Happy Gif">
 You're done! Let's celebrate!
 
 Happy Hacking!

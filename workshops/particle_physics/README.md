@@ -163,7 +163,7 @@ This one looks complicated, but if you think about it in terms of physics it is 
 - Next the magnitude is set to the amount of force using the [gravitational formula](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation).
 - Finally, the force is applied to the particle.
 
-Finall y, let's write some code for updating the properties of the particle:
+Finally y, let's write some code for updating the properties of the particle:
 
 ```javascript
 ...
@@ -210,7 +210,7 @@ This file is where we're going to write all the program logic, from creating the
 
 First, we will create the array of particles we will be displaying. Then we need to update and display them every frame inside `draw()`.
 
-First, we need to set some constants and cerate an array of particles we will be displaying. Above the `setup()` function, at the beginning of the file, add:
+First, we need to set some constants and create an array of particles we will be displaying. Above the `setup()` function, at the beginning of the file, add:
 
 ```javascript
 // Constants
@@ -270,7 +270,7 @@ function draw() {
 - After that, we loop through the array of particles again and update each `Particle` object with the new data as a result of running `physics` on the particles.
 - And finally, to see the changes, we draw the particle.
 
-We're going through this slowly and step-by-step, but don't forget that because all of thise code is in the `draw()` function, it's run dozens (sometimes hundreds) of times per second. This is how the smoooth animation that you'll see in a second is created.
+We're going through this slowly and step-by-step, but don't forget that because all of these code is in the `draw()` function, it's run dozens (sometimes hundreds) of times per second. This is how the smoooth animation that you'll see in a second is created.
 
 <details>
 

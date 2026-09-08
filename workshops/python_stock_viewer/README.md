@@ -165,7 +165,7 @@ If all goes well, you should see the stock value printed to your terminal. Congr
 
 ## Taking an Input
 
-This is cool and all, but if you want to get a certain value, it's cumbersome to have to change the code. Let's add functionality to take an input from the user. In Python, we use the `input()` method to do this. Just below the second `import` statement at the top of your code, addd this:
+This is cool and all, but if you want to get a certain value, it's cumbersome to have to change the code. Let's add functionality to take an input from the user. In Python, we use the `input()` method to do this. Just below the second `import` statement at the top of your code, add this:
 
 ```python
 line = input("Give me a stock symbol?")

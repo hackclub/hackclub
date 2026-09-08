@@ -217,13 +217,13 @@ The accumulator is a value **that is passed to the function along with the Array
 This cycle keeps on going until unless the iteration is done.
 The last value returned by the function is the total accumulated value during the whole iteration **and is the value that our reduce function will return.**
 
-<img src="https://media.giphy.com/media/l2Je8VO5hSPEsLdMA/giphy.gif" alt="accumalator gif" width="" />
+<img src="https://media.giphy.com/media/l2Je8VO5hSPEsLdMA/giphy.gif" alt="accumulator gif" width="" />
 
 The first argument of the function is the accumulator and the second argument is the Array item.
 
 ```js
 
-func ( acc, item )  // acc -> accumalator and item -> array item
+func ( acc, item )  // acc -> accumulator and item -> array item
 
 ```
 
@@ -235,9 +235,9 @@ const _ = require('ramda')
 
 const numbers = [1,2,3,4,5,6,7,8,9]
 
-const add = (acc,item) => acc + item // adds accumalator and array item
+const add = (acc,item) => acc + item // adds accumulator and array item
 
-const sum  = _.reduce(add,0,numbers) // add is the function, 0 is accumalator, and numbers is the array
+const sum  = _.reduce(add,0,numbers) // add is the function, 0 is accumulator, and numbers is the array
 
 console.log("Sum of the Array items is",sum)
 

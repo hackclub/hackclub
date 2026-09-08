@@ -7,7 +7,7 @@ img: 'https://cdn.hackclub.com/rescue?url=https://cloud-hj0zqh901.vercel.app/0su
 
 # Overview
 
-In this workshop, you'll build a weather grapher program which will be able to graph the average temeprature in any city for a given time range that the user inputs. We'll be using the Chart.js library to graph the data and the Meteostat Web API to let us get weather data. This workshop should take around 20-30 minutes to complete.   
+In this workshop, you'll build a weather grapher program which will be able to graph the average temperature in any city for a given time range that the user inputs. We'll be using the Chart.js library to graph the data and the Meteostat Web API to let us get weather data. This workshop should take around 20-30 minutes to complete.   
 
 This is what you'll build by the end of this workshop:  
 ![Example Gif With End Result](https://cdn.hackclub.com/rescue?url=https://cloud-7seldit0m.vercel.app/0end_result.gif)    
@@ -87,7 +87,7 @@ We're almost done with HTML!
 
 Add another `<div>` after the first `<div>` and also center it using `justify-content`. Nest another `<div>` inside with the styling `position: relative; width: 140vh; height: 85vh;` so it's big enough to hold the chart. A vh unit represents 1% of the width/height of the viewport. 
 
-Inside of this, add a `<canvas>` element with an `id` of `myChart` and the same width and height as its parent `<div>`. The canvas will hold the chart once we add it in our Javascript. We have to nest the canvas inside of a `<div>` for us to adjust its size. We also have to nest that inside yet another `<div>` for us to center it. Once we implement the chart in Javascript, feel free to play around with the size and ajust it to your liking. 
+Inside of this, add a `<canvas>` element with an `id` of `myChart` and the same width and height as its parent `<div>`. The canvas will hold the chart once we add it in our Javascript. We have to nest the canvas inside of a `<div>` for us to adjust its size. We also have to nest that inside yet another `<div>` for us to center it. Once we implement the chart in Javascript, feel free to play around with the size and adjust it to your liking. 
 
 At this point, the body of your HTML file should look like this: 
 
@@ -188,17 +188,17 @@ We're done setting up the chart!
 ## Setting up the API   
 We'll be using the Meteostat Web API to get weather data. Before we go to the documentation, head over [here](https://auth.meteostat.net/) to register for an API key, which we'll need when we make requests to the API. Check your email for your API key and save it to your clipboard, we'll use it later.   
 
-[Here](https://dev.meteostat.net/api/#api-key) is the documentation for the API if you want to learn about it more in depth. The basic idea is that the API works by retrieving data made publicly available from various weather stations. So in order to retrieve weather data, we first have to search for weather stations in the city we're looking for, and then pick a weather station in that city to retreive data from. First, add the following variables at the very top of your JS file. 
+[Here](https://dev.meteostat.net/api/#api-key) is the documentation for the API if you want to learn about it more in depth. The basic idea is that the API works by retrieving data made publicly available from various weather stations. So in order to retrieve weather data, we first have to search for weather stations in the city we're looking for, and then pick a weather station in that city to retrieve data from. First, add the following variables at the very top of your JS file. 
 
 ```javascript
 const stationURL = "https://api.meteostat.net/v2/stations/search";
 const dataURL = "https://api.meteostat.net/v2/stations/daily";
 ```
 
-`stationURL` is the API endpoint for retrieving various weather stations in an area. `dataURL` is the API endpoint for retreiving weather data from a given weather station. An API endpoint is simply a point of entry, or URL, for the client to receive a specific request from a web API. These URLs can be found in the [documentation](https://dev.meteostat.net/api/#json-api). 
+`stationURL` is the API endpoint for retrieving various weather stations in an area. `dataURL` is the API endpoint for retrieving weather data from a given weather station. An API endpoint is simply a point of entry, or URL, for the client to receive a specific request from a web API. These URLs can be found in the [documentation](https://dev.meteostat.net/api/#json-api). 
 
 ## Retrieving a Weather Station   
-It's time to implement the `getData()` function that we applied to our "Graph" button. Note: All new code segments should be placed directly after the previous code segment unless otherwise specified. Let's start by retreiving the inputs of the city, start date, and end date. At the end of your `script.js` file, add:
+It's time to implement the `getData()` function that we applied to our "Graph" button. Note: All new code segments should be placed directly after the previous code segment unless otherwise specified. Let's start by retrieving the inputs of the city, start date, and end date. At the end of your `script.js` file, add:
 
 ```javascript 
 async function getData() { // Retrieve the values of city, start date, and end date from input fields. 
@@ -244,13 +244,13 @@ let promise = await fetch(url, { // Make a request to find weather stations base
 });
 let data = await promise.json(); // Convert the response to JSON format. 
 ```
-The first argument in the `fetch()` function is always the API endpoint, or URL, if we're making an API request. The second arugment is an object with some data about the request. We have to include our API Key attatched to the `x-api-key` property and we have to nest this property inside the `headers` object, which is specified in the [documentation](https://dev.meteostat.net/api/#authentication).    
+The first argument in the `fetch()` function is always the API endpoint, or URL, if we're making an API request. The second argument is an object with some data about the request. We have to include our API Key attached to the `x-api-key` property and we have to nest this property inside the `headers` object, which is specified in the [documentation](https://dev.meteostat.net/api/#authentication).    
 
 The `await` keyword pauses the function until the promise from the API call is resolved. We then convert the response data to JSON format using the `.json()` method. This workshop will cover just one of many ways to use `fetch()`.    
 
 Read more about everything that `fetch()` has to offer [here](https://javascript.info/fetch).      
 
-If we `console.log(data)` with what have now, you'll see the response object with `meta` and `data` properties. The `meta` property contains additonal information about the API request. The `data` property contains a list of objects, each with a unique station ID in the area.   
+If we `console.log(data)` with what have now, you'll see the response object with `meta` and `data` properties. The `meta` property contains additional information about the API request. The `data` property contains a list of objects, each with a unique station ID in the area.   
 
 ![Image of Station Data Response Object](https://cdn.hackclub.com/rescue?url=https://cloud-ks3i4va0o.vercel.app/0station_data.png)   
 (Note: This image was taken in the console of the Chrome browser.)    
@@ -402,7 +402,7 @@ In each of these examples, including this workshop, there is not much input vali
 - [Network Requests with Fetch API](https://javascript.info/network)      
 - [Meteostat API Documentation](https://dev.meteostat.net/api/#api-key)     
 - [Chart.js Documentation](https://www.chartjs.org/docs/latest/)     
-- [Boostrap Documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/)     
+- [Bootstrap Documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/)     
 
 
 

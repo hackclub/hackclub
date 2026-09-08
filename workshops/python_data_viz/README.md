@@ -283,7 +283,7 @@ You could possibly get something that looks like this...
    ax.plot(x,x**2,label='Worry if sky is falling...')
    ax.plot(x,x**3,label='Be a icon')
    ax.set_xlabel('Time') #adds X axis label
-   ax.set_ylabel('Years')#add Y axis lable
+   ax.set_ylabel('Years')#add Y axis label
    ax.set_title("Chicken Little's Plot") #adds a title
    ax.legend() #adds a key of the graph
 ```
@@ -359,7 +359,7 @@ import random
 
 tiktok=pd.read_csv('multiTimeline (7).csv', header=1)
 
-#for the csv file you need to download the graph off of google trends than uploaed it into jupyter notebook, than you copy the path and put it were multiTimeline (7).csv is. 
+#for the csv file you need to download the graph off of google trends than upload it into jupyter notebook, than you copy the path and put it were multiTimeline (7).csv is. 
 
 cols = tiktok.columns 
 cols = [x.split()[0].lower() if len(x.split())>2 else x.lower() for x in cols]

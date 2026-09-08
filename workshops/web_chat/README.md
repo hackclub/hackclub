@@ -280,7 +280,7 @@ for await (const req of server) {
 
 Explanation:
   - We're creating a http server here so we can serve files and text
-  - The `for await` loop replies to every request (i.e. everytime someone navigates to the server) that is sent to the server
+  - The `for await` loop replies to every request (i.e. every time someone navigates to the server) that is sent to the server
 
 Hit "Run" and you should see "Server test" in the top right of your screen. Next, let's actually serve the frontend we made.
 
@@ -365,7 +365,7 @@ for await (const req of server) {
 }
 ```
 
-Every time someone vists our page, we'll want to send index.html to them. However, trying to connect to a websocket also counts as a request. For every request that we get, we want to try to parse it as a websocket request. If that fails, then we send the requested file according to the URL. If you hit "Run" now, you should see... no changes. This is because we haven't added any code to connect to our websocket in the frontend yet! 
+Every time someone visits our page, we'll want to send index.html to them. However, trying to connect to a websocket also counts as a request. For every request that we get, we want to try to parse it as a websocket request. If that fails, then we send the requested file according to the URL. If you hit "Run" now, you should see... no changes. This is because we haven't added any code to connect to our websocket in the frontend yet! 
 
 Add the following code to `frontend.js`:
 
@@ -427,7 +427,7 @@ Next, let's store connections to users and send a welcome message to them. We'll
 let users: WebSocket[] = []
 ```
 
-Everytime a user connects to the websocket, we want to store the connection in the array. Add this below ``console.log("Connection established with a client.")``:
+Every time a user connects to the websocket, we want to store the connection in the array. Add this below ``console.log("Connection established with a client.")``:
 
 ```js
 users.push(socket)

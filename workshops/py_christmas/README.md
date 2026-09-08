@@ -67,7 +67,7 @@ def box1 (turtle, color, x, y, width, height):
 ```
 First we create the function definition with parameters:
 1. Color of the rectangle (color).
-2. Postion of the turtle/where to start drawing the rectangle from (x and y and coordinates).
+2. Position of the turtle/where to start drawing the rectangle from (x and y and coordinates).
 3. Width and height of the box/rectangle.
 
 ```python
@@ -193,7 +193,7 @@ from Figures import *
 from random import randint
 
 ```
-Here, we import all fuctions from 'turtle' library, all functions from 'Figures' file (which we just created) and finally 'randint' function from 'random' library so that we can use it to generate a random integer.
+Here, we import all functions from 'turtle' library, all functions from 'Figures' file (which we just created) and finally 'randint' function from 'random' library so that we can use it to generate a random integer.
 Why do we need a random integer? We'll see.
 
 
@@ -266,7 +266,7 @@ Now we need one more tiny ball on the right end of the christmas tree, right ?
 ```python
 balls(turtle, "#fc045b", -x, y, 5)
 ```
-So we draw another ball with the same dimentions but we pass a different value for x coordinate. We pass ******-x****** instead of ******x******. This helps to position the ball on the right end instead of the left. 
+So we draw another ball with the same dimensions but we pass a different value for x coordinate. We pass ******-x****** instead of ******x******. This helps to position the ball on the right end instead of the left. 
 ![alt both_balls_completed](https://cdn.hackclub.com/rescue?url=https://cloud-4ipo9natc.vercel.app/7image6.png) 
 ```python
 y = y + height

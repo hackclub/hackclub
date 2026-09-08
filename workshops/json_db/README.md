@@ -115,7 +115,7 @@ async function doCoolStuff() {
 doCoolStuff().then(console.log).catch(console.error)
 ```
 
-We're importing the `promises` module from within `fs` because it contains promisified methods for `fs`'s methods already coded for us! Here, the `await` keyword pauses the execution of its parent `async` function, `doCoolStuff`, until the promise has been fulfilled. Then, we return the `data` variable. Finally, when we execute the function, `console.log` its return value with `.then()` and catch and log any possibe errors with `.catch()`.
+We're importing the `promises` module from within `fs` because it contains promisified methods for `fs`'s methods already coded for us! Here, the `await` keyword pauses the execution of its parent `async` function, `doCoolStuff`, until the promise has been fulfilled. Then, we return the `data` variable. Finally, when we execute the function, `console.log` its return value with `.then()` and catch and log any possible errors with `.catch()`.
 
 Now... this is all super cool, but how can it be applied to our database? Let's write some basic functions!
 
@@ -327,7 +327,7 @@ Great job, you've made it to the end! Here's the final product, for reference: [
 Here's some things you could do to possibly go further with our database:
 
 1. Implement an endpoint to get a certain key from our store ([source](https://repl.it/@SafinSingh/JsonDB-1))
-2. Store your data in YAML format rather than JSON ([souce](https://repl.it/@SafinSingh/JsonDB-2))
+2. Store your data in YAML format rather than JSON ([source](https://repl.it/@SafinSingh/JsonDB-2))
 3. Write logging middleware for express to make it easier to see who sent requests ([source](https://repl.it/@SafinSingh/JsonDB-3))
 
 Here are some links to help you do those!
