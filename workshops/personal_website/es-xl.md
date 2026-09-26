@@ -287,6 +287,7 @@ Una buena forma de obtener ideas sobre qué agregar a tu sitio web es mirar los 
 - [Sophie Huang](https://sohuang.github.io/)
 - [Jevin Sidhu](http://jevinsidhu.com/)
 - [Sam Poder](http://sampoder.com/)
+- [Peter Yao](https://zeyuyaoy.com/)
 - [Faisal Sayed](https://fayd.me/)
 
 **Sitios web creados por profesionales:**
