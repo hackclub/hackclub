@@ -48,7 +48,7 @@ turtle.bgcolor("black")
 ```
 
 - Set the turtle speed to zero (so it draws instantly), hide the cursor, and make the background black (or any color you want).
-- [Here are the turtle colors to choose from.](https://trinket.io/docs/colors) 
+- [Here are the turtle colors to choose from.](https://coddy.tech/tools/color-converter#named-colors) 
 
 ## Snowman Function
 
