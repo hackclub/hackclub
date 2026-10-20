@@ -111,7 +111,7 @@ while(True):
 
 Squares! Squares everywhere! Let's draw them.
 
-Outside of the while loop, create a function called `drawSquare()`, which takes in x and y coordinates, the size of the square, and the [color](https://trinket.io/docs/colors):
+Outside of the while loop, create a function called `drawSquare()`, which takes in x and y coordinates, the size of the square, and the [color](https://coddy.tech/tools/color-converter#named-colors):
 
 ```py
 #Previous code would be here.
