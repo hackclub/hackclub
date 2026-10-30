@@ -329,7 +329,6 @@ A good way to get ideas for what to add to your website is to look at other peop
 
 **Websites Made by Other Hack Club Hackers:**
 
-- [Zeyu (Peter) Yao](https://cytronicoder.com)
 - [Kognise](https://kognise.dev/)
 - [Celeste](https://celeste.exposed/)
 - [Sarthak Mohanty](https://sarthakmohanty.me/)
@@ -340,6 +339,7 @@ A good way to get ideas for what to add to your website is to look at other peop
 - [Sophie Huang](https://sohuang.github.io/)
 - [Jevin Sidhu](http://jevinsidhu.com/)
 - [Sam Poder](http://sampoder.com/)
+- [Peter Yao](https://zeyuyaoy.com)
 - [Nisarga Adhikary](https://nisarga.me)
 
 **Websites Made by Professionals:**

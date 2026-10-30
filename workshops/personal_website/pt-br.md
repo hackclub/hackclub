@@ -266,7 +266,6 @@ Uma boa maneira de obter ideias sobre o que adicionar ao seu site é olhar para 
 
 **Websites feitos por outros Hack Clubbers:**
 
-- [Zeyu (Peter) Yao](https://cytronicoder.com)
 - [Reese Armstrong](https://reeseric.ci)
 - [Malte I. Lauterbach](https://patakh.com/)
 - [Kognise](https://kognise.dev/)
@@ -281,6 +280,7 @@ Uma boa maneira de obter ideias sobre o que adicionar ao seu site é olhar para 
 - [Sophie Huang](https://sohuang.github.io/)
 - [Jevin Sidhu](http://jevinsidhu.com/)
 - [Sam Poder](http://sampoder.com/)
+- [Peter Yao](https://zeyuyaoy.com/)
 - [Faisal Sayed](https://fayd.me/)
 
 **Websites feitos por Profissionais:**
