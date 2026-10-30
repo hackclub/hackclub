@@ -41,7 +41,7 @@ The following estimates are conservative and optimistic.
              $315.95    Transport
              $133.00      Public Transportation
              $182.95      Rental Car
-            $-126.00    Travel:Accomodation
+            $-126.00    Travel:Accommodation
          $-75,896.31  Income:Donations
              $-80.71  Liabilities:Reimbursement
             $-216.52    Jessica Kwok
@@ -86,7 +86,7 @@ This includes all income, expenses, and recorded assets as of May 1st, 2016.
            $1,441.05      Public Transportation
              $664.58      Rental Car
            $2,999.77    Travel
-             $202.00      Accomodation
+             $202.00      Accommodation
            $2,623.25      Air Travel
               $21.50      Public Transportation
               $94.52      Rental Car

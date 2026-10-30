@@ -4,7 +4,7 @@
 ### Workshop: Stressed Ball (A.K.A. Reverse Workshop #1)
 ### Location: Pierson Library, Shelburne VT 
 ### Date and Time: Nov. 4th at 4:00 PM 
-### Attendence: 15 
+### Attendance: 15 
 
 <img width="1643" alt="Piersonclubmeeting" src="https://user-images.githubusercontent.com/27078897/141187635-3976eaf4-a70f-4949-8606-17f219e0d130.png">
 
@@ -18,7 +18,7 @@ I think the exercise was mostly successful, but had some important lessons for f
 
 ## Meeting Flow
 
- After Leo took five minutes or so to introduce the topic, we basically just set them loose and wandered around to answer questions, then took about 15 minutes at the end of the meeting to demo. Our club is mostly comprised of local middle schoolers from the nearby Shelburne Community School, which is walking distance from the library. This meeting had our best attendence to date, but we have a recurring issue of people arriving without laptops or bringing iPads. This did result in at least one fruitful collaboration though, as two girls shared a laptop and ended up assembling one of the more interesting projects on it, this funky rippling circle: 
+ After Leo took five minutes or so to introduce the topic, we basically just set them loose and wandered around to answer questions, then took about 15 minutes at the end of the meeting to demo. Our club is mostly comprised of local middle schoolers from the nearby Shelburne Community School, which is walking distance from the library. This meeting had our best attendance to date, but we have a recurring issue of people arriving without laptops or bringing iPads. This did result in at least one fruitful collaboration though, as two girls shared a laptop and ended up assembling one of the more interesting projects on it, this funky rippling circle: 
 
 ![ripplingcircle](https://user-images.githubusercontent.com/27078897/141187679-e590c98e-a77d-4e5c-a90b-ede29793b919.gif)
 

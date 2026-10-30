@@ -353,7 +353,7 @@ def Snowman(x, y, radius1, radius2, radius3):
 def draw():
 ```
 
-Add the `draw()` function after all the code we wrote. This is where we will be calling the `Snowman()` funciton.
+Add the `draw()` function after all the code we wrote. This is where we will be calling the `Snowman()` function.
 
 ```py
 def draw():
@@ -420,7 +420,7 @@ y = 0
 draw()
 ```
 
-Initialze x and y variables we accessed earlier, and call the initial `draw()` function. We want the snowmen to be drawn to the screen even before any user input is recognized.
+Initialize x and y variables we accessed earlier, and call the initial `draw()` function. We want the snowmen to be drawn to the screen even before any user input is recognized.
 
 ```py
 #Under everything we wrote.

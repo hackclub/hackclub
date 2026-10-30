@@ -12,7 +12,7 @@ Web scraping refers to the process of gather information from a website through 
 Web scraping can be broken down into two simple steps:
 
 1. Fetching the HTML source code of a website via an HTTP request or a headless browser
-2. Parsing the raw HMTL data to get the information that matters
+2. Parsing the raw HTML data to get the information that matters
 
 We'll look at both of these steps during this tutorial and writing our web scraper in [TypeScript](https://cometcode.io/posts/typescript/).
 
@@ -186,7 +186,7 @@ const url =
   'https://www.premierleague.com/stats/top/players/goals?se=-1&cl=-1&iso=-1&po=-1?se=-1' // URL we're scraping
 const AxiosInstance = axios.create() // Create a new Axios Instance
 
-// This is the structure of the player data we recieve
+// This is the structure of the player data we receive
 interface PlayerData {
   rank: number // 1 - 20 rank
   name: string
@@ -223,7 +223,7 @@ AxiosInstance.get(url)
   .catch(console.error) // Error handling
 ```
 
-We created an interface, `PlayerData` that represents the structure of the data we're parsing. We then parse this information from the HTML we recieve from the webpage, and create an array of objects with that data.
+We created an interface, `PlayerData` that represents the structure of the data we're parsing. We then parse this information from the HTML we receive from the webpage, and create an array of objects with that data.
 
 After saving your code, you should see an array being printed in your console with the information on each player. Pretty awesome, right! Plus, all the code is typesafe!
 

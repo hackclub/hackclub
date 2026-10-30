@@ -158,7 +158,7 @@ Challenges:
     individual meeting. We've been experimenting with software to collect
     attendance and feedback from club members, but haven't seen much success and
     are going to spend these next two weeks working towards a better solution.
-- Our facilitation guidelines are weak (and often nonexistant)
+- Our facilitation guidelines are weak (and often nonexistent)
   - We prioritized creating workshops over facilitation guidelines in our club
     playbook. As a result of this, most of our playbook currently consists of
     pre-written workshops. After we sort out data collection, we're going to

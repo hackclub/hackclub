@@ -146,7 +146,7 @@ We need a loop to run the game, as there will be up to 9 turns (one for each box
 
 Both players should now be able to place a sign in turns now. 
 
-![Code taking input from both palyers](https://cdn.hackclub.com/rescue?url=https://cloud-hztfs3uyy.vercel.app/untitled_2.png)
+![Code taking input from both players](https://cdn.hackclub.com/rescue?url=https://cloud-hztfs3uyy.vercel.app/untitled_2.png)
 
 But, we never checked if a player has won or players have run out of moves. Let's now work on that next.
 

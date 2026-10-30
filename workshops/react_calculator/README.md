@@ -313,7 +313,7 @@ export default function App() {
 
 Next, let's create a function which will store the numbers clicked by the user in the `input` state.
 
-**NOTE:** We'll create seperate functions for operators and numbers as we don't want the ability to press the operators more than once simultaneously but the numbers can be pressed any number of times we want. If you are confused, don't worry! You'll get it in a minute.
+**NOTE:** We'll create separate functions for operators and numbers as we don't want the ability to press the operators more than once simultaneously but the numbers can be pressed any number of times we want. If you are confused, don't worry! You'll get it in a minute.
 
 ```jsx
 export default function App() {

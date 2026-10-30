@@ -75,9 +75,9 @@ First:
 
 This may take a while.
 
-`Gradle` is the name of the build system we are using. It is what turns our Java code into something the compiler understands. `Tasks` is a directory of all the build actions we can use, so if we wanted to change the way the compiler saw our program then we change which build action or Task. `fg_runs` is the Forge specfic build action set and contains all the build actions for our program. 
+`Gradle` is the name of the build system we are using. It is what turns our Java code into something the compiler understands. `Tasks` is a directory of all the build actions we can use, so if we wanted to change the way the compiler saw our program then we change which build action or Task. `fg_runs` is the Forge specific build action set and contains all the build actions for our program. 
 
-`genIntellijRuns` tells the compiler and the program itself that it needs to go through Forge before going through the compiler. This also sets us up with our development environment with the mod automically loaded in and a test version of Minecraft is loaded when you run the program from your IDE.
+`genIntellijRuns` tells the compiler and the program itself that it needs to go through Forge before going through the compiler. This also sets us up with our development environment with the mod automatically loaded in and a test version of Minecraft is loaded when you run the program from your IDE.
 
 Once it has been built, it should say `BUILD SUCCESSFUL` in the Build tab at the bottom. You can close the gradle tab now by clicking on the `-` at the top right.
 

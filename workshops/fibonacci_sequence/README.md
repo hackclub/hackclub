@@ -122,7 +122,7 @@ Now, let's write some functions for creating the Golden Spiral.
 
 Now that we've written the code to generate the rectangles, we can place the golden spiral on the rectangles!
 
-The easiest way to do this is to create a second turtle for drawing the spiral. Under the previous turtle setup code, but above all of the funcitons, add:
+The easiest way to do this is to create a second turtle for drawing the spiral. Under the previous turtle setup code, but above all of the functions, add:
 
 ```python
 spiralTurtle = turtle.Turtle()
@@ -222,7 +222,7 @@ wn.exitonclick()
 ```
 
 - First, we call the `main()` function we wrote near the beginning of this workshop.
-- Then, we call `myTur.end_fill()`, which stops filling the first turtle obejct. This will also fill the blue rectangles with a black color.
+- Then, we call `myTur.end_fill()`, which stops filling the first turtle object. This will also fill the blue rectangles with a black color.
 - Then, we will call the `spiral()` function we wrote earlier.
 - Finally, we call `wn.exitonclick()`, which will terminate the program whenever the user clicks on the display screen.
 

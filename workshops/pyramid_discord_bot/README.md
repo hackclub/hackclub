@@ -82,7 +82,7 @@ echo ".env" >> .gitignore
 
 or by opening it with your text editor and changing it through that.
 
-Finally, add it to your server by going to the `OAuth2` tab and generating a URL with `scopes` being `bot` and with the permisssion bit `67584`:
+Finally, add it to your server by going to the `OAuth2` tab and generating a URL with `scopes` being `bot` and with the permission bit `67584`:
 
 ![OAuth](https://raw.githubusercontent.com/safinsingh/pyramid/master/assets/oauth.png)
 
@@ -284,7 +284,7 @@ Row 5: 1 1 1 1 1  (5 columns)
 
 ## Part 6: Putting it all together
 
-Finally, now that we're done with all the utility functions, let's integrate the actual functions into the bot itself. Here are some polishing changes I added to the `index.ts` file, explained thouroughly:
+Finally, now that we're done with all the utility functions, let's integrate the actual functions into the bot itself. Here are some polishing changes I added to the `index.ts` file, explained thoroughly:
 
 ```typescript
 import dotenv from 'dotenv'

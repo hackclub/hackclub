@@ -255,7 +255,7 @@ static void Main(string[] args)
 }
 ```
 
-Set a choice refrence called `head` and set it to `choice1`. This will be how we will track what choice we are on.
+Set a choice reference called `head` and set it to `choice1`. This will be how we will track what choice we are on.
 
 ```csharp
 Choice head = choice1;
@@ -465,7 +465,7 @@ public class Choice
 
 ## Hacking
 
-The fun doesn't stop here! Here are some ways you can expand on this proejct:
+The fun doesn't stop here! Here are some ways you can expand on this project:
 
 - [Make Certain Paths Hidden](https://repl.it/@CosmicSnowman/Dialogue-Tree-Expanded-1#main.cs)
 - [Add Color to the Text](https://repl.it/@CosmicSnowman/Dialogue-Tree-Expanded-2#main.cs)

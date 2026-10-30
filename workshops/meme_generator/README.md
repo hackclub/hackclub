@@ -125,7 +125,7 @@ If you run the website now by clicking the green "Run" button at the top, you'll
 
 ![website without div tags](https://cdn.hackclub.com/rescue?url=https://cloud-4qhf2j8gs.vercel.app/0image.png)
 
-To fix this problem, we have the mighty `<div>` tag which we'll be using to seperate out the different elements!
+To fix this problem, we have the mighty `<div>` tag which we'll be using to separate out the different elements!
 
 So, wrap all the different elements inside the `<div>` tags, like this:
 

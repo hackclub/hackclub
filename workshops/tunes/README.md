@@ -7,7 +7,7 @@ img: https://cdn.hackclub.com/rescue?url=https://cloud-huy2ue7gg.vercel.app/0scr
 
 # Tunes on JS - Creating a Piano
 
-We've all mashed our fingers on a piano, thinking we're creating something amazing (of course you are!). Ok, maybe that's just me. Today, I thought it'd be cool if we created a piano using HTML & JS all with the help of a great libary called [Tone.js](http://tonejs.github.io/)!
+We've all mashed our fingers on a piano, thinking we're creating something amazing (of course you are!). Ok, maybe that's just me. Today, I thought it'd be cool if we created a piano using HTML & JS all with the help of a great library called [Tone.js](http://tonejs.github.io/)!
 
 ## Getting started
 
@@ -104,7 +104,7 @@ document.onkeydown = function (e) {
 }
 ```
 
-What this code does is it get's the event (the key being pressed) information happening. It then extracts the key code from that information. The use of `||` is as a browser fallback as some browsers have different APIs.
+What this code does is it gets the event (the key being pressed) information happening. It then extracts the key code from that information. The use of `||` is as a browser fallback as some browsers have different APIs.
 
 You'll see that when running this, our key is a number!? That's because each key has it's own code. [keycode.info](https://keycode.info/) is a super handy tool to help you identify the codes for each key.
 
@@ -178,7 +178,7 @@ Remember, you can use [keycode.info](https://keycode.info).
 
 ## Making the UI interactive
 
-How will the person know the key they clicked? Let's give them some visual confirmation! We've got each key in a seperate element so let's change the background of the key when it's hit. We can do by adding this line to our `playNote` function:
+How will the person know the key they clicked? Let's give them some visual confirmation! We've got each key in a separate element so let's change the background of the key when it's hit. We can do by adding this line to our `playNote` function:
 
 ```javascript
 document.getElementById(note).style.background = '#33d6a6'
@@ -208,6 +208,6 @@ We've built a basic project, now let's make it EPIC! I'm handing over control to
 
 - [A piano that gives the user more control.](https://hopeful-mclean-c9c978.netlify.app/) This version of the piano allows you to use the <kbd>SHIFT</kbd> key to type a black key and <kbd>⬅︎</kbd> or <kbd>⮕</kbd> to move down the keyboard.
 - [A piano that goes crazy.](https://optimistic-bhaskara-1870c3.netlify.app) This piano doesn't care, what ever you click it won't care about! Plays random sounds with random colours and some very kind messages!
-- [A global piano, a piano where every can go play and others can hear!](https://global-piano.herokuapp.com) Built with Socket.io, I've adpated this project to power this. Try opening up the website in multiple tabs to play around :)
+- [A global piano, a piano where every can go play and others can hear!](https://global-piano.herokuapp.com) Built with Socket.io, I've adapted this project to power this. Try opening up the website in multiple tabs to play around :)
 
 Make something cool? Awesomeeee!!!! Share it on [#ship](https://hackclub.slack.com/archives/C0M8PUPU6/) in the Slack and tag me with [@sampoder](https://hackclub.slack.com/archives/DT08DHJKF/)!

@@ -45,7 +45,7 @@ Then, we are creating another `div` container with the class `colors`. This will
 </div>
 ```
 
-I've selected a few colors for you, but if you want to choose your own colors, Google "html hex code generator", pick a color, and replace one of the hexademical color values with whichever one you choose!
+I've selected a few colors for you, but if you want to choose your own colors, Google "html hex code generator", pick a color, and replace one of the hexadecimal color values with whichever one you choose!
 
 Finally, right after the `div` container with the class `colors`, we'll put 4 elements with the following values:
 

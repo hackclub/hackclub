@@ -85,7 +85,7 @@ Okay, so now we will discuss some questions that may arise from the above steps 
 
 The above command will create a **package.json** file for your project. You need to fill some meta information when you run this command like name, version and description etc. 
 
-The -y ( it is a command line flag ) **will autofill these fields** with the defualt values for them and write them to your package.json file!
+The -y ( it is a command line flag ) **will autofill these fields** with the default values for them and write them to your package.json file!
 
 ### What is this package.json file?
 
@@ -127,7 +127,7 @@ It is very common that the package name you want to use might already be taken a
 
 Each npm user/organization has its own scope, and only you can add packages to your scope. This means you don’t have to worry about someone taking your package name ahead of you.
 
-So, here in our case @username is acting as a scope and all the packages with this scope will be grouped together in a common directory. As the scope is unique for every user, hence we all will have our packages with the same name but with a differen scope! npm is so smart😎
+So, here in our case @username is acting as a scope and all the packages with this scope will be grouped together in a common directory. As the scope is unique for every user, hence we all will have our packages with the same name but with a different scope! npm is so smart😎
 
 ![smartdog gif](https://cdn.hackclub.com/rescue?url=https://cloud-h4bwztgkl-hack-club-bot.vercel.app/9smartdog.gif)
 
@@ -319,7 +319,7 @@ npm -i @bajpai244/calculator
 
 ![testcommands image](https://cdn.hackclub.com/rescue?url=https://cloud-h4bwztgkl-hack-club-bot.vercel.app/7testcommands.png)
 
-### What happend in the above two commands?
+### What happened in the above two commands?
 
 The first command made our package.json file and second command installed our npm package to our test project.
 

@@ -58,7 +58,7 @@ If you don't understand some of the code, you're welcome to ask your club leader
 Let's start writing some JavaScript! Our program will be split up into three blocks that provide functionality: ```handleKey(key)```, ```handleEnd()```, and the event listener. We'll also have variables defined at the beginning to assist these three blocks. Let me explain how our program will flow:
 
 1. First we'll declare variables for our text, time, position, etc.
-2. Then we'll start our event listener. Everytime a key is pressed it will check if the key is a valid symbol or letter. It'll forward the key to ```handleKey(key)``` if it is, otherwise ignore it.
+2. Then we'll start our event listener. Every time a key is pressed it will check if the key is a valid symbol or letter. It'll forward the key to ```handleKey(key)``` if it is, otherwise ignore it.
 3. Every time ```handleKey(key)``` gets a character, it checks it against the text. If it's correct it increments the position in the text and changes the letter's color to green. Otherwise it changes it to red and sets a ```backspaceNeeded``` variable.
 4. When the user is done typing, the ```handleEnd()``` function computes the results, changes the CSS ```display``` property, and modifies the HTML content.
 
@@ -77,11 +77,11 @@ const text =
 ```
 The first variable is used by our event listener and lists all the keys we won't count as *errors* when typing. We use JavaScript's built-in [```split()```](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) function to separate the string into an [array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
-An array in JavaScript is a variable that can store a list of many variables. A specific variable inside an array is accesible by an index value that starts at zero. Index 0 corresponds to the first element in the array. Index 1 contributes to the second, and so on. Arrays are initialized like this: ```let array = ['string', 'apple']```.
+An array in JavaScript is a variable that can store a list of many variables. A specific variable inside an array is accessible by an index value that starts at zero. Index 0 corresponds to the first element in the array. Index 1 contributes to the second, and so on. Arrays are initialized like this: ```let array = ['string', 'apple']```.
 
 ![Image that explains index](https://cdn.hackclub.com/rescue?url=https://cloud-ei7nqg21v.vercel.app/3index_demo.png)
 
-The ```split()``` function splits a string into an array based on a delimeter. The delimeter is the string we add in its parantheses as a parameter. So every time it sees the parameter we passed in, it makes a new array element.
+The ```split()``` function splits a string into an array based on a delimiter. The delimiter is the string we add in its parentheses as a parameter. So every time it sees the parameter we passed in, it makes a new array element.
 
 Finally we have a string that defines what text we'll add for our typing test. Add this at the end:
 ```javascript
@@ -139,9 +139,9 @@ The function we use first checks if ```event.key``` is a space (empty string). I
 
 We then check if it's the first key that was typed. The code in an [```if```](https://www.w3schools.com/js/js_if_else.asp) statement in JavaScript runs if the condition in the parentheses is ```true```. Otherwise it skips over. Since ```firstTime``` is literally set to ```true```, the code runs. The code first changes the variable to ```false``` so that it doesn't run again, and sets an ```interval```. 
 
-[```setInterval()```](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) repeats a function periodically. We give it a time in miliseconds to repeat, and a function to call. The function inside of it is called an [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). 
+[```setInterval()```](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) repeats a function periodically. We give it a time in milliseconds to repeat, and a function to call. The function inside of it is called an [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). 
 
-Arrow functions are just normal functions but shorthand. The first part of our arrow function is `()`. `()` is usually where parameters would go. A parameter is a variable given to a function to allow the variable's use inside the function. We need no parameters, so we give it an empty value. We then use `=>` to represent that it's an arrow function. After `=>` we write our function normally. Our function's body in this case just increments the currentTime by 1. `++` is an operator that increases the value of the operand by 1 (just increases the ```currentTime``` variable, and it repeats every 1000 miliseconds (1 second), so it's basically a timer we created).
+Arrow functions are just normal functions but shorthand. The first part of our arrow function is `()`. `()` is usually where parameters would go. A parameter is a variable given to a function to allow the variable's use inside the function. We need no parameters, so we give it an empty value. We then use `=>` to represent that it's an arrow function. After `=>` we write our function normally. Our function's body in this case just increments the currentTime by 1. `++` is an operator that increases the value of the operand by 1 (just increases the ```currentTime``` variable, and it repeats every 1000 milliseconds (1 second), so it's basically a timer we created).
 
 We do another equality check, this time making sure that the [```location```](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/location) property of the event is ```0```, and making sure that the key isn't inside our ```invalidKeys``` array. The ```location``` property being zero means that the key was one of the general key presses. Additionally we use our array ```invalidKeys```'s, built-in [```includes()```](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) method to check if an element is inside that array.
 
@@ -243,10 +243,10 @@ The [`push()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
 If there is a backspace needed, we only execute code if the ```key``` is a backspace. We do this so that our program doesn't continue when a backspace is needed. After doing the appropriate check for space or letter, we change the color to `black` if it's a letter, and `transparent` if it's a space. `transparent` is the default `backgroundColor` and `black` is the default color in our case. This resets the colors back to normal. Finally we reset the ```backspaceNeeded``` variable if the key pressed was indeed a backspace.
 
-At the end we make sure that if the current position has been incremented to ```textArr.length```, we stop the timer function by doing `clearInterval(repeat)`. This takes the `setInterval()` method's variable `repeat` that we assigned, and stops it from repeating. We finally call our ```handleEnd()``` function to show the results. Since array indexes reference **one more than the index value** having an index equivalent to the array's length would reference a non-existant value. Therefore we know that we have reached the end of the program.
+At the end we make sure that if the current position has been incremented to ```textArr.length```, we stop the timer function by doing `clearInterval(repeat)`. This takes the `setInterval()` method's variable `repeat` that we assigned, and stops it from repeating. We finally call our ```handleEnd()``` function to show the results. Since array indexes reference **one more than the index value** having an index equivalent to the array's length would reference a non-existent value. Therefore we know that we have reached the end of the program.
 
 #### Section 4:
-Now we need to add the final segement of our code: the ```handleEnd()``` function. This function calculates the results, modifies the HTML, and changes the display properties that hide the results. Add this at the end:
+Now we need to add the final segment of our code: the ```handleEnd()``` function. This function calculates the results, modifies the HTML, and changes the display properties that hide the results. Add this at the end:
 ```javascript
 function handleEnd() {
     let wpm = Math.floor(textArr.length / 5 / (currentTime / 60));
@@ -274,7 +274,7 @@ Finally, we set the display of our ```main``` container to ```'none'``` and the 
 
 ![Image resembling finishing a race](https://cdn.hackclub.com/rescue?url=https://cloud-ei7nqg21v.vercel.app/0finished.jpeg)
 
-Thats it! We've finished coding the typing test workshop. You should feel proud of yourself because you learned many new skills such as functions, backticks, operators, ```if``` statements, and more! This workshop is pretty hackable, though. Here are some examples of extending it:
+That's it! We've finished coding the typing test workshop. You should feel proud of yourself because you learned many new skills such as functions, backticks, operators, ```if``` statements, and more! This workshop is pretty hackable, though. Here are some examples of extending it:
 
 - A try again button! We can add a try again button to our workshop. Here's the [final demo](https://javascript-typing-test-final-1.gurshanbrar.repl.co/) and the [source code](https://repl.it/@GurshanBrar/JavaScript-Typing-Test-v1#index.html).
 - Save our results in ```localStorage```. ```localStorage``` is a place on a user's browser to store data. We can store the results there, and fetch them every time we complete the typing test! The [final demo](https://javascript-typing-test-v2.gurshanbrar.repl.co/) and the [source code](https://repl.it/@GurshanBrar/JavaScript-Typing-Test-v2#script.js).

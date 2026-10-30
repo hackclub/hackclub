@@ -127,7 +127,7 @@ What we need is a way so that we could transform our sum(a,b) function into a fu
 
 Hmm, still confusing? Okay, let me simplify!
 
-<img src="https://media.giphy.com/media/TPl5N4Ci49ZQY/giphy.gif" alt="cofusing gif" width="400px" />
+<img src="https://media.giphy.com/media/TPl5N4Ci49ZQY/giphy.gif" alt="confusing gif" width="400px" />
 
 In short, we need something like this:
 
@@ -205,7 +205,7 @@ Currying transforms a function to accept one argument at a time, It doesn’t me
 
 <img src="https://cdn.hackclub.com/rescue?url=https://cloud-pf5att3lh.vercel.app/0image.png" alt="spidey image" width="400px" />
 
-Therefore, when we call curried_sum(5,5) then we get the result 10, because when all the arguments are provided to a curried function at once then it evaluates the function in the same way as if it never was curried, this is why it yeilds a result equal to inc\_(5).
+Therefore, when we call curried_sum(5,5) then we get the result 10, because when all the arguments are provided to a curried function at once then it evaluates the function in the same way as if it never was curried, this is why it yields a result equal to inc\_(5).
 
 
 ### How, is curried_sum(5)(5) even working?

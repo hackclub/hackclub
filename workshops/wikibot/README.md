@@ -28,7 +28,7 @@ Feel free to skip steps for adding teammates—you won't need that for now.
 
 You must now take note of some authentication keys you'll need for building the WhatsApp bot 👇
 
-![Project dashbaord with authorization tokens highlighted](https://cdn.hackclub.com/rescue?url=https://cloud-pnawa4bvo-hack-club-bot.vercel.app/5auth_token.png)
+![Project dashboard with authorization tokens highlighted](https://cdn.hackclub.com/rescue?url=https://cloud-pnawa4bvo-hack-club-bot.vercel.app/5auth_token.png)
 
 The final step—[set up your WhatsApp Sandbox](https://www.twilio.com/console/sms/whatsapp/sandbox)—choose any number, and join your sandbox following instructions on the page.
 

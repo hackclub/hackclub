@@ -4,12 +4,12 @@
 ### Workshop: Stressed Ball (A.K.A. Reverse Workshop 1)
 ### Location: Bellevue Big Picture School Hack Club, Bellevue, WA
 ### Date: Monday Nov. 8th, 2021
-### Attendence: 3
+### Attendance: 3
 ### Written by: Tevan Goldberg
 
 ## Overview
 
-Benjamin was the first club leader that volunteered to try out our 'reverse workshop,' and had a lot of good feedback for us. He runs a small club at his high school (which is also small) that has struggled with attendence, so he was treating it more as an independent study space for those that came. This was the first Hack Club workshop they actually did to completion, having previously tried the personal website workshop without garnering much interest. He gave a generally positive assessment of the workshop style, along with some specific critiques and deviations from our script. Benjamin spoke to Leo and Tevan for 30 minutes on Wednesday the 10th to debrief how the meeting went, which forms the basis of this write-up. 
+Benjamin was the first club leader that volunteered to try out our 'reverse workshop,' and had a lot of good feedback for us. He runs a small club at his high school (which is also small) that has struggled with attendance, so he was treating it more as an independent study space for those that came. This was the first Hack Club workshop they actually did to completion, having previously tried the personal website workshop without garnering much interest. He gave a generally positive assessment of the workshop style, along with some specific critiques and deviations from our script. Benjamin spoke to Leo and Tevan for 30 minutes on Wednesday the 10th to debrief how the meeting went, which forms the basis of this write-up. 
 
 ## Meeting Flow
 

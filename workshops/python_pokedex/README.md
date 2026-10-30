@@ -29,7 +29,7 @@ import sys
 
 Next, we need a list of all of the available Pokemon! Luckily, a GitHub user by the name of [@cervoise](https://github.com/cervoise) has a list of 721 Pokemon names. You can download the `.txt` file [here](https://github.com/cervoise/pentest-scripts/blob/master/password-cracking/wordlists/pokemon-list-en.txt). In repl.it, you can copy and paste the contents into a new file.
 
-We can open a file with the `open()` function. The first required argument is the file name, I have the `.txt` file stored with the name `allpokemon.txt` in the same directory as the Python file. The second required argument refers to the permissions that we open it with. Since we only need to scrape its contents, we can use the permision "r", signifying "read".
+We can open a file with the `open()` function. The first required argument is the file name, I have the `.txt` file stored with the name `allpokemon.txt` in the same directory as the Python file. The second required argument refers to the permissions that we open it with. Since we only need to scrape its contents, we can use the permission "r", signifying "read".
 
 Calling `readlines()` on a file object splits content on different lines as list elements.
 ```py

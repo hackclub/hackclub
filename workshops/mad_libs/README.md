@@ -29,7 +29,7 @@ Create a new file and name it `madlib.txt`. Put in your own prompt and surround 
 
 ## Initial Statements
 
-Next, add thse to the top of the `main.cs` file:
+Next, add these to the top of the `main.cs` file:
 
 ```csharp
 using System;
@@ -214,7 +214,7 @@ while(true)
 }
 ```
 
-We are just printing lines to seperate the prompt for organization and then printing it.
+We are just printing lines to separate the prompt for organization and then printing it.
 
 ## Play Again
 

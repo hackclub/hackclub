@@ -69,7 +69,7 @@ Now, you finally know why you need to learn this programming paradigm so let’s
 
 <img src="https://cdn.hackclub.com/rescue?url=https://cloud-qlxm58ybs.vercel.app/0image.png" alt="Lambda Symbol Image" width="400" />
 
-The reason I am telling you about it is a lot of time functional programming is accompanied by the Lambda Symbol (λ) and this Lamda basically represents the fact that it is based on lambda calculus (see, now you know it!).
+The reason I am telling you about it is a lot of time functional programming is accompanied by the Lambda Symbol (λ) and this Lambda basically represents the fact that it is based on lambda calculus (see, now you know it!).
 
 ## What makes a language a Functional Programming language?
 

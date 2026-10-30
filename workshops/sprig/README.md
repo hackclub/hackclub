@@ -18,7 +18,7 @@ locales: 'es-xl, pt-br'
 
 <img width="500" alt="Screen Shot 2023-03-03 at 5 48 32 PM" src="https://cdn.hackclub.com/rescue?url=https://cloud-guxu865fy-hack-club-bot.vercel.app/0image.png">
 
-We designed Sprig to accomodate workshops with minimal instruction and maximal making and exploring. This is how I would run Sprig as a workshop.
+We designed Sprig to accommodate workshops with minimal instruction and maximal making and exploring. This is how I would run Sprig as a workshop.
 
 ## Demo (2 minutes)
 
@@ -51,7 +51,7 @@ That's it! Your account is ready!
 
 Open up the toolkit and quickly describe the different things you can do. The point here is not to explain every function. It's just to give people a sense of what is possible and where to look for help. Only spend a few minutes doing this! Check out [the snippet below](#toolkit) to survey essentially every function in Sprig.
 
-Recent files are available in the "Your Games" page. They will always be saved in your account. **The most reliable way to save is to downlad the `js` file**.
+Recent files are available in the "Your Games" page. They will always be saved in your account. **The most reliable way to save is to download the `js` file**.
 
 To save, hit the automatically generated name:
 
@@ -71,7 +71,7 @@ Don't forget to take note of where it was saved!
 
 Tell people to start by working through the [tutorial](https://sprig.hackclub.com/gallery/getting_started).
 
-After people complete the tutorial encourge them to start thinking of their own game. Often a good way to make and original game is to start with an existing one and adding a new mechanic to it. Check out the games tagged `hackable` to find remixable bases.
+After people complete the tutorial encourage them to start thinking of their own game. Often a good way to make and original game is to start with an existing one and adding a new mechanic to it. Check out the games tagged `hackable` to find remixable bases.
 
 ## Share (10 minutes)
 

@@ -407,7 +407,7 @@ When compiing a model, Keras asks you to specify your **loss function** and your
 
 Here our predictions are probability distributions across the ten different digits (e.g. "we're 80% confident this image is a 3, 10% sure it's an 8, 5% it's a 2, etc."), and the target is a probability distribution with 100% for the correct category, and 0 for everything else. The cross-entropy is a measure of how different your predicted distribution is from the target distribution. If you are interested in learning more about the math behind cross entropy, feel free to check out this [Wikipedia](https://en.wikipedia.org/wiki/Cross_entropy) link.
 
-The optimizer helps determine how quickly the model learns, how resistent it is to getting "stuck" or "blowing up". We won't discuss this in too much detail, but "adam" is often a good choice.
+The optimizer helps determine how quickly the model learns, how resistant it is to getting "stuck" or "blowing up". We won't discuss this in too much detail, but "adam" is often a good choice.
 
 ```py
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])

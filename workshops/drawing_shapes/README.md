@@ -64,7 +64,7 @@ colorNum = 0
 colors = ["red", "green", "blue", "yellow", "orange", "purple", "grey", "black"]
 ```
 
-The variable `colorNum` is the index we are starting at with the array of "colors". We will handle swtiching between colors later on.
+The variable `colorNum` is the index we are starting at with the array of "colors". We will handle switching between colors later on.
 
 ### Initializing The Turtle
 
@@ -210,7 +210,7 @@ def switchShape(x, y):
 ```
 
 - First, we create a function called `switchShape()`, which takes in x and y coordinates as parameters.
-- Then, we use the [`global`](https://www.programiz.com/python-programming/global-keyword) keyword to be able to modify the `itemNum` and `maxItem` global variables we definined at the beginning of this workshop inside this function.
+- Then, we use the [`global`](https://www.programiz.com/python-programming/global-keyword) keyword to be able to modify the `itemNum` and `maxItem` global variables we defined at the beginning of this workshop inside this function.
 
 Next, continue the function with the following code:
 

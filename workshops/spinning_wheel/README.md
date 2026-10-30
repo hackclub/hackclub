@@ -413,7 +413,7 @@ Here above we have written the blank code for the `onclick` event as now we are 
 
 ### For curious souls:
 1. `Math.random()` gives a random number between 0 to 1.
-2. Mutliplying with (`max`-`min`) aka range will give a number between 0 to (`max`-`min`) - **Stretching the range**.
+2. Multiplying with (`max`-`min`) aka range will give a number between 0 to (`max`-`min`) - **Stretching the range**.
 3. Adding `min` will bring the value to **min** to **max**. - **Sliding the value**.
 4. `Math.floor()`-ing the result, will give us a integer rounded off result.
 

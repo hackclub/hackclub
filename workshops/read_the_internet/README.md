@@ -7,7 +7,7 @@ img: 'https://cdn.hackclub.com/rescue?url=https://cloud-p5pdve0kf.vercel.app/2we
 
 We can read all the content on websites, but wouldn't it be cool if we could automatically read specific data from websites whenever you wanted? If this interested you, this workshop is for you. I will be showing you how to use webscraping to create a tool that can gather current COVID data and displays it as text.
 
-*Note: not all webpages can be read using this technique. If data is loaded in using ajax or after the inital page request this method may not work.*
+*Note: not all webpages can be read using this technique. If data is loaded in using ajax or after the initial page request this method may not work.*
 
 [Final Result and Code](https://repl.it/@SavageCoder77/Read-The-Internet#main.py)
 
@@ -128,7 +128,7 @@ tableRows = table.findAll('tr')
 ```
 Now that we have all the table rows in a Python list (`tableRows`), we can iterate through the list. Doing this will allow us to choose which countries' data we want.
 
-Before we start iterating, there are some things we need to adress regarding the data. The data doesn't come as simple text and numbers. For our project the website returns data with whitespacing as seen below. Included with our data are newlines and random spaces.
+Before we start iterating, there are some things we need to address regarding the data. The data doesn't come as simple text and numbers. For our project the website returns data with whitespacing as seen below. Included with our data are newlines and random spaces.
 
 The code below is an example that returns a piece of data from our table.
 ```python
@@ -137,35 +137,35 @@ tableCol = tableCols[0]
 tableCol.text
 > "\r\n          TOTAL\r\n        "
 ```
-With Python we can use the `.strip()` function on the string. The `.strip()` function clears away all whitespacing from the begining and end of a string. Below is an example of the code we can use to get clean data.
+With Python we can use the `.strip()` function on the string. The `.strip()` function clears away all whitespacing from the beginning and end of a string. Below is an example of the code we can use to get clean data.
 ```python
 tableCol.text.strip()
 > "TOTAL"
 ```
-Now that we got that handled lets get to proccessing the rest of our data!
+Now that we got that handled lets get to processing the rest of our data!
 
-We begin with creaing a simple for loop to iterate over the data. Our loop will loop through every row in our table. This is also reffered to as a for each loop in other programming languages like Java.
+We begin with creating a simple for loop to iterate over the data. Our loop will loop through every row in our table. This is also referred to as a for each loop in other programming languages like Java.
 ```python
 for row in tableRows[1:]:
     # Whatever is in here will run for every row in our table
 ```
 
-You may have noticed `tableRows[1:]` has a weird bracket thing attached to it. This is list splicing. In Python this allows a programmer to control how much of the list they want to use. The general structure looks like this `[starting value (inclusive) : ending value (exclusive) : step (how many items skip)]`.  Each value is optional which is why in our example only includs a 1, no ending value, and no step value.
+You may have noticed `tableRows[1:]` has a weird bracket thing attached to it. This is list splicing. In Python this allows a programmer to control how much of the list they want to use. The general structure looks like this `[starting value (inclusive) : ending value (exclusive) : step (how many items skip)]`.  Each value is optional which is why in our example only includes a 1, no ending value, and no step value.
 
-By default when putting a list in a for loop the brakcet would be `[::]` meaning that it will start at the begining, stop at the end, and go up by one. For our for loop we want to skip the first row because the first row is the table header (column names).
+By default when putting a list in a for loop the brakcet would be `[::]` meaning that it will start at the beginning, stop at the end, and go up by one. For our for loop we want to skip the first row because the first row is the table header (column names).
 
-Next we add an if statment that checks if the current row is the United States.
+Next we add an if statement that checks if the current row is the United States.
 ```python
 for row in tableRows[1:]:
     if 'United States' == row.find('td').text[2:].strip():
         # Do something if the current row is the United States
 ```
 
-This if statment may seem long and complicated but lets break it down into small parts. The first part, `'United States' ==` checks if whatever is on the other side of the double equals is the words "United States". On the other side we have to get the country name.
+This if statement may seem long and complicated but lets break it down into small parts. The first part, `'United States' ==` checks if whatever is on the other side of the double equals is the words "United States". On the other side we have to get the country name.
 
 As you can remember from before, `tableRows` contains a list of BeautifulSoup objects that contains all the rows from our table. Within these rows are all the columns. For the table we are using the country name is in the first column or the first `td` element in the row.
 
-To get the current row's country we use BeautifulSoup to find the first column in the row with `row.find('td')`. This returns a weird string with whitespaces as we have seen before as well as some random characters. To get rid of these uneeded characters we use `[2:]` which is the same as list splicing except for strings, and we use `.strip()` to clear away excess whitespacing.
+To get the current row's country we use BeautifulSoup to find the first column in the row with `row.find('td')`. This returns a weird string with whitespaces as we have seen before as well as some random characters. To get rid of these unneeded characters we use `[2:]` which is the same as list splicing except for strings, and we use `.strip()` to clear away excess whitespacing.
 
 Now we have code that finds the country we want from all the rows in our table, the last step is to display the data!
 ```python
@@ -198,7 +198,7 @@ for row in tableRows[1:]:
 
 The only difference is we create a python list to store the names of the countries we want to view.
 
-### Thats it!
+### That's it!
 
 You can now get live COVID19 data, but more importantly you are now primed with knowledge to webscrape anything!
 

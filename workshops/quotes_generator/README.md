@@ -170,7 +170,7 @@ The browser must be yelling at you that `data` is undefined. It is because we ha
 
 What we basically did is that we already defined `data` but we'll pass the value to it later inside the `async function`.
 
-Now we have a random number generated everytime the `randomNo()` function is called. And if we pass it to an array, it will return us the value on that index. So, inside the async function, when we set the state, we'll add square brackets to `data` and call `randomNo()` in it.
+Now we have a random number generated every time the `randomNo()` function is called. And if we pass it to an array, it will return us the value on that index. So, inside the async function, when we set the state, we'll add square brackets to `data` and call `randomNo()` in it.
 
 ```jsx
 setQuotes(data[randomNo()]);
@@ -218,7 +218,7 @@ export default function App() {
 
 </details>
 
-The next thing we want to implement is that we want to get a random quote everytime our website is loaded. This can easily be done by creating a `useEffect` hook inside our component, calling our `getQuotes()` function in it and passing an empty dependency array to it.
+The next thing we want to implement is that we want to get a random quote every time our website is loaded. This can easily be done by creating a `useEffect` hook inside our component, calling our `getQuotes()` function in it and passing an empty dependency array to it.
 
 ![useEffect's photo](https://cdn.hackclub.com/rescue?url=https://cloud-q749otmin.vercel.app/0image.png)
 

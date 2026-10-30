@@ -106,7 +106,7 @@ First, select the components from basic to all; by default, it will be chosen as
 
 Let us start with dragging the Arduino board.
 
-![draging](https://cdn.hackclub.com/rescue?url=https://cloud-i27ey1nq6.vercel.app/0draggin_the_arduino.gif)
+![dragging](https://cdn.hackclub.com/rescue?url=https://cloud-i27ey1nq6.vercel.app/0draggin_the_arduino.gif)
 
 The next component is our seven segment display. You can get it by typing the name in the search box provided. After finding it, just drag it from there to the workspace and place it beside the Arduino board. Also, drag a push-button and 7 resistors onto the screen. You will find them just by typing the name in the search box. Drag it and place it on the workspace.
 

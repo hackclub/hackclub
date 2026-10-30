@@ -238,9 +238,9 @@ Then in the next block that is `th`, we have a customized heading of the table w
 
 Finally, we are done with the CSS part of our workshop.
 
-![final output of codes after completetion of CSS part](https://cdn.hackclub.com/rescue?url=https://cloud-2td3hm71p.vercel.app/0css-final-output.png)
+![final output of codes after completion of CSS part](https://cdn.hackclub.com/rescue?url=https://cloud-2td3hm71p.vercel.app/0css-final-output.png)
 
-^^^Final output of our codes after completetion of CSS part. But it is not functional yet.
+^^^Final output of our codes after completion of CSS part. But it is not functional yet.
 
 ### What we did so far:
 1- We built the structure of the password generator tool and webpage.
@@ -341,7 +341,7 @@ So, at the end of our loop, we got a random password selected from the character
 
 Finally, we are done with the JavaScript part of our project.
 
-![final output of codes after completetion of javascript](https://cdn.hackclub.com/rescue?url=https://cloud-r9k5bhazs.vercel.app/0ezgif-6-2a4189e70248.gif)
+![final output of codes after completion of javascript](https://cdn.hackclub.com/rescue?url=https://cloud-r9k5bhazs.vercel.app/0ezgif-6-2a4189e70248.gif)
 
 ^^^Your webpage will look something similar to this. 😍🤩
 

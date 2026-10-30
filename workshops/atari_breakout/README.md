@@ -46,15 +46,15 @@ I've included a reference table below of all the p5.js functions that we'll use 
 | fill(value) | Sets the color used to fill shapes. `value` can be a string of a color name.  | [fill()](https://p5js.org/reference/#/p5/fill) |
 | rect(x, y, w, h) | Draws a rectangle at point `(x, y)` with a width of `w` and height of `h`. | [rect()](https://p5js.org/reference/#/p5/rect) |
 | noStroke() | Disables the automatic outline given to shapes. | [noStroke()](https://p5js.org/reference/#/p5/noStroke) |
-| keyPressed() | A function called everytime a key is pressed. Uses the `keyCode` variable to store the key that was pressed. | [keyPressed()](https://p5js.org/reference/#/p5/keyPressed) |
-| keyReleased() | A function called everytime a key is released. Uses the `keyCode` variable to store the key that was released. | [keyReleased()](https://p5js.org/reference/#/p5/keyReleased) | 
+| keyPressed() | A function called every time a key is pressed. Uses the `keyCode` variable to store the key that was pressed. | [keyPressed()](https://p5js.org/reference/#/p5/keyPressed) |
+| keyReleased() | A function called every time a key is released. Uses the `keyCode` variable to store the key that was released. | [keyReleased()](https://p5js.org/reference/#/p5/keyReleased) | 
 | circle(x, y, d) | Draws a circle at point `(x, y)` with a diameter of `d`. | [circle()](https://p5js.org/reference/#/p5/circle) |
 | textAlign(horizAlign) | Sets current alignment for drawing text to `horizAlign`, which can be either LEFT, CENTER, or RIGHT. | [textAlign()](https://p5js.org/reference/#/p5/textAlign) |
 | textSize(size) | Sets the current font size to `size`. | [textSize()](https://p5js.org/reference/#/p5/textSize) |
 | text(str, x, y) | Draws text to the screen at point `(x, y)` with the text being `str`. | [text()](https://p5js.org/reference/#/p5/text) |   
 
 ## Getting Started
-Navigate to the `script.js` file, we'll be writing code in it for the rest of the workshop. Firstly, we'll store the dimensions of our screen in some variables. This game will be 600 x 400, but feel free to change it around. Note: Add each code segement to your `script.js` file as you go through the workshop. 
+Navigate to the `script.js` file, we'll be writing code in it for the rest of the workshop. Firstly, we'll store the dimensions of our screen in some variables. This game will be 600 x 400, but feel free to change it around. Note: Add each code segment to your `script.js` file as you go through the workshop. 
 
 ```javascript
 const windowWidth = 600;
@@ -380,7 +380,7 @@ function displayScore() {
 ```
 We set the text color to white using `fill('white')` and make sure that p5.js aligns our text using `textAlign(CENTER)`. We set the text size to 20 and draw it to the canvas using the `text()` function. The first argument is the text, and the last two are the x and y positions of the text box.   
 
-We're using a template literal to represent our score, which is a formating tool that lets us combine strings and variables. Anything between the backticks is a string, and if a variable is needed, it can be placed between the curly braces with a dollar sign in front. Our coordinates place the text in the top-middle of the screen.   
+We're using a template literal to represent our score, which is a formatting tool that lets us combine strings and variables. Anything between the backticks is a string, and if a variable is needed, it can be placed between the curly braces with a dollar sign in front. Our coordinates place the text in the top-middle of the screen.   
 
 Create a `endScreen()` function to show either the "GAME OVER" or "You Win!" screen. It'll take in a `message` parameter which will be the string that will be displayed in the message. To be consistent, keep the text white and align it in the center.    
 
@@ -425,7 +425,7 @@ Congratulations, you just built Atari Breakout in JavaScript!
 Now it's your turn to apply what you know to make this game even more fun! I've linked some resources that you can use below which provide further depth into basic game development with JavaScript. Here's some creative ways to extend this game!     
 
 ### Bullets and Powerups    
-In this version, a powerup apple ocassionally moves across the screen. You can use the spacebar to shoot bullets at the powerup. If they hit, your paddle and ball size will be doubled for 9 seconds.    
+In this version, a powerup apple occasionally moves across the screen. You can use the spacebar to shoot bullets at the powerup. If they hit, your paddle and ball size will be doubled for 9 seconds.    
 
 - [Code](https://repl.it/@shayanhalder1/Atari-Breakout-Extended-Version-1#script.js)
 - [Live Demo](https://atari-breakout-extended-version-1.shayanhalder1.repl.co/)

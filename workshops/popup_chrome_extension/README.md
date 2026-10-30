@@ -35,7 +35,7 @@ You will be making a Chrome extension that allows you to save and access your Zo
 
 ## Table of Contents
 
-There are a few parts to this workshop. I highly reccomend doing them in order because each one relies on the other.
+There are a few parts to this workshop. I highly recommend doing them in order because each one relies on the other.
 
 1. Setting up the project
 2. Frontend
@@ -87,7 +87,7 @@ You can also see the file structure live here on the final Github repo: https://
 
 Every Chrome extension has a Manifest file. It essentially sets the scene for what your Chrome extension looks like to the end user. We will be following the style guide provided by Chrome here: https://developers.chrome.com/extensions/manifest
 
-There are a few mandatory items that we need to put like `manifest_version`,  `name`, and `version`. In addition, there are a few reccomended and optional items we put to make our extension work. Our app is a `browser action` Chrome extension. Learn more about different types of extensions here: https://developer.chrome.com/extensions
+There are a few mandatory items that we need to put like `manifest_version`,  `name`, and `version`. In addition, there are a few recommended and optional items we put to make our extension work. Our app is a `browser action` Chrome extension. Learn more about different types of extensions here: https://developer.chrome.com/extensions
 
 Add the following code into your `manifest.json` file:
 
@@ -161,9 +161,9 @@ We are going to use Bootstrap's UI components for our HTML/CSS. That means we ne
 
 <u>Notice the tags. HTML has specific tags that are used to tell the code the certain things.</u>
 
-1. `html` and `head` tags are just to tell the code that we are starting our application and adding some header items. You can code without the `html` tag because HTML can pick up on clues, but it's good practice to include these. The `head` tag is important because we want to import stying from other files. I even added some internal styling to the `html` tag. What do you think they do?
+1. `html` and `head` tags are just to tell the code that we are starting our application and adding some header items. You can code without the `html` tag because HTML can pick up on clues, but it's good practice to include these. The `head` tag is important because we want to import staying from other files. I even added some internal styling to the `html` tag. What do you think they do?
 2. `meta` and `title` is metadata. Just tells the browser what it needs, how to interpret the code (there are different ways to encode text), who to allow to see this page, what kind of content to show them and what size it should be, and what it should be called.
-3. `link` and `script` help teach the code what libaries it should use. It looks like we're taking in 2 stylesheets and 1 script. One stylesheet is Bootstrap CDN and the other is a minified version, if you are running the code locally. Since the CDN is first, it will get whatever changes are made live on the official server, but since theres a local version as well, it will use the CSS version that was introduced when your app was released... in case Bootstrap goes down or you are without internet.
+3. `link` and `script` help teach the code what libraries it should use. It looks like we're taking in 2 stylesheets and 1 script. One stylesheet is Bootstrap CDN and the other is a minified version, if you are running the code locally. Since the CDN is first, it will get whatever changes are made live on the official server, but since theres a local version as well, it will use the CSS version that was introduced when your app was released... in case Bootstrap goes down or you are without internet.
    * The script is our linked `action.js` file, which stores our backend functions
 
 You can learn more about different HTML tags by going to this link: https://www.w3schools.com/tags/default.asp
@@ -459,7 +459,7 @@ This goes below everything you've coded so far and above the closing of the even
 
 ##### Key takeaways:
 
-1. The data will not show up using the Chrome APIs because we are currently in the Repl enviornment, not a Chrome enviornment
+1. The data will not show up using the Chrome APIs because we are currently in the Repl environment, not a Chrome environment
 2. We validate what kind of input people can type in by checking if they entered a link or their Zoom ID correctly
 3. On every new open, we give them a `version message` welcoming them or telling them about a new feature.
 

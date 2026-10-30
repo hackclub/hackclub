@@ -106,7 +106,7 @@ Every time you save (`Ctrl+S`) your page the live preview will update.
 
 Press `F1` and type `Simple Browser`
 
-![Command Palete](https://cdn.hackclub.com/rescue?url=https://cloud-3553b97jw-hack-club-bot.vercel.app/0screenshot4.png)
+![Command Palette](https://cdn.hackclub.com/rescue?url=https://cloud-3553b97jw-hack-club-bot.vercel.app/0screenshot4.png)
 
 Press enter and input the link of the new tab that opened in the previous step and press enter again
 

@@ -184,7 +184,7 @@ To do this, we're also going to give this a `type` attribute.
 
 - That means we should `type="button"` right before the id
   - This is to ensure that the webpage understands we want a button
-    - By specifying this, the HTML adds some build-in CSS styling
+    - By specifying this, the HTML adds some built-in CSS styling
 
 ```html
 <div class="dawgit">

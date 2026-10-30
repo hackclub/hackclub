@@ -43,8 +43,8 @@ HTML stands for **Hyper Text Markup Language** and is used for defining the **ba
 
 - ```html <!DOCTYPE html>``` tells the browser to render the file as an HTML document
 - Inside ```<html lang="en">``` is where all of our content goes
-- Inside the ```<head>``` tag is where content that is more geared towards accessiblity, metadata, and the title. It is not visible on the page, except for the title.
-- Finally, the ```<body>``` houses the visible part of our program and everthing that is rendered on page load. We add JavaScript after definining our HTML elements to avoid errors orginiating from accidently accessing an HTML element before it has been loaded, and to make our pages load vital components first.
+- Inside the ```<head>``` tag is where content that is more geared towards accessibility, metadata, and the title. It is not visible on the page, except for the title.
+- Finally, the ```<body>``` houses the visible part of our program and everything that is rendered on page load. We add JavaScript after defining our HTML elements to avoid errors orginiating from accidentally accessing an HTML element before it has been loaded, and to make our pages load vital components first.
 
 This is the basic overview of an HTML document. Now lets dive into our ```<head>``` tag!
 
@@ -67,11 +67,11 @@ These two ```<link>``` tags define CSS stylesheets that are being linked to our 
 
 We can look into the ```<body>``` tag now. Starting off with our snake's container, we define a ```<div>``` element. A ```<div>``` element is simply a box that contains other elements. It's used to group elements, and also as literal boxes. ```id``` and ```class``` are two new HTML attributes. ```id``` means that the element has a unique identifier used for referencing the element in CSS and JavaScript. ```class``` is the same thing, but it allows multiple elements to fall under the same identifier. 
 
-However, there's another great property of ```class``` in our case. Remember that Bootstrap stylesheet we used? That stylesheet contains custom styles that are refereneced under class names. Using those class names in our HTML will allow the stylesheet to select our element and the styles will be applied. Therefore, a second class we use is ```container```. This class means that the [container](https://getbootstrap.com/docs/4.5/layout/overview/#containers) will resize based on the width of our page. 
+However, there's another great property of ```class``` in our case. Remember that Bootstrap stylesheet we used? That stylesheet contains custom styles that are referenced under class names. Using those class names in our HTML will allow the stylesheet to select our element and the styles will be applied. Therefore, a second class we use is ```container```. This class means that the [container](https://getbootstrap.com/docs/4.5/layout/overview/#containers) will resize based on the width of our page. 
 
 To contain the score and length we use another ```<div>``` element. Since this ```<div>``` element is inside the old one, the contents won't overflow our previous one. It has different classes to become a [flex container](https://getbootstrap.com/docs/4.5/utilities/flex/) so that spacing and alignment is easier. Inside this we have two ```<span>``` elements that define inline-text. 
 
-Finally, we add an HTML ```<canvas>``` element. I want to give special attention to this because it'll be important to the understanding of our snake game. [Html canvas](https://www.w3schools.com/html/html5_canvas.asp) is a type of [bitmap](https://www.figma.com/dictionary/#bitmap) graphics implementation in which shapes and lines can be drawn easily with JavaScript. It has a coordinate system that corrolates with each pixel making it easy to place graphics accurately. It also had ```width``` and ```height``` attributes that define the maximum coordinates of the x and y axis. These attributes automatically influence the height and width of the element on the page. You can see an example here:
+Finally, we add an HTML ```<canvas>``` element. I want to give special attention to this because it'll be important to the understanding of our snake game. [Html canvas](https://www.w3schools.com/html/html5_canvas.asp) is a type of [bitmap](https://www.figma.com/dictionary/#bitmap) graphics implementation in which shapes and lines can be drawn easily with JavaScript. It has a coordinate system that correlates with each pixel making it easy to place graphics accurately. It also had ```width``` and ```height``` attributes that define the maximum coordinates of the x and y axis. These attributes automatically influence the height and width of the element on the page. You can see an example here:
 
 ![Image of HTML Canvas coordinate system](https://cdn.hackclub.com/rescue?url=https://cloud-eb3rdoa3y.vercel.app/0canvas_example.png)
 
@@ -131,7 +131,7 @@ const pixelsPerBlock = snakeCanvas.height / blocksY;
 let centerX = (Math.ceil(blocksX / 2) - 1) * pixelsPerBlock;
 let centerY = (Math.ceil(blocksY / 2) - 1) * pixelsPerBlock;
 ```
-This looks big! Lets tackle it step by step. ```const``` is another way to declare variables in JavaScript and it's used when the variable's value shouldn't be changed. If a ```const``` was changed, JavaScript would throw an error making it easy to avoid accidental changes. First we declare the number of blocks running accross the canvas and up and down. These have to be in a 5:2 ratio to keep every block square. 
+This looks big! Lets tackle it step by step. ```const``` is another way to declare variables in JavaScript and it's used when the variable's value shouldn't be changed. If a ```const``` was changed, JavaScript would throw an error making it easy to avoid accidental changes. First we declare the number of blocks running across the canvas and up and down. These have to be in a 5:2 ratio to keep every block square. 
 
 We calculate ```pixelsPerBlock``` by dividing the height by ```blocksY```. ```pixelsPerBlock``` defines the width and height of the blocks. We calculate the center by divided the number of blocks by 2 to get half. Since our canvas rendering starts at coordinate 0, coordinate 0 is actually block 1. Therefore, we have to subtract one block and then multiply it by the pixels per block to get an accurate placement of our block. This placement is at the top left corner of the block. After we subtract one and multiply it by ```pixelsPerBlock``` we get the coordinate of the center. 
 
@@ -139,7 +139,7 @@ Now, add
 ```JavaScript
 const interval = 80;
 ``` 
-at the end. This just defines how much time in miliseconds to wait before repeating the game loop. 
+at the end. This just defines how much time in milliseconds to wait before repeating the game loop. 
 
 ```JavaScript
 const eventKeysToDirection = {
@@ -268,11 +268,11 @@ function main() {
   }
 }
 ```
-This is our ```main()``` function. First it calls ```moveSnake()``` to move the snake. It calls two conditionals, ```checkBounds()``` and ```checkPassThrough(obj)```. Finally, it renders the display. If the game is over, it calls a function ```clearInterval(repeat);``` [```clearInterval```](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval) is a method used for stopping the repetition of our main loop. It takes the reptition variable to figure out which repititon to clear. Add this line after ```let moveDirection = null;```:
+This is our ```main()``` function. First it calls ```moveSnake()``` to move the snake. It calls two conditionals, ```checkBounds()``` and ```checkPassThrough(obj)```. Finally, it renders the display. If the game is over, it calls a function ```clearInterval(repeat);``` [```clearInterval```](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval) is a method used for stopping the repetition of our main loop. It takes the repetition variable to figure out which repititon to clear. Add this line after ```let moveDirection = null;```:
 ```JavaScript
 let repeat = window.setInterval(main, interval);
 ```
-This line starts an interval on the ```window``` object. It repeats the function specified in its first argument and takes a duration in the second argument. Arguments in JavaScript are variables passed to a function. They can be used in a function when otherwise the variable would not be available. The ```repeat``` variable is used to clear the interval too, as seen above. Every ```interval``` miliseconds, ```main()``` will repeat automatically! Here's a small reference:
+This line starts an interval on the ```window``` object. It repeats the function specified in its first argument and takes a duration in the second argument. Arguments in JavaScript are variables passed to a function. They can be used in a function when otherwise the variable would not be available. The ```repeat``` variable is used to clear the interval too, as seen above. Every ```interval``` milliseconds, ```main()``` will repeat automatically! Here's a small reference:
 
 ![Image describing arguments and parameters](https://cdn.hackclub.com/rescue?url=https://cloud-k4ovk19o8.vercel.app/0arguments_demo.jpeg)
 

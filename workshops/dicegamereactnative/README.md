@@ -55,7 +55,7 @@ I have labeled the important parts of the interface. The interface is really int
 
 The Snack emulators are really awesome _but sometimes they might require you to wait in a queue ( you won't be waiting for too long )_ but still if you have an Android or iOS device then use it, as it won't require you to be on a queue.
 
-![Emualtor Run Image](https://cdn.hackclub.com/rescue?url=https://cloud-976mmnfhq-hack-club-bot.vercel.app/4emulatorintro.png)
+![Emulator Run Image](https://cdn.hackclub.com/rescue?url=https://cloud-976mmnfhq-hack-club-bot.vercel.app/4emulatorintro.png)
 
 Another suggestion is to use the web view as it won't require any waiting time and once the app is developed then try it on emulators ✌️
 
