@@ -50,7 +50,7 @@ Hack Club is a community by and for teen hackers. Our software, past events, bra
 | ✨ See our workshops                                      | [workshops.hackclub.com](https://workshops.hackclub.com)      |
 | 📸 See what Hack Clubbers are making every day            | [scrapbook.hackclub.com](https://scrapbook.hackclub.com)      |
 | 🗺️ Join a high-school hackathon nearby                    | [hackathons.hackclub.com](https://hackathons.hackclub.com)    |
-| 🎪 Participate in Hack club YSWS and events               | [programs.hackclub.com](https://programs.hackclub.com)        |
+| 🎪 Participate in Hack club YSWS and events               | [programs.hackclub.com](https://hackclub.com/programs)        |
 | 🎒 Start a Hack Club at your school                       | [apply.hackclub.com](https://apply.hackclub.com)              |
 | 🏦 Run an open-source project / event on HCB              | [hackclub.com/hcb](https://hackclub.com/hcb)                  |
 | 🦕 Draw a dino & join our GitHub                          | [hack.af/draw-dino](https://hack.af/draw-dino)                |
