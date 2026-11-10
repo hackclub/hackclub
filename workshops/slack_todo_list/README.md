@@ -69,7 +69,7 @@ Follow these steps:
 ![Arrows pointing to various places: 1. "Basic Information" on left sidebar, 2. "Add features and functionality" and 3. "Slash commands" in the dropdown](https://cdn.hackclub.com/rescue?url=https://cloud-ccj49d17x.vercel.app/2basicinfo-features-slashcommands.png)
 
 - Click "Create new command" and fill in the details for your command:
-    - Command: /todolist (Note: If you're using the hackclub workspace, you'll need to use a different name for your command, such as /yournametodolist)
+    - Command: /todolist (Note: If you're using the Hack Club workspace, you'll need to use a different name for your command, such as /yournametodolist)
     - Request URL: https://yourappname.yourusername.repl.co/slack/events where `yourappname` is your repl's name and `yourusername` is your repl.it username. For e.x., my repl's name is TodoSlackApp and my repl.it username is KhushrajRathod, so my request URL is https://TodoSlackApp.KhushrajRathod.repl.co/slack/events
     - Short Description: Show your todo list
 
