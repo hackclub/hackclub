@@ -20,7 +20,7 @@ Apart from building the drum pad, you will also be learning about different type
 
 [Final Code](https://github.com/emmanuel39hanks/beat_maker)
 <br/>
-[Demo](https://drum.emmanuel39hanks.repl.co)
+[Try a working drum pad in the browser](https://plastic.audio/drum-pad-online/) (the original demo on repl.co is offline)
 
 ## Getting started
 
