@@ -46,7 +46,7 @@ Hora de aula de ciências básicas! As lombadas da onda são chamadas de cristas
 
 Onde você quer chegar com isso, você pergunta? A frequência da onda está diretamente relacionada ao que você ouve! Quanto maior a frequência, maior a [altura](https://www.wikiwand.com/pt/Altura_(música)), e vice-versa. Isto forma a base para [**notas de música**](https://www.wikiwand.com/pt/Nota_musical). 
 
-Isto é importante porque o Arduino não tem ideia do que é uma nota musical, e nem da campainha que estaremos programando. Para especificar qual nota queremos tocar, precisamos dar ao Arduino o valor em hertz. Por exemplo, a nota C4 é cerca de 261,6 hz! Para uma lista completa das notas e suas frequências, confira [este link](https://pages.mtu.edu/~suits/notefreqs.html). Usaremos essa lista em breve para organizar a música do caixão.
+Isto é importante porque o Arduino não tem ideia do que é uma nota musical, e nem da campainha que estaremos programando. Para especificar qual nota queremos tocar, precisamos dar ao Arduino o valor em hertz. Por exemplo, a nota C4 é cerca de 261,6 hz! Para uma lista completa das notas e suas frequências, confira [este link](https://plastic.audio/note-frequencies/). Usaremos essa lista em breve para organizar a música do caixão.
 
 ## Construindo o Circuito
 
@@ -228,7 +228,7 @@ Pressione **Iniciar Simulação** mais uma vez e você deve ver os sons alternan
 
 ![woohoo](https://cdn.hackclub.com/rescue?url=https://cloud-62jdtr82i.vercel.app/tenor.gif)
 
-A parte difícil foi feita, vamos fazer um pouco de música agora! Referindo-se a [este link](https://pages.mtu.edu/~suits/notefreqs.html) com todas as notas e frequências possíveis, é assim que faríamos para tocar a dança do caixão (substitua o conteúdo da função `loop()` por isso):
+A parte difícil foi feita, vamos fazer um pouco de música agora! Referindo-se a [este link](https://plastic.audio/note-frequencies/) com todas as notas e frequências possíveis, é assim que faríamos para tocar a dança do caixão (substitua o conteúdo da função `loop()` por isso):
 
 ```c
 void loop() {

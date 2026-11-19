@@ -54,7 +54,7 @@ Basic science lesson time! The humps of the wave are called wave crests, and the
 
 What's the point, you say? The frequency of the wave is directly related to what you hear! The higher the frequency, the higher the [pitch](https://www.wikiwand.com/en/Pitch_(music)), and vice versa. This forms the basis for [**music notes**](https://www.wikiwand.com/en/Musical_note). 
 
-This is important because Arduino has no idea what a music note is, and neither does the buzzer we'll be programming. To specify what note we want to play, we need to give Arduino the hertz value. For example, the note C4 is about 261.6 hz! For a full list of notes and their frequencies, check out [this link](https://pages.mtu.edu/~suits/notefreqs.html). We'll be using that list soon to arrange the coffin dance.
+This is important because Arduino has no idea what a music note is, and neither does the buzzer we'll be programming. To specify what note we want to play, we need to give Arduino the hertz value. For example, the note C4 is about 261.6 hz! For a full list of notes and their frequencies, check out [this link](https://plastic.audio/note-frequencies/). We'll be using that list soon to arrange the coffin dance.
 
 
 
@@ -245,7 +245,7 @@ Hit **Start Simulation** once more and you should see the sounds alternating fro
 
 ![woohoo](https://cdn.hackclub.com/rescue?url=https://cloud-62jdtr82i.vercel.app/tenor.gif)
 
-The hard part is done, let's make some music now! Referring to [this link](https://pages.mtu.edu/~suits/notefreqs.html) with all the possible notes and frequencies, here's how to play the coffin dance (replace `loop()` contents):
+The hard part is done, let's make some music now! Referring to [this link](https://plastic.audio/note-frequencies/) with all the possible notes and frequencies, here's how to play the coffin dance (replace `loop()` contents):
 
 ```c
 void loop() {
