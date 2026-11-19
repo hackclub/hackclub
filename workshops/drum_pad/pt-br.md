@@ -21,7 +21,7 @@ Além de construir o drum pad, você também aprenderá sobre diferentes tipos d
 
 [Código final](https://repl.it/@hcbjcentro/drum-pad)
 <br/>
-[Demo](https://drum-pad.hcbjcentro.repl.co/)
+[Experimente um drum pad funcionando no navegador](https://plastic.audio/drum-pad-online/) (a demo original no repl.co saiu do ar)
 
 ## Começando
 
