@@ -20,7 +20,7 @@ Apart from building the drum pad, you will also be learning about different type
 
 [Final Code](https://github.com/emmanuel39hanks/beat_maker)
 <br/>
-[Demo](https://drum.emmanuel39hanks.repl.co)
+[Demo (archived copy)](https://web.archive.org/web/20231203164741/https://drum.emmanuel39hanks.repl.co/)
 
 ## Getting started
 
@@ -259,9 +259,9 @@ Now that you have finished building, you can share your beautiful creation with 
 
 But you're not done yet. There are many ways this project can be expanded on. Here are a few examples:
 
-- **Play an automated beat track:** [demo and code](https://repl.it/@emmanuel39hanks/drumpadwithabeattrack)
-- **Play the drum pad with your keyboard:** [demo and code](https://repl.it/@emmanuel39hanks/drumpadwithkeyboard)
-- **A beautifully styled drum pad:** [demo and code](https://repl.it/@emmanuel39hanks/beautifulstyleddrumpad)
+- **Play an automated beat track**
+- **Play the drum pad with your keyboard:** [a working example](https://plastic.audio/drum-pad-online/)
+- **A beautifully styled drum pad**
 
 <details>
 
